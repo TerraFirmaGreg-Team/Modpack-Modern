@@ -1,0 +1,19 @@
+{
+	id: "56B0B1B85EB312A6"
+	group: ""
+	order_index: 0
+	filename: "cock"
+	title: "Cock"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -3.0d
+		y: -2.0d
+		id: "439CBFE5F31844FC"
+		tasks: [{
+			id: "55B09AC38948BCAF"
+			type: "item"
+			item: "minecraft:stone"
+		}]
+	}]
+}

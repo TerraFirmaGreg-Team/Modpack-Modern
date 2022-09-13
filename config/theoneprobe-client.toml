@@ -1,0 +1,111 @@
+#This is a list of entities that will not be rendered by TOP. This option also works if it is set client-side alone
+renderBlacklist = []
+#The amount of milliseconds to wait before updating probe information from the server
+#Range: 10 ~ 100000
+timeout = 300
+#The amount of milliseconds to wait before showing a 'fetch from server' info on the client (if the server is slow to respond) (-1 to disable this feature)
+#Range: -1 ~ 100000
+waitingForServerTimeout = 2000
+#The maximum packet size to send an itemstack from client to server. Reduce this if you have issues with network lag caused by TOP
+#Range: -1 ~ 32768
+maxPacketToServer = 20000
+#Distance at which the probe works
+#Range: 0.1 ~ 200.0
+probeDistance = 6.0
+#Show mod name (0 = not, 1 = always, 2 = sneak)
+showModName = "NORMAL"
+#Show harvest level (0 = not, 1 = always, 2 = sneak)
+showHarvestLevel = "NORMAL"
+#Show if the block can be harvested (0 = not, 1 = always, 2 = sneak)
+showCanBeHarvested = "NORMAL"
+#Show the growth level of crops (0 = not, 1 = always, 2 = sneak)
+showCropPercentage = "NORMAL"
+#Show chest contents (0 = not, 1 = always, 2 = sneak)
+showChestContents = "EXTENDED"
+#Show chest contents in detail (0 = not, 1 = always, 2 = sneak), used only if number of items is below 'showItemDetailThresshold'
+showChestContentsDetailed = "EXTENDED"
+#Show redstone (0 = not, 1 = always, 2 = sneak)
+showRedstone = "NORMAL"
+#Show mob health (0 = not, 1 = always, 2 = sneak)
+showMobHealth = "NORMAL"
+#Show time to adulthood for baby mobs (0 = not, 1 = always, 2 = sneak)
+showMobGrowth = "NORMAL"
+#Show mob potion effects (0 = not, 1 = always, 2 = sneak)
+showMobPotionEffects = "EXTENDED"
+#Show lever/comparator/repeater settings (0 = not, 1 = always, 2 = sneak)
+showLeverSetting = "NORMAL"
+#Show tank setting (0 = not, 1 = always, 2 = sneak)
+showTankSetting = "EXTENDED"
+#Show brewing stand setting (0 = not, 1 = always, 2 = sneak)
+showBrewStandSetting = "NORMAL"
+#Show mob spawner setting (0 = not, 1 = always, 2 = sneak)
+showMobSpawnerSetting = "NORMAL"
+#Show animal owner setting (0 = not, 1 = always, 2 = sneak)
+showAnimalOwnerSetting = "EXTENDED"
+#Show horse stats setting (0 = not, 1 = always, 2 = sneak)
+showHorseStatSetting = "EXTENDED"
+#Reveal monster eggs (0 = not, 1 = always, 2 = sneak)
+showSilverfish = "NOT"
+#The distance to the left side of the screen. Use -1 if you don't want to set this
+#Range: -1 ~ 10000
+boxLeftX = 5
+#The distance to the right side of the screen. Use -1 if you don't want to set this
+#Range: -1 ~ 10000
+boxRightX = -1
+#The distance to the top side of the screen. Use -1 if you don't want to set this
+#Range: -1 ~ 10000
+boxTopY = 5
+#The distance to the bottom side of the screen. Use -1 if you don't want to set this
+#Range: -1 ~ 10000
+boxBottomY = -1
+#Color of the border of the box (0 to disable)
+boxBorderColor = "ff999999"
+#Color of the box (0 to disable)
+boxFillColor = "55006699"
+#Thickness of the border of the box (0 to disable)
+#Range: 0 ~ 20
+boxThickness = 2
+#How much the border should be offset (i.e. to create an 'outer' border)
+#Range: 0 ~ 20
+boxOffset = 0
+#If true show liquid information when the probe hits liquid first
+showLiquids = false
+#Toggle default probe visibility (client can override)
+isVisible = true
+#If true then the probe hotkey must be held down to show the tooltip
+holdKeyToMakeVisible = false
+#The scale of the tooltips, 1 is default, 2 is smaller
+#Range: 0.4 ~ 5.0
+tooltipScale = 1.0
+#Color of the border of the chest contents box (0 to disable)
+chestContentsBorderColor = "ff006699"
+#0 means don't show break progress, 1 is show as bar, 2 is show as text
+#Range: 0 ~ 2
+showBreakProgress = 1
+#true means shows harvestability with vanilla style icons
+harvestStyleVanilla = true
+
+[style]
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Ok = "green"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	High = "gold"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Name = "white"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Label = "gray"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Warning = "yellow"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Progress = "white"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	InfoImportant = "blue"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	ModName = "blue,italic"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Error = "red,bold"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Obsolete = "gray,strikethrough"
+	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."
+	Info = "white"
+

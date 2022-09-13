@@ -1,0 +1,93 @@
+
+[advanced]
+	#Debug mode enabled
+	DebugMode = false
+	#Display search bar in the center
+	CenterSearch = false
+	#Set low-memory mode (makes search very slow, but uses less RAM)
+	LowMemorySlowSearchEnabled = false
+	#Enable cheating items into the hotbar by using the shift+number keys.
+	CheatToHotbarUsingHotkeysEnabled = false
+	#How items should be handed to you
+	#Allowed Values: INVENTORY, MOUSE_PICKUP
+	GiveMode = "MOUSE_PICKUP"
+	#Max. recipe gui height
+	#Range: > 175
+	RecipeGuiHeight = 350
+
+[colors]
+	#Color values to search for
+	SearchColors = ["White:EEEEEE", "LightBlue:7492cc", "Cyan:00EEEE", "Blue:2222dd", "LapisBlue:25418b", "Teal:008080", "Yellow:cacb58", "GoldenYellow:EED700", "Orange:d97634", "Pink:D1899D", "HotPink:FC0FC0", "Magenta:b24bbb", "Purple:813eb9", "JadedPurple:43324f", "EvilPurple:2e1649", "Lavender:B57EDC", "Indigo:480082", "Sand:dbd3a0", "Tan:bb9b63", "LightBrown:A0522D", "Brown:634b33", "DarkBrown:3a2d13", "LimeGreen:43b239", "SlimeGreen:83cb73", "Green:008000", "DarkGreen:224d22", "GrassGreen:548049", "Red:963430", "BrickRed:b0604b", "NetherBrick:2a1516", "Redstone:ce3e36", "Black:181515", "CharcoalGray:464646", "IronGray:646464", "Gray:808080", "Silver:C0C0C0"]
+
+[sorting]
+	#Sorting order for the ingredient list. Valid stages: [MOD_NAME, INGREDIENT_TYPE, ALPHABETICAL, CREATIVE_MENU, TAG, TOOL_TYPE, WEAPON_DAMAGE, ARMOR, MAX_DURABILITY]
+	IngredientSortStages = ["MOD_NAME", "INGREDIENT_TYPE", "CREATIVE_MENU"]
+
+[search]
+	#Search mode for Mod Names (prefix: @)
+	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
+	ModNameSearchMode = "REQUIRE_PREFIX"
+	#Search mode for Tooltips (prefix: #)
+	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
+	TooltipSearchMode = "ENABLED"
+	#Search mode for Tag Names (prefix: $)
+	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
+	TagSearchMode = "REQUIRE_PREFIX"
+	#Search mode for Creative Tab Names (prefix: %)
+	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
+	CreativeTabSearchMode = "DISABLED"
+	#Search mode for Colors (prefix: ^)
+	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
+	ColorSearchMode = "DISABLED"
+	#Search mode for resources locations (prefix: &)
+	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
+	ResourceLocationSearchMode = "DISABLED"
+	#Search advanced tooltips (visible with F3+H)
+	SearchAdvancedTooltips = false
+
+[modname]
+	#Formatting for mod name tooltip
+	#Use these formatting colors:
+	#black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, white
+	#With these formatting options:
+	#obfuscated, bold, strikethrough, underline, italic
+	ModNameFormat = "blue italic"
+
+[IngredientList]
+	#Max number of rows shown
+	#Range: 1 ~ 100
+	MaxRows = 16
+	#Max number of columns shown
+	#Range: 4 ~ 100
+	MaxColumns = 9
+	#Horizontal alignment of the ingredient grid inside the available area
+	#Allowed Values: LEFT, CENTER, RIGHT
+	HorizontalAlignment = "RIGHT"
+	#Horizontal alignment of the ingredient grid inside the available area
+	#Allowed Values: TOP, CENTER, BOTTOM
+	VerticalAlignment = "TOP"
+	#Visibility of the top page buttons. Use AUTO_HIDE to only show it when there are multiple pages.
+	#Allowed Values: ENABLED, AUTO_HIDE, DISABLED
+	ButtonNavigationVisibility = "ENABLED"
+	#Set to true to draw a background texture behind the gui.
+	DrawBackground = false
+
+[BookmarkList]
+	#Max number of rows shown
+	#Range: 1 ~ 100
+	MaxRows = 16
+	#Max number of columns shown
+	#Range: 4 ~ 100
+	MaxColumns = 9
+	#Horizontal alignment of the ingredient grid inside the available area
+	#Allowed Values: LEFT, CENTER, RIGHT
+	HorizontalAlignment = "LEFT"
+	#Horizontal alignment of the ingredient grid inside the available area
+	#Allowed Values: TOP, CENTER, BOTTOM
+	VerticalAlignment = "TOP"
+	#Visibility of the top page buttons. Use AUTO_HIDE to only show it when there are multiple pages.
+	#Allowed Values: ENABLED, AUTO_HIDE, DISABLED
+	ButtonNavigationVisibility = "ENABLED"
+	#Set to true to draw a background texture behind the gui.
+	DrawBackground = false
+

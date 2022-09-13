@@ -1,0 +1,59 @@
+#How much time (ms) to wait before reporting an exception again
+#Range: 1 ~ 10000000
+loggingThrowableTimeout = 20000
+#Is the probe needed to show the tooltip? 0 = no, 1 = yes, 2 = yes and clients cannot override, 3 = probe needed for extended info only
+#Range: 0 ~ 3
+needsProbe = 3
+#If true the probe will automatically show extended information if it is in your main hand (so not required to sneak)
+extendedInMain = false
+#If true there will be a bauble version of the probe if baubles is present
+supportBaubles = true
+#If true there will be a readme note for first-time players
+spawnNote = true
+#If true show the color of the collar of a wolf
+showCollarColor = true
+#How to display RF: 0 = do not show, 1 = show in a bar, 2 = show as text
+#Range: 0 ~ 2
+showRF = 1
+#How to display tank contents: 0 = do not show, 1 = show in fluid bar, 2 = show in a bar, 3 = show as text
+#Range: 0 ~ 3
+showTank = 1
+#Format for displaying RF
+rfFormat = "COMPACT"
+#Format for displaying tank contents
+tankFormat = "COMPACT"
+#If true show debug info with creative probe
+showDebugInfo = true
+#If true equal stacks will be compacted in the chest contents overlay
+compactEqualStacks = true
+#Color for the RF bar
+rfbarFilledColor = "ffdd0000"
+#Alternate color for the RF bar
+rfbarAlternateFilledColor = "ff430000"
+#Color for the RF bar border
+rfbarBorderColor = "ff555555"
+#Color for the tank bar
+tankbarFilledColor = "ff0000dd"
+#Alternate color for the tank bar
+tankbarAlternateFilledColor = "ff000043"
+#Color for the tank bar border
+tankbarBorderColor = "ff555555"
+#If the number of items in an inventory is lower or equal then this number then more info is shown
+#Range: 0 ~ 20
+showItemDetailThresshold = 4
+#The maximum amount of slots (empty or not) to show without sneaking
+#Range: 0 ~ 1000
+showSmallChestContentsWithoutSneaking = 0
+#A list of blocks for which we automatically show chest contents even if not sneaking
+showContentsWithoutSneaking = ["storagedrawers:basicdrawers", "storagedrawersextra:extra_drawers"]
+#A list of blocks for which we don't show chest contents automatically except if sneaking
+dontShowContentsUnlessSneaking = []
+#A list of blocks for which we don't send NBT over the network. This is mostly useful for blocks that have HUGE NBT in their pickblock (itemstack)
+dontSendNBT = []
+#A list of either <modid>:<entityid> to disable the tooltip for specific entities. Can also be a single <modid> to disable an entire mod. Or it can also be '*' to disable everything
+blacklistEntities = []
+#A list of <tag>=<name> containing all tooltype tags with their associated name to display
+tooltypeTags = ["minecraft:mineable/axe=Axe", "minecraft:mineable/pickaxe=Pickaxe", "minecraft:mineable/shovel=Shovel", "minecraft:mineable/hoe=Hoe"]
+#A list of <tag>=<name> containing all harvestability tags with their associated name to display
+harvestabilityTags = ["forge:needs_wood_tool=Wood", "forge:needs_gold_tool=Gold", "minecraft:needs_stone_tool=Stone", "minecraft:needs_iron_tool=Iron", "minecraft:needs_diamond_tool=Diamond", "forge:needs_netherite_tool=Netherite"]
+

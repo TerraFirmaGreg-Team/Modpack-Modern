@@ -1,0 +1,21 @@
+#Use a slightly more compact, but also slightly slower representation for block states
+compactFastMap = false
+#Replace objects used to detect multi-threaded access to chunks by a much smaller field. This option is disabled by default due to very rare and very hard-to-reproduce crashes, use at your own risk!
+useSmallThreadingDetector = false
+#Cache the predicate instances used in multipart models
+cacheMultipartPredicates = true
+#Do not create a new MultipartBakedModel instance for each block state using the same multipartmodel. Requires cacheMultipartPredicates to be enabled
+multipartDeduplication = true
+#Deduplicate cached data for blockstates, most importantly collision and render shapes
+blockstateCacheDeduplication = true
+#Avoid creation of new strings when creating ModelResourceLocations
+modelResourceLocations = true
+#Replace the blockstate neighbor table
+replaceNeighborLookup = true
+#Populate the neighbor table used by vanilla. Enabling this slightly increases memory usage, but can help with issues in the rare case where mods access it directly.
+populateNeighborTable = false
+#Do not store the properties of a state explicitly and read themfrom the replace neighbor table instead. Requires replaceNeighborLookup to be enabled
+replacePropertyMap = true
+#Deduplicate vertex data of baked quads in the basic model implementations
+bakedQuadDeduplication = true
+

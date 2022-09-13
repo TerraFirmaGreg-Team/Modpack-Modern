@@ -1,0 +1,13 @@
+
+#General configuration settings
+[general]
+	#Defines a default world type to use. The vanilla default world type is represented by 'default'.
+	#The modded world types are registry names which should include the registry namespace, such as 'examplemod:example_world_type'.
+	defaultWorldType = "tfc:tng"
+	#Set this to true to cache resource listings in resource and data packs
+	cachePackAccess = true
+	#Set this to true to index vanilla resource and data packs on thread
+	indexVanillaPackCachesOnThread = false
+	#Set this to true to index mod resource and data packs on thread
+	indexModPackCachesOnThread = false
+

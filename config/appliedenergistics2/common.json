@@ -1,0 +1,125 @@
+{
+  "general": {
+    "unsupportedDeveloperTools": false,
+    "matterCannonBlockDamage_comment": "Enables the ability of the Matter Cannon to break blocks.",
+    "matterCannonBlockDamage": true,
+    "tinyTntBlockDamage_comment": "Enables the ability of Tiny TNT to break blocks.",
+    "tinyTntBlockDamage": true,
+    "serverOpsIgnoreSecurity_comment": "Server operators are not restricted by ME security terminal settings.",
+    "serverOpsIgnoreSecurity": true,
+    "channels_comment": "Changes the channel capacity that cables provide in AE2.",
+    "channels": "default",
+    "pathfindingStepsPerTick_comment": "The number of pathfinding steps that are taken per tick and per grid that is booting. Lower numbers will mean booting takes longer, but less work is done per tick.",
+    "pathfindingStepsPerTick": 4
+  },
+  "automation": {
+    "formationPlaneEntityLimit": 128
+  },
+  "facades": {
+    "allowBlockEntities_comment": "Unsupported: Allows whitelisting block entities as facades. Could work, have render issues, or corrupt your world. USE AT YOUR OWN RISK.",
+    "allowBlockEntities": false
+  },
+  "craftingCPU": {
+    "craftingCalculationTimePerTick": 5,
+    "craftingSimulatedExtraction_comment": "When true: simulate extraction of all the network\u0027s contents when starting a crafting job calculation. When false: use the cached available content list (same as terminals). Enabling might work a bit better, but it will significantly reduce performance.",
+    "craftingSimulatedExtraction": false
+  },
+  "crafting": {
+    "inWorldSingularity_comment": "Enable the in-world crafting of singularities.",
+    "inWorldSingularity": true,
+    "inWorldFluix_comment": "Enable the in-world crafting of fluix crystals.",
+    "inWorldFluix": true,
+    "inWorldCrystalGrowth_comment": "Enable the in-world crafting of crystals.",
+    "inWorldCrystalGrowth": true,
+    "disassemblyCrafting_comment": "Enable shift-clicking with the crafting units in hand to disassemble them.",
+    "disassemblyCrafting": true
+  },
+  "spatialio": {
+    "spatialPowerMultiplier": 1250.0,
+    "spatialPowerExponent": 1.35
+  },
+  "logging": {
+    "securityAuditLog": false,
+    "blockUpdateLog": false,
+    "packetLog": false,
+    "craftingLog": false,
+    "debugLog": false,
+    "gridLog": false,
+    "chunkLoggerTrace_comment": "Enable stack trace logging for the chunk loading debug command",
+    "chunkLoggerTrace": false
+  },
+  "battery": {
+    "chargerChargeRate_comment": "The chargers charging rate factor, which is applied to the charged items charge rate. 2 means it charges everything twice as fast. 0.5 half as fast.",
+    "chargerChargeRate": 1.0,
+    "wirelessTerminal": 1600000,
+    "chargedStaff": 8000,
+    "entropyManipulator": 200000,
+    "portableCell": 20000,
+    "colorApplicator": 20000,
+    "matterCannon": 200000
+  },
+  "worldGen": {
+    "spawnPressesInMeteorites": true,
+    "generateQuartzOre": true,
+    "generateMeteorites": true,
+    "quartzOresPerCluster": 7,
+    "quartzOresClusterAmount": 20,
+    "quartzOresBiomeBlacklist_comment": "Biome IDs in which quartz ores should NOT be generated (i.e. minecraft:plains).",
+    "quartzOresBiomeBlacklist": []
+  },
+  "wireless": {
+    "wirelessBaseCost": 8.0,
+    "wirelessCostMultiplier": 1.0,
+    "wirelessBaseRange": 16.0,
+    "wirelessBoosterRangeMultiplier": 1.0,
+    "wirelessBoosterExp": 1.5,
+    "wirelessHighWirelessCount": 64.0,
+    "wirelessTerminalDrainMultiplier": 1.0
+  },
+  "PortableCells": {
+    "allowDisassembly_comment": "Allow disassembly of portable cells into the recipe ingredients using shift+right-click",
+    "allowDisassembly": true
+  },
+  "PowerRatios": {
+    "ForgeEnergy": 0.5,
+    "UsageMultiplier": 1.0
+  },
+  "Condenser": {
+    "MatterBalls": 256,
+    "Singularity": 256000
+  },
+  "tickRates": {
+    "_comment": " Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.",
+    "InterfaceMin": 5,
+    "InterfaceMax": 120,
+    "ImportBusMin": 5,
+    "ImportBusMax": 40,
+    "ExportBusMin": 5,
+    "ExportBusMax": 60,
+    "AnnihilationPlaneMin": 2,
+    "AnnihilationPlaneMax": 120,
+    "METunnelMin": 5,
+    "METunnelMax": 20,
+    "InscriberMin": 1,
+    "InscriberMax": 1,
+    "ChargerMin": 10,
+    "ChargerMax": 10,
+    "IOPortMin": 1,
+    "IOPortMax": 5,
+    "VibrationChamberMin": 10,
+    "VibrationChamberMax": 40,
+    "StorageBusMin": 5,
+    "StorageBusMax": 60,
+    "ItemTunnelMin": 5,
+    "ItemTunnelMax": 60,
+    "LightTunnelMin": 5,
+    "LightTunnelMax": 60
+  },
+  "inWorldCrystalGrowth": {
+    "_comment": "Settings for in-world growth of crystals.",
+    "improvedFluidTag_comment": "A fluid tag that identifies fluids that improve crystal growth speed. Does not affect growth with water/lava.",
+    "improvedFluidTag": "",
+    "improvedFluidMultiplier_comment": "The speed multiplier to use when the crystals are submerged in the improved fluid.",
+    "improvedFluidMultiplier": 2.0
+  }
+}
