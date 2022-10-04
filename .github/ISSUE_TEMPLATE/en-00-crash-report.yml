@@ -1,0 +1,78 @@
+name: "[EN] Crash Report"
+description: Report a bug that crashes the game or prevents startup.
+labels: [ "status: unverified", "type: сrash" ]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Modpack Used
+      description: Modpack type and version used when this error was encountered.
+      placeholder: "Example: TFG:NH v4.1.4"
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional mods
+      description: The mods and their respective versions used when this bug was encountered. If you were not using mods, please leave this field blank.
+      placeholder: "Example: Xaero's Minimap v1.1.3"
+    validations:
+      required: false
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "How you were playing on the world. Typical answers include: Singleplayer, Open to LAN, Forge Server, Sponge Server, or Mohist Server."
+      placeholder: "Example: Singleplayer"
+    validations:
+      required: true
+  - type: dropdown
+    id: crash
+    attributes:
+      label: Side Crashed
+      description: Where the game crashed.
+      options:
+        - "Client"
+        - "Server"
+        - "Client and Server"
+        - "Unsure"
+    validations:
+      required: true
+  - type: dropdown
+    id: world
+    attributes:
+      label: New Worlds
+      description: Does this crash occur on a newly generated world?
+      options:
+        - "Yes"
+        - "No"
+        - "Unsure"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How to reproduce the crash.
+      placeholder: "Example: 1) I did X..."
+    validations:
+      required: true
+  - type: textarea
+    id: crash-report
+    attributes:
+      label: Crash Report
+      description: "You can find the crash report in `installation/crash-reports/`, if one was created. Additionally, please attach `installation/logs/latest.log`. If either or both files do not exist, state such. Please link to a paste site with their content, such as GitHub Gists or Pastebin. **Do not paste the contents of either these files directly into the text box.**"
+      placeholder: "Example: a link to a paste site with the crash report and latest.log."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional information you wish to provide. Please add anything which did not fit into the other sections here.
+      placeholder: "Example: This is likely caused by X because..."
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to fill out this crash report.
