@@ -1,0 +1,7 @@
+#If enabled, villager huts will spawn in the world
+enableVillagerSpawns = true
+#If enabled, rideable animals will not be slowed by plants/snow/mud when ridden.
+enableRideableConstantSpeed = true
+#If enabled, aging of drinks for effects is possible.
+enableAgedDrinks = true
+

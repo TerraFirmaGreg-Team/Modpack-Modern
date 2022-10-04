@@ -1,0 +1,7 @@
+#Enable flat machine related models (5U Style) - Default: false
+BASIC_MACHINE_MODELS = false
+#Show all items in JEI, even ones that are unobtainable - Default: false
+SHOW_ALL_MATERIAL_ITEMS = false
+#Show all fluid cells in JEI - Default: false
+SHOW_ALL_FLUID_CELLS = false
+

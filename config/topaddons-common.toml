@@ -1,0 +1,5 @@
+
+[forge]
+	#List of mod IDs for which no TOP Addons fluid gauge should be shown
+	gaugeModBlacklist = ["mekanism", "mekanismgenerators", "fluidtank", "endertanks"]
+

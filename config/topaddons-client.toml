@@ -1,0 +1,37 @@
+
+[forge]
+	#Machine progress bar background color
+	machineProgressBackgroundColor = "#55666666"
+	#Machine progress bar border color
+	machineProgressBorderColor = "#ff666666"
+
+	[forge.fluidGauge]
+		#Show a rounded tank fluid gauge
+		gaugeRounded = true
+		#Fluid gauge background color (try #557F0000 for BC red)
+		gaugeBackgroundColor = "#55666666"
+		#Fluid gauge border color (try #FF7F0000 for BC red)
+		gaugeBorderColor = "#ff666666"
+		#Allow certain tiles to show custom tank names
+		gaugeUseCustomTankNames = true
+		#Which "algorithm" should be used to pick fluid colors (TOP_LEFT is sometimes lighter)
+		#Allowed Values: TOP_LEFT_COLOR, AVERAGE_COLOR
+		gaugeFluidColorAlgorithm = "AVERAGE_COLOR"
+		#Which fluid gauges to show, BOTH and THE_ONE_PROBE_ONLY options also depend on the The One Probe "showTankSetting" configuration
+		#Allowed Values: BOTH, THE_ONE_PROBE_ONLY, TOP_ADDONS_ONLY
+		fluidGaugeChoice = "TOP_ADDONS_ONLY"
+		#Show the tank's total capacity in the fluid gauge
+		gaugeShowCapacity = true
+		#Fluid color transparency.
+		#Range: 0 ~ 255
+		gaugeFluidColorTransparency = 255
+		#Use the fluid's texture in the fluid gauge instead of the TOP lines.
+		gaugeRenderFluidTexture = true
+		#Alignment of the fluid's texture when gaugeRenderFluidTexture is enabled.
+		#Allowed Values: TOP, MIDDLE, SQUEEZE
+		fluidTextureAlignment = "MIDDLE"
+		#When 'fluidGaugeChoice' is set to THE_ONE_PROBE_ONLY show a compact version of it's tank gauge.
+		gaugeShowCompactTop = true
+		#Hide empty thanks when displaying the TOP Addons fluid gauge (same behaviour as vanilla TOP).
+		gaugeHideEmptyTanks = false
+

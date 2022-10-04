@@ -1,0 +1,10 @@
+#Liquid Capacity of Leather Flask (500 = 1/2 bucket = 5 drinks or 2 water bars)
+#Range: > 100
+leatherCapacity = 500
+#Damage Capability of Flasks are Capacity/(this value), 0 = MAXINT uses
+#Range: > 0
+damageFactor = 5
+#Liquid Capacity of Iron Flask (1000 = 1 bucket = 10 drinks or 4 water bars)
+#Range: > 100
+ironCapacity = 2000
+

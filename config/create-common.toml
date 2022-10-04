@@ -1,0 +1,64 @@
+
+[worldgen]
+
+	# 
+	#Modify Create's impact on your terrain
+	[worldgen.v2]
+		# 
+		#Prevents all worldgen added by Create from taking effect
+		disableWorldGen = false
+
+		[worldgen.v2.striated_ores_nether]
+			# 
+			#Range: > 0
+			clusterSize = 32
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0833333358168602
+			# 
+			#Range: > -2147483648
+			minHeight = 40
+			# 
+			#Range: > -2147483648
+			maxHeight = 90
+
+		[worldgen.v2.striated_ores_overworld]
+			# 
+			#Range: > 0
+			clusterSize = 32
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0833333358168602
+			# 
+			#Range: > -2147483648
+			minHeight = -30
+			# 
+			#Range: > -2147483648
+			maxHeight = 70
+
+		[worldgen.v2.zinc_ore]
+			# 
+			#Range: > 0
+			clusterSize = 12
+			# 
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 8.0
+			# 
+			#Range: > -2147483648
+			minHeight = -63
+			# 
+			#Range: > -2147483648
+			maxHeight = 70
+

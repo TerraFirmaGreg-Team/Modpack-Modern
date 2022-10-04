@@ -1,0 +1,18 @@
+#How dark should the noise be at most? Set to 0 to disable noise entirely
+#Range: 0.0 ~ 0.5
+noiseDarkness = 0.18
+#How many darkness levels should there be?
+#Range: 5 ~ 30
+noiseLevels = 5
+#How big should noise areas be?
+#Range: 3 ~ 50
+noiseArea = 10
+#ARGB code for summer coloring in hexadecimal. Default: 1222FF11
+seasonColorSummer = "1233FF11"
+#ARGB code for autumn coloring in hexadecimal. Default: EAFFDD55
+seasonColorAutumn = "EAFFDD55"
+#ARGB code for winter coloring in hexadecimal. Default: 6AFFEEEE
+seasonColorWinter = "6AFFEEEE"
+#ARGB code for spring coloring in hexadecimal. Default: 3311CFD1
+seasonColorSpring = "3311CAD7"
+
