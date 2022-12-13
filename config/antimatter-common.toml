@@ -62,6 +62,9 @@
 	HARDCORE_PIPES = false
 	#Hear various crafting sounds when you craft with any of Antimatter's tools that has a custom SoundType. Default: true
 	PLAY_CRAFTING_SOUNDS = true
+	#Enable crating recipes for things like rods and plates being lossy - Default: true
+	#Note: make sure to run /reload after changing this.
+	LOSSY_PART_CRAFTING = true
 
 	[Gameplay.Treefelling]
 		#Smart tree detection, instead of just going up in a column, it searches surrounding connected blocks too. Default: true
