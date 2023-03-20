@@ -1,7 +1,0 @@
-
-#General configuration settings
-[general]
-	#Defines a default world type to use. The vanilla default world type is represented by 'default'.
-	#The modded world types are registry names which should include the registry namespace, such as 'examplemod:example_world_type'.
-	defaultWorldType = "tfc:tng"
-
