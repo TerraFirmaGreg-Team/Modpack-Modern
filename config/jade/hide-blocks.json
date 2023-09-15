@@ -1,0 +1,7 @@
+{
+  "__comment": "This is a blocklist for the target of Jade. You can add registry ids to the \"values\" list. Restart the game to apply changes.",
+  "values": [
+    "minecraft:barrier"
+  ],
+  "version": 1
+}
