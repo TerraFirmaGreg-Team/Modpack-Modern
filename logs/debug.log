@@ -650,3 +650,24 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
   }
 }
 [15сент.2023 19:31:04.590] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.1.3 Target: 47.1.46
+[15сент.2023 19:31:09.728] [Render thread/DEBUG] [net.minecraftforge.common.ForgeI18n/CORE]: Loading I18N data entries: 14164
+[15сент.2023 19:31:09.771] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headset Earphone (HyperX Virtual Surround Sound)
+[15сент.2023 19:31:09.772] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[15сент.2023 19:31:09.856] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[15сент.2023 19:31:09.867] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/signs.png-atlas
+[15сент.2023 19:31:09.872] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[15сент.2023 19:31:09.872] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[15сент.2023 19:31:09.873] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[15сент.2023 19:31:09.876] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/chest.png-atlas
+[15сент.2023 19:31:09.880] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[15сент.2023 19:31:09.881] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[15сент.2023 19:31:09.881] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[15сент.2023 19:31:09.899] [Render thread/DEBUG] [mixin/]: Mixing client.accessor.ModelPartAccessor from tfc.mixins.json into net.minecraft.client.model.geom.ModelPart
+[15сент.2023 19:31:09.967] [Render thread/DEBUG] [mixin/]: Mixing client.PlayerItemInHandLayerMixin from tfc.mixins.json into net.minecraft.client.renderer.entity.layers.PlayerItemInHandLayer
+[15сент.2023 19:31:09.999] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[15сент.2023 19:31:10.041] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[15сент.2023 19:31:10.043] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[15сент.2023 19:31:10.043] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[15сент.2023 19:31:10.045] [Render thread/INFO] [patchouli/]: BookContentResourceListenerLoader preloaded 522 jsons
+[15сент.2023 19:31:10.045] [Render thread/INFO] [patchouli/]: Not reloading resource pack-based books as client world is missing
+[15сент.2023 19:31:55.015] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
