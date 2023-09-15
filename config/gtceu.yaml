@@ -1,0 +1,230 @@
+recipes:
+  # Whether to generate Flawed and Chipped Gems for materials and recipes involving them.
+  # Useful for mods like TerraFirmaCraft.
+  # Default: false
+  generateLowQualityGems: true
+
+  # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
+  # Default: false
+  disableManualCompression: true
+
+  # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
+  # Default: false
+  harderRods: false
+
+  # Whether to make crafting recipes for Bricks, Firebricks, and Coke Bricks harder.
+  # Default: false
+  harderBrickRecipes: false
+
+  # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
+  # Default: false
+  nerfWoodCrafting: false
+
+  # Whether to make Wood related recipes harder.
+  # Excludes sticks and planks.
+  # Default: false
+  hardWoodRecipes: false
+
+  # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
+  # Default: true
+  hardIronRecipes: true
+
+  # Whether to make Redstone related recipes harder.
+  # Default: false
+  hardRedstoneRecipes: false
+
+  # Whether to make Vanilla Tools and Armor recipes harder.
+  # Excludes Flint and Steel, and Buckets.
+  # Default: false
+  hardToolArmorRecipes: false
+
+  # Whether to make miscellaneous recipes harder.
+  # Default: false
+  hardMiscRecipes: false
+
+  # Whether to make Glass related recipes harder. Default: true
+  hardGlassRecipes: true
+
+  # Whether to nerf the Paper crafting recipe.
+  # Default: true
+  nerfPaperCrafting: true
+
+  # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
+  # Default: false
+  hardAdvancedIronRecipes: false
+
+  # Whether to make coloring blocks like Concrete or Glass harder.
+  # Default: false
+  hardDyeRecipes: false
+
+  # Whether to remove charcoal smelting recipes from the vanilla furnace.
+  # Default: true
+  harderCharcoalRecipe: true
+
+  # Whether to make the Flint and Steel recipe require steel parts.
+  # Default: true.
+  flintAndSteelRequireSteel: true
+
+  # Whether to remove Vanilla Block Recipes from the Crafting Table.
+  # Default: false
+  removeVanillaBlockRecipes: false
+
+  # Whether to remove Vanilla TNT Recipe from the Crafting Table.
+  # Default: true
+  removeVanillaTNTRecipe: true
+
+worldgen:
+  # Should all Stone Types drop unique Ore Item Blocks?
+  # Default: false (meaning only Stone, Netherrack, and Endstone)
+  allUniqueStoneTypes: false
+
+  # Should Sand-like ores fall?
+  # This includes gravel, sand, and red sand ores.
+  # Default: false (no falling ores)
+  sandOresFall: false
+
+  # Radius that ore veins will check for existing ones.
+  # If one is found, the vein will not spawn.
+  # Default: 3
+  oreVeinScanRadius: 3
+
+  # Multiplier to bedrock ore generation amount
+  # Default: 1.0f
+  bedrockOreMultiplier: 1.0
+
+  # Make bedrock ore/fluid veins infinite?
+  # Default: false
+  infiniteBedrockOresFluids: false
+
+  # Maximum worldgen feature size in chunks
+  # if a vein is larger than this, Minecraft complains in logs.
+  # If that happens, either increase this or make your veins smaller.
+  # NOTE: Larger veins can cause noticeable worldgen lag!
+  # Default: 2
+  maxFeatureChunkSize: 2
+
+  # Debug ore vein placement? (will print placed veins to server's debug.log)
+  # Default: false (no placement printout in debug.log)
+  debugWorldgen: false
+
+  # Rubber Tree spawn chance (% per chunk)
+  # Default: 0.5
+  rubberTreeSpawnChance: 0.5
+
+  # Prevents regular vanilla ores from being generated outside GregTech ore veins
+  # Default: true
+  removeVanillaOreGen: true
+
+  # Prevents vanilla's large ore veins from being generated
+  # Default: true
+  removeVanillaLargeOreVeins: true
+
+machines:
+  # Whether insufficient energy supply should reset Machine recipe progress to zero.
+  # If true, progress will reset.
+  # If false, progress will decrease to zero with 2x speed
+  # Default: false
+  recipeProgressLowEnergy: false
+
+  # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
+  # Default: false
+  requireGTToolsForBlocks: false
+
+  # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
+  # Default: false
+  doTerrainExplosion: false
+
+  # Whether machines or boilers damage the terrain when they explode.
+  # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
+  # Default: true
+  doesExplosionDamagesTerrain: false
+
+  # Divisor for Recipe Duration per Overclock.
+  # Default: 2.0
+  overclockDivisor: 2.0
+
+  # Whether to play machine sounds while machines are active.
+  # Default: true
+  machineSounds: true
+
+  # Whether Steam Multiblocks should use Steel instead of Bronze.
+  # Default: false
+  steelSteamMultiblocks: false
+
+  # Whether to enable the cleanroom, required for various recipes.
+  # Default: true
+  enableCleanroom: true
+
+  # Whether multiblocks should ignore all cleanroom requirements.
+  # This does nothing if enableCleanroom is false.
+  # Default: false
+  cleanMultiblocks: false
+
+  # Block to replace mined ores with in the miner and multiblock miner.
+  # Default: minecraft:cobblestone
+  replaceMinedBlocksWith: minecraft:cobblestone
+
+  # Whether to enable the Maintenance Hatch, required for Multiblocks.
+  # Default: true
+  enableMaintenance: true
+
+  # Whether the machine's circuit slot need to be inserted a real circuit.
+  ghostCircuit: true
+
+  # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
+  # Default: false
+  doBedrockOres: false
+
+  # What Kind of material should the bedrock ore miner output?
+  # Default: "raw"
+  bedrockOreDropTagPrefix: raw
+
+  # Wether to add a "Processing Array"
+  # Default: true
+  doProcessingArray: true
+
+client:
+  # Whether or not to enable Emissive Textures for GregTech Machines.
+  # Default: true
+  machinesEmissiveTextures: true
+
+  # The default color to overlay onto machines.
+  # #FFFFFF is no coloring (default).
+  # #D2DCFF is the classic blue from GT5.
+  defaultPaintingColor: #FFFFFF
+
+# Config options for Mod Compatibility
+compat:
+  # Config options regarding GTEU compatibility with other energy systems
+  energy:
+    # Enable Native GTEU to Platform native Energy (RF and alike) on GT Cables and Wires.
+    # This does not enable nor disable Converters.
+    # Default: true
+    nativeEUToPlatformNative: true
+
+    # Enable GTEU to Platform native (and vice versa) Converters.
+    # Default: false
+    enablePlatformConverters: false
+
+    # Platform native Energy to GTEU ratio for converting FE to EU.
+    # Only affects converters.
+    # Default: 4 FE/Energy == 1 EU
+    platformToEuRatio: 4
+
+    # GTEU to Platform native Energy ratio for converting EU to FE.
+    # Affects native conversion and Converters.
+    # Default: 4 FE/Energy == 1 EU
+    euToPlatformRatio: 4
+
+  # Whether to hide facades of all blocks in JEI and creative search menu.
+  # Default: true
+  hideFacadesInJEI: true
+
+  # Whether to hide filled cells in JEI and creative search menu.
+  # Default: true
+  hideFilledCellsInJEI: true
+
+  # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
+  # Default: true
+  removeSmeltingForEBFMetals: true
+

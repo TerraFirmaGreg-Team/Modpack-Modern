@@ -1,0 +1,243 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2023-09-15 19:45:46
+Description: Initializing game
+
+java.lang.IncompatibleClassChangeError: class net.coderbot.iris.gui.option.ShadowDistanceOption cannot inherit from final class net.minecraft.client.OptionInstance
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?] {}
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1012) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:119) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?] {}
+	at net.coderbot.iris.config.IrisConfig.save(IrisConfig.java:169) ~[oculus-mc1.20-1.6.4.jar%23172!/:?] {re:classloading}
+	at net.coderbot.iris.config.IrisConfig.initialize(IrisConfig.java:60) ~[oculus-mc1.20-1.6.4.jar%23172!/:?] {re:classloading}
+	at net.coderbot.iris.Iris.onEarlyInitialize(Iris.java:146) ~[oculus-mc1.20-1.6.4.jar%23172!/:?] {re:mixin,re:classloading}
+	at net.minecraft.client.Options.handler$zia000$iris$beforeLoadOptions(Options.java:1430) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.oculus.json:MixinOptions_Entrypoint,pl:mixin:APP:betterf3.mixins.json:autof3.DebugOptionMixin,pl:mixin:APP:mixins.oculus.fixes.maxfpscrash.json:MixinMaxFpsCrashFix,pl:mixin:APP:mixins.oculus.json:sky.MixinOptions_CloudsOverride,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Options.m_92140_(Options.java) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.oculus.json:MixinOptions_Entrypoint,pl:mixin:APP:betterf3.mixins.json:autof3.DebugOptionMixin,pl:mixin:APP:mixins.oculus.fixes.maxfpscrash.json:MixinMaxFpsCrashFix,pl:mixin:APP:mixins.oculus.json:sky.MixinOptions_CloudsOverride,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Options.<init>(Options.java:888) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.oculus.json:MixinOptions_Entrypoint,pl:mixin:APP:betterf3.mixins.json:autof3.DebugOptionMixin,pl:mixin:APP:mixins.oculus.fixes.maxfpscrash.json:MixinMaxFpsCrashFix,pl:mixin:APP:mixins.oculus.json:sky.MixinOptions_CloudsOverride,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:425) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tfc.mixins.json:client.MinecraftMixin,pl:mixin:APP:rubidium.mixins.json:core.MinecraftClientMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:182) ~[1.20.1-1.20.1-47.1.3.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.1.3.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.1.3.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?] {}
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1012) ~[?:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:119) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?] {}
+	at net.coderbot.iris.config.IrisConfig.save(IrisConfig.java:169) ~[oculus-mc1.20-1.6.4.jar%23172!/:?] {re:classloading}
+	at net.coderbot.iris.config.IrisConfig.initialize(IrisConfig.java:60) ~[oculus-mc1.20-1.6.4.jar%23172!/:?] {re:classloading}
+	at net.coderbot.iris.Iris.onEarlyInitialize(Iris.java:146) ~[oculus-mc1.20-1.6.4.jar%23172!/:?] {re:mixin,re:classloading}
+	at net.minecraft.client.Options.handler$zia000$iris$beforeLoadOptions(Options.java:1430) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.oculus.json:MixinOptions_Entrypoint,pl:mixin:APP:betterf3.mixins.json:autof3.DebugOptionMixin,pl:mixin:APP:mixins.oculus.fixes.maxfpscrash.json:MixinMaxFpsCrashFix,pl:mixin:APP:mixins.oculus.json:sky.MixinOptions_CloudsOverride,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Options.m_92140_(Options.java) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.oculus.json:MixinOptions_Entrypoint,pl:mixin:APP:betterf3.mixins.json:autof3.DebugOptionMixin,pl:mixin:APP:mixins.oculus.fixes.maxfpscrash.json:MixinMaxFpsCrashFix,pl:mixin:APP:mixins.oculus.json:sky.MixinOptions_CloudsOverride,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Options.<init>(Options.java:888) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.oculus.json:MixinOptions_Entrypoint,pl:mixin:APP:betterf3.mixins.json:autof3.DebugOptionMixin,pl:mixin:APP:mixins.oculus.fixes.maxfpscrash.json:MixinMaxFpsCrashFix,pl:mixin:APP:mixins.oculus.json:sky.MixinOptions_CloudsOverride,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:425) ~[client-1.20.1-20230612.114412-srg.jar%23176!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tfc.mixins.json:client.MinecraftMixin,pl:mixin:APP:rubidium.mixins.json:core.MinecraftClientMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Keybinds,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_Images,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:A,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:Расширенная библиотека API Windows 32:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:Библиотека элементов управления взаимодействия с пользователем:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:API32 криптографии:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.DLL:Base cryptographic API DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CoreMessaging.dll:Microsoft CoreMessaging Dll:10.0.22621.1635 (WinBuild.160101.0800):Microsoft Corporation
+		CoreUIComponents.dll:Microsoft Core UI Components Dll:10.0.22621.1635:Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		DEVOBJ.dll:Device Information Set DLL:10.0.22621.1344 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:Динамическая библиотека API DNS-клиента:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.22621.1778 (WinBuild.160101.0800):Microsoft Corporation
+		GLU32.dll:Библиотека подпрограмм OpenGL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.22621.1344 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:API вспомогательного приложения IP:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:Библиотека клиента Windows NT BASE API:10.0.22621.2275 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:Библиотека клиента Windows NT BASE API:10.0.22621.2275 (WinBuild.160101.0800):Microsoft Corporation
+		MSCTF.dll:Серверная библиотека MSCTF:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		MpOav.dll:IOfficeAntiVirus Module:4.18.23080.2006 (04d8e871ffe7ba6b2204046883e1ad9b7a5989ce):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		NTASN1.dll:Microsoft ASN.1 API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		OLEAUT32.dll:OLEAUT32.DLL:10.0.22621.1992 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:Библиотека удаленного вызова процедур:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		SETUPAPI.dll:Windows Setup API:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:Общая библиотека оболочки Windows:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		UMPDC.dll:User Mode Power Dependency Coordinator:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		USER32.dll:Многопользовательская библиотека клиента USER API Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.31.31103.0:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINHTTP.dll:Службы HTTP Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		WINSTA.dll:Winstation Library:10.0.22621.1635 (WinBuild.160101.0800):Microsoft Corporation
+		WINTRUST.dll:Microsoft Trust Verification APIs:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:32-разрядная библиотека Windows Socket 2.0:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		WSOCK32.dll:Windows Socket 32-Bit DLL:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		WTSAPI32.dll:Windows Remote Desktop Session Host Server SDK APIs:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		bcrypt.dll:Библиотека криптографических примитивов Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.22621.1928 (WinBuild.160101.0800):Microsoft Corporation
+		cfgmgr32.dll:Configuration Manager DLL:10.0.22621.1344 (WinBuild.160101.0800):Microsoft Corporation
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:Microsoft COM для Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		cryptnet.dll:Crypto Network Related API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc.DLL:Служба DHCP-клиента:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		dhcpcsvc6.DLL:Клиент DHCPv6:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		dinput8.dll:Microsoft DirectInput:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		drvstore.dll:Driver Store API:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		dwmapi.dll:Интерфейс API диспетчера окон рабочего стола (Майкрософт):10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		dxcore.dll:DXCore:10.0.22621.1778 (WinBuild.160101.0800):Microsoft Corporation
+		fwpuclnt.dll:API пользовательского режима FWP/IPsec:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		glfw.dll:GLFW 3.4.0 DLL:3.4.0:GLFW
+		inputhost.dll:InputHost:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		java.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		javaw.exe:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		jemalloc.dll
+		jimage.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		jli.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		jna5653545338839873486.dll:JNA native library:6.1.4:Java(TM) Native Access (JNA)
+		jsvml.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		jvm.dll:Java HotSpot(TM) 64-Bit server VM:17.0.6.0:Oracle Corporation
+		kernel.appcore.dll:AppModel API Host:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		lwjgl.dll
+		lwjgl_opengl.dll
+		lwjgl_stb.dll
+		management.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		management_ext.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		msasn1.dll:ASN.1 Runtime APIs:10.0.22621.819 (WinBuild.160101.0800):Microsoft Corporation
+		msvcp140.dll:Microsoft® C Runtime Library:14.31.31103.0:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Расширение поставщика службы API Microsoft Windows Sockets 2.0:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:Поставщик оболочки совместимости для имен электронной почты:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		ncrypt.dll:Маршрутизатор Windows NCrypt:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		nio.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		nlansp_c.dll:NLA Namespace Service Provider DLL:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		ntdll.dll:Системная библиотека NT:10.0.22621.2275 (WinBuild.160101.0800):Microsoft Corporation
+		ntmarta.dll:Поставщик Windows NT MARTA:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		nvoglv64.dll:NVIDIA Compatible OpenGL ICD:31.0.15.2849:NVIDIA Corporation
+		nvspcap64.dll:NVIDIA Game Proxy:3.27.0.112:NVIDIA Corporation
+		ole32.dll:Microsoft OLE для Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		opengl32.dll:OpenGL Client DLL:10.0.22621.1635 (WinBuild.160101.0800):Microsoft Corporation
+		pdh.dll:Модуль поддержки данных производительности Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:Библиотека объектов производительности системы Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		perfproc.dll:Библиотека объектов производительности системных процессов Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		pfclient.dll:SysMain Client:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		pnrpnsp.dll:Поставщик пространства имен PNRP:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		powrprof.dll:DLL модуля поддержки профиля управления питанием:10.0.22621.818 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.22621.1928 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:Библиотека небольших программ оболочки:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		sunmscapi.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		textinputframework.dll:"TextInputFramework.DYNLINK":10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.22621.608 (WinBuild.160101.0800):Microsoft Corporation
+		uxtheme.dll:Библиотека тем UxTheme (Microsoft):10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.31.31103.0:Microsoft Corporation
+		verify.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+		win32u.dll:Win32u:10.0.22621.2070 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:API хранения Microsoft WinRT:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		wintypes.dll:Библиотека DLL основных типов Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		wldp.dll:Политика блокировки Windows:10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.22621.1778 (WinBuild.160101.0800):Microsoft Corporation
+		xinput1_4.dll:API общего контроллера (Майкрософт):10.0.22621.2338 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:Java(TM) Platform SE binary:17.0.6.0:Oracle Corporation
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:182) ~[1.20.1-1.20.1-47.1.3.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.1.3.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99) ~[fmlloader-1.20.1-47.1.3.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25) ~[fmlloader-1.20.1-47.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.6, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 354432712 bytes (338 MiB) / 704643072 bytes (672 MiB) up to 10779361280 bytes (10280 MiB)
+	CPUs: 20
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i7-12700KF
+	Identifier: Intel64 Family 6 Model 151 Stepping 2
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 3.61
+	Number of physical packages: 1
+	Number of physical CPUs: 12
+	Number of logical CPUs: 20
+	Graphics card #0 name: NVIDIA GeForce RTX 2060
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1f08
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.2849
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.67
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.67
+	Memory slot #3 type: DDR4
+	Virtual memory max (MB): 34655.88
+	Virtual memory used (MB): 16830.50
+	Swap memory total (MB): 2048.00
+	Swap memory used (MB): 66.14
+	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx10280M
+	Launched Version: 1.20.1
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: Unknown
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: <disabled>
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	CPU: <unknown>
