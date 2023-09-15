@@ -1,0 +1,182 @@
+{
+  "general": {
+    "engines": 0,
+    "volume": 1,
+    "useSoundMasterSource": false,
+    "scanStepAmount": 100
+  },
+  "dimensions": {
+    "nether": 1,
+    "end": 1,
+    "abyssalcraft": 1,
+    "void": 1,
+    "twilightforest": 1,
+    "betweenlands": 1,
+    "cave": 1,
+    "midnight": 1,
+    "galacticraft": 1,
+    "galacticraft.planets": 1,
+    "surface": 1
+  },
+  "regions": {
+    "suspense": {
+      "overall": 1,
+      "nether": 1
+    },
+    "unknown": {
+      "overall": 1,
+      "suspense": 1
+    },
+    "dark": {
+      "overall": 1,
+      "suspense": 1
+    },
+    "deep": {
+      "overall": 1
+    },
+    "wind": {
+      "overall": 1,
+      "wind": 1
+    },
+    "underwater": {
+      "overall": 1,
+      "underwater": 1,
+      "underwater-deep": 1
+    },
+    "rain": {
+      "overall": 1,
+      "rain": 1
+    },
+    "storm_close": {
+      "overall": 1,
+      "storm-close": 1,
+      "wind": 1
+    },
+    "storm_away": {
+      "overall": 1,
+      "storm-away": 1,
+      "howling-wind": 1
+    },
+    "underworld": {
+      "overall": 1,
+      "underworld": 1
+    },
+    "cave": {
+      "overall": 1
+    },
+    "cave_ambience": {
+      "overall": 1,
+      "cave": 1,
+      "cave-water": 1,
+      "cave-deep": 1,
+      "cave-large": 1
+    },
+    "cave_deep-dark": {
+      "overall": 1,
+      "deep-dark": 1,
+      "water-droplets": 1
+    },
+    "cave_lush": {
+      "overall": 1,
+      "cave-lush": 1,
+      "frog": 1
+    },
+    "surface": {
+      "overall": 1
+    },
+    "sky": {
+      "overall": 1,
+      "light-wind": 1
+    },
+    "space": {
+      "overall": 1
+    },
+    "forest": {
+      "overall": 1,
+      "bird-ambience": 1,
+      "owl": 1
+    },
+    "forest_cold": {
+      "overall": 1,
+      "crow": 1
+    },
+    "taiga": {
+      "overall": 1,
+      "bird-ambience-huge": 1
+    },
+    "highland": {
+      "overall": 1,
+      "heavy-wind": 1,
+      "wind-in-leaves": 1
+    },
+    "mesa": {
+      "overall": 1,
+      "wind-mesa": 1
+    },
+    "forest_roofed": {
+      "overall": 1,
+      "bird-ambience-spooky": 1
+    },
+    "grass": {
+      "overall": 1,
+      "cricket": 1,
+      "cricket-night": 1,
+      "cicadas-night": 1
+    },
+    "plains": {
+      "overall": 1,
+      "cricket": 1,
+      "cricket-night": 1,
+      "cicadas-night": 1
+    },
+    "savanna": {
+      "overall": 1,
+      "cricket": 1,
+      "cicadas": 1,
+      "cicadas-desert": 1,
+      "cricket-warm-night": 1,
+      "wolf": 1,
+      "bird-warm": 1
+    },
+    "desert": {
+      "overall": 1,
+      "cicadas-desert": 1,
+      "light-wind": 1
+    },
+    "swamp": {
+      "overall": 1,
+      "cricket-swamp": 1,
+      "cricket-warm-night": 1,
+      "frog": 1
+    },
+    "jungle": {
+      "overall": 1,
+      "cricket-jungle": 1,
+      "cricket-jungle-night": 1,
+      "bird-ambience-jungle": 1,
+      "bird-ambience-jungle-night": 1
+    },
+    "cold": {
+      "overall": 1,
+      "light-wind": 1
+    },
+    "very_cold": {
+      "overall": 1,
+      "heavy-wind": 1
+    },
+    "beach": {
+      "overall": 1,
+      "beach": 1,
+      "seagull": 1,
+      "seagull-long": 1
+    },
+    "ocean": {
+      "overall": 1,
+      "ocean": 1,
+      "light-wind": 1
+    }
+  },
+  "fade-volume": 0.005,
+  "fade-pitch": 0.005,
+  "silent-dimensions": []
+}

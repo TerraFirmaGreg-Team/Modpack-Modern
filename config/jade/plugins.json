@@ -108,5 +108,16 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
+  },
+  "create": {
+    "filter": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "copper_backtank": true,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
   }
 }

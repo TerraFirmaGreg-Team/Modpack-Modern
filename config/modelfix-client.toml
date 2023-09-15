@@ -1,0 +1,21 @@
+
+[default]
+	#quad expansion increment. enlarges each quad. Use to hide gaps. Keep both as close to 0 as possible
+	#Range: -0.1 ~ 0.1
+	item_quad_expansion = 0.008
+	#quad x/y offset. simply put moves the quad toward the center of the item. Use to hide gaps
+	#Range: -0.1 ~ 0.1
+	item_quad_indent = 0.007
+
+[mac_os]
+	#It has been reported that some mac os systems are affected by atlass bleeding so the mod cant apply its main fix by removing atlas shrinking. Instead it can reduce it as much as possible by multiplying it by shrink_value_multiplier
+	#quad expansion increment. enlarges each quad. Use to hide gaps. Keep both as close to 0 as possible
+	#Range: -0.1 ~ 0.1
+	item_quad_expansion = 0.04
+	#quad x/y offset. simply put moves the quad toward the center of the item. Use to hide gaps
+	#Range: -0.1 ~ 0.1
+	item_quad_indent = 0.0099
+	#set to 0 for non macos behavior. 1 keeps vanilla behavior to prevent atlas bleeding
+	#Range: 0.0 ~ 1.0
+	shrink_ratio_multiplier = 1.0
+
