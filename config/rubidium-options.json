@@ -1,0 +1,24 @@
+{
+  "quality": {
+    "weather_quality": "DEFAULT",
+    "leaves_quality": "DEFAULT",
+    "enable_vignette": true
+  },
+  "advanced": {
+    "enable_memory_tracing": false,
+    "use_advanced_staging_buffers": true,
+    "cpu_render_ahead_limit": 3
+  },
+  "performance": {
+    "chunk_builder_threads": 0,
+    "always_defer_chunk_updates_v2": true,
+    "animate_only_visible_textures": true,
+    "use_entity_culling": true,
+    "use_fog_occlusion": true,
+    "use_block_face_culling": true,
+    "use_no_error_g_l_context": true
+  },
+  "notifications": {
+    "hide_donation_button": false
+  }
+}

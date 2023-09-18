@@ -11,6 +11,6 @@
 	showLoadWarnings = true
 	#Set to true to use a combined DEPTH_STENCIL attachment instead of two separate ones.
 	useCombinedDepthStencilAttachment = false
-	#[DEPRECATED] [NOW IN COMMON CONFIG] When enabled, Forge will convert discovered 'Open to LAN' IPv6 addresses to their more compact, compressed representation
+	#[DEPRECATED] Does nothing anymore, IPv6 addresses will be compressed always
 	compressLanIPv6Addresses = true
 

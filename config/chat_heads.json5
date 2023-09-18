@@ -1,0 +1,6 @@
+{
+	"offsetNonPlayerText": true,
+	"senderDetection": "UUID_AND_HEURISTIC",
+	"smartHeuristics": true,
+	"nameAliases": { }
+}
