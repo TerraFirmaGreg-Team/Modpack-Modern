@@ -74,6 +74,10 @@ recipes:
   removeVanillaTNTRecipe: true
 
 worldgen:
+  # Rubber Tree spawn chance (% per chunk)
+  # Default: 0.5
+  rubberTreeSpawnChance: 0.5
+
   # Should all Stone Types drop unique Ore Item Blocks?
   # Default: false (meaning only Stone, Netherrack, and Endstone)
   allUniqueStoneTypes: false
@@ -83,41 +87,36 @@ worldgen:
   # Default: false (no falling ores)
   sandOresFall: false
 
-  # Radius that ore veins will check for existing ones.
-  # If one is found, the vein will not spawn.
-  # Default: 3
-  oreVeinScanRadius: 3
+  oreVeins:
+    # The grid size (in chunks) for ore vein generation
+    # Default: 3
+    oreVeinGridSize: 3
 
-  # Multiplier to bedrock ore generation amount
-  # Default: 1.0f
-  bedrockOreMultiplier: 1.0
+    # The maximum random offset (in blocks) from the grid for generating an ore vein.
+    # Default: 12
+    oreVeinRandomOffset: 12
 
-  # Make bedrock ore/fluid veins infinite?
-  # Default: false
-  infiniteBedrockOresFluids: false
+    # Prevents regular vanilla ores from being generated outside GregTech ore veins
+    # Default: true
+    removeVanillaOreGen: true
 
-  # Maximum worldgen feature size in chunks
-  # if a vein is larger than this, Minecraft complains in logs.
-  # If that happens, either increase this or make your veins smaller.
-  # NOTE: Larger veins can cause noticeable worldgen lag!
-  # Default: 2
-  maxFeatureChunkSize: 2
+    # Prevents vanilla's large ore veins from being generated
+    # Default: true
+    removeVanillaLargeOreVeins: true
 
-  # Debug ore vein placement? (will print placed veins to server's debug.log)
-  # Default: false (no placement printout in debug.log)
-  debugWorldgen: false
+    # Multiplier to bedrock ore generation amount
+    # Default: 1.0f
+    bedrockOreMultiplier: 1.0
 
-  # Rubber Tree spawn chance (% per chunk)
-  # Default: 0.5
-  rubberTreeSpawnChance: 0.5
+    # Make bedrock ore/fluid veins infinite?
+    # Default: false
+    infiniteBedrockOresFluids: false
 
-  # Prevents regular vanilla ores from being generated outside GregTech ore veins
-  # Default: true
-  removeVanillaOreGen: true
-
-  # Prevents vanilla's large ore veins from being generated
-  # Default: true
-  removeVanillaLargeOreVeins: true
+    # Sets the maximum number of chunks that may be cached for ore vein generation.
+    # Higher values may improve world generation performance, but at the cost of more RAM usage.
+    # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
+    # Default: 512 (requires restarting the server / re-opening the world)
+    oreGenerationChunkCacheSize: 512
 
 machines:
   # Whether insufficient energy supply should reset Machine recipe progress to zero.
@@ -183,6 +182,10 @@ machines:
   # Default: true
   doProcessingArray: true
 
+  # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
+  # Default: false
+  enableTieredCasings: false
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
@@ -227,4 +230,13 @@ compat:
   # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
   # Default: true
   removeSmeltingForEBFMetals: true
+
+dev:
+  # Debug ore vein placement? (will print placed veins to server's debug.log)
+  # Default: false (no placement printout in debug.log)
+  debugWorldgen: false
+
+  # Dump all registered GT recipes?
+  # Default: false
+  dumpRecipes: false
 
