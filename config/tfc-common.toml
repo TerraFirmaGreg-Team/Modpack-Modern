@@ -1,0 +1,28 @@
+
+[general]
+	#
+	# If the TFC world preset 'tfc:overworld' should be set as the default world generation when creating a new world.
+	defaultWorldPreset = "tfc:overworld"
+
+[calendar]
+	#
+	# The number of days in a month, for newly created worlds.
+	# This can be modified in existing worlds using the /time command
+	#Range: > 1
+	defaultMonthLength = 8
+	#
+	# The start date for newly created worlds, in a number of ticks, for newly created worlds
+	# This represents a number of days offset from January 1, 1000
+	# The default is (5 * daysInMonth) = 40, which starts at June 1, 1000 (with the default daysInMonth = 8)
+	#Range: > -1
+	defaultCalendarStartDay = 40
+
+[debug]
+	#
+	# Enables a series of network fail-safes that are used to debug network connections between client and servers.
+	# Important: this MUST BE THE SAME as what the server has set, otherwise you are liable to see even stranger errors.
+	enableNetworkDebugging = false
+	#
+	# If enabled, TFC will validate that certain pieces of reloadable data fit the conditions we expect, for example heating recipes having heatable items. It will error or warn in the log if these conditions are not met.
+	enableDatapackTests = false
+

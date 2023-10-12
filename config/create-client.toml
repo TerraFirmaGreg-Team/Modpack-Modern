@@ -1,0 +1,146 @@
+
+#.
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+	#.
+	#Show item descriptions on Shift and controls on Ctrl.
+	enableTooltips = true
+	#.
+	#Display a tooltip when looking at overstressed components.
+	enableOverstressedTooltip = true
+	#.
+	#Log a stack-trace when rendering issues happen within a moving contraption.
+	explainRenderErrors = false
+	#.
+	#Higher density means more spawned particles.
+	#Range: 0.0 ~ 1.0
+	fanParticleDensity = 0.5
+	#.
+	#[in Blocks]
+	#Maximum Distance to the player at which items in Blocks' filter slots will be displayed
+	#Range: 1.0 ~ 3.4028234663852886E38
+	filterItemRenderDistance = 10.0
+	#.
+	#Show kinetic debug information on blocks while the F3-Menu is open.
+	enableRainbowDebug = false
+	#.
+	#The maximum amount of blocks for which to try and calculate dynamic contraption lighting. Decrease if large contraption cause too much lag
+	#Range: > 0
+	maximumContraptionLightVolume = 16384
+	#.
+	#Choose the menu row that the Create config button appears on in the main menu
+	#Set to 0 to disable the button altogether
+	#Range: 0 ~ 4
+	mainMenuConfigButtonRow = 2
+	#.
+	#Offset the Create config button in the main menu by this many pixels on the X axis
+	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
+	#Range: > -2147483648
+	mainMenuConfigButtonOffsetX = -4
+	#.
+	#Choose the menu row that the Create config button appears on in the in-game menu
+	#Set to 0 to disable the button altogether
+	#Range: 0 ~ 5
+	ingameMenuConfigButtonRow = 3
+	#.
+	#Offset the Create config button in the in-game menu by this many pixels on the X axis
+	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
+	#Range: > -2147483648
+	ingameMenuConfigButtonOffsetX = -4
+	#.
+	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
+	ignoreFabulousWarning = false
+
+	#.
+	#Configure your vision range when submerged in Create's custom fluids
+	[client.fluidFogSettings]
+		#.
+		#The vision range through honey will be multiplied by this factor
+		#Range: 0.125 ~ 256.0
+		honey = 1.0
+		#.
+		#The vision range though chocolate will be multiplied by this factor
+		#Range: 0.125 ~ 256.0
+		chocolate = 1.0
+
+	#.
+	#Settings for the Goggle Overlay
+	[client.goggleOverlay]
+		#.
+		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
+		#Range: > -2147483648
+		overlayOffsetX = 20
+		#.
+		#Offset the overlay from goggle- and hover- information by this many pixels on the respective axis; Use /create overlay
+		#Range: > -2147483648
+		overlayOffsetY = 0
+		#.
+		#Enable this to use your custom colors for the Goggle- and Hover- Overlay
+		customColorsOverlay = false
+		#.
+		#The custom background color to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBackgroundOverlay = -267386864
+		#.
+		#The custom top color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBorderTopOverlay = 1347420415
+		#.
+		#The custom bot color of the border gradient to use for the Goggle- and Hover- Overlays, if enabled
+		#[in Hex: #AaRrGgBb]
+		#[@cui:IntDisplay:#]
+		#Range: > -2147483648
+		customBorderBotOverlay = 1344798847
+
+	#.
+	#Settings for the Placement Assist
+	[client.placementAssist]
+		#.
+		#What indicator should be used when showing where the assisted placement ends up relative to your crosshair
+		#Choose 'NONE' to disable the Indicator altogether
+		#Allowed Values: TEXTURE, TRIANGLE, NONE
+		indicatorType = "TEXTURE"
+		#.
+		#Change the size of the Indicator by this multiplier
+		#Range: 0.0 ~ 3.4028234663852886E38
+		indicatorScale = 1.0
+
+	#.
+	#Ponder settings
+	[client.ponder]
+		#.
+		#Slow down a ponder scene whenever there is text on screen.
+		comfyReading = false
+		#.
+		#Show additional info in the ponder view and reload scene scripts more frequently.
+		editingMode = false
+
+	#.
+	#Sound settings
+	[client.sound]
+		#.
+		#Make cogs rumble and machines clatter.
+		enableAmbientSounds = true
+		#.
+		#Maximum volume modifier of Ambient noise
+		#Range: 0.0 ~ 1.0
+		ambientVolumeCap = 0.10000000149011612
+
+	#.
+	#Railway related settings
+	[client.trains]
+		#.
+		#How far away the Camera should zoom when seated on a train
+		#Range: 0.0 ~ 3.4028234663852886E38
+		mountedZoomMultiplier = 3.0
+		#.
+		#Display nodes and edges of a Railway Network while f3 debug mode is active
+		showTrackGraphOnF3 = false
+		#.
+		#Additionally display materials of a Rail Network while f3 debug mode is active
+		showExtendedTrackGraphOnF3 = false
+
