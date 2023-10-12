@@ -3,27 +3,9 @@
 const MapColor = Java.loadClass('net.minecraft.world.level.material.MapColor')
 const ChemicalHelper = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.ChemicalHelper")
 
-const StoneTypeNames = [
-    'gabbro', 
-    'shale', 
-    'claystone', 
-    'limestone', 
-    'conglomerate', 
-    'dolomite', 
-    'chert', 
-    'chalk', 
-    'rhyolite', 
-    'dacite', 
-    'quartzite', 
-    'slate', 
-    'phyllite', 
-    'schist', 
-    'gneiss', 
-    'marble'
-]
-
 // Replace + Remove Stonetypes
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    // Ожидаем нормальной фичи для удаления стоунтайпов
     // TagPrefix.ORES.remove(TagPrefix.ore)
     // TagPrefix.ORES.remove(TagPrefix.oreTuff)
     // TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
@@ -33,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     // TagPrefix.ORES.remove(TagPrefix.oreNetherrack)
     // TagPrefix.ORES.remove(TagPrefix.oreEndstone)
 
-    StoneTypeNames.forEach(stoneTypeName => {
+    global.StoneTypeNamesWithoutGTDups.forEach(stoneTypeName => {
         event.create(stoneTypeName, 'ore')
             .stateSupplier(() => Block.getBlock('tfc:rock/raw/' + stoneTypeName).defaultBlockState())
             .sound(SoundType.STONE)

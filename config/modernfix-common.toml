@@ -1,3 +1,0 @@
-#These JEI plugins will be loaded on the main thread
-blacklist_async_jei_plugins = ["jepb:jei_plugin"]
-

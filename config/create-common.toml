@@ -1,9 +1,0 @@
-
-#.
-#Modify Create's impact on your terrain
-[worldgen]
-	#.
-	#.
-	#Prevents all worldgen added by Create from taking effect
-	disableWorldGen = false
-

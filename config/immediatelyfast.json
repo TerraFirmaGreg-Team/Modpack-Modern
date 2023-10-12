@@ -12,6 +12,7 @@
   "EXPERIMENTAL_INFO": "----- Experimental config values below (Rendering glitches may occur) -----",
   "experimental_disable_error_checking": false,
   "experimental_disable_resource_pack_conflict_handling": false,
+  "experimental_sign_text_buffering": false,
   "DEBUG_INFO": "----- Debug only config values below (Do not touch) -----",
   "debug_only_and_not_recommended_disable_universal_batching": false,
   "debug_only_and_not_recommended_disable_mod_conflict_handling": false,

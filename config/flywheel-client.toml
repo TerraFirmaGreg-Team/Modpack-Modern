@@ -1,8 +1,0 @@
-#Select the backend to use.
-#Allowed Values: OFF, BATCHING, INSTANCING
-backend = "INSTANCING"
-#Enable or disable a debug overlay that colors pixels by their normal.
-debugNormals = false
-#Enable or disable instance update limiting with distance.
-limitUpdates = true
-
