@@ -1,6 +1,6 @@
 // priority: 1000
 
-global.AllStoneTypeNames = [
+global.allTFCStoneTypeNames = [
     'gabbro', 
     'shale', 
     'claystone', 
@@ -23,7 +23,7 @@ global.AllStoneTypeNames = [
     'granite'
 ];
 
-global.StoneTypeNamesWithoutGTDups = [
+global.allTFCStoneTypeNamesWithoutDups = [
     'gabbro', 
     'shale', 
     'claystone', 
@@ -42,7 +42,7 @@ global.StoneTypeNamesWithoutGTDups = [
     'marble'
 ];
 
-global.StoneTypeNamesOfGTDups = [
+global.allTFCStoneTypeNamesOnlyDups = [
     'basalt',
     'diorite',
     'andesite',

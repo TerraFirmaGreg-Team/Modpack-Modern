@@ -1,0 +1,150 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 14,
+    "min_y": {
+      "absolute": 40
+    },
+    "max_y": {
+      "absolute": 60
+    },
+    "size": 8,
+    "density": 0.2,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_shale_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_claystone_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_limestone_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_conglomerate_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_dolomite_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_chert_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_chalk_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_quartzite_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_slate_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_phyllite_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_schist_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_gneiss_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_marble_amethyst_ore"
+          }
+        ]
+      }
+    ],
+    "random_name": "amethyst",
+    "biomes": "#tfc:is_river",
+    "height": 4
+  }
+}
