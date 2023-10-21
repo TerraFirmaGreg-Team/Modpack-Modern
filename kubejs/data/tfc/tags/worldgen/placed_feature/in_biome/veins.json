@@ -1,11 +1,23 @@
 {
-    "__comment__": "This file was automatically created by mcresources",
-    "replace": true,
-    "values": [
-      "tfc:vein/surface_bismuthinite",
-      "tfc:vein/surface_cassiterite",
-      "tfc:vein/surface_copper",
-      "tfc:vein/surface_sphalerite",
-      "tfc:vein/surface_tetrahedrite"
-    ]
-  }
+  "__comment__": "This file was automatically created by mcresources",
+  "replace": true,
+  "values": [
+    "tfc:vein/surface_bismuthinite",
+    "tfc:vein/surface_cassiterite",
+    "tfc:vein/surface_copper",
+    "tfc:vein/surface_sphalerite",
+    "tfc:vein/surface_tetrahedrite",
+    "tfc:vein/normal_bismuthinite",
+    "tfc:vein/normal_cassiterite",
+    "tfc:vein/normal_copper",
+    "tfc:vein/normal_garnierite",
+    "tfc:vein/normal_gold",
+    "tfc:vein/normal_hematite",
+    "tfc:vein/normal_limonite",
+    "tfc:vein/normal_magnetite",
+    "tfc:vein/normal_malachite",
+    "tfc:vein/normal_silver",
+    "tfc:vein/normal_sphalerite",
+    "tfc:vein/normal_tetrahedrite"
+  ]
+}

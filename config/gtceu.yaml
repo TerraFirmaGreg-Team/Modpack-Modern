@@ -186,6 +186,14 @@ machines:
   # Default: false
   enableTieredCasings: false
 
+  # Minimum distance between Long Distance Item Pipe Endpoints
+  # Default: 50
+  ldItemPipeMinDistance: 50
+
+  # Minimum distance betweeb Long Distance Fluid Pipe Endpoints
+  # Default: 50
+  ldFluidPipeMinDistance: 50
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
