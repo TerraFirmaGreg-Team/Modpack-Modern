@@ -1,6 +1,6 @@
 // priority: 0
 
-// Replace + Remove Stonetypes
+// Replace
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     global.allTFCStoneTypeNames.forEach(stoneTypeName => {
         event.create("tfc_" + stoneTypeName, 'ore')
