@@ -3,6 +3,9 @@
     "replace": true,
     "values": [
       "tfc:vein/surface_bismuthinite",
-      "tfc:vein/surface_cassiterite"
+      "tfc:vein/surface_cassiterite",
+      "tfc:vein/surface_copper",
+      "tfc:vein/surface_sphalerite",
+      "tfc:vein/surface_tetrahedrite"
     ]
   }
