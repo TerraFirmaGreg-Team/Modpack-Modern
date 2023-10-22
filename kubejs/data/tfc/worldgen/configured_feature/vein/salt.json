@@ -19,7 +19,7 @@
         "with": [
           {
             "weight": 40,
-            "block": "gtceu:tfc_shale_rocksalt_ore"
+            "block": "gtceu:tfc_shale_rock_salt_ore"
           },
           {
             "weight": 30,
@@ -42,7 +42,7 @@
         "with": [
           {
             "weight": 40,
-            "block": "gtceu:tfc_claystone_rocksalt_ore"
+            "block": "gtceu:tfc_claystone_rock_salt_ore"
           },
           {
             "weight": 30,
@@ -65,7 +65,7 @@
         "with": [
           {
             "weight": 40,
-            "block": "gtceu:tfc_limestone_rocksalt_ore"
+            "block": "gtceu:tfc_limestone_rock_salt_ore"
           },
           {
             "weight": 30,
