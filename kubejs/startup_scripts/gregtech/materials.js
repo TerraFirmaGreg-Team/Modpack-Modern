@@ -2,5 +2,5 @@ const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mat
 const $OrePropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey")
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    GTMaterials.Bismuth.setProperty($OrePropertyKey.ORE, new $OreProperty());
+    //GTMaterials.Bismuth.setProperty($OrePropertyKey.ORE, new $OreProperty());
 })

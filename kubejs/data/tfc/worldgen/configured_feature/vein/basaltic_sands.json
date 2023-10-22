@@ -1,0 +1,64 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 80,
+    "min_y": {
+      "absolute": 15
+    },
+    "max_y": {
+      "absolute": 60
+    },
+    "size": 24,
+    "density": 0.2,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "gtceu:tfc_granite_basaltic_mineral_sand_ore"
+          },
+          {
+            "weight": 25,
+            "block": "gtceu:tfc_granite_granitic_mineral_sand_ore"
+          },
+          {
+            "weight": 25,
+            "block": "gtceu:tfc_granite_fullers_earth_ore"
+          },
+          {
+            "weight": 15,
+            "block": "tfc:ore/gypsum/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "gtceu:tfc_basalt_basaltic_mineral_sand_ore"
+          },
+          {
+            "weight": 25,
+            "block": "gtceu:tfc_basalt_granitic_mineral_sand_ore"
+          },
+          {
+            "weight": 25,
+            "block": "gtceu:tfc_basalt_fullers_earth_ore"
+          },
+          {
+            "weight": 15,
+            "block": "tfc:ore/gypsum/basalt"
+          }
+        ]
+      }
+    ],
+    "random_name": "basaltic_sands"
+  }
+}

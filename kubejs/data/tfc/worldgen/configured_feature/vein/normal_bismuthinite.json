@@ -19,7 +19,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_granite_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/granite"
           },
           {
             "weight": 9,
@@ -38,7 +38,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_diorite_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/diorite"
           },
           {
             "weight": 9,
@@ -57,7 +57,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_gabbro_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/gabbro"
           },
           {
             "weight": 9,
@@ -76,7 +76,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_shale_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/shale"
           },
           {
             "weight": 9,
@@ -95,7 +95,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_claystone_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/claystone"
           },
           {
             "weight": 9,
@@ -114,7 +114,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_limestone_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/limestone"
           },
           {
             "weight": 9,
@@ -133,7 +133,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_conglomerate_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/conglomerate"
           },
           {
             "weight": 9,
@@ -152,7 +152,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_dolomite_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/dolomite"
           },
           {
             "weight": 9,
@@ -171,7 +171,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_chert_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/chert"
           },
           {
             "weight": 9,
@@ -190,7 +190,7 @@
         "with": [
           {
             "weight": 80,
-            "block": "gtceu:tfc_chalk_bismuth_ore"
+            "block": "tfc:ore/normal_bismuthinite/chalk"
           },
           {
             "weight": 9,
