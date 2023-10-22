@@ -1,0 +1,56 @@
+
+#.
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+	#.
+	#Disable the optifine warning screen [DANGER]: Using optifine With Steam 'n' Rails may cause issues and you will not get any support for optifine related issues.
+	disableOptifineNag = false
+	#.
+	#Show extended debug info in coupler goggle overlay
+	showExtendedCouplerDebug = false
+	#.
+	#Skip clientside train derailing. This prevents stuttering when a train places tracks, but trains will not appear derailed when they crash
+	skipClientDerailing = false
+	#.
+	#Use a scanline shader when spying through a conductor
+	useConductorSpyShader = true
+	#.
+	#Vertical offset for track overlays
+	#Range: -256.0 ~ 256.0
+	trackOverlayOffset = 0.0
+	#.
+	#Whether to actually apply the dev cape (ignored for non-devs)
+	#This setting may require a relog to take effect
+	useDevCape = true
+
+	#.
+	#Smoke Settings
+	[client.smoke]
+		#.
+		#[in Ticks]
+		#Lifetime of smoke particles emitted by contraptions
+		#Range: 20 ~ 1000
+		smokeLifetime = 500
+		#.
+		#Smoke emission rate on contraptions
+		#Range: 0.0 ~ 10.0
+		smokePercentage = 0.75
+		#.
+		#Smoke texture quality
+		#Allowed Values: LOW, MEDIUM, HIGH, ULTRA
+		smokeQuality = "HIGH"
+
+	#.
+	#Journeymap Settings
+	[client.journeymap]
+		#.
+		#[in Ticks]
+		#Journeymap train overlay update time
+		#Range: 1 ~ 600
+		updateRate = 1
+		#.
+		#[in Ticks]
+		#Journeymap train overlay old marker removal check time
+		#Range: 10 ~ 1200
+		removeObsoleteRate = 200
+

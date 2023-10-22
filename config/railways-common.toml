@@ -1,0 +1,9 @@
+#.
+#Register integration tracks for mods that are not present
+#[@cui:RequiresReload:both]
+registerMissingTracks = false
+#.
+#Disable Steam 'n' Rails datafixers. Do not enable this config if your world contains pre-Create 0.5.1 monobogeys, because then they will be destroyed
+#[@cui:RequiresReload:both]
+disableDatafixer = false
+
