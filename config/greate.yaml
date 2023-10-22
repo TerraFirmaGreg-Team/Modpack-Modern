@@ -1,0 +1,110 @@
+# Settings related to ULS tier machines
+ULS:
+  # Maximum stress capacity for ULS tier machines
+  CAPACITY: 8.0
+
+  # Stress impact for a ULS tier millstone
+  MILLSTONE_IMPACT: 0.5
+
+  # Stress impact for a ULS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 0.5
+
+# Settings related to LS tier machines
+LS:
+  # Maximum stress capacity for LS tier machines
+  CAPACITY: 32.0
+
+  # Stress impact for a LS tier millstone
+  MILLSTONE_IMPACT: 1.0
+
+  # Stress impact for a LS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 1.0
+
+# Settings related to MS tier machines
+MS:
+  # Maximum stress capacity for MS tier machines
+  CAPACITY: 128.0
+
+  # Stress impact for a MS tier millstone
+  MILLSTONE_IMPACT: 1.5
+
+  # Stress impact for a MS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 1.5
+
+# Settings related to HS tier machines
+HS:
+  # Maximum stress capacity for HS tier machines
+  CAPACITY: 512.0
+
+  # Stress impact for a HS tier millstone
+  MILLSTONE_IMPACT: 2.0
+
+  # Stress impact for a HS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 2.0
+
+# Settings related to ES tier machines
+ES:
+  # Maximum stress capacity for ES tier machines
+  CAPACITY: 2048.0
+
+  # Stress impact for a ES tier millstone
+  MILLSTONE_IMPACT: 2.5
+
+  # Stress impact for a ES tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 2.5
+
+# Settings related to IS tier machines
+IS:
+  # Maximum stress capacity for IS tier machines
+  CAPACITY: 8192.0
+
+  # Stress impact for a IS tier millstone
+  MILLSTONE_IMPACT: 3.0
+
+  # Stress impact for a IS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 3.0
+
+# Settings related to LUS tier machines
+LUS:
+  # Maximum stress capacity for LuS tier machines
+  CAPACITY: 32768.0
+
+  # Stress impact for a LUS tier millstone
+  MILLSTONE_IMPACT: 3.5
+
+  # Stress impact for a LUS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 3.5
+
+# Settings related to ZPM tier machines
+ZPM:
+  # Maximum stress capacity for ZPM tier machines
+  CAPACITY: 131072.0
+
+  # Stress impact for a ZPM tier millstone
+  MILLSTONE_IMPACT: 4.0
+
+  # Stress impact for a ZPM tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 4.0
+
+# Settings related to US tier machines
+US:
+  # Maximum stress capacity for US tier machines
+  CAPACITY: 524288.0
+
+  # Stress impact for a US tier millstone
+  MILLSTONE_IMPACT: 4.5
+
+  # Stress impact for a US tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 4.5
+
+# Settings related to UHS tier machines
+UHS:
+  # Maximum stress capacity for UHS tier machines
+  CAPACITY: 2097152.0
+
+  # Stress impact for a UHS tier millstone
+  MILLSTONE_IMPACT: 5.0
+
+  # Stress impact for a UHS tier crushing wheel
+  CRUSHING_WHEEL_IMPACT: 5.0
+
