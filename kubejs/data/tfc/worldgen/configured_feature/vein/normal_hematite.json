@@ -9,7 +9,7 @@
     "max_y": {
       "absolute": 75
     },
-    "size": 20,
+    "size": 40,
     "density": 0.6,
     "blocks": [
       {
@@ -18,16 +18,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_hematite/rhyolite"
-          },
-          {
-            "weight": 50,
-            "block": "tfc:ore/normal_hematite/rhyolite"
+            "weight": 15,
+            "block": "gtceu:tfc_rhyolite_goethite_ore"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_hematite/rhyolite"
+            "block": "gtceu:tfc_rhyolite_yellow_limonite_ore"
+          },
+          {
+            "weight": 50,
+            "block": "gtceu:tfc_rhyolite_hematite_ore"
+          },
+          {
+            "weight": 5,
+            "block": "gtceu:tfc_rhyolite_gold_ore"
           }
         ]
       },
@@ -37,16 +41,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_hematite/basalt"
-          },
-          {
-            "weight": 50,
-            "block": "tfc:ore/normal_hematite/basalt"
+            "weight": 15,
+            "block": "gtceu:tfc_basalt_goethite_ore"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_hematite/basalt"
+            "block": "gtceu:tfc_basalt_yellow_limonite_ore"
+          },
+          {
+            "weight": 50,
+            "block": "gtceu:tfc_basalt_hematite_ore"
+          },
+          {
+            "weight": 5,
+            "block": "gtceu:tfc_basalt_gold_ore"
           }
         ]
       },
@@ -56,16 +64,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_hematite/andesite"
-          },
-          {
-            "weight": 50,
-            "block": "tfc:ore/normal_hematite/andesite"
+            "weight": 15,
+            "block": "gtceu:tfc_andesite_goethite_ore"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_hematite/andesite"
+            "block": "gtceu:tfc_andesite_yellow_limonite_ore"
+          },
+          {
+            "weight": 50,
+            "block": "gtceu:tfc_andesite_hematite_ore"
+          },
+          {
+            "weight": 5,
+            "block": "gtceu:tfc_andesite_gold_ore"
           }
         ]
       },
@@ -75,16 +87,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_hematite/dacite"
-          },
-          {
-            "weight": 50,
-            "block": "tfc:ore/normal_hematite/dacite"
+            "weight": 15,
+            "block": "gtceu:tfc_dacite_goethite_ore"
           },
           {
             "weight": 30,
-            "block": "tfc:ore/rich_hematite/dacite"
+            "block": "gtceu:tfc_dacite_yellow_limonite_ore"
+          },
+          {
+            "weight": 50,
+            "block": "gtceu:tfc_dacite_hematite_ore"
+          },
+          {
+            "weight": 5,
+            "block": "gtceu:tfc_dacite_gold_ore"
           }
         ]
       }
