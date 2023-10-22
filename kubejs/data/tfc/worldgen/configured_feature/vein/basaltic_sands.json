@@ -1,6 +1,6 @@
 {
   "__comment__": "This file was automatically created by mcresources",
-  "type": "tfc:cluster_vein",
+  "type": "tfc:disc_vein",
   "config": {
     "rarity": 80,
     "min_y": {
@@ -59,6 +59,7 @@
         ]
       }
     ],
-    "random_name": "basaltic_sands"
+    "random_name": "basaltic_sands",
+    "height": 3
   }
 }
