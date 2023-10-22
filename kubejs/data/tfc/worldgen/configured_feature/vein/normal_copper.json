@@ -9,7 +9,7 @@
     "max_y": {
       "absolute": 75
     },
-    "size": 20,
+    "size": 40,
     "density": 0.6,
     "blocks": [
       {
@@ -19,15 +19,19 @@
         "with": [
           {
             "weight": 20,
-            "block": "tfc:ore/poor_native_copper/rhyolite"
+            "block": "gtceu:tfc_rhyolite_chalcopyrite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_copper/rhyolite"
+            "weight": 5,
+            "block": "gtceu:tfc_rhyolite_iron_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_copper/rhyolite"
+            "weight": 10,
+            "block": "gtceu:tfc_rhyolite_pyrite_ore"
+          },
+          {
+            "weight": 65,
+            "block": "gtceu:tfc_rhyolite_copper_ore"
           }
         ]
       },
@@ -38,15 +42,19 @@
         "with": [
           {
             "weight": 20,
-            "block": "tfc:ore/poor_native_copper/basalt"
+            "block": "gtceu:tfc_basalt_chalcopyrite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_copper/basalt"
+            "weight": 5,
+            "block": "gtceu:tfc_basalt_iron_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_copper/basalt"
+            "weight": 10,
+            "block": "gtceu:tfc_basalt_pyrite_ore"
+          },
+          {
+            "weight": 65,
+            "block": "gtceu:tfc_basalt_copper_ore"
           }
         ]
       },
@@ -57,15 +65,19 @@
         "with": [
           {
             "weight": 20,
-            "block": "tfc:ore/poor_native_copper/andesite"
+            "block": "gtceu:tfc_andesite_chalcopyrite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_copper/andesite"
+            "weight": 5,
+            "block": "gtceu:tfc_andesite_iron_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_copper/andesite"
+            "weight": 10,
+            "block": "gtceu:tfc_andesite_pyrite_ore"
+          },
+          {
+            "weight": 65,
+            "block": "gtceu:tfc_andesite_copper_ore"
           }
         ]
       },
@@ -76,15 +88,19 @@
         "with": [
           {
             "weight": 20,
-            "block": "tfc:ore/poor_native_copper/dacite"
+            "block": "gtceu:tfc_dacite_chalcopyrite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_copper/dacite"
+            "weight": 5,
+            "block": "gtceu:tfc_dacite_iron_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_copper/dacite"
+            "weight": 10,
+            "block": "gtceu:tfc_dacite_pyrite_ore"
+          },
+          {
+            "weight": 65,
+            "block": "gtceu:tfc_dacite_copper_ore"
           }
         ]
       }
