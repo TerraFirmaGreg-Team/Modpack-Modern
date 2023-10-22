@@ -9,7 +9,7 @@
     "max_y": {
       "absolute": 60
     },
-    "size": 15,
+    "size": 35,
     "density": 0.6,
     "blocks": [
       {
@@ -18,16 +18,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_rhyolite_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/rhyolite"
+            "block": "gtceu:tfc_rhyolite_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/rhyolite"
+            "weight": 20,
+            "block": "gtceu:tfc_rhyolite_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/rhyolite"
+            "weight": 55,
+            "block": "gtceu:tfc_rhyolite_gold_ore"
           }
         ]
       },
@@ -37,16 +41,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_basalt_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/basalt"
+            "block": "gtceu:tfc_basalt_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/basalt"
+            "weight": 20,
+            "block": "gtceu:tfc_basalt_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/basalt"
+            "weight": 55,
+            "block": "gtceu:tfc_basalt_gold_ore"
           }
         ]
       },
@@ -56,16 +64,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_andesite_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/andesite"
+            "block": "gtceu:tfc_andesite_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/andesite"
+            "weight": 20,
+            "block": "gtceu:tfc_andesite_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/andesite"
+            "weight": 55,
+            "block": "gtceu:tfc_andesite_gold_ore"
           }
         ]
       },
@@ -75,16 +87,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_dacite_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/dacite"
+            "block": "gtceu:tfc_dacite_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/dacite"
+            "weight": 20,
+            "block": "gtceu:tfc_dacite_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/dacite"
+            "weight": 55,
+            "block": "gtceu:tfc_dacite_gold_ore"
           }
         ]
       },
@@ -94,16 +110,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_granite_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/granite"
+            "block": "gtceu:tfc_granite_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/granite"
+            "weight": 20,
+            "block": "gtceu:tfc_granite_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/granite"
+            "weight": 55,
+            "block": "gtceu:tfc_granite_gold_ore"
           }
         ]
       },
@@ -113,16 +133,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_diorite_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/diorite"
+            "block": "gtceu:tfc_diorite_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/diorite"
+            "weight": 20,
+            "block": "gtceu:tfc_diorite_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/diorite"
+            "weight": 55,
+            "block": "gtceu:tfc_diorite_gold_ore"
           }
         ]
       },
@@ -132,16 +156,20 @@
         ],
         "with": [
           {
+            "weight": 5,
+            "block": "gtceu:tfc_gabbro_goethite_ore"
+          },
+          {
             "weight": 20,
-            "block": "tfc:ore/poor_native_gold/gabbro"
+            "block": "gtceu:tfc_gabbro_yellow_limonite_ore"
           },
           {
-            "weight": 50,
-            "block": "tfc:ore/normal_native_gold/gabbro"
+            "weight": 20,
+            "block": "gtceu:tfc_gabbro_hematite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_native_gold/gabbro"
+            "weight": 55,
+            "block": "gtceu:tfc_gabbro_gold_ore"
           }
         ]
       }
