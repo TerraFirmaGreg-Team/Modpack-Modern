@@ -9,7 +9,7 @@
     "max_y": {
       "absolute": 75
     },
-    "size": 20,
+    "size": 40,
     "density": 0.6,
     "blocks": [
       {
@@ -18,20 +18,24 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/shale"
+            "weight": 15,
+            "block": "gtceu:tfc_shale_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/shale"
+            "block": "gtceu:tfc_shale_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/shale"
+            "weight": 20,
+            "block": "gtceu:tfc_shale_hematite_ore"
           },
           {
-            "weight": 25,
-            "block": "tfc:ore/ruby/shale"
+            "weight": 10,
+            "block": "gtceu:tfc_shale_malachite_ore"
+          },
+          {
+            "weight": 5,
+            "block": "gtceu:tfc_shale_ruby_ore"
           }
         ]
       },
@@ -41,16 +45,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/claystone"
+            "weight": 15,
+            "block": "gtceu:tfc_claystone_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/claystone"
+            "block": "gtceu:tfc_claystone_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/claystone"
+            "weight": 20,
+            "block": "gtceu:tfc_claystone_hematite_ore"
+          },
+          {
+            "weight": 15,
+            "block": "gtceu:tfc_claystone_malachite_ore"
           }
         ]
       },
@@ -60,20 +68,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/limestone"
+            "weight": 15,
+            "block": "gtceu:tfc_limestone_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/limestone"
+            "block": "gtceu:tfc_limestone_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/limestone"
+            "weight": 20,
+            "block": "gtceu:tfc_limestone_hematite_ore"
           },
           {
-            "weight": 25,
-            "block": "tfc:ore/ruby/limestone"
+            "weight": 15,
+            "block": "gtceu:tfc_limestone_malachite_ore"
           }
         ]
       },
@@ -83,16 +91,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/conglomerate"
+            "weight": 15,
+            "block": "gtceu:tfc_conglomerate_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/conglomerate"
+            "block": "gtceu:tfc_conglomerate_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/conglomerate"
+            "weight": 20,
+            "block": "gtceu:tfc_conglomerate_hematite_ore"
+          },
+          {
+            "weight": 15,
+            "block": "gtceu:tfc_conglomerate_malachite_ore"
           }
         ]
       },
@@ -102,16 +114,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/dolomite"
+            "weight": 15,
+            "block": "gtceu:tfc_dolomite_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/dolomite"
+            "block": "gtceu:tfc_dolomite_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/dolomite"
+            "weight": 20,
+            "block": "gtceu:tfc_dolomite_hematite_ore"
+          },
+          {
+            "weight": 15,
+            "block": "gtceu:tfc_dolomite_malachite_ore"
           }
         ]
       },
@@ -121,16 +137,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/chert"
+            "weight": 15,
+            "block": "gtceu:tfc_chert_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/chert"
+            "block": "gtceu:tfc_chert_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/chert"
+            "weight": 20,
+            "block": "gtceu:tfc_chert_hematite_ore"
+          },
+          {
+            "weight": 15,
+            "block": "gtceu:tfc_chert_malachite_ore"
           }
         ]
       },
@@ -140,16 +160,20 @@
         ],
         "with": [
           {
-            "weight": 20,
-            "block": "tfc:ore/poor_limonite/chalk"
+            "weight": 15,
+            "block": "gtceu:tfc_chalk_goethite_ore"
           },
           {
             "weight": 50,
-            "block": "tfc:ore/normal_limonite/chalk"
+            "block": "gtceu:tfc_chalk_yellow_limonite_ore"
           },
           {
-            "weight": 30,
-            "block": "tfc:ore/rich_limonite/chalk"
+            "weight": 20,
+            "block": "gtceu:tfc_chalk_hematite_ore"
+          },
+          {
+            "weight": 15,
+            "block": "gtceu:tfc_chalk_malachite_ore"
           }
         ]
       }
