@@ -1,0 +1,9 @@
+
+#Client Settings
+[client]
+	#Positions where sort buttons can display to help with conflicts with controls from other mods
+	#Allowed Values: TITLE_LINE_RIGHT, BELOW_UPGRADES, BELOW_UPGRADE_TABS, HIDDEN
+	sortButtonsPosition = "TITLE_LINE_RIGHT"
+	#Whether click sound should play when custom buttons are clicked in gui
+	playButtonSound = true
+

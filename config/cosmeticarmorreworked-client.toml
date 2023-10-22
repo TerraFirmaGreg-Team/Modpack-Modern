@@ -1,0 +1,28 @@
+
+#These settings only affects client
+[Client]
+	#Whether or not to hide the button for opening CosmeticArmorInventory
+	CosArmorGuiButton_Hidden = false
+	#The horizontal pixel distance from the origin point of player inventory gui
+	#Range: > -2147483648
+	CosArmorGuiButton_Left = 65
+	#The vertical pixel distance from the origin point of player inventoy gui
+	#Range: > -2147483648
+	CosArmorGuiButton_Top = 67
+	#Whether or not to hide the button for toggling the mod temporarily on client side
+	CosArmorToggleButton_Hidden = false
+	#The horizontal pixel distance from the origin point of player inventory gui
+	#Range: > -2147483648
+	CosArmorToggleButton_Left = 59
+	#The vertical pixel distance from the origin point of player inventory gui
+	#Range: > -2147483648
+	CosArmorToggleButton_Top = 72
+	#Whether or not to hide the button for opening CosmeticArmorInventory in CreativeInventory
+	CosArmorCreativeGuiButton_Hidden = false
+	#The horizontal pixel distance from the origin point of creative inventory gui
+	#Range: > -2147483648
+	CosArmorCreativeGuiButton_Left = 95
+	#The vertical pixel distance from the origin point of creative inventoy gui
+	#Range: > -2147483648
+	CosArmorCreativeGuiButton_Top = 38
+
