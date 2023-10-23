@@ -1253,8 +1253,8 @@ global.veins = [
         }
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "sulfur",
+        random_name: "sulfur",
+        veinType: "tfc:cluster_vein",
         rarity: 90,
         maxY: 210,
         minY: 0,
@@ -1277,8 +1277,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "topaz",
+        random_name: "topaz",
+        veinType: "tfc:cluster_vein",
         rarity: 30,
         maxY: -30,
         minY: -50,
@@ -1305,8 +1305,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "apatite",
+        random_name: "apatite",
+        veinType: "tfc:cluster_vein",
         rarity: 90,
         maxY: 20,
         minY: -40,
@@ -1320,7 +1320,7 @@ global.veins = [
             },
             {
                 weight: 35,
-                material: "tricalcium_phospate"
+                material: "tricalcium_phosphate"
             },
             {
                 weight: 15,
@@ -1329,14 +1329,14 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "garnet_tin",
+        random_name: "garnet_tin",
+        veinType: "tfc:cluster_vein",
         rarity: 300,
         maxY: 65,
         minY: -20,
         size: 36,
         density: 0.1,
-        stoneTypes: ["rhyolite", "basalt", "andesite", "daceite", "granite", "diorite", "gabbro", "quartzite", "slate", 
+        stoneTypes: ["rhyolite", "basalt", "andesite", "dacite", "granite", "diorite", "gabbro", "quartzite", "slate", 
                         "phyllite", "schist", "gneiss", "marble", "shale", "claystone", 
                         "limestone", "conglomerate", "dolomite", "chert", "chalk"],
         ores: [
@@ -1359,8 +1359,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "lubricant",
+        random_name: "lubricant",
+        veinType: "tfc:cluster_vein",
         rarity: 90,
         maxY: 50,
         minY: -40,
@@ -1387,8 +1387,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "mica",
+        random_name: "mica",
+        veinType: "tfc:cluster_vein",
         rarity: 90,
         maxY: 210,
         minY: 0,
@@ -1415,8 +1415,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "sylvite",
+        random_name: "sylvite",
+        veinType: "tfc:cluster_vein",
         rarity: 90,
         maxY: 210,
         minY: 0,
@@ -1431,8 +1431,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "olivine",
+        random_name: "olivine",
+        veinType: "tfc:cluster_vein",
         rarity: 70,
         maxY: 10,
         minY: -20,
@@ -1459,8 +1459,8 @@ global.veins = [
         ]
     },
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "sapphire",
+        random_name: "sapphire",
+        veinType: "tfc:cluster_vein",
         rarity: 20,
         maxY: 40,
         minY: 0,

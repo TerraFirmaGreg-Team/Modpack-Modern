@@ -63,7 +63,7 @@ const addOreVeins = (event) => {
         })
 
         veinsJson.values.push(`tfc:vein/${vein.random_name}`)
-        console.log(configuredFeatureVeinJson)
+
         event.addJson(`tfc:worldgen/configured_feature/vein/${vein.random_name}`, configuredFeatureVeinJson)
         event.addJson(`tfc:worldgen/placed_feature/vein/${vein.random_name}`, placedFeatureVeinJson)
     })
