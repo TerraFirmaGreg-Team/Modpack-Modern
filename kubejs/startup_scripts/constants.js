@@ -51,31 +51,6 @@ global.allTFCStoneTypeNamesOnlyDups = [
 
 global.veins = [
     {
-        random_name: "tfc:cluster_vein",
-        veinType: "",
-        rarity: 0,
-        maxY: 0,
-        minY: 0,
-        size: 0,
-        density: 0.0,
-        stoneTypes: [""],
-        ores: [
-            {
-                weight: 0,
-                material: ""
-            }
-        ],
-
-        indicator: {
-            rarity: 0,
-            blocks: [
-                {
-                    block: ""
-                }
-            ]
-        }
-    },
-    {
         random_name: "basaltic_sands",
         veinType: "tfc:disc_vein",
         rarity: 80,
@@ -1252,7 +1227,7 @@ global.veins = [
         minY: 60,
         size: 20,
         density: 0.5,
-        stoneTypes: ["quartzite", "slate", "phyllite", "schist", "gneiss", "marble", ""],
+        stoneTypes: ["quartzite", "slate", "phyllite", "schist", "gneiss", "marble"],
         ores: [
             {
                 weight: 60,
