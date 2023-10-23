@@ -1,7 +1,6 @@
 // priority: 0
 
-// Replace
-GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+const registerStoneTypes = (event) => {
     global.allTFCStoneTypeNames.forEach(stoneTypeName => {
         event.create("tfc_" + stoneTypeName, 'ore')
             .stateSupplier(() => Block.getBlock('tfc:rock/raw/' + stoneTypeName).defaultBlockState())
@@ -10,5 +9,5 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
             .materialIconType(GTMaterialIconType.ore)
             .generationCondition(ItemGenerationCondition.hasOreProperty)
     });
-})
+}
 
