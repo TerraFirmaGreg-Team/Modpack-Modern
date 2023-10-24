@@ -12,6 +12,10 @@ ServerEvents.tags('item', event => {
     registerItemTagsGT(event)
 })
 
+ServerEvents.recipes(event => {
+    registerGTrecipes(event)
+})
+
 LootJS.modifiers((event) => {
     modifyLootGT(event)
 });
