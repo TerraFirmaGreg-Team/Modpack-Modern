@@ -871,15 +871,15 @@ global.veins = [
         stoneTypes: ["quartzite", "slate", "phyllite", "schist", "gneiss", "marble"],
         ores: [
             {
-                weight: 0,
+                weight: 35,
                 material: "sulfur"
             },
             {
-                weight: 0,
+                weight: 40,
                 material: "sphalerite"
             },
             {
-                weight: 0,
+                weight: 25,
                 material: "pyrite"
             }
         ],
@@ -1425,7 +1425,7 @@ global.veins = [
         stoneTypes: ["shale", "claystone", "chert"],
         ores: [
             {
-                weight: 100,
+                //weight: 100,
                 material: "sylvite"
             }
         ]
