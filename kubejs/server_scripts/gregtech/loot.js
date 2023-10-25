@@ -10,9 +10,9 @@ const modifyLootGT = (event) => {
                 event.addBlockLootModifier(blockName)
                     .removeLoot(Ingredient.all)
                     .addWeightedLoot([
-                        Item.of(`gtceu:${material}_rich_raw_ore`).withChance(25),
-                        Item.of(`gtceu:${material}_raw_ore`).withChance(50),
-                        Item.of(`gtceu:${material}_poor_raw_ore`).withChance(25)
+                        Item.of(`gtceu:${material}_rich_raw`).withChance(25),
+                        Item.of(`gtceu:raw_${material}`).withChance(50),
+                        Item.of(`gtceu:${material}_poor_raw`).withChance(25)
                     ]);
             }
         })
