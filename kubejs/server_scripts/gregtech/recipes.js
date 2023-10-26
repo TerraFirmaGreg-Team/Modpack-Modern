@@ -54,16 +54,16 @@ const generateRecipesForRawOres = (event, material) => {
         let outputItems;
     
         if (material.hasProperty($PropertyKey.GEM) && !gemPrefix.isIgnored(material)) {
-            outputItems = `${amountOfCrushedOre * multiplier}x gtceu:${material}_gem`
+            outputItems = `${amountOfCrushedOre * multiplier}x #forge:gems/${material}`
         } else {
-            outputItems = `${amountOfCrushedOre * multiplier}x gtceu:${material}_crushed_ore`
+            outputItems = `${amountOfCrushedOre * multiplier}x #forge:crushed_ores/${material}`
         }
     
         const forgeHammerRecipeName = `hammer_${tagPrefixWithMaterial}_to_crushed_ore`
         const maceratorRecipeName = `macerate_${tagPrefixWithMaterial}_to_crushed_ore`
     
         const rawRecipeEntry = `1x gtceu:${tagPrefixWithMaterial}`
-        const crushedRecipeEntry = `${crushedStack.getCount() * multiplier}x gtceu:${material}_crushed_ore`
+        const crushedRecipeEntry = `${crushedStack.getCount() * multiplier}x #forge:crushed_ores/${material}`
         
         event.recipes.gtceu.forge_hammer(forgeHammerRecipeName)
             .itemInputs(rawRecipeEntry)
@@ -129,20 +129,21 @@ const generateRecipesForOres = (event, stoneTypeName, material) => {
         ingotStack = ChemicalHelper.get(dustPrefix, smeltingMaterial, 1);
     }
     
+    const oreRecipeEntry = `1x #forge:ores/tfc_${stoneTypeName}/${material}`
+
     if (!crushedStack.isEmpty()) {
         let outputItems;
     
         if (material.hasProperty($PropertyKey.GEM) && !gemPrefix.isIgnored(material)) {
-            outputItems = `1x gtceu:${material}_gem`
+            outputItems = `1x #forge:gems/${material}`
         } else {
-            outputItems = `1x gtceu:${material}_crushed_ore`
+            outputItems = `1x #forge:crushed_ores/${material}`
         }
 
         const forgeHammerRecipeName = `hammer_${stoneTypeName}_${material}_ore_to_raw_ore`
         const maceratorRecipeName = `macerate_${stoneTypeName}_${material}_ore_to_raw_ore`
-    
-        const oreRecipeEntry = `1x gtceu:tfc_${stoneTypeName}_${material}_ore`
-        const crushedRecipeEntry = `${crushedStack.getCount() * 2}x gtceu:${material}_crushed_ore`
+        
+        const crushedRecipeEntry = `${crushedStack.getCount() * 2}x #forge:crushed_ores/${material}`
         const stoneTypeMaterialEntry = `1x gtceu:${stoneTypeName}_dust`
         
         event.recipes.gtceu.forge_hammer(forgeHammerRecipeName)
@@ -164,10 +165,8 @@ const generateRecipesForOres = (event, stoneTypeName, material) => {
 
         const smeltRecipeName = `tfg:smelting/smelt_${stoneTypeName}_${material}_ore_to_ingot_1`
         const blastingRecipeName = `tfg:blasting/smelt_${stoneTypeName}_${material}_ore_to_ingot_1`
-
-        const inputEntry = `1x gtceu:tfc_${stoneTypeName}_${material}_ore`
         
-        event.smelting(ingotStack, inputEntry).id(smeltRecipeName).xp(xp)
-        event.blasting(ingotStack, inputEntry).id(blastingRecipeName).xp(xp)
+        event.smelting(ingotStack, oreRecipeEntry).id(smeltRecipeName).xp(xp)
+        event.blasting(ingotStack, oreRecipeEntry).id(blastingRecipeName).xp(xp)
     }
 }

@@ -1,0 +1,12 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:copper_poor_raw"
+  },
+  "result_fluid": {
+    "fluid": "tfc:metal/copper",
+    "amount": 16
+  },
+  "temperature": 270
+}
