@@ -1,0 +1,11 @@
+{
+	icon: "gtceu:coke_oven"
+	id: "22532792A58A9245"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 40, item: "minecraft:coal" }
+		{ count: 40, item: "minecraft:oak_log" }
+	]
+	title: "coke_oven"
+}
