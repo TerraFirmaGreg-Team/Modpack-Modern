@@ -87,11 +87,11 @@ const generateRecipesForRawOres = (event, material) => {
 
             const inputEntry = `1x gtceu:${tagPrefixWithMaterial}`
             
-            const dolbaeb = ingotStack.copy()
-            dolbaeb.setCount(dolbaeb.getCount() * multiplier)
+            const copiedIngotStack = ingotStack.copy()
+            copiedIngotStack.setCount(copiedIngotStack.getCount() * multiplier)
             
-            event.smelting(dolbaeb, inputEntry).id(smeltRecipeName).xp(xp)
-            event.blasting(dolbaeb, inputEntry).id(blastingRecipeName).xp(xp)
+            event.smelting(copiedIngotStack, inputEntry).id(smeltRecipeName).xp(xp)
+            event.blasting(copiedIngotStack, inputEntry).id(blastingRecipeName).xp(xp)
         }
     }
 
@@ -109,6 +109,7 @@ const generateRecipesForOres = (event, stoneTypeName, material) => {
     let byproductMaterial = materialOreProperty.getOreByProducts()[0]
     if (byproductMaterial == null) byproductMaterial = material
 
+    const stoneTypePrefix = TagPrefix.getPrefix(`tfc_${stoneTypeName}`)
     const ingotPrefix = TagPrefix.getPrefix('ingot')
     const gemPrefix = TagPrefix.getPrefix('gem')
     const dustPrefix = TagPrefix.getPrefix('dust')
@@ -156,14 +157,20 @@ const generateRecipesForOres = (event, stoneTypeName, material) => {
             .chancedOutput(stoneTypeMaterialEntry, 5000, 850)
             .duration(10).EUt(16);
     }
-    /*
+
     // do not try to add smelting recipes for materials which require blast furnace
-    if (!ingotStack.isEmpty() && doesMaterialUseNormalFurnace(smeltingMaterial) && !orePrefix.isIgnored(material)) {
-        float xp = Math.round(((1 + oreMultiplier * 0.5f) * 0.5f - 0.05f) * 10f) / 10f;
-        VanillaRecipeHelper.addSmeltingRecipe(provider, "smelt_" + prefixString + material.getName() + "_ore_to_ingot",
-                ChemicalHelper.getTag(orePrefix, material), ingotStack, xp);
-        VanillaRecipeHelper.addBlastingRecipe(provider, "smelt_" + prefixString + material.getName() + "_ore_to_ingot",
-                ChemicalHelper.getTag(orePrefix, material), ingotStack, xp);
-    }*/
-    
+    if (!ingotStack.isEmpty() && doesMaterialUseNormalFurnace(smeltingMaterial) && !stoneTypePrefix.isIgnored(material)) {
+        const xp = Math.round(((1 + materialOreProperty.getOreMultiplier() * 0.5) * 0.5 - 0.05) * 10) / 10
+
+        const smeltRecipeName = `tfg:smelting/smelt_${stoneTypeName}_${material}_ore_to_ingot_1`
+        const blastingRecipeName = `tfg:blasting/smelt_${stoneTypeName}_${material}_ore_to_ingot_1`
+
+        const inputEntry = `1x gtceu:${tagPrefixWithMaterial}`
+        
+        const copiedIngotStack = ingotStack.copy()
+        copiedIngotStack.setCount(copiedIngotStack.getCount() * 2)
+        
+        event.smelting(copiedIngotStack, inputEntry).id(smeltRecipeName).xp(xp)
+        event.blasting(copiedIngotStack, inputEntry).id(blastingRecipeName).xp(xp)
+    }
 }
