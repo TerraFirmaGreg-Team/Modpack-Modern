@@ -165,12 +165,9 @@ const generateRecipesForOres = (event, stoneTypeName, material) => {
         const smeltRecipeName = `tfg:smelting/smelt_${stoneTypeName}_${material}_ore_to_ingot_1`
         const blastingRecipeName = `tfg:blasting/smelt_${stoneTypeName}_${material}_ore_to_ingot_1`
 
-        const inputEntry = `1x gtceu:${tagPrefixWithMaterial}`
+        const inputEntry = `1x gtceu:tfc_${stoneTypeName}_${material}_ore`
         
-        const copiedIngotStack = ingotStack.copy()
-        copiedIngotStack.setCount(copiedIngotStack.getCount() * 2)
-        
-        event.smelting(copiedIngotStack, inputEntry).id(smeltRecipeName).xp(xp)
-        event.blasting(copiedIngotStack, inputEntry).id(blastingRecipeName).xp(xp)
+        event.smelting(ingotStack, inputEntry).id(smeltRecipeName).xp(xp)
+        event.blasting(ingotStack, inputEntry).id(blastingRecipeName).xp(xp)
     }
 }
