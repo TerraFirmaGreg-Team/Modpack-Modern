@@ -26,24 +26,18 @@ const doesMaterialUseNormalFurnace = (material) => {
 
 const generateRecipesForRawOres = (event, material) => {
     const materialOreProperty = material.getProperty($PropertyKey.ORE)
-
-    const ingotPrefix = TagPrefix.getPrefix('ingot')
-    const gemPrefix = TagPrefix.getPrefix('gem')
-    const dustPrefix = TagPrefix.getPrefix('dust')
-    const crushedOrePrefix = TagPrefix.getPrefix('crushedOre')
-
-    const crushedStack = ChemicalHelper.get(crushedOrePrefix, material, 1);
+    const crushedStack = ChemicalHelper.get(TagPrefix.crushed, material, 1);
     
     let ingotStack;
     const smeltingMaterial = materialOreProperty.getDirectSmeltResult() == null ? material : materialOreProperty.getDirectSmeltResult();
     const amountOfCrushedOre = materialOreProperty.getOreMultiplier();
     
     if (smeltingMaterial.hasProperty($PropertyKey.INGOT)) {
-        ingotStack = ChemicalHelper.get(ingotPrefix, smeltingMaterial, 1);
+        ingotStack = ChemicalHelper.get(TagPrefix.ingot, smeltingMaterial, 1);
     } else if (smeltingMaterial.hasProperty($PropertyKey.GEM)) {
-        ingotStack = ChemicalHelper.get(gemPrefix, smeltingMaterial, 1);
+        ingotStack = ChemicalHelper.get(TagPrefix.gem, smeltingMaterial, 1);
     } else {
-        ingotStack = ChemicalHelper.get(dustPrefix, smeltingMaterial, 1);
+        ingotStack = ChemicalHelper.get(TagPrefix.dust, smeltingMaterial, 1);
     }
     ingotStack.setCount(ingotStack.getCount() * materialOreProperty.getOreMultiplier());
     crushedStack.setCount(crushedStack.getCount() * materialOreProperty.getOreMultiplier());
@@ -53,7 +47,7 @@ const generateRecipesForRawOres = (event, material) => {
     const generateRecipes = (tagPrefixWithMaterial, tagPrefix, multiplier) => {
         let outputItems;
     
-        if (material.hasProperty($PropertyKey.GEM) && !gemPrefix.isIgnored(material)) {
+        if (material.hasProperty($PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material)) {
             outputItems = `${amountOfCrushedOre * multiplier}x #forge:gems/${material}`
         } else {
             outputItems = `${amountOfCrushedOre * multiplier}x #forge:crushed_ores/${material}`
