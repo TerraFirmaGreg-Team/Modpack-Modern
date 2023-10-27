@@ -1,0 +1,19 @@
+{
+	icon: "gtceu:lv_machine_casing"
+	id: "7F1424A135F898C9"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 4, item: "gtceu:steel_ingot", weight: 2.0f }
+		{ item: "gtceu:lv_electric_pump" }
+		{ item: "gtceu:lv_electric_motor", random_bonus: 3, weight: 1.2f }
+		{ item: "gtceu:lv_robot_arm", weight: 0.3f }
+		{ item: "gtceu:lv_electric_piston" }
+		{ item: "gtceu:lv_conveyor_module", random_bonus: 3 }
+		{ item: "gtceu:basic_electronic_circuit", random_bonus: 3, weight: 0.8f }
+		{ item: "gtceu:invar_ingot", random_bonus: 7, weight: 1.33f }
+		{ count: 8, item: "gtceu:wrought_iron_ingot", random_bonus: 8, weight: 1.5f }
+		{ count: 2, item: "gtceu:lv_machine_hull", random_bonus: 2, weight: 0.66f }
+	]
+	title: "lv_lootbox_common"
+}
