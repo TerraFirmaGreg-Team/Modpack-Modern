@@ -1,10 +1,10 @@
 {
   "modPriorities": [
     "gtceu",
-    "tfc",
     "minecraft",
     "kubejs", 
-    "create"
+    "create",
+    "tfc"
   ],
   "stoneStrata": [
     "stone",
@@ -95,5 +95,5 @@
     "tfc:landslide"
   ],
   "ignoredRecipes": [],
-  "itemsHidingJeiRei": true
+  "itemsHidingJeiRei": false
 }

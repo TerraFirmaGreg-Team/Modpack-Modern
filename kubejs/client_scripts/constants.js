@@ -18,7 +18,12 @@ global.itemsToHide = [
     "minecraft:diamond_ore",
     "minecraft:deepslate_diamond_ore",
     "minecraft:nether_gold_ore",
-    "minecraft:nether_quartz_ore"
+    "minecraft:nether_quartz_ore",
+    "minecraft:ancient_debris"
+]
+
+global.global.createItemsToHide = [
+    "create:deepslate_zinc_ore"
 ]
 
 global.stoneTypesToHide = [
