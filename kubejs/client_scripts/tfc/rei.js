@@ -11,7 +11,16 @@ const tfcSimpleMaterials = [
     "amethyst",
     "opal",
     "pyrite",
-    "topaz"
+    "topaz",
+    "bituminous_coal",
+    "lignite",
+    "graphite",
+    "sulfur",
+    "diamond",
+    "emerald",
+    "lapis_lazuli",
+    "ruby",
+    "sapphire"
 ]
 
 const tfcOreTypes = [
