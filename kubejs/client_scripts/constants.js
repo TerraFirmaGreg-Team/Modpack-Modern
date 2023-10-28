@@ -22,7 +22,8 @@ global.itemsToHide = [
     "minecraft:ancient_debris"
 ]
 
-global.global.createItemsToHide = [
+global.createItemsToHide = [
+    "create:zinc_ore",
     "create:deepslate_zinc_ore"
 ]
 
