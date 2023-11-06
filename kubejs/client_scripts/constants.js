@@ -1,6 +1,6 @@
-// priority: 0
+// priority: 200
 
-global.itemsToHide = [
+const minecraftItemsToHide = [
     "minecraft:coal_ore",
     "minecraft:deepslate_coal_ore",
     "minecraft:iron_ore",
@@ -22,12 +22,12 @@ global.itemsToHide = [
     "minecraft:ancient_debris"
 ]
 
-global.createItemsToHide = [
+const createItemsToHide = [
     "create:zinc_ore",
     "create:deepslate_zinc_ore"
 ]
 
-global.stoneTypesToHide = [
+const stoneTypesToHide = [
     "sand",
     "red_sand",
     "gravel",
@@ -42,7 +42,7 @@ global.stoneTypesToHide = [
     "tuff"
 ]
 
-global.tfcSimpleMaterials = [
+const tfcSimpleMaterials = [
     "gypsum",
     "cinnabar",
     "cryolite",
@@ -65,13 +65,13 @@ global.tfcSimpleMaterials = [
     "sapphire"
 ]
 
-global.tfcOreTypes = [
+const tfcOreTypes = [
     "poor",
     "normal",
     "rich"
 ]
 
-global.tfcOreMaterials = [
+const tfcOreMaterials = [
     "bismuthinite",
     "cassiterite",
     "garnierite",
@@ -86,7 +86,7 @@ global.tfcOreMaterials = [
     "tetrahedrite"
 ]
 
-global.tfcDepositeMaterials = [
+const tfcDepositeMaterials = [
     "cassiterite",
     "native_copper",
     "native_gold",

@@ -1,0 +1,73 @@
+##[general]
+
+[If menu background sounds added by FancyMenu should be played when a world is loaded.]
+B:playbackgroundsoundsinworld = 'false';
+B:forcefullscreen = 'false';
+[If menu background sounds added by FancyMenu should be played or not.]
+B:playbackgroundsounds = 'true';
+[A minecraft restart is required after changing this value.]
+B:enablehotkeys = 'true';
+B:playmenumusic = 'true';
+S:variables_to_reset_on_launch = '';
+B:showdebugwarnings = 'true';
+[Sets the default GUI scale on first launch. Useful for modpacks. Cache data is saved in '/mods/fancymenu/'.]
+I:defaultguiscale = '-1';
+
+
+##[customization]
+
+B:advancedmode = 'false';
+B:showcustomizationbuttons = 'true';
+
+
+##[loading]
+
+B:allowgameintroskip = 'true';
+B:showanimationloadingstatus = 'true';
+S:gameintroanimation = '';
+B:preloadanimations = 'false';
+S:customgameintroskiptext = '';
+
+
+##[minecraftwindow]
+
+[A minecraft restart is required after changing this value.]
+S:customwindowtitle = 'TerraFirmaGreg 1.20.1';
+[A minecraft restart is required after changing this value.]
+B:customwindowicon = 'true';
+
+
+##[world_loading_screen]
+
+B:showloadingscreenanimation = 'true';
+B:showloadingscreenpercent = 'true';
+
+
+##[multiplayer_screen]
+
+B:show_server_icons = 'true';
+
+
+##[singleplayer_screen]
+
+B:show_world_icons = 'true';
+
+
+##[layouteditor]
+
+I:gridsize = '10';
+B:editordeleteconfirmation = 'true';
+B:showgrid = 'false';
+[If the warning when trying to move an vanilla button without an orientation should be displayed or not.]
+B:showvanillamovewarning = 'true';
+
+
+##[ui]
+
+B:show_unicode_warning = 'true';
+F:uiscale = '1.0';
+
+
+##[compatibility]
+
+B:allow_level_registry_interactions = 'true';

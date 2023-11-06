@@ -1,0 +1,397 @@
+loading.animation.loadingframes = Lade Animationsframes für {}
+loading.animation.prerendering = Vorbereiten von Animation {}
+loading.animation.done = Fertig!
+
+helper.button.menuinfo = Menü Info
+helper.button.buttoninfo = Button Info
+helper.button.reload = Neuladen
+helper.button.createlayout = Layout erstellen
+
+helper.menuinfo.identifier = Menü Identifier
+
+helper.buttoninfo.idnotfound = <ID nicht gefunden>
+helper.buttoninfo.keynotfound = <Button hat keinen Key>
+helper.buttoninfo
+helper.buttoninfo.id = ID
+helper.buttoninfo.key = Key
+helper.buttoninfo.labelwidth = Label Breite
+
+helper.creator.menu.add = Neu
+helper.creator.menu.audio = Audio
+helper.creator.menu.hidden = Buttons
+helper.creator.menu.save = Sichern
+helper.creator.menu.close = Ende
+
+helper.creator.messages.sure = Bist du sicher?
+helper.creator.empty = LEER
+
+helper.creator.layoutempty.title = Layout ist leer!
+helper.creator.layoutempty.desc = Dein Layout hat keinen Inhalt.%n%%n%Verleih ihm erst deinen persönlichen Charme, bevor du es speicherst!
+
+helper.creator.audioalreadyloaded.title = Audio bereits geladen!
+helper.creator.audioalreadyloaded.desc = Diese Audiodatei ist bereits Teil des Layouts!%n%%n%Du kannst nicht mehrmals die selbe Audiodatei hinzufügen.
+
+helper.creator.invalidaudio.title = Ungültige Audiodatei!
+helper.creator.invalidaudio.desc = Die Audiodatei, die du hinzufügen möchtest,%n%existiert nicht oder hat einen nicht unterstützten Dateityp.%n%%n%Bitte überprüfe, ob die Datei an dem festgelegten Pfad%n%existiert und den WAV-Dateityp besitzt!
+
+helper.creator.invalidimage.title = Ungültige Bilddatei!
+helper.creator.invalidimage.desc = Die Bilddatei, die du hinzufügen möchtest,%n%existiert nicht oder hat einen nicht unterstützten Dateityp.%n%%n%Unterstützte Dateitypen sind JPG/JPEG, PNG und GIF.
+
+helper.creator.imagenotfound.title = Bild nicht gefunden!
+helper.creator.imagenotfound.desc = Das Bild, das du hinzufügen möchtest, existiert nicht bei dem angegebenen Pfad.
+
+helper.creator.animationnotfound.title = Animation nicht gefunden!
+helper.creator.animationnotfound.desc = Die Animation, die du hinzufügen möchtest, existiert nicht.%n%%n%Eventuell hast du vergessen, alle notwendigen Werte in ihre Properties einzutragen?%n%%n%Bitte bedenke, dass du dein Spiel neustarten musst,%n%nachdem du eine neue Animation erstellt hast.
+
+helper.creator.texttooshort.title = Text zu kurz!
+helper.creator.texttooshort.desc = Dein Text braucht mindestens einen Buchstaben, um ein Text zu sein!%n%Sonst..wäre er...nichts.%n%%n%Niemand will ein Nichts sein, also tu' das deinem Text nicht an!
+
+helper.creator.cannotdelete.title = Objekt kann nicht gelöscht werden!
+helper.creator.cannotdelete.desc = Tut mir leid, aber dieses Objekt kannst du nicht löschen.%n%%n%Du wirst wohl irgendwie lernen müssen, mit ihm zu leben..
+
+helper.creator.savefile = Möchtest du dein Layout jetzt als Customization-Datei speichern?
+helper.creator.savefile.keep = Speichern und andere Layouts aktiv lassen
+helper.creator.savefile.disable = Speichern und Andere deaktivieren
+helper.creator.savefile.cancel = Abbrechen
+
+helper.creator.layoutoptions.renderorder = Renderordnung
+helper.creator.layoutoptions.renderorder.background = Hintergrund
+helper.creator.layoutoptions.renderorder.foreground = Vordergrund
+
+helper.creator.layoutoptions.version.mc = Minecraft Version
+helper.creator.layoutoptions.version.fm = FancyMenu Version
+helper.creator.layoutoptions.version.minimum = Niedrigste
+helper.creator.layoutoptions.version.minimum.mc = Minimale Minecraft Version
+helper.creator.layoutoptions.version.minimum.fm = Minimale FancyMenu Version
+helper.creator.layoutoptions.version.maximum = Höchste
+helper.creator.layoutoptions.version.maximum.mc = Maximale Minecraft Version
+helper.creator.layoutoptions.version.maximum.fm = Maximale FancyMenu Version
+
+helper.creator.layoutoptions.resetbackground = Hintergrund löschen
+
+helper.creator.layoutoptions.requiredmods = Benötigte Mods
+helper.creator.layoutoptions.requiredmods.desc = Benötigte Mods [Modid, durch Kommas getrennt]
+
+helper.creator.close = Möchtest du den Layout Creator wirklich schließen?
+
+helper.creator.audio.delete = Löschen
+helper.creator.audio.delete.msg = Möchtest du dieses Audio wirklich löschen?
+helper.creator.audio.enableloop = Loop An
+helper.creator.audio.disableloop = Loop Aus
+
+helper.creator.add.image = Bild
+helper.creator.add.image.path = Bildpfad
+
+helper.creator.add.animation = Animation
+helper.creator.add.animation.entername = Namen eintragen
+helper.creator.add.animation.entername.title = Animationsname
+
+helper.creator.add.text = Text
+helper.creator.add.text.newtext = Neuer Text
+
+helper.creator.add.button = Button
+helper.creator.add.button.label = Button Label
+
+helper.creator.add.audio = Audio
+
+helper.creator.vanillabutton.autoclick = Button klicken
+helper.creator.vanillabutton.autoclick.popup = Automatische Button Klicks
+
+helper.creator.backgroundoptions = Hintergrundoptionen
+helper.creator.backgroundoptions.backgroundanimation = Hintergrundanimationen
+helper.creator.backgroundoptions.backgroundimage = Hintergrundbild
+helper.creator.backgroundoptions.chooseimage = Bild wählen
+helper.creator.backgroundoptions.random = Zufällig
+helper.creator.backgroundoptions.notrandom = Nicht Zufällig
+helper.creator.backgroundoptions.addanimation = Hinzufügen
+helper.creator.backgroundoptions.removeanimation = Entfernen
+helper.creator.backgroundoptions.animations = Animationen
+helper.creator.backgroundoptions.randomizeanimations = Zufällige Animationen
+
+helper.creator.custombutton.config = Buttonaktion
+helper.creator.custombutton.config.actionvalue = Inhalt der Aktion [{}]
+helper.creator.custombutton.config.actiontype = Aktionstyp
+helper.creator.custombutton.config.actiontype.sendmessage.desc = Sende eine Chatnachricht oder einen Befehl.
+helper.creator.custombutton.config.actiontype.sendmessage.desc.value = Nachricht/Befehl
+helper.creator.custombutton.config.actiontype.openlink.desc = Öffne einen Link in deinem Standardbrowser.
+helper.creator.custombutton.config.actiontype.openlink.desc.value = Link
+helper.creator.custombutton.config.actiontype.quitgame.desc = Minecraft beenden.
+helper.creator.custombutton.config.actiontype.joinserver.desc = Betrete einen Minecraftserver.
+helper.creator.custombutton.config.actiontype.joinserver.desc.value = Server IP
+helper.creator.custombutton.config.actiontype.loadworld.desc = Lade eine Minecraftwelt.
+helper.creator.custombutton.config.actiontype.loadworld.desc.value = Name des Weltordners
+helper.creator.custombutton.config.actiontype.openfile.desc = Öffne eine Datei oder einen Ordner.
+helper.creator.custombutton.config.actiontype.openfile.desc.value = Pfad
+helper.creator.custombutton.config.actiontype.prevbackground.desc = Zur vorherigen Hintergrundanimation wechseln.
+helper.creator.custombutton.config.actiontype.nextbackground.desc = Zur nächsten Hintergrundanimation wechseln.
+
+helper.creator.custombutton.config.texture = Button Textur
+helper.creator.custombutton.config.texture.normal = Normal
+helper.creator.custombutton.config.texture.hovered = Hovered
+helper.creator.custombutton.config.texture.reset = Zurücksetzen
+
+helper.creator.items.setorientation = Orientierung
+helper.creator.items.delete = Löschen
+helper.creator.items.border.posx = posX
+helper.creator.items.border.posy = posY
+helper.creator.items.border.orientation = orientierung
+helper.creator.items.border.width = breite
+helper.creator.items.border.height = höhe
+
+helper.creator.items.button.editlabel = Label bearbeiten
+
+helper.creator.items.vanillabutton.resetorientation = Orientierung löschen
+helper.creator.items.vanillabutton.hide = Button verstecken
+
+helper.creator.items.string.setscale = Schriftgröße
+helper.creator.items.string.setcentered = Zentrieren
+helper.creator.items.string.setuncentered = Nicht zentrieren
+helper.creator.items.string.setshadow = Schatten
+helper.creator.items.string.setnoshadow = Kein Schatten
+helper.creator.items.string.edit = Text bearbeiten
+helper.creator.items.string.border.centered = zentriert
+helper.creator.items.string.border.scale = größe
+
+helper.creator.items.string.scale.invalidvalue.title = Ungültiger Wert!
+helper.creator.items.string.scale.invalidvalue.desc = Der Wert, den du setzen möchtest, ist keine gültige Schriftgröße!%n%%n%Beispiele für Schriftgrößen: 1.0, 2.0, 0.5
+
+helper.creator.deleteobject = Möchtest du dieses Objekt wirklich §lLÖSCHEN§r?%n%%n%§lDiese Aktion kann nicht rückgängig gemacht werden!
+
+helper.creator.choosefile.enterorchoose = §lDateipfad festlegen oder Datei wählen
+helper.creator.choosefile.choose = Datei wählen
+helper.creator.choosefile.notsupported = §cDateisuche deaktiviert oder nicht unterstützt! Bitte Pfad manuell festlegen.
+
+helper.creator.webstring.multiline = Mehrzeilig
+helper.creator.webstring.nomultiline = Nicht Mehrzeilig
+
+helper.creator.web.invalidurl = §c§lUngültige URL!%n%%n%Diese URL ist entweder keine gültige URL oder existiert nicht!
+helper.creator.web.enterurl = URL eingeben
+
+helper.creator.add.webimage = Web Bild
+helper.creator.add.webtext = Web Text
+
+helper.creator.editlayout = Layouts editieren
+helper.creator.editlayout.popup.loadall = Alle laden
+helper.creator.editlayout.popup.loadselected = Ausgewähltes laden
+helper.creator.editlayout.popup.layouts = Layouts
+helper.creator.editlayout.popup.cancel = Abbrechen
+helper.creator.editlayout.popup.actionscount = {} Anpassungsaktionen
+helper.creator.editlayout.nolayouts.msg = §c§lKeine Layouts gefunden!%n%%n%%n%Für dieses Menü gibt es noch keine Layouts!%n%%n%Möchtest du dieses Menu anpassen, nutze bitte den "Layout erstellen" Button!
+helper.creator.editlayout.popup.msg = Es existiert mehr als ein Layout für dieses Menü!%n%%n%Möchtest du das komplette Layout laden und alle kombinieren%n%oder nur ein ganz Bestimmtes?%n%%n%§cVariablen aus Meta-Sektionen von Layouts gehen beim Kombinieren verloren!
+
+helper.creator.editlayout.single.override = Bestehendes Layout überschreiben
+helper.creator.editlayout.single.asnew.keep = Als Neues speichern und andere aktiv lassen
+helper.creator.editlayout.single.asnew.disable = Als Neues speichern und andere deaktivieren
+
+helper.creator.items.button.hoverlabel = Hoverlabel
+helper.creator.items.button.hoverlabel.text = Hoverlabel Text
+helper.creator.items.button.hoverlabel.reset = Hoverlabel resetten
+helper.creator.items.button.hoversound = Hoversound
+helper.creator.items.button.hoversound.path = Hoversound Pfad
+helper.creator.items.button.hoversound.reset = Hoversound resetten
+
+helper.creator.editlayout.unsupportedvalues = §c§lNicht unterstützte Werte!%n%%n%%n%Dein Layout beinhaltet nicht unterstützte Werte!%n%Diese Werte kann der Layout Creator nicht verarbeiten.%n%%n%Du nutzt vermutlich §lPositions- oder Größenberechnungen%n%in einer deiner Anpassungs-Sektionen.%n%%n%Bitte ändere diese Werte manuell zu Absoluten und versuche es erneut.
+
+helper.creator.backgroundoptions.setpanorama = Breites Bild?
+helper.creator.backgroundoptions.panorama = Breit
+helper.creator.backgroundoptions.nopanorama = Normal
+
+helper.creator.textures.invalidcharacters = §c§lNicht unterstützte Zeichen!%n%%n%%n%Der Dateiname deines Bildes enthält nicht unterstützte Zeichen!%n%%n%Bitte nutze nur die Zeichen "a-z", "0-9", ".", "_" und "-".%n%Leerzeichen, Großbuchstaben und sonstige spezielle Zeichen sind nicht erlaubt.
+
+helper.buttons.tools.dropdownlabel = Anpassungstools
+helper.buttons.tools.overridemenu = Überschreiben mit
+helper.buttons.tools.resetoverride = Übers. rücksetzen
+helper.buttons.tools.closecustomgui = GUI schließen
+
+helper.buttons.tools.customguis = Eigene GUIs
+helper.buttons.tools.customguis.open = GUI öffnen
+helper.buttons.tools.customguis.delete = GUI löschen
+helper.buttons.tools.customguis.pickbyname = Per Name wählen
+helper.buttons.tools.customguis.openbyname = Per Name öffnen
+helper.buttons.tools.customguis.deletebyname = Per Name löschen
+helper.buttons.tools.customguis.sure = §c§lBist du sicher?%n%%n%%n%Möchtest du dieses GUI wirklich §llöschen§r?%n%%n%§lDiese Aktion kann nicht rückgängig gemacht werden!%n% %n% %n% %n%
+helper.buttons.tools.customguis.invalididentifier = §c§lUngültiger Identifier!%n%%n%%n%Es wurde kein GUI mit diesem Identifier (GUI-ID) gefunden!%n% %n% %n% %n%
+
+helper.buttons.tools.creategui = GUI erstellen
+helper.buttons.tools.creategui.allowesc = Erlauben
+helper.buttons.tools.creategui.donotallowesc = Nicht erlauben
+helper.buttons.tools.creategui.invalididentifier = §cUngültiger Identifier!
+helper.buttons.tools.creategui.identifieralreadyused = §cIdentifier wird bereits verwendet! Bitte wähle einen anderen!
+helper.buttons.tools.creategui.allowescdesc = Erlaube Schließen des GUIs per ESC
+helper.buttons.tools.creategui.menuidentifier = Menü Identifier (GUI-ID)
+helper.buttons.tools.creategui.menutitle = Menü Titel (Optional)
+helper.buttons.tools.creategui.create = Erstellen
+
+gameintro.skip = MIT LEERTASTE ÜBERSPRINGEN
+
+helper.creator.items.chooselayer = Ebene wählen
+
+customization.items.webstring.unabletoload = Web Text konnte nicht geladen werden! Ungültige URL oder keine Internetverbindung!
+
+helper.creator.custombutton.config.actiontype.opencustomgui.desc = Öffnet ein Custom GUI (Selbst erstelltes GUI).
+helper.creator.custombutton.config.actiontype.opencustomgui.desc.value = Menü Identifier
+
+helper.creator.items.button.delayappearance = Erscheinen verzögern
+helper.creator.items.button.delayappearance.desc = Erscheinen um Sekunden verzögern [Dezimalwert-Unterstützung]
+helper.creator.items.button.delayappearance.invalidvalue = §c§lUngültiger Wert!%n%%n%%n%Das ist kein gültiger Sekundenwert!%n%Vielleicht ist dein Wert zu lang. (..SEI DA NICHT STOLZ DRAUF!)%n%%n%Beispiele für Werte: 3, 2.0, 0.05, 0.8, 10.5
+
+custombuttons.action.opengui.cannotopengui = §c§lGUI konnte nicht geöffnet werden!%n%%n%%n%Entweder existiert dieses GUI nicht oder wird nicht unterstützt!%n%%n%Wenn dieses GUI existiert, kontaktiere bitte den Entwickler,%n%damit er Support für dieses GUI hinzufügen kann.
+
+helper.creator.custombutton.config.actiontype.opengui.desc = Öffnet ein GUI anhand seines Menü Identifiers.
+helper.creator.custombutton.config.actiontype.opengui.desc.value = Menü Identifier
+
+helper.creator.popup.hidefor.delayeverytime = Jedes Mal
+helper.creator.popup.hidefor.delayfirsttime = Nur erstes Mal
+
+helper.creator.windowsize = Fenstergrößenoptionen
+helper.creator.windowsize.biggerthan = Wenn größer als
+helper.creator.windowsize.smallerthan = Wenn kleiner als
+helper.creator.windowsize.biggerthan.desc = Layout nur aktivieren, wenn Fenstergröße größer als X
+helper.creator.windowsize.smallerthan.desc = Layout nur aktivieren, wenn Fenstergröße kleiner als X
+helper.creator.windowsize.currentwidth = Aktuelle Fensterbreite
+helper.creator.windowsize.currentheight = Aktuelle Fensterhöhe
+
+helper.menuinfo.idcopied = In Zwischenablage kopiert!
+
+helper.excludemenu = Menü ausschließen
+helper.excludemenu.soft = Leichter Ausschluss
+helper.excludemenu.full = Kompletter Ausschluss
+helper.excludemenu.current = Aktuelles ausschließen
+helper.excludemenu.byidentifier = Per Identifier ausschl.
+helper.excludemenu.remove = Ausschluss aufheb.
+helper.excludemenu.excludebundle = ALLE Menüs ausschließen, die mit dem gegebenen Identifier beginnen?
+helper.excludemenu.excludejustthis = Nur dieses Menü
+helper.excludemenu.excludeall = Alle Menüs
+
+helper.creator.custombutton.config.actiontype.movefile.desc = Verschiebt eine Datei.
+helper.creator.custombutton.config.actiontype.movefile.desc.value = Dateipfad + neuer Pfad, durch ';' getrennt
+helper.creator.custombutton.config.actiontype.copyfile.desc = Kopiert eine Datei.
+helper.creator.custombutton.config.actiontype.copyfile.desc.value = Dateipfad + Zielpfad, durch ';' getrennt
+helper.creator.custombutton.config.actiontype.deletefile.desc = Löscht eine Datei.
+helper.creator.custombutton.config.actiontype.deletefile.desc.value = Dateipfad
+helper.creator.custombutton.config.actiontype.renamefile.desc = Benennt eine Datei um.
+helper.creator.custombutton.config.actiontype.renamefile.desc.value = Dateipfad + neuer Name mit Typ
+helper.creator.custombutton.config.actiontype.reloadmenu.desc = Lädt das aktuelle Menü neu.
+helper.creator.custombutton.config.actiontype.runscript.desc = Führt ein Button Script aus.
+helper.creator.custombutton.config.actiontype.runscript.desc.value = Script Dateiname ohne Dateityp
+helper.creator.custombutton.config.actiontype.downloadfile.desc = Lädt eine Datei herunter.
+helper.creator.custombutton.config.actiontype.downloadfile.desc.value = URL + Downloadpfad, durch ';' getrennt
+helper.creator.custombutton.config.actiontype.unpackzip.desc = Entpackt eine ZIP Datei.
+helper.creator.custombutton.config.actiontype.unpackzip.desc.value = Dateipfad + Zielpfad, durch ';' getrennt
+
+helper.creator.custombutton.config.actionvalue.example = Beispiel: {}
+
+helper.creator.custombutton.config.actiontype.openlink.desc.value.example = https://google.de
+helper.creator.custombutton.config.actiontype.sendmessage.desc.value.example = Hallo @all!
+helper.creator.custombutton.config.actiontype.joinserver.desc.value.example = mc.coolerserver.com
+helper.creator.custombutton.config.actiontype.loadworld.desc.value.example = myworld
+helper.creator.custombutton.config.actiontype.opencustomgui.desc.value.example = coolcustomgui
+helper.creator.custombutton.config.actiontype.opengui.desc.value.example = ein.menu.identifier
+helper.creator.custombutton.config.actiontype.openfile.desc.value.example = config/fancymenu/changelog.txt
+helper.creator.custombutton.config.actiontype.movefile.desc.value.example = config/fancymenu/image.jpg;config/neuerordner/image.jpg
+helper.creator.custombutton.config.actiontype.copyfile.desc.value.example = config/fancymenu/image.jpg;config/fancymenu/imagecopy.jpg
+helper.creator.custombutton.config.actiontype.deletefile.desc.value.example = config/fancymenu/rickroll.gif
+helper.creator.custombutton.config.actiontype.renamefile.desc.value.example = config/fancymenu/image.jpg;newimagename.jpg
+helper.creator.custombutton.config.actiontype.downloadfile.desc.value.example = https://myhoster.com/layout.zip;config/fancymenu/layout.zip
+helper.creator.custombutton.config.actiontype.unpackzip.desc.value.example = config/fancymenu/archive.zip;config/fancymenu/entpackt/
+helper.creator.custombutton.config.actiontype.runscript.desc.value.example = coolscript
+
+helper.creator.rightclick.scale = GUI Scale
+helper.creator.rightclick.scale.invalid = §c§lUngültiger Scale!%n%%n%%n%Scale Werte müssen immer größer als Null sein!
+
+helper.creator.custombutton.config.actiontype.mutebackgroundsounds.desc = Stummt oder entstummt von FancyMenu hinzugefügte Menü-Hintergrundsounds.
+helper.creator.custombutton.config.actiontype.mutebackgroundsounds.desc.value = true/false
+helper.creator.custombutton.config.actiontype.mutebackgroundsounds.desc.value.example = true
+
+helper.creator.items.button.resetlabel = Label resetten
+
+helper.creator.vanillabutton.move.notification.dontshowagain = Nicht erneut anzeigen
+
+helper.creator.items.custombutton.onlydisplayin = Zeige nur in
+helper.creator.items.custombutton.onlydisplayin.outgame = Outgame
+helper.creator.items.custombutton.onlydisplayin.singleplayer = Singleplayer
+helper.creator.items.custombutton.onlydisplayin.multiplayer = Multiplayer
+helper.creator.items.custombutton.onlydisplayin.reset = ZURÜCKSETZEN
+
+helper.creator.items.button.clicksound = Klicksound
+helper.creator.items.button.clicksound.reset = Klicksound resetten
+
+helper.popup.togglecustomization.enable = Anpassungen: §cAus
+helper.popup.togglecustomization.disable = Anpassungen: §aAn
+
+helper.creator.object.stretch = Dehnen
+helper.creator.object.stretch.x = Zu Fensterbreite
+helper.creator.object.stretch.y = Zu Fensterhöhe
+
+helper.creator.object.stretch.unsupportedorientation = §c§lNicht unterstützte Orientierung!%n%%n%%n%Die aktuelle Orientierung dieses Objekts verhindert das Dehnen.%n%%n%§lUnterstützte Orientierungen: {}
+
+helper.creator.backgroundoptions.backgroundpanorama = Hintergrund-Panorama
+helper.creator.backgroundoptions.panoramas = Panoramas
+helper.creator.backgroundoptions.panoramas.set = Aktivieren
+helper.creator.backgroundoptions.panoramas.set.desc = Setzt das ausgewählte Panorama%n%als aktives Hintergrund-Panorama.
+helper.creator.backgroundoptions.panoramas.clear = Zurücksetzen
+helper.creator.backgroundoptions.panoramas.clear.desc = Setzt das aktive%n%Hintergrund-Panorama zurück.
+
+helper.creator.items.button.btndescription = Beschreibung
+helper.creator.items.button.btndescription.desc = Beschreibung, die gezeigt wird,%n%wenn der Button mit der Maus%n%überfahren wird.%n%%n%Nutze '&n' für eine neue Zeile.
+
+helper.buttons.customization.btndesc = Beinhaltet nützliche Anpassungstools.%n%%n%§cTIPP:%n%Rechtsklick funktioniert als%n%alternative Klickaktion,%n%falls der Button von einem anderen%n%überlappt wird.%n%%n%§cTIPP:%n%Du kannst diese Buttons verstecken,%n%indem du §lSTRG + C §rdrückst!%n%Diesen Hotkey kannst du%n%in den Steuerungs-Optionen%n%anpassen.
+helper.buttons.customization.onoff.btndesc = Aktiviert oder deaktiviert Anpassungen%n%für das momentan aktive Menü.%n%%n%§cDies muss aktiviert sein,%n%§cwenn Layouts angezeigt werden sollen.
+helper.buttons.customization.menuinfo.btndesc = Zeigt den §cMenü Identifier%n%des aktiven Menüs an.%n%%n%Du kannst den Identifier%n%linksklicken, um ihn zu kopieren.
+helper.buttons.customization.buttoninfo.btndesc = Zeigt Informationen zu%n%§cVanilla Buttons §ran, wenn%n%man sie mit der Maus überfährt.
+helper.buttons.customization.createlayout.btndesc = Passe das aktuelle Menü in%n%einem schicken GUI Editor an!%n%%n%§cWICHTIG:%n%Sollte im Normalfall immer%n%genutzt werden, wenn du bereits%n%existierende Menüs bearbeiten willst!
+helper.buttons.customization.editlayout.btndesc = Bearbeite die Layouts für%n%das aktuelle Menü.
+helper.buttons.customization.creategui.btndesc = Erstelle ein leeres GUI und%n%fülle es mit allem, was du willst!%n%%n%§cWICHTIG:%n%Sollte NIEMALS genutzt werden, wenn%n%du nur das Aussehen eines Menüs%n%bearbeiten möchtest, ohne es%n%komplett zu überschreiben!%n%%n%Um ein Menü zu bearbeiten, nutze%n%stattdessen §oLayout erstellen§r!
+helper.buttons.customization.customguis.btndesc = Liste all deiner eigenen GUIs.%n%%n%Diese Liste ist leer, wenn%n%du noch keins erstellt hast.
+helper.buttons.customization.overridewith.btndesc = Überschreibe das aktuelle Menü%n%mit einem deiner eigenen GUIs.%n%%n%§cWICHTIG:%n%Sollte NIEMALS genutzt werden, wenn%n%du nur das Aussehen eines Menüs%n%bearbeiten möchtest, ohne es%n%komplett zu überschreiben!%n%%n%Um ein Menü zu bearbeiten, nutze%n%stattdessen §oLayout erstellen§r!
+helper.buttons.customization.closecustomgui.btndesc = Schließe dein aktuell aktives eigenes GUI.
+
+helper.buttons.reload.btndesc = Lädt das Menü, alle Layouts,%n%die Mod Config und Weiteres neu.%n%%n%Nützlich, wenn du Layouts manuell%n%editierst oder die Config bearbeitet hast.%n%%n%§cWICHTIG:%n%Lädt NICHT deine Animationen neu!%n%Du musst dein Spiel neustarten,%n%nachdem du Animationen bearbeitet%n%oder hinzugefügt hast!
+
+helper.buttons.customization.managelayouts = Layouts verwalten
+helper.buttons.customization.managelayouts.enable = Layout §aaktivieren
+helper.buttons.customization.managelayouts.enabled = §aAktiviert
+helper.buttons.customization.managelayouts.disable = Layout §cdeaktivieren
+helper.buttons.customization.managelayouts.disabled = §cDeaktiviert
+helper.buttons.customization.managelayouts.delete = Layout löschen
+helper.buttons.customization.managelayouts.delete.msg = §c§lBist du sicher?%n%%n%%n%Möchtest du dieses Layout wirklich §c§llöschen§r?%n%%n%§c§lDies kann nicht rückgängig gemacht werden!
+helper.buttons.customization.managelayouts.btndesc = Verwalte all deine Layouts für%n%das aktuelle Menü.
+helper.buttons.customization.managelayouts.layout.btndesc = §lLayout Info:%n%%n%Status: {}%n%Customization Actions: {}%n%%n%§cLinksklick für weitere Optionen!
+
+helper.creator.object.moveup = Ebene hoch
+helper.creator.object.moveup.desc = Verschiebt das Objekt eine Ebene%n%nach oben.%n%%n%§cWICHTIG:%n%Ausgewählte Objekte werden immer%n%ganz oben angezeigt, du wirst%n%den Effekt also erst sehen, wenn%n%das Objekt nicht mehr ausgewählt ist.{}
+helper.creator.object.moveup.desc.subtext = %n%%n%§6§lLetzte Aktion:%n%Über §7{} §rgeschoben
+helper.creator.object.movedown = Ebene runter
+helper.creator.object.movedown.desc = Verschiebt das Objekt eine Ebene%n%nach unten.%n%%n%§cWICHTIG:%n%Ausgewählte Objekte werden immer%n%ganz oben angezeigt, du wirst%n%den Effekt also erst sehen, wenn%n%das Objekt nicht mehr ausgewählt ist.{}
+helper.creator.object.movedown.desc.subtext = %n%%n%§6§lLetzte Aktion:%n%Unter §7{} §rgeschoben
+
+helper.buttons.customization.managelayouts.openintexteditor = Öffne in Text Editor
+helper.buttons.customization.managelayouts.openintexteditor.desc = Öffnet die Layout Datei in%n%deinem Standard Text Editor.%n%%n%§cWICHTIG:%n%Du musst den "Neuladen" Button%n%klicken, nachdem du Layout Dateien%n%manuell bearbeitet hast!
+
+helper.creator.opencloseaudio = Öffnen/Schließ Sound
+helper.creator.opencloseaudio.desc = Spielt einen Sound ab, wenn%n%das Menü geöffnet oder geschlossen wird.
+helper.creator.opencloseaudio.reset.desc = Setzt den Sound zurück.
+helper.creator.openaudio = Öffnen-Sound
+helper.creator.openaudio.reset = Öffnen-Sound löschen
+helper.creator.openaudio.desc = Wird gespielt, denn das Menü%n%geöffnet wird.
+helper.creator.closeaudio = Schließ-Sound
+helper.creator.closeaudio.reset = Schließ-Sound löschen
+helper.creator.closeaudio.desc = Wird gespielt, wenn das Menu%n%geschlossen wird.
+
+helper.creator.deleteselectedobjects = Möchtest du wirklich alle ausgewählten Objekte §lLÖSCHEN?
+
+helper.creator.multiselect.object.deleteall = Alle löschen
+helper.creator.multiselect.object.deleteall.btndesc = Löscht alle ausgewählten Objekte.
+helper.creator.multiselect.object.stretchall = Alle dehnen
+helper.creator.multiselect.object.stretchall.btndesc = Dehnt alle §ldehnbaren §rObjekte%n%zur Fenster-Breite oder -Höhe.
+helper.creator.multiselect.vanillabutton.resetorientation = Orientierung resetten
+helper.creator.multiselect.vanillabutton.resetorientation.btndesc = Setzt die Orientierung für%n%alle ausgewählten Vanilla Buttons%n%zurück.
+helper.creator.multiselect.vanillabutton.hideall = Alle verstecken
+helper.creator.multiselect.vanillabutton.hideall.btndesc = Versteckt alle ausgewählten Vanilla Buttons.
+helper.creator.multiselect.button.buttontexture.btndesc = Setzt Standard- und Hover-Texturen%n%für alle ausgewählten Buttons.
+helper.creator.multiselect.button.buttontexture.reset.btndesc = Löscht alle Texturen für alle%n%ausgewählten Buttons.
+helper.creator.multiselect.button.clicksound.btndesc = Setzt den Klicksound%n%für alle ausgewählten Buttons.
+helper.creator.multiselect.button.clicksound.reset.btndesc = Löscht den Klicksound für%n%alle ausgewählten Buttons.
+helper.creator.multiselect.button.hoversound.btndesc = Setzt den Hoversound für%n%alle ausgewählten Buttons.
+helper.creator.multiselect.button.hoversound.reset.btndesc = Löscht den Hoversound für%n%alle ausgewählten Buttons.
+

@@ -1,0 +1,15 @@
+#The color of the ping display text, written in hex format. Default: #A0A0A0
+#Has no effect if 'autoColorText' is set to true
+textColor = "#A0A0A0"
+#Customize the display text of the ping display
+#Must contain a '%d', which will be replaced with the ping number
+#Example: '%dms' will transform into '123ms' if the player's ping is 123
+#Default: %dms
+textFormatString = "%dms"
+#Whether to also draw the default Minecraft ping bars
+renderPingBars = false
+#Whether to color a player's ping based on their latency.
+#Example: low latency = green, high latency = red
+#If this setting is true, then the 'textColor' setting is ignored
+autoColorText = true
+

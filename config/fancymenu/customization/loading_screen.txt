@@ -1,0 +1,67 @@
+type = menu
+
+customization-meta {
+  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = tfgslideshow
+  action = setbackgroundslideshow
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  original_pos_size_calculation = true
+  x = 93
+  width = 240
+  action = deep_customization_element:drippy_overlay_logo
+  actionid = 94cb0d88-975f-4fa2-9ecb-c287671dc16b1699231552535
+  y = 90
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  original_pos_size_calculation = true
+  x = 93
+  width = 240
+  action = deep_customization_element:drippy_overlay_progress_bar
+  actionid = 7e5f2a23-d865-4b77-8051-b2eb982fd5a51699231552539
+  y = 194
+  height = 10
+}
+
+customization {
+  custom_color_hex = #FFFFFF00
+  orientation = top-left
+  hidden = true
+  x = -1000000
+  width = 0
+  action = deep_customization_element:drippy_overlay_background
+  actionid = 10e31d58-404e-4f2f-affb-39a67b089a021699234362017
+  y = -1000000
+  height = 0
+}
+
+customization {
+  path = kubejs/assets/mainmenu/logo-512x512.png
+  orientation = mid-centered
+  x = -50
+  width = 100
+  action = addtexture
+  actionid = 22ec4f96-137c-48d9-ac6b-cb4f58e7a7821699231610566
+  y = -50
+  height = 100
+}
+

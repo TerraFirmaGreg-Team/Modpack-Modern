@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:367
+ignoreUpdate:0
 settingsButton:false
 allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
@@ -18,7 +18,7 @@ displayRedstone:true
 deathpoints:true
 oldDeathpoints:true
 distance:1
-lockNorth:false
+lockNorth:true
 zoom:0
 minimapSize:0
 chunkGrid:-1
@@ -119,7 +119,7 @@ infoDisplay:dimension:false:15:-1
 infoDisplay:biome:true:15:-1
 infoDisplay:weather:false:15:-1
 infoDisplay:light_level:0:15:-1
-infoDisplay:time:0:15:-1
+infoDisplay:time:1:15:-1
 infoDisplay:real_time:0:15:-1
 infoDisplay:highlights:true:15:-1
 infoDisplay:light_overlay_indicator:true:15:-1
@@ -129,5 +129,5 @@ interface:dummy:0:36:true:false:false:false
 interface:dummy:0:10000:true:false:false:false
 interface:dummy:0:0:false:false:true:false
 interface:dummy:0:36:true:false:false:false
-interface:gui.xaero_minimap:117:-33:false:false:true:false
+interface:gui.xaero_minimap:84:-12:false:false:true:false
 #WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints

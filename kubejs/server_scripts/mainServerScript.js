@@ -1,19 +1,18 @@
-// priority: 0
+// priority: 499
 
 ServerEvents.highPriorityData(event => {
-    addOreVeins(event);
+    // register datapacks here
 })
 
 ServerEvents.tags('block', event => {
-    registerBlockTagsGT(event)
+    // register blocktags here
 })
 
 ServerEvents.tags('item', event => {
-    registerItemTagsGT(event)
+    // register itemtags here
 })
 
 ServerEvents.recipes(event => {
-    registerGTrecipes(event)
     registerMinecraftRecipes(event)
 })
 

@@ -1,0 +1,19 @@
+general.width = Width
+general.height = Height
+general.on = On
+general.off = Off
+
+popup.done = Done
+
+popup.yesno.confirm = Confirm
+popup.yesno.cancel = Cancel
+
+popup.notification.accept = Accept
+
+popup.choosefile.back = BACK
+popup.choosefile.title = Choose File
+popup.choosefile.choose = Choose
+popup.choosefile.supported = Supported file types:
+
+configscreen.boolean.enabled = Enabled
+configscreen.boolean.disabled = Disabled

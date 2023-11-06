@@ -1,19 +1,4 @@
 {
-  "extendedcrafting": {
-    "elite_auto_table": true,
-    "ender_crafter": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -108,6 +93,9 @@
     "blast_furnace": true,
     "ingot_pile": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
   "gtceu": {
     "recipe_logic_provider": true,
     "workable_provider": true,
@@ -121,6 +109,17 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
+  },
+  "create": {
+    "filter": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "copper_backtank": true,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "ae2": {
     "part_icon": true,

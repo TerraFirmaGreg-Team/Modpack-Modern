@@ -194,6 +194,13 @@ machines:
   # Default: 50
   ldFluidPipeMinDistance: 50
 
+  # If High Tier (>UV-tier) GT content should be registered.
+  # Items and Machines enabled with this config will have missing recipes by default.
+  # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
+  # Other mods can override this to true, regardless of the config file.
+  # Default: false
+  highTierContent: false
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true

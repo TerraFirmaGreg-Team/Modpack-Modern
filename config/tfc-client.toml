@@ -110,6 +110,9 @@
 	#
 	# If true, for items that are hot, they will show a bar on the item like a durability bar
 	displayItemHeatBars = true
+	#
+	# If true, particles specifically for wind will appear.
+	enableWindParticles = true
 
 [compatibility]
 	#

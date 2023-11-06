@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 199
 
 REIEvents.hide('item', event => {
     hideGTStuff(event)

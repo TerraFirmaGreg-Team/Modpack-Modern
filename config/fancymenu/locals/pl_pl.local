@@ -1,0 +1,236 @@
+loading.animation.loadingframes = Ładowanie klatek animacji dla {}
+loading.animation.prerendering = Wstępne renderowanie animacji {}
+loading.animation.done = Gotowe!
+
+helper.button.menuinfo = Info o Menu
+helper.button.buttoninfo = Info o Przyciskach
+helper.button.reload = Odśwież
+helper.button.createlayout = Utwórz Układ
+
+helper.menuinfo.identifier = Identyfikator Menu
+
+helper.buttoninfo.idnotfound = <id nie znalezione>
+helper.buttoninfo.keynotfound = <przycisk nie ma klucza>
+helper.buttoninfo
+helper.buttoninfo.id = ID
+helper.buttoninfo.key = Klucz
+helper.buttoninfo.labelwidth = Szerokość Etykiety
+
+helper.creator.menu.add = Dodaj
+helper.creator.menu.audio = Audio
+helper.creator.menu.hidden = Ukryte
+helper.creator.menu.save = Zapisz
+helper.creator.menu.close = Zamknij
+
+helper.creator.messages.sure = Jesteś pewien?
+helper.creator.empty = BRAK
+
+helper.creator.layoutempty.title = Układ jest pusty!
+helper.creator.layoutempty.desc = Twój układ nie ma zawartości.%n%%n%Zanim zapiszesz, dostosuj układ!
+
+helper.creator.audioalreadyloaded.title = Audio już załadowane!
+helper.creator.audioalreadyloaded.desc = Audio które próbujesz dodać jest już częścią tego układu!%n%%n%Nie możesz dodać tego samego audio wiele razy.
+
+helper.creator.invalidaudio.title = Nieprawidłowy plik audio!
+helper.creator.invalidaudio.desc = Plik który chcesz załadować nie istnieje lub ma nieobsługiwany typ pliku.%n%%n%Sprawdź ścieżkę pliku i upewnij się, że plik jest prawidłowym plikiem audio WAV!
+
+helper.creator.invalidimage.title = Nieprawidłowy obraz!
+helper.creator.invalidimage.desc = Obraz który chcesz załadować nie istnieje lub ma nieobsługiwany typ pliku.%n%%n%Obsługiwane typy plików to JPG/JPEG, PNG i GIF.
+
+helper.creator.imagenotfound.title = Nie znaleziono obrazu!
+helper.creator.imagenotfound.desc = Obraz który chcesz dodać nie istnieje%n%w określonej lokalizacji.
+
+helper.creator.animationnotfound.title = Nie znaleziono animacji!
+helper.creator.animationnotfound.desc = Animacja którą chcesz dodać nie istnieje.%n%%n%Być może zapomniałeś dodać wszystkich obowiązkowych zmiennych do jego właściwości?%n%%n%Zawsze pamiętaj, że musisz ponownie uruchomić grę%n%po dodaniu nowej animacji do folderu animacji.
+
+helper.creator.texttooshort.title = Tekst jest za krótki!
+helper.creator.texttooshort.desc = Twój tekst musi mieć conajmniej jeden znak!%n%W przeciwnym razie… on… byłby niczym.%n%%n%Nikt nie chce być niczym, więc nie rób tego z tekstem!
+
+helper.creator.cannotdelete.title = Obiekt nie może zostać usunięty!
+helper.creator.cannotdelete.desc = Przepraszamy, ale nie możesz usunąć tego obiektu.%n%%n%Będziesz musiał nauczyć się z tym żyć..
+
+helper.creator.savefile = Czy chcesz zapisać swój układ w pliku dostosowywania?
+helper.creator.savefile.keep = Zapisz i pozostaw inne układy włączone
+helper.creator.savefile.disable = Zapisz i wyłącz inne układy
+helper.creator.savefile.cancel = Anuluj
+
+helper.creator.layoutoptions.renderorder = Kolejność Renderowania
+helper.creator.layoutoptions.renderorder.background = Tło
+helper.creator.layoutoptions.renderorder.foreground = Pierwszy Plan
+
+helper.creator.layoutoptions.version.mc = Wersja Minecrafta
+helper.creator.layoutoptions.version.fm = Wersja FancyMenu
+helper.creator.layoutoptions.version.minimum = Ustaw Minimum
+helper.creator.layoutoptions.version.minimum.mc = Minimalna Wersja Minecrafta
+helper.creator.layoutoptions.version.minimum.fm = Minimalna Wersja FancyMenu
+helper.creator.layoutoptions.version.maximum = Ustaw Maksimum
+helper.creator.layoutoptions.version.maximum.mc = Maksymalna Wersja Minecrafta
+helper.creator.layoutoptions.version.maximum.fm = Maksymalna Wersja FancyMenu
+
+helper.creator.layoutoptions.resetbackground = Resetuj Tło
+
+helper.creator.layoutoptions.requiredmods = Wymagane Mody
+helper.creator.layoutoptions.requiredmods.desc = Wymagane Mody [ID modów, oddzielone przecinkami]
+
+helper.creator.close = Czy naprawdę chcesz zamknąć kreatora układu?
+
+helper.creator.audio.delete = Usuń
+helper.creator.audio.delete.msg = Czy na pewno chcesz usunąć te audio?
+helper.creator.audio.enableloop = Włącz pętlę
+helper.creator.audio.disableloop = Wyłącz pętlę
+
+helper.creator.add.image = Obraz
+helper.creator.add.image.path = Ścieżka obrazu
+
+helper.creator.add.animation = Animacja
+helper.creator.add.animation.entername = Wpisz nazwę animacji
+helper.creator.add.animation.entername.title = Nazwa Animacji
+
+helper.creator.add.text = Tekst
+helper.creator.add.text.newtext = Nowy Tekst
+
+helper.creator.add.button = Przycisk
+helper.creator.add.button.label = Etykieta Przycisku
+
+helper.creator.add.audio = Audio
+
+helper.creator.vanillabutton.autoclick = Kliknij Przycisk
+helper.creator.vanillabutton.autoclick.popup = Automatyczne Kliknięcia Przycisków
+
+helper.creator.backgroundoptions = Opcje Tła
+helper.creator.backgroundoptions.backgroundanimation = Animacje Tła
+helper.creator.backgroundoptions.backgroundimage = Obraz w tle
+helper.creator.backgroundoptions.chooseimage = Wybierz Obraz
+helper.creator.backgroundoptions.random = Losowy
+helper.creator.backgroundoptions.notrandom = Nie Losowy
+helper.creator.backgroundoptions.addanimation = Dodaj
+helper.creator.backgroundoptions.removeanimation = Usuń
+helper.creator.backgroundoptions.animations = Animacje
+helper.creator.backgroundoptions.randomizeanimations = Losuj Animacje
+
+helper.creator.custombutton.config = Działanie Przycisku
+helper.creator.custombutton.config.actionvalue = Wartość Akcji [{}]
+helper.creator.custombutton.config.actiontype = Rodzaj Akcji
+helper.creator.custombutton.config.actiontype.sendmessage.desc = Wyślij wiadomość czatu lub polecenie.
+helper.creator.custombutton.config.actiontype.sendmessage.desc.value = Wiadomość/Polecenie
+helper.creator.custombutton.config.actiontype.openlink.desc = Otwórz link w domyślnej przeglądarce.
+helper.creator.custombutton.config.actiontype.openlink.desc.value = Link
+helper.creator.custombutton.config.actiontype.quitgame.desc = Zamknij Minecraft.
+helper.creator.custombutton.config.actiontype.joinserver.desc = Dołącz do serwera Minecraft.
+helper.creator.custombutton.config.actiontype.joinserver.desc.value = IP Serwera
+helper.creator.custombutton.config.actiontype.loadworld.desc = Załaduj świat Minecraft.
+helper.creator.custombutton.config.actiontype.loadworld.desc.value = Nazwa folderu świata
+helper.creator.custombutton.config.actiontype.openfile.desc = Otwórz plik lub folder.
+helper.creator.custombutton.config.actiontype.openfile.desc.value = Ścieżka
+helper.creator.custombutton.config.actiontype.prevbackground.desc = Przejdź do poprzedniego tła menu.
+helper.creator.custombutton.config.actiontype.nextbackground.desc = Przejdź do następnego tła menu.
+
+helper.creator.custombutton.config.texture = Tekstura przycisku
+helper.creator.custombutton.config.texture.normal = Normalna
+helper.creator.custombutton.config.texture.hovered = Wskazany
+helper.creator.custombutton.config.texture.reset = Zresetuj tekstury
+
+helper.creator.items.setorientation = Ustaw Orientację
+helper.creator.items.delete = Usuń
+helper.creator.items.border.posx = pozX
+helper.creator.items.border.posy = pozY
+helper.creator.items.border.orientation = orientacja
+helper.creator.items.border.width = szerokość
+helper.creator.items.border.height = wysokość
+
+helper.creator.items.button.editlabel = Edytuj Etykietę
+
+helper.creator.items.vanillabutton.resetorientation = Zresetuj Orientację
+helper.creator.items.vanillabutton.hide = Ukryj Przycisk
+
+helper.creator.items.string.setscale = Ustaw Skalę
+helper.creator.items.string.setcentered = Ustaw Na Środku
+helper.creator.items.string.setuncentered = Ustaw Nie Na Środku
+helper.creator.items.string.setshadow = Ustaw Cień
+helper.creator.items.string.setnoshadow = Usuń Cień
+helper.creator.items.string.edit = Edytuj Zawartość
+helper.creator.items.string.border.centered = wyśrodkowany
+helper.creator.items.string.border.scale = skala
+
+helper.creator.items.string.scale.invalidvalue.title = Niewłaściwa Wartość!
+helper.creator.items.string.scale.invalidvalue.desc = Wartość którą chcesz ustawić nie jest prawidłową wartością skali!%n%%n%Przykłady wartości skali: 1.0, 2.0, 0.5
+
+helper.creator.deleteobject = Czy na pewno chcesz §lUSUNĄĆ §rten objekt?%n%%n%§lNie można cofnąć tej akcji!
+
+helper.creator.choosefile.enterorchoose = §lWprowadź Ścieżkę Lub Wybierz Plik
+helper.creator.choosefile.choose = Wybierz Plik
+helper.creator.choosefile.notsupported = §cEksplorator plików nie jest obsługiwany lub wyłączony! Wprowadź ręcznie ścieżkę.
+
+helper.creator.webstring.multiline = Ustaw wiele linii tekstu
+helper.creator.webstring.nomultiline = Ustaw brak wielu linii tekstu
+
+helper.creator.web.invalidurl = §c§lnieprawidłowy URL!%n%%n%Ten adres URL nie jest prawidłowym adresem lub nie istnieje!
+helper.creator.web.enterurl = Wprowadź URL
+
+helper.creator.add.webimage = Obraz Sieciowy
+helper.creator.add.webtext = Tekst Sieciowy
+
+helper.creator.editlayout = Edytuj Układ
+helper.creator.editlayout.popup.loadall = Załaduj Wszystko
+helper.creator.editlayout.popup.loadselected = Załaduj Wybrany Układ
+helper.creator.editlayout.popup.layouts = Układy
+helper.creator.editlayout.popup.cancel = Anuluj
+helper.creator.editlayout.popup.actionscount = {} akcje dostosowywania
+helper.creator.editlayout.nolayouts.msg = §c§lNie znaleziono układów!%n%%n%%n%To menu nie zawiera żadnych układów!%n%%n%Jeśli chcesz dostosować to menu, użyj przycisku „Utwórz układ”!
+helper.creator.editlayout.popup.msg = Istnieje więcej niż jeden plik dostosowywania dla tego ekranu menu!%n%%n%Czy chcesz załadować pełny układ i połączyć wszystkie%n%czy po prostu chcesz załadować konkretny?%n%%n%§cWartości dostosowywania gubią się podczas łączenia wielu układów!
+
+helper.creator.editlayout.single.override = Zastąp istniejący układ
+helper.creator.editlayout.single.asnew.keep = Zapisz jako nowy układ i pozostaw inne włączone
+helper.creator.editlayout.single.asnew.disable = Zapisz jako nowy układ i wyłącz inne
+
+helper.creator.items.button.hoverlabel = Etykieta Po Wskazaniu
+helper.creator.items.button.hoverlabel.text = Tekst Etykieta Po Wskazaniu
+helper.creator.items.button.hoverlabel.reset = Zresetuj Etykietę Po Wskazaniu
+helper.creator.items.button.hoversound = Etykieta Po Wskazaniu
+helper.creator.items.button.hoversound.path = Ścieżka Dźwięku Po Wskazaniu
+helper.creator.items.button.hoversound.reset = Zresetuj Dźwięk Po Wskazaniu
+
+helper.creator.editlayout.unsupportedvalues = §c§lNieobsługiwane wartości!%n%%n%%n%Twój układ zawiera nieobsługiwane wartości!%n%Te wartości nie działają w kreatorze układu.%n%%n%Prawdopodobnie używasz jakiegoś §lobliczenia pozycji lub rozmiaru%n%w jednej z sekcji dostosowywania..%n%%n%Ręcznie przekonwertuj te obliczenia na wartości bezwzględne i spróbuj ponownie.
+
+helper.creator.backgroundoptions.setpanorama = Wide Image?
+helper.creator.backgroundoptions.panorama = Wide
+helper.creator.backgroundoptions.nopanorama = Normal
+
+helper.creator.textures.invalidcharacters = §c§lNieprawidłowe znaki!%n%%n%%n%Nazwa pliku obrazu zawiera nieprawidłowe znaki!%n%%n%Proszę używać tylko znaków "a-z", "0-9", ".", "_" and "-".%n%Spacje, wielkie litery i wszelkie inne znaki specjalne nie są obsługiwane.
+
+helper.buttons.tools.dropdownlabel = Dostosowywanie
+helper.buttons.tools.overridemenu = Zastąp Za Pomocą
+helper.buttons.tools.resetoverride = Zresetuj Zastąpienie
+helper.buttons.tools.closecustomgui = Zamknij GUI
+
+helper.buttons.tools.customguis = Niestandardowe GUI
+helper.buttons.tools.customguis.open = Otwórz GUI
+helper.buttons.tools.customguis.delete = Usuń GUI
+helper.buttons.tools.customguis.pickbyname = Wybierz Według Nazwy
+helper.buttons.tools.customguis.openbyname = Otwórz Według Nazwy
+helper.buttons.tools.customguis.deletebyname = Usuń Według Nazwy
+helper.buttons.tools.customguis.sure = §c§lJesteś pewny?%n%%n%%n%Czy naprawdę chcesz §lusunąć §rten GUI?%n%%n%§lNie można cofnąć tej akcji!%n% %n% %n% %n%
+helper.buttons.tools.customguis.invalididentifier = §c§lNieprawidłowy identyfikator!%n%%n%%n%Nie znaleziono niestandardowego GUI z tym identyfikatorem!%n% %n% %n% %n%
+
+helper.buttons.tools.creategui = Utwórz GUI
+helper.buttons.tools.creategui.allowesc = Zezwól
+helper.buttons.tools.creategui.donotallowesc = Nie Zezwalaj
+helper.buttons.tools.creategui.invalididentifier = §cNieprawidłowy identyfikator!
+helper.buttons.tools.creategui.identifieralreadyused = §cIdentyfikator jest już w użyciu! Proszę wybrać inny!
+helper.buttons.tools.creategui.allowescdesc = Zezwól ESC Na Zamknięcie Menu
+helper.buttons.tools.creategui.menuidentifier = Identyfikator Menu
+helper.buttons.tools.creategui.menutitle = Tytuł menu (opcjonalnie)
+helper.buttons.tools.creategui.create = Utwórz
+
+gameintro.skip = NACIŚNIJ SPACJĘ ABY POMINĄĆ
+
+helper.creator.items.chooselayer = Wybierz Warstwę
+
+customization.items.webstring.unabletoload = Nie można załadować tekstu internetowego! Nieprawidłowy adres URL lub brak połączenia z Internetem!
+
+helper.creator.custombutton.config.actiontype.opencustomgui.desc = Otwiera niestandardowy interfejs GUI.
+helper.creator.custombutton.config.actiontype.opencustomgui.desc.value = Identyfikator Menu
+
+helper.creator.items.button.delayappearance = Opóźnij pojawianie się objektu
+helper.creator.items.button.delayappearance.desc = Opóźnienie pojawiania się w sekundach [Obsługa wartości dziesiętnych]
+helper.creator.items.button.delayappearance.invalidvalue = §c§lNiewłaściwa Wartość!%n%%n%%n%To nie jest poprawna ilość sekund!%n%Może twoja wartość jest za długa. (..NIE BĄDŹ Z TEGO DUMNY!)%n%%n%Przykłady Wartości: 3, 2.0, 0.05, 0.8, 10.5
