@@ -12,9 +12,5 @@ const hideTFCStuff = (event) => {
                 event.hide(`tfc:ore/${oreTypeName}_${oreMaterialName}/${stoneTypeName}`)
             })
         })
-
-        tfcDepositeMaterials.forEach(depositeMaterialName => {
-            event.hide(`tfc:deposit/${depositeMaterialName}/${stoneTypeName}`)
-        })
     })
 }
