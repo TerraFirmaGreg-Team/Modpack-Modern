@@ -1,0 +1,1264 @@
+
+[general]
+	#
+	# Enable nether portal creation
+	enableNetherPortals = false
+	#
+	# Forces a number of game rules to specific values.
+	#   naturalRegeneration = false (Health regen is much slower and not tied to extra saturation)
+	#   doInsomnia = false (No phantoms)
+	#   doTraderSpawning = false (No wandering traders)
+	#   doPatrolSpawning = false (No pillager patrols)
+	enableForcedTFCGameRules = true
+	#
+	# If true, TFC will stop time when no players are online on a running server.
+	# This prevents food from decaying, the calendar from advancing, and the sun from moving, etc.
+	# !!Disable at your own risk!!
+	enableTimeStopWhenServerEmpty = true
+	#
+	# Enable fire arrows and fireballs to spread fire and light blocks.
+	enableFireArrowSpreading = true
+	#
+	# Base probability for a firestarter to start a fire. May change based on circumstances
+	#Range: 0.0 ~ 1.0
+	fireStarterChance = 0.5
+	#
+	# Enable rat infestations for improperly stored food.
+	enableInfestations = true
+	#
+	# Enables TFC setting the moon phase based on the progress of the month. The etymology of the English word 'month' is in fact related to the word 'moon'.
+	enableCalendarSensitiveMoonPhases = true
+	#
+	# If false, vanilla lightning will not strike.
+	enableLightning = true
+	#
+	# If true, lightning has a chance of stripping bark off of trees.
+	enableLightningStrippingLogs = true
+
+[blocks]
+
+	[blocks.farmland]
+		#
+		# If TFC soil blocks are able to be created into farmland using a hoe.
+		enableFarmlandCreation = true
+
+	[blocks.grassPath]
+		#
+		# If TFC soil blocks are able to be created into (grass) path blocks using a hoe.
+		enableGrassPathCreation = true
+
+	[blocks.grass]
+		#
+		# The chance that when grass that freezes and thaws it will have a loose rock rise to the surface, provided some conditions are met. Set to 0 to disable.
+		#Range: 0.0 ~ 1.0
+		grassSpawningRocksChance = 0.001
+
+	[blocks.rootedDirt]
+		#
+		# If TFC rooted dirt blocks are able to be created into dirt blocks using a hoe.
+		enableRootedDirtToDirtCreation = true
+
+	[blocks.snow]
+		#
+		# [Requires MC Restart] If snow will slow players that move on top of it similar to soul sand or honey.
+		enableSnowSlowEntities = true
+		#
+		# The chance that snow will accumulate during a storm. Lower values = faster snow accumulation, but also more block updates (aka lag).
+		#Range: > 1
+		snowAccumulateChance = 20
+		#
+		# The chance that snow will melt during a storm. Lower values = faster snow melting, but also more block updates (aka lag).
+		#Range: > 1
+		snowMeltChance = 36
+
+	[blocks.plants]
+		#
+		# Chance for a plant to grow each random tick, does not include crops. Lower = slower growth. Set to 0 to disable random plant growth.
+		#Range: 0.0 ~ 1.0
+		plantGrowthChance = 0.04
+		#
+		# Chance for a twisting/weeping/kelp plant to grow each random tick, does not include crops. Lower = slower growth. Set to 0 to disable random plant growth.
+		#Range: 0.0 ~ 1.0
+		plantLongGrowthChance = 0.03
+		#
+		# Chance for a plant to spread each random tick, does not include crops. Lower = slower growth. Set to 0 to disable random plant spreading.
+		#Range: 0.0 ~ 1.0
+		plantSpreadChance = 0.001
+		#
+		# A movement multiplier for players moving through plants. Individual plants will use a ratio of this value, and lower = slower.
+		#Range: 0.0 ~ 1.0
+		plantsMovementModifier = 0.2
+
+	[blocks.leaves]
+		#
+		# A movement multiplier for players moving through leaves. Lower = slower.
+		#Range: 0.0 ~ 1.0
+		leavesMovementModifier = 0.4
+		#
+		# If true, then leaves will decay slowly over time when disconnected from logs (vanilla behavior), as opposed to instantly (TFC behavior).
+		enableLeavesDecaySlowly = false
+
+	[blocks.cobblestone]
+		#
+		# If mossy rock blocks will spread their moss to nearby rock blocks (bricks and cobble; stairs, slabs and walls thereof).
+		enableMossyRockSpreading = true
+		#
+		# The rate at which rock blocks will accumulate moss. Higher value = slower.
+		#Range: > 1
+		mossyRockSpreadRate = 20
+
+	[blocks.chest]
+		#
+		# The largest (inclusive) size of an item that is allowed in a chest.
+		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
+		chestMaximumItemSize = "LARGE"
+
+	[blocks.largeVessel]
+		#
+		# If true, large vessels will interact with in-world automation such as hoppers on a side-specific basis.
+		largeVesselEnableAutomation = true
+		#
+		# If true, large vessels will seal and unseal on redstone signal.
+		largeVesselEnableRedstoneSeal = true
+
+	[blocks.torch]
+		#
+		# Number of ticks required for a torch to burn out (1000 = 1 in game hour = 50 seconds), default is 72 hours. Set to -1 to disable torch burnout.
+		#Range: > -1
+		torchTicks = 72000
+
+	[blocks.candle]
+		#
+		# Number of ticks required for a candle to burn out (1000 = 1 in game hour = 50 seconds), default is 264 hours. Set to -1 to disable candle burnout.
+		#Range: > -1
+		candleTicks = 264000
+
+	[blocks.dryingBricks]
+		#
+		# Number of ticks required for mud bricks to dry (1000 = 1 in game hour = 50 seconds), default is 24 hours. Set to -1 to disable drying.
+		#Range: > -1
+		mudBricksTicks = 24000
+
+	[blocks.charcoal]
+		#
+		# Number of ticks required for charcoal pit to complete. (1000 = 1 in game hour = 50 seconds), default is 18 hours.
+		#Range: > -1
+		charcoalTicks = 18000
+
+	[blocks.pitKiln]
+		#
+		# Number of ticks required for a pit kiln to burn out. (1000 = 1 in game hour = 50 seconds), default is 8 hours.
+		#Range: > 20
+		pitKilnTicks = 8000
+		#
+		# The maximum temperature which a pit kiln reaches.
+		#Range: > 0
+		pitKilnTemperature1 = 1400
+
+	[blocks.crucible]
+		#
+		# Tank capacity of a crucible (in mB).
+		#Range: 0 ~ 2147483645
+		crucibleCapacity = 4000
+		#
+		# A modifier for how fast fluid containers empty into crucibles. Containers will empty 1 mB every (this) number of ticks.
+		#Range: > 1
+		cruciblePouringRate = 4
+		#
+		# A modifier for how fast fluid containers empty into crucibles when shift is held. Containers will empty 1 mB every (this) number of ticks.
+		#Range: > 1
+		crucibleFastPouringRate = 1
+		#
+		# If true, barrels will interact with in-world automation such as hoppers on a side-specific basis.
+		crucibleEnableAutomation = true
+
+	[blocks.anvil]
+		#
+		# The number of pixels that the anvil's result may be off by, but still count as recipe completion. By default this requires pixel perfect accuracy.
+		#Range: 0 ~ 150
+		anvilAcceptableWorkRange = 0
+		#
+		# The minimum efficiency (ratio of number of steps taken / minimum number of steps required) that must be passed for a item to be considered 'Modestly Forged'.
+		#Range: 1.0 ~ 1.7976931348623157E308
+		anvilModestlyForgedThreshold = 10.0
+		#
+		# The minimum efficiency (ratio of number of steps taken / minimum number of steps required) that must be passed for a item to be considered 'Well Forged'.
+		#Range: 1.0 ~ 1.7976931348623157E308
+		anvilWellForgedThreshold = 5.0
+		#
+		# The minimum efficiency (ratio of number of steps taken / minimum number of steps required) that must be passed for a item to be considered 'Expertly Forged'.
+		#Range: 1.0 ~ 1.7976931348623157E308
+		anvilExpertForgedThreshold = 2.0
+		#
+		# The minimum efficiency (ratio of number of steps taken / minimum number of steps required) that must be passed for a item to be considered 'Perfectly Forged'.
+		#Range: 1.0 ~ 1.7976931348623157E308
+		anvilPerfectlyForgedThreshold = 1.5
+		#
+		# The multiplier to efficiency (mining speed) that is applied to a 'Perfectly Forged' tool.
+		#Range: 1.0 ~ 1000.0
+		anvilMaxEfficiencyMultiplier = 1.8
+		#
+		# The bonus to durability (probability to ignore a point of damage) that is applied to a 'Perfectly Forged' tool. Note that 1 ~ infinite durability, and 0 ~ no bonus.
+		#Range: 0.0 ~ 1.0
+		anvilMaxDurabilityMultiplier = 0.5
+		#
+		# The boost to attack damage that is applied to a 'Perfectly Forged' tool.
+		#Range: 1.0 ~ 1000.0
+		anvilMaxDamageMultiplier = 1.5
+
+	[blocks.barrel]
+		#
+		# Tank capacity of a barrel (in mB).
+		#Range: > 0
+		barrelCapacity = 10000
+		#
+		# If true, barrels will interact with in-world automation such as hoppers on a side-specific basis.
+		barrelEnableAutomation = true
+		#
+		# If true, barrels will seal and unseal on redstone signal.
+		barrelEnableRedstoneSeal = true
+
+	[blocks.composter]
+		#
+		# Number of ticks required for a composter in normal conditions to complete. (24000 = 1 game day), default is 12 days.
+		#Range: > 20
+		composterTicks = 288000
+		#
+		# If true, the composter will interact with in-world automation such as hoppers on a side-specific basis.
+		composterEnableAutomation = true
+
+	[blocks.sluice]
+		#
+		# Number of ticks required for a sluice to process an item. (20 = 1 second), default is 5 seconds.
+		#Range: > 1
+		sluiceTicks = 100
+
+	[blocks.lamp]
+		#
+		# Tank capacity of a lamp (in mB).
+		#Range: 0 ~ 2147483645
+		lampCapacity = 250
+
+	[blocks.pumpkin]
+		#
+		# Enables the knifing of pumpkins to carve them.
+		enablePumpkinCarving = true
+		#
+		# Number of ticks required for a jack 'o lantern to burn out (1000 = 1 in game hour = 50 seconds), default is 108 hours. Set to -1 to disable burnout.
+		#Range: > -1
+		jackOLanternTicks = 108000
+
+	[blocks.bloomery]
+		#
+		# Inventory capacity (in number of items per level of chimney) of the bloomery.
+		#Range: > 1
+		bloomeryCapacity = 8
+		#
+		# The maximum number of levels that can be built in a bloomery multiblock, for added capacity.
+		#Range: > 1
+		bloomeryMaxChimneyHeight = 3
+
+	[blocks.blastFurnace]
+		#
+		# Inventory capacity (in number of items per level of chimney) of the blast furnace.
+		#Range: > 1
+		blastFurnaceCapacity = 4
+		#
+		# Fluid capacity (in mB) of the output tank of the blast furnace.
+		#Range: > 1
+		blastFurnaceFluidCapacity = 10000
+		#
+		# A multiplier for how fast the blast furnace consumes fuel. Higher values = faster fuel consumption.
+		#Range: > 1
+		blastFurnaceFuelConsumptionMultiplier = 4
+		#
+		# The maximum number of levels that can be built in a blast furnace multiblock, for added capacity.
+		#Range: > 1
+		blastFurnaceMaxChimneyHeight = 5
+		#
+		# If true, blast furnaces will interact with in-world automation such as hoppers on a side-specific basis.
+		blastFurnaceEnableAutomation = true
+
+	[blocks.loom]
+		#
+		# If true, looms will interact with in-world automation such as hoppers on a side-specific basis.
+		loomEnableAutomation = true
+
+	[blocks.thatch]
+		#
+		# A movement multiplier for players moving through thatch. Lower = slower.
+		#Range: 0.0 ~ 1.0
+		thatchMovementMultiplier = 0.6
+
+	[blocks.thatchBed]
+		#
+		# If true, thatch beds can set the player's spawn.
+		enableThatchBedSpawnSetting = true
+		#
+		# If true, the player can sleep the night in a thatch bed
+		enableThatchBedSleeping = false
+		#
+		# If true, the player cannot sleep in thatch beds during thunderstorms.
+		thatchBedNoSleepInThunderstorms = true
+
+	[blocks.placedItems]
+		#
+		# The maximum size of items that can be placed as 4 items on the ground with V. If an item is larger than this, it could still be placed with the 'maxPlacedLargeItemSize' option.
+		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
+		maxPlacedItemSize = "LARGE"
+		#
+		# The maximum size of items that can be placed as a single item on the ground with V. Items are checked to see if they're the right size to be placed in a group of 4 items first.
+		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
+		maxPlacedLargeItemSize = "HUGE"
+		#
+		# If true, players can place items on the ground with V.
+		enablePlacingItems = true
+		#
+		# If true, the tag 'tfc:placed_item_whitelist' will be checked to allow items to be in placed items and will exclude everything else.
+		usePlacedItemWhitelist = false
+
+	[blocks.charcoalForge]
+		#
+		# If true, charcoal forges will interact with in-world automation such as hoppers on a side-specific basis.
+		charcoalForgeEnableAutomation = true
+
+	[blocks.firePitEnableAutomation]
+		#
+		# If true, fire pits will interact with in-world automation such as hoppers on a side-specific basis.
+		firePitEnableAutomation = true
+
+	[blocks.nestBox]
+		#
+		# If true, nest boxes will interact with in-world automation such as hoppers on a side-specific basis.
+		nestBoxEnableAutomation = true
+
+	[blocks.powderKeg]
+		#
+		# If true, powder kegs can be lit and exploded.
+		powderKegEnabled = true
+		#
+		# If true, powder kegs will interact with in-world automation such as hoppers on a side-specific basis.
+		powderKegEnableAutomation = true
+		#
+		# A modifier to the strength of powderkegs when exploding. A max powderkeg explosion is 64, and all explosions are capped to this size no matter the value of the modifier.
+		#Range: 0.0 ~ 64.0
+		powderKegStrengthModifier = 1.0
+
+	[blocks.hotWater]
+		#
+		# An amount that sitting in hot water will restore health, approximately twice per second.
+		#Range: 0.0 ~ 20.0
+		hotWaterHealAmount = 0.08
+
+	[blocks.saplings]
+		#
+		# Modifier applied to the growth time of every (non-fruit) sapling. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		globalSaplingGrowthModifier = 1.0
+		#
+		# Modifier applied to the growth time of every fruit tree sapling. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		globalFruitSaplingGrowthModifier = 1.0
+		#
+		# Days for a acacia tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		acaciaSaplingGrowthDays = 11
+		#
+		# Days for a ash tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		ashSaplingGrowthDays = 7
+		#
+		# Days for a aspen tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		aspenSaplingGrowthDays = 8
+		#
+		# Days for a birch tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		birchSaplingGrowthDays = 7
+		#
+		# Days for a blackwood tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		blackwoodSaplingGrowthDays = 8
+		#
+		# Days for a chestnut tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		chestnutSaplingGrowthDays = 7
+		#
+		# Days for a douglas_fir tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		douglas_firSaplingGrowthDays = 7
+		#
+		# Days for a hickory tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		hickorySaplingGrowthDays = 10
+		#
+		# Days for a kapok tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		kapokSaplingGrowthDays = 7
+		#
+		# Days for a mangrove tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		mangroveSaplingGrowthDays = 8
+		#
+		# Days for a maple tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		mapleSaplingGrowthDays = 7
+		#
+		# Days for a oak tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		oakSaplingGrowthDays = 10
+		#
+		# Days for a palm tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		palmSaplingGrowthDays = 7
+		#
+		# Days for a pine tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		pineSaplingGrowthDays = 7
+		#
+		# Days for a rosewood tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		rosewoodSaplingGrowthDays = 8
+		#
+		# Days for a sequoia tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		sequoiaSaplingGrowthDays = 18
+		#
+		# Days for a spruce tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		spruceSaplingGrowthDays = 7
+		#
+		# Days for a sycamore tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		sycamoreSaplingGrowthDays = 8
+		#
+		# Days for a white_cedar tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		white_cedarSaplingGrowthDays = 7
+		#
+		# Days for a willow tree sapling to be ready to grow into a full tree.
+		#Range: > 0
+		willowSaplingGrowthDays = 11
+		#
+		# Days for a cherry tree sapling to be eligible to grow
+		#Range: > 0
+		cherrySaplingGrowthDays1 = 8
+		#
+		# Days for a green_apple tree sapling to be eligible to grow
+		#Range: > 0
+		green_appleSaplingGrowthDays1 = 10
+		#
+		# Days for a lemon tree sapling to be eligible to grow
+		#Range: > 0
+		lemonSaplingGrowthDays1 = 8
+		#
+		# Days for a olive tree sapling to be eligible to grow
+		#Range: > 0
+		oliveSaplingGrowthDays1 = 12
+		#
+		# Days for a orange tree sapling to be eligible to grow
+		#Range: > 0
+		orangeSaplingGrowthDays1 = 7
+		#
+		# Days for a peach tree sapling to be eligible to grow
+		#Range: > 0
+		peachSaplingGrowthDays1 = 11
+		#
+		# Days for a plum tree sapling to be eligible to grow
+		#Range: > 0
+		plumSaplingGrowthDays1 = 8
+		#
+		# Days for a red_apple tree sapling to be eligible to grow
+		#Range: > 0
+		red_appleSaplingGrowthDays1 = 10
+		#
+		# Days for a banana tree sapling to be eligible to grow
+		#Range: > 0
+		bananaSaplingGrowthDays = 6
+
+	[blocks.crops]
+		#
+		# Modifier applied to the growth time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
+		#Range: 0.001 ~ 1000.0
+		cropGrowthModifier = 1.0
+		#
+		# Modifier applied to the expiry time of every crop. The modifier multiplies the ticks it takes to grow, so larger values cause longer growth times. For example, a value of 2 doubles the growth time.
+		#Range: 0.001 ~ 1000.0
+		cropExpiryModifier = 1.0
+
+	[blocks.dispenser]
+		#
+		# If true, dispensers can light TFC devices.
+		dispenserEnableLighting = true
+
+	[blocks.powderBowl]
+		#
+		# If true, powder bowls will interact with in-world automation such as hoppers on a side-specific basis.
+		powderBowlEnableAutomation = true
+
+[items]
+
+	[items.smallVessel]
+		#
+		# Tank capacity of a small vessel (in mB).
+		#Range: 0 ~ 2147483645
+		smallVesselCapacity = 3000
+		#
+		# The largest (inclusive) size of an item that is allowed in a small vessel.
+		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
+		smallVesselMaximumItemSize = "SMALL"
+		#
+		# If true, the vessel can be inserted and extracted from by clicking on it in the inventory. You may want to disable this if you have a inventory-tweaking mod
+		enableSmallVesselInventoryInteraction = true
+
+	[items.molds]
+		#
+		# Tank capacity of a Fire Ingot mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldIngotCapacity = 144
+		#
+		# Tank capacity of a Pickaxe Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldPickaxeHeadCapacity = 144
+		#
+		# Tank capacity of a Propick Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldPropickHeadCapacity = 144
+		#
+		# Tank capacity of a Axe Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldAxeHeadCapacity = 144
+		#
+		# Tank capacity of a Shovel Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldShovelHeadCapacity = 144
+		#
+		# Tank capacity of a Hoe Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldHoeHeadCapacity = 144
+		#
+		# Tank capacity of a Chisel Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldChiselHeadCapacity = 144
+		#
+		# Tank capacity of a Hammer Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldHammerHeadCapacity = 144
+		#
+		# Tank capacity of a Saw Blade mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldSawBladeCapacity = 144
+		#
+		# Tank capacity of a Javelin Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldJavelinHeadCapacity = 144
+		#
+		# Tank capacity of a Sword Blade mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldSwordBladeCapacity = 288
+		#
+		# Tank capacity of a Mace Head mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldMaceHeadCapacity = 288
+		#
+		# Tank capacity of a Knife Blade mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldKnifeBladeCapacity = 144
+		#
+		# Tank capacity of a Bell mold (in mB).
+		#Range: 0 ~ 2147483645
+		moldScytheBladeCapacity = 144
+
+	[items.jug]
+		#
+		# Tank capacity of a ceramic jug (in mB).
+		#Range: 0 ~ 2147483645
+		jugCapacity = 100
+		#
+		# The chance a jug will break after drinking.
+		#Range: 0.0 ~ 1.0
+		jugBreakChance = 0.02
+
+	[items.glassBottle]
+		#
+		# Tank capacity of a silica glass bottle (in mB).
+		#Range: 0 ~ 2147483645
+		silicaGlassBottleCapacity = 500
+		#
+		# The chance a silica glass bottle will break after drinking.
+		#Range: 0.0 ~ 1.0
+		silicaGlassBottleBreakChance = 0.005
+		#
+		# Tank capacity of a hematitic glass bottle (in mB).
+		#Range: 0 ~ 2147483645
+		hematiticGlassBottleCapacity = 400
+		#
+		# The chance a hematitic glass bottle will break after drinking.
+		#Range: 0.0 ~ 1.0
+		hematiticGlassBottleBreakChance = 0.02
+		#
+		# Tank capacity of a volcanic glass bottle (in mB).
+		#Range: 0 ~ 2147483645
+		volcanicGlassBottleCapacity = 400
+		#
+		# The chance a volcanic glass bottle will break after drinking.
+		#Range: 0.0 ~ 1.0
+		volcanicGlassBottleBreakChance = 0.04
+		#
+		# Tank capacity of a olivine glass bottle (in mB).
+		#Range: 0 ~ 2147483645
+		olivineGlassBottleCapacity = 400
+		#
+		# The chance a olivine glass bottle will break after drinking.
+		#Range: 0.0 ~ 1.0
+		olivineGlassBottleBreakChance = 0.01
+
+	[items.woodenBucket]
+		#
+		# Tank capacity of a wooden bucket (in mB).
+		#Range: 0 ~ 2147483645
+		woodenBucketCapacity = 1000
+
+[mechanics]
+
+	[mechanics.heat]
+		#
+		# A multiplier for how fast devices themselves heat up. Higher = faster.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		deviceHeatingModifier = 1.0
+		#
+		# A multiplier for how fast items heat in devices. Higher = faster.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		itemHeatingModifier = 1.0
+		#
+		# A multiplier for how fast items cool. Higher = faster.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		itemCoolingModifier = 0.8
+		#
+		# Should hot item entities cool off when in contact with blocks like water or snow?
+		coolHotItemEntities = true
+		#
+		# Ticks between each time an item loses temperature when sitting on a cold block. 20 ticks = 1 second.
+		#Range: > 1
+		ticksBeforeItemCool = 10
+
+	[mechanics.collapses]
+		#
+		# Enable rock collapsing when mining raw stone blocks
+		enableBlockCollapsing = true
+		#
+		# Enable explosions causing immediate collapses.
+		enableExplosionCollapsing = true
+		#
+		# Enable land slides (gravity affected blocks) when placing blocks or on block updates.
+		enableBlockLandslides = true
+		#
+		# Enable chisels starting collapses
+		enableChiselsStartCollapses = true
+		#
+		# Chance for a collapse to be triggered by mining a block.
+		#Range: 0.0 ~ 1.0
+		collapseTriggerChance = 0.1
+		#
+		# Chance for a collapse to be fake triggered by mining a block.
+		#Range: 0.0 ~ 1.0
+		collapseFakeTriggerChance = 0.35
+		#
+		# Chance for a block fo fall from mining collapse. Higher = more likely.
+		#Range: 0.0 ~ 1.0
+		collapsePropagateChance = 0.55
+		#
+		# Chance for a block to fall from an explosion triggered collapse. Higher = mor likely.
+		#Range: 0.0 ~ 1.0
+		collapseExplosionPropagateChance = 0.3
+		#
+		# Minimum radius for a collapse
+		#Range: 1 ~ 32
+		collapseMinRadius = 3
+		#
+		# Variance of the radius of a collapse. Total size is in [minRadius, minRadius + radiusVariance]
+		#Range: 1 ~ 32
+		collapseRadiusVariance = 16
+
+	[mechanics.player]
+		#
+		# If peaceful difficulty should still have vanilla-esque passive regeneration of health, food, and hunger
+		enablePeacefulDifficultyPassiveRegeneration = false
+		#
+		# A multiplier for passive exhaustion accumulation.
+		# Exhaustion is the hidden stat which controls when you get hungry. In vanilla it is incremented by running and jumping for example. In TFC, exhaustion is added just by existing.
+		# 1.0 = A full hunger bar's worth of exhaustion every 2.5 days. Set to zero to disable completely.
+		#Range: 0.0 ~ 100.0
+		passiveExhaustionMultiplier = 1.0
+		#
+		# A multiplier for how quickly the player gets thirsty.
+		# The player loses thirst in sync with when they lose hunger. This represents how much thirst they lose. 0 = None, 100 = the entire thirst bar.
+		#Range: 0.0 ~ 100.0
+		thirstModifier1 = 5.0
+		#
+		# Enables the player losing more thirst in hotter environments.
+		enableThirstOverheating = true
+		#
+		# How much thirst the player gains from drinking in the rain (standing outside in the rain and looking up) per tick.
+		#Range: 0.0 ~ 100.0
+		thirstGainedFromDrinkingInTheRain = 0.20833333333333334
+		#
+		# A multiplier for how quickly the player regenerates health, under TFC's passive regeneration.
+		# By default, the player regenerates 0.2 HP/second, or 0.6 HP/second when above 80% hunger and thirst, where 1 HP = 1/50 of a heart.
+		#Range: 0.0 ~ 100.0
+		naturalRegenerationModifier = 1.0
+		#
+		# How much total hunger consumed is required to completely refresh the player's nutrition.
+		# Player nutrition in TFC is calculated based on nutrition of the last few foods eaten - this is how many foods are used to calculate nutrition. By default, all TFC foods restore 4 hunger.
+		#Range: > 1
+		nutritionRotationHungerWindow = 80
+		#
+		# If player's nutrition should be kept even after death. Hunger and thirst are not affected and will be reset.
+		keepNutritionAfterDeath = true
+		#
+		# How many hours should different foods ignore when trying to stack together automatically?
+		# Food made with different creation dates doesn't stack by default, unless it's within a specific window. This is the number of hours that different foods will try and stack together at the loss of a little extra expiry time.
+		#Range: 1 ~ 100
+		foodDecayStackWindow = 6
+		#
+		# A multiplier for food decay, or expiration times. Larger values will result in naturally shorter expiration times.
+		# Setting this to zero will cause decay not to apply.
+		# Note that if you set this to zero **food items will lose their creation dates!!**. This is not reversible!
+		#Range: 0.0 ~ 1000.0
+		foodDecayModifier = 1.0
+		#
+		# Enables negative effects from carrying too many very heavy items, including potion effects.
+		enableOverburdening = true
+		#
+		# A multiplier for the minimum health that the player will obtain, based on their nutrition
+		#Range: 0.001 ~ 1000.0
+		nutritionMinimumHealthModifier = 0.2
+		#
+		# A multiplier for the default health that the player will have (this is at a average nutrition of 40%, aka the starting nutrition.
+		# Nutrition above this value will linearly scale to the maximum multiplier.
+		# Nutrition below this value will linearly scale to the minimum multiplier.
+		#Range: 0.001 ~ 1000.0
+		nutritionDefaultHealthModifier = 0.85
+		#
+		# A multiplier for the maximum health that the player will obtain, based on their nutrition
+		#Range: 0.001 ~ 1000.0
+		nutritionMaximumHealthModifier = 3.0
+
+	[mechanics.foodTraits]
+		#
+		# The modifier for the 'Salted' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitSaltedModifier = 0.5
+		#
+		# The modifier for the 'Brined' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitBrinedModifier = 1.0
+		#
+		# The modifier for the 'Pickled' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitPickledModifier = 0.5
+		#
+		# The modifier for the 'Preserved' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitPreservedModifier = 0.5
+		#
+		# The modifier for the 'Vinegar' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitVinegarModifier = 0.1
+		#
+		# The modifier for the 'Charcoal Grilled' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitCharcoalGrilledModifier = 1.25
+		#
+		# The modifier for the 'Wood Grilled' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitWoodGrilledModifier = 0.8
+		#
+		# The modifier for the 'Burnt To A Crisp' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitBurntToACrispModifier = 2.5
+		#
+		# The modifier for the 'Wild' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		traitWildModifier = 0.5
+
+	[mechanics.fluids]
+		#
+		# If true, TFC buckets that naturally place sources (colored steel) will place sources. If false, this behavior is disabled.
+		enableBucketsPlacingSources = true
+
+	[mechanics.vanillaChanges]
+		#
+		# If vanilla bonemeal's instant-growth effect should be enabled.
+		enableVanillaBonemeal = false
+		#
+		# If true, vanilla's snow and ice formation mechanics will be used, and none of the TFC mechanics (improved snow and ice placement, snow stacking, icicle formation, passive snow or ice melting) will exist.
+		enableVanillaWeatherEffects = false
+		#
+		# If true, vanilla will attempt to spawn skeleton 'trap' horses during thunderstorms.
+		enableVanillaSkeletonHorseSpawning = false
+		#
+		# If true, enables the default vanilla behavior of mobs spawning with enchanted weapons sometimes.
+		enableVanillaMobsSpawningWithEnchantments = false
+		#
+		# If true, enables the default behavior of mobs sapwning with vanilla armor and weapons
+		enableVanillaMobsSpawningWithVanillaEquipment = false
+		#
+		# If true, golems can be built
+		enableVanillaGolems = false
+		#
+		# If true, vanilla monsters are able to spawn. If false, the 'enableVanillaMonstersOnSurface' config option is not used, and all spawns are denied.
+		enableVanillaMonsters = true
+		#
+		# If true, vanilla monsters will spawn on the surface instead of just underground. If false, vanilla monsters will not spawn on the surface.
+		enableVanillaMonstersOnSurface = false
+		#
+		# If true, chicken jockies can spawn
+		enableChickenJockies = false
+		#
+		# If true, eggs can be thrown.
+		enableVanillaEggThrowing = false
+		#
+		# If true, drinking milk will clear potion effects and restore no nutrition, as in vanilla.
+		enableVanillaDrinkingMilkClearsPotionEffects = false
+
+	[mechanics.animals]
+
+		[mechanics.animals.pig]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			pigFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			pigAdulthoodDays = 80
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			pigUses = 60
+			#
+			# Does the animal eat rotten food?
+			pigEatsRottenFood = true
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			pigGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			pigChildCount = 10
+
+		[mechanics.animals.donkey]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			donkeyFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			donkeyAdulthoodDays = 80
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			donkeyUses = 60
+			#
+			# Does the animal eat rotten food?
+			donkeyEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			donkeyGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			donkeyChildCount = 1
+
+		[mechanics.animals.mule]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			muleFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			muleAdulthoodDays = 80
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			muleUses = 60
+			#
+			# Does the animal eat rotten food?
+			muleEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			muleGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			muleChildCount = 1
+
+		[mechanics.animals.horse]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			horseFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			horseAdulthoodDays = 80
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			horseUses = 60
+			#
+			# Does the animal eat rotten food?
+			horseEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			horseGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			horseChildCount = 1
+
+		[mechanics.animals.cat]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			catFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			catAdulthoodDays = 50
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			catUses = 60
+			#
+			# Does the animal eat rotten food?
+			catEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			catGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			catChildCount = 6
+
+		[mechanics.animals.dog]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			dogFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			dogAdulthoodDays = 50
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			dogUses = 60
+			#
+			# Does the animal eat rotten food?
+			dogEatsRottenFood = true
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			dogGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			dogChildCount = 2
+
+		[mechanics.animals.cow]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			cowFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			cowAdulthoodDays = 192
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			cowUses = 128
+			#
+			# Does the animal eat rotten food?
+			cowEatsRottenFood = true
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			cowGestationDays = 58
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			cowChildCount = 2
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			cowProduceTicks = 24000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			cowMinProduceFamiliarity = 0.15
+
+		[mechanics.animals.goat]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			goatFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			goatAdulthoodDays = 96
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			goatUses = 60
+			#
+			# Does the animal eat rotten food?
+			goatEatsRottenFood = true
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			goatGestationDays = 32
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			goatChildCount = 2
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			goatProduceTicks = 72000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			goatMinProduceFamiliarity = 0.15
+
+		[mechanics.animals.yak]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			yakFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			yakAdulthoodDays = 180
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			yakUses = 230
+			#
+			# Does the animal eat rotten food?
+			yakEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			yakGestationDays = 64
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			yakChildCount = 1
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			yakProduceTicks = 23500
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			yakMinProduceFamiliarity = 0.15
+
+		[mechanics.animals.alpaca]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			alpacaFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			alpacaAdulthoodDays = 98
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			alpacaUses = 128
+			#
+			# Does the animal eat rotten food?
+			alpacaEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			alpacaGestationDays = 36
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			alpacaChildCount = 2
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			alpacaProduceTicks = 120000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			alpacaMinProduceFamiliarity = 0.15
+
+		[mechanics.animals.sheep]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			sheepFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			sheepAdulthoodDays = 56
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			sheepUses = 60
+			#
+			# Does the animal eat rotten food?
+			sheepEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			sheepGestationDays = 32
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			sheepChildCount = 2
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			sheepProduceTicks = 168000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			sheepMinProduceFamiliarity = 0.15
+
+		[mechanics.animals.muskOx]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			muskOxFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			muskOxAdulthoodDays = 168
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			muskOxUses = 160
+			#
+			# Does the animal eat rotten food?
+			muskOxEatsRottenFood = false
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			muskOxGestationDays = 64
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			muskOxChildCount = 1
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			muskOxProduceTicks = 96000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			muskOxMinProduceFamiliarity = 0.15
+
+		[mechanics.animals.chicken]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			chickenFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			chickenAdulthoodDays = 24
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			chickenUses = 100
+			#
+			# Does the animal eat rotten food?
+			chickenEatsRottenFood = true
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			chickenProduceTicks = 30000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			chickenMinProduceFamiliarity = 0.15
+			#
+			# Ticks until egg is ready to hatch
+			#Range: > 0
+			chickenHatchDays = 8
+
+		[mechanics.animals.duck]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			duckFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			duckAdulthoodDays = 32
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			duckUses = 72
+			#
+			# Does the animal eat rotten food?
+			duckEatsRottenFood = false
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			duckProduceTicks = 32000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			duckMinProduceFamiliarity = 0.15
+			#
+			# Ticks until egg is ready to hatch
+			#Range: > 0
+			duckHatchDays = 8
+
+		[mechanics.animals.quail]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			quailFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			quailAdulthoodDays = 22
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			quailUses = 48
+			#
+			# Does the animal eat rotten food?
+			quailEatsRottenFood = true
+			#
+			# Ticks until produce is ready
+			#Range: > 0
+			quailProduceTicks = 28000
+			#
+			# Minimum familiarity [0-1] needed for produce. Set above 1 to disable produce.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			quailMinProduceFamiliarity = 0.15
+			#
+			# Ticks until egg is ready to hatch
+			#Range: > 0
+			quailHatchDays = 8
+
+[weird]
+	farmlandMakesTheBestRaceTracks = false
+

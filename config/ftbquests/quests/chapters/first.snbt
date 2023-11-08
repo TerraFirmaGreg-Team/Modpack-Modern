@@ -1,0 +1,601 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "first"
+	group: ""
+	icon: "tfc:rock/loose/gabbro"
+	id: "3BF7B834776832C5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5D90D027519F38F2"
+			tasks: [{
+				id: "71455D13B684BD9F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "minecraft:stick"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "561485482F38CC78"
+			tasks: [{
+				id: "0310255D94057769"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:rock_knapping"
+					}
+				}
+				title: "Any #tfc:rock_knapping"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "62AC38702010390C"
+			tasks: [{
+				id: "33B8C798CD2C2803"
+				item: "tfc:straw"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "4CEDD6988669C312"
+			tasks: [{
+				id: "4DC97F85BD7D7FC8"
+				item: {
+					Count: 1b
+					id: "tfc:stone/axe/igneous_extrusive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "7EB790A06A7FF88E"
+			tasks: [
+				{
+					id: "7736DD3462908A59"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:firepit_logs"
+						}
+					}
+					title: "Any #tfc:firepit_logs"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "07D85FC0F35E043E"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:stick"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			id: "200BF979F46C5716"
+			tasks: [{
+				id: "046202C64AF1390D"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "11EADC8282D5B424"
+			tasks: [{
+				id: "119219F02EEF6885"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			id: "03F28B73BE72AF3D"
+			tasks: [{
+				id: "74EB9D7ED6689A0A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:kaolin_clay"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "27E720B4F801941B"
+			tasks: [{
+				id: "79A08EB62956C733"
+				item: "tfc:ceramic/pot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			id: "06AF9033195FDA19"
+			tasks: [{
+				id: "27C98F448A7979F6"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:wrought_iron_grill"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			id: "4E2E4EA3B5720727"
+			tasks: [{
+				id: "1D721897028A44FD"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_ingot_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			id: "64718AACDD967338"
+			tasks: [{
+				id: "3F00DE000ACC2746"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_pickaxe_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			id: "5EAD294F09589BEF"
+			tasks: [{
+				id: "70D1FA33890FD00A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_propick_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			id: "20828443CF94D0C2"
+			tasks: [{
+				id: "18EE6DF288F268D6"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_axe_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			id: "70C5B6216969C9C8"
+			tasks: [{
+				id: "1E0298EDB7A1AE5B"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_shovel_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			id: "6CCA852285F5694C"
+			tasks: [{
+				id: "422FCDCA23EDFE0F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_hoe_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			id: "3C0A4ABF69E5767D"
+			tasks: [{
+				id: "22D24CC74D76F9C6"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/ingot_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			id: "381A6C57F7755D5C"
+			tasks: [{
+				id: "4FE712BA0D0DDF70"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/pickaxe_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			id: "75CD67ED4DB57601"
+			tasks: [{
+				id: "11690D5D2094DEFD"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/propick_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			id: "6869749EA6A9126D"
+			tasks: [{
+				id: "241CEAF0DC64CCD9"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/axe_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			id: "62BD2EDBE6F04FA3"
+			tasks: [{
+				id: "4E38337F52261559"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/shovel_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			id: "2952E4A932CB1067"
+			tasks: [{
+				id: "721AB0E694AF7371"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/hoe_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			id: "48F3DC2F6F5A3A85"
+			tasks: [{
+				id: "4F260F588642E3D9"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_chisel_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			id: "4F1E82E6BF0A991D"
+			tasks: [{
+				id: "5C48A6453BBCA8B2"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_hammer_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			id: "2C10A00C3C3C65FC"
+			tasks: [{
+				id: "258213A36236854F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_saw_blade_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			id: "400A0B2B968A03B2"
+			tasks: [{
+				id: "6CE3A92B52C5CBB2"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_javelin_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			id: "75EB7363C7BD5E44"
+			tasks: [{
+				id: "5DBB74547DCB0EA1"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_sword_blade_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			id: "56875E72AC1D9463"
+			tasks: [{
+				id: "29E372F3B3ACB251"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_mace_head_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.0d
+		}
+		{
+			id: "315AE06EA3F01356"
+			tasks: [{
+				id: "7C2E23CB56EA897F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_knife_blade_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			id: "793359D370751DEB"
+			tasks: [{
+				id: "21399C349E6D29E8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_scythe_blade_mold"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.0d
+		}
+		{
+			id: "1E429C2259ACFB9C"
+			tasks: [{
+				id: "1A6037E284F635BF"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_brick"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			id: "61BC3A002A0C1820"
+			tasks: [{
+				id: "5DE628225D0A321A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_crucible"
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 17.5d
+		}
+	]
+	title: "First"
+}
