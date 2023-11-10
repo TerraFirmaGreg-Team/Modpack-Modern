@@ -1,0 +1,49 @@
+
+[tweaks]
+	#This option will let you climb ladders automatically by just looking upwards, rather than requiring a key to be held down.
+	autoClimbLadder = false
+	#This prevents the last torch in the offhand from being placed.
+	doNotUseLastTorch = false
+	#This option will hide your offhand item. It can be toggled via an optional key binding.
+	hideOffhandItem = false
+	#This option will hide your own potion particle effects for your client (other players will still see them).
+	hideOwnParticleEffects = false
+	#This option will hide your shield unless you are holding a weapon.
+	hideShieldUnlessHoldingWeapon = true
+	#This prevents torches from being placed from your offhand at all.
+	noOffhandTorchAtAll = false
+	#This prevents torches from being placed from your offhand if you have a block in your main hand.
+	noOffhandTorchWithBlock = true
+	#This prevents torches from being placed from your offhand if you have food in your main hand.
+	noOffhandTorchWithFood = true
+	#This prevents torches from being placed from your off hand if you have an empty main hand.
+	noOffhandTorchWithEmptyHand = false
+	#This restricts torches to be placed from the offhand only when you're holding a tool in your main hand.
+	offhandTorchWithToolOnly = false
+	#This prevents fireworks from being launched from your off hand if you are wearing an Elytra, unless you're flying.
+	noOffhandFireworksWithElytra = true
+	#This option will disable step assist added by other mods.
+	disableStepAssist = false
+	#This option will disable log stripping.
+	disableLogStripping = false
+	#This adds back the master volume slider to the options screen. Saves you a click!
+	masterVolumeSlider = true
+	#This adds back the music volume slider to the options screen. Saves you a click!
+	musicVolumeSlider = true
+	#This option will make iron fences and glass panes have a bigger hitbox while placing them, making it easier to aim.
+	paneBuildingSupport = true
+	#This option makes the recipe book not shift the inventory when opened. Works best with smaller GUI scales / bigger resolutions.
+	noRecipeBookShifting = false
+
+[customization]
+	#Items that count as torches for the offhand-torch tweak options.
+	torchItems = ["minecraft:torch", "minecraft:soul_torch", "tconstruct:stone_torch"]
+	#Items that are allowed to place torches from the offhand if offhandTorchWithToolOnly is enabled.
+	torchTools = ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe", "tconstruct:pickaxe", "tconstruct:hammer"]
+	#Items that count as weapons for the offhand-shield hiding tweak options.
+	shieldWeapons = ["tetra:modular_sword"]
+	#Items that count as shields for the offhand-shield hiding tweak options.
+	shieldItems = ["basicshields:wooden_shield", "basicshields:golden_shield", "basicshields:diamond_shield", "basicshields:netherite_shield"]
+	#Items that count as fireworks for the offhand-firework tweak options.
+	fireworkItems = ["minecraft:firework_rocket"]
+
