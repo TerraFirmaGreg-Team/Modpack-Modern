@@ -2,4 +2,5 @@
 StartupEvents.registry('item', event =>
 {
     newCreateItems(event);
+    newCreateFluids(event);
 })
