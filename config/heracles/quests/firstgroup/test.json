@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "asdas"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "asdasd"
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "first_group": {
+        "position": [
+          -259,
+          -120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:stone",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png",
+    "title": {
+      "translate": "test"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

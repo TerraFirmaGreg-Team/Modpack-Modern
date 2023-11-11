@@ -1,0 +1,19 @@
+#Align player to camera on left & right clicks
+aimPlayerOnInteract = true
+#How long player will be aligned to camera after left & right clicks
+#Range: 10 ~ 200
+aimDuration = 40
+#Angle in degrees within the player will slightly follow camera yaw (while standing still)
+#Range: 0 ~ 90
+followYaw = 45
+#Does camera should rotate freely during elytra flight
+freeCameraDuringElytraFlight = false
+#Completely remove third-person front view
+skipThirdPersonFrontView = false
+#How fast player changes movement direction in third-person
+#Range: 10 ~ 100
+playerRotationSpeed = 50
+#How fast player pitch follows camera pitch in third-person
+#Range: 10 ~ 100
+pitchChangeSpeed = 65
+

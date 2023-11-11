@@ -1,0 +1,8 @@
+
+#General configuration options.
+[General]
+	#Mod ids (in order) to prioritize using items for when generating the cucumber-tags.json file.
+	modTagPriorities = ["thermal", "mekanism", "tconstruct", "immersiveengineering", "appliedenergistics2"]
+	#If enabled, any tags in the cucumber-tags.json file set to items that don't exist will be refreshed if possible.
+	autoRefreshTagOptions = true
+

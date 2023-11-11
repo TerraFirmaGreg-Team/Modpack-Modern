@@ -19,6 +19,126 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = -55
+  action = movebutton
+  y = -28
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/mainmenu/button_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376322%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = mid-centered
+  x = 72
+  action = movebutton
+  y = 18
+}
+
+customization {
+  identifier = %id=376322%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = kubejs/assets/mainmenu/mdr_logo.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-centered
+  x = 47
+  action = movebutton
+  y = -5
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/mainmenu/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button98x20.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = mid-centered
+  x = -55
+  action = movebutton
+  y = 18
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/mainmenu/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button98x20.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = mid-centered
+  x = 86
+  action = movebutton
+  y = 41
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = mid-centered
+  x = -55
+  action = movebutton
+  y = -5
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/mainmenu/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button98x20.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  orientation = mid-centered
+  x = 47
+  action = movebutton
+  y = -5
+}
+
+customization {
   orientation = top-left
   hidden = true
   x = 186
@@ -53,7 +173,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 423
   width = 13
   action = deep_customization_element:title_screen_realms_notification
@@ -64,7 +184,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 183
   width = 274
   action = deep_customization_element:title_screen_logo
@@ -74,15 +194,103 @@ customization {
 }
 
 customization {
-  orientation = original
+  orientation = top-right
   splash_color = #ffff00
   hidden = false
-  x = 0
+  x = -99
   width = 60
   splash_rotation = -20
   action = deep_customization_element:title_screen_splash
   actionid = 1fac19ad-13d2-4cfd-8f48-d5b537614e231699232461194
-  y = 0
+  y = 76
   height = 30
+}
+
+customization {
+  path = kubejs/assets/mainmenu/logo-512x512.png
+  orientation = mid-centered
+  x = -160
+  width = 100
+  action = addtexture
+  actionid = 9bb15e9d-fedb-4e15-a37f-7586c0dcb4921699691344434
+  y = -51
+  height = 100
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  x = 47
+  width = 20
+  action = addbutton
+  actionid = 9f789963-f2dc-46f7-a57b-9c4de545a6ff1699691707372
+  y = 18
+  backgroundhovered = kubejs/assets/mainmenu/curse_logo_hovered.png
+  label = 
+  backgroundnormal = kubejs/assets/mainmenu/curse_logo.png
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  x = 125
+  width = 20
+  action = addbutton
+  actionid = 57a283ec-1941-4101-b14b-f2188e8660671699691708296
+  y = 18
+  backgroundhovered = kubejs/assets/mainmenu/ds_logo_hovered.png
+  label = 
+  backgroundnormal = kubejs/assets/mainmenu/ds_logo.png
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  x = 100
+  width = 20
+  action = addbutton
+  actionid = 91b4ae84-eed0-47a3-8fe9-6957c02d2c621699691709167
+  y = 18
+  backgroundhovered = kubejs/assets/mainmenu/git_logo_hovered.png
+  label = 
+  backgroundnormal = kubejs/assets/mainmenu/git_logo.png
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  x = 72
+  width = 20
+  action = addbutton
+  actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
+  y = 18
+  backgroundhovered = kubejs/assets/mainmenu/mdr_logo_hovered.png
+  label = 
+  backgroundnormal = kubejs/assets/mainmenu/mdr_logo.png
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -55
+  action = movebutton
+  y = -51
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/mainmenu/button_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button.png
 }
 
