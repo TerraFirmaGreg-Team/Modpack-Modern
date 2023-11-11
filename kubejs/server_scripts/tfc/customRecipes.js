@@ -18,7 +18,7 @@ const customHeating = (event,input1,[result,amount],temperature) => {
     event.custom({
         type: "tfc:heating",
         ingredient: {
-          item: input1
+          tag: input1
         },
         result_fluid: {
           fluid: result,
@@ -28,14 +28,15 @@ const customHeating = (event,input1,[result,amount],temperature) => {
       })
 }
 
-const customAnvil = (event,input1,result,tier,[firstRule,secondRule,thirdRule]) => {
+const customAnvil = (event,input1,[result,count],tier,[firstRule,secondRule,thirdRule]) => {
     event.custom({
         type: "tfc:anvil",
         input: {
           tag: input1
         },
         result: {
-          item: result
+          item: result,
+          count: count 
         },
         tier: tier,
         rules: [
