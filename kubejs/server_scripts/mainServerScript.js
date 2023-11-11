@@ -14,6 +14,7 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.recipes(event => {
     registerMinecraftRecipes(event)
+    newItemsCreate(event)
 })
 
 LootJS.modifiers((event) => {
