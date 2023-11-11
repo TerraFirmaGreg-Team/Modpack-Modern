@@ -5,11 +5,10 @@ ServerEvents.highPriorityData(event => {
 })
 
 ServerEvents.tags('block', event => {
-    // register blocktags here
+    
 })
 
 ServerEvents.tags('item', event => {
-    // register itemtags here
     registerCreateTags(event)
     registerTFCTags(event)
 })
@@ -18,6 +17,7 @@ ServerEvents.recipes(event => {
     registerCreateRecipes(event)
     registerExtendedCraftingRecipes(event)
     registerMinecraftRecipes(event)
+    registerTFCRecipes(event)
 })
 
 LootJS.modifiers((event) => {
