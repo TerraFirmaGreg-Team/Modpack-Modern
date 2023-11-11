@@ -1,6 +1,9 @@
 {
 	"basics": {
-		"favorites": [],
+		"favorites": [
+			"{type:\"heracles:heracles\"}",
+			"{type:\"argonauts:party_chat\"}"
+		],
 		"hiddenFavorites": [],
 		"displayHistory": [],
 		// Declares whether cheating mode is on.

@@ -5,7 +5,7 @@ differentiateByServerAddress:true
 caveMapsAllowed:true
 debug:false
 lighting:true
-colours:0
+colours:1
 loadChunks:true
 updateChunks:true
 terrainSlopes:2
