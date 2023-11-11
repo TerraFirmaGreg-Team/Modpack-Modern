@@ -1,3 +1,5 @@
+// priority: 0
+
 const customWelding = (event, [input1, input2], result, tier) => {
     event.custom({
         type: "tfc:welding",

@@ -10,14 +10,14 @@ ServerEvents.tags('block', event => {
 
 ServerEvents.tags('item', event => {
     // register itemtags here
-    event.add('forge:ingots/galvanized_iron', 'kubejs:galvanized_iron');
+    registerCreateTags(event)
+    registerTFCTags(event)
 })
 
 ServerEvents.recipes(event => {
-    newCreateRecipes(event)
-    removeReworkedRecipes(event)
+    registerCreateRecipes(event)
+    registerExtendedCraftingRecipes(event)
     registerMinecraftRecipes(event)
-    newItemsCreate(event)
 })
 
 LootJS.modifiers((event) => {
