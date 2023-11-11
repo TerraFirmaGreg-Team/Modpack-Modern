@@ -9,11 +9,12 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.tags('item', event => {
-    // register itemtags here
+    registerTFCTags(event)
 })
 
 ServerEvents.recipes(event => {
     registerMinecraftRecipes(event)
+    registerTFCRecipes(event)
 })
 
 LootJS.modifiers((event) => {
