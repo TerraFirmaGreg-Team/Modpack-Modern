@@ -19,5 +19,9 @@ const minecraftItemsToHide = [
     "minecraft:deepslate_diamond_ore",
     "minecraft:nether_gold_ore",
     "minecraft:nether_quartz_ore",
-    "minecraft:ancient_debris"
+    "minecraft:ancient_debris",
+    "minecraft:netherite_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_boots",
 ]
