@@ -19,12 +19,25 @@ const minecraftItemsToHide = [
     "minecraft:deepslate_diamond_ore",
     "minecraft:nether_gold_ore",
     "minecraft:nether_quartz_ore",
-    "minecraft:ancient_debris"
+    "minecraft:ancient_debris",
+    "minecraft:netherite_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_boots",
 ]
 
 const createItemsToHide = [
     "create:zinc_ore",
-    "create:deepslate_zinc_ore"
+    "create:deepslate_zinc_ore",
+    "create:crushed_raw_silver",
+    "create:crushed_raw_tin",
+    "create:crushed_raw_nickel",
+    "create:copper_sheet",
+    "create:brass_sheet",
+    "create:iron_sheet",
+    "create:golden_sheet",
+    "create:zinc_ingot",
+    "create:brass_ingot",
 ]
 
 const stoneTypesToHide = [
