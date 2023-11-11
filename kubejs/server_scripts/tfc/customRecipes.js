@@ -1,4 +1,4 @@
-const customWelding = (event,[input1,input2],result,tier) => {
+const customWelding = (event, [input1, input2], result, tier) => {
     event.custom({
         type: "tfc:welding",
         first_input: {
@@ -14,35 +14,48 @@ const customWelding = (event,[input1,input2],result,tier) => {
     })
 }
 
-const customHeating = (event,input1,[result,amount],temperature) => {
+const customHeating = (event, input1, [result, amount], temperature) => {
     event.custom({
         type: "tfc:heating",
         ingredient: {
-          tag: input1
+            tag: input1
         },
         result_fluid: {
-          fluid: result,
-          amount: amount
+            fluid: result,
+            amount: amount
         },
         temperature: temperature
-      })
+    })
 }
 
-const customAnvil = (event,input1,[result,count],tier,[firstRule,secondRule,thirdRule]) => {
+const customAnvil = (event, input1, [result, count], tier, [firstRule, secondRule, thirdRule]) => {
     event.custom({
         type: "tfc:anvil",
         input: {
-          tag: input1
+            tag: input1
         },
         result: {
-          item: result,
-          count: count 
+            item: result,
+            count: count
         },
         tier: tier,
         rules: [
-          firstRule,
-          secondRule,
-          thirdRule
+            firstRule,
+            secondRule,
+            thirdRule
         ]
-      })
+    })
+}
+
+// Кастомная температура плавления 
+
+const customHeatLevel = (event, input1, heat_capacity, forging_temperature, welding_temperature) => {
+    event.custom({
+        ingredient: {
+            item: input1
+        },
+        heat_capacity: heat_capacity,
+        forging_temperature: forging_temperature,
+        welding_temperature: welding_temperature
+    })
 }

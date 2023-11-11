@@ -13,4 +13,8 @@ const hideTFCStuff = (event) => {
             })
         })
     })
+
+    tfcItemsToHide.forEach(item => {
+        event.hide(item)
+    })
 }

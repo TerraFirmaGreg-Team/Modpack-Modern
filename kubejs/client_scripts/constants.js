@@ -1,5 +1,6 @@
 // priority: 200
 
+<<<<<<< HEAD
 const minecraftItemsToHide = [
     "minecraft:coal_ore",
     "minecraft:deepslate_coal_ore",
@@ -105,3 +106,6 @@ const tfcDepositeMaterials = [
     "native_gold",
     "native_silver"
 ]
+=======
+// some constants
+>>>>>>> origin/main
