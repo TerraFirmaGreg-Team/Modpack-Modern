@@ -19,5 +19,8 @@ const removeAllTagsItems = [
     'tfc:gem/opal', 
     'tfc:gem/ruby', 
     'tfc:gem/sapphire', 
-    'tfc:gem/topaz'
+    'tfc:gem/topaz',
+
+    'tfc:ore/bituminous_coal',
+    'tfc:ore/lignite'
 ]

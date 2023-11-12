@@ -61,3 +61,11 @@ const customHeatLevel = (event, input1, heat_capacity, forging_temperature, weld
         welding_temperature: welding_temperature
     })
 }
+
+const addQuernRecipe = (event, input, output) => {
+    event.custom({
+        type: "tfc:quern",
+        ingredient: input,
+        result: output
+    })
+}

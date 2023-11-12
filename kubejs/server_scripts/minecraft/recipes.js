@@ -22,4 +22,6 @@ const registerMinecraftRecipes = (event) => {
 
     event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
+
+    event.remove({id: 'minecraft:fire_charge'})
 }

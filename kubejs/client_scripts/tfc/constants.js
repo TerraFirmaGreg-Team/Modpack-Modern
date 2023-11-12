@@ -324,7 +324,18 @@ const tfcItemsToHide = [
     'tfc:ore/opal', 
     'tfc:ore/ruby', 
     'tfc:ore/sapphire', 
-    'tfc:ore/topaz'
+    'tfc:ore/topaz',
+
+    'tfc:ore/graphite', 
+    'tfc:ore/sulfur', 
+    'tfc:ore/cinnabar', 
+    'tfc:ore/cryolite', 
+    'tfc:ore/saltpeter', 
+    'tfc:ore/borax', 
+    'tfc:ore/sylvite',
+    'tfc:ore/bituminous_coal',
+    'tfc:ore/lignite',
+    'tfc:ore/halite'
 ]
 
 const tfcSimpleMaterials = [

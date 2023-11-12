@@ -7,6 +7,10 @@ const hideGTStuff = (event) => {
             event.hide(`#forge:ores/${stoneTypeName}/${material}`)
         })
     })
+
+    gtItemsToHide.forEach(item => {
+        event.hide(item)
+    })
 }
 
 const groupGTStuff = (event) => {
