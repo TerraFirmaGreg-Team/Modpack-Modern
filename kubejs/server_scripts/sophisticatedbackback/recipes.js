@@ -22,8 +22,8 @@ const registersophisticatedbackpacksRecipes = (event) => {
     'BCB', // arg 2: the shape (array of strings)
     'ABA'  
   ], {
-    A: 'gtceu:wrought_iron_double_plate', 
-    B: 'gtceu:wrought_iron_long_rod',  //arg 3: the mapping object
+    A: '#forge:plates/double/wrought_iron', 
+    B: '#forge:rods/long/wrought_iron',  //arg 3: the mapping object
     C: 'sophisticatedbackpacks:backpack'   
   });
 
@@ -33,11 +33,11 @@ const registersophisticatedbackpacksRecipes = (event) => {
     'CDC',
     'AEA'
   ], {
-    A: 'gtceu:rose_gold_double_plate',
-    B: 'gtceu:sterling_silver_long_rod',
-    C: 'gtceu:gold_long_rod',
+    A: '#forge:plates/double/rose_gold',
+    B: '#forge:rods/long/sterling_silver',
+    C: '#forge:rods/long/gold',
     D: 'sophisticatedbackpacks:iron_backpack',
-    E: 'gtceu:steel_double_plate'
+    E: '#forge:plates/double/steel'
   });
 
 
@@ -47,8 +47,8 @@ const registersophisticatedbackpacksRecipes = (event) => {
         'BCB',
         'ABA'
     ], {
-        A: 'gtceu:black_steel_double_plate',
-        B: 'gtceu:black_steel_long_rod',
+        A: '#forge:plates/double/black_steel',
+        B: '#forge:rods/long/black_steel',
         C: 'sophisticatedbackpacks:gold_backpack'
     });
     
@@ -58,10 +58,10 @@ const registersophisticatedbackpacksRecipes = (event) => {
         'DED',
         'CBA'
         ], {
-        A: 'gtceu:blue_steel_double_plate',
-        B: 'gtceu:red_steel_long_rod',
-        C: 'gtceu:red_steel_double_plate',
-        D: 'gtceu:tungsten_steel_long_rod',
+        A: '#forge:plates/double/blue_steel',
+        B: '#forge:rods/long/red_steel',
+        C: '#forge:plates/double/red_steel',
+        D: '#forge:rods/long/blue_steel',
         E: 'sophisticatedbackpacks:diamond_backpack'
     });
 
@@ -72,8 +72,8 @@ const registersophisticatedbackpacksRecipes = (event) => {
         'ADA'
         ], {
         A: '#forge:string',
-        B: 'gtceu:wrought_iron_long_rod',
+        B: '#forge:rods/long/wrought_iron',
         C: 'minecraft:leather',
-        D: 'gtceu:steel_plate'
+        D: '#forge:plates/steel'
     });
 }
