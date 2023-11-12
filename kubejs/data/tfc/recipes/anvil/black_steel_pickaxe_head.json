@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:ingots/black_steel"
+  },
+  "result": {
+    "item": "gtceu:black_steel_pickaxe_head"
+  },
+  "tier": 5,
+  "rules": [
+    "punch_last",
+    "bend_not_last",
+    "draw_not_last"
+  ],
+  "apply_forging_bonus": true
+}

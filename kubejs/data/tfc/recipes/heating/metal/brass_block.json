@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:storage_blocks/brass"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:brass",
+    "amount": 144
+  },
+  "temperature": 930
+}

@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:rods/rose_gold"
+  },
+  "second_input": {
+    "tag": "forge:rods/rose_gold"
+  },
+  "tier": 1,
+  "result": {
+    "item": "gtceu:rose_gold_long_rod"
+  }
+}

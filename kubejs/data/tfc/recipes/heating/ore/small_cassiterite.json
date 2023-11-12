@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:ore/small_cassiterite"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:tin",
+    "amount": 14
+  },
+  "temperature": 230
+}

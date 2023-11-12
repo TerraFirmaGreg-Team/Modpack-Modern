@@ -1,0 +1,12 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/fishing_rod/steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:steel",
+    "amount": 288
+  },
+  "temperature": 1540,
+  "use_durability": true
+}

@@ -1,0 +1,12 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:jacks"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:brass",
+    "amount": 144
+  },
+  "temperature": 930
+}

@@ -1,0 +1,101 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 120,
+    "density": 0.25,
+    "min_y": 60,
+    "max_y": 210,
+    "size": 50,
+    "random_name": "surface_copper",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_rhyolite_chalcopyrite_ore",
+            "weight": 70
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_zeolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_rhyolite_cassiterite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_basalt_chalcopyrite_ore",
+            "weight": 70
+          },
+          {
+            "block": "gtceu:tfc_basalt_zeolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_basalt_cassiterite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_andesite_chalcopyrite_ore",
+            "weight": 70
+          },
+          {
+            "block": "gtceu:tfc_andesite_zeolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_andesite_cassiterite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_dacite_chalcopyrite_ore",
+            "weight": 70
+          },
+          {
+            "block": "gtceu:tfc_dacite_zeolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_dacite_cassiterite_ore",
+            "weight": 5
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_native_copper",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}

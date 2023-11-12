@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    {
+      "tag": "forge:poor_raw_materials/gold"
+    },
+    {
+      "tag": "forge:raw_materials/gold"
+    },
+    {
+      "tag": "forge:rich_raw_materials/gold"
+    }
+  ],
+  "heat_capacity": 0.667,
+  "forging_temperature": 636,
+  "welding_temperature": 848
+}

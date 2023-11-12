@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/unfinished_boots/black_bronze"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:black_bronze",
+    "amount": 288
+  },
+  "temperature": 1070
+}

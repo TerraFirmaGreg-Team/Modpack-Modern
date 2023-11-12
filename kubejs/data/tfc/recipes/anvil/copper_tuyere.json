@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:plates/double/copper"
+  },
+  "result": {
+    "item": "tfc:metal/tuyere/copper"
+  },
+  "tier": 1,
+  "rules": [
+    "bend_last",
+    "bend_second_last"
+  ]
+}

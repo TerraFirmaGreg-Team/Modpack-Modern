@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:raw_materials/tetrahedrite"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:copper",
+    "amount": 30
+  },
+  "temperature": 270
+}

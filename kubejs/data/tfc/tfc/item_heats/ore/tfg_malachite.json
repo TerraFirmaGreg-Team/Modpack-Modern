@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    {
+      "tag": "forge:poor_raw_materials/malachite"
+    },
+    {
+      "tag": "forge:raw_materials/malachite"
+    },
+    {
+      "tag": "forge:rich_raw_materials/malachite"
+    }
+  ],
+  "heat_capacity": 1.143,
+  "forging_temperature": 648,
+  "welding_temperature": 864
+}

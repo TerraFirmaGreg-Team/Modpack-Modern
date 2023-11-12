@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:wrought_iron_shovel_head"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:iron",
+    "amount": 144
+  },
+  "temperature": 1535
+}

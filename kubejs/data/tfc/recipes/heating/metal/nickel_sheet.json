@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/nickel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:nickel",
+    "amount": 288
+  },
+  "temperature": 1453
+}

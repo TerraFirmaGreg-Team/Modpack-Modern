@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:blue_steel_sword_head"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:blue_steel",
+    "amount": 288
+  },
+  "temperature": 1540
+}

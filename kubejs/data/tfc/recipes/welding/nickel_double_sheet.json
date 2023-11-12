@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:plates/nickel"
+  },
+  "second_input": {
+    "tag": "forge:plates/nickel"
+  },
+  "tier": 0,
+  "result": {
+    "item": "gtceu:nickel_double_plate"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    {
+      "tag": "forge:poor_raw_materials/copper"
+    },
+    {
+      "tag": "forge:raw_materials/copper"
+    },
+    {
+      "tag": "forge:rich_raw_materials/copper"
+    }
+  ],
+  "heat_capacity": 1.143,
+  "forging_temperature": 648,
+  "welding_temperature": 864
+}

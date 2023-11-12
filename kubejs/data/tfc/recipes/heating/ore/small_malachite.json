@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:ore/small_malachite"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:copper",
+    "amount": 14
+  },
+  "temperature": 1080
+}

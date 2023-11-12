@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    {
+      "tag": "forge:poor_raw_materials/nickel"
+    },
+    {
+      "tag": "forge:raw_materials/nickel"
+    },
+    {
+      "tag": "forge:rich_raw_materials/nickel"
+    }
+  ],
+  "heat_capacity": 0.833,
+  "forging_temperature": 872,
+  "welding_temperature": 1162
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/double_ingot/tin"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:tin",
+    "amount": 288
+  },
+  "temperature": 230
+}

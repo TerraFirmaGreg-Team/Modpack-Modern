@@ -1,0 +1,12 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:bismuth_bronze_sword"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bismuth_bronze",
+    "amount": 288
+  },
+  "temperature": 985,
+  "use_durability": true
+}

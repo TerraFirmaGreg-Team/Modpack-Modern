@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/fish_hook/red_steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:red_steel",
+    "amount": 288
+  },
+  "temperature": 1540
+}

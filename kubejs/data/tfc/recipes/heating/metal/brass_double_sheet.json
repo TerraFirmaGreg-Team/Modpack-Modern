@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/double/brass"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:brass",
+    "amount": 576
+  },
+  "temperature": 930
+}

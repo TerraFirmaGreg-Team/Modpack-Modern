@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:raw_materials/bismuth"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bismuth",
+    "amount": 36
+  },
+  "temperature": 270
+}

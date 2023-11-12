@@ -1,0 +1,12 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/fishing_rod/bronze"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bronze",
+    "amount": 288
+  },
+  "temperature": 950,
+  "use_durability": true
+}

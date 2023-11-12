@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:knife_heads/bismuth_bronze"
+  },
+  "second_input": {
+    "tag": "forge:knife_heads/bismuth_bronze"
+  },
+  "tier": 1,
+  "result": {
+    "item": "tfc:metal/shears/bismuth_bronze"
+  },
+  "combine_forging_bonus": true
+}

@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:plates/tin"
+  },
+  "second_input": {
+    "tag": "forge:plates/tin"
+  },
+  "tier": 0,
+  "result": {
+    "item": "gtceu:tin_double_plate"
+  }
+}

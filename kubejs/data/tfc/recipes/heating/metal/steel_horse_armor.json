@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/horse_armor/steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:steel",
+    "amount": 1728
+  },
+  "temperature": 1540
+}

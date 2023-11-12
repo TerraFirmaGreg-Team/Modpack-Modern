@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:copper_hoe_head"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:copper",
+    "amount": 144
+  },
+  "temperature": 1080
+}

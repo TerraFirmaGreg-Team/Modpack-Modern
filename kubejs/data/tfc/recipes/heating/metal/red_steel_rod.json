@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:rods/red_steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:red_steel",
+    "amount": 72
+  },
+  "temperature": 1540
+}

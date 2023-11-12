@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    {
+      "tag": "forge:poor_raw_materials/tetrahedrite"
+    },
+    {
+      "tag": "forge:raw_materials/tetrahedrite"
+    },
+    {
+      "tag": "forge:rich_raw_materials/tetrahedrite"
+    }
+  ],
+  "heat_capacity": 1.143,
+  "forging_temperature": 648,
+  "welding_temperature": 864
+}

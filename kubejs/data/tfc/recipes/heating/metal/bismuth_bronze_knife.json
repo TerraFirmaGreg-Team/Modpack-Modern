@@ -1,0 +1,12 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:bismuth_bronze_knife"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bismuth_bronze",
+    "amount": 144
+  },
+  "temperature": 985,
+  "use_durability": true
+}

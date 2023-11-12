@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:rods/silver"
+  },
+  "second_input": {
+    "tag": "forge:rods/silver"
+  },
+  "tier": 1,
+  "result": {
+    "item": "gtceu:silver_long_rod"
+  }
+}
