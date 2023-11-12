@@ -211,15 +211,15 @@ customization {
 }
 
 customization {
-  orientation = top-right
+  orientation = mid-centered
   splash_color = #ffff00
   hidden = false
-  x = -99
+  x = 221
   width = 60
   splash_rotation = -20
   action = deep_customization_element:title_screen_splash
   actionid = 1fac19ad-13d2-4cfd-8f48-d5b537614e231699232461194
-  y = 76
+  y = -89
   height = 30
 }
 

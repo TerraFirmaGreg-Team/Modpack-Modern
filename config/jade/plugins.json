@@ -136,6 +136,9 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "corpse": {
+    "corpse": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,

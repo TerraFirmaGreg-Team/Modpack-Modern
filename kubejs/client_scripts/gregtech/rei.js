@@ -14,6 +14,7 @@ const hideGTStuff = (event) => {
 }
 
 const groupGTStuff = (event) => {
+    /*
     event.groupItemsByTag('tfg:rei_groups/dusts/tiny', 'Tiny Dusts', 'forge:dusts/tiny')
     event.groupItemsByTag('tfg:rei_groups/dusts/small', 'Small Dusts', 'forge:dusts/small')
     event.groupItemsByTag('tfg:rei_groups/dusts', 'Dusts', 'forge:dusts')
@@ -116,5 +117,5 @@ const groupGTStuff = (event) => {
     event.groupItems('tfg:rei_groups/small_restrictive_item_pipes', 'Small Resctrictive Item Pipes', [/gtceu:.*_small_restrictive_item_pipe/])
     event.groupItems('tfg:rei_groups/normal_restrictive_item_pipes', 'Normal Resctrictive Item Pipes', [/gtceu:.*_normal_restrictive_item_pipe/])
     event.groupItems('tfg:rei_groups/large_restrictive_item_pipes', 'Large Resctrictive Item Pipes', [/gtceu:.*_large_restrictive_item_pipe/])
-    event.groupItems('tfg:rei_groups/huge_restrictive_item_pipes', 'Huge Resctrictive Item Pipes', [/gtceu:.*_huge_restrictive_item_pipe/])
+    event.groupItems('tfg:rei_groups/huge_restrictive_item_pipes', 'Huge Resctrictive Item Pipes', [/gtceu:.*_huge_restrictive_item_pipe/])*/
 }

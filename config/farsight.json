@@ -1,0 +1,6 @@
+{
+  "maxchunkdist": {
+    "desc:": "The distance at which chunks are kept in memory, regardless of whether the server unloads them. default = 32, maximum = 512",
+    "maxchunkdist": 32
+  }
+}

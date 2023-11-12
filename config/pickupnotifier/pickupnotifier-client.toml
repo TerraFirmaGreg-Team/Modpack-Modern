@@ -1,0 +1,68 @@
+
+[display]
+	#Should the picked up amount be shown when it's just a single item.
+	display_single_count = true
+	#Add the total amount of an item in your inventory to the entry.
+	inventory_count = false
+	#Mode for drawing a background behind entries for better visibility. 'CHAT' is similar to the chat background, 'TOOLTIP' uses the tooltip background rendering instead.
+	#Allowed Values: NONE, CHAT, TOOLTIP
+	entry_background = "NONE"
+	#Add the name of the item to the entry.
+	display_item_name = true
+	#Where and if to display the amount of items picked up. 'SPRITE' will render the amount on the item sprite like in inventories, 'TEXT' will add a dedicated text including the amount to the item name display.
+	#Allowed Values: OFF, SPRITE, TEXT, BOTH
+	display_amount = "TEXT"
+	#Show a small sprite next to the name of each entry showing its contents.
+	draw_sprites = true
+	#Color of the entry name text.
+	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+	default_color = "WHITE"
+	#Ignore rarity of items and always use color specified in "Text Color" instead.
+	ignore_rarity = false
+	#Screen corner for entry list to be drawn in.
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	screen_corner = "BOTTOM_RIGHT"
+	#Offset on x-axis from screen border.
+	#Range: > 0
+	offset_x = 8
+	#Offset on y-axis from screen border.
+	#Range: > 0
+	offset_y = 4
+	#Percentage of relative screen height entries are allowed to fill at max.
+	#Range: 0.0 ~ 1.0
+	max_height = 0.5
+	#Scale of entries. A lower scale will make room for more rows to show. Works together with "GUI Scale" option in "Video Settings".
+	#Range: 1 ~ 24
+	scale = 4
+
+[general]
+	#Prevent items from being added to the pick-up log when in creative mode.
+	disable_in_creative = false
+	#Show the value of experience points collected instead of the amount of individual orbs.
+	experience_value = true
+	#Force-run the mod on the client-side only.
+	#Only enable this when there are problems, e. g. the same pick-up being logged multiple times. Partial item stack pick-ups (when the inventory is full) won't show, and backpack compat won't work.
+	#When playing on a server without this mod this option will be used automatically.
+	force_client_only = false
+	#Show item entities the player has collected in the pick-up notifications.
+	include_items = true
+	#Show experience orbs the player has collected in the pick-up notifications.
+	include_experience = true
+	#Show shot arrows the player has collected in the pick-up notifications.
+	include_arrows = true
+
+[behavior]
+	#Combine entries of the same type instead of showing each one individually.
+	#Allowed Values: ALWAYS, NEVER, EXCLUDE_NAMED
+	combine_entries = "EXCLUDE_NAMED"
+	#Amount of ticks each entry will be shown for. Set to 0 to only remove entries when space for new ones is needed.
+	#Range: > 0
+	display_time = 80
+	#Make outdated entries slowly move out of the screen instead of disappearing in place.
+	move_out_of_screen = true
+	#Amount of ticks it takes for an entry to move out of the screen. Value cannot be larger than "Display Time".
+	#Range: > 0
+	move_time = 20
+	#Make outdated entry names slowly fade away instead of simply vanishing.
+	fade_away = true
+
