@@ -66,7 +66,7 @@ const groupGTStuff = (event) => {
 
     event.groupItemsByTag('tfg:rei_groups/drill_heads', 'Drill Heads', 'forge:drill_heads')
     event.groupItemsByTag('tfg:rei_groups/chainsaw_heads', 'Chainsaw Heads', 'forge:chainsaw_heads')
-    event.groupItemsByTag('tfg:rei_groups/buzzsaw_heads', 'Buzz Saw Blades', 'forge:buzzsaw_heads')
+    event.groupItemsByTag('tfg:rei_groups/buzz_saw_heads', 'Buzz Saw Blades', 'forge:buzz_saw_heads')
 
     event.groupItemsByTag('tfg:rei_groups/turbine_blades', 'Turbine Blades', 'forge:turbine_blades')
     event.groupItemsByTag('tfg:rei_groups/wrench_tips', 'Wrench Tips', 'forge:wrench_tips')
