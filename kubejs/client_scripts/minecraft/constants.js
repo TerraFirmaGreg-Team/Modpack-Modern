@@ -149,8 +149,12 @@ const minecraftItemsToHide = [
     'minecraft:prismarine_brick_slab', 
     'minecraft:dark_prismarine_slab', 
     'minecraft:smooth_stone',*/
-
+    
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_ingot',
+    'minecraft:netherite_block',
     'minecraft:smithing_table',
+    'minecraft:netherite_block',
     'minecraft:coal_ore',
     'minecraft:deepslate_coal_ore',
     'minecraft:iron_ore',

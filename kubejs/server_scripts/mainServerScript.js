@@ -14,6 +14,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
+    registerSBRecipes(event)
     registerCreateRecipes(event)
     registerExtendedCraftingRecipes(event)
     registerMinecraftRecipes(event)
