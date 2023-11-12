@@ -109,6 +109,23 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-centered
+  x = -55
+  action = movebutton
+  y = -51
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/mainmenu/button_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button.png
+}
+
+customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
   x = -55
@@ -219,78 +236,65 @@ customization {
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
+  buttonaction = openlink;https://www.curseforge.com/minecraft/modpacks/terrafirmagreg%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/mainmenu/curse_logo_hovered.png
+  label = 
+  loopbackgroundanimations = true
   x = 47
   width = 20
   action = addbutton
   actionid = 9f789963-f2dc-46f7-a57b-9c4de545a6ff1699691707372
   y = 18
-  backgroundhovered = kubejs/assets/mainmenu/curse_logo_hovered.png
-  label = 
   backgroundnormal = kubejs/assets/mainmenu/curse_logo.png
   height = 20
 }
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/AEaCzCTUwQ%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/mainmenu/ds_logo_hovered.png
+  label = 
+  loopbackgroundanimations = true
   x = 125
   width = 20
   action = addbutton
   actionid = 57a283ec-1941-4101-b14b-f2188e8660671699691708296
   y = 18
-  backgroundhovered = kubejs/assets/mainmenu/ds_logo_hovered.png
-  label = 
   backgroundnormal = kubejs/assets/mainmenu/ds_logo.png
   height = 20
 }
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
+  buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/mainmenu/git_logo_hovered.png
+  label = 
+  loopbackgroundanimations = true
   x = 100
   width = 20
   action = addbutton
   actionid = 91b4ae84-eed0-47a3-8fe9-6957c02d2c621699691709167
   y = 18
-  backgroundhovered = kubejs/assets/mainmenu/git_logo_hovered.png
-  label = 
   backgroundnormal = kubejs/assets/mainmenu/git_logo.png
   height = 20
 }
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
+  buttonaction = openlink;https://modrinth.com/modpack/terrafirmagreg%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/mainmenu/mdr_logo_hovered.png
+  label = 
+  loopbackgroundanimations = true
   x = 72
   width = 20
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
   y = 18
-  backgroundhovered = kubejs/assets/mainmenu/mdr_logo_hovered.png
-  label = 
   backgroundnormal = kubejs/assets/mainmenu/mdr_logo.png
   height = 20
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  orientation = mid-centered
-  x = -55
-  action = movebutton
-  y = -51
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = kubejs/assets/mainmenu/button_hovered.png
-  backgroundnormal = kubejs/assets/mainmenu/button.png
 }
 
