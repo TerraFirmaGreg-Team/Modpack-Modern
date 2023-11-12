@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:rich_raw_materials/copper"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:copper",
+    "amount": 48
+  },
+  "temperature": 270
+}

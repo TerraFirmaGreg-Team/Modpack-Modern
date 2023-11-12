@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:casting",
+  "mold": {
+    "item": "tfc:ceramic/scythe_blade_mold"
+  },
+  "fluid": {
+    "ingredient": "gtceu:black_bronze",
+    "amount": 144
+  },
+  "result": {
+    "item": "gtceu:black_bronze_scythe_head"
+  },
+  "break_chance": 1
+}

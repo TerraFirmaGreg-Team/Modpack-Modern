@@ -1,0 +1,105 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 150,
+    "density": 0.3,
+    "min_y": -32,
+    "max_y": 100,
+    "size": 40,
+    "random_name": "normal_certus_quartz",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_shale_quartzite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:tfc_shale_certus_quartz_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_shale_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_shale_nether_quartz_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_quartzite_quartzite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:tfc_quartzite_certus_quartz_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_quartzite_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_quartzite_nether_quartz_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_schist_quartzite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:tfc_schist_certus_quartz_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_schist_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_schist_nether_quartz_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_gneiss_quartzite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:tfc_gneiss_certus_quartz_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:tfc_gneiss_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:tfc_gneiss_nether_quartz_ore",
+            "weight": 10
+          }
+        ]
+      }
+    ]
+  }
+}

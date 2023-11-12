@@ -1,0 +1,12 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/mace/bismuth_bronze"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bismuth_bronze",
+    "amount": 288
+  },
+  "temperature": 985,
+  "use_durability": true
+}

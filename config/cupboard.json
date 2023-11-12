@@ -1,0 +1,14 @@
+{
+  "showCommandExecutionErrors": {
+    "desc:": "Whether to display errors during command execution: default:true",
+    "showCommandExecutionErrors": true
+  },
+  "debugChunkloadAttempts": {
+    "desc:": "Enables debug logging of chunks being forceloaded on serverthread by directly accessing an unloaded chunk, which stalls the server until the chunk finishes loading: default:false",
+    "debugChunkloadAttempts": false
+  },
+  "logOffthreadEntityAdd": {
+    "desc:": "Entities should only be added on the server thread itself, cupboard fixes the crashes caused by mods violating that, this option enables the logging of those: default:true",
+    "logOffthreadEntityAdd": true
+  }
+}

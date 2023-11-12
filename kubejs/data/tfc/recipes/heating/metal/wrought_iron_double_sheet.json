@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/double/wrought_iron"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:iron",
+    "amount": 576
+  },
+  "temperature": 1535
+}

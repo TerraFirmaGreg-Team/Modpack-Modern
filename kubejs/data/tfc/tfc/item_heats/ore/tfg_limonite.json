@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "ingredient": [
+    {
+      "tag": "forge:poor_raw_materials/yellow_limonite"
+    },
+    {
+      "tag": "forge:raw_materials/yellow_limonite"
+    },
+    {
+      "tag": "forge:rich_raw_materials/yellow_limonite"
+    }
+  ],
+  "heat_capacity": 1.143,
+  "forging_temperature": 921,
+  "welding_temperature": 1228
+}

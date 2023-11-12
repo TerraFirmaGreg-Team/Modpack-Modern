@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:bronze_scythe_head"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bronze",
+    "amount": 144
+  },
+  "temperature": 950
+}

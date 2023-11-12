@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:rods/tin"
+  },
+  "second_input": {
+    "tag": "forge:rods/tin"
+  },
+  "tier": 1,
+  "result": {
+    "item": "gtceu:tin_long_rod"
+  }
+}

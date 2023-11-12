@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:casting",
+  "mold": {
+    "item": "tfc:ceramic/sword_blade_mold"
+  },
+  "fluid": {
+    "ingredient": "gtceu:bronze",
+    "amount": 288
+  },
+  "result": {
+    "item": "gtceu:bronze_sword_head"
+  },
+  "break_chance": 1
+}

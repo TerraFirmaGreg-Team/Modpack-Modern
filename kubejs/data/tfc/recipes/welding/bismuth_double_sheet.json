@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:plates/bismuth"
+  },
+  "second_input": {
+    "tag": "forge:plates/bismuth"
+  },
+  "tier": 0,
+  "result": {
+    "item": "gtceu:bismuth_double_plate"
+  }
+}

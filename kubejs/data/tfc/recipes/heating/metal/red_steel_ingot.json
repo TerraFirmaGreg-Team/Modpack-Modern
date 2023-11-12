@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:ingots/red_steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:red_steel",
+    "amount": 144
+  },
+  "temperature": 1540
+}

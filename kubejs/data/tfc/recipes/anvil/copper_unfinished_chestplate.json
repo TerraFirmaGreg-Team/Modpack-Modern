@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:plates/double/copper"
+  },
+  "result": {
+    "item": "tfc:metal/unfinished_chestplate/copper"
+  },
+  "tier": 1,
+  "rules": [
+    "hit_last",
+    "hit_second_last",
+    "upset_third_last"
+  ]
+}

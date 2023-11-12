@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/double/blue_steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:blue_steel",
+    "amount": 576
+  },
+  "temperature": 1540
+}

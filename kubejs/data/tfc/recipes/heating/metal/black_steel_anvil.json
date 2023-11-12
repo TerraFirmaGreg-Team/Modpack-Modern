@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:metal/anvil/black_steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:black_steel",
+    "amount": 2016
+  },
+  "temperature": 1485
+}

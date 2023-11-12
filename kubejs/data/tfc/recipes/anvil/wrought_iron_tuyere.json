@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:plates/double/wrought_iron"
+  },
+  "result": {
+    "item": "tfc:metal/tuyere/wrought_iron"
+  },
+  "tier": 3,
+  "rules": [
+    "bend_last",
+    "bend_second_last"
+  ]
+}

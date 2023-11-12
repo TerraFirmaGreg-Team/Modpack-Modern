@@ -1,0 +1,60 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 160,
+    "density": 0.3,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 48,
+    "random_name": "normal_basaltic_sands",
+    "height": 9,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_granite_basaltic_mineral_sand_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:tfc_granite_granitic_mineral_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_granite_fullers_earth_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_granite_gypsum_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:tfc_basalt_basaltic_mineral_sand_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:tfc_basalt_granitic_mineral_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_basalt_fullers_earth_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:tfc_basalt_gypsum_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

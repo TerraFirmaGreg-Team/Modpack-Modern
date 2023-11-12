@@ -1,0 +1,16 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:plates/double/blue_steel"
+  },
+  "result": {
+    "item": "tfc:metal/unfinished_helmet/blue_steel"
+  },
+  "tier": 6,
+  "rules": [
+    "hit_last",
+    "bend_second_last",
+    "bend_third_last"
+  ]
+}

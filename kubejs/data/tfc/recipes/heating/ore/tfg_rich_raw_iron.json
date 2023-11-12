@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:rich_raw_materials/iron"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:iron",
+    "amount": 48
+  },
+  "temperature": 270
+}

@@ -1,0 +1,15 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:casting",
+  "mold": {
+    "item": "tfc:ceramic/mace_head_mold"
+  },
+  "fluid": {
+    "ingredient": "gtceu:bismuth_bronze",
+    "amount": 288
+  },
+  "result": {
+    "item": "tfc:metal/mace_head/bismuth_bronze"
+  },
+  "break_chance": 1
+}

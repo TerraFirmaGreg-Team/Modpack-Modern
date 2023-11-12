@@ -1,0 +1,25 @@
+{
+  "type": "tfc:advanced_shaped_crafting",
+  "pattern": [
+    "X",
+    "Y"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:saw_heads/invar"
+    },
+    "Y": {
+      "tag": "tfc:can_be_lit_on_torch"
+    }
+  },
+  "result": {
+    "stack": {
+      "item": "gtceu:invar_saw"
+    },
+    "modifiers": [
+      "tfc:copy_forging_bonus"
+    ]
+  },
+  "input_row": 0,
+  "input_column": 0
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/black_steel"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:black_steel",
+    "amount": 288
+  },
+  "temperature": 1485
+}

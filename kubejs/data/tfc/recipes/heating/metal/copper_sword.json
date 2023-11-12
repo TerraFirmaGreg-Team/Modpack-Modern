@@ -1,0 +1,12 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "gtceu:copper_sword"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:copper",
+    "amount": 288
+  },
+  "temperature": 1080,
+  "use_durability": true
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/bronze"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:bronze",
+    "amount": 288
+  },
+  "temperature": 950
+}

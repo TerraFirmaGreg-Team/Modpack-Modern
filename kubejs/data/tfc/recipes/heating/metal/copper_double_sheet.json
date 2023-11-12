@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:plates/double/copper"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:copper",
+    "amount": 576
+  },
+  "temperature": 1080
+}

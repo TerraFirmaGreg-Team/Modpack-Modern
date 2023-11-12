@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:ore/rich_hematite"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:iron",
+    "amount": 48
+  },
+  "temperature": 1535
+}

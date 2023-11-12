@@ -1,0 +1,17 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:ingots/black_steel"
+  },
+  "result": {
+    "item": "gtceu:black_steel_axe_head"
+  },
+  "tier": 5,
+  "rules": [
+    "punch_last",
+    "hit_second_last",
+    "upset_third_last"
+  ],
+  "apply_forging_bonus": true
+}

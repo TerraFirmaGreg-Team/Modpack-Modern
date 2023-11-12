@@ -1,0 +1,14 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:welding",
+  "first_input": {
+    "tag": "forge:plates/steel"
+  },
+  "second_input": {
+    "tag": "forge:plates/steel"
+  },
+  "tier": 3,
+  "result": {
+    "item": "gtceu:steel_double_plate"
+  }
+}

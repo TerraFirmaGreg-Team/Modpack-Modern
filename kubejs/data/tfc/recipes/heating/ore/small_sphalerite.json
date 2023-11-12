@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "tfc:ore/small_sphalerite"
+  },
+  "result_fluid": {
+    "fluid": "gtceu:zinc",
+    "amount": 14
+  },
+  "temperature": 420
+}
