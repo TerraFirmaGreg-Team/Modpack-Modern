@@ -22,6 +22,12 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: 'tfc:quern/sylvite' })
     event.remove({ id: 'tfc:quern/salt' })
 
+    event.remove({ id: 'tfc:quern/small_magnetite' })
+    event.remove({ id: 'tfc:quern/small_tetrahedrite' })
+    event.remove({ id: 'tfc:quern/small_malachite' })
+    event.remove({ id: 'tfc:quern/small_limonite' })
+    event.remove({ id: 'tfc:quern/small_hematite' })
+    event.remove({ id: 'tfc:quern/small_native_copper' })
     event.remove({ id: 'tfc:quern/small_native_gold' })
     event.remove({ id: 'tfc:quern/small_native_silver' })
     event.remove({ id: 'tfc:quern/small_cassiterite' })
@@ -63,7 +69,7 @@ const registerTFCRecipes = (event) => {
 
     // 4x LapisLazuli Powder
     addQuernRecipe(event, 
-        { tag: "forge:raw_materials/lapis_lazuli" },
+        { tag: "forge:raw_materials/lapis" },
         { item: "tfc:powder/lapis_lazuli", count: 4 }
     )
 

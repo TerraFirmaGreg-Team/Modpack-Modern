@@ -23,5 +23,16 @@ const registerMinecraftRecipes = (event) => {
     event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
 
+    event.remove({id: 'minecraft:smithing_table'})
     event.remove({id: 'minecraft:fire_charge'})
+
+    event.remove({id: 'minecraft:netherite_sword_smithing'})
+    event.remove({id: 'minecraft:netherite_pickaxe_smithing'})
+    event.remove({id: 'minecraft:netherite_axe_smithing'})
+    event.remove({id: 'minecraft:netherite_shovel_smithing'})
+    event.remove({id: 'minecraft:netherite_hoe_smithing'})
+    event.remove({id: 'minecraft:netherite_helmet_smithing'})
+    event.remove({id: 'minecraft:netherite_chestplate_smithing'})
+    event.remove({id: 'minecraft:netherite_leggings_smithing'})
+    event.remove({id: 'minecraft:netherite_boots_smithing'})
 }
