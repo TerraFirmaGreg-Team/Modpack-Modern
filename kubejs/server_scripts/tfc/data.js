@@ -17,10 +17,7 @@ const registerTFCItemHeats = (event) => {
                 event.addJson(path, emptyJson)
             }
             else {
-                let ingredient
-
-                if (itemType.input.item != undefined) ingredient = { item: itemType.input.item.replace('%s', metalName) }
-                else ingredient = { tag: itemType.input.tag.replace('%s', metalName) }
+                let ingredient = itemType.input(metalName)
 
                 let json = {
                     ingredient: ingredient,
@@ -46,10 +43,7 @@ const registerTFCHeatingRecipes = (event) => {
                 event.addJson(path, emptyJson)
             }
             else {
-                let ingredient
-
-                if (itemType.input.item != undefined) ingredient = { item: itemType.input.item.replace('%s', metalName) }
-                else ingredient = { tag: itemType.input.tag.replace('%s', metalName) }
+                let ingredient = itemType.input(metalName)
 
                 let json
 
