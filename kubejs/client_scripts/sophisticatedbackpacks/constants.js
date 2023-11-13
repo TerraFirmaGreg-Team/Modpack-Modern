@@ -9,7 +9,6 @@ const sophisticatedbackpacksItemsToHide = [
     'sophisticatedbackpacks:blasting_upgrade',
     'sophisticatedbackpacks:auto_blasting_upgrade',
     'sophisticatedbackpacks:stonecutter_upgrade',
-    'sophisticatedbackpacks:stonecutter_upgrade',
     'sophisticatedbackpacks:stack_upgrade_tier_2',
     'sophisticatedbackpacks:stack_upgrade_tier_3',
     'sophisticatedbackpacks:stack_upgrade_tier_4',
