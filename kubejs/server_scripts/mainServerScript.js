@@ -1,7 +1,7 @@
 // priority: 499
 
 ServerEvents.highPriorityData(event => {
-    // register datapacks here
+    registerTFCData(event)
 })
 
 ServerEvents.tags('block', event => {
