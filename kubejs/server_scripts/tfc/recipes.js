@@ -1,10 +1,12 @@
 // priority: 0
 
 const registerTFCRecipes = (event) => {
-    event.remove({ id: /tfc:anvil.*/ })
-    event.remove({ id: /tfc:welding.*/ })
-    event.remove({ id: /tfc:casting.*/ })
-    event.remove({ id: /tfc:heating.*/ })
+    //event.remove({ id: /tfc:anvil.*/ })
+    //event.remove({ id: /tfc:welding.*/ })
+    //event.remove({ id: /tfc:casting.*/ })
+    event.remove({ id: /tfc:heating\/metal.*/ })
+    event.remove({ id: /tfc:heating\/ore.*/ })
+
 
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
