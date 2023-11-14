@@ -19,6 +19,7 @@ ServerEvents.recipes(event => {
     registerExtendedCraftingRecipes(event)
     registerMinecraftRecipes(event)
     registerTFCRecipes(event)
+    registersophisticatedbackpacksRecipes(event)
 })
 
 LootJS.modifiers((event) => {
