@@ -1,56 +1,18 @@
 // priority: 0
 
-const defaultProperty = [
-    "ingot"
-]
-
-const nuggetProperty = [
-    "nugget"
-]
-
-const dustProperty = [
-    "dust",
-    "dust_small",
-    "dust_tiny",
-]
-
-const oreProperty = [
-    "poor_raw",
-    "normal_raw",
-    "rich_raw"
-]
-
-const doubleIngotProperty = [
-    "double_ingot"
-]
-
-const partProperty = [
-    "sheet",
-    "double_sheet",
-    "rod",
-    "block",
-    "block_stairs",
-    "block_slab"
-]
-
-const armorProperty = [
-    "boots",
-    "greaves",
-    "chestplate",
-    "helmet",
-    "shield",
-    "unfinished_boots",
-    "unfinished_chestplate",
-    "unfinished_greaves",
-    "unfinished_helmet",
-]
-
-const toolProperty = [
+const ingotGen = [ "ingot" ]
+const doubleIngotGen = [ "double_ingot"]
+const nuggetGen = [ "nugget" ]
+const dustGen = [ "dust", "dust_small", "dust_tiny" ]
+const oreGen = [ "poor_raw", "raw", "rich_raw" ]
+const partGen = [ "sheet", "double_sheet", "rod", "block", "block_stairs", "block_slab" ]
+const armorGen = [ "boots", "greaves", "chestplate", "helmet", "shield", "unfinished_boots", "unfinished_chestplate", "unfinished_greaves", "unfinished_helmet" ]
+const utilityGen = [ "anvil", "bars", "chain", "lamp", "trapdoor", "unfinished_lamp" ]
+const toolGen = [
     "axe_head",
     "axe",
     "chisel_head",
     "chisel",
-    "hoe_head",
     "fish_hook",
     "fishing_rod",
     "hammer_head",
@@ -78,15 +40,6 @@ const toolProperty = [
     "sword_blade",
     "sword",
     "tuyere"
-]
-
-const utilityProperty = [
-    "anvil",
-    "bars",
-    "chain",
-    "lamp",
-    "trapdoor",
-    "unfinished_lamp"
 ]
 
 const ItemHeats = {
@@ -189,7 +142,7 @@ const ItemHeats = {
     }, input: (name) => { return { tag: `forge:poor_raw_materials/${name}` } }, output: (name) => { return { item: `gtceu:poor_raw_${name}` } } },
     
     
-    "normal_raw": { heat_capacity: 1.429, metal_amount: { 
+    "raw": { heat_capacity: 1.429, metal_amount: { 
         "bismuth": 36,
         "cassiterite": 36,
         "copper": 36,
@@ -394,43 +347,43 @@ const ItemHeats = {
 }
 
 const Metals = {
-    "bismuth": { forging_temp: 162, welding_temp: 216, melt_temp: 270, fluidName: "gtceu:bismuth", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, oreProperty, dustProperty, nuggetProperty) },
-    "brass": { forging_temp: 558, welding_temp: 744, melt_temp: 930, fluidName: "gtceu:brass", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, dustProperty, nuggetProperty) },
-    "gold": { forging_temp: 636, welding_temp: 848, melt_temp: 1060, fluidName: "gtceu:gold", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, oreProperty, dustProperty, nuggetProperty) },
-    "nickel": { forging_temp: 872, welding_temp: 1162, melt_temp: 1453, fluidName: "gtceu:nickel", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, oreProperty, dustProperty, nuggetProperty) },
-    "rose_gold": { forging_temp: 576, welding_temp: 768, melt_temp: 960, fluidName: "gtceu:rose_gold", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, dustProperty, nuggetProperty) },
-    "silver": { forging_temp: 577, welding_temp: 769, melt_temp: 961, fluidName: "gtceu:silver", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, oreProperty, dustProperty, nuggetProperty) },
-    "tin": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:tin", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, oreProperty, dustProperty, nuggetProperty) },
-    "zinc": { forging_temp: 252, welding_temp: 336, melt_temp: 420, fluidName: "gtceu:zinc", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, dustProperty, nuggetProperty) },
-    "sterling_silver": { forging_temp: 570, welding_temp: 760, melt_temp: 950, fluidName: "gtceu:sterling_silver", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, dustProperty, nuggetProperty) },
-    "copper": { forging_temp: 648, welding_temp: 864, melt_temp: 1080, fluidName: "gtceu:copper", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, oreProperty, dustProperty, nuggetProperty) },
-    "bismuth_bronze": { forging_temp: 591, welding_temp: 788, melt_temp: 985, fluidName: "gtceu:bismuth_bronze", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "bronze": { forging_temp: 570, welding_temp: 760, melt_temp: 950, fluidName: "gtceu:bronze", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "black_bronze": { forging_temp: 642, welding_temp: 856, melt_temp: 1070, fluidName: "gtceu:black_bronze", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "wrought_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:wrought_iron", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(defaultProperty, partProperty, oreProperty, dustProperty) },
-    "cast_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(doubleIngotProperty) },
-    "pig_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "tfc:metal/pig_iron", props: defaultProperty},
-    "steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:steel", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "high_carbon_black_steel": { forging_temp: 924, melt_temp: 1540, welding_temp: 1232, fluidName: "tfc:metal/high_carbon_black_steel", props: defaultProperty },
-    "high_carbon_red_steel": { forging_temp: 924, melt_temp: 1540, welding_temp: 1232, fluidName: "tfc:metal/high_carbon_red_steel", props: defaultProperty },
-    "high_carbon_blue_steel": { forging_temp: 924, melt_temp: 1540, welding_temp: 1232, fluidName: "tfc:metal/high_carbon_blue_steel", props: defaultProperty },
-    "weak_steel": {  forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "tfc:metal/weak_steel", props: defaultProperty },
-    "weak_red_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "tfc:metal/weak_red_steel", props: defaultProperty },
-    "weak_blue_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "tfc:metal/weak_blue_steel", props: defaultProperty },
-    "black_steel": { forging_temp: 891, welding_temp: 1188, melt_temp: 1485, fluidName: "gtceu:black_steel", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "red_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:red_steel", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "blue_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:blue_steel", props: [].concat(defaultProperty, partProperty, doubleIngotProperty, armorProperty, toolProperty, utilityProperty, dustProperty, nuggetProperty) },
-    "unknown": { forging_temp: 240, welding_temp: 320, melt_temp: 400, fluidName: "tfc:metal/unknown", props: defaultProperty },
-    "cassiterite": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:zinc", props: [].concat(oreProperty, dustProperty) },
-    "garnierite": { forging_temp: 138, welding_temp: 184, melt_temp: 1453, fluidName: "gtceu:nickel", props: [].concat(oreProperty, dustProperty) },
-    "hematite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(oreProperty, dustProperty) },
-    "yellow_limonite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(oreProperty, dustProperty) },
-    "magnetite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(oreProperty, dustProperty) },
-    "malachite": { forging_temp: 138, welding_temp: 184, melt_temp: 1080, fluidName: "gtceu:copper", props: [].concat(oreProperty, dustProperty) },
-    "pyrite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(oreProperty, dustProperty) },
-    "sphalerite": { forging_temp: 138, welding_temp: 184, melt_temp: 420, fluidName: "gtceu:zinc", props: [].concat(oreProperty, dustProperty) },
-    "tetrahedrite": { forging_temp: 138, welding_temp: 184, melt_temp: 1080, fluidName: "gtceu:copper", props: [].concat(oreProperty, dustProperty) }
+    "bismuth": { forging_temp: 162, welding_temp: 216, melt_temp: 270, fluidName: "gtceu:bismuth", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "brass": { forging_temp: 558, welding_temp: 744, melt_temp: 930, fluidName: "gtceu:brass", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "gold": { forging_temp: 636, welding_temp: 848, melt_temp: 1060, fluidName: "gtceu:gold", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "nickel": { forging_temp: 872, welding_temp: 1162, melt_temp: 1453, fluidName: "gtceu:nickel", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "rose_gold": { forging_temp: 576, welding_temp: 768, melt_temp: 960, fluidName: "gtceu:rose_gold", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "silver": { forging_temp: 577, welding_temp: 769, melt_temp: 961, fluidName: "gtceu:silver", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "tin": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:tin", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "zinc": { forging_temp: 252, welding_temp: 336, melt_temp: 420, fluidName: "gtceu:zinc", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "sterling_silver": { forging_temp: 570, welding_temp: 760, melt_temp: 950, fluidName: "gtceu:sterling_silver", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen) },
+    "copper": { forging_temp: 648, welding_temp: 864, melt_temp: 1080, fluidName: "gtceu:copper", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "bismuth_bronze": { forging_temp: 591, welding_temp: 788, melt_temp: 985, fluidName: "gtceu:bismuth_bronze", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "bronze": { forging_temp: 570, welding_temp: 760, melt_temp: 950, fluidName: "gtceu:bronze", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "black_bronze": { forging_temp: 642, welding_temp: 856, melt_temp: 1070, fluidName: "gtceu:black_bronze", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "wrought_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:wrought_iron", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(ingotGen, dustGen, oreGen, partGen) },
+    "cast_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", props: doubleIngotGen },
+    "pig_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "tfc:metal/pig_iron", props: ingotGen},
+    "steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:steel", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "high_carbon_black_steel": { forging_temp: 924, melt_temp: 1540, welding_temp: 1232, fluidName: "tfc:metal/high_carbon_black_steel", props: ingotGen },
+    "high_carbon_red_steel": { forging_temp: 924, melt_temp: 1540, welding_temp: 1232, fluidName: "tfc:metal/high_carbon_red_steel", props: ingotGen },
+    "high_carbon_blue_steel": { forging_temp: 924, melt_temp: 1540, welding_temp: 1232, fluidName: "tfc:metal/high_carbon_blue_steel", props: ingotGen },
+    "weak_steel": {  forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "tfc:metal/weak_steel", props: ingotGen },
+    "weak_red_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "tfc:metal/weak_red_steel", props: ingotGen },
+    "weak_blue_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "tfc:metal/weak_blue_steel", props: ingotGen },
+    "black_steel": { forging_temp: 891, welding_temp: 1188, melt_temp: 1485, fluidName: "gtceu:black_steel", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "red_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:red_steel", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "blue_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:blue_steel", props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, oreGen, partGen, armorGen, utilityGen) },
+    "unknown": { forging_temp: 240, welding_temp: 320, melt_temp: 400, fluidName: "tfc:metal/unknown", props: ingotGen },
+    "cassiterite": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:zinc", props: [].concat(dustGen, oreGen) },
+    "garnierite": { forging_temp: 138, welding_temp: 184, melt_temp: 1453, fluidName: "gtceu:nickel", props: [].concat(dustGen, oreGen) },
+    "hematite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(dustGen, oreGen) },
+    "yellow_limonite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(dustGen, oreGen) },
+    "magnetite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(dustGen, oreGen) },
+    "malachite": { forging_temp: 138, welding_temp: 184, melt_temp: 1080, fluidName: "gtceu:copper", props: [].concat(dustGen, oreGen) },
+    "pyrite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", props: [].concat(dustGen, oreGen) },
+    "sphalerite": { forging_temp: 138, welding_temp: 184, melt_temp: 420, fluidName: "gtceu:zinc", props: [].concat(dustGen, oreGen) },
+    "tetrahedrite": { forging_temp: 138, welding_temp: 184, melt_temp: 1080, fluidName: "gtceu:copper", props: [].concat(dustGen, oreGen) }
 }
 
 const removeAllTagsItems = [
