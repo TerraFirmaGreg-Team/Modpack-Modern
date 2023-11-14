@@ -1,17 +1,20 @@
 // priority: 0
 
+const registerTFCData = (event) => {
+    registerTFCItemHeats(event)
+}
+
 const registerTFCItemHeats = (event) => {
     for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
         metalSpecifications.props.forEach(propertyName => {
             let itemType = ItemHeats[propertyName]
             let path = `tfc:tfc/item_heats/metal/${tfcMetalName}_${propertyName}`
-            let metalName = (metalSpecifications.customName != undefined) ? metalSpecifications.customName : tfcMetalName
             
             if (itemType.heat_capacity == null) {
                 event.addJson(path, emptyJson)
             }
             else {
-                let ingredient = itemType.input(metalName)
+                let ingredient = itemType.input(tfcMetalName)
 
                 let json = {
                     ingredient: ingredient,
@@ -25,6 +28,3 @@ const registerTFCItemHeats = (event) => {
     }
 }
 
-const registerTFCData = (event) => {
-    registerTFCItemHeats(event)
-}
