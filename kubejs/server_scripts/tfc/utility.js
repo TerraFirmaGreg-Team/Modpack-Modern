@@ -1,5 +1,11 @@
 // priority: 0
 
+const emptyJson = {
+    conditions: [
+        { type: "forge:false" }
+    ]
+}
+
 const customWelding = (event, [input1, input2], result, tier) => {
     event.custom({
         type: "tfc:welding",
@@ -69,3 +75,4 @@ const addQuernRecipe = (event, input, output) => {
         result: output
     })
 }
+
