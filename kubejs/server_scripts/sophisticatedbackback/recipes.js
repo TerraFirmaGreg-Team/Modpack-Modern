@@ -9,7 +9,7 @@ const registersophisticatedbackpacksRecipes = (event) => {
     'ACA',
     'BBB'  
   ], {
-    A: '#forge:string',
+    A: 'minecraft:string',
     B: 'minecraft:leather',  
     C: '#forge:chests/wooden',
     D: 'minecraft:name_tag'   
