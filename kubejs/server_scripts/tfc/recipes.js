@@ -7,9 +7,6 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:heating\/metal.*/ })
     event.remove({ id: /tfc:heating\/ore.*/ })
 
-    registerAutoTFCHeatingRecipes(event)
-    registerAutoTFCCastingRecipes(event)
-
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
     event.remove({ id: 'tfc:quern/amethyst' })
@@ -43,6 +40,36 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: 'tfc:quern/small_bismuthinite' })
     event.remove({ id: 'tfc:quern/small_garnierite' })
     event.remove({ id: 'tfc:quern/small_sphalerite' })
+
+    registerAutoTFCHeatingRecipes(event)
+    registerAutoTFCCastingRecipes(event)
+
+    // Gold Bell
+    addCastingRecipe(event, 
+        'tfc:recipes/casting/tfg/gold_bell',
+        { item: "tfc:ceramic/bell_mold"},
+        { ingredient: "gtceu:gold", amount: 144 },
+        { item: "minecraft:bell" },
+        1
+    )
+
+    // Brass Bell
+    addCastingRecipe(event, 
+        'tfc:recipes/casting/tfg/brass_bell',
+        { item: "tfc:ceramic/bell_mold"},
+        { ingredient: "gtceu:brass", amount: 144 },
+        { item: "tfc:brass_bell" },
+        1
+    )
+
+    // Bronze Bell
+    addCastingRecipe(event, 
+        'tfc:recipes/casting/tfg/bronze_bell',
+        { item: "tfc:ceramic/bell_mold"},
+        { ingredient: "gtceu:bronze", amount: 144 },
+        { item: "tfc:bronze_bell" },
+        1
+    )
 
     // Fire Charge
     event.remove({ id: 'tfc:crafting/vanilla/fire_charge' })
@@ -423,7 +450,6 @@ const registerAutoTFCCastingRecipes = (event) => {
                     
                         let recipeId2 = `tfc:recipes/casting_tfg/fire_${propertyName}_${tfcMetalName}`
     
-                        console.log(shit)
                         addCastingRecipe(event, 
                             recipeId2, 
                             { item: `tfc:ceramic/fire_${propertyName}_mold` },  
@@ -433,8 +459,6 @@ const registerAutoTFCCastingRecipes = (event) => {
                         )
                     }
                 }
-                
-                
             }
         })
     }
