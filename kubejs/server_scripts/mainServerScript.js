@@ -24,3 +24,8 @@ ServerEvents.recipes(event => {
 LootJS.modifiers((event) => {
     modifyLootGT(event)
 });
+
+BlockEvents.rightClicked(event => {
+    console.log(event.getBlock())
+    console.log(event.getItem())
+})

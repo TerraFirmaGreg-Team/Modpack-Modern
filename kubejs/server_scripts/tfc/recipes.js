@@ -8,7 +8,7 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:heating\/ore.*/ })
 
     registerTFCHeatingRecipes(event)
-    //registerTFCCastingRecipes(event)
+    registerTFCCastingRecipes(event)
 
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
@@ -356,11 +356,13 @@ const registerTFCHeatingRecipes = (event) => {
             if (itemTypeSpecifications.heat_capacity != null) {
                 let ingredientInput = itemTypeSpecifications.input(tfcMetalName)
                 
+                let json
+
                 if (typeof(itemTypeSpecifications.metal_amount) == "object")
                 {
                     if (itemTypeSpecifications.metal_amount[tfcMetalName] != undefined)
                     {
-                        let json = {
+                        json = {
                             id: jsonRecipePath,
                             type: "tfc:heating",
                             ingredient: ingredientInput,
@@ -369,15 +371,26 @@ const registerTFCHeatingRecipes = (event) => {
                                 amount: itemTypeSpecifications.metal_amount[tfcMetalName]
                             },
                             temperature: metalSpecifications.melt_temp,
-                            use_durability: false
+                            use_durability: (itemTypeSpecifications.hasDur != undefined) ? itemTypeSpecifications.hasDur : false
                         }
-                        
-                        //console.log(json)
-                        event.custom(json)
+                    }
+                    else
+                    {
+                        json = {
+                            id: jsonRecipePath,
+                            type: "tfc:heating",
+                            ingredient: ingredientInput,
+                            result_fluid: {
+                                fluid: metalSpecifications.fluidName,
+                                amount: itemTypeSpecifications.metal_amount["default"]
+                            },
+                            temperature: metalSpecifications.melt_temp,
+                            use_durability: (itemTypeSpecifications.hasDur != undefined) ? itemTypeSpecifications.hasDur : false
+                        }
                     }
                 }
                 else {
-                    let json = {
+                    json = {
                         id: jsonRecipePath,
                         type: "tfc:heating",
                         ingredient: ingredientInput,
@@ -386,12 +399,13 @@ const registerTFCHeatingRecipes = (event) => {
                           amount: itemTypeSpecifications.metal_amount
                         },
                         temperature: metalSpecifications.melt_temp,
-                        use_durability: false
+                        use_durability: (itemTypeSpecifications.hasDur != undefined) ? itemTypeSpecifications.hasDur : false
                     }
 
-                    //console.log(json)
-                    event.custom(json)
+                    
                 }
+
+                event.custom(json)
             }
             
         })
