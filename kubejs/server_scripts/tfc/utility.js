@@ -38,7 +38,7 @@ const addEmptyJson = (event, path) => {
 }
 
 /**
- * Метод создает нагревательную спецификации для предмета. 
+ * Метод создает нагревательную спецификацию json для предмета. 
  * Используется только в событии генерации датапаков, не является рецептом.
  * @param { ServerEvents.highPriorityData } event Событие в котором вызывается.
  * @param { String } customPath Путь, начинается с [tfc:tfc/item_heats/], если указан customPath, 
@@ -61,38 +61,73 @@ const addItemHeat = (event, customPath, input, heat_capacity, forging_temperatur
 }
 
 /**
- * Создает рецепт нагрева, предмет -> жидкость, в основном используется для металлов.
- * @param { ServerEvents.recipes } event Событие в котором вызывается.
- * @param { String } id Название рецепта, если не указать сгенерируется автоматически, рекомендуется задать вручную.
+ * Создает json рецепта нагрева, предмет -> жидкость, в основном используется для металлов.
+ * @param { ServerEvents.highPriorityData } event Событие в котором вызывается.
+ * @param { String } recipeId Название рецепта.
  * @param { Object } input Объект входа, может принимать объект с тэгом или предметом.
  * @param { Object } result_fluid Результирующая жидкость после расплава предмета.
  * @param { Number } temperature Температура при которой произойдет рецепт.
  */
-const addHeatingItemToFluidRecipe = (event, id, input, result_fluid, temperature) => {
-    event.custom({
-        id: id,
+const addHeatingItemToFluidRecipe = (event, recipeId, input, result_fluid, temperature, useDurab) => {
+    event.addJson(recipeId, {
         type: "tfc:heating",
         ingredient: input,
         result_fluid: result_fluid,
+        temperature: temperature,
+        use_durability: useDurab
+    })
+}
+
+/**
+ * Создает json рецепт нагрева, предмет -> предмет, в основном используется для обычных предметов.
+ * @param { ServerEvents.highPriorityData } event Событие в котором вызывается.
+ * @param { String } recipeId Название рецепта.
+ * @param { Object } input Объект входа, может принимать объект с тэгом или предметом.
+ * @param { Object } result_fluid Результирующий предмет после достижения требуемой температуры.
+ * @param { Number } temperature Температура при которой произойдет рецепт.
+ */
+const addHeatingItemToItemRecipe = (event, recipeId, input, result_item, temperature) => {
+    event.addJson(recipeId, {
+        type: "tfc:heating",
+        ingredient: input,
+        result_item: result_item,
         temperature: temperature
     })
 }
 
 /**
- * Создает рецепт нагрева, предмет -> предмет, в основном используется для обычных предметов.
- * @param { ServerEvents.recipes } event Событие в котором вызывается.
- * @param { String } id Название рецепта, если не указать сгенерируется автоматически, рекомендуется задать вручную.
- * @param { Object } input Объект входа, может принимать объект с тэгом или предметом.
- * @param { Object } result_fluid Результирующий предмет после достижения требуемой температуры.
- * @param { Number } temperature Температура при которой произойдет рецепт.
+ * Создает json рецепт для доменной печки лоу тира.
+ * @param { ServerEvents.highPriorityData } event Событие в котором вызывается. 
+ * @param { String } recipeId Название рецепта.
+ * @param { Object } result Объект выхода, может принимать объект с тэгом или предметом.
+ * @param { Object } fluid Объект жидкости, может принимать объект с жидкостью и ее кол-вом.
+ * @param { Object } catalyst Объект катализатора, может принимать объект с тэгом или предметом.
+ * @param { number } duration Длительность рецепта.
  */
-const addHeatingItemToItemRecipe = (event, id, input, result_item, temperature) => {
-    event.custom({
-        id: id,
-        type: "tfc:heating",
-        ingredient: input,
-        result_item: result_item,
-        temperature: temperature
+const addBloomeryRecipe = (event, recipeId, result, fluid, catalyst, duration) => {
+    event.addJson(recipeId, {
+        type: "tfc:bloomery",
+        result: result,
+        fluid: fluid,
+        catalyst: catalyst,
+        duration: duration
+    })
+}
+
+/**
+ * Создает json рецепт для доменной печки нормал тира.
+ * @param { ServerEvents.highPriorityData } event Событие в котором вызывается. 
+ * @param { String } recipeId Название рецепта.
+ * @param { Object } fluid Объект жидкости, может принимать объект с жидкостью и ее кол-вом.
+ * @param { Object } result Объект выхода, может принимать объект с тэгом или предметом.
+ * @param { Object } catalyst Объект катализатора, может принимать объект с тэгом или предметом.
+ */
+const addTFCBlastFurnaceRecipe = (event, recipeId, fluid, result, catalyst) => {
+    event.addJson(recipeId, {
+        type: "tfc:blast_furnace",
+        fluid: fluid,
+        result: result,
+        catalyst: catalyst
     })
 }
 
