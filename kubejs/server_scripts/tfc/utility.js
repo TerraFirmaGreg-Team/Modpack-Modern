@@ -132,7 +132,7 @@ const addTFCBlastFurnaceRecipe = (event, recipeId, fluid, result, catalyst) => {
 }
 
 /**
- * Регистрирует рецепт отливки чего-либо из молда в предмет.
+ * Создает рецепт отливки чего-либо из молда в предмет.
  * @param { ServerEvents.recipes } event Событие в котором вызывается. 
  * @param { String } recipeId Название рецепта.
  * @param { Object } inputMold Форма на вход.
@@ -150,42 +150,56 @@ const addCastingRecipe = (event, recipeId, inputMold, fluidInMold, resultOutput,
     }).id(recipeId)
 }
 
-/*
-const addWeldingRecipe = (event, id, input1, input2, output, tier) => {
+/**
+ * Создает рецепт наковальни.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается.
+ * @param { String } recipeId Название рецепта.
+ * @param { Object } input Объект входа, может принимать объект с тэгом или предметом.
+ * @param { Object } result Объект выхода, может принимать объект только предметом.
+ * @param { Number } tier Уровень рецепта, базируется на уровне металла тфк.
+ * @param { Array } rules Правила ковки.
+ */
+const addAnvilRecipe = (event, recipeId, input, result, tier, rules) => {
     event.custom({
-        id: id,
+        type: "tfc:anvil",
+        input: input,
+        result: result,
+        tier: tier,
+        rules: rules
+    }).id(recipeId)
+}
+
+/**
+ * Создает рецепт сварки.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается.
+ * @param { String } recipeId Название рецепта.
+ * @param { Object } input1 Объект входа, может принимать объект с тэгом или предметом.
+ * @param { Object } input2 Объект входа, может принимать объект с тэгом или предметом.
+ * @param { Object } output Объект выхода, может принимать объект только предметом.
+ * @param { Number } tier Уровень рецепта, базируется на уровне металла тфк.
+ */
+const addWeldingRecipe = (event, recipeId, input1, input2, output, tier) => {
+    event.custom({
         type: "tfc:welding",
         first_input: input1,
         second_input: input2,
         result: output,
         tier: tier,
-    })
+    }).id(recipeId)
 }
 
-const customAnvil = (event, input1, [result, count], tier, [firstRule, secondRule, thirdRule]) => {
-    event.custom({
-        type: "tfc:anvil",
-        input: {
-            tag: input1
-        },
-        result: {
-            item: result,
-            count: count
-        },
-        tier: tier,
-        rules: [
-            firstRule,
-            secondRule,
-            thirdRule
-        ]
-    })
-}*/
-
-const addQuernRecipe = (event, input, output) => {
+/**
+ * Создает рецепт дробилки.
+ * @param { ServerEvents.recipes } event 
+ * @param { String } recipeId 
+ * @param { Object } input 
+ * @param { Object } output 
+ */
+const addQuernRecipe = (event, recipeId, input, output) => {
     event.custom({
         type: "tfc:quern",
         ingredient: input,
         result: output
-    })
+    }).id(recipeId)
 }
 

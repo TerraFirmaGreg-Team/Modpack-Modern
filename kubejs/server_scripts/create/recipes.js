@@ -1,6 +1,7 @@
 // priority: 0
 
 const registerCreateRecipes = (event) => {
+    
     // Удаление рецептов мода create 
     event.remove({ mod: 'create' });
 
@@ -34,6 +35,7 @@ const registerCreateRecipes = (event) => {
         B: 'gtceu:wood_gear',
     });
 
+    // todo: использовать ютилити методы для создания рецептов ниже (порядок, heatItem -> heatRecipe -> любые другие тфкшные)
     // galvanized_iron
     //customWelding(event, ["forge:ingots/iron", "forge:plates/zinc"], "kubejs:galvanized_iron", 3);
     //customWelding(event, ["forge:ingots/wrought_iron", "forge:plates/zinc"], "kubejs:galvanized_iron", 3);
