@@ -3,9 +3,12 @@
 const registerTFCRecipes = (event) => {
     // event.remove({ id: /tfc:anvil.*/ })
     // event.remove({ id: /tfc:welding.*/ })
-    // event.remove({ id: /tfc:casting.*/ })
+    event.remove({ id: /tfc:casting\/.*/ })
     event.remove({ id: /tfc:heating\/metal.*/ })
     event.remove({ id: /tfc:heating\/ore.*/ })
+
+    registerAutoTFCHeatingRecipes(event)
+    registerAutoTFCCastingRecipes(event)
 
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
@@ -342,4 +345,97 @@ const registerTFCRecipes = (event) => {
         { tag: "forge:rich_raw_materials/borax" },
         { item: "tfc:powder/flux", count: 6 }
     )
+}
+
+const registerAutoTFCHeatingRecipes = (event) => {
+    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+        metalSpecifications.props.forEach(propertyName => {
+            let jsonRecipePath = `tfc:recipes/heating/tfg/${tfcMetalName}_${propertyName}`
+            let itemTypeSpecifications = ItemHeats[propertyName]
+
+            if (itemTypeSpecifications.heat_capacity != null) {
+                let ingredientInput = itemTypeSpecifications.input(tfcMetalName)
+                
+                let json
+
+                if (typeof(itemTypeSpecifications.metal_amount) == "object")
+                {
+                    if (itemTypeSpecifications.metal_amount[tfcMetalName] != undefined)
+                    {
+                        addHeatingItemToFluidRecipe(
+                            event, 
+                            jsonRecipePath, 
+                            ingredientInput, 
+                            { fluid: metalSpecifications.fluidName, amount: itemTypeSpecifications.metal_amount[tfcMetalName] },
+                            metalSpecifications.melt_temp,
+                            (itemTypeSpecifications.hasDur != undefined) ? itemTypeSpecifications.hasDur : false
+                        )
+                    }
+                    else
+                    {
+                        addHeatingItemToFluidRecipe(
+                            event, 
+                            jsonRecipePath, 
+                            ingredientInput, 
+                            { fluid: metalSpecifications.fluidName, amount: itemTypeSpecifications.metal_amount["default"] },
+                            metalSpecifications.melt_temp,
+                            (itemTypeSpecifications.hasDur != undefined) ? itemTypeSpecifications.hasDur : false
+                        )
+                    }
+                }
+                else {
+                    addHeatingItemToFluidRecipe(
+                        event, 
+                        jsonRecipePath, 
+                        ingredientInput, 
+                        { fluid: metalSpecifications.fluidName, amount: itemTypeSpecifications.metal_amount },
+                        metalSpecifications.melt_temp,
+                        (itemTypeSpecifications.hasDur != undefined) ? itemTypeSpecifications.hasDur : false
+                    )
+                }
+            }
+        })
+    }
+}
+
+const registerAutoTFCCastingRecipes = (event) => {
+    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+        metalSpecifications.props.forEach(propertyName => {
+            let property = ItemHeats[propertyName]
+            
+            if (property.hasMold != undefined)
+            {
+
+
+                let recipeId = `tfc:recipes/casting_tfg/${propertyName}_${tfcMetalName}`
+                
+                if (metalSpecifications.canBeUnmolded != undefined || propertyName == "ingot")
+                {
+                    addCastingRecipe(event, 
+                        recipeId, 
+                        { item: `tfc:ceramic/${propertyName}_mold` },  
+                        { ingredient: metalSpecifications.fluidName, amount: property.metal_amount}, 
+                        property.output(tfcMetalName),
+                        (propertyName.includes("blade") || propertyName.includes("head") ? 1 : 0.01)
+                    )
+
+                    if (propertyName == "ingot") {
+                    
+                        let recipeId2 = `tfc:recipes/casting_tfg/fire_${propertyName}_${tfcMetalName}`
+    
+                        console.log(shit)
+                        addCastingRecipe(event, 
+                            recipeId2, 
+                            { item: `tfc:ceramic/fire_${propertyName}_mold` },  
+                            { ingredient: metalSpecifications.fluidName, amount: property.metal_amount}, 
+                            property.output(tfcMetalName),
+                            0.01
+                        )
+                    }
+                }
+                
+                
+            }
+        })
+    }
 }

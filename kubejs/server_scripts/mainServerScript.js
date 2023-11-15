@@ -2,6 +2,7 @@
 
 /**
  * Здесь регистрируются файлы датапаков (json).
+ * Срабатывает до инициализации рецептов.
  */
 ServerEvents.highPriorityData(event => {
     registerTFCData(event)
@@ -24,6 +25,7 @@ ServerEvents.tags('item', event => {
 
 /**
  * Здесь регистрируются рецепты (те же датапаки, но это событие немного специфичней).
+ * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
     registerSBRecipes(event)

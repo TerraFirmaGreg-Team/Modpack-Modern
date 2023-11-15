@@ -61,43 +61,43 @@ const addItemHeat = (event, customPath, input, heat_capacity, forging_temperatur
 }
 
 /**
- * Создает json рецепта нагрева, предмет -> жидкость, в основном используется для металлов.
- * @param { ServerEvents.highPriorityData } event Событие в котором вызывается.
+ * Создает рецепта нагрева, предмет -> жидкость, в основном используется для металлов.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается.
  * @param { String } recipeId Название рецепта.
  * @param { Object } input Объект входа, может принимать объект с тэгом или предметом.
  * @param { Object } result_fluid Результирующая жидкость после расплава предмета.
  * @param { Number } temperature Температура при которой произойдет рецепт.
  */
 const addHeatingItemToFluidRecipe = (event, recipeId, input, result_fluid, temperature, useDurab) => {
-    event.addJson(recipeId, {
+    event.custom({
         type: "tfc:heating",
         ingredient: input,
         result_fluid: result_fluid,
         temperature: temperature,
         use_durability: useDurab
-    })
+    }).id(recipeId)
 }
 
 /**
- * Создает json рецепт нагрева, предмет -> предмет, в основном используется для обычных предметов.
- * @param { ServerEvents.highPriorityData } event Событие в котором вызывается.
+ * Создает рецепт нагрева, предмет -> предмет, в основном используется для обычных предметов.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается.
  * @param { String } recipeId Название рецепта.
  * @param { Object } input Объект входа, может принимать объект с тэгом или предметом.
  * @param { Object } result_fluid Результирующий предмет после достижения требуемой температуры.
  * @param { Number } temperature Температура при которой произойдет рецепт.
  */
 const addHeatingItemToItemRecipe = (event, recipeId, input, result_item, temperature) => {
-    event.addJson(recipeId, {
+    event.custom({
         type: "tfc:heating",
         ingredient: input,
         result_item: result_item,
         temperature: temperature
-    })
+    }).id(recipeId)
 }
 
 /**
- * Создает json рецепт для доменной печки лоу тира.
- * @param { ServerEvents.highPriorityData } event Событие в котором вызывается. 
+ * Создает рецепт для доменной печки лоу тира.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается. 
  * @param { String } recipeId Название рецепта.
  * @param { Object } result Объект выхода, может принимать объект с тэгом или предметом.
  * @param { Object } fluid Объект жидкости, может принимать объект с жидкостью и ее кол-вом.
@@ -105,30 +105,49 @@ const addHeatingItemToItemRecipe = (event, recipeId, input, result_item, tempera
  * @param { number } duration Длительность рецепта.
  */
 const addBloomeryRecipe = (event, recipeId, result, fluid, catalyst, duration) => {
-    event.addJson(recipeId, {
+    event.custom({
         type: "tfc:bloomery",
         result: result,
         fluid: fluid,
         catalyst: catalyst,
         duration: duration
-    })
+    }).id(recipeId)
 }
 
 /**
- * Создает json рецепт для доменной печки нормал тира.
- * @param { ServerEvents.highPriorityData } event Событие в котором вызывается. 
+ * Создает рецепт для доменной печки нормал тира.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается. 
  * @param { String } recipeId Название рецепта.
  * @param { Object } fluid Объект жидкости, может принимать объект с жидкостью и ее кол-вом.
  * @param { Object } result Объект выхода, может принимать объект с тэгом или предметом.
  * @param { Object } catalyst Объект катализатора, может принимать объект с тэгом или предметом.
  */
 const addTFCBlastFurnaceRecipe = (event, recipeId, fluid, result, catalyst) => {
-    event.addJson(recipeId, {
+    event.custom({
         type: "tfc:blast_furnace",
         fluid: fluid,
         result: result,
         catalyst: catalyst
-    })
+    }).id(recipeId)
+}
+
+/**
+ * 
+ * @param { ServerEvents.recipes } event 
+ * @param {*} recipeId 
+ * @param {*} inputMold 
+ * @param {*} fluidInMold 
+ * @param {*} result 
+ * @param {*} break_chance 
+ */
+const addCastingRecipe = (event, recipeId, inputMold, fluidInMold, resultOutput, break_chance) => {
+    event.custom({
+        type: "tfc:casting",
+        mold: inputMold,
+        fluid: fluidInMold,
+        result: resultOutput,
+        break_chance: break_chance
+    }).id(recipeId)
 }
 
 /*
