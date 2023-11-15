@@ -132,13 +132,13 @@ const addTFCBlastFurnaceRecipe = (event, recipeId, fluid, result, catalyst) => {
 }
 
 /**
- * 
- * @param { ServerEvents.recipes } event 
- * @param {*} recipeId 
- * @param {*} inputMold 
- * @param {*} fluidInMold 
- * @param {*} result 
- * @param {*} break_chance 
+ * Регистрирует рецепт отливки чего-либо из молда в предмет.
+ * @param { ServerEvents.recipes } event Событие в котором вызывается. 
+ * @param { String } recipeId Название рецепта.
+ * @param { Object } inputMold Форма на вход.
+ * @param { Object } fluidInMold Объект жидкости, может принимать объект с жидкостью и ее кол-вом.
+ * @param { Object } result Объект выхода, может принимать объект с тэгом или предметом.
+ * @param { Number } break_chance Шанс, что форма сломается.
  */
 const addCastingRecipe = (event, recipeId, inputMold, fluidInMold, resultOutput, break_chance) => {
     event.custom({
