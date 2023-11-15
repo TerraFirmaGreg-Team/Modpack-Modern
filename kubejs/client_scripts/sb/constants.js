@@ -1,6 +1,6 @@
 // priority: 199
 
-const sophisticatedbackpacksItemsToHide = [
+const SBItemsToHide = [
     'sophisticatedbackpacks:inception_upgrade',
     'sophisticatedbackpacks:smelting_upgrade',
     'sophisticatedbackpacks:auto_smelting_upgrade',

@@ -76,12 +76,12 @@ ItemEvents.rightClicked(event => {
         // Wax Scrapping
         else if (false)
         {
-
+            // todo
         }
         // Scrap Scrapping
         else if (false)
         {
-
+            // todo
         }
     }
 })
