@@ -1,12 +1,15 @@
 // priority: 0
 
 const registerTFCRecipes = (event) => {
-    // event.remove({ id: /tfc:anvil.*/ })
-    // event.remove({ id: /tfc:welding.*/ })
-    event.remove({ id: /tfc:casting\/.*/ })
+    event.remove({ id: /tfc:quern\/poor.*/ }) 
+    event.remove({ id: /tfc:quern\/normal.*/ }) 
+    event.remove({ id: /tfc:quern\/rich.*/ }) 
+    event.remove({ id: /tfc:heating\/ore.*/ })    
     event.remove({ id: /tfc:heating\/metal.*/ })
-    event.remove({ id: /tfc:heating\/ore.*/ })
-
+    event.remove({ id: /tfc:casting\/.*/ })
+    // event.remove({ id: /tfc:anvil.*/ }) // todo
+    // event.remove({ id: /tfc:welding.*/ }) // todo
+    
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
     event.remove({ id: 'tfc:quern/amethyst' })
