@@ -410,6 +410,8 @@ const registerTFCHeatingRecipes = (event) => {
             
         })
     }
+
+
 }
 
 const registerTFCCastingRecipes = (event) => {
