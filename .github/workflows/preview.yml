@@ -14,7 +14,7 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/Pre*-R}
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/Pre*-}
 
       - name: Changelog Parser
         id: changelog
