@@ -48,6 +48,78 @@ const registerTFCRecipes = (event) => {
     registerAutoTFCCastingRecipes(event)
     //registerAutoTFCAnvilRecipes(event)
 
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/high_carbon_black_steel',
+        { item: "tfc:metal/ingot/high_carbon_black_steel" },
+        { item: "gtceu:black_steel_ingot" },
+        4,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/blowpipe',
+        { tag: "forge:rods/brass" },
+        { item: "tfc:blowpipe" },
+        2,
+        [ "draw_last", "draw_second_last", "hit_third_last" ]
+    )
+
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/blue_steel_bucket',
+        { tag: "forge:plates/blue_steel" },
+        { item: "tfc:metal/bucket/blue_steel" },
+        6,
+        [ "bend_last", "bend_second_last", "bend_third_last" ]
+    )
+
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/blue_steel_ingot',
+        { item: "tfc:metal/ingot/high_carbon_blue_steel" },
+        { item: "gtceu:blue_steel_ingot" },
+        5,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/brass_mechanisms',
+        { tag: "forge:ingots/brass" },
+        { item: "tfc:brass_mechanisms", count: 2 },
+        2,
+        [ "punch_last", "hit_second_last", "punch_third_last" ]
+    )
+
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/high_carbon_steel_ingot',
+        { item: "tfc:metal/ingot/pig_iron" },
+        { item: "tfc:metal/ingot/high_carbon_steel" },
+        3,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    addCastingRecipe(event, 
+        'tfc:recipes/anvil/tfg/iron_door',
+        { tag: "forge:plates/wrought_iron" },
+        { item: "minecraft:iron_door" },
+        3,
+        [ "hit_last", "draw_not_last", "punch_not_last" ]
+    )
+
+    addCastingRecipe(event, 
+        'tfc:recipes/anvil/tfg/jar_lid',
+        { tag: "forge:ingots/tin" },
+        { item: "tfc:jar_lid", count: 16 },
+        1,
+        [ "hit_last", "hit_second_last", "punch_third_last" ]
+    )
+
+    addCastingRecipe(event, 
+        'tfc:recipes/anvil/tfg/red_steel_bucket',
+        { tag: "forge:plates/red_steel" }, 
+        {
+            "item": "tfc:metal/bucket/red_steel"
+          }   
+    )
+
     // Gold Bell
     addCastingRecipe(event, 
         'tfc:recipes/casting/tfg/gold_bell',
