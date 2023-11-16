@@ -654,6 +654,8 @@ const registerAutoTFCAnvilRecipes = (event) => {
                 let input = innerProp.input(tfcMetalName)
                 let output = property.output(tfcMetalName)
 
+                output['count'] = (property.outputCount != undefined) ? property.outputCount : 1
+
                 addAnvilRecipe(event, recipeId, input, output, metalSpecifications.tier, property.rules)
             }
         })
