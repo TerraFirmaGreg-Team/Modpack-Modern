@@ -650,7 +650,8 @@ const registerAutoTFCAnvilRecipes = (event) => {
             {
                 let recipeId = `tfc:recipes/anvil/tfg/${propertyName}_${tfcMetalName}`
 
-                let input = property.input(tfcMetalName)
+                let innerProp = ItemHeats[property.anvilFrom]
+                let input = innerProp.input(tfcMetalName)
                 let output = property.output(tfcMetalName)
 
                 addAnvilRecipe(event, recipeId, input, output, metalSpecifications.tier, property.rules)
