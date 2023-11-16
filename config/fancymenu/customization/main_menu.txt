@@ -28,11 +28,18 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = kubejs/assets/mainmenu/button_hovered.png
-  backgroundnormal = kubejs/assets/mainmenu/button.png
+  backgroundhovered = kubejs/assets/mainmenu/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/mainmenu/button98x20.png
 }
 
 customization {
@@ -173,18 +180,18 @@ customization {
   width = 122
   action = deep_customization_element:title_screen_branding
   actionid = 473712fb-e2ae-4dc5-a5c4-440bd571d2971699232461193
-  y = 285
+  y = 222
   height = 50
 }
 
 customization {
   orientation = top-left
   hidden = false
-  x = 411
+  x = 283
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = e35897c5-67fe-4b25-9d46-ec33d14ee19d1699232461193
-  y = 317
+  y = 254
   height = 9
 }
 
@@ -224,14 +231,30 @@ customization {
 }
 
 customization {
+  orientation = mid-centered
+  restartbackgroundanimations = true
+  buttonaction = joinserver;tfg2.terrafirmagreg.su%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/mainmenu/button98x20_hovered.png
+  label = Offical Server
+  loopbackgroundanimations = true
+  x = 47
+  width = 98
+  action = addbutton
+  actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
+  y = -28
+  backgroundnormal = kubejs/assets/mainmenu/button98x20.png
+  height = 20
+}
+
+customization {
   path = kubejs/assets/mainmenu/logo-512x512.png
   orientation = mid-centered
-  x = -160
-  width = 100
+  x = -177
+  width = 117
   action = addtexture
   actionid = 9bb15e9d-fedb-4e15-a37f-7586c0dcb4921699691344434
-  y = -51
-  height = 100
+  y = -63
+  height = 113
 }
 
 customization {
