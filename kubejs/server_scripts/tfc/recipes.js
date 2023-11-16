@@ -10,6 +10,10 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:anvil\/.*/ })
     // event.remove({ id: /tfc:welding.*/ }) // todo
     
+    // Удаляет все рецепты металлических блоков 
+    // с полублоками и ступеньками
+    event.remove({ id: /tfc:crafting\/metal\/block\/.*/ })
+
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
     event.remove({ id: 'tfc:quern/amethyst' })
