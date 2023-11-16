@@ -3,11 +3,11 @@
 [general]
 	#The CurseForge project ID for the modpack
 	#Range: > 0
-	modpackProjectID = 0
+	modpackProjectID = 385053
 	#The name of the modpack
 	modpackName = "TerraFirmaGreg"
 	#The version of the modpack
-	modpackVersion = "0.0.1"
+	modpackVersion = "DEV"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
