@@ -28,7 +28,6 @@ jobs:
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          echo $DEV
           sed -i -e "s/DEV/${DEV}/g" manifest.json
           sed -i -e "s/DEV/${DEV}/g" instance.cfg
           sed -i -e "s/DEV/${DEV}/g" .minecraft/config/fancymenu/customization/main_menu.txt
