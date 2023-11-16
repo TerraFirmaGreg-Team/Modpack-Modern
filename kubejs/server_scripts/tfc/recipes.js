@@ -46,7 +46,7 @@ const registerTFCRecipes = (event) => {
 
     registerAutoTFCHeatingRecipes(event)
     registerAutoTFCCastingRecipes(event)
-    registerAutoTFCAnvilRecipes(event)
+    //registerAutoTFCAnvilRecipes(event)
 
     // Gold Bell
     addCastingRecipe(event, 
