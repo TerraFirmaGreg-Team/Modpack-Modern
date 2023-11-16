@@ -1,0 +1,274 @@
+
+[serverConfig]
+	#The default language used for server-side localization for players that don't have the mod installed.
+	defaultLanguage = "en_us"
+	#How often to auto-save modified data, e.g. parties, claims, player configs (in minutes).
+	#Range: > 1
+	autosaveInterval = 10
+	#How many sub-configs (sub-claims) can each player create.
+	#Range: 0 ~ 1024
+	playerSubConfigLimit = 64
+	#The permission system to use for everything that requires permission checks (e.g. permission_api, ftb_ranks, luck_perms, prometheus). Non-built-in permission systems can be registered through the API with an addon.
+	permissionSystem = "prometheus"
+	#The player party system to prefer and use for anything that can't support multiple systems (e.g. default, ftb_teams, argonauts, argonauts_guilds). Non-built-in party systems can be registered through the API with an addon.
+	primaryPartySystem = "argonauts_guilds"
+	#A list of options in the player config that individual players can reconfigure. If an option is in neither of the configurable option lists,
+	#then the value in the default player config is used across the server. Check the default player config .toml file for the option names.
+	playerConfigurablePlayerConfigOptions = ["claims.protectClaimedChunks", "claims.forceload.enabled", "claims.name", "claims.color", "claims.protection.fromParty", "claims.protection.fromAllyParties", "claims.protection.buttonsFromProjectiles", "claims.protection.targetsFromProjectiles", "claims.protection.platesFromPlayers", "claims.protection.platesFromMobs", "claims.protection.platesFromOther", "claims.protection.tripwireFromPlayers", "claims.protection.tripwireFromMobs", "claims.protection.tripwireFromOther", "claims.protection.cropTrample", "claims.protection.playerLightning", "claims.protection.fromFrostWalking", "claims.protection.entitiesFromPlayers", "claims.protection.entitiesFromMobs", "claims.protection.entitiesFromOther", "claims.protection.entitiesRedirect", "claims.protection.entitiesFromExplosions", "claims.protection.entitiesFromFire", "claims.protection.netherPortalsPlayers", "claims.protection.netherPortalsMobs", "claims.protection.netherPortalsOther", "claims.protection.fluidBarrier", "claims.protection.dispenserBarrier", "claims.protection.pistonBarrier", "claims.protection.itemTossPlayers", "claims.protection.itemTossMobs", "claims.protection.itemTossOther", "claims.protection.itemTossRedirect", "claims.protection.mobLoot", "claims.protection.playerDeathLoot", "claims.protection.itemPickupPlayers", "claims.protection.itemPickupMobs", "claims.protection.itemPickupRedirect", "claims.protection.xpPickup", "claims.protection.raids", "claims.protection.naturalSpawnHostile", "claims.protection.naturalSpawnFriendly", "claims.protection.spawnersHostile", "claims.protection.spawnersFriendly", "claims.protection.projectileHitHostileSpawn", "claims.protection.projectileHitFriendlySpawn", "parties.name", "parties.shareLocationWithParty", "parties.shareLocationWithMutualAllyParties", "parties.receiveLocationsFromParty", "parties.receiveLocationsFromMutualAllyParties", "claims.protection.exceptionGroups.block.interact.Controls", "claims.protection.exceptionGroups.block.interact.Doors", "claims.protection.exceptionGroups.block.interact.Chests", "claims.protection.exceptionGroups.block.interact.Barrels", "claims.protection.exceptionGroups.block.interact.Ender_Chests", "claims.protection.exceptionGroups.block.interact.Shulker_Boxes", "claims.protection.exceptionGroups.block.interact.Furnaces", "claims.protection.exceptionGroups.block.interact.Hoppers", "claims.protection.exceptionGroups.block.interact.Dispenser-like", "claims.protection.exceptionGroups.block.interact.Anvils", "claims.protection.exceptionGroups.block.interact.Beds", "claims.protection.exceptionGroups.block.interact.Beacons", "claims.protection.exceptionGroups.block.interact.Enchanting_Tables", "claims.protection.exceptionGroups.block.break.Crops", "claims.protection.exceptionGroups.entity.interact.Traders", "claims.protection.exceptionGroups.entity.handInteract.Item_Frames", "claims.protection.exceptionGroups.entity.interact.Armor_Stands", "claims.protection.exceptionGroups.entity.break.Livestock", "claims.protection.exceptionGroups.entity.blockAccess.Villagers", "claims.protection.exceptionGroups.entity.entityAccess.Zombies", "claims.protection.exceptionGroups.entity.droppedItemAccess.Villagers", "claims.protection.exceptionGroups.entity.droppedItemAccess.Piglins", "claims.protection.exceptionGroups.entity.droppedItemAccess.Foxes", "claims.protection.exceptionGroups.item.interact.Books", "claims.protection.exceptionGroups.entity.barrier.Ender_Pearls", "/*remove comment to enable*/claims.protection.exceptionGroups.entity.barrier.Players"]
+	#A list of additional options in the player config that OPs can reconfigure for players.
+	#This is meant for options that should be configured per player but not by the players.
+	#If an option is in neither of the configurable option lists, then the value in the default player config is used across the server.
+	#Check the default player config .toml file for the option names.
+	opConfigurablePlayerConfigOptions = ["claims.bonusChunkClaims", "claims.bonusChunkForceloads"]
+
+	[serverConfig.parties]
+		#Whether the parties part of this mod is enabled.
+		enabled = true
+		#The maximum number of members in a party. Existing members are not removed if the limit is reduced.
+		#Range: > 1
+		maxPartyMembers = 64
+		#The maximum number of allies for a party. Existing allies are not removed if the limit is reduced.
+		#Range: > 0
+		maxPartyAllies = 64
+		#The maximum number of invites to a party. Existing invites are not removed if the limit is reduced.
+		#Range: > 1
+		maxPartyInvites = 16
+		#For how long a party (members) can stay completely inactive on the server until it is deleted (in hours). This improves performance for servers running for years.
+		#Range: > 1
+		partyExpirationTime = 168
+		#How often to check for expired parties in order to remove them (in minutes). The interval is effectively rounded up to a multiple of 10 minutes.
+		#Range: > 10
+		partyExpirationCheckInterval = 360
+
+	[serverConfig.claims]
+		#Whether the claims part of this mod is enabled.
+		enabled = true
+		#For how long a player can stay completely inactive on the server until their claims are expired (in hours). This improves performance for servers running for years.
+		#Range: > 1
+		playerClaimsExpirationTime = 8760
+		#How often to check for expired player chunk claims in order to remove them (in minutes). The interval is effectively rounded up to a multiple of 10 minutes.
+		#Range: > 10
+		playerClaimsExpirationCheckInterval = 360
+		#Whether to convert expired player chunk claims to "expired claims" instead of completely freeing them. This shouldn't be too bad for performance because it still reduces the number of unique claims.
+		playerClaimsConvertExpiredClaims = true
+		#The maximum number of chunks that a player can claim. Additional claims can be configured in the player config.
+		#This value can be overridden with a player permission.
+		#Range: > 0
+		maxPlayerClaims = 500
+		#The maximum number of claimed chunks that a player can forceload. Additional forceloads can be configured in the player config.
+		#This value can be overridden with a player permission.
+		#Range: > 0
+		maxPlayerClaimForceloads = 10
+		#The permission that should override the default "maxPlayerClaims" value. Set it to an empty string to never check permissions. The used permission system can be configured with "permissionSystem".
+		maxPlayerClaimsPermission = "xaero.pac_max_claims"
+		#The permission that should override the default "maxPlayerClaimForceloads" value. Set it to an empty string to never check permissions.
+		#The permission override only takes effect after the player logs in at least once after a server (re)launch, so it is recommended to keep all permission-based forceload limits equal to or greater than "maxPlayerClaimForceloads".
+		#The used permission system can be configured with "permissionSystem".
+		maxPlayerClaimForceloadsPermission = "xaero.pac_max_forceloads"
+		#The permission that gives non-OP players the ability to make server claims and enable server claim mode. The used permission system can be configured with "permissionSystem".
+		serverClaimPermission = "xaero.pac_server_claims"
+		#The permission that gives non-OP players the ability to enable claim admin mode. The used permission system can be configured with "permissionSystem".
+		adminModePermission = "xaero.pac_admin_mode"
+		#The maximum distance on the X or Z axis (forming a square) that a chunk can be claimed at by a player.
+		#Range: > 0
+		maxClaimDistance = 5
+		#The type of the list defined in "claimableDimensionsList". ONLY - include only the listed dimensions. ALL_BUT - include all but the listed dimensions.
+		#Allowed Values: ONLY, ALL_BUT
+		claimableDimensionsListType = "ALL_BUT"
+		#Dimensions to include/exclude from being claimable, depending on the list type in "claimableDimensionsListType".
+		#For example ["minecraft:overworld", "minecraft:the_nether"].
+		#By default the list is empty and of type ALL_BUT, meaning that all dimensions are claimable.
+		claimableDimensionsList = []
+		#Whether to allow existing player claims to stay active in unclaimable dimensions which were previously claimable.
+		allowExistingClaimsInUnclaimableDimensions = true
+		#Whether to allow existing player forceloads to stay active in unclaimable dimensions which were previously claimable. Only relevant if existing claims are allowed.
+		allowExistingForceloadsInUnclaimableDimensions = false
+		#Whether to synchronize world chunk claims to the game clients. Enables client-side mods to access the claims data, e.g. to display it on a map.
+		#ALL - all claims are synced. OWNED_ONLY - only the claims that the client player owns and server claims are synced. NOT_SYNCED - claims are not synced.
+		#Allowed Values: NOT_SYNCED, OWNED_ONLY, ALL
+		claimsSynchronization = "ALL"
+
+		[serverConfig.claims.protection]
+			#The type of the list defined in "friendlyChunkProtectedEntityList". ONLY - include only the listed entities. ALL_BUT - include all but the listed entities.
+			#Allowed Values: ONLY, ALL_BUT
+			friendlyChunkProtectedEntityListType = "ALL_BUT"
+			#Friendly entities to fully include/exclude in chunk protection, depending on the list type in "friendlyChunkProtectedEntityListType". Supports entity type tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["*:villager", "minecraft:m(ule|ooshroom)", "#minecraft:axolotl_hunt_targets"].
+			#By default the list is empty with the type set to ALL_BUT, which means that all friendly entities are included.
+			friendlyChunkProtectedEntityList = ["minecraft:boat"]
+			#The type of the list defined in "hostileChunkProtectedEntityList". ONLY - include only the listed entities. ALL_BUT - include all but the listed entities.
+			#Allowed Values: ONLY, ALL_BUT
+			hostileChunkProtectedEntityListType = "ONLY"
+			#Hostile entities to fully include/exclude in chunk protection, depending on the list type in "hostileChunkProtectedEntityListType". Supports entity type tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(|wither_)skeleton", "minecraft:zombie(_villager|)", "#minecraft:raiders"]
+			hostileChunkProtectedEntityList = []
+			#No longer a working option. Please transfer anything you still have here to "forcedBlockProtectionExceptionList" or "blockProtectionOptionalExceptionGroups",
+			#but keep in mind that those options work differently and please read their comments.
+			#This option will be completely removed on the full release of the mod.
+			blockProtectionExceptionList = []
+			#No longer a working option. Please transfer anything you still have here to "forcedEntityProtectionExceptionList" or "entityProtectionOptionalExceptionGroups",
+			#but keep in mind that those options work differently and please read their comments.
+			#This option will be completely removed on the full release of the mod.
+			entityProtectionExceptionList = []
+			#No longer a working option. Please transfer anything you still have here to "forcedEntityClaimBarrierList" or "entityClaimBarrierOptionalGroups",
+			#but keep in mind that those options work differently and please read their comments.
+			#This option will be completely removed on the full release of the mod.
+			entityClaimBarrierList = []
+			#Blocks to partially exclude from chunk protection. Supports block tags.
+			#Just a block/tag ID in the list, e.g. "minecraft:lever" allows block interaction across the server if the item in the used hand isn't blocking it.
+			#Prefix "hand$" is the same as no prefix but enforces an empty hand requirement in protected chunks. Prefix "break$" allows breaking the block(s).
+			#Prefix "anything$" is the same as no prefix but allows interaction with any item held in the hand. Please make sure that no item does anything bad when used at a block with such an exception.
+			#Add the same block/tag multiple times to use multiple prefixes. Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:lever", "minecraft:*_button", "break$minecraft:*_button", "break$minecraft:(*_|)sand"]
+			forcedBlockProtectionExceptionList = ["minecraft:crafting_table"]
+			#Custom groups of blocks that a player/claim config should be able to make protection exceptions for. Each group can consist of multiple blocks and block tags.
+			#A group without a prefix creates a player config option for the right-click interaction with the group blocks. The format for a block group is <group ID>{<blocks/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-DIRT35{minecraft:dirt, minecraft:grass_block, minecraft:(oak|spruce)_*}".
+			#A group can be prefixed with "hand$" to create an option for the right-click interaction with an enforced empty hand requirement or "break$" for breaking the group blocks.
+			#Moreover, prefix "anything$" creates an option for the right-click interaction with any item held in the hand, not just allowed items. Please make sure that no item does anything
+			#bad when used at a block with such an exception.
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			blockProtectionOptionalExceptionGroups = ["Controls{minecraft:lever, #minecraft:buttons}", "Doors{#minecraft:doors, #minecraft:fence_gates, #forge:fence_gates, #minecraft:trapdoors}", "Chests{minecraft:chest, minecraft:trapped_chest, #forge:chests/wooden}", "Barrels{minecraft:barrel, #forge:barrels}", "Ender_Chests{minecraft:ender_chest, #forge:chests/ender}", "Shulker_Boxes{#minecraft:shulker_boxes}", "Furnaces{minecraft:furnace, minecraft:blast_furnace, minecraft:smoker}", "Hoppers{minecraft:hopper}", "Dispenser-like{minecraft:dispenser, minecraft:dropper}", "Anvils{#minecraft:anvil}", "Beds{#minecraft:beds}", "Beacons{minecraft:beacon}", "Enchanting_Tables{minecraft:enchanting_table}", "break$Crops{#minecraft:crops}"]
+			#Entities to partially exclude from chunk protection. Supports entity type tags.
+			#Just an entity/tag ID in the list, e.g. "minecraft:horse" allows entity interaction across the server if the item in the used hand isn't blocking it.
+			#Prefix "hand$" is the same as no prefix but enforces an empty hand requirement in protected chunks. Prefix "break$" allows killing the entities across the server.
+			#Prefix "anything$" is the same as no prefix but allows interaction with any item held in the hand. Please make sure that no item does anything bad when used at an entity with such an exception.
+			#Add the same entity/tag multiple times to use multiple prefixes. Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:villager", "break$minecraft:villager", "break$minecraft:(trader_|)llama"]
+			forcedEntityProtectionExceptionList = ["minecraft:minecart"]
+			#Custom groups of entities that a player/claim config should be able to make protection exceptions for. Each group can consist of multiple entities and entity tags.
+			#A group without a prefix creates a player config option for the right-click interaction with the group entities. The format for an entity group is <group ID>{<entities/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-GUYS98{minecraft:pig, minecraft:c(ow|at), #minecraft:beehive_inhabitors}".
+			#A group can be prefixed with "hand$" to create an option for the right-click interaction with an enforced empty hand requirement or "break$" for destroying the group entities.
+			#Moreover, prefix "anything$" creates an option for the right-click interaction with any item held in the hand, not just allowed items. Please make sure that no item does anything
+			#bad when used at an entity with such an exception.
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			entityProtectionOptionalExceptionGroups = ["Traders{minecraft:villager, minecraft:wandering_trader}", "hand$Item_Frames{minecraft:item_frame}", "break$Livestock{minecraft:cow, minecraft:mooshroom, minecraft:sheep, minecraft:chicken, minecraft:pig, minecraft:rabbit, minecraft:goat}", "Armor_Stands{minecraft:armor_stand}"]
+			#Entities that are prevented from entering the claim. Supports entity type tags. An entity/tag ID in the list, e.g. "minecraft:falling_block" prevents the entities from entering.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR. For example: "minecraft:zombie(_villager|)".
+			forcedEntityClaimBarrierList = ["minecraft:falling_block", "supplementaries:slingshot_projectile"]
+			#Custom groups of entities that a player/claim config should be able to enable a barrier for. Each group can consist of multiple entities and entity tags.
+			#Each group creates a player config option for controlling the entity barrier. The format for a entity group is <group ID>{<entities/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-GUYS98{#minecraft:raiders, minecraft:zombie(_villager|)}".
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			entityClaimBarrierOptionalGroups = ["Players{minecraft:player}", "Ender_Pearls{minecraft:ender_pearl}"]
+			#Entities that can bypass all block protection. Supports entity type tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
+			entitiesAllowedToGrief = ["minecraft:sheep"]
+			#Entities that can bypass all protection of other entities. Supports entity type tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
+			entitiesAllowedToGriefEntities = []
+			#Entities that can bypass all dropped item protection. Supports entity type tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
+			entitiesAllowedToGriefDroppedItems = []
+			#(Forge-only option) Mobs that can grief entities/items but not blocks. This list is used when overriding the vanilla "mob griefing" game rule value.
+			#By default, the mod assumes that any "mob griefing" game rule check is meant for block protection.
+			#This means that the "Protect Blocks From Mobs" option might cause entity or item protection, if that's what the mob is trying to affect.
+			#By adding a mob to this list, you're removing the block protection check for it during the "mob griefing" game rule check.
+			#Supports entity type tags. Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:*illager", "minecraft:(v|p)illager", "#minecraft:raiders"]
+			nonBlockGriefingMobs = []
+			#(Forge-only option) Mobs that can grief entities in ways other than attacking them, e.g. how evokers can change the color of sheep. This list is used when overriding the vanilla "mob griefing" game rule value.
+			#By default, the mod assumes that any "mob griefing" game rule check is meant for block protection only. Add a mob to this list if you want the entity protection option to be checked as well when the rule is checked.
+			#Check out the "nonBlockGriefingMobs" option if you want to also remove the default block protection check for the mob.
+			#Supports entity type tags. Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
+			entityGriefingMobs = []
+			#(Forge-only option) Mobs that can grief dropped items. This list is used when overriding the vanilla "mob griefing" game rule value.
+			#By default, the mod assumes that any "mob griefing" game rule check is meant for block protection only. Add a mob to this list if you want the item pickup protection option to be checked as well when the rule is checked.
+			#This mod should detect most mobs picking up items by default, but if it doesn't already detect a specific mob, this option might help.
+			#Check out the "nonBlockGriefingMobs" option if you want to also remove the default block protection check for the mob.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
+			droppedItemGriefingMobs = []
+			#Custom groups of entities that a player/claim config should be able to make block access exceptions for (e.g. letting sheep eat grass or endermen take blocks). Each group can consist of multiple entities and entity tags.
+			#The format for an entity group is <group ID>{<entities/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-GUYS98{minecraft:pig, minecraft:c(ow|at), #minecraft:beehive_inhabitors}".
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			blockAccessEntityGroups = ["Villagers{minecraft:villager}"]
+			#Custom groups of entities that a player/claim config should be able to make entity access exceptions for (e.g. letting zombies kill things).
+			#The groups should consist of entities that are the ones accessing other entities. The groups should not contain entities that are being accessed. Check out the "entityProtectionOptionalExceptionGroups" option for that.
+			#Each group can consist of multiple entities and entity tags. The format for an entity group is <group ID>{<entities/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-GUYS98{minecraft:pig, minecraft:c(ow|at), #minecraft:beehive_inhabitors}".
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			entityAccessEntityGroups = ["Zombies{minecraft:zombie, minecraft:zombie_villager, minecraft:husk, minecraft:drowned}"]
+			#Custom groups of entities that a player/claim config should be able to make dropped item access exceptions for (e.g. letting piglins pick up gold).
+			#The groups should consist of entities that are the ones trying to pick up items, not consist of specific items.
+			#Each group can consist of multiple entities and entity tags. The format for an entity group is <group ID>{<entities/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-GUYS98{minecraft:pig, minecraft:c(ow|at), #minecraft:beehive_inhabitors}".
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			droppedItemAccessEntityGroups = ["Villagers{minecraft:villager}", "Piglins{minecraft:piglin}", "Foxes{minecraft:fox}"]
+			#A list of fake players (UUIDs or names) that shouldn't be affected by any chunk claim protection if they try to access a chunk with building protection compatible with
+			#the chunk that the fake player's origin block is positioned in, e.g. claims with the same owner and block protection option values.
+			#This works great for fake players that are bound to the position of a specific placed block (origin block). Moreover, the mod supports fake players placed at a block
+			#next to the origin block, even if that means entering another chunk, e.g. in the case of the Integrated Tunnels mod, or if the origin block is touching the target block.
+			#The mod will try all positions next to the target block and the fake player as the possible position of the fake player origin block.
+			#This will always protect the target block if it or the fake player touch a claim with incompatible build protection. Avoid building on such claim edges.
+			#However, some fake players' origin blocks can be nowhere near the fake player or the target block, e.g. in the case of the Create mod, or there might be no origin block at all,
+			#e.g. NPCs that can move around. In this case, the mods that use such fake players require explicit support to be implemented. Although they might also sometimes
+			#be supported by default, if the fake players use UUIDs of actual players.
+			#Explicit support exists for the Create mod (requires an extension on Fabric) and you are not required to add anything to this list.
+			#Make sure to always test that claim edges are protected from outside interaction by fake players that you add to this list.
+			#Wondering where to get the UUIDs or usernames of specific fake players? You can check the source code of the mods that use them or politely ask the mod authors.
+			#For example ["41C82C87-7AfB-4024-BB57-13D2C99CAE77", "FakePlayerName"]
+			staticFakePlayers = ["[IntegratedTunnels]"]
+			#A list of Java classes of fake players that should be excluded from claim protection exceptions given to fake players with the "staticFakePlayers" option
+			#or built-in fake player support, like in the case of Create mod deployers.
+			#This option is meant for fake players similar to ComputerCraft's turtles, which take the UUID of the player that places them. It becomes a problem when a turtle takes
+			#the UUID of a fake player from "staticFakePlayers" or a deployer because the turtle then gets the same privileges without actually being stationary itself nor a deployer.
+			#Adding classes here should not break support of fake players that take the UUID of their owner. It simply takes away privileges which aren't meant for them.
+			#For example ["dan200.computercraft.shared.turtle.core.TurtlePlayer"]
+			staticFakePlayerClassExceptions = ["dan200.computercraft.shared.turtle.core.TurtlePlayer"]
+			#By default, right-click use of some items is allowed in protected chunks, e.g. swords, pickaxes, bows, shield, tridents, splash potions, to let the players protect themselves or interact with some blocks/entities.
+			#To remove such exceptions for specific items, add them to this list. This list applies to both using an item at air and using it at a block/entity. Supports item tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:trident", "minecraft:shield", "minecraft:(oak|spruce)_boat", "#minecraft:boats"]
+			additionalBannedItemsList = ["supplementaries:slingshot"]
+			#By default, most item right-click uses are disabled in protected chunks. To make an exception for a specific item, add it to this list. This option has a higher priority than "additionalBannedItemsList".
+			#This list applies to both using an item at air and using it at a block/entity. Supports item tags. Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:fishing_rod", "minecraft:ender_pearl", "minecraft:(red|green)_bed", "#minecraft:beds"]
+			itemUseProtectionExceptionList = ["minecraft:firework_rocket"]
+			#Custom groups of items that a player/claim config should be able to make protection exceptions for. Each group can consist of multiple items and item tags.
+			#Each group creates a player config option for the right-click use of the group items. The format for an item group is <group ID>{<items/tags/wildcards separated by ,>}.
+			#The group ID should consist of at most 32 characters that are letters A-Z, numbers 0-9 or the - and _ characters, e.g. "ePiC-stuff98{minecraft:(writable|written)_book, minecraft:*_book, #minecraft:compasses}".
+			#The player config options created for the groups, like regular options, must be added in the "playerConfigurablePlayerConfigOptions" list for players to have access to them.
+			#The exact paths of the added options can be found in the default player config file after you start the server.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			itemUseProtectionOptionalExceptionGroups = ["Books{minecraft:written_book, minecraft:writable_book}"]
+			#Items that are completely banned from right-click usage on the server, claimed or not. This list applies to both using an item at air and using it at a block/entity. Supports item tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:trident", "minecraft:shield", "minecraft:(oak|spruce)_boat", "#minecraft:boats"]
+			completelyDisabledItemInteractions = []
+			#Blocks that are completely banned from being interacted with on the server, claimed or not. Does not affect block breaking. Supports block tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:dirt", "minecraft:*_table", "minecraft:(cartography|fletching)_table", "#minecraft:buttons"]
+			completelyDisabledBlockInteractions = []
+			#Entities that are completely banned from being interacted with on the server, claimed or not. Does not affect killing the entities. Supports entity tags.
+			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
+			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
+			completelyDisabledEntityInteractions = []
+			#Whether to completely disable frost walking on the server. Use this if the regular frost walking protection doesn't work, since there is no game rule for it.
+			completelyDisableFrostWalking = false
+			#Whether to ignore most detected entity collisions for boats.
+			#By default, boats detect entity collisions and handle them every tick for every entity that touches them, which is a lot.
+			#This can become very slow on a server if we also add the necessary claim protection checks in the mix.
+			#This option makes it so most collisions with boats are randomly ignored, which helps the performance without affecting gameplay all that much.
+			reducedBoatEntityCollisions = true
+
