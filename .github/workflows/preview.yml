@@ -22,7 +22,7 @@ jobs:
         with:
           path: CHANGELOG.md
 
-      - name: normal -> extended
+      - name: move
         run: |
           rsync -av --exclude-from='./.github/buildtools/filelist.txt' ./ ./.minecraft/
 
