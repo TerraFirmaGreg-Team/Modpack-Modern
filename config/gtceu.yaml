@@ -255,3 +255,7 @@ dev:
   # Default: false
   dumpRecipes: false
 
+  # Dump all registered GT models/blockstates/etc?
+  # Default: false
+  dumpAssets: false
+
