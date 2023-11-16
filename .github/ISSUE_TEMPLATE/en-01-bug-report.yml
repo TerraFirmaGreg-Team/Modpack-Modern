@@ -2,13 +2,6 @@ name: "[EN] Bug report"
 description: Report a bug where something is not working as expected, which does not crash the game.
 labels: [ "status: unverified", "type: bug" ]
 body:
-  - type: input
-    id: type_version
-    attributes:
-      label: Version modpack Used
-      description: Where the game crashed.
-    validations:
-      required: true
   - type: dropdown
     id: version
     attributes:
