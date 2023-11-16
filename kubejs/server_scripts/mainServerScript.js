@@ -49,6 +49,7 @@ LootJS.modifiers((event) => {
  * 2. Не работает очистка меди от меда.
  * 3. Не работает очистка меди от ржавчины.
  */
+/*
 ItemEvents.rightClicked(event => {
     const block = event.getTarget().block
     const item = event.getItem()
@@ -84,4 +85,4 @@ ItemEvents.rightClicked(event => {
             // todo
         }
     }
-})
+})*/
