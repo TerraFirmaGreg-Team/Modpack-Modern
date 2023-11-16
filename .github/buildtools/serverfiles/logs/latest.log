@@ -1,0 +1,50 @@
+[16нояб.2023 16:52:01.036] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.1.3, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[16нояб.2023 16:52:01.040] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.1 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[16нояб.2023 16:52:01.141] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[16нояб.2023 16:52:01.175] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Xikaro/curseforge/minecraft/Instances/TFG-Modpack-1.20.x/.github/buildtools/serverfiles/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[16нояб.2023 16:52:01.385] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Xikaro\curseforge\minecraft\Instances\TFG-Modpack-1.20.x\.github\buildtools\serverfiles\libraries\net\minecraftforge\fmlcore\1.20.1-47.1.3\fmlcore-1.20.1-47.1.3.jar is missing mods.toml file
+[16нояб.2023 16:52:01.387] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Xikaro\curseforge\minecraft\Instances\TFG-Modpack-1.20.x\.github\buildtools\serverfiles\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.1.3\javafmllanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[16нояб.2023 16:52:01.390] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Xikaro\curseforge\minecraft\Instances\TFG-Modpack-1.20.x\.github\buildtools\serverfiles\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.1.3\lowcodelanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[16нояб.2023 16:52:01.392] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Xikaro\curseforge\minecraft\Instances\TFG-Modpack-1.20.x\.github\buildtools\serverfiles\libraries\net\minecraftforge\mclanguage\1.20.1-47.1.3\mclanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[16нояб.2023 16:52:01.542] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[16нояб.2023 16:52:02.889] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[16нояб.2023 16:52:07.357] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.3, for MC 1.20.1 with MCP 20230612.114412
+[16нояб.2023 16:52:07.358] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.3 Initialized
+[16нояб.2023 16:52:08.032] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[16нояб.2023 16:52:08.401] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16нояб.2023 16:52:08.804] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Xikaro/curseforge/minecraft/Instances/TFG-Modpack-1.20.x/.github/buildtools/serverfiles/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/assets/.mcassetsroot' uses unexpected schema
+[16нояб.2023 16:52:08.806] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Xikaro/curseforge/minecraft/Instances/TFG-Modpack-1.20.x/.github/buildtools/serverfiles/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/data/.mcassetsroot' uses unexpected schema
+[16нояб.2023 16:52:08.940] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.1.3 Target: 47.2.0
+[16нояб.2023 16:52:09.924] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[16нояб.2023 16:52:09.996] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[16нояб.2023 16:52:10.203] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[16нояб.2023 16:52:10.203] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[16нояб.2023 16:52:10.203] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[16нояб.2023 16:52:10.204] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[16нояб.2023 16:52:10.232] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[16нояб.2023 16:52:10.251] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[16нояб.2023 16:52:10.363] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[16нояб.2023 16:52:10.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[16нояб.2023 16:52:12.033] [Worker-Main-22/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[16нояб.2023 16:52:12.033] [Worker-Main-22/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[16нояб.2023 16:52:12.033] [Worker-Main-22/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[16нояб.2023 16:52:12.261] [Worker-Main-16/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 17%
+[16нояб.2023 16:52:12.497] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1737 ms
+[16нояб.2023 16:52:12.498] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (2.156s)! For help, type "help"
+[16нояб.2023 16:52:12.502] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[16нояб.2023 16:52:15.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:15.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.606] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.853] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.854] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
+[16нояб.2023 16:52:17.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[16нояб.2023 16:52:17.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: <--[HERE]
