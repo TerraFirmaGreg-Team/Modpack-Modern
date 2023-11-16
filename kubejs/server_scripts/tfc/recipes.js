@@ -7,7 +7,7 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:heating\/ore.*/ })    
     event.remove({ id: /tfc:heating\/metal.*/ })
     event.remove({ id: /tfc:casting\/.*/ })
-    // event.remove({ id: /tfc:anvil.*/ }) // todo
+    event.remove({ id: /tfc:anvil\/.*/ })
     // event.remove({ id: /tfc:welding.*/ }) // todo
     
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
@@ -46,8 +46,9 @@ const registerTFCRecipes = (event) => {
 
     registerAutoTFCHeatingRecipes(event)
     registerAutoTFCCastingRecipes(event)
-    //registerAutoTFCAnvilRecipes(event)
+    registerAutoTFCAnvilRecipes(event)
 
+    // Black Steel Ingot
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/high_carbon_black_steel',
         { item: "tfc:metal/ingot/high_carbon_black_steel" },
@@ -56,6 +57,7 @@ const registerTFCRecipes = (event) => {
         [ "hit_last", "hit_second_last", "hit_third_last" ]
     )
 
+    // Blowpipe
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/blowpipe',
         { tag: "forge:rods/brass" },
@@ -64,6 +66,7 @@ const registerTFCRecipes = (event) => {
         [ "draw_last", "draw_second_last", "hit_third_last" ]
     )
 
+    // Blue Steel Bucket
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/blue_steel_bucket',
         { tag: "forge:plates/blue_steel" },
@@ -72,6 +75,7 @@ const registerTFCRecipes = (event) => {
         [ "bend_last", "bend_second_last", "bend_third_last" ]
     )
 
+    // Blue Steel Ingot
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/blue_steel_ingot',
         { item: "tfc:metal/ingot/high_carbon_blue_steel" },
@@ -80,6 +84,7 @@ const registerTFCRecipes = (event) => {
         [ "hit_last", "hit_second_last", "hit_third_last" ]
     )
 
+    // Brass Mechanisms
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/brass_mechanisms',
         { tag: "forge:ingots/brass" },
@@ -88,6 +93,7 @@ const registerTFCRecipes = (event) => {
         [ "punch_last", "hit_second_last", "punch_third_last" ]
     )
 
+    // High Carbon Steel Ingot
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/high_carbon_steel_ingot',
         { item: "tfc:metal/ingot/pig_iron" },
@@ -96,7 +102,8 @@ const registerTFCRecipes = (event) => {
         [ "hit_last", "hit_second_last", "hit_third_last" ]
     )
 
-    addCastingRecipe(event, 
+    // Iron Door
+    addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/iron_door',
         { tag: "forge:plates/wrought_iron" },
         { item: "minecraft:iron_door" },
@@ -104,7 +111,8 @@ const registerTFCRecipes = (event) => {
         [ "hit_last", "draw_not_last", "punch_not_last" ]
     )
 
-    addCastingRecipe(event, 
+    // Jar Lid
+    addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/jar_lid',
         { tag: "forge:ingots/tin" },
         { item: "tfc:jar_lid", count: 16 },
@@ -112,12 +120,58 @@ const registerTFCRecipes = (event) => {
         [ "hit_last", "hit_second_last", "punch_third_last" ]
     )
 
-    addCastingRecipe(event, 
+    // Red Steel Bucket
+    addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/red_steel_bucket',
         { tag: "forge:plates/red_steel" }, 
-        {
-            "item": "tfc:metal/bucket/red_steel"
-          }   
+        { item: "tfc:metal/bucket/red_steel" },
+        6,
+        [ "bend_last", "bend_second_last", "bend_third_last" ]
+    )
+
+    // High Carbon Red Steel
+    addAnvilRecipe(event, 
+        'tfc:recipes/anvil/tfg/high_carbon_red_steel',
+        { item: "tfc:metal/ingot/high_carbon_red_steel" }, 
+        { item: "gtceu:red_steel_ingot" },
+        5,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    // Refined Iron Bloom
+    addAnvilRecipe(event,
+        'tfc:recipes/anvil/tfg/refined_iron_bloom',
+        { item: "tfc:raw_iron_bloom" }, 
+        { item: "tfc:refined_iron_bloom" },
+        2,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    // High Carbon Steel
+    addAnvilRecipe(event,
+        'tfc:recipes/anvil/tfg/high_carbon_steel',
+        { "item": "tfc:metal/ingot/high_carbon_steel" }, 
+        { "item": "gtceu:steel_ingot" },
+        3,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    // Wrought Iron From Bloom
+    addAnvilRecipe(event,
+        'tfc:recipes/anvil/tfg/wrought_iron_from_bloom',
+        { "item": "tfc:refined_iron_bloom" }, 
+        { "item": "gtceu:wrought_iron_ingot" },
+        2,
+        [ "hit_last", "hit_second_last", "hit_third_last" ]
+    )
+
+    // Wrought Iron Grill
+    addAnvilRecipe(event,
+        'tfc:recipes/anvil/tfg/wrought_iron_grill',
+        { "tag": "forge:plates/double/wrought_iron" }, 
+        { "item": "tfc:wrought_iron_grill" },
+        3,
+        [ "draw_any", "punch_last", "punch_not_last" ]
     )
 
     // Gold Bell
