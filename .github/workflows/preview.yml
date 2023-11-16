@@ -1,0 +1,67 @@
+name: Deploy modpack
+
+on:
+  push:
+    tags:
+      - "Pre*-R*.*.*"
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/R}
+
+      - name: Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+
+      - name: normal -> extended
+        run: |
+          rsync -av --exclude-from='./.github/buildtools/filelist.txt' ./ ./.minecraft/
+
+      - name: Set the version
+        run: |
+          DEV=${{ steps.get_version.outputs.version }}
+          sed -i -e "s/DEV/${DEV}/g" ./manifest.json
+          sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" ./.minecraft/config/fancymenu/customization/main_menu.txt
+
+      - name: Archive Release MMC
+        run: zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+
+      - name: Archive Release CF
+        run: |
+          mv -vf .minecraft/ ./overrides/ 
+          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/cubejs/ ./overrides/defaultconfigs/
+
+      - name: Deleting Client Resources
+        run: |
+          cd ./overrides/
+          cat ../buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
+          rm -rf ./shaderpacks
+
+      - name: Archive Release Server
+        run: |
+          cp -r ./.github/buildtools/serverfiles/* ./overrides/
+          cd ./overrides/
+          zip -r ../TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v0.1.15
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          prerelease: true
+          generate_release_notes: true
+          name: Release ${{ steps.changelog.outputs.version }}
+          body: ${{ steps.changelog.outputs.description }}
+          files: |
+            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
