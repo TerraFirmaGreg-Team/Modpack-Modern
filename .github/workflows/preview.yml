@@ -23,22 +23,22 @@ jobs:
           path: CHANGELOG.md
 
       - name: move
-        run: |
-          rsync -av --exclude-from='./.github/buildtools/filelist.txt' ./ ./.minecraft/
+        run: rsync -av --exclude-from='./.github/buildtools/filelist.txt' ./ .minecraft/
 
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" ./manifest.json
-          sed -i -e "s/DEV/${DEV}/g" ./instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" manifest.json
+          sed -i -e "s/DEV/${DEV}/g" instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" .minecraft/config/fancymenu/customization/main_menu.txt
 
       - name: Archive Release MMC
-        run: zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip ./mmc-pack.json ./instance.cfg .minecraft/
+        run: zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
 
       - name: Archive Release CF
         run: |
           mv -vf .minecraft/ ./overrides/ 
-          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/cubejs/ ./overrides/defaultconfigs/
+          zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/cubejs/ ./overrides/defaultconfigs/
 
       - name: Deleting Client Resources
         run: |
