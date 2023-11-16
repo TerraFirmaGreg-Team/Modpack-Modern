@@ -31,6 +31,7 @@ jobs:
           sed -i -e "s/DEV/${DEV}/g" manifest.json
           sed -i -e "s/DEV/${DEV}/g" instance.cfg
           sed -i -e "s/DEV/${DEV}/g" .minecraft/config/fancymenu/customization/main_menu.txt
+          sed -i -e "s/DEV/${DEV}/g" .minecraft/config/bcc-common.toml
 
       - name: Archive Release MMC
         run: zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
