@@ -175,18 +175,18 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 2
   width = 122
   action = deep_customization_element:title_screen_branding
   actionid = 473712fb-e2ae-4dc5-a5c4-440bd571d2971699232461193
-  y = 222
+  y = 365
   height = 50
 }
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 283
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
@@ -319,5 +319,24 @@ customization {
   y = 18
   backgroundnormal = kubejs/assets/mainmenu/mdr_logo.png
   height = 20
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/latest","json_path":"$.tag_name"}}§r
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 1
+  width = 163
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = a5845307-9494-47b0-87c0-e398a680e9e01700129661006
+  y = -51
+  alignment = left
+  height = 56
 }
 
