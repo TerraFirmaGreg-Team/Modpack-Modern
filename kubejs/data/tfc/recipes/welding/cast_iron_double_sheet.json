@@ -1,14 +1,5 @@
-{
-  "__comment__": "This file was automatically created by mcresources",
-  "type": "tfc:welding",
-  "first_input": {
-    "tag": "forge:plates/iron"
-  },
-  "second_input": {
-    "tag": "forge:plates/iron"
-  },
-  "tier": 0,
-  "result": {
-    "item": "gtceu:iron_double_plate"
-  }
+const emptyJson = {
+  conditions: [
+      { type: "forge:false" }
+  ]
 }

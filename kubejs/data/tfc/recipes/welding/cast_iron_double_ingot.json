@@ -1,14 +1,5 @@
-{
-  "__comment__": "This file was automatically created by mcresources",
-  "type": "tfc:welding",
-  "first_input": {
-    "tag": "forge:ingots/iron"
-  },
-  "second_input": {
-    "tag": "forge:ingots/iron"
-  },
-  "tier": 0,
-  "result": {
-    "item": "tfc:metal/double_ingot/cast_iron"
-  }
+const emptyJson = {
+  conditions: [
+      { type: "forge:false" }
+  ]
 }
