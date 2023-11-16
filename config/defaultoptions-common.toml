@@ -1,0 +1,6 @@
+#The default difficulty selected for newly created worlds.
+#Allowed Values: PEACEFUL, EASY, NORMAL, HARD
+defaultDifficulty = "NORMAL"
+#Set to true if the difficulty for new world's should be locked to the specific default. This cannot be unlocked by players without external tools! Probably a bad idea. I don't recommend. Why am I adding this option?
+lockDifficulty = false
+
