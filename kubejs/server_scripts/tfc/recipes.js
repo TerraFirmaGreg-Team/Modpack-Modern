@@ -46,6 +46,7 @@ const registerTFCRecipes = (event) => {
 
     registerAutoTFCHeatingRecipes(event)
     registerAutoTFCCastingRecipes(event)
+    registerAutoTFCAnvilRecipes(event)
 
     // Gold Bell
     addCastingRecipe(event, 
@@ -484,9 +485,7 @@ const registerAutoTFCCastingRecipes = (event) => {
             
             if (property.hasMold != undefined)
             {
-
-
-                let recipeId = `tfc:recipes/casting_tfg/${propertyName}_${tfcMetalName}`
+                let recipeId = `tfc:recipes/casting/tfg/${propertyName}_${tfcMetalName}`
                 
                 if (metalSpecifications.canBeUnmolded != undefined || propertyName == "ingot")
                 {
@@ -511,6 +510,24 @@ const registerAutoTFCCastingRecipes = (event) => {
                         )
                     }
                 }
+            }
+        })
+    }
+}
+
+const registerAutoTFCAnvilRecipes = (event) => {
+    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+        metalSpecifications.props.forEach(propertyName => {
+            let property = ItemHeats[propertyName]
+
+            if (property.rules != undefined)
+            {
+                let recipeId = `tfc:recipes/anvil/tfg/${propertyName}_${tfcMetalName}`
+
+                let input = property.input(tfcMetalName)
+                let output = property.output(tfcMetalName)
+
+                addAnvilRecipe(event, recipeId, input, output, metalSpecifications.tier, property.rules)
             }
         })
     }

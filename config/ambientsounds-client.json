@@ -3,7 +3,8 @@
     "engines": 0,
     "volume": 1,
     "useSoundMasterSource": false,
-    "scanStepAmount": 100
+    "scanStepAmount": 100,
+    "playSoundWithOffset": true
   },
   "dimensions": {
     "nether": 1,
@@ -174,6 +175,15 @@
       "overall": 1,
       "ocean": 1,
       "light-wind": 1
+    },
+    "mushroom_fields": {
+      "overall": 1,
+      "cicadas-mushroom-fields": 1,
+      "special-mushroom-fields": 1
+    },
+    "warden": {
+      "overall": 1,
+      "warden": 1
     }
   },
   "fade-volume": 0.005,

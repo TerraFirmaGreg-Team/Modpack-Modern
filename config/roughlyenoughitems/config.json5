@@ -2,10 +2,14 @@
 	"basics": {
 		"favorites": [
 			"{type:\"heracles:heracles\"}",
-			"{type:\"argonauts:party_chat\"}"
+			"{type:\"argonauts:party_chat\"}",
+			"{data:{Count:1b,ForgeCaps:{\"tfc:item_heat\":{heat:0.0f,ticks:0L}},id:\"gtceu:blue_steel_plate\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
 		],
 		"hiddenFavorites": [],
-		"displayHistory": [],
+		"displayHistory": [
+			"{DisplayHistoryCategory:\"minecraft:plugins/tag\",DisplayHistoryContains:0b,DisplayHistoryUUID:\"61388244-a33d-45dd-8228-ce0f1fbf60c9\"}",
+			"{DisplayHistoryCategory:\"tfc:anvil\",DisplayHistoryContains:1b,DisplayHistoryData:{JEISerializer:\"tfc:anvil\",data:\"AgGhhwEBAAEACgAABQAEaGVhdAAAAAAEAAV0aWNrcwAAAAAAAAAAAAG9RQEAAQAKAAAFAARoZWF0AAAAAAQABXRpY2tzAAAAAAAAAAAAAQMQCAkAAcd9AQABAAoAAAUABGhlYXQAAAAABAAFdGlja3MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\",id:\"tfc:anvil/copper_trapdoor\"},DisplayHistoryUUID:\"e24f54cd-cb94-4ff1-824c-23e330a931d1\"}"
+		],
 		// Declares whether cheating mode is on.
 		"cheating": true,
 		"favoritesEnabled": true,
@@ -63,7 +67,8 @@
 			"shouldFilterDisplays": true,
 			"filteringRules": [
 				"{id:\"roughlyenoughitems:manual\",rule:{}}",
-				"{id:\"roughlyenoughitems:basic\",rule:{}}"
+				"{id:\"roughlyenoughitems:basic\",rule:{}}",
+				"{id:\"roughlyenoughitems:hidden_from_recipe_viewers\",rule:{}}"
 			],
 			"filteringQuickCraftCategories": { },
 			"filteredStacks": []
