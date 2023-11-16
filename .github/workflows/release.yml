@@ -61,10 +61,10 @@ jobs:
           modpack-server-path: ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
-          game-version: "1.12.2"
+          game-version: "1.20.1"
           display-name: TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}
           server-display-name: TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server
-          release-type: "release"
+          release-type: "beta"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v0.1.15
