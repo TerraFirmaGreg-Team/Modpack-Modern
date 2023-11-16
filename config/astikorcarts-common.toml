@@ -1,0 +1,40 @@
+
+#Configuration for all carts and cart-like vehicles, check log for automatic "pull_animals" list.
+[carts]
+
+	#The Supply Cart, a type of cart that stores items
+	[carts.supply_cart]
+		#Animals that are able to pull this cart, such as ["minecraft:horse"]
+		#An empty list defaults to all which may wear a saddle but not steered by an item
+		pull_animals = []
+		#Slow speed modifier toggled by the sprint key
+		#Range: -1.0 ~ 0.0
+		slow_speed = -0.65
+		#Base speed modifier applied to animals (-0.5 = half normal speed)
+		#Range: -1.0 ~ 0.0
+		pull_speed = 0.0
+
+	#The Animal Cart, a type of cart to haul other animals
+	[carts.animal_cart]
+		#Animals that are able to pull this cart, such as ["minecraft:horse"]
+		#An empty list defaults to all which may wear a saddle but not steered by an item
+		pull_animals = []
+		#Slow speed modifier toggled by the sprint key
+		#Range: -1.0 ~ 0.0
+		slow_speed = -0.65
+		#Base speed modifier applied to animals (-0.5 = half normal speed)
+		#Range: -1.0 ~ 0.0
+		pull_speed = 0.0
+
+	#The Plow, an animal pulled machine for tilling soil and creating paths
+	[carts.plow]
+		#Animals that are able to pull this cart, such as ["minecraft:horse"]
+		#An empty list defaults to all which may wear a saddle but not steered by an item
+		pull_animals = []
+		#Slow speed modifier toggled by the sprint key
+		#Range: -1.0 ~ 0.0
+		slow_speed = -0.65
+		#Base speed modifier applied to animals (-0.5 = half normal speed)
+		#Range: -1.0 ~ 0.0
+		pull_speed = 0.0
+
