@@ -74,6 +74,29 @@ const registerCreateRecipes = (event) => {
         }
     });
 
+    // Крафт водянного колеса
+    event.custom({
+        type: 'extendedcrafting:shaped_table',
+        pattern: [
+            ' AAA ',
+            'ABDBA',
+            'ACECA',
+            'ABDBA',
+            ' AAA ',
+        ],
+        key: {
+            A:{item : '#minecraft:planks'},
+            B:{item : '#forge:rods/long/steel'},
+            C:{item : '#forge:gears/small/steel'},
+            D:{item : '#forge:gears/steel'},
+            E:{item : 'create:gearbox'},
+        },
+        result: {
+            item: 'create:large_water_wheel',
+            count: 1
+        }
+    });
+
     // Крафт горизонтального gearbox
     event.shaped('create:gearbox', [
         ' A ',
@@ -118,7 +141,14 @@ const registerCreateRecipes = (event) => {
         3
     );
 
-    addAnvilRecipe(event, "galvanized_iron_to_shaft ",{tag:"forge:ingots/galvanized_iron"}, {item: "create:shaft", count: 4}, 3, ["hit_last", "hit_second_last", "hit_third_last"]);
+    addAnvilRecipe(
+        event,
+        "galvanized_iron_to_shaft ",
+        {tag:"forge:ingots/galvanized_iron"},
+        {item: "create:shaft", count: 4},
+        3,
+        ["hit_last", "hit_second_last", "hit_third_last"]
+    );
      */
 
     // todo: использовать ютилити методы для создания рецептов ниже (порядок, heatItem -> heatRecipe -> любые другие тфкшные)
