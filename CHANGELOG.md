@@ -1,11 +1,13 @@
 # Changelog
-## [0.0.3] - 2023-11-16
+## [0.0.4] - 2023-11-16
 ### Modpack fixes
 - Исправлен баг в металлургии. Не переплавляются мелкие куски металла.
 - Исправлены не правильные значения уровня у металлов в ковке.
 ### New mods
 - astikorcarts
 - Dynamic Lights Reforged
+### Removed mods
+- starlight
 
 ## [0.0.3] - 2023-11-16
 ### Modpack fixes
