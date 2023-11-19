@@ -89,7 +89,14 @@ const registerGTRecipes = (event) => {
         D: 'gtceu:tin_single_cable'
     }).id('gtceu:shaped/electric_blast_furnace')
 
-    
+    // LimeWater + Sand -> Mortar
+    event.recipes.gtceu.centrifuge('centrifuge/mortar')             
+        .itemInputs('#forge:sand')
+        .inputFluids(Fluid.of('tfc:limewater', 100))
+        .itemOutputs('16x tfc:mortar')
+        .duration(800)
+        .EUt(8)
+
     // White Dye Recipes
     event.remove({id: 'gtceu:extractor/lily_of_the_valley_dye'})
     event.recipes.gtceu.extractor('extractor/white_dye')             
