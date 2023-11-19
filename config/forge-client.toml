@@ -11,6 +11,14 @@
 	showLoadWarnings = true
 	#Set to true to use a combined DEPTH_STENCIL attachment instead of two separate ones.
 	useCombinedDepthStencilAttachment = false
-	#When enabled, Forge will convert discovered 'Open to LAN' IPv6 addresses to their more compact, compressed representation
+	#[DEPRECATED] Does nothing anymore, IPv6 addresses will be compressed always
 	compressLanIPv6Addresses = true
+	#During block model baking, manually calculates the normal for all faces.
+	#This was the default behavior of forge between versions 31.0 and 47.1.
+	#May result in differences between vanilla rendering and forge rendering.
+	#Will only produce differences for blocks that contain non-axis aligned faces.
+	#You will need to reload your resources to see results.
+	calculateAllNormals = false
+	#When enabled, a slightly biased Direction#getNearest calculation will be used to prevent normal fighting on 45 degree angle faces.
+	stabilizeDirectionGetNearest = true
 
