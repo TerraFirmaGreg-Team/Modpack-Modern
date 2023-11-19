@@ -2,7 +2,9 @@
 
 const gtItemsToHide = [
     'gtceu:flint_mortar',
-    'gtceu:flint_knife'
+    'gtceu:flint_knife',
+    'gtceu:firebrick',
+    'gtceu:firebricks'
 ]
 
 const stoneTypesToHide = [

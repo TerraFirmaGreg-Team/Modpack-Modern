@@ -118,3 +118,7 @@ const groupGTStuff = (event) => {
 
     event.groupItems('tfg:rei_groups/buckets', 'Buckets', [/gtceu:.*_bucket/])
 }
+
+const registerGTCategories = (event) => {
+    event.remove('gtceu:primitive_blast_furnace')
+}
