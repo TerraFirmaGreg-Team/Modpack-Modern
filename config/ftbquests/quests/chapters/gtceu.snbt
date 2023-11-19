@@ -178,6 +178,12 @@
 			]
 			icon: {
 				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "gtceu:steel_axe"
 				tag: {
 					Damage: 0
@@ -278,6 +284,12 @@
 			tasks: [{
 				icon: {
 					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
 					id: "gtceu:steel_hammer"
 					tag: {
 						Damage: 0
