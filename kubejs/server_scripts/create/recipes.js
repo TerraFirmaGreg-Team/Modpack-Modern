@@ -37,7 +37,7 @@ const registerCreateRecipes = (event) => {
         ],
         key: {
             A:{item : 'gtceu:wrought_iron_plate'},
-            B:{item : '#minecraft:planks'},
+            B:{tag : 'minecraft:planks'},
             C:{item : 'gtceu:wrought_iron_bolt'},
             D:{item : 'gtceu:wrought_iron_rod'},
             E:{item : 'gtceu:wrought_iron_gear'},
@@ -60,7 +60,7 @@ const registerCreateRecipes = (event) => {
         ],
         key: {
             A:{item : 'gtceu:wrought_iron_plate'},
-            B:{item : '#minecraft:planks'},
+            B:{tag : 'minecraft:planks'},
             C:{item : 'gtceu:wrought_iron_bolt'},
             D:{item : 'create:shaft'},
             E:{item : 'gtceu:wrought_iron_gear'},
@@ -85,10 +85,10 @@ const registerCreateRecipes = (event) => {
             ' AAA ',
         ],
         key: {
-            A:{item : '#minecraft:planks'},
-            B:{item : '#forge:rods/long/steel'},
-            C:{item : '#forge:gears/small/steel'},
-            D:{item : '#forge:gears/steel'},
+            A:{tag : 'minecraft:planks'},
+            B:{tag : 'forge:rods/long/steel'},
+            C:{tag : 'forge:gears/small/steel'},
+            D:{tag : 'forge:gears/steel'},
             E:{item : 'create:gearbox'},
         },
         result: {
@@ -105,6 +105,17 @@ const registerCreateRecipes = (event) => {
     ], {
         A: 'create:shaft',
         B: 'create:andesite_casing',
+    });
+
+    // Крафт пропелера
+    event.shaped('create:propeller', [
+        'AB ',
+        'BCB',
+        ' BA'
+    ], {
+        A: '#forge:rings/wrought_iron',
+        B: '#forge:plates/wrought_iron',
+        C: '#forge:bolts/wrought_iron',
     });
 
     /* Ждем обьяснения Димы как это работает, точнее нет. Хз где ошибся
