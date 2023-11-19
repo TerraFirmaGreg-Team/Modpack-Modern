@@ -9,7 +9,13 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: "kubejs:logo-512x512.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "kubejs:textures/gui/logo-512x512.png"
+		}
+	}
 	lock_message: "e"
 	loot_crate_no_drop: {
 		boss: 0

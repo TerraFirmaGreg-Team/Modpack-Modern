@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["68123EF5ECFF2594"]
 			id: "5D90D027519F38F2"
 			tasks: [{
 				id: "71455D13B684BD9F"
@@ -24,10 +25,12 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			title: "And Some Sticks!"
+			x: -1.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
 			id: "561485482F38CC78"
 			tasks: [{
 				id: "0310255D94057769"
@@ -41,36 +44,72 @@
 				title: "Any #tfc:rock_knapping"
 				type: "item"
 			}]
-			x: 0.0d
+			title: "Some Rocks!"
+			x: -1.0d
 			y: -1.0d
 		}
 		{
+			dependencies: ["3540A025F192723C"]
 			id: "62AC38702010390C"
 			tasks: [{
 				id: "33B8C798CD2C2803"
 				item: "tfc:straw"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
+			dependencies: [
+				"561485482F38CC78"
+				"5D90D027519F38F2"
+			]
 			id: "4CEDD6988669C312"
 			tasks: [{
-				id: "4DC97F85BD7D7FC8"
+				id: "02D27452EDECDE67"
 				item: {
 					Count: 1b
-					id: "tfc:stone/axe/igneous_extrusive"
+					id: "itemfilters:or"
 					tag: {
-						Damage: 0
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: -0.5d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["4CEDD6988669C312"]
 			id: "7EB790A06A7FF88E"
 			tasks: [
 				{
@@ -101,8 +140,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -0.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			id: "200BF979F46C5716"
@@ -111,18 +150,19 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["0FA9DAE101CA3D6B"]
 			id: "11EADC8282D5B424"
 			tasks: [{
 				id: "119219F02EEF6885"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			id: "03F28B73BE72AF3D"
@@ -140,8 +180,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.0d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			id: "27E720B4F801941B"
@@ -150,8 +190,8 @@
 				item: "tfc:ceramic/pot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
 			id: "06AF9033195FDA19"
@@ -169,8 +209,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			id: "4E2E4EA3B5720727"
@@ -596,6 +636,214 @@
 			x: 6.5d
 			y: 17.5d
 		}
+		{
+			id: "4B0F3DBD28B7AC82"
+			tasks: [{
+				id: "76EB54C1129F8743"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			id: "7C7E7200EEF5EC1E"
+			tasks: [{
+				id: "6067D5C54C937E79"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5D90D027519F38F2"
+				"561485482F38CC78"
+			]
+			id: "3540A025F192723C"
+			tasks: [{
+				id: "11A3FA73CEC40B7D"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/knife/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5D90D027519F38F2"
+				"561485482F38CC78"
+			]
+			id: "0FA9DAE101CA3D6B"
+			tasks: [{
+				id: "0BB34C46DEB6A7CC"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/logo-512x512.png"
+				}
+			}
+			id: "68123EF5ECFF2594"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Thank you for playing our modpack!"
+			tasks: [{
+				id: "2148F50D4AD88050"
+				title: "Start!"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
 	]
-	title: "First"
+	title: "First Age"
 }
