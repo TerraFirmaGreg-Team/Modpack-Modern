@@ -16,4 +16,5 @@ REIEvents.groupEntries(event => {
 
 REIEvents.removeCategories(event => {
     registerGTCategories(event)
+    registerMoreRedCategories(event)
 })

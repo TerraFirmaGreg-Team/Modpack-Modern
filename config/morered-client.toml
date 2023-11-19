@@ -1,0 +1,8 @@
+
+[Rendering]
+	#Render preview of plate blocks before placing them
+	showPlacementPreview = true
+	#Opacity of the render preview. Higher value = less transparent, lower = more transparent
+	#Range: 0.0 ~ 1.0
+	previewPlacementOpacity = 0.4
+

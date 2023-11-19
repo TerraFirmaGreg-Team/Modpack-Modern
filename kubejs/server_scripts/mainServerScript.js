@@ -31,6 +31,7 @@ ServerEvents.recipes(event => {
     registerMinecraftRecipes(event)
     registerGTRecipes(event)
     registerTFCRecipes(event)
+    registerAARecipes(event)
     registerAE2Recipes(event)
     registerCreateRecipes(event)
     registerSBRecipes(event)

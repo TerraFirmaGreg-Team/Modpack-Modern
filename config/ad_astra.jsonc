@@ -1,0 +1,223 @@
+{
+    // If true, entities will be affected by gravity.
+    "doEntityGravity": true,
+    // Do gravity for mobs, players etc.
+    "doLivingEntityGravity": true,
+    "acidRainBurns": true,
+    "doOxygen": true,
+    // Do sound suppression in orbit dimensions. If it gets annoying, you can turn it off.
+    "doSpaceMuffler": true,
+    // Type: Long
+    "oxygenTankSize": 500,
+    // Type: Integer
+    "hammerDurability": 64,
+    "giveAstroduxAtSpawn": false,
+    // Type: Integer
+    "oxygenBarXOffset": 0,
+    // Type: Integer
+    "oxygenBarYOffset": 0,
+    // Type: Float
+    "oxygenBarScale": 1.0,
+    // Type: Integer
+    "energyBarXOffset": 0,
+    // Type: Integer
+    "energyBarYOffset": 0,
+    // Type: Float
+    "energyBarScale": 1.0,
+    // Type: Float
+    "orbitGravity": 3.26,
+    // Type: Integer
+    "oxygenDamage": 1,
+    // Type: Integer
+    "freezeDamage": 1,
+    // Type: Integer
+    "heatDamage": 2,
+    // Type: Integer
+    "acidRainDamage": 3,
+    "allowFlagImages": true,
+    // A list of planets that should be disabled. This is a comma-separated list of planet ids.
+    "disabledPlanets": "",
+    // Prevents stuff like gravity and oxygen checks in the overworld as that's normally not used in Ad Astra. enable if you're making an addon or something that transforms the overworld into some sort of planet.
+    "avoidOverworldChecks": true,
+    "spawning": {
+        "spawnCorruptedLunarians": true,
+        "spawnStarCrawlers": true,
+        "spawnMartianRaptors": true,
+        "spawnMoglers": true,
+        "spawnSulfurCreepers": true,
+        "spawnLunarianWanderingTrader": true
+    },
+    "spaceSuit": {
+        // Type: Long
+        "spaceSuitTankSize": 1000,
+        // Type: Long
+        "netheriteSpaceSuitTankSize": 2000,
+        "netheriteSpaceSuitHasFireResistance": true,
+        /*
+         * The speed when flying forward.
+         * Type: Double
+         */
+        "jetSuitSpeed": 0.8,
+        /*
+         * The speed when idle flying up.
+         * Type: Double
+         */
+        "jetSuitUpwardsSpeed": 0.5,
+        // Type: Long
+        "jetSuitEnergyPerTick": 60,
+        // Type: Long
+        "jetSuitTankSize": 4000,
+        // Type: Long
+        "jetSuitMaxEnergy": 1000000,
+        "enableJetSuitFlight": true,
+        // Type: Integer
+        "jetSuitProtectionMultiplier": 1,
+        // Type: Integer
+        "jetSuitArmorToughness": 5,
+        "spawnJetSuitParticles": true
+    },
+    "vehicles": {
+        /*
+         * The velocity to trigger a vehicle explosion while falling.
+         * Type: Double
+         */
+        "fallingExplosionThreshold": -1.2,
+        /*
+         * How much the explosion should be multiplied by when the vehicle has fallen.
+         * Type: Float
+         */
+        "fallingExplosionMultiplier": 0.7,
+        // Type: Double
+        "gravity": -2.0,
+        // Should the camera move in 3rd person in the rocket and lander for a better view?
+        "moveCameraInVehicle": true,
+        "lander": {
+            // Type: Double
+            "boosterThreshold": -0.1,
+            // Type: Double
+            "boosterSpeed": 0.1
+        },
+        "rover": {
+            "explodeRoverInLava": true,
+            // Type: Long
+            "fuelPerSecond": 10,
+            // Type: Float
+            "turnSpeed": 3.0,
+            // Type: Float
+            "maxTurnSpeed": 6.0,
+            // Type: Float
+            "deceleration": 0.9,
+            // Type: Float
+            "minSpeed": -0.2,
+            // Type: Float
+            "maxSpeed": 0.3,
+            // Type: Long
+            "tankSize": 3000
+        },
+        "rocket": {
+            // Type: Integer
+            "atmosphereLeave": 600,
+            // Type: Integer
+            "countDownTicks": 200,
+            // Type: Double
+            "acceleration": 0.005,
+            // Type: Double
+            "maxSpeed": 0.5,
+            "entitiesBurnUnderRocket": true,
+            // Type: Long
+            "tankSize": 3000,
+            // Type: Long
+            "fuelLaunchCost": 3000,
+            // Type: Long
+            "efficientFuelLaunchCost": 1000,
+            "takeDamageInRocket": true
+        }
+    },
+    "coalGenerator": {
+        // Type: Long
+        "maxEnergy": 9000,
+        // Type: Long
+        "energyPerTick": 10
+    },
+    "compressor": {
+        // Type: Long
+        "maxEnergy": 9000,
+        // Type: Long
+        "energyPerTick": 10
+    },
+    "fuelRefinery": {
+        // Type: Long
+        "maxEnergy": 9000,
+        // Type: Long
+        "energyPerTick": 30,
+        // Type: Long
+        "tankSize": 3000
+    },
+    "oxygenLoader": {
+        // Type: Long
+        "maxEnergy": 9000,
+        // Type: Long
+        "energyPerTick": 10,
+        // Type: Long
+        "tankSize": 3000
+    },
+    "oxygenDistributor": {
+        // Type: Long
+        "maxEnergy": 20000,
+        // Type: Long
+        "fluidConversionEnergyPerTick": 5,
+        // Type: Long
+        "tankSize": 6000,
+        /*
+         * How many blocks the distributor can distribute oxygen in. Be careful increasing this number, as it can reduce server performance significantly. If you are adamant about increasing this value, consider increasing the Oxygen Loader refresh ticks so the server is not constantly checking thousands of blocks.
+         * Range: 1 - 50000
+         */
+        "maxBlockChecks": 3000,
+        /*
+         * How often the oxygen loader checks if the structure is sealed. Performing this operation too often can kill server TPS, so be wary.
+         * Range: 0 - 500
+         */
+        "refreshTicks": 60,
+        /*
+         * Increases the oxygen requirements as the distributor covers more blocks.
+         * Type: Double
+         */
+        "oxygenMultiplier": 1.0,
+        /*
+         * Increases the energy requirements as the distributor covers more blocks.
+         * Type: Double
+         */
+        "energyMultiplier": 3.0
+    },
+    "solarPanel": {
+        // Type: Long
+        "maxEnergy": 18000,
+        // Type: Double
+        "energyMultiplier": 1.0
+    },
+    "waterPump": {
+        // Type: Long
+        "maxEnergy": 9000,
+        // Type: Long
+        "energyPerTick": 10,
+        // Type: Long
+        "tankSize": 6000,
+        // Type: Long
+        "transferPerTick": 100,
+        "deleteWaterBelowWaterPump": true
+    },
+    "energizer": {
+        // Type: Long
+        "maxEnergy": 2000000,
+        // Type: Long
+        "energyPerTick": 600
+    },
+    "cryoFreezer": {
+        // Type: Long
+        "maxEnergy": 30000,
+        // Type: Long
+        "energyPerTick": 18,
+        // Type: Long
+        "tankSize": 3000
+    }
+}
