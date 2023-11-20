@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["68123EF5ECFF2594"]
 			id: "5D90D027519F38F2"
 			tasks: [{
 				id: "71455D13B684BD9F"
@@ -24,10 +25,12 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.0d
+			title: "And Some Sticks!"
+			x: -1.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
 			id: "561485482F38CC78"
 			tasks: [{
 				id: "0310255D94057769"
@@ -41,36 +44,73 @@
 				title: "Any #tfc:rock_knapping"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			title: "Some Rocks!"
+			x: -1.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["3540A025F192723C"]
 			id: "62AC38702010390C"
 			tasks: [{
 				id: "33B8C798CD2C2803"
 				item: "tfc:straw"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
+			dependencies: [
+				"561485482F38CC78"
+				"5D90D027519F38F2"
+			]
 			id: "4CEDD6988669C312"
 			tasks: [{
-				id: "4DC97F85BD7D7FC8"
+				id: "02D27452EDECDE67"
 				item: {
 					Count: 1b
-					id: "tfc:stone/axe/igneous_extrusive"
+					id: "itemfilters:or"
 					tag: {
-						Damage: 0
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
 				}
+				title: "Any Stone Axe"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -0.5d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["4CEDD6988669C312"]
 			id: "7EB790A06A7FF88E"
 			tasks: [
 				{
@@ -101,8 +141,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -0.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			id: "200BF979F46C5716"
@@ -111,20 +151,23 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0FA9DAE101CA3D6B"]
 			id: "11EADC8282D5B424"
 			tasks: [{
+				count: 16L
 				id: "119219F02EEF6885"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 0.5d
+			y: 11.0d
 		}
 		{
+			dependencies: ["0FA9DAE101CA3D6B"]
 			id: "03F28B73BE72AF3D"
 			tasks: [{
 				id: "74EB9D7ED6689A0A"
@@ -140,18 +183,19 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.0d
+			x: -5.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["6CED96AAA011F8F8"]
 			id: "27E720B4F801941B"
 			tasks: [{
 				id: "79A08EB62956C733"
 				item: "tfc:ceramic/pot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: -2.5d
+			y: 6.0d
 		}
 		{
 			id: "06AF9033195FDA19"
@@ -169,10 +213,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "4E2E4EA3B5720727"
 			tasks: [{
 				id: "1D721897028A44FD"
@@ -188,10 +233,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.0d
+			x: 4.5d
+			y: 9.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "64718AACDD967338"
 			tasks: [{
 				id: "3F00DE000ACC2746"
@@ -207,10 +253,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.0d
+			x: 4.5d
+			y: 12.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "5EAD294F09589BEF"
 			tasks: [{
 				id: "70D1FA33890FD00A"
@@ -226,10 +273,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: 4.5d
+			y: 11.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "20828443CF94D0C2"
 			tasks: [{
 				id: "18EE6DF288F268D6"
@@ -245,10 +293,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.0d
+			x: 4.5d
+			y: 13.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "70C5B6216969C9C8"
 			tasks: [{
 				id: "1E0298EDB7A1AE5B"
@@ -264,10 +313,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.0d
+			x: 3.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "6CCA852285F5694C"
 			tasks: [{
 				id: "422FCDCA23EDFE0F"
@@ -283,10 +333,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 7.0d
+			x: -2.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["4E2E4EA3B5720727"]
 			id: "3C0A4ABF69E5767D"
 			tasks: [{
 				id: "22D24CC74D76F9C6"
@@ -303,30 +354,11 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.0d
+			x: 6.0d
+			y: 9.5d
 		}
 		{
-			id: "381A6C57F7755D5C"
-			tasks: [{
-				id: "4FE712BA0D0DDF70"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:ceramic/pickaxe_head_mold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
-		}
-		{
+			dependencies: ["5EAD294F09589BEF"]
 			id: "75CD67ED4DB57601"
 			tasks: [{
 				id: "11690D5D2094DEFD"
@@ -343,50 +375,11 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.0d
+			x: 6.0d
+			y: 11.5d
 		}
 		{
-			id: "6869749EA6A9126D"
-			tasks: [{
-				id: "241CEAF0DC64CCD9"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:ceramic/axe_head_mold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: 5.0d
-		}
-		{
-			id: "62BD2EDBE6F04FA3"
-			tasks: [{
-				id: "4E38337F52261559"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:ceramic/shovel_head_mold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: 6.0d
-		}
-		{
+			dependencies: ["6CCA852285F5694C"]
 			id: "2952E4A932CB1067"
 			tasks: [{
 				id: "721AB0E694AF7371"
@@ -403,10 +396,11 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.0d
+			x: -2.5d
+			y: 16.0d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "48F3DC2F6F5A3A85"
 			tasks: [{
 				id: "4F260F588642E3D9"
@@ -422,10 +416,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 8.0d
+			x: -3.5d
+			y: 13.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "4F1E82E6BF0A991D"
 			tasks: [{
 				id: "5C48A6453BBCA8B2"
@@ -441,10 +436,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.0d
+			x: 1.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "2C10A00C3C3C65FC"
 			tasks: [{
 				id: "258213A36236854F"
@@ -460,10 +456,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 10.0d
+			x: 4.5d
+			y: 10.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "400A0B2B968A03B2"
 			tasks: [{
 				id: "6CE3A92B52C5CBB2"
@@ -479,10 +476,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 11.0d
+			x: -3.5d
+			y: 12.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "75EB7363C7BD5E44"
 			tasks: [{
 				id: "5DBB74547DCB0EA1"
@@ -498,10 +496,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 12.0d
+			x: 2.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "56875E72AC1D9463"
 			tasks: [{
 				id: "29E372F3B3ACB251"
@@ -517,10 +516,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 13.0d
+			x: -3.5d
+			y: 11.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "315AE06EA3F01356"
 			tasks: [{
 				id: "7C2E23CB56EA897F"
@@ -536,10 +536,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 14.0d
+			x: -1.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "793359D370751DEB"
 			tasks: [{
 				id: "21399C349E6D29E8"
@@ -555,10 +556,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 15.0d
+			x: -0.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["11EADC8282D5B424"]
 			id: "1E429C2259ACFB9C"
 			tasks: [{
 				id: "1A6037E284F635BF"
@@ -574,10 +576,11 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 16.5d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
+			dependencies: ["5F3DF656286E539B"]
 			id: "61BC3A002A0C1820"
 			tasks: [{
 				id: "5DE628225D0A321A"
@@ -593,9 +596,2446 @@
 				}
 				type: "item"
 			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5D90D027519F38F2"
+				"561485482F38CC78"
+			]
+			id: "4B0F3DBD28B7AC82"
+			tasks: [{
+				id: "76EB54C1129F8743"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hammer/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Stone Hammer"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"561485482F38CC78"
+				"5D90D027519F38F2"
+			]
+			id: "7C7E7200EEF5EC1E"
+			tasks: [{
+				id: "6067D5C54C937E79"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Stone Hoe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5D90D027519F38F2"
+				"561485482F38CC78"
+			]
+			id: "3540A025F192723C"
+			tasks: [{
+				id: "11A3FA73CEC40B7D"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/knife/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Stone Knife"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5D90D027519F38F2"
+				"561485482F38CC78"
+			]
+			id: "0FA9DAE101CA3D6B"
+			tasks: [{
+				id: "0BB34C46DEB6A7CC"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/shovel/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Stone Shovel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/logo-512x512.png"
+				}
+			}
+			id: "68123EF5ECFF2594"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "Thank you for playing our modpack!"
+			tasks: [{
+				id: "2148F50D4AD88050"
+				title: "Start!"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5D90D027519F38F2"
+				"561485482F38CC78"
+			]
+			id: "431A1EF64DB1931A"
+			tasks: [{
+				id: "38AF4D59A71FFCBA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Stone Javelin"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03F28B73BE72AF3D"]
+			id: "0B85F8E2B2492AF5"
+			tasks: [{
+				id: "55ACCB1D12A4642A"
+				item: "tfc:powder/kaolinite"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0B85F8E2B2492AF5"
+				"44270BBA91FBF82A"
+			]
+			id: "5F3DF656286E539B"
+			tasks: [{
+				id: "3C5FE4C9B989F079"
+				item: "tfc:fire_clay"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F3DF656286E539B"]
+			id: "730459064C7A19D5"
+			tasks: [{
+				id: "67490AF29131B294"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_fire_ingot_mold"
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5F3DF656286E539B"]
+			id: "23917F19C46D1C74"
+			tasks: [{
+				id: "3C326BF3033D840E"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_fire_brick"
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0BBB80D3C54DB710"]
+			id: "745309A2EB8AC15E"
+			tasks: [{
+				id: "1D298C9AB04ED5E8"
+				item: "tfc:mortar"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["23917F19C46D1C74"]
+			id: "13726063C3F72DD4"
+			tasks: [{
+				id: "74EBE58B6B929A3B"
+				item: "tfc:ceramic/fire_brick"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["730459064C7A19D5"]
+			id: "55C21115C23D603B"
+			tasks: [{
+				id: "6D9CA4DEC19900F7"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/fire_ingot_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["61BC3A002A0C1820"]
+			id: "70A801602E5DED1C"
+			tasks: [{
+				id: "5BFD037119AAC882"
+				item: "tfc:crucible"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "3AC87C52A9C2325C"
+			tasks: [{
+				id: "75849452C6BB2B1D"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_flower_pot"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "1993BBDC2E1C2191"
+			tasks: [{
+				id: "5E2C4DC9CDD4BF78"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_bowl"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "1C7E6F5B8661122A"
+			tasks: [{
+				id: "11E97C982CB657A5"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_vessel"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "1EC4A47FA6EAE2FC"
+			tasks: [{
+				id: "647DE7CFADDBFBFB"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_spindle_head"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "03F673FAD735C997"
+			tasks: [{
+				id: "3DE3B8AAD94EC578"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_jug"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "0C9D338275664E7F"
+			tasks: [{
+				id: "69264B98DC94436C"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_large_vessel"
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "6CED96AAA011F8F8"
+			tasks: [{
+				id: "6C740FC0D2248F54"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_pot"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "14F782F09F6A2CBF"
+			tasks: [{
+				id: "05FAD501BD0AF745"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_pan"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "7741B22C9BCBC0D7"
+			tasks: [{
+				id: "672FC0D3F78C1584"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_blowpipe"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["13A3E3F28A68605C"]
+			id: "0BBB80D3C54DB710"
+			tasks: [{
+				id: "6DC54CB5FB87AD6C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:barrels"
+					}
+				}
+				title: "Any Wooden Barrel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4387BD152F69062F"]
+			id: "13A3E3F28A68605C"
+			tasks: [{
+				id: "3757D7CA39DF5CA8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:lumber"
+					}
+				}
+				title: "Any Lumber"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			id: "4387BD152F69062F"
+			tasks: [{
+				id: "33887194FB21887B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:copper_saw"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:bismuth_bronze_saw"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:bronze_saw"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:black_bronze_saw"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				match_nbt: false
+				title: "Any Low Tier Saw"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11EADC8282D5B424"]
+			id: "1B124F13BD957183"
+			tasks: [{
+				id: "6187B454A0AD863C"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_bell_mold"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["315AE06EA3F01356"]
+			id: "3322C23223A5A9ED"
+			tasks: [{
+				id: "445C0F6C32F032AE"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/knife_blade_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1B124F13BD957183"]
+			id: "2CA0866334D32A5C"
+			tasks: [{
+				id: "706FA93A97190FF8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/bell_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4F1E82E6BF0A991D"]
+			id: "3B832562BDD9F59A"
+			tasks: [{
+				id: "074FC2652DADAF8B"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/hammer_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["75EB7363C7BD5E44"]
+			id: "02AC4171BC7DC1A1"
+			tasks: [{
+				id: "4A174F2DF693ED4A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/sword_blade_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["70C5B6216969C9C8"]
+			id: "491579E0C3B0D96C"
+			tasks: [{
+				id: "112C262887535AEA"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/shovel_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["20828443CF94D0C2"]
+			id: "0A625B10D634FF4B"
+			tasks: [{
+				id: "2FC04A1B04D840A6"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/axe_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["64718AACDD967338"]
+			id: "498D0166EDF3B92B"
+			tasks: [{
+				id: "1AB9215B0375D7FC"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/pickaxe_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2C10A00C3C3C65FC"]
+			id: "477C93D3FA02AE8A"
+			tasks: [{
+				id: "7028BE8B9069DAE9"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/saw_blade_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["48F3DC2F6F5A3A85"]
+			id: "453B24AF79704562"
+			tasks: [{
+				id: "094627822A598501"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/chisel_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["400A0B2B968A03B2"]
+			id: "0DC55594049F35B6"
+			tasks: [{
+				id: "09FE2FC3E697697E"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/javelin_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["56875E72AC1D9463"]
+			id: "5B7F30CC889083D7"
+			tasks: [{
+				id: "717E86F60FE2FBE1"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/mace_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1EC4A47FA6EAE2FC"]
+			id: "4309BC49D33CEA87"
+			tasks: [{
+				id: "0D8FBA14F8AA033B"
+				item: "tfc:ceramic/spindle_head"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7741B22C9BCBC0D7"]
+			id: "2D90585F9E5D7555"
+			tasks: [{
+				id: "1585FE7FFDE5BFBA"
+				item: "tfc:ceramic_blowpipe"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["14F782F09F6A2CBF"]
+			id: "039FA9AAFE2E9DC3"
+			tasks: [{
+				id: "0884E2B8150FAD80"
+				item: "tfc:pan/empty"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3AC87C52A9C2325C"]
+			id: "7F9ACA5A13D3BE87"
+			tasks: [{
+				id: "4000694B185A2DB1"
+				item: "minecraft:flower_pot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1993BBDC2E1C2191"]
+			id: "6341CD281790E273"
+			tasks: [{
+				id: "5E1AB57F51BFBCFA"
+				item: "tfc:ceramic/bowl"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["03F673FAD735C997"]
+			id: "33CE232F4B8D32CA"
+			tasks: [{
+				id: "69347372D0B37071"
+				item: "tfc:ceramic/jug"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0C9D338275664E7F"]
+			id: "1B14B63A28E4031F"
+			tasks: [{
+				id: "2E36FCDE36880041"
+				item: "tfc:ceramic/large_vessel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1C7E6F5B8661122A"]
+			id: "7AED21D8176F4C08"
+			tasks: [{
+				id: "4757D1D7C1A6FD17"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/vessel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1E429C2259ACFB9C"]
+			id: "365A81586D4355F0"
+			tasks: [{
+				id: "76E9D61CA664A1A9"
+				item: "minecraft:brick"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["192A08D1468805EC"]
+			id: "44270BBA91FBF82A"
+			tasks: [{
+				id: "648B99E07B3FEB40"
+				item: "tfc:powder/graphite"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["793359D370751DEB"]
+			id: "08EE78A32C28C732"
+			tasks: [{
+				id: "374F432237EA79C5"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/scythe_blade_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"456C2E4B8BF1E454"
+				"2DF37B2754C4BE79"
+			]
+			id: "192A08D1468805EC"
+			tasks: [
+				{
+					id: "0ED498BAA48DC61C"
+					item: "tfc:quern"
+					type: "item"
+				}
+				{
+					id: "2F48CF05B7F12811"
+					item: {
+						Count: 1b
+						id: "tfc:handstone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			id: "2DF37B2754C4BE79"
+			tasks: [{
+				id: "6C3AA1DF8420E2A3"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:copper_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:bismuth_bronze_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:bronze_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "gtceu:black_bronze_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Low Tier Pickaxe"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			id: "456C2E4B8BF1E454"
+			tasks: [{
+				id: "2174C402446B8CC5"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/chisel/copper"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/chisel/bismuth_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/chisel/bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/chisel/black_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Low Tier Chisel"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"13726063C3F72DD4"
+				"745309A2EB8AC15E"
+			]
+			id: "420ECFEFFECF4DA2"
+			tasks: [
+				{
+					count: 8L
+					id: "5B4E28EE8029264B"
+					item: "tfc:fire_bricks"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7A3EB0F9C0780DDB"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:wrought_iron_plate"
+					}
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["420ECFEFFECF4DA2"]
+			id: "128801FFF7500428"
+			tasks: [{
+				id: "51F0A7107108F49C"
+				item: "tfc:blast_furnace"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -2.5d
+		}
+		{
+			id: "4750B30732855283"
+			tasks: [{
+				id: "50A0A644D9145828"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:wrought_iron_ingot"
+				}
+				type: "item"
+			}]
 			x: 6.5d
-			y: 17.5d
+			y: 0.0d
+		}
+		{
+			id: "2DFD2A1F333AF0E4"
+			tasks: [{
+				id: "1AC1EEB791B7E896"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "78C76E8351063613"
+			tasks: [{
+				id: "40920FF1002216E5"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:black_steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "112A5A6C99473083"
+			tasks: [{
+				id: "01883E69CB0019E5"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:red_steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			id: "2C7869E988714391"
+			tasks: [{
+				id: "11B380300D9EE6B8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:blue_steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "7238C6F94219076D"
+			tasks: [{
+				id: "43953F62594A6A88"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Be sure to &aproperly&r read &lthis&r quest - it has some &dimportant information&r that will remain relevant all throughout your playthrough."
+				""
+				"Informative quests such as this will appear in the chapter they are unlocked. You can also consult the &o&b\"Tips and Tricks\"&r page if you feel like you're forgetting something."
+				""
+				"The quest structure is intended to guide you through all the major milestones in &aGregTech&r progression. Every single quest should be &2beneficial&r to look at in some way - if something is 100% optional, we'll mention it, so don't worry about missing any tricks."
+				"{@pagebreak}"
+				"The &aGTCEu Community Pack&r can be played on &dPeaceful,&r and we highly urge you to do so, as there is little benefit from mobs and their drops. You may also want to use &o/keepInventory&r, &o/sethome&r, and abuse minimap teleport as you see fit."
+				""
+				"Although these features won't ruin your day if you choose not to use them, this modpack is &4not&r focused on providing a punishing &eSurvival&r experience, but more so learning the ins and outs of &aGregTech.&r"
+				"{@pagebreak}"
+				"Lastly, it's good to be &lsavvy&r with &eJEI.&r &aGregTech&r items will frequently have several recipes, so do not assume the first recipe &eJEI&r shows you will be the most efficient. Good &eJEI&r usage involves the &bidentification of patterns&r in autogenerated recipes (example: all the Iron related items &6macerate&r into Iron Dust)."
+				""
+				"When complex recipes arise - and yes, &aGTCEu&r can be intimidating - we will make sure to point out &5efficient routes&r you can take - however, we urge you to experiment on your own. It's no fun to follow the quest book by rote!"
+			]
+			icon: "ftbquests:book"
+			id: "13E9DF7E980CFC5B"
+			size: 0.75d
+			subtitle: "Read this, and read it again!"
+			tasks: [{
+				id: "04CC2E592A648F06"
+				title: "I have read this page multiple times"
+				type: "checkmark"
+			}]
+			title: "Important Information"
+			x: -8.625d
+			y: -6.75d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"The ore generation in &2GregTech&r is very different to vanilla or normal modded Minecraft. All ores generate in &6huge veins&r which can contain &dthousands&o&r of ore blocks!"
+				""
+				"The full extent of ore generation is explained in the Tips and Tricks tab, but here is what you need to know:"
+				""
+				"&9-&r Ore veins generate in a &4Grid&r. Every vein is &9spaced by 3 chunks&r from one to another in a cardinal direction. We have added &2In Game Info&r to display if you are located in an Ore vein in the top-left corner of your screen, as seen in GregTech: New Horizons."
+				""
+				"&9-&r It's a good practice to make &dWaypoints&r (default &4B&r) for every vein you find, and to label their type. You may want to come back to the vein several times."
+			]
+			icon: "gtceu:cobaltite_ore"
+			id: "0C690272ED4FB1C3"
+			size: 0.75d
+			tasks: [{
+				id: "3FA401CACE8BBE5D"
+				title: "Woah, ores sure sound exciting."
+				type: "checkmark"
+			}]
+			title: "Ore Generation"
+			x: -7.875d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"Did you know &aGregTech&r comes with tools equivalent to vanilla tools? And did you know that some of them are actually &6&lstronger&r than their vanilla equivalents?"
+				""
+				"For example, look at the selection of GTCEu Axes. If you mine a Wood Log, it'll fell the &2entire tree&r for you."
+				""
+				"Constant lumberjacking will eat through an Axe's &9durability&r in no time, so you may want to make your Axe out of &estronger material&r such as &bDiamond&r (but make sure you don't make a vanilla diamond Axe!)."
+				""
+				"Take these &2Spruce saplings&r and grow some giant trees. There'll be a lot of smelting in the near future, and wooden planks are a surprisingly &deffective&r fuel source!"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:steel_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "13354F24F80F65FB"
+			rewards: [{
+				count: 8
+				id: "60E07F9D0763E8E1"
+				item: "minecraft:spruce_sapling"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Who needs Veinminer?"
+			tasks: [{
+				id: "3880A08A72884627"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/tree_felling"
+					}
+				}
+				title: "Grab any Lumber Axe!"
+				type: "item"
+			}]
+			title: "Timber!"
+			x: -8.625d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"Here's a &6nifty&r list of some resources that will come in handy for early-game. Collect more than we're asking for in this quest - you'll end up running out before you know it, and it's always a good habit to get more resources than you need in &aGregTech&r."
+				""
+				"We would advise that you &etackle this quest first&r and claim the reward. That way, you can do a little bit of main (read: &ointeresting&r) progression &4&lBEFORE&r you're forced to go mining."
+				""
+				"Rubber trees can be found in &aForest&r, &2Jungle&r or &aSwamp&r biomes."
+				""
+				"Eight furnaces might seem &cexcessive&r if you're new to &aGregTech,&r but trust us, you can never have too many."
+			]
+			icon: "minecraft:sugar_cane"
+			id: "0436F7B60BDEB091"
+			rewards: [{
+				count: 24
+				id: "2D2C971E9E651C2C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Gather some resources!"
+			tasks: [
+				{
+					count: 4L
+					id: "37DD7A28A3A7CB26"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0F60FE32A8F7720E"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "23A44568A9FAACA2"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00328CEF98F57407"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1C05A84175DBD3A9"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
+			title: "What do I need to progress?"
+			x: -7.875d
+			y: -5.25d
+		}
+		{
+			description: [
+				"A Minecraft adventure starting with Wood? How &ooriginal&r. I want a refund!"
+				""
+				"If you're familiar with GregTech, you may be aware of its &cmany nerfs&r to vanilla recipes. GTCEu does include its fair share - take a look at the crafting recipes for &eBuckets,&r or &ePaper&r. However, we'll ease off in earlygame, and 1 Log will give you 4 Planks. &aRejoice!&r"
+				""
+				"Here, take some food for your troubles. If you're playing on &aPeaceful&r difficulty, stash it away in a chest for later."
+			]
+			icon: "minecraft:oak_log"
+			id: "0EAF2C5B5EB755C5"
+			rewards: [{
+				count: 12
+				id: "450D8183B7515C1D"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "Begin your playthrough as before"
+			tasks: [
+				{
+					count: 6L
+					id: "34F2867EAF0914BF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					match_nbt: false
+					title: "Punch some trees!"
+					type: "item"
+				}
+				{
+					id: "22B6D3C1033D47DA"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "The Beginning of it All"
+			x: -7.875d
+			y: -6.75d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"Okay, we were generous enough to &cnot nerf&r wood ratios, but this is GregTech - charcoal smelting is &4&lnot possible&r in a Furnace! You will need to make a &d&lCoke Oven&r to start getting your grubby hands on some &6charcoal&r."
+				""
+				"Wooden planks are still pretty good as &6furnace fuel&r, especially since you get &l&3four&r from one log."
+				""
+				"If this displeases you, you can &brevert this back&r to vanilla behaviour in the &aGTCEu&r configs."
+			]
+			icon: "minecraft:charcoal"
+			id: "36DD94945D5B4A80"
+			rewards: [{
+				count: 16
+				id: "5408859E43668198"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Not here!"
+			tasks: [{
+				count: 48L
+				id: "3DF01E4FACBB1D53"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "We demand more logs."
+				type: "item"
+			}]
+			title: "Charcoal?"
+			x: -8.625d
+			y: -5.25d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"In the real world, iron isn't &oonly&r found as pure Iron Ore. Instead, it's found in a &avariety&r of &eoxide forms&r or &eminerals&r."
+				""
+				"You'll want to go and collect quite a bit of Iron, because you're going to need &9a bunch&r very soon. If you're not having any luck mining, the &aOre Generation&r quest tab holds a lot of information on &eore veins&r. Any of the raw ores we're asking for in this quest can be directly smelted into Iron. That comes to &dfour different veins&r that can give you Iron!"
+				"{@pagebreak}"
+				"Whilst it may be common habit to hoard ore in &bmodded Minecraft&r prior to unlocking some kind of &aore multiplication&r, don't worry about ore processing yet. Direct smelting will be &ohead-and-shoulders&r the most efficient method for a long, &olong&r while, given how easy it is to obtain a lot of ore in a &emining trip&r."
+				""
+				"Gather &l&cany&r of the requested &dRaw Ores&r to complete this quest!"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:iron_ingot"
+			}
+			id: "1ECBA1CBFFB9F625"
+			rewards: [{
+				count: 32
+				id: "5CD664F60E977214"
+				item: "gtceu:magnetite_ore"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Isn't it ironic... don't you think?"
+			tasks: [{
+				id: "063705687ED657F5"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:raw_iron"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_yellow_limonite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_magnetite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_basaltic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_granitic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_pyrite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_goethite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_hematite"
+							}
+						]
+					}
+				}
+				title: "Gather any type of Raw Iron Ore"
+				type: "item"
+			}]
+			title: "Iron, Iron, Iron!"
+			x: -7.125d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"This hammer is very different from the one you'll use for crafting. It actually works as a &d3x3 pickaxe&r!"
+				""
+				"If you are familiar with &a&lTinker's Construct&r, it behaves &esimilarly&r to hammers from that mod."
+				""
+				"Make &bgood use&r of these hammers! This bad boy will help you to clear out an entire vein in &6record time&r."
+				""
+				"Note: Any quest with GregTech tools can be complete with tools crafted from any material - not just the one displayed."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:steel_mining_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4A365A7CC9E374F9"
+			size: 0.75d
+			subtitle: "Mining just became efficient"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4F372C393ADC6CE2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				title: "Any Mining Hammer will do."
+				type: "item"
+			}]
+			title: "Hammer down!"
+			x: -6.375d
+			y: -6.0d
+		}
+		{
+			description: [
+				"New to this updated pack is a Tutorials tab. The information inside is available to view at any time, but whenever it becomes relevant, you will be directed towards it for some light reading."
+				""
+				"The information found inside may interest you if you would like a deeper insight into some of GTCEu's mechanics, and in some cases is absolutely indispensable."
+				""
+				"Quests that unlock a tutorial node will have an orange-ish descriptor at the bottom of the quest description. You can immediately travel to the tutorial tab by clicking on the quest link at the top right of the quest's box!"
+				""
+				"Get reading!"
+			]
+			icon: "minecraft:lectern"
+			id: "008ABF78E56209F7"
+			size: 0.75d
+			subtitle: "Tips and tricks to help you prosper"
+			tasks: [{
+				id: "4EBD5D697E085217"
+				title: "I have read this page multiple times"
+				type: "checkmark"
+			}]
+			title: "Tutorialised"
+			x: -7.125d
+			y: -5.25d
+		}
+		{
+			description: [""]
+			icon: "gtceu:terminal"
+			id: "5E3DB52E778FE6FE"
+			size: 0.75d
+			tasks: [{
+				id: "7F78101DF197EAF3"
+				type: "checkmark"
+			}]
+			title: "The Terminal"
+			x: -6.375d
+			y: -5.25d
+		}
+		{
+			dependencies: ["1ECBA1CBFFB9F625"]
+			description: [
+				"Alright - your first &oproper&r &aGregTech&r tool! GT tools can be made out of many different materials. When used in crafting recipes, they are &bnot consumed&r, instead losing durability. The first type is Iron - but you could opt for Wrought Iron if you already tackled that quest."
+				""
+				"&9&lHammer&f:&r A crafting tool that shows up in a lot of earlygame recipes. Its secondary function is muting machines by &msmacking&r right-clicking them."
+				""
+				"As a sidenote on all &aGregTech&r tools, you can repair them in an Anvil using the material of the tool itself, just like any vanilla tool. If you are finding yourself short on experience, &eBottles o' Enchanting&r are now craftable."
+			]
+			id: "7DEB73FD649BDFB6"
+			rewards: [{
+				id: "6C50A2A3D43D3FEE"
+				item: "gtceu:iron_plate"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "Your first GT Tool!"
+			tasks: [{
+				icon: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "1A4DDB914D7D2F3C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/hammers"
+					}
+				}
+				title: "Any Hammer!"
+				type: "item"
+			}]
+			title: "STOP! Hammer time!"
+			x: -5.625d
+			y: -5.25d
+		}
+		{
+			dependencies: ["7DEB73FD649BDFB6"]
+			description: [
+				"The bucket recipe has been &d&lchanged.&r It now requires plates - &owahoo&r!"
+				""
+				"Plates are used absolutely &beverywhere&r in &aGregTech&r. Combining two ingots with your new &9hammer&r in a crafting table will make a plate. This ratio is kind of &cexpensive,&r but better recipes for plates will come later."
+				""
+				"Here, take this &6Wooden Barrel&r full of &bwater&r as a reward. Huh... isn't that an odd reward? Well, it's here just to teach you that all &aGTCEu&r tanks are portable!"
+			]
+			icon: "minecraft:bucket"
+			id: "592BD683A48C2AA2"
+			rewards: [{
+				id: "68D4ECFA9AD5349A"
+				item: {
+					Count: 1b
+					id: "gtceu:wood_drum"
+					tag: {
+						Fluid: {
+							Amount: 16000L
+							FluidName: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "#realism"
+			tasks: [{
+				id: "5DD165E4EB34C022"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			title: "Greg has struck"
+			x: -5.625d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"Crafting can quickly get &etiresome&r. How about making use of your &2new saw&r to make this Crafting table?"
+				""
+				"It allows you to craft from adjacent inventories, making classic &aGregTech&r microcrafting so much less &4tedious&r."
+				""
+				"Saw the table again for a lower-profile Slab version."
+			]
+			icon: "craftingstation:crafting_station"
+			id: "411AB552514EA14C"
+			size: 0.75d
+			subtitle: "No, Tinkers' is not in this modpack"
+			tasks: [{
+				id: "30D40010C8E6E115"
+				item: "craftingstation:crafting_station"
+				type: "item"
+			}]
+			title: "Crafting Station"
+			x: -7.125d
+			y: -6.75d
+		}
+		{
+			dependencies: ["7DEB73FD649BDFB6"]
+			description: [
+				"More GregTech tools are required for progression - here are the ones to lay eyes on."
+				""
+				"&9&lWrench:&r A crafting tool, but also a mining tool for GregTech machines (perfect if you think using pickaxes is unethical). It also boasts right click functions to double as a &6wrench for other mods&r. Right-click also allows you to set the output side of GregTech machines, and sneak-right-clicking rotates machines."
+				""
+				"&9&lFile:&r A crafting tool... and that's it. Yay!"
+				""
+				"&9&lSaw:&r Yet another crafting tool. If we were any more evil, we would force its use if you wanted to obtain 4 planks and 4 sticks from their respective crafting recipes. That being said, you can instead use it to get &a6 Planks per Log&r, if you wish."
+				"{@pagebreak}"
+				"&eNote:&r Any Quest with GregTech tools can be completed with the tool crafted from any material, not just the one displayed."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2001CB4968D3E0A2"
+			shape: "rsquare"
+			size: 0.75d
+			tasks: [
+				{
+					id: "54E092F42DA65B86"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					title: "Any Wrench!"
+					type: "item"
+				}
+				{
+					id: "4D6B7E2B4C8E5747"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					title: "Any File!"
+					type: "item"
+				}
+				{
+					id: "23D6CF49FC7E82A9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					title: "Any Saw!"
+					type: "item"
+				}
+			]
+			title: "Important Tools"
+			x: -5.625d
+			y: -6.75d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"More resources are always nice. You're getting close to entering the &6age of Steam&r - Copper and Tin are required in many &6Steam Age&r machines, so check the ore tab to find out what veins they can be found in, and get mining!"
+				""
+				"If the different ore names are &bconfusing&r, you can tell which elements an ore holds at a glance by reading the &dmolecular formula&r in its tooltip. Copper is &oCu&r, Tin is &oSn&r, Iron is &oFe&r, and you can consult a &3periodic table&r for the rest. It's time to brush up on your chemistry - you'll need it for &llater&r!"
+				""
+				"This quest can be completed with &9either metal&r, so you can claim the metal you're missinng as the reward. Be sure to find a source of both soon, as a &a&ocertain&r&a Copper-Tin alloy&r will be needed to get through the &6Steam Age&r."
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "minecraft:copper_ingot"
+			}
+			id: "45969FFBF88F4FBB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C28FA1A5275D24E"
+				table_id: 1702176335602373230L
+				type: "choice"
+			}]
+			size: 0.75d
+			subtitle: "Gather more resources!"
+			tasks: [
+				{
+					count: 32L
+					id: "1AD2D9534B7E5EE6"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "42CED8D2386E0F14"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+			]
+			title: "Onwards to the Age of Bronze!"
+			x: -6.375d
+			y: -6.75d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"More tools - they're not critically important right now, but you'll need to make these at some point."
+				""
+				"&9&lScrewdriver:&r A crafting tool. It's used for special configuration of machines and covers."
+				""
+				"&9&lWire Cutter:&r A crafting tool. You'll need it if you want to configure wire connections. Right-clicking on wires will enable or disable connection to other blocks."
+				""
+				"&9&lMortar:&r A crafting tool, used to grind various things down into dust form."
+				""
+				"&9&lKnife:&r A pretty mediocre weapon, better suited as - &oyou guessed it&r - a crafting tool!"
+				""
+				"&9&lSoft Mallet:&r A tool to toggle machine operation with a simple right-click."
+				"{@pagebreak}"
+				"There are a couple of other tools that are quite niche, but deserve a mention."
+				""
+				"&9&lCrowbar:&r A helpful tool that can remove covers from &aGregTech&r machines by right-clicking the side."
+				""
+				"&9&lScythe:&r A powerful farming tool that can automatically replant your crops in a large area. It's also a surprisingly good weapon!"
+				""
+				"&9&lPlunger:&r A tool to clear stuck fluids from GregTech&a machines."
+				""
+				"&9&lButchery Knife:&r A weapon that comes pre-enchanted with &6Looting III&r. You might want to use it to gather leather and food."
+				"{@pagebreak}"
+				"&e&lNote:&r This quest's reward is &3Damascus Steel&r - a rare material which can only be found as overworld loot. It far surpasses the materials you have now, so be sure to use it!"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5C3501DD3B4788FA"
+			rewards: [{
+				count: 16
+				id: "433F0ED89B586383"
+				item: "gtceu:damascus_steel_ingot"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [
+				{
+					id: "4055931FAD6A5087"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					title: "Any Screwdriver!"
+					type: "item"
+				}
+				{
+					id: "0CB546DCA11BB335"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wire_cutters"
+						}
+					}
+					title: "Any Wire Cutter!"
+					type: "item"
+				}
+				{
+					id: "4DF1C23D7DD1FAD6"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					title: "Any Mortar!"
+					type: "item"
+				}
+				{
+					id: "397DD831CA0665E7"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "Any Knife!"
+					type: "item"
+				}
+				{
+					id: "1BFE642ED0595A93"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					title: "Any Soft Mallet!"
+					type: "item"
+				}
+			]
+			title: "More Tools"
+			x: -5.625d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"&6Bronze&r is an &2alloy&r of Copper and Tin. Grind down 3 parts Copper and 1 part Tin into dust, then combine and smelt them. If you are confused on how this is done, take a look at the &o\"&dMore Tools&r&o\"&r quest."
+				""
+				"Aim to make &amany more&r Bronze ingots than is called for here. This is the main material for the &6Steam Age&r, and you will need LOTS of it."
+				""
+				"&6&lThe progression now continues in the Steam Age chapter.&r"
+				"{@pagebreak}"
+				"&l&3Lore&r: Bronze in real life is closer to a ratio of 7:1 for Copper to Tin. Here &o(and in most of modded Minecraft)&r this is &4not&r the case for the sake of game balance. There are a lot of things like this that need to be tweaked - &eno realism here&r."
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:bronze_ingot"
+			}
+			id: "315DBB3B23F95E0D"
+			rewards: [{
+				count: 32
+				id: "5F229B651404DF0E"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.75d
+			subtitle: "Humanity's first alloy - and yours too!"
+			tasks: [{
+				count: 24L
+				id: "39AEA2923971A2B5"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "Bronze Age? No, &6Steam Age&r!"
+			x: -8.75d
+			y: -8.75d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"The &e&lCoke Oven&r will likely be your first &aGregTech&r multiblock. Congratulations!"
+				""
+				"It is used to make &aCoke&r from &eCoal&r, or &aCharcoal&r from &eWood&r, in addition to &dliquid Creosote&r as a &3bonus&r output."
+				""
+				"Take a look at the &6Multiblock Preview&r tab in JEI to see the structure pattern. There is also a dedicated quest tab for the &bCoke Oven&r in the &6Multiblock Dilemma&r tab - future multiblocks will also be documented for your enjoyment."
+				"{@pagebreak}"
+				"&o&l&3Lore:&r &oThe concept of multiblocks is a modded Minecraft classic. Think of IC2's Nuclear Reactor, or Railcraft's Coke Oven - truly revolutionary at the time!&r"
+			]
+			icon: "gtceu:coke_oven"
+			id: "4946FC5BCA4CCA88"
+			min_required_dependencies: 1
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Your first big project... hopefully"
+			tasks: [{
+				id: "3545479A7C09CDFC"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			title: "Coke Oven"
+			x: -5.25d
+			y: -8.25d
+		}
+		{
+			dependencies: ["36DD94945D5B4A80"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Wrought Iron has a very low carbon content, but that's enough to make it &btougher&r than regular Iron."
+				""
+				"&aGregTech&r tools made of Wrought Iron are &650% more durable&r than their Iron cousins. You might want to consider using Wrought Iron until you unlock &2something better&r."
+				""
+				"To obtain Wrought Iron, you can &6smelt&r Iron Nuggets into Wrought Iron Nuggets, then recombine them into an ingot. Make sure you don't convert all of your Iron supply, as the two are &4&lnot&r interchangeable."
+				""
+				"This may be time-consuming, but rest assured that you will unlock a &ebetter way&r to produce Wrought Iron before long."
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:wrought_iron_ingot"
+			}
+			id: "563C96885A227C9F"
+			rewards: [{
+				count: 5
+				id: "3CDB383AFEBDB519"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "Murder, she Wrought"
+			tasks: [{
+				id: "3DAB1D757B3B049D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/wrought_iron"
+					}
+				}
+				title: "Wrought Iron Ingot"
+				type: "item"
+			}]
+			title: "Better Than Iron"
+			x: -7.875d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"In this &blightweight&r modpack, we've included enough QoL to &o(hopefully)&r fit your needs, and the pack is &aperfectly playable&r as is."
+				""
+				"&dFunctional Storage&r and &dApplied Energistics 2&r make appearances to help with &estorage&r and &6logistics.&r Their recipes have been modified to fit progression, but you won't need to play 50 hours to make your first &5Molecular Assembler&r. There are also a few other mods that you may wish to pursue for some &ahelpful QoL&r."
+				"{@pagebreak}"
+				"But maybe you require... &osomething more&r?"
+				""
+				"If you're playing solo, feel free to &aadd mods&r to your instance. More &bQoL&r... more &3tech&r... maybe even some &5magic mods&r. As long as you don't add &eProjectE&r... promise?"
+				""
+				"On the 1.12.2 version of &aGregtech: CEu&r, there were multiple &aGregTech&r addons that may be ported to 1.19.2 in future. Rest assured that this pack will do its &dbest&r to support them if they make it to this version!"
+			]
+			icon: "minecraft:structure_void"
+			id: "1283B4D7B5D82193"
+			size: 0.75d
+			subtitle: "Omw to install DecoCraft"
+			tasks: [{
+				id: "70C69E5432F6C3BE"
+				title: "I accept responsibility for any mod conflicts ;)"
+				type: "checkmark"
+			}]
+			title: "More mods?"
+			x: -8.625d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"Don't worry, these crafts are actually useful - you'll be required to make &ehundreds more&r of these components, so it's good to get in the habit!"
+				""
+				"It's generally good to get familiar with the idea of &o\"&bbulk-crafting&r&o\"&r - if you need 1 plate, try making 8, etc. This means you'll have lots of these &dintermediates&r ready for future crafts. It might seem unreasonable to craft &astacks of rods&r or &ascrews&r especially this early on, but they will always end up being used, saving you a lot of micro-crafting in the future."
+				""
+				"If you needed &6any more&r convincing, take a peek at the &drewards&r for this quest."
+			]
+			icon: "minecraft:bone_meal"
+			id: "49A04E63F40D65C0"
+			rewards: [
+				{
+					count: 64
+					id: "6292C644EE1ACA59"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "380C42204033B5C4"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "725FA988559A2A06"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1B905198676EE81A"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "650805CC3324B1A2"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E804AA7B8F3B145"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 0.75d
+			subtitle: "Put your micro-crafting talent to the task!"
+			tasks: [
+				{
+					count: 16L
+					id: "36052E42DE641787"
+					item: "gtceu:iron_bolt"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "63F1C7989ADF097F"
+					item: "gtceu:iron_plate"
+					type: "item"
+				}
+			]
+			title: "A Minor Test of Strength"
+			x: -7.125d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"Iron, Copper and Tin will only get you so far. &4Redstone&r and &bDiamond&r will occasionally be required during the &6Steam Age&r, whereas Nickel, Lead and Silver are also nice to have. All will come in handy &asoon enough&r."
+				""
+				"&oConsult the ore tab if you're struggling to find these materials!&r"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:silver_ingot"
+			}
+			id: "62212F2B51AC779E"
+			rewards: [
+				{
+					count: 64
+					id: "2C6F42288FF9B7DA"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "2FF0438B7858734E"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5242721C19BCC092"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "51A749E4F6186DBC"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "04BE5FBBF9402D5D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "2D409B8436727D1C"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "35EE3F4BAAE41AC3"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "70008D5488014AF1"
+					item: "gtceu:silver_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "29963CB493F50CC0"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			size: 0.75d
+			subtitle: "Sometimes you gotta be inefficient to be efficient!"
+			tasks: [
+				{
+					count: 64L
+					id: "37A7D2DE2F82E529"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "68684E4712C05221"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "59AA0604B02D17EF"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0384FDE2E9B1414F"
+					item: "gtceu:silver_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "46C1361E3C1678C4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "Early Investments"
+			x: -6.375d
+			y: -4.5d
 		}
 	]
-	title: "First"
+	title: "First Age"
 }

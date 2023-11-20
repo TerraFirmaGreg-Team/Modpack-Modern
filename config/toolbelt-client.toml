@@ -1,0 +1,20 @@
+
+#Options for customizing the display of tools on the player
+[display]
+	#If set to FALSE, the belts and tools will NOT draw on players.
+	showBeltOnPlayers = true
+	#Changes the scale of items on the belt.
+	#Range: 0.1 ~ 2.0
+	beltItemScale = 0.5
+
+#Options for customizing the radial menu
+[menu]
+	#If set to TRUE, releasing the menu key (R) will activate the swap. Requires a click otherwise (default).
+	releaseToSwap = false
+	#If set to TRUE, the radial menu will try to prevent the mouse from leaving the outer circle.
+	clipMouseToCircle = false
+	#If set to TRUE, the radial menu will allow clicking outside the outer circle to activate the items.
+	allowClickOutsideBounds = false
+	#If set to TRUE, the radial menu will always display all the slots, even when empty, and will allow choosing which empty slot to insert into.
+	displayEmptySlots = false
+

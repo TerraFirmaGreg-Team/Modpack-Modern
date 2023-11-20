@@ -9,15 +9,21 @@
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
-	icon: "kubejs:greg_icon"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "kubejs:textures/gui/logo-512x512.png"
+		}
+	}
 	lock_message: "e"
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
 		passive: 4000
 	}
-	pause_game: false
+	pause_game: true
 	progression_mode: "linear"
-	title: "GregTech Community Pack"
+	title: "TerraFirmaGreg"
 	version: 13
 }

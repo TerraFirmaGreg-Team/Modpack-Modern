@@ -28,11 +28,14 @@ ServerEvents.tags('item', event => {
  * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
-    registerSBRecipes(event)
-    registerCreateRecipes(event)
-    registerExtendedCraftingRecipes(event)
     registerMinecraftRecipes(event)
+    registerGTRecipes(event)
     registerTFCRecipes(event)
+    registerAARecipes(event)
+    registerAE2Recipes(event)
+    registerCreateRecipes(event)
+    registerSBRecipes(event)
+    registerExtendedCraftingRecipes(event)
 })
 
 /**

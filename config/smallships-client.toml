@@ -1,0 +1,28 @@
+# This holds the schematic version for internal purposes. DO NOT TOUCH!
+schematicVersion = 1
+
+# This category holds configs that define ship behaviour.
+[Ship]
+
+	#This category holds configs that define general ship behaviour.
+	[Ship.General]
+
+		#General camera settings for ships.
+		[Ship.General.Camera]
+			#Automatically enable third person camera when entering a ship.
+			shipGeneralCameraAutoThirdPerson = true
+
+			#Zoom camera settings for third person view in ships.
+			[Ship.General.Camera.Zoom]
+				#Generally enable the zooming feature.
+				shipGeneralCameraZoomEnable = true
+				#Set maximum distance of zoom (value must be smaller than or equal to 50.0).
+				shipGeneralCameraZoomMax = 20.0
+				#Set minimum distance of zoom (value must be bigger than or equal to 1.0).
+				shipGeneralCameraZoomMin = 5.0
+
+# This category holds configs that define general mod settings.
+[General]
+	#Enable smallships creative tab in the creative inventory (only takes effect after restart).
+	smallshipsItemGroupEnable = false
+

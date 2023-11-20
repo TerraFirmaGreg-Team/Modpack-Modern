@@ -16,7 +16,7 @@ const registerTFCTags = (event) => {
     event.add('forge:ingots/double/rose_gold', 'tfc:metal/double_ingot/rose_gold')
     event.add('forge:ingots/double/silver', 'tfc:metal/double_ingot/silver')
     event.add('forge:ingots/double/tin', 'tfc:metal/double_ingot/tin')
-    event.add('forge:ingots/double/irzincon', 'tfc:metal/double_ingot/zinc')
+    event.add('forge:ingots/double/zinc', 'tfc:metal/double_ingot/zinc')
     event.add('forge:ingots/double/sterling_silver', 'tfc:metal/double_ingot/sterling_silver')
     event.add('forge:ingots/double/iron', 'tfc:metal/double_ingot/cast_iron')
     event.add('forge:ingots/double/wrought_iron', 'tfc:metal/double_ingot/wrought_iron')
