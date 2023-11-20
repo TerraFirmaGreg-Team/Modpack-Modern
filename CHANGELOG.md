@@ -13,12 +13,34 @@
 - Исправлен металл у касситерита.
 - Добавлен металл чалкопириту.
 - Удалены бесполезные кнопки в меню паузы.
-- Возможно, что-то еще, но я забыл.
+- Исправлен mmc пакет.
+### Update mods
+- AmbientSounds_FORGE 5.3.2 -> 5.3.4
+- Placebo 8.5.6 -> 8.5.8
+- TFCAstikorCarts 1.1.7 -> 1.1.7.1
+- Kubejs 2001.6.3-build.83 -> 2001.6.4-build.95
+- PuzzlesLib 8.1.8 -> 8.1.9
+- Sophisticatedbackpacks 3.18.66.941 -> 3.18.68.952
+- Sophisticatedcore 0.5.105.485 -> 0.5.107.496
+- terrafirmagreg 0.0.3 -> 0.0.5
 ### New mods
 - InventorySorter
 - FTBQuests
+- FTBLibrary
+- FTBRanks
+- FTBTeams
+- Item filters
+- MoreRed
+- AdAstra
+- ComputerCraft
+- Macaw's Mods for TerraFirmaCraft
+- ToolBelt
+- TerraFirmaShips
+- Small Ships
+- Defaultoptions
 ### Removed mods
 - Heracles
+- Prometheus
 
 ## [0.0.5] - 2023-11-17
 ### Fixes
