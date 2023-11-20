@@ -398,7 +398,7 @@ const Metals = {
     "red_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:red_steel", tier: 6, props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, partGen, armorGen, gtToolGen, tfcToolGen, utilityGen) },
     "blue_steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:blue_steel", tier: 6, props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, partGen, armorGen, gtToolGen, tfcToolGen, utilityGen) },
     "unknown": { forging_temp: 240, welding_temp: 320, melt_temp: 400, fluidName: "tfc:metal/unknown", tier: 1, props: ingotGen },
-    "cassiterite": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:zinc", tier: 1, props: [].concat(dustGen, oreGen) },
+    "cassiterite": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:tin", tier: 1, props: [].concat(dustGen, oreGen) },
     "garnierite": { forging_temp: 138, welding_temp: 184, melt_temp: 1453, fluidName: "gtceu:nickel", tier: 1, props: [].concat(dustGen, oreGen) },
     "hematite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
     "yellow_limonite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
