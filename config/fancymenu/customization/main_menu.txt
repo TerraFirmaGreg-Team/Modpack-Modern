@@ -326,7 +326,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/latest","json_path":"$.tag_name"}}§r
+  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §c0.0.6§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/latest","json_path":"$.tag_name"}}§r
   text_border = 0
   case_mode = normal
   source_mode = direct
