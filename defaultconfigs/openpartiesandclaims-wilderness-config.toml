@@ -247,18 +247,6 @@
 			spawnersHostile = false
 			#When enabled, claimed chunk protection disables friendly mob spawners.
 			spawnersFriendly = false
-			#When enabled, claimed chunk protection includes protection from projectiles spawning hostile mobs when they land (e.g. endermites). Might not work with projectiles from mods that don't implement this mod's API.
-			#
-			#1) Every - protected from all projectiles not owned by a player that has chunk access.
-			#2) Not Party - all projectiles, except owned by a player in the same party as you.
-			#3) Not Ally - all projectiles, except owned by a player in any party allied by yours.
-			projectileHitHostileSpawn = 1
-			#When enabled, claimed chunk protection includes protection from projectiles spawning non-hostile mobs when they land (e.g. chicken). Might not work with projectiles from mods that don't implement this mod's API.
-			#
-			#1) Every - protected from all projectiles not owned by a player that has chunk access.
-			#2) Not Party - all projectiles, except owned by a player in the same party as you.
-			#3) Not Ally - all projectiles, except owned by a player in any party allied by yours.
-			projectileHitFriendlySpawn = 1
 
 			[playerConfig.claims.protection.exceptionGroups]
 
