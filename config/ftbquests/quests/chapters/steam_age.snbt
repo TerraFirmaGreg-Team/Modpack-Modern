@@ -369,7 +369,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
 				"Obtaining paper is both more difficult and less efficient than in vanilla. Thanks, Greg."
 				""
@@ -546,7 +545,6 @@
 			y: -0.375d
 		}
 		{
-			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
 				"Grow &dRubber Trees&r and cut them down to get &aSticky Resin&r."
 				""
