@@ -27,6 +27,15 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
   orientation = mid-centered
   x = -101
@@ -35,11 +44,29 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button_hovered.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button.png
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
   orientation = mid-centered
   x = 4
   action = movebutton
   y = -10
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
 }
 
 customization {
@@ -58,6 +85,15 @@ customization {
   x = -102
   action = movebutton
   y = -34
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button.png
 }
 
 customization {
@@ -92,45 +128,51 @@ customization {
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   [loading_requirement:fancymenu_loading_requirement_is_singpleplayer][requirement_mode:if][req_id:4f25fe92-c3a1-49fa-80ad-9bb26244ad751700456727801] = 
   restartbackgroundanimations = true
   buttonaction = opengui;net.minecraft.client.gui.screens.ShareToLanScreen%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
+  label = {"placeholder":"local","values":{"key":"lanServer.start"}}
+  loopbackgroundanimations = true
   x = 4
   width = 98
   action = addbutton
   actionid = 210ee97d-9318-4a22-93cb-7c2a224ba4331700456388839
   y = 14
-  label = {"placeholder":"local","values":{"key":"lanServer.start"}}
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
   height = 20
 }
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = opengui;net.minecraftforge.client.gui.ModListScreen%btnaction_splitter_fm%
   [loading_requirement:fancymenu_loading_requirement_is_singpleplayer][requirement_mode:if][req_id:b95d87c4-e395-446c-9e89-a80d876578ac1700457303801] = 
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
+  label = {"placeholder":"local","values":{"key":"fml.menu.mods"}}
+  loopbackgroundanimations = true
   x = -102
   width = 98
   action = addbutton
   actionid = 1476f957-76fe-46a8-8b9b-4c99fbee39a31700457166228
   y = 14
-  label = {"placeholder":"local","values":{"key":"fml.menu.mods"}}
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
   height = 20
 }
 
 customization {
   orientation = mid-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = opengui;net.minecraftforge.client.gui.ModListScreen%btnaction_splitter_fm%
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/button_hovered.png
+  label = {"placeholder":"local","values":{"key":"fml.menu.mods"}}
+  loopbackgroundanimations = true
   x = -102
   width = 204
   action = addbutton
   actionid = 8e13488b-82eb-470a-b8dd-750b6815a9211700457311802
   y = 14
-  label = {"placeholder":"local","values":{"key":"fml.menu.mods"}}
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/button.png
   [loading_requirement:fancymenu_loading_requirement_is_multiplayer][requirement_mode:if][req_id:bf6191b0-f0b7-4986-9e8a-ae5fa1509e6d1700457329225] = 
   height = 20
 }
