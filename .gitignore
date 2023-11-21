@@ -28,8 +28,17 @@ config/roughlyenoughitems/*
 config/oculus.properties
 .github/buildtools/serverfiles/logs/
 .github/buildtools/serverfiles/world/
+.github/buildtools/serverfiles/config/
+.github/buildtools/serverfiles/crash-reports/
+.github/buildtools/serverfiles/kubejs/
+.github/buildtools/serverfiles/mods/
+.github/buildtools/serverfiles/local/
+.github/buildtools/serverfiles/xaerominimap-common.txt
+.github/buildtools/serverfiles/xaeroworldmap-common.txt
 .github/buildtools/serverfiles/banned-ips.json
 .github/buildtools/serverfiles/banned-players.json
 .github/buildtools/serverfiles/ops.json
 .github/buildtools/serverfiles/whitelist.json
+
 minecraftinstance.json
+
