@@ -61,7 +61,7 @@
 		# Allows users to kick themselves from the server, for example if they are stuck or desynced
 		kickme: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to view player leaderboard stats.
@@ -73,13 +73,13 @@
 		# Allows users to change their display name, as well as admins to change nicknames for other users
 		nick: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to announce their recording or streaming status to the server by using commands
 		rec: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Enables usage of a trash can inventory, which can be used to void unneeded items
