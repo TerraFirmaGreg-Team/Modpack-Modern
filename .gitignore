@@ -26,3 +26,10 @@ CustomSkinLoader/*
 realms_persistence.json
 config/roughlyenoughitems/*
 config/oculus.properties
+.github/buildtools/serverfiles/logs/
+.github/buildtools/serverfiles/world/
+.github/buildtools/serverfiles/banned-ips.json
+.github/buildtools/serverfiles/banned-players.json
+.github/buildtools/serverfiles/ops.json
+.github/buildtools/serverfiles/whitelist.json
+minecraftinstance.json
