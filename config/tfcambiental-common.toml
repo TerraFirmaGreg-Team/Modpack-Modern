@@ -1,0 +1,25 @@
+#The average point for temperature, the not too warm and not too cool point
+#Range: 0.0 ~ 30.0
+averageTemperature = 15.0
+#The point where warmth starts to affect the screen, but only mildly
+#Range: 5.0 ~ 35.0
+hotThreshold = 25.0
+#The point where cold starts to affect the screen, but only mildly
+#Range: -15.0 ~ 25.0
+coolThreshold = 5.0
+#The point where warmth starts to hurt the player
+#Range: 15.0 ~ 45.0
+burnThreshold = 30.0
+#The point where cold starts to hurt the player
+#Range: -15.0 ~ 15.0
+freezeThreshold = 0.0
+#How quickly player temperature changes towards the target environment temperature
+#Range: 0.0 ~ 50.0
+temperatureChangeSpeed = 1.0
+#How quickly player temperature changes towards the target environment temperature when it's beneficial to do so
+#Range: 0.0 ~ 50.0
+goodTemperatureChangeSpeed = 4.0
+#How quickly player temperature changes towards the target environment temperature when it's not beneficial
+#Range: 0.0 ~ 50.0
+badTemperatureChangeSpeed = 1.0
+
