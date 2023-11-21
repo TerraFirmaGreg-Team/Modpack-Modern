@@ -12,7 +12,6 @@
             "cachedName": "Minecraft",
             "cachedRequires": [
                 {
-                    "equals": "3.3.1",
                     "suggests": "3.3.1",
                     "uid": "org.lwjgl3"
                 }
@@ -30,9 +29,9 @@
                     "uid": "net.minecraft"
                 }
             ],
-            "cachedVersion": "47.1.3",
+            "cachedVersion": "47.2.6",
             "uid": "net.minecraftforge",
-            "version": "47.1.3"
+            "version": "47.2.6"
         }
     ],
     "formatVersion": 1
