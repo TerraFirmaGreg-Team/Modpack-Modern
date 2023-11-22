@@ -383,7 +383,7 @@ const Metals = {
     "bronze": { forging_temp: 570, welding_temp: 760, melt_temp: 950, fluidName: "gtceu:bronze", tier: 1, canBeUnmolded: true, props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, partGen, armorGen, gtToolGen, tfcToolGen, utilityGen) },
     "black_bronze": { forging_temp: 642, welding_temp: 856, melt_temp: 1070, fluidName: "gtceu:black_bronze", tier: 2, canBeUnmolded: true, props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, partGen, armorGen, gtToolGen, tfcToolGen, utilityGen) },
     "wrought_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:wrought_iron", tier: 3, props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, partGen, armorGen, gtToolGen, tfcToolGen, utilityGen) },
-    "iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(/*ingotGen,*/ doubleIngotGen, dustGen, oreGen, /*gtToolGen,*/ /*partGen*/) },
+    "iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(ingotGen, doubleIngotGen, dustGen, oreGen, /*gtToolGen,*/ /*partGen*/) },
     // "cast_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 1, props: doubleIngotGen },
     "pig_iron": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "tfc:metal/pig_iron", tier: 3, props: ingotGen},
     "steel": { forging_temp: 924, welding_temp: 1232, melt_temp: 1540, fluidName: "gtceu:steel", tier: 4, props: [].concat(ingotGen, doubleIngotGen, nuggetGen, dustGen, partGen, armorGen, gtToolGen, tfcToolGen, utilityGen) },
