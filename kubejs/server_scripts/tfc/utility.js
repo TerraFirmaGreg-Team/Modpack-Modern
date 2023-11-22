@@ -50,12 +50,26 @@ const addEmptyJson = (event, path) => {
  */
 const addItemHeat = (event, customPath, input, heat_capacity, forging_temperature, welding_temperature) => {
     const defaultPath = `tfc:tfc/item_heats/`
-    const json = {
-        ingredient: input,
-        heat_capacity: heat_capacity,
-        forging_temperature: forging_temperature,
-        welding_temperature: welding_temperature
+    let json
+    
+    if (forging_temperature == null || welding_temperature == null)
+    {
+        json = {
+            ingredient: input,
+            heat_capacity: heat_capacity
+        }
     }
+    else
+    {
+        json = {
+            ingredient: input,
+            heat_capacity: heat_capacity,
+            forging_temperature: forging_temperature,
+            welding_temperature: welding_temperature
+        }
+    }
+
+    
 
     event.addJson((customPath == null) ? defaultPath + makeId(20) : defaultPath + customPath, json)
 }
