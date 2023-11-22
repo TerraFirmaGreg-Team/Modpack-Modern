@@ -8,6 +8,8 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:shaped/bronze_primitive_blast_furnace'})
     event.remove({id: 'gtceu:shaped/casing_primitive_bricks'})
     event.remove({id: 'gtceu:assembler/furnace'})
+    event.remove({id: 'gtceu:shaped/wooden_barrel'})
+    event.remove({id: 'gtceu:assembler/wood_barrel'})
 
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('gtceu:smelting/fireclay_brick')
@@ -18,6 +20,33 @@ const registerGTRecipes = (event) => {
         .itemOutputs('gtceu:fireclay_dust')
         .duration(15)
         .EUt(2)
+
+    // Compressed Coke Clay -> Coke Oven Brick
+    addHeatingItemToItemRecipe(event,
+        'tfg:recipes/coke_oven_bricks',
+        { item: "gtceu:compressed_coke_clay" },
+        { item: 'gtceu:coke_oven_brick' },
+        1399
+    )
+
+    // Coke Oven
+    event.shaped('gtceu:coke_oven', [
+        'ABA', 
+        'BCB',
+        'ABA'  
+    ], {
+        A: 'gtceu:coke_oven_bricks',
+        B: '#forge:plates/wrought_iron',  
+        C: '#forge:tools/wrenches'  
+    }).id('gtceu:shaped/coke_oven')
+
+    // Coke Oven Hatch
+    event.shaped('gtceu:coke_oven_hatch', [
+        'AB'  
+    ], {
+        A: 'gtceu:coke_oven_bricks',
+        B: '#tfc:barrels' 
+    }).id('gtceu:shaped/coke_oven_hatch')
 
     // Bronze Steam Furnace
     event.shaped('gtceu:lp_steam_furnace', [
@@ -81,7 +110,7 @@ const registerGTRecipes = (event) => {
     event.shaped('gtceu:electric_blast_furnace', [
         'AAA', 
         'BCB',
-        'DBD'  
+        'DBD'
     ], {
         A: 'gtceu:hp_steam_furnace',
         B: '#forge:circuits/lv',  
