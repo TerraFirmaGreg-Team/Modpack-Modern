@@ -211,6 +211,11 @@ client:
   # #D2DCFF is the classic blue from GT5.
   defaultPaintingColor: #FFFFFF
 
+  # Use VBO cache for multiblock preview.
+  # Disable it if you have issues with rendering multiblocks.
+  # Default: true
+  useVBO: true
+
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems

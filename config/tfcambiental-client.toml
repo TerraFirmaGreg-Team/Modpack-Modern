@@ -4,7 +4,7 @@
 noiseDarkness = 0.18
 #How many darkness levels should there be?
 #Range: 5 ~ 30
-noiseLevels = 1
+noiseLevels = 5
 #How big should noise areas be?
 #Range: 3 ~ 50
 noiseArea = 10
