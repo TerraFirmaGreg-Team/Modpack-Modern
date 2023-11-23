@@ -63,7 +63,8 @@ const ItemHeats = {
         "sphalerite": 16,
         "tetrahedrite": 14,
         "tin": 16,
-        "chalcopyrite": 10
+        "chalcopyrite": 10,
+        "goetite": 15
     }, input: (name) => { return { tag: `forge:nuggets/${name}` } }, output: (name) => { return { item: `gtceu:${name}_nugget` } }  },
     
     "dust": { heat_capacity: 1.429, metal_amount: { 
@@ -85,7 +86,8 @@ const ItemHeats = {
         "tetrahedrite": 126,
         "tin": 144,
         "chalcopyrite": 112,
-        "cassiterite_sand" : 144
+        "cassiterite_sand" : 144,
+        "goetite": 142
     }, input: (name) => { return { tag: `forge:dusts/${name}` } }, output: (name) => { return { item: `gtceu:${name}_dust` } } },
     
     
@@ -108,7 +110,8 @@ const ItemHeats = {
         "tetrahedrite": 31,
         "tin": 36,
         "chalcopyrite": 22,
-        "cassiterite_sand" : 36
+        "cassiterite_sand": 36,
+        "goetite": 34
     }, input: (name) => { return { tag: `forge:dusts/small/${name}` } }, output: (name) => { return { item: `gtceu:${name}_dust_small` } }  },
     
     
@@ -131,7 +134,8 @@ const ItemHeats = {
         "tetrahedrite": 14,
         "tin": 16,
         "chalcopyrite": 10,
-        "cassiterite_sand" : 16
+        "cassiterite_sand" : 16,
+        "goetite": 15
     }, input: (name) => { return { tag: `forge:dusts/tiny/${name}` } }, output: (name) => { return { item: `gtceu:${name}_dust_tiny` } } },
     
     
@@ -154,7 +158,8 @@ const ItemHeats = {
         "tetrahedrite": 21,
         "tin": 24,
         "chalcopyrite": 14,
-        "cassiterite_sand" : 24
+        "cassiterite_sand" : 24,
+        "goetite": 22
     }, input: (name) => { return { tag: `forge:poor_raw_materials/${name}` } }, output: (name) => { return { item: `gtceu:poor_raw_${name}` } } },
     
     
@@ -177,7 +182,8 @@ const ItemHeats = {
         "tetrahedrite": 31,
         "tin": 36,
         "chalcopyrite": 28,
-        "cassiterite_sand" : 36
+        "cassiterite_sand" : 36,
+        "goetite": 34
     }, input: (name) => { return { tag: `forge:raw_materials/${name}` } }, output: (name) => { return { item: `gtceu:raw_${name}` } } },
     
     
@@ -200,7 +206,8 @@ const ItemHeats = {
         "tetrahedrite": 42,
         "tin": 48,
         "chalcopyrite": 36,
-        "cassiterite_sand" : 48
+        "cassiterite_sand" : 48,
+        "goetite": 45
     }, input: (name) => { return { tag: `forge:rich_raw_materials/${name}` } }, output: (name) => { return { item: `gtceu:rich_raw_${name}` } } },
     
     "block_slab": { heat_capacity: null }, // can't melt
@@ -400,15 +407,16 @@ const Metals = {
     "unknown": { forging_temp: 240, welding_temp: 320, melt_temp: 400, fluidName: "tfc:metal/unknown", tier: 1, props: ingotGen },
     "cassiterite": { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:tin", tier: 1, props: [].concat(dustGen, oreGen) },
     "garnierite": { forging_temp: 138, welding_temp: 184, melt_temp: 1453, fluidName: "gtceu:nickel", tier: 1, props: [].concat(dustGen, oreGen) },
-    "hematite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
-    "yellow_limonite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
+    "hematite": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
+    "yellow_limonite": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
     "magnetite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
     "malachite": { forging_temp: 138, welding_temp: 184, melt_temp: 1080, fluidName: "gtceu:copper", tier: 1, props: [].concat(dustGen, oreGen) },
-    "pyrite": { forging_temp: 138, welding_temp: 184, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
+    "pyrite": { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) },
     "sphalerite": { forging_temp: 138, welding_temp: 184, melt_temp: 420, fluidName: "gtceu:zinc", tier: 1, props: [].concat(dustGen, oreGen) },
     "tetrahedrite": { forging_temp: 138, welding_temp: 184, melt_temp: 1080, fluidName: "gtceu:copper", tier: 1, props: [].concat(dustGen, oreGen) },
     "chalcopyrite" : { forging_temp: 648, welding_temp: 864, melt_temp: 1080, fluidName: "gtceu:copper", tier: 1, props: [].concat(dustGen, oreGen) },
-    "cassiterite_sand" : { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:tin", tier: 1, props: [].concat(dustGen, oreGen) }
+    "cassiterite_sand" : { forging_temp: 138, welding_temp: 184, melt_temp: 230, fluidName: "gtceu:tin", tier: 1, props: [].concat(dustGen, oreGen) },
+    "goethite" : { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) }
 }
 
 const removeAllTagsItems = [
