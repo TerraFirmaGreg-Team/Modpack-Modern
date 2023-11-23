@@ -1,0 +1,68 @@
+{
+  "animation_settings": {
+    "animation": true,
+    "water": true,
+    "lava": true,
+    "fire": true,
+    "portal": true,
+    "block_animations": true,
+    "sculk_sensor": true
+  },
+  "particle_settings": {
+    "particles": true,
+    "rain_splash": true,
+    "block_break": true,
+    "block_breaking": true,
+    "other": {}
+  },
+  "detail_settings": {
+    "sky": true,
+    "sun_moon": true,
+    "stars": true,
+    "rain_snow": true,
+    "biome_colors": true,
+    "sky_colors": true
+  },
+  "render_settings": {
+    "fog_type": "DEFAULT",
+    "fog_distance": 0,
+    "fog_start": 100,
+    "multi_dimension_fog_control": false,
+    "dimensionFogDistance": {},
+    "light_updates": true,
+    "item_frame": true,
+    "armor_stand": true,
+    "painting": true,
+    "piston": true,
+    "beacon_beam": true,
+    "enchanting_table_book": true,
+    "item_frame_name_tag": true,
+    "player_name_tag": true
+  },
+  "extra_settings": {
+    "overlay_corner": "TOP_LEFT",
+    "text_contrast": "NONE",
+    "show_fps": false,
+    "show_f_p_s_extended": true,
+    "show_coords": false,
+    "reduce_resolution_on_mac": false,
+    "use_adaptive_sync": false,
+    "cloud_height": 192,
+    "cloud_distance": 100,
+    "toasts": true,
+    "advancement_toast": true,
+    "recipe_toast": true,
+    "system_toast": true,
+    "tutorial_toast": true,
+    "instant_sneak": false,
+    "prevent_shaders": false,
+    "steady_debug_hud": true,
+    "steady_debug_hud_refresh_interval": 1
+  },
+  "super_secret_settings": {
+    "fetch_sodium_extra_crowdin_translations": false,
+    "sodium_extra_crowdin_project_identifier": "sodium-extra",
+    "fetch_sodium_crowdin_translations": false,
+    "sodium_crowdin_project_identifier": "sodium-fabric"
+  }
+}
