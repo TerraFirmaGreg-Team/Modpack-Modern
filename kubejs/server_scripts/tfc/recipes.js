@@ -665,6 +665,14 @@ const registerTFCRecipes = (event) => {
         { tag: "forge:rich_raw_materials/borax" },
         { item: "tfc:powder/flux", count: 6 }
     )
+
+    // Pumpkin -> Pumpkin Slices
+    event.shaped('5x tfc:food/pumpkin_chunks', [
+        'AB' 
+    ], {
+        A: '#tfc:knives',
+        B: 'tfc:pumpkin'  
+    }).id('tfc:crafting/pumpkin_chunks_knife')
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {
