@@ -74,7 +74,9 @@
         "jetSuitProtectionMultiplier": 1,
         // Type: Integer
         "jetSuitArmorToughness": 5,
-        "spawnJetSuitParticles": true
+        "spawnJetSuitParticles": true,
+        // Custom hand rendering may interfere with Shaders
+        "renderCustomFirstPersonHand": true
     },
     "vehicles": {
         /*
