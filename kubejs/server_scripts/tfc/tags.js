@@ -25,6 +25,9 @@ const registerTFCItemsTags = (event) => {
     event.add('forge:ingots/double/blue_steel', 'tfc:metal/double_ingot/blue_steel')
     event.add('forge:ingots/double/red_steel', 'tfc:metal/double_ingot/red_steel')
 
+    event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/blue_steel')
+    event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/red_steel')
+
     event.add('tfc:can_collapse', '#forge:tfc_stonetype_ore')
     event.add('tfc:can_start_collapse', '#forge:tfc_stonetype_ore')
     event.add('tfc:can_trigger_collapse', '#forge:tfc_stonetype_ore')

@@ -360,7 +360,7 @@ const ItemHeats = {
 
     "ingot": { heat_capacity: 2.857, metal_amount: 144, hasMold: true,
         input: (name) => { return { tag: `forge:ingots/${name}` } }, 
-        output: (name) =>  { return { item: Item.getId(AlmostUnified.getPreferredItemForTag(`forge:ingots/${name}`)) + "" } } },
+        output: (name) =>  { return { item: Item.of(`#forge:ingots/${name}`).getId() + "" } } },
     "double_ingot": { heat_capacity: 5.714, metal_amount: 288, 
         input: (name) => { return { tag: `forge:ingots/double/${name}` } }, 
         output: (name) => { return { item: `tfc:metal/double_ingot/${name}` } } },

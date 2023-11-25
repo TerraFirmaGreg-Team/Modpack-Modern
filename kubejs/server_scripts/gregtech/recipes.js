@@ -1,6 +1,19 @@
 // priority: 0
 
 const registerGTRecipes = (event) => {
+    // Отключение рецептов раскрафта ванильной наковальни
+    event.remove({id: 'gtceu:arc_furnace/arc_anvil'})
+    event.remove({id: 'gtceu:macerator/macerate_anvil'})
+    event.remove({id: 'gtceu:alloy_smelter/anvil'})
+    event.remove({id: 'gtceu:fluid_solidifier/solidify_anvil'})
+
+    event.remove({id: 'gtceu:arc_furnace/arc_damaged_anvil'})
+    event.remove({id: 'gtceu:macerator/macerate_damaged_anvil'})
+    event.remove({id: 'gtceu:arc_furnace/arc_chipped_anvil'})
+    event.remove({id: 'gtceu:macerator/macerate_chipped_anvil'})
+    
+
+    // Отключение других рецептов
     event.remove({id: 'gtceu:shaped/chainmail_boots'})
     event.remove({id: 'gtceu:shaped/chainmail_leggings'})
     event.remove({id: 'gtceu:shaped/chainmail_chestplate'})
@@ -10,6 +23,122 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:assembler/furnace'})
     event.remove({id: 'gtceu:shaped/wooden_barrel'})
     event.remove({id: 'gtceu:assembler/wood_barrel'})
+
+    // Low Pressure Steam Forge Hammer
+    event.shaped('gtceu:lp_steam_forge_hammer', [
+        'ABA', 
+        'ACA',
+        'ADA' 
+    ], {
+        A: 'gtceu:bronze_small_fluid_pipe',
+        B: '#forge:pistons',
+        C: 'gtceu:bronze_machine_casing',
+        D: 'tfc:metal/anvil/wrought_iron'
+    }).id('gtceu:shaped/steam_hammer_bronze')
+
+    // LV Forge Hammer
+    event.shaped('gtceu:lv_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:tin_single_cable',
+        B: 'gtceu:lv_electric_piston',
+        C: '#forge:circuits/lv',
+        D: 'gtceu:lv_machine_hull',
+        E: 'tfc:metal/anvil/steel',
+    }).id('gtceu:shaped/lv_forge_hammer')
+
+    // MV Forge Hammer
+    event.shaped('gtceu:mv_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:copper_single_cable',
+        B: 'gtceu:mv_electric_piston',
+        C: '#forge:circuits/mv',
+        D: 'gtceu:mv_machine_hull',
+        E: 'tfc:metal/anvil/steel',
+    }).id('gtceu:shaped/mv_forge_hammer')
+
+    // HV Forge Hammer
+    event.shaped('gtceu:hv_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:gold_single_cable',
+        B: 'gtceu:hv_electric_piston',
+        C: '#forge:circuits/hv',
+        D: 'gtceu:hv_machine_hull',
+        E: 'tfc:metal/anvil/steel',
+    }).id('gtceu:shaped/hv_forge_hammer')
+
+    // EV Forge Hammer
+    event.shaped('gtceu:ev_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:aluminium_single_cable',
+        B: 'gtceu:ev_electric_piston',
+        C: '#forge:circuits/ev',
+        D: 'gtceu:ev_machine_hull',
+        E: 'tfc:metal/anvil/black_steel',
+    }).id('gtceu:shaped/ev_forge_hammer')
+
+    // IV Forge Hammer
+    event.shaped('gtceu:iv_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:platinum_single_cable',
+        B: 'gtceu:iv_electric_piston',
+        C: '#forge:circuits/iv',
+        D: 'gtceu:iv_machine_hull',
+        E: 'tfc:metal/anvil/black_steel',
+    }).id('gtceu:shaped/iv_forge_hammer')
+
+    // LuV Forge Hammer
+    event.shaped('gtceu:luv_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:niobium_titanium_single_cable',
+        B: 'gtceu:luv_electric_piston',
+        C: '#forge:circuits/luv',
+        D: 'gtceu:luv_machine_hull',
+        E: 'tfc:metal/anvil/black_steel',
+    }).id('gtceu:shaped/luv_forge_hammer')
+
+    // ZPM Forge Hammer
+    event.shaped('gtceu:zpm_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:vanadium_gallium_single_cable',
+        B: 'gtceu:zpm_electric_piston',
+        C: '#forge:circuits/zpm',
+        D: 'gtceu:zpm_machine_hull',
+        E: '#tfc:red_or_blue_anvil',
+    }).id('gtceu:shaped/zpm_forge_hammer')
+
+    // UV Forge Hammer
+    event.shaped('gtceu:uv_forge_hammer', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: 'gtceu:yttrium_barium_cuprate_single_cable',
+        B: 'gtceu:uv_electric_piston',
+        C: '#forge:circuits/uv',
+        D: 'gtceu:uv_machine_hull',
+        E: '#tfc:red_or_blue_anvil',
+    }).id('gtceu:shaped/uv_forge_hammer')
 
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('gtceu:smelting/fireclay_brick')

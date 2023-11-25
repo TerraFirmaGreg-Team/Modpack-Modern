@@ -150,9 +150,9 @@ const minecraftItemsToHide = [
     'minecraft:dark_prismarine_slab', 
     'minecraft:smooth_stone',*/
     
-    'minecraft:blast_furnace',
-    'minecraft:furnace',
-    'minecraft:furnace_minecart',
+    //'minecraft:blast_furnace',
+    //'minecraft:furnace',
+    //'minecraft:furnace_minecart',
 
     'minecraft:netherite_scrap',
     'minecraft:netherite_ingot',
