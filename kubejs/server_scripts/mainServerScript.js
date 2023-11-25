@@ -12,7 +12,7 @@ ServerEvents.highPriorityData(event => {
  * Здесь регистрируются тэги для блоков.
  */
 ServerEvents.tags('block', event => {
-    
+    registerTFCBlocksTags(event)
 })
 
 /**
@@ -20,7 +20,7 @@ ServerEvents.tags('block', event => {
  */
 ServerEvents.tags('item', event => {
     registerCreateTags(event)
-    registerTFCTags(event)
+    registerTFCItemsTags(event)
 })
 
 /**

@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerTFCTags = (event) => {
+const registerTFCItemsTags = (event) => {
     removeAllTagsItems.forEach(item => {
         event.removeAllTagsFrom(item)
     })
@@ -24,4 +24,20 @@ const registerTFCTags = (event) => {
     event.add('forge:ingots/double/black_steel', 'tfc:metal/double_ingot/black_steel')
     event.add('forge:ingots/double/blue_steel', 'tfc:metal/double_ingot/blue_steel')
     event.add('forge:ingots/double/red_steel', 'tfc:metal/double_ingot/red_steel')
+
+    event.add('tfc:can_collapse', '#forge:tfc_stonetype_ore')
+    event.add('tfc:can_start_collapse', '#forge:tfc_stonetype_ore')
+    event.add('tfc:can_trigger_collapse', '#forge:tfc_stonetype_ore')
+    event.add('tfc:monster_spawns_on', '#forge:tfc_stonetype_ore')
+    event.add('tfc:prospectable', '#forge:tfc_stonetype_ore')
+
+    global.allTFCStoneTypeNames.forEach(stoneTypeName => {
+        global.slabTypes.forEach(slabType => {
+            event.add(`tfc:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+        })
+    })
+}
+
+const registerTFCBlocksTags = (event) => {
+    
 }

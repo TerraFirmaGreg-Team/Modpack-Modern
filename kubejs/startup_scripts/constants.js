@@ -48,3 +48,13 @@ global.allTFCStoneTypeNamesOnlyDups = [
     'andesite',
     'granite'
 ];
+
+global.slabTypes = [
+    'raw',
+    'smooth',
+    'bricks',
+    'cobble',
+    'mossy_bricks',
+    'mossy_cobble',
+    'cracked_bricks'
+];
