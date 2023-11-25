@@ -9,7 +9,6 @@ const tfcItemsToHide = [
     'tfc:metal/rod/bismuth',
     
     // Gold
-    'tfc:metal/ingot/gold',
     'tfc:metal/sheet/gold',
     'tfc:metal/double_sheet/gold',
 
