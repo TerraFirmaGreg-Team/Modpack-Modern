@@ -2,6 +2,7 @@
 
 const minecraftItemsToHide = [
     // Regular blocks
+    
     /*
     'minecraft:dark_oak_planks', 
     'minecraft:mangrove_planks', 
@@ -149,11 +150,18 @@ const minecraftItemsToHide = [
     'minecraft:prismarine_brick_slab', 
     'minecraft:dark_prismarine_slab', 
     'minecraft:smooth_stone',*/
-    
-    //'minecraft:blast_furnace',
-    //'minecraft:furnace',
-    //'minecraft:furnace_minecart',
 
+    'minecraft:barrel',
+    'minecraft:blast_furnace',
+    'minecraft:furnace',
+    'minecraft:furnace_minecart',
+
+    'minecraft:anvil', 
+    'minecraft:chipped_anvil', 
+    'minecraft:damaged_anvil',
+    
+    // Ores
+    // Скрыты, но рецепты не удалены, потому что, а зачем, лол
     'minecraft:netherite_scrap',
     'minecraft:netherite_ingot',
     'minecraft:netherite_block',
@@ -180,38 +188,48 @@ const minecraftItemsToHide = [
     'minecraft:ancient_debris',
 
     // Tools
-    'minecraft:wooden_shovel',
-    'minecraft:stone_shovel',
-    'minecraft:golden_shovel',
-    'minecraft:iron_shovel',
-    'minecraft:diamond_shovel',
-    'minecraft:netherite_shovel',
-    'minecraft:wooden_hoe',
-    'minecraft:stone_hoe',
-    'minecraft:golden_hoe',
-    'minecraft:iron_hoe',
-    'minecraft:diamond_hoe',
-    'minecraft:netherite_hoe',
     'minecraft:wooden_sword',
-    'minecraft:stone_sword',
-    'minecraft:golden_sword',
-    'minecraft:iron_sword',
-    'minecraft:diamond_sword',
-    'minecraft:netherite_sword',
     'minecraft:wooden_pickaxe',
-    'minecraft:stone_pickaxe',
-    'minecraft:golden_pickaxe',
-    'minecraft:iron_pickaxe',
-    'minecraft:diamond_pickaxe',
-    'minecraft:netherite_pickaxe',
     'minecraft:wooden_axe',
+    'minecraft:wooden_shovel',
+    'minecraft:wooden_hoe',
+    
+    'minecraft:stone_sword',
+    'minecraft:stone_pickaxe',
     'minecraft:stone_axe',
-    'minecraft:golden_axe',
+    'minecraft:stone_shovel',
+    'minecraft:stone_hoe',
+    
+    'minecraft:iron_sword',
+    'minecraft:iron_pickaxe',
     'minecraft:iron_axe',
+    'minecraft:iron_shovel',
+    'minecraft:iron_hoe',
+
+    'minecraft:golden_sword',
+    'minecraft:golden_pickaxe',
+    'minecraft:golden_axe',
+    'minecraft:golden_shovel',
+    'minecraft:golden_hoe',
+    
+    'minecraft:diamond_sword',
+    'minecraft:diamond_pickaxe',
     'minecraft:diamond_axe',
-    'minecraft:netherite_axe', 
+    'minecraft:diamond_shovel',
+    'minecraft:diamond_hoe',
+    
+    'minecraft:netherite_sword',
+    'minecraft:netherite_pickaxe',
+    'minecraft:netherite_axe',
+    'minecraft:netherite_shovel',
+    'minecraft:netherite_hoe',
     
     // Armor
+    // Horse
+    'minecraft:iron_horse_armor', 
+    'minecraft:golden_horse_armor', 
+    'minecraft:diamond_horse_armor',
+    // Player
     'minecraft:netherite_helmet',
     'minecraft:netherite_chestplate',
     'minecraft:netherite_leggings',

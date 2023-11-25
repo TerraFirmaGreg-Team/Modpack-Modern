@@ -2044,7 +2044,7 @@
 				type: "item"
 			}]
 			title: "Charcoal?"
-			x: 3.5d
+			x: 2.0d
 			y: -4.0d
 		}
 		{
@@ -3369,6 +3369,37 @@
 			}]
 			x: 21.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4946FC5BCA4CCA88"]
+			id: "4342A0F6BDCF1159"
+			tasks: [
+				{
+					count: 10L
+					id: "41DB0E544D2FF121"
+					item: { Count: 10b, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "686024A6FC92B015"
+					item: { Count: 10b, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+				{
+					id: "634C3DBAE2F6BAE9"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "0B568D4E97785F08"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+			]
+			title: "Primitive Pump"
+			x: 14.5d
+			y: -21.5d
 		}
 	]
 	title: "First Age"

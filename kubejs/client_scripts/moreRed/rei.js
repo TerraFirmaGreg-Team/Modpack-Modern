@@ -1,7 +1,9 @@
 // priority: 0
 
 const hideMoreRedStuff = (event) => {
-    
+    moreRedItemsToHide.forEach(itemToHide => {
+        event.hide(itemToHide)
+    })
 }
 
 const registerMoreRedCategories = (event) => {

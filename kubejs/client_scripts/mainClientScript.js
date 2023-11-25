@@ -7,6 +7,7 @@ REIEvents.hide('item', event => {
     hideMinecraftStuff(event)
     hideExtendedCraftingStuff(event)
     hideSBStuff(event)
+    hideMoreRedStuff(event)
 })
 
 
