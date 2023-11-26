@@ -221,6 +221,40 @@ const registerMinecraftRecipes = (event) => {
         .duration(100)
         .EUt(4)
 
+    // ItemFrame
+    event.recipes.gtceu.assembler('item_frame')             
+        .itemInputs(
+            '8x #forge:rods/wooden',
+            'minecraft:leather'
+            )
+        .itemOutputs('2x minecraft:item_frame')
+        .duration(100)
+        .EUt(4)
+
+    event.recipes.gtceu.assembler('tfg/item_frame_lumber')             
+        .itemInputs(
+            '8x #tfc:lumber',
+            'minecraft:leather'
+        )
+    .itemOutputs('8x minecraft:item_frame')
+    .duration(100)
+    .EUt(4)
+
+    // Glow Item Frame
+    event.shapeless('minecraft:glow_item_frame', [
+        'minecraft:item_frame',
+        '#forge:dusts/glowstone'
+    ]).id('minecraft:glow_item_frame')
+
+    event.recipes.gtceu.assembler('tfg/glow_item_frame')             
+        .itemInputs(
+            '2x minecraft:item_frame',
+            '#forge:dusts/glowstone'
+        )
+    .itemOutputs('2x minecraft:glow_item_frame')
+    .duration(100)
+    .EUt(4)
+
     // Sugar Cane (Papyrus) -> Paper
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled'})
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane'})
