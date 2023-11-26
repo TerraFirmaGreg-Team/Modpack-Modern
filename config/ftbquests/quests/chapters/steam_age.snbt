@@ -24,7 +24,7 @@
 		{
 			id: "17AB8E6990041E2A"
 			linked_quest: "22DE5F0744C45C45"
-			x: -4.0d
+			x: -5.5d
 			y: 4.5d
 		}
 		{
@@ -139,7 +139,7 @@
 				}
 			]
 			title: "Malding"
-			x: -4.0d
+			x: -5.5d
 			y: 3.0d
 		}
 		{
@@ -323,7 +323,7 @@
 				type: "item"
 			}]
 			title: "Steam Alloy Smelter"
-			x: -1.0d
+			x: -4.0d
 			y: 3.0d
 		}
 		{
@@ -403,7 +403,7 @@
 				}
 			]
 			title: "Glass, at last!"
-			x: -2.5d
+			x: -4.0d
 			y: 1.5d
 		}
 		{
@@ -431,7 +431,7 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: -5.5d
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -542,7 +542,6 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
 			size: 1.0d
 			subtitle: "An Iron-Nickel alloy"
 			tasks: [{
@@ -559,7 +558,7 @@
 				type: "item"
 			}]
 			title: "Invar"
-			x: -1.0d
+			x: -4.0d
 			y: 4.5d
 		}
 		{
@@ -703,7 +702,6 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
-			shape: "rsquare"
 			subtitle: "The Steam Grinder's big brother"
 			tasks: [
 				{
@@ -740,8 +738,8 @@
 				}
 			]
 			title: "Steam Oven"
-			x: -2.5d
-			y: 4.5d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -844,6 +842,39 @@
 			}]
 			x: -2.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["16E15CB675F619BE"]
+			id: "06C4E385DD6AF5D6"
+			tasks: [{
+				id: "57F838FC14B023AF"
+				item: "gtceu:steam_miner"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16E15CB675F619BE"]
+			id: "117F95D0575F8B4F"
+			tasks: [{
+				id: "50FFCE93780ED831"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16E15CB675F619BE"]
+			id: "4FC40107BAFCC54C"
+			tasks: [{
+				id: "7F17382032158DCF"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
