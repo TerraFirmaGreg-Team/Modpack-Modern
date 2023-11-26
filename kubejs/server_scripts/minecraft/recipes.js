@@ -170,8 +170,13 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'minecraft:bread'})
     event.remove({id: 'gtceu:packer/hay_block'})
 
-    // Удаление других рецептов
+    // Удаление рецептов связанных с TripWire Hook
     event.remove({id: 'minecraft:tripwire_hook'})
+    event.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
+    event.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
+    event.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
+
+    // Удаление других рецептов
     event.remove({id: 'minecraft:blast_furnace'})
     event.remove({id: 'minecraft:fire_charge'})
     event.remove({id: 'minecraft:netherite_ingot_from_netherite_block'})
@@ -198,6 +203,23 @@ const registerMinecraftRecipes = (event) => {
 
     event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
+
+    // TripWire Hook
+    event.shapeless('minecraft:tripwire_hook', [
+        '#forge:rods/wooden',
+        '#forge:rings/wrought_iron',
+        '#forge:springs/small'
+    ]).id('tfg:recipes/tripwire_hook')
+
+    event.recipes.gtceu.assembler('tfg/tripwire_hook')             
+        .itemInputs(
+            '#forge:rods/wooden',
+            '#forge:rings/wrought_iron',
+            '#forge:springs/small'
+            )
+        .itemOutputs('2x minecraft:tripwire_hook')
+        .duration(100)
+        .EUt(4)
 
     // Sugar Cane (Papyrus) -> Paper
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled'})
