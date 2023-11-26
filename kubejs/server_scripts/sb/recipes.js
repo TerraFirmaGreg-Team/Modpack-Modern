@@ -364,12 +364,12 @@ const registerSBRecipes = (event) => {
         'CGA'
     ], {
         A: '#forge:circuits/lv',
-        B: '#minecraft:pickaxes',
+        B: '#tfc:pickaxes',
         C: 'gtceu:lv_robot_arm',
-        D: '#minecraft:hoes',
+        D: '#tfc:hoes',
         E: 'sophisticatedbackpacks:upgrade_base',
-        F: '#minecraft:shovels',
-        G: '#minecraft:axes',
+        F: '#tfc:shovels',
+        G: '#tfc:axes',
     });
 
     // Улучшение - улучшенный ToolSwapper
