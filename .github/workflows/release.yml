@@ -45,7 +45,6 @@ jobs:
           cp -r .github/buildtools/serverfiles/* overrides/
           cd ./overrides/
           cat ./.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
-          rm -rf shaderpacks
           zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Upload Curseforge
