@@ -818,6 +818,14 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('tfc:metal/anvil/blue_steel')
         .duration(1680)
         .EUt(16)
+
+    // LimeWater + Sand -> Mortar
+    event.recipes.gtceu.centrifuge('mortar')             
+        .itemInputs('#forge:sand')
+        .inputFluids(Fluid.of('tfc:limewater', 100))
+        .itemOutputs('16x tfc:mortar')
+        .duration(800)
+        .EUt(8)
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {

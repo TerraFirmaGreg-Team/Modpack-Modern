@@ -1,26 +1,7 @@
 // priority: 0
 
 const registerGTRecipes = (event) => {
-    // Удаление рецептов связанных с наковальней
-    event.remove({id: 'gtceu:arc_furnace/arc_anvil'})
-    event.remove({id: 'gtceu:macerator/macerate_anvil'})
-    event.remove({id: 'gtceu:alloy_smelter/anvil'})
-    event.remove({id: 'gtceu:fluid_solidifier/solidify_anvil'})
-
-    event.remove({id: 'gtceu:arc_furnace/arc_damaged_anvil'})
-    event.remove({id: 'gtceu:macerator/macerate_damaged_anvil'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chipped_anvil'})
-    event.remove({id: 'gtceu:macerator/macerate_chipped_anvil'})
     
-    // Удаление рецептов связанных с печкой
-    event.remove({id: 'gtceu:assembler/furnace'})
-    event.remove({id: 'gtceu:macerator/macerate_furnace'})
-    event.remove({id: 'gtceu:assembler/furnace_minecart'})
-
-    // Удаление рецептов связанных с вагонеткой с печкой
-    event.remove({id: 'gtceu:arc_furnace/arc_furnace_minecart'})
-    event.remove({id: 'gtceu:macerate/macerate_furnace_minecart'})
-
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
@@ -40,113 +21,8 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:smelting/fireclay_brick'})
     event.remove({id: 'gtceu:macerator/macerate_firebrick'})
 
-    // Удаление рецептов связанных с Кольчугой
-    event.remove({id: 'gtceu:shaped/chainmail_boots'})
-    event.remove({id: 'gtceu:shaped/chainmail_leggings'})
-    event.remove({id: 'gtceu:shaped/chainmail_chestplate'})
-    event.remove({id: 'gtceu:shaped/chainmail_helmet'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_helmet'})
-    event.remove({id: 'minecraft:iron_nugget_from_smelting'})
-    event.remove({id: 'minecraft:iron_nugget_from_blasting'})
-
-    // Удаление рецептов связанных с Железной броней
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_helmet'})
-    event.remove({id: 'gtceu:shaped/iron_horse_armor'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_horse_armor'})
-
-    // Удаление рецептов связанных с Золотой броней
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_helmet'})
-    event.remove({id: 'gtceu:shaped/golden_horse_armor'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_horse_armor'})
-    event.remove({id: 'minecraft:gold_nugget_from_smelting'})
-    event.remove({id: 'minecraft:gold_nugget_from_blasting'})
-
-    // Удаление рецептов связанных с Алмазной броней
-    event.remove({id: 'gtceu:macerator/macerate_diamond_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_helmet'})
-    event.remove({id: 'gtceu:shaped/diamond_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_horse_armor'})
-
-    // Удаление рецептов связанных с Деревянными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_wooden_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_hoe'})
-
-    // Удаление рецептов связанных с Каменными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_stone_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_hoe'})
-
-    // Удаление рецептов связанных с Железными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_iron_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_hoe'})
-
-    // Удаление рецептов связанных с Золотыми инструментами
-    event.remove({id: 'gtceu:macerator/macerate_golden_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_hoe'})
-
-    // Удаление рецептов связанных с Алмазными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_diamond_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_hoe'})
-
     // Удаление рецептов связанных с BioChaff
     event.remove({id: 'gtceu:macerator/dirt_from_bio_chaff'})
-
-    // Удаление рецептов связанных с Paper
-    event.remove({id: 'gtceu:shaped/paper'})
 
     // Удаление других рецептов
     //
@@ -390,24 +266,6 @@ const registerGTRecipes = (event) => {
         .duration(128)
         .EUt(3)
 
-    // Sugar Cane (Papyrus) -> Paper
-    event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled'})
-    event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane'})
-
-    event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
-        .itemInputs('tfc:papyrus')
-        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
-        .itemOutputs('minecraft:paper')
-        .duration(100)
-        .EUt(7)
-
-    event.recipes.gtceu.chemical_bath('paper_from_papyrus')             
-        .itemInputs('tfc:papyrus')
-        .inputFluids(Fluid.of('minecraft:water', 100))
-        .itemOutputs('minecraft:paper')
-        .duration(100)
-        .EUt(7)
-
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('tfg:smelting/fireclay_brick')
 
@@ -558,121 +416,4 @@ const registerGTRecipes = (event) => {
         C: 'gtceu:heatproof_machine_casing',
         D: 'gtceu:tin_single_cable'
     }).id('gtceu:shaped/electric_blast_furnace')
-
-    // LimeWater + Sand -> Mortar
-    event.recipes.gtceu.centrifuge('mortar')             
-        .itemInputs('#forge:sand')
-        .inputFluids(Fluid.of('tfc:limewater', 100))
-        .itemOutputs('16x tfc:mortar')
-        .duration(800)
-        .EUt(8)
-
-    // White Dye Recipes
-    event.remove({id: 'gtceu:extractor/lily_of_the_valley_dye'})
-    event.recipes.gtceu.extractor('white_dye')             
-        .itemInputs('1x #tfc:makes_white_dye')
-        .itemOutputs('2x minecraft:white_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Red Dye Recipes
-    event.remove({id: 'gtceu:extractor/rose_bush_dye'})
-    event.remove({id: 'gtceu:extractor/red_tulip_dye'})
-    event.remove({id: 'gtceu:extractor/poppy_dye'})
-    event.remove({id: 'gtceu:extractor/beetroot_dye'})
-    event.recipes.gtceu.extractor('red_dye')             
-        .itemInputs('1x #tfc:makes_red_dye')
-        .itemOutputs('2x minecraft:red_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Lime Dye Recipes
-    event.remove({id: 'gtceu:extractor/rose_bush_dye'})
-    event.remove({id: 'gtceu:extractor/red_tulip_dye'})
-    event.remove({id: 'gtceu:extractor/poppy_dye'})
-    event.remove({id: 'gtceu:extractor/beetroot_dye'})
-    event.recipes.gtceu.extractor('lime_dye')             
-        .itemInputs('1x tfc:plant/moss')
-        .itemOutputs('2x minecraft:lime_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Light Blue Dye Recipes
-    event.remove({id: 'gtceu:extractor/blue_orchid_dye'})
-    event.recipes.gtceu.extractor('light_blue_dye')             
-        .itemInputs('1x #tfc:makes_light_blue_dye')
-        .itemOutputs('2x minecraft:light_blue_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Green Dye Recipes
-    event.recipes.gtceu.extractor('green_dye')             
-        .itemInputs('1x #tfc:makes_green_dye')
-        .itemOutputs('2x minecraft:green_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Magenta Dye Recipes
-    event.remove({id: 'gtceu:extractor/lilac_dye'})
-    event.remove({id: 'gtceu:extractor/allium_dye'})
-    event.recipes.gtceu.extractor('magenta_dye')             
-        .itemInputs('1x #tfc:makes_magenta_dye')
-        .itemOutputs('2x minecraft:magenta_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Orange Dye Recipes
-    event.remove({id: 'gtceu:extractor/orange_tulip_dye'})
-    event.recipes.gtceu.extractor('orange_dye')             
-        .itemInputs('1x #tfc:makes_orange_dye')
-        .itemOutputs('2x minecraft:orange_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Purple Dye Recipes
-    event.recipes.gtceu.extractor('purple_dye')             
-        .itemInputs('1x #tfc:makes_purple_dye')
-        .itemOutputs('2x minecraft:purple_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Brown Dye Recipes
-    event.recipes.gtceu.extractor('brown_dye')             
-        .itemInputs('1x #tfc:makes_brown_dye')
-        .itemOutputs('2x minecraft:brown_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Light Gray Dye Recipes
-    event.recipes.gtceu.extractor('light_gray_dye')             
-        .itemInputs('1x tfc:plant/yucca')
-        .itemOutputs('2x minecraft:light_gray_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Yellow Dye Recipes
-    event.remove({id: 'gtceu:extractor/sunflower_dye'})
-    event.remove({id: 'gtceu:extractor/dandelion_dye'})
-    event.recipes.gtceu.extractor('yellow_dye')             
-        .itemInputs('1x #tfc:makes_yellow_dye')
-        .itemOutputs('2x minecraft:yellow_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Blue Dye Recipes
-    event.remove({id: 'gtceu:extractor/cornflower_dye'})
-    event.recipes.gtceu.extractor('blue_dye')             
-        .itemInputs('1x #tfc:makes_blue_dye')
-        .itemOutputs('2x minecraft:blue_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Pink Dye Recipes
-    event.remove({id: 'gtceu:extractor/pink_tulip_dye'})
-    event.remove({id: 'gtceu:extractor/peony_dye'})
-    event.recipes.gtceu.extractor('pink_dye')             
-        .itemInputs('1x #tfc:makes_pink_dye')
-        .itemOutputs('2x minecraft:pink_dye')
-        .duration(200)
-        .EUt(2)
 }

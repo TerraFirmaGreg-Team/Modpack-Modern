@@ -20,53 +20,136 @@ const registerSBRecipes = (event) => {
     });
 
     // Железный рюкзак
-    event.shaped('sophisticatedbackpacks:iron_backpack', [// arg 1: output
-        'ABA', 
-        'BCB', // arg 2: the shape (array of strings)
-        'ABA'  
-    ], {
-        A: '#forge:plates/double/wrought_iron', 
-        B: '#forge:rods/long/wrought_iron',  //arg 3: the mapping object
-        C: 'sophisticatedbackpacks:backpack'   
-    });
+    event.custom({
+        type: "sophisticatedbackpacks:backpack_upgrade",
+        conditions: [
+            {
+                type: "sophisticatedcore:item_enabled",
+                itemRegistryName: "sophisticatedbackpacks:iron_backpack"
+            }
+        ],
+        key: {
+            B: {
+                "item": "sophisticatedbackpacks:backpack"
+            },
+            I: {
+                "tag": "forge:plates/red_steel"
+            },
+            C: {
+                "tag": 'forge:chests/wooden'
+            },
+            F: {
+                "tag": 'forge:rods/red_steel'
+            }
+        },
+        pattern: [
+            "IFI",
+            "FCF",
+            "IBI"
+        ],
+        result: {
+          item: "sophisticatedbackpacks:iron_backpack"
+        }
+    }).id('sophisticatedbackpacks:iron_backpack_upgrade')
 
     // Золотой рюкзак
-    event.shaped('sophisticatedbackpacks:gold_backpack', [
-        'ABA',
-        'CDC',
-        'AEA'
-    ], {
-        A: '#forge:plates/double/rose_gold',
-        B: '#forge:rods/long/sterling_silver',
-        C: '#forge:rods/long/gold',
-        D: 'sophisticatedbackpacks:iron_backpack',
-        E: '#forge:plates/double/steel'
-    });
+    event.custom({
+        type: "sophisticatedbackpacks:backpack_upgrade",
+        conditions: [
+            {
+                type: "sophisticatedcore:item_enabled",
+                itemRegistryName: "sophisticatedbackpacks:gold_backpack"
+            }
+        ],
+        key: {
+            B: {
+                "item": "sophisticatedbackpacks:iron_backpack"
+            },
+            I: {
+                "tag": "forge:plates/aluminium"
+            },
+            C: {
+                "tag": 'forge:chests/wooden'
+            },
+            F: {
+                "tag": 'forge:rods/aluminium'
+            }
+        },
+        pattern: [
+            "IFI",
+            "FCF",
+            "IBI"
+        ],
+        result: {
+          item: "sophisticatedbackpacks:gold_backpack"
+        }
+    }).id('sophisticatedbackpacks:gold_backpack_upgrade')
 
     // Алмазный рюкзак
-    event.shaped('sophisticatedbackpacks:diamond_backpack', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: '#forge:plates/double/black_steel',
-        B: '#forge:rods/long/black_steel',
-        C: 'sophisticatedbackpacks:gold_backpack'
-    });
+    event.custom({
+        type: "sophisticatedbackpacks:backpack_upgrade",
+        conditions: [
+            {
+                type: "sophisticatedcore:item_enabled",
+                itemRegistryName: "sophisticatedbackpacks:diamond_backpack"
+            }
+        ],
+        key: {
+            B: {
+                "item": "sophisticatedbackpacks:gold_backpack"
+            },
+            I: {
+                "tag": "forge:plates/titanium"
+            },
+            C: {
+                "tag": 'forge:chests/wooden'
+            },
+            F: {
+                "tag": 'forge:rods/titanium'
+            }
+        },
+        pattern: [
+            "IFI",
+            "FCF",
+            "IBI"
+        ],
+        result: {
+          item: "sophisticatedbackpacks:diamond_backpack"
+        }
+    }).id('sophisticatedbackpacks:diamond_backpack_upgrade')
     
     // Незеритовый рюкзак
-    event.shaped('sophisticatedbackpacks:netherite_backpack', [
-        'ABC',
-        'DED',
-        'CBA'
-    ], {
-        A: '#forge:plates/double/blue_steel',
-        B: '#forge:rods/long/red_steel',
-        C: '#forge:plates/double/red_steel',
-        D: '#forge:rods/long/blue_steel',
-        E: 'sophisticatedbackpacks:diamond_backpack'
-    });
-
+    event.custom({
+        type: "sophisticatedbackpacks:backpack_upgrade",
+        conditions: [
+            {
+                type: "sophisticatedcore:item_enabled",
+                itemRegistryName: "sophisticatedbackpacks:netherite_backpack"
+            }
+        ],
+        key: {
+            B: {
+                "item": "sophisticatedbackpacks:diamond_backpack"
+            },
+            I: {
+                "tag": "forge:plates/tungsten_steel"
+            },
+            C: {
+                "tag": 'forge:chests/wooden'
+            },
+            F: {
+                "tag": 'forge:rods/tungsten_steel'
+            }
+        },
+        pattern: [
+            "IFI",
+            "FCF",
+            "IBI"
+        ],
+        result: {
+          item: "sophisticatedbackpacks:netherite_backpack"
+        }
+    }).id('sophisticatedbackpacks:netherite_backpack_upgrade')
 
     // Апгрейды
 
@@ -294,4 +377,6 @@ const registerSBRecipes = (event) => {
         'sophisticatedbackpacks:tool_swapper_upgrade',
         '#forge:circuits/mv'
     ]);
+
+    // Покраска рюкзака
 }
