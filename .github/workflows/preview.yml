@@ -30,25 +30,22 @@ jobs:
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
-      - name: Move
-        run: rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
-
       - name: Archive MMC
-        run: zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
+        run: |
+          rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
+          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
 
       - name: Archive CF
         run: |
-          mv -vf .minecraft/ ./overrides/ 
-          zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip ./manifest.json ./modlist.html ./overrides/config/ ./overrides/kubejs/ ./overrides/defaultconfigs/
+          mv -vf .minecraft/ overrides/ 
+          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides/config/ overrides/kubejs/ overrides/defaultconfigs/
 
       - name: Archive Server
         run: |
+          cp -r .github/buildtools/serverfiles/* overrides/
           cd ./overrides/
-          cat ../.github/buildtools/client_mod.txt | while read -r line; do find ./mods -name "$line" -delete; done
-          rm -rf ./shaderpacks
-          cp -r .github/buildtools/serverfiles/* ./overrides/
-          cd ./overrides/
-          zip -r ../TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
+          cat ./.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
+          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v0.1.15
