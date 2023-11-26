@@ -9,6 +9,10 @@ const partGen = [ "sheet", "double_sheet", "rod", "block", "block_stairs", "bloc
 const armorGen = [ "boots", "greaves", "chestplate", "helmet", "shield", "unfinished_boots", "unfinished_chestplate", "unfinished_greaves", "unfinished_helmet" ]
 const utilityGen = [ "anvil", "bars", "chain", "lamp", "trapdoor", "unfinished_lamp" ]
 const gtToolGen = [
+    "knife_butchery_head",
+    "butchery_knife",
+    "file_head",
+    "file",
     "axe_head",
     "axe",
     "hammer_head",
@@ -357,6 +361,20 @@ const ItemHeats = {
     "shield": { heat_capacity: 11.429, metal_amount: 288, hasDur: true, rules: [ "upset_last", "bend_second_last", "bend_third_last" ], anvilFrom: "double_sheet",
         input: (name) => { return { item: `tfc:metal/shield/${name}` } }, 
         output: (name) => { return { item: `tfc:metal/shield/${name}` } } },
+
+    "file_head": { heat_capacity: 2.857, metal_amount: 144, rules: [ "hit_last", "hit_not_last", "bend_not_last" ], anvilFrom: "ingot",
+        input: (name) => { return { tag: `forge:file_heads/${name}` } }, 
+        output: (name) => { return { item: `gtceu:${name}_file_head` } } },
+    "file": { heat_capacity: 2.857, metal_amount: 144, hasDur: true,
+        input: (name) => { return { item: `gtceu:${name}_file` } }, 
+        output: (name) => { return { item: `gtceu:${name}_file` } } },
+    "knife_butchery_head": { heat_capacity: 2.857, metal_amount: 144, rules: [ "hit_last", "hit_not_last", "shrink_not_last" ], anvilFrom: "ingot",
+        input: (name) => { return { tag: `forge:butchery_knife_heads/${name}` } }, 
+        output: (name) => { return { item: `gtceu:${name}_knife_butchery_head` } } },
+    "butchery_knife": { heat_capacity: 2.857, metal_amount: 144, hasDur: true,
+        input: (name) => { return { item: `gtceu:${name}_butchery_knife` } }, 
+        output: (name) => { return { item: `gtceu:${name}_butchery_knife` } } },
+    
 
     "ingot": { heat_capacity: 2.857, metal_amount: 144, hasMold: true,
         input: (name) => { return { tag: `forge:ingots/${name}` } }, 
