@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
     registerCreateRecipes(event)
     registerSBRecipes(event)
     registerExtendedCraftingRecipes(event)
+    registerTreeTapRecipes(event)
 })
 
 /**
