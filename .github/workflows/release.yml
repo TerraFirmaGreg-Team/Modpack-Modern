@@ -27,8 +27,8 @@ jobs:
           DEV=${{ steps.get_version.outputs.version }}
           sed -i -e "s/DEV/${DEV}/g" manifest.json
           sed -i -e "s/DEV/${DEV}/g" instance.cfg
-          sed -i -e "s/DEV/${DEV}/g" .minecraft/config/fancymenu/customization/main_menu.txt
-          sed -i -e "s/DEV/${DEV}/g" .minecraft/config/bcc-common.toml
+          sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
+          sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
       - name: Move
         run: rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
