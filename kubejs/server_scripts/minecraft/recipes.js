@@ -176,6 +176,10 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
     event.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
 
+    // Удаление рецептов ведра
+    event.remove({id: 'gtceu:bender/bucket'})
+    event.remove({id: 'gtceu:shaped/iron_bucket'})
+
     // Удаление других рецептов
     event.remove({id: 'minecraft:blast_furnace'})
     event.remove({id: 'minecraft:fire_charge'})
