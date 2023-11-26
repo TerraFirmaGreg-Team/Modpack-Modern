@@ -163,6 +163,13 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:shaped/iron_bars'})
     event.remove({id: 'gtceu:assembler/iron_bars'})
 
+    // Удаление рецептов связанных с Wheat
+    event.remove({id: 'minecraft:packed_mud'})
+    event.remove({id: 'minecraft:cookie'})
+    event.remove({id: 'minecraft:cake'})
+    event.remove({id: 'minecraft:bread'})
+    event.remove({id: 'gtceu:packer/hay_block'})
+
     // Удаление других рецептов
     event.remove({id: 'minecraft:tripwire_hook'})
     event.remove({id: 'minecraft:blast_furnace'})

@@ -24,6 +24,20 @@ const registerGTRecipes = (event) => {
     // Удаление рецептов связанных с BioChaff
     event.remove({id: 'gtceu:macerator/dirt_from_bio_chaff'})
 
+    // Удаление рецептов связанных с Wheat Dust
+    event.remove({id: 'gtceu:packer/package_wheat_tiny_dust'})
+    event.remove({id: 'gtceu:packer/package_wheat_small_dust'})
+    event.remove({id: 'gtceu:packer/unpackage_wheat_tiny_dust'})
+    event.remove({id: 'gtceu:packer/unpackage_wheat_small_dust'})
+    event.remove({id: 'gtceu:shaped/tiny_dust_assembling_wheat'})
+    event.remove({id: 'gtceu:shaped/small_dust_assembling_wheat'})
+    event.remove({id: 'gtceu:shaped/tiny_dust_disassembling_wheat'})
+    event.remove({id: 'gtceu:shaped/small_dust_disassembling_wheat'})
+    event.remove({id: 'gtceu:macerator/macerate_wheat'})
+    event.remove({id: 'gtceu:macerator/macerate_hay_block'})
+    event.remove({id: 'gtceu:shapeless/wheat_to_dust'})
+    
+
     // Удаление других рецептов
     //
     

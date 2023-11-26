@@ -12,4 +12,6 @@ const createItemsToHide = [
     "create:golden_sheet",
     "create:zinc_ingot",
     "create:brass_ingot",
+    'create:wheat_flour',
+    'create:wheat_flour'
 ]

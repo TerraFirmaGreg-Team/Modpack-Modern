@@ -826,6 +826,48 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('16x tfc:mortar')
         .duration(800)
         .EUt(8)
+
+    // Barley Grain -> Barley Floor
+    event.recipes.gtceu.macerator('barley_flour')             
+        .itemInputs('tfc:food/barley_grain')
+        .itemOutputs('2x tfc:food/barley_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Maize Grain -> Maize Floor
+    event.recipes.gtceu.macerator('maize_flour')             
+        .itemInputs('tfc:food/maize_grain')
+        .itemOutputs('2x tfc:food/maize_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Oat Grain -> Oat Floor
+    event.recipes.gtceu.macerator('oat_flour')             
+        .itemInputs('tfc:food/oat_grain')
+        .itemOutputs('2x tfc:food/oat_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Rye Grain -> Rye Floor
+    event.recipes.gtceu.macerator('rye_flour')             
+        .itemInputs('tfc:food/rye_grain')
+        .itemOutputs('2x tfc:food/rye_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Rice Grain -> Rice Floor
+    event.recipes.gtceu.macerator('rice_flour')             
+        .itemInputs('tfc:food/rice_grain')
+        .itemOutputs('2x tfc:food/rice_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Wheat Grain -> Wheat Floor
+    event.recipes.gtceu.macerator('wheat_flour')             
+        .itemInputs('tfc:food/wheat_grain')
+        .itemOutputs('2x tfc:food/wheat_flour')
+        .duration(400)
+        .EUt(16)
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {

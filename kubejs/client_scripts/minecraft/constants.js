@@ -151,6 +151,8 @@ const minecraftItemsToHide = [
     'minecraft:dark_prismarine_slab', 
     'minecraft:smooth_stone',*/
 
+    'minecraft:wheat',
+    'minecraft:composter',
     'minecraft:barrel',
     'minecraft:blast_furnace',
     'minecraft:furnace',
