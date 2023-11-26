@@ -9,7 +9,9 @@ const gtItemsToHide = [
     'gtceu:primitive_blast_furnace',
     'gtceu:wheat_dust',
     'gtceu:wheat_small_dust',
-    'gtceu:wheat_tiny_dust'
+    'gtceu:wheat_tiny_dust',
+    'gtceu:wood_drill_head',
+    'gtceu:wood_chainsaw_head'
 ]
 
 const stoneTypesToHide = [
