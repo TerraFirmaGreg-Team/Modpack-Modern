@@ -1,10 +1,11 @@
 .git/
 .github/
+shaderpacks/
+.curseclient
 .gitignore
 CHANGELOG.md
-minecraftinstance.json
-LICENSE
 README.md
-mmc-pack.json
 instance.cfg
-kubejs.code-workspace
+manifest.json
+mmc-pack.json
+modlist.html
