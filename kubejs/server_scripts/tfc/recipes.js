@@ -675,7 +675,7 @@ const registerTFCRecipes = (event) => {
     }).id('tfc:crafting/pumpkin_chunks_knife')
 
     // Copper Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_copper_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_copper_anvil')             
         .itemInputs('14x #forge:ingots/copper')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/copper')
@@ -683,7 +683,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Copper Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_copper_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_copper_anvil')             
         .inputFluids(Fluid.of('gtceu:copper', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/copper')
@@ -691,7 +691,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
     
     // BismuthBronze Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_bismuth_bronze_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_bismuth_bronze_anvil')             
         .itemInputs('14x #forge:ingots/bismuth_bronze')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/bismuth_bronze')
@@ -699,7 +699,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // BismuthBronze Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_bismuth_bronze_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_bismuth_bronze_anvil')             
         .inputFluids(Fluid.of('gtceu:bismuth_bronze', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/bismuth_bronze')
@@ -707,7 +707,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
     
     // Bronze Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/asdfasdfasdfasdf')             
+    event.recipes.gtceu.alloy_smelter('asdfasdfasdfasdf')             
         .itemInputs('14x #forge:ingots/bronze')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/bronze')
@@ -715,7 +715,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Bronze Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_bronze_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_bronze_anvil')             
         .inputFluids(Fluid.of('gtceu:bronze', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/bronze')
@@ -723,7 +723,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Black Bronze Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_black_bronze_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_black_bronze_anvil')             
         .itemInputs('14x #forge:ingots/black_bronze')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/black_bronze')
@@ -731,7 +731,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Black Bronze Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_black_bronze_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_black_bronze_anvil')             
         .inputFluids(Fluid.of('gtceu:black_bronze', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/black_bronze')
@@ -740,7 +740,7 @@ const registerTFCRecipes = (event) => {
 
         
     // Wrought Iron Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_wrought_iron_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_wrought_iron_anvil')             
         .itemInputs('14x #forge:ingots/wrought_iron')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/wrought_iron')
@@ -748,7 +748,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Wrought Iron Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_wrought_iron_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_wrought_iron_anvil')             
         .inputFluids(Fluid.of('gtceu:wrought_iron', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/wrought_iron')
@@ -756,7 +756,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Steel Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_steel_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_steel_anvil')             
         .itemInputs('14x #forge:ingots/steel')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/steel')
@@ -764,7 +764,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Steel Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_steel_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_steel_anvil')             
         .inputFluids(Fluid.of('gtceu:steel', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/steel')
@@ -772,7 +772,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Black Steel Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_black_steel_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_black_steel_anvil')             
         .itemInputs('14x #forge:ingots/black_steel')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/black_steel')
@@ -780,7 +780,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Black Steel Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_black_steel_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_black_steel_anvil')             
         .inputFluids(Fluid.of('gtceu:black_steel', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/black_steel')
@@ -788,7 +788,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Red Steel Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_red_steel_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_red_steel_anvil')             
         .itemInputs('14x #forge:ingots/red_steel')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/red_steel')
@@ -796,7 +796,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Red Steel Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_red_steel_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_red_steel_anvil')             
         .inputFluids(Fluid.of('gtceu:red_steel', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/red_steel')
@@ -804,7 +804,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Blue Steel Anvil из Слитков
-    event.recipes.gtceu.alloy_smelter('alloy_smelter/ingots_to_blue_steel_anvil')             
+    event.recipes.gtceu.alloy_smelter('ingots_to_blue_steel_anvil')             
         .itemInputs('14x #forge:ingots/blue_steel')
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/blue_steel')
@@ -812,7 +812,7 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     // Blue Steel Anvil в отвердителе
-    event.recipes.gtceu.fluid_solidifier('fluid_solidifier/solidify_blue_steel_anvil')             
+    event.recipes.gtceu.fluid_solidifier('solidify_blue_steel_anvil')             
         .inputFluids(Fluid.of('gtceu:blue_steel', 2016))
         .notConsumable('gtceu:anvil_casting_mold')
         .itemOutputs('tfc:metal/anvil/blue_steel')

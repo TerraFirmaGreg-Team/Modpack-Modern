@@ -262,11 +262,101 @@ const registerGTRecipes = (event) => {
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/uv_forge_hammer')
 
+    // Kapok Log -> Sticky Resin (Centriguge)
+    event.recipes.gtceu.centrifuge('rubber_log_separation')             
+        .itemInputs('#tfc:kapok_logs')
+        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
+        .chancedOutput('gtceu:plant_ball', 3750, 900)
+        .chancedOutput('gtceu:carbon_dust', 2500, 600)
+        .chancedOutput('gtceu:wood_dust', 2500, 700)
+        .outputFluids(Fluid.of('gtceu:methane', 60))
+        .duration(200)
+        .EUt(20)
+
+    // Kapok Log -> Raw Rubber Dust
+    event.recipes.gtceu.extractor('raw_rubber_from_log')             
+        .itemInputs('#tfc:kapok_logs')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // Kapok Sapling -> Raw Rubber Dust
+    event.recipes.gtceu.extractor('raw_rubber_from_sapling')             
+        .itemInputs('tfc:wood/sapling/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // Kapok Leaves -> Raw Rubber Dust
+    event.recipes.gtceu.extractor('raw_rubber_from_leaves')             
+        .itemInputs('16x tfc:wood/leaves/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // TFC Plants -> Plant Ball (Centrifuge)
+    event.recipes.gtceu.centrifuge('grass_block_separation')             
+        .itemInputs('#tfc:plants')
+        .chancedOutput('gtceu:plant_ball', 3000, 1200)
+        .chancedOutput('gtceu:clay_tiny_dust', 5000, 900)
+        .duration(250)
+        .EUt(30)
+
+    // TFC Dirt -> Plant Ball (Centrifuge)
+    event.recipes.gtceu.centrifuge('dirt_separation')             
+        .itemInputs('#tfc:dirt')
+        .chancedOutput('gtceu:plant_ball', 1250, 700)
+        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
+        .duration(250)
+        .EUt(30)
+
+    // 8x Vanilla Shit -> Plant Ball (Compressor)
+    event.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_crimson_stem'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_tube_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_sugar_cane'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_red_mushroom'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_potato'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_nether_wart'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_horn_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_fire_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_carrot'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_cactus'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_bubble_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')             
+        .itemInputs('8x #tfc:seeds')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_food')             
+        .itemInputs('8x #tfc:foods')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')             
+        .itemInputs('8x #tfc:plants')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')             
+        .itemInputs('8x #tfc:corals')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('tfg:smelting/fireclay_brick')
 
     // TFC FireBrick -> FireBrick dust
-    event.recipes.gtceu.macerator('macerator/macerate_firebrick')             
+    event.recipes.gtceu.macerator('macerate_firebrick')             
         .itemInputs('tfc:ceramic/fire_brick')
         .itemOutputs('gtceu:fireclay_dust')
         .duration(15)
@@ -414,7 +504,7 @@ const registerGTRecipes = (event) => {
     }).id('gtceu:shaped/electric_blast_furnace')
 
     // LimeWater + Sand -> Mortar
-    event.recipes.gtceu.centrifuge('centrifuge/mortar')             
+    event.recipes.gtceu.centrifuge('mortar')             
         .itemInputs('#forge:sand')
         .inputFluids(Fluid.of('tfc:limewater', 100))
         .itemOutputs('16x tfc:mortar')
@@ -423,7 +513,7 @@ const registerGTRecipes = (event) => {
 
     // White Dye Recipes
     event.remove({id: 'gtceu:extractor/lily_of_the_valley_dye'})
-    event.recipes.gtceu.extractor('extractor/white_dye')             
+    event.recipes.gtceu.extractor('white_dye')             
         .itemInputs('1x #tfc:makes_white_dye')
         .itemOutputs('2x minecraft:white_dye')
         .duration(200)
@@ -434,7 +524,7 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:extractor/red_tulip_dye'})
     event.remove({id: 'gtceu:extractor/poppy_dye'})
     event.remove({id: 'gtceu:extractor/beetroot_dye'})
-    event.recipes.gtceu.extractor('extractor/red_dye')             
+    event.recipes.gtceu.extractor('red_dye')             
         .itemInputs('1x #tfc:makes_red_dye')
         .itemOutputs('2x minecraft:red_dye')
         .duration(200)
@@ -445,7 +535,7 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:extractor/red_tulip_dye'})
     event.remove({id: 'gtceu:extractor/poppy_dye'})
     event.remove({id: 'gtceu:extractor/beetroot_dye'})
-    event.recipes.gtceu.extractor('extractor/lime_dye')             
+    event.recipes.gtceu.extractor('lime_dye')             
         .itemInputs('1x tfc:plant/moss')
         .itemOutputs('2x minecraft:lime_dye')
         .duration(200)
@@ -453,14 +543,14 @@ const registerGTRecipes = (event) => {
 
     // Light Blue Dye Recipes
     event.remove({id: 'gtceu:extractor/blue_orchid_dye'})
-    event.recipes.gtceu.extractor('extractor/light_blue_dye')             
+    event.recipes.gtceu.extractor('light_blue_dye')             
         .itemInputs('1x #tfc:makes_light_blue_dye')
         .itemOutputs('2x minecraft:light_blue_dye')
         .duration(200)
         .EUt(2)
 
     // Green Dye Recipes
-    event.recipes.gtceu.extractor('extractor/green_dye')             
+    event.recipes.gtceu.extractor('green_dye')             
         .itemInputs('1x #tfc:makes_green_dye')
         .itemOutputs('2x minecraft:green_dye')
         .duration(200)
@@ -469,7 +559,7 @@ const registerGTRecipes = (event) => {
     // Magenta Dye Recipes
     event.remove({id: 'gtceu:extractor/lilac_dye'})
     event.remove({id: 'gtceu:extractor/allium_dye'})
-    event.recipes.gtceu.extractor('extractor/magenta_dye')             
+    event.recipes.gtceu.extractor('magenta_dye')             
         .itemInputs('1x #tfc:makes_magenta_dye')
         .itemOutputs('2x minecraft:magenta_dye')
         .duration(200)
@@ -477,28 +567,28 @@ const registerGTRecipes = (event) => {
 
     // Orange Dye Recipes
     event.remove({id: 'gtceu:extractor/orange_tulip_dye'})
-    event.recipes.gtceu.extractor('extractor/orange_dye')             
+    event.recipes.gtceu.extractor('orange_dye')             
         .itemInputs('1x #tfc:makes_orange_dye')
         .itemOutputs('2x minecraft:orange_dye')
         .duration(200)
         .EUt(2)
 
     // Purple Dye Recipes
-    event.recipes.gtceu.extractor('extractor/purple_dye')             
+    event.recipes.gtceu.extractor('purple_dye')             
         .itemInputs('1x #tfc:makes_purple_dye')
         .itemOutputs('2x minecraft:purple_dye')
         .duration(200)
         .EUt(2)
 
     // Brown Dye Recipes
-    event.recipes.gtceu.extractor('extractor/brown_dye')             
+    event.recipes.gtceu.extractor('brown_dye')             
         .itemInputs('1x #tfc:makes_brown_dye')
         .itemOutputs('2x minecraft:brown_dye')
         .duration(200)
         .EUt(2)
 
     // Light Gray Dye Recipes
-    event.recipes.gtceu.extractor('extractor/light_gray_dye')             
+    event.recipes.gtceu.extractor('light_gray_dye')             
         .itemInputs('1x tfc:plant/yucca')
         .itemOutputs('2x minecraft:light_gray_dye')
         .duration(200)
@@ -507,7 +597,7 @@ const registerGTRecipes = (event) => {
     // Yellow Dye Recipes
     event.remove({id: 'gtceu:extractor/sunflower_dye'})
     event.remove({id: 'gtceu:extractor/dandelion_dye'})
-    event.recipes.gtceu.extractor('extractor/yellow_dye')             
+    event.recipes.gtceu.extractor('yellow_dye')             
         .itemInputs('1x #tfc:makes_yellow_dye')
         .itemOutputs('2x minecraft:yellow_dye')
         .duration(200)
@@ -515,7 +605,7 @@ const registerGTRecipes = (event) => {
 
     // Blue Dye Recipes
     event.remove({id: 'gtceu:extractor/cornflower_dye'})
-    event.recipes.gtceu.extractor('extractor/blue_dye')             
+    event.recipes.gtceu.extractor('blue_dye')             
         .itemInputs('1x #tfc:makes_blue_dye')
         .itemOutputs('2x minecraft:blue_dye')
         .duration(200)
@@ -524,7 +614,7 @@ const registerGTRecipes = (event) => {
     // Pink Dye Recipes
     event.remove({id: 'gtceu:extractor/pink_tulip_dye'})
     event.remove({id: 'gtceu:extractor/peony_dye'})
-    event.recipes.gtceu.extractor('extractor/pink_dye')             
+    event.recipes.gtceu.extractor('pink_dye')             
         .itemInputs('1x #tfc:makes_pink_dye')
         .itemOutputs('2x minecraft:pink_dye')
         .duration(200)
