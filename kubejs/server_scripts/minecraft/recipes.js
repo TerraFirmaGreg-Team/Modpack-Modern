@@ -156,6 +156,15 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'minecraft:netherite_shovel_smithing'})
     event.remove({id: 'minecraft:netherite_hoe_smithing'})
 
+    // Удаление рецептов связанных с Repeater
+    event.remove({id: 'minecraft:repeater'})
+
+    // Удаление рецептов связанных с Comparator
+    event.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
+    event.remove({id: 'minecraft:comparator'})
+    event.remove({id: 'gtceu:shaped/comparator_quartzite'})
+    event.remove({id: 'gtceu:shaped/certus'})
+
     // Удаление рецептов связанных с Paper
     event.remove({id: 'gtceu:shaped/paper'})
 
@@ -210,6 +219,37 @@ const registerMinecraftRecipes = (event) => {
 
     event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
+
+    // Компаратор
+    event.shaped('minecraft:comparator', [
+        ' A ',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:gems/certus_quartz',
+        C: '#tfc:rock/smooth'
+    }).id('tfg:recipes/comparator_certus');
+
+    event.shaped('minecraft:comparator', [
+        ' A ',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:gems/quartzite',
+        C: '#tfc:rock/smooth'
+    }).id('tfg:recipes/comparator_quartzite');
+
+    event.shaped('minecraft:comparator', [
+        ' A ',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:gems/nether_quartz',
+        C: '#tfc:rock/smooth'
+    }).id('tfg:recipes/comparator_nether_quartz');
 
     // TripWire Hook
     event.shapeless('minecraft:tripwire_hook', [
