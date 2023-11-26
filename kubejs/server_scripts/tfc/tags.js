@@ -63,5 +63,6 @@ const registerTFCItemsTags = (event) => {
 }
 
 const registerTFCBlocksTags = (event) => {
-    
+    event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
+    event.add('tfc:glass_pouring_table', 'gtceu:brass_block')
 }
