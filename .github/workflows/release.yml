@@ -30,9 +30,12 @@ jobs:
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
-      - name: Archive MMC
+      - name: Move
         run: |
           rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
+
+      - name: Archive MMC
+        run: |
           zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
 
       - name: Archive CF
@@ -79,7 +82,7 @@ jobs:
         with:
           webhook-url: ${{ secrets.RELEASES_1_20 }}
           username: "GitHub"
-          avatar-url: https://github.com/TerraFirmaGreg-1.20-Team/.github/blob/6279c7b205e642fd6b1398f55df988dfd306d265/branding/logo.png
+          avatar-url: https://github.com/TerraFirmaGreg-Team/.github/blob/6279c7b205e642fd6b1398f55df988dfd306d265/branding/logo.png
           embed-title: Release ${{ steps.changelog.outputs.version }}
           embed-description: "${{ steps.changelog.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/tree/main/CHANGELOG.md
