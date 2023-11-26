@@ -145,6 +145,9 @@ const registerGTRecipes = (event) => {
     // Удаление рецептов связанных с BioChaff
     event.remove({id: 'gtceu:macerator/dirt_from_bio_chaff'})
 
+    // Удаление рецептов связанных с Paper
+    event.remove({id: 'gtceu:shaped/paper'})
+
     // Удаление других рецептов
     //
     
@@ -386,6 +389,24 @@ const registerGTRecipes = (event) => {
         .outputFluids(Fluid.of('gtceu:biomass', 20))
         .duration(128)
         .EUt(3)
+
+    // Sugar Cane (Papyrus) -> Paper
+    event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled'})
+    event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane'})
+
+    event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
+        .itemInputs('tfc:papyrus')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
+        .itemOutputs('minecraft:paper')
+        .duration(100)
+        .EUt(7)
+
+    event.recipes.gtceu.chemical_bath('paper_from_papyrus')             
+        .itemInputs('tfc:papyrus')
+        .inputFluids(Fluid.of('minecraft:water', 100))
+        .itemOutputs('minecraft:paper')
+        .duration(100)
+        .EUt(7)
 
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('tfg:smelting/fireclay_brick')
