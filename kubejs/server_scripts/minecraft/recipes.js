@@ -259,6 +259,17 @@ const registerMinecraftRecipes = (event) => {
     .duration(100)
     .EUt(4)
 
+    // Painting
+    event.recipes.gtceu.assembler('painting')             
+        .itemInputs(
+            '#tfc:high_quality_cloth',
+            '8x #forge:rods/wooden'
+        )
+    .itemOutputs('2x minecraft:painting')
+    .circuit(1)
+    .duration(100)
+    .EUt(4)
+
     // Sugar Cane (Papyrus) -> Paper
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled'})
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane'})
