@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel_age"
+	group: "693226878D58638A"
+	icon: "gtceu:steel_brick_casing"
+	id: "1F335C82A09A37FD"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "0A1F5D4D4A39BD29"
+		tasks: [{
+			id: "7E8D9EE284218219"
+			item: "minecraft:stone"
+			title: "Lol, WIP"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Steel Age"
+}

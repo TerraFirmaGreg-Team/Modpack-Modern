@@ -5,7 +5,7 @@
 	group: "693226878D58638A"
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 1
+	order_index: 3
 	quest_links: [{
 		id: "376725077649D2CC"
 		linked_quest: "5A8F0124E07D5025"
@@ -1913,6 +1913,48 @@
 			title: "Troubleshooting Multiblocks"
 			x: 9.299999999999999d
 			y: 4.2d
+		}
+		{
+			description: [
+				"This hammer is very different from the one you'll use for crafting. It actually works as a &d3x3 pickaxe&r!"
+				""
+				"If you are familiar with &a&lTinker's Construct&r, it behaves &esimilarly&r to hammers from that mod."
+				""
+				"Make &bgood use&r of these hammers! This bad boy will help you to clear out an entire vein in &6record time&r."
+				""
+				"Note: Any quest with GregTech tools can be complete with tools crafted from any material - not just the one displayed."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:steel_mining_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4A365A7CC9E374F9"
+			subtitle: "Mining just became efficient"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4F372C393ADC6CE2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				title: "Any Mining Hammer will do."
+				type: "item"
+			}]
+			title: "Hammer down!"
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Tame electricity and make your first machines"]

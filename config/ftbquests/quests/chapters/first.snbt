@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "first"
-	group: ""
+	group: "693226878D58638A"
 	icon: "tfc:rock/loose/gabbro"
 	id: "3BF7B834776832C5"
 	order_index: 0
@@ -196,6 +196,7 @@
 		}
 		{
 			dependencies: ["6CED96AAA011F8F8"]
+			hide_dependent_lines: true
 			id: "27E720B4F801941B"
 			tasks: [{
 				id: "79A08EB62956C733"
@@ -206,6 +207,7 @@
 			y: -23.0d
 		}
 		{
+			dependencies: ["0D59108C8DA0CA0F"]
 			id: "06AF9033195FDA19"
 			tasks: [{
 				id: "27C98F448A7979F6"
@@ -221,8 +223,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
-			y: 4.5d
+			x: 12.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["11EADC8282D5B424"]
@@ -1196,7 +1198,7 @@
 				title: "Any Wooden Barrel"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: -2.0d
 		}
 		{
@@ -1214,7 +1216,7 @@
 				title: "Any Lumber"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -1290,8 +1292,8 @@
 				title: "Any Low Tier Saw"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.5d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["11EADC8282D5B424"]
@@ -1948,8 +1950,8 @@
 		}
 		{
 			dependencies: [
-				"150E400802C9F4BC"
-				"69347A715259E1E3"
+				"0D0BC27DA20A3216"
+				"52A33CDD65738A86"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1968,7 +1970,7 @@
 				item: "minecraft:bucket"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 27.5d
 			y: 0.0d
 		}
 		{
@@ -2048,48 +2050,6 @@
 			y: -4.0d
 		}
 		{
-			description: [
-				"This hammer is very different from the one you'll use for crafting. It actually works as a &d3x3 pickaxe&r!"
-				""
-				"If you are familiar with &a&lTinker's Construct&r, it behaves &esimilarly&r to hammers from that mod."
-				""
-				"Make &bgood use&r of these hammers! This bad boy will help you to clear out an entire vein in &6record time&r."
-				""
-				"Note: Any quest with GregTech tools can be complete with tools crafted from any material - not just the one displayed."
-			]
-			icon: {
-				Count: 1b
-				id: "gtceu:steel_mining_hammer"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "4A365A7CC9E374F9"
-			subtitle: "Mining just became efficient"
-			tasks: [{
-				icon: {
-					Count: 1b
-					id: "gtceu:steel_mining_hammer"
-					tag: {
-						Damage: 0
-					}
-				}
-				id: "4F372C393ADC6CE2"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/mining_hammers"
-					}
-				}
-				title: "Any Mining Hammer will do."
-				type: "item"
-			}]
-			title: "Hammer down!"
-			x: 15.0d
-			y: 4.5d
-		}
-		{
 			dependencies: [
 				"22B946C23C849C26"
 				"56D1E7AA6C6B43D1"
@@ -2141,7 +2101,7 @@
 			}]
 			title: "Bronze Age? No, &6Steam Age&r!"
 			x: 9.0d
-			y: 4.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2186,6 +2146,8 @@
 			y: -21.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "22B946C23C849C26"
 			tasks: [{
 				count: 4L
@@ -2235,6 +2197,8 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "726983B61AF8A79B"
 			tasks: [{
 				id: "2DA0E470DC00BB49"
@@ -2283,6 +2247,8 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "21E6FCD928DE4D11"
 			tasks: [{
 				id: "0AB454DF5F84744F"
@@ -2302,6 +2268,8 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "1E65284112D1377C"
 			tasks: [{
 				id: "5DD101EC389DB55C"
@@ -2321,6 +2289,8 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "7FAB0E9BB85BD2EA"
 			tasks: [{
 				id: "22E74F240D3A5677"
@@ -2340,6 +2310,8 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "0EF83B173D41F66B"
 			tasks: [{
 				id: "05D66E24767FAD90"
@@ -2359,6 +2331,8 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "4CF4BA0585A8BA58"
 			tasks: [{
 				id: "399A256DC51711B3"
@@ -2378,6 +2352,8 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
 			id: "56D1E7AA6C6B43D1"
 			tasks: [{
 				id: "37D542C07CCA6E09"
@@ -3372,7 +3348,21 @@
 		}
 		{
 			dependencies: ["4946FC5BCA4CCA88"]
+			description: [
+				"The &bPrimitive Water Pump&r is an easy way to automatically generate water for your boilers. It does not pump water from the world, instead generating it &einternally&r. Therefore, you do not need access to a &3body of water&r to make use of it!"
+				""
+				"It's a multiblock, so &5consult JEI&r for the structure. Also, multiblocks can be previewed in-world if you sneak right-click the \"&a&ocontroller&r\" block with an empty hand (in this case, the controller block is the &bPrimitive Water Pump&r itself). Its functionality is fully explained in the description page in JEI."
+				""
+				"&6Small tip for you:&r no need to worry about your base's biome for now, as your boilers will need very little water to keep up."
+				"{@pagebreak}"
+				"The &cOutput Hatch&r is where water will be generated. You can make it face up or down to auto-output water into your pipes."
+				""
+				"&2Reminder:&r Use a Wrench to rotate GregTech blocks (sneak right-click)."
+				""
+				"&bLore:&r This Multiblock was ported from GT IMPACT, a 1.7.10 GregTech modpack which we appreciate and respect."
+			]
 			id: "4342A0F6BDCF1159"
+			subtitle: "No such thing as free water!"
 			tasks: [
 				{
 					count: 10L
@@ -3401,6 +3391,164 @@
 			x: 14.5d
 			y: -21.5d
 		}
+		{
+			dependencies: ["150E400802C9F4BC"]
+			id: "0D0BC27DA20A3216"
+			tasks: [{
+				id: "1D8C30A834EB6B7F"
+				item: "tfc:metal/bucket/blue_steel"
+				type: "item"
+			}]
+			x: 23.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["69347A715259E1E3"]
+			id: "52A33CDD65738A86"
+			tasks: [{
+				id: "71753A4F116CCE96"
+				item: "tfc:metal/bucket/red_steel"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53B607B845740600"]
+			id: "388C45ABCD2678D3"
+			tasks: [
+				{
+					id: "768FE75F1DA95B97"
+					item: "treetap:tap"
+					type: "item"
+				}
+				{
+					id: "1EA855F2BDC2F775"
+					observe_type: 1
+					timer: 0L
+					title: "Find Kapok Tree"
+					to_observe: "tfc:kapok_logs"
+					type: "observation"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6390ED0C52EFDFB3"
+				"2ED41CABE3F6ACEA"
+			]
+			dependency_requirement: "one_completed"
+			id: "0866E45F30088F23"
+			tasks: [{
+				id: "37C5B84A5A7CDEA2"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"27E720B4F801941B"
+				"388C45ABCD2678D3"
+				"379C07B8D75DC02D"
+			]
+			id: "6390ED0C52EFDFB3"
+			tasks: [{
+				id: "2724AD91C54DCB59"
+				item: "tfc:powder/sulfur"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68123EF5ECFF2594"]
+			hide_dependency_lines: true
+			id: "379C07B8D75DC02D"
+			tasks: [{
+				id: "5E859053A845690B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:poor_raw_sulfur"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_sulfur"
+							}
+							{
+								Count: 1b
+								id: "gtceu:rich_raw_sulfur"
+							}
+						]
+					}
+				}
+				title: "Any Sulfur"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"With your first &8Steel&r under your belt, you can make a &bTool Belt&r to free up inventory space if you're carrying around many tools. It can be equipped in its own &ddedicated Curio slot&r."
+				""
+				"By default, the hotkey to open the belt is &eR&r, but you can rebind it if you're unhappy. From this menu, you can place tools inside the belt's storage, and swap them with your &dmain-hand tool&r whenever is convenient."
+				""
+				"The belt has a small initial inventory of a single tool. This can be expanded by combining the belt with &bBelt Pouches&r in an &aAnvil&r - the maximum storage a belt holds is &69 slots&r."
+			]
+			icon: "toolbelt:belt"
+			id: "4A993CC40AB6D35C"
+			rewards: [{
+				id: "38A84272E0407C69"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Take some weight off your inventory"
+			tasks: [
+				{
+					id: "281B54469C34A5E2"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+				{
+					id: "5FFC5866C6E85F86"
+					item: "toolbelt:pouch"
+					type: "item"
+				}
+			]
+			title: "Tool Belt"
+			x: 12.21d
+			y: 6.6d
+		}
+		{
+			dependencies: ["0BBB80D3C54DB710"]
+			id: "49392A38DA3CA92E"
+			subtitle: "#realism"
+			tasks: [
+				{
+					id: "0B9EC2975874F54B"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					id: "40994D1905670FE7"
+					item: "tfc:papyrus"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.0d
+		}
 	]
-	title: "First Age"
+	title: "Rock and Stick Age"
 }
