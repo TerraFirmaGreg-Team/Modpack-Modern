@@ -30,11 +30,10 @@ jobs:
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
-      - name: Move
-        run: rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
-
       - name: Archive MMC
-        run: zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
+        run: |
+          rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
+          zip -r TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
 
       - name: Archive CF
         run: |
@@ -43,10 +42,10 @@ jobs:
 
       - name: Archive Server
         run: |
-          cd overrides/
+          cd ./overrides/
           cat ../.github/buildtools/client_mod.txt | while read -r line; do find mods -name "$line" -delete; done
           rm -rf shaderpacks
-          cp -r ../.github/buildtools/serverfiles/* overrides/
+          cp -r ./.github/buildtools/serverfiles/* overrides/
           zip -r ../TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Upload Curseforge
