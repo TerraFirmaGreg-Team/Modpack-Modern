@@ -70,6 +70,7 @@
 ### New mods
 - smoothboot
 - rubidiumextra
+- TFC AgedAlcohol
 ### Update mods
 - embeddium 0.2.9 -> 0.2.10
 - AmbientSounds_FORGE 5.3.4 -> 5.3.5
@@ -79,6 +80,12 @@
 - patchouli 81 -> 83
 - terrafirmacraft 3.0.3 -> 3.1.0
 - adAstra 1.15.4 -> 1.15.5
+- curios 5.4.2 -> 5.4.3
+- tfcambiental 3.0.0 -> 3.1.0
+- treetap 0.1.0 -> 0.2.0
+- craftPresence 2.2.4 -> 2.2.5
+- ae2wtlib 15.1.3 -> 15.1.4
+- ftb-essentials 2001.2.1 -> 2001.2.2
 ### Removed mods
 - almostunified
 
