@@ -3,7 +3,7 @@
 const registerSBRecipes = (event) => {
 
     // Удаление рецептов мода sophisticatedBackpacks
-    event.remove({ mod: 'sophisticatedbackpacks' });
+    event.remove({ mod: 'sophisticatedbackpacks' })
 
     // Рюкзаки
 
@@ -377,6 +377,4 @@ const registerSBRecipes = (event) => {
         'sophisticatedbackpacks:tool_swapper_upgrade',
         '#forge:circuits/mv'
     ]);
-
-    // Покраска рюкзака
 }
