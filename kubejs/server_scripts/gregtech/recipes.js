@@ -142,6 +142,8 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:arc_furnace/arc_diamond_shovel'})
     event.remove({id: 'gtceu:arc_furnace/arc_diamond_hoe'})
 
+    // Удаление рецептов связанных с BioChaff
+    event.remove({id: 'gtceu:macerator/dirt_from_bio_chaff'})
 
     // Удаление других рецептов
     //
@@ -351,6 +353,39 @@ const registerGTRecipes = (event) => {
         .itemOutputs('gtceu:plant_ball')
         .duration(300)
         .EUt(2)
+
+    // Vanilla Shit -> Biomass (Brewery)
+    event.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
+    event.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
+    event.remove({id: 'gtceu:brewery/biomass_from_potato'})
+    event.remove({id: 'gtceu:brewery/biomass_from_carrot'})
+    event.remove({id: 'gtceu:brewery/biomass_from_cactus'})
+    event.remove({id: 'gtceu:brewery/biomass_from_brown_mushroom'})
+    event.remove({id: 'gtceu:brewery/biomass_from_beetroot'})
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_seeds')             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_food')             
+        .itemInputs('#tfc:foods')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_plants')             
+        .itemInputs('#tfc:plants')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_corals')             
+        .itemInputs('#tfc:corals')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
 
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('tfg:smelting/fireclay_brick')
