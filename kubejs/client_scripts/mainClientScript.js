@@ -13,6 +13,7 @@ REIEvents.hide('item', event => {
 
 REIEvents.groupEntries(event => {
     groupGTStuff(event)
+    groupTFCStuff(event)
 })
 
 REIEvents.removeCategories(event => {

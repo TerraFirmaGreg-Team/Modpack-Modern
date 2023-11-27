@@ -18,3 +18,7 @@ const hideTFCStuff = (event) => {
         event.hide(item)
     })
 }
+
+const groupTFCStuff = (event) => {
+    event.groupItemsByTag('tfg:rei_groups/ingots/double', 'Double Ingots', 'forge:double_ingots')
+}

@@ -22,60 +22,71 @@ const tfcItemsToHide = [
     'tfc:metal/ingot/tin',
     'tfc:metal/ingot/zinc',
     
-    // Simple metals
-    // Bismuth
-    
+    // Sheets
     'tfc:metal/sheet/bismuth',
-    'tfc:metal/double_sheet/bismuth',
-    'tfc:metal/rod/bismuth',
-    
-    // Gold
-    'tfc:metal/sheet/gold',
-    'tfc:metal/double_sheet/gold',
-
-    // Nickel
-    'tfc:metal/sheet/nickel',
-    'tfc:metal/double_sheet/nickel',
-
-    // Rose Gold
-    
+    'tfc:metal/sheet/bismuth_bronze',
+    'tfc:metal/sheet/black_bronze',
+    'tfc:metal/sheet/bronze',
     'tfc:metal/sheet/rose_gold',
-    'tfc:metal/double_sheet/rose_gold',
-    'tfc:metal/rod/rose_gold',
-
-    // Silver
-    'tfc:metal/sheet/silver',
-    'tfc:metal/double_sheet/silver',
-
-    // Tin
-    'tfc:metal/sheet/tin',
-    'tfc:metal/double_sheet/tin',
-
-    // Brass
+    'tfc:metal/sheet/sterling_silver',
+    'tfc:metal/sheet/wrought_iron',
+    'tfc:metal/sheet/cast_iron',
+    'tfc:metal/sheet/steel',
+    'tfc:metal/sheet/black_steel',
+    'tfc:metal/sheet/red_steel',
+    'tfc:metal/sheet/blue_steel',
     'tfc:metal/sheet/brass',
-    'tfc:metal/double_sheet/brass',
-
-    // Zinc
+    'tfc:metal/sheet/copper',
+    'tfc:metal/sheet/gold',
+    'tfc:metal/sheet/nickel',
+    'tfc:metal/sheet/silver',
+    'tfc:metal/sheet/tin',
     'tfc:metal/sheet/zinc',
+
+    // Double Sheets
+    'tfc:metal/double_sheet/bismuth',
+    'tfc:metal/double_sheet/bismuth_bronze',
+    'tfc:metal/double_sheet/black_bronze',
+    'tfc:metal/double_sheet/bronze',
+    'tfc:metal/double_sheet/rose_gold',
+    'tfc:metal/double_sheet/sterling_silver',
+    'tfc:metal/double_sheet/wrought_iron',
+    'tfc:metal/double_sheet/cast_iron',
+    'tfc:metal/double_sheet/steel',
+    'tfc:metal/double_sheet/black_steel',
+    'tfc:metal/double_sheet/red_steel',
+    'tfc:metal/double_sheet/blue_steel',
+    'tfc:metal/double_sheet/brass',
+    'tfc:metal/double_sheet/copper',
+    'tfc:metal/double_sheet/gold',
+    'tfc:metal/double_sheet/nickel',
+    'tfc:metal/double_sheet/silver',
+    'tfc:metal/double_sheet/tin',
     'tfc:metal/double_sheet/zinc',
 
-    // Sterling Silver
-    
-    'tfc:metal/sheet/sterling_silver',
-    'tfc:metal/double_sheet/sterling_silver',
+    // Rods
+    'tfc:metal/rod/bismuth',
+    'tfc:metal/rod/bismuth_bronze',
+    'tfc:metal/rod/black_bronze',
+    'tfc:metal/rod/bronze',
+    'tfc:metal/rod/rose_gold',
     'tfc:metal/rod/sterling_silver',
-
-    // Cast
-    'tfc:metal/ingot/cast_iron',
-    'tfc:metal/sheet/cast_iron',
-    'tfc:metal/double_sheet/cast_iron',
+    'tfc:metal/rod/wrought_iron',
     'tfc:metal/rod/cast_iron',
+    'tfc:metal/rod/steel',
+    'tfc:metal/rod/black_steel',
+    'tfc:metal/rod/red_steel',
+    'tfc:metal/rod/blue_steel',
+    'tfc:metal/rod/brass',
+    'tfc:metal/rod/copper',
+    'tfc:metal/rod/gold',
+    'tfc:metal/rod/nickel',
+    'tfc:metal/rod/silver',
+    'tfc:metal/rod/tin',
+    'tfc:metal/rod/zinc',
 
-    // Metals with tools
+    // Sword Tool Heads
     // Copper
-    'tfc:metal/sheet/copper', 
-    'tfc:metal/double_sheet/copper', 
-    'tfc:metal/rod/copper', 
     'tfc:metal/pickaxe/copper', 
     'tfc:metal/pickaxe_head/copper', 
     'tfc:metal/axe/copper', 
@@ -96,10 +107,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/copper',
 
     // Bismuth Bronze
-    
-    'tfc:metal/sheet/bismuth_bronze', 
-    'tfc:metal/double_sheet/bismuth_bronze', 
-    'tfc:metal/rod/bismuth_bronze', 
     'tfc:metal/pickaxe/bismuth_bronze', 
     'tfc:metal/pickaxe_head/bismuth_bronze', 
     'tfc:metal/axe/bismuth_bronze', 
@@ -120,10 +127,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/bismuth_bronze',
 
     // Bronze
-    
-    'tfc:metal/sheet/bronze', 
-    'tfc:metal/double_sheet/bronze', 
-    'tfc:metal/rod/bronze', 
     'tfc:metal/pickaxe/bronze', 
     'tfc:metal/pickaxe_head/bronze', 
     'tfc:metal/axe/bronze', 
@@ -144,10 +147,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/bronze',
 
     // Black Bronze
-    
-    'tfc:metal/sheet/black_bronze', 
-    'tfc:metal/double_sheet/black_bronze', 
-    'tfc:metal/rod/black_bronze', 
     'tfc:metal/pickaxe/black_bronze', 
     'tfc:metal/pickaxe_head/black_bronze', 
     'tfc:metal/axe/black_bronze', 
@@ -168,10 +167,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/black_bronze',
 
     // Wrought Iron
-    
-    'tfc:metal/sheet/wrought_iron', 
-    'tfc:metal/double_sheet/wrought_iron', 
-    'tfc:metal/rod/wrought_iron', 
     'tfc:metal/pickaxe/wrought_iron', 
     'tfc:metal/pickaxe_head/wrought_iron', 
     'tfc:metal/axe/wrought_iron', 
@@ -192,9 +187,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/wrought_iron',
 
     // Steel
-    'tfc:metal/sheet/steel', 
-    'tfc:metal/double_sheet/steel', 
-    'tfc:metal/rod/steel', 
     'tfc:metal/pickaxe/steel', 
     'tfc:metal/pickaxe_head/steel', 
     'tfc:metal/axe/steel', 
@@ -215,9 +207,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/steel',
 
     // Black Steel
-    'tfc:metal/sheet/black_steel', 
-    'tfc:metal/double_sheet/black_steel', 
-    'tfc:metal/rod/black_steel', 
     'tfc:metal/pickaxe/black_steel', 
     'tfc:metal/pickaxe_head/black_steel', 
     'tfc:metal/axe/black_steel', 
@@ -238,9 +227,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/black_steel',
 
     // Red Steel
-    'tfc:metal/sheet/red_steel', 
-    'tfc:metal/double_sheet/red_steel', 
-    'tfc:metal/rod/red_steel', 
     'tfc:metal/pickaxe/red_steel', 
     'tfc:metal/pickaxe_head/red_steel', 
     'tfc:metal/axe/red_steel', 
@@ -261,9 +247,6 @@ const tfcItemsToHide = [
     'tfc:metal/scythe_blade/red_steel',
 
     // Blue Steel
-    'tfc:metal/sheet/blue_steel', 
-    'tfc:metal/double_sheet/blue_steel', 
-    'tfc:metal/rod/blue_steel', 
     'tfc:metal/pickaxe/blue_steel', 
     'tfc:metal/pickaxe_head/blue_steel', 
     'tfc:metal/axe/blue_steel', 
