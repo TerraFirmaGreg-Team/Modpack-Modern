@@ -1,7 +1,7 @@
 // priority: 0
 
 const registerTFCItemTags = (event) => {
-    removeAllTagsItems.forEach(item => {
+    removeAllTagTFCItems.forEach(item => {
         event.removeAllTagsFrom(item)
     })
 

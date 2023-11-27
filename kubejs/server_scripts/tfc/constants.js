@@ -437,7 +437,7 @@ const Metals = {
     "goethite" : { forging_temp: 921, welding_temp: 1228, melt_temp: 1535, fluidName: "gtceu:iron", tier: 3, props: [].concat(dustGen, oreGen) }
 }
 
-const removeAllTagsItems = [
+const removeAllTagTFCItems = [
     // Ingots
     'tfc:metal/ingot/bismuth',
     'tfc:metal/ingot/bismuth_bronze',

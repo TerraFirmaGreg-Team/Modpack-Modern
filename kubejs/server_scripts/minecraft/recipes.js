@@ -220,6 +220,18 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:rock_breaker/andesite'})
     event.remove({id: 'gtceu:rock_breaker/cobblestone'})
 
+    // Удаление рецептов связанных с книжными полками
+    event.remove({id: 'minecraft:chiseled_bookshelf'})
+    event.remove({id: 'gtceu:assembler/bookshelf'})
+    event.remove({id: 'gtceu:arc_furnace/arc_bookshelf'})
+    event.remove({id: 'gtceu:macerator/macerate_bookshelf'})
+    event.remove({id: 'gtceu:extractor/bookshelf_extraction'})
+
+    // Удаление рецептов связанных с сундуками
+    event.remove({id: 'gtceu:assembler/chest'})
+    event.remove({id: 'gtceu:arc_furnace/arc_trapped_chest'})
+    event.remove({id: 'gtceu:macerator/macerate_trapped_chest'})
+
     // Удаление других рецептов
     event.remove({id: 'minecraft:blast_furnace'})
     event.remove({id: 'minecraft:fire_charge'})

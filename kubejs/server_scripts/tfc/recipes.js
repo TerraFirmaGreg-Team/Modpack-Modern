@@ -958,6 +958,9 @@ const registerTFCRecipes = (event) => {
             .duration(16)
             .EUt(7)
     })
+
+    
+
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {

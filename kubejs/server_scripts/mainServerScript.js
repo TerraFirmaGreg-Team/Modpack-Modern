@@ -21,6 +21,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('item', event => {
     registerCreateTags(event)
     registerTFCItemTags(event)
+    registerMinecraftItemTags(event)
 })
 
 /**
@@ -38,6 +39,7 @@ ServerEvents.recipes(event => {
     registerExtendedCraftingRecipes(event)
     registerTreeTapRecipes(event)
     registerMCWRecipes(event)
+    registerSmallShipsRecipes(event)
 })
 
 /**

@@ -150,6 +150,9 @@ const minecraftItemsToHide = [
     'minecraft:prismarine_brick_slab', 
     'minecraft:dark_prismarine_slab', 
     'minecraft:smooth_stone',*/
+    
+    'minecraft:bookshelf',
+    'minecraft:chiseled_bookshelf',
     'minecraft:sand',
     'minecraft:suspicious_sand',
     'minecraft:red_sand',

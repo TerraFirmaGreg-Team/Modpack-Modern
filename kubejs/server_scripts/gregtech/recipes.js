@@ -40,6 +40,13 @@ const registerGTRecipes = (event) => {
     // Удаление других рецептов
     //
     
+    // Декрафт сундуков в пыль
+    event.recipes.gtceu.macerator('macerate_chest')             
+        .itemInputs('#forge:chests/wooden')
+        .itemOutputs('8x gtceu:wood_dust')
+        .duration(100)
+        .EUt(4)
+
     // Quartz Sand Dust
     event.shaped('gtceu:quartz_sand_dust', [
         'A', 
