@@ -31,7 +31,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "gtceu:chalcopyrite_tiny_dust",
+              "name": "gtceu:poor_raw_pyrite",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
