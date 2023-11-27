@@ -31,7 +31,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "tfc:gem/opal",
+              "name": "gtceu:opal_gem",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
