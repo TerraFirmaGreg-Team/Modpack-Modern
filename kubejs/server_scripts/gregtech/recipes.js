@@ -84,6 +84,7 @@ const registerGTRecipes = (event) => {
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)
         .EUt(30)
+        .rpm(96)
 
     // Low Pressure Steam Forge Hammer
     event.shaped('gtceu:lp_steam_forge_hammer', [

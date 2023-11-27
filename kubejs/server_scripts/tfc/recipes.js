@@ -899,29 +899,49 @@ const registerTFCRecipes = (event) => {
         .EUt(16)
 
     global.sandColors.forEach(sandColor => {
+        // Raw SandStone -> Sand
         event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)             
             .itemInputs(`tfc:raw_sandstone/${sandColor}`)
             .itemOutputs(`tfc:sand/${sandColor}`)
             .duration(400)
             .EUt(2)
 
+        // Smooth SandStone -> Sand
         event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)             
             .itemInputs(`tfc:smooth_sandstone/${sandColor}`)
             .itemOutputs(`tfc:sand/${sandColor}`)
             .duration(400)
             .EUt(2)
 
+        // Cut SandStone -> Sand
         event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)             
             .itemInputs(`tfc:cut_sandstone/${sandColor}`)
             .itemOutputs(`tfc:sand/${sandColor}`)
             .duration(400)
             .EUt(2)
 
+        // Sand -> Raw SandStone
         event.recipes.gtceu.compressor(`${sandColor}_sandstone`)             
             .itemInputs(`4x tfc:sand/${sandColor}`)
             .itemOutputs(`tfc:raw_sandstone/${sandColor}`)
             .duration(300)
             .EUt(2)
+        
+        // Raw SandStone -> Smooth SandStone
+        event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_smooth`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .notConsumable('gtceu:magenta_glass_lens')
+            .itemOutputs(`tfc:smooth_sandstone/${sandColor}`)
+            .duration(60)
+            .EUt(32)
+
+        // Raw SandStone -> Cut SandStone
+        event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_cut`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .notConsumable('gtceu:orange_glass_lens')
+            .itemOutputs(`tfc:cut_sandstone/${sandColor}`)
+            .duration(60)
+            .EUt(32)
     })
 
     // Рецепты бесконечного камня в RockBreaker
