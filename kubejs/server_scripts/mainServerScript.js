@@ -20,7 +20,7 @@ ServerEvents.tags('block', event => {
  */
 ServerEvents.tags('item', event => {
     registerCreateTags(event)
-    registerTFCItemsTags(event)
+    registerTFCItemTags(event)
 })
 
 /**
@@ -37,6 +37,7 @@ ServerEvents.recipes(event => {
     registerSBRecipes(event)
     registerExtendedCraftingRecipes(event)
     registerTreeTapRecipes(event)
+    registerMCWRecipes(event)
 })
 
 /**
