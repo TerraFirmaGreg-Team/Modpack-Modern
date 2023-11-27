@@ -201,16 +201,24 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:centrifuge/mycelium_separation'})
     event.remove({id: 'gtceu:centrifuge/endstone_separation'})
 
-     // Удаление рецептов связанных с красным песком
-     event.remove({id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand'})
-     event.remove({id: 'gtceu:forge_hammer/red_sandstone_to_red_sand'})
-     event.remove({id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand'})
+    // Удаление рецептов связанных с красным песком
+    event.remove({id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand'})
+    event.remove({id: 'gtceu:forge_hammer/red_sandstone_to_red_sand'})
+    event.remove({id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand'})
 
     // Удаление рецептов связанных с SandStone
     event.remove({id: 'minecraft:sandstone'})
     event.remove({id: 'gtceu:compressor/sandstone'})
 
     // Удаление рецептов связанных с Red SandStone
+
+    // Удаление рецептов блоков из RockBreaker
+    event.remove({id: 'gtceu:rock_breaker/stone'})
+    event.remove({id: 'gtceu:rock_breaker/obsidian'})
+    event.remove({id: 'gtceu:rock_breaker/granite'})
+    event.remove({id: 'gtceu:rock_breaker/diorite'})
+    event.remove({id: 'gtceu:rock_breaker/andesite'})
+    event.remove({id: 'gtceu:rock_breaker/cobblestone'})
 
     // Удаление других рецептов
     event.remove({id: 'minecraft:blast_furnace'})

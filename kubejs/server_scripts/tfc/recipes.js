@@ -923,6 +923,21 @@ const registerTFCRecipes = (event) => {
             .duration(300)
             .EUt(2)
     })
+
+    // Рецепты бесконечного камня в RockBreaker
+    global.allTFCStoneTypeNames.forEach(stoneTypeName => {
+        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+
+        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+    })
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {
