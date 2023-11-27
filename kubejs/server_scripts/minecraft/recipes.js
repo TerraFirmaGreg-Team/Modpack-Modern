@@ -192,6 +192,26 @@ const registerMinecraftRecipes = (event) => {
     // Удаление рецептов связанных с Saddle
     event.remove({id: 'gtceu:shaped/saddle'})
 
+    // Удаление рецептов связанных с песком
+    event.remove({id: 'gtceu:forge_hammer/smooth_sandstone_to_sand'})
+    event.remove({id: 'gtceu:forge_hammer/sandstone_to_sand'})
+    event.remove({id: 'gtceu:forge_hammer/chiseled_sandstone_to_sand'})
+
+    event.remove({id: 'gtceu:centrifuge/soul_sand_separation'})
+    event.remove({id: 'gtceu:centrifuge/mycelium_separation'})
+    event.remove({id: 'gtceu:centrifuge/endstone_separation'})
+
+     // Удаление рецептов связанных с красным песком
+     event.remove({id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand'})
+     event.remove({id: 'gtceu:forge_hammer/red_sandstone_to_red_sand'})
+     event.remove({id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand'})
+
+    // Удаление рецептов связанных с SandStone
+    event.remove({id: 'minecraft:sandstone'})
+    event.remove({id: 'gtceu:compressor/sandstone'})
+
+    // Удаление рецептов связанных с Red SandStone
+
     // Удаление других рецептов
     event.remove({id: 'minecraft:blast_furnace'})
     event.remove({id: 'minecraft:fire_charge'})
@@ -219,6 +239,20 @@ const registerMinecraftRecipes = (event) => {
 
     event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
+
+    // Стекло
+    event.recipes.gtceu.alloy_smelter('glass')             
+        .itemInputs('#forge:dusts/glass')
+        .notConsumable('gtceu:block_casting_mold')
+        .itemOutputs('minecraft:glass')
+        .duration(120)
+        .EUt(16)
+
+    event.recipes.gtceu.arc_furnace('glass_from_sand')             
+        .itemInputs('#forge:sand')
+        .itemOutputs('2x minecraft:glass')
+        .duration(20)
+        .EUt(30)
 
     // Компаратор
     event.shaped('minecraft:comparator', [

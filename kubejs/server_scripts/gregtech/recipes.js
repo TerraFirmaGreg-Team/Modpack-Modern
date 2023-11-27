@@ -37,10 +37,54 @@ const registerGTRecipes = (event) => {
     event.remove({id: 'gtceu:macerator/macerate_hay_block'})
     event.remove({id: 'gtceu:shapeless/wheat_to_dust'})
     
-
     // Удаление других рецептов
     //
     
+    // Quartz Sand Dust
+    event.shaped('gtceu:quartz_sand_dust', [
+        'A', 
+        'B'
+    ], {
+        A: '#forge:sand',
+        B: '#forge:tools/mortars'
+    }).id('gtceu:shaped/quartz_sand')
+
+    event.recipes.gtceu.macerator('quartz_sand_from_sand')             
+        .itemInputs('#forge:sand')
+        .itemOutputs('gtceu:quartz_sand_dust')
+        .duration(30)
+        .EUt(2)
+
+    // Silicon Dioxide Dust
+    event.recipes.gtceu.electrolyzer('sand_electrolysis')             
+        .itemInputs('8x #forge:sand')
+        .itemOutputs('gtceu:silicon_dioxide_dust')
+        .duration(500)
+        .EUt(25)
+
+    // Fertilizer
+    event.recipes.gtceu.mixer('fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .duration(300)
+        .EUt(30)
+
+    event.recipes.gtceu.create_mixer('fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .duration(300)
+        .EUt(30)
+
     // Low Pressure Steam Forge Hammer
     event.shaped('gtceu:lp_steam_forge_hammer', [
         'ABA', 

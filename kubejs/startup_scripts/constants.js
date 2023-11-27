@@ -58,3 +58,13 @@ global.slabTypes = [
     'mossy_cobble',
     'cracked_bricks'
 ];
+
+global.sandColors = [
+    'brown',
+    'white',
+    'black',
+    'red',
+    'yellow',
+    'green',
+    'pink'
+]

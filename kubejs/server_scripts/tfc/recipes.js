@@ -868,6 +868,61 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('2x tfc:food/wheat_flour')
         .duration(400)
         .EUt(16)
+
+    // Песок
+    event.recipes.gtceu.centrifuge('oilsands_ore_separation')             
+        .itemInputs('#forge:ores/oilsands')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.centrifuge('oilsands_dust_separation')             
+        .itemInputs('#forge:dusts/oilsands')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:heavy_oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.centrifuge('red_sand_separation')             
+        .itemInputs('tfc:sand/red')
+        .chancedOutput('gtceu:iron_dust', 5000, 500)
+        .chancedOutput('gtceu:diamond_tiny_dust', 100, 100)
+        .chancedOutput('tfc:sand/yellow', 5000, 500)
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.forge_hammer('gravel_to_sand')             
+        .itemInputs('#tfc:rock/gravel')
+        .itemOutputs('tfc:sand/yellow')
+        .duration(10)
+        .EUt(16)
+
+    global.sandColors.forEach(sandColor => {
+        event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:smooth_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:cut_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        event.recipes.gtceu.compressor(`${sandColor}_sandstone`)             
+            .itemInputs(`4x tfc:sand/${sandColor}`)
+            .itemOutputs(`tfc:raw_sandstone/${sandColor}`)
+            .duration(300)
+            .EUt(2)
+    })
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {
