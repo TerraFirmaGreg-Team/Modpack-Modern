@@ -31,7 +31,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "tfc:ore/gypsum",
+              "name": "gtceu:poor_raw_gypsum",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",

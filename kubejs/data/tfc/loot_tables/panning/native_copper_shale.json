@@ -31,7 +31,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "tfc:ore/borax",
+              "name": "gtceu:poor_raw_borax",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
