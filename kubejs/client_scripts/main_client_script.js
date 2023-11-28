@@ -5,6 +5,7 @@ REIEvents.hide('item', event => {
     hideTFCStuff(event)
     hideGTCEUStuff(event)
     hideCreateStuff(event)
+    hideAE2Stuff(event)
     hideExtendedCraftingStuff(event)
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)
