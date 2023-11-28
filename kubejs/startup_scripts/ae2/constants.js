@@ -1,6 +1,6 @@
 // priority: 199
 
-const AE2_DISABLED_ITEMS = [
+global.AE2_DISABLED_ITEMS = [
     'ae2:certus_quartz_sword',
     'ae2:nether_quartz_sword',
     'ae2:fluix_sword',
