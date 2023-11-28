@@ -22,4 +22,10 @@ goodTemperatureChangeSpeed = 4.0
 #How quickly player temperature changes towards the target environment temperature when it's not beneficial
 #Range: 0.0 ~ 50.0
 badTemperatureChangeSpeed = 1.0
+#How quickly player wetness changes towards the target environment wetness
+#Range: 0.0 ~ 50.0
+wetnessChangeSpeed = 1.0
+#How much do items in the forge:hot_ingots tag modify the temperature of the player
+#Range: 0.0 ~ 3.4028234663852886E38
+hotIngotTemperature = 1.0
 

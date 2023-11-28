@@ -1,0 +1,21 @@
+
+[screens]
+	blurExclusions = ["net.minecraft.client.gui.screens.ChatScreen", "com.replaymod.lib.de.johni0702.minecraft.gui.container.AbstractGuiOverlay$UserInputGuiScreen", "ai.arcblroth.projectInception.client.InceptionInterfaceScreen", "net.optifine.gui.GuiChatOF", "baritone.", "io.github.darkkronicle.advancedchatcore.chat.AdvancedChatScreen", "net.coderbot.iris.gui.screen.ShaderPackScreen", "eu.midnightdust.midnightcontrols.client.gui.TouchscreenOverlay"]
+	showScreenTitle = false
+	strangeEffect = false
+
+[style]
+	#Range: 0 ~ 5000
+	fadeTimeMillis = 200
+	#Range: 0 ~ 5000
+	fadeOutTimeMillis = 200
+	ease = true
+	#Range: 0 ~ 100
+	radius = 8
+	gradientStart = "#000000"
+	#Range: 0 ~ 255
+	gradientStartAlpha = 75
+	gradientEnd = "#000000"
+	#Range: 0 ~ 255
+	gradientEndAlpha = 75
+

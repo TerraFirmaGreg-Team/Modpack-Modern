@@ -16,4 +16,7 @@ seasonColorAutumn = "EAFFDD55"
 seasonColorWinter = "6AFFEEEE"
 #ARGB code for spring coloring in hexadecimal. Default: 3311CFD1
 seasonColorSpring = "3311CAD7"
+#How much to drip when wet. 0 to turn off
+#Range: 0 ~ 100
+drippiness = 30
 
