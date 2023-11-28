@@ -41,6 +41,7 @@ ServerEvents.recipes(event => {
     registerGTCEURecipes(event)
     registerCreateRecipes(event)
     registerAE2Recipes(event)
+    registerAE2WTLibRecipes(event)
     registerComputerCraftRecipes(event)
     registerAdAstraRecipes(event)
     registerTreeTapRecipes(event)
