@@ -226,6 +226,13 @@ global.TFC_TOOL_GEN = [
     "tuyere",
 ];
 
+/**
+ * Указывает, что у этого металла есть ведро.
+ */
+global.TFC_BUCKET_GEN = [
+    "bucket",
+];
+
 global.ITEM_TAG_TO_HEAT = {
     nugget: {
         heat_capacity: 0.124,
@@ -1115,6 +1122,19 @@ global.ITEM_TAG_TO_HEAT = {
             return { item: `gtceu:${name}_rod` };
         },
     },
+
+    bucket: {
+        heat_capacity: 5.714,
+        metal_amount: 144,
+        rules: ["bend_last", "bend_second_last", "bend_third_last"],
+        anvilFrom: "sheet",
+        input: (name) => {
+            return { item: `tfc:metal/bucket/${name}` };
+        },
+        output: (name) => {
+            return { item: `tfc:metal/bucket/${name}` };
+        },
+    },
 };
 
 global.METAL_TO_SPECS = {
@@ -1449,7 +1469,8 @@ global.METAL_TO_SPECS = {
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
             global.TFC_TOOL_GEN,
-            global.UTILITY_GEN
+            global.UTILITY_GEN,
+            global.TFC_BUCKET_GEN
         ),
     },
     blue_steel: {
@@ -1467,7 +1488,8 @@ global.METAL_TO_SPECS = {
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
             global.TFC_TOOL_GEN,
-            global.UTILITY_GEN
+            global.UTILITY_GEN,
+            global.TFC_BUCKET_GEN
         ),
     },
     unknown: {

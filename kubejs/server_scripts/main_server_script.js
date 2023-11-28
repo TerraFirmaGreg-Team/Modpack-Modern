@@ -17,6 +17,13 @@ ServerEvents.tags('block', event => {
 })
 
 /**
+ * Событие регистрации жидкость-тэгов.
+ */
+ServerEvents.tags('fluid', event => {
+    registerTFCFluidTags(event)
+})
+
+/**
  * Здесь регистрируются файлы датапаков (json).
  * Срабатывает до инициализации рецептов.
  */

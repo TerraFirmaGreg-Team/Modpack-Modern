@@ -80,3 +80,9 @@ const registerTFCBlockTags = (event) => {
     event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
     event.add('tfc:glass_pouring_table', 'gtceu:brass_block')
 }
+
+const registerTFCFluidTags = (event) => {
+    event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
+    event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
+    event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
+}

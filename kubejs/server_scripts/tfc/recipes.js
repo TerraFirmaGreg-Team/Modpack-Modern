@@ -52,6 +52,15 @@ const registerTFCRecipes = (event) => {
     registerAutoTFCCastingRecipes(event)
     registerAutoTFCAnvilRecipes(event)
 
+    // Bucket
+    addWeldingRecipe(event, 
+        'tfg:recipes/anvil/vanilla_bucket',
+        { item: 'tfc:metal/bucket/red_steel' },
+        { item: 'tfc:metal/bucket/blue_steel' },
+        { item: 'minecraft:bucket' },
+        6
+    )
+
     // Small Copper -> Copper
     addHeatingItemToFluidRecipe(event, 
         'tfc:recipes/heating/tfg/small_copper',
@@ -205,15 +214,6 @@ const registerTFCRecipes = (event) => {
         [ "draw_last", "draw_second_last", "hit_third_last" ]
     )
 
-    // Blue Steel Bucket
-    addAnvilRecipe(event, 
-        'tfc:recipes/anvil/tfg/blue_steel_bucket',
-        { tag: "forge:plates/blue_steel" },
-        { item: "tfc:metal/bucket/blue_steel" },
-        6,
-        [ "bend_last", "bend_second_last", "bend_third_last" ]
-    )
-
     // Blue Steel Ingot
     addAnvilRecipe(event, 
         'tfc:recipes/anvil/tfg/blue_steel_ingot',
@@ -257,15 +257,6 @@ const registerTFCRecipes = (event) => {
         { item: "tfc:jar_lid", count: 16 },
         1,
         [ "hit_last", "hit_second_last", "punch_third_last" ]
-    )
-
-    // Red Steel Bucket
-    addAnvilRecipe(event, 
-        'tfc:recipes/anvil/tfg/red_steel_bucket',
-        { tag: "forge:plates/red_steel" }, 
-        { item: "tfc:metal/bucket/red_steel" },
-        6,
-        [ "bend_last", "bend_second_last", "bend_third_last" ]
     )
 
     // High Carbon Red Steel

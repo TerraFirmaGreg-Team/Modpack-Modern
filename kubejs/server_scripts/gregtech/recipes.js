@@ -47,6 +47,34 @@ const registerGTCEURecipes = (event) => {
         .duration(100)
         .EUt(4)
 
+    // Treated Wood Planks
+    event.shaped('8x gtceu:treated_wood_planks', [
+        'AAA', 
+        'ABA',
+        'AAA'
+    ], {
+        A: '#minecraft:planks',
+        B: Item.of('tfc:wooden_bucket', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
+    }).id('tfg:shaped/treated_wood_planks_wood_bucket')
+
+    event.shaped('8x gtceu:treated_wood_planks', [
+        'AAA', 
+        'ABA',
+        'AAA'
+    ], {
+        A: '#minecraft:planks',
+        B: Item.of('tfc:metal/bucket/red_steel', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
+    }).id('tfg:shaped/treated_wood_planks_red_steel_bucket')
+
+    event.shaped('8x gtceu:treated_wood_planks', [
+        'AAA', 
+        'ABA',
+        'AAA'
+    ], {
+        A: '#minecraft:planks',
+        B: Item.of('tfc:metal/bucket/blue_steel', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
+    }).id('tfg:shaped/treated_wood_planks_blue_steel_bucket')
+
     // Quartz Sand Dust
     event.shaped('gtceu:quartz_sand_dust', [
         'A', 
