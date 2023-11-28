@@ -5,4 +5,4 @@ const registerCreateItems = (event) => {
         .displayName('Galvanized Iron')
         .maxStackSize(16)
         .texture("kubejs:item/galvanized_iron")
-}
+};

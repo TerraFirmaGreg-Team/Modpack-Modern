@@ -1,7 +1,7 @@
 // priority: 0
 
 const modifyLootGT = (event) => {
-    global.allTFCStoneTypeNames.forEach(stoneType => {
+    global.TFC_STONE_TYPES.forEach(stoneType => {
         GTRegistries.MATERIALS.forEach(material => {
             if (material.hasProperty(PropertyKey.ORE)) {
                 event.addBlockLootModifier(`gtceu:tfc_${stoneType}_${material}_ore`)

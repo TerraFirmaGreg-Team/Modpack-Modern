@@ -674,6 +674,29 @@ const registerTFCRecipes = (event) => {
         B: 'tfc:pumpkin'  
     }).id('tfc:crafting/pumpkin_chunks_knife')
 
+    // Blast Furnace
+    event.shaped('tfc:blast_furnace', [
+        'AAA',
+        'ABA',
+        'AAA' 
+    ], {
+        A: '#forge:sheets/wrought_iron',
+        B: 'tfc:crucible'  
+    }).id('tfc:crafting/blast_furnace')
+
+    // Декрафт деревянной херни в деревянную пыль
+    Object.entries(global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST).forEach(pair => {
+        
+        let typeName = pair[1].name
+        let typeOutput = pair[1].output
+        
+        event.recipes.gtceu.macerator(`tfg/macerate_${typeName}`)             
+            .itemInputs(pair[0])
+            .itemOutputs(typeOutput)
+            .duration(600)
+            .EUt(2)
+    })
+
     // Copper Anvil из Слитков
     event.recipes.gtceu.alloy_smelter('ingots_to_copper_anvil')             
         .itemInputs('14x #forge:ingots/copper')
@@ -898,7 +921,7 @@ const registerTFCRecipes = (event) => {
         .duration(10)
         .EUt(16)
 
-    global.sandColors.forEach(sandColor => {
+    global.SAND_COLORS.forEach(sandColor => {
         // Raw SandStone -> Sand
         event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)             
             .itemInputs(`tfc:raw_sandstone/${sandColor}`)
@@ -945,7 +968,7 @@ const registerTFCRecipes = (event) => {
     })
 
     // Рецепты бесконечного камня в RockBreaker
-    global.allTFCStoneTypeNames.forEach(stoneTypeName => {
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
             .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
             .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
@@ -958,21 +981,19 @@ const registerTFCRecipes = (event) => {
             .duration(16)
             .EUt(7)
     })
-
-    
-
 }
 
 const registerAutoTFCHeatingRecipes = (event) => {
-    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+    Object.entries(global.METAL_TO_SPECS).forEach(pair => {
+        let tfcMetalName = pair[0]
+        let metalSpecifications = pair[1]
+
         metalSpecifications.props.forEach(propertyName => {
             let jsonRecipePath = `tfc:recipes/heating/tfg/${tfcMetalName}_${propertyName}`
-            let itemTypeSpecifications = ItemHeats[propertyName]
+            let itemTypeSpecifications = global.ITEM_TAG_TO_HEAT[propertyName]
 
             if (itemTypeSpecifications.heat_capacity != null) {
                 let ingredientInput = itemTypeSpecifications.input(tfcMetalName)
-                
-                let json
 
                 if (typeof(itemTypeSpecifications.metal_amount) == "object")
                 {
@@ -1011,13 +1032,16 @@ const registerAutoTFCHeatingRecipes = (event) => {
                 }
             }
         })
-    }
+    })
 }
 
 const registerAutoTFCCastingRecipes = (event) => {
-    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+    Object.entries(global.METAL_TO_SPECS).forEach(pair => {
+        let tfcMetalName = pair[0]
+        let metalSpecifications = pair[1]
+
         metalSpecifications.props.forEach(propertyName => {
-            let property = ItemHeats[propertyName]
+            let property = global.ITEM_TAG_TO_HEAT[propertyName]
             
             if (property.hasMold != undefined)
             {
@@ -1048,19 +1072,22 @@ const registerAutoTFCCastingRecipes = (event) => {
                 }
             }
         })
-    }
+    })
 }
 
 const registerAutoTFCAnvilRecipes = (event) => {
-    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+    Object.entries(global.METAL_TO_SPECS).forEach(pair => {
+        let tfcMetalName = pair[0]
+        let metalSpecifications = pair[1]
+
         metalSpecifications.props.forEach(propertyName => {
-            let property = ItemHeats[propertyName]
+            let property = global.ITEM_TAG_TO_HEAT[propertyName]
 
             if (property.rules != undefined)
             {
                 let recipeId = `tfc:recipes/anvil/tfg/${propertyName}_${tfcMetalName}`
 
-                let innerProp = ItemHeats[property.anvilFrom]
+                let innerProp = global.ITEM_TAG_TO_HEAT[property.anvilFrom]
                 let input = innerProp.input(tfcMetalName)
                 let output = property.output(tfcMetalName)
 
@@ -1069,5 +1096,5 @@ const registerAutoTFCAnvilRecipes = (event) => {
                 addAnvilRecipe(event, recipeId, input, output, metalSpecifications.tier, property.rules)
             }
         })
-    }
+    })
 }

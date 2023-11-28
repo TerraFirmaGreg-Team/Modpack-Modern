@@ -12,12 +12,15 @@ const registerTFCData = (event) => {
 }
 
 const registerAutoTFCItemHeats = (event) => {
-    for (const [tfcMetalName, metalSpecifications] of Object.entries(Metals)) {
+    Object.entries(global.METAL_TO_SPECS).forEach(pair => {
+        let tfcMetalName = pair[0]
+        let metalSpecifications = pair[1]
+
         metalSpecifications.props.forEach(propertyName => {
-            let itemType = ItemHeats[propertyName]
+            let itemType = global.ITEM_TAG_TO_HEAT[propertyName]
             let pathToExistFile = `tfc:tfc/item_heats/metal/${tfcMetalName}_${propertyName}`
             
-            if (itemType.heat_capacity == null) addEmptyJson(event, pathToExistFile)
+            if (itemType.heat_capacity == null) global.CREATE_EMPTY_JSON(event, pathToExistFile)
             else addItemHeat(
                 event, 
                 `metal/${tfcMetalName}_${propertyName}`,
@@ -27,5 +30,5 @@ const registerAutoTFCItemHeats = (event) => {
                 metalSpecifications.welding_temp
             )
         })
-    }
+    })
 }

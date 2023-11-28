@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerGTRecipes = (event) => {
+const registerGTCEURecipes = (event) => {
     
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
