@@ -20,112 +20,108 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:nether_quartz_pickaxe',
     'ae2:fluix_pickaxe',
 ];
-/*
+
 // Glass Cable
-global.AE2_glassCables = [
-    item('appliedenergistics2:part'),
-    item('appliedenergistics2:part', 1),
-    item('appliedenergistics2:part', 2),
-    item('appliedenergistics2:part', 3),
-    item('appliedenergistics2:part', 4),
-    item('appliedenergistics2:part', 5),
-    item('appliedenergistics2:part', 6),
-    item('appliedenergistics2:part', 7),
-    item('appliedenergistics2:part', 8),
-    item('appliedenergistics2:part', 9),
-    item('appliedenergistics2:part', 10),
-    item('appliedenergistics2:part', 11),
-    item('appliedenergistics2:part', 12),
-    item('appliedenergistics2:part', 13),
-    item('appliedenergistics2:part', 14),
-    item('appliedenergistics2:part', 15),
-    item('appliedenergistics2:part', 16)
+global.AE2_GLASS_CABLE = [
+    'ae2:white_glass_cable',
+    'ae2:orange_glass_cable',
+    'ae2:magenta_glass_cable',
+    'ae2:light_blue_glass_cable',
+    'ae2:yellow_glass_cable',
+    'ae2:lime_glass_cable',
+    'ae2:pink_glass_cable',
+    'ae2:gray_glass_cable',
+    'ae2:light_gray_glass_cable',
+    'ae2:cyan_glass_cable',
+    'ae2:purple_glass_cable',
+    'ae2:blue_glass_cable',
+    'ae2:brown_glass_cable',
+    'ae2:green_glass_cable',
+    'ae2:red_glass_cable',
+    'ae2:black_glass_cable',
 ]
 
 // Covered Cable
-global.AE2_coveredCables = [
-    item('appliedenergistics2:part', 20),
-    item('appliedenergistics2:part', 21),
-    item('appliedenergistics2:part', 22),
-    item('appliedenergistics2:part', 23),
-    item('appliedenergistics2:part', 24),
-    item('appliedenergistics2:part', 25),
-    item('appliedenergistics2:part', 26),
-    item('appliedenergistics2:part', 27),
-    item('appliedenergistics2:part', 28),
-    item('appliedenergistics2:part', 29),
-    item('appliedenergistics2:part', 30),
-    item('appliedenergistics2:part', 31),
-    item('appliedenergistics2:part', 32),
-    item('appliedenergistics2:part', 33),
-    item('appliedenergistics2:part', 34),
-    item('appliedenergistics2:part', 35),
-    item('appliedenergistics2:part', 36)
-]
-
-// Smart Cable
-global.AE2_smartCables = [
-    item('appliedenergistics2:part', 40),
-    item('appliedenergistics2:part', 41),
-    item('appliedenergistics2:part', 42),
-    item('appliedenergistics2:part', 43),
-    item('appliedenergistics2:part', 44),
-    item('appliedenergistics2:part', 45),
-    item('appliedenergistics2:part', 46),
-    item('appliedenergistics2:part', 47),
-    item('appliedenergistics2:part', 48),
-    item('appliedenergistics2:part', 49),
-    item('appliedenergistics2:part', 50),
-    item('appliedenergistics2:part', 51),
-    item('appliedenergistics2:part', 52),
-    item('appliedenergistics2:part', 53),
-    item('appliedenergistics2:part', 54),
-    item('appliedenergistics2:part', 55),
-    item('appliedenergistics2:part', 56)
-]
-
-// Dense Smart Cable
-global.AE2_denseSmartCables = [
-    item('appliedenergistics2:part', 60),
-    item('appliedenergistics2:part', 61),
-    item('appliedenergistics2:part', 62),
-    item('appliedenergistics2:part', 63),
-    item('appliedenergistics2:part', 64),
-    item('appliedenergistics2:part', 65),
-    item('appliedenergistics2:part', 66),
-    item('appliedenergistics2:part', 67),
-    item('appliedenergistics2:part', 68),
-    item('appliedenergistics2:part', 69),
-    item('appliedenergistics2:part', 70),
-    item('appliedenergistics2:part', 71),
-    item('appliedenergistics2:part', 72),
-    item('appliedenergistics2:part', 73),
-    item('appliedenergistics2:part', 74),
-    item('appliedenergistics2:part', 75),
-    item('appliedenergistics2:part', 76)
+global.AE2_COVERED_CABLE = [
+    'ae2:white_covered_cable',
+    'ae2:orange_covered_cable',
+    'ae2:magenta_covered_cable',
+    'ae2:light_blue_covered_cable',
+    'ae2:yellow_covered_cable',
+    'ae2:lime_covered_cable',
+    'ae2:pink_covered_cable',
+    'ae2:gray_covered_cable',
+    'ae2:light_gray_covered_cable',
+    'ae2:cyan_covered_cable',
+    'ae2:purple_covered_cable',
+    'ae2:blue_covered_cable',
+    'ae2:brown_covered_cable',
+    'ae2:green_covered_cable',
+    'ae2:red_covered_cable',
+    'ae2:black_covered_cable',
 ]
 
 // Dense Covered Cable
-global.AE2_denseCoveredCables = [
-    item('appliedenergistics2:part', 500),
-    item('appliedenergistics2:part', 501),
-    item('appliedenergistics2:part', 502),
-    item('appliedenergistics2:part', 503),
-    item('appliedenergistics2:part', 504),
-    item('appliedenergistics2:part', 505),
-    item('appliedenergistics2:part', 506),
-    item('appliedenergistics2:part', 507),
-    item('appliedenergistics2:part', 508),
-    item('appliedenergistics2:part', 509),
-    item('appliedenergistics2:part', 510),
-    item('appliedenergistics2:part', 511),
-    item('appliedenergistics2:part', 512),
-    item('appliedenergistics2:part', 513),
-    item('appliedenergistics2:part', 514),
-    item('appliedenergistics2:part', 515),
-    item('appliedenergistics2:part', 516)
+global.AE2_COVERED_DENSE_CABLE = [
+    'ae2:white_covered_dense_cable',
+    'ae2:orange_covered_dense_cable',
+    'ae2:magenta_covered_dense_cable',
+    'ae2:light_blue_covered_dense_cable',
+    'ae2:yellow_covered_dense_cable',
+    'ae2:lime_covered_dense_cable',
+    'ae2:pink_covered_dense_cable',
+    'ae2:gray_covered_dense_cable',
+    'ae2:light_gray_covered_dense_cable',
+    'ae2:cyan_covered_dense_cable',
+    'ae2:purple_covered_dense_cable',
+    'ae2:blue_covered_dense_cable',
+    'ae2:brown_covered_dense_cable',
+    'ae2:green_covered_dense_cable',
+    'ae2:red_covered_dense_cable',
+    'ae2:black_covered_dense_cable',
 ]
 
+// Smart Cable
+global.AE2_SMART_CABLE = [
+    'ae2:white_smart_cable',
+    'ae2:orange_smart_cable',
+    'ae2:magenta_smart_cable',
+    'ae2:light_blue_smart_cable',
+    'ae2:yellow_smart_cable',
+    'ae2:lime_smart_cable',
+    'ae2:pink_smart_cable',
+    'ae2:gray_smart_cable',
+    'ae2:light_gray_smart_cable',
+    'ae2:cyan_smart_cable',
+    'ae2:purple_smart_cable',
+    'ae2:blue_smart_cable',
+    'ae2:brown_smart_cable',
+    'ae2:green_smart_cable',
+    'ae2:red_smart_cable',
+    'ae2:black_smart_cable',
+]
+
+// Dense Smart Cable
+global.AE2_SMART_DENSE_CABLE = [
+    'ae2:white_smart_dense_cable',
+    'ae2:orange_smart_dense_cable',
+    'ae2:magenta_smart_dense_cable',
+    'ae2:light_blue_smart_dense_cable',
+    'ae2:yellow_smart_dense_cable',
+    'ae2:lime_smart_dense_cable',
+    'ae2:pink_smart_dense_cable',
+    'ae2:gray_smart_dense_cable',
+    'ae2:light_gray_smart_dense_cable',
+    'ae2:cyan_smart_dense_cable',
+    'ae2:purple_smart_dense_cable',
+    'ae2:blue_smart_dense_cable',
+    'ae2:brown_smart_dense_cable',
+    'ae2:green_smart_dense_cable',
+    'ae2:red_smart_dense_cable',
+    'ae2:black_smart_dense_cable',
+]
+
+/*
 // Paint ball
 global.AE2_paintBalls = [
     item('appliedenergistics2:paint_ball'),

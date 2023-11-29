@@ -176,7 +176,7 @@ global.MINECRAFT_FORGE_DYE = [
     '#forge:dyes/green',
     '#forge:dyes/red',
     '#forge:dyes/black'
-]
+];
 /*
 [
     

@@ -2047,7 +2047,7 @@ global.TFC_ORE_MATERIALS = [
     "tetrahedrite"
 ];
 
-global.AE2_LIQUID_DYE = [
+global.TFC_LIQUID_DYE = [
     'tfc:white_dye',
     'tfc:orange_dye',
     'tfc:magenta_dye',
@@ -2064,5 +2064,4 @@ global.AE2_LIQUID_DYE = [
     'tfc:green_dye',
     'tfc:red_dye',
     'tfc:black_dye',
-    'tfc:white_dye'
 ];

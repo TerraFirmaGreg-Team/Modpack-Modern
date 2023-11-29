@@ -31,5 +31,4 @@ global.GTCEU_LIQUID_DYE = [
     'gtceu:green_dye',
     'gtceu:red_dye',
     'gtceu:black_dye',
-    'gtceu:white_dye'
-]
+];
