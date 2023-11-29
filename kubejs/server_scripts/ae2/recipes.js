@@ -1343,6 +1343,46 @@ const registerAE2Recipes = (event) => {
         .EUt(480)
         .cleanroom(CleanroomType.CLEANROOM)
 
+    
+    //forming_press
+    // printed calculation processor
+    event.recipes.gtceu.forming_press('ae2:printed_calculation_processor')
+        .itemInputs(
+            '#forge:plates/certus_quartz',
+            'ae2:calculation_processor_press',)
+        .itemOutputs('ae2:printed_calculation_processor')
+        .duration(20)
+        .EUt(480)
+
+    // printed engineering processor
+    event.recipes.gtceu.forming_press('ae2:printed_engineering_processor')
+    .itemInputs(
+        '#forge:plates/diamond',
+        'ae2:engineering_processor_press',)
+    .itemOutputs('ae2:printed_engineering_processor')
+    .duration(20)
+    .EUt(480)
+
+    // printed logic processor
+    event.recipes.gtceu.forming_press('ae2:printed_logic_processor')
+        .itemInputs(
+            '#forge:plates/gold',
+            'ae2:logic_processor_press',)
+        .itemOutputs('ae2:printed_logic_processor')
+        .duration(20)
+        .EUt(480)
+
+    // printed silicon
+    event.recipes.gtceu.forming_press('ae2:printed_silicon')
+        .itemInputs(
+            '#forge:plates/silicon',
+            'ae2:silicon_press',)
+        .itemOutputs('ae2:printed_silicon')
+        .duration(20)
+        .EUt(480)
+
+    
+
 
     //chemical_bath
     //glass cable 
