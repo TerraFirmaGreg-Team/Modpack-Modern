@@ -21,3 +21,7 @@ REIEvents.removeCategories(event => {
     registerMoreRedCategories(event)
 })
 
+REIEvents.hide('fluid', event => {
+    hideTFCFluids(event)
+})
+

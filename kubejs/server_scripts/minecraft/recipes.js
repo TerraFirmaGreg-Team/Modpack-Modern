@@ -2,6 +2,13 @@
 
 const registerMinecraftRecipes = (event) => {
 
+    // Удаление рецептов камня
+    event.remove({id: 'gtceu:compressor/stone_from_dust'})
+
+    // Удаление рецептов жиги
+    event.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
+    event.remove({id: 'ad_astra:recipes/flint_and_steel'})
+
     // Удаление рецептов связанных с наковальней
     event.remove({id: 'gtceu:arc_furnace/arc_anvil'})
     event.remove({id: 'gtceu:macerator/macerate_anvil'})
