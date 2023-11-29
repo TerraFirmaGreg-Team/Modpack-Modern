@@ -2555,5 +2555,75 @@ const registerAE2Recipes = (event) => {
             .EUt(7)
     };
 
+    // laser_engraver
+    // Inscriber Silicon Press
+    event.recipes.gtceu.laser_engraver('ae2:silicon_press_iron')
+    .itemInputs(
+        '#forge:plates/iron')
+    .notConsumable('#forge:lenses/white')
+    .itemOutputs('ae2:silicon_press')
+    .duration(12000)
+    .EUt(116)
+    event.recipes.gtceu.laser_engraver('ae2:silicon_press_wrought_iron')
+    .itemInputs(
+        '#forge:plates/wrought_iron')
+    .notConsumable('#forge:lenses/white')
+    .itemOutputs('ae2:silicon_press')
+    .duration(8000)
+    .EUt(116)
+
+    // Inscriber logic Press
+    event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_iron')
+    .itemInputs(
+        '#forge:plates/iron')
+    .notConsumable('#forge:lenses/green')
+    .itemOutputs('ae2:logic_processor_press')
+    .duration(12000)
+    .EUt(116)
+    event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_wrought_iron')
+    .itemInputs(
+        '#forge:plates/wrought_iron')
+    .notConsumable('#forge:lenses/green')
+    .itemOutputs('ae2:logic_processor_press')
+    .duration(8000)
+    .EUt(116)
+//
+//
+// НЕ ЗАБЫТЬ СДЕЛАТЬ FLUIX LENS ДЛЯ КРАФТА НИЖЕ (В 1 12 в крафте используется fluix lens)
+// так же надеюсь ты не забыл сделать жидкости для истин кварц и fluix, для крафта fluix pearl, fluix glass cable, fluix plate
+//
+//
+    // Inscriber engineering Press
+    event.recipes.gtceu.laser_engraver('ae2:engineering_press_iron')
+    .itemInputs(
+        '#forge:plates/iron')
+    .notConsumable('#forge:lenses/light_blue')
+    .itemOutputs('ae2:engineering_processor_press')
+    .duration(12000)
+    .EUt(116)
+    event.recipes.gtceu.laser_engraver('ae2:engineering_press_wrought_iron')
+    .itemInputs(
+        '#forge:plates/wrought_iron')
+    .notConsumable('#forge:lenses/light_blue')
+    .itemOutputs('ae2:engineering_processor_press')
+    .duration(8000)
+    .EUt(116)
+
+    // Inscriber calculation Press
+    event.recipes.gtceu.laser_engraver('ae2:calculation_press_iron')
+    .itemInputs(
+        '#forge:plates/iron')
+    .notConsumable('#forge:lenses/blue')
+    .itemOutputs('ae2:calculation_processor_press')
+    .duration(12000)
+    .EUt(116)
+    event.recipes.gtceu.laser_engraver('ae2:calculation_press_wrought_iron')
+    .itemInputs(
+        '#forge:plates/wrought_iron')
+    .notConsumable('#forge:lenses/blue')
+    .itemOutputs('ae2:calculation_processor_press')
+    .duration(8000)
+    .EUt(116)
+
 }
 
