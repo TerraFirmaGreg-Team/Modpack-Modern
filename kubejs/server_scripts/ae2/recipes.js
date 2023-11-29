@@ -2415,24 +2415,145 @@ const registerAE2Recipes = (event) => {
         .EUt(16)
 
     //chemical_bath
-    //cable
+    //glass cable 
     event.recipes.gtceu.chemical_bath('ae2:fluix_glass_cable')
         .itemInputs(
             '#ae2:glass_cable')
-        .inputFluids(Fluid.of('gtceu:chlorine', 144))
+        .inputFluids(Fluid.of('gtceu:chlorine', 100))
         .itemOutputs(
             'ae2:fluix_glass_cable')
         .duration(8)
         .EUt(480)
+    //greg dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLE[i]+'gtceudye')
+            .itemInputs('ae2:fluix_glass_cable')
+            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
+            .itemOutputs(global.AE2_GLASS_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+    //tfc dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLE[i]+'tfcdye')
+            .itemInputs('ae2:fluix_glass_cable')
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .itemOutputs(global.AE2_GLASS_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
 
-        for(i = 0; i < 16; i++) {
-            event.recipes.gtceu.chemical_bath(rrayAE2.glassCables[i])
-                .itemInputs(ore('ae2.cable.glass'))
-                .inputFluids(arrayVanila.colorLiquid[i] * 18)
-                .itemOutputs(arrayAE2.glassCables[i])
-                .duration(20)
-                .EUt(7)
-        }
+    //covered cable
+    event.recipes.gtceu.chemical_bath('ae2:fluix_covered_cable')
+        .itemInputs(
+            '#ae2:covered_cable')
+        .inputFluids(Fluid.of('gtceu:chlorine', 100))
+        .itemOutputs(
+            'ae2:fluix_covered_cable')
+        .duration(8)
+        .EUt(480)
+    //greg dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLE[i]+'gtceudye')
+            .itemInputs('ae2:fluix_covered_cable')
+            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
+            .itemOutputs(global.AE2_COVERED_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+    //tfc dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLE[i]+'tfcdye')
+            .itemInputs('ae2:fluix_covered_cable')
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .itemOutputs(global.AE2_COVERED_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+
+    // Dense Covered Cable
+    event.recipes.gtceu.chemical_bath('ae2:fluix_covered_dense_cable')
+        .itemInputs(
+            '#ae2:covered_dense_cable')
+        .inputFluids(Fluid.of('gtceu:chlorine', 100))
+        .itemOutputs(
+            'ae2:fluix_covered_dense_cable')
+        .duration(8)
+        .EUt(480)
+    //greg dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLE[i]+'gtceudye')
+            .itemInputs('ae2:fluix_covered_dense_cable')
+            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
+            .itemOutputs(global.AE2_COVERED_DENSE_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+    //tfc dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLE[i]+'tfcdye')
+            .itemInputs('ae2:fluix_covered_dense_cable')
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .itemOutputs(global.AE2_COVERED_DENSE_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+
+    // Smart Cable
+    event.recipes.gtceu.chemical_bath('ae2:fluix_smart_cable')
+        .itemInputs(
+            '#ae2:smart_cable')
+        .inputFluids(Fluid.of('gtceu:chlorine', 100))
+        .itemOutputs(
+            'ae2:fluix_smart_cable')
+        .duration(8)
+        .EUt(480)
+    //greg dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLE[i]+'gtceudye')
+            .itemInputs('ae2:fluix_smart_cable')
+            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
+            .itemOutputs(global.AE2_SMART_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+    //tfc dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLE[i]+'tfcdye')
+            .itemInputs('ae2:fluix_smart_cable')
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .itemOutputs(global.AE2_SMART_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+
+    // Dense Smart Cable
+    event.recipes.gtceu.chemical_bath('ae2:fluix_smart_dense_cable')
+        .itemInputs(
+            '#ae2:smart_dense_cable')
+        .inputFluids(Fluid.of('gtceu:chlorine', 100))
+        .itemOutputs(
+            'ae2:fluix_smart_dense_cable')
+        .duration(8)
+        .EUt(480)
+    //greg dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLE[i]+'gtceudye')
+            .itemInputs('ae2:fluix_smart_dense_cable')
+            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
+            .itemOutputs(global.AE2_SMART_DENSE_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
+    //tfc dye
+    for (var i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLE[i]+'tfcdye')
+            .itemInputs('ae2:fluix_smart_dense_cable')
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .itemOutputs(global.AE2_SMART_DENSE_CABLE[i])
+            .duration(20)
+            .EUt(7)
+    };
 
 }
 

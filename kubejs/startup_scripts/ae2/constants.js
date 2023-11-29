@@ -173,7 +173,6 @@ global.AE2_SMART_DENSE_CABLE = [
     'ae2:black_smart_dense_cable',
 ]
 
-
 // Paint ball
 global.AE2_PAINTBALL = [
     'ae2:white_paint_ball',
