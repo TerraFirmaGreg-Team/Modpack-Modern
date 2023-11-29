@@ -8,9 +8,8 @@ const registerAE2Recipes = (event) => {
     // crafting Table
     // network tool
     event.shaped('ae2:network_tool', [
-        'AB ',
-        'CD ',
-        '   '
+        'AB',
+        'CD',
     ], {
         A: '#forge:tools/wrenches',
         B: '#forge:circuits/lv',
@@ -20,9 +19,9 @@ const registerAE2Recipes = (event) => {
     
     // wireless access point
     event.shaped('ae2:wireless_access_point', [
-        ' A ',
-        ' B ',
-        ' C '
+        'A',
+        'B',
+        'C'
     ], {
         A: 'ae2:wireless_receiver',
         B: 'ae2:calculation_processor',
@@ -67,9 +66,8 @@ const registerAE2Recipes = (event) => {
 
     // Capacity Card
     event.shaped('ae2:capacity_card', [
-        'AB ',
-        'BC ',
-        '   '
+        'AB',
+        'BC',
     ], {
         A: 'ae2:basic_card',
         B: 'ae2:cell_component_1k',
@@ -78,9 +76,8 @@ const registerAE2Recipes = (event) => {
 
     // Crafting Card
     event.shaped('ae2:crafting_card', [
-        'AB ',
-        'BC ',
-        '   '
+        'AB',
+        'BC',
     ], {
         A: 'ae2:basic_card',
         B: 'ae2:cell_component_1k',
@@ -89,9 +86,8 @@ const registerAE2Recipes = (event) => {
 
     // Redstone Card
     event.shaped('ae2:redstone_card', [
-        'AB ',
-        'BC ',
-        '   '
+        'AB',
+        'BC'
     ], {
         A: 'ae2:basic_card',
         B: 'minecraft:redstone_torch',
@@ -100,9 +96,8 @@ const registerAE2Recipes = (event) => {
 
     // Fuzzy Card
     event.shaped('ae2:fuzzy_card', [
-        'AB ',
-        'CD ',
-        '   '
+        'AB',
+        'CD',
     ], {
         A: 'ae2:advanced_card',
         B: 'ae2:engineering_processor',
@@ -112,9 +107,8 @@ const registerAE2Recipes = (event) => {
 
     // Inverter Card
     event.shaped('ae2:inverter_card', [
-        'AB ',
-        'BC ',
-        '   '
+        'AB',
+        'BC',
     ], {
         A: 'ae2:advanced_card',
         B: 'ae2:inverted_toggle_bus',
@@ -123,9 +117,8 @@ const registerAE2Recipes = (event) => {
 
     // Acceleration Card(speed card)
     event.shaped('ae2:speed_card', [
-        'AB ',
-        'CD ',
-        '   '
+        'AB',
+        'CD',
     ], {
         A: 'ae2:advanced_card',
         B: 'ae2:engineering_processor',
@@ -423,8 +416,7 @@ const registerAE2Recipes = (event) => {
     // ME Annihilation Plane
     event.shaped('ae2:annihilation_plane', [
         'AAA',
-        'CBC',
-        '   '
+        'CBC'
     ], {
         A: '#forge:dusts/fluix',
         B: 'ae2:annihilation_core',
@@ -434,8 +426,7 @@ const registerAE2Recipes = (event) => {
     // ME Formation Plane
     event.shaped('ae2:formation_plane', [
         'AAA',
-        'CBC',
-        '   '
+        'CBC'
     ], {
         A: '#forge:dusts/fluix',
         B: 'ae2:formation_core',
@@ -1056,8 +1047,241 @@ const registerAE2Recipes = (event) => {
         .EUt(7680)
         .cleanroom(CleanroomType.CLEANROOM)
 
+    // ME Контроллер
+	event.recipes.gtceu.assembler('ae2:controller')
+        .itemInputs(
+            '2x ae2:engineering_processor',
+            '2x #forge:circuits/hv',
+            '2x #forge:plates/titanium',
+            'ae2:fluix_block')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:controller')
+        .duration(200)
+        .EUt(480)
+        .cleanroom(CleanroomType.CLEANROOM)
+  
+    // Energy Cell
+    event.recipes.gtceu.assembler('ae2:energy_cell')
+        .itemInputs(
+            '#forge:plates/certus_quartz',
+            '#forge:batteries/hv',
+            '2x #forge:circuits/hv',
+            '#ae2:covered_cable')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:energy_cell')
+        .circuit(1)
+        .duration(200)
+        .EUt(500)
+  
+    // Dense Energy Cell
+    event.recipes.gtceu.assembler('ae2:dense_energy_cell')
+        .itemInputs(
+            '8x ae2:energy_cell',
+            'gtceu:ev_battery_buffer_16x',
+            '3x ae2:formation_core',
+            '#forge:circuits/ev',
+            '#ae2:covered_dense_cable')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:dense_energy_cell')
+        .circuit(1)
+        .duration(20)
+        .EUt(7680)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    // interface
+    // MV
+    event.recipes.gtceu.assembler('ae2:interface_mv')
+        .itemInputs(
+            'gtceu:mv_conveyor_module',
+            '8x #forge:plates/glass',
+            '4x #forge:plates/steel',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:interface')
+        .duration(200)
+        .EUt(120)
+    // HV
+    event.recipes.gtceu.assembler('ae2:interface_hv')
+        .itemInputs(
+            'gtceu:hv_conveyor_module',
+            '8x #forge:plates/glass',
+            '4x #forge:plates/aluminium',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('2x ae2:interface')
+        .duration(200)
+        .EUt(480)
+    // EV
+    event.recipes.gtceu.assembler('ae2:interface_ev')
+        .itemInputs(
+            'gtceu:ev_conveyor_module',
+            '8x #forge:plates/glass',
+            '4x #forge:plates/stainless_steel',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('4x ae2:interface')
+        .duration(200)
+        .EUt(1980)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // IV
+    event.recipes.gtceu.assembler('ae2:interface_iv')
+        .itemInputs(
+            'gtceu:iv_conveyor_module',
+            '8x #forge:plates/glass',
+            '4x #forge:plates/titanium',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('8x ae2:interface')
+        .duration(200)
+        .EUt(7480)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    //portable cell
+    //item portable cell
+    // 1k
+    event.recipes.gtceu.assembler('ae2:portable_item_cell_1k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_1k',
+            'ae2:energy_cell',
+            'ae2:item_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_item_cell_1k')
+        .duration(200)
+        .EUt(480)
+    // 4k
+    event.recipes.gtceu.assembler('ae2:portable_item_cell_4k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_4k',
+            'ae2:energy_cell',
+            'ae2:item_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_item_cell_4k')
+        .duration(200)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 16k
+    event.recipes.gtceu.assembler('ae2:portable_item_cell_16k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_16k',
+            'ae2:energy_cell',
+            'ae2:item_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_item_cell_16k')
+        .duration(200)
+        .EUt(7680)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 64k
+    event.recipes.gtceu.assembler('ae2:portable_item_cell_64k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_64k',
+            'ae2:energy_cell',
+            'ae2:item_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_item_cell_64k')
+        .duration(200)
+        .EUt(30720)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 256k
+    event.recipes.gtceu.assembler('ae2:portable_item_cell_256k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_256k',
+            'ae2:energy_cell',
+            'ae2:item_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_item_cell_256k')
+        .duration(200)
+        .EUt(122880)
+        .cleanroom(CleanroomType.CLEANROOM)
 
+    //fluid portable cell
+    // 1k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_1k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_1k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_1k')
+        .duration(200)
+        .EUt(480)
+    // 4k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_4k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_4k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_4k')
+        .duration(200)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 16k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_16k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_16k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_16k')
+        .duration(200)
+        .EUt(7680)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 64k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_64k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_64k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_64k')
+        .duration(200)
+        .EUt(30720)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 256k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_256k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_256k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_256k')
+        .duration(200)
+        .EUt(122880)
+        .cleanroom(CleanroomType.CLEANROOM)
 
-
+    //chemical_bath
+    //cable
+    event.recipes.gtceu.chemical_bath('ae2:fluix_glass_cable')
+        .itemInputs(
+            '#ae2:glass_cable')
+        .inputFluids(Fluid.of('gtceu:chlorine', 144))
+        .itemOutputs(
+            'ae2:fluix_glass_cable')
+        .duration(8)
+        .EUt(480)
+/*
+    for (int i = 0; i < 16; i++) {
+        event.recipes.gtceu.chemical_bath(rrayAE2.glassCables[i])
+            .inputs(ore('ae2.cable.glass'))
+            .fluidInputs(arrayVanila.colorLiquid[i] * 18)
+            .outputs(arrayAE2.glassCables[i])
+            .duration(20)
+            .EUt(7)
+    }
+*/
 }
 
