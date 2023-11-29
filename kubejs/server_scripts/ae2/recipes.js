@@ -2424,15 +2424,15 @@ const registerAE2Recipes = (event) => {
             'ae2:fluix_glass_cable')
         .duration(8)
         .EUt(480)
-/*
-    for (int i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(rrayAE2.glassCables[i])
-            .inputs(ore('ae2.cable.glass'))
-            .fluidInputs(arrayVanila.colorLiquid[i] * 18)
-            .outputs(arrayAE2.glassCables[i])
-            .duration(20)
-            .EUt(7)
-    }
-*/
+
+        for(i = 0; i < 16; i++) {
+            event.recipes.gtceu.chemical_bath(rrayAE2.glassCables[i])
+                .itemInputs(ore('ae2.cable.glass'))
+                .inputFluids(arrayVanila.colorLiquid[i] * 18)
+                .itemOutputs(arrayAE2.glassCables[i])
+                .duration(20)
+                .EUt(7)
+        }
+
 }
 
