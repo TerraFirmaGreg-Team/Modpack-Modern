@@ -19,12 +19,14 @@
 - Исправлен рецепт доменной печи тфк.
 ### Update mods
 - TerraFirmaGreg 0.0.12 -> 0.0.13
-- Cucumber 7.0.4 -> 7.0.5
+- Cucumber 7.0.4 -> 7.0.6
 - ResourcefulLib 2.1.16 -> 2.1.18
 - Blur 3.1.0 -> 3.1.1
-- XaeroMap 1.36 -> 1.37
-- XaeroWorldMap 23.8.4 -> 23.9
+- XaeroMinimap 23.8.4 -> 23.9.0
+- XaeroWorldMap 1.36.0 -> 1.37.0
 - Ae2WT 15.1.4 -> 15.1.5
+- FTBQuestsOptimizer 1.1.3 -> 1.1.4
+- Curios 5.4.3 -> 5.4.4
 
 ## [0.1.0] - 2023-11-27
 ### Fixes
