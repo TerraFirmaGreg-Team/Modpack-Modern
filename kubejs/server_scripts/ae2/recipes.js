@@ -1542,6 +1542,66 @@ const registerAE2Recipes = (event) => {
         .EUt(122880)
         .cleanroom(CleanroomType.CLEANROOM)
 
+    //fluid portable cell
+    // 1k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_1k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_1k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_1k')
+        .duration(200)
+        .EUt(480)
+    // 4k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_4k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_4k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_4k')
+        .duration(200)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 16k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_16k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_16k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_16k')
+        .duration(200)
+        .EUt(7680)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 64k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_64k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_64k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_64k')
+        .duration(200)
+        .EUt(30720)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // 256k
+    event.recipes.gtceu.assembler('ae2:portable_fluid_cell_256k')
+        .itemInputs(
+            'ae2:chest',
+            'ae2:cell_component_256k',
+            'ae2:energy_cell',
+            'ae2:fluid_cell_housing')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:portable_fluid_cell_256k')
+        .duration(200)
+        .EUt(122880)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     //circuit_assembler
     //logic_processor
