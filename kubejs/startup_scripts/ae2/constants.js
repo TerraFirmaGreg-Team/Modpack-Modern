@@ -173,6 +173,47 @@ global.AE2_SMART_DENSE_CABLE = [
     'ae2:black_smart_dense_cable',
 ]
 
+// Smart Cable
+global.AE2_SMART_CABLE = [
+    'ae2:white_smart_cable',
+    'ae2:orange_smart_cable',
+    'ae2:magenta_smart_cable',
+    'ae2:light_blue_smart_cable',
+    'ae2:yellow_smart_cable',
+    'ae2:lime_smart_cable',
+    'ae2:pink_smart_cable',
+    'ae2:gray_smart_cable',
+    'ae2:light_gray_smart_cable',
+    'ae2:cyan_smart_cable',
+    'ae2:purple_smart_cable',
+    'ae2:blue_smart_cable',
+    'ae2:brown_smart_cable',
+    'ae2:green_smart_cable',
+    'ae2:red_smart_cable',
+    'ae2:black_smart_cable',
+]
+
+// Dense Smart Cable
+global.AE2_SMART_DENSE_CABLE = [
+    'ae2:white_smart_dense_cable',
+    'ae2:orange_smart_dense_cable',
+    'ae2:magenta_smart_dense_cable',
+    'ae2:light_blue_smart_dense_cable',
+    'ae2:yellow_smart_dense_cable',
+    'ae2:lime_smart_dense_cable',
+    'ae2:pink_smart_dense_cable',
+    'ae2:gray_smart_dense_cable',
+    'ae2:light_gray_smart_dense_cable',
+    'ae2:cyan_smart_dense_cable',
+    'ae2:purple_smart_dense_cable',
+    'ae2:blue_smart_dense_cable',
+    'ae2:brown_smart_dense_cable',
+    'ae2:green_smart_dense_cable',
+    'ae2:red_smart_dense_cable',
+    'ae2:black_smart_dense_cable',
+]
+
+/*
 // Paint ball
 global.AE2_PAINTBALL = [
     'ae2:white_paint_ball',
@@ -212,3 +253,4 @@ global.AE2_LUMEN_PAINTBALL = [
     'ae2:black_lumen_paint_ball',
 ]
 
+*/
