@@ -1,0 +1,29 @@
+
+[UI]
+	#'Use while sneaking to open' message will be shown in Camera item tooltip.
+	CameraSneakOpenTooltip = true
+	#Photographer name will be shown in Photograph's tooltip.
+	PhotographPhotographerNameTooltip = false
+	#Crosshair will not get in the way when holding a photograph.
+	PhotographInHandHideCrosshair = true
+
+	[UI.Viewfinder]
+		#Mouse sensitivity modifier per 5 degrees of fov. Set to 0 to disable sensitivity changes.
+		#Range: 0.0 ~ 1.0
+		ZoomSensitivityModifier = 0.048
+		BackgroundColorHex = "FA1F1D1B"
+		FontMainColorHex = "FF2B2622"
+		FontSecondaryColorHex = "FF7A736C"
+
+[Capture]
+	#Delay in ticks before capturing an image when shooting with flash.
+	#If you experience flash synchronization issues (Flash having no effect on the image) - try increasing the value.
+	#Range: 1 ~ 6
+	FlashCaptureDelayTicks = 3
+
+[FileSaving]
+	#When the Photograph is viewed in UI, image will be saved to 'exposures' folder as a png.
+	SavePhotographs = true
+	#When saving, exposures will be organized into a folders corresponding to current world name.
+	WorldNameSubfolder = true
+
