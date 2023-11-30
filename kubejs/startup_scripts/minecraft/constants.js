@@ -184,6 +184,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:sand',
     'minecraft:suspicious_sand',
     'minecraft:red_sand',
+    'minecraft:chest',
+    'minecraft:trapped_chest',
     
     'minecraft:wheat',
     'minecraft:composter',
