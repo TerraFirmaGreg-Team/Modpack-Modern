@@ -12,13 +12,6 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
-    event.remove('forge:dusts/iron', 'tfc:powder/limonite')
-    event.remove('forge:dusts/iron', 'tfc:powder/magnetite')
-    event.remove('forge:dusts/iron', 'tfc:powder/hematite')
-    event.remove('forge:dusts/copper', 'tfc:powder/malachite')
-    event.remove('forge:dusts/copper', 'tfc:powder/copper')
-    event.remove('forge:dusts/copper', 'tfc:powder/tetrahedrite')
-
     event.add('forge:ingots/double/bismuth', 'tfc:metal/double_ingot/bismuth')
     event.add('forge:ingots/double/bismuth_bronze', 'tfc:metal/double_ingot/bismuth_bronze')
     event.add('forge:ingots/double/black_bronze', 'tfc:metal/double_ingot/black_bronze')
@@ -63,12 +56,6 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:corals', 'tfc:coral/fire_dead_coral')
     event.add('tfc:corals', 'tfc:coral/horn_dead_coral')
 
-    event.add('tfc:can_collapse', '#forge:tfc_stonetype_ore')
-    event.add('tfc:can_start_collapse', '#forge:tfc_stonetype_ore')
-    event.add('tfc:can_trigger_collapse', '#forge:tfc_stonetype_ore')
-    event.add('tfc:monster_spawns_on', '#forge:tfc_stonetype_ore')
-    event.add('tfc:prospectable', '#forge:tfc_stonetype_ore')
-
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
             event.add(`tfc:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
@@ -77,6 +64,12 @@ const registerTFCItemTags = (event) => {
 }
 
 const registerTFCBlockTags = (event) => {
+    event.add('tfc:can_collapse', '#forge:tfc_stonetype_ore')
+    event.add('tfc:can_start_collapse', '#forge:tfc_stonetype_ore')
+    event.add('tfc:can_trigger_collapse', '#forge:tfc_stonetype_ore')
+    event.add('tfc:monster_spawns_on', '#forge:tfc_stonetype_ore')
+    event.add('tfc:prospectable', '#forge:tfc_stonetype_ore')
+
     event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
     event.add('tfc:glass_pouring_table', 'gtceu:brass_block')
 }

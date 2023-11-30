@@ -1,6 +1,15 @@
 // priority: 0
 
 const registerMinecraftRecipes = (event) => {
+    // Удаление рецептов палок
+    event.remove({id: 'minecraft:stick'})
+
+    // Удаление рецептов камня
+    event.remove({id: 'gtceu:compressor/stone_from_dust'})
+
+    // Удаление рецептов жиги
+    event.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
+    event.remove({id: 'ad_astra:recipes/flint_and_steel'})
 
     // Удаление рецептов связанных с наковальней
     event.remove({id: 'gtceu:arc_furnace/arc_anvil'})
@@ -178,6 +187,19 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'minecraft:cake'})
     event.remove({id: 'minecraft:bread'})
     event.remove({id: 'gtceu:packer/hay_block'})
+    
+    // Удаление рецептов связанных с Wheat Dust
+    event.remove({id: 'gtceu:packer/package_wheat_tiny_dust'})
+    event.remove({id: 'gtceu:packer/package_wheat_small_dust'})
+    event.remove({id: 'gtceu:packer/unpackage_wheat_tiny_dust'})
+    event.remove({id: 'gtceu:packer/unpackage_wheat_small_dust'})
+    event.remove({id: 'gtceu:shaped/tiny_dust_assembling_wheat'})
+    event.remove({id: 'gtceu:shaped/small_dust_assembling_wheat'})
+    event.remove({id: 'gtceu:shaped/tiny_dust_disassembling_wheat'})
+    event.remove({id: 'gtceu:shaped/small_dust_disassembling_wheat'})
+    event.remove({id: 'gtceu:macerator/macerate_wheat'})
+    event.remove({id: 'gtceu:macerator/macerate_hay_block'})
+    event.remove({id: 'gtceu:shapeless/wheat_to_dust'})
 
     // Удаление рецептов связанных с TripWire Hook
     event.remove({id: 'minecraft:tripwire_hook'})
@@ -233,6 +255,7 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:macerator/macerate_trapped_chest'})
 
     // Удаление других рецептов
+    event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
     event.remove({id: 'minecraft:blast_furnace'})
     event.remove({id: 'minecraft:fire_charge'})
     event.remove({id: 'minecraft:netherite_ingot_from_netherite_block'})
@@ -259,6 +282,23 @@ const registerMinecraftRecipes = (event) => {
 
     event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
+
+    // Bucket
+    addWeldingRecipe(event, 
+        'tfg:recipes/anvil/vanilla_bucket',
+        { item: 'tfc:metal/bucket/red_steel' },
+        { item: 'tfc:metal/bucket/blue_steel' },
+        { item: 'minecraft:bucket' },
+        6
+    )
+
+    // Fire Charge
+    event.remove({ id: 'tfc:crafting/vanilla/fire_charge' })
+    event.shapeless('3x minecraft:fire_charge', [
+        '#forge:dusts/gunpowder',
+        '#minecraft:coals',
+        'tfc:firestarter'
+    ])
 
     // Стекло
     event.recipes.gtceu.alloy_smelter('glass')             

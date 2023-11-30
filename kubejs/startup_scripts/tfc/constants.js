@@ -229,9 +229,17 @@ global.TFC_TOOL_GEN = [
 /**
  * Указывает, что у этого металла есть ведро.
  */
-global.TFC_BUCKET_GEN = [
-    "bucket",
-];
+global.TFC_BUCKET_GEN = ["bucket"];
+
+/**
+ * Указывает, что у этого металла есть чистый кусок (тфк штука).
+ */
+global.TFC_SMALL_NATIVE_ORE_GEN = ["small_native_ore"];
+
+/**
+ * Указывает, что у этого металла есть кусок (тфк штука).
+ */
+global.TFC_SMALL_ORE_GEN = ["small_ore"];
 
 global.ITEM_TAG_TO_HEAT = {
     nugget: {
@@ -454,6 +462,32 @@ global.ITEM_TAG_TO_HEAT = {
         },
         output: (name) => {
             return { item: `gtceu:rich_raw_${name}` };
+        },
+    },
+
+    small_native_ore: {
+        heat_capacity: 0.869,
+        metal_amount: {
+            default: 12
+        },
+        input: (name) => {
+            return { item: `tfc:ore/small_native_${name}` };
+        },
+        output: (name) => {
+            return { item: `tfc:ore/small_native_${name}` };
+        },
+    },
+
+    small_ore: {
+        heat_capacity: 0.869,
+        metal_amount: {
+            default: 12
+        },
+        input: (name) => {
+            return { item: `tfc:ore/small_${name}` };
+        },
+        output: (name) => {
+            return { item: `tfc:ore/small_${name}` };
         },
     },
 
@@ -1138,6 +1172,14 @@ global.ITEM_TAG_TO_HEAT = {
 };
 
 global.METAL_TO_SPECS = {
+    bismuthinite: {
+        forging_temp: 162,
+        welding_temp: 216,
+        melt_temp: 270,
+        fluidName: "gtceu:bismuth",
+        tier: 1,
+        props: global.TFC_SMALL_ORE_GEN,
+    },
     bismuth: {
         forging_temp: 162,
         welding_temp: 216,
@@ -1173,7 +1215,8 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.ORE_GEN,
-            global.PART_GEN
+            global.PART_GEN,
+            global.TFC_SMALL_NATIVE_ORE_GEN
         ),
     },
     nickel: {
@@ -1211,7 +1254,8 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.ORE_GEN,
-            global.PART_GEN
+            global.PART_GEN,
+            global.TFC_SMALL_NATIVE_ORE_GEN
         ),
     },
     tin: {
@@ -1262,7 +1306,8 @@ global.METAL_TO_SPECS = {
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
             global.TFC_TOOL_GEN,
-            global.UTILITY_GEN
+            global.UTILITY_GEN,
+            global.TFC_SMALL_NATIVE_ORE_GEN
         ),
     },
     bismuth_bronze: {
@@ -1506,7 +1551,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 230,
         fluidName: "gtceu:tin",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     garnierite: {
         forging_temp: 138,
@@ -1514,7 +1559,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1453,
         fluidName: "gtceu:nickel",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     hematite: {
         forging_temp: 921,
@@ -1522,7 +1567,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluidName: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     yellow_limonite: {
         forging_temp: 921,
@@ -1532,13 +1577,21 @@ global.METAL_TO_SPECS = {
         tier: 3,
         props: [].concat(global.DUST_GEN, global.ORE_GEN),
     },
+    limonite: {
+        forging_temp: 921,
+        welding_temp: 1228,
+        melt_temp: 1535,
+        fluidName: "gtceu:iron",
+        tier: 3,
+        props: [].concat(global.TFC_SMALL_ORE_GEN),
+    },
     magnetite: {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 1535,
         fluidName: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     malachite: {
         forging_temp: 138,
@@ -1546,7 +1599,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1080,
         fluidName: "gtceu:copper",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     pyrite: {
         forging_temp: 921,
@@ -1562,7 +1615,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 420,
         fluidName: "gtceu:zinc",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     tetrahedrite: {
         forging_temp: 138,
@@ -1570,7 +1623,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1080,
         fluidName: "gtceu:copper",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
     },
     chalcopyrite: {
         forging_temp: 648,

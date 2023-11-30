@@ -7,6 +7,7 @@ REIEvents.hide('item', event => {
     hideCreateStuff(event)
     hideAE2Stuff(event)
     hideExtendedCraftingStuff(event)
+    hideAdAstraStuff(event)
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)
     hideSmallShipsStuff(event)
@@ -20,5 +21,9 @@ REIEvents.groupEntries(event => {
 REIEvents.removeCategories(event => {
     registerGTCEUCategories(event)
     registerMoreRedCategories(event)
+})
+
+REIEvents.hide('fluid', event => {
+    hideTFCFluids(event)
 })
 
