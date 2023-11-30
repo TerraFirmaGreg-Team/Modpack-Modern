@@ -3,7 +3,7 @@
 const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
-    // event.remove({ mod: 'ae2' });
+    event.remove({ mod: 'ae2' });
 
     // crafting Table
     // network tool
@@ -1381,9 +1381,6 @@ const registerAE2Recipes = (event) => {
         .duration(20)
         .EUt(480)
 
-    
-
-
     //chemical_bath
     //glass cable 
     event.recipes.gtceu.chemical_bath('ae2:fluix_glass_cable')
@@ -1561,39 +1558,78 @@ const registerAE2Recipes = (event) => {
 //
 // НЕ ЗАБЫТЬ СДЕЛАТЬ FLUIX LENS ДЛЯ КРАФТА НИЖЕ (В 1 12 в крафте используется fluix lens)
 // так же надеюсь ты не забыл сделать жидкости для истин кварц и fluix, для крафта fluix pearl, fluix glass cable, fluix plate
-//
-//
+// сделать роды для quartz fiber
+// mixer.autoclave.
     // Inscriber engineering Press
     event.recipes.gtceu.laser_engraver('ae2:engineering_press_iron')
-    .itemInputs(
-        '#forge:plates/iron')
-    .notConsumable('#forge:lenses/light_blue')
-    .itemOutputs('ae2:engineering_processor_press')
-    .duration(12000)
-    .EUt(116)
+        .itemInputs(
+            '#forge:plates/iron')
+        .notConsumable('#forge:lenses/light_blue')
+        .itemOutputs('ae2:engineering_processor_press')
+        .duration(12000)
+        .EUt(116)
     event.recipes.gtceu.laser_engraver('ae2:engineering_press_wrought_iron')
-    .itemInputs(
-        '#forge:plates/wrought_iron')
-    .notConsumable('#forge:lenses/light_blue')
-    .itemOutputs('ae2:engineering_processor_press')
-    .duration(8000)
-    .EUt(116)
+        .itemInputs(
+            '#forge:plates/wrought_iron')
+        .notConsumable('#forge:lenses/light_blue')
+        .itemOutputs('ae2:engineering_processor_press')
+        .duration(8000)
+        .EUt(116)
 
     // Inscriber calculation Press
     event.recipes.gtceu.laser_engraver('ae2:calculation_press_iron')
-    .itemInputs(
-        '#forge:plates/iron')
-    .notConsumable('#forge:lenses/blue')
-    .itemOutputs('ae2:calculation_processor_press')
-    .duration(12000)
-    .EUt(116)
+        .itemInputs(
+            '#forge:plates/iron')
+        .notConsumable('#forge:lenses/blue')
+        .itemOutputs('ae2:calculation_processor_press')
+        .duration(12000)
+        .EUt(116)
     event.recipes.gtceu.laser_engraver('ae2:calculation_press_wrought_iron')
-    .itemInputs(
-        '#forge:plates/wrought_iron')
-    .notConsumable('#forge:lenses/blue')
-    .itemOutputs('ae2:calculation_processor_press')
-    .duration(8000)
-    .EUt(116)
+        .itemInputs(
+            '#forge:plates/wrought_iron')
+        .notConsumable('#forge:lenses/blue')
+        .itemOutputs('ae2:calculation_processor_press')
+        .duration(8000)
+        .EUt(116)
 
+
+    //wiremill 
+    // Quartz Fiber
+    event.recipes.gtceu.wiremill('ae2:quartz_fiber')
+        .itemInputs(
+            '#forge:plates/certus_quartz')
+        .itemOutputs('ae2:quartz_fiber')
+        .duration(20)
+        .EUt(480)
+
+
+    //alloy smelter
+    // Quartz Glass
+    event.recipes.gtceu.alloy_smelter('ae2:quartz_glass')
+        .itemInputs(
+            '5x #forge:dusts/certus_quartz',
+            '4x #forge:glass')
+        .itemOutputs('4x ae2:quartz_glass')
+        .duration(20)
+        .EUt(480)
+    
+    // Vibrant Quartz Glass
+    event.recipes.gtceu.alloy_smelter('ae2:quartz_vibrant_glass')
+        .itemInputs(
+            'ae2:quartz_glass',
+            '8x #forge:dusts/glowstone')
+        .itemOutputs('ae2:quartz_vibrant_glass')
+        .duration(20)
+        .EUt(480)
+    //electrolyzer
+    // Charged Certus Quartz  
+    event.recipes.gtceu.electrolyzer('ae2:charged_certus_quartz_crystal')
+        .itemInputs(
+            '#forge:gems/certus_quartz')
+        .itemOutputs('ae2:charged_certus_quartz_crystal')
+        .duration(20)
+        .EUt(160)
+    
+        
 }
 
