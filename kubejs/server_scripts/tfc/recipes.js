@@ -52,123 +52,6 @@ const registerTFCRecipes = (event) => {
     registerAutoTFCCastingRecipes(event)
     registerAutoTFCAnvilRecipes(event)
 
-    // Bucket
-    addWeldingRecipe(event, 
-        'tfg:recipes/anvil/vanilla_bucket',
-        { item: 'tfc:metal/bucket/red_steel' },
-        { item: 'tfc:metal/bucket/blue_steel' },
-        { item: 'minecraft:bucket' },
-        6
-    )
-
-    // Small Copper -> Copper
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_copper',
-        { item: "tfc:ore/small_native_copper" },
-        { fluid: "gtceu:copper", amount: 12 },
-        1080,
-        false
-    )
-
-    // Small Gold -> Gold
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_gold',
-        { item: "tfc:ore/small_native_gold" },
-        { fluid: "gtceu:gold", amount: 12 },
-        1060,
-        false
-    )
-
-    // Small Hematite -> Iron
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_hematite',
-        { item: "tfc:ore/small_hematite" },
-        { fluid: "gtceu:iron", amount: 12 },
-        1535,
-        false
-    )
-
-    // Small Silver -> Silver
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_silver',
-        { item: "tfc:ore/small_native_silver" },
-        { fluid: "gtceu:silver", amount: 12 },
-        961,
-        false
-    )
-
-    // Small Cassiterite -> Tin
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_cassiterite',
-        { item: "tfc:ore/small_cassiterite" },
-        { fluid: "gtceu:tin", amount: 12 },
-        230,
-        false
-    )
-
-    // Small Bismuth -> Bismuth
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_bismuth',
-        { item: "tfc:ore/small_bismuthinite" },
-        { fluid: "gtceu:bismuth", amount: 12 },
-        270,
-        false
-    )
-
-    // Small Nickel -> Nickel
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_garnierite',
-        { item: "tfc:ore/small_garnierite" },
-        { fluid: "gtceu:nickel", amount: 12 },
-        1453,
-        false
-    )
-
-    // Small Malachite -> Copper
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_malachite',
-        { item: "tfc:ore/small_malachite" },
-        { fluid: "gtceu:copper", amount: 12 },
-        1453,
-        false
-    )
-
-    // Small Magnetite -> Iron
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_magnetite',
-        { item: "tfc:ore/small_magnetite" },
-        { fluid: "gtceu:iron", amount: 12 },
-        1535,
-        false
-    )
-
-    // Small Limonite -> Iron
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_limonite',
-        { item: "tfc:ore/small_limonite" },
-        { fluid: "gtceu:iron", amount: 12 },
-        1535,
-        false
-    )
-
-    // Small Sphalerite -> Iron
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_sphalerite',
-        { item: "tfc:ore/small_sphalerite" },
-        { fluid: "gtceu:zinc", amount: 12 },
-        420,
-        false
-    )
-
-    // Small Tetrahedrite -> Iron
-    addHeatingItemToFluidRecipe(event, 
-        'tfc:recipes/heating/tfg/small_tetrahedrite',
-        { item: "tfc:ore/small_tetrahedrite" },
-        { fluid: "gtceu:copper", amount: 12 },
-        1080,
-        false
-    )
-
     // Gold Bell
     addCastingRecipe(event, 
         'tfc:recipes/casting/tfg/gold_bell',
@@ -303,8 +186,6 @@ const registerTFCRecipes = (event) => {
         3,
         [ "draw_any", "punch_last", "punch_not_last" ]
     )
-
-    
 
     // Fire Charge
     event.remove({ id: 'tfc:crafting/vanilla/fire_charge' })
