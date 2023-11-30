@@ -340,4 +340,16 @@ const registerGTCEURecipes = (event) => {
         .itemOutputs('gtceu:lv_machine_casing')
         .duration(50)
         .EUt(16)
+
+    event.recipes.gtceu.macerator('macerate_lv_machine_casing')             
+        .itemInputs('gtceu:lv_machine_casing')
+        .itemOutputs('4x gtceu:red_steel_dust', '4x gtceu:blue_steel_dust')
+        .duration(448)
+        .EUt(8)
+
+    event.recipes.gtceu.arc_furnace('arc_lv_machine_casing')             
+        .itemInputs('gtceu:lv_machine_casing')
+        .itemOutputs('4x gtceu:red_steel_ingot', '4x gtceu:blue_steel_ingot')
+        .duration(448)
+        .EUt(8)
 }
