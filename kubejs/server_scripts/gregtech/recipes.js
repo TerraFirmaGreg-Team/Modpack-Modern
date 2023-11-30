@@ -322,4 +322,22 @@ const registerGTCEURecipes = (event) => {
         C: 'gtceu:heatproof_machine_casing',
         D: 'gtceu:tin_single_cable'
     }).id('gtceu:shaped/electric_blast_furnace')
+
+    // LV Casing
+    event.shaped('gtceu:lv_machine_casing', [
+        'ABA', 
+        'BCB',
+        'ABA'
+    ], {
+        A: '#forge:plates/red_steel',
+        B: '#forge:plates/blue_steel',
+        C: '#forge:tools/wrenches'
+    }).id('gtceu:shaped/casing_lv')
+
+    event.recipes.gtceu.assembler('casing_lv')             
+        .itemInputs('4x #forge:plates/red_steel', '4x #forge:plates/blue_steel')
+        .circuit(8)
+        .itemOutputs('gtceu:lv_machine_casing')
+        .duration(50)
+        .EUt(16)
 }
