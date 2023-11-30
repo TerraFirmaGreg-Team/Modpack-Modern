@@ -2,6 +2,9 @@
 
 const registerMinecraftRecipes = (event) => {
 
+    // Удаление рецептов палок
+    event.remove({id: 'minecraft:stick'})
+
     // Удаление рецептов камня
     event.remove({id: 'gtceu:compressor/stone_from_dust'})
 
