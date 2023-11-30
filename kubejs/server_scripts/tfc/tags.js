@@ -12,13 +12,6 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
-    event.remove('forge:dusts/iron', 'tfc:powder/limonite')
-    event.remove('forge:dusts/iron', 'tfc:powder/magnetite')
-    event.remove('forge:dusts/iron', 'tfc:powder/hematite')
-    event.remove('forge:dusts/copper', 'tfc:powder/malachite')
-    event.remove('forge:dusts/copper', 'tfc:powder/copper')
-    event.remove('forge:dusts/copper', 'tfc:powder/tetrahedrite')
-
     event.add('forge:ingots/double/bismuth', 'tfc:metal/double_ingot/bismuth')
     event.add('forge:ingots/double/bismuth_bronze', 'tfc:metal/double_ingot/bismuth_bronze')
     event.add('forge:ingots/double/black_bronze', 'tfc:metal/double_ingot/black_bronze')

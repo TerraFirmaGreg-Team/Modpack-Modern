@@ -23,30 +23,10 @@ const registerGTCEURecipes = (event) => {
 
     // Удаление рецептов связанных с BioChaff
     event.remove({id: 'gtceu:macerator/dirt_from_bio_chaff'})
-
-    // Удаление рецептов связанных с Wheat Dust
-    event.remove({id: 'gtceu:packer/package_wheat_tiny_dust'})
-    event.remove({id: 'gtceu:packer/package_wheat_small_dust'})
-    event.remove({id: 'gtceu:packer/unpackage_wheat_tiny_dust'})
-    event.remove({id: 'gtceu:packer/unpackage_wheat_small_dust'})
-    event.remove({id: 'gtceu:shaped/tiny_dust_assembling_wheat'})
-    event.remove({id: 'gtceu:shaped/small_dust_assembling_wheat'})
-    event.remove({id: 'gtceu:shaped/tiny_dust_disassembling_wheat'})
-    event.remove({id: 'gtceu:shaped/small_dust_disassembling_wheat'})
-    event.remove({id: 'gtceu:macerator/macerate_wheat'})
-    event.remove({id: 'gtceu:macerator/macerate_hay_block'})
-    event.remove({id: 'gtceu:shapeless/wheat_to_dust'})
     
     // Удаление других рецептов
     //
     
-    // Декрафт сундуков в пыль
-    event.recipes.gtceu.macerator('macerate_chest')             
-        .itemInputs('#forge:chests/wooden')
-        .itemOutputs('8x gtceu:wood_dust')
-        .duration(100)
-        .EUt(4)
-
     // Treated Wood Planks
     event.shaped('8x gtceu:treated_wood_planks', [
         'AAA', 
@@ -75,51 +55,6 @@ const registerGTCEURecipes = (event) => {
         B: Item.of('tfc:metal/bucket/blue_steel', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
     }).id('tfg:shaped/treated_wood_planks_blue_steel_bucket')
 
-    // Quartz Sand Dust
-    event.shaped('gtceu:quartz_sand_dust', [
-        'A', 
-        'B'
-    ], {
-        A: '#forge:sand',
-        B: '#forge:tools/mortars'
-    }).id('gtceu:shaped/quartz_sand')
-
-    event.recipes.gtceu.macerator('quartz_sand_from_sand')             
-        .itemInputs('#forge:sand')
-        .itemOutputs('gtceu:quartz_sand_dust')
-        .duration(30)
-        .EUt(2)
-
-    // Silicon Dioxide Dust
-    event.recipes.gtceu.electrolyzer('sand_electrolysis')             
-        .itemInputs('8x #forge:sand')
-        .itemOutputs('gtceu:silicon_dioxide_dust')
-        .duration(500)
-        .EUt(25)
-
-    // Fertilizer
-    event.recipes.gtceu.mixer('fertilizer')             
-        .itemInputs(
-            '#tfc:dirt',
-            '2x #forge:dusts/wood',
-            '4x #forge:sand'
-        )
-        .inputFluids(Fluid.of('minecraft:water', 1000))
-        .itemOutputs('4x gtceu:fertilizer')
-        .duration(300)
-        .EUt(30)
-
-    event.recipes.gtceu.create_mixer('fertilizer')             
-        .itemInputs(
-            '#tfc:dirt',
-            '2x #forge:dusts/wood',
-            '4x #forge:sand'
-        )
-        .inputFluids(Fluid.of('minecraft:water', 1000))
-        .itemOutputs('4x gtceu:fertilizer')
-        .duration(300)
-        .EUt(30)
-        .rpm(96)
 
     // Low Pressure Steam Forge Hammer
     event.shaped('gtceu:lp_steam_forge_hammer', [
@@ -236,129 +171,6 @@ const registerGTCEURecipes = (event) => {
         D: 'gtceu:uv_machine_hull',
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/uv_forge_hammer')
-
-    // Kapok Log -> Sticky Resin (Centriguge)
-    event.recipes.gtceu.centrifuge('rubber_log_separation')             
-        .itemInputs('#tfc:kapok_logs')
-        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
-        .chancedOutput('gtceu:plant_ball', 3750, 900)
-        .chancedOutput('gtceu:carbon_dust', 2500, 600)
-        .chancedOutput('gtceu:wood_dust', 2500, 700)
-        .outputFluids(Fluid.of('gtceu:methane', 60))
-        .duration(200)
-        .EUt(20)
-
-    // Kapok Log -> Raw Rubber Dust
-    event.recipes.gtceu.extractor('raw_rubber_from_log')             
-        .itemInputs('#tfc:kapok_logs')
-        .itemOutputs('gtceu:raw_rubber_dust')
-        .duration(300)
-        .EUt(2)
-
-    // Kapok Sapling -> Raw Rubber Dust
-    event.recipes.gtceu.extractor('raw_rubber_from_sapling')             
-        .itemInputs('tfc:wood/sapling/kapok')
-        .itemOutputs('gtceu:raw_rubber_dust')
-        .duration(300)
-        .EUt(2)
-
-    // Kapok Leaves -> Raw Rubber Dust
-    event.recipes.gtceu.extractor('raw_rubber_from_leaves')             
-        .itemInputs('16x tfc:wood/leaves/kapok')
-        .itemOutputs('gtceu:raw_rubber_dust')
-        .duration(300)
-        .EUt(2)
-
-    // TFC Plants -> Plant Ball (Centrifuge)
-    event.recipes.gtceu.centrifuge('grass_block_separation')             
-        .itemInputs('#tfc:plants')
-        .chancedOutput('gtceu:plant_ball', 3000, 1200)
-        .chancedOutput('gtceu:clay_tiny_dust', 5000, 900)
-        .duration(250)
-        .EUt(30)
-
-    // TFC Dirt -> Plant Ball (Centrifuge)
-    event.recipes.gtceu.centrifuge('dirt_separation')             
-        .itemInputs('#tfc:dirt')
-        .chancedOutput('gtceu:plant_ball', 1250, 700)
-        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
-        .duration(250)
-        .EUt(30)
-
-    // 8x Vanilla Shit -> Plant Ball (Compressor)
-    event.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_crimson_stem'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_tube_coral'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_sugar_cane'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_red_mushroom'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_potato'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_nether_wart'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_horn_coral'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_fire_coral'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_carrot'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_cactus'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_bubble_coral'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
-
-    event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')             
-        .itemInputs('8x #tfc:seeds')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor('plant_ball_from_tfc_food')             
-        .itemInputs('8x #tfc:foods')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')             
-        .itemInputs('8x #tfc:plants')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')             
-        .itemInputs('8x #tfc:corals')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    // Vanilla Shit -> Biomass (Brewery)
-    event.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
-    event.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
-    event.remove({id: 'gtceu:brewery/biomass_from_potato'})
-    event.remove({id: 'gtceu:brewery/biomass_from_carrot'})
-    event.remove({id: 'gtceu:brewery/biomass_from_cactus'})
-    event.remove({id: 'gtceu:brewery/biomass_from_brown_mushroom'})
-    event.remove({id: 'gtceu:brewery/biomass_from_beetroot'})
-
-    event.recipes.gtceu.brewery('biomass_from_tfc_seeds')             
-        .itemInputs('#tfc:seeds')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    event.recipes.gtceu.brewery('biomass_from_tfc_food')             
-        .itemInputs('#tfc:foods')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    event.recipes.gtceu.brewery('biomass_from_tfc_plants')             
-        .itemInputs('#tfc:plants')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    event.recipes.gtceu.brewery('biomass_from_tfc_corals')             
-        .itemInputs('#tfc:corals')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
 
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('tfg:smelting/fireclay_brick')
@@ -499,7 +311,7 @@ const registerGTCEURecipes = (event) => {
         D: 'gtceu:copper_single_cable'
     }).id('gtceu:shaped/multi_furnace')
 
-    // Multi-Smelter
+    // Electric Blast Furnace
     event.shaped('gtceu:electric_blast_furnace', [
         'AAA', 
         'BCB',

@@ -313,11 +313,3 @@ global.VANILLA_STONE_TYPES = [
     "granite",
     "tuff"
 ];
-
-/*
-[
-    
-    'minecraft:sand',
-    'minecraft:chest',
-    'minecraft:trapped_chest',
-];*/

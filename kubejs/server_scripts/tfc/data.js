@@ -3,12 +3,7 @@
 const registerTFCData = (event) => {
     registerAutoTFCItemHeats(event)
 
-    addItemHeat(
-        event, 
-        'compressed_coke_clay',
-        { item: 'gtceu:compressed_coke_clay' }, 
-        0.5
-    )
+    addItemHeat(event,  'compressed_coke_clay', { item: 'gtceu:compressed_coke_clay' }, 0.5)
 }
 
 const registerAutoTFCItemHeats = (event) => {
