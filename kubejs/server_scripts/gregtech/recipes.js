@@ -352,4 +352,10 @@ const registerGTCEURecipes = (event) => {
         .itemOutputs('4x gtceu:red_steel_ingot', '4x gtceu:blue_steel_ingot')
         .duration(448)
         .EUt(8)
+
+    // Фикс выработки пара на ведре лавы
+    event.remove({ id: 'minecraft:large_boiler/lava_bucket' })
+    event.recipes.gtceu.large_boiler('lava_bucket')             
+        .itemInputs('minecraft:lava_bucket')
+        .duration(25)
 }
