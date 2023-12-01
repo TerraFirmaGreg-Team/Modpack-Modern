@@ -10,6 +10,16 @@
 - Повсеместное улучшение читабильности кода.
 - Добавлено несколько рецептов для дробилки тфк, так как некоторые отсутствовали (связано с порошком).
 - Изменен рецепт LV Machine Casing, теперь он использует пластины красной и синей стали.
+### Update mods
+- TerraFirmaGreg 0.0.12 -> 0.0.13
+- Cucumber 7.0.4 -> 7.0.6
+- ResourcefulLib 2.1.16 -> 2.1.18
+- Blur 3.1.0 -> 3.1.1
+- XaeroMinimap 23.8.4 -> 23.9.0
+- XaeroWorldMap 1.36.0 -> 1.37.0
+- Ae2WT 15.1.4 -> 15.1.5
+- FTBQuestsOptimizer 1.1.3 -> 1.1.4
+- Curios 5.4.3 -> 5.4.4
 
 ## [0.1.1] - 2023-11-29
 ### Fixes
@@ -28,16 +38,17 @@
 - Исправлен баг, когда можно было сделать некоторые нежелательные рецепты из AdAstra.
 - Возвращены рецепты MCW AIO, да они кривые, но я не буду за автора делать всю работу, пусть фиксит свой говно-мод.
 - Исправлен рецепт доменной печи тфк.
+### New mods
+- exposure
 ### Update mods
-- TerraFirmaGreg 0.0.12 -> 0.0.13
-- Cucumber 7.0.4 -> 7.0.6
-- ResourcefulLib 2.1.16 -> 2.1.18
-- Blur 3.1.0 -> 3.1.1
-- XaeroMinimap 23.8.4 -> 23.9.0
-- XaeroWorldMap 1.36.0 -> 1.37.0
-- Ae2WT 15.1.4 -> 15.1.5
-- FTBQuestsOptimizer 1.1.3 -> 1.1.4
-- Curios 5.4.3 -> 5.4.4
+- customSkinLoader -> 14.18.3
+- corpse -> 1.0.9
+- Placebo -> 8.6.0
+- XaeroMinimap -> 23.9.1
+- XaeroWorldMap -> 1.37.1
+- Curios -> 5.4.5
+- sophisticatedbackpacks -> 3.19.1.962
+- sophisticatedcore -> 0.5.108.504
 
 ## [0.1.0] - 2023-11-27
 ### Fixes
