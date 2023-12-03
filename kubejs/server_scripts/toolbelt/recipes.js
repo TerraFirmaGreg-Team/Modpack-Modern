@@ -28,44 +28,44 @@ const registerToolBeltRecipes = (event) => {
     })
 
     // ToolBelt с размером 3
-    event.shapeless(Item.of('toolbelt:belt', '{Size:3}'), [
-        Item.of('toolbelt:belt', '{Size:2}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:3}).strongNBT(), [
+        Item.of('toolbelt:belt', {}).strongNBT(),
         'toolbelt:pouch'
     ])
 
     // ToolBelt с размером 4
-    event.shapeless(Item.of('toolbelt:belt', '{Size:4}'), [
-        Item.of('toolbelt:belt', '{Size:3}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:4}).strongNBT(), [
+        Item.of('toolbelt:belt', {Size:3}).strongNBT(),
         'toolbelt:pouch'
     ])
 
     // ToolBelt с размером 5
-    event.shapeless(Item.of('toolbelt:belt', '{Size:5}'), [
-        Item.of('toolbelt:belt', '{Size:4}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:5}).strongNBT(), [
+        Item.of('toolbelt:belt', {Size:4}).strongNBT(),
         'toolbelt:pouch'
     ])
 
     // ToolBelt с размером 6
-    event.shapeless(Item.of('toolbelt:belt', '{Size:6}'), [
-        Item.of('toolbelt:belt', '{Size:5}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:6}).strongNBT(), [
+        Item.of('toolbelt:belt', {Size:5}).strongNBT(),
         'toolbelt:pouch'
     ])
 
     // ToolBelt с размером 7
-    event.shapeless(Item.of('toolbelt:belt', '{Size:7}'), [
-        Item.of('toolbelt:belt', '{Size:6}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:7}).strongNBT(), [
+        Item.of('toolbelt:belt', {Size:6}).strongNBT(),
         'toolbelt:pouch'
     ])
 
     // ToolBelt с размером 8
-    event.shapeless(Item.of('toolbelt:belt', '{Size:8}'), [
-        Item.of('toolbelt:belt', '{Size:7}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:8}).strongNBT(), [
+        Item.of('toolbelt:belt', {Size:7}).strongNBT(),
         'toolbelt:pouch'
     ])
 
     // ToolBelt с размером 9
-    event.shapeless(Item.of('toolbelt:belt', '{Size:9}'), [
-        Item.of('toolbelt:belt', '{Size:8}'),
+    event.shapeless(Item.of('toolbelt:belt', {Size:9}).strongNBT(), [
+        Item.of('toolbelt:belt', {Size:8}).strongNBT(),
         'toolbelt:pouch'
     ])
 }
