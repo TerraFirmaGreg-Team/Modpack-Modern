@@ -118,6 +118,11 @@ worldgen:
     # Default: 512 (requires restarting the server / re-opening the world)
     oreGenerationChunkCacheSize: 512
 
+    # Sets the maximum number of chunks for which ore indicators may be cached.
+    # If you register any custom veins with very large indicator ranges (or modify existing ones that way), you may need to increase this value.
+    # Default: 2048 (requires restarting the server / re-opening the world)
+    oreIndicatorChunkCacheSize: 2048
+
 machines:
   # Whether insufficient energy supply should reset Machine recipe progress to zero.
   # If true, progress will reset.
@@ -200,6 +205,10 @@ machines:
   # Other mods can override this to true, regardless of the config file.
   # Default: false
   highTierContent: false
+
+  # Whether search for recipes asynchronously.
+  #  Default: true
+  asyncRecipeSearching: true
 
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.

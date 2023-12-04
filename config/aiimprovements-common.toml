@@ -1,0 +1,123 @@
+
+#Entity Settings
+[entity]
+
+	#General
+	[entity.general]
+		#Allow AI tasks to be removed from entities at runtime. If this is disable no per mob or per mob type removes will run.
+		allow_remove_calls = true
+		#Allows repeat remove calls to bubble to the top of the list to improve performance of repeat mob spawning.
+		enable_call_bubbling = true
+
+	#Entity Mob
+	[entity.mob]
+
+		#Remove Look Goal
+		[entity.mob.remove_look_goal]
+			#Remove the look at goal (player or attack target) AI task. This will cause AIs to not face targets or walking directions.
+			remove_look_goal = false
+			#Set this to true to apply this setting to all mobs on the filter list. Set this to false to NOT apply this to mobs on the filter list.
+			is_allowlist = false
+			#The list of mobs that is affected by this setting according to is_allowlist
+			filter_list = []
+
+		#Remove Look Random
+		[entity.mob.remove_look_random]
+			#Remove the look at random position AI task. This will cause AIs to feel a little lifeless as they do not animate head movement while idle.
+			remove_look_random = false
+			#Set this to true to apply this setting to all mobs on the filter list. Set this to false to NOT apply this to mobs on the filter list.
+			is_allowlist = false
+			#The list of mobs that is affected by this setting according to is_allowlist
+			filter_list = []
+
+		#Replace Look Controller
+		[entity.mob.replace_look_controller]
+			#Replaces the default look controller with a version featuring cached tan math improving performance. Only works on vanilla style mobs, if a mod overrides the look controller it will skip.
+			replace_look_controller = true
+			#Set this to true to apply this setting to all mobs on the filter list. Set this to false to NOT apply this to mobs on the filter list.
+			is_allowlist = false
+			#The list of mobs that is affected by this setting according to is_allowlist
+			filter_list = []
+
+	#Entity Fish
+	[entity.fish]
+		#Remove the fish's random swimming pathfinder. This will cause fish to stay in position more often.
+		remove_swim = false
+		#Remove the fish's panic pathfinder. This will cause fish to not run away.
+		remove_panic = false
+		#Remove the fish's AI task to avoid players.
+		remove_avoid_player = false
+		#Remove the fish's AI task to follow a leader fish to act as a group of fish.
+		remove_follow_leader = false
+		#Remove the fish's AI task to puff up when entities are nearby
+		remove_puff = false
+
+	#Squid Fish
+	[entity.squid]
+		#Remove the squid's flee pathfinder. This will cause squid to not run away.
+		remove_flee = false
+		#Remove the squid's random movement pathfinder. This will cause squid to swim around randomly.
+		remove_random_move = false
+
+	#Cow
+	[entity.cow]
+		#Remove the cow's float AI task. This causes cows to no longer swim in water.
+		remove_float = false
+		#Remove the cow's panic AI task. This causes cows to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the cow's breed AI task. This causes cows to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the cow's tempt AI task. This causes cows to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the cow's follow parent AI task. This causes baby cows to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the cow's random stroll AI task. This causes cows to no longer walk around randomly.
+		remove_stroll = false
+
+	#Chicken
+	[entity.chicken]
+		#Remove the chicken's float AI task. This causes chickens to no longer swim in water.
+		remove_float = false
+		#Remove the chicken's panic AI task. This causes chickens to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the chicken's breed AI task. This causes chickens to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the chicken's tempt AI task. This causes chickens to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the chicken's follow parent AI task. This causes baby chickens to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the chicken's random stroll AI task. This causes chickens to no longer walk around randomly.
+		remove_stroll = false
+
+	#Pig
+	[entity.pig]
+		#Remove the pig's float AI task. This causes pigs to no longer swim in water.
+		remove_float = false
+		#Remove the pig's panic AI task. This causes pigs to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the pig's breed AI task. This causes pigs to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the pig's tempt AI task. This causes pigs to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the pig's follow parent AI task. This causes baby pigs to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the pig's random stroll AI task. This causes pigs to no longer walk around randomly.
+		remove_stroll = false
+
+	#Sheep
+	[entity.sheep]
+		#Remove the sheep's float AI task. This causes sheep to no longer swim in water.
+		remove_float = false
+		#Remove the sheep's panic AI task. This causes sheep to no longer run around after being hit, or search water to extinguish themselves.
+		remove_panic = false
+		#Remove the sheep's breed AI task. This causes sheep to be unable to breed to create offspring.
+		remove_breed = false
+		#Remove the sheep's tempt AI task. This causes sheep to no longer follow the player if they're holding an item they like.
+		remove_tempt = false
+		#Remove the sheep's follow parent AI task. This causes baby sheep to no longer follow their parents.
+		remove_follow_parent = false
+		#Remove the sheep's random stroll AI task. This causes sheep to no longer walk around randomly.
+		remove_stroll = false
+		#Remove the sheep's eat block AI task. This causes sheep to no longer eat grass, and thus be unable to regenerate their wool.
+		remove_eat_block = false
+

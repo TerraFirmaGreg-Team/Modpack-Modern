@@ -66,6 +66,20 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "firmalife": {
+    "oven_top": true,
+    "solar_drier": true,
+    "string": true,
+    "vat": true,
+    "oven_bottom": true,
+    "fruit_tree_sapling": true,
+    "jarbnet": true,
+    "drying_mat": true,
+    "tumbler": true,
+    "hanger": true,
+    "cheese": true,
+    "shelf": true
+  },
   "tfc": {
     "bloomery": true,
     "nest_box": true,
