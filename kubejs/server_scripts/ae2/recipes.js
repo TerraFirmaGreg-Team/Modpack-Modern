@@ -3,7 +3,7 @@
 const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
-    //event.remove({ mod: 'ae2' });
+    event.remove({ mod: 'ae2' });
 
     // crafting Table
     // network tool
@@ -143,7 +143,7 @@ const registerAE2Recipes = (event) => {
 	// Light Detecting Fixture
 	event.shapeless(('ae2:light_detector'), 
 	[
-        'ae2:certus_quartz_crystal', 
+        'gtceu:certus_quartz_gem', 
         '#forge:rods/iron'
     ])
 	
@@ -495,16 +495,221 @@ const registerAE2Recipes = (event) => {
     });
     //color applicator
     event.shaped('ae2:color_applicator',[
-        'AB',
-        'BC ',
-        '  D'
+        'ABA',
+        'CDC',
+        ' E '
     ], {
-        A: 'ae2:formation_core',
-        B: '#forge:plates/steel',
+        A: '#forge:wires/single/aluminium',
+        B: 'ae2:formation_core',
         C: 'ae2:cell_component_4k',
-        D: 'ae2:dense_energy_cell'
+        D: 'ae2:dense_energy_cell',
+        E: '#forge:rods/steel',
     });
+    //decoration blocks(stonecutter+crafting+smelting)
+    //blocks
+    event.shaped('4x ae2:cut_quartz_block',[
+        'AA',
+        'AA',
+    ], {
+        A: 'ae2:quartz_block'
+    });
+    event.stonecutting('ae2:cut_quartz_block', 'ae2:quartz_block');
 
+    event.smelting('ae2:smooth_quartz_block', 'ae2:cut_quartz_block');
+
+    event.shaped('4x ae2:quartz_bricks',[
+        'AA',
+        'AA',
+    ], {
+        A: 'ae2:cut_quartz_block'
+    });
+    event.stonecutting('ae2:quartz_bricks', 'ae2:cut_quartz_block');
+
+    event.shaped('2x ae2:quartz_pillar',[
+        'A',
+        'A',
+    ], {
+        A: 'ae2:cut_quartz_block'
+    });
+    event.stonecutting('ae2:quartz_pillar', 'ae2:cut_quartz_block');
+
+    event.shaped('ae2:chiseled_quartz_block',[
+        'A',
+        'A',
+    ], {
+        A: 'ae2:cut_quartz_slab'
+    });
+    event.stonecutting('ae2:chiseled_quartz_block', 'ae2:cut_quartz_block');
+
+    //stairs
+    event.shaped('4x ae2:quartz_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:quartz_block'
+    });
+    event.stonecutting('ae2:quartz_stairs', 'ae2:quartz_block');
+
+    event.shaped('4x ae2:cut_quartz_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:cut_quartz_block'
+    });
+    event.stonecutting('ae2:cut_quartz_stairs', 'ae2:cut_quartz_block');
+ 
+    event.shaped('4x ae2:smooth_quartz_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:smooth_quartz_block'
+    });
+    event.stonecutting('ae2:smooth_quartz_stairs', 'ae2:smooth_quartz_block');
+
+    event.shaped('4x ae2:quartz_brick_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:quartz_bricks'
+    });
+    event.stonecutting('ae2:quartz_brick_stairs', 'ae2:quartz_bricks');
+
+    event.shaped('4x ae2:chiseled_quartz_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:quartz_pillar'
+    });
+    event.stonecutting('ae2:chiseled_quartz_stairs', 'ae2:quartz_pillar');
+
+    event.shaped('4x ae2:quartz_pillar_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:chiseled_quartz_block'
+    });
+    event.stonecutting('ae2:quartz_pillar_stairs', 'ae2:chiseled_quartz_block');
+
+    event.shaped('4x ae2:fluix_stairs',[
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'ae2:fluix_block'
+    });
+    event.stonecutting('ae2:fluix_stairs', 'ae2:fluix_block');
+    
+    //walls
+    event.shaped('6x ae2:quartz_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:quartz_block'
+    });
+    event.stonecutting('ae2:quartz_wall', 'ae2:quartz_block');
+
+    event.shaped('6x ae2:cut_quartz_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:cut_quartz_block'
+    });
+    event.stonecutting('ae2:cut_quartz_wall', 'ae2:cut_quartz_block');
+ 
+    event.shaped('6x ae2:smooth_quartz_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:smooth_quartz_block'
+    });
+    event.stonecutting('ae2:smooth_quartz_wall', 'ae2:smooth_quartz_block');
+
+    event.shaped('6x ae2:quartz_brick_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:quartz_bricks'
+    });
+    event.stonecutting('ae2:quartz_brick_wall', 'ae2:quartz_bricks');
+
+    event.shaped('6x ae2:chiseled_quartz_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:quartz_pillar'
+    });
+    event.stonecutting('ae2:chiseled_quartz_wall', 'ae2:quartz_pillar');
+
+    event.shaped('6x ae2:quartz_pillar_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:chiseled_quartz_block'
+    });
+    event.stonecutting('ae2:quartz_pillar_wall', 'ae2:chiseled_quartz_block');
+
+    event.shaped('6x ae2:fluix_wall',[
+        'AAA',
+        'AAA',
+    ], {
+        A: 'ae2:fluix_block'
+    });
+    event.stonecutting('ae2:fluix_wall', 'ae2:fluix_block');
+    //slabs
+    event.shaped('6x ae2:quartz_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:quartz_block'
+    });
+    event.stonecutting('2x ae2:quartz_slab', 'ae2:quartz_block');
+
+    event.shaped('6x ae2:cut_quartz_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:cut_quartz_block'
+    });
+    event.stonecutting('2x ae2:cut_quartz_slab', 'ae2:cut_quartz_block');
+ 
+    event.shaped('6x ae2:smooth_quartz_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:smooth_quartz_block'
+    });
+    event.stonecutting('2x ae2:smooth_quartz_slab', 'ae2:smooth_quartz_block');
+
+    event.shaped('6x ae2:quartz_brick_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:quartz_bricks'
+    });
+    event.stonecutting('2x ae2:quartz_brick_slab', 'ae2:quartz_bricks');
+
+    event.shaped('6x ae2:chiseled_quartz_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:quartz_pillar'
+    });
+    event.stonecutting('2x ae2:chiseled_quartz_slab', 'ae2:quartz_pillar');
+
+    event.shaped('6x ae2:quartz_pillar_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:chiseled_quartz_block'
+    });
+    event.stonecutting('2x ae2:quartz_pillar_slab', 'ae2:chiseled_quartz_block');
+
+    event.shaped('6x ae2:fluix_slab',[
+        'AAA',
+    ], {
+        A: 'ae2:fluix_block'
+    });
+    event.stonecutting('2x ae2:fluix_slab', 'ae2:fluix_block');
 
     //assembler 
     //glass cable
@@ -1590,7 +1795,7 @@ const registerAE2Recipes = (event) => {
     //greg dye
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALL[i]+'gtceudye')
-            .itemInputs('8x ae2:matter_ball')
+            .itemInputs('ae2:matter_ball')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 36))
             .itemOutputs(global.AE2_PAINTBALL[i])
             .duration(20)
@@ -1599,7 +1804,7 @@ const registerAE2Recipes = (event) => {
     //tfc dye
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALL[i]+'tfcdye')
-            .itemInputs('8x ae2:matter_ball')
+            .itemInputs('ae2:matter_ball')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 125))
             .itemOutputs(global.AE2_PAINTBALL[i])
             .duration(20)
@@ -1607,20 +1812,10 @@ const registerAE2Recipes = (event) => {
     };
 
     //lumen paint ball
-    //greg dye
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALL[i]+'gtceudye')
-            .itemInputs('8x ae2:matter_ball')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 36))
-            .itemOutputs(global.AE2_LUMEN_PAINTBALL[i])
-            .duration(20)
-            .EUt(7)
-    };
-    //tfc dye
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALL[i]+'tfcdye')
-            .itemInputs('8x ae2:matter_ball')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 125))
+            .itemInputs(global.AE2_PAINTBALL[i])
+            .inputFluids(Fluid.of('gtceu:glowstone', 125))
             .itemOutputs(global.AE2_LUMEN_PAINTBALL[i])
             .duration(20)
             .EUt(7)
@@ -1740,7 +1935,7 @@ const registerAE2Recipes = (event) => {
     //quartz block
     event.recipes.gtceu.compressor('ae2:quartz_block')
         .itemInputs(
-            '9x gtceu:certus_quartz_gem')
+            '4x gtceu:certus_quartz_gem')
         .itemOutputs(
             'ae2:quartz_block')
         .duration(300)
