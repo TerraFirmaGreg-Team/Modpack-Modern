@@ -22,6 +22,8 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:fluix_pickaxe',
     'ae2:entropy_manipulator',
     'ae2:charged_staff',
+    '#ae2:knife',
+    'ae2:name_press',
     //budding
     '#forge:buds',
     'ae2:flawless_budding_quartz',
@@ -61,6 +63,7 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:charger',
     'ae2:spatial_anchor',
     'ae2:inscriber',
+    'ae2:growth_accelerator',
     //dust
     'ae2:silicon',
     'ae2:certus_quartz_dust',
@@ -170,45 +173,43 @@ global.AE2_SMART_DENSE_CABLE = [
     'ae2:black_smart_dense_cable',
 ]
 
-/*
+
 // Paint ball
-global.AE2_paintBalls = [
-    item('appliedenergistics2:paint_ball'),
-    item('appliedenergistics2:paint_ball', 1),
-    item('appliedenergistics2:paint_ball', 2),
-    item('appliedenergistics2:paint_ball', 3),
-    item('appliedenergistics2:paint_ball', 4),
-    item('appliedenergistics2:paint_ball', 5),
-    item('appliedenergistics2:paint_ball', 6),
-    item('appliedenergistics2:paint_ball', 7),
-    item('appliedenergistics2:paint_ball', 8),
-    item('appliedenergistics2:paint_ball', 9),
-    item('appliedenergistics2:paint_ball', 10),
-    item('appliedenergistics2:paint_ball', 11),
-    item('appliedenergistics2:paint_ball', 12),
-    item('appliedenergistics2:paint_ball', 13),
-    item('appliedenergistics2:paint_ball', 14),
-    item('appliedenergistics2:paint_ball', 15)
+global.AE2_PAINTBALL = [
+    'ae2:white_paint_ball',
+    'ae2:orange_paint_ball',
+    'ae2:magenta_paint_ball',
+    'ae2:light_blue_paint_ball',
+    'ae2:yellow_paint_ball',
+    'ae2:lime_paint_ball',
+    'ae2:pink_paint_ball',
+    'ae2:gray_paint_ball',
+    'ae2:light_gray_paint_ball',
+    'ae2:cyan_paint_ball',
+    'ae2:purple_paint_ball',
+    'ae2:blue_paint_ball',
+    'ae2:brown_paint_ball',
+    'ae2:green_paint_ball',
+    'ae2:red_paint_ball',
+    'ae2:black_paint_ball',
 ]
-
 // Lumen paint ball
-global.AE2_paintBallsLumen = [
-    item('appliedenergistics2:paint_ball', 20),
-    item('appliedenergistics2:paint_ball', 21),
-    item('appliedenergistics2:paint_ball', 22),
-    item('appliedenergistics2:paint_ball', 23),
-    item('appliedenergistics2:paint_ball', 24),
-    item('appliedenergistics2:paint_ball', 25),
-    item('appliedenergistics2:paint_ball', 26),
-    item('appliedenergistics2:paint_ball', 27),
-    item('appliedenergistics2:paint_ball', 28),
-    item('appliedenergistics2:paint_ball', 29),
-    item('appliedenergistics2:paint_ball', 30),
-    item('appliedenergistics2:paint_ball', 31),
-    item('appliedenergistics2:paint_ball', 32),
-    item('appliedenergistics2:paint_ball', 33),
-    item('appliedenergistics2:paint_ball', 34),
-    item('appliedenergistics2:paint_ball', 35)
+global.AE2_LUMEN_PAINTBALL = [
+    'ae2:white_lumen_paint_ball',
+    'ae2:orange_lumen_paint_ball',
+    'ae2:magenta_lumen_paint_ball',
+    'ae2:light_blue_lumen_paint_ball',
+    'ae2:yellow_lumen_paint_ball',
+    'ae2:lime_lumen_paint_ball',
+    'ae2:pink_lumen_paint_ball',
+    'ae2:gray_lumen_paint_ball',
+    'ae2:light_gray_lumen_paint_ball',
+    'ae2:cyan_lumen_paint_ball',
+    'ae2:purple_lumen_paint_ball',
+    'ae2:blue_lumen_paint_ball',
+    'ae2:brown_lumen_paint_ball',
+    'ae2:green_lumen_paint_ball',
+    'ae2:red_lumen_paint_ball',
+    'ae2:black_lumen_paint_ball',
 ]
 
-*/
