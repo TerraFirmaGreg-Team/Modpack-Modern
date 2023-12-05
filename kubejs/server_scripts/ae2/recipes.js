@@ -3129,6 +3129,7 @@ const registerAE2Recipes = (event) => {
         .EUt(2)
        
     //extruder
+    //cable anchor
     event.recipes.gtceu.extruder('ae2:cable_anchor')
         .itemInputs(
             '#forge:plates/steel')
@@ -3138,7 +3139,37 @@ const registerAE2Recipes = (event) => {
             '8x ae2:cable_anchor')
 	    .duration(15)
         .EUt(120)
-
-        
+    
+    //assembly line
+    //quantum ring
+    event.recipes.gtceu.assembly_line('ae2:quantum_ring')
+        .itemInputs(
+            '4x #forge:batteries/hv',
+            '12x #forge:circuits/iv',
+            '16x gtceu:iv_emitter',
+            '8x ae2:engineering_processor',
+            '14x gtceu:iv_sensor',
+            '2x ae2:dense_energy_cell',
+            'ae2:logic_processor',)
+        .inputFluids(Fluid.of('gtceu:titanium', 1440))
+	    .itemOutputs(
+            'ae2:quantum_ring')
+	    .duration(900)
+        .EUt(8300)
+        .cleanroom(CleanroomType.CLEANROOM)
+    //quantom link chamber
+    event.recipes.gtceu.assembly_line('ae2:quantum_link')
+        .itemInputs(
+            '8x ae2:fluix_pearl',
+            '6x ae2:quartz_vibrant_glass',
+            '8x ae2:engineering_processor',
+            '14x gtceu:iv_sensor',
+            '2x ae2:dense_energy_cell')
+        .inputFluids(Fluid.of('gtceu:titanium', 1088))
+	    .itemOutputs(
+            'ae2:quantum_link')
+	    .duration(700)
+        .EUt(8300)
+        .cleanroom(CleanroomType.CLEANROOM)
 }
 
