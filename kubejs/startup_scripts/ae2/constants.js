@@ -1,6 +1,7 @@
 // priority: 199
 
 global.AE2_DISABLED_ITEMS = [
+    //инструменты
     'ae2:certus_quartz_sword',
     'ae2:nether_quartz_sword',
     'ae2:fluix_sword',
@@ -19,6 +20,54 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:certus_quartz_pickaxe',
     'ae2:nether_quartz_pickaxe',
     'ae2:fluix_pickaxe',
+    'ae2:entropy_manipulator',
+    'ae2:charged_staff',
+    //budding
+    '#forge:buds',
+    'ae2:flawless_budding_quartz',
+    'ae2:flawed_budding_quartz',
+    'ae2:chipped_budding_quartz',
+    'ae2:damaged_budding_quartz',
+    'ae2:quartz_cluster',
+    //sky stone
+    'ae2:sky_stone_block',
+    'ae2:smooth_sky_stone_block',
+    'ae2:sky_stone_brick',
+    'ae2:sky_stone_small_brick',
+    'ae2:sky_stone_chest',
+    'ae2:smooth_sky_stone_chest',
+    'ae2:sky_stone_tank',
+    'ae2:mysterious_cube',
+    'ae2:not_so_mysterious_cube',
+    'ae2:sky_stone_stairs',
+    'ae2:smooth_sky_stone_stairs',
+    'ae2:sky_stone_brick_stairs',
+    'ae2:sky_stone_small_brick_stairs',
+    'ae2:sky_stone_slab',
+    'ae2:smooth_sky_stone_slab',
+    'ae2:sky_stone_brick_slab',
+    'ae2:sky_stone_small_brick_slab',
+    'ae2:sky_stone_wall',
+    'ae2:smooth_sky_stone_wall',
+    'ae2:sky_stone_brick_wall',
+    'ae2:sky_stone_small_brick_wall',
+    //certus quartz crystal
+    'ae2:certus_quartz_crystal',
+    //compass
+    'ae2:meteorite_compass',
+    //blocks
+    'ae2:vibration_chamber',
+    'ae2:crank',
+    'ae2:charger',
+    'ae2:spatial_anchor',
+    'ae2:inscriber',
+    //dust
+    'ae2:silicon',
+    'ae2:certus_quartz_dust',
+    'ae2:sky_dust',
+    'ae2:ender_dust',
+    'ae2:certus_quartz_dust',
+    
 ];
 
 // Glass Cable
