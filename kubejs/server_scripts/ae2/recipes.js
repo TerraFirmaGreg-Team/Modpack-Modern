@@ -3,9 +3,14 @@
 const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
-    event.remove({ mod: 'ae2' });
+    //event.remove({ mod: 'ae2' });
 
     // crafting Table
+    // ae2:cable_anchor
+    event.shapeless(('ae2:cable_anchor'), [
+        '#forge:ingots', 
+        '#ae2:knife'
+    ])
     // network tool
     event.shaped('ae2:network_tool', [
         'AB',
@@ -412,13 +417,19 @@ const registerAE2Recipes = (event) => {
         B: '#forge:plates/stainless_steel',
         C: 'gtceu:lv_voltage_coil',
     });
+    event.shapeless('ae2:energy_acceptor', ['ae2:cable_energy_acceptor']);
+    event.shapeless('ae2:cable_energy_acceptor', ['ae2:energy_acceptor']);
+    //cable pattern provider
+    event.shapeless('ae2:pattern_provider', ['ae2:cable_pattern_provider']);
+    event.shapeless('ae2:cable_pattern_provider', ['ae2:pattern_provider']);
+
 
     // ME Annihilation Plane
     event.shaped('ae2:annihilation_plane', [
         'AAA',
         'CBC'
     ], {
-        A: '#forge:dusts/fluix',
+        A: '#forge:gems/fluix',
         B: 'ae2:annihilation_core',
         C: '#forge:plates/aluminium'
     });
@@ -428,7 +439,7 @@ const registerAE2Recipes = (event) => {
         'AAA',
         'CBC'
     ], {
-        A: '#forge:dusts/fluix',
+        A: '#forge:gems/fluix',
         B: 'ae2:formation_core',
         C: '#forge:plates/aluminium'
     });
@@ -1139,6 +1150,58 @@ const registerAE2Recipes = (event) => {
         .duration(200)
         .EUt(7480)
         .cleanroom(CleanroomType.CLEANROOM)
+        
+    // pattern_provider
+    // MV
+    event.recipes.gtceu.assembler('ae2:pattern_provider_mv')
+        .itemInputs(
+            'gtceu:mv_conveyor_module',
+            '2x #tfc:workbenches',
+            '4x #forge:plates/steel',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:pattern_provider')
+        .duration(200)
+        .EUt(120)
+    // HV
+    event.recipes.gtceu.assembler('ae2:pattern_provider_hv')
+        .itemInputs(
+            'gtceu:hv_conveyor_module',
+            '2x #tfc:workbenches',
+            '4x #forge:plates/aluminium',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('2x ae2:pattern_provider')
+        .duration(200)
+        .EUt(480)
+    // EV
+    event.recipes.gtceu.assembler('ae2:pattern_provider_ev')
+        .itemInputs(
+            'gtceu:ev_conveyor_module',
+            '2x #tfc:workbenches',
+            '4x #forge:plates/stainless_steel',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('4x ae2:pattern_provider')
+        .duration(200)
+        .EUt(1980)
+        .cleanroom(CleanroomType.CLEANROOM)
+    // IV
+    event.recipes.gtceu.assembler('ae2:pattern_provider_iv')
+        .itemInputs(
+            'gtceu:iv_conveyor_module',
+            '2x #tfc:workbenches',
+            '4x #forge:plates/titanium',
+            'ae2:annihilation_core',
+            'ae2:formation_core',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('8x ae2:pattern_provider')
+        .duration(200)
+        .EUt(7480)
+        .cleanroom(CleanroomType.CLEANROOM)
     
     //portable cell
     //item portable cell
@@ -1625,11 +1688,288 @@ const registerAE2Recipes = (event) => {
     // Charged Certus Quartz  
     event.recipes.gtceu.electrolyzer('ae2:charged_certus_quartz_crystal')
         .itemInputs(
-            '#forge:gems/certus_quartz')
+            'gtceu:certus_quartz_gem')
         .itemOutputs('ae2:charged_certus_quartz_crystal')
         .duration(20)
         .EUt(160)
-    
+
+    //compressor
+    //quartz block
+    event.recipes.gtceu.compressor('ae2:quartz_block')
+        .itemInputs(
+            '9x gtceu:certus_quartz_gem')
+        .itemOutputs(
+            'ae2:quartz_block')
+        .duration(300)
+        .EUt(2)
+    //fluix block
+    event.recipes.gtceu.compressor('ae2:fluix_block')
+        .itemInputs(
+            '9x #forge:gems/fluix')
+        .itemOutputs(
+            'ae2:fluix_block')
+        .duration(300)
+        .EUt(2)
+
+
+    //packer
+    //cells 
+    event.recipes.gtceu.packer('ae2:view_cell')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            '#forge:gems/certus_quartz')
+        .itemOutputs(
+            'ae2:view_cell')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_1k')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_1k')
+        .itemOutputs(
+            'ae2:item_storage_cell_1k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_4k')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_4k')
+        .itemOutputs(
+            'ae2:item_storage_cell_4k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_16k')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_16k')
+        .itemOutputs(
+            'ae2:item_storage_cell_16k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_64k')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_64k')
+        .itemOutputs(
+            'ae2:item_storage_cell_64k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_256k')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_256k')
+        .itemOutputs(
+            'ae2:item_storage_cell_256k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_1k')
+        .itemInputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_1k')
+        .itemOutputs(
+            'ae2:fluid_storage_cell_1k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_4k')
+        .itemInputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_4k')
+        .itemOutputs(
+            'ae2:fluid_storage_cell_4k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_16k')
+        .itemInputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_16k')
+        .itemOutputs(
+            'ae2:fluid_storage_cell_16k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_64k')
+        .itemInputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_64k')
+        .itemOutputs(
+            'ae2:fluid_storage_cell_64k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_256k')
+        .itemInputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_256k')
+        .itemOutputs(
+            'ae2:fluid_storage_cell_256k')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.packer('ae2:spatial_storage_cell_2')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:spatial_cell_component_2')
+        .itemOutputs(
+            'ae2:spatial_storage_cell_2')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:spatial_storage_cell_16')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:spatial_cell_component_16')
+        .itemOutputs(
+            'ae2:spatial_storage_cell_16')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+    event.recipes.gtceu.packer('ae2:spatial_storage_cell_128')
+        .itemInputs(
+            'ae2:item_cell_housing',
+            'ae2:spatial_cell_component_128')
+        .itemOutputs(
+            'ae2:spatial_storage_cell_128')
+        .duration(10)
+        .EUt(7)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.packer('ae2:view_cell_back')
+        .itemInputs(
+            'ae2:view_cell'
+            )
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            '#forge:gems/certus_quartz')
+        .duration(10)
+        .EUt(7)
+
+        event.recipes.gtceu.packer('ae2:item_storage_cell_1k_back')
+        .itemInputs(
+            'ae2:item_storage_cell_1k')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_1k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_4k_back')
+        .itemInputs(
+            'ae2:item_storage_cell_4k')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_4k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_16k_back')
+        .itemInputs(
+            'ae2:item_storage_cell_16k')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_16k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_64k_back')
+        .itemInputs(
+            'ae2:item_storage_cell_64k')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_64k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:item_storage_cell_256k_back')
+        .itemInputs(
+            'ae2:item_storage_cell_256k')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:cell_component_256k')
+        .duration(10)
+        .EUt(7)
+       
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_1k_back')
+        .itemInputs(
+            'ae2:fluid_storage_cell_1k')
+        .itemOutputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_1k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_4k_back')
+        .itemInputs(
+            'ae2:fluid_storage_cell_4k')
+        .itemOutputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_4k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_16k_back')
+        .itemInputs(
+            'ae2:fluid_storage_cell_16k')
+        .itemOutputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_16k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_64k_back')
+        .itemInputs(
+            'ae2:fluid_storage_cell_64k')
+        .itemOutputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_64k')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:fluid_storage_cell_256k_back')
+        .itemInputs(
+            'ae2:fluid_storage_cell_256k')
+        .itemOutputs(
+            'ae2:fluid_cell_housing',
+            'ae2:cell_component_256k')
+        .duration(10)
+        .EUt(7)
+       
+    event.recipes.gtceu.packer('ae2:spatial_storage_cell_2_back')
+        .itemInputs(
+            'ae2:spatial_storage_cell_2')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:spatial_cell_component_2')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:spatial_storage_cell_16_back')
+        .itemInputs(
+            'ae2:spatial_storage_cell_16')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:spatial_cell_component_16')
+        .duration(10)
+        .EUt(7)
+    event.recipes.gtceu.packer('ae2:spatial_storage_cell_128_back')
+        .itemInputs(
+            'ae2:spatial_storage_cell_128')
+        .itemOutputs(
+            'ae2:item_cell_housing',
+            'ae2:spatial_cell_component_128')
+        .duration(10)
+        .EUt(7)
+
+    //macerator
+    event.recipes.gtceu.macerator('ae2:fluix_dust')
+        .itemInputs(
+            '#forge:gems/fluix')
+        .itemOutputs(
+            'ae2:fluix_dust')
+        .duration(10)
+        .EUt(7)
+       
+
         
 }
 
