@@ -3,7 +3,7 @@
 const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
-    //event.remove({ mod: 'ae2' });
+    event.remove({ mod: 'ae2' });
 
     // crafting Table
     // network tool
@@ -2729,7 +2729,7 @@ const registerAE2Recipes = (event) => {
     //quartz block
     event.recipes.gtceu.compressor('ae2:quartz_block')
         .itemInputs(
-            '9x gtceu:certus_quartz_gem')
+            '4x gtceu:certus_quartz_gem')
         .itemOutputs(
             'ae2:quartz_block')
         .duration(300)
