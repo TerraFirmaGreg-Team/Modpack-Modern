@@ -1,18 +1,18 @@
-## What
-_This section describes what this PR is about. It should be a clear and concise description concerning what this PR is for, why this PR is needed, and why it should be accepted._
-_Linking an issue can be used alternatively to writing a description._
+## Что
+_В этом разделе описывается суть данного PR. Это должно быть четкое и краткое описание того, для чего предназначен этот PR, почему он необходим и почему его следует принять._
+_Связывание проблемы можно использовать вместо написания описания._
 
-## Implementation Details
-_Any implementations in this PR that should be carefully looked over, or that could/should have alternate solutions proposed._
+## Детали реализации
+_Любые реализации в этом PR, которые следует тщательно изучить или для которых могут/должны быть предложены альтернативные решения._
 
-## Outcome
-_A short description of what this PR added/fixed/changed/removed._
-_For correct linking of issues please use any of the Closes/Fixes/Resolves keywords. Example: When a PR is fixing a bug use "Fixes: #number-of-bug"_
+## Исход
+_Краткое описание того, что добавлено/исправлено/изменено/удалено в этом PR._
+_Для правильного связывания проблем используйте любое из ключевых слов Closes/Fixes/Resolves. Пример: когда PR исправляет ошибку, используйте «Исправления: #номер-ошибки»_.
 
-## Additional Information
-_This section is for screenshots, or any other additional information that reviewers should be aware of._
+## Дополнительная информация
+_Этот раздел предназначен для снимков экрана или любой другой дополнительной информации, о которой рецензенты должны знать._
 
-## Potential Compatibility Issues
-_This section is for defining possible compatibility issues._
+## Потенциальные проблемы совместимости
+_Этот раздел предназначен для определения возможных проблем совместимости._
 
-**Please fill in as much useful information as possible. Also, please remove all unused sections, including this and the other explanations.**
+**Пожалуйста, укажите как можно больше полезной информации. Также удалите все неиспользуемые разделы, включая это и другие пояснения.**
