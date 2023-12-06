@@ -7,6 +7,7 @@ ServerEvents.tags('item', event => {
     registerMinecraftItemTags(event)
     registerTFCItemTags(event)
     registerCreateTags(event)
+    registerAE2Tags(event)
 })
 
 /**
