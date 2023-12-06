@@ -5,6 +5,7 @@
  */
 StartupEvents.registry('item', (event) => {
     registerCreateItems(event);
+    registerAE2Items(event);
 })
 
 /**
@@ -12,4 +13,11 @@ StartupEvents.registry('item', (event) => {
  */
 StartupEvents.registry('block', (event) => {
     
+})
+
+/**
+ * Событие регистрации жидкостей.
+ */
+StartupEvents.registry('fluid', (event) => {
+    registerAE2Liquids(event);
 })

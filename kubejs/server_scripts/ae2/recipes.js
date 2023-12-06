@@ -722,6 +722,15 @@ const registerAE2Recipes = (event) => {
         .circuit(1)
         .duration(20)
         .EUt(480)
+    event.recipes.gtceu.assembler('fluix_glass_cable_fluixfluid')
+        .itemInputs(
+            '2x #forge:rods/aluminium',
+            '3x ae2:quartz_fiber',)
+        .inputFluids(Fluid.of('kubejs:fluix', 144))
+        .itemOutputs('ae2:fluix_glass_cable')
+        .circuit(1)
+        .duration(20)
+        .EUt(480)
 
     //covered cable
     event.recipes.gtceu.assembler('fluix_covered_cable_rubber')
@@ -1896,12 +1905,18 @@ const registerAE2Recipes = (event) => {
 
     //wiremill 
     // Quartz Fiber
-    event.recipes.gtceu.wiremill('ae2:quartz_fiber')
+    event.recipes.gtceu.wiremill('ae2:quartz_fiber_certus')
         .itemInputs(
-            '#forge:plates/certus_quartz')
+            '#forge:rods/certus_quartz')
         .itemOutputs('ae2:quartz_fiber')
-        .duration(20)
-        .EUt(480)
+        .duration(200)
+        .EUt(7)
+    event.recipes.gtceu.wiremill('ae2:quartz_fiber_nether')
+        .itemInputs(
+            '#forge:rods/nether_quartz')
+        .itemOutputs('ae2:quartz_fiber')
+        .duration(200)
+        .EUt(7)
 
 
     //alloy smelter
@@ -2377,5 +2392,28 @@ const registerAE2Recipes = (event) => {
 	    .duration(700)
         .EUt(8300)
         .cleanroom(CleanroomType.CLEANROOM)
+
+    //chemical reactor
+    event.recipes.gtceu.chemical_reactor('ae2:fluix_pearl')
+        .itemInputs(
+            '4x #forge:gems/fluix')
+        .inputFluids(Fluid.of('kubejs:fluix', 576))
+	    .itemOutputs(
+            'ae2:fluix_pearl')
+	    .duration(200)
+        .EUt(480)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    //lathe
+    //certus quartz rod
+    event.recipes.gtceu.lathe('kubejs:certus_quartz_to_rod')
+        .itemInputs(
+            'gtceu:certus_quartz_gem')
+	    .itemOutputs(
+            '2x kubejs:rods/certus_quartz')
+	    .duration(40)
+        .EUt(16)
+
+
 }
 
