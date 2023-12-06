@@ -347,14 +347,14 @@ const registerMinecraftRecipes = (event) => {
 
     // TripWire Hook
     event.shapeless('minecraft:tripwire_hook', [
-        '#forge:rods/wooden',
+        '#forge:rods/wood',
         '#forge:rings/wrought_iron',
         '#forge:springs/small'
     ]).id('tfg:recipes/tripwire_hook')
 
     event.recipes.gtceu.assembler('tfg/tripwire_hook')             
         .itemInputs(
-            '#forge:rods/wooden',
+            '#forge:rods/wood',
             '#forge:rings/wrought_iron',
             '#forge:springs/small'
             )
@@ -365,7 +365,7 @@ const registerMinecraftRecipes = (event) => {
     // ItemFrame
     event.recipes.gtceu.assembler('item_frame')             
         .itemInputs(
-            '8x #forge:rods/wooden',
+            '8x #forge:rods/wood',
             'minecraft:leather'
             )
         .itemOutputs('2x minecraft:item_frame')
@@ -400,7 +400,7 @@ const registerMinecraftRecipes = (event) => {
     event.recipes.gtceu.assembler('painting')             
         .itemInputs(
             '#tfc:high_quality_cloth',
-            '8x #forge:rods/wooden'
+            '8x #forge:rods/wood'
         )
     .itemOutputs('2x minecraft:painting')
     .circuit(1)
