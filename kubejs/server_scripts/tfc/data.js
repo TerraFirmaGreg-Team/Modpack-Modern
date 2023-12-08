@@ -120,4 +120,3 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:phosphorus_small_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
 }
-

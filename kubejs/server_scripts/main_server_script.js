@@ -24,11 +24,19 @@ ServerEvents.tags('fluid', event => {
 })
 
 /**
+ * Событие регистрации установки структур.
+ */
+ServerEvents.tags('worldgen/placed_feature', event => {
+    registerTFCPlacedFeatures(event)
+    registerFirmaLifePlacedFeatures(event)
+})
+
+/**
  * Здесь регистрируются файлы датапаков общие.
  * Срабатывает до инициализации рецептов.
  */
 ServerEvents.highPriorityData(event => {
-    //registerTFCDataPacks(event)
+    // registerTFCDataPacks(event)
 })
 
 /**
@@ -66,3 +74,5 @@ ServerEvents.recipes(event => {
 LootJS.modifiers((event) => {
     //modifyLootGT(event)
 });
+
+

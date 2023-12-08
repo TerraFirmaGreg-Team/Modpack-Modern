@@ -146,16 +146,7 @@
 				""
 				"&9-&r A little bit of Math is required to get the expected results."
 			]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "minecraft:barrier"
-			}
+			icon: "minecraft:barrier"
 			id: "33F0EA149F3705CF"
 			size: 0.76d
 			tasks: [{
