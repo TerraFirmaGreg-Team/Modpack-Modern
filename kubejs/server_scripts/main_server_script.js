@@ -6,7 +6,7 @@
 ServerEvents.tags('item', event => {
     //registerMinecraftItemTags(event)
     registerTFCItemTags(event)
-    //registerCreateTags(event)
+    //registerCreateItemTags(event)
 })
 
 /**
@@ -24,7 +24,7 @@ ServerEvents.tags('fluid', event => {
 })
 
 /**
- * Событие регистрации установки структур.
+ * Событие регистрации генератора структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
     registerTFCPlacedFeatures(event)
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
  * Событие модификации лута.
  */
 LootJS.modifiers((event) => {
-    //modifyLootGT(event)
+    modifyLootGT(event)
 });
 
 

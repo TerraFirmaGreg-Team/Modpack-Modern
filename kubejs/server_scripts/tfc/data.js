@@ -25,8 +25,6 @@ const registerTFCData = (event) => {
     )
  */
 const registerTFCMetals = (event) => {
-    
-    // TFC
     event.metal('gtceu:tin', 230, 0.02143, null, null, null, 1)
     event.metal('gtceu:bismuth', 270, 0.02143, null, null, null, 1)
     event.metal('gtceu:zinc', 420, 0.01429, null, null, null, 1)
@@ -50,11 +48,6 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:black_steel', 1485, 0.00857, null, null, null, 5)
     event.metal('gtceu:blue_steel', 1540, 0.00857, null, null, null, 6)
     event.metal('gtceu:red_steel', 1540, 0.00857, null, null, null, 6)
-
-    // FirmaLife
-    
-    // Stainless Steel ? what
-    // Chromite ? what
 }
 
 /**
