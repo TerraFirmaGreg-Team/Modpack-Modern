@@ -1,6 +1,7 @@
 // priority: 1
 
 REIEvents.hide('item', event => {
+    /*
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideGTCEUStuff(event)
@@ -9,20 +10,20 @@ REIEvents.hide('item', event => {
     hideAdAstraStuff(event)
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)
-    hideSmallShipsStuff(event)
+    hideSmallShipsStuff(event)*/
 })
 
 REIEvents.groupEntries(event => {
-    groupGTCEUStuff(event)
-    groupTFCStuff(event)
+    //groupGTCEUStuff(event)
+    //groupTFCStuff(event)
 })
 
 REIEvents.removeCategories(event => {
-    registerGTCEUCategories(event)
-    registerMoreRedCategories(event)
+    //registerGTCEUCategories(event)
+    //registerMoreRedCategories(event)
 })
 
 REIEvents.hide('fluid', event => {
-    hideTFCFluids(event)
+    //hideTFCFluids(event)
 })
 
