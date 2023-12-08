@@ -4,9 +4,9 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    registerMinecraftItemTags(event)
+    //registerMinecraftItemTags(event)
     registerTFCItemTags(event)
-    registerCreateTags(event)
+    //registerCreateTags(event)
 })
 
 /**
@@ -24,10 +24,18 @@ ServerEvents.tags('fluid', event => {
 })
 
 /**
- * Здесь регистрируются файлы датапаков (json).
+ * Здесь регистрируются файлы датапаков общие.
  * Срабатывает до инициализации рецептов.
  */
 ServerEvents.highPriorityData(event => {
+    //registerTFCDataPacks(event)
+})
+
+/**
+ * Здесь регистрируются файлы датапаков TFC.
+ * Срабатывает до инициализации рецептов.
+ */
+TFCEvents.data(event => {
     registerTFCData(event)
 })
 
@@ -36,6 +44,7 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
+    /*
     registerMinecraftRecipes(event)
     registerTFCRecipes(event)
     registerGTCEURecipes(event)
@@ -48,12 +57,12 @@ ServerEvents.recipes(event => {
     registerSophisticatedBackpacksRecipes(event)
     registerSmallShipsRecipes(event)
     registerExtendedCraftingRecipes(event)
-    registerToolBeltRecipes(event)
+    registerToolBeltRecipes(event)*/
 })
 
 /**
  * Событие модификации лута.
  */
 LootJS.modifiers((event) => {
-    modifyLootGT(event)
+    //modifyLootGT(event)
 });

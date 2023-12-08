@@ -1,17 +1,29 @@
 // priority: 0
 
 const registerTFCItemTags = (event) => {
+    
+    /*
+    // Удаление тегов у откоюченных предметов
     global.TFC_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
-    })
+    })*/
 
+    // Тэги для возможности использования разных углей в кузне
+    event.add('tfc:forge_fuel', 'minecraft:coal')
+    event.add('tfc:forge_fuel', 'gtceu:coke_gem')
+    event.add('tfc:forge_fuel', 'gtceu:rich_raw_coal')
+    event.add('tfc:forge_fuel', 'gtceu:raw_coal')
+    event.add('tfc:forge_fuel', 'gtceu:poor_raw_coal')
+
+    // Тэги для сундуков, чтобы отличать их виды
     global.TFC_WOOD_TYPES.forEach(woodType => {
-        event.add('tfg:only_default_wooden_chests', `tfc:wood/chest/${woodType}`)
-        event.add('tfg:only_trapped_wooden_chests', `tfc:wood/trapped_chest/${woodType}`)
+        event.add('tfg:default_chests', `tfc:wood/chest/${woodType}`)
+        event.add('tfg:trapped_chests', `tfc:wood/trapped_chest/${woodType}`)
 
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
+    // Теги для двойных слитков тфк
     event.add('forge:ingots/double/bismuth', 'tfc:metal/double_ingot/bismuth')
     event.add('forge:ingots/double/bismuth_bronze', 'tfc:metal/double_ingot/bismuth_bronze')
     event.add('forge:ingots/double/black_bronze', 'tfc:metal/double_ingot/black_bronze')
@@ -32,9 +44,11 @@ const registerTFCItemTags = (event) => {
     event.add('forge:ingots/double/blue_steel', 'tfc:metal/double_ingot/blue_steel')
     event.add('forge:ingots/double/red_steel', 'tfc:metal/double_ingot/red_steel')
 
+    // Теги для объединения наковален
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/blue_steel')
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/red_steel')
 
+    // Теги для кораллов
     event.add('tfc:corals', 'tfc:coral/tube_coral_fan')
     event.add('tfc:corals', 'tfc:coral/brain_coral_fan')
     event.add('tfc:corals', 'tfc:coral/bubble_coral_fan')
@@ -56,9 +70,10 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:corals', 'tfc:coral/fire_dead_coral')
     event.add('tfc:corals', 'tfc:coral/horn_dead_coral')
 
+    // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
-            event.add(`tfc:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
         })
     })
 }
