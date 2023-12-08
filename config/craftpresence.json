@@ -13,8 +13,8 @@
     "detectBiomeData": true,
     "detectDimensionData": true,
     "detectWorldData": true,
-    "clientId": "750607394895298570",
-    "defaultIcon": "cube",
+    "clientId": "1182610212121743470",
+    "defaultIcon": "tfg-icon",
     "enableJoinRequests": false,
     "partyPrivacyLevel": 1,
     "preferredClientLevel": 3,
@@ -22,7 +22,7 @@
     "autoRegister": false
   },
   "biomeSettings": {
-    "fallbackBiomeIcon": "cube",
+    "fallbackBiomeIcon": "tfg-icon",
     "biomeData": {
       "default": {
         "textOverride": "Playing in {biome.name}"
@@ -30,7 +30,7 @@
     }
   },
   "dimensionSettings": {
-    "fallbackDimensionIcon": "cube",
+    "fallbackDimensionIcon": "tfg-icon",
     "dimensionData": {
       "default": {
         "textOverride": "In the {dimension.name}"
@@ -38,7 +38,7 @@
     }
   },
   "serverSettings": {
-    "fallbackServerIcon": "cube",
+    "fallbackServerIcon": "tfg-icon",
     "fallbackServerName": "Minecraft Server",
     "fallbackServerMotd": "A Minecraft Server",
     "serverData": {
@@ -71,7 +71,7 @@
     "refreshRate": 2,
     "allowPlaceholderPreviews": false,
     "guiSettings": {
-      "fallbackGuiIcon": "cube",
+      "fallbackGuiIcon": "tfg-icon",
       "guiData": {
         "default": {
           "textOverride": "In {screen.name}"
@@ -82,7 +82,7 @@
       "default": "Holding {item.message.holding}"
     },
     "entitySettings": {
-      "fallbackEntityIcon": "cube",
+      "fallbackEntityIcon": "tfg-icon",
       "targetData": {
         "default": {
           "textOverride": "Targeting {entity.target.name}"
@@ -150,14 +150,14 @@
     "stripTranslationColors": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
-    "configKeyCode": -1
+    "configKeyCode": 0
   },
   "displaySettings": {
     "presenceData": {
       "enabled": true,
       "useAsMain": false,
-      "details": "Modpack Version: 1.20.1",
-      "gameState": "{getFirst(menu.message, dimension.message)}",
+      "details": "{getFirst(menu.message, dimension.message)}",
+      "gameState": "{getOrDefault(server.message)} {getOrDefault(pack.name)}",
       "largeImageKey": "{getFirst(menu.icon, dimension.icon)}",
       "largeImageText": "{getFirst(menu.message, dimension.message)}",
       "smallImageKey": "{getFirst(server.icon, pack.icon)}",
@@ -172,8 +172,7 @@
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png",
-      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f"
+      "default": "https://via.placeholder.com/256.png"
     },
     "dynamicVariables": {
       "default": "Example Text",
