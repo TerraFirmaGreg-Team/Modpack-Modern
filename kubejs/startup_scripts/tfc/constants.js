@@ -1664,7 +1664,6 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/rose_gold",
     "tfc:metal/ingot/sterling_silver",
     "tfc:metal/ingot/wrought_iron",
-    "tfc:metal/ingot/cast_iron",
     "tfc:metal/ingot/steel",
     "tfc:metal/ingot/black_steel",
     "tfc:metal/ingot/red_steel",
@@ -1677,6 +1676,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/tin",
     "tfc:metal/ingot/zinc",
     
+    /*
     // Sheets
     "tfc:metal/sheets/bismuth",
     "tfc:metal/sheets/bismuth_bronze",
@@ -2051,7 +2051,7 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:metal/block/steel_slab', 
     'tfc:metal/block/black_steel_slab', 
     'tfc:metal/block/blue_steel_slab', 
-    'tfc:metal/block/red_steel_slab',
+    'tfc:metal/block/red_steel_slab',*/
 
 
 ];

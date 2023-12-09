@@ -52,20 +52,19 @@ TFCEvents.data(event => {
  * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
-    /*
-    registerMinecraftRecipes(event)
+    // registerMinecraftRecipes(event)
     registerTFCRecipes(event)
-    registerGTCEURecipes(event)
-    registerCreateRecipes(event)
-    registerAE2Recipes(event)
-    registerComputerCraftRecipes(event)
-    registerAdAstraRecipes(event)
-    registerTreeTapRecipes(event)
-    registerMoreRedRecipes(event)
-    registerSophisticatedBackpacksRecipes(event)
-    registerSmallShipsRecipes(event)
-    registerExtendedCraftingRecipes(event)
-    registerToolBeltRecipes(event)*/
+    // registerGTCEURecipes(event)
+    // registerCreateRecipes(event)
+    // registerAE2Recipes(event)
+    // registerComputerCraftRecipes(event)
+    // registerAdAstraRecipes(event)
+    // registerTreeTapRecipes(event)
+    // registerMoreRedRecipes(event)
+    // registerSophisticatedBackpacksRecipes(event)
+    // registerSmallShipsRecipes(event)
+    // registerExtendedCraftingRecipes(event)
+    // registerToolBeltRecipes(event)
 })
 
 /**

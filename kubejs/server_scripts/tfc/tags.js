@@ -2,11 +2,10 @@
 
 const registerTFCItemTags = (event) => {
     
-    /*
     // Удаление тегов у откоюченных предметов
     global.TFC_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
-    })*/
+    })
 
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')
@@ -90,6 +89,41 @@ const registerTFCBlockTags = (event) => {
 }
 
 const registerTFCFluidTags = (event) => {
+    event.add('tfc:usable_in_ingot_mold', "gtceu:bismuth")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:bismuth_bronze")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:black_bronze")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:bronze")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:brass")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:copper")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:gold")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:nickel")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:rose_gold")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:silver")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:tin")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:zinc")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:sterling_silver")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:wrought_iron")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:iron")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:steel")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:black_steel")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:blue_steel")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:red_steel")
+
+    event.add('tfc:usable_in_bell_mold', "gtceu:bronze")
+    event.add('tfc:usable_in_bell_mold', "gtceu:gold")
+    event.add('tfc:usable_in_bell_mold', "gtceu:brass")
+
+    event.add('tfc:usable_in_tool_head_mold', "gtceu:copper")
+    event.add('tfc:usable_in_tool_head_mold', "gtceu:bismuth_bronze")
+    event.add('tfc:usable_in_tool_head_mold', "gtceu:black_bronze")
+    event.add('tfc:usable_in_tool_head_mold', "gtceu:bronze")
+
+    event.add('tfc:usable_in_pot', "gtceu:latex")
+
+    event.add('tfc:usable_in_barrel', "gtceu:latex")
+
+    event.add('tfc:usable_in_wooden_bucket', "gtceu:latex")
+
     event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
