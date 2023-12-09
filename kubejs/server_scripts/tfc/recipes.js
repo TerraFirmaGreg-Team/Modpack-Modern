@@ -44,6 +44,21 @@ const registerTFCRecipes = (event) => {
                     .resultFluid(Fluid.of(metalSpecs.fluid, 144))
                     .id(`tfc:heating/metal/${metal}_ingot`)
             }
+
+            // Стержни
+            if (metalSpecs.props.includes('rod'))
+            {
+                // Декрафт стержня в жидкость
+                event.recipes.tfc.heating(`gtceu:${metal}_rod`, metalSpecs.melt_temp)
+                    .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+                    .id(`tfc:heating/metal/${metal}_rod`)
+
+                // Слиток -> 2 Стержня
+                event.recipes.tfc.anvil(`2x gtceu:${metal}_rod`, `#forge:ingots/${metal}`, ['bend_last', 'draw_second_last', 'draw_third_last'])
+                    .tier(metalSpecs.tier)
+                    .id(`tfc:anvil/${metal}_rod`)
+            }
+            
         }
 
         // Двойные слитки
@@ -139,6 +154,11 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:anvil/${metal}_fish_hook`)
             }
 
+        }
+
+        if (metalSpecs.props.includes('double_sheet'))
+        {
+            
         }
     })
 
