@@ -1,82 +1,54 @@
 // priority: 0
 
-const TFC_TO_GT_METALS = {
-    bismuth: { isGTDup: true, convert_temp: 270 },
-    bismuth_bronze: { isGTDup: true, convert_temp: 985 },
-    black_bronze: { isGTDup: true, convert_temp: 1070 },
-    bronze: { isGTDup: true, convert_temp: 950 },
-    brass: { isGTDup: true, convert_temp: 930 },
-    nickel: { isGTDup: true, convert_temp: 1453 },
-    rose_gold: { isGTDup: true, convert_temp: 960 },
-    silver: { isGTDup: true, convert_temp: 961 },
-    tin: { isGTDup: true, convert_temp: 230 },
-    zinc: { isGTDup: true, convert_temp: 420 },
-    sterling_silver: { isGTDup: true, convert_temp: 950 },
-    wrought_iron: { isGTDup: true, convert_temp: 1535, custom_fluid: 'tfc:metal/cast_iron' },
-    steel: { isGTDup: true, convert_temp: 1540 },
-    black_steel: { isGTDup: true, convert_temp: 1485 },
-    blue_steel: { isGTDup: true, convert_temp: 1540 },
-    red_steel: { isGTDup: true, convert_temp: 1540 },
-    copper: { convert_temp: 1080 },
-    gold: { convert_temp: 1060 }
-}
-
 const registerTFCRecipes = (event) => {
     
     // Металлы, которые дублируют гт
-    Object.entries(TFC_TO_GT_METALS).forEach(keyValuePair => {
+    Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
         
         let metal = keyValuePair[0]
         let metalSpecs = keyValuePair[1]
 
-        // Металлы дублирующие гт
-        if (metalSpecs.isGTDup != undefined)
+        // Одинарные слитки
+        if (metalSpecs.props.includes('ingot'))
         {
-            // Ingots
-            event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`gtceu:${metal}`, 144), 0.1)
-                .id(`tfc:casting/${metal}_fire_ingot`)
-
-            event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`gtceu:${metal}`, 144), 0.01)
-                .id(`tfc:casting/${metal}_ingot`)
-            
-            if (metalSpecs.custom_fluid != undefined)
+            // Металлы дублирующие гт
+            if (metalSpecs.isGTDup != undefined)
             {
-                event.recipes.tfc.heating(`gtceu:${metal}_ingot`, metalSpecs.convert_temp)
-                    .resultFluid(Fluid.of(metalSpecs.custom_fluid, 144))
+                // Ingots
+                event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
+                    .id(`tfc:casting/${metal}_fire_ingot`)
+
+                event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
+                    .id(`tfc:casting/${metal}_ingot`)
+                
+                event.recipes.tfc.heating(`gtceu:${metal}_ingot`, metalSpecs.melt_temp)
+                    .resultFluid(Fluid.of(metalSpecs.fluid, 144))
                     .id(`tfc:heating/metal/${metal}_ingot`)
+                
             }
+            // Металлы не дублирующие гт
             else
             {
-                event.recipes.tfc.heating(`gtceu:${metal}_ingot`, metalSpecs.convert_temp)
-                    .resultFluid(Fluid.of(`gtceu:${metal}`, 144))
+                // Ingots
+                event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
+                        .id(`tfc:casting/${metal}_fire_ingot`)
+
+                event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
+                    .id(`tfc:casting/${metal}_ingot`)
+
+                event.recipes.tfc.heating(`tfc:metal/ingot/${metal}`, metalSpecs.melt_temp)
+                    .resultFluid(Fluid.of(metalSpecs.fluid, 144))
                     .id(`tfc:heating/metal/${metal}_ingot`)
             }
-            
         }
-        else
+
+        // Двойные слитки
+        if (metalSpecs.props.includes('double_ingot'))
         {
-            // Ingots
-            event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(`gtceu:${metal}`, 144), 0.1)
-                .id(`tfc:casting/${metal}_fire_ingot`)
-
-            event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(`gtceu:${metal}`, 144), 0.01)
-                .id(`tfc:casting/${metal}_ingot`)
-
-            if (metalSpecs.custom_fluid != undefined)
-            {
-                event.recipes.tfc.heating(`tfc:metal/ingot/${metal}`, metalSpecs.convert_temp)
-                .resultFluid(Fluid.of(metalSpecs.custom_fluid, 144))
-                .id(`tfc:heating/metal/${metal}_ingot`)
-            }
-            else 
-            {
-                event.recipes.tfc.heating(`tfc:metal/ingot/${metal}`, metalSpecs.convert_temp)
-                .resultFluid(Fluid.of(`gtceu:${metal}`, 144))
-                .id(`tfc:heating/metal/${metal}_ingot`)
-            }
+            event.recipes.tfc.heating(`tfc:metal/double_ingot/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .id(`tfc:heating/metal/${metal}_double_ingot`)
         }
-
-        
     })
 
     // Bloom -> Wrought Iron Ingot
