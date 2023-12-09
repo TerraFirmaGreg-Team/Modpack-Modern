@@ -25,29 +25,29 @@ const registerTFCData = (event) => {
     )
  */
 const registerTFCMetals = (event) => {
-    event.metal('gtceu:tin', 230, 0.02143, null, null, null, 1, 'tfg:tin')
-    event.metal('gtceu:bismuth', 270, 0.02143, null, null, null, 1, 'tfg:bismuth')
-    event.metal('gtceu:zinc', 420, 0.01429, null, null, null, 1, 'tfg:zinc')
-    event.metal('gtceu:sterling_silver', 950, 0.00857, null, null, null, 1, 'tfg:sterling_silver')
-    event.metal('gtceu:rose_gold', 960, 0.00857, null, null, null, 1, 'tfg:rose_gold')
-    event.metal('gtceu:silver', 961, 0.00625, null, null, null, 1, 'tfg:silver')
-    event.metal('gtceu:gold', 1060, 0.005, null, null, null, 1, 'tfg:gold')
-    event.metal('gtceu:copper', 1080, 0.00857, null, null, null, 1, 'tfg:copper')
-    event.metal('gtceu:nickel', 1453, 0.00625, null, null, null, 1, 'tfg:nickel')
+    event.metal('gtceu:tin', 230, 0.02143, null, null, null, 1, 'tfc:tin')
+    event.metal('gtceu:bismuth', 270, 0.02143, null, null, null, 1, 'tfc:bismuth')
+    event.metal('gtceu:zinc', 420, 0.01429, null, null, null, 1, 'tfc:zinc')
+    event.metal('gtceu:sterling_silver', 950, 0.00857, null, null, null, 1, 'tfc:sterling_silver')
+    event.metal('gtceu:rose_gold', 960, 0.00857, null, null, null, 1, 'tfc:rose_gold')
+    event.metal('gtceu:silver', 961, 0.00625, null, null, null, 1, 'tfc:silver')
+    event.metal('gtceu:gold', 1060, 0.005, null, null, null, 1, 'tfc:gold')
+    event.metal('gtceu:copper', 1080, 0.00857, null, null, null, 1, 'tfc:copper')
+    event.metal('gtceu:nickel', 1453, 0.00625, null, null, null, 1, 'tfc:nickel')
     
-    event.metal('gtceu:brass', 930, 0.00857, null, null, null, 2, 'tfg:brass')
-    event.metal('gtceu:bronze', 950, 0.00857, null, null, null, 2, 'tfg:bronze')
-    event.metal('gtceu:bismuth_bronze', 985, 0.00857, null, null, null, 2, 'tfg:bismuth_bronze')
-    event.metal('gtceu:black_bronze', 1070, 0.00857, null, null, null, 2, 'tfg:black_bronze')
+    event.metal('gtceu:brass', 930, 0.00857, null, null, null, 2, 'tfc:brass')
+    event.metal('gtceu:bronze', 950, 0.00857, null, null, null, 2, 'tfc:bronze')
+    event.metal('gtceu:bismuth_bronze', 985, 0.00857, null, null, null, 2, 'tfc:bismuth_bronze')
+    event.metal('gtceu:black_bronze', 1070, 0.00857, null, null, null, 2, 'tfc:black_bronze')
 
     event.metal('gtceu:iron', 1535, 0.00857, null, null, null, 3, 'tfg:iron')
-    event.metal('gtceu:wrought_iron', 1535, 0.00857, null, null, null, 3, 'tfg:wrought_iron')
+    event.metal('gtceu:wrought_iron', 1535, 0.00857, null, null, null, 3, 'tfc:wrought_iron')
 
-    event.metal('gtceu:steel', 1540, 0.00857, null, null, null, 4, 'tfg:steel')
+    event.metal('gtceu:steel', 1540, 0.00857, null, null, null, 4, 'tfc:steel')
 
-    event.metal('gtceu:black_steel', 1485, 0.00857, null, null, null, 5, 'tfg:black_steel')
-    event.metal('gtceu:blue_steel', 1540, 0.00857, null, null, null, 6, 'tfg:blue_steel')
-    event.metal('gtceu:red_steel', 1540, 0.00857, null, null, null, 6, 'tfg:red_steel')
+    event.metal('gtceu:black_steel', 1485, 0.00857, null, null, null, 5, 'tfc:black_steel')
+    event.metal('gtceu:blue_steel', 1540, 0.00857, null, null, null, 6, 'tfc:blue_steel')
+    event.metal('gtceu:red_steel', 1540, 0.00857, null, null, null, 6, 'tfc:red_steel')
 }
 
 /**
