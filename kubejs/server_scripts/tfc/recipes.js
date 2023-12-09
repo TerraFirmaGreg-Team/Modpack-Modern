@@ -44,21 +44,6 @@ const registerTFCRecipes = (event) => {
                     .resultFluid(Fluid.of(metalSpecs.fluid, 144))
                     .id(`tfc:heating/metal/${metal}_ingot`)
             }
-
-            // Стержни
-            if (metalSpecs.props.includes('rod'))
-            {
-                // Декрафт стержня в жидкость
-                event.recipes.tfc.heating(`gtceu:${metal}_rod`, metalSpecs.melt_temp)
-                    .resultFluid(Fluid.of(metalSpecs.fluid, 72))
-                    .id(`tfc:heating/metal/${metal}_rod`)
-
-                // Слиток -> 2 Стержня
-                event.recipes.tfc.anvil(`2x gtceu:${metal}_rod`, `#forge:ingots/${metal}`, ['bend_last', 'draw_second_last', 'draw_third_last'])
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:anvil/${metal}_rod`)
-            }
-            
         }
 
         // Двойные слитки
@@ -68,24 +53,9 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.heating(`tfc:metal/double_ingot/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 288))
                 .id(`tfc:heating/metal/${metal}_double_ingot`)
-
-            // Двойной слиток -> Пластина
-            event.recipes.tfc.anvil(`gtceu:${metal}_plate`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'hit_second_last', 'hit_third_last'])
-                .tier(metalSpecs.tier)
-                .id(`tfc:anvil/${metal}_sword_blade`)
-            
-            if (metalSpecs.props.includes('sword_blade'))
-            {
-                // Оголовье меча
-                event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'bend_second_last', 'bend_third_last'])
-                    .tier(metalSpecs.tier)
-                    .bonus(true)
-                    .id(`tfc:anvil/${metal}_sheet`)
-            }
         }
 
-        // Пластины
-        if (metalSpecs.props.includes('sheet'))
+        if (metalSpecs.props.includes('part'))
         {
             // Удаление рецептов блоков
             event.remove({ id: `tfc:crafting/metal/block/${metal}` })
@@ -99,6 +69,16 @@ const registerTFCRecipes = (event) => {
             event.remove({ id: `tfc:crafting/metal/block/${metal}_slab` })
             event.remove({ id: `tfc:heating/metal/${metal}_block_slab` })
 
+            // Декрафт стержня в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_rod`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+                .id(`tfc:heating/metal/${metal}_rod`)
+
+            // Двойной слиток -> Пластина
+            event.recipes.tfc.anvil(`gtceu:${metal}_plate`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'hit_second_last', 'hit_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_sheet`)
+
             // Декрафт пластины в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_plate`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 144))
@@ -109,56 +89,66 @@ const registerTFCRecipes = (event) => {
                 .tier(metalSpecs.tier)
                 .id(`tfc:welding/${metal}_double_sheet`)
 
-            if (metalSpecs.props.includes('boots'))
-            {
-                // Шлем
-                event.recipes.tfc.welding(`tfc:metal/helmet/${metal}`, `tfc:metal/unfinished_helmet/${metal}`, `gtceu:${metal}_plate`)
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:welding/${metal}_helmet`)
+            // Слиток -> 2 Стержня
+            event.recipes.tfc.anvil(`2x gtceu:${metal}_rod`, `#forge:ingots/${metal}`, ['bend_last', 'draw_second_last', 'draw_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_rod`)
 
-                // Штаны
-                event.recipes.tfc.welding(`tfc:metal/greaves/${metal}`, `tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_plate`)
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:welding/${metal}_greaves`)
-
-                // Ботинки
-                event.recipes.tfc.welding(`tfc:metal/boots/${metal}`, `tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`)
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:welding/${metal}_boots`)
-
-                // Незавершенные ботинки
-                event.recipes.tfc.anvil(`tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`, ['bend_last', 'bend_second_last', 'shrink_third_last'])
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:anvil/${metal}_unfinished_boots`)
-            }
-
-            if (metalSpecs.props.includes('trapdoor'))
-            {
-                // Люк
-                event.recipes.tfc.anvil(`tfc:metal/trapdoor/${metal}`, `gtceu:${metal}_plate`, ['bend_last', 'draw_second_last', 'draw_third_last'])
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:anvil/${metal}_trapdoor`)
-
-                // 8x Решетка
-                event.recipes.tfc.anvil(`8x tfc:metal/bars/${metal}`, `gtceu:${metal}_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
-                    .tier(metalSpecs.tier)
-                    .id(`tfc:anvil/${metal}_bars`)
-            }
-
-            if (metalSpecs.props.includes('fish_hook'))
-            {
-                // Крюк удочки
-                event.recipes.tfc.anvil(`tfc:metal/fish_hook/${metal}`, `gtceu:${metal}_plate`, ['draw_not_last', 'bend_any', 'hit_any'])
-                    .tier(metalSpecs.tier)
-                    .bonus(true)
-                    .id(`tfc:anvil/${metal}_fish_hook`)
-            }
-
+            // Декрафт двойных пластин
+            event.recipes.tfc.heating(`gtceu:${metal}_double_plate`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .id(`tfc:heating/metal/${metal}_double_sheet`)
         }
 
-        if (metalSpecs.props.includes('double_sheet'))
+        if (metalSpecs.props.includes('armor'))
         {
-            
+            // Шлем
+            event.recipes.tfc.welding(`tfc:metal/helmet/${metal}`, `tfc:metal/unfinished_helmet/${metal}`, `gtceu:${metal}_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_helmet`)
+
+            // Штаны
+            event.recipes.tfc.welding(`tfc:metal/greaves/${metal}`, `tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_greaves`)
+
+            // Ботинки
+            event.recipes.tfc.welding(`tfc:metal/boots/${metal}`, `tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_boots`)
+
+            // Незавершенные ботинки
+            event.recipes.tfc.anvil(`tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`, ['bend_last', 'bend_second_last', 'shrink_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_unfinished_boots`)
+        }
+
+        if (metalSpecs.props.includes('tool'))
+        {
+            // Оголовье меча
+            event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'bend_second_last', 'bend_third_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_sword_blade`)
+
+            // Крюк удочки
+            event.recipes.tfc.anvil(`tfc:metal/fish_hook/${metal}`, `gtceu:${metal}_plate`, ['draw_not_last', 'bend_any', 'hit_any'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_fish_hook`)
+        }
+
+        if (metalSpecs.props.includes('utility'))
+        {
+            // Люк
+            event.recipes.tfc.anvil(`tfc:metal/trapdoor/${metal}`, `gtceu:${metal}_plate`, ['bend_last', 'draw_second_last', 'draw_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_trapdoor`)
+
+            // 8x Решетка
+            event.recipes.tfc.anvil(`8x tfc:metal/bars/${metal}`, `gtceu:${metal}_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_bars`)
         }
     })
 

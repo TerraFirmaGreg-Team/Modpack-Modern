@@ -116,130 +116,64 @@ global.SAND_COLORS = [
 ];
 
 /**
- * Указывает, что у этого металла есть Слиток.
+ * Указывает, что у этого металла есть: ingot.
  */
-global.INGOT_GEN = ["ingot"];
+global.INGOT_GEN = 'ingot';
 
 /**
- * Указывает, что у этого металла есть Двойной Слиток.
+ * Указывает, что у этого металла есть: double_ingot.
  */
-global.DOUBLE_INGOT_GEN = ["double_ingot"];
+global.DOUBLE_INGOT_GEN = 'double_ingot';
 
 /**
- * Указывает, что у этого металла есть Самородок.
+ * Указывает, что у этого металла есть: nugget.
  */
-global.NUGGET_GEN = ["nugget"];
+global.NUGGET_GEN = 'nugget';
 
 /**
- * Указывает, что у этого металла есть Пыль, Маленькая Пыль, Крошечная Пыль.
+ * Указывает, что у этого металла есть: dust_tiny, dust_small, dust.
  */
-global.DUST_GEN = ["dust", "dust_small", "dust_tiny"];
+global.DUST_GEN = 'dusts';
 
 /**
- * Указывает, что у этого металла есть куски руд, Бедная, Нормальная, Богатая.
+ * Указывает, что у этого металла есть куски руд, poor_raw, raw, rich_raw.
  */
-global.ORE_GEN = ["poor_raw", "raw", "rich_raw"];
+global.ORE_CHUNKS_GEN = 'ore_chunks';
 
 /**
- * Указывает, что у этого металла есть: Пластины, Двойные Пластины, Стержни, Блоки, Ступеньки, Полублоки.
+ * Указывает, что у этого металла есть: sheet, double_sheet, rod, block, block_stairs, block_slab.
  */
-global.PART_GEN = [
-    "sheet",
-    "double_sheet",
-    "rod",
-    "block",
-    "block_stairs",
-    "block_slab",
-];
+global.PART_GEN = 'part';
 
 /**
- * Указывает, что у этого металла есть броня с Unfinished вариантами: Ботинки, Штаны, Нагрудник, Шлем.
+ * Указывает, что у этого металла есть: anvil, bars, chain, trapdoor, lamp, unfinished_lamp.
  */
-global.ARMOR_GEN = [
-    "boots",
-    "greaves",
-    "chestplate",
-    "helmet",
-    "shield",
-    "unfinished_boots",
-    "unfinished_chestplate",
-    "unfinished_greaves",
-    "unfinished_helmet",
-];
+global.UTILITY_GEN = 'utility';
 
 /**
- * Указывает, что у этого металла есть: Наковальня, Решетка, Цепи, Лампа, Незаконченная Лампа, Люк.
+ * Указывает, что у этого металла есть: boots, greaves, chestplate, helmet, shield, unfinished_boots, unfinished_chestplate, unfinished_greaves, unfinished_helmet.
  */
-global.UTILITY_GEN = [
-    "anvil",
-    "bars",
-    "chain",
-    "lamp",
-    "trapdoor",
-    "unfinished_lamp",
-];
+global.ARMOR_GEN = 'armor';
 
 /**
- * Указывает, что у этого металла есть оголовья и сами инстурменты ГТ.
+ * Указывает, что у этого металла есть: инструменты и оголовья.
  */
-global.GT_TOOL_GEN = [
-    "knife_butchery_head",
-    "butchery_knife",
-    "file_head",
-    "file",
-    "axe_head",
-    "axe",
-    "hammer_head",
-    "hammer",
-    "hoe",
-    "hoe_head",
-    "knife_blade",
-    "knife",
-    "saw_blade",
-    "saw",
-    "pickaxe_head",
-    "pickaxe",
-    "scythe_blade",
-    "scythe",
-    "shovel_head",
-    "shovel",
-    "sword_blade",
-    "sword",
-];
+global.GT_TOOL_GEN = 'tool';
 
 /**
- * Указывает, что у этого металла есть оголовья и сами инстурменты ТФК.
+ * Указывает, что у этого металла есть: ведро.
  */
-global.TFC_TOOL_GEN = [
-    "chisel_head",
-    "chisel",
-    "fish_hook",
-    "fishing_rod",
-    "horse_armor",
-    "javelin_head",
-    "javelin",
-    "mace_head",
-    "mace",
-    "propick_head",
-    "propick",
-    "shears",
-    "tuyere",
-];
-
-/**
- * Указывает, что у этого металла есть ведро.
- */
-global.TFC_BUCKET_GEN = ["bucket"];
+global.TFC_BUCKET_GEN = 'bucket';
 
 /**
  * Указывает, что у этого металла есть чистый кусок (тфк штука).
  */
-global.TFC_SMALL_NATIVE_ORE_GEN = ["small_native_ore"];
+global.TFC_SMALL_NATIVE_ORE_GEN = 'small_native_ore';
 
 /**
  * Указывает, что у этого металла есть кусок (тфк штука).
  */
-global.TFC_SMALL_ORE_GEN = ["small_ore"];
+global.TFC_SMALL_ORE_GEN = 'small_ore';
 
 global.METAL_TO_SPECS = {
     gold: {
@@ -248,15 +182,15 @@ global.METAL_TO_SPECS = {
         melt_temp: 1060,
         fluid: "gtceu:gold",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
-        ),
+        ]
     },
 
     copper: {
@@ -266,19 +200,18 @@ global.METAL_TO_SPECS = {
         fluid: "gtceu:copper",
         tier: 1,
         canBeUnmolded: true,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
-        )
+        ]
     },
 
     bismuth: {
@@ -287,14 +220,14 @@ global.METAL_TO_SPECS = {
         melt_temp: 270,
         fluid: "gtceu:bismuth",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -304,13 +237,13 @@ global.METAL_TO_SPECS = {
         melt_temp: 930,
         fluid: "gtceu:brass",
         tier: 2,
-        props: [].concat(
+        props: [
             global.INGOT_GEN, 
             global.DOUBLE_INGOT_GEN, 
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -320,14 +253,14 @@ global.METAL_TO_SPECS = {
         melt_temp: 1453,
         fluid: "gtceu:nickel",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -337,13 +270,13 @@ global.METAL_TO_SPECS = {
         melt_temp: 960,
         fluid: "gtceu:rose_gold",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN, 
             global.DOUBLE_INGOT_GEN, 
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -353,15 +286,15 @@ global.METAL_TO_SPECS = {
         melt_temp: 961,
         fluid: "gtceu:silver",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -371,14 +304,14 @@ global.METAL_TO_SPECS = {
         melt_temp: 230,
         fluid: "gtceu:tin",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -388,13 +321,13 @@ global.METAL_TO_SPECS = {
         melt_temp: 420,
         fluid: "gtceu:zinc",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN, 
             global.DOUBLE_INGOT_GEN, 
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -404,13 +337,13 @@ global.METAL_TO_SPECS = {
         melt_temp: 950,
         fluid: "gtceu:sterling_silver",
         tier: 1,
-        props: [].concat(
+        props: [
             global.INGOT_GEN, 
             global.DOUBLE_INGOT_GEN, 
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN
-        ),
+        ],
         isGTDup: true
     },
     
@@ -421,7 +354,7 @@ global.METAL_TO_SPECS = {
         fluid: "gtceu:bismuth_bronze",
         tier: 2,
         canBeUnmolded: true,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -429,9 +362,8 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -442,7 +374,7 @@ global.METAL_TO_SPECS = {
         fluid: "gtceu:bronze",
         tier: 1,
         canBeUnmolded: true,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -450,9 +382,8 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -463,7 +394,7 @@ global.METAL_TO_SPECS = {
         fluid: "gtceu:black_bronze",
         tier: 2,
         canBeUnmolded: true,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -471,9 +402,8 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -483,7 +413,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "tfc:metal/cast_iron",
         tier: 3,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -491,9 +421,8 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -504,9 +433,10 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535, 
         fluid: "tfc:metal/cast_iron", 
         tier: 1, 
-        props: [].concat(
+        props: [
             global.INGOT_GEN, 
-            global.DOUBLE_INGOT_GEN) 
+            global.DOUBLE_INGOT_GEN
+        ] 
     },
 
     pig_iron: {
@@ -515,7 +445,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "tfc:metal/pig_iron",
         tier: 3,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     steel: {
@@ -524,7 +454,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1540,
         fluid: "gtceu:steel",
         tier: 4,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -532,9 +462,8 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -544,7 +473,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         fluid: "tfc:metal/high_carbon_black_steel",
         tier: 5,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     high_carbon_red_steel: {
@@ -553,7 +482,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         fluid: "tfc:metal/high_carbon_red_steel",
         tier: 5,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     high_carbon_blue_steel: {
@@ -562,7 +491,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         fluid: "tfc:metal/high_carbon_blue_steel",
         tier: 4,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     high_carbon_steel: {
@@ -571,7 +500,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         fluid: "tfc:metal/high_carbon_steel",
         tier: 3,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     weak_steel: {
@@ -580,7 +509,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1540,
         fluid: "tfc:metal/weak_steel",
         tier: 4,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     weak_red_steel: {
@@ -589,7 +518,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1540,
         fluid: "tfc:metal/weak_red_steel",
         tier: 5,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     weak_blue_steel: {
@@ -598,7 +527,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1540,
         fluid: "tfc:metal/weak_blue_steel",
         tier: 5,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
 
     black_steel: {
@@ -607,7 +536,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1485,
         fluid: "gtceu:black_steel",
         tier: 5,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -615,9 +544,8 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -627,7 +555,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1540,
         fluid: "gtceu:red_steel",
         tier: 6,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -635,10 +563,9 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN,
             global.TFC_BUCKET_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -648,7 +575,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1540,
         fluid: "gtceu:blue_steel",
         tier: 6,
-        props: [].concat(
+        props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
@@ -656,10 +583,9 @@ global.METAL_TO_SPECS = {
             global.PART_GEN,
             global.ARMOR_GEN,
             global.GT_TOOL_GEN,
-            global.TFC_TOOL_GEN,
             global.UTILITY_GEN,
             global.TFC_BUCKET_GEN
-        ),
+        ],
         isGTDup: true
     },
 
@@ -669,7 +595,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 400,
         fluid: "tfc:metal/unknown",
         tier: 1,
-        props: global.INGOT_GEN,
+        props: [global.INGOT_GEN],
     },
     bismuthinite: {
         forging_temp: 162,
@@ -677,7 +603,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 270,
         fluid: "gtceu:bismuth",
         tier: 1,
-        props: global.TFC_SMALL_ORE_GEN,
+        props: [global.TFC_SMALL_ORE_GEN],
     },
     cassiterite: {
         forging_temp: 138,
@@ -685,7 +611,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 230,
         fluid: "gtceu:tin",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     garnierite: {
         forging_temp: 138,
@@ -693,7 +623,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 1453,
         fluid: "gtceu:nickel",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN,
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     hematite: {
         forging_temp: 921,
@@ -701,7 +635,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     yellow_limonite: {
         forging_temp: 921,
@@ -709,7 +647,10 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN
+        ],
     },
     limonite: {
         forging_temp: 921,
@@ -717,7 +658,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.TFC_SMALL_ORE_GEN),
+        props: [global.TFC_SMALL_ORE_GEN],
     },
     magnetite: {
         forging_temp: 138,
@@ -725,7 +666,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     malachite: {
         forging_temp: 138,
@@ -733,7 +678,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 1080,
         fluid: "gtceu:copper",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     pyrite: {
         forging_temp: 921,
@@ -741,7 +690,10 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN
+        ],
     },
     sphalerite: {
         forging_temp: 138,
@@ -749,7 +701,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 420,
         fluid: "gtceu:zinc",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     tetrahedrite: {
         forging_temp: 138,
@@ -757,7 +713,11 @@ global.METAL_TO_SPECS = {
         melt_temp: 1080,
         fluid: "gtceu:copper",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN, global.TFC_SMALL_ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN, 
+            global.TFC_SMALL_ORE_GEN
+        ],
     },
     chalcopyrite: {
         forging_temp: 648,
@@ -765,7 +725,10 @@ global.METAL_TO_SPECS = {
         melt_temp: 1080,
         fluid: "gtceu:copper",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN
+        ],
     },
     cassiterite_sand: {
         forging_temp: 138,
@@ -773,7 +736,10 @@ global.METAL_TO_SPECS = {
         melt_temp: 230,
         fluid: "gtceu:tin",
         tier: 1,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN
+        ],
     },
     goethite: {
         forging_temp: 921,
@@ -781,7 +747,10 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535,
         fluid: "gtceu:iron",
         tier: 3,
-        props: [].concat(global.DUST_GEN, global.ORE_GEN),
+        props: [
+            global.DUST_GEN, 
+            global.ORE_CHUNKS_GEN
+        ],
     }
 };
 
