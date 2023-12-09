@@ -810,7 +810,6 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/tin",
     "tfc:metal/ingot/zinc",
     
-    /*
     // Sheets
     "tfc:metal/sheets/bismuth",
     "tfc:metal/sheets/bismuth_bronze",
@@ -831,7 +830,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/sheets/silver",
     "tfc:metal/sheets/tin",
     "tfc:metal/sheets/zinc",
-    
+    /*
     // Double Sheets
     "tfc:metal/double_sheets/bismuth",
     "tfc:metal/double_sheets/bismuth_bronze",
