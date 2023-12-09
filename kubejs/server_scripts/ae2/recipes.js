@@ -3,7 +3,7 @@
 const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
-    event.remove({ not: { id: 'ae2:transform/entangled_singularity_from_pearl' }, mod: 'ae2' });
+    event.remove({ not: { id: 'ae2:transform/entangled_singularity_from_pearl', id: 'ae2:transform/fluix_crystals' }, mod: 'ae2' });
 
     // crafting Table
     // network tool
@@ -1865,14 +1865,7 @@ const registerAE2Recipes = (event) => {
     .itemOutputs('ae2:logic_processor_press')
     .duration(8000)
     .EUt(116)
-//
-//
-// НЕ ЗАБЫТЬ СДЕЛАТЬ FLUIX LENS ДЛЯ КРАФТА НИЖЕ
-// (В 1 12 в крафте используется fluix lens)
-// так же надеюсь ты не забыл сделать жидкости 
-//для истин кварц и fluix, для крафта fluix pearl, fluix glass cable, fluix plate
-// сделать роды для quartz fiber
-// mixer.autoclave.
+
     // Inscriber engineering Press
     event.recipes.gtceu.laser_engraver('ae2:engineering_press_iron')
         .itemInputs(
@@ -2417,6 +2410,46 @@ const registerAE2Recipes = (event) => {
             '2x kubejs:rods/certus_quartz')
 	    .duration(40)
         .EUt(16)
+    /
+    //mixer
+    //fluix crystal
+    event.recipes.gtceu.mixer('ae2:fluix_crystal')
+        .itemInputs(
+            '#forge:gems/nether_quartz',
+            '4x #forge:dusts/redstone',
+            'ae2:charged_certus_quartz_crystal',)
+        .itemOutputs(
+            'ae2:fluix_crystal')
+        .duration(40)
+        .EUt(18)
+    event.recipes.gtceu.mixer('ae2:fluix_crystal_ruby')
+        .itemInputs(
+            '#forge:gems/nether_quartz',
+            '#forge:exquisite_gems/ruby',
+            'ae2:charged_certus_quartz_crystal',)
+        .itemOutputs(
+            '4x ae2:fluix_crystal')
+        .duration(40)
+        .EUt(18)
+    event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz')
+        .itemInputs(
+            '#forge:exquisite_gems/nether_quartz',
+            '4x #forge:dusts/redstone',
+            'ae2:charged_certus_quartz_crystal',)
+        .itemOutputs(
+            '4x ae2:fluix_crystal')
+        .duration(40)
+        .EUt(18)
+    event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz_ruby')
+        .itemInputs(
+            '#forge:exquisite_gems/nether_quartz',
+            '#forge:exquisite_gems/ruby',
+            'ae2:charged_certus_quartz_crystal',)
+        .itemOutputs(
+            '12x ae2:fluix_crystal')
+        .duration(40)
+        .EUt(18)
+    
 
 }
 
