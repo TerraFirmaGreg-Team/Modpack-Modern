@@ -414,8 +414,6 @@ global.METAL_TO_SPECS = {
         fluid: "tfc:metal/cast_iron",
         tier: 3,
         props: [
-            global.INGOT_GEN,
-            global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
@@ -433,10 +431,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1535, 
         fluid: "tfc:metal/cast_iron", 
         tier: 1, 
-        props: [
-            global.INGOT_GEN, 
-            global.DOUBLE_INGOT_GEN
-        ] 
+        props: [] 
     },
 
     pig_iron: {
@@ -597,6 +592,7 @@ global.METAL_TO_SPECS = {
         tier: 1,
         props: [global.INGOT_GEN],
     },
+
     bismuthinite: {
         forging_temp: 162,
         welding_temp: 216,
@@ -605,6 +601,7 @@ global.METAL_TO_SPECS = {
         tier: 1,
         props: [global.TFC_SMALL_ORE_GEN],
     },
+    
     cassiterite: {
         forging_temp: 138,
         welding_temp: 184,
@@ -617,6 +614,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     garnierite: {
         forging_temp: 138,
         welding_temp: 184,
@@ -629,6 +627,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     hematite: {
         forging_temp: 921,
         welding_temp: 1228,
@@ -641,6 +640,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     yellow_limonite: {
         forging_temp: 921,
         welding_temp: 1228,
@@ -652,6 +652,7 @@ global.METAL_TO_SPECS = {
             global.ORE_CHUNKS_GEN
         ],
     },
+
     limonite: {
         forging_temp: 921,
         welding_temp: 1228,
@@ -660,6 +661,7 @@ global.METAL_TO_SPECS = {
         tier: 3,
         props: [global.TFC_SMALL_ORE_GEN],
     },
+
     magnetite: {
         forging_temp: 138,
         welding_temp: 184,
@@ -672,6 +674,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     malachite: {
         forging_temp: 138,
         welding_temp: 184,
@@ -684,6 +687,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     pyrite: {
         forging_temp: 921,
         welding_temp: 1228,
@@ -695,6 +699,7 @@ global.METAL_TO_SPECS = {
             global.ORE_CHUNKS_GEN
         ],
     },
+
     sphalerite: {
         forging_temp: 138,
         welding_temp: 184,
@@ -707,6 +712,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     tetrahedrite: {
         forging_temp: 138,
         welding_temp: 184,
@@ -719,6 +725,7 @@ global.METAL_TO_SPECS = {
             global.TFC_SMALL_ORE_GEN
         ],
     },
+
     chalcopyrite: {
         forging_temp: 648,
         welding_temp: 864,
@@ -730,6 +737,7 @@ global.METAL_TO_SPECS = {
             global.ORE_CHUNKS_GEN
         ],
     },
+
     cassiterite_sand: {
         forging_temp: 138,
         welding_temp: 184,
@@ -741,6 +749,7 @@ global.METAL_TO_SPECS = {
             global.ORE_CHUNKS_GEN
         ],
     },
+
     goethite: {
         forging_temp: 921,
         welding_temp: 1228,

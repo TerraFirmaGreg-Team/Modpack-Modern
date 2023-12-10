@@ -31,7 +31,7 @@ const registerTFCRecipes = (event) => {
             {
                 // Отливка слитка в обычной форме
                 event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
-                        .id(`tfc:casting/${metal}_ingot`)
+                    .id(`tfc:casting/${metal}_ingot`)
 
                 // Отливка слитка в огнеупорной форме
                 event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
@@ -69,8 +69,8 @@ const registerTFCRecipes = (event) => {
 
             // Декрафт стержня в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_rod`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, 72))
-                .id(`tfc:heating/metal/${metal}_rod`)
+            .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+            .id(`tfc:heating/metal/${metal}_rod`)
 
             // Двойной слиток -> Пластина
             event.recipes.tfc.anvil(`gtceu:${metal}_plate`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'hit_second_last', 'hit_third_last'])
@@ -735,7 +735,121 @@ const registerTFCRecipes = (event) => {
                 .resultFluid(Fluid.of(metalSpecs.fluid, 2016))
                 .id(`tfc:heating/metal/${metal}_anvil`)
         }
+
+        if (metalSpecs.props.includes('small_ore')) {
+            // Декрафт мелкого кусочка в жидкость
+            event.recipes.tfc.heating(`tfc:ore/small_${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 16))
+                .id(`tfc:heating/ore/small_${metal}`)
+
+            event.remove({ id: `tfc:heating/ore/poor_${metal}` })
+            event.remove({ id: `tfc:heating/ore/normal_${metal}` })
+            event.remove({ id: `tfc:heating/ore/rich_${metal}` })
+        }
+
+        if (metalSpecs.props.includes('small_native_ore')) {
+            // Декрафт мелкого кусочка в жидкость
+            event.recipes.tfc.heating(`tfc:ore/small_native_${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 16))
+                .id(`tfc:heating/ore/small_native_${metal}`)
+
+            event.remove({ id: `tfc:heating/ore/poor_native_${metal}` })
+            event.remove({ id: `tfc:heating/ore/normal_native_${metal}` })
+            event.remove({ id: `tfc:heating/ore/rich_native_${metal}` })
+        }
+
     })
+
+    //#region Вырезание предметов из CastIron
+
+    // Слиток
+    event.remove({ id: `tfc:casting/cast_iron_ingot` })
+    event.remove({ id: `tfc:casting/cast_iron_fire_ingot` })
+    event.remove({ id: `tfc:heating/metal/cast_iron_ingot` })
+    event.remove({ id: `tfc:welding/cast_iron_double_ingot` })
+    event.remove({ id: `tfc:anvil/cast_iron_rod` })
+
+    // Двойной слиток
+    event.remove({ id: `tfc:heating/metal/cast_iron_double_ingot` })
+    event.remove({ id: `tfc:anvil/cast_iron_sheet` })
+
+    // Пластина
+    event.remove({ id: `tfc:heating/metal/cast_iron_sheet` })
+    event.remove({ id: `tfc:welding/cast_iron_double_sheet` })
+
+    // Двойная пластина
+    event.remove({ id: `tfc:heating/metal/cast_iron_double_sheet` })
+
+    // Стержень
+    event.remove({ id: `tfc:heating/metal/cast_iron_rod` })
+
+    // Блок
+    event.remove({ id: `tfc:crafting/metal/block/cast_iron` })
+    event.remove({ id: `tfc:heating/metal/cast_iron_block` })
+
+    // Ступенька
+    event.remove({ id: `tfc:crafting/metal/block/cast_iron_stairs` })
+    event.remove({ id: `tfc:heating/metal/cast_iron_block_stairs` })
+
+    // Полублок
+    event.remove({ id: `tfc:crafting/metal/block/cast_iron_slab` })
+    event.remove({ id: `tfc:heating/metal/cast_iron_block_slab` })
+
+    //#endregion
+
+    //#region Фикс расплава слитков кованного железа (не получится сделать в автогене)
+
+    // Отливка слитка в обычной форме
+    event.recipes.tfc.casting(`gtceu:wrought_iron_ingot`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient('gtceu:wrought_iron', 144), 0.1)
+        .id(`tfc:casting/wrought_iron_ingot`)
+
+    // Отливка слитка в огнеупорной форме
+    event.recipes.tfc.casting(`gtceu:wrought_iron_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient('gtceu:wrought_iron', 144), 0.01)
+        .id(`tfc:casting/wrought_iron_fire_ingot`)
+
+    // Декрафт слитка в жидкость
+    event.recipes.tfc.heating(`gtceu:wrought_iron_ingot`, 1535)
+        .resultFluid(Fluid.of('gtceu:wrought_iron', 144))
+        .id(`tfc:heating/metal/wrought_iron_ingot`)
+
+    // Декрафт слитка в жидкость
+    event.recipes.tfc.heating(`tfc:metal/double_ingot/wrought_iron`, 1535)
+        .resultFluid(Fluid.of('gtceu:wrought_iron', 288))
+        .id(`tfc:heating/wrought_iron_double_ingot`)
+
+    //#endregion
+
+    //#region Фикс рецептов колоколов
+
+    // Отливка из золота
+    event.recipes.tfc.casting(`minecraft:bell`, 'tfc:ceramic/bell_mold', TFC.fluidStackIngredient('gtceu:gold', 144), 1)
+        .id(`tfc:casting/gold_bell`)
+
+    // Декрафт в золото
+    event.recipes.tfc.heating(`minecraft:bell`, 1060)
+        .resultFluid(Fluid.of('gtceu:gold', 144))
+        .id(`tfc:heating/gold_bell`)
+
+    // Отливка из латуни
+    event.recipes.tfc.casting(`tfc:brass_bell`, 'tfc:ceramic/bell_mold', TFC.fluidStackIngredient('gtceu:brass', 144), 1)
+        .id(`tfc:casting/brass_bell`)
+
+    // Декрафт в латунь
+    event.recipes.tfc.heating(`tfc:brass_bell`, 930)
+        .resultFluid(Fluid.of('gtceu:brass', 144))
+        .id(`tfc:heating/brass_bell`)
+
+    // Отливка из бронзы
+    event.recipes.tfc.casting(`tfc:bronze_bell`, 'tfc:ceramic/bell_mold', TFC.fluidStackIngredient('gtceu:bronze', 144), 1)
+        .id(`tfc:casting/bronze_bell`)
+
+    // Декрафт в бронзу
+    event.recipes.tfc.heating(`tfc:bronze_bell`, 930)
+        .resultFluid(Fluid.of('gtceu:bronze', 144))
+        .id(`tfc:heating/bronze_bell`)
+
+
+    //#endregion
 
     // Декрафт сырой крицы в жидкость
     event.recipes.tfc.heating(`tfc:raw_iron_bloom`, 1535)
