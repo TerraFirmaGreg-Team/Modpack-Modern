@@ -755,18 +755,42 @@ const registerTFCRecipes = (event) => {
         if (metalSpecs.props.includes('dusts')) {
             // Декрафт мелкой пыли
             event.recipes.tfc.heating(`gtceu:${metal}_tiny_dust`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, 16))
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(16, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/tiny_dust/${metal}`)
 
             // Декрафт средней пыли
             event.recipes.tfc.heating(`gtceu:${metal}_small_dust`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, 36))
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(36, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/small_dust/${metal}`)
 
             // Декрафт пыли
             event.recipes.tfc.heating(`gtceu:${metal}_dust`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(144, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/dust/${metal}`)
+        }
+
+        if (metalSpecs.props.includes('nugget')) {
+            // Декрафт мелкой пыли
+            event.recipes.tfc.heating(`#forge:nuggets/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(16, metalSpecs.percent_of_material)))
+                .id(`tfg:heating/nugget/${metal}`)
+        }
+
+        if (metalSpecs.props.includes('ore_chunks')) {
+            // Декрафт мелкой пыли
+            event.recipes.tfc.heating(`gtceu:poor_raw_${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(24, metalSpecs.percent_of_material)))
+                .id(`tfg:heating/poor_raw/${metal}`)
+
+            // Декрафт средней пыли
+            event.recipes.tfc.heating(`#forge:raw_materials/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(36, metalSpecs.percent_of_material)))
+                .id(`tfg:heating/raw/${metal}`)
+
+            // Декрафт пыли
+            event.recipes.tfc.heating(`gtceu:rich_raw_${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(48, metalSpecs.percent_of_material)))
+                .id(`tfg:heating/rich_raw/${metal}`)
         }
 
     })
@@ -912,3 +936,4 @@ const registerTFCRecipes = (event) => {
         B: 'tfc:crucible'
     }).id('tfc:crafting/blast_furnace')
 }
+

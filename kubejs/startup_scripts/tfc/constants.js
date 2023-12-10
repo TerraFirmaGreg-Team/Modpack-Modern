@@ -182,6 +182,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1060,
         fluid: "gtceu:gold",
         tier: 1,
+        percent_of_material: 100,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
@@ -199,6 +200,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 1080,
         fluid: "gtceu:copper",
         tier: 1,
+        percent_of_material: 100,
         canBeUnmolded: true,
         props: [
             global.INGOT_GEN,
@@ -220,6 +222,7 @@ global.METAL_TO_SPECS = {
         melt_temp: 270,
         fluid: "gtceu:bismuth",
         tier: 1,
+        percent_of_material: 100,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
@@ -236,6 +239,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 744,
         melt_temp: 930,
         fluid: "gtceu:brass",
+        percent_of_material: 100,
         tier: 2,
         props: [
             global.INGOT_GEN, 
@@ -252,6 +256,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1162,
         melt_temp: 1453,
         fluid: "gtceu:nickel",
+        percent_of_material: 100,
         tier: 1,
         props: [
             global.INGOT_GEN,
@@ -269,6 +274,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 768,
         melt_temp: 960,
         fluid: "gtceu:rose_gold",
+        percent_of_material: 100,
         tier: 1,
         props: [
             global.INGOT_GEN, 
@@ -285,6 +291,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 769,
         melt_temp: 961,
         fluid: "gtceu:silver",
+        percent_of_material: 100,
         tier: 1,
         props: [
             global.INGOT_GEN,
@@ -303,6 +310,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 230,
         fluid: "gtceu:tin",
+        percent_of_material: 100,
         tier: 1,
         props: [
             global.INGOT_GEN,
@@ -320,6 +328,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 336,
         melt_temp: 420,
         fluid: "gtceu:zinc",
+        percent_of_material: 100,
         tier: 1,
         props: [
             global.INGOT_GEN, 
@@ -336,6 +345,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 760,
         melt_temp: 950,
         fluid: "gtceu:sterling_silver",
+        percent_of_material: 100,
         tier: 1,
         props: [
             global.INGOT_GEN, 
@@ -352,6 +362,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 788,
         melt_temp: 985,
         fluid: "gtceu:bismuth_bronze",
+        percent_of_material: 100,
         tier: 2,
         canBeUnmolded: true,
         props: [
@@ -372,6 +383,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 760,
         melt_temp: 950,
         fluid: "gtceu:bronze",
+        percent_of_material: 100,
         tier: 1,
         canBeUnmolded: true,
         props: [
@@ -392,6 +404,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 856,
         melt_temp: 1070,
         fluid: "gtceu:black_bronze",
+        percent_of_material: 100,
         tier: 2,
         canBeUnmolded: true,
         props: [
@@ -412,6 +425,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1228,
         melt_temp: 1535,
         fluid: "tfc:metal/cast_iron",
+        percent_of_material: 100,
         tier: 3,
         props: [
             global.NUGGET_GEN,
@@ -429,7 +443,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921, 
         welding_temp: 1228, 
         melt_temp: 1535, 
-        fluid: "tfc:metal/cast_iron", 
+        fluid: "tfc:metal/cast_iron",
         tier: 1, 
         props: [] 
     },
@@ -438,7 +452,6 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/pig_iron",
         tier: 3,
         props: [global.INGOT_GEN],
     },
@@ -448,6 +461,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         melt_temp: 1540,
         fluid: "gtceu:steel",
+        percent_of_material: 100,
         tier: 4,
         props: [
             global.INGOT_GEN,
@@ -530,6 +544,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1188,
         melt_temp: 1485,
         fluid: "gtceu:black_steel",
+        percent_of_material: 100,
         tier: 5,
         props: [
             global.INGOT_GEN,
@@ -549,6 +564,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         melt_temp: 1540,
         fluid: "gtceu:red_steel",
+        percent_of_material: 100,
         tier: 6,
         props: [
             global.INGOT_GEN,
@@ -569,6 +585,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         melt_temp: 1540,
         fluid: "gtceu:blue_steel",
+        percent_of_material: 100,
         tier: 6,
         props: [
             global.INGOT_GEN,
@@ -598,6 +615,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 216,
         melt_temp: 270,
         fluid: "gtceu:bismuth",
+        percent_of_material: 100,
         tier: 1,
         props: [global.TFC_SMALL_ORE_GEN],
     },
@@ -607,6 +625,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 230,
         fluid: "gtceu:tin",
+        percent_of_material: 200,
         tier: 1,
         props: [
             global.DUST_GEN, 
@@ -620,6 +639,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 1453,
         fluid: "gtceu:nickel",
+        percent_of_material: 90,
         tier: 1,
         props: [
             global.DUST_GEN,
@@ -633,6 +653,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1228,
         melt_temp: 1535,
         fluid: "gtceu:iron",
+        percent_of_material: 90,
         tier: 3,
         props: [
             global.DUST_GEN, 
@@ -646,6 +667,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1228,
         melt_temp: 1535,
         fluid: "gtceu:iron",
+        percent_of_material: 90,
         tier: 3,
         props: [
             global.DUST_GEN, 
@@ -658,6 +680,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1228,
         melt_temp: 1535,
         fluid: "gtceu:iron",
+        percent_of_material: 85,
         tier: 3,
         props: [global.TFC_SMALL_ORE_GEN],
     },
@@ -667,6 +690,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 1535,
         fluid: "gtceu:iron",
+        percent_of_material: 90,
         tier: 3,
         props: [
             global.DUST_GEN, 
@@ -680,6 +704,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 1080,
         fluid: "gtceu:copper",
+        percent_of_material: 90,
         tier: 1,
         props: [
             global.DUST_GEN, 
@@ -693,6 +718,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1228,
         melt_temp: 1535,
         fluid: "gtceu:iron",
+        percent_of_material: 90,
         tier: 3,
         props: [
             global.DUST_GEN, 
@@ -705,6 +731,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 420,
         fluid: "gtceu:zinc",
+        percent_of_material: 90,
         tier: 1,
         props: [
             global.DUST_GEN, 
@@ -718,6 +745,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 1080,
         fluid: "gtceu:copper",
+        percent_of_material: 90,
         tier: 1,
         props: [
             global.DUST_GEN, 
@@ -731,6 +759,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 864,
         melt_temp: 1080,
         fluid: "gtceu:copper",
+        percent_of_material: 90,
         tier: 1,
         props: [
             global.DUST_GEN, 
@@ -743,6 +772,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 184,
         melt_temp: 230,
         fluid: "gtceu:tin",
+        percent_of_material: 150,
         tier: 1,
         props: [
             global.DUST_GEN, 
@@ -755,6 +785,7 @@ global.METAL_TO_SPECS = {
         welding_temp: 1228,
         melt_temp: 1535,
         fluid: "gtceu:iron",
+        percent_of_material: 85,
         tier: 3,
         props: [
             global.DUST_GEN, 
@@ -1218,3 +1249,8 @@ global.TFC_ORE_MATERIALS = [
     "sphalerite",
     "tetrahedrite"
 ];
+
+global.calcAmountOfMetal = (defaultAmount, percents) => {
+    const value = defaultAmount / (100 / percents)
+    return (value % 2 == 0) ? value : Math.round(value) - 1
+}
