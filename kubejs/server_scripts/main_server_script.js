@@ -5,8 +5,10 @@
  */
 ServerEvents.tags('item', event => {
     registerTFCItemTags(event)
+    registerFirmaLifeItemTags(event)
     // registerMinecraftItemTags(event)
-    // registerCreateItemTags(event)
+    registerCreateItemTags(event)
+    registerAdAstraItemTags(event)
 })
 
 /**
@@ -59,10 +61,10 @@ ServerEvents.recipes(event => {
     registerWaterFlasksRecipes(event)
     // registerMinecraftRecipes(event)
     // registerGTCEURecipes(event)
-    // registerCreateRecipes(event)
+    registerCreateRecipes(event)
     // registerAE2Recipes(event)
     // registerComputerCraftRecipes(event)
-    // registerAdAstraRecipes(event)
+    registerAdAstraRecipes(event)
     // registerTreeTapRecipes(event)
     // registerMoreRedRecipes(event)
     // registerSophisticatedBackpacksRecipes(event)

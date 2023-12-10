@@ -24,7 +24,7 @@ const registerToolBeltRecipes = (event) => {
     ], {
         A: '#forge:string',
         B: '#forge:leather',
-        C: '#forge:plates/steel'
+        C: '#forge:plates/wrought_iron'
     })
 
     // ToolBelt с размером 3

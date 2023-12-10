@@ -2,7 +2,7 @@
 
 const registerTFCItemTags = (event) => {
     
-    // Удаление тегов у откоюченных предметов
+    // Удаление тегов у отключенных предметов
     global.TFC_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
     })
