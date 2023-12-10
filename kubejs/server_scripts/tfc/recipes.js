@@ -753,7 +753,20 @@ const registerTFCRecipes = (event) => {
         }
 
         if (metalSpecs.props.includes('dusts')) {
-            
+            // Декрафт мелкой пыли
+            event.recipes.tfc.heating(`gtceu:${metal}_tiny_dust`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 16))
+                .id(`tfg:heating/tiny_dust/${metal}`)
+
+            // Декрафт средней пыли
+            event.recipes.tfc.heating(`gtceu:${metal}_small_dust`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 36))
+                .id(`tfg:heating/small_dust/${metal}`)
+
+            // Декрафт пыли
+            event.recipes.tfc.heating(`gtceu:${metal}_dust`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .id(`tfg:heating/dust/${metal}`)
         }
 
     })
