@@ -61,7 +61,50 @@ const registerTFCMetals = (event) => {
  */
 const registerTFCHeats = (event) => {
     Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
-        
+        let metal = keyValuePair[0]
+        let metalSpecs = keyValuePair[1]
+
+        if (metalSpecs.props.includes('dusts')) {
+            event.itemHeat(`gtceu:${metal}_tiny_dust`, 0.357, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_small_dust`, 0.714, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_dust`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+        }
+
+        if (metalSpecs.props.includes('nugget')) {
+            
+            event.itemHeat(`gtceu:${metal}_nugget`, 0.124, metalSpecs.forging_temp, metalSpecs.welding_temp)
+        }
+
+        if (metalSpecs.props.includes('ore_chunks')) {
+            event.itemHeat(`gtceu:poor_raw_${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`#forge:raw_materials/${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:rich_raw_${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+        }
+
+        if (metalSpecs.props.includes('tool')) {
+            event.itemHeat(`gtceu:${metal}_sword`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_sword_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_shovel`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_shovel_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_scythe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_scythe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_pickaxe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_pickaxe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_saw`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_saw_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_knife`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_knife_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_hoe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_hoe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_hammer`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_hammer_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_axe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_axe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_file`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_file_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_butchery_knife`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_knife_butchery_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+        }
     })
 
     event.itemHeat('gtceu:compressed_coke_clay', 0.5, null, null)
