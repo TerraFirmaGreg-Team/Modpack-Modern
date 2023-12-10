@@ -100,51 +100,105 @@ const registerTFCRecipes = (event) => {
 
         if (metalSpecs.props.includes('armor'))
         {
-            // Шлем
-            event.recipes.tfc.welding(`tfc:metal/helmet/${metal}`, `tfc:metal/unfinished_helmet/${metal}`, `gtceu:${metal}_plate`)
-                .tier(metalSpecs.tier)
-                .id(`tfc:welding/${metal}_helmet`)
+            //#region Шлем
 
-            // Нагрудник
-            event.recipes.tfc.welding(`tfc:metal/chestplate/${metal}`, `tfc:metal/unfinished_chestplate/${metal}`, `gtceu:${metal}_double_plate`)
-                .tier(metalSpecs.tier)
-                .id(`tfc:welding/${metal}_chestplate`)
-
-            // Штаны
-            event.recipes.tfc.welding(`tfc:metal/greaves/${metal}`, `tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_plate`)
-                .tier(metalSpecs.tier)
-                .id(`tfc:welding/${metal}_greaves`)
-
-            // Ботинки
-            event.recipes.tfc.welding(`tfc:metal/boots/${metal}`, `tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`)
-                .tier(metalSpecs.tier)
-                .id(`tfc:welding/${metal}_boots`)
+            // Декрафт незавершенного шлема в жидкость
+            event.recipes.tfc.heating(`tfc:metal/unfinished_helmet/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .id(`tfc:heating/metal/${metal}_unfinished_helmet`)
 
             // Незавершенный шлем
             event.recipes.tfc.anvil(`tfc:metal/unfinished_helmet/${metal}`, `gtceu:${metal}_double_plate`, ['hit_last', 'bend_second_last', 'bend_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_unfinished_helmet`)
 
+            // Декрафт шлема в жидкость
+            event.recipes.tfc.heating(`tfc:metal/helmet/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 432))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_helmet`)
+
+            // Шлем
+            event.recipes.tfc.welding(`tfc:metal/helmet/${metal}`, `tfc:metal/unfinished_helmet/${metal}`, `gtceu:${metal}_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_helmet`)
+
+            //#endregion
+
+            //#region Нагрудник
+
+            // Декрафт незавершенного нагрудника в жидкость
+            event.recipes.tfc.heating(`tfc:metal/unfinished_chestplate/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .id(`tfc:heating/metal/${metal}_unfinished_chestplate`)
+
             // Незавершенный нагрудник
             event.recipes.tfc.anvil(`tfc:metal/unfinished_chestplate/${metal}`, `gtceu:${metal}_double_plate`, ['hit_last', 'hit_second_last', 'upset_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_unfinished_chestplate`)
+
+            // Декрафт нагрудника в жидкость
+            event.recipes.tfc.heating(`tfc:metal/chestplate/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 576))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_chestplate`)
+
+            // Нагрудник
+            event.recipes.tfc.welding(`tfc:metal/chestplate/${metal}`, `tfc:metal/unfinished_chestplate/${metal}`, `gtceu:${metal}_double_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_chestplate`)
+
+            //#endregion
+
+            //#region Поножи
+
+            // Декрафт незавершенных поножей в жидкость
+            event.recipes.tfc.heating(`tfc:metal/unfinished_greaves/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .id(`tfc:heating/metal/${metal}_unfinished_greaves`)
 
             // Незавершенные поножи
             event.recipes.tfc.anvil(`tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_double_plate`, ['bend_any', 'draw_any', 'hit_any'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_unfinished_greaves`)
 
+            // Декрафт поножей в жидкость
+            event.recipes.tfc.heating(`tfc:metal/greaves/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 432))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_greaves`)
+
+            // Поножи
+            event.recipes.tfc.welding(`tfc:metal/greaves/${metal}`, `tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_greaves`)
+
+            //#endregion
+
+            //#region Ботинки
+
+            // Декрафт незавершенных ботинок в жидкость
+            event.recipes.tfc.heating(`tfc:metal/unfinished_boots/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .id(`tfc:heating/metal/${metal}_unfinished_boots`)
+
             // Незавершенные ботинки
             event.recipes.tfc.anvil(`tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`, ['bend_last', 'bend_second_last', 'shrink_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_unfinished_boots`)
 
-            // Щит
-            event.recipes.tfc.anvil(`tfc:metal/shield/${metal}`, `gtceu:${metal}_double_plate`, ['upset_last', 'bend_second_last', 'bend_third_last'])
+            // Декрафт ботинок в жидкость
+            event.recipes.tfc.heating(`tfc:metal/boots/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_boots`)
+
+            // Ботинки
+            event.recipes.tfc.welding(`tfc:metal/boots/${metal}`, `tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`)
                 .tier(metalSpecs.tier)
-                .bonus(true)
-                .id(`tfc:anvil/${metal}_shield`)
+                .id(`tfc:welding/${metal}_boots`)
+
+            //#endregion
         }
 
         if (metalSpecs.props.includes('tool')) 
@@ -152,7 +206,10 @@ const registerTFCRecipes = (event) => {
             //#region Фурма
             
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_tuyere`, { item: `tfc:metal/tuyere/${metal}` }, { fluid: metalSpecs.fluid,  amount: 288 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/tuyere/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_tuyere`)
 
             // Фурма
             event.recipes.tfc.anvil(`tfc:metal/tuyere/${metal}`, `gtceu:${metal}_double_plate`, ['bend_last', 'bend_second_last'])
@@ -175,7 +232,10 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:anvil/${metal}_fish_hook`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_fishing_rod`, { item: `tfc:metal/fishing_rod/${metal}` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/fishing_rod/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_fishing_rod`)
 
             //#endregion
             
@@ -191,7 +251,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/pickaxe/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_pickaxe`, { item: `gtceu:${metal}_pickaxe` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_pickaxe`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_pickaxe`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_pickaxe_head`, `#forge:ingots/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
@@ -215,7 +278,10 @@ const registerTFCRecipes = (event) => {
             //#region Проспектор
             
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_propick`, { item: `tfc:metal/propick/${metal}` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/propick/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_propick`)
 
             // Металл + Форма -> Оголовье
             if (metalSpecs.canBeUnmolded) {
@@ -242,7 +308,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/axe/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_axe`, { item: `gtceu:${metal}_axe` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_axe`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_axe`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_axe_head`, `#forge:ingots/${metal}`, ['punch_last', 'hit_second_last', 'upset_third_last'])
@@ -275,7 +344,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/shovel/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_shovel`, { item: `gtceu:${metal}_shovel` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_shovel`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_shovel`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_shovel_head`, `#forge:ingots/${metal}`, ['punch_last', 'hit_not_last'])
@@ -308,7 +380,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/hoe/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_hoe`, { item: `gtceu:${metal}_hoe` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_hoe`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_hoe`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_hoe_head`, `#forge:ingots/${metal}`, ['punch_last', 'hit_not_last', 'bend_not_last'])
@@ -332,7 +407,10 @@ const registerTFCRecipes = (event) => {
             //#region Стамеска
             
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_chisel`, { item: `tfc:metal/chisel/${metal}` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/chisel/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_chisel`)
 
             // Металл + Форма -> Оголовье
             if (metalSpecs.canBeUnmolded) {
@@ -359,7 +437,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/hammer/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_hammer`, { item: `gtceu:${metal}_hammer` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_hammer`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_hammer`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_hammer_head`, `#forge:ingots/${metal}`, ['punch_last', 'shrink_not_last'])
@@ -392,7 +473,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/saw/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_saw`, { item: `gtceu:${metal}_saw` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_saw`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_saw`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_saw_head`, `#forge:ingots/${metal}`, ['hit_last', 'hit_second_last'])
@@ -416,7 +500,10 @@ const registerTFCRecipes = (event) => {
             //#region Копье
             
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_javelin`, { item: `tfc:metal/javelin/${metal}` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/javelin/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_javelin`)
 
             // Металл + Форма -> Оголовье
             if (metalSpecs.canBeUnmolded) {
@@ -443,23 +530,26 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/sword/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_sword`, { item: `gtceu:${metal}_sword` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_sword`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_sword`)
 
             // Крафт оголовья
-            event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `#forge:ingots/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
+            event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `#forge:ingots/double/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
                 .tier(metalSpecs.tier)
                 .bonus(true)
                 .id(`tfc:anvil/${metal}_sword_blade`)
 
             // Металл + Форма -> Оголовье
             if (metalSpecs.canBeUnmolded) {
-                event.recipes.tfc.casting(`gtceu:${metal}_sword_head`, 'tfc:ceramic/sword_blade_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 1)
+                event.recipes.tfc.casting(`gtceu:${metal}_sword_head`, 'tfc:ceramic/sword_blade_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 288), 1)
                     .id(`tfc:casting/${metal}_sword_blade`)
             }
 
             // Декрафт оголовья в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_sword_head`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
                 .id(`tfc:heating/metal/${metal}_sword_blade`)
 
             //#endregion
@@ -467,17 +557,20 @@ const registerTFCRecipes = (event) => {
             //#region Дубина
             
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_mace`, { item: `tfc:metal/mace/${metal}` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/mace/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_mace`)
 
             // Металл + Форма -> Оголовье
             if (metalSpecs.canBeUnmolded) {
-                event.recipes.tfc.casting(`tfc:metal/mace_head/${metal}`, 'tfc:ceramic/mace_head_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 1)
+                event.recipes.tfc.casting(`tfc:metal/mace_head/${metal}`, 'tfc:ceramic/mace_head_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 288), 1)
                     .id(`tfc:casting/${metal}_mace_head`)
             }
 
             // Декрафт оголовья в жидкость
             event.recipes.tfc.heating(`tfc:metal/mace_head/${metal}`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
                 .id(`tfc:heating/metal/${metal}_mace_head`)
 
             //#endregion
@@ -494,7 +587,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/knife/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_knife`, { item: `gtceu:${metal}_knife` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_knife`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_knife`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_knife_head`, `#forge:ingots/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
@@ -527,7 +623,10 @@ const registerTFCRecipes = (event) => {
             }).id(`tfc:crafting/metal/scythe/${metal}`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_scythe`, { item: `gtceu:${metal}_scythe` }, { fluid: metalSpecs.fluid,  amount: 144 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`gtceu:${metal}_scythe`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_scythe`)
 
             // Крафт оголовья
             event.recipes.tfc.anvil(`gtceu:${metal}_scythe_head`, `#forge:ingots/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
@@ -552,10 +651,39 @@ const registerTFCRecipes = (event) => {
 
             // Сварка оголовий
             event.recipes.tfc.welding(`tfc:metal/shears/${metal}`, `gtceu:${metal}_knife_head`, `gtceu:${metal}_knife_head`, metalSpecs.tier)
+                .id(`tfc:welding/${metal}_shears`)
 
             // Декрафт инструмента в жидкость
-            addHeatingItemToFluidRecipe(event, `tfc:heating/metal/${metal}_shears`, { item: `tfc:metal/shears/${metal}` }, { fluid: metalSpecs.fluid,  amount: 288 }, metalSpecs.melt_temp, true )
+            event.recipes.tfc.heating(`tfc:metal/shears/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_shears`)
 
+            //#endregion
+
+            //#region Щит
+
+            // Декрафт щита в жидкость
+            event.recipes.tfc.heating(`tfc:metal/shield/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_shield`)
+
+            // Щит
+            event.recipes.tfc.anvil(`tfc:metal/shield/${metal}`, `gtceu:${metal}_double_plate`, ['upset_last', 'bend_second_last', 'bend_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_shield`)
+
+            //#endregion
+
+            //#region Конская броня
+            
+            // Декрафт конской брони в жидкость
+            event.recipes.tfc.heating(`tfc:metal/horse_armor/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 864))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_horse_armor`)
+            
             //#endregion
 
         }
