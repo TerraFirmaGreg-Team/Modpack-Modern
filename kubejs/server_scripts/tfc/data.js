@@ -60,6 +60,10 @@ const registerTFCMetals = (event) => {
     )
  */
 const registerTFCHeats = (event) => {
+    Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
+        
+    })
+
     event.itemHeat('gtceu:compressed_coke_clay', 0.5, null, null)
 }
 
