@@ -1,10 +1,6 @@
 // priority: 0
 
-const registerTFCDataPacks = (event) => {
-    
-}
-
-const registerTFCData = (event) => {
+const registerTFCDataForTFC = (event) => {
     registerTFCMetals(event)
     registerTFCHeats(event)
     registerTFCFuels(event)
@@ -106,8 +102,6 @@ const registerTFCHeats = (event) => {
             event.itemHeat(`gtceu:${metal}_knife_butchery_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
         }
     })
-
-    event.itemHeat('gtceu:compressed_coke_clay', 0.5, null, null)
 }
 
 /**

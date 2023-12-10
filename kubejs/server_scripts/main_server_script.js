@@ -4,9 +4,9 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    //registerMinecraftItemTags(event)
     registerTFCItemTags(event)
-    //registerCreateItemTags(event)
+    // registerMinecraftItemTags(event)
+    // registerCreateItemTags(event)
 })
 
 /**
@@ -36,7 +36,6 @@ ServerEvents.tags('worldgen/placed_feature', event => {
  * Срабатывает до инициализации рецептов.
  */
 ServerEvents.highPriorityData(event => {
-    // registerTFCDataPacks(event)
 })
 
 /**
@@ -44,7 +43,10 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов.
  */
 TFCEvents.data(event => {
-    registerTFCData(event)
+    registerTFCDataForTFC(event)
+    registerTFCDataForFirmaLife(event)
+    registerTFCDataForWaterFlasks(event)
+    registerTFCDataForGTCEU(event)
 })
 
 /**
@@ -52,10 +54,10 @@ TFCEvents.data(event => {
  * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
-    // registerMinecraftRecipes(event)
     registerTFCRecipes(event)
     registerFirmaLifeRecipes(event)
     registerWaterFlasksRecipes(event)
+    // registerMinecraftRecipes(event)
     // registerGTCEURecipes(event)
     // registerCreateRecipes(event)
     // registerAE2Recipes(event)
