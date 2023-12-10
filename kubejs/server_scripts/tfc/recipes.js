@@ -7,8 +7,7 @@ const registerTFCRecipes = (event) => {
         let metalSpecs = keyValuePair[1]
 
         // Одинарные слитки
-        if (metalSpecs.props.includes('ingot'))
-        {
+        if (metalSpecs.props.includes('ingot')) {
             // Металлы дублирующие гт
             if (metalSpecs.isGTDup != undefined)
             {
@@ -45,16 +44,14 @@ const registerTFCRecipes = (event) => {
         }
 
         // Двойные слитки
-        if (metalSpecs.props.includes('double_ingot'))
-        {
+        if (metalSpecs.props.includes('double_ingot')) {
             // Декрафт двойного слитка в жидкость
             event.recipes.tfc.heating(`tfc:metal/double_ingot/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 288))
                 .id(`tfc:heating/metal/${metal}_double_ingot`)
         }
 
-        if (metalSpecs.props.includes('part'))
-        {
+        if (metalSpecs.props.includes('part')) {
             // Удаление рецептов блоков
             event.remove({ id: `tfc:crafting/metal/block/${metal}` })
             event.remove({ id: `tfc:heating/metal/${metal}_block` })
@@ -98,8 +95,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:heating/metal/${metal}_double_sheet`)
         }
 
-        if (metalSpecs.props.includes('armor'))
-        {
+        if (metalSpecs.props.includes('armor')) {
             //#region Шлем
 
             // Декрафт незавершенного шлема в жидкость
@@ -201,8 +197,7 @@ const registerTFCRecipes = (event) => {
             //#endregion
         }
 
-        if (metalSpecs.props.includes('tool')) 
-        {
+        if (metalSpecs.props.includes('tool')) {
             //#region Фурма
             
             // Декрафт инструмента в жидкость
@@ -688,8 +683,7 @@ const registerTFCRecipes = (event) => {
 
         }
 
-        if (metalSpecs.props.includes('utility'))
-        {
+        if (metalSpecs.props.includes('utility')) {
             // Декрафт незавершенной лампы в жидкость
             event.recipes.tfc.heating(`tfc:metal/unfinished_lamp/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 144))
@@ -756,6 +750,10 @@ const registerTFCRecipes = (event) => {
             event.remove({ id: `tfc:heating/ore/poor_native_${metal}` })
             event.remove({ id: `tfc:heating/ore/normal_native_${metal}` })
             event.remove({ id: `tfc:heating/ore/rich_native_${metal}` })
+        }
+
+        if (metalSpecs.props.includes('dusts')) {
+            
         }
 
     })
@@ -851,6 +849,16 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    // Декрафт Jacks
+    event.recipes.tfc.heating('tfc:jacks', 930)
+        .resultFluid(Fluid.of('gtceu:brass', 144))
+        .id(`tfc:heating/jacks`)
+
+    // Декрафт Gem Saw
+    event.recipes.tfc.heating('tfc:gem_saw', 930)
+        .resultFluid(Fluid.of('gtceu:brass', 72))
+        .id(`tfc:heating/gem_saw`)
+
     // Декрафт сырой крицы в жидкость
     event.recipes.tfc.heating(`tfc:raw_iron_bloom`, 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
@@ -881,5 +889,13 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.anvil('gtceu:blue_steel_ingot', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
         .id('tfc:anvil/blue_steel_ingot')
 
-        
+    // Доменная печь
+    event.shaped('tfc:blast_furnace', [
+        'AAA', 
+        'ABA',
+        'AAA'  
+    ], {
+        A: '#forge:plates/wrought_iron',
+        B: 'tfc:crucible'
+    }).id('tfc:crafting/blast_furnace')
 }

@@ -768,6 +768,70 @@ global.METAL_TO_SPECS = {
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
 global.TFC_DISABLED_ITEMS = [
+    
+    // Blocks
+    'tfc:metal/block/bismuth', 
+    'tfc:metal/block/bismuth_bronze', 
+    'tfc:metal/block/black_bronze', 
+    'tfc:metal/block/bronze', 
+    'tfc:metal/block/brass', 
+    'tfc:metal/block/copper', 
+    'tfc:metal/block/gold', 
+    'tfc:metal/block/nickel', 
+    'tfc:metal/block/rose_gold', 
+    'tfc:metal/block/silver', 
+    'tfc:metal/block/tin', 
+    'tfc:metal/block/zinc', 
+    'tfc:metal/block/sterling_silver', 
+    'tfc:metal/block/wrought_iron', 
+    'tfc:metal/block/cast_iron', 
+    'tfc:metal/block/steel', 
+    'tfc:metal/block/black_steel', 
+    'tfc:metal/block/blue_steel', 
+    'tfc:metal/block/red_steel',
+
+    // Stairs
+    'tfc:metal/block/bismuth_stairs', 
+    'tfc:metal/block/bismuth_bronze_stairs', 
+    'tfc:metal/block/black_bronze_stairs', 
+    'tfc:metal/block/bronze_stairs', 
+    'tfc:metal/block/brass_stairs', 
+    'tfc:metal/block/copper_stairs', 
+    'tfc:metal/block/gold_stairs', 
+    'tfc:metal/block/nickel_stairs', 
+    'tfc:metal/block/rose_gold_stairs', 
+    'tfc:metal/block/silver_stairs', 
+    'tfc:metal/block/tin_stairs', 
+    'tfc:metal/block/zinc_stairs', 
+    'tfc:metal/block/sterling_silver_stairs', 
+    'tfc:metal/block/wrought_iron_stairs', 
+    'tfc:metal/block/cast_iron_stairs', 
+    'tfc:metal/block/steel_stairs', 
+    'tfc:metal/block/black_steel_stairs', 
+    'tfc:metal/block/blue_steel_stairs', 
+    'tfc:metal/block/red_steel_stairs',
+
+    // Slabs
+    'tfc:metal/block/bismuth_slab', 
+    'tfc:metal/block/bismuth_bronze_slab', 
+    'tfc:metal/block/black_bronze_slab', 
+    'tfc:metal/block/bronze_slab', 
+    'tfc:metal/block/brass_slab', 
+    'tfc:metal/block/copper_slab', 
+    'tfc:metal/block/gold_slab', 
+    'tfc:metal/block/nickel_slab', 
+    'tfc:metal/block/rose_gold_slab', 
+    'tfc:metal/block/silver_slab', 
+    'tfc:metal/block/tin_slab', 
+    'tfc:metal/block/zinc_slab', 
+    'tfc:metal/block/sterling_silver_slab', 
+    'tfc:metal/block/wrought_iron_slab', 
+    'tfc:metal/block/cast_iron_slab', 
+    'tfc:metal/block/steel_slab', 
+    'tfc:metal/block/black_steel_slab', 
+    'tfc:metal/block/blue_steel_slab', 
+    'tfc:metal/block/red_steel_slab',
+
     // Ingots
     "tfc:metal/ingot/bismuth",
     "tfc:metal/ingot/bismuth_bronze",
@@ -787,6 +851,10 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/silver",
     "tfc:metal/ingot/tin",
     "tfc:metal/ingot/zinc",
+    "tfc:metal/ingot/cast_iron",
+
+    // Double Ingots
+    "tfc:metal/double_ingot/cast_iron",
     
     // Sheets
     "tfc:metal/sheet/bismuth",
@@ -808,6 +876,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/sheet/silver",
     "tfc:metal/sheet/tin",
     "tfc:metal/sheet/zinc",
+    "tfc:metal/sheet/cast_iron",
     
     // Double Sheets
     "tfc:metal/double_sheet/bismuth",
@@ -829,6 +898,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/double_sheet/silver",
     "tfc:metal/double_sheet/tin",
     "tfc:metal/double_sheet/zinc",
+    "tfc:metal/double_sheet/cast_iron",
     
     // Rods
     "tfc:metal/rod/bismuth",
@@ -850,8 +920,8 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/rod/silver",
     "tfc:metal/rod/tin",
     "tfc:metal/rod/zinc",
+    "tfc:metal/rod/cast_iron",
     
-    /*
     // Tool Heads
     // Copper
     'tfc:metal/pickaxe/copper', 
@@ -1032,7 +1102,8 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:metal/knife_blade/blue_steel', 
     'tfc:metal/scythe/blue_steel', 
     'tfc:metal/scythe_blade/blue_steel',
-
+    
+    /*
     // Ores
     'tfc:ore/poor_native_copper', 
     'tfc:ore/normal_native_copper', 
@@ -1101,71 +1172,7 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:ore/bituminous_coal',
     'tfc:ore/lignite',
     'tfc:ore/halite',
-
-    // Blocks
-    'tfc:metal/block/bismuth', 
-    'tfc:metal/block/bismuth_bronze', 
-    'tfc:metal/block/black_bronze', 
-    'tfc:metal/block/bronze', 
-    'tfc:metal/block/brass', 
-    'tfc:metal/block/copper', 
-    'tfc:metal/block/gold', 
-    'tfc:metal/block/nickel', 
-    'tfc:metal/block/rose_gold', 
-    'tfc:metal/block/silver', 
-    'tfc:metal/block/tin', 
-    'tfc:metal/block/zinc', 
-    'tfc:metal/block/sterling_silver', 
-    'tfc:metal/block/wrought_iron', 
-    'tfc:metal/block/cast_iron', 
-    'tfc:metal/block/steel', 
-    'tfc:metal/block/black_steel', 
-    'tfc:metal/block/blue_steel', 
-    'tfc:metal/block/red_steel',
-
-    // Stairs
-    'tfc:metal/block/bismuth_stairs', 
-    'tfc:metal/block/bismuth_bronze_stairs', 
-    'tfc:metal/block/black_bronze_stairs', 
-    'tfc:metal/block/bronze_stairs', 
-    'tfc:metal/block/brass_stairs', 
-    'tfc:metal/block/copper_stairs', 
-    'tfc:metal/block/gold_stairs', 
-    'tfc:metal/block/nickel_stairs', 
-    'tfc:metal/block/rose_gold_stairs', 
-    'tfc:metal/block/silver_stairs', 
-    'tfc:metal/block/tin_stairs', 
-    'tfc:metal/block/zinc_stairs', 
-    'tfc:metal/block/sterling_silver_stairs', 
-    'tfc:metal/block/wrought_iron_stairs', 
-    'tfc:metal/block/cast_iron_stairs', 
-    'tfc:metal/block/steel_stairs', 
-    'tfc:metal/block/black_steel_stairs', 
-    'tfc:metal/block/blue_steel_stairs', 
-    'tfc:metal/block/red_steel_stairs',
-
-    // Slabs
-    'tfc:metal/block/bismuth_slab', 
-    'tfc:metal/block/bismuth_bronze_slab', 
-    'tfc:metal/block/black_bronze_slab', 
-    'tfc:metal/block/bronze_slab', 
-    'tfc:metal/block/brass_slab', 
-    'tfc:metal/block/copper_slab', 
-    'tfc:metal/block/gold_slab', 
-    'tfc:metal/block/nickel_slab', 
-    'tfc:metal/block/rose_gold_slab', 
-    'tfc:metal/block/silver_slab', 
-    'tfc:metal/block/tin_slab', 
-    'tfc:metal/block/zinc_slab', 
-    'tfc:metal/block/sterling_silver_slab', 
-    'tfc:metal/block/wrought_iron_slab', 
-    'tfc:metal/block/cast_iron_slab', 
-    'tfc:metal/block/steel_slab', 
-    'tfc:metal/block/black_steel_slab', 
-    'tfc:metal/block/blue_steel_slab', 
-    'tfc:metal/block/red_steel_slab',*/
-
-
+    */
 ];
 
 global.TFC_SIMPLE_MATERIALS = [

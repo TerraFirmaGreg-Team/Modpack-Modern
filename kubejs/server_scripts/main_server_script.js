@@ -54,6 +54,8 @@ TFCEvents.data(event => {
 ServerEvents.recipes(event => {
     // registerMinecraftRecipes(event)
     registerTFCRecipes(event)
+    registerFirmaLifeRecipes(event)
+    registerWaterFlasksRecipes(event)
     // registerGTCEURecipes(event)
     // registerCreateRecipes(event)
     // registerAE2Recipes(event)
