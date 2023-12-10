@@ -107,6 +107,11 @@ const registerTFCRecipes = (event) => {
                 .tier(metalSpecs.tier)
                 .id(`tfc:welding/${metal}_helmet`)
 
+            // Нагрудник
+            event.recipes.tfc.welding(`tfc:metal/chestplate/${metal}`, `tfc:metal/unfinished_chestplate/${metal}`, `gtceu:${metal}_double_plate`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:welding/${metal}_chestplate`)
+
             // Штаны
             event.recipes.tfc.welding(`tfc:metal/greaves/${metal}`, `tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_plate`)
                 .tier(metalSpecs.tier)
@@ -117,14 +122,40 @@ const registerTFCRecipes = (event) => {
                 .tier(metalSpecs.tier)
                 .id(`tfc:welding/${metal}_boots`)
 
+            // Незавершенный шлем
+            event.recipes.tfc.anvil(`tfc:metal/unfinished_helmet/${metal}`, `gtceu:${metal}_double_plate`, ['hit_last', 'bend_second_last', 'bend_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_unfinished_helmet`)
+
+            // Незавершенный нагрудник
+            event.recipes.tfc.anvil(`tfc:metal/unfinished_chestplate/${metal}`, `gtceu:${metal}_double_plate`, ['hit_last', 'hit_second_last', 'upset_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_unfinished_chestplate`)
+
+            // Незавершенные поножи
+            event.recipes.tfc.anvil(`tfc:metal/unfinished_greaves/${metal}`, `gtceu:${metal}_double_plate`, ['bend_any', 'draw_any', 'hit_any'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_unfinished_greaves`)
+
             // Незавершенные ботинки
             event.recipes.tfc.anvil(`tfc:metal/unfinished_boots/${metal}`, `gtceu:${metal}_plate`, ['bend_last', 'bend_second_last', 'shrink_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_unfinished_boots`)
+
+            // Щит
+            event.recipes.tfc.anvil(`tfc:metal/shield/${metal}`, `gtceu:${metal}_double_plate`, ['upset_last', 'bend_second_last', 'bend_third_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_shield`)
         }
 
         if (metalSpecs.props.includes('tool'))
         {
+            // Херь для горна
+            event.recipes.tfc.anvil(`tfc:metal/tuyere/${metal}`, `gtceu:${metal}_double_plate`, ['bend_last', 'bend_second_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_tuyere`)
+
             // Оголовье меча
             event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'bend_second_last', 'bend_third_last'])
                 .tier(metalSpecs.tier)
@@ -149,6 +180,11 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.anvil(`8x tfc:metal/bars/${metal}`, `gtceu:${metal}_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_bars`)
+
+            // 16x Решетка
+            event.recipes.tfc.anvil(`16x tfc:metal/bars/${metal}`, `gtceu:${metal}_double_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_bars_double`)
         }
     })
 
