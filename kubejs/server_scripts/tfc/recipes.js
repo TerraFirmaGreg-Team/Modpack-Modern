@@ -728,6 +728,22 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.heating(`tfc:metal/anvil/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 2016))
                 .id(`tfc:heating/metal/${metal}_anvil`)
+            
+            // Наковальня из слитков
+            event.recipes.gtceu.alloy_smelter(`ingots_to_${metal}_anvil`)             
+                .itemInputs(`14x #forge:ingots/${metal}`)
+                .notConsumable('gtceu:anvil_casting_mold')
+                .itemOutputs(`tfc:metal/anvil/${metal}`)
+                .duration(1680)
+                .EUt(16)
+
+            // Наковальня из жидкости
+            event.recipes.gtceu.fluid_solidifier(`solidify_${metal}_anvil`)             
+                .inputFluids(Fluid.of(metalSpecs.fluid, 2016))
+                .notConsumable('gtceu:anvil_casting_mold')
+                .itemOutputs(`tfc:metal/anvil/${metal}`)
+                .duration(1680)
+                .EUt(16)
         }
 
         if (metalSpecs.props.includes('small_ore')) {
@@ -906,6 +922,11 @@ const registerTFCRecipes = (event) => {
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
         .id(`tfc:heating/refined_bloom`)
 
+    // Гриль
+    event.recipes.tfc.heating('tfc:wrought_iron_grill', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
+        .id(`tfc:heating/grill`)
+
     // Bloom -> Wrought Iron Ingot
     event.recipes.tfc.anvil('gtceu:wrought_iron_ingot', 'tfc:refined_iron_bloom', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(2)
         .id('tfc:anvil/wrought_iron_from_bloom')
@@ -926,6 +947,329 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.anvil('gtceu:blue_steel_ingot', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
         .id('tfc:anvil/blue_steel_ingot')
 
+    //#region Порошки
+    
+    event.remove({ id: 'tfc:quern/cryolite' })
+    event.remove({ id: 'tfc:quern/sylvite' })
+
+    // 2x Coke Powder
+    event.recipes.tfc.quern('2x tfc:powder/coke', '#forge:gems/coke')
+        .id('tfg:quern/coke_powder')
+
+    // 2x Amethyst Powder
+    event.recipes.tfc.quern('2x tfc:powder/amethyst', '#forge:raw_materials/amethyst')
+        .id('tfc:quern/amethyst')
+
+    // 2x Diamond Powder
+    event.recipes.tfc.quern('2x tfc:powder/diamond', '#forge:raw_materials/diamond')
+        .id('tfc:quern/diamond')
+    
+    // 2x Emerald Powder
+    event.recipes.tfc.quern('2x tfc:powder/emerald', '#forge:raw_materials/emerald')
+        .id('tfc:quern/emerald')
+
+    // 2x Lapis Lazuli Powder
+    event.recipes.tfc.quern('2x tfc:powder/lapis_lazuli', '#forge:raw_materials/lapis')
+        .id('tfc:quern/lapis_lazuli')
+
+    // 2x Opal Powder
+    event.recipes.tfc.quern('2x tfc:powder/opal', '#forge:raw_materials/opal')
+        .id('tfc:quern/opal')
+
+    // 2x Pyrite Powder
+    event.recipes.tfc.quern('2x tfc:powder/pyrite', '#forge:raw_materials/pyrite')
+        .id('tfc:quern/pyrite')
+
+    // 2x Ruby Powder
+    event.recipes.tfc.quern('2x tfc:powder/ruby', '#forge:raw_materials/ruby')
+        .id('tfc:quern/ruby')
+
+    // 2x Sapphire Powder
+    event.recipes.tfc.quern('2x tfc:powder/sapphire', '#forge:raw_materials/sapphire')
+        .id('tfc:quern/sapphire')
+
+    // 2x Topaz Powder
+    event.recipes.tfc.quern('2x tfc:powder/topaz', '#forge:raw_materials/topaz')
+        .id('tfc:quern/topaz')
+
+    // 1x Gold Powder
+    event.recipes.tfc.quern('1x tfc:powder/native_gold', 'tfc:ore/small_native_gold')
+        .id('tfc:quern/small_native_gold')
+
+    // 2x Gold Powder
+    event.recipes.tfc.quern('2x tfc:powder/native_gold', '#forge:poor_raw_materials/gold')
+        .id('tfc:quern/poor_native_gold')
+
+    // 4x Gold Powder
+    event.recipes.tfc.quern('4x tfc:powder/native_gold', '#forge:raw_materials/gold')
+        .id('tfc:quern/normal_native_gold')
+
+    // 6x Gold Powder
+    event.recipes.tfc.quern('6x tfc:powder/native_gold', '#forge:rich_raw_materials/gold')
+        .id('tfc:quern/rich_native_gold')
+
+    // 1x Silver Powder
+    event.recipes.tfc.quern('1x tfc:powder/native_silver', 'tfc:ore/small_native_silver')
+        .id('tfc:quern/small_native_silver')
+
+    // 2x Silver Powder
+    event.recipes.tfc.quern('2x tfc:powder/native_silver', '#forge:poor_raw_materials/silver')
+        .id('tfc:quern/poor_native_silver')
+
+    // 4x Silver Powder
+    event.recipes.tfc.quern('4x tfc:powder/native_silver', '#forge:raw_materials/silver')
+        .id('tfc:quern/normal_native_silver')
+
+    // 6x Silver Powder
+    event.recipes.tfc.quern('6x tfc:powder/native_silver', '#forge:rich_raw_materials/silver')
+        .id('tfc:quern/rich_native_silver')
+
+    // 1x Cassiterite Powder
+    event.recipes.tfc.quern('1x tfc:powder/cassiterite', 'tfc:ore/small_cassiterite')
+        .id('tfc:quern/small_cassiterite')
+
+    // 2x Cassiterite Powder
+    event.recipes.tfc.quern('2x tfc:powder/cassiterite', '#forge:poor_raw_materials/cassiterite')
+        .id('tfc:quern/poor_cassiterite')
+
+    // 4x Cassiterite Powder
+    event.recipes.tfc.quern('4x tfc:powder/cassiterite', '#forge:raw_materials/cassiterite')
+        .id('tfc:quern/normal_cassiterite')
+
+    // 6x Cassiterite Powder
+    event.recipes.tfc.quern('6x tfc:powder/cassiterite', '#forge:rich_raw_materials/cassiterite')
+        .id('tfc:quern/rich_cassiterite')
+
+    // 1x Bismuth Powder
+    event.recipes.tfc.quern('1x tfc:powder/bismuthinite', 'tfc:ore/small_bismuthinite')
+        .id('tfc:quern/small_bismuthinite')
+
+    // 2x Bismuth Powder
+    event.recipes.tfc.quern('2x tfc:powder/bismuthinite', '#forge:poor_raw_materials/bismuth')
+        .id('tfc:quern/poor_bismuthinite')
+
+    // 4x Bismuth Powder
+    event.recipes.tfc.quern('4x tfc:powder/bismuthinite', '#forge:raw_materials/bismuth')
+        .id('tfc:quern/normal_bismuthinite')
+
+    // 6x Bismuth Powder
+    event.recipes.tfc.quern('6x tfc:powder/bismuthinite', '#forge:rich_raw_materials/bismuth')
+        .id('tfc:quern/rich_bismuthinite')
+
+    // 1x Garnierite Powder
+    event.recipes.tfc.quern('1x tfc:powder/garnierite', 'tfc:ore/small_garnierite')
+        .id('tfc:quern/small_garnierite')
+
+    // 2x Garnierite Powder
+    event.recipes.tfc.quern('2x tfc:powder/garnierite', '#forge:poor_raw_materials/garnierite')
+        .id('tfc:quern/poor_garnierite')
+
+    // 4x Garnierite Powder
+    event.recipes.tfc.quern('4x tfc:powder/garnierite', '#forge:raw_materials/garnierite')
+        .id('tfc:quern/normal_garnierite')
+
+    // 6x Garnierite Powder
+    event.recipes.tfc.quern('6x tfc:powder/garnierite', '#forge:rich_raw_materials/garnierite')
+        .id('tfc:quern/rich_garnierite')
+    
+    // 2x Nickel Powder
+    event.recipes.tfc.quern('2x tfc:powder/garnierite', '#forge:poor_raw_materials/nickel')
+        .id('tfc:quern/poor_nickel')
+
+    // 4x Nickel Powder
+    event.recipes.tfc.quern('4x tfc:powder/garnierite', '#forge:raw_materials/nickel')
+        .id('tfc:quern/normal_nickel')
+
+    // 6x Nickel Powder
+    event.recipes.tfc.quern('6x tfc:powder/garnierite', '#forge:rich_raw_materials/nickel')
+        .id('tfc:quern/rich_nickel')
+
+    // 1x Sphalerite Powder
+    event.recipes.tfc.quern('1x tfc:powder/sphalerite', 'tfc:ore/small_sphalerite')
+        .id('tfc:quern/small_sphalerite')
+
+    // 2x Sphalerite Powder
+    event.recipes.tfc.quern('2x tfc:powder/sphalerite', '#forge:poor_raw_materials/sphalerite')
+        .id('tfc:quern/poor_sphalerite')
+
+    // 4x Sphalerite Powder
+    event.recipes.tfc.quern('4x tfc:powder/sphalerite', '#forge:raw_materials/sphalerite')
+        .id('tfc:quern/normal_sphalerite')
+
+    // 6x Sphalerite Powder
+    event.recipes.tfc.quern('6x tfc:powder/sphalerite', '#forge:rich_raw_materials/sphalerite')
+        .id('tfc:quern/rich_sphalerite')
+
+    // 1x Magnetite Powder
+    event.recipes.tfc.quern('1x tfc:powder/magnetite', 'tfc:ore/small_magnetite')
+        .id('tfc:quern/small_magnetite')
+
+    // 2x Magnetite Powder
+    event.recipes.tfc.quern('2x tfc:powder/magnetite', '#forge:poor_raw_materials/magnetite')
+        .id('tfc:quern/poor_magnetite')
+
+    // 4x Magnetite Powder
+    event.recipes.tfc.quern('4x tfc:powder/magnetite', '#forge:raw_materials/magnetite')
+        .id('tfc:quern/normal_magnetite')
+
+    // 6x Magnetite Powder
+    event.recipes.tfc.quern('6x tfc:powder/magnetite', '#forge:rich_raw_materials/magnetite')
+        .id('tfc:quern/rich_magnetite')
+
+    // 1x Tetrahedrite Powder
+    event.recipes.tfc.quern('1x tfc:powder/tetrahedrite', 'tfc:ore/small_tetrahedrite')
+        .id('tfc:quern/small_tetrahedrite')
+
+    // 2x Tetrahedrite Powder
+    event.recipes.tfc.quern('2x tfc:powder/tetrahedrite', '#forge:poor_raw_materials/tetrahedrite')
+        .id('tfc:quern/poor_tetrahedrite')
+
+    // 4x Tetrahedrite Powder
+    event.recipes.tfc.quern('4x tfc:powder/tetrahedrite', '#forge:raw_materials/tetrahedrite')
+        .id('tfc:quern/normal_tetrahedrite')
+
+    // 6x Tetrahedrite Powder
+    event.recipes.tfc.quern('6x tfc:powder/tetrahedrite', '#forge:rich_raw_materials/tetrahedrite')
+        .id('tfc:quern/rich_tetrahedrite')
+
+    // 1x Malachite Powder
+    event.recipes.tfc.quern('1x tfc:powder/malachite', 'tfc:ore/small_malachite')
+        .id('tfc:quern/small_malachite')
+
+    // 2x Malachite Powder
+    event.recipes.tfc.quern('2x tfc:powder/malachite', '#forge:poor_raw_materials/malachite')
+        .id('tfc:quern/poor_malachite')
+
+    // 4x Malachite Powder
+    event.recipes.tfc.quern('4x tfc:powder/malachite', '#forge:raw_materials/malachite')
+        .id('tfc:quern/normal_malachite')
+
+    // 6x Malachite Powder
+    event.recipes.tfc.quern('6x tfc:powder/malachite', '#forge:rich_raw_materials/malachite')
+        .id('tfc:quern/rich_malachite')
+
+    // 1x Malachite Powder
+    event.recipes.tfc.quern('1x tfc:powder/limonite', 'tfc:ore/small_limonite')
+        .id('tfc:quern/small_limonite')
+
+    // 2x Limonite Powder
+    event.recipes.tfc.quern('2x tfc:powder/limonite', '#forge:poor_raw_materials/yellow_limonite')
+        .id('tfc:quern/poor_limonite')
+
+    // 4x Limonite Powder
+    event.recipes.tfc.quern('4x tfc:powder/limonite', '#forge:raw_materials/yellow_limonite')
+        .id('tfc:quern/normal_limonite')
+
+    // 6x Limonite Powder
+    event.recipes.tfc.quern('6x tfc:powder/limonite', '#forge:rich_raw_materials/yellow_limonite')
+        .id('tfc:quern/rich_limonite')
+
+    // 1x Hematite Powder
+    event.recipes.tfc.quern('1x tfc:powder/hematite', 'tfc:ore/small_hematite')
+        .id('tfc:quern/small_hematite')
+
+    // 2x Hematite Powder
+    event.recipes.tfc.quern('2x tfc:powder/hematite', '#forge:poor_raw_materials/hematite')
+        .id('tfc:quern/poor_hematite')
+
+    // 4x Hematite Powder
+    event.recipes.tfc.quern('4x tfc:powder/hematite', '#forge:raw_materials/hematite')
+        .id('tfc:quern/normal_hematite')
+
+    // 6x Hematite Powder
+    event.recipes.tfc.quern('6x tfc:powder/hematite', '#forge:rich_raw_materials/hematite')
+        .id('tfc:quern/rich_hematite')
+
+    // 1x Copper Powder
+    event.recipes.tfc.quern('1x tfc:powder/native_copper', 'tfc:ore/small_native_copper')
+        .id('tfc:quern/small_native_copper')
+
+    // 2x Copper Powder
+    event.recipes.tfc.quern('2x tfc:powder/native_copper', '#forge:poor_raw_materials/copper')
+        .id('tfc:quern/poor_native_copper')
+
+    // 4x Copper Powder
+    event.recipes.tfc.quern('4x tfc:powder/native_copper', '#forge:raw_materials/copper')
+        .id('tfc:quern/normal_native_copper')
+
+    // 6x Copper Powder
+    event.recipes.tfc.quern('6x tfc:powder/native_copper', '#forge:rich_raw_materials/copper')
+        .id('tfc:quern/rich_native_copper')
+
+    // 2x Cinnabar Powder
+    event.recipes.tfc.quern('2x minecraft:redstone', '#forge:poor_raw_materials/cinnabar')
+        .id('tfc:quern/cinnabar')
+
+    // 4x Cinnabar Powder
+    event.recipes.tfc.quern('4x minecraft:redstone', '#forge:raw_materials/cinnabar')
+        .id('tfc:quern/normal_cinnabar')
+
+    // 6x Cinnabar Powder
+    event.recipes.tfc.quern('6x minecraft:redstone', '#forge:rich_raw_materials/cinnabar')
+        .id('tfc:quern/rich_cinnabar')
+
+    // 2x Sulfur Powder
+    event.recipes.tfc.quern('2x tfc:powder/sulfur', '#forge:poor_raw_materials/sulfur')
+        .id('tfc:quern/sulfur')
+
+    // 4x Sulfur Powder
+    event.recipes.tfc.quern('4x tfc:powder/sulfur', '#forge:raw_materials/sulfur')
+        .id('tfc:quern/normal_sulfur')
+
+    // 6x Sulfur Powder
+    event.recipes.tfc.quern('6x tfc:powder/sulfur', '#forge:rich_raw_materials/sulfur')
+        .id('tfc:quern/rich_sulfur')
+
+    // 2x Saltpeter Powder
+    event.recipes.tfc.quern('2x tfc:powder/saltpeter', '#forge:poor_raw_materials/saltpeter')
+        .id('tfc:quern/saltpeter')
+
+    // 4x Saltpeter Powder
+    event.recipes.tfc.quern('4x tfc:powder/saltpeter', '#forge:raw_materials/saltpeter')
+        .id('tfc:quern/normal_saltpeter')
+
+    // 6x Saltpeter Powder
+    event.recipes.tfc.quern('6x tfc:powder/saltpeter', '#forge:rich_raw_materials/saltpeter')
+        .id('tfc:quern/rich_saltpeter')
+
+    // 2x Salt Powder
+    event.recipes.tfc.quern('2x tfc:powder/salt', '#forge:poor_raw_materials/salt')
+        .id('tfc:quern/salt')
+
+    // 4x Salt Powder
+    event.recipes.tfc.quern('4x tfc:powder/salt', '#forge:raw_materials/salt')
+        .id('tfc:quern/normal_salt')
+
+    // 6x Salt Powder
+    event.recipes.tfc.quern('6x tfc:powder/salt', '#forge:rich_raw_materials/salt')
+        .id('tfc:quern/rich_salt')
+
+    // 2x Graphite Powder
+    event.recipes.tfc.quern('2x tfc:powder/graphite', '#forge:poor_raw_materials/graphite')
+        .id('tfc:quern/graphite')
+
+    // 4x Graphite Powder
+    event.recipes.tfc.quern('4x tfc:powder/graphite', '#forge:raw_materials/graphite')
+        .id('tfc:quern/normal_graphite_2')
+
+    // 6x Graphite Powder
+    event.recipes.tfc.quern('6x tfc:powder/graphite', '#forge:rich_raw_materials/graphite')
+        .id('tfc:quern/rich_graphite')
+
+    // 2x Borax Powder
+    event.recipes.tfc.quern('2x tfc:powder/flux', '#forge:poor_raw_materials/borax')
+        .id('tfc:quern/borax')
+
+    // 4x Borax Powder
+    event.recipes.tfc.quern('4x tfc:powder/flux', '#forge:raw_materials/borax')
+        .id('tfc:quern/normal_borax')
+
+    // 6x Borax Powder
+    event.recipes.tfc.quern('6x tfc:powder/flux', '#forge:rich_raw_materials/borax')
+        .id('tfc:quern/rich_borax')
+
+    //#endregion
+
     // Доменная печь
     event.shaped('tfc:blast_furnace', [
         'AAA', 
@@ -935,5 +1279,338 @@ const registerTFCRecipes = (event) => {
         A: '#forge:plates/wrought_iron',
         B: 'tfc:crucible'
     }).id('tfc:crafting/blast_furnace')
+
+    // Тыква -> Кусочки тыквы
+    event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped('5x tfc:food/pumpkin_chunks', [
+        'AB'
+    ], {
+        A: '#tfc:knives',
+        B: 'tfc:pumpkin'
+    }))
+
+    // Декрафт деревянной херни в деревянную пыль
+    Object.entries(global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST).forEach(pair => {
+        
+        let typeName = pair[1].name
+        let typeOutput = pair[1].output
+        
+        event.recipes.gtceu.macerator(`tfg/macerate_${typeName}`)             
+            .itemInputs(pair[0])
+            .itemOutputs(typeOutput)
+            .duration(600)
+            .EUt(2)
+    })
+
+    // LimeWater + Sand -> Mortar
+    event.recipes.gtceu.centrifuge('mortar')             
+        .itemInputs('#forge:sand')
+        .inputFluids(Fluid.of('tfc:limewater', 100))
+        .itemOutputs('16x tfc:mortar')
+        .duration(800)
+        .EUt(8)
+
+    // Barley Grain -> Barley Floor
+    event.recipes.gtceu.macerator('barley_flour')             
+        .itemInputs('tfc:food/barley_grain')
+        .itemOutputs('2x tfc:food/barley_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Maize Grain -> Maize Floor
+    event.recipes.gtceu.macerator('maize_flour')             
+        .itemInputs('tfc:food/maize_grain')
+        .itemOutputs('2x tfc:food/maize_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Oat Grain -> Oat Floor
+    event.recipes.gtceu.macerator('oat_flour')             
+        .itemInputs('tfc:food/oat_grain')
+        .itemOutputs('2x tfc:food/oat_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Rye Grain -> Rye Floor
+    event.recipes.gtceu.macerator('rye_flour')             
+        .itemInputs('tfc:food/rye_grain')
+        .itemOutputs('2x tfc:food/rye_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Rice Grain -> Rice Floor
+    event.recipes.gtceu.macerator('rice_flour')             
+        .itemInputs('tfc:food/rice_grain')
+        .itemOutputs('2x tfc:food/rice_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Wheat Grain -> Wheat Floor
+    event.recipes.gtceu.macerator('wheat_flour')             
+        .itemInputs('tfc:food/wheat_grain')
+        .itemOutputs('2x tfc:food/wheat_flour')
+        .duration(400)
+        .EUt(16)
+
+    // Kapok Log -> Sticky Resin (Centriguge)
+    event.recipes.gtceu.centrifuge('rubber_log_separation')             
+        .itemInputs('#tfc:kapok_logs')
+        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
+        .chancedOutput('gtceu:plant_ball', 3750, 900)
+        .chancedOutput('gtceu:carbon_dust', 2500, 600)
+        .chancedOutput('gtceu:wood_dust', 2500, 700)
+        .outputFluids(Fluid.of('gtceu:methane', 60))
+        .duration(200)
+        .EUt(20)
+
+    // Kapok Log -> Raw Rubber Dust
+    event.recipes.gtceu.extractor('raw_rubber_from_log')             
+        .itemInputs('#tfc:kapok_logs')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // Kapok Sapling -> Raw Rubber Dust
+    event.recipes.gtceu.extractor('raw_rubber_from_sapling')             
+        .itemInputs('tfc:wood/sapling/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // Kapok Leaves -> Raw Rubber Dust
+    event.recipes.gtceu.extractor('raw_rubber_from_leaves')             
+        .itemInputs('16x tfc:wood/leaves/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // TFC Plants -> Plant Ball (Centrifuge)
+    event.recipes.gtceu.centrifuge('grass_block_separation')             
+        .itemInputs('#tfc:plants')
+        .chancedOutput('gtceu:plant_ball', 3000, 1200)
+        .chancedOutput('gtceu:clay_tiny_dust', 5000, 900)
+        .duration(250)
+        .EUt(30)
+
+    // TFC Dirt -> Plant Ball (Centrifuge)
+    event.recipes.gtceu.centrifuge('dirt_separation')             
+        .itemInputs('#tfc:dirt')
+        .chancedOutput('gtceu:plant_ball', 1250, 700)
+        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
+        .duration(250)
+        .EUt(30)
+
+    // 8x Ванильная растительность -> Plant Ball (Compressor)
+    event.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_crimson_stem'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_tube_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_sugar_cane'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_red_mushroom'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_potato'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_nether_wart'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_horn_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_fire_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_carrot'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_cactus'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_bubble_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')             
+        .itemInputs('8x #tfc:seeds')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_food')             
+        .itemInputs('8x #tfc:foods')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')             
+        .itemInputs('8x #tfc:plants')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')             
+        .itemInputs('8x #tfc:corals')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    // Ванильная растительность -> Биомасса (Brewery)
+    event.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
+    event.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
+    event.remove({id: 'gtceu:brewery/biomass_from_potato'})
+    event.remove({id: 'gtceu:brewery/biomass_from_carrot'})
+    event.remove({id: 'gtceu:brewery/biomass_from_cactus'})
+    event.remove({id: 'gtceu:brewery/biomass_from_brown_mushroom'})
+    event.remove({id: 'gtceu:brewery/biomass_from_beetroot'})
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_seeds')             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_food')             
+        .itemInputs('#tfc:foods')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_plants')             
+        .itemInputs('#tfc:plants')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_corals')             
+        .itemInputs('#tfc:corals')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    //#region Фикс рецептов связанных с песком
+
+    event.recipes.gtceu.centrifuge('oilsands_ore_separation')             
+        .itemInputs('#forge:ores/oilsands')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.centrifuge('oilsands_dust_separation')             
+        .itemInputs('#forge:dusts/oilsands')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:heavy_oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.centrifuge('red_sand_separation')             
+        .itemInputs('tfc:sand/red')
+        .chancedOutput('gtceu:iron_dust', 5000, 500)
+        .chancedOutput('gtceu:diamond_tiny_dust', 100, 100)
+        .chancedOutput('tfc:sand/yellow', 5000, 500)
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.forge_hammer('gravel_to_sand')             
+        .itemInputs('#tfc:rock/gravel')
+        .itemOutputs('tfc:sand/yellow')
+        .duration(10)
+        .EUt(16)
+
+    event.recipes.gtceu.electrolyzer('sand_electrolysis')             
+        .itemInputs('8x #forge:sand')
+        .itemOutputs('gtceu:silicon_dioxide_dust')
+        .duration(500)
+        .EUt(25)
+
+    // Рецепты кварц. песка из песка
+    event.shaped('gtceu:quartz_sand_dust', [
+        'A', 
+        'B'
+    ], {
+        A: '#forge:sand',
+        B: '#forge:tools/mortars'
+    }).id('gtceu:shaped/quartz_sand')
+
+    event.recipes.gtceu.macerator('quartz_sand_from_sand')             
+        .itemInputs('#forge:sand')
+        .itemOutputs('gtceu:quartz_sand_dust')
+        .duration(30)
+        .EUt(2)
+
+    global.SAND_COLORS.forEach(sandColor => {
+        // Raw SandStone -> Sand
+        event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Smooth SandStone -> Sand
+        event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:smooth_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Cut SandStone -> Sand
+        event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:cut_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Sand -> Raw SandStone
+        event.recipes.gtceu.compressor(`${sandColor}_sandstone`)             
+            .itemInputs(`4x tfc:sand/${sandColor}`)
+            .itemOutputs(`tfc:raw_sandstone/${sandColor}`)
+            .duration(300)
+            .EUt(2)
+        
+        // Raw SandStone -> Smooth SandStone
+        event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_smooth`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .notConsumable('gtceu:magenta_glass_lens')
+            .itemOutputs(`tfc:smooth_sandstone/${sandColor}`)
+            .duration(60)
+            .EUt(32)
+
+        // Raw SandStone -> Cut SandStone
+        event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_cut`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .notConsumable('gtceu:orange_glass_lens')
+            .itemOutputs(`tfc:cut_sandstone/${sandColor}`)
+            .duration(60)
+            .EUt(32)
+    })
+
+    // Удобрение в обычном миксере
+    event.recipes.gtceu.mixer('fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .duration(300)
+        .EUt(30)
+
+    // Удобрение в create миксере
+    event.recipes.gtceu.create_mixer('fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .duration(300)
+        .EUt(30)
+        .rpm(96)
+
+    //#endregion
+
+    // Рецепты бесконечного камня в RockBreaker
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+
+        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+    })
 }
 
