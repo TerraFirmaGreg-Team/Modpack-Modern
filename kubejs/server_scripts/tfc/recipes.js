@@ -449,18 +449,18 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `#forge:ingots/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
                 .tier(metalSpecs.tier)
                 .bonus(true)
-                .id(`tfc:anvil/${metal}_sword_head`)
+                .id(`tfc:anvil/${metal}_sword_blade`)
 
             // Металл + Форма -> Оголовье
             if (metalSpecs.canBeUnmolded) {
-                event.recipes.tfc.casting(`gtceu:${metal}_sword_head`, 'tfc:ceramic/sword_head_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 1)
-                    .id(`tfc:casting/${metal}_sword_head`)
+                event.recipes.tfc.casting(`gtceu:${metal}_sword_head`, 'tfc:ceramic/sword_blade_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 1)
+                    .id(`tfc:casting/${metal}_sword_blade`)
             }
 
             // Декрафт оголовья в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_sword_head`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 144))
-                .id(`tfc:heating/metal/${metal}_sword_head`)
+                .id(`tfc:heating/metal/${metal}_sword_blade`)
 
             //#endregion
 
@@ -567,6 +567,11 @@ const registerTFCRecipes = (event) => {
                 .resultFluid(Fluid.of(metalSpecs.fluid, 144))
                 .id(`tfc:heating/metal/${metal}_unfinished_lamp`)
 
+            // Декрафт лампы в жидкость
+            event.recipes.tfc.heating(`tfc:metal/lamp/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .id(`tfc:heating/metal/${metal}_lamp`)
+
             // Декрафт люка в жидкость
             event.recipes.tfc.heating(`tfc:metal/trapdoor/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, 144))
@@ -591,6 +596,16 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.anvil(`16x tfc:metal/bars/${metal}`, `gtceu:${metal}_double_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_bars_double`)
+
+            // Декрафт цепи в жидкость
+            event.recipes.tfc.heating(`tfc:metal/chain/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 9))
+                .id(`tfc:heating/metal/${metal}_chain`)
+
+            // Декрафт наковальни в жидкость
+            event.recipes.tfc.heating(`tfc:metal/anvil/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 2016))
+                .id(`tfc:heating/metal/${metal}_anvil`)
         }
     })
 
