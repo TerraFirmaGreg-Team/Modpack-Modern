@@ -44,7 +44,7 @@ ServerEvents.highPriorityData(event => {
  */
 TFCEvents.data(event => {
     registerTFCDataForTFC(event)
-    registerTFCDataForFirmaLife(event)
+    // registerTFCDataForFirmaLife(event)
     registerTFCDataForWaterFlasks(event)
     registerTFCDataForGTCEU(event)
 })
