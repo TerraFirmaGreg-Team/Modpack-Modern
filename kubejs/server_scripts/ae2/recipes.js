@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerAE2ItemTags = (event) => {
+const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
     event.remove({ not: { id: 'ae2:transform/entangled_singularity_from_pearl', id: 'ae2:transform/fluix_crystals' }, mod: 'ae2' });
@@ -731,7 +731,7 @@ const registerAE2ItemTags = (event) => {
         .itemInputs(
             '2x #forge:rods/aluminium',
             '3x ae2:quartz_fiber',)
-        .inputFluids(Fluid.of('kubejs:fluix', 144))
+        .inputFluids(Fluid.of('gtceu:fluix', 144))
         .itemOutputs('ae2:fluix_glass_cable')
         .circuit(1)
         .duration(20)
@@ -2394,23 +2394,13 @@ const registerAE2ItemTags = (event) => {
         .itemInputs(
             '4x #forge:gems/fluix',
             '#forge:gems/ender_eye')
-        .inputFluids(Fluid.of('kubejs:fluix', 576))
+        .inputFluids(Fluid.of('gtceu:fluix', 576))
 	    .itemOutputs(
             'ae2:fluix_pearl')
 	    .duration(200)
         .EUt(480)
         .cleanroom(CleanroomType.CLEANROOM)
     
-    //lathe
-    //certus quartz rod
-    event.recipes.gtceu.lathe('kubejs:certus_quartz_to_rod')
-        .itemInputs(
-            'gtceu:certus_quartz_gem')
-	    .itemOutputs(
-            '2x kubejs:rods/certus_quartz')
-	    .duration(40)
-        .EUt(16)
-    /
     //mixer
     //fluix crystal
     event.recipes.gtceu.mixer('ae2:fluix_crystal')
