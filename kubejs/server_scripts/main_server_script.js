@@ -46,7 +46,6 @@ ServerEvents.highPriorityData(event => {
  */
 TFCEvents.data(event => {
     registerTFCDataForTFC(event)
-    // registerTFCDataForFirmaLife(event)
     registerTFCDataForWaterFlasks(event)
     registerTFCDataForTreeTap(event)
     registerTFCDataForGTCEU(event)
@@ -69,7 +68,7 @@ ServerEvents.recipes(event => {
     registerAdAstraRecipes(event)
     // registerMoreRedRecipes(event)
     // registerSophisticatedBackpacksRecipes(event)
-    // registerSmallShipsRecipes(event)
+    registerSmallShipsRecipes(event)
     registerToolBeltRecipes(event)
 })
 
