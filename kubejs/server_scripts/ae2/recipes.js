@@ -3,5 +3,5 @@
 const registerAE2Recipes = (event) => {
     
     // Удаление рецептов мода
-    // event.remove({ mod: 'ae2' });
+    event.remove({ mod: 'ae2' });
 }
