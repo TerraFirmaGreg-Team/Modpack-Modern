@@ -724,6 +724,4 @@ const registerMinecraftRecipes = (event) => {
         .EUt(4)
 
     //#endregion
-
-
 }

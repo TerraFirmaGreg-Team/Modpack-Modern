@@ -7,9 +7,6 @@ const registerTFCItemTags = (event) => {
         event.removeAllTagsFrom(item)
     })
 
-    // Порошки
-    event.remove('forge:dusts', 'tfc:powder/amethyst')
-
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')
     event.add('tfc:forge_fuel', 'gtceu:coke_gem')

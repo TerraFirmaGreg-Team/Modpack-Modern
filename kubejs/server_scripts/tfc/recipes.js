@@ -1637,11 +1637,39 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Раскрафт ТФК рыбы в масло
+
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_cod' })
+
+    event.recipes.gtceu.extractor(`tfg/fish_oil`)             
+        .itemInputs('#minecraft:fishes')
+        .outputFluids(Fluid.of('gtceu:fish_oil', 40))
+        .duration(16)
+        .EUt(4)
+
+    //#endregion
+
+    //#region Раскрафт ТФК семян
+
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_pumpkin' })
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_melon' })
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_beetroot' })
+
+    event.recipes.gtceu.extractor(`tfg/seed_oil`)             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:seed_oil', 16))
+        .duration(32)
+        .EUt(2)
+
+    //#endregion
+
     for (let i = 0; i < global.TFC_UNFIRED_MOLDS.length; i++) {
         event.smelting(global.TFC_FIRED_MOLDS[i], global.TFC_UNFIRED_MOLDS[i])
             .id(`tfg:smelting/mold_${i}`)
-
-        
     }
 }
 

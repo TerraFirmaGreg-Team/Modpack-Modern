@@ -18,6 +18,7 @@ REIEvents.groupEntries(event => {
 })
 
 REIEvents.removeCategories(event => {
+    //registerMinecraftCategories(event)
     //registerGTCEUCategories(event)
     //registerMoreRedCategories(event)
 })

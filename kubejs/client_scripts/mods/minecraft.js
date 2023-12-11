@@ -5,3 +5,7 @@ const hideMinecraftStuff = (event) => {
         event.hide(item)
     })
 }
+
+const registerMinecraftCategories = (event) => {
+    event.remove('minecraft:plugins/campfire')
+}
