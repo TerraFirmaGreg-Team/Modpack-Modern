@@ -173,7 +173,8 @@ const registerGTCEURecipes = (event) => {
     }).id('gtceu:shaped/uv_forge_hammer')
 
     // Fire Brick
-    event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay').id('tfg:smelting/fireclay_brick')
+    event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
+        .id('tfg:smelting/fireclay_brick')
 
     // TFC FireBrick -> FireBrick dust
     event.recipes.gtceu.macerator('macerate_firebrick')             
@@ -183,12 +184,9 @@ const registerGTCEURecipes = (event) => {
         .EUt(2)
 
     // Compressed Coke Clay -> Coke Oven Brick
-    addHeatingItemToItemRecipe(event,
-        'tfg:recipes/coke_oven_bricks',
-        { item: "gtceu:compressed_coke_clay" },
-        { item: 'gtceu:coke_oven_brick' },
-        1399
-    )
+    event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
+        .resultItem('gtceu:coke_oven_brick')
+        .id('tfg:heating/coke_oven_bricks')
 
     // Pump Deck
     event.shaped('gtceu:pump_deck', [
@@ -358,4 +356,24 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.large_boiler('lava_bucket')             
         .itemInputs('minecraft:lava_bucket')
         .duration(25)
+
+    //#region Фикс TFC Соленой воды
+
+    // Декрафт в центрифуге
+    event.recipes.gtceu.centrifuge('centrifuging_tfc_salt_water')             
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('1x gtceu:salt_dust')
+        .outputFluids(Fluid.of('minecraft:water', 500))
+        .duration(51)
+        .EUt(30)
+
+    // Декрафт в электролайзере
+    event.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')             
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:sodium_hydroxide_small_dust')
+        .outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
+        .duration(720)
+        .EUt(30)
+
+    //#endregion
 }
