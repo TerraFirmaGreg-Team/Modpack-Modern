@@ -10,6 +10,8 @@ ServerEvents.tags('item', event => {
     // registerMinecraftItemTags(event)
     registerCreateItemTags(event)
     registerAdAstraItemTags(event)
+    registerMoreRedItemTags(event)
+    registerSophisticatedBackpacksItemTags(event)
 })
 
 /**
@@ -68,8 +70,8 @@ ServerEvents.recipes(event => {
     // registerAE2Recipes(event)
     // registerComputerCraftRecipes(event)
     registerAdAstraRecipes(event)
-    // registerMoreRedRecipes(event)
-    // registerSophisticatedBackpacksRecipes(event)
+    registerMoreRedRecipes(event)
+    registerSophisticatedBackpacksRecipes(event)
     registerToolBeltRecipes(event)
 })
 
