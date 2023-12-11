@@ -908,39 +908,39 @@ const registerTFCRecipes = (event) => {
 
     // 2x Amethyst Powder
     event.recipes.tfc.quern('2x tfc:powder/amethyst', '#forge:raw_materials/amethyst')
-        .id('tfc:quern/amethyst')
+        .id('tfc:quern/amethyst_cut')
 
     // 2x Diamond Powder
     event.recipes.tfc.quern('2x tfc:powder/diamond', '#forge:raw_materials/diamond')
-        .id('tfc:quern/diamond')
+        .id('tfc:quern/diamond_cut')
     
     // 2x Emerald Powder
     event.recipes.tfc.quern('2x tfc:powder/emerald', '#forge:raw_materials/emerald')
-        .id('tfc:quern/emerald')
+        .id('tfc:quern/emerald_cut')
 
     // 2x Lapis Lazuli Powder
     event.recipes.tfc.quern('2x tfc:powder/lapis_lazuli', '#forge:raw_materials/lapis')
-        .id('tfc:quern/lapis_lazuli')
+        .id('tfc:quern/lapis_lazuli_cut')
 
     // 2x Opal Powder
     event.recipes.tfc.quern('2x tfc:powder/opal', '#forge:raw_materials/opal')
-        .id('tfc:quern/opal')
+        .id('tfc:quern/opal_cut')
 
     // 2x Pyrite Powder
     event.recipes.tfc.quern('2x tfc:powder/pyrite', '#forge:raw_materials/pyrite')
-        .id('tfc:quern/pyrite')
+        .id('tfc:quern/pyrite_cut')
 
     // 2x Ruby Powder
     event.recipes.tfc.quern('2x tfc:powder/ruby', '#forge:raw_materials/ruby')
-        .id('tfc:quern/ruby')
+        .id('tfc:quern/ruby_cut')
 
     // 2x Sapphire Powder
     event.recipes.tfc.quern('2x tfc:powder/sapphire', '#forge:raw_materials/sapphire')
-        .id('tfc:quern/sapphire')
+        .id('tfc:quern/sapphire_cut')
 
     // 2x Topaz Powder
     event.recipes.tfc.quern('2x tfc:powder/topaz', '#forge:raw_materials/topaz')
-        .id('tfc:quern/topaz')
+        .id('tfc:quern/topaz_cut')
 
     // 1x Gold Powder
     event.recipes.tfc.quern('1x tfc:powder/native_gold', 'tfc:ore/small_native_gold')

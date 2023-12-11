@@ -6,7 +6,6 @@
  */
 global.MINECRAFT_DISABLED_ITEMS = [
 
-    /*
     // Дерево
     // Дуб
     'minecraft:oak_wood',
@@ -291,7 +290,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:diamond_helmet', 
     'minecraft:diamond_chestplate', 
     'minecraft:diamond_leggings', 
-    'minecraft:diamond_boots',*/
+    'minecraft:diamond_boots',
 ];
 
 global.VANILLA_WOOD_TYPES = [

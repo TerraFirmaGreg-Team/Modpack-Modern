@@ -6,14 +6,12 @@ const $SimpleTieredMachine = Java.loadClass('com.gregtechceu.gtceu.api.machine.S
  * Событие регистрации предметов.
  */
 StartupEvents.registry('item', (event) => {
-    //registerCreateItems(event);
 })
 
 /**
  * Событие регистрации блоков.
  */
 StartupEvents.registry('block', (event) => {
-    
 })
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {

@@ -7,6 +7,9 @@ const registerTFCItemTags = (event) => {
         event.removeAllTagsFrom(item)
     })
 
+    // Порошки
+    event.remove('forge:dusts', 'tfc:powder/amethyst')
+
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')
     event.add('tfc:forge_fuel', 'gtceu:coke_gem')
@@ -217,7 +220,6 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_silver')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_sphalerite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_sulfur')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sylvite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_tetrahedrite')
     event.add('tfc:in_biome/veins', 'tfg:vein/surface_bismuthinite')
     event.add('tfc:in_biome/veins', 'tfg:vein/surface_cassiterite')

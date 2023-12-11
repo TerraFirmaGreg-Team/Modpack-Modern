@@ -6,7 +6,4 @@ const registerCreateItemTags = (event) => {
     global.CREATE_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
     })
-
-    // TODO: move to TFG-MOD
-    event.add('forge:ingots/galvanized_iron', 'kubejs:galvanized_iron');
 }

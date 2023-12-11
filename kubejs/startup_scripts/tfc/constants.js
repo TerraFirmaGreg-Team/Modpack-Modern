@@ -1135,7 +1135,6 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:metal/scythe/blue_steel', 
     'tfc:metal/scythe_blade/blue_steel',
     
-    /*
     // Ores
     'tfc:ore/poor_native_copper', 
     'tfc:ore/normal_native_copper', 
@@ -1204,7 +1203,6 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:ore/bituminous_coal',
     'tfc:ore/lignite',
     'tfc:ore/halite',
-    */
 ];
 
 global.TFC_SIMPLE_MATERIALS = [
