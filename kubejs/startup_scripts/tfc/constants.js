@@ -452,6 +452,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
+        fluid: "tfc:metal/pig_iron",
         tier: 3,
         props: [global.INGOT_GEN],
     },
@@ -652,7 +653,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "gtceu:iron",
+        fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -666,7 +667,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "gtceu:iron",
+        fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -679,7 +680,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "gtceu:iron",
+        fluid: "tfc:metal/cast_iron",
         percent_of_material: 85,
         tier: 3,
         props: [global.TFC_SMALL_ORE_GEN],
@@ -689,7 +690,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 1535,
-        fluid: "gtceu:iron",
+        fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -717,7 +718,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "gtceu:iron",
+        fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -784,7 +785,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "gtceu:iron",
+        fluid: "tfc:metal/cast_iron",
         percent_of_material: 85,
         tier: 3,
         props: [

@@ -947,6 +947,10 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.anvil('gtceu:blue_steel_ingot', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
         .id('tfc:anvil/blue_steel_ingot')
 
+    // Cast iron -> Raw Iron Bloom
+    event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('tfc:metal/cast_iron', 144), 15000)
+        .id('tfc:bloomery/raw_iron_bloom')
+
     //#region Порошки
     
     event.remove({ id: 'tfc:quern/cryolite' })
@@ -1612,5 +1616,79 @@ const registerTFCRecipes = (event) => {
             .duration(16)
             .EUt(7)
     })
+
+    //#region Рецепты ковки слитков в GT машинах
+
+    // Сырая крица -> Укрепленная крица
+    event.recipes.gtceu.forge_hammer('tfg/refined_bloom')             
+        .itemInputs('tfc:raw_iron_bloom')
+        .itemOutputs('tfc:refined_iron_bloom')
+        .duration(1000)
+        .EUt(4)
+
+    // Укрепленная крица -> Слиток кованного железа
+    event.recipes.gtceu.forge_hammer('tfg/wrought_iron_ingot')             
+        .itemInputs('tfc:refined_iron_bloom')
+        .itemOutputs('gtceu:wrought_iron_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Чугун -> Высокоуглеродная сталь
+    event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')             
+        .itemInputs('tfc:metal/ingot/pig_iron')
+        .itemOutputs('tfc:metal/ingot/high_carbon_steel')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная сталь -> Cталь
+    event.recipes.gtceu.forge_hammer('tfg/steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_steel')
+        .itemOutputs('gtceu:steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная черная сталь -> черная сталь 
+    event.recipes.gtceu.forge_hammer('tfg/black_steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_black_steel')
+        .itemOutputs('gtceu:black_steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная синяя сталь -> синяя сталь 
+    event.recipes.gtceu.forge_hammer('tfg/blue_steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_blue_steel')
+        .itemOutputs('gtceu:blue_steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная красная сталь -> красная сталь 
+    event.recipes.gtceu.forge_hammer('tfg/red_steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_red_steel')
+        .itemOutputs('gtceu:red_steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Слабая сталь + Чугун -> Высокоуглеродная черная сталь
+    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')             
+        .itemInputs('tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron')
+        .itemOutputs('tfc:metal/ingot/high_carbon_black_steel')
+        .duration(1600)
+        .EUt(4)
+
+    // Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
+    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')             
+        .itemInputs('tfc:metal/ingot/weak_blue_steel', 'gtceu:black_steel_ingot')
+        .itemOutputs('tfc:metal/ingot/high_carbon_blue_steel')
+        .duration(1600)
+        .EUt(4)
+
+    // Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
+    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')             
+        .itemInputs('tfc:metal/ingot/weak_red_steel', 'gtceu:black_steel_ingot')
+        .itemOutputs('tfc:metal/ingot/high_carbon_red_steel')
+        .duration(1600)
+        .EUt(4)
+
+    //#endregion
 }
 
