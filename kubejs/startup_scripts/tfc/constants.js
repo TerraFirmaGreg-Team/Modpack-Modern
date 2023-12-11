@@ -1249,8 +1249,7 @@ global.TFC_ORE_MATERIALS = [
     "tetrahedrite"
 ];
 
-
-global.TFC_LIQUID_DYE = [
+global.TFC_LIQUID_DYES = [
     'tfc:white_dye',
     'tfc:orange_dye',
     'tfc:magenta_dye',

@@ -1686,7 +1686,7 @@ const registerAE2ItemTags = (event) => {
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLE[i]+'tfcdye')
             .itemInputs('ae2:fluix_glass_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
             .itemOutputs(global.AE2_GLASS_CABLE[i])
             .duration(20)
             .EUt(7)
@@ -1714,7 +1714,7 @@ const registerAE2ItemTags = (event) => {
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLE[i]+'tfcdye')
             .itemInputs('ae2:fluix_covered_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
             .itemOutputs(global.AE2_COVERED_CABLE[i])
             .duration(20)
             .EUt(7)
@@ -1742,7 +1742,7 @@ const registerAE2ItemTags = (event) => {
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLE[i]+'tfcdye')
             .itemInputs('ae2:fluix_covered_dense_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
             .itemOutputs(global.AE2_COVERED_DENSE_CABLE[i])
             .duration(20)
             .EUt(7)
@@ -1770,7 +1770,7 @@ const registerAE2ItemTags = (event) => {
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLE[i]+'tfcdye')
             .itemInputs('ae2:fluix_smart_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
             .itemOutputs(global.AE2_SMART_CABLE[i])
             .duration(20)
             .EUt(7)
@@ -1798,7 +1798,7 @@ const registerAE2ItemTags = (event) => {
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLE[i]+'tfcdye')
             .itemInputs('ae2:fluix_smart_dense_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 250))
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
             .itemOutputs(global.AE2_SMART_DENSE_CABLE[i])
             .duration(20)
             .EUt(7)
@@ -1817,7 +1817,7 @@ const registerAE2ItemTags = (event) => {
     for (var i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALL[i]+'tfcdye')
             .itemInputs('ae2:matter_ball')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYE[i], 125))
+            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 125))
             .itemOutputs(global.AE2_PAINTBALL[i])
             .duration(20)
             .EUt(7)

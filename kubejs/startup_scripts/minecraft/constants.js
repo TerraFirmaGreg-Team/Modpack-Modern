@@ -334,7 +334,7 @@ global.VANILLA_STONE_TYPES = [
     "tuff"
 ];
 
-global.MINECRAFT_FORGE_DYE = [
+global.MINECRAFT_FORGE_DYES = [
     '#forge:dyes/white',
     '#forge:dyes/orange',
     '#forge:dyes/magenta',
