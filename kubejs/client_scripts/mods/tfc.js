@@ -38,7 +38,6 @@ const hideTFCFluids = (event) => {
     event.hide('tfc:metal/zinc')
     event.hide('tfc:metal/sterling_silver')
     event.hide('tfc:metal/wrought_iron')
-    event.hide('tfc:metal/cast_iron')
     event.hide('tfc:metal/steel')
     event.hide('tfc:metal/black_steel')
     event.hide('tfc:metal/red_steel')

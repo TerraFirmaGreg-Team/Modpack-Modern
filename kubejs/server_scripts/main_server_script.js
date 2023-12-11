@@ -4,10 +4,16 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    registerMinecraftItemTags(event)
     registerTFCItemTags(event)
-    registerCreateTags(event)
-    registerAE2Tags(event)
+    registerFirmaLifeItemTags(event)
+    registerSmallShipsItemTags(event)
+    registerMinecraftItemTags(event)
+    registerGTCEUItemTags(event)
+    registerAE2ItemTags(event)
+    registerCreateItemTags(event)
+    registerAdAstraItemTags(event)
+    registerMoreRedItemTags(event)
+    registerSophisticatedBackpacksItemTags(event)
 })
 
 /**
@@ -25,11 +31,29 @@ ServerEvents.tags('fluid', event => {
 })
 
 /**
- * Здесь регистрируются файлы датапаков (json).
+ * Событие регистрации генератора структур.
+ */
+ServerEvents.tags('worldgen/placed_feature', event => {
+    registerTFCPlacedFeatures(event)
+    registerFirmaLifePlacedFeatures(event)
+})
+
+/**
+ * Здесь регистрируются файлы датапаков общие.
  * Срабатывает до инициализации рецептов.
  */
 ServerEvents.highPriorityData(event => {
-    registerTFCData(event)
+})
+
+/**
+ * Здесь регистрируются файлы датапаков TFC.
+ * Срабатывает до инициализации рецептов.
+ */
+TFCEvents.data(event => {
+    registerTFCDataForTFC(event)
+    registerTFCDataForWaterFlasks(event)
+    registerTFCDataForTreeTap(event)
+    registerTFCDataForGTCEU(event)
 })
 
 /**
@@ -37,20 +61,22 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
-    registerMinecraftRecipes(event)
     registerTFCRecipes(event)
+    registerFirmaLifeRecipes(event)
+    registerWaterFlasksRecipes(event)
+    registerTreeTapRecipes(event)
+    registerSmallShipsRecipes(event)
+    registerMinecraftRecipes(event)
     registerGTCEURecipes(event)
     registerCreateRecipes(event)
     registerAE2Recipes(event)
     registerAE2WTLibRecipes(event)
     registerComputerCraftRecipes(event)
     registerAdAstraRecipes(event)
-    registerTreeTapRecipes(event)
     registerMoreRedRecipes(event)
     registerSophisticatedBackpacksRecipes(event)
-    registerSmallShipsRecipes(event)
-    registerExtendedCraftingRecipes(event)
     registerToolBeltRecipes(event)
+    registerExposureRecipes(event)
 })
 
 /**
@@ -59,3 +85,5 @@ ServerEvents.recipes(event => {
 LootJS.modifiers((event) => {
     modifyLootGT(event)
 });
+
+

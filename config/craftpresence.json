@@ -14,7 +14,7 @@
     "detectDimensionData": true,
     "detectWorldData": true,
     "clientId": "1182610212121743470",
-    "defaultIcon": "tfg-icon",
+    "defaultIcon": "logo_new_year",
     "enableJoinRequests": false,
     "partyPrivacyLevel": 1,
     "preferredClientLevel": 3,
@@ -22,7 +22,7 @@
     "autoRegister": false
   },
   "biomeSettings": {
-    "fallbackBiomeIcon": "tfg-icon",
+    "fallbackBiomeIcon": "logo_new_year",
     "biomeData": {
       "default": {
         "textOverride": "Playing in {biome.name}"
@@ -30,7 +30,7 @@
     }
   },
   "dimensionSettings": {
-    "fallbackDimensionIcon": "tfg-icon",
+    "fallbackDimensionIcon": "logo_new_year",
     "dimensionData": {
       "default": {
         "textOverride": "In the {dimension.name}"
@@ -38,7 +38,7 @@
     }
   },
   "serverSettings": {
-    "fallbackServerIcon": "tfg-icon",
+    "fallbackServerIcon": "logo_new_year",
     "fallbackServerName": "Minecraft Server",
     "fallbackServerMotd": "A Minecraft Server",
     "serverData": {
@@ -71,7 +71,7 @@
     "refreshRate": 2,
     "allowPlaceholderPreviews": false,
     "guiSettings": {
-      "fallbackGuiIcon": "tfg-icon",
+      "fallbackGuiIcon": "logo_new_year",
       "guiData": {
         "default": {
           "textOverride": "In {screen.name}"
@@ -82,7 +82,7 @@
       "default": "Holding {item.message.holding}"
     },
     "entitySettings": {
-      "fallbackEntityIcon": "tfg-icon",
+      "fallbackEntityIcon": "logo_new_year",
       "targetData": {
         "default": {
           "textOverride": "Targeting {entity.target.name}"
@@ -150,7 +150,7 @@
     "stripTranslationColors": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
-    "configKeyCode": 0
+    "configKeyCode": 333
   },
   "displaySettings": {
     "presenceData": {
@@ -172,7 +172,8 @@
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png"
+      "default": "https://via.placeholder.com/256.png",
+      "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51"
     },
     "dynamicVariables": {
       "default": "Example Text",

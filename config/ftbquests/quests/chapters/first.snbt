@@ -3549,6 +3549,23 @@
 			x: -3.0d
 			y: -2.0d
 		}
+		{
+			id: "7668BF4D3ED118AB"
+			tasks: [{
+				id: "19A2382177043109"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/raw_meats"
+					}
+				}
+				title: "Any #tfc:foods/raw_meats"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
 	]
 	title: "Rock and Stick Age"
 }

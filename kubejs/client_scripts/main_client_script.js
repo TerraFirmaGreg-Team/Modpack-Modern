@@ -6,7 +6,6 @@ REIEvents.hide('item', event => {
     hideGTCEUStuff(event)
     hideCreateStuff(event)
     hideAE2Stuff(event)
-    hideExtendedCraftingStuff(event)
     hideAdAstraStuff(event)
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)
@@ -19,6 +18,7 @@ REIEvents.groupEntries(event => {
 })
 
 REIEvents.removeCategories(event => {
+    registerMinecraftCategories(event)
     registerGTCEUCategories(event)
     registerMoreRedCategories(event)
 })

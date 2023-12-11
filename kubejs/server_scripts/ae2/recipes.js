@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerAE2Recipes = (event) => {
+const registerAE2ItemTags = (event) => {
     
     // Удаление рецептов мода
     event.remove({ not: { id: 'ae2:transform/entangled_singularity_from_pearl', id: 'ae2:transform/fluix_crystals' }, mod: 'ae2' });
@@ -2449,7 +2449,4 @@ const registerAE2Recipes = (event) => {
             '12x ae2:fluix_crystal')
         .duration(40)
         .EUt(18)
-    
-
 }
-

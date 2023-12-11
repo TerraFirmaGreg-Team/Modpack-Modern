@@ -145,16 +145,7 @@
 		{
 			dependencies: ["6177B1FCB7B40394"]
 			description: ["Placing &3Generators&r or &3Mufflers&r inside is &cnot allowed&r. The Cleanroom will unform."]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "minecraft:barrier"
-			}
+			icon: "minecraft:barrier"
 			id: "5A3AC1DD5EC6E4C3"
 			shape: "rsquare"
 			size: 0.75d
