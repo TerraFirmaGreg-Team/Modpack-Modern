@@ -1478,6 +1478,21 @@ const registerTFCRecipes = (event) => {
         .duration(128)
         .EUt(3)
 
+    // Рецепты бесконечного камня в RockBreaker
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+
+        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+    })
+
     //#region Фикс рецептов связанных с песком
 
     event.recipes.gtceu.centrifuge('oilsands_ore_separation')             
@@ -1602,21 +1617,6 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-    // Рецепты бесконечного камня в RockBreaker
-    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
-        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
-            .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
-            .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
-            .duration(16)
-            .EUt(7)
-
-        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
-            .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
-            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
-            .duration(16)
-            .EUt(7)
-    })
-
     //#region Рецепты ковки слитков в GT машинах
 
     // Сырая крица -> Укрепленная крица
@@ -1690,5 +1690,12 @@ const registerTFCRecipes = (event) => {
         .EUt(4)
 
     //#endregion
+
+    for (let i = 0; i < global.TFC_UNFIRED_MOLDS.length; i++) {
+        event.smelting(global.TFC_FIRED_MOLDS[i], global.TFC_UNFIRED_MOLDS[i])
+            .id(`tfg:smelting/mold_${i}`)
+
+        
+    }
 }
 

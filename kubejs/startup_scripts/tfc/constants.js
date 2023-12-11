@@ -1251,6 +1251,44 @@ global.TFC_ORE_MATERIALS = [
     "tetrahedrite"
 ];
 
+global.TFC_UNFIRED_MOLDS = [
+    "tfc:ceramic/unfired_ingot_mold",
+    "tfc:ceramic/unfired_pickaxe_head_mold",
+    "tfc:ceramic/unfired_propick_head_mold",
+    "tfc:ceramic/unfired_axe_head_mold",
+    "tfc:ceramic/unfired_shovel_head_mold",
+    "tfc:ceramic/unfired_hoe_head_mold",
+    "tfc:ceramic/unfired_chisel_head_mold",
+    "tfc:ceramic/unfired_hammer_head_mold",
+    "tfc:ceramic/unfired_saw_blade_mold",
+    "tfc:ceramic/unfired_javelin_head_mold",
+    "tfc:ceramic/unfired_sword_blade_mold",
+    "tfc:ceramic/unfired_mace_head_mold",
+    "tfc:ceramic/unfired_knife_blade_mold",
+    "tfc:ceramic/unfired_scythe_blade_mold",
+    "tfc:ceramic/unfired_bell_mold",
+    "tfc:ceramic/unfired_fire_ingot_mold",
+];
+
+global.TFC_FIRED_MOLDS = [
+    "tfc:ceramic/ingot_mold",
+    "tfc:ceramic/pickaxe_head_mold",
+    "tfc:ceramic/propick_head_mold",
+    "tfc:ceramic/axe_head_mold",
+    "tfc:ceramic/shovel_head_mold",
+    "tfc:ceramic/hoe_head_mold",
+    "tfc:ceramic/chisel_head_mold",
+    "tfc:ceramic/hammer_head_mold",
+    "tfc:ceramic/saw_blade_mold",
+    "tfc:ceramic/javelin_head_mold",
+    "tfc:ceramic/sword_blade_mold",
+    "tfc:ceramic/mace_head_mold",
+    "tfc:ceramic/knife_blade_mold",
+    "tfc:ceramic/scythe_blade_mold",
+    "tfc:ceramic/bell_mold",
+    "tfc:ceramic/fire_ingot_mold",
+];
+
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1
