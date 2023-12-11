@@ -74,6 +74,7 @@ ServerEvents.recipes(event => {
     registerMoreRedRecipes(event)
     registerSophisticatedBackpacksRecipes(event)
     registerToolBeltRecipes(event)
+    registerExposureRecipes(event)
 })
 
 /**
