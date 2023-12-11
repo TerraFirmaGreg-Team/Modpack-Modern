@@ -237,13 +237,7 @@ const registerTFCRecipes = (event) => {
             //#region Кирка
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_pickaxe`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_pickaxe_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/pickaxe/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/pickaxe/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_pickaxe`, metalSpecs.melt_temp)
@@ -294,13 +288,7 @@ const registerTFCRecipes = (event) => {
             //#region Топор
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_axe`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_axe_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/axe/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/axe/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_axe`, metalSpecs.melt_temp)
@@ -330,13 +318,7 @@ const registerTFCRecipes = (event) => {
             //#region Лопата
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_shovel`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_shovel_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/shovel/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/shovel/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_shovel`, metalSpecs.melt_temp)
@@ -366,13 +348,7 @@ const registerTFCRecipes = (event) => {
             //#region Мотыга
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_hoe`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_hoe_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/hoe/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/hoe/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_hoe`, metalSpecs.melt_temp)
@@ -423,13 +399,7 @@ const registerTFCRecipes = (event) => {
             //#region Молот
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_hammer`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_hammer_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/hammer/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/hammer/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_hammer`, metalSpecs.melt_temp)
@@ -459,13 +429,7 @@ const registerTFCRecipes = (event) => {
             //#region Пила
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_saw`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_saw_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/saw/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/saw/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_saw`, metalSpecs.melt_temp)
@@ -516,13 +480,7 @@ const registerTFCRecipes = (event) => {
             //#region Меч
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_sword`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_sword_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/sword/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/sword/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_sword`, metalSpecs.melt_temp)
@@ -573,13 +531,7 @@ const registerTFCRecipes = (event) => {
             //#region Нож
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_knife`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_knife_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/knife/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/knife/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_knife`, metalSpecs.melt_temp)
@@ -609,13 +561,7 @@ const registerTFCRecipes = (event) => {
             //#region Коса
             
             // Крафт инструмента
-            event.shaped(`gtceu:${metal}_scythe`, [
-                'A', 
-                'B' 
-            ], {
-                A: `gtceu:${metal}_scythe_head`, 
-                B: '#tfc:can_be_lit_on_torch'   
-            }).id(`tfc:crafting/metal/scythe/${metal}`)
+            event.remove({ id: `tfc:crafting/metal/scythe/${metal}` })
 
             // Декрафт инструмента в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_scythe`, metalSpecs.melt_temp)
