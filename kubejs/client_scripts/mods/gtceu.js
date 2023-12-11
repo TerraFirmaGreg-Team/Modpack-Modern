@@ -14,11 +14,11 @@ const hideGTCEUStuff = (event) => {
 }
 
 const groupGTCEUStuff = (event) => {
-    event.groupItemsByTag('tfg:rei_groups/dusts/pure', 'Pure Dusts', 'forge:dusts/pure')
-    event.groupItemsByTag('tfg:rei_groups/dusts/impure', 'Impure Dusts', 'forge:dusts/impure')
+    event.groupItemsByTag('tfg:rei_groups/dusts/pure', 'Pure Dusts', 'forge:pure_dusts')
+    event.groupItemsByTag('tfg:rei_groups/dusts/impure', 'Impure Dusts', 'forge:impure_dusts')
     event.groupItemsByTag('tfg:rei_groups/dusts', 'Dusts', 'forge:dusts')
-    event.groupItemsByTag('tfg:rei_groups/dusts/small', 'Small Dusts', 'forge:dusts/small')
-    event.groupItemsByTag('tfg:rei_groups/dusts/tiny', 'Tiny Dusts', 'forge:dusts/tiny')
+    event.groupItemsByTag('tfg:rei_groups/dusts/small', 'Small Dusts', 'forge:small_dusts')
+    event.groupItemsByTag('tfg:rei_groups/dusts/tiny', 'Tiny Dusts', 'forge:tiny_dusts')
     
     event.groupItemsByTag('tfg:rei_groups/ores', 'Ores', 'forge:ores')
     event.groupItemsByTag('tfg:rei_groups/crushed_ores', 'Crushed Ores', 'forge:crushed_ores')
@@ -26,26 +26,26 @@ const groupGTCEUStuff = (event) => {
     event.groupItemsByTag('tfg:rei_groups/refined_ores', 'Refined Ores', 'forge:refined_ores')
 
     event.groupItemsByTag('tfg:rei_groups/ingots', 'Ingots', 'forge:ingots')
-    event.groupItemsByTag('tfg:rei_groups/ingots/hot', 'Hot Ingots', 'forge:ingots/hot')
+    event.groupItemsByTag('tfg:rei_groups/ingots/hot', 'Hot Ingots', 'forge:hot_ingots')
 
-    event.groupItemsByTag('tfg:rei_groups/gears/small', 'Small Gears', 'forge:gears/small')
+    event.groupItemsByTag('tfg:rei_groups/gears/small', 'Small Gears', 'forge:small_gears')
     event.groupItemsByTag('tfg:rei_groups/gears', 'Gears', 'forge:gears')
 
     event.groupItemsByTag('tfg:rei_groups/rods', 'Rods', 'forge:rods')
     event.groupItemsByTag('tfg:rei_groups/rods/long', 'Long Rods', 'forge:rods/long')
 
     event.groupItemsByTag('tfg:rei_groups/plates', 'Plates', 'forge:plates')
-    event.groupItemsByTag('tfg:rei_groups/plates/double', 'Double Plates', 'forge:plates/double')
-    event.groupItemsByTag('tfg:rei_groups/plates/dense', 'Dense Plates', 'forge:plates/dense')
+    event.groupItemsByTag('tfg:rei_groups/plates/double', 'Double Plates', 'forge:double_plates')
+    event.groupItemsByTag('tfg:rei_groups/plates/dense', 'Dense Plates', 'forge:dense_plates')
 
     event.groupItemsByTag('tfg:rei_groups/springs', 'Springs', 'forge:springs')
-    event.groupItemsByTag('tfg:rei_groups/springs/small', 'Small Springs', 'forge:springs/small')
+    event.groupItemsByTag('tfg:rei_groups/springs/small', 'Small Springs', 'forge:small_springs')
 
-    event.groupItemsByTag('tfg:rei_groups/gems/exquisite', 'Exquisite Gems', 'forge:gems/exquisite')
+    event.groupItemsByTag('tfg:rei_groups/gems/exquisite', 'Exquisite Gems', 'forge:exquisite_gems')
     event.groupItemsByTag('tfg:rei_groups/gems', 'Gems', 'forge:gems')
-    event.groupItemsByTag('tfg:rei_groups/gems/flawless', 'Flawless Gems', 'forge:gems/flawless')
-    event.groupItemsByTag('tfg:rei_groups/gems/flawed', 'Flawed Gems', 'forge:gems/flawed')
-    event.groupItemsByTag('tfg:rei_groups/gems/chipped', 'Chipped Gems', 'forge:gems/chipped')
+    event.groupItemsByTag('tfg:rei_groups/gems/flawless', 'Flawless Gems', 'forge:flawless_gems')
+    event.groupItemsByTag('tfg:rei_groups/gems/flawed', 'Flawed Gems', 'forge:flawed_gems')
+    event.groupItemsByTag('tfg:rei_groups/gems/chipped', 'Chipped Gems', 'forge:chipped_gems')
     
     event.groupItemsByTag('tfg:rei_groups/material_blocks/raw', 'Raw Material Blocks', 'forge:material_blocks/raw')
     event.groupItemsByTag('tfg:rei_groups/material_blocks/block', 'Material Blocks', 'forge:material_blocks/block')
@@ -84,7 +84,7 @@ const groupGTCEUStuff = (event) => {
     event.groupItemsByTag('tfg:rei_groups/screws', 'Screws', 'forge:screws')
     event.groupItemsByTag('tfg:rei_groups/foils', 'Foils', 'forge:foils')
     event.groupItemsByTag('tfg:rei_groups/rotors', 'Rotors', 'forge:rotors')
-    event.groupItemsByTag('tfg:rei_groups/wires/fine', 'Fine Wires', 'forge:wires/fine')
+    event.groupItemsByTag('tfg:rei_groups/wires/fine', 'Fine Wires', 'forge:fine_wires')
 
     event.groupItemsByTag('tfg:rei_groups/wires/single', 'Single Wires', 'forge:wires/single')
     event.groupItemsByTag('tfg:rei_groups/wires/double', 'Double Wires','forge:wires/double')
