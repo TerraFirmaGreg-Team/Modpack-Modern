@@ -48,6 +48,7 @@ TFCEvents.data(event => {
     registerTFCDataForTFC(event)
     // registerTFCDataForFirmaLife(event)
     registerTFCDataForWaterFlasks(event)
+    registerTFCDataForTreeTap(event)
     registerTFCDataForGTCEU(event)
 })
 
@@ -59,18 +60,17 @@ ServerEvents.recipes(event => {
     registerTFCRecipes(event)
     registerFirmaLifeRecipes(event)
     registerWaterFlasksRecipes(event)
+    registerTreeTapRecipes(event)
     // registerMinecraftRecipes(event)
     // registerGTCEURecipes(event)
     registerCreateRecipes(event)
     // registerAE2Recipes(event)
     // registerComputerCraftRecipes(event)
     registerAdAstraRecipes(event)
-    // registerTreeTapRecipes(event)
     // registerMoreRedRecipes(event)
     // registerSophisticatedBackpacksRecipes(event)
     // registerSmallShipsRecipes(event)
-    // registerExtendedCraftingRecipes(event)
-    // registerToolBeltRecipes(event)
+    registerToolBeltRecipes(event)
 })
 
 /**
