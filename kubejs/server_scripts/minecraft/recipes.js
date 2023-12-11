@@ -539,6 +539,29 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    // Фикс крафта ванильных ниток
+    event.recipes.gtceu.macerator('macerate_wool')             
+        .itemInputs('#minecraft:wool')
+        .itemOutputs('tfc:wool_yarn')
+        .chancedOutput('tfc:wool_yarn', 9000, 0)
+        .chancedOutput('tfc:wool_yarn', 5000, 0)
+        .chancedOutput('tfc:wool_yarn', 2000, 0)
+        .duration(200)
+        .EUt(2)
+
+    event.recipes.tfc.barrel_sealed(6000)
+        .inputs('tfc:wool_yarn', Fluid.of('tfc:tannin', 250))    
+        .outputItem('minecraft:string')
+        .id('tfg:barrel/sealed/string')
+        
+
+    event.recipes.gtceu.mixer('vanilla_string_from_wool_yarn')             
+        .inputFluids(Fluid.of('tfc:tannin', 200))    
+        .itemInputs('tfc:wool_yarn')
+        .itemOutputs('minecraft:string')
+        .duration(800)
+        .EUt(2)
+
     //#region Фикс рецептов факелов
 
     //#region В Верстаке
@@ -701,4 +724,6 @@ const registerMinecraftRecipes = (event) => {
         .EUt(4)
 
     //#endregion
+
+
 }
