@@ -1,10 +1,13 @@
 {
-    "block.gtceu.lv_saw_mill": "",
-    "block.gtceu.mv_saw_mill": "",
-    "block.gtceu.hv_saw_mill": "",
-    "block.gtceu.ev_saw_mill": "",
-    "block.gtceu.iv_saw_mill": "",
-    "block.gtceu.luv_saw_mill": "",
-    "block.gtceu.zpm_saw_mill": "",
-    "block.gtceu.uv_saw_mill": ""
+    "material.salt_water": "Concentrated Salt Water",
+    "gtceu.jei.bedrock_fluid.salt_water_deposit": "Concentrated Salt Water Deposit",
+
+    "block.gtceu.lv_saw_mill": "WIP",
+    "block.gtceu.mv_saw_mill": "WIP",
+    "block.gtceu.hv_saw_mill": "WIP",
+    "block.gtceu.ev_saw_mill": "WIP",
+    "block.gtceu.iv_saw_mill": "WIP",
+    "block.gtceu.luv_saw_mill": "WIP",
+    "block.gtceu.zpm_saw_mill": "WIP",
+    "block.gtceu.uv_saw_mill": "WIP"
 }
