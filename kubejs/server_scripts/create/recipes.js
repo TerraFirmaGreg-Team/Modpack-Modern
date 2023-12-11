@@ -6,6 +6,7 @@ const registerCreateRecipes = (event) => {
     event.remove({ mod: 'create' });
 
     // Деревянная пластина для шестеренки
+    /*
     event.shaped('gtceu:wood_plate', [
         '  A',
         ' B ',
@@ -33,7 +34,7 @@ const registerCreateRecipes = (event) => {
     ], {
         A: 'create:shaft',
         B: 'gtceu:wood_gear',
-    });
+    });*/
 
     // todo: использовать ютилити методы для создания рецептов ниже (порядок, heatItem -> heatRecipe -> любые другие тфкшные)
     // galvanized_iron

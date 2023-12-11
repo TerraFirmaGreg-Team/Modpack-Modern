@@ -1,0 +1,7 @@
+#KubeJS TFC common configuration
+#If true:
+#   Virtual json files created in the 'TFCEvents.data' and 'TFCEvents.worldgenData' events will be printed to the log
+#   Important (and potentially unstable) events will be printed to the log
+#
+debugMode = false
+

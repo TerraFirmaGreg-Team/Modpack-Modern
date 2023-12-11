@@ -11,5 +11,9 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:wheat_small_dust',
     'gtceu:wheat_tiny_dust',
     'gtceu:wood_drill_head',
-    'gtceu:wood_chainsaw_head'
+    'gtceu:wood_chainsaw_head',
+    'gtceu:rubber_sapling', 
+    'gtceu:rubber_log', 
+    'gtceu:rubber_leaves', 
+    'gtceu:rubber_planks'
 ];

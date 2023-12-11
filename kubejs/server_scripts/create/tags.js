@@ -1,6 +1,9 @@
 // priority: 0
 
-const registerCreateTags = (event) => {
+const registerCreateItemTags = (event) => {
 
-    event.add('forge:ingots/galvanized_iron', 'kubejs:galvanized_iron');
+    // Удаление тегов у отключенных предметов
+    global.CREATE_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
 }

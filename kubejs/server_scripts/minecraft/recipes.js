@@ -261,6 +261,7 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'minecraft:netherite_ingot_from_netherite_block'})
     event.remove({id: 'minecraft:netherite_block'})
     event.remove({id: 'minecraft:lodestone'})
+    event.remove({id: 'minecraft:lantern'})
 
     // Исправление рецептов пережарки меди, удволетворяя условиям: обычный кусок -> 2 слитка
     event.remove({id: 'minecraft:copper_ingot_from_smelting_raw_copper'})
@@ -284,13 +285,8 @@ const registerMinecraftRecipes = (event) => {
     event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
 
     // Bucket
-    addWeldingRecipe(event, 
-        'tfg:recipes/anvil/vanilla_bucket',
-        { item: 'tfc:metal/bucket/red_steel' },
-        { item: 'tfc:metal/bucket/blue_steel' },
-        { item: 'minecraft:bucket' },
-        6
-    )
+    event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
+        .id('tfg:anvil/vanilla_bucket')
 
     // Fire Charge
     event.remove({ id: 'tfc:crafting/vanilla/fire_charge' })
@@ -542,4 +538,190 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:pink_dye')
         .duration(200)
         .EUt(2)
+
+    // Фикс крафта ванильных ниток
+    event.recipes.gtceu.macerator('macerate_wool')             
+        .itemInputs('#minecraft:wool')
+        .itemOutputs('tfc:wool_yarn')
+        .chancedOutput('tfc:wool_yarn', 9000, 0)
+        .chancedOutput('tfc:wool_yarn', 5000, 0)
+        .chancedOutput('tfc:wool_yarn', 2000, 0)
+        .duration(200)
+        .EUt(2)
+
+    event.recipes.tfc.barrel_sealed(6000)
+        .inputs('tfc:wool_yarn', Fluid.of('tfc:tannin', 250))    
+        .outputItem('minecraft:string')
+        .id('tfg:barrel/sealed/string')
+        
+
+    event.recipes.gtceu.mixer('vanilla_string_from_wool_yarn')             
+        .inputFluids(Fluid.of('tfc:tannin', 200))    
+        .itemInputs('tfc:wool_yarn')
+        .itemOutputs('minecraft:string')
+        .duration(800)
+        .EUt(2)
+
+    //#region Фикс рецептов факелов
+
+    //#region В Верстаке
+
+    // Из серы
+    event.shaped('2x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:sulfur_dust', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/torch_sulfur')
+
+    // Из фосфора
+    event.shaped('6x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:phosphorus_dust', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/torch_phosphorus')
+
+    // Из креозота
+    // Я не виноват, что рецепт с ведром грега не работает
+    event.remove({ id: 'gtceu:shaped/torch_creosote' })
+
+    // Из пыли кокса
+    event.shaped('8x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:coke_dust', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/torch_coke_dust')
+
+    // Из гема кокса
+    event.shaped('8x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:coke_gem', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/torch_coke')
+
+    // Из пыли угля
+    event.shaped('4x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:coal_dust', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/torch_coal_dust')
+
+    // Из гема угля
+    event.shaped('4x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'minecraft:coal', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('tfg:crafting/torch_coal')
+
+    // Из пыли древесного угля
+    event.shaped('4x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:charcoal_dust', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/torch_charcoal_dust')
+
+    // Из гема древесного угля
+    event.shaped('4x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'minecraft:charcoal', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('tfg:crafting/torch_charcoal')
+
+    // Из резины
+    event.shaped('3x tfc:dead_torch', [
+        'A',
+        'B'
+    ], {
+        A: 'gtceu:sticky_resin', 
+        B: '#tfc:can_be_lit_on_torch' 
+    }).id('gtceu:shaped/sticky_resin_torch')
+
+    //#endregion
+
+    //#region В сборщике
+
+    // Из серы
+    event.recipes.gtceu.assembler('torch_sulfur')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:sulfur_dust')
+        .itemOutputs('2x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+    // Из фосфора
+    event.recipes.gtceu.assembler('torch_phosphorus')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:phosphorus_dust')
+        .itemOutputs('6x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+    // Из гема кокса
+    event.recipes.gtceu.assembler('torch_coke_gem')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_gem')
+        .itemOutputs('8x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+    // Из пыли кокса
+    event.recipes.gtceu.assembler('torch_coke_dust')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_dust')
+        .itemOutputs('8x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+    // Из гема ванильного угля
+    event.recipes.gtceu.assembler('torch_coal')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'minecraft:coal')
+        .itemOutputs('4x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+    // Из пыли ванильного угля
+    event.recipes.gtceu.assembler('torch_coal_dust')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coal_dust')
+        .itemOutputs('4x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+    // Из пыли древесного угля
+    event.recipes.gtceu.assembler('torch_charcoal_dust')             
+        .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:charcoal_dust')
+        .itemOutputs('4x tfc:dead_torch')
+        .duration(100)
+        .EUt(1)
+
+
+    //#endregion
+
+    // Мертвый факел в обычный
+    event.smelting('tfc:torch', 'tfc:dead_torch')
+        .id('tfg:smelting/dead_torch_to_torch')
+
+    //#endregion
+
+    //#region Фикс рецептов тыквы
+
+    event.remove({ id: 'gtceu:macerator/macerate_pumpkin' })
+
+    event.recipes.gtceu.canner('jack_o_lantern')             
+        .itemInputs('tfc:pumpkin')
+        .itemOutputs('2x minecraft:pink_dye', 'minecraft:glowstone_dust')
+        .duration(100)
+        .EUt(4)
+
+    //#endregion
 }
