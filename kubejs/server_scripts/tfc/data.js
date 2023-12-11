@@ -102,6 +102,12 @@ const registerTFCHeats = (event) => {
             event.itemHeat(`gtceu:${metal}_knife_butchery_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
         }
     })
+
+    // Ведро из синей стали
+    event.itemHeat('tfc:metal/bucket/blue_steel', 1.429, 924, 1232)
+
+    // Ведро из красной
+    event.itemHeat('tfc:metal/bucket/red_steel', 1.429, 924, 1232)
 }
 
 /**
