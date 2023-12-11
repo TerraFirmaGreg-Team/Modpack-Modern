@@ -10,7 +10,7 @@ recipes:
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
-  harderRods: false
+  harderRods: true
 
   # Whether to make crafting recipes for Bricks, Firebricks, and Coke Bricks harder.
   # Default: false
@@ -55,7 +55,7 @@ recipes:
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
-  hardDyeRecipes: false
+  hardDyeRecipes: true
 
   # Whether to remove charcoal smelting recipes from the vanilla furnace.
   # Default: true
@@ -76,7 +76,7 @@ recipes:
 worldgen:
   # Rubber Tree spawn chance (% per chunk)
   # Default: 0.5
-  rubberTreeSpawnChance: 0.5
+  rubberTreeSpawnChance: 0.0
 
   # Should all Stone Types drop unique Ore Item Blocks?
   # Default: false (meaning only Stone, Netherrack, and Endstone)
@@ -132,16 +132,16 @@ machines:
 
   # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
   # Default: false
-  requireGTToolsForBlocks: false
+  requireGTToolsForBlocks: true
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  doTerrainExplosion: false
+  doTerrainExplosion: true
 
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
-  doesExplosionDamagesTerrain: false
+  doesExplosionDamagesTerrain: true
 
   # Divisor for Recipe Duration per Overclock.
   # Default: 2.0
@@ -166,7 +166,7 @@ machines:
 
   # Block to replace mined ores with in the miner and multiblock miner.
   # Default: minecraft:cobblestone
-  replaceMinedBlocksWith: minecraft:cobblestone
+  replaceMinedBlocksWith: tfc:rock/cobble/rhyolite
 
   # Whether to enable the Maintenance Hatch, required for Multiblocks.
   # Default: true
