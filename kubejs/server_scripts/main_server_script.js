@@ -6,6 +6,7 @@
 ServerEvents.tags('item', event => {
     registerTFCItemTags(event)
     registerFirmaLifeItemTags(event)
+    registerSmallShipsItemTags(event)
     // registerMinecraftItemTags(event)
     registerCreateItemTags(event)
     registerAdAstraItemTags(event)
@@ -60,6 +61,7 @@ ServerEvents.recipes(event => {
     registerFirmaLifeRecipes(event)
     registerWaterFlasksRecipes(event)
     registerTreeTapRecipes(event)
+    registerSmallShipsRecipes(event)
     // registerMinecraftRecipes(event)
     // registerGTCEURecipes(event)
     registerCreateRecipes(event)
@@ -68,7 +70,6 @@ ServerEvents.recipes(event => {
     registerAdAstraRecipes(event)
     // registerMoreRedRecipes(event)
     // registerSophisticatedBackpacksRecipes(event)
-    registerSmallShipsRecipes(event)
     registerToolBeltRecipes(event)
 })
 

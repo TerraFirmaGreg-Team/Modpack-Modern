@@ -3,9 +3,14 @@
 const registerSmallShipsRecipes = (event) => {
     
     // Удаление рецептов ванильных кораблей
-    global.VANILLA_WOOD_TYPES.forEach(woodTypeName => {
-        global.SHIP_TYPES.forEach(shipTypeName => {
-            event.remove({ id: `smallships:${woodTypeName}_${shipTypeName}` })
+    global.SMALL_SHIPS_DISABLED_ITEMS.forEach(item => {
+        event.remove({ output: item })
+    })
+
+    // Удаление конверсии ванильных кораблей в тфк
+    global.SHIP_TYPES.forEach(shipType => {
+        global.VANILLA_WOOD_TYPES.forEach(woodType => {
+            event.remove({ id: `tfships:${woodType}_${shipType}_conversion` })
         })
     })
 
