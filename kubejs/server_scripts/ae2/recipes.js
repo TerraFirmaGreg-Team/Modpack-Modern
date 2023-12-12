@@ -141,17 +141,15 @@ const registerAE2Recipes = (event) => {
         .id('tfg:crafting/energy_card')
 
     // Quartz Fixture
-	event.shapeless('ae2:quartz_fixture', 
-	[
+	event.shapeless('ae2:quartz_fixture', [
         'ae2:charged_certus_quartz_crystal', 
         '#forge:rods/aluminium'
     ]).id('tfg:crafting/quartz_fixture')
 	
 	// Light Detecting Fixture
-	event.shapeless('ae2:light_detector', 
-	[
-        'gtceu:certus_quartz_gem', 
-        '#forge:rods/iron'
+    event.shapeless('ae2:light_detector', [
+        '#forge:gems/certus_quartz', 
+        '#forge:rods/wrought_iron'
     ]).id('tfg:crafting/light_detector')
 	
     // Annihilation Core
@@ -1749,16 +1747,14 @@ const registerAE2Recipes = (event) => {
     
     // Vibrant Quartz Glass
     event.recipes.gtceu.alloy_smelter('ae2:quartz_vibrant_glass')
-        .itemInputs(
-            'ae2:quartz_glass',
-            '8x #forge:dusts/glowstone')
+        .itemInputs('ae2:quartz_glass', '8x #forge:dusts/glowstone')
         .itemOutputs('ae2:quartz_vibrant_glass')
         .duration(20)
         .EUt(480)
 
     // Charged Certus Quartz  
     event.recipes.gtceu.electrolyzer('ae2:charged_certus_quartz_crystal')
-        .itemInputs('gtceu:certus_quartz_gem')
+        .itemInputs('#forge:gems/certus_quartz')
         .itemOutputs('ae2:charged_certus_quartz_crystal')
         .duration(400)
         .EUt(160)
