@@ -1753,11 +1753,11 @@ const registerAE2Recipes = (event) => {
         .EUt(480)
 
     // Charged Certus Quartz  
-    event.recipes.gtceu.electrolyzer('ae2:charged_certus_quartz_crystal')
+    event.recipes.gtceu.polarizer('ae2:charged_certus_quartz_crystal')
         .itemInputs('#forge:gems/certus_quartz')
         .itemOutputs('ae2:charged_certus_quartz_crystal')
-        .duration(400)
-        .EUt(160)
+        .duration(800)
+        .EUt(190)
 
     //#region Cell Packing
     
