@@ -9,8 +9,7 @@ const registerAE2WTLibRecipes = (event) => {
     
     event.remove({ id: 'ae2wtlib:magnet_card' });
     event.remove({ id: 'ae2wtlib:quantum_bridge_card' });
-
-    //assembler
+    
     // Wireless Pattern Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_encoding_terminal')
         .itemInputs(
@@ -25,7 +24,7 @@ const registerAE2WTLibRecipes = (event) => {
         .duration(30)
         .EUt(250)
     
-    // pattern access terminal
+    // Pattern Access Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_access_terminal')
         .itemInputs(
             '2x ae2:dense_energy_cell',
@@ -53,7 +52,7 @@ const registerAE2WTLibRecipes = (event) => {
         .duration(30)
         .EUt(250)
 
-    // quantum bridge card
+    // Quantum Bridge Card
     event.recipes.gtceu.assembler('ae2wtlib:quantum_bridge_card')
         .itemInputs(
             '4x gtceu:iv_sensor',
