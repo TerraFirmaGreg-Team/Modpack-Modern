@@ -1,4 +1,4 @@
-// priority: 199
+// priority: 0
 
 global.AE2_DISABLED_ITEMS = [
     // Инструменты
@@ -89,7 +89,8 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:cable_energy_acceptor',
     'ae2:energy_cell',
     'ae2:dense_energy_cell',
-    'ae2:creative_energy_cell'
+    'ae2:creative_energy_cell',
+    'ae2:tiny_tnt'
 ];
 
 // Glass Cable
