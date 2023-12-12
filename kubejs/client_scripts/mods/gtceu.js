@@ -47,9 +47,9 @@ const groupGTCEUStuff = (event) => {
     event.groupItemsByTag('tfg:rei_groups/gems/flawed', 'Flawed Gems', 'forge:flawed_gems')
     event.groupItemsByTag('tfg:rei_groups/gems/chipped', 'Chipped Gems', 'forge:chipped_gems')
     
-    event.groupItemsByTag('tfg:rei_groups/material_blocks/raw', 'Raw Material Blocks', 'forge:material_blocks/raw')
-    event.groupItemsByTag('tfg:rei_groups/material_blocks/block', 'Material Blocks', 'forge:material_blocks/block')
-    event.groupItemsByTag('tfg:rei_groups/material_blocks/frame', 'Frames', 'forge:material_blocks/frame')
+    event.groupItemsByTag('tfg:rei_groups/blocks/raw', 'Raw Material Blocks', 'forge:raw_blocks')
+    event.groupItemsByTag('tfg:rei_groups/blocks/material_blocks', 'Material Blocks', 'forge:material_blocks')
+    event.groupItemsByTag('tfg:rei_groups/blocks/frame', 'Frames', 'forge:frame_blocks')
 
     event.groupItemsByTag('tfg:rei_groups/sword_heads', 'Sword Heads', 'forge:sword_heads')
     event.groupItemsByTag('tfg:rei_groups/butchery_knife_heads', 'Butchery Knife Heads', 'forge:butchery_knife_heads')

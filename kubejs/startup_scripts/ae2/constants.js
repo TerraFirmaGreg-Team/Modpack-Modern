@@ -1,7 +1,7 @@
 // priority: 199
 
 global.AE2_DISABLED_ITEMS = [
-    //инструменты
+    // Инструменты
     'ae2:certus_quartz_sword',
     'ae2:nether_quartz_sword',
     'ae2:fluix_sword',
@@ -24,14 +24,40 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:charged_staff',
     '#ae2:knife',
     'ae2:name_press',
-    //budding
-    '#forge:buds',
-    'ae2:flawless_budding_quartz',
-    'ae2:flawed_budding_quartz',
-    'ae2:chipped_budding_quartz',
-    'ae2:damaged_budding_quartz',
-    'ae2:quartz_cluster',
-    //sky stone
+
+    // Блоки
+    'ae2:vibration_chamber',
+    'ae2:crank',
+    'ae2:charger',
+    'ae2:spatial_anchor',
+    'ae2:inscriber',
+    'ae2:growth_accelerator',
+    'ae2:cut_quartz_block', 
+    'ae2:smooth_quartz_block', 
+    'ae2:quartz_bricks', 
+    'ae2:quartz_pillar', 
+    'ae2:chiseled_quartz_block', 
+    'ae2:quartz_stairs', 
+    'ae2:cut_quartz_stairs', 
+    'ae2:smooth_quartz_stairs', 
+    'ae2:quartz_brick_stairs', 
+    'ae2:chiseled_quartz_stairs', 
+    'ae2:quartz_pillar_stairs', 
+    'ae2:fluix_stairs', 
+    'ae2:quartz_slab', 
+    'ae2:cut_quartz_slab', 
+    'ae2:smooth_quartz_slab', 
+    'ae2:quartz_brick_slab', 
+    'ae2:chiseled_quartz_slab',
+    'ae2:quartz_pillar_slab', 
+    'ae2:fluix_slab', 
+    'ae2:quartz_wall', 
+    'ae2:cut_quartz_wall', 
+    'ae2:smooth_quartz_wall', 
+    'ae2:quartz_brick_wall', 
+    'ae2:chiseled_quartz_wall',
+    'ae2:quartz_pillar_wall', 
+    'ae2:fluix_wall',
     'ae2:sky_stone_block',
     'ae2:smooth_sky_stone_block',
     'ae2:sky_stone_brick',
@@ -53,28 +79,21 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:smooth_sky_stone_wall',
     'ae2:sky_stone_brick_wall',
     'ae2:sky_stone_small_brick_wall',
-    //certus quartz crystal
-    'ae2:certus_quartz_crystal',
-    //compass
-    'ae2:meteorite_compass',
-    //blocks
-    'ae2:vibration_chamber',
-    'ae2:crank',
-    'ae2:charger',
-    'ae2:spatial_anchor',
-    'ae2:inscriber',
-    'ae2:growth_accelerator',
-    //dust
-    'ae2:silicon',
-    'ae2:certus_quartz_dust',
-    'ae2:sky_dust',
-    'ae2:ender_dust',
-    'ae2:certus_quartz_dust',
+    'gtceu:raw_certus_quartz_block',
     
+    // Другое
+    'ae2:meteorite_compass',
+    'ae2:silicon',
+    'ae2:sky_dust',
+    'ae2:energy_acceptor',
+    'ae2:cable_energy_acceptor',
+    'ae2:energy_cell',
+    'ae2:dense_energy_cell',
+    'ae2:creative_energy_cell'
 ];
 
 // Glass Cable
-global.AE2_GLASS_CABLE = [
+global.AE2_GLASS_CABLES = [
     'ae2:white_glass_cable',
     'ae2:orange_glass_cable',
     'ae2:magenta_glass_cable',
@@ -94,7 +113,7 @@ global.AE2_GLASS_CABLE = [
 ]
 
 // Covered Cable
-global.AE2_COVERED_CABLE = [
+global.AE2_COVERED_CABLES = [
     'ae2:white_covered_cable',
     'ae2:orange_covered_cable',
     'ae2:magenta_covered_cable',
@@ -114,7 +133,7 @@ global.AE2_COVERED_CABLE = [
 ]
 
 // Dense Covered Cable
-global.AE2_COVERED_DENSE_CABLE = [
+global.AE2_COVERED_DENSE_CABLES = [
     'ae2:white_covered_dense_cable',
     'ae2:orange_covered_dense_cable',
     'ae2:magenta_covered_dense_cable',
@@ -134,7 +153,7 @@ global.AE2_COVERED_DENSE_CABLE = [
 ]
 
 // Smart Cable
-global.AE2_SMART_CABLE = [
+global.AE2_SMART_CABLES = [
     'ae2:white_smart_cable',
     'ae2:orange_smart_cable',
     'ae2:magenta_smart_cable',
@@ -154,7 +173,7 @@ global.AE2_SMART_CABLE = [
 ]
 
 // Dense Smart Cable
-global.AE2_SMART_DENSE_CABLE = [
+global.AE2_SMART_DENSE_CABLES = [
     'ae2:white_smart_dense_cable',
     'ae2:orange_smart_dense_cable',
     'ae2:magenta_smart_dense_cable',
@@ -174,7 +193,7 @@ global.AE2_SMART_DENSE_CABLE = [
 ]
 
 // Smart Cable
-global.AE2_SMART_CABLE = [
+global.AE2_SMART_CABLES = [
     'ae2:white_smart_cable',
     'ae2:orange_smart_cable',
     'ae2:magenta_smart_cable',
@@ -194,7 +213,7 @@ global.AE2_SMART_CABLE = [
 ]
 
 // Dense Smart Cable
-global.AE2_SMART_DENSE_CABLE = [
+global.AE2_SMART_DENSE_CABLES = [
     'ae2:white_smart_dense_cable',
     'ae2:orange_smart_dense_cable',
     'ae2:magenta_smart_dense_cable',
@@ -215,7 +234,7 @@ global.AE2_SMART_DENSE_CABLE = [
 
 
 // Paint ball
-global.AE2_PAINTBALL = [
+global.AE2_PAINTBALLS = [
     'ae2:white_paint_ball',
     'ae2:orange_paint_ball',
     'ae2:magenta_paint_ball',
@@ -234,7 +253,7 @@ global.AE2_PAINTBALL = [
     'ae2:black_paint_ball',
 ]
 // Lumen paint ball
-global.AE2_LUMEN_PAINTBALL = [
+global.AE2_LUMEN_PAINTBALLS = [
     'ae2:white_lumen_paint_ball',
     'ae2:orange_lumen_paint_ball',
     'ae2:magenta_lumen_paint_ball',

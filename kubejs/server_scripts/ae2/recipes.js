@@ -137,7 +137,7 @@ const registerAE2Recipes = (event) => {
         .id('tfg:crafting/equal_distribution_card')
     
     // Energy Card
-    event.shapeless('ae2:energy_card', ['ae2:advanced_card','2x ae2:dense_energy_cell'])
+    event.shapeless('ae2:energy_card', ['ae2:advanced_card','2x gtceu:hv_lithium_battery'])
         .id('tfg:crafting/energy_card')
 
     // Quartz Fixture
@@ -186,7 +186,7 @@ const registerAE2Recipes = (event) => {
         B: 'ae2:crafting_terminal',
         C: 'ae2:engineering_processor',
         D: '#forge:circuits/hv',
-        E: 'ae2:dense_energy_cell',
+        E: 'gtceu:hv_lithium_battery',
         F: '#forge:plates/nether_quartz'
     }).id('tfg:crafting/wireless_terminal')
 
@@ -508,7 +508,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:plates/steel',
         B: 'ae2:formation_core',
         C: 'ae2:cell_component_4k',
-        D: 'ae2:dense_energy_cell'
+        D: 'gtceu:hv_lithium_battery'
     }).id('tfg:crafting/matter_cannon')
 
     // Color Applicator
@@ -520,7 +520,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:wires/single/aluminium',
         B: 'ae2:formation_core',
         C: 'ae2:cell_component_4k',
-        D: 'ae2:dense_energy_cell',
+        D: 'gtceu:hv_lithium_battery',
         E: '#forge:rods/steel',
     }).id('tfg:crafting/color_applicator')
 
@@ -785,7 +785,7 @@ const registerAE2Recipes = (event) => {
         // Wireless Crafting Terminal
     event.recipes.gtceu.assembler('ae2:wireless_crafting_terminal')
         .itemInputs(
-            '2x ae2:dense_energy_cell',
+            '2x gtceu:hv_lithium_battery',
             '2x gtceu:luv_sensor',
             'gtceu:luv_emitter',
             '2x #forge:rods/osmiridium',
@@ -1119,34 +1119,6 @@ const registerAE2Recipes = (event) => {
         .duration(200)
         .EUt(480)
         .cleanroom(CleanroomType.CLEANROOM)
-  
-    // Energy Cell
-    event.recipes.gtceu.assembler('ae2:energy_cell')
-        .itemInputs(
-            '#forge:plates/certus_quartz',
-            '#forge:batteries/hv',
-            '2x #forge:circuits/hv',
-            '#ae2:covered_cable')
-        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
-        .itemOutputs('ae2:energy_cell')
-        .circuit(1)
-        .duration(200)
-        .EUt(500)
-  
-    // Dense Energy Cell
-    event.recipes.gtceu.assembler('ae2:dense_energy_cell')
-        .itemInputs(
-            '8x ae2:energy_cell',
-            'gtceu:ev_battery_buffer_16x',
-            '3x ae2:formation_core',
-            '#forge:circuits/ev',
-            '#ae2:covered_dense_cable')
-        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
-        .itemOutputs('ae2:dense_energy_cell')
-        .circuit(1)
-        .duration(20)
-        .EUt(7680)
-        .cleanroom(CleanroomType.CLEANROOM)
     
     //#region ME Interfaces
 
@@ -1273,7 +1245,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_1k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:item_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_item_cell_1k')
@@ -1285,7 +1257,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_4k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:item_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_item_cell_4k')
@@ -1298,7 +1270,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_16k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:item_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_item_cell_16k')
@@ -1311,7 +1283,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_64k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:item_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_item_cell_64k')
@@ -1324,7 +1296,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_256k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:item_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_item_cell_256k')
@@ -1341,7 +1313,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_1k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:fluid_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_fluid_cell_1k')
@@ -1353,7 +1325,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_4k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:fluid_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_fluid_cell_4k')
@@ -1366,7 +1338,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_16k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:fluid_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_fluid_cell_16k')
@@ -1379,7 +1351,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_64k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:fluid_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_fluid_cell_64k')
@@ -1392,7 +1364,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:chest',
             'ae2:cell_component_256k',
-            'ae2:energy_cell',
+            'gtceu:mv_sodium_battery',
             'ae2:fluid_cell_housing')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:portable_fluid_cell_256k')
@@ -1531,20 +1503,20 @@ const registerAE2Recipes = (event) => {
     
     // GT Chemical Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLE[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLES[i] + '_gtceu_dye')
             .itemInputs('ae2:fluix_glass_cable')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_GLASS_CABLE[i])
+            .itemOutputs(global.AE2_GLASS_CABLES[i])
             .duration(20)
             .EUt(7)
     };
 
     // TFC Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLE[i] + '_tfc_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLES[i] + '_tfc_dye')
             .itemInputs('ae2:fluix_glass_cable')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_GLASS_CABLE[i])
+            .itemOutputs(global.AE2_GLASS_CABLES[i])
             .duration(20)
             .EUt(7)
     };
@@ -1559,20 +1531,20 @@ const registerAE2Recipes = (event) => {
     
     // GT Chemical Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLE[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_gtceu_dye')
             .itemInputs('ae2:fluix_covered_cable')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_COVERED_CABLE[i])
+            .itemOutputs(global.AE2_COVERED_CABLES[i])
             .duration(20)
             .EUt(7)
     };
     
     // TFC Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLE[i] + '_tfc_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_tfc_dye')
             .itemInputs('ae2:fluix_covered_cable')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_COVERED_CABLE[i])
+            .itemOutputs(global.AE2_COVERED_CABLES[i])
             .duration(20)
             .EUt(7)
     };
@@ -1587,20 +1559,20 @@ const registerAE2Recipes = (event) => {
     
     // GT Chemical Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLE[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_gtceu_dye')
             .itemInputs('ae2:fluix_covered_dense_cable')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_COVERED_DENSE_CABLE[i])
+            .itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
     };
     
     // TFC Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLE[i] + '_tfc_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_tfc_dye')
             .itemInputs('ae2:fluix_covered_dense_cable')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_COVERED_DENSE_CABLE[i])
+            .itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
     };
@@ -1615,20 +1587,20 @@ const registerAE2Recipes = (event) => {
     
     // GT Chemical Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLE[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_gtceu_dye')
             .itemInputs('ae2:fluix_smart_cable')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_SMART_CABLE[i])
+            .itemOutputs(global.AE2_SMART_CABLES[i])
             .duration(20)
             .EUt(7)
     };
     
     // TFC Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLE[i] + '_tfc_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_tfc_dye')
             .itemInputs('ae2:fluix_smart_cable')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_SMART_CABLE[i])
+            .itemOutputs(global.AE2_SMART_CABLES[i])
             .duration(20)
             .EUt(7)
     };
@@ -1643,20 +1615,20 @@ const registerAE2Recipes = (event) => {
     
     // GT Chemical Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLE[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_gtceu_dye')
             .itemInputs('ae2:fluix_smart_dense_cable')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_SMART_DENSE_CABLE[i])
+            .itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
     };
 
     // TFC Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLE[i] + '_tfc_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_tfc_dye')
             .itemInputs('ae2:fluix_smart_dense_cable')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_SMART_DENSE_CABLE[i])
+            .itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
     };
@@ -1665,30 +1637,30 @@ const registerAE2Recipes = (event) => {
 
     // GT Chemical Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALL[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_gtceu_dye')
             .itemInputs('ae2:matter_ball')
             .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 36))
-            .itemOutputs(global.AE2_PAINTBALL[i])
+            .itemOutputs(global.AE2_PAINTBALLS[i])
             .duration(20)
             .EUt(7)
     };
 
     // TFC Dyes
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALL[i] + '_tfc_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_tfc_dye')
             .itemInputs('ae2:matter_ball')
             .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 125))
-            .itemOutputs(global.AE2_PAINTBALL[i])
+            .itemOutputs(global.AE2_PAINTBALLS[i])
             .duration(20)
             .EUt(7)
     };
 
     // Lumen Paint Ball
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALL[i] + '_gtceu_dye')
-            .itemInputs(global.AE2_PAINTBALL[i])
+        event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALLS[i] + '_gtceu_dye')
+            .itemInputs(global.AE2_PAINTBALLS[i])
             .inputFluids(Fluid.of('gtceu:glowstone', 125))
-            .itemOutputs(global.AE2_LUMEN_PAINTBALL[i])
+            .itemOutputs(global.AE2_LUMEN_PAINTBALLS[i])
             .duration(20)
             .EUt(7)
     };
@@ -1790,16 +1762,6 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:charged_certus_quartz_crystal')
         .duration(400)
         .EUt(160)
-
-
-    //fluix block
-    //event.recipes.gtceu.compressor('ae2:fluix_block')
-    //    .itemInputs(
-    //        '9x #forge:gems/fluix')
-    //    .itemOutputs(
-    //        'ae2:fluix_block')
-    //    .duration(300)
-    //    .EUt(2)
 
     //#region Cell Packing
     
@@ -2088,15 +2050,6 @@ const registerAE2Recipes = (event) => {
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
-    
-
-    //event.recipes.gtceu.macerator('ae2:fluix_dust')
-    //    .itemInputs(
-    //        '#forge:gems/fluix')
-    //    .itemOutputs(
-    //        'ae2:fluix_dust')
-    //    .duration(56)
-    //    .EUt(2)
        
     // Cable Anchor
     event.recipes.gtceu.extruder('ae2:cable_anchor')
@@ -2109,12 +2062,11 @@ const registerAE2Recipes = (event) => {
     // Quantum Ring
     event.recipes.gtceu.assembly_line('ae2:quantum_ring')
         .itemInputs(
-            '4x #forge:batteries/hv',
+            '6x #forge:batteries/hv',
             '12x #forge:circuits/iv',
             '16x gtceu:iv_emitter',
             '8x ae2:engineering_processor',
             '14x gtceu:iv_sensor',
-            '2x ae2:dense_energy_cell',
             'ae2:logic_processor',)
         .inputFluids(Fluid.of('gtceu:titanium', 1440))
 	    .itemOutputs('ae2:quantum_ring')
@@ -2129,7 +2081,7 @@ const registerAE2Recipes = (event) => {
             '6x ae2:quartz_vibrant_glass',
             '8x ae2:engineering_processor',
             '14x gtceu:iv_sensor',
-            '2x ae2:dense_energy_cell')
+            '2x gtceu:hv_lithium_battery')
         .inputFluids(Fluid.of('gtceu:titanium', 1088))
 	    .itemOutputs('ae2:quantum_link')
 	    .duration(700)
