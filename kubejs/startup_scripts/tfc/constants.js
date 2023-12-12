@@ -1249,6 +1249,25 @@ global.TFC_ORE_MATERIALS = [
     "tetrahedrite"
 ];
 
+global.TFC_LIQUID_DYES = [
+    'tfc:white_dye',
+    'tfc:orange_dye',
+    'tfc:magenta_dye',
+    'tfc:light_blue_dye',
+    'tfc:yellow_dye',
+    'tfc:lime_dye',
+    'tfc:pink_dye',
+    'tfc:gray_dye',
+    'tfc:light_gray_dye',
+    'tfc:cyan_dye',
+    'tfc:purple_dye',
+    'tfc:blue_dye',
+    'tfc:brown_dye',
+    'tfc:green_dye',
+    'tfc:red_dye',
+    'tfc:black_dye',
+];
+
 global.TFC_UNFIRED_MOLDS = [
     "tfc:ceramic/unfired_ingot_mold",
     "tfc:ceramic/unfired_pickaxe_head_mold",

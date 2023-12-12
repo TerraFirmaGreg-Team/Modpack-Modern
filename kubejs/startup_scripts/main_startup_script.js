@@ -5,15 +5,21 @@ const $SimpleTieredMachine = Java.loadClass('com.gregtechceu.gtceu.api.machine.S
 /**
  * Событие регистрации предметов.
  */
-StartupEvents.registry('item', (event) => {
-})
+StartupEvents.registry('item', (event) => {})
 
 /**
  * Событие регистрации блоков.
  */
-StartupEvents.registry('block', (event) => {
-})
+StartupEvents.registry('block', (event) => {})
 
+/**
+ * Событие регистрации жидкостей.
+ */
+StartupEvents.registry('fluid', (event) => {})
+
+/**
+ * Событие регистрации типов рецептов GTCEu.
+ */
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('saw_mill')
         .category('tfg') // Used in the GTlib / LDlib ui editor
@@ -26,6 +32,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	    .setSound(GTSoundEntries.CUT)
 })
 
+/**
+ * Событие регистрации машин GTCEu.
+ */
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('saw_mill', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
         .editableUI($SimpleTieredMachine.EDITABLE_UI_CREATOR.apply(new ResourceLocation("gtceu"), GTRecipeTypes.get('saw_mill')))    

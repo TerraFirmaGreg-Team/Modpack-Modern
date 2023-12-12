@@ -331,5 +331,24 @@ global.VANILLA_STONE_TYPES = [
     "andesite",
     "diorite",
     "granite",
-    "tuff",
+    "tuff"
+];
+
+global.MINECRAFT_FORGE_DYES = [
+    '#forge:dyes/white',
+    '#forge:dyes/orange',
+    '#forge:dyes/magenta',
+    '#forge:dyes/light_blue',
+    '#forge:dyes/yellow',
+    '#forge:dyes/lime',
+    '#forge:dyes/pink',
+    '#forge:dyes/gray',
+    '#forge:dyes/light_gray',
+    '#forge:dyes/cyan',
+    '#forge:dyes/purple',
+    '#forge:dyes/blue',
+    '#forge:dyes/brown',
+    '#forge:dyes/green',
+    '#forge:dyes/red',
+    '#forge:dyes/black'
 ];
