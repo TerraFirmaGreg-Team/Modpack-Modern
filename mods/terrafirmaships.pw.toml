@@ -1,0 +1,13 @@
+name = "TerraFirmaShips"
+filename = "tfships-1.20.1-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0ac911cb8e29c7a90e1c018ebf051293b4e44974"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4874233
+project-id = 881248

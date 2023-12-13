@@ -46,4 +46,4 @@ config/smoothboot.json
 .curseclient
 knownkeys.txt
 *.code-workspace
-mods/
+mods/*.jar

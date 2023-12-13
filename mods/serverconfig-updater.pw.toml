@@ -1,0 +1,13 @@
+name = "ServerConfig Updater"
+filename = "serverconfigupdater-4.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0c54df6e2916e6bd0743e5650df303cdedff885b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4612683
+project-id = 365281
