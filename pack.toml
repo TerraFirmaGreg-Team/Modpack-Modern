@@ -1,0 +1,13 @@
+name = "TerraFirmaGreg-1.20.x"
+author = "Exception, Xikaro"
+version = "0.1.2"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "71ddb8609982638b0c4b13d1d48abc40bef69d1cc92fb36a518e426f47301033"
+
+[versions]
+forge = "47.2.6"
+minecraft = "1.20.1"
