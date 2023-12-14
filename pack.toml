@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6513f0e491e3d54a3702b033309f749bf9b36dee5a2f6718965903fb66446cac"
+hash = "e9c9d80f879c3ba8401238537dfb949e655451abb28385f9bc73cab421c52641"
 
 [versions]
 forge = "47.2.6"
@@ -14,4 +14,3 @@ minecraft = "1.20.1"
 
 [options]
 acceptable-game-versions = ["1.20.1"]
-meta-folder-base = "modpack"
