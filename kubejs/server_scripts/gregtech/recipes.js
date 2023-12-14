@@ -376,4 +376,9 @@ const registerGTCEURecipes = (event) => {
         .EUt(30)
 
     //#endregion
+
+    // Latex -> Sticky Resin
+    event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('gtceu:latex', 1000), 5000, 300)
+        .itemOutput('gtceu:sticky_resin')
+        .id('tfg:pot/sticky_resin')
 }

@@ -1667,9 +1667,12 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    // Пережарка оголовий
     for (let i = 0; i < global.TFC_UNFIRED_MOLDS.length; i++) {
         event.smelting(global.TFC_FIRED_MOLDS[i], global.TFC_UNFIRED_MOLDS[i])
             .id(`tfg:smelting/mold_${i}`)
     }
+
+    //
 }
 
