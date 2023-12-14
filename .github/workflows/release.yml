@@ -14,7 +14,14 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/}
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/Pre}
+
+      - name: Set the version
+        run: |
+          DEV=${{ steps.get_version.outputs.version }}
+          sed -i -e "s/DEV/${DEV}/g" pack.toml
+          sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
+          sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
       - name: Changelog Parser
         id: changelog
@@ -22,33 +29,37 @@ jobs:
         with:
           path: CHANGELOG.md
 
-      - name: Set the version
-        run: |
-          DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" manifest.json
-          sed -i -e "s/DEV/${DEV}/g" instance.cfg
-          sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
-          sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
-
-      - name: Move
-        run: |
-          rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
-
-      - name: Archive MMC
-        run: |
-          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
+      - name: Set up Go 1.19
+        id: go
+        uses: actions/setup-go@v5.0.0
+        with:
+          go-version: 1.19
+      - run: go install github.com/packwiz/packwiz@latest
 
       - name: Archive CF
         run: |
-          mv -vf .minecraft/ overrides/ 
-          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides/config/ overrides/kubejs/ overrides/defaultconfigs/
+          cd ./
+          packwiz curseforge export -o TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
+
+      - name: Submodule init
+        run: |
+          git submodule init
+          cd mods
+          git config --global credential.helper '!f() { echo "username=Xikaro"; echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+          git submodule update --recursive
+
+      - name: Archive MMC
+        run: |
+          mkdir -p .minecraft
+          cp -r {config,defaultconfigs,kubejs,mods} .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
 
       - name: Archive Server
         run: |
-          cp -r .github/buildtools/serverfiles/* overrides/
-          cat .github/buildtools/client_mod.txt | while read -r line; do find overrides/mods -name "$line" -delete; done
-          cd overrides/
-          zip -r ../TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
+          cp -r .github/buildtools/serverpack/* .minecraft/
+          cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
+          cd .minecraft/
+          zip -r ../TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Upload Curseforge
         uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
@@ -70,7 +81,7 @@ jobs:
         with:
           prerelease: false
           generate_release_notes: true
-          name: Release ${{ steps.changelog.outputs.version }}
+          name: ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip
