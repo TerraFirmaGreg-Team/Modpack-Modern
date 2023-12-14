@@ -19,7 +19,8 @@ jobs:
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" pack.toml
+          sed -i -e "s/DEV/${DEV}/g" .github/buildtools/modpack/manifest.json
+          sed -i -e "s/DEV/${DEV}/g" .github/buildtools/modpack/instance.cfg
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
@@ -29,18 +30,6 @@ jobs:
         with:
           path: CHANGELOG.md
 
-      - name: Set up Go 1.19
-        id: go
-        uses: actions/setup-go@v5.0.0
-        with:
-          go-version: 1.19
-      - run: go install github.com/packwiz/packwiz@latest
-
-      - name: Archive CF
-        run: |
-          cd ./
-          packwiz curseforge export -o TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
-
       - name: Submodule init
         run: |
           git submodule init
@@ -48,11 +37,15 @@ jobs:
           git config --global credential.helper '!f() { echo "username=Xikaro"; echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
           git submodule update --recursive
 
+      - name: Archive CF
+        run: |
+          cp -r {config,defaultconfigs,kubejs,mods}  overrides/
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip .github/buildtools/modpack/manifest.json .github/buildtools/modpack/modlist.html overrides
+
       - name: Archive MMC
         run: |
-          mkdir -p .minecraft
-          cp -r {config,defaultconfigs,kubejs,mods} .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
-          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
+          mv -vf overrides/ .minecraft/ 
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
 
       - name: Archive Server
         run: |
@@ -70,6 +63,6 @@ jobs:
           name: ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
-            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip
+            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
