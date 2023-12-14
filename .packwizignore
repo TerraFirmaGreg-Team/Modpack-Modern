@@ -3,6 +3,7 @@
 
 shaderpacks
 /mods
+/mods/*.jar
 .github
 .curseclient
 instance.cfg
