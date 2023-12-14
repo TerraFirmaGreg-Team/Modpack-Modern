@@ -5,6 +5,7 @@ shaderpacks
 /mods/*.jar
 .github
 .curseclient
+.gitmodules
 instance.cfg
 mmc-pack.json
 CHANGELOG.md

@@ -1,0 +1,13 @@
+name = "Pick Up Notifier [Forge & Fabric]"
+filename = "PickUpNotifier-v8.0.0-1.20.1-Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "378cc9730d1f11cd4c50add96263baccacdb4942"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4613538
+project-id = 351441

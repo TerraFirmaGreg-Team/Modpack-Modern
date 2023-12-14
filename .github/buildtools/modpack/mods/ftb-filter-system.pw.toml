@@ -1,0 +1,13 @@
+name = "FTB Filter System"
+filename = "ftb-filter-system-forge-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d45c6bc341e50ba1b133c378de8938a3d349f4f3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4926070
+project-id = 943925

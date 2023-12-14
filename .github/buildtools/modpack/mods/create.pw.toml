@@ -1,0 +1,13 @@
+name = "Create"
+filename = "create-1.20.1-0.5.1.f.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3fee3c26ebbfdfd59e1371ab73ba1f61b44ef6d0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4835191
+project-id = 328085
