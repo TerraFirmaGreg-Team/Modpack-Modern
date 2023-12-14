@@ -1,18 +1,19 @@
 # .packwizignore имеет тот же формат, что и .gitignore, и может быть использован для исключения нежелательных файлов из экспорта пакетов
 # См. https://git-scm.com/docs/gitignore
 
-shaderpacks
-/mods/*.jar
-.github
-.curseclient
-.gitmodules
-instance.cfg
-mmc-pack.json
-CHANGELOG.md
-minecraftinstance.json
-options.txt
-
-
-packwiz-installer-bootstrap.jar
-/README.md
+/.github/buildtools/serverpack/
+/.github/buildtools/modpack/mmc-pack.json
+/.github/buildtools/modpack/instance.cfg
+/.github/buildtools/client_mod.txt
+/.github/buildtools/filelist.txt
+/.github/ISSUE_TEMPLATE
+/.github/workflows
+/.github/pull_request_template.md
 /.idea/
+/shaderpacks
+/mods/*.jar
+/.curseclient
+/.gitmodules
+/CHANGELOG.md
+/minecraftinstance.json
+/README.md
