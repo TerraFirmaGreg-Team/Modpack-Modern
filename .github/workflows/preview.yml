@@ -44,7 +44,7 @@ jobs:
       - name: Archive MMC
         run: |
           git config --global credential.helper store
-          git config --global credential.https://github.com.Xikaro.token USER_TOKEN_XIKARO
+          git config --global credential.https://github.com.Xikaro USER_TOKEN_XIKARO
           git submodule init
           git submodule update
           mkdir -p .minecraft
