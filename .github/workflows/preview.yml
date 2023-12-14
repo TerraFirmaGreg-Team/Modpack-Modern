@@ -20,7 +20,5 @@ jobs:
         run: |
           git submodule init
           cd mods
-          git config --local credential.helper '!f() { sleep 1; echo "password=secrets.USER_TOKEN_XIKARO"; }; f'
-          git config --local http.https://github.com.Xikaro.extraheader "AUTHORIZATION: basic $(git credential-cache get)"
-          git config --local url."https://github.com/Xikaro:secrets.USER_TOKEN_XIKARO@github.com".insteadOf "https://github.com/TerraFirmaGreg-Team/TFG-Mods-1.20.x"
+          git config --local credential.helper '!f() { echo "username=Xikaro"; echo "password=secrets.USER_TOKEN_XIKARO"; }; f'
           git submodule update --recursive
