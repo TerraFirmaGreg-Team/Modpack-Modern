@@ -67,7 +67,7 @@ jobs:
         with:
           prerelease: true
           generate_release_notes: true
-          name: Release ${{ steps.changelog.outputs.version }}
+          name: ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
             ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
