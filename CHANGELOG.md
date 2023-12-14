@@ -50,6 +50,7 @@
 - Возможно, что-то еще, все не упомнишь.
 ### Новые моды
 - FirstPersonView
+- Firmalife
 ### Обновленные моды
 - LootJS: KubeJS Addon: 2.10.3 -> 2.10.4
 - Roughly Enough Items Fabric/Forge (REI): 12.0.674 -> 12.0.684-forge
