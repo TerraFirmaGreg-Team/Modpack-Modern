@@ -1,0 +1,391 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "primitive_age"
+	group: ""
+	icon: "tfc:rock/loose/gabbro"
+	id: "092E486344CB830A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{quests.primitive.start.description}"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/logo-512x512.png"
+				}
+			}
+			id: "76EF4D00586A8B74"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.primitive.start.subtitle}"
+			tasks: [{
+				id: "7CFEDEBD7D6FD796"
+				type: "checkmark"
+			}]
+			title: "{quests.primitive.start.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["При входе в мир, первое, что вы встречаете это полностью измененный мир. Основными предметами на старте являются палки и камушки, которые лежат на земле и появляются в любом биоме, так же они обновляются каждый сезон. Соберите несколько при помощи ПКМ и приступайте к след. квесту."]
+			id: "365F6F48E0BB2EFC"
+			subtitle: "Соберите немного камней и палок для будущего развития"
+			tasks: [
+				{
+					count: 5L
+					id: "71D34417AD85CBB7"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:can_be_lit_on_torch)"
+						}
+					}
+					title: "Любые палки"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "764DF57F97EB2AB2"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
+						}
+					}
+					title: "Любые камушки"
+					type: "item"
+				}
+			]
+			title: "Палки и камни"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Вместо обычных камушков, в мире вы можете встретить кусочки руды, обычно они указывают на то, что где-то под землей располагается жила с рудой по материалу сходной с кусочком руды найденном на поверхности, но пока у вас нет кирки, поэтому вам стоит собирать такие кусочки, ведь их можно расплавить в металл при помощи формочек и огненной ямы, о которой мы расскажем позже."]
+			id: "40A930BEBFCFBF3B"
+			subtitle: "Ваш первый металл уже сейчас, по скидке"
+			tasks: [
+				{
+					id: "45ADEA53258F0876"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_native_copper"
+					}
+					type: "item"
+				}
+				{
+					id: "60AD410AF2AB1F3B"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_native_gold"
+					}
+					type: "item"
+				}
+				{
+					id: "76CE2DAD3450854A"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_hematite"
+					}
+					type: "item"
+				}
+				{
+					id: "1C91EB0D412DD926"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_native_silver"
+					}
+					type: "item"
+				}
+				{
+					id: "41B270A3D4FFF7EA"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_cassiterite"
+					}
+					type: "item"
+				}
+				{
+					id: "260DC2139C737E9D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_bismuthinite"
+					}
+					type: "item"
+				}
+				{
+					id: "6444775ACB88FB47"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_garnierite"
+					}
+					type: "item"
+				}
+				{
+					id: "229B26271FA55CC9"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_malachite"
+					}
+					type: "item"
+				}
+				{
+					id: "4542DDBDA2B8BAEE"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_magnetite"
+					}
+					type: "item"
+				}
+				{
+					id: "068ACE7436DD4957"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_limonite"
+					}
+					type: "item"
+				}
+				{
+					id: "2CA4B0ED8BA926F6"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_sphalerite"
+					}
+					type: "item"
+				}
+				{
+					id: "793C84936B5B0442"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ore/small_tetrahedrite"
+					}
+					type: "item"
+				}
+			]
+			title: "Камушки с рудой"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["365F6F48E0BB2EFC"]
+			description: [
+				"Возьмите в руку 2 и более камня, после нажмите ПКМ, далее у вас откроется меню, в котором вы можете делать оголовия каменных инструментов, все рецепты можно посмотреть в REI или просто нажав на крафт каменного оголовия инструмента. После соедините оголовие с палкой и получите инструмент настоящего аборигена."
+				""
+				"Топоры: используются для рубки дерева, да в прочем и всего деревянного, ведь рукой в TFC нельзя сломать дерево."
+				""
+				"Мотыги: используются для вскапывания грядок и посадки растений. Интересный факт: в TFC можно вскапывать грядки даже вдалеке от воды, главное при наведении смотрите в подсказу (панель сверху), в ней будет отображаться кол-во насыщения водой грядки. Далее выберите семяна собранные в мире с подходящими климат. условиями (в том числе и влажностью грядки) посадите и ожидайте."
+				""
+				"Молот: преимущественно используется только ради создания каменной наковальни и первых медных двойных слитков, но об этом будет информация дальше по квестам."
+				""
+				"Копья: кидаются как трезубец, наносят урон, собственно говоря на этом все."
+				""
+				"Ножи: очень важный инструмент в TFC, позволяет срезать траву и получать сено, из него можно сделать огненную яму и обжаривать металлы и глинянные формы, но об этом дальше по гайду."
+			]
+			id: "6A564D86E000A506"
+			subtitle: "Ваши каменные инструменты"
+			tasks: [
+				{
+					id: "6454A891C996B93F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:stone/axe/igneous_extrusive)item(tfc:stone/axe/igneous_intrusive)item(tfc:stone/axe/metamorphic)item(tfc:stone/axe/sedimentary))"
+						}
+					}
+					title: "Любой каменный топор"
+					type: "item"
+				}
+				{
+					id: "129963DC4FE951C1"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:stone/hammer/igneous_extrusive)item(tfc:stone/hammer/igneous_intrusive)item(tfc:stone/hammer/metamorphic)item(tfc:stone/hammer/sedimentary))"
+						}
+					}
+					title: "Любой каменный молот"
+					type: "item"
+				}
+				{
+					id: "2885C137D12D1F5F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:stone/hoe/igneous_extrusive)item(tfc:stone/hoe/igneous_intrusive)item(tfc:stone/hoe/metamorphic)item(tfc:stone/hoe/sedimentary))"
+						}
+					}
+					title: "Любая каменная мотыга"
+					type: "item"
+				}
+				{
+					id: "69B19F0818B8D469"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
+						}
+					}
+					title: "Любое каменное копье"
+					type: "item"
+				}
+				{
+					id: "26EFC0F3A6AB4723"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:stone/knife/igneous_extrusive)item(tfc:stone/knife/igneous_intrusive)item(tfc:stone/knife/metamorphic)item(tfc:stone/knife/sedimentary))"
+						}
+					}
+					title: "Любой каменный нож"
+					type: "item"
+				}
+				{
+					id: "792EEAB98A4E0CE6"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:stone/shovel/igneous_extrusive)item(tfc:stone/shovel/igneous_intrusive)item(tfc:stone/shovel/metamorphic)item(tfc:stone/shovel/sedimentary))"
+						}
+					}
+					title: "Любая каменная лопата"
+					type: "item"
+				}
+			]
+			title: "Примитивные инструменты"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A564D86E000A506"]
+			id: "373FD04AD6CA9F92"
+			subtitle: "При помощи топора, соберите немного древесины"
+			tasks: [{
+				id: "794D2D1559FA7CEA"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Любое дерево"
+				type: "item"
+			}]
+			title: "Новое, старое дерево"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["373FD04AD6CA9F92"]
+			description: [
+				"Для создания угольной ямы вам понадобится много, много дерева."
+				"Для начала выкопайте яму, глубиной в 1 блок (можно и глубже, если позволяет кол-во древесины)."
+				""
+				"{image:tfg:textures/quests/primitive_charcoal_1.png width:170 height:100 align:1}"
+				""
+				"После, при помощи Shift + ПКМ нажмите в любой блок в яме, у вас появится охапка бревен, ее можно наполнять, нажимая ПКМ с бревном в руке по охапке, либо просто открыть интерфейс и наполнить вручную. От кол-ва дерева в охапке зависит количество получаемого впоследствии угля."
+				""
+				""
+				"{image:tfg:textures/quests/primitive_charcoal_2.png width:200 height:100 align:1}"
+				""
+				"Далее, накрываете это все не горючим блоком, камнем или землей, оставляете один блок открытым и поджигаете при помощи выброшенного факела или примитивного зажигателя."
+			]
+			id: "5DB0CA9F9724D301"
+			subtitle: "Создайте свою первую угольную яму"
+			tasks: [{
+				id: "58361DD51C891C43"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "Угольные ямы"
+			x: 5.0d
+			y: 1.5d
+		}
+	]
+	title: "Primitive Age"
+}
