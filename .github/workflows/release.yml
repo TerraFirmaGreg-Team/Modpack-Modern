@@ -60,13 +60,13 @@ jobs:
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"
-          modpack-path: ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip
-          modpack-server-path: ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
+          modpack-path: ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
+          modpack-server-path: ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip
           changelog: "${{ steps.changelog.outputs.description }}"
           changelog-format: markdown
           game-version: "1.20.1"
-          display-name: TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}
-          server-display-name: TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server
+          display-name: TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}
+          server-display-name: TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server
           release-type: "beta"
 
       - name: Create GitHub Release
@@ -78,9 +78,9 @@ jobs:
           name: ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
-            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip
 
       - name: Discord notification
         uses: LeGitHubDeTai/github-to-discord@v1.5.0
