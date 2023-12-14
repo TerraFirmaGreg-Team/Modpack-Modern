@@ -41,14 +41,17 @@ jobs:
           cd ./
           packwiz curseforge export -o TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
 
-      - name: Archive MMC
+      - name: Submodule init
         run: |
           git submodule init
           cd mods
           git config --global credential.helper '!f() { echo "username=Xikaro"; echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
           git submodule update --recursive
+
+      - name: Archive MMC
+        run: |
           mkdir -p .minecraft
-          cp -r ./{config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
+          cp -r {config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
 
       - name: Archive Server
