@@ -19,8 +19,8 @@ jobs:
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" manifest.json
-          sed -i -e "s/DEV/${DEV}/g" instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" .github/buildtools/modpack/manifest.json
+          sed -i -e "s/DEV/${DEV}/g" .github/buildtools/modpack/instance.cfg
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
@@ -30,11 +30,6 @@ jobs:
         with:
           path: CHANGELOG.md
 
-      - name: Archive CF
-        run: |
-          cd ./
-          packwiz curseforge export -o TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
-
       - name: Submodule init
         run: |
           git submodule init
@@ -42,11 +37,15 @@ jobs:
           git config --global credential.helper '!f() { echo "username=Xikaro"; echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
           git submodule update --recursive
 
+      - name: Archive CF
+        run: |
+          cp -r {config,defaultconfigs,kubejs,mods}  overrides/
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip .github/buildtools/modpack/manifest.json .github/buildtools/modpack/modlist.html overrides
+
       - name: Archive MMC
         run: |
-          mkdir -p .minecraft
-          cp -r {config,defaultconfigs,kubejs,mods} .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
-          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
+          mv -vf overrides/ .minecraft/ 
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
 
       - name: Archive Server
         run: |
