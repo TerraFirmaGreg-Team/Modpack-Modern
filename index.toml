@@ -665,10 +665,6 @@ file = "defaultconfigs/tfc-server.toml"
 hash = "01eadc12d3a496f21816030a21dac074acf3e710b14b12f857a5f59b2c17527d"
 
 [[files]]
-file = "gitattributes.txt"
-hash = "f1c49afdbf5c184940b9d1b0dcb6e070c8ca915a36d6c2b7f5a4c641e1080aea"
-
-[[files]]
 file = "icon.png"
 hash = "33ea62d26cca1dac22363338cd27db222ef2fc3319c94332ea3155c7a45fd524"
 
@@ -2172,7 +2168,7 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/creativecore.pw.toml"
-hash = "78ee9f1fb8dcb8859c3f6d91877016d23b80af893f1ccac7b859c3997a2ee91a"
+hash = "77ee93db20e1530747ce6ecc537ea5dc2440c275619abca4bb85177fca04aa3f"
 metafile = true
 
 [[files]]
@@ -2207,7 +2203,7 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/embeddium.pw.toml"
-hash = "6d142bc7b026f4cf1e4c3eccfe47815609c3298c027592c34a726caddab68309"
+hash = "fd56fc6e37a5eb6000f7e04f044355f0a37c053b14f8b8b11ff8af0ae7d06dba"
 metafile = true
 
 [[files]]
@@ -2342,7 +2338,7 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/kubejs.pw.toml"
-hash = "2631e502451d6528b5f24c7b3f6309d269ce0b3f2b8c497a0242b71ff161fdbe"
+hash = "9b597053abd23304b5e30abfe1a21ff24befc52c3bfb5a573d3303981fb16c88"
 metafile = true
 
 [[files]]
@@ -2352,7 +2348,7 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/modernfix.pw.toml"
-hash = "2d5463060d769e283800b78ec9a05cb517ddb34fd0064a66b0d8812c437ddac8"
+hash = "a14cfa03d3232c06f1ad97529e123bd8c604aed1e0ff15b168285c3e2bad4fe8"
 metafile = true
 
 [[files]]
@@ -2377,7 +2373,7 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/oculus.pw.toml"
-hash = "735a4682ce5f732ea64ec5e8d62c9befa234fb55322ce6a6a4dcefc5dbf5a129"
+hash = "7cafdb1f2366be0fb8bb169693419669f4d15cc28520081dbb2cc9c7aae08534"
 metafile = true
 
 [[files]]
@@ -2427,7 +2423,7 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/roughly-enough-items.pw.toml"
-hash = "03dba900b7927e69ab3822c288262822624548a8b6edfb96ca7b7e1bc81e4b0c"
+hash = "c3d545ff7084b37745fdea5e1f16ae42d781d5f3fa7113e716a7ea616ad195ca"
 metafile = true
 
 [[files]]
@@ -2457,12 +2453,12 @@ metafile = true
 
 [[files]]
 file = "modpack/mods/sophisticated-backpacks.pw.toml"
-hash = "e69faa49be4f91785232eb9ebb86b30edc93628f58042a50fe5c6614c72b58a3"
+hash = "e8c8d7d1a305777fc647199f85f81804777238f8862154e63a5743b7c98df3cc"
 metafile = true
 
 [[files]]
 file = "modpack/mods/sophisticated-core.pw.toml"
-hash = "7d779448e148139f4cdcf9f4f67dce6c9f46d6b971f6dbbe1296d088e8ac8d9c"
+hash = "b4a21e564840b7f4db524fa7c35cfddde57bcb29c8e2e1e831df33d286c27fa9"
 metafile = true
 
 [[files]]
