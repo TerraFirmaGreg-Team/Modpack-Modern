@@ -42,7 +42,7 @@ jobs:
           mkdir -p overrides
           cp -r {config,defaultconfigs,kubejs}  overrides/
           mv -vf .github/buildtools/modpack/manifest.json ./
-          mv -vf .github/buildtools/modpack/modlist.json ./ 
+          mv -vf .github/buildtools/modpack/modlist.html ./
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides
 
       - name: Archive MMC
