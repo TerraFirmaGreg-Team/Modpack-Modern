@@ -41,12 +41,16 @@ jobs:
         run: |
           mkdir -p overrides
           cp -r {config,defaultconfigs,kubejs}  overrides/
-          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip .github/buildtools/modpack/manifest.json .github/buildtools/modpack/modlist.html overrides
+          mv -vf .github/buildtools/modpack/manifest.json ./
+          mv -vf .github/buildtools/modpack/modlist.json ./ 
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides
 
       - name: Archive MMC
         run: |
           cp -r mods overrides/
-          mv -vf overrides/ .minecraft/ 
+          mv -vf overrides/ .minecraft/
+          mv -vf .github/buildtools/modpack/mmc-pack.json ./
+          mv -vf .github/buildtools/modpack/instance.cfg ./ 
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
 
       - name: Archive Server
