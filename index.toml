@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".minecraft/options.txt"
+hash = "2360f115582e5d209efebf155c247b39acc1f744154230c15ef3596dbbeda4f4"
+
+[[files]]
 file = "config/InventoryHUD/curios.json"
 hash = "6d8948129a4e9f1aa4a98e4e58c546426cdb8cce33c25f750a380e5800fa2f1d"
 
