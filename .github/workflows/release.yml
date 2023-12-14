@@ -40,12 +40,17 @@ jobs:
       - name: Archive CF
         run: |
           mkdir -p overrides
-          cp -r {config,defaultconfigs,kubejs,mods}  overrides/
-          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip .github/buildtools/modpack/manifest.json .github/buildtools/modpack/modlist.html overrides
+          cp -r {config,defaultconfigs,kubejs}  overrides/
+          mv -vf .github/buildtools/modpack/manifest.json ./
+          mv -vf .github/buildtools/modpack/modlist.html ./
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides
 
       - name: Archive MMC
         run: |
-          mv -vf overrides/ .minecraft/ 
+          cp -r mods overrides/
+          mv -vf overrides/ .minecraft/
+          mv -vf .github/buildtools/modpack/mmc-pack.json ./
+          mv -vf .github/buildtools/modpack/instance.cfg ./ 
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
 
       - name: Archive Server
@@ -83,13 +88,14 @@ jobs:
             ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip
 
       - name: Discord notification
-        uses: LeGitHubDeTai/github-to-discord@v1.5.0
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.RELEASES_1_20 }}
-          DISCORD_USERNAME: GitHub
-          DISCORD_AVATAR: https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_new_year.png
-          MESSAGE_TITLE: Release ${{ steps.changelog.outputs.version }}
-          MESSAGE_DESCRIPTION: ${{ steps.changelog.outputs.description }}
-          MESSAGE_URL: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/tree/main/CHANGELOG.md
-          MESSAGE_COLOR: 5814783
-          FOOTER_TEXT: ${{ steps.changelog.outputs.date }}
+        uses: tsickert/discord-webhook@v5.4.0
+        with:
+          webhook-url: ${{ secrets.RELEASES_1_20 }}
+          username: "GitHub"
+          avatar-url: https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_new_year.png
+          embed-title: Release ${{ steps.changelog.outputs.version }}
+          embed-description: "${{ steps.changelog.outputs.description }}"
+          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/tree/main/CHANGELOG.md
+          embed-color: 5814783
+          embed-footer-text: ${{ steps.changelog.outputs.date }}
+
