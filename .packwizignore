@@ -2,7 +2,6 @@
 # См. https://git-scm.com/docs/gitignore
 
 shaderpacks
-/mods
 /mods/*.jar
 .github
 .curseclient
