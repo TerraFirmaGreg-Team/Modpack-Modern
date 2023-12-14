@@ -48,3 +48,6 @@ knownkeys.txt
 *.code-workspace
 mods/*.jar
 packwiz-installer.jar
+config/fml.toml
+config/forge-client.toml
+packwiz.json
