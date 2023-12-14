@@ -50,7 +50,7 @@ jobs:
       - name: Archive Server
         run: |
           cp -r .github/buildtools/serverpack/* .minecraft/
-          cat .github/buildtools/client_mod.txt | while read -r line; do find overrides/mods -name "$line" -delete; done
+          cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
           cd .minecraft/
           zip -r ../TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip ./
 
