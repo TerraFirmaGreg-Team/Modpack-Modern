@@ -22,30 +22,36 @@ jobs:
         with:
           path: CHANGELOG.md
 
+      - name: Set up Go 1.19
+        id: go
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.19
+          
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" manifest.json
-          sed -i -e "s/DEV/${DEV}/g" instance.cfg
+          sed -i -e "s/DEV/${DEV}/g" pack.toml
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
+      - name: Archive CF
+        run: packwiz curseforge export
+
       - name: Archive MMC
         run: |
-          rsync -av --exclude-from='.github/buildtools/filelist.txt' ./ .minecraft/
-          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
-
-      - name: Archive CF
-        run: |
-          mv -vf .minecraft/ overrides/ 
-          zip -r ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip manifest.json modlist.html overrides/config/ overrides/kubejs/ overrides/defaultconfigs/
+          cp -r ./{config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
 
       - name: Archive Server
         run: |
-          cp -r .github/buildtools/serverfiles/* overrides/
+          cp -r .github/buildtools/serverpack/* .minecraft/
           cat .github/buildtools/client_mod.txt | while read -r line; do find overrides/mods -name "$line" -delete; done
-          cd overrides/
-          zip -r ../TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip ./
+          cd .minecraft/
+          zip -r ../TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v0.1.15
@@ -56,6 +62,6 @@ jobs:
           name: Release ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
-            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-cf.zip
-            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-mmc.zip
-            ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip
