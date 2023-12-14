@@ -78,7 +78,7 @@ jobs:
             ./TerraFirmaGreg-1.20-${{ steps.get_version.outputs.version }}-server.zip
 
       - name: Discord notification
-        uses: tsickert/discord-webhook@v5.3.0
+        uses: tsickert/discord-webhook@v5.4.0
         with:
           webhook-url: ${{ secrets.RELEASES_1_20 }}
           username: "GitHub"

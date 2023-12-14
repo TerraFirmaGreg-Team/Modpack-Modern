@@ -45,8 +45,8 @@ jobs:
         run: |
           git submodule init
           git submodule update
-          Xikaro
-          TFG_TOKEN
+          Username: Xikaro
+          Password: TFG
           mkdir -p .minecraft
           cp -r ./{config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
