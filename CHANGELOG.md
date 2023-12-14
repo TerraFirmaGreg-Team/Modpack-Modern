@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.0] - 2023-12-11
+## [0.2.0] - 2023-12-14
 ### Изменения
 - Исправлены баги, когда некоторые предметы имеющие металл нельзя было нагреть.
 - Исправлен баг, когда некоторые тфк предметы не могли быть нагреты.
@@ -50,14 +50,35 @@
 - Возможно, что-то еще, все не упомнишь.
 ### Новые моды
 - FirstPersonView
-- ...
 ### Обновленные моды
-- TerraFirmaGreg
-- TFC
-- ...
+- LootJS: KubeJS Addon: 2.10.3 -> 2.10.4
+- Roughly Enough Items Fabric/Forge (REI): 12.0.674 -> 12.0.684-forge
+- FTB Quests Optimizer: 1.1.4 -> 1.1.5
+- TFC Ambiental: Second edition: 3.1.0 -> 3.2.0
+- Exposure: 1.0.0 -> 1.1.1
+- Xaero's World Map: 1.37.1 -> 1.37.2
+- FTB Quests (Forge): 2001.2.0 -> 2001.3.0
+- CreativeCore: 2.11.10 -> 2.11.13
+- Embeddium: 0.2.10 -> 0.2.13+
+- Jade Addons (Forge): 5.2.1 -> 5.2.2
+- KubeJS: 2001.6.4-build.95 -> 2001.6.4-build.114
+- Puzzles Lib [Forge & Fabric]: 8.1.9 -> 8.1.11
+- GregTechCEu Modern: 1.0.16 -> 1.0.17
+- Sophisticated Core: s0.5.108.504 -> 0.5.111.517
+- Applied Energistics 2 Wireless Terminals: 15.1.5 -> 15.2.1
+- Rhino: 2001.2.2-build.13 -> 2001.2.2-build.18
+- Sophisticated Backpacks: 3.19.1.962 -> 3.19.4.978
+- Tree Tap: 0.2.0 -> 0.2.1
+- Xaero's Minimap: 23.9.1 -> 23.9.3
+- Oculus: 1.6.9 -> 1.6.13
+- ModernFix: 5.9.3 -> 5.10.1
+- Resourceful Lib: 2.1.18 -> 2.1.19
+- Balm (Forge Edition): 7.1.4 -> 7.2.1
+- TerraFirmaCraft: 3.1.0 -> 3.1.3
+- TerraFirmaGreg: 0.0.13 -> 0.0.22
 ### Удаленные моды
 - Macaw AIO
-- ...
+- ExtendedCrafting
 
 ## [0.1.2] - 2023-11-30
 ### Изменения

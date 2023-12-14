@@ -1,6 +1,4 @@
 
-
-
 # Configs
 /config/jei/world/*
 /config/roughlyenoughitems/*
@@ -27,6 +25,7 @@
 **/*.jar
 
 # Client data
+/.idea/
 /.curseclient
 /.sl_password
 /options.txt

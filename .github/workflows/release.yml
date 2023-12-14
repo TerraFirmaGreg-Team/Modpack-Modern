@@ -19,7 +19,8 @@ jobs:
       - name: Set the version
         run: |
           DEV=${{ steps.get_version.outputs.version }}
-          sed -i -e "s/DEV/${DEV}/g" pack.toml
+          sed -i -e "s/DEV/${DEV}/g" manifest.json
+          sed -i -e "s/DEV/${DEV}/g" instance.cfg
           sed -i -e "s/DEV/${DEV}/g" config/fancymenu/customization/main_menu.txt
           sed -i -e "s/DEV/${DEV}/g" config/bcc-common.toml
 
@@ -28,13 +29,6 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-
-      - name: Set up Go 1.19
-        id: go
-        uses: actions/setup-go@v5.0.0
-        with:
-          go-version: 1.19
-      - run: go install github.com/packwiz/packwiz@latest
 
       - name: Archive CF
         run: |
