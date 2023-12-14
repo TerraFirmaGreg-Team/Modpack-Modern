@@ -5,8 +5,6 @@
     <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/4980f6f22fd8a7ecab65230b87964c8db23efbc2/branding/logo.png?raw=true" alt="Logo" height="75">
   </a>
   <br/>
-  <a href="https://modrinth.com/modpack/terrafirmagreg/versions?g=1.20.2">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/modrinth_vector.svg" alt="Available on Modrinth"></a>
 
   <a href="https://discord.gg/terrafirmagreg">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/social/discord-singular_vector.svg" alt="Chat on Discord"></a>
