@@ -43,10 +43,10 @@ jobs:
 
       - name: Archive MMC
         run: |
-          Username: Xikaro
-          Password: USER_TOKEN_XIKARO
           git submodule init
           git submodule update
+          Username: Xikaro@github.com
+          Password: TFG_TOKEN
           mkdir -p .minecraft
           cp -r ./{config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
