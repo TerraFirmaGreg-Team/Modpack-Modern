@@ -3,7 +3,7 @@ name: Deploy modpack preview
 on:
   push:
     tags:
-      - "Pre*-*.*.*"
+      - "Pre*"
 
 jobs:
   Deploy:
@@ -35,7 +35,7 @@ jobs:
         with:
           go-version: 1.19
       - run: go install github.com/packwiz/packwiz@latest
-          
+
       - name: Archive CF
         run: |
           cd ./
@@ -43,6 +43,7 @@ jobs:
 
       - name: Archive MMC
         run: |
+          mkdir -p .minecraft
           cp -r ./{config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
 
