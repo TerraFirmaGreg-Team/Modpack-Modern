@@ -20,5 +20,5 @@ jobs:
         run: |
           git submodule init
           cd mods
-          git config --local credential.helper '!f() { echo "username=Xikaro"; echo "password=secrets.USER_TOKEN_XIKARO"; }; f'
+          git config --global credential.helper '!f() { echo "username=Xikaro"; echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
           git submodule update --recursive
