@@ -39,6 +39,7 @@ jobs:
 
       - name: Archive CF
         run: |
+          mkdir -p overrides
           cp -r {config,defaultconfigs,kubejs,mods}  overrides/
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip .github/buildtools/modpack/manifest.json .github/buildtools/modpack/modlist.html overrides
 
