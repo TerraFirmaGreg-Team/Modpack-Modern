@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".gitmodules"
-hash = "28116b3e461d83f83c97d5a21339c22739876e11ebe645db6124ab63485c9c2c"
-
-[[files]]
 file = "config/InventoryHUD/curios.json"
 hash = "6d8948129a4e9f1aa4a98e4e58c546426cdb8cce33c25f750a380e5800fa2f1d"
 
@@ -655,10 +651,6 @@ hash = "b7f72fbe7cdbca1465d102309276201bfc0835bf7d5058080c1104d9786907fe"
 [[files]]
 file = "defaultconfigs/tfc-server.toml"
 hash = "01eadc12d3a496f21816030a21dac074acf3e710b14b12f857a5f59b2c17527d"
-
-[[files]]
-file = "icon.png"
-hash = "33ea62d26cca1dac22363338cd27db222ef2fc3319c94332ea3155c7a45fd524"
 
 [[files]]
 file = "kubejs/README.txt"
