@@ -1,6 +1,6 @@
 name = "Client Tweaks"
 filename = "clienttweaks-forge-1.20-11.1.0.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

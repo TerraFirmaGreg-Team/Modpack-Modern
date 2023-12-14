@@ -1,6 +1,6 @@
 name = "Mouse Tweaks"
 filename = "MouseTweaks-forge-mc1.20-2.25.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

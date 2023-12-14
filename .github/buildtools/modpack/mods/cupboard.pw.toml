@@ -1,6 +1,6 @@
 name = "Cupboard"
 filename = "cupboard-1.20.1-2.1.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

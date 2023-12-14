@@ -39,10 +39,11 @@ jobs:
       - name: Archive CF
         run: |
           cd ./
-          packwiz curseforge export
+          packwiz curseforge export -o TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
 
       - name: Archive MMC
         run: |
+          git submodule init
           mkdir -p .minecraft
           cp -r ./{config,defaultconfigs,kubejs,mods,.github/buildtools/modpack/mmc-pack.json,.github/buildtools/modpack/instance.cfg} .minecraft/
           zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .minecraft/
@@ -63,6 +64,6 @@ jobs:
           name: Release ${{ steps.changelog.outputs.version }}
           body: ${{ steps.changelog.outputs.description }}
           files: |
-            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}.zip
+            ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-cf.zip
             ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip
             ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip

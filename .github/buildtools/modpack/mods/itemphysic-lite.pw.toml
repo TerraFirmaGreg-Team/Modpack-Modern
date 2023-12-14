@@ -1,6 +1,6 @@
 name = "ItemPhysic Lite"
 filename = "ItemPhysicLite_FORGE_v1.6.1_mc1.20.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

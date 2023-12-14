@@ -1,6 +1,6 @@
 name = "Konkrete [Forge]"
 filename = "konkrete_forge_1.6.1-2_MC_1.20.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

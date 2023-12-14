@@ -1,6 +1,6 @@
 name = "Cherished Worlds (Fabric/Forge/Quilt)"
 filename = "cherishedworlds-forge-6.1.4+1.20.1.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

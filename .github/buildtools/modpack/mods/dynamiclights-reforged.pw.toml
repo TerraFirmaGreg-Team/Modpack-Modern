@@ -1,6 +1,6 @@
 name = "Magnesium/Rubidium Dynamic Lights"
 filename = "dynamiclightsreforged-1.20.1_v1.6.0.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
