@@ -79,11 +79,4 @@ ServerEvents.recipes(event => {
     registerExposureRecipes(event)
 })
 
-/**
- * Событие модификации лута.
- */
-LootJS.modifiers((event) => {
-    modifyLootGT(event)
-});
-
 

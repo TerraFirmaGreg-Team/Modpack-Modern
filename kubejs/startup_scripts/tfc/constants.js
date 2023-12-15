@@ -191,7 +191,8 @@ global.METAL_TO_SPECS = {
             global.ORE_CHUNKS_GEN,
             global.PART_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
-        ]
+        ],
+        isGTDup: true
     },
 
     copper: {
@@ -213,7 +214,8 @@ global.METAL_TO_SPECS = {
             global.GT_TOOL_GEN,
             global.UTILITY_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
-        ]
+        ],
+        isGTDup: true
     },
 
     bismuth: {
@@ -877,8 +879,8 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/red_steel",
     "tfc:metal/ingot/blue_steel",
     "tfc:metal/ingot/brass",
-    // "tfc:metal/ingot/copper",
-    // "tfc:metal/ingot/gold",
+    "tfc:metal/ingot/copper",
+    "tfc:metal/ingot/gold",
     "tfc:metal/ingot/nickel",
     "tfc:metal/ingot/silver",
     "tfc:metal/ingot/tin",

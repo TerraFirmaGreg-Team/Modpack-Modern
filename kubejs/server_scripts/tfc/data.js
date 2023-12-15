@@ -72,9 +72,7 @@ const registerTFCHeats = (event) => {
         }
 
         if (metalSpecs.props.includes('ore_chunks')) {
-            event.itemHeat(`gtceu:poor_raw_${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
             event.itemHeat(`#forge:raw_materials/${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:rich_raw_${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
         }
 
         if (metalSpecs.props.includes('tool')) {

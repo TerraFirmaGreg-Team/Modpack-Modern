@@ -8,7 +8,6 @@ const registerTFCRecipes = (event) => {
 
         // Одинарные слитки
         if (metalSpecs.props.includes('ingot')) {
-            // Металлы дублирующие гт
             if (metalSpecs.isGTDup != undefined)
             {
                 // Отливка слитка в обычной форме
@@ -739,20 +738,10 @@ const registerTFCRecipes = (event) => {
         }
 
         if (metalSpecs.props.includes('ore_chunks')) {
-            // Декрафт мелкой пыли
-            event.recipes.tfc.heating(`gtceu:poor_raw_${metal}`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(24, metalSpecs.percent_of_material)))
-                .id(`tfg:heating/poor_raw/${metal}`)
-
-            // Декрафт средней пыли
+            // Декрафт куска руды
             event.recipes.tfc.heating(`#forge:raw_materials/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(36, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/raw/${metal}`)
-
-            // Декрафт пыли
-            event.recipes.tfc.heating(`gtceu:rich_raw_${metal}`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.fluid, global.calcAmountOfMetal(48, metalSpecs.percent_of_material)))
-                .id(`tfg:heating/rich_raw/${metal}`)
         }
 
     })
@@ -956,277 +945,126 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.quern('1x tfc:powder/native_gold', 'tfc:ore/small_native_gold')
         .id('tfc:quern/small_native_gold')
 
-    // 2x Gold Powder
-    event.recipes.tfc.quern('2x tfc:powder/native_gold', '#forge:poor_raw_materials/gold')
-        .id('tfc:quern/poor_native_gold')
-
     // 4x Gold Powder
     event.recipes.tfc.quern('4x tfc:powder/native_gold', '#forge:raw_materials/gold')
         .id('tfc:quern/normal_native_gold')
-
-    // 6x Gold Powder
-    event.recipes.tfc.quern('6x tfc:powder/native_gold', '#forge:rich_raw_materials/gold')
-        .id('tfc:quern/rich_native_gold')
 
     // 1x Silver Powder
     event.recipes.tfc.quern('1x tfc:powder/native_silver', 'tfc:ore/small_native_silver')
         .id('tfc:quern/small_native_silver')
 
-    // 2x Silver Powder
-    event.recipes.tfc.quern('2x tfc:powder/native_silver', '#forge:poor_raw_materials/silver')
-        .id('tfc:quern/poor_native_silver')
-
     // 4x Silver Powder
     event.recipes.tfc.quern('4x tfc:powder/native_silver', '#forge:raw_materials/silver')
         .id('tfc:quern/normal_native_silver')
-
-    // 6x Silver Powder
-    event.recipes.tfc.quern('6x tfc:powder/native_silver', '#forge:rich_raw_materials/silver')
-        .id('tfc:quern/rich_native_silver')
 
     // 1x Cassiterite Powder
     event.recipes.tfc.quern('1x tfc:powder/cassiterite', 'tfc:ore/small_cassiterite')
         .id('tfc:quern/small_cassiterite')
 
-    // 2x Cassiterite Powder
-    event.recipes.tfc.quern('2x tfc:powder/cassiterite', '#forge:poor_raw_materials/cassiterite')
-        .id('tfc:quern/poor_cassiterite')
-
     // 4x Cassiterite Powder
     event.recipes.tfc.quern('4x tfc:powder/cassiterite', '#forge:raw_materials/cassiterite')
         .id('tfc:quern/normal_cassiterite')
-
-    // 6x Cassiterite Powder
-    event.recipes.tfc.quern('6x tfc:powder/cassiterite', '#forge:rich_raw_materials/cassiterite')
-        .id('tfc:quern/rich_cassiterite')
 
     // 1x Bismuth Powder
     event.recipes.tfc.quern('1x tfc:powder/bismuthinite', 'tfc:ore/small_bismuthinite')
         .id('tfc:quern/small_bismuthinite')
 
-    // 2x Bismuth Powder
-    event.recipes.tfc.quern('2x tfc:powder/bismuthinite', '#forge:poor_raw_materials/bismuth')
-        .id('tfc:quern/poor_bismuthinite')
-
     // 4x Bismuth Powder
     event.recipes.tfc.quern('4x tfc:powder/bismuthinite', '#forge:raw_materials/bismuth')
         .id('tfc:quern/normal_bismuthinite')
-
-    // 6x Bismuth Powder
-    event.recipes.tfc.quern('6x tfc:powder/bismuthinite', '#forge:rich_raw_materials/bismuth')
-        .id('tfc:quern/rich_bismuthinite')
 
     // 1x Garnierite Powder
     event.recipes.tfc.quern('1x tfc:powder/garnierite', 'tfc:ore/small_garnierite')
         .id('tfc:quern/small_garnierite')
 
-    // 2x Garnierite Powder
-    event.recipes.tfc.quern('2x tfc:powder/garnierite', '#forge:poor_raw_materials/garnierite')
-        .id('tfc:quern/poor_garnierite')
-
     // 4x Garnierite Powder
     event.recipes.tfc.quern('4x tfc:powder/garnierite', '#forge:raw_materials/garnierite')
         .id('tfc:quern/normal_garnierite')
 
-    // 6x Garnierite Powder
-    event.recipes.tfc.quern('6x tfc:powder/garnierite', '#forge:rich_raw_materials/garnierite')
-        .id('tfc:quern/rich_garnierite')
-    
-    // 2x Nickel Powder
-    event.recipes.tfc.quern('2x tfc:powder/garnierite', '#forge:poor_raw_materials/nickel')
-        .id('tfc:quern/poor_nickel')
 
     // 4x Nickel Powder
     event.recipes.tfc.quern('4x tfc:powder/garnierite', '#forge:raw_materials/nickel')
         .id('tfc:quern/normal_nickel')
 
-    // 6x Nickel Powder
-    event.recipes.tfc.quern('6x tfc:powder/garnierite', '#forge:rich_raw_materials/nickel')
-        .id('tfc:quern/rich_nickel')
-
     // 1x Sphalerite Powder
     event.recipes.tfc.quern('1x tfc:powder/sphalerite', 'tfc:ore/small_sphalerite')
         .id('tfc:quern/small_sphalerite')
-
-    // 2x Sphalerite Powder
-    event.recipes.tfc.quern('2x tfc:powder/sphalerite', '#forge:poor_raw_materials/sphalerite')
-        .id('tfc:quern/poor_sphalerite')
 
     // 4x Sphalerite Powder
     event.recipes.tfc.quern('4x tfc:powder/sphalerite', '#forge:raw_materials/sphalerite')
         .id('tfc:quern/normal_sphalerite')
 
-    // 6x Sphalerite Powder
-    event.recipes.tfc.quern('6x tfc:powder/sphalerite', '#forge:rich_raw_materials/sphalerite')
-        .id('tfc:quern/rich_sphalerite')
-
     // 1x Magnetite Powder
     event.recipes.tfc.quern('1x tfc:powder/magnetite', 'tfc:ore/small_magnetite')
         .id('tfc:quern/small_magnetite')
-
-    // 2x Magnetite Powder
-    event.recipes.tfc.quern('2x tfc:powder/magnetite', '#forge:poor_raw_materials/magnetite')
-        .id('tfc:quern/poor_magnetite')
 
     // 4x Magnetite Powder
     event.recipes.tfc.quern('4x tfc:powder/magnetite', '#forge:raw_materials/magnetite')
         .id('tfc:quern/normal_magnetite')
 
-    // 6x Magnetite Powder
-    event.recipes.tfc.quern('6x tfc:powder/magnetite', '#forge:rich_raw_materials/magnetite')
-        .id('tfc:quern/rich_magnetite')
-
     // 1x Tetrahedrite Powder
     event.recipes.tfc.quern('1x tfc:powder/tetrahedrite', 'tfc:ore/small_tetrahedrite')
         .id('tfc:quern/small_tetrahedrite')
-
-    // 2x Tetrahedrite Powder
-    event.recipes.tfc.quern('2x tfc:powder/tetrahedrite', '#forge:poor_raw_materials/tetrahedrite')
-        .id('tfc:quern/poor_tetrahedrite')
 
     // 4x Tetrahedrite Powder
     event.recipes.tfc.quern('4x tfc:powder/tetrahedrite', '#forge:raw_materials/tetrahedrite')
         .id('tfc:quern/normal_tetrahedrite')
 
-    // 6x Tetrahedrite Powder
-    event.recipes.tfc.quern('6x tfc:powder/tetrahedrite', '#forge:rich_raw_materials/tetrahedrite')
-        .id('tfc:quern/rich_tetrahedrite')
-
     // 1x Malachite Powder
     event.recipes.tfc.quern('1x tfc:powder/malachite', 'tfc:ore/small_malachite')
         .id('tfc:quern/small_malachite')
-
-    // 2x Malachite Powder
-    event.recipes.tfc.quern('2x tfc:powder/malachite', '#forge:poor_raw_materials/malachite')
-        .id('tfc:quern/poor_malachite')
 
     // 4x Malachite Powder
     event.recipes.tfc.quern('4x tfc:powder/malachite', '#forge:raw_materials/malachite')
         .id('tfc:quern/normal_malachite')
 
-    // 6x Malachite Powder
-    event.recipes.tfc.quern('6x tfc:powder/malachite', '#forge:rich_raw_materials/malachite')
-        .id('tfc:quern/rich_malachite')
-
     // 1x Malachite Powder
     event.recipes.tfc.quern('1x tfc:powder/limonite', 'tfc:ore/small_limonite')
         .id('tfc:quern/small_limonite')
-
-    // 2x Limonite Powder
-    event.recipes.tfc.quern('2x tfc:powder/limonite', '#forge:poor_raw_materials/yellow_limonite')
-        .id('tfc:quern/poor_limonite')
 
     // 4x Limonite Powder
     event.recipes.tfc.quern('4x tfc:powder/limonite', '#forge:raw_materials/yellow_limonite')
         .id('tfc:quern/normal_limonite')
 
-    // 6x Limonite Powder
-    event.recipes.tfc.quern('6x tfc:powder/limonite', '#forge:rich_raw_materials/yellow_limonite')
-        .id('tfc:quern/rich_limonite')
-
     // 1x Hematite Powder
     event.recipes.tfc.quern('1x tfc:powder/hematite', 'tfc:ore/small_hematite')
         .id('tfc:quern/small_hematite')
 
-    // 2x Hematite Powder
-    event.recipes.tfc.quern('2x tfc:powder/hematite', '#forge:poor_raw_materials/hematite')
-        .id('tfc:quern/poor_hematite')
-
     // 4x Hematite Powder
     event.recipes.tfc.quern('4x tfc:powder/hematite', '#forge:raw_materials/hematite')
         .id('tfc:quern/normal_hematite')
-
-    // 6x Hematite Powder
-    event.recipes.tfc.quern('6x tfc:powder/hematite', '#forge:rich_raw_materials/hematite')
-        .id('tfc:quern/rich_hematite')
-
+    
     // 1x Copper Powder
     event.recipes.tfc.quern('1x tfc:powder/native_copper', 'tfc:ore/small_native_copper')
         .id('tfc:quern/small_native_copper')
-
-    // 2x Copper Powder
-    event.recipes.tfc.quern('2x tfc:powder/native_copper', '#forge:poor_raw_materials/copper')
-        .id('tfc:quern/poor_native_copper')
 
     // 4x Copper Powder
     event.recipes.tfc.quern('4x tfc:powder/native_copper', '#forge:raw_materials/copper')
         .id('tfc:quern/normal_native_copper')
 
-    // 6x Copper Powder
-    event.recipes.tfc.quern('6x tfc:powder/native_copper', '#forge:rich_raw_materials/copper')
-        .id('tfc:quern/rich_native_copper')
-
-    // 2x Cinnabar Powder
-    event.recipes.tfc.quern('2x minecraft:redstone', '#forge:poor_raw_materials/cinnabar')
-        .id('tfc:quern/cinnabar')
-
     // 4x Cinnabar Powder
     event.recipes.tfc.quern('4x minecraft:redstone', '#forge:raw_materials/cinnabar')
         .id('tfc:quern/normal_cinnabar')
-
-    // 6x Cinnabar Powder
-    event.recipes.tfc.quern('6x minecraft:redstone', '#forge:rich_raw_materials/cinnabar')
-        .id('tfc:quern/rich_cinnabar')
-
-    // 2x Sulfur Powder
-    event.recipes.tfc.quern('2x tfc:powder/sulfur', '#forge:poor_raw_materials/sulfur')
-        .id('tfc:quern/sulfur')
 
     // 4x Sulfur Powder
     event.recipes.tfc.quern('4x tfc:powder/sulfur', '#forge:raw_materials/sulfur')
         .id('tfc:quern/normal_sulfur')
 
-    // 6x Sulfur Powder
-    event.recipes.tfc.quern('6x tfc:powder/sulfur', '#forge:rich_raw_materials/sulfur')
-        .id('tfc:quern/rich_sulfur')
-
-    // 2x Saltpeter Powder
-    event.recipes.tfc.quern('2x tfc:powder/saltpeter', '#forge:poor_raw_materials/saltpeter')
-        .id('tfc:quern/saltpeter')
-
     // 4x Saltpeter Powder
     event.recipes.tfc.quern('4x tfc:powder/saltpeter', '#forge:raw_materials/saltpeter')
         .id('tfc:quern/normal_saltpeter')
-
-    // 6x Saltpeter Powder
-    event.recipes.tfc.quern('6x tfc:powder/saltpeter', '#forge:rich_raw_materials/saltpeter')
-        .id('tfc:quern/rich_saltpeter')
-
-    // 2x Salt Powder
-    event.recipes.tfc.quern('2x tfc:powder/salt', '#forge:poor_raw_materials/salt')
-        .id('tfc:quern/salt')
 
     // 4x Salt Powder
     event.recipes.tfc.quern('4x tfc:powder/salt', '#forge:raw_materials/salt')
         .id('tfc:quern/normal_salt')
 
-    // 6x Salt Powder
-    event.recipes.tfc.quern('6x tfc:powder/salt', '#forge:rich_raw_materials/salt')
-        .id('tfc:quern/rich_salt')
-
-    // 2x Graphite Powder
-    event.recipes.tfc.quern('2x tfc:powder/graphite', '#forge:poor_raw_materials/graphite')
-        .id('tfc:quern/graphite')
-
     // 4x Graphite Powder
     event.recipes.tfc.quern('4x tfc:powder/graphite', '#forge:raw_materials/graphite')
         .id('tfc:quern/normal_graphite_2')
 
-    // 6x Graphite Powder
-    event.recipes.tfc.quern('6x tfc:powder/graphite', '#forge:rich_raw_materials/graphite')
-        .id('tfc:quern/rich_graphite')
-
-    // 2x Borax Powder
-    event.recipes.tfc.quern('2x tfc:powder/flux', '#forge:poor_raw_materials/borax')
-        .id('tfc:quern/borax')
-
     // 4x Borax Powder
     event.recipes.tfc.quern('4x tfc:powder/flux', '#forge:raw_materials/borax')
         .id('tfc:quern/normal_borax')
-
-    // 6x Borax Powder
-    event.recipes.tfc.quern('6x tfc:powder/flux', '#forge:rich_raw_materials/borax')
-        .id('tfc:quern/rich_borax')
 
     //#endregion
 
