@@ -246,7 +246,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["365F6F48E0BB2EFC"]
 			description: [
 				"Возьмите в руку 2 и более камня, после нажмите ПКМ, далее у вас откроется меню, в котором вы можете делать оголовия каменных инструментов, все рецепты можно посмотреть в REI или просто нажав на крафт каменного оголовия инструмента. После соедините оголовие с палкой и получите инструмент настоящего аборигена."
 				""
@@ -337,11 +336,10 @@
 				}
 			]
 			title: "Примитивные инструменты"
-			x: 3.5d
-			y: 0.0d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["6A564D86E000A506"]
 			id: "373FD04AD6CA9F92"
 			subtitle: "При помощи топора, соберите немного древесины"
 			tasks: [{
@@ -357,8 +355,8 @@
 				type: "item"
 			}]
 			title: "Новое, старое дерево"
-			x: 5.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["373FD04AD6CA9F92"]
@@ -374,17 +372,812 @@
 				"{image:tfg:textures/quests/primitive_charcoal_2.png width:200 height:100 align:1}"
 				""
 				"Далее, накрываете это все не горючим блоком, камнем или землей, оставляете один блок открытым и поджигаете при помощи выброшенного факела или примитивного зажигателя."
+				""
+				"{image:tfg:textures/quests/primitive_charcoal_3.png width:190 height:100 align:1}"
+				""
+				"Теперь ваша куча земли начала дымиться, накройте последний блок, который вы поджигали опять же не горючим блоком и ожидайте, как только куча перестанет дымиться, раскапывайте ее и получайте уголь."
 			]
 			id: "5DB0CA9F9724D301"
 			subtitle: "Создайте свою первую угольную яму"
 			tasks: [{
+				count: 16L
 				id: "58361DD51C891C43"
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
 			title: "Угольные ямы"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Эта штука позволит вам развести костер, или поджечь, что либо, просто наведите курсор мыши на любой блок, после зажмите и подержите ПКМ, после максимального натяжения, отпустите, с шансом в 50% подожжется блок на которой вы смотрели. Как сделать костер, в след. квесте."]
+			id: "3B3BA51C8CAEFC7F"
+			subtitle: "Люди в древности разжигали костры при помощи такой штуки"
+			tasks: [{
+				id: "1D1EC6EF1FCBA733"
+				item: {
+					Count: 1b
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Примитивная зажигалка"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B3BA51C8CAEFC7F"]
+			description: ["Бросьте на блок 3 палки и 1 бревно, после наведите на этот блок курсор мыши и используйте примитивную зажигалку, с первого раза может не получиться. После успеха, на месте выброшенных 3 палок и 1 бревна появится костер, в который нужно закидывтаь бревна, чтобы костер продолжал гореть. Для увеличения шанса создания костра, вы можете в выброшенные предметы добавить бумагу, солому и другие легковоспламеняемые предметы, за каждый предмет, по +10%."]
+			id: "682B58EC2D39F1A1"
+			subtitle: "Костер, но не обычный"
+			tasks: [{
+				icon: "tfc:firepit"
+				id: "4639272D5258BCFC"
+				observe_type: 0
+				timer: 0L
+				title: "Сделайте костер"
+				to_observe: "tfc:firepit"
+				type: "observation"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["682B58EC2D39F1A1"]
+			description: ["Вы удивитесь, но факела не бесконечные в TFC. Они будут гореть примерно 2 игровых дня, после потухнут. Но не бескокойтесь, в руках или инвентаре они не тухнут, поэтому вы можете носить с собой 1 факел и когда другие в вашем доме будут тухнуть, просто подойти и нажать ПКМ в них, вы как бы прикурите факел и он загорится снова."]
+			id: "6D940527BFF1D4C0"
+			subtitle: "Не бесокнечные факела"
+			tasks: [{
+				count: 2L
+				id: "6697694A11A541B9"
+				item: "tfc:torch"
+				type: "item"
+			}]
+			title: "Несколько факелов"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["373FD04AD6CA9F92"]
+			id: "4F5C883CC5282151"
+			tasks: [{
+				count: 16L
+				id: "05DD41298C7884FD"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
+					}
+				}
+				title: "Any #tfc:lumber"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: [
+				"В TerraFirmaGreg руду генерируются интересней чем где либо."
+				""
+				"1. Каждая руда появляется в своей породе. TFC добавляет в мир много разных пород, то есть обычный камень из ваниллы вы нигде не встретите, поэтому руды как и в реальной жизни генерируются только в определенных породах."
+				""
+				"2. Существуют несколько типов рудных жил, такие как: кластер, сфера, труба и несколько редких других, о которых говорить не будем."
+				""
+				"3. Для облегчения жизни игрокам, на поверхности появляются рудные индикаторы, под которыми в большинстве случаев располагается сама жила с рудой."
+				""
+				"TFG содержит небольшое Wiki для этого в таблице Excel. Для того, чтобы перейти по ссылке, выполните задание, после заберите награду и в чате отобразится кнопка по нажатию на которую вас перебросит на таблицу Excel с генерацией руды."
+				""
+				"{ \"text\": \"Ссылка на Excel таблицу (Нажми сюда)\", \"color\":\"#02FF00\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4\" } }"
+			]
+			icon: "gtceu:tfc_andesite_aluminium_ore"
+			id: "387DEEADF4922AB3"
+			subtitle: "Куда веселей чем в ванилле"
+			tasks: [{
+				id: "7E131C48FAB52A11"
+				type: "checkmark"
+			}]
+			title: "Генерация руд в мире TFG"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["792EEAB98A4E0CE6"]
+			id: "297996E158D0A289"
+			tasks: [{
+				id: "7DE49B3518768E16"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["792EEAB98A4E0CE6"]
+			id: "671A79C648DE2BCD"
+			tasks: [{
+				id: "123D5D1D8D91D88A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:kaolin_clay"
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			id: "70D40085219B1CC2"
+			tasks: [{
+				id: "2AFE24D5E16E294F"
+				item: "tfc:fire_clay"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			id: "6E07D20BECE4AB91"
+			tasks: [{
+				id: "3E53D8286A792931"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_fire_brick"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			id: "57A961BF9EE3F0A4"
+			tasks: [{
+				id: "28CEE2DBF2AC79BD"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_fire_ingot_mold"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			id: "7E75A4A0E4BCCAAF"
+			tasks: [{
+				id: "529CB26EFD86E19B"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_crucible"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			id: "1D40CA3A293CA0B8"
+			tasks: [{
+				id: "6A13186D6FB447CF"
+				item: "tfc:powder/kaolinite"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			id: "6114E7A26576FE4C"
+			tasks: [{
+				id: "2A3B46E5AAE6DFCC"
+				item: "tfc:powder/graphite"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			id: "15E8DFB91603906B"
+			tasks: [
+				{
+					id: "27816718899DCD1B"
+					item: {
+						Count: 1b
+						id: "tfc:handstone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7958F44E9515823D"
+					item: "tfc:quern"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			id: "19D912E5A084622E"
+			tasks: [{
+				id: "28D767CF80018E21"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_pickaxe_head_mold"
+				}
+				type: "item"
+			}]
 			x: 5.0d
-			y: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "651A98D6E3FA22F5"
+			tasks: [{
+				id: "08C6B78C9F502ADC"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_saw_blade_mold"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "1485A3993C9A92FD"
+			tasks: [{
+				id: "78D4DB54E734D433"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_ingot_mold"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			id: "5D657AAEFFE8AAD9"
+			tasks: [{
+				id: "743306EEC814B850"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_propick_head_mold"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			id: "37D6DD778879CF23"
+			tasks: [{
+				id: "18BE0AE52BCF136D"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_axe_head_mold"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			id: "369D8DA6CB6FE181"
+			tasks: [{
+				id: "3300F74859EEFDA1"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_shovel_head_mold"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			id: "3B2261F507B53EDC"
+			tasks: [{
+				id: "1BE5D35CB5FA4D90"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_hoe_head_mold"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			id: "415A6313CFFB89C4"
+			tasks: [{
+				id: "2E7F90E71BF2E1A6"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_chisel_head_mold"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			id: "7939AE29BFFEE56C"
+			tasks: [{
+				id: "07B71D9E1191802F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_hammer_head_mold"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			id: "5046918F09DC9AE8"
+			tasks: [{
+				id: "3F71BCE908797381"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_javelin_head_mold"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			id: "1551AB73122D79BC"
+			tasks: [{
+				id: "3CC58AD9E3221D58"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_sword_blade_mold"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "5FDE584FDC695E6B"
+			tasks: [{
+				id: "23F3B86202CB3AE5"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_mace_head_mold"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			id: "6564CC704664FE81"
+			tasks: [{
+				id: "0E36568EAD60A63D"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_knife_blade_mold"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			id: "4038DD635065F5BD"
+			tasks: [{
+				id: "5380F63EAF5D7EB1"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_scythe_blade_mold"
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			id: "7AE1B17F8F954E69"
+			tasks: [{
+				id: "68D766E9A037BC60"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_bell_mold"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			id: "5B6A93CACD743E03"
+			tasks: [{
+				id: "122B083A3E5A9648"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_flower_pot"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			id: "37D08CB9359AAD0D"
+			tasks: [{
+				id: "69F4C88520EC510A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_pan"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "38058B5408BFD0C2"
+			tasks: [{
+				id: "2A2BF997858CEFBD"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_blowpipe"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			id: "1D60D48F8B91D0E0"
+			tasks: [{
+				id: "340B47A3D494A58A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_bowl"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			id: "6D419B6EDE146616"
+			tasks: [{
+				id: "39D1102841206461"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_jug"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			id: "4BB76F3E38A2AFFB"
+			tasks: [{
+				id: "01564E7BA40431BB"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_pot"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			id: "0546B04FC0F85C8C"
+			tasks: [{
+				id: "50369C29A8FED043"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_spindle_head"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			id: "0148B1F36C067BE0"
+			tasks: [{
+				id: "684F827FEB040FFA"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_vessel"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			id: "4F4114979CB5CA03"
+			tasks: [{
+				id: "0DA50C9F3BDE79C8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_large_vessel"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			id: "2BFC2744E4DE4B5A"
+			tasks: [{
+				id: "60D648DCBA5D58C9"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:stone/axe/igneous_extrusive)item(tfc:stone/axe/igneous_intrusive)item(tfc:stone/axe/metamorphic)item(tfc:stone/axe/sedimentary))"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "097A99ED30503880"
+			tasks: [{
+				id: "2DA10B2AA4C69CF8"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:stone/hammer/igneous_extrusive)item(tfc:stone/hammer/igneous_intrusive)item(tfc:stone/hammer/metamorphic)item(tfc:stone/hammer/sedimentary))"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			id: "318BF1F671BC4620"
+			tasks: [{
+				id: "212152C7F878908B"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:stone/hoe/igneous_extrusive)item(tfc:stone/hoe/igneous_intrusive)item(tfc:stone/hoe/metamorphic)item(tfc:stone/hoe/sedimentary))"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			id: "508DA76FA2766B7B"
+			tasks: [{
+				id: "061392B0556D6810"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			id: "716B407EEED8BE95"
+			tasks: [{
+				id: "1FAB741E7048BADF"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:stone/shovel/igneous_extrusive)item(tfc:stone/shovel/igneous_intrusive)item(tfc:stone/shovel/metamorphic)item(tfc:stone/shovel/sedimentary))"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			id: "120E5C0E43EC756B"
+			tasks: [{
+				id: "22C65E79811F75DD"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:stone/hammer/igneous_extrusive)item(tfc:stone/hammer/igneous_intrusive)item(tfc:stone/hammer/metamorphic)item(tfc:stone/hammer/sedimentary))"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
 		}
 	]
 	title: "Primitive Age"
