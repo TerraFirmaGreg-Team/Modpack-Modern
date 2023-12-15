@@ -746,6 +746,24 @@ const registerTFCRecipes = (event) => {
 
     })
 
+    global.TFC_WOOD_TYPES.forEach(wood => {
+        event.remove({ id: `tfc:crafting/wood/${wood}_axle` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
+    })
+
+    event.remove({ id: `tfc:crafting/trip_hammer` })
+    event.remove({ id: `tfc:crafting/windmill_blade` })
+    event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.remove({ id: `tfc:barrel/dye/${dye}_windmill_blade` })
+    })
+
     //#region Вырезание предметов из CastIron
 
     // Слиток
