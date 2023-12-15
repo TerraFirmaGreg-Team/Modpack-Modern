@@ -1415,6 +1415,7 @@ const registerTFCRecipes = (event) => {
         .EUt(30)
 
     // Удобрение в create миксере
+    /*
     event.recipes.gtceu.create_mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
@@ -1425,7 +1426,7 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)
         .EUt(30)
-        .rpm(96)
+        .rpm(96)*/
 
     //#endregion
 
