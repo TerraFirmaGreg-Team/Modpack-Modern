@@ -21,29 +21,29 @@ const registerTFCDataForTFC = (event) => {
     )
  */
 const registerTFCMetals = (event) => {
-    event.metal('gtceu:tin', 230, 0.02143, null, null, null, 1, 'tfc:tin')
-    event.metal('gtceu:bismuth', 270, 0.02143, null, null, null, 1, 'tfc:bismuth')
-    event.metal('gtceu:zinc', 420, 0.01429, null, null, null, 1, 'tfc:zinc')
-    event.metal('gtceu:sterling_silver', 950, 0.00857, null, null, null, 1, 'tfc:sterling_silver')
-    event.metal('gtceu:rose_gold', 960, 0.00857, null, null, null, 1, 'tfc:rose_gold')
-    event.metal('gtceu:silver', 961, 0.00625, null, null, null, 1, 'tfc:silver')
-    event.metal('gtceu:gold', 1060, 0.005, null, null, null, 1, 'tfc:gold')
-    event.metal('gtceu:copper', 1080, 0.00857, null, null, null, 1, 'tfc:copper')
-    event.metal('gtceu:nickel', 1453, 0.00625, null, null, null, 1, 'tfc:nickel')
+    event.metal('gtceu:tin', 230, 0.02143, '#forge:ingots/tin', '#forge:double_ingots/tin', '#forge:plates/tin', 1, 'tfc:tin')
+    event.metal('gtceu:bismuth', 270, 0.02143, '#forge:ingots/bismuth', '#forge:double_ingots/bismuth', '#forge:plates/bismuth', 1, 'tfc:bismuth')
+    event.metal('gtceu:zinc', 420, 0.01429, '#forge:ingots/zinc', '#forge:double_ingots/zinc', '#forge:plates/zinc', 1, 'tfc:zinc')
+    event.metal('gtceu:sterling_silver', 950, 0.00857, '#forge:ingots/sterling_silver', '#forge:double_ingots/sterling_silver', '#forge:plates/sterling_silver', 1, 'tfc:sterling_silver')
+    event.metal('gtceu:rose_gold', 960, 0.00857, '#forge:ingots/rose_gold', '#forge:double_ingots/rose_gold', '#forge:plates/rose_gold', 1, 'tfc:rose_gold')
+    event.metal('gtceu:silver', 961, 0.00625, '#forge:ingots/silver', '#forge:double_ingots/silver', '#forge:plates/silver', 1, 'tfc:silver')
+    event.metal('gtceu:gold', 1060, 0.005, '#forge:ingots/gold', '#forge:double_ingots/gold', '#forge:plates/gold', 1, 'tfc:gold')
+    event.metal('gtceu:copper', 1080, 0.00857, '#forge:ingots/copper', '#forge:double_ingots/copper', '#forge:plates/copper', 1, 'tfc:copper')
+    event.metal('gtceu:nickel', 1453, 0.00625, '#forge:ingots/nickel', '#forge:double_ingots/nickel', '#forge:plates/nickel', 1, 'tfc:nickel')
     
-    event.metal('gtceu:brass', 930, 0.00857, null, null, null, 2, 'tfc:brass')
-    event.metal('gtceu:bronze', 950, 0.00857, null, null, null, 2, 'tfc:bronze')
-    event.metal('gtceu:bismuth_bronze', 985, 0.00857, null, null, null, 2, 'tfc:bismuth_bronze')
-    event.metal('gtceu:black_bronze', 1070, 0.00857, null, null, null, 2, 'tfc:black_bronze')
+    event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
+    event.metal('gtceu:bronze', 950, 0.00857, '#forge:ingots/bronze', '#forge:double_ingots/bronze', '#forge:plates/bronze', 2, 'tfc:bronze')
+    event.metal('gtceu:bismuth_bronze', 985, 0.00857, '#forge:ingots/bismuth_bronze', '#forge:double_ingots/bismuth_bronze', '#forge:plates/bismuth_bronze', 2, 'tfc:bismuth_bronze')
+    event.metal('gtceu:black_bronze', 1070, 0.00857, '#forge:ingots/black_bronze', '#forge:double_ingots/black_bronze', '#forge:plates/black_bronze', 2, 'tfc:black_bronze')
 
-    event.metal('gtceu:iron', 1535, 0.00857, null, null, null, 3, 'tfg:iron')
-    event.metal('gtceu:wrought_iron', 1535, 0.00857, null, null, null, 3, 'tfc:wrought_iron')
+    // event.metal('gtceu:iron', 1535, 0.00857, '#forge:ingots/iron', '#forge:double_ingots/iron', '#forge:plates/iron', 3, 'tfg:iron')
+    event.metal('gtceu:wrought_iron', 1535, 0.00857, '#forge:ingots/wrought_iron', '#forge:double_ingots/wrought_iron', '#forge:plates/wrought_iron', 3, 'tfc:wrought_iron')
 
-    event.metal('gtceu:steel', 1540, 0.00857, null, null, null, 4, 'tfc:steel')
+    event.metal('gtceu:steel', 1540, 0.00857, '#forge:ingots/steel', '#forge:double_ingots/steel', '#forge:plates/steel', 4, 'tfc:steel')
 
-    event.metal('gtceu:black_steel', 1485, 0.00857, null, null, null, 5, 'tfc:black_steel')
-    event.metal('gtceu:blue_steel', 1540, 0.00857, null, null, null, 6, 'tfc:blue_steel')
-    event.metal('gtceu:red_steel', 1540, 0.00857, null, null, null, 6, 'tfc:red_steel')
+    event.metal('gtceu:black_steel', 1485, 0.00857, '#forge:ingots/black_steel', '#forge:double_ingots/black_steel', '#forge:plates/black_steel', 5, 'tfc:black_steel')
+    event.metal('gtceu:blue_steel', 1540, 0.00857, '#forge:ingots/blue_steel', '#forge:double_ingots/blue_steel', '#forge:plates/blue_steel', 6, 'tfc:blue_steel')
+    event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
 }
 
 /**
