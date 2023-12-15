@@ -8,7 +8,6 @@ const registerTFCItemTags = (event) => {
     })
 
     // Теги для соответствия инструментов TFC и GT
-    event.add('tfc:usable_on_tool_rack', '#forge:tools')
     event.add('tfc:axes', '#forge:tools/tree_felling')
     event.add('tfc:hammers', '#forge:tools/hammers')
     event.add('tfc:hoes', '#minecraft:hoes')
@@ -18,6 +17,33 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:scythes', '#forge:tools/scythes')
     event.add('tfc:shovels', '#minecraft:shovels')
     event.add('tfc:swords', '#minecraft:swords')
+
+    event.add('tfc:usable_on_tool_rack', '#tfc:axes')
+    event.add('tfc:usable_on_tool_rack', '#tfc:hammers')
+    event.add('tfc:usable_on_tool_rack', '#tfc:hoes')
+    event.add('tfc:usable_on_tool_rack', '#tfc:knives')
+    event.add('tfc:usable_on_tool_rack', '#tfc:pickaxes')
+    event.add('tfc:usable_on_tool_rack', '#tfc:saws')
+    event.add('tfc:usable_on_tool_rack', '#tfc:scythes')
+    event.add('tfc:usable_on_tool_rack', '#tfc:shovels')
+    event.add('tfc:usable_on_tool_rack', '#tfc:swords')
+
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/mining_hammers')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/wrenches')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/files')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/crowbars')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/screwdrivers')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/wire_cutters')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/butchery_knives')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/plungers')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
+
+    event.add('forge:tools/aoe', '#forge:tools/mining_hammers')
+    
+    // Для складывания
+    event.add('tfc:pileable_ingots', '#forge:ingots')
+    event.add('tfc:pileable_sheets', '#forge:plates')
 
     // Определеяет какое оружие может появиться у зомбя в руках
     // Мечи
@@ -47,27 +73,6 @@ const registerTFCItemTags = (event) => {
 
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
-
-    // Теги для двойных слитков тфк
-    event.add('forge:ingots/double/bismuth', 'tfc:metal/double_ingot/bismuth')
-    event.add('forge:ingots/double/bismuth_bronze', 'tfc:metal/double_ingot/bismuth_bronze')
-    event.add('forge:ingots/double/black_bronze', 'tfc:metal/double_ingot/black_bronze')
-    event.add('forge:ingots/double/bronze', 'tfc:metal/double_ingot/bronze')
-    event.add('forge:ingots/double/brass', 'tfc:metal/double_ingot/brass')
-    event.add('forge:ingots/double/copper', 'tfc:metal/double_ingot/copper')
-    event.add('forge:ingots/double/gold', 'tfc:metal/double_ingot/gold')
-    event.add('forge:ingots/double/nickel', 'tfc:metal/double_ingot/nickel')
-    event.add('forge:ingots/double/rose_gold', 'tfc:metal/double_ingot/rose_gold')
-    event.add('forge:ingots/double/silver', 'tfc:metal/double_ingot/silver')
-    event.add('forge:ingots/double/tin', 'tfc:metal/double_ingot/tin')
-    event.add('forge:ingots/double/zinc', 'tfc:metal/double_ingot/zinc')
-    event.add('forge:ingots/double/sterling_silver', 'tfc:metal/double_ingot/sterling_silver')
-    event.add('forge:ingots/double/iron', 'tfc:metal/double_ingot/cast_iron')
-    event.add('forge:ingots/double/wrought_iron', 'tfc:metal/double_ingot/wrought_iron')
-    event.add('forge:ingots/double/steel', 'tfc:metal/double_ingot/steel')
-    event.add('forge:ingots/double/black_steel', 'tfc:metal/double_ingot/black_steel')
-    event.add('forge:ingots/double/blue_steel', 'tfc:metal/double_ingot/blue_steel')
-    event.add('forge:ingots/double/red_steel', 'tfc:metal/double_ingot/red_steel')
 
     // Теги для объединения наковален
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/blue_steel')
