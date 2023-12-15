@@ -1056,7 +1056,7 @@ const registerAE2Recipes = (event) => {
     //#region Molecular Assembler
     
     // HV
-    event.recipes.gtceu.assembler('ae2:molecular_assembler_HV')
+    event.recipes.gtceu.assembler('ae2:molecular_assembler_hv')
         .itemInputs(
             '2x ae2:quartz_glass',
             '2x #forge:circuits/hv',
@@ -1072,7 +1072,7 @@ const registerAE2Recipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
     
     // EV
-    event.recipes.gtceu.assembler('ae2:molecular_assembler_EV')
+    event.recipes.gtceu.assembler('ae2:molecular_assembler_ev')
         .itemInputs(
             '2x ae2:quartz_glass',
             '2x #forge:circuits/ev',
@@ -1088,7 +1088,7 @@ const registerAE2Recipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
     
     // IV
-    event.recipes.gtceu.assembler('ae2:molecular_assembler_IV')
+    event.recipes.gtceu.assembler('ae2:molecular_assembler_iv')
         .itemInputs(
             '2x ae2:quartz_glass',
             '2x #forge:circuits/iv',
