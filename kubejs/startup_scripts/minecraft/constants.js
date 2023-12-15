@@ -200,6 +200,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:lantern",
     "minecraft:soul_torch",
     "minecraft:soul_lantern",
+    "minecraft:copper_ingot",
+    "minecraft:gold_ingot",
 
     // Seeds
     "minecraft:wheat_seeds",

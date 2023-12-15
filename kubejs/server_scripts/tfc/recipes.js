@@ -489,7 +489,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:heating/metal/${metal}_sword`)
 
             // Крафт оголовья
-            event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `#forge:ingots/double/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
+            event.recipes.tfc.anvil(`gtceu:${metal}_sword_head`, `#forge:double_ingots/${metal}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
                 .tier(metalSpecs.tier)
                 .bonus(true)
                 .id(`tfc:anvil/${metal}_sword_blade`)
@@ -872,6 +872,16 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.heating('tfc:wrought_iron_grill', 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
         .id(`tfc:heating/grill`)
+
+    // Ванильная дверь
+    event.recipes.tfc.heating('minecraft:iron_door', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
+        .id(`tfc:heating/iron_door`)
+
+    event.recipes.tfc.anvil('minecraft:iron_door', '#forge:plates/wrought_iron', ['hit_last', 'draw_not_last', 'punch_not_last'])
+        .tier(3)
+        .id(`tfc:anvil/iron_door`)
+
 
     // Bloom -> Wrought Iron Ingot
     event.recipes.tfc.anvil('gtceu:wrought_iron_ingot', 'tfc:refined_iron_bloom', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(2)
