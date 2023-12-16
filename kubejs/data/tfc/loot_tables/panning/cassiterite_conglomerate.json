@@ -31,7 +31,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "gtceu:poor_raw_coal",
+              "name": "gtceu:raw_coal",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",

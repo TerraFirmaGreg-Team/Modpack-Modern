@@ -31,7 +31,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "gtceu:poor_raw_borax",
+              "name": "gtceu:raw_borax",
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
