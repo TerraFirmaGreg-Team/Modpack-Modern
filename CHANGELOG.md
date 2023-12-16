@@ -16,6 +16,9 @@
 - Возможно, что-то еще..
 ### Новые моды
 - FTB Filtering Mod
+- Clumps
+- Get it together drops
+- Let me despawn
 ### Обновленные моды
 - TerraFirmaGreg: 0.0.22 -> 0.0.25
 - CreativeCore: 2.11.13 -> 2.11.15
