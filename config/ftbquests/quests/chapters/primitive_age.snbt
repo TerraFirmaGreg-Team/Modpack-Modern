@@ -475,7 +475,7 @@
 				""
 				"{ \"text\": \"Ссылка на Excel таблицу (Нажми сюда)\", \"color\":\"#02FF00\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4\" } }"
 			]
-			icon: "gtceu:tfc_andesite_aluminium_ore"
+			icon: "gtceu:shale_aluminium_ore"
 			id: "387DEEADF4922AB3"
 			subtitle: "Куда веселей чем в ванилле"
 			tasks: [{
