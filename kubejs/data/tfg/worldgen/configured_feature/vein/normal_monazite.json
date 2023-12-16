@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_bastnasite_ore",
+            "block": "gtceu:granite_bastnasite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_granite_monazite_ore",
+            "block": "gtceu:granite_monazite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_neodymium_ore",
+            "block": "gtceu:granite_neodymium_ore",
             "weight": 25
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_diorite_bastnasite_ore",
+            "block": "gtceu:diorite_bastnasite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_diorite_monazite_ore",
+            "block": "gtceu:diorite_monazite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_diorite_neodymium_ore",
+            "block": "gtceu:diorite_neodymium_ore",
             "weight": 25
           }
         ]
@@ -52,15 +52,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_bastnasite_ore",
+            "block": "gtceu:gabbro_bastnasite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_gabbro_monazite_ore",
+            "block": "gtceu:gabbro_monazite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_neodymium_ore",
+            "block": "gtceu:gabbro_neodymium_ore",
             "weight": 25
           }
         ]

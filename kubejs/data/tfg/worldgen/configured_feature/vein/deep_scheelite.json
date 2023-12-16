@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_scheelite_ore",
+            "block": "gtceu:granite_scheelite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_granite_tungstate_ore",
+            "block": "gtceu:granite_tungstate_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_granite_lithium_ore",
+            "block": "gtceu:granite_lithium_ore",
             "weight": 20
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_diorite_scheelite_ore",
+            "block": "gtceu:diorite_scheelite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_diorite_tungstate_ore",
+            "block": "gtceu:diorite_tungstate_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_diorite_lithium_ore",
+            "block": "gtceu:diorite_lithium_ore",
             "weight": 20
           }
         ]
@@ -52,15 +52,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_scheelite_ore",
+            "block": "gtceu:gabbro_scheelite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_gabbro_tungstate_ore",
+            "block": "gtceu:gabbro_tungstate_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_gabbro_lithium_ore",
+            "block": "gtceu:gabbro_lithium_ore",
             "weight": 20
           }
         ]

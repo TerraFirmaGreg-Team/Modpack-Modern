@@ -14,11 +14,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_cassiterite_ore",
+            "block": "gtceu:granite_cassiterite_ore",
             "weight": 60
           },
           {
-            "block": "gtceu:tfc_granite_tin_ore",
+            "block": "gtceu:granite_tin_ore",
             "weight": 40
           }
         ]
@@ -29,11 +29,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_diorite_cassiterite_ore",
+            "block": "gtceu:diorite_cassiterite_ore",
             "weight": 60
           },
           {
-            "block": "gtceu:tfc_diorite_tin_ore",
+            "block": "gtceu:diorite_tin_ore",
             "weight": 40
           }
         ]
@@ -44,11 +44,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_cassiterite_ore",
+            "block": "gtceu:gabbro_cassiterite_ore",
             "weight": 60
           },
           {
-            "block": "gtceu:tfc_gabbro_tin_ore",
+            "block": "gtceu:gabbro_tin_ore",
             "weight": 40
           }
         ]

@@ -20,11 +20,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_beryllium_ore",
+            "block": "gtceu:rhyolite_beryllium_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_rhyolite_emerald_ore",
+            "block": "gtceu:rhyolite_emerald_ore",
             "weight": 65
           }
         ]
@@ -35,11 +35,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_beryllium_ore",
+            "block": "gtceu:basalt_beryllium_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_basalt_emerald_ore",
+            "block": "gtceu:basalt_emerald_ore",
             "weight": 65
           }
         ]
@@ -50,11 +50,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_beryllium_ore",
+            "block": "gtceu:andesite_beryllium_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_andesite_emerald_ore",
+            "block": "gtceu:andesite_emerald_ore",
             "weight": 65
           }
         ]
@@ -65,11 +65,11 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_beryllium_ore",
+            "block": "gtceu:dacite_beryllium_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_dacite_emerald_ore",
+            "block": "gtceu:dacite_emerald_ore",
             "weight": 65
           }
         ]

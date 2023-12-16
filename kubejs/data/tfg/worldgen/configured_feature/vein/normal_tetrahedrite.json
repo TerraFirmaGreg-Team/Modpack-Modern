@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_quartzite_tetrahedrite_ore",
+            "block": "gtceu:quartzite_tetrahedrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_quartzite_copper_ore",
+            "block": "gtceu:quartzite_copper_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_quartzite_stibnite_ore",
+            "block": "gtceu:quartzite_stibnite_ore",
             "weight": 25
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_slate_tetrahedrite_ore",
+            "block": "gtceu:slate_tetrahedrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_slate_copper_ore",
+            "block": "gtceu:slate_copper_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_slate_stibnite_ore",
+            "block": "gtceu:slate_stibnite_ore",
             "weight": 25
           }
         ]
@@ -52,15 +52,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_phyllite_tetrahedrite_ore",
+            "block": "gtceu:phyllite_tetrahedrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_phyllite_copper_ore",
+            "block": "gtceu:phyllite_copper_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_phyllite_stibnite_ore",
+            "block": "gtceu:phyllite_stibnite_ore",
             "weight": 25
           }
         ]
@@ -71,15 +71,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_schist_tetrahedrite_ore",
+            "block": "gtceu:schist_tetrahedrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_schist_copper_ore",
+            "block": "gtceu:schist_copper_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_schist_stibnite_ore",
+            "block": "gtceu:schist_stibnite_ore",
             "weight": 25
           }
         ]
@@ -90,15 +90,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gneiss_tetrahedrite_ore",
+            "block": "gtceu:gneiss_tetrahedrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_gneiss_copper_ore",
+            "block": "gtceu:gneiss_copper_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_gneiss_stibnite_ore",
+            "block": "gtceu:gneiss_stibnite_ore",
             "weight": 25
           }
         ]
@@ -109,15 +109,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_marble_tetrahedrite_ore",
+            "block": "gtceu:marble_tetrahedrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_marble_copper_ore",
+            "block": "gtceu:marble_copper_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_marble_stibnite_ore",
+            "block": "gtceu:marble_stibnite_ore",
             "weight": 25
           }
         ]

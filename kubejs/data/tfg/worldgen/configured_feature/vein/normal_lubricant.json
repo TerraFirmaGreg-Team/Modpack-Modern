@@ -14,19 +14,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_soapstone_ore",
+            "block": "gtceu:granite_soapstone_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_granite_talc_ore",
+            "block": "gtceu:granite_talc_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_glauconite_sand_ore",
+            "block": "gtceu:granite_glauconite_sand_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_pentlandite_ore",
+            "block": "gtceu:granite_pentlandite_ore",
             "weight": 15
           }
         ]
@@ -37,19 +37,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_diorite_soapstone_ore",
+            "block": "gtceu:diorite_soapstone_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_diorite_talc_ore",
+            "block": "gtceu:diorite_talc_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_diorite_glauconite_sand_ore",
+            "block": "gtceu:diorite_glauconite_sand_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_diorite_pentlandite_ore",
+            "block": "gtceu:diorite_pentlandite_ore",
             "weight": 15
           }
         ]
@@ -60,19 +60,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_soapstone_ore",
+            "block": "gtceu:gabbro_soapstone_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_gabbro_talc_ore",
+            "block": "gtceu:gabbro_talc_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_glauconite_sand_ore",
+            "block": "gtceu:gabbro_glauconite_sand_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_pentlandite_ore",
+            "block": "gtceu:gabbro_pentlandite_ore",
             "weight": 15
           }
         ]

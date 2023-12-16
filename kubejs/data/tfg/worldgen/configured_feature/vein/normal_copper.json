@@ -14,19 +14,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_chalcopyrite_ore",
+            "block": "gtceu:rhyolite_chalcopyrite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_rhyolite_iron_ore",
+            "block": "gtceu:rhyolite_iron_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_rhyolite_pyrite_ore",
+            "block": "gtceu:rhyolite_pyrite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:tfc_rhyolite_copper_ore",
+            "block": "gtceu:rhyolite_copper_ore",
             "weight": 65
           }
         ]
@@ -37,19 +37,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_chalcopyrite_ore",
+            "block": "gtceu:basalt_chalcopyrite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_basalt_iron_ore",
+            "block": "gtceu:basalt_iron_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_basalt_pyrite_ore",
+            "block": "gtceu:basalt_pyrite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:tfc_basalt_copper_ore",
+            "block": "gtceu:basalt_copper_ore",
             "weight": 65
           }
         ]
@@ -60,19 +60,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_chalcopyrite_ore",
+            "block": "gtceu:andesite_chalcopyrite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_andesite_iron_ore",
+            "block": "gtceu:andesite_iron_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_andesite_pyrite_ore",
+            "block": "gtceu:andesite_pyrite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:tfc_andesite_copper_ore",
+            "block": "gtceu:andesite_copper_ore",
             "weight": 65
           }
         ]
@@ -83,19 +83,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_chalcopyrite_ore",
+            "block": "gtceu:dacite_chalcopyrite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_dacite_iron_ore",
+            "block": "gtceu:dacite_iron_ore",
             "weight": 5
           },
           {
-            "block": "gtceu:tfc_dacite_pyrite_ore",
+            "block": "gtceu:dacite_pyrite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:tfc_dacite_copper_ore",
+            "block": "gtceu:dacite_copper_ore",
             "weight": 65
           }
         ]

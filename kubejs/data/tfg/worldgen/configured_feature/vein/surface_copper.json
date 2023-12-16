@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_chalcopyrite_ore",
+            "block": "gtceu:rhyolite_chalcopyrite_ore",
             "weight": 70
           },
           {
-            "block": "gtceu:tfc_rhyolite_zeolite_ore",
+            "block": "gtceu:rhyolite_zeolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_rhyolite_cassiterite_ore",
+            "block": "gtceu:rhyolite_cassiterite_ore",
             "weight": 5
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_chalcopyrite_ore",
+            "block": "gtceu:basalt_chalcopyrite_ore",
             "weight": 70
           },
           {
-            "block": "gtceu:tfc_basalt_zeolite_ore",
+            "block": "gtceu:basalt_zeolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_basalt_cassiterite_ore",
+            "block": "gtceu:basalt_cassiterite_ore",
             "weight": 5
           }
         ]
@@ -52,15 +52,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_chalcopyrite_ore",
+            "block": "gtceu:andesite_chalcopyrite_ore",
             "weight": 70
           },
           {
-            "block": "gtceu:tfc_andesite_zeolite_ore",
+            "block": "gtceu:andesite_zeolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_andesite_cassiterite_ore",
+            "block": "gtceu:andesite_cassiterite_ore",
             "weight": 5
           }
         ]
@@ -71,15 +71,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_chalcopyrite_ore",
+            "block": "gtceu:dacite_chalcopyrite_ore",
             "weight": 70
           },
           {
-            "block": "gtceu:tfc_dacite_zeolite_ore",
+            "block": "gtceu:dacite_zeolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_dacite_cassiterite_ore",
+            "block": "gtceu:dacite_cassiterite_ore",
             "weight": 5
           }
         ]

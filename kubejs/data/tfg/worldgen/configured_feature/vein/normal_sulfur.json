@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_sulfur_ore",
+            "block": "gtceu:rhyolite_sulfur_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_rhyolite_pyrite_ore",
+            "block": "gtceu:rhyolite_pyrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_rhyolite_sphalerite_ore",
+            "block": "gtceu:rhyolite_sphalerite_ore",
             "weight": 15
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_sulfur_ore",
+            "block": "gtceu:basalt_sulfur_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_basalt_pyrite_ore",
+            "block": "gtceu:basalt_pyrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_basalt_sphalerite_ore",
+            "block": "gtceu:basalt_sphalerite_ore",
             "weight": 15
           }
         ]
@@ -52,15 +52,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_sulfur_ore",
+            "block": "gtceu:andesite_sulfur_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_andesite_pyrite_ore",
+            "block": "gtceu:andesite_pyrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_andesite_sphalerite_ore",
+            "block": "gtceu:andesite_sphalerite_ore",
             "weight": 15
           }
         ]
@@ -71,15 +71,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_sulfur_ore",
+            "block": "gtceu:dacite_sulfur_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_dacite_pyrite_ore",
+            "block": "gtceu:dacite_pyrite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_dacite_sphalerite_ore",
+            "block": "gtceu:dacite_sphalerite_ore",
             "weight": 15
           }
         ]

@@ -20,15 +20,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_graphite_ore",
+            "block": "gtceu:gabbro_graphite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_gabbro_diamond_ore",
+            "block": "gtceu:gabbro_diamond_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_coal_ore",
+            "block": "gtceu:gabbro_coal_ore",
             "weight": 30
           }
         ]

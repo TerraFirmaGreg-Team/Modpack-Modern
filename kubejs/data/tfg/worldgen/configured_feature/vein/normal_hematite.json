@@ -14,19 +14,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_goethite_ore",
+            "block": "gtceu:rhyolite_goethite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_rhyolite_yellow_limonite_ore",
+            "block": "gtceu:rhyolite_yellow_limonite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_rhyolite_hematite_ore",
+            "block": "gtceu:rhyolite_hematite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_rhyolite_gold_ore",
+            "block": "gtceu:rhyolite_gold_ore",
             "weight": 5
           }
         ]
@@ -37,19 +37,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_goethite_ore",
+            "block": "gtceu:basalt_goethite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_basalt_yellow_limonite_ore",
+            "block": "gtceu:basalt_yellow_limonite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_basalt_hematite_ore",
+            "block": "gtceu:basalt_hematite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_basalt_gold_ore",
+            "block": "gtceu:basalt_gold_ore",
             "weight": 5
           }
         ]
@@ -60,19 +60,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_goethite_ore",
+            "block": "gtceu:andesite_goethite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_andesite_yellow_limonite_ore",
+            "block": "gtceu:andesite_yellow_limonite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_andesite_hematite_ore",
+            "block": "gtceu:andesite_hematite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_andesite_gold_ore",
+            "block": "gtceu:andesite_gold_ore",
             "weight": 5
           }
         ]
@@ -83,19 +83,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_goethite_ore",
+            "block": "gtceu:dacite_goethite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_dacite_yellow_limonite_ore",
+            "block": "gtceu:dacite_yellow_limonite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_dacite_hematite_ore",
+            "block": "gtceu:dacite_hematite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_dacite_gold_ore",
+            "block": "gtceu:dacite_gold_ore",
             "weight": 5
           }
         ]

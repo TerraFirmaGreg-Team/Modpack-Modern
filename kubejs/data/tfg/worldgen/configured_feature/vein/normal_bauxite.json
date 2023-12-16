@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_shale_bauxite_ore",
+            "block": "gtceu:shale_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_shale_ilmenite_ore",
+            "block": "gtceu:shale_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_shale_aluminium_ore",
+            "block": "gtceu:shale_aluminium_ore",
             "weight": 25
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_claystone_bauxite_ore",
+            "block": "gtceu:claystone_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_claystone_ilmenite_ore",
+            "block": "gtceu:claystone_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_claystone_aluminium_ore",
+            "block": "gtceu:claystone_aluminium_ore",
             "weight": 25
           }
         ]
@@ -52,15 +52,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_limestone_bauxite_ore",
+            "block": "gtceu:limestone_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_limestone_ilmenite_ore",
+            "block": "gtceu:limestone_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_limestone_aluminium_ore",
+            "block": "gtceu:limestone_aluminium_ore",
             "weight": 25
           }
         ]
@@ -71,15 +71,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_conglomerate_bauxite_ore",
+            "block": "gtceu:conglomerate_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_conglomerate_ilmenite_ore",
+            "block": "gtceu:conglomerate_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_conglomerate_aluminium_ore",
+            "block": "gtceu:conglomerate_aluminium_ore",
             "weight": 25
           }
         ]
@@ -90,15 +90,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dolomite_bauxite_ore",
+            "block": "gtceu:dolomite_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_dolomite_ilmenite_ore",
+            "block": "gtceu:dolomite_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_dolomite_aluminium_ore",
+            "block": "gtceu:dolomite_aluminium_ore",
             "weight": 25
           }
         ]
@@ -109,15 +109,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_chert_bauxite_ore",
+            "block": "gtceu:chert_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_chert_ilmenite_ore",
+            "block": "gtceu:chert_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_chert_aluminium_ore",
+            "block": "gtceu:chert_aluminium_ore",
             "weight": 25
           }
         ]
@@ -128,15 +128,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_chalk_bauxite_ore",
+            "block": "gtceu:chalk_bauxite_ore",
             "weight": 45
           },
           {
-            "block": "gtceu:tfc_chalk_ilmenite_ore",
+            "block": "gtceu:chalk_ilmenite_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_chalk_aluminium_ore",
+            "block": "gtceu:chalk_aluminium_ore",
             "weight": 25
           }
         ]

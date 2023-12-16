@@ -15,19 +15,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_almandine_ore",
+            "block": "gtceu:rhyolite_almandine_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_rhyolite_pyrope_ore",
+            "block": "gtceu:rhyolite_pyrope_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_rhyolite_sapphire_ore",
+            "block": "gtceu:rhyolite_sapphire_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_rhyolite_green_sapphire_ore",
+            "block": "gtceu:rhyolite_green_sapphire_ore",
             "weight": 15
           }
         ]
@@ -38,19 +38,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_almandine_ore",
+            "block": "gtceu:basalt_almandine_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_basalt_pyrope_ore",
+            "block": "gtceu:basalt_pyrope_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_basalt_sapphire_ore",
+            "block": "gtceu:basalt_sapphire_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_basalt_green_sapphire_ore",
+            "block": "gtceu:basalt_green_sapphire_ore",
             "weight": 15
           }
         ]
@@ -61,19 +61,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_almandine_ore",
+            "block": "gtceu:andesite_almandine_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_andesite_pyrope_ore",
+            "block": "gtceu:andesite_pyrope_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_andesite_sapphire_ore",
+            "block": "gtceu:andesite_sapphire_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_andesite_green_sapphire_ore",
+            "block": "gtceu:andesite_green_sapphire_ore",
             "weight": 15
           }
         ]
@@ -84,19 +84,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_almandine_ore",
+            "block": "gtceu:dacite_almandine_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_dacite_pyrope_ore",
+            "block": "gtceu:dacite_pyrope_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_dacite_sapphire_ore",
+            "block": "gtceu:dacite_sapphire_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_dacite_green_sapphire_ore",
+            "block": "gtceu:dacite_green_sapphire_ore",
             "weight": 15
           }
         ]

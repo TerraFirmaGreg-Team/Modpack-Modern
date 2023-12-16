@@ -14,19 +14,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_garnierite_ore",
+            "block": "gtceu:gabbro_garnierite_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_gabbro_nickel_ore",
+            "block": "gtceu:gabbro_nickel_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:tfc_gabbro_cobaltite_ore",
+            "block": "gtceu:gabbro_cobaltite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_gabbro_pentlandite_ore",
+            "block": "gtceu:gabbro_pentlandite_ore",
             "weight": 30
           }
         ]

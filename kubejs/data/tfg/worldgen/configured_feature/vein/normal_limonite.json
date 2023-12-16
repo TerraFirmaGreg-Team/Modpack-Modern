@@ -14,19 +14,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_marble_goethite_ore",
+            "block": "gtceu:marble_goethite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_marble_yellow_limonite_ore",
+            "block": "gtceu:marble_yellow_limonite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_marble_hematite_ore",
+            "block": "gtceu:marble_hematite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_marble_malachite_ore",
+            "block": "gtceu:marble_malachite_ore",
             "weight": 15
           }
         ]
@@ -37,19 +37,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_limestone_goethite_ore",
+            "block": "gtceu:limestone_goethite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_limestone_yellow_limonite_ore",
+            "block": "gtceu:limestone_yellow_limonite_ore",
             "weight": 50
           },
           {
-            "block": "gtceu:tfc_limestone_hematite_ore",
+            "block": "gtceu:limestone_hematite_ore",
             "weight": 20
           },
           {
-            "block": "gtceu:tfc_limestone_malachite_ore",
+            "block": "gtceu:limestone_malachite_ore",
             "weight": 15
           }
         ]

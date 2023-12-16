@@ -14,15 +14,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_galena_ore",
+            "block": "gtceu:granite_galena_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_granite_silver_ore",
+            "block": "gtceu:granite_silver_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_granite_lead_ore",
+            "block": "gtceu:granite_lead_ore",
             "weight": 55
           }
         ]
@@ -33,15 +33,15 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gneiss_galena_ore",
+            "block": "gtceu:gneiss_galena_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_gneiss_silver_ore",
+            "block": "gtceu:gneiss_silver_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_gneiss_lead_ore",
+            "block": "gtceu:gneiss_lead_ore",
             "weight": 55
           }
         ]

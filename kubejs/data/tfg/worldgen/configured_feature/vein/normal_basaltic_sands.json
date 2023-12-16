@@ -15,19 +15,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_basaltic_mineral_sand_ore",
+            "block": "gtceu:granite_basaltic_mineral_sand_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_granite_granitic_mineral_sand_ore",
+            "block": "gtceu:granite_granitic_mineral_sand_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_fullers_earth_ore",
+            "block": "gtceu:granite_fullers_earth_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_gypsum_ore",
+            "block": "gtceu:granite_gypsum_ore",
             "weight": 15
           }
         ]
@@ -38,19 +38,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_basaltic_mineral_sand_ore",
+            "block": "gtceu:basalt_basaltic_mineral_sand_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_basalt_granitic_mineral_sand_ore",
+            "block": "gtceu:basalt_granitic_mineral_sand_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_basalt_fullers_earth_ore",
+            "block": "gtceu:basalt_fullers_earth_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_basalt_gypsum_ore",
+            "block": "gtceu:basalt_gypsum_ore",
             "weight": 15
           }
         ]

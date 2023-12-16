@@ -14,19 +14,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_rhyolite_bentonite_ore",
+            "block": "gtceu:rhyolite_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_rhyolite_magnetite_ore",
+            "block": "gtceu:rhyolite_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_rhyolite_olivine_ore",
+            "block": "gtceu:rhyolite_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_rhyolite_glauconite_sand_ore",
+            "block": "gtceu:rhyolite_glauconite_sand_ore",
             "weight": 15
           }
         ]
@@ -37,19 +37,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_basalt_bentonite_ore",
+            "block": "gtceu:basalt_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_basalt_magnetite_ore",
+            "block": "gtceu:basalt_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_basalt_olivine_ore",
+            "block": "gtceu:basalt_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_basalt_glauconite_sand_ore",
+            "block": "gtceu:basalt_glauconite_sand_ore",
             "weight": 15
           }
         ]
@@ -60,19 +60,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_andesite_bentonite_ore",
+            "block": "gtceu:andesite_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_andesite_magnetite_ore",
+            "block": "gtceu:andesite_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_andesite_olivine_ore",
+            "block": "gtceu:andesite_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_andesite_glauconite_sand_ore",
+            "block": "gtceu:andesite_glauconite_sand_ore",
             "weight": 15
           }
         ]
@@ -83,19 +83,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dacite_bentonite_ore",
+            "block": "gtceu:dacite_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_dacite_magnetite_ore",
+            "block": "gtceu:dacite_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_dacite_olivine_ore",
+            "block": "gtceu:dacite_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_dacite_glauconite_sand_ore",
+            "block": "gtceu:dacite_glauconite_sand_ore",
             "weight": 15
           }
         ]
@@ -106,19 +106,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_granite_bentonite_ore",
+            "block": "gtceu:granite_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_granite_magnetite_ore",
+            "block": "gtceu:granite_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_olivine_ore",
+            "block": "gtceu:granite_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_granite_glauconite_sand_ore",
+            "block": "gtceu:granite_glauconite_sand_ore",
             "weight": 15
           }
         ]
@@ -129,19 +129,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_diorite_bentonite_ore",
+            "block": "gtceu:diorite_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_diorite_magnetite_ore",
+            "block": "gtceu:diorite_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_diorite_olivine_ore",
+            "block": "gtceu:diorite_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_diorite_glauconite_sand_ore",
+            "block": "gtceu:diorite_glauconite_sand_ore",
             "weight": 15
           }
         ]
@@ -152,19 +152,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_gabbro_bentonite_ore",
+            "block": "gtceu:gabbro_bentonite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:tfc_gabbro_magnetite_ore",
+            "block": "gtceu:gabbro_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_olivine_ore",
+            "block": "gtceu:gabbro_olivine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:tfc_gabbro_glauconite_sand_ore",
+            "block": "gtceu:gabbro_glauconite_sand_ore",
             "weight": 15
           }
         ]

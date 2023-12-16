@@ -15,19 +15,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_shale_rock_salt_ore",
+            "block": "gtceu:shale_rock_salt_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_shale_salt_ore",
+            "block": "gtceu:shale_salt_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_shale_lepidolite_ore",
+            "block": "gtceu:shale_lepidolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_shale_borax_ore",
+            "block": "gtceu:shale_borax_ore",
             "weight": 15
           }
         ]
@@ -38,19 +38,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_claystone_rock_salt_ore",
+            "block": "gtceu:claystone_rock_salt_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_claystone_salt_ore",
+            "block": "gtceu:claystone_salt_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_claystone_lepidolite_ore",
+            "block": "gtceu:claystone_lepidolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_claystone_borax_ore",
+            "block": "gtceu:claystone_borax_ore",
             "weight": 15
           }
         ]
@@ -61,19 +61,19 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_limestone_rock_salt_ore",
+            "block": "gtceu:limestone_rock_salt_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:tfc_limestone_salt_ore",
+            "block": "gtceu:limestone_salt_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:tfc_limestone_lepidolite_ore",
+            "block": "gtceu:limestone_lepidolite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:tfc_limestone_borax_ore",
+            "block": "gtceu:limestone_borax_ore",
             "weight": 15
           }
         ]

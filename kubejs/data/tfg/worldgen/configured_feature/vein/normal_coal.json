@@ -14,7 +14,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_shale_coal_ore",
+            "block": "gtceu:shale_coal_ore",
             "weight": 100
           }
         ]
@@ -25,7 +25,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_claystone_coal_ore",
+            "block": "gtceu:claystone_coal_ore",
             "weight": 100
           }
         ]
@@ -36,7 +36,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_limestone_coal_ore",
+            "block": "gtceu:limestone_coal_ore",
             "weight": 100
           }
         ]
@@ -47,7 +47,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_conglomerate_coal_ore",
+            "block": "gtceu:conglomerate_coal_ore",
             "weight": 100
           }
         ]
@@ -58,7 +58,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_dolomite_coal_ore",
+            "block": "gtceu:dolomite_coal_ore",
             "weight": 100
           }
         ]
@@ -69,7 +69,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_chert_coal_ore",
+            "block": "gtceu:chert_coal_ore",
             "weight": 100
           }
         ]
@@ -80,7 +80,7 @@
         ],
         "with": [
           {
-            "block": "gtceu:tfc_chalk_coal_ore",
+            "block": "gtceu:chalk_coal_ore",
             "weight": 100
           }
         ]
