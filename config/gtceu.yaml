@@ -80,7 +80,7 @@ worldgen:
 
   # Should all Stone Types drop unique Ore Item Blocks?
   # Default: false (meaning only Stone, Netherrack, and Endstone)
-  allUniqueStoneTypes: false
+  allUniqueStoneTypes: true
 
   # Should Sand-like ores fall?
   # This includes gravel, sand, and red sand ores.
