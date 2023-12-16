@@ -28,4 +28,3 @@ REIEvents.hide('fluid', event => {
     hideTFCFluids(event)
     hideFirmaLifeFluids(event)
 })
-

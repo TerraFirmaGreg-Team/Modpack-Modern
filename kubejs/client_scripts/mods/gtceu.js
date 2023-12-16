@@ -1,13 +1,6 @@
 // priority: 0
 
 const hideGTCEUStuff = (event) => {
-    // Hide unused GT ores
-    GTRegistries.MATERIALS.forEach(material => {
-        global.VANILLA_STONE_TYPES.forEach(stoneTypeName => {
-            event.hide(`#forge:ores/${stoneTypeName}/${material}`)
-        })
-    })
-
     global.GTCEU_DISABLED_ITEMS.forEach(item => {
         event.hide(item)
     })

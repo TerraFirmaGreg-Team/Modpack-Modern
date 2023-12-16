@@ -109,11 +109,11 @@ const registerTFCItemTags = (event) => {
 }
 
 const registerTFCBlockTags = (event) => {
-    event.add('tfc:can_collapse', '#forge:tfc_stonetype_ore')
-    event.add('tfc:can_start_collapse', '#forge:tfc_stonetype_ore')
-    event.add('tfc:can_trigger_collapse', '#forge:tfc_stonetype_ore')
-    event.add('tfc:monster_spawns_on', '#forge:tfc_stonetype_ore')
-    event.add('tfc:prospectable', '#forge:tfc_stonetype_ore')
+    event.add('tfc:can_collapse', '#forge:ores')
+    event.add('tfc:can_start_collapse', '#forge:ores')
+    event.add('tfc:can_trigger_collapse', '#forge:ores')
+    event.add('tfc:monster_spawns_on', '#forge:ores')
+    event.add('tfc:prospectable', '#forge:ores')
 
     event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
     event.add('tfc:glass_pouring_table', 'gtceu:brass_block')

@@ -18,11 +18,6 @@ const registerTFCRecipes = (event) => {
                 event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
                     .id(`tfc:casting/${metal}_fire_ingot`)
                 
-                // Декрафт слитка в жидкость
-                event.recipes.tfc.heating(`gtceu:${metal}_ingot`, metalSpecs.melt_temp)
-                    .resultFluid(Fluid.of(metalSpecs.fluid, 144))
-                    .id(`tfc:heating/metal/${metal}_ingot`)
-                
             }
             // Металлы не дублирующие гт
             else
@@ -34,12 +29,12 @@ const registerTFCRecipes = (event) => {
                 // Отливка слитка в огнеупорной форме
                 event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
                     .id(`tfc:casting/${metal}_fire_ingot`)
-
-                // Декрафт слитка в жидкость
-                event.recipes.tfc.heating(`tfc:metal/ingot/${metal}`, metalSpecs.melt_temp)
-                    .resultFluid(Fluid.of(metalSpecs.fluid, 144))
-                    .id(`tfc:heating/metal/${metal}_ingot`)
             }
+
+            // Декрафт слитка в жидкость
+            event.recipes.tfc.heating(`#forge:ingots/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .id(`tfc:heating/metal/${metal}_ingot`)
         }
 
         // Двойные слитки

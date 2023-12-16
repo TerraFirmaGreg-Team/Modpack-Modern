@@ -67,7 +67,7 @@ recipes:
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
-  removeVanillaBlockRecipes: false
+  removeVanillaBlockRecipes: true
 
   # Whether to remove Vanilla TNT Recipe from the Crafting Table.
   # Default: true
@@ -153,7 +153,7 @@ machines:
 
   # Whether Steam Multiblocks should use Steel instead of Bronze.
   # Default: false
-  steelSteamMultiblocks: false
+  steelSteamMultiblocks: true
 
   # Whether to enable the cleanroom, required for various recipes.
   # Default: true
@@ -177,7 +177,7 @@ machines:
 
   # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
   # Default: false
-  doBedrockOres: false
+  doBedrockOres: true
 
   # What Kind of material should the bedrock ore miner output?
   # Default: "raw"

@@ -82,8 +82,6 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/red_steel",
     "tfc:metal/ingot/blue_steel",
     "tfc:metal/ingot/brass",
-    "tfc:metal/ingot/copper",
-    "tfc:metal/ingot/gold",
     "tfc:metal/ingot/nickel",
     "tfc:metal/ingot/silver",
     "tfc:metal/ingot/tin",
