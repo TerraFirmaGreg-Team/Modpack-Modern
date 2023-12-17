@@ -1,6 +1,791 @@
 // priority: 0
 
 const registerMinecraftRecipes = (event) => {
+    //#region Выход: Камень
+
+    event.remove({ id: 'minecraft:stone' })
+    event.remove({ id: 'ae2:entropy/heat/cobblestone_stone' })
+    event.remove({ id: 'gtceu:compressor/stone_from_dust' })
+    event.remove({ id: 'gtceu:rock_breaker/stone' })
+    
+    //#endregion
+
+    //#region Выход: Каменная ступень
+
+    event.remove({ id: 'minecraft:stone_stairs' })
+    event.remove({ id: 'minecraft:stone_stairs_from_stone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Каменная плита
+
+    event.remove({ id: 'minecraft:stone_slab' })
+    event.remove({ id: 'minecraft:stone_slab_from_stone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Каменная нажимная плила
+
+    event.remove({ id: 'minecraft:stone_pressure_plate' })
+
+    //#endregion
+
+    //#region Выход: Каменная кнопка
+
+    event.remove({ id: 'minecraft:stone_button' })
+
+    //#endregion
+
+    //#region Выход: Гладкий камень
+
+    event.remove({ id: 'minecraft:smooth_stone' })
+
+    //#endregion
+
+    //#region Выход: Гладкий камень плита
+
+    event.remove({ id: 'morered:smooth_stone_slab_from_stone_plate' })
+    event.remove({ id: 'minecraft:smooth_stone_slab' })
+    event.remove({ id: 'minecraft:smooth_stone_slab_from_smooth_stone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Булыжник
+
+    event.remove({ id: 'ae2:entropy/cool/stone_cobblestone' })
+    event.remove({ id: 'gtceu:forge_hammer/stone_to_cobblestone' })
+    event.remove({ id: 'gtceu:rock_breaker/cobblestone' })
+
+    //#endregion
+
+    //#region Выход: Булыжник ступень
+
+    event.remove({ id: 'minecraft:cobblestone_stairs' })
+    event.remove({ id: 'minecraft:cobblestone_stairs_from_cobblestone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Булыжник плита
+
+    event.remove({ id: 'minecraft:cobblestone_slab' })
+    event.remove({ id: 'minecraft:cobblestone_slab_from_cobblestone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Булыжник стена
+
+    event.remove({ id: 'minecraft:cobblestone_wall' })
+    event.remove({ id: 'minecraft:cobblestone_wall_from_cobblestone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Каменные кирпичи
+
+    event.remove({ id: 'minecraft:stone_bricks' })
+    event.remove({ id: 'minecraft:stone_bricks_from_stone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Каменные кирпичи ступень
+
+    event.remove({ id: 'minecraft:stone_brick_stairs' })
+    event.remove({ id: 'minecraft:stone_brick_stairs_from_stone_stonecutting' })
+    event.remove({ id: 'minecraft:stone_brick_stairs_from_stone_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Каменные кирпичи плита
+
+    event.remove({ id: 'minecraft:stone_brick_slab' })
+    event.remove({ id: 'minecraft:stone_brick_slab_from_stone_stonecutting' })
+    event.remove({ id: 'minecraft:stone_brick_slab_from_stone_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Каменные кирпичи стена
+
+    event.remove({ id: 'minecraft:stone_brick_wall' })
+    event.remove({ id: 'minecraft:stone_brick_wall_from_stone_stonecutting' })
+    event.remove({ id: 'minecraft:stone_brick_wall_from_stone_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Поломанные каменные кирпичи
+
+    event.remove({ id: 'minecraft:cracked_stone_bricks' })
+    event.remove({ id: 'ae2:entropy/cool/stone_bricks_cracked_stone_bricks' })
+    event.remove({ id: 'gtceu:forge_hammer/cracked_stone_bricks' })
+
+    //#endregion
+
+    //#region Выход: Резные каменные кирпичи
+
+    event.remove({ id: 'minecraft:chiseled_stone_bricks' })
+    event.remove({ id: 'minecraft:chiseled_stone_bricks_stone_from_stonecutting' })
+    event.remove({ id: 'minecraft:chiseled_stone_bricks_from_stone_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Замшелые каменные кирпичи
+
+    event.remove({ id: 'minecraft:mossy_stone_bricks_from_vine' })
+    event.remove({ id: 'minecraft:mossy_stone_bricks_from_moss_block' })
+    event.remove({ id: 'gtceu:assembler/mossy_stone_bricks' })
+
+    //#endregion
+
+    //#region Выход: Замшелые каменные кирпичи ступень
+
+    event.remove({ id: 'minecraft:mossy_stone_brick_stairs' })
+    event.remove({ id: 'minecraft:mossy_stone_brick_stairs_from_mossy_stone_brick_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Замшелые каменные кирпичи плита
+
+    event.remove({ id: 'minecraft:mossy_stone_brick_slab' })
+    event.remove({ id: 'minecraft:mossy_stone_brick_slab_from_mossy_stone_brick_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Замшелые каменные кирпичи стена
+
+    event.remove({ id: 'minecraft:mossy_stone_brick_wall' })
+    event.remove({ id: 'minecraft:mossy_stone_brick_wall_from_mossy_stone_brick_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Замшелый булыжник
+
+    event.remove({ id: 'minecraft:mossy_cobblestone_from_vine' })
+    event.remove({ id: 'minecraft:mossy_cobblestone_from_moss_block' })
+    event.remove({ id: 'gtceu:assembler/mossy_cobblestone' })
+
+    //#endregion
+
+    //#region Выход: Замшелый булыжник ступень
+
+    event.remove({ id: 'minecraft:mossy_cobblestone_stairs' })
+    event.remove({ id: 'minecraft:mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Замшелый булыжник плита
+
+    event.remove({ id: 'minecraft:mossy_cobblestone_slab' })
+    event.remove({ id: 'minecraft:mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Замшелый булыжник стена
+
+    event.remove({ id: 'minecraft:mossy_cobblestone_wall' })
+    event.remove({ id: 'minecraft:mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой гранит
+
+    event.remove({ id: 'minecraft:granite' })
+    event.remove({ id: 'gtceu:rock_breaker/granite' })
+
+    //#endregion
+
+    //#region Выход: Сырой гранит ступень
+
+    event.remove({ id: 'minecraft:granite_stairs' })
+    event.remove({ id: 'minecraft:granite_stairs_from_granite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой гранит плита
+
+    event.remove({ id: 'minecraft:granite_slab' })
+    event.remove({ id: 'minecraft:granite_slab_from_granite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой гранит стена
+
+    event.remove({ id: 'minecraft:granite_wall' })
+    event.remove({ id: 'minecraft:granite_wall_from_granite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный гранит
+
+    event.remove({ id: 'minecraft:polished_granite_from_granite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой гранит ступень
+
+    event.remove({ id: 'minecraft:polished_granite_stairs' })
+    event.remove({ id: 'minecraft:polished_granite_stairs_from_granite_stonecutting' })
+    event.remove({ id: 'minecraft:polished_granite_stairs_from_polished_granite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой гранит плита
+
+    event.remove({ id: 'minecraft:polished_granite_slab' })
+    event.remove({ id: 'minecraft:polished_granite_slab_from_granite_stonecutting' })
+    event.remove({ id: 'minecraft:polished_granite_slab_from_polished_granite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой диорит
+
+    event.remove({ id: 'minecraft:diorite' })
+    event.remove({ id: 'gtceu:rock_breaker/diorite' })
+
+    //#endregion
+
+    //#region Выход: Сырой диорит ступень
+
+    event.remove({ id: 'minecraft:diorite_stairs' })
+    event.remove({ id: 'minecraft:diorite_stairs_from_diorite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой диорит плита
+
+    event.remove({ id: 'minecraft:diorite_slab' })
+    event.remove({ id: 'minecraft:diorite_slab_from_diorite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой диорит стена
+
+    event.remove({ id: 'minecraft:diorite_wall' })
+    event.remove({ id: 'minecraft:diorite_wall_from_diorite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный диорит
+
+    event.remove({ id: 'minecraft:polished_diorite_from_diorite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой диорит ступень
+
+    event.remove({ id: 'minecraft:polished_diorite_stairs' })
+    event.remove({ id: 'minecraft:polished_diorite_stairs_from_diorite_stonecutting' })
+    event.remove({ id: 'minecraft:polished_diorite_stairs_from_polished_diorite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой диорит плита
+
+    event.remove({ id: 'minecraft:polished_diorite_slab' })
+    event.remove({ id: 'minecraft:polished_diorite_slab_from_diorite_stonecutting' })
+    event.remove({ id: 'minecraft:polished_diorite_slab_from_polished_diorite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой андезит
+
+    event.remove({ id: 'minecraft:andesite' })
+    event.remove({ id: 'gtceu:rock_breaker/andesite' })
+
+    //#endregion
+
+    //#region Выход: Сырой андезит ступень
+
+    event.remove({ id: 'minecraft:andesite_stairs' })
+    event.remove({ id: 'minecraft:andesite_stairs_from_andesite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой андезит плита
+
+    event.remove({ id: 'minecraft:andesite_slab' })
+    event.remove({ id: 'minecraft:andesite_slab_from_andesite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой андезит стена
+
+    event.remove({ id: 'minecraft:andesite_wall' })
+    event.remove({ id: 'minecraft:andesite_wall_from_andesite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный андезит
+
+    event.remove({ id: 'minecraft:polished_andesite_from_andesite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой андезит ступень
+
+    event.remove({ id: 'minecraft:polished_andesite_stairs' })
+    event.remove({ id: 'minecraft:polished_andesite_stairs_from_andesite_stonecutting' })
+    event.remove({ id: 'minecraft:polished_andesite_stairs_from_polished_andesite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой андезит плита
+
+    event.remove({ id: 'minecraft:polished_andesite_slab' })
+    event.remove({ id: 'minecraft:polished_andesite_slab_from_andesite_stonecutting' })
+    event.remove({ id: 'minecraft:polished_andesite_slab_from_polished_andesite_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой призмарин
+
+    event.remove({ id: 'gtceu:packer/prismarine' })
+
+    //#endregion
+
+    //#region Выход: Сырой призмарин ступень
+
+    event.remove({ id: 'minecraft:prismarine_stairs' })
+    event.remove({ id: 'minecraft:prismarine_stairs_from_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой призмарин плита
+
+    event.remove({ id: 'minecraft:prismarine_slab' })
+    event.remove({ id: 'minecraft:prismarine_slab_from_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сырой призмарин стена
+
+    event.remove({ id: 'minecraft:prismarine_wall' })
+    event.remove({ id: 'minecraft:prismarine_wall_from_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Призмариновый кирпич
+
+    event.remove({ id: 'gtceu:packer/prismarine_bricks' })
+
+    //#endregion
+
+    //#region Выход: Призмариновый кирпич ступень
+
+    event.remove({ id: 'minecraft:prismarine_brick_stairs' })
+    event.remove({ id: 'minecraft:prismarine_brick_stairs_from_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Призмариновый кирпич плита
+
+    event.remove({ id: 'minecraft:prismarine_brick_slab' })
+    event.remove({ id: 'minecraft:prismarine_brick_slab_from_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Темный призмарин
+
+    event.remove({ id: 'gtceu:chemical_bath/dark_prismarine' })
+
+    //#endregion
+
+    //#region Выход: Темный призмарин ступень
+
+    event.remove({ id: 'minecraft:dark_prismarine_stairs' })
+    event.remove({ id: 'minecraft:dark_prismarine_stairs_from_dark_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Темный призмарин плита
+
+    event.remove({ id: 'minecraft:dark_prismarine_slab' })
+    event.remove({ id: 'minecraft:dark_prismarine_slab_from_dark_prismarine_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Эндер Кирпич
+
+    event.remove({ id: 'minecraft:end_stone_bricks' })
+    event.remove({ id: 'minecraft:end_stone_bricks_from_end_stone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Эндер Кирпич ступень
+
+    event.remove({ id: 'minecraft:end_stone_brick_stairs' })
+    event.remove({ id: 'minecraft:end_stone_brick_stairs_from_end_stone_stonecutting' })
+    event.remove({ id: 'minecraft:end_stone_brick_stairs_from_end_stone_brick_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Эндер Кирпич плита
+
+    event.remove({ id: 'minecraft:end_stone_brick_slab' })
+    event.remove({ id: 'minecraft:end_stone_brick_slab_from_end_stone_stonecutting' })
+    event.remove({ id: 'minecraft:end_stone_brick_slab_from_end_stone_brick_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Эндер Кирпич стена
+
+    event.remove({ id: 'minecraft:end_stone_brick_wall' })
+    event.remove({ id: 'minecraft:end_stone_brick_wall_from_end_stone_stonecutting' })
+    event.remove({ id: 'minecraft:end_stone_brick_wall_from_end_stone_brick_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сланец
+
+    event.remove({ id: 'minecraft:deepslate' })
+
+    //#endregion
+
+    //#region Выход: Сланцевый булыжник
+
+    event.remove({ id: 'gtceu:shaped/cobbled_deepslate_hammer' })
+    event.remove({ id: 'gtceu:forge_hammer/deepslate_to_cobbled_deepslate' })
+
+    //#endregion
+
+    //#region Выход: Сланцевый булыжник ступень
+
+    event.remove({ id: 'minecraft:cobbled_deepslate_stairs' })
+    event.remove({ id: 'minecraft:cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сланцевый булыжник плита
+
+    event.remove({ id: 'minecraft:cobbled_deepslate_slab' })
+    event.remove({ id: 'minecraft:cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сланцевый булыжник стена
+
+    event.remove({ id: 'minecraft:cobbled_deepslate_wall' })
+    event.remove({ id: 'minecraft:cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Ячеистый сланец
+
+    event.remove({ id: 'minecraft:deepslate_tiles' })
+    event.remove({ id: 'minecraft:deepslate_tiles_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tiles_from_deepslate_bricks_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tiles_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Ячеистый сланец ступень
+
+    event.remove({ id: 'minecraft:deepslate_tile_stairs' })
+    event.remove({ id: 'minecraft:deepslate_tile_stairs_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_stairs_from_deepslate_tiles_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_stairs_from_deepslate_bricks_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_stairs_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Ячеистый сланец плита
+
+    event.remove({ id: 'minecraft:deepslate_tile_slab' })
+    event.remove({ id: 'minecraft:deepslate_tile_slab_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_slab_from_deepslate_tiles_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_slab_from_deepslate_bricks_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_slab_from_cobbled_deepslate_stonecutting' })
+
+
+    //#endregion
+
+    //#region Выход: Ячеистый сланец стена
+
+    event.remove({ id: 'minecraft:deepslate_tile_wall' })
+    event.remove({ id: 'minecraft:deepslate_tile_wall_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_wall_from_deepslate_tiles_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_wall_from_deepslate_bricks_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_tile_wall_from_cobbled_deepslate_stonecutting' })
+
+
+    //#endregion
+
+    //#region Выход: Сланцевые кирпичи
+
+    event.remove({ id: 'minecraft:deepslate_bricks' })
+    event.remove({ id: 'minecraft:deepslate_bricks_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_bricks_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сланцевые кирпичи ступень
+
+    event.remove({ id: 'minecraft:deepslate_brick_stairs' })
+    event.remove({ id: 'minecraft:deepslate_brick_stairs_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_brick_stairs_from_cobbled_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_brick_stairs_from_deepslate_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сланцевые кирпичи плита
+
+    event.remove({ id: 'minecraft:deepslate_brick_slab' })
+    event.remove({ id: 'minecraft:deepslate_brick_slab_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_brick_slab_from_cobbled_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_brick_slab_from_deepslate_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Сланцевые кирпичи стена
+
+    event.remove({ id: 'minecraft:deepslate_brick_wall' })
+    event.remove({ id: 'minecraft:deepslate_brick_wall_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_brick_wall_from_cobbled_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:deepslate_brick_wall_from_deepslate_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный сланец
+
+    event.remove({ id: 'minecraft:polished_deepslate' })
+    event.remove({ id: 'minecraft:polished_deepslate_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный сланец ступень
+
+    event.remove({ id: 'minecraft:polished_deepslate_stairs' })
+    event.remove({ id: 'minecraft:polished_deepslate_stairs_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:polished_deepslate_stairs_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный сланец плита
+
+    event.remove({ id: 'minecraft:polished_deepslate_slab' })
+    event.remove({ id: 'minecraft:polished_deepslate_slab_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:polished_deepslate_slab_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Полированный сланец стена
+
+    event.remove({ id: 'minecraft:polished_deepslate_wall' })
+    event.remove({ id: 'minecraft:polished_deepslate_wall_from_polished_deepslate_stonecutting' })
+    event.remove({ id: 'minecraft:polished_deepslate_wall_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Потрескавшийся ячеистый сланец
+
+    event.remove({ id: 'minecraft:cracked_deepslate_tiles' })
+
+    //#endregion
+
+    //#region Выход: Резной сланец
+
+    event.remove({ id: 'minecraft:chiseled_deepslate' })
+    event.remove({ id: 'minecraft:chiseled_deepslate_from_cobbled_deepslate_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Потрескавшиеся сланцевые кирпичи
+
+    event.remove({ id: 'minecraft:cracked_deepslate_bricks' })
+
+    //#endregion
+
+    //#region Выход: Уголь
+
+    event.remove({ id: 'minecraft:coal_from_smelting_coal_ore' })
+    event.remove({ id: 'minecraft:coal_from_smelting_deepslate_coal_ore' })
+    event.remove({ id: 'minecraft:coal_from_blasting_coal_ore' })
+    event.remove({ id: 'minecraft:coal_from_blasting_deepslate_coal_ore' })
+    event.remove({ id: 'ad_astra:recipes/coal_from_smelting_venus_coal_ore' })
+    event.remove({ id: 'ad_astra:recipes/coal_from_blasting_venus_coal_ore' })
+    event.remove({ id: 'ad_astra:recipes/coal_from_smelting_glacio_coal_ore' })
+    event.remove({ id: 'ad_astra:recipes/coal_from_blasting_glacio_coal_ore' })
+
+    //#endregion
+
+    //#region Выход: Медь
+
+    event.remove({ id: 'minecraft:copper_ingot_from_smelting_copper_ore' })
+    event.remove({ id: 'minecraft:copper_ingot_from_smelting_deepslate_copper_ore' })
+    event.remove({ id: 'ad_astra:recipes/copper_ingot_from_smelting_glacio_copper_ore' })
+    event.remove({ id: 'minecraft:copper_ingot_from_blasting_copper_ore' })
+    event.remove({ id: 'minecraft:copper_ingot_from_blasting_deepslate_copper_ore' })
+    event.remove({ id: 'ad_astra:recipes/copper_ingot_from_blasting_glacio_copper_ore' })
+
+    //#endregion
+
+    //#region Выход: Железо
+
+    event.remove({ id: 'minecraft:iron_ingot_from_smelting_iron_ore' })
+    event.remove({ id: 'minecraft:iron_ingot_from_smelting_deepslate_iron_ore' })
+    event.remove({ id: 'minecraft:iron_ingot_from_blasting_iron_ore' })
+    event.remove({ id: 'minecraft:iron_ingot_from_blasting_deepslate_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_smelting_moon_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_blasting_moon_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_smelting_mercury_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_blasting_mercury_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_smelting_mars_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_blasting_mars_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_smelting_glacio_iron_ore' })
+    event.remove({ id: 'ad_astra:recipes/iron_ingot_from_blasting_glacio_iron_ore' })
+
+    //#endregion
+
+    //#region Выход: Лазурит
+
+    event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_lapis_ore' })
+    event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
+    event.remove({ id: 'ad_astra:recipes/lapis_lazuli_from_smelting_glacio_lapis_ore' })
+    event.remove({ id: 'minecraft:lapis_lazuli_from_blasting_lapis_ore' })
+    event.remove({ id: 'minecraft:lapis_lazuli_from_blasting_deepslate_lapis_ore' })
+    event.remove({ id: 'ad_astra:recipes/lapis_lazuli_from_blasting_glacio_lapis_ore' })
+
+    //#endregion
+
+    //#region Выход: Золото
+
+    event.remove({ id: 'minecraft:gold_ingot_from_smelting_gold_ore' })
+    event.remove({ id: 'minecraft:gold_ingot_from_smelting_deepslate_gold_ore' })
+    event.remove({ id: 'minecraft:gold_ingot_from_smelting_nether_gold_ore' })
+    event.remove({ id: 'ad_astra:recipes/gold_ingot_from_smelting_venus_gold_ore' })
+    event.remove({ id: 'minecraft:gold_ingot_from_blasting_gold_ore' })
+    event.remove({ id: 'minecraft:gold_ingot_from_blasting_deepslate_gold_ore' })
+    event.remove({ id: 'minecraft:gold_ingot_from_blasting_nether_gold_ore' })
+    event.remove({ id: 'ad_astra:recipes/gold_ingot_from_blasting_venus_gold_ore' })
+
+    //#endregion
+
+    //#region Выход: Золотой самородок
+
+    event.remove({ id: 'minecraft:gold_nugget_from_smelting' })
+    event.remove({ id: 'minecraft:gold_nugget_from_blasting' })
+
+    //#endregion
+
+    //#region Выход: Редстоун
+
+    event.remove({ id: 'minecraft:redstone_from_smelting_redstone_ore' })
+    event.remove({ id: 'minecraft:redstone_from_smelting_deepslate_redstone_ore' })
+    event.remove({ id: 'minecraft:redstone_from_blasting_redstone_ore' })
+    event.remove({ id: 'minecraft:redstone_from_blasting_deepslate_redstone_ore' })
+
+    //#endregion
+
+    //#region Выход: Изумруды
+
+    event.remove({ id: 'minecraft:emerald_from_smelting_emerald_ore' })
+    event.remove({ id: 'minecraft:emerald_from_smelting_deepslate_emerald_ore' })
+    event.remove({ id: 'minecraft:emerald_from_blasting_emerald_ore' })
+    event.remove({ id: 'minecraft:emerald_from_blasting_deepslate_emerald_ore' })
+
+    //#endregion
+
+    //#region Выход: Алмазы
+
+    event.remove({ id: 'minecraft:diamond_from_smelting_diamond_ore' })
+    event.remove({ id: 'minecraft:diamond_from_smelting_deepslate_diamond_ore' })
+    event.remove({ id: 'ad_astra:recipes/diamond_from_smelting_venus_diamond_ore' })
+    event.remove({ id: 'ad_astra:recipes/diamond_from_smelting_mars_diamond_ore' })
+    event.remove({ id: 'minecraft:diamond_from_blasting_diamond_ore' })
+    event.remove({ id: 'minecraft:diamond_from_blasting_deepslate_diamond_ore' })
+    event.remove({ id: 'ad_astra:recipes/diamond_from_blasting_venus_diamond_ore' })
+    event.remove({ id: 'ad_astra:recipes/diamond_from_blasting_mars_diamond_ore' })
+
+    //#endregion
+
+    //#region Выход: Кварц
+
+    event.remove({ id: 'minecraft:quartz' })
+    event.remove({ id: 'minecraft:quartz_from_blasting' })
+
+    //#endregion
+
+    //#region Выход: Незеритовый лом
+
+    event.remove({ id: 'minecraft:netherite_scrap' })
+    event.remove({ id: 'minecraft:netherite_scrap_from_blasting' })
+
+    //#endregion
+
+    //#region Выход: Незеритовый слиток
+
+    event.remove({ id: 'minecraft:netherite_ingot' })
+
+    //#endregion
+
+
+
+
+
+
+
+
+
+
+
+    //#region Выход:
+
+    // event.remove({ id: '' })
+
+    //#endregion
+
+
+
+    //#region Рецепты где на выходе булыга
+
+    // Камень -> Булыга (Верстак)
+    event.remove({ id: 'gtceu:shaped/cobblestone_hammer' })
+
+    //#endregion
+
+    /*
+    // Компаратор
+    event.remove({id: 'minecraft:comparator'})
+    event.remove({id: 'gtceu:shaped/comparator_quartzite'})
+    event.remove({id: 'gtceu:shaped/certus'})
+    event.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
+
+    // Компаратор
+    event.shaped('minecraft:comparator', [
+        ' A ',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:gems/certus_quartz',
+        C: '#tfc:rock/smooth'
+    }).id('tfg:shaped/comparator_certus');
+
+    event.shaped('minecraft:comparator', [
+        ' A ',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:gems/quartzite',
+        C: '#tfc:rock/smooth'
+    }).id('tfg:shaped/comparator_quartzite');
+
+    event.shaped('minecraft:comparator', [
+        ' A ',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:gems/nether_quartz',
+        C: '#tfc:rock/smooth'
+    }).id('tfg:shaped/comparator_nether_quartz');*/
+    
+    
+
+    
+
+    
+
+
+    /*
     // Удаление рецептов палок
     event.remove({id: 'minecraft:stick'})
 
@@ -310,36 +1095,7 @@ const registerMinecraftRecipes = (event) => {
         .duration(20)
         .EUt(30)
 
-    // Компаратор
-    event.shaped('minecraft:comparator', [
-        ' A ',
-        'ABA',
-        'CCC'
-    ], {
-        A: 'minecraft:redstone_torch',
-        B: '#forge:gems/certus_quartz',
-        C: '#tfc:rock/smooth'
-    }).id('tfg:recipes/comparator_certus');
 
-    event.shaped('minecraft:comparator', [
-        ' A ',
-        'ABA',
-        'CCC'
-    ], {
-        A: 'minecraft:redstone_torch',
-        B: '#forge:gems/quartzite',
-        C: '#tfc:rock/smooth'
-    }).id('tfg:recipes/comparator_quartzite');
-
-    event.shaped('minecraft:comparator', [
-        ' A ',
-        'ABA',
-        'CCC'
-    ], {
-        A: 'minecraft:redstone_torch',
-        B: '#forge:gems/nether_quartz',
-        C: '#tfc:rock/smooth'
-    }).id('tfg:recipes/comparator_nether_quartz');
 
     // TripWire Hook
     event.shapeless('minecraft:tripwire_hook', [
@@ -724,4 +1480,5 @@ const registerMinecraftRecipes = (event) => {
         .EUt(4)
 
     //#endregion
+    */
 }

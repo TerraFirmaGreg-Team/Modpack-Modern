@@ -536,8 +536,8 @@
 				item: "tfc:fire_clay"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 10.5d
+			x: 11.5d
+			y: -5.5d
 		}
 		{
 			id: "6E07D20BECE4AB91"
@@ -555,8 +555,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 8.5d
+			x: 15.0d
+			y: -7.5d
 		}
 		{
 			id: "57A961BF9EE3F0A4"
@@ -574,8 +574,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.5d
+			x: 15.0d
+			y: -6.5d
 		}
 		{
 			id: "7E75A4A0E4BCCAAF"
@@ -593,8 +593,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 10.5d
+			x: 15.0d
+			y: -5.5d
 		}
 		{
 			id: "1D40CA3A293CA0B8"
@@ -603,8 +603,8 @@
 				item: "tfc:powder/kaolinite"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 9.0d
+			x: 9.5d
+			y: -7.0d
 		}
 		{
 			id: "6114E7A26576FE4C"
@@ -613,8 +613,8 @@
 				item: "tfc:powder/graphite"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 10.0d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			id: "15E8DFB91603906B"
@@ -636,8 +636,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: 7.0d
+			x: 9.5d
+			y: -9.0d
 		}
 		{
 			id: "19D912E5A084622E"
@@ -655,8 +655,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.5d
+			x: 20.5d
+			y: -6.0d
 		}
 		{
 			id: "651A98D6E3FA22F5"
@@ -674,8 +674,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 2.5d
+			x: 19.5d
+			y: -6.0d
 		}
 		{
 			id: "1485A3993C9A92FD"
@@ -693,8 +693,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 2.5d
+			x: 18.5d
+			y: -6.0d
 		}
 		{
 			id: "5D657AAEFFE8AAD9"
@@ -712,8 +712,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 3.5d
+			x: 18.5d
+			y: -5.0d
 		}
 		{
 			id: "37D6DD778879CF23"
@@ -731,8 +731,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 4.5d
+			x: 18.5d
+			y: -4.0d
 		}
 		{
 			id: "369D8DA6CB6FE181"
@@ -750,8 +750,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 7.5d
+			x: 18.5d
+			y: -1.0d
 		}
 		{
 			id: "3B2261F507B53EDC"
@@ -769,8 +769,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 7.5d
+			x: 17.5d
+			y: -1.0d
 		}
 		{
 			id: "415A6313CFFB89C4"
@@ -788,8 +788,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 6.5d
+			x: 17.5d
+			y: -2.0d
 		}
 		{
 			id: "7939AE29BFFEE56C"
@@ -807,8 +807,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 5.5d
+			x: 17.5d
+			y: -3.0d
 		}
 		{
 			id: "5046918F09DC9AE8"
@@ -826,8 +826,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 4.5d
+			x: 17.5d
+			y: -4.0d
 		}
 		{
 			id: "1551AB73122D79BC"
@@ -845,8 +845,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 3.5d
+			x: 21.5d
+			y: -5.0d
 		}
 		{
 			id: "5FDE584FDC695E6B"
@@ -864,8 +864,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.5d
+			x: 21.5d
+			y: -4.0d
 		}
 		{
 			id: "6564CC704664FE81"
@@ -883,8 +883,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 5.5d
+			x: 21.5d
+			y: -3.0d
 		}
 		{
 			id: "4038DD635065F5BD"
@@ -902,8 +902,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 6.5d
+			x: 21.5d
+			y: -2.0d
 		}
 		{
 			id: "7AE1B17F8F954E69"
@@ -921,8 +921,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.5d
+			x: 20.5d
+			y: -2.0d
 		}
 		{
 			id: "5B6A93CACD743E03"
@@ -940,8 +940,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 5.5d
+			x: 20.5d
+			y: -3.0d
 		}
 		{
 			id: "37D08CB9359AAD0D"
@@ -959,8 +959,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 4.5d
+			x: 20.5d
+			y: -4.0d
 		}
 		{
 			id: "38058B5408BFD0C2"
@@ -978,8 +978,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.5d
+			x: 20.5d
+			y: -5.0d
 		}
 		{
 			id: "1D60D48F8B91D0E0"
@@ -997,8 +997,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 3.5d
+			x: 19.5d
+			y: -5.0d
 		}
 		{
 			id: "6D419B6EDE146616"
@@ -1016,8 +1016,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 4.5d
+			x: 19.5d
+			y: -4.0d
 		}
 		{
 			id: "4BB76F3E38A2AFFB"
@@ -1035,8 +1035,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 5.5d
+			x: 19.5d
+			y: -3.0d
 		}
 		{
 			id: "0546B04FC0F85C8C"
@@ -1054,8 +1054,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 6.5d
+			x: 19.5d
+			y: -2.0d
 		}
 		{
 			id: "0148B1F36C067BE0"
@@ -1073,8 +1073,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 6.5d
+			x: 18.5d
+			y: -2.0d
 		}
 		{
 			id: "4F4114979CB5CA03"
@@ -1092,8 +1092,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 5.5d
+			x: 18.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]

@@ -4,38 +4,38 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    registerTFCItemTags(event)
-    registerFirmaLifeItemTags(event)
-    registerSmallShipsItemTags(event)
-    registerMinecraftItemTags(event)
-    registerGTCEUItemTags(event)
-    registerAE2ItemTags(event)
-    // registerCreateItemTags(event)
-    // registerAdAstraItemTags(event)
-    registerMoreRedItemTags(event)
-    registerSophisticatedBackpacksItemTags(event)
+    // registerTFCItemTags(event)
+    // registerFirmaLifeItemTags(event)
+    // registerSmallShipsItemTags(event)
+    // registerMinecraftItemTags(event)
+    //registerGTCEUItemTags(event)
+    //registerAE2ItemTags(event)
+    //// registerCreateItemTags(event)
+    //// registerAdAstraItemTags(event)
+    //registerMoreRedItemTags(event)
+    //registerSophisticatedBackpacksItemTags(event)
 })
 
 /**
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
-    registerTFCBlockTags(event)
+    //registerTFCBlockTags(event)
 })
 
 /**
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
-    registerTFCFluidTags(event)
+    //registerTFCFluidTags(event)
 })
 
 /**
  * Событие регистрации генератора структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
-    registerTFCPlacedFeatures(event)
-    registerFirmaLifePlacedFeatures(event)
+    //registerTFCPlacedFeatures(event)
+    //registerFirmaLifePlacedFeatures(event)
 })
 
 /**
@@ -61,22 +61,22 @@ TFCEvents.data(event => {
  * Срабатывает после инициализации датапаков.
  */
 ServerEvents.recipes(event => {
-    registerTFCRecipes(event)
-    registerFirmaLifeRecipes(event)
-    registerWaterFlasksRecipes(event)
-    registerTreeTapRecipes(event)
-    registerSmallShipsRecipes(event)
+    //registerTFCRecipes(event)
+    //registerFirmaLifeRecipes(event)
+    //registerWaterFlasksRecipes(event)
+    //registerTreeTapRecipes(event)
+    //registerSmallShipsRecipes(event)
     registerMinecraftRecipes(event)
-    registerGTCEURecipes(event)
-    // registerCreateRecipes(event)
-    registerAE2Recipes(event)
-    registerAE2WTLibRecipes(event)
+    //registerGTCEURecipes(event)
+    registerCreateRecipes(event)
+    //registerAE2Recipes(event)
+    //registerAE2WTLibRecipes(event)
     // registerComputerCraftRecipes(event)
     // registerAdAstraRecipes(event)
-    registerMoreRedRecipes(event)
-    registerSophisticatedBackpacksRecipes(event)
-    registerToolBeltRecipes(event)
-    registerExposureRecipes(event)
+    //registerMoreRedRecipes(event)
+    //registerSophisticatedBackpacksRecipes(event)
+    //registerToolBeltRecipes(event)
+    //registerExposureRecipes(event)
 })
 
 
