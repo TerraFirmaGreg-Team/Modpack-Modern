@@ -158,10 +158,16 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:chiseled_red_sandstone', 
     'minecraft:red_sand',
 
-    // Другое
-    'minecraft:netherite_scrap',
-    
-    /*
+    // Саженцы
+    'minecraft:oak_sapling', 
+    'minecraft:spruce_sapling', 
+    'minecraft:birch_sapling', 
+    'minecraft:jungle_sapling', 
+    'minecraft:acacia_sapling', 
+    'minecraft:cherry_sapling', 
+    'minecraft:dark_oak_sapling', 
+    'minecraft:mangrove_propagule',
+
     // Дерево
     // Дуб
     "minecraft:oak_wood",
@@ -206,7 +212,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:dark_oak_sign",
     "minecraft:dark_oak_hanging_sign",
 
-    // Acacia
+    // Акация
     "minecraft:acacia_planks",
     "minecraft:acacia_sapling",
     "minecraft:acacia_log",
@@ -227,7 +233,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:acacia_sign",
     "minecraft:acacia_hanging_sign",
 
-    // Birch
+    // Береза
     "minecraft:birch_planks",
     "minecraft:birch_sapling",
     "minecraft:birch_log",
@@ -248,7 +254,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:birch_sign",
     "minecraft:birch_hanging_sign",
 
-    // Jungle
+    // Тропическое
     "minecraft:jungle_planks",
     "minecraft:jungle_sapling",
     "minecraft:jungle_log",
@@ -269,7 +275,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:jungle_sign",
     "minecraft:jungle_hanging_sign",
 
-    // Spruce
+    // Ель
     "minecraft:spruce_planks",
     "minecraft:spruce_sapling",
     "minecraft:spruce_log",
@@ -290,7 +296,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:spruce_sign",
     "minecraft:spruce_hanging_sign",
 
-    // Cherry
+    // Вишня
     "minecraft:cherry_planks",
     "minecraft:cherry_sapling",
     "minecraft:cherry_log",
@@ -311,7 +317,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:cherry_sign",
     "minecraft:cherry_hanging_sign",
 
-    // Mangrove
+    // Мангровое
     "minecraft:mangrove_planks",
     "minecraft:mangrove_propagule",
     "minecraft:mangrove_log",
@@ -334,6 +340,20 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:mangrove_sign",
     "minecraft:mangrove_hanging_sign",
 
+    // Другое
+    'minecraft:calcite', 
+    'minecraft:tuff', 
+    'minecraft:dripstone_block', 
+    'minecraft:grass_block', 
+    'minecraft:dirt', 
+    'minecraft:coarse_dirt', 
+    'minecraft:podzol', 
+    'minecraft:rooted_dirt', 
+    'minecraft:mud',
+    'minecraft:netherite_scrap',
+    'minecraft:suspicious_gravel',
+
+    /*
     // Other
     "minecraft:bookshelf",
     "minecraft:chiseled_bookshelf",

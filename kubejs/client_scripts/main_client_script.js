@@ -20,12 +20,12 @@ REIEvents.groupEntries(event => {
 })
 
 REIEvents.removeCategories(event => {
-    /*registerMinecraftCategories(event)
+    registerMinecraftCategories(event)
     registerGTCEUCategories(event)
-    registerMoreRedCategories(event)*/
+    registerMoreRedCategories(event)
 })
 
 REIEvents.hide('fluid', event => {
-    /*hideTFCFluids(event)
-    hideFirmaLifeFluids(event)*/
+    hideTFCFluids(event)
+    hideFirmaLifeFluids(event)
 })

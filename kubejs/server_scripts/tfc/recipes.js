@@ -1,6 +1,9 @@
 // priority: 0
 
 const registerTFCRecipes = (event) => {
+    
+    //#region Металлы
+    
     Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
         
         let metal = keyValuePair[0]
@@ -741,24 +744,6 @@ const registerTFCRecipes = (event) => {
 
     })
 
-    global.TFC_WOOD_TYPES.forEach(wood => {
-        event.remove({ id: `tfc:crafting/wood/${wood}_axle` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
-    })
-
-    event.remove({ id: `tfc:crafting/trip_hammer` })
-    event.remove({ id: `tfc:crafting/windmill_blade` })
-    event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
-
-    global.MINECRAFT_DYE_NAMES.forEach(dye => {
-        event.remove({ id: `tfc:barrel/dye/${dye}_windmill_blade` })
-    })
-
     //#region Вырезание предметов из CastIron
 
     // Слиток
@@ -875,16 +860,16 @@ const registerTFCRecipes = (event) => {
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
         .id(`tfc:heating/grill`)
 
-    // Ванильная дверь
+    // Ванильная дверь декрафт
     event.recipes.tfc.heating('minecraft:iron_door', 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
         .id(`tfc:heating/iron_door`)
-
+    
+    // Ванильная дверь на наковальне
     event.recipes.tfc.anvil('minecraft:iron_door', '#forge:plates/wrought_iron', ['hit_last', 'draw_not_last', 'punch_not_last'])
         .tier(3)
         .id(`tfc:anvil/iron_door`)
-
-
+    
     // Bloom -> Wrought Iron Ingot
     event.recipes.tfc.anvil('gtceu:wrought_iron_ingot', 'tfc:refined_iron_bloom', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(2)
         .id('tfc:anvil/wrought_iron_from_bloom')
@@ -908,6 +893,200 @@ const registerTFCRecipes = (event) => {
     // Cast iron -> Raw Iron Bloom
     event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('tfc:metal/cast_iron', 144), 15000)
         .id('tfc:bloomery/raw_iron_bloom')
+
+    //#endregion
+
+    //#region Камень
+
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        // Сырой камень -> Сырой камень
+        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+
+        // Булыжник -> Булыжник
+        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
+            .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
+            .duration(16)
+            .EUt(7)
+
+        // Сырой камень -> Булыжник
+        event.recipes.gtceu.forge_hammer(`raw_${stoneTypeName}_to_cobble`)             
+            .itemInputs(`tfc:rock/raw/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
+            .duration(10)
+            .EUt(16)
+
+        // Булыжник -> Гравий
+        event.recipes.gtceu.forge_hammer(`cobble_${stoneTypeName}_to_gravel`)             
+            .itemInputs(`tfc:rock/cobble/${stoneTypeName}`)
+            .itemOutputs(`tfc:rock/gravel/${stoneTypeName}`)
+            .duration(10)
+            .EUt(16)
+    })
+
+    //#endregion
+
+    //#region Песок
+
+    // Песок душ -> Желтый песок
+    event.recipes.gtceu.centrifuge('soul_sand_separation')             
+        .itemInputs('minecraft:soul_sand')
+        .chancedOutput('tfc:sand/yellow', 9000, 130)
+        .chancedOutput('gtceu:saltpeter_small_dust', 8000, 480)
+        .chancedOutput('gtceu:coal_tiny_dust', 2000, 340)
+        .outputFluids(Fluid.of('gtceu:oil', 80))
+        .duration(200)
+        .EUt(80)
+
+    // Нефтеносный -> Желтый песок
+    event.recipes.gtceu.centrifuge('oilsands_ore_separation')             
+        .itemInputs('#forge:ores/oilsands')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    // Пыль нефтеносного песка -> Желтый песок
+    event.recipes.gtceu.centrifuge('oilsands_dust_separation')             
+        .itemInputs('gtceu:oilsands_dust')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    // Земля -> Желтый песок
+    event.recipes.gtceu.centrifuge('dirt_separation')             
+        .itemInputs('#tfc:dirt')
+        .chancedOutput('gtceu:plant_ball', 1250, 700)
+        .chancedOutput('tfc:sand/yellow', 5000, 1200)
+        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(250)
+        .EUt(30)
+
+    // Декрафт песчанных блоков в песок
+    global.SAND_COLORS.forEach(sandColor => {
+        // Песчанник -> Песок
+        event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Гладкий песчанник -> Песок
+        event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:smooth_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Обрезанный песчанник -> Песок
+        event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:cut_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Sand -> Raw SandStone
+        event.recipes.gtceu.compressor(`${sandColor}_sandstone`)             
+            .itemInputs(`4x tfc:sand/${sandColor}`)
+            .itemOutputs(`tfc:raw_sandstone/${sandColor}`)
+            .duration(300)
+            .EUt(2)
+
+        // Raw SandStone -> Smooth SandStone
+        event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_smooth`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .notConsumable('gtceu:magenta_glass_lens')
+            .itemOutputs(`tfc:smooth_sandstone/${sandColor}`)
+            .duration(60)
+            .EUt(32)
+
+        // Raw SandStone -> Cut SandStone
+        event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_cut`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .notConsumable('gtceu:orange_glass_lens')
+            .itemOutputs(`tfc:cut_sandstone/${sandColor}`)
+            .duration(60)
+            .EUt(32)
+    })
+    
+    // Коричневый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('brown_gravel_to_sand')             
+        .itemInputs('#tfc:brown_gravel')
+        .itemOutputs('tfc:sand/brown')
+        .duration(400)
+        .EUt(2)
+
+    // Белый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('white_gravel_to_sand')             
+        .itemInputs('#tfc:white_gravel')
+        .itemOutputs('tfc:sand/white')
+        .duration(400)
+        .EUt(2)
+
+    // Черный гравий -> Песок
+    event.recipes.gtceu.forge_hammer('black_gravel_to_sand')             
+        .itemInputs('#tfc:black_gravel')
+        .itemOutputs('tfc:sand/black')
+        .duration(400)
+        .EUt(2)
+
+    // Красный гравий -> Песок
+    event.recipes.gtceu.forge_hammer('red_gravel_to_sand')             
+        .itemInputs('#tfc:red_gravel')
+        .itemOutputs('tfc:sand/red')
+        .duration(400)
+        .EUt(2)
+
+    // Желтый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('yellow_gravel_to_sand')             
+        .itemInputs('#tfc:yellow_gravel')
+        .itemOutputs('tfc:sand/yellow')
+        .duration(400)
+        .EUt(2)
+
+    // Зеленый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('green_gravel_to_sand')             
+        .itemInputs('#tfc:green_gravel')
+        .itemOutputs('tfc:sand/green')
+        .duration(400)
+        .EUt(2)
+
+    // Розовый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('pink_gravel_to_sand')             
+        .itemInputs('#tfc:pink_gravel')
+        .itemOutputs('tfc:sand/pink')
+        .duration(400)
+        .EUt(2)
+
+    //#endregion
+
+    //#region Дерево
+    
+    //#endregion
+
+    global.TFC_WOOD_TYPES.forEach(wood => {
+        event.remove({ id: `tfc:crafting/wood/${wood}_axle` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
+        event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
+    })
+
+    event.remove({ id: `tfc:crafting/trip_hammer` })
+    event.remove({ id: `tfc:crafting/windmill_blade` })
+    event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.remove({ id: `tfc:barrel/dye/${dye}_windmill_blade` })
+    })
 
     //#region Порошки
     
@@ -1202,14 +1381,6 @@ const registerTFCRecipes = (event) => {
         .duration(250)
         .EUt(30)
 
-    // TFC Dirt -> Plant Ball (Centrifuge)
-    event.recipes.gtceu.centrifuge('dirt_separation')             
-        .itemInputs('#tfc:dirt')
-        .chancedOutput('gtceu:plant_ball', 1250, 700)
-        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
-        .duration(250)
-        .EUt(30)
-
     // 8x Ванильная растительность -> Plant Ball (Compressor)
     event.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
@@ -1285,20 +1456,7 @@ const registerTFCRecipes = (event) => {
         .duration(128)
         .EUt(3)
 
-    // Рецепты бесконечного камня в RockBreaker
-    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
-        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
-            .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
-            .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
-            .duration(16)
-            .EUt(7)
-
-        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
-            .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
-            .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
-            .duration(16)
-            .EUt(7)
-    })
+    
 
     //#region Фикс рецептов связанных с песком
     event.recipes.gtceu.electrolyzer('sand_electrolysis')             

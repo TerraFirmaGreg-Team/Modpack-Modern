@@ -1,0 +1,9 @@
+// priority: 0
+
+const registerFTBQuestsItemTags = (event) => {
+
+    // Удаление тегов у отключенных предметов
+    global.FTB_QUESTS_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
+}
