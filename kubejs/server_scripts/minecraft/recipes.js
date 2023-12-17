@@ -105,7 +105,7 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Каменные кирпичи стена
 
     event.remove({ id: 'minecraft:stone_brick_wall' })
-    event.remove({ id: 'minecraft:stone_brick_wall_from_stone_stonecutting' })
+    event.remove({ id: 'minecraft:stone_brick_walls_from_stone_stonecutting' })
     event.remove({ id: 'minecraft:stone_brick_wall_from_stone_bricks_stonecutting' })
 
     //#endregion
