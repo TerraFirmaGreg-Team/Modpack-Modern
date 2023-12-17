@@ -74,6 +74,35 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
+    // Цвета гравия
+    // Коричневый
+    event.add('tfc:brown_gravel', 'tfc:rock/gravel/claystone')
+    // Белый
+    event.add('tfc:white_gravel', 'tfc:rock/gravel/chalk')
+    event.add('tfc:white_gravel', 'tfc:rock/gravel/diorite')
+    event.add('tfc:white_gravel', 'tfc:rock/gravel/quartzite')
+    event.add('tfc:white_gravel', 'tfc:rock/gravel/marble')
+    // Черный
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/basalt')
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/phyllite')
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/andesite')
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/dacite')
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/gabbro')
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/dolomite')
+    event.add('tfc:black_gravel', 'tfc:rock/gravel/shale')
+    // Красный
+    event.add('tfc:red_gravel', 'tfc:rock/gravel/chert')
+    event.add('tfc:red_gravel', 'tfc:rock/gravel/rhyolite')
+    // Желтый
+    event.add('tfc:yellow_gravel', 'tfc:rock/gravel/limestone')
+    event.add('tfc:yellow_gravel', 'tfc:rock/gravel/slate')
+    // Зеленый
+    event.add('tfc:green_gravel', 'tfc:rock/gravel/gneiss')
+    event.add('tfc:green_gravel', 'tfc:rock/gravel/conglomerate')
+    event.add('tfc:green_gravel', 'tfc:rock/gravel/schist')
+    // Розовый
+    event.add('tfc:pink_gravel', 'tfc:rock/gravel/granite')
+
     // Теги для объединения наковален
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/blue_steel')
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/red_steel')

@@ -715,12 +715,304 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Песок
+
+    // Из песка душ
+    event.recipes.gtceu.centrifuge('soul_sand_separation')             
+        .itemInputs('minecraft:soul_sand')
+        .chancedOutput('tfc:sand/yellow', 9000, 130)
+        .chancedOutput('gtceu:saltpeter_small_dust', 8000, 480)
+        .chancedOutput('gtceu:coal_tiny_dust', 2000, 340)
+        .outputFluids(Fluid.of('gtceu:oil', 80))
+        .duration(200)
+        .EUt(80)
+
+    // Из красного песка
+    event.remove({ id: 'gtceu:centrifuge/red_sand_separation' })
+
+    // Из нефтеносного песка
+    event.recipes.gtceu.centrifuge('oilsands_ore_separation')             
+        .itemInputs('#forge:ores/oilsands')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    // Из пыли нефтеносного песка
+    event.recipes.gtceu.centrifuge('oilsands_dust_separation')             
+        .itemInputs('gtceu:oilsands_dust')
+        .chancedOutput('tfc:sand/yellow', 5000, 5000)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(200)
+        .EUt(30)
+
+    // Из мицелия
+    event.remove({ id: 'gtceu:centrifuge/mycelium_separation' })
+
+    // Из травы
+    event.remove({ id: 'gtceu:centrifuge/grass_block_separation' })
+
+    // Из земли
+    event.recipes.gtceu.centrifuge('dirt_separation')             
+        .itemInputs('#tfc:dirt')
+        .chancedOutput('gtceu:plant_ball', 1250, 700)
+        .chancedOutput('tfc:sand/yellow', 5000, 1200)
+        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
+        .outputFluids(Fluid.of('gtceu:oil', 2000))
+        .duration(250)
+        .EUt(30)
+
+    // TODO: Из пыли лунного грунта
+    event.remove({ id: 'gtceu:centrifuge/endstone_separation' })
+    /*
+    event.recipes.gtceu.centrifuge('endstone_separation')             
+        .itemInputs('')
+        .chancedOutput('tfc:sand/yellow', 9000, 300)
+        .chancedOutput('gtceu:tungstate_small_dust', 1250, 450)
+        .chancedOutput('gtceu:platinum_tiny_dust', 630, 150)
+        .outputFluids(Fluid.of('gtceu:helium', 2000))
+        .duration(250)
+        .EUt(30)*/
+
+    // Декрафт разных блоков в песок
+    event.remove({ id: 'gtceu:forge_hammer/gravel_to_sand' })
+    event.remove({ id: 'gtceu:forge_hammer/sandstone_to_sand' })
+    event.remove({ id: 'gtceu:forge_hammer/smooth_sandstone_to_sand' })
+    event.remove({ id: 'gtceu:forge_hammer/chiseled_sandstone_to_sand' })
+
+    global.SAND_COLORS.forEach(sandColor => {
+        // Raw SandStone -> Sand
+        event.recipes.gtceu.forge_hammer(`raw_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Smooth SandStone -> Sand
+        event.recipes.gtceu.forge_hammer(`smooth_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:smooth_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+
+        // Cut SandStone -> Sand
+        event.recipes.gtceu.forge_hammer(`cut_${sandColor}_sandstone_to_sand`)             
+            .itemInputs(`tfc:cut_sandstone/${sandColor}`)
+            .itemOutputs(`tfc:sand/${sandColor}`)
+            .duration(400)
+            .EUt(2)
+    })
+
+    // Коричневый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('brown_gravel_to_sand')             
+        .itemInputs('#tfc:brown_gravel')
+        .itemOutputs('tfc:sand/brown')
+        .duration(400)
+        .EUt(2)
+
+    // Белый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('white_gravel_to_sand')             
+        .itemInputs('#tfc:white_gravel')
+        .itemOutputs('tfc:sand/white')
+        .duration(400)
+        .EUt(2)
+
+    // Черный гравий -> Песок
+    event.recipes.gtceu.forge_hammer('black_gravel_to_sand')             
+        .itemInputs('#tfc:black_gravel')
+        .itemOutputs('tfc:sand/black')
+        .duration(400)
+        .EUt(2)
+
+    // Красный гравий -> Песок
+    event.recipes.gtceu.forge_hammer('red_gravel_to_sand')             
+        .itemInputs('#tfc:red_gravel')
+        .itemOutputs('tfc:sand/red')
+        .duration(400)
+        .EUt(2)
+
+    // Желтый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('yellow_gravel_to_sand')             
+        .itemInputs('#tfc:yellow_gravel')
+        .itemOutputs('tfc:sand/yellow')
+        .duration(400)
+        .EUt(2)
+
+    // Зеленый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('green_gravel_to_sand')             
+        .itemInputs('#tfc:green_gravel')
+        .itemOutputs('tfc:sand/green')
+        .duration(400)
+        .EUt(2)
+
+    // Розовый гравий -> Песок
+    event.recipes.gtceu.forge_hammer('pink_gravel_to_sand')             
+        .itemInputs('#tfc:pink_gravel')
+        .itemOutputs('tfc:sand/pink')
+        .duration(400)
+        .EUt(2)
+
+    //#endregion
+
+    //#region Выход: Песчанник
+
+    event.remove({ id: 'gtceu:compressor/sandstone' })
+
+    //#endregion
+
+    //#region Выход: Песчанник ступень
+
+    event.remove({ id: 'minecraft:sandstone_stairs' })
+    event.remove({ id: 'minecraft:sandstone_stairs_from_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Песчанник плита
+
+    event.remove({ id: 'minecraft:sandstone_slab' })
+    event.remove({ id: 'minecraft:sandstone_slab_from_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Песчанник стена
+
+    event.remove({ id: 'minecraft:sandstone_wall' })
+    event.remove({ id: 'minecraft:sandstone_wall_from_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Гладкий песчанник ступень
+
+    event.remove({ id: 'minecraft:smooth_sandstone_stairs' })
+    event.remove({ id: 'minecraft:smooth_sandstone_stairs_from_smooth_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Гладкий песчанник плита
+
+    event.remove({ id: 'minecraft:smooth_sandstone_slab' })
+    event.remove({ id: 'minecraft:smooth_sandstone_slab_from_smooth_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Обрезанный песчанник
+
+    event.remove({ id: 'minecraft:cut_sandstone' })
+    event.remove({ id: 'minecraft:cut_sandstone_from_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Обрезанный песчанник плита
+
+    event.remove({ id: 'minecraft:cut_sandstone_slab' })
+    event.remove({ id: 'minecraft:cut_sandstone_slab_from_sandstone_stonecutting' })
+    event.remove({ id: 'minecraft:cut_sandstone_slab_from_cut_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Резной песчанник
+
+    event.remove({ id: 'minecraft:chiseled_sandstone' })
+    event.remove({ id: 'minecraft:chiseled_sandstone_from_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный песок
+
+    event.remove({ id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand' })
+    event.remove({ id: 'gtceu:forge_hammer/red_sandstone_to_red_sand' })
+    event.remove({ id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand' })
+
+    //#endregion
+
+    //#region Выход: Красный песчанник
+
+    event.remove({ id: 'gtceu:compressor/red_sandstone' })
+
+    //#endregion
+
+    //#region Выход: Красный песчанник ступень
+
+    event.remove({ id: 'minecraft:red_sandstone_stairs' })
+    event.remove({ id: 'minecraft:red_sandstone_stairs_from_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный песчанник плита
+
+    event.remove({ id: 'minecraft:red_sandstone_slab' })
+    event.remove({ id: 'minecraft:red_sandstone_slab_from_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный песчанник стена
+
+    event.remove({ id: 'minecraft:red_sandstone_wall' })
+    event.remove({ id: 'minecraft:red_sandstone_wall_from_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный гладкий песчанник ступень
+
+    event.remove({ id: 'minecraft:smooth_red_sandstone_stairs' })
+    event.remove({ id: 'minecraft:smooth_red_sandstone_stairs_from_smooth_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный гладкий песчанник плита
+
+    event.remove({ id: 'minecraft:smooth_red_sandstone_slab' })
+    event.remove({ id: 'minecraft:smooth_red_sandstone_slab_from_smooth_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный обрезанный песчанник
+
+    event.remove({ id: 'minecraft:cut_red_sandstone' })
+    event.remove({ id: 'minecraft:cut_red_sandstone_from_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный обрезанный песчанник плита
+
+    event.remove({ id: 'minecraft:cut_red_sandstone_slab' })
+    event.remove({ id: 'minecraft:cut_red_sandstone_slab_from_red_sandstone_stonecutting' })
+    event.remove({ id: 'minecraft:cut_red_sandstone_slab_from_cut_red_sandstone_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Красный резной песчанник
+
+    event.remove({ id: 'minecraft:chiseled_red_sandstone' })
+    event.remove({ id: 'minecraft:chiseled_red_sandstone_from_red_sandstone_stonecutting' })
+
+    //#endregion
 
 
+    /*
+    // Sand -> Raw SandStone
+    event.recipes.gtceu.compressor(`${sandColor}_sandstone`)             
+    .itemInputs(`4x tfc:sand/${sandColor}`)
+    .itemOutputs(`tfc:raw_sandstone/${sandColor}`)
+    .duration(300)
+    .EUt(2)
 
+    // Raw SandStone -> Smooth SandStone
+    event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_smooth`)             
+        .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+        .notConsumable('gtceu:magenta_glass_lens')
+        .itemOutputs(`tfc:smooth_sandstone/${sandColor}`)
+        .duration(60)
+        .EUt(32)
 
-
-
+    // Raw SandStone -> Cut SandStone
+    event.recipes.gtceu.laser_engraver(`raw_${sandColor}_sandstone_to_cut`)             
+        .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+        .notConsumable('gtceu:orange_glass_lens')
+        .itemOutputs(`tfc:cut_sandstone/${sandColor}`)
+        .duration(60)
+        .EUt(32)
+    */
 
 
 

@@ -4,38 +4,38 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    // registerTFCItemTags(event)
+    registerTFCItemTags(event)
     // registerFirmaLifeItemTags(event)
     // registerSmallShipsItemTags(event)
-    // registerMinecraftItemTags(event)
-    //registerGTCEUItemTags(event)
-    //registerAE2ItemTags(event)
-    //// registerCreateItemTags(event)
-    //// registerAdAstraItemTags(event)
-    //registerMoreRedItemTags(event)
-    //registerSophisticatedBackpacksItemTags(event)
+    registerMinecraftItemTags(event)
+    // registerGTCEUItemTags(event)
+    // registerAE2ItemTags(event)
+    // registerCreateItemTags(event)
+    // registerAdAstraItemTags(event)
+    // registerMoreRedItemTags(event)
+    // registerSophisticatedBackpacksItemTags(event)
 })
 
 /**
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
-    //registerTFCBlockTags(event)
+    registerTFCBlockTags(event)
 })
 
 /**
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
-    //registerTFCFluidTags(event)
+    registerTFCFluidTags(event)
 })
 
 /**
  * Событие регистрации генератора структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
-    //registerTFCPlacedFeatures(event)
-    //registerFirmaLifePlacedFeatures(event)
+    registerTFCPlacedFeatures(event)
+    registerFirmaLifePlacedFeatures(event)
 })
 
 /**
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     //registerAE2Recipes(event)
     //registerAE2WTLibRecipes(event)
     // registerComputerCraftRecipes(event)
-    // registerAdAstraRecipes(event)
+    registerAdAstraRecipes(event)
     //registerMoreRedRecipes(event)
     //registerSophisticatedBackpacksRecipes(event)
     //registerToolBeltRecipes(event)

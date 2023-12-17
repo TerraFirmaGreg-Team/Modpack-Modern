@@ -5,7 +5,6 @@
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
 global.TFC_DISABLED_ITEMS = [
-    
     // Blocks
     'tfc:metal/block/bismuth', 
     'tfc:metal/block/bismuth_bronze', 

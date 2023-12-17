@@ -131,9 +131,37 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:nether_quartz_ore', 
     'minecraft:ancient_debris',
 
+    // Песок
+    'minecraft:sandstone', 
+    'minecraft:sandstone_stairs', 
+    'minecraft:sandstone_slab', 
+    'minecraft:sandstone_wall', 
+    'minecraft:smooth_sandstone', 
+    'minecraft:smooth_sandstone_stairs', 
+    'minecraft:smooth_sandstone_slab', 
+    'minecraft:cut_sandstone', 
+    'minecraft:cut_sandstone_slab', 
+    'minecraft:chiseled_sandstone', 
+    'minecraft:sand', 
+    'minecraft:suspicious_sand',
+
+    // Красный песок
+    'minecraft:red_sandstone', 
+    'minecraft:red_sandstone_stairs', 
+    'minecraft:red_sandstone_slab', 
+    'minecraft:red_sandstone_wall', 
+    'minecraft:smooth_red_sandstone', 
+    'minecraft:smooth_red_sandstone_stairs', 
+    'minecraft:smooth_red_sandstone_slab',
+    'minecraft:cut_red_sandstone', 
+    'minecraft:cut_red_sandstone_slab', 
+    'minecraft:chiseled_red_sandstone', 
+    'minecraft:red_sand',
+
     // Другое
     'minecraft:netherite_scrap',
     
+    /*
     // Дерево
     // Дуб
     "minecraft:oak_wood",
@@ -435,7 +463,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:diamond_helmet",
     "minecraft:diamond_chestplate",
     "minecraft:diamond_leggings",
-    "minecraft:diamond_boots",
+    "minecraft:diamond_boots",*/
 ];
 
 global.VANILLA_WOOD_TYPES = [
