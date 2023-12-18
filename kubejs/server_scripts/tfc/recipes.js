@@ -900,32 +900,95 @@ const registerTFCRecipes = (event) => {
 
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         // Сырой камень -> Сырой камень
-        event.recipes.gtceu.rock_breaker(`raw_${stoneTypeName}`)             
+        event.recipes.gtceu.rock_breaker(`${stoneTypeName}_raw`)             
             .notConsumable(`tfc:rock/raw/${stoneTypeName}`)
             .itemOutputs(`tfc:rock/raw/${stoneTypeName}`)
             .duration(16)
             .EUt(7)
 
         // Булыжник -> Булыжник
-        event.recipes.gtceu.rock_breaker(`cobble_${stoneTypeName}`)             
+        event.recipes.gtceu.rock_breaker(`${stoneTypeName}_cobble`)             
             .notConsumable(`tfc:rock/cobble/${stoneTypeName}`)
             .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
             .duration(16)
             .EUt(7)
 
         // Сырой камень -> Булыжник
-        event.recipes.gtceu.forge_hammer(`raw_${stoneTypeName}_to_cobble`)             
+        event.recipes.gtceu.forge_hammer(`${stoneTypeName}_raw_to_cobble`)             
             .itemInputs(`tfc:rock/raw/${stoneTypeName}`)
             .itemOutputs(`tfc:rock/cobble/${stoneTypeName}`)
             .duration(10)
             .EUt(16)
 
         // Булыжник -> Гравий
-        event.recipes.gtceu.forge_hammer(`cobble_${stoneTypeName}_to_gravel`)             
+        event.recipes.gtceu.forge_hammer(`${stoneTypeName}_cobble_to_gravel`)             
             .itemInputs(`tfc:rock/cobble/${stoneTypeName}`)
             .itemOutputs(`tfc:rock/gravel/${stoneTypeName}`)
             .duration(10)
             .EUt(16)
+
+        // Сырой камень -> Ступени
+        event.recipes.gtceu.cutter(`${stoneTypeName}_raw_to_stairs`)             
+            .itemInputs(`tfc:rock/raw/${stoneTypeName}`)
+            .circuit(0)
+            .itemOutputs(`tfc:rock/raw/${stoneTypeName}_stairs`)
+            .duration(100)
+            .EUt(8)
+
+        // Сырой камень -> Плиты
+        event.recipes.gtceu.cutter(`${stoneTypeName}_raw_to_slab`)             
+            .itemInputs(`tfc:rock/raw/${stoneTypeName}`)
+            .circuit(1)
+            .itemOutputs(`2x tfc:rock/raw/${stoneTypeName}_slab`)
+            .duration(100)
+            .EUt(8)
+
+        // Сырой камень -> Стена
+        event.recipes.gtceu.cutter(`${stoneTypeName}_raw_to_wall`)             
+            .itemInputs(`tfc:rock/raw/${stoneTypeName}`)
+            .circuit(2)
+            .itemOutputs(`2x tfc:rock/raw/${stoneTypeName}_wall`)
+            .duration(100)
+            .EUt(8)
+
+        // ? -> Сырая нажимная пластина
+        event.shaped(`tfc:rock/pressure_plate/${stoneTypeName}`, [
+            'DCD',
+            'BEB'  
+        ], {
+            B: '#tfc:mortar',
+            C: '#forge:springs',
+            D: `tfc:brick/${stoneTypeName}`,
+            E: '#forge:dusts/redstone'
+        }).id(`tfc:crafting/rock/${stoneTypeName}_pressure_plate`)
+
+        event.recipes.gtceu.assembler(`${stoneTypeName}_raw_pressure_plate`)             
+            .itemInputs('4x #forge:springs', '#forge:dusts/redstone', `2x tfc:brick/${stoneTypeName}`)
+            .circuit(0)
+            .inputFluids(Fluid.of('gtceu:concrete', 16))
+            .itemOutputs(`4x tfc:rock/pressure_plate/${stoneTypeName}`)
+            .duration(50)
+            .EUt(2)
+
+        // ? -> Сырая кнопка
+        event.shaped(`tfc:rock/button/${stoneTypeName}`, [
+            'BD',
+            'EC',
+            'BD'
+        ], {
+            B: '#tfc:mortar',
+            C: '#forge:small_springs',
+            D: `tfc:brick/${stoneTypeName}`,
+            E: '#forge:dusts/redstone'
+        }).id(`tfc:crafting/rock/${stoneTypeName}_button`)
+
+        event.recipes.gtceu.assembler(`${stoneTypeName}_raw_button`)             
+            .itemInputs('4x #forge:small_springs', '#forge:dusts/redstone', `tfc:brick/${stoneTypeName}`)
+            .circuit(1)
+            .inputFluids(Fluid.of('gtceu:concrete', 8))
+            .itemOutputs(`4x tfc:rock/button/${stoneTypeName}`)
+            .duration(50)
+            .EUt(2)
     })
 
     //#endregion
