@@ -990,6 +990,35 @@ const registerTFCRecipes = (event) => {
             .itemOutputs(`tfc:sand/${sandColor}`)
             .duration(400)
             .EUt(2)
+        
+        // Песок -> Песчанник
+        event.recipes.gtceu.compressor(`sand_${sandColor}_to_sandstone`)             
+            .itemInputs(`4x tfc:sand/${sandColor}`)
+            .itemOutputs(`tfc:raw_sandstone/${sandColor}`)
+            .duration(800)
+            .EUt(2)
+
+        // Песчанник -> Гладкий песчанник
+        event.stonecutting(`tfc:smooth_sandstone/${sandColor}`, `tfc:raw_sandstone/${sandColor}`)
+            .id(`tfg:stonecutting/raw_sandstone_${sandColor}_to_smooth_sandstone`)
+
+        event.recipes.gtceu.cutter(`raw_sandstone_${sandColor}_to_smooth_sandstone`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .circuit(3)
+            .itemOutputs(`tfc:smooth_sandstone/${sandColor}`)
+            .duration(100)
+            .EUt(8)
+
+        // Песчанник -> Обрезанный песчанник
+        event.stonecutting(`tfc:cut_sandstone/${sandColor}`, `tfc:raw_sandstone/${sandColor}`)
+            .id(`raw_sandstone_${sandColor}_to_cut_sandstone`)
+
+        event.recipes.gtceu.cutter(`cut_sandstone_${sandColor}_to_smooth_sandstone`)             
+            .itemInputs(`tfc:raw_sandstone/${sandColor}`)
+            .circuit(4)
+            .itemOutputs(`tfc:cut_sandstone/${sandColor}`)
+            .duration(100)
+            .EUt(8)
 
         // Песчанник -> Ступень
         event.stonecutting(`tfc:raw_sandstone/${sandColor}_stairs`, `tfc:raw_sandstone/${sandColor}`)
