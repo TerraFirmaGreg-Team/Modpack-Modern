@@ -383,6 +383,150 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Крошечная кучка дерева
+
+    event.remove({ id: 'gtceu:macerator/macerate_warped_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_spruce_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_oak_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_mangrove_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_jungle_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_dark_oak_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_crimson_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_cherry_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_birch_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_bamboo_button' })
+    event.remove({ id: 'gtceu:macerator/macerate_acacia_button' })
+
+    //#endregion
+
+    //#region Выход: Маленькая кучка дерева
+
+   event.remove({ id: 'gtceu:macerator/macerate_wooden_sword' })
+   event.remove({ id: 'gtceu:macerator/macerate_wooden_shovel' })
+   event.remove({ id: 'gtceu:macerator/macerate_wooden_pickaxe' })
+   event.remove({ id: 'gtceu:macerator/macerate_wooden_hoe' })
+   event.remove({ id: 'gtceu:macerator/macerate_wooden_axe' })
+   event.remove({ id: 'gtceu:macerator/macerate_warped_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_warped_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_spruce_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_spruce_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_oak_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_oak_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_mangrove_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_mangrove_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_jungle_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_jungle_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_iron_sword' })
+   event.remove({ id: 'gtceu:macerator/macerate_iron_shovel' })
+   event.remove({ id: 'gtceu:macerator/macerate_iron_pickaxe' })
+   event.remove({ id: 'gtceu:macerator/macerate_iron_hoe' })
+   event.remove({ id: 'gtceu:macerator/macerate_iron_axe' })
+   event.remove({ id: 'gtceu:macerator/macerate_golden_sword' })
+   event.remove({ id: 'gtceu:macerator/macerate_golden_shovel' })
+   event.remove({ id: 'gtceu:macerator/macerate_golden_pickaxe' })
+   event.remove({ id: 'gtceu:macerator/macerate_golden_hoe' })
+   event.remove({ id: 'gtceu:macerator/macerate_golden_axe' })
+   event.remove({ id: 'gtceu:macerator/macerate_diamond_sword' })
+   event.remove({ id: 'gtceu:macerator/macerate_diamond_shovel' })
+   event.remove({ id: 'gtceu:macerator/macerate_diamond_pickaxe' })
+   event.remove({ id: 'gtceu:macerator/macerate_diamond_hoe' })
+   event.remove({ id: 'gtceu:macerator/macerate_diamond_axe' })
+   event.remove({ id: 'gtceu:macerator/macerate_dark_oak_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_dark_oak_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_crimson_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_crimson_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_cherry_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_cherry_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_birch_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_birch_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_bamboo_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_bamboo_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_bamboo_mosaic_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_bamboo_mosaic_slab' })
+   event.remove({ id: 'gtceu:macerator/macerate_acacia_stairs' })
+   event.remove({ id: 'gtceu:macerator/macerate_acacia_slab' })
+
+   //#endregion
+
+    //#region Выход: Деревянная пыль
+
+    event.remove({id: 'gtceu:macerator/macerate_trapped_chest'})
+    event.remove({id: 'gtceu:macerator/macerate_spruce_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_spruce_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_spruce_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_spruce_door'})
+    event.remove({id: 'gtceu:macerator/macerate_spruce_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_oak_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_oak_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_oak_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_oak_door'})
+    event.remove({id: 'gtceu:macerator/macerate_oak_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_mangrove_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_mangrove_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_mangrove_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_mangrove_door'})
+    event.remove({id: 'gtceu:macerator/macerate_mangrove_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_jungle_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_jungle_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_jungle_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_jungle_door'})
+    event.remove({id: 'gtceu:macerator/macerate_jungle_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_dark_oak_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_dark_oak_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_dark_oak_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_dark_oak_door'})
+    event.remove({id: 'gtceu:macerator/macerate_dark_oak_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_crafting_table'})
+    event.remove({id: 'gtceu:macerator/macerate_chest'})
+    event.remove({id: 'gtceu:macerator/macerate_chest_minecart'})
+    event.remove({id: 'gtceu:macerator/macerate_cherry_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_cherry_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_cherry_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_cherry_door'})
+    event.remove({id: 'gtceu:macerator/macerate_cherry_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_bookshelf'})
+    event.remove({id: 'gtceu:macerator/macerate_birch_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_birch_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_birch_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_birch_door'})
+    event.remove({id: 'gtceu:macerator/macerate_birch_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_acacia_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_acacia_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_acacia_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_acacia_door'})
+    event.remove({id: 'gtceu:macerator/macerate_acacia_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_raft'})
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_door'})
+    event.remove({id: 'gtceu:macerator/macerate_crimson_door'})
+    event.remove({id: 'gtceu:macerator/macerate_crimson_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_crimson_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_crimson_planks'})
+    event.remove({id: 'gtceu:macerator/macerate_warped_door'})
+    event.remove({id: 'gtceu:macerator/macerate_warped_fence'})
+    event.remove({id: 'gtceu:macerator/macerate_warped_fence_gate'})
+    event.remove({id: 'gtceu:macerator/macerate_warped_planks'})
+
+    //#endregion
+
+    // Compressed Coke Clay
+    event.shaped('gtceu:compressed_coke_clay', [
+        'AAA', 
+        'BCB',
+        'BBB' 
+    ], {
+        A: 'minecraft:clay_ball',
+        B: '#minecraft:sand',
+        C: 'gtceu:brick_wooden_form'
+    }).replaceIngredient("gtceu:brick_wooden_form", Item.empty).id('gtceu:shaped/compressed_coke_clay')
+
+    // Compressed Coke Clay -> Coke Oven Brick
+    event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
+        .resultItem('gtceu:coke_oven_brick')
+        .id('tfg:heating/coke_oven_bricks')
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
@@ -525,11 +669,6 @@ const registerGTCEURecipes = (event) => {
         .duration(15)
         .EUt(2)
 
-    // Compressed Coke Clay -> Coke Oven Brick
-    event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
-        .resultItem('gtceu:coke_oven_brick')
-        .id('tfg:heating/coke_oven_bricks')
-
     // Pump Deck
     event.shaped('gtceu:pump_deck', [
         'ABA', 
@@ -538,7 +677,7 @@ const registerGTCEURecipes = (event) => {
         A: '#forge:screws/wrought_iron',
         B: 'gtceu:treated_wood_planks',  
         C: '#forge:tools/hammers',
-        D: '#tfc:rock_slabs',
+        D: '#tfg:rock_slabs',
         E: '#forge:tools/screwdrivers'
     }).id('gtceu:shaped/pump_deck')
 
@@ -553,7 +692,7 @@ const registerGTCEURecipes = (event) => {
         C: '#forge:tools/screwdrivers',
         D: 'gtceu:treated_wood_planks',
         E: 'gtceu:wood_large_fluid_pipe',
-        F: '#tfc:rock_slabs'
+        F: '#tfg:rock_slabs'
 
     }).id('gtceu:shaped/pump_hatch')
 
@@ -569,7 +708,7 @@ const registerGTCEURecipes = (event) => {
         D: '#forge:rotors/wrought_iron',
         E: 'gtceu:treated_wood_planks',
         F: '#forge:tools/screwdrivers',
-        G: '#tfc:rock_slabs',
+        G: '#tfg:rock_slabs',
         H: 'gtceu:wood_large_fluid_pipe'
 
     }).id('gtceu:shaped/primitive_pump')

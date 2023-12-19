@@ -1939,7 +1939,6 @@ const registerTFCRecipes = (event) => {
     //#region Дерево
     
     // Декрафт деревянной херни в деревянную пыль
-    /*
     Object.entries(global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST).forEach(pair => {
         
         let typeName = pair[1].name
@@ -1950,7 +1949,7 @@ const registerTFCRecipes = (event) => {
             .itemOutputs(typeOutput)
             .duration(600)
             .EUt(2)
-    })*/
+    })
 
     global.TFC_WOOD_TYPES.forEach(wood => {
         event.remove({ id: `tfc:crafting/wood/${wood}_axle` })

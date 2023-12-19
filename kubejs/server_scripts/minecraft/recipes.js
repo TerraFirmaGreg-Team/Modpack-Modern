@@ -1024,11 +1024,19 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Ковер из мха
+
+    event.remove({ id: 'minecraft:moss_carpet' })
+
+    //#endregion
+
+    //#region Выход: Плот с сундуком
+
+    event.remove({ id: 'minecraft:bamboo_chest_raft' })
+
+    //#endregion
 
 
-
-
-    
     //#region Выход:
 
     // event.remove({ id: '' })
