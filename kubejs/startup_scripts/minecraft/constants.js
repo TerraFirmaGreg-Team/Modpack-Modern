@@ -165,15 +165,27 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:chiseled_red_sandstone', 
     'minecraft:red_sand',
 
-    // Саженцы
-    'minecraft:oak_sapling', 
-    'minecraft:spruce_sapling', 
-    'minecraft:birch_sapling', 
-    'minecraft:jungle_sapling', 
-    'minecraft:acacia_sapling', 
-    'minecraft:cherry_sapling', 
-    'minecraft:dark_oak_sapling', 
-    'minecraft:mangrove_propagule',
+    // Кораллы
+    'minecraft:horn_coral',
+    'minecraft:horn_coral_fan', 
+    'minecraft:dead_brain_coral', 
+    'minecraft:dead_brain_coral_fan', 
+    'minecraft:dead_tube_coral_fan', 
+    'minecraft:dead_bubble_coral', 
+    'minecraft:dead_fire_coral', 
+    'minecraft:dead_horn_coral', 
+    'minecraft:dead_bubble_coral_fan', 
+    'minecraft:dead_fire_coral_fan', 
+    'minecraft:dead_tube_coral', 
+    'minecraft:brain_coral', 
+    'minecraft:tube_coral', 
+    'minecraft:tube_coral_fan', 
+    'minecraft:dead_horn_coral_fan', 
+    'minecraft:bubble_coral_fan', 
+    'minecraft:fire_coral_fan', 
+    'minecraft:brain_coral_fan', 
+    'minecraft:bubble_coral', 
+    'minecraft:fire_coral',
 
     // Дерево
     // Дуб

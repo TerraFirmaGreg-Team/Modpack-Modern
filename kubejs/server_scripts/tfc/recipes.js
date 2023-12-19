@@ -2314,6 +2314,9 @@ const registerTFCRecipes = (event) => {
 
     // Другое
     event.remove({ id: `tfc:crafting/trip_hammer` })
+    event.remove({ id: `tfc:anvil/steel_pump` })
+    event.remove({ id: `tfc:crafting/steel_pump` })
+    event.remove({ id: `tfc:crafting/crankshaft` })
     event.remove({ id: `tfc:crafting/windmill_blade` })
     event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
 

@@ -580,6 +580,9 @@ global.TFC_DISABLED_ITEMS = [
 
     // Other
     "tfc:trip_hammer",
+    'tfc:steel_pipe',
+    'tfc:steel_pump',
+    'tfc:crankshaft'
 ];
 
 /**
