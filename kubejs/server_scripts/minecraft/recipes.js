@@ -884,7 +884,13 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Земля
 
     event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' })
-    event.remove({ id: 'gtceu:macerator/dirt_from_bio_chaff' })
+
+    event.recipes.gtceu.centrifuge('dirt_from_bio_chaff')             
+        .itemInputs('gtceu:bio_chaff')
+        .itemOutputs('tfc:dirt/loam')
+        .duration(300)
+        .EUt(4)
+
 
     //#endregion
 
@@ -935,10 +941,17 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Стекло
 
+    event.recipes.gtceu.arc_furnace('glass_from_sand')             
+        .itemInputs('#forge:sand')
+        .itemOutputs('2x minecraft:glass')
+        .duration(20)
+        .EUt(30)
 
+    //#endregion
 
-
+    
 
     
 
@@ -1302,13 +1315,6 @@ const registerMinecraftRecipes = (event) => {
     ])
 
     // Стекло
-    event.recipes.gtceu.alloy_smelter('glass')             
-        .itemInputs('#forge:dusts/glass')
-        .notConsumable('gtceu:block_casting_mold')
-        .itemOutputs('minecraft:glass')
-        .duration(120)
-        .EUt(16)
-
     event.recipes.gtceu.arc_furnace('glass_from_sand')             
         .itemInputs('#forge:sand')
         .itemOutputs('2x minecraft:glass')

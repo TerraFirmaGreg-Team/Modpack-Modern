@@ -321,8 +321,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:mangrove_planks",
     "minecraft:mangrove_propagule",
     "minecraft:mangrove_log",
-    "minecraft:mangrove_roots",
-    "minecraft:muddy_mangrove_roots",
+    // "minecraft:mangrove_roots",
+    // "minecraft:muddy_mangrove_roots",
     "minecraft:stripped_mangrove_log",
     "minecraft:stripped_mangrove_wood",
     "minecraft:mangrove_wood",
@@ -353,6 +353,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:netherite_scrap',
     'minecraft:suspicious_gravel',
     'minecraft:stonecutter',
+    'minecraft:gravel'
 
     /*
     // Other

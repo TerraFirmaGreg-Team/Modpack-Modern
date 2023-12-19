@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     registerTreeTapRecipes(event)
     registerSmallShipsRecipes(event)
     registerMinecraftRecipes(event)
-    // registerGTCEURecipes(event)
+    registerGTCEURecipes(event)
     registerCreateRecipes(event)
     // registerAE2Recipes(event)
     // registerAE2WTLibRecipes(event)

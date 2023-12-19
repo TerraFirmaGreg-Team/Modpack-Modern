@@ -2,6 +2,77 @@
 
 const registerGTCEURecipes = (event) => {
     
+    //#region Выход: Удобрение
+
+    // В обычном миксере
+    event.recipes.gtceu.mixer('fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .duration(300)
+        .EUt(30)
+
+    // В create миксере
+    event.recipes.gtceu.create_mixer('fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .duration(300)
+        .EUt(30)
+        .rpm(96)
+
+    //#endregion
+
+    //#region Выход: Кварцевый песок
+
+    event.shaped('gtceu:quartz_sand_dust', [
+        'A', 
+        'B'
+    ], {
+        A: '#forge:sand',
+        B: '#forge:tools/mortars'
+    }).id('gtceu:shaped/quartz_sand')
+
+    event.recipes.gtceu.macerator('quartz_sand_from_sand')             
+        .itemInputs('#forge:sand')
+        .itemOutputs('gtceu:quartz_sand_dust')
+        .duration(30)
+        .EUt(2)
+
+    //#endregion
+
+    //#region Выход: Диоксид силикона
+
+    event.recipes.gtceu.electrolyzer('sand_electrolysis')             
+        .itemInputs('8x #forge:sand')
+        .itemOutputs('gtceu:silicon_dioxide_dust')
+        .duration(500)
+        .EUt(25)
+
+    //#endregion
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+    /*
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
@@ -380,5 +451,5 @@ const registerGTCEURecipes = (event) => {
     // Latex -> Sticky Resin
     event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('gtceu:latex', 1000), 5000, 300)
         .itemOutput('gtceu:sticky_resin')
-        .id('tfg:pot/sticky_resin')
+        .id('tfg:pot/sticky_resin')*/
 }
