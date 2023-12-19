@@ -122,14 +122,14 @@ const registerGTCEURecipes = (event) => {
     //#region Выход: Каменный стержень
 
     // Из сырого камня
-    event.recipes.gtceu.macerator('stone_rod_from_stone')             
+    event.recipes.gtceu.lathe('stone_rod_from_stone')             
         .itemInputs('#tfc:rock/raw')
         .itemOutputs('gtceu:stone_rod', 'gtceu:stone_small_dust')
         .duration(15)
         .EUt(2)
 
     // Из булыжника
-    event.recipes.gtceu.macerator('stone_rod_from_cobblestone')             
+    event.recipes.gtceu.lathe('stone_rod_from_cobblestone')             
         .itemInputs('#forge:cobblestone')
         .itemOutputs('gtceu:stone_rod', 'gtceu:stone_small_dust')
         .duration(15)
@@ -306,7 +306,7 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
-    //#region Раскрафт ТФК рыбы в масло
+    //#region Выход: Рыбье масло
 
     /*
     event.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
@@ -322,7 +322,7 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
-    //#region Раскрафт ТФК семян
+    //#region Выход: Семянное масло
 
     /*
     event.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
@@ -335,6 +335,62 @@ const registerGTCEURecipes = (event) => {
         .outputFluids(Fluid.of('gtceu:seed_oil', 16))
         .duration(32)
         .EUt(2)*/
+
+    //#endregion
+
+    //#region Выход: Цемент
+
+    generateMixerRecipe(
+        event, 
+        ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'], 
+        Fluid.of('minecraft:water', 1000),
+        [],
+        Fluid.of('gtceu:concrete', 1152),
+        40,
+        16,
+        64,
+        'concrete_from_marble'
+    )
+
+    generateMixerRecipe(
+        event, 
+        ['3x #tfg:stone_dusts', 'gtceu:clay_dust'], 
+        Fluid.of('minecraft:water', 500),
+        [],
+        Fluid.of('gtceu:concrete', 576),
+        20,
+        16,
+        64,
+        'concrete_from_clay'
+    )
+
+    generateMixerRecipe(
+        event, 
+        ['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'], 
+        Fluid.of('minecraft:water', 1000),
+        [],
+        Fluid.of('gtceu:concrete', 1152),
+        40,
+        16,
+        64,
+        'concrete_from_calcite'
+    )
+
+    //#endregion
+
+    //#region Выход: Бурильная жидкость
+    
+    generateMixerRecipe(
+        event, 
+        ['2x #tfg:stone_dusts'], 
+        [Fluid.of('gtceu:lubricant', 20), Fluid.of('minecraft:water', 4000)],
+        [],
+        Fluid.of('gtceu:drilling_fluid', 5000),
+        40,
+        16,
+        64,
+        'drilling_fluid'
+    )
 
     //#endregion
 
@@ -653,4 +709,29 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.large_boiler('lava_bucket')             
         .itemInputs('minecraft:lava_bucket')
         .duration(25)
+}
+
+const generateMixerRecipe = (event, input, fluid_input, output, fluid_output, duration, EUt, rpm, id) => {
+    event.recipes.gtceu.mixer(id)             
+        .itemInputs(input)
+        .inputFluids(fluid_input)
+        .itemOutputs(output)
+        .outputFluids(fluid_output)
+        .duration(duration)
+        .EUt(EUt)
+
+    event.recipes.gtceu.create_mixer(id)             
+        .itemInputs(input)
+        .inputFluids(fluid_input)
+        .itemOutputs(output)
+        .outputFluids(fluid_output)
+        .duration(duration)
+        .EUt(EUt)
+        .rpm(rpm)
+}
+
+const generateCutterRecipe = () => {
+    // Вот зачем я, скажете вы, делаю тут всякие костыли, 
+    // потому что блядский разработчик GTCEu не может исправить баги своего мода
+    // Я так устал..
 }

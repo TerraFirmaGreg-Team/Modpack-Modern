@@ -8,7 +8,7 @@ ServerEvents.tags('item', event => {
     // registerFirmaLifeItemTags(event)
     // registerSmallShipsItemTags(event)
     registerMinecraftItemTags(event)
-    // registerGTCEUItemTags(event)
+    registerGTCEUItemTags(event)
     // registerAE2ItemTags(event)
     // registerCreateItemTags(event)
     registerAdAstraItemTags(event)

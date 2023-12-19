@@ -53,6 +53,7 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Булыжник
 
+    event.remove({ id: 'gtceu:shaped/cobblestone_hammer' })
     event.remove({ id: 'ae2:entropy/cool/stone_cobblestone' })
     event.remove({ id: 'gtceu:forge_hammer/stone_to_cobblestone' })
     event.remove({ id: 'gtceu:rock_breaker/cobblestone' })
@@ -991,13 +992,43 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Кремний
+
+    event.shapeless('minecraft:flint', [
+        '#tfc:rock/gravel',
+        '#forge:tools/mortars'
+    ]).id('gtceu:shapeless/gravel_to_flint')
+
+    event.recipes.gtceu.sifter('gravel_sifting')             
+        .itemInputs('#tfc:rock/gravel')
+        .itemOutputs('minecraft:flint')
+        .chancedOutput('minecraft:flint', 9000, 0)
+        .chancedOutput('minecraft:flint', 8000, 0)
+        .chancedOutput('minecraft:flint', 6000, 0)
+        .chancedOutput('minecraft:flint', 3300, 0)
+        .chancedOutput('minecraft:flint', 2500, 0)
+        .duration(100)
+        .EUt(16)
+
+    //#endregion
+
+    //#region Выход: Блок глины
+
+    event.remove({ id: 'gtceu:fluid_heater/mud_to_clay' })
+
+    //#endregion
+    
+    //#region Выход: Мангровые корни в грязи
+
+    event.remove({ id: 'minecraft:muddy_mangrove_roots' })
+
+    //#endregion
 
 
 
 
 
-
-
+    
     //#region Выход:
 
     // event.remove({ id: '' })
@@ -1009,7 +1040,7 @@ const registerMinecraftRecipes = (event) => {
     //#region Рецепты где на выходе булыга
 
     // Камень -> Булыга (Верстак)
-    event.remove({ id: 'gtceu:shaped/cobblestone_hammer' })
+    
 
     //#endregion
 
