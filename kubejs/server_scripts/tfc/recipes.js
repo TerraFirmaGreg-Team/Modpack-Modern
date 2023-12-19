@@ -972,6 +972,16 @@ const registerTFCRecipes = (event) => {
         event.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)
             .id(`tfg:smelting/${mud}_drying_brick_to_brick`)
 
+        event.custom({
+            type: "firmalife:drying",
+            ingredient: {
+                item: `tfc:drying_bricks/${mud}`
+            },
+            result: {
+                item: `tfc:mud_brick/${mud}`
+            }
+        }).id(`tfg:drying/${mud}_drying_brick_to_brick`)
+
         // Кирпич -> Блок кирпичей
         event.shaped(`tfc:mud_bricks/${mud}`, [
             'ABA',
@@ -992,6 +1002,9 @@ const registerTFCRecipes = (event) => {
         // Блок кирпичей -> Ступени
         event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_stairs` })
 
+        event.stonecutting(`tfc:mud_bricks/${mud}_stairs`, `tfc:mud_bricks/${mud}`)
+            .id(`tfc:stonecutting/soil/${mud}_mud_bricks_stairs`)
+
         event.recipes.gtceu.cutter(`${mud}_mud_bricks_to_stairs`)             
             .itemInputs(`tfc:mud_bricks/${mud}`)
             .circuit(0)
@@ -1002,6 +1015,9 @@ const registerTFCRecipes = (event) => {
         // Блок кирпичей -> Плиты
         event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_slab` })
 
+        event.stonecutting(`2x tfc:mud_bricks/${mud}_slab`, `tfc:mud_bricks/${mud}`)
+            .id(`tfc:stonecutting/soil/${mud}_mud_bricks_slab`)
+
         event.recipes.gtceu.cutter(`${mud}_mud_bricks_to_slab`)             
             .itemInputs(`tfc:mud_bricks/${mud}`)
             .circuit(1)
@@ -1011,6 +1027,9 @@ const registerTFCRecipes = (event) => {
 
         // Блок кирпичей -> Стена
         event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_wall` })
+
+        event.stonecutting(`tfc:mud_bricks/${mud}_wall`, `tfc:mud_bricks/${mud}`)
+            .id(`tfc:stonecutting/soil/${mud}_mud_bricks_wall`)
 
         event.recipes.gtceu.cutter(`${mud}_mud_bricks_to_wall`)             
             .itemInputs(`tfc:mud_bricks/${mud}`)
