@@ -8,7 +8,7 @@ const registerTFCItemTags = (event) => {
     })
 
     // Теги для соответствия инструментов TFC и GT
-    event.add('tfc:axes', '#forge:tools/tree_felling')
+    event.add('tfc:axes', '#minecraft:axes')
     event.add('tfc:hammers', '#forge:tools/hammers')
     event.add('tfc:hoes', '#minecraft:hoes')
     event.add('tfc:knives', '#forge:tools/knives')

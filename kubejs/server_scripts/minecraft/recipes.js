@@ -929,7 +929,11 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Камнерез
 
+    event.remove({ id: 'minecraft:stonecutter' })
+
+    //#endregion
 
 
 
