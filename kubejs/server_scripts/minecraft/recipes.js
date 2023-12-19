@@ -1,6 +1,7 @@
 // priority: 0
 
 const registerMinecraftRecipes = (event) => {
+    
     //#region Выход: Камень
 
     event.remove({ id: 'minecraft:stone' })

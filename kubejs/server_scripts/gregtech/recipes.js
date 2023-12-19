@@ -59,46 +59,111 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Соленая пыль + Вода
 
+    // Декрафт в центрифуге
+    event.recipes.gtceu.centrifuge('centrifuging_tfc_salt_water')             
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('1x gtceu:salt_dust')
+        .outputFluids(Fluid.of('minecraft:water', 500))
+        .duration(51)
+        .EUt(30)
+
+    // Декрафт в электролайзере
+    event.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')             
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:sodium_hydroxide_small_dust')
+        .outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
+        .duration(720)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Крошечная кучка камня
+
+    event.remove({ id: 'gtceu:macerator/macerate_stone_button' })
+
+    //#endregion
     
+    //#region Выход: Маленькая кучка камня
 
+    event.remove({ id: 'gtceu:macerator/macerate_stone_stairs' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_slab' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_brick_stairs' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_brick_slab' })
+    event.remove({ id: 'gtceu:macerator/macerate_sandstone_stairs' })
+    event.remove({ id: 'gtceu:macerator/macerate_sandstone_slab' })
+    event.remove({ id: 'gtceu:macerator/macerate_red_sandstone_stairs' })
+    event.remove({ id: 'gtceu:macerator/macerate_red_sandstone_slab' })
+    event.remove({ id: 'gtceu:macerator/macerate_granite' })
+    event.remove({ id: 'gtceu:macerator/macerate_diorite' })
+    event.remove({ id: 'gtceu:macerator/macerate_cobblestone_slab' })
+    event.remove({ id: 'gtceu:macerator/macerate_andesite' })
+
+    //#endregion
     
+    //#region Выход: Кучка камня
 
+    event.remove({ id: 'gtceu:macerator/macerate_stone_sword' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_shovel' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_pressure_plate' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_pickaxe' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_hoe' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_bricks' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_axe' })
+    event.remove({ id: 'gtceu:macerator/macerate_mossy_cobblestone' })
+    event.remove({ id: 'gtceu:macerator/macerate_cobblestone_wall' })
+    event.remove({ id: 'gtceu:macerator/macerate_cobblestone' })
+    event.remove({ id: 'gtceu:macerator/gravel_to_flint' })
+    event.remove({ id: 'gtceu:macerator/macerate_furnace' })
 
+    //#endregion
 
+    //#region Выход: Каменный стержень
 
+    // Из сырого камня
+    event.recipes.gtceu.macerator('stone_rod_from_stone')             
+        .itemInputs('#tfc:rock/raw')
+        .itemOutputs('gtceu:stone_rod', 'gtceu:stone_small_dust')
+        .duration(15)
+        .EUt(2)
 
+    // Из булыжника
+    event.recipes.gtceu.macerator('stone_rod_from_cobblestone')             
+        .itemInputs('#forge:cobblestone')
+        .itemOutputs('gtceu:stone_rod', 'gtceu:stone_small_dust')
+        .duration(15)
+        .EUt(2)
 
+    //#endregion
 
-
-
-    /*
-    // Удаление рецептов связанных с Primitive Blast Furnace
-    event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
-    event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
-
-    // Удаление рецептов связанных с Barrel
-    event.remove({id: 'gtceu:shaped/wooden_barrel'})
-    event.remove({id: 'gtceu:assembler/wood_barrel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_wood_drum'})
-    event.remove({id: 'gtceu:macerator/macerate_wood_drum'})
-
-    // Удаление рецептов связанных с FireBricks
-    event.remove({id: 'gtceu:shaped/casing_primitive_bricks'})
-    event.remove({id: 'gtceu:macerator/macerate_firebricks'})
-    event.remove({id: 'gtceu:extractor/extract_primitive_bricks'})
-
-    // Удаление рецептов связанных с FireBrick
-    event.remove({id: 'gtceu:smelting/fireclay_brick'})
-    event.remove({id: 'gtceu:macerator/macerate_firebrick'})
-
-    // Удаление рецептов связанных с BioChaff
-    event.remove({id: 'gtceu:macerator/dirt_from_bio_chaff'})
+    //#region Выход: Сырая резиновая пыль
     
-    // Удаление других рецептов
-    //
-    
-    // Treated Wood Planks
+    // Из бревна капока
+    event.recipes.gtceu.extractor('raw_rubber_from_log')             
+        .itemInputs('#tfc:kapok_logs')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // Из саженца капока
+    event.recipes.gtceu.extractor('raw_rubber_from_sapling')             
+        .itemInputs('tfc:wood/sapling/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    // Из листвы капока
+    event.recipes.gtceu.extractor('raw_rubber_from_leaves')             
+        .itemInputs('16x tfc:wood/leaves/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .duration(300)
+        .EUt(2)
+
+    //#endregion
+
+    //#region Выход: Пропитанные доски
+
     event.shaped('8x gtceu:treated_wood_planks', [
         'AAA', 
         'ABA',
@@ -126,7 +191,172 @@ const registerGTCEURecipes = (event) => {
         B: Item.of('tfc:metal/bucket/blue_steel', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
     }).id('tfg:shaped/treated_wood_planks_blue_steel_bucket')
 
+    //#endregion
 
+    //#region Выход: Капля резины
+
+    // Из латекса
+    event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('gtceu:latex', 1000), 5000, 300)
+        .itemOutput('gtceu:sticky_resin')
+        .id('tfg:pot/sticky_resin')
+
+    // Из бревна капока
+    event.recipes.gtceu.centrifuge('rubber_log_separation')             
+        .itemInputs('#tfc:kapok_logs')
+        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
+        .chancedOutput('gtceu:plant_ball', 3750, 900)
+        .chancedOutput('gtceu:carbon_dust', 2500, 600)
+        .chancedOutput('gtceu:wood_dust', 2500, 700)
+        .outputFluids(Fluid.of('gtceu:methane', 60))
+        .duration(200)
+        .EUt(20)
+
+    //#endregion
+
+    //#region Выход: Растительный шарик
+
+    /*
+    // 8x Ванильная растительность -> Plant Ball (Compressor)
+    event.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_crimson_stem'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_tube_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_sugar_cane'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_red_mushroom'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_potato'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_nether_wart'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_horn_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_fire_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_carrot'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_cactus'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_bubble_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')             
+        .itemInputs('8x #tfc:seeds')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_food')             
+        .itemInputs('8x #tfc:foods')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_plants')             
+        .itemInputs('8x #tfc:plants')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('plant_ball_from_tfc_corals')             
+        .itemInputs('8x #tfc:corals')
+        .itemOutputs('gtceu:plant_ball')
+        .duration(300)
+        .EUt(2)
+
+    // TFC Plants -> Plant Ball (Centrifuge)
+    event.recipes.gtceu.centrifuge('grass_block_separation')             
+        .itemInputs('#tfc:plants')
+        .chancedOutput('gtceu:plant_ball', 3000, 1200)
+        .chancedOutput('gtceu:clay_tiny_dust', 5000, 900)
+        .duration(250)
+        .EUt(30)*/
+
+    //#endregion
+
+    //#region Выход: Биомасса
+
+    /*
+    // Ванильная растительность -> Биомасса (Brewery)
+    event.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
+    event.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
+    event.remove({id: 'gtceu:brewery/biomass_from_potato'})
+    event.remove({id: 'gtceu:brewery/biomass_from_carrot'})
+    event.remove({id: 'gtceu:brewery/biomass_from_cactus'})
+    event.remove({id: 'gtceu:brewery/biomass_from_brown_mushroom'})
+    event.remove({id: 'gtceu:brewery/biomass_from_beetroot'})
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_seeds')             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_food')             
+        .itemInputs('#tfc:foods')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_plants')             
+        .itemInputs('#tfc:plants')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)
+
+    event.recipes.gtceu.brewery('biomass_from_tfc_corals')             
+        .itemInputs('#tfc:corals')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .duration(128)
+        .EUt(3)*/
+
+    //#endregion
+
+    //#region Раскрафт ТФК рыбы в масло
+
+    /*
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
+    event.remove({ id: 'gtceu:extractor/fish_oil_from_cod' })
+
+    event.recipes.gtceu.extractor(`tfg/fish_oil`)             
+        .itemInputs('#minecraft:fishes')
+        .outputFluids(Fluid.of('gtceu:fish_oil', 40))
+        .duration(16)
+        .EUt(4)*/
+
+    //#endregion
+
+    //#region Раскрафт ТФК семян
+
+    /*
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_pumpkin' })
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_melon' })
+    event.remove({ id: 'gtceu:extractor/seed_oil_from_beetroot' })
+
+    event.recipes.gtceu.extractor(`tfg/seed_oil`)             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:seed_oil', 16))
+        .duration(32)
+        .EUt(2)*/
+
+    //#endregion
+
+    // Удаление рецептов связанных с Primitive Blast Furnace
+    event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
+    event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
+
+    // Удаление рецептов связанных с Barrel
+    event.remove({id: 'gtceu:shaped/wooden_barrel'})
+    event.remove({id: 'gtceu:assembler/wood_barrel'})
+    event.remove({id: 'gtceu:arc_furnace/arc_wood_drum'})
+    event.remove({id: 'gtceu:macerator/macerate_wood_drum'})
+
+    // Удаление рецептов связанных с FireBricks
+    event.remove({id: 'gtceu:shaped/casing_primitive_bricks'})
+    event.remove({id: 'gtceu:macerator/macerate_firebricks'})
+    event.remove({id: 'gtceu:extractor/extract_primitive_bricks'})
+
+    // Удаление рецептов связанных с FireBrick
+    event.remove({id: 'gtceu:smelting/fireclay_brick'})
+    event.remove({id: 'gtceu:macerator/macerate_firebrick'})
+    
     // Low Pressure Steam Forge Hammer
     event.shaped('gtceu:lp_steam_forge_hammer', [
         'ABA', 
@@ -242,10 +472,6 @@ const registerGTCEURecipes = (event) => {
         D: 'gtceu:uv_machine_hull',
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/uv_forge_hammer')
-
-    // Fire Brick
-    event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
-        .id('tfg:smelting/fireclay_brick')
 
     // TFC FireBrick -> FireBrick dust
     event.recipes.gtceu.macerator('macerate_firebrick')             
@@ -427,29 +653,4 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.large_boiler('lava_bucket')             
         .itemInputs('minecraft:lava_bucket')
         .duration(25)
-
-    //#region Фикс TFC Соленой воды
-
-    // Декрафт в центрифуге
-    event.recipes.gtceu.centrifuge('centrifuging_tfc_salt_water')             
-        .inputFluids(Fluid.of('tfc:salt_water', 1000))
-        .itemOutputs('1x gtceu:salt_dust')
-        .outputFluids(Fluid.of('minecraft:water', 500))
-        .duration(51)
-        .EUt(30)
-
-    // Декрафт в электролайзере
-    event.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')             
-        .inputFluids(Fluid.of('tfc:salt_water', 1000))
-        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:sodium_hydroxide_small_dust')
-        .outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
-        .duration(720)
-        .EUt(30)
-
-    //#endregion
-
-    // Latex -> Sticky Resin
-    event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('gtceu:latex', 1000), 5000, 300)
-        .itemOutput('gtceu:sticky_resin')
-        .id('tfg:pot/sticky_resin')*/
 }
