@@ -215,7 +215,6 @@ const registerGTCEURecipes = (event) => {
 
     //#region Выход: Растительный шарик
 
-    /*
     // 8x Ванильная растительность -> Plant Ball (Compressor)
     event.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
@@ -233,6 +232,7 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
+    event.remove({id: 'gtceu:compressor/plant_ball_from_moss'})
 
     event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')             
         .itemInputs('8x #tfc:seeds')
@@ -258,19 +258,10 @@ const registerGTCEURecipes = (event) => {
         .duration(300)
         .EUt(2)
 
-    // TFC Plants -> Plant Ball (Centrifuge)
-    event.recipes.gtceu.centrifuge('grass_block_separation')             
-        .itemInputs('#tfc:plants')
-        .chancedOutput('gtceu:plant_ball', 3000, 1200)
-        .chancedOutput('gtceu:clay_tiny_dust', 5000, 900)
-        .duration(250)
-        .EUt(30)*/
-
     //#endregion
 
     //#region Выход: Биомасса
 
-    /*
     // Ванильная растительность -> Биомасса (Brewery)
     event.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
     event.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
@@ -302,13 +293,12 @@ const registerGTCEURecipes = (event) => {
         .itemInputs('#tfc:corals')
         .outputFluids(Fluid.of('gtceu:biomass', 20))
         .duration(128)
-        .EUt(3)*/
+        .EUt(3)
 
     //#endregion
 
     //#region Выход: Рыбье масло
 
-    /*
     event.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
     event.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
     event.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
@@ -318,13 +308,12 @@ const registerGTCEURecipes = (event) => {
         .itemInputs('#minecraft:fishes')
         .outputFluids(Fluid.of('gtceu:fish_oil', 40))
         .duration(16)
-        .EUt(4)*/
+        .EUt(4)
 
     //#endregion
 
     //#region Выход: Семянное масло
 
-    /*
     event.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
     event.remove({ id: 'gtceu:extractor/seed_oil_from_pumpkin' })
     event.remove({ id: 'gtceu:extractor/seed_oil_from_melon' })
@@ -334,7 +323,7 @@ const registerGTCEURecipes = (event) => {
         .itemInputs('#tfc:seeds')
         .outputFluids(Fluid.of('gtceu:seed_oil', 16))
         .duration(32)
-        .EUt(2)*/
+        .EUt(2)
 
     //#endregion
 
