@@ -951,9 +951,48 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    
+    //#region Выход: Плотная грязь
 
-    
+    event.remove({ id: 'minecraft:packed_mud' })
+
+    //#endregion
+
+    //#region Выход: Грязные кирпичи
+
+    event.remove({ id: 'minecraft:mud_bricks' })
+
+    //#endregion
+
+    //#region Выход: Грязные кирпичи ступень
+
+    event.remove({ id: 'minecraft:mud_brick_stairs' })
+    event.remove({ id: 'minecraft:mud_brick_stairs_from_mud_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Грязные кирпичи плита
+
+    event.remove({ id: 'minecraft:mud_brick_slab' })
+    event.remove({ id: 'minecraft:mud_brick_slab_from_mud_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Грязные кирпичи стена
+
+    event.remove({ id: 'minecraft:mud_brick_wall' })
+    event.remove({ id: 'minecraft:mud_brick_wall_from_mud_bricks_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Медный блок (Подчищаем за разрабом грега)
+
+    event.remove({ id: 'minecraft:copper_block' })
+
+    //#endregion
+
+
+
+
 
 
 

@@ -631,6 +631,13 @@ global.TFC_WOOD_TYPES = [
     "willow"
 ];
 
+global.TFC_MUD_TYPES = [
+    'silt',
+    'loam',
+    'sandy_loam',
+    'silty_loam'
+];
+
 global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
     '#tfc:lumber': { name: 'lumber', output: ['1x gtceu:wood_dust'] },
     '#tfc:support_beams': { name: 'support_beams', output: ['2x gtceu:wood_dust'] },

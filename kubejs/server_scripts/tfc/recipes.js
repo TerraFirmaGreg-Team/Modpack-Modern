@@ -896,6 +896,133 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Земля
+
+    // Loam + Silt -> Silty Loam (Миксер)
+    event.recipes.gtceu.mixer('silty_loam_dirt')             
+        .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
+        .itemOutputs('tfc:dirt/silty_loam')
+        .duration(1600)
+        .EUt(12)
+
+    // Silty Loam + Sticks -> Rooted Silty Loam (Миксер)
+    event.recipes.gtceu.mixer('rooted_silty_loam_dirt')             
+        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
+        .itemOutputs('tfc:rooted_dirt/silty_loam')
+        .duration(1600)
+        .EUt(12)
+
+    // Loam + Sand -> Sandy Loam (Миксер)
+    event.recipes.gtceu.mixer('sandy_loam_dirt')             
+        .itemInputs('tfc:dirt/loam', '#forge:sand')
+        .itemOutputs('tfc:dirt/sandy_loam')
+        .duration(1600)
+        .EUt(12)
+
+    // Loam + Silt -> Silty Loam (Create Миксер)
+    event.recipes.gtceu.create_mixer('silty_loam_dirt')             
+        .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
+        .itemOutputs('tfc:dirt/silty_loam')
+        .duration(1600)
+        .EUt(12)
+        .rpm(60)
+
+    // Silty Loam + Sticks -> Rooted Silty Loam (Create Миксер)
+    event.recipes.gtceu.create_mixer('rooted_silty_loam_dirt')             
+        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
+        .itemOutputs('tfc:rooted_dirt/silty_loam')
+        .duration(1600)
+        .EUt(12)
+        .rpm(60)
+
+    // Loam + Sand -> Sandy Loam (Create Миксер)
+    event.recipes.gtceu.create_mixer('sandy_loam_dirt')             
+        .itemInputs('tfc:dirt/loam', '#forge:sand')
+        .itemOutputs('tfc:dirt/sandy_loam')
+        .duration(1600)
+        .EUt(12)
+        .rpm(60)
+
+    global.TFC_MUD_TYPES.forEach(mud => {
+        event.smelting(`tfc:dirt/${mud}`, `tfc:mud/${mud}`)
+            .id(`tfg:smelting/${mud}_mud_to_grass`)
+    })
+
+    //#endregion
+
+    //#region Грязь
+
+    global.TFC_MUD_TYPES.forEach(mud => {
+        // Dirt -> Mud
+        event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)             
+            .itemInputs(`tfc:dirt/${mud}`)
+            .inputFluids(Fluid.of('minecraft:water', 100))
+            .itemOutputs(`tfc:mud/${mud}`)
+            .duration(200)
+            .EUt(16)
+    })
+
+    //#endregion
+
+    //#region Грязь кирпичи
+    
+    global.TFC_MUD_TYPES.forEach(mud => {
+        
+        // Влажный кирпич -> Кирпич
+        event.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)
+            .id(`tfg:smelting/${mud}_drying_brick_to_brick`)
+
+        // Кирпич -> Блок кирпичей
+        event.shaped(`tfc:mud_bricks/${mud}`, [
+            'ABA',
+            'BAB',
+            'ABA'  
+        ], {
+            A: `tfc:mud_brick/${mud}`,
+            B: '#tfc:mortar'
+        }).id(`tfc:crafting/soil/${mud}_mud_bricks`)
+
+        event.recipes.gtceu.assembler(`mud_bricks_${mud}`)             
+            .itemInputs(`5x tfc:mud_brick/${mud}`)
+            .inputFluids(Fluid.of('gtceu:concrete', 72))
+            .itemOutputs(`4x tfc:mud_bricks/${mud}`)
+            .duration(50)
+            .EUt(2)
+
+        // Блок кирпичей -> Ступени
+        event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_stairs` })
+
+        event.recipes.gtceu.cutter(`${mud}_mud_bricks_to_stairs`)             
+            .itemInputs(`tfc:mud_bricks/${mud}`)
+            .circuit(0)
+            .itemOutputs(`tfc:mud_bricks/${mud}_stairs`)
+            .duration(100)
+            .EUt(8)
+
+        // Блок кирпичей -> Плиты
+        event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_slab` })
+
+        event.recipes.gtceu.cutter(`${mud}_mud_bricks_to_slab`)             
+            .itemInputs(`tfc:mud_bricks/${mud}`)
+            .circuit(1)
+            .itemOutputs(`2x tfc:mud_bricks/${mud}_slab`)
+            .duration(100)
+            .EUt(8)
+
+        // Блок кирпичей -> Стена
+        event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_wall` })
+
+        event.recipes.gtceu.cutter(`${mud}_mud_bricks_to_wall`)             
+            .itemInputs(`tfc:mud_bricks/${mud}`)
+            .circuit(2)
+            .itemOutputs(`tfc:mud_bricks/${mud}_wall`)
+            .duration(100)
+            .EUt(8)
+        
+    })
+
+    //#endregion
+
     //#region Камень
 
     global.TFC_STONE_TYPES.forEach(stone => {
@@ -941,7 +1068,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_raw_to_wall`)             
             .itemInputs(`tfc:rock/raw/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/raw/${stone}_wall`)
+            .itemOutputs(`tfc:rock/raw/${stone}_wall`)
             .duration(100)
             .EUt(8)
 
@@ -1036,7 +1163,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_cobble_to_wall`)             
             .itemInputs(`tfc:rock/cobble/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/cobble/${stone}_wall`)
+            .itemOutputs(`tfc:rock/cobble/${stone}_wall`)
             .duration(100)
             .EUt(8)
 
@@ -1087,7 +1214,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_smooth_to_wall`)             
             .itemInputs(`tfc:rock/smooth/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/smooth/${stone}_wall`)
+            .itemOutputs(`tfc:rock/smooth/${stone}_wall`)
             .duration(100)
             .EUt(8)
 
@@ -1130,7 +1257,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_bricks_to_wall`)             
             .itemInputs(`tfc:rock/bricks/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/bricks/${stone}_wall`)
+            .itemOutputs(`tfc:rock/bricks/${stone}_wall`)
             .duration(100)
             .EUt(8)
 
@@ -1171,7 +1298,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_cracked_bricks_to_wall`)             
             .itemInputs(`tfc:rock/cracked_bricks/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/cracked_bricks/${stone}_wall`)
+            .itemOutputs(`tfc:rock/cracked_bricks/${stone}_wall`)
             .duration(100)
             .EUt(8)
 
@@ -1231,7 +1358,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_mossy_cobble_to_wall`)             
             .itemInputs(`tfc:rock/mossy_cobble/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/mossy_cobble/${stone}_wall`)
+            .itemOutputs(`tfc:rock/mossy_cobble/${stone}_wall`)
             .duration(100)
             .EUt(8)
 
@@ -1274,7 +1401,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.cutter(`${stone}_mossy_bricks_to_wall`)             
             .itemInputs(`tfc:rock/mossy_bricks/${stone}`)
             .circuit(2)
-            .itemOutputs(`2x tfc:rock/mossy_bricks/${stone}_wall`)
+            .itemOutputs(`tfc:rock/mossy_bricks/${stone}_wall`)
             .duration(100)
             .EUt(8)
 

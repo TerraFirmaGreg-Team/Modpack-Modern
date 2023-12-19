@@ -110,6 +110,13 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:deepslate', 
     'minecraft:reinforced_deepslate',
 
+    // Грязь
+    'minecraft:mud_brick_wall', 
+    'minecraft:packed_mud', 
+    'minecraft:mud_bricks', 
+    'minecraft:mud_brick_stairs', 
+    'minecraft:mud_brick_slab',
+
     // Руды
     'minecraft:coal_ore', 
     'minecraft:iron_ore', 
@@ -322,7 +329,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:mangrove_propagule",
     "minecraft:mangrove_log",
     // "minecraft:mangrove_roots",
-    // "minecraft:muddy_mangrove_roots",
+    "minecraft:muddy_mangrove_roots",
     "minecraft:stripped_mangrove_log",
     "minecraft:stripped_mangrove_wood",
     "minecraft:mangrove_wood",
@@ -353,7 +360,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:netherite_scrap',
     'minecraft:suspicious_gravel',
     'minecraft:stonecutter',
-    'minecraft:gravel'
+    'minecraft:gravel',
+    'minecraft:gold_ingot',
+    'minecraft:copper_ingot'
 
     /*
     // Other
