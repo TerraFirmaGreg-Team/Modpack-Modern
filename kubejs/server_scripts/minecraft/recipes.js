@@ -1162,6 +1162,7 @@ const registerMinecraftRecipes = (event) => {
         .EUt(2)
 
     // Pink
+    event.remove({id: 'minecraft:pink_dye_from_pink_petals'})
     event.remove({id: 'minecraft:pink_dye_from_pink_tulip'})
     event.remove({id: 'minecraft:pink_dye_from_peony'})
     event.remove({id: 'gtceu:extractor/pink_tulip_dye'})
@@ -1188,6 +1189,20 @@ const registerMinecraftRecipes = (event) => {
         'minecraft:paper',
         '#forge:dyes/white'
     ]).id('minecraft:flower_banner_pattern')
+
+    //#endregion
+
+    //#region Выход: Высушенные водросли
+
+    event.remove({ id: 'minecraft:dried_kelp' })
+    event.remove({ id: 'minecraft:dried_kelp_from_smelting' })
+    event.remove({ id: 'minecraft:dried_kelp_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Высушенные водросли блок
+
+    event.remove({ id: 'minecraft:dried_kelp_block' })
 
     //#endregion
 
