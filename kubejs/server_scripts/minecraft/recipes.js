@@ -1206,6 +1206,14 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    
+
+
+
+
+
+
+
     //#region Выход:
 
     // event.remove({ id: '' })

@@ -58,5 +58,10 @@ const registerFirmaLifeRecipes = (event) => {
     event.recipes.tfc.heating('tfc:jar_lid', 230)
         .resultFluid(Fluid.of('gtceu:tin', 9))
         .id(`tfc:heating/jar_lid`)
+
+    // Pie Pan
+    event.recipes.tfc.anvil('4x firmalife:pie_pan', '#forge:plates/wrought_iron', ["hit_last", "hit_second_last", "draw_third_last"])
+        .tier(3)
+        .id('firmalife:anvil/pie_pan')
         
 }
