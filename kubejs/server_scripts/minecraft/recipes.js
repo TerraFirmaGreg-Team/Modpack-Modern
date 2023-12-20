@@ -1036,19 +1036,164 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Красители
+
+    // White
+    event.remove({id: 'minecraft:white_dye_from_lily_of_the_valley'})
+    event.remove({id: 'gtceu:extractor/lily_of_the_valley_dye'})
+    
+    event.recipes.gtceu.extractor('white_dye')             
+        .itemInputs('1x #tfc:makes_white_dye')
+        .itemOutputs('2x minecraft:white_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Red
+    event.remove({id: 'minecraft:red_dye_from_tulip'})
+    event.remove({id: 'minecraft:red_dye_from_rose_bush'})
+    event.remove({id: 'minecraft:red_dye_from_poppy'})
+    event.remove({id: 'minecraft:red_dye_from_beetroot'})
+    event.remove({id: 'gtceu:extractor/rose_bush_dye'})
+    event.remove({id: 'gtceu:extractor/red_tulip_dye'})
+    event.remove({id: 'gtceu:extractor/poppy_dye'})
+    event.remove({id: 'gtceu:extractor/beetroot_dye'})
+    
+    event.recipes.gtceu.extractor('red_dye')             
+        .itemInputs('1x #tfc:makes_red_dye')
+        .itemOutputs('2x minecraft:red_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Lime
+    event.recipes.gtceu.extractor('lime_dye')             
+        .itemInputs('1x tfc:plant/moss')
+        .itemOutputs('2x minecraft:lime_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Light Blue
+    event.remove({id: 'minecraft:light_blue_dye_from_blue_orchid'})
+    event.remove({id: 'gtceu:extractor/blue_orchid_dye'})
+    
+    event.recipes.gtceu.extractor('light_blue_dye')             
+        .itemInputs('1x #tfc:makes_light_blue_dye')
+        .itemOutputs('2x minecraft:light_blue_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Green
+    event.recipes.gtceu.extractor('green_dye')             
+        .itemInputs('1x #tfc:makes_green_dye')
+        .itemOutputs('2x minecraft:green_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Magenta
+    event.remove({id: 'minecraft:magenta_dye_from_lilac'})
+    event.remove({id: 'minecraft:magenta_dye_from_allium'})
+    event.remove({id: 'gtceu:extractor/lilac_dye'})
+    event.remove({id: 'gtceu:extractor/allium_dye'})
+    
+    event.recipes.gtceu.extractor('magenta_dye')             
+        .itemInputs('1x #tfc:makes_magenta_dye')
+        .itemOutputs('2x minecraft:magenta_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Orange
+    event.remove({id: 'minecraft:orange_dye_from_torchflower'})
+    event.remove({id: 'minecraft:orange_dye_from_orange_tulip'})
+    event.remove({id: 'gtceu:extractor/orange_tulip_dye'})
+    
+    event.recipes.gtceu.extractor('orange_dye')             
+        .itemInputs('1x #tfc:makes_orange_dye')
+        .itemOutputs('2x minecraft:orange_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Purple
+    event.recipes.gtceu.extractor('purple_dye')             
+        .itemInputs('1x #tfc:makes_purple_dye')
+        .itemOutputs('2x minecraft:purple_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Brown
+    event.recipes.gtceu.extractor('brown_dye')             
+        .itemInputs('1x #tfc:makes_brown_dye')
+        .itemOutputs('2x minecraft:brown_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Light Gray
+    event.remove({id: 'minecraft:light_gray_dye_from_white_tulip'})
+    event.remove({id: 'minecraft:light_gray_dye_from_azure_bluet'})
+    event.remove({id: 'minecraft:light_gray_dye_from_oxeye_daisy'})
+    event.remove({id: 'gtceu:extractor/white_tulip_dye'})
+    event.remove({id: 'gtceu:extractor/azure_bluet_dye'})
+    event.remove({id: 'gtceu:extractor/oxeye_daisy_dye'})
+
+    event.recipes.gtceu.extractor('light_gray_dye')             
+        .itemInputs('1x tfc:plant/yucca')
+        .itemOutputs('2x minecraft:light_gray_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Yellow
+    event.remove({id: 'minecraft:yellow_dye_from_sunflower'})
+    event.remove({id: 'minecraft:yellow_dye_from_dandelion'})
+    event.remove({id: 'gtceu:extractor/sunflower_dye'})
+    event.remove({id: 'gtceu:extractor/dandelion_dye'})
+    
+    event.recipes.gtceu.extractor('yellow_dye')             
+        .itemInputs('1x #tfc:makes_yellow_dye')
+        .itemOutputs('2x minecraft:yellow_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Blue
+    event.remove({id: 'minecraft:blue_dye_from_cornflower'})
+    event.remove({id: 'gtceu:extractor/cornflower_dye'})
+    
+    event.recipes.gtceu.extractor('blue_dye')             
+        .itemInputs('1x #tfc:makes_blue_dye')
+        .itemOutputs('2x minecraft:blue_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Pink
+    event.remove({id: 'minecraft:pink_dye_from_pink_tulip'})
+    event.remove({id: 'minecraft:pink_dye_from_peony'})
+    event.remove({id: 'gtceu:extractor/pink_tulip_dye'})
+    event.remove({id: 'gtceu:extractor/peony_dye'})
+    
+    event.recipes.gtceu.extractor('pink_dye')             
+        .itemInputs('1x #tfc:makes_pink_dye')
+        .itemOutputs('2x minecraft:pink_dye')
+        .duration(200)
+        .EUt(2)
+
+    // Cyan
+    event.remove({id: 'minecraft:cyan_dye_from_pitcher_plant'})
+
+    // Black
+    event.remove({id: 'minecraft:black_dye_from_wither_rose'})
+    event.remove({id: 'gtceu:extractor/wither_rose_dye'})
+
+    //#endregion
+
+    //#region Выход: Шаблон баннера
+    
+    event.shapeless('minecraft:flower_banner_pattern', [
+        'minecraft:paper',
+        '#forge:dyes/white'
+    ]).id('minecraft:flower_banner_pattern')
+
+    //#endregion
 
     //#region Выход:
 
     // event.remove({ id: '' })
-
-    //#endregion
-
-
-
-    //#region Рецепты где на выходе булыга
-
-    // Камень -> Булыга (Верстак)
-    
 
     //#endregion
 
@@ -1482,123 +1627,7 @@ const registerMinecraftRecipes = (event) => {
         .duration(100)
         .EUt(7)
 
-    // White Dye Recipes
-    event.remove({id: 'gtceu:extractor/lily_of_the_valley_dye'})
     
-    event.recipes.gtceu.extractor('white_dye')             
-        .itemInputs('1x #tfc:makes_white_dye')
-        .itemOutputs('2x minecraft:white_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Red Dye Recipes
-    event.remove({id: 'gtceu:extractor/rose_bush_dye'})
-    event.remove({id: 'gtceu:extractor/red_tulip_dye'})
-    event.remove({id: 'gtceu:extractor/poppy_dye'})
-    event.remove({id: 'gtceu:extractor/beetroot_dye'})
-    
-    event.recipes.gtceu.extractor('red_dye')             
-        .itemInputs('1x #tfc:makes_red_dye')
-        .itemOutputs('2x minecraft:red_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Lime Dye Recipes
-    event.remove({id: 'gtceu:extractor/rose_bush_dye'})
-    event.remove({id: 'gtceu:extractor/red_tulip_dye'})
-    event.remove({id: 'gtceu:extractor/poppy_dye'})
-    event.remove({id: 'gtceu:extractor/beetroot_dye'})
-    
-    event.recipes.gtceu.extractor('lime_dye')             
-        .itemInputs('1x tfc:plant/moss')
-        .itemOutputs('2x minecraft:lime_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Light Blue Dye Recipes
-    event.remove({id: 'gtceu:extractor/blue_orchid_dye'})
-    
-    event.recipes.gtceu.extractor('light_blue_dye')             
-        .itemInputs('1x #tfc:makes_light_blue_dye')
-        .itemOutputs('2x minecraft:light_blue_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Green Dye Recipes
-    event.recipes.gtceu.extractor('green_dye')             
-        .itemInputs('1x #tfc:makes_green_dye')
-        .itemOutputs('2x minecraft:green_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Magenta Dye Recipes
-    event.remove({id: 'gtceu:extractor/lilac_dye'})
-    event.remove({id: 'gtceu:extractor/allium_dye'})
-    
-    event.recipes.gtceu.extractor('magenta_dye')             
-        .itemInputs('1x #tfc:makes_magenta_dye')
-        .itemOutputs('2x minecraft:magenta_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Orange Dye Recipes
-    event.remove({id: 'gtceu:extractor/orange_tulip_dye'})
-    
-    event.recipes.gtceu.extractor('orange_dye')             
-        .itemInputs('1x #tfc:makes_orange_dye')
-        .itemOutputs('2x minecraft:orange_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Purple Dye Recipes
-    event.recipes.gtceu.extractor('purple_dye')             
-        .itemInputs('1x #tfc:makes_purple_dye')
-        .itemOutputs('2x minecraft:purple_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Brown Dye Recipes
-    event.recipes.gtceu.extractor('brown_dye')             
-        .itemInputs('1x #tfc:makes_brown_dye')
-        .itemOutputs('2x minecraft:brown_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Light Gray Dye Recipes
-    event.recipes.gtceu.extractor('light_gray_dye')             
-        .itemInputs('1x tfc:plant/yucca')
-        .itemOutputs('2x minecraft:light_gray_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Yellow Dye Recipes
-    event.remove({id: 'gtceu:extractor/sunflower_dye'})
-    event.remove({id: 'gtceu:extractor/dandelion_dye'})
-    
-    event.recipes.gtceu.extractor('yellow_dye')             
-        .itemInputs('1x #tfc:makes_yellow_dye')
-        .itemOutputs('2x minecraft:yellow_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Blue Dye Recipes
-    event.remove({id: 'gtceu:extractor/cornflower_dye'})
-    
-    event.recipes.gtceu.extractor('blue_dye')             
-        .itemInputs('1x #tfc:makes_blue_dye')
-        .itemOutputs('2x minecraft:blue_dye')
-        .duration(200)
-        .EUt(2)
-
-    // Pink Dye Recipes
-    event.remove({id: 'gtceu:extractor/pink_tulip_dye'})
-    event.remove({id: 'gtceu:extractor/peony_dye'})
-    
-    event.recipes.gtceu.extractor('pink_dye')             
-        .itemInputs('1x #tfc:makes_pink_dye')
-        .itemOutputs('2x minecraft:pink_dye')
-        .duration(200)
-        .EUt(2)
 
     // Фикс крафта ванильных ниток
     event.recipes.gtceu.macerator('macerate_wool')             
