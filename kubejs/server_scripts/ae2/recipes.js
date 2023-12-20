@@ -1457,36 +1457,32 @@ const registerAE2Recipes = (event) => {
 
     // Printed Calculation Processor
     event.recipes.gtceu.forming_press('ae2:printed_calculation_processor')
-        .itemInputs(
-            '#forge:plates/certus_quartz',
-            'ae2:calculation_processor_press',)
+        .itemInputs('#forge:plates/certus_quartz')
+        .notConsumable('ae2:calculation_processor_press')
         .itemOutputs('ae2:printed_calculation_processor')
         .duration(20)
         .EUt(480)
 
     // Printed Engineering Processor
     event.recipes.gtceu.forming_press('ae2:printed_engineering_processor')
-        .itemInputs(
-            '#forge:plates/diamond',
-            'ae2:engineering_processor_press',)
+        .itemInputs('#forge:plates/diamond')
+        .notConsumable('ae2:engineering_processor_press')
         .itemOutputs('ae2:printed_engineering_processor')
         .duration(20)
         .EUt(480)
 
     // Printed Logic Processor
     event.recipes.gtceu.forming_press('ae2:printed_logic_processor')
-    .itemInputs(
-            '#forge:plates/gold',
-            'ae2:logic_processor_press',)
+        .itemInputs('#forge:plates/gold')
+        .notConsumable('ae2:logic_processor_press')
         .itemOutputs('ae2:printed_logic_processor')
         .duration(20)
         .EUt(480)
 
     // Printed Silicon
     event.recipes.gtceu.forming_press('ae2:printed_silicon')
-        .itemInputs(
-            '#forge:plates/silicon',
-            'ae2:silicon_press',)
+        .itemInputs('#forge:plates/silicon')
+        .notConsumable('ae2:silicon_press')
         .itemOutputs('ae2:printed_silicon')
         .duration(20)
         .EUt(480)
