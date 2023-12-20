@@ -83,7 +83,7 @@ const registerAE2Recipes = (event) => {
     ], {
         A: 'ae2:basic_card',
         B: 'ae2:cell_component_1k',
-        C: 'minecraft:crafting_table'
+        C: '#tfc:workbenches'
     }).id('tfg:crafting/crafting_card')
 
     // Redstone Card

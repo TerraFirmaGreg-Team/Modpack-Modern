@@ -1268,12 +1268,317 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    /*
+    //#region Выход: Шалкеры
+
+    event.remove({ id: 'minecraft:shulker_box' })
+    event.remove({ id: 'tfc:barrel/dye/bleach_shulkers' })
+    event.remove({ id: 'gtceu:assembler/purple_shulker_box' })
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.remove({ id: `tfc:barrel/dye/${dye}_shulker` })
+    })
+
+    //#endregion
+
+    //#region Выход: Кондуит
+
+    event.remove({ id: 'minecraft:conduit' })
+
+    //#endregion
+
+    //#region Выход: Калиброванный сенсор Скалка
+    
+    event.remove({ id: 'minecraft:calibrated_sculk_sensor' })
+
+    //#endregion
+
+    //#region Выход: Вагонетка с сундуком
+
+    event.remove({ id: 'gtceu:assembler/chest_minecart' })
+
+    //#endregion
+    
+    //#region Выход: Верстак
+
+    event.remove({ id: 'tfc:crafting/vanilla/crafting_table' })
+    event.remove({ id: 'gtceu:assembler/crafting_table' })
+
+    //#endregion
+
+    //#region Выход: Хлеб
+
+    event.remove({ id: 'minecraft:bread' })
+
+    //#endregion
+
+    //#region Выход: Жаренная свинина
+
+    event.remove({ id: 'minecraft:cooked_porkchop' })
+    event.remove({ id: 'minecraft:cooked_porkchop_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Жаренная курятина
+
+    event.remove({ id: 'minecraft:cooked_chicken' })
+    event.remove({ id: 'minecraft:cooked_chicken_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Жаренная козлятина
+
+    event.remove({ id: 'minecraft:cooked_mutton' })
+    event.remove({ id: 'minecraft:cooked_mutton_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Жаренная зайчатина
+
+    event.remove({ id: 'minecraft:cooked_rabbit' })
+    event.remove({ id: 'minecraft:cooked_rabbit_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Жаренная коровятина
+
+    event.remove({ id: 'minecraft:cooked_beef' })
+    event.remove({ id: 'minecraft:cooked_beef_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Блок сена
+
+    event.recipes.gtceu.packer('hay_block')             
+        .itemInputs('9x tfc:straw')
+        .itemOutputs('minecraft:hay_block')
+        .duration(200)
+        .EUt(2)
+
+    //#endregion
+
+    //#region Выход: Торт
+
+    event.remove({ id: 'minecraft:cake' })
+
+    //#endregion
+
+    //#region Выход: Печеньки (Нееет)
+
+    event.remove({ id: 'minecraft:cookie' })
+
+    //#endregion
+
+    //#region Выход: Сундук
+
+    event.remove({ id: 'gtceu:assembler/chest' })
+
+    //#endregion
+
+    //#region Выход: Удочки
+
+    event.remove({ id: 'minecraft:warped_fungus_on_a_stick' })
+    event.remove({ id: 'minecraft:carrot_on_a_stick' })
+
+    //#endregion
+
+    //#region Выход: Светильник Джека
+
     event.recipes.gtceu.canner('jack_o_lantern')             
         .itemInputs('tfc:pumpkin')
         .itemOutputs('2x minecraft:pink_dye', 'minecraft:glowstone_dust')
         .duration(100)
-        .EUt(4)*/
+        .EUt(4)
+
+    //#endregion
+
+
+
+
+
+
+
+    //#region Шаблоны брони
+
+    event.remove({id: 'minecraft:wild_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:wayfinder_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:ward_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:vex_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:tide_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:spire_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:snout_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:silence_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:shaper_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:sentry_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:rib_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:raiser_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:host_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:eye_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:dune_armor_trim_smithing_template_smithing_trim'})
+    event.remove({id: 'minecraft:coast_armor_trim_smithing_template_smithing_trim'})
+
+    //#endregion
+
+    //#region Кольчуга
+    
+    event.remove({id: 'gtceu:shaped/chainmail_boots'})
+    event.remove({id: 'gtceu:shaped/chainmail_leggings'})
+    event.remove({id: 'gtceu:shaped/chainmail_chestplate'})
+    event.remove({id: 'gtceu:shaped/chainmail_helmet'})
+    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_boots'})
+    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_leggings'})
+    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_chestplate'})
+    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_helmet'})
+    event.remove({id: 'gtceu:macerator/macerate_chainmail_boots'})
+    event.remove({id: 'gtceu:macerator/macerate_chainmail_leggings'})
+    event.remove({id: 'gtceu:macerator/macerate_chainmail_chestplate'})
+    event.remove({id: 'gtceu:macerator/macerate_chainmail_helmet'})
+    event.remove({id: 'minecraft:iron_nugget_from_smelting'})
+    event.remove({id: 'minecraft:iron_nugget_from_blasting'})
+
+    //#endregion
+
+    //#region Железная броня
+
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_boots'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_leggings'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_chestplate'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_helmet'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_boots'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_leggings'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_chestplate'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_helmet'})
+    event.remove({id: 'gtceu:shaped/iron_horse_armor'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_horse_armor'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_horse_armor'})
+
+    //#endregion
+
+    //#region Золотая броня
+
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_boots'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_leggings'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_chestplate'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_helmet'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_boots'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_leggings'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_chestplate'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_helmet'})
+    event.remove({id: 'gtceu:shaped/golden_horse_armor'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_horse_armor'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_horse_armor'})
+    event.remove({id: 'minecraft:gold_nugget_from_smelting'})
+    event.remove({id: 'minecraft:gold_nugget_from_blasting'})
+
+    //#endregion
+
+    //#region Алмазная броня
+   
+    event.remove({id: 'gtceu:macerator/macerate_diamond_boots'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_leggings'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_chestplate'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_helmet'})
+    event.remove({id: 'gtceu:shaped/diamond_horse_armor'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_horse_armor'})
+
+    //#endregion
+
+    //#region Незеритовая броня
+    
+    event.remove({id: 'minecraft:netherite_helmet_smithing'})
+    event.remove({id: 'minecraft:netherite_chestplate_smithing'})
+    event.remove({id: 'minecraft:netherite_leggings_smithing'})
+    event.remove({id: 'minecraft:netherite_boots_smithing'})
+
+    //#endregion
+
+    //#region Деревянные инструменты
+    
+    event.remove({id: 'gtceu:macerator/macerate_wooden_sword'})
+    event.remove({id: 'gtceu:macerator/macerate_wooden_pickaxe'})
+    event.remove({id: 'gtceu:macerator/macerate_wooden_axe'})
+    event.remove({id: 'gtceu:macerator/macerate_wooden_shovel'})
+    event.remove({id: 'gtceu:macerator/macerate_wooden_hoe'})
+
+    //#endregion
+
+    //#region Каменные инстурменты
+    
+    event.remove({id: 'gtceu:macerator/macerate_stone_sword'})
+    event.remove({id: 'gtceu:macerator/macerate_stone_pickaxe'})
+    event.remove({id: 'gtceu:macerator/macerate_stone_axe'})
+    event.remove({id: 'gtceu:macerator/macerate_stone_shovel'})
+    event.remove({id: 'gtceu:macerator/macerate_stone_hoe'})
+
+    //#endregion
+
+    //#region Железные инструменты
+    
+    event.remove({id: 'gtceu:macerator/macerate_iron_sword'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_pickaxe'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_axe'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_shovel'})
+    event.remove({id: 'gtceu:macerator/macerate_iron_hoe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_sword'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_pickaxe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_axe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_shovel'})
+    event.remove({id: 'gtceu:arc_furnace/arc_iron_hoe'})
+
+    //#endregion
+
+    //#region Золотые инструменты
+    
+    event.remove({id: 'gtceu:macerator/macerate_golden_sword'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_pickaxe'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_axe'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_shovel'})
+    event.remove({id: 'gtceu:macerator/macerate_golden_hoe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_sword'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_pickaxe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_axe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_shovel'})
+    event.remove({id: 'gtceu:arc_furnace/arc_golden_hoe'})
+
+    //#endregion
+
+    //#region Алмазные инструменты
+    
+    event.remove({id: 'gtceu:macerator/macerate_diamond_sword'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_pickaxe'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_axe'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_shovel'})
+    event.remove({id: 'gtceu:macerator/macerate_diamond_hoe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_diamond_sword'})
+    event.remove({id: 'gtceu:arc_furnace/arc_diamond_pickaxe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_diamond_axe'})
+    event.remove({id: 'gtceu:arc_furnace/arc_diamond_shovel'})
+    event.remove({id: 'gtceu:arc_furnace/arc_diamond_hoe'})
+
+    //#endregion
+
+    //#region Незеритовые инструменты
+    
+    event.remove({id: 'minecraft:netherite_sword_smithing'})
+    event.remove({id: 'minecraft:netherite_pickaxe_smithing'})
+    event.remove({id: 'minecraft:netherite_axe_smithing'})
+    event.remove({id: 'minecraft:netherite_shovel_smithing'})
+    event.remove({id: 'minecraft:netherite_hoe_smithing'})
+
+    //#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    */
 
     //#region Выход:
 
@@ -1330,9 +1635,6 @@ const registerMinecraftRecipes = (event) => {
     // Удаление рецептов палок
     event.remove({id: 'minecraft:stick'})
 
-    // Удаление рецептов камня
-    event.remove({id: 'gtceu:compressor/stone_from_dust'})
-
     // Удаление рецептов жиги
     event.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
     event.remove({id: 'ad_astra:recipes/flint_and_steel'})
@@ -1358,139 +1660,6 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:arc_furnace/arc_furnace_minecart'})
     event.remove({id: 'gtceu:macerate/macerate_furnace_minecart'})
 
-    // Удаление рецептов связанных с Кольчугой
-    event.remove({id: 'gtceu:shaped/chainmail_boots'})
-    event.remove({id: 'gtceu:shaped/chainmail_leggings'})
-    event.remove({id: 'gtceu:shaped/chainmail_chestplate'})
-    event.remove({id: 'gtceu:shaped/chainmail_helmet'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_helmet'})
-    event.remove({id: 'minecraft:iron_nugget_from_smelting'})
-    event.remove({id: 'minecraft:iron_nugget_from_blasting'})
-
-    // Удаление рецептов связанных с Железной броней
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_helmet'})
-    event.remove({id: 'gtceu:shaped/iron_horse_armor'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_horse_armor'})
-
-    // Удаление рецептов связанных с Золотой броней
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_helmet'})
-    event.remove({id: 'gtceu:shaped/golden_horse_armor'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_horse_armor'})
-    event.remove({id: 'minecraft:gold_nugget_from_smelting'})
-    event.remove({id: 'minecraft:gold_nugget_from_blasting'})
-
-    // Удаление рецептов связанных с Алмазной броней
-    event.remove({id: 'gtceu:macerator/macerate_diamond_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_helmet'})
-    event.remove({id: 'gtceu:shaped/diamond_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_horse_armor'})
-
-    // Удаление рецептов сваязанных с Незеритовой броней
-    event.remove({id: 'minecraft:netherite_helmet_smithing'})
-    event.remove({id: 'minecraft:netherite_chestplate_smithing'})
-    event.remove({id: 'minecraft:netherite_leggings_smithing'})
-    event.remove({id: 'minecraft:netherite_boots_smithing'})
-
-    // Удаление рецептов связанных с шаблонами брони
-    event.remove({id: 'minecraft:wild_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:wayfinder_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:ward_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:vex_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:tide_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:spire_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:snout_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:silence_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:shaper_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:sentry_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:rib_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:raiser_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:host_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:eye_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:dune_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:coast_armor_trim_smithing_template_smithing_trim'})
-
-    // Удаление рецептов связанных с Деревянными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_wooden_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_hoe'})
-
-    // Удаление рецептов связанных с Каменными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_stone_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_hoe'})
-
-    // Удаление рецептов связанных с Железными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_iron_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_hoe'})
-
-    // Удаление рецептов связанных с Золотыми инструментами
-    event.remove({id: 'gtceu:macerator/macerate_golden_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_hoe'})
-
-    // Удаление рецептов связанных с Алмазными инструментами
-    event.remove({id: 'gtceu:macerator/macerate_diamond_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_hoe'})
-
-    // Удаление рецептов связанных с Незеритовыми инструментами
-    event.remove({id: 'minecraft:netherite_sword_smithing'})
-    event.remove({id: 'minecraft:netherite_pickaxe_smithing'})
-    event.remove({id: 'minecraft:netherite_axe_smithing'})
-    event.remove({id: 'minecraft:netherite_shovel_smithing'})
-    event.remove({id: 'minecraft:netherite_hoe_smithing'})
-
     // Удаление рецептов связанных с Repeater
     event.remove({id: 'minecraft:repeater'})
 
@@ -1507,26 +1676,6 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:shaped/iron_bars'})
     event.remove({id: 'gtceu:assembler/iron_bars'})
 
-    // Удаление рецептов связанных с Wheat
-    event.remove({id: 'minecraft:packed_mud'})
-    event.remove({id: 'minecraft:cookie'})
-    event.remove({id: 'minecraft:cake'})
-    event.remove({id: 'minecraft:bread'})
-    event.remove({id: 'gtceu:packer/hay_block'})
-    
-    // Удаление рецептов связанных с Wheat Dust
-    event.remove({id: 'gtceu:packer/package_wheat_tiny_dust'})
-    event.remove({id: 'gtceu:packer/package_wheat_small_dust'})
-    event.remove({id: 'gtceu:packer/unpackage_wheat_tiny_dust'})
-    event.remove({id: 'gtceu:packer/unpackage_wheat_small_dust'})
-    event.remove({id: 'gtceu:shaped/tiny_dust_assembling_wheat'})
-    event.remove({id: 'gtceu:shaped/small_dust_assembling_wheat'})
-    event.remove({id: 'gtceu:shaped/tiny_dust_disassembling_wheat'})
-    event.remove({id: 'gtceu:shaped/small_dust_disassembling_wheat'})
-    event.remove({id: 'gtceu:macerator/macerate_wheat'})
-    event.remove({id: 'gtceu:macerator/macerate_hay_block'})
-    event.remove({id: 'gtceu:shapeless/wheat_to_dust'})
-
     // Удаление рецептов связанных с TripWire Hook
     event.remove({id: 'minecraft:tripwire_hook'})
     event.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
@@ -1539,34 +1688,6 @@ const registerMinecraftRecipes = (event) => {
 
     // Удаление рецептов связанных с Saddle
     event.remove({id: 'gtceu:shaped/saddle'})
-
-    // Удаление рецептов связанных с песком
-    event.remove({id: 'gtceu:forge_hammer/smooth_sandstone_to_sand'})
-    event.remove({id: 'gtceu:forge_hammer/sandstone_to_sand'})
-    event.remove({id: 'gtceu:forge_hammer/chiseled_sandstone_to_sand'})
-
-    event.remove({id: 'gtceu:centrifuge/soul_sand_separation'})
-    event.remove({id: 'gtceu:centrifuge/mycelium_separation'})
-    event.remove({id: 'gtceu:centrifuge/endstone_separation'})
-
-    // Удаление рецептов связанных с красным песком
-    event.remove({id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand'})
-    event.remove({id: 'gtceu:forge_hammer/red_sandstone_to_red_sand'})
-    event.remove({id: 'gtceu:forge_hammer/chiseled_red_sandstone_to_red_sand'})
-
-    // Удаление рецептов связанных с SandStone
-    event.remove({id: 'minecraft:sandstone'})
-    event.remove({id: 'gtceu:compressor/sandstone'})
-
-    // Удаление рецептов связанных с Red SandStone
-
-    // Удаление рецептов блоков из RockBreaker
-    event.remove({id: 'gtceu:rock_breaker/stone'})
-    event.remove({id: 'gtceu:rock_breaker/obsidian'})
-    event.remove({id: 'gtceu:rock_breaker/granite'})
-    event.remove({id: 'gtceu:rock_breaker/diorite'})
-    event.remove({id: 'gtceu:rock_breaker/andesite'})
-    event.remove({id: 'gtceu:rock_breaker/cobblestone'})
 
     // Удаление рецептов связанных с книжными полками
     event.remove({id: 'minecraft:chiseled_bookshelf'})

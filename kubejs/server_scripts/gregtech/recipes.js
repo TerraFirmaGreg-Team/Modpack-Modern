@@ -524,6 +524,50 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Маленькая кучка мяса
+
+    event.remove({ id: 'gtceu:macerator/macerate_steak' })
+    event.remove({ id: 'gtceu:macerator/macerate_rabbit' })
+    event.remove({ id: 'gtceu:macerator/macerate_pork_chop' })
+
+    //#endregion
+
+    //#region Выход: Пыль мяса
+
+    event.remove({ id: 'gtceu:macerator/macerate_mutton' })
+    event.remove({ id: 'gtceu:macerator/macerate_chicken' })
+    
+    event.recipes.gtceu.macerator('macerate_meat_to_dust')             
+        .itemInputs('#tfc:foods/meats')
+        .itemOutputs('gtceu:meat_dust', 'gtceu:bone_tiny_dust')
+        .duration(100)
+        .EUt(2)
+
+    //#endregion
+    
+    //#region Выход: Пшеничная пыль
+
+    event.remove({ id: 'gtceu:shapeless/wheat_to_dust' })
+    event.remove({ id: 'gtceu:macerator/macerate_wheat' })
+    event.remove({ id: 'gtceu:macerator/macerate_hay_block' })
+
+    //#endregion
+
+    //#region Выход: Слиток кованного железа
+
+    event.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })
+
+    //#endregion
+
+
+
+
+
+
+
+
+
+
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
         'AAA', 

@@ -25,5 +25,5 @@ const registerMinecraftCategories = (event) => {
     event.remove('minecraft:plugins/waxing') // TODO: Сделать с вариантами TFC
     event.remove('minecraft:plugins/wax_scraping') // TODO: Сделать с вариантами TFC
     event.remove('minecraft:plugins/oxidizing') // TODO: Сделать с вариантами TFC
-    event.remove('minecraft:plugins/oxidation_scrapping') // TODO: Сделать с вариантами TFC
+    event.remove('minecraft:plugins/oxidation_scraping') // TODO: Сделать с вариантами TFC
 }
