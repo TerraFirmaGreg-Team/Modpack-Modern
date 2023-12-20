@@ -553,6 +553,16 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Пыль какао-бобов
+
+    event.recipes.gtceu.assembler('macerate_cocoa')             
+        .itemInputs('firmalife:food/cocoa_beans')
+        .itemOutputs('gtceu:cocoa_dust')
+        .duration(400)
+        .EUt(2)
+
+    //#endregion
+
     //#region Выход: Слиток кованного железа
 
     event.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })

@@ -1082,6 +1082,8 @@ const registerMinecraftRecipes = (event) => {
         .EUt(2)
 
     // Green
+    event.remove({id: 'minecraft:green_dye'})
+
     event.recipes.gtceu.extractor('green_dye')             
         .itemInputs('1x #tfc:makes_green_dye')
         .itemOutputs('2x minecraft:green_dye')
@@ -1119,6 +1121,8 @@ const registerMinecraftRecipes = (event) => {
         .EUt(2)
 
     // Brown
+    event.remove({id: 'minecraft:brown_dye' })
+
     event.recipes.gtceu.extractor('brown_dye')             
         .itemInputs('1x #tfc:makes_brown_dye')
         .itemOutputs('2x minecraft:brown_dye')
@@ -1391,7 +1395,11 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Спасательный компас
 
+    event.remove({ id: 'minecraft:recovery_compass' })
+
+    //#endregion
 
 
 
