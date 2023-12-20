@@ -2,8 +2,19 @@
 
 const hideMinecraftStuff = (event) => {
     global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
-        event.hide(item)
+        //event.hide(item)
     })
+
+    //event.hide(/spawn_egg/)
+    //event.hide('minecraft:light')
+    //event.hide('minecraft:repeating_command_block')
+    //event.hide('minecraft:command_block')
+    //event.hide('minecraft:structure_void')
+    // event.hide('minecraft:barrier')
+}
+
+const groupMinecraftStuff = (event) => {
+    
 }
 
 const registerMinecraftCategories = (event) => {

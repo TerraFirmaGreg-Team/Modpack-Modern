@@ -1,9 +1,9 @@
 // priority: 1
 
 REIEvents.hide('item', event => {
-    /*
+    
     hideMinecraftStuff(event)
-    hideTFCStuff(event)
+    /*hideTFCStuff(event)
     hideFirmaLifeStuff(event)
     hideGTCEUStuff(event)
     hideCreateStuff(event)
@@ -17,6 +17,7 @@ REIEvents.hide('item', event => {
 REIEvents.groupEntries(event => {
     /*groupGTCEUStuff(event)
     groupTFCStuff(event)*/
+    groupMinecraftStuff(event)
 })
 
 REIEvents.removeCategories(event => {

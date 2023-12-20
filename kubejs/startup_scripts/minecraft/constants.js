@@ -412,6 +412,19 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:sculk_catalyst', 
     'minecraft:sculk_shrieker', 
     'minecraft:dead_bush',
+    'minecraft:sugar_cane', 
+    'minecraft:red_mushroom', 
+    'minecraft:brown_mushroom', 
+    'minecraft:kelp', 
+    'minecraft:dried_kelp_block', 
+    'minecraft:dried_kelp', 
+    'minecraft:pink_petals',
+    'minecraft:wheat_seeds',
+    'minecraft:pumpkin_seeds', 
+    'minecraft:melon_seeds', 
+    'minecraft:wheat_seeds',
+    'minecraft:torchflower_seeds', 
+    'minecraft:beetroot_seeds',
 
     /*
     // Other

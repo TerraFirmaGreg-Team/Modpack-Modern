@@ -511,6 +511,19 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Бумажная пыль
+
+    event.remove({ id: 'gtceu:shaped/paper_dust' })
+
+    //#endregion
+
+    //#region Выход: Метан
+
+    event.remove({ id: 'gtceu:centrifuge/red_mushroom_separation' })
+    event.remove({ id: 'gtceu:centrifuge/brown_mushroom_separation' })
+
+    //#endregion
+
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
         'AAA', 

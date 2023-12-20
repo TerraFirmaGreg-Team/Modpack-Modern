@@ -1206,13 +1206,74 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    
+    //#region Выход: Бумага
 
+    event.remove({ id: 'gtceu:shaped/paper' })
 
+    event.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane' })
+    event.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled' })
 
+    event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
+        .itemInputs('tfc:papyrus')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
+        .itemOutputs('minecraft:paper')
+        .duration(100)
+        .EUt(7)
 
+    event.recipes.gtceu.chemical_bath('paper_from_papyrus')             
+        .itemInputs('tfc:papyrus')
+        .inputFluids(Fluid.of('minecraft:water', 100))
+        .itemOutputs('minecraft:paper')
+        .duration(100)
+        .EUt(7)
 
+    //#endregion
 
+    //#region Выход: Сахар
+
+    event.remove({ id: 'gtceu:shaped/sugar' })
+    event.remove({ id: 'minecraft:sugar_from_honey_bottle' })
+    event.remove({ id: 'gtceu:macerator/macerate_sugar_cane' })
+
+    event.recipes.gtceu.centrifuge('sugar')             
+        .itemInputs('tfc:food/sugarcane')
+        .inputFluids(Fluid.of('minecraft:water', 600))
+        .itemOutputs('minecraft:sugar')
+        .duration(800)
+        .EUt(6)
+
+    //#endregion
+
+    //#region Выход: Ферментированный паучий глаз
+
+    event.remove({ id: 'minecraft:fermented_spider_eye' })
+    event.remove({ id: 'gtceu:mixer/fermented_spider_eye_red' })
+    event.remove({ id: 'gtceu:mixer/fermented_spider_eye_brown' })
+    event.remove({ id: 'gtceu:create_mixer/fermented_spider_eye_red' })
+    event.remove({ id: 'gtceu:create_mixer/fermented_spider_eye_brown' })
+
+    //#endregion
+
+    //#region Выход: Семена тыквы
+
+    event.remove({ id: 'minecraft:pumpkin_seeds' })
+    event.remove({ id: 'gtceu:macerator/macerate_pumpkin' })
+
+    //#endregion
+
+    //#region Выход: Семена арбуза
+
+    event.remove({ id: 'gtceu:macerator/macerate_melon_slice' })
+    event.remove({ id: 'gtceu:macerator/macerate_melon_block' })
+
+    //#endregion
+
+    /*
+    event.recipes.gtceu.canner('jack_o_lantern')             
+        .itemInputs('tfc:pumpkin')
+        .itemOutputs('2x minecraft:pink_dye', 'minecraft:glowstone_dust')
+        .duration(100)
+        .EUt(4)*/
 
     //#region Выход:
 
@@ -1561,15 +1622,6 @@ const registerMinecraftRecipes = (event) => {
         'tfc:firestarter'
     ])
 
-    // Стекло
-    event.recipes.gtceu.arc_furnace('glass_from_sand')             
-        .itemInputs('#forge:sand')
-        .itemOutputs('2x minecraft:glass')
-        .duration(20)
-        .EUt(30)
-
-
-
     // TripWire Hook
     event.shapeless('minecraft:tripwire_hook', [
         '#forge:rods/wood',
@@ -1636,19 +1688,7 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled'})
     event.remove({id: 'gtceu:chemical_bath/paper_from_sugar_cane'})
 
-    event.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
-        .itemInputs('tfc:papyrus')
-        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
-        .itemOutputs('minecraft:paper')
-        .duration(100)
-        .EUt(7)
-
-    event.recipes.gtceu.chemical_bath('paper_from_papyrus')             
-        .itemInputs('tfc:papyrus')
-        .inputFluids(Fluid.of('minecraft:water', 100))
-        .itemOutputs('minecraft:paper')
-        .duration(100)
-        .EUt(7)
+    
 
     
 
@@ -1826,16 +1866,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Фикс рецептов тыквы
-
-    event.remove({ id: 'gtceu:macerator/macerate_pumpkin' })
-
-    event.recipes.gtceu.canner('jack_o_lantern')             
-        .itemInputs('tfc:pumpkin')
-        .itemOutputs('2x minecraft:pink_dye', 'minecraft:glowstone_dust')
-        .duration(100)
-        .EUt(4)
-
-    //#endregion
+    
     */
 }
