@@ -696,7 +696,15 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:structure_void',
     'minecraft:lectern', 
     'minecraft:sea_pickle',
-    'minecraft:apple'
+    'minecraft:apple',
+    'minecraft:soul_torch', 
+    'minecraft:torch', 
+    'minecraft:anvil', 
+    'minecraft:chipped_anvil', 
+    'minecraft:damaged_anvil', 
+    'ad_astra:extinguished_torch',
+    'minecraft:furnace', 
+    'minecraft:furnace_minecart',
 ];
 
 global.VANILLA_WOOD_TYPES = [

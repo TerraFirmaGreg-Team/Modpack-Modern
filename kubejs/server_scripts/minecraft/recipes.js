@@ -1972,14 +1972,19 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Крюк
 
+    event.remove({id: 'minecraft:tripwire_hook'})
+    event.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
+    event.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
+    event.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
+
     event.shapeless('minecraft:tripwire_hook', [
         '#forge:rods/wood',
         '#forge:rings/wrought_iron',
-        '#forge:springs/small'
-    ]).id('tfg:recipes/tripwire_hook')
+        '#forge:small_springs'
+    ]).id('tfg:shaped/tripwire_hook')
 
-    event.recipes.gtceu.assembler('tfg/tripwire_hook')             
-        .itemInputs('#forge:rods/wood', '#forge:rings/wrought_iron', '#forge:springs/small')
+    event.recipes.gtceu.assembler('tripwire_hook')             
+        .itemInputs('#forge:rods/wood', '#forge:rings/wrought_iron', '#forge:small_springs')
         .itemOutputs('2x minecraft:tripwire_hook')
         .duration(100)
         .EUt(4)
@@ -2192,112 +2197,106 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Палки
 
-
-    /*
-    // Удаление рецептов палок
     event.remove({id: 'minecraft:stick'})
 
-    // Удаление рецептов жиги
+    //#endregion
+
+    //#region Выход: Огниво
+
     event.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
     event.remove({id: 'ad_astra:recipes/flint_and_steel'})
 
-    // Удаление рецептов связанных с наковальней
-    event.remove({id: 'gtceu:arc_furnace/arc_anvil'})
-    event.remove({id: 'gtceu:macerator/macerate_anvil'})
+    //#endregion
+
+    //#region Выход: Наковальни
+
     event.remove({id: 'gtceu:alloy_smelter/anvil'})
     event.remove({id: 'gtceu:fluid_solidifier/solidify_anvil'})
 
-    event.remove({id: 'gtceu:arc_furnace/arc_damaged_anvil'})
-    event.remove({id: 'gtceu:macerator/macerate_damaged_anvil'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chipped_anvil'})
-    event.remove({id: 'gtceu:macerator/macerate_chipped_anvil'})
+    //#endregion
 
-    // Удаление рецептов связанных с печкой
-    event.remove({id: 'gtceu:assembler/furnace'})
-    event.remove({id: 'gtceu:macerator/macerate_furnace'})
-    event.remove({id: 'gtceu:assembler/furnace_minecart'})
+    //#region Выход: Железные прутья
 
-    // Удаление рецептов связанных с вагонеткой с печкой
-    event.remove({id: 'minecraft:furnace_minecart'})
-    event.remove({id: 'gtceu:arc_furnace/arc_furnace_minecart'})
-    event.remove({id: 'gtceu:macerate/macerate_furnace_minecart'})
+    event.remove({id: 'gtceu:shaped/iron_bars'})
+    event.remove({id: 'gtceu:assembler/iron_nars'})
 
-    // Удаление рецептов связанных с Repeater
+    //#endregion
+
+    //#region Выход: Печь
+
+    event.remove({ id: 'gtceu:assembler/furnace' })
+
+    //#endregion
+
+    //#region Выход: Вагонетка с печью
+
+    event.remove({ id: 'minecraft:furnace_minecart' })
+    event.remove({ id: 'gtceu:assembler/furnace_minecart' })
+
+    //#endregion
+
+    //#region Выход: Повторитель
+
     event.remove({id: 'minecraft:repeater'})
 
-    // Удаление рецептов связанных с Comparator
-    event.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
-    event.remove({id: 'minecraft:comparator'})
-    event.remove({id: 'gtceu:shaped/comparator_quartzite'})
-    event.remove({id: 'gtceu:shaped/certus'})
+    //#endregion
 
-    // Удаление рецептов связанных с Paper
-    event.remove({id: 'gtceu:shaped/paper'})
+    //#region Выход: Ведро
 
-    // Удаление рецептов связанных с Iron Bars
-    event.remove({id: 'gtceu:shaped/iron_bars'})
-    event.remove({id: 'gtceu:assembler/iron_bars'})
-
-    // Удаление рецептов связанных с TripWire Hook
-    event.remove({id: 'minecraft:tripwire_hook'})
-    event.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
-    event.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
-    event.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
-
-    // Удаление рецептовсвязанных с ведром
     event.remove({id: 'gtceu:bender/bucket'})
     event.remove({id: 'gtceu:shaped/iron_bucket'})
 
-    // Удаление рецептов связанных с Saddle
+    event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
+        .id('tfg:anvil/vanilla_bucket')
+
+    //#endregion
+
+    //#region Выход: Седло
+
     event.remove({id: 'gtceu:shaped/saddle'})
 
-    // Удаление рецептов связанных с книжными полками
-    event.remove({id: 'minecraft:chiseled_bookshelf'})
-    event.remove({id: 'gtceu:assembler/bookshelf'})
-    event.remove({id: 'gtceu:arc_furnace/arc_bookshelf'})
-    event.remove({id: 'gtceu:macerator/macerate_bookshelf'})
-    event.remove({id: 'gtceu:extractor/bookshelf_extraction'})
+    //#endregion
 
-    // Удаление рецептов связанных с сундуками
-    event.remove({id: 'gtceu:assembler/chest'})
-    event.remove({id: 'gtceu:arc_furnace/arc_trapped_chest'})
-    event.remove({id: 'gtceu:macerator/macerate_trapped_chest'})
+    //#region Выход: Блок лазурита
 
-    // Удаление других рецептов
     event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
-    event.remove({id: 'minecraft:blast_furnace'})
-    event.remove({id: 'minecraft:fire_charge'})
-    event.remove({id: 'minecraft:netherite_ingot_from_netherite_block'})
-    event.remove({id: 'minecraft:netherite_block'})
-    event.remove({id: 'minecraft:lodestone'})
-    event.remove({id: 'minecraft:lantern'})
 
-    // Исправление рецептов пережарки меди, удволетворяя условиям: обычный кусок -> 2 слитка
-    event.remove({id: 'minecraft:copper_ingot_from_smelting_raw_copper'})
-    event.remove({id: 'minecraft:copper_ingot_from_blasting_raw_copper'})
+    //#endregion
 
-    event.smelting('2x #forge:ingots/copper', '1x #forge:raw_materials/copper').id('minecraft:copper_ingot_from_smelting_raw_copper').xp(0.7)
-    event.blasting('2x #forge:ingots/copper', '1x #forge:raw_materials/copper').id('minecraft:copper_ingot_from_blasting_raw_copper').xp(0.7)
+    //#region Выход: Вагонетка
 
-    // Исправление рецептов пережарки железа, удволетворяя условиям: обычный кусок -> 2 слитка
-    event.remove({id: `minecraft:iron_ingot_from_smelting_raw_iron`})
-    event.remove({id: `minecraft:iron_ingot_from_blasting_raw_iron`})
+    event.remove({ id: 'minecraft:minecart' })
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
 
-    event.smelting('2x #forge:ingots/iron', '1x #forge:raw_materials/iron').id('minecraft:iron_ingot_from_smelting_raw_iron').xp(0.7)
-    event.blasting('2x #forge:ingots/iron', '1x #forge:raw_materials/iron').id('minecraft:iron_ingot_from_blasting_raw_iron').xp(0.7)
+    event.recipes.gtceu.assembler('minecart')             
+        .itemInputs('3x #forge:plates/wrought_iron', '3x #forge:rings/wrought_iron')
+        .itemOutputs('minecraft:minecart')
+        .duration(100)
+        .EUt(1)
 
-    // Исправление рецептов пережарки золота, удволетворяя условиям: обычный кусок -> 2 слитка
-    event.remove({id: `minecraft:gold_ingot_from_smelting_raw_gold`})
-    event.remove({id: `minecraft:gold_ingot_from_blasting_raw_gold`})
+    //#endregion
 
-    event.smelting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_smelting_raw_gold').xp(0.7)
-    event.blasting('2x #forge:ingots/gold', '1x #forge:raw_materials/gold').id('minecraft:gold_ingot_from_blasting_raw_gold').xp(0.7)
-    */
 
-    //#region Выход:
+    //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
-    // event.remove({ id: '' })
+    event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')
+        .id('minecraft:copper_ingot_from_smelting_raw_copper')
+
+    event.remove({ id: 'minecraft:copper_ingot_from_blasting_raw_copper' })
+    event.remove({ id: 'minecraft:copper_ingot_from_waxed_copper_block' })
+    event.remove({ id: 'minecraft:copper_ingot' })
+
+    //#endregion
+
+    //#region Исправление дерьма с золотом (Однажды разраб GTCEu вспомнит, лучше бы забыл)
+
+    event.smelting('tfc:metal/ingot/gold', 'minecraft:raw_gold')
+        .id('minecraft:copper_ingot_from_smelting_raw_gold')
+
+    event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
+    event.remove({ id: 'minecraft:gold_ingot_from_blasting_raw_gold' })
 
     //#endregion
 }

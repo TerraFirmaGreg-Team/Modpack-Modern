@@ -567,10 +567,17 @@ const registerGTCEURecipes = (event) => {
 
     event.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })
     event.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
-
+    event.remove({ id: 'gtceu:arc_furnace/arc_damaged_anvil' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_chipped_anvil' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_furnace_minecart' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_bucket' })
+    
     //#endregion
 
     //#region Выход: Кованные самородки
+
+    event.remove({ id: 'gtceu:arc_furnace/arc_iron_bars' })
 
     event.recipes.gtceu.arc_furnace('arc_iron_door')             
         .itemInputs('minecraft:iron_door')
@@ -583,10 +590,17 @@ const registerGTCEURecipes = (event) => {
     //#region Выход: Железная пыль
 
     event.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
+    event.remove({ id: 'gtceu:macerator/macerate_damaged_anvil' })
+    event.remove({ id: 'gtceu:macerator/macerate_chipped_anvil' })
+    event.remove({ id: 'gtceu:macerator/macerate_anvil' })
+    event.remove({ id: 'gtceu:macerator/macerate_furnace_minecart' })
+    event.remove({ id: 'gtceu:macerator/macerate_bucket' })
 
     //#endregion
 
     //#region Выход: Крошечная железная пыль
+
+    event.remove({ id: 'gtceu:macerator/macerate_iron_bars' })
 
     event.recipes.gtceu.macerator('macerate_iron_door')             
         .itemInputs('minecraft:iron_door')
