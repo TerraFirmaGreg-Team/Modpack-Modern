@@ -16,10 +16,10 @@ REIEvents.hide('item', event => {
 REIEvents.groupEntries(event => {
     /*groupGTCEUStuff(event)
     groupTFCStuff(event)*/
-    groupMinecraftStuff(event)
 })
 
 REIEvents.removeCategories(event => {
+    registerMinecraftCategories(event)
     registerGTCEUCategories(event)
     registerMoreRedCategories(event)
 })

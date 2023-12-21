@@ -2312,17 +2312,38 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-    // Другое
-    event.remove({ id: `tfc:crafting/trip_hammer` })
-    event.remove({ id: `tfc:anvil/steel_pump` })
-    event.remove({ id: `tfc:crafting/steel_pump` })
-    event.remove({ id: `tfc:crafting/crankshaft` })
+    //#region Выход: Wool Yarn
+
+    event.recipes.gtceu.macerator('macerate_wool')             
+        .itemInputs('#minecraft:wool')
+        .itemOutputs('tfc:wool_yarn')
+        .chancedOutput('tfc:wool_yarn', 9000, 0)
+        .chancedOutput('tfc:wool_yarn', 5000, 0)
+        .chancedOutput('tfc:wool_yarn', 2000, 0)
+        .duration(200)
+        .EUt(2)
+
+    //#endregion
+
+    //#region Выход: Лопасти ветряной мельницы
+
     event.remove({ id: `tfc:crafting/windmill_blade` })
     event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.remove({ id: `tfc:barrel/dye/${dye}_windmill_blade` })
     })
+
+    //#endregion
+
+    // Другое
+    event.remove({ id: `tfc:crafting/trip_hammer` })
+    event.remove({ id: `tfc:anvil/steel_pump` })
+    event.remove({ id: `tfc:crafting/steel_pump` })
+    event.remove({ id: `tfc:crafting/crankshaft` })
+    
+
+    
 
     // Доменная печь
     event.shaped('tfc:blast_furnace', [
