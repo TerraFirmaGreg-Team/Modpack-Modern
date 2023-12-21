@@ -2278,7 +2278,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
     event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')

@@ -705,6 +705,11 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'ad_astra:extinguished_torch',
     'minecraft:furnace', 
     'minecraft:furnace_minecart',
+    'minecraft:pointed_dripstone', 
+    'minecraft:small_amethyst_bud', 
+    'minecraft:medium_amethyst_bud', 
+    'minecraft:large_amethyst_bud', 
+    'minecraft:amethyst_cluster'
 ];
 
 global.VANILLA_WOOD_TYPES = [

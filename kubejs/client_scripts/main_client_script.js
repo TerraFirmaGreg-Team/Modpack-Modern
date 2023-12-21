@@ -14,8 +14,8 @@ REIEvents.hide('item', event => {
 })
 
 REIEvents.groupEntries(event => {
-    /*groupGTCEUStuff(event)
-    groupTFCStuff(event)*/
+    groupGTCEUStuff(event)
+    groupTFCStuff(event)
 })
 
 REIEvents.removeCategories(event => {
