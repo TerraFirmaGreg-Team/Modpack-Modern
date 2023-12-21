@@ -1065,6 +1065,8 @@ const registerMinecraftRecipes = (event) => {
         .EUt(2)
 
     // Lime
+    event.remove({id: 'minecraft:lime_dye_from_smelting'})
+    
     event.recipes.gtceu.extractor('lime_dye')             
         .itemInputs('1x tfc:plant/moss')
         .itemOutputs('2x minecraft:lime_dye')
@@ -1103,6 +1105,7 @@ const registerMinecraftRecipes = (event) => {
         .EUt(2)
 
     // Orange
+    event.remove({id: 'tfc:crafting/vanilla/orange_dye_from_sylvite'})
     event.remove({id: 'minecraft:orange_dye_from_torchflower'})
     event.remove({id: 'minecraft:orange_dye_from_orange_tulip'})
     event.remove({id: 'gtceu:extractor/orange_tulip_dye'})
@@ -1389,7 +1392,7 @@ const registerMinecraftRecipes = (event) => {
 
     event.recipes.gtceu.canner('jack_o_lantern')             
         .itemInputs('tfc:pumpkin')
-        .itemOutputs('2x minecraft:pink_dye', 'minecraft:glowstone_dust')
+        .itemOutputs('minecraft:jack_o_lantern')
         .duration(100)
         .EUt(4)
 
@@ -1528,7 +1531,7 @@ const registerMinecraftRecipes = (event) => {
         .duration(50)
         .EUt(30)
 
-        event.recipes.gtceu.large_chemical_reactor('glistening_melon_slice')             
+    event.recipes.gtceu.large_chemical_reactor('glistening_melon_slice')             
         .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
         .itemOutputs('minecraft:glistering_melon_slice')
         .duration(50)
@@ -1669,6 +1672,70 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Книги
 
     event.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+
+    //#endregion
+
+    //#region Выход: Трибуна
+
+    event.remove({ id: 'tfc:Crafting/vanilla/lectern' })
+
+    //#endregion
+
+    //#region Выход: Золотое яблоко
+
+    event.remove({ id: 'minecraft:golden_apple' })
+
+    event.recipes.gtceu.chemical_reactor('golden_apple')             
+        .itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    event.recipes.gtceu.large_chemical_reactor('golden_apple')             
+        .itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    event.recipes.gtceu.chemical_reactor('golden_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Зачарованное золотое яблоко
+
+    event.recipes.gtceu.chemical_reactor('notch_apple')             
+        .itemInputs('tfc:food/green_apple', '8x minecraft:gold_block')
+        .itemOutputs('minecraft:enchanted_golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    event.recipes.gtceu.large_chemical_reactor('notch_apple')             
+        .itemInputs('tfc:food/green_apple', '8x minecraft:gold_block')
+        .itemOutputs('minecraft:enchanted_golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    event.recipes.gtceu.chemical_reactor('notch_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x minecraft:gold_block')
+        .itemOutputs('minecraft:enchanted_golden_apple')
+        .duration(50)
+        .EUt(30)
+
+    event.recipes.gtceu.large_chemical_reactor('notch_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x minecraft:gold_block')
+        .itemOutputs('minecraft:enchanted_golden_apple')
+        .duration(50)
+        .EUt(30)
 
     //#endregion
 
@@ -1863,9 +1930,7 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-
-
-
+   
 
 
 

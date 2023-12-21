@@ -676,6 +676,27 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_rod',
     'minecraft:brush',
     'minecraft:bookshelf',
+    '/spawn_egg/',
+    'minecraft:enchanted_book',
+    'minecraft:repeating_command_block', 
+    'minecraft:command_block', 
+    'minecraft:azalea', 
+    'minecraft:light', 
+    'minecraft:azalea', 
+    'minecraft:flowering_azalea', 
+    'minecraft:azalea_leaves', 
+    'minecraft:flowering_azalea_leaves', 
+    'minecraft:dirt_path', 
+    'minecraft:mushroom_stem', 
+    'minecraft:brown_mushroom_block', 
+    'minecraft:red_mushroom_block', 
+    'minecraft:dragon_egg', 
+    'minecraft:end_portal_frame', 
+    'minecraft:mushroom_stew', 
+    'minecraft:structure_void',
+    'minecraft:lectern', 
+    'minecraft:sea_pickle',
+    'minecraft:apple'
 ];
 
 global.VANILLA_WOOD_TYPES = [
