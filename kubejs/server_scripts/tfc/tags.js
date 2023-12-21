@@ -107,6 +107,17 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/blue_steel')
     event.add('tfc:red_or_blue_anvil', 'tfc:metal/anvil/red_steel')
 
+    // Теги для решеток
+    event.add('tfg:metal_bars', 'tfc:metal/bars/bismuth_bronze')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/black_bronze')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/bronze')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/copper')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/wrought_iron')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/steel')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/black_steel')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/blue_steel')
+    event.add('tfg:metal_bars', 'tfc:metal/bars/red_steel')
+
     // Теги для кораллов
     event.add('tfc:corals', 'tfc:coral/tube_coral_fan')
     event.add('tfc:corals', 'tfc:coral/brain_coral_fan')

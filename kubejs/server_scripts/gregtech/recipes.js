@@ -602,49 +602,139 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Filter Casing
 
-
-
-
-
-
-
-    // Compressed Coke Clay
-    event.shaped('gtceu:compressed_coke_clay', [
-        'AAA', 
-        'BCB',
-        'BBB' 
+    event.shaped('gtceu:filter_casing', [
+        'AAA',
+        'BBB',
+        'CDE' 
     ], {
-        A: 'minecraft:clay_ball',
-        B: '#minecraft:sand',
-        C: 'gtceu:brick_wooden_form'
-    }).replaceIngredient("gtceu:brick_wooden_form", Item.empty).id('gtceu:shaped/compressed_coke_clay')
-
-    // Compressed Coke Clay -> Coke Oven Brick
-    event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
-        .resultItem('gtceu:coke_oven_brick')
-        .id('tfg:heating/coke_oven_bricks')
-
-    // Удаление рецептов связанных с Primitive Blast Furnace
-    event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
-    event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
-
-    // Удаление рецептов связанных с Barrel
-    event.remove({id: 'gtceu:shaped/wooden_barrel'})
-    event.remove({id: 'gtceu:assembler/wood_barrel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_wood_drum'})
-    event.remove({id: 'gtceu:macerator/macerate_wood_drum'})
-
-    // Удаление рецептов связанных с FireBricks
-    event.remove({id: 'gtceu:shaped/casing_primitive_bricks'})
-    event.remove({id: 'gtceu:macerator/macerate_firebricks'})
-    event.remove({id: 'gtceu:extractor/extract_primitive_bricks'})
-
-    // Удаление рецептов связанных с FireBrick
-    event.remove({id: 'gtceu:smelting/fireclay_brick'})
-    event.remove({id: 'gtceu:macerator/macerate_firebrick'})
+        A: '#tfg:metal_bars',
+        B: 'gtceu:item_filter',
+        C: 'gtceu:mv_electric_motor',
+        D: '#forge:frames/steel',
+        E: '#forge:rotors/steel'
+    }).id('gtceu:shaped/filter_casing')
     
-    // Low Pressure Steam Forge Hammer
+    //#endregion
+
+    //#region Выход: Assembly Line Grating
+
+    event.shaped('2x gtceu:assembly_line_grating', [
+        'ABA',
+        'ACA',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: '#forge:rotors/steel',
+        C: '#forge:frames/steel',
+        D: 'gtceu:mv_electric_motor'
+    }).id('gtceu:shaped/casing_grate_casing')
+    
+    //#endregion
+
+    //#region Gas Collectors
+
+    event.shaped('gtceu:lv_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:lv_electric_pump',
+        D: '#forge:circuits/lv',
+        E: 'gtceu:lv_machine_hull'
+    }).id('gtceu:shaped/lv_gas_collector')
+
+    event.shaped('gtceu:mv_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:mv_electric_pump',
+        D: '#forge:circuits/mv',
+        E: 'gtceu:mv_machine_hull'
+    }).id('gtceu:shaped/mv_gas_collector')
+
+    event.shaped('gtceu:hv_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:hv_electric_pump',
+        D: '#forge:circuits/hv',
+        E: 'gtceu:hv_machine_hull'
+    }).id('gtceu:shaped/hv_gas_collector')
+
+    event.shaped('gtceu:ev_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:ev_electric_pump',
+        D: '#forge:circuits/ev',
+        E: 'gtceu:ev_machine_hull'
+    }).id('gtceu:shaped/ev_gas_collector')
+
+    event.shaped('gtceu:iv_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:iv_electric_pump',
+        D: '#forge:circuits/iv',
+        E: 'gtceu:iv_machine_hull'
+    }).id('gtceu:shaped/iv_gas_collector')
+
+    event.shaped('gtceu:luv_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:luv_electric_pump',
+        D: '#forge:circuits/luv',
+        E: 'gtceu:luv_machine_hull'
+    }).id('gtceu:shaped/luv_gas_collector')
+
+    event.shaped('gtceu:zpm_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:zpm_electric_pump',
+        D: '#forge:circuits/zpm',
+        E: 'gtceu:zpm_machine_hull'
+    }).id('gtceu:shaped/zpm_gas_collector')
+
+    event.shaped('gtceu:uv_gas_collector', [
+        'ABA',
+        'CEC',
+        'ADA' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:uv_electric_pump',
+        D: '#forge:circuits/uv',
+        E: 'gtceu:uv_machine_hull'
+    }).id('gtceu:shaped/uv_gas_collector')
+    
+    //#endregion
+
+    //#region Forge Hammers
+
     event.shaped('gtceu:lp_steam_forge_hammer', [
         'ABA', 
         'ACA',
@@ -656,7 +746,6 @@ const registerGTCEURecipes = (event) => {
         D: 'tfc:metal/anvil/wrought_iron'
     }).id('gtceu:shaped/steam_hammer_bronze')
 
-    // LV Forge Hammer
     event.shaped('gtceu:lv_forge_hammer', [
         'ABA',
         'CDC',
@@ -669,7 +758,6 @@ const registerGTCEURecipes = (event) => {
         E: 'tfc:metal/anvil/steel',
     }).id('gtceu:shaped/lv_forge_hammer')
 
-    // MV Forge Hammer
     event.shaped('gtceu:mv_forge_hammer', [
         'ABA',
         'CDC',
@@ -682,7 +770,6 @@ const registerGTCEURecipes = (event) => {
         E: 'tfc:metal/anvil/steel',
     }).id('gtceu:shaped/mv_forge_hammer')
 
-    // HV Forge Hammer
     event.shaped('gtceu:hv_forge_hammer', [
         'ABA',
         'CDC',
@@ -695,7 +782,6 @@ const registerGTCEURecipes = (event) => {
         E: 'tfc:metal/anvil/steel',
     }).id('gtceu:shaped/hv_forge_hammer')
 
-    // EV Forge Hammer
     event.shaped('gtceu:ev_forge_hammer', [
         'ABA',
         'CDC',
@@ -708,7 +794,6 @@ const registerGTCEURecipes = (event) => {
         E: 'tfc:metal/anvil/black_steel',
     }).id('gtceu:shaped/ev_forge_hammer')
 
-    // IV Forge Hammer
     event.shaped('gtceu:iv_forge_hammer', [
         'ABA',
         'CDC',
@@ -721,7 +806,6 @@ const registerGTCEURecipes = (event) => {
         E: 'tfc:metal/anvil/black_steel',
     }).id('gtceu:shaped/iv_forge_hammer')
 
-    // LuV Forge Hammer
     event.shaped('gtceu:luv_forge_hammer', [
         'ABA',
         'CDC',
@@ -734,7 +818,6 @@ const registerGTCEURecipes = (event) => {
         E: 'tfc:metal/anvil/black_steel',
     }).id('gtceu:shaped/luv_forge_hammer')
 
-    // ZPM Forge Hammer
     event.shaped('gtceu:zpm_forge_hammer', [
         'ABA',
         'CDC',
@@ -747,7 +830,6 @@ const registerGTCEURecipes = (event) => {
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/zpm_forge_hammer')
 
-    // UV Forge Hammer
     event.shaped('gtceu:uv_forge_hammer', [
         'ABA',
         'CDC',
@@ -760,12 +842,9 @@ const registerGTCEURecipes = (event) => {
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/uv_forge_hammer')
 
-    // TFC FireBrick -> FireBrick dust
-    event.recipes.gtceu.macerator('macerate_firebrick')             
-        .itemInputs('tfc:ceramic/fire_brick')
-        .itemOutputs('gtceu:fireclay_dust')
-        .duration(15)
-        .EUt(2)
+    //#endregion
+
+    //#region Primitive Pump
 
     // Pump Deck
     event.shaped('gtceu:pump_deck', [
@@ -811,6 +890,10 @@ const registerGTCEURecipes = (event) => {
 
     }).id('gtceu:shaped/primitive_pump')
 
+    //#endregion
+
+    //#region CokeOven
+
     // Coke Oven
     event.shaped('gtceu:coke_oven', [
         'ABA', 
@@ -829,6 +912,50 @@ const registerGTCEURecipes = (event) => {
         A: 'gtceu:coke_oven_bricks',
         B: '#tfc:barrels' 
     }).id('gtceu:shaped/coke_oven_hatch')
+
+    //#endregion
+
+    // Удаление рецептов связанных с Primitive Blast Furnace
+    event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
+    event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
+
+    // Удаление рецептов связанных с Barrel
+    event.remove({id: 'gtceu:shaped/wooden_barrel'})
+    event.remove({id: 'gtceu:assembler/wood_barrel'})
+    event.remove({id: 'gtceu:arc_furnace/arc_wood_drum'})
+    event.remove({id: 'gtceu:macerator/macerate_wood_drum'})
+
+    // Удаление рецептов связанных с FireBricks
+    event.remove({id: 'gtceu:shaped/casing_primitive_bricks'})
+    event.remove({id: 'gtceu:macerator/macerate_firebricks'})
+    event.remove({id: 'gtceu:extractor/extract_primitive_bricks'})
+
+    // Удаление рецептов связанных с FireBrick
+    event.remove({id: 'gtceu:smelting/fireclay_brick'})
+    event.remove({id: 'gtceu:macerator/macerate_firebrick'})
+
+    // Compressed Coke Clay
+    event.shaped('gtceu:compressed_coke_clay', [
+        'AAA', 
+        'BCB',
+        'BBB' 
+    ], {
+        A: 'minecraft:clay_ball',
+        B: '#minecraft:sand',
+        C: 'gtceu:brick_wooden_form'
+    }).replaceIngredient("gtceu:brick_wooden_form", Item.empty).id('gtceu:shaped/compressed_coke_clay')
+
+    // Compressed Coke Clay -> Coke Oven Brick
+    event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
+        .resultItem('gtceu:coke_oven_brick')
+        .id('tfg:heating/coke_oven_bricks')
+
+    // TFC FireBrick -> FireBrick dust
+    event.recipes.gtceu.macerator('macerate_firebrick')             
+        .itemInputs('tfc:ceramic/fire_brick')
+        .itemOutputs('gtceu:fireclay_dust')
+        .duration(15)
+        .EUt(2)
 
     // Bronze Steam Furnace
     event.shaped('gtceu:lp_steam_furnace', [
@@ -956,6 +1083,7 @@ const generateMixerRecipe = (event, input, fluid_input, output, fluid_output, du
         .rpm(rpm)
 }
 
+// TODO
 const generateCutterRecipe = () => {
     // Вот зачем я, скажете вы, делаю тут всякие костыли, 
     // потому что блядский разработчик GTCEu не может исправить баги своего мода

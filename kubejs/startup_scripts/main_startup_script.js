@@ -1,7 +1,5 @@
 // priority: 1
 
-const $SimpleTieredMachine = Java.loadClass('com.gregtechceu.gtceu.api.machine.SimpleTieredMachine')
-
 /**
  * Событие регистрации предметов.
  */
