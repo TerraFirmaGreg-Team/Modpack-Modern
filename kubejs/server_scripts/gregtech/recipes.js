@@ -566,10 +566,41 @@ const registerGTCEURecipes = (event) => {
     //#region Выход: Слиток кованного железа
 
     event.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
 
     //#endregion
 
+    //#region Выход: Кованные самородки
 
+    event.recipes.gtceu.arc_furnace('arc_iron_door')             
+        .itemInputs('minecraft:iron_door')
+        .itemOutputs('9x gtceu:wrought_iron_dust', 'gtceu:steel_nugget')
+        .duration(200)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Железная пыль
+
+    event.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
+
+    //#endregion
+
+    //#region Выход: Крошечная железная пыль
+
+    event.recipes.gtceu.macerator('macerate_iron_door')             
+        .itemInputs('minecraft:iron_door')
+        .itemOutputs('gtceu:iron_dust', 'gtceu:steel_tiny_dust')
+        .duration(200)
+        .EUt(8)
+
+    //#endregion
+
+    //#region Выход: Крошечная пыль золы
+
+    event.remove({ id: 'gtceu:arc_furnace/arc_bookshelf' })
+
+    //#endregion
 
 
 

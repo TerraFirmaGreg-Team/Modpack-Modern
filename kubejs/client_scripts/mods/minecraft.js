@@ -19,6 +19,8 @@ const groupMinecraftStuff = (event) => {
 
 const registerMinecraftCategories = (event) => {
     event.remove('minecraft:plugins/campfire')
+    event.remove('minecraft:plugins/blasting')
+    event.remove('minecraft:plugins/smoking')
     event.remove('minecraft:plugins/composting') // TODO: Сделать с вариантами TFC
     event.remove('minecraft:plugins/stripping') // TODO: Сделать с вариантами TFC
     event.remove('minecraft:plugins/pathing') // TODO: Сделать с вариантами TFC

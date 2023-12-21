@@ -1401,9 +1401,276 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Незеритовый слиток
+
+    event.remove({ id: 'minecraft:netherite_ingot_from_netherite_block' })
+
+    //#endregion
+
+    //#region Выход: Незеритовый блок
+
+    event.remove({ id: 'minecraft:netherite_block' })
+
+    //#endregion
+
+    //#region Выход: Lodestone
+
+    event.remove({ id: 'minecraft:lodestone' })
+
+    //#endregion
+
+    //#region Выход: Точильный камень
+
+    event.shaped('minecraft:grindstone', [
+        'ABA', 
+        'C C' 
+    ], {
+        A: '#minecraft:planks',
+        B: '#forge:rods/wooden',
+        C: '#tfg:rock_slabs' 
+    }).id('minecraft:grindstone')
+
+    //#endregion
+
+    //#region Выход: Железный люк
+
+    event.remove({ id: 'gtceu:assembler/iron_trapdoor' })
+    
+    //#endregion
+
+    //#region Выхож: Железная дверь
+
+    event.recipes.gtceu.assembler('iron_door')             
+        .itemInputs('#forge:plates/wrought_iron')
+        .circuit(6)
+        .itemOutputs('minecraft:iron_door')
+        .duration(100)
+        .EUt(16)
 
 
+    //#endregion
 
+    //#region Выход: Железная нажимная плита
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/heavy_weighted_pressure_plate' })
+
+    event.shaped('2x minecraft:heavy_weighted_pressure_plate', [
+        'ABA',
+        'CDC',
+        'AEA'  
+    ], {
+        A: '#forge:screws/wrought_iron',
+        B: '#tfc:hammers',
+        C: 'gtceu:wrought_iron_block',
+        D: '#forge:springs',
+        E: '#forge:tools/screwdrivers'
+    }).id('minecraft:heavy_weighted_pressure_plate')
+
+    event.recipes.gtceu.assembler('heavy_weighted_pressure_plate')             
+        .itemInputs('#forge:springs', 'gtceu:wrought_iron_block')
+        .circuit(0)
+        .itemOutputs('4x minecraft:heavy_weighted_pressure_plate')
+        .duration(50)
+        .EUt(4)
+
+    //#endregion
+
+    //#region Выход: Золотая нажимная плита
+    event.shaped('2x minecraft:light_weighted_pressure_plate', [
+        'ABA',
+        'CDC',
+        'AEA'  
+    ], {
+        A: '#forge:screws/wrought_iron',
+        B: '#tfc:hammers',
+        C: 'minecraft:gold_block',
+        D: '#forge:springs',
+        E: '#forge:tools/screwdrivers'
+    }).id('minecraft:light_weighted_pressure_plate')
+
+    event.recipes.gtceu.assembler('light_weighted_pressure_plate')             
+        .itemInputs('#forge:springs', 'minecraft:gold_block')
+        .circuit(0)
+        .itemOutputs('4x minecraft:light_weighted_pressure_plate')
+        .duration(50)
+        .EUt(4)
+
+    //#endregion
+
+    //#region Выход: Жаренный Cod
+
+    event.remove({ id: 'minecraft:cooked_cod' })
+    event.remove({ id: 'minecraft:cooked_cod_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Жаренный Salmon
+
+    event.remove({ id: 'minecraft:cooked_salmon' })
+    event.remove({ id: 'minecraft:cooked_salmon_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Светящийся арбуз
+
+    event.shaped('minecraft:glistering_melon_slice', [
+        'AAA', 
+        'ABA',
+        'AAA'  
+    ], {
+        A: '#forge:nuggets/gold', 
+        B: 'tfc:food/melon_slice'   
+    }).id('minecraft:glistering_melon_slice')
+
+    event.recipes.gtceu.chemical_reactor('glistening_melon_slice')             
+        .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
+        .itemOutputs('minecraft:glistering_melon_slice')
+        .duration(50)
+        .EUt(30)
+
+        event.recipes.gtceu.large_chemical_reactor('glistening_melon_slice')             
+        .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
+        .itemOutputs('minecraft:glistering_melon_slice')
+        .duration(50)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Улей
+
+    event.remove({ id: 'minecraft:beehive' })
+
+    //#endregion
+
+    //#region Выход: Блок сот
+
+    event.remove({ id: 'minecraft:honeycomb_block' })
+
+    //#endregion
+
+    //#region Выход: Пузырек с медом
+
+    event.remove({ id: 'minecraft:honey_bottle' })
+
+    //#endregion
+
+    //#region Выход: Блок меда
+
+    event.remove({ id: 'minecraft:honey_block' })
+
+    //#endregion
+
+    //#region Выход: Прожаренный фрукт хоруса
+
+    event.remove({ id: 'minecraft:popped_chorus_fruit' })
+
+    //#endregion
+
+    //#region Выход: Фиолетовый блок
+
+    event.remove({ id: 'gtceu:compressor/purpur_block' })
+
+    //#endregion
+
+    //#region Выход: Фиолетовый блок ступень
+
+    event.remove({ id: 'minecraft:purpur_stairs' })
+    event.remove({ id: 'minecraft:purpur_stairs_from_purpur_block_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Фиолетовый блок плита
+
+    event.remove({ id: 'minecraft:purpur_slab' })
+    event.remove({ id: 'minecraft:purpur_slab_from_purpur_block_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Фиолетовый блок столб
+
+    event.remove({ id: 'minecraft:purpur_pillar_from_purpur_block_stonecutting' })
+
+    //#endregion
+
+    //#region Выход: Ножницы
+
+    event.remove({ id: 'minecraft:shears' })
+
+    //#endregion
+
+    //#region Выход: Светильник
+
+    event.remove({ id: 'minecraft:lantern' })
+
+    //#endregion
+
+    //#region Выход: Светильник адский
+
+    event.remove({ id: 'minecraft:soul_lantern' })
+
+    //#endregion
+
+    //#region Выход: Стол для ковки
+
+    event.remove({ id: 'minecraft:smithing_table' })
+
+    //#endregion
+
+    //#region Выход: Плавильня
+
+    event.remove({ id: 'minecraft:blast_furnace' })
+
+    //#endregion
+
+    //#region Выход: Коптильня
+
+    event.remove({ id: 'minecraft:blast_furnace' })
+
+    //#endregion
+
+    //#region Выход: Жаренный картофель
+
+    event.remove({ id: 'minecraft:baked_potato' })
+    event.remove({ id: 'minecraft:baked_potato_from_smoking' })
+
+    //#endregion
+
+    //#region Выход: Декор ваза
+
+    event.remove({ id: 'minecraft:decorated_pot_simple' })
+
+    //#endregion
+
+    //#region Выход: Резные книжные полки
+
+    event.remove({ id: 'minecraft:chiseled_bookshelf' })
+
+    //#endregion
+
+    //#region Выход: Книжные полки
+
+    event.remove({ id: 'gtceu:assembler/bookshelf' })
+
+    //#endregion
+
+    //#region Выход: Стержень энда
+
+    event.remove({ id: 'minecraft:end_rod' })
+    event.remove({ id: 'gtceu:assembler/end_rod' })
+
+    //#endregion
+
+    //#region Выход: Кисточка
+
+    event.remove({ id: 'minecraft:brush' })
+
+    //#endregion
+
+    //#region Выход: Книги
+
+    event.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+
+    //#endregion
 
     //#region Шаблоны брони
 
@@ -1574,7 +1841,27 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Шаблоны брони
 
+    event.remove({ id: 'minecraft:coast_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:vex_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:host_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:rib_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:spire_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:tide_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:eye_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:raiser_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:wild_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:shaper_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:snout_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:dune_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:netherite_upgrade_smithing_template' })
+    event.remove({ id: 'minecraft:wayfinder_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:ward_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:silence_armor_trim_smithing_template' })
+    event.remove({ id: 'minecraft:sentry_armor_trim_smithing_template' })
+
+    //#endregion
 
 
 
