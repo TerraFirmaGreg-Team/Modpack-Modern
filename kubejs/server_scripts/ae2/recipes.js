@@ -1495,26 +1495,6 @@ const registerAE2Recipes = (event) => {
         .duration(8)
         .EUt(480)
     
-    // GT Chemical Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLES[i] + '_gtceu_dye')
-            .itemInputs('ae2:fluix_glass_cable')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_GLASS_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
-
-    // TFC Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLES[i] + '_tfc_dye')
-            .itemInputs('ae2:fluix_glass_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_GLASS_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
-
     // Covered Cable
     event.recipes.gtceu.chemical_bath('ae2:fluix_covered_cable')
         .itemInputs('#ae2:covered_cable')
@@ -1522,26 +1502,6 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:fluix_covered_cable')
         .duration(8)
         .EUt(480)
-    
-    // GT Chemical Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_gtceu_dye')
-            .itemInputs('ae2:fluix_covered_cable')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_COVERED_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
-    
-    // TFC Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_tfc_dye')
-            .itemInputs('ae2:fluix_covered_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_COVERED_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
 
     // Dense Covered Cable
     event.recipes.gtceu.chemical_bath('ae2:fluix_covered_dense_cable')
@@ -1550,26 +1510,6 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:fluix_covered_dense_cable')
         .duration(8)
         .EUt(480)
-    
-    // GT Chemical Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_gtceu_dye')
-            .itemInputs('ae2:fluix_covered_dense_cable')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
-    
-    // TFC Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_tfc_dye')
-            .itemInputs('ae2:fluix_covered_dense_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
 
     // Smart Cable
     event.recipes.gtceu.chemical_bath('ae2:fluix_smart_cable')
@@ -1578,26 +1518,6 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:fluix_smart_cable')
         .duration(8)
         .EUt(480)
-    
-    // GT Chemical Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_gtceu_dye')
-            .itemInputs('ae2:fluix_smart_cable')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
-            .itemOutputs(global.AE2_SMART_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
-    
-    // TFC Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_tfc_dye')
-            .itemInputs('ae2:fluix_smart_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_SMART_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
 
     // Dense Smart Cable
     event.recipes.gtceu.chemical_bath('ae2:fluix_smart_dense_cable')
@@ -1606,51 +1526,53 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:fluix_smart_dense_cable')
         .duration(8)
         .EUt(480)
-    
-    // GT Chemical Dyes
+
+    // Cable Colorization
     for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_gtceu_dye')
+        event.recipes.gtceu.chemical_bath(global.AE2_GLASS_CABLES[i] + '_dye')
+            .itemInputs('ae2:fluix_glass_cable')
+            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+            .itemOutputs(global.AE2_GLASS_CABLES[i])
+            .duration(20)
+            .EUt(7)
+
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_dye')
+            .itemInputs('ae2:fluix_covered_cable')
+            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+            .itemOutputs(global.AE2_COVERED_CABLES[i])
+            .duration(20)
+            .EUt(7)
+
+        event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_dye')
+            .itemInputs('ae2:fluix_covered_dense_cable')
+            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+            .itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
+            .duration(20)
+            .EUt(7)
+
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_dye')
+            .itemInputs('ae2:fluix_smart_cable')
+            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+            .itemOutputs(global.AE2_SMART_CABLES[i])
+            .duration(20)
+            .EUt(7)
+
+        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_dye')
             .itemInputs('ae2:fluix_smart_dense_cable')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 72))
+            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
             .itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
-    };
 
-    // TFC Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_tfc_dye')
-            .itemInputs('ae2:fluix_smart_dense_cable')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 250))
-            .itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
-            .duration(20)
-            .EUt(7)
-    };
-
-    // Paint Balls
-
-    // GT Chemical Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_gtceu_dye')
+        // Paint Balls
+        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_dye')
             .itemInputs('ae2:matter_ball')
-            .inputFluids(Fluid.of(global.GTCEU_LIQUID_DYE[i], 36))
+            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 36))
             .itemOutputs(global.AE2_PAINTBALLS[i])
             .duration(20)
             .EUt(7)
-    };
 
-    // TFC Dyes
-    for (var i = 0; i < 16; i++) {
-        event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_tfc_dye')
-            .itemInputs('ae2:matter_ball')
-            .inputFluids(Fluid.of(global.TFC_LIQUID_DYES[i], 125))
-            .itemOutputs(global.AE2_PAINTBALLS[i])
-            .duration(20)
-            .EUt(7)
-    };
-
-    // Lumen Paint Ball
-    for (var i = 0; i < 16; i++) {
+        // Lumen Paint Ball
         event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALLS[i] + '_gtceu_dye')
             .itemInputs(global.AE2_PAINTBALLS[i])
             .inputFluids(Fluid.of('gtceu:glowstone', 125))
@@ -1719,7 +1641,6 @@ const registerAE2Recipes = (event) => {
         .duration(8000)
         .EUt(116)
 
-
     // Quartz Fiber
     event.recipes.gtceu.wiremill('ae2:quartz_fiber_certus')
         .itemInputs('#forge:rods/certus_quartz')
@@ -1732,7 +1653,6 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:quartz_fiber')
         .duration(200)
         .EUt(7)
-
 
     // Quartz Glass
     event.recipes.gtceu.alloy_smelter('ae2:quartz_glass')

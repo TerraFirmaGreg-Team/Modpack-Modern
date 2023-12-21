@@ -676,75 +676,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_rod',
     'minecraft:brush',
     'minecraft:bookshelf',
-
-
-    /*
-    // Other
-    "minecraft:bookshelf",
-    "minecraft:chiseled_bookshelf",
-    "minecraft:sand",
-    "minecraft:suspicious_sand",
-    "minecraft:red_sand",
-    "minecraft:chest",
-    "minecraft:trapped_chest",
-
-    "minecraft:wheat",
-    "minecraft:composter",
-    "minecraft:barrel",
-    "minecraft:blast_furnace",
-    "minecraft:furnace",
-    "minecraft:furnace_minecart",
-
-    "minecraft:anvil",
-    "minecraft:chipped_anvil",
-    "minecraft:damaged_anvil",
-    "minecraft:torch",
-    "minecraft:lantern",
-    "minecraft:soul_torch",
-    "minecraft:soul_lantern",
-    "minecraft:gold_ingot",
-    "minecraft:copper_ingot",
-
-    // Seeds
-    "minecraft:wheat_seeds",
-    "minecraft:pumpkin_seeds",
-    "minecraft:melon_seeds",
-    "minecraft:torchflower_seeds",
-    "minecraft:beetroot_seeds",
-    
-    // Fish
-    "minecraft:cod",
-    "minecraft:salmon",
-    "minecraft:tropical_fish",
-    "minecraft:pufferfish",
-    "minecraft:cooked_cod",
-    "minecraft:cooked_salmon",
-
-    // Ores
-    "minecraft:netherite_scrap",
-    "minecraft:netherite_ingot",
-    "minecraft:netherite_block",
-    "minecraft:smithing_table",
-    "minecraft:netherite_block",
-    "minecraft:coal_ore",
-    "minecraft:deepslate_coal_ore",
-    "minecraft:iron_ore",
-    "minecraft:deepslate_iron_ore",
-    "minecraft:copper_ore",
-    "minecraft:deepslate_copper_ore",
-    "minecraft:gold_ore",
-    "minecraft:deepslate_gold_ore",
-    "minecraft:redstone_ore",
-    "minecraft:deepslate_redstone_ore",
-    "minecraft:emerald_ore",
-    "minecraft:deepslate_emerald_ore",
-    "minecraft:lapis_ore",
-    "minecraft:deepslate_lapis_ore",
-    "minecraft:diamond_ore",
-    "minecraft:deepslate_diamond_ore",
-    "minecraft:nether_gold_ore",
-    "minecraft:nether_quartz_ore",
-    "minecraft:ancient_debris",*/
 ];
 
 global.VANILLA_WOOD_TYPES = [
@@ -772,25 +703,6 @@ global.VANILLA_STONE_TYPES = [
     "diorite",
     "granite",
     "tuff"
-];
-
-global.MINECRAFT_FORGE_DYES = [
-    '#forge:dyes/white',
-    '#forge:dyes/orange',
-    '#forge:dyes/magenta',
-    '#forge:dyes/light_blue',
-    '#forge:dyes/yellow',
-    '#forge:dyes/lime',
-    '#forge:dyes/pink',
-    '#forge:dyes/gray',
-    '#forge:dyes/light_gray',
-    '#forge:dyes/cyan',
-    '#forge:dyes/purple',
-    '#forge:dyes/blue',
-    '#forge:dyes/brown',
-    '#forge:dyes/green',
-    '#forge:dyes/red',
-    '#forge:dyes/black'
 ];
 
 global.MINECRAFT_DYE_NAMES = [
