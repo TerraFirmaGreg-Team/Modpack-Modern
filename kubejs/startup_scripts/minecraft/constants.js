@@ -676,7 +676,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_rod',
     'minecraft:brush',
     'minecraft:bookshelf',
-    '/spawn_egg/',
     'minecraft:enchanted_book',
     'minecraft:repeating_command_block', 
     'minecraft:command_block', 
@@ -702,14 +701,14 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:anvil', 
     'minecraft:chipped_anvil', 
     'minecraft:damaged_anvil', 
-    'ad_astra:extinguished_torch',
     'minecraft:furnace', 
     'minecraft:furnace_minecart',
     'minecraft:pointed_dripstone', 
     'minecraft:small_amethyst_bud', 
     'minecraft:medium_amethyst_bud', 
     'minecraft:large_amethyst_bud', 
-    'minecraft:amethyst_cluster'
+    'minecraft:amethyst_cluster',
+    '/spawn_egg/'
 ];
 
 global.VANILLA_WOOD_TYPES = [
