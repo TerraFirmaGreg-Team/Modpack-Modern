@@ -2278,6 +2278,75 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Тигель
+    event.remove({ id: 'tfc:crafting/vanilla/cauldron' })
+    
+    event.shaped('minecraft:cauldron', [
+        'A A', 
+        'ABA',
+        'AAA'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: '#tfc:hammers'  
+    }).id('gtceu:shaped/cauldron')
+
+    event.recipes.gtceu.assembler('cauldron')             
+        .itemInputs('7x #forge:plates/wrought_iron')
+        .itemOutputs('minecraft:cauldron')
+        .duration(700)
+        .EUt(4)
+
+    //#endregion
+
+    //#region Выход: Детектор света
+    
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/daylight_detector' })
+
+    //#endregion
+
+    //#region Выход: Воронка
+    
+    event.remove({ id: 'gtceu:assembler/hopper_iron' })
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_hopper' })
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/hopper' })
+
+    event.shaped('minecraft:hopper', [
+        'ABA', 
+        'ACA',
+        'DAE'  
+    ], {
+        A: '#forge:plates/wrought_iron',
+        B: '#forge:chests/wooden',
+        C: '#forge:gears/wrought_iron',
+        D: '#forge:tools/wrenches',
+        E: '#forge:tools/hammers',
+    }).id('gtceu:shaped/hopper')
+
+    //#endregion
+
+    //#region Выход: Поршень
+    
+    event.remove({ id: 'minecraft:piston' })
+    event.remove({ id: 'gtceu:shaped/piston_titanium' })
+    event.remove({ id: 'gtceu:shaped/piston_steel' })
+    event.remove({ id: 'gtceu:shaped/piston_bronze' })
+    event.remove({ id: 'gtceu:shaped/piston_aluminium' })
+
+    event.remove({ id: 'gtceu:assembler/piston_titanium' })
+    event.remove({ id: 'gtceu:assembler/piston_steel' })
+    event.remove({ id: 'gtceu:assembler/piston_iron' })
+    event.remove({ id: 'gtceu:assembler/piston_bronze' })
+    event.remove({ id: 'gtceu:assembler/piston_aluminium' })
+
+    event.recipes.gtceu.assembler('piston')             
+        .itemInputs('#forge:plates/wrought_iron', '3x tfc:wood/planks/acacia', '4x #tfc:rock/raw')
+        .itemOutputs('4x minecraft:piston')
+        .duration(100)
+        .EUt(16)
+
+
+    //#endregion
+
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
     event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')
