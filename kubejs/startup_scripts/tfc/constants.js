@@ -1469,6 +1469,41 @@ global.TFC_FIRED_MOLDS = [
     "tfc:ceramic/fire_ingot_mold",
 ];
 
+global.TFC_COOKABLE_MEAT = [
+    'tfc:food/%s_horse_meat', 
+    'tfc:food/%s_bear', 
+    'tfc:food/%s_mutton', 
+    'tfc:food/%s_pheasant', 
+    'tfc:food/%s_quail', 
+    'tfc:food/%s_chicken', 
+    'tfc:food/%s_pork', 
+    'tfc:food/%s_beef', 
+    'tfc:food/%s_crappie', 
+    'tfc:food/%s_lake_trout', 
+    'tfc:food/%s_largemouth_bass', 
+    'tfc:food/%s_rainbow_trout', 
+    'tfc:food/%s_salmon', 
+    'tfc:food/%s_smallmouth_bass', 
+    'tfc:food/%s_camelidae', 
+    'tfc:food/%s_frog_legs', 
+    'tfc:food/%s_gran_feline', 
+    'tfc:food/%s_turtle', 
+    'tfc:food/%s_cod', 
+    'tfc:food/%s_tropical_fish', 
+    'tfc:food/%s_calamari', 
+    'tfc:food/%s_shellfish', 
+    'tfc:food/%s_bluegill', 
+    'tfc:food/%s_turkey', 
+    'tfc:food/%s_peafowl', 
+    'tfc:food/%s_grouse', 
+    'tfc:food/%s_venison', 
+    'tfc:food/%s_wolf', 
+    'tfc:food/%s_rabbit', 
+    'tfc:food/%s_hyena', 
+    'tfc:food/%s_duck', 
+    'tfc:food/%s_chevon'
+];
+
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1

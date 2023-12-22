@@ -1077,29 +1077,3 @@ const registerGTCEURecipes = (event) => {
         .itemInputs('minecraft:lava_bucket')
         .duration(25)
 }
-
-const generateMixerRecipe = (event, input, fluid_input, output, fluid_output, duration, EUt, rpm, id) => {
-    event.recipes.gtceu.mixer(id)             
-        .itemInputs(input)
-        .inputFluids(fluid_input)
-        .itemOutputs(output)
-        .outputFluids(fluid_output)
-        .duration(duration)
-        .EUt(EUt)
-
-    event.recipes.gtceu.create_mixer(id)             
-        .itemInputs(input)
-        .inputFluids(fluid_input)
-        .itemOutputs(output)
-        .outputFluids(fluid_output)
-        .duration(duration)
-        .EUt(EUt)
-        .rpm(rpm)
-}
-
-// TODO
-const generateCutterRecipe = () => {
-    // Вот зачем я, скажете вы, делаю тут всякие костыли, 
-    // потому что блядский разработчик GTCEu не может исправить баги своего мода
-    // Я так устал..
-}

@@ -8,6 +8,15 @@ const registerAE2Recipes = (event) => {
         { id: 'ae2:transform/fluix_crystals' }
     ], mod: 'ae2' });
 
+    //#region Рецепты энтропии
+
+    global.TFC_STONE_TYPES.forEach(stone => {
+        registerEntropyRecipe(event, { block: { id: `tfc:rock/cobble/${stone}` } }, 'heat', { block: { id: `tfc:rock/raw/${stone}` } }, `tfg:entropy_raw_${stone}_to_cobble`)
+        registerEntropyRecipe(event, { block: { id: `tfc:rock/raw/${stone}` } }, 'cool', { block: { id: `tfc:rock/cobble/${stone}` } }, `tfg:entropy_cobble_${stone}_to_raw`)
+    })
+
+    //#endregion
+
     // Network tool
     event.shaped('ae2:network_tool', [
         'AB',
