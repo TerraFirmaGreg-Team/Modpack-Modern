@@ -14,6 +14,7 @@ global.AD_ASTRA_DISABLED_ITEMS = [
     "ad_astra:steel_trapdoor",
     "ad_astra:steel_door",
     'ad_astra:extinguished_torch',
+    'ad_astra:hammer',
 
     // Ores
     "ad_astra:glacio_lapis_ore",
