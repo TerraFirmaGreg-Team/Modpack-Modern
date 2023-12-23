@@ -578,6 +578,57 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:red_windmill_blade",
     "tfc:black_windmill_blade",
 
+    // Каменные инстрменты
+    'tfc:stone/knife_head/igneous_extrusive', 
+    'tfc:stone/knife_head/igneous_intrusive', 
+    'tfc:stone/knife_head/metamorphic', 
+    'tfc:stone/knife_head/sedimentary', 
+    
+    'tfc:stone/knife/igneous_extrusive', 
+    'tfc:stone/knife/igneous_intrusive', 
+    'tfc:stone/knife/metamorphic',
+    'tfc:stone/knife/sedimentary', 
+    
+    'tfc:stone/axe_head/igneous_extrusive', 
+    'tfc:stone/axe_head/igneous_intrusive', 
+    'tfc:stone/axe_head/metamorphic', 
+    'tfc:stone/axe_head/sedimentary', 
+    
+    'tfc:stone/axe/igneous_extrusive', 
+    'tfc:stone/axe/igneous_intrusive', 
+    'tfc:stone/axe/metamorphic', 
+    'tfc:stone/axe/sedimentary', 
+    
+    'tfc:stone/shovel_head/igneous_extrusive', 
+    'tfc:stone/shovel_head/igneous_intrusive', 
+    'tfc:stone/shovel_head/metamorphic', 
+    'tfc:stone/shovel_head/sedimentary',
+    
+    'tfc:stone/shovel/igneous_extrusive', 
+    'tfc:stone/shovel/igneous_intrusive', 
+    'tfc:stone/shovel/sedimentary', 
+    'tfc:stone/shovel/sedimentary', 
+    
+    'tfc:stone/hammer_head/igneous_extrusive', 
+    'tfc:stone/hammer_head/igneous_intrusive', 
+    'tfc:stone/hammer_head/metamorphic', 
+    'tfc:stone/hammer_head/sedimentary', 
+    
+    'tfc:stone/hammer/igneous_extrusive', 
+    'tfc:stone/hammer/igneous_intrusive', 
+    'tfc:stone/hammer/metamorphic', 
+    'tfc:stone/hammer/sedimentary', 
+    
+    'tfc:stone/hoe_head/igneous_extrusive', 
+    'tfc:stone/hoe_head/igneous_intrusive', 
+    'tfc:stone/hoe_head/metamorphic', 
+    'tfc:stone/hoe_head/sedimentary', 
+    
+    'tfc:stone/hoe/igneous_extrusive', 
+    'tfc:stone/hoe/igneous_intrusive', 
+    'tfc:stone/hoe/metamorphic', 
+    'tfc:stone/hoe/sedimentary', 
+
     // Other
     "tfc:trip_hammer",
     'tfc:steel_pipe',
