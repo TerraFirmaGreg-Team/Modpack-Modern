@@ -14,6 +14,8 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:wood_drum',
     'gtceu:primitive_blast_furnace',
     
+    'gtceu:wood_screwdriver_tip',
+    'gtceu:wood_wrench_tip',
     'gtceu:wood_drill_head',
     'gtceu:wood_chainsaw_head',
     'gtceu:rubber_sapling', 

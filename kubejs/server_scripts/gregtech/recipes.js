@@ -929,6 +929,15 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Деревянное оголовья инструментов (что?)
+
+    event.remove({id: 'gtceu:shaped/screwdriver_tip_wood'})
+    event.remove({id: 'gtceu:shaped/wrench_head_wood'})
+    event.remove({id: 'gtceu:shaped/drill_head_wood'})
+    event.remove({id: 'gtceu:shaped/chainsaw_head_wood'})
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})

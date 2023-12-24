@@ -606,7 +606,7 @@ global.TFC_DISABLED_ITEMS = [
     
     'tfc:stone/shovel/igneous_extrusive', 
     'tfc:stone/shovel/igneous_intrusive', 
-    'tfc:stone/shovel/sedimentary', 
+    'tfc:stone/shovel/metamorphic', 
     'tfc:stone/shovel/sedimentary', 
     
     'tfc:stone/hammer_head/igneous_extrusive', 

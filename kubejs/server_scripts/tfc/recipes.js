@@ -629,6 +629,48 @@ const registerTFCRecipes = (event) => {
             
             //#endregion
 
+            //#region Мясницкий нож
+            
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_butchery_knife`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_butchery_knife`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(`gtceu:${metal}_knife_butchery_head`, `#forge:ingots/${metal}`, ['punch_last', 'bend_not_last', 'bend_not_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_knife_butchery_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_knife_butchery_head`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .id(`tfc:heating/metal/${metal}_knife_butchery_head`)
+
+            //#endregion
+
+            //#region Напильник
+            
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_file`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_file`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(`gtceu:${metal}_file_head`, `#forge:ingots/${metal}`, ['upset_last', 'bend_not_last', 'punch_not_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_file_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_file_head`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 144))
+                .id(`tfc:heating/metal/${metal}_file_head`)
+
+            //#endregion
+
         }
 
         if (metalSpecs.props.includes('utility')) {
