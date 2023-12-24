@@ -1,0 +1,145 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:hot_spring",
+  "config": {
+    "fluid_state": "tfc:fluid/spring_water",
+    "radius": 14,
+    "decoration": {
+      "blocks": [
+        {
+          "replace": [
+            "tfc:rock/raw/rhyolite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:rhyolite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/basalt"
+          ],
+          "with": [
+            {
+              "block": "gtceu:basalt_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/andesite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:andesite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/dacite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:dacite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/granite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:granite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/diorite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:diorite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/gabbro"
+          ],
+          "with": [
+            {
+              "block": "gtceu:gabbro_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/quartzite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:quartzite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/slate"
+          ],
+          "with": [
+            {
+              "block": "gtceu:slate_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/phyllite"
+          ],
+          "with": [
+            {
+              "block": "gtceu:phyllite_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/schist"
+          ],
+          "with": [
+            {
+              "block": "gtceu:schist_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/gneiss"
+          ],
+          "with": [
+            {
+              "block": "gtceu:gneiss_sapphire_ore"
+            }
+          ]
+        },
+        {
+          "replace": [
+            "tfc:rock/raw/marble"
+          ],
+          "with": [
+            {
+              "block": "gtceu:marble_sapphire_ore"
+            }
+          ]
+        }
+      ],
+      "radius": 5,
+      "count": 5,
+      "rarity": 3
+    }
+  }
+}

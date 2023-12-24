@@ -202,11 +202,6 @@ const registerTFCFluidTags = (event) => {
 
 const registerTFCPlacedFeatures = (event) => {
     
-    // Удаление гена гемов из биомов
-    event.remove('tfc:in_biome/large_features/highlands', 'tfc:random_empty_hot_spring')
-    event.remove('tfc:in_biome/large_features/low_canyons', 'tfc:random_empty_hot_spring')
-    event.remove('tfc:in_biome/large_features/plateau', 'tfc:random_empty_hot_spring')
-
     // Удаление
     event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_copper')
     event.remove('tfc:in_biome/veins', 'tfc:vein/surface_malachite')
