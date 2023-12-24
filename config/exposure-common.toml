@@ -1,8 +1,10 @@
 
 [Camera]
-	#Spyglass will function like a superzoom lens instead of a teleconverter, allowing for a full range of focal lengths (18-200).
-	#Using it as a teleconverter allows only 55-200
-	SpyglassSuperzoom = false
+	#Default focal range of the camera (with built in lens). Default: 18-55
+	DefaultFocalRange = "18-55"
+	#Focal Range per lens. Item ID and min-max (or single number for primes) focal lengths. Separated by a comma. Allowed range: 10-300
+	#Default: ["minecraft:spyglass,55-200"]
+	LensFocalRanges = ["minecraft:spyglass,55-200"]
 
 [Lightroom]
 	#Time in ticks to print black and white photograph.
@@ -14,4 +16,16 @@
 	#Amount of experience awarded per printed Photograph. Set to 0 to disable.
 	#Range: 0 ~ 32767
 	ExperiencePerPrint = 4
+
+[Integration]
+
+	[Integration.Create]
+
+		[Integration.Create.SequencedSpoutFilmDeveloping]
+			#Film can be developed with create Spout Filling. Default: true
+			Enabled = true
+			#Fluid spouting sequence required to develop color film.
+			ColorFilmSequence = ["{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:awkward\"}}", "{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:thick\"}}", "{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:mundane\"}}"]
+			#Fluid spouting sequence required to develop black and white film.
+			BlackAndWhiteFilmSequence = ["{FluidName:\"minecraft:water\",Amount:250}"]
 

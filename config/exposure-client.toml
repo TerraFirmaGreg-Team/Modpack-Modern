@@ -6,6 +6,9 @@
 	PhotographPhotographerNameTooltip = false
 	#Crosshair will not get in the way when holding a photograph.
 	PhotographInHandHideCrosshair = true
+	#Tooltips for Developing Film Rolls and Copying Photographs will be shown on Film Rolls and Photographs respectively, describing the crafting recipe. 
+	#Only when JEI is not installed. (Only JEI shows these recipes, not REI or EMI)
+	RecipeTooltipsWithoutJei = true
 
 	[UI.Viewfinder]
 		#Mouse sensitivity modifier per 5 degrees of fov. Set to 0 to disable sensitivity changes.
