@@ -1099,15 +1099,14 @@
 			dependencies: ["365F6F48E0BB2EFC"]
 			id: "2BFC2744E4DE4B5A"
 			tasks: [{
-				id: "60D648DCBA5D58C9"
+				id: "27927A7A1267C056"
 				item: {
 					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
+					id: "gtceu:stone_axe"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:stone/axe/igneous_extrusive)item(tfc:stone/axe/igneous_intrusive)item(tfc:stone/axe/metamorphic)item(tfc:stone/axe/sedimentary))"
+						Damage: 0
 					}
 				}
-				title: "Любой каменный топор"
 				type: "item"
 			}]
 			x: 5.0d
@@ -1117,12 +1116,12 @@
 			dependencies: ["365F6F48E0BB2EFC"]
 			id: "318BF1F671BC4620"
 			tasks: [{
-				id: "212152C7F878908B"
+				id: "59508B56C7C3C891"
 				item: {
 					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
+					id: "gtceu:stone_hoe"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:stone/hoe/igneous_extrusive)item(tfc:stone/hoe/igneous_intrusive)item(tfc:stone/hoe/metamorphic)item(tfc:stone/hoe/sedimentary))"
+						Damage: 0
 					}
 				}
 				type: "item"
@@ -1153,12 +1152,12 @@
 			dependencies: ["365F6F48E0BB2EFC"]
 			id: "716B407EEED8BE95"
 			tasks: [{
-				id: "1FAB741E7048BADF"
+				id: "10A730E97830976C"
 				item: {
 					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
+					id: "gtceu:stone_shovel"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:stone/shovel/igneous_extrusive)item(tfc:stone/shovel/igneous_intrusive)item(tfc:stone/shovel/metamorphic)item(tfc:stone/shovel/sedimentary))"
+						Damage: 0
 					}
 				}
 				type: "item"
@@ -1171,15 +1170,14 @@
 			dependencies: ["365F6F48E0BB2EFC"]
 			id: "120E5C0E43EC756B"
 			tasks: [{
-				id: "22C65E79811F75DD"
+				id: "4BD017E2BEB690C4"
 				item: {
 					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
+					id: "gtceu:stone_hammer"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:stone/hammer/igneous_extrusive)item(tfc:stone/hammer/igneous_intrusive)item(tfc:stone/hammer/metamorphic)item(tfc:stone/hammer/sedimentary))"
+						Damage: 0
 					}
 				}
-				title: "Любой каменный молот"
 				type: "item"
 			}]
 			x: 5.0d
@@ -1283,15 +1281,14 @@
 			dependencies: ["365F6F48E0BB2EFC"]
 			id: "06C7B7138EDE4B38"
 			tasks: [{
-				id: "3B39ECE3DD8A0B45"
+				id: "45C890F7C082CA9E"
 				item: {
 					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
+					id: "gtceu:stone_knife"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:stone/knife/igneous_extrusive)item(tfc:stone/knife/igneous_intrusive)item(tfc:stone/knife/metamorphic)item(tfc:stone/knife/sedimentary))"
+						Damage: 0
 					}
 				}
-				title: "Любой каменный нож"
 				type: "item"
 			}]
 			x: 2.0d

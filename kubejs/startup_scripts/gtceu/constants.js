@@ -18,6 +18,12 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:wood_wrench_tip',
     'gtceu:wood_drill_head',
     'gtceu:wood_chainsaw_head',
+
+    'gtceu:stone_drill_head', 
+    'gtceu:stone_chainsaw_head', 
+    'gtceu:stone_buzz_saw_blade', 
+    'gtceu:stone_wrench_tip',
+
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 

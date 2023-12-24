@@ -938,6 +938,22 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Каменные оголовья инструментов (что?)
+
+    event.remove({id: 'gtceu:shaped/screwdriver_tip_stone'})
+    event.remove({id: 'gtceu:shaped/wrench_head_stone'})
+    event.remove({id: 'gtceu:shaped/drill_head_stone'})
+    event.remove({id: 'gtceu:shaped/chainsaw_head_stone'})
+    event.remove({id: 'gtceu:shaped/buzzsaw_head_stone'})
+
+    //#endregion
+
+    //#region Выход: Слиток камня
+
+    event.remove({id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot'})
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
