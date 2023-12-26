@@ -51,7 +51,7 @@ jobs:
           mv -vf overrides/ .minecraft/
           mv -vf .github/buildtools/modpack/mmc-pack.json ./
           mv -vf .github/buildtools/modpack/instance.cfg ./ 
-          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip .github/buildtools/modpack/mmc-pack.json .github/buildtools/modpack/instance.cfg .minecraft/
+          zip -r ./TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
 
       - name: Archive Server
         run: |
