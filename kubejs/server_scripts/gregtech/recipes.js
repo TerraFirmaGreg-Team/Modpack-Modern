@@ -749,17 +749,6 @@ const registerGTCEURecipes = (event) => {
 
     //#region Forge Hammers
 
-    event.shaped('gtceu:lp_steam_forge_hammer', [
-        'ABA', 
-        'ACA',
-        'ADA' 
-    ], {
-        A: 'gtceu:bronze_small_fluid_pipe',
-        B: '#forge:pistons',
-        C: 'gtceu:bronze_machine_casing',
-        D: 'tfc:metal/anvil/wrought_iron'
-    }).id('gtceu:shaped/steam_hammer_bronze')
-
     event.shaped('gtceu:lv_forge_hammer', [
         'ABA',
         'CDC',
@@ -954,6 +943,23 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Бронзовые машины
+
+    event.remove({ id: 'gtceu:shaped/steam_boiler_coal_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_boiler_lava_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_extractor_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_macerator_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_compressor_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_hammer_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_furnace_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_alloy_smelter_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_rock_breaker_bronze' })
+    event.remove({ id: 'gtceu:shaped/steam_miner' })
+    event.remove({ id: 'gtceu:shaped/bronze_bricks_hull' })
+    event.remove({ id: 'gtceu:shaped/bronze_hull' })
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
@@ -996,17 +1002,6 @@ const registerGTCEURecipes = (event) => {
         .duration(15)
         .EUt(2)
 
-    // Bronze Steam Furnace
-    event.shaped('gtceu:lp_steam_furnace', [
-        'AAA', 
-        'ABA',
-        'ACA'  
-    ], {
-        A: 'gtceu:bronze_small_fluid_pipe',
-        B: 'gtceu:bronze_brick_casing',  
-        C: 'tfc:blast_furnace'  
-    }).id('gtceu:shaped/steam_furnace_bronze')
-
     // Steel Steam Boiler
     event.shaped('gtceu:hp_steam_solid_boiler', [
         'AAA', 
@@ -1018,29 +1013,6 @@ const registerGTCEURecipes = (event) => {
         C: '#forge:tools/wrenches',
         D: 'tfc:blast_furnace'
     }).id('gtceu:shaped/steam_boiler_coal_steel')
-
-    // Bronze Steam Boiler
-    event.shaped('gtceu:lp_steam_solid_boiler', [
-        'AAA', 
-        'ACA',
-        'BDB'  
-    ], {
-        A: '#forge:plates/bronze',
-        B: 'minecraft:bricks',  
-        C: '#forge:tools/wrenches',
-        D: 'tfc:blast_furnace'
-    }).id('gtceu:shaped/steam_boiler_coal_bronze')
-
-    // Bronze Alloy Smelter
-    event.shaped('gtceu:lp_steam_alloy_smelter', [
-        'AAA', 
-        'BCB',
-        'AAA'  
-    ], {
-        A: 'gtceu:bronze_small_fluid_pipe',
-        B: 'tfc:blast_furnace',  
-        C: 'gtceu:bronze_brick_casing'
-    }).id('gtceu:shaped/steam_alloy_smelter_bronze')
 
     // Multi-Smelter
     event.shaped('gtceu:multi_smelter', [
