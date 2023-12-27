@@ -10,7 +10,6 @@
 	quests: [
 		{
 			description: ["{quests.primitive.start.description}"]
-			hide_dependent_lines: true
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -252,100 +251,6 @@
 			y: 0.0d
 		}
 		{
-			description: [
-				""
-				""
-				"Топоры: используются для рубки дерева, да в прочем и всего деревянного, ведь рукой в TFC нельзя сломать дерево."
-				""
-				"Мотыги: используются для вскапывания грядок и посадки растений. Интересный факт: в TFC можно вскапывать грядки даже вдалеке от воды, главное при наведении смотрите в подсказу (панель сверху), в ней будет отображаться кол-во насыщения водой грядки. Далее выберите семяна собранные в мире с подходящими климат. условиями (в том числе и влажностью грядки) посадите и ожидайте."
-				""
-				"Молот: преимущественно используется только ради создания каменной наковальни и первых медных двойных слитков, но об этом будет информация дальше по квестам."
-				""
-				"Копья: кидаются как трезубец, наносят урон, собственно говоря на этом все."
-				""
-				"Ножи: очень важный инструмент в TFC, позволяет срезать траву и получать сено, из него можно сделать огненную яму и обжаривать металлы и глинянные формы, но об этом дальше по гайду."
-			]
-			id: "6A564D86E000A506"
-			subtitle: "Ваши каменные инструменты"
-			tasks: [
-				{
-					id: "6454A891C996B93F"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:stone/axe/igneous_extrusive)item(tfc:stone/axe/igneous_intrusive)item(tfc:stone/axe/metamorphic)item(tfc:stone/axe/sedimentary))"
-						}
-					}
-					title: "Любой каменный топор"
-					type: "item"
-				}
-				{
-					id: "129963DC4FE951C1"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:stone/hammer/igneous_extrusive)item(tfc:stone/hammer/igneous_intrusive)item(tfc:stone/hammer/metamorphic)item(tfc:stone/hammer/sedimentary))"
-						}
-					}
-					title: "Любой каменный молот"
-					type: "item"
-				}
-				{
-					id: "2885C137D12D1F5F"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:stone/hoe/igneous_extrusive)item(tfc:stone/hoe/igneous_intrusive)item(tfc:stone/hoe/metamorphic)item(tfc:stone/hoe/sedimentary))"
-						}
-					}
-					title: "Любая каменная мотыга"
-					type: "item"
-				}
-				{
-					id: "69B19F0818B8D469"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
-						}
-					}
-					title: "Любое каменное копье"
-					type: "item"
-				}
-				{
-					id: "26EFC0F3A6AB4723"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:stone/knife/igneous_extrusive)item(tfc:stone/knife/igneous_intrusive)item(tfc:stone/knife/metamorphic)item(tfc:stone/knife/sedimentary))"
-						}
-					}
-					title: "Любой каменный нож"
-					type: "item"
-				}
-				{
-					id: "792EEAB98A4E0CE6"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:stone/shovel/igneous_extrusive)item(tfc:stone/shovel/igneous_intrusive)item(tfc:stone/shovel/metamorphic)item(tfc:stone/shovel/sedimentary))"
-						}
-					}
-					title: "Любая каменная лопата"
-					type: "item"
-				}
-			]
-			title: "Примитивные инструменты"
-			x: 13.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["2BFC2744E4DE4B5A"]
 			id: "373FD04AD6CA9F92"
 			subtitle: "При помощи топора, соберите немного древесины"
@@ -393,8 +298,8 @@
 				type: "item"
 			}]
 			title: "Угольные ямы"
-			x: 8.0d
-			y: 1.5d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
@@ -449,7 +354,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["373FD04AD6CA9F92"]
+			dependencies: [
+				"373FD04AD6CA9F92"
+				"4B8BAB2494C82C36"
+			]
 			id: "4F5C883CC5282151"
 			tasks: [{
 				count: 16L
@@ -464,7 +372,7 @@
 				title: "Any #tfc:lumber"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 3.0d
 		}
 		{
@@ -490,26 +398,24 @@
 				type: "checkmark"
 			}]
 			title: "Генерация руд в мире TFG"
-			x: -1.5d
-			y: -2.0d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["716B407EEED8BE95"]
+			dependencies: ["76EF4D00586A8B74"]
 			id: "297996E158D0A289"
 			size: 2.0d
 			tasks: [{
+				count: 64L
 				id: "7DE49B3518768E16"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -1.5d
+			x: -1.5d
+			y: 16.0d
 		}
 		{
-			dependencies: [
-				"792EEAB98A4E0CE6"
-				"716B407EEED8BE95"
-			]
+			dependencies: ["76EF4D00586A8B74"]
 			id: "671A79C648DE2BCD"
 			size: 2.0d
 			tasks: [{
@@ -526,20 +432,25 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
-			y: -4.0d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
+			dependencies: [
+				"1D40CA3A293CA0B8"
+				"6114E7A26576FE4C"
+			]
 			id: "70D40085219B1CC2"
 			tasks: [{
 				id: "2AFE24D5E16E294F"
 				item: "tfc:fire_clay"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.5d
+			x: 13.5d
+			y: 10.0d
 		}
 		{
+			dependencies: ["70D40085219B1CC2"]
 			id: "6E07D20BECE4AB91"
 			tasks: [{
 				id: "3E53D8286A792931"
@@ -556,9 +467,10 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -7.5d
+			y: 9.0d
 		}
 		{
+			dependencies: ["70D40085219B1CC2"]
 			id: "57A961BF9EE3F0A4"
 			tasks: [{
 				id: "28CEE2DBF2AC79BD"
@@ -575,9 +487,10 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -6.5d
+			y: 10.0d
 		}
 		{
+			dependencies: ["70D40085219B1CC2"]
 			id: "7E75A4A0E4BCCAAF"
 			tasks: [{
 				id: "529CB26EFD86E19B"
@@ -594,30 +507,45 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -5.5d
+			y: 11.0d
 		}
 		{
+			dependencies: [
+				"671A79C648DE2BCD"
+				"15E8DFB91603906B"
+			]
 			id: "1D40CA3A293CA0B8"
 			tasks: [{
+				count: 4L
 				id: "6A13186D6FB447CF"
 				item: "tfc:powder/kaolinite"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -7.0d
+			x: 12.0d
+			y: 11.0d
 		}
 		{
+			dependencies: [
+				"15E8DFB91603906B"
+				"3029097F88B8AABF"
+			]
 			id: "6114E7A26576FE4C"
 			tasks: [{
+				count: 4L
 				id: "2A3B46E5AAE6DFCC"
 				item: "tfc:powder/graphite"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -6.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
+			dependencies: [
+				"2286E2D7A9178E13"
+				"3D7FD4BCC0C66062"
+			]
 			id: "15E8DFB91603906B"
+			size: 2.0d
 			tasks: [
 				{
 					id: "27816718899DCD1B"
@@ -636,10 +564,11 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: -9.0d
+			x: 12.0d
+			y: 14.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "19D912E5A084622E"
 			tasks: [{
 				id: "28D767CF80018E21"
@@ -655,10 +584,11 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -6.0d
+			x: 3.5d
+			y: 13.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "651A98D6E3FA22F5"
 			tasks: [{
 				id: "08C6B78C9F502ADC"
@@ -674,10 +604,11 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -6.0d
+			x: 3.5d
+			y: 12.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "1485A3993C9A92FD"
 			tasks: [{
 				id: "78D4DB54E734D433"
@@ -693,10 +624,11 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -6.0d
+			x: 3.5d
+			y: 16.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "5D657AAEFFE8AAD9"
 			tasks: [{
 				id: "743306EEC814B850"
@@ -712,10 +644,11 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -5.0d
+			x: 3.5d
+			y: 15.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "37D6DD778879CF23"
 			tasks: [{
 				id: "18BE0AE52BCF136D"
@@ -731,10 +664,11 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -4.0d
+			x: -4.0d
+			y: 19.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "369D8DA6CB6FE181"
 			tasks: [{
 				id: "3300F74859EEFDA1"
@@ -750,10 +684,11 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -1.0d
+			x: -5.0d
+			y: 14.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "3B2261F507B53EDC"
 			tasks: [{
 				id: "1BE5D35CB5FA4D90"
@@ -769,10 +704,11 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -1.0d
+			x: -4.0d
+			y: 18.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "415A6313CFFB89C4"
 			tasks: [{
 				id: "2E7F90E71BF2E1A6"
@@ -788,10 +724,11 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -2.0d
+			x: 3.5d
+			y: 14.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "7939AE29BFFEE56C"
 			tasks: [{
 				id: "07B71D9E1191802F"
@@ -807,10 +744,11 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -3.0d
+			x: 3.5d
+			y: 17.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "5046918F09DC9AE8"
 			tasks: [{
 				id: "3F71BCE908797381"
@@ -826,10 +764,11 @@
 				}
 				type: "item"
 			}]
-			x: 17.5d
-			y: -4.0d
+			x: -4.0d
+			y: 15.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "1551AB73122D79BC"
 			tasks: [{
 				id: "3CC58AD9E3221D58"
@@ -845,10 +784,11 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -5.0d
+			x: -4.0d
+			y: 14.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "5FDE584FDC695E6B"
 			tasks: [{
 				id: "23F3B86202CB3AE5"
@@ -864,10 +804,11 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -4.0d
+			x: -4.0d
+			y: 16.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "6564CC704664FE81"
 			tasks: [{
 				id: "0E36568EAD60A63D"
@@ -883,10 +824,11 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -3.0d
+			x: -4.0d
+			y: 13.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "4038DD635065F5BD"
 			tasks: [{
 				id: "5380F63EAF5D7EB1"
@@ -902,10 +844,11 @@
 				}
 				type: "item"
 			}]
-			x: 21.5d
-			y: -2.0d
+			x: -4.0d
+			y: 17.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "7AE1B17F8F954E69"
 			tasks: [{
 				id: "68D766E9A037BC60"
@@ -921,10 +864,11 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -2.0d
+			x: -5.0d
+			y: 13.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "5B6A93CACD743E03"
 			tasks: [{
 				id: "122B083A3E5A9648"
@@ -940,10 +884,11 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -3.0d
+			x: -5.0d
+			y: 17.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "37D08CB9359AAD0D"
 			tasks: [{
 				id: "69F4C88520EC510A"
@@ -959,10 +904,11 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -4.0d
+			x: -6.0d
+			y: 18.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "38058B5408BFD0C2"
 			tasks: [{
 				id: "2A2BF997858CEFBD"
@@ -978,10 +924,11 @@
 				}
 				type: "item"
 			}]
-			x: 20.5d
-			y: -5.0d
+			x: -6.0d
+			y: 14.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "1D60D48F8B91D0E0"
 			tasks: [{
 				id: "340B47A3D494A58A"
@@ -997,10 +944,11 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -5.0d
+			x: -5.0d
+			y: 18.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "6D419B6EDE146616"
 			tasks: [{
 				id: "39D1102841206461"
@@ -1016,10 +964,11 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -4.0d
+			x: 3.5d
+			y: 19.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "4BB76F3E38A2AFFB"
 			tasks: [{
 				id: "01564E7BA40431BB"
@@ -1035,10 +984,11 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -3.0d
+			x: -6.0d
+			y: 16.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "0546B04FC0F85C8C"
 			tasks: [{
 				id: "50369C29A8FED043"
@@ -1054,10 +1004,11 @@
 				}
 				type: "item"
 			}]
-			x: 19.5d
-			y: -2.0d
+			x: -6.0d
+			y: 15.0d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "0148B1F36C067BE0"
 			tasks: [{
 				id: "684F827FEB040FFA"
@@ -1073,10 +1024,11 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -2.0d
+			x: 3.5d
+			y: 18.5d
 		}
 		{
+			dependencies: ["297996E158D0A289"]
 			id: "4F4114979CB5CA03"
 			tasks: [{
 				id: "0DA50C9F3BDE79C8"
@@ -1092,12 +1044,14 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: -3.0d
+			x: -6.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Топоры: используются для рубки дерева, да в прочем и всего деревянного, ведь рукой в TFC нельзя сломать дерево."]
 			id: "2BFC2744E4DE4B5A"
+			subtitle: "Не рубите дерево рукой, это неправильно!"
 			tasks: [{
 				id: "27927A7A1267C056"
 				item: {
@@ -1114,7 +1068,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Мотыги: используются для вскапывания грядок и посадки растений. Интересный факт: в TFC можно вскапывать грядки даже вдалеке от воды, главное при наведении смотрите в подсказу (панель сверху), в ней будет отображаться кол-во насыщения водой грядки. Далее выберите семяна собранные в мире с подходящими климат. условиями (в том числе и влажностью грядки) посадите и ожидайте."]
 			id: "318BF1F671BC4620"
+			subtitle: "Для ваших первых грядок"
 			tasks: [{
 				id: "59508B56C7C3C891"
 				item: {
@@ -1126,13 +1082,14 @@
 				}
 				type: "item"
 			}]
-			title: "Любая каменная мотыга"
-			x: 3.5d
+			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Копья: кидаются как трезубец, наносят урон, собственно говоря на этом все."]
 			id: "508DA76FA2766B7B"
+			subtitle: "Какой-то неправильный трезубец"
 			tasks: [{
 				id: "061392B0556D6810"
 				item: {
@@ -1151,6 +1108,7 @@
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
 			id: "716B407EEED8BE95"
+			subtitle: "Спасибо, что копает"
 			tasks: [{
 				id: "10A730E97830976C"
 				item: {
@@ -1162,13 +1120,15 @@
 				}
 				type: "item"
 			}]
-			title: "Любая каменная лопата"
 			x: 5.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Молот: преимущественно используется только ради создания каменной наковальни и первых медных двойных слитков, но об этом будет информация дальше по квестам."]
+			hide_dependency_lines: true
 			id: "120E5C0E43EC756B"
+			subtitle: "Сделайте лучше медный!"
 			tasks: [{
 				id: "4BD017E2BEB690C4"
 				item: {
@@ -1180,8 +1140,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 14.5d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -1194,18 +1154,17 @@
 				id: "3321FE657126AD2E"
 				observe_type: 1
 				timer: 0L
+				title: "Сделайте грядку"
 				to_observe: "tfc:farmland"
 				type: "observation"
 			}]
-			x: 5.0d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"76EF4D00586A8B74"
-				"06C7B7138EDE4B38"
-			]
+			dependencies: ["76EF4D00586A8B74"]
 			dependency_requirement: "one_completed"
+			description: ["Найдите и соберите любые семяна!"]
 			id: "5C396041880D32FF"
 			tasks: [{
 				id: "24625450C85F8A04"
@@ -1216,10 +1175,10 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:seeds)"
 					}
 				}
-				title: "Any #tfc:seeds"
+				title: "Любые семяна"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -1245,10 +1204,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"508DA76FA2766B7B"
-				"76EF4D00586A8B74"
-			]
+			dependencies: ["76EF4D00586A8B74"]
 			dependency_requirement: "one_completed"
 			id: "7196BB6BDBAE7B51"
 			tasks: [{
@@ -1263,23 +1219,26 @@
 				title: "Any #tfc:foods/raw_meats"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["06C7B7138EDE4B38"]
 			id: "45D907EF7902A200"
+			subtitle: "Понадобится для создания укрытия или обжарной ямы"
 			tasks: [{
 				id: "77860121847D8117"
 				item: "tfc:straw"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["Ножи: очень важный инструмент в TFC, позволяет срезать траву и получать сено, из него можно сделать огненную яму и обжаривать металлы и глинянные формы, но об этом дальше по гайду."]
 			id: "06C7B7138EDE4B38"
+			subtitle: "Ваш лучший друг"
 			tasks: [{
 				id: "45C890F7C082CA9E"
 				item: {
@@ -1291,7 +1250,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -1305,8 +1264,951 @@
 				to_observe: "minecraft:water"
 				type: "observation"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5EBFCE37D727DFD0"]
+			id: "1C1CD40818C97CB4"
+			size: 2.0d
+			tasks: [{
+				id: "59F6553DB3C48707"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/copper"
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["43C737BF10D3AC0E"]
+			id: "5A3E944192851481"
+			size: 2.0d
+			tasks: [{
+				id: "42CEDE5B7EEAEC2D"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
+					}
+				}
+				title: "Наковальня из любой бронзы"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["474BC62CB10811FA"]
+			id: "095104BA3C842978"
+			size: 2.0d
+			tasks: [{
+				id: "16D30907256FEBA9"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/wrought_iron"
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["76A8181B6F9331B9"]
+			id: "445E060EF3300A49"
+			size: 2.0d
+			tasks: [{
+				id: "058C47108EE07BAF"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/steel"
+				}
+				type: "item"
+			}]
+			x: 25.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["53B7B38B960B0893"]
+			id: "1DF18E716A5D14DC"
+			size: 2.0d
+			tasks: [{
+				id: "2D51F0C731EFA71E"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:red_or_blue_anvil)"
+					}
+				}
+				title: "Наковальня из красной или синей стали"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2A181CB1C187FD0E"]
+			id: "1B241F6608950656"
+			size: 2.0d
+			tasks: [{
+				id: "6E61EA191DB9B798"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			x: 27.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["36A9E5CD45A79288"]
+			icon: "tfc:wild_crop/barley"
+			id: "4CF472C9778068D6"
+			subtitle: "Соберите свой первый урожай и радуйтесь"
+			tasks: [{
+				id: "7226C69847993160"
+				title: "Нажми сюда"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45D907EF7902A200"]
+			id: "30AE1FF285B64716"
+			tasks: [{
+				id: "71AD45BFB355905E"
+				item: "tfc:thatch"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["45D907EF7902A200"]
+			id: "0ED8BE436A0ECDDB"
+			tasks: [{
+				id: "485D243786542A96"
+				item: "minecraft:hay_block"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"45D907EF7902A200"
+				"373FD04AD6CA9F92"
+			]
+			description: ["Для начала выкопайте 1 блок в земле, или любой другой поверхности, дальше при помощи клавиши V установите в яму вещи, которые вы хотите обжарить. Если мы говорим о формах, их помещается 4 штуки. Дальше возьмите в руку Сено и нажмите ПКМ в яму, сено начнет заполнять яму, вам нужно использовать 8 сена, дальше таким же образом добавьте 8 бревен, далее вы можете спокойно поджечь это дело при помощи примитивного огнива или факела (просто бросьте факел сверху вашей ямы и оно начнет разгораться). Потом вы должны ожидать окончания обжига и после достать свои готовые предметы. Таким же образом происходит расплавка металла в емкостях. То есть кладете кусочки меди в сосуд и в эту самую яму, после вышеописанного процесса вы получите расплавленную медь, которую сможете отлить в слитки, оголовья и так далее."]
+			id: "69D20168E26BBF59"
+			size: 2.0d
+			subtitle: "Реализм"
+			tasks: [{
+				icon: "tfc:firepit"
+				id: "4104866DD66BFB2E"
+				observe_type: 0
+				timer: 0L
+				title: "Создайте обжарочную яму"
+				to_observe: "tfc:pit_kiln"
+				type: "observation"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"69D20168E26BBF59"
+				"1485A3993C9A92FD"
+			]
+			id: "6EFCFEF4EDFBB71E"
+			tasks: [{
+				id: "71AB3DF803604E21"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/ingot_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"651A98D6E3FA22F5"
+				"69D20168E26BBF59"
+			]
+			id: "6C4DD58DE6015FD7"
+			tasks: [{
+				id: "521FE5C41A7AC93F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/saw_blade_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"69D20168E26BBF59"
+				"19D912E5A084622E"
+			]
+			id: "64F3C1F270CFFE02"
+			tasks: [{
+				id: "57889ADDFB9BE0C3"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/pickaxe_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"5D657AAEFFE8AAD9"
+				"69D20168E26BBF59"
+			]
+			id: "78DEFFC621068E18"
+			tasks: [{
+				id: "17482FD96A00520B"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/propick_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"7939AE29BFFEE56C"
+				"69D20168E26BBF59"
+			]
+			id: "7E98FD623005E4CA"
+			tasks: [{
+				id: "06CC57344030E519"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/hammer_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"69D20168E26BBF59"
+				"0148B1F36C067BE0"
+			]
+			id: "6CCE62F683236AA6"
+			tasks: [{
+				id: "51AD0A0E0A5EE9F8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/vessel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"6D419B6EDE146616"
+				"69D20168E26BBF59"
+			]
+			id: "3E03688C03778894"
+			tasks: [{
+				id: "2FBD3C008C1E7227"
+				item: "tfc:ceramic/jug"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["3E03688C03778894"]
+			id: "3865CC2794856513"
+			tasks: [{
+				id: "621C39B591C3100C"
+				item: {
+					Count: 1b
+					id: "tfc:ceramic/jug"
+					tag: {
+						fluid: {
+							Amount: 100
+							FluidName: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["0EB682B44D83D12A"]
+			id: "2286E2D7A9178E13"
+			tasks: [{
+				count: 6L
+				id: "7ACB816A97136D3B"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/raw)"
+					}
+				}
+				title: "Любой сырой камень"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["64F3C1F270CFFE02"]
+			id: "0EB682B44D83D12A"
+			tasks: [{
+				id: "6AD179467B50D005"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:copper_pickaxe)item(gtceu:bismuth_bronze_pickaxe)item(gtceu:black_bronze_pickaxe)item(gtceu:bronze_pickaxe))"
+					}
+				}
+				title: "Медная или бронзовая кирка"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["644D51EEF0A5641E"]
+			id: "3D7FD4BCC0C66062"
+			tasks: [{
+				count: 3L
+				id: "58914FFF11720933"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/smooth)"
+					}
+				}
+				title: "Любой полированный камень"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"415A6313CFFB89C4"
+				"69D20168E26BBF59"
+			]
+			id: "3FD9C8B55B70ACC3"
+			tasks: [{
+				id: "4E07B3CADC38A2CE"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/chisel_head_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["3FD9C8B55B70ACC3"]
+			id: "644D51EEF0A5641E"
+			tasks: [{
+				id: "5DBB1490DF109B8E"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:metal/chisel/copper)item(tfc:metal/chisel/bismuth_bronze)item(tfc:metal/chisel/bronze)item(tfc:metal/chisel/black_bronze))"
+					}
+				}
+				title: "Медная или бронзовая стамеска"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.5d
+		}
+		{
+			id: "3029097F88B8AABF"
+			tasks: [{
+				id: "4DF45DB51EF758E4"
+				item: "gtceu:raw_graphite"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7E75A4A0E4BCCAAF"]
+			id: "390C85E831B2B8A4"
+			tasks: [{
+				id: "29360B07ACD7ACE3"
+				item: "tfc:crucible"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57A961BF9EE3F0A4"]
+			id: "4EE18624D06C6D14"
+			tasks: [{
+				id: "611E42A854560727"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/fire_ingot_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6E07D20BECE4AB91"]
+			id: "364B3A80768954B0"
+			tasks: [{
+				id: "29608DBF0BF435D5"
+				item: "tfc:ceramic/fire_brick"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"5157705DAAC2C814"
+				"364B3A80768954B0"
+			]
+			id: "6BFD0EF0AA74F136"
+			size: 2.0d
+			tasks: [{
+				id: "75E63C92A571122E"
+				item: "tfc:fire_bricks"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 6.5d
+		}
+		{
+			id: "1AD820EAE686FAAB"
+			tasks: [{
+				id: "4F43F136444B502A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:compressed_coke_clay"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			id: "712ACF130A558150"
+			tasks: [{
+				id: "6ADC8C7254F179F6"
+				item: "gtceu:coke_oven_brick"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6E24ECF6CEE950D1"]
+			id: "5157705DAAC2C814"
+			tasks: [{
+				id: "4F14DCBCEAE4C14D"
+				item: "tfc:mortar"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4F5C883CC5282151"]
+			id: "6E24ECF6CEE950D1"
+			tasks: [{
+				id: "0CC93715D33E6211"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:barrels)"
+					}
+				}
+				title: "Any #tfc:barrels"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06C7B7138EDE4B38"]
+			id: "0AA2FEB9F4FFC4FE"
+			tasks: [{
+				id: "1BFBA1DC92466F7E"
+				item: "gtceu:brick_wooden_form"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			id: "3E82C14AF32AA103"
+			tasks: [
+				{
+					id: "101D5A6CD018C6E8"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					id: "118D7D21694E2A5A"
+					item: "gtceu:coke_oven_hatch"
+					type: "item"
+				}
+				{
+					id: "6B61EDC7E4E460EF"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6BFD0EF0AA74F136"]
+			id: "460D944D0070C3AE"
+			size: 2.0d
+			tasks: [{
+				id: "570752C82CA140BF"
+				item: "tfc:blast_furnace"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6C4DD58DE6015FD7"]
+			id: "4B8BAB2494C82C36"
+			tasks: [{
+				id: "28E92E097D56A46F"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:copper_saw)item(gtceu:bismuth_bronze_saw)item(gtceu:bronze_saw)item(gtceu:black_bronze_saw))"
+					}
+				}
+				title: "Медная или бронзовая пила"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["78DEFFC621068E18"]
+			id: "51E7834A52F80482"
+			tasks: [{
+				id: "25CB975568D50B66"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:metal/propick/copper)item(tfc:metal/propick/bismuth_bronze)item(tfc:metal/propick/bronze)item(tfc:metal/propick/black_bronze))"
+					}
+				}
+				title: "Медная или бронзовая кирка шахтера"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7E98FD623005E4CA"]
+			id: "3830E24B66F59E76"
+			tasks: [{
+				id: "730D12AD7644BC1B"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:copper_hammer)item(gtceu:bismuth_bronze_hammer)item(gtceu:bronze_hammer)item(gtceu:black_bronze_hammer))"
+					}
+				}
+				title: "Медный или бронзовый топор"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"120E5C0E43EC756B"
+				"3830E24B66F59E76"
+			]
+			dependency_requirement: "one_completed"
+			id: "169485270E86A50C"
+			tasks: [{
+				icon: "tfc:rock/anvil/basalt"
+				id: "728B5BCCE4E941E1"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_anvils)"
+					}
+				}
+				title: "Any #tfc:rock_anvils"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["6EFCFEF4EDFBB71E"]
+			id: "7A266A3E0A632D42"
+			tasks: [{
+				id: "6493AF96E8B38197"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/copper"
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"7A266A3E0A632D42"
+				"169485270E86A50C"
+			]
+			id: "5EBFCE37D727DFD0"
+			tasks: [{
+				count: 7L
+				id: "5EB6E32F50CC86A9"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/double_ingot/copper"
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["6EFCFEF4EDFBB71E"]
+			id: "1FFE279F43B0BA45"
+			tasks: [{
+				id: "7A8EA2BE9813B1F1"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_ingot)item(gtceu:black_bronze_ingot)item(gtceu:bismuth_bronze_ingot))"
+					}
+				}
+				title: "Любой бронзовый слиток"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6EFCFEF4EDFBB71E"]
+			id: "2E3F6613C490E9AD"
+			tasks: [{
+				id: "05E9758EC5493B4C"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:wrought_iron_ingot"
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6EFCFEF4EDFBB71E"]
+			id: "4CDE17A99074ADE2"
+			tasks: [{
+				id: "7CE0990FF2F83BD0"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 25.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6EFCFEF4EDFBB71E"]
+			id: "688799FCA2C83FBF"
+			tasks: [{
+				id: "36EFEF0DC6BB7637"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:black_steel_ingot"
+				}
+				type: "item"
+			}]
+			x: 27.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["6EFCFEF4EDFBB71E"]
+			id: "4A194D7A18EB1F13"
+			tasks: [{
+				id: "77EDC2A4315E3852"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:red_steel_ingot)item(gtceu:blue_steel_ingot))"
+					}
+				}
+				title: "Слиток красной или синей стали"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2E3F6613C490E9AD"]
+			id: "474BC62CB10811FA"
+			tasks: [{
+				count: 7L
+				id: "6490BC5114D7AE13"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/double_ingot/wrought_iron"
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["4CDE17A99074ADE2"]
+			id: "76A8181B6F9331B9"
+			tasks: [{
+				count: 7L
+				id: "523ACBC9B5E4B287"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/double_ingot/steel"
+				}
+				type: "item"
+			}]
+			x: 25.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["688799FCA2C83FBF"]
+			id: "2A181CB1C187FD0E"
+			tasks: [{
+				count: 7L
+				id: "59B217DB0BCADB82"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/double_ingot/black_steel"
+				}
+				type: "item"
+			}]
+			x: 27.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["1FFE279F43B0BA45"]
+			id: "43C737BF10D3AC0E"
+			tasks: [{
+				count: 7L
+				id: "221753242C9F612A"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:metal/double_ingot/bismuth_bronze)item(tfc:metal/double_ingot/bronze)item(tfc:metal/double_ingot/black_bronze))"
+					}
+				}
+				title: "Двойные слитки из любой бронзы"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["4A194D7A18EB1F13"]
+			id: "53B7B38B960B0893"
+			tasks: [{
+				count: 7L
+				id: "2C60E8DE28E05122"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:metal/double_ingot/blue_steel)item(tfc:metal/double_ingot/red_steel))"
+					}
+				}
+				title: "Двойные слитки из красной или синей стали"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 18.5d
 		}
 	]
 	title: "Primitive Age"
