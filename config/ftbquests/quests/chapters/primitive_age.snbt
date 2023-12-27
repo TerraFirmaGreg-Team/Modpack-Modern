@@ -664,8 +664,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 19.0d
+			x: -6.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -684,8 +684,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 14.5d
+			x: -6.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -704,7 +704,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: 18.0d
 		}
 		{
@@ -764,7 +764,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: 15.0d
 		}
 		{
@@ -784,8 +784,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 14.0d
+			x: -6.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -804,7 +804,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: 16.0d
 		}
 		{
@@ -824,8 +824,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 13.0d
+			x: -6.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -844,7 +844,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: 17.0d
 		}
 		{
@@ -864,8 +864,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 13.5d
+			x: -6.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -884,8 +884,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 17.5d
+			x: -6.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -905,7 +905,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 18.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -925,7 +925,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 14.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -944,8 +944,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 18.5d
+			x: -6.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -985,7 +985,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 16.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -1004,8 +1004,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 15.0d
+			x: -1.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["297996E158D0A289"]
@@ -1045,7 +1045,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 17.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
@@ -1790,8 +1790,10 @@
 			y: 6.5d
 		}
 		{
+			dependencies: ["0AA2FEB9F4FFC4FE"]
 			id: "1AD820EAE686FAAB"
 			tasks: [{
+				count: 4L
 				id: "4F43F136444B502A"
 				item: {
 					Count: 1b
@@ -1805,18 +1807,20 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 9.5d
+			x: 19.5d
+			y: 27.0d
 		}
 		{
+			dependencies: ["1AD820EAE686FAAB"]
 			id: "712ACF130A558150"
 			tasks: [{
+				count: 4L
 				id: "6ADC8C7254F179F6"
 				item: "gtceu:coke_oven_brick"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.5d
+			x: 21.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["6E24ECF6CEE950D1"]
@@ -1849,17 +1853,23 @@
 		}
 		{
 			dependencies: ["06C7B7138EDE4B38"]
+			hide_dependency_lines: true
 			id: "0AA2FEB9F4FFC4FE"
 			tasks: [{
 				id: "1BFBA1DC92466F7E"
 				item: "gtceu:brick_wooden_form"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 9.5d
+			x: 18.0d
+			y: 27.0d
 		}
 		{
+			dependencies: [
+				"25E35E929922B872"
+				"712ACF130A558150"
+			]
 			id: "3E82C14AF32AA103"
+			size: 2.0d
 			tasks: [
 				{
 					id: "101D5A6CD018C6E8"
@@ -1872,13 +1882,14 @@
 					type: "item"
 				}
 				{
+					count: 25L
 					id: "6B61EDC7E4E460EF"
 					item: "gtceu:coke_oven_bricks"
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 8.0d
+			x: 23.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["6BFD0EF0AA74F136"]
@@ -2209,6 +2220,185 @@
 			}]
 			x: 29.0d
 			y: 18.5d
+		}
+		{
+			id: "73BF0075860E666B"
+			tasks: [{
+				id: "2F4CE558D97BE6BB"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "minecraft:raw_copper"
+				}
+				type: "item"
+			}]
+			x: 19.0d
+			y: 15.0d
+		}
+		{
+			id: "2DEEDED2F21E60B9"
+			tasks: [
+				{
+					id: "2CE6C5672A4DB088"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "minecraft:raw_copper"
+					}
+					type: "item"
+				}
+				{
+					id: "56CD26C6563811E3"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:raw_tin"
+					}
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 15.0d
+		}
+		{
+			id: "566FA805413004CF"
+			tasks: [{
+				id: "24A34CAF4599D3CC"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:raw_hematite"
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["445E060EF3300A49"]
+			id: "5C7B69F45F076A79"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "2D2CDB71DF062E33"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_plate"
+				}
+				type: "item"
+			}]
+			x: 25.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6564CC704664FE81"]
+			id: "0006D60580FCA6B7"
+			tasks: [{
+				id: "31AB0A3C7212977B"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/knife_blade_mold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["095104BA3C842978"]
+			id: "25E35E929922B872"
+			tasks: [{
+				id: "7D178601494C202F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:wrought_iron_plate"
+				}
+				type: "item"
+			}]
+			x: 23.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["3E82C14AF32AA103"]
+			id: "41DBE0B47E760DC4"
+			tasks: [{
+				count: 8L
+				id: "69114B3B5E19628E"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 29.0d
+		}
+		{
+			dependencies: ["41DBE0B47E760DC4"]
+			id: "1D623D93EEDD3C67"
+			size: 2.0d
+			tasks: [
+				{
+					id: "24CCB2BF08C5400A"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "1EC1919EF0D22F00"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4AA6B1931455F656"
+					item: "gtceu:pump_deck"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "31D4CB90405080DF"
+					item: "gtceu:treated_wood_frame"
+					type: "item"
+				}
+			]
+			x: 23.0d
+			y: 31.0d
 		}
 	]
 	title: "Primitive Age"
