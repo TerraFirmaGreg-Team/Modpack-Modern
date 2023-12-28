@@ -7,6 +7,16 @@
 	id: "1BE688FC900D9161"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "417E70F0448DD049"
+		tasks: [{
+			id: "54D4EC9B2EA0A688"
+			item: "minecraft:crimson_nylium"
+			title: "Work In Progress"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "MV Age"
 }

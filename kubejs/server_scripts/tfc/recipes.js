@@ -2422,7 +2422,7 @@ const registerTFCRecipes = (event) => {
         'ABA',
         'AAA'  
     ], {
-        A: '#forge:plates/wrought_iron',
+        A: '#forge:double_plates/wrought_iron',
         B: 'tfc:crucible'
     }).id('tfc:crafting/blast_furnace')
 

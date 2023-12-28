@@ -2344,6 +2344,11 @@ const registerMinecraftRecipes = (event) => {
         .duration(100)
         .EUt(16)
 
+    //#endregion
+
+    //#region Выход: Кожа
+        
+    event.remove({ id: 'minecraft:leather' })
 
     //#endregion
 

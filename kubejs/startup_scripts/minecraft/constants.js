@@ -708,6 +708,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:medium_amethyst_bud', 
     'minecraft:large_amethyst_bud', 
     'minecraft:amethyst_cluster',
+    'minecraft:rabbit_hide',
     '/spawn_egg/'
 ];
 
