@@ -1068,9 +1068,12 @@ const registerGTCEURecipes = (event) => {
         .duration(448)
         .EUt(8)
 
-    // Фикс выработки пара на ведре лавы
+    //#region Выход: Фикс выработки пара на ведре лавы
+
     event.remove({ id: 'minecraft:large_boiler/lava_bucket' })
     event.recipes.gtceu.large_boiler('lava_bucket')             
         .itemInputs('minecraft:lava_bucket')
         .duration(25)
+
+    //#endregion
 }

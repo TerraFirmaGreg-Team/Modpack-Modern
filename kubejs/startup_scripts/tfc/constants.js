@@ -1081,14 +1081,28 @@ global.METAL_TO_SPECS = {
         isGTDup: true
     },
 
-    cast_iron: 
-    { 
+    cast_iron: { 
         forging_temp: 921, 
         welding_temp: 1228, 
         melt_temp: 1535, 
         fluid: "tfc:metal/cast_iron",
         tier: 1, 
         props: [] 
+    },
+
+    iron: {
+        forging_temp: 921, 
+        welding_temp: 1228, 
+        melt_temp: 1535, 
+        fluid: "tfc:metal/cast_iron",
+        percent_of_material: 100,
+        tier: 1, 
+        props: [
+            global.INGOT_GEN,
+            global.NUGGET_GEN,
+            global.DUST_GEN,
+            global.ORE_CHUNKS_GEN
+        ] 
     },
 
     pig_iron: {

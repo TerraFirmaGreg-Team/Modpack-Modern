@@ -1669,9 +1669,13 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Книги
+    //#region Выход: Книга
 
     event.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+
+    event.shapeless('minecraft:book', [
+        'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
+    ]).id('minecraft:book')
 
     //#endregion
 
@@ -2349,6 +2353,59 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Кожа
         
     event.remove({ id: 'minecraft:leather' })
+
+    //#endregion
+
+    //#region Выход: Бетон
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        
+        if (dye != "white")
+            event.recipes.gtceu.chemical_bath(`${dye}_concrete`)             
+                .itemInputs(`minecraft:white_concrete`)
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+                .itemOutputs(`minecraft:${dye}_concrete`)
+                .duration(300)
+                .EUt(4)
+    })
+
+    //#endregion
+
+    //#region Выход: Шерсть
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        
+        if (dye != "white")
+            event.recipes.gtceu.chemical_bath(`${dye}_wool`)             
+                .itemInputs(`minecraft:white_wool`)
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+                .itemOutputs(`minecraft:${dye}_wool`)
+                .duration(300)
+                .EUt(4)
+    })
+
+    //#endregion
+
+    //#region Выход: Кровати
+
+    event.recipes.gtceu.chemical_bath(`bed_decolor`)             
+        .itemInputs('#tfc:colored_bed')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs(`minecraft:white_bed`)
+        .duration(300)
+        .EUt(4)
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.remove({ id: `minecraft:${dye}_bed` })
+
+        if (dye != "white")
+            event.recipes.gtceu.chemical_bath(`${dye}_bed`)             
+                .itemInputs(`minecraft:white_bed`)
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 216))
+                .itemOutputs(`minecraft:${dye}_bed`)
+                .duration(300)
+                .EUt(4)
+    })
 
     //#endregion
 

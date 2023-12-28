@@ -11,27 +11,30 @@ const registerTFCRecipes = (event) => {
 
         // Одинарные слитки
         if (metalSpecs.props.includes('ingot')) {
-            if (metalSpecs.isGTDup != undefined)
+            if (metal != "iron")
             {
-                // Отливка слитка в обычной форме
-                event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
-                    .id(`tfc:casting/${metal}_ingot`)
-
-                // Отливка слитка в огнеупорной форме
-                event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
-                    .id(`tfc:casting/${metal}_fire_ingot`)
-                
-            }
-            // Металлы не дублирующие гт
-            else
-            {
-                // Отливка слитка в обычной форме
-                event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
-                    .id(`tfc:casting/${metal}_ingot`)
-
-                // Отливка слитка в огнеупорной форме
-                event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
-                    .id(`tfc:casting/${metal}_fire_ingot`)
+                if (metalSpecs.isGTDup != undefined)
+                {
+                    // Отливка слитка в обычной форме
+                    event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
+                        .id(`tfc:casting/${metal}_ingot`)
+    
+                    // Отливка слитка в огнеупорной форме
+                    event.recipes.tfc.casting(`gtceu:${metal}_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
+                        .id(`tfc:casting/${metal}_fire_ingot`)
+                    
+                }
+                // Металлы не дублирующие гт
+                else
+                {
+                    // Отливка слитка в обычной форме
+                    event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.1)
+                        .id(`tfc:casting/${metal}_ingot`)
+    
+                    // Отливка слитка в огнеупорной форме
+                    event.recipes.tfc.casting(`tfc:metal/ingot/${metal}`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.fluid, 144), 0.01)
+                        .id(`tfc:casting/${metal}_fire_ingot`)
+                }
             }
 
             // Декрафт слитка в жидкость
