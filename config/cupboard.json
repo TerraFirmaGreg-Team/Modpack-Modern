@@ -10,5 +10,9 @@
   "logOffthreadEntityAdd": {
     "desc:": "Entities should only be added on the server thread itself, cupboard fixes the crashes caused by mods violating that, this option enables the logging of those: default:true",
     "logOffthreadEntityAdd": true
+  },
+  "forceHeapDumpOnOOM": {
+    "desc:": "Enables creating a heap dump automatically once the game crashes with an out of memory issue, use with care heapdumps take a lot of space. default:false",
+    "forceHeapDumpOnOOM": false
   }
 }
