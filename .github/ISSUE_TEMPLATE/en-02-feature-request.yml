@@ -1,6 +1,6 @@
 name: "[EN] Request a Feature"
 description: Request a new feature or a change to an existing one.
-labels: [ "type: feature" ]
+labels: [ "1. type: feature" ]
 body:
   - type: input
     id: version

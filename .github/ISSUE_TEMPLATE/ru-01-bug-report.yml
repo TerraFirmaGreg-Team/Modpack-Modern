@@ -1,6 +1,6 @@
 name: "[RU] Отчет об ошибке"
 description: Сообщите об ошибке, когда что-то работает не так, как ожидалось, что не приводит к сбою игры.
-labels: [ "status: unverified", "type: bug" ]
+labels: [ "1. type: bug", "2. status: unverified" ]
 body:
   - type: input
     id: version
@@ -8,6 +8,8 @@ body:
       label: Версия модпака
       description: Напишите, какую версию модпака вы используете.
       placeholder: "Пример: 0.1.1"
+      options:
+        - "Yes"
     validations:
       required: true
   - type: input

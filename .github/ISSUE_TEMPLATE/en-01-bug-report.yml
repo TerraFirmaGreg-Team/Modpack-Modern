@@ -1,12 +1,13 @@
 name: "[EN] Bug report"
 description: Report a bug where something is not working as expected, which does not crash the game.
-labels: [ "status: unverified", "type: bug" ]
+labels: [ "1. type: bug", "2. status: unverified" ]
 body:
   - type: dropdown
     id: version
     attributes:
       label: Are you using the latest available version?
       description: If not, update.
+      placeholder: "Example: 0.1.1"
       options:
         - "Yes"
     validations:

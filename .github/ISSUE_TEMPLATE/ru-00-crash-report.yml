@@ -1,6 +1,6 @@
 name: "[RU] Crash Report"
 description: Сообщите об ошибке, которая приводит к сбою игры или препятствует ее запуску.
-labels: [ "status: unverified", "type: сrash" ]
+labels: [ "1. type: сrash", "2. status: unverified" ]
 body:
   - type: input
     id: version

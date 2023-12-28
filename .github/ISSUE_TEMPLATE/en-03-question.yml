@@ -1,6 +1,6 @@
 name: "[EN] Ask a Question"
 description: Ask a question regarding this project.
-labels: [ "type: question" ]
+labels: [ "1. type: question" ]
 body:
   - type: markdown
     attributes:
