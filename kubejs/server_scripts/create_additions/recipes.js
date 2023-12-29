@@ -5,19 +5,6 @@ const registerCreateAdditionsRecipes = (event) => {
     // Удаление рецептов мода railways 
     event.remove({ mod: 'createaddition' });
 
-    /*
-    
-    //
-    event.shaped('', [
-        'AAA',
-        'AAA',
-        'AAA' 
-    ], {
-        A: ''
-    }).id('tfg:railways/shaped/')
-    
-    */
-
     // Электрический мотор
     event.shaped('createaddition:electric_motor', [
         'ABA',

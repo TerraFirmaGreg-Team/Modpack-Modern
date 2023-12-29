@@ -144,6 +144,7 @@ const registerTFCItemTags = (event) => {
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
 }
