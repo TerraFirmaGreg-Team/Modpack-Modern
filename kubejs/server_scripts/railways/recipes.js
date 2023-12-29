@@ -5,19 +5,6 @@ const registerRailWaysRecipes = (event) => {
     // Удаление рецептов мода railways 
     event.remove({ mod: 'railways' });
 
-    /*
-    
-    //
-    event.shaped('', [
-        'AAA',
-        'AAA',
-        'AAA' 
-    ], {
-        A: ''
-    }).id('tfg:railways/shaped/')
-    
-    */
-
     // Семафор
     event.shaped('railways:semaphore', [
         ' A ',

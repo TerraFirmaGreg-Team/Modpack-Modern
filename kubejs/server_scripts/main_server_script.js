@@ -6,13 +6,23 @@
 ServerEvents.tags('item', event => {
     registerTFCItemTags(event)
     registerFirmaLifeItemTags(event)
+    
     registerMinecraftItemTags(event)
+    
     registerGTCEUItemTags(event)
+    
     registerAE2ItemTags(event)
+    
     registerCreateItemTags(event)
+    registerCreateAdditionsItemTags(event)
+    registerRailWaysItemTags(event)
+    
     registerAdAstraItemTags(event)
+    
     registerMoreRedItemTags(event)
+    
     registerSophisticatedBackpacksItemTags(event)
+    
     registerFTBQuestsItemTags(event)
 })
 
@@ -53,6 +63,7 @@ TFCEvents.data(event => {
     registerTFCDataForTFC(event)
     registerTFCDataForWaterFlasks(event)
     registerTFCDataForTreeTap(event)
+    
     registerTFCDataForGTCEU(event)
 })
 
@@ -65,19 +76,29 @@ ServerEvents.recipes(event => {
     registerFirmaLifeRecipes(event)
     registerWaterFlasksRecipes(event)
     registerTreeTapRecipes(event)
+    
     registerMinecraftRecipes(event)
+    
     registerGTCEURecipes(event)
+    
     registerCreateRecipes(event)
+    registerCreateAdditionsRecipes(event)
     registerRailWaysRecipes(event)
+    
     registerAE2Recipes(event)
     registerAE2WTLibRecipes(event)
+    
     registerComputerCraftRecipes(event)
+    
     registerAdAstraRecipes(event)
+    
     registerMoreRedRecipes(event)
+    
     registerSophisticatedBackpacksRecipes(event)
+    
     registerToolBeltRecipes(event)
+    
     registerExposureRecipes(event)
+    
     registerFTBQuestsRecipes(event)
 })
-
-
