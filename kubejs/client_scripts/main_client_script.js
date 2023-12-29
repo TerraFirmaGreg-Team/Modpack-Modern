@@ -12,6 +12,7 @@ REIEvents.hide('item', event => {
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)*/
     hideRailWaysStuff(event)
+    hideCreateAdditionsStuff(event)
    
 })
 
@@ -29,4 +30,5 @@ REIEvents.removeCategories(event => {
 REIEvents.hide('fluid', event => {
     hideTFCFluids(event)
     hideFirmaLifeFluids(event)
+    hideCreateAdditionsFluids(event)
 })
