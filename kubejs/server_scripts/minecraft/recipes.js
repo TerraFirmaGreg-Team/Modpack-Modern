@@ -2409,6 +2409,12 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Арбалет
+
+    event.remove({ id: 'minecraft:crossbow' })
+
+    //#endregion
+
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
     event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')
@@ -2417,6 +2423,9 @@ const registerMinecraftRecipes = (event) => {
     event.remove({ id: 'minecraft:copper_ingot_from_blasting_raw_copper' })
     event.remove({ id: 'minecraft:copper_ingot_from_waxed_copper_block' })
     event.remove({ id: 'minecraft:copper_ingot' })
+
+    event.remove({ id: 'minecraft:raw_copper_block' })
+    event.remove({ id: 'minecraft:raw_copper' })
 
     //#endregion
 
@@ -2427,6 +2436,16 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
     event.remove({ id: 'minecraft:gold_ingot_from_blasting_raw_gold' })
+
+    event.remove({ id: 'minecraft:raw_gold_block' })
+    event.remove({ id: 'minecraft:raw_gold' })
+
+    //#endregion
+
+    //#region Исправление дерьма с железом (Однажды разраб GTCEu вспомнит, лучше бы забыл)
+
+    event.remove({ id: 'minecraft:raw_iron_block' })
+    event.remove({ id: 'minecraft:raw_iron' })
 
     //#endregion
 }
