@@ -1938,7 +1938,7 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({id: 'minecraft:comparator'})
     event.remove({id: 'gtceu:shaped/comparator_quartzite'})
-    event.remove({id: 'gtceu:shaped/certus'})
+    event.remove({id: 'gtceu:shaped/comparator_certus'})
     event.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
 
     // Компаратор
@@ -2412,6 +2412,12 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Арбалет
 
     event.remove({ id: 'minecraft:crossbow' })
+
+    //#endregion
+
+    //#region Выход: Наблюдатель
+
+    event.remove({ id: 'minecraft:observer' })
 
     //#endregion
 
