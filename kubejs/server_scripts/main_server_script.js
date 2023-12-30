@@ -102,3 +102,29 @@ ServerEvents.recipes(event => {
     
     registerFTBQuestsRecipes(event)
 })
+
+//#endregion
+
+/*
+
+// 
+event.shaped('', [
+    'AAA',
+    'AAA',
+    'AAA' 
+], {
+    A: '',
+    B: '',
+    C: '',
+    D: '',
+    E: '',
+    F: '',
+    G: '',
+}).id('tfg:create/shaped/')
+
+//
+event.shapeless('', [
+    
+]).id('tfg:create/shapeless/')
+
+*/

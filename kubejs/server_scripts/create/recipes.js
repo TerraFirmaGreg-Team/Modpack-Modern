@@ -954,32 +954,4 @@ const registerCreateRecipes = (event) => {
                 .duration(300)
                 .EUt(4)
     })
-
-    //#endregion
-
-    /*
-    
-    // 
-    event.shaped('', [
-        'AAA',
-        'AAA',
-        'AAA' 
-    ], {
-        A: '',
-        B: '',
-        C: '',
-        D: '',
-        E: '',
-        F: '',
-        G: '',
-    }).id('tfg:create/shaped/')
-    
-    //
-    event.shapeless('', [
-        
-    ]).id('tfg:create/shapeless/')
-
-    */
-
-    
 }

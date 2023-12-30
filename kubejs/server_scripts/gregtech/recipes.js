@@ -1,5 +1,7 @@
 // priority: 0
 
+const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
+
 const registerGTCEURecipes = (event) => {
     
     //#region Выход: Удобрение
@@ -1077,9 +1079,44 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    // Клей из ТФК клея
     event.recipes.gtceu.centrifuge('glue_from_tfc_glue')             
         .itemInputs('tfc:glue')
         .outputFluids(Fluid.of('gtceu:glue', 50))
         .duration(400)
         .EUt(5)
+
+    // Прокатка слитков в стержни
+    GTRegistries.MATERIALS.forEach(material => {
+        if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != 'treated_wood')
+        {
+            if (material.hasProperty(PropertyKey.INGOT))
+            {
+                event.custom({
+                    type: "createaddition:rolling",
+                    input: {
+                        'tag': `forge:ingots/${material}`
+                    },
+                    result: {
+                        'item': `gtceu:${material}_rod`,
+                        'count': 2
+                    }
+                })
+            }
+            else
+            {
+                event.custom({
+                    type: "createaddition:rolling",
+                    input: {
+                        'tag': `forge:gems/${material}`
+                    },
+                    result: {
+                        'item': `gtceu:${material}_rod`,
+                        'count': 2
+                    }
+                })
+            }
+        }
+    });
+    
 }

@@ -1048,6 +1048,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:white_dye', '1x #tfc:makes_white_dye')
+        .id('tfg:milling/white_dye')
+
     // Red
     event.remove({id: 'minecraft:red_dye_from_tulip'})
     event.remove({id: 'minecraft:red_dye_from_rose_bush'})
@@ -1064,6 +1067,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:red_dye', '1x #tfc:makes_red_dye')
+        .id('tfg:milling/red_dye')
+
     // Lime
     event.remove({id: 'minecraft:lime_dye_from_smelting'})
     
@@ -1072,6 +1078,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:lime_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:lime_dye', '1x #tfc:makes_lime_dye')
+        .id('tfg:milling/lime_dye')
 
     // Light Blue
     event.remove({id: 'minecraft:light_blue_dye_from_blue_orchid'})
@@ -1083,6 +1092,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:light_blue_dye', '1x #tfc:makes_light_blue_dye')
+        .id('tfg:milling/light_blue_dye')
+
     // Green
     event.remove({id: 'minecraft:green_dye'})
 
@@ -1091,6 +1103,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:green_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:green_dye', '1x #tfc:makes_green_dye')
+        .id('tfg:milling/green_dye')
 
     // Magenta
     event.remove({id: 'minecraft:magenta_dye_from_lilac'})
@@ -1104,6 +1119,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:magenta_dye', '1x #tfc:makes_magenta_dye')
+        .id('tfg:milling/magenta_dye')
+
     // Orange
     event.remove({id: 'tfc:crafting/vanilla/orange_dye_from_sylvite'})
     event.remove({id: 'minecraft:orange_dye_from_torchflower'})
@@ -1116,12 +1134,18 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:orange_dye', '1x #tfc:makes_orange_dye')
+        .id('tfg:milling/orange_dye')
+
     // Purple
     event.recipes.gtceu.extractor('purple_dye')             
         .itemInputs('1x #tfc:makes_purple_dye')
         .itemOutputs('2x minecraft:purple_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:purple_dye', '1x #tfc:makes_purple_dye')
+        .id('tfg:milling/purple_dye')
 
     // Brown
     event.remove({id: 'minecraft:brown_dye' })
@@ -1131,6 +1155,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:brown_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:brown_dye', '1x #tfc:makes_brown_dye')
+        .id('tfg:milling/brown_dye')
 
     // Light Gray
     event.remove({id: 'minecraft:light_gray_dye_from_white_tulip'})
@@ -1146,6 +1173,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:light_gray_dye', '1x #tfc:makes_light_gray_dye')
+        .id('tfg:milling/light_gray_dye')
+
     // Yellow
     event.remove({id: 'minecraft:yellow_dye_from_sunflower'})
     event.remove({id: 'minecraft:yellow_dye_from_dandelion'})
@@ -1158,6 +1188,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:yellow_dye', '1x #tfc:makes_yellow_dye')
+        .id('tfg:milling/yellow_dye')
+
     // Blue
     event.remove({id: 'minecraft:blue_dye_from_cornflower'})
     event.remove({id: 'gtceu:extractor/cornflower_dye'})
@@ -1167,6 +1200,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:blue_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:blue_dye', '1x #tfc:makes_blue_dye')
+        .id('tfg:milling/blue_dye')
 
     // Pink
     event.remove({id: 'minecraft:pink_dye_from_pink_petals'})
@@ -1180,6 +1216,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:pink_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:pink_dye', '1x #tfc:makes_pink_dye')
+        .id('tfg:milling/pink_dye')
 
     // Cyan
     event.remove({id: 'minecraft:cyan_dye_from_pitcher_plant'})
