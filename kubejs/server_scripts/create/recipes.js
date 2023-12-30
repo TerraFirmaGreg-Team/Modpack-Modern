@@ -902,6 +902,61 @@ const registerCreateRecipes = (event) => {
         C: 'create:mechanical_piston',
     }).id('tfg:create/shaped/sticky_mechanical_piston_from_sticky_resin')
 
+    //#region Покраска ручек от люка
+
+    event.recipes.gtceu.chemical_bath(`create/valve_handle_decolor`)             
+        .itemInputs('#tfg:colored_valve_handles')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs('create:copper_valve_handle')
+        .duration(150)
+        .EUt(4)
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.recipes.gtceu.chemical_bath(`create/${dye}_valve_handle`)             
+            .itemInputs('create:copper_valve_handle')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 144))
+            .itemOutputs(`create:${dye}_valve_handle`)
+            .duration(300)
+            .EUt(4)
+    })
+
+    //#endregion
+
+    //#region Покраска тулбоксов
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        if (dye != 'brown')
+            event.recipes.gtceu.chemical_bath(`create/${dye}_toolbox`)             
+                .itemInputs('create:brown_toolbox')
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 96))
+                .itemOutputs(`create:${dye}_toolbox`)
+                .duration(200)
+                .EUt(4)
+    })
+
+    //#endregion
+
+    //#region Покраска сидушек
+
+    event.recipes.gtceu.chemical_bath(`create/seat_decolor`)             
+        .itemInputs('#tfg:colored_seats')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs('create:white_seat')
+        .duration(200)
+        .EUt(4)
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        if (dye != "white")
+            event.recipes.gtceu.chemical_bath(`create/${dye}_seat`)             
+                .itemInputs(`create:white_seat`)
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 144))
+                .itemOutputs(`create:${dye}_seat`)
+                .duration(300)
+                .EUt(4)
+    })
+
+    //#endregion
+
     /*
     
     // 
