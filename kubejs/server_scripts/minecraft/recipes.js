@@ -2360,6 +2360,13 @@ const registerMinecraftRecipes = (event) => {
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
+        event.recipes.gtceu.chemical_bath(`${dye}_powder_to_${dye}_concrete`)             
+            .itemInputs(`minecraft:${dye}_concrete_powder`)
+            .inputFluids(Fluid.of('minecraft:water', 144))
+            .itemOutputs(`minecraft:${dye}_concrete`)
+            .duration(100)
+            .EUt(4)
+
         if (dye != "white")
             event.recipes.gtceu.chemical_bath(`${dye}_concrete`)             
                 .itemInputs(`minecraft:white_concrete`)
