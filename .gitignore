@@ -1,23 +1,23 @@
 
 # Configs
-/config/jei/world/*
-/config/roughlyenoughitems/*
-/config/oculus.properties
-/config/smoothboot.json
-/config/fml.toml
-/config/forge-client.toml
+config/jei/world/*
+config/roughlyenoughitems/*
+config/oculus.properties
+config/smoothboot.json
+config/fml.toml
+config/forge-client.toml
 
 # .minecraft
-/crash-reports/*
-/logs/*
-/saves/*
-/ldlib/
-/local/*
-/XaeroWaypoints*
-/XaeroWorldMap/*
-/CustomSkinLoader/*
-/screenshots/*
-/shaderpacks/*
+crash-reports/*
+logs/*
+saves/*
+ldlib/
+local/*
+XaeroWaypoints*
+XaeroWorldMap/*
+CustomSkinLoader/*
+screenshots/*
+shaderpacks/*
 
 # Extensions
 **/*.log
@@ -26,22 +26,22 @@
 **/*.jar
 
 # Client data
-/.idea/
-/.curseclient
-/.sl_password
-/options.txt
-/patchouli_data.json
-/usernamecache.json
-/usercache.json
-/rhino.local.properties
-/fancymenu_data/last_world.fmdata
-/profile.json
-/emi.json
-/servers.dat
-/cherishedworlds-favorites.dat
-/realms_persistence.json
-/minecraftinstance.json
-/knownkeys.txt
+.idea/
+.curseclient
+.sl_password
+options.txt
+patchouli_data.json
+usernamecache.json
+usercache.json
+rhino.local.properties
+fancymenu_data/last_world.fmdata
+profile.json
+emi.json
+servers.dat
+cherishedworlds-favorites.dat
+realms_persistence.json
+minecraftinstance.json
+knownkeys.txt
 
 packwiz-installer.jar
 packwiz.json
@@ -51,17 +51,17 @@ packwiz.json
 
 
 # Server Pack
-/.github/buildtools/serverpack/logs/
-/.github/buildtools/serverpack/world/
-/.github/buildtools/serverpack/config/
-/.github/buildtools/serverpack/crash-reports/
-/.github/buildtools/serverpack/kubejs/
-/.github/buildtools/serverpack/mods/
-/.github/buildtools/serverpack/local/
-/.github/buildtools/serverpack/xaerominimap-common.txt
-/.github/buildtools/serverpack/xaeroworldmap-common.txt
-/.github/buildtools/serverpack/banned-ips.json
-/.github/buildtools/serverpack/banned-players.json
-/.github/buildtools/serverpack/ops.json
-/.github/buildtools/serverpack/whitelist.json
+.github/buildtools/serverpack/logs/
+.github/buildtools/serverpack/world/
+.github/buildtools/serverpack/config/
+.github/buildtools/serverpack/crash-reports/
+.github/buildtools/serverpack/kubejs/
+.github/buildtools/serverpack/mods/
+.github/buildtools/serverpack/local/
+.github/buildtools/serverpack/xaerominimap-common.txt
+.github/buildtools/serverpack/xaeroworldmap-common.txt
+.github/buildtools/serverpack/banned-ips.json
+.github/buildtools/serverpack/banned-players.json
+.github/buildtools/serverpack/ops.json
+.github/buildtools/serverpack/whitelist.json
 servers.dat_old
