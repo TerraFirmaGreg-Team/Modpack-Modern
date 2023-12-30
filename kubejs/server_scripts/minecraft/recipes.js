@@ -2375,7 +2375,14 @@ const registerMinecraftRecipes = (event) => {
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
-        if (dye != "white")
+        event.remove({ id: `minecraft:dye_${dye}_wool` })
+
+        event.shapeless(`minecraft:${dye}_wool`, [
+            'minecraft:white_wool',
+            `#forge:dyes/${dye}`
+        ]).id(`tfg:create/shapeless/${dye}_wool`)
+
+        if (dye != 'white')
             event.recipes.gtceu.chemical_bath(`${dye}_wool`)             
                 .itemInputs(`minecraft:white_wool`)
                 .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))

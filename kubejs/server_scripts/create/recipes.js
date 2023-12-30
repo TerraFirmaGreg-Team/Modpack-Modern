@@ -3,6 +3,7 @@
 const registerCreateRecipes = (event) => {
     
     // Удаление рецептов мода create 
+    /*
     event.remove({ not: [
         { id: 'create:crafting/kinetics/gearboxfrom_conversion' },
         { id: 'create:crafting/kinetics/gearbox' },
@@ -89,7 +90,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/green_seat' },
         { id: 'create:crafting/kinetics/red_seat' },
         { id: 'create:crafting/kinetics/black_seat' },
-    ], mod: 'create' })
+    ], mod: 'create' })*/
 
     // Пушка для постройки схематик
     event.shaped('create:schematicannon', [
