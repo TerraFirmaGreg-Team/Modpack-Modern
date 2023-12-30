@@ -2421,6 +2421,60 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Рельсы
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_rail' })
+
+    event.recipes.gtceu.assembler('rail')             
+        .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden')
+        .circuit(1)
+        .itemOutputs('32x minecraft:rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Заряженные рельсы
+
+    event.remove({ id: 'minecraft:powered_rail' })
+
+    event.recipes.gtceu.assembler('powered_rail')             
+        .itemInputs('6x #forge:rods/gold', '#forge:rods/wooden', '#forge:dusts/redstone')
+        .circuit(1)
+        .itemOutputs('16x minecraft:powered_rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Активаторные рельсы
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_activator_rail' })
+    event.remove({ id: 'minecraft:activator_rail' })
+
+    event.recipes.gtceu.assembler('activator_rail')             
+        .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', 'minecraft:redstone_torch')
+        .circuit(1)
+        .itemOutputs('4x minecraft:activator_rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Нажимные рельсы
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_detector_rail' })
+    event.remove({ id: 'minecraft:detector_rail' })
+
+    event.recipes.gtceu.assembler('detector_rail')             
+        .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', '#minecraft:stone_pressure_plates')
+        .circuit(1)
+        .itemOutputs('4x minecraft:detector_rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
     event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')

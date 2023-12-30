@@ -75,6 +75,22 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/copper_door' },
         { id: 'create:crafting/kinetics/train_door' },
         { id: 'create:crafting/kinetics/train_trapdoor' },
+        { id: 'create:crafting/kinetics/white_seat' },
+        { id: 'create:crafting/kinetics/orange_seat' },
+        { id: 'create:crafting/kinetics/magenta_seat' },
+        { id: 'create:crafting/kinetics/light_blue_seat' },
+        { id: 'create:crafting/kinetics/yellow_seat' },
+        { id: 'create:crafting/kinetics/lime_seat' },
+        { id: 'create:crafting/kinetics/pink_seat' },
+        { id: 'create:crafting/kinetics/gray_seat' },
+        { id: 'create:crafting/kinetics/light_gray_seat' },
+        { id: 'create:crafting/kinetics/cyan_seat' },
+        { id: 'create:crafting/kinetics/purple_seat' },
+        { id: 'create:crafting/kinetics/blue_seat' },
+        { id: 'create:crafting/kinetics/brown_seat' },
+        { id: 'create:crafting/kinetics/green_seat' },
+        { id: 'create:crafting/kinetics/red_seat' },
+        { id: 'create:crafting/kinetics/black_seat' },
     ], mod: 'create' })*/
 
     // Пушка для постройки схематик
@@ -413,7 +429,7 @@ const registerCreateRecipes = (event) => {
         'CDC' 
     ], {
         A: '#forge:plates/wrought_iron',
-        B: 'minecraft:slime_ball',
+        B: 'tfc:glue',
         C: '#forge:cobblestone',
         D: '#forge:dusts/redstone'
     }).id('tfg:create/shaped/sticker')
@@ -650,9 +666,227 @@ const registerCreateRecipes = (event) => {
         E: '#forge:plates/wrought_iron'
     }).id('tfg:create/shaped/electron_tube')
 
+    // Тюбик с клеем
+    event.shaped('create:super_glue', [
+        'BA',
+        'CB' 
+    ], {
+        A: '#forge:plates/wrought_iron',
+        B: 'tfc:glue',
+        C: '#forge:nuggets/wrought_iron'
+    }).id('tfg:create/shaped/super_glue')
+
+    // Соединятор вагонеток
+    event.shapeless('create:minecart_coupling', [
+        '#tfg:metal_chains',
+        '#forge:bolts',
+        '#tfg:metal_chains',
+        '#forge:bolts',
+        '#tfg:metal_chains',
+        '#forge:tools/hammers'
+    ]).id('tfg:create/shapeless/minecart_coupling')
+
+    // Блупринт создания
+    event.shapeless('create:crafting_blueprint', [
+        'minecraft:painting',
+        '#tfc:workbenches'
+    ]).id('tfg:create/shapeless/crafting_blueprint')
+
+    // Медная бочка на спину
+    event.shaped('create:copper_backtank', [
+        'ABA',
+        'CDC',
+        ' C ' 
+    ], {
+        A: '#forge:screws/wrought_iron',
+        B: 'create:shaft',
+        C: '#forge:plates/copper',
+        D: 'create:fluid_tank'
+    }).id('tfg:create/shaped/copper_backtank')
+
+    // Шлем для дайвинга
+    event.shaped('create:copper_diving_helmet', [
+        'ABA',
+        'CDC' 
+    ], {
+        A: '#forge:plates/copper',
+        B: 'tfc:metal/helmet/copper',
+        C: '#forge:fluid_pipes/tiny/polyethylene',
+        D: '#forge:glass_panes'
+    }).id('tfg:create/shaped/copper_diving_helmet')
+
+    // Ботинки для дайвинга
+    event.shaped('create:copper_diving_boots', [
+        'ABA',
+        'CDC' 
+    ], {
+        A: '#forge:plates/copper',
+        B: 'tfc:metal/helmet/copper',
+        C: '#forge:fluid_pipes/tiny/polyethylene',
+        D: '#forge:foils/rubber'
+    }).id('tfg:create/shaped/copper_diving_boots')
+
+    // Херь, увеличивающая дистанцию копки
+    event.recipes.createMechanicalCrafting('create:extendo_grip', [
+        ' A ',
+        ' B ',
+        'CCC',
+        'CCC',
+        ' D '
+    ], {
+        A: '#forge:plates/brass',
+        B: 'create:precision_mechanism',
+        C: '#forge:rods/wooden',
+        D: 'create:brass_hand'
+    }).id('tfg:create/mechanical_crafting/extendo_grip')
+
+    // Херь, устанавливающая блоки зеркально
+    event.recipes.createMechanicalCrafting('create:wand_of_symmetry', [
+        '  A  ',
+        ' ABA ',
+        '  C  ',
+        '  D  ',
+        '  E  '
+    ], {
+        A: '#forge:glass',
+        B: 'minecraft:redstone_lamp',
+        C: 'create:precision_mechanism',
+        D: '#forge:plates/brass',
+        E: 'minecraft:obsidian'
+    }).id('tfg:create/mechanical_crafting/wand_of_symmetry')
+
+
+    // Фильтр список
+    event.shaped('create:filter', [
+        'ABA'
+    ], {
+        A: '#forge:nuggets/wrought_iron',
+        B: '#minecraft:wool'
+    }).id('tfg:create/shaped/filter')
+
+    // Фильтр аттрибутов
+    event.shaped('create:attribute_filter', [
+        'ABA'
+    ], {
+        A: '#forge:nuggets/brass',
+        B: '#minecraft:wool'
+    }).id('tfg:create/shaped/attribute_filter')
+
+    // Расписание поездов
+    event.shapeless('4x create:schedule', [
+        'minecraft:paper',
+        '#forge:dyes/black'
+    ]).id('tfg:create/shapeless/schedule')
+
+    // Дневник
+    event.shaped('create:clipboard', [
+        'A',
+        'B',
+        'C' 
+    ], {
+        A: '#forge:bolts/wrought_iron',
+        B: '#forge:plates/wood',
+        C: 'minecraft:paper'
+    }).id('tfg:create/shaped/clipboard')
+
+    // Лестница из железа
+    event.shaped('6x create:andesite_ladder', [
+        'A A',
+        'AAA',
+        'A A' 
+    ], {
+        A: '#forge:rods/wrought_iron'
+    }).id('tfg:create/shaped/andesite_ladder')
+
+    // Лестница из латуни
+    event.shaped('6x create:brass_ladder', [
+        'A A',
+        'AAA',
+        'A A' 
+    ], {
+        A: '#forge:rods/brass'
+    }).id('tfg:create/shaped/brass_ladder')
+
+    // Лестница из железа
+    event.shaped('6x create:copper_ladder', [
+        'A A',
+        'AAA',
+        'A A' 
+    ], {
+        A: '#forge:rods/copper'
+    }).id('tfg:create/shaped/copper_ladder')
+
+    // Леса из железа
+    event.shaped('4x create:andesite_scaffolding', [
+        'AAA',
+        'A A' 
+    ], {
+        A: '#forge:rods/wrought_iron'
+    }).id('tfg:create/shaped/andesite_scaffolding')
+
+    // Леса из латуни
+    event.shaped('4x create:brass_scaffolding', [
+        'AAA',
+        'A A' 
+    ], {
+        A: '#forge:rods/brass'
+    }).id('tfg:create/shaped/brass_scaffolding')
+
+    // Леса из железа
+    event.shaped('4x create:copper_scaffolding', [
+        'AAA',
+        'A A' 
+    ], {
+        A: '#forge:rods/copper'
+    }).id('tfg:create/shaped/copper_scaffolding')
+
+    // Цинковая ступень
+    event.shapeless('create:copycat_step', [
+        '#forge:plates/zinc',
+        '#forge:tools/files'
+    ]).id('tfg:create/shapeless/copycat_step')
+
+    // Цинковая панель
+    event.shapeless('create:copycat_panel', [
+        '#forge:double_plates/zinc',
+        '#forge:tools/files'
+    ]).id('tfg:create/shapeless/copycat_panel')
+
+    // Деталь рельса
+    event.shaped('create:metal_girder', [
+        'AAA',
+        'BBB' 
+    ], {
+        A: '#forge:plates/wrought_iron',
+        B: '#forge:nuggets/wrought_iron'
+    }).id('tfg:create/shaped/metal_girder')
+
+    // Стеклянная дверь
+    event.shapeless('create:framed_glass_door', [
+        '#minecraft:wooden_doors',
+        'minecraft:glass_pane'
+    ]).id('tfg:create/shapeless/framed_glass_door')
+
+    // Стеклянный люк
+    event.shapeless('create:framed_glass_trapdoor', [
+        '#minecraft:wooden_trapdoors',
+        'minecraft:glass_pane'
+    ]).id('tfg:create/shapeless/framed_glass_trapdoor')
+
+    // 
+    event.recipes.createMechanicalCrafting('create:potato_cannon', [
+        'ABCCC',
+        'DD   '
+    ], {
+        A: '#forge:screws/copper',
+        B: 'create:precision_mechanism',
+        C: 'create:fluid_pipe',
+        D: '#forge:plates/copper'
+    }).id('tfg:create/mechanical_crafting/potato_cannon')
+
     /*
     
-    //
+    // 
     event.shaped('', [
         'AAA',
         'AAA',
