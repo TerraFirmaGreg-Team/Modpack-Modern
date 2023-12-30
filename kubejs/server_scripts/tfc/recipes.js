@@ -203,6 +203,37 @@ const registerTFCRecipes = (event) => {
         }
 
         if (metalSpecs.props.includes('tool')) {
+            
+            // Кольцо -> Металл
+            // event.recipes.tfc.heating(`gtceu:${metal}_ring`, metalSpecs.melt_temp)
+            //     .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+            //     .id(`tfc:heating/metal/${metal}_ring`)
+
+            // Стержень -> Кольцо
+            // Возможно, когда нибудь, когда они пригодятся
+
+            // Болт -> Металл
+            event.recipes.tfc.heating(`gtceu:${metal}_bolt`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 36))
+                .id(`tfc:heating/metal/${metal}_bolt`)
+
+            event.recipes.tfc.anvil(`2x gtceu:${metal}_bolt`, `#forge:rods/${metal}`, ['punch_last', 'draw_second_last', 'draw_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_bolt`)
+
+            // Стержень -> Болт
+
+            // Винт -> Металл
+            event.recipes.tfc.heating(`gtceu:${metal}_screw`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+                .id(`tfc:heating/metal/${metal}_screw`)
+
+
+            // Стержень -> Винт
+            event.recipes.tfc.anvil(`gtceu:${metal}_screw`, `#forge:rods/${metal}`, ['punch_last', 'punch_second_last', 'shrink_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_screw`)
+
             //#region Фурма
             
             // Декрафт инструмента в жидкость

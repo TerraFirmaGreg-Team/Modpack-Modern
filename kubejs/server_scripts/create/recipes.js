@@ -3,7 +3,6 @@
 const registerCreateRecipes = (event) => {
     
     // Удаление рецептов мода create 
-    /*
     event.remove({ not: [
         { id: 'create:crafting/kinetics/gearboxfrom_conversion' },
         { id: 'create:crafting/kinetics/gearbox' },
@@ -27,7 +26,6 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/smart_fluid_pipe' },
         { id: 'create:crafting/kinetics/portable_fluid_interface' },
         { id: 'create:crafting/kinetics/mechanical_piston' },
-        { id: 'create:crafting/kinetics/sticky_mechanical_piston' },
         { id: 'create:crafting/kinetics/gantry_carriage' },
         { id: 'create:crafting/kinetics/windmill_bearing' },
         { id: 'create:crafting/kinetics/mechanical_bearing' },
@@ -91,7 +89,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/green_seat' },
         { id: 'create:crafting/kinetics/red_seat' },
         { id: 'create:crafting/kinetics/black_seat' },
-    ], mod: 'create' })*/
+    ], mod: 'create' })
 
     // Пушка для постройки схематик
     event.shaped('create:schematicannon', [
@@ -582,7 +580,7 @@ const registerCreateRecipes = (event) => {
     event.shaped('2x create:andesite_funnel', [
         'AAA',
         'ABA',
-        'ACA' 
+        'ABA' 
     ], {
         A: '#forge:plates/wrought_iron',
         B: '#forge:foils/rubber'
@@ -592,7 +590,7 @@ const registerCreateRecipes = (event) => {
     event.shaped('2x create:brass_funnel', [
         'AAA',
         'ABA',
-        'ACA' 
+        'ABA' 
     ], {
         A: '#forge:plates/brass',
         B: '#forge:foils/rubber'
@@ -883,6 +881,25 @@ const registerCreateRecipes = (event) => {
         C: 'create:fluid_pipe',
         D: '#forge:plates/copper'
     }).id('tfg:create/mechanical_crafting/potato_cannon')
+
+    // Липкий механический поршень
+    event.shaped('create:sticky_mechanical_piston', [
+        'A',
+        'B' 
+    ], {
+        A: 'tfc:glue',
+        B: 'create:mechanical_piston'
+    }).id('tfg:create/shaped/sticky_mechanical_piston_from_glue')
+
+    event.shaped('create:sticky_mechanical_piston', [
+        'A',
+        'B',
+        'C'
+    ], {
+        A: '#forge:tools/hammers',
+        B: 'gtceu:sticky_resin',
+        C: 'create:mechanical_piston',
+    }).id('tfg:create/shaped/sticky_mechanical_piston_from_sticky_resin')
 
     /*
     

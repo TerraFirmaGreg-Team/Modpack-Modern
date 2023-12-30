@@ -8,18 +8,6 @@ const registerTFCDataForTFC = (event) => {
     registerTFCFertilizers(event)
 }
 
-/**
- * event.metal(
-    fluid: string,
-    meltTemperature: number,
-    heatCapacity: number,
-    ingot: @Nullable Ingredient,
-    doubleIngot: @Nullable Ingredient,
-    sheet: @Nullable Ingredient,
-    tier: number,
-    name?: string
-    )
- */
 const registerTFCMetals = (event) => {
     event.metal('gtceu:tin', 230, 0.02143, '#forge:ingots/tin', '#forge:double_ingots/tin', '#forge:plates/tin', 1, 'tfc:tin')
     event.metal('gtceu:bismuth', 270, 0.02143, '#forge:ingots/bismuth', '#forge:double_ingots/bismuth', '#forge:plates/bismuth', 1, 'tfc:bismuth')
@@ -46,15 +34,6 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
 }
 
-/**
- * event.itemHeat(
-    ingredient: Ingredient, 
-    heatCapacity: number, 
-    forgingTemperature: @Nullable number, 
-    weldingTemperature: @Nullable number, 
-    name?: string
-    )
- */
 const registerTFCHeats = (event) => {
     Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
         let metal = keyValuePair[0]
@@ -64,10 +43,13 @@ const registerTFCHeats = (event) => {
             event.itemHeat(`gtceu:${metal}_tiny_dust`, 0.357, metalSpecs.forging_temp, metalSpecs.welding_temp)
             event.itemHeat(`gtceu:${metal}_small_dust`, 0.714, metalSpecs.forging_temp, metalSpecs.welding_temp)
             event.itemHeat(`gtceu:${metal}_dust`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+
+            event.itemHeat(`gtceu:${metal}_rod`, 0.567, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_bolt`, 0.245, metalSpecs.forging_temp, metalSpecs.welding_temp)
+            event.itemHeat(`gtceu:${metal}_screw`, 0.567, metalSpecs.forging_temp, metalSpecs.welding_temp)
         }
 
         if (metalSpecs.props.includes('nugget')) {
-            
             event.itemHeat(`gtceu:${metal}_nugget`, 0.124, metalSpecs.forging_temp, metalSpecs.welding_temp)
         }
 
@@ -108,15 +90,6 @@ const registerTFCHeats = (event) => {
     event.itemHeat('tfc:metal/bucket/red_steel', 1.429, 924, 1232)
 }
 
-/**
- * event.fuel(
-    ingredient: Ingredient, 
-    temperature: number, 
-    duration: number, 
-    purity: @Nullable number, 
-    name?: string
-    )
- */
 const registerTFCFuels = (event) => {
     event.fuel('minecraft:coal', 1415, 2200, 1.0)
     event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
@@ -126,27 +99,10 @@ const registerTFCFuels = (event) => {
     event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
 }
 
-/**
- * event.lampFuel(
-    fluidIngredient: FluidIngredient, 
-    blockIngredient: BlockIngredient, 
-    burnRate: number, 
-    name?: string
-    )
- */
 const registerTFCLampFuels = (event) => {
     event.lampFuel('gtceu:creosote', '#tfc:lamps', 1)
 }
 
-/**
- * event.fertilizer(
-    ingredient: Ingredient, 
-    nitrogen: @Nullable number, 
-    phosphorous: @Nullable number, 
-    potassium: @Nullable number, 
-    name?: string
-    )
- */
 const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:fertilizer', 0.15, 0.15, 0.15)
 

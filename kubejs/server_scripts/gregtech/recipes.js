@@ -1076,4 +1076,10 @@ const registerGTCEURecipes = (event) => {
         .duration(25)
 
     //#endregion
+
+    event.recipes.gtceu.centrifuge('glue_from_tfc_glue')             
+        .itemInputs('tfc:glue')
+        .outputFluids(Fluid.of('gtceu:glue', 50))
+        .duration(400)
+        .EUt(5)
 }
