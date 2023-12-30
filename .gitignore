@@ -38,13 +38,11 @@ fancymenu_data/last_world.fmdata
 profile.json
 emi.json
 servers.dat
+servers.dat_old
 cherishedworlds-favorites.dat
 realms_persistence.json
 minecraftinstance.json
 knownkeys.txt
-
-packwiz-installer.jar
-packwiz.json
 
 *.code-workspace
 *.zip
@@ -64,4 +62,4 @@ packwiz.json
 .github/buildtools/serverpack/banned-players.json
 .github/buildtools/serverpack/ops.json
 .github/buildtools/serverpack/whitelist.json
-servers.dat_old
+
