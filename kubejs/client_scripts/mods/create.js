@@ -5,3 +5,8 @@ const hideCreateStuff = (event) => {
         event.hide(item)
     })
 }
+
+const hideCreateFluids = (event) => {
+    event.hide('create:chocolate')
+    event.hide('create:honey')
+}

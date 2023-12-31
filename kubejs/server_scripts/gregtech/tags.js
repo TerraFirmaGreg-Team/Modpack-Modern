@@ -34,4 +34,6 @@ const registerGTCEUItemTags = (event) => {
 
     //#endregion
     
+    event.add('forge:storage_blocks/treated_wood', 'gtceu:treated_wood_planks')
+
 }

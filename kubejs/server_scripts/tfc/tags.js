@@ -74,6 +74,16 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
+    // Теги для сосудов по цветам
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.add('tfg:colorized_unfired_vessels', `tfc:ceramic/${dye}_unfired_vessel`)
+        event.add('tfg:colorized_fired_vessels', `tfc:ceramic/${dye}_glazed_vessel`)
+
+        event.add('tfg:colorized_unfired_large_vessels', `tfc:ceramic/unfired_large_vessel/${dye}`)
+        event.add('tfg:colorized_fired_large_vessels', `tfc:ceramic/large_vessel/${dye}`)
+        
+    })
+
     // Цвета гравия
     // Коричневый
     event.add('tfc:brown_gravel', 'tfc:rock/gravel/claystone')
@@ -118,6 +128,16 @@ const registerTFCItemTags = (event) => {
     event.add('tfg:metal_bars', 'tfc:metal/bars/blue_steel')
     event.add('tfg:metal_bars', 'tfc:metal/bars/red_steel')
 
+    event.add('tfg:metal_chains', 'tfc:metal/chain/bismuth_bronze')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/black_bronze')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/bronze')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/copper')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/wrought_iron')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/steel')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/black_steel')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/blue_steel')
+    event.add('tfg:metal_chains', 'tfc:metal/chain/red_steel')
+
     // Теги для кораллов
     event.add('tfc:corals', 'tfc:coral/tube_coral_fan')
     event.add('tfc:corals', 'tfc:coral/brain_coral_fan')
@@ -144,6 +164,7 @@ const registerTFCItemTags = (event) => {
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
 }

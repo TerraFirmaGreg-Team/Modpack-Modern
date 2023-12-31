@@ -203,6 +203,37 @@ const registerTFCRecipes = (event) => {
         }
 
         if (metalSpecs.props.includes('tool')) {
+            
+            // Кольцо -> Металл
+            // event.recipes.tfc.heating(`gtceu:${metal}_ring`, metalSpecs.melt_temp)
+            //     .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+            //     .id(`tfc:heating/metal/${metal}_ring`)
+
+            // Стержень -> Кольцо
+            // Возможно, когда нибудь, когда они пригодятся
+
+            // Болт -> Металл
+            event.recipes.tfc.heating(`gtceu:${metal}_bolt`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 36))
+                .id(`tfc:heating/metal/${metal}_bolt`)
+
+            event.recipes.tfc.anvil(`2x gtceu:${metal}_bolt`, `#forge:rods/${metal}`, ['punch_last', 'draw_second_last', 'draw_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_bolt`)
+
+            // Стержень -> Болт
+
+            // Винт -> Металл
+            event.recipes.tfc.heating(`gtceu:${metal}_screw`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.fluid, 72))
+                .id(`tfc:heating/metal/${metal}_screw`)
+
+
+            // Стержень -> Винт
+            event.recipes.tfc.anvil(`gtceu:${metal}_screw`, `#forge:rods/${metal}`, ['punch_last', 'punch_second_last', 'shrink_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_screw`)
+
             //#region Фурма
             
             // Декрафт инструмента в жидкость
@@ -882,6 +913,79 @@ const registerTFCRecipes = (event) => {
         .resultFluid(Fluid.of('gtceu:bronze', 144))
         .id(`tfc:heating/bronze_bell`)
 
+    //#region Рецепты ковки TFC слитков в GT машинах
+
+    // Сырая крица -> Укрепленная крица
+    event.recipes.gtceu.forge_hammer('tfg/refined_bloom')             
+        .itemInputs('tfc:raw_iron_bloom')
+        .itemOutputs('tfc:refined_iron_bloom')
+        .duration(1000)
+        .EUt(4)
+
+    // Укрепленная крица -> Слиток кованного железа
+    event.recipes.gtceu.forge_hammer('tfg/wrought_iron_ingot')             
+        .itemInputs('tfc:refined_iron_bloom')
+        .itemOutputs('gtceu:wrought_iron_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Чугун -> Высокоуглеродная сталь
+    event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')             
+        .itemInputs('tfc:metal/ingot/pig_iron')
+        .itemOutputs('tfc:metal/ingot/high_carbon_steel')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная сталь -> Cталь
+    event.recipes.gtceu.forge_hammer('tfg/steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_steel')
+        .itemOutputs('gtceu:steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная черная сталь -> черная сталь 
+    event.recipes.gtceu.forge_hammer('tfg/black_steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_black_steel')
+        .itemOutputs('gtceu:black_steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная синяя сталь -> синяя сталь 
+    event.recipes.gtceu.forge_hammer('tfg/blue_steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_blue_steel')
+        .itemOutputs('gtceu:blue_steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Высокоуглеродная красная сталь -> красная сталь 
+    event.recipes.gtceu.forge_hammer('tfg/red_steel')             
+        .itemInputs('tfc:metal/ingot/high_carbon_red_steel')
+        .itemOutputs('gtceu:red_steel_ingot')
+        .duration(1000)
+        .EUt(4)
+
+    // Слабая сталь + Чугун -> Высокоуглеродная черная сталь
+    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')             
+        .itemInputs('tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron')
+        .itemOutputs('tfc:metal/ingot/high_carbon_black_steel')
+        .duration(1600)
+        .EUt(4)
+
+    // Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
+    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')             
+        .itemInputs('tfc:metal/ingot/weak_blue_steel', 'gtceu:black_steel_ingot')
+        .itemOutputs('tfc:metal/ingot/high_carbon_blue_steel')
+        .duration(1600)
+        .EUt(4)
+
+    // Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
+    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')             
+        .itemInputs('tfc:metal/ingot/weak_red_steel', 'gtceu:black_steel_ingot')
+        .itemOutputs('tfc:metal/ingot/high_carbon_red_steel')
+        .duration(1600)
+        .EUt(4)
+
+    //#endregion
 
     //#endregion
 
@@ -1871,312 +1975,206 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-    //#region Порошки
+    //#region Рецепты порошков
     
+    // Удаление рецептов
+    event.remove({ id: 'tfc:quern/amethyst' })
+    event.remove({ id: 'tfc:quern/amethyst_cut' })
+    event.remove({ id: 'tfc:quern/blaze_rod' })
+    event.remove({ id: 'tfc:quern/borax' })
+    event.remove({ id: 'tfc:quern/charcoal' })
+    event.remove({ id: 'tfc:quern/cinnabar' })
     event.remove({ id: 'tfc:quern/cryolite' })
+    event.remove({ id: 'tfc:quern/diamond' })
+    event.remove({ id: 'tfc:quern/diamond_cut' })
+    event.remove({ id: 'tfc:quern/emerald' })
+    event.remove({ id: 'tfc:quern/emerald_cut' })
+    event.remove({ id: 'tfc:quern/graphite' })
+    event.remove({ id: 'tfc:quern/lapis_lazuli' })
+    event.remove({ id: 'tfc:quern/lapis_lazuli_cut' })
+    event.remove({ id: 'tfc:quern/normal_bismuthinite' })
+    event.remove({ id: 'tfc:quern/normal_cassiterite' })
+    event.remove({ id: 'tfc:quern/normal_garnierite' })
+    event.remove({ id: 'tfc:quern/normal_hematite' })
+    event.remove({ id: 'tfc:quern/normal_limonite' })
+    event.remove({ id: 'tfc:quern/normal_magnetite' })
+    event.remove({ id: 'tfc:quern/normal_malachite' })
+    event.remove({ id: 'tfc:quern/normal_native_copper' })
+    event.remove({ id: 'tfc:quern/normal_native_gold' })
+    event.remove({ id: 'tfc:quern/normal_native_silver' })
+    event.remove({ id: 'tfc:quern/normal_sphalerite' })
+    event.remove({ id: 'tfc:quern/normal_tetrahedrite' })
+    event.remove({ id: 'tfc:quern/opal' })
+    event.remove({ id: 'tfc:quern/opal_cut' })
+    event.remove({ id: 'tfc:quern/poor_bismuthinite' })
+    event.remove({ id: 'tfc:quern/poor_cassiterite' })
+    event.remove({ id: 'tfc:quern/poor_garnierite' })
+    event.remove({ id: 'tfc:quern/poor_hematite' })
+    event.remove({ id: 'tfc:quern/poor_limonite' })
+    event.remove({ id: 'tfc:quern/poor_magnetite' })
+    event.remove({ id: 'tfc:quern/poor_malachite' })
+    event.remove({ id: 'tfc:quern/poor_native_copper' })
+    event.remove({ id: 'tfc:quern/poor_native_gold' })
+    event.remove({ id: 'tfc:quern/poor_native_silver' })
+    event.remove({ id: 'tfc:quern/poor_sphalerite' })
+    event.remove({ id: 'tfc:quern/poor_tetrahedrite' })
+    event.remove({ id: 'tfc:quern/pyrite' })
+    event.remove({ id: 'tfc:quern/pyrite_cut' })
+    event.remove({ id: 'tfc:quern/raw_limestone' })
+    event.remove({ id: 'tfc:quern/rich_bismuthinite' })
+    event.remove({ id: 'tfc:quern/rich_cassiterite' })
+    event.remove({ id: 'tfc:quern/rich_garnierite' })
+    event.remove({ id: 'tfc:quern/rich_hematite' })
+    event.remove({ id: 'tfc:quern/rich_limonite' })
+    event.remove({ id: 'tfc:quern/rich_magnetite' })
+    event.remove({ id: 'tfc:quern/rich_malachite' })
+    event.remove({ id: 'tfc:quern/rich_native_copper' })
+    event.remove({ id: 'tfc:quern/rich_native_gold' })
+    event.remove({ id: 'tfc:quern/rich_native_silver' })
+    event.remove({ id: 'tfc:quern/rich_sphalerite' })
+    event.remove({ id: 'tfc:quern/rich_tetrahedrite' })
+    event.remove({ id: 'tfc:quern/ruby' })
+    event.remove({ id: 'tfc:quern/ruby_cut' })
+    event.remove({ id: 'tfc:quern/salt' })
+    event.remove({ id: 'tfc:quern/saltpeter' })
+    event.remove({ id: 'tfc:quern/sapphire' })
+    event.remove({ id: 'tfc:quern/sapphire_cut' })
+    event.remove({ id: 'tfc:quern/sulfur' })
     event.remove({ id: 'tfc:quern/sylvite' })
+    event.remove({ id: 'tfc:quern/topaz' })
+    event.remove({ id: 'tfc:quern/topaz_cut' })
 
-    // 2x Coke Powder
-    event.recipes.tfc.quern('2x tfc:powder/coke', '#forge:gems/coke')
-        .id('tfg:quern/coke_powder')
+    // Добавление рецептов
+    global.TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.gtceu.macerator(`tfg:${element.name}`)             
+            .itemInputs(element.input)
+            .itemOutputs(element.output)
+            .duration(60)
+            .EUt(2)
 
-    // 2x Amethyst Powder
-    event.recipes.tfc.quern('2x tfc:powder/amethyst', '#forge:raw_materials/amethyst')
-        .id('tfc:quern/amethyst_cut')
+        event.recipes.tfc.quern(element.output, element.input)
+            .id(`tfg:quern/${element.name}`)
 
-    // 2x Diamond Powder
-    event.recipes.tfc.quern('2x tfc:powder/diamond', '#forge:raw_materials/diamond')
-        .id('tfc:quern/diamond_cut')
+        event.recipes.createMilling(element.output, element.input)
+            .id(`tfg:milling/${element.name}`)
+    })
+
+    //#endregion
+
+    //#region Рецепты муки
+
+    global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.gtceu.macerator(`tfg:${element.name}`)             
+            .itemInputs(element.input)
+            .itemOutputs(element.output)
+            .duration(200)
+            .EUt(16)
+
+        event.recipes.createMilling(element.output, element.input)
+            .id(`tfg:milling/${element.name}`)
+    })
+
+    //#endregion
+
+    //#region Рецепты обжарки мяса
+
+    global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS.forEach(element => {
+        event.smelting(element.output, element.input)
+            .id(`tfg:smelting/${element.name}`)
+    })
+
+    //#endregion
+
+    //#region Рецепты обжарки форм
     
-    // 2x Emerald Powder
-    event.recipes.tfc.quern('2x tfc:powder/emerald', '#forge:raw_materials/emerald')
-        .id('tfc:quern/emerald_cut')
+    global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS.forEach(element => {
+        event.smelting(element.output, element.input)
+            .id(`tfg:smelting/${element.name}`)
+    })
 
-    // 2x Lapis Lazuli Powder
-    event.recipes.tfc.quern('2x tfc:powder/lapis_lazuli', '#forge:raw_materials/lapis')
-        .id('tfc:quern/lapis_lazuli_cut')
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.smelting(`tfc:ceramic/${dye}_glazed_vessel`, `tfc:ceramic/${dye}_unfired_vessel`)
+            .id(`tfg:smelting/${dye}_glazed_vessel`)
 
-    // 2x Opal Powder
-    event.recipes.tfc.quern('2x tfc:powder/opal', '#forge:raw_materials/opal')
-        .id('tfc:quern/opal_cut')
+        event.smelting(`tfc:ceramic/large_vessel/${dye}`, `tfc:ceramic/unfired_large_vessel/${dye}`)
+            .id(`tfg:smelting/${dye}_large_vessel`)
+    })
 
-    // 2x Pyrite Powder
-    event.recipes.tfc.quern('2x tfc:powder/pyrite', '#forge:raw_materials/pyrite')
-        .id('tfc:quern/pyrite_cut')
+    //#endregion
 
-    // 2x Ruby Powder
-    event.recipes.tfc.quern('2x tfc:powder/ruby', '#forge:raw_materials/ruby')
-        .id('tfc:quern/ruby_cut')
+    //#region Покраска малых и больших сосудов
 
-    // 2x Sapphire Powder
-    event.recipes.tfc.quern('2x tfc:powder/sapphire', '#forge:raw_materials/sapphire')
-        .id('tfc:quern/sapphire_cut')
-
-    // 2x Topaz Powder
-    event.recipes.tfc.quern('2x tfc:powder/topaz', '#forge:raw_materials/topaz')
-        .id('tfc:quern/topaz_cut')
-
-    // 1x Gold Powder
-    event.recipes.tfc.quern('1x tfc:powder/native_gold', 'tfc:ore/small_native_gold')
-        .id('tfc:quern/small_native_gold')
-
-    // 4x Gold Powder
-    event.recipes.tfc.quern('4x tfc:powder/native_gold', '#forge:raw_materials/gold')
-        .id('tfc:quern/normal_native_gold')
-
-    // 1x Silver Powder
-    event.recipes.tfc.quern('1x tfc:powder/native_silver', 'tfc:ore/small_native_silver')
-        .id('tfc:quern/small_native_silver')
-
-    // 4x Silver Powder
-    event.recipes.tfc.quern('4x tfc:powder/native_silver', '#forge:raw_materials/silver')
-        .id('tfc:quern/normal_native_silver')
-
-    // 1x Cassiterite Powder
-    event.recipes.tfc.quern('1x tfc:powder/cassiterite', 'tfc:ore/small_cassiterite')
-        .id('tfc:quern/small_cassiterite')
-
-    // 4x Cassiterite Powder
-    event.recipes.tfc.quern('4x tfc:powder/cassiterite', '#forge:raw_materials/cassiterite')
-        .id('tfc:quern/normal_cassiterite')
-
-    // 1x Bismuth Powder
-    event.recipes.tfc.quern('1x tfc:powder/bismuthinite', 'tfc:ore/small_bismuthinite')
-        .id('tfc:quern/small_bismuthinite')
-
-    // 4x Bismuth Powder
-    event.recipes.tfc.quern('4x tfc:powder/bismuthinite', '#forge:raw_materials/bismuth')
-        .id('tfc:quern/normal_bismuthinite')
-
-    // 1x Garnierite Powder
-    event.recipes.tfc.quern('1x tfc:powder/garnierite', 'tfc:ore/small_garnierite')
-        .id('tfc:quern/small_garnierite')
-
-    // 4x Garnierite Powder
-    event.recipes.tfc.quern('4x tfc:powder/garnierite', '#forge:raw_materials/garnierite')
-        .id('tfc:quern/normal_garnierite')
-
-
-    // 4x Nickel Powder
-    event.recipes.tfc.quern('4x tfc:powder/garnierite', '#forge:raw_materials/nickel')
-        .id('tfc:quern/normal_nickel')
-
-    // 1x Sphalerite Powder
-    event.recipes.tfc.quern('1x tfc:powder/sphalerite', 'tfc:ore/small_sphalerite')
-        .id('tfc:quern/small_sphalerite')
-
-    // 4x Sphalerite Powder
-    event.recipes.tfc.quern('4x tfc:powder/sphalerite', '#forge:raw_materials/sphalerite')
-        .id('tfc:quern/normal_sphalerite')
-
-    // 1x Magnetite Powder
-    event.recipes.tfc.quern('1x tfc:powder/magnetite', 'tfc:ore/small_magnetite')
-        .id('tfc:quern/small_magnetite')
-
-    // 4x Magnetite Powder
-    event.recipes.tfc.quern('4x tfc:powder/magnetite', '#forge:raw_materials/magnetite')
-        .id('tfc:quern/normal_magnetite')
-
-    // 1x Tetrahedrite Powder
-    event.recipes.tfc.quern('1x tfc:powder/tetrahedrite', 'tfc:ore/small_tetrahedrite')
-        .id('tfc:quern/small_tetrahedrite')
-
-    // 4x Tetrahedrite Powder
-    event.recipes.tfc.quern('4x tfc:powder/tetrahedrite', '#forge:raw_materials/tetrahedrite')
-        .id('tfc:quern/normal_tetrahedrite')
-
-    // 1x Malachite Powder
-    event.recipes.tfc.quern('1x tfc:powder/malachite', 'tfc:ore/small_malachite')
-        .id('tfc:quern/small_malachite')
-
-    // 4x Malachite Powder
-    event.recipes.tfc.quern('4x tfc:powder/malachite', '#forge:raw_materials/malachite')
-        .id('tfc:quern/normal_malachite')
-
-    // 1x Malachite Powder
-    event.recipes.tfc.quern('1x tfc:powder/limonite', 'tfc:ore/small_limonite')
-        .id('tfc:quern/small_limonite')
-
-    // 4x Limonite Powder
-    event.recipes.tfc.quern('4x tfc:powder/limonite', '#forge:raw_materials/yellow_limonite')
-        .id('tfc:quern/normal_limonite')
-
-    // 1x Hematite Powder
-    event.recipes.tfc.quern('1x tfc:powder/hematite', 'tfc:ore/small_hematite')
-        .id('tfc:quern/small_hematite')
-
-    // 4x Hematite Powder
-    event.recipes.tfc.quern('4x tfc:powder/hematite', '#forge:raw_materials/hematite')
-        .id('tfc:quern/normal_hematite')
+    //#region Обычный сосуд
     
-    // 1x Copper Powder
-    event.recipes.tfc.quern('1x tfc:powder/native_copper', 'tfc:ore/small_native_copper')
-        .id('tfc:quern/small_native_copper')
+    event.recipes.gtceu.chemical_bath(`unfired_vessel_decolor`)             
+        .itemInputs('#tfg:colorized_unfired_vessels')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 36))
+        .itemOutputs('tfc:ceramic/unfired_vessel')
+        .duration(300)
+        .EUt(4)
 
-    // 4x Copper Powder
-    event.recipes.tfc.quern('4x tfc:powder/native_copper', '#forge:raw_materials/copper')
-        .id('tfc:quern/normal_native_copper')
+    event.recipes.gtceu.chemical_bath(`fired_vessel_decolor`)             
+        .itemInputs('#tfg:colorized_fired_vessels')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 36))
+        .itemOutputs('tfc:ceramic/vessel')
+        .duration(300)
+        .EUt(4)
 
-    // 4x Cinnabar Powder
-    event.recipes.tfc.quern('4x minecraft:redstone', '#forge:raw_materials/cinnabar')
-        .id('tfc:quern/normal_cinnabar')
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.recipes.gtceu.chemical_bath(`${dye}_unfired_vessel`)             
+            .itemInputs('tfc:ceramic/unfired_vessel')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+            .itemOutputs(`tfc:ceramic/${dye}_unfired_vessel`)
+            .duration(150)
+            .EUt(4)
 
-    // 4x Sulfur Powder
-    event.recipes.tfc.quern('4x tfc:powder/sulfur', '#forge:raw_materials/sulfur')
-        .id('tfc:quern/normal_sulfur')
-
-    // 4x Saltpeter Powder
-    event.recipes.tfc.quern('4x tfc:powder/saltpeter', '#forge:raw_materials/saltpeter')
-        .id('tfc:quern/normal_saltpeter')
-
-    // 4x Salt Powder
-    event.recipes.tfc.quern('4x tfc:powder/salt', '#forge:raw_materials/salt')
-        .id('tfc:quern/normal_salt')
-
-    // 4x Graphite Powder
-    event.recipes.tfc.quern('4x tfc:powder/graphite', '#forge:raw_materials/graphite')
-        .id('tfc:quern/normal_graphite_2')
-
-    // 4x Borax Powder
-    event.recipes.tfc.quern('4x tfc:powder/flux', '#forge:raw_materials/borax')
-        .id('tfc:quern/normal_borax')
+        event.recipes.gtceu.chemical_bath(`${dye}_vessel`)             
+            .itemInputs('tfc:ceramic/vessel')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+            .itemOutputs(`tfc:ceramic/${dye}_glazed_vessel`)
+            .duration(150)
+            .EUt(4)
+    })
 
     //#endregion
 
-    //#region Мука
+    //#region Большой сосуд
+    
+    event.recipes.gtceu.chemical_bath(`unfired_large_vessel_decolor`)             
+        .itemInputs('#tfg:colorized_unfired_large_vessels')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs('tfc:ceramic/unfired_large_vessel')
+        .duration(300)
+        .EUt(4)
 
-    // Barley Grain -> Barley Floor
-    event.recipes.gtceu.macerator('barley_flour')             
-        .itemInputs('tfc:food/barley_grain')
-        .itemOutputs('2x tfc:food/barley_flour')
-        .duration(400)
-        .EUt(16)
+    event.recipes.gtceu.chemical_bath(`fired_large_vessel_decolor`)             
+        .itemInputs('#tfg:colorized_large_vessels')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs('tfc:ceramic/large_vessel')
+        .duration(300)
+        .EUt(4)
 
-    // Maize Grain -> Maize Floor
-    event.recipes.gtceu.macerator('maize_flour')             
-        .itemInputs('tfc:food/maize_grain')
-        .itemOutputs('2x tfc:food/maize_flour')
-        .duration(400)
-        .EUt(16)
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.recipes.gtceu.chemical_bath(`${dye}_large_unfired_vessel`)             
+            .itemInputs('tfc:ceramic/unfired_large_vessel')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .itemOutputs(`tfc:ceramic/unfired_large_vessel/${dye}`)
+            .duration(150)
+            .EUt(4)
 
-    // Oat Grain -> Oat Floor
-    event.recipes.gtceu.macerator('oat_flour')             
-        .itemInputs('tfc:food/oat_grain')
-        .itemOutputs('2x tfc:food/oat_flour')
-        .duration(400)
-        .EUt(16)
-
-    // Rye Grain -> Rye Floor
-    event.recipes.gtceu.macerator('rye_flour')             
-        .itemInputs('tfc:food/rye_grain')
-        .itemOutputs('2x tfc:food/rye_flour')
-        .duration(400)
-        .EUt(16)
-
-    // Rice Grain -> Rice Floor
-    event.recipes.gtceu.macerator('rice_flour')             
-        .itemInputs('tfc:food/rice_grain')
-        .itemOutputs('2x tfc:food/rice_flour')
-        .duration(400)
-        .EUt(16)
-
-    // Wheat Grain -> Wheat Floor
-    event.recipes.gtceu.macerator('wheat_flour')             
-        .itemInputs('tfc:food/wheat_grain')
-        .itemOutputs('2x tfc:food/wheat_flour')
-        .duration(400)
-        .EUt(16)
+        event.recipes.gtceu.chemical_bath(`${dye}_large_vessel`)             
+            .itemInputs('tfc:ceramic/large_vessel')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .itemOutputs(`tfc:ceramic/large_vessel/${dye}`)
+            .duration(150)
+            .EUt(4)
+    })
 
     //#endregion
 
-    //#region Рецепты ковки слитков в GT машинах
-
-    // Сырая крица -> Укрепленная крица
-    event.recipes.gtceu.forge_hammer('tfg/refined_bloom')             
-        .itemInputs('tfc:raw_iron_bloom')
-        .itemOutputs('tfc:refined_iron_bloom')
-        .duration(1000)
-        .EUt(4)
-
-    // Укрепленная крица -> Слиток кованного железа
-    event.recipes.gtceu.forge_hammer('tfg/wrought_iron_ingot')             
-        .itemInputs('tfc:refined_iron_bloom')
-        .itemOutputs('gtceu:wrought_iron_ingot')
-        .duration(1000)
-        .EUt(4)
-
-    // Чугун -> Высокоуглеродная сталь
-    event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')             
-        .itemInputs('tfc:metal/ingot/pig_iron')
-        .itemOutputs('tfc:metal/ingot/high_carbon_steel')
-        .duration(1000)
-        .EUt(4)
-
-    // Высокоуглеродная сталь -> Cталь
-    event.recipes.gtceu.forge_hammer('tfg/steel')             
-        .itemInputs('tfc:metal/ingot/high_carbon_steel')
-        .itemOutputs('gtceu:steel_ingot')
-        .duration(1000)
-        .EUt(4)
-
-    // Высокоуглеродная черная сталь -> черная сталь 
-    event.recipes.gtceu.forge_hammer('tfg/black_steel')             
-        .itemInputs('tfc:metal/ingot/high_carbon_black_steel')
-        .itemOutputs('gtceu:black_steel_ingot')
-        .duration(1000)
-        .EUt(4)
-
-    // Высокоуглеродная синяя сталь -> синяя сталь 
-    event.recipes.gtceu.forge_hammer('tfg/blue_steel')             
-        .itemInputs('tfc:metal/ingot/high_carbon_blue_steel')
-        .itemOutputs('gtceu:blue_steel_ingot')
-        .duration(1000)
-        .EUt(4)
-
-    // Высокоуглеродная красная сталь -> красная сталь 
-    event.recipes.gtceu.forge_hammer('tfg/red_steel')             
-        .itemInputs('tfc:metal/ingot/high_carbon_red_steel')
-        .itemOutputs('gtceu:red_steel_ingot')
-        .duration(1000)
-        .EUt(4)
-
-    // Слабая сталь + Чугун -> Высокоуглеродная черная сталь
-    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')             
-        .itemInputs('tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron')
-        .itemOutputs('tfc:metal/ingot/high_carbon_black_steel')
-        .duration(1600)
-        .EUt(4)
-
-    // Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
-    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')             
-        .itemInputs('tfc:metal/ingot/weak_blue_steel', 'gtceu:black_steel_ingot')
-        .itemOutputs('tfc:metal/ingot/high_carbon_blue_steel')
-        .duration(1600)
-        .EUt(4)
-
-    // Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
-    event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')             
-        .itemInputs('tfc:metal/ingot/weak_red_steel', 'gtceu:black_steel_ingot')
-        .itemOutputs('tfc:metal/ingot/high_carbon_red_steel')
-        .duration(1600)
-        .EUt(4)
-
     //#endregion
 
-    //#region Выход: Wool Yarn
-
-    event.recipes.gtceu.macerator('macerate_wool')             
-        .itemInputs('#minecraft:wool')
-        .itemOutputs('tfc:wool_yarn')
-        .chancedOutput('tfc:wool_yarn', 9000, 0)
-        .chancedOutput('tfc:wool_yarn', 5000, 0)
-        .chancedOutput('tfc:wool_yarn', 2000, 0)
-        .duration(200)
-        .EUt(2)
-
-    //#endregion
-
-    //#region Выход: Лопасти ветряной мельницы
+    //#region Удаление рецептов лопастей ветряной мельницы
 
     event.remove({ id: `tfc:crafting/windmill_blade` })
     event.remove({ id: `tfc:barrel/dye/bleach_windmill_blades` })
@@ -2187,24 +2185,7 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-    //#region Обжарка мяса
-
-    global.TFC_COOKABLE_MEAT.forEach(meat => {
-        let raw_variant = meat.replace('%s_', '')
-        let cooked_variant = meat.replace('%s', 'cooked')
-
-        let id = raw_variant.split('/')
-
-        event.smelting(cooked_variant, raw_variant)
-            .id(`tfg:smelting/${id[1]}_to_cooked`)
-    })
-
-    event.smelting('tfc:food/cooked_egg', 'minecraft:egg')
-            .id(`tfg:smelting/raw_egg_to_cooked`)
-
-    //#endregion
-
-    //#region Выход: Каменные инструменты
+    //#region Удаление рецептов каменных инструментов TFC
 
     //#region Топор
 
@@ -2441,6 +2422,16 @@ const registerTFCRecipes = (event) => {
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
         .id('tfg:smelting/fireclay_brick')
 
+    // Wool yarn
+    event.recipes.gtceu.macerator('macerate_wool')             
+        .itemInputs('#minecraft:wool')
+        .itemOutputs('tfc:wool_yarn')
+        .chancedOutput('tfc:wool_yarn', 9000, 0)
+        .chancedOutput('tfc:wool_yarn', 5000, 0)
+        .chancedOutput('tfc:wool_yarn', 2000, 0)
+        .duration(200)
+        .EUt(2)
+
     // LimeWater + Sand -> Mortar
     event.recipes.gtceu.centrifuge('mortar')             
         .itemInputs('#forge:sand')
@@ -2448,11 +2439,4 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('16x tfc:mortar')
         .duration(800)
         .EUt(8)
-
-    // Обжарка оголовий в печке
-    for (let i = 0; i < global.TFC_UNFIRED_MOLDS.length; i++) {
-        event.smelting(global.TFC_FIRED_MOLDS[i], global.TFC_UNFIRED_MOLDS[i])
-            .id(`tfg:smelting/mold_${i}`)
-    }
-
 }

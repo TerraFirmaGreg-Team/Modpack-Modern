@@ -1048,6 +1048,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:white_dye', '1x #tfc:makes_white_dye')
+        .id('tfg:milling/white_dye')
+
     // Red
     event.remove({id: 'minecraft:red_dye_from_tulip'})
     event.remove({id: 'minecraft:red_dye_from_rose_bush'})
@@ -1064,6 +1067,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:red_dye', '1x #tfc:makes_red_dye')
+        .id('tfg:milling/red_dye')
+
     // Lime
     event.remove({id: 'minecraft:lime_dye_from_smelting'})
     
@@ -1072,6 +1078,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:lime_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:lime_dye', '1x #tfc:makes_lime_dye')
+        .id('tfg:milling/lime_dye')
 
     // Light Blue
     event.remove({id: 'minecraft:light_blue_dye_from_blue_orchid'})
@@ -1083,6 +1092,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:light_blue_dye', '1x #tfc:makes_light_blue_dye')
+        .id('tfg:milling/light_blue_dye')
+
     // Green
     event.remove({id: 'minecraft:green_dye'})
 
@@ -1091,6 +1103,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:green_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:green_dye', '1x #tfc:makes_green_dye')
+        .id('tfg:milling/green_dye')
 
     // Magenta
     event.remove({id: 'minecraft:magenta_dye_from_lilac'})
@@ -1104,6 +1119,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:magenta_dye', '1x #tfc:makes_magenta_dye')
+        .id('tfg:milling/magenta_dye')
+
     // Orange
     event.remove({id: 'tfc:crafting/vanilla/orange_dye_from_sylvite'})
     event.remove({id: 'minecraft:orange_dye_from_torchflower'})
@@ -1116,12 +1134,18 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:orange_dye', '1x #tfc:makes_orange_dye')
+        .id('tfg:milling/orange_dye')
+
     // Purple
     event.recipes.gtceu.extractor('purple_dye')             
         .itemInputs('1x #tfc:makes_purple_dye')
         .itemOutputs('2x minecraft:purple_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:purple_dye', '1x #tfc:makes_purple_dye')
+        .id('tfg:milling/purple_dye')
 
     // Brown
     event.remove({id: 'minecraft:brown_dye' })
@@ -1131,6 +1155,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:brown_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:brown_dye', '1x #tfc:makes_brown_dye')
+        .id('tfg:milling/brown_dye')
 
     // Light Gray
     event.remove({id: 'minecraft:light_gray_dye_from_white_tulip'})
@@ -1146,6 +1173,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:light_gray_dye', '1x #tfc:makes_light_gray_dye')
+        .id('tfg:milling/light_gray_dye')
+
     // Yellow
     event.remove({id: 'minecraft:yellow_dye_from_sunflower'})
     event.remove({id: 'minecraft:yellow_dye_from_dandelion'})
@@ -1158,6 +1188,9 @@ const registerMinecraftRecipes = (event) => {
         .duration(200)
         .EUt(2)
 
+    event.recipes.createMilling('2x minecraft:yellow_dye', '1x #tfc:makes_yellow_dye')
+        .id('tfg:milling/yellow_dye')
+
     // Blue
     event.remove({id: 'minecraft:blue_dye_from_cornflower'})
     event.remove({id: 'gtceu:extractor/cornflower_dye'})
@@ -1167,6 +1200,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:blue_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:blue_dye', '1x #tfc:makes_blue_dye')
+        .id('tfg:milling/blue_dye')
 
     // Pink
     event.remove({id: 'minecraft:pink_dye_from_pink_petals'})
@@ -1180,6 +1216,9 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs('2x minecraft:pink_dye')
         .duration(200)
         .EUt(2)
+
+    event.recipes.createMilling('2x minecraft:pink_dye', '1x #tfc:makes_pink_dye')
+        .id('tfg:milling/pink_dye')
 
     // Cyan
     event.remove({id: 'minecraft:cyan_dye_from_pitcher_plant'})
@@ -1938,7 +1977,7 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({id: 'minecraft:comparator'})
     event.remove({id: 'gtceu:shaped/comparator_quartzite'})
-    event.remove({id: 'gtceu:shaped/certus'})
+    event.remove({id: 'gtceu:shaped/comparator_certus'})
     event.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
 
     // Компаратор
@@ -2360,6 +2399,13 @@ const registerMinecraftRecipes = (event) => {
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
+        event.recipes.gtceu.chemical_bath(`${dye}_powder_to_${dye}_concrete`)             
+            .itemInputs(`minecraft:${dye}_concrete_powder`)
+            .inputFluids(Fluid.of('minecraft:water', 144))
+            .itemOutputs(`minecraft:${dye}_concrete`)
+            .duration(100)
+            .EUt(4)
+
         if (dye != "white")
             event.recipes.gtceu.chemical_bath(`${dye}_concrete`)             
                 .itemInputs(`minecraft:white_concrete`)
@@ -2375,13 +2421,47 @@ const registerMinecraftRecipes = (event) => {
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
-        if (dye != "white")
+        event.remove({ id: `minecraft:dye_${dye}_wool` })
+
+        if (dye != 'white')
+        {
+            event.shapeless(`minecraft:${dye}_wool`, [
+                'minecraft:white_wool',
+                `#forge:dyes/${dye}`
+            ]).id(`tfg:create/shapeless/${dye}_wool`)
+
             event.recipes.gtceu.chemical_bath(`${dye}_wool`)             
                 .itemInputs(`minecraft:white_wool`)
                 .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
                 .itemOutputs(`minecraft:${dye}_wool`)
                 .duration(300)
                 .EUt(4)
+        }
+            
+    })
+
+    //#endregion
+
+    //#region Выход: Ковры
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        
+        event.remove({ id: `minecraft:dye_${dye}_carpet` })
+
+        if (dye != 'white')
+        {
+            event.shapeless(`minecraft:${dye}_carpet`, [
+                'minecraft:white_carpet',
+                `#forge:dyes/${dye}`
+            ]).id(`tfg:create/shapeless/${dye}_carpet`)
+
+            event.recipes.gtceu.chemical_bath(`${dye}_carpet`)             
+                .itemInputs(`minecraft:white_carpet`)
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+                .itemOutputs(`minecraft:${dye}_carpet`)
+                .duration(300)
+                .EUt(4)
+        }
     })
 
     //#endregion
@@ -2412,6 +2492,72 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Арбалет
 
     event.remove({ id: 'minecraft:crossbow' })
+
+    //#endregion
+
+    //#region Выход: Наблюдатель
+
+    event.remove({ id: 'minecraft:observer' })
+
+    //#endregion
+
+    //#region Выход: Рельсы
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_rail' })
+
+    event.recipes.gtceu.assembler('rail')             
+        .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden')
+        .circuit(1)
+        .itemOutputs('32x minecraft:rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Заряженные рельсы
+
+    event.remove({ id: 'minecraft:powered_rail' })
+
+    event.recipes.gtceu.assembler('powered_rail')             
+        .itemInputs('6x #forge:rods/gold', '#forge:rods/wooden', '#forge:dusts/redstone')
+        .circuit(1)
+        .itemOutputs('16x minecraft:powered_rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Активаторные рельсы
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_activator_rail' })
+    event.remove({ id: 'minecraft:activator_rail' })
+
+    event.recipes.gtceu.assembler('activator_rail')             
+        .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', 'minecraft:redstone_torch')
+        .circuit(1)
+        .itemOutputs('4x minecraft:activator_rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Нажимные рельсы
+
+    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_detector_rail' })
+    event.remove({ id: 'minecraft:detector_rail' })
+
+    event.recipes.gtceu.assembler('detector_rail')             
+        .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', '#minecraft:stone_pressure_plates')
+        .circuit(1)
+        .itemOutputs('4x minecraft:detector_rail')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Веревка
+
+    event.remove({ id: 'minecraft:lead' })
 
     //#endregion
 
