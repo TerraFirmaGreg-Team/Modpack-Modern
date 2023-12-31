@@ -7,6 +7,9 @@
 	#Small Connector max input in FE/t (Energy transfer).
 	#Range: > 0
 	small_connector_max_input = 1000
+	#Small Connector With Light energy consumption in FE/t.
+	#Range: > 0
+	small_light_connector_consumption = 1
 	#Large Connector max wire length in blocks.
 	#Range: 0 ~ 256
 	large_connector_wire_length = 32

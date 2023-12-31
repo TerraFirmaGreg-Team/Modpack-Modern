@@ -599,6 +599,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:fishing_rod',
     'minecraft:warped_fungus_on_a_stick', 
     'minecraft:carrot_on_a_stick',
+    'minecraft:carrot',
     'minecraft:pumpkin',
     'minecraft:pearlescent_froglight', 
     'minecraft:verdant_froglight', 
