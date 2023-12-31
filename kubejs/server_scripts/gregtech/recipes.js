@@ -1112,9 +1112,7 @@ const registerGTCEURecipes = (event) => {
                         item: `gtceu:${material}_impure_dust`
                     }
                 ],
-                result: {
-                    item: `gtceu:${material}_dust`
-                }
+                result: Item.of(`#forge:dusts/${material}`).toJson()
             }).id(`tfg:ae_transform/${material}_dust`)
         }
 
