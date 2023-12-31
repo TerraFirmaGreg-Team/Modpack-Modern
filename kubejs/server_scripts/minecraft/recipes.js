@@ -2423,18 +2423,45 @@ const registerMinecraftRecipes = (event) => {
         
         event.remove({ id: `minecraft:dye_${dye}_wool` })
 
-        event.shapeless(`minecraft:${dye}_wool`, [
-            'minecraft:white_wool',
-            `#forge:dyes/${dye}`
-        ]).id(`tfg:create/shapeless/${dye}_wool`)
-
         if (dye != 'white')
+        {
+            event.shapeless(`minecraft:${dye}_wool`, [
+                'minecraft:white_wool',
+                `#forge:dyes/${dye}`
+            ]).id(`tfg:create/shapeless/${dye}_wool`)
+
             event.recipes.gtceu.chemical_bath(`${dye}_wool`)             
                 .itemInputs(`minecraft:white_wool`)
                 .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
                 .itemOutputs(`minecraft:${dye}_wool`)
                 .duration(300)
                 .EUt(4)
+        }
+            
+    })
+
+    //#endregion
+
+    //#region Выход: Ковры
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        
+        event.remove({ id: `minecraft:dye_${dye}_carpet` })
+
+        if (dye != 'white')
+        {
+            event.shapeless(`minecraft:${dye}_carpet`, [
+                'minecraft:white_carpet',
+                `#forge:dyes/${dye}`
+            ]).id(`tfg:create/shapeless/${dye}_carpet`)
+
+            event.recipes.gtceu.chemical_bath(`${dye}_carpet`)             
+                .itemInputs(`minecraft:white_carpet`)
+                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+                .itemOutputs(`minecraft:${dye}_carpet`)
+                .duration(300)
+                .EUt(4)
+        }
     })
 
     //#endregion

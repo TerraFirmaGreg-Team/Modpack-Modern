@@ -1,7 +1,6 @@
 // priority: 1
 
 REIEvents.hide('item', event => {
-    /*
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideFirmaLifeStuff(event)
@@ -12,8 +11,7 @@ REIEvents.hide('item', event => {
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)
     hideRailWaysStuff(event)
-    hideCreateAdditionsStuff(event)*/
-   
+    hideCreateAdditionsStuff(event)
 })
 
 REIEvents.groupEntries(event => {
