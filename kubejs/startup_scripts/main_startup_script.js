@@ -3,7 +3,9 @@
 /**
  * Событие регистрации предметов.
  */
-StartupEvents.registry('item', (event) => {})
+StartupEvents.registry('item', (event) => {
+    registerGTCEuItems(event)
+})
 
 /**
  * Событие регистрации блоков.

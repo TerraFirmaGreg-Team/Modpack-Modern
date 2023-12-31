@@ -1070,6 +1070,37 @@ const registerGTCEURecipes = (event) => {
         .duration(448)
         .EUt(8)
 
+    // Клей из ТФК клея
+    event.recipes.gtceu.centrifuge('glue_from_tfc_glue')             
+        .itemInputs('tfc:glue')
+        .outputFluids(Fluid.of('gtceu:glue', 50))
+        .duration(400)
+        .EUt(5)
+
+    // Рецепт ULV микросхемы
+    event.remove({ id: 'gtceu:shaped/vacuum_tube' })
+
+    event.recipes.createSequencedAssembly([
+        'gtceu:vacuum_tube', 
+    ], '#forge:plates/wrought_iron', [
+        event.recipes.createDeploying('kubejs:unfinished_vacuum_tube', ['kubejs:unfinished_vacuum_tube', '#forge:bolts/steel']),
+        event.recipes.createDeploying('kubejs:unfinished_vacuum_tube', ['kubejs:unfinished_vacuum_tube', 'gtceu:glass_tube']),
+        event.recipes.createDeploying('kubejs:unfinished_vacuum_tube', ['kubejs:unfinished_vacuum_tube', '#forge:wires/single/copper']),
+    ]).transitionalItem('kubejs:unfinished_vacuum_tube').loops(2).id('tfg:gtceu/sequenced_assembly/vacuum_tube')
+
+    // Рецепт LV микросхемы
+    event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
+
+    event.recipes.createSequencedAssembly([
+        'gtceu:basic_electronic_circuit', 
+    ], 'gtceu:resin_printed_circuit_board', [
+        event.recipes.createDeploying('kubejs:unfinished_basic_electronic_circuit', ['kubejs:unfinished_basic_electronic_circuit', '#forge:plates/steel']),
+        event.recipes.createDeploying('kubejs:unfinished_basic_electronic_circuit', ['kubejs:unfinished_basic_electronic_circuit', 'gtceu:resistor']),
+        event.recipes.createDeploying('kubejs:unfinished_basic_electronic_circuit', ['kubejs:unfinished_basic_electronic_circuit', 'gtceu:vacuum_tube']),
+        event.recipes.createDeploying('kubejs:unfinished_basic_electronic_circuit', ['kubejs:unfinished_basic_electronic_circuit', '#forge:cables/single/red_alloy']),
+    ]).transitionalItem('kubejs:unfinished_basic_electronic_circuit').loops(2).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
+
+
     //#region Выход: Фикс выработки пара на ведре лавы
 
     event.remove({ id: 'minecraft:large_boiler/lava_bucket' })
@@ -1078,13 +1109,6 @@ const registerGTCEURecipes = (event) => {
         .duration(25)
 
     //#endregion
-
-    // Клей из ТФК клея
-    event.recipes.gtceu.centrifuge('glue_from_tfc_glue')             
-        .itemInputs('tfc:glue')
-        .outputFluids(Fluid.of('gtceu:glue', 50))
-        .duration(400)
-        .EUt(5)
 
     //#region Рецепты, которые итерируются по всем материалам
 
