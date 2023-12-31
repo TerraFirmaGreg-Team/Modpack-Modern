@@ -89,6 +89,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/green_seat' },
         { id: 'create:crafting/kinetics/red_seat' },
         { id: 'create:crafting/kinetics/black_seat' },
+        { id: 'create:compat/ae2/mixing/fluix_crystal' },
     ], mod: 'create' })
 
     // Пушка для постройки схематик
