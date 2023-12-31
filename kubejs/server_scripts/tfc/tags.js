@@ -74,6 +74,16 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
+    // Теги для сосудов по цветам
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.add('tfg:colorized_unfired_vessels', `tfc:ceramic/${dye}_unfired_vessel`)
+        event.add('tfg:colorized_fired_vessels', `tfc:ceramic/${dye}_glazed_vessel`)
+
+        event.add('tfg:colorized_unfired_large_vessels', `tfc:ceramic/unfired_large_vessel/${dye}`)
+        event.add('tfg:colorized_fired_large_vessels', `tfc:ceramic/large_vessel/${dye}`)
+        
+    })
+
     // Цвета гравия
     // Коричневый
     event.add('tfc:brown_gravel', 'tfc:rock/gravel/claystone')

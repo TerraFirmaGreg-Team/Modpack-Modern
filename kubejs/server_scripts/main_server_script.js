@@ -74,6 +74,7 @@ TFCEvents.data(event => {
 ServerEvents.recipes(event => {
     registerTFCRecipes(event)
     registerFirmaLifeRecipes(event)
+    registerFirmaCivRecipes(event)
     registerWaterFlasksRecipes(event)
     registerTreeTapRecipes(event)
     
