@@ -2046,6 +2046,12 @@ const registerTFCRecipes = (event) => {
 
     // Добавление рецептов
     global.TFC_QUERN_POWDER_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.gtceu.macerator(`tfg:${element.name}`)             
+            .itemInputs(element.input)
+            .itemOutputs(element.output)
+            .duration(60)
+            .EUt(2)
+
         event.recipes.tfc.quern(element.output, element.input)
             .id(`tfg:quern/${element.name}`)
 
@@ -2065,7 +2071,7 @@ const registerTFCRecipes = (event) => {
             .EUt(16)
 
         event.recipes.createMilling(element.output, element.input)
-            .id(`tfg:quern/${element.name}`)
+            .id(`tfg:milling/${element.name}`)
     })
 
     //#endregion

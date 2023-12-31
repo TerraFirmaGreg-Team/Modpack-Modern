@@ -5,5 +5,5 @@
 	#.
 	#.
 	#Prevents all worldgen added by Create from taking effect
-	disableWorldGen = false
+	disableWorldGen = true
 

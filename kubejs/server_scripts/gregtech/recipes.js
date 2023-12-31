@@ -1086,9 +1086,39 @@ const registerGTCEURecipes = (event) => {
         .duration(400)
         .EUt(5)
 
-    // Прокатка слитков в стержни
+    //#region Рецепты, которые итерируются по всем материалам
+
     GTRegistries.MATERIALS.forEach(material => {
-        if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != 'treated_wood')
+        if (material.hasProperty(PropertyKey.ORE)) 
+        {
+            event.recipes.createCrushing([`gtceu:${material}_crushed_ore`, Item.of(`gtceu:${material}_crushed_ore`).withChance(0.3)], `#forge:raw_materials/${material}`)
+                .processingTime(200)
+                .id(`tfg:crushing/${material}_crushed_ore`)
+
+            event.recipes.createSplashing(Item.of(`gtceu:${material}_dust`).withChance(0.9), `gtceu:${material}_impure_dust`)
+                .id(`tfg:splashing/${material}_dust`)
+        }
+
+        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != 'wood') 
+        {
+            if (material.hasProperty(PropertyKey.INGOT))
+            {
+                event.recipes.createPressing(Item.of(`gtceu:${material}_plate`).withChance(0.97), `#forge:ingots/${material}`)
+                    .id(`tfg:pressing/${material}_plate`)
+
+                event.recipes.createCompacting(Item.of(`#forge:storage_blocks/${material}`), `9x #forge:ingots/${material}`)
+                    .heated()
+                    .id(`tfg:compacting/${material}_block`)
+            }
+            else
+            {
+                event.recipes.createCutting(Item.of(`9x gtceu:${material}_plate`).withChance(0.65), `#forge:storage_blocks/${material}`)
+                    .id(`tfg:cutting/${material}_plate`)
+            }
+        }
+
+        // Прокатка стержней
+        if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != 'wood')
         {
             if (material.hasProperty(PropertyKey.INGOT))
             {
@@ -1101,7 +1131,7 @@ const registerGTCEURecipes = (event) => {
                         'item': `gtceu:${material}_rod`,
                         'count': 2
                     }
-                })
+                }).id(`tfg:rolling/${material}_rod`)
             }
             else
             {
@@ -1114,9 +1144,10 @@ const registerGTCEURecipes = (event) => {
                         'item': `gtceu:${material}_rod`,
                         'count': 2
                     }
-                })
+                }).id(`tfg:rolling/${material}_rod`)
             }
         }
     });
-    
+
+    //#endregion
 }
