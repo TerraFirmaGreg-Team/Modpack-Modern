@@ -30,17 +30,17 @@
 
 # Survival Modpack As It Should've Been
 
-**TerraFirmaGreg** is a Forge modpack that makes the gameplay of Minecraft realistic and challenging, because it contains two of the hard and coolest mods for Minecraft, these are [TerraFirmaCraft](https://modrinth.com/mod/terrafirmacraft) and [GregTech](https://modrinth.com/mod/gregtechceu-modern).
+**TerraFirmaGreg** is a Forge modpack that makes the gameplay of Minecraft realistic and challenging, because it contains two of the hard and coolest mods for Minecraft, these are [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft) and [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern).
 
-Modpack developers have carefully combined TerraFirmaCraft, which has little compatibility ability, and [GregTech](https://modrinth.com/mod/gregtechceu-modern), the best of the technical mods.
+Modpack developers have carefully combined TerraFirmaCraft, which has little compatibility ability, and [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern), the best of the technical mods.
 
 Also in the modpack there are other interesting mods that will allow you to pass the time with pleasure (or not): 
 
-- [TerraFirmaCraft](https://modrinth.com/mod/terrafirmacraft)
-- [GregTech Modern](https://modrinth.com/mod/gregtechceu-modern)
-- [Applied Energistics](https://modrinth.com/mod/ae2)
-- [Create](https://modrinth.com/mod/create)
-- [AdAstra](https://modrinth.com/mod/ad-astra)
+- [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft)
+- [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern)
+- [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/ae2)
+- [Create](https://www.curseforge.com/minecraft/mc-mods/create)
+- [AdAstra](https://www.curseforge.com/minecraft/mc-mods/ad-astra)
 
 
 and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
