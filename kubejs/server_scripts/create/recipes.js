@@ -217,6 +217,13 @@ const registerCreateRecipes = (event) => {
         B: '#forge:tools/hammers'
     }).id('tfg:create/shaped/basin')
 
+    event.recipes.gtceu.assembler('tfg:create/basin')             
+        .itemInputs('5x #forge:plates/wrought_iron')
+        .circuit(3)
+        .itemOutputs('create:basin')
+        .duration(200)
+        .EUt(20)
+
     // Место куда можно что то положить
     event.shapeless('create:depot', [
         'create:andesite_casing',
@@ -232,6 +239,13 @@ const registerCreateRecipes = (event) => {
         A: '#forge:plates/wrought_iron',
         B: '#forge:tools/hammers'
     }).id('tfg:create/shaped/chute')
+
+    event.recipes.gtceu.assembler('tfg:create/chute')             
+        .itemInputs('3x #forge:plates/wrought_iron')
+        .circuit(4)
+        .itemOutputs('create:chute')
+        .duration(200)
+        .EUt(20)
 
     // Металлический держатель
     event.shaped('create:metal_bracket', [
@@ -252,6 +266,13 @@ const registerCreateRecipes = (event) => {
         B: '#forge:plates/copper'
     }).id('tfg:create/shaped/fluid_pipe')
 
+    event.recipes.gtceu.assembler('tfg:create/fluid_pipe')             
+        .itemInputs('4x #forge:plates/copper')
+        .circuit(3)
+        .itemOutputs('create:fluid_pipe')
+        .duration(200)
+        .EUt(20)
+
     // Жидкостный люк
     event.shapeless('create:fluid_valve', [
         'create:fluid_pipe',
@@ -268,6 +289,13 @@ const registerCreateRecipes = (event) => {
         C: '#forge:gears/wrought_iron',
         D: '#forge:tools/files'
     }).id('tfg:create/shaped/copper_valve_handle')
+
+    event.recipes.gtceu.assembler('tfg:create/copper_valve_handle')             
+        .itemInputs('4x #forge:plates/copper', '#forge:gears/wrought_iron')
+        .circuit(6)
+        .itemOutputs('create:copper_valve_handle')
+        .duration(200)
+        .EUt(20)
 
     // Жидкостный резервуар
     event.shaped('create:fluid_tank', [
@@ -324,6 +352,13 @@ const registerCreateRecipes = (event) => {
         G: '#forge:tools/screwdrivers',
     }).id('tfg:create/shaped/steam_engine')
 
+    event.recipes.gtceu.assembler('tfg:create/steam_engine')             
+        .itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/wrought_iron', '#forge:gears/wrought_iron', '#forge:storage_blocks/copper')
+        .circuit(3)
+        .itemOutputs('create:steam_engine')
+        .duration(200)
+        .EUt(32)
+
     // Паровой свисток
     event.shaped('create:steam_whistle', [
         'AC',
@@ -334,6 +369,13 @@ const registerCreateRecipes = (event) => {
         C: '#forge:tools/hammers',
         D: '#forge:tools/files'
     }).id('tfg:create/shaped/steam_whistle')
+
+    event.recipes.gtceu.assembler('tfg:create/steam_whistle')             
+        .itemInputs('#forge:plates/brass', '#forge:rings/gold')
+        .circuit(5)
+        .itemOutputs('create:steam_whistle')
+        .duration(200)
+        .EUt(4)
     
     // Рука поршня
     event.shaped('8x create:piston_extension_pole', [
@@ -346,6 +388,13 @@ const registerCreateRecipes = (event) => {
         C: '#forge:tools/hammers'
     }).id('tfg:create/shaped/piston_extension_pole')
 
+    event.recipes.gtceu.assembler('tfg:create/piston_extension_pole')             
+        .itemInputs('2x #minecraft:planks', '#forge:plates/wrought_iron')
+        .circuit(3)
+        .itemOutputs('8x create:piston_extension_pole')
+        .duration(200)
+        .EUt(20)
+
     // Редстоуновый вал
     event.shaped('create:gantry_shaft', [
         'A ',
@@ -356,6 +405,13 @@ const registerCreateRecipes = (event) => {
         B: '#forge:wires/single/red_alloy',
         C: '#forge:tools/hammers'
     }).id('tfg:create/shaped/gantry_shaft')
+
+    event.recipes.gtceu.assembler('tfg:create/gantry_shaft')             
+        .itemInputs('#forge:wires/single/red_alloy', '2x #forge:plates/wrought_iron')
+        .circuit(3)
+        .itemOutputs('create:gantry_shaft')
+        .duration(200)
+        .EUt(20)
 
     // Канатный шкиф
     event.shaped('create:rope_pulley', [
@@ -470,6 +526,13 @@ const registerCreateRecipes = (event) => {
         E: '#forge:tools/screwdrivers'
     }).id('tfg:create/shaped/redstone_contact')
 
+    event.recipes.gtceu.assembler('tfg:create/redstone_contact')             
+        .itemInputs('5x #forge:cobblestone', '#forge:dusts/redstone', '#forge:plates/wrought_iron', '#forge:screws/bronze')
+        .circuit(3)
+        .itemOutputs('2x create:redstone_contact')
+        .duration(200)
+        .EUt(20)
+
     // Механический собиратель
     event.shaped('create:mechanical_harvester', [
         'ABA',
@@ -483,6 +546,13 @@ const registerCreateRecipes = (event) => {
         E: '#forge:tools/wrenches'
     }).id('tfg:create/shaped/mechanical_harvester')
 
+    event.recipes.gtceu.assembler('tfg:create/mechanical_harvester')             
+        .itemInputs('4x #forge:shovel_heads', '2x #forge:plates/wrought_iron', 'create:andesite_casing')
+        .circuit(3)
+        .itemOutputs('create:mechanical_harvester')
+        .duration(200)
+        .EUt(20)
+
     // Механический плуг
     event.shaped('create:mechanical_plough', [
         'ABA',
@@ -495,6 +565,13 @@ const registerCreateRecipes = (event) => {
         D: 'create:andesite_casing',
         E: '#forge:tools/wrenches'
     }).id('tfg:create/shaped/mechanical_plough')
+
+    event.recipes.gtceu.assembler('tfg:create/mechanical_plough')             
+        .itemInputs('4x #forge:hoe_heads', '2x #forge:plates/wrought_iron', 'create:andesite_casing')
+        .circuit(4)
+        .itemOutputs('create:mechanical_plough')
+        .duration(200)
+        .EUt(20)
 
     // Парус ветряной мельницы
     event.shaped('2x create:white_sail', [
@@ -559,6 +636,13 @@ const registerCreateRecipes = (event) => {
         G: '#forge:screws/wrought_iron'
     }).id('tfg:create/shaped/mechanical_arm')
 
+    event.recipes.gtceu.assembler('tfg:create/mechanical_arm')             
+        .itemInputs('3x #forge:plates/brass', '#forge:rods/wrought_iron', 'create:precision_mechanism', 'create:brass_casing', '#forge:screws/wrought_iron')
+        .circuit(3)
+        .itemOutputs('create:mechanical_arm')
+        .duration(200)
+        .EUt(20)
+
     // Наблюдатель за поездом
     event.shapeless('create:track_observer', [
         'create:railway_casing',
@@ -576,6 +660,13 @@ const registerCreateRecipes = (event) => {
         C: '#forge:screw/wrought_iron',
         D: '#forge:tools/screwdrivers'
     }).id('tfg:create/shaped/item_vault')
+
+    event.recipes.gtceu.assembler('tfg:create/item_vault')             
+        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/wrought_iron')
+        .circuit(3)
+        .itemOutputs('create:item_vault')
+        .duration(200)
+        .EUt(20)
 
     // Умный раздатчик/приемник из железа
     event.shaped('2x create:andesite_funnel', [
@@ -641,6 +732,13 @@ const registerCreateRecipes = (event) => {
         C: '#forge:rotors'
     }).id('tfg:create/shaped/propeller')
 
+    event.recipes.gtceu.assembler('tfg:create/propeller')             
+        .itemInputs('4x #forge:plates/wrought_iron', '#forge:rotors')
+        .circuit(3)
+        .itemOutputs('create:propeller')
+        .duration(200)
+        .EUt(20)
+
     // Латунная рука
     event.shaped('create:brass_hand', [
         ' AB',
@@ -651,6 +749,13 @@ const registerCreateRecipes = (event) => {
         B: '#forge:nuggets/brass',
         C: '#forge:plates/brass'
     }).id('tfg:create/shaped/brass_hand')
+
+    event.recipes.gtceu.assembler('tfg:create/brass_hand')             
+        .itemInputs('3x #forge:nuggets/brass', '#forge:plates/brass')
+        .circuit(3)
+        .itemOutputs('create:brass_hand')
+        .duration(200)
+        .EUt(20)
 
     // Электронная трубка
     event.shaped('create:electron_tube', [
@@ -684,6 +789,13 @@ const registerCreateRecipes = (event) => {
         '#tfg:metal_chains',
         '#forge:tools/hammers'
     ]).id('tfg:create/shapeless/minecart_coupling')
+
+    event.recipes.gtceu.assembler('tfg:create/minecart_coupling')             
+        .itemInputs('3x #tfg:metal_chains', '2x #forge:bolts')
+        .circuit(1)
+        .itemOutputs('create:minecart_coupling')
+        .duration(200)
+        .EUt(20)
 
     // Блупринт создания
     event.shapeless('create:crafting_blueprint', [
@@ -851,6 +963,13 @@ const registerCreateRecipes = (event) => {
         '#forge:tools/files'
     ]).id('tfg:create/shapeless/copycat_panel')
 
+    event.recipes.gtceu.assembler('tfg:create/copycat_panel')             
+        .itemInputs('#forge:double_plates/zinc')
+        .circuit(5)
+        .itemOutputs('create:copycat_panel')
+        .duration(200)
+        .EUt(20)
+
     // Деталь рельса
     event.shaped('create:metal_girder', [
         'AAA',
@@ -901,6 +1020,25 @@ const registerCreateRecipes = (event) => {
         B: 'gtceu:sticky_resin',
         C: 'create:mechanical_piston',
     }).id('tfg:create/shaped/sticky_mechanical_piston_from_sticky_resin')
+
+    event.recipes.gtceu.assembler('tfg:create/sticky_mechanical_piston_from_liquid_glue')             
+        .itemInputs('create:mechanical_piston')
+        .inputFluids(Fluid.of('gtceu:glue', 100))
+        .itemOutputs('create:sticky_mechanical_piston')
+        .duration(100)
+        .EUt(4)
+
+    event.recipes.gtceu.assembler('tfg:create/sticky_mechanical_piston_from_slimeball')             
+        .itemInputs('create:mechanical_piston', 'minecraft:slimeball')
+        .itemOutputs('create:sticky_mechanical_piston')
+        .duration(100)
+        .EUt(4)
+
+    event.recipes.gtceu.assembler('tfg:create/sticky_mechanical_piston_from_sticky_resin')             
+        .itemInputs('create:mechanical_piston', 'gtceu:sticky_resin')
+        .itemOutputs('create:sticky_mechanical_piston')
+        .duration(100)
+        .EUt(4)
 
     //#region Покраска ручек от люка
 

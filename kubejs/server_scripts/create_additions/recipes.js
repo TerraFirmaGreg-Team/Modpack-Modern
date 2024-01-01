@@ -152,4 +152,11 @@ const registerCreateAdditionsRecipes = (event) => {
         '#forge:rods/long/wrought_iron',
         '#forge:tools/hammers'
     ]).id('tfg:railways/shapeless/barbed_wire')
+
+    event.recipes.gtceu.assembler('tfg:createaddition/barbed_wire')             
+        .itemInputs('4x #forge:rods/wrought_iron', '4x #forge:rods/long/wrought_iron')
+        .circuit(3)
+        .itemOutputs('4x createaddition:barbed_wire')
+        .duration(200)
+        .EUt(20)
 }
