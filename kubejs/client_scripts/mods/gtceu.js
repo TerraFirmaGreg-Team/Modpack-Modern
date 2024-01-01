@@ -186,6 +186,7 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/1a_energy_converter", "1a Energy Converter", [/gtceu:.*_1a_energy_converter/,]);
     event.groupItems("tfg:rei_groups/electric_gear_box_2a", "Electric Gear Box 2a", [/gtceu:.*_electric_gear_box_2a/,]);
     event.groupItems("tfg:rei_groups/electric_gear_box_8a", "Electric Gear Box 8a", [/gtceu:.*_electric_gear_box_8a/,]);
+    event.groupItems("tfg:rei_groups/electric_gear_box_16a", "Electric Gear Box 16a", [/gtceu:.*_electric_gear_box_16a/,]);
     event.groupItems("tfg:rei_groups/electric_gear_box_32a", "Electric Gear Box 32a", [/gtceu:.*electric_gear_box_32a/,]);
     event.groupItems("tfg:rei_groups/kinetic_output_box", "kinetic Output Box", [/gtceu:.*_kinetic_output_box/,]);
     event.groupItems("tfg:rei_groups/kinetic_input_box", "kinetic Input Box", [/gtceu:.*_kinetic_input_box/,]);
@@ -201,7 +202,6 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/emitter", "Emitter", [/gtceu:.*_emitter/,]);
     event.groupItems("tfg:rei_groups/sensor", "Sensor", [/gtceu:.*_sensor/,]);
     event.groupItems("tfg:rei_groups/solar_panel", "Solar Panel", [/gtceu:.*_solar_panel/,]);
-    event.groupItems("tfg:rei_groups/turbine_rotor", "Turbine Rotor", [/gtceu:turbine_rotor/,]);
 
     event.groupItems('tfg:rei_groups/buckets', 'Buckets', [/gtceu:.*_bucket/]);
 }
