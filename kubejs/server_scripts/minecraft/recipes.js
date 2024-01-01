@@ -594,6 +594,12 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Базальт
+
+    event.remove({ id: 'gtceu:rock_breaker/deepslate' })
+
+    //#endregion
+
     //#region Выход: Уголь
 
     event.remove({ id: 'minecraft:coal_from_smelting_coal_ore' })
