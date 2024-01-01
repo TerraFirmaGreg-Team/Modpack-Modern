@@ -38,3 +38,13 @@ global.FIRMALIFE_DISABLED_ITEMS = [
 global.FIRMALIFE_ORE_MATERIALS = [
     'chromite'
 ];
+
+global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
+    { input: 'firmalife:plant/cocoa_sapling', fluid_amount: 8000, output: '3x firmalife:food/cocoa_beans', name: 'cocoa_beans' },
+    { input: 'firmalife:plant/fig_sapling', fluid_amount: 8000, output: '3x firmalife:food/fig', name: 'fig' },
+];
+
+global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
+    { input: 'firmalife:plant/pineapple_bush', fluid_amount: 6000, output: '3x firmalife:food/pineapple', name: 'pineapple' },
+    { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' },
+];

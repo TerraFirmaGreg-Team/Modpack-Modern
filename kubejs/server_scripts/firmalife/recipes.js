@@ -63,5 +63,21 @@ const registerFirmaLifeRecipes = (event) => {
     event.recipes.tfc.anvil('4x firmalife:pie_pan', '#forge:plates/wrought_iron', ["hit_last", "hit_second_last", "draw_third_last"])
         .tier(3)
         .id('firmalife:anvil/pie_pan')
+
+    //#region Рецепты электрической теплицы
+    
+    // Дерево
+
+    // Семена фруктов
+    global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
+        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+    })
+
+    // Семена ягод
+    global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
+        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+    })
+
+    //#endregion
         
 }

@@ -1619,6 +1619,58 @@ global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS = [
     { input: 'tfc:food/wheat_grain', output: '2x tfc:food/wheat_flour', name: 'wheat_flour' },
 ];
 
+global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
+    { input: 'tfc:plant/cherry_sapling', fluid_amount: 8000, output: '3x tfc:food/cherry', name: 'cherry' },
+    { input: 'tfc:plant/green_apple_sapling', fluid_amount: 8000, output: '3x tfc:food/green_apple', name: 'green_apple' },
+    { input: 'tfc:plant/lemon_sapling', fluid_amount: 8000, output: '3x tfc:food/lemon', name: 'lemon' },
+    { input: 'tfc:plant/olive_sapling', fluid_amount: 8000, output: '3x tfc:food/olive', name: 'olive' },
+    { input: 'tfc:plant/orange_sapling', fluid_amount: 8000, output: '3x tfc:food/orange', name: 'orange' },
+    { input: 'tfc:plant/peach_sapling', fluid_amount: 8000, output: '3x tfc:food/peach', name: 'peach' },
+    { input: 'tfc:plant/plum_sapling', fluid_amount: 8000, output: '3x tfc:food/plum', name: 'plum' },
+    { input: 'tfc:plant/red_apple_sapling', fluid_amount: 8000, output: '3x tfc:food/red_apple', name: 'red_apple' },
+    { input: 'tfc:plant/banana_sapling', fluid_amount:8000, output: '3x tfc:food/banana', name: 'banana' },
+];
+
+global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = [
+    { input: 'tfc:seeds/barley', fluid_amount: 4000, output: '3x tfc:food/barley', name: 'barley' },
+    { input: 'tfc:seeds/oat', fluid_amount: 4000, output: '3x tfc:food/oat', name: 'oat' },
+    { input: 'tfc:seeds/rye', fluid_amount: 4000, output: '3x tfc:food/rye', name: 'rye' },
+    { input: 'tfc:seeds/maize', fluid_amount: 4000, output: '3x tfc:food/maize', name: 'maize' },
+    { input: 'tfc:seeds/wheat', fluid_amount: 4000, output: '3x tfc:food/wheat', name: 'wheat' },
+    { input: 'tfc:seeds/rice', fluid_amount: 4000, output: '3x tfc:food/rice', name: 'rice' },
+    { input: 'tfc:seeds/beet', fluid_amount: 4000, output: '3x tfc:food/beet', name: 'beet' },
+    { input: 'tfc:seeds/cabbage', fluid_amount: 4000, output: '3x tfc:food/cabbage', name: 'cabbage' },
+    { input: 'tfc:seeds/carrot', fluid_amount: 4000, output: '3x tfc:food/carrot', name: 'carrot' },
+    { input: 'tfc:seeds/green_bean', fluid_amount: 4000, output: '3x tfc:food/green_bean', name: 'green_bean' },
+    { input: 'tfc:seeds/garlic', fluid_amount: 4000, output: '3x tfc:food/garlic', name: 'garlic' },
+    { input: 'tfc:seeds/potato', fluid_amount: 4000, output: '3x tfc:food/potato', name: 'potato' },
+    { input: 'tfc:seeds/onion', fluid_amount: 4000, output: '3x tfc:food/onion', name: 'onion' },
+    { input: 'tfc:seeds/soybean', fluid_amount: 4000, output: '3x tfc:food/soybean', name: 'soybean' },
+    { input: 'tfc:seeds/squash', fluid_amount: 4000, output: '3x tfc:food/squash', name: 'squash' },
+    { input: 'tfc:seeds/sugarcane', fluid_amount: 4000, output: '3x tfc:food/sugarcane', name: 'sugarcane' },
+    { input: 'tfc:seeds/tomato', fluid_amount: 4000, output: '3x tfc:food/tomato', name: 'tomato' },
+    { input: 'tfc:seeds/jute', fluid_amount: 4000, output: '3x tfc:jute', name: 'jute' },
+    { input: 'tfc:seeds/papyrus', fluid_amount: 4000, output: '3x tfc:papyrus', name: 'papyrus' },
+    { input: 'tfc:seeds/pumpkin', fluid_amount: 4000, output: '3x tfc:pumpkin', name: 'pumpkin' },
+    { input: 'tfc:seeds/melon', fluid_amount: 4000, output: '3x tfc:melon', name: 'melon' },
+    { input: 'tfc:seeds/red_bell_pepper', fluid_amount: 4000, output: '3x tfc:food/red_bell_pepper', name: 'red_bell_pepper' },
+    { input: 'tfc:seeds/yellow_bell_pepper', fluid_amount: 4000, output: '3x tfc:food/yellow_bell_pepper', name: 'yellow_bell_pepper' },
+];
+
+global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
+    { input: 'tfc:plant/snowberry_bush', fluid_amount: 6000, output: '3x tfc:food/snowberry', name: 'snowberry' },
+    { input: 'tfc:plant/bunchberry_bush', fluid_amount: 6000, output: '3x tfc:food/bunchberry', name: 'bunchberry' },
+    { input: 'tfc:plant/gooseberry_bush', fluid_amount: 6000, output: '3x tfc:food/gooseberry', name: 'gooseberry' },
+    { input: 'tfc:plant/cloudberry_bush', fluid_amount: 6000, output: '3x tfc:food/cloudberry', name: 'cloudberry' },
+    { input: 'tfc:plant/strawberry_bush', fluid_amount: 6000, output: '3x tfc:food/strawberry', name: 'strawberry' },
+    { input: 'tfc:plant/wintergreen_berry_bush', fluid_amount: 6000, output: '3x tfc:food/wintergreen_berry', name: 'wintergreen_berry' },
+    { input: 'tfc:plant/blackberry_bush', fluid_amount: 6000, output: '3x tfc:food/blackberry', name: 'blackberry' },
+    { input: 'tfc:plant/raspberry_bush', fluid_amount: 6000, output: '3x tfc:food/raspberry', name: 'raspberry' },
+    { input: 'tfc:plant/blueberry_bush', fluid_amount: 6000, output: '3x tfc:food/blueberry', name: 'blueberry' },
+    { input: 'tfc:plant/elderberry_bush', fluid_amount: 6000, output: '3x tfc:food/elderberry', name: 'elderberry' },
+    { input: 'tfc:plant/cranberry_bush', fluid_amount: 6000, output: '3x tfc:food/cranberry', name: 'cranberry' },
+];
+
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1

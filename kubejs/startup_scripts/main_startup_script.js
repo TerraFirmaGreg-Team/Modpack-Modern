@@ -16,3 +16,17 @@ StartupEvents.registry('block', (event) => {})
  * Событие регистрации жидкостей.
  */
 StartupEvents.registry('fluid', (event) => {})
+
+/**
+ * Событие регистрации типов рецептов.
+ */
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    registerGTCEuRecipeTypes(event)
+})
+
+/**
+ * Событие регистрации механизмов.
+ */
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    registerGTCEuMachines(event)
+})

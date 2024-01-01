@@ -55,3 +55,29 @@ const generateCutterRecipe = (event, input, circuit, output, duration, EUt, id) 
         recipe3.circuit(circuit)
     }
 }
+
+const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
+    
+    // Без удобрения
+    event.recipes.gtceu.greenhouse(id)
+        .itemInputs(input)
+        .circuit(1)
+        .inputFluids(Fluid.of('minecraft:water', fluid_amount))
+        .itemOutputs(output)
+        .chancedOutput(input, 7500, 0)
+        .chancedOutput(input, 5000, 0)
+        .duration(32000)
+        .EUt(240)
+
+    // С удобрением
+    event.recipes.gtceu.greenhouse(`${id}_fertilized`)
+        .itemInputs(input)
+        .itemInputs('8x gtceu:fertilizer')
+        .circuit(2)
+        .inputFluids(Fluid.of('minecraft:water', fluid_amount))
+        .itemOutputs(output)
+        .chancedOutput(input, 8500, 0)
+        .chancedOutput(input, 6000, 0)
+        .duration(16000)
+        .EUt(240)
+}
