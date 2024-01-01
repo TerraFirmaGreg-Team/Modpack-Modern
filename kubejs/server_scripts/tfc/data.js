@@ -6,6 +6,7 @@ const registerTFCDataForTFC = (event) => {
     registerTFCFuels(event)
     registerTFCLampFuels(event)
     registerTFCFertilizers(event)
+    registerTFCItemSize(event)
 }
 
 const registerTFCMetals = (event) => {
@@ -113,4 +114,8 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:phosphorus_tiny_dust', null, 0.016, null)
     event.fertilizer('gtceu:phosphorus_small_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
+}
+
+const registerTFCItemSize = (event) => {
+    // TODO event.itemSize('minecraft:gold_ingot', 'huge', 'very_heavy')
 }
