@@ -801,7 +801,7 @@ global.ARMOR_GEN = 'armor';
 /**
  * Указывает, что у этого металла есть: инструменты и оголовья.
  */
-global.GT_TOOL_GEN = 'tool';
+global.TOOL_GEN = 'tool';
 
 /**
  * Указывает, что у этого металла есть: ведро.
@@ -818,196 +818,50 @@ global.TFC_SMALL_NATIVE_ORE_GEN = 'small_native_ore';
  */
 global.TFC_SMALL_ORE_GEN = 'small_ore';
 
-global.METAL_TO_SPECS = {
-    gold: {
-        forging_temp: 636,
-        welding_temp: 848,
-        melt_temp: 1060,
-        fluid: "gtceu:gold",
-        tier: 1,
-        percent_of_material: 100,
-        props: [
-            global.INGOT_GEN,
-            global.DOUBLE_INGOT_GEN,
-            global.NUGGET_GEN,
-            global.DUST_GEN,
-            global.ORE_CHUNKS_GEN,
-            global.PART_GEN,
-            global.TFC_SMALL_NATIVE_ORE_GEN
-        ]
-    },
+/**
+ * Указывает, что оголовья из этого металла можно раскрафтить из форм.
+ */
+global.CAN_BE_UNMOLDED = 'can_be_unmolded';
 
+/**
+ * Указывает, на то что является ли текущий металл дублированием греговского.
+ */
+global.IS_GT_DUP = 'is_gt_dup';
+
+global.METAL_TO_SPECS = {
+
+    // Основные металлы
     copper: {
         forging_temp: 648,
         welding_temp: 864,
         melt_temp: 1080,
-        fluid: "gtceu:copper",
+        output_fluid: "gtceu:copper",
         tier: 1,
         percent_of_material: 100,
-        canBeUnmolded: true,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
-            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
+            global.TOOL_GEN,
             global.UTILITY_GEN,
+
+            global.CAN_BE_UNMOLDED,
+
+            global.ORE_CHUNKS_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
         ]
-    },
-
-    bismuth: {
-        forging_temp: 162,
-        welding_temp: 216,
-        melt_temp: 270,
-        fluid: "gtceu:bismuth",
-        tier: 1,
-        percent_of_material: 100,
-        props: [
-            global.INGOT_GEN,
-            global.DOUBLE_INGOT_GEN,
-            global.NUGGET_GEN,
-            global.DUST_GEN,
-            global.ORE_CHUNKS_GEN,
-            global.PART_GEN
-        ],
-        isGTDup: true
-    },
-
-    brass: {
-        forging_temp: 558,
-        welding_temp: 744,
-        melt_temp: 930,
-        fluid: "gtceu:brass",
-        percent_of_material: 100,
-        tier: 2,
-        props: [
-            global.INGOT_GEN, 
-            global.DOUBLE_INGOT_GEN, 
-            global.NUGGET_GEN, 
-            global.DUST_GEN, 
-            global.PART_GEN
-        ],
-        isGTDup: true
-    },
-
-    nickel: {
-        forging_temp: 872,
-        welding_temp: 1162,
-        melt_temp: 1453,
-        fluid: "gtceu:nickel",
-        percent_of_material: 100,
-        tier: 1,
-        props: [
-            global.INGOT_GEN,
-            global.DOUBLE_INGOT_GEN,
-            global.NUGGET_GEN,
-            global.DUST_GEN,
-            global.ORE_CHUNKS_GEN,
-            global.PART_GEN
-        ],
-        isGTDup: true
-    },
-
-    rose_gold: {
-        forging_temp: 576,
-        welding_temp: 768,
-        melt_temp: 960,
-        fluid: "gtceu:rose_gold",
-        percent_of_material: 100,
-        tier: 1,
-        props: [
-            global.INGOT_GEN, 
-            global.DOUBLE_INGOT_GEN, 
-            global.NUGGET_GEN, 
-            global.DUST_GEN, 
-            global.PART_GEN
-        ],
-        isGTDup: true
-    },
-
-    silver: {
-        forging_temp: 577,
-        welding_temp: 769,
-        melt_temp: 961,
-        fluid: "gtceu:silver",
-        percent_of_material: 100,
-        tier: 1,
-        props: [
-            global.INGOT_GEN,
-            global.DOUBLE_INGOT_GEN,
-            global.NUGGET_GEN,
-            global.DUST_GEN,
-            global.ORE_CHUNKS_GEN,
-            global.PART_GEN,
-            global.TFC_SMALL_NATIVE_ORE_GEN
-        ],
-        isGTDup: true
-    },
-
-    tin: {
-        forging_temp: 138,
-        welding_temp: 184,
-        melt_temp: 230,
-        fluid: "gtceu:tin",
-        percent_of_material: 100,
-        tier: 1,
-        props: [
-            global.INGOT_GEN,
-            global.DOUBLE_INGOT_GEN,
-            global.NUGGET_GEN,
-            global.DUST_GEN,
-            global.ORE_CHUNKS_GEN,
-            global.PART_GEN
-        ],
-        isGTDup: true
-    },
-
-    zinc: {
-        forging_temp: 252,
-        welding_temp: 336,
-        melt_temp: 420,
-        fluid: "gtceu:zinc",
-        percent_of_material: 100,
-        tier: 1,
-        props: [
-            global.INGOT_GEN, 
-            global.DOUBLE_INGOT_GEN, 
-            global.NUGGET_GEN, 
-            global.DUST_GEN, 
-            global.PART_GEN
-        ],
-        isGTDup: true
-    },
-
-    sterling_silver: {
-        forging_temp: 570,
-        welding_temp: 760,
-        melt_temp: 950,
-        fluid: "gtceu:sterling_silver",
-        percent_of_material: 100,
-        tier: 1,
-        props: [
-            global.INGOT_GEN, 
-            global.DOUBLE_INGOT_GEN, 
-            global.NUGGET_GEN, 
-            global.DUST_GEN, 
-            global.PART_GEN
-        ],
-        isGTDup: true
     },
     
     bismuth_bronze: {
         forging_temp: 591,
         welding_temp: 788,
         melt_temp: 985,
-        fluid: "gtceu:bismuth_bronze",
+        output_fluid: "gtceu:bismuth_bronze",
         percent_of_material: 100,
         tier: 2,
-        canBeUnmolded: true,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
@@ -1015,20 +869,21 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN
-        ],
-        isGTDup: true
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.IS_GT_DUP,
+            global.CAN_BE_UNMOLDED,
+        ]
     },
 
     bronze: {
         forging_temp: 570,
         welding_temp: 760,
         melt_temp: 950,
-        fluid: "gtceu:bronze",
+        output_fluid: "gtceu:bronze",
         percent_of_material: 100,
         tier: 1,
-        canBeUnmolded: true,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
@@ -1036,20 +891,21 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN
-        ],
-        isGTDup: true
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.IS_GT_DUP,
+            global.CAN_BE_UNMOLDED,
+        ]
     },
 
     black_bronze: {
         forging_temp: 642,
         welding_temp: 856,
         melt_temp: 1070,
-        fluid: "gtceu:black_bronze",
+        output_fluid: "gtceu:black_bronze",
         percent_of_material: 100,
         tier: 2,
-        canBeUnmolded: true,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
@@ -1057,68 +913,43 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN
-        ],
-        isGTDup: true
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.IS_GT_DUP,
+            global.CAN_BE_UNMOLDED,
+        ]
     },
 
     wrought_iron: {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        input_fluid: 'gtceu:wrought_iron',
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 100,
         tier: 3,
         props: [
+            global.INGOT_GEN,
+            global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN
-        ],
-        isGTDup: true
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.IS_GT_DUP,
+        ]
     },
 
-    cast_iron: { 
-        forging_temp: 921, 
-        welding_temp: 1228, 
-        melt_temp: 1535, 
-        fluid: "tfc:metal/cast_iron",
-        tier: 1, 
-        props: [] 
-    },
-
-    iron: {
-        forging_temp: 921, 
-        welding_temp: 1228, 
-        melt_temp: 1535, 
-        fluid: "tfc:metal/cast_iron",
-        percent_of_material: 100,
-        tier: 1, 
-        props: [
-            global.INGOT_GEN,
-            global.NUGGET_GEN,
-            global.DUST_GEN,
-            global.ORE_CHUNKS_GEN
-        ] 
-    },
-
-    pig_iron: {
-        forging_temp: 921,
-        welding_temp: 1228,
-        melt_temp: 1535,
-        fluid: "tfc:metal/pig_iron",
-        tier: 3,
-        props: [global.INGOT_GEN],
-    },
+    // Обычное железо исправим руками
 
     steel: {
         forging_temp: 924,
         welding_temp: 1232,
         melt_temp: 1540,
-        fluid: "gtceu:steel",
+        output_fluid: "gtceu:steel",
         percent_of_material: 100,
         tier: 4,
         props: [
@@ -1128,17 +959,86 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.PART_GEN,
             global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN
-        ],
-        isGTDup: true
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.IS_GT_DUP,
+        ]
     },
 
+    black_steel: {
+        forging_temp: 891,
+        welding_temp: 1188,
+        melt_temp: 1485,
+        output_fluid: "gtceu:black_steel",
+        percent_of_material: 100,
+        tier: 5,
+        props: [
+            global.INGOT_GEN,
+            global.DOUBLE_INGOT_GEN,
+            global.NUGGET_GEN,
+            global.DUST_GEN,
+            global.PART_GEN,
+            global.ARMOR_GEN,
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    red_steel: {
+        forging_temp: 924,
+        welding_temp: 1232,
+        melt_temp: 1540,
+        output_fluid: "gtceu:red_steel",
+        percent_of_material: 100,
+        tier: 6,
+        props: [
+            global.INGOT_GEN,
+            global.DOUBLE_INGOT_GEN,
+            global.NUGGET_GEN,
+            global.DUST_GEN,
+            global.PART_GEN,
+            global.ARMOR_GEN,
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.TFC_BUCKET_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    blue_steel: {
+        forging_temp: 924,
+        welding_temp: 1232,
+        melt_temp: 1540,
+        output_fluid: "gtceu:blue_steel",
+        percent_of_material: 100,
+        tier: 6,
+        props: [
+            global.INGOT_GEN,
+            global.DOUBLE_INGOT_GEN,
+            global.NUGGET_GEN,
+            global.DUST_GEN,
+            global.PART_GEN,
+            global.ARMOR_GEN,
+            global.TOOL_GEN,
+            global.UTILITY_GEN,
+
+            global.TFC_BUCKET_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    // Проходные металлы
     high_carbon_black_steel: {
         forging_temp: 924,
         melt_temp: 1540,
         welding_temp: 1232,
-        fluid: "tfc:metal/high_carbon_black_steel",
+        output_fluid: "tfc:metal/high_carbon_black_steel",
         tier: 5,
         props: [global.INGOT_GEN],
     },
@@ -1147,7 +1047,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 924,
         melt_temp: 1540,
         welding_temp: 1232,
-        fluid: "tfc:metal/high_carbon_red_steel",
+        output_fluid: "tfc:metal/high_carbon_red_steel",
         tier: 5,
         props: [global.INGOT_GEN],
     },
@@ -1156,7 +1056,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 924,
         melt_temp: 1540,
         welding_temp: 1232,
-        fluid: "tfc:metal/high_carbon_blue_steel",
+        output_fluid: "tfc:metal/high_carbon_blue_steel",
         tier: 4,
         props: [global.INGOT_GEN],
     },
@@ -1165,7 +1065,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 924,
         melt_temp: 1540,
         welding_temp: 1232,
-        fluid: "tfc:metal/high_carbon_steel",
+        output_fluid: "tfc:metal/high_carbon_steel",
         tier: 3,
         props: [global.INGOT_GEN],
     },
@@ -1174,7 +1074,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 924,
         welding_temp: 1232,
         melt_temp: 1540,
-        fluid: "tfc:metal/weak_steel",
+        output_fluid: "tfc:metal/weak_steel",
         tier: 4,
         props: [global.INGOT_GEN],
     },
@@ -1183,7 +1083,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 924,
         welding_temp: 1232,
         melt_temp: 1540,
-        fluid: "tfc:metal/weak_red_steel",
+        output_fluid: "tfc:metal/weak_red_steel",
         tier: 5,
         props: [global.INGOT_GEN],
     },
@@ -1192,78 +1092,193 @@ global.METAL_TO_SPECS = {
         forging_temp: 924,
         welding_temp: 1232,
         melt_temp: 1540,
-        fluid: "tfc:metal/weak_blue_steel",
+        output_fluid: "tfc:metal/weak_blue_steel",
         tier: 5,
         props: [global.INGOT_GEN],
     },
 
-    black_steel: {
-        forging_temp: 891,
-        welding_temp: 1188,
-        melt_temp: 1485,
-        fluid: "gtceu:black_steel",
+    gold: {
+        forging_temp: 636,
+        welding_temp: 848,
+        melt_temp: 1060,
+        output_fluid: "gtceu:gold",
+        tier: 1,
         percent_of_material: 100,
-        tier: 5,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
-            global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN
-        ],
-        isGTDup: true
+            global.TFC_SMALL_NATIVE_ORE_GEN
+        ]
     },
 
-    red_steel: {
-        forging_temp: 924,
-        welding_temp: 1232,
-        melt_temp: 1540,
-        fluid: "gtceu:red_steel",
+
+    bismuth: {
+        forging_temp: 162,
+        welding_temp: 216,
+        melt_temp: 270,
+        output_fluid: "gtceu:bismuth",
+        tier: 1,
         percent_of_material: 100,
-        tier: 6,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
-            global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN,
-            global.TFC_BUCKET_GEN
-        ],
-        isGTDup: true
+
+            global.IS_GT_DUP,
+        ]
     },
 
-    blue_steel: {
-        forging_temp: 924,
-        welding_temp: 1232,
-        melt_temp: 1540,
-        fluid: "gtceu:blue_steel",
+    brass: {
+        forging_temp: 558,
+        welding_temp: 744,
+        melt_temp: 930,
+        output_fluid: "gtceu:brass",
         percent_of_material: 100,
-        tier: 6,
+        tier: 2,
+        props: [
+            global.INGOT_GEN, 
+            global.DOUBLE_INGOT_GEN, 
+            global.NUGGET_GEN, 
+            global.DUST_GEN, 
+            global.PART_GEN,
+            
+            global.IS_GT_DUP,
+        ]
+    },
+
+    nickel: {
+        forging_temp: 872,
+        welding_temp: 1162,
+        melt_temp: 1453,
+        output_fluid: "gtceu:nickel",
+        percent_of_material: 100,
+        tier: 1,
         props: [
             global.INGOT_GEN,
             global.DOUBLE_INGOT_GEN,
             global.NUGGET_GEN,
             global.DUST_GEN,
+            global.ORE_CHUNKS_GEN,
             global.PART_GEN,
-            global.ARMOR_GEN,
-            global.GT_TOOL_GEN,
-            global.UTILITY_GEN,
-            global.TFC_BUCKET_GEN
-        ],
-        isGTDup: true
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    rose_gold: {
+        forging_temp: 576,
+        welding_temp: 768,
+        melt_temp: 960,
+        output_fluid: "gtceu:rose_gold",
+        percent_of_material: 100,
+        tier: 1,
+        props: [
+            global.INGOT_GEN, 
+            global.DOUBLE_INGOT_GEN, 
+            global.NUGGET_GEN, 
+            global.DUST_GEN, 
+            global.PART_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    silver: {
+        forging_temp: 577,
+        welding_temp: 769,
+        melt_temp: 961,
+        output_fluid: "gtceu:silver",
+        percent_of_material: 100,
+        tier: 1,
+        props: [
+            global.INGOT_GEN,
+            global.DOUBLE_INGOT_GEN,
+            global.NUGGET_GEN,
+            global.DUST_GEN,
+            global.ORE_CHUNKS_GEN,
+            global.PART_GEN,
+            global.TFC_SMALL_NATIVE_ORE_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    tin: {
+        forging_temp: 138,
+        welding_temp: 184,
+        melt_temp: 230,
+        output_fluid: "gtceu:tin",
+        percent_of_material: 100,
+        tier: 1,
+        props: [
+            global.INGOT_GEN,
+            global.DOUBLE_INGOT_GEN,
+            global.NUGGET_GEN,
+            global.DUST_GEN,
+            global.ORE_CHUNKS_GEN,
+            global.PART_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    zinc: {
+        forging_temp: 252,
+        welding_temp: 336,
+        melt_temp: 420,
+        output_fluid: "gtceu:zinc",
+        percent_of_material: 100,
+        tier: 1,
+        props: [
+            global.INGOT_GEN, 
+            global.DOUBLE_INGOT_GEN, 
+            global.NUGGET_GEN, 
+            global.DUST_GEN, 
+            global.PART_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    sterling_silver: {
+        forging_temp: 570,
+        welding_temp: 760,
+        melt_temp: 950,
+        output_fluid: "gtceu:sterling_silver",
+        percent_of_material: 100,
+        tier: 1,
+        props: [
+            global.INGOT_GEN, 
+            global.DOUBLE_INGOT_GEN, 
+            global.NUGGET_GEN, 
+            global.DUST_GEN, 
+            global.PART_GEN,
+
+            global.IS_GT_DUP,
+        ]
+    },
+
+    pig_iron: {
+        forging_temp: 921,
+        welding_temp: 1228,
+        melt_temp: 1535,
+        output_fluid: "tfc:metal/pig_iron",
+        tier: 3,
+        props: [global.INGOT_GEN],
     },
 
     unknown: {
         forging_temp: 240,
         welding_temp: 320,
         melt_temp: 400,
-        fluid: "tfc:metal/unknown",
+        output_fluid: "tfc:metal/unknown",
         tier: 1,
         props: [global.INGOT_GEN],
     },
@@ -1272,7 +1287,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 162,
         welding_temp: 216,
         melt_temp: 270,
-        fluid: "gtceu:bismuth",
+        output_fluid: "gtceu:bismuth",
         percent_of_material: 100,
         tier: 1,
         props: [global.TFC_SMALL_ORE_GEN],
@@ -1282,7 +1297,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 230,
-        fluid: "gtceu:tin",
+        output_fluid: "gtceu:tin",
         percent_of_material: 200,
         tier: 1,
         props: [
@@ -1296,7 +1311,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 1453,
-        fluid: "gtceu:nickel",
+        output_fluid: "gtceu:nickel",
         percent_of_material: 90,
         tier: 1,
         props: [
@@ -1310,7 +1325,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -1324,7 +1339,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -1337,7 +1352,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 85,
         tier: 3,
         props: [global.TFC_SMALL_ORE_GEN],
@@ -1347,7 +1362,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -1361,7 +1376,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 1080,
-        fluid: "gtceu:copper",
+        output_fluid: "gtceu:copper",
         percent_of_material: 90,
         tier: 1,
         props: [
@@ -1375,7 +1390,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 90,
         tier: 3,
         props: [
@@ -1388,7 +1403,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 420,
-        fluid: "gtceu:zinc",
+        output_fluid: "gtceu:zinc",
         percent_of_material: 90,
         tier: 1,
         props: [
@@ -1402,7 +1417,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 1080,
-        fluid: "gtceu:copper",
+        output_fluid: "gtceu:copper",
         percent_of_material: 90,
         tier: 1,
         props: [
@@ -1416,7 +1431,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 648,
         welding_temp: 864,
         melt_temp: 1080,
-        fluid: "gtceu:copper",
+        output_fluid: "gtceu:copper",
         percent_of_material: 90,
         tier: 1,
         props: [
@@ -1429,7 +1444,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 138,
         welding_temp: 184,
         melt_temp: 230,
-        fluid: "gtceu:tin",
+        output_fluid: "gtceu:tin",
         percent_of_material: 150,
         tier: 1,
         props: [
@@ -1442,7 +1457,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        fluid: "tfc:metal/cast_iron",
+        output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 85,
         tier: 3,
         props: [
