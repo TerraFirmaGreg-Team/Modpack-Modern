@@ -1,6 +1,6 @@
 // priority: 0
 
-const hideFirmaLifeStuff = (event) => {
+const hideFirmaCivStuff = (event) => {
     global.FIRMACIV_DISABLED_ITEMS.forEach(item => {
         event.hide(item)
     })

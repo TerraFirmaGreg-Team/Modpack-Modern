@@ -4,6 +4,7 @@ REIEvents.hide('item', event => {
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideFirmaLifeStuff(event)
+    hideFirmaCivStuff(event)
     hideGTCEUStuff(event)
     hideCreateStuff(event)
     hideAE2Stuff(event)

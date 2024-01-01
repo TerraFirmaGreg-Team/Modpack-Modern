@@ -31,5 +31,6 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:capacitor',
     'createaddition:large_connector',
     'createaddition:electrum_spool',
-    'createaddition:gold_spool'
+    'createaddition:gold_spool',
+    'createaddition:biomass_pellet_block'
 ];

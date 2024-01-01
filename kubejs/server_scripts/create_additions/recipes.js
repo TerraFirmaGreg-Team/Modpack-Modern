@@ -16,7 +16,7 @@ const registerCreateAdditionsRecipes = (event) => {
         C: 'createaddition:copper_spool',
         D: 'create:cogwheel',
         E: '#forge:gears/wrought_iron',
-    }).id('tfg:railways/shaped/electric_motor')
+    }).id('tfg:create_additions/shaped/electric_motor')
 
     // Конвертер энергии в механику
     event.shaped('createaddition:alternator', [
@@ -29,7 +29,7 @@ const registerCreateAdditionsRecipes = (event) => {
         C: 'createaddition:copper_spool',
         D: 'create:cogwheel',
         E: '#forge:gears/wrought_iron',
-    }).id('tfg:railways/shaped/alternator')
+    }).id('tfg:create_additions/shaped/alternator')
 
     // Прокатный стан
     event.shaped('createaddition:rolling_mill', [
@@ -42,7 +42,7 @@ const registerCreateAdditionsRecipes = (event) => {
         C: '#forge:gears/wrought_iron',
         D: '#forge:rings/wrought_iron',
         E: 'create:andesite_casing',
-    }).id('tfg:railways/shaped/rolling_mill')
+    }).id('tfg:create_additions/shaped/rolling_mill')
 
     // Цифровой адаптер
     event.shaped('createaddition:digital_adapter', [
@@ -53,7 +53,7 @@ const registerCreateAdditionsRecipes = (event) => {
         A: '#forge:plates/brass',
         B: '#forge:wires/single/red_alloy',
         C: 'computercraft:wired_modem',
-    }).id('tfg:railways/shaped/digital_adapter')
+    }).id('tfg:create_additions/shaped/digital_adapter')
 
     // Портативный энергетический интерфейс
     event.shaped('createaddition:portable_energy_interface', [
@@ -66,7 +66,7 @@ const registerCreateAdditionsRecipes = (event) => {
         C: '#forge:wires/octal/copper',
         D: '#forge:cables/single/copper',
         E: 'create:brass_casing'
-    }).id('tfg:railways/shaped/portable_energy_interface')
+    }).id('tfg:create_additions/shaped/portable_energy_interface')
 
     // Батарейный блок
     event.recipes.gtceu.assembler('create_additions/battery')             
@@ -83,7 +83,7 @@ const registerCreateAdditionsRecipes = (event) => {
         A: 'tfc:glue',
         B: '#forge:cables/double/copper',
         C: '#forge:plates/wrought_iron',
-    }).id('tfg:railways/shaped/connector')
+    }).id('tfg:create_additions/shaped/connector')
 
     // Коннектор большой
     /*
@@ -95,7 +95,7 @@ const registerCreateAdditionsRecipes = (event) => {
         A: 'tfc:glue',
         B: '#forge:cables/double/copper',
         C: '#forge:plates/wrought_iron',
-    }).id('tfg:railways/shaped/large_connector')
+    }).id('tfg:create_additions/shaped/large_connector')
     */
 
     // Редстоун реле
@@ -108,7 +108,7 @@ const registerCreateAdditionsRecipes = (event) => {
         B: 'createaddition:connector',
         C: 'create:electron_tube',
         D: '#forge:dusts/redstone'
-    }).id('tfg:railways/shaped/redstone_relay')
+    }).id('tfg:create_additions/shaped/redstone_relay')
 
     // Катушка
     event.shaped('8x createaddition:spool', [
@@ -118,7 +118,7 @@ const registerCreateAdditionsRecipes = (event) => {
     ], {
         A: '#forge:screws/wood',
         B: '#forge:rods/long/wood'
-    }).id('tfg:railways/shaped/spool')
+    }).id('tfg:create_additions/shaped/spool')
 
     // Катушка с медными проводами
     event.shaped('createaddition:copper_spool', [
@@ -128,7 +128,7 @@ const registerCreateAdditionsRecipes = (event) => {
     ], {
         A: '#forge:fine_wires/copper',
         B: 'createaddition:spool'
-    }).id('tfg:railways/shaped/copper_spool')
+    }).id('tfg:create_additions/shaped/copper_spool')
 
     // Катушка с праздничными проводами
     event.shaped('createaddition:festive_spool', [
@@ -138,7 +138,7 @@ const registerCreateAdditionsRecipes = (event) => {
     ], {
         A: 'gtceu:plant_ball',
         B: 'createaddition:spool'
-    }).id('tfg:railways/shaped/festive_spool')
+    }).id('tfg:create_additions/shaped/festive_spool')
 
     // Колючая проволка
     event.shapeless('4x createaddition:barbed_wire', [
@@ -151,7 +151,7 @@ const registerCreateAdditionsRecipes = (event) => {
         '#forge:rods/wrought_iron',
         '#forge:rods/long/wrought_iron',
         '#forge:tools/hammers'
-    ]).id('tfg:railways/shapeless/barbed_wire')
+    ]).id('tfg:create_additions/shapeless/barbed_wire')
 
     event.recipes.gtceu.assembler('tfg:createaddition/barbed_wire')             
         .itemInputs('4x #forge:rods/wrought_iron', '4x #forge:rods/long/wrought_iron')
@@ -159,4 +159,10 @@ const registerCreateAdditionsRecipes = (event) => {
         .itemOutputs('4x createaddition:barbed_wire')
         .duration(200)
         .EUt(20)
+
+    // Коннектор со светом
+    event.shapeless('createaddition:small_light_connector', [
+        'createaddition:connector',
+        'minecraft:glass_pane'
+    ]).id('tfg:create_additions/shapeless/small_light_connector')
 }
