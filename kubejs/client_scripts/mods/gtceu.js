@@ -193,10 +193,12 @@ const groupGTCEUStuff = (event) => {
 
     event.groupItems("tfg:rei_groups/casting_mold", "Casting Mold", [/gtceu:.*_casting_mold/,]);
     event.groupItems("tfg:rei_groups/head_mold", "Head Mold", [/gtceu:.*_head_mold/,]);
+    event.groupItems("tfg:rei_groups/extruder_mold", "Extruder_mold", [/gtceu:.*_extruder_mold/,]);
     event.groupItems("tfg:rei_groups/electric_motor", "Electric Motor", [/gtceu:.*_electric_motor/,]);
     event.groupItems("tfg:rei_groups/fluid_regulator", "Fluid Regulator", [/gtceu:.*_fluid_regulator/,]);
     event.groupItems("tfg:rei_groups/conveyor_module", "Conveyor Module", [/gtceu:.*_conveyor_module/,]);
     event.groupItems("tfg:rei_groups/electric_piston", "Electric Piston", [/gtceu:.*_electric_piston/,]);
+    event.groupItems("tfg:rei_groups/electric_pump", "Electric Pump", [/gtceu:.*_electric_pump/,]);
     event.groupItems("tfg:rei_groups/robot_arm", "Robot Arm", [/gtceu:.*_robot_arm/,]);
     event.groupItems("tfg:rei_groups/field_generator", "Field Generator", [/gtceu:.*_field_generator/,]);
     event.groupItems("tfg:rei_groups/emitter", "Emitter", [/gtceu:.*_emitter/,]);
