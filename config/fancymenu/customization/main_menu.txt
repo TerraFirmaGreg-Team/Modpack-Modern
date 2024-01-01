@@ -38,8 +38,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/button98x20.png
 }
 
 customization {
@@ -65,7 +65,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/mdr_logo.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/mdr_logo.png
 }
 
 customization {
@@ -81,8 +81,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/button98x20.png
 }
 
 customization {
@@ -98,8 +98,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/button98x20.png
 }
 
 customization {
@@ -128,8 +128,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/button_hovered.png
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/button.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/button_hovered.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/button.png
 }
 
 customization {
@@ -145,8 +145,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/button98x20_hovered.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/button98x20.png
 }
 
 customization {
@@ -234,7 +234,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = joinserver;tfg2.terrafirmagreg.su%btnaction_splitter_fm%
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/button98x20_hovered.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/button98x20_hovered.png
   label = Offical Server
   loopbackgroundanimations = true
   x = 47
@@ -242,12 +242,12 @@ customization {
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
   y = -28
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/button98x20.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/button98x20.png
   height = 20
 }
 
 customization {
-  path = kubejs/assets/kubejs/textures/gui/logo-512x512.png
+  path = kubejs/assets/terrafirmagreg/textures/gui/logo-512x512.png
   orientation = mid-centered
   x = -177
   width = 117
@@ -261,7 +261,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = openlink;https://www.curseforge.com/minecraft/modpacks/terrafirmagreg%btnaction_splitter_fm%
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/curse_logo_hovered.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/curse_logo_hovered.png
   label = 
   loopbackgroundanimations = true
   x = 47
@@ -269,7 +269,7 @@ customization {
   action = addbutton
   actionid = 9f789963-f2dc-46f7-a57b-9c4de545a6ff1699691707372
   y = 18
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/curse_logo.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/curse_logo.png
   height = 20
 }
 
@@ -277,7 +277,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = openlink;https://discord.gg/AEaCzCTUwQ%btnaction_splitter_fm%
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/ds_logo_hovered.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/ds_logo_hovered.png
   label = 
   loopbackgroundanimations = true
   x = 125
@@ -285,7 +285,7 @@ customization {
   action = addbutton
   actionid = 57a283ec-1941-4101-b14b-f2188e8660671699691708296
   y = 18
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/ds_logo.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/ds_logo.png
   height = 20
 }
 
@@ -293,7 +293,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x%btnaction_splitter_fm%
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/git_logo_hovered.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/git_logo_hovered.png
   label = 
   loopbackgroundanimations = true
   x = 100
@@ -301,7 +301,7 @@ customization {
   action = addbutton
   actionid = 91b4ae84-eed0-47a3-8fe9-6957c02d2c621699691709167
   y = 18
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/git_logo.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/git_logo.png
   height = 20
 }
 
@@ -309,7 +309,7 @@ customization {
   orientation = mid-centered
   restartbackgroundanimations = true
   buttonaction = openlink;https://modrinth.com/modpack/terrafirmagreg%btnaction_splitter_fm%
-  backgroundhovered = kubejs/assets/kubejs/textures/gui/mdr_logo_hovered.png
+  backgroundhovered = kubejs/assets/terrafirmagreg/textures/gui/mdr_logo_hovered.png
   label = 
   loopbackgroundanimations = true
   x = 72
@@ -317,7 +317,7 @@ customization {
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
   y = 18
-  backgroundnormal = kubejs/assets/kubejs/textures/gui/mdr_logo.png
+  backgroundnormal = kubejs/assets/terrafirmagreg/textures/gui/mdr_logo.png
   height = 20
 }
 
