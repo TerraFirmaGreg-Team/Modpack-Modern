@@ -1,0 +1,66 @@
+{
+  "banPlayerAfterDeath": false,
+  "bleeding": {
+    "bleedTime": 1200,
+    "triggerForCreative": true,
+    "bleedingMessage": true,
+    "bleedingMessageTrackingOnly": true,
+    "shouldGlow": false,
+    "bleedingEffects": [
+      {
+        "effect": "minecraft:slowness",
+        "amplifier": 2,
+        "duration": 10
+      }
+    ],
+    "affectHunger": true,
+    "remainingHunger": 6,
+    "initialDamageCooldown": 10,
+    "bleedingHealth": 10,
+    "disableMobDamage": true,
+    "disablePlayerDamage": false,
+    "disableOtherDamage": false,
+    "hasShaderEffect": true,
+    "changePermissionLevel": false,
+    "permissionLevel": 0
+  },
+  "revive": {
+    "requiredReviveProgress": 100.0,
+    "progressPerPlayer": 1.0,
+    "exhaustion": 0.5,
+    "haltBleedTime": true,
+    "abortOnDamage": false,
+    "resetProgress": false,
+    "revivedEffects": [
+      {
+        "effect": "minecraft:slowness",
+        "amplifier": 2,
+        "duration": 1
+      }
+    ],
+    "reviveItem": "{id:\"item\",item:\"minecraft:paper\"}",
+    "needReviveItem": false,
+    "consumeReviveItem": false,
+    "maxDistance": 3,
+    "healthAfter": 2
+  },
+  "sounds": {
+    "death": {
+      "sound": "playerrevive:death",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    "revived": {
+      "sound": "playerrevive:revived",
+      "volume": 1.0,
+      "pitch": 1.0
+    }
+  },
+  "bypassDamageSources": [
+    "gorgon",
+    "death.attack.sgcraft:transient",
+    "death.attack.sgcraft:iris",
+    "vampirism_dbno"
+  ],
+  "bleedInSingleplayer": false
+}
