@@ -203,8 +203,6 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/solar_panel", "Solar Panel", [/gtceu:.*_solar_panel/,]);
     event.groupItems("tfg:rei_groups/turbine_rotor", "Turbine Rotor", [/gtceu:turbine_rotor/,]);
 
-    Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"aluminium"}}')
-
     event.groupItems('tfg:rei_groups/buckets', 'Buckets', [/gtceu:.*_bucket/]);
 }
 
