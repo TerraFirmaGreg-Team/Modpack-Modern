@@ -104,6 +104,13 @@ ServerEvents.recipes(event => {
     registerFTBQuestsRecipes(event)
 })
 
+/**
+ * Событие регистрации рудных жил.
+ */
+GTCEuServerEvents.oreVeins(event => {
+    event.removeAll()
+})
+
 //#endregion
 
 /*

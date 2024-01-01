@@ -208,5 +208,4 @@ const groupGTCEUStuff = (event) => {
 
 const registerGTCEUCategories = (event) => {
     event.remove('gtceu:primitive_blast_furnace')
-    event.remove('gtceu:ore_vein_diagram')
 }
