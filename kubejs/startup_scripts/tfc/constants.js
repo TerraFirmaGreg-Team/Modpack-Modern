@@ -925,7 +925,7 @@ global.METAL_TO_SPECS = {
         forging_temp: 921,
         welding_temp: 1228,
         melt_temp: 1535,
-        input_fluid: 'gtceu:wrought_iron',
+        input_fluid: "gtceu:wrought_iron",
         output_fluid: "tfc:metal/cast_iron",
         percent_of_material: 100,
         tier: 3,

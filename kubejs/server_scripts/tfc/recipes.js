@@ -808,7 +808,7 @@ const registerTFCRecipes = (event) => {
 
     })
 
-    //#region Вырезание предметов из CastIron
+    //#region Удаление рецептов предметов из Cast Iron
 
     // Слиток
     event.remove({ id: `tfc:casting/cast_iron_ingot` })
@@ -845,57 +845,40 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-    //#region Фикс расплава слитков кованного железа (не получится сделать в автогене)
-
-    /*
-    // Отливка слитка в обычной форме
-    event.recipes.tfc.casting(`gtceu:wrought_iron_ingot`, 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient('gtceu:wrought_iron', 144), 0.1)
-        .id(`tfc:casting/wrought_iron_ingot`)
-
-    // Отливка слитка в огнеупорной форме
-    event.recipes.tfc.casting(`gtceu:wrought_iron_ingot`, 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient('gtceu:wrought_iron', 144), 0.01)
-        .id(`tfc:casting/wrought_iron_fire_ingot`)
-
-    // Декрафт слитка в жидкость
-    event.recipes.tfc.heating(`gtceu:wrought_iron_ingot`, 1535)
-        .resultFluid(Fluid.of('gtceu:wrought_iron', 144))
-        .id(`tfc:heating/metal/wrought_iron_ingot`)
-
-    // Декрафт слитка в жидкость
-    event.recipes.tfc.heating(`tfc:metal/double_ingot/wrought_iron`, 1535)
-        .resultFluid(Fluid.of('gtceu:wrought_iron', 288))
-        .id(`tfc:heating/wrought_iron_double_ingot`)*/
-
-    //#endregion
-
     //#region Фикс рецептов колоколов
 
-    // Отливка из золота
+    //#region Из золота
+
     event.recipes.tfc.casting(`minecraft:bell`, 'tfc:ceramic/bell_mold', TFC.fluidStackIngredient('gtceu:gold', 144), 1)
         .id(`tfc:casting/gold_bell`)
 
-    // Декрафт в золото
     event.recipes.tfc.heating(`minecraft:bell`, 1060)
         .resultFluid(Fluid.of('gtceu:gold', 144))
         .id(`tfc:heating/gold_bell`)
 
-    // Отливка из латуни
+    //#endregion
+
+    //#region Из латуни
+
     event.recipes.tfc.casting(`tfc:brass_bell`, 'tfc:ceramic/bell_mold', TFC.fluidStackIngredient('gtceu:brass', 144), 1)
         .id(`tfc:casting/brass_bell`)
 
-    // Декрафт в латунь
     event.recipes.tfc.heating(`tfc:brass_bell`, 930)
         .resultFluid(Fluid.of('gtceu:brass', 144))
         .id(`tfc:heating/brass_bell`)
+    
+    //#endregion
 
-    // Отливка из бронзы
+    //#region Из бронзы
+
     event.recipes.tfc.casting(`tfc:bronze_bell`, 'tfc:ceramic/bell_mold', TFC.fluidStackIngredient('gtceu:bronze', 144), 1)
         .id(`tfc:casting/bronze_bell`)
 
-    // Декрафт в бронзу
     event.recipes.tfc.heating(`tfc:bronze_bell`, 930)
         .resultFluid(Fluid.of('gtceu:bronze', 144))
         .id(`tfc:heating/bronze_bell`)
+
+    //#endregion
 
     //#region Рецепты ковки TFC слитков в GT машинах
 
@@ -973,6 +956,8 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Фикс рецептов металлических предметов
+
     // Декрафт Jacks
     event.recipes.tfc.heating('tfc:jacks', 930)
         .resultFluid(Fluid.of('gtceu:brass', 144))
@@ -1031,6 +1016,8 @@ const registerTFCRecipes = (event) => {
     // Cast iron -> Raw Iron Bloom
     event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('tfc:metal/cast_iron', 144), 15000)
         .id('tfc:bloomery/raw_iron_bloom')
+
+    //#endregion
 
     //#endregion
 
