@@ -808,8 +808,10 @@ const registerTFCRecipes = (event) => {
 
     })
 
-    //#region Удаление рецептов предметов из Cast Iron
+    //#region Фиксы рецептов предметов из Cast Iron
 
+    //#region Удаление
+    
     // Слиток
     event.remove({ id: `tfc:casting/cast_iron_ingot` })
     event.remove({ id: `tfc:casting/cast_iron_fire_ingot` })
@@ -842,6 +844,44 @@ const registerTFCRecipes = (event) => {
     // Полублок
     event.remove({ id: `tfc:crafting/metal/block/cast_iron_slab` })
     event.remove({ id: `tfc:heating/metal/cast_iron_block_slab` })
+
+    //#endregion
+
+    //#region Добавление
+
+    event.recipes.tfc.heating('#forge:nuggets/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 16))
+        .id(`tfg:heating/iron_nugget`)
+
+    event.recipes.tfc.heating('#forge:tiny_dusts/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 16))
+        .id(`tfg:heating/iron_tiny_dust`)
+
+    event.recipes.tfc.heating('#forge:small_dusts/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 36))
+        .id(`tfg:heating/iron_small_dust`)
+
+    event.recipes.tfc.heating('#forge:dusts/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
+        .id(`tfg:heating/iron_dust`)
+
+    event.recipes.tfc.heating('#forge:raw_materials/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 36))
+        .id(`tfg:heating/raw_iron`)
+
+    event.recipes.tfc.heating('#forge:ingots/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
+        .id(`tfg:heating/iron_ingot`)
+
+    event.recipes.tfc.heating('#forge:plates/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
+        .id(`tfg:heating/iron_plate`)
+
+    event.recipes.tfc.heating('#forge:storage_blocks/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 1296))
+        .id(`tfg:heating/iron_block`)
+
+    //#endregion
 
     //#endregion
 

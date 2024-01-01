@@ -943,7 +943,7 @@ global.METAL_TO_SPECS = {
         ]
     },
 
-    // Обычное железо исправим руками
+    // Обычное железо исправим руками (Cast и Iron)
 
     steel: {
         forging_temp: 924,
