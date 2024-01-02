@@ -84,13 +84,13 @@
 			bit-storage-content-models = 100
 			#mod.scena.config.performance.caches.sizes.block-models.comment
 			#Range: 3500 ~ 20000
-			block-models = 1000
+			block-models = 3500
 			#mod.scena.config.performance.caches.sizes.block-faces.comment
 			#Range: 350000 ~ 2000000
 			block-faces = 1000000
 			#mod.scena.config.performance.caches.sizes.cull-testing.comment
 			#Range: 3500 ~ 200000
-			cull-testing = 1000
+			cull-testing = 3500
 			#mod.scena.config.performance.caches.sizes.stack-models.comment
 			#Range: 0 ~ 9223372036854775807
 			stack-models = 100

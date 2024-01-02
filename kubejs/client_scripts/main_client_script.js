@@ -13,6 +13,7 @@ REIEvents.hide('item', event => {
     hideMoreRedStuff(event)
     hideRailWaysStuff(event)
     hideCreateAdditionsStuff(event)
+    hideChiselAndBitsStuff(event)
 })
 
 REIEvents.groupEntries(event => {

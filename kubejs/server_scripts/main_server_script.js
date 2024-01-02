@@ -102,6 +102,8 @@ ServerEvents.recipes(event => {
     registerExposureRecipes(event)
     
     registerFTBQuestsRecipes(event)
+
+    registerChiselAndBitsRecipes(event)
 })
 
 /**
