@@ -2429,6 +2429,28 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Рецепты плоского теста
+
+    global.TFC_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.gtceu.mixer(element.name)             
+            .itemInputs(element.input)
+            .inputFluids(Fluid.of('minecraft:water', 100))
+            .itemOutputs(element.output)
+            .duration(300)
+            .EUt(16)
+    })
+
+    //#endregion
+
+    //#region Рецепты хлеба
+
+    global.TFC_FURNACE_BREAD_RECIPE_COMPONENTS.forEach(element => {
+        event.smelting(element.output, element.input)
+            .id(`tfg:smelting/${element.name}`)
+    })
+
+    //#endregion
+
     // Другое
     event.remove({ id: `tfc:crafting/trip_hammer` })
     event.remove({ id: `tfc:anvil/steel_pump` })

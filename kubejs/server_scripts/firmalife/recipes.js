@@ -79,5 +79,26 @@ const registerFirmaLifeRecipes = (event) => {
     })
 
     //#endregion
-        
+    
+    //#region Рецепты теста
+
+    global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS .forEach(element => {
+        event.recipes.gtceu.mixer(element.name)             
+            .itemInputs(element.input, '#tfc:sweetener')
+            .inputFluids(Fluid.of('firmalife:yeast_starter', 100))
+            .itemOutputs(element.output)
+            .duration(300)
+            .EUt(16)
+    })
+
+    //#endregion
+
+    //#region Рецепты плоского хлеба
+
+    global.FIRMALIFE_FURNACE_FLATBREAD_RECIPE_COMPONENTS.forEach(element => {
+        event.smelting(element.output, element.input)
+            .id(`tfg:smelting/${element.name}`)
+    })
+
+    //#endregion
 }

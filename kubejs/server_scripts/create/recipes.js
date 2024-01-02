@@ -425,7 +425,7 @@ const registerCreateRecipes = (event) => {
     }).id('tfg:create/shaped/rope_pulley')
 
     // Шкиф подъемника
-    event.shaped('create:brass_casing', [
+    event.shaped('create:elevator_pulley', [
         'A',
         'B',
         'C' 
@@ -433,7 +433,7 @@ const registerCreateRecipes = (event) => {
         A: 'create:brass_casing',
         B: 'tfc:bellows',
         C: '#forge:plates/wrought_iron'
-    }).id('tfg:create/shaped/brass_casing')
+    }).id('tfg:create/shaped/elevator_pulley')
 
     // Сборщик вагонеток
     event.shaped('create:cart_assembler', [
@@ -587,17 +587,45 @@ const registerCreateRecipes = (event) => {
     event.recipes.createItemApplication(['create:andesite_casing'], ['#minecraft:logs', '#forge:plates/wrought_iron'])
         .id('tfg:create/item_application/andesite_casing')
 
+    event.recipes.gtceu.assembler('tfg:create/andesite_casing')             
+        .itemInputs('#minecraft:logs', '#forge:plates/wrought_iron')
+        .circuit(10)
+        .itemOutputs('create:andesite_casing')
+        .duration(50)
+        .EUt(4)
+
     // Латунный корпус
     event.recipes.createItemApplication(['create:brass_casing'], ['#minecraft:logs', '#forge:plates/brass'])
         .id('tfg:create/item_application/brass_casing')
+
+    event.recipes.gtceu.assembler('tfg:create/brass_casing')             
+        .itemInputs('#minecraft:logs', '#forge:plates/brass')
+        .circuit(10)
+        .itemOutputs('create:brass_casing')
+        .duration(50)
+        .EUt(4)
 
     // Медный корпус
     event.recipes.createItemApplication(['create:copper_casing'], ['#minecraft:logs', '#forge:plates/copper'])
         .id('tfg:create/item_application/copper_casing')
 
+    event.recipes.gtceu.assembler('tfg:create/copper_casing')             
+        .itemInputs('#minecraft:logs', '#forge:plates/copper')
+        .circuit(10)
+        .itemOutputs('create:copper_casing')
+        .duration(50)
+        .EUt(4)
+
     // Корпус поезда
     event.recipes.createItemApplication(['create:railway_casing'], ['create:brass_casing', '#forge:plates/steel'])
         .id('tfg:create/item_application/railway_casing')
+
+    event.recipes.gtceu.assembler('tfg:create/railway_casing')             
+        .itemInputs('create:brass_casing', '#forge:plates/steel')
+        .circuit(10)
+        .itemOutputs('create:railway_casing')
+        .duration(50)
+        .EUt(4)
 
     // Механический крафтер
     event.shaped('create:mechanical_crafter', [

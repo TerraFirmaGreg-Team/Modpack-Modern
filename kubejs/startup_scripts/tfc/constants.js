@@ -1619,6 +1619,24 @@ global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS = [
     { input: 'tfc:food/wheat_grain', output: '2x tfc:food/wheat_flour', name: 'wheat_flour' },
 ];
 
+global.TFC_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS = [
+    { input: 'tfc:food/barley_flour', output: '2x tfc:food/barley_dough', name: 'tfc_barley_dough' },
+    { input: 'tfc:food/maize_flour', output: '2x tfc:food/maize_dough', name: 'tfc_maize_dough' },
+    { input: 'tfc:food/oat_flour', output: '2x tfc:food/oat_dough', name: 'tfc_oat_dough' },
+    { input: 'tfc:food/rye_flour', output: '2x tfc:food/rye_dough', name: 'tfc_rye_dough' },
+    { input: 'tfc:food/rice_flour', output: '2x tfc:food/rice_dough', name: 'tfc_rice_dough' },
+    { input: 'tfc:food/wheat_flour', output: '2x tfc:food/wheat_dough', name: 'tfc_wheat_dough' },
+];
+
+global.TFC_FURNACE_BREAD_RECIPE_COMPONENTS = [
+    { input: 'firmalife:food/barley_dough', output: 'tfc:food/barley_bread', name: 'barley_bread' },
+    { input: 'firmalife:food/maize_dough', output: 'tfc:food/maize_bread', name: 'maize_bread' },
+    { input: 'firmalife:food/oat_dough', output: 'tfc:food/oat_bread', name: 'oat_bread' },
+    { input: 'firmalife:food/rye_dough', output: 'tfc:food/rye_bread', name: 'rye_bread' },
+    { input: 'firmalife:food/rice_dough', output: 'tfc:food/rice_bread', name: 'rice_bread' },
+    { input: 'firmalife:food/wheat_dough', output: 'tfc:food/wheat_bread', name: 'wheat_bread' },
+];
+
 global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/cherry_sapling', fluid_amount: 8000, output: '3x tfc:food/cherry', name: 'cherry' },
     { input: 'tfc:plant/green_apple_sapling', fluid_amount: 8000, output: '3x tfc:food/green_apple', name: 'green_apple' },
