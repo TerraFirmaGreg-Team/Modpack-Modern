@@ -1006,6 +1006,14 @@ const registerGTCEURecipes = (event) => {
         E: '#forge:cables/single/copper'
     }).id('tfg:shaped/alternator')
 
+    // Медная катушка
+    event.recipes.gtceu.assembler('copper_coil')             
+        .itemInputs('8x #forge:wires/double/copper', '8x #forge:foils/bronze')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('terrafirmagreg:copper_coil_block')
+        .duration(200)
+        .EUt(30)
+
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
         'AAA', 
