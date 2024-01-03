@@ -59,12 +59,12 @@ const registerChiselAndBitsRecipes = (event) => {
     // Герметик
     event.shapeless('chiselsandbits:sealant', [
         'minecraft:slimeball',
-        '#forge:honey_jar'
+        'firmalife:raw_honey'
     ]).id('tfg:chiselsandbits/shapeless/sealant_from_slimeballs')
 
     event.shapeless('chiselsandbits:sealant', [
         'tfc:glue',
-        '#forge:honey_jar'
+        'firmalife:raw_honey'
     ]).id('tfg:chiselsandbits/shapeless/sealant_from_glue')
 
     // Резной принтер
