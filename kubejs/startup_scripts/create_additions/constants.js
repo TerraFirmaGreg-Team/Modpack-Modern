@@ -32,5 +32,13 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:large_connector',
     'createaddition:electrum_spool',
     'createaddition:gold_spool',
-    'createaddition:biomass_pellet_block'
+    'createaddition:biomass_pellet_block',
+    'createaddition:electric_motor', 
+    'createaddition:alternator', 
+    'createaddition:connector', 
+    'createaddition:redstone_relay', 
+    'createaddition:spool', 
+    'createaddition:copper_spool', 
+    'createaddition:festive_spool', 
+    'createaddition:small_light_connector',
 ];
