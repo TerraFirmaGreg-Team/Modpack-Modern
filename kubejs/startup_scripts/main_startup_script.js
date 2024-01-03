@@ -10,7 +10,9 @@ StartupEvents.registry('item', (event) => {
 /**
  * Событие регистрации блоков.
  */
-StartupEvents.registry('block', (event) => {})
+StartupEvents.registry('block', (event) => {
+    registerGTCEuBlocks(event)
+})
 
 /**
  * Событие регистрации жидкостей.

@@ -993,6 +993,19 @@ const registerGTCEURecipes = (event) => {
         D: 'gtceu:solid_machine_casing'
     }).id('tfg:shaped/greenhouse')
 
+    // Контроллер электрического генератора
+    event.shaped('gtceu:alternator', [
+        'ABA', 
+        'CDC', 
+        'EBE'
+    ], {
+        A: '#gtceu:resistors',
+        B: '#forge:circuits/lv',
+        C: 'gtceu:lv_voltage_coil',
+        D: 'gtceu:solid_machine_casing',
+        E: '#forge:cables/single/copper'
+    }).id('tfg:shaped/alternator')
+
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
         'AAA', 
@@ -1112,6 +1125,37 @@ const registerGTCEURecipes = (event) => {
         event.recipes.createDeploying('terrafirmagreg:unfinished_basic_electronic_circuit', ['terrafirmagreg:unfinished_basic_electronic_circuit', '#forge:cables/single/red_alloy']),
     ]).transitionalItem('terrafirmagreg:unfinished_basic_electronic_circuit').loops(2).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
 
+    //#region Рецепты электрического генератора
+    
+    event.recipes.gtceu.alternator('32_rpm_to_32_eu')
+        .inputStress(256)
+        .circuit(0)
+        .rpm(32)
+        .duration(2)
+        .EUt(-32)
+
+    event.recipes.gtceu.alternator('64_rpm_to_48_eu')
+        .inputStress(256)
+        .circuit(1)
+        .rpm(64)
+        .duration(2)
+        .EUt(-48)
+
+    event.recipes.gtceu.alternator('128_rpm_to_64_eu')
+        .inputStress(256)
+        .circuit(2)
+        .rpm(128)
+        .duration(2)
+        .EUt(-64)
+
+    event.recipes.gtceu.alternator('256_rpm_to_96_eu')
+        .inputStress(256)
+        .circuit(3)
+        .rpm(256)
+        .duration(2)
+        .EUt(-96)
+    
+    //#endregion
 
     //#region Выход: Фикс выработки пара на ведре лавы
 
