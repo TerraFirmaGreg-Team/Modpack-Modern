@@ -1,9 +1,12 @@
-name: Deploy modpack
+name: Release
+run-name: "Release #${{ github.run_number }}"
 
 on:
   push:
     tags:
       - "*.*.*"
+    branches:
+      - main
 
 jobs:
   Deploy:
@@ -15,6 +18,12 @@ jobs:
       - name: Get the version
         id: get_version
         run: echo ::set-output name=version::${GITHUB_REF#refs/tags/}
+
+      - name: Get tag
+        id: get_tag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1.3.0"
+        with:
+          fallback: tag_not_found
 
       - name: Set the version
         run: |
@@ -34,7 +43,7 @@ jobs:
         run: |
           git submodule init
           cd mods
-          git config --global credential.helper '!f() { echo "username=Xikaro"; echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+          git config --local ${{ secrets.GITHUB_TOKEN }}
           git submodule update --recursive
 
       - name: Archive CF
@@ -61,7 +70,8 @@ jobs:
           zip -r ../TerraFirmaGreg-1.20.x-${{ steps.get_version.outputs.version }}-server.zip ./
 
       - name: Upload Curseforge
-        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
+        id: cf_release
+        uses: SwitchAlpha/upload-curseforge-modpack-action@master
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: "385053"
@@ -92,10 +102,18 @@ jobs:
         with:
           webhook-url: ${{ secrets.RELEASES_1_20 }}
           username: "GitHub"
-          avatar-url: https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_new_year.png
+          avatar-url: https://github.com/TerraFirmaGreg-Team/.github/tree/main/branding/logo_new_year.png?raw=true
+          content: "[CurseForge](<https://legacy.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ steps.cf_release.outputs.id }}>)"
           embed-title: Release ${{ steps.changelog.outputs.version }}
           embed-description: "${{ steps.changelog.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/tree/main/CHANGELOG.md
           embed-color: 5814783
           embed-footer-text: ${{ steps.changelog.outputs.date }}
+
+      - name: Close Fixed in dev
+        uses: juraj-hrivnak/close-issues-based-on-label@master
+        env:
+          LABEL: "2. status: fixed in dev"
+          VERSION: ${{ steps.get_tag.outputs.tag }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
