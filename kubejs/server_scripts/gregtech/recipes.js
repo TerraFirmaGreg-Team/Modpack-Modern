@@ -981,6 +981,18 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:smelting/fireclay_brick'})
     event.remove({id: 'gtceu:macerator/macerate_firebrick'})
 
+    // Контроллер теплицы
+    event.shaped('gtceu:greenhouse', [
+        'ABA', 
+        'CDC', 
+        'BCB'
+    ], {
+        A: '#forge:circuits/mv',
+        B: 'gtceu:copper_single_cable',
+        C: '#forge:circuits/mv',
+        D: 'gtceu:solid_machine_casing'
+    }).id('tfg:shaped/greenhouse')
+
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
         'AAA', 
