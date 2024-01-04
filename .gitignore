@@ -19,6 +19,7 @@ XaeroWorldMap/*
 CustomSkinLoader/*
 screenshots/*
 shaderpacks/*
+chiselsandbits/*
 
 # Extensions
 **/*.log
@@ -63,4 +64,3 @@ knownkeys.txt
 .github/buildtools/serverpack/banned-players.json
 .github/buildtools/serverpack/ops.json
 .github/buildtools/serverpack/whitelist.json
-

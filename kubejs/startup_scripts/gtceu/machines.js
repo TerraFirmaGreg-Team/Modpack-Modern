@@ -32,7 +32,7 @@ const registerGTCEuMachines = (event) => {
             .aisle("CWC", "K#E", "CWC")
             .aisle("CWI", "CWA", "#W#")
             .where('A', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('W', Predicates.blocks('terrafirmagreg:copper_coil_block'))
+            .where('W', Predicates.blocks('gtceu:cupronickel_coil_block'))
             .where("C", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
             .where('#', Predicates.any())
             .where('K', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
