@@ -36,11 +36,6 @@ jobs:
           pattern: ${{ inputs.project_name }}-${{ inputs.project_version }}-*
           merge-multiple: true
 
-      - name: Download changelog
-        uses: actions/download-artifact@v4.1.0
-        with:
-          name: changelog
-
       # - name: Create release
       #   uses: softprops/action-gh-release@v1
       #   with:
@@ -70,12 +65,12 @@ jobs:
       - name: Download modpack
         uses: actions/download-artifact@v4.1.0
         with:
-          name: modpack_cf
+          name: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf
 
       - name: Download serverpack
         uses: actions/download-artifact@v4.1.0
         with:
-          name: server_pack
+          name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
 
       # - name: Upload Curseforge
       #   id: cf_release

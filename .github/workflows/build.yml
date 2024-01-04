@@ -256,7 +256,7 @@ jobs:
       - name: Upload zip cf
         uses: actions/upload-artifact@v4.0.0
         with:
-          name: modpack_cf
+          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
           path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
           retention-days: 5
 
@@ -296,7 +296,7 @@ jobs:
       - name: Upload zip mmc
         uses: actions/upload-artifact@v4.0.0
         with:
-          name: modpack_mmc
+          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc
           path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
           retention-days: 5
 
@@ -333,14 +333,14 @@ jobs:
       - name: Upload zip
         uses: actions/upload-artifact@v4.0.0
         with:
-          name: server_pack
+          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
           path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
           retention-days: 5
 
   release:
     name: Release
     needs: [modpack-info, build-cf-modpack, build-mmc-modpack, build-serverpack]
-    if: startsWith(github.ref, 'refs/tags/')
+    #if: startsWith(github.ref, 'refs/tags/')
     uses: ./.github/workflows/release.yml
     with:
       project_name: ${{ needs.modpack-info.outputs.project_name }}
