@@ -221,6 +221,7 @@ jobs:
         with:
           name: changelog
           path: CHANGELOG-${{ steps.info.outputs.projectsuffix }}.md
+          retention-days: 5
 
       # - name: Changelog Parser
       #   id: changelog_full
@@ -257,6 +258,7 @@ jobs:
         with:
           name: modpack_cf
           path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
+          retention-days: 5
 
   build-mmc-modpack:
     name: Build MMC Modpack
@@ -278,7 +280,7 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config --local ${{ secrets.GITHUB_TOKEN }}
+            git config --global credential.helper '!f() { echo "password=${{ secrets.GITHUB_TOKEN }}"; }; f'
             git submodule update --recursive
 
       - name: Export MMC
@@ -294,6 +296,7 @@ jobs:
         with:
           name: modpack_mmc
           path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
+          retention-days: 5
 
   build-serverpack:
     name: Build Serverpack
@@ -313,7 +316,7 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config --local
+            git config --global 
               echo "username=Xikaro"; 
               echo "password=${{ secrets.USER_TOKEN_XIKARO }}";
             git submodule update --recursive
@@ -330,6 +333,7 @@ jobs:
         with:
           name: server_pack
           path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+          retention-days: 5
 
   release:
     name: Release
