@@ -33,8 +33,10 @@ jobs:
       - name: Download modpack
         uses: actions/download-artifact@v4.1.0
         with:
-          pattern: ${{ inputs.project_name }}-${{ inputs.project_version }}-*
           merge-multiple: true
+
+      - name: Display structure of downloaded files
+        run: ls -R ./
 
       # - name: Create release
       #   uses: softprops/action-gh-release@v1
@@ -91,10 +93,10 @@ jobs:
         id: message
         shell: bash
         run: |
-          message="## **${{ inputs.project_name }}** has been updated to ${{ inputs.project_version }}! :tada:\n"
-          message+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1>) • "
+          message="## **${{ inputs.project_name }}** has been updated to ${{ inputs.project_version }}! :tada: "
+          message+="\n[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1>) • "
           message+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases>) • "
-          message+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)\n"
+          message+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
           echo "markdown=$message" >> $GITHUB_OUTPUT
 
       - name: Send Discord message
@@ -102,8 +104,14 @@ jobs:
         with:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
-          avatar_url: "https://github.com/TerraFirmaGreg-Team/.github/tree/main/branding/logo_new_year.png?raw=true"
+          avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
           content: "${{ steps.message.outputs.markdown }}\n${{ inputs.changelog }}"
+          embeds: |
+            [
+              {
+                 "description": "${{ inputs.changelog }}",
+              }
+            ]
 
   # release-modrinth:
   #   name: Deploy to Modrinth
