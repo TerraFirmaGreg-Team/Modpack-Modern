@@ -222,11 +222,11 @@ jobs:
           name: changelog
           path: CHANGELOG-${{ steps.info.outputs.projectsuffix }}.md
 
-      - name: Changelog Parser
-        id: changelog_full
-        uses: coditory/changelog-parser@v1.0.2
-        with:
-          path: CHANGELOG.md
+      # - name: Changelog Parser
+      #   id: changelog_full
+      #   uses: coditory/changelog-parser@v1.0.2
+      #   with:
+      #     path: CHANGELOG.md
 
   build-modpack:
     name: Build Modpack
