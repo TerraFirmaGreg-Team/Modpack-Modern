@@ -2522,7 +2522,7 @@ const registerTFCRecipes = (event) => {
             }
         })
 
-        event.recipes.tfc.collapse(`tfc:rock/cobble/${stoneType}`, TFC.blockIngredient(dead))
+        event.recipes.tfc.collapse(`tfc:rock/cobble/${stoneType}`, TFC.blockIngredient(oresToCollapse))
             .id(`tfg:collapse/${stoneType}_gt_ores`)
     })
     
