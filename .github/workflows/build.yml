@@ -280,7 +280,7 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config --global credential.helper '!f() { echo "password=${{ secrets.GITHUB_TOKEN }}"; }; f'
+            git config --global credential.helper '!f() { echo "username=${{ github.triggering_actor }}";  echo "password=${{ secrets.GITHUB_TOKEN }}"; }; f'
             git submodule update --recursive
 
       - name: Export MMC
@@ -316,9 +316,9 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config --global 
+            git config --global credential.helper '!f() { 
               echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}";
+              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
 
       - name: Export serverpack
