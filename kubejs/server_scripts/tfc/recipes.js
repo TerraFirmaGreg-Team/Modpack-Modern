@@ -2506,4 +2506,26 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('16x tfc:mortar')
         .duration(800)
         .EUt(8)
+
+    //#region Обрушения
+
+    event.recipes.tfc.collapse(null, TFC.blockIngredient(['#tfg:rock_slabs'])).id('tfg:collapse/rock_slabs')
+    event.recipes.tfc.collapse(null, TFC.blockIngredient(['#tfg:rock_stairs'])).id('tfg:collapse/rock_stairs')
+    event.recipes.tfc.collapse(null, TFC.blockIngredient(['#tfg:rock_walls'])).id('tfg:collapse/rock_walls')
+
+    global.TFC_STONE_TYPES.forEach(stoneType => {
+        let oresToCollapse = []
+        
+        GTRegistries.MATERIALS.forEach(material => {
+            if (material.hasProperty(PropertyKey.ORE)) {
+                oresToCollapse.push(`gtceu:${stoneType}_${material}_ore`)
+            }
+        })
+
+        event.recipes.tfc.collapse(`tfc:rock/cobble/${stoneType}`, TFC.blockIngredient(dead))
+            .id(`tfg:collapse/${stoneType}_gt_ores`)
+    })
+    
+    //#endregion
+    
 }

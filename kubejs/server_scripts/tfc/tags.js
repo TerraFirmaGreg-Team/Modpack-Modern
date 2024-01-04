@@ -164,15 +164,42 @@ const registerTFCItemTags = (event) => {
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
 }
 
 const registerTFCBlockTags = (event) => {
+    // Теги для каменных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
+
+    // Возможность обрушения полу-блоков
+    event.add('tfc:can_collapse', '#tfg:rock_slabs')
+    event.add('tfc:can_start_collapse', '#tfg:rock_slabs')
+    event.add('tfc:can_trigger_collapse', '#tfg:rock_slabs')
+
+    // Возможность обрушения ступеней
+    event.add('tfc:can_collapse', '#tfg:rock_stairs')
+    event.add('tfc:can_start_collapse', '#tfg:rock_stairs')
+    event.add('tfc:can_trigger_collapse', '#tfg:rock_stairs')
+
+    // Возможность обрушения стен
+    event.add('tfc:can_collapse', '#tfg:rock_walls')
+    event.add('tfc:can_start_collapse', '#tfg:rock_walls')
+    event.add('tfc:can_trigger_collapse', '#tfg:rock_walls')
+
+    // Возможность обрушения руды
     event.add('tfc:can_collapse', '#forge:ores')
     event.add('tfc:can_start_collapse', '#forge:ores')
     event.add('tfc:can_trigger_collapse', '#forge:ores')
+    
     event.add('tfc:monster_spawns_on', '#forge:ores')
     event.add('tfc:prospectable', '#forge:ores')
 
