@@ -8,6 +8,9 @@
     "block.gtceu.alternator": "Генератор переменного тока",
     "gtceu.alternator": "Генератор переменного тока",
 
+    "material.treated_wood": "Обработанное креозотом дерево",
+    "block.gtceu.treated_wood_planks": "Доски из обработанного креозотом дерева",
+
     "behavior.item_magnet.disabled": "§cМагнитное поле выключено",
     "behavior.item_magnet.enabled": "§aМагнитное поле включено",
     "behavior.prospector.not_enough_energy": "Не достаточно энергии!",
@@ -837,7 +840,6 @@
     "block.gtceu.titanium_large_boiler": "Большой титановый бойлер",
     "block.gtceu.titanium_pipe_casing": "Корпус титановой трубы",
     "block.gtceu.titanium_turbine_casing": "Каркас титановой турбины",
-    "block.gtceu.treated_wood_planks": "Обработанные доски",
     "block.gtceu.trinium_coil_block": "Блок триниевых катушек",
     "block.gtceu.tritanium_coil_block": "Блок титановых катушек",
     "block.gtceu.tungsten_steel_crate": "Ящик из вольфрамовой стали",
@@ -4715,7 +4717,6 @@
     "material.titanium_tungsten_carbide": "Карбид титан-вольфрама",
     "material.toluene": "Толуол",
     "material.topaz": "Топаз",
-    "material.treated_wood": "Обработанная древесина",
     "material.tricalcium_phosphate": "Трикальцийфосфат",
     "material.trinium": "Триний",
     "material.trinium_sulfide": "Сульфид триния",
