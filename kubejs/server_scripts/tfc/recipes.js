@@ -800,10 +800,20 @@ const registerTFCRecipes = (event) => {
         }
 
         if (metalSpecs.props.includes(global.ORE_CHUNKS_GEN)) {
-            // Декрафт куска руды
+            // Декрафт нормального куска руды
             event.recipes.tfc.heating(`#forge:raw_materials/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, global.calcAmountOfMetal(36, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/raw/${metal}`)
+
+            // Декрафт богатого куска руды
+            event.recipes.tfc.heating(`#forge:rich_raw_materials/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, global.calcAmountOfMetal(48, metalSpecs.percent_of_material)))
+                .id(`tfg:heating/rich_raw/${metal}`)
+
+            // Декрафт бедного куска руды
+            event.recipes.tfc.heating(`#forge:poor_raw_materials/${metal}`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, global.calcAmountOfMetal(24, metalSpecs.percent_of_material)))
+                .id(`tfg:heating/poor_raw/${metal}`)
         }
 
     })

@@ -1171,10 +1171,20 @@ const registerGTCEURecipes = (event) => {
     GTRegistries.MATERIALS.forEach(material => {
         if (material.hasProperty(PropertyKey.ORE)) 
         {
-            // Сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([`gtceu:${material}_crushed_ore`, Item.of(`gtceu:${material}_crushed_ore`).withChance(0.3)], `#forge:raw_materials/${material}`)
+            // Бедная сырая руда -> Дробленная руда + Дробленная руда (30%)
+            event.recipes.createCrushing(Item.of(`gtceu:${material}_crushed_ore`).withChance(0.75), `#forge:poor_raw_materials/${material}`)
                 .processingTime(200)
-                .id(`tfg:crushing/${material}_crushed_ore`)
+                .id(`tfg:crushing/${material}_crushed_ore_from_poor_raw_ore`)
+
+            // Нормальная сырая руда -> Дробленная руда + Дробленная руда (30%)
+            event.recipes.createCrushing([`gtceu:${material}_crushed_ore`, Item.of(`gtceu:${material}_crushed_ore`).withChance(0.2)], `#forge:raw_materials/${material}`)
+                .processingTime(200)
+                .id(`tfg:crushing/${material}_crushed_ore_from_normal_raw_ore`)
+
+            // Богатая сырая руда -> Дробленная руда + Дробленная руда (30%)
+            event.recipes.createCrushing([`gtceu:${material}_crushed_ore`, `gtceu:${material}_crushed_ore`, Item.of(`gtceu:${material}_crushed_ore`).withChance(0.2)], `#forge:rich_raw_materials/${material}`)
+                .processingTime(200)
+                .id(`tfg:crushing/${material}_crushed_ore_from_rich_raw_ore`)
 
             // Грязная пыль -> Пыль (90%)
             event.recipes.createSplashing(Item.of(`gtceu:${material}_dust`).withChance(0.9), `gtceu:${material}_impure_dust`)
