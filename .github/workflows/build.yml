@@ -248,9 +248,9 @@ jobs:
       - name: Export CF
         run: |
           mkdir -p overrides
-          cp -r {config,defaultconfigs,kubejs}  overrides/
-          mv -vf .github/buildtools/modpack/manifest.json ./
-          mv -vf .github/buildtools/modpack/modlist.html ./
+          mv -vf {config,defaultconfigs,kubejs}  overrides/
+          mv -vf ./.github/buildtools/modpack/manifest.json ./
+          mv -vf ./.github/buildtools/modpack/modlist.html ./
           zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
 
       - name: Upload zip cf
@@ -286,9 +286,9 @@ jobs:
       - name: Export MMC
         run: |
           mkdir -p .minecraft
-          mv -r {config,defaultconfigs,kubejs,mods} .minecraft/
-          mv -vf .github/buildtools/modpack/mmc-pack.json ./
-          mv -vf .github/buildtools/modpack/instance.cfg ./ 
+          mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
+          mv -vf ./.github/buildtools/modpack/mmc-pack.json ./
+          mv -vf ./.github/buildtools/modpack/instance.cfg ./ 
           zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
       
       - name: Upload zip mmc
@@ -324,8 +324,8 @@ jobs:
       - name: Export serverpack
         run: |
           mkdir -p .minecraft
-          mv -r {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
-          cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
+          mv -r {config,defaultconfigs,kubejs,mods,./.github/buildtools/serverpack/*} .minecraft
+          cat ./.github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
           cd .minecraft/
           zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip ./
 
