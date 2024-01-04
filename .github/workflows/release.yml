@@ -41,20 +41,20 @@ jobs:
         with:
           name: changelog
 
-      - name: Create release
-        uses: softprops/action-gh-release@v1
-        with:
-          prerelease: false
-          generate_release_notes: true
-          name: ${{ inputs.project_version }}
-          body: ${{ inputs.changelog }}
-          files: |
-            ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
-            ${{ inputs.project_name }}-${{ inputs.project_version }}-mmc.zip
-            ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-          tag_name: ${{ inputs.tag }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Create release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     prerelease: false
+      #     generate_release_notes: true
+      #     name: ${{ inputs.project_version }}
+      #     body: ${{ inputs.changelog }}
+      #     files: |
+      #       ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+      #       ${{ inputs.project_name }}-${{ inputs.project_version }}-mmc.zip
+      #       ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+      #     tag_name: ${{ inputs.tag }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release-curseforge:
     name: Deploy to CurseForge
@@ -77,28 +77,28 @@ jobs:
         with:
           name: server_pack
 
-      - name: Upload Curseforge
-        id: cf_release
-        uses: SwitchAlpha/upload-curseforge-modpack-action@master
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ env.CF_PROJECT_ID }}
-          modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
-          modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-          changelog: "${{ inputs.changelog }}"
-          changelog-format: markdown
-          game-version: ${{ inputs.mcversion }}
-          display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
-          server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
-          release-type: ${{ env.RELEASE_TYPE }}
+      # - name: Upload Curseforge
+      #   id: cf_release
+      #   uses: SwitchAlpha/upload-curseforge-modpack-action@master
+      #   with:
+      #     api-token: ${{ secrets.CF_API_TOKEN }}
+      #     project-id: ${{ env.CF_PROJECT_ID }}
+      #     modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+      #     modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+      #     changelog: "${{ inputs.changelog }}"
+      #     changelog-format: markdown
+      #     game-version: ${{ inputs.mcversion }}
+      #     display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+      #     server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
+      #     release-type: ${{ env.RELEASE_TYPE }}
 
       - name: Create Discord message
         id: message
         shell: bash
         run: |
           message="## **${{ inputs.project_name }}** has been updated to ${{ inputs.project_version }}! :tada:\n"
-          message+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ steps.cf_release.outputs.id }}>) • "
-          message+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ inputs.tag }}>) • "
+          message+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1>) • "
+          message+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases>) • "
           message+="[Issues](<${{ github.repository.svn_url }}/issues>)\n"
           message+="${{ inputs.changelog }}"
           echo "markdown=$message" >> $GITHUB_OUTPUT

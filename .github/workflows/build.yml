@@ -21,7 +21,7 @@ jobs:
       project_version: ${{ steps.info.outputs.project_version }}
       mcversion: ${{ steps.info.outputs.mcversion }}
       tag: ${{ steps.version.outputs.tag }}
-      changelog: ${{ steps.mod_changes.outputs.news }}
+      changelog: ${{ steps.changelog.outputs.description }}
     steps:
       - name: Checkout with fetch depth 2
         uses: actions/checkout@v4.1.1
@@ -60,174 +60,174 @@ jobs:
         uses: actions/checkout@v4.1.1
         with:
           fetch-depth: 0
-      - name: Process changelog
-        id: mod_changes
-        shell: bash
-        run: |
-          set +e
+      # - name: Process changelog
+      #   id: mod_changes
+      #   shell: bash
+      #   run: |
+      #     set +e
 
-          curl https://github.com/josephburnett/jd/releases/download/v1.7.1/jd-amd64-linux -o ./pax/jd -L -J
-          sudo chmod +x ./pax/jd
+      #     curl https://github.com/josephburnett/jd/releases/download/v1.7.1/jd-amd64-linux -o ./pax/jd -L -J
+      #     sudo chmod +x ./pax/jd
 
-          manifest="./.github/buildtools/modpackmanifest.json"
-          changelog="./CHANGELOG.md"
+      #     manifest="./.github/buildtools/modpackmanifest.json"
+      #     changelog="./CHANGELOG.md"
 
-          branch=$(git rev-parse --abbrev-ref HEAD)
-          current_commit=$(git rev-parse --short ${{ github.sha }})
-          previous_commit=$(git log -n 1 --skip 1 --pretty=format:"%h" -- $manifest)
-          latest_commit=$(git log -n 1 --pretty=format:"%h" $branch -- $manifest)
-          latest_tag=$(git describe --tags --abbrev=0)
-          latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag | sed -n 2p)
+      #     branch=$(git rev-parse --abbrev-ref HEAD)
+      #     current_commit=$(git rev-parse --short ${{ github.sha }})
+      #     previous_commit=$(git log -n 1 --skip 1 --pretty=format:"%h" -- $manifest)
+      #     latest_commit=$(git log -n 1 --pretty=format:"%h" $branch -- $manifest)
+      #     latest_tag=$(git describe --tags --abbrev=0)
+      #     latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag | sed -n 2p)
 
-          if [ "$latest_tag" = ${{ steps.version.outputs.tag }} ]; then
-            latest_tag=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
-            latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag | sed -n 2p)
-          fi
+      #     if [ "$latest_tag" = ${{ steps.version.outputs.tag }} ]; then
+      #       latest_tag=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
+      #       latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag | sed -n 2p)
+      #     fi
 
-          if [ "$latest_commit" = "$current_commit" ]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
+      #     if [ "$latest_commit" = "$current_commit" ]; then
+      #       echo "changed=true" >> $GITHUB_OUTPUT
+      #     else
+      #       echo "changed=false" >> $GITHUB_OUTPUT
+      #     fi
 
-          echo "branch: $branch"
-          echo "current commit: $current_commit"
-          echo "previous commit: $previous_commit"
-          echo "latest commit: $latest_commit"
-          echo "latest tagged commit: $latest_tagged_commit"
-          echo "latest tag: $latest_tag"
+      #     echo "branch: $branch"
+      #     echo "current commit: $current_commit"
+      #     echo "previous commit: $previous_commit"
+      #     echo "latest commit: $latest_commit"
+      #     echo "latest tagged commit: $latest_tagged_commit"
+      #     echo "latest tag: $latest_tag"
 
-          RED='\033[0;31m'
-          GREEN='\033[0;32m'
-          BLUE='\033[0;36m'
-          NC='\033[0m'
+      #     RED='\033[0;31m'
+      #     GREEN='\033[0;32m'
+      #     BLUE='\033[0;36m'
+      #     NC='\033[0m'
 
-          git show $latest_tagged_commit:$manifest > ./.github/buildtools/modpackmanifest_prev.json
-          mods_removed_raw=$(./pax/jd -set ./.github/buildtools/modpackmanifest_prev.json $manifest | grep '^-' | grep -P -o '"name":[\s]*"\K[^"]*' | tr -d '\[\]')
-          mods_added_raw=$(./pax/jd -set ./.github/buildtools/modpackmanifest_prev.json $manifest | grep '^+' | grep -P -o '"name":[\s]*"\K[^"]*' | tr -d '\[\]')
+      #     git show $latest_tagged_commit:$manifest > ./.github/buildtools/modpackmanifest_prev.json
+      #     mods_removed_raw=$(./pax/jd -set ./.github/buildtools/modpackmanifest_prev.json $manifest | grep '^-' | grep -P -o '"name":[\s]*"\K[^"]*' | tr -d '\[\]')
+      #     mods_added_raw=$(./pax/jd -set ./.github/buildtools/modpackmanifest_prev.json $manifest | grep '^+' | grep -P -o '"name":[\s]*"\K[^"]*' | tr -d '\[\]')
 
-          mods_added=""
-          mods_removed=""
-          mods_updated=""
+      #     mods_added=""
+      #     mods_removed=""
+      #     mods_updated=""
 
-          mod_changes=""
+      #     mod_changes=""
 
-          if [[ ! -z ""$mods_added_raw"" ]]; then
-            while IFS= read -r line1; do
-              foo=""
-              while IFS= read -r line2; do
-                foo="${line1//$line2}"
-                if [[ -z ""$foo"" ]]; then
-                  if [[ ! -z ""$mods_updated"" ]]; then
-                    mods_updated+="\n"
-                  fi
-                  mods_updated+="- $line1"
-                  break
-                fi
-              done <<< "$mods_removed_raw"
-              if [[ ! -z ""$foo"" ]]; then
-                if [[ ! -z ""$mods_added"" ]]; then
-                  mods_added+="\n"
-                fi
-                mods_added+="- $foo"
-              fi
-            done <<< "$mods_added_raw"
-          fi
+      #     if [[ ! -z ""$mods_added_raw"" ]]; then
+      #       while IFS= read -r line1; do
+      #         foo=""
+      #         while IFS= read -r line2; do
+      #           foo="${line1//$line2}"
+      #           if [[ -z ""$foo"" ]]; then
+      #             if [[ ! -z ""$mods_updated"" ]]; then
+      #               mods_updated+="\n"
+      #             fi
+      #             mods_updated+="- $line1"
+      #             break
+      #           fi
+      #         done <<< "$mods_removed_raw"
+      #         if [[ ! -z ""$foo"" ]]; then
+      #           if [[ ! -z ""$mods_added"" ]]; then
+      #             mods_added+="\n"
+      #           fi
+      #           mods_added+="- $foo"
+      #         fi
+      #       done <<< "$mods_added_raw"
+      #     fi
 
-          if [[ ! -z ""$mods_removed_raw"" ]]; then
-            while IFS= read -r line1; do
-              bar=""
-              while IFS= read -r line2; do
-                bar="${line1//$line2}"
-                if [[ -z ""$bar"" ]]; then
-                  break
-                fi
-              done <<< "$mods_added_raw"
-              if [[ ! -z ""$bar"" ]]; then
-                if [[ ! -z ""$mods_removed"" ]]; then
-                  mods_removed+="\n"
-                fi
-                mods_removed+="- $bar"
-              fi
-            done <<< "$mods_removed_raw"
-          fi
+      #     if [[ ! -z ""$mods_removed_raw"" ]]; then
+      #       while IFS= read -r line1; do
+      #         bar=""
+      #         while IFS= read -r line2; do
+      #           bar="${line1//$line2}"
+      #           if [[ -z ""$bar"" ]]; then
+      #             break
+      #           fi
+      #         done <<< "$mods_added_raw"
+      #         if [[ ! -z ""$bar"" ]]; then
+      #           if [[ ! -z ""$mods_removed"" ]]; then
+      #             mods_removed+="\n"
+      #           fi
+      #           mods_removed+="- $bar"
+      #         fi
+      #       done <<< "$mods_removed_raw"
+      #     fi
 
-          if [[ ! -z ""$mods_added"" ]] || [[ ! -z ""$mods_removed"" ]] || [[ ! -z ""$mods_updated"" ]]; then
-            echo -e "x---------------x"
-            echo -e "|  Mod Changes  |"
+      #     if [[ ! -z ""$mods_added"" ]] || [[ ! -z ""$mods_removed"" ]] || [[ ! -z ""$mods_updated"" ]]; then
+      #       echo -e "x---------------x"
+      #       echo -e "|  Mod Changes  |"
 
-            mod_changes+="## Mod Changes\n\n"
-            mod_changes+="Since: [\`$latest_tag\`](<https://github.com/${{ github.repository }}/releases/tag/$latest_tag>)\n\n"
-            mod_changes+="\`\`\`markdown\n"
-          fi
+      #       mod_changes+="## Mod Changes\n\n"
+      #       mod_changes+="Since: [\`$latest_tag\`](<https://github.com/${{ github.repository }}/releases/tag/$latest_tag>)\n\n"
+      #       mod_changes+="\`\`\`markdown\n"
+      #     fi
 
-          if [[ ! -z ""$mods_added"" ]]; then
-            echo -e "${GREEN}Added:"
-            echo -e "$mods_added"
+      #     if [[ ! -z ""$mods_added"" ]]; then
+      #       echo -e "${GREEN}Added:"
+      #       echo -e "$mods_added"
 
-            mod_changes+="Added:\n"
-            mod_changes+="$mods_added\n"
+      #       mod_changes+="Added:\n"
+      #       mod_changes+="$mods_added\n"
 
-            if [[ ! -z ""$mods_removed"" ]] || [[ ! -z ""$mods_updated"" ]]; then
-              mod_changes+="\n"
-            fi
-          fi
-          if [[ ! -z ""$mods_removed"" ]]; then
-            echo -e "${RED}Removed:"
-            echo -e "$mods_removed"
+      #       if [[ ! -z ""$mods_removed"" ]] || [[ ! -z ""$mods_updated"" ]]; then
+      #         mod_changes+="\n"
+      #       fi
+      #     fi
+      #     if [[ ! -z ""$mods_removed"" ]]; then
+      #       echo -e "${RED}Removed:"
+      #       echo -e "$mods_removed"
 
-            mod_changes+="Removed:\n"
-            mod_changes+="$mods_removed\n"
+      #       mod_changes+="Removed:\n"
+      #       mod_changes+="$mods_removed\n"
 
-            if [[ ! -z ""$mods_updated"" ]]; then
-              mod_changes+="\n"
-            fi
-          fi
-          if [[ ! -z ""$mods_updated"" ]]; then
-            echo -e "${BLUE}Updated:"
-            echo -e "$mods_updated"
+      #       if [[ ! -z ""$mods_updated"" ]]; then
+      #         mod_changes+="\n"
+      #       fi
+      #     fi
+      #     if [[ ! -z ""$mods_updated"" ]]; then
+      #       echo -e "${BLUE}Updated:"
+      #       echo -e "$mods_updated"
 
-            mod_changes+="Updated:\n"
-            mod_changes+="$mods_updated\n"
-          fi
+      #       mod_changes+="Updated:\n"
+      #       mod_changes+="$mods_updated\n"
+      #     fi
 
-          if [[ ! -z ""$mods_added"" ]] || [[ ! -z ""$mods_removed"" ]] || [[ ! -z ""$mods_updated"" ]]; then
-            echo -e "${NC}x---------------x"
+      #     if [[ ! -z ""$mods_added"" ]] || [[ ! -z ""$mods_removed"" ]] || [[ ! -z ""$mods_updated"" ]]; then
+      #       echo -e "${NC}x---------------x"
 
-            mod_changes+="\`\`\`"
-          fi
+      #       mod_changes+="\`\`\`"
+      #     fi
 
-          if [[ ! -z ""$mod_changes"" ]]; then
-            echo -e "$mod_changes" >> $GITHUB_STEP_SUMMARY
-          fi
+      #     if [[ ! -z ""$mod_changes"" ]]; then
+      #       echo -e "$mod_changes" >> $GITHUB_STEP_SUMMARY
+      #     fi
 
-          # Upload @mod_changes@
-          mod_changes=$(echo $mod_changes | sed -r 's/[/]/\\\//g')
-          perl -i -pe "s/\@mod_changes\@/$mod_changes/g" $changelog
+      #     # Upload @mod_changes@
+      #     mod_changes=$(echo $mod_changes | sed -r 's/[/]/\\\//g')
+      #     perl -i -pe "s/\@mod_changes\@/$mod_changes/g" $changelog
 
-          # Replace @mod_changes@
-          mod_changes=$(echo $mod_changes | sed -r 's/\\\\n/\\n/g')
-          echo "markdown=$mod_changes" >> $GITHUB_OUTPUT
+      #     # Replace @mod_changes@
+      #     mod_changes=$(echo $mod_changes | sed -r 's/\\\\n/\\n/g')
+      #     echo "markdown=$mod_changes" >> $GITHUB_OUTPUT
 
-          rm ./.github/buildtools/modpack/manifest_prev.json
+      #     rm ./.github/buildtools/modpack/manifest_prev.json
 
-          # Replace @version@
-          perl -i -pe "s/\@version\@/${{ steps.info.outputs.projectsuffix }}/g" $changelog
+      #     # Replace @version@
+      #     perl -i -pe "s/\@version\@/${{ steps.info.outputs.projectsuffix }}/g" $changelog
 
-          # Finally, Rename changelog
-          mv $changelog CHANGELOG-${{ steps.info.outputs.projectsuffix }}.md
-      - name: Upload changelog
-        uses: actions/upload-artifact@v4.0.0
-        with:
-          name: changelog
-          path: CHANGELOG-${{ steps.info.outputs.projectsuffix }}.md
-          retention-days: 5
-
-      # - name: Changelog Parser
-      #   id: changelog_full
-      #   uses: coditory/changelog-parser@v1.0.2
+      #     # Finally, Rename changelog
+      #     mv $changelog CHANGELOG-${{ steps.info.outputs.projectsuffix }}.md
+      # - name: Upload changelog
+      #   uses: actions/upload-artifact@v4.0.0
       #   with:
-      #     path: CHANGELOG.md
+      #     name: changelog
+      #     path: CHANGELOG-${{ steps.info.outputs.projectsuffix }}.md
+      #     retention-days: 5
+
+      - name: Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
 
   build-cf-modpack:
     name: Build CF Modpack
@@ -280,7 +280,9 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config --global credential.helper '!f() { echo "username=${{ github.triggering_actor }}";  echo "password=${{ secrets.GITHUB_TOKEN }}"; }; f'
+            git config --global credential.helper '!f() { 
+              echo "username=Xikaro"; 
+              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
 
       - name: Export MMC
@@ -324,7 +326,7 @@ jobs:
       - name: Export serverpack
         run: |
           mkdir -p .minecraft
-          mv -r {config,defaultconfigs,kubejs,mods,./.github/buildtools/serverpack/*} .minecraft
+          mv -vf {config,defaultconfigs,kubejs,mods,./.github/buildtools/serverpack/*} .minecraft
           cat ./.github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
           cd .minecraft/
           zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip ./
