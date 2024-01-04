@@ -64,8 +64,8 @@ jobs:
       - name: Extract changes
         id: changelog
         run: |
-          changelog_full=${{ steps.changelog_full.outputs.description }}
-          news=$(echo "$changelog_full" | awk '/### Изменения/{flag=1; next} /### Новые моды|### Обновленные моды|### Удаленные моды/{flag=0} flag')
+          changelog_full=$(cat ${{ steps.changelog_full.outputs.description }})
+          news=$(echo "$changelog" | grep -oPz "(?s)(?<=### Изменения\n)(.*?)(?=\n###)")
           echo news=$news >> $GITHUB_OUTPUT
 
   build-cf-modpack:
