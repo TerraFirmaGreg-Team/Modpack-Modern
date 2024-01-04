@@ -27,6 +27,38 @@
 - Полублоки, ступени, стены и другие блоки теперь могут осыпаться.
 - Добавлены бедные и богатые куски руд с их переработкой.
 - И еще множество всего, чего я забыл.
+### Удаленные моды
+- TFShips
+- smallships
+- ad_astra
+- botarium
+- resourcefulconfig
+- resourcefullib
+### Новые моды
+- AdditionalPlacements
+- EnhancedVisuals
+- PlayerRevive
+- cc-tweaked
+- chisels-and-bits
+- createaddition
+- gcyr
+- kubejs-create
+- lootjs
+- starlight
+### Обновленные моды
+- CreativeCore -> 2.11.18
+- Cucumber -> 7.0.7
+- FirmaCivilization -> 0.1.10
+- Jade -> 11.7.1
+- TerraFirmaGreg-Core -> 0.2.4
+- appliedenergistics2 -> 15.0.18
+- astikorcarts-redux -> 1.1.7
+- curios -> 5.4.7
+- embeddium -> 0.2.16
+- exposure -> 1.2.2
+- gtceu -> 1.0.19.b
+- sophisticatedbackpacks -> 3.19.5.988
+- sophisticatedcore -> 0.5.113.524
 
 ## [0.3.0] - 26.12.2023
 ### Изменения

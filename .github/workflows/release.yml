@@ -16,6 +16,9 @@ on:
       tag:
         required: true
         type: string
+      news:
+        required: true
+        type: string
       changelog:
         required: true
         type: string
@@ -93,11 +96,13 @@ jobs:
         id: message
         shell: bash
         run: |
-          message="## **${{ inputs.project_name }}** has been updated to ${{ inputs.project_version }}! :tada: "
-          message+="\n[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1>) • "
-          message+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases>) • "
-          message+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
-          echo "markdown=$message" >> $GITHUB_OUTPUT
+          header="## **${{ inputs.project_name }}** has been updated to ${{ inputs.project_version }}! :tada:"
+          echo "header=$header" >> $GITHUB_OUTPUT
+
+          link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1>) • "
+          link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases>) • "
+          link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
+          echo "link=$link" >> $GITHUB_OUTPUT
 
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v6.0.1
@@ -105,13 +110,7 @@ jobs:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          content: "${{ steps.message.outputs.markdown }}\n${{ inputs.changelog }}"
-          embeds: |
-            [
-              {
-                 "description": "${{ inputs.changelog }}",
-              }
-            ]
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ inputs.news }}"
 
   # release-modrinth:
   #   name: Deploy to Modrinth
