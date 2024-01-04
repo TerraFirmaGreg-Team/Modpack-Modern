@@ -14,7 +14,7 @@
 				Count: 1b
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "terrafirmagreg:textures/gui/logo-512x512.png"
+					Icon: "tfg:textures/gui/logo-512x512.png"
 				}
 			}
 			id: "76EF4D00586A8B74"
@@ -276,16 +276,16 @@
 				"Для создания угольной ямы вам понадобится много, много дерева."
 				"Для начала выкопайте яму, глубиной в 1 блок (можно и глубже, если позволяет кол-во древесины)."
 				""
-				"{image:terrafirmagreg:textures/quests/primitive_charcoal_1.png width:170 height:100 align:1}"
+				"{image:tfg:textures/quests/primitive_charcoal_1.png width:170 height:100 align:1}"
 				""
 				"После, при помощи Shift + ПКМ нажмите в любой блок в яме, у вас появится охапка бревен, ее можно наполнять, нажимая ПКМ с бревном в руке по охапке, либо просто открыть интерфейс и наполнить вручную. От кол-ва дерева в охапке зависит количество получаемого впоследствии угля."
 				""
 				""
-				"{image:terrafirmagreg:textures/quests/primitive_charcoal_2.png width:200 height:100 align:1}"
+				"{image:tfg:textures/quests/primitive_charcoal_2.png width:200 height:100 align:1}"
 				""
 				"Далее, накрываете это все не горючим блоком, камнем или землей, оставляете один блок открытым и поджигаете при помощи выброшенного факела или примитивного зажигателя."
 				""
-				"{image:terrafirmagreg:textures/quests/primitive_charcoal_3.png width:190 height:100 align:1}"
+				"{image:tfg:textures/quests/primitive_charcoal_3.png width:190 height:100 align:1}"
 				""
 				"Теперь ваша куча земли начала дымиться, накройте последний блок, который вы поджигали опять же не горючим блоком и ожидайте, как только куча перестанет дымиться, раскапывайте ее и получайте уголь."
 			]
