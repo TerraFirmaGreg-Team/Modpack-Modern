@@ -113,6 +113,13 @@ GTCEuServerEvents.oreVeins(event => {
     event.removeAll()
 })
 
+/**
+ * Событие регистрации лут-тейблов.
+ */
+LootJS.modifiers((event) => {
+    registerGTCEULoots(event)
+});
+
 //#endregion
 
 /*
