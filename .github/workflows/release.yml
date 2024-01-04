@@ -94,8 +94,7 @@ jobs:
           message="## **${{ inputs.project_name }}** has been updated to ${{ inputs.project_version }}! :tada:\n"
           message+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1>) • "
           message+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases>) • "
-          message+="[Issues](<${{ github.repository.svn_url }}/issues>)\n"
-          message+="${{ inputs.changelog }}"
+          message+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)\n"
           echo "markdown=$message" >> $GITHUB_OUTPUT
 
       - name: Send Discord message
@@ -104,7 +103,7 @@ jobs:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://github.com/TerraFirmaGreg-Team/.github/tree/main/branding/logo_new_year.png?raw=true"
-          content: "${{ steps.message.outputs.markdown }}"
+          content: "${{ steps.message.outputs.markdown }}\n${{ inputs.changelog }}"
 
   # release-modrinth:
   #   name: Deploy to Modrinth
