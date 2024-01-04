@@ -65,8 +65,9 @@ jobs:
         id: changelog
         run: |
           changelog_full="${{ steps.changelog_full.outputs.description }}"
-          news=$(echo "$changelog_full" | sed -n '/### Изменения/,/###/p')
+          news=$(echo "$changelog_full" | sed -n '/### Изменения/,/###/p' | sed '$d')
           echo news=$news >> $GITHUB_OUTPUT
+          echo "Debug: $news"
 
   build-cf-modpack:
     name: Build CF Modpack
