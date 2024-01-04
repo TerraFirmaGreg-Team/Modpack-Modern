@@ -1,0 +1,60 @@
+satellites:
+  # Damage of the laser satellite to entities per tick.
+  # Default: 2.0
+  laserSatelliteDamagePerTickStep: 2.0
+
+  # Time between laser satellite mining attempts.
+  # Default: 2
+  laserSatelliteMiningTickStep: 2
+
+server:
+  # Wether the oxygen mechanics are enabled.
+  # Default: true
+  enableOxygen: true
+
+  # Damage to entities per tick without oxygen.
+  # Default: 1.0
+  oxygenDamage: 1.0
+
+  # Damage to overheated entities per tick
+  # Default: 2.0
+  heatDamage: 2.0
+
+  # Damage to freezing entities per tick.
+  # Default: 2.0
+  freezeDamage: 2.0
+
+  # Maximum distance the oxygen spreader can spread oxygen in.
+  # Default: 128
+  maxOxygenatedBlockChecks: 128
+
+  # The temperature in space.
+  # Default: -270.0
+  spaceTemperature: -270.0
+
+machine:
+  # Damage caused by standing in an active dyson system controller's beam. (per tick)
+  # Default: 5.0
+  dysonControllerBeamDamage: 5.0
+
+rocket:
+  # How much fuel is required to travel to a moon or back?
+  # note: this is platform-specific.
+  # Default: 8 buckets.
+  moonFuelAmount: 8000
+
+  # How much fuel is required to travel to a planet in the same solar system?
+  # note: this is platform-specific.
+  # Default: 14 buckets.
+  solarSystemFuelAmount: 14000
+
+  # How much fuel is required to travel to a planet in the same galaxy?
+  # note: this is platform-specific.
+  # Default: 26 buckets.
+  galaxyFuelAmount: 26000
+
+  # How much fuel is required to travel to a planet anywhere?
+  # note: this is platform-specific.
+  # Default: 8 buckets.
+  anywhereFuelAmount: 48000
+
