@@ -64,7 +64,7 @@ jobs:
       - name: Extract changes
         id: changelog
         run: |
-          changelog_full=${{ steps.changelog_full.outputs.description }}
+          changelog_full=$(${{ steps.changelog_full.outputs.description }})
           news=$(echo "$changelog_full" | grep -oP '### Изменения([\s\S]*?)(?=### Новые моды|### Обновленные моды|### Удаленные моды)')
           echo news=$news >> $GITHUB_OUTPUT
 
