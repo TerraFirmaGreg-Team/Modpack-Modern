@@ -17,8 +17,6 @@ ServerEvents.tags('item', event => {
     registerCreateAdditionsItemTags(event)
     registerRailWaysItemTags(event)
     
-    registerAdAstraItemTags(event)
-    
     registerMoreRedItemTags(event)
     
     registerSophisticatedBackpacksItemTags(event)
@@ -90,8 +88,6 @@ ServerEvents.recipes(event => {
     registerAE2WTLibRecipes(event)
     
     registerComputerCraftRecipes(event)
-    
-    registerAdAstraRecipes(event)
     
     registerMoreRedRecipes(event)
     

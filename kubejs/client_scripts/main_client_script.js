@@ -8,7 +8,6 @@ REIEvents.hide('item', event => {
     hideGTCEUStuff(event)
     hideCreateStuff(event)
     hideAE2Stuff(event)
-    hideAdAstraStuff(event)
     hideSophisticatedBackpacksStuff(event)
     hideMoreRedStuff(event)
     hideRailWaysStuff(event)
