@@ -35,6 +35,7 @@ jobs:
 
       - name: Modpack info
         id: info
+        shell: bash
         run: |
           set +e
 
@@ -65,7 +66,9 @@ jobs:
         id: changelog
         shell: bash
         run: |
+          set +e
           news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
+          printf "%s" "news=$news"
           printf "%s" "news=$news" >> $GITHUB_OUTPUT
           
 
