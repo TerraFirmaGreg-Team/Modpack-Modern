@@ -66,10 +66,14 @@ jobs:
         id: message
         shell: bash
         run: |
+          header="## **${{ steps.info.outputs.project_name }}** был обновлен до ${{ steps.info.outputs.project_version }}! :tada:"
+
           link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5009295>) • "
           link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0>) • "
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
-          echo -e "$link" >> $GITHUB_OUTPUT
+
+          news="$header\n$link"
+          echo "$news" >> $GITHUB_OUTPUT
           
 
       - name: Send Discord message
@@ -78,7 +82,7 @@ jobs:
           webhook-url: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          embed-title: "${{ steps.message.outputs.link }}"
+          embed-title: "${{ steps.message.outputs.news }}"
           embed-description: "${{ steps.changelog.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0
           content: "${{ steps.changelog.outputs.description }}"
