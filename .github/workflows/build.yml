@@ -76,12 +76,11 @@ jobs:
       - name: Send Discord message
         uses: tsickert/discord-webhook@v5.4.0
         with:
-          webhook-url: "${{secrets.RELEASES_1_20}}"
+          webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
           embed-title: "${{ steps.message.outputs.title }}"
           embed-description: "${{ steps.changelog.outputs.description }}"
-          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0
           embed-color: "#57F287"
 
   # build-cf-modpack:
