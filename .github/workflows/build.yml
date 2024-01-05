@@ -72,7 +72,7 @@ jobs:
           link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0>) • "
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
 
-          news="$header\n$link"
+          news="$header \n $link"
           echo -e "$news" >> $GITHUB_OUTPUT
           
 
