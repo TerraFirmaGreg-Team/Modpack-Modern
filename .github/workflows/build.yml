@@ -67,8 +67,7 @@ jobs:
         run: |
           touch  CHANGELOG-${{ steps.info.outputs.project_version }}.md
 
-          changelog_full="${{ steps.changelog_full.outputs.description }}"
-          news=$(echo -e "$changelog_full" | sed -n '/### Изменения/,/###/p' | sed '$d')
+          news=$(echo -e "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
           echo $news >> CHANGELOG-${{ steps.info.outputs.project_version }}.md
 
           echo news=$news >> $GITHUB_OUTPUT
