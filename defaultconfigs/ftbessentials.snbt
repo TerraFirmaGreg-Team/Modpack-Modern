@@ -76,7 +76,7 @@
 		# Enables usage of a trash can inventory, which can be used to void unneeded items
 		trashcan: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 	}
 	

@@ -6,6 +6,7 @@
 		ftbranks.name_format: "{name}"
 		ftbchunks.max_claimed: 50
 		ftbchunks.max_force_loaded: 3
+		command.trashcan: true
 	}
 	vip: {
 		name: "VIP"
