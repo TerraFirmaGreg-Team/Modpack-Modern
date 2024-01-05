@@ -50,23 +50,20 @@ jobs:
         with:
           name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
 
-      - name: Display structure of downloaded files
-        run: ls -R ./
-
-      - name: Upload Curseforge
-        id: cf_release
-        uses: SwitchAlpha/upload-curseforge-modpack-action@master
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ env.CF_PROJECT_ID }}
-          modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
-          modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-          changelog: ${{ inputs.changelog }}
-          changelog-format: markdown
-          game-version: ${{ inputs.mcversion }}
-          display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
-          server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
-          release-type: ${{ env.RELEASE_TYPE }}
+      # - name: Upload Curseforge
+      #   id: cf_release
+      #   uses: SwitchAlpha/upload-curseforge-modpack-action@master
+      #   with:
+      #     api-token: ${{ secrets.CF_API_TOKEN }}
+      #     project-id: ${{ env.CF_PROJECT_ID }}
+      #     modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+      #     modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+      #     changelog: ${{ inputs.changelog }}
+      #     changelog-format: markdown
+      #     game-version: ${{ inputs.mcversion }}
+      #     display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+      #     server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
+      #     release-type: ${{ env.RELEASE_TYPE }}
 
       - name: Create Discord message
         id: message
@@ -75,7 +72,7 @@ jobs:
           header="## **${{ inputs.project_name }}** был обновлен до ${{ inputs.project_version }}! :tada:"
           echo "header=$header" >> $GITHUB_OUTPUT
 
-          link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ steps.cf_release.outputs.id }}>) • "
+          link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5009295>) • "
           link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ inputs.tag }}>) • "
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
           echo "link=$link" >> $GITHUB_OUTPUT
@@ -86,18 +83,11 @@ jobs:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          embeds:  |
-            [
-              {
-                "allowed_mentions_parse": "1167128822513143848"
-              }
-            ]
           content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ inputs.news }}"
 
   release-github:
     name: Deploy to GitHub
     runs-on: ubuntu-latest
-    needs: [release-curseforge]
     steps:
       - name: Download modpack
         uses: actions/download-artifact@v4.1.0
