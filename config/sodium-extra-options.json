@@ -49,15 +49,15 @@
     "use_adaptive_sync": false,
     "cloud_height": 192,
     "cloud_distance": 100,
-    "toasts": true,
-    "advancement_toast": true,
-    "recipe_toast": true,
-    "system_toast": true,
-    "tutorial_toast": true,
+    "toasts": false,
+    "advancement_toast": false,
+    "recipe_toast": false,
+    "system_toast": false,
+    "tutorial_toast": false,
     "instant_sneak": false,
     "prevent_shaders": false,
     "steady_debug_hud": true,
-    "steady_debug_hud_refresh_interval": 1
+    "steady_debug_hud_refresh_interval": 10
   },
   "super_secret_settings": {
     "fetch_sodium_extra_crowdin_translations": false,
