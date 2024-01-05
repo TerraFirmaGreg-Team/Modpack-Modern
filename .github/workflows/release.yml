@@ -24,7 +24,7 @@ on:
         type: string
 
 env:
-  CF_PROJECT_ID: "399664"
+  CF_PROJECT_ID: "385053"
   MODRINTH_PROJECT_ID: "75JuuMzk"
   RELEASE_TYPE: "beta"
 
@@ -55,7 +55,7 @@ jobs:
 
       - name: Upload Curseforge
         id: cf_release
-        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
+        uses: SwitchAlpha/upload-curseforge-modpack-action@master
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ env.CF_PROJECT_ID }}
