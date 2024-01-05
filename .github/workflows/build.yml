@@ -61,27 +61,17 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-          
-      - name: Create Discord message
-        id: message
-        shell: bash
-        run: |
-          link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5009295>) • "
-          link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0>) • "
-          link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
-
-          echo "title=$link" >> $GITHUB_OUTPUT
-          
-
+ 
       - name: Send Discord message
         uses: tsickert/discord-webhook@v5.4.0
         with:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          embed-title: "${{ steps.message.outputs.title }}"
+          embed-title: Release ${{ steps.changelog.outputs.version }}
+          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0
           embed-description: "${{ steps.changelog.outputs.description }}"
-          embed-color: "#57F287"
+          embed-color: 5814783
 
   # build-cf-modpack:
   #   name: Build CF Modpack
