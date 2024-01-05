@@ -6,6 +6,8 @@ config/oculus.properties
 config/smoothboot.json
 config/fml.toml
 config/forge-client.toml
+config/chiselsandbits-client.toml
+config/chiselsandbits-common.toml
 
 # .minecraft
 crash-reports/*
