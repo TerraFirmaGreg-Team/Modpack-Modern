@@ -66,7 +66,7 @@ jobs:
         shell: bash
         run: |
           news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          printf "news=%s\n" "$news" >> $GITHUB_OUTPUT
+          printf "%s\n" "news=$news" >> $GITHUB_OUTPUT
           
 
       - name: Create Discord message
@@ -81,16 +81,13 @@ jobs:
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
           echo "link=$link" >> $GITHUB_OUTPUT
 
-          news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          printf "news=%s\n" "$news" >> $GITHUB_OUTPUT
-
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v6.0.1
         with:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.message.outputs.news }}"
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog_news.outputs.news }}"
 
   # build-cf-modpack:
   #   name: Build CF Modpack
