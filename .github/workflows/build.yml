@@ -65,11 +65,11 @@ jobs:
         id: changelog
         shell: bash
         run: |
-          echo "This is a markdown file" > CHANGELOG-${{ steps.info.outputs.project_version }}.md
+          touch  CHANGELOG-${{ steps.info.outputs.project_version }}.md
 
           changelog_full="${{ steps.changelog_full.outputs.description }}"
-          news=$(echo "$changelog_full" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          echo news=$news >> CHANGELOG-${{ steps.info.outputs.project_version }}.md
+          news=$(echo -e "$changelog_full" | sed -n '/### Изменения/,/###/p' | sed '$d')
+          echo $news >> CHANGELOG-${{ steps.info.outputs.project_version }}.md
 
           echo news=$news >> $GITHUB_OUTPUT
 
