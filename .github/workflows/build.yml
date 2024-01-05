@@ -83,7 +83,7 @@ jobs:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog.outputs.news }}"
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.message.outputs.news }}"
 
   # build-cf-modpack:
   #   name: Build CF Modpack
