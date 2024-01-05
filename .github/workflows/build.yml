@@ -61,12 +61,24 @@ jobs:
         with:
           path: CHANGELOG.md
 
-      - name: Extract changes
+      - name: Process changelog
         id: changelog
+        shell: bash
         run: |
+          echo "This is a markdown file" > CHANGELOG-${{ steps.info.outputs.project_version }}.md
+
           changelog_full="${{ steps.changelog_full.outputs.description }}"
           news=$(echo "$changelog_full" | sed -n '/### Изменения/,/###/p' | sed '$d')
+          echo news=$news >> CHANGELOG-${{ steps.info.outputs.project_version }}.md
+
           echo news=$news >> $GITHUB_OUTPUT
+
+      - name: Upload changelog
+        uses: actions/upload-artifact@v3
+        with:
+          name: changelog
+          path: CHANGELOG-${{ steps.info.outputs.project_version }}.md
+          
 
       - name: Create Discord message
         id: message
