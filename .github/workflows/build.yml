@@ -65,19 +65,10 @@ jobs:
         id: changelog
         shell: bash
         run: |
-          touch  CHANGELOG-${{ steps.info.outputs.project_version }}.md
-
           news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          printf "%s" "$news" >> CHANGELOG-${{ steps.info.outputs.project_version }}.md
-
-          echo news=$news >> $GITHUB_OUTPUT
-
-      - name: Upload changelog
-        uses: actions/upload-artifact@v3
-        with:
-          name: changelog
-          path: CHANGELOG-${{ steps.info.outputs.project_version }}.md
+          printf "news=%s\n" "$news" >> $GITHUB_OUTPUT
           
+
       - name: Create Discord message
         id: message
         shell: bash
@@ -90,13 +81,16 @@ jobs:
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
           echo "link=$link" >> $GITHUB_OUTPUT
 
+          news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
+          printf "news=%s\n" "$news" >> $GITHUB_OUTPUT
+
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v6.0.1
         with:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog.outputs.news }}"
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.message.outputs.news }}"
 
   # build-cf-modpack:
   #   name: Build CF Modpack
