@@ -69,7 +69,7 @@ jobs:
           set +e
           news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
           printf "%s" "news=$news"
-          printf "%s" "news=$news" >> $GITHUB_OUTPUT
+          echo -e "news=$news" >> $GITHUB_OUTPUT
           
 
       - name: Create Discord message
@@ -90,7 +90,7 @@ jobs:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog_news.outputs.news }}"
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog.outputs.news }}"
 
   # build-cf-modpack:
   #   name: Build CF Modpack
