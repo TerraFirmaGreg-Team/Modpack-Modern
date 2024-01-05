@@ -38,23 +38,20 @@ jobs:
         with:
           merge-multiple: true
 
-      - name: Display structure of downloaded files
-        run: ls -R ./
-
-      # - name: Create release
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     prerelease: false
-      #     generate_release_notes: true
-      #     name: ${{ inputs.project_version }}
-      #     body: ${{ inputs.changelog }}
-      #     files: |
-      #       ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
-      #       ${{ inputs.project_name }}-${{ inputs.project_version }}-mmc.zip
-      #       ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-      #     tag_name: ${{ inputs.tag }}
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: false
+          generate_release_notes: true
+          name: ${{ inputs.project_version }}
+          body: ${{ inputs.changelog }}
+          files: |
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-mmc.zip
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+          tag_name: ${{ inputs.tag }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release-curseforge:
     name: Deploy to CurseForge
@@ -83,8 +80,8 @@ jobs:
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ env.CF_PROJECT_ID }}
-          modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
-          modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+          modpack-path: "./${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip"
+          modpack-server-path: "./${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip"
           changelog: "${{ inputs.changelog }}"
           changelog-format: markdown
           game-version: ${{ inputs.mcversion }}
