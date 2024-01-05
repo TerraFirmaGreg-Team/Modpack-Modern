@@ -58,7 +58,7 @@ const registerChiselAndBitsRecipes = (event) => {
 
     // Герметик
     event.shapeless('chiselsandbits:sealant', [
-        'minecraft:slimeball',
+        'minecraft:slime_ball',
         'firmalife:raw_honey'
     ]).id('tfg:chiselsandbits/shapeless/sealant_from_slimeballs')
 
