@@ -75,7 +75,7 @@ jobs:
           echo -e "link=$link" >> $GITHUB_OUTPUT
 
           news=$(echo -e "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          echo -e "news=$news" >> $GITHUB_OUTPUT
+          printf "%s\n" "news=$news" >> $GITHUB_OUTPUT
 
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v6.0.1
