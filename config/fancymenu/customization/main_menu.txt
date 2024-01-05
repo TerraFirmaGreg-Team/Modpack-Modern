@@ -233,7 +233,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = joinserver;tfg2.tfg.su%btnaction_splitter_fm%
+  buttonaction = joinserver;tfg2.terrafirmagreg.su%btnaction_splitter_fm%
   backgroundhovered = kubejs/assets/tfg/textures/gui/button98x20_hovered.png
   label = Offical Server
   loopbackgroundanimations = true

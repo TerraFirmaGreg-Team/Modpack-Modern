@@ -1,6 +1,14 @@
 # Changelog
 
-## [0.4.0] - 03.01.2024
+## [0.4.1] - 05.01.2024
+### Изменения
+- Исправлена кнопка подключения к официальному серверу.
+- Исправлен рецепт молда для лопаты.
+### Обновленные моды
+- TerraFirmaGreg-Core -> 0.2.5
+- notenoughanimations -> 1.7.0
+
+## [0.4.0] - 05.01.2024
 ### Изменения
 - Удалены из игры бронзовые паровые машины, тк позволяли скипнуть очень много прогресии TFC.
 - Добавлено очень много квестов для Примитивной эры (пока что без описаний).
@@ -29,6 +37,36 @@
 - И еще множество всего, чего я забыл.
 ### Удаленные моды
 - TFShips
+- smallships
+- ad_astra
+- botarium
+- resourcefulconfig
+- resourcefullib
+### Новые моды
+- AdditionalPlacements
+- EnhancedVisuals
+- PlayerRevive
+- cc-tweaked
+- chisels-and-bits
+- createaddition
+- gcyr
+- kubejs-create
+- lootjs
+- starlight
+### Обновленные моды
+- CreativeCore -> 2.11.18
+- Cucumber -> 7.0.7
+- FirmaCivilization -> 0.1.10
+- Jade -> 11.7.1
+- TerraFirmaGreg-Core -> 0.2.4
+- appliedenergistics2 -> 15.0.18
+- astikorcarts-redux -> 1.1.7
+- curios -> 5.4.7
+- embeddium -> 0.2.16
+- exposure -> 1.2.2
+- gtceu -> 1.0.19.b
+- sophisticatedbackpacks -> 3.19.5.988
+- sophisticatedcore -> 0.5.113.524
 
 ## [0.3.0] - 26.12.2023
 ### Изменения

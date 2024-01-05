@@ -1,0 +1,80 @@
+
+[EmbeddiumPlus]
+
+	[EmbeddiumPlus.DynamicLights]
+		OnlyUpdateOnPositionChange = true
+		DynamicEntityLighting = true
+		#Allowed Values: OFF, SLOW, FAST, FASTEST, REALTIME
+		QualityMode = "REALTIME"
+		DynamicTileEntityLighting = true
+
+	#You can configure FPS overlay at the corner
+	[EmbeddiumPlus.fps_overlay]
+		#Allowed Values: OFF, SIMPLE, ADVANCED
+		DisplayMode = "ADVANCED"
+		OverlayMargin = 12
+
+	#Configure max BlockEntity distance
+	[EmbeddiumPlus.block_entity_distance]
+		#Max horizontal render distance
+		#Value is squared, default was 64^2 (or 64x64)
+		maxHorizontalDistance = 4096
+		#Max vertical render distance
+		#Value is raw
+		maxVerticalDistance = 32
+
+	[EmbeddiumPlus.Misc]
+		RenderFog = true
+		HideJEI = false
+		CloudHeight = 128
+		#Allowed Values: OFF, FAST, FANCY
+		ChunkFadeInQuality = "FANCY"
+		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
+		BorderlessFullscreen = "FULLSCREEN"
+		ExtendedServerViewDistance = true
+
+	#Configure max Entity distance
+	[EmbeddiumPlus.entity_distance_limit]
+		#Max horizontal render distance
+		#Value is squared, default was 64^2 (or 64x64)
+		maxHorizontalDistance = 4096
+		#Turn on this feature
+		Enable = true
+		#List of entities to not be ignored when are out of configured radius.
+		#Accepts ResourceLocation and Mod IDs
+		#Example: "minecraft:bat" for specific entity or "alexmobs:*" for all mod specific entities
+		entityWhitelist = []
+		#Max vertical render distance
+		#Value is raw
+		maxVerticalDistance = 32
+
+	#Configure TrueDarkness feature
+	#Section deprecated and removed soon (in favor of rework)
+	[EmbeddiumPlus.true_darkness]
+		#Sets darkness mode
+		#Depending of the option darkness can be less or more aggressive
+		#Allowed Values: PITCH_BLACK, REALLY_DARK, DARK, DIM
+		DarknessMode = "REALLY_DARK"
+		#Turn on this feature
+		Enable = true
+
+		[EmbeddiumPlus.true_darkness.Advanced]
+			IgnoreMoonPhase = false
+			BlockLightingOnly = false
+			#Range: 0.0 ~ 1.0
+			MaximumMoonBrightness = 0.25
+			#Range: 0.0 ~ 1.0
+			MinimumMoonBrightness = 0.0
+
+		#Configure what dimension should use TrueDarkness
+		[EmbeddiumPlus.true_darkness.DimensionSettings]
+			DefaultSetting = false
+			#Range: 0.0 ~ 1.0
+			DarkNetherFogBrightness = 0.5
+			DarkWhenNoSkylight = false
+			Nether = false
+			Overworld = true
+			#Range: 0.0 ~ 1.0
+			DarkEndFogBrightness = 0.0
+			"Dark End?" = false
+
