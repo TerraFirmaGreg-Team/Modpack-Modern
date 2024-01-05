@@ -68,117 +68,139 @@ jobs:
           news=$(echo "$changelog_full" | sed -n '/### Изменения/,/###/p' | sed '$d')
           echo news=$news >> $GITHUB_OUTPUT
 
-  build-cf-modpack:
-    name: Build CF Modpack
-    runs-on: ubuntu-latest
-    needs: [modpack-info]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
-
-      - name: Replace strings
+      - name: Create Discord message
+        id: message
         shell: bash
         run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
-          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
-          sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
+          header="## **${{ steps.info.outputs.project_name }}** был обновлен до ${{ steps.info.outputs.project_version }}! :tada:"
+          echo "header=$header" >> $GITHUB_OUTPUT
 
-      - name: Export CF
-        run: |
-          mkdir -p overrides
-          mv -vf {config,defaultconfigs,kubejs}  overrides/
-          mv -vf .github/buildtools/modpack/manifest.json ./
-          mv -vf .github/buildtools/modpack/modlist.html ./
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
+          link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5009295>) • "
+          link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0>) • "
+          link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
+          echo "link=$link" >> $GITHUB_OUTPUT
 
-      - name: Upload zip cf
-        uses: actions/upload-artifact@v4.0.0
+      - name: Send Discord message
+        uses: hugoalh/send-discord-webhook-ghaction@v6.0.1
         with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
-          path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
-          retention-days: 5
+          key: "${{secrets.RELEASES_1_20}}"
+          username: "TerraFirmaGreg"
+          avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.info.outputs.news }}"
 
-  build-mmc-modpack:
-    name: Build MMC Modpack
-    runs-on: ubuntu-latest
-    needs: [modpack-info]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
+  # build-cf-modpack:
+  #   name: Build CF Modpack
+  #   runs-on: ubuntu-latest
+  #   needs: [modpack-info]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
 
-      - name: Replace strings
-        shell: bash
-        run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
-          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
-          sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
+  #     - name: Replace strings
+  #       shell: bash
+  #       run: |
+  #         VERSION=${{ needs.modpack-info.outputs.project_version }}
+  #         sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
+  #         sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
+  #         sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
 
-      - name: Download Mods
-        run: |
-            git submodule init
-            cd mods
-            git config --global credential.helper '!f() { 
-              echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
-            git submodule update --recursive
+  #     - name: Export CF
+  #       run: |
+  #         mkdir -p overrides
+  #         mv -vf {config,defaultconfigs,kubejs}  overrides/
+  #         mv -vf .github/buildtools/modpack/manifest.json ./
+  #         mv -vf .github/buildtools/modpack/modlist.html ./
+  #         zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
 
-      - name: Export MMC
-        run: |
-          mkdir -p .minecraft
-          mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
-          mv -vf .github/buildtools/modpack/mmc-pack.json ./
-          mv -vf .github/buildtools/modpack/instance.cfg ./ 
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
+  #     - name: Upload zip cf
+  #       uses: actions/upload-artifact@v4.0.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
+  #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
+  #         retention-days: 5
+
+  # build-mmc-modpack:
+  #   name: Build MMC Modpack
+  #   runs-on: ubuntu-latest
+  #   needs: [modpack-info]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
+
+  #     - name: Replace strings
+  #       shell: bash
+  #       run: |
+  #         VERSION=${{ needs.modpack-info.outputs.project_version }}
+  #         sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
+  #         sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
+  #         sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
+
+  #     - name: Download Mods
+  #       run: |
+  #           git submodule init
+  #           cd mods
+  #           git config --global credential.helper '!f() { 
+  #             echo "username=Xikaro"; 
+  #             echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+  #           git submodule update --recursive
+
+  #     - name: Export MMC
+  #       run: |
+  #         mkdir -p .minecraft
+  #         mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
+  #         mv -vf .github/buildtools/modpack/mmc-pack.json ./
+  #         mv -vf .github/buildtools/modpack/instance.cfg ./ 
+  #         zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip mmc-pack.json instance.cfg .minecraft/
       
-      - name: Upload zip mmc
-        uses: actions/upload-artifact@v4.0.0
-        with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc
-          path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
-          retention-days: 5
+  #     - name: Upload zip mmc
+  #       uses: actions/upload-artifact@v4.0.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc
+  #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
+  #         retention-days: 5
 
-  build-serverpack:
-    name: Build Serverpack
-    runs-on: ubuntu-latest
-    needs: [modpack-info]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
+  # build-serverpack:
+  #   name: Build Serverpack
+  #   runs-on: ubuntu-latest
+  #   needs: [modpack-info]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
 
-      - name: Replace strings
-        shell: bash
-        run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
+  #     - name: Replace strings
+  #       shell: bash
+  #       run: |
+  #         VERSION=${{ needs.modpack-info.outputs.project_version }}
+  #         sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
 
-      - name: Download Mods
-        run: |
-            git submodule init
-            cd mods
-            git config --global credential.helper '!f() { 
-              echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
-            git submodule update --recursive
+  #     - name: Download Mods
+  #       run: |
+  #           git submodule init
+  #           cd mods
+  #           git config --global credential.helper '!f() { 
+  #             echo "username=Xikaro"; 
+  #             echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+  #           git submodule update --recursive
 
-      - name: Export serverpack
-        run: |
-          mkdir -p .minecraft
-          mv -vf {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
-          cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip .minecraft/*
+  #     - name: Export serverpack
+  #       run: |
+  #         mkdir -p .minecraft
+  #         mv -vf {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
+  #         cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
+  #         zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip .minecraft/*
 
-      - name: Upload zip
-        uses: actions/upload-artifact@v4.0.0
-        with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
-          path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-          retention-days: 5
+  #     - name: Upload zip
+  #       uses: actions/upload-artifact@v4.0.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+  #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+  #         retention-days: 5
+
+  #, build-cf-modpack, build-mmc-modpack, build-serverpack
 
   release:
     name: Release
-    needs: [modpack-info, build-cf-modpack, build-mmc-modpack, build-serverpack]
+    needs: [modpack-info]
     if: startsWith(github.ref, 'refs/tags/')
     uses: ./.github/workflows/release.yml
     with:
