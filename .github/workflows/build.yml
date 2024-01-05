@@ -77,14 +77,7 @@ jobs:
         with:
           name: changelog
           path: CHANGELOG-${{ steps.info.outputs.project_version }}.md
-
-      - name: Changelog Parser
-        id: changelog_news
-        uses: coditory/changelog-parser@v1.0.2
-        with:
-          path: CHANGELOG-${{ steps.info.outputs.project_version }}.md
           
-
       - name: Create Discord message
         id: message
         shell: bash
@@ -103,7 +96,7 @@ jobs:
           key: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog_news.outputs.description }}"
+          content: "${{ steps.message.outputs.header }}\n${{ steps.message.outputs.link }}\n${{ steps.changelog.outputs.news }}"
 
   # build-cf-modpack:
   #   name: Build CF Modpack
