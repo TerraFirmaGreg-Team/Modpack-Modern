@@ -61,28 +61,21 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-
-      - name: Process changelog
-        id: changelog
-        shell: bash
-        run: |
-          set +e
-          news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          printf "%s" "news=$news"
-          echo -e "news=$news" >> $GITHUB_OUTPUT
           
-
       - name: Create Discord message
         id: message
         shell: bash
         run: |
           header="## **${{ steps.info.outputs.project_name }}** был обновлен до ${{ steps.info.outputs.project_version }}! :tada:"
-          echo "header=$header" >> $GITHUB_OUTPUT
+          echo -e "header=$header" >> $GITHUB_OUTPUT
 
           link+="[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5009295>) • "
           link+="[GitHub](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0>) • "
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
-          echo "link=$link" >> $GITHUB_OUTPUT
+          echo -e "link=$link" >> $GITHUB_OUTPUT
+
+          news=$(echo -e "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
+          echo -e "news=$news" >> $GITHUB_OUTPUT
 
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v6.0.1
@@ -200,19 +193,18 @@ jobs:
   #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
   #         retention-days: 5
 
-  #, build-cf-modpack, build-mmc-modpack, build-serverpack
 
-  release:
-    name: Release
-    needs: [modpack-info]
-    if: startsWith(github.ref, 'refs/tags/')
-    uses: ./.github/workflows/release.yml
-    with:
-      project_name: ${{ needs.modpack-info.outputs.project_name }}
-      project_version: ${{ needs.modpack-info.outputs.project_version }}
-      mcversion: ${{ needs.modpack-info.outputs.mcversion }}
-      tag: ${{ needs.modpack-info.outputs.tag }}
-      news: ${{ needs.modpack-info.outputs.news }}
-      changelog: ${{ needs.modpack-info.outputs.changelog }}
-    secrets: inherit
+  # release:
+  #   name: Release
+  #   needs: [modpack-info, build-cf-modpack, build-mmc-modpack, build-serverpack]
+  #   if: startsWith(github.ref, 'refs/tags/')
+  #   uses: ./.github/workflows/release.yml
+  #   with:
+  #     project_name: ${{ needs.modpack-info.outputs.project_name }}
+  #     project_version: ${{ needs.modpack-info.outputs.project_version }}
+  #     mcversion: ${{ needs.modpack-info.outputs.mcversion }}
+  #     tag: ${{ needs.modpack-info.outputs.tag }}
+  #     news: ${{ needs.modpack-info.outputs.news }}
+  #     changelog: ${{ needs.modpack-info.outputs.changelog }}
+  #   secrets: inherit
 
