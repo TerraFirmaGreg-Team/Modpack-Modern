@@ -55,13 +55,13 @@ jobs:
 
       - name: Upload Curseforge
         id: cf_release
-        uses: SwitchAlpha/upload-curseforge-modpack-action@master
+        uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ env.CF_PROJECT_ID }}
           modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
           modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-          changelog: "${{ inputs.changelog }}"
+          changelog: ${{ inputs.changelog }}
           changelog-format: markdown
           game-version: ${{ inputs.mcversion }}
           display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
