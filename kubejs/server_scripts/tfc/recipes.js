@@ -8,16 +8,27 @@ const registerTFCRecipes = (event) => {
         
         let metal = keyValuePair[0]
         let metalSpecs = keyValuePair[1]
-
+        
         if (metalSpecs.props.includes(global.INGOT_GEN)) {
-
+            
             if (metalSpecs.input_fluid != undefined) {
+                
                 // Отливка слитка в обычной форме
                 event.recipes.tfc.casting(Item.of(`#forge:ingots/${metal}`), 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.input_fluid, 144), 0.1)
                     .id(`tfc:casting/${metal}_ingot`)
 
                 // Отливка слитка в огнеупорной форме
                 event.recipes.tfc.casting(Item.of(`#forge:ingots/${metal}`), 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.input_fluid, 144), 0.01)
+                    .id(`tfc:casting/${metal}_fire_ingot`)
+            }
+            else
+            {
+                // Отливка слитка в обычной форме
+                event.recipes.tfc.casting(Item.of(`#forge:ingots/${metal}`), 'tfc:ceramic/ingot_mold', TFC.fluidStackIngredient(metalSpecs.output_fluid, 144), 0.1)
+                    .id(`tfc:casting/${metal}_ingot`)
+
+                // Отливка слитка в огнеупорной форме
+                event.recipes.tfc.casting(Item.of(`#forge:ingots/${metal}`), 'tfc:ceramic/fire_ingot_mold', TFC.fluidStackIngredient(metalSpecs.output_fluid, 144), 0.01)
                     .id(`tfc:casting/${metal}_fire_ingot`)
             }
             
@@ -2509,9 +2520,9 @@ const registerTFCRecipes = (event) => {
 
     //#region Обрушения
 
-    event.recipes.tfc.collapse(null, TFC.blockIngredient(['#tfg:rock_slabs'])).id('tfg:collapse/rock_slabs')
-    event.recipes.tfc.collapse(null, TFC.blockIngredient(['#tfg:rock_stairs'])).id('tfg:collapse/rock_stairs')
-    event.recipes.tfc.collapse(null, TFC.blockIngredient(['#tfg:rock_walls'])).id('tfg:collapse/rock_walls')
+    event.recipes.tfc.collapse('#tfg:rock_slabs').id('tfg:collapse/rock_slabs')
+    event.recipes.tfc.collapse('#tfg:rock_stairs').id('tfg:collapse/rock_stairs')
+    event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
 
     global.TFC_STONE_TYPES.forEach(stoneType => {
         let oresToCollapse = []
