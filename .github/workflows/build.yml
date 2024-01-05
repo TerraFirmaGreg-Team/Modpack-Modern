@@ -73,7 +73,7 @@ jobs:
           link+="[Issues](<https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues>)"
 
           news="$header\n$link"
-          echo "$news" >> $GITHUB_OUTPUT
+          echo "markdown=$news" >> $GITHUB_OUTPUT
           
 
       - name: Send Discord message
@@ -82,7 +82,7 @@ jobs:
           webhook-url: "${{secrets.RELEASES_1_20}}"
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
-          embed-title: "${{ steps.message.outputs.news }}"
+          embed-title: "${{ steps.message.outputs.markdown }}"
           embed-description: "${{ steps.changelog.outputs.description }}"
           embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.0
           content: "${{ steps.changelog.outputs.description }}"
