@@ -16,9 +16,6 @@ on:
       tag:
         required: true
         type: string
-      news:
-        required: true
-        type: string
       changelog:
         required: true
         type: string
