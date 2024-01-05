@@ -66,7 +66,7 @@ jobs:
         shell: bash
         run: |
           news=$(printf "%s" "${{ steps.changelog_full.outputs.description }}" | sed -n '/### Изменения/,/###/p' | sed '$d')
-          printf "%s\n" "news=$news" >> $GITHUB_OUTPUT
+          printf "%s" "news=$news" >> $GITHUB_OUTPUT
           
 
       - name: Create Discord message
