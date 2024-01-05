@@ -193,6 +193,73 @@ const registerComputerCraftRecipes = (event) => {
             .EUt(7)
     }
 
-    
+    //normal pocket computers
+    //pocket_computer_normal
+    event.shaped('computercraft:pocket_computer_normal', [
+        'ABA',
+        'CDE',
+        'FGF'
+    ], {
+        A: 'ae2:wireless_receiver',
+        B: '#forge:wires/single/mercury_barium_calcium_cuprate',
+        C: '#forge:batteries/hv',
+        D: 'ae2:terminal',
+        E: 'gtceu:hv_emitter',
+        F: '#forge:circuits/ev',
+        G: '#forge:plates/titanium'
+    }).id('tfg:crafting/pocket_computer_normal')
 
+    //pocket_computer_normal Upgrade:wireless_modem_advanced
+    event.shapeless(Item.of('computercraft:pocket_computer_normal', '{Upgrade:"computercraft:wireless_modem_advanced"}'), [
+        'computercraft:pocket_computer_normal', 
+        'computercraft:wireless_modem_advanced'
+    ]).id('computercraft:ender_pocket_computer_normal_shapless')
+    
+    //pocket_computer_normal Upgrade:wireless_modem_normal
+    event.shapeless(Item.of('computercraft:pocket_computer_normal', '{Upgrade:"computercraft:wireless_modem_normal"}'), [
+        'computercraft:pocket_computer_normal', 
+        'computercraft:wireless_modem_normal'
+    ]).id('computercraft:wireless_pocket_computer_normal_shapless')
+
+    //pocket_computer_normal Upgrade:speaker
+    event.shapeless(Item.of('computercraft:pocket_computer_normal', '{Upgrade:"computercraft:speaker"}'), [
+        'computercraft:pocket_computer_normal', 
+        'computercraft:speaker'
+    ]).id('computercraft:noisy_pocket_computer_normal_shapless')
+
+    //advanced pocket computers
+    //pocket_computer_advanced
+    event.shaped('computercraft:pocket_computer_advanced', [
+        'ABA',
+        'CDE',
+        'FGF'
+    ], {
+        A: 'ae2:wireless_receiver',
+        B: '#forge:wires/single/uranium_triplatinum',
+        C: '#forge:batteries/ev',
+        D: 'ae2:terminal',
+        E: 'gtceu:ev_emitter',
+        F: '#forge:circuits/iv',
+        G: '#forge:plates/tungsten_steel'
+    }).id('tfg:crafting/pocket_computer_advanced')
+
+    //pocket_computer_advanced Upgrade:wireless_modem_advanced
+    event.shapeless(Item.of('computercraft:pocket_computer_advanced', '{Upgrade:"computercraft:wireless_modem_advanced"}'), [
+        'computercraft:pocket_computer_advanced', 
+        'computercraft:wireless_modem_advanced'
+    ]).id('computercraft:ender_pocket_computer_advanced_shapless')
+    
+    //pocket_computer_advanced Upgrade:wireless_modem_normal
+    event.shapeless(Item.of('computercraft:pocket_computer_advanced', '{Upgrade:"computercraft:wireless_modem_normal"}'), [
+        'computercraft:pocket_computer_advanced', 
+        'computercraft:wireless_modem_normal'
+    ]).id('computercraft:wireless_pocket_computer_advanced_shapless')
+
+    //pocket_computer_advanced Upgrade:speaker
+    event.shapeless(Item.of('computercraft:pocket_computer_advanced', '{Upgrade:"computercraft:speaker"}'), [
+        'computercraft:pocket_computer_advanced', 
+        'computercraft:speaker'
+    ]).id('computercraft:noisy_pocket_computer_advanced_shapless')
+
+    
 }
