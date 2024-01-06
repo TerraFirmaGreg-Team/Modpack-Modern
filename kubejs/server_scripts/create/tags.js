@@ -13,3 +13,8 @@ const registerCreateItemTags = (event) => {
         if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
     })
 }
+
+const registerCreateFluidTags = (event) => {
+    event.add('create:bottomless/allow', 'tfc:fresh_water')
+    event.add('create:bottomless/allow', 'tfc:salt_water')
+}
