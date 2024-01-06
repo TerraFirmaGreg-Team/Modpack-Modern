@@ -20,7 +20,7 @@ on:
 env:
   CF_PROJECT_ID: "385053"
   MODRINTH_PROJECT_ID: "75JuuMzk"
-  RELEASE_TYPE: "beta"
+  RELEASE_TYPE: "BETA"
 
 jobs:
   release-curseforge:
