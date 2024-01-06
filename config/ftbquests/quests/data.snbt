@@ -13,7 +13,7 @@
 		Count: 1b
 		id: "ftbquests:custom_icon"
 		tag: {
-			Icon: "tfg:textures/gui/logo-512x512.png"
+			Icon: "tfg:textures/gui/logo_512x512.png"
 		}
 	}
 	lock_message: "e"
