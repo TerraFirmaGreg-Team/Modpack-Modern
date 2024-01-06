@@ -7,6 +7,7 @@ const hideGTCEUStuff = (event) => {
 }
 
 const groupGTCEUStuff = (event) => {
+
     event.groupItemsByTag('tfg:rei_groups/dusts/pure', 'Pure Dusts', 'forge:pure_dusts')
     event.groupItemsByTag('tfg:rei_groups/dusts/impure', 'Impure Dusts', 'forge:impure_dusts')
     event.groupItemsByTag('tfg:rei_groups/dusts', 'Dusts', 'forge:dusts')
@@ -43,6 +44,7 @@ const groupGTCEUStuff = (event) => {
     event.groupItemsByTag('tfg:rei_groups/blocks/raw', 'Raw Material Blocks', 'forge:raw_blocks')
     event.groupItemsByTag('tfg:rei_groups/blocks/material_blocks', 'Material Blocks', 'forge:material_blocks')
     event.groupItemsByTag('tfg:rei_groups/blocks/frame', 'Frames', 'forge:frame_blocks')
+    
 
     event.groupItemsByTag('tfg:rei_groups/sword_heads', 'Sword Heads', 'forge:sword_heads')
     event.groupItemsByTag('tfg:rei_groups/butchery_knife_heads', 'Butchery Knife Heads', 'forge:butchery_knife_heads')
@@ -109,24 +111,32 @@ const groupGTCEUStuff = (event) => {
     event.groupItemsByTag('tfg:rei_groups/restrictive_pipes/large', 'Large Resctrictive Pipes', 'forge:restrictive_pipes/large')
     event.groupItemsByTag('tfg:rei_groups/restrictive_pipes/huge', 'Huge Resctrictive Pipes', 'forge:restrictive_pipes/huge')
 
-    event.groupItems("tfg:rei_groups/electric_furnace", "Electric Furnace", [/gtceu:.*_electric_furnace/,]);
-    event.groupItems("tfg:rei_groups/alloy_smelter", "Alloy Smelter", [/gtceu:.*_alloy_smelter/,]);
+
+    
+    event.groupItems("tfg:rei_groups/boiler", "Boiler", [/gtceu:.*_boiler/]);
+    event.groupItems("tfg:rei_groups/diode", "Diode", [/gtceu:(?!.*smd).*_diode/]);
+    event.groupItems("tfg:rei_groups/furnace", "Furnace", [/gtceu:(?!.*arc|.*blast).*_furnace/,]);
     event.groupItems("tfg:rei_groups/arc_furnace", "Arc Furnace", [/gtceu:.*_arc_furnace/,]);
-    event.groupItems("tfg:rei_groups/assembler", "Assembler", [/gtceu:.*_assembler/,]);
+    event.groupItems("tfg:rei_groups/centrifuge", "Centrifuge", [/gtceu:.(?!.*thermal).*_centrifuge/,]);
+    event.groupItems("tfg:rei_groups/thermal_centrifuge", "Thermal Centrifuge", [/gtceu:.*_thermal_centrifuge/,]);
+    event.groupItems("tfg:rei_groups/cutter", "Cutter", [/gtceu:(?!.*wire).*_cutter/,]);
+    event.groupItems("tfg:rei_groups/extruder", "Extruder", [/gtceu:.*_extruder(?!.*_mold)/,]);
+    event.groupItems("tfg:rei_groups/mixer", "Mixer", [/gtceu:(?!.*kinetic).*_mixer/,]);
+    event.groupItems("tfg:rei_groups/kinetic_mixer", "Kinetic Mixer", [/gtceu:.*_kinetic_mixer/,]);
+    event.groupItems("tfg:rei_groups/pump", "Pump", [/gtceu:(?!.*electric).*_pump/,]);
+    event.groupItems("tfg:rei_groups/alloy_smelter", "Alloy Smelter", [/gtceu:.*_alloy_smelter/,]);
+    event.groupItems("tfg:rei_groups/assembler", "Assembler", [/gtceu:.*_assembler$/,]);
     event.groupItems("tfg:rei_groups/autoclave", "Autoclave", [/gtceu:.*_autoclave/,]);
     event.groupItems("tfg:rei_groups/bender", "Bender", [/gtceu:.*_bender/,]);
     event.groupItems("tfg:rei_groups/brewery", "Brewery", [/gtceu:.*_brewery/,]);
     event.groupItems("tfg:rei_groups/canner", "Canner", [/gtceu:.*_canner/,]);
-    event.groupItems("tfg:rei_groups/centrifuge", "Centrifuge", [/gtceu:.*_centrifuge/,]);
     event.groupItems("tfg:rei_groups/chemical_bath", "Chemical Bath", [/gtceu:.*_chemical_bath/,]);
     event.groupItems("tfg:rei_groups/chemical_reactor", "Сhemical Reactor", [/gtceu:.*_chemical_reactor/,]);
     event.groupItems("tfg:rei_groups/compressor", "Compressor", [/gtceu:.*_compressor/,]);
-    event.groupItems("tfg:rei_groups/cutter", "Cutter", [/gtceu:.*_cutter/,]);
     event.groupItems("tfg:rei_groups/distillery", "Distillery", [/gtceu:.*_distillery/,]);
     event.groupItems("tfg:rei_groups/electrolyzer", "Electrolyzer", [/gtceu:.*_electrolyzer/,]);
     event.groupItems("tfg:rei_groups/electromagnetic_separator", "Electromagnetic Separator", [/gtceu:.*_electromagnetic_separator/,]);
     event.groupItems("tfg:rei_groups/extractor", "Extractor", [/gtceu:.*_extractor/,]);
-    event.groupItems("tfg:rei_groups/extruder", "Extruder", [/gtceu:.*_extruder/,]);
     event.groupItems("tfg:rei_groups/fermenter", "Fermenter", [/gtceu:.*_fermenter/,]);
     event.groupItems("tfg:rei_groups/laser_engraver", "Laser Engraver", [/gtceu:.*_laser_engraver/,]);
     event.groupItems("tfg:rei_groups/sifter", "Sifter", [/gtceu:.*_sifter/,]);
@@ -140,7 +150,6 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/polarizer", "Polarizer", [/gtceu:.*_polarizer/,]);
     event.groupItems("tfg:rei_groups/packer", "Packer", [/gtceu:.*_packer/,]);
     event.groupItems("tfg:rei_groups/ore_washer", "Ore Washer", [/gtceu:.*_ore_washer/,]);
-    event.groupItems("tfg:rei_groups/mixer", "Mixer", [/gtceu:.*_mixer/,]);
     event.groupItems("tfg:rei_groups/lathe", "Lathe", [/gtceu:.*_lathe/,]);
     event.groupItems("tfg:rei_groups/forming_press", "Forming Press", [/gtceu:.*_forming_press/,]);
     event.groupItems("tfg:rei_groups/forge_hammer", "Forge Hammer", [/gtceu:.*_forge_hammer/,]);
@@ -152,21 +161,30 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/super_tank", "Super Tankt", [/gtceu:.*_tank/,]);
     event.groupItems("tfg:rei_groups/crate", "Crate", [/gtceu:.*_crate/,]);
     event.groupItems("tfg:rei_groups/drum", "Drum", [/gtceu:.*_drum/,]);
-    event.groupItems("tfg:rei_groups/input_bus", "Input Bus", [/gtceu:.*_input_bus/,]);
-    event.groupItems("tfg:rei_groups/output_bus", "Output Bus", [/gtceu:.*_output_bus/,]);
-    event.groupItems("tfg:rei_groups/input_hatch", "Input Hatch", [/gtceu:.*_input_hatch/,]);
-    event.groupItems("tfg:rei_groups/output_hatch", "Output Hatch", [/gtceu:.*_output_hatch/,]);
-    event.groupItems("tfg:rei_groups/muffler_hatch", "Muffler Hatch", [/gtceu:.*_muffler_hatch/,]);
-    event.groupItems("tfg:rei_groups/energy_input_hatch", "Energy Input Hatch", [/gtceu:.*_energy_input_hatch/,]);
-    event.groupItems("tfg:rei_groups/energy_output_hatch", "Energy Output Hatch", [/gtceu:.*_energy_output_hatch/,]);
+    event.groupItems("tfg:rei_groups/input_bus", "Input Bus", [/gtceu:.*_input_bus$/,]);
+    event.groupItems("tfg:rei_groups/output_bus", "Output Bus", [/gtceu:.*_output_bus$/,]);
+    event.groupItems("tfg:rei_groups/input_hatch", "Input Hatch", [/gtceu:.(?!.*energy).*_input_hatch$/,]);
+    event.groupItems("tfg:rei_groups/output_hatch", "Output Hatch", [/gtceu:.(?!.*energy).*_output_hatch$/,]);
+    event.groupItems("tfg:rei_groups/input_hatch_4x", "Input Hatch 4x", [/gtceu:.(?!.*energy).*_input_hatch_4x/,]);
+    event.groupItems("tfg:rei_groups/output_hatch_4x", "Output Hatch 4x", [/gtceu:.(?!.*energy).*_output_hatch_4x/,]);
+    event.groupItems("tfg:rei_groups/input_hatch_9x", "Input Hatch 9x", [/gtceu:.(?!.*energy).*_input_hatch_9x/,]);
+    event.groupItems("tfg:rei_groups/output_hatch_9x", "Output Hatch 9x", [/gtceu:.(?!.*energy).*_output_hatch_9x/,]);
+    event.groupItems("tfg:rei_groups/muffler_hatch", "Muffler Hatch", [/gtceu:.*_muffler_hatch$/,]);
+    event.groupItems("tfg:rei_groups/energy_input_hatch", "Energy Input Hatch", [/gtceu:.*_energy_input_hatch$/,]);
+    event.groupItems("tfg:rei_groups/energy_output_hatch", "Energy Output Hatch", [/gtceu:.*_energy_output_hatch$/,]);
+    event.groupItems("tfg:rei_groups/energy_input_hatch_4a", "Energy Input Hatch 4a", [/gtceu:.*_energy_input_hatch_4a/,]);
+    event.groupItems("tfg:rei_groups/energy_output_hatch_4a", "Energy Output Hatch 4a", [/gtceu:.*_energy_output_hatch_4a/,]);
+    event.groupItems("tfg:rei_groups/energy_input_hatch_16a", "Energy Input Hatch 16a", [/gtceu:.*_energy_input_hatch_16a/,]);
+    event.groupItems("tfg:rei_groups/energy_output_hatch_16a", "Energy Output Hatch 16a", [/gtceu:.*_energy_output_hatch_16a/,]);
     event.groupItems("tfg:rei_groups/item_passthrough_hatch", "Item Passthrough Hatch", [/gtceu:.*_item_passthrough_hatch/,]);
     event.groupItems("tfg:rei_groups/fluid_passthrough_hatch", "Fluid Passthrough Hatch", [/gtceu:.*_fluid_passthrough_hatch/,]);
-    event.groupItems("tfg:rei_groups/diode", "diode", [/gtceu:.*_diode/,]);
+    event.groupItems("tfg:rei_groups/substation_input_hatch_64a", "Substation Input Hatch 64a", [/gtceu:.*substation_input_hatch_64a/,]);
+    event.groupItems("tfg:rei_groups/substation_output_hatch_64a", "Substation Output Hatch 64a", [/gtceu:.*_substation_output_hatch_64a/,]);
     event.groupItems("tfg:rei_groups/block_breaker", "Block Breaker", [/gtceu:.*_block_breaker/,]);
-    event.groupItems("tfg:rei_groups/pump", "Pump", [/gtceu:.*_pump/,]);
     event.groupItems("tfg:rei_groups/fisher", "Fisher", [/gtceu:.*_fisher/,]);
     event.groupItems("tfg:rei_groups/rotor_holder", "Rotor Holder", [/gtceu:.*_rotor_holder/,]);
     event.groupItems("tfg:rei_groups/miner", "Miner", [/gtceu:.*_miner/,]);
+    event.groupItems('tfg:rei_groups/firebox_casing', 'Firebox Casing', [/gtceu:.*_firebox_casing/]);
     event.groupItems("tfg:rei_groups/256a_laser_target_hatch", "256a Laser Target Hatch", [/gtceu:.*_256a_laser_target_hatch/,]);
     event.groupItems("tfg:rei_groups/256a_laser_source_hatch", "256a Laser Source Hatch", [/gtceu:.*_256a_laser_source_hatch/,]);
     event.groupItems("tfg:rei_groups/1024a_laser_target_hatch", "1024a Laser Target Hatch", [/gtceu:.*_1024a_laser_target_hatch/,]);
@@ -188,12 +206,14 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/electric_gear_box_8a", "Electric Gear Box 8a", [/gtceu:.*_electric_gear_box_8a/,]);
     event.groupItems("tfg:rei_groups/electric_gear_box_16a", "Electric Gear Box 16a", [/gtceu:.*_electric_gear_box_16a/,]);
     event.groupItems("tfg:rei_groups/electric_gear_box_32a", "Electric Gear Box 32a", [/gtceu:.*electric_gear_box_32a/,]);
-    event.groupItems("tfg:rei_groups/kinetic_output_box", "kinetic Output Box", [/gtceu:.*_kinetic_output_box/,]);
-    event.groupItems("tfg:rei_groups/kinetic_input_box", "kinetic Input Box", [/gtceu:.*_kinetic_input_box/,]);
+    event.groupItems("tfg:rei_groups/kinetic_output_box", "Kinetic Output Box", [/gtceu:.*_kinetic_output_box/,]);
+    event.groupItems("tfg:rei_groups/kinetic_input_box", "Kinetic Input Box", [/gtceu:.*_kinetic_input_box/,]);
+    event.groupItems("tfg:rei_groups/parallel_hatch", "Parallel Hatch", [/gtceu:.*_parallel_hatch/,]);
+    event.groupItems("tfg:rei_groups/oxygen_spreader", "Oxygen Spreader", [/gcyr:.*oxygen_spreader/,]);
 
     event.groupItems("tfg:rei_groups/casting_mold", "Casting Mold", [/gtceu:.*_casting_mold/,]);
     event.groupItems("tfg:rei_groups/head_mold", "Head Mold", [/gtceu:.*_head_mold/,]);
-    event.groupItems("tfg:rei_groups/extruder_mold", "Extruder_mold", [/gtceu:.*_extruder_mold/,]);
+    event.groupItems("tfg:rei_groups/extruder_mold", "Extruder Mold", [/gtceu:.*_extruder_mold/,]);
     event.groupItems("tfg:rei_groups/electric_motor", "Electric Motor", [/gtceu:.*_electric_motor/,]);
     event.groupItems("tfg:rei_groups/fluid_regulator", "Fluid Regulator", [/gtceu:.*_fluid_regulator/,]);
     event.groupItems("tfg:rei_groups/conveyor_module", "Conveyor Module", [/gtceu:.*_conveyor_module/,]);
@@ -204,6 +224,15 @@ const groupGTCEUStuff = (event) => {
     event.groupItems("tfg:rei_groups/emitter", "Emitter", [/gtceu:.*_emitter/,]);
     event.groupItems("tfg:rei_groups/sensor", "Sensor", [/gtceu:.*_sensor/,]);
     event.groupItems("tfg:rei_groups/solar_panel", "Solar Panel", [/gtceu:.*_solar_panel/,]);
+    event.groupItems("tfg:rei_groups/credit", "Сredit", [/gtceu:.*_credit/,]);
+    
+    event.groupItems('tfg:rei_groups/coil_block', 'Coil Block', [/gtceu:.*_coil_block/]);
+    event.groupItems('tfg:rei_groups/machine_casing', 'Machine Casing', [/gtceu:.*_machine_casing/]);
+    event.groupItems('tfg:rei_groups/hermetic_casing', 'Hermetic Casin', [/gtceu:.*_hermetic_casing/]);
+    event.groupItems('tfg:rei_groups/pipe_casing', 'Pipe Casing', [/gtceu:.*_pipe_casing/]);
+    event.groupItems('tfg:rei_groups/gearbox', 'Gearbox', [/gtceu:.*_gearbox/]);
+    event.groupItems('tfg:rei_groups/turbine_casing', 'Turbine Casing', [/gtceu:.*_turbine_casing/]);
+    event.groupItems('tfg:rei_groups/firebox_casing', 'Firebox Casing', [/gtceu:.*_firebox_casing/]);
 
     event.groupItems('tfg:rei_groups/buckets', 'Buckets', [/gtceu:.*_bucket/]);
 }
