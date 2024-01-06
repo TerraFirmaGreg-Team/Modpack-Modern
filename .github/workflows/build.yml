@@ -18,8 +18,7 @@ jobs:
     outputs:
       project_name: ${{ steps.info.outputs.project_name }}
       project_version: ${{ steps.info.outputs.project_version }}
-      mcversion: ${{ steps.info.outputs.mcversion }}
-      tag: ${{ steps.version.outputs.tag }}
+      mc_version: ${{ steps.info.outputs.mc_version }}
       changelog: ${{ steps.changelog.outputs.description }}
     
     steps:
@@ -46,8 +45,8 @@ jobs:
           project_name=`echo $(jq -r '.name' <<< "$manifestjson")`
           echo "project_name=$project_name" >> $GITHUB_OUTPUT
 
-          mcversion=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
-          echo "mcversion=$mcversion" >> $GITHUB_OUTPUT
+          mc_version=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
+          echo "mc_version=$mc_version" >> $GITHUB_OUTPUT
 
           if [[ ${{ startsWith(github.ref, 'refs/tags/') }} == true ]]; then
             echo "project_version=${{ steps.version.outputs.tag }}" >> $GITHUB_OUTPUT
@@ -177,10 +176,9 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     uses: ./.github/workflows/release.yml
     with:
-      project_name: ${{ needs.modpack-info.outputs.project_name }}
-      project_version: ${{ needs.modpack-info.outputs.project_version }}
-      mcversion: ${{ needs.modpack-info.outputs.mcversion }}
-      tag: ${{ needs.modpack-info.outputs.tag }}
-      changelog: ${{ needs.modpack-info.outputs.changelog }}
+      PROJECT_NAME: ${{ needs.modpack-info.outputs.project_name }}
+      PROJECT_VERSION: ${{ needs.modpack-info.outputs.project_version }}
+      MC_VERSION: ${{ needs.modpack-info.outputs.mc_version }}
+      CHANGELOG: ${{ needs.modpack-info.outputs.changelog }}
     secrets: inherit
 
