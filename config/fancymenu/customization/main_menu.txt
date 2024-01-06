@@ -260,7 +260,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://www.curseforge.com/minecraft/modpacks/tfg%btnaction_splitter_fm%
+  buttonaction = openlink;https://www.curseforge.com/minecraft/modpacks/terrafirmagreg%btnaction_splitter_fm%
   backgroundhovered = kubejs/assets/tfg/textures/gui/curseforge_logo_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -276,7 +276,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://discord.gg/AEaCzCTUwQ%btnaction_splitter_fm%
+  buttonaction = openlink;https://discord.gg/terrafirmagregQ%btnaction_splitter_fm%
   backgroundhovered = kubejs/assets/tfg/textures/gui/discord_logo_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -292,7 +292,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://github.com/tfg-Team/TFG-Modpack-1.20.x%btnaction_splitter_fm%
+  buttonaction = openlink;https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x%btnaction_splitter_fm%
   backgroundhovered = kubejs/assets/tfg/textures/gui/github_logo_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -308,7 +308,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://modrinth.com/modpack/tfg%btnaction_splitter_fm%
+  buttonaction = openlink;https://modrinth.com/modpack/terrafirmagreg%btnaction_splitter_fm%
   backgroundhovered = kubejs/assets/tfg/textures/gui/modrinth_logo_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -326,7 +326,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/latest","json_path":"$.tag_name"}}§r
+  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-1.20.x/releases/latest","json_path":"$.tag_name"}}§r
   source = 
   text_border = 0
   case_mode = normal
