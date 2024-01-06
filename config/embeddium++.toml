@@ -11,7 +11,7 @@
 	#You can configure FPS overlay at the corner
 	[EmbeddiumPlus.fps_overlay]
 		#Allowed Values: OFF, SIMPLE, ADVANCED
-		DisplayMode = "ADVANCED"
+		DisplayMode = "OFF"
 		OverlayMargin = 12
 
 	#Configure max BlockEntity distance
