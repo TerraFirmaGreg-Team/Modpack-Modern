@@ -464,5 +464,9 @@ global.CREATE_DISABLED_ITEMS = [
     'create:wooden_bracket', 
     'create:blaze_burner',
     'create:sand_paper',
-    'create:red_sand_paper'
+    'create:red_sand_paper',
+    'create:empty_blaze_burner',
+    'create:minecart_contraption',
+    'create:furnace_minecart_contraption',
+    'create:chest_minecart_contraption'
 ];
