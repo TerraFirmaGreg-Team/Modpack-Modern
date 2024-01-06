@@ -90,6 +90,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/red_seat' },
         { id: 'create:crafting/kinetics/black_seat' },
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
+        { id: 'create:sequenced_assembly/precision_mechanism' },
     ], mod: 'create' })
 
     // Пушка для постройки схематик
@@ -1068,6 +1069,22 @@ const registerCreateRecipes = (event) => {
         .duration(100)
         .EUt(4)
 
+    // Ремень
+    event.recipes.tfc.knapping('create:belt_connector', 'tfc:leather', [
+        " XXX ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+    ]).ingredient('#tfc:leather_knapping').id('tfg:create/shaped/belt_connector')
+
+    event.recipes.gtceu.assembler('tfg:create/belt_connector')             
+        .itemInputs('minecraft:leather')
+        .circuit(2)
+        .itemOutputs('create:belt_connector')
+        .duration(25)
+        .EUt(16)
+        
     //#region Покраска ручек от люка
 
     event.recipes.gtceu.chemical_bath(`create/valve_handle_decolor`)             
@@ -1120,4 +1137,6 @@ const registerCreateRecipes = (event) => {
                 .duration(300)
                 .EUt(4)
     })
+
+    //#endregion
 }
