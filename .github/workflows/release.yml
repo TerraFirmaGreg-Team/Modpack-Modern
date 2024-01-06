@@ -75,7 +75,7 @@ jobs:
 
             **Changelog**
             ```${{ inputs.changelog }}```
-          embed-color: "#57F287"
+          embed-color: 5814783
 
   release-github:
     name: Deploy to GitHub
