@@ -18,8 +18,8 @@ jobs:
     outputs:
       project_name: ${{ steps.info.outputs.project_name }}
       project_version: ${{ steps.info.outputs.project_version }}
-      MC_VERSION: ${{ steps.info.outputs.mc_version }}
-      CHANGELOG: ${{ steps.changelog.outputs.description }}
+      mc_version: ${{ steps.info.outputs.mc_version }}
+      changelog: ${{ steps.changelog.outputs.description }}
     
     steps:
       - name: Checkout
