@@ -68,7 +68,7 @@ jobs:
           embed-description: |
             **Release Type**: `BETA`
             **GameVersion**: `1.20.1`
-            **Website Link**: `[CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5010505)`
+            **Website Link**: `[CurseForge](<https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5010505>)`
 
             **Changelog**
             ```${{ steps.changelog.outputs.description }}```
