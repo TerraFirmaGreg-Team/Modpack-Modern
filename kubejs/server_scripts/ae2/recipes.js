@@ -190,7 +190,7 @@ const registerAE2Recipes = (event) => {
         'FEF'
     ], {
         A: 'ae2:wireless_receiver',
-        B: 'ae2:crafting_terminal',
+        B: 'ae2:terminal',
         C: 'ae2:engineering_processor',
         D: '#forge:circuits/hv',
         E: 'gtceu:hv_lithium_battery',
