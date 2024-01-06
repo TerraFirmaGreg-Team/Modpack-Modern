@@ -4,16 +4,16 @@ run-name: "Release #${{ github.run_number }}"
 on:
   workflow_call:
     inputs:
-      PROJECT_NAME:
+      project_name:
         required: true
         type: string
-      PROJECT_VERSION:
+      project_version:
         required: true
         type: string
-      MC_VERSION:
+      mc_version:
         required: true
         type: string
-      CHANGELOG:
+      changelog:
         required: true
         type: string
 
@@ -37,27 +37,27 @@ jobs:
       - name: Download cf modpack
         uses: actions/download-artifact@v4.1.0
         with:
-          name: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-cf
+          name: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf
 
       - name: Download serverpack
         uses: actions/download-artifact@v4.1.0
         with:
-          name: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-server
+          name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
 
-      - name: Upload Curseforge
-        id: cf_release
-        uses: SwitchAlpha/upload-curseforge-modpack-action@master
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ env.CF_PROJECT_ID }}
-          modpack-path: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-cf.zip
-          modpack-server-path: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-server.zip
-          changelog: ${{ inputs.CHANGELOG }}
-          changelog-format: markdown
-          game-version: ${{ inputs.MC_VERSION }}
-          display-name: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}
-          server-display-name: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-server
-          release-type: ${{ env.RELEASE_TYPE }}
+      # - name: Upload Curseforge
+      #   id: cf_release
+      #   uses: SwitchAlpha/upload-curseforge-modpack-action@master
+      #   with:
+      #     api-token: ${{ secrets.CF_API_TOKEN }}
+      #     project-id: ${{ env.CF_PROJECT_ID }}
+      #     modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+      #     modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+      #     changelog: ${{ inputs.changelog }}
+      #     changelog-format: markdown
+      #     game-version: ${{ inputs.mc_version }}
+      #     display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+      #     server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
+      #     release-type: ${{ env.RELEASE_TYPE }}
 
       - name: Send Discord message
         uses: tsickert/discord-webhook@v5.4.0
@@ -65,16 +65,16 @@ jobs:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png"
-          embed-title: Release ${{ inputs.PROJECT_VERSION }}
-          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ inputs.PROJECT_VERSION }}
+          embed-title: Release ${{ inputs.project_version }}
+          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ inputs.project_version }}
           embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
-            **GameVersion**: `${{ inputs.MC_VERSION }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ steps.cf_release.outputs.id }})
+            **GameVersion**: `${{ inputs.mc_version }}`
+            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5012772)
 
             **Changelog**
-            ```${{ inputs.CHANGELOG }}```
+            ```${{ inputs.changelog }}```
           embed-color: "#57F287"
 
   release-github:
@@ -91,13 +91,13 @@ jobs:
         with:
           prerelease: false
           generate_release_notes: true
-          name: ${{ inputs.PROJECT_VERSION }}
+          name: ${{ inputs.project_version }}
           body: ${{ inputs.CHANGELOG }}
           files: |
-            ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-cf.zip
-            ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-mmc.zip
-            ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-server.zip
-          tag_name: ${{ inputs.PROJECT_VERSION }}
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-mmc.zip
+            ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+          tag_name: ${{ inputs.project_version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -128,13 +128,13 @@ jobs:
   #       with:
   #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
   #         project-id: ${{ env.MODRINTH_PROJECT_ID }}
-  #         modpack-path: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-mrd.zip
-  #         modpack-server-path: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-server.zip
+  #         modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-mrd.zip
+  #         modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
   #         changelog: "${{ inputs.CHANGELOG }}"
   #         changelog-format: markdown
-  #         game-version: ${{ inputs.mcversion }}
-  #         display-name: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}
-  #         server-display-name: ${{ inputs.PROJECT_NAME }}-${{ inputs.PROJECT_VERSION }}-server
+  #         game-version: ${{ inputs.mc_version }}
+  #         display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+  #         server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
   #         release-type: ${{ env.RELEASE_TYPE }}
 
   close-fixed-issues:
@@ -149,7 +149,7 @@ jobs:
         uses: juraj-hrivnak/close-issues-based-on-label@master
         env:
           LABEL: "2. status: fixed in dev"
-          VERSION: ${{ inputs.PROJECT_VERSION }}
+          VERSION: ${{ inputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       

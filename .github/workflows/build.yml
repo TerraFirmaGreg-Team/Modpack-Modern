@@ -176,9 +176,9 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     uses: ./.github/workflows/release.yml
     with:
-      PROJECT_NAME: ${{ needs.modpack-info.outputs.project_name }}
-      PROJECT_VERSION: ${{ needs.modpack-info.outputs.project_version }}
-      MC_VERSION: ${{ needs.modpack-info.outputs.mc_version }}
-      CHANGELOG: ${{ needs.modpack-info.outputs.changelog }}
+      project_name: ${{ needs.modpack-info.outputs.project_name }}
+      project_version: ${{ needs.modpack-info.outputs.project_version }}
+      mc_version: ${{ needs.modpack-info.outputs.mc_version }}
+      changelog: ${{ needs.modpack-info.outputs.changelog }}
     secrets: inherit
 
