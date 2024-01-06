@@ -148,7 +148,7 @@ jobs:
       - name: close-fixed-in-dev
         uses: juraj-hrivnak/close-issues-based-on-label@master
         env:
-          LABEL: "2. status: fixed in dev"
+          LABEL: "2. Status: Fixed in Dev"
           VERSION: ${{ inputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
