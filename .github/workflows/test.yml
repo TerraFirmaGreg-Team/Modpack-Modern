@@ -1,0 +1,75 @@
+name: Test
+run-name: "Test #${{ github.run_number }}"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  modpack-info:
+    name: Modpack Info
+    runs-on: ubuntu-latest
+    outputs:
+      project_name: ${{ steps.info.outputs.project_name }}
+      project_version: ${{ steps.info.outputs.project_version }}
+      mcversion: ${{ steps.info.outputs.mcversion }}
+      tag: ${{ steps.version.outputs.tag }}
+      changelog: ${{ steps.changelog.outputs.description }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      # - name: Get tag
+      #   id: version
+      #   uses: "WyriHaximus/github-action-get-previous-tag@v1.3.0"
+      #   with:
+      #     fallback: tag_not_found
+
+      # - name: Modpack info
+      #   id: info
+      #   shell: bash
+      #   run: |
+      #     set +e
+
+      #     if [ ! -f ./.github/buildtools/modpack/manifest.json ]; then
+      #       echo "::error::Could not find manifest.json" && exit 1
+      #     fi
+      #     manifestjson=`cat ./.github/buildtools/modpack/manifest.json`
+
+      #     project_name=`echo $(jq -r '.name' <<< "$manifestjson")`
+      #     echo "project_name=$project_name" >> $GITHUB_OUTPUT
+
+      #     mcversion=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
+      #     echo "mcversion=$mcversion" >> $GITHUB_OUTPUT
+
+      #     if [[ ${{ startsWith(github.ref, 'refs/tags/') }} == true ]]; then
+      #       echo "project_version=${{ steps.version.outputs.tag }}" >> $GITHUB_OUTPUT
+      #     else
+      #       echo "project_version=build.${{ github.run_number }}" >> $GITHUB_OUTPUT
+      #     fi
+
+      - name: Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+
+      - name: Send Discord message
+        uses: tsickert/discord-webhook@v5.4.0
+        with:
+          webhook-url: ${{secrets.RELEASES_1_20}}
+          username: "TerraFirmaGreg"
+          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png"
+          embed-title: Release 0.4.2
+          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/0.4.2
+          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
+          embed-description: |
+            **Release Type**: `BETA`
+            **GameVersion**: `1.20.1`
+            **Website Link**: `[CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5010505)`
+
+            **Changelog**
+            ```${{ steps.changelog.outputs.description }}```
+          embed-color: 15430476
