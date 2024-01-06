@@ -44,8 +44,8 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/track_signal' },
         { id: 'create:crafting/kinetics/track_observer' },
         { id: 'create:crafting/kinetics/controls' },
-        { id: 'create:crafting/kinetics/content_observer' },
-        { id: 'create:crafting/kinetics/stockpile_switch' },
+        { id: 'create:crafting/logistics/content_observer' },
+        { id: 'create:crafting/logistics/stockpile_switch' },
         { id: 'create:crafting/logistics/display_link' },
         { id: 'create:crafting/kinetics/nixie_tube' },
         { id: 'create:crafting/logistics/redstone_link' },
@@ -91,6 +91,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/black_seat' },
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:sequenced_assembly/precision_mechanism' },
+        { id: 'create:crafting/logistics/content_observer' },
     ], mod: 'create' })
 
     // Пушка для постройки схематик
@@ -189,7 +190,7 @@ const registerCreateRecipes = (event) => {
     event.recipes.createMechanicalCrafting('2x create:crushing_wheel', [
         ' AAA ',
         'AABAA',
-        'ABCBC',
+        'ABCBA',
         'AABAA',
         ' AAA '
     ], {
@@ -686,12 +687,12 @@ const registerCreateRecipes = (event) => {
     ], {
         A: '#forge:chests/wooden',
         B: '#forge:sheets/wrought_iron',
-        C: '#forge:screw/wrought_iron',
+        C: '#forge:screw/steel',
         D: '#forge:tools/screwdrivers'
     }).id('tfg:create/shaped/item_vault')
 
     event.recipes.gtceu.assembler('tfg:create/item_vault')             
-        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/wrought_iron')
+        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/steel')
         .circuit(3)
         .itemOutputs('create:item_vault')
         .duration(200)

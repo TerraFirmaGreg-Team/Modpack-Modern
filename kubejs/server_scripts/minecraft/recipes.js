@@ -2573,6 +2573,16 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Незер бревна
+
+    event.remove({ id: 'minecraft:stripped_crimson_stem_via_vanilla_stripping' })
+    event.remove({ id: 'minecraft:stripped_crimson_hyphae_via_vanilla_stripping' })
+
+    event.remove({ id: 'minecraft:stripped_warped_stem_via_vanilla_stripping' })
+    event.remove({ id: 'minecraft:stripped_warped_hyphae_via_vanilla_stripping' })
+
+    //#endregion
+
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
     event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')
