@@ -44,20 +44,20 @@ jobs:
         with:
           name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
 
-      # - name: Upload Curseforge
-      #   id: cf_release
-      #   uses: SwitchAlpha/upload-curseforge-modpack-action@master
-      #   with:
-      #     api-token: ${{ secrets.CF_API_TOKEN }}
-      #     project-id: ${{ env.CF_PROJECT_ID }}
-      #     modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
-      #     modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-      #     changelog: ${{ inputs.changelog }}
-      #     changelog-format: markdown
-      #     game-version: ${{ inputs.mc_version }}
-      #     display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
-      #     server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
-      #     release-type: ${{ env.RELEASE_TYPE }}
+      - name: Upload Curseforge
+        id: cf_release
+        uses: SwitchAlpha/upload-curseforge-modpack-action@master
+        with:
+          api-token: ${{ secrets.CF_API_TOKEN }}
+          project-id: ${{ env.CF_PROJECT_ID }}
+          modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
+          modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
+          changelog: ${{ inputs.changelog }}
+          changelog-format: markdown
+          game-version: ${{ inputs.mc_version }}
+          display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
+          server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
+          release-type: ${{ env.RELEASE_TYPE }}
 
       - name: Send Discord message
         uses: tsickert/discord-webhook@v5.4.0
@@ -71,7 +71,7 @@ jobs:
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
             **GameVersion**: `${{ inputs.mc_version }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5012772)
+            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ steps.cf_release.outputs.id }})
 
             **Changelog**
             ```${{ inputs.changelog }}```
