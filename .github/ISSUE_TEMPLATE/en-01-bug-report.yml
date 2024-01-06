@@ -1,15 +1,13 @@
 name: "[EN] Bug report"
 description: Report a bug where something is not working as expected, which does not crash the game.
-labels: [ "1. type: bug", "2. status: unverified" ]
+labels: [ "1. Type: Bug", "2. Status: Unverified" ]
 body:
-  - type: dropdown
+  - type: input
     id: version
     attributes:
-      label: Are you using the latest available version?
-      description: If not, update.
+      label: Version modpack Used
+      description: Write which version of the modpack you are using.
       placeholder: "Example: 0.1.1"
-      options:
-        - "Yes"
     validations:
       required: true
   - type: input

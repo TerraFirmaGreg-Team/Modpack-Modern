@@ -1,12 +1,13 @@
 name: "[RU] Запросить функцию"
 description: Запросите новую функцию или изменение существующей.
-labels: [ "1. type: feature" ]
+labels: [ "1. Type: Feature" ]
 body:
   - type: input
     id: version
     attributes:
-      label: Версия используемого модпака
-      description: Удостоверьтесь что у вас последняя версия
+      label: Версия модпака.
+      description: Напишите, какую версию модпака вы используете.
+      placeholder: "Пример: 0.1.1"
     validations:
       required: true
   - type: textarea
