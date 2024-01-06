@@ -276,7 +276,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://discord.gg/terrafirmagregQ%btnaction_splitter_fm%
+  buttonaction = openlink;https://discord.gg/terrafirmagreg%btnaction_splitter_fm%
   backgroundhovered = kubejs/assets/tfg/textures/gui/discord_logo_hovered.png
   label = 
   loopbackgroundanimations = true
