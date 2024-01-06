@@ -962,6 +962,95 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Стальные машины
+
+    // Экстрактор
+    event.shaped('gtceu:hp_steam_extractor', [
+        'BEB',
+        'CAC',
+        'DBD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron',
+        E: '#forge:glass_panes'
+    }).id('gtceu:shaped/steam_extractor_steel')
+
+    // Дробитель
+    event.shaped('gtceu:hp_steam_macerator', [
+        'CCC',
+        'BAB',
+        'DDD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_macerator_steel')
+
+    // Компрессор
+    event.shaped('gtceu:hp_steam_compressor', [
+        'BCB',
+        'DAD',
+        'BBB'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_compressor_steel')
+
+    // Молот
+    event.shaped('gtceu:hp_steam_forge_hammer', [
+        'DDD',
+        'BAB',
+        'CCC'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_hammer_steel')
+
+    // Печь
+    event.shaped('gtceu:hp_steam_furnace', [
+        'BCB',
+        'DAD',
+        'BCB'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_furnace_steel')
+
+    // Сплавщик
+    event.shaped('gtceu:hp_steam_alloy_smelter', [
+        'DCD',
+        'DAD',
+        'DBD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_alloy_smelter_steel')
+
+    // Блоко-ломатель
+    event.shaped('gtceu:hp_steam_rock_crusher', [
+        'DCD',
+        'BAB',
+        'DDD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_rock_breaker_steel')
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
