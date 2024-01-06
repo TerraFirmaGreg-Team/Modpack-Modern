@@ -331,7 +331,7 @@ customization {
   case_mode = normal
   source_mode = direct
   line_spacing = 1
-  x = 0
+  x = 1
   width = 163
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = a5845307-9494-47b0-87c0-e398a680e9e01700129661006
@@ -343,7 +343,7 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
   orientation = bottom-left
-  x = 1
+  x = 2
   action = movebutton
   y = -10
 }
