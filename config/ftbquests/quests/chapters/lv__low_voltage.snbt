@@ -1,0 +1,1986 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv__low_voltage"
+	group: "693226878D58638A"
+	icon: "gtceu:lv_electric_motor"
+	id: "7D50771C3FE033D7"
+	order_index: 1
+	quest_links: [{
+		id: "376725077649D2CC"
+		linked_quest: "5A8F0124E07D5025"
+		shape: "gear"
+		size: 1.2d
+		x: 2.25d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["2F7617C0C4B330DE"]
+			description: [
+				"The &aFluid Regulator&r is sort of the equivalent to a &9Robot Arm&r for Fluids."
+				""
+				"It can transfer fluids, but has two useful modes:"
+				""
+				"&9-&r &dSupply Exact&r will transfer the amount of specified Fluid per tick if available. No more, no less."
+				"&9-&r &dKeep Exact&r will make sure the exact amount of Fluid in the attached machine is being kept."
+			]
+			id: "47D4545452F05E37"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "A cover!"
+			tasks: [{
+				id: "5E8D784C83A4F672"
+				item: "gtceu:lv_fluid_regulator"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 1.125d
+		}
+		{
+			dependencies: ["38993B4697B0E16C"]
+			description: [
+				"When placed on a machine, Robot Arms are a more configurable version of a Conveyor Module. They allow you to transfer items in specific batches, at specific rates, or keep a certain amount of items stocked."
+				""
+				"Practical uses for the Robot Arm will be explained in future Quests as a tutorial."
+				""
+				"&9Note:&r The functionalities provided by the Robot Arm work &lonly&r if it is &lrequired&r to perform the operation."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o GregTech 5 had blocks such as the Buffer, Filter and Type Filter to allow fine control over items. In GTCE it's all been replaced by the almighty Robot Arm and various Filter Covers. Much more compact!"
+			]
+			id: "3DE7A2B91CFF48F6"
+			rewards: [{
+				id: "372D894C29C4513C"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "You're going to hate making these"
+			tasks: [{
+				id: "7D7A9CBE1E368E53"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A8F0124E07D5025"]
+			description: [
+				"Less common as a component, but used in a number of critical machines."
+				""
+				"When placed on a machine, conveyor modules will transfer items. You can configure them to import or export."
+				""
+				"They can also accept various &9Item Filters&r."
+			]
+			id: "288CE4AA4C5AA8BF"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "A crafting component, but also a cover!"
+			tasks: [{
+				id: "064169E7E2772387"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 1.125d
+		}
+		{
+			dependencies: ["5A8F0124E07D5025"]
+			description: [
+				"When placed on a machine, pumps will transfer fluid. You can configure them to import or export."
+				""
+				"It can accept a &9Fluid Filter&r."
+			]
+			id: "2F7617C0C4B330DE"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "A crafting component, but also a cover!"
+			tasks: [{
+				id: "7A37B370D2D40E6A"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: -1.125d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A8F0124E07D5025"]
+			description: [
+				"A specialized motor needed to make certain machines."
+				""
+				"One of the more intricate crafting components, as it's made using a motor."
+			]
+			id: "38993B4697B0E16C"
+			rewards: [{
+				count: 4
+				id: "05D8932AEED073F8"
+				item: "gtceu:steel_small_gear"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "A crafting component - did you expect anything fancier?"
+			tasks: [{
+				id: "70FEF63FB9A58B02"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 1.125d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4B979482EF026BFF"
+				"5A8F0124E07D5025"
+			]
+			description: [
+				"The &3Steam Turbine&r is the only Generator you can realistically use in &7LV&r. &2Later, you'll unlock more interesting Power options&r, such as natural gases or petrols."
+				""
+				"When provided Steam, the turbine will output EU at a ratio of &d2 Steam = 1 EU&r."
+				""
+				"&6This quest unlocks two new tutorials on Electricity and Cables in the &lTips and Tricks&r&6 tab - check them out to learn more!&r"
+				"{@pagebreak}"
+				"If you're using a single &3Steam Turbine&r, you only need &a1x Tin Cables&r. On the other hand, if you upgrade to &32 Steam Turbines&r, you should use &a2x Tin Cables&r - else they may end up &cburning&r."
+				""
+				"This is because of the &9Amperage&r mechanic... but that will be explained later so you can enjoy playing. Don't worry!"
+			]
+			id: "6E186F9C57155BFA"
+			size: 0.75d
+			subtitle: "You must construct more turbines"
+			tasks: [{
+				id: "155BC745245BCBAF"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "Electricity Generation"
+			x: 3.375d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6431381FBE07D6EF"]
+			description: [
+				"This questline serves as a quick guide to &9GregTech Amperage&r. As for &dVoltage&r mechanics, we'll go over those once you reach &bMV&r."
+				""
+				"&6&lTL;DR:&r For safety, match the Amperage limit of your Cables with the max amount of Amps provided by your Energy Producers."
+				""
+				"&6This quest unlocks a new tutorial on Amperage in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+			]
+			id: "7B0FF43022F6C2EC"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Amps and You: a how-to"
+			tasks: [{
+				count: 4L
+				id: "1C81FD3C54CC2274"
+				item: "gtceu:tin_quadruple_cable"
+				type: "item"
+			}]
+			title: "But what are Amps?"
+			x: 6.75d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"1E9BE8D3F8A602DC"
+				"45B71324028F6E68"
+			]
+			description: [
+				"Well... can you show us an &bMV&r Circuit as well?"
+				""
+				"&aAluminium&r is the main ingredient for &bMV&r machinery. Check aaaall the way to the other side for the &2Sapphire Quest&r if you haven't acquired any &aAluminium Dust&r yet."
+				""
+				"Once you setup an &3MV Electrolyzer&r, you can get &aAluminium&r through many other ores. All of this quest's rewards bear &aAluminium&r, so keep an eye out for them when mining."
+				""
+				"The process of smelting Aluminium can be cut down by about a third with &9Nitrogen&r, which is obtained by centrifuging &9Air&r from a &3Gas Collector&r."
+				""
+				"&6You will still need MV Circuits in order to make MV machines!&r"
+			]
+			id: "7567E885B7166603"
+			rewards: [{
+				count: 8
+				id: "19987707822BC176"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "We're basically in MV now, right?"
+			tasks: [{
+				id: "161B5813936E5E42"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 9.393452380952382d
+			y: 3.360459183673477d
+		}
+		{
+			dependencies: ["4B979482EF026BFF"]
+			description: [
+				"Make some Battery Alloy, used for Battery Hulls."
+				""
+				"Antimony is found in the &cNether&r, so don't forget to check its Ore Tab."
+				""
+				"&9Note:&r This quest does &lnot&r contain functional Batteries - head downwards for that."
+			]
+			icon: "gtceu:battery_alloy_ingot"
+			id: "6D9D54FAB21EC086"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Batteries are great!"
+			tasks: [
+				{
+					count: 2L
+					id: "02A2F0C2179EB4E3"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/battery_alloy"
+						}
+					}
+					title: "Any #forge:ingots/battery_alloy"
+					type: "item"
+				}
+				{
+					id: "7B4585B39907E2EA"
+					item: "gtceu:lv_battery_hull"
+					type: "item"
+				}
+			]
+			title: "Battery Preparations!"
+			x: 4.875d
+			y: 2.31d
+		}
+		{
+			dependencies: ["1C767009F505A813"]
+			description: [
+				"In theory, Crates are flat upgrades to Chests. A single block space that stores more items - what more could you ask for?"
+				""
+				"Unfortunately, there's a small downside - Crates do not support item movement shortcuts well. We plan on fixing this in the long-term."
+				""
+				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
+			]
+			id: "7CCC1BDDE0C67F16"
+			rewards: [{
+				id: "1CADDD995C2DD509"
+				item: "ae2:sky_stone_chest"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Earlygame buffering"
+			tasks: [{
+				id: "6FE87ED832BF40D1"
+				item: "gtceu:steel_crate"
+				type: "item"
+			}]
+			title: "GregTech Storage"
+			x: 0.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"288CE4AA4C5AA8BF"
+				"3DE7A2B91CFF48F6"
+				"2F7617C0C4B330DE"
+			]
+			description: [
+				"Covers are placed by right-clicking with Cover in hand on a face of a machine, and removed with a &5Crowbar&r (or by mining the machine, but that's way slower)."
+				""
+				"Pretty much any GregTech Tile-Entity will accept Covers, even if they wouldn't provide any functionality."
+				""
+				"Opening a Cover is done by sneak-right-clicking it with an &5empty hand&r. You can also right-click with a &5Screwdriver&r, or sneak-right-click on another face using the grid."
+				"{@pagebreak}"
+				"For Covers that transfer Items/Fluids, you will have a button to enable/disable other forms of transfer through the cover:"
+				""
+				"&9- &rDisabled: only the cover will be allowed to transfer on this machine side."
+				""
+				"&9-&r Allow Filtered (only relevant with a filter!): other transfer will be enabled only if it matches the filter"
+				""
+				"&9-&r Allow Unfiltered: any other transfer is allowed on this machine side."
+				""
+				"Placing a cover of a lower voltage tier on a machine is &9safe&r."
+			]
+			icon: "gtceu:crafting_table_cover"
+			id: "1C767009F505A813"
+			rewards: [{
+				id: "05BAD11184608890"
+				item: "gtceu:crafting_table_cover"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Extra utility without taking up blockspace!"
+			tasks: [{
+				id: "7C7A8A26D3FF0E96"
+				title: "I'm an expert on Covers now, don't you worry."
+				type: "checkmark"
+			}]
+			title: "Cover Behaviour"
+			x: 0.0d
+			y: 1.125d
+		}
+		{
+			dependencies: ["32EA7E81885C8E87"]
+			description: [
+				"All machines typically have one &7Front Face&r, and one &9Output Face&r."
+				""
+				"The &7Front Face&r should be obvious.\\nThe &9Output Face&r is the face with a dot or hole on it. By default, this is at the back of the machine as you place it."
+				""
+				"Machines can &aauto-output&r through their output face. To enable auto-output, click the appropriate button in the GUI. Fluid and item auto-outputs are toggled separately. Further control over auto-outputs can be achieved with &dFilters&r and &dCovers&r, which are explained in the quest to the upper left of this one."
+				"{@pagebreak}"
+				"Right-clicking a machine with a &5Wrench&r changes the output side, and shift-right-clicking changes the front side. Keep in mind that the front side &ccannot&r also be the output side! "
+				""
+				"By default, items and fluids cannot be inserted through the output side, but this can be toggled with a &5Screwdriver&r. Either right-click the output face directly, or shift-right-click on the grid corresponding to the side of the output."
+				""
+				"There are unique machines that do not process recipes, such as the &3Pump&r, &3Miner&r, &3Fisher&r, &3Item Collector&r, etc. These machines will output on their &7Front Face&r (which is still marked as a dot)."
+			]
+			icon: "minecraft:hopper"
+			id: "64E1E87B8AF72968"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Let's learn."
+			tasks: [{
+				id: "6A4DFF7493955B8D"
+				title: "Hmm, how interesting!"
+				type: "checkmark"
+			}]
+			title: "Machine Auto-Output Behaviour"
+			x: 1.125d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"4B979482EF026BFF"
+				"5A8F0124E07D5025"
+			]
+			description: [
+				"You could make any other &7LV&r Machine, but it would be easiest to start with the most useful one. We know, we know... you wanna make some of the crazier stuff first, but trust us, this is the best starting point."
+				""
+				"The Wiremill lets you make &6two Wires from one Ingot&r. That should be three times cheaper than what you were doing up until now!"
+				""
+				"To the right of this Quest, you'll find some important machines which will grant you cheaper intermediates."
+				"{@pagebreak}"
+				"&9Note:&r Recipes inside &3LV Machines&r go up to a maximum usage of &a32 EU/t (LV)&r. Anything higher than that and you will need a &bMV&r (or better) Machine. Needless to say, we aren't quite there yet."
+				""
+				"You will need a &dProgrammed Circuit&r for certain recipes. We're sure you don't want to spend a precious Circuit to craft one, so &6read the dedicated quest for important details&r."
+				""
+				"With this machine safely crafted - welcome to the age of all things electric!"
+			]
+			id: "32EA7E81885C8E87"
+			rewards: [{
+				count: 4
+				id: "2B736C4992CDC8D1"
+				item: "gtceu:copper_single_wire"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "No more painful wires!"
+			tasks: [{
+				id: "2B5BF6F3ED693B9E"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			title: "Basic Wiremill"
+			x: 2.25d
+			y: 1.125d
+		}
+		{
+			dependencies: ["32EA7E81885C8E87"]
+			description: [
+				"Arguably the second best &7LV&r machine to craft, but we're down if you want to argue otherwise."
+				""
+				"This unlocks the ability to convert one &6Ingot into one Plate&r, which is a better ratio than the Forge Hammer."
+			]
+			id: "10ECB471A77F5136"
+			rewards: [{
+				count: 4
+				id: "6DF60970CB48982D"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "The Bender bends!"
+			tasks: [{
+				id: "3AC3A8728EE60E4C"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			title: "Basic Bender"
+			x: 4.5d
+			y: 1.125d
+		}
+		{
+			dependencies: ["32EA7E81885C8E87"]
+			description: [
+				"The Lathe is an important machine to help shape metals. Thanks to it, you can turn &6one Ingot into two Rods&r, and &6one Bolt into one screw&r. That's twice the efficiency on those recipes as opposed to crafting by hand."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The GregTech 5 Lathe produces one Rod and 2 small piles of Dust per Ingot. We also have a setting for this in GTCEu, but it's turned off by default."
+				""
+				"&oThe GT6 Lathe acts like GT5's, but Bolts lathe into one Screw and 1/72 of a pile of Dust. Disgusting!"
+			]
+			id: "07E7678095258EDB"
+			rewards: [{
+				count: 4
+				id: "09FC4530E70B9105"
+				item: "gtceu:steel_rod"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "The Lathe lathes!"
+			tasks: [{
+				id: "6781D0241D0564A5"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			title: "Basic Lathe"
+			x: 3.375d
+			y: 1.125d
+		}
+		{
+			dependencies: ["32EA7E81885C8E87"]
+			description: ["One of the cheapest - if not the cheapest - &7LV&r machine. Use this to make &6Redstone-free Magnetic Rods&r for your Motors. Whenever you start to batch your Motors, this machine will save you stacks and stacks of Redstone."]
+			id: "29379C91D6E00436"
+			rewards: [{
+				count: 16
+				id: "47F3A37E7A315A1D"
+				item: "minecraft:redstone"
+				random_bonus: 16
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "The Polarizer polarizes!"
+			tasks: [{
+				id: "5EC42A72DEC6F9FC"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			title: "Basic Polariser"
+			x: 5.625d
+			y: 1.125d
+		}
+		{
+			dependencies: ["29379C91D6E00436"]
+			description: [
+				"&dSneak right-click&r when in hand to activate your Magnet. Do it again to deactivate. This magnet will also work from your Curio slots."
+				""
+				"&9Note:&r If you're worried about getting overwhelmed by Cobblestone or Netherrack, use the trash can from FTB Utilities (top left corner of your inventory) to void them."
+			]
+			id: "3ECD9C9B909CCCCC"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Why can't these items I mine behave and enter my inventory!?"
+			tasks: [{
+				id: "2F5FB2546075FFE0"
+				item: {
+					Count: 1b
+					id: "simplemagnets:basicmagnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Magnet"
+			x: 5.61d
+			y: 2.31d
+		}
+		{
+			dependencies: ["6431381FBE07D6EF"]
+			description: [
+				"&oThe &3Large Boiler&r is an &6optional&r big-boy variant of the Small Boilers. It runs off solid or liquid fuel."
+				""
+				"If you want Steam-based power production, this will be your first port-of-call. Other power options are listed in the &bMV&r chapter."
+				""
+				"&cImportant:&r This Boiler &lCAN&r also &cexplode&r similarly to the regular Boilers! Usually, the explosion can be rather devastating... but it's configured to not damage blocks or entities in this modpack."
+				"{@pagebreak}"
+				"&cWater supply is &lcrucial&r&r. Dedicate a &3Primitive Pump&r with a &7LV&r Output Hatch in the &lsame chunk&r as the Boiler. Any biome will still be enough to supply enough water."
+				""
+				"Once fully heated up, the &3LBB&r produces 800 Steam per tick, which is &d400EU/t&r after conversion, or 12.5 Basic Steam Turbines. Such (relatively!) immense power comes at the cost of &la lot&r of burnable fuel."
+				"{@pagebreak}"
+				"&5&lWith this in consideration&r, the GUI lets you &9throttle&r the Boiler down to 25% power for 200 Steam per tick. That's &d100EU/t&r, or slightly above 3 Basic Steam Turbines."
+				""
+				"&9Note:&r An in-depth tutorial about Multiblocks is given after you get the &3Electric Blast Furnace&r. We recommend you aim for that first."
+			]
+			id: "33263404ED38C6D2"
+			rewards: [{
+				id: "1BEF1D97E033F1B1"
+				item: "gtceu:steam_bucket"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "Boom, boom, boom, boom"
+			tasks: [{
+				id: "560D4D0D6BECE006"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["1E9BE8D3F8A602DC"]
+			description: [
+				"&6Superconductors&r are special Wires available for each Voltage tier. They don't come with a Cable counterpart, but that isn't necessary, as they have absolutely &6zero cable loss&r."
+				""
+				"They also won't damage you when you touch them. This makes them the best choice for wiring, if not a little expensive in comparison to the other wires."
+				""
+				"If you weren't already enamoured, the 1x variant also covers 2 Amps. Isn't that nice?"
+				""
+				"Now is a good time to replace your crappy &aTin Cables&r. Recycle them in the &3Packager&r to recover both the Tin and Rubber used to craft them."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o No version of GregTech has had actual Superconductors for &7LV&f up until Gregicality and GTCEu, though some modpacks had lossless cables."
+			]
+			id: "46AD7A6F3B6775F5"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "4477AB06651827D6"
+				item: "gtceu:manganese_phosphide_single_wire"
+				type: "item"
+			}]
+			title: "LV Superconductor"
+			x: 7.875d
+			y: 2.25d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"The &3Thermal Centrifuge&r is the most energy hungry out of the Ore Processing machines. It takes &aCrushed Ore&r or &aPurified Ore&r to give a different &6Byproduct&r from the &3Ore Washer&r, but at the same rate."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The GT5 Thermal Centrifuge required 48 EU/t to run. Yes, this may be above 32 EU/t, but GT5 had &dspecial mechanics&f where certain machines such as this one could accept more than 1 Amp."
+				""
+				"&oIn GTCE, the Thermal Centrifuge was changed to only work at &bMV&f with 60EU/t recipes. Let's be completely honest with you... what a &4complete waste of time&f! Never worth it. Thankfully, we've buffed the machine to be much more relevant."
+			]
+			id: "772F7CD63D31966A"
+			size: 0.75d
+			tasks: [{
+				id: "10AB20A316EA688F"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			title: "Basic Thermal Centrifuge"
+			x: -0.375d
+			y: 3.375d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"The Sifter sifts &dGem type&r &aPurified Ores&r to find &aExquisite&r and &aFlawless&r Gems, which can be cut into normal Gems. It also finds &aPurified Dusts&r of that gem. Overall, this gives a &6higher yield&r than other means."
+				""
+				"A small amount of &dFlawless Emerald&r will be required in &bMV&r, and running ores in &3Sifting Machine&r is how you obtain them."
+				""
+				"Each higher tier of &3Sifter&r increases the chance of all Gem types to be found, at the cost of more energy. "
+				""
+				"&9Note:&r If you crushed Gem Ores (such as Diamond), it is critical you use this machine to recover the actual gems in non dust form. However, this is a rather slow process, so you may want to smelt this type of ore directly into the Gem."
+			]
+			id: "7A64425597F58015"
+			size: 0.75d
+			tasks: [{
+				id: "2D87ADACFE1EF8E5"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 5.625d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"&lOutside of Ore Processing:&r"
+				""
+				"You can make &6Paper out of Wood&r so that you no longer rely on &aSugar Canes&9*&r. You're probably sick of them by now, especially if you've played Nomifactory."
+				""
+				"There are some other less important recipes, such as applying colours to various items and blocks, or bleaching them."
+				""
+				"&9*&r &aSugar&r is still useful as a requirement for &cTNT&r production in &6HV&r, so don't dismantle your setups."
+				"{@pagebreak}"
+				"&lFor Ore Processing:&r"
+				""
+				"Some &aCrushed Ores&r have alternate routes when washed into &aPurified Ore&r, involving bathing in either &aMercury&r or &aSodium Persulfate&r. This step isn't really important, unless you really want that special &6Byproduct&r. This can be a nice alternate source of Gold (hint, hint!)."
+			]
+			id: "330BDB559A7BAB35"
+			size: 0.75d
+			subtitle: "The Chemical Bath bathes..."
+			tasks: [{
+				id: "526A5FF9B5DBB129"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			title: "Basic Chemical Bath"
+			x: 1.125d
+			y: 3.375d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"This machine combines washing for simple automation, but also advanced and precise washing for byproducts."
+				""
+				"Washing a &aCrushed Ore&r will grant a &aPurified Ore&r which can be refined further, some useless stone, and more importantly, the first &6Byproduct&r!"
+				""
+				"Any Ore will give at &9minimum 2/3rd of a Dust&r of this Byproduct through washing. Prioritize this step the most."
+				""
+				"Using Distilled Water over Water cuts recipe duration in half, but it's also more difficult to produce."
+			]
+			id: "58BA62A3A8A32C24"
+			size: 0.75d
+			tasks: [{
+				id: "1C03C5F3E5196342"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			title: "Basic Ore Washing Plant"
+			x: 1.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"32EA7E81885C8E87"
+				"10ECB471A77F5136"
+			]
+			description: [
+				"By clicking the &6Circuit Configuration Slot&r in machines, you can create a &bghost Programmed Circuit&r. "
+				""
+				"This is a fake circuit that allows you to select a given configuration for recipes! There's no need to spend your circuits crafting &bProgrammed Circuits&r anymore."
+				""
+				"&dElectric Machines&r and &dItem Input Buses&r will have a Ghost Circuit Slot."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This feature is originally from GTNH."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:programmed_circuit"
+				tag: {
+					Configuration: 0
+				}
+			}
+			id: "59F0060B55307311"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Don't want to spend your circuits to select recipes?"
+			tasks: [{
+				id: "7C04F3247B0C0BCB"
+				type: "checkmark"
+			}]
+			title: "Programmed Circuits"
+			x: 3.375d
+			y: 2.25d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"Make this machine when you feel like it's time you invested into Batteries."
+				""
+				"It'll also be required if you want to make Storage Disks from &bApplied Energistics 2&r."
+			]
+			id: "37307A46E70011D3"
+			rewards: [{
+				count: 2
+				id: "25A57A151B7E8FEB"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "This machine does nothing exciting"
+			tasks: [{
+				id: "5521E4E26119E152"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			title: "Basic Canner"
+			x: 3.375d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"37307A46E70011D3"
+				"6D9D54FAB21EC086"
+			]
+			description: [
+				"&aBatteries&r can be put into the energy slot at the bottom middle of machine GUIs, or in a &3Battery Buffer&r."
+				""
+				"When inside your inventory, they can be sneak-right-clicked to allow the batteries to &dcharge&r your EU items."
+				""
+				"&7LV&r, &bMV&r, and &6HV&r Batteries come in three forms, allowing you to pick the one you find the best depending on materials you have. &dLithium&r has the best capacity, followed by &dCadmium&r, then &dSodium&r."
+				""
+				"Our recommendation? Find a Salt vein, and either &aelectrolyze Salt&r for &dSodium&r, or &awash crushed Lepidolite&r for &dLithium&r."
+				""
+				"Get &eany&r &aBattery&r to complete this quest."
+			]
+			id: "3E6DC423FE4A99F7"
+			size: 0.75d
+			subtitle: "Batteries for storing energy!"
+			tasks: [{
+				icon: "gtceu:lv_sodium_battery"
+				id: "47D0D12A26963702"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:batteries/lv"
+					}
+				}
+				title: "Any LV Battery"
+				type: "item"
+			}]
+			title: "Batteries!"
+			x: 4.875d
+			y: 3.375d
+		}
+		{
+			dependencies: ["3E6DC423FE4A99F7"]
+			description: [
+				"By itself, the Battery Buffer does nothing. However, if you place batteries inside its internal storage, it will act as a power buffer."
+				""
+				"The &3Battery Buffer&r handles &9two Amps in&r, and &9one Amp out&r, &dper Battery&r. The output side has the dot, and all other sides are used as inputs."
+				""
+				"&6It'll also charge &lboth&r EU and RF Tools inside it&r."
+				""
+				"This is a must have if you don't have unlimited power at hand. Get &eany&r &7LV&r Battery Buffer to finish the quest. However, the 16 slots variant is likely overkill at this stage."
+				"{@pagebreak}"
+				"&9Note:&r Don't loop your lossy Cables back to your Battery Buffer! If you think about it, you'll just end up voiding energy."
+				""
+				"&l&3Lore:&r&o To be frank with you, the GTCE Battery Buffer was... mediocre. It's been reworked in GTCEu to provide a mix between GT5 and GTCE's functionality. Energy now splits evenly across all batteries!"
+			]
+			icon: "gtceu:lv_battery_buffer_4x"
+			id: "6431381FBE07D6EF"
+			size: 0.75d
+			tasks: [
+				{
+					id: "23FCFCA69488AA2B"
+					item: "gtceu:lv_battery_buffer_4x"
+					type: "item"
+				}
+				{
+					id: "2D59C65816F60CEF"
+					item: "gtceu:lv_battery_buffer_8x"
+					type: "item"
+				}
+				{
+					id: "679E89402D7ECE10"
+					item: "gtceu:lv_battery_buffer_16x"
+					type: "item"
+				}
+			]
+			title: "Battery Buffer"
+			x: 6.75d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"1646BF9194100E57"
+				"6431381FBE07D6EF"
+			]
+			description: [
+				"This Quest explains the core mechanic of the &3Electric Blast Furnace&r, whilst the quest below will explore the mechanics of the Multiblock Parts that you'll also need. Be sure to refer to them."
+				""
+				"Anyway, the &3EBF&r is your &efirst electric multiblock&r! Congrats. It's used to process materials at high temperatures."
+				""
+				"You'll become familiar with the EBF to make &aAluminium&r and progress to &d&bMV Age&r. It can also make &7Steel&r faster than a PBF."
+				"{@pagebreak}"
+				"It's important to keep in mind that the EBF is a beefy boy. The minimum power cost to run a recipe is &9120 EU/t&r! That's slightly under 4 &7LV&r Generators. This is why it was locked behind the Battery Quest. You may wish to consider building a separate power line, with separate Generators and Battery Buffer to run this."
+			]
+			id: "1E9BE8D3F8A602DC"
+			rewards: [{
+				count: 16
+				id: "0DBE03823EE6616B"
+				item: "gtceu:invar_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "A big milestone!"
+			tasks: [{
+				id: "10F6305A7E5D186D"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: 7.875d
+			y: 3.375d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"The Autoclave is typically the last step of Gem Processing. It is used turn a select few &aGem Dusts&r back into regular Gems."
+				""
+				"It's veeeery slow - thus, it is generally not advised to crush gem ores at all, as the recovery process is too expensive."
+				""
+				"&9Note:&r In this modpack, the Autoclave is required to make &5Fluix Crystals&r if you're to progress in Applied Energistics. Sorry."
+			]
+			id: "22A1A629AF754066"
+			size: 0.75d
+			tasks: [{
+				id: "30C94122AD446D9B"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			title: "Basic Autoclave"
+			x: -1.125d
+			y: 4.125d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: ["A rarely used machine. It uses magnetism to separate some Magnetic ores and gain additional &6Byproducts&r you would not obtain otherwise."]
+			id: "24B4D9608718EE27"
+			size: 0.75d
+			tasks: [{
+				id: "3162F3E3D12E00FB"
+				item: "gtceu:lv_electromagnetic_separator"
+				type: "item"
+			}]
+			title: "Basic Electromagnetic Separator"
+			x: 0.375d
+			y: 3.375d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"This quest is a light look over the &dfull scale of regular Ore Processing&r. Why \"regular\"? Some ores require special treatment, but that's a topic for much later. Oh no, we're already getting carried away!"
+				""
+				"Each quest surrounding this one gives a different machine that has some involvement in Ore Processing."
+				""
+				"&cNote:&r Don't get too preoccupied with Ore Processing! It's very slow at this point, and somewhat power hungry. Around 90% of ores are not important enough to warrant going out of your way to obtain their byproducts. That's a legitimate stat, by the way."
+			]
+			icon: "gtceu:sulfur_crushed_ore"
+			id: "701BCADAE5CF6CA5"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "You can't escape Greg..."
+			tasks: [{
+				id: "3A7506F2C9145157"
+				title: "I agree to lose my sanity"
+				type: "checkmark"
+			}]
+			title: "What is this Mess?: Part Two"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["32EA7E81885C8E87"]
+			description: [
+				"&7LV&r will require you to craft a lot of different machines! Here's a friendly tip if you're struggling to set goals: pick an item in a later quest and go backwards from there."
+				""
+				"With that in mind... why don't we start with a &5Fusion Controller&r? Never mind, slightly too ambitious - let's check a closer goal instead. Ah, yes, the &3Electric Blast Furnace&r - the main \"end goal\" of &7LV&r - should be a good target."
+				""
+				"The EBF is &aexpensive&r, which is why you should initially focus on machines to make components and materials cheaper. Our quests will try to will guide you in the right direction."
+				""
+				"Other important goals are crafting the &3LV Assembler&r and making your first &aMV Circuits&r."
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "648BCF486E16CCB2"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "Too many options, too little time!"
+			tasks: [{
+				id: "07CE2766ECA4B0D8"
+				title: "I... might have some sense of direction now"
+				type: "checkmark"
+			}]
+			title: "LV Age Progression"
+			x: 2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3D98819A799D2E64"]
+			description: [
+				"Build this machine next to your &3Chemical Reactor&r to automatically solidify Rubber into &aRubber Sheets&r."
+				""
+				"You can make your Chemical Reactor auto-output if you &dwrench&r the side of your &3Chemical Reactor&r and enable Fluid &9auto-output&r."
+				""
+				"There will be more Fluids to solidify, so you may re-purpose your &3Fluid Solidifier&r when not crafting Rubber - or make a second one!"
+			]
+			id: "581CDF545E1EA1FD"
+			rewards: [{
+				id: "2B85DCFFF22770D8"
+				item: "gtceu:rubber_bucket"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "The Fluid Solidifier solidifies..."
+			tasks: [{
+				id: "20B1CA4DB2750E84"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			title: "Basic Fluid Solidifier"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3E6DC423FE4A99F7"]
+			description: [
+				"The Prospector is an amazing tool that'll help you find veins in no time."
+				""
+				"Its GUI is interactive. Right-clicking will scan for ores, displaying them on a dynamic map."
+				""
+				"&l&3Lore:&r&o Back in OUR day, the portable Prospector was locked to &dLuV&f. Kids these days have it easy."
+			]
+			id: "2E36E5755B2F551C"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "1AC97E61EF4958C8"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			title: "This is Hacking"
+			x: 5.625d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5B2696206205CB2E"
+				"70432F650591353C"
+			]
+			description: [
+				"Prepare &a128 Cupronickel&r, &a32 Bronze&r and &a16 Tin Alloy&r to craft the Heating Coils required for your first Electric Blast Furnace."
+				""
+				"This is still less than half (!) of the cost of the whole EBF in raw materials. You will also need about a stack each of Invar and Steel, so get mining."
+				""
+				"The Cupronickel Coils will allow the EBF to perform recipes up to &d1,800K&r (ignoring Voltage bonuses). That's pretty hot if you ask us."
+				""
+				"&6This quest unlocks a new tutorial on Coils in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:cupronickel_coil_block"
+				tag: {
+					active: 1b
+				}
+			}
+			id: "1646BF9194100E57"
+			rewards: [
+				{
+					count: 8
+					id: "2DF635DEFA2D4DCD"
+					item: "gtceu:nickel_ore"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0F7FB05B78AAFB96"
+					item: "gtceu:copper_ore"
+					type: "item"
+				}
+			]
+			size: 0.75d
+			subtitle: "Baby's first heating coil"
+			tasks: [{
+				count: 16L
+				id: "4F19FBED1E1766AC"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			title: "Cupronickel Coils"
+			x: 6.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"&5You:&r &oThat's it, I'm uninstalling! This pack is stupid! We're barely in &7LV&r&o, but you're asking me to make you a &6HV&r&o machine!?&r"
+				""
+				"Yes! This is indeed not completable yet, which is also why this quest appears in the &6HV&r Chapter."
+				"{@pagebreak}"
+				"Remember how disappointing it was that you couldn't get byproducts with your Macerator? Well... that disappointment won't be going away until you reach &6HV&r."
+				""
+				"&6The Macerator will unlock its second and third slot at HV&r. Trust us - this will be great for Ore Processing. In fact, one byproduct is absolutely locked behind this (after the Thermal Centrifuge step)."
+				""
+				"&cNote:&r Unlike GTCE, the &bMV&r Macerator in GTCEu &cdoesn't&r have a second slot."
+				""
+				"&5Writer:&r &oCome back to me when you are stronger, young Cricket.&r"
+			]
+			id: "1DA54DA70E12F499"
+			size: 0.75d
+			subtitle: "What? Why?!"
+			tasks: [{
+				id: "5580AE2868E0E451"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
+			title: "Universal Macerator"
+			x: -1.125d
+			y: 3.375d
+		}
+		{
+			dependencies: ["3A8D7FC6F316C38C"]
+			description: [
+				"The Gas Collector collects Air that can then be centrifuged into &aOxygen&r and &aNitrogen&r."
+				""
+				"&l&3Lore:&r&o GregTech 5 players remember when they had to use a Compressor with IC2 cells to get Compressed Air... here, cell chemistry is no more."
+			]
+			id: "15928F50AE80A5CF"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "5710E0C2A7441809"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			title: "Basic Gas Collector"
+			x: 1.125d
+			y: 6.75d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"The &3Packager&r compresses &aTiny Dusts&r and &aSmall Dusts&r into &afull Dusts&r, which can be compressed further into Ingots."
+				""
+				"It can also work in reverse, change between sizes of Wires, and much more..."
+				""
+				"Unpacking Cables back into Wires and Rubber will be &every useful&r once you rewire your Energy Network."
+				"{@pagebreak}"
+				"&oYeah, we know...&r the 3x3 compacting recipes don't seem useful, because you can just use a Crafting Table. We urge you to consider the utility of this machine when used for &9automation&r purposes."
+				""
+				"For an &9automated&r Dust setup, route &aTiny Dusts&r into a buffer inventory (a chest will do) placed next to your &3Packager&r."
+				""
+				"Next place a &3Robot Arm&r and configure it to \"&dImport&r\", and \"&dSupply Exact 9&r\". Finally, let the Machine auto-output on another side."
+				""
+				"&l&3Lore:&r&o In GTCE, the reverse operation required a separate machine - the Unpackager."
+			]
+			id: "3F123950216DF93B"
+			size: 0.75d
+			tasks: [{
+				id: "33AEA84A406741FF"
+				item: "gtceu:lv_packer"
+				type: "item"
+			}]
+			title: "Basic Packer"
+			x: -1.125d
+			y: 4.875d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"The &3Chemical Reactor&r will be required for &la lot&r of recipes."
+				""
+				"Let's give it a spin - why don't we use your freshly made Chemical Reactor to unlock a new, &6better recipe for Rubber&r? Rubber is &dunusable&r as a Fluid, so you will need to make another machine to process it further."
+				"{@pagebreak}"
+				"You can't make Rubber using the Chemical Reactor alone, so here are some &aother machines&r you might want to aim for: "
+				""
+				"A &3Solidifier&r is useful to solidify your Rubber directly into &aRubber Sheets&r. You'll want these moving forward."
+				""
+				"You could then make use of an &3Assembler&r to use your molten Rubber for &aCables&r. This isn't important for Tin Cables, but better cables will &eneed&r to be made in the Assembler."
+				""
+				"&eNote:&r Submit a fluid by having it stored in &lany&r tank in your inventory. A Drum is the perfect candidate."
+			]
+			icon: "gtceu:lv_chemical_reactor"
+			id: "3D98819A799D2E64"
+			size: 0.75d
+			subtitle: "Chemistry for dummies"
+			tasks: [
+				{
+					id: "108424445D0F748A"
+					item: "gtceu:lv_chemical_reactor"
+					type: "item"
+				}
+				{
+					amount: 1296L
+					fluid: "gtceu:rubber"
+					id: "75DD10F659BA5406"
+					type: "fluid"
+				}
+			]
+			title: "Basic Chemical Reactor"
+			x: 3.375d
+			y: 5.625d
+		}
+		{
+			dependencies: ["3D98819A799D2E64"]
+			description: [
+				"Cells are an alternative form of Fluid storage. All Cell types with the same type and amount of Fluid inside them &6stack&r. They can be automatically filled with a &3Canning Machine&r."
+				""
+				"Cells hold &done bucket&r of Fluid."
+				"{@pagebreak}"
+				"Universal Cells hold up to &done bucket&r, but also can store &9fractions&r of Buckets. They're particularly ideal if you want to store leftover Fluid without crafting a whole Drum. "
+				""
+				"Cells made from higher tier materials can hold even more fluid, but &9Drums&r and &9Super Tanks&r will hold more by then."
+				""
+				"Like Drums, Cells can be placed into a crafting grid to clear their contents."
+			]
+			icon: "gtceu:fluid_cell"
+			id: "292938760AB9A12B"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "GTCE killed cell chemistry... GTCE killed Cells!"
+			tasks: [
+				{
+					id: "48507FA04651418B"
+					item: "gtceu:fluid_cell"
+					type: "item"
+				}
+				{
+					id: "012C90A73EC79E11"
+					item: "gtceu:universal_fluid_cell"
+					type: "item"
+				}
+			]
+			title: "Dead Cells"
+			x: 4.5d
+			y: 5.625d
+		}
+		{
+			dependencies: [
+				"581CDF545E1EA1FD"
+				"5B2696206205CB2E"
+			]
+			description: [
+				"Use both of your new machines to turn a material into a Fluid, and solidify it back to a Rotor! This combination makes Rotors far easier to craft - &6four Ingots per Rotor&r, as well."
+				""
+				"You can also do the same for &6Gears&r and &6Small Gears&r, which will then be superseded when you make a &3MV Extruder&r."
+				""
+				"&9Note:&r Some metals require higher voltages than &7LV&r for Fluid Extraction, so make sure to keep an eye on the recipe tier in JEI."
+			]
+			icon: "gtceu:rotor_casting_mold"
+			id: "115C4226F6473F0C"
+			rewards: [{
+				count: 2
+				id: "7162E47A4FB3EDB1"
+				item: "gtceu:empty_mold"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Time to end the misery of hand crafting rotors!"
+			tasks: [
+				{
+					id: "4A68C6BC78CB07E2"
+					item: "gtceu:rotor_casting_mold"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7EF3EDA1698AFB7F"
+					item: "gtceu:tin_rotor"
+					type: "item"
+				}
+			]
+			title: "Combo!"
+			x: 5.625d
+			y: 5.625d
+		}
+		{
+			dependencies: ["199361B5FEC959EA"]
+			description: [
+				"&aSoldering Alloy&r is used solely as a &9Fluid&r, and in most cases is &dinterchangeable&r in circuit recipes as a cheaper alternative to Tin&r."
+				""
+				"The choice is yours. Save more materials? Make Soldering Alloy. Spend less time crafting materials? Tin is the way to go."
+			]
+			icon: "gtceu:soldering_alloy_ingot"
+			id: "713C8D6A20BF3A0E"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "I got soul but I'm not a solder"
+			tasks: [{
+				id: "67F9F84D66E32728"
+				item: "gtceu:soldering_alloy_dust"
+				type: "item"
+			}]
+			title: "Soldering Alloy"
+			x: 7.875d
+			y: 5.625d
+		}
+		{
+			dependencies: [
+				"32B08E6F414A00C0"
+				"4B979482EF026BFF"
+			]
+			description: [
+				"With &7LV&r power, the only way of getting &aAluminium Dust&r is by electrolyzing &9Sapphire&r or &2Green Sapphire&r. Aluminium is the main &bMV&r material, similar to how Steel is crucial in &7LV&r, and Bronze is important in the &6Steam Age&r."
+				""
+				"It would be wise to obtain enough Sapphire to electrolyze into a full stack of &aAluminium Dust&r - it &lwill&r be useful very soon. Plus, bonus Oxygen is always nice."
+			]
+			id: "2F1CCFEBAB71B1F3"
+			rewards: [{
+				count: 12
+				id: "6ED23A377745D74A"
+				item: "gtceu:green_sapphire_ore"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [{
+				count: 6L
+				id: "3B6DC3146DB686BF"
+				item: "gtceu:sapphire_dust"
+				type: "item"
+			}]
+			title: "Sapphire"
+			x: -2.25d
+			y: 5.625d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"&lOutside of Ore Processing:&r"
+				""
+				"Similar to the Centrifuge, this machine does a lot of things - we can't hope to list them all! Fortunately, it's one of the cheapest &7LV&r machines, so grab it as soon as it becomes necessary."
+				"{@pagebreak}"
+				"&lFor Ore Processing:&r"
+				""
+				"Okay, we lied. It's not &oexactly&r used for Ore Processing, it's actually used in the &adecomposition of Dusts&r. However, most of the useful electrolysis recipes are locked at &bMV&r. You can peep at the &emolecular formula&r in a dust's tooltip to see what you can get from electrolysis."
+				"{@pagebreak}"
+				"&cTake caution!&r Due to how ores work, directly smelting dusts into Ingots can give higher metal yields than electrolysis. However, it means you lose the other products in the dust. You will have to decide whether you want to prioritise direct value, or byproduct count."
+			]
+			id: "32B08E6F414A00C0"
+			rewards: [{
+				count: 2
+				id: "63E578C8E82CB9DC"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [{
+				id: "536874A8C35E1C86"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			title: "Basic Electrolyzer"
+			x: -1.125d
+			y: 5.625d
+		}
+		{
+			dependencies: [
+				"5263F866638D875C"
+				"2F1CCFEBAB71B1F3"
+			]
+			description: [
+				"For now, you should use &9Water&r for its recipes instead of trying to acquire Lubricant."
+				""
+				"The &3Cutting Machine&r additionally unlocks converting &6Rods into four Bolts&r."
+				""
+				"This machine is the only way to obtain &dGem Plates&r, which are needed to craft Filters, and by extension, the &3Gas Collector&r."
+			]
+			id: "3A8D7FC6F316C38C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "The Cutter... cuts..."
+			tasks: [{
+				id: "662DB818821C4EAE"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			title: "Basic Cutter"
+			x: -1.125d
+			y: 6.75d
+		}
+		{
+			dependencies: ["701BCADAE5CF6CA5"]
+			description: [
+				"&lOutside of Ore Processing:&r"
+				""
+				"Oh boy, what can't this machine do? Decomposition recipes to separate dust types, separating air, do your taxes, and many others..."
+				""
+				"The list is too long! Let's just say &cyou need the Centrifuge&r."
+				"{@pagebreak}"
+				"&lFor Ore Processing:&r"
+				""
+				"This takes &aImpure Dust&r or &aPurified Dust&r and turns them into clean Dust, plus an added tiny Dust &6Byproduct&r. This is outside of the optimal chain for Byproducts, but this is also the cheapest Ore Processing machine of the presented array to run and to setup on a small scale."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In base GTCE, this was objectively the strongest Ore Processing machine as it was fairly easy to use, and gave three tiny dusts, just like the Ore Washer or the Thermal Centrifuge. We tuned it down in favor of diversity."
+			]
+			id: "5263F866638D875C"
+			rewards: [{
+				id: "525C65CA6AFD3C11"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [{
+				id: "20EDB55B8D5CDAD6"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			title: "Basic Centrifuge"
+			x: 0.0d
+			y: 6.75d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"It's recommended that you &6put this machine off&r until you actually require it for for progression - explore elsewhere if you're fresh into &7LV&r."
+				""
+				"Some alloys previously made by hand can also be made in the mixer, except at &ahigher yield&r."
+			]
+			id: "257DB4B39B2A928E"
+			size: 0.75d
+			subtitle: "The Mixer mixes..."
+			tasks: [{
+				id: "4A0B4A206ED30212"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			title: "Basic Mixer"
+			x: 2.25d
+			y: 7.875d
+		}
+		{
+			dependencies: [
+				"63CD0236B337EAAD"
+				"37307A46E70011D3"
+				"3D98819A799D2E64"
+			]
+			description: [
+				"Unfortunately, this is only an &lEmpty&r Spray Can, which you have to fill with Chemical Dye before using."
+				""
+				"&aSpray Cans&r do not provide any functionality involving machines, but can be quite &bvisually appealing and useful&r!"
+				""
+				"Any (or almost any) GregTech tile entity (machine, pipe, cable...) can be &6painted&r to one of the 16 colors of your choosing. This is great for screenshots, or to separate different setups for convenience in a Multiplayer base. They also help with distinguishing between pipelines and cables."
+				""
+				"Holding the &aSpray Can&r in the offhand will automatically paint any block you place."
+			]
+			id: "5AD9884E7BFB2510"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Time for server tag wars"
+			tasks: [{
+				id: "28CFFA0F7A33E02F"
+				item: "gtceu:empty_spray_can"
+				type: "item"
+			}]
+			title: "Spray Can"
+			x: 3.375d
+			y: 6.75d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"While this is an extremely &9important&r machine for progression, this will &9&lnot help you immediately&r as it is &cexpensive.&r Most of the recipes you will want to pursue require &cfluids&r. Set up a little bit more infrastructure before rushing this."
+				""
+				"With that out of the way, the &3Assembler&r is crucial to gameplay. Consider it as important as a Crafting Table, except... well, it's a machine, duh."
+				""
+				"We as \"modpack developers\" also love to use this to include all sorts of custom recipes - and speaking of custom recipes, the Assembler now unlocks &dApplied Energistics 2&r!"
+				"{@pagebreak}"
+				"Once you have enough infrastructure you will be able to make use of better recipes for:"
+				""
+				"&9-&r &6Vacuum Tubes&r, giving over double the previous yield"
+				""
+				"&9-&r &6Resistors&r, granting 4 resistors per craft!"
+				""
+				"&9-&r &6Circuit Boards&r, greatly reducing copper used"
+				""
+				"Wahoo!"
+				""
+				"&l&3Lore:&r&o Back in the days of GregTech 2, the Assembling Machine only had two slots, and was only really used for alternate Circuit and Hull recipes."
+			]
+			id: "63CD0236B337EAAD"
+			rewards: [
+				{
+					count: 4
+					id: "15CB6A60C5C891BB"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "3AF49D4A68D17C1A"
+					item: "gtceu:lv_machine_hull"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "6B5537B80EB05B30"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"63CD0236B337EAAD"
+				"5B2696206205CB2E"
+			]
+			description: [
+				"&3Voiding Covers&r can be attached to GregTech Machines, Crates or Drums. They will void stuff you don't want. How fancy!"
+				""
+				"For machines, it will only void items in the Output slots. The Input slots are ignored."
+				""
+				"You can attach a &aFilter&r for more precise voiding."
+				"{@pagebreak}"
+				"An advanced version also exists, which requires a &dMV Circuit&r. It enables voiding above a set threshold - great for for overflow control."
+				""
+				"&9Note:&r They default to being switched off, to prevent accidental voiding. Right-click them with a &5Soft Mallet&r to activate them."
+				""
+				"Obtaining &eany&r Voiding Cover will complete this Quest."
+			]
+			icon: "gtceu:item_voiding_cover"
+			id: "249B9E104CAF5FE6"
+			rewards: [{
+				count: 32
+				id: "7B4720913F7D4D6E"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "The best mechanic - making an item or fluid disappear!"
+			tasks: [
+				{
+					id: "69BC88293080C522"
+					item: "gtceu:item_voiding_cover"
+					type: "item"
+				}
+				{
+					id: "4787AD5F61E1914E"
+					item: "gtceu:fluid_voiding_cover"
+					type: "item"
+				}
+			]
+			title: "Voiding Covers"
+			x: 5.625d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"63CD0236B337EAAD"
+				"581CDF545E1EA1FD"
+			]
+			description: [
+				"Hm... didn't we make this joke already?"
+				""
+				"The reason we didn't present &7LV&r versions of &6Steam&r machines is because they are &4NOT&r required. You might not want to invest into an upgrade that does next to nothing. Except for &othis one&r specifically, because it's a big improvement over the &6Steam Age&r."
+				""
+				"The &3Basic Extractor&r gains Fluid capabilities, which enables &aFluid Extraction&r. Use it to melt Rubber that you previously solidified, to &dmelt Soldering Alloy&r for your circuits, and to &dmelt Red Alloy&r for the &6best Vacuum Tube recipe&r in the &3Assembler&r!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Did you notice this machine doubles as both an Extractor and a Fluid Extractor? The two of them were separate machines in previous versions of GregTech."
+			]
+			id: "5B2696206205CB2E"
+			size: 0.75d
+			subtitle: "The Steam Extractor extracts..."
+			tasks: [{
+				id: "5CD363C839475426"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"0DBC148D92A9F69F"
+				"5B2696206205CB2E"
+			]
+			description: [
+				"From now on, all Circuits should be made in a &3Circuit Assembler&r. Use it now to enjoy &6far cheaper LV and MV circuits&r."
+				""
+				"Each time you upgrade to a new tier of &3Circuit Assembler&r, you will be able to craft more &dadvanced themes&r of circuit. These will use &ccomplex&r and &msometimes&r unfamiliar ingredients, but will be more efficient to craft overall."
+				""
+				"&l&3Lore:&r&o The Circuit Assembler has made appearances in and out of GregTech versions. GT5 did not have it, and it was reimplemented in GT5 Unofficial. GTCE decided not to port it, and the tug-of-war continues with its inclusion in GTCEu."
+			]
+			id: "199361B5FEC959EA"
+			rewards: [{
+				id: "0418E257FEDA52B7"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Hopefully, your first MV Circuit expense"
+			tasks: [{
+				id: "6287E8A7C254ECA7"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 7.875d
+			y: 6.75d
+		}
+		{
+			dependencies: ["1A77CA35F054F988"]
+			description: [
+				"The &3Arc Furnace&r uses a lil' bit of &9Oxygen&r to smelt items in a different fashion than Furnaces."
+				""
+				"You can use it to make easier &aWrought Iron&r, double your &aGlass&r, and gain access to &aAnnealed Copper&r."
+				""
+				"It can also recycle various components and machines back to their original material."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Previous versions had both the Arc Furnace and the &bPlasma Arc Furnace&f. In that case, why not use one machine for both? Well, that's exactly what we thought - but we ultimately decided to remove one of the two &bplasma&f recipes. And then the other &bplasma&f recipe. "
+				""
+				"&oIn short, the &bPlasma Arc Furnace&f is &4gone&f. RIP."
+			]
+			id: "63256ED95F17B242"
+			rewards: [{
+				id: "2DF03194A80B3F4B"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [{
+				id: "2374C06C5E1EFC24"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 7.875d
+		}
+		{
+			dependencies: ["3A8D7FC6F316C38C"]
+			description: [
+				"A fancy tool to help with base building. The gadget has different modes that you can view by holding the relevant hotkey - it defaults to &eG&r."
+				""
+				"Be sure to check out the &3Destruction Gadget&r and the &3Copy Paste Gadget&r."
+				""
+				"Charge this in the charger slot of any GregTech machine."
+			]
+			id: "0DAD0A6360448B39"
+			rewards: [{
+				count: 64
+				id: "754F6E206D20BC31"
+				item: "minecraft:bricks"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "A familiar face in the land of Greg"
+			tasks: [{
+				id: "65100C599DB0F30C"
+				item: "buildinggadgets2:gadget_building"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"5263F866638D875C"
+				"32B08E6F414A00C0"
+			]
+			description: [
+				"You could waste &o&eprecious years of your life&r in JEI looking for the most optimal Oxygen recipe, given the many ways to obtain it. Various minerals will produce it when electrolyzed."
+				""
+				"If only the quest book had more information!"
+				"{@pagebreak}"
+				"Surprise! The best source according to us (!) is &acentrifuging Air&r after making a &dGas Collector&r, which you might not be able to make just yet. This recipe also gives &aNitrogen&r, which is handy as it can speed up certain &3Electric Blast Furnace&r recipes&r."
+				""
+				"The second best source according to us (!) is &aelectrolyzing Silicon Dioxide&r. Silicon Dioxide is obtained from various sources, such as Glass Dust, Granite Dust and Black Granite Dust."
+				"{@pagebreak}"
+				"The third best source according to us (!) is &aelectrolyzing Water&r. In reality, electrolysis of water is more suitable for &aHydrogen production&r due to the higher energy cost."
+				""
+				"The fourth best source according to us (!) is &ato not void&r it, EVER! Any Oxygen obtained from any source is worth something and should be stored in Tanks."
+				""
+				"&eNote:&r Submit a fluid by having it stored in &lany&r tank in your inventory. A bucket will also work."
+			]
+			icon: "gtceu:oxygen_bucket"
+			id: "1A77CA35F054F988"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Achtually, it's Dioxygen..."
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:oxygen"
+				id: "70F00C67C9698A78"
+				type: "fluid"
+			}]
+			title: "Breath of Fresh Oxygen"
+			x: -1.125d
+			y: 7.875d
+		}
+		{
+			dependencies: ["5263F866638D875C"]
+			description: [
+				"You can now &3centrifuge&r &aResin&r, which will still give Raw Rubber - but this time alongside &aGlue&r (and the less useful Plantball)."
+				""
+				"Give yourself a headstart and get on producing Glue. You can use it to make &6cheaper Resistors&r, as well as &6cheaper Circuit Boards&r in the &3Assembling Machine&r (and it is especially useful &oin the near future&r)."
+				""
+				"&eNote:&r Submit a fluid by having it stored in &lany&r tank in your inventory. A bucket will also work."
+			]
+			icon: "gtceu:glue_bucket"
+			id: "0EAC071414AEC07E"
+			rewards: [{
+				count: 4
+				id: "3134ECF63472A855"
+				item: "gtceu:rubber_log"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Extractor? I hardly knew 'er!"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:glue"
+				id: "3DD156ECA99FFA11"
+				type: "fluid"
+			}]
+			title: "Glued"
+			x: 0.0d
+			y: 7.875d
+		}
+		{
+			dependencies: [
+				"5263F866638D875C"
+				"257DB4B39B2A928E"
+			]
+			description: [
+				"Many materials going forward cannot be smelted directly from any Ores! They are instead obtained as byproducts from processing of other ores. Gallium and Arsenic are &4among&r these materials."
+				""
+				"For &dGallium&r, you may, ranged from worst to best (compromising difficulty and yields):"
+				""
+				"&9- &3Electrolyze &aSphalerite&r for a low chance of small dust. Note that you lose out on direct smelting value."
+				""
+				"&9-&r Put &aCrushed Bauxite&r in the &3Chemical Bath&r. Note that this requires &9Sodium Persulfate&r."
+				""
+				"&9-&r Obtain it as a Byproduct of &aSphalerite&r Ore Processing in the &3Thermal Centrifuge&r or &3Centrifuge&r."
+				""
+				"For &dArsenic&r, you will have to mine and &3centrifuge&r &aRealgar&r."
+			]
+			id: "4073577B7EF9B593"
+			size: 0.75d
+			subtitle: "I hate byproducts, they're awesome"
+			tasks: [{
+				id: "0FDC60275B1959C3"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			title: "Gallium Arsenide"
+			x: 1.125d
+			y: 7.875d
+		}
+		{
+			dependencies: [
+				"63CD0236B337EAAD"
+				"0EAC071414AEC07E"
+			]
+			description: [
+				"This Circuit Board is used to create &dMV Circuits&r!"
+				""
+				"&9Note:&r You have &ltwo&r options when making the Phenolic Printed Circuit Board. If you use &aSodium Persulfate&r or &aIron III Chloride&r, making boards takes &6only a quarter of the Silver&r as opposed to the crafting recipe."
+				""
+				"&lHowever&r, given how painful it may be for you to obtain these chemicals &oright now&r, you can simply use more Silver by mining most of a Galena Vein..."
+				""
+				"The quest for &aSodium Persulfate&r is in the &bMV&r chapter, if you're down for some light reading."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Back in GTCEu 1.12.2, these circuit boards were called \"&2Good Circuit Boards&f\". Not exactly a fitting name, as they're &4rather evil&f to craft."
+			]
+			id: "3647B1B964A15E4E"
+			rewards: [{
+				id: "2B815290D1F7D038"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [{
+				id: "2DE7B75F25A4AB9E"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 3.375d
+			y: 7.875d
+		}
+		{
+			dependencies: ["63CD0236B337EAAD"]
+			description: [
+				"Getting into Applied Energistics at this point is possible, but also a little bit involved..."
+				""
+				"You will need to make quite a few &7LV&r machines, and the &7LV-tier&r recipes for some AE2 items are comparatively expensive without access to more advanced technology."
+				""
+				"In &7LV&r, you're able to craft:"
+				""
+				"&6-&r Energy Acceptor"
+				""
+				"&6-&r ME Terminal"
+				""
+				"&6-&r 1k ME Storage component"
+				""
+				"&6-&r ME Chest"
+				"{@pagebreak}"
+				"&9Note:&r This pack includes &5Fluix Crystals&r, but they are generated as a GT material, rather than the default AE2 Fluix Crystals. To get them, put &dFluix Dust&r in the &aAutoclave&r, which is made from &7Certus Quartz Dust&r, &eNether Quartz Dust&o&r and &cRedstone&r in a &aMixer&r. No need to charge the Certus Quartz. It gets... charged in the Mixer... or something like that."
+			]
+			id: "0E72017800A9766C"
+			rewards: [{
+				count: 16
+				id: "6511637BCAB0EC18"
+				item: "gtceu:certus_quartz_gem"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "2080D5BB367332D3"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			title: "The Digital Age? Already!?"
+			x: 4.5d
+			y: 7.875d
+		}
+		{
+			dependencies: [
+				"63CD0236B337EAAD"
+				"4073577B7EF9B593"
+			]
+			description: [
+				"Don't let JEI fool you... there's only one possible recipe right now for this Primitive Diode."
+				""
+				"Diodes have a infamously &4nasty recipe&r, but they will become cheaper and more convenient once you can obtain &ePolyethylene&r."
+				""
+				"This is required for &dMV Circuits&r."
+			]
+			id: "7BE7DE4C0109D788"
+			rewards: [{
+				count: 8
+				id: "7E08419FB2E4B575"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Don't be swayed by JEI!"
+			tasks: [{
+				id: "0FE8CA1C2D212378"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 5.625d
+			y: 7.875d
+		}
+		{
+			dependencies: [
+				"3647B1B964A15E4E"
+				"7BE7DE4C0109D788"
+				"4B979482EF026BFF"
+			]
+			description: [
+				"Well... gotten any Aluminium Ingots yet?"
+				""
+				"Each Electric Age has Circuits corresponding to its tier. The Good Electronic Circuit is the &dfirst MV Circuit&r you can make out of the three tiers of &bMV&r Circuitry."
+				""
+				"Always be on the lookout for a cheaper way to make your circuits - new sets of recipes become available each time you make a new tier of &2Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now! Its recipes are far, far cheaper than hand-crafting Circuits."
+				""
+				"&6Having this and Aluminium will grant access to MV Machines.&r"
+			]
+			id: "0DBC148D92A9F69F"
+			rewards: [{
+				count: 4
+				id: "052E7DFC7E0B9EEF"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "Does that mean we're at MV yet?"
+			tasks: [{
+				id: "70313E1917121E14"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			title: "First MV Circuit!"
+			x: 7.875d
+			y: 7.875d
+		}
+		{
+			dependencies: ["2F1CCFEBAB71B1F3"]
+			description: [
+				"As mentioned in the previous quest, electrolyse the &1Sapphire Dust&r to get your &bAluminium Dust&r."
+				""
+				"Now all you need is an EBF! If you haven't started to work towards one, move to the right on this quest page and you'll end up there."
+			]
+			hide_dependent_lines: true
+			id: "45B71324028F6E68"
+			size: 0.75d
+			tasks: [{
+				id: "144F4F8EF61BEEA5"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			title: "Aluminium Dust"
+			x: -3.375d
+			y: 6.75d
+		}
+		{
+			dependencies: ["1E9BE8D3F8A602DC"]
+			description: [
+				"Multiblocks bear a large variety of interesting mechanics that might seem daunting, but don't worry - we've written a guide to help you learn."
+				""
+				"&6This quest unlocks a bunch of tutorials on Multiblocks in the &lTips and Tricks&r&6 tab - check them out to learn more!&r"
+			]
+			hide_text_until_complete: false
+			icon: "gtceu:heatproof_machine_casing"
+			id: "2FC7B1E867E4194E"
+			size: 0.75d
+			tasks: [{
+				id: "2AA5580CDD655FBC"
+				type: "checkmark"
+			}]
+			title: "Multiblock Techniques"
+			x: 7.875d
+			y: 4.5d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"&oThis quest's subject is optional, but may still be of interest to you. We've put it here in the name of completeness.&r"
+				""
+				"The &3Rock Breaker&r generates different types of igneous Rocks. In order to operate, &9Water&r and &cLava&r (doesn't need to be source blocks) must both be adjacent to it. Those rocks might be pulverized and electrolyzed into certain materials."
+				""
+				"Certain rocks, such as &b&cRed Granite&r, need up to &5EV&r power to generate."
+				""
+				"&eAny&r Rock Breaker will complete this Quest."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Obsidian requiring Redstone to generate is in reference to an ancient Minecraft bug, &7MC-4239&f. Placing Redstone where the Cobblestone would go in a cobble generator would make it generate Obsidian instead. This bug was resolved in snapshot 14w25b for Minecraft 1.8, over 9 years ago at the time of writing!"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:lv_rock_crusher"
+			id: "1F2359106FC95603"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "0A2A4C60994B0FE8"
+					item: "gtceu:lv_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "335EA991E1B8C91F"
+					item: "gtceu:mv_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "1AB3C8D744EABAA3"
+					item: "gtceu:hv_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "558BDEA1E084DD84"
+					item: "gtceu:ev_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "56F4B7D4AA38798A"
+					item: "gtceu:iv_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "22C42CA726A1F45F"
+					item: "gtceu:luv_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "17E26A869F5E9019"
+					item: "gtceu:zpm_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "495C9E1656091F34"
+					item: "gtceu:uv_rock_crusher"
+					type: "item"
+				}
+			]
+			title: "Cobble is Life"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"&oThis quest's subject is optional, but may still be of interest to you. We've put it here in the name of completeness.&r"
+				""
+				"The &3Turbo Charger&r charges &6RF and EU&r items such as &9Drills&r extremely quickly."
+				"It accepts up to 4 Amps for every item it charges, making it &6twice as fast&r as the &3Battery Buffer&r. It cannot discharge, though."
+				""
+				"&eAny&r Charger will complete this Quest."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:lv_charger_4x"
+			id: "2DB259568F347C0E"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "66D61D09EE54B27B"
+					item: "gtceu:ulv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "61A83D76ED64541B"
+					item: "gtceu:lv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "53F46FB26DAD3CB0"
+					item: "gtceu:mv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "62572E97F72BD831"
+					item: "gtceu:hv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "3FB57522BADB33B4"
+					item: "gtceu:ev_charger_4x"
+					type: "item"
+				}
+				{
+					id: "3A1B648C445D3C5A"
+					item: "gtceu:iv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "719832D62AE242FE"
+					item: "gtceu:luv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "1FC410D2E3DEB33B"
+					item: "gtceu:zpm_charger_4x"
+					type: "item"
+				}
+				{
+					id: "6474F0A518A20386"
+					item: "gtceu:uv_charger_4x"
+					type: "item"
+				}
+				{
+					id: "096A77845F50C0DE"
+					item: "gtceu:uhv_charger_4x"
+					type: "item"
+				}
+			]
+			title: "Turbo Charger"
+			x: 5.625d
+			y: 0.0d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"&oThis quest's subject is optional, but may still be of interest to you. We've put it here in the name of completeness.&r"
+				""
+				"The &3Fisher&r catches fish from Water. It requires a 5x5 area of Water directly below to operate. It uses the same loot table as normal Fishing, so it can catch things like &dEnchanted Books&r. Each operation consumes 1 String and EU equivalent to its tier (32 for &7LV&r, etc.) That's about it."
+				""
+				"&eFish Oil&r can be extracted from Fish, which can be used for &6Bio Diesel&r."
+				""
+				"Get &eany&r tier Fisher to complete this quest. (They only go up to &5EV&r. If you forsee needing enough Fish to justify an &1IV&r or higher Fisher, make a feature request on our GitHub or Discord.)"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:lv_fisher"
+			id: "3B26CA44EA955B07"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "5FE21AF40C603AD0"
+					item: "gtceu:lv_fisher"
+					type: "item"
+				}
+				{
+					id: "73279793E571A6E0"
+					item: "gtceu:mv_fisher"
+					type: "item"
+				}
+				{
+					id: "385ED95E8F39CB6D"
+					item: "gtceu:hv_fisher"
+					type: "item"
+				}
+				{
+					id: "0C30563A771CF7F6"
+					item: "gtceu:ev_fisher"
+					type: "item"
+				}
+			]
+			title: "Fishing 50"
+			x: 6.75d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Tame electricity and make your first machines"]
+	title: "&7LV&r - Low Voltage"
+}

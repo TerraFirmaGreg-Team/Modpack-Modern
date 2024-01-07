@@ -1,0 +1,748 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tips_and_tricks_2"
+	group: ""
+	icon: "gtceu:computer_monitor_cover"
+	id: "6049B9A595052948"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"You might already be familiar with EU as the Energy Unit for Electric machines - but what about Steam?"
+				""
+				"Steam machines will run using a proportional amount of steam at a 1:1 ratio of EU to Steam as listed in your recipe viewer of choice."
+				"{@pagebreak}"
+				"After each recipe, the Steam machines will vent cooler steam (with snazzy particles) from the side with the square. This is the exhaust port."
+				""
+				"Important: Keep the exhaust port unblocked - this is neither an input nor an output slot! If the machine fails to vent steam, it will stop working."
+				""
+				"Reminder: Use your Wrench to change which side the exhaust port is facing (right-click)."
+				"{@pagebreak}"
+				"Regular Steam Machines are twice as slow to complete recipes as is listed in JEI. To bring your machines up to speed, you may want to pursue High Pressure Steam machinery."
+				""
+				"High Pressure Steam Machines are the same speed as indicated by JEI, but with adjusted steam consumption. You will unlock them once you obtain Steel."
+				"{@pagebreak}"
+				"Psst! If you're not in a Hardcore world, we invite you to stand on top of pipes transporting steam, or stand right in front of the vent as the machines are running recipes."
+			]
+			icon: "gtceu:steam_machine_casing"
+			id: "7FB2D6C9A3763A47"
+			size: 0.75d
+			tasks: [{
+				id: "488F188E55E06B11"
+				type: "checkmark"
+			}]
+			title: "Steam Power"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E186F9C57155BFA"]
+			description: [
+				"You have likely realised by now that the Energy system in &2GregTech&r is &cnowhere near as simple&r as the &1RF&r you may be used to using in modded Minecraft."
+				""
+				"The energy unit of GregTech is the EU."
+				""
+				"&1EU&r mechanics have a certain flair to them, and are not dissimilar to real-world electricity. They can also be &4dangerous and punishing&r if mishandled. However, the power system gives GregTech players a lot of &6satisfaction&r when harnessed well."
+				""
+				"&l&3Lore:&r&o The Amperage bug, exploit or feature (call it whatever you want!) from 1.12.2 GTCE has been &lfixed&r in GTCEu. The Energy network now works as intended."
+				"{@pagebreak}"
+				"Let's go over some basic physics:"
+				""
+				"° &9Power&r = &2Voltage&r * &dAmperage&r"
+				"° &1Energy&r = &9Power&r * &6Time&r"
+				""
+				"&8Resistance&r is an excluded concept in GregTech, instead being partially simulated as cable loss."
+				""
+				"The units are defined as such:"
+				""
+				"- &1EU&r is the unit of &1Energy&r."
+				"- &9EU/t&r is the &9Power&r."
+				"- &dA&r or &dAmp&r is the &dAmperage&r."
+				"- &2V&r &owould&r be the &2Voltage&r, but we prefer referring to it as &7LV&r, &bMV&r, &6HV&r... as those are the relevant values for gameplay (technically: &7LV&r = 32V = 32EU/t/A)."
+				"{@pagebreak}"
+				"Electricity in GregTech travels in \"packets\". The size of each packet is equivalent to the voltage of its tier."
+				""
+				"Taking an LV packet as an example, this \"packet\" would carry 32EU. Multiple blocks are capable of producing these EU packets, and packets are only produced if they are able to access a destination."
+				"{@pagebreak}"
+				"Every &6tick&r, &1EU&r &apackets&r attempt to transfer themselves from Energy Producers to Consumers. These &apackets&r have two parameters: a &2Voltage&r tier determined by the tier of the Producer, and &dAmperage&r. This determines how much &9Power&r can actually be transferred. "
+				""
+				"There are no partial Amps, meaning Energy is transferred only if the full Amp &apacket&r can be received. You might notice this from your machines sitting just below full EU capacity - they will only accept EU when they are missing at least 1A of their input voltage."
+				"{@pagebreak}"
+				"If a &3Machine&r receives a &2higher Voltage&r than its Tier, it'll &cexplode&r. Kaboom! Any excess &dAmperage&r won't have an adverse affect, as machines only consume as they need."
+				""
+				"The machine explosion would usually also damage terrain, but we have disabled that feature in this pack."
+				"{@pagebreak}"
+				"In summary, Energy is transported in &apackets&r of &132EU&r for &7LV&r, &1128EU&r for &bMV&r... so on and so forth. The amount of energy that is actually received by a machine can end up being lower than energy sent, due to cable loss."
+				""
+				"Machine Energy Input is limited by &2Voltage&r (too high and, well, &6boom&r!), and by &dAmperage&r. Thus, a &bMV&r Machine with &d2A&r Input connected to a &7LV&r line will never accept more than &964EU/t&r."
+				""
+				"It is still possible to run &bMV&r Machines on &7LV&r lines, but only if the recipes are low enough &9Power&r, or if you have a &3MV Battery&r in the charging slot. The machine will only accept &d1A&r when idle, and so the &3Battery&r will recharge at a maximum rate of &932EU/t&r."
+			]
+			icon: "gtceu:lv_battery_hull"
+			id: "61FED75EFA6555EC"
+			size: 0.66d
+			tasks: [{
+				id: "10F1D268436EA85C"
+				type: "checkmark"
+			}]
+			title: "Electricity"
+			x: 0.99d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E186F9C57155BFA"]
+			description: [
+				"Transporting EU is done via direct connection, using &aWires&r or &aCables&r."
+				""
+				"Wires are the inferior option as they will &celectrocute&r you and &close more energy&r as the electricity travels through the wire, so you want to use insulated Cables. Keep in mind that you can't combine cables into thicker variants, so make sure you insulate the right thickness to avoid any headaches."
+				""
+				"&cCable loss&r means you will have to stick your Machines close to your Generators, but that will only be a problem in earlygame. If you peek through the quest book, you will eventually be able to obtain &6Superconductors&r, sidestepping this issue!"
+				"{@pagebreak}"
+				"Keep in mind that GregTech cables suffer from \"cable loss\". Every block of cable that an EU packet travels will decrease its stored EU."
+				""
+				"For instance, transferring LV current along 6 cables each with a loss of 5EU/t will result in the packets arriving at their destination with a meagre 2EU/t (32 - [6*5]). For this reason, you will want to keep your cables short until you can start to consider better alternatives."
+				"{@pagebreak}"
+				"&6Superconductors&r are special Wires available for each Voltage tier. They don't have any Cable counterpart, but that isn't necessary, as they have absolutely &6zero cable loss&r! They also don't damage you when you touch them. "
+				""
+				"They are the best choice for wiring at any tier, if not a little expensive in comparison to the other wires."
+				"{@pagebreak}"
+				"GT6-style Cables are &denabled&r. It means that placing Cables will only connect them to the block they were placed against. To open more connections, use your &5Wire Cutter&r on the grid."
+				"{@pagebreak}"
+				"&2GTCEu&r Cables now have &6native RF support&r! You can plug any RF appliance into an EU source and it will automatically convert. The ratio is &a4 : 1&r (RF : EU). Not that you can produce RF in this pack - but it's a thought if you wanted to make your own!"
+			]
+			icon: "gtceu:copper_double_cable"
+			id: "0F2A7F519B3C67FB"
+			size: 0.75d
+			tasks: [{
+				id: "41F15814196EECFC"
+				title: "Cables"
+				type: "checkmark"
+			}]
+			x: 1.98d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B0FF43022F6C2EC"]
+			description: [
+				"The quantity of 1 packet per tick is known as an Amp (1A for short)."
+				""
+				"Each single-block Generator in GregTech is configured to produce &91A&r of its voltage tier. For &7LV&r, that results in &232EU/t&r."
+				""
+				"If a machine requires 16EU/t, one \"packet\" of 32EU is sent &6every other tick&r (assuming no cable loss) - no more, no less."
+				""
+				"A Battery Buffer with &94&r Batteries can produce up to &94 Amps&r for &2128EU/t&r as &7LV&r power, which is important for the &3Electric Blast Furnace&r - or to run multiple machines simultaneously."
+				""
+				"Generic machines are configured to draw up to &92 Amps&r to account for cable loss. Other machines have specific &9Amps IN&r, which is described in their tooltip."
+				"{@pagebreak}"
+				"The most critical thing to know is that &acables&r have an &9Amperage &climit&r. Attempting to transport more Amps than this limit will &4burn your cable up&r."
+				""
+				"&9Amps&r are drawn &oonly&r through the &aCables&r connecting the Producers and Consumers directly, and only drawn if the Consumers are active."
+				""
+				"This means you can safely step down your Cables in certain places - feel free to experiment!"
+			]
+			icon: "gtceu:ulv_transformer_2a"
+			id: "2BE355672E638CF2"
+			size: 0.66d
+			tasks: [{
+				id: "7D5CFA20478CB9C8"
+				title: "Amperage"
+				type: "checkmark"
+			}]
+			x: 2.97d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BE0349B8F3890D3"]
+			description: [
+				"Why does every machine have a million variants across each tier? Well, overclocking is one reason!"
+				""
+				"Overclocking is a mechanic that happens when you try to run a recipe in a machine &dthat is higher tier than the recipe itself.&r The recipe will use an increased amount of energy, but the recipe time will be cut based on how many tiers you're overclocking by."
+				""
+				"&l&3Lore:&r&o GTCE overclocking was extremely awkward. If the recipe consumed 16EU/t or below, it would do a classic 2.0x overclock. However if the recipe consumed more than 16EU/t, every Overclock would be 2.8x faster! GTCEu has a config to select the Overclock speed bonus."
+				"{@pagebreak}"
+				"A pro tip - for automated setups, overclock as little as possible!"
+				""
+				"Machines have a side menu to set the maximum voltage tier it will overclock to. Click on it to cycle through all the available Voltages and choose a limit."
+				"{@pagebreak}"
+				"Each tier above the recipe tier allows one overclock. Each overclock implies:"
+				""
+				"&9-&r 2x recipe speed"
+				"&9-&r 4x power consumption"
+				"&9->&r 2x total energy cost"
+				""
+				"As you can see, there are upsides and downsides. It is a game of balance: ask yourself if you want faster recipes at the cost of greater power consumption."
+			]
+			icon: "minecraft:clock"
+			id: "54DE75E97153E455"
+			size: 0.75d
+			tasks: [{
+				id: "5E35ABFDCB703A38"
+				title: "Overclocking"
+				type: "checkmark"
+			}]
+			x: 3.96d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"There are two really important factors to know when building Multiblocks."
+				""
+				"Check JEI, and be versatile."
+				"{@pagebreak}"
+				"Check JEI!"
+				""
+				"This one was probably obvious, but it's much more than just a cute picture of how the Multiblock looks when built! Use your mouse to &drotate&r the preview, and &9hover over the blocks used&r to view additional information."
+				""
+				"The JEI page also contains an ingredient list of required blocks. You can also &dright-click&r a block in the preview to get a display of all blocks that work in that specific position."
+				"{@pagebreak}"
+				"Multiblocks are versatile!"
+				""
+				"There is no \"definite\" way to form the Multiblock. Most of the time, you have complete freedom over the &9tier of Buses/Hatches&r used - and you also have the ability to&d choose where you want your inputs/outputs&r."
+				"{@pagebreak}"
+				"Taking the EBF as an example, any tier of Energy/Bus/Hatch can be used, and they can be placed anywhere in place of a casing. Fluid Hatches are also optional, though you probably want them if you need to handle recipes involving fluid."
+			]
+			icon: "gtceu:heatproof_machine_casing"
+			id: "1647E0C649E2131C"
+			size: 0.66d
+			tasks: [{
+				id: "4C9F42B0E4A2E0DB"
+				title: "Forming Multiblocks"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.99d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"&9-&r Check if the Multiblock is properly plugged in (we all make these mistakes!)."
+				""
+				"&9-&r Do the initial Maintenance fix at the appropriate hatch."
+				""
+				"&9-&r Verify the recipe usage - the max EU/t provided to the multiblock has to be greater than that of the recipe."
+				"{@pagebreak}"
+				"&9- &rCheck the special requirements the recipe may have (JEI always has some kind of indication if this is the case)."
+				""
+				"&9-&r Make sure the correct items are input into the buses/hatches. This is less obvious than in a regular machine, because you have to juggle between the Input Bus and Input Hatch."
+				""
+				"&9-&r Make sure there is space for an output. Maybe the multiblock formed, but you forgot a Hatch. The other biggest offender is the Output Hatches being too low tier and thus having too little capacity!"
+			]
+			icon: "gtceu:robust_machine_casing"
+			id: "331F2C12C652D268"
+			size: 0.75d
+			tasks: [{
+				id: "1E55AB139D9E3539"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "Troubleshooting Multiblocks"
+			x: 0.99d
+			y: 0.99d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"Maintenance in GregTech is not as bad as you think (promise!), and multiblocks with this hatch look pretty slick!"
+				"{@pagebreak}"
+				"Most Multiblocks require a &3Maintenance Hatch&r. You will need to perform Maintenance for the Multiblock to begin operating."
+				""
+				"This is done by having a &9Wrench&r, a &9Screwdriver&r, a &9Soft Mallet&r, a &9Hammer&r, a &9Wire Cutter&r, and a &9Crowbar&r in your inventory, opening the Maintenance Hatch and &eclicking the center spot once&r. &cNo need to move tools individually&r."
+				"{@pagebreak}"
+				"Alternatively, you can circumvent these problems by placing a &9Tape&r in the Maintenance Hatch, but a lot of people would jump at the chance to tell you that Tape is &o\"unethical\"&r - plus, tape is gated behind the MV Age."
+				"{@pagebreak}"
+				"Maintenance problems have a &d5%&r chance of occuring every &dhour of multiblock activity&r. Needless to say, they are &6very&r rare. Each maintenance problem increases recipe duration by 10%. Fixing the problems is done the same way as above."
+				""
+				"At &6HV&r age, you will unlock other Maintenance Hatches that do not require manual repairs."
+			]
+			id: "6644AAD403127EFB"
+			size: 0.66d
+			tasks: [{
+				id: "3FF4710150014FB0"
+				item: "gtceu:maintenance_hatch"
+				type: "item"
+			}]
+			title: "Maintenance Hatches"
+			x: 1.98d
+			y: 0.99d
+		}
+		{
+			dependencies: ["1646BF9194100E57"]
+			description: [
+				"The &3Electric Blast Furnace&r, &3Pyrolyse Oven, &b&aMulti Smelter&r, and &3Cracking Unit&r all require Heating Coils. But why should you bother upgrading to higher tiers of Coil?"
+				""
+				"Coil progression can be viewed in the Milestones tab."
+				"{@pagebreak}"
+				"For the EBF, things get slightly complicated. The EBF smelts items at a certain &dtemperature&r. This is mainly determined by the tier of heating coil used - &r&6Cupronickel&r smelts at &d1800K&r, &bKanthal&r at &d2700K&r, etc. Additionally, starting from &6HV&r, each tier of energy adds &d100K&r to the temperature."
+				"{@pagebreak}"
+				"How does this affect you? Each EBF recipe has a certain base temperature. For example, &bAluminium&r is smelted at &d1700K&r. If the EBF temperature is not high enough, the recipe won't happen. If the EBF temperature is high enough, 2 different bonuses are applied:"
+				""
+				"&9-&r For every &d900K&r above the recipe temperature, the amount of energy required is multiplied by &a0.95x&r - which stacks."
+				"&9-&r For every &d1800K&r above the recipe temperature, a single additional overclock will be &6100% efficient&r; in other words, it will &5quadruple the recipe speed&r, instead of doubling it."
+				"{@pagebreak}"
+				"The Pyrolyse Oven is much more simple in comparison to the EBF."
+				""
+				"Cupronickel coils apply a +25% penalty to recipe duration - effectively, recipes are slower than listed if one uses cupronickel coils."
+				""
+				"Kanthal coils restore recipe duration to a regular length of time."
+				""
+				"However, coils above Kanthal apply an additive -50% bonus to recipe duration!"
+				"{@pagebreak}"
+				"The Cracker is much more simple."
+				""
+				"Every coil tier post-Cupronickel will reduce its energy usage by 10%."
+				""
+				"Coils in the Multi Smelter reduce the amount of energy per operation whilst also increasing the number of items that can be processed in parallel."
+			]
+			icon: "gtceu:tritanium_coil_block"
+			id: "6C8789A7B8946CFF"
+			size: 0.75d
+			tasks: [{
+				id: "3434AF20FA598211"
+				title: "Coil Behaviour"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"The &3Electric Blast Furnace&r requires a &3Muffler Hatch&r to run. This hatch must be &cunobstructed&r so it can output its beautiful smoke particles."
+				""
+				"&l&3Lore:&r&o In GregTech 5, polluting multiblocks had Muffler Hatches. The higher tier the hatch, the lower the Pollution output."
+				""
+				"&oPollution had... interesting... effects, such as turning grass and dirt into sand."
+				"{@pagebreak}"
+				"When a recipe is performed, there is a small chance for the &3Muffler Hatch&r to give bonus items - typically tiny Dusts of Ash. These items can be processed for some helpful resources."
+				"{@pagebreak}"
+				"Do &onot&r try to automate the extraction of items from the &3Muffler Hatch&r! It's not intended to be an automation challenge, as it voids excess contents when full, so don't worry about it stopping machines from running."
+				""
+				"Muffler Hatches in GTCEu are more about pure aesthetic (cmon, you can't deny that those particles look good!) and small rewards, rather than punishing game mechanics."
+			]
+			id: "20B98506962B8B17"
+			size: 0.66d
+			tasks: [{
+				id: "1FEB8E12A60DE853"
+				item: "gtceu:lv_muffler_hatch"
+				type: "item"
+			}]
+			title: "Muffler Hatches"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"Multiblocks do not look at the voltage of recipes when trying to craft. Instead, they simply check if they are being provided with enough Power."
+				""
+				"&9Note:&r Be wary of Cable &closses&r bringing the actual power input below the recipe requirement! I &lhighly&r recommend either placing your &3Battery Buffer&r next to the &3Energy Hatches&r for the minimum cable length, or looking around this questbook to see if there are better alternatives to Cables."
+				"{@pagebreak}"
+				"The EBF needs a minimum of &4120EU/t&r power input to run its recipes. This can be achieved with &3two LV Energy Hatches&r. Each one takes 2 Amps of LV, so that's 4 Amps of LV for 128EU/t maximum power."
+			]
+			id: "5F320AFEF6F41AAF"
+			size: 0.75d
+			tasks: [{
+				count: 2L
+				id: "692DAFF49E94F293"
+				item: "gtceu:lv_energy_input_hatch"
+				type: "item"
+			}]
+			title: "Powering Multiblocks"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"Similarly to the Steam Multiblocks - hopefully, you made these! - you're going to need some &3Buses&r if you want to move items in and out."
+				""
+				"For fluids, you'll instead need &3Hatches&r. Higher tiers of &3Hatches/Buses&r have more slots."
+			]
+			icon: "gtceu:lv_input_bus"
+			id: "0C09F89291D29EF8"
+			size: 0.66d
+			tasks: [
+				{
+					id: "20525743B089148E"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "1BAD5A4B4E0EA120"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+			]
+			title: "Multiblock I/O"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3568BC9742092FC5"]
+			description: [
+				"First off, be sure to check the &9tooltip&r - there's a lot of information in there!"
+				""
+				"Don't forget the &3Maintenance Hatch&r. If the structure refuses to form, rotate or replace the Controller, it can be a bit finicky. Don't worry - it doesn't have to be cube-shaped."
+				""
+				"The Controller always has to be in the center. The rest of the top layer has to be &dFilter Casings&r."
+				""
+				"All edges have to be &dPlascrete&r, and the sides can be &dCleanroom Glass&r."
+				""
+				"Placing &3Generators&r or &3Mufflers&r inside is &cnot allowed&r. They're too dirty, so the Cleanroom will unform."
+				"{@pagebreak}"
+				"Upon assembly, the Cleanroom starts &4contaminated&r. While contamined, contained machines will not be able to operate."
+				""
+				"The Cleanroom will drain 30 EU/t and slowly increase the cleanliness until its cleanliness is at 100%."
+				""
+				"Once &9Clean&r, recipes can run. At that point it will only draw 4EU/t. Keep it powered at all times or it will get dirty again!"
+				""
+				"The bigger the Cleanroom, the longer it takes to become Clean."
+				""
+				"&9Note&r: When the time comes, Multiblocks must also be put into Cleanrooms in order to run cleanroom recipes!"
+				"{@pagebreak}"
+				"Need to transfer EU? Try using &3Hulls&r or &3Diodes&r."
+				""
+				"Item and Fluid transfer can be done using &3Passthrough Hatches&r."
+				""
+				"&3Machine Hulls&r can also \"double\" as &6ME Cables&r to extend your ME Network inside your Cleanroom."
+				""
+				"If you used any &dDoor(s)&r in the structure, they can remain open. Not very realistic, but convenient!"
+				"{@pagebreak}"
+				"&9&eConfigs:&r If you dislike the Cleanroom mechanics, it can be toggled off in the config file with &5\"B:enableCleanroom\"&r. Multiblocks can be made to ignore cleanroom requirements with &5\"B:cleanMultiblocks\"&r. We encourage you to try it out before deciding."
+				"{@pagebreak}"
+				"In the real world, a Cleanroom is a well-isolated room which maintains a very low concentration of dust and airborne particles. They're normally used for scientific research, and in real-life semiconductor manufacturing. Clean rooms are specifically designed to keep out as many airborne particulates as can be. "
+				""
+				"Clean rooms are also sometimes used with the purpose of preventing materials from escaping! This is often the primary aim in fields such as pharmaceutics, nuclear work, and hazardous biology."
+				""
+				"The more you know!"
+			]
+			icon: "gtceu:cleanroom"
+			id: "1E5EFC5880605DD4"
+			size: 0.75d
+			tasks: [{
+				id: "315F143FB070D17F"
+				title: "The Cleanroom"
+				type: "checkmark"
+			}]
+			title: "All About the Cleanroom"
+			x: 0.33d
+			y: 1.98d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"There are many ways to automate Ordered Items: GT item pipes, Redstone, other mods, you name it! This quest will attempt to guide you through a setup using &3AE2&r."
+				""
+				"Have the Pattern Provider face an &3Item P2P&r. Set two output P2Ps: one into the first &3Input Bus&r, and the other into &3Item Pipes&r. Make your Item Pipes connect to all Input Buses including the first. Don't forget &dBlocking Mode&r! "
+				""
+				"With this setup, assembly items should be fully automated! This will also work flawlessly once we inevitably add ordered item inputs."
+				"{@pagebreak}"
+				"Whilst item automation was relatively simple, fluid automation is slightly harder."
+				""
+				"Fluid Pipes behave very different compared to Item Pipes, so you &4cannot&r use the same solution as above. "
+				""
+				"This quest won't explain how to do this entirely due to it being off by default, so the full solution is left as an exercise to the reader."
+			]
+			icon: "gtceu:assembly_line"
+			id: "2C70E297DBE3BDF2"
+			size: 0.66d
+			tasks: [{
+				id: "0CC1BD3E61E14F18"
+				type: "checkmark"
+			}]
+			title: "Understanding the Assembly Line"
+			x: 1.32d
+			y: 1.98d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"Scanning is the first step for research. Take the item shown in JEI and put it with a &3Data Stick&r to scan it. This will &4consume&r the item and put Data on the Data Stick. Pretty straightforward, right?"
+				""
+				"You will need at least an &6HV Scanner&r to progress to &dLuV&r, an &5EV Scanner&r for &aLuV Energy Hatches&r, and an &1IV Scanner&r for &aFusion Reactors&r. You can make any one of them to complete this quest."
+				"{@pagebreak}"
+				"Later on, recipes will require different &aData Storage Items&r for research, such as the &3Data Orb&r. This process will remain the same, but will use different Data Storage Items instead. They can also be copied the same way, but you cannot copy between different types of storage items."
+				"{@pagebreak}"
+				"Eventually, you'll want multiple Assembly Lines, but you won't want to re-scan for every Research. This is why you can also use the &3Scanner&r to &dCopy Data&r. Place the data stick you want to copy in one slot, and a blank one in the other. This will copy the contents of the first stick into the second!"
+				""
+				"&4Important&r: Using two different data sticks with data on them will cause one to &4overwrite&r the other. Be careful!"
+			]
+			icon: "gtceu:data_orb"
+			id: "6DA28F169CED9C7D"
+			size: 0.75d
+			subtitle: "Not Yet Implemented"
+			tasks: [{
+				id: "5626378FBFA6241A"
+				title: "Research"
+				type: "checkmark"
+			}]
+			x: 2.31d
+			y: 1.98d
+		}
+		{
+			dependencies: ["188A8C3DD38C2762"]
+			description: [
+				"&aRotors&r have a &9Power&r, &dEfficiency&r and &4Durability&r that are based on tool stats."
+				""
+				"&9Power&r is a multiplier applied to the production of the &3Turbine&r. This stacks multiplicatively with the &3Rotor Holder&r."
+				""
+				"&dEfficiency&r reduces its fuel consumption. This again stacks multiplicatively with the &3Rotor Holder&r."
+				""
+				"&4Durability&r is the lifetime of the &aRotor&r in seconds, when the &3Turbine&r&r is active."
+				"{@pagebreak}"
+				"&3Rotor Holders&r above the tier of the &3Large Turbine&r will multiplicatively &6double&r the production for every tier, whilst additively increasing the efficiency by 10% every tier."
+				"{@pagebreak}"
+				"&lSome pros of Large Turbines:"
+				""
+				"&9-&r Turbines can scale &9Power&r production far, far higher than their base output, thanks to tiered &3Rotor Holders&r."
+				""
+				"&9-&r The &aRotor&r can give a huge boost to &dFuel efficiency&r and &9Power&r production."
+				""
+				"&9-&r You get a lot of satisfaction for setting them up properly (yay!)"
+				"{@pagebreak}"
+				"&l...and some cons of Large Turbines:"
+				""
+				"&9-&r Turbines work off &eInertia&r, which requires them to continuously run to achieve maximum Power."
+				""
+				"&9-&r Any excess Energy produced will be &cvoided&r. You will &lneed&r to use large Energy Buffers and an &3Advanced Energy Detector&r if you wish to stay efficient."
+				""
+				"&9-&r They require a &aRotor&r, which will lose durability over time and eventually &cbreak&r."
+				""
+				"&9-&r A little bit of Math is required to get the expected results."
+				"{@pagebreak}"
+				"A Turbine's &9Power&r output affects both the fuel consumption and the EU/t generation. It is calculated with the following formula:"
+				""
+				"&eproduction = baseEUt x rotorPower x 2^(rotorHolderTier - turbineTier)&r"
+				""
+				"The &dEfficiency&r reduces fuel consumption, but does not alter the EU/t generation. It is calculated with the following formula:"
+				""
+				"&eefficiency = rotorEfficiency x (1 + 0.1 x (rotorHolderTier - turbineTier))&r"
+				"{@pagebreak}"
+				"Let's simulate a Large Steam Turbine, with an Ultimet Rotor and an &5EV&r Rotor Holder:"
+				""
+				"Production = 1024 x 1.60 x 2 = 3276 EU/t"
+				""
+				"Efficiency = 1.30 x 1.10 = 143%"
+				""
+				"(Therefore, steam consumption would be 4582 L/t - this is above a Titanium Boiler, or a Tungstensteel Boiler with ~70% throttle)"
+				"{@pagebreak}"
+				"Next, we'll analyse the Gas Turbine, with a Chrome Rotor and an &5EV&r Rotor Holder:"
+				""
+				"Production = 4096 x 1.70 x 1 = 5325 EU/t"
+				""
+				"Efficiency = 1.55 x 1.00 = 155%"
+				""
+				"(The same fuel consumption would produce 3435 EU/t using 6.7 Turbo Gas Turbines!)"
+				"{@pagebreak}"
+				"Finally, how about we check out the Plasma Turbine, with a HSS-S Rotor and a &cZPM&r Rotor Holder:"
+				""
+				"Production = 16834 x 2.50 x 4 = 168340 EU/t"
+				""
+				"Efficiency = 1.80 x 1.20 = 216%"
+				""
+				"(This is more than a ZPM Amp!)"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "aluminium"
+					}
+				}
+			}
+			id: "1366981BD8CD98E1"
+			size: 0.75d
+			tasks: [{
+				id: "2E9A0EE7DBA81C4D"
+				title: "Large Turbine Mechanics"
+				type: "checkmark"
+			}]
+			x: 3.63d
+			y: 1.98d
+		}
+		{
+			dependencies: ["3B2D2C47BEBCFFA7"]
+			description: [
+				"Simply put, Gregicality Multiblocks are larger versions of the GregTech machines you might be familiar with. The obvious increase in resource cost is worth your time, as they can be upgraded to gain the ability to process recipes in parallel - similar to the Processing Array multiblock you will encounter soon enough."
+				"{@pagebreak}"
+				"They also introduce Machine Modes - depending on the configured machine mode, the Multiblock will use a different recipe type when processing materials. You can change this from the machine GUI by clicking on the Robot Arm button."
+				"{@pagebreak}"
+				"By including Parallel Control Hatches in your Gregicality Multiblocks, you can grant them parallel processing capability. There are 4 tiers of hatch, each further increasing parallel capability by an factor of 4."
+			]
+			icon: "gtceu:mega_blast_furnace"
+			id: "57DE7059D524FAE9"
+			size: 0.66d
+			tasks: [{
+				id: "7E9FB8A674944C72"
+				title: "Gregicality Multiblocks"
+				type: "checkmark"
+			}]
+			x: 4.62d
+			y: 1.98d
+		}
+		{
+			dependencies: ["2DAC91AF2EBB68E2"]
+			description: [
+				"&lWhy go parallel?"
+				""
+				"&9-&r &4Parallelization is superior&r to overclocking! Use it for passive setups such as Ore Processing or Oil Distilling."
+				""
+				"&9-&r &6Distinct buses&r: a &3PA&r can accept up to 10 &3Input Buses&r. Use it for your pattern automation with &3Extruder&r, &3Engraver&r, and many other."
+				"{@pagebreak}"
+				"Power cost is based on the current recipe being run, times the number of &4parallel&r being performed."
+				""
+				"As an &9example&r, &316 LV Distilleries&r will require a &3HV Energy Hatch&r in order to run effectively."
+			]
+			icon: "gtceu:iv_processing_array"
+			id: "255929EB845E200D"
+			size: 0.75d
+			tasks: [{
+				id: "71990F9CE8E29F73"
+				type: "checkmark"
+			}]
+			title: "Parallelisation"
+			x: 5.61d
+			y: 1.98d
+		}
+		{
+			dependencies: ["7813F183681E0342"]
+			description: [
+				"&lWhy process ore?"
+				""
+				"The main purpose of GregTech Ore Processing is to provide &abyproducts&r on top of the initial outcome. At Steam Age, none of the byproducts are obtainable, but this will become relevant soon."
+				"{@pagebreak}"
+				"&lHow should I start?"
+				""
+				"The steps available in the Steam Age go as follows:"
+				""
+				"One Ore (block) &9->&r Two Crushed Ores (Macerator)"
+				""
+				"One Crushed Ore &9->&r One Impure Dust (Hammer)"
+				""
+				"One Impure Dust &9->&r One Dust (In world crafting)"
+				""
+				"One Dust &9->&r One Ingot (Furnace, you should know this one)"
+				"{@pagebreak}"
+				"A pickaxe or mining hammer enchanted with Hammering, or a GregTech Hammer directly, gives Crushed Ores from breaking Ore blocks, but only at a 1:1 ratio."
+				""
+				"Silk Touch is essential to obtain an ore block - this pack includes a recipe for the book."
+				""
+				"The Fortune enchantment can increase this ratio to up to 2x with Fortune III, matching the Macerator."
+				"{@pagebreak}"
+				"The rule bends for ores giving more than two dusts (such as &cRedstone&r), and for dusts that cannot be smelted (&cRedstone&r... again!)."
+				""
+				"However, you can still smelt the ore directly to get &9half the amount&r you would from the full processing."
+				"{@pagebreak}"
+				"&dJEI does not indicate Impure Dust to Clean Dust conversion&r, so keep that in mind that you can &athrow them into filled cauldrons&r."
+				"{@pagebreak}"
+				"Take this reward for listening to us waffle on WITHOUT nodding off!"
+			]
+			icon: "gtceu:redstone_crushed_ore"
+			id: "189612F2C7C60E81"
+			rewards: [
+				{
+					count: 16
+					id: "6B12F2544F281A32"
+					item: "gtceu:iron_ore"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "00CB754FC48F6203"
+					item: "gtceu:chalcopyrite_ore"
+					type: "item"
+				}
+			]
+			size: 0.66d
+			tasks: [
+				{
+					id: "703A616325ECD10C"
+					item: "gtceu:redstone_crushed_ore"
+					type: "item"
+				}
+				{
+					id: "05F8B17137376E83"
+					item: "gtceu:redstone_pure_dust"
+					type: "item"
+				}
+			]
+			title: "Beginner Ore Processing"
+			x: 4.95d
+			y: 0.0d
+		}
+		{
+			dependencies: ["724FB950CC472BB4"]
+			description: [
+				"What you will &4&lneed&r to automate &6Ore Processing&r on a large scale:"
+				""
+				"&9-&r One or few &3IV Macerators&r (or higher tier)."
+				"&9-&r A few &3Processing Arrays&r (PA) to place your low tier machines inside - &eor&r the &2GCYM&r variants."
+				"&9-&r 16 LV &3Thermal Centrifuges&r in a PA (upgradable to 64 with the Advanced PA)."
+				"&9-&r One or a few MV &3Electrolyzers&r, possibly in a PA."
+				"&9-&r A &3Multi Smelter&r."
+				"&9-&r A &3Packager&r of any tier."
+				"&9-&r Inventories acting as a large buffer, such as &3Tungstensteel Crates&r."
+				"&9-&r &3ME Storage Buses&r or a lot of &3Item Pipes&r + &aFilters&r covers, and &aItem Tag Filters&r"
+				"{@pagebreak}"
+				"What you may &eoptionally&r add:"
+				""
+				"&9-&r A few LV &3Ore Washers&r for quick washing purposes."
+				"&9-&r Up to 16 LV &3Ore Washers&r in a PA, accompanied with a set of &3Distilleries&r for &dDistilled Water&r."
+				"&9-&r Up to 16 LV &3Centrifuges&r in a PA, for impure/purified dusts."
+				"&9-&r &3&3Chemical Baths&r for the special Byproducts using &dMercury&r or &dSodium Persulfate&r."
+				"&9-&r &3Sifters&r of any tier (higher tier = better chanced output), for gem ores."
+				"&9-&r &3Electromagnetic Separators&r."
+				"{@pagebreak}"
+				"Try to use LV machinery."
+				""
+				"Overclocking is not energy efficient, which is why it is generally better to go for low tier machines in passive setups. One could also argue they are cheaper."
+				""
+				"&3Processing Arrays&r make up for the sheer amount of machines you are making. If you wish, you can still use higher tier machines, but the power draw will be bigger."
+				""
+				"If you've made any of the &2Gregicality Multiblocks&r, just use those instead."
+				"{@pagebreak}"
+				"&o&7\"Should I go for the optional byproducts?\""
+				""
+				"Yes."
+				""
+				"However, setting your processing up so that you obtain more Byproducts or get better yields is completely up to you."
+				""
+				"&3Thermal Centrifuges&r are close to mandatory, as they unlock a &6unique Byproduct&r from the maceration step."
+				"{@pagebreak}"
+				"Chalcopyrite, Chalcocite, Bornite, Tetrahedrite, Pentlandite and Sheldonite ores should all be turned into their &dPurified Crushed&r variants, and sent to the &6Platinum Group Metal&r chain."
+				""
+				"Purified Crushed Galena and Sphalerite may be reserved for Indium, until you have the Naquadah chain."
+				""
+				"&aGallium&r, &aChrome&r, &aNiobium&r, &aRare Earths&r, &aGlowstone&r are &6Byproducts&r you want to prioritise. "
+				""
+				"If we're missing any, hit us up on Discord, and we'll be sure to change this."
+				"{@pagebreak}"
+				"As you may know, automating with AE2 is very powerful."
+				""
+				"&3ME Storage Buses&r can route items effortlessly. They also have a huge whitelist or blacklist configuration. Put them on the &3Tungstensteel Crates&r to buffer the items, or use a dedicated AE2 subnet."
+				""
+				"To combine &aTiny Dusts&r into full &aDusts&r, you will want a &3Storage Bus&r on high priority paired with an &dItem Tag&r filter for &e&ldusts/tiny&r. Note that a few Tiny Dusts are needed for the PBI chain, so you can blacklist them from this if it's your main network."
+				"{@pagebreak}"
+				"For ores that you want to process but don't want the Byproducts as it would take too long in the machines, prioritize filtering them for quick washing."
+				""
+				"The typically \\\"best\\\" path is: Macerator -> Ore Washing -> Thermal Centrifuge -> Macerator. If you deviate from it for various reasons, you will have to set filters &emanually&r."
+			]
+			icon: "gtceu:diamond_crushed_ore"
+			id: "7FCFE4C40837CF5E"
+			size: 0.75d
+			tasks: [{
+				id: "36276D923D83323C"
+				title: "\"Expert\" Ore Processing"
+				type: "checkmark"
+			}]
+			x: 5.94d
+			y: 0.0d
+		}
+	]
+	title: "Tips and Tricks"
+}

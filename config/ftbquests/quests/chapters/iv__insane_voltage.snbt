@@ -1,0 +1,1087 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv__insane_voltage"
+	group: "693226878D58638A"
+	icon: "gtceu:iv_electric_motor"
+	id: "32EF20533F323E02"
+	order_index: 5
+	quest_links: [{
+		id: "050247AED8C803F9"
+		linked_quest: "30A6EDDF25A5E5F8"
+		shape: "gear"
+		size: 1.2d
+		x: 0.375d
+		y: 4.875d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"300348B1238BCB9A"
+				"7A1E3C3A2D699C5B"
+			]
+			description: ["This Superconductor will be required for progression during &dLuV&r."]
+			icon: "gtceu:samarium_iron_arsenic_oxide_double_wire"
+			id: "52D952ADBEB67454"
+			size: 0.75d
+			tasks: [{
+				icon: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+				id: "3789CEDA4AEEBD91"
+				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+				type: "item"
+			}]
+			title: "IV Superconductors"
+			x: -0.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			description: [
+				"If you already made and centrifuged &aRare Earth&r, that's great! If you haven't, you can obtain it as a &9Byproduct&r from various ores, or from centrifuging &dMonazite&r."
+				""
+				"To extract the &aRare Earths&r&r, you should use a &3Centrifuge&r &4as high a tier as possible&r, due to the increased chance of bonus outputs."
+				"{@pagebreak}"
+				"The elements you can obtain are:"
+				""
+				"&9-&r &aLanthanum&r is used in &3Fusion&r&r - you will eventually want a lot of it!"
+				"&9-&r &aYttrium&r is used in &dYttrium-Barium-Cuprate-Oxide&r (YBCO), a wire material for &3UV&r."
+				"&9-&r &aCerium&r is not particularly useful."
+				"&9-&r &aSamarium&r is used for &dIV Superconductors&r and &dMagnetic Rods&r for &dLuV&r+ Motors."
+				"&9-&r &aNeodymium&r normally makes the strongest magnets, but gameplay balance... y'know."
+				"&9-&r &aCadmium&r is not particularly useful."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Rare Earth Elements (REE) contain a lot more metals than these, but we're struggling as is to give them use."
+			]
+			id: "300348B1238BCB9A"
+			size: 0.75d
+			tasks: [{
+				count: 64L
+				id: "0BC7D23CA52A619D"
+				item: "gtceu:rare_earth_dust"
+				type: "item"
+			}]
+			title: "Rare Earth"
+			x: -1.875d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1776FA1F3255731E"
+				"5CA86A333670A55C"
+				"069FD86133D7D582"
+			]
+			description: [
+				"&aHSS-G Coils&r bring up the Heat Capacity to &d5,400K&r."
+				""
+				"The ever-tempting &6Coil bonuses&r&r should be high incentive to make those early, as they become mandatory only during &dLuV&r."
+				""
+				"At this point, you may go back to using only one &3Electric Blast Furnace&r for your entire base, powering with the highest available Voltage you have."
+				""
+				"&6Hot Metals&r will start taking longer to cool down, as the &3Vacuum Freezer&r doesn't get perfect overclocks. For that, you probably want a dual (or quad) &3Vacuum Freezer&r."
+			]
+			icon: "gtceu:hssg_coil_block"
+			id: "7A1E3C3A2D699C5B"
+			size: 0.75d
+			subtitle: "Approaching solar temperatures"
+			tasks: [{
+				icon: { Count: 16b, id: "gtceu:hssg_coil_block" }
+				id: "544762609C1B9613"
+				type: "item"
+			}]
+			title: "HSS-G Coils"
+			x: 0.375d
+			y: 1.5d
+		}
+		{
+			dependencies: ["069FD86133D7D582"]
+			description: [
+				"&7High-Speed Steels&r (HSS) are more resistant Steel Alloys typically used in Rails."
+				""
+				"If you previously made &dUltimet&r for whatever reason, you've already acquired &aMolybdenum&r. Otherwise, it can be found in a Nether vein."
+				""
+				"We hope you have a lot of &9Tungstensteel&r, because you're still gonna need more! It's used for the creation of &aHSS&r alloys - in this case, &aHSS-G&r."
+			]
+			hide_dependency_lines: true
+			id: "1776FA1F3255731E"
+			size: 0.75d
+			tasks: [{
+				id: "7F7D77145AC8197E"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			title: "HSS-G"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A1E3C3A2D699C5B"]
+			description: [
+				"Technically, HSS-E doesn't contain Manganese, but some other HSS alloys do have Manganese, so... close enough?"
+				""
+				"&aHSS-E&r has some niche uses in progression."
+				""
+				"This alloy has great durability and damage property for tools. It has the best Power multiplier (until Neutronium!) as a &dRotor&r for &3Large Turbines&r, though it's slightly less efficient than &aHSS-S&r."
+			]
+			id: "1783D89CE81C8E2E"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "096C0C576B0F3358"
+				item: "gtceu:hsse_ingot"
+				type: "item"
+			}]
+			title: "HSS-E"
+			x: 0.375d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"1776FA1F3255731E"
+				"0425179329ED1B72"
+				"58BBD540D7D4FF01"
+			]
+			description: [
+				"When running the &3Extreme Combustion Engine&r, you're gonna want to boost it! &mWhy bother otherwise?&r"
+				""
+				"Get yourself a &34A IV Dynamo Hatch&r as the output, and one &3Vacuum Freezer&r for &aLiquid Oxygen&r."
+				""
+				"You should now be wielding the equivalent of 1 &dLuV&r Amp, all whilst burning fuel at &6200% efficiency&r!"
+				""
+				"Don't forget to keep it supplied with a small amount of &aLubricant&r."
+				""
+				"The &3ECE&r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The ECE comes from GT:NH. However... its implementation wasn't so rosy at first. The stats on the tooltip looked similar to this one - so far, so good."
+				""
+				"The bad part came when crunching the numbers. Players ended up realizing they needed to run around 16 whole &6HV&r Vacuum Freezers to keep up with the Liquid Oxygen demand..."
+				""
+				"The one and only fuel it would accept is High Octane Gasoline, which was stated to be burned at 300% efficiency when boosted, but the UI was lying. The efficiency remained at 100%."
+				""
+				"The GT:NH team eventually decided to rework the ECE among other power options... phew!"
+			]
+			id: "466AC4DD902115EF"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "The ultimate Combustion generator!"
+			tasks: [{
+				id: "7F0E2A5AD0E2FC25"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			title: "Extreme Combustion Engine"
+			x: 1.5d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"7820DF52516344F4"
+				"4CD9F6D1B4CC7D81"
+				"5BACED5AE350EAB1"
+				"4343746E706264E6"
+				"528CE69DA4358B2E"
+			]
+			description: [
+				"You should have all the tools available to produce &aPolybenzimidazole&r on your own!"
+				""
+				"&aPBI&r only becomes mandatory to progress from &dLuV&r to &cZPM&r, but tackling it earlier will unlock the &6Advanced SMDs&r."
+			]
+			icon: "gtceu:polybenzimidazole_plate"
+			id: "7CFC112B8F460549"
+			size: 0.75d
+			subtitle: "GTCEu's toughest polymer!"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:polybenzimidazole"
+					id: "5971118ED25AC71A"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "7C5D37940A0C8409"
+					item: "gtceu:polybenzimidazole_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65165EC105F048AD"
+					item: "gtceu:polybenzimidazole_plate"
+					type: "item"
+				}
+			]
+			title: "Polybenzimidazole"
+			x: -0.75d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"7A1E3C3A2D699C5B"
+				"7CFC112B8F460549"
+			]
+			description: [
+				"Better &aSMDs&r to make far more complex Circuits at a much cheaper price."
+				""
+				"These'll require Alloys that you have not made yet, most of which will be common in &dLuV&r and onwards."
+				""
+				"&aAdvanced SMDs&r are required for the &dCrystal&r Circuit line."
+			]
+			icon: "gtceu:advanced_smd_transistor"
+			id: "195E5BFDE4C5A0DE"
+			size: 0.75d
+			tasks: [
+				{
+					id: "25B01725B3E33952"
+					item: "gtceu:advanced_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "5BA971DE64CA560F"
+					item: "gtceu:advanced_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "1ED6BE67774595EA"
+					item: "gtceu:advanced_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "027CA58B4F5D5F99"
+					item: "gtceu:advanced_smd_diode"
+					type: "item"
+				}
+				{
+					id: "3D7DE6355D703AFB"
+					item: "gtceu:advanced_smd_inductor"
+					type: "item"
+				}
+			]
+			title: "Advanced SMDs"
+			x: -0.75d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"7CC79617A4965F25"
+				"30A6EDDF25A5E5F8"
+			]
+			description: [
+				"Tungstensteel under your belt? Nanoprocessor Mainframes on demand? Let's make some machinery."
+				""
+				"The &3IV Assembler&r is required to unlock &3IV Energy and Dynamo Hatches&r, as well as &3HSS-G Coils&r."
+				""
+				"Upgrading this to its &2GCYM&r variant isn't a bad idea."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Did you know that GTCE's content stopped at &5EV&r&o, and all content up to &3UV&f was provided by Shadows of Greg, a third party mod?"
+			]
+			icon: "gtceu:iv_assembler"
+			id: "5CA86A333670A55C"
+			size: 0.75d
+			tasks: [{
+				id: "2BD1CC61E5122DC7"
+				item: "gtceu:iv_assembler"
+				type: "item"
+			}]
+			title: "IV Assembler"
+			x: 0.375d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"30A6EDDF25A5E5F8"
+				"14D277A164202FF8"
+			]
+			description: [
+				"The &aLarge Tungstensteel Boiler&r is the final Steam Boiler. It's even more efficient than the previous ones, and produces more steam."
+				""
+				"This thing is &la colossal noob trap&r, and you should &4ABSOLUTELY&r use something else. &cDon't&r make this, it's not good, not even as a meme! Steam &4doesn't&r scale beyond this point, and this boiler will likely be &3removed&r in the future."
+				""
+				"&eNote&r: This quest can be skipped (for completion progress) by clicking the Checkmark. You do not have to actually craft one."
+				""
+				"&l&3Lore:&r&o No one makes these in GT5u either... y'know, almost makes you feel sorry for the poor boiler."
+			]
+			icon: "gtceu:tungstensteel_large_boiler"
+			id: "328CFD483C26EA44"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Good luck fueling this, lmao"
+			tasks: [
+				{
+					id: "4C89839747EDFFF5"
+					item: "gtceu:tungstensteel_large_boiler"
+					type: "item"
+				}
+				{
+					id: "4F863C04757556B2"
+					type: "checkmark"
+				}
+			]
+			title: "Worst Combustion"
+			x: -0.75d
+			y: 4.875d
+		}
+		{
+			dependencies: ["528CE69DA4358B2E"]
+			description: [
+				"&aLaminated Glass&r is the shiny new tier of Glass for &1IV&r and onwards. It is made in the &3Forming Press&r using a new Polymer: &dPolyvinyl Butyral&r."
+				""
+				"None of the steps should be particularly difficult if you already have the &3Distillation Tower&r for Cracked Fuels, and you have also automated Epoxy."
+				""
+				"If you don't already have both set up, you know what to do!"
+				""
+				"&9Note:&r &dPolyvinyl Acetate&r (required for the Glass) can also be used for &aGlue&r!"
+			]
+			id: "12B4423F055BFBF5"
+			size: 0.75d
+			tasks: [{
+				id: "2358A62B80B56238"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			title: "Laminated Glass"
+			x: 2.625d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"7A1E3C3A2D699C5B"
+				"216E5A3574AC08BF"
+			]
+			description: [
+				"HSS-S is another &mcompletely fictional&r &7High Speed Steel&r, alloyed with Iridium and Osmium."
+				""
+				"&aHSS-S&r will be necessary to craft &dLuV Motors&r."
+				""
+				"This alloy has a great mining speed, which translates into extremely good &6efficiency&r when used as a &dRotor&r in &3Large Turbines&r."
+			]
+			id: "3A7491323AC5C70C"
+			size: 0.75d
+			subtitle: "We made this one up"
+			tasks: [{
+				id: "578E3442D589DAE8"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			title: "HSS-S"
+			x: 2.625d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D15EEE81B1A3100"]
+			description: [
+				"Getting &aIndium&r requires a lot of &dSulfuric Acid&r, and two different ores: Galena and Sphalerite."
+				""
+				"&dSulfuric Acid&r can be produced in large scale in the &3Large Chemical Reactor&r, or obtained as a waste from the &9Platinum Group Sludge&r process."
+				""
+				"In &dLuV&r, the mandatory &9Naquadah chain&r will grant &aIndium&r too, which means this setup will have a limited life."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This is another small chain inherited from GregTech 5. However, this used to yield one tiny Dust instead, which was... interesting."
+			]
+			icon: "gtceu:indium_dust"
+			id: "0F192D1F44B9B599"
+			size: 0.75d
+			subtitle: "Superconductor Supreme"
+			tasks: [{
+				id: "1BC2B3ED9FD76DA2"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			title: "Indium"
+			x: 2.625d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"7820DF52516344F4"
+				"0F192D1F44B9B599"
+				"5CA86A333670A55C"
+				"528CE69DA4358B2E"
+			]
+			description: [
+				"The &aHPIC&r unlocks &3IV Energy Hatches&r and &3Dynamos&r... You know the drill!"
+				""
+				"Making an &3IV Chemical Reactor&r is &doptional&r. You can craft this with a &3Large Chemical Reactor&r if you wish."
+				""
+				"If you wish to automate your LCR with patterns, circle back to the P2P Tunnel Quest for more information."
+			]
+			id: "0425179329ED1B72"
+			size: 0.75d
+			tasks: [{
+				id: "3550E45267942DE8"
+				item: "gtceu:hpic_chip"
+				type: "item"
+			}]
+			title: "High Power Integrated Circuit"
+			x: 2.625d
+			y: 3.75d
+		}
+		{
+			dependencies: ["30A6EDDF25A5E5F8"]
+			description: [
+				"&1IV&r Components - fortunately for you - aren't a massive step up in terms of complexity."
+				""
+				"However, the amount of &dTungsten&r required in crafting these is huge."
+				""
+				"&aEmitters&r and &aSensors&r are in their own league, as they require &dNether Stars&r and &dIridium&r, both of which have their own dedicated Quests."
+			]
+			icon: "gtceu:iv_electric_motor"
+			id: "01AB252C72B565FE"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "382B9759383E1AC3"
+					item: "gtceu:iv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "0C74DFC662ECC366"
+					item: "gtceu:iv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "519AC26F40AFFB88"
+					item: "gtceu:iv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "36CA1AAFADE476FF"
+					item: "gtceu:iv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "27DB5DDEF05DDC0D"
+					item: "gtceu:iv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "165F27AC399EC0FD"
+					item: "gtceu:iv_emitter"
+					type: "item"
+				}
+				{
+					id: "6AD8B7D88D9E10F5"
+					item: "gtceu:iv_sensor"
+					type: "item"
+				}
+			]
+			title: "There is no limit to \"Fun\""
+			x: 0.375d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7CC79617A4965F25"
+				"30A6EDDF25A5E5F8"
+				"14D277A164202FF8"
+			]
+			description: [
+				"Better Ore Processing for &6chanced Byproducts&r, only at the cost of this &3Macerator&r! A must have."
+				""
+				"And now, it's finally time for mass ore processing automation."
+				""
+				"The next Quest will kick things off!"
+			]
+			id: "05003665368F5A57"
+			size: 0.75d
+			tasks: [{
+				id: "4043CFB3C4E0DB90"
+				item: "gtceu:iv_macerator"
+				type: "item"
+			}]
+			title: "Shredding your Ores with further more Byproducts"
+			x: 1.5d
+			y: 4.875d
+		}
+		{
+			dependencies: ["05003665368F5A57"]
+			description: [
+				"Welcome to the age of automation!"
+				""
+				"Ore Processing is now at your fingertips."
+				""
+				"&6This quest unlocks a definitive tutorial on Ore Processing in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+			]
+			icon: "gtceu:almandine_refined_ore"
+			id: "724FB950CC472BB4"
+			shape: "circle"
+			size: 0.66d
+			tasks: [{
+				id: "496C00BA0D8F5445"
+				type: "checkmark"
+			}]
+			title: "Setting up Ore Processing"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"73E8283634E5E33A"
+				"12B4423F055BFBF5"
+				"327C3E02CD751453"
+				"0425179329ED1B72"
+				"069FD86133D7D582"
+				"6B128610C7D2825D"
+			]
+			description: [
+				"Making &dLuV&r Components will require more work. You'll need to look at making the &3Assembly Line&r in order to progress."
+				""
+				"This Multiblock has a &evariable size&r&r. Each &3ULV Input Bus&r accepts a different stack of items."
+				""
+				"You will want to build this with a size of &d10&r to get started, or of a size of &d14&r to accept all possible recipes in base GTCEu."
+				""
+				"Recipes require &aFluids&r, so it is a good idea to keep the &3Input Hatches&r permanently filled with &dSoldering Alloy&r, &dLubricant&r and &dStyrene-Butadienne Rubber&r."
+				""
+				"&6This quest unlocks two new tutorials on the Assembly Line and Research in the &lTips and Tricks&r&6 tab - check them out to learn more!&r"
+			]
+			id: "77B7B1EDD19831E0"
+			shape: "gear"
+			size: 1.3d
+			subtitle: "AKA the \"Assline\""
+			tasks: [{
+				id: "1BD34023E42B4E50"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			title: "Assembly Line"
+			x: 3.75d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"5E6BA54E8A5BEBDE"
+				"14D277A164202FF8"
+				"6B128610C7D2825D"
+			]
+			description: [
+				"The &3Processing Array&r is a powerful &6automation tool&r. It combines several single block machines into one single multiblock."
+				""
+				"Start off by placing up to &d16&r Machines into the &3Machine Access Interface&r."
+				""
+				"The &3PA&r will now &asimulate&r all the machines you put inside, as if they were running at the same time."
+				""
+				"This means recipes can now be performed up to &d16&r at a time - this is true &4parallelisation&r!"
+				""
+				"&6This quest unlocks a new tutorial on parallel techniques in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GregTech 5, the Data Orb was used in the Matter Replicator to store the \"data\" of the material you wanted to replicate. There is no replication here - the Orb is now a mere crafting component."
+				""
+				"&oAdditionally, GregTech 5's PA and other Multiblocks acted as a Cleanroom. There's no such thing here!"
+			]
+			id: "2DAC91AF2EBB68E2"
+			size: 0.75d
+			subtitle: "The PA does so little but so much"
+			tasks: [{
+				id: "515EDFE316170EEA"
+				item: "gtceu:iv_processing_array"
+				type: "item"
+			}]
+			title: "Processing Array"
+			x: 6.0d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"0988B5FB795FF7DA"
+				"383B789B654C4094"
+				"69E384F389B0D07B"
+			]
+			description: [
+				"&o&7\"250,000,000 EU in a Battery? That's 25 minutes of Power when drained constantly.\""
+				""
+				"The &aLapotronic Energy Orb&r should be the beginning of the end of your energy storage struggles."
+				""
+				"This form of Energy Storage is perfect if your Power Generation is inconsistent, or if you need to buffer large amounts due to the nature of &3Large Turbines&r."
+				""
+				"Such a boost in power does not come cheap. The &dEngraved Lapotron Crystal Chips&r are worth &a8 Lapotron Crystals&r."
+			]
+			icon: "gtceu:lapotronic_energy_orb"
+			id: "5B07279B08BF8DDE"
+			size: 0.75d
+			subtitle: "It's amazing!"
+			tasks: [
+				{
+					id: "3B8E3903EA888A6F"
+					item: "gtceu:lapotronic_energy_orb"
+					type: "item"
+				}
+				{
+					id: "529358AADE55D801"
+					item: "gtceu:iv_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Insane Batteries"
+			x: 7.125d
+			y: 4.875d
+		}
+		{
+			dependencies: ["145F71A817C5996E"]
+			description: ["The &aZPM Mainframe&r is used to make the &3LuV Circuit Assembler&r (of course), but also allows you to step into &3Fusion&r."]
+			id: "327C3E02CD751453"
+			size: 0.75d
+			tasks: [{
+				id: "59901F46ED2C46DF"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			title: "First ZPM Circuits!"
+			x: 8.25d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"1B520580219AFAE9"
+				"216E5A3574AC08BF"
+			]
+			description: [
+				"&aNether Stars&r are used for high tier &dSensors&r, &dEmitters&r and &dField Generators&r."
+				""
+				"You can also use them for &dBeacons&r if you desire the permanent potion effects. Finally, a vanilla multiblock!"
+				""
+				"On the topic of the &aNether Air&r which is required in the recipe: take a look at &9Liquid Nether Air&r distillation at your own leisure. It's quite rewarding."
+			]
+			icon: "minecraft:nether_star"
+			id: "6B128610C7D2825D"
+			size: 0.75d
+			subtitle: "Jump Up, Superstar"
+			tasks: [
+				{
+					id: "71D5FE3076C1F56C"
+					item: "gtceu:nether_star_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08814DD921835365"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/nether_star"
+						}
+					}
+					title: "Nether Star"
+					type: "item"
+				}
+			]
+			title: "Nether Stars"
+			x: 4.875d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"64CACABB48635904"
+				"5BACED5AE350EAB1"
+			]
+			description: [
+				"The &aPlatinum Group Metals&r are six rare metals with useful catalytic properties. They are &3Ruthenium&r, &dRhodium&r, &7Palladium&r, &9Osmium&r, &bIridium&r, and &ePlatinum&r."
+				""
+				"You will need to &4automate&r this entire process, as every single one of these metals will be used extensively in the late game."
+				"{@pagebreak}"
+				"To begin, treat various PGM-bearing &aPurified Crushed Ores&r with &dNitric Acid&r to produce &aPlatinum Group Sludge&r."
+				""
+				"Then, centrifuge it with &dAqua Regia&r to produce the various PGM salts."
+				""
+				"&dChlorine&r can be perfectly recycled from the &eRaw Platinum Powder&r."
+				""
+				"&dNitric Acid&r is &osort of&r recycled from &7Raw Palladium Powder&r through &dAmmonia&r, though we'd recommend keeping the excess Ammonia for other uses (Rocket Fuel and PBI)."
+				""
+				"The other PGM salts have their own special mini-chain associated to them - more on this in the next quests."
+				"{@pagebreak}"
+				"&9Note:&r &ePlatinum&r and &7Palladium&r can also be obtained from The End or through normal Ore Processing."
+				""
+				"&l&3Lore:&r&o Heard of the infamous \"Platline\" from either Gregicality or GregTech: New Horizons? The extremely daunting chain was added in GT:NH through Bartworks. The concept is amazing, but we had to tune it down significantly to make entering late game in GTCEu much smoother."
+			]
+			icon: "gtceu:platinum_group_sludge_dust"
+			id: "635D14B8E9F996FD"
+			size: 0.75d
+			tasks: [{
+				id: "4303DF66EBD3032C"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			title: "Platinum Group Processing"
+			x: 3.75d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"635D14B8E9F996FD"
+				"7820DF52516344F4"
+				"528CE69DA4358B2E"
+			]
+			description: [
+				"This part of the chain starts by obtaining some &aRarest Metal Mixture&r."
+				""
+				"You'll need at least an &1IV&r &3Large Chemical Reactor&r, but the average power draw isn't too bad."
+				""
+				"&dChlorine&r is fully looped, and &dHydrogen&r is slightly negative (&ounless you put Acidic Osmium Solution in the Distillation Tower and electrolyze the water back... on second thoughts, don't do that&r)."
+				""
+				"&aIridium&r is required to progress through &1IV&r, so get your PGS line automated ASAP!"
+			]
+			icon: "gtceu:iridium_ingot"
+			id: "216E5A3574AC08BF"
+			size: 0.75d
+			tasks: [
+				{
+					id: "236EFFBCE5885D61"
+					item: "gtceu:rarest_metal_mixture_dust"
+					type: "item"
+				}
+				{
+					id: "1AAE4205D9FA580D"
+					item: "gtceu:iridium_dust"
+					type: "item"
+				}
+				{
+					id: "75849AB6B11652E9"
+					item: "gtceu:osmium_dust"
+					type: "item"
+				}
+			]
+			title: "Iridium and Osmium"
+			x: 3.75d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"635D14B8E9F996FD"
+				"528CE69DA4358B2E"
+				"069FD86133D7D582"
+				"5DBBD9B1F5B01F4E"
+			]
+			description: [
+				"This part of the chain starts with &aInert Metal Mixture&r."
+				""
+				"&dSulfuric Acid&r can be perfectly recycled. You will produce excess &dOxygen&r and &dHydrogen&r that can be stored."
+				""
+				"&aRuthenium&r and &aRhodium&r are gatekeepers to &dLuV&r. If you automate them now, you won't need to do it later!"
+			]
+			icon: "gtceu:ruthenium_ingot"
+			id: "214783B2BB6730C5"
+			size: 0.75d
+			tasks: [
+				{
+					id: "08FEDEE28C37331F"
+					item: "gtceu:ruthenium_dust"
+					type: "item"
+				}
+				{
+					id: "014BD952B8944694"
+					item: "gtceu:rhodium_dust"
+					type: "item"
+				}
+				{
+					id: "38D0B4A76E4436F8"
+					item: "gtceu:inert_metal_mixture_dust"
+					type: "item"
+				}
+			]
+			title: "Ruthenium and Rhodium"
+			x: 3.75d
+			y: 0.375d
+		}
+		{
+			dependencies: ["214783B2BB6730C5"]
+			description: [
+				"Progressing into &dLuV&r will require more than &aRhodium Plated Palladium&r and &9LuV Circuits&r alone. You'll also need the &3Assembly Line&r."
+				""
+				"The &4resource costs&r for components will also start to increase &4significantly&r as you work towards &eFusion&r."
+				""
+				"If you haven't got automation for nearly everything, now (in &1IV&r) is a good time to do it."
+				""
+				"Make use of &3Processing Arrays&r or all the special &2GCYM Multiblocks&r."
+				""
+				"If your power generation is relying on &3Large Turbines&r, you can pick up the &3LuV Rotor Holder&r."
+			]
+			id: "4F6E351C5F676618"
+			shape: "gear"
+			size: 1.3d
+			subtitle: "The main &dLuV&r material"
+			tasks: [{
+				icon: "gtceu:rhodium_plated_palladium_ingot"
+				id: "0A57BEFB8BD9958A"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			title: "Rhodium-Plated Palladium"
+			x: 4.875d
+			y: 0.375d
+		}
+		{
+			dependencies: ["216E5A3574AC08BF"]
+			description: [
+				"This Large Miner is nearly identical to the regular one, except it has a wider range and uses more drilling fluid."
+				""
+				"It's an optional upgrade - one you might not even need!"
+			]
+			id: "07906458E1A15683"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "7E67EFBB59C847D7"
+				item: "gtceu:iv_large_miner"
+				type: "item"
+			}]
+			title: "Multiblock Miner II"
+			x: 6.0d
+			y: 0.375d
+		}
+		{
+			dependencies: ["216E5A3574AC08BF"]
+			description: [
+				"The &3Power Substation&r is a multiblock power storage system. Fill it with &a2-18 layers&r of assorted &9Capacitor Blocks&r to increase its storage. Each layer must be full of capacitors, and you can use Empty Capacitors to fill unused spaces."
+				""
+				"&9Capacitors&r also hold significantly more energy than the batteries used to make them. In the &3Power Substation&r, &9Capacitors&r can be mixed, so they do not all have to be the same tier."
+				""
+				"At &1IV&r, you can make &5EV&r and/or &1IV&r Capacitors."
+				"{@pagebreak}"
+				"Energy can be inputted with regular Energy Hatches, and output with regular Dynamo Hatches."
+				""
+				"You can also use &9Substation Hatches&r to transmit many more amps. These hatches only work in Substations, and do not work in regular multiblocks."
+			]
+			id: "04E9D2F484702965"
+			size: 0.75d
+			subtitle: "Centralised power, at last"
+			tasks: [{
+				id: "7A5A2DC7C8C3406E"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			title: "Power Substation"
+			x: 4.875d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"73E8283634E5E33A"
+				"0F192D1F44B9B599"
+				"63A87C9303D54487"
+			]
+			description: [
+				"We know... this isn't actually gated behind &dIndium&r. However, you gotta trust us - this is the better recipe, so we don't want you wasting your time."
+				""
+				"&aQubit CPUs&r are used in the production of &1Quantum&r Processors."
+			]
+			id: "225F57C95C6D7650"
+			size: 0.75d
+			subtitle: "This actually has no relation to Quantum"
+			tasks: [{
+				id: "4C2C6546F0928AD7"
+				item: "gtceu:qbit_cpu_chip"
+				type: "item"
+			}]
+			title: "Qubit CPUs"
+			x: 4.875d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"73E8283634E5E33A"
+				"216E5A3574AC08BF"
+				"069FD86133D7D582"
+				"6B128610C7D2825D"
+			]
+			description: [
+				"Woah! It's been tough to get here. You'll appreciate not having to make a new polymer for Circuits Boards."
+				""
+				"The &3IV Circuit Assembler&r unlocks the &1Quantum&r Circuit line."
+				""
+				"This also unlocks the &6best recipe&r for &dMV Circuits&r."
+			]
+			id: "2BB16260A76718B8"
+			size: 0.75d
+			tasks: [{
+				id: "230762F7951EB866"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
+			title: "IV Circuit Assembling"
+			x: 6.0d
+			y: 2.625d
+		}
+		{
+			dependencies: ["0338C9219DC2F819"]
+			description: [
+				"The next Board for the &1Quantum&r Circuit line."
+				""
+				"&9Tips:&r For efficient and fast board production, you should use two &3Large Chemical Reactors&r, both supplied with &6HV&r power or higher (make them both share the same &3Energy Hatch&r):"
+				""
+				"&9-&r One &3LCR&r should be dedicated to &aIron III Chloride&r. The &dHydrogen&r is loopable, so reproduce &dHydrochloric Acid&r locally - that way, you'd only need to passively input &aIron Dusts&r and &aChlorine&r."
+				""
+				"&9-&r One &3LCR&r should be making both the &acoated Boards&r and the &aempty Circuit Boards&r to make future &ecrafting requests&r with AE2 extremely easy. Keeping an Input Hatch full of Sulfuric Acid shouldn't be a problem, either."
+			]
+			id: "0988B5FB795FF7DA"
+			size: 0.75d
+			tasks: [{
+				id: "4EB5F93570DAE79B"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Extreme Circuit Boards"
+			x: 7.125d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"0988B5FB795FF7DA"
+				"225F57C95C6D7650"
+				"2BB16260A76718B8"
+			]
+			description: [
+				"The first Circuit of the &1Quantum&r line."
+				""
+				"If you wish, you could go even further and aim for &dAdvanced SMDs&r to make these Circuits cheaper. "
+				""
+				"Doing so will require &9PBI&r... and Alloys that require &aHSS-G Coils&r in your EBF."
+			]
+			id: "49C1D61741AA288E"
+			size: 0.75d
+			tasks: [{
+				id: "4E109F0F515B210F"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			title: "Best EV Circuits!"
+			x: 8.25d
+			y: 2.625d
+		}
+		{
+			dependencies: ["4343746E706264E6"]
+			description: [
+				"Rocket Fuel mostly exists for compatibility with other mods. You'll love it if you're making your own pack."
+				""
+				"As an actual fuel for GTCEu generators? Terrible!"
+				""
+				"In this modpack, &aRocket Fuel&r is required to obtain &dNether Stars&r."
+				""
+				"Automating it may be a big hit to your resources, but you can safely batch craft using an overclocked &3Large Chemical Reactor&r."
+			]
+			id: "1B520580219AFAE9"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				amount: 6000L
+				fluid: "gtceu:rocket_fuel"
+				id: "040946A4E48F28E8"
+				type: "fluid"
+			}]
+			title: "Rocket Fuel"
+			x: 6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["117FBB18DEE6F08B"]
+			description: [
+				"The next board material."
+				""
+				"It's as easy as using some &aEpoxy&r in the &3Chemical Bath&r."
+			]
+			id: "0338C9219DC2F819"
+			size: 0.75d
+			tasks: [{
+				id: "7092FDCCDDC53679"
+				item: "gtceu:reinforced_epoxy_resin_plate"
+				type: "item"
+			}]
+			title: "Fiber-Reinforced Epoxy"
+			x: 7.125d
+			y: 3.75d
+		}
+		{
+			dependencies: ["698B5F65F2DE4439"]
+			description: ["Good news for any mainframe haters out there - &dLuV&r Circuits that aren't mainframes!"]
+			id: "145F71A817C5996E"
+			size: 0.75d
+			tasks: [{
+				id: "0205E6C037A453A8"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			title: "More LuV Circuits"
+			x: 8.25d
+			y: 4.125d
+		}
+		{
+			dependencies: ["49C1D61741AA288E"]
+			description: [
+				"Better &1IV&r Circuits. "
+				""
+				"Your march through &1IV&r continues. Stay strong, soldier."
+			]
+			id: "698B5F65F2DE4439"
+			size: 0.75d
+			tasks: [{
+				id: "3B46E4592A6AC60E"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			title: "Even more IV Circuits"
+			x: 8.25d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"216E5A3574AC08BF"
+				"0425179329ED1B72"
+			]
+			description: [
+				"This Quest will be completed with &eeither&r an &3IV Energy Hatch&r&r... or an &3IV Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"Don't forget that &d4 Amp&r variants exist! However they require &aNiobium-Titanium Cables&r, which need &9Polyphenylene Sulfide&r."
+				""
+				"Look down in the &dLuV&r Chapter for that (don't worry... it's easy to obtain)."
+			]
+			icon: "gtceu:iv_energy_input_hatch"
+			id: "48DEABA155605D23"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "2EC4E901B2CD35FA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_output_hatch"
+							}
+						]
+					}
+				}
+				title: "IV Dynamo/Energy Hatch"
+				type: "item"
+			}]
+			title: "Upgrading your EBF for the millionth time"
+			x: 3.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["12B4423F055BFBF5"]
+			description: [
+				"The &3IV Cutting Machine&r is required to unlock &3IV Energy and Dynamo Hatches&r."
+				""
+				"Upgrading this to its &2GCYM&r variant isn't a bad idea."
+			]
+			icon: "gtceu:iv_cutter"
+			id: "7CC40BDAA803D044"
+			size: 0.75d
+			tasks: [{
+				id: "5365FC750B24814B"
+				item: "gtceu:iv_cutter"
+				type: "item"
+			}]
+			title: "IV Cutting Machine"
+			x: 1.5d
+			y: 3.75d
+		}
+	]
+	subtitle: ["Automate everything and learn how to assemble"]
+	title: "&1IV&r - Insane Voltage"
+}

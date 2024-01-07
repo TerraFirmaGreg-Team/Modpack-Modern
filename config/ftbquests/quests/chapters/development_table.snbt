@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "development_table"
+	group: ""
+	icon: {
+		Count: 1b
+		id: "gtceu:lapotronic_energy_orb"
+		tag: {
+			Charge: 250000000L
+		}
+	}
+	id: "26A1CAC0F0D4E1AB"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Development table"
+}

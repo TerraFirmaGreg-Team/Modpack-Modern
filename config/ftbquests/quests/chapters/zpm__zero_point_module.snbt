@@ -1,0 +1,725 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "zpm__zero_point_module"
+	group: "693226878D58638A"
+	icon: "gtceu:zpm_electric_motor"
+	id: "0945247E83444D90"
+	order_index: 7
+	quest_links: [
+		{
+			id: "6BE70146903B5CBD"
+			linked_quest: "52D00CD3E8D1E293"
+			shape: "rsquare"
+			size: 0.66d
+			x: -1.5d
+			y: 2.25d
+		}
+		{
+			id: "21A3EAE297C446EC"
+			linked_quest: "24F0454B9A090C44"
+			size: 0.75d
+			x: -6.0d
+			y: 2.25d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["24F0454B9A090C44"]
+			description: [
+				"The &aZero Point Module&r (item) is a non-rechargable battery with TONS of energy stored. You may have found one of these before now, but you haven't been able to discharge it until reaching &cZPM&r."
+				""
+				"These can only be found as loot from &6Jungle Temples&r. They're exceptionally rare - don't worry about finding one. "
+				""
+				"This quest is &6optional&r and is just for fun. Feel free to hit the checkbox if you just want the completion points!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Zero Point Module, the full name of the ZPM tier, is also from Stargate. Its namesake is a device which generated crazy amounts of energy."
+			]
+			icon: "gtceu:zero_point_module"
+			id: "75905E3672399A63"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Unlimited powah!"
+			tasks: [
+				{
+					id: "10AC8DC9332D084C"
+					item: "gtceu:zero_point_module"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AD0E74B9CD9AFAE"
+					type: "checkmark"
+				}
+			]
+			title: "Zero Point Module"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C7C0F6A6598BC24"]
+			description: [
+				"&aZPM Superconductors&r are a major gate between you and a &9Fusion Reactor Mk2&r, which uses copious amounts for its structure blocks."
+				""
+				"You can also use them to make &9Superconducting Coils&r for cheaper."
+			]
+			id: "2587BFD0D9F3FF4A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Getting tired of all these pitch-black ingots yet?"
+			tasks: [{
+				id: "5688605649CC30C3"
+				item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
+				type: "item"
+			}]
+			title: "ZPM Superconductors"
+			x: -4.875d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"7A74F692F14F0FF8"
+				"24F0454B9A090C44"
+			]
+			description: [
+				"&cZPM&r Components thankfully aren't too much harder than &dLuV&r. "
+				""
+				"They use lots of &9Osmiridium&r, so make sure your platinum refining process is up to the task."
+			]
+			icon: "gtceu:zpm_electric_motor"
+			id: "5BBFE222190891DE"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Prepare your platline!"
+			tasks: [
+				{
+					id: "17E45B64101F2249"
+					item: "gtceu:zpm_electric_motor"
+					type: "item"
+				}
+				{
+					id: "4EDD7EE060B4895B"
+					item: "gtceu:zpm_electric_piston"
+					type: "item"
+				}
+				{
+					id: "61AAFDF548821774"
+					item: "gtceu:zpm_electric_pump"
+					type: "item"
+				}
+				{
+					id: "4EEAD829002AD3FE"
+					item: "gtceu:zpm_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "2AFFFD27485AD039"
+					item: "gtceu:zpm_robot_arm"
+					type: "item"
+				}
+				{
+					id: "68A105502E49FEDC"
+					item: "gtceu:zpm_sensor"
+					type: "item"
+				}
+				{
+					id: "555A9F017694B184"
+					item: "gtceu:zpm_emitter"
+					type: "item"
+				}
+			]
+			title: "Absolute Elation"
+			x: -6.0d
+			y: 1.125d
+		}
+		{
+			dependencies: ["378F0AFCF95354B2"]
+			description: [
+				"&aEnriched Naquadah&r is an isotope of Naquadah, Nq-528. It is radioactive and will be used in (as of yet) unimplemented nuclear reactors."
+				""
+				"Currently, you just need it to make &9Trinium Coils&r."
+			]
+			icon: "gtceu:enriched_naquadah_ingot"
+			id: "74B037D7031F4A78"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Naquadah, but radioactive!"
+			tasks: [
+				{
+					id: "4598D1D78A71E514"
+					item: "gtceu:enriched_naquadah_sulfate_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08B5C0B89DB3E272"
+					item: "gtceu:enriched_naquadah_ingot"
+					type: "item"
+				}
+			]
+			title: "Enriched Naquadah"
+			x: -4.875d
+			y: -1.125d
+		}
+		{
+			dependencies: [
+				"74B037D7031F4A78"
+				"0DC999F79A685194"
+				"2FCBA0D780DBDA9E"
+			]
+			description: [
+				"&aTrinium Coils&r bring up the Heat Capacity to &d9,001K&r."
+				""
+				"These coils are required for progressing to the second half of &cZPM&r, and beyond."
+			]
+			id: "4C7C0F6A6598BC24"
+			size: 0.75d
+			subtitle: "IT'S OVER 9000!!!"
+			tasks: [{
+				count: 16L
+				id: "11CD2F83031C6706"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "Trinium Coils"
+			x: -4.875d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52D952ADBEB67454"
+				"2587BFD0D9F3FF4A"
+			]
+			description: [
+				"&4&l[ NOT YET IMPLEMENTED ]&r"
+				""
+				"The &3Research Station&r is the upgrade to the Scanner. It's used for more advanced forms of research, and will finally allow you to perform research which requires &aData Orbs and Modules&r."
+				""
+				"When running the &3Research Station&r, energy and &9Computation&r is needed. The latter is provided through an &9HPCA&r, which is explained in the next quest. It is recieved with a &3Computation Data Reception Hatch&r. Note that only one Reception Hatch is allowed in a Research Station."
+				"{@pagebreak}"
+				"This multiblock needs computation &dsporadically&r, which means the recipe will not reverse progress if you don't supply enough - it will simply halt in-place. However, the machine will still draw energy constantly, even when recieving no computation."
+				""
+				"To scan items, the process is relatively similar. In the &3Object Holder&r, place the target item in the center slot, and the data storage item in the other slot. Then provide computation, and the data storage item will be updated upon completion. When running, the target item will be Locked and cannot be removed."
+				""
+				"&eNote&r: To form this multiblock, the &3Object Holder&r must face the controller."
+			]
+			id: "468EEFD9D2F69014"
+			size: 0.75d
+			subtitle: "Your research adventures continue!"
+			tasks: [{
+				id: "61F7812F0FB70497"
+				type: "checkmark"
+			}]
+			title: "Research Station"
+			x: -4.875d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"1D6CC3C7F6BE4055"
+				"7AE681E2AB31EA0D"
+			]
+			description: [
+				"The &aUV Mainframe&r is required to move into &3Fusion Mk2&r."
+				""
+				"It's also made in the Assembly Line."
+				""
+				"Passing over the ingredients we've already seen before, watch out for the &6HSS-E Frames&r."
+			]
+			id: "79E4E53E9DF45549"
+			size: 0.75d
+			tasks: [{
+				id: "226973A23C89BDD2"
+				item: "gtceu:crystal_processor_mainframe"
+				type: "item"
+			}]
+			title: "First UV Circuits!"
+			x: -3.75d
+			y: 3.375d
+		}
+		{
+			dependencies: ["1D6CC3C7F6BE4055"]
+			description: [
+				"The &aCrystal SoC&r is used to make cheaper &9Crystal Circuits&r. Enjoy the discount!"
+				""
+				"Crystal SoCs require &9ZPM Emitters&r, which means you need a &9Data Orb&r for their research."
+				""
+				"In the future, these may become more difficult to make."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GT5u, the texture for this item was red, and did not have the special design on it. There was a \"raw\" version with the design, but it was used for other unrelated things. Who knows why?"
+			]
+			id: "29B7D93D7F32DBA9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "When engraving it once isn't enough"
+			tasks: [{
+				id: "488A759013AF2680"
+				item: "gtceu:crystal_soc"
+				type: "item"
+			}]
+			title: "Crystal SoC"
+			x: -3.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["1D6CC3C7F6BE4055"]
+			description: [
+				"&4&l[ NOT YET IMPLEMENTED ]&r"
+				""
+				"This hatch allows you to store more &aData Storage Items&r than the basic one."
+				""
+				"Don't forget that this hatch requires a &9Data Orb&r for research."
+			]
+			id: "72740001958E929A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Increased storage density!"
+			tasks: [{
+				id: "4090DF7C2B0FCF27"
+				type: "checkmark"
+			}]
+			title: "Advanced Data Access Hatch"
+			x: -2.625d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"378F0AFCF95354B2"
+				"4C7C0F6A6598BC24"
+			]
+			description: ["&aNaquadria&r is an isotope of Naquadah, Nq-522. It's highly unstable, but it'll still be used for &3UV&r components, &9Fusion Mk2&r, and when fusing Neutronium."]
+			icon: "gtceu:naquadria_ingot"
+			id: "6D1F10543A391940"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Naquadah, but radioactive-er!"
+			tasks: [
+				{
+					id: "4A49FE8B35B48D97"
+					item: "gtceu:naquadria_sulfate_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "13A95E109FF72A87"
+					item: "gtceu:naquadria_ingot"
+					type: "item"
+				}
+			]
+			title: "Naquadria"
+			x: -2.625d
+			y: 0.0d
+		}
+		{
+			dependencies: ["690E013DFCB060ED"]
+			description: [
+				"Production of &aSterilized Growth Medium&r is the final processing line in GTCEu, for now."
+				""
+				"You will need this for your first &4Wetware Circuits&r."
+				""
+				"Producing it won't be as much of a hassle as PBI, but nearly every step requires a Sterilized Cleanroom. This means you'll have to get creative with how you use your space."
+				""
+				"Make sure to scrutinise every step of the chain. Some recipes are much more efficient than others!"
+				""
+				"&ePro Tip&r: You can wall-share cleanrooms with doors in-between too if you want more space."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o GTCEu's Sterilized Growth Medium chain is loosely based off of Bartworks' from GTNH. The main difference is that GTNH required a Bacterial Vat multiblock, which was more complex than the ordered Assembly Line. GTCEu is considering adding a multiblock like it but with their own spin in the future."
+				"{@pagebreak}"
+				"&l&More Lore:&r&o In Gregicality Legacy, the Sterilized Growth Medium production chain was very different. It was one of the most difficult processes in the mod, with over 30 complicated steps! It was based off of producing different real-life vitamins and nutrients."
+				"{@pagebreak}"
+				"&l&Even More Lore:&r&o In Shadows of Greg, this was made with just Distilled Water and Mince Meat. How far we've come..."
+			]
+			id: "6AFDA523304711DB"
+			size: 0.75d
+			subtitle: "The final processing line, at last!"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:sterilized_growth_medium"
+				id: "090D7595FCB21B63"
+				type: "fluid"
+			}]
+			title: "Sterilized Growth Medium"
+			x: -0.375d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"64EA73FAB2A51850"
+				"0D7C978F9CDF771B"
+			]
+			description: [
+				"The &aZPM Lapotronic Orb&r is even better than the &dLuV&r one! It of course comes at a price..."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Imagine making 64 &1IV&f or 8 &dLuV&f Orbs for just one of these! See the Lore for the &dLuV&f orb for details."
+			]
+			id: "690A51204DF5D469"
+			size: 0.75d
+			subtitle: "A power singularity!"
+			tasks: [
+				{
+					id: "41813C4D68B991D7"
+					item: "gtceu:energy_module"
+					type: "item"
+				}
+				{
+					id: "705422BF26C76199"
+					item: "gtceu:zpm_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Mega Batteries"
+			x: -1.5d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"1D6CC3C7F6BE4055"
+				"52D00CD3E8D1E293"
+				"7A74F692F14F0FF8"
+				"468EEFD9D2F69014"
+				"24F0454B9A090C44"
+			]
+			description: [
+				"This Quest will be completed with &eeither&r a &3ZPM Energy Hatch&r&r... or a &3ZPM Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"Don't forget that &d16 Amp&r variants exist!"
+				""
+				"Don't forget that these hatches require a &9Data Orb&r for research."
+			]
+			icon: "gtceu:zpm_energy_input_hatch"
+			id: "64EA73FAB2A51850"
+			shape: "rsquare"
+			size: 0.75d
+			tasks: [
+				{
+					id: "0B57097F8879481C"
+					item: "gtceu:zpm_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "2C60B79F78094E6A"
+					item: "gtceu:zpm_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line II"
+			x: -2.625d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"35F13B6D60361904"
+				"3568BC9742092FC5"
+			]
+			description: [
+				"The &aSterilized Cleanroom&r is required to produce the next tier of circuits. Nearly every step must be performed inside of one. Good luck fitting everything into such a tight space!"
+				""
+				"If you only have one &3Cleanroom&r, you'll need another for &aSterilized&r recipes."
+				""
+				"&eNote&r: Normal Cleanroom recipes cannot run in the Sterilized Cleanroom, so you can't just \"upgrade\" your old Cleanrooms."
+			]
+			id: "690E013DFCB060ED"
+			size: 0.75d
+			subtitle: "Comes with disinfectant!"
+			tasks: [{
+				count: 8L
+				id: "6A4C78385FF8019A"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			title: "Sterilized Cleanroom"
+			x: -0.375d
+			y: 2.25d
+		}
+		{
+			dependencies: ["468EEFD9D2F69014"]
+			description: [
+				"&4&l[ NOT YET IMPLEMENTED ]&r"
+				""
+				"The &3High Performance Computation Array&r, also known as the &3HPCA&r, is the multiblock used to create &9Computation&r, measured in CWU/t (Compute-Work Units per tick)."
+				""
+				"The HPCA is a modular multiblock with many unique components you've likely not seen before. There are &a9 slots available&r for different components, and there are some example layouts in the JEI previews, so reviewing these may help if you feel confused."
+				"{@pagebreak}"
+				"There are two main types of components:"
+				""
+				"- &9Computation Components&r: These generate CWU/t and require EU/t and cooling."
+				"- &9Cooling Components&r: These provide a certain amount of cooling, and require EU/t."
+				""
+				"Currently Available Components:"
+				""
+				"- &9Empty&r: Fills a slot but otherwise does nothing."
+				"-&9 Heat Sink&r: Requires no power but provides 1 cooling."
+				"- &9Active Cooler&r: Requires power, PCB Coolant, but provides 2 cooling."
+				"- &9Computation&r: Creates 4 CWU/t, but requires a lot of power and cooling."
+				"{@pagebreak}"
+				"The HPCA draws some power to idle. Its power and cooling requirements will sit between the idle upkeep power and a maximum value depending on how much computation is being used."
+				""
+				"If the HPCA is not given enough cooling, Computation components can be &4damaged&r if it is allowed to run above &c100C&r (the idle temperature is &a20C&r). Only computation components can be damaged - all other blocks will be unharmed!"
+				""
+				"The HPCA can only have 1 &3Computation Data Transmission Hatch&r. You can connect it to the Reception Hatch of the &9Research Station&r with Optical Fiber Cable to transmit the computation."
+				"{@pagebreak}"
+				"Basic CWU/t Requirements for ZPM Tier:"
+				""
+				"- &a4 CWU/t&r for &cZPM&r Sensors, Emitters, and Field Generators"
+				"- &a8 CWU/t&r for &cZPM&r Enegy Hatches"
+				"- &a16 CWU/t&r for &3UV&r Circuits and beyond."
+				""
+				"Don't feel forced to go for 16 CWU/t immediately. There's lots to do in between these milestones."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This mechanic is loosely inspired by TecTech's Quantum Computer, which is similar but has some much more annoying mechanics like the Uncertainty Resolver."
+			]
+			id: "1D6CC3C7F6BE4055"
+			size: 0.75d
+			subtitle: "That's no Quantum Computer..."
+			tasks: [{
+				id: "0415DB1D2067171F"
+				type: "checkmark"
+			}]
+			title: "HPCA"
+			x: -3.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["6AFDA523304711DB"]
+			description: ["&aStem Cells&r are a major component of &4Wetware Circuits&r. Just don't question why these use Osmiridium."]
+			id: "33A1FF5C31EAF716"
+			size: 0.75d
+			subtitle: "This texture used to be really ugly..."
+			tasks: [{
+				id: "1E31342D5310ED6D"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			title: "Stem Cells"
+			x: -0.375d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33A1FF5C31EAF716"]
+			description: [
+				"The final circuit board - it's been a long time coming! As you can see, this board is &cmuch&r more expensive than the other ones, but you should be alright. You're a pro now!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GTNH, these circuit boards require LuV Sensors, instead of IV. This means that Wetware LuV circuits, needed other (crystal) LuV circuits!"
+				""
+				"Additionally, because Wetware was so expensive, using Crystal was preferred unless UHV wetware circuits were needed. Thankfully, CEu does not have this problem, and LuV Wetware Circuits are worth making."
+			]
+			id: "678CABA03E17516A"
+			size: 0.75d
+			subtitle: "The board of life itself"
+			tasks: [{
+				id: "0097D7805D82EDEC"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Wetware Printed Circuit Board"
+			x: -0.375d
+			y: -1.125d
+		}
+		{
+			dependencies: ["678CABA03E17516A"]
+			description: ["The &aNeuro Processing Unit&r serves as the CPU for &4Wetware&r. It also takes a circuit board in its recipe, but don't let that scare you."]
+			id: "3BD68E5909A97532"
+			size: 0.75d
+			subtitle: "Neurons for computation"
+			tasks: [{
+				id: "06AE61C5F174F4E7"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			title: "It's Alive!"
+			x: 0.75d
+			y: -1.125d
+		}
+		{
+			dependencies: ["082AB255886E73C2"]
+			description: [
+				"The second circuit of the &4wetware&r line."
+				""
+				"This is also the best &cZPM&r circuit!"
+			]
+			id: "370FC1CDF5F9A9CC"
+			size: 0.75d
+			tasks: [{
+				id: "31DF7507733F3EE0"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			title: "Best ZPM Circuits!"
+			x: 0.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["3BD68E5909A97532"]
+			description: [
+				"The first Circuit of the &4Wetware&r line."
+				""
+				"&6Congrats&r!"
+			]
+			id: "082AB255886E73C2"
+			size: 0.75d
+			tasks: [{
+				id: "0B12A1F63822CF8A"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			title: "Best LuV Circuits!"
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24366846FDA52CE3"]
+			description: [
+				"Remember &aDarmstadtium&r tools from &3GTCE&r? Well then... guess who's back?"
+				""
+				"&aDarmstadtium&r is the main material for &3UV&r hulls. It is yet again made with Fusion."
+				"{@pagebreak}"
+				"&bFun Fact&r: Arsenic does not exist as a liquid at standard conditions. It sublimates directly into a gas! \"Realism\", my ass."
+			]
+			id: "6988AE94BE7B461F"
+			size: 0.75d
+			subtitle: "I want my particle accelerator back..."
+			tasks: [{
+				id: "798EFE8E18E79C0C"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			title: "Darmstadtium"
+			x: -2.625d
+			y: 4.5d
+		}
+		{
+			dependencies: ["546CC03435E763CF"]
+			description: [
+				"&aDuranium&r is a material from Star Trek, and is used for a few things in GT. It makes some pretty awesome pipes, but otherwise you won't need much of this quite yet."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In some versions of GT5u, this material was entirely white. In fact, most fusion materials and later were like this. Boring!"
+			]
+			id: "2CB8FCE09920042C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Who needs Stargate, anyway?"
+			tasks: [{
+				id: "0933A476B9F87E66"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			title: "Duranium"
+			x: -0.375d
+			y: 4.5d
+		}
+		{
+			dependencies: ["24366846FDA52CE3"]
+			description: [
+				"&aAmericium&r is a Fusion Mk2 material, used in large quantities in CEu progression!"
+				""
+				"It requires 2 Fusion steps to obtain - Lanthanum and Silicon will make &bLutetium&r, and combining this &bLutetium&r with Chrome will give you &aAmericium&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In Gregicality Legacy, Americium was replaced with Dubnium. Americium is a material only obtained from nuclear reactors, so GCYL changed it to the synthetic element Dubnium instead."
+			]
+			id: "762C48F0C2EA6B81"
+			size: 0.75d
+			subtitle: "It'd be nice if we could make this in a nuclear reactor..."
+			tasks: [{
+				id: "5D597AE565A54388"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			title: "Americium"
+			x: -1.5d
+			y: 3.375d
+		}
+		{
+			dependencies: ["370FC1CDF5F9A9CC"]
+			description: [
+				"The third circuit of the &4wetware&r line. Get some &bEuropium&r to make these."
+				""
+				"This is also the best &3UV&r circuit!"
+			]
+			id: "359121584E056022"
+			size: 0.75d
+			tasks: [{
+				id: "5F54BE8467A5C882"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			title: "Best UV Circuits!"
+			x: 0.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["79E4E53E9DF45549"]
+			description: [
+				"&4&l[ NOT YET IMPLEMENTED ]&r"
+				""
+				"&3Advanced HPCA Components&r are improved versions of their regular counterparts, and allow for increasing the computation you can produce from an HPCA."
+				""
+				"The &3HPCA Advanced Computation Component&r produces &a4x&r the computation for only &a2x&r the Cooling!"
+			]
+			id: "0199DBC46D7BC2B9"
+			size: 0.75d
+			subtitle: "Time for some computational advancement!"
+			tasks: [{
+				id: "2C8331B09F698CCA"
+				type: "checkmark"
+			}]
+			title: "Advanced HPCA Components"
+			x: -4.875d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"6D1F10543A391940"
+				"64EA73FAB2A51850"
+				"79E4E53E9DF45549"
+			]
+			description: [
+				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				""
+				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				""
+				"The &aFusion Reactor Mk2&r is even more expensive than the Mk1! The key difference is that it has a higher &6Energy To Start&r than the Mk1, allowing you to run new recipes."
+				""
+				"It can also overclock lower voltage recipes, such as those in the Mk1 reactor. See the Mk1's quest for how these mechanics work."
+			]
+			id: "24366846FDA52CE3"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "Fusion just got more expensive..."
+			tasks: [{
+				id: "0D45B9FFF6BA13FE"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion Reactor II"
+			x: -2.625d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"2CB8FCE09920042C"
+				"24366846FDA52CE3"
+			]
+			description: [
+				"&aTritanium&r is a material from Star Trek, and is used for a few other things in GT. It, like &9Americium&r, requires two fusion steps!"
+				""
+				"You'll need this to get the next tier of circuits, and for &3UV&r components."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In some versions of GT5u, only Tritanium fluid was red. The material was otherwise white. In GTCEu, we decided to make the whole thing red instead. Much better looking!"
+			]
+			id: "35F13B6D60361904"
+			size: 0.75d
+			subtitle: "Star Trek strikes again!"
+			tasks: [{
+				id: "6C5B3B1C0B85C003"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			title: "Tritanium"
+			x: -0.375d
+			y: 3.375d
+		}
+	]
+	subtitle: ["Harness the cosmos and wield the bacteriological"]
+	title: "&cZPM&r - Zero Point Module"
+}

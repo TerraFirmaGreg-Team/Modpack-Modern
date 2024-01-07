@@ -1,0 +1,557 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uv__ultimate_voltage"
+	group: "693226878D58638A"
+	icon: "gtceu:uv_electric_motor"
+	id: "2E730D6F5A7C2E83"
+	order_index: 8
+	quest_links: [
+		{
+			id: "5232A33368566616"
+			linked_quest: "6988AE94BE7B461F"
+			size: 0.75d
+			x: 5.625d
+			y: 3.75d
+		}
+		{
+			id: "194EA210B37DFEA0"
+			linked_quest: "762C48F0C2EA6B81"
+			size: 0.75d
+			x: 4.5d
+			y: 2.625d
+		}
+		{
+			id: "5BB69AB0561DAE36"
+			linked_quest: "0199DBC46D7BC2B9"
+			size: 0.75d
+			x: 6.75d
+			y: 1.5d
+		}
+		{
+			id: "395B2149ABE3A85F"
+			linked_quest: "42760D3A86EFDCA3"
+			size: 0.75d
+			x: 3.375d
+			y: 1.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["6F15D7574B8F6DB5"]
+			description: [
+				"Crafting the &aUltimate Battery&r marks the end of GTCEu and the GregTech Community Modpack. &6Congratulations!&r"
+				""
+				"Now that you've finished the mod, there's a few things you should do:"
+				""
+				"- &9Join the GTCEu Discord&r and tell us about how your playthrough went! Feel free to show off your battery :) "
+				""
+				"- &eGo outside&r (and start playing GregTech in real life, right?). Integrate back into regular society."
+				""
+				"- &cBlow up your world with TNT and GT Dynamite&r. &nPlease, please, PLEASE make a backup first!!!&r"
+				""
+				"&6&lThank you for playing the pack! :D&r"
+				"- The GregTech Community Pack Dev Team"
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6E8F257261F93501"
+			shape: "heart"
+			size: 4.0d
+			subtitle: "Is this... the end?"
+			tasks: [{
+				id: "3BE7164F661251AD"
+				type: "checkmark"
+			}]
+			title: "The Finale"
+			x: 10.125d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"762C48F0C2EA6B81"
+				"6988AE94BE7B461F"
+				"35F13B6D60361904"
+				"0199DBC46D7BC2B9"
+			]
+			description: [
+				"This Maintenance Hatch is an upgrade to the Automatic Maintenance Hatch."
+				""
+				"It allows your Multiblock to run regular &aCleanroom recipes&r when not contained inside one - but not Sterilized recipes."
+			]
+			id: "1976F9B2220BBEDE"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "244FC822F724507F"
+				item: "gtceu:cleaning_maintenance_hatch"
+				type: "item"
+			}]
+			title: "Cleaning Maintenance Hatch"
+			x: 5.625d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"678CABA03E17516A"
+				"690A51204DF5D469"
+				"762C48F0C2EA6B81"
+			]
+			description: [
+				"The &aUV Lapotronic Orb&r is even better than the &cZPM&r one! It of course comes at a price..."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Imagine making 512 &1IV&f Orbs, or 64 &dLuV&f Orbs... or 8 &cZPM&f Orbs.... for just one of these! See the Lore for the LuV orb for details."
+			]
+			icon: "gtceu:energy_cluster"
+			id: "3D9D27F29D9D12F6"
+			size: 0.75d
+			subtitle: "It holds way too much power!"
+			tasks: [
+				{
+					id: "3A3B82E7FEE173C3"
+					item: "gtceu:energy_cluster"
+					type: "item"
+				}
+				{
+					id: "57D8084A5AA960F8"
+					item: "gtceu:uv_lapotronic_battery"
+					type: "item"
+				}
+			]
+			title: "Ultimate Battery?"
+			x: 7.875d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"3D9D27F29D9D12F6"
+				"0009F48B6E385A47"
+			]
+			description: [
+				"The amount of EU this battery can storage is the max value of a Long Integer in Java."
+				""
+				"Don't try to win Minecraft - you can't."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o You're probably tired of this by now, but things are different with the battery lore this time. We promise."
+				""
+				"&oGTCEu's ultimate battery uses 16 &3UV&f orbs. GTNH's only uses 8. However, GTNH also has a &lReally Ultimate Battery&r&o made of 8 Ultimate Batteries! It's not useful at all, but still exists..."
+				""
+				"&oThey also added an &lExtremely Ultimate Battery&r&o made of 8 Really Ultimate Batteries, which is ludicrously expensive."
+			]
+			id: "6F15D7574B8F6DB5"
+			rewards: [{
+				id: "4895F6328078CE87"
+				item: "minecraft:grass"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "Consider touching some grass"
+			tasks: [{
+				id: "5EDF6F9FD702E463"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
+			title: "Ultimate Battery!"
+			x: 7.875d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CDA855A045A9F4D"]
+			description: [
+				"&4&l[ NOT YET IMPLEMENTED ]&r"
+				""
+				"The &3Network Switch&r allows multiple HPCAs to be used in conjunction with each other! This allows you to provide far more computation to your &aResearch Station&r."
+				""
+				"HPCAs can be connected to &3Network Switches&r with transmission and reception hatches, and then the Network Switch can output to a &aResearch Station&r with another transmission hatch."
+				""
+				"HPCAs cannot connect to &3Network Switches&r by default, and each connected HPCA requires an &3HPCA Bridge Component&r to enable this functionality."
+			]
+			id: "0BADFBA6F96E457E"
+			size: 0.75d
+			subtitle: "With our powers combined..."
+			tasks: [{
+				id: "3DAB523583CEACA8"
+				type: "checkmark"
+			}]
+			title: "Network Switch"
+			x: 2.25d
+			y: 0.375d
+		}
+		{
+			dependencies: [
+				"45E300FD7CD05A37"
+				"359121584E056022"
+			]
+			description: [
+				"This is a huge accomplishment, nice job!"
+				""
+				"The only ingredient that should be new to you are the &4Tritanium Frames&r."
+			]
+			id: "3B49BD004F38E1A2"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "The &6final&r circuit"
+			tasks: [{
+				id: "433027F7B7C732A1"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			title: "Wetware Mainframe - The UHV Circuit"
+			x: 3.375d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0BADFBA6F96E457E"
+				"42760D3A86EFDCA3"
+			]
+			description: [
+				"&4&l[ NOT YET IMPLEMENTED ]&r"
+				""
+				"The &3Data Module&r is required for Endgame Research. &aAssembly Lines&r cannot read from it using &aData Access Hatches&r directly, and instead require the &9Data Bank&r."
+			]
+			id: "45E300FD7CD05A37"
+			size: 0.75d
+			subtitle: "Data storage sure is expensive..."
+			tasks: [{
+				id: "4F9B678E31002121"
+				type: "checkmark"
+			}]
+			title: "Data Module"
+			x: 3.375d
+			y: 0.375d
+		}
+		{
+			dependencies: ["023FF9633765A0EB"]
+			description: [
+				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun. It is the final primary material in GTCEu."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GCYL, Neutronium is unlocked at UMV-tier (called UXV in CEu). There is also Cosmic Neutronium, which is equivalent to Avaritia's Neutronium in GT5u, which was unlocked even later in GCYL!"
+				""
+				"&l&More Lore:&r&o Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+			]
+			id: "6DBF61D4F94BC851"
+			size: 0.75d
+			subtitle: "Pure Neutrons"
+			tasks: [{
+				id: "0454B12D9A5C9795"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			title: "Neutronium"
+			x: 5.625d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"762C48F0C2EA6B81"
+				"4C7C0F6A6598BC24"
+				"35F13B6D60361904"
+			]
+			description: [
+				"&aTritanium Coils&r bring the Heat Capacity to &d10,800K&r."
+				""
+				"These coils aren't needed for much, but they'll provide another perfect overclock for most recipes!"
+			]
+			id: "6AF3A40BC9CE7122"
+			size: 0.75d
+			subtitle: "Why would you even need something this hot?!"
+			tasks: [{
+				count: 16L
+				id: "43CE7370C6D03DFD"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			title: "Tritanium Coils"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6DBF61D4F94BC851"]
+			description: [
+				"A goal if you really want to make a point."
+				""
+				"If you make this in a &3UV&r machine, it'll take you 10 days."
+				""
+				"If you overclock a Gregicality Multiblock to UEV (by using a 4A &4UHV&r hatch), you'll still be waiting for 2.5 days!"
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The NAN Certificate comes from Crops++, a GT5u addon that adds a wide variety of IC2 crops."
+			]
+			id: "3ED40CE1E4476C99"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "GGEZ"
+			tasks: [{
+				id: "29384189E33C8CB1"
+				item: "gtceu:nan_certificate"
+				type: "item"
+			}]
+			title: "Certificate of not being a Noob anymore"
+			x: 5.625d
+			y: 0.375d
+		}
+		{
+			dependencies: [
+				"762C48F0C2EA6B81"
+				"6988AE94BE7B461F"
+				"35F13B6D60361904"
+				"0199DBC46D7BC2B9"
+			]
+			description: [
+				"&3UV&r Components are a tad harder than &cZPM&r. "
+				""
+				"They use lots of &9Tritanium&r and &9Naquadria&r, so make sure your have enough Fusion Reactors, and a fast enough Naquadah Plant."
+				""
+				"They also need a lot more &9Computation&r, which means &3Advanced HPCA Components&r are now required!"
+				""
+				"Computation Needs for early &3UV&r:"
+				""
+				"- &a32 CWU/t&r: Basic &3UV&r Components and the Network Switch"
+				"- &a48 CWU/t&r: &3UV&r Sensor, Emitter, and Field Generator"
+			]
+			icon: "gtceu:uv_electric_motor"
+			id: "26F5A04750F6B6DD"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Prepare your Fusion Reactors!"
+			tasks: [
+				{
+					id: "3AD82F68865047F3"
+					item: "gtceu:uv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "495AADA7E2532B14"
+					item: "gtceu:uv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "006FD36B583851E7"
+					item: "gtceu:uv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "2CED35222E0F45AE"
+					item: "gtceu:uv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "1F2A7D8C0AE58BAA"
+					item: "gtceu:uv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "Total Euphoria"
+			x: 5.625d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"45E300FD7CD05A37"
+				"0BADFBA6F96E457E"
+			]
+			description: [
+				"This Quest will be completed with &eeither&r a &3ZPM Energy Hatch&r&r... or a &3ZPM Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"Don't forget that &d16 Amp&r variants exist!"
+				""
+				"Additionally, remember that these hatches require a &9Data Orb&r for research."
+			]
+			icon: "gtceu:uv_energy_input_hatch"
+			id: "2F2F82D9DE3C798C"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "4783D6B309027111"
+					item: "gtceu:uv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "62593894E98AFC45"
+					item: "gtceu:uv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line III"
+			x: 4.5d
+			y: 0.375d
+		}
+		{
+			dependencies: ["6AF3A40BC9CE7122"]
+			description: [
+				"&aUV Superconductors&r show up a lot in recipes when making a &9Fusion Reactor Mk3&r. Better get ready to make a boatload..."
+				""
+				"You can also use them to cheapen &9Superconducting Coils&r even further."
+			]
+			id: "3CDA855A045A9F4D"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "2A13EB0C94A752BD"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
+				type: "item"
+			}]
+			title: "UV Superconductors"
+			x: 2.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["616DB394EB7D81D6"]
+			description: [
+				"This Quest will be completed with &eeither&r a &3UHV Energy Hatch&r&r... or a &3UHV Dynamo Hatch&r for your Multiblock Generators."
+				""
+				"These are the final energy hatches in GTCEu. It's been a pleasure upgrading our multiblocks together o7"
+				""
+				"Don't forget about the &d16 amp&r versions!"
+			]
+			icon: "gtceu:uhv_energy_input_hatch"
+			id: "5570F02C03267B36"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "4DF40C8FF003DDC6"
+					item: "gtceu:uhv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6E49D6D700F92C39"
+					item: "gtceu:uhv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Upgrading your Assembly Line for the Last Time"
+			x: 6.75d
+			y: -1.875d
+		}
+		{
+			dependencies: ["6DBF61D4F94BC851"]
+			description: [
+				"This is the &afinal silicon boule&r, which will allow you to produce a ton of wafers."
+				""
+				"It also unlocks the recipe for the &aHighly Advanced SoC&r, which is used to make cheaper &4wetware circuits&r."
+			]
+			icon: "gtceu:neutronium_boule"
+			id: "3F058322E1A8D5EC"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Neutron -> Electron Holes"
+			tasks: [{
+				id: "74712C8E9A6561A0"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
+			title: "Neutronium-doped Silicon Boule"
+			x: 6.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["0009F48B6E385A47"]
+			description: ["The &aCreative Energy Cell&r is one of the few craftable creative items. It provides infinite energy to your AE system, so you don't have to worry about blackouts or power anymore."]
+			id: "428C62749A1A1BAB"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Ok, maybe there are Creative items."
+			tasks: [{
+				id: "392079FDF410B9FD"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			title: "Creative ME Energy"
+			x: 7.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["6DBF61D4F94BC851"]
+			description: ["The &aGravi Star&r is the final upgraded Nether Star in GTCEu. It's needed for &3UV&r Sensors, Emitters, and Field Generators."]
+			id: "0009F48B6E385A47"
+			size: 0.75d
+			subtitle: "Unfortunately, doesn't make you float"
+			tasks: [{
+				id: "06668056CFF73DBD"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
+			title: "Gravi Star"
+			x: 7.875d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"3B49BD004F38E1A2"
+				"2F2F82D9DE3C798C"
+				"762C48F0C2EA6B81"
+			]
+			description: [
+				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				""
+				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				""
+				"The &aFusion Reactor Mk3&r is even more expensive than the Mk2! The key difference is that it has a higher &6Energy To Start&r than the Mk2, allowing you to run new recipes."
+				""
+				"It can also overclock lower voltage recipes, such as those in the Mk1 or Mk2 reactor. See the Mk1's quest for how these mechanics work."
+			]
+			id: "023FF9633765A0EB"
+			size: 0.75d
+			subtitle: "The most expensive form of Fusion"
+			tasks: [{
+				id: "571672CEA7362C63"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion Reactor III"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["6DBF61D4F94BC851"]
+			description: [
+				"You probably don't even need these, but &aUHV Superconductors&r exist, and are used for a few things, which you also probably don't need..."
+				""
+				"Craft these if you feel like flexing."
+			]
+			id: "616DB394EB7D81D6"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Is Neutronate even a real thing?"
+			tasks: [{
+				id: "665AC3D87C204E18"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
+				type: "item"
+			}]
+			title: "UHV Superconductors"
+			x: 5.625d
+			y: -1.875d
+		}
+		{
+			dependencies: ["3F058322E1A8D5EC"]
+			description: [
+				"&aHighly Advanced SoC&rs will make crafting &4wetware circuits&r much easier."
+				""
+				"The drawback is that the recipe requires UV power, but that's no problem to you, right?"
+			]
+			icon: "gtceu:highly_advanced_soc"
+			id: "0D3B74E82F1CFE8A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Can we get much higher?"
+			tasks: [{
+				id: "493CC040B9974B42"
+				item: "gtceu:highly_advanced_soc"
+				type: "item"
+			}]
+			title: "Highly Advanced SoCs"
+			x: 6.75d
+			y: 0.375d
+		}
+	]
+	subtitle: ["Bring your long journey to a well-deserved end"]
+	title: "&3UV&r - Ultimate Voltage"
+}
