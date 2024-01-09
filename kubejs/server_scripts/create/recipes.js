@@ -92,6 +92,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:sequenced_assembly/precision_mechanism' },
         { id: 'create:crafting/logistics/content_observer' },
+        { id: 'create:milling/bone' },
     ], mod: 'create' })
 
     // Пушка для постройки схематик
