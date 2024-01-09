@@ -3,12 +3,12 @@
 const registerComputerCraftRecipes = (event) => {
     
     // Удаление рецептов мода
-  event.remove({ not: [
+    event.remove({ not: [
         { id: 'computercraft:printed_pages' },
         { id: 'computercraft:printed_book' },
     ], mod: 'computercraft' });
 
-    //networking cable
+    // Networking Cable
     event.recipes.gtceu.assembler('computercraft:cable')
         .itemInputs('ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:redstone', 288))
@@ -16,7 +16,7 @@ const registerComputerCraftRecipes = (event) => {
         .duration(80)
         .EUt(120)
     
-    //wireless_modem_normal
+    // Wireless Modem Normal
     event.shaped('computercraft:wireless_modem_normal', [
         ' A ',
         'BCB',
@@ -28,7 +28,7 @@ const registerComputerCraftRecipes = (event) => {
         D: 'computercraft:cable',
     }).id('tfg:crafting/wireless_modem_normal')
 
-    //wireless_modem_advanced
+    // Wireless Modem Advanced
     event.shaped('computercraft:wireless_modem_advanced', [
         ' A ',
         'BCB',
@@ -40,7 +40,7 @@ const registerComputerCraftRecipes = (event) => {
         D: 'computercraft:cable',
     }).id('tfg:crafting/wireless_modem_advanced')
 
-    //monitor_normal
+    // Monitor Normal
     event.shaped('computercraft:monitor_normal', [
         'ABA',
         'CDC',
@@ -54,7 +54,7 @@ const registerComputerCraftRecipes = (event) => {
         F: '#forge:circuits/mv',
     }).id('tfg:crafting/monitor_normal')
 
-    //monitor_advanced
+    // Monitor Advanced
     event.shaped('computercraft:monitor_advanced', [
         'ABA',
         'CDC',
@@ -68,7 +68,7 @@ const registerComputerCraftRecipes = (event) => {
         F: '#forge:circuits/hv',
     }).id('tfg:crafting/monitor_advanced')
 
-    //disk_drive
+    // Disk Drive
     event.shaped('computercraft:disk_drive', [
         'ABA',
         'CDC',
@@ -81,7 +81,7 @@ const registerComputerCraftRecipes = (event) => {
         E: 'gtceu:hv_sensor',
     }).id('tfg:crafting/disk_drive')
 
-    //speaker
+    // Speaker
     event.shaped('computercraft:speaker', [
         ' A ',
         'BCB',
@@ -93,7 +93,7 @@ const registerComputerCraftRecipes = (event) => {
         D: '#forge:circuits/mv',
     }).id('tfg:crafting/speaker')
 
-    //printer
+    // Printer
     event.shaped('computercraft:printer', [
         'ABC',
         'DED',
@@ -107,7 +107,7 @@ const registerComputerCraftRecipes = (event) => {
         F: 'gtceu:mv_conveyor_module'
     }).id('tfg:crafting/printer')
 
-    //wired_modem
+    // Wired Modem
     event.shaped('computercraft:wired_modem', [
         ' A ',
         'BCB',
@@ -125,7 +125,7 @@ const registerComputerCraftRecipes = (event) => {
     event.shapeless('computercraft:wired_modem_full', ['computercraft:wired_modem'])
         .id('tfg:crafting/wired_modem_full_shapeless')
 
-    //computer_normal
+    // Computer Normal
     event.shaped('computercraft:computer_normal', [
         'AB ',
         'CD ',
@@ -138,7 +138,7 @@ const registerComputerCraftRecipes = (event) => {
         E: '#forge:circuits/hv'
     }).id('tfg:crafting/computer_normal')
 
-    //computer_advanced
+    // Computer Advanced
     event.shaped('computercraft:computer_advanced', [
         'AB ',
         'CD ',
@@ -151,7 +151,7 @@ const registerComputerCraftRecipes = (event) => {
         E: '#forge:circuits/ev'
     }).id('tfg:crafting/computer_advanced')
 
-    //turtle_normal
+    // Turtle Normal
     event.shaped('computercraft:turtle_normal', [
         'ABC',
         'DFD',
@@ -167,7 +167,7 @@ const registerComputerCraftRecipes = (event) => {
         H: 'gtceu:hv_electric_piston',
     }).id('tfg:crafting/turtle_normal')
 
-    //turtle_advanced
+    // Turtle Advanced
     event.shaped('computercraft:turtle_advanced', [
         'ABC',
         'DFD',
@@ -183,7 +183,7 @@ const registerComputerCraftRecipes = (event) => {
         H: 'gtceu:ev_electric_piston',
     }).id('tfg:crafting/turtle_advanced')
 
-    //disks crafts
+    // Disk Crafts
     for (let i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath('computercraft:disk' + `${global.MINECRAFT_DYE_NAMES[i]}`)
             .itemInputs('ae2:blank_pattern')
@@ -193,8 +193,8 @@ const registerComputerCraftRecipes = (event) => {
             .EUt(7)
     }
 
-    //normal pocket computers
-    //pocket_computer_normal
+    // Normal Pocket  Computers
+    // Pocket Computer Normal
     event.shaped('computercraft:pocket_computer_normal', [
         'ABA',
         'CDE',
@@ -209,26 +209,26 @@ const registerComputerCraftRecipes = (event) => {
         G: '#forge:plates/titanium'
     }).id('tfg:crafting/pocket_computer_normal')
 
-    //pocket_computer_normal Upgrade:wireless_modem_advanced
+    // Pocket Computer Normal Upgrade : Wireless Modem Advanced
     event.shapeless(Item.of('computercraft:pocket_computer_normal', '{Upgrade:"computercraft:wireless_modem_advanced"}'), [
         'computercraft:pocket_computer_normal', 
         'computercraft:wireless_modem_advanced'
     ]).id('computercraft:ender_pocket_computer_normal_shapless')
     
-    //pocket_computer_normal Upgrade:wireless_modem_normal
+    // Pocket Computer Normal Upgrade : Wireless Modem Normal
     event.shapeless(Item.of('computercraft:pocket_computer_normal', '{Upgrade:"computercraft:wireless_modem_normal"}'), [
         'computercraft:pocket_computer_normal', 
         'computercraft:wireless_modem_normal'
     ]).id('computercraft:wireless_pocket_computer_normal_shapless')
 
-    //pocket_computer_normal Upgrade:speaker
+    // Pocket Computer Normal Upgrade : Speaker
     event.shapeless(Item.of('computercraft:pocket_computer_normal', '{Upgrade:"computercraft:speaker"}'), [
         'computercraft:pocket_computer_normal', 
         'computercraft:speaker'
     ]).id('computercraft:noisy_pocket_computer_normal_shapless')
 
-    //advanced pocket computers
-    //pocket_computer_advanced
+    // Advanced Pocket Computers
+    // Pocket Computer Advanced
     event.shaped('computercraft:pocket_computer_advanced', [
         'ABA',
         'CDE',
@@ -243,19 +243,19 @@ const registerComputerCraftRecipes = (event) => {
         G: '#forge:plates/tungsten_steel'
     }).id('tfg:crafting/pocket_computer_advanced')
 
-    //pocket_computer_advanced Upgrade:wireless_modem_advanced
+    // Pocket Computer Advanced Upgrade : Wireless Modem Advanced
     event.shapeless(Item.of('computercraft:pocket_computer_advanced', '{Upgrade:"computercraft:wireless_modem_advanced"}'), [
         'computercraft:pocket_computer_advanced', 
         'computercraft:wireless_modem_advanced'
     ]).id('computercraft:ender_pocket_computer_advanced_shapless')
     
-    //pocket_computer_advanced Upgrade:wireless_modem_normal
+    // Pocket Computer Advanced Upgrade : Wireless Modem Normal
     event.shapeless(Item.of('computercraft:pocket_computer_advanced', '{Upgrade:"computercraft:wireless_modem_normal"}'), [
         'computercraft:pocket_computer_advanced', 
         'computercraft:wireless_modem_normal'
     ]).id('computercraft:wireless_pocket_computer_advanced_shapless')
 
-    //pocket_computer_advanced Upgrade:speaker
+    // Pocket Computer Advanced Upgrade : Speaker
     event.shapeless(Item.of('computercraft:pocket_computer_advanced', '{Upgrade:"computercraft:speaker"}'), [
         'computercraft:pocket_computer_advanced', 
         'computercraft:speaker'
