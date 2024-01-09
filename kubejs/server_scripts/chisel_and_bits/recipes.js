@@ -101,7 +101,6 @@ const registerChiselAndBitsRecipes = (event) => {
         C: '#forge:smooth_stone_slab'
     }).id('tfg:chiselsandbits/shaped/pattern_scanner')
 
-
     // Удалятель герметика
     event.shaped('chiselsandbits:wrench', [
         ' AB', 

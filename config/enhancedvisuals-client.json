@@ -305,7 +305,7 @@
       "damageBlackList": []
     },
     "slender": {
-      "enabled": true,
+      "enabled": false,
       "opacity": 1.0,
       "defaultIntensity": 0,
       "maxIntensity": 0.3,
@@ -333,7 +333,7 @@
     },
     "heartbeat": {
       "enabled": true,
-      "opacity": 1.0,
+      "opacity": 0.15447155,
       "useHealthPercentage": false,
       "maxHealth": 6,
       "maxHealthPercentage": 0.15,
@@ -343,7 +343,7 @@
       "heartbeatBlurDuration": 5,
       "minHeartbeatLength": 15,
       "heartbeatTimeFactor": 100.0,
-      "heartbeatVolume": 1.0,
+      "heartbeatVolume": 0.2,
       "lowhealth": {
         "disabled": false,
         "opacity": 1.0,

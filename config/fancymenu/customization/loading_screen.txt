@@ -9,7 +9,7 @@ customization-meta {
 }
 
 customization {
-  name = tfgslideshow
+  name = main_menu
   action = setbackgroundslideshow
 }
 
@@ -55,7 +55,7 @@ customization {
 }
 
 customization {
-  path = kubejs/assets/tfg/textures/gui/logo-512x512.png
+  path = kubejs/assets/tfg/textures/gui/logo_512x512.png
   orientation = mid-centered
   x = -50
   width = 100

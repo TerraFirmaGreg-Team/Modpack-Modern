@@ -1,6 +1,8 @@
 // priority: 0
 
 const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
+const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGMaterialFlags')
+const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelper')
 
 const registerGTCEURecipes = (event) => {
     
@@ -962,6 +964,95 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Стальные машины
+
+    // Экстрактор
+    event.shaped('gtceu:hp_steam_extractor', [
+        'BEB',
+        'CAC',
+        'DBD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron',
+        E: '#forge:glass_panes'
+    }).id('gtceu:shaped/steam_extractor_steel')
+
+    // Дробитель
+    event.shaped('gtceu:hp_steam_macerator', [
+        'CCC',
+        'BAB',
+        'DDD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_macerator_steel')
+
+    // Компрессор
+    event.shaped('gtceu:hp_steam_compressor', [
+        'BCB',
+        'DAD',
+        'BBB'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_compressor_steel')
+
+    // Молот
+    event.shaped('gtceu:hp_steam_forge_hammer', [
+        'DDD',
+        'BAB',
+        'CCC'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_hammer_steel')
+
+    // Печь
+    event.shaped('gtceu:hp_steam_furnace', [
+        'BCB',
+        'DAD',
+        'BCB'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_furnace_steel')
+
+    // Сплавщик
+    event.shaped('gtceu:hp_steam_alloy_smelter', [
+        'DCD',
+        'DAD',
+        'DBD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_alloy_smelter_steel')
+
+    // Блоко-ломатель
+    event.shaped('gtceu:hp_steam_rock_crusher', [
+        'DCD',
+        'BAB',
+        'DDD'
+    ], {
+        A: 'gtceu:steel_brick_casing',
+        B: '#forge:fluid_pipes/small/tin_alloy',
+        C: '#forge:plates/steel',
+        D: '#forge:plates/wrought_iron'
+    }).id('gtceu:shaped/steam_rock_breaker_steel')
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})
@@ -1169,6 +1260,26 @@ const registerGTCEURecipes = (event) => {
     //#region Рецепты, которые итерируются по всем материалам
 
     GTRegistries.MATERIALS.forEach(material => {
+        
+        //#region Рецепты инструментов
+        
+        if (material.hasFlag($TFGMaterialFlags.HAS_TFC_TOOL)) {
+            global.GTCEU_ANVIL_TOOL_TYPES.forEach(toolType => {
+                let toolStack = $ToolHelper.get(toolType, material)
+    
+                event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
+                    'A',
+                    'B'
+                ], {
+                    A: `gtceu:${material}_${toolType.name}_head`,
+                    B: '#forge:rods/wooden'
+                }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
+    
+            })
+        }
+    
+        //#endregion
+
         if (material.hasProperty(PropertyKey.ORE)) 
         {
             // Бедная сырая руда -> Дробленная руда + Дробленная руда (30%)
@@ -1187,8 +1298,16 @@ const registerGTCEURecipes = (event) => {
                 .id(`tfg:crushing/${material}_crushed_ore_from_rich_raw_ore`)
 
             // Грязная пыль -> Пыль (90%)
-            event.recipes.createSplashing(Item.of(`gtceu:${material}_dust`).withChance(0.9), `gtceu:${material}_impure_dust`)
-                .id(`tfg:splashing/${material}_dust`)
+            event.recipes.createSplashing(Item.of(`#forge:dusts/${material}`).withChance(0.9), `gtceu:${material}_impure_dust`)
+                .id(`tfg:splashing/${material}_dust_from_impure`)
+
+            // Очищенная пыль -> Пыль (90%)
+            event.recipes.createSplashing(Item.of(`#forge:dusts/${material}`).withChance(0.9), `gtceu:${material}_pure_dust`)
+                .id(`tfg:splashing/${material}_dust_from_pure`)
+
+            // Дробленная руда -> Очищенная руда (90%)
+            event.recipes.createSplashing(Item.of(`#forge:purified_ores/${material}`).withChance(0.9), `gtceu:${material}_crushed_ore`)
+                .id(`tfg:splashing/${material}_purified_ore`)
 
             // Грязная пыль -> Пыль
             event.custom({
@@ -1203,7 +1322,37 @@ const registerGTCEURecipes = (event) => {
                     }
                 ],
                 result: Item.of(`#forge:dusts/${material}`).toJson()
-            }).id(`tfg:ae_transform/${material}_dust`)
+            }).id(`tfg:ae_transform/${material}_dust_from_impure`)
+
+            // Очищенная пыль -> Пыль
+            event.custom({
+                type: "ae2:transform",
+                circumstance: {
+                    type: "fluid",
+                    tag: "minecraft:water"
+                },
+                ingredients: [
+                    {
+                        item: `gtceu:${material}_pure_dust`
+                    }
+                ],
+                result: Item.of(`#forge:dusts/${material}`).toJson()
+            }).id(`tfg:ae_transform/${material}_dust_from_pure`)
+
+            // Дробленная руда -> Очищенная руда
+            event.custom({
+                type: "ae2:transform",
+                circumstance: {
+                    type: "fluid",
+                    tag: "minecraft:water"
+                },
+                ingredients: [
+                    {
+                        item: `gtceu:${material}_crushed_ore`
+                    }
+                ],
+                result: Item.of(`#forge:purified_ores/${material}`).toJson()
+            }).id(`tfg:ae_transform/${material}_purified_ore`)
         }
 
         if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != 'wood') 

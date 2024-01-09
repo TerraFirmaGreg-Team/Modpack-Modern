@@ -36,6 +36,7 @@ ServerEvents.tags('block', event => {
  */
 ServerEvents.tags('fluid', event => {
     registerTFCFluidTags(event)
+    registerCreateFluidTags(event)
 })
 
 /**
@@ -103,41 +104,15 @@ ServerEvents.recipes(event => {
 })
 
 /**
- * Событие регистрации рудных жил.
- */
-GTCEuServerEvents.oreVeins(event => {
-    event.removeAll()
-})
-
-/**
  * Событие регистрации лут-тейблов.
  */
 LootJS.modifiers((event) => {
     registerGTCEULoots(event)
 });
 
-//#endregion
-
-/*
-
-// 
-event.shaped('', [
-    'AAA',
-    'AAA',
-    'AAA' 
-], {
-    A: '',
-    B: '',
-    C: '',
-    D: '',
-    E: '',
-    F: '',
-    G: '',
-}).id('tfg:create/shaped/')
-
-//
-event.shapeless('', [
-    
-]).id('tfg:create/shapeless/')
-
-*/
+/**
+ * Событие регистрации рудных жил.
+ */
+GTCEuServerEvents.oreVeins(event => {
+    event.removeAll()
+})

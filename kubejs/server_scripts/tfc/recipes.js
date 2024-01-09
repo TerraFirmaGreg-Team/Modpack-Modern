@@ -206,22 +206,30 @@ const registerTFCRecipes = (event) => {
             // Стержень -> Кольцо
             // Возможно, когда нибудь, когда они пригодятся
 
+            // Длинный стержень -> Металл
+            event.recipes.tfc.heating(`gtceu:${metal}_long_rod`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 144))
+                .id(`tfc:heating/metal/${metal}_long_rod`)
+
+            // Стержни -> Длинный стержень
+            event.recipes.tfc.welding(`gtceu:${metal}_long_rod`, `#forge:rods/${metal}`, `#forge:rods/${metal}`)
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_long_rod`)
+
             // Болт -> Металл
             event.recipes.tfc.heating(`gtceu:${metal}_bolt`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 36))
                 .id(`tfc:heating/metal/${metal}_bolt`)
 
+            // Стержень -> Болт
             event.recipes.tfc.anvil(`2x gtceu:${metal}_bolt`, `#forge:rods/${metal}`, ['punch_last', 'draw_second_last', 'draw_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_bolt`)
-
-            // Стержень -> Болт
 
             // Винт -> Металл
             event.recipes.tfc.heating(`gtceu:${metal}_screw`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 72))
                 .id(`tfc:heating/metal/${metal}_screw`)
-
 
             // Стержень -> Винт
             event.recipes.tfc.anvil(`gtceu:${metal}_screw`, `#forge:rods/${metal}`, ['punch_last', 'punch_second_last', 'shrink_third_last'])
@@ -615,6 +623,48 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.heating(`gtceu:${metal}_scythe_head`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 144))
                 .id(`tfc:heating/metal/${metal}_scythe_blade`)
+
+            //#endregion
+
+            //#region Молот шахтера
+
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_mining_hammer`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_mining_hammer`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(`gtceu:${metal}_mining_hammer_head`, `#forge:double_ingots/${metal}`, ['punch_last', 'shrink_not_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_mining_hammer_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_mining_hammer_head`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .id(`tfc:heating/metal/${metal}_mining_hammer_head`)
+
+            //#endregion
+
+            //#region Большая лопата
+            
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_spade`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_spade`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(`gtceu:${metal}_spade_head`, `#forge:double_ingots/${metal}`, ['punch_last', 'hit_not_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_spade_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_spade_head`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .id(`tfc:heating/metal/${metal}_spade_head`)
 
             //#endregion
 

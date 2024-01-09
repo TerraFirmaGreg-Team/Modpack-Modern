@@ -44,8 +44,8 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/track_signal' },
         { id: 'create:crafting/kinetics/track_observer' },
         { id: 'create:crafting/kinetics/controls' },
-        { id: 'create:crafting/kinetics/content_observer' },
-        { id: 'create:crafting/kinetics/stockpile_switch' },
+        { id: 'create:crafting/logistics/content_observer' },
+        { id: 'create:crafting/logistics/stockpile_switch' },
         { id: 'create:crafting/logistics/display_link' },
         { id: 'create:crafting/kinetics/nixie_tube' },
         { id: 'create:crafting/logistics/redstone_link' },
@@ -90,6 +90,9 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/red_seat' },
         { id: 'create:crafting/kinetics/black_seat' },
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
+        { id: 'create:sequenced_assembly/precision_mechanism' },
+        { id: 'create:crafting/logistics/content_observer' },
+        { id: 'create:milling/bone' },
     ], mod: 'create' })
 
     // Пушка для постройки схематик
@@ -188,7 +191,7 @@ const registerCreateRecipes = (event) => {
     event.recipes.createMechanicalCrafting('2x create:crushing_wheel', [
         ' AAA ',
         'AABAA',
-        'ABCBC',
+        'ABCBA',
         'AABAA',
         ' AAA '
     ], {
@@ -685,12 +688,12 @@ const registerCreateRecipes = (event) => {
     ], {
         A: '#forge:chests/wooden',
         B: '#forge:sheets/wrought_iron',
-        C: '#forge:screw/wrought_iron',
+        C: '#forge:screw/steel',
         D: '#forge:tools/screwdrivers'
     }).id('tfg:create/shaped/item_vault')
 
     event.recipes.gtceu.assembler('tfg:create/item_vault')             
-        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/wrought_iron')
+        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/steel')
         .circuit(3)
         .itemOutputs('create:item_vault')
         .duration(200)
@@ -1068,6 +1071,22 @@ const registerCreateRecipes = (event) => {
         .duration(100)
         .EUt(4)
 
+    // Ремень
+    event.recipes.tfc.knapping('create:belt_connector', 'tfc:leather', [
+        " XXX ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+    ]).ingredient('#tfc:leather_knapping').id('tfg:create/shaped/belt_connector')
+
+    event.recipes.gtceu.assembler('tfg:create/belt_connector')             
+        .itemInputs('minecraft:leather')
+        .circuit(2)
+        .itemOutputs('create:belt_connector')
+        .duration(25)
+        .EUt(16)
+        
     //#region Покраска ручек от люка
 
     event.recipes.gtceu.chemical_bath(`create/valve_handle_decolor`)             
@@ -1120,4 +1139,6 @@ const registerCreateRecipes = (event) => {
                 .duration(300)
                 .EUt(4)
     })
+
+    //#endregion
 }

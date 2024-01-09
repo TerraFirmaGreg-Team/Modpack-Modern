@@ -14,7 +14,7 @@
 				Count: 1b
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "tfg:textures/gui/logo-512x512.png"
+					Icon: "tfg:textures/gui/logo_512x512.png"
 				}
 			}
 			id: "76EF4D00586A8B74"
@@ -1059,6 +1059,9 @@
 					id: "gtceu:stone_axe"
 					tag: {
 						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
 					}
 				}
 				type: "item"
@@ -1078,6 +1081,9 @@
 					id: "gtceu:stone_hoe"
 					tag: {
 						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
 					}
 				}
 				type: "item"
@@ -1116,6 +1122,9 @@
 					id: "gtceu:stone_shovel"
 					tag: {
 						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
 					}
 				}
 				type: "item"
@@ -1136,6 +1145,9 @@
 					id: "gtceu:stone_hammer"
 					tag: {
 						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
 					}
 				}
 				type: "item"
@@ -1246,6 +1258,9 @@
 					id: "gtceu:stone_knife"
 					tag: {
 						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
 					}
 				}
 				type: "item"

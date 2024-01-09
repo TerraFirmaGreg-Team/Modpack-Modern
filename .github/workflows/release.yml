@@ -10,10 +10,7 @@ on:
       project_version:
         required: true
         type: string
-      mcversion:
-        required: true
-        type: string
-      tag:
+      mc_version:
         required: true
         type: string
       changelog:
@@ -23,7 +20,7 @@ on:
 env:
   CF_PROJECT_ID: "385053"
   MODRINTH_PROJECT_ID: "75JuuMzk"
-  RELEASE_TYPE: "beta"
+  RELEASE_TYPE: "BETA"
 
 jobs:
   release-curseforge:
@@ -57,7 +54,7 @@ jobs:
           modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
           changelog: ${{ inputs.changelog }}
           changelog-format: markdown
-          game-version: ${{ inputs.mcversion }}
+          game-version: ${{ inputs.mc_version }}
           display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
           server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
           release-type: ${{ env.RELEASE_TYPE }}
@@ -67,10 +64,17 @@ jobs:
         with:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
-          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png"
+          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png"
           embed-title: Release ${{ inputs.project_version }}
-          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ inputs.tag }}
-          embed-description: ${{ inputs.changelog }}
+          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ inputs.project_version }}
+          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
+          embed-description: |
+            **Release Type**: `${{ env.RELEASE_TYPE }}`
+            **GameVersion**: `${{ inputs.mc_version }}`
+            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ steps.cf_release.outputs.id }})
+
+            **Changelog**
+            ```${{ inputs.changelog }}```
           embed-color: 5814783
 
   release-github:
@@ -88,12 +92,12 @@ jobs:
           prerelease: false
           generate_release_notes: true
           name: ${{ inputs.project_version }}
-          body: ${{ inputs.changelog }}
+          body: ${{ inputs.CHANGELOG }}
           files: |
             ${{ inputs.project_name }}-${{ inputs.project_version }}-cf.zip
             ${{ inputs.project_name }}-${{ inputs.project_version }}-mmc.zip
             ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-          tag_name: ${{ inputs.tag }}
+          tag_name: ${{ inputs.project_version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -126,9 +130,9 @@ jobs:
   #         project-id: ${{ env.MODRINTH_PROJECT_ID }}
   #         modpack-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-mrd.zip
   #         modpack-server-path: ${{ inputs.project_name }}-${{ inputs.project_version }}-server.zip
-  #         changelog: "${{ inputs.changelog }}"
+  #         changelog: "${{ inputs.CHANGELOG }}"
   #         changelog-format: markdown
-  #         game-version: ${{ inputs.mcversion }}
+  #         game-version: ${{ inputs.mc_version }}
   #         display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}
   #         server-display-name: ${{ inputs.project_name }}-${{ inputs.project_version }}-server
   #         release-type: ${{ env.RELEASE_TYPE }}
@@ -144,8 +148,8 @@ jobs:
       - name: close-fixed-in-dev
         uses: juraj-hrivnak/close-issues-based-on-label@master
         env:
-          LABEL: "2. status: fixed in dev"
-          VERSION: ${{ inputs.tag }}
+          LABEL: "2. Status: Fixed in Dev"
+          VERSION: ${{ inputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       

@@ -1,12 +1,13 @@
 name: "[RU] Crash Report"
 description: Сообщите об ошибке, которая приводит к сбою игры или препятствует ее запуску.
-labels: [ "1. type: сrash", "2. status: unverified" ]
+labels: [ "1. Type: Crash", "2. Status: Unverified" ]
 body:
   - type: input
     id: version
     attributes:
-      label: Версия используемого модпака
-      description: Удостоверьтесь что у вас последняя версия
+      label: Версия модпака.
+      description: Напишите, какую версию модпака вы используете.
+      placeholder: "Пример: 0.1.1"
     validations:
       required: true
   - type: input

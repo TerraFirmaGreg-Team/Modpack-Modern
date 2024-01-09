@@ -20,6 +20,7 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:advanced_compacting_upgrade',
     'sophisticatedbackpacks:compacting_upgrade',
     'sophisticatedbackpacks:advanced_feeding_upgrade',
-    'sophisticatedbackpacks:feeding_upgrade'
+    'sophisticatedbackpacks:feeding_upgrade',
+    'sophisticatedbackpacks:anvil_upgrade'
 ];
 
