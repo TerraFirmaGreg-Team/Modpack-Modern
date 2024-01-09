@@ -168,32 +168,12 @@ const registerGTCEURecipes = (event) => {
 
     //#region Выход: Пропитанные доски
 
-    event.shaped('8x gtceu:treated_wood_planks', [
-        'AAA', 
-        'ABA',
-        'AAA'
-    ], {
-        A: '#minecraft:planks',
-        B: Item.of('tfc:wooden_bucket', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
-    }).id('tfg:shaped/treated_wood_planks_wood_bucket')
+    event.remove({ id: 'gtceu:shaped/treated_wood_planks' })
 
-    event.shaped('8x gtceu:treated_wood_planks', [
-        'AAA', 
-        'ABA',
-        'AAA'
-    ], {
-        A: '#minecraft:planks',
-        B: Item.of('tfc:metal/bucket/red_steel', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
-    }).id('tfg:shaped/treated_wood_planks_red_steel_bucket')
-
-    event.shaped('8x gtceu:treated_wood_planks', [
-        'AAA', 
-        'ABA',
-        'AAA'
-    ], {
-        A: '#minecraft:planks',
-        B: Item.of('tfc:metal/bucket/blue_steel', '{fluid:{Amount:1000,FluidName:"gtceu:creosote"}}').strongNBT()
-    }).id('tfg:shaped/treated_wood_planks_blue_steel_bucket')
+    event.recipes.tfc.barrel_sealed(4000)
+        .outputItem('gtceu:treated_wood_planks')
+        .inputs('#minecraft:planks', TFC.fluidStackIngredient('#forge:creosote', 100))
+        .id('tfg:barrel/treated_wood_planks')
 
     //#endregion
 

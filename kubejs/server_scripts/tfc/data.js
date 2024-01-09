@@ -103,7 +103,7 @@ const registerTFCFuels = (event) => {
 }
 
 const registerTFCLampFuels = (event) => {
-    event.lampFuel('gtceu:creosote', '#tfc:lamps', 1)
+    event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
 }
 
 const registerTFCFertilizers = (event) => {

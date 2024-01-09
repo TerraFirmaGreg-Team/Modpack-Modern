@@ -243,6 +243,7 @@ const registerTFCFluidTags = (event) => {
 
     event.add('tfc:usable_in_wooden_bucket', "gtceu:latex")
 
+    event.add('tfc:usable_in_barrel', 'gtceu:creosote')
     event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
