@@ -54,37 +54,56 @@ const registerExposureRecipes = (event) => {
     }).id('exposure:color_film')
 
     // Developed Black and White Film
-
-    event.remove({ id: 'exposure:developing_black_and_white_film' })
-    
-    event.recipes.tfc.barrel_instant()
-        .inputFluid(Fluid.of('minecraft:water', 100))
-        .inputItem('exposure:black_and_white_film')    
-        .outputItem('exposure:developed_black_and_white_film')
-        .id('tfg:barrel/instant/developing_black_and_white_film')
-
-    event.recipes.gtceu.mixer('developing_black_and_white_film')             
-        .inputFluids(Fluid.of('minecraft:water', 100))    
-        .itemInputs('exposure:black_and_white_film')
-        .itemOutputs('exposure:developed_black_and_white_film')
-        .duration(50)
-        .EUt(16)
+    event.custom({
+        type: "exposure:film_developing",
+        film: {
+            item: "exposure:black_and_white_film"
+        },
+        ingredients: [
+            {
+                type: "tfc:fluid_item",
+                    fluid_ingredient: {
+                    ingredient: "minecraft:water",
+                    amount: 1000
+                }
+            },
+        ],
+        result: {
+            item: "exposure:developed_black_and_white_film"
+        }
+    }).id('exposure:developing_black_and_white_film')
 
     // Developed Color Film
-
-    event.remove({ id: 'exposure:developing_color_film' })
-
-    event.recipes.tfc.barrel_instant()
-        .inputFluid(Fluid.of('minecraft:water', 300))
-        .inputItem('exposure:color_film')    
-        .outputItem('exposure:developed_color_film')
-        .id('tfg:barrel/instant/developing_color_film')
-
-    event.recipes.gtceu.mixer('developing_color_film')             
-        .inputFluids(Fluid.of('minecraft:water', 300))    
-        .itemInputs('exposure:color_film')
-        .itemOutputs('exposure:developed_color_film')
-        .duration(70)
-        .EUt(16)
-        
+    event.custom({
+        type: "exposure:film_developing",
+        film: {
+            item: "exposure:color_film"
+        },
+        ingredients: [
+            {
+                type: "tfc:fluid_item",
+                    fluid_ingredient: {
+                    ingredient: "minecraft:water",
+                    amount: 1000
+                }
+            },
+            {
+                type: "tfc:fluid_item",
+                    fluid_ingredient: {
+                    ingredient: "minecraft:water",
+                    amount: 1000
+                }
+            },
+            {
+                type: "tfc:fluid_item",
+                    fluid_ingredient: {
+                    ingredient: "minecraft:water",
+                    amount: 1000
+                }
+            },
+        ],
+        result: {
+            item: "exposure:developed_color_film"
+        }
+    }).id('exposure:developing_color_film')
 }
