@@ -15,11 +15,6 @@ JEIEvents.hideItems(event => {
     hideChiselAndBitsStuff(event)
 })
 
-//JEIEvents.groupEntries(event => {
-//    groupGTCEUStuff(event)
-//    groupTFCStuff(event)
-//})
-
 JEIEvents.removeCategories(event => {
     registerMinecraftCategories(event)
     registerGTCEUCategories(event)
