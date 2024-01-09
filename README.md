@@ -1,15 +1,15 @@
 # TerraFirmaGreg - 1.20.x
 
 <div align="center">
-  <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/4980f6f22fd8a7ecab65230b87964c8db23efbc2/branding/logo.png?raw=true" alt="Logo" height="75">
+  <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x">
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="75">
   </a>
   <br/>
 
   <a href="https://discord.gg/terrafirmagreg">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/social/discord-singular_vector.svg" alt="Chat on Discord"></a>
 
-  <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.2">
+  <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1">
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
   <br/>
   <p align="center">
@@ -40,7 +40,7 @@ Also in the modpack there are other interesting mods that will allow you to pass
 - [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern)
 - [Applied Energistics](https://www.curseforge.com/minecraft/mc-mods/ae2)
 - [Create](https://www.curseforge.com/minecraft/mc-mods/create)
-- [AdAstra](https://www.curseforge.com/minecraft/mc-mods/ad-astra)
+- [Gregicality Rocketry](https://www.curseforge.com/minecraft/mc-mods/gcyr)
 
 
 and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
