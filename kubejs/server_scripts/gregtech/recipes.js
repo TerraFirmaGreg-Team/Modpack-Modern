@@ -1052,6 +1052,16 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:smelting/fireclay_brick'})
     event.remove({id: 'gtceu:macerator/macerate_firebrick'})
 
+    // Деревянная шестерня
+    event.shaped('gtceu:wood_gear', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: '#tfc:can_be_lit_on_torch',
+        B: '#forge:tools/wrenches'
+    }).id('gtceu:shaped/gear_wood')
+
     // Контроллер теплицы
     event.shaped('gtceu:greenhouse', [
         'ABA', 
@@ -1335,7 +1345,7 @@ const registerGTCEURecipes = (event) => {
             }).id(`tfg:ae_transform/${material}_purified_ore`)
         }
 
-        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != 'wood') 
+        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && (material != 'wood' || material != 'treated_wood')) 
         {
             if (material.hasProperty(PropertyKey.INGOT))
             {

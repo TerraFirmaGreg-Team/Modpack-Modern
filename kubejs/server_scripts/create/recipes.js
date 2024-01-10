@@ -688,12 +688,12 @@ const registerCreateRecipes = (event) => {
     ], {
         A: '#forge:chests/wooden',
         B: '#forge:sheets/wrought_iron',
-        C: '#forge:screw/steel',
+        C: '#forge:screws/steel',
         D: '#forge:tools/screwdrivers'
     }).id('tfg:create/shaped/item_vault')
 
     event.recipes.gtceu.assembler('tfg:create/item_vault')             
-        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/steel')
+        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
         .circuit(3)
         .itemOutputs('create:item_vault')
         .duration(200)

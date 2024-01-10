@@ -228,6 +228,9 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_ingot_mold', "gtceu:blue_steel")
     event.add('tfc:usable_in_ingot_mold', "gtceu:red_steel")
 
+    event.add('tfc:usable_in_ingot_mold', "gtceu:red_alloy")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:tin_alloy")
+
     event.add('tfc:usable_in_bell_mold', "gtceu:bronze")
     event.add('tfc:usable_in_bell_mold', "gtceu:gold")
     event.add('tfc:usable_in_bell_mold', "gtceu:brass")

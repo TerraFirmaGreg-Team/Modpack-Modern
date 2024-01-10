@@ -784,9 +784,29 @@ global.DUST_GEN = 'dusts';
 global.ORE_CHUNKS_GEN = 'ore_chunks';
 
 /**
- * Указывает, что у этого металла есть: sheet, double_sheet, rod, block, block_stairs, block_slab.
+ * Указывает, что у этого металла есть: plated_block, block_stairs, block_slab.
  */
 global.PART_GEN = 'part';
+
+/**
+ * Указывает, что у этого металла есть: block.
+ */
+global.BLOCK_GEN = 'block';
+
+/**
+ * Указывает, что у этого металла есть: rod.
+ */
+global.ROD_GEN = 'rod';
+
+/**
+ * Указывает, что у этого металла есть: sheet.
+ */
+global.PLATE_GEN = 'plate';
+
+/**
+ * Указывает, что у этого металла есть: double_sheet.
+ */
+global.DOUBLE_PLATE_GEN = 'double_plate';
 
 /**
  * Указывает, что у этого металла есть: anvil, bars, chain, trapdoor, lamp, unfinished_lamp.
@@ -844,6 +864,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -868,6 +892,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -890,6 +918,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -912,6 +944,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -935,6 +971,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -958,6 +998,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -979,6 +1023,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -1000,6 +1048,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -1023,6 +1075,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN,
             global.DUST_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.ARMOR_GEN,
             global.TOOL_GEN,
             global.UTILITY_GEN,
@@ -1111,6 +1167,10 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.ORE_CHUNKS_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN
         ]
     },
@@ -1130,6 +1190,10 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.ORE_CHUNKS_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
 
             global.IS_GT_DUP,
         ]
@@ -1148,6 +1212,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             
             global.IS_GT_DUP,
         ]
@@ -1167,6 +1235,10 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.ORE_CHUNKS_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
 
             global.IS_GT_DUP,
         ]
@@ -1185,6 +1257,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
 
             global.IS_GT_DUP,
         ]
@@ -1204,6 +1280,10 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.ORE_CHUNKS_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
             global.TFC_SMALL_NATIVE_ORE_GEN,
 
             global.IS_GT_DUP,
@@ -1224,6 +1304,10 @@ global.METAL_TO_SPECS = {
             global.DUST_GEN,
             global.ORE_CHUNKS_GEN,
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
 
             global.IS_GT_DUP,
         ]
@@ -1242,6 +1326,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
 
             global.IS_GT_DUP,
         ]
@@ -1260,6 +1348,10 @@ global.METAL_TO_SPECS = {
             global.NUGGET_GEN, 
             global.DUST_GEN, 
             global.PART_GEN,
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN,
 
             global.IS_GT_DUP,
         ]
@@ -1463,6 +1555,59 @@ global.METAL_TO_SPECS = {
         props: [
             global.DUST_GEN, 
             global.ORE_CHUNKS_GEN
+        ],
+    },
+
+    // GT материалы
+    redstone: {
+        forging_temp: 240,
+        welding_temp: 320,
+        melt_temp: 460,
+        output_fluid: "gtceu:redstone",
+        percent_of_material: 100,
+        tier: 1,
+        props: [
+            global.DUST_GEN, 
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.BLOCK_GEN,
+            global.ORE_CHUNKS_GEN
+        ],
+    },
+
+    red_alloy: {
+        forging_temp: 570,
+        welding_temp: 650,
+        melt_temp: 740,
+        output_fluid: "gtceu:red_alloy",
+        percent_of_material: 100,
+        tier: 2,
+        props: [
+            global.NUGGET_GEN,
+            global.INGOT_GEN,
+            global.DUST_GEN, 
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN
+        ],
+    },
+
+    tin_alloy: {
+        forging_temp: 1000,
+        welding_temp: 1100,
+        melt_temp: 1250,
+        output_fluid: "gtceu:tin_alloy",
+        percent_of_material: 100,
+        tier: 3,
+        props: [
+            global.NUGGET_GEN,
+            global.INGOT_GEN,
+            global.DUST_GEN, 
+            global.PLATE_GEN,
+            global.DOUBLE_PLATE_GEN,
+            global.ROD_GEN,
+            global.BLOCK_GEN
         ],
     }
 };
