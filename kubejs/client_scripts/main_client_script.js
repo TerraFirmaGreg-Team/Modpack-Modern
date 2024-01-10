@@ -1,6 +1,6 @@
 // priority: 1
 
-JEIEvents.hideItems(event => {
+REIEvents.hideItems(event => {
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideFirmaLifeStuff(event)
@@ -15,13 +15,18 @@ JEIEvents.hideItems(event => {
     hideChiselAndBitsStuff(event)
 })
 
-JEIEvents.removeCategories(event => {
+REIEvents.groupEntries(event => {
+    groupGTCEUStuff(event)
+    groupTFCStuff(event)
+})
+
+REIEvents.removeCategories(event => {
     registerMinecraftCategories(event)
     registerGTCEUCategories(event)
     registerMoreRedCategories(event)
 })
 
-JEIEvents.hideFluids(event => {
+REIEvents.hideFluids(event => {
     hideTFCFluids(event)
     hideFirmaLifeFluids(event)
 
