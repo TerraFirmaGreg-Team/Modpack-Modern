@@ -1,0 +1,9 @@
+
+[mixin]
+
+	[mixin.languageScreen]
+		fastreload = true
+
+	[mixin.borderless]
+		f11 = true
+

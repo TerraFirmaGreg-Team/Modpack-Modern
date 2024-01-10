@@ -1,80 +1,131 @@
 
-[EmbeddiumPlus]
+[embeddiumplus]
 
-	[EmbeddiumPlus.DynamicLights]
-		OnlyUpdateOnPositionChange = true
-		DynamicEntityLighting = true
-		#Allowed Values: OFF, SLOW, FAST, FASTEST, REALTIME
-		QualityMode = "REALTIME"
-		DynamicTileEntityLighting = true
-
-	#You can configure FPS overlay at the corner
-	[EmbeddiumPlus.fps_overlay]
+	[embeddiumplus.general]
+		#Configure FPS Display mode
+		#Complete mode gives you min FPS count and average count
 		#Allowed Values: OFF, SIMPLE, ADVANCED
-		DisplayMode = "OFF"
-		OverlayMargin = 12
-
-	#Configure max BlockEntity distance
-	[EmbeddiumPlus.block_entity_distance]
-		#Max horizontal render distance
-		#Value is squared, default was 64^2 (or 64x64)
-		maxHorizontalDistance = 4096
-		#Max vertical render distance
-		#Value is raw
-		maxVerticalDistance = 32
-
-	[EmbeddiumPlus.Misc]
-		RenderFog = true
-		HideJEI = false
-		CloudHeight = 128
-		#Allowed Values: OFF, FAST, FANCY
-		ChunkFadeInQuality = "FANCY"
+		fpsDisplay = "OFF"
+		#Shows GPU and memory usage onto FPS display
+		#Allowed Values: OFF, ON, GPU, RAM
+		fpsDisplaySystem = "OFF"
+		#Set Fullscreen mode
+		#Borderless let you change between screens more faster and move your mouse across monitors
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
-		BorderlessFullscreen = "WINDOWED"
-		ExtendedServerViewDistance = true
+		fullscreen = "WINDOWED"
+		#Configure FPS Display gravity
+		#Places counter on specified corner of your screen
+		#Allowed Values: LEFT, CENTER, RIGHT
+		fpsDisplayGravity = "LEFT"
+		#Toggle FPS Display shadow
+		#In case sometimes you can't see the text
+		fpsDisplayShadow = false
+		#Configure FPS Display margin
+		#Give some space between corner and text
+		#Range: 0 ~ 48
+		fpsDisplayMargin = 12
 
-	#Configure max Entity distance
-	[EmbeddiumPlus.entity_distance_limit]
-		#Max horizontal render distance
-		#Value is squared, default was 64^2 (or 64x64)
-		maxHorizontalDistance = 4096
-		#Turn on this feature
-		Enable = true
-		#List of entities to not be ignored when are out of configured radius.
-		#Accepts ResourceLocation and Mod IDs
-		#Example: "minecraft:bat" for specific entity or "alexmobs:*" for all mod specific entities
-		entityWhitelist = []
-		#Max vertical render distance
-		#Value is raw
-		maxVerticalDistance = 32
+	[embeddiumplus.performance]
+		#Toggles JREI item rendering until searching
+		#Increases performance a little bit and cleans your screen when you don't want to use it
+		hideJREI = false
+		#Toggles FastChest feature
+		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
+		fastChests = false
+		#Toggles FastBeds feature
+		fastBeds = true
+		#Toggles Minecraft Fonts shadows
+		#Depending of the case may increase performance
+		#Gives a flat style text
+		fontShadows = false
 
-	#Configure TrueDarkness feature
-	#Section deprecated and removed soon (in favor of rework)
-	[EmbeddiumPlus.true_darkness]
-		#Sets darkness mode
-		#Depending of the option darkness can be less or more aggressive
-		#Allowed Values: PITCH_BLACK, REALLY_DARK, DARK, DIM
-		DarknessMode = "REALLY_DARK"
-		#Turn on this feature
-		Enable = true
+		[embeddiumplus.performance.distanceCulling]
 
-		[EmbeddiumPlus.true_darkness.Advanced]
-			IgnoreMoonPhase = false
-			BlockLightingOnly = false
-			#Range: 0.0 ~ 1.0
-			MaximumMoonBrightness = 0.25
-			#Range: 0.0 ~ 1.0
-			MinimumMoonBrightness = 0.0
+			[embeddiumplus.performance.distanceCulling.entities]
+				#Toggles distance culling for entities
+				#Maybe you use another mod for that :(
+				enable = true
+				#Configure horizontal max distance before cull entities
+				#Value is squared, default was 64^2 (or 64x64)
+				#Range: > 0
+				cullingDistanceX = 4096
+				#List of all entities to be ignored by distance culling
+				#Uses ResourceLocation to identify it
+				#Example 1: "minecraft:bat" - Ignores bats only
+				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
+				whitelist = []
+				#Configure vertical max distance before cull entities
+				#Value is raw
+				#Range: 0 ~ 512
+				cullingDistanceY = 32
 
-		#Configure what dimension should use TrueDarkness
-		[EmbeddiumPlus.true_darkness.DimensionSettings]
-			DefaultSetting = false
+			[embeddiumplus.performance.distanceCulling.tileEntities]
+				#Toggles distance culling for Block Entities
+				#Maybe you use another mod for that :(
+				enable = true
+				#Configure horizontal max distance before cull Block entities
+				#Value is squared, default was 64^2 (or 64x64)
+				#Range: > 0
+				cullingDistanceX = 4096
+				#Configure vertical max distance before cull Block entities
+				#Value is raw
+				#Range: 0 ~ 512
+				cullingDistanceY = 32
+
+	[embeddiumplus.dynlights]
+		#Toggle if Block Entities should have dynamic lights
+		onTileEntities = true
+		#Configure how fast light whould be updated
+		#Allowed Values: OFF, SLOW, NORMAL, FAST, SUPERFAST, FASTESTS, REALTIME
+		updateSpeed = "REALTIME"
+		#Toggle if Entities should have dynamic lights
+		onEntities = true
+		updateOnlyOnPositionChange = true
+
+	[embeddiumplus.quality]
+		#Chunks fade in speed
+		#This option doesn't affect performance, just changes speed
+		#Allowed Values: OFF, FAST, SLOW
+		chunkFadeSpeed = "SLOW"
+		#Raise clouds
+		#Modify clouds height perfect for a adaptative world experience
+		#Range: 0 ~ 320
+		cloudsHeight = 128
+		#Toggle fog feature
+		#Fog was a vanilla feature, toggling off may increases performance
+		fog = true
+
+		[embeddiumplus.quality.darkness]
+			#Configure Darkness Mode
+			#Each config changes what is considered 'true darkness'
+			#Allowed Values: TOTAL_DARKNESS, PITCH_BLACK, DARK, DIM, OFF
+			mode = "PITCH_BLACK"
+			#Configure fog brightness on nether when darkness is enabled
 			#Range: 0.0 ~ 1.0
-			DarkNetherFogBrightness = 0.5
-			DarkWhenNoSkylight = false
-			Nether = false
-			Overworld = true
+			endFogBright = 0.5
+			#Toggles if moon phases affects darkness in the overworld
+			affectedByMoonPhase = true
+			#Configure max moon brightness level with darkness
 			#Range: 0.0 ~ 1.0
-			DarkEndFogBrightness = 0.0
-			"Dark End?" = false
+			fullMoonBright = 0.25
+			#Configure fog brightness on nether when darkness is enabled
+			#Range: 0.0 ~ 1.0
+			netherFogBright = 0.5
+			#Toggle Darkness on Nether dimension
+			enableOnNether = false
+			#Toggle darkness when dimension has no SkyLight
+			enableOnNoSkyLight = false
+			#Configure min moon brightness level with darkness
+			#Range: 0.0 ~ 1.0
+			newMoonBright = 0.0
+			#Toggle Darkness on End dimension
+			enableOnEnd = false
+			#Toggle Darkness default mode for modded dimensions
+			#This option will be replaced with a whitelist in a near future
+			valueByDefault = false
+			#Disables all bright sources of darkness like moon or fog
+			#Only affects darkness effect
+			enableBlockLightOnly = false
+			#Toggle Darkness on Overworld dimension
+			enableOnOverworld = true
 
