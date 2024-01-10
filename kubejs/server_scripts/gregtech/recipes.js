@@ -1390,6 +1390,17 @@ const registerGTCEURecipes = (event) => {
                 }).id(`tfg:rolling/${material}_rod`)
             }
         }
+
+        if (material.hasProperty(PropertyKey.INGOT)) {
+            event.recipes.createCrushing(Item.of(`#forge:dusts/${material}`), `#forge:ingots/${material}`)
+                .processingTime(150)
+                .id(`tfg:crushing/${material}_dust`)
+        } 
+        else {
+            event.recipes.createMilling(Item.of(`#forge:dusts/${material}`), `#forge:gems/${material}`)
+                .processingTime(150)
+                .id(`tfg:milling/${material}_dust`)
+        }
     });
 
     //#endregion
