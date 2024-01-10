@@ -1064,6 +1064,7 @@
 						}
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 3.5d
@@ -1086,6 +1087,7 @@
 						}
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 2.0d
@@ -1127,6 +1129,7 @@
 						}
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 6.5d
@@ -1263,6 +1266,7 @@
 						}
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 5.0d
