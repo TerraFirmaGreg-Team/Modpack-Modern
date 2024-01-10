@@ -865,7 +865,6 @@ const registerTFCRecipes = (event) => {
                 .id(`tfg:heating/small_dust/${metal}`)
 
             // Декрафт пыли
-            console.log(metal)
             event.recipes.tfc.heating(Item.of(`#forge:dusts/${metal}`), metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, global.calcAmountOfMetal(144, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/dust/${metal}`)
@@ -2607,16 +2606,13 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
 
     global.TFC_STONE_TYPES.forEach(stoneType => {
-        let oresToCollapse = []
-        
-        GTRegistries.MATERIALS.forEach(material => {
-            if (material.hasProperty(PropertyKey.ORE)) {
-                oresToCollapse.push(`gtceu:${stoneType}_${material}_ore`)
-            }
-        })
-
-        event.recipes.tfc.collapse(`tfc:rock/cobble/${stoneType}`, TFC.blockIngredient(oresToCollapse))
-            .id(`tfg:collapse/${stoneType}_gt_ores`)
+        event.custom({
+            type: "tfc:collapse",
+            ingredient: {
+                tag: `forge:ores_in_ground/${stoneType}`
+            },
+            result: `tfc:rock/cobble/${stoneType}`
+        }).id(`tfg:collapse/${stoneType}_gt_ores`)
     })
     
     //#endregion

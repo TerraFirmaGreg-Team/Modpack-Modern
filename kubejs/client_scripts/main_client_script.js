@@ -1,6 +1,6 @@
 // priority: 1
 
-REIEvents.hideItems(event => {
+REIEvents.hide('items', event => {
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideFirmaLifeStuff(event)
@@ -26,7 +26,7 @@ REIEvents.removeCategories(event => {
     registerMoreRedCategories(event)
 })
 
-REIEvents.hideFluids(event => {
+REIEvents.hide('fluids', event => {
     hideTFCFluids(event)
     hideFirmaLifeFluids(event)
 
