@@ -1153,6 +1153,7 @@
 						}
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: 12.0d
@@ -1657,6 +1658,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:copper_pickaxe)item(gtceu:bismuth_bronze_pickaxe)item(gtceu:black_bronze_pickaxe)item(gtceu:bronze_pickaxe))"
 					}
 				}
+				match_nbt: false
 				title: "Медная или бронзовая кирка"
 				type: "item"
 			}]
@@ -1718,6 +1720,7 @@
 						"ftbfiltersystem:filter": "or(item(tfc:metal/chisel/copper)item(tfc:metal/chisel/bismuth_bronze)item(tfc:metal/chisel/bronze)item(tfc:metal/chisel/black_bronze))"
 					}
 				}
+				match_nbt: false
 				title: "Медная или бронзовая стамеска"
 				type: "item"
 			}]
@@ -1927,6 +1930,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:copper_saw)item(gtceu:bismuth_bronze_saw)item(gtceu:bronze_saw)item(gtceu:black_bronze_saw))"
 					}
 				}
+				match_nbt: false
 				title: "Медная или бронзовая пила"
 				type: "item"
 			}]
@@ -1945,6 +1949,7 @@
 						"ftbfiltersystem:filter": "or(item(tfc:metal/propick/copper)item(tfc:metal/propick/bismuth_bronze)item(tfc:metal/propick/bronze)item(tfc:metal/propick/black_bronze))"
 					}
 				}
+				match_nbt: false
 				title: "Медная или бронзовая кирка шахтера"
 				type: "item"
 			}]
@@ -1963,6 +1968,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:copper_hammer)item(gtceu:bismuth_bronze_hammer)item(gtceu:bronze_hammer)item(gtceu:black_bronze_hammer))"
 					}
 				}
+				match_nbt: false
 				title: "Медный или бронзовый топор"
 				type: "item"
 			}]
@@ -2796,6 +2802,7 @@
 			tasks: [{
 				id: "3E84976D6C8AB0EA"
 				item: "tfc:ceramic_blowpipe"
+				match_nbt: false
 				type: "item"
 			}]
 			x: -13.0d
@@ -3042,6 +3049,7 @@
 			tasks: [{
 				id: "5930A278D214573B"
 				item: "tfc:wooden_bucket"
+				match_nbt: false
 				type: "item"
 			}]
 			x: -9.5d
@@ -3792,6 +3800,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:tuyeres)"
 					}
 				}
+				match_nbt: false
 				title: "Any #tfc:tuyeres"
 				type: "item"
 			}]
@@ -4168,6 +4177,7 @@
 						Damage: 0
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			x: -1.5d
