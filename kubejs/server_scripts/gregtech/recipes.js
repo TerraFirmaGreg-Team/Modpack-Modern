@@ -1033,6 +1033,15 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: некоторые рецепты пылей
+
+    event.remove({id: 'gtceu:shapeless/dust_brass'})
+    event.remove({id: 'gtceu:shapeless/glass_dust_flint'})
+    event.remove({id: 'gtceu:shapeless/dust_bronze'})
+    event.remove({id: 'gtceu:shapeless/potin_dust'})
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})

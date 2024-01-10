@@ -9,8 +9,11 @@ const hideFirmaLifeStuff = (event) => {
         })
     })
 
-
     global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
+        event.hide(item)
+    })
+
+    global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
         event.hide(item)
     })
 }

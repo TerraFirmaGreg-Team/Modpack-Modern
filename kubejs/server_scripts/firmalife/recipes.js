@@ -1,7 +1,23 @@
 // priority: 0
 
 const registerFirmaLifeRecipes = (event) => {
-    
+
+    //#region Нержавеющая теплица
+
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_wall' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_roof' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof_top' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_trapdoor' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_door' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_port' })
+
+    //#endregion
+
+    event.remove({ id: 'firmalife:crafting/compost_tumbler' })
+    event.remove({ id: 'firmalife:crafting/pumping_station' })
+
     // - Chromium
     
     // Ingot 
