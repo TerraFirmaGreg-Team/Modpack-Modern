@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "lv__low_voltage"
-	group: "693226878D58638A"
+	group: ""
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 1
+	order_index: 3
 	quest_links: [{
 		id: "376725077649D2CC"
 		linked_quest: "5A8F0124E07D5025"
@@ -49,11 +49,6 @@
 				"&l&3Lore:&r&o GregTech 5 had blocks such as the Buffer, Filter and Type Filter to allow fine control over items. In GTCE it's all been replaced by the almighty Robot Arm and various Filter Covers. Much more compact!"
 			]
 			id: "3DE7A2B91CFF48F6"
-			rewards: [{
-				id: "372D894C29C4513C"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "You're going to hate making these"
@@ -113,12 +108,6 @@
 				"One of the more intricate crafting components, as it's made using a motor."
 			]
 			id: "38993B4697B0E16C"
-			rewards: [{
-				count: 4
-				id: "05D8932AEED073F8"
-				item: "gtceu:steel_small_gear"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "A crafting component - did you expect anything fancier?"
@@ -198,12 +187,6 @@
 				"&6You will still need MV Circuits in order to make MV machines!&r"
 			]
 			id: "7567E885B7166603"
-			rewards: [{
-				count: 8
-				id: "19987707822BC176"
-				item: "gtceu:aluminium_dust"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "We're basically in MV now, right?"
@@ -263,11 +246,6 @@
 				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
 			]
 			id: "7CCC1BDDE0C67F16"
-			rewards: [{
-				id: "1CADDD995C2DD509"
-				item: "ae2:sky_stone_chest"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Earlygame buffering"
@@ -305,11 +283,6 @@
 			]
 			icon: "gtceu:crafting_table_cover"
 			id: "1C767009F505A813"
-			rewards: [{
-				id: "05BAD11184608890"
-				item: "gtceu:crafting_table_cover"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Extra utility without taking up blockspace!"
@@ -370,12 +343,6 @@
 				"With this machine safely crafted - welcome to the age of all things electric!"
 			]
 			id: "32EA7E81885C8E87"
-			rewards: [{
-				count: 4
-				id: "2B736C4992CDC8D1"
-				item: "gtceu:copper_single_wire"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "No more painful wires!"
 			tasks: [{
@@ -395,12 +362,6 @@
 				"This unlocks the ability to convert one &6Ingot into one Plate&r, which is a better ratio than the Forge Hammer."
 			]
 			id: "10ECB471A77F5136"
-			rewards: [{
-				count: 4
-				id: "6DF60970CB48982D"
-				item: "gtceu:steel_plate"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "The Bender bends!"
 			tasks: [{
@@ -422,12 +383,6 @@
 				"&oThe GT6 Lathe acts like GT5's, but Bolts lathe into one Screw and 1/72 of a pile of Dust. Disgusting!"
 			]
 			id: "07E7678095258EDB"
-			rewards: [{
-				count: 4
-				id: "09FC4530E70B9105"
-				item: "gtceu:steel_rod"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "The Lathe lathes!"
 			tasks: [{
@@ -443,13 +398,6 @@
 			dependencies: ["32EA7E81885C8E87"]
 			description: ["One of the cheapest - if not the cheapest - &7LV&r machine. Use this to make &6Redstone-free Magnetic Rods&r for your Motors. Whenever you start to batch your Motors, this machine will save you stacks and stacks of Redstone."]
 			id: "29379C91D6E00436"
-			rewards: [{
-				count: 16
-				id: "47F3A37E7A315A1D"
-				item: "minecraft:redstone"
-				random_bonus: 16
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "The Polarizer polarizes!"
 			tasks: [{
@@ -460,30 +408,6 @@
 			title: "Basic Polariser"
 			x: 5.625d
 			y: 1.125d
-		}
-		{
-			dependencies: ["29379C91D6E00436"]
-			description: [
-				"&dSneak right-click&r when in hand to activate your Magnet. Do it again to deactivate. This magnet will also work from your Curio slots."
-				""
-				"&9Note:&r If you're worried about getting overwhelmed by Cobblestone or Netherrack, use the trash can from FTB Utilities (top left corner of your inventory) to void them."
-			]
-			id: "3ECD9C9B909CCCCC"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Why can't these items I mine behave and enter my inventory!?"
-			tasks: [{
-				id: "2F5FB2546075FFE0"
-				item: {
-					Count: 1b
-					id: "simplemagnets:basicmagnet"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "Magnet"
-			x: 5.61d
-			y: 2.31d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
@@ -503,11 +427,6 @@
 				"&9Note:&r An in-depth tutorial about Multiblocks is given after you get the &3Electric Blast Furnace&r. We recommend you aim for that first."
 			]
 			id: "33263404ED38C6D2"
-			rewards: [{
-				id: "1BEF1D97E033F1B1"
-				item: "gtceu:steam_bucket"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "Boom, boom, boom, boom"
@@ -675,12 +594,6 @@
 				"It'll also be required if you want to make Storage Disks from &bApplied Energistics 2&r."
 			]
 			id: "37307A46E70011D3"
-			rewards: [{
-				count: 2
-				id: "25A57A151B7E8FEB"
-				item: "gtceu:lithium_dust"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "This machine does nothing exciting"
 			tasks: [{
@@ -782,12 +695,6 @@
 				"It's important to keep in mind that the EBF is a beefy boy. The minimum power cost to run a recipe is &9120 EU/t&r! That's slightly under 4 &7LV&r Generators. This is why it was locked behind the Battery Quest. You may wish to consider building a separate power line, with separate Generators and Battery Buffer to run this."
 			]
 			id: "1E9BE8D3F8A602DC"
-			rewards: [{
-				count: 16
-				id: "0DBE03823EE6616B"
-				item: "gtceu:invar_ingot"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 1.2d
 			subtitle: "A big milestone!"
@@ -891,11 +798,6 @@
 				"There will be more Fluids to solidify, so you may re-purpose your &3Fluid Solidifier&r when not crafting Rubber - or make a second one!"
 			]
 			id: "581CDF545E1EA1FD"
-			rewards: [{
-				id: "2B85DCFFF22770D8"
-				item: "gtceu:rubber_bucket"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "The Fluid Solidifier solidifies..."
 			tasks: [{
@@ -929,10 +831,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"5B2696206205CB2E"
-				"70432F650591353C"
-			]
+			dependencies: ["5B2696206205CB2E"]
 			description: [
 				"Prepare &a128 Cupronickel&r, &a32 Bronze&r and &a16 Tin Alloy&r to craft the Heating Coils required for your first Electric Blast Furnace."
 				""
@@ -950,20 +849,6 @@
 				}
 			}
 			id: "1646BF9194100E57"
-			rewards: [
-				{
-					count: 8
-					id: "2DF635DEFA2D4DCD"
-					item: "gtceu:nickel_ore"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "0F7FB05B78AAFB96"
-					item: "gtceu:copper_ore"
-					type: "item"
-				}
-			]
 			size: 0.75d
 			subtitle: "Baby's first heating coil"
 			tasks: [{
@@ -1134,12 +1019,6 @@
 			]
 			icon: "gtceu:rotor_casting_mold"
 			id: "115C4226F6473F0C"
-			rewards: [{
-				count: 2
-				id: "7162E47A4FB3EDB1"
-				item: "gtceu:empty_mold"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Time to end the misery of hand crafting rotors!"
@@ -1192,12 +1071,6 @@
 				"It would be wise to obtain enough Sapphire to electrolyze into a full stack of &aAluminium Dust&r - it &lwill&r be useful very soon. Plus, bonus Oxygen is always nice."
 			]
 			id: "2F1CCFEBAB71B1F3"
-			rewards: [{
-				count: 12
-				id: "6ED23A377745D74A"
-				item: "gtceu:green_sapphire_ore"
-				type: "item"
-			}]
 			size: 0.75d
 			tasks: [{
 				count: 6L
@@ -1223,12 +1096,6 @@
 				"&cTake caution!&r Due to how ores work, directly smelting dusts into Ingots can give higher metal yields than electrolysis. However, it means you lose the other products in the dust. You will have to decide whether you want to prioritise direct value, or byproduct count."
 			]
 			id: "32B08E6F414A00C0"
-			rewards: [{
-				count: 2
-				id: "63E578C8E82CB9DC"
-				item: "gtceu:lv_electric_motor"
-				type: "item"
-			}]
 			size: 0.75d
 			tasks: [{
 				id: "536874A8C35E1C86"
@@ -1280,11 +1147,6 @@
 				"&l&3Lore:&r&o In base GTCE, this was objectively the strongest Ore Processing machine as it was fairly easy to use, and gave three tiny dusts, just like the Ore Washer or the Thermal Centrifuge. We tuned it down in favor of diversity."
 			]
 			id: "5263F866638D875C"
-			rewards: [{
-				id: "525C65CA6AFD3C11"
-				item: "minecraft:cauldron"
-				type: "item"
-			}]
 			size: 0.75d
 			tasks: [{
 				id: "20EDB55B8D5CDAD6"
@@ -1364,19 +1226,6 @@
 				"&l&3Lore:&r&o Back in the days of GregTech 2, the Assembling Machine only had two slots, and was only really used for alternate Circuit and Hull recipes."
 			]
 			id: "63CD0236B337EAAD"
-			rewards: [
-				{
-					count: 4
-					id: "15CB6A60C5C891BB"
-					item: "gtceu:basic_electronic_circuit"
-					type: "item"
-				}
-				{
-					id: "3AF49D4A68D17C1A"
-					item: "gtceu:lv_machine_hull"
-					type: "item"
-				}
-			]
 			shape: "gear"
 			size: 1.2d
 			tasks: [{
@@ -1407,12 +1256,6 @@
 			]
 			icon: "gtceu:item_voiding_cover"
 			id: "249B9E104CAF5FE6"
-			rewards: [{
-				count: 32
-				id: "7B4720913F7D4D6E"
-				item: "minecraft:cactus"
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "The best mechanic - making an item or fluid disappear!"
@@ -1470,11 +1313,6 @@
 				"&l&3Lore:&r&o The Circuit Assembler has made appearances in and out of GregTech versions. GT5 did not have it, and it was reimplemented in GT5 Unofficial. GTCE decided not to port it, and the tug-of-war continues with its inclusion in GTCEu."
 			]
 			id: "199361B5FEC959EA"
-			rewards: [{
-				id: "0418E257FEDA52B7"
-				item: "gtceu:good_electronic_circuit"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "Hopefully, your first MV Circuit expense"
 			tasks: [{
@@ -1499,11 +1337,6 @@
 				"&oIn short, the &bPlasma Arc Furnace&f is &4gone&f. RIP."
 			]
 			id: "63256ED95F17B242"
-			rewards: [{
-				id: "2DF03194A80B3F4B"
-				item: "gtceu:oxygen_bucket"
-				type: "item"
-			}]
 			size: 0.75d
 			tasks: [{
 				id: "2374C06C5E1EFC24"
@@ -1512,33 +1345,6 @@
 			}]
 			x: -2.25d
 			y: 7.875d
-		}
-		{
-			dependencies: ["3A8D7FC6F316C38C"]
-			description: [
-				"A fancy tool to help with base building. The gadget has different modes that you can view by holding the relevant hotkey - it defaults to &eG&r."
-				""
-				"Be sure to check out the &3Destruction Gadget&r and the &3Copy Paste Gadget&r."
-				""
-				"Charge this in the charger slot of any GregTech machine."
-			]
-			id: "0DAD0A6360448B39"
-			rewards: [{
-				count: 64
-				id: "754F6E206D20BC31"
-				item: "minecraft:bricks"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "A familiar face in the land of Greg"
-			tasks: [{
-				id: "65100C599DB0F30C"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
-			x: -2.25d
-			y: 6.75d
 		}
 		{
 			dependencies: [
@@ -1562,6 +1368,20 @@
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "1A77CA35F054F988"
+			rewards: [{
+				id: "147345CEB55ECB69"
+				item: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:oxygen"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Achtually, it's Dioxygen..."
@@ -1587,9 +1407,17 @@
 			icon: "gtceu:glue_bucket"
 			id: "0EAC071414AEC07E"
 			rewards: [{
-				count: 4
-				id: "3134ECF63472A855"
-				item: "gtceu:rubber_log"
+				id: "0BDDB03645B6D2A1"
+				item: {
+					Count: 1b
+					id: "gtceu:fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:glue"
+						}
+					}
+				}
 				type: "item"
 			}]
 			size: 0.75d
@@ -1651,11 +1479,6 @@
 				"&l&3Lore:&r&o Back in GTCEu 1.12.2, these circuit boards were called \"&2Good Circuit Boards&f\". Not exactly a fitting name, as they're &4rather evil&f to craft."
 			]
 			id: "3647B1B964A15E4E"
-			rewards: [{
-				id: "2B815290D1F7D038"
-				item: "gtceu:resin_printed_circuit_board"
-				type: "item"
-			}]
 			size: 0.75d
 			tasks: [{
 				id: "2DE7B75F25A4AB9E"
@@ -1663,43 +1486,6 @@
 				type: "item"
 			}]
 			x: 3.375d
-			y: 7.875d
-		}
-		{
-			dependencies: ["63CD0236B337EAAD"]
-			description: [
-				"Getting into Applied Energistics at this point is possible, but also a little bit involved..."
-				""
-				"You will need to make quite a few &7LV&r machines, and the &7LV-tier&r recipes for some AE2 items are comparatively expensive without access to more advanced technology."
-				""
-				"In &7LV&r, you're able to craft:"
-				""
-				"&6-&r Energy Acceptor"
-				""
-				"&6-&r ME Terminal"
-				""
-				"&6-&r 1k ME Storage component"
-				""
-				"&6-&r ME Chest"
-				"{@pagebreak}"
-				"&9Note:&r This pack includes &5Fluix Crystals&r, but they are generated as a GT material, rather than the default AE2 Fluix Crystals. To get them, put &dFluix Dust&r in the &aAutoclave&r, which is made from &7Certus Quartz Dust&r, &eNether Quartz Dust&o&r and &cRedstone&r in a &aMixer&r. No need to charge the Certus Quartz. It gets... charged in the Mixer... or something like that."
-			]
-			id: "0E72017800A9766C"
-			rewards: [{
-				count: 16
-				id: "6511637BCAB0EC18"
-				item: "gtceu:certus_quartz_gem"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "2080D5BB367332D3"
-				item: "ae2:cell_component_1k"
-				type: "item"
-			}]
-			title: "The Digital Age? Already!?"
-			x: 4.5d
 			y: 7.875d
 		}
 		{
@@ -1715,12 +1501,6 @@
 				"This is required for &dMV Circuits&r."
 			]
 			id: "7BE7DE4C0109D788"
-			rewards: [{
-				count: 8
-				id: "7E08419FB2E4B575"
-				item: "gtceu:gallium_dust"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "Don't be swayed by JEI!"
 			tasks: [{
@@ -1747,12 +1527,6 @@
 				"&6Having this and Aluminium will grant access to MV Machines.&r"
 			]
 			id: "0DBC148D92A9F69F"
-			rewards: [{
-				count: 4
-				id: "052E7DFC7E0B9EEF"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 1.2d
 			subtitle: "Does that mean we're at MV yet?"

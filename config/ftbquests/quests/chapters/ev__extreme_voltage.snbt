@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ev__extreme_voltage"
-	group: "693226878D58638A"
+	group: ""
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
-	order_index: 4
+	order_index: 6
 	quest_links: [
 		{
 			id: "2E99A771FCA40E15"
@@ -411,20 +411,6 @@
 			hide_dependency_lines: true
 			icon: "gtceu:tungsten_dust"
 			id: "271CE5C2B78A1EDC"
-			rewards: [
-				{
-					count: 6
-					id: "7987EDE1771A5BEE"
-					item: "gtceu:endstone_scheelite_ore"
-					type: "item"
-				}
-				{
-					count: 6
-					id: "45F295D16818D055"
-					item: "gtceu:endstone_tungstate_ore"
-					type: "item"
-				}
-			]
 			size: 0.75d
 			subtitle: "All in one!"
 			tasks: [{

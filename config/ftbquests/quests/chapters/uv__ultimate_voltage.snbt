@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "uv__ultimate_voltage"
-	group: "693226878D58638A"
+	group: ""
 	icon: "gtceu:uv_electric_motor"
 	id: "2E730D6F5A7C2E83"
-	order_index: 8
+	order_index: 10
 	quest_links: [
 		{
 			id: "5232A33368566616"
@@ -144,11 +144,6 @@
 				"&oThey also added an &lExtremely Ultimate Battery&r&o made of 8 Really Ultimate Batteries, which is ludicrously expensive."
 			]
 			id: "6F15D7574B8F6DB5"
-			rewards: [{
-				id: "4895F6328078CE87"
-				item: "minecraft:grass"
-				type: "item"
-			}]
 			shape: "gear"
 			size: 1.3d
 			subtitle: "Consider touching some grass"

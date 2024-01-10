@@ -2,23 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "multiblock_dilemma"
-	group: "1C1C4FB2AFCF489D"
+	group: ""
 	icon: "gtceu:electric_blast_furnace"
 	id: "41FEC6178ABF1998"
-	order_index: 2
+	order_index: 11
 	quest_links: [
-		{
-			id: "1F0BB0AD77F19FD4"
-			linked_quest: "4946FC5BCA4CCA88"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "3E07B33787FBC6BA"
-			linked_quest: "40DE888E6025C646"
-			x: 1.5d
-			y: 0.0d
-		}
 		{
 			id: "787AC5F1A89ABE41"
 			linked_quest: "1E9BE8D3F8A602DC"

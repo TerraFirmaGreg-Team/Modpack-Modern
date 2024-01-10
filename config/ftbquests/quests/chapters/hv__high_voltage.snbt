@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "hv__high_voltage"
-	group: "693226878D58638A"
+	group: ""
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
-	order_index: 3
+	order_index: 5
 	quest_links: [
 		{
 			id: "2583D0B64E51FAC8"
@@ -48,12 +48,6 @@
 			]
 			icon: "gtceu:hv_machine_casing"
 			id: "2D01E80DE837F6A6"
-			rewards: [{
-				count: 6
-				id: "4D352625AE6D5757"
-				item: "gtceu:advanced_integrated_circuit"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			tasks: [{
@@ -526,7 +520,6 @@
 			dependencies: [
 				"1C55AE6AD5BDE304"
 				"6958029B5514D4EC"
-				"1CBA5477CB7C45E7"
 			]
 			description: [
 				"&3Nichrome Heating Coils&r increase the temperature of your &3Blast Furnace&r to &d3,600K&r."
@@ -691,13 +684,6 @@
 			]
 			icon: "minecraft:end_portal_frame"
 			id: "41D32C5178760F47"
-			rewards: [{
-				command: "/locate structure minecraft:stronghold"
-				icon: "minecraft:end_portal_frame"
-				id: "30A15D4EF08A423C"
-				title: "Nearest Stronghold location printed in chat"
-				type: "command"
-			}]
 			size: 0.75d
 			tasks: [{
 				count: 12L
@@ -850,12 +836,6 @@
 			]
 			icon: "gtceu:polytetrafluoroethylene_plate"
 			id: "7CC79617A4965F25"
-			rewards: [{
-				count: 24
-				id: "314C46623E72CFA4"
-				item: "gtceu:netherrack_topaz_ore"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "A.K.A - Teflon"
 			tasks: [
@@ -1075,11 +1055,6 @@
 			]
 			icon: "gtceu:phosphorus_boule"
 			id: "017019EB38F7A18C"
-			rewards: [{
-				id: "69C519E1CE7B94F0"
-				item: "gtceu:hv_lithium_battery"
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "That's dope, bro!"
 			tasks: [

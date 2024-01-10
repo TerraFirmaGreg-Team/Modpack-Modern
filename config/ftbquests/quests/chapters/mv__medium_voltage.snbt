@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	filename: "mv__medium_voltage"
-	group: "693226878D58638A"
+	group: ""
 	icon: "gtceu:mv_electric_motor"
 	id: "43E779CEEB25D55B"
-	order_index: 2
+	order_index: 4
 	quest_links: [{
 		id: "6FCAD016C795DE93"
 		linked_quest: "7567E885B7166603"
@@ -43,20 +43,6 @@
 			icon: "gtceu:pyrolyse_oven"
 			id: "53DC6E32C41C94C3"
 			optional: true
-			rewards: [
-				{
-					count: 64
-					id: "01DA9E28ADAD19B3"
-					item: "minecraft:coal"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "3F4EFE922903E799"
-					item: "minecraft:oak_log"
-					type: "item"
-				}
-			]
 			shape: "square"
 			size: 0.75d
 			subtitle: "Thermal Decomposition"
@@ -465,12 +451,6 @@
 			]
 			icon: "minecraft:clay_ball"
 			id: "2273DD7E5CD49017"
-			rewards: [{
-				count: 4
-				id: "52A043C0F3795CC8"
-				item: "gtceu:mv_battery_hull"
-				type: "item"
-			}]
 			size: 0.66d
 			subtitle: "Clay is an extremely &mbalanced&r useful material for electrolysis"
 			tasks: [
@@ -524,17 +504,6 @@
 			]
 			icon: "gtceu:mv_miner"
 			id: "5C94CF50090D7DA0"
-			rewards: [{
-				id: "2C877DA425BBFC5D"
-				item: {
-					Count: 1b
-					id: "minecraft:wooden_pickaxe"
-					tag: {
-						Damage: 58
-					}
-				}
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			tasks: [{
@@ -577,12 +546,6 @@
 			]
 			icon: "gtceu:vanadium_steel_ingot"
 			id: "682C26579EDDCA76"
-			rewards: [{
-				count: 16
-				id: "2000E0E550142D12"
-				item: "gtceu:blue_steel_ingot"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			tasks: [{
@@ -672,20 +635,6 @@
 			]
 			icon: "gtceu:mv_cutter"
 			id: "5CBBBFD1FBBE95CE"
-			rewards: [{
-				id: "6FD8201A5A3EF40C"
-				item: {
-					Count: 1b
-					id: "gtceu:universal_fluid_cell"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "gtceu:lubricant"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "Upgrades, people, upgrades!"
@@ -733,12 +682,6 @@
 			]
 			icon: "gtceu:mv_energy_input_hatch"
 			id: "2AD44111B9B39C90"
-			rewards: [{
-				count: 24
-				id: "42B5E0E29F987E16"
-				item: "gtceu:annealed_copper_single_wire"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "LV is so old-school!"
@@ -816,7 +759,6 @@
 			dependencies: [
 				"1646BF9194100E57"
 				"2AD44111B9B39C90"
-				"66805BB78A828C00"
 			]
 			description: [
 				"&3Kanthal Heating Coils&r are the next major step in progression. They increase the temperature of your &3Blast Furnace&r to &d2,700K&r, allowing you to process new materials. They may also &eaccelerate&r less hot recipes - check the quest to the top-left for details."
@@ -1033,12 +975,6 @@
 			]
 			icon: "gtceu:mv_circuit_assembler"
 			id: "0DE5C3FBC9A6A690"
-			rewards: [{
-				count: 40
-				id: "484745BF48673036"
-				item: "gtceu:soldering_alloy_dust"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "Yippee, yahoo"
@@ -1381,12 +1317,6 @@
 			]
 			icon: "gtceu:iron_iii_chloride_bucket"
 			id: "4353AB0E20601AEC"
-			rewards: [{
-				count: 20
-				id: "5A23AC1DA33FDC71"
-				item: "gtceu:salt_ore"
-				type: "item"
-			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "Let's etch some Copper off Circuit Boards!"
@@ -1553,18 +1483,6 @@
 			]
 			icon: "gtceu:mv_extruder"
 			id: "22B5AD670496C02D"
-			rewards: [
-				{
-					id: "0E6CAED1ED976D9E"
-					item: "gtceu:small_gear_extruder_mold"
-					type: "item"
-				}
-				{
-					id: "0A0BD551FFBC2E1C"
-					item: "gtceu:gear_extruder_mold"
-					type: "item"
-				}
-			]
 			shape: "square"
 			size: 0.75d
 			subtitle: "The biggest upgrade you'll make"
@@ -1735,19 +1653,6 @@
 			id: "575B07D390D9D079"
 			size: 0.66d
 			tasks: [
-				{
-					id: "7B6C7E6C11D68E06"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ores/oilsands"
-						}
-					}
-					optional_task: true
-					title: "Oilsands Ore"
-					type: "item"
-				}
 				{
 					id: "1838F842C9D12880"
 					item: "gtceu:oilsands_dust"
@@ -1947,20 +1852,6 @@
 			]
 			icon: "gtceu:diesel_bucket"
 			id: "45769156F4253C86"
-			rewards: [{
-				id: "0D81E63BB7BAD94B"
-				item: {
-					Count: 1b
-					id: "gtceu:steel_fluid_cell"
-					tag: {
-						Fluid: {
-							Amount: 8000
-							FluidName: "gtceu:oil_heavy"
-						}
-					}
-				}
-				type: "item"
-			}]
 			size: 0.66d
 			subtitle: "Mother, how is diesel made?"
 			tasks: [{
@@ -2142,35 +2033,6 @@
 			title: "Long-Distance Fluids"
 			x: -3.375d
 			y: -0.75d
-		}
-		{
-			dependencies: ["682C26579EDDCA76"]
-			description: [
-				"Tired of running around your base yet? &3Travel Anchors&r make their introduction in the latest update!"
-				""
-				"Aim the &aTravel Staff&r at a placed Anchor, then &6sneak-right-click&r to teleport on top. You can &bcustomise the appearance&r of a Travel Anchor by right-clicking it with a block in your off-hand, and you can &9rename&r Anchors in their GUI."
-				""
-				"The &dEnder Pearls&r necessary to craft more Anchors won't be available yet - take a small handful of Anchors to make life a &olittle&r easier."
-			]
-			icon: "travelanchors:travel_anchor"
-			id: "350E8A014DD8C838"
-			rewards: [{
-				count: 3
-				id: "45B4F45CE10CD806"
-				item: "travelanchors:travel_anchor"
-				type: "item"
-			}]
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "pshhh... nothin personnel... kid"
-			tasks: [{
-				id: "132FA856BB60C546"
-				item: "travelanchors:travel_staff"
-				type: "item"
-			}]
-			title: "Travel Anchors"
-			x: 1.125d
-			y: 3.75d
 		}
 	]
 	subtitle: ["Venture into petrochemistry and refine electronics"]
