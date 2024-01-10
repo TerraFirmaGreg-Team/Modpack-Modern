@@ -1040,6 +1040,13 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Вырезка из резины
+
+    // event.recipes.tfc.knapping('gtceu:rubber_ring', 'tfg:rubber', ['XXX', 'X X', 'XXX'])
+    //    .ingredient('gtceu:rubber_plate')
+
+    //#endregion
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({id: 'gtceu:arc_furnace/arc_primitive_blast_furnace'})
     event.remove({id: 'gtceu:macerator/macerate_primitive_blast_furnace'})

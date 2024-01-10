@@ -6,6 +6,7 @@ const registerTFCDataForTFC = (event) => {
     registerTFCFuels(event)
     registerTFCLampFuels(event)
     registerTFCFertilizers(event)
+    registerTFCKnappingTypes(event)
     registerTFCItemSize(event)
 }
 
@@ -120,6 +121,12 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:phosphorus_tiny_dust', null, 0.016, null)
     event.fertilizer('gtceu:phosphorus_small_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
+}
+
+const registerTFCKnappingTypes = (event) => {
+    // event.knappingType('gtceu:rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:rubber_plate', 'tfg:rubber')
+    // event.knappingType('gtceu:styrene_butadiene_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:styrene_butadiene_rubber_plate', 'tfg:styrene_butadiene_rubber_plate')
+    // event.knappingType('gtceu:silicone_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:silicone_rubber_plate', 'tfg:silicone_rubber_plate')
 }
 
 const registerTFCItemSize = (event) => {
