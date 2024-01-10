@@ -13,6 +13,7 @@ JEIEvents.hideItems(event => {
     hideRailWaysStuff(event)
     hideCreateAdditionsStuff(event)
     hideChiselAndBitsStuff(event)
+    hideFTBQuestsStuff(event)
 })
 
 // REIEvents.groupEntries(event => {
@@ -20,10 +21,20 @@ JEIEvents.hideItems(event => {
 //     groupTFCStuff(event)
 // })
 
+
 JEIEvents.removeCategories(event => {
-    registerMinecraftCategories(event)
-    registerGTCEUCategories(event)
-    registerMoreRedCategories(event)
+    // НЕ РАБОТАЕТ СУКА, РАЗРАБ НАСРАЛ!
+
+    // registerMinecraftCategories(event)
+    // registerGTCEUCategories(event)
+    // registerMoreRedCategories(event)
+    // 'jumbofurnace:jumbo_furnace_upgrade, 
+    // event.remove('minecraft:campfire_cooking')
+    // event.remove('jumbofurnace:jumbo_smelting')
+
+    // console.log(event.getCategoryIds())
+
+    // event.getCategoryIds()
 })
 
 JEIEvents.hideFluids(event => {
