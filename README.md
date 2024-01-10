@@ -13,11 +13,11 @@
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
   <br/>
   <p align="center">
-    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/wiki">Explore the wiki</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/wiki">Explore the wiki</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues">Report Bugs</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/issues">Report Bugs</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/issues">Request Features</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/issues">Request Features</a>
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/projects/10">Roadmap</a>
   </p>
@@ -45,4 +45,4 @@ Also in the modpack there are other interesting mods that will allow you to pass
 
 and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
 
-![img](https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.12.x/assets/55663835/0a71cfbf-c519-45b8-820c-c5ad6bf90e46)
+![img](https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/assets/55663835/0a71cfbf-c519-45b8-820c-c5ad6bf90e46)
