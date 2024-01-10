@@ -80,6 +80,24 @@ const registerFirmaLifeRecipes = (event) => {
         .tier(3)
         .id('firmalife:anvil/pie_pan')
 
+    // Jarring Station
+    event.shaped('firmalife:jarring_station', [
+        'A A',
+        'BBB'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: 'firmalife:treated_lumber'  
+    }).id('firmalife:crafting/jarring_station')
+
+    // Vat
+    event.shaped('firmalife:vat', [
+        'A A',
+        'BAB'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: 'firmalife:beeswax'  
+    }).id('firmalife:crafting/vat')
+
     //#region Рецепты электрической теплицы
     
     // Дерево
