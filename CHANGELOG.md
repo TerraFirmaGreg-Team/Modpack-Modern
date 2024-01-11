@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.5.0] - 12.01.2024
 ### Изменения
 - Исправлены текстуры ванильных кусков руды.
 - Исправлены рецепты декрафта через продувку в воде из create у грязной пыль.
@@ -25,6 +25,23 @@
 - Добавлены в TFC металлы Tin Alloy и Red Alloy, теперь их можно смешать и отлить в форму.
 - Интеграция FirmaLife насколько это возможно (Удалены рецепты теплицы из нержавейки + скрыты некоторые блоки/жидкости) + заменены рецепты использующие нержавейку (что?).
 - Некоторое обновление квестов.
+### Обновленные моды
+- appliedenergistics2 -> 15.0.19
+- embeddiumplus -> 1.2.1
+- gtceu-forge -> 1.0.20.b
+- kubejs -> 2001.6.4-build.120
+- PuzzlesLib -> 8.1.13
+- smoothboot(reloaded) -> 0.0.4
+- TerraFirmaGreg-Core -> 0.2.11.
+### Новые моды
+- Controlling
+- emi
+- no-report-button
+- Searchables
+- textrues embeddium options
+### Удаленные моды
+- REIPluginCompatibilities
+- RoughlyEnoughItems
 
 ## [0.4.3] - 06.01.2024
 ### Изменения
