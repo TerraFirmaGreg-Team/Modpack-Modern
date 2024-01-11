@@ -24,6 +24,9 @@ jobs:
     name: Discord Message
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        
       - name: Changelog Parser
         id: changelog
         uses: coditory/changelog-parser@v1.0.2
