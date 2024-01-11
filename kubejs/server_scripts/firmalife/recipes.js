@@ -1,7 +1,23 @@
 // priority: 0
 
 const registerFirmaLifeRecipes = (event) => {
-    
+
+    //#region Нержавеющая теплица
+
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_wall' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_roof' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof_top' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_trapdoor' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_door' })
+    event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_port' })
+
+    //#endregion
+
+    event.remove({ id: 'firmalife:crafting/compost_tumbler' })
+    event.remove({ id: 'firmalife:crafting/pumping_station' })
+
     // - Chromium
     
     // Ingot 
@@ -63,6 +79,24 @@ const registerFirmaLifeRecipes = (event) => {
     event.recipes.tfc.anvil('4x firmalife:pie_pan', '#forge:plates/wrought_iron', ["hit_last", "hit_second_last", "draw_third_last"])
         .tier(3)
         .id('firmalife:anvil/pie_pan')
+
+    // Jarring Station
+    event.shaped('firmalife:jarring_station', [
+        'A A',
+        'BBB'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: 'firmalife:treated_lumber'  
+    }).id('firmalife:crafting/jarring_station')
+
+    // Vat
+    event.shaped('firmalife:vat', [
+        'A A',
+        'BAB'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: 'firmalife:beeswax'  
+    }).id('firmalife:crafting/vat')
 
     //#region Рецепты электрической теплицы
     

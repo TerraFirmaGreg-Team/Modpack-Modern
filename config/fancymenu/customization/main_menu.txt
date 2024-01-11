@@ -42,12 +42,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
   action = hidebutton
 }
@@ -82,23 +76,11 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   orientation = mid-centered
   x = -55
   action = movebutton
   y = 18
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
 }
 
 customization {
@@ -122,25 +104,12 @@ customization {
   y = -51
 }
 
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-}
-
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
   x = -55
   action = movebutton
   y = -5
-}
-
-customization {
-  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
 }
 
 customization {
@@ -226,15 +195,15 @@ customization {
 
 customization {
   orientation = mid-centered
+  loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = joinserver;tfg2.terrafirmagreg.su%btnaction_splitter_fm%
-  label = Offical Server
-  loopbackgroundanimations = true
   x = 47
   width = 98
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
   y = -28
+  label = Offical Server
   height = 20
 }
 
@@ -288,7 +257,7 @@ customization {
   backgroundhovered = kubejs/assets/tfg/textures/gui/github_logo_hovered.png
   label = 
   loopbackgroundanimations = true
-  x = 100
+  x = 99
   width = 20
   action = addbutton
   actionid = 91b4ae84-eed0-47a3-8fe9-6957c02d2c621699691709167
@@ -304,7 +273,7 @@ customization {
   backgroundhovered = kubejs/assets/tfg/textures/gui/modrinth_logo_hovered.png
   label = 
   loopbackgroundanimations = true
-  x = 72
+  x = 73
   width = 20
   action = addbutton
   actionid = 6514e312-8243-47af-a516-89743d8ca1af1699692677651
@@ -331,6 +300,4 @@ customization {
   alignment = left
   height = 56
 }
-
-
 

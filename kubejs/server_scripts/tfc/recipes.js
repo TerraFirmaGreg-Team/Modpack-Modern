@@ -43,6 +43,11 @@ const registerTFCRecipes = (event) => {
             event.recipes.tfc.heating(`tfc:metal/double_ingot/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
                 .id(`tfc:heating/metal/${metal}_double_ingot`)
+
+            // Двойной слиток -> Пластина
+            event.recipes.tfc.anvil(`gtceu:${metal}_plate`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'hit_second_last', 'hit_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_sheet`)
         }
 
         if (metalSpecs.props.includes(global.PART_GEN)) {
@@ -57,41 +62,63 @@ const registerTFCRecipes = (event) => {
             // Удалание рецептов полублоков
             event.remove({ id: `tfc:crafting/metal/block/${metal}_slab` })
             event.remove({ id: `tfc:heating/metal/${metal}_block_slab` })
+        }
 
+        if (metalSpecs.props.includes(global.BLOCK_GEN)) {
             // Декрафт блока в жидкость
             event.recipes.tfc.heating(`#forge:storage_blocks/${metal}`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 1296))
                 .id(`tfc:heating/metal/${metal}_block`)
+        }
+
+        if (metalSpecs.props.includes(global.ROD_GEN)) {
+            // Слиток -> 2 Стержня
+            event.recipes.tfc.anvil(`2x gtceu:${metal}_rod`, `#forge:ingots/${metal}`, ['bend_last', 'draw_second_last', 'draw_third_last'])
+                .tier(metalSpecs.tier)
+                .id(`tfc:anvil/${metal}_rod`)
 
             // Декрафт стержня в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_rod`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 72))
                 .id(`tfc:heating/metal/${metal}_rod`)
 
-            // Двойной слиток -> Пластина
-            event.recipes.tfc.anvil(`gtceu:${metal}_plate`, `tfc:metal/double_ingot/${metal}`, ['hit_last', 'hit_second_last', 'hit_third_last'])
-                .tier(metalSpecs.tier)
-                .id(`tfc:anvil/${metal}_sheet`)
+            let long_rod = Item.of(`gtceu:${metal}_long_rod`);
+            
+            if (!long_rod.isEmpty()) {
+                // Декрафт длинного стержня в жидкость
+                event.recipes.tfc.heating(`gtceu:${metal}_long_rod`, metalSpecs.melt_temp)
+                    .resultFluid(Fluid.of(metalSpecs.output_fluid, 144))
+                    .id(`tfc:heating/metal/${metal}_long_rod`)
 
+                // Стержни -> Длинный стержень
+                event.recipes.tfc.welding(`gtceu:${metal}_long_rod`, `#forge:rods/${metal}`, `#forge:rods/${metal}`)
+                    .tier(metalSpecs.tier)
+                    .id(`tfc:anvil/${metal}_long_rod`)
+            }
+            
+        }
+
+        if (metalSpecs.props.includes(global.PLATE_GEN)) {
             // Декрафт пластины в жидкость
             event.recipes.tfc.heating(`gtceu:${metal}_plate`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 144))
                 .id(`tfc:heating/metal/${metal}_sheet`)
+        }
 
-            // Две пластины -> Двойная пластина
-            event.recipes.tfc.welding(`gtceu:${metal}_double_plate`, `gtceu:${metal}_plate`, `gtceu:${metal}_plate`)
-                .tier(metalSpecs.tier)
-                .id(`tfc:welding/${metal}_double_sheet`)
+        if (metalSpecs.props.includes(global.DOUBLE_PLATE_GEN)) {
+            let double_plate = Item.of(`gtceu:${metal}_double_plate`)
 
-            // Слиток -> 2 Стержня
-            event.recipes.tfc.anvil(`2x gtceu:${metal}_rod`, `#forge:ingots/${metal}`, ['bend_last', 'draw_second_last', 'draw_third_last'])
-                .tier(metalSpecs.tier)
-                .id(`tfc:anvil/${metal}_rod`)
+            if (!double_plate.isEmpty()) {
+                // Декрафт двойных пластин
+                event.recipes.tfc.heating(`gtceu:${metal}_double_plate`, metalSpecs.melt_temp)
+                    .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                    .id(`tfc:heating/metal/${metal}_double_sheet`)
 
-            // Декрафт двойных пластин
-            event.recipes.tfc.heating(`gtceu:${metal}_double_plate`, metalSpecs.melt_temp)
-                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
-                .id(`tfc:heating/metal/${metal}_double_sheet`)
+                // Две пластины -> Двойная пластина
+                event.recipes.tfc.welding(`gtceu:${metal}_double_plate`, `gtceu:${metal}_plate`, `gtceu:${metal}_plate`)
+                    .tier(metalSpecs.tier)
+                    .id(`tfc:welding/${metal}_double_sheet`)
+            }
         }
 
         if (metalSpecs.props.includes(global.ARMOR_GEN)) {
@@ -211,17 +238,15 @@ const registerTFCRecipes = (event) => {
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 36))
                 .id(`tfc:heating/metal/${metal}_bolt`)
 
+            // Стержень -> Болт
             event.recipes.tfc.anvil(`2x gtceu:${metal}_bolt`, `#forge:rods/${metal}`, ['punch_last', 'draw_second_last', 'draw_third_last'])
                 .tier(metalSpecs.tier)
                 .id(`tfc:anvil/${metal}_bolt`)
-
-            // Стержень -> Болт
 
             // Винт -> Металл
             event.recipes.tfc.heating(`gtceu:${metal}_screw`, metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, 72))
                 .id(`tfc:heating/metal/${metal}_screw`)
-
 
             // Стержень -> Винт
             event.recipes.tfc.anvil(`gtceu:${metal}_screw`, `#forge:rods/${metal}`, ['punch_last', 'punch_second_last', 'shrink_third_last'])
@@ -618,6 +643,48 @@ const registerTFCRecipes = (event) => {
 
             //#endregion
 
+            //#region Молот шахтера
+
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_mining_hammer`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_mining_hammer`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(`gtceu:${metal}_mining_hammer_head`, `#forge:double_ingots/${metal}`, ['punch_last', 'shrink_not_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_mining_hammer_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_mining_hammer_head`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .id(`tfc:heating/metal/${metal}_mining_hammer_head`)
+
+            //#endregion
+
+            //#region Большая лопата
+            
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_spade`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${metal}_spade`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(`gtceu:${metal}_spade_head`, `#forge:double_ingots/${metal}`, ['punch_last', 'hit_not_last'])
+                .tier(metalSpecs.tier)
+                .bonus(true)
+                .id(`tfc:anvil/${metal}_spade_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(`gtceu:${metal}_spade_head`, metalSpecs.melt_temp)
+                .resultFluid(Fluid.of(metalSpecs.output_fluid, 288))
+                .id(`tfc:heating/metal/${metal}_spade_head`)
+
+            //#endregion
+
             //#region Ножницы 
 
             // Сварка оголовий
@@ -798,7 +865,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfg:heating/small_dust/${metal}`)
 
             // Декрафт пыли
-            event.recipes.tfc.heating(`gtceu:${metal}_dust`, metalSpecs.melt_temp)
+            event.recipes.tfc.heating(Item.of(`#forge:dusts/${metal}`), metalSpecs.melt_temp)
                 .resultFluid(Fluid.of(metalSpecs.output_fluid, global.calcAmountOfMetal(144, metalSpecs.percent_of_material)))
                 .id(`tfg:heating/dust/${metal}`)
         }
@@ -828,6 +895,20 @@ const registerTFCRecipes = (event) => {
         }
 
     })
+
+    //#region Новые рецепты сплавов
+
+    event.recipes.tfc.alloy('tfg:red_alloy', [
+        TFC.alloyPart('tfg:redstone', 0.15, 0.25),
+        TFC.alloyPart('tfc:copper', 0.75, 0.85)
+    ]).id('tfg:alloy/red_alloy')
+
+    event.recipes.tfc.alloy('tfg:tin_alloy', [
+        TFC.alloyPart('tfc:tin', 0.45, 0.55),
+        TFC.alloyPart('tfc:cast_iron', 0.45, 0.55)
+    ]).id('tfg:alloy/tin_alloy')
+
+    //#endregion
 
     //#region Фиксы рецептов предметов из Cast Iron
 
@@ -886,9 +967,17 @@ const registerTFCRecipes = (event) => {
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
         .id(`tfg:heating/iron_dust`)
 
+    event.recipes.tfc.heating('#forge:poor_raw_materials/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 24))
+        .id(`tfg:heating/poor_raw_iron`)
+
     event.recipes.tfc.heating('#forge:raw_materials/iron', 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 36))
         .id(`tfg:heating/raw_iron`)
+
+    event.recipes.tfc.heating('#forge:rich_raw_materials/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 48))
+        .id(`tfg:heating/rich_raw_iron`)
 
     event.recipes.tfc.heating('#forge:ingots/iron', 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
@@ -2525,16 +2614,13 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.collapse('#tfg:rock_walls').id('tfg:collapse/rock_walls')
 
     global.TFC_STONE_TYPES.forEach(stoneType => {
-        let oresToCollapse = []
-        
-        GTRegistries.MATERIALS.forEach(material => {
-            if (material.hasProperty(PropertyKey.ORE)) {
-                oresToCollapse.push(`gtceu:${stoneType}_${material}_ore`)
-            }
-        })
-
-        event.recipes.tfc.collapse(`tfc:rock/cobble/${stoneType}`, TFC.blockIngredient(oresToCollapse))
-            .id(`tfg:collapse/${stoneType}_gt_ores`)
+        event.custom({
+            type: "tfc:collapse",
+            ingredient: {
+                tag: `forge:ores_in_ground/${stoneType}`
+            },
+            result: `tfc:rock/cobble/${stoneType}`
+        }).id(`tfg:collapse/${stoneType}_gt_ores`)
     })
     
     //#endregion

@@ -1,0 +1,14 @@
+{
+  "firstLoad": false,
+  "noAggressiveProbing": true,
+  "docsTimestamp": 1704370339573,
+  "allowRegistryObjectDumps": true,
+  "allowRegistryLiteralDumps": true,
+  "requireSingleAndPerm": true,
+  "enabled": true,
+  "modChanged": false,
+  "disableRecipeJsonDump": true,
+  "dumpJSONIntermediates": false,
+  "pullSchema": false,
+  "version": 1
+}

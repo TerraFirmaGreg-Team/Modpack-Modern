@@ -110,8 +110,6 @@ const groupGTCEUStuff = (event) => {
     event.groupItemsByTag('tfg:rei_groups/restrictive_pipes/normal', 'Normal Resctrictive Pipes', 'forge:restrictive_pipes/normal')
     event.groupItemsByTag('tfg:rei_groups/restrictive_pipes/large', 'Large Resctrictive Pipes', 'forge:restrictive_pipes/large')
     event.groupItemsByTag('tfg:rei_groups/restrictive_pipes/huge', 'Huge Resctrictive Pipes', 'forge:restrictive_pipes/huge')
-
-
     
     event.groupItems("tfg:rei_groups/boiler", "Boiler", [/gtceu:.*_boiler/]);
     event.groupItems("tfg:rei_groups/diode", "Diode", [/gtceu:(?!.*smd).*_diode/]);

@@ -15,7 +15,7 @@
         "with": [
           {
             "block": "gtceu:rhyolite_chalcopyrite_ore",
-            "weight": 70
+            "weight": 55
           },
           {
             "block": "gtceu:rhyolite_zeolite_ore",
@@ -24,6 +24,10 @@
           {
             "block": "gtceu:rhyolite_cassiterite_ore",
             "weight": 5
+          },
+          {
+            "block": "gtceu:rhyolite_realgar_ore",
+            "weight": 15
           }
         ]
       },
@@ -34,7 +38,7 @@
         "with": [
           {
             "block": "gtceu:basalt_chalcopyrite_ore",
-            "weight": 70
+            "weight": 55
           },
           {
             "block": "gtceu:basalt_zeolite_ore",
@@ -43,6 +47,10 @@
           {
             "block": "gtceu:basalt_cassiterite_ore",
             "weight": 5
+          },
+          {
+            "block": "gtceu:basalt_realgar_ore",
+            "weight": 15
           }
         ]
       },
@@ -53,7 +61,7 @@
         "with": [
           {
             "block": "gtceu:andesite_chalcopyrite_ore",
-            "weight": 70
+            "weight": 55
           },
           {
             "block": "gtceu:andesite_zeolite_ore",
@@ -62,6 +70,10 @@
           {
             "block": "gtceu:andesite_cassiterite_ore",
             "weight": 5
+          },
+          {
+            "block": "gtceu:andesite_realgar_ore",
+            "weight": 15
           }
         ]
       },
@@ -72,7 +84,7 @@
         "with": [
           {
             "block": "gtceu:dacite_chalcopyrite_ore",
-            "weight": 70
+            "weight": 55
           },
           {
             "block": "gtceu:dacite_zeolite_ore",
@@ -81,6 +93,10 @@
           {
             "block": "gtceu:dacite_cassiterite_ore",
             "weight": 5
+          },
+          {
+            "block": "gtceu:dacite_realgar_ore",
+            "weight": 15
           }
         ]
       }

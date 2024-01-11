@@ -8,16 +8,17 @@ const registerTFCItemTags = (event) => {
     })
 
     // Теги для соответствия инструментов TFC и GT
-    event.add('tfc:axes', '#minecraft:axes')
-    event.add('tfc:hammers', '#forge:tools/hammers')
-    event.add('tfc:hoes', '#minecraft:hoes')
-    event.add('tfc:knives', '#forge:tools/knives')
+    event.add('tfc:swords', '#minecraft:swords')
     event.add('tfc:pickaxes', '#minecraft:pickaxes')
+    event.add('tfc:axes', '#minecraft:axes')
+    event.add('tfc:shovels', '#minecraft:shovels')
+    event.add('tfc:hoes', '#minecraft:hoes')
+    
+    event.add('tfc:hammers', '#forge:tools/hammers')
+    event.add('tfc:knives', '#forge:tools/knives')
     event.add('tfc:saws', '#forge:tools/saws')
     event.add('tfc:scythes', '#forge:tools/scythes')
-    event.add('tfc:shovels', '#minecraft:shovels')
-    event.add('tfc:swords', '#minecraft:swords')
-
+    
     event.add('tfc:usable_on_tool_rack', '#tfc:axes')
     event.add('tfc:usable_on_tool_rack', '#tfc:hammers')
     event.add('tfc:usable_on_tool_rack', '#tfc:hoes')
@@ -38,8 +39,6 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/plungers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
-
-    event.add('forge:tools/aoe', '#forge:tools/mining_hammers')
     
     // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')
@@ -228,6 +227,9 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_ingot_mold', "gtceu:blue_steel")
     event.add('tfc:usable_in_ingot_mold', "gtceu:red_steel")
 
+    event.add('tfc:usable_in_ingot_mold', "gtceu:red_alloy")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:tin_alloy")
+
     event.add('tfc:usable_in_bell_mold', "gtceu:bronze")
     event.add('tfc:usable_in_bell_mold', "gtceu:gold")
     event.add('tfc:usable_in_bell_mold', "gtceu:brass")
@@ -243,6 +245,7 @@ const registerTFCFluidTags = (event) => {
 
     event.add('tfc:usable_in_wooden_bucket', "gtceu:latex")
 
+    event.add('tfc:usable_in_barrel', 'gtceu:creosote')
     event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
@@ -317,6 +320,8 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_gold')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_graphite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_hematite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_spodumene')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oil_sands')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_lapis')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_limonite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_lubricant')

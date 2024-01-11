@@ -1,6 +1,6 @@
 // priority: 1
 
-REIEvents.hide('item', event => {
+JEIEvents.hideItems(event => {
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideFirmaLifeStuff(event)
@@ -13,20 +13,31 @@ REIEvents.hide('item', event => {
     hideRailWaysStuff(event)
     hideCreateAdditionsStuff(event)
     hideChiselAndBitsStuff(event)
+    hideFTBQuestsStuff(event)
 })
 
-REIEvents.groupEntries(event => {
-    groupGTCEUStuff(event)
-    groupTFCStuff(event)
+// REIEvents.groupEntries(event => {
+//     groupGTCEUStuff(event)
+//     groupTFCStuff(event)
+// })
+
+
+JEIEvents.removeCategories(event => {
+    // НЕ РАБОТАЕТ СУКА, РАЗРАБ НАСРАЛ!
+
+    // registerMinecraftCategories(event)
+    // registerGTCEUCategories(event)
+    // registerMoreRedCategories(event)
+    // 'jumbofurnace:jumbo_furnace_upgrade, 
+    // event.remove('minecraft:campfire_cooking')
+    // event.remove('jumbofurnace:jumbo_smelting')
+
+    // console.log(event.getCategoryIds())
+
+    // event.getCategoryIds()
 })
 
-REIEvents.removeCategories(event => {
-    registerMinecraftCategories(event)
-    registerGTCEUCategories(event)
-    registerMoreRedCategories(event)
-})
-
-REIEvents.hide('fluid', event => {
+JEIEvents.hideFluids(event => {
     hideTFCFluids(event)
     hideFirmaLifeFluids(event)
 

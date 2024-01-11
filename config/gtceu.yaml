@@ -138,6 +138,10 @@ machines:
   # Default: false
   doTerrainExplosion: true
 
+  # Energy use multiplier for electric items.
+  # Default: 100
+  energyUsageMultiplier: 100
+
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
@@ -215,6 +219,14 @@ client:
   # Default: true
   machinesEmissiveTextures: true
 
+  # Whether or not sounds should be played when using tools outside of crafting.
+  # Default: true
+  toolUseSounds: true
+
+  # Whether or not sounds should be played when crafting with tools.
+  # Default: true
+  toolCraftingSounds: true
+
   # The default color to overlay onto machines.
   # #FFFFFF is no coloring (default).
   # #D2DCFF is the classic blue from GT5.
@@ -224,6 +236,12 @@ client:
   # Disable it if you have issues with rendering multiblocks.
   # Default: true
   useVBO: true
+
+# Config options for Tools and Armor
+tools:
+  # Random chance for electric tools to take actual damage
+  # Default: 10%
+  rngDamageElectricTools: 10
 
 # Config options for Mod Compatibility
 compat:

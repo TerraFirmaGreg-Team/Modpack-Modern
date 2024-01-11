@@ -6,6 +6,7 @@ const registerTFCDataForTFC = (event) => {
     registerTFCFuels(event)
     registerTFCLampFuels(event)
     registerTFCFertilizers(event)
+    registerTFCKnappingTypes(event)
     registerTFCItemSize(event)
 }
 
@@ -33,6 +34,10 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:black_steel', 1485, 0.00857, '#forge:ingots/black_steel', '#forge:double_ingots/black_steel', '#forge:plates/black_steel', 5, 'tfc:black_steel')
     event.metal('gtceu:blue_steel', 1540, 0.00857, '#forge:ingots/blue_steel', '#forge:double_ingots/blue_steel', '#forge:plates/blue_steel', 6, 'tfc:blue_steel')
     event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
+
+    event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
+    event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
+    event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
 
 const registerTFCHeats = (event) => {
@@ -103,7 +108,7 @@ const registerTFCFuels = (event) => {
 }
 
 const registerTFCLampFuels = (event) => {
-    event.lampFuel('gtceu:creosote', '#tfc:lamps', 1)
+    event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
 }
 
 const registerTFCFertilizers = (event) => {
@@ -116,6 +121,12 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:phosphorus_tiny_dust', null, 0.016, null)
     event.fertilizer('gtceu:phosphorus_small_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
+}
+
+const registerTFCKnappingTypes = (event) => {
+    // event.knappingType('gtceu:rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:rubber_plate', 'tfg:rubber')
+    // event.knappingType('gtceu:styrene_butadiene_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:styrene_butadiene_rubber_plate', 'tfg:styrene_butadiene_rubber_plate')
+    // event.knappingType('gtceu:silicone_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:silicone_rubber_plate', 'tfg:silicone_rubber_plate')
 }
 
 const registerTFCItemSize = (event) => {

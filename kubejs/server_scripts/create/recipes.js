@@ -92,6 +92,7 @@ const registerCreateRecipes = (event) => {
         { id: 'create:compat/ae2/mixing/fluix_crystal' },
         { id: 'create:sequenced_assembly/precision_mechanism' },
         { id: 'create:crafting/logistics/content_observer' },
+        { id: 'create:milling/bone' },
     ], mod: 'create' })
 
     // Пушка для постройки схематик
@@ -687,12 +688,12 @@ const registerCreateRecipes = (event) => {
     ], {
         A: '#forge:chests/wooden',
         B: '#forge:sheets/wrought_iron',
-        C: '#forge:screw/steel',
+        C: '#forge:screws/steel',
         D: '#forge:tools/screwdrivers'
     }).id('tfg:create/shaped/item_vault')
 
     event.recipes.gtceu.assembler('tfg:create/item_vault')             
-        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screw/steel')
+        .itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
         .circuit(3)
         .itemOutputs('create:item_vault')
         .duration(200)
@@ -862,7 +863,7 @@ const registerCreateRecipes = (event) => {
         'CDC' 
     ], {
         A: '#forge:plates/copper',
-        B: 'tfc:metal/helmet/copper',
+        B: 'tfc:metal/boots/copper',
         C: '#forge:fluid_pipes/tiny/polyethylene',
         D: '#forge:foils/rubber'
     }).id('tfg:create/shaped/copper_diving_boots')
