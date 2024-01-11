@@ -11,8 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CF_PROJECT_ID: "385053"
-  MODRINTH_PROJECT_ID: "75JuuMzk"
   RELEASE_TYPE: "BETA"
 
 jobs:
@@ -132,7 +130,7 @@ jobs:
           mv -vf .github/buildtools/modpack/modlist.html ./
           mv -vf .github/buildtools/modpack/manifest.json flame/
           find .minecraft/mods -name "probejs-*" -delete;
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/
+          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip mmc
         uses: actions/upload-artifact@v4.0.0
@@ -207,7 +205,7 @@ jobs:
         uses: SwitchAlpha/upload-curseforge-modpack-action@master
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ env.CF_PROJECT_ID }}
+          project-id: ${{ env.CF_MODPACK_ID }}
           modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
           modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
           changelog: ${{ needs.modpack-info.outputs.changelog }}
@@ -243,7 +241,7 @@ jobs:
     #       uses: SwitchAlpha/upload-curseforge-modpack-action@master
     #       with:
     #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
-    #         project-id: ${{ env.MODRINTH_PROJECT_ID }}
+    #         project-id: ${{ env.MODRINTH_MODPACK_ID }}
     #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mrd.zip
     #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
     #         changelog: "${{ needs.modpack-info.outputs.changelog }}"
@@ -290,7 +288,7 @@ jobs:
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
           embed-title: Release ${{ needs.modpack-info.outputs.project_version }}
-          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ needs.modpack-info.outputs.project_version }}
+          embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.modpack-info.outputs.project_version }}
           embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
