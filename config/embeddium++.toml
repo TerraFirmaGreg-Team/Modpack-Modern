@@ -49,7 +49,7 @@
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
 				cullingDistanceX = 4096
-				#List of all entities to be ignored by distance culling
+				#List of all Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
 				#Example 1: "minecraft:bat" - Ignores bats only
 				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
@@ -67,6 +67,11 @@
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
 				cullingDistanceX = 4096
+				#List of all Block Entities to be ignored by distance culling
+				#Uses ResourceLocation to identify it
+				#Example 1: "minecraft:chest" - Ignores chests only
+				#Example 2: "ae2:*" - ignores all Block entities from Applied Energetics 2
+				whitelist = []
 				#Configure vertical max distance before cull Block entities
 				#Value is raw
 				#Range: 0 ~ 512
