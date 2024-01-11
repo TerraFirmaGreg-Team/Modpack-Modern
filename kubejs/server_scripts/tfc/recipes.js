@@ -967,9 +967,17 @@ const registerTFCRecipes = (event) => {
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
         .id(`tfg:heating/iron_dust`)
 
+    event.recipes.tfc.heating('#forge:poor_raw_materials/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 24))
+        .id(`tfg:heating/poor_raw_iron`)
+
     event.recipes.tfc.heating('#forge:raw_materials/iron', 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 36))
         .id(`tfg:heating/raw_iron`)
+
+    event.recipes.tfc.heating('#forge:rich_raw_materials/iron', 1535)
+        .resultFluid(Fluid.of('tfc:metal/cast_iron', 48))
+        .id(`tfg:heating/rich_raw_iron`)
 
     event.recipes.tfc.heating('#forge:ingots/iron', 1535)
         .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
