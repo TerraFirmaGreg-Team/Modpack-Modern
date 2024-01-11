@@ -2318,24 +2318,41 @@
 		}
 		{
 			dependencies: ["445E060EF3300A49"]
+			description: [
+				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
+				""
+				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
+				"{@pagebreak}"
+				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
+				""
+				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
+				"...and..."
+				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
+				"...AND..."
+				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
+				"{@pagebreak}"
+				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
+				""
+				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
+				""
+				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
+				""
+				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
+				""
+				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
+				""
+				"Make &eone&r of the proposed HP machines to complete this quest."
+			]
 			id: "5C7B69F45F076A79"
 			shape: "gear"
 			size: 3.0d
+			subtitle: "Putting the Steam in Steam Age"
 			tasks: [{
 				id: "2D2CDB71DF062E33"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "gtceu:steel_plate"
-				}
+				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			title: "Переход в стальную эру!"
+			title: "Pressure Cookin'"
 			x: 24.5d
 			y: 24.0d
 		}
@@ -2394,8 +2411,22 @@
 		}
 		{
 			dependencies: ["41DBE0B47E760DC4"]
+			description: [
+				"The &bPrimitive Water Pump&r is an easy way to automatically generate water for your boilers. It doesn't physically pump water from the world, instead generating it &einternally&r. Therefore, you don't need access to a &3body of water&r to make use of it. However, the humidity of the biome does apply a negligible bonus to its water production."
+				""
+				"It's a multiblock, so &5consult JEI&r for the structure. Multiblocks can be previewed in-world if you sneak right-click the \"&a&ocontroller&r\" block with an empty hand (in this case, the controller block is the &bPrimitive Water Pump&r itself)."
+				""
+				"&6Small tip for you:&r no need to worry about your base's biome for now, as your boilers will need very little water to keep up."
+				"{@pagebreak}"
+				"The &cOutput Hatch&r is where water will be generated. You can make it face up or down to auto-output water into your pipes. When you reach &7LV&r or &bMV&r, you can use an Output Hatch from either tier to further boost the Pump's output."
+				""
+				"&2Reminder:&r Use a Wrench to rotate GregTech blocks (sneak right-click)."
+				""
+				"&l&3Lore:&r&o This Multiblock was ported from GT IMPACT, a classic 1.7.10 GregTech modpack."
+			]
 			id: "1D623D93EEDD3C67"
 			size: 2.0d
+			subtitle: "There's no such thing as \"free\" water"
 			tasks: [
 				{
 					id: "24CCB2BF08C5400A"
@@ -2420,6 +2451,7 @@
 					type: "item"
 				}
 			]
+			title: "Primitive Water Pump"
 			x: 32.5d
 			y: 11.0d
 		}

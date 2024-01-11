@@ -6,51 +6,17 @@
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "582A6B4135EABE27"
+		linked_quest: "5C7B69F45F076A79"
+		shape: "gear"
+		size: 3.0d
+		x: -3.0d
+		y: 0.0d
+	}]
 	quests: [
 		{
-			description: [
-				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
-				""
-				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
-				""
-				"Make &eone&r of the proposed HP machines to complete this quest."
-			]
-			icon: "gtceu:hp_steam_compressor"
-			id: "5673089822BFCA70"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Pressure can be good sometimes"
-			tasks: [{
-				id: "77ECBBA179EC9B3F"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:hp_steam_compressor"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hp_steam_alloy_smelter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hp_steam_forge_hammer"
-							}
-						]
-					}
-				}
-				title: "Look at all these HP machines..."
-				type: "item"
-			}]
-			title: "No More Penalty"
-			x: 0.0d
-			y: -2.625d
-		}
-		{
+			dependencies: ["253860AD4DF4224C"]
 			description: [
 				"Mine some &dSulfur&r from the Nether."
 				""
@@ -60,7 +26,7 @@
 			]
 			id: "236C886D50A99785"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "A little bit of exploring never hurt anyone"
 			tasks: [{
 				count: 16L
@@ -69,8 +35,8 @@
 				type: "item"
 			}]
 			title: "S is for Sulfur"
-			x: 5.625d
-			y: -1.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["77EA56D16A9B3BFC"]
@@ -84,7 +50,7 @@
 			icon: "gtceu:lv_electric_motor"
 			id: "5A8F0124E07D5025"
 			shape: "gear"
-			size: 1.2d
+			size: 2.0d
 			subtitle: "Low Voltage beckons..."
 			tasks: [{
 				count: 6L
@@ -94,10 +60,11 @@
 				type: "item"
 			}]
 			title: "The First of Many Motors"
-			x: 6.75d
-			y: -1.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["2658E7679CD42ACD"]
 			description: [
 				"Obtaining paper is both more difficult and less efficient than in vanilla. Thanks, Greg."
 				""
@@ -121,7 +88,7 @@
 			]
 			id: "76B70EF552B35779"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "#realism"
 			tasks: [{
 				count: 4L
@@ -130,11 +97,11 @@
 				type: "item"
 			}]
 			title: "Greg has struck again"
-			x: 7.875d
-			y: -1.5d
+			x: 11.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["5DD49D500327A0E2"]
+			dependencies: ["5C7B69F45F076A79"]
 			description: [
 				"&6GregTech&r can quickly get &4overwhelming&r with the plethora of fluids it introduces, so you may be looking for a way to store them. "
 				""
@@ -150,7 +117,7 @@
 			]
 			id: "2B74E56C9E138F18"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Just kidding, tanks for fluids"
 			tasks: [{
 				id: "5876092FAA1763E0"
@@ -158,47 +125,21 @@
 				type: "item"
 			}]
 			title: "Armoured Tanks"
-			x: -1.125d
-			y: -0.375d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["5DD49D500327A0E2"]
-			description: [
-				"The &bPrimitive Water Pump&r is an easy way to automatically generate water for your boilers. It doesn't physically pump water from the world, instead generating it &einternally&r. Therefore, you don't need access to a &3body of water&r to make use of it. However, the humidity of the biome does apply a negligible bonus to its water production."
-				""
-				"It's a multiblock, so &5consult JEI&r for the structure. Multiblocks can be previewed in-world if you sneak right-click the \"&a&ocontroller&r\" block with an empty hand (in this case, the controller block is the &bPrimitive Water Pump&r itself)."
-				""
-				"&6Small tip for you:&r no need to worry about your base's biome for now, as your boilers will need very little water to keep up."
-				"{@pagebreak}"
-				"The &cOutput Hatch&r is where water will be generated. You can make it face up or down to auto-output water into your pipes. When you reach &7LV&r or &bMV&r, you can use an Output Hatch from either tier to further boost the Pump's output."
-				""
-				"&2Reminder:&r Use a Wrench to rotate GregTech blocks (sneak right-click)."
-				""
-				"&l&3Lore:&r&o This Multiblock was ported from GT IMPACT, a classic 1.7.10 GregTech modpack."
-			]
-			id: "13901DA3D4F5C5A6"
-			shape: "square"
-			size: 0.75d
-			subtitle: "There's no such thing as \"free\" water"
-			tasks: [{
-				id: "03501AB173BA60EE"
-				item: "gtceu:primitive_pump"
-				type: "item"
-			}]
-			title: "Primitive Water Pump"
-			x: 0.0d
-			y: -0.375d
-		}
-		{
+			dependencies: ["5C7B69F45F076A79"]
 			description: [
 				"Make the listed molds for future alloy smelting. Be sure to make &aMolds&r - don't make &cExtruder Shapes&r, as they're used in a different machine."
 				""
 				"The reward for this quest will alleviate &da lot of pain&r when it comes to crafting &bGears&r."
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:ball_casting_mold"
 			id: "22997534983F6812"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Reduce the amount of malding by molding"
 			tasks: [
 				{
@@ -218,8 +159,8 @@
 				}
 			]
 			title: "Malding"
-			x: 2.25d
-			y: -0.375d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["249374557D095913"]
@@ -230,18 +171,19 @@
 			]
 			id: "1436DB89E21264F3"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Steam Extractor extracts..."
 			tasks: [{
 				id: "12A46916B1BC17EC"
-				item: "gtceu:lp_steam_extractor"
+				item: "gtceu:hp_steam_extractor"
 				type: "item"
 			}]
 			title: "Steam Extractor"
-			x: 4.5d
-			y: -0.375d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["6E13B0241CB1D536"]
 			description: [
 				"Grow &dRubber Trees&r and cut them down to get &aSticky Resin&r."
 				""
@@ -249,7 +191,7 @@
 				"{@pagebreak}"
 			]
 			id: "3144DC68B266730C"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Did you think we would force you to use treetaps...?"
 			tasks: [{
 				count: 32L
@@ -258,8 +200,8 @@
 				type: "item"
 			}]
 			title: "Sticky Resin"
-			x: 5.625d
-			y: -0.375d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -278,7 +220,7 @@
 			icon: "gtceu:rubber_ingot"
 			id: "77EA56D16A9B3BFC"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "Put that resin to use!"
 			tasks: [
 				{
@@ -293,8 +235,8 @@
 				}
 			]
 			title: "Rubbering up"
-			x: 6.75d
-			y: -0.375d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -310,7 +252,7 @@
 			]
 			id: "391E853DCE86BFD0"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The easier component for circuits"
 			tasks: [{
 				id: "35CFB9E695DE3549"
@@ -318,11 +260,11 @@
 				type: "item"
 			}]
 			title: "Electronics #1: Resistors"
-			x: 7.875d
-			y: -0.375d
+			x: 9.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["5DD49D500327A0E2"]
+			dependencies: ["5C7B69F45F076A79"]
 			description: [
 				"&bFluid Pipes&r will transport &7Steam&r between machines for you."
 				""
@@ -341,75 +283,26 @@
 			icon: "gtceu:bronze_normal_fluid_pipe"
 			id: "1FFD2242B94A7378"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Liquids, gases... we don't discriminate"
-			tasks: [
-				{
-					id: "006E5756DD2CFB97"
-					item: {
-						Count: 1b
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:bronze_small_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:bronze_normal_fluid_pipe"
-								}
-							]
-						}
-					}
-					title: "Bronze Fluid Pipe"
-					type: "item"
-				}
-				{
-					id: "0D32A1F23F1D94E4"
-					item: "gtceu:bronze_normal_fluid_pipe"
-					type: "item"
-				}
-			]
-			title: "Fluid Pipes"
-			x: -1.125d
-			y: 0.75d
-		}
-		{
-			description: [
-				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
-				""
-				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
-				"{@pagebreak}"
-				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
-				""
-				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
-				"...and..."
-				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
-				"...AND..."
-				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
-				"{@pagebreak}"
-				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
-				""
-				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
-				""
-				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
-			]
-			id: "5DD49D500327A0E2"
-			shape: "square"
-			size: 0.75d
-			subtitle: "Putting the Steam in Steam Age"
 			tasks: [{
-				id: "0F864E85D4956919"
-				item: "gtceu:lp_steam_solid_boiler"
+				id: "5D2E76DBCDE1C86A"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_small_fluid_pipe))"
+					}
+				}
+				title: "Any Bronze Pipe"
 				type: "item"
 			}]
-			title: "Pressure Cookin'"
-			x: 0.0d
-			y: 0.75d
+			title: "Fluid Pipes"
+			x: -2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["5DD49D500327A0E2"]
+			dependencies: ["5C7B69F45F076A79"]
 			description: [
 				"&dSteam Machines&r accept any Steam that is pumped from nearby Boilers into their internal storage tank. They will run recipes from JEI up to 32 EU/t (&7LV&r-tier)."
 				""
@@ -417,15 +310,15 @@
 			]
 			id: "03DBF1961AE21C76"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			tasks: [{
 				id: "03BA041BE9C347FD"
-				item: "gtceu:bronze_machine_casing"
+				item: "gtceu:steel_brick_casing"
 				type: "item"
 			}]
 			title: "Steam Machine Behaviour"
-			x: 1.125d
-			y: 0.75d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -436,16 +329,16 @@
 			]
 			id: "48AED37B4E20A99A"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Alloy Smelter makes alloys..."
 			tasks: [{
 				id: "2F3B195A110E41C2"
-				item: "gtceu:lp_steam_alloy_smelter"
+				item: "gtceu:hp_steam_alloy_smelter"
 				type: "item"
 			}]
 			title: "Steam Alloy Smelter"
-			x: 2.25d
-			y: 0.75d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["249374557D095913"]
@@ -458,7 +351,7 @@
 			]
 			id: "3CF550B81716B8B9"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The harder component for circuits"
 			tasks: [{
 				count: 2L
@@ -467,8 +360,8 @@
 				type: "item"
 			}]
 			title: "Electronics #3: Vacuum Tubes"
-			x: 3.375d
-			y: 0.75d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -497,7 +390,7 @@
 			icon: "minecraft:glass"
 			id: "249374557D095913"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "Must be satisfying, right?"
 			tasks: [
 				{
@@ -512,8 +405,8 @@
 				}
 			]
 			title: "Glass, at last!"
-			x: 3.375d
-			y: -0.375d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["48AED37B4E20A99A"]
@@ -526,7 +419,7 @@
 			]
 			id: "54AF8696674766B4"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "A completely fictional alloy"
 			tasks: [{
 				id: "4D3C4CF6577957A1"
@@ -534,8 +427,8 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 5.625d
-			y: 0.75d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -559,7 +452,7 @@
 			icon: "gtceu:basic_electronic_circuit"
 			id: "4B979482EF026BFF"
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Your first &aElectronic Circuit&r!"
 			tasks: [
 				{
@@ -575,8 +468,8 @@
 				}
 			]
 			title: "Electronics #4: The Circuit"
-			x: 6.75d
-			y: 0.75d
+			x: 9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1FFD2242B94A7378"]
@@ -594,32 +487,23 @@
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "3C70B0717E9377A4"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "...I'm going into battle, and I need only your finest Potin."
 			tasks: [{
-				id: "159D19181DC4DE59"
+				id: "1D53AAFD7F6F8B2B"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:potin_small_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_normal_fluid_pipe"
-							}
-						]
+						"ftbfiltersystem:filter": "or(item(gtceu:potin_tiny_fluid_pipe)item(gtceu:potin_small_fluid_pipe)item(gtceu:potin_normal_fluid_pipe)item(gtceu:potin_large_fluid_pipe)item(gtceu:potin_huge_fluid_pipe)item(gtceu:potin_huge_fluid_pipe)item(gtceu:potin_quadruple_fluid_pipe)item(gtceu:potin_nonuple_fluid_pipe))"
 					}
 				}
-				title: "Potin Pipes!"
+				title: "Any Potin Pipe"
 				type: "item"
 			}]
 			title: "Potin Seller..."
-			x: -1.125d
-			y: 1.875d
+			x: -2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -634,16 +518,16 @@
 			]
 			id: "1931FC6DEAC29646"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Forge Hammer hammers..."
 			tasks: [{
 				id: "4F4074D7CE5A61A0"
-				item: "gtceu:lp_steam_forge_hammer"
+				item: "gtceu:hp_steam_forge_hammer"
 				type: "item"
 			}]
 			title: "Steam Forge Hammer"
-			x: 0.0d
-			y: 1.875d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -658,16 +542,16 @@
 			]
 			id: "1C50A758A1DE25CB"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Macerator macerates..."
 			tasks: [{
 				id: "6DFD6AC8CF31305C"
-				item: "gtceu:lp_steam_macerator"
+				item: "gtceu:hp_steam_macerator"
 				type: "item"
 			}]
 			title: "Steam Macerator"
-			x: 1.125d
-			y: 1.875d
+			x: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -684,7 +568,7 @@
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "4ED5A9AEF7B928BA"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The circuit-er part of circuits..."
 			tasks: [
 				{
@@ -707,8 +591,8 @@
 				}
 			]
 			title: "Electronics #2: Circuit Boards"
-			x: 5.625d
-			y: 1.875d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1C50A758A1DE25CB"]
@@ -724,7 +608,7 @@
 			icon: "gtceu:gold_crushed_ore"
 			id: "7813F183681E0342"
 			shape: "circle"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "...and how do I get rid of it?"
 			tasks: [{
 				id: "1C4CFA0AD3125A6D"
@@ -732,7 +616,7 @@
 				type: "checkmark"
 			}]
 			title: "What is this Mess?!"
-			x: 0.0d
+			x: -0.5d
 			y: 3.0d
 		}
 		{
@@ -747,7 +631,7 @@
 			icon: "gtceu:steam_grinder"
 			id: "7FF95F1216D104B2"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Steam Oven's elder brother"
 			tasks: [
 				{
@@ -778,10 +662,11 @@
 				}
 			]
 			title: "Steam Grinder"
-			x: 1.125d
+			x: 1.0d
 			y: 3.0d
 		}
 		{
+			dependencies: ["011EC2CE0111C9A0"]
 			description: [
 				"&o...or little brother. Don't let him know!&r"
 				""
@@ -795,7 +680,7 @@
 			icon: "gtceu:steam_oven"
 			id: "6C25D11A26306168"
 			shape: "square"
-			size: 0.75d
+			size: 1.0d
 			subtitle: "The Steam Grinder's big brother"
 			tasks: [
 				{
@@ -832,24 +717,24 @@
 				}
 			]
 			title: "Steam Oven"
-			x: 2.25d
-			y: 3.0d
+			x: -8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: ["The Steam Compressor unlocks some tantalising new recipes that will help you to progress towards Steel."]
 			id: "07415D6305C3B1D2"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "The Steam Compressor compresses..."
 			tasks: [{
 				id: "21C99D59F1BE48A3"
-				item: "gtceu:lp_steam_compressor"
+				item: "gtceu:hp_steam_compressor"
 				type: "item"
 			}]
 			title: "Steam Compressor"
-			x: 1.125d
-			y: -0.375d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["48AED37B4E20A99A"]
@@ -877,7 +762,7 @@
 			icon: "gtceu:tin_small_item_pipe"
 			id: "539CF1B85725786D"
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			tasks: [{
 				id: "158F4EEDC214A3BA"
 				item: {
@@ -904,8 +789,41 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 3.375d
-			y: 1.875d
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C7B69F45F076A79"]
+			id: "011EC2CE0111C9A0"
+			tasks: [{
+				id: "7A1C685F48E09F6B"
+				item: "gtceu:hp_steam_furnace"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C7B69F45F076A79"]
+			id: "3D6E423744153954"
+			tasks: [{
+				id: "2908168A0D5379D3"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C7B69F45F076A79"]
+			id: "41F23E44E154C3E9"
+			tasks: [{
+				id: "22542CDE2F0C0524"
+				item: "gtceu:hp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
