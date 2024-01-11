@@ -205,7 +205,7 @@ jobs:
         uses: SwitchAlpha/upload-curseforge-modpack-action@master
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ env.CF_MODPACK_ID }}
+          project-id: ${{ vars.CF_MODPACK_ID }}
           modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
           modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
           changelog: ${{ needs.modpack-info.outputs.changelog }}
@@ -241,7 +241,7 @@ jobs:
     #       uses: SwitchAlpha/upload-curseforge-modpack-action@master
     #       with:
     #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
-    #         project-id: ${{ env.MODRINTH_MODPACK_ID }}
+    #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
     #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mrd.zip
     #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
     #         changelog: "${{ needs.modpack-info.outputs.changelog }}"
