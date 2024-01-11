@@ -1,69 +1,69 @@
-name: Release
-run-name: "Release #${{ github.run_number }}"
+# name: Release
+# run-name: "Release #${{ github.run_number }}"
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
 
-concurrency:
-  group: ${{ github.ref }}
-  cancel-in-progress: true
+# concurrency:
+#   group: ${{ github.ref }}
+#   cancel-in-progress: true
 
-env:
-  CF_PROJECT_ID: "385053"
-  CF_RELEASE_ID: "5025212"
-  MODRINTH_PROJECT_ID: "75JuuMzk"
-  RELEASE_TYPE: "BETA"
-  MC_VERSION: "1.20.1"
-  PROJECT_VERSION: "0.5.0"
+# env:
+#   CF_PROJECT_ID: "385053"
+#   CF_RELEASE_ID: "5025212"
+#   MODRINTH_PROJECT_ID: "75JuuMzk"
+#   RELEASE_TYPE: "BETA"
+#   MC_VERSION: "1.20.1"
+#   PROJECT_VERSION: "0.5.0"
 
-jobs:
-  discord-message:
-    name: Discord Message
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
-        
-      - name: Changelog Parser
-        id: changelog
-        uses: coditory/changelog-parser@v1.0.2
-        with:
-          path: CHANGELOG.md
+# jobs:
+#   discord-message:
+#     name: Discord Message
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4.1.1
 
-      - name: Send Discord message
-        uses: tsickert/discord-webhook@v5.4.0
-        with:
-          webhook-url: ${{secrets.RELEASES_1_20}}
-          username: "TerraFirmaGreg"
-          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
-          embed-title: Release ${{ env.PROJECT_VERSION }}
-          embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ env.PROJECT_VERSION }}
-          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
-          embed-description: |
-            **Release Type**: `${{ env.RELEASE_TYPE }}`
-            **GameVersion**: `${{ env.MC_VERSION }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ env.CF_RELEASE_ID }})
+#       - name: Changelog Parser
+#         id: changelog
+#         uses: coditory/changelog-parser@v1.0.2
+#         with:
+#           path: CHANGELOG.md
 
-            **Changelog**
-            ```${{ steps.changelog.outputs.description }}```
-          embed-color: 5814783
+#       - name: Send Discord message
+#         uses: tsickert/discord-webhook@v5.4.0
+#         with:
+#           webhook-url: ${{secrets.RELEASES_1_20}}
+#           username: "TerraFirmaGreg"
+#           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
+#           embed-title: Release ${{ env.PROJECT_VERSION }}
+#           embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ env.PROJECT_VERSION }}
+#           embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
+#           embed-description: |
+#             **Release Type**: `${{ env.RELEASE_TYPE }}`
+#             **GameVersion**: `${{ env.MC_VERSION }}`
+#             **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ env.CF_RELEASE_ID }})
 
-  close-fixed-issues:
-    name: Close Fixed Issues
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
+#             **Changelog**
+#             ```${{ steps.changelog.outputs.description }}```
+#           embed-color: 5814783
 
-      - name: close-fixed-in-dev
-        uses: juraj-hrivnak/close-issues-based-on-label@master
-        env:
-          LABEL: "2. Status: Fixed in Dev"
-          VERSION: ${{ env.PROJECT_VERSION }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#   close-fixed-issues:
+#     name: Close Fixed Issues
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4.1.1
+
+#       - name: close-fixed-in-dev
+#         uses: juraj-hrivnak/close-issues-based-on-label@master
+#         env:
+#           LABEL: "2. Status: Fixed in Dev"
+#           VERSION: ${{ env.PROJECT_VERSION }}
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       
 

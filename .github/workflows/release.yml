@@ -288,7 +288,7 @@ jobs:
         with:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
-          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png"
+          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
           embed-title: Release ${{ needs.modpack-info.outputs.project_version }}
           embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ needs.modpack-info.outputs.project_version }}
           embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
