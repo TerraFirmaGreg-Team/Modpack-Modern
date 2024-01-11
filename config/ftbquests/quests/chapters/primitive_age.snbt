@@ -1734,7 +1734,14 @@
 			size: 1.5d
 			tasks: [{
 				id: "4DF45DB51EF758E4"
-				item: "gtceu:raw_graphite"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_graphite)item(gtceu:raw_graphite)item(gtceu:rich_raw_graphite))"
+					}
+				}
+				title: "Any Graphite Ore"
 				type: "item"
 			}]
 			x: 12.0d
@@ -2225,22 +2232,18 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "73BF0075860E666B"
-			subtitle: "добудьте любую медную руду"
 			tasks: [{
-				id: "2818AA8ACCE79156"
+				id: "54334DA4AC22438E"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						display: {
-							Name: "{\"text\":\"any copper ore\"}"
-						}
-						"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
+						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 					}
 				}
+				title: "Any Copper Ore"
 				type: "item"
 			}]
-			title: "медная руда"
 			x: 16.5d
 			y: 15.0d
 		}
@@ -2261,20 +2264,6 @@
 			subtitle: "Строгий середнячок"
 			tasks: [
 				{
-					id: "7ABC0A6BC9AF94F1"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"any copper ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "024533C5E4B89787"
 					item: {
 						Count: 1b
@@ -2286,6 +2275,19 @@
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_cassiterite)item(gtceu:raw_tin)item(gtceu:raw_cassiterite)item(gtceu:raw_cassiterite_sand)item(gtceu:poor_raw_tin)item(gtceu:poor_raw_cassiterite)item(gtceu:poor_raw_cassiterite_sand)item(gtceu:rich_raw_tin)item(gtceu:rich_raw_cassiterite)item(gtceu:rich_raw_cassiterite_sand))"
 						}
 					}
+					title: "Any Tin Ore"
+					type: "item"
+				}
+				{
+					id: "26C207A03F30FB27"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
+						}
+					}
+					title: "Any Copper Ore"
 					type: "item"
 				}
 			]
@@ -2297,22 +2299,18 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "566FA805413004CF"
-			subtitle: "добудьте любую железную руду"
 			tasks: [{
-				id: "4A86121695E050BC"
+				id: "7E987D9B30125F52"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						display: {
-							Name: "{\"text\":\"any iron ore\"}"
-						}
-						"ftbfiltersystem:filter": "or(item(minecraft:raw_iron)item(gtceu:raw_hematite)item(gtceu:raw_goethite)item(gtceu:raw_magnetite)item(gtceu:raw_pyrite)item(gtceu:raw_yellow_limonite)item(gtceu:poor_raw_hematite)item(gtceu:poor_raw_goethite)item(gtceu:poor_raw_magnetite)item(gtceu:poor_raw_pyrite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:rich_raw_hematite)item(gtceu:rich_raw_goethite)item(gtceu:rich_raw_magnetite)item(gtceu:rich_raw_pyrite)item(gtceu:rich_raw_yellow_limonite))"
+						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_hematite)item(gtceu:raw_hematite)item(tfc:ore/small_hematite)item(gtceu:poor_raw_hematite)item(gtceu:rich_raw_yellow_limonite)item(tfc:ore/small_limonite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:raw_yellow_limonite)item(tfc:ore/small_magnetite)item(gtceu:poor_raw_magnetite)item(gtceu:raw_magnetite)item(gtceu:rich_raw_magnetite)item(gtceu:poor_raw_iron)item(minecraft:raw_iron)item(gtceu:rich_raw_iron)item(gtceu:poor_raw_goethite)item(gtceu:raw_goethite)item(gtceu:rich_raw_goethite)item(gtceu:poor_raw_pyrite)item(gtceu:raw_pyrite)item(gtceu:rich_raw_pyrite))"
 					}
 				}
+				title: "Any Iron Ore"
 				type: "item"
 			}]
-			title: "железная руда"
 			x: 22.5d
 			y: 18.5d
 		}
@@ -2501,20 +2499,6 @@
 			subtitle: "Дешевая и блестящяя"
 			tasks: [
 				{
-					id: "66F5D34B8D453859"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"any copper ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "7EBB6EC50EE8CFA1"
 					item: {
 						Count: 1b
@@ -2526,6 +2510,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_bismuthinite)item(gtceu:raw_bismuth)item(gtceu:poor_raw_bismuth)item(gtceu:rich_raw_bismuth))"
 						}
 					}
+					title: "Any Bismuth Ore"
 					type: "item"
 				}
 				{
@@ -2540,6 +2525,19 @@
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite)item(gtceu:raw_sphalerite)item(gtceu:poor_raw_sphalerite)item(gtceu:rich_raw_sphalerite))"
 						}
 					}
+					title: "Any Sphalerite Ore"
+					type: "item"
+				}
+				{
+					id: "74F88351793C165A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
+						}
+					}
+					title: "Any Copper Ore"
 					type: "item"
 				}
 			]
@@ -2564,20 +2562,6 @@
 			subtitle: "Дорогая и черная"
 			tasks: [
 				{
-					id: "5032D806EC432D65"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"any copper ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "1294B28A98775920"
 					item: {
 						Count: 1b
@@ -2589,20 +2573,31 @@
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_silver)item(gtceu:poor_raw_silver)item(gtceu:rich_raw_silver)item(gtceu:raw_silver))"
 						}
 					}
+					title: "Any Silver Ore"
 					type: "item"
 				}
 				{
-					id: "4D15037CBE30F913"
+					id: "53F7A77859F53B3D"
 					item: {
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							display: {
-								Name: "{\"text\":\"any gold ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(gtceu:rich_raw_gold)item(gtceu:raw_silver))"
+							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 						}
 					}
+					title: "Any Copper Ore"
+					type: "item"
+				}
+				{
+					id: "755505207091F3E2"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(gtceu:rich_raw_gold)item(gtceu:poor_raw_gold)item(tfc:ore/small_native_gold))"
+						}
+					}
+					title: "Any Gold Ore"
 					type: "item"
 				}
 			]
@@ -3109,7 +3104,14 @@
 			id: "253860AD4DF4224C"
 			tasks: [{
 				id: "52D61470CEF41419"
-				item: "gtceu:raw_sulfur"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_sulfur)item(gtceu:raw_sulfur)item(gtceu:rich_raw_sulfur))"
+					}
+				}
+				title: "Any Sulfur Ore"
 				type: "item"
 			}]
 			x: -6.0d
@@ -3670,31 +3672,27 @@
 			id: "483D7FE6554FDC96"
 			tasks: [
 				{
-					id: "5AE3E3F298ED7462"
+					id: "184806817B6D9921"
 					item: {
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							display: {
-								Name: "{\"text\":\"any copper ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(minecraft:raw_gold)item(gtceu:rich_raw_gold))"
 						}
 					}
+					title: "Any Gold Ore"
 					type: "item"
 				}
 				{
-					id: "440E4A0332ED9B33"
+					id: "3101B42F9E34CDA1"
 					item: {
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							display: {
-								Name: "{\"text\":\"any gold ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(gtceu:rich_raw_gold)item(gtceu:raw_silver))"
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
 						}
 					}
+					title: "Any Copper Ore"
 					type: "item"
 				}
 			]
@@ -3718,20 +3716,6 @@
 			id: "758B2176634789F6"
 			tasks: [
 				{
-					id: "1564CFF7A16E4EF9"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"any copper ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "763128F1BD1FEB9B"
 					item: {
 						Count: 1b
@@ -3743,6 +3727,19 @@
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite)item(gtceu:raw_sphalerite)item(gtceu:poor_raw_sphalerite)item(gtceu:rich_raw_sphalerite))"
 						}
 					}
+					title: "Any Sphalerite Ore"
+					type: "item"
+				}
+				{
+					id: "34F5CDD35DDE2295"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
+						}
+					}
+					title: "Any Copper Ore"
 					type: "item"
 				}
 			]
@@ -3766,20 +3763,6 @@
 			id: "0E0C589495AA31E8"
 			tasks: [
 				{
-					id: "44019389D449EAB0"
-					item: {
-						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							display: {
-								Name: "{\"text\":\"any copper ore\"}"
-							}
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite))"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "3E9AC72D1AF2CE1A"
 					item: {
 						Count: 1b
@@ -3791,6 +3774,19 @@
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_silver)item(gtceu:poor_raw_silver)item(gtceu:rich_raw_silver)item(gtceu:raw_silver))"
 						}
 					}
+					title: "Any Silver Ore"
+					type: "item"
+				}
+				{
+					id: "4E12D679975AEE9A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
+						}
+					}
+					title: "Any Copper Ore"
 					type: "item"
 				}
 			]
