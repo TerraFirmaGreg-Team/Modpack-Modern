@@ -863,7 +863,7 @@ const registerCreateRecipes = (event) => {
         'CDC' 
     ], {
         A: '#forge:plates/copper',
-        B: 'tfc:metal/helmet/copper',
+        B: 'tfc:metal/boots/copper',
         C: '#forge:fluid_pipes/tiny/polyethylene',
         D: '#forge:foils/rubber'
     }).id('tfg:create/shaped/copper_diving_boots')
