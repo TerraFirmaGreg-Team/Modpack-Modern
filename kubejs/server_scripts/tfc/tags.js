@@ -8,16 +8,17 @@ const registerTFCItemTags = (event) => {
     })
 
     // Теги для соответствия инструментов TFC и GT
-    event.add('tfc:axes', '#minecraft:axes')
-    event.add('tfc:hammers', '#forge:tools/hammers')
-    event.add('tfc:hoes', '#minecraft:hoes')
-    event.add('tfc:knives', '#forge:tools/knives')
+    event.add('tfc:swords', '#minecraft:swords')
     event.add('tfc:pickaxes', '#minecraft:pickaxes')
+    event.add('tfc:axes', '#minecraft:axes')
+    event.add('tfc:shovels', '#minecraft:shovels')
+    event.add('tfc:hoes', '#minecraft:hoes')
+    
+    event.add('tfc:hammers', '#forge:tools/hammers')
+    event.add('tfc:knives', '#forge:tools/knives')
     event.add('tfc:saws', '#forge:tools/saws')
     event.add('tfc:scythes', '#forge:tools/scythes')
-    event.add('tfc:shovels', '#minecraft:shovels')
-    event.add('tfc:swords', '#minecraft:swords')
-
+    
     event.add('tfc:usable_on_tool_rack', '#tfc:axes')
     event.add('tfc:usable_on_tool_rack', '#tfc:hammers')
     event.add('tfc:usable_on_tool_rack', '#tfc:hoes')
@@ -38,8 +39,6 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/plungers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
-
-    event.add('forge:tools/aoe', '#forge:tools/mining_hammers')
     
     // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')
