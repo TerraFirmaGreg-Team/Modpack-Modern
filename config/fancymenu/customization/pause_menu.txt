@@ -15,9 +15,14 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
   orientation = element
   orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_options_button
-  x = 0
+  x = 1
   action = movebutton
   y = -25
 }
@@ -38,9 +43,17 @@ customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
   orientation = element
   orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_lan_button
-  x = 0
+  x = -106
   action = movebutton
   y = -24
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 204
+  height = 20
 }
 
 customization {
