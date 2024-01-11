@@ -25,7 +25,11 @@
           },
           {
             "block": "gtceu:rhyolite_emerald_ore",
-            "weight": 65
+            "weight": 50
+          },
+          {
+            "block": "gtceu:rhyolite_thorium_ore",
+            "weight": 15
           }
         ]
       },
@@ -40,7 +44,11 @@
           },
           {
             "block": "gtceu:basalt_emerald_ore",
-            "weight": 65
+            "weight": 50
+          },
+          {
+            "block": "gtceu:basalt_thorium_ore",
+            "weight": 15
           }
         ]
       },
@@ -55,7 +63,11 @@
           },
           {
             "block": "gtceu:andesite_emerald_ore",
-            "weight": 65
+            "weight": 50
+          },
+          {
+            "block": "gtceu:andesite_thorium_ore",
+            "weight": 15
           }
         ]
       },
@@ -70,7 +82,11 @@
           },
           {
             "block": "gtceu:dacite_emerald_ore",
-            "weight": 65
+            "weight": 50
+          },
+          {
+            "block": "gtceu:dacite_thorium_ore",
+            "weight": 15
           }
         ]
       }

@@ -13,7 +13,7 @@ const registerAE2WTLibRecipes = (event) => {
     // Wireless Pattern Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_encoding_terminal')
         .itemInputs(
-            '2x ae2:dense_energy_cell',
+            '2x gtceu:hv_lithium_battery',
             'ae2:wireless_terminal',
             'ae2:pattern_encoding_terminal',
             '2x gtceu:luv_sensor',
@@ -27,7 +27,7 @@ const registerAE2WTLibRecipes = (event) => {
     // Pattern Access Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_access_terminal')
         .itemInputs(
-            '2x ae2:dense_energy_cell',
+            '2x gtceu:hv_lithium_battery',
             'ae2:wireless_terminal',
             'ae2:pattern_access_terminal',
             '2x gtceu:luv_sensor',

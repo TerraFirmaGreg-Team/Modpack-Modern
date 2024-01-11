@@ -1,5 +1,9 @@
 // priority: 1
 
+const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
+const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGMaterialFlags')
+const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelper')
+
 /**
  * Событие регистрации предмет-тэгов.
  */
@@ -29,6 +33,7 @@ ServerEvents.tags('item', event => {
  */
 ServerEvents.tags('block', event => {
     registerTFCBlockTags(event)
+    registerComputerCraftBlockTags(event)
 })
 
 /**
@@ -52,6 +57,7 @@ ServerEvents.tags('worldgen/placed_feature', event => {
  * Срабатывает до инициализации рецептов.
  */
 ServerEvents.highPriorityData(event => {
+    registerComputerCraftData(event)
 })
 
 /**

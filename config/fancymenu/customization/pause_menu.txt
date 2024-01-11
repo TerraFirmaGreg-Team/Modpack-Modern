@@ -15,50 +15,32 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
-  orientation = mid-centered
-  x = -102
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_options_button
+  x = 0
   action = movebutton
-  y = -10
+  y = -25
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
-  orientation = mid-centered
-  x = -101
-  action = movebutton
-  y = 39
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  action = setbuttonlabel
+  value = {"placeholder":"local","values":{"key":"ftbquests.quests"}}
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  action = sethoverlabel
+  label = {"placeholder":"local","values":{"key":"ftbquests.quests"}}
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
-  orientation = mid-centered
-  x = 4
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_lan_button
+  x = 0
   action = movebutton
-  y = -10
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
-  action = hidebutton
+  y = -24
 }
 
 customization {
@@ -68,17 +50,11 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
-  orientation = mid-centered
-  x = -102
+  orientation = element
+  orientation_element = vanillabtn:398348
+  x = 0
   action = movebutton
-  y = -34
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
+  y = -72
 }
 
 customization {
@@ -87,71 +63,7 @@ customization {
 }
 
 customization {
-  identifier = %id=398348%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=398348%
-  orientation = mid-centered
-  x = -217
-  action = movebutton
-  y = 13
-}
-
-customization {
-  identifier = %id=398348%
-  width = 98
-  action = resizebutton
-  height = 20
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_report_bugs_button%
   action = hidebutton
 }
 
-customization {
-  orientation = mid-centered
-  [loading_requirement:fancymenu_loading_requirement_is_singpleplayer][requirement_mode:if][req_id:4f25fe92-c3a1-49fa-80ad-9bb26244ad751700456727801] = 
-  restartbackgroundanimations = true
-  buttonaction = opengui;net.minecraft.client.gui.screens.ShareToLanScreen%btnaction_splitter_fm%
-  label = {"placeholder":"local","values":{"key":"lanServer.start"}}
-  loopbackgroundanimations = true
-  x = 4
-  width = 98
-  action = addbutton
-  actionid = 210ee97d-9318-4a22-93cb-7c2a224ba4331700456388839
-  y = 14
-  height = 20
-}
-
-customization {
-  orientation = mid-centered
-  restartbackgroundanimations = true
-  buttonaction = opengui;net.minecraftforge.client.gui.ModListScreen%btnaction_splitter_fm%
-  [loading_requirement:fancymenu_loading_requirement_is_singpleplayer][requirement_mode:if][req_id:b95d87c4-e395-446c-9e89-a80d876578ac1700457303801] = 
-  label = {"placeholder":"local","values":{"key":"fml.menu.mods"}}
-  loopbackgroundanimations = true
-  x = -102
-  width = 98
-  action = addbutton
-  actionid = 1476f957-76fe-46a8-8b9b-4c99fbee39a31700457166228
-  y = 14
-  height = 20
-}
-
-customization {
-  orientation = mid-centered
-  restartbackgroundanimations = true
-  buttonaction = opengui;net.minecraftforge.client.gui.ModListScreen%btnaction_splitter_fm%
-  label = {"placeholder":"local","values":{"key":"fml.menu.mods"}}
-  loopbackgroundanimations = true
-  x = -102
-  width = 204
-  action = addbutton
-  actionid = 8e13488b-82eb-470a-b8dd-750b6815a9211700457311802
-  y = 14
-  [loading_requirement:fancymenu_loading_requirement_is_multiplayer][requirement_mode:if][req_id:bf6191b0-f0b7-4986-9e8a-ae5fa1509e6d1700457329225] = 
-  height = 20
-}

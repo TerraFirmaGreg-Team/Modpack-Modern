@@ -2573,6 +2573,12 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Кирпич
+
+    event.remove({ id: 'minecraft:brick' })
+
+    //#endregion
+
     //#region Выход: Незер бревна
 
     event.remove({ id: 'minecraft:stripped_crimson_stem_via_vanilla_stripping' })

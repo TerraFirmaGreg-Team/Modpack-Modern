@@ -228,6 +228,9 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_ingot_mold', "gtceu:blue_steel")
     event.add('tfc:usable_in_ingot_mold', "gtceu:red_steel")
 
+    event.add('tfc:usable_in_ingot_mold', "gtceu:red_alloy")
+    event.add('tfc:usable_in_ingot_mold', "gtceu:tin_alloy")
+
     event.add('tfc:usable_in_bell_mold', "gtceu:bronze")
     event.add('tfc:usable_in_bell_mold', "gtceu:gold")
     event.add('tfc:usable_in_bell_mold', "gtceu:brass")
@@ -243,6 +246,7 @@ const registerTFCFluidTags = (event) => {
 
     event.add('tfc:usable_in_wooden_bucket', "gtceu:latex")
 
+    event.add('tfc:usable_in_barrel', 'gtceu:creosote')
     event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
@@ -317,6 +321,8 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_gold')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_graphite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_hematite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_spodumene')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oil_sands')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_lapis')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_limonite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_lubricant')
