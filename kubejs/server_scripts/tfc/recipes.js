@@ -982,64 +982,150 @@ const registerTFCRecipes = (event) => {
                     .EUt(16)
             }
     
-            if (metalSpecs.props.includes(global.TFC_SMALL_ORE_GEN)) {
+            // Small TFC Ores
+            if (material.hasFlag(TFGMaterialFlags.HAS_SMALL_TFC_ORE)) {
                 // Декрафт мелкого кусочка в жидкость
                 event.recipes.tfc.heating(`tfc:ore/small_${material}`, tfcProperty.getMeltTemp())
                     .resultFluid(Fluid.of(outputMaterial.getFluid(), 16))
                     .id(`tfc:heating/ore/small_${material}`)
             }
     
-            if (metalSpecs.props.includes(global.TFC_SMALL_NATIVE_ORE_GEN)) {
+            // Small Native TFC Ores
+            if (material.hasFlag(TFGMaterialFlags.HAS_SMALL_NATIVE_TFC_ORE)) {
                 // Декрафт мелкого кусочка в жидкость
                 event.recipes.tfc.heating(`tfc:ore/small_native_${material}`, tfcProperty.getMeltTemp())
                     .resultFluid(Fluid.of(outputMaterial.getFluid(), 16))
                     .id(`tfc:heating/ore/small_native_${material}`)
-    
-                event.remove({ id: `tfc:heating/ore/poor_native_${material}` })
-                event.remove({ id: `tfc:heating/ore/normal_native_${material}` })
-                event.remove({ id: `tfc:heating/ore/rich_native_${material}` })
             }
     
-            if (metalSpecs.props.includes(global.DUST_GEN)) {
+            // Any Dusts from GTCEu
+            if (material.hasProperty(PropertyKey.DUST)) {
+                
                 // Декрафт мелкой пыли
-                event.recipes.tfc.heating(`gtceu:${material}_tiny_dust`, tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/tiny_dust/${material}`)
-    
+                let tinyDust = ChemicalHelper.get(TagPrefix.dustTiny, material)
+                if (!tinyDust.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(tinyDust, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/tiny_dust/${material}`)
+                    
+                }
+                
                 // Декрафт средней пыли
-                event.recipes.tfc.heating(`gtceu:${material}_small_dust`, tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/small_dust/${material}`)
+                let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material)
+                if (!smallDust.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(smallDust, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/small_dust/${material}`)
+                    
+                }
     
                 // Декрафт пыли
-                event.recipes.tfc.heating(Item.of(`#forge:dusts/${material}`), tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(144, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/dust/${material}`)
+                let dust = ChemicalHelper.get(TagPrefix.dust, material)
+                if (!dust.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(dust, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/dust/${material}`)
+                    
+                }
+
+                // Декрафт грязной пыли
+                let impureDust = ChemicalHelper.get(TagPrefix.dustImpure, material)
+                if (!impureDust.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(impureDust, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/impure_dust/${material}`)
+                    
+                }
+
+                // Декрафт очищенной пыли
+                let purifiedDust = ChemicalHelper.get(TagPrefix.dustPure, material)
+                if (!purifiedDust.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(purifiedDust, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/purified_dust/${material}`)
+                    
+                }
+            
             }
     
-            if (metalSpecs.props.includes(global.NUGGET_GEN)) {
-                // Декрафт мелкой пыли
-                event.recipes.tfc.heating(`#forge:nuggets/${material}`, tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/nugget/${material}`)
-            }
-    
-            if (metalSpecs.props.includes(global.ORE_CHUNKS_GEN)) {
-                // Декрафт нормального куска руды
-                event.recipes.tfc.heating(`#forge:raw_materials/${material}`, tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/raw/${material}`)
-    
+            // Any Ores from GTCEu
+            if (material.hasProperty(PropertyKey.ORE)) {
+                
+                // Декрафт ломанной руды
+                let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material)
+                if (!crushedOre.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(dcrushedOreust, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/dust/${material}`)
+                    
+                }
+
+                // Декрафт ломанной очищенной руды
+                let crushedPurifiedOre = ChemicalHelper.get(TagPrefix.crushedPurified, material)
+                if (!crushedPurifiedOre.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(crushedPurifiedOre, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/tiny_dust/${material}`)
+                    
+                }
+
+                // Декрафт центрифугированной ломанной руды
+                let crushedRefinedOre = ChemicalHelper.get(TagPrefix.crushedRefined, material)
+                if (!crushedRefinedOre.isEmpty()) {
+                   
+                    event.recipes.tfc.heating(crushedRefinedOre, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/tiny_dust/${material}`)
+                    
+                }
+
                 // Декрафт богатого куска руды
-                event.recipes.tfc.heating(`#forge:rich_raw_materials/${material}`, tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(48, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/rich_raw/${material}`)
-    
+                let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material)
+                if (!richRawOre.isEmpty()) {
+                    
+                    event.recipes.tfc.heating(richRawOre, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/rich_raw/${material}`)
+                    
+                }
+                
+                // Декрафт нормального куска руды
+                let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material)
+                if (!normalRawOre.isEmpty()) {
+                    
+                    event.recipes.tfc.heating(normalRawOre, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/raw/${material}`)
+                    
+                }
+                
                 // Декрафт бедного куска руды
-                event.recipes.tfc.heating(`#forge:poor_raw_materials/${material}`, tfcProperty.getMeltTemp())
-                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(24, metalSpecs.percent_of_material)))
-                    .id(`tfg:heating/poor_raw/${material}`)
+                let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material)
+                if (!poorRawOre.isEmpty()) {
+                    event.recipes.tfc.heating(poorRawOre, tfcProperty.getMeltTemp())
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
+                        .id(`tfg:heating/poor_raw/${material}`)
+                }
             }
+
+            // Nuggets
+            let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material)
+            if (!nuggetItem.isEmpty()) {
+                
+                // Декрафт самородков пыли
+                event.recipes.tfc.heating(nuggetItem, tfcProperty.getMeltTemp())
+                    .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+                    .id(`tfg:heating/nugget/${material}`)
+                
+            }
+            
         }
     })
     
