@@ -4,9 +4,22 @@ const registerTFCRecipes = (event) => {
     
     //#region Металлы
     
+    // Удаление рецептов руд TFC
     event.remove({ id: /tfc:heating\/ore\/poor_*/ })
     event.remove({ id: /tfc:heating\/ore\/normal_*/ })
     event.remove({ id: /tfc:heating\/ore\/rich_*/ })
+
+    // Удаление рецептов блоков
+    event.remove({ id: /tfc:crafting\/metal\/block\/*/ })
+    event.remove({ id: /tfc:heating\/metal\/*_block/ })
+
+    // Удаление рецептов ступеней
+    event.remove({ id: /tfc:crafting\/metal\/block\/*_stairs/ })
+    event.remove({ id: /tfc:heating\/metal\/*_block_stairs/ })
+
+    // Удалание рецептов полублоков
+    event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
+    event.remove({ id: /tfc:heating\/metal\/*_block_slab/ })
 
     GTRegistries.MATERIALS.forEach(material => {
         
@@ -921,18 +934,6 @@ const registerTFCRecipes = (event) => {
             // Anvils, Lamps, Trapdors, Chains
             if (material.hasFlag(TFGMaterialFlags.HAS_TFC_UTILITY)) {
                 
-                // Удаление рецептов блоков
-                event.remove({ id: `tfc:crafting/metal/block/${material}` })
-                event.remove({ id: `tfc:heating/metal/${material}_block` })
-
-                // Удаление рецептов ступеней
-                event.remove({ id: `tfc:crafting/metal/block/${material}_stairs` })
-                event.remove({ id: `tfc:heating/metal/${material}_block_stairs` })
-
-                // Удалание рецептов полублоков
-                event.remove({ id: `tfc:crafting/metal/block/${material}_slab` })
-                event.remove({ id: `tfc:heating/metal/${material}_block_slab` })
-
                 // Декрафт незавершенной лампы в жидкость
                 event.recipes.tfc.heating(`tfc:metal/unfinished_lamp/${material}`, tfcProperty.getMeltTemp())
                     .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
@@ -1141,7 +1142,7 @@ const registerTFCRecipes = (event) => {
             
         }
     })
-    
+
     //#region Рецепты для новых сплавов
 
     event.recipes.tfc.alloy('tfg:red_alloy', [
@@ -1332,22 +1333,22 @@ const registerTFCRecipes = (event) => {
 
     // Декрафт сырой крицы в жидкость
     event.recipes.tfc.heating(`tfc:raw_iron_bloom`, 1535)
-        .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
+        .resultFluid(Fluid.of('gtceu:iron', 144))
         .id(`tfc:heating/raw_bloom`)
 
     // Декрафт укрепленной крицы в жидкость
     event.recipes.tfc.heating(`tfc:refined_iron_bloom`, 1535)
-        .resultFluid(Fluid.of('tfc:metal/cast_iron', 144))
+        .resultFluid(Fluid.of('gtceu:iron', 144))
         .id(`tfc:heating/refined_bloom`)
 
     // Гриль
     event.recipes.tfc.heating('tfc:wrought_iron_grill', 1535)
-        .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
+        .resultFluid(Fluid.of('gtceu:iron', 288))
         .id(`tfc:heating/grill`)
 
     // Ванильная дверь декрафт
     event.recipes.tfc.heating('minecraft:iron_door', 1535)
-        .resultFluid(Fluid.of('tfc:metal/cast_iron', 288))
+        .resultFluid(Fluid.of('gtceu:iron', 288))
         .id(`tfc:heating/iron_door`)
     
     // Ванильная дверь на наковальне
@@ -1376,8 +1377,12 @@ const registerTFCRecipes = (event) => {
         .id('tfc:anvil/blue_steel_ingot')
 
     // Cast iron -> Raw Iron Bloom
-    event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('tfc:metal/cast_iron', 144), 15000)
+    event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
         .id('tfc:bloomery/raw_iron_bloom')
+
+    // Cast Iron -> Pig Iron
+    event.recipes.tfc.blast_furnace(Fluid.of('gtceu:pig_iron', 1), '#tfc:flux', Fluid.of('gtceu:iron', 1))
+        .id('tfc:blast_furnace/pig_iron')
 
     //#endregion
 
