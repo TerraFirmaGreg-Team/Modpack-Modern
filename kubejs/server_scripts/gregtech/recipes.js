@@ -1267,7 +1267,7 @@ const registerGTCEURecipes = (event) => {
         
         //#region Рецепты инструментов
         
-        if (material.hasFlag($TFGMaterialFlags.HAS_TFC_TOOL)) {
+        if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
             global.GTCEU_ANVIL_TOOL_TYPES.forEach(toolType => {
                 let toolStack = $ToolHelper.get(toolType, material)
 

@@ -55,8 +55,8 @@ const registerTFCHeats = (event) => {
     }
 
     GTRegistries.MATERIALS.forEach(material => {
-        let tfcProperty = material.getProperty($TFGPropertyKeys.TFC_PROPERTY)
-
+        let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+        
         if (tfcProperty != null) {
             makeItemHeatByTagPrefix(TagPrefix.dustTiny, material, tfcProperty, 0.357)
             makeItemHeatByTagPrefix(TagPrefix.dustSmall, material, tfcProperty, 0.714)
@@ -67,22 +67,22 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
             
             makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.poorRawOre, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.poorRawOre, material, tfcProperty, 1.429)
 
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadScythe, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadPickaxe, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadSaw, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadKnife, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadHoe, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadHammer, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadAxe, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadFile, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 2.875)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
-            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadScythe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadPickaxe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSaw, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadKnife, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadHoe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadHammer, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadAxe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadFile, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
         } 
     })
 

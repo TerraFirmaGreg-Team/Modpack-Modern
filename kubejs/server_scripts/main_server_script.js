@@ -3,10 +3,6 @@
 const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelper')
 
-const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGMaterialFlags')
-const $TFGPropertyKeys = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
-const $TFGTagPrefix = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGTagPrefixes')
-
 /**
  * Событие регистрации предмет-тэгов.
  */
