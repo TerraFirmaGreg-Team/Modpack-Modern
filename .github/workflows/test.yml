@@ -60,10 +60,9 @@ jobs:
         uses: actions/checkout@v4.1.1
 
       - name: Сlose fixed in dev
-        uses: bdougie/close-issues-based-on-label@v1.2
+        uses: lowply/auto-closer@v0.0.6
         env:
-          LABEL: "2. Status: Fixed in Dev"
-          VERSION: ${{ env.PROJECT_VERSION }}
+          AC_LABEL: "2. Status: Fixed in Dev"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       
