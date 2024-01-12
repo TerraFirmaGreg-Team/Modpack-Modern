@@ -54,6 +54,11 @@ const registerTFCHeats = (event) => {
         if (!item.isEmpty()) event.itemHeat(item, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
     }
 
+    function makeItemHeatByToolType(toolType, material, tfcProperty, heatCapacity) {
+        let tool = $ToolHelper.get(toolType, material)
+        if (!tool.isEmpty()) event.itemHeat(tool, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
+    }
+
     GTRegistries.MATERIALS.forEach(material => {
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
         
@@ -83,6 +88,20 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 2.875)
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
+
+            makeItemHeatByToolType(GTToolType.SWORD, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.PICKAXE, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.SHOVEL, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.AXE, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.HOE, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.SAW, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.HARD_HAMMER, material, tfcProperty, 2.875)
+            makeItemHeatByToolType(GTToolType.FILE, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.SCYTHE, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.KNIFE, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.BUTCHERY_KNIFE, material, tfcProperty, 2.875)
+            makeItemHeatByToolType(GTToolType.MINING_HAMMER, material, tfcProperty, 1.429)
+            makeItemHeatByToolType(GTToolType.SPADE, material, tfcProperty, 2.875)
         } 
     })
 
