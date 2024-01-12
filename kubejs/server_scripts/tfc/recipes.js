@@ -3,7 +3,7 @@
 const registerTFCRecipes = (event) => {
     
     //#region Металлы
-    
+    /*
     Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
         
         let metal = keyValuePair[0]
@@ -895,6 +895,7 @@ const registerTFCRecipes = (event) => {
         }
 
     })
+    */
 
     //#region Новые рецепты сплавов
 

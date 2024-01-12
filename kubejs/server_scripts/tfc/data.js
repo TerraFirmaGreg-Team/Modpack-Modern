@@ -11,6 +11,27 @@ const registerTFCDataForTFC = (event) => {
 }
 
 const registerTFCMetals = (event) => {
+    event.metal('gtceu:copper', 1080, 0.00857, '#forge:ingots/copper', '#forge:double_ingots/copper', '#forge:plates/copper', 1, 'tfc:copper')
+    event.metal('gtceu:bismuth_bronze', 985, 0.00857, '#forge:ingots/bismuth_bronze', '#forge:double_ingots/bismuth_bronze', '#forge:plates/bismuth_bronze', 2, 'tfc:bismuth_bronze')
+    event.metal('gtceu:bronze', 950, 0.00857, '#forge:ingots/bronze', '#forge:double_ingots/bronze', '#forge:plates/bronze', 2, 'tfc:bronze')
+    event.metal('gtceu:black_bronze', 1070, 0.00857, '#forge:ingots/black_bronze', '#forge:double_ingots/black_bronze', '#forge:plates/black_bronze', 2, 'tfc:black_bronze')
+    event.metal('gtceu:wrought_iron', 1535, 0.00857, '#forge:ingots/wrought_iron', '#forge:double_ingots/wrought_iron', '#forge:plates/wrought_iron', 3, 'tfc:wrought_iron')
+    event.metal('gtceu:steel', 1540, 0.00857, '#forge:ingots/steel', '#forge:double_ingots/steel', '#forge:plates/steel', 4, 'tfc:steel')
+    event.metal('gtceu:black_steel', 1485, 0.00857, '#forge:ingots/black_steel', '#forge:double_ingots/black_steel', '#forge:plates/black_steel', 5, 'tfc:black_steel')
+    event.metal('gtceu:blue_steel', 1540, 0.00857, '#forge:ingots/blue_steel', '#forge:double_ingots/blue_steel', '#forge:plates/blue_steel', 6, 'tfc:blue_steel')
+    event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
+
+    event.metal('gtceu:pig_iron', 1535, 0.00857, '#forge:ingots/pig_iron', null, null, 3, 'tfc:pig_iron')
+    event.metal('gtceu:high_carbon_steel', 1540, 0.00857, '#forge:ingots/high_carbon_steel', null, null, 3, 'tfc:high_carbon_steel')
+    event.metal('gtceu:high_carbon_black_steel', 1535, 0.00857, '#forge:ingots/high_carbon_black_steel', null, null, 4, 'tfc:high_carbon_black_steel')
+    event.metal('gtceu:high_carbon_red_steel', 1535, 0.00857, '#forge:ingots/high_carbon_red_steel', null, null, 5, 'tfc:high_carbon_red_steel')
+    event.metal('gtceu:high_carbon_blue_steel', 1535, 0.00857, '#forge:ingots/high_carbon_blue_steel', null, null, 5, 'tfc:high_carbon_blue_steel')
+    event.metal('gtceu:weak_steel', 1540, 0.00857, '#forge:ingots/weak_steel', null, null, 4, 'tfc:weak_steel')
+    event.metal('gtceu:weak_red_steel', 1540, 0.00857, '#forge:ingots/weak_red_steel', null, null, 5, 'tfc:weak_red_steel')
+    event.metal('gtceu:weak_blue_steel', 1540, 0.00857, '#forge:ingots/weak_blue_steel', null, null, 5, 'tfc:weak_blue_steel')
+    event.metal('gtceu:unknown', 400, 0.006, '#forge:ingots/unknown', null, null, 0, 'tfc:unknown')
+
+    event.metal('gtceu:iron', 1535, 0.00857, '#forge:ingots/iron', '#forge:double_ingots/iron', '#forge:plates/iron', 3, 'tfc:cast_iron')
     event.metal('gtceu:tin', 230, 0.02143, '#forge:ingots/tin', '#forge:double_ingots/tin', '#forge:plates/tin', 1, 'tfc:tin')
     event.metal('gtceu:bismuth', 270, 0.02143, '#forge:ingots/bismuth', '#forge:double_ingots/bismuth', '#forge:plates/bismuth', 1, 'tfc:bismuth')
     event.metal('gtceu:zinc', 420, 0.01429, '#forge:ingots/zinc', '#forge:double_ingots/zinc', '#forge:plates/zinc', 1, 'tfc:zinc')
@@ -18,29 +39,16 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:rose_gold', 960, 0.00857, '#forge:ingots/rose_gold', '#forge:double_ingots/rose_gold', '#forge:plates/rose_gold', 1, 'tfc:rose_gold')
     event.metal('gtceu:silver', 961, 0.00625, '#forge:ingots/silver', '#forge:double_ingots/silver', '#forge:plates/silver', 1, 'tfc:silver')
     event.metal('gtceu:gold', 1060, 0.005, '#forge:ingots/gold', '#forge:double_ingots/gold', '#forge:plates/gold', 1, 'tfc:gold')
-    event.metal('gtceu:copper', 1080, 0.00857, '#forge:ingots/copper', '#forge:double_ingots/copper', '#forge:plates/copper', 1, 'tfc:copper')
     event.metal('gtceu:nickel', 1453, 0.00625, '#forge:ingots/nickel', '#forge:double_ingots/nickel', '#forge:plates/nickel', 1, 'tfc:nickel')
-    
     event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
-    event.metal('gtceu:bronze', 950, 0.00857, '#forge:ingots/bronze', '#forge:double_ingots/bronze', '#forge:plates/bronze', 2, 'tfc:bronze')
-    event.metal('gtceu:bismuth_bronze', 985, 0.00857, '#forge:ingots/bismuth_bronze', '#forge:double_ingots/bismuth_bronze', '#forge:plates/bismuth_bronze', 2, 'tfc:bismuth_bronze')
-    event.metal('gtceu:black_bronze', 1070, 0.00857, '#forge:ingots/black_bronze', '#forge:double_ingots/black_bronze', '#forge:plates/black_bronze', 2, 'tfc:black_bronze')
-
-    // event.metal('gtceu:iron', 1535, 0.00857, '#forge:ingots/iron', '#forge:double_ingots/iron', '#forge:plates/iron', 3, 'tfg:iron')
-    event.metal('gtceu:wrought_iron', 1535, 0.00857, '#forge:ingots/wrought_iron', '#forge:double_ingots/wrought_iron', '#forge:plates/wrought_iron', 3, 'tfc:wrought_iron')
-
-    event.metal('gtceu:steel', 1540, 0.00857, '#forge:ingots/steel', '#forge:double_ingots/steel', '#forge:plates/steel', 4, 'tfc:steel')
-
-    event.metal('gtceu:black_steel', 1485, 0.00857, '#forge:ingots/black_steel', '#forge:double_ingots/black_steel', '#forge:plates/black_steel', 5, 'tfc:black_steel')
-    event.metal('gtceu:blue_steel', 1540, 0.00857, '#forge:ingots/blue_steel', '#forge:double_ingots/blue_steel', '#forge:plates/blue_steel', 6, 'tfc:blue_steel')
-    event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
-
+    
     event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
     event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
     event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
 
 const registerTFCHeats = (event) => {
+    /*
     Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
         let metal = keyValuePair[0]
         let metalSpecs = keyValuePair[1]
@@ -89,7 +97,7 @@ const registerTFCHeats = (event) => {
             event.itemHeat(`gtceu:${metal}_butchery_knife`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
             event.itemHeat(`gtceu:${metal}_knife_butchery_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
         }
-    })
+    })*/
 
     // Ведро из синей стали
     event.itemHeat('tfc:metal/bucket/blue_steel', 1.429, 924, 1232)
