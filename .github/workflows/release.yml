@@ -307,7 +307,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
-      - name: close-fixed-in-dev
+      - name: Сlose fixed in dev
         uses: juraj-hrivnak/close-issues-based-on-label@master
         env:
           LABEL: "2. Status: Fixed in Dev"
