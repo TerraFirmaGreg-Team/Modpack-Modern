@@ -48,56 +48,43 @@ const registerTFCMetals = (event) => {
 }
 
 const registerTFCHeats = (event) => {
-    /*
-    Object.entries(global.METAL_TO_SPECS).forEach(keyValuePair => {
-        let metal = keyValuePair[0]
-        let metalSpecs = keyValuePair[1]
+    
+    function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty, heatCapacity) {
+        let item = ChemicalHelper.get(tagPrefix, material, 1)
+        if (!item.isEmpty()) event.itemHeat(item, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
+    }
 
-        if (metalSpecs.props.includes('dusts')) {
-            event.itemHeat(`gtceu:${metal}_tiny_dust`, 0.357, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_small_dust`, 0.714, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_dust`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
+    GTRegistries.MATERIALS.forEach(material => {
+        let tfcProperty = material.getProperty($TFGPropertyKeys.TFC_PROPERTY)
 
-            event.itemHeat(`gtceu:${metal}_rod`, 0.567, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_bolt`, 0.245, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_screw`, 0.567, metalSpecs.forging_temp, metalSpecs.welding_temp)
-        }
+        if (tfcProperty != null) {
+            makeItemHeatByTagPrefix(TagPrefix.dustTiny, material, tfcProperty, 0.357)
+            makeItemHeatByTagPrefix(TagPrefix.dustSmall, material, tfcProperty, 0.714)
+            makeItemHeatByTagPrefix(TagPrefix.dust, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.rod, material, tfcProperty, 0.567)
+            makeItemHeatByTagPrefix(TagPrefix.bolt, material, tfcProperty, 0.245)
+            makeItemHeatByTagPrefix(TagPrefix.screw, material, tfcProperty, 0.567)
+            makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
+            
+            makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.poorRawOre, material, tfcProperty, 1.429)
 
-        if (metalSpecs.props.includes('nugget')) {
-            event.itemHeat(`gtceu:${metal}_nugget`, 0.124, metalSpecs.forging_temp, metalSpecs.welding_temp)
-        }
-
-        if (metalSpecs.props.includes('ore_chunks')) {
-            event.itemHeat(`#forge:rich_raw_materials/${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`#forge:raw_materials/${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`#forge:poor_raw_materials/${metal}`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-        }
-
-        if (metalSpecs.props.includes('tool')) {
-            event.itemHeat(`gtceu:${metal}_sword`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_sword_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_shovel`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_shovel_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_scythe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_scythe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_pickaxe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_pickaxe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_saw`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_saw_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_knife`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_knife_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_hoe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_hoe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_hammer`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_hammer_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_axe`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_axe_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_file`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_file_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_butchery_knife`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-            event.itemHeat(`gtceu:${metal}_knife_butchery_head`, 1.429, metalSpecs.forging_temp, metalSpecs.welding_temp)
-        }
-    })*/
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadScythe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadPickaxe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadSaw, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadKnife, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadHoe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadHammer, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadAxe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadFile, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix($TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
+        } 
+    })
 
     // Ведро из синей стали
     event.itemHeat('tfc:metal/bucket/blue_steel', 1.429, 924, 1232)
