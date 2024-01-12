@@ -56,6 +56,9 @@ jobs:
     name: Close Fixed Issues
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        
       - name: Сlose fixed in dev
         uses: lowply/auto-closer@v0.0.6
         env:
