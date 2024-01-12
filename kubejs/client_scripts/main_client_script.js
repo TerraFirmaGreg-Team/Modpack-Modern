@@ -21,7 +21,6 @@ JEIEvents.hideItems(event => {
 //     groupTFCStuff(event)
 // })
 
-
 JEIEvents.removeCategories(event => {
     // НЕ РАБОТАЕТ СУКА, РАЗРАБ НАСРАЛ!
 
