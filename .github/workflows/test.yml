@@ -3,6 +3,8 @@ run-name: "Test #${{ github.run_number }}"
 
 on:
   push:
+    branches:
+      - main
   # push:
   #   tags:
   #     - "test"
@@ -58,12 +60,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-        
+
       - name: Сlose fixed in dev
-        uses: lowply/auto-closer@v0.0.6
-        env:
-          AC_LABEL: "2. Status: Fixed in Dev"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          issues=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/issues?state=open")
+
+          if echo "${labels}" | jq -e '.[].name | select(. == "2. Status: Fixed in Dev")' > /dev/null; then
+            curl \
+                -X PATCH \
+                -H "Accept: application/vnd.github.v3+json" \
+                -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/${{ github.repository }}/issues/${issue}" \
+                -d '{"state": "closed"}'
+            fi
+          done
 
       
 
