@@ -14,10 +14,10 @@ const registerTFCRecipes = (event) => {
 
         if (tfcProperty != null) {
 
-            let outputMaterial = (tfcProperty.getOutputFluid() == null) ? material.getFluid() : tfcProperty.getOutputFluid()
+            let outputMaterial = (tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
 
             // Ingots
-            let ingotItem = ChemicalHelper.get(TagPrefix.ingot, material)
+            let ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
             if (!ingotItem.isEmpty()) {
                 
                 // Декрафт слитка в жидкость
@@ -42,7 +42,7 @@ const registerTFCRecipes = (event) => {
                         .id(`tfc:heating/metal/${material}_double_ingot`)
 
                     // Plates
-                    let plateItem = ChemicalHelper.get(TagPrefix.plate, material)
+                    let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
                     if (!plateItem.isEmpty()) {
                         
                         // Декрафт пластины в жидкость
@@ -56,7 +56,7 @@ const registerTFCRecipes = (event) => {
                             .id(`tfc:anvil/${material}_sheet`)
 
                         // Double Plate
-                        let doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material)
+                        let doublePlateItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
                         if (!doublePlateItem.isEmpty()) {
 
                             // Декрафт двойных пластин
@@ -261,7 +261,7 @@ const registerTFCRecipes = (event) => {
 
                         }
                         
-                        let swordHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSword, material)
+                        let swordHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSword, material, 1)
                         if (!swordHeadItem.isEmpty()) {
                             
                             // Декрафт оголовья в жидкость
@@ -319,7 +319,7 @@ const registerTFCRecipes = (event) => {
 
                         }
                         
-                        let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolButcheryKnifeHead, material)
+                        let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material, 1)
                         if (!butcheryKnifeHeadItem.isEmpty()) {
                             
                             // Декрафт оголовья в жидкость
@@ -351,7 +351,7 @@ const registerTFCRecipes = (event) => {
                         }
                         
 
-                        let miningHammerHeadItem = ChemicalHelper.get(TFGTagPrefix.toolButcheryKnifeHead, material)
+                        let miningHammerHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadMiningHammer, material, 1)
                         if (!miningHammerHeadItem.isEmpty()) {
                             
                             // Декрафт оголовья в жидкость
@@ -382,7 +382,7 @@ const registerTFCRecipes = (event) => {
                             
                         }
                         
-                        let spadeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolButcheryKnifeHead, material)
+                        let spadeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSpade, material, 1)
                         if (!spadeHeadItem.isEmpty()) {
 
                             // Крафт оголовья
@@ -404,7 +404,7 @@ const registerTFCRecipes = (event) => {
                 }
 
                 // Rods
-                let rodItem = ChemicalHelper.get(TagPrefix.rod, material)
+                let rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
                 if (!rodItem.isEmpty()) {
                     
                     // Декрафт стержня в жидкость
@@ -418,7 +418,7 @@ const registerTFCRecipes = (event) => {
                         .id(`tfc:anvil/${material}_rod`)
 
                     // Long Rods
-                    let longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material)
+                    let longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
                     if (!longRodItem.isEmpty()) {
                         
                         // Декрафт длинного стержня в жидкость
@@ -434,7 +434,7 @@ const registerTFCRecipes = (event) => {
                     }
 
                     // Bolt
-                    let boltItem = ChemicalHelper.get(TagPrefix.bolt, material)
+                    let boltItem = ChemicalHelper.get(TagPrefix.bolt, material, 1)
                     if (!boltItem.isEmpty()) {
                         
                         // Болт -> Металл
@@ -450,7 +450,7 @@ const registerTFCRecipes = (event) => {
                     }
 
                     // Screw
-                    let screwItem = ChemicalHelper.get(TagPrefix.screw, material)
+                    let screwItem = ChemicalHelper.get(TagPrefix.screw, material, 1)
                     if (!screwItem.isEmpty()) {
                         
                         // Винт -> Металл
@@ -465,7 +465,7 @@ const registerTFCRecipes = (event) => {
 
                     }
 
-                    let ringItem = ChemicalHelper.get(TagPrefix.ring, material)
+                    let ringItem = ChemicalHelper.get(TagPrefix.ring, material, 1)
                     if (!ringItem.isEmpty()) {
                         
                         // Кольцо -> Металл
@@ -476,7 +476,7 @@ const registerTFCRecipes = (event) => {
                         // Стержень -> Кольцо
                         event.recipes.tfc.anvil(ringItem, rodItem, ['hit_last', 'hit_second_last', 'hit_third_last'])
                             .tier(tfcProperty.getTier())
-                            .id(`tfc:anvil/${material}_screw`)
+                            .id(`tfc:anvil/${material}_ring`)
 
                     }
                     
@@ -501,7 +501,7 @@ const registerTFCRecipes = (event) => {
                         
                     }
 
-                    let pickaxeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadPickaxe)
+                    let pickaxeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadPickaxe, material, 1)
                     if (!pickaxeHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -541,7 +541,7 @@ const registerTFCRecipes = (event) => {
                         
                     }
                     
-                    let axeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadAxe)
+                    let axeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadAxe, material, 1)
                     if (!axeHeadItem.isEmpty()) {
                         // Декрафт оголовья в жидкость
                         event.recipes.tfc.heating(axeHeadItem, tfcProperty.getMeltTemp())
@@ -579,7 +579,7 @@ const registerTFCRecipes = (event) => {
                         
                     }
                     
-                    let shovelHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadShovel, material)
+                    let shovelHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadShovel, material, 1)
                     if (!shovelHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -617,7 +617,7 @@ const registerTFCRecipes = (event) => {
                             .id(`tfc:heating/metal/${material}_hoe`)
                     }
                     
-                    let hoeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadHoe, material)
+                    let hoeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadHoe, material, 1)
                     if (!hoeHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -657,7 +657,7 @@ const registerTFCRecipes = (event) => {
                         
                     }
                     
-                    let hammerHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadHammer, material)
+                    let hammerHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadHammer, material, 1)
                     if (!hammerHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -697,7 +697,7 @@ const registerTFCRecipes = (event) => {
                         
                     }
                     
-                    let sawHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSaw, material)
+                    let sawHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSaw, material, 1)
                     if (!sawHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -735,7 +735,7 @@ const registerTFCRecipes = (event) => {
                             .id(`tfc:heating/metal/${material}_scythe`)
                     }
                     
-                    let scytheHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadScythe, material)
+                    let scytheHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadScythe, material, 1)
                     if (!scytheHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -770,7 +770,7 @@ const registerTFCRecipes = (event) => {
                             .id(`tfc:heating/metal/${material}_file`)
                     }
                     
-                    let fileHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadFile, material)
+                    let fileHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadFile, material, 1)
                     if (!fileHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -802,7 +802,7 @@ const registerTFCRecipes = (event) => {
                             .id(`tfc:heating/metal/${material}_knife`)
                     }
                     
-                    let knifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material)
+                    let knifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material, 1)
                     if (!knifeHeadItem.isEmpty()) {
                         
                         // Декрафт оголовья в жидкость
@@ -908,7 +908,7 @@ const registerTFCRecipes = (event) => {
             }
 
             // Blocks
-            let blockItem = ChemicalHelper.get(TagPrefix.block, material)
+            let blockItem = ChemicalHelper.get(TagPrefix.block, material, 1)
             if (!blockItem.isEmpty()) {
                 
                 // Декрафт блока в жидкость
@@ -922,16 +922,16 @@ const registerTFCRecipes = (event) => {
             if (material.hasFlag(TFGMaterialFlags.HAS_TFC_UTILITY)) {
                 
                 // Удаление рецептов блоков
-                event.remove({ id: `tfc:crafting/metal/block/${metal}` })
-                event.remove({ id: `tfc:heating/metal/${metal}_block` })
+                event.remove({ id: `tfc:crafting/metal/block/${material}` })
+                event.remove({ id: `tfc:heating/metal/${material}_block` })
 
                 // Удаление рецептов ступеней
-                event.remove({ id: `tfc:crafting/metal/block/${metal}_stairs` })
-                event.remove({ id: `tfc:heating/metal/${metal}_block_stairs` })
+                event.remove({ id: `tfc:crafting/metal/block/${material}_stairs` })
+                event.remove({ id: `tfc:heating/metal/${material}_block_stairs` })
 
                 // Удалание рецептов полублоков
-                event.remove({ id: `tfc:crafting/metal/block/${metal}_slab` })
-                event.remove({ id: `tfc:heating/metal/${metal}_block_slab` })
+                event.remove({ id: `tfc:crafting/metal/block/${material}_slab` })
+                event.remove({ id: `tfc:heating/metal/${material}_block_slab` })
 
                 // Декрафт незавершенной лампы в жидкость
                 event.recipes.tfc.heating(`tfc:metal/unfinished_lamp/${material}`, tfcProperty.getMeltTemp())
@@ -1015,7 +1015,7 @@ const registerTFCRecipes = (event) => {
             if (material.hasProperty(PropertyKey.DUST)) {
                 
                 // Декрафт мелкой пыли
-                let tinyDust = ChemicalHelper.get(TagPrefix.dustTiny, material)
+                let tinyDust = ChemicalHelper.get(TagPrefix.dustTiny, material, 1)
                 if (!tinyDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(tinyDust, tfcProperty.getMeltTemp())
@@ -1025,7 +1025,7 @@ const registerTFCRecipes = (event) => {
                 }
                 
                 // Декрафт средней пыли
-                let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material)
+                let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
                 if (!smallDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(smallDust, tfcProperty.getMeltTemp())
@@ -1035,7 +1035,7 @@ const registerTFCRecipes = (event) => {
                 }
     
                 // Декрафт пыли
-                let dust = ChemicalHelper.get(TagPrefix.dust, material)
+                let dust = ChemicalHelper.get(TagPrefix.dust, material, 1)
                 if (!dust.isEmpty()) {
                    
                     event.recipes.tfc.heating(dust, tfcProperty.getMeltTemp())
@@ -1045,7 +1045,7 @@ const registerTFCRecipes = (event) => {
                 }
 
                 // Декрафт грязной пыли
-                let impureDust = ChemicalHelper.get(TagPrefix.dustImpure, material)
+                let impureDust = ChemicalHelper.get(TagPrefix.dustImpure, material, 1)
                 if (!impureDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(impureDust, tfcProperty.getMeltTemp())
@@ -1055,7 +1055,7 @@ const registerTFCRecipes = (event) => {
                 }
 
                 // Декрафт очищенной пыли
-                let purifiedDust = ChemicalHelper.get(TagPrefix.dustPure, material)
+                let purifiedDust = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
                 if (!purifiedDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(purifiedDust, tfcProperty.getMeltTemp())
@@ -1070,37 +1070,37 @@ const registerTFCRecipes = (event) => {
             if (material.hasProperty(PropertyKey.ORE)) {
                 
                 // Декрафт ломанной руды
-                let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material)
+                let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material, 1)
                 if (!crushedOre.isEmpty()) {
                    
-                    event.recipes.tfc.heating(dcrushedOreust, tfcProperty.getMeltTemp())
+                    event.recipes.tfc.heating(crushedOre, tfcProperty.getMeltTemp())
                         .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
-                        .id(`tfg:heating/dust/${material}`)
+                        .id(`tfg:heating/crushed_ore/${material}`)
                     
                 }
 
                 // Декрафт ломанной очищенной руды
-                let crushedPurifiedOre = ChemicalHelper.get(TagPrefix.crushedPurified, material)
+                let crushedPurifiedOre = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
                 if (!crushedPurifiedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedPurifiedOre, tfcProperty.getMeltTemp())
                         .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial())))
-                        .id(`tfg:heating/tiny_dust/${material}`)
+                        .id(`tfg:heating/crushed_purified_ore/${material}`)
                     
                 }
 
                 // Декрафт центрифугированной ломанной руды
-                let crushedRefinedOre = ChemicalHelper.get(TagPrefix.crushedRefined, material)
+                let crushedRefinedOre = ChemicalHelper.get(TagPrefix.crushedRefined, material, 1)
                 if (!crushedRefinedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedRefinedOre, tfcProperty.getMeltTemp())
                         .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
-                        .id(`tfg:heating/tiny_dust/${material}`)
+                        .id(`tfg:heating/crushed_refined_ore/${material}`)
                     
                 }
 
                 // Декрафт богатого куска руды
-                let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material)
+                let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
                 if (!richRawOre.isEmpty()) {
                     
                     event.recipes.tfc.heating(richRawOre, tfcProperty.getMeltTemp())
@@ -1110,7 +1110,7 @@ const registerTFCRecipes = (event) => {
                 }
                 
                 // Декрафт нормального куска руды
-                let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material)
+                let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
                 if (!normalRawOre.isEmpty()) {
                     
                     event.recipes.tfc.heating(normalRawOre, tfcProperty.getMeltTemp())
@@ -1120,7 +1120,7 @@ const registerTFCRecipes = (event) => {
                 }
                 
                 // Декрафт бедного куска руды
-                let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material)
+                let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
                 if (!poorRawOre.isEmpty()) {
                     event.recipes.tfc.heating(poorRawOre, tfcProperty.getMeltTemp())
                         .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
@@ -1129,7 +1129,7 @@ const registerTFCRecipes = (event) => {
             }
 
             // Nuggets
-            let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material)
+            let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, material, 1)
             if (!nuggetItem.isEmpty()) {
                 
                 // Декрафт самородков пыли
