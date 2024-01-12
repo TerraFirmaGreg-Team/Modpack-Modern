@@ -1,79 +1,30 @@
-name: Test
-run-name: "Test #${{ github.run_number }}"
-
+name: Close Fixed Issues
 on:
   push:
     branches:
       - main
-  # push:
-  #   tags:
-  #     - "test"
-
-
-concurrency:
-  group: ${{ github.ref }}
-  cancel-in-progress: true
-
-env:
-  CF_PROJECT_ID: "385053"
-  CF_RELEASE_ID: "5025212"
-  MODRINTH_PROJECT_ID: "75JuuMzk"
-  RELEASE_TYPE: "BETA"
-  MC_VERSION: "1.20.1"
-  PROJECT_VERSION: "0.5.0"
 
 jobs:
-  # discord-message:
-  #   name: Discord Message
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v4.1.1
-        
-  #     - name: Changelog Parser
-  #       id: changelog
-  #       uses: coditory/changelog-parser@v1.0.2
-  #       with:
-  #         path: CHANGELOG.md
-
-  #     - name: Send Discord message
-  #       uses: tsickert/discord-webhook@v5.4.0
-  #       with:
-  #         webhook-url: ${{secrets.RELEASES_1_20}}
-  #         username: "TerraFirmaGreg"
-  #         avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
-  #         embed-title: Release ${{ env.PROJECT_VERSION }}
-  #         embed-url: https://github.com/TerraFirmaGreg-Team/TFG-Modpack-1.20.x/releases/tag/${{ env.PROJECT_VERSION }}
-  #         embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
-  #         embed-description: |
-  #           **Release Type**: `${{ env.RELEASE_TYPE }}`
-  #           **GameVersion**: `${{ env.MC_VERSION }}`
-  #           **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ env.CF_RELEASE_ID }})
-
-  #           **Changelog**
-  #           ```${{ steps.changelog.outputs.description }}```
-  #         embed-color: 5814783
-
-  close-fixed-issues:
-    name: Close Fixed Issues
+  closeIssues:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
-      - name: Сlose fixed in dev
+      - name: Close Fixed Issues
         run: |
-          issues=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/issues?state=open")
-
-          if echo "${labels}" | jq -e '.[].name | select(. == "2. Status: Fixed in Dev")' > /dev/null; then
-            curl \
+          issues=$(curl -s -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-1.20.x/issues?state=open")
+          
+          for issue in $(echo "${issues}" | jq -r '.[].number'); do
+            labels=$(curl -s -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-1.20.x/issues/${issue}/labels")
+            
+            if echo "${labels}" | jq -e '.[].name | select(. == "2. Status: Fixed in Dev")' > /dev/null; then
+              curl \
                 -X PATCH \
                 -H "Accept: application/vnd.github.v3+json" \
-                -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-                "https://api.github.com/repos/${{ github.repository }}/issues/${issue}" \
+                -H "Authorization: ${{ secrets.GITHUB_TOKEN }}" \
+                "https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-1.20.x/issues/${issue}" \
                 -d '{"state": "closed"}'
             fi
           done
-
-      
-
