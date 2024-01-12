@@ -2591,8 +2591,8 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
-    event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')
-        .id('minecraft:copper_ingot_from_smelting_raw_copper')
+    //event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')
+    //    .id('minecraft:copper_ingot_from_smelting_raw_copper')
 
     event.remove({ id: 'minecraft:copper_ingot_from_blasting_raw_copper' })
     event.remove({ id: 'minecraft:copper_ingot_from_waxed_copper_block' })
@@ -2605,8 +2605,8 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Исправление дерьма с золотом (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
-    event.smelting('tfc:metal/ingot/gold', 'minecraft:raw_gold')
-        .id('minecraft:copper_ingot_from_smelting_raw_gold')
+    //event.smelting('tfc:metal/ingot/gold', 'minecraft:raw_gold')
+    //    .id('minecraft:copper_ingot_from_smelting_raw_gold')
 
     event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
     event.remove({ id: 'minecraft:gold_ingot_from_blasting_raw_gold' })

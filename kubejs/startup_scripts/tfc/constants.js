@@ -86,6 +86,8 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/tin",
     "tfc:metal/ingot/zinc",
     "tfc:metal/ingot/cast_iron",
+    "tfc:metal/ingot/copper",
+    "tfc:metal/ingot/gold",
 
     // Double Ingots
     "tfc:metal/double_ingot/cast_iron",
@@ -1090,6 +1092,15 @@ global.METAL_TO_SPECS = {
     },
 
     // Проходные металлы
+    high_carbon_steel: {
+        forging_temp: 924,
+        melt_temp: 1540,
+        welding_temp: 1232,
+        output_fluid: "tfc:metal/high_carbon_steel",
+        tier: 3,
+        props: [global.INGOT_GEN],
+    },
+
     high_carbon_black_steel: {
         forging_temp: 924,
         melt_temp: 1540,
@@ -1114,15 +1125,6 @@ global.METAL_TO_SPECS = {
         welding_temp: 1232,
         output_fluid: "tfc:metal/high_carbon_blue_steel",
         tier: 4,
-        props: [global.INGOT_GEN],
-    },
-
-    high_carbon_steel: {
-        forging_temp: 924,
-        melt_temp: 1540,
-        welding_temp: 1232,
-        output_fluid: "tfc:metal/high_carbon_steel",
-        tier: 3,
         props: [global.INGOT_GEN],
     },
 
