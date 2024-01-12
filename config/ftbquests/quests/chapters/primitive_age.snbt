@@ -1990,17 +1990,13 @@
 			dependency_requirement: "one_completed"
 			id: "169485270E86A50C"
 			tasks: [{
-				icon: "tfc:rock/anvil/basalt"
-				id: "728B5BCCE4E941E1"
-				item: {
-					Count: 1b
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_anvils)"
-					}
-				}
-				title: "Any #tfc:rock_anvils"
-				type: "item"
+				icon: "tfc:rock/raw/andesite"
+				id: "028DBFDDC00B9949"
+				observe_type: 1
+				timer: 0L
+				title: "Сделайте каменную наковальню"
+				to_observe: "#tfc:rock_anvils"
+				type: "observation"
 			}]
 			x: 13.5d
 			y: 18.5d

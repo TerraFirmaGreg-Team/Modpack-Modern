@@ -1270,14 +1270,26 @@ const registerGTCEURecipes = (event) => {
         if (material.hasFlag($TFGMaterialFlags.HAS_TFC_TOOL)) {
             global.GTCEU_ANVIL_TOOL_TYPES.forEach(toolType => {
                 let toolStack = $ToolHelper.get(toolType, material)
-    
-                event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
-                    'A',
-                    'B'
-                ], {
-                    A: `gtceu:${material}_${toolType.name}_head`,
-                    B: '#forge:rods/wooden'
-                }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
+
+                if (toolType == GTToolType.BUTCHERY_KNIFE) {
+                    event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
+                        'A',
+                        'B'
+                    ], {
+                        A: `gtceu:${material}_knife_butchery_head`,
+                        B: '#forge:rods/wooden'
+                    }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
+                }
+                else {
+                    event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
+                        'A',
+                        'B'
+                    ], {
+                        A: `gtceu:${material}_${toolType.name}_head`,
+                        B: '#forge:rods/wooden'
+                    }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
+                }
+                
     
             })
         }
