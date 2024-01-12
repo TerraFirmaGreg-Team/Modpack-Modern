@@ -299,20 +299,20 @@ jobs:
             ```${{ needs.modpack-info.outputs.changelog }}```
           embed-color: 5814783
 
-  close-fixed-issues:
-    name: Close Fixed Issues
-    needs: [modpack-info, release-github, release-curseforge]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.1
+  # close-fixed-issues:
+  #   name: Close Fixed Issues
+  #   needs: [modpack-info, release-github, release-curseforge]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
 
-      - name: Сlose fixed in dev
-        uses: juraj-hrivnak/close-issues-based-on-label@master
-        env:
-          LABEL: "2. Status: Fixed in Dev"
-          VERSION: ${{ needs.modpack-info.outputs.project_version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     - name: Сlose fixed in dev
+  #       uses: juraj-hrivnak/close-issues-based-on-label@master
+  #       env:
+  #         LABEL: "2. Status: Fixed in Dev"
+  #         VERSION: ${{ needs.modpack-info.outputs.project_version }}
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       
 
