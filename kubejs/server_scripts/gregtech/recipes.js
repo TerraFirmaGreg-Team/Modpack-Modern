@@ -1398,16 +1398,22 @@ const registerGTCEURecipes = (event) => {
             }
         }
 
-        if (material.hasProperty(PropertyKey.INGOT)) {
-            event.recipes.createCrushing(Item.of(`#forge:dusts/${material}`), `#forge:ingots/${material}`)
-                .processingTime(150)
-                .id(`tfg:crushing/${material}_dust`)
-        } 
-        else {
-            event.recipes.createMilling(Item.of(`#forge:dusts/${material}`), `#forge:gems/${material}`)
-                .processingTime(150)
-                .id(`tfg:milling/${material}_dust`)
+        let dustStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+
+        if (!dustStack.isEmpty()) {
+            
+            if (material.hasProperty(PropertyKey.INGOT)) {
+                event.recipes.createCrushing(dustStack, `#forge:ingots/${material}`)
+                    .processingTime(150)
+                    .id(`tfg:crushing/${material}_dust`)
+            } 
+            else {
+                event.recipes.createMilling(dustStack, `#forge:gems/${material}`)
+                    .processingTime(150)
+                    .id(`tfg:milling/${material}_dust`)
+            }
         }
+        
     });
 
     //#endregion
