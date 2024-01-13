@@ -37,7 +37,7 @@
 		#Toggles Minecraft Fonts shadows
 		#Depending of the case may increase performance
 		#Gives a flat style text
-		fontShadows = false
+		fontShadows = true
 
 		[embeddiumplus.performance.distanceCulling]
 
@@ -104,7 +104,7 @@
 			#Configure Darkness Mode
 			#Each config changes what is considered 'true darkness'
 			#Allowed Values: TOTAL_DARKNESS, PITCH_BLACK, DARK, DIM, OFF
-			mode = "PITCH_BLACK"
+			mode = "DARK"
 			#Configure fog brightness on nether when darkness is enabled
 			#Range: 0.0 ~ 1.0
 			endFogBright = 0.5
