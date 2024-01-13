@@ -11,6 +11,7 @@ const registerGTCEURecipes = (event) => {
             '2x #forge:dusts/wood',
             '4x #forge:sand'
         )
+        .circuit(1)
         .inputFluids(Fluid.of('minecraft:water', 1000))
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)
@@ -23,6 +24,7 @@ const registerGTCEURecipes = (event) => {
             '2x #forge:dusts/wood',
             '4x #forge:sand'
         )
+        .circuit(1)
         .inputFluids(Fluid.of('minecraft:water', 1000))
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)

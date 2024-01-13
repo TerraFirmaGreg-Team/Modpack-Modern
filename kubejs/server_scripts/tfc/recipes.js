@@ -2404,6 +2404,26 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Рецепты зерен
+
+    global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS.forEach(element => {
+        
+        event.recipes.gtceu.macerator(`tfg:${element.name}`)             
+            .itemInputs(element.input)
+            .itemOutputs(element.output)
+            .chancedOutput('tfc:straw', 7000, 500)
+            .duration(200)
+            .EUt(16)
+
+        event.recipes.tfc.quern(element.output, element.input)
+            .id(`tfg:quern/${element.name}`)
+
+        event.recipes.createMilling(element.output, element.input)
+            .id(`tfg:milling/${element.name}`)
+    })
+
+    //#endregion
+
     //#region Рецепты муки
 
     global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {

@@ -204,6 +204,15 @@ const registerTFCBlockTags = (event) => {
 
     event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
     event.add('tfc:glass_pouring_table', 'gtceu:brass_block')
+
+    event.add('tfc:glass_basin_blocks', 'tfc:red_kaolin_clay')
+    event.add('tfc:glass_pouring_table', 'tfc:red_kaolin_clay')
+
+    event.add('tfc:glass_basin_blocks', 'tfc:pink_kaolin_clay')
+    event.add('tfc:glass_pouring_table', 'tfc:pink_kaolin_clay')
+
+    event.add('tfc:glass_basin_blocks', 'tfc:white_kaolin_clay')
+    event.add('tfc:glass_pouring_table', 'tfc:white_kaolin_clay')
 }
 
 const registerTFCFluidTags = (event) => {

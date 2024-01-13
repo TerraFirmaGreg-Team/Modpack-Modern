@@ -921,6 +921,15 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: '#forge:dusts/borax', output: '4x tfc:powder/flux', name: 'flux_powder' }
 ];
 
+global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS = [
+    { input: 'tfc:food/barley', output: 'tfc:food/barley_grain', name: 'barley_grain' },
+    { input: 'tfc:food/maize', output: 'tfc:food/maize_grain', name: 'maize_grain' },
+    { input: 'tfc:food/oat', output: 'tfc:food/oat_grain', name: 'oat_grain' },
+    { input: 'tfc:food/rye', output: 'tfc:food/rye_grain', name: 'rye_grain' },
+    { input: 'tfc:food/rice', output: 'tfc:food/rice_grain', name: 'rice_grain' },
+    { input: 'tfc:food/wheat', output: 'tfc:food/wheat_grain', name: 'wheat_grain' },
+];
+
 global.TFC_QUERN_FLOUR_RECIPE_COMPONENTS = [
     { input: 'tfc:food/barley_grain', output: '2x tfc:food/barley_flour', name: 'barley_flour' },
     { input: 'tfc:food/maize_grain', output: '2x tfc:food/maize_flour', name: 'maize_flour' },
