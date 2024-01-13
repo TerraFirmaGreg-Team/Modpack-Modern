@@ -47,10 +47,11 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material}_fire_ingot`)
       
                 // Double Ingots
-                if (material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) {
+                let doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material)
+                if (!doubleIngotItem.isEmpty()) {
                     
                     // Декрафт двойного слитка в жидкость
-                    event.recipes.tfc.heating(`tfc:metal/double_ingot/${material}`, tfcProperty.getMeltTemp())
+                    event.recipes.tfc.heating(doubleIngotItem, tfcProperty.getMeltTemp())
                         .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
                         .id(`tfc:heating/metal/${material}_double_ingot`)
 
@@ -64,7 +65,7 @@ const registerTFCRecipes = (event) => {
                             .id(`tfc:heating/metal/${material}_sheet`)
 
                         // Двойной слиток -> Пластина
-                        event.recipes.tfc.anvil(plateItem, `tfc:metal/double_ingot/${material}`, ['hit_last', 'hit_second_last', 'hit_third_last'])
+                        event.recipes.tfc.anvil(plateItem, doubleIngotItem, ['hit_last', 'hit_second_last', 'hit_third_last'])
                             .tier(tfcProperty.getTier())
                             .id(`tfc:anvil/${material}_sheet`)
 
@@ -283,7 +284,7 @@ const registerTFCRecipes = (event) => {
                                 .id(`tfc:heating/metal/${material}_sword_blade`)
 
                             // Крафт оголовья
-                            event.recipes.tfc.anvil(swordHeadItem, `#forge:double_ingots/${material}`, ['punch_last', 'bend_not_last', 'draw_not_last'])
+                            event.recipes.tfc.anvil(swordHeadItem, doubleIngotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
                                 .tier(tfcProperty.getTier())
                                 .bonus(true)
                                 .id(`tfc:anvil/${material}_sword_blade`)
@@ -373,7 +374,7 @@ const registerTFCRecipes = (event) => {
                                 .id(`tfc:heating/metal/${material}_mining_hammer_head`)
 
                              // Крафт оголовья
-                            event.recipes.tfc.anvil(miningHammerHeadItem, `#forge:double_ingots/${material}`, ['punch_last', 'shrink_not_last'])
+                            event.recipes.tfc.anvil(miningHammerHeadItem, doubleIngotItem, ['punch_last', 'shrink_not_last'])
                                 .tier(tfcProperty.getTier())
                                 .bonus(true)
                                 .id(`tfc:anvil/${material}_mining_hammer_head`)
@@ -399,7 +400,7 @@ const registerTFCRecipes = (event) => {
                         if (!spadeHeadItem.isEmpty()) {
 
                             // Крафт оголовья
-                            event.recipes.tfc.anvil(spadeHeadItem, `#forge:double_ingots/${material}`, ['punch_last', 'hit_not_last'])
+                            event.recipes.tfc.anvil(spadeHeadItem, doubleIngotItem, ['punch_last', 'hit_not_last'])
                             .tier(tfcProperty.getTier())
                             .bonus(true)
                             .id(`tfc:anvil/${material}_spade_head`)

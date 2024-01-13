@@ -90,7 +90,25 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/ingot/gold",
 
     // Double Ingots
+    "tfc:metal/double_ingot/bismuth",
+    "tfc:metal/double_ingot/bismuth_bronze",
+    "tfc:metal/double_ingot/black_bronze",
+    "tfc:metal/double_ingot/bronze",
+    "tfc:metal/double_ingot/rose_gold",
+    "tfc:metal/double_ingot/sterling_silver",
+    "tfc:metal/double_ingot/wrought_iron",
+    "tfc:metal/double_ingot/steel",
+    "tfc:metal/double_ingot/black_steel",
+    "tfc:metal/double_ingot/red_steel",
+    "tfc:metal/double_ingot/blue_steel",
+    "tfc:metal/double_ingot/brass",
+    "tfc:metal/double_ingot/nickel",
+    "tfc:metal/double_ingot/silver",
+    "tfc:metal/double_ingot/tin",
+    "tfc:metal/double_ingot/zinc",
     "tfc:metal/double_ingot/cast_iron",
+    "tfc:metal/double_ingot/copper",
+    "tfc:metal/double_ingot/gold",
     
     // Sheets
     "tfc:metal/sheet/bismuth",
