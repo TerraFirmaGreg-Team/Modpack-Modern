@@ -47,7 +47,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material}_fire_ingot`)
       
                 // Double Ingots
-                let doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material)
+                let doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)
                 if (!doubleIngotItem.isEmpty()) {
                     
                     // Декрафт двойного слитка в жидкость
