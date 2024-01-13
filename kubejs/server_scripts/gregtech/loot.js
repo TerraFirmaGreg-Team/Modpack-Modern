@@ -8,9 +8,9 @@ const registerGTCEULoots = (event) => {
                 event.addBlockLootModifier(`gtceu:${stoneType}_${material}_ore`)
                     .removeLoot(Ingredient.all)
                     .addWeightedLoot([
-                        Item.of(`#forge:rich_raw_materials/${material}`).withChance(0.2),
-                        Item.of(`#forge:raw_materials/${material}`).withChance(0.6),
-                        Item.of(`#forge:poor_raw_materials/${material}`).withChance(0.2)
+                        ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1).withChance(0.2),
+                        ChemicalHelper.get(TagPrefix.rawOre, material, 1).withChance(0.6),
+                        ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1).withChance(0.2)
                     ]);
             }
         })
