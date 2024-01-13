@@ -55,6 +55,10 @@ const registerTFCRecipes = (event) => {
                         .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
                         .id(`tfc:heating/metal/${material}_double_ingot`)
 
+                    // 2 слитка -> Двойной слиток
+                    event.recipes.tfc.welding(doubleIngotItem, ingotItem, ingotItem, tfcProperty.getTier())
+                        .id(`tfc:welding/${material}_double_ingot`)
+
                     // Plates
                     let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
                     if (!plateItem.isEmpty()) {
