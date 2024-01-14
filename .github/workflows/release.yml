@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RELEASE_TYPE: "BETA"
+  RELEASE_TYPE: "RELEASE"
 
 jobs:
   modpack-info:
