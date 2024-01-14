@@ -1726,7 +1726,7 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Трибуна
 
-    event.remove({ id: 'tfc:Crafting/vanilla/lectern' })
+    event.remove({ id: 'tfc:crafting/vanilla/lectern' })
 
     //#endregion
 
