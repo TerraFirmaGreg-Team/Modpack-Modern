@@ -8,6 +8,7 @@ const registerTFCDataForTFC = (event) => {
     registerTFCFertilizers(event)
     registerTFCKnappingTypes(event)
     registerTFCItemSize(event)
+    registerTFCFoodData(event)
 }
 
 const registerTFCMetals = (event) => {
@@ -145,4 +146,18 @@ const registerTFCKnappingTypes = (event) => {
 
 const registerTFCItemSize = (event) => {
     // TODO event.itemSize('minecraft:gold_ingot', 'huge', 'very_heavy')
+}
+
+const registerTFCFoodData = (event) => {
+    event.foodItem('minecraft:golden_apple', food => {
+        food.hunger(2)
+        food.fruit(2)
+        food.decayModifier(0.6)
+    })
+
+    event.foodItem('minecraft:enchanted_golden_apple', food => {
+        food.hunger(3)
+        food.fruit(2)
+        food.decayModifier(0.2)
+    })
 }

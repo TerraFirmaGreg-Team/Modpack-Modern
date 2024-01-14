@@ -1398,20 +1398,24 @@ const registerGTCEURecipes = (event) => {
             }
         }
 
-        let dustStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        let gemStack = ChemicalHelper.get(TagPrefix.gem, material, 1)
+        let dustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
 
         if (!dustStack.isEmpty()) {
             
-            if (material.hasProperty(PropertyKey.INGOT)) {
-                event.recipes.createCrushing(dustStack, `#forge:ingots/${material}`)
-                    .processingTime(150)
+            if (!ingotStack.isEmpty()) {
+                event.recipes.createCrushing(dustStack, ingotStack)
+                    .processingTime(250)
                     .id(`tfg:crushing/${material}_dust`)
-            } 
-            else {
-                event.recipes.createMilling(dustStack, `#forge:gems/${material}`)
-                    .processingTime(150)
+            }
+            
+            if (!gemStack.isEmpty()) {
+                event.recipes.createMilling(dustStack, gemStack)
+                    .processingTime(200)
                     .id(`tfg:milling/${material}_dust`)
             }
+            
         }
         
     });
