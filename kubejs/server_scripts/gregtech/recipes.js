@@ -1110,7 +1110,7 @@ const registerGTCEURecipes = (event) => {
         A: 'minecraft:clay_ball',
         B: '#minecraft:sand',
         C: 'gtceu:brick_wooden_form'
-    }).replaceIngredient("gtceu:brick_wooden_form", Item.empty).id('gtceu:shaped/compressed_coke_clay')
+    }).replaceIngredient('gtceu:brick_wooden_form', 'gtceu:brick_wooden_form').id('gtceu:shaped/compressed_coke_clay')
 
     // Compressed Coke Clay -> Coke Oven Brick
     event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
