@@ -76,7 +76,6 @@ jobs:
           VERSION=${{ needs.modpack-info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
-          sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
 
       - name: Export CF
         run: |
@@ -107,7 +106,6 @@ jobs:
           VERSION=${{ needs.modpack-info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
-          sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
 
       - name: Download Mods
         run: |
