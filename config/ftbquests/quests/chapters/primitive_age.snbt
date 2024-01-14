@@ -2041,7 +2041,7 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/double_ingot/copper"
+					id: "gtceu:copper_double_ingot"
 				}
 				type: "item"
 			}]
@@ -2156,7 +2156,7 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/double_ingot/wrought_iron"
+					id: "gtceu:wrought_iron_double_ingot"
 				}
 				type: "item"
 			}]
@@ -2177,7 +2177,7 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/double_ingot/steel"
+					id: "gtceu:steel_double_ingot"
 				}
 				type: "item"
 			}]
@@ -2198,7 +2198,7 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/double_ingot/black_steel"
+					id: "gtceu:black_steel_double_ingot"
 				}
 				type: "item"
 			}]
@@ -2209,13 +2209,12 @@
 			dependencies: ["1FFE279F43B0BA45"]
 			id: "43C737BF10D3AC0E"
 			tasks: [{
-				count: 7L
-				id: "221753242C9F612A"
+				id: "06B99CF0B7120D13"
 				item: {
 					Count: 1b
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(tfc:metal/double_ingot/bismuth_bronze)item(tfc:metal/double_ingot/bronze)item(tfc:metal/double_ingot/black_bronze))"
+						"ftbfiltersystem:filter": "or(item(gtceu:bismuth_bronze_double_ingot)item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot))"
 					}
 				}
 				title: "Двойные слитки из любой бронзы"
@@ -3395,7 +3394,7 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/double_ingot/red_steel"
+					id: "gtceu:red_steel_double_ingot"
 				}
 				type: "item"
 			}]
@@ -3416,7 +3415,7 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/double_ingot/blue_steel"
+					id: "gtceu:blue_steel_double_ingot"
 				}
 				type: "item"
 			}]
