@@ -529,8 +529,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:suspicious_gravel',
     'minecraft:stonecutter',
     'minecraft:gravel',
-    'minecraft:gold_ingot',
-    'minecraft:copper_ingot',
     'minecraft:moss_block',
     'minecraft:moss_carpet',
     'minecraft:bamboo_raft',

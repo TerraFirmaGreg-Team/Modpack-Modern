@@ -1,6 +1,40 @@
 // priority: 1
 
-JEIEvents.hideItems(event => {
+if (Platform.isLoaded('jei')) {
+    
+    JEIEvents.hideItems(event => {
+        hideItems(event)
+    })
+
+    JEIEvents.hideFluids(event => {
+        hideFluids(event)
+    })
+
+    JEIEvents.removeCategories(event => {
+        removeCategories(event) // Не работает с EMI + JEI
+    })
+    
+} else if (Platform.isLoaded('rei')) {
+    
+    REIEvents.hide('items', event => {
+        hideItems(event)
+    })
+
+    REIEvents.hide('fluids', event => {
+        hideFluids(event)
+    })
+
+    REIEvents.removeCategories(event => {
+        removeCategories(event)
+    })
+
+    REIEvents.groupEntries(event => {
+        groupItems(event)
+    })
+    
+}
+
+const hideItems = (event) => {
     hideMinecraftStuff(event)
     hideTFCStuff(event)
     hideFirmaLifeStuff(event)
@@ -14,32 +48,23 @@ JEIEvents.hideItems(event => {
     hideCreateAdditionsStuff(event)
     hideChiselAndBitsStuff(event)
     hideFTBQuestsStuff(event)
-})
+}
 
-// REIEvents.groupEntries(event => {
-//     groupGTCEUStuff(event)
-//     groupTFCStuff(event)
-// })
-
-JEIEvents.removeCategories(event => {
-    // НЕ РАБОТАЕТ СУКА, РАЗРАБ НАСРАЛ!
-
-    // registerMinecraftCategories(event)
-    // registerGTCEUCategories(event)
-    // registerMoreRedCategories(event)
-    // 'jumbofurnace:jumbo_furnace_upgrade, 
-    // event.remove('minecraft:campfire_cooking')
-    // event.remove('jumbofurnace:jumbo_smelting')
-
-    // console.log(event.getCategoryIds())
-
-    // event.getCategoryIds()
-})
-
-JEIEvents.hideFluids(event => {
+const hideFluids = (event) => {
     hideTFCFluids(event)
     hideFirmaLifeFluids(event)
 
     hideCreateFluids(event)
     hideCreateAdditionsFluids(event)
-})
+}
+
+const removeCategories = (event) => {
+    registerMinecraftCategories(event)
+    registerGTCEUCategories(event)
+    registerMoreRedCategories(event)
+}
+
+const groupItems = (event) => {
+    groupGTCEUStuff(event)
+    groupTFCStuff(event)
+}

@@ -1,7 +1,6 @@
 // priority: 1
 
 const $MaterialFlags = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
-const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGMaterialFlags')
 const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelper')
 
 /**

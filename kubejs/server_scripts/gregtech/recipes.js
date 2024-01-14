@@ -1,7 +1,5 @@
 // priority: 0
 
-
-
 const registerGTCEURecipes = (event) => {
     
     //#region Выход: Удобрение
@@ -13,6 +11,7 @@ const registerGTCEURecipes = (event) => {
             '2x #forge:dusts/wood',
             '4x #forge:sand'
         )
+        .circuit(1)
         .inputFluids(Fluid.of('minecraft:water', 1000))
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)
@@ -25,6 +24,7 @@ const registerGTCEURecipes = (event) => {
             '2x #forge:dusts/wood',
             '4x #forge:sand'
         )
+        .circuit(1)
         .inputFluids(Fluid.of('minecraft:water', 1000))
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)
@@ -1110,7 +1110,7 @@ const registerGTCEURecipes = (event) => {
         A: 'minecraft:clay_ball',
         B: '#minecraft:sand',
         C: 'gtceu:brick_wooden_form'
-    }).replaceIngredient("gtceu:brick_wooden_form", Item.empty).id('gtceu:shaped/compressed_coke_clay')
+    }).replaceIngredient('gtceu:brick_wooden_form', 'gtceu:brick_wooden_form').id('gtceu:shaped/compressed_coke_clay')
 
     // Compressed Coke Clay -> Coke Oven Brick
     event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
@@ -1267,29 +1267,17 @@ const registerGTCEURecipes = (event) => {
         
         //#region Рецепты инструментов
         
-        if (material.hasFlag($TFGMaterialFlags.HAS_TFC_TOOL)) {
+        if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
             global.GTCEU_ANVIL_TOOL_TYPES.forEach(toolType => {
                 let toolStack = $ToolHelper.get(toolType, material)
 
-                if (toolType == GTToolType.BUTCHERY_KNIFE) {
-                    event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
-                        'A',
-                        'B'
-                    ], {
-                        A: `gtceu:${material}_knife_butchery_head`,
-                        B: '#forge:rods/wooden'
-                    }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
-                }
-                else {
-                    event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
-                        'A',
-                        'B'
-                    ], {
-                        A: `gtceu:${material}_${toolType.name}_head`,
-                        B: '#forge:rods/wooden'
-                    }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
-                }
-                
+                event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
+                    'A',
+                    'B'
+                ], {
+                    A: `gtceu:${material}_${toolType.name}_head`,
+                    B: '#forge:rods/wooden'
+                }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
     
             })
         }
@@ -1410,16 +1398,26 @@ const registerGTCEURecipes = (event) => {
             }
         }
 
-        if (material.hasProperty(PropertyKey.INGOT)) {
-            event.recipes.createCrushing(Item.of(`#forge:dusts/${material}`), `#forge:ingots/${material}`)
-                .processingTime(150)
-                .id(`tfg:crushing/${material}_dust`)
-        } 
-        else {
-            event.recipes.createMilling(Item.of(`#forge:dusts/${material}`), `#forge:gems/${material}`)
-                .processingTime(150)
-                .id(`tfg:milling/${material}_dust`)
+        let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        let gemStack = ChemicalHelper.get(TagPrefix.gem, material, 1)
+        let dustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
+
+        if (!dustStack.isEmpty()) {
+            
+            if (!ingotStack.isEmpty()) {
+                event.recipes.createCrushing(dustStack, ingotStack)
+                    .processingTime(250)
+                    .id(`tfg:crushing/${material}_dust`)
+            }
+            
+            if (!gemStack.isEmpty()) {
+                event.recipes.createMilling(dustStack, gemStack)
+                    .processingTime(200)
+                    .id(`tfg:milling/${material}_dust`)
+            }
+            
         }
+        
     });
 
     //#endregion

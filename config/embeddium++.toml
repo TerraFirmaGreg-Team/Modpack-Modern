@@ -37,7 +37,7 @@
 		#Toggles Minecraft Fonts shadows
 		#Depending of the case may increase performance
 		#Gives a flat style text
-		fontShadows = false
+		fontShadows = true
 
 		[embeddiumplus.performance.distanceCulling]
 
