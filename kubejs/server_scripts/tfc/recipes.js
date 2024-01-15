@@ -56,7 +56,7 @@ const registerTFCRecipes = (event) => {
                         .id(`tfc:heating/metal/${material}_double_ingot`)
 
                     // 2 слитка -> Двойной слиток
-                    event.recipes.tfc.welding(doubleIngotItem, ingotItem, ingotItem, tfcProperty.getTier())
+                    event.recipes.tfc.welding(doubleIngotItem, ingotItem, ingotItem, tfcProperty.getTier() - 1)
                         .id(`tfc:welding/${material}_double_ingot`)
 
                     // Plates
