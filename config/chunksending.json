@@ -1,0 +1,10 @@
+{
+  "maxChunksPerTick": {
+    "desc:": "Maximum amount of chunks sent per tick to a player, increases dynamically with size of the backlog",
+    "maxChunksPerTick": 5
+  },
+  "debugLogging": {
+    "desc:": "Enable debug logging to show the amount of chunks sent/queued",
+    "debugLogging": false
+  }
+}

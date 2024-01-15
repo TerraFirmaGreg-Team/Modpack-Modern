@@ -1,0 +1,10 @@
+
+[general]
+	#Merge all dynamic resource packs from all mods that use this library into a single pack
+	merge_dynamic_packs = true
+	#Prevents map texture from being upladed to GPU when only map markers have changed.Could increase performance
+	lazy_map_upload = true
+	#Renders map textures using mipmap. Vastly improves look from afar as well when inside a Map Atlas from Map Atlases or similar. Set to 0 to have no mipmap like vanilla
+	#Range: 0 ~ 4
+	maps_mipmap = 3
+
