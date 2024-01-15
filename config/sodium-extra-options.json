@@ -28,7 +28,9 @@
     "fog_distance": 0,
     "fog_start": 100,
     "multi_dimension_fog_control": false,
-    "dimensionFogDistance": {},
+    "dimensionFogDistance": {
+      "minecraft:overworld": 0
+    },
     "light_updates": true,
     "item_frame": true,
     "armor_stand": true,
@@ -49,7 +51,7 @@
     "use_adaptive_sync": false,
     "cloud_height": 192,
     "cloud_distance": 100,
-    "toasts": false,
+    "toasts": true,
     "advancement_toast": false,
     "recipe_toast": false,
     "system_toast": false,
