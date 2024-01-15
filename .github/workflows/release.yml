@@ -126,6 +126,7 @@ jobs:
           mv -vf .github/buildtools/modpack/modlist.html ./
           mv -vf .github/buildtools/modpack/manifest.json flame/
           find .minecraft/mods -name "probejs-*" -delete;
+          find .minecraft/mods -name ".git" -delete;
           zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip mmc
