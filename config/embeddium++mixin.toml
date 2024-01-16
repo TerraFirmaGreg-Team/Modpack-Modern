@@ -5,5 +5,5 @@
 		fastreload = true
 
 	[mixin.borderless]
-		f11 = true
+		f11 = false
 

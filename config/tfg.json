@@ -17,5 +17,6 @@
     "ae2wtlib",
     "ae2",
     ""
-  ]
+  ],
+  "enableTFCAmbientCompat": true
 }
