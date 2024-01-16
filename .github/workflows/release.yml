@@ -299,7 +299,7 @@ jobs:
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
           embed-title: Release ${{ needs.modpack-info.outputs.project_version }}
           embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.modpack-info.outputs.project_version }}
-          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo_new_year.png
+          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
             **GameVersion**: `${{ needs.modpack-info.outputs.mc_version }}`
