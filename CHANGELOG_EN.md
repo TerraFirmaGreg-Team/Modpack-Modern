@@ -1,6 +1,7 @@
 # Changelog
 
 ## [0.6.3] - 16.01.2024
+### Changes
 - Fixed a bug when it was impossible to make a canoe.
 - Added function to disable additional TFC-Ambiental integration.
 - Fixed the quest for the copper ingot.
