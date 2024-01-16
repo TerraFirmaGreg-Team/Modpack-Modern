@@ -1,0 +1,29 @@
+
+["Dynamic Chunk View Distance Settings"]
+	#The minimum chunk view distance allowed to use. Default: 4
+	#Range: 3 ~ 200
+	minChunkViewDist = 5
+	#The maximum chunk view distance allowed to use. Set to the max a player could benefit from. Default: 15
+	#Range: 1 ~ 200
+	maxChunkViewDist = 15
+	#The minimum simulation distance allowed to use. Default: 4
+	#Range: 1 ~ 200
+	minSimulationDist = 4
+	#The maximum simulation distance allowed to use. Default: 10
+	#Range: 1 ~ 200
+	maxSimulationDist = 10
+	#The average tick time to stabilize the chunk view distance around. Setting it higher than 50ms is not advised, as after 50ms the TPS will go below 20. Default: 45ms
+	#Range: 10 ~ 100
+	meanAvgTickTime = 45
+	#The update frequency of average server tick time checks to update view distances. Default: 30sec
+	#Range: 1 ~ 1000
+	viewDistanceUpdateRate = 60
+	#Whether to adjust the simulation distance aswell, default: true.
+	adjustSimulationDistance = true
+	#Whether to output log messages for actions done. This can be helpful to balance the other settings nicely.
+	logMessages = true
+
+["Chunk slow unload settings"]
+	#Enable slow chunk unloading(~1minute) after load, helps with mods hot-loading chunks frequently. Default: true
+	chunkunload = true
+

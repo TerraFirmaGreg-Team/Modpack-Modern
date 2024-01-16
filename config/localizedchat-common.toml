@@ -1,0 +1,45 @@
+
+#Chat Restrictions
+#talkRange doesn't have a toggle value, because then the mod would be useless
+[restrictions]
+	#The maximum range at which a player local to another player can be heard without requiring being an op.
+	#Default: 100
+	#Range: > 0
+	talkRange = 100
+	#The maximum range at which a player local to another player can be heard when shouting.
+	#Default: 400
+	#Range: > 0
+	shoutTalkRange = 400
+	#The amount of hunger used when shouting. Set to 0 to disable.
+	#Default: 1
+	#Range: > 0
+	shoutFoodCost = 1
+	#Set to true to treat operators like players. Aka talking hits the entire world
+	#Default: false
+	opAsPlayer = false
+
+#Miscellaneous
+[miscellaneous]
+	#If alternate prefix is enabled then the distance won't be displayed but this prefix will.
+	prefix = ""
+	#Enable to use the prefix you set above
+	usePrefix = false
+	#Should the distance away be indicated in the chat? This also disables the custom prefix.
+	rangeNotifier = true
+
+#These codes control the output of the colors sent to the client for the various parts of the mod
+#Color codes reference at http://minecraft.wikia.com/wiki/Formatting_Codes
+[color_codes]
+	#Sets the color for brackets []
+	bracketColor = "§6"
+	#Sets the color for angle braces <>
+	angleBraceColor = "§7"
+	#Sets the color for positional information
+	posColor = "§e"
+	#Sets the color to be used player names
+	nameColor = "§f"
+	#Sets the color the body of the message
+	bodyColor = "§f"
+	#The color to use when no other color will do
+	defaultColor = "§f"
+
