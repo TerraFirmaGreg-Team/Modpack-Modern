@@ -151,12 +151,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
-      - name: Replace strings
-        shell: bash
-        run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" config/bcc-common.toml
-
       - name: Download Mods
         run: |
             git submodule init
@@ -282,7 +276,7 @@ jobs:
           body: |
             RU
             ${{ needs.modpack-info.outputs.changelog_ru }}
-            
+
             EN
             ${{ needs.modpack-info.outputs.changelog_en }}
           files: |
