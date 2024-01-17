@@ -38,13 +38,17 @@ const registerTFCRecipes = (event) => {
                     .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
                     .id(`tfc:heating/metal/${material}_ingot`)
 
-                // Отливка слитка в обычной форме
-                event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.1)
-                    .id(`tfc:casting/${material}_ingot`)
+                if (material != GTMaterials.WroughtIron) {
 
-                // Отливка слитка в огнеупорной форме
-                event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/fire_ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.01)
-                    .id(`tfc:casting/${material}_fire_ingot`)
+                    // Отливка слитка в обычной форме
+                    event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.1)
+                        .id(`tfc:casting/${material}_ingot`)
+
+                    // Отливка слитка в огнеупорной форме
+                    event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/fire_ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.01)
+                        .id(`tfc:casting/${material}_fire_ingot`)
+
+                }
       
                 // Double Ingots
                 let doubleIngotItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)
