@@ -342,6 +342,13 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Светильник моря
+
+    event.remove({ id: 'minecraft:sea_lantern' })
+    event.remove({ id: 'gtceu:assembler/sea_lantern' })
+
+    //#endregion
+
     //#region Выход: Сырой призмарин ступень
 
     event.remove({ id: 'minecraft:prismarine_stairs' })

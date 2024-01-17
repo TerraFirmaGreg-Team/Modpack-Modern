@@ -674,6 +674,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:baked_potato',
     'minecraft:end_rod',
     'minecraft:brush',
+    'minecraft:sea_lantern',
     'minecraft:bookshelf',
     'minecraft:enchanted_book',
     'minecraft:repeating_command_block', 
