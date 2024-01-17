@@ -2055,6 +2055,7 @@
 				"2DEEDED2F21E60B9"
 				"515141734CA1A002"
 			]
+			dependency_requirement: "one_completed"
 			id: "1FFE279F43B0BA45"
 			shape: "gear"
 			tasks: [{
@@ -3305,23 +3306,18 @@
 			]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
-			icon: "gtceu:nickel_bucket"
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:nickel_dust"
+			}
 			id: "27AC71D2454EF0FC"
 			tasks: [
-				{
-					id: "3B84D2AA2805CC72"
-					item: {
-						Count: 1b
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:raw_nickel"
-					}
-					type: "item"
-				}
 				{
 					id: "4433C1C9D816AD13"
 					item: {
@@ -3334,6 +3330,18 @@
 						}
 						id: "gtceu:black_bronze_ingot"
 					}
+					type: "item"
+				}
+				{
+					id: "305EFF0F0ECD2E16"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_nickel)item(gtceu:raw_nickel)item(gtceu:poor_raw_nickel)item(gtceu:rich_raw_garnierite)item(gtceu:raw_garnierite)item(gtceu:poor_raw_garnierite))"
+						}
+					}
+					title: "Any Nickel Ore"
 					type: "item"
 				}
 			]
@@ -4685,6 +4693,7 @@
 			tasks: [{
 				id: "79E2F0E9233F4A86"
 				item: "sophisticatedbackpacks:backpack"
+				match_nbt: false
 				type: "item"
 			}]
 			x: 14.0d
