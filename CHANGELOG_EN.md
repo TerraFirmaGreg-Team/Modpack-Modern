@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.6.4] - Waiting
+### Changes
+- Removed recipe of sea lantern from Minecraft.
+
 ## [0.6.3] - 16.01.2024
 ### Changes
 - Fixed a bug when it was impossible to make a canoe.
