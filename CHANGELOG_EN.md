@@ -3,6 +3,8 @@
 ## [0.6.4] - Waiting
 ### Changes
 - Removed recipe of sea lantern from Minecraft.
+- Fixed recipes for iron and copper greenhouses, hidden blocks, some kind of greenhouse made of copper.
+- Fixed several quests.
 
 ## [0.6.3] - 16.01.2024
 ### Changes
