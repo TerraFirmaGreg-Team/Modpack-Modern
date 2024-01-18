@@ -146,6 +146,7 @@
   "tfc:water_wheel": null,
   "tfc:windmill": null,
   "minecraft:campfire": null,
+  "tfc:mold_table": null,
   "corpse:corpse": null,
   "create:blaze_burner": null,
   "create:backtank_capacity": null,
@@ -278,5 +279,6 @@
   "firmalife:vat": null,
   "firmalife:tumbler": null,
   "firmalife:fruit_tree_sapling": null,
-  "firmalife:jarbnet": null
+  "firmalife:jarbnet": null,
+  "tfc:mold_table": null
 }

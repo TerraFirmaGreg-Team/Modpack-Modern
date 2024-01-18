@@ -1275,9 +1275,9 @@ const registerGTCEURecipes = (event) => {
                     'A',
                     'B'
                 ], {
-                    A: `gtceu:${material}_${toolType.name}_head`,
+                    A: `gtceu:${material.getName()}_${toolType.name}_head`,
                     B: '#forge:rods/wooden'
-                }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material}`)
+                }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
     
             })
         }
@@ -1287,31 +1287,31 @@ const registerGTCEURecipes = (event) => {
         if (material.hasProperty(PropertyKey.ORE)) 
         {
             // Бедная сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing(Item.of(`gtceu:${material}_crushed_ore`).withChance(0.75), `#forge:poor_raw_materials/${material}`)
+            event.recipes.createCrushing(Item.of(`gtceu:${material.getName()}_crushed_ore`).withChance(0.75), `#forge:poor_raw_materials/${material.getName()}`)
                 .processingTime(200)
-                .id(`tfg:crushing/${material}_crushed_ore_from_poor_raw_ore`)
+                .id(`tfg:crushing/${material.getName()}_crushed_ore_from_poor_raw_ore`)
 
             // Нормальная сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([`gtceu:${material}_crushed_ore`, Item.of(`gtceu:${material}_crushed_ore`).withChance(0.2)], `#forge:raw_materials/${material}`)
+            event.recipes.createCrushing([`gtceu:${material.getName()}_crushed_ore`, Item.of(`gtceu:${material.getName()}_crushed_ore`).withChance(0.2)], `#forge:raw_materials/${material.getName()}`)
                 .processingTime(200)
-                .id(`tfg:crushing/${material}_crushed_ore_from_normal_raw_ore`)
+                .id(`tfg:crushing/${material.getName()}_crushed_ore_from_normal_raw_ore`)
 
             // Богатая сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([`gtceu:${material}_crushed_ore`, `gtceu:${material}_crushed_ore`, Item.of(`gtceu:${material}_crushed_ore`).withChance(0.2)], `#forge:rich_raw_materials/${material}`)
+            event.recipes.createCrushing([`gtceu:${material.getName()}_crushed_ore`, `gtceu:${material.getName()}_crushed_ore`, Item.of(`gtceu:${material.getName()}_crushed_ore`).withChance(0.2)], `#forge:rich_raw_materials/${material.getName()}`)
                 .processingTime(200)
-                .id(`tfg:crushing/${material}_crushed_ore_from_rich_raw_ore`)
+                .id(`tfg:crushing/${material.getName()}_crushed_ore_from_rich_raw_ore`)
 
             // Грязная пыль -> Пыль (90%)
-            event.recipes.createSplashing(Item.of(`#forge:dusts/${material}`).withChance(0.9), `gtceu:${material}_impure_dust`)
-                .id(`tfg:splashing/${material}_dust_from_impure`)
+            event.recipes.createSplashing(Item.of(`#forge:dusts/${material.getName()}`).withChance(0.9), `gtceu:${material.getName()}_impure_dust`)
+                .id(`tfg:splashing/${material.getName()}_dust_from_impure`)
 
             // Очищенная пыль -> Пыль (90%)
-            event.recipes.createSplashing(Item.of(`#forge:dusts/${material}`).withChance(0.9), `gtceu:${material}_pure_dust`)
-                .id(`tfg:splashing/${material}_dust_from_pure`)
+            event.recipes.createSplashing(Item.of(`#forge:dusts/${material.getName()}`).withChance(0.9), `gtceu:${material.getName()}_pure_dust`)
+                .id(`tfg:splashing/${material.getName()}_dust_from_pure`)
 
             // Дробленная руда -> Очищенная руда (90%)
-            event.recipes.createSplashing(Item.of(`#forge:purified_ores/${material}`).withChance(0.9), `gtceu:${material}_crushed_ore`)
-                .id(`tfg:splashing/${material}_purified_ore`)
+            event.recipes.createSplashing(Item.of(`#forge:purified_ores/${material.getName()}`).withChance(0.9), `gtceu:${material.getName()}_crushed_ore`)
+                .id(`tfg:splashing/${material.getName()}_purified_ore`)
 
             // Грязная пыль -> Пыль
             event.custom({
@@ -1322,11 +1322,11 @@ const registerGTCEURecipes = (event) => {
                 },
                 ingredients: [
                     {
-                        item: `gtceu:${material}_impure_dust`
+                        item: `gtceu:${material.getName()}_impure_dust`
                     }
                 ],
-                result: Item.of(`#forge:dusts/${material}`).toJson()
-            }).id(`tfg:ae_transform/${material}_dust_from_impure`)
+                result: Item.of(`#forge:dusts/${material.getName()}`).toJson()
+            }).id(`tfg:ae_transform/${material.getName()}_dust_from_impure`)
 
             // Очищенная пыль -> Пыль
             event.custom({
@@ -1337,11 +1337,11 @@ const registerGTCEURecipes = (event) => {
                 },
                 ingredients: [
                     {
-                        item: `gtceu:${material}_pure_dust`
+                        item: `gtceu:${material.getName()}_pure_dust`
                     }
                 ],
-                result: Item.of(`#forge:dusts/${material}`).toJson()
-            }).id(`tfg:ae_transform/${material}_dust_from_pure`)
+                result: Item.of(`#forge:dusts/${material.getName()}`).toJson()
+            }).id(`tfg:ae_transform/${material.getName()}_dust_from_pure`)
 
             // Дробленная руда -> Очищенная руда
             event.custom({
@@ -1352,11 +1352,11 @@ const registerGTCEURecipes = (event) => {
                 },
                 ingredients: [
                     {
-                        item: `gtceu:${material}_crushed_ore`
+                        item: `gtceu:${material.getName()}_crushed_ore`
                     }
                 ],
-                result: Item.of(`#forge:purified_ores/${material}`).toJson()
-            }).id(`tfg:ae_transform/${material}_purified_ore`)
+                result: Item.of(`#forge:purified_ores/${material.getName()}`).toJson()
+            }).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
         }
 
         if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && (material != 'wood' || material != 'treated_wood')) 
@@ -1364,19 +1364,19 @@ const registerGTCEURecipes = (event) => {
             if (material.hasProperty(PropertyKey.INGOT))
             {
                 // Слиток -> Стержень
-                event.recipes.createPressing(Item.of(`gtceu:${material}_plate`).withChance(0.97), `#forge:ingots/${material}`)
-                    .id(`tfg:pressing/${material}_plate`)
+                event.recipes.createPressing(Item.of(`gtceu:${material.getName()}_plate`).withChance(0.97), `#forge:ingots/${material.getName()}`)
+                    .id(`tfg:pressing/${material.getName()}_plate`)
 
                 // 9х Слиток -> Блок
-                event.recipes.createCompacting(Item.of(`#forge:storage_blocks/${material}`), `9x #forge:ingots/${material}`)
+                event.recipes.createCompacting(Item.of(`#forge:storage_blocks/${material.getName()}`), `9x #forge:ingots/${material.getName()}`)
                     .heated()
-                    .id(`tfg:compacting/${material}_block`)
+                    .id(`tfg:compacting/${material.getName()}_block`)
             }
             else
             {
                 // Блок из гемов -> 9 Пластин
-                event.recipes.createCutting(Item.of(`9x gtceu:${material}_plate`).withChance(0.65), `#forge:storage_blocks/${material}`)
-                    .id(`tfg:cutting/${material}_plate`)
+                event.recipes.createCutting(Item.of(`9x gtceu:${material.getName()}_plate`).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
+                    .id(`tfg:cutting/${material.getName()}_plate`)
             }
         }
 
@@ -1388,13 +1388,13 @@ const registerGTCEURecipes = (event) => {
                 event.custom({
                     type: "createaddition:rolling",
                     input: {
-                        'tag': `forge:ingots/${material}`
+                        'tag': `forge:ingots/${material.getName()}`
                     },
                     result: {
-                        'item': `gtceu:${material}_rod`,
+                        'item': `gtceu:${material.getName()}_rod`,
                         'count': 2
                     }
-                }).id(`tfg:rolling/${material}_rod`)
+                }).id(`tfg:rolling/${material.getName()}_rod`)
             }
         }
 
@@ -1407,13 +1407,13 @@ const registerGTCEURecipes = (event) => {
             if (!ingotStack.isEmpty()) {
                 event.recipes.createCrushing(dustStack, ingotStack)
                     .processingTime(250)
-                    .id(`tfg:crushing/${material}_dust`)
+                    .id(`tfg:crushing/${material.getName()}_dust`)
             }
             
             if (!gemStack.isEmpty()) {
                 event.recipes.createMilling(dustStack, gemStack)
                     .processingTime(200)
-                    .id(`tfg:milling/${material}_dust`)
+                    .id(`tfg:milling/${material.getName()}_dust`)
             }
             
         }
