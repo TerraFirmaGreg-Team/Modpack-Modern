@@ -176,14 +176,14 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         C: 'gtceu:hv_conveyor_module',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: 'gtceu:hv_robot_arm',
-        F: '#forge:circuits/hv',
-        G: '#forge:batteries/hv'
+        F: '#gtceu:circuits/hv',
+        G: '#gtceu:batteries/hv'
     });
 
     // Улучшение - улучшенный подбиратель
     event.shapeless('sophisticatedbackpacks:advanced_pickup_upgrade', [
         'sophisticatedbackpacks:pickup_upgrade',
-        '#forge:circuits/ev'
+        '#gtceu:circuits/ev'
     ]);
 
     // Улучшение - фильтр
@@ -192,20 +192,20 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'DEF',
         'GHG'
     ], {
-        A: '#forge:batteries/lv',
+        A: '#gtceu:batteries/lv',
         B: 'gtceu:item_filter',
         C: 'gtceu:manganese_phosphide_single_wire',
         D: 'gtceu:lv_conveyor_module',
         E: 'sophisticatedbackpacks:upgrade_base',
         F: 'gtceu:lv_robot_arm',
-        G: '#forge:circuits/lv',
+        G: '#gtceu:circuits/lv',
         H: 'gtceu:item_tag_filter'
     });
 
     // Улучшение - улучшенный фильтр
     event.shapeless('sophisticatedbackpacks:advanced_filter_upgrade', [
         'sophisticatedbackpacks:filter_upgrade',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     ]);
 
     // Улучшение - магнит
@@ -216,15 +216,15 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     ], {
         A: 'gtceu:hv_robot_arm',
         B: 'gtceu:item_filter',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: '#forge:batteries/hv'
+        E: '#gtceu:batteries/hv'
     });
 
     // Улучшение - улучшенный магнит
     event.shapeless('sophisticatedbackpacks:advanced_magnet_upgrade', [
         'sophisticatedbackpacks:magnet_upgrade',
-        '#forge:circuits/ev'
+        '#gtceu:circuits/ev'
     ]);
 
     // Улучшение - уничтожитель
@@ -245,7 +245,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     // Улучшение - улучшенный уничтожитель
     event.shapeless('sophisticatedbackpacks:advanced_void_upgrade', [
         'sophisticatedbackpacks:void_upgrade',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     ]);
 
     // Улучшение - Deposit
@@ -254,9 +254,9 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'DED',
         ' F '
     ], {
-        A: '#forge:batteries/lv',
+        A: '#gtceu:batteries/lv',
         B: 'gtceu:manganese_phosphide_single_wire',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         D: 'gtceu:lv_conveyor_module',
         E: 'sophisticatedbackpacks:upgrade_base',
         F: 'gtceu:lv_robot_arm'
@@ -265,7 +265,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     // Улучшение - улучшенный Deposit
     event.shapeless('sophisticatedbackpacks:advanced_deposit_upgrade', [
         'sophisticatedbackpacks:deposit_upgrade',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     ]);
 
     // Улучшение - Restock
@@ -277,15 +277,15 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         A: 'gtceu:lv_robot_arm',
         B: 'gtceu:lv_conveyor_module',
         C: 'sophisticatedbackpacks:upgrade_base',
-        D: '#forge:batteries/lv',
+        D: '#gtceu:batteries/lv',
         E: 'gtceu:manganese_phosphide_single_wire',
-        F: '#forge:circuits/lv',
+        F: '#gtceu:circuits/lv',
     });
 
     // Улучшение - улучшенный Restock
     event.shapeless('sophisticatedbackpacks:advanced_restock_upgrade', [
         'sophisticatedbackpacks:restock_upgrade',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     ]);
 
     // Улучшение - Refill
@@ -295,8 +295,8 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CBA'
     ], {
         A: 'gtceu:manganese_phosphide_single_wire',
-        B: '#forge:circuits/lv',
-        C: '#forge:batteries/lv',
+        B: '#gtceu:circuits/lv',
+        C: '#gtceu:batteries/lv',
         D: 'gtceu:lv_robot_arm',
         E: 'sophisticatedbackpacks:upgrade_base'
     });
@@ -304,7 +304,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     // Улучшение - улучшенный Refill
     event.shapeless('sophisticatedbackpacks:advanced_refill_upgrade', [
         'sophisticatedbackpacks:refill_upgrade',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     ]);
 
     // Улучшение - Everlasting
@@ -315,9 +315,9 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     ], {
         A: 'gtceu:zpm_field_generator',
         B: '#forge:plates/neutronium',
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: '#forge:batteries/zpm'
+        E: '#gtceu:batteries/zpm'
     });
 
     // Улучшение - верстак
@@ -338,9 +338,9 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'CDC',
         'AEA'
     ], {
-        A: '#forge:circuits/iv',
+        A: '#gtceu:circuits/iv',
         B: 'gtceu:samarium_iron_arsenic_oxide_single_wire',
-        C: '#forge:batteries/iv',
+        C: '#gtceu:batteries/iv',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: 'gtceu:iv_field_generator'
     });
@@ -363,7 +363,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'DEF',
         'CGA'
     ], {
-        A: '#forge:circuits/lv',
+        A: '#gtceu:circuits/lv',
         B: '#tfc:pickaxes',
         C: 'gtceu:lv_robot_arm',
         D: '#tfc:hoes',
@@ -375,6 +375,6 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     // Улучшение - улучшенный ToolSwapper
     event.shapeless('sophisticatedbackpacks:advanced_tool_swapper_upgrade', [
         'sophisticatedbackpacks:tool_swapper_upgrade',
-        '#forge:circuits/mv'
+        '#gtceu:circuits/mv'
     ]);
 }

@@ -24,7 +24,7 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'gtceu:hv_sensor',
         B: 'ae2:calculation_processor',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         D: 'computercraft:cable',
     }).id('tfg:crafting/wireless_modem_normal')
 
@@ -36,7 +36,7 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'ae2:wireless_receiver',
         B: 'ae2:calculation_processor',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         D: 'computercraft:cable',
     }).id('tfg:crafting/wireless_modem_advanced')
 
@@ -51,7 +51,7 @@ const registerComputerCraftRecipes = (event) => {
         C: 'ae2:calculation_processor',
         D: 'gtceu:mv_machine_casing',
         E: 'computercraft:cable',
-        F: '#forge:circuits/mv',
+        F: '#gtceu:circuits/mv',
     }).id('tfg:crafting/monitor_normal')
 
     // Monitor Advanced
@@ -65,7 +65,7 @@ const registerComputerCraftRecipes = (event) => {
         C: 'ae2:calculation_processor',
         D: 'gtceu:hv_machine_casing',
         E: 'computercraft:cable',
-        F: '#forge:circuits/hv',
+        F: '#gtceu:circuits/hv',
     }).id('tfg:crafting/monitor_advanced')
 
     // Disk Drive
@@ -76,7 +76,7 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'computercraft:cable',
         B: 'ae2:drive',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         D: 'gtceu:hv_machine_casing',
         E: 'gtceu:hv_sensor',
     }).id('tfg:crafting/disk_drive')
@@ -90,7 +90,7 @@ const registerComputerCraftRecipes = (event) => {
         A: 'minecraft:note_block',
         B: 'computercraft:cable',
         C: 'gtceu:mv_machine_casing',
-        D: '#forge:circuits/mv',
+        D: '#gtceu:circuits/mv',
     }).id('tfg:crafting/speaker')
 
     // Printer
@@ -100,7 +100,7 @@ const registerComputerCraftRecipes = (event) => {
         'FBF'
     ], {
         A: 'gtceu:mv_electric_motor',
-        B: '#forge:circuits/mv',
+        B: '#gtceu:circuits/mv',
         C: 'gtceu:mv_robot_arm',
         D: 'computercraft:cable',
         E: 'gtceu:mv_machine_casing',
@@ -115,7 +115,7 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'gtceu:mv_sensor',
         B: 'computercraft:cable',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         D: 'ae2:calculation_processor',
     }).id('tfg:crafting/wired_modem')
 
@@ -133,9 +133,9 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: '#forge:wires/single/magnesium_diboride',
         B: 'gtceu:computer_monitor_cover',
-        C: '#forge:batteries/mv',
+        C: '#gtceu:batteries/mv',
         D: 'gtceu:mv_machine_casing',
-        E: '#forge:circuits/hv'
+        E: '#gtceu:circuits/hv'
     }).id('tfg:crafting/computer_normal')
 
     // Computer Advanced
@@ -146,9 +146,9 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: '#forge:wires/single/mercury_barium_calcium_cuprate',
         B: 'gtceu:computer_monitor_cover',
-        C: '#forge:batteries/hv',
+        C: '#gtceu:batteries/hv',
         D: 'gtceu:hv_machine_casing',
-        E: '#forge:circuits/ev'
+        E: '#gtceu:circuits/ev'
     }).id('tfg:crafting/computer_advanced')
 
     // Turtle Normal
@@ -161,7 +161,7 @@ const registerComputerCraftRecipes = (event) => {
         B: 'gtceu:hv_emitter',
         C: 'gtceu:hv_sensor',
         D: 'gtceu:hv_robot_arm',
-        E: '#forge:circuits/ev',
+        E: '#gtceu:circuits/ev',
         F: 'computercraft:computer_normal',
         G: 'gtceu:steel_crate',
         H: 'gtceu:hv_electric_piston',
@@ -177,7 +177,7 @@ const registerComputerCraftRecipes = (event) => {
         B: 'gtceu:ev_emitter',
         C: 'gtceu:ev_sensor',
         D: 'gtceu:ev_robot_arm',
-        E: '#forge:circuits/iv',
+        E: '#gtceu:circuits/iv',
         F: 'computercraft:computer_advanced',
         G: 'gtceu:aluminium_crate',
         H: 'gtceu:ev_electric_piston',
@@ -202,10 +202,10 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'ae2:wireless_receiver',
         B: '#forge:wires/single/mercury_barium_calcium_cuprate',
-        C: '#forge:batteries/hv',
+        C: '#gtceu:batteries/hv',
         D: 'ae2:terminal',
         E: 'gtceu:hv_emitter',
-        F: '#forge:circuits/ev',
+        F: '#gtceu:circuits/ev',
         G: '#forge:plates/titanium'
     }).id('tfg:crafting/pocket_computer_normal')
 
@@ -236,10 +236,10 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'ae2:wireless_receiver',
         B: '#forge:wires/single/uranium_triplatinum',
-        C: '#forge:batteries/ev',
+        C: '#gtceu:batteries/ev',
         D: 'ae2:terminal',
         E: 'gtceu:ev_emitter',
-        F: '#forge:circuits/iv',
+        F: '#gtceu:circuits/iv',
         G: '#forge:plates/tungsten_steel'
     }).id('tfg:crafting/pocket_computer_advanced')
 

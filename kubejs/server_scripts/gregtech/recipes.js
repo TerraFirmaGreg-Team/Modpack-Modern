@@ -639,7 +639,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:lv_electric_pump',
-        D: '#forge:circuits/lv',
+        D: '#gtceu:circuits/lv',
         E: 'gtceu:lv_machine_hull'
     }).id('gtceu:shaped/lv_gas_collector')
 
@@ -651,7 +651,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:mv_electric_pump',
-        D: '#forge:circuits/mv',
+        D: '#gtceu:circuits/mv',
         E: 'gtceu:mv_machine_hull'
     }).id('gtceu:shaped/mv_gas_collector')
 
@@ -663,7 +663,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:hv_electric_pump',
-        D: '#forge:circuits/hv',
+        D: '#gtceu:circuits/hv',
         E: 'gtceu:hv_machine_hull'
     }).id('gtceu:shaped/hv_gas_collector')
 
@@ -675,7 +675,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:ev_electric_pump',
-        D: '#forge:circuits/ev',
+        D: '#gtceu:circuits/ev',
         E: 'gtceu:ev_machine_hull'
     }).id('gtceu:shaped/ev_gas_collector')
 
@@ -687,7 +687,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:iv_electric_pump',
-        D: '#forge:circuits/iv',
+        D: '#gtceu:circuits/iv',
         E: 'gtceu:iv_machine_hull'
     }).id('gtceu:shaped/iv_gas_collector')
 
@@ -699,7 +699,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:luv_electric_pump',
-        D: '#forge:circuits/luv',
+        D: '#gtceu:circuits/luv',
         E: 'gtceu:luv_machine_hull'
     }).id('gtceu:shaped/luv_gas_collector')
 
@@ -711,7 +711,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:zpm_electric_pump',
-        D: '#forge:circuits/zpm',
+        D: '#gtceu:circuits/zpm',
         E: 'gtceu:zpm_machine_hull'
     }).id('gtceu:shaped/zpm_gas_collector')
 
@@ -723,7 +723,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:fluid_filter',
         C: 'gtceu:uv_electric_pump',
-        D: '#forge:circuits/uv',
+        D: '#gtceu:circuits/uv',
         E: 'gtceu:uv_machine_hull'
     }).id('gtceu:shaped/uv_gas_collector')
     
@@ -738,7 +738,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:tin_single_cable',
         B: 'gtceu:lv_electric_piston',
-        C: '#forge:circuits/lv',
+        C: '#gtceu:circuits/lv',
         D: 'gtceu:lv_machine_hull',
         E: 'tfc:metal/anvil/steel',
     }).id('gtceu:shaped/lv_forge_hammer')
@@ -750,7 +750,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:copper_single_cable',
         B: 'gtceu:mv_electric_piston',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         D: 'gtceu:mv_machine_hull',
         E: 'tfc:metal/anvil/steel',
     }).id('gtceu:shaped/mv_forge_hammer')
@@ -762,7 +762,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:gold_single_cable',
         B: 'gtceu:hv_electric_piston',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
         D: 'gtceu:hv_machine_hull',
         E: 'tfc:metal/anvil/steel',
     }).id('gtceu:shaped/hv_forge_hammer')
@@ -774,7 +774,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:aluminium_single_cable',
         B: 'gtceu:ev_electric_piston',
-        C: '#forge:circuits/ev',
+        C: '#gtceu:circuits/ev',
         D: 'gtceu:ev_machine_hull',
         E: 'tfc:metal/anvil/black_steel',
     }).id('gtceu:shaped/ev_forge_hammer')
@@ -786,7 +786,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:platinum_single_cable',
         B: 'gtceu:iv_electric_piston',
-        C: '#forge:circuits/iv',
+        C: '#gtceu:circuits/iv',
         D: 'gtceu:iv_machine_hull',
         E: 'tfc:metal/anvil/black_steel',
     }).id('gtceu:shaped/iv_forge_hammer')
@@ -798,7 +798,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:niobium_titanium_single_cable',
         B: 'gtceu:luv_electric_piston',
-        C: '#forge:circuits/luv',
+        C: '#gtceu:circuits/luv',
         D: 'gtceu:luv_machine_hull',
         E: 'tfc:metal/anvil/black_steel',
     }).id('gtceu:shaped/luv_forge_hammer')
@@ -810,7 +810,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:vanadium_gallium_single_cable',
         B: 'gtceu:zpm_electric_piston',
-        C: '#forge:circuits/zpm',
+        C: '#gtceu:circuits/zpm',
         D: 'gtceu:zpm_machine_hull',
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/zpm_forge_hammer')
@@ -822,7 +822,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: 'gtceu:yttrium_barium_cuprate_single_cable',
         B: 'gtceu:uv_electric_piston',
-        C: '#forge:circuits/uv',
+        C: '#gtceu:circuits/uv',
         D: 'gtceu:uv_machine_hull',
         E: '#tfc:red_or_blue_anvil',
     }).id('gtceu:shaped/uv_forge_hammer')
@@ -1082,9 +1082,9 @@ const registerGTCEURecipes = (event) => {
         'CDC', 
         'BCB'
     ], {
-        A: '#forge:circuits/mv',
+        A: '#gtceu:circuits/mv',
         B: 'gtceu:copper_single_cable',
-        C: '#forge:circuits/mv',
+        C: '#gtceu:circuits/mv',
         D: 'gtceu:solid_machine_casing'
     }).id('tfg:shaped/greenhouse')
 
@@ -1095,7 +1095,7 @@ const registerGTCEURecipes = (event) => {
         'EBE'
     ], {
         A: '#gtceu:resistors',
-        B: '#forge:circuits/lv',
+        B: '#gtceu:circuits/lv',
         C: 'gtceu:lv_voltage_coil',
         D: 'gtceu:solid_machine_casing',
         E: '#forge:cables/single/copper'
@@ -1143,7 +1143,7 @@ const registerGTCEURecipes = (event) => {
         'DBD'  
     ], {
         A: 'gtceu:hp_steam_furnace',
-        B: '#forge:circuits/hv',  
+        B: '#gtceu:circuits/hv',  
         C: 'gtceu:heatproof_machine_casing',
         D: 'gtceu:copper_single_cable'
     }).id('gtceu:shaped/multi_furnace')
@@ -1155,7 +1155,7 @@ const registerGTCEURecipes = (event) => {
         'DBD'
     ], {
         A: 'gtceu:hp_steam_furnace',
-        B: '#forge:circuits/lv',  
+        B: '#gtceu:circuits/lv',  
         C: 'gtceu:heatproof_machine_casing',
         D: 'gtceu:tin_single_cable'
     }).id('gtceu:shaped/electric_blast_furnace')
