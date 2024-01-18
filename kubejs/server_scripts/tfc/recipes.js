@@ -1330,6 +1330,10 @@ const registerTFCRecipes = (event) => {
 
     //#region Фикс рецептов металлических предметов
 
+    // Рецепт Jacks
+    event.recipes.tfc.welding('tfc:jacks', '#forge:rods/brass', '#forge:plates/brass', 2)
+        .id(`tfc:welding/jacks`)
+    
     // Декрафт Jacks
     event.recipes.tfc.heating('tfc:jacks', 930)
         .resultFluid(Fluid.of('gtceu:brass', 144))
