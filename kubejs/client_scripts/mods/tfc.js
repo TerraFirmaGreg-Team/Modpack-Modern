@@ -19,10 +19,6 @@ const hideTFCStuff = (event) => {
     })
 }
 
-const groupTFCStuff = (event) => {
-    event.groupItemsByTag('tfg:rei_groups/ingots/double', 'Double Ingots', 'forge:double_ingots')
-}
-
 const hideTFCFluids = (event) => {
     event.hide('tfc:metal/bismuth')
     event.hide('tfc:metal/bismuth_bronze')
