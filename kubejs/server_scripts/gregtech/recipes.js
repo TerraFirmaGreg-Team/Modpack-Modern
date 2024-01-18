@@ -1066,6 +1066,18 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:smelting/fireclay_brick'})
     event.remove({id: 'gtceu:macerator/macerate_firebrick'})
 
+    // Удалить после фикса GTCEu
+    event.remove({id: 'gtceu:extractor/extract_raw_rubber_dust'})
+
+    // Пыль звезды незера (удалить после имплементации ада)
+    event.recipes.gtceu.chemical_reactor('tfg:nether_star_dust')             
+        .itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
+        .circuit(10)
+        .itemOutputs('gtceu:nether_star_dust')
+        .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 6000), Fluid.of('gtceu:carbon_monoxide', 8000))
+        .duration(700)
+        .EUt(2720)
+
     // Деревянная шестерня
     event.shaped('gtceu:wood_gear', [
         ' A ',
