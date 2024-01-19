@@ -74,7 +74,7 @@ const registerGTCEURecipes = (event) => {
     // Декрафт в электролайзере
     event.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')             
         .inputFluids(Fluid.of('tfc:salt_water', 1000))
-        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:sodium_hydroxide_small_dust')
+        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:small_sodium_hydroxide_dust')
         .outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
         .duration(720)
         .EUt(30)
@@ -126,14 +126,14 @@ const registerGTCEURecipes = (event) => {
     // Из сырого камня
     event.recipes.gtceu.lathe('stone_rod_from_stone')             
         .itemInputs('#tfc:rock/raw')
-        .itemOutputs('gtceu:stone_rod', 'gtceu:stone_small_dust')
+        .itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
         .duration(15)
         .EUt(2)
 
     // Из булыжника
     event.recipes.gtceu.lathe('stone_rod_from_cobblestone')             
         .itemInputs('#forge:cobblestone')
-        .itemOutputs('gtceu:stone_rod', 'gtceu:stone_small_dust')
+        .itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
         .duration(15)
         .EUt(2)
 
@@ -521,7 +521,7 @@ const registerGTCEURecipes = (event) => {
     
     event.recipes.gtceu.macerator('macerate_meat_to_dust')             
         .itemInputs('#tfc:foods/meats')
-        .itemOutputs('gtceu:meat_dust', 'gtceu:bone_tiny_dust')
+        .itemOutputs('gtceu:meat_dust', 'gtceu:tiny_bone_dust')
         .duration(100)
         .EUt(2)
 
@@ -588,7 +588,7 @@ const registerGTCEURecipes = (event) => {
 
     event.recipes.gtceu.macerator('macerate_iron_door')             
         .itemInputs('minecraft:iron_door')
-        .itemOutputs('gtceu:iron_dust', 'gtceu:steel_tiny_dust')
+        .itemOutputs('gtceu:iron_dust', 'gtceu:tiny_steel_dust')
         .duration(200)
         .EUt(8)
 

@@ -3,8 +3,8 @@
 global.GTCEU_DISABLED_ITEMS = [
     // Пыль пшеницы
     'gtceu:wheat_dust',
-    'gtceu:wheat_small_dust',
-    'gtceu:wheat_tiny_dust',
+    'gtceu:small_wheat_dust',
+    'gtceu:tiny_wheat_dust',
 
     // Bronze Machines
     'gtceu:bronze_machine_casing', 

@@ -743,7 +743,7 @@ const registerMinecraftRecipes = (event) => {
         .itemInputs('')
         .chancedOutput('tfc:sand/yellow', 9000, 300)
         .chancedOutput('gtceu:tungstate_small_dust', 1250, 450)
-        .chancedOutput('gtceu:platinum_tiny_dust', 630, 150)
+        .chancedOutput('gtceu:tiny_platinum_dust', 630, 150)
         .outputFluids(Fluid.of('gtceu:helium', 2000))
         .duration(250)
         .EUt(30)*/

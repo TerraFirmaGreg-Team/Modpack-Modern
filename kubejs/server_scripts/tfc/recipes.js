@@ -1902,49 +1902,49 @@ const registerTFCRecipes = (event) => {
         // Сырой
         event.recipes.gtceu.macerator(`raw_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/raw/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Булыжник
         event.recipes.gtceu.macerator(`cobble_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/cobble/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Гладкий
         event.recipes.gtceu.macerator(`smooth_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/smooth/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Кирпичи
         event.recipes.gtceu.macerator(`bricks_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/bricks/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Потрескавшиеся кирпичи
         event.recipes.gtceu.macerator(`cracked_bricks_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/cracked_bricks/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Замшелый булыжник
         event.recipes.gtceu.macerator(`mossy_cobble_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/mossy_cobble/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Замшелый кирпич
         event.recipes.gtceu.macerator(`mossy_bricks_stairs_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/mossy_bricks/${stone}_stairs`)
-            .itemOutputs(`6x gtceu:${stone}_small_dust`)
+            .itemOutputs(`6x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
@@ -1955,49 +1955,49 @@ const registerTFCRecipes = (event) => {
         // Сырой
         event.recipes.gtceu.macerator(`raw_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/raw/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Булыжник
         event.recipes.gtceu.macerator(`cobble_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/cobble/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Гладкий
         event.recipes.gtceu.macerator(`smooth_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/smooth/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Кирпичи
         event.recipes.gtceu.macerator(`bricks_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/bricks/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Потрескавшиеся кирпичи
         event.recipes.gtceu.macerator(`cracked_bricks_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/cracked_bricks/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Замшелый булыжник
         event.recipes.gtceu.macerator(`mossy_cobble_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/mossy_cobble/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
         // Замшелый кирпич
         event.recipes.gtceu.macerator(`mossy_bricks_slab_${stone}_to_dust`)             
             .itemInputs(`tfc:rock/mossy_bricks/${stone}_slab`)
-            .itemOutputs(`2x gtceu:${stone}_small_dust`)
+            .itemOutputs(`2x gtceu:small_${stone}_dust`)
             .duration(4)
             .EUt(75)
 
@@ -2081,8 +2081,8 @@ const registerTFCRecipes = (event) => {
     event.recipes.gtceu.centrifuge('soul_sand_separation')             
         .itemInputs('minecraft:soul_sand')
         .chancedOutput('tfc:sand/yellow', 9000, 130)
-        .chancedOutput('gtceu:saltpeter_small_dust', 8000, 480)
-        .chancedOutput('gtceu:coal_tiny_dust', 2000, 340)
+        .chancedOutput('gtceu:small_saltpeter_dust', 8000, 480)
+        .chancedOutput('gtceu:tiny_coal_dust', 2000, 340)
         .outputFluids(Fluid.of('gtceu:oil', 80))
         .duration(200)
         .EUt(80)
@@ -2108,7 +2108,7 @@ const registerTFCRecipes = (event) => {
         .itemInputs('#tfc:dirt')
         .chancedOutput('gtceu:plant_ball', 1250, 700)
         .chancedOutput('tfc:sand/yellow', 5000, 1200)
-        .chancedOutput('gtceu:clay_tiny_dust', 4000, 900)
+        .chancedOutput('gtceu:tiny_clay_dust', 4000, 900)
         .outputFluids(Fluid.of('gtceu:oil', 2000))
         .duration(250)
         .EUt(30)
