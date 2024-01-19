@@ -1,0 +1,129 @@
+
+#General options
+[general]
+	#Enable FPS Reducer features.
+	enableFpsReducer = true
+	#Waiting time(sec) before reducing the FPS. (0:OFF)
+	#Range: 0 ~ 86400
+	waitingTime = 0
+	#Max frame rate when there is no operation for the specified period of time.
+	#Range: 1 ~ 60
+	idleFps = 10
+	#Max frame rate during GUI screen(Inventory/Menu) is opened. (0:OFF)
+	#Range: 0 ~ 60
+	guiScreenFps = 0
+	#Max frame rate when the character is stationary. (0:OFF)
+	#Range: 0 ~ 260
+	noActFps = 0
+	#Detect movement of player position. (0:OFF, 1:Riding/Flying, 2:Always)
+	#Range: 0 ~ 2
+	detectMoving = 1
+	#Ignore the mouse button holding.
+	ignoreHoldButton = false
+	#Reduce FPS in Game Menu.
+	reducingInGameMenu = true
+	#Force reducing FPS if the window is inactive.
+	reducingInBackground = true
+	#Suppress master volume if the window is inactive.
+	suppressSound = true
+	#Suppression master volume ratio in inactive (0-100).
+	#Range: 0 ~ 100
+	suppressedVolume = 20
+	#Enable HUD.
+	hudEnabled = false
+	#Reference position of HUD.
+	#Range: 1 ~ 8
+	hudReferencePos = 3
+	#HUD scale (default: 1.0)
+	#Range: 0.1 ~ 2.0
+	hudScale = 1.0
+	#Behavior of HUD display when a chat window opened. (0:keep to display, 1:off, 2:dodge a chat box)
+	#Range: 0 ~ 2
+	hudBehindChatBox = 2
+	#HUD information (1:FPS/CPU(long), 2:FPS/CPU(short), 3:FPS/CPU(2lines), 4:FPS only, 5:CPU only, 6:Simple)
+	#Range: 0 ~ 6
+	hudInfo = 4
+	#Profile (0:custom, 1:modest-eco, 2:eco, 3:cooling-low, 4:cooling-high)
+	#Range: 0 ~ 4
+	profile = 1
+
+#HUD offsets from reference positions at the screen edge.
+[hud_offset]
+	#Range: > -2147483648
+	topLeft_X = 2
+	#Range: > -2147483648
+	topLeft_Y = 2
+	#Range: > -2147483648
+	topCenter_X = 0
+	#Range: > -2147483648
+	topCenter_Y = 2
+	#Range: > -2147483648
+	topRight_X = -2
+	#Range: > -2147483648
+	topRight_Y = 2
+	#Range: > -2147483648
+	centerRight_X = -2
+	#Range: > -2147483648
+	centerRight_Y = 0
+	#Range: > -2147483648
+	bottomRight_X = -2
+	#Range: > -2147483648
+	bottomRight_Y = -2
+	#Range: > -2147483648
+	bottomCenter_X = 0
+	#Range: > -2147483648
+	bottomCenter_Y = -2
+	#Range: > -2147483648
+	bottomLeft_X = 2
+	#Range: > -2147483648
+	bottomLeft_Y = -2
+	#Range: > -2147483648
+	centerLeft_X = 2
+	#Range: > -2147483648
+	centerLeft_Y = 0
+
+#Alignments of HUD strings.
+[hud_alignment]
+	#Range: 0 ~ 2
+	topLeft = 0
+	#Range: 0 ~ 2
+	topCenter = 2
+	#Range: 0 ~ 2
+	topRight = 1
+	#Range: 0 ~ 2
+	centerRight = 1
+	#Range: 0 ~ 2
+	bottomRight = 1
+	#Range: 0 ~ 2
+	bottomCenter = 2
+	#Range: 0 ~ 2
+	bottomLeft = 0
+	#Range: 0 ~ 2
+	centerLeft = 0
+
+#Extra options
+[extra]
+	#HUD color
+	hudColor = "f0f0f0"
+	#Reduced fps HUD color
+	hudReductionColor = "00f000"
+	#HUD color for FPS display in GUI screen(inventory and menu).
+	hudGuiModeColor = "b6ecff"
+	#HUD color for FPS display when the character is stationary.
+	hudNoActModeColor = "ceffd4"
+	#Allow player configuration mode.
+	allowPlayerConfig = true
+	#CPU usage type. (0:one processor basis, 1:all processors basis)
+	#Range: 0 ~ 1
+	cpuUsageType = 0
+	#Which thread's CPU usage should be calculated. (0:client thread only, 1:entire Minecraft process including server threads)
+	#Range: 0 ~ 1
+	cpuUsageThread = 0
+	#Permit to set IdleFPS=1.
+	allowOneFps = false
+
+#Debug options
+[debug]
+	#Enable debug log
+	debugLog = false
+
