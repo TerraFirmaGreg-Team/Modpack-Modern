@@ -1377,23 +1377,27 @@ const registerGTCEURecipes = (event) => {
             }).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
         }
 
+        let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+
         if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood) 
         {
+            let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
+
             if (material.hasProperty(PropertyKey.INGOT))
             {
                 // Слиток -> Стержень
-                event.recipes.createPressing(Item.of(`gtceu:${material.getName()}_plate`).withChance(0.97), `#forge:ingots/${material.getName()}`)
+                event.recipes.createPressing(plateStack.withChance(0.97), ingotStack)
                     .id(`tfg:pressing/${material.getName()}_plate`)
 
                 // 9х Слиток -> Блок
-                event.recipes.createCompacting(Item.of(`#forge:storage_blocks/${material.getName()}`), `9x #forge:ingots/${material.getName()}`)
+                event.recipes.createCompacting(Item.of(`#forge:storage_blocks/${material.getName()}`), ingotStack.withCount(9))
                     .heated()
                     .id(`tfg:compacting/${material.getName()}_block`)
             }
             else
             {
                 // Блок из гемов -> 9 Пластин
-                event.recipes.createCutting(Item.of(`9x gtceu:${material.getName()}_plate`).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
+                event.recipes.createCutting(Item.of(plateStack.withCount(9)).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
                     .id(`tfg:cutting/${material.getName()}_plate`)
             }
         }
@@ -1416,7 +1420,7 @@ const registerGTCEURecipes = (event) => {
             }
         }
 
-        let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        
         let gemStack = ChemicalHelper.get(TagPrefix.gem, material, 1)
         let dustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
 
