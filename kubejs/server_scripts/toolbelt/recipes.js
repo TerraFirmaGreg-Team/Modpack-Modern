@@ -14,7 +14,7 @@ const registerToolBeltRecipes = (event) => {
         A: '#forge:string',
         B: '#forge:leather',
         C: '#forge:plates/wrought_iron'
-    })
+    }).id('tfg:toolbelt/shaped/pouch')
 
     // ToolBelt с размером 2
     event.shaped(Item.of('toolbelt:belt', {Size:2}), [
@@ -25,7 +25,7 @@ const registerToolBeltRecipes = (event) => {
         A: '#forge:string',
         B: '#forge:leather',
         C: '#forge:plates/wrought_iron'
-    })
+    }).id('tfg:toolbelt/shaped/belt_' + 2)
 
     // ToolBelt с размером 3 - 9
     for (let i = 3; i < 10; i++) {
