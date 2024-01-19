@@ -99,8 +99,6 @@ ServerEvents.recipes(event => {
     
     registerSophisticatedBackpacksRecipes(event)
     
-    registerToolBeltRecipes(event)
-    
     registerExposureRecipes(event)
     
     registerFTBQuestsRecipes(event)

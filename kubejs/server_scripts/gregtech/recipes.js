@@ -1371,7 +1371,7 @@ const registerGTCEURecipes = (event) => {
             }).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
         }
 
-        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && (material != 'wood' || material != 'treated_wood')) 
+        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood) 
         {
             if (material.hasProperty(PropertyKey.INGOT))
             {
@@ -1393,7 +1393,7 @@ const registerGTCEURecipes = (event) => {
         }
 
         // Прокатка стержней
-        if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != 'wood')
+        if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != GTMaterials.Wood)
         {
             if (material.hasProperty(PropertyKey.INGOT))
             {
