@@ -21,7 +21,7 @@ death_storage_duration = -1
 		#If only the owner of the corpse can access the inventory
 		only_owner = true
 		#If everybody can access the corpse in the skeleton stage (Only if only_owner_access is set to true)
-		skeleton = false
+		skeleton = true
 
 	[corpse.despawn]
 		#The time passed (in ticks) after a corpse despawns (only if empty)
