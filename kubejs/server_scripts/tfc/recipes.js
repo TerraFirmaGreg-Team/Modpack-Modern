@@ -974,7 +974,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:anvil/${material.getName()}_bars`)
     
                 // 16x Решетка
-                event.recipes.tfc.anvil(`16x tfc:metal/bars/${material.getName()}`, `gtceu:${material.getName()}_double_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+                event.recipes.tfc.anvil(`16x tfc:metal/bars/${material.getName()}`, `gtceu:double_${material.getName()}_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
                     .tier(tfcProperty.getTier())
                     .id(`tfc:anvil/${material.getName()}_bars_double`)
     
