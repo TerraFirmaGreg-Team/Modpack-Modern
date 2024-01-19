@@ -12,6 +12,7 @@ config/forge-client.toml
 config/chiselsandbits-client.toml
 config/chiselsandbits-common.toml
 config/xaerominimap_entities.json
+config/voicechat/username-cache.json
 
 # .minecraft
 crash-reports/*
@@ -71,4 +72,3 @@ knownkeys.txt
 .github/buildtools/serverpack/banned-players.json
 .github/buildtools/serverpack/ops.json
 .github/buildtools/serverpack/whitelist.json
-config/voicechat/username-cache.json

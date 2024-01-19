@@ -82,6 +82,15 @@ global.FIRMALIFE_HIDED_ITEMS = [
     'firmalife:exposed_copper_greenhouse_trapdoor', 
     'firmalife:exposed_copper_greenhouse_door', 
     'firmalife:exposed_copper_greenhouse_port',
+
+    'firmalife:weathered_treated_wood_greenhouse_wall', 
+    'firmalife:weathered_treated_wood_greenhouse_panel_wall', 
+    'firmalife:weathered_treated_wood_greenhouse_panel_roof', 
+    'firmalife:weathered_treated_wood_greenhouse_roof', 
+    'firmalife:weathered_treated_wood_greenhouse_roof_top', 
+    'firmalife:weathered_treated_wood_greenhouse_trapdoor', 
+    'firmalife:weathered_treated_wood_greenhouse_door', 
+    'firmalife:weathered_treated_wood_greenhouse_port'
 ];
 
 

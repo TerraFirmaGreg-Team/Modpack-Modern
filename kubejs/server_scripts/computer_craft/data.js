@@ -32,7 +32,7 @@ const registerComputerCraftData = (event) => {
                         break;
                 }
 
-                event.addJson(`computercraft:computercraft/turtle_upgrades/${material}_${type.name}`, json)
+                event.addJson(`computercraft:computercraft/turtle_upgrades/${material.getName()}_${type.name}`, json)
             }
         })
     });

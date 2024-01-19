@@ -342,6 +342,13 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Светильник моря
+
+    event.remove({ id: 'minecraft:sea_lantern' })
+    event.remove({ id: 'gtceu:assembler/sea_lantern' })
+
+    //#endregion
+
     //#region Выход: Сырой призмарин ступень
 
     event.remove({ id: 'minecraft:prismarine_stairs' })
@@ -736,7 +743,7 @@ const registerMinecraftRecipes = (event) => {
         .itemInputs('')
         .chancedOutput('tfc:sand/yellow', 9000, 300)
         .chancedOutput('gtceu:tungstate_small_dust', 1250, 450)
-        .chancedOutput('gtceu:platinum_tiny_dust', 630, 150)
+        .chancedOutput('gtceu:tiny_platinum_dust', 630, 150)
         .outputFluids(Fluid.of('gtceu:helium', 2000))
         .duration(250)
         .EUt(30)*/
@@ -1449,6 +1456,13 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Компасс
+
+    event.remove({ id: 'tfc:crafting/vanilla/compass' })
+    event.remove({ id: 'gtceu:assembler/compass' })
+
+    //#endregion
+
     //#region Выход: Незеритовый слиток
 
     event.remove({ id: 'minecraft:netherite_ingot_from_netherite_block' })
@@ -1673,6 +1687,16 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Коптильня
 
     event.remove({ id: 'minecraft:blast_furnace' })
+
+    //#endregion
+
+    //#region Выход: Пустая карта
+
+    event.recipes.gtceu.assembler('map')             
+        .itemInputs('8x minecraft:paper', 'firmaciv:firmaciv_compass')
+        .itemOutputs('minecraft:map')
+        .duration(100)
+        .EUt(4)
 
     //#endregion
 
@@ -2608,7 +2632,7 @@ const registerMinecraftRecipes = (event) => {
     //event.smelting('tfc:metal/ingot/gold', 'minecraft:raw_gold')
     //    .id('minecraft:copper_ingot_from_smelting_raw_gold')
 
-    event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
+    // event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
     event.remove({ id: 'minecraft:gold_ingot_from_blasting_raw_gold' })
 
     event.remove({ id: 'minecraft:raw_gold_block' })

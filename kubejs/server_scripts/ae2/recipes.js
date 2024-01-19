@@ -23,7 +23,7 @@ const registerAE2Recipes = (event) => {
         'CD',
     ], {
         A: '#forge:tools/wrenches',
-        B: '#forge:circuits/lv',
+        B: '#gtceu:circuits/lv',
         C: 'ae2:calculation_processor',
         D: '#ae2:illuminated_panel',
     }).id('tfg:crafting/network_tool')
@@ -49,7 +49,7 @@ const registerAE2Recipes = (event) => {
         B: 'ae2:fluix_pearl',
         C: 'gtceu:ev_sensor',
         D: '#forge:rods/titanium',
-        E: '#forge:circuits/ev'
+        E: '#gtceu:circuits/ev'
     }).id('tfg:crafting/wireless_receiver')
 
     // Illuminated Panel
@@ -192,7 +192,7 @@ const registerAE2Recipes = (event) => {
         A: 'ae2:wireless_receiver',
         B: 'ae2:terminal',
         C: 'ae2:engineering_processor',
-        D: '#forge:circuits/hv',
+        D: '#gtceu:circuits/hv',
         E: 'gtceu:hv_lithium_battery',
         F: '#forge:plates/nether_quartz'
     }).id('tfg:crafting/wireless_terminal')
@@ -206,7 +206,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:fine_wires/red_alloy',
         B: '#forge:plates/aluminium',
         C: 'ae2:calculation_processor',
-        D: '#forge:circuits/mv',
+        D: '#gtceu:circuits/mv',
         E: '#forge:fine_wires/gold'
     }).id('tfg:crafting/basic_card')
 
@@ -219,7 +219,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:fine_wires/red_alloy',
         B: '#forge:plates/stainless_steel',
         C: 'ae2:calculation_processor',
-        D: '#forge:circuits/hv',
+        D: '#gtceu:circuits/hv',
         E: '#forge:fine_wires/silver'
     }).id('tfg:crafting/advanced_card')
 
@@ -254,7 +254,7 @@ const registerAE2Recipes = (event) => {
         A: 'ae2:quartz_glass',
         B: '#forge:plates/steel',
         C: '#forge:fine_wires/red_alloy',
-        D: '#forge:circuits/lv',
+        D: '#gtceu:circuits/lv',
     }).id('tfg:crafting/item_cell_housing')
     
     // Fluid Cell Housing
@@ -266,7 +266,7 @@ const registerAE2Recipes = (event) => {
         A: 'ae2:quartz_glass',
         B: '#forge:plates/stainless_steel',
         C: '#forge:fine_wires/red_alloy',
-        D: '#forge:circuits/lv',
+        D: '#gtceu:circuits/lv',
     }).id('tfg:crafting/fluid_cell_housing')
 
     // Level Emitter
@@ -313,7 +313,7 @@ const registerAE2Recipes = (event) => {
         'ABA'
     ], {
         A: '#forge:plates/stainless_steel',
-        B: '#forge:circuits/mv',
+        B: '#gtceu:circuits/mv',
         C: '#ae2:glass_cable',
         D: 'gtceu:aluminium_crate',
         E: 'ae2:terminal'
@@ -328,7 +328,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:plates/steel',
         B: 'ae2:engineering_processor',
         C: '#ae2:glass_cable',
-        D: '#forge:circuits/lv',
+        D: '#gtceu:circuits/lv',
         E: '#forge:plates/titanium'
     }).id('tfg:crafting/drive')
 
@@ -408,7 +408,7 @@ const registerAE2Recipes = (event) => {
     ], {
         A: '#forge:plates/stainless_steel',
         B: 'gtceu:hv_electric_piston',
-        C: '#forge:circuits/hv',
+        C: '#gtceu:circuits/hv',
     }).id('tfg:crafting/condenser')
 
     
@@ -456,7 +456,7 @@ const registerAE2Recipes = (event) => {
         B: '#ae2:illuminated_panel',
         C: '#forge:tools/mallets',
         D: '#forge:rods/steel',
-        E: '#forge:circuits/hv',
+        E: '#gtceu:circuits/hv',
         F: '#forge:plates/steel',
         G: '#forge:screws/steel'
     }).id('tfg:crafting/terminal')
@@ -728,7 +728,7 @@ const registerAE2Recipes = (event) => {
             '3x #forge:plates/steel',
             '2x #forge:sheets/polyethylene',
             '4x #forge:fine_wires/red_alloy',
-            '#forge:circuits/mv')
+            '#gtceu:circuits/mv')
         .itemOutputs('ae2:blank_pattern')
         .duration(200)
         .EUt(120)
@@ -738,7 +738,7 @@ const registerAE2Recipes = (event) => {
             '3x #forge:plates/steel',
             '2x #forge:sheets/polyvinyl_chloride',
             '4x #forge:fine_wires/red_alloy',
-            '#forge:circuits/mv')
+            '#gtceu:circuits/mv')
         .itemOutputs('4x ae2:blank_pattern')
         .duration(200)
         .EUt(120)
@@ -748,7 +748,7 @@ const registerAE2Recipes = (event) => {
             '3x #forge:plates/steel',
             '2x #forge:sheets/polytetrafluoroethylene',
             '4x #forge:fine_wires/red_alloy',
-            '#forge:circuits/mv')
+            '#gtceu:circuits/mv')
         .itemOutputs('16x ae2:blank_pattern')
         .duration(200)
         .EUt(480)
@@ -758,7 +758,7 @@ const registerAE2Recipes = (event) => {
             '3x #forge:plates/steel',
             '2x #forge:sheets/polybenzimidazole',
             '4x #forge:fine_wires/red_alloy',
-            '#forge:circuits/mv')
+            '#gtceu:circuits/mv')
         .itemOutputs('64x ae2:blank_pattern')
         .duration(200)
         .EUt(480)
@@ -807,7 +807,7 @@ const registerAE2Recipes = (event) => {
     // 1k storage components
     event.recipes.gtceu.assembler('ae2:cell_component_1k')
         .itemInputs(
-            '4x #forge:batteries/ulv',
+            '4x #gtceu:batteries/ulv',
             '4x #forge:plates/wrought_iron',
             '4x #forge:dusts/certus_quartz',
             'ae2:logic_processor',)
@@ -819,7 +819,7 @@ const registerAE2Recipes = (event) => {
     // 4k storage components
     event.recipes.gtceu.assembler('ae2:cell_component_4k')
         .itemInputs(
-            '4x #forge:circuits/ev',
+            '4x #gtceu:circuits/ev',
             '4x #forge:plates/titanium',
             '4x #forge:dusts/certus_quartz',
             'ae2:logic_processor')
@@ -832,7 +832,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:cell_component_4k_1k')
         .itemInputs(
             'ae2:logic_processor',
-            '2x #forge:circuits/ev',
+            '2x #gtceu:circuits/ev',
             '4x ae2:cell_component_1k')
         .inputFluids(Fluid.of('gtceu:steel', 144))
         .itemOutputs('ae2:cell_component_4k')
@@ -843,7 +843,7 @@ const registerAE2Recipes = (event) => {
     // 16k storage components
     event.recipes.gtceu.assembler('ae2:cell_component_16k')
         .itemInputs(
-            '4x #forge:circuits/iv',
+            '4x #gtceu:circuits/iv',
             '4x #forge:plates/tungsten_steel',
             '8x #forge:dusts/certus_quartz',
             'ae2:engineering_processor',)
@@ -856,7 +856,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:cell_component_16k_4k')
         .itemInputs(
             'ae2:logic_processor',
-            '2x #forge:circuits/iv',
+            '2x #gtceu:circuits/iv',
             '4x ae2:cell_component_4k')
         .inputFluids(Fluid.of('gtceu:steel', 144))
         .itemOutputs('ae2:cell_component_16k')
@@ -867,7 +867,7 @@ const registerAE2Recipes = (event) => {
     // 64k storage components
     event.recipes.gtceu.assembler('ae2:cell_component_64k')
         .itemInputs(
-            '4x #forge:circuits/luv',
+            '4x #gtceu:circuits/luv',
             '4x #forge:plates/rhodium_plated_palladium',
             '8x #forge:dusts/certus_quartz',
             'ae2:engineering_processor')
@@ -879,7 +879,7 @@ const registerAE2Recipes = (event) => {
         event.recipes.gtceu.assembler('ae2:cell_component_64k_16k')
         .itemInputs(
             'ae2:engineering_processor',
-            '2x #forge:circuits/luv',
+            '2x #gtceu:circuits/luv',
             '4x ae2:cell_component_16k')
         .inputFluids(Fluid.of('gtceu:steel', 144))
         .itemOutputs('ae2:cell_component_64k')
@@ -890,7 +890,7 @@ const registerAE2Recipes = (event) => {
     // 256k storage components
     event.recipes.gtceu.assembler('ae2:cell_component_256k')
         .itemInputs(
-            '4x #forge:circuits/zpm',
+            '4x #gtceu:circuits/zpm',
             '4x #forge:plates/naquadah_alloy',
             '16x #forge:dusts/certus_quartz',
             'ae2:engineering_processor',)
@@ -902,7 +902,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:cell_component_256k_64k')
         .itemInputs(
             'ae2:engineering_processor',
-            '2x #forge:circuits/zpm',
+            '2x #gtceu:circuits/zpm',
             '4x ae2:cell_component_64k')
         .inputFluids(Fluid.of('gtceu:steel', 144))
         .itemOutputs('ae2:cell_component_256k')
@@ -917,7 +917,7 @@ const registerAE2Recipes = (event) => {
     // 2³ Spatial Component
     event.recipes.gtceu.assembler('ae2:spatial_cell_component_2')
         .itemInputs(
-            '4x #forge:circuits/ev',
+            '4x #gtceu:circuits/ev',
             '4x #forge:plates/titanium',
             '32x #forge:dusts/certus_quartz',
             'ae2:calculation_processor',)
@@ -929,7 +929,7 @@ const registerAE2Recipes = (event) => {
     // 16³ Spatial Component
     event.recipes.gtceu.assembler('ae2:spatial_cell_component_16')
         .itemInputs(
-            '4x #forge:circuits/iv',
+            '4x #gtceu:circuits/iv',
             '4x #forge:plates/tungsten_steel',
             '32x #forge:dusts/certus_quartz',
             'ae2:calculation_processor',)
@@ -942,7 +942,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:spatial_cell_component_16_2')
         .itemInputs(
             'ae2:calculation_processor',
-            '2x #forge:circuits/iv',
+            '2x #gtceu:circuits/iv',
             '4x ae2:spatial_cell_component_2')
         .inputFluids(Fluid.of('gtceu:tungsten_steel', 144))
         .itemOutputs('ae2:spatial_cell_component_16')
@@ -953,7 +953,7 @@ const registerAE2Recipes = (event) => {
     // 128³ Spatial Component
     event.recipes.gtceu.assembler('ae2:spatial_cell_component_128')
         .itemInputs(
-            '4x #forge:circuits/luv',
+            '4x #gtceu:circuits/luv',
             '4x #forge:plates/rhodium_plated_palladium',
             '32x #forge:dusts/certus_quartz',
             'ae2:calculation_processor')
@@ -966,7 +966,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:spatial_cell_component_128_16')
         .itemInputs(
             'ae2:calculation_processor',
-            '2x #forge:circuits/luv',
+            '2x #gtceu:circuits/luv',
             '4x ae2:spatial_cell_component_16') 
         .inputFluids(Fluid.of('gtceu:tungsten_steel', 144))
         .itemOutputs('ae2:spatial_cell_component_128')
@@ -1054,7 +1054,7 @@ const registerAE2Recipes = (event) => {
             'ae2:logic_processor',
             'ae2:engineering_processor',
             'ae2:calculation_processor',
-            '#forge:circuits/hv',
+            '#gtceu:circuits/hv',
             '2x #forge:plates/steel')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:crafting_unit')
@@ -1068,7 +1068,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:molecular_assembler_hv')
         .itemInputs(
             '2x ae2:quartz_glass',
-            '2x #forge:circuits/hv',
+            '2x #gtceu:circuits/hv',
             'ae2:annihilation_core',
             'ae2:formation_core',
             '2x gtceu:hv_conveyor_module',
@@ -1084,7 +1084,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:molecular_assembler_ev')
         .itemInputs(
             '2x ae2:quartz_glass',
-            '2x #forge:circuits/ev',
+            '2x #gtceu:circuits/ev',
             'ae2:annihilation_core',
             'ae2:formation_core',
             '2x gtceu:ev_conveyor_module',
@@ -1100,7 +1100,7 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('ae2:molecular_assembler_iv')
         .itemInputs(
             '2x ae2:quartz_glass',
-            '2x #forge:circuits/iv',
+            '2x #gtceu:circuits/iv',
             'ae2:annihilation_core',
             'ae2:formation_core',
             '2x gtceu:iv_conveyor_module',
@@ -1118,7 +1118,7 @@ const registerAE2Recipes = (event) => {
 	event.recipes.gtceu.assembler('ae2:controller')
         .itemInputs(
             '2x ae2:engineering_processor',
-            '2x #forge:circuits/hv',
+            '2x #gtceu:circuits/hv',
             '2x #forge:plates/titanium',
             'ae2:fluix_block')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
@@ -1388,7 +1388,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:printed_silicon',
             'ae2:printed_logic_processor',
-            '#forge:circuits/lv',
+            '#gtceu:circuits/lv',
             '2x #gtceu:resistors',
             '2x #forge:fine_wires/tin',)
         .inputFluids(Fluid.of('gtceu:redstone', 144))
@@ -1401,7 +1401,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:printed_silicon',
             'ae2:printed_logic_processor',
-            '#forge:circuits/lv',
+            '#gtceu:circuits/lv',
             'gtceu:advanced_smd_resistor',
             '2x #forge:fine_wires/tin',)
         .inputFluids(Fluid.of('gtceu:redstone', 144))
@@ -1415,7 +1415,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:printed_silicon',
             'ae2:printed_calculation_processor',
-            '#forge:circuits/lv',
+            '#gtceu:circuits/lv',
             '2x #gtceu:resistors',
             '2x #forge:fine_wires/tin',)
         .inputFluids(Fluid.of('gtceu:redstone', 144))
@@ -1428,7 +1428,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:printed_silicon',
             'ae2:printed_calculation_processor',
-            '#forge:circuits/lv',
+            '#gtceu:circuits/lv',
             'gtceu:advanced_smd_resistor',
             '2x #forge:fine_wires/tin',)
         .inputFluids(Fluid.of('gtceu:redstone', 144))
@@ -1442,7 +1442,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:printed_silicon',
             'ae2:printed_engineering_processor',
-            '#forge:circuits/lv',
+            '#gtceu:circuits/lv',
             '2x #gtceu:resistors',
             '2x #forge:fine_wires/tin',)
         .inputFluids(Fluid.of('gtceu:redstone', 144))
@@ -1455,7 +1455,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             'ae2:printed_silicon',
             'ae2:printed_engineering_processor',
-            '#forge:circuits/lv',
+            '#gtceu:circuits/lv',
             'gtceu:advanced_smd_resistor',
             '2x #forge:fine_wires/tin',)
         .inputFluids(Fluid.of('gtceu:redstone', 144))
@@ -1983,8 +1983,8 @@ const registerAE2Recipes = (event) => {
     // Quantum Ring
     event.recipes.gtceu.assembly_line('ae2:quantum_ring')
         .itemInputs(
-            '6x #forge:batteries/hv',
-            '12x #forge:circuits/iv',
+            '6x #gtceu:batteries/hv',
+            '12x #gtceu:circuits/iv',
             '16x gtceu:iv_emitter',
             '8x ae2:engineering_processor',
             '14x gtceu:iv_sensor',

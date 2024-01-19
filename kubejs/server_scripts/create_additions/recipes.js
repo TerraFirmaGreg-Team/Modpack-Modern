@@ -44,7 +44,7 @@ const registerCreateAdditionsRecipes = (event) => {
 
     // Батарейный блок
     event.recipes.gtceu.assembler('create_additions/battery')             
-        .itemInputs('gtceu:bronze_frame', '6x gtceu:bronze_plate', '24x gtceu:bronze_screw', '#forge:batteries/hv')
+        .itemInputs('gtceu:bronze_frame', '6x gtceu:bronze_plate', '24x gtceu:bronze_screw', '#gtceu:batteries/hv')
         .itemOutputs('createaddition:modular_accumulator')
         .duration(400)
         .EUt(512)

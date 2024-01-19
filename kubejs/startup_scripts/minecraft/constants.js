@@ -674,6 +674,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:baked_potato',
     'minecraft:end_rod',
     'minecraft:brush',
+    'minecraft:sea_lantern',
     'minecraft:bookshelf',
     'minecraft:enchanted_book',
     'minecraft:repeating_command_block', 
@@ -708,6 +709,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:large_amethyst_bud', 
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
+    'minecraft:raw_iron_block', 
+    'minecraft:raw_gold_block', 
+    'minecraft:raw_copper_block',
+    'minecraft:compass',
     '/spawn_egg/'
 ];
 

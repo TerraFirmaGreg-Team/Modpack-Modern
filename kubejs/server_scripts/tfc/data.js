@@ -129,12 +129,12 @@ const registerTFCLampFuels = (event) => {
 const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:fertilizer', 0.15, 0.15, 0.15)
 
-    event.fertilizer('gtceu:potassium_tiny_dust', null, null, 0.016)
-    event.fertilizer('gtceu:potassium_small_dust', null, null, 0.037)
+    event.fertilizer('gtceu:tiny_potassium_dust', null, null, 0.016)
+    event.fertilizer('gtceu:small_potassium_dust', null, null, 0.037)
     event.fertilizer('gtceu:potassium_dust', null, null, 0.15)
 
-    event.fertilizer('gtceu:phosphorus_tiny_dust', null, 0.016, null)
-    event.fertilizer('gtceu:phosphorus_small_dust', null, 0.037, null)
+    event.fertilizer('gtceu:tiny_phosphorus_dust', null, 0.016, null)
+    event.fertilizer('gtceu:small_phosphorus_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
 }
 

@@ -2,6 +2,174 @@
 
 const registerFirmaLifeRecipes = (event) => {
 
+    //#region Рецепты теплиц
+
+    //#region Медная
+
+    // Стена
+    event.shaped('8x firmalife:copper_greenhouse_wall', [
+        'ABA',
+        'ABA',
+        'ABA' 
+    ], {
+        A: '#forge:rods/copper',
+        B: 'minecraft:glass'   
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_wall')
+
+    // Панель
+    event.shaped('8x firmalife:copper_greenhouse_panel_wall', [
+        'ABA',
+        'ABA',
+        'ABA' 
+    ], {
+        A: '#forge:rods/copper',
+        B: 'firmalife:reinforced_glass'   
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_panel_wall')
+
+    // Панельная Крыша
+    event.shaped('4x firmalife:copper_greenhouse_panel_roof', [
+        'A  ',
+        'BA ',
+        'BBA' 
+    ], {
+        A: 'firmalife:reinforced_glass',
+        B: '#forge:rods/copper'   
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_panel_roof')
+
+    // Крыша
+    event.shaped('4x firmalife:copper_greenhouse_roof', [
+        'A  ',
+        'BA ',
+        'BBA' 
+    ], {
+        A: '#forge:rods/copper',
+        B: 'firmalife:reinforced_glass'   
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_roof')
+
+    // Верхушка крыши
+    event.shaped('8x firmalife:copper_greenhouse_roof_top', [
+        'ABA',
+        'BAB' 
+    ], {
+        A: '#forge:rods/copper',
+        B: 'firmalife:reinforced_glass'   
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_roof_top')
+
+    // Люк
+    event.shaped('8x firmalife:copper_greenhouse_trapdoor', [
+        'ABA',
+        'BAB' 
+    ], {
+        A: 'firmalife:reinforced_glass',
+        B: '#forge:rods/copper'
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_trapdoor')
+
+    // Дверь
+    event.shaped('2x firmalife:copper_greenhouse_door', [
+        'AB',
+        'AB',
+        'AB' 
+    ], {
+        A: '#forge:rods/copper',
+        B: 'minecraft:glass'
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_door')
+
+    // Порт
+    event.shaped('8x firmalife:copper_greenhouse_port', [
+        'AA',
+        'BC',
+        'AA' 
+    ], {
+        A: 'firmalife:reinforced_glass',
+        B: '#forge:rods/copper',
+        C: 'firmalife:copper_pipe'
+    }).id('firmalife:crafting/greenhouse/copper_greenhouse_port')
+
+    //#endregion
+
+    //#region Железная
+
+    // Стена
+    event.shaped('8x firmalife:iron_greenhouse_wall', [
+        'ABA',
+        'ABA',
+        'ABA' 
+    ], {
+        A: '#forge:rods/wrought_iron',
+        B: 'minecraft:glass'   
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_wall')
+
+    // Панель
+    event.shaped('8x firmalife:iron_greenhouse_panel_wall', [
+        'ABA',
+        'ABA',
+        'ABA' 
+    ], {
+        A: '#forge:rods/wrought_iron',
+        B: 'firmalife:reinforced_glass'   
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_panel_wall')
+
+    // Панельная Крыша
+    event.shaped('4x firmalife:iron_greenhouse_panel_roof', [
+        'A  ',
+        'BA ',
+        'BBA' 
+    ], {
+        A: 'firmalife:reinforced_glass',
+        B: '#forge:rods/wrought_iron'   
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_panel_roof')
+
+    // Крыша
+    event.shaped('4x firmalife:iron_greenhouse_roof', [
+        'A  ',
+        'BA ',
+        'BBA' 
+    ], {
+        A: '#forge:rods/wrought_iron',
+        B: 'firmalife:reinforced_glass'   
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_roof')
+
+    // Верхушка крыши
+    event.shaped('8x firmalife:iron_greenhouse_roof_top', [
+        'ABA',
+        'BAB' 
+    ], {
+        A: '#forge:rods/wrought_iron',
+        B: 'firmalife:reinforced_glass'   
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_roof_top')
+
+    // Люк
+    event.shaped('8x firmalife:iron_greenhouse_trapdoor', [
+        'ABA',
+        'BAB' 
+    ], {
+        A: 'firmalife:reinforced_glass',
+        B: '#forge:rods/wrought_iron'
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_trapdoor')
+
+    // Дверь
+    event.shaped('2x firmalife:iron_greenhouse_door', [
+        'AB',
+        'AB',
+        'AB' 
+    ], {
+        A: '#forge:rods/wrought_iron',
+        B: 'minecraft:glass'
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_door')
+
+    // Порт
+    event.shaped('8x firmalife:iron_greenhouse_port', [
+        'AA',
+        'BC',
+        'AA' 
+    ], {
+        A: 'firmalife:reinforced_glass',
+        B: '#forge:rods/wrought_iron',
+        C: 'firmalife:copper_pipe'
+    }).id('firmalife:crafting/greenhouse/iron_greenhouse_port')
+
+    //#endregion
+
     //#region Нержавеющая теплица
 
     event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall' })
@@ -14,6 +182,10 @@ const registerFirmaLifeRecipes = (event) => {
     event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_port' })
 
     //#endregion
+
+    //#endregion
+
+    //#region Удаление других рецептов
 
     event.remove({ id: 'firmalife:crafting/compost_tumbler' })
     event.remove({ id: 'firmalife:crafting/pumping_station' })
@@ -69,6 +241,8 @@ const registerFirmaLifeRecipes = (event) => {
     // Rod
     event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
     event.remove({ id: 'firmalife:heating/metal/stainless_steel_rod' })
+
+    //#endregion
 
     // Декрафт Jag Lid
     event.recipes.tfc.heating('tfc:jar_lid', 230)
@@ -136,3 +310,15 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion
 }
+
+/*
+
+event.shaped('', [
+        '' 
+    ], {
+        A: '',
+        B: '',
+        C: ''    
+    }).id()
+
+*/

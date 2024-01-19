@@ -3,8 +3,8 @@
 global.GTCEU_DISABLED_ITEMS = [
     // Пыль пшеницы
     'gtceu:wheat_dust',
-    'gtceu:wheat_small_dust',
-    'gtceu:wheat_tiny_dust',
+    'gtceu:small_wheat_dust',
+    'gtceu:tiny_wheat_dust',
 
     // Bronze Machines
     'gtceu:bronze_machine_casing', 
@@ -42,27 +42,4 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 
     'gtceu:rubber_planks',
-];
-
-global.GTCEU_ANVIL_TOOL_TYPES = [
-    GTToolType.SWORD,
-    GTToolType.PICKAXE,
-    GTToolType.SHOVEL,
-    GTToolType.AXE,
-    GTToolType.HOE,
-    GTToolType.MINING_HAMMER,
-    GTToolType.SPADE,
-    GTToolType.SAW,
-    GTToolType.HARD_HAMMER,
-    // GTToolType.SOFT_MALLET,
-    // GTToolType.WRENCH,
-    GTToolType.FILE,
-    // GTToolType.CROWBAR,
-    // GTToolType.SCREWDRIVER,
-    // GTToolType.MORTAR,
-    // GTToolType.WIRE_CUTTER,
-    GTToolType.SCYTHE,
-    GTToolType.KNIFE,
-    GTToolType.BUTCHERY_KNIFE,
-    // GTToolType.PLUNGER
 ];

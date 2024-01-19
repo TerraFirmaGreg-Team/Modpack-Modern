@@ -15,7 +15,7 @@ const registerGTCEULoots = (event) => {
                 let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
                 let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1).withChance(0.2)
 
-                let blockName = `gtceu:${stoneType}_${material}_ore`
+                let blockName = `gtceu:${stoneType}_${material.getName()}_ore`
 
                 if (!richRawOre.isEmpty() && !normalRawOre.isEmpty() && !poorRawOre.isEmpty()) {
                     

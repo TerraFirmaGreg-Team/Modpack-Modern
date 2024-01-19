@@ -33,7 +33,7 @@
 	#
 	# Adjusts the position where potion effects render in the X direction. By default, this moves them to the right of the inventory tabs. Negative values shift them to the left.
 	#Range: -128 ~ 128
-	effectHorizontalAdjustment = 20
+	effectHorizontalAdjustment = 0
 	#
 	# Health display format. This affects what number is displayed on top of the tfc-style health bar
 	#   TFC - e.g. 750 / 1000

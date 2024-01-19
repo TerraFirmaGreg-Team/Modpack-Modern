@@ -716,7 +716,7 @@ global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
     '#tfc:lumber': { name: 'lumber', output: ['1x gtceu:wood_dust'] },
     '#tfc:support_beams': { name: 'support_beams', output: ['2x gtceu:wood_dust'] },
     // '#minecraft:boats': { name: 'boats', output: ['5x gtceu:wood_dust'] },
-    '#tfc:minecarts': { name: 'minecarts', output: ['5x gtceu:wood_dust', '1x gtceu:wrought_iron_small_dust'] },
+    '#tfc:minecarts': { name: 'minecarts', output: ['5x gtceu:wood_dust', '1x gtceu:small_wrought_iron_dust'] },
     '#minecraft:signs': { name: 'signs', output: ['1x gtceu:wood_dust'] },
     '#minecraft:hanging_signs': { name: 'hanging_signs', output: ['1x gtceu:wood_dust'] },
     '#minecraft:logs': { name: 'logs', output: ['6x gtceu:wood_dust'] },

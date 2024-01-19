@@ -27,11 +27,8 @@ if (Platform.isLoaded('jei')) {
     REIEvents.removeCategories(event => {
         removeCategories(event)
     })
-
-    REIEvents.groupEntries(event => {
-        groupItems(event)
-    })
     
+    REIEvents.groupEntries(event => {})
 }
 
 const hideItems = (event) => {
@@ -62,9 +59,4 @@ const removeCategories = (event) => {
     registerMinecraftCategories(event)
     registerGTCEUCategories(event)
     registerMoreRedCategories(event)
-}
-
-const groupItems = (event) => {
-    groupGTCEUStuff(event)
-    groupTFCStuff(event)
 }

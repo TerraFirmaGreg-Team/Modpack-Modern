@@ -20,7 +20,6 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/weighted_ejector' },
         { id: 'create:crafting/kinetics/smart_chute' },
         { id: 'create:crafting/kinetics/speedometerfrom_conversion' },
-        { id: 'create:crafting/kinetics/speedometer' },
         { id: 'create:crafting/kinetics/stressometerfrom_conversion' },
         { id: 'create:crafting/kinetics/mechanical_pump' },
         { id: 'create:crafting/kinetics/smart_fluid_pipe' },
@@ -40,7 +39,6 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/white_sailfrom_conversion' },
         { id: 'create:crafting/kinetics/sequenced_gearshift' },
         { id: 'create:crafting/kinetics/rotation_speed_controller' },
-        { id: 'create:crafting/kinetics/track_station' },
         { id: 'create:crafting/kinetics/track_signal' },
         { id: 'create:crafting/kinetics/track_observer' },
         { id: 'create:crafting/kinetics/controls' },
@@ -94,6 +92,18 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/logistics/content_observer' },
         { id: 'create:milling/bone' },
     ], mod: 'create' })
+
+    // Train Station
+    event.shapeless('2x create:track_station', [
+        'create:railway_casing',
+        'firmaciv:firmaciv_compass'
+    ]).id('create:crafting/kinetics/track_station')
+
+    // Speedometer
+    event.shapeless('create:speedometer', [
+        'create:andesite_casing',
+        'firmaciv:firmaciv_compass'
+    ]).id('create:crafting/kinetics/speedometer')
 
     // Пушка для постройки схематик
     event.shaped('create:schematicannon', [
