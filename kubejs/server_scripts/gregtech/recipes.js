@@ -1300,31 +1300,41 @@ const registerGTCEURecipes = (event) => {
 
         if (material.hasProperty(PropertyKey.ORE)) 
         {
+            let poorRawStack = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
+            let normalRawStack = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
+            let richRawStack = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
+
+            let crushedOreStack = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+            let purifiedOreStack = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
+            let impureDustStack = ChemicalHelper.get(TagPrefix.dustImpure, material, 1)
+            let pureDustStack = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
+            let dustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
+
             // Бедная сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing(Item.of(`gtceu:${material.getName()}_crushed_ore`).withChance(0.75), `#forge:poor_raw_materials/${material.getName()}`)
+            event.recipes.createCrushing(crushedOreStack.withChance(0.75), poorRawStack)
                 .processingTime(200)
                 .id(`tfg:crushing/${material.getName()}_crushed_ore_from_poor_raw_ore`)
 
             // Нормальная сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([`gtceu:${material.getName()}_crushed_ore`, Item.of(`gtceu:${material.getName()}_crushed_ore`).withChance(0.2)], `#forge:raw_materials/${material.getName()}`)
+            event.recipes.createCrushing([crushedOreStack, crushedOreStack.withChance(0.2)], normalRawStack)
                 .processingTime(200)
                 .id(`tfg:crushing/${material.getName()}_crushed_ore_from_normal_raw_ore`)
 
             // Богатая сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([`gtceu:${material.getName()}_crushed_ore`, `gtceu:${material.getName()}_crushed_ore`, Item.of(`gtceu:${material.getName()}_crushed_ore`).withChance(0.2)], `#forge:rich_raw_materials/${material.getName()}`)
+            event.recipes.createCrushing([crushedOreStack, crushedOreStack, crushedOreStack.withChance(0.2)], richRawStack)
                 .processingTime(200)
                 .id(`tfg:crushing/${material.getName()}_crushed_ore_from_rich_raw_ore`)
 
             // Грязная пыль -> Пыль (90%)
-            event.recipes.createSplashing(Item.of(`#forge:dusts/${material.getName()}`).withChance(0.9), `gtceu:${material.getName()}_impure_dust`)
+            event.recipes.createSplashing(dustStack.withChance(0.9), impureDustStack)
                 .id(`tfg:splashing/${material.getName()}_dust_from_impure`)
 
             // Очищенная пыль -> Пыль (90%)
-            event.recipes.createSplashing(Item.of(`#forge:dusts/${material.getName()}`).withChance(0.9), `gtceu:${material.getName()}_pure_dust`)
+            event.recipes.createSplashing(dustStack.withChance(0.9), pureDustStack)
                 .id(`tfg:splashing/${material.getName()}_dust_from_pure`)
 
             // Дробленная руда -> Очищенная руда (90%)
-            event.recipes.createSplashing(Item.of(`#forge:purified_ores/${material.getName()}`).withChance(0.9), `gtceu:${material.getName()}_crushed_ore`)
+            event.recipes.createSplashing(purifiedOreStack.withChance(0.9), crushedOreStack)
                 .id(`tfg:splashing/${material.getName()}_purified_ore`)
 
             // Грязная пыль -> Пыль
@@ -1335,11 +1345,9 @@ const registerGTCEURecipes = (event) => {
                     tag: "minecraft:water"
                 },
                 ingredients: [
-                    {
-                        item: `gtceu:${material.getName()}_impure_dust`
-                    }
+                    impureDustStack.toJson()
                 ],
-                result: Item.of(`#forge:dusts/${material.getName()}`).toJson()
+                result: dustStack.toJson()
             }).id(`tfg:ae_transform/${material.getName()}_dust_from_impure`)
 
             // Очищенная пыль -> Пыль
@@ -1350,11 +1358,9 @@ const registerGTCEURecipes = (event) => {
                     tag: "minecraft:water"
                 },
                 ingredients: [
-                    {
-                        item: `gtceu:${material.getName()}_pure_dust`
-                    }
+                    pureDustStack.toJson()
                 ],
-                result: Item.of(`#forge:dusts/${material.getName()}`).toJson()
+                result: dustStack.toJson()
             }).id(`tfg:ae_transform/${material.getName()}_dust_from_pure`)
 
             // Дробленная руда -> Очищенная руда
@@ -1365,11 +1371,9 @@ const registerGTCEURecipes = (event) => {
                     tag: "minecraft:water"
                 },
                 ingredients: [
-                    {
-                        item: `gtceu:${material.getName()}_crushed_ore`
-                    }
+                    crushedOreStack.toJson()
                 ],
-                result: Item.of(`#forge:purified_ores/${material.getName()}`).toJson()
+                result: purifiedOreStack.toJson()
             }).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
         }
 
