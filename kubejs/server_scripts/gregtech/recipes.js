@@ -554,6 +554,7 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
     event.remove({ id: 'gtceu:arc_furnace/arc_furnace_minecart' })
     event.remove({ id: 'gtceu:arc_furnace/arc_bucket' })
+    event.remove({ id: 'gtceu:arc_furnace/arc_compass' })
     
     //#endregion
 
@@ -577,6 +578,7 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:macerator/macerate_anvil' })
     event.remove({ id: 'gtceu:macerator/macerate_furnace_minecart' })
     event.remove({ id: 'gtceu:macerator/macerate_bucket' })
+    event.remove({ id: 'gtceu:macerator/macerate_compass' })
 
     //#endregion
 

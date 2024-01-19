@@ -709,6 +709,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:large_amethyst_bud', 
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
+    'minecraft:raw_iron_block', 
+    'minecraft:raw_gold_block', 
+    'minecraft:raw_copper_block',
+    'minecraft:compass',
     '/spawn_egg/'
 ];
 

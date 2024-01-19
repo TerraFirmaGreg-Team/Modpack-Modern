@@ -55,6 +55,6 @@ rocket:
 
   # How much fuel is required to travel to a planet anywhere?
   # note: this is platform-specific.
-  # Default: 8 buckets.
+  # Default: 48 buckets.
   anywhereFuelAmount: 48000
 

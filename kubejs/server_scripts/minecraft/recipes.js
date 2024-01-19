@@ -1456,6 +1456,13 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Компасс
+
+    event.remove({ id: 'tfc:crafting/vanilla/compass' })
+    event.remove({ id: 'gtceu:assembler/compass' })
+
+    //#endregion
+
     //#region Выход: Незеритовый слиток
 
     event.remove({ id: 'minecraft:netherite_ingot_from_netherite_block' })
@@ -1680,6 +1687,16 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Коптильня
 
     event.remove({ id: 'minecraft:blast_furnace' })
+
+    //#endregion
+
+    //#region Выход: Пустая карта
+
+    event.recipes.gtceu.assembler('map')             
+        .itemInputs('8x minecraft:paper', 'firmaciv:firmaciv_compass')
+        .itemOutputs('minecraft:map')
+        .duration(100)
+        .EUt(4)
 
     //#endregion
 
@@ -2615,7 +2632,7 @@ const registerMinecraftRecipes = (event) => {
     //event.smelting('tfc:metal/ingot/gold', 'minecraft:raw_gold')
     //    .id('minecraft:copper_ingot_from_smelting_raw_gold')
 
-    event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
+    // event.remove({ id: 'minecraft:gold_ingot_from_smelting_raw_gold' })
     event.remove({ id: 'minecraft:gold_ingot_from_blasting_raw_gold' })
 
     event.remove({ id: 'minecraft:raw_gold_block' })
