@@ -25,6 +25,7 @@
 - Fixed conflicting compass crafting.
 - Fixed a bug where chests in REI could have a vanilla texture.
 - Extended debug information is enabled back.
+- Fixed Toolbelt recipes again.
 - Perhaps something else, thank you for helping the project develop.
 ### New Mods
 - Fps Reducer
@@ -36,7 +37,6 @@
 - TerraFirmaGreg 0.3.2 -> 0.4.0
 - ...
 ### Deleted mods
-- Toolbelts
 - FastLoad-Reforged
 - ...
 
