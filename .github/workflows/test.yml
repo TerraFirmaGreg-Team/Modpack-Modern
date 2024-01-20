@@ -21,6 +21,7 @@ jobs:
       mc_version: ${{ steps.info.outputs.mc_version }}
       changelog_ru: ${{ steps.changelog_ru.outputs.description }}
       changelog_en: ${{ steps.changelog_en.outputs.description }}
+      changelog_mods: ${{ steps.changelog_mods.outputs.mods_list }}
     
     steps:
       - name: Checkout
@@ -66,6 +67,37 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG_EN.md
+
+      - name: Changelog Parser
+        id: changelog_mods
+        run: |
+          mods_list='
+          ### New Mods
+          - Fps Reducer
+          - Voice Chat
+          - Dynview
+          - KryptonReforged
+          - LocalizedChat
+          - nanhealthfixer
+          - tfcchannelcasting
+          - toofast
+          - no-report-button
+          ### Update mods
+          - GregTech -> 1.1.0
+          - TerraFirmaCraft -> 3.1.5
+          - TerraFirmaGreg Core -> 0.4.0
+          - Canary -> 0.3.2.
+          - CreativeCore -> 2.11.22
+          - Curios -> 5.5.0
+          - Firstperson -> 2.3.0
+          - FTB-quests -> 2001.3.1
+          - kubejs -> 2001.6.4-build.127
+          - moonlight -> 2.8.84
+          - PlayerRevive -> 2.0.22
+          ### Deleted mods
+          - NoChatReports
+          '
+          echo "$mods_list" >> $GITHUB_OUTPUT
 
   # build-cf-modpack:
   #   name: Build CF Modpack
@@ -309,32 +341,7 @@ jobs:
             :flag_gb:
             ```${{ needs.modpack-info.outputs.changelog_en }}```
 
-            ```
-            ### New Mods
-            - Fps Reducer
-            - Voice Chat
-            - Dynview
-            - KryptonReforged
-            - LocalizedChat
-            - nanhealthfixer
-            - tfcchannelcasting
-            - toofast
-            - no-report-button
-            ### Update mods
-            - GregTech -> 1.1.0
-            - TerraFirmaCraft -> 3.1.5
-            - TerraFirmaGreg Core -> 0.4.0
-            - Canary -> 0.3.2.
-            - CreativeCore -> 2.11.22
-            - Curios -> 5.5.0
-            - Firstperson -> 2.3.0
-            - FTB-quests- -> 2001.3.1
-            - kubejs -> 2001.6.4-build.127
-            - moonlight -> 2.8.84
-            - PlayerRevive -> 2.0.22
-            ### Deleted mods
-            - NoChatReports
-            ```
+            ```${{ needs.modpack-info.outputs.changelog_mods }}```
           embed-color: 5814783
 
   # close-fixed-issues:
