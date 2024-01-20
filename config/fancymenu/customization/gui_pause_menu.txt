@@ -42,17 +42,16 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
   orientation = element
-  orientation_element = vanillabtn:button_compatibility_id:mc_pausescreen_lan_button
-  x = -106
+  orientation_element = vanillabtn:398348
+  x = 0
   action = movebutton
-  y = -24
+  y = -48
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
-  width = 50
+  width = 204
   action = resizebutton
-  advanced_width = 204
   height = 20
 }
 
