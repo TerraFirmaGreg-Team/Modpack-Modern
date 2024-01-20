@@ -1,0 +1,356 @@
+name: Release
+run-name: "Release #${{ github.run_number }}"
+
+on:
+  push:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  RELEASE_TYPE: "RELEASE"
+
+jobs:
+  modpack-info:
+    name: Modpack Info
+    runs-on: ubuntu-latest
+    outputs:
+      project_name: ${{ steps.info.outputs.project_name }}
+      project_version: ${{ steps.info.outputs.project_version }}
+      mc_version: ${{ steps.info.outputs.mc_version }}
+      changelog_ru: ${{ steps.changelog_ru.outputs.description }}
+      changelog_en: ${{ steps.changelog_en.outputs.description }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Get tag
+        id: version
+        uses: "WyriHaximus/github-action-get-previous-tag@v1.3.0"
+        with:
+          fallback: tag_not_found
+
+      - name: Modpack info
+        id: info
+        shell: bash
+        run: |
+          set +e
+
+          if [ ! -f ./.github/buildtools/modpack/manifest.json ]; then
+            echo "::error::Could not find manifest.json" && exit 1
+          fi
+          manifestjson=`cat ./.github/buildtools/modpack/manifest.json`
+
+          project_name=`echo $(jq -r '.name' <<< "$manifestjson")`
+          echo "project_name=$project_name" >> $GITHUB_OUTPUT
+
+          mc_version=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
+          echo "mc_version=$mc_version" >> $GITHUB_OUTPUT
+
+          if [[ ${{ startsWith(github.ref, 'refs/tags/') }} == true ]]; then
+            echo "project_version=${{ steps.version.outputs.tag }}" >> $GITHUB_OUTPUT
+          else
+            echo "project_version=build.${{ github.run_number }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Changelog Parser
+        id: changelog_ru
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG_RU.md
+
+      - name: Changelog Parser
+        id: changelog_en
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG_EN.md
+
+  # build-cf-modpack:
+  #   name: Build CF Modpack
+  #   runs-on: ubuntu-latest
+  #   needs: [modpack-info]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
+
+  #     - name: Replace strings
+  #       shell: bash
+  #       run: |
+  #         VERSION=${{ needs.modpack-info.outputs.project_version }}
+  #         sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
+  #         sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+  #     - name: Export CF
+  #       run: |
+  #         mkdir -p overrides
+  #         mv -vf {config,defaultconfigs,kubejs}  overrides/
+  #         mv -vf .github/buildtools/modpack/manifest.json ./
+  #         mv -vf .github/buildtools/modpack/modlist.html ./
+  #         zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
+
+  #     - name: Upload zip cf
+  #       uses: actions/upload-artifact@v4.0.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
+  #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
+  #         retention-days: 5
+
+  # build-mmc-modpack:
+  #   name: Build MMC Modpack
+  #   runs-on: ubuntu-latest
+  #   needs: [modpack-info]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
+
+  #     - name: Replace strings
+  #       shell: bash
+  #       run: |
+  #         VERSION=${{ needs.modpack-info.outputs.project_version }}
+  #         sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
+  #         sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+  #     - name: Download Mods
+  #       run: |
+  #           git submodule init
+  #           cd mods
+  #           git config --global credential.helper '!f() { 
+  #             echo "username=Xikaro"; 
+  #             echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+  #           git submodule update --recursive
+
+  #     - name: Export MMC
+  #       run: |
+  #         mkdir -p .minecraft
+  #         mkdir -p flame
+  #         mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
+  #         mv -vf .github/buildtools/modpack/mmc-pack.json ./
+  #         mv -vf .github/buildtools/modpack/instance.cfg ./
+  #         mv -vf .github/buildtools/modpack/modlist.html ./
+  #         mv -vf .github/buildtools/modpack/manifest.json flame/
+  #         find .minecraft/mods -name "probejs-*" -delete;
+  #         find .minecraft/mods -name ".git" -delete;
+  #         zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+      
+  #     - name: Upload zip mmc
+  #       uses: actions/upload-artifact@v4.0.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc
+  #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
+  #         retention-days: 5
+
+  # build-serverpack:
+  #   name: Build Serverpack
+  #   runs-on: ubuntu-latest
+  #   needs: [modpack-info]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
+
+  #     - name: Download Mods
+  #       run: |
+  #           git submodule init
+  #           cd mods
+  #           git config --global credential.helper '!f() { 
+  #             echo "username=Xikaro"; 
+  #             echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+  #           git submodule update --recursive
+
+  #     - name: Export serverpack
+  #       run: |
+  #         mkdir -p .minecraft
+  #         mv -vf {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
+  #         cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
+  #         zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip ./
+
+  #     - name: Upload zip
+  #       uses: actions/upload-artifact@v4.0.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+  #         path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+  #         retention-days: 5
+
+  # release-curseforge:
+  #   name: Deploy to CurseForge
+  #   needs: [modpack-info, build-cf-modpack, build-serverpack]
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     cf_release_id: ${{ steps.cf_release.outputs.id }}
+  #   steps:
+  #     - name: Check if CF_API_TOKEN exist
+  #       shell: bash
+  #       run: |
+  #         if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
+  #           echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #         fi  
+
+  #     - name: Download cf modpack
+  #       uses: actions/download-artifact@v4.1.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
+
+  #     - name: Download serverpack
+  #       uses: actions/download-artifact@v4.1.0
+  #       with:
+  #         name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+
+  #     - name: Upload Curseforge
+  #       id: cf_release
+  #       uses: SwitchAlpha/upload-curseforge-modpack-action@master
+  #       with:
+  #         api-token: ${{ secrets.CF_API_TOKEN }}
+  #         project-id: ${{ vars.CF_MODPACK_ID }}
+  #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
+  #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+  #         changelog: |
+  #           RU
+  #           ${{ needs.modpack-info.outputs.changelog_ru }}
+
+  #           EN
+  #           ${{ needs.modpack-info.outputs.changelog_en }}
+  #         changelog-format: markdown
+  #         game-version: ${{ needs.modpack-info.outputs.mc_version }}
+  #         display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
+  #         server-display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+  #         release-type: ${{ env.RELEASE_TYPE }}
+
+  # release-modrinth:
+    #   name: Deploy to Modrinth
+    #   runs-on: ubuntu-latest
+    #   steps:
+    #     - name: Check if MODRINTH_API_TOKEN exist
+    #       shell: bash
+    #       run: |
+    #         if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
+    #           echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+    #         fi  
+    
+    #     - name: Download modpack
+    #       uses: actions/download-artifact@v4.1.0
+    #       with:
+    #         name: modpack_mrd
+    
+    #     - name: Download serverpack
+    #       uses: actions/download-artifact@v4.1.0
+    #       with:
+    #         name: server_pack
+    
+    #     - name: Upload Modrinth
+    #       id: cf_release
+    #       uses: SwitchAlpha/upload-curseforge-modpack-action@master
+    #       with:
+    #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
+    #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
+    #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mrd.zip
+    #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+    #         changelog: |
+    #           ${{ needs.modpack-info.outputs.changelog_ru }}
+    #           ${{ needs.modpack-info.outputs.changelog_en }}
+    #         changelog-format: markdown
+    #         game-version: ${{ needs.modpack-info.outputs.mc_version }}
+    #         display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
+    #         server-display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+    #         release-type: ${{ env.RELEASE_TYPE }}
+
+  # release-github:
+  #   name: Deploy to GitHub
+  #   needs: [modpack-info, build-cf-modpack, build-mmc-modpack, build-serverpack]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Download modpack
+  #       uses: actions/download-artifact@v4.1.0
+  #       with:
+  #         merge-multiple: true
+
+  #     - name: Create release
+  #       uses: softprops/action-gh-release@v1
+  #       with:
+  #         prerelease: false
+  #         generate_release_notes: true
+  #         name: ${{ needs.modpack-info.outputs.project_version }}
+  #         body: |
+  #           RU
+  #           ${{ needs.modpack-info.outputs.changelog_ru }}
+
+  #           EN
+  #           ${{ needs.modpack-info.outputs.changelog_en }}
+  #         files: |
+  #           ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
+  #           ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
+  #           ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+  #         tag_name: ${{ needs.modpack-info.outputs.project_version }}
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  discord-message:
+    name: Discord Message
+    needs: [modpack-info]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord message
+        uses: tsickert/discord-webhook@v5.4.0
+        with:
+          webhook-url: ${{secrets.RELEASES_1_20}}
+          username: "TerraFirmaGreg"
+          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
+          embed-title: Release 0.6.4
+          embed-url: https://github.com/${{ github.repository }}/releases/tag/0.6.4
+          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png
+          embed-description: |
+            **Release Type**: `${{ env.RELEASE_TYPE }}`
+            **GameVersion**: `1.20.1`
+            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5047541)
+
+            **Changelog** 
+            :flag_ru: 
+            ```${{ needs.modpack-info.outputs.changelog_ru }}```
+            :flag_gb:
+            ```${{ needs.modpack-info.outputs.changelog_en }}```
+
+            ```
+            ### New Mods
+            - Fps Reducer
+            - Voice Chat
+            - Dynview
+            - KryptonReforged
+            - LocalizedChat
+            - nanhealthfixer
+            - tfcchannelcasting
+            - toofast
+            - no-report-button
+            ### Update mods
+            - GregTech -> 1.1.0
+            - TerraFirmaCraft -> 3.1.5
+            - TerraFirmaGreg Core -> 0.4.0
+            - Canary -> 0.3.2.
+            - CreativeCore -> 2.11.22
+            - Curios -> 5.5.0
+            - Firstperson -> 2.3.0
+            - FTB-quests- -> 2001.3.1
+            - kubejs -> 2001.6.4-build.127
+            - moonlight -> 2.8.84
+            - PlayerRevive -> 2.0.22
+            ### Deleted mods
+            - NoChatReports
+            ```
+          embed-color: 5814783
+
+  # close-fixed-issues:
+  #   name: Close Fixed Issues
+  #   needs: [modpack-info, release-github, release-curseforge]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4.1.1
+
+  #     - name: Сlose fixed in dev
+  #       uses: juraj-hrivnak/close-issues-based-on-label@master
+  #       env:
+  #         LABEL: "2. Status: Fixed in Dev"
+  #         VERSION: ${{ needs.modpack-info.outputs.project_version }}
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      
+
