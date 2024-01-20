@@ -93,8 +93,7 @@ jobs:
             :flag_gb:
             ```${{ needs.modpack-info.outputs.changelog_en }}```
 
-            ``` 
-                ### New Mods
+            ``` ### New Mods
                 - Fps Reducer
                 - Voice Chat
                 - Dynview
