@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.5] - 20.01.2024
+### Изменения
+- Исправлен краш при открытии инвенторя на сервере
+### Обновленные моды
+- TerraFirmaGreg -> 0.4.1
+
 ## [0.6.4] - 20.01.2024
 ### Изменения
 - Удален рецепт морского фонаря из Minecraft.
@@ -28,6 +34,30 @@
 - Исправлены рецепты ToolBelt еще раз.
 - Исправлен баг, когда невозможно было расплавить различные металлы TFC.
 - Возможно, что-то еще, спасибо, что помогаете развиваться проекту.
+### Новые моды
+- Fps Reducer
+- Voice Chat
+- Dynview
+- KryptonReforged
+- LocalizedChat
+- nanhealthfixer
+- tfcchannelcasting
+- toofast
+- no-report-button
+### Обновленные моды
+- GregTech -> 1.1.0
+- TerraFirmaCraft -> 3.1.5
+- TerraFirmaGreg Core -> 0.4.0
+- Canary -> 0.3.2.
+- CreativeCore -> 2.11.22
+- Curios -> 5.5.0
+- Firstperson -> 2.3.0
+- FTB-quests -> 2001.3.1
+- kubejs -> 2001.6.4-build.127
+- moonlight -> 2.8.84
+- PlayerRevive -> 2.0.22
+### Удаленные моды
+- NoChatReports
 
 ## [0.6.3] - 16.01.2024
 ### Изменения

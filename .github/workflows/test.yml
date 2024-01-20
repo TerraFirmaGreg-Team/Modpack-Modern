@@ -3,6 +3,8 @@ run-name: "Release #${{ github.run_number }}"
 
 on:
   push:
+    tags:
+      - "*.*.*"
 
 concurrency:
   group: ${{ github.ref }}
