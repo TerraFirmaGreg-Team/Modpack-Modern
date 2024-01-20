@@ -3,7 +3,7 @@
 ### Changes
 - Fixed a crash when opening inventory in an image.
 ### Update mods
-- TerraFirmaGreg -> 0.4.1
+- TerraFirmaGreg -> 0.4.2
 
 ## [0.6.4] - 20.01.2024
 ### Changes
