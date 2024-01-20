@@ -99,8 +99,6 @@ jobs:
             ```${{ needs.modpack-info.outputs.changelog_ru }}```
             :flag_gb:
             ```${{ needs.modpack-info.outputs.changelog_en }}```
-
-            ```${{ needs.modpack-info.outputs.changelog_mods }}```
           embed-color: 5814783
 
   # close-fixed-issues:
