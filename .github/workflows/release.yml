@@ -288,7 +288,7 @@ jobs:
 
   discord-message:
     name: Discord Message
-    #needs: [modpack-info, release-github, release-curseforge]
+    needs: [modpack-info, release-github, release-curseforge]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
