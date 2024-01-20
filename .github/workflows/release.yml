@@ -82,7 +82,7 @@ jobs:
         run: |
           VERSION=${{ needs.modpack-info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
-          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Export CF
         run: |
@@ -112,7 +112,7 @@ jobs:
         run: |
           VERSION=${{ needs.modpack-info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
-          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Download Mods
         run: |

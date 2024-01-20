@@ -37,6 +37,7 @@
 - nanhealthfixer
 - tfcchannelcasting
 - toofast
+- no-report-button
 ### Обновленные моды
 - GregTech -> 1.1.0
 - TerraFirmaCraft -> 3.1.5
@@ -50,7 +51,6 @@
 - moonlight -> 2.8.84
 - PlayerRevive -> 2.0.22
 ### Удаленные моды
-- FastLoad-Reforged
 - NoChatReports
 
 ## [0.6.3] - 16.01.2024
