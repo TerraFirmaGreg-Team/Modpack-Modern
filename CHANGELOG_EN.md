@@ -1,7 +1,8 @@
 # Changelog
 ## [0.6.5] - 20.01.2024
 ### Changes
-- Fixed a crash when opening inventory in an image.
+- Fixed a crash when opening inventory on servers.
+- Fixed raw stone blocks in tool recipes.
 ### Update mods
 - TerraFirmaGreg -> 0.4.2
 
