@@ -1382,6 +1382,7 @@ const registerGTCEURecipes = (event) => {
         if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood) 
         {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
+            let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
 
             if (material.hasProperty(PropertyKey.INGOT))
             {
@@ -1389,16 +1390,22 @@ const registerGTCEURecipes = (event) => {
                 event.recipes.createPressing(plateStack.withChance(0.97), ingotStack)
                     .id(`tfg:pressing/${material.getName()}_plate`)
 
-                // 9х Слиток -> Блок
-                event.recipes.createCompacting(Item.of(`#forge:storage_blocks/${material.getName()}`), ingotStack.withCount(9))
-                    .heated()
-                    .id(`tfg:compacting/${material.getName()}_block`)
+                if (!blockStack.isEmpty()) {
+                    // 9х Слиток -> Блок
+                    event.recipes.createCompacting(blockStack, ingotStack.withCount(9))
+                        .heated()
+                        .id(`tfg:compacting/${material.getName()}_block`)
+                }
+                
             }
             else
             {
-                // Блок из гемов -> 9 Пластин
-                event.recipes.createCutting(Item.of(plateStack.withCount(9)).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
-                    .id(`tfg:cutting/${material.getName()}_plate`)
+                if (!blockStack.isEmpty()) {
+                    // Блок из гемов -> 9 Пластин
+                    event.recipes.createCutting(Item.of(plateStack.withCount(9)).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
+                        .id(`tfg:cutting/${material.getName()}_plate`)
+                }
+                
             }
         }
 

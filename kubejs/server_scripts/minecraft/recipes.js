@@ -1259,6 +1259,12 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Древесный уголь
+
+    event.remove({ id: 'minecraft:charcoal' })
+
+    //#endregion
+
     //#region Выход: Высушенные водросли блок
 
     event.remove({ id: 'minecraft:dried_kelp_block' })
