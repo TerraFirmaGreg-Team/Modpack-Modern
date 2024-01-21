@@ -60,7 +60,8 @@
 			"shouldFilterDisplays": true,
 			"filteringRules": [
 				"{id:\"roughlyenoughitems:manual\",rule:{}}",
-				"{id:\"roughlyenoughitems:basic\",rule:{}}"
+				"{id:\"roughlyenoughitems:basic\",rule:{}}",
+				"{id:\"roughlyenoughitems:hidden_from_recipe_viewers\",rule:{}}"
 			],
 			"filteringQuickCraftCategories": { },
 			"filteredStacks": []
