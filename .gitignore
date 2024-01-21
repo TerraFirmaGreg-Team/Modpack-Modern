@@ -59,16 +59,4 @@ knownkeys.txt
 
 
 # Server Pack
-.github/buildtools/serverpack/logs/
-.github/buildtools/serverpack/world/
-.github/buildtools/serverpack/config/
-.github/buildtools/serverpack/crash-reports/
-.github/buildtools/serverpack/kubejs/
-.github/buildtools/serverpack/mods/
-.github/buildtools/serverpack/local/
-.github/buildtools/serverpack/xaerominimap-common.txt
-.github/buildtools/serverpack/xaeroworldmap-common.txt
-.github/buildtools/serverpack/banned-ips.json
-.github/buildtools/serverpack/banned-players.json
-.github/buildtools/serverpack/ops.json
-.github/buildtools/serverpack/whitelist.json
+.github/buildtools/serverpack/*
