@@ -95,7 +95,7 @@
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
 		#Range: 0 ~ 320
-		cloudsHeight = 128
+		cloudsHeight = 256
 		#Toggle fog feature
 		#Fog was a vanilla feature, toggling off may increases performance
 		fog = true
