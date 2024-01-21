@@ -7,15 +7,15 @@
 	invVert = false
 	#Inventory HUD alpha
 	#Range: 0 ~ 100
-	invAlpha = 0
+	invAlpha = 50
 	#Toggle on by default
 	byDefault = false
 	#Animate recently picked up items
-	animatedInv = false
+	animatedInv = true
 	#Hide background if inventory is empty
-	hideBackground = false
+	hideBackground = true
 	#Show Inventory HUD when debug menu is open
-	invWithDebug = true
+	invWithDebug = false
 
 #Settings for ArmorStatus HUD
 [armorhud]
@@ -113,10 +113,10 @@
 	potHalign = "LEFT"
 	#Potion HUD position (X)
 	#Range: -9999 ~ 9999
-	xPotionPos = 20
+	xPotionPos = 3
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 20
+	yPotionPos = 3
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103
