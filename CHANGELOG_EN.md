@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.6.6] - ?
+## [0.6.6] - 21.01.2024
 ### Изменения
 - Fixed a lot of recipes with unknown tags.
 - Fixed a bug when it was impossible to melt ingots of tin and red alloys.

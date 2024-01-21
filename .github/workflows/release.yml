@@ -200,7 +200,7 @@ jobs:
 
       - name: Upload Curseforge
         id: cf_release
-        uses: SwitchAlpha/upload-curseforge-modpack-action@master
+        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ vars.CF_MODPACK_ID }}
