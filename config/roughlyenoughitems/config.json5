@@ -4,7 +4,7 @@
 		"hiddenFavorites": [],
 		"displayHistory": [],
 		// Declares whether cheating mode is on.
-		"cheating": true,
+		"cheating": false,
 		"favoritesEnabled": true,
 		"keyBindings": {
 			"recipeKeybind": {
@@ -16,8 +16,8 @@
 				"modifier": 0
 			},
 			"hideKeybind": {
-				"keyCode": "key.keyboard.o",
-				"modifier": 2
+				"keyCode": "key.keyboard.unknown",
+				"modifier": 0
 			},
 			"previousPageKeybind": {
 				"keyCode": "key.keyboard.unknown",
@@ -60,7 +60,8 @@
 			"shouldFilterDisplays": true,
 			"filteringRules": [
 				"{id:\"roughlyenoughitems:manual\",rule:{}}",
-				"{id:\"roughlyenoughitems:basic\",rule:{}}"
+				"{id:\"roughlyenoughitems:basic\",rule:{}}",
+				"{id:\"roughlyenoughitems:hidden_from_recipe_viewers\",rule:{}}"
 			],
 			"filteringQuickCraftCategories": { },
 			"filteredStacks": []
