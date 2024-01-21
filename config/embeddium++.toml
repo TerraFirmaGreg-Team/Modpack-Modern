@@ -82,7 +82,7 @@
 		onTileEntities = true
 		#Configure how fast light whould be updated
 		#Allowed Values: OFF, SLOW, NORMAL, FAST, SUPERFAST, FASTESTS, REALTIME
-		updateSpeed = "REALTIME"
+		updateSpeed = "NORMAL"
 		#Toggle if Entities should have dynamic lights
 		onEntities = true
 		updateOnlyOnPositionChange = true
