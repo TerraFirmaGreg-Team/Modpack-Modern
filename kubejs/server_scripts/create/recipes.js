@@ -415,12 +415,12 @@ const registerCreateRecipes = (event) => {
         'A ' 
     ], {
         A: '#forge:plates/wrought_iron',
-        B: '#forge:wires/single/red_alloy',
+        B: 'gtceu:red_alloy_single_wire',
         C: '#forge:tools/hammers'
     }).id('tfg:create/shaped/gantry_shaft')
 
     event.recipes.gtceu.assembler('tfg:create/gantry_shaft')             
-        .itemInputs('#forge:wires/single/red_alloy', '2x #forge:plates/wrought_iron')
+        .itemInputs('gtceu:red_alloy_single_wire', '2x #forge:plates/wrought_iron')
         .circuit(3)
         .itemOutputs('create:gantry_shaft')
         .duration(200)
@@ -454,7 +454,7 @@ const registerCreateRecipes = (event) => {
         'C C' 
     ], {
         A: '#forge:plates/steel',
-        B: '#forge:wires/single/red_alloy',
+        B: 'gtceu:red_alloy_single_wire',
         C: '#minecraft:logs'
     }).id('tfg:create/shaped/cart_assembler')
 
@@ -807,7 +807,7 @@ const registerCreateRecipes = (event) => {
         A: 'gtceu:glass_tube',
         B: 'gtceu:resistor',
         C: 'gtceu:resin_circuit_board',
-        D: '#forge:wires/single/red_alloy',
+        D: 'gtceu:red_alloy_single_wire',
         E: '#forge:plates/wrought_iron'
     }).id('tfg:create/shaped/electron_tube')
 
@@ -863,7 +863,7 @@ const registerCreateRecipes = (event) => {
     ], {
         A: '#forge:plates/copper',
         B: 'tfc:metal/helmet/copper',
-        C: '#forge:fluid_pipes/tiny/polyethylene',
+        C: 'gtceu:polyethylene_tiny_fluid_pipe',
         D: '#forge:glass_panes'
     }).id('tfg:create/shaped/copper_diving_helmet')
 
@@ -874,7 +874,7 @@ const registerCreateRecipes = (event) => {
     ], {
         A: '#forge:plates/copper',
         B: 'tfc:metal/boots/copper',
-        C: '#forge:fluid_pipes/tiny/polyethylene',
+        C: 'gtceu:polyethylene_tiny_fluid_pipe',
         D: '#forge:foils/rubber'
     }).id('tfg:create/shaped/copper_diving_boots')
 

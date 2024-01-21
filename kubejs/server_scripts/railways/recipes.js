@@ -32,14 +32,14 @@ const registerRailWaysRecipes = (event) => {
         ' C ' 
     ], {
         A: '#forge:sheets/wrought_iron',
-        B: '#forge:wires/single/red_alloy',
+        B: 'gtceu:red_alloy_single_wire',
         C: 'create:railway_casing',
         D: '#forge:tools/wire_cutters',
         E: '#forge:tools/screwdrivers',
     }).id('tfg:railways/shaped/track_coupler')
 
     event.recipes.gtceu.assembler('tfg:railways/track_coupler')             
-        .itemInputs('3x #forge:sheets/wrought_iron', '#forge:wires/single/red_alloy', 'create:railway_casing')
+        .itemInputs('3x #forge:sheets/wrought_iron', 'gtceu:red_alloy_single_wire', 'create:railway_casing')
         .circuit(3)
         .itemOutputs('railways:track_coupler')
         .duration(200)

@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.6] - ?
+### Изменения
+- Fixed a lot of recipes with unknown tags.
+- Fixed a bug when it was impossible to melt ingots of tin and red alloys.
+- Fixed tags of some GTCEu blocks.
+- Minor code improvements in TFG-Core.
+### Updated mods
+- TerraFirmaGreg -> 0.4.3
+
 ## [0.6.5] - 20.01.2024
 ### Changes
 - Fixed a crash when opening inventory on servers.
@@ -45,7 +54,7 @@
 - tfcchannelcasting
 - toofast
 - no-report-button
-### Update mods
+### Updated mods
 - GregTech -> 1.1.0
 - TerraFirmaCraft -> 3.1.5
 - TerraFirmaGreg Core -> 0.4.0
@@ -65,7 +74,7 @@
 - Fixed a bug when it was impossible to make a canoe.
 - Added function to disable additional TFC-Ambiental integration.
 - Fixed the quest for the copper ingot.
-### Update mods
+### Updated mods
 - TerraFirmaGreg 0.3.1 -> 0.3.2
 - appliedenergistics2 -> 15.0.20
 - embeddium -> 0.2.18

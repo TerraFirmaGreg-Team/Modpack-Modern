@@ -2519,7 +2519,7 @@ const registerTFCRecipes = (event) => {
         .EUt(4)
 
     event.recipes.gtceu.chemical_bath(`fired_large_vessel_decolor`)             
-        .itemInputs('#tfg:colorized_large_vessels')
+        .itemInputs('#tfg:colorized_fired_large_vessels')
         .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
         .itemOutputs('tfc:ceramic/large_vessel')
         .duration(300)
