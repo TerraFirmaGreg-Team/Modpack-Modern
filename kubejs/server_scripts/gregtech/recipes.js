@@ -610,7 +610,7 @@ const registerGTCEURecipes = (event) => {
         A: '#tfg:metal_bars',
         B: 'gtceu:item_filter',
         C: 'gtceu:mv_electric_motor',
-        D: '#forge:frames/steel',
+        D: 'gtceu:steel_frame',
         E: '#forge:rotors/steel'
     }).id('gtceu:shaped/filter_casing')
     
@@ -625,7 +625,7 @@ const registerGTCEURecipes = (event) => {
     ], {
         A: '#tfg:metal_bars',
         B: '#forge:rotors/steel',
-        C: '#forge:frames/steel',
+        C: 'gtceu:steel_frame',
         D: 'gtceu:mv_electric_motor'
     }).id('gtceu:shaped/casing_grate_casing')
     
@@ -953,7 +953,7 @@ const registerGTCEURecipes = (event) => {
         'DBD'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron',
         E: '#forge:glass_panes'
@@ -966,7 +966,7 @@ const registerGTCEURecipes = (event) => {
         'DDD'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron'
     }).id('gtceu:shaped/steam_macerator_steel')
@@ -978,7 +978,7 @@ const registerGTCEURecipes = (event) => {
         'BBB'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron'
     }).id('gtceu:shaped/steam_compressor_steel')
@@ -990,7 +990,7 @@ const registerGTCEURecipes = (event) => {
         'CCC'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron'
     }).id('gtceu:shaped/steam_hammer_steel')
@@ -1002,7 +1002,7 @@ const registerGTCEURecipes = (event) => {
         'BCB'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron'
     }).id('gtceu:shaped/steam_furnace_steel')
@@ -1014,7 +1014,7 @@ const registerGTCEURecipes = (event) => {
         'DBD'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron'
     }).id('gtceu:shaped/steam_alloy_smelter_steel')
@@ -1026,7 +1026,7 @@ const registerGTCEURecipes = (event) => {
         'DDD'
     ], {
         A: 'gtceu:steel_brick_casing',
-        B: '#forge:fluid_pipes/small/tin_alloy',
+        B: 'gtceu:tin_alloy_small_fluid_pipe',
         C: '#forge:plates/steel',
         D: '#forge:plates/wrought_iron'
     }).id('gtceu:shaped/steam_rock_breaker_steel')
@@ -1112,7 +1112,7 @@ const registerGTCEURecipes = (event) => {
         B: '#gtceu:circuits/lv',
         C: 'gtceu:lv_voltage_coil',
         D: 'gtceu:solid_machine_casing',
-        E: '#forge:cables/single/copper'
+        E: 'gtceu:copper_single_cable'
     }).id('tfg:shaped/alternator')
 
     // Compressed Coke Clay
@@ -1219,7 +1219,7 @@ const registerGTCEURecipes = (event) => {
     ], '#forge:plates/wrought_iron', [
         event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', '#forge:bolts/steel']),
         event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', 'gtceu:glass_tube']),
-        event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', '#forge:wires/single/copper']),
+        event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', 'gtceu:copper_single_wire']),
     ]).transitionalItem('tfg:unfinished_vacuum_tube').loops(2).id('tfg:gtceu/sequenced_assembly/vacuum_tube')
 
     // Рецепт LV микросхемы
@@ -1231,7 +1231,7 @@ const registerGTCEURecipes = (event) => {
         event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', '#forge:plates/steel']),
         event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', 'gtceu:resistor']),
         event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', 'gtceu:vacuum_tube']),
-        event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', '#forge:cables/single/red_alloy']),
+        event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', 'gtceu:red_alloy_single_cable']),
     ]).transitionalItem('tfg:unfinished_basic_electronic_circuit').loops(2).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
 
     //#region Рецепты электрического генератора

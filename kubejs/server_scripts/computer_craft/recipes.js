@@ -46,7 +46,7 @@ const registerComputerCraftRecipes = (event) => {
         'CDC',
         'EFE'
     ], {
-        A: '#forge:wires/single/magnesium_diboride',
+        A: 'gtceu:magnesium_diboride_single_wire',
         B: 'gtceu:computer_monitor_cover',
         C: 'ae2:calculation_processor',
         D: 'gtceu:mv_machine_casing',
@@ -60,7 +60,7 @@ const registerComputerCraftRecipes = (event) => {
         'CDC',
         'EFE'
     ], {
-        A: '#forge:wires/single/mercury_barium_calcium_cuprate',
+        A: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
         B: 'gtceu:computer_monitor_cover',
         C: 'ae2:calculation_processor',
         D: 'gtceu:hv_machine_casing',
@@ -131,7 +131,7 @@ const registerComputerCraftRecipes = (event) => {
         'CD ',
         'EAE'
     ], {
-        A: '#forge:wires/single/magnesium_diboride',
+        A: 'gtceu:magnesium_diboride_single_wire',
         B: 'gtceu:computer_monitor_cover',
         C: '#gtceu:batteries/mv',
         D: 'gtceu:mv_machine_casing',
@@ -144,7 +144,7 @@ const registerComputerCraftRecipes = (event) => {
         'CD ',
         'EAE'
     ], {
-        A: '#forge:wires/single/mercury_barium_calcium_cuprate',
+        A: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
         B: 'gtceu:computer_monitor_cover',
         C: '#gtceu:batteries/hv',
         D: 'gtceu:hv_machine_casing',
@@ -201,7 +201,7 @@ const registerComputerCraftRecipes = (event) => {
         'FGF'
     ], {
         A: 'ae2:wireless_receiver',
-        B: '#forge:wires/single/mercury_barium_calcium_cuprate',
+        B: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
         C: '#gtceu:batteries/hv',
         D: 'ae2:terminal',
         E: 'gtceu:hv_emitter',
@@ -235,7 +235,7 @@ const registerComputerCraftRecipes = (event) => {
         'FGF'
     ], {
         A: 'ae2:wireless_receiver',
-        B: '#forge:wires/single/uranium_triplatinum',
+        B: 'gtceu:uranium_triplatinum_single_wire',
         C: '#gtceu:batteries/ev',
         D: 'ae2:terminal',
         E: 'gtceu:ev_emitter',

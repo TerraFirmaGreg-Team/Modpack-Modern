@@ -25,7 +25,7 @@ const registerCreateAdditionsRecipes = (event) => {
         'ABA' 
     ], {
         A: '#forge:plates/brass',
-        B: '#forge:wires/single/red_alloy',
+        B: 'gtceu:red_alloy_single_wire',
         C: 'computercraft:wired_modem',
     }).id('tfg:create_additions/shaped/digital_adapter')
 
@@ -37,8 +37,8 @@ const registerCreateAdditionsRecipes = (event) => {
     ], {
         A: '#forge:plates/brass',
         B: 'create:chute',
-        C: '#forge:wires/octal/copper',
-        D: '#forge:cables/single/copper',
+        C: 'gtceu:copper_octal_wire',
+        D: 'gtceu:copper_single_cable',
         E: 'create:brass_casing'
     }).id('tfg:create_additions/shaped/portable_energy_interface')
 

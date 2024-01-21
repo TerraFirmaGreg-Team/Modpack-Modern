@@ -524,7 +524,7 @@ const registerAE2Recipes = (event) => {
         'CDC',
         ' E '
     ], {
-        A: '#forge:wires/single/aluminium',
+        A: 'gtceu:aluminium_single_wire',
         B: 'ae2:formation_core',
         C: 'ae2:cell_component_4k',
         D: 'gtceu:hv_lithium_battery',
