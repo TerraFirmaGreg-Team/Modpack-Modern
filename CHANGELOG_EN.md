@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.7] - ?
+### Изменения
+- The toolheads have been removed from the materials, and since they should not exist, we clean up after Greg again.
+- Added and optimized a lot of mods/configs for optimization.
+- Added QOL mods.
+- F11 is now working correctly.
+- Fixes to work with the latest greg.
+
 ## [0.6.6] - 21.01.2024
 ### Изменения
 - Fixed a lot of recipes with unknown tags.
