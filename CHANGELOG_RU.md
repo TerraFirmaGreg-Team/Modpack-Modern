@@ -10,6 +10,38 @@
 - Исправлен квест на ведро латекса.
 - Иcправлен квест на нитки.
 - После обновления у вас могут быть сундуки в REI с ванильной текстурой, но из TFC, это нормально, баг мода, разработчику уже отправил информацию.
+### Новые моды
+- AlekiEHM
+- Async-locator
+- AttributeFix
+- Flickerfix
+- Gregicality Rocketry
+- ImmediatelyFast
+- Ksyxis
+- Modelfix
+- Nerb
+- Netherportalfix
+- PacketFixer
+- Radium
+- Rrls
+- Saturn
+### Удаленные моды
+- Сanary
+- Сhisels-and-bits
+- Сonnectivity
+- LocalizedChat
+### Обновленные моды
+- AmbientSounds -> 5.3.7
+- Embeddiumplus -> 1.2.3
+- FirmaCivilization -> 0.2.1
+- Firmalife -> 2.0.7
+- Ftb-library -> 2001.1.5
+- Ftb-quests -> 2001.3.2
+- GTCEU -> 1.1.1.a
+- Moonlight -> 2.9.3
+- PlayerRevive -> 2.0.23
+- TerraFirmaGreg-Core -> 0.4.3
+- TFCAstikorCarts -> 1.1.7.3
 
 ## [0.6.6] - 21.01.2024
 ### Изменения

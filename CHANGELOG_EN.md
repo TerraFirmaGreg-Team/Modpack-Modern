@@ -10,6 +10,38 @@
 - Fixed latex bucket quest.
 - Fixed strings quest.
 - After the update, you may have chests in REI with a vanilla texture, but from TFC, this is normal, the mod bug has already sent the information to the developer.
+### New Mods
+- AlekiEHM
+- Async-locator
+- AttributeFix
+- Flickerfix
+- Gregicality Rocketry
+- ImmediatelyFast
+- Ksyxis
+- Modelfix
+- Nerb
+- Netherportalfix
+- PacketFixer
+- Radium
+- Rrls
+- Saturn
+### Deleted mods
+- Сanary
+- Сhisels-and-bits
+- Сonnectivity
+- LocalizedChat
+### Update mods
+- AmbientSounds -> 5.3.7
+- Embeddiumplus -> 1.2.3
+- FirmaCivilization -> 0.2.1
+- Firmalife -> 2.0.7
+- Ftb-library -> 2001.1.5
+- Ftb-quests -> 2001.3.2
+- GTCEU -> 1.1.1.a
+- Moonlight -> 2.9.3
+- PlayerRevive -> 2.0.23
+- TerraFirmaGreg-Core -> 0.4.3
+- TFCAstikorCarts -> 1.1.7.3
 
 ## [0.6.6] - 21.01.2024
 ### Изменения
