@@ -14,4 +14,17 @@
 	#
 	# Can the animal cart pick up water animals?
 	canCarryWaterEntities = true
+	#
+	# A very heavy huge item has a combined weight/size factor of 35, thus if a threshold is 140, then the player can carry 4 items.
+	# Threshold at which the player carrying a cart will get exhausted. Higher => can carry more.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	exhaustedThreshold = 140.0
+	#
+	# Threshold at which the player carrying a cart will get overburdened. Higher => can carry more.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	overburdenedThreshold = 280.0
+	#
+	# Threshold at which the player carrying a cart will get pinned. Higher => can carry more.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	pinnedThreshold = 420.0
 

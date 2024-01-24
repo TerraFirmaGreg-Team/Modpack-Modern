@@ -23,7 +23,8 @@
     "disableOtherDamage": false,
     "hasShaderEffect": true,
     "changePermissionLevel": false,
-    "permissionLevel": 0
+    "permissionLevel": 0,
+    "canBePushed": true
   },
   "revive": {
     "requiredReviveProgress": 100.0,
