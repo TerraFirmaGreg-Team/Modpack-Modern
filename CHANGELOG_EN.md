@@ -1,7 +1,13 @@
 # Changelog
 
+## [0.6.8] - 24.01.2024
+### Changes
+- The version of Firma Civilization was rolled back due to a server crash
+### Deleted mods
+- alekiEHM
+
 ## [0.6.7] - 24.01.2024
-### Изменения
+### Changes
 - The toolheads have been removed from the materials, and since they should not exist, we clean up after Greg again.
 - Added and optimized a lot of mods/configs for optimization.
 - Added QOL mods.
@@ -44,7 +50,7 @@
 - TFCAstikorCarts -> 1.1.7.3
 
 ## [0.6.6] - 21.01.2024
-### Изменения
+### Changes
 - Fixed a lot of recipes with unknown tags.
 - Fixed a bug when it was impossible to melt ingots of tin and red alloys.
 - Fixed tags of some GTCEu blocks.
