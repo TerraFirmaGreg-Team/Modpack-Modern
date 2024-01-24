@@ -7,6 +7,8 @@
 - Added QOL mods.
 - F11 is now working correctly.
 - Fixes to work with the latest greg.
+- Fixed latex bucket quest.
+- Fixed strings quest.
 
 ## [0.6.6] - 21.01.2024
 ### Изменения
