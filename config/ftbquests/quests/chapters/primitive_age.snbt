@@ -2924,10 +2924,19 @@
 			]
 			id: "7C3F180555E12A88"
 			tasks: [{
-				amount: 1L
-				fluid: "gtceu:latex"
-				id: "0CE60474774B2645"
-				type: "fluid"
+				id: "4DB6481F8CA18725"
+				item: {
+					Count: 1b
+					id: "tfc:wooden_bucket"
+					tag: {
+						fluid: {
+							Amount: 1000
+							FluidName: "gtceu:latex"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
 			}]
 			x: -8.0d
 			y: 5.0d
@@ -4346,7 +4355,6 @@
 				"6E24ECF6CEE950D1"
 			]
 			id: "34ABDCB5BA778DE4"
-			min_required_dependencies: 16
 			tasks: [{
 				count: 16L
 				id: "2579EAFE552BA628"
@@ -4710,6 +4718,7 @@
 						id: "toolbelt:belt"
 						tag: { }
 					}
+					match_nbt: false
 					type: "item"
 				}
 				{
