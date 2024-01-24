@@ -14,16 +14,16 @@ recipes:
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: true
+  harderBrickRecipes: false
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: true
+  nerfWoodCrafting: false
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: true
+  hardWoodRecipes: false
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -31,16 +31,16 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: true
+  hardRedstoneRecipes: false
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: true
+  hardToolArmorRecipes: false
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: true
+  hardMiscRecipes: false
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
-  hardAdvancedIronRecipes: true
+  hardAdvancedIronRecipes: false
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
