@@ -1,7 +1,7 @@
 recipes:
   # Whether to generate Flawed and Chipped Gems for materials and recipes involving them.
   # Useful for mods like TerraFirmaCraft.
-  # Default: true
+  # Default: false
   generateLowQualityGems: true
 
   # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
@@ -12,7 +12,7 @@ recipes:
   # Default: false
   harderRods: true
 
-  # Whether to make crafting recipes for Bricks, Firebricks, and Coke Bricks harder.
+  # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
   harderBrickRecipes: false
 
@@ -86,6 +86,15 @@ worldgen:
   # This includes gravel, sand, and red sand ores.
   # Default: false (no falling ores)
   sandOresFall: false
+
+  # Whether to increase number of rolls for dungeon chests. Increases dungeon loot drastically.
+  # Default: true
+  # WARNING: Currently unimplemented.
+  increaseDungeonLoot: false
+
+  # Allow GregTech to add additional GregTech Items as loot in various structures.
+  # Default: true
+  addLoot: false
 
   oreVeins:
     # The grid size (in chunks) for ore vein generation
@@ -279,6 +288,10 @@ compat:
   removeSmeltingForEBFMetals: true
 
 dev:
+  # Debug general events? (will print placed veins to server's debug.log)
+  # Default: false
+  debug: false
+
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
   debugWorldgen: false

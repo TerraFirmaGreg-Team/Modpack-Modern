@@ -43,7 +43,7 @@ const hideItems = (event) => {
     hideMoreRedStuff(event)
     hideRailWaysStuff(event)
     hideCreateAdditionsStuff(event)
-    hideChiselAndBitsStuff(event)
+    // hideChiselAndBitsStuff(event)
     hideFTBQuestsStuff(event)
 }
 

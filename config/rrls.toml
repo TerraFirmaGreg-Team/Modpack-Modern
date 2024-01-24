@@ -1,0 +1,8 @@
+enabled = true
+rgbProgress = false
+loadingScreenHide = false
+showIn = "ALL"
+type = "PROGRESS"
+reloadText = ""
+resetResources = false
+reInitScreen = true
