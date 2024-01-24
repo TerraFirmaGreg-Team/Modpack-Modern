@@ -9,6 +9,7 @@
 - Fixes to work with the latest greg.
 - Fixed latex bucket quest.
 - Fixed strings quest.
+- After the update, you may have chests in REI with a vanilla texture, but from TFC, this is normal, the mod bug has already sent the information to the developer.
 
 ## [0.6.6] - 21.01.2024
 ### Изменения
