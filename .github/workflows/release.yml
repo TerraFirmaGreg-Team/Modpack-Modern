@@ -305,10 +305,9 @@ jobs:
             **GameVersion**: `${{ needs.modpack-info.outputs.mc_version }}`
             **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
 
-            **Changelog** 
-            :flag_ru: 
+            :flag_ru: ** [Сhangelog](https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/blob/main/CHANGELOG_RU.md) **
             ```${{ needs.modpack-info.outputs.changelog_ru }}```
-            :flag_gb:
+            :flag_gb: ** [Сhangelog](https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/blob/main/CHANGELOG_EN.md) **
             ```${{ needs.modpack-info.outputs.changelog_en }}```
           embed-color: 5814783
 
