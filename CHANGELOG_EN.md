@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.6.7] - ?
+## [0.6.7] - 24.01.2024
 ### Изменения
 - The toolheads have been removed from the materials, and since they should not exist, we clean up after Greg again.
 - Added and optimized a lot of mods/configs for optimization.
