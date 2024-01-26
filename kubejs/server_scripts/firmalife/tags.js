@@ -1,19 +1,24 @@
 // priority: 0
 
 const registerFirmaLifeItemTags = (event) => {
-    removeAllTagsFromDisabledItemsFirmaLife(event)
+    
+    // Удаление тегов у отключенных предметов
+    global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
+
+    // Просто предметы для скрытия
+    global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
+
+    // Удаление тегов у руд
+    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
 
 const registerFirmaLifeBlockTags = (event) => {
-    removeAllTagsFromDisabledItemsFirmaLife(event)
-}
-
-const registerFirmaLifePlacedFeatures = (event) => {
-    event.remove('tfc:in_biome/veins', 'firmalife:vein/normal_chromite')
-    event.remove('tfc:in_biome/veins', 'firmalife:vein/deep_chromite')
-}
-
-const removeAllTagsFromDisabledItemsFirmaLife = (event) => {
+    
     // Удаление тегов у отключенных предметов
     global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
@@ -22,3 +27,11 @@ const removeAllTagsFromDisabledItemsFirmaLife = (event) => {
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
+
+const registerFirmaLifePlacedFeatures = (event) => {
+    event.remove('tfc:in_biome/veins', 'firmalife:vein/normal_chromite')
+    event.remove('tfc:in_biome/veins', 'firmalife:vein/deep_chromite')
+}
+
+// event.hide('firmalife:metal/chromium')
+// event.hide('firmalife:metal/stainless_steel')

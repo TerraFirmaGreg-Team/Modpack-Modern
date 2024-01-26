@@ -6,8 +6,6 @@ const registerChiselAndBitsItemTags = (event) => {
         event.removeAllTagsFrom(item)
         event.add('c:hidden_from_recipe_viewers', item)
     })
-    
-    // event.add('c:hidden_from_recipe_viewers', 'ae2:facade') // hide bits
 }
 
 const registerChiselAndBitsBlockTags = (event) => {

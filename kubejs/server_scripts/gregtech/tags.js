@@ -5,6 +5,7 @@ const registerGTCEUItemTags = (event) => {
     // Удаление тегов у отключенных предметов
     global.GTCEU_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
+        event.add('c:hidden_from_recipe_viewers', item)
     })
 
     // Добавление тега EMI для скрытия всех руд
@@ -35,7 +36,12 @@ const registerGTCEUItemTags = (event) => {
     event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 
     //#endregion
-    
-    event.add('forge:storage_blocks/treated_wood', 'gtceu:treated_wood_planks')
+}
 
+const registerGTCEUBlockTags = (event) => {
+    
+    // Удаление тегов у отключенных предметов
+    global.GTCEU_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
 }

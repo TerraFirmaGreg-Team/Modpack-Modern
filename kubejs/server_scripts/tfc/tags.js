@@ -162,7 +162,14 @@ const registerTFCItemTags = (event) => {
         })
     })
 
-    removeAllTagsFromDisabledItemsTFC(event)
+    // Удаление тегов у отключенных предметов
+    global.TFC_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
+
+    // Удаление тегов у руд
+    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
 
 const registerTFCBlockTags = (event) => {
@@ -210,7 +217,13 @@ const registerTFCBlockTags = (event) => {
     event.add('tfc:glass_basin_blocks', 'tfc:white_kaolin_clay')
     event.add('tfc:glass_pouring_table', 'tfc:white_kaolin_clay')
 
-    removeAllTagsFromDisabledItemsTFC(event)
+    // Удаление тегов у отключенных предметов
+    global.TFC_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
+
+    // Удаление тегов у руд
+    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
 
 const registerTFCFluidTags = (event) => {
@@ -393,13 +406,32 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:vein/surface_tetrahedrite')
     event.add('tfc:in_biome/veins', 'tfg:geode')
 }
-
-const removeAllTagsFromDisabledItemsTFC = (event) => {
-    // Удаление тегов у отключенных предметов
-    global.TFC_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
-}
+/*
+event.hide('tfc:metal/bismuth')
+event.hide('tfc:metal/bismuth_bronze')
+event.hide('tfc:metal/bronze')
+event.hide('tfc:metal/black_bronze')
+event.hide('tfc:metal/brass')
+event.hide('tfc:metal/copper')
+event.hide('tfc:metal/gold')
+event.hide('tfc:metal/nickel')
+event.hide('tfc:metal/rose_gold')
+event.hide('tfc:metal/silver')
+event.hide('tfc:metal/tin')
+event.hide('tfc:metal/zinc')
+event.hide('tfc:metal/sterling_silver')
+event.hide('tfc:metal/wrought_iron')
+event.hide('tfc:metal/steel')
+event.hide('tfc:metal/black_steel')
+event.hide('tfc:metal/red_steel')
+event.hide('tfc:metal/blue_steel')
+event.hide('tfc:metal/cast_iron')
+event.hide('tfc:metal/pig_iron')
+event.hide('tfc:metal/high_carbon_steel')
+event.hide('tfc:metal/high_carbon_black_steel')
+event.hide('tfc:metal/high_carbon_red_steel')
+event.hide('tfc:metal/high_carbon_blue_steel')
+event.hide('tfc:metal/weak_steel')
+event.hide('tfc:metal/weak_red_steel')
+event.hide('tfc:metal/weak_blue_steel')
+event.hide('tfc:metal/unknown')*/

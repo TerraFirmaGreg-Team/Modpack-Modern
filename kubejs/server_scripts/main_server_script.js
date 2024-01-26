@@ -7,36 +7,40 @@ const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelp
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    registerTFCItemTags(event)
-    registerFirmaLifeItemTags(event)
-    
-    registerMinecraftItemTags(event)
-    
-    registerGTCEUItemTags(event)
-    
     registerAE2ItemTags(event)
-    
+    registerChiselAndBitsItemTags(event)
+    registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
-    registerRailWaysItemTags(event)
-    
-    registerMoreRedItemTags(event)
-    
-    registerSophisticatedBackpacksItemTags(event)
-    
-    registerChiselAndBitsItemTags(event)
+    registerFirmaCivItemTags(event)
+    registerFirmaLifeItemTags(event)
     registerFTBQuestsItemTags(event)
+    registerGTCEUItemTags(event)
+    registerMinecraftItemTags(event) //
+    registerMoreRedItemTags(event)
+    registerRailWaysItemTags(event)
+    registerSophisticatedBackpacksItemTags(event)
+    registerTFCItemTags(event)
 })
 
 /**
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
-    registerTFCBlockTags(event)
-    registerFirmaLifeBlockTags(event)
-    
+    registerAE2BlockTags(event)
     registerChiselAndBitsBlockTags(event)
     registerComputerCraftBlockTags(event)
+    registerCreateBlockTags(event)
+    registerCreateAdditionsBlockTags(event)
+    registerFirmaCivBlockTags(event)
+    registerFirmaLifeBlockTags(event)
+    registerFTBQuestsBlockTags(event)
+    registerGTCEUBlockTags(event)
+    registerMinecraftBlockTags(event)
+    registerMoreRedBlockTags(event)
+    registerRailWaysBlockTags(event)
+    registerSophisticatedBackpacksBlockTags(event)
+    registerTFCBlockTags(event)
 })
 
 /**
@@ -48,7 +52,7 @@ ServerEvents.tags('fluid', event => {
 })
 
 /**
- * Событие регистрации генератора структур.
+ * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
     registerTFCPlacedFeatures(event)
@@ -56,16 +60,16 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 })
 
 /**
- * Здесь регистрируются файлы датапаков общие.
- * Срабатывает до инициализации рецептов.
+ * Событие регистрации датапаков (Здесь можно регистрировать теги, данные, рецепты, общий метод короче).
+ * Срабатывает до инициализации рецептов, но после тегов.
  */
 ServerEvents.highPriorityData(event => {
     registerComputerCraftData(event)
 })
 
 /**
- * Здесь регистрируются файлы датапаков TFC.
- * Срабатывает до инициализации рецептов.
+ * Событие регистрации датапаков для TFC (Здесь можно регистрировать теги, данные, рецепты, общий метод короче).
+ * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
     registerTFCDataForTFC(event)
@@ -76,10 +80,27 @@ TFCEvents.data(event => {
 })
 
 /**
+ * Событие регистрации лут-тейблов.
+ * Срабатывает до инициализации рецептов, но после датапаков и тегов.
+ */
+LootJS.modifiers((event) => {
+    registerGTCEULoots(event)
+});
+
+/**
+ * Событие регистрации рудных жил.
+ * Не представляю когда срабатывает, но явно после тегов и датапаков.
+ */
+GTCEuServerEvents.oreVeins(event => {
+    event.removeAll()
+})
+
+/**
  * Событие регистрации рецептов.
- * Срабатывает после инициализации датапаков.
+ * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+    /*
     registerTFCRecipes(event)
     registerFirmaLifeRecipes(event)
     registerFirmaCivRecipes(event)
@@ -109,19 +130,5 @@ ServerEvents.recipes(event => {
     
     registerFTBQuestsRecipes(event)
 
-    // registerChiselAndBitsRecipes(event)
-})
-
-/**
- * Событие регистрации лут-тейблов.
- */
-LootJS.modifiers((event) => {
-    registerGTCEULoots(event)
-});
-
-/**
- * Событие регистрации рудных жил.
- */
-GTCEuServerEvents.oreVeins(event => {
-    event.removeAll()
+    registerChiselAndBitsRecipes(event)*/
 })
