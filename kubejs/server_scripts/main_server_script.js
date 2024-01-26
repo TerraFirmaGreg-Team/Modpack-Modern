@@ -32,6 +32,8 @@ ServerEvents.tags('item', event => {
  */
 ServerEvents.tags('block', event => {
     registerTFCBlockTags(event)
+    registerFirmaLifeBlockTags(event)
+    
     registerComputerCraftBlockTags(event)
 })
 

@@ -1,0 +1,31 @@
+{
+    "filters": [
+        {
+            "category": "minecraft:campfire_cooking"
+        },
+        {
+            "category": "emi:anvil_repairing"
+        },
+        {
+            "category": "emi:world_interaction"
+        },
+        {
+            "category": "gtceu:primitive_blast_furnace"
+        },
+        {
+            "category": "create:mystery_conversion"
+        },
+        {
+            "category": "jumbofurnace:jumbo_furnace_upgrade"
+        },
+        {
+            "category": "jumbofurnace:jumbo_smelting"
+        },
+        {
+            "category": "emi:composting"
+        },
+        {
+            "category": "emi:fuel"
+        }
+    ]
+}

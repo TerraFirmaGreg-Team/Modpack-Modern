@@ -7,8 +7,10 @@ const registerGTCEUItemTags = (event) => {
         event.removeAllTagsFrom(item)
     })
 
-    //#region Пыли стоунтайпов в один тэг
+    // Добавление тега EMI для скрытия всех руд
+    event.add('c:hidden_from_recipe_viewers', '#forge:ores')
 
+    //#region Пыли стоунтайпов в один тэг
     event.add('tfg:stone_dusts', 'gtceu:gabbro_dust')
     event.add('tfg:stone_dusts', 'gtceu:shale_dust')
     event.add('tfg:stone_dusts', 'gtceu:claystone_dust')

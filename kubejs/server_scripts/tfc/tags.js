@@ -1,12 +1,6 @@
 // priority: 0
 
 const registerTFCItemTags = (event) => {
-    
-    // Удаление тегов у отключенных предметов
-    global.TFC_DISABLED_ITEMS.forEach(item => {
-        event.removeAllTagsFrom(item)
-    })
-
     // Теги для соответствия инструментов TFC и GT
     event.add('tfc:swords', '#minecraft:swords')
     event.add('tfc:pickaxes', '#minecraft:pickaxes')
@@ -167,6 +161,8 @@ const registerTFCItemTags = (event) => {
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
+
+    removeAllTagsFromDisabledItemsTFC(event)
 }
 
 const registerTFCBlockTags = (event) => {
@@ -213,6 +209,8 @@ const registerTFCBlockTags = (event) => {
 
     event.add('tfc:glass_basin_blocks', 'tfc:white_kaolin_clay')
     event.add('tfc:glass_pouring_table', 'tfc:white_kaolin_clay')
+
+    removeAllTagsFromDisabledItemsTFC(event)
 }
 
 const registerTFCFluidTags = (event) => {
@@ -394,4 +392,14 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:vein/surface_sphalerite')
     event.add('tfc:in_biome/veins', 'tfg:vein/surface_tetrahedrite')
     event.add('tfc:in_biome/veins', 'tfg:geode')
+}
+
+const removeAllTagsFromDisabledItemsTFC = (event) => {
+    // Удаление тегов у отключенных предметов
+    global.TFC_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
+
+    // Удаление тегов у руд
+    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }

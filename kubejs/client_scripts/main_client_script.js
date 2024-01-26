@@ -1,5 +1,6 @@
 // priority: 1
 
+/*
 if (Platform.isLoaded('jei')) {
     
     JEIEvents.hideItems(event => {
@@ -59,4 +60,4 @@ const removeCategories = (event) => {
     registerMinecraftCategories(event)
     registerGTCEUCategories(event)
     registerMoreRedCategories(event)
-}
+}*/
