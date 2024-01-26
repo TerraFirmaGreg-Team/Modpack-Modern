@@ -1,0 +1,147 @@
+
+[general]
+	disable_mod = false
+	hide_bossbar = true
+	shadow_text = true
+	auto_start = false
+	animationSpeed = 1.0
+	hide_debug_crosshair = true
+	background_color = 1867534416
+	space_modules = false
+	always_show_profiler = false
+	animations = true
+	fontScale = 1.0
+	hide_sidebar = true
+	always_show_tps = false
+
+[[modules_right]]
+	memory_color_toggle = true
+	time_format = "HH:mm:ss"
+	name = "system"
+	name_color = 16755200
+	value_color = 5636095
+	enabled = true
+
+	[modules_right.lines]
+		opengl_version = true
+		allocation_rate = true
+		display = true
+		java_version = true
+		gpu_driver = true
+		memory_usage = true
+		allocated_memory = true
+		cpu = true
+		gpu_utilization = true
+		time = true
+		gpu = true
+
+[[modules_right]]
+	empty_lines = 1
+	name = "empty"
+	enabled = true
+
+	[modules_right.lines]
+		nothing = true
+
+[[modules_right]]
+	name = "target"
+	name_color = 43775
+	value_color = 16777045
+	enabled = true
+
+	[modules_right.lines]
+		id_fluid = true
+		fluid_tags = false
+		block_states = true
+		targeted_block = true
+		block_tags = false
+		id_block = true
+		nothing = true
+		nothing2 = true
+		targeted_fluid = true
+		targeted_entity = true
+		fluid_states = true
+
+[[modules_left]]
+	name = "minecraft"
+	name_color = 10506797
+	value_color = 43520
+	enabled = true
+
+	[modules_left.lines]
+		minecraft = true
+
+[[modules_left]]
+	color_high = 5635925
+	color_med = 16777045
+	name = "fps"
+	enabled = true
+	color_low = 16733525
+
+	[modules_left.lines]
+		fps = true
+
+[[modules_left]]
+	name = "server"
+	name_color = 11184810
+	value_color = 16777045
+	enabled = true
+
+	[modules_left.lines]
+		server_tick = true
+		packets_sent = true
+		packets_received = true
+
+[[modules_left]]
+	color_x = 16733525
+	color_y = 5635925
+	color_z = 5636095
+	name = "coords"
+	name_color = 16733525
+	enabled = true
+
+	[modules_left.lines]
+		chunk_coords = true
+		player_coords = true
+		block_coords = true
+		chunk_relative_coords = true
+
+[[modules_left]]
+	name = "location"
+	name_color = 43520
+	value_color = 5636095
+	enabled = true
+
+	[modules_left.lines]
+		light = true
+		biome = true
+		rotation = true
+		facing = true
+		slime_chunk = true
+		local_difficulty = true
+		day_ticks = true
+		days_played = true
+		dimension = true
+		highest_block = true
+		highest_block_server = true
+		light_server = true
+
+[[modules_left]]
+	name = "entity"
+	name_color = 16733525
+	value_color = 16777045
+	total_entities_color = 16755200
+	enabled = true
+
+	[modules_left.lines]
+		entities = true
+		water_creature = true
+		underground_water_creature = true
+		ambient = true
+		particles = true
+		axolotls = true
+		creature = true
+		water_ambient = true
+		monster = true
+		misc = true
+
