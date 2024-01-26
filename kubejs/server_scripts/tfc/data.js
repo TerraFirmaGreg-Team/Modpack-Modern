@@ -60,7 +60,7 @@ const registerTFCHeats = (event) => {
         if (!tool.isEmpty()) event.itemHeat(tool, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
     }
 
-    GTRegistries.MATERIALS.forEach(material => {
+    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
         
         if (tfcProperty != null) {

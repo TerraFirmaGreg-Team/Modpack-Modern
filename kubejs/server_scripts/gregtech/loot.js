@@ -3,7 +3,7 @@
 const registerGTCEULoots = (event) => {
     
     global.TFC_STONE_TYPES.forEach(stoneType => {
-        GTRegistries.MATERIALS.forEach(material => {
+        GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
             if (material.hasProperty(PropertyKey.ORE)) {
                 
                 let stoneTypeMaterial = GTMaterials.get(stoneType)

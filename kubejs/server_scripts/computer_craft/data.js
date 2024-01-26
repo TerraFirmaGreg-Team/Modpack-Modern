@@ -3,7 +3,7 @@
 const registerComputerCraftData = (event) => {
     const TURTLE_TOOL_TYPES = [ GTToolType.SWORD, GTToolType.PICKAXE, GTToolType.AXE, GTToolType.SHOVEL, GTToolType.HOE ]
 
-    GTRegistries.MATERIALS.forEach(material => {
+    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
         TURTLE_TOOL_TYPES.forEach(type => {
             let toolStack = $ToolHelper.get(type, material)
 
