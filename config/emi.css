@@ -46,7 +46,7 @@
 	/**
 	 * Where to display status effects in the inventory.
 	 */
-	effect-location: top;
+	effect-location: left;
 
 	/**
 	 * Whether to display a gray overlay when hovering over a stack.
@@ -110,7 +110,7 @@
 	/**
 	 * Where to show workstations in the recipe screen
 	 */
-	workstation-location: bottom;
+	workstation-location: left;
 
 	/**
 	 * Display cost per batch when hovering a recipe output
@@ -120,7 +120,7 @@
 	/**
 	 * Whether recipes should have a button to set as default.
 	 */
-	recipe-default-button: true;
+	recipe-default-button: false;
 
 	/**
 	 * Whether recipes should have a button to show the recipe tree.
@@ -191,7 +191,7 @@
 	/**
 	 * How many columns and rows of ingredients to limit the right sidebar to
 	 */
-	right-sidebar-size: 12, 100;
+	right-sidebar-size: 11, 100;
 
 	/**
 	 * How much space to maintain between the right sidebar and obstructions, in pixels
@@ -289,7 +289,7 @@
 	/**
 	 * Toggle the visibility of EMI.
 	 */
-	toggle-visibility: "ctrl key.keyboard.o";
+	toggle-visibility: "key.keyboard.unknown";
 
 	/**
 	 * Focuse the search bar.
@@ -323,7 +323,7 @@
 	 * Set the default recipe for a given stack in the output of a recipe to that
 	 * recipe.
 	 */
-	default-stack: "ctrl key.mouse.left";
+	default-stack: "key.keyboard.unknown";
 
 	/**
 	 * Display the recipe tree for a given stack.
@@ -384,22 +384,22 @@
 	/**
 	 * Cheat in one of an item into the inventory.
 	 */
-	cheat-one-to-inventory: "ctrl key.mouse.right";
+	cheat-one-to-inventory: "key.keyboard.unknown";
 
 	/**
 	 * Cheat in a stack of an item into the inventory.
 	 */
-	cheat-stack-to-inventory: "ctrl key.mouse.left";
+	cheat-stack-to-inventory: "key.keyboard.unknown";
 
 	/**
 	 * Cheat in one of an item into the cursor.
 	 */
-	cheat-one-to-cursor: "ctrl key.mouse.middle";
+	cheat-one-to-cursor: "key.mouse.left";
 
 	/**
 	 * Cheat in a stack of an item into the cursor.
 	 */
-	cheat-stack-to-cursor: "key.keyboard.unknown";
+	cheat-stack-to-cursor: "shift key.mouse.left";
 
 	/**
 	 * Delete the stack in the cursor when hovering the index
@@ -409,17 +409,17 @@
 	/**
 	 * Copies the hovered recipe's ID to the clipboard
 	 */
-	copy-recipe-id: "key.keyboard.unknown";
+	copy-recipe-id: "key.mouse.middle";
 
 	/**
 	 * In edit mode, hide the hovered stack
 	 */
-	hide-stack: "ctrl key.mouse.left";
+	hide-stack: "key.keyboard.unknown";
 
 	/**
 	 * In edit mode, hide stacks with the hovered stack's id
 	 */
-	hide-stack-by-id: "ctrl shift key.mouse.left";
+	hide-stack-by-id: "key.keyboard.unknown";
 }
 
 #dev {
