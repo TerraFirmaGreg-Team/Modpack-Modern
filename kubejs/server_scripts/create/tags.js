@@ -33,9 +33,12 @@ const registerCreateBlockTags = (event) => {
 
 
 const registerCreateFluidTags = (event) => {
+    
+    // Делаем воду из TFC бесконечной для помпы Create
     event.add('create:bottomless/allow', 'tfc:fresh_water')
     event.add('create:bottomless/allow', 'tfc:salt_water')
 
-    //event.hide('create:chocolate')
-    //event.hide('create:honey')
+    // Добавляем тег для скрытия в EMI
+    event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
+    event.add('c:hidden_from_recipe_viewers', 'create:honey')
 }

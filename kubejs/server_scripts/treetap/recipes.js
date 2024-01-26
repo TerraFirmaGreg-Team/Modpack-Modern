@@ -14,7 +14,7 @@ const registerTreeTapRecipes = (event) => {
         .resultFluid(Fluid.of('gtceu:copper', 144))
         .id('tfg:heating/treetap')
 
-    // Latex
+    // Latex From Kapok
     event.custom({
         type: "treetap:tap_extract",
         log: {

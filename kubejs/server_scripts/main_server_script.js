@@ -47,16 +47,18 @@ ServerEvents.tags('block', event => {
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
-    registerTFCFluidTags(event)
     registerCreateFluidTags(event)
+    registerCreateAdditionsFluidTags(event)
+    registerFirmaLifeBlockTags(event)
+    registerTFCFluidTags(event)
 })
 
 /**
  * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
-    registerTFCPlacedFeatures(event)
     registerFirmaLifePlacedFeatures(event)
+    registerTFCPlacedFeatures(event)
 })
 
 /**
@@ -72,11 +74,10 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
-    registerTFCDataForTFC(event)
-    registerTFCDataForWaterFlasks(event)
-    registerTFCDataForTreeTap(event)
-    
     registerTFCDataForGTCEU(event)
+    registerTFCDataForTFC(event)
+    registerTFCDataForTreeTap(event)
+    registerTFCDataForWaterFlasks(event)
 })
 
 /**
@@ -130,5 +131,6 @@ ServerEvents.recipes(event => {
     
     registerFTBQuestsRecipes(event)
 
-    registerChiselAndBitsRecipes(event)*/
+    registerChiselAndBitsRecipes(event)
+    */
 })

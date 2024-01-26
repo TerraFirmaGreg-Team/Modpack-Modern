@@ -28,10 +28,14 @@ const registerFirmaLifeBlockTags = (event) => {
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
 
+const registerFirmaLifeFluidTags = (event) => {
+    
+    // Добавляем тег для скрытия в EMI
+    event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
+    event.add('c:hidden_from_recipe_viewers', 'create:honey')
+}
+
 const registerFirmaLifePlacedFeatures = (event) => {
     event.remove('tfc:in_biome/veins', 'firmalife:vein/normal_chromite')
     event.remove('tfc:in_biome/veins', 'firmalife:vein/deep_chromite')
 }
-
-// event.hide('firmalife:metal/chromium')
-// event.hide('firmalife:metal/stainless_steel')

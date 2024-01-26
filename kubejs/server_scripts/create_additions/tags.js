@@ -18,6 +18,9 @@ const registerCreateAdditionsBlockTags = (event) => {
     })
 }
 
-
-//event.hide('createaddition:seed_oil')
-//event.hide('createaddition:bioethanol')
+const registerCreateAdditionsFluidTags = (event) => {
+    
+    // Добавляем тег для скрытия в EMI
+    event.add('c:hidden_from_recipe_viewers', 'createaddition:seed_oil')
+    event.add('c:hidden_from_recipe_viewers', 'createaddition:bioethanol')
+}

@@ -9,7 +9,7 @@ const registerMoreRedItemTags = (event) => {
     })
 }
 
-const registerMoreRedBlockags = (event) => {
+const registerMoreRedBlockTags = (event) => {
     
     // Удаление тегов у отключенных предметов
     global.MORE_RED_DISABLED_ITEMS.forEach(item => {
