@@ -2,6 +2,7 @@
 
 const registerFirmaCivRecipes = (event) => {
     
+    /*
     event.remove({ id: '/firmaciv:quern/' })
     event.remove({ id: 'firmaciv:anvil/copper_bolt' })
         
@@ -15,5 +16,5 @@ const registerFirmaCivRecipes = (event) => {
         .circuit(1)
         .itemOutputs('firmaciv:firmaciv_compass')
         .duration(100)
-        .EUt(4)
+        .EUt(4)*/
 }
