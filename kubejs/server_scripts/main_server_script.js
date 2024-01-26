@@ -24,6 +24,7 @@ ServerEvents.tags('item', event => {
     
     registerSophisticatedBackpacksItemTags(event)
     
+    registerChiselAndBitsItemTags(event)
     registerFTBQuestsItemTags(event)
 })
 
@@ -34,6 +35,7 @@ ServerEvents.tags('block', event => {
     registerTFCBlockTags(event)
     registerFirmaLifeBlockTags(event)
     
+    registerChiselAndBitsBlockTags(event)
     registerComputerCraftBlockTags(event)
 })
 
