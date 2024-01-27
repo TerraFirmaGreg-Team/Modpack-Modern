@@ -7,7 +7,7 @@ debug:false
 lighting:true
 colours:0
 loadChunks:true
-updateChunks:true
+updateChunks:false
 terrainSlopes:2
 terrainDepth:true
 footsteps:true
