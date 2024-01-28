@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.6.9]
+## [0.7.0]
 ### Changes
 - The option to disable coordinates and some information has been re-enabled because firmaCiv has finally introduced items for tracking latitude and longitude, which is intended for determining one's own location. You can still view your coordinates through the mini-map, but this functionality will be disabled in the future when Antique Atlas and Game Stages are added.
 - BetterF3 has been slightly configured.
@@ -20,6 +20,8 @@
 - Fixed oil output from tfc dirt -> biomass recipe (what??)
 - GTCEu bolts now can be used in FirmaCiv boats (Fix for new FirmaCiv ver).
 # Wip for now (required for update)
+- Colorizing of Create valves (in TFC barrels).
+- Colorizing of Create seats (in TFC barrels).
 - Added assembler recipes for a lot of TFC recipes.
 - Added assembler recipes for a lot of FirmaCiv items.
 - Vanilla glass bottles has been replaced with TFC bottles.

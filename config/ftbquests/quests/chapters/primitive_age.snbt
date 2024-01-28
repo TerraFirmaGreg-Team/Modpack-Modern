@@ -4145,7 +4145,10 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["34ABDCB5BA778DE4"]
+			dependencies: [
+				"0A6AADCDD2A635EC"
+				"147911B5CA3A7DD8"
+			]
 			id: "314212B496B2D3C3"
 			tasks: [{
 				id: "2E70F72F0CE2CF36"
@@ -4192,8 +4195,8 @@
 				item: "minecraft:white_wool"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -5.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -4348,21 +4351,6 @@
 			]
 			x: 9.0d
 			y: -9.5d
-		}
-		{
-			dependencies: [
-				"6BC4DB9BEE8E6640"
-				"6E24ECF6CEE950D1"
-			]
-			id: "34ABDCB5BA778DE4"
-			tasks: [{
-				count: 16L
-				id: "2579EAFE552BA628"
-				item: "minecraft:string"
-				type: "item"
-			}]
-			x: 12.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["4E37B4C1A68FFE59"]
@@ -4527,11 +4515,11 @@
 					type: "item"
 				}
 			]
-			x: 13.5d
-			y: -9.5d
+			x: 14.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["314212B496B2D3C3"]
+			dependencies: ["665BC6BB76CE0EA3"]
 			id: "6F848650CAF10E9A"
 			tasks: [{
 				id: "4A9AB33FDB17322A"
@@ -4545,17 +4533,17 @@
 				title: "Any #minecraft:beds"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -9.5d
+			x: 8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"6BC4DB9BEE8E6640"
-				"34ABDCB5BA778DE4"
 				"3D889F02ABAFEB85"
 			]
 			dependency_requirement: "one_completed"
 			id: "5D0B6CA6E0EB320B"
+			size: 1.5d
 			tasks: [
 				{
 					id: "786C737E1798C9E5"
@@ -4671,7 +4659,6 @@
 		{
 			dependencies: [
 				"42FD437930CA74C7"
-				"34ABDCB5BA778DE4"
 				"6BC4DB9BEE8E6640"
 			]
 			dependency_requirement: "one_completed"
@@ -4693,7 +4680,6 @@
 		{
 			dependencies: [
 				"42FD437930CA74C7"
-				"34ABDCB5BA778DE4"
 				"6BC4DB9BEE8E6640"
 			]
 			dependency_requirement: "one_completed"
@@ -4741,6 +4727,19 @@
 			}]
 			x: 19.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			hide_dependency_lines: true
+			id: "0A6AADCDD2A635EC"
+			subtitle: "Kill the spiders!"
+			tasks: [{
+				id: "6218E98E7B9F86B6"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -9.5d
 		}
 	]
 	title: "Primitive Age"
