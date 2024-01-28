@@ -7,11 +7,24 @@
 - EMI has been restored to replace REI, with bindings configured to be similar to REI. Unnecessary categories have been removed, and a new item hiding system has been added. This fixes a crash issue on servers.
 - Now, when items are disabled, their BlockTags are also removed.
 - A special Tag has been added to disabled items and liquids, which has facilitated development.
-- Greg's method has been used to disable headgear made from materials that should not exist (again, as Greg fixed this).
+- Greg's method has been used to disable tool heads made from materials that should not exist (again, as Greg fixed this).
+- Fixed bow assmebler recipe (now using all string instead of hardcoded vanilla strings).
+- Removed assembler lead recipem but added strings + wrought iron ring recipe for lead in workbench.
+- Fixed wool assembler recipe (Now consuming any strings).
+- Removed outdated concrete colorizing recipes because gtceu adds own.
+- Fixed carpet colorizing recipes.
+- Removed dye + bed = dye bed recipes, because u should use chemical bath or barrel for that.
+- Disabled coordinates displaying in xaeros map. Of course, I understand that everyone can turn this back on, but the modpack involves navigating the terrain using firmaciv devices, so this solution is temporary.
+- Disabled entity displaying in xaeros map.
+- Players are now displayed on the map as dots. 
+- Fixed oil output from tfc dirt -> biomass recipe (what??)
+- GTCEu bolts now can be used in FirmaCiv boats (Fix for new FirmaCiv ver).
+# Wip for now (required for update)
+- Added assembler recipes for a lot of TFC recipes.
+- Added assembler recipes for a lot of FirmaCiv items.
+- Vanilla glass bottles has been replaced with TFC bottles.
 - Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
 - The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.
-- Vanilla strings have been removed from the recipes; we have enough strings, with 150 thousand variations already.
-- Bolts from FirmaCiv have been reintroduced into the game, with their recipe and name changed to large bolts, and they now also have a recipe in Greg's mod.
 
 ## [0.6.8] - 24.01.2024
 ### Changes

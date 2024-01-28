@@ -21,7 +21,7 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
     event.remove({ id: /tfc:heating\/metal\/*_block_slab/ })
 
-    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
+    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
@@ -2109,7 +2109,6 @@ const registerTFCRecipes = (event) => {
         .chancedOutput('gtceu:plant_ball', 1250, 700)
         .chancedOutput('tfc:sand/yellow', 5000, 1200)
         .chancedOutput('gtceu:tiny_clay_dust', 4000, 900)
-        .outputFluids(Fluid.of('gtceu:oil', 2000))
         .duration(250)
         .EUt(30)
 
@@ -2839,7 +2838,7 @@ const registerTFCRecipes = (event) => {
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
         .id('tfg:smelting/fireclay_brick')
 
-    // Wool yarn
+    // Wool Yarn
     event.recipes.gtceu.macerator('macerate_wool')             
         .itemInputs('#minecraft:wool')
         .itemOutputs('tfc:wool_yarn')

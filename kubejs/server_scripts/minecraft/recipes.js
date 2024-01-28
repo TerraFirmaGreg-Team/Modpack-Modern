@@ -2108,23 +2108,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Нитки
-
-    event.recipes.tfc.barrel_sealed(6000)
-        .inputs('tfc:wool_yarn', Fluid.of('tfc:tannin', 250))    
-        .outputItem('minecraft:string')
-        .id('tfg:barrel/sealed/string')
-        
-
-    event.recipes.gtceu.mixer('vanilla_string_from_wool_yarn')             
-        .inputFluids(Fluid.of('tfc:tannin', 200))    
-        .itemInputs('tfc:wool_yarn')
-        .itemOutputs('minecraft:string')
-        .duration(800)
-        .EUt(2)
-
-    //#endregion
-
     //#region Выход: Факел
 
     //#region В Верстаке
@@ -2433,6 +2416,7 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Бетон
 
+    /*
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
         event.recipes.gtceu.chemical_bath(`${dye}_powder_to_${dye}_concrete`)             
@@ -2449,12 +2433,20 @@ const registerMinecraftRecipes = (event) => {
                 .itemOutputs(`minecraft:${dye}_concrete`)
                 .duration(300)
                 .EUt(4)
-    })
+    })*/
 
     //#endregion
 
     //#region Выход: Шерсть
 
+    event.recipes.gtceu.assembler('wool_from_string')             
+        .itemInputs('4x #forge:string')
+        .circuit(4)
+        .itemOutputs('minecraft:white_wool')
+        .duration(100)
+        .EUt(4)
+
+    /*
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
         event.remove({ id: `minecraft:dye_${dye}_wool` })
@@ -2474,12 +2466,13 @@ const registerMinecraftRecipes = (event) => {
                 .EUt(4)
         }
             
-    })
+    })*/
 
     //#endregion
 
     //#region Выход: Ковры
 
+    /*
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
         event.remove({ id: `minecraft:dye_${dye}_carpet` })
@@ -2498,7 +2491,7 @@ const registerMinecraftRecipes = (event) => {
                 .duration(300)
                 .EUt(4)
         }
-    })
+    })*/
 
     //#endregion
 
@@ -2512,7 +2505,7 @@ const registerMinecraftRecipes = (event) => {
         .EUt(4)
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
-        event.remove({ id: `minecraft:${dye}_bed` })
+        event.remove({ id: `minecraft:dye_${dye}_bed` })
 
         if (dye != "white")
             event.recipes.gtceu.chemical_bath(`${dye}_bed`)             
@@ -2528,6 +2521,16 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Арбалет
 
     event.remove({ id: 'minecraft:crossbow' })
+
+    //#endregion
+
+    //#region Выход: Лук
+
+    event.recipes.gtceu.assembler('bow')             
+        .itemInputs('3x #forge:string', '3x #forge:rods/wooden')
+        .itemOutputs('minecraft:bow')
+        .duration(100)
+        .EUt(4)
 
     //#endregion
 
@@ -2594,6 +2597,16 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Веревка
 
     event.remove({ id: 'minecraft:lead' })
+    event.remove({ id: 'gtceu:assembler/lead' })
+
+    event.shaped('minecraft:lead', [
+        ' AA', 
+        ' BA',
+        'A   '  
+    ], {
+        A: '#forge:string',
+        B: '#forge:rings/wrought_iron'
+    })
 
     //#endregion
 

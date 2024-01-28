@@ -907,7 +907,6 @@ const registerCreateRecipes = (event) => {
         E: 'minecraft:obsidian'
     }).id('tfg:create/mechanical_crafting/wand_of_symmetry')
 
-
     // Фильтр список
     event.shaped('create:filter', [
         'ABA'
