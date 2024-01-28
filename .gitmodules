@@ -1,3 +1,6 @@
 [submodule "mods"]
 	path = mods
 	url = https://github.com/TerraFirmaGreg-Team/TFG-Mods-1.20.x.git
+[submodule ".github/wiki"]
+	path = .github/wiki
+	url = https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x.wiki.git
