@@ -16,7 +16,7 @@ ServerEvents.tags('item', event => {
     registerFirmaLifeItemTags(event)
     registerFTBQuestsItemTags(event)
     registerGTCEUItemTags(event)
-    registerMinecraftItemTags(event) //
+    registerMinecraftItemTags(event)
     registerMoreRedItemTags(event)
     registerRailWaysItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
