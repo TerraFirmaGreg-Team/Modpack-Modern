@@ -21,7 +21,7 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
     event.remove({ id: /tfc:heating\/metal\/*_block_slab/ })
 
-    GTRegistries.MATERIALS.forEach(material => {
+    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
         
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 

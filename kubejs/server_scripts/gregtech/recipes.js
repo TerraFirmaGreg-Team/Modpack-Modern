@@ -1277,7 +1277,7 @@ const registerGTCEURecipes = (event) => {
 
     //#region Рецепты, которые итерируются по всем материалам
 
-    GTRegistries.MATERIALS.forEach(material => {
+    GTCEuAPI.materialManager.getRegisteredMaterials().forEach(material => {
         
         //#region Рецепты инструментов
         

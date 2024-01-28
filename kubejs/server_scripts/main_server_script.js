@@ -101,36 +101,23 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
-    /*
-    registerTFCRecipes(event)
-    registerFirmaLifeRecipes(event)
-    registerFirmaCivRecipes(event)
-    registerWaterFlasksRecipes(event)
-    registerTreeTapRecipes(event)
-    
-    registerMinecraftRecipes(event)
-    
-    registerGTCEURecipes(event)
-    
-    registerCreateRecipes(event)
-    registerCreateAdditionsRecipes(event)
-    registerRailWaysRecipes(event)
-    
     registerAE2Recipes(event)
     registerAE2WTLibRecipes(event)
-    
-    registerComputerCraftRecipes(event)
-    
-    registerMoreRedRecipes(event)
-    
-    registerSophisticatedBackpacksRecipes(event)
-
-    registerToolBeltRecipes(event)
-    
-    registerExposureRecipes(event)
-    
-    registerFTBQuestsRecipes(event)
-
     registerChiselAndBitsRecipes(event)
-    */
+    registerComputerCraftRecipes(event)
+    registerCreateRecipes(event)
+    registerCreateAdditionsRecipes(event)
+    registerExposureRecipes(event)
+    registerFirmaCivRecipes(event)
+    registerFirmaLifeRecipes(event)
+    registerFTBQuestsRecipes(event)
+    registerGTCEURecipes(event)
+    registerMinecraftRecipes(event)
+    registerMoreRedRecipes(event)
+    registerRailWaysRecipes(event)
+    registerSophisticatedBackpacksRecipes(event)
+    registerTFCRecipes(event)
+    registerToolBeltRecipes(event)
+    registerTreeTapRecipes(event)
+    registerWaterFlasksRecipes(event)
 })
