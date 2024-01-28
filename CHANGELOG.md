@@ -20,6 +20,7 @@
 - Fixed oil output from tfc dirt -> biomass recipe (what??)
 - GTCEu bolts now can be used in FirmaCiv boats (Fix for new FirmaCiv ver).
 # Wip for now (required for update)
+- Hided for now nether items.
 - Colorizing of Create valves (in TFC barrels).
 - Colorizing of Create seats (in TFC barrels).
 - Added assembler recipes for a lot of TFC recipes.
