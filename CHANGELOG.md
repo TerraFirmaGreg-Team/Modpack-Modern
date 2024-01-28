@@ -1,35 +1,35 @@
 # Changelog
 
-## [0.6.9] - ?
-### Изменения
-- Включена снова опция отключения координат и некоторой инфы, потому что в firmaCiv наконец-то появились предметы для отслеживания широты и долготы при помощи которых и предполагается определение собственного местоположения. Вы все еще можете смотреть свои координаты через миникарту, но этот функционал будет отключен в будущем при добавлении Antique Atlas и Game Stages.
-- Немного настроен BetterF3.
-- Возвращен EMI на замену REI, настроены бинды, чтобы были примерно как в REI. Удалены ненужные категории, добавлена новая система скрытия предметов. Из этого следует фикс краша на серверах.
-- Теперь у отключенных предметов удаляется и BlockTag.
-- Теперь отключаемым предметам, жидкостям добавляется специальный Tag, что облегчило разработку.
-- Греговским методом отключены оголовья из материалов из которых они не должны существовать (снова, тк грег это фиксанул).
-- В очередной раз перераспределены рецепты пластин, палок и другого через механизмы Create. (Попытка исправить краш)
-- Удалена примитивная помпа из GTCEu, теперь на начальном этапе игры, вам придется качать воду при помощи помпы из Create.
-- Из рецептов вырезаны ванильные нитки, хватит нам ниток, итак 150 тысяч вариаций.
-- Возвращены в игру болты из FirmaCiv, им изменен рецепт и название, теперь это большие болты, так же теперь они имеют рецепт в греге.
+## [0.6.9]
+### Changes
+- The option to disable coordinates and some information has been re-enabled because firmaCiv has finally introduced items for tracking latitude and longitude, which is intended for determining one's own location. You can still view your coordinates through the mini-map, but this functionality will be disabled in the future when Antique Atlas and Game Stages are added.
+- BetterF3 has been slightly configured.
+- EMI has been restored to replace REI, with bindings configured to be similar to REI. Unnecessary categories have been removed, and a new item hiding system has been added. This fixes a crash issue on servers.
+- Now, when items are disabled, their BlockTags are also removed.
+- A special Tag has been added to disabled items and liquids, which has facilitated development.
+- Greg's method has been used to disable headgear made from materials that should not exist (again, as Greg fixed this).
+- Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
+- The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.
+- Vanilla strings have been removed from the recipes; we have enough strings, with 150 thousand variations already.
+- Bolts from FirmaCiv have been reintroduced into the game, with their recipe and name changed to large bolts, and they now also have a recipe in Greg's mod.
 
 ## [0.6.8] - 24.01.2024
-### Изменения
+### Changes
 - Произведен откат версии Firma Civilization из-за краша на сервере
-### Удаленные моды
+### Deleted mods
 - alekiEHM
 
 ## [0.6.7] - 24.01.2024
-### Изменения
-- Удалены оголовья из материалов, и зкоторых он не должны существовать, опять подчищаем за грегом.
-- Добавлено и оптимизировано множество модов/конфигов на оптимизацию.
-- Добавлены QOL моды.
-- F11 теперь работает правильно.
-- Исправления для работы с последним грегом.
-- Исправлен квест на ведро латекса.
-- Иcправлен квест на нитки.
-- После обновления у вас могут быть сундуки в REI с ванильной текстурой, но из TFC, это нормально, баг мода, разработчику уже отправил информацию.
-### Новые моды
+### Changes
+- The toolheads have been removed from the materials, and since they should not exist, we clean up after Greg again.
+- Added and optimized a lot of mods/configs for optimization.
+- Added QOL mods.
+- F11 is now working correctly.
+- Fixes to work with the latest greg.
+- Fixed latex bucket quest.
+- Fixed strings quest.
+- After the update, you may have chests in REI with a vanilla texture, but from TFC, this is normal, the mod bug has already sent the information to the developer.
+### New Mods
 - AlekiEHM
 - Async-locator
 - AttributeFix
@@ -44,12 +44,12 @@
 - Radium
 - Rrls
 - Saturn
-### Удаленные моды
+### Deleted mods
 - Сanary
 - Сhisels-and-bits
 - Сonnectivity
 - LocalizedChat
-### Обновленные моды
+### Update mods
 - AmbientSounds -> 5.3.7
 - Embeddiumplus -> 1.2.3
 - FirmaCivilization -> 0.2.1
@@ -63,50 +63,50 @@
 - TFCAstikorCarts -> 1.1.7.3
 
 ## [0.6.6] - 21.01.2024
-### Изменения
-- Исправлено множество рецептов с неизвестными тегами.
-- Исправлен баг когда было нельзя распоавить слитки оловянного и красного сплавов.
-- Исправлены теги некоторых блоков GTCEu.
-- Мелкие улучшения кода в TFG-Core.
-### Обновленные моды
+### Changes
+- Fixed a lot of recipes with unknown tags.
+- Fixed a bug when it was impossible to melt ingots of tin and red alloys.
+- Fixed tags of some GTCEu blocks.
+- Minor code improvements in TFG-Core.
+### Updated mods
 - TerraFirmaGreg -> 0.4.3
 
 ## [0.6.5] - 20.01.2024
-### Изменения
-- Исправлен краш при открытии инвентаря на сервере
-- Исправлены каменные блоки в рецептах инструментов (че?)
-### Обновленные моды
+### Changes
+- Fixed a crash when opening inventory on servers.
+- Fixed raw stone blocks in tool recipes.
+### Update mods
 - TerraFirmaGreg -> 0.4.2
 
 ## [0.6.4] - 20.01.2024
-### Изменения
-- Удален рецепт морского фонаря из Minecraft.
-- Испавлены рецепты железной и медной теплицы, скрыты блоки, какой-то теплицы из меди.
-- Исправлено несколько квестов.
-- Исправлен рецепт переплавки сырого золота в золотой слиток в печках и механизмах Create.
-- Балансировка статов инструментов, которые не дублируют TFC металлы.
-- Множественная переработка рецептов для поддержки GTCEu 1.1.0. По факту ничего не поменяется для пользователя, но по коду пришлось поработать.
-- Эффекты игрока терпеь отображаются в инвентаре слева.
-- Для кнопок TFC в инвентаре справа сделано избегание предметами из REI, теперь вы можете без опаски нажимать на кнопки TFC.
-- Вырезаны из игры блоки сырых руд.
-- Исправлено собирание предметов в списки в REI.
-- Исправлена локализация для экструдер молдов GTCEu.
-- Добавлены локализационные строки для списоков в REI.
-- Исправлен баг, когда можно было из CastIron отлить кованный слиток.
-- Улучшены некоторые жилы (Увеличена высота спавна индикаторов + изменения в редкости).
-- Исправлен рецепт Jacks в TFC, который конфликтовал со сваркой двух стержней.
-- Исправлен дроп TFC гемов из промывки.
-- Скрыты черепахи CC, остались только дефолтные.
-- Добавлен рецепт незер звезды (временный), после добавления ада будет удален.
-- Удален ошибочный рецепт пыли резины из GTCEu.
-- Удалены рецепты пластин досок в распиле Create.
-- Исправлены конфликтующие крафты компасов.
-- Исправлен баг, когда сундуки в REI могли быть с ванильной текстурой.
-- Включено обратно расширенная дебаг информация.
-- Исправлены рецепты ToolBelt еще раз.
-- Исправлен баг, когда невозможно было расплавить различные металлы TFC.
-- Возможно, что-то еще, спасибо, что помогаете развиваться проекту.
-### Новые моды
+### Changes
+- Removed recipe of sea lantern from Minecraft.
+- Fixed recipes for iron and copper greenhouses, hidden blocks, some kind of greenhouse made of copper.
+- Fixed several quests.
+- Fixed the recipe for melting raw gold into a gold bar in furnaces and Create mechanisms.
+- Balancing the stats of instruments that do not duplicate TFC metals.
+- Multiple reworking of recipes to support GTCEu 1.1.0. In fact, nothing will change for the user, but the code had to be worked on.
+- The player's patience effects are displayed in the inventory on the left.
+- For the TFC buttons in the inventory on the right, the avoidance of objects from REI has been done, now you can safely press the TFC buttons.
+- Blocks of raw ores have been cut from the game.
+- Fixed collecting items in lists in REI.
+- Fixed localization for GTCEu mold extruder.
+- Added localization lines for lists in REI.
+- Fixed a bug where it was possible to cast a forged ingot from CastIron.
+- Improved some veins (Increased spawn height of indicators + changes in rarity).
+- Fixed a Jacks recipe in TFC that conflicted with welding two rods.
+- Fixed the drop of TFC gems from flushing.
+- CC turtles are hidden, only the default ones remain.
+- Added a recipe for a non-black star (temporary), after adding hell it will be deleted.
+- The erroneous rubber dust recipe from GTCEu has been removed.
+- Removed recipes for board plates in the Create saw.
+- Fixed conflicting compass crafting.
+- Fixed a bug where chests in REI could have a vanilla texture.
+- Extended debug information is enabled back.
+- Fixed Toolbelt recipes again.
+- Fixed a bug where it was impossible to melt various TFC metals.
+- Perhaps something else, thank you for helping the project develop.
+### New Mods
 - Fps Reducer
 - Voice Chat
 - Dynview
@@ -116,7 +116,7 @@
 - tfcchannelcasting
 - toofast
 - no-report-button
-### Обновленные моды
+### Updated mods
 - GregTech -> 1.1.0
 - TerraFirmaCraft -> 3.1.5
 - TerraFirmaGreg Core -> 0.4.0
@@ -128,26 +128,26 @@
 - kubejs -> 2001.6.4-build.127
 - moonlight -> 2.8.84
 - PlayerRevive -> 2.0.22
-### Удаленные моды
+### Deleted mods
 - NoChatReports
 
 ## [0.6.3] - 16.01.2024
-### Изменения
-- Исправлен баг когда нельзя было сделать каное.
-- Добавлена функция отключения доп. интеграции TFC-Ambiental.
-- Исправлен квест на медный слиток.
-### Обновленные моды
+### Changes
+- Fixed a bug when it was impossible to make a canoe.
+- Added function to disable additional TFC-Ambiental integration.
+- Fixed the quest for the copper ingot.
+### Updated mods
 - TerraFirmaGreg 0.3.1 -> 0.3.2
 - appliedenergistics2 -> 15.0.20
 - embeddium -> 0.2.18
 
 ## [0.6.2] - 15.01.2024
-### Изменения
+### Changes
 - Исправлен уровень ковки для двойных слитков.
 - Исправлено удаление рецепта кафедры на Linux подобных системах.
-### Обновленные моды
+### Update mods
 - TerraFirmaGreg -> 0.3.1
-### Новые моды
+### New Mods
 - Carpeted
 - Catalogue
 - ChunkSending
@@ -156,16 +156,16 @@
 - MoonLight
 
 ## [0.6.1] - 14.01.2024
-### Изменения
+### Changes
 - Изменился адрес подключения к серверу, скорректирована кнопка.
 - Исправление сервер пака.
-### Удаленные моды
+### Deleted mods
 - BetterCompatibilityChecker
-### Новые моды
+### New Mods
 - MyServerIsCompatible
 
 ## [0.6.0] - 14.01.2024
-### Изменения
+### Changes
 - **ВАЖНОЕ ОБНОВЛЕНИЕ. В ИДЕАЛЕ СТОИТ ПЕРЕСОЗДАТЬ МИР И НАЧАТЬ ИГРАТЬ СНАЧАЛА. ЕСЛИ У ВАС КАКИЕ-ТО ОШИБКИ В СТАРЫХ МИРАХ, НЕ ПИШИТЕ МНЕ ПОЖАЛУЙСТА.**
 - Добавлено множество рецептов для оголовий биты TFC (Допустим крафт и раскрафт через GTCEu машины).
 - Добавлено множество рецептов для оголовий стамески TFC (Допустим крафт и раскрафт через GTCEu машины).
@@ -192,30 +192,30 @@
 - Исправлен рецепт кирпича для коксовой печи.
 - Исправлены баги с инструментами (вроде бы), если у вас, что-то не работает, **ПОЖАЛУЙСТА СОЗДАЙТЕ НОВЫЙ МИР И ПРОТЕСТИРУЙТЕ В НОВОМ МИРЕ**.
 - Возможно что-то еще, о чем забыл.
-### Обновленные моды
+### Update mods
 - embeddiumplus -> 1.2.2
 - fancymenu -> 2.14.13
 - konkrete -> 1.8.0
 - modernfix -> 5.12.1
 - TerraFirmaGreg-Core - 0.3.0
-### Новые моды
+### New Mods
 - REIPluginCompatibilities
 - RoughlyEnoughItems
-### Удаленные моды
+### Deleted mods
 - ChatImage
 - emi
 - jei
 
 ## [0.5.1] - 12.01.2024
-### Изменения
+### Changes
 - Исправлен квест на наковальни.
 - Исправлены рецепт золотого и медного слитков (используются на данный момент из ваниллы).
 - Исправлены рецепты мясницких ножей.
-### Обновленные моды
+### Update mods
 - modernfix -> 5.12.0
 
 ## [0.5.0] - 12.01.2024
-### Изменения
+### Changes
 - Исправлены текстуры ванильных кусков руды.
 - Исправлены рецепты декрафта через продувку в воде из create у грязной пыль.
 - Обновлен интерфейс.
@@ -239,7 +239,7 @@
 - Добавлены в TFC металлы Tin Alloy и Red Alloy, теперь их можно смешать и отлить в форму.
 - Интеграция FirmaLife насколько это возможно (Удалены рецепты теплицы из нержавейки + скрыты некоторые блоки/жидкости) + заменены рецепты использующие нержавейку (что?).
 - Некоторое обновление квестов.
-### Обновленные моды
+### Update mods
 - appliedenergistics2 -> 15.0.19
 - embeddiumplus -> 1.2.1
 - gtceu-forge -> 1.0.20.b
@@ -247,18 +247,18 @@
 - PuzzlesLib -> 8.1.13
 - smoothboot(reloaded) -> 0.0.4
 - TerraFirmaGreg-Core -> 0.2.11.
-### Новые моды
+### New Mods
 - Controlling
 - emi
 - no-report-button
 - Searchables
 - textrues embeddium options
-### Удаленные моды
+### Deleted mods
 - REIPluginCompatibilities
 - RoughlyEnoughItems
 
 ## [0.4.3] - 06.01.2024
-### Изменения
+### Changes
 - Исправлен рецепт точного механизма из Create.
 - Исправлен рецепт ремня из Create.
 - Исправлен рецепт молотильных камней из Create.
@@ -273,31 +273,31 @@
 - Исправлена групировка предметов GT в REI.
 - Исправлено наложение для руд в GT.
 - Исправлены ссылки в кнопках на главном меню.
-### Обновленные моды
+### Update mods
 - TerraFirmaGreg-Core -> 0.2.10
 - canary -> 0.3.1
 
 ## [0.4.2] - 05.01.2024
-### Изменения
+### Changes
 - Исправлен вылет игры при нахождении рядом с бойлерами.
-### Новые моды
+### New Mods
 - embeddiumplus
-### Обновленные моды
+### Update mods
 - TerraFirmaGreg-Core -> 0.2.7
 - PuzzlesLib -> 8.1.12
-### Удаленные моды
+### Deleted mods
 - dynamiclightsreforged
 
 ## [0.4.1] - 05.01.2024
-### Изменения
+### Changes
 - Исправлена кнопка подключения к официальному серверу.
 - Исправлен рецепт молда для лопаты.
-### Обновленные моды
+### Update mods
 - TerraFirmaGreg-Core -> 0.2.5
 - notenoughanimations -> 1.7.0
 
 ## [0.4.0] - 05.01.2024
-### Изменения
+### Changes
 - Удалены из игры бронзовые паровые машины, тк позволяли скипнуть очень много прогресии TFC.
 - Добавлено очень много квестов для Примитивной эры (пока что без описаний).
 - Добавлены рецепты покраски для бетона, шерсти, кроватей и др.
@@ -323,14 +323,14 @@
 - Полублоки, ступени, стены и другие блоки теперь могут осыпаться.
 - Добавлены бедные и богатые куски руд с их переработкой.
 - И еще множество всего, чего я забыл.
-### Удаленные моды
+### Deleted mods
 - TFShips
 - smallships
 - ad_astra
 - botarium
 - resourcefulconfig
 - resourcefullib
-### Новые моды
+### New Mods
 - AdditionalPlacements
 - EnhancedVisuals
 - PlayerRevive
@@ -341,7 +341,7 @@
 - kubejs-create
 - lootjs
 - starlight
-### Обновленные моды
+### Update mods
 - CreativeCore -> 2.11.18
 - Cucumber -> 7.0.7
 - FirmaCivilization -> 0.1.10
@@ -357,7 +357,7 @@
 - sophisticatedcore -> 0.5.113.524
 
 ## [0.3.0] - 26.12.2023
-### Изменения
+### Changes
 - У руд GTCEu изменен id, это значит, что руда в старых мирах вайпнется, таков путь, зато из-за этого получилось удалить ванильные и кучу других типов руд из GTCEu, что повысит производительность игры.
 - Теперь любая руда из GTCEu отображается на диаграмме переработки.
 - Исправлен редкий краш с SimpeLogin.
@@ -378,14 +378,14 @@
 - Исправлен рецепт примитивной помпы.
 - Возможно, что-то еще, но я об этом забыл.
 - Удалены рецепты деревянных оголовий электро инструментов (снова разрабы грега накакали)
-### Новые моды
+### New Mods
 - FirmaCivilization
 - Steam_Rails
 - ad_astra
 - barrels_2012
 - create
 - Curios
-### Обновленные моды
+### Update mods
 - Cloth-config: 11.1.106 -> 11.1.118
 - Corpse: 1.0.9 -> 1.0.10
 - Exposure: 1.1.1 -> 1.2.1
@@ -407,7 +407,7 @@
 - Eembeddium: 0.2.13 -> 0.2.15
 
 ## [0.2.1] - 2023-12-14
-### Изменения
+### Changes
 - Исправлен баг, когда нельзя было использователь тфк медный и золотой слитки в расплаве металла.
 - Исправлен баг, когда нельзя было класть инструмент из GTCEu в держатель для интструментов.
 - Исправлен баг, когда некоторые шахтерские молоты не могли копать 3х3.
@@ -420,22 +420,22 @@
 - В моде на вид от первого лица, теперь дефолтное состояние, это обычное, если хотите включить, нажмите F6.
 - Удалены рецепты всей механической херни из тфк, ПОТОМУ ЧТО ОНА НЕ РАБОТАЕТ С CREATE, РАЗРАБ TFC ДЕБИЛ.
 - Возможно, что-то еще..
-### Новые моды
+### New Mods
 - FTB Filtering Mod
 - Clumps
 - Get it together drops
 - Let me despawn
-### Обновленные моды
+### Update mods
 - TerraFirmaGreg: 0.0.22 -> 0.0.25
 - CreativeCore: 2.11.13 -> 2.11.15
-### Удаленные моды
+### Deleted mods
 - AdAstra (будем добавлять по мере переписывания)
 - ComputerCraft (будем добавлять по мере переписывания)
 - Create + его аддоны (будем добавлять по мере переписывания)
 - ItemFilters
 
 ## [0.2.0] - 2023-12-14
-### Изменения
+### Changes
 - Исправлены баги, когда некоторые предметы имеющие металл нельзя было нагреть.
 - Исправлен баг, когда некоторые тфк предметы не могли быть нагреты.
 - Переписаны рецепты WaterFlasks.
@@ -483,11 +483,11 @@
 - Исправлено куча рецептов связанных с дроблением кусков руды в порошек.
 - Возможно, что-то еще, все не упомнишь.
 - Добавлен перевод gregtech. (Спасибо SoOvey)
-### Новые моды
+### New Mods
 - FirstPersonView
 - Firmalife
 - ChatImage
-### Обновленные моды
+### Update mods
 - LootJS: KubeJS Addon: 2.10.3 -> 2.10.4
 - Roughly Enough Items Fabric/Forge (REI): 12.0.674 -> 12.0.684-forge
 - FTB Quests Optimizer: 1.1.4 -> 1.1.5
@@ -513,12 +513,12 @@
 - Balm (Forge Edition): 7.1.4 -> 7.2.1
 - TerraFirmaCraft: 3.1.0 -> 3.1.3
 - TerraFirmaGreg: 0.0.13 -> 0.0.22
-### Удаленные моды
+### Deleted mods
 - Macaw AIO
 - ExtendedCrafting
 
 ## [0.1.2] - 2023-11-30
-### Изменения
+### Changes
 - Исправлен баг, когда тфк порошок можно было переплавить как пыль.
 - Улучшено расположение рецептов в скриптах.
 - Исправлен баг, когда кирка шахтера не работала.
@@ -527,7 +527,7 @@
 - Повсеместное улучшение читабильности кода.
 - Добавлено несколько рецептов для дробилки тфк, так как некоторые отсутствовали (связано с порошком).
 - Изменен рецепт LV Machine Casing, теперь он использует пластины красной и синей стали.
-### Обновленные моды
+### Update mods
 - TerraFirmaGreg 0.0.12 -> 0.0.13
 - Cucumber 7.0.4 -> 7.0.6
 - ResourcefulLib 2.1.16 -> 2.1.18
@@ -539,7 +539,7 @@
 - Curios 5.4.3 -> 5.4.4
 
 ## [0.1.1] - 2023-11-29
-### Изменения
+### Changes
 - Исправлен баг, когда выходные слитки могли быть из разных модов (ну или нет, но вроде я тестил и все было хорошо).
 - Скрыты неиспользуемые жидкости, предметы тфк.
 - Скрыто множество ванильных предметов, но еще не всех.
@@ -555,9 +555,9 @@
 - Исправлен баг, когда можно было сделать некоторые нежелательные рецепты из AdAstra.
 - Возвращены рецепты MCW AIO, да они кривые, но я не буду за автора делать всю работу, пусть фиксит свой говно-мод.
 - Исправлен рецепт доменной печи тфк.
-### Новые моды
+### New Mods
 - exposure
-### Обновленные моды
+### Update mods
 - customSkinLoader -> 14.18.3
 - corpse -> 1.0.9
 - Placebo -> 8.6.0
@@ -568,7 +568,7 @@
 - sophisticatedcore -> 0.5.108.504
 
 ## [0.1.0] - 2023-11-27
-### Изменения
+### Changes
 - Исправлен баг, когда можно было дублировать металл через броню, пластины, палки и другое.
 - Исправлен баг, когда обычные железные слитки нельзя было расплавить в железо.
 - Исправлен баг, когда нельзя было сделать коксовую печь, из-за использования обычных элементов из железа, теперь используется кованное железо.
@@ -635,11 +635,11 @@
 - Исправлена отсутствующая текстура covers.
 - Исправлена ошибка, из-за которой empty/equal бочки нельзя было стакать(требуется разместить и разбить затронутые предметы с первого раза).
 - Всегда включать кэш VBO для мульти-превью + добавить опцию конфигурации, чтобы отключить его.
-### Новые моды
+### New Mods
 - smoothboot
 - rubidiumextra
 - TFC AgedAlcohol
-### Обновленные моды
+### Update mods
 - embeddium 0.2.9 -> 0.2.10
 - AmbientSounds_FORGE 5.3.4 -> 5.3.5
 - TFCAstikorCarts 1.1.7.1 -> 1.1.7.2
@@ -654,36 +654,36 @@
 - craftPresence 2.2.4 -> 2.2.5
 - ae2wtlib 15.1.3 -> 15.1.4
 - ftb-essentials 2001.2.1 -> 2001.2.2
-### Удаленные моды
+### Deleted mods
 - almostunified
 
 ## [0.0.9] - 2023-11-21
-### Изменения
+### Changes
 - Исправление и добавление квестов.
 - Снова исправили ошибку с FTB.
-### Новые моды
+### New Mods
 - waterflasks
-### Обновленные моды
+### Update mods
 - terrafirmagreg 0.0.8 -> 0.0.9
 - almostunified 0.7.1 -> 0.7.2
 
 ## [0.0.8] - 2023-11-21
-### Изменения
+### Changes
 - Исправлено отображение версии сборки.
 - MMC пакет мигрирован на Forge 47.2.6
 - TFCAstikorCarts пока отключен, из-за краша при запуске на сервере, сообщено разработчику, если вы играете в локальных мирах, можете его включить.
 - Небольшая кастомизаци меню паузы.
-### Новые моды
+### New Mods
 - FTBQuestsOptimizer
 - TFC ambiental 
 
 ## [0.0.7] - 2023-11-20
-### Изменения
+### Changes
 - Исправлено меню паузы.
 - исправлено требование лицензии для создания пати.
 
 ## [0.0.6] - 2023-11-20
-### Изменения
+### Changes
 - Теперь используется последний фордж 47.2.6 для запуска сборки.
 - Исправлены рецепты связанные с тфк листами металла, теперь все они используют GT вариант пластин.
 - Исправлен баг, когда каменные инстурменты копали быстрей металлических. Также исправлены некоторые проблемы с прочностью инструментов.
@@ -697,7 +697,7 @@
 - Добавлен металл чалкопириту.
 - Удалены бесполезные кнопки в меню паузы.
 - Исправлен mmc пакет.
-### Обновленные моды
+### Update mods
 - AmbientSounds_FORGE 5.3.2 -> 5.3.4
 - Placebo 8.5.6 -> 8.5.8
 - TFCAstikorCarts 1.1.7 -> 1.1.7.1
@@ -706,7 +706,7 @@
 - Sophisticatedbackpacks 3.18.66.941 -> 3.18.68.952
 - Sophisticatedcore 0.5.105.485 -> 0.5.107.496
 - terrafirmagreg 0.0.3 -> 0.0.5
-### Новые моды
+### New Mods
 - InventorySorter
 - FTBQuests
 - FTBLibrary
@@ -721,12 +721,12 @@
 - TerraFirmaShips
 - Small Ships
 - Defaultoptions
-### Удаленные моды
+### Deleted mods
 - Heracles
 - Prometheus
 
 ## [0.0.5] - 2023-11-17
-### Изменения
+### Changes
 - Исправлен баг, когда руда GT не могла быть вскопана киркой GT.
 - Отключены достижения.
 - TFC:
@@ -740,27 +740,27 @@
 - Исправлена ошибка, из-за которой полный блок опавших листьев не сразу превращался в блок листьев.
 - Almost-unified:
 - исправлена совместимость с GregTech Modern для правильной унификации выходных ингредиентов.
-### Обновленные моды
+### Update mods
 - TerraFirmaCraft 3.0.2 -> 3.0.3
 - terrafirmagreg 0.0.2 -> 0.0.3
 - CreativeCore 2.11.9 -> 2.11.10
 - almostunified 0.7.0 -> 0.7.1
 
 ## [0.0.4] - 2023-11-17
-### Изменения
+### Changes
 - Исправлен баг в металлургии. Не переплавляются мелкие куски металла.
 - Исправлены не правильные значения уровня у металлов в ковке.
-### Новые моды
+### New Mods
 - astikorcarts
 - Dynamic Lights Reforged
-### Удаленные моды
+### Deleted mods
 - starlight
 
 ## [0.0.3] - 2023-11-16
-### Изменения
+### Changes
 - Исправление спавна в зиме.
 - Отключен багануты скрипт Kubejs.
 
 ## [0.0.2] - 2023-11-16
-### Изменения
+### Changes
 - Первая бета!
