@@ -19,8 +19,9 @@
 - Players are now displayed on the map as dots. 
 - Fixed oil output from tfc dirt -> biomass recipe (what??)
 - GTCEu bolts now can be used in FirmaCiv boats (Fix for new FirmaCiv ver).
-# Wip for now (required for update)
 - Hided for now nether items.
+- Added recipe for Elytra.
+# Wip for now (required for update)
 - Colorizing of Create valves (in TFC barrels).
 - Colorizing of Create seats (in TFC barrels).
 - Added assembler recipes for a lot of TFC recipes.
