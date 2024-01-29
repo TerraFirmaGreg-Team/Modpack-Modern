@@ -24,9 +24,12 @@
 - Colorizing of Create valves (in TFC barrels).
 - Colorizing of Create seats (in TFC barrels).
 - Heat recipes for many of FirmaCiv items.
+- Added assembler recipes for many of FirmaCiv recipes.
 - Added assembler recipes for many of TFC recipes.
+- Removed recipes for vanilla candles (use tfc candles pls)
+- Added assembler recipes for TFC brick items.
+- Hide EMI repairing recipes, because it's cursed..
 # Wip for now (required for update)
-- Added assembler recipes for many of FirmaCiv items.
 - Vanilla glass bottles has been replaced with TFC bottles.
 - Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
 - The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.

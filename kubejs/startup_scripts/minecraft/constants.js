@@ -515,6 +515,25 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:sentry_armor_trim_smithing_template', 
     'minecraft:ward_armor_trim_smithing_template',
 
+    // Свечи
+    'minecraft:candle', 
+    'minecraft:white_candle', 
+    'minecraft:light_gray_candle', 
+    'minecraft:gray_candle', 
+    'minecraft:black_candle', 
+    'minecraft:brown_candle', 
+    'minecraft:red_candle', 
+    'minecraft:orange_candle', 
+    'minecraft:yellow_candle', 
+    'minecraft:lime_candle', 
+    'minecraft:green_candle', 
+    'minecraft:cyan_candle', 
+    'minecraft:light_blue_candle', 
+    'minecraft:blue_candle', 
+    'minecraft:purple_candle', 
+    'minecraft:magenta_candle', 
+    'minecraft:pink_candle',
+
     // Другое
     'minecraft:calcite', 
     'minecraft:tuff', 

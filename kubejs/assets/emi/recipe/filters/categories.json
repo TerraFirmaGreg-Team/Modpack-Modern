@@ -29,6 +29,9 @@
         },
         {
             "category": "emi:fuel"
+        },
+        {
+            "id": "/emi:/crafting/repairing/[^*]+/"
         }
     ]
 }

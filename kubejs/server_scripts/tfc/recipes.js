@@ -2874,4 +2874,26 @@ const registerTFCRecipes = (event) => {
     
     //#endregion
     
+    //#region Выход: Свечи
+
+    event.recipes.gtceu.chemical_bath(`tfg:tfc/candle_decolor`)             
+        .itemInputs('#tfc:colored_candles')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs('tfc:candle')
+        .duration(300)
+        .EUt(4)
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        
+        event.recipes.gtceu.chemical_bath(`tfg:tfc/${dye}_candle`)             
+            .itemInputs('tfc:candle')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+            .itemOutputs(`tfc:candle/${dye}`)
+            .duration(300)
+            .EUt(4)
+
+    })
+
+    //#endregion
+
 }

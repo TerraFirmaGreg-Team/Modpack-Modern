@@ -2430,8 +2430,17 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Ковры
+    //#region Выход: Свечи
 
+    event.remove({ id: `minecraft:candle` })
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        event.remove({ id: `minecraft:${dye}_candle` })
+    })
+
+    //#endregion
+
+    //#region Выход: Ковры
     
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
