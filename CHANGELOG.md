@@ -29,6 +29,7 @@
 - Removed recipes for vanilla candles (use tfc candles pls)
 - Added assembler recipes for TFC brick items.
 - Hide EMI repairing recipes, because it's cursed..
+- Candle colorization recipes in gtceu assembler
 # Wip for now (required for update)
 - Vanilla glass bottles has been replaced with TFC bottles.
 - Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
