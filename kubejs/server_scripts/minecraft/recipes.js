@@ -2587,6 +2587,24 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Якорь возрождения
+
+    event.remove({ id: 'minecraft:respawn_anchor' })
+
+    //#endregion
+
+    //#region Выход: Элитра
+
+    // Ну и херь я придумал
+    event.recipes.gtceu.assembler('detector_rail')             
+        .itemInputs('6x #forge:plates/polyvinyl_butyral', '2x #forge:rings/titanium', '2x #forge:rods/titanium', '4x #forge:single_cables/aluminium')
+        .circuit(32)
+        .itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Божественные крылья\",\"italic\":true}'}}"))
+        .duration(1600)
+        .EUt(666)
+
+    //#endregion
+
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
 
     //event.smelting('tfc:metal/ingot/copper', 'minecraft:raw_copper')

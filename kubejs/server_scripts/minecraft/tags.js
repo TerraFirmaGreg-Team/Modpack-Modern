@@ -6,6 +6,10 @@ const registerMinecraftItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
+    global.MINECRAFT_HIDED_ITEMS.forEach(item => {
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
+
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
 }

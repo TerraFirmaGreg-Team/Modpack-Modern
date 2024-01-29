@@ -1,0 +1,62 @@
+{
+  "format_version_do_not_edit": 2,
+  "general": {
+    "mod_enabled": true,
+    "controls": {
+      "switch_roll_and_yaw": false,
+      "invert_pitch": false,
+      "momentum_based_mouse": false,
+      "momentum_mouse_deadzone": 0.2,
+      "show_momentum_widget": true,
+      "activation_behaviour": "VANILLA",
+      "disable_when_submerged": true
+    },
+    "hud": {
+      "show_horizon": false
+    },
+    "banking": {
+      "enable_banking": true,
+      "banking_strength": 20.0,
+      "simulate_control_surface_efficacy": false
+    },
+    "thrust": {
+      "enable_thrust": false,
+      "max_thrust": 2.0,
+      "thrust_acceleration": 0.1,
+      "thrust_particles": true
+    },
+    "misc": {
+      "enable_easter_eggs": true
+    }
+  },
+  "sensitivity": {
+    "smoothing": {
+      "smoothing_enabled": true,
+      "smoothing_pitch": 1.0,
+      "smoothing_yaw": 0.4,
+      "smoothing_roll": 1.0
+    },
+    "camera_smoothing": {
+      "pitch": 1.0,
+      "yaw": 2.5,
+      "roll": 1.0
+    },
+    "desktop": {
+      "pitch": 1.0,
+      "yaw": 0.4,
+      "roll": 1.0
+    },
+    "controller": {
+      "pitch": 1.0,
+      "yaw": 0.4,
+      "roll": 1.0
+    }
+  },
+  "advanced": {
+    "banking_x_formula": "sin($roll * TO_RAD) * cos($pitch * TO_RAD) * 10 * $banking_strength",
+    "banking_y_formula": "(-1 + cos($roll * TO_RAD)) * cos($pitch * TO_RAD) * 10 * $banking_strength",
+    "elevator_efficacy_formula": "$velocity_x * $look_x + $velocity_y * $look_y + $velocity_z * $look_z",
+    "aileron_efficacy_formula": "$velocity_x * $look_x + $velocity_y * $look_y + $velocity_z * $look_z",
+    "rudder_efficacy_formula": "$velocity_x * $look_x + $velocity_y * $look_y + $velocity_z * $look_z"
+  }
+}

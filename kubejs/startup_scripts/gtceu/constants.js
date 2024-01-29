@@ -43,3 +43,9 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_leaves', 
     'gtceu:rubber_planks',
 ];
+
+global.GTCEU_HIDED_ITEMS = [
+    'gtceu:netherrack_dust', 
+    'gtceu:small_netherrack_dust', 
+    'gtceu:tiny_netherrack_dust'
+];

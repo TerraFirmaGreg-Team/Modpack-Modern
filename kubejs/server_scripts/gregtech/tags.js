@@ -8,6 +8,10 @@ const registerGTCEUItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
+    global.GTCEU_HIDED_ITEMS.forEach(item => {
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
+
     // Добавление тега EMI для скрытия всех руд
     event.add('c:hidden_from_recipe_viewers', '#forge:ores')
 
