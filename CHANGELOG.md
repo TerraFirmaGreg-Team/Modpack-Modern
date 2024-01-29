@@ -31,6 +31,7 @@
 - Hide EMI repairing recipes, because it's cursed..
 - Candle colorization recipes in gtceu assembler
 # Wip for now (required for update)
+- MoreRed cable colorization via gtceu chemical bath
 - Vanilla glass bottles has been replaced with TFC bottles.
 - Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
 - The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.
