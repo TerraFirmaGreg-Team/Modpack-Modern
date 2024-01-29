@@ -21,11 +21,12 @@
 - GTCEu bolts now can be used in FirmaCiv boats (Fix for new FirmaCiv ver).
 - Hided for now nether items.
 - Added recipe for Elytra.
-# Wip for now (required for update)
 - Colorizing of Create valves (in TFC barrels).
 - Colorizing of Create seats (in TFC barrels).
-- Added assembler recipes for a lot of TFC recipes.
-- Added assembler recipes for a lot of FirmaCiv items.
+- Heat recipes for many of FirmaCiv items.
+- Added assembler recipes for many of TFC recipes.
+# Wip for now (required for update)
+- Added assembler recipes for many of FirmaCiv items.
 - Vanilla glass bottles has been replaced with TFC bottles.
 - Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
 - The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.

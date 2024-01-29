@@ -2551,7 +2551,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Веревка
 
-    event.remove({ id: 'minecraft:lead' })
     event.remove({ id: 'gtceu:assembler/lead' })
 
     event.shaped('minecraft:lead', [
@@ -2561,7 +2560,7 @@ const registerMinecraftRecipes = (event) => {
     ], {
         A: '#forge:string',
         B: '#forge:rings/wrought_iron'
-    })
+    }).id('minecraft:lead')
 
     //#endregion
 
@@ -2596,7 +2595,7 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Элитра
 
     // Ну и херь я придумал
-    event.recipes.gtceu.assembler('detector_rail')             
+    event.recipes.gtceu.assembler('tfg:elytra')             
         .itemInputs('6x #forge:plates/polyvinyl_butyral', '2x #forge:rings/titanium', '2x #forge:rods/titanium', '4x #forge:single_cables/aluminium')
         .circuit(32)
         .itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Божественные крылья\",\"italic\":true}'}}"))
