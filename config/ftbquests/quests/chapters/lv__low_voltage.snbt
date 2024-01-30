@@ -1198,6 +1198,7 @@
 			tasks: [{
 				id: "28CFFA0F7A33E02F"
 				item: "gtceu:empty_spray_can"
+				match_nbt: false
 				type: "item"
 			}]
 			title: "Spray Can"
@@ -1368,28 +1369,13 @@
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "1A77CA35F054F988"
-			rewards: [{
-				id: "147345CEB55ECB69"
-				item: {
-					Count: 1b
-					id: "gtceu:fluid_cell"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "gtceu:oxygen"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "Achtually, it's Dioxygen..."
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:oxygen"
-				id: "70F00C67C9698A78"
-				type: "fluid"
+				id: "4299C881ED57472D"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
 			}]
 			title: "Breath of Fresh Oxygen"
 			x: -1.125d
@@ -1406,27 +1392,12 @@
 			]
 			icon: "gtceu:glue_bucket"
 			id: "0EAC071414AEC07E"
-			rewards: [{
-				id: "0BDDB03645B6D2A1"
-				item: {
-					Count: 1b
-					id: "gtceu:fluid_cell"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "gtceu:glue"
-						}
-					}
-				}
-				type: "item"
-			}]
 			size: 0.75d
 			subtitle: "Extractor? I hardly knew 'er!"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:glue"
-				id: "3DD156ECA99FFA11"
-				type: "fluid"
+				id: "204FF37CA2846468"
+				item: "gtceu:glue_bucket"
+				type: "item"
 			}]
 			title: "Glued"
 			x: 0.0d

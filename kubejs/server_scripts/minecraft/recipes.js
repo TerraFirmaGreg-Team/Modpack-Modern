@@ -2565,7 +2565,7 @@ const registerMinecraftRecipes = (event) => {
     event.shaped('minecraft:lead', [
         ' AA', 
         ' BA',
-        'A   '  
+        'A  '  
     ], {
         A: '#forge:string',
         B: '#forge:rings/wrought_iron'

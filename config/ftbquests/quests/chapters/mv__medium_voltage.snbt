@@ -138,10 +138,9 @@
 			size: 0.75d
 			subtitle: "One of many hydrocarbons"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:ethylene"
-				id: "3A731EA79DC53FF3"
-				type: "fluid"
+				id: "286ED57C12F41DF2"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
 			}]
 			title: "Ethylene"
 			x: 1.125d
@@ -165,10 +164,9 @@
 			size: 0.66d
 			subtitle: "Yo, wait - that's alcohol!"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:ethanol"
-				id: "32A6A0A1AD2420B5"
-				type: "fluid"
+				id: "65AD613CEB9435CB"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
 			}]
 			title: "Ethanol"
 			x: 0.0d
@@ -190,16 +188,14 @@
 			size: 0.66d
 			tasks: [
 				{
-					amount: 1000L
-					fluid: "gtceu:sulfuric_naphtha"
-					id: "52B84DA79A608865"
-					type: "fluid"
+					id: "64118ED7C2393AA4"
+					item: "gtceu:naphtha_bucket"
+					type: "item"
 				}
 				{
-					amount: 1000L
-					fluid: "gtceu:naphtha"
-					id: "688B65D39AB8C533"
-					type: "fluid"
+					id: "2CDC4272BD17EB7D"
+					item: "gtceu:sulfuric_naphtha_bucket"
+					type: "item"
 				}
 			]
 			title: "Naphtha"
@@ -224,10 +220,9 @@
 			size: 0.66d
 			subtitle: "Fuel and oil cracking can get complicated..."
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:severely_steam_cracked_naphtha"
-				id: "7CC9EB9D859AC860"
-				type: "fluid"
+				id: "11731C5DF7FBC8DF"
+				item: "gtceu:severely_steam_cracked_naphtha_bucket"
+				type: "item"
 			}]
 			title: "Fuel Cracking"
 			x: 0.0d
@@ -1322,16 +1317,14 @@
 			subtitle: "Let's etch some Copper off Circuit Boards!"
 			tasks: [
 				{
-					amount: 1000L
-					fluid: "gtceu:sodium_persulfate"
-					id: "4DB5BD79EF3A89CD"
-					type: "fluid"
+					id: "78987D2587319508"
+					item: "gtceu:iron_iii_chloride_bucket"
+					type: "item"
 				}
 				{
-					amount: 1000L
-					fluid: "gtceu:iron_iii_chloride"
-					id: "1A3BFA0BCD0FE977"
-					type: "fluid"
+					id: "33509BA5416BC14F"
+					item: "gtceu:sodium_persulfate_bucket"
+					type: "item"
 				}
 			]
 			title: "Sodium Persulfate / Iron III Chloride"
@@ -1360,10 +1353,9 @@
 			shape: "square"
 			size: 0.75d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:sulfuric_acid"
-				id: "3A6BB63D057CB4C1"
-				type: "fluid"
+				id: "6A7372203A20D7CA"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
 			}]
 			title: "Sulfuric Acid"
 			x: 1.125d
@@ -1391,10 +1383,9 @@
 			id: "64CACABB48635904"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:hydrochloric_acid"
-				id: "0E914778748C954B"
-				type: "fluid"
+				id: "447B1F9FF3A2D837"
+				item: "gtceu:hydrochloric_acid_bucket"
+				type: "item"
 			}]
 			title: "Hydrochloric Acid"
 			x: 3.375d
@@ -1593,43 +1584,11 @@
 			id: "0774EC59CD3DD7A5"
 			size: 0.66d
 			subtitle: "Ever mined into an Oil deposit?"
-			tasks: [
-				{
-					id: "21FF6E45F9AC5E76"
-					item: {
-						Count: 1b
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:lv_pump"
-								}
-								{
-									Count: 1b
-									id: "gtceu:mv_pump"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hv_pump"
-								}
-								{
-									Count: 1b
-									id: "gtceu:ev_pump"
-								}
-							]
-						}
-					}
-					title: "Any Pump will do"
-					type: "item"
-				}
-				{
-					amount: 32000L
-					fluid: "gtceu:oil"
-					id: "1DAA9C9BBD9118E3"
-					type: "fluid"
-				}
-			]
+			tasks: [{
+				id: "05B59556092AC5EB"
+				item: "gtceu:oil_bucket"
+				type: "item"
+			}]
 			title: "US Simulator"
 			x: -1.125d
 			y: -0.75d
@@ -1649,7 +1608,7 @@
 				""
 				"Oilsands are a &6great starting point&r - they'll tide you over until you unlock Fluid Drilling Rigs."
 			]
-			icon: "gtceu:oilsands_ore"
+			icon: "gtceu:marble_oilsands_ore"
 			id: "575B07D390D9D079"
 			size: 0.66d
 			tasks: [
@@ -1660,10 +1619,9 @@
 					type: "item"
 				}
 				{
-					amount: 16000L
-					fluid: "gtceu:oil"
-					id: "0FBA08831B6ACC88"
-					type: "fluid"
+					id: "18DBDA6D5021E9FA"
+					item: "gtceu:oil_bucket"
+					type: "item"
 				}
 			]
 			title: "America Simulator"
@@ -1749,22 +1707,19 @@
 			subtitle: "Whoever smelt it..."
 			tasks: [
 				{
-					amount: 8000L
-					fluid: "gtceu:refinery_gas"
-					id: "38CB42385A6EC17A"
-					type: "fluid"
+					id: "55FA956EF00E68C9"
+					item: "gtceu:lpg_bucket"
+					type: "item"
 				}
 				{
-					amount: 32000L
-					fluid: "gtceu:methane"
-					id: "4AB130A15CFC7A56"
-					type: "fluid"
+					id: "0669F66C86C8D31B"
+					item: "gtceu:methane_bucket"
+					type: "item"
 				}
 				{
-					amount: 32000L
-					fluid: "gtceu:lpg"
-					id: "79FEB48F1A4555C4"
-					type: "fluid"
+					id: "4B82683A47C13A07"
+					item: "gtceu:refinery_gas_bucket"
+					type: "item"
 				}
 			]
 			title: "The Church of Natural Farts"
@@ -1790,10 +1745,9 @@
 			id: "00E1A728E6F6D6A0"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:benzene"
-				id: "7A452201C64FBB89"
-				type: "fluid"
+				id: "63594021204B976A"
+				item: "gtceu:benzene_bucket"
+				type: "item"
 			}]
 			title: "The Church of Benzene"
 			x: -2.25d
@@ -1815,16 +1769,14 @@
 			size: 0.66d
 			tasks: [
 				{
-					amount: 1000L
-					fluid: "gtceu:sulfuric_light_fuel"
-					id: "236B5EB787DBCE64"
-					type: "fluid"
+					id: "694F46D263E7A235"
+					item: "gtceu:light_fuel_bucket"
+					type: "item"
 				}
 				{
-					amount: 1000L
-					fluid: "gtceu:light_fuel"
-					id: "4ED6B22C7B662325"
-					type: "fluid"
+					id: "7FE38BAB7B545EF9"
+					item: "gtceu:sulfuric_light_fuel_bucket"
+					type: "item"
 				}
 			]
 			title: "Light Fuel"
@@ -1855,10 +1807,9 @@
 			size: 0.66d
 			subtitle: "Mother, how is diesel made?"
 			tasks: [{
-				amount: 30000L
-				fluid: "gtceu:diesel"
-				id: "24373463B7296EE0"
-				type: "fluid"
+				id: "49A059992EE21C9A"
+				item: "gtceu:diesel_bucket"
+				type: "item"
 			}]
 			title: "The Church of Diesel"
 			x: -2.25d

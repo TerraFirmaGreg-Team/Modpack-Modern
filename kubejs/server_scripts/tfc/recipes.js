@@ -1535,6 +1535,14 @@ const registerTFCRecipes = (event) => {
     //#region Камень
 
     global.TFC_STONE_TYPES.forEach(stone => {
+        
+        // Кирпич (предмет)
+        event.recipes.gtceu.assembler(`tfg:tfc/${stone}_loose_to_brick`)             
+            .itemInputs(`tfc:rock/loose/${stone}`)
+            .itemOutputs(`tfc:brick/${stone}`)
+            .duration(40)
+            .EUt(8)
+
         //#region Сырой камень
 
         // Сырой камень -> Сырой камень
@@ -2856,6 +2864,70 @@ const registerTFCRecipes = (event) => {
         .duration(800)
         .EUt(8)
 
+    // Brass Mechanism
+    event.recipes.gtceu.assembler('tfg:tfc/brass_mechanism')             
+        .itemInputs('#forge:plates/brass')
+        .circuit(10)
+        .itemOutputs('tfc:brass_mechanisms')
+        .duration(100)
+        .EUt(4)
+
+    // 1x Small SheepSkin -> 1x Wool
+    event.recipes.gtceu.assembler('tfg:tfc/wool_1')             
+        .itemInputs('tfc:small_sheepskin_hide')
+        .itemOutputs('tfc:wool')
+        .duration(100)
+        .EUt(4)
+
+    // 1x Medium SheepSkin -> 1x Wool
+    event.recipes.gtceu.assembler('tfg:tfc/wool_2')             
+        .itemInputs('tfc:medium_sheepskin_hide')
+        .itemOutputs('2x tfc:wool')
+        .duration(100)
+        .EUt(4)
+
+    // 1x Large SheepSkin -> 1x Wool
+    event.recipes.gtceu.assembler('tfg:tfc/wool_3')             
+        .itemInputs('tfc:large_sheepskin_hide')
+        .itemOutputs('3x tfc:wool')
+        .duration(100)
+        .EUt(4)
+
+    // Wool Yarn
+    event.recipes.gtceu.wiremill('tfg:tfc/wool_yarn')             
+        .itemInputs('tfc:wool')
+        .itemOutputs('8x tfc:wool_yarn')
+        .duration(100)
+        .EUt(4)
+
+    // Burlap Cloth
+    event.recipes.gtceu.assembler('tfg:tfc/burlap_cloth')             
+        .itemInputs('12x tfc:jute_fiber')
+        .itemOutputs('tfc:burlap_cloth')
+        .duration(100)
+        .EUt(4)
+
+    // Silk Cloth
+    event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')             
+        .itemInputs('24x minecraft:string')
+        .itemOutputs('tfc:silk_cloth')
+        .duration(100)
+        .EUt(4)
+
+    // Silk Cloth
+    event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')             
+        .itemInputs('16x tfc:wool_yarn')
+        .itemOutputs('tfc:wool_cloth')
+        .duration(100)
+        .EUt(4)
+
+    // Jute Fiber
+    generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+
+    // Soda Ash
+    event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
+    event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
+
     //#region Обрушения
 
     event.recipes.tfc.collapse('#tfg:rock_slabs').id('tfg:collapse/rock_slabs')
@@ -2897,3 +2969,13 @@ const registerTFCRecipes = (event) => {
     //#endregion
 
 }
+
+/*
+
+event.recipes.gtceu.assembler('')             
+        .itemInputs('')
+        .itemOutputs('')
+        .duration(100)
+        .EUt(4)
+
+*/

@@ -1386,16 +1386,19 @@ const registerGTCEURecipes = (event) => {
 
             if (material.hasProperty(PropertyKey.INGOT))
             {
-                // Слиток -> Стержень
-                event.recipes.createPressing(plateStack.withChance(0.97), ingotStack)
+                if (!plateStack.isEmpty()) {
+                    // Слиток -> Стержень
+                    event.recipes.createPressing(plateStack.withChance(0.97), ingotStack)
                     .id(`tfg:pressing/${material.getName()}_plate`)
 
-                if (!blockStack.isEmpty()) {
+                    if (!blockStack.isEmpty()) {
                     // 9х Слиток -> Блок
                     event.recipes.createCompacting(blockStack, ingotStack.withCount(9))
                         .heated()
                         .id(`tfg:compacting/${material.getName()}_block`)
+                    }
                 }
+                
                 
             }
             else
@@ -1412,19 +1415,19 @@ const registerGTCEURecipes = (event) => {
         // Прокатка стержней
         if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != GTMaterials.Wood)
         {
-            if (material.hasProperty(PropertyKey.INGOT))
-            {
+            let rodStack = ChemicalHelper.get(TagPrefix.rod, material, 2)
+
+            if (!ingotStack.isEmpty() && !rodStack.isEmpty()) {
+
                 event.custom({
                     type: "createaddition:rolling",
-                    input: {
-                        'tag': `forge:ingots/${material.getName()}`
-                    },
-                    result: {
-                        'item': `gtceu:${material.getName()}_rod`,
-                        'count': 2
-                    }
+                    input: ingotStack.toJson(),
+                    result: rodStack.toJson()
                 }).id(`tfg:rolling/${material.getName()}_rod`)
+
             }
+
+            
         }
 
         

@@ -1,6 +1,13 @@
 # Changelog
 
-## [0.7.0]
+## [0.7.0] - ?
+### Changes
+# Wip for now (required for update)
+- Vanilla glass bottles has been replaced with TFC bottles.
+- Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
+- The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.
+
+## [0.6.9] - ?
 ### Changes
 - The option to disable coordinates and some information has been re-enabled because firmaCiv has finally introduced items for tracking latitude and longitude, which is intended for determining one's own location. You can still view your coordinates through the mini-map, but this functionality will be disabled in the future when Antique Atlas and Game Stages are added.
 - BetterF3 has been slightly configured.
@@ -29,12 +36,9 @@
 - Removed recipes for vanilla candles (use tfc candles pls)
 - Added assembler recipes for TFC brick items.
 - Hide EMI repairing recipes, because it's cursed..
-- Candle colorization recipes in gtceu assembler
-# Wip for now (required for update)
-- MoreRed cable colorization via gtceu chemical bath
-- Vanilla glass bottles has been replaced with TFC bottles.
-- Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
-- The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.
+- Candle colorization recipes in gtceu assembler.
+- MoreRed cable colorization via gtceu chemical bath.
+- Try to fix crash - create pressing.
 
 ## [0.6.8] - 24.01.2024
 ### Changes

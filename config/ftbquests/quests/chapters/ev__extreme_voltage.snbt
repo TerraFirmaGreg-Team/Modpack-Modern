@@ -1152,23 +1152,14 @@
 			subtitle: "200 seconds?! WHAT?!"
 			tasks: [
 				{
-					count: 8L
-					id: "767C47FF351DAE3B"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/plutonium"
-						}
-					}
-					title: "Plutonium Ingot"
+					id: "4DBCC15F0E1C0EB8"
+					item: "gtceu:plutonium_ingot"
 					type: "item"
 				}
 				{
-					amount: 1000L
-					fluid: "gtceu:radon"
-					id: "1C084B65DE6E73E8"
-					type: "fluid"
+					id: "59404B44C72FECD8"
+					item: "gtceu:radon_bucket"
+					type: "item"
 				}
 			]
 			title: "Radon"
@@ -1229,10 +1220,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:epichlorohydrin"
-				id: "6F7D0A5B17A27928"
-				type: "fluid"
+				id: "4D0ABF930ECC4D7B"
+				item: "gtceu:epichlorohydrin_bucket"
+				type: "item"
 			}]
 			title: "Epichlorohydrin"
 			x: 2.25d
@@ -1267,10 +1257,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:phenol"
-				id: "6255085946669894"
-				type: "fluid"
+				id: "7CB029DE17D67966"
+				item: "gtceu:phenol_bucket"
+				type: "item"
 			}]
 			title: "Phenol"
 			x: 2.25d
@@ -1293,10 +1282,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:acetone"
-				id: "1E3E5800E5C37353"
-				type: "fluid"
+				id: "6F0BFB3747D3FDFB"
+				item: "gtceu:acetone_bucket"
+				type: "item"
 			}]
 			title: "Acetone"
 			x: 2.25d
@@ -1396,10 +1384,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:gasoline"
-				id: "020DE8D27206C260"
-				type: "fluid"
+				id: "23F81DED8B4A515E"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
 			}]
 			title: "Gasoline"
 			x: 1.125d
@@ -1418,10 +1405,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:high_octane_gasoline"
-				id: "19A221C5CEFBFBFD"
-				type: "fluid"
+				id: "56691AAE2579FB70"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
 			}]
 			title: "High Octane Gasoline"
 			x: 0.0d
@@ -1478,28 +1464,24 @@
 			size: 0.66d
 			tasks: [
 				{
-					amount: 1000000L
-					fluid: "gtceu:oxygen"
-					id: "1EE14254AE07512F"
-					type: "fluid"
+					id: "3860FB71F8A0E99F"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
 				}
 				{
-					amount: 1000000L
-					fluid: "gtceu:nitrogen"
-					id: "5B8A8FE5DEFE0671"
-					type: "fluid"
+					id: "5A8C43467303CECE"
+					item: "gtceu:nitrogen_bucket"
+					type: "item"
 				}
 				{
-					amount: 64000L
-					fluid: "gtceu:helium"
-					id: "3ED5E362F1E5D701"
-					type: "fluid"
+					id: "58265BAC5C3F68C6"
+					item: "gtceu:helium_bucket"
+					type: "item"
 				}
 				{
-					amount: 32000L
-					fluid: "gtceu:argon"
-					id: "67F58B2FC8210270"
-					type: "fluid"
+					id: "6091B9958BDE790E"
+					item: "gtceu:argon_bucket"
+					type: "item"
 				}
 			]
 			title: "True Distillation: Air"
@@ -1550,28 +1532,24 @@
 			size: 0.66d
 			tasks: [
 				{
-					amount: 40000L
-					fluid: "gtceu:benzene"
-					id: "6584A238101E369D"
-					type: "fluid"
+					id: "1CE89B320D8F213B"
+					item: "gtceu:benzene_bucket"
+					type: "item"
 				}
 				{
-					amount: 10000L
-					fluid: "gtceu:butadiene"
-					id: "1698E9791C31C10E"
-					type: "fluid"
+					id: "1704DE13A0C749B2"
+					item: "gtceu:butadiene_bucket"
+					type: "item"
 				}
 				{
-					amount: 64000L
-					fluid: "gtceu:ethylene"
-					id: "4274E80169CCBDE5"
-					type: "fluid"
+					id: "6731CE7073F05A40"
+					item: "gtceu:ethylene_bucket"
+					type: "item"
 				}
 				{
-					amount: 64000L
-					fluid: "gtceu:methane"
-					id: "3CB67401C15B84A7"
-					type: "fluid"
+					id: "12941D463CBE4704"
+					item: "gtceu:methane_bucket"
+					type: "item"
 				}
 			]
 			title: "True Distillation: Fuel"

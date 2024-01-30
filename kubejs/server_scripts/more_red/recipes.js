@@ -248,4 +248,26 @@ const registerMoreRedRecipes = (event) => {
         .itemOutputs('morered:bitwise_xnor_gate')
         .duration(100)
         .EUt(16)
+
+    //#region Выход: Крашеные провода
+
+    event.recipes.gtceu.chemical_bath(`tfg:morered/wire_decolor`)             
+        .itemInputs('#morered:colored_network_cables')
+        .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
+        .itemOutputs('morered:red_alloy_wire')
+        .duration(300)
+        .EUt(4)
+
+    global.MINECRAFT_DYE_NAMES.forEach(dye => {
+        
+        event.recipes.gtceu.chemical_bath(`tfg:morered/${dye}_wire`)             
+            .itemInputs('morered:red_alloy_wire')
+            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .itemOutputs(`morered:${dye}_network_cable`)
+            .duration(300)
+            .EUt(4)
+
+    })
+
+    //#endregion
 }
