@@ -57,7 +57,7 @@ jobs:
           fi
 
       - name: Changelog Parser
-        id: changelog_ru
+        id: changelog
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
@@ -242,9 +242,7 @@ jobs:
     #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
     #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mrd.zip
     #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-    #         changelog: |
-    #           ${{ needs.modpack-info.outputs.changelog_ru }}
-    #           ${{ needs.modpack-info.outputs.changelog_en }}
+    #         changelog: ${{ needs.modpack-info.outputs.changelog }}
     #         changelog-format: markdown
     #         game-version: ${{ needs.modpack-info.outputs.mc_version }}
     #         display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
