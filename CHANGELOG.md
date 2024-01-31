@@ -1,13 +1,12 @@
 # Changelog
 
-## [0.7.0] - ?
+## [Unreleased]
 ### Changes
-# Wip for now (required for update)
 - Vanilla glass bottles has been replaced with TFC bottles.
 - Recipes for plates, sticks, and others through Create mechanisms have been redistributed once again (an attempt to fix a crash).
 - The primitive pump from GTCEu has been removed, so at the beginning of the game, you will have to pump water using a pump from Create.
 
-## [0.6.9] - ?
+## [0.6.9] - 31.01.2024
 ### Changes
 - The option to disable coordinates and some information has been re-enabled because firmaCiv has finally introduced items for tracking latitude and longitude, which is intended for determining one's own location. You can still view your coordinates through the mini-map, but this functionality will be disabled in the future when Antique Atlas and Game Stages are added.
 - BetterF3 has been slightly configured.
