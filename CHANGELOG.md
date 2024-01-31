@@ -32,6 +32,8 @@
 - Candle colorization recipes in gtceu assembler.
 - MoreRed cable colorization via gtceu chemical bath.
 - Try to fix crash - create pressing.
+- Removed *NewYear* logo from drp.
+- Removed fix for xaero-map, because tfc grass colors has been fixed in xaero.
 
 ## [0.6.8] - 24.01.2024
 ### Changes

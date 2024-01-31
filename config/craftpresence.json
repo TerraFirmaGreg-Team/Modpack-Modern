@@ -14,7 +14,7 @@
     "detectDimensionData": true,
     "detectWorldData": true,
     "clientId": "1182610212121743470",
-    "defaultIcon": "logo_new_year",
+    "defaultIcon": "tfg-icon",
     "enableJoinRequests": false,
     "partyPrivacyLevel": 1,
     "preferredClientLevel": 3,
@@ -22,7 +22,7 @@
     "autoRegister": false
   },
   "biomeSettings": {
-    "fallbackBiomeIcon": "logo_new_year",
+    "fallbackBiomeIcon": "tfg-icon",
     "biomeData": {
       "default": {
         "textOverride": "Playing in {biome.name}"
@@ -30,7 +30,7 @@
     }
   },
   "dimensionSettings": {
-    "fallbackDimensionIcon": "logo_new_year",
+    "fallbackDimensionIcon": "tfg-icon",
     "dimensionData": {
       "default": {
         "textOverride": "In the {dimension.name}"
@@ -38,7 +38,7 @@
     }
   },
   "serverSettings": {
-    "fallbackServerIcon": "logo_new_year",
+    "fallbackServerIcon": "tfg-icon",
     "fallbackServerName": "Minecraft Server",
     "fallbackServerMotd": "A Minecraft Server",
     "serverData": {
@@ -71,7 +71,7 @@
     "refreshRate": 2,
     "allowPlaceholderPreviews": false,
     "guiSettings": {
-      "fallbackGuiIcon": "logo_new_year",
+      "fallbackGuiIcon": "tfg-icon",
       "guiData": {
         "default": {
           "textOverride": "In {screen.name}"
@@ -82,7 +82,7 @@
       "default": "Holding {item.message.holding}"
     },
     "entitySettings": {
-      "fallbackEntityIcon": "logo_new_year",
+      "fallbackEntityIcon": "tfg-icon",
       "targetData": {
         "default": {
           "textOverride": "Targeting {entity.target.name}"
@@ -148,9 +148,10 @@
     },
     "languageId": "en_us",
     "stripTranslationColors": false,
+    "stripTranslationFormatting": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
-    "configKeyCode": -1
+    "configKeyCode": 48
   },
   "displaySettings": {
     "presenceData": {
@@ -174,7 +175,8 @@
     "dynamicIcons": {
       "default": "https://via.placeholder.com/256.png",
       "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51",
-      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f"
+      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f",
+      "modern.terrafirmagreg.su": "https://api.mcsrvstat.us/icon/modern.terrafirmagreg.su"
     },
     "dynamicVariables": {
       "default": "Example Text",
