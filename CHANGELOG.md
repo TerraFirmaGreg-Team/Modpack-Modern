@@ -34,6 +34,39 @@
 - Try to fix crash - create pressing.
 - Removed *NewYear* logo from drp.
 - Removed fix for xaero-map, because tfc grass colors has been fixed in xaero.
+### Update mods
+- AmbientSounds -> 5.3.8
+- CC-tweaked -> 1.109.4
+- Chat_heads -> 0.10.31
+- CraftPresence -> 2.3.0
+- Createaddition -> 1.2.2
+- CreativeCore -> 2.11.23
+- Cupboard -> 2.3
+- Curios -> 5.6.1
+- Embeddium -> 0.3.0
+- FirmaCivilization -> 0.2.2
+- Firstperson -> 2.3.2
+- GTCEu -> 1.1.2.a
+- Kubejs -> 2001.6.4-build.130
+- Moonlight -> 2.9.7
+- PuzzlesLib -> 8.1.15
+- TerraFirmaCraft -> 3.1.6
+- TerraFirmaGreg-Core -> 0.4.5
+- Textrues_embeddium_options -> 0.1.4
+- Voicechat -> 2.5.1
+- Xaeros_Minimap -> 23.9.7
+- XaerosWorldMap -> 1.37.7
+### New Mods
+- CustomSkinLoader
+- Do_a_barrel_roll
+- EMI
+- JEI
+- Chisels-and-bits
+### Deleted mods
+- Entityculling
+- EverlastingSkins
+- REIPluginCompatibilities
+- RoughlyEnoughItems
 
 ## [0.6.8] - 24.01.2024
 ### Changes
