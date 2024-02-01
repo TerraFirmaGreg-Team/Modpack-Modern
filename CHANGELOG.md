@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.6.10] - 01.02.2024
+### Update mods
+- Embeddium -> 0.2.18
+- Textrues_embeddium_options -> 0.1.3
+
 ## [0.6.9] - 31.01.2024
 ### Changes
 - The option to disable coordinates and some information has been re-enabled because firmaCiv has finally introduced items for tracking latitude and longitude, which is intended for determining one's own location. You can still view your coordinates through the mini-map, but this functionality will be disabled in the future when Antique Atlas and Game Stages are added.
