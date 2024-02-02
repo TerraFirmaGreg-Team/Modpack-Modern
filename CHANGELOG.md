@@ -1,7 +1,11 @@
 # Changelog
 
+## [0.6.11] - 03.02.2024
+### Changes
+- Fix smelting recipe of rich raw ores.
+
 ## [0.6.10] - 01.02.2024
-### Update mods
+### Updated mods
 - Embeddium -> 0.2.18
 - Textrues_embeddium_options -> 0.1.3
 
@@ -39,7 +43,7 @@
 - Try to fix crash - create pressing.
 - Removed *NewYear* logo from drp.
 - Removed fix for xaero-map, because tfc grass colors has been fixed in xaero.
-### Update mods
+### Updated mods
 - AmbientSounds -> 5.3.8
 - CC-tweaked -> 1.109.4
 - Chat_heads -> 0.10.31
@@ -109,7 +113,7 @@
 - Сhisels-and-bits
 - Сonnectivity
 - LocalizedChat
-### Update mods
+### Updated mods
 - AmbientSounds -> 5.3.7
 - Embeddiumplus -> 1.2.3
 - FirmaCivilization -> 0.2.1
@@ -135,7 +139,7 @@
 ### Changes
 - Fixed a crash when opening inventory on servers.
 - Fixed raw stone blocks in tool recipes.
-### Update mods
+### Updated mods
 - TerraFirmaGreg -> 0.4.2
 
 ## [0.6.4] - 20.01.2024
