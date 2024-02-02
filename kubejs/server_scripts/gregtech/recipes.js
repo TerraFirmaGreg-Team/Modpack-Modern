@@ -1302,7 +1302,7 @@ const registerGTCEURecipes = (event) => {
         {
             let poorRawStack = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
             let normalRawStack = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
-            let richRawStack = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
+            let richRawStack = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
 
             let crushedOreStack = ChemicalHelper.get(TagPrefix.crushed, material, 1)
             let purifiedOreStack = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
