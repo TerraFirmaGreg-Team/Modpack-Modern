@@ -900,12 +900,11 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({ id: 'ae2:entropy/cool/grass_block_dirt' })
 
-    event.recipes.gtceu.centrifuge('dirt_from_bio_chaff')             
+    event.recipes.gtceu.macerator('dirt_from_bio_chaff')             
         .itemInputs('gtceu:bio_chaff')
         .itemOutputs('tfc:dirt/loam')
         .duration(300)
         .EUt(4)
-
 
     //#endregion
 
