@@ -214,21 +214,21 @@
 			subtitle: "Batteries are great!"
 			tasks: [
 				{
-					count: 2L
-					id: "02A2F0C2179EB4E3"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/battery_alloy"
-						}
-					}
-					title: "Any #forge:ingots/battery_alloy"
+					id: "7B4585B39907E2EA"
+					item: "gtceu:lv_battery_hull"
 					type: "item"
 				}
 				{
-					id: "7B4585B39907E2EA"
-					item: "gtceu:lv_battery_hull"
+					count: 2L
+					id: "619E37C6DE44F972"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/battery_alloy)"
+						}
+					}
+					title: "Any #forge:ingots/battery_alloy"
 					type: "item"
 				}
 			]
