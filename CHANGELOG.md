@@ -1,8 +1,17 @@
 # Changelog
 
-## [0.6.11] - 03.02.2024
+## [0.6.11] - ?
 ### Changes
-- Fix smelting recipe of rich raw ores.
+- Fixed smelting recipe of rich raw ores.
+- Fixed recipe of bio chaff -> vanilla dirt.
+- Fixed pyrolyse oven wood recipes.
+- Fixed coal pile mining with mining_hammer/drill/spade
+- Fixed Sterling Silver dust recipe tier mismatch.
+- Fixed *battery preparation* quest.
+- Fixed ability of gtceu hoes to hoe dirt under water (u can do this now *yay*).
+- Move scary SimpleLogin menu to Multiplayer screen.
+- Fixed fluix crystal -> block recipe.
+- Fixed voltage of greenhouse recipes.
 
 ## [0.6.10] - 01.02.2024
 ### Updated mods
