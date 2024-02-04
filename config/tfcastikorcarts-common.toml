@@ -27,4 +27,8 @@
 	# Threshold at which the player carrying a cart will get pinned. Higher => can carry more.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	pinnedThreshold = 420.0
+	#
+	# Pulling distance modifier for carts. Higher => farther/greater break tolerance.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	pullingDistanceModifier = 2.0
 

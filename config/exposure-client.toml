@@ -9,6 +9,10 @@
 	#Tooltips for Developing Film Rolls and Copying Photographs will be shown on Film Rolls and Photographs respectively, describing the crafting recipe. 
 	#Only when JEI is not installed. (Only JEI shows these recipes, not REI or EMI)
 	RecipeTooltipsWithoutJei = true
+	#Album will show how many photographs they contain in a tooltip.
+	AlbumShowPhotosCount = true
+	#Signed Album item will have an enchantment glint.
+	SignedAlbumGlint = true
 
 	[UI.Viewfinder]
 		#Mouse sensitivity modifier per 5 degrees of fov. Set to 0 to disable sensitivity changes.

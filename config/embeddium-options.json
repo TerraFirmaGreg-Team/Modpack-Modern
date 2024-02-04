@@ -22,6 +22,8 @@
     "use_no_error_g_l_context": true
   },
   "notifications": {
-    "hide_donation_button": true
+    "force_disable_donation_prompts": false,
+    "has_cleared_donation_button": false,
+    "has_seen_donation_prompt": false
   }
 }

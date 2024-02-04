@@ -1,6 +1,8 @@
 
 [Camera]
-	#Default focal range of the camera (with built in lens). Default: 18-55
+	#Default focal range of the camera (with built in lens).
+	#Separated by a comma. Allowed range: 10-300
+	#Default: 18-55
 	DefaultFocalRange = "18-55"
 	#Focal Range per lens. Item ID and min-max (or single number for primes) focal lengths. Separated by a comma. Allowed range: 10-300
 	#Note: to attach the custom lens to the camera - it needs to be added to '#exposure:lenses' item tag.
