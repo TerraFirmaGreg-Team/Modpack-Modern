@@ -110,10 +110,10 @@
 	potValign = "TOP"
 	#Potion HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	potHalign = "LEFT"
+	potHalign = "RIGHT"
 	#Potion HUD position (X)
 	#Range: -9999 ~ 9999
-	xPotionPos = 3
+	xPotionPos = 63
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
 	yPotionPos = 3
