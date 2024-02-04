@@ -752,6 +752,8 @@ global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
     '#tfcastikorcarts:plow': { name: 'plow', output: ['2x gtceu:wood_dust'] },
     '#tfcastikorcarts:animal_cart': { name: 'animal_cart', output: ['2x gtceu:wood_dust'] },
     '#tfcastikorcarts:supply_cart': { name: 'supply_cart', output: ['2x gtceu:wood_dust'] },
+    '#firmalife:food_shelves': { name: 'food_shelves', output: ['2x gtceu:wood_dust'] },
+    '#firmalife:hangers': { name: 'hangers', output: ['1x gtceu:wood_dust'] },
 };
 
 /**
@@ -853,6 +855,48 @@ global.TFC_FURNACE_MOLD_RECIPE_COMPONENTS = [
     { input: 'tfc:ceramic/unfired_spindle_head', output: 'tfc:ceramic/spindle_head', name: 'spindle_head' },
     { input: 'tfc:ceramic/unfired_vessel', output: 'tfc:ceramic/vessel', name: 'vessel' },
     { input: 'tfc:ceramic/unfired_large_vessel', output: 'tfc:ceramic/large_vessel', name: 'large_vessel' },
+    { input: 'tfcchannelcasting:unfired_channel', output: 'tfcchannelcasting:channel', name: 'channel' },
+    { input: 'tfcchannelcasting:unfired_mold_table', output: 'tfcchannelcasting:mold_table', name: 'mold_table' },
+];
+
+global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = [
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_ingot_mold', name: 'ingot_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_pickaxe_head_mold', name: 'pickaxe_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_propick_head_mold', name: 'propick_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_axe_head_mold', name: 'axe_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_shovel_head_mold', name: 'shovel_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_hoe_head_mold', name: 'hoe_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_chisel_head_mold', name: 'chisel_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_hammer_head_mold', name: 'hammer_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_saw_blade_mold', name: 'saw_blade_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_javelin_head_mold', name: 'javelin_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_sword_blade_mold', name: 'sword_blade_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_mace_head_mold', name: 'mace_head_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_knife_blade_mold', name: 'knife_blade_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_scythe_blade_mold', name: 'scythe_blade_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_bell_mold', name: 'bell_mold' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_brick', name: 'brick' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_flower_pot', name: 'flower_pot' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_pan', name: 'pan' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_blowpipe', name: 'ceramic_blowpipe' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_bowl', name: 'bowl' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_jug', name: 'jug' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_pot', name: 'pot' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_spindle_head', name: 'spindle_head' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_vessel', name: 'vessel' },
+    { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_large_vessel', name: 'large_vessel' },
+    { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_fire_ingot_mold', name: 'fire_ingot_mold' },
+    { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_fire_brick', name: 'fire_brick' },
+    { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_crucible', name: 'crucible' },
+    { input: '5x tfc:fire_clay', output: 'tfcchannelcasting:unfired_channel', name: 'channel' },
+    { input: '5x tfc:fire_clay', output: 'tfcchannelcasting:unfired_mold_table', name: 'mold_table' },
+];
+
+global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = [
+    { input: 'tfc:silica_glass_batch', output: 'tfc:silica_glass_bottle', name: 'silica_glass_bottle' },
+    { input: 'tfc:hematitic_glass_batch', output: 'tfc:hematitic_glass_bottle', name: 'hematitic_glass_bottle' },
+    { input: 'tfc:olivine_glass_batch', output: 'tfc:olivine_glass_bottle', name: 'olivine_glass_bottle' },
+    { input: 'tfc:volcanic_glass_batch', output: 'tfc:volcanic_glass_bottle', name: 'volcanic_glass_bottle' },
 ];
 
 global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS = [

@@ -2818,6 +2818,36 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Молды в ассемблере
+
+    for (let i = 0; i < global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS.length; i++) {
+        
+        let element = global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
+
+        event.recipes.gtceu.macerator(`tfg:tfc/${element.name}`)             
+            .itemInputs(element.input)
+            .circuit(i)
+            .itemOutputs(element.output)
+            .duration(450)
+            .EUt(2)
+    }
+
+
+    //#endregion
+
+    //#region Стеклянные смеси в бутылки в ассемблере
+
+    global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.gtceu.alloy_smelter(`tfg:tfc/${element.name}`)             
+            .itemInputs(element.input)
+            .notConsumable('gtceu:bottle_casting_mold')
+            .itemOutputs(element.output)
+            .duration(100)
+            .EUt(2)
+    })
+
+    //#endregion
+
     // Другое
     event.remove({ id: `tfc:crafting/trip_hammer` })
     event.remove({ id: `tfc:anvil/steel_pump` })
@@ -2842,9 +2872,41 @@ const registerTFCRecipes = (event) => {
         B: 'tfc:pumpkin'
     })
 
+    // Lime
+    event.smelting('tfc:powder/lime', 'tfc:powder/flux')
+        .id('tfg:smelting/lime')
+
+    // Kaolinite Clay
+    event.smelting('tfc:kaolin_clay', 'tfc:powder/kaolinite')
+        .id('tfg:smelting/kaolinite_clay')
+
     // Fire Brick
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
         .id('tfg:smelting/fireclay_brick')
+
+    // Lamp Glass
+    event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass`)             
+        .itemInputs('#tfc:glass_batches')
+        .notConsumable('tfg:unfinished_lamps')
+        .itemOutputs('tfc:lamp_glass')
+        .duration(100)
+        .EUt(2)
+
+    // Glass lens
+    event.recipes.gtceu.alloy_smelter(`tfg:tfc/glass_lens`)             
+        .itemInputs('tfc:silica_glass_batch')
+        .notConsumable('#forge:lenses')
+        .itemOutputs('tfc:lens')
+        .duration(100)
+        .EUt(2)
+
+    // Empty Jar
+    event.recipes.gtceu.assember(`tfg:tfc/glass_jar`)             
+        .itemInputs('#tfc:glass_batches_tier_2')
+        .circuit(2)
+        .itemOutputs('tfc:empty_jar')
+        .duration(100)
+        .EUt(2)
 
     // Wool Yarn
     event.recipes.gtceu.macerator('macerate_wool')             

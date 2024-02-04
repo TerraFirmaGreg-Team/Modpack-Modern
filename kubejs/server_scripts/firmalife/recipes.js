@@ -2,6 +2,101 @@
 
 const registerFirmaLifeRecipes = (event) => {
 
+    //#region Удаление других рецептов
+
+    event.remove({ id: 'firmalife:crafting/compost_tumbler' })
+    event.remove({ id: 'firmalife:crafting/pumping_station' })
+
+    // - Chromium
+    
+    // Ingot 
+    event.remove({ id: 'firmalife:casting/chromium_ingot' })
+    event.remove({ id: 'firmalife:casting/chromium_ingot_fire' })
+    event.remove({ id: 'firmalife:heating/metal/chromium_ingot' })
+
+    // Double Ingot
+    event.remove({ id: 'firmalife:welding/chromium_double_ingot' })
+    event.remove({ id: 'firmalife:heating/metal/chromium_double_ingot' })
+
+    // Sheet
+    event.remove({ id: 'firmalife:anvil/chromium_sheet' })
+    event.remove({ id: 'firmalife:heating/metal/chromium_sheet' })
+
+    // Double Sheet
+    event.remove({ id: 'firmalife:welding/chromium_double_sheet' })
+    event.remove({ id: 'firmalife:heating/metal/chromium_double_sheet' })
+
+    // Rod
+    event.remove({ id: 'firmalife:anvil/chromium_rod' })
+    event.remove({ id: 'firmalife:heating/metal/chromium_rod' })
+
+    // Ores
+    event.remove({ id: 'firmalife:heating/ore/small_chromite' })
+    event.remove({ id: 'firmalife:heating/ore/poor_chromite' })
+    event.remove({ id: 'firmalife:heating/ore/normal_chromite' })
+    event.remove({ id: 'firmalife:heating/ore/rich_chromite' })
+
+    // - Stainless Steel
+    
+    // Ingot 
+    event.remove({ id: 'firmalife:casting/stainless_steel_ingot' })
+    event.remove({ id: 'firmalife:casting/stainless_steel_ingot_fire' })
+    event.remove({ id: 'firmalife:heating/metal/stainless_steel_ingot' })
+
+    // Double Ingot
+    event.remove({ id: 'firmalife:welding/stainless_steel_double_ingot' })
+    event.remove({ id: 'firmalife:heating/metal/stainless_steel_double_ingot' })
+
+    // Sheet
+    event.remove({ id: 'firmalife:anvil/stainless_steel_sheet' })
+    event.remove({ id: 'firmalife:heating/metal/stainless_steel_sheet' })
+
+    // Double Sheet
+    event.remove({ id: 'firmalife:welding/stainless_steel_double_sheet' })
+    event.remove({ id: 'firmalife:heating/metal/stainless_steel_double_sheet' })
+
+    // Rod
+    event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
+    event.remove({ id: 'firmalife:heating/metal/stainless_steel_rod' })
+
+    //#endregion
+
+    // Декрафт Jag Lid
+    event.recipes.tfc.heating('tfc:jar_lid', 230)
+        .resultFluid(Fluid.of('gtceu:tin', 9))
+        .id(`tfc:heating/jar_lid`)
+
+    // Pie Pan
+    event.recipes.tfc.anvil('4x firmalife:pie_pan', '#forge:plates/wrought_iron', ["hit_last", "hit_second_last", "draw_third_last"])
+        .tier(3)
+        .id('firmalife:anvil/pie_pan')
+
+    // Jarring Station
+    event.shaped('firmalife:jarring_station', [
+        'A A',
+        'BBB'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: 'firmalife:treated_lumber'  
+    }).id('firmalife:crafting/jarring_station')
+
+    // Vat
+    event.shaped('firmalife:vat', [
+        'A A',
+        'BAB'  
+    ], {
+        A: '#forge:plates/wrought_iron', 
+        B: 'firmalife:beeswax'  
+    }).id('firmalife:crafting/vat')
+
+    // Jar Lid
+    event.recipes.gtceu.assembler(`tfg:firmalife/jar_lid`)             
+        .itemInputs('#forge:ingots/tin')
+        .circuit(7)
+        .itemOutputs('16x tfc:jar_lid')
+        .duration(50)
+        .EUt(7)
+
     //#region Рецепты теплиц
 
     //#region Медная
@@ -185,92 +280,18 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion
 
-    //#region Удаление других рецептов
+    //#region Укрепленное стекло
 
-    event.remove({ id: 'firmalife:crafting/compost_tumbler' })
-    event.remove({ id: 'firmalife:crafting/pumping_station' })
+    event.shaped('firmalife:reinforced_glass', [
+        'AB'  
+    ], {
+        A: '#tfc:saws', 
+        B: 'gtceu:tempered_glass'   
+    }).id('tfg:shaped/reinforced_glass')
 
-    // - Chromium
-    
-    // Ingot 
-    event.remove({ id: 'firmalife:casting/chromium_ingot' })
-    event.remove({ id: 'firmalife:casting/chromium_ingot_fire' })
-    event.remove({ id: 'firmalife:heating/metal/chromium_ingot' })
-
-    // Double Ingot
-    event.remove({ id: 'firmalife:welding/chromium_double_ingot' })
-    event.remove({ id: 'firmalife:heating/metal/chromium_double_ingot' })
-
-    // Sheet
-    event.remove({ id: 'firmalife:anvil/chromium_sheet' })
-    event.remove({ id: 'firmalife:heating/metal/chromium_sheet' })
-
-    // Double Sheet
-    event.remove({ id: 'firmalife:welding/chromium_double_sheet' })
-    event.remove({ id: 'firmalife:heating/metal/chromium_double_sheet' })
-
-    // Rod
-    event.remove({ id: 'firmalife:anvil/chromium_rod' })
-    event.remove({ id: 'firmalife:heating/metal/chromium_rod' })
-
-    // Ores
-    event.remove({ id: 'firmalife:heating/ore/small_chromite' })
-    event.remove({ id: 'firmalife:heating/ore/poor_chromite' })
-    event.remove({ id: 'firmalife:heating/ore/normal_chromite' })
-    event.remove({ id: 'firmalife:heating/ore/rich_chromite' })
-
-    // - Stainless Steel
-    
-    // Ingot 
-    event.remove({ id: 'firmalife:casting/stainless_steel_ingot' })
-    event.remove({ id: 'firmalife:casting/stainless_steel_ingot_fire' })
-    event.remove({ id: 'firmalife:heating/metal/stainless_steel_ingot' })
-
-    // Double Ingot
-    event.remove({ id: 'firmalife:welding/stainless_steel_double_ingot' })
-    event.remove({ id: 'firmalife:heating/metal/stainless_steel_double_ingot' })
-
-    // Sheet
-    event.remove({ id: 'firmalife:anvil/stainless_steel_sheet' })
-    event.remove({ id: 'firmalife:heating/metal/stainless_steel_sheet' })
-
-    // Double Sheet
-    event.remove({ id: 'firmalife:welding/stainless_steel_double_sheet' })
-    event.remove({ id: 'firmalife:heating/metal/stainless_steel_double_sheet' })
-
-    // Rod
-    event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
-    event.remove({ id: 'firmalife:heating/metal/stainless_steel_rod' })
+    generateCutterRecipe(event, '3x gtceu:tempered_glass', null, '8x firmalife:reinforced_glass', 100, 7, 'reinforced_glass')
 
     //#endregion
-
-    // Декрафт Jag Lid
-    event.recipes.tfc.heating('tfc:jar_lid', 230)
-        .resultFluid(Fluid.of('gtceu:tin', 9))
-        .id(`tfc:heating/jar_lid`)
-
-    // Pie Pan
-    event.recipes.tfc.anvil('4x firmalife:pie_pan', '#forge:plates/wrought_iron', ["hit_last", "hit_second_last", "draw_third_last"])
-        .tier(3)
-        .id('firmalife:anvil/pie_pan')
-
-    // Jarring Station
-    event.shaped('firmalife:jarring_station', [
-        'A A',
-        'BBB'  
-    ], {
-        A: '#forge:plates/wrought_iron', 
-        B: 'firmalife:treated_lumber'  
-    }).id('firmalife:crafting/jarring_station')
-
-    // Vat
-    event.shaped('firmalife:vat', [
-        'A A',
-        'BAB'  
-    ], {
-        A: '#forge:plates/wrought_iron', 
-        B: 'firmalife:beeswax'  
-    }).id('firmalife:crafting/vat')
 
     //#region Рецепты электрической теплицы
     
@@ -310,15 +331,3 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion
 }
-
-/*
-
-event.shaped('', [
-        '' 
-    ], {
-        A: '',
-        B: '',
-        C: ''    
-    }).id()
-
-*/

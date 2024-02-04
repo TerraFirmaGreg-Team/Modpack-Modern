@@ -32,6 +32,9 @@
         },
         {
             "id": "/emi:/crafting/repairing/[^*]+/"
+        },
+        {
+            "id": "/emi:/grindstone/repairing/minecraft/[^*]+/"
         }
     ]
 }

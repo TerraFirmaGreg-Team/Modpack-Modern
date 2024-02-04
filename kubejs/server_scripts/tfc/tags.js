@@ -127,6 +127,7 @@ const registerTFCItemTags = (event) => {
     event.add('tfg:metal_bars', 'tfc:metal/bars/blue_steel')
     event.add('tfg:metal_bars', 'tfc:metal/bars/red_steel')
 
+    // Тэги для цепей
     event.add('tfg:metal_chains', 'tfc:metal/chain/bismuth_bronze')
     event.add('tfg:metal_chains', 'tfc:metal/chain/black_bronze')
     event.add('tfg:metal_chains', 'tfc:metal/chain/bronze')
@@ -136,6 +137,17 @@ const registerTFCItemTags = (event) => {
     event.add('tfg:metal_chains', 'tfc:metal/chain/black_steel')
     event.add('tfg:metal_chains', 'tfc:metal/chain/blue_steel')
     event.add('tfg:metal_chains', 'tfc:metal/chain/red_steel')
+
+    // Теги для незаконченных ламп
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/bismuth_bronze')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/black_bronze')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/bronze')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/copper')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/wrought_iron')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/steel')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/black_steel')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/blue_steel')
+    event.add('tfg:unfinished_lamps', 'tfc:metal/unfinished_lamp/red_steel')
 
     // Теги для кораллов
     event.add('tfc:corals', 'tfc:coral/tube_coral_fan')
