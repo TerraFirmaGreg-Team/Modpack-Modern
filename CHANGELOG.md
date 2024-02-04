@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.6.11] - Planned on 04.02.2024
+## [0.6.11] - 05.02.2024
 ### Changes
 - Fixed smelting recipe of rich raw ores.
 - Fixed recipe of bio chaff -> vanilla dirt.
