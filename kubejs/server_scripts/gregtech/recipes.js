@@ -316,6 +316,7 @@ const registerGTCEURecipes = (event) => {
         ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'], 
         Fluid.of('minecraft:water', 1000),
         [],
+        null,
         Fluid.of('gtceu:concrete', 1152),
         40,
         16,
@@ -328,6 +329,7 @@ const registerGTCEURecipes = (event) => {
         ['3x #tfg:stone_dusts', 'gtceu:clay_dust'], 
         Fluid.of('minecraft:water', 500),
         [],
+        null,
         Fluid.of('gtceu:concrete', 576),
         20,
         16,
@@ -340,6 +342,7 @@ const registerGTCEURecipes = (event) => {
         ['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'], 
         Fluid.of('minecraft:water', 1000),
         [],
+        null,
         Fluid.of('gtceu:concrete', 1152),
         40,
         16,
@@ -356,6 +359,7 @@ const registerGTCEURecipes = (event) => {
         ['2x #tfg:stone_dusts'], 
         [Fluid.of('gtceu:lubricant', 20), Fluid.of('minecraft:water', 4000)],
         [],
+        null,
         Fluid.of('gtceu:drilling_fluid', 5000),
         40,
         16,
@@ -478,10 +482,10 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:macerator/macerate_acacia_door'})
     event.remove({id: 'gtceu:macerator/macerate_acacia_boat'})
     event.remove({id: 'gtceu:macerator/macerate_bamboo_raft'})
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_planks'})
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence_gate'})
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence'})
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_door'})
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_planks'}) // TODO
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence_gate'}) // TODO
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence'}) // TODO
+    event.remove({id: 'gtceu:macerator/macerate_bamboo_door'}) // TODO
     event.remove({id: 'gtceu:macerator/macerate_crimson_door'})
     event.remove({id: 'gtceu:macerator/macerate_crimson_fence'})
     event.remove({id: 'gtceu:macerator/macerate_crimson_fence_gate'})
@@ -1044,6 +1048,7 @@ const registerGTCEURecipes = (event) => {
 
     //#region Вырезка из резины
 
+    // TODO: Не работает из-за магического бага
     // event.recipes.tfc.knapping('gtceu:rubber_ring', 'tfg:rubber', ['XXX', 'X X', 'XXX'])
     //    .ingredient('gtceu:rubber_plate')
 
@@ -1071,8 +1076,9 @@ const registerGTCEURecipes = (event) => {
     // Удалить после фикса GTCEu
     event.remove({id: 'gtceu:extractor/extract_raw_rubber_dust'})
 
-    // Пыль звезды незера (удалить после имплементации ада)
-    event.recipes.gtceu.chemical_reactor('tfg:nether_star_dust')             
+    // Пыль звезды незера 
+    // TODO: удалить после имплементации ада
+    event.recipes.gtceu.chemical_reactor('tfg:gtceu/nether_star_dust')             
         .itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
         .circuit(10)
         .itemOutputs('gtceu:nether_star_dust')
@@ -1174,7 +1180,18 @@ const registerGTCEURecipes = (event) => {
         D: 'gtceu:tin_single_cable'
     }).id('gtceu:shaped/electric_blast_furnace')
 
-    // LV Casing
+    // Клей из ТФК клея
+    event.recipes.gtceu.centrifuge('glue_from_tfc_glue')             
+        .itemInputs('tfc:glue')
+        .outputFluids(Fluid.of('gtceu:glue', 50))
+        .duration(400)
+        .EUt(5)
+
+    // Исправление рецепта пыли серебра стерлинга
+    generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 1, [], 500, 24, 64, 'sterling_silver')
+
+    //#region LV Casing
+
     event.shaped('gtceu:lv_machine_casing', [
         'ABA', 
         'BCB',
@@ -1204,14 +1221,10 @@ const registerGTCEURecipes = (event) => {
         .duration(448)
         .EUt(8)
 
-    // Клей из ТФК клея
-    event.recipes.gtceu.centrifuge('glue_from_tfc_glue')             
-        .itemInputs('tfc:glue')
-        .outputFluids(Fluid.of('gtceu:glue', 50))
-        .duration(400)
-        .EUt(5)
+    //#endregion
 
-    // Рецепт ULV микросхемы
+    //#region Рецепт ULV микросхемы
+
     event.remove({ id: 'gtceu:shaped/vacuum_tube' })
 
     event.recipes.createSequencedAssembly([
@@ -1222,7 +1235,10 @@ const registerGTCEURecipes = (event) => {
         event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', 'gtceu:copper_single_wire']),
     ]).transitionalItem('tfg:unfinished_vacuum_tube').loops(2).id('tfg:gtceu/sequenced_assembly/vacuum_tube')
 
-    // Рецепт LV микросхемы
+    //#endregion
+    
+    //#region Рецепт LV микросхемы
+
     event.remove({ id: 'gtceu:shaped/electronic_circuit_lv' })
 
     event.recipes.createSequencedAssembly([
@@ -1233,6 +1249,8 @@ const registerGTCEURecipes = (event) => {
         event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', 'gtceu:vacuum_tube']),
         event.recipes.createDeploying('tfg:unfinished_basic_electronic_circuit', ['tfg:unfinished_basic_electronic_circuit', 'gtceu:red_alloy_single_cable']),
     ]).transitionalItem('tfg:unfinished_basic_electronic_circuit').loops(2).id('tfg:gtceu/sequenced_assembly/basic_electronic_circuit')
+
+    //#endregion
 
     //#region Рецепты электрического генератора
     
@@ -1268,12 +1286,13 @@ const registerGTCEURecipes = (event) => {
 
     //#region Выход: Фикс выработки пара на ведре лавы
 
-    event.remove({ id: 'minecraft:large_boiler/lava_bucket' })
-    event.recipes.gtceu.large_boiler('lava_bucket')             
-        .itemInputs('minecraft:lava_bucket')
-        .duration(25)
+    //event.remove({ id: 'minecraft:large_boiler/lava_bucket' })
+    //event.recipes.gtceu.large_boiler('lava_bucket')             
+    //    .itemInputs('minecraft:lava_bucket')
+    //    .duration(25)
 
     //#endregion
+
 
     //#region Рецепты, которые итерируются по всем материалам
 

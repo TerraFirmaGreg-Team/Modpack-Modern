@@ -2984,7 +2984,7 @@ const registerTFCRecipes = (event) => {
         .EUt(4)
 
     // Jute Fiber
-    generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+    generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
     // Soda Ash
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')

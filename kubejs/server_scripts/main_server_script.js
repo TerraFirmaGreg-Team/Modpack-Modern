@@ -8,6 +8,7 @@ const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelp
  */
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
+    registerAsticorCartsItemTags(event)
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
@@ -28,6 +29,7 @@ ServerEvents.tags('item', event => {
  */
 ServerEvents.tags('block', event => {
     registerAE2BlockTags(event)
+    registerAsticorCartsBlockTags(event)
     registerChiselAndBitsBlockTags(event)
     registerComputerCraftBlockTags(event)
     registerCreateBlockTags(event)
@@ -102,6 +104,7 @@ GTCEuServerEvents.oreVeins(event => {
  */
 ServerEvents.recipes(event => {
     registerAE2Recipes(event)
+    registerAsticorCartsRecipes(event)
     registerAE2WTLibRecipes(event)
     registerChiselAndBitsRecipes(event)
     registerComputerCraftRecipes(event)
