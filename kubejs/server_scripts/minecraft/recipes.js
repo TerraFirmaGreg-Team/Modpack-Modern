@@ -939,6 +939,11 @@ const registerMinecraftRecipes = (event) => {
         event.remove({ id: `gtceu:assembler/${wood}_sign` })
     });
 
+    event.remove({ id: 'minecraft:stripped_warped_hyphae' })
+    event.remove({ id: 'minecraft:warped_hyphae' })
+    event.remove({ id: 'minecraft:stripped_crimson_hyphae' })
+    event.remove({ id: 'minecraft:crimson_hyphae' })
+    
     //#endregion
 
     //#region Выход: Камнерез
@@ -1039,14 +1044,29 @@ const registerMinecraftRecipes = (event) => {
     event.shapeless('2x minecraft:bamboo_planks', [
         '#minecraft:bamboo_blocks',
         '#tfc:saws'
-    ]).id('tfg:shapeless/bamboo_planks')
+    ]).id('minecraft:bamboo_planks')
 
     //#endregion
 
-    //#region Выход: Плот с сундуком
+    //#region Выход: Плот с сундуком из бамбука
 
     event.remove({ id: 'minecraft:bamboo_chest_raft' })
 
+    //#endregion
+
+    //#region Выход: Таблички из бамбука
+
+    event.remove({ id: 'minecraft:bamboo_sign' })
+    event.remove({ id: 'minecraft:bamboo_hanging_sign' })
+
+    //#endregion
+
+    //#region Бамбуковая кнопка
+
+    //#endregion
+
+    //#region Бамбуковая нажимная плита
+    
     //#endregion
 
     //#region Красители

@@ -2903,7 +2903,7 @@ const registerTFCRecipes = (event) => {
         .EUt(2)
 
     // Empty Jar
-    event.recipes.gtceu.assember(`tfg:tfc/glass_jar`)             
+    event.recipes.gtceu.assembler(`tfg:tfc/glass_jar`)             
         .itemInputs('#tfc:glass_batches_tier_2')
         .circuit(2)
         .itemOutputs('tfc:empty_jar')

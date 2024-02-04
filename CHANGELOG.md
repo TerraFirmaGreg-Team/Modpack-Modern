@@ -25,9 +25,10 @@
 - New wet sponge -> sponge recipes!
 - New carpet recipes!
 - New clay -> assembler -> mold recipes! (Also with fireclay *yay*)
+- Fixed some recipes for bamboo blocks.
 
 - Удалено множество рецептов незер блоков и предметов, будут возвращены, когда будет добавлен ад.
-- Возвращены некоторые рецепты для бамбуковых блоков.
+
 
 ## [0.6.10] - 01.02.2024
 ### Updated mods

@@ -373,6 +373,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:mangrove_sign",
     "minecraft:mangrove_hanging_sign",
 
+    // Бамбук
+    'minecraft:bamboo_sign',
+    'minecraft:bamboo_hanging_sign',
+    'minecraft:bamboo_raft',
+    'minecraft:bamboo_chest_raft',
+
     // Шалкеры
     'minecraft:shulker_box', 
     'minecraft:white_shulker_box', 
@@ -550,8 +556,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:gravel',
     'minecraft:moss_block',
     'minecraft:moss_carpet',
-    'minecraft:bamboo_raft',
-    'minecraft:bamboo_chest_raft',
     'minecraft:large_fern', 
     'minecraft:tall_grass', 
     'minecraft:sculk_vein', 

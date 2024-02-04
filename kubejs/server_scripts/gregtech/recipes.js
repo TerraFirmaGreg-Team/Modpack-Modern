@@ -380,7 +380,6 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:macerator/macerate_crimson_button' })
     event.remove({ id: 'gtceu:macerator/macerate_cherry_button' })
     event.remove({ id: 'gtceu:macerator/macerate_birch_button' })
-    event.remove({ id: 'gtceu:macerator/macerate_bamboo_button' })
     event.remove({ id: 'gtceu:macerator/macerate_acacia_button' })
 
     //#endregion
@@ -425,10 +424,6 @@ const registerGTCEURecipes = (event) => {
    event.remove({ id: 'gtceu:macerator/macerate_cherry_slab' })
    event.remove({ id: 'gtceu:macerator/macerate_birch_stairs' })
    event.remove({ id: 'gtceu:macerator/macerate_birch_slab' })
-   event.remove({ id: 'gtceu:macerator/macerate_bamboo_stairs' })
-   event.remove({ id: 'gtceu:macerator/macerate_bamboo_slab' })
-   event.remove({ id: 'gtceu:macerator/macerate_bamboo_mosaic_stairs' })
-   event.remove({ id: 'gtceu:macerator/macerate_bamboo_mosaic_slab' })
    event.remove({ id: 'gtceu:macerator/macerate_acacia_stairs' })
    event.remove({ id: 'gtceu:macerator/macerate_acacia_slab' })
 
@@ -482,10 +477,6 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:macerator/macerate_acacia_door'})
     event.remove({id: 'gtceu:macerator/macerate_acacia_boat'})
     event.remove({id: 'gtceu:macerator/macerate_bamboo_raft'})
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_planks'}) // TODO
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence_gate'}) // TODO
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_fence'}) // TODO
-    event.remove({id: 'gtceu:macerator/macerate_bamboo_door'}) // TODO
     event.remove({id: 'gtceu:macerator/macerate_crimson_door'})
     event.remove({id: 'gtceu:macerator/macerate_crimson_fence'})
     event.remove({id: 'gtceu:macerator/macerate_crimson_fence_gate'})
