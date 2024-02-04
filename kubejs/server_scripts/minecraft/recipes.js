@@ -1063,10 +1063,33 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Бамбуковая кнопка
 
+    event.shaped('minecraft:bamboo_pressure_plate', [
+        'ABA',
+        'CDC',
+        'AEA'  
+    ], {
+        A: '#forge:screws/wood',
+        B: '#tfc:hammers',
+        C: '#tfg:bamboo_slabs',
+        D: '#forge:springs',
+        E: '#forge:tools/screwdrivers'
+    }).id(`minecraft:bamboo_pressure_plate`)
+
+    event.recipes.gtceu.assembler(`tfg:minecraft/bamboo_pressure_plate`)             
+        .itemInputs('#forge:springs', '#tfg:bamboo_slabs')
+        .circuit(0)
+        .itemOutputs('2x minecraft:bamboo_pressure_plate')
+        .duration(50)
+        .EUt(2)
+
     //#endregion
 
     //#region Бамбуковая нажимная плита
-    
+
+    event.remove({ id: `minecraft:bamboo_button` })
+
+    generateCutterRecipe(event, 'minecraft:bamboo_pressure_plate', null, '6x minecraft:bamboo_button', 50, 2, `bamboo_button`)
+
     //#endregion
 
     //#region Красители

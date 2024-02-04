@@ -12,6 +12,10 @@ const registerMinecraftItemTags = (event) => {
 
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
+
+    // Бамбуковые полублоки
+    event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
+    event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
 }
 
 const registerMinecraftBlockTags = (event) => {

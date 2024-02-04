@@ -1,13 +1,6 @@
 # Changelog
 
-## [0.7.0] - Planned on 15.02.2024
-### Changes
-- Немного улучшены квесты начальной эры.
-- Добавлены ключи перевода для всех квестов начальной эры.
-- Добавлено множество рецептов в миксере дублирующие рецепты бочки TFC.
-- Удалена примитивная помпа GTCEu.
-
-## [0.6.11] - Planned on 05.02.2024
+## [0.6.11] - Planned on 04.02.2024
 ### Changes
 - Fixed smelting recipe of rich raw ores.
 - Fixed recipe of bio chaff -> vanilla dirt.
@@ -26,9 +19,6 @@
 - New carpet recipes!
 - New clay -> assembler -> mold recipes! (Also with fireclay *yay*)
 - Fixed some recipes for bamboo blocks.
-
-- Удалено множество рецептов незер блоков и предметов, будут возвращены, когда будет добавлен ад.
-
 
 ## [0.6.10] - 01.02.2024
 ### Updated mods

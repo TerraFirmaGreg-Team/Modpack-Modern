@@ -835,6 +835,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
 global.MINECRAFT_HIDED_ITEMS = [
     '/spawn_egg/',
     
+    'minecraft:honeycomb', // TODO: Пока что скрыто, не пойму нахера нужно в ТФК и как его получить
+
     'minecraft:exposed_copper', 
     'minecraft:exposed_cut_copper', 
     'minecraft:exposed_cut_copper_stairs', 
