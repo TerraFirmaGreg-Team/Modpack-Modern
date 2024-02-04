@@ -46,7 +46,7 @@
 	/**
 	 * Where to display status effects in the inventory.
 	 */
-	effect-location: left;
+	effect-location: top;
 
 	/**
 	 * Whether to display a gray overlay when hovering over a stack.
