@@ -2086,6 +2086,8 @@ const registerTFCRecipes = (event) => {
     //#region Песок
 
     // Песок душ -> Желтый песок
+    // TODO: Включить после добавления ада
+    /*
     event.recipes.gtceu.centrifuge('soul_sand_separation')             
         .itemInputs('minecraft:soul_sand')
         .chancedOutput('tfc:sand/yellow', 9000, 130)
@@ -2093,7 +2095,7 @@ const registerTFCRecipes = (event) => {
         .chancedOutput('gtceu:tiny_coal_dust', 2000, 340)
         .outputFluids(Fluid.of('gtceu:oil', 80))
         .duration(200)
-        .EUt(80)
+        .EUt(80)*/
 
     // Нефтеносный -> Желтый песок
     event.recipes.gtceu.centrifuge('oilsands_ore_separation')             

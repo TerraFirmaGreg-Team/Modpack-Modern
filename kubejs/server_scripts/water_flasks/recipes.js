@@ -17,5 +17,40 @@ const registerWaterFlasksRecipes = (event) => {
         .resultFluid(Fluid.of('gtceu:iron', 144))
         .useDurability(true)
         .id(`waterflasks:heating/wrought_iron_iron_flask`)
-        
+
+    //#region Кожанная фласка
+
+    event.recipes.gtceu.assembler('tfg:water_flasks/leather_flask')             
+        .itemInputs('3x #forge:leather', '2x #forge:string')
+        .circuit(1)
+        .itemOutputs('waterflasks:leather_flask')
+        .duration(250)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('tfg:water_flasks/leather_flask_repair')             
+        .itemInputs('waterflasks:broken_leather_flask', '#forge:leather', '2x #forge:string')
+        .circuit(2)
+        .itemOutputs('waterflasks:leather_flask')
+        .duration(250)
+        .EUt(16)
+
+    //#endregion
+
+    //#region Железная фласка
+
+    event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask')             
+        .itemInputs('tfc:burlap_cloth', '#forge:string', '#forge:leather', '#forge:plates/wrought_iron')
+        .circuit(1)
+        .itemOutputs('waterflasks:iron_flask')
+        .duration(250)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('tfg:water_flasks/iron_flask_repair')             
+        .itemInputs('waterflasks:broken_iron_flask', 'tfc:burlap_cloth', '#forge:string', '#forge:leather')
+        .circuit(2)
+        .itemOutputs('waterflasks:iron_flask')
+        .duration(250)
+        .EUt(16)
+
+    //#endregion
 }

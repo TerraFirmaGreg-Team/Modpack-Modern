@@ -1034,18 +1034,18 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Плот с сундуком
-
-    event.remove({ id: 'minecraft:bamboo_chest_raft' })
-
-    //#endregion
-
     //#region Выход: Бамбуковые доски
 
     event.shapeless('2x minecraft:bamboo_planks', [
         '#minecraft:bamboo_blocks',
         '#tfc:saws'
     ]).id('tfg:shapeless/bamboo_planks')
+
+    //#endregion
+
+    //#region Выход: Плот с сундуком
+
+    event.remove({ id: 'minecraft:bamboo_chest_raft' })
 
     //#endregion
 
@@ -1626,6 +1626,14 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Блок меда
 
     event.remove({ id: 'minecraft:honey_block' })
+
+    //#endregion
+
+    //#region Выход: Сухая губка
+
+    event.recipes.tfc.heating('minecraft:wet_sponge', 790)
+        .resultItem('minecraft:sponge')
+        .id('tfg:minecraft/heating/sponge')
 
     //#endregion
 
@@ -2447,8 +2455,12 @@ const registerMinecraftRecipes = (event) => {
         
         event.remove({ id: `minecraft:dye_${dye}_carpet` })
 
-        if (dye != 'white')
-        {
+        event.shapeless(`2x minecraft:${dye}_carpet`, [
+            '#tfc:saws',
+            `minecraft:${dye}_wool`
+        ]).id(`minecraft:${dye}_carpet`)
+
+        if (dye != 'white') {
             event.recipes.gtceu.chemical_bath(`tfg:${dye}_carpet`)             
                 .itemInputs(`minecraft:white_carpet`)
                 .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
