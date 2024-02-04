@@ -19,6 +19,24 @@
 - New carpet recipes!
 - New clay -> assembler -> mold recipes! (Also with fireclay *yay*)
 - Fixed some recipes for bamboo blocks.
+### Updated mods
+- CC-Tweaked -> 1.109.5
+- Embeddium -> 0.3.1
+- Exposure -> 1.3.0
+- Firstperson -> 2.3.3
+- Gregicality Rocketry -> 0.1.3
+- ImmediatelyFast -> 1.2.10
+- Jade -> 11.8.0
+- JEI -> 15.3.0.1
+- Modernfix -> 5.13.0
+- Oculus -> 1.6.15
+- PuzzlesLib -> 8.1.16
+- Sophisticatedbackpacks -> 3.19.8.1000
+- Sophisticatedcore -> 0.5.116.537
+- Textrues_embeddium_options -> 0.1.4
+- TFCAstikorCarts -> 1.1.7.5
+- XaerosWorldMap -> 1.37.8
+- TerraFirmaGreg-Core -> 0.4.6
 
 ## [0.6.10] - 01.02.2024
 ### Updated mods
