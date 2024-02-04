@@ -1,17 +1,33 @@
 # Changelog
 
-## [0.6.11] - ?
+## [0.7.0] - Planned on 15.02.2024
+### Changes
+- Немного улучшены квесты начальной эры.
+- Добавлены ключи перевода для всех квестов начальной эры.
+- Добавлено множество рецептов в миксере дублирующие рецепты бочки TFC.
+- Удалена примитивная помпа GTCEu.
+
+## [0.6.11] - Planned on 05.02.2024
 ### Changes
 - Fixed smelting recipe of rich raw ores.
 - Fixed recipe of bio chaff -> vanilla dirt.
 - Fixed pyrolyse oven wood recipes.
 - Fixed coal pile mining with mining_hammer/drill/spade
-- Fixed Sterling Silver dust recipe tier mismatch.
 - Fixed *battery preparation* quest.
 - Fixed ability of gtceu hoes to hoe dirt under water (u can do this now *yay*).
 - Move scary SimpleLogin menu to Multiplayer screen.
 - Fixed fluix crystal -> block recipe.
 - Fixed voltage of greenhouse recipes.
+- Fixed Sterling Silver dust recipe tier mismatch.
+- Removed recipes of vanilla AstiCarts.
+- Removed some recipes for vanilla blocks, which has been added by gtceu.
+- Added AGAIN some recipes for TFC, FirmaLife, WaterFlasks, FirmaCiv items, to make it easier to get on later stages.
+- New wet sponge -> sponge recipes!
+- New carpet recipes!
+- New clay -> assembler -> mold recipes! (Also with fireclay *yay*)
+
+- Удалено множество рецептов незер блоков и предметов, будут возвращены, когда будет добавлен ад.
+- Возвращены некоторые рецепты для бамбуковых блоков.
 
 ## [0.6.10] - 01.02.2024
 ### Updated mods
