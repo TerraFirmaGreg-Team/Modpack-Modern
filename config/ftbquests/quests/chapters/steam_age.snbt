@@ -6,14 +6,52 @@
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
 	order_index: 1
-	quest_links: [{
-		id: "582A6B4135EABE27"
-		linked_quest: "5C7B69F45F076A79"
-		shape: "gear"
-		size: 3.0d
-		x: -3.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "582A6B4135EABE27"
+			linked_quest: "5C7B69F45F076A79"
+			shape: "gear"
+			size: 3.0d
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "1C86D83D29134EBE"
+			linked_quest: "253860AD4DF4224C"
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			id: "09E0E263CC81CD99"
+			linked_quest: "2658E7679CD42ACD"
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			id: "26D1A18BE2F694C4"
+			linked_quest: "6E13B0241CB1D536"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			id: "580358D6164B9CEA"
+			linked_quest: "04D4E196824D53C4"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			id: "4DFB0BF29099F2A1"
+			linked_quest: "5BBF0B6AED98072E"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "190A7A8C49F390C2"
+			linked_quest: "478D0DF94D7495EF"
+			x: -0.5d
+			y: -3.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["253860AD4DF4224C"]
@@ -62,43 +100,6 @@
 			title: "The First of Many Motors"
 			x: 7.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["2658E7679CD42ACD"]
-			description: [
-				"Obtaining paper is both more difficult and less efficient than in vanilla. Thanks, Greg."
-				""
-				"You'll need to grind &aSugar Canes&r into &aPaper Dust&r, and then smush the dust with a mallet and water."
-				"{@pagebreak}"
-				"&9Note 1:&r Don't worry, we're not cruel enough to have the recipe consume the bucket."
-				"{@pagebreak}"
-				"&9Note 2:&r Make a manual Sugar Cane farm. You could also automate one with Observers and Pistons. Shoutout to any &aNomifactory&r veterans."
-				"{@pagebreak}"
-				"&9Note 3:&r As a reminder, Bone Meal can be used on Sugar Canes."
-				"{@pagebreak}"
-				"&9Note 4:&r When you reach &7LV&r, you'll be able to make Paper from Wood."
-				"{@pagebreak}"
-				"&9Note 5:&r The Crafting Station makes this microcrafting absolutely &2trivial&r - use it!"
-				"{@pagebreak}"
-				"&9Note 6:&r Paper will be used as a poor wrapping material for the upcoming resistors."
-				"{@pagebreak}"
-				"&9Note 7:&r It is truly a pleasure to share this moment with you, our fellow Greg enjoyer."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GTCEu 1.12.2, Paper Dust was instead named Chad, prompting this quest to be full of memes."
-			]
-			id: "76B70EF552B35779"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "#realism"
-			tasks: [{
-				count: 4L
-				id: "5DCE370285F5B2C6"
-				item: "minecraft:paper"
-				type: "item"
-			}]
-			title: "Greg has struck again"
-			x: 11.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["5C7B69F45F076A79"]
@@ -159,11 +160,11 @@
 				}
 			]
 			title: "Malding"
-			x: 4.0d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["249374557D095913"]
+			dependencies: ["5BBF0B6AED98072E"]
 			description: [
 				"Not many items are made in the &3Extractor&r during the &6Steam Age&r, but it's used to make &9Rubber&r, which you'll need after Steel."
 				""
@@ -180,35 +181,14 @@
 			}]
 			title: "Steam Extractor"
 			x: 4.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["6E13B0241CB1D536"]
-			description: [
-				"Grow &dRubber Trees&r and cut them down to get &aSticky Resin&r."
-				""
-				"If you're playing on a difficulty other than &bPeaceful&r, Sticky Resin can be obtained from Slimeballs."
-				"{@pagebreak}"
-			]
-			id: "3144DC68B266730C"
-			size: 1.0d
-			subtitle: "Did you think we would force you to use treetaps...?"
-			tasks: [{
-				count: 32L
-				id: "67D04A48C5473D10"
-				item: "gtceu:sticky_resin"
-				type: "item"
-			}]
-			title: "Sticky Resin"
-			x: 7.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"3144DC68B266730C"
 				"236C886D50A99785"
 				"1436DB89E21264F3"
 				"22997534983F6812"
+				"6E13B0241CB1D536"
 			]
 			description: [
 				"Rubber is an excellent insulation material, and that's exactly what it's used for in GTCEu."
@@ -240,8 +220,8 @@
 		}
 		{
 			dependencies: [
-				"3144DC68B266730C"
-				"76B70EF552B35779"
+				"2658E7679CD42ACD"
+				"6E13B0241CB1D536"
 			]
 			description: [
 				"Resistors are components that will be used to make your first Circuit."
@@ -261,7 +241,7 @@
 			}]
 			title: "Electronics #1: Resistors"
 			x: 9.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5C7B69F45F076A79"]
@@ -338,10 +318,10 @@
 			}]
 			title: "Steam Alloy Smelter"
 			x: 2.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["249374557D095913"]
+			dependencies: ["04D4E196824D53C4"]
 			description: [
 				"Crafting Vacuum Tubes might make you question your existence. Sorry about that."
 				""
@@ -361,51 +341,6 @@
 			}]
 			title: "Electronics #3: Vacuum Tubes"
 			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"22997534983F6812"
-				"48AED37B4E20A99A"
-			]
-			description: [
-				"Use Mortars or a Macerator (your choice) to microcraft your way to Glass Dust, which you can then turn into a &aGlass Block&r."
-				""
-				"If you are lost, a more detailed guide for this process is on the next page, but &dwe urge you to nose around JEI&r and figure out the recipe on your own. Being able to navigate JEI and parse recipes is an &6essential skill&r for completing this pack."
-				""
-				"Glass will be easier later on. You've probably already noticed that juicy &3Arc Furnace&r recipe - don't worry, we'll get there soon."
-				""
-				"Glass tubes will be required for your first Electronic Circuit."
-				"{@pagebreak}"
-				"Lost? Worry not!"
-				""
-				"First, use a &3method of pulverisation&r to turn Sand into &9Quartz Sand Dust&r."
-				""
-				"Next, crush down some Flint into &9Flint Dust&r, and split this dust into tiny piles in a crafting grid."
-				""
-				"Combine the two into &9Glass Dust&r, which can be molded into Glass in an Alloy Smelter with a &9Block Mold&r."
-				""
-				"Finally, Glass!"
-			]
-			icon: "minecraft:glass"
-			id: "249374557D095913"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "Must be satisfying, right?"
-			tasks: [
-				{
-					id: "4B958F6E2AA74763"
-					item: "minecraft:glass"
-					type: "item"
-				}
-				{
-					id: "16FC5B5DCBBEE53E"
-					item: "gtceu:glass_tube"
-					type: "item"
-				}
-			]
-			title: "Glass, at last!"
-			x: 2.5d
 			y: -1.5d
 		}
 		{
@@ -427,8 +362,8 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 5.5d
-			y: 0.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -551,12 +486,12 @@
 			}]
 			title: "Steam Macerator"
 			x: -0.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
-				"3144DC68B266730C"
 				"1C50A758A1DE25CB"
+				"6E13B0241CB1D536"
 			]
 			description: [
 				"Macerate Wood into Wood Pulp, then compress it into Wood Plates. Combine it with Resin to make an empty board."
@@ -573,15 +508,8 @@
 			tasks: [
 				{
 					id: "3704C06203B7485A"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/wood"
-						}
-					}
+					item: "gtceu:wood_plate"
 					optional_task: true
-					title: "Wood Plates"
 					type: "item"
 				}
 				{
@@ -592,7 +520,7 @@
 			]
 			title: "Electronics #2: Circuit Boards"
 			x: 5.5d
-			y: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1C50A758A1DE25CB"]
@@ -617,7 +545,7 @@
 			}]
 			title: "What is this Mess?!"
 			x: -0.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1C50A758A1DE25CB"]
@@ -663,7 +591,7 @@
 			]
 			title: "Steam Grinder"
 			x: 1.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["011EC2CE0111C9A0"]
@@ -790,7 +718,7 @@
 			}]
 			title: "Item Pipes"
 			x: 2.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5C7B69F45F076A79"]
@@ -824,6 +752,31 @@
 			}]
 			x: -7.0d
 			y: 1.5d
+		}
+		{
+			dependencies: [
+				"478D0DF94D7495EF"
+				"1931FC6DEAC29646"
+			]
+			description: [""]
+			id: "39E8CE6A86731567"
+			tasks: [{
+				id: "725E42CDF19B0495"
+				item: "gtceu:glass_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			id: "00990B10AD5E694A"
+			tasks: [{
+				id: "5B380855F40BD574"
+				title: "test"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

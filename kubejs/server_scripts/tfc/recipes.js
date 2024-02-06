@@ -2889,7 +2889,7 @@ const registerTFCRecipes = (event) => {
     // Lamp Glass
     event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass`)             
         .itemInputs('#tfc:glass_batches')
-        .notConsumable('tfg:unfinished_lamps')
+        .notConsumable('#tfg:unfinished_lamps')
         .itemOutputs('tfc:lamp_glass')
         .duration(100)
         .EUt(2)

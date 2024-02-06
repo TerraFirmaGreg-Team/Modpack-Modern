@@ -255,6 +255,14 @@ client:
   # Default: true
   useVBO: true
 
+  # Duration of the multiblock in-world preview (s)
+  # Default: 10
+  inWorldPreviewDuration: 10
+
+  # Duration of UI animations in ms
+  # Default: 300
+  animationTime: 300
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage

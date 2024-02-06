@@ -2526,6 +2526,7 @@ const registerMinecraftRecipes = (event) => {
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.remove({ id: `minecraft:${dye}_bed` })
+        event.remove({ id: `minecraft:dye_${dye}_bed` })
 
         if (dye != "white")
             event.recipes.gtceu.chemical_bath(`${dye}_bed`)             

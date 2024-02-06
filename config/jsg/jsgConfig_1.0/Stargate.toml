@@ -1,0 +1,217 @@
+#Defines size of stargate's model
+#SIDE: SERVER/CLIENT
+#Allowed Values: SMALL, MEDIUM, LARGE
+"Stargate size" = "MEDIUM"
+#Format: "modid:blockid", for example: 
+#"minecraft:red_wool"
+#"minecraft:stone"
+#SIDE: SERVER
+"Kawoosh invincible blocks" = ["minecraft:snow_layer", "minecraft:rail", "minecraft:golden_rail", "minecraft:detector_rail", "minecraft:activator_rail", "minecraft:carpet", "minecraft:stone_pressure_plate", "minecraft:wooden_pressure_plate", "minecraft:light_weighted_pressure_plate", "minecraft:heavy_weighted_pressure_plate"]
+#Format: "modid:entityid", for example: 
+#"minecraft:zombie"
+#"minecraft:creeper"
+#SIDE: SERVER
+"Entities to spawn" = ["minecraft:zombie", "minecraft:skeleton"]
+
+[Mechanics]
+	#Enable wrench to be used as disassembling tool for gates?
+	#This can bypass for example claimed chunks (from FTB) on servers...
+	#If false - will be set iron pickaxe as correct tool
+	#SIDE: SERVER
+	"Enable wrench to disassemble gate" = true
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER
+	"Enable burried state for gates" = true
+	#SIDE: SERVER/CLIENT
+	#Range: 0 ~ 15000
+	"Orlin's gate max open count" = 2
+	#SIDE: SERVER/CLIENT
+	#Range: > 5
+	"Universe dialer nearby radius" = 1024
+	#Should gate explode when its overheated?
+	#SIDE: SERVER
+	"Enable gate overheat with explosion" = true
+	#SIDE: SERVER/CLIENT
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Max stargate heat" = 83400.0
+	#SIDE: SERVER/CLIENT
+	#Range: 0.0 ~ 1.0
+	"Chance of lighting strike that charge a gate" = 5.000000237487257E-4
+	#If target gate is dialing and this option is set to true,
+	#the target gate will stop dialing and open incoming wormhole.
+	#If this is set to false and the dialed gate dialing address,
+	#the connection will not established.
+	#If it cause issues, set it to false.
+	#SIDE: SERVER
+	"Connect to dialing gate" = true
+	#Change this to true, if you want to use 8 chevrons between pegasus and milkyway gates
+	#SIDE: SERVER
+	"Use 8 chevrons between MW and PG gates" = true
+	#If you want to dial UNI-UNI only with seven symbols (interdimensional for example), set this to true
+	#SIDE: SERVER
+	"Need only 7 symbols between Uni gates" = false
+
+[Iris]
+	#If set to 'false' player get killed by iris on entering event horizon
+	#SIDE: SERVER
+	"Iris kills at destination" = true
+	#Set it to true, if u want to bypass
+	#shield/iris damage by creative gamemode
+	#SIDE: SERVER
+	"Allow creative bypass" = true
+	#SIDE: SERVER
+	"Can iris destroy blocks" = false
+	#Should iris break when its overheated?
+	#SIDE: SERVER
+	"Enable iris overheat collapse" = true
+	#Durability of Titanium iris
+	#set it to 0, if u want to make it unbreakable
+	#SIDE: SERVER/CLIENT
+	#Range: 0 ~ 500000
+	"Titanium iris durability" = 500
+	#Durability of Trinium iris
+	#set it to 0, if u want to make it unbreakable
+	#SIDE: SERVER/CLIENT
+	#Range: 0 ~ 500000
+	"Trinium iris durability" = 1000
+	#Energy/tick used for make shield closed
+	#SIDE: SERVER
+	#Range: 0 ~ 500000
+	"Shield power draw" = 500
+	#SIDE: SERVER/CLIENT
+	#Range: 1 ~ 32
+	"Maximum iris code length" = 9
+	#0 - disables unbreaking on iris
+	#100 - unbreaking makes iris unbreakable
+	#SIDE: SERVER
+	#Range: 0 ~ 100
+	"Unbreaking chance per level" = 10
+	#SIDE: SERVER/CLIENT
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Max titanium iris heat" = 1668.0
+	#SIDE: SERVER/CLIENT
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Max trinium iris heat" = 3336.0
+
+[Power]
+	#SIDE: SERVER/CLIENT
+	#Range: > 4608
+	"Stargate's internal buffer size" = 71280000
+	#SIDE: SERVER
+	#Range: 1 ~ 500000
+	"Stargate's max power throughput" = 26360
+	#SIDE: SERVER
+	#Range: 0 ~ 500000
+	"Stargate wormhole open power draw" = 4608
+	#SIDE: SERVER
+	#Range: 0 ~ 50
+	"Stargate wormhole sustain power draw" = 2
+	#Seconds of energy left before gate becomes unstable
+	#SIDE: SERVER
+	#Range: 1 ~ 120
+	"Stargate instability threshold" = 20
+	#SIDE: SERVER/CLIENT
+	#Range: 0.0 ~ 100.0
+	"Orlin's gate energy multiplier" = 2.0
+	#SIDE: SERVER/CLIENT
+	#Range: 0.0 ~ 100.0
+	"Universe gate energy multiplier" = 2.0
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER/CLIENT
+	#Range: 0 ~ 3
+	"Capacitors supported by Universe gates" = 1
+	#Specifies the multiplier of power needed to keep the gate alive
+	#when 8-symbols address is dialed
+	#SIDE: SERVER
+	#Range: 0.0 ~ 100.0
+	"Stargate eight symbols address power mul" = 1.2999999523162842
+	#Specifies the multiplier of power needed to keep the gate alive
+	#when 9-symbols address is dialed
+	#SIDE: SERVER
+	#Range: 0.0 ~ 100.0
+	"Stargate nine symbols address power mul" = 1.7000000476837158
+
+[Visual]
+	#Below this biome temperature the gate will receive frosty texture.
+	#Set to negative value to disable.
+	#SIDE: CLIENT
+	#Range: 0.0 ~ 5.0
+	"Temperature threshold for frosty overlay" = 0.10000000149011612
+	#Specify what blocks can not be used as camo for gates.
+	#These blocks are only additional. There are also blocks that are internally coded
+	#and can not be deleted from the blacklist!
+	#Format: "modid:block", for example: 
+	#"minecraft:stone"
+	#"minecraft:cobblestone"
+	#SIDE: SERVER/CLIENT
+	"Camo blocks blacklist" = []
+	#If the incoming animations of gates generate issues, set it to false
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER
+	"Allow incoming animations" = true
+	#Speed up dialing with computer on MW and UNI gates
+	#SIDE: SERVER/CLIENT
+	"Faster MilkyWay and Universe gates computer dial" = false
+	#Enable fast dialing on gates by default
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER/CLIENT
+	"Enable fast dialing of gates" = false
+	#SIDE: CLIENT
+	"Render not placed blocks of stargate" = true
+
+[PointOfOrigins]
+	#SIDE: CLIENT
+	"Enable different Point Of Origins for MW gate" = true
+	#Specifies Point Of Origins that were added by any resource pack.
+	#This options is required to load all models of added origins!
+	#Format: "id:name", for example: 
+	#"6:Tollan"
+	#"7:P4X-256"
+	#!DO NOT CHANGE ANYTHING IF YOU DON'T KNOW WHAT ARE YOU DOING!
+	#SIDE: CLIENT/SERVER
+	"Custom added points of origin" = []
+
+[EventHorizon]
+	#SIDE: SERVER
+	"Enable wrong side killing" = true
+	#SIDE: SERVER
+	#Range: 0.0 ~ 1.0
+	"Unstable Event Horizon chance of death" = 0.07000000029802322
+	#SIDE: SERVER
+	"Disable new kawoosh model (from 4_11_0_0)" = false
+	#SIDE: CLIENT
+	"Render EHs even if they are not rendering" = true
+
+[AutoClose]
+	#SIDE: SERVER
+	"Autoclose enabled" = true
+	#SIDE: SERVER
+	#Range: 1 ~ 300
+	"Seconds to autoclose with no players nearby" = 5
+
+[OpenTimeLimit]
+	#In seconds (2280 = 38 minutes)
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER
+	#Range: 5 ~ 3000
+	"Maximum seconds of gate should be open" = 240
+	#What happens after gate's open time reaches limit?
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER
+	#Allowed Values: DISABLED, CLOSE_GATE, DRAW_MORE_POWER
+	"Gate open time limit mode" = "DRAW_MORE_POWER"
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER
+	#Range: 0 ~ 50000
+	"Power draw after opened time limit" = 10000
+
+[RandomIncomingGenerator]
+	#Enable random incoming wormholes generator
+	#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+	#SIDE: SERVER
+	"Enable random incoming wormholes" = true
+	#10 = 1%
+	#SIDE: SERVER
+	#Range: 0 ~ 100
+	"Chance of spawning per 10 seconds" = 1
+

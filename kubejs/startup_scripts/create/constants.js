@@ -468,5 +468,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:empty_blaze_burner',
     'create:minecart_contraption',
     'create:furnace_minecart_contraption',
-    'create:chest_minecart_contraption'
+    'create:chest_minecart_contraption',
+    'create:framed_glass_pane'
 ];

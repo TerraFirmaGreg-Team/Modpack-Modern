@@ -1,0 +1,55 @@
+#SIDE: SERVER
+#Range: 1 ~ 64
+"DHD range's radius horizontal" = 25
+#SIDE: SERVER
+#Range: 1 ~ 64
+"DHD range's radius vertical" = 15
+#SIDE: SERVER
+#Range: 1 ~ 64
+"Universe dialer max horizontal reach radius" = 10
+#SIDE: SERVER/CLIENT
+#Range: 1 ~ 128000
+"DHD's max fluid capacity" = 16000
+#When capacity upgrade is placed in the DHD,
+#then multiply internal capacity by this number
+#SIDE: SERVER/CLIENT
+#Range: 1.0 ~ 5.0
+"Capacity upgrade multiplier" = 2.0
+#SIDE: SERVER
+#Range: 1 ~ 50000
+"Energy per 1mB Naquadah" = 10240
+#Energy per 1mB is multiplied by this
+#when efficiency upgrade is placed in the DHD
+#SIDE: SERVER
+#Range: 1.0 ~ 5.0
+"Efficiency upgrade multiplier" = 1.4
+#SIDE: SERVER
+#Range: 0.0 ~ 1.0
+"Cold fusion reactor activation energy level" = 0.9
+#SIDE: SERVER
+#Range: 0.0 ~ 1.0
+"Cold fusion reactor deactivation energy level" = 0.98
+#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+#SIDE: SERVER
+"Enable press sound when dialing with computer" = false
+#Enable opening last chevron while dialing milkyway gate with dhd
+#THIS OPTION CAN BE OVERRIDE BY SETTING IT IN STARGATE GUI
+#SIDE: SERVER
+"Enable opening last chevron while dialing with dhd" = true
+#SIDE: CLIENT
+"Enable hint when dialing on DHDs with notebook page" = true
+
+["Dialing helper colors"]
+	#Set colors of each dial helper button
+	#You should use HEX values
+	#SIDE: CLIENT
+	Normal = "#7FFFFF"
+	#Set colors of each dial helper button
+	#You should use HEX values
+	#SIDE: CLIENT
+	ExtraSymbols = "#E56BEE"
+	#Set colors of each dial helper button
+	#You should use HEX values
+	#SIDE: CLIENT
+	Origin = "#7FFF7F"
+
