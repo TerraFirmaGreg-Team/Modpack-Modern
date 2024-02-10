@@ -1535,7 +1535,10 @@ const registerTFCRecipes = (event) => {
     //#region Камень
 
     global.TFC_STONE_TYPES.forEach(stone => {
-        
+    
+        let stoneMaterial = GTMaterials.get(stone);
+        let stoneDust = ChemicalHelper.get(TagPrefix.dust, stoneMaterial, 1)
+
         // Кирпич (предмет)
         event.recipes.gtceu.assembler(`tfg:tfc/${stone}_loose_to_brick`)             
             .itemInputs(`tfc:rock/loose/${stone}`)
@@ -1562,17 +1565,17 @@ const registerTFCRecipes = (event) => {
         // Сырой камень -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_raw_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 0, `tfc:rock/raw/${stone}_stairs`, 100, 8, `${stone}_raw_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 0, [`tfc:rock/raw/${stone}_stairs`, stoneDust], 100, 8, `${stone}_raw_to_stairs`)
 
         // Сырой камень -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_raw_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 1, `2x tfc:rock/raw/${stone}_slab`, 100, 8, `${stone}_raw_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 1, [`2x tfc:rock/raw/${stone}_slab`, stoneDust], 100, 8, `${stone}_raw_to_slab`)
 
         // Сырой камень -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_raw_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 2, `tfc:rock/raw/${stone}_wall`, 100, 8, `${stone}_raw_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 2, [`tfc:rock/raw/${stone}_wall`, stoneDust], 100, 8, `${stone}_raw_to_wall`)
 
         // ? -> Сырая нажимная пластина
         event.shaped(`tfc:rock/pressure_plate/${stone}`, [
@@ -1638,17 +1641,17 @@ const registerTFCRecipes = (event) => {
         // Булыжник -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_cobble_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 0, `tfc:rock/cobble/${stone}_stairs`, 100, 8, `${stone}_cobble_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 0, [`tfc:rock/cobble/${stone}_stairs`, stoneDust], 100, 8, `${stone}_cobble_to_stairs`)
 
         // Булыжник -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_cobble_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 1, `2x tfc:rock/cobble/${stone}_slab`, 100, 8, `${stone}_cobble_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 1, [`2x tfc:rock/cobble/${stone}_slab`, stoneDust], 100, 8, `${stone}_cobble_to_slab`)
 
         // Булыжник -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_cobble_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 2, `tfc:rock/cobble/${stone}_wall`, 100, 8, `${stone}_cobble_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 2, [`tfc:rock/cobble/${stone}_wall`, stoneDust], 100, 8, `${stone}_cobble_to_wall`)
 
         //#endregion
 
@@ -1673,17 +1676,17 @@ const registerTFCRecipes = (event) => {
         // Булыжник -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_smooth_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 0, `tfc:rock/smooth/${stone}_stairs`, 100, 8, `${stone}_smooth_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 0, [`tfc:rock/smooth/${stone}_stairs`, stoneDust], 100, 8, `${stone}_smooth_to_stairs`)
 
         // Булыжник -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_smooth_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 1, `2x tfc:rock/smooth/${stone}_slab`, 100, 8, `${stone}_smooth_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 1, [`2x tfc:rock/smooth/${stone}_slab`, stoneDust], 100, 8, `${stone}_smooth_to_slab`)
 
         // Булыжник -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_smooth_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 2, `tfc:rock/smooth/${stone}_wall`, 100, 8, `${stone}_smooth_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 2, [`tfc:rock/smooth/${stone}_wall`, stoneDust], 100, 8, `${stone}_smooth_to_wall`)
 
         //#endregion
     
@@ -1701,17 +1704,17 @@ const registerTFCRecipes = (event) => {
         // Блок кирпичей -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_bricks_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 0, `tfc:rock/bricks/${stone}_stairs`, 100, 8, `${stone}_bricks_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 0, [`tfc:rock/bricks/${stone}_stairs`, stoneDust], 100, 8, `${stone}_bricks_to_stairs`)
 
         // Блок кирпичей -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_bricks_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 1, `2x tfc:rock/bricks/${stone}_slab`, 100, 8, `${stone}_bricks_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 1, [`2x tfc:rock/bricks/${stone}_slab`, stoneDust], 100, 8, `${stone}_bricks_to_slab`)
 
         // Блок кирпичей -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_bricks_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 2, `tfc:rock/bricks/${stone}_wall`, 100, 8, `${stone}_bricks_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 2, [`tfc:rock/bricks/${stone}_wall`, stoneDust], 100, 8, `${stone}_bricks_to_wall`)
 
         //#endregion
     
@@ -1727,17 +1730,17 @@ const registerTFCRecipes = (event) => {
         // Потрескавшийся кирпич -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 0, `tfc:rock/cracked_bricks/${stone}_stairs`, 100, 8, `${stone}_cracked_bricks_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 0, [`tfc:rock/cracked_bricks/${stone}_stairs`, stoneDust], 100, 8, `${stone}_cracked_bricks_to_stairs`)
 
         // Потрескавшийся кирпич -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 1, `2x tfc:rock/cracked_bricks/${stone}_slab`, 100, 8, `${stone}_cracked_bricks_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 1, [`2x tfc:rock/cracked_bricks/${stone}_slab`, stoneDust], 100, 8, `${stone}_cracked_bricks_to_slab`)
 
         // Потрескавшийся кирпич -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 2, `tfc:rock/cracked_bricks/${stone}_wall`, 100, 8, `${stone}_cracked_bricks_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 2, [`tfc:rock/cracked_bricks/${stone}_wall`, stoneDust], 100, 8, `${stone}_cracked_bricks_to_wall`)
 
         //#endregion
 
@@ -1772,17 +1775,17 @@ const registerTFCRecipes = (event) => {
         // Замшелый булыжник -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 0, `tfc:rock/mossy_cobble/${stone}_stairs`, 100, 8, `${stone}_mossy_cobble_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 0, [`tfc:rock/mossy_cobble/${stone}_stairs`, stoneDust], 100, 8, `${stone}_mossy_cobble_to_stairs`)
 
         //Замшелый булыжник -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 1, `2x tfc:rock/mossy_cobble/${stone}_slab`, 100, 8, `${stone}_mossy_cobble_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 1, [`2x tfc:rock/mossy_cobble/${stone}_slab`, stoneDust], 100, 8, `${stone}_mossy_cobble_to_slab`)
 
         // Замшелый булыжник -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 2, `tfc:rock/mossy_cobble/${stone}_wall`, 100, 8, `${stone}_mossy_cobble_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 2, [`tfc:rock/mossy_cobble/${stone}_wall`, stoneDust], 100, 8, `${stone}_mossy_cobble_to_wall`)
 
         //#endregion
 
@@ -1800,17 +1803,17 @@ const registerTFCRecipes = (event) => {
         // Замшелый булыжник -> Ступени
         event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_stairs` })
 
-        generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 0, `tfc:rock/mossy_bricks/${stone}_stairs`, 100, 8, `${stone}_mossy_bricks_to_stairs`)
+        generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 0, [`tfc:rock/mossy_bricks/${stone}_stairs`, stoneDust], 100, 8, `${stone}_mossy_bricks_to_stairs`)
 
         //Замшелый булыжник -> Плиты
         event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_slab` })
 
-        generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 1, `2x tfc:rock/mossy_bricks/${stone}_slab`, 100, 8, `${stone}_mossy_bricks_to_slab`)
+        generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 1, [`2x tfc:rock/mossy_bricks/${stone}_slab`, stoneDust], 100, 8, `${stone}_mossy_bricks_to_slab`)
 
         // Замшелый булыжник -> Стена
         event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_wall` })
 
-        generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 2, `tfc:rock/mossy_bricks/${stone}_wall`, 100, 8, `${stone}_mossy_bricks_to_wall`)
+        generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 2, [`tfc:rock/mossy_bricks/${stone}_wall`, stoneDust], 100, 8, `${stone}_mossy_bricks_to_wall`)
 
         //#endregion
     
@@ -2165,54 +2168,72 @@ const registerTFCRecipes = (event) => {
         generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 4, `tfc:cut_sandstone/${sandColor}`, 100, 8, `cut_sandstone_${sandColor}_to_smooth_sandstone`)
 
         // Песчанник -> Ступень
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_raw_stairs` })
+
         event.stonecutting(`tfc:raw_sandstone/${sandColor}_stairs`, `tfc:raw_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_sandstone_to_stairs`)
 
         generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 0, `tfc:raw_sandstone/${sandColor}_stairs`, 100, 8, `${sandColor}_sandstone_to_stairs`)
 
         // Песчанник -> Плита
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_raw_slab` })
+
         event.stonecutting(`2x tfc:raw_sandstone/${sandColor}_slab`, `tfc:raw_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_sandstone_to_slabs`)
 
         generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 1, `2x tfc:raw_sandstone/${sandColor}_slab`, 100, 8, `${sandColor}_sandstone_to_slab`)
 
         // Песчанник -> Стена
-        event.stonecutting(`tfc:raw_sandstone/${sandColor}_stairs`, `tfc:raw_sandstone/${sandColor}`)
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_raw_wall` })
+
+        event.stonecutting(`tfc:raw_sandstone/${sandColor}_wall`, `tfc:raw_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_sandstone_to_wall`)
 
         generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 2, `tfc:raw_sandstone/${sandColor}_wall`, 100, 8, `${sandColor}_sandstone_to_wall`)
 
         // Гладкий песчанник -> Ступень
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_smooth_stairs` })
+
         event.stonecutting(`tfc:smooth_sandstone/${sandColor}_stairs`, `tfc:smooth_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_smooth_sandstone_to_stairs`)
 
         generateCutterRecipe(event, `tfc:smooth_sandstone/${sandColor}`, 0, `tfc:smooth_sandstone/${sandColor}_stairs`, 100, 8, `${sandColor}_smooth_sandstone_to_stairs`)
 
         // Гладкий песчанник -> Плита
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_smooth_slab` })
+
         event.stonecutting(`2x tfc:smooth_sandstone/${sandColor}_slab`, `tfc:smooth_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_smooth_sandstone_to_slab`)
 
         generateCutterRecipe(event, `tfc:smooth_sandstone/${sandColor}`, 1, `2x tfc:smooth_sandstone/${sandColor}_slab`, 100, 8, `${sandColor}_smooth_sandstone_to_slab`)
 
         // Гладкий песчанник -> Стена
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_smooth_wall` })
+
         event.stonecutting(`tfc:smooth_sandstone/${sandColor}_wall`, `tfc:smooth_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_smooth_sandstone_to_wall`)
 
         generateCutterRecipe(event, `tfc:smooth_sandstone/${sandColor}`, 2, `tfc:smooth_sandstone/${sandColor}_wall`, 100, 8, `${sandColor}_smooth_sandstone_to_wall`)
 
         // Обрезанный песчанник -> Ступень
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_cut_stairs` })
+
         event.stonecutting(`tfc:cut_sandstone/${sandColor}_stairs`, `tfc:cut_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_stairs`)
 
         generateCutterRecipe(event, `tfc:cut_sandstone/${sandColor}`, 0, `tfc:cut_sandstone/${sandColor}_stairs`, 100, 8, `${sandColor}_cut_sandstone_to_stairs`)
 
         // Обрезанный песчанник -> Плита
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_cut_slab` })
+
         event.stonecutting(`2x tfc:cut_sandstone/${sandColor}_slab`, `tfc:cut_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_slab`)
 
         generateCutterRecipe(event, `tfc:cut_sandstone/${sandColor}`, 1, `2x tfc:cut_sandstone/${sandColor}_slab`, 100, 8, `${sandColor}_cut_sandstone_to_slab`)
 
         // Обрезанный песчанник -> Стена
+        event.remove({ id: `tfc:crafting/sandstone/${sandColor}_cut_wall` })
+
         event.stonecutting(`tfc:cut_sandstone/${sandColor}_wall`, `tfc:cut_sandstone/${sandColor}`)
             .id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_wall`)
 

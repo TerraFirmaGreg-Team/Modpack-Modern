@@ -897,3 +897,16 @@ global.MINECRAFT_DYE_NAMES = [
     'red',
     'black'
 ];
+
+global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS = [
+    // Default
+    { block: 'minecraft:copper_block', cutted: 'minecraft:cut_copper', stairs: 'minecraft:cut_copper_stairs', slabs: 'minecraft:cut_copper_slab', name: 'copper' },
+    { block: 'minecraft:exposed_copper', cutted: 'minecraft:exposed_cut_copper', stairs: 'minecraft:exposed_cut_copper_stairs', slabs: 'minecraft:exposed_cut_copper_slab', name: 'exposed_copper' },
+    { block: 'minecraft:weathered_copper', cutted: 'minecraft:weathered_cut_copper', stairs: 'minecraft:weathered_cut_copper_stairs', slabs: 'minecraft:weathered_cut_copper_slab', name: 'weathered_copper' },
+    { block: 'minecraft:oxidized_copper', cutted: 'minecraft:oxidized_cut_copper', stairs: 'minecraft:oxidized_cut_copper_stairs', slabs: 'minecraft:oxidized_cut_copper_slab', name: 'oxidized_copper' },
+    // Waxed
+    { block: 'minecraft:waxed_copper_block', cutted: 'minecraft:waxed_cut_copper', stairs: 'minecraft:waxed_cut_copper_stairs', slabs: 'minecraft:waxed_cut_copper_slab', name: 'waxed_copper' },
+    { block: 'minecraft:waxed_exposed_copper', cutted: 'minecraft:waxed_exposed_cut_copper', stairs: 'minecraft:waxed_exposed_cut_copper_stairs', slabs: 'minecraft:waxed_exposed_cut_copper_slab', name: 'waxed_exposed_copper' },
+    { block: 'minecraft:waxed_weathered_copper', cutted: 'minecraft:waxed_weathered_cut_copper', stairs: 'minecraft:waxed_weathered_cut_copper_stairs', slabs: 'minecraft:waxed_weathered_cut_copper_slab', name: 'waxed_weathered_copper' },
+    { block: 'minecraft:waxed_oxidized_copper', cutted: 'minecraft:waxed_oxidized_cut_copper', stairs: 'minecraft:waxed_oxidized_cut_copper_stairs', slabs: 'minecraft:waxed_oxidized_cut_copper_slab', name: 'waxed_oxidized_copper' }
+];

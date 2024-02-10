@@ -15,12 +15,13 @@ const registerGTCEULoots = (event) => {
                 let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
                 let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
 
+                let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+
                 let blockName = `gtceu:${stoneType}_${material.getName()}_ore`
 
                 if (!richRawOre.isEmpty() && !normalRawOre.isEmpty() && !poorRawOre.isEmpty()) {
                     
                     event.addBlockLootModifier(blockName)
-                        .matchMainHand('#minecraft:pickaxes')
                         .removeLoot(Ingredient.all)
                         .addWeightedLoot([
                             richRawOre.withChance(0.2),
@@ -31,11 +32,22 @@ const registerGTCEULoots = (event) => {
                 
                 if (!stoneTypeDust.isEmpty()) {
                     event.addBlockLootModifier(blockName)
-                        .matchMainHand('#minecraft:pickaxes')
                         .addLoot(
                             LootEntry.of(stoneTypeDust).when((c) => c.randomChance(0.25))
                         )
                 }
+
+                if (!crushedOre.isEmpty()) {
+                    event.addBlockLootModifier(blockName)
+                        .matchMainHand('#forge:tools/hammers')
+                        .removeLoot(Ingredient.all)
+                        .addWeightedLoot([
+                            crushedOre.withChance(0.8),
+                            crushedOre.withCount(2).withChance(0.2)
+                        ]);
+                }
+
+                
             }
         })
     })

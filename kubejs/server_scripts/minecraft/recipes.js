@@ -1337,27 +1337,114 @@ const registerMinecraftRecipes = (event) => {
     
     //#endregion
 
-    /*
-    const dead = [
-        { input: 'minecraft:copper_block', output: 'minecraft:exposed_copper', name: ''},
-        { input: 'minecraft:exposed_copper', output: 'minecraft:weathered_copper', name: ''},
-        { input: 'minecraft:weathered_copper', output: 'minecraft:oxidized_copper', name: ''},
-        { input: '', output: '', name: ''},
-    ];*/
-
-    const dead1 = [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-    ];
-
     //#region Добавление
 
-    generateCutterRecipe()
+    for (let i = 0; i < global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length; i++) {
+        let element = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i];
+
+        // Создание ржавчины
+        if (i < global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2 - 1) {
+            
+            let element2 = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i + 1]
+            
+            event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_block_${element.name}`)             
+                .itemInputs(element.block)
+                .inputFluids(Fluid.of('minecraft:water', 150))
+                .circuit(1)
+                .itemOutputs(element2.block)
+                .duration(1000)
+                .EUt(4)
+
+            event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_cutted_${element.name}`)             
+                .itemInputs(element.cutted)
+                .inputFluids(Fluid.of('minecraft:water', 150))
+                .circuit(1)
+                .itemOutputs(element2.cutted)
+                .duration(1000)
+                .EUt(4)
+
+            event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_stairs_${element.name}`)             
+                .itemInputs(element.stairs)
+                .inputFluids(Fluid.of('minecraft:water', 150))
+                .circuit(1)
+                .itemOutputs(element2.stairs)
+                .duration(1000)
+                .EUt(4)
+
+            event.recipes.gtceu.chemical_reactor(`tfg:minecraft/oxidizing_slabs_${element.name}`)             
+                .itemInputs(element.slabs)
+                .inputFluids(Fluid.of('minecraft:water', 150))
+                .circuit(1)
+                .itemOutputs(element2.slabs)
+                .duration(1000)
+                .EUt(4)
+        } else if (i > global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2 - 1) {
+            let element2 = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i - global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2]
+
+            event.recipes.gtceu.assembler(`tfg:minecraft/waxing_block_${element.name}`)             
+                .itemInputs(element2.block, 'firmalife:beeswax')
+                .circuit(1)
+                .itemOutputs(element.block)
+                .duration(50)
+                .EUt(4)
+
+            event.recipes.gtceu.assembler(`tfg:minecraft/waxing_cutted_${element.name}`)             
+                .itemInputs(element2.cutted, 'firmalife:beeswax')
+                .circuit(1)
+                .itemOutputs(element.cutted)
+                .duration(50)
+                .EUt(4)
+
+            event.recipes.gtceu.assembler(`tfg:minecraft/waxing_stairs_${element.name}`)             
+                .itemInputs(element2.stairs, 'firmalife:beeswax')
+                .circuit(1)
+                .itemOutputs(element.stairs)
+                .duration(50)
+                .EUt(4)
+
+            event.recipes.gtceu.assembler(`tfg:minecraft/waxing_slabs_${element.name}`)             
+                .itemInputs(element2.slabs, 'firmalife:beeswax')
+                .circuit(1)
+                .itemOutputs(element.slabs)
+                .duration(50)
+                .EUt(4)
+
+        }
+
+        // Обрезанный блок
+
+        event.stonecutting(element.cutted, element.block)
+            .id(`tfg:stonecutting/cutted_${element.name}`)
+
+        generateCutterRecipe(event, element.block, 4, element.cutted, 100, 8, `cutted_${element.name}`)
+
+        // Not working, because JS is shit!
+        // event.recipes.tfc.chisel(element.cutted,  element.block, 'smooth')
+        //     .id(`tfg:chisel/cutted_${element.name}`)
+        
+        // Ступени
+
+        event.stonecutting(element.stairs, element.cutted)
+            .id(`tfg:stonecutting/stairs_${element.name}`)
+
+        generateCutterRecipe(event, element.cutted, 0, [element.stairs, 'gtceu:small_copper_dust'], 100, 8, `stairs_${element.name}`)
+
+        // Not working, because JS is shit!
+        // event.recipes.tfc.chisel(element.stair,  element.cutted, 'stair')
+        //     .id(`tfg:chisel/stair_${element.name}`)
+
+        // Полублоки
+
+        event.stonecutting(element.slabs, element.cutted)
+            .id(`tfg:stonecutting/slabs_${element.name}`)
+
+        generateCutterRecipe(event, element.cutted, 1, [element.slabs, '2x gtceu:small_copper_dust'], 100, 8, `slabs_${element.name}`)
+
+        // Not working, because JS is shit!
+        // event.recipes.tfc.chisel(element.slab,  element.cutted, 'slab')
+        //     .id(`tfg:chisel/slab_${element.name}`)
+
+    }
 
     //#endregion
 

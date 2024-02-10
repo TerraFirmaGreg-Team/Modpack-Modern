@@ -1,0 +1,11 @@
+
+[general]
+	#Force creation of canoes from specified wood types. Turning this to false will make canoes craftable from any wood type.
+	canoeWoodRestriction = true
+	#Force creation of ships and rowboats from specified wood types. Turning this to false will make ships and rowboats craftable from any wood type.
+	shipWoodRestriction = true
+	#Force reduceDebugInfo gamerule. Turn this to FALSE if you want coordinates bad.
+	forceReducedDebugInfo = false
+	#Disables vanilla boats and base TFC boats from working.
+	disableVanillaBoatFunctionality = true
+
