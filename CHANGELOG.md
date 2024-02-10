@@ -12,12 +12,11 @@
 - Fixed the recipe for sandstone walls in the carver.
 - Added stone output in the form of dust to stone cutting recipes in GTCEu Cutter.
 - Added recipes for obtaining oxidized copper blocks, steps from them, and so on.
-- Removed the solar steam boiler recipe.
 - Removed recipes for sand half-blocks, stairs and walls in the workbench.
 - Fixed display of chunk boundaries.
 - BetterF3 is configured once again.
-- Fixed a bug when ore dug up with a hammer for drilling did not drop rich and poor pieces.
-- Fixed a bug when the miner did not mine rich and poor pieces of ore.
+- Fixed a bug when ore dug up with a hammer for drilling did not drop rich and poor chunks.
+- Fixed a bug when the miner did not mine rich and poor chunks of ore.
 - Fixed the quest for the red and blue anvil.
 - Bronze steam boilers have been returned.
 - Hidden the category in EMI, reflecting processing in the stone cutter, since there is already the same one from Create.
