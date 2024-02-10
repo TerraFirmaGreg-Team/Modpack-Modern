@@ -2,32 +2,32 @@
 
 ## [0.6.12] - Planned on 10.02.2024
 ### Changes
-- Повсеместно улучшены квесты примитивной и стальной эры.
-- Удален блок стекла из Create.
-- Исправлены наименования рецептов мода sophisticated backpack.
-- Удалены из отображения рецепты покраски тулбоксов из Create.
-- Добавлен перевод для основных квестов примитивной эры.
-- Исправлено зависание игры при открытии меню квестов, это был баг мода FTB-Quests.
-- Удалено множество рецептов незер блоков и предметов, будут возвращены, когда будет добавлен ад.
-- Исправлен рецепт стен из песчанника в резчике.
-- В рецепты вырезания камня в GTCEu Cutter добавлен выход камня в виде пыли.
-- Добавлены рецепты для получения окисленных блоков меди, ступенек из них и так далее.
-- Удален рецепт солнечного парового бойлера.
-- Удалены рецепты песчаных полублоков, лестниц и стен в верстаке.
-- Исправлено отображение границ чанков.
-- В очередной раз настроен BetterF3.
-- Исправлен баг, когда руда выкопанная молотом для бурения не дропала богатые и бедные куски.
-- Исправлен баг, когда майнер не добывал богатые и бедные куски руды.
-- Исправлен квест на красную и синюю наковальню.
-- Возвращены бронзовые паровые бойлеры.
-- Скрыта категория в EMI, отражающая переработку в камнерезе, так как уже есть такая же из Create.
-- Исправлен баг, когда при первом входе на официальный сервер майнкрафт зависал на бесконечной загрузке.
-- Чуть увеличена частота спавна нефтеносного песка.
-- Добавлен TFC рецепт стеклодувки для стеклянной трубки из GTCEu.
-- Исправлен рецепт лампы из TFC.
-- Изменены квесты в связи с разблокировкой бронзовых бойлеров. Теперь перейти в паровую эру можно с бронзы (правда, сделать машины из бронзы вы не сможете, хи-хи).
-- Исправлены рецепты некоторых ванильных предметов.
-- Добавлено больше рецептов для предметов FirmaLife, через машины GTCEu.
+- Primitive and Steel Age quests have been improved throughout.
+- Removed glass block from Create.
+- Fixed names of recipes for the sophisticated backpack mod.
+- Recipes for painting toolboxes from Create have been removed from display.
+- Added translation for the main quests of the primitive era.
+- Fixed the game freezing when opening the quest menu, this was a bug in the FTB-Quests mod.
+- Removed many recipes for nether blocks and items, will be returned when hell is added.
+- Fixed the recipe for sandstone walls in the carver.
+- Added stone output in the form of dust to stone cutting recipes in GTCEu Cutter.
+- Added recipes for obtaining oxidized copper blocks, steps from them, and so on.
+- Removed the solar steam boiler recipe.
+- Removed recipes for sand half-blocks, stairs and walls in the workbench.
+- Fixed display of chunk boundaries.
+- BetterF3 is configured once again.
+- Fixed a bug when ore dug up with a hammer for drilling did not drop rich and poor pieces.
+- Fixed a bug when the miner did not mine rich and poor pieces of ore.
+- Fixed the quest for the red and blue anvil.
+- Bronze steam boilers have been returned.
+- Hidden the category in EMI, reflecting processing in the stone cutter, since there is already the same one from Create.
+- Fixed a bug when, when you first logged into the official server, Minecraft was stuck on endless loading.
+- Slightly increased the spawn frequency of oil sands.
+- Added TFC glass blower recipe for glass pipe from GTCEu.
+- Fixed the lamp recipe from TFC.
+- Changed quests in connection with unlocking bronze boilers. Now you can switch to the steam era from bronze (though you won’t be able to make cars from bronze, hee hee).
+- Fixed recipes for some vanilla items.
+- Added more recipes for FirmaLife items via GTCEu machines.
 
 ## [0.6.11] - 05.02.2024
 ### Changes
