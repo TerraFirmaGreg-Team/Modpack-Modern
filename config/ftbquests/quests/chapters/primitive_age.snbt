@@ -371,7 +371,11 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.387DEEADF4922AB3.d1}"]
+			description: [
+				"{quests.387DEEADF4922AB3.d1}"
+				""
+				"{ \"text\": \"Excel Link (Tap here)\", \"color\":\"#02FF00\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4\" } }"
+			]
 			icon: "gtceu:shale_aluminium_ore"
 			id: "387DEEADF4922AB3"
 			subtitle: "{quests.387DEEADF4922AB3.st}"
@@ -3436,49 +3440,30 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["1FCCE634F644AE61"]
+			dependencies: [
+				"1FCCE634F644AE61"
+				"6069CE93C1D1197C"
+			]
+			dependency_requirement: "one_completed"
 			id: "1D19FFD228A4951F"
 			size: 2.0d
 			tasks: [{
-				id: "0CAAD19630D9CA1C"
+				id: "0CA421EA60D850F6"
 				item: {
 					Count: 1b
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfc:metal/anvil/blue_steel)item(tfc:metal/anvil/red_steel))"
 					}
-					id: "tfc:metal/anvil/red_steel"
 				}
+				title: "Any Anvil of 6 Tier"
 				type: "item"
 			}]
 			x: 37.0d
-			y: 14.5d
+			y: 16.0d
 		}
 		{
-			dependencies: ["6069CE93C1D1197C"]
-			id: "65E7CD701194EA05"
-			size: 2.0d
-			tasks: [{
-				id: "5614177FB215A9BA"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/blue_steel"
-				}
-				type: "item"
-			}]
-			x: 37.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["65E7CD701194EA05"]
+			dependencies: ["1D19FFD228A4951F"]
 			id: "32EFAF9DD97AC387"
 			tasks: [{
 				id: "52FC94E909B16B77"
@@ -5011,7 +4996,13 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			description: ["{quests.3D7B0F3134C30364.d1}"]
-			icon: "ftbquests:book"
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "tfc:field_guide"
+				}
+			}
 			id: "3D7B0F3134C30364"
 			tasks: [{
 				id: "6EB0915B34A4054C"

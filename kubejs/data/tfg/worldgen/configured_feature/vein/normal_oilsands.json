@@ -1,9 +1,9 @@
 {
   "type": "tfc:cluster_vein",
   "config": {
-    "rarity": 170,
-    "density": 0.3,
-    "min_y": 20,
+    "rarity": 155,
+    "density": 0.25,
+    "min_y": 0,
     "max_y": 70,
     "size": 55,
     "random_name": "normal_oilsands",
