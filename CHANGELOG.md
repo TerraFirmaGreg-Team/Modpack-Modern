@@ -27,6 +27,7 @@
 - Changed quests in connection with unlocking bronze boilers. Now you can switch to the steam era from bronze (though you won’t be able to make cars from bronze, hee hee).
 - Fixed recipes for some vanilla items.
 - Added more recipes for FirmaLife items via GTCEu machines.
+- Decreased EUt required for ae2 quartz glass.
 
 ## [0.6.11] - 05.02.2024
 ### Changes

@@ -1668,7 +1668,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs('5x #forge:dusts/certus_quartz', '4x #forge:glass')
         .itemOutputs('4x ae2:quartz_glass')
         .duration(20)
-        .EUt(480)
+        .EUt(120)
     
     // Vibrant Quartz Glass
     event.recipes.gtceu.alloy_smelter('ae2:quartz_vibrant_glass')
