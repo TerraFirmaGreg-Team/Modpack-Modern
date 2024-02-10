@@ -8,14 +8,6 @@
 	order_index: 1
 	quest_links: [
 		{
-			id: "582A6B4135EABE27"
-			linked_quest: "5C7B69F45F076A79"
-			shape: "gear"
-			size: 3.0d
-			x: -3.0d
-			y: 0.0d
-		}
-		{
 			id: "1C86D83D29134EBE"
 			linked_quest: "253860AD4DF4224C"
 			x: 5.5d
@@ -50,6 +42,14 @@
 			linked_quest: "478D0DF94D7495EF"
 			x: -0.5d
 			y: -3.0d
+		}
+		{
+			id: "3426BCAE1210DAE4"
+			linked_quest: "3FB3EE093DDC6B56"
+			shape: "gear"
+			size: 3.0d
+			x: -7.5d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -102,7 +102,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["5C7B69F45F076A79"]
+			dependencies: ["3FB3EE093DDC6B56"]
 			description: [
 				"&6GregTech&r can quickly get &4overwhelming&r with the plethora of fluids it introduces, so you may be looking for a way to store them. "
 				""
@@ -126,11 +126,11 @@
 				type: "item"
 			}]
 			title: "Armoured Tanks"
-			x: -4.5d
+			x: -9.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["5C7B69F45F076A79"]
+			dependencies: ["3F087862270F649A"]
 			description: [
 				"Make the listed molds for future alloy smelting. Be sure to make &aMolds&r - don't make &cExtruder Shapes&r, as they're used in a different machine."
 				""
@@ -244,7 +244,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5C7B69F45F076A79"]
+			dependencies: ["3FB3EE093DDC6B56"]
 			description: [
 				"&bFluid Pipes&r will transport &7Steam&r between machines for you."
 				""
@@ -278,11 +278,11 @@
 				type: "item"
 			}]
 			title: "Fluid Pipes"
-			x: -2.0d
+			x: -7.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["5C7B69F45F076A79"]
+			dependencies: ["3F087862270F649A"]
 			description: [
 				"&dSteam Machines&r accept any Steam that is pumped from nearby Boilers into their internal storage tank. They will run recipes from JEI up to 32 EU/t (&7LV&r-tier)."
 				""
@@ -437,7 +437,7 @@
 				type: "item"
 			}]
 			title: "Potin Seller..."
-			x: -2.0d
+			x: -7.5d
 			y: -4.5d
 		}
 		{
@@ -645,8 +645,8 @@
 				}
 			]
 			title: "Steam Oven"
-			x: -8.5d
-			y: -1.5d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["03DBF1961AE21C76"]
@@ -721,37 +721,26 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["5C7B69F45F076A79"]
+			dependencies: ["3F087862270F649A"]
 			id: "011EC2CE0111C9A0"
 			tasks: [{
 				id: "7A1C685F48E09F6B"
 				item: "gtceu:hp_steam_furnace"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: -6.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["5C7B69F45F076A79"]
-			id: "3D6E423744153954"
-			tasks: [{
-				id: "2908168A0D5379D3"
-				item: "gtceu:hp_steam_liquid_boiler"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5C7B69F45F076A79"]
+			dependencies: ["3F087862270F649A"]
 			id: "41F23E44E154C3E9"
 			tasks: [{
 				id: "22542CDE2F0C0524"
 				item: "gtceu:hp_steam_rock_crusher"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 1.5d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -767,6 +756,46 @@
 			}]
 			x: 1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["3FB3EE093DDC6B56"]
+			id: "7470E713F599B891"
+			tasks: [{
+				id: "0DF1243A3267F636"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lp_steam_solid_boiler)item(gtceu:lp_steam_liquid_boiler)item(gtceu:lp_steam_solar_boiler))"
+					}
+				}
+				title: "Any Low Pressure Boiler"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3FB3EE093DDC6B56"
+				"445E060EF3300A49"
+			]
+			id: "3F087862270F649A"
+			size: 2.0d
+			tasks: [{
+				id: "0BBF678F5A0517D7"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hp_steam_solid_boiler)item(gtceu:hp_steam_liquid_boiler)item(gtceu:hp_steam_solar_boiler))"
+					}
+				}
+				title: "Any High Pressure Boiler"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

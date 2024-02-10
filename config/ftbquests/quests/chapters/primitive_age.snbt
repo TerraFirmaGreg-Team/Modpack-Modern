@@ -2308,46 +2308,6 @@
 			y: 18.5d
 		}
 		{
-			dependencies: ["445E060EF3300A49"]
-			description: [
-				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
-				""
-				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
-				"{@pagebreak}"
-				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
-				""
-				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
-				"...and..."
-				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
-				"...AND..."
-				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
-				"{@pagebreak}"
-				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
-				""
-				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
-				""
-				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
-				""
-				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
-				""
-				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
-				""
-				"Make &eone&r of the proposed HP machines to complete this quest."
-			]
-			id: "5C7B69F45F076A79"
-			shape: "gear"
-			size: 3.0d
-			subtitle: "Putting the Steam in Steam Age"
-			tasks: [{
-				id: "2D2CDB71DF062E33"
-				item: "gtceu:hp_steam_solid_boiler"
-				type: "item"
-			}]
-			title: "Pressure Cookin'"
-			x: 24.5d
-			y: 24.0d
-		}
-		{
 			dependencies: ["6564CC704664FE81"]
 			id: "0006D60580FCA6B7"
 			tasks: [{
@@ -5028,7 +4988,7 @@
 				}
 			]
 			title: "Copper Waxing [WIP]"
-			x: -9.0d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -5038,8 +4998,8 @@
 				title: "Cellar [WIP]"
 				type: "checkmark"
 			}]
-			x: -6.0d
-			y: 0.0d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			id: "13C1E19024011698"
@@ -5049,7 +5009,7 @@
 				type: "checkmark"
 			}]
 			x: -7.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "260CCACEAE35BFDC"
@@ -5058,8 +5018,48 @@
 				title: "Greenhouse [WIP]"
 				type: "checkmark"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4504EBE720145441"]
+			description: [
+				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
+				""
+				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
+				"{@pagebreak}"
+				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
+				""
+				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
+				"...and..."
+				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
+				"...AND..."
+				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
+				"{@pagebreak}"
+				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
+				""
+				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
+				""
+				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
+				""
+				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
+				""
+				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
+				""
+				"Make &eone&r of the proposed HP machines to complete this quest."
+			]
+			id: "3FB3EE093DDC6B56"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Putting the Steam in Steam Age"
+			tasks: [{
+				id: "4DCB027DEC293E72"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			title: "Pressure Cookin'"
+			x: 20.5d
+			y: 24.0d
 		}
 	]
 	title: "Primitive Age"

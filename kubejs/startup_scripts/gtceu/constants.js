@@ -7,17 +7,14 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:tiny_wheat_dust',
 
     // Bronze Machines
-    'gtceu:bronze_machine_casing', 
-    'gtceu:bronze_brick_casing', 
-    'gtceu:steam_miner', 
-    'gtceu:lp_steam_solid_boiler', 
-    'gtceu:lp_steam_liquid_boiler', 
-    'gtceu:lp_steam_extractor', 
-    'gtceu:lp_steam_macerator', 
-    'gtceu:lp_steam_compressor', 
+    'gtceu:bronze_machine_casing',
+    'gtceu:steam_miner',
+    'gtceu:lp_steam_extractor',
+    'gtceu:lp_steam_macerator',
+    'gtceu:lp_steam_compressor',
     'gtceu:lp_steam_forge_hammer',
-    'gtceu:lp_steam_furnace', 
-    'gtceu:lp_steam_alloy_smelter', 
+    'gtceu:lp_steam_furnace',
+    'gtceu:lp_steam_alloy_smelter',
     'gtceu:lp_steam_rock_crusher',
 
     // Другое
