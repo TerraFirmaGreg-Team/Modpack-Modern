@@ -1320,7 +1320,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
 					}
 				}
-				title: "Наковальня из любой бронзы"
+				title: "Any anvil from any bronze"
 				type: "item"
 			}]
 			x: 18.5d
@@ -1662,7 +1662,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Медная или бронзовая кирка"
+				title: "Copper or bronze pickaxe"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1724,7 +1724,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Медная или бронзовая стамеска"
+				title: "Copper or bronze chisel"
 				type: "item"
 			}]
 			x: 9.5d
@@ -1935,7 +1935,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Медная или бронзовая пила"
+				title: "Copper or bronze saw"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1954,7 +1954,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Медная или бронзовая кирка шахтера"
+				title: "Copper or bronze propick"
 				type: "item"
 			}]
 			x: 8.0d
@@ -2415,7 +2415,7 @@
 				type: "item"
 			}]
 			x: 20.5d
-			y: 18.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["15E8DFB91603906B"]
@@ -3119,7 +3119,7 @@
 				type: "item"
 			}]
 			x: 20.5d
-			y: 20.0d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -5022,7 +5022,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4504EBE720145441"]
+			dependencies: ["32895F66C7A66088"]
 			description: [
 				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
 				""
@@ -5060,6 +5060,27 @@
 			title: "Pressure Cookin'"
 			x: 20.5d
 			y: 24.0d
+		}
+		{
+			dependencies: ["5A3E944192851481"]
+			id: "32895F66C7A66088"
+			tasks: [{
+				count: 5L
+				id: "4D3A57BC6B9D5DF4"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:bronze_plate"
+				}
+				type: "item"
+			}]
+			x: 20.5d
+			y: 20.0d
 		}
 	]
 	title: "Primitive Age"

@@ -3009,6 +3009,46 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({ id: 'minecraft:observer' })
 
+    event.recipes.gtceu.assembler('observer_certus_quartz')             
+        .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/certus_quartz')
+        .itemOutputs('minecraft:observer')
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.assembler('observer_nether_quartz')             
+        .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/nether_quartz')
+        .itemOutputs('minecraft:observer')
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.assembler('observer_quartzite')             
+        .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/quartzite')
+        .itemOutputs('minecraft:observer')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Раздатчик
+
+    event.recipes.gtceu.assembler('dispenser')             
+        .itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
+        .circuit(1)
+        .itemOutputs('minecraft:dispenser')
+        .duration(100)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Выход: Выбрасыватель
+
+    event.recipes.gtceu.assembler('dropper')             
+        .itemInputs('7x #forge:cobblestone', '2x minecraft:redstone')
+        .circuit(2)
+        .itemOutputs('minecraft:dropper')
+        .duration(100)
+        .EUt(30)
+
     //#endregion
 
     //#region Выход: Рельсы
