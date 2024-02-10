@@ -595,6 +595,19 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Пыль незерака
+
+    event.remove({ id: 'gtceu:macerator/macerate_nether_brick_stairs' })
+    event.remove({ id: 'gtceu:macerator/macerate_nether_brick_slab' })
+
+    //#endregion
+
+    //#region Выход: Пыль базальта
+
+    event.remove({ id: 'gtceu:macerator/macerate_basalt' })
+
+    //#endregion
+
     //#region Выход: Filter Casing
 
     event.shaped('gtceu:filter_casing', [
@@ -897,25 +910,6 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Деревянное оголовья инструментов (что?)
-
-    event.remove({id: 'gtceu:shaped/screwdriver_tip_wood'})
-    event.remove({id: 'gtceu:shaped/wrench_head_wood'})
-    event.remove({id: 'gtceu:shaped/drill_head_wood'})
-    event.remove({id: 'gtceu:shaped/chainsaw_head_wood'})
-
-    //#endregion
-
-    //#region Выход: Каменные оголовья инструментов (что?)
-
-    event.remove({id: 'gtceu:shaped/screwdriver_tip_stone'})
-    event.remove({id: 'gtceu:shaped/wrench_head_stone'})
-    event.remove({id: 'gtceu:shaped/drill_head_stone'})
-    event.remove({id: 'gtceu:shaped/chainsaw_head_stone'})
-    event.remove({id: 'gtceu:shaped/buzzsaw_head_stone'})
-
-    //#endregion
-
     //#region Выход: Слиток камня
 
     event.remove({id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot'})
@@ -936,6 +930,7 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:shaped/steam_miner' })
     event.remove({ id: 'gtceu:shaped/bronze_bricks_hull' })
     event.remove({ id: 'gtceu:shaped/bronze_hull' })
+    event.remove({ id: 'gtceu:shaped/steam_boiler_solar_bronze' })
 
     //#endregion
 

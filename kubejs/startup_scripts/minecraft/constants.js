@@ -736,6 +736,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:raw_copper_block',
     'minecraft:compass',
     'minecraft:iron_bars',
+    'minecraft:honeycomb',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада
@@ -835,8 +836,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
 global.MINECRAFT_HIDED_ITEMS = [
     '/spawn_egg/',
     
-    'minecraft:honeycomb', // TODO: Пока что скрыто, не пойму нахера нужно в ТФК и как его получить
-
+    /*
     'minecraft:exposed_copper', 
     'minecraft:exposed_cut_copper', 
     'minecraft:exposed_cut_copper_stairs', 
@@ -848,7 +848,7 @@ global.MINECRAFT_HIDED_ITEMS = [
     'minecraft:oxidized_copper', 
     'minecraft:oxidized_cut_copper', 
     'minecraft:oxidized_cut_copper_stairs', 
-    'minecraft:oxidized_cut_copper_slab',
+    'minecraft:oxidized_cut_copper_slab',*/
 ];
 
 global.VANILLA_WOOD_TYPES = [

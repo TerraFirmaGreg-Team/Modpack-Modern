@@ -19,7 +19,7 @@
 			id: "1C86D83D29134EBE"
 			linked_quest: "253860AD4DF4224C"
 			x: 5.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			id: "09E0E263CC81CD99"
@@ -74,7 +74,7 @@
 			}]
 			title: "S is for Sulfur"
 			x: 5.5d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["77EA56D16A9B3BFC"]
@@ -216,7 +216,7 @@
 			]
 			title: "Rubbering up"
 			x: 5.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -767,16 +767,6 @@
 			}]
 			x: 1.0d
 			y: -3.0d
-		}
-		{
-			id: "00990B10AD5E694A"
-			tasks: [{
-				id: "5B380855F40BD574"
-				title: "test"
-				type: "checkmark"
-			}]
-			x: 1.0d
-			y: -4.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{quests.primitive.start.description}"]
+			description: ["{quests.76EF4D00586A8B74.d1}"]
 			icon: {
 				Count: 1b
 				id: "ftbquests:custom_icon"
@@ -20,25 +20,21 @@
 			id: "76EF4D00586A8B74"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "{quests.primitive.start.subtitle}"
+			subtitle: "{quests.76EF4D00586A8B74.st}"
 			tasks: [{
 				id: "7CFEDEBD7D6FD796"
 				type: "checkmark"
 			}]
-			title: "{quests.primitive.start.title}"
+			title: "{quests.76EF4D00586A8B74.t}"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: [
-				"При входе в мир, первое, что вы встречаете это полностью измененный мир. Основными предметами на старте являются палки и камушки, которые лежат на земле и появляются в любом биоме, так же они обновляются каждый сезон. Соберите несколько при помощи ПКМ и приступайте к след. шагу."
-				""
-				"Возьмите в руку 2 и более камня, после нажмите ПКМ, далее у вас откроется меню, в котором вы можете делать оголовия каменных инструментов, все рецепты можно посмотреть в REI или просто нажав на крафт каменного оголовия инструмента. После соедините оголовие с палкой и получите инструмент настоящего аборигена."
-			]
+			description: ["{quests.365F6F48E0BB2EFC.d1}"]
 			id: "365F6F48E0BB2EFC"
 			size: 2.0d
-			subtitle: "Соберите немного камней и палок для будущего развития"
+			subtitle: "{quests.365F6F48E0BB2EFC.st}"
 			tasks: [
 				{
 					count: 5L
@@ -50,7 +46,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:can_be_lit_on_torch)"
 						}
 					}
-					title: "Любые палки"
+					title: "{quests.365F6F48E0BB2EFC.t1}"
 					type: "item"
 				}
 				{
@@ -63,16 +59,16 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
 						}
 					}
-					title: "Любые камушки"
+					title: "{quests.365F6F48E0BB2EFC.t2}"
 					type: "item"
 				}
 			]
-			title: "Палки и камни"
+			title: "{quests.365F6F48E0BB2EFC.t}"
 			x: 3.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["365F6F48E0BB2EFC"]
+			dependencies: ["76EF4D00586A8B74"]
 			description: ["Вместо обычных камушков, в мире вы можете встретить кусочки руды, обычно они указывают на то, что где-то под землей располагается жила с рудой по материалу сходной с кусочком руды найденном на поверхности, но пока у вас нет кирки, поэтому вам стоит собирать такие кусочки, ведь их можно расплавить в металл при помощи формочек и огненной ямы, о которой мы расскажем позже."]
 			id: "40A930BEBFCFBF3B"
 			subtitle: "Ваш первый металл уже сейчас, по скидке"
@@ -247,13 +243,13 @@
 				}
 			]
 			title: "Камушки с рудой"
-			x: 2.0d
-			y: 0.0d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2BFC2744E4DE4B5A"]
 			id: "373FD04AD6CA9F92"
-			subtitle: "При помощи топора, соберите немного древесины"
+			subtitle: "{quests.373FD04AD6CA9F92.st}"
 			tasks: [{
 				id: "794D2D1559FA7CEA"
 				item: {
@@ -263,49 +259,47 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
 					}
 				}
-				title: "Любое дерево"
+				title: "{quests.373FD04AD6CA9F92.t1}"
 				type: "item"
 			}]
-			title: "Новое, старое дерево"
+			title: "{quests.373FD04AD6CA9F92.t}"
 			x: 6.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["373FD04AD6CA9F92"]
 			description: [
-				"Для создания угольной ямы вам понадобится много, много дерева."
-				"Для начала выкопайте яму, глубиной в 1 блок (можно и глубже, если позволяет кол-во древесины)."
+				"{quests.5DB0CA9F9724D301.d1}"
 				""
 				"{image:tfg:textures/quests/primitive_charcoal_1.png width:170 height:100 align:1}"
 				""
-				"После, при помощи Shift + ПКМ нажмите в любой блок в яме, у вас появится охапка бревен, ее можно наполнять, нажимая ПКМ с бревном в руке по охапке, либо просто открыть интерфейс и наполнить вручную. От кол-ва дерева в охапке зависит количество получаемого впоследствии угля."
-				""
+				"{quests.5DB0CA9F9724D301.d2}"
 				""
 				"{image:tfg:textures/quests/primitive_charcoal_2.png width:200 height:100 align:1}"
 				""
-				"Далее, накрываете это все не горючим блоком, камнем или землей, оставляете один блок открытым и поджигаете при помощи выброшенного факела или примитивного зажигателя."
+				"{quests.5DB0CA9F9724D301.d3}"
 				""
 				"{image:tfg:textures/quests/primitive_charcoal_3.png width:190 height:100 align:1}"
 				""
-				"Теперь ваша куча земли начала дымиться, накройте последний блок, который вы поджигали опять же не горючим блоком и ожидайте, как только куча перестанет дымиться, раскапывайте ее и получайте уголь."
+				"{quests.5DB0CA9F9724D301.d4}"
 			]
 			id: "5DB0CA9F9724D301"
-			subtitle: "Создайте свою первую угольную яму"
+			subtitle: "{quests.5DB0CA9F9724D301.st}"
 			tasks: [{
 				count: 16L
 				id: "58361DD51C891C43"
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			title: "Угольные ямы"
+			title: "{quests.5DB0CA9F9724D301.t}"
 			x: 8.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Эта штука позволит вам развести костер, или поджечь, что либо, просто наведите курсор мыши на любой блок, после зажмите и подержите ПКМ, после максимального натяжения, отпустите, с шансом в 50% подожжется блок на которой вы смотрели. Как сделать костер, в след. квесте."]
+			description: ["{quests.3B3BA51C8CAEFC7F.d1}"]
 			id: "3B3BA51C8CAEFC7F"
-			subtitle: "Люди в древности разжигали костры при помощи такой штуки"
+			subtitle: "{quests.3B3BA51C8CAEFC7F.st}"
 			tasks: [{
 				id: "1D1EC6EF1FCBA733"
 				item: {
@@ -317,21 +311,21 @@
 				}
 				type: "item"
 			}]
-			title: "Примитивная зажигалка"
+			title: "{quests.3B3BA51C8CAEFC7F.t}"
 			x: 3.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3B3BA51C8CAEFC7F"]
-			description: ["Бросьте на блок 3 палки и 1 бревно, после наведите на этот блок курсор мыши и используйте примитивную зажигалку, с первого раза может не получиться. После успеха, на месте выброшенных 3 палок и 1 бревна появится костер, в который нужно закидывтаь бревна, чтобы костер продолжал гореть. Для увеличения шанса создания костра, вы можете в выброшенные предметы добавить бумагу, солому и другие легковоспламеняемые предметы, за каждый предмет, по +10%."]
+			description: ["{quests.682B58EC2D39F1A1.d1}"]
 			id: "682B58EC2D39F1A1"
-			subtitle: "Костер, но не обычный"
+			subtitle: "{quests.682B58EC2D39F1A1.st}"
 			tasks: [{
 				icon: "tfc:firepit"
 				id: "4639272D5258BCFC"
 				observe_type: 0
 				timer: 0L
-				title: "Сделайте костер"
+				title: "{quests.682B58EC2D39F1A1.t1}"
 				to_observe: "tfc:firepit"
 				type: "observation"
 			}]
@@ -340,16 +334,16 @@
 		}
 		{
 			dependencies: ["682B58EC2D39F1A1"]
-			description: ["Вы удивитесь, но факела не бесконечные в TFC. Они будут гореть примерно 2 игровых дня, после потухнут. Но не бескокойтесь, в руках или инвентаре они не тухнут, поэтому вы можете носить с собой 1 факел и когда другие в вашем доме будут тухнуть, просто подойти и нажать ПКМ в них, вы как бы прикурите факел и он загорится снова."]
+			description: ["{quests.6D940527BFF1D4C0.d1}"]
 			id: "6D940527BFF1D4C0"
-			subtitle: "Не бесокнечные факела"
+			subtitle: "{quests.6D940527BFF1D4C0.st}"
 			tasks: [{
 				count: 2L
 				id: "6697694A11A541B9"
 				item: "tfc:torch"
 				type: "item"
 			}]
-			title: "Несколько факелов"
+			title: "{quests.6D940527BFF1D4C0.t}"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -377,29 +371,17 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: [
-				"В TerraFirmaGreg руду генерируются интересней чем где либо."
-				""
-				"1. Каждая руда появляется в своей породе. TFC добавляет в мир много разных пород, то есть обычный камень из ваниллы вы нигде не встретите, поэтому руды как и в реальной жизни генерируются только в определенных породах."
-				""
-				"2. Существуют несколько типов рудных жил, такие как: кластер, сфера, труба и несколько редких других, о которых говорить не будем."
-				""
-				"3. Для облегчения жизни игрокам, на поверхности появляются рудные индикаторы, под которыми в большинстве случаев располагается сама жила с рудой."
-				""
-				"TFG содержит небольшое Wiki для этого в таблице Excel. Для того, чтобы перейти по ссылке, выполните задание, после заберите награду и в чате отобразится кнопка по нажатию на которую вас перебросит на таблицу Excel с генерацией руды."
-				""
-				"{ \"text\": \"Ссылка на Excel таблицу (Нажми сюда)\", \"color\":\"#02FF00\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4\" } }"
-			]
+			description: ["{quests.387DEEADF4922AB3.d1}"]
 			icon: "gtceu:shale_aluminium_ore"
 			id: "387DEEADF4922AB3"
-			subtitle: "Куда веселей чем в ванилле"
+			subtitle: "{quests.387DEEADF4922AB3.st}"
 			tasks: [{
 				id: "7E131C48FAB52A11"
 				type: "checkmark"
 			}]
-			title: "Генерация руд в мире TFG"
-			x: -3.5d
-			y: -0.5d
+			title: "{quests.387DEEADF4922AB3.t}"
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
@@ -1049,9 +1031,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Топоры: используются для рубки дерева, да в прочем и всего деревянного, ведь рукой в TFC нельзя сломать дерево."]
+			description: ["{quests.2BFC2744E4DE4B5A.d1}"]
 			id: "2BFC2744E4DE4B5A"
-			subtitle: "Не рубите дерево рукой, это неправильно!"
+			subtitle: "{quests.2BFC2744E4DE4B5A.st}"
 			tasks: [{
 				id: "27927A7A1267C056"
 				item: {
@@ -1072,9 +1054,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Мотыги: используются для вскапывания грядок и посадки растений. Интересный факт: в TFC можно вскапывать грядки даже вдалеке от воды, главное при наведении смотрите в подсказу (панель сверху), в ней будет отображаться кол-во насыщения водой грядки. Далее выберите семяна собранные в мире с подходящими климат. условиями (в том числе и влажностью грядки) посадите и ожидайте."]
+			description: ["{quests.318BF1F671BC4620.d1}"]
 			id: "318BF1F671BC4620"
-			subtitle: "Для ваших первых грядок"
+			subtitle: "{quests.318BF1F671BC4620.st}"
 			tasks: [{
 				id: "59508B56C7C3C891"
 				item: {
@@ -1095,9 +1077,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Копья: кидаются как трезубец, наносят урон, собственно говоря на этом все."]
+			description: ["{quests.508DA76FA2766B7B.d1}"]
 			id: "508DA76FA2766B7B"
-			subtitle: "Какой-то неправильный трезубец"
+			subtitle: "{quests.508DA76FA2766B7B.st}"
 			tasks: [{
 				id: "061392B0556D6810"
 				item: {
@@ -1107,16 +1089,17 @@
 						"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
 					}
 				}
+				title: "{quests.508DA76FA2766B7B.t1}"
 				type: "item"
 			}]
-			title: "Любое каменное копье"
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["{quests.716B407EEED8BE95.d1}"]
 			id: "716B407EEED8BE95"
-			subtitle: "Спасибо, что копает"
+			subtitle: "{quests.716B407EEED8BE95.st}"
 			tasks: [{
 				id: "10A730E97830976C"
 				item: {
@@ -1164,13 +1147,15 @@
 				"318BF1F671BC4620"
 				"5C396041880D32FF"
 			]
+			description: ["{quests.36A9E5CD45A79288.d1}"]
 			id: "36A9E5CD45A79288"
+			subtitle: "{quests.36A9E5CD45A79288.st}"
 			tasks: [{
 				icon: "tfc:farmland/silt"
 				id: "3321FE657126AD2E"
 				observe_type: 1
 				timer: 0L
-				title: "Сделайте грядку"
+				title: "{quests.36A9E5CD45A79288.t1}"
 				to_observe: "tfc:farmland"
 				type: "observation"
 			}]
@@ -1180,8 +1165,9 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			dependency_requirement: "one_completed"
-			description: ["Найдите и соберите любые семяна!"]
+			description: ["{quests.5C396041880D32FF.d1}"]
 			id: "5C396041880D32FF"
+			subtitle: "{quests.5C396041880D32FF.st}"
 			tasks: [{
 				id: "24625450C85F8A04"
 				item: {
@@ -1191,7 +1177,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:seeds)"
 					}
 				}
-				title: "Любые семяна"
+				title: "{quests.5C396041880D32FF.t1}"
 				type: "item"
 			}]
 			x: 0.5d
@@ -1202,8 +1188,10 @@
 				"682B58EC2D39F1A1"
 				"7196BB6BDBAE7B51"
 			]
+			description: ["{quests.557D3A67A36DF9D8.d1}"]
 			id: "557D3A67A36DF9D8"
 			size: 2.0d
+			subtitle: "{quests.557D3A67A36DF9D8.st}"
 			tasks: [{
 				id: "542CC6E7CC064CB7"
 				item: {
@@ -1213,7 +1201,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/cooked_meats)"
 					}
 				}
-				title: "Любое жаренное мясо"
+				title: "{quests.557D3A67A36DF9D8.t1}"
 				type: "item"
 			}]
 			x: 3.5d
@@ -1222,7 +1210,9 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			dependency_requirement: "one_completed"
+			description: ["{quests.7196BB6BDBAE7B51.d1}"]
 			id: "7196BB6BDBAE7B51"
+			subtitle: "{quests.7196BB6BDBAE7B51.st}"
 			tasks: [{
 				id: "094E96DABE2F5DD7"
 				item: {
@@ -1232,7 +1222,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/raw_meats)"
 					}
 				}
-				title: "Любое сырое мясо"
+				title: "{quests.7196BB6BDBAE7B51.t1}"
 				type: "item"
 			}]
 			x: -1.5d
@@ -1240,9 +1230,11 @@
 		}
 		{
 			dependencies: ["06C7B7138EDE4B38"]
+			description: ["{quests.45D907EF7902A200.d1}"]
 			id: "45D907EF7902A200"
-			subtitle: "Понадобится для создания укрытия или обжарной ямы"
+			subtitle: "{quests.45D907EF7902A200.st}"
 			tasks: [{
+				count: 16L
 				id: "77860121847D8117"
 				item: "tfc:straw"
 				type: "item"
@@ -1252,9 +1244,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Ножи: очень важный инструмент в TFC, позволяет срезать траву и получать сено, из него можно сделать огненную яму и обжаривать металлы и глинянные формы, но об этом дальше по гайду."]
+			description: ["{quests.06C7B7138EDE4B38.d1}"]
 			id: "06C7B7138EDE4B38"
-			subtitle: "Ваш лучший друг"
+			subtitle: "{quests.06C7B7138EDE4B38.st}"
 			tasks: [{
 				id: "45C890F7C082CA9E"
 				item: {
@@ -1275,20 +1267,20 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["Совет: не пейте соленую воду."]
+			description: ["{quests.63E6C5684E12828C.d1}"]
 			id: "63E6C5684E12828C"
-			subtitle: "Вам нужно пить воду, чтобы не умереть!"
+			subtitle: "{quests.63E6C5684E12828C.st}"
 			tasks: [{
 				icon: "minecraft:water_bucket"
 				id: "193361529488FE5C"
 				observe_type: 0
 				timer: 0L
-				title: "Найдите свежую воду"
+				title: "{quests.63E6C5684E12828C.t1}"
 				to_observe: "minecraft:water"
 				type: "observation"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5EBFCE37D727DFD0"]
@@ -1395,21 +1387,25 @@
 		}
 		{
 			dependencies: ["36A9E5CD45A79288"]
+			description: ["{quests.4CF472C9778068D6.d1}"]
 			icon: "tfc:wild_crop/barley"
 			id: "4CF472C9778068D6"
-			subtitle: "Соберите свой первый урожай и радуйтесь"
+			subtitle: "{quests.4CF472C9778068D6.st}"
 			tasks: [{
 				id: "7226C69847993160"
-				title: "Нажми сюда"
+				title: "{quests.4CF472C9778068D6.t1}"
 				type: "checkmark"
 			}]
+			title: "{quests.4CF472C9778068D6.t}"
 			x: 2.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["45D907EF7902A200"]
 			id: "30AE1FF285B64716"
+			subtitle: "{quests.30AE1FF285B64716.st}"
 			tasks: [{
+				count: 16L
 				id: "71AD45BFB355905E"
 				item: "tfc:thatch"
 				type: "item"
@@ -1419,8 +1415,11 @@
 		}
 		{
 			dependencies: ["45D907EF7902A200"]
+			description: ["{quests.0ED8BE436A0ECDDB.d1}"]
 			id: "0ED8BE436A0ECDDB"
+			subtitle: "{quests.0ED8BE436A0ECDDB.st}"
 			tasks: [{
+				count: 16L
 				id: "485D243786542A96"
 				item: "minecraft:hay_block"
 				type: "item"
@@ -1433,16 +1432,16 @@
 				"45D907EF7902A200"
 				"373FD04AD6CA9F92"
 			]
-			description: ["Для начала выкопайте 1 блок в земле, или любой другой поверхности, дальше при помощи клавиши V установите в яму вещи, которые вы хотите обжарить. Если мы говорим о формах, их помещается 4 штуки. Дальше возьмите в руку Сено и нажмите ПКМ в яму, сено начнет заполнять яму, вам нужно использовать 8 сена, дальше таким же образом добавьте 8 бревен, далее вы можете спокойно поджечь это дело при помощи примитивного огнива или факела (просто бросьте факел сверху вашей ямы и оно начнет разгораться). Потом вы должны ожидать окончания обжига и после достать свои готовые предметы. Таким же образом происходит расплавка металла в емкостях. То есть кладете кусочки меди в сосуд и в эту самую яму, после вышеописанного процесса вы получите расплавленную медь, которую сможете отлить в слитки, оголовья и так далее."]
+			description: ["{quests.69D20168E26BBF59.d1}"]
 			id: "69D20168E26BBF59"
 			size: 2.0d
-			subtitle: "Реализм"
+			subtitle: "{quests.69D20168E26BBF59.st}"
 			tasks: [{
 				icon: "tfc:firepit"
 				id: "4104866DD66BFB2E"
 				observe_type: 0
 				timer: 0L
-				title: "Создайте обжарочную яму"
+				title: "{quests.69D20168E26BBF59.t1}"
 				to_observe: "tfc:pit_kiln"
 				type: "observation"
 			}]
@@ -2832,7 +2831,9 @@
 		}
 		{
 			dependencies: ["2765DB2E20A745F8"]
+			description: ["{quests.478D0DF94D7495EF.d1}"]
 			id: "478D0DF94D7495EF"
+			subtitle: "{quests.478D0DF94D7495EF.st}"
 			tasks: [{
 				id: "19D772A3B1F41323"
 				item: {
@@ -2842,7 +2843,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass)"
 					}
 				}
-				title: "Any #forge:glass"
+				title: "{quests.478D0DF94D7495EF.t1}"
 				type: "item"
 			}]
 			x: -4.0d
@@ -3998,6 +3999,7 @@
 		{
 			dependencies: ["45D907EF7902A200"]
 			id: "27DA5AAB102611A2"
+			subtitle: "{quests.27DA5AAB102611A2.st}"
 			tasks: [{
 				id: "5F944342D5C4195B"
 				item: {
@@ -4192,6 +4194,7 @@
 			dependencies: ["665BC6BB76CE0EA3"]
 			id: "35F316301C475302"
 			tasks: [{
+				count: 8L
 				id: "3B8D2051DC0792E5"
 				item: "minecraft:white_wool"
 				type: "item"
@@ -4945,6 +4948,127 @@
 			}]
 			x: -5.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.6D43C29AC049341D.d1}"]
+			icon: "minecraft:cake"
+			id: "6D43C29AC049341D"
+			subtitle: "{quests.6D43C29AC049341D.st}"
+			tasks: [{
+				id: "124CFC2DE7647588"
+				title: "{quests.6D43C29AC049341D.t1}"
+				type: "checkmark"
+			}]
+			title: "{quests.6D43C29AC049341D.t}"
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.0B42D4AE2AC67F93.d1}"]
+			icon: "createaddition:chocolate_cake"
+			id: "0B42D4AE2AC67F93"
+			subtitle: "{quests.0B42D4AE2AC67F93.st}"
+			tasks: [{
+				id: "5EB438DED5A994C4"
+				title: "{quests.0B42D4AE2AC67F93.t1}"
+				type: "checkmark"
+			}]
+			title: "{quests.0B42D4AE2AC67F93.t}"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.2672C65095539E23.d1}"]
+			icon: {
+				Count: 1b
+				id: "gtceu:aluminium_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 4607
+						ToolSpeed: 10.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2672C65095539E23"
+			subtitle: "{quests.2672C65095539E23.st}"
+			tasks: [{
+				id: "5CD6F659836A78C8"
+				title: "{quests.2672C65095539E23.t1}"
+				type: "checkmark"
+			}]
+			title: "{quests.2672C65095539E23.t}"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.3D7B0F3134C30364.d1}"]
+			icon: "ftbquests:book"
+			id: "3D7B0F3134C30364"
+			tasks: [{
+				id: "6EB0915B34A4054C"
+				title: "{quests.3D7B0F3134C30364.t1}"
+				type: "checkmark"
+			}]
+			title: "{quests.3D7B0F3134C30364.t}"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "16F09B1402BDD6AD"
+			tasks: [
+				{
+					id: "684551EA31A129D3"
+					item: "minecraft:copper_block"
+					type: "item"
+				}
+				{
+					id: "15191ED470DFC144"
+					item: "firmalife:beeswax"
+					type: "item"
+				}
+			]
+			title: "Copper Waxing [WIP]"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			id: "0C1314591528B194"
+			tasks: [{
+				id: "2708890F286F7653"
+				title: "Cellar [WIP]"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "13C1E19024011698"
+			tasks: [{
+				id: "4694D073712B6BE1"
+				title: "Bees [WIP]"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			id: "260CCACEAE35BFDC"
+			tasks: [{
+				id: "06F24C35A067A09B"
+				title: "Greenhouse [WIP]"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 0.0d
 		}
 	]
 	title: "Primitive Age"

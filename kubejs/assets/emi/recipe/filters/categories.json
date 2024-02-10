@@ -38,6 +38,9 @@
         },
         {
             "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
+        },
+        {
+            "id": "/create:create.toolbox.color.block.create.[^*]+/"
         }
     ]
 }
