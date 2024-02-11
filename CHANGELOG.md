@@ -1,4 +1,9 @@
 # Changelog
+## [0.6.13] - 11.02.2024
+### Updated mods
+- Embeddiumplus -> 1.2.3
+### Deleted mods
+- Create Picky Wheels
 
 ## [0.6.12] - 11.02.2024
 ### Changes
