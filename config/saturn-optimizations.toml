@@ -1,0 +1,9 @@
+#(default = true) Optimizes memory allocation by caching objects to static final references.
+optimizeMemoryAllocations = true
+#(default = true) Reduces garbage collection (GC) heap by avoid creating unnecessary objects.
+reduceGCHeap = true
+#(default = true) Fixes memory leaks which takes the memory continuously.
+fixMemoryLeaks = true
+#(default = true) Removes duplicated threading detector locks.
+removeThreadingDetectorLocks = true
+
