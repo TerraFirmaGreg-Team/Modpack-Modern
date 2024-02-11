@@ -1,6 +1,6 @@
 {
-  "configVersion": 9,
-  "animationSmoothingSpeed": 20.0,
+  "configVersion": 11,
+  "animationSmoothingSpeed": 0.2,
   "holdingItems": [
     "minecraft:clock",
     "minecraft:recovery_compass",
