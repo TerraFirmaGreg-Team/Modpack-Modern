@@ -2871,6 +2871,12 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Рецепты бочки в миксере
+
+
+
+    //#endregion
+
     // Другое
     event.remove({ id: `tfc:crafting/trip_hammer` })
     event.remove({ id: `tfc:anvil/steel_pump` })
