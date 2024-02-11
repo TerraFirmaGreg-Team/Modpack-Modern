@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.6.12] - Planned on 10.02.2024
+## [0.6.12] - 11.02.2024
 ### Changes
 - Primitive and Steel Age quests have been improved throughout.
 - Removed glass block from Create.
@@ -29,6 +29,29 @@
 - Added more recipes for FirmaLife items via GTCEu machines.
 - Decreased EUt required for ae2 quartz glass.
 - Hided backpack colorizing recipes because its wont work.
+### Updated mods
+- Architectury -> 9.1.13
+- CreativeCore -> 2.11.24
+- Curios -> 5.7.0
+- Embeddiumplus -> 1.2.4
+- Emi -> 1.1.1
+- Exposure -> 1.3.1
+- Firmalife -> 2.0.8
+- FTB-Quests -> 2001.3.3
+- GTCEU -> 1.1.3
+- Kubejs -> 2001.6.4-build.133
+- Lootjs -> 2.11.0
+- Moonlight -> 2.9.10
+- Notenoughanimations -> 1.7.1
+- PacketFixer -> 1.2.4
+- Placebo -> 8.6.1
+- PlayerRevive -> 2.0.24
+- Saturn -> 0.1.3
+- TerraFirmaCraft -> 3.1.8
+- TerraFirmaGreg-Core -> 0.4.7
+- Textrues_embeddium_options -> 0.1.5
+### New Mods
+- Create Picky Wheels
 
 ## [0.6.11] - 05.02.2024
 ### Changes
