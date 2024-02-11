@@ -44,6 +44,12 @@
         },
         {
             "id": "/create:create.toolbox.color.block.create.[^*]+/"
+        },
+        {
+            "id": "/sophisticatedbackpacks:single_color_[^*]+/"
+        },
+        {
+            "id": "sophisticatedbackpacks:multiple_colors"
         }
     ]
 }

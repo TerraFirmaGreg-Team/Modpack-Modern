@@ -28,6 +28,7 @@
 - Fixed recipes for some vanilla items.
 - Added more recipes for FirmaLife items via GTCEu machines.
 - Decreased EUt required for ae2 quartz glass.
+- Hided backpack colorizing recipes because its wont work.
 
 ## [0.6.11] - 05.02.2024
 ### Changes
