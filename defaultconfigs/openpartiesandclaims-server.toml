@@ -45,7 +45,7 @@
 		enabled = true
 		#For how long a player can stay completely inactive on the server until their claims are expired (in hours). This improves performance for servers running for years.
 		#Range: > 1
-		playerClaimsExpirationTime = 8760
+		playerClaimsExpirationTime = 4380
 		#How often to check for expired player chunk claims in order to remove them (in minutes). The interval is effectively rounded up to a multiple of 10 minutes.
 		#Range: > 10
 		playerClaimsExpirationCheckInterval = 360
