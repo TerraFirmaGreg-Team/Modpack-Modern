@@ -185,6 +185,16 @@ machines:
   # Default: true
   enableMaintenance: true
 
+  # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
+  # Default: true
+  enableWorldAccelerators: false
+
+  # List of TileEntities that the World Accelerator should not accelerate.
+  # GregTech TileEntities are always blocked.
+  # Entries must be in a fully qualified format. For example: appeng.tile.networking.TileController
+  # Default: none
+  worldAcceleratorBlacklist:
+
   # Whether to use GT6-style pipe and cable connections, meaning they will not auto-connect unless placed directly onto another pipe or cable.
   # Default: true
   gt6StylePipesCables: true
