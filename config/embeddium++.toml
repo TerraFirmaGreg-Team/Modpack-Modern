@@ -53,7 +53,7 @@
 				#Configure horizontal max distance before cull entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
-				cullingDistanceX = 4096
+				cullingDistanceX = 1024
 				#Configure vertical max distance before cull entities
 				#Value is raw
 				#Range: 0 ~ 512
@@ -71,7 +71,7 @@
 				#Configure horizontal max distance before cull Block entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
-				cullingDistanceX = 4096
+				cullingDistanceX = 1024
 				#Configure vertical max distance before cull Block entities
 				#Value is raw
 				#Range: 0 ~ 512
