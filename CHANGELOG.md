@@ -1,10 +1,20 @@
 # Changelog
 
-## [0.6.14] - Planned on 13.02.2024
+## [0.6.14] - 12.02.2024
 ### Changes
 - Fixed wrong amount smelting recipe output (for example: from redstone).
 - Fixed Rose Gold recipe EUt mismatch.
 - Fixed Iron Door recipe decomp.
+- The dynamic lighting function was temporarily removed from Embeddiumplus for rework, the mod had to be updated because the developer archived other versions.
+### Updated mods
+- Chisels-and-bits -> 1.4.147
+- Createaddition -> 1.2.3
+- FastWorkbench -> 8.0.4
+- GTCEU -> 1.1.3.b
+- JEI -> 15.3.0.4
+- Moonlight -> 2.9.12
+- TerraFirmaGreg-Core -> 0.4.9
+- Embeddiumplus -> 1.2.4
 
 ## [0.6.13] - 11.02.2024
 ### Updated mods
