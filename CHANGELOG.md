@@ -1,4 +1,11 @@
 # Changelog
+
+## [0.6.14] - Planned on 13.02.2024
+### Changes
+- Fixed wrong amount smelting recipe output (for example: from redstone).
+- Fixed Rose Gold recipe EUt mismatch.
+- Fixed Iron Door recipe decomp.
+
 ## [0.6.13] - 11.02.2024
 ### Updated mods
 - Embeddiumplus -> 1.2.3

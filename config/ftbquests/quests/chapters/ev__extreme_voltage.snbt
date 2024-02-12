@@ -551,14 +551,14 @@
 				""
 				"This will be required in &1IV&r, but as always, you should still get this earlier for the &6Coil bonuses&r."
 			]
-			icon: "gtceu:tungstensteel_coil_block"
+			icon: "gtceu:rtm_alloy_coil_block"
 			id: "069FD86133D7D582"
 			size: 0.75d
 			subtitle: "Wow, that's hot :flushed:"
 			tasks: [{
 				count: 16L
 				id: "16A26A909A8CE527"
-				item: "gtceu:tungstensteel_coil_block"
+				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
 			title: "Tungstensteel Coils"

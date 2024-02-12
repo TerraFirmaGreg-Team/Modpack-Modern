@@ -565,6 +565,12 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Пыль кованного железа
+
+    event.remove({ id: 'gtceu:arc_furnace/arc_iron_door' })
+
+    //#endregion
+
     //#region Выход: Железная пыль
 
     event.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
@@ -1216,6 +1222,9 @@ const registerGTCEURecipes = (event) => {
 
     // Исправление рецепта пыли серебра стерлинга
     generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/silver'], [], '5x gtceu:sterling_silver_dust', 1, [], 500, 24, 64, 'sterling_silver')
+
+    // Исправление рецепта пыли розовой бронзы
+    generateMixerRecipe(event, ['#forge:dusts/copper', '4x #forge:dusts/gold'], [], '5x gtceu:rose_gold_dust', 3, [], 500, 24, 64, 'rose_gold')
 
     //#region LV Casing
 
