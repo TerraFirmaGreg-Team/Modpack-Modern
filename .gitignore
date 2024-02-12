@@ -13,6 +13,8 @@ config/chiselsandbits-client.toml
 config/chiselsandbits-common.toml
 config/xaerominimap_entities.json
 config/voicechat/username-cache.json
+config/xaerominimap.txt
+config/xaeroworldmap.txt
 
 # .minecraft
 crash-reports/*
