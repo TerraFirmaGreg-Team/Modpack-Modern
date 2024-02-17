@@ -1,6 +1,7 @@
 # Changelog
 
 ## [0.6.15] - 17.02.2024
+### Changes
 - Fixed upgrading backpack through JEI crashes the game.
 ### Updated mods
 - Voicechat-forge -> 2.5.4
