@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.6.15] - 17.02.2024
+- Fixed upgrading backpack through JEI crashes the game.
+### Updated mods
+- Voicechat-forge -> 2.5.4
+- Treetap -> 0.3.0
+- Sophisticatedcore -> 0.6.3.553
+- Sophisticatedbackpacks -> 3.20.1.1012
+- PuzzlesLib -> 8.1.17
+- PacketFixer -> 1.2.7
+- Oculus -> 1.6.15a
+- Moonlight -> 2.9.17
+- Embeddium -> 0.3.4
+### New Mods
+- Better Chunk Loading
+- Connectivity
+- Oculus Flywheel Compat
+- Recipe Essentials
+- Smooth Chunk
+### Deleted mods
+- FastFurnace
+- FastSuite
+- FastWorkbench
+
 ## [0.6.14] - 12.02.2024
 ### Changes
 - Fixed wrong amount smelting recipe output (for example: from redstone).
