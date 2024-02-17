@@ -1,0 +1,64 @@
+{
+	/* 
+	   Enable Cinematic Camera while zooming.
+	   If you disable this, you should also try setting `zoomSmoothnessMs` to `0`.
+	   DEFAULT: `true`
+	*/
+	"enableCinematicZoom": true,
+	/* 
+	   Mouse Sensitivity will not be reduced below this amount while zoomed in.
+	   Set to `1.0` to prevent it from being changed at all (not recommended without `enableCinematicZoom`).
+	   DEFAULT: `0.4`
+	*/
+	"mouseSensitivityFloor": 0.4,
+	/* 
+	   Speed for Zoom In/Out key binds & zoom scrolling (if enabled).
+	   DEFAULT: `20`
+	*/
+	"zoomSpeed": 20,
+	/* 
+	   Allows you to zoom in and out by scrolling up and down on your mouse while zoom is active.
+	   This will prevent you from scrolling through your hotbar while zooming if enabled.
+	   DEFAULT: `true`
+	*/
+	"enableZoomScrolling": true,
+	/* 
+	   FOV changes will be spread out over this many milliseconds.
+	   Set to `0` to disable animations.
+	   DEFAULT: `150`
+	*/
+	"zoomSmoothnessMs": 150,
+	/* 
+	   Smoothing animation progress will be raised to this exponent for easing. Higher numbers will feel faster.
+	   It is recommended to also increase `zoomSmoothnessMs` when increasing this.
+	   Set to `1` to disable.
+	   DEFAULT: `4`
+	*/
+	"easingExponent": 4,
+	/* 
+	   Zoom percentage will be squared before being applied if `true`.
+	   Makes differences in FOV more uniform. You should probably keep this on if you don't understand what it does.
+	   DEFAULT: `true`
+	*/
+	"useQuadratic": true,
+	/* 
+	   Default starting zoom percentage.
+	   DEFAULT: `0.5`
+	*/
+	"defaultZoom": 0.5,
+	/* 
+	   If `true`, the Zoom keybind will act as a toggle. If `false`, Zoom will only be active while the keybind is held.
+	   DEFAULT: `false`
+	*/
+	"toggleMode": false,
+	/* 
+	   Maximum zoom FOV.
+	   DEFAULT: `60.0`
+	*/
+	"maxFOV": 60.0,
+	/* 
+	   Minimum zoom FOV.
+	   DEFAULT: `1.0`
+	*/
+	"minFOV": 1.0
+}

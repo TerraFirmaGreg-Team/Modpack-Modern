@@ -53,11 +53,11 @@
 				#Configure horizontal max distance before cull entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
-				cullingDistanceX = 1024
+				cullingMaxDistanceX = 4096
 				#Configure vertical max distance before cull entities
 				#Value is raw
 				#Range: 0 ~ 512
-				cullingDistanceY = 32
+				cullingMaxDistanceY = 32
 
 			[embeddiumplus.performance.distanceCulling.tileEntities]
 				#Toggles distance culling for Block Entities
@@ -71,11 +71,11 @@
 				#Configure horizontal max distance before cull Block entities
 				#Value is squared, default was 64^2 (or 64x64)
 				#Range: > 0
-				cullingDistanceX = 1024
+				cullingMaxDistanceX = 4096
 				#Configure vertical max distance before cull Block entities
 				#Value is raw
 				#Range: 0 ~ 512
-				cullingDistanceY = 32
+				cullingMaxDistanceY = 32
 
 	[embeddiumplus.dynlights]
 		#Toggle if Block Entities should have dynamic lights
@@ -102,7 +102,7 @@
 		chunkFadeSpeed = "SLOW"
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
-		#Range: 0 ~ 320
+		#Range: 0 ~ 512
 		cloudsHeight = 256
 		#Toggle fog feature
 		#Fog was a vanilla feature, toggling off may increases performance
@@ -118,7 +118,6 @@
 			#Toggle Darkness on End dimension
 			enableOnEnd = false
 			#Toggle Darkness default mode for modded dimensions
-			#This option will be replaced with a whitelist in a near future
 			valueByDefault = false
 			#Configure Darkness Mode
 			#Each config changes what is considered 'true darkness'
@@ -141,4 +140,7 @@
 			enableBlockLightOnly = false
 			#Toggle Darkness on Overworld dimension
 			enableOnOverworld = true
+			#List of all dimensions to use True Darkness
+			#This option overrides 'valueByDefault' state
+			dimensionWhitelist = []
 

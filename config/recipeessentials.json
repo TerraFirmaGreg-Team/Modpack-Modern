@@ -1,0 +1,30 @@
+{
+  "disableRecipebook": {
+    "desc:": "Disables the recipe book entirely, removes the button on client side and removes synced data on server side: default:false",
+    "disableRecipebook": true
+  },
+  "enableBetterRecipebookSorting": {
+    "desc:": "Enables better sorting for the list of displayed recipes in the recipebook, craftables and recently used recipes are priotized: default:true",
+    "enableBetterRecipebookSorting": true
+  },
+  "recipebookShowAll": {
+    "desc:": "Enables the recipe book to show all recipes from the get go, also enables modded recipes to show and disables network/login overhead: default:true",
+    "recipebookShowAll": true
+  },
+  "fastItemComparisons": {
+    "desc:": "Enables faster item comparison for better performance, disable on mod conflicts: default:true",
+    "fastItemComparisons": true
+  },
+  "smallerRecipePacket": {
+    "desc:": "Reduces the size of the recipe packet, to prevent errors on too large packets and helps bad connections, requires the mod to be present on both client and server, disable on mod conflicts: default:false",
+    "smallerRecipePacket": true
+  },
+  "cacheRecipes": {
+    "desc:": "Caches recipe lookups to greatly improve lookup speed: default:true",
+    "cacheRecipes": true
+  },
+  "logCachingErrors": {
+    "desc:": "Enables error logging for recipe caching: default:false",
+    "logCachingErrors": false
+  }
+}

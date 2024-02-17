@@ -1,0 +1,38 @@
+{
+  "enablePrediction": {
+    "desc:": "Enables predictive chunkloading, which predicts player movement and preloads an area in movement direction: default:true",
+    "enablePrediction": true
+  },
+  "predictionarea": {
+    "desc:": "Size of the area marked for preloading: default:7 chunks, max: 32, min: 2",
+    "predictionarea": 7
+  },
+  "enablePreGen": {
+    "desc:": "Enables predictive, async pre-gen far ahead of the player, to generate nonexisting chunks early so they load in time, requires enablePrediction: default:true",
+    "enablePreGen": true
+  },
+  "preGenArea": {
+    "desc:": "Size of the area marked for pregeneration: default:7 chunks, min 1, max 32",
+    "preGenArea": 7
+  },
+  "enableLazyChunkloading": {
+    "desc:": "Enables lazy chunkloading around the player, which makes the area loaded directly around the player react more slowly to player position changes.(Improves server performance, less chunks are loaded/unlaoded frequently) : default:true",
+    "enableLazyChunkloading": true
+  },
+  "lazyloadingspeed": {
+    "desc:": "Set the speed of lazy loading, increasing this makes the lazy chunk loading gets less lazy and react to player position changes faster: default:0.7",
+    "lazyloadingspeed": 0.7
+  },
+  "enableFasterChunkLoading": {
+    "desc:": "Enables faster chunk loading, which slightly improves the general chunk loading speed: default:true",
+    "enableFasterChunkLoading": true
+  },
+  "debugLogging": {
+    "desc:": "Enables debug logging to show chunk loading changes: default:false",
+    "debugLogging": false
+  },
+  "enableFasterChunkTasks": {
+    "desc:": "Enables faster chunk tasks: default:true",
+    "enableFasterChunkTasks": true
+  }
+}

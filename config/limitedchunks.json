@@ -1,0 +1,14 @@
+{
+  "chunkunloadnoplayer": {
+    "desc:": "How long a player can keep chunkloaded chunks active after logging out. default:10, min 0, max 2000",
+    "chunkunloadnoplayer": 10
+  },
+  "debugLog": {
+    "desc:": "Print log messages for which chunk tickets are unloaded where. Default: false",
+    "debugLog": false
+  },
+  "excludedtickets": {
+    "desc:": "List of excluded ticket/chunkload types, these are mod-specific. : e.g. format :  [\"mekanism\", \"player\"]",
+    "excludedtickets": []
+  }
+}

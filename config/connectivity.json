@@ -1,0 +1,34 @@
+{
+  "disableLoginLimits": {
+    "desc:": "Should login packet size limits be disabled? Error:(IOException(\"Payload may not be larger than 1048576 bytes\")) default:true",
+    "disableLoginLimits": true
+  },
+  "disablePacketLimits": {
+    "desc:": "Should play packet size limits be disabled? Error:(Badly compressed packet) default:true",
+    "disablePacketLimits": true
+  },
+  "disableChatVerificationDisconnect": {
+    "desc:": "(Clientside) Disables players disconnecting on chat message verification problems,(enable debugPrintMessages to see the message causing issues). default:true",
+    "disableChatVerificationDisconnect": true
+  },
+  "debugPrintMessages": {
+    "desc:": "Enable addition debug logging for networking errors. default:false",
+    "debugPrintMessages": false
+  },
+  "logintimeout": {
+    "desc:": "Set the max login timeout in seconds. default = 120",
+    "logintimeout": 2400
+  },
+  "disconnectTimeout": {
+    "desc:": "Set the ingame disconnect timeout for disconnecting players. Default = 60sec",
+    "disconnectTimeout": 60
+  },
+  "packetHistoryMinutes": {
+    "desc:": "Set the amount of minutes for which network packet history data is saved. Default = 5 minutes",
+    "packetHistoryMinutes": 5
+  },
+  "showFullResourceLocationException": {
+    "desc:": "Enable to see the full log output for all resource location exceptions. Default = false",
+    "showFullResourceLocationException": false
+  }
+}
