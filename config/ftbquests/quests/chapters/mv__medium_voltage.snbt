@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:mv_electric_motor"
 	id: "43E779CEEB25D55B"
-	order_index: 3
+	order_index: 4
 	quest_links: [{
 		id: "6FCAD016C795DE93"
 		linked_quest: "7567E885B7166603"
@@ -505,22 +505,12 @@
 				id: "431D533510584687"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_miner"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_miner"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_miner"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Any miner\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_miner)item(gtceu:mv_miner)item(gtceu:hv_miner))"
 					}
 				}
 				title: "Any of the listed Miners"
@@ -1446,9 +1436,12 @@
 				id: "5FEE671A75766B78"
 				item: {
 					Count: 1b
-					id: "itemfilters:tag"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						value: "forge:batteries/mv"
+						display: {
+							Name: "{\"text\":\"Any mv battery\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(gtceu:batteries/mv))"
 					}
 				}
 				title: "Any MV Battery"

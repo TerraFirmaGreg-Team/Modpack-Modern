@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:luv_electric_motor"
 	id: "262A03F6F4EC713C"
-	order_index: 7
+	order_index: 8
 	quest_links: [
 		{
 			id: "7F8B55C8510200AF"
@@ -604,45 +604,6 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"77B7B1EDD19831E0"
-				"46C7E1D5E37B1ED2"
-			]
-			description: ["The &aWireless Connector&r is an upgrade to the &9Quantum Link Tunnel&r, giving &9Wireless Terminals&r access to your AE system with unlimited range, and from any dimension."]
-			id: "7E2076D45F83D9C3"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "To infinity, and beyond!"
-			tasks: [{
-				id: "3AC7E29D373750F8"
-				item: "expatternprovider:wireless_connect"
-				type: "item"
-			}]
-			title: "Infinite Wireless Range"
-			x: 3.375d
-			y: 4.5d
-		}
-		{
-			dependencies: ["77B7B1EDD19831E0"]
-			description: [
-				"If recipe sizes are starting to worry you, don't worry - &2AE2&r now allows you to place an unlimited amount of items into a processing pattern."
-				""
-				"Thanks to this innovation, you can automate all the &3Assembly Line&r recipes."
-			]
-			icon: "expatternprovider:ex_interface"
-			id: "79192BA29BE69170"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "3DFCDF1B24506A8A"
-				title: "Wahey!"
-				type: "checkmark"
-			}]
-			title: "PackagedWho?"
-			x: 3.375d
-			y: 5.625d
-		}
-		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
 				"At the cost of 16x the drilling Power, the &3Advanced Fluid Drilling Rig II&r will be gaining &664x the output&r in Fluid."
@@ -662,8 +623,8 @@
 				type: "item"
 			}]
 			title: "Ludicrous Fluid Drilling"
-			x: 5.625d
-			y: 4.5d
+			x: 3.3d
+			y: 5.61d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]

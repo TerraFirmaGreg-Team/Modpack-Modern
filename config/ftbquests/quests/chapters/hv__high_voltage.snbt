@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
-	order_index: 4
+	order_index: 5
 	quest_links: [
 		{
 			id: "2583D0B64E51FAC8"
@@ -302,17 +302,9 @@
 			size: 0.66d
 			tasks: [
 				{
-					count: 20L
 					id: "73A16ED7BA7D64E8"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:lenses"
-						}
-					}
+					item: "gtceu:cyan_glass_lens"
 					optional_task: true
-					title: "Any #forge:lenses"
 					type: "item"
 				}
 				{
@@ -1026,7 +1018,7 @@
 			tasks: [
 				{
 					id: "3DC62CA60F006A06"
-					item: "gtceu:ender_pearl_dust"
+					item: "ae2:ender_dust"
 					optional_task: true
 					type: "item"
 				}
