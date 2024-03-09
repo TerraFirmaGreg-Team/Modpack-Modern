@@ -1660,18 +1660,12 @@
 				id: "685043442271A0D0"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_distillery"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_distillery"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Either an LV or MV Distillery\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_distillery)item(gtceu:mv_distillery))"
 					}
 				}
 				title: "Either an LV or MV Distillery"
@@ -1827,18 +1821,12 @@
 				id: "2620FA131244B3DA"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:potin_quadruple_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_nonuple_fluid_pipe"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Multiple channel pipes\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:potin_quadruple_fluid_pipe)item(gtceu:potin_nonuple_fluid_pipe))"
 					}
 				}
 				title: "Multiple Channel Potin Pipes, please"
