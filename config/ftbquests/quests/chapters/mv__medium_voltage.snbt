@@ -253,22 +253,12 @@
 				id: "1F170291094582D6"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:mv_steam_turbine"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_gas_turbine"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_combustion"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"MV Generators\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:mv_steam_turbine)item(gtceu:mv_combustion)item(gtceu:mv_gas_turbine))"
 					}
 				}
 				title: "MV Generators"
