@@ -6,7 +6,7 @@
 	group: ""
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
-	order_index: 5
+	order_index: 6
 	quest_links: [
 		{
 			id: "2E99A771FCA40E15"
@@ -589,22 +589,12 @@
 				id: "4BCA4F8ED0041BF6"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:hv_diode"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_diode"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_diode"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Any diode\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_diode)item(gtceu:mv_diode)item(gtceu:hv_diode)item(gtceu:ev_diode)item(gtceu:iv_diode))"
 					}
 				}
 				title: "Any of these diodes"
@@ -1102,13 +1092,7 @@
 				{
 					count: 3L
 					id: "1BE01DA0E8A143FB"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/uraninite"
-						}
-					}
+					item: "gtceu:uraninite_dust"
 					optional_task: true
 					title: "Uraninite Dust"
 					type: "item"
@@ -1315,26 +1299,14 @@
 				}
 				{
 					id: "3E2FBCED1C782E7C"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/silicone_rubber"
-						}
-					}
+					item: "gtceu:silicone_rubber_ingot"
 					optional_task: true
 					title: "Silicone Rubber Ingot"
 					type: "item"
 				}
 				{
 					id: "3CF87D26761354C4"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:plates/silicone_rubber"
-						}
-					}
+					item: "gtceu:silicone_rubber_plate"
 					title: "Silicone Rubber Plate"
 					type: "item"
 				}
@@ -1717,44 +1689,6 @@
 			}]
 			x: 7.875d
 			y: 6.75d
-		}
-		{
-			dependencies: ["3B2D2C47BEBCFFA7"]
-			description: [
-				"You probably have some old machines lying around, right?"
-				""
-				"You most likely know by now that Arc Furnaces can recycle machines, but by &5EV&r, they upgrade to &a9 slots&r!"
-				""
-				"&eNote&r: This quest accepts either an &5EV&r or &9IV&r Arc Furnace. You don't have to make both."
-			]
-			icon: "gtceu:iv_arc_furnace"
-			id: "6FEF59B8F571359D"
-			shape: "rsquare"
-			size: 0.66d
-			tasks: [{
-				id: "35CAC76B502E12FF"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ev_arc_furnace"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_arc_furnace"
-							}
-						]
-					}
-				}
-				title: "Arc Furnace"
-				type: "item"
-			}]
-			title: "Getting Rid of Those Old Machines"
-			x: 7.875d
-			y: 5.625d
 		}
 	]
 	subtitle: ["Improve your infrastructure and parallelise your setups"]

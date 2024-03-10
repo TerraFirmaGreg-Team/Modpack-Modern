@@ -1,0 +1,435 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: ""
+	icon: "create:cogwheel"
+	id: "73633085BF22A8E9"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2E3F6613C490E9AD"]
+			icon: "create:large_cogwheel"
+			id: "6E1CD5151284199F"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "46C68190E469F783"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			title: "The beginning of Create"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E1CD5151284199F"]
+			id: "02BBC87042D9516B"
+			tasks: [
+				{
+					id: "3CBAA751EC265867"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "24866DE2074A4B7A"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "Engineer's tools"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6E1CD5151284199F"
+				"01E921F78C3A9A3D"
+			]
+			id: "576584250B7CE6E9"
+			tasks: [
+				{
+					id: "103652A3387B66C6"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AA8E16D668D0F34"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "225CF48F13FCAB24"
+					item: {
+						Count: 1b
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6BB98D128822730E"]
+			description: [
+				"If you want to be less fancy, just call it plastic."
+				""
+				"For the polymerization process, add &aOxygen&r, which gives better returns than Air, then solidify like you would with Rubber."
+				""
+				"&aPolyethylene (PE)&r is the key to unlocking &6many new things&r. It's commonly used as &dSheets&r, or in &dFluid&r form."
+				""
+				"&l&3Lore:&r&o The OreDict and fluid name for Polyethylene in 1.12.2 GTCEu was &bplastic&f, for cross-mod compatibility."
+			]
+			icon: "gtceu:polyethylene_plate"
+			id: "01E921F78C3A9A3D"
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Baby's first polymer!"
+			tasks: [{
+				id: "2FC6492E5EB2C945"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			title: "Polyethylene"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6E1CD5151284199F"]
+			id: "6C6579B8C07D4136"
+			shape: "circle"
+			tasks: [{
+				id: "33308D6C881935BC"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"a source of kinetic energy\"}"
+						}
+						"ftbfiltersystem:filter": "or(or(item(create:water_wheel)item(create:large_water_wheel))and(item_tag(create:valve_handles))or(item(create:steam_engine))item(create:windmill_bearing))"
+					}
+				}
+				type: "item"
+			}]
+			title: "The first energy"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			id: "14D612055A2FDA2B"
+			tasks: [{
+				id: "53A738D6D82313A9"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E1CD5151284199F"]
+			id: "78BE0A10CE7B4BBE"
+			tasks: [{
+				id: "4F22CB4EF49F2A9C"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78BE0A10CE7B4BBE"]
+			id: "7B74DB051202E97E"
+			tasks: [{
+				id: "135E35D4524364D0"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6E1CD5151284199F"]
+			hide_dependency_lines: true
+			id: "525EA99C7879E3FB"
+			tasks: [{
+				id: "60E20600FE2D35E9"
+				item: "create:clipboard"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "4293C86E2C84BD48"
+			tasks: [{
+				id: "23E574F2A19C1D33"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "093F631A8250D035"
+			tasks: [{
+				id: "3E03F4194278D995"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "58A66A2383666C97"
+			tasks: [{
+				id: "45D641D820704E7B"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "3FB7056DA6F67EAE"
+			tasks: [{
+				id: "3016BA0CE04258AD"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "7D267E59C505EA2F"
+			tasks: [{
+				id: "55EEB4ADEEBDD0DC"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["78BE0A10CE7B4BBE"]
+			id: "45EA7CA14EE67AA4"
+			tasks: [{
+				id: "7C4C5BE01A6E47DB"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45EA7CA14EE67AA4"]
+			id: "2342C976766AF169"
+			tasks: [{
+				id: "452ACB26FAA052F5"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E24ECF6CEE950D1"]
+			id: "7123E4EFAEB457B2"
+			shape: "gear"
+			tasks: [{
+				id: "4B14EA2B169153EA"
+				item: "tfc:glue"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7123E4EFAEB457B2"]
+			id: "7067BC9D1CEB6982"
+			tasks: [{
+				id: "559495DDBA2E1557"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7B74DB051202E97E"]
+			id: "6C2560C3D953E31A"
+			tasks: [{
+				id: "5D78EA998A80A17F"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "3511E3DF17718ED4"
+			tasks: [{
+				id: "682292116D187C80"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["45EA7CA14EE67AA4"]
+			hide_dependency_lines: true
+			id: "2736FC986B7D8D35"
+			tasks: [{
+				id: "135489C0971B8F04"
+				item: {
+					Count: 1b
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["45EA7CA14EE67AA4"]
+			hide_dependency_lines: true
+			id: "5D1F3178294643AE"
+			tasks: [{
+				id: "352E3FCF3735048E"
+				item: {
+					Count: 1b
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["45EA7CA14EE67AA4"]
+			hide_dependency_lines: true
+			id: "79A7EB4F3BB64F29"
+			tasks: [{
+				id: "00C3CDD99E0550E5"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "316AA25E5991DD9B"
+			tasks: [{
+				id: "48F0EAD91F9707AF"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7B74DB051202E97E"]
+			id: "2D95C927AA8A641D"
+			tasks: [{
+				id: "0151C8DAE056A8F3"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D95C927AA8A641D"]
+			id: "4948CEF82DCB05AA"
+			tasks: [{
+				id: "32AEDFA92A36C1F0"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2D95C927AA8A641D"]
+			hide_dependency_lines: true
+			id: "41CB1E643C9C517E"
+			tasks: [{
+				id: "5880D509F71E5E9B"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2D95C927AA8A641D"]
+			hide_dependency_lines: true
+			id: "54D9026F3BE09E88"
+			tasks: [{
+				id: "51E333A2DABBB2D7"
+				item: "create:controls"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6E1CD5151284199F"]
+			hide_dependency_lines: true
+			id: "0553929CC6470D24"
+			tasks: [{
+				id: "2F503A986388839F"
+				item: "create:brown_toolbox"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+	]
+	title: "Create"
+}

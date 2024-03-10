@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:iv_electric_motor"
 	id: "32EF20533F323E02"
-	order_index: 6
+	order_index: 7
 	quest_links: [{
 		id: "050247AED8C803F9"
 		linked_quest: "30A6EDDF25A5E5F8"
@@ -654,13 +654,7 @@
 				}
 				{
 					id: "08814DD921835365"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:gems/nether_star"
-						}
-					}
+					item: "minecraft:nether_star"
 					title: "Nether Star"
 					type: "item"
 				}
@@ -1041,18 +1035,12 @@
 				id: "2EC4E901B2CD35FA"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:iv_energy_input_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_energy_output_hatch"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"IV Dyanamo/Energy Hatch\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:iv_energy_output_hatch)item(gtceu:iv_energy_output_hatch_4a)item(gtceu:iv_energy_output_hatch_16a)item(gtceu:iv_substation_output_hatch_64a)item(gtceu:iv_energy_input_hatch)item(gtceu:iv_energy_input_hatch_4a)item(gtceu:iv_energy_input_hatch_16a)item(gtceu:iv_substation_input_hatch_64a))"
 					}
 				}
 				title: "IV Dynamo/Energy Hatch"

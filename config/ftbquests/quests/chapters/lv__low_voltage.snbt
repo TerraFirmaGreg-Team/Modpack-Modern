@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 2
+	order_index: 3
 	quest_links: [{
 		id: "376725077649D2CC"
 		linked_quest: "5A8F0124E07D5025"
@@ -629,9 +629,12 @@
 				id: "47D0D12A26963702"
 				item: {
 					Count: 1b
-					id: "itemfilters:tag"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						value: "forge:batteries/lv"
+						display: {
+							Name: "{\"text\":\"Any lv batteries\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(gtceu:batteries/lv))"
 					}
 				}
 				title: "Any LV Battery"
@@ -764,7 +767,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["32EA7E81885C8E87"]
+			dependencies: [
+				"5A8F0124E07D5025"
+				"4B979482EF026BFF"
+			]
 			description: [
 				"&7LV&r will require you to craft a lot of different machines! Here's a friendly tip if you're struggling to set goals: pick an item in a later quest and go backwards from there."
 				""

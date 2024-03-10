@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:mv_electric_motor"
 	id: "43E779CEEB25D55B"
-	order_index: 3
+	order_index: 4
 	quest_links: [{
 		id: "6FCAD016C795DE93"
 		linked_quest: "7567E885B7166603"
@@ -253,22 +253,12 @@
 				id: "1F170291094582D6"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:mv_steam_turbine"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_gas_turbine"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_combustion"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"MV Generators\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:mv_steam_turbine)item(gtceu:mv_combustion)item(gtceu:mv_gas_turbine))"
 					}
 				}
 				title: "MV Generators"
@@ -505,22 +495,12 @@
 				id: "431D533510584687"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_miner"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_miner"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_miner"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Any miner\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_miner)item(gtceu:mv_miner)item(gtceu:hv_miner))"
 					}
 				}
 				title: "Any of the listed Miners"
@@ -1446,9 +1426,12 @@
 				id: "5FEE671A75766B78"
 				item: {
 					Count: 1b
-					id: "itemfilters:tag"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						value: "forge:batteries/mv"
+						display: {
+							Name: "{\"text\":\"Any mv battery\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(gtceu:batteries/mv))"
 					}
 				}
 				title: "Any MV Battery"
@@ -1667,18 +1650,12 @@
 				id: "685043442271A0D0"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_distillery"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_distillery"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Either an LV or MV Distillery\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_distillery)item(gtceu:mv_distillery))"
 					}
 				}
 				title: "Either an LV or MV Distillery"
@@ -1834,18 +1811,12 @@
 				id: "2620FA131244B3DA"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:potin_quadruple_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_nonuple_fluid_pipe"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Multiple channel pipes\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:potin_quadruple_fluid_pipe)item(gtceu:potin_nonuple_fluid_pipe))"
 					}
 				}
 				title: "Multiple Channel Potin Pipes, please"

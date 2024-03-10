@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "1C86D83D29134EBE"
@@ -91,7 +91,6 @@
 			size: 2.0d
 			subtitle: "Low Voltage beckons..."
 			tasks: [{
-				count: 6L
 				icon: "gtceu:lv_electric_motor"
 				id: "6F01622979E6F332"
 				item: "gtceu:lv_electric_motor"
@@ -334,7 +333,6 @@
 			size: 1.0d
 			subtitle: "The harder component for circuits"
 			tasks: [{
-				count: 2L
 				id: "099C373568DF4500"
 				item: "gtceu:vacuum_tube"
 				type: "item"
@@ -372,6 +370,7 @@
 				"4ED5A9AEF7B928BA"
 				"54AF8696674766B4"
 				"77EA56D16A9B3BFC"
+				"7941AFD548C8C405"
 			]
 			description: [
 				"We made it to &7LV&r! Give yourself a pat on the back!"
@@ -695,25 +694,15 @@
 				id: "158F4EEDC214A3BA"
 				item: {
 					Count: 1b
-					id: "itemfilters:or"
+					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:tin_small_item_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:nickel_small_item_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:cobalt_small_item_pipe"
-							}
-						]
+						display: {
+							Name: "{\"text\":\"Any item pipe\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(forge:small_item_pipes)item_tag(forge:normal_item_pipes)item_tag(forge:large_item_pipes)item_tag(forge:huge_item_pipes))"
 					}
 				}
-				title: "Earlygame Item Pipes"
+				title: "Any Item Pipes"
 				type: "item"
 			}]
 			title: "Item Pipes"
@@ -796,6 +785,17 @@
 			}]
 			x: -4.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["78BE0A10CE7B4BBE"]
+			id: "7941AFD548C8C405"
+			tasks: [{
+				id: "366B735B8F6F02B1"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

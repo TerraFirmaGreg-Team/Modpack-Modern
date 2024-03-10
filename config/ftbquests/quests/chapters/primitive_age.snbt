@@ -2415,7 +2415,7 @@
 				type: "item"
 			}]
 			x: 20.5d
-			y: 14.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["15E8DFB91603906B"]
@@ -3119,7 +3119,7 @@
 				type: "item"
 			}]
 			x: 20.5d
-			y: 18.5d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -3307,7 +3307,10 @@
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_nickel)item(gtceu:raw_nickel)item(gtceu:poor_raw_nickel)item(gtceu:rich_raw_garnierite)item(gtceu:raw_garnierite)item(gtceu:poor_raw_garnierite))"
+							display: {
+								Name: "{\"text\":\"Any Nickel Ore\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:raw_nickel)item(gtceu:raw_garnierite)item(gtceu:raw_pentlandite)item(gtceu:rich_raw_nickel)item(gtceu:rich_raw_garnierite)item(gtceu:rich_raw_pentlandite)item(gtceu:poor_raw_nickel)item(gtceu:poor_raw_garnierite)item(gtceu:poor_raw_pentlandite))"
 						}
 					}
 					title: "Any Nickel Ore"
@@ -5058,7 +5061,7 @@
 				type: "item"
 			}]
 			title: "Pressure Cookin'"
-			x: 20.5d
+			x: 18.5d
 			y: 24.0d
 		}
 		{
@@ -5079,8 +5082,34 @@
 				}
 				type: "item"
 			}]
+			x: 18.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2E3F6613C490E9AD"]
+			icon: "create:large_cogwheel"
+			id: "222A4146EF7750E9"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "37B470362F0F1467"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			title: "The beginning of Create"
 			x: 20.5d
-			y: 20.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6E24ECF6CEE950D1"]
+			id: "517EFADD8F22717F"
+			tasks: [{
+				id: "223513705634C41C"
+				item: "tfc:glue"
+				type: "item"
+			}]
+			x: 19.5d
+			y: -8.5d
 		}
 	]
 	title: "Primitive Age"
