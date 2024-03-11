@@ -6,7 +6,7 @@
 	group: ""
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
-	order_index: 6
+	order_index: 7
 	quest_links: [
 		{
 			id: "2E99A771FCA40E15"
@@ -491,29 +491,6 @@
 			title: "Tungsten"
 			x: 6.75d
 			y: 4.5d
-		}
-		{
-			dependencies: ["30A6EDDF25A5E5F8"]
-			description: [
-				"Even without channels, P2P Tunnels are still extremely important automation tools!"
-				""
-				"&9Note:&r There are many fantastic resources online to explain how P2P Tunnels work. The short description is that they allow transfer of things from 1 input to endless output. You can link them using a Memory Card."
-				""
-				"This Quest acts as a tutorial on how to use the P2P Tunnels to your own benefit."
-			]
-			icon: "ae2:me_p2p_tunnel"
-			id: "39E7997F3080250A"
-			shape: "square"
-			size: 0.75d
-			subtitle: "Fear not, channels are gone"
-			tasks: [{
-				id: "578F4D24289C544E"
-				item: "ae2:me_p2p_tunnel"
-				type: "item"
-			}]
-			title: "P2P Tunnels"
-			x: 7.875d
-			y: 3.375d
 		}
 		{
 			dependencies: ["069FD86133D7D582"]
@@ -1630,40 +1607,6 @@
 			title: "Multiblock Cracking"
 			x: 0.0d
 			y: 10.125d
-		}
-		{
-			dependencies: ["39E7997F3080250A"]
-			description: [
-				"To turn a P2P Tunnel into an &aItem P2P Tunnel&r, right-click it in the world with a &dvanilla Chest&r."
-				""
-				"Item P2P Tunnels are useful in a more abstract way so let's start with an example."
-				"{@pagebreak}"
-				"&eExample:&r Making a &9HV Machine Hull&r in the &3Assembler&r also requires an &3Extractor&r for the Fluid. That is two machines, hence two inventories."
-				""
-				"You could passively fill the Assembler with Polyethylene, &lor&r you can also include it in your &dPattern&r, in the form of 2 Bars (Ingots)."
-				""
-				"You may think the next step is just to dump the items in a Buffer and route the items with Pipes - however, this system will eventually &4jam&r due to the incompability with AE2 Interface blocking mode! Oh no!"
-				"{@pagebreak}"
-				"This can be fixed by placing the input of the &aItem P2P&r on your &3ME Interface&r, placing one output on the &3Extractor&r, and another output on the &3Assembler&r."
-				""
-				"Then, use Filter covers where the outputs are connected. &dItem Tag Filters&r are better, since you can configure them to &9ingot&r. Have them on &ewhitelist&r for the &3Extractor&r, and on &eblacklist&r for the &3Assembler&r (no Assembler recipe ever requires Ingots - that's an intentional design decision in GregTech)."
-				""
-				"Don't forget &dBlocking Mode&r on your Interface."
-				""
-				"Look - another reason why it's good to store polymers (Polyethylene, PTFE, PBI) as Bars!"
-			]
-			icon: "ae2:me_p2p_tunnel"
-			id: "7EF57E379F736FBB"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "A primer on items and P2P"
-			tasks: [{
-				id: "3CF9C3527F11EDA1"
-				type: "checkmark"
-			}]
-			title: "Item P2P Tunnels"
-			x: 7.875d
-			y: 4.5d
 		}
 		{
 			dependencies: ["3B2D2C47BEBCFFA7"]

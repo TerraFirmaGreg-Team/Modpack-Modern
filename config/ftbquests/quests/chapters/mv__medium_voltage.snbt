@@ -534,72 +534,6 @@
 			y: 2.625d
 		}
 		{
-			dependencies: [
-				"5401AB5E399E7BEA"
-				"16A6AE5C770DB83A"
-			]
-			description: [
-				"&3Molecular Assemblers&r can be used to automate Crafting Table recipes, which means you can automate just about anything now."
-				""
-				"To maximise the number of recipes a single Molecular Assembler can do, make a 3D matrix of Molecular Assemblers and ME Interfaces - where each component is surrounded on 6 sides by the other."
-				""
-				"Using higher-tier materials in crafting will yield more Molecular Assemblers."
-				"{@pagebreak}"
-				"&cWarning:&r Try to avoid using GT tools in AE2 autocrafting! It causes AE2 to freak out... you may or may not destroy the TPS, or even worse, end up having thousands of tools being crafted as soon as one of them breaks."
-				""
-				"If you're stubborn enough to &oreally&r want to use GT tools in AE2 autocrafting, prioritise encoding recipes that use tools with high durability, but &4do not&r setup autocrafting for the tools themselves. Instead, use the alternate &3Assembling Machine&r recipes."
-			]
-			icon: "ae2:molecular_assembler"
-			id: "0A1165C6D1F62C2B"
-			size: 0.66d
-			subtitle: "Autocrafting at last!"
-			tasks: [{
-				id: "37ED5227CCC0FE20"
-				item: "ae2:molecular_assembler"
-				type: "item"
-			}]
-			title: "Autocrafting"
-			x: 3.375d
-			y: 1.5d
-		}
-		{
-			dependencies: ["315169840E06110F"]
-			description: [
-				"Making &aAE2 Presses&r will unlock all the &9Processors&r from AE2. This opens up &9ME Drives&r, &9ME Interfaces,&r &9ME Crafting CPUs&r... that's almost the rest of AE2 at your fingertips!"
-				""
-				"AE2 &9Printed Circuits&r are now made in the &3Forming Press&r."
-			]
-			icon: "ae2:silicon_press"
-			id: "5401AB5E399E7BEA"
-			size: 0.66d
-			subtitle: "Who likes meteor hunting, anyway?"
-			tasks: [
-				{
-					id: "1141B6EFBC930999"
-					item: "ae2:calculation_processor_press"
-					type: "item"
-				}
-				{
-					id: "232235435C17AF43"
-					item: "ae2:engineering_processor_press"
-					type: "item"
-				}
-				{
-					id: "7BEAD830AE385683"
-					item: "ae2:logic_processor_press"
-					type: "item"
-				}
-				{
-					id: "54ACD8E01EABC134"
-					item: "ae2:silicon_press"
-					type: "item"
-				}
-			]
-			title: "Pressing Matters"
-			x: 3.375d
-			y: 2.64d
-		}
-		{
 			dependencies: ["682C26579EDDCA76"]
 			description: [
 				"The &3MV Cutter&r is required to cut &7Silicon Boules&r to prepare them for &aLaser Engraving&r."
@@ -1171,26 +1105,6 @@
 			title: "Polyethylene"
 			x: 6.75d
 			y: -3.0d
-		}
-		{
-			dependencies: ["10FB27DD3C7BEC2F"]
-			description: [
-				"&aPatterns&r are used for AE2 autocrafting. Using &aPolyvinyl Chloride&r increases the yield by &64 times&r, and higher-tier plastics have even greater yields."
-				""
-				"&3Molecular Assemblers&r aren't available for a little while more, but you can still automate machines with &9ME Interfaces&r."
-			]
-			icon: "ae2:blank_pattern"
-			id: "1C036BCB2C488CFF"
-			size: 0.66d
-			subtitle: "Autocrafting at last!"
-			tasks: [{
-				id: "032C24CBA8687E72"
-				item: "ae2:blank_pattern"
-				type: "item"
-			}]
-			title: "Patterns"
-			x: 5.625d
-			y: -4.125d
 		}
 		{
 			dependencies: ["10FB27DD3C7BEC2F"]
