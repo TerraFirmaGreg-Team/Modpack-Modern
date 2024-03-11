@@ -3849,13 +3849,9 @@
 			hide_dependency_lines: true
 			id: "0D47455ABB97C81D"
 			tasks: [{
-				icon: "tfc:wild_crop/papyrus"
-				id: "6EF9C75A9ADB0F75"
-				observe_type: 0
-				timer: 0L
-				title: "Найдите папирус"
-				to_observe: "tfc:crop/papyrus"
-				type: "observation"
+				id: "3A90FF5E36D0ACF8"
+				item: "tfc:papyrus"
+				type: "item"
 			}]
 			x: 27.0d
 			y: 1.0d
@@ -4203,13 +4199,9 @@
 			hide_dependency_lines: true
 			id: "56E985CAC2E08785"
 			tasks: [{
-				icon: "tfc:wild_crop/jute"
-				id: "0D975C4556FBC981"
-				observe_type: 0
-				timer: 0L
-				title: "Найдите дикий джут"
-				to_observe: "tfc:wild_crop/jute"
-				type: "observation"
+				id: "32068C359E9916DD"
+				item: "tfc:jute"
+				type: "item"
 			}]
 			x: 19.5d
 			y: -4.0d
@@ -4744,7 +4736,16 @@
 			id: "3D3508CB85E24741"
 			tasks: [{
 				id: "1305D6C4E52B055B"
-				item: "tfcastikorcarts:wheel/acacia"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Wheel\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:cart_wheel))"
+					}
+				}
 				type: "item"
 			}]
 			x: 13.5d
@@ -4755,7 +4756,16 @@
 			id: "219306E39AD47499"
 			tasks: [{
 				id: "74EB9E449D473FC9"
-				item: "tfcastikorcarts:supply_cart/acacia"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Supply Cart\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:supply_cart))"
+					}
+				}
 				type: "item"
 			}]
 			x: 14.5d
@@ -4766,7 +4776,16 @@
 			id: "146B900F623869B5"
 			tasks: [{
 				id: "54A97AF79AA8E551"
-				item: "tfcastikorcarts:plow/acacia"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Plow\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:plow))"
+					}
+				}
 				type: "item"
 			}]
 			x: 14.0d
@@ -4777,7 +4796,16 @@
 			id: "671C2E5239C4E644"
 			tasks: [{
 				id: "575BC984BA6ED21C"
-				item: "tfcastikorcarts:animal_cart/acacia"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Animal Cart\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:animal_cart))"
+					}
+				}
 				type: "item"
 			}]
 			x: 15.0d

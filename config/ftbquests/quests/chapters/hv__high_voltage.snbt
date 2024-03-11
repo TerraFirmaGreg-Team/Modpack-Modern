@@ -662,18 +662,7 @@
 				"16E3465CF94E2BDD"
 				"4024C831C77101CA"
 			]
-			description: [
-				"Regardless of whether you're playing on Peaceful or not, you will have to defeat the &4Ender Dragon&r to return to the Overworld safely."
-				""
-				"Prepare yourself with a bow, a few arrows, a blade, and some beds (speedrunner strats!)."
-				""
-				"This quest will print the &alocation of the nearest Stronghold&r in chat."
-				"{@pagebreak}"
-				"&9The End&r has even more new veins and materials to harvest, such as &ePlatinum&r and &7Naquadah&r! Similar to Nether ores, End ores are &6worth two Overworld ores&r."
-				""
-				"&aEyes of Ender&r are additionally used in crafting certain components, or for creating &5Quantum Eyes&r."
-			]
-			icon: "minecraft:end_portal_frame"
+			icon: "minecraft:ender_eye"
 			id: "41D32C5178760F47"
 			size: 0.75d
 			tasks: [{
@@ -682,7 +671,6 @@
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			title: "The End"
 			x: 7.875d
 			y: -1.875d
 		}
