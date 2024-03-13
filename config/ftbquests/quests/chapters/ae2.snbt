@@ -5,7 +5,7 @@
 	group: ""
 	icon: "ae2:controller"
 	id: "09BE9F51822EC180"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -900,7 +900,7 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 11.0d
 		}
 		{
@@ -912,7 +912,7 @@
 				item: "ae2:wireless_booster"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 3.0d
 			y: 8.0d
 		}
 		{
@@ -924,7 +924,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 8.0d
 		}
 		{
@@ -940,7 +940,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.0d
 			y: 7.0d
 		}
 		{
@@ -952,7 +952,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.0d
 			y: 9.0d
 		}
 		{
@@ -969,7 +969,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.0d
 			y: 8.0d
 		}
 		{
@@ -981,7 +981,7 @@
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 10.0d
 		}
 		{
@@ -993,7 +993,7 @@
 				item: "ae2wtlib:magnet_card"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: 11.0d
 		}
 		{
@@ -1005,7 +1005,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.0d
 			y: 8.0d
 		}
 		{
@@ -1017,7 +1017,7 @@
 				item: "ae2:item_cell_housing"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -3.5d
 			y: 7.0d
 		}
 		{
@@ -1029,7 +1029,7 @@
 				item: "ae2:fluid_cell_housing"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -3.5d
 			y: 9.0d
 		}
 		{
@@ -1045,7 +1045,7 @@
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.0d
 			y: 8.0d
 		}
 		{
@@ -1061,7 +1061,7 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 8.0d
 		}
 		{
@@ -1077,7 +1077,7 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 8.0d
 		}
 		{
@@ -1093,7 +1093,7 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -8.0d
 			y: 8.0d
 		}
 		{
@@ -1109,7 +1109,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.0d
 			y: 8.0d
 		}
 		{
@@ -1125,7 +1125,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.0d
 			y: 6.5d
 		}
 		{
@@ -1141,7 +1141,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.0d
 			y: 9.5d
 		}
 		{
@@ -1157,7 +1157,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: 5.5d
 		}
 		{
@@ -1173,7 +1173,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -9.5d
 			y: 10.5d
 		}
 		{
@@ -1189,7 +1189,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
+			x: -8.0d
 			y: 6.5d
 		}
 		{
@@ -1205,7 +1205,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
+			x: -8.0d
 			y: 9.5d
 		}
 		{
@@ -1221,7 +1221,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.5d
 			y: 5.5d
 		}
 		{
@@ -1237,7 +1237,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
+			x: -8.5d
 			y: 10.5d
 		}
 		{
@@ -1253,7 +1253,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 9.5d
 		}
 		{
@@ -1269,7 +1269,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 6.5d
 		}
 		{
@@ -1285,7 +1285,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.5d
 			y: 5.5d
 		}
 		{
@@ -1301,7 +1301,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.5d
 			y: 10.5d
 		}
 		{
@@ -1317,7 +1317,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 6.5d
 		}
 		{
@@ -1333,7 +1333,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 9.5d
 		}
 		{
@@ -1349,7 +1349,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: 5.5d
 		}
 		{
@@ -1365,7 +1365,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: 10.5d
 		}
 		{
@@ -1381,7 +1381,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.0d
 			y: 6.5d
 		}
 		{
@@ -1397,7 +1397,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.0d
 			y: 9.5d
 		}
 		{
@@ -1413,7 +1413,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.5d
 			y: 5.5d
 		}
 		{
@@ -1429,7 +1429,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.5d
 			y: 10.5d
 		}
 	]

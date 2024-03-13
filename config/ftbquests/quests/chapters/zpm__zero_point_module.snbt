@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:zpm_electric_motor"
 	id: "0945247E83444D90"
-	order_index: 10
+	order_index: 11
 	quest_links: [
 		{
 			id: "6BE70146903B5CBD"
@@ -333,10 +333,9 @@
 			size: 0.75d
 			subtitle: "The final processing line, at last!"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:sterilized_growth_medium"
-				id: "090D7595FCB21B63"
-				type: "fluid"
+				id: "4BDCAD1628C054CE"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
 			}]
 			title: "Sterilized Growth Medium"
 			x: -0.375d

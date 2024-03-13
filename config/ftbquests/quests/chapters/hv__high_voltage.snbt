@@ -383,15 +383,13 @@
 					type: "item"
 				}
 				{
-					amount: 1000L
-					fluid: "gtceu:sodium_potassium"
-					id: "2DF33EF0321AB809"
-					optional_task: true
-					type: "fluid"
-				}
-				{
 					id: "22E204ADB8257706"
 					item: "gtceu:hv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "0799251A5E99839C"
+					item: "gtceu:sodium_potassium_bucket"
 					type: "item"
 				}
 			]
@@ -818,22 +816,18 @@
 			subtitle: "A.K.A - Teflon"
 			tasks: [
 				{
-					amount: 1000L
-					fluid: "gtceu:hydrofluoric_acid"
-					id: "39D0D1DEEFAD2830"
-					optional_task: true
-					type: "fluid"
-				}
-				{
-					amount: 1000L
-					fluid: "gtceu:chloroform"
-					id: "28B5614D97C82AB8"
-					optional_task: true
-					type: "fluid"
-				}
-				{
 					id: "62C0D8E62DC90BD5"
 					item: "gtceu:polytetrafluoroethylene_plate"
+					type: "item"
+				}
+				{
+					id: "54D65A0A939DAD54"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "3E6E6F21B34F86B4"
+					item: "gtceu:chloroform_bucket"
 					type: "item"
 				}
 			]
@@ -862,10 +856,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 40000L
-				fluid: "gtceu:nitrobenzene"
-				id: "0BC043068EE4C69A"
-				type: "fluid"
+				id: "33CF24B0A19D2F25"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
 			}]
 			title: "Benzene Nitro"
 			x: 9.0d
@@ -947,13 +940,6 @@
 			size: 0.75d
 			tasks: [
 				{
-					amount: 1000L
-					fluid: "gtceu:toluene"
-					id: "1B1BAB5824FA20A9"
-					optional_task: true
-					type: "fluid"
-				}
-				{
 					id: "1CB85F57BA45252D"
 					item: "gtceu:gelled_toluene"
 					type: "item"
@@ -961,6 +947,11 @@
 				{
 					id: "04BF6A36E965C348"
 					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "6DC25EED8E91BEC2"
+					item: "gtceu:toluene_bucket"
 					type: "item"
 				}
 			]
@@ -1101,10 +1092,9 @@
 			size: 0.75d
 			subtitle: "This won't eat your skin"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:nitric_acid"
-				id: "30DA5B5D735254AD"
-				type: "fluid"
+				id: "5F8F684990622DE1"
+				item: "gtceu:nitric_acid_bucket"
+				type: "item"
 			}]
 			title: "Nitric Acid"
 			x: 6.75d
@@ -1132,10 +1122,9 @@
 			size: 0.66d
 			subtitle: "This is to go further beyond"
 			tasks: [{
-				amount: 50000L
-				fluid: "gtceu:cetane_boosted_diesel"
-				id: "150FF5579CA17796"
-				type: "fluid"
+				id: "51D904AA29256F8D"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
 			}]
 			title: "Cetane-boosted Diesel"
 			x: 7.875d

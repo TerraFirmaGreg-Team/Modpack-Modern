@@ -147,6 +147,7 @@
 		{
 			dependencies: ["6E1CD5151284199F"]
 			id: "78BE0A10CE7B4BBE"
+			shape: "rsquare"
 			tasks: [{
 				id: "4F22CB4EF49F2A9C"
 				item: "create:electron_tube"
@@ -241,6 +242,7 @@
 		{
 			dependencies: ["78BE0A10CE7B4BBE"]
 			id: "45EA7CA14EE67AA4"
+			shape: "rsquare"
 			tasks: [{
 				id: "7C4C5BE01A6E47DB"
 				item: "create:mechanical_crafter"
@@ -375,6 +377,7 @@
 		{
 			dependencies: ["7B74DB051202E97E"]
 			id: "2D95C927AA8A641D"
+			shape: "rsquare"
 			tasks: [{
 				id: "0151C8DAE056A8F3"
 				item: "create:precision_mechanism"
@@ -429,6 +432,18 @@
 			}]
 			x: -1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["6E1CD5151284199F"]
+			hide_dependency_lines: true
+			id: "560240B49B7BC7CA"
+			tasks: [{
+				id: "67AD16F72AE07381"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
 		}
 	]
 	title: "Create"
