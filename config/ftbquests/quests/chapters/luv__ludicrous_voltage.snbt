@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:luv_electric_motor"
 	id: "262A03F6F4EC713C"
-	order_index: 9
+	order_index: 10
 	quest_links: [
 		{
 			id: "7F8B55C8510200AF"
@@ -130,10 +130,9 @@
 			size: 0.66d
 			subtitle: "Absolutely beneficial for the environment"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:pcb_coolant"
-				id: "32BCECCE276F913D"
-				type: "fluid"
+				id: "64646F49C863998B"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
 			}]
 			title: "Dielectric PCB Coolant"
 			x: 2.25d
@@ -409,10 +408,9 @@
 			size: 0.75d
 			subtitle: "Do not touch the acid"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:fluoroantimonic_acid"
-				id: "0495EEA395A1B5EC"
-				type: "fluid"
+				id: "1589DE9F6692BB6F"
+				item: "gtceu:fluoroantimonic_acid_bucket"
+				type: "item"
 			}]
 			title: "Naquadah Chain"
 			x: 1.125d

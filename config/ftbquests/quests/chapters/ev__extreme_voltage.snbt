@@ -6,7 +6,7 @@
 	group: ""
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
-	order_index: 7
+	order_index: 8
 	quest_links: [
 		{
 			id: "2E99A771FCA40E15"
@@ -1075,16 +1075,13 @@
 					type: "item"
 				}
 				{
-					amount: 1000L
-					fluid: "gtceu:uranium_hexafluoride"
-					id: "59D6B7142C0174BA"
-					optional_task: true
-					title: "Uranium Hexafluoride"
-					type: "fluid"
-				}
-				{
 					id: "39E343FCB7B1646D"
 					item: "gtceu:uranium_dust"
+					type: "item"
+				}
+				{
+					id: "71CC4448F43C777A"
+					item: "gtceu:uranium_hexafluoride_bucket"
 					type: "item"
 				}
 			]
@@ -1268,13 +1265,6 @@
 			subtitle: "An alternate rubber"
 			tasks: [
 				{
-					amount: 1296L
-					fluid: "gtceu:silicone_rubber"
-					id: "3C29253DA5DAF778"
-					optional_task: true
-					type: "fluid"
-				}
-				{
 					id: "3E2FBCED1C782E7C"
 					item: "gtceu:silicone_rubber_ingot"
 					optional_task: true
@@ -1285,6 +1275,11 @@
 					id: "3CF87D26761354C4"
 					item: "gtceu:silicone_rubber_plate"
 					title: "Silicone Rubber Plate"
+					type: "item"
+				}
+				{
+					id: "58EA93A671979FEC"
+					item: "gtceu:silicone_rubber_bucket"
 					type: "item"
 				}
 			]
@@ -1533,53 +1528,39 @@
 			size: 0.66d
 			tasks: [
 				{
-					amount: 16000L
-					fluid: "gtceu:phenol"
-					id: "09C91BF9591202CC"
-					title: "Phenol"
-					type: "fluid"
+					id: "5EB2EB8D1629FC7F"
+					item: "gtceu:phenol_bucket"
+					type: "item"
 				}
 				{
-					amount: 64000L
-					fluid: "gtceu:benzene"
-					id: "2272D1322991506C"
-					title: "Benzene"
-					type: "fluid"
+					id: "1766C7D27D58CA7F"
+					item: "gtceu:benzene_bucket"
+					type: "item"
 				}
 				{
-					amount: 16000L
-					fluid: "gtceu:toluene"
-					id: "6B0F17B12A7E541A"
-					title: "Toluene"
-					type: "fluid"
+					id: "392237D560CAE74C"
+					item: "gtceu:toluene_bucket"
+					type: "item"
 				}
 				{
-					amount: 32000L
-					fluid: "gtceu:dimethylbenzene"
-					id: "0D90630744975DF9"
-					title: "Dimethylbenzene"
-					type: "fluid"
+					id: "2A7B747BB348181D"
+					item: "gtceu:dimethylbenzene_bucket"
+					type: "item"
 				}
 				{
-					amount: 16000L
-					fluid: "gtceu:acetic_acid"
-					id: "40A54366F789C104"
-					title: "Acetic Acid"
-					type: "fluid"
+					id: "158FF6EC9FF43862"
+					item: "gtceu:acetic_acid_bucket"
+					type: "item"
 				}
 				{
-					amount: 32000L
-					fluid: "gtceu:methanol"
-					id: "7064FF6DA67EFC0B"
-					title: "Methanol"
-					type: "fluid"
+					id: "4C5B5521CD219138"
+					item: "gtceu:methanol_bucket"
+					type: "item"
 				}
 				{
-					amount: 8000L
-					fluid: "gtceu:acetone"
-					id: "209CCB68CBB8E9CD"
-					title: "Acetone"
-					type: "fluid"
+					id: "39DFBE5FAB075669"
+					item: "gtceu:acetone_bucket"
+					type: "item"
 				}
 			]
 			title: "True Distillation: Organic"

@@ -1,0 +1,213 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cc"
+	group: ""
+	icon: "computercraft:computer_advanced"
+	id: "1A6D6B70EC13DDC6"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["26394C1290D70AB6"]
+			description: ["To continue the quest line, you need to craft any of the computers."]
+			icon: "computercraft:computer_advanced"
+			id: "591C5E26EE7466F3"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6BC9F3064F29B986"
+				title: "CC: Tweaked"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["591C5E26EE7466F3"]
+			id: "0BFFB20573B2A9A5"
+			tasks: [{
+				id: "4A52931C6E78FFC2"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["591C5E26EE7466F3"]
+			id: "249A6189A9334B14"
+			tasks: [{
+				id: "28B5BBAAA33CDEDA"
+				item: "computercraft:computer_advanced"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["249A6189A9334B14"]
+			id: "2A507BD15FBA08FC"
+			tasks: [{
+				id: "73DA9F99EF913F3D"
+				item: "computercraft:turtle_advanced"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0BFFB20573B2A9A5"]
+			id: "4C3A1901BA40FB24"
+			tasks: [{
+				id: "64B16F8F192CEE23"
+				item: "computercraft:turtle_normal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0BFFB20573B2A9A5"
+				"249A6189A9334B14"
+			]
+			dependency_requirement: "one_completed"
+			id: "5196983324E8F52A"
+			tasks: [{
+				id: "420333B377F27A78"
+				item: "computercraft:cable"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0BFFB20573B2A9A5"
+				"249A6189A9334B14"
+			]
+			dependency_requirement: "one_completed"
+			icon: "computercraft:monitor_advanced"
+			id: "7FFDA4C59514AA98"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "7D070BAFC0F4226A"
+				type: "checkmark"
+			}]
+			title: "It's time to craft trinkets"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "7B500E0A921321E9"
+			shape: "circle"
+			tasks: [{
+				id: "42590471EA46FCE8"
+				item: "computercraft:monitor_normal"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "4B88F658A752FA3F"
+			shape: "circle"
+			tasks: [{
+				id: "42CCFEF24A41C1FE"
+				item: "computercraft:monitor_advanced"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "48C4D2DB2E7F6F59"
+			shape: "circle"
+			tasks: [{
+				id: "72C0320D738C604E"
+				item: "computercraft:wireless_modem_normal"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "2A43647C3C5D9E83"
+			shape: "circle"
+			tasks: [{
+				id: "79AE74FA098E7DC3"
+				item: "computercraft:wireless_modem_advanced"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "38F42B6D14F8DED1"
+			shape: "circle"
+			tasks: [{
+				id: "702BB2F0572F5E48"
+				item: "computercraft:wired_modem"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "27577CB16820E75B"
+			shape: "circle"
+			tasks: [{
+				id: "267B8DB63952DF1A"
+				item: "computercraft:speaker"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "3AE64484AB9F1048"
+			shape: "circle"
+			tasks: [{
+				id: "2B14E62B1C603EFD"
+				item: "computercraft:disk_drive"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "77439E3A3EC781F8"
+			shape: "circle"
+			tasks: [{
+				id: "66B7614C462CE161"
+				item: "computercraft:printer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7FFDA4C59514AA98"]
+			id: "3DFB9A8A2BE3E85B"
+			shape: "circle"
+			tasks: [{
+				id: "616A905A423A55B0"
+				item: "computercraft:disk_drive"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+	]
+	title: "CC: Tweaked"
+}

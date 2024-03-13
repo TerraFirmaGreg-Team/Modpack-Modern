@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:iv_electric_motor"
 	id: "32EF20533F323E02"
-	order_index: 8
+	order_index: 9
 	quest_links: [{
 		id: "050247AED8C803F9"
 		linked_quest: "30A6EDDF25A5E5F8"
@@ -191,13 +191,6 @@
 			subtitle: "GTCEu's toughest polymer!"
 			tasks: [
 				{
-					amount: 1000L
-					fluid: "gtceu:polybenzimidazole"
-					id: "5971118ED25AC71A"
-					optional_task: true
-					type: "fluid"
-				}
-				{
 					id: "7C5D37940A0C8409"
 					item: "gtceu:polybenzimidazole_ingot"
 					optional_task: true
@@ -206,6 +199,11 @@
 				{
 					id: "65165EC105F048AD"
 					item: "gtceu:polybenzimidazole_plate"
+					type: "item"
+				}
+				{
+					id: "428B6B36182382B7"
+					item: "gtceu:polybenzimidazole_bucket"
 					type: "item"
 				}
 			]
@@ -956,10 +954,9 @@
 			shape: "rsquare"
 			size: 0.66d
 			tasks: [{
-				amount: 6000L
-				fluid: "gtceu:rocket_fuel"
-				id: "040946A4E48F28E8"
-				type: "fluid"
+				id: "0882761E90120C3C"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
 			}]
 			title: "Rocket Fuel"
 			x: 6.0d

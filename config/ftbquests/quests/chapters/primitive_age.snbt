@@ -69,9 +69,9 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["Вместо обычных камушков, в мире вы можете встретить кусочки руды, обычно они указывают на то, что где-то под землей располагается жила с рудой по материалу сходной с кусочком руды найденном на поверхности, но пока у вас нет кирки, поэтому вам стоит собирать такие кусочки, ведь их можно расплавить в металл при помощи формочек и огненной ямы, о которой мы расскажем позже."]
+			description: ["Instead of ordinary pebbles, you can find pieces of ore in the world, they usually indicate that somewhere underground there is a vein with ore similar in material to a piece of ore found on the surface, but so far you do not have a pickaxe, so you should collect such pieces, because they can be melted into metal using molds and a fire pit, which we will talk about later."]
 			id: "40A930BEBFCFBF3B"
-			subtitle: "Ваш первый металл уже сейчас, по скидке"
+			subtitle: "Your first metal is already available, at a discount"
 			tasks: [
 				{
 					id: "45ADEA53258F0876"
@@ -242,7 +242,7 @@
 					type: "item"
 				}
 			]
-			title: "Камушки с рудой"
+			title: "Pebbles with ore"
 			x: -3.5d
 			y: -2.0d
 		}
@@ -1124,7 +1124,7 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Молот: преимущественно используется только ради создания каменной наковальни и первых медных двойных слитков, но об этом будет информация дальше по квестам."]
+			description: ["Hammer: mainly used only to create a stone anvil and the first copper double ingots, but there will be information about this later in the quests."]
 			hide_dependency_lines: true
 			id: "120E5C0E43EC756B"
 			subtitle: "Сделайте лучше медный!"
@@ -1632,6 +1632,7 @@
 		}
 		{
 			dependencies: ["0EB682B44D83D12A"]
+			description: [""]
 			id: "2286E2D7A9178E13"
 			tasks: [{
 				count: 6L
@@ -1643,7 +1644,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/raw)"
 					}
 				}
-				title: "Любой сырой камень"
+				title: "Any Raw Stone"
 				type: "item"
 			}]
 			x: 9.5d
@@ -1681,7 +1682,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/smooth)"
 					}
 				}
-				title: "Любой полированный камень"
+				title: "Any Smooth Stone"
 				type: "item"
 			}]
 			x: 11.0d
@@ -1859,7 +1860,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:barrels)"
 					}
 				}
-				title: "Any #tfc:barrels"
+				title: "Any Barrels"
 				type: "item"
 			}]
 			x: 16.5d
@@ -1973,7 +1974,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Медный или бронзовый топор"
+				title: "A copper or bronze axe"
 				type: "item"
 			}]
 			x: 12.0d
@@ -1985,13 +1986,18 @@
 				"3830E24B66F59E76"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"To make a stone anvil, you have to click on the top of the stone with a hammer"
+				""
+				"(you need to use igneous Intrusive stone)"
+			]
 			id: "169485270E86A50C"
 			tasks: [{
 				icon: "tfc:rock/raw/andesite"
 				id: "028DBFDDC00B9949"
 				observe_type: 1
 				timer: 0L
-				title: "Сделайте каменную наковальню"
+				title: "Make Rock Anvil"
 				to_observe: "#tfc:rock_anvils"
 				type: "observation"
 			}]
@@ -2026,6 +2032,7 @@
 				"7A266A3E0A632D42"
 				"169485270E86A50C"
 			]
+			description: ["To make welding craft on an anvil, you need to take a hammer in your leading hand and press shift+rmb on the anvil"]
 			id: "5EBFCE37D727DFD0"
 			tasks: [{
 				count: 7L
@@ -2064,7 +2071,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:bronze_ingot)item(gtceu:black_bronze_ingot)item(gtceu:bismuth_bronze_ingot))"
 					}
 				}
-				title: "Любой бронзовый слиток"
+				title: "Any bronze ingot"
 				type: "item"
 			}]
 			x: 18.5d
@@ -2215,7 +2222,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:bismuth_bronze_double_ingot)item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot))"
 					}
 				}
-				title: "Двойные слитки из любой бронзы"
+				title: "Double ingots of any Bronze"
 				type: "item"
 			}]
 			x: 18.5d
@@ -2254,7 +2261,6 @@
 				id: "gtceu:bronze_dust"
 			}
 			id: "2DEEDED2F21E60B9"
-			subtitle: "Строгий середнячок"
 			tasks: [
 				{
 					id: "024533C5E4B89787"
@@ -2284,7 +2290,7 @@
 					type: "item"
 				}
 			]
-			title: "Ресурсы для обычной бронзы"
+			title: "Resources for ordinary bronze"
 			x: 18.5d
 			y: 14.0d
 		}
@@ -2429,7 +2435,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:dyes)"
 					}
 				}
-				title: "Any #tfc:dyes"
+				title: "Any Dyes"
 				type: "item"
 			}]
 			x: 14.0d
@@ -2449,7 +2455,7 @@
 				id: "gtceu:bismuth_bronze_dust"
 			}
 			id: "515141734CA1A002"
-			subtitle: "Дешевая и блестящяя"
+			subtitle: "Cheap and shiny"
 			tasks: [
 				{
 					id: "7EBB6EC50EE8CFA1"
@@ -2494,7 +2500,7 @@
 					type: "item"
 				}
 			]
-			title: "Ресурсы для висмутной бронзы"
+			title: "Resources for Bismuth bronze"
 			x: 18.5d
 			y: 15.0d
 		}
@@ -2512,7 +2518,7 @@
 				id: "gtceu:black_bronze_dust"
 			}
 			id: "69B4B677A27121CF"
-			subtitle: "Дорогая и черная"
+			subtitle: "Expensive and black"
 			tasks: [
 				{
 					id: "1294B28A98775920"
@@ -2554,7 +2560,7 @@
 					type: "item"
 				}
 			]
-			title: "Ресурсы для черной бронзы"
+			title: "Resources for Black Bronze"
 			x: 18.5d
 			y: 13.0d
 		}
@@ -2851,7 +2857,7 @@
 				id: "33278CA851060438"
 				observe_type: 1
 				timer: 0L
-				title: "Найдите дерево: Капок"
+				title: "Find the tree: Kapok"
 				to_observe: "tfc:kapok_logs"
 				type: "observation"
 			}]
@@ -2914,7 +2920,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass_panes)"
 					}
 				}
-				title: "Any #forge:glass_panes"
+				title: "Any Glass Panes"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2933,7 +2939,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:ore_deposits)"
 					}
 				}
-				title: "Any #tfc:ore_deposits"
+				title: "Any Ore Deposits"
 				type: "item"
 			}]
 			x: -11.0d
@@ -2962,7 +2968,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_bottles)"
 					}
 				}
-				title: "Any #tfc:glass_bottles"
+				title: "Any Glass Bottles"
 				type: "item"
 			}]
 			x: -7.5d
@@ -3035,7 +3041,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lamps)"
 					}
 				}
-				title: "Any #tfc:lamps"
+				title: "Any Lamps"
 				type: "item"
 			}]
 			x: -9.0d
@@ -3115,7 +3121,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:double_sheets/any_bronze)"
 					}
 				}
-				title: "Any #forge:double_sheets/any_bronze"
+				title: "Any Bronze Double Plates"
 				type: "item"
 			}]
 			x: 20.5d
@@ -3652,7 +3658,7 @@
 					type: "item"
 				}
 			]
-			title: "Материалы для розового золота"
+			title: "Materials for Rose Gold"
 			x: 30.0d
 			y: 13.0d
 		}
@@ -3699,7 +3705,7 @@
 					type: "item"
 				}
 			]
-			title: "Материалы для латуни"
+			title: "Materials for Brass"
 			x: 31.0d
 			y: 13.0d
 		}
@@ -3746,7 +3752,7 @@
 					type: "item"
 				}
 			]
-			title: "Материалы для серебра стерлинга"
+			title: "Materials for Sterling Silver"
 			x: 30.5d
 			y: 19.5d
 		}
@@ -3790,7 +3796,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Any #tfc:tuyeres"
+				title: "Any Tuyeres"
 				type: "item"
 			}]
 			x: 22.5d
@@ -3809,7 +3815,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:support_beams)"
 					}
 				}
-				title: "Любые опоры"
+				title: "Any Support"
 				type: "item"
 			}]
 			x: 13.0d
@@ -3827,7 +3833,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:looms)"
 					}
 				}
-				title: "Любой ткацкий станок"
+				title: "Any Loom"
 				type: "item"
 			}]
 			x: 13.0d
@@ -4001,7 +4007,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:prepared_hides)"
 					}
 				}
-				title: "Любая приготовленная шкура"
+				title: "Any Prepared Hide"
 				type: "item"
 			}]
 			x: 6.5d
@@ -4022,7 +4028,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:scraped_hides)"
 					}
 				}
-				title: "Любая обскобленная шкура"
+				title: "Any Scraped Hide"
 				type: "item"
 			}]
 			x: 5.0d
@@ -4043,7 +4049,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:soaked_hides)"
 					}
 				}
-				title: "Any #tfc:soaked_hides"
+				title: "Any Soaked Hides"
 				type: "item"
 			}]
 			x: 5.0d
@@ -4066,7 +4072,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:raw_hides)"
 					}
 				}
-				title: "Any #tfc:raw_hides"
+				title: "Any Raw Hides"
 				type: "item"
 			}]
 			x: 3.5d
@@ -4085,7 +4091,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:sheepskin_hides)"
 					}
 				}
-				title: "Any #tfc:sheepskin_hides"
+				title: "Any Sheepskin Hides"
 				type: "item"
 			}]
 			x: 8.0d
@@ -4478,7 +4484,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
 					}
 				}
-				title: "Any #minecraft:beds"
+				title: "Any Beds"
 				type: "item"
 			}]
 			x: 10.0d

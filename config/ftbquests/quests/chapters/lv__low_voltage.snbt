@@ -264,6 +264,7 @@
 				"3DE7A2B91CFF48F6"
 				"2F7617C0C4B330DE"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Covers are placed by right-clicking with Cover in hand on a face of a machine, and removed with a &5Crowbar&r (or by mining the machine, but that's way slower)."
 				""
@@ -662,23 +663,20 @@
 			icon: "gtceu:lv_battery_buffer_4x"
 			id: "6431381FBE07D6EF"
 			size: 0.75d
-			tasks: [
-				{
-					id: "23FCFCA69488AA2B"
-					item: "gtceu:lv_battery_buffer_4x"
-					type: "item"
+			tasks: [{
+				id: "3241F5B06FB7258A"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Battery Buffer\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_battery_buffer_4x)item(gtceu:lv_battery_buffer_8x)item(gtceu:lv_battery_buffer_16x))"
+					}
 				}
-				{
-					id: "2D59C65816F60CEF"
-					item: "gtceu:lv_battery_buffer_8x"
-					type: "item"
-				}
-				{
-					id: "679E89402D7ECE10"
-					item: "gtceu:lv_battery_buffer_16x"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Battery Buffer"
 			x: 6.75d
 			y: 3.375d
@@ -967,10 +965,9 @@
 					type: "item"
 				}
 				{
-					amount: 1296L
-					fluid: "gtceu:rubber"
-					id: "75DD10F659BA5406"
-					type: "fluid"
+					id: "7DA8B08CC879617F"
+					item: "gtceu:rubber_bucket"
+					type: "item"
 				}
 			]
 			title: "Basic Chemical Reactor"
@@ -1035,7 +1032,6 @@
 					type: "item"
 				}
 				{
-					count: 8L
 					id: "7EF3EDA1698AFB7F"
 					item: "gtceu:tin_rotor"
 					type: "item"
@@ -1175,7 +1171,16 @@
 			subtitle: "The Mixer mixes..."
 			tasks: [{
 				id: "4A0B4A206ED30212"
-				item: "gtceu:lv_mixer"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Mixer\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_kinetic_mixer)item(gtceu:lv_mixer))"
+					}
+				}
 				type: "item"
 			}]
 			title: "Basic Mixer"
@@ -1572,48 +1577,20 @@
 			id: "1F2359106FC95603"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "0A2A4C60994B0FE8"
-					item: "gtceu:lv_rock_crusher"
-					type: "item"
+			tasks: [{
+				id: "37396BE76A4F64C5"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Rock Crusher\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_rock_crusher)item(gtceu:mv_rock_crusher)item(gtceu:hv_rock_crusher)item(gtceu:ev_rock_crusher)item(gtceu:iv_rock_crusher)item(gtceu:luv_rock_crusher)item(gtceu:zpm_rock_crusher)item(gtceu:uv_rock_crusher))"
+					}
 				}
-				{
-					id: "335EA991E1B8C91F"
-					item: "gtceu:mv_rock_crusher"
-					type: "item"
-				}
-				{
-					id: "1AB3C8D744EABAA3"
-					item: "gtceu:hv_rock_crusher"
-					type: "item"
-				}
-				{
-					id: "558BDEA1E084DD84"
-					item: "gtceu:ev_rock_crusher"
-					type: "item"
-				}
-				{
-					id: "56F4B7D4AA38798A"
-					item: "gtceu:iv_rock_crusher"
-					type: "item"
-				}
-				{
-					id: "22C42CA726A1F45F"
-					item: "gtceu:luv_rock_crusher"
-					type: "item"
-				}
-				{
-					id: "17E26A869F5E9019"
-					item: "gtceu:zpm_rock_crusher"
-					type: "item"
-				}
-				{
-					id: "495C9E1656091F34"
-					item: "gtceu:uv_rock_crusher"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Cobble is Life"
 			x: 4.5d
 			y: 0.0d
@@ -1633,58 +1610,20 @@
 			id: "2DB259568F347C0E"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "66D61D09EE54B27B"
-					item: "gtceu:ulv_charger_4x"
-					type: "item"
+			tasks: [{
+				id: "11A5ECE835D2037C"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Turbo Charger 4x\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:ulv_charger_4x)item(gtceu:lv_charger_4x)item(gtceu:mv_charger_4x)item(gtceu:hv_charger_4x)item(gtceu:ev_charger_4x)item(gtceu:iv_charger_4x)item(gtceu:luv_charger_4x)item(gtceu:zpm_charger_4x)item(gtceu:uv_charger_4x)item(gtceu:uhv_charger_4x))"
+					}
 				}
-				{
-					id: "61A83D76ED64541B"
-					item: "gtceu:lv_charger_4x"
-					type: "item"
-				}
-				{
-					id: "53F46FB26DAD3CB0"
-					item: "gtceu:mv_charger_4x"
-					type: "item"
-				}
-				{
-					id: "62572E97F72BD831"
-					item: "gtceu:hv_charger_4x"
-					type: "item"
-				}
-				{
-					id: "3FB57522BADB33B4"
-					item: "gtceu:ev_charger_4x"
-					type: "item"
-				}
-				{
-					id: "3A1B648C445D3C5A"
-					item: "gtceu:iv_charger_4x"
-					type: "item"
-				}
-				{
-					id: "719832D62AE242FE"
-					item: "gtceu:luv_charger_4x"
-					type: "item"
-				}
-				{
-					id: "1FC410D2E3DEB33B"
-					item: "gtceu:zpm_charger_4x"
-					type: "item"
-				}
-				{
-					id: "6474F0A518A20386"
-					item: "gtceu:uv_charger_4x"
-					type: "item"
-				}
-				{
-					id: "096A77845F50C0DE"
-					item: "gtceu:uhv_charger_4x"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Turbo Charger"
 			x: 5.625d
 			y: 0.0d
@@ -1705,28 +1644,20 @@
 			id: "3B26CA44EA955B07"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "5FE21AF40C603AD0"
-					item: "gtceu:lv_fisher"
-					type: "item"
+			tasks: [{
+				id: "54B46E0C5903092F"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Fisher\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_fisher)item(gtceu:mv_fisher)item(gtceu:hv_fisher)item(gtceu:ev_fisher))"
+					}
 				}
-				{
-					id: "73279793E571A6E0"
-					item: "gtceu:mv_fisher"
-					type: "item"
-				}
-				{
-					id: "385ED95E8F39CB6D"
-					item: "gtceu:hv_fisher"
-					type: "item"
-				}
-				{
-					id: "0C30563A771CF7F6"
-					item: "gtceu:ev_fisher"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Fishing 50"
 			x: 6.75d
 			y: 0.0d

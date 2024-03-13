@@ -76,10 +76,9 @@
 			size: 0.66d
 			subtitle: "Plants aren't industrial enough!"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:biomass"
-				id: "538F04658EF11F2B"
-				type: "fluid"
+				id: "74B1433E65EC86E4"
+				item: "gtceu:biomass_bucket"
+				type: "item"
 			}]
 			title: "Biomass"
 			x: 0.0d
@@ -1728,9 +1727,9 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Multiple channel pipes\"}"
+							Name: "{\"text\":\"Any Quadruple or Nonuple Pipe\"}"
 						}
-						"ftbfiltersystem:filter": "or(item(gtceu:potin_quadruple_fluid_pipe)item(gtceu:potin_nonuple_fluid_pipe))"
+						"ftbfiltersystem:filter": "or(item_tag(forge:quadruple_fluid_pipes)item_tag(forge:nonuple_fluid_pipes))"
 					}
 				}
 				title: "Multiple Channel Potin Pipes, please"
