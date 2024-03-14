@@ -3059,11 +3059,22 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-}
+    //#region Alabaster
 
+    event.shapeless('4x tfc:alabaster_brick', ['#forge:raw_materials/gypsum', '#tfc:chisels'])
+        .id('tfc:crafting/alabaster_brick/raw_gypsum')
+        
+    event.shapeless('4x tfc:alabaster_brick', ['#forge:poor_raw_materials/gypsum', '#tfc:chisels'])
+        .id('tfc:crafting/alabaster_brick/poor_raw_gypsum')
+
+    event.shapeless('4x tfc:alabaster_brick', ['#forge:rich_raw_materials/gypsum', '#tfc:chisels'])
+        .id('tfc:crafting/alabaster_brick/rich_raw_gypsum')
+    
+    //#endregion
+}
 /*
 
-event.recipes.gtceu.assembler('')             
+event.recipes.gtceu.assembler('')             r
         .itemInputs('')
         .itemOutputs('')
         .duration(100)
