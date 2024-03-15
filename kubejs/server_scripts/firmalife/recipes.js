@@ -364,4 +364,27 @@ const registerFirmaLifeRecipes = (event) => {
     })
 
     //#endregion
+
+    //#region Рецепты пиццы
+
+    //тесто для пиццы
+    event.recipes.gtceu.mixer('firmalife:food/pizza_dough')             
+        .itemInputs('firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt')
+        .inputFluids(Fluid.of('tfc:olive_oil', 1000))
+        .itemOutputs('4x firmalife:food/pizza_dough')
+        .duration(300)
+        .EUt(16)
+
+    event.recipes.create.mixing('4x firmalife:food/pizza_dough', ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt', Fluid.of('tfc:olive_oil', 1000)]
+    ).id('firmalife:create/mixer/food/pizza_dough')
+    
+    //жарка пиццы
+    /*
+    event.recipes.gtceu.smelter('firmalife:food/cooked_pizza')             
+        .itemInputs('firmalife:food/raw_pizza')
+        .itemOutputs('firmalife:food/cooked_pizza')
+        .duration(200)
+        .EUt(4)
+        */
+    //#endregion
 }
