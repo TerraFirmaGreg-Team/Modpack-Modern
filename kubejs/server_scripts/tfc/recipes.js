@@ -3061,13 +3061,13 @@ const registerTFCRecipes = (event) => {
 
     //#region Alabaster
 
-    event.shapeless('4x tfc:alabaster_brick', ['#forge:raw_materials/gypsum', '#tfc:chisels'])
+    event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('4x tfc:alabaster_brick', ['#forge:raw_materials/gypsum', '#tfc:chisels']))
         .id('tfc:crafting/alabaster_brick/raw_gypsum')
         
-    event.shapeless('4x tfc:alabaster_brick', ['#forge:poor_raw_materials/gypsum', '#tfc:chisels'])
+    event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('2x tfc:alabaster_brick', ['#forge:poor_raw_materials/gypsum', '#tfc:chisels']))
         .id('tfc:crafting/alabaster_brick/poor_raw_gypsum')
 
-    event.shapeless('4x tfc:alabaster_brick', ['#forge:rich_raw_materials/gypsum', '#tfc:chisels'])
+    event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless('6x tfc:alabaster_brick', ['#forge:rich_raw_materials/gypsum', '#tfc:chisels']))
         .id('tfc:crafting/alabaster_brick/rich_raw_gypsum')
     
     //#endregion
