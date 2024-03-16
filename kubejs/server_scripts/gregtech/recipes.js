@@ -1439,6 +1439,8 @@ const registerGTCEURecipes = (event) => {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
 
+            let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
+
             if (material.hasProperty(PropertyKey.INGOT))
             {
                 if (!plateStack.isEmpty()) {
@@ -1448,7 +1450,7 @@ const registerGTCEURecipes = (event) => {
 
                     if (!blockStack.isEmpty()) {
                     // 9х Слиток -> Блок
-                    event.recipes.createCompacting(blockStack, ingotStack.withCount(9))
+                    event.recipes.createCompacting(blockStack, ingotStack.withCount(matAmount))
                         .heated()
                         .id(`tfg:compacting/${material.getName()}_block`)
                     }
@@ -1460,7 +1462,7 @@ const registerGTCEURecipes = (event) => {
             {
                 if (!blockStack.isEmpty()) {
                     // Блок из гемов -> 9 Пластин
-                    event.recipes.createCutting(Item.of(plateStack.withCount(9)).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
+                    event.recipes.createCutting(Item.of(plateStack.withCount(matAmount)).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
                         .id(`tfg:cutting/${material.getName()}_plate`)
                 }
                 
