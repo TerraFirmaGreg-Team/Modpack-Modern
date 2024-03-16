@@ -53,13 +53,7 @@
 				"&6&lThank you for playing the pack! :D&r"
 				"- The GregTech Community Pack Dev Team"
 			]
-			icon: {
-				Count: 1b
-				id: "gtceu:iron_wrench"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "gtceu:nan_certificate"
 			id: "6E8F257261F93501"
 			shape: "heart"
 			size: 4.0d
