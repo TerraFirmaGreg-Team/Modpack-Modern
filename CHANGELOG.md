@@ -26,6 +26,7 @@
 - HangGlider-v8.0.1-1.20.1-Forge
 - u_team_core-forge-1.20.1-5.1.4.269
 - music_player-forge-1.20.1-2.7.0.236
+- Embeddium/Rubidium Dynamic Lights
 
 ## [0.6.15] - 17.02.2024
 ### Changes
