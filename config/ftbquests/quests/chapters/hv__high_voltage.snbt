@@ -1238,6 +1238,44 @@
 			x: 4.5d
 			y: -3.0d
 		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			id: "2F5778EDE6426D7E"
+			shape: "circle"
+			size: 0.8d
+			tasks: [{
+				id: "1BCFD5295BE92C4E"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.625d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F5778EDE6426D7E"]
+			id: "2045D32219AA0DCC"
+			shape: "circle"
+			size: 0.9d
+			tasks: [{
+				id: "3785469E7628386A"
+				item: {
+					Count: 1b
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.625d
+			y: -8.0d
+		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]
 	title: "&6HV&r - High Voltage"

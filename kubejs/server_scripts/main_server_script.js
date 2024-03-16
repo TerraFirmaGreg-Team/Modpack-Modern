@@ -115,6 +115,7 @@ ServerEvents.recipes(event => {
     registerFirmaLifeRecipes(event)
     registerFTBQuestsRecipes(event)
     registerGTCEURecipes(event)
+    registerHandGliderRecipes(event)
     registerMinecraftRecipes(event)
     registerMoreRedRecipes(event)
     registerRailWaysRecipes(event)

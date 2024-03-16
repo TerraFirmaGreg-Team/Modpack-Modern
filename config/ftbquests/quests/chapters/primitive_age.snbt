@@ -5145,6 +5145,23 @@
 			x: 19.5d
 			y: -8.5d
 		}
+		{
+			dependencies: ["095104BA3C842978"]
+			id: "4718D375758B9219"
+			tasks: [{
+				id: "37312BCB967DE348"
+				item: {
+					Count: 1b
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 20.5d
+			y: 11.0d
+		}
 	]
 	title: "Primitive Age"
 }
