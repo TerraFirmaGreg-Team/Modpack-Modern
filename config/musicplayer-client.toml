@@ -1,0 +1,6 @@
+
+#Client configuration settings
+[client]
+	#Should we use instead of the global appdata dir a local dir in configs for storing and loading our playlist
+	internalPlaylists = false
+
