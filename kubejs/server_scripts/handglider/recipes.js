@@ -12,5 +12,5 @@ const registerHandGliderRecipes = (event) => {
         B: '#forge:rods/long/wrought_iron',
         C: '#forge:screws',
         D: '#forge:rings'
-    }).id('tfg:shaped/hangglider/glider_framework')
+    }).id('hangglider:glider_framework')
 }

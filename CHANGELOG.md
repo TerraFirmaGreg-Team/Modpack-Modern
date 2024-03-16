@@ -4,7 +4,6 @@
 ### Changes
 - Fixed bug when some quests (when using eng language) displays russian titles and descriptions. (FriendlyCube)
 - Added new recipes for TFC alebaster via workbench. (FriendlyCube)
-- Added new recipes for TFC alebaster via GTCEu + Create machines. (Exception)
 - Fixed a lot of shit with quests. (FriendlyCube)
 - Added AE2 and Create chapters in quests (FriendlyCube)
 - Added new recipes for charged certus quarts. (Exception)
@@ -14,6 +13,7 @@
 - Added elytra repairing recipe. (Exception)
 - Removed polymer recipes from create press and packer. (Exception)
 - Gregified HandGlider recipes. (Exception)
+~~- Added new recipes for TFC alebaster via GTCEu + Create machines. (Exception)~~
 ~~- Возвращена механика из TFC.~~
 ~~- Механические блоки из TFC переименованы в примитивную механику.~~
 ~~- Исправлена проблема, когда было невозможно запитать разбрызгиватель из FirmaLife для теплицы.~~
