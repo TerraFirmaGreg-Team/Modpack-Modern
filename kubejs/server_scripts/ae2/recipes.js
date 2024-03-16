@@ -1677,10 +1677,24 @@ const registerAE2Recipes = (event) => {
         .duration(20)
         .EUt(480)
 
-    // Charged Certus Quartz  
-    event.recipes.gtceu.polarizer('ae2:charged_certus_quartz_crystal')
-        .itemInputs('#forge:gems/certus_quartz')
+    // Charged Certus Quartz 1x
+    event.recipes.gtceu.polarizer('ae2:charged_certus_quartz_crystal_1x')
+        .itemInputs('ae2:certus_quartz_crystal')
         .itemOutputs('ae2:charged_certus_quartz_crystal')
+        .duration(800)
+        .EUt(190)
+
+    // Charged Certus Quartz 2x
+    event.recipes.gtceu.polarizer('ae2:charged_certus_quartz_crystal_2x')
+        .itemInputs('gtceu:flawless_certus_quartz_gem')
+        .itemOutputs('2x ae2:charged_certus_quartz_crystal')
+        .duration(800)
+        .EUt(190)
+
+    // Charged Certus Quartz 4x
+    event.recipes.gtceu.polarizer('ae2:charged_certus_quartz_crystal_4x')
+        .itemInputs('gtceu:exquisite_certus_quartz_gem')
+        .itemOutputs('4x ae2:charged_certus_quartz_crystal')
         .duration(800)
         .EUt(190)
 
