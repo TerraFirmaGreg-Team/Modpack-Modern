@@ -2847,7 +2847,7 @@ const registerTFCRecipes = (event) => {
         
         let element = global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS[i];
 
-        event.recipes.gtceu.macerator(`tfg:tfc/${element.name}`)             
+        event.recipes.gtceu.assembler(`tfg:tfc/${element.name}`)             
             .itemInputs(element.input)
             .circuit(i)
             .itemOutputs(element.output)
@@ -2871,10 +2871,24 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Оливки
+
+    event.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+            .itemInputs('tfc:food/olive')
+            .itemOutputs('2x tfc:olive_paste')
+            .duration(60)
+            .EUt(2)
+
+    event.recipes.tfc.quern('2x tfc:olive_paste', 'tfc:food/olive')
+        .id(`tfg:quern/tfc/olive_paste`)
+
+    event.recipes.createMilling('2x tfc:olive_paste', 'tfc:food/olive')
+        .id(`tfg:milling/tfc/olive_paste`)
+
+    //#endregion
+
     //#region Рецепты бочки в миксере
-
-
-
+    // А где?
     //#endregion
 
     // Другое
@@ -2882,6 +2896,8 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: `tfc:anvil/steel_pump` })
     event.remove({ id: `tfc:crafting/steel_pump` })
     event.remove({ id: `tfc:crafting/crankshaft` })
+
+    
 
     // Доменная печь
     event.shaped('tfc:blast_furnace', [
