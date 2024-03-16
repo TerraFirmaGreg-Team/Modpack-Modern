@@ -2856,6 +2856,7 @@ const registerMinecraftRecipes = (event) => {
 
     event.recipes.gtceu.assembler('cauldron')             
         .itemInputs('7x #forge:plates/wrought_iron')
+        .circuit(10)
         .itemOutputs('minecraft:cauldron')
         .duration(700)
         .EUt(4)
