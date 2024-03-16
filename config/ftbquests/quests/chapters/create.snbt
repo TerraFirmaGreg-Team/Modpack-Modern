@@ -6,7 +6,20 @@
 	icon: "create:cogwheel"
 	id: "73633085BF22A8E9"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "36CEFCACDF2AA4A8"
+			linked_quest: "10FB27DD3C7BEC2F"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			id: "222131C44D4E98DF"
+			linked_quest: "517EFADD8F22717F"
+			x: -2.0d
+			y: -5.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2E3F6613C490E9AD"]
@@ -39,13 +52,13 @@
 				}
 			]
 			title: "Engineer's tools"
-			x: 0.0d
-			y: -3.0d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"6E1CD5151284199F"
-				"01E921F78C3A9A3D"
+				"10FB27DD3C7BEC2F"
 			]
 			id: "576584250B7CE6E9"
 			tasks: [
@@ -83,33 +96,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 1.0d
 			y: -4.0d
-		}
-		{
-			dependencies: ["6BB98D128822730E"]
-			description: [
-				"If you want to be less fancy, just call it plastic."
-				""
-				"For the polymerization process, add &aOxygen&r, which gives better returns than Air, then solidify like you would with Rubber."
-				""
-				"&aPolyethylene (PE)&r is the key to unlocking &6many new things&r. It's commonly used as &dSheets&r, or in &dFluid&r form."
-				""
-				"&l&3Lore:&r&o The OreDict and fluid name for Polyethylene in 1.12.2 GTCEu was &bplastic&f, for cross-mod compatibility."
-			]
-			icon: "gtceu:polyethylene_plate"
-			id: "01E921F78C3A9A3D"
-			shape: "gear"
-			size: 1.0d
-			subtitle: "Baby's first polymer!"
-			tasks: [{
-				id: "2FC6492E5EB2C945"
-				item: "gtceu:polyethylene_plate"
-				type: "item"
-			}]
-			title: "Polyethylene"
-			x: 0.0d
-			y: -5.5d
 		}
 		{
 			dependencies: ["6E1CD5151284199F"]
@@ -176,8 +164,8 @@
 				item: "create:clipboard"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -263,19 +251,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["6E24ECF6CEE950D1"]
-			id: "7123E4EFAEB457B2"
-			shape: "gear"
-			tasks: [{
-				id: "4B14EA2B169153EA"
-				item: "tfc:glue"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["7123E4EFAEB457B2"]
+			dependencies: ["517EFADD8F22717F"]
 			id: "7067BC9D1CEB6982"
 			tasks: [{
 				id: "559495DDBA2E1557"
@@ -288,7 +264,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -430,8 +406,8 @@
 				item: "create:brown_toolbox"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6E1CD5151284199F"]
@@ -442,7 +418,7 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -4.0d
 		}
 	]
