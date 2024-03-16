@@ -3131,6 +3131,15 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({ id: 'minecraft:brick' })
 
+    event.shaped('minecraft:bricks', [
+        'BAB', 
+        'ABA',
+        'BAB'  
+    ], {
+        A: 'tfc:mortar',
+        B: 'minecraft:brick'
+    }).id('tfc:crafting/bricks')
+
     //#endregion
 
     //#region Выъод: Незер кирпич

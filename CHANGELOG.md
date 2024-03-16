@@ -17,6 +17,7 @@
 - Added Olive -> Olive Paste mixer recipes. (Exception)
 - Added recipes for charcoal powder. (Exception)
 - Added crushing recipes for nixtamal. (Exception)
+- Fix dupes with gem blocks. (Exception)
 ~~- Added new recipes for TFC alebaster via GTCEu + Create machines. (Exception)~~
 ~~- Возвращена механика из TFC.~~
 ~~- Механические блоки из TFC переименованы в примитивную механику.~~
