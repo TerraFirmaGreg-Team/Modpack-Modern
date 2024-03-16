@@ -2879,9 +2879,6 @@ const registerTFCRecipes = (event) => {
             .duration(60)
             .EUt(2)
 
-    event.recipes.tfc.quern('2x tfc:olive_paste', 'tfc:food/olive')
-        .id(`tfg:quern/tfc/olive_paste`)
-
     event.recipes.createMilling('2x tfc:olive_paste', 'tfc:food/olive')
         .id(`tfg:milling/tfc/olive_paste`)
 
