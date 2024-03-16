@@ -1434,7 +1434,7 @@ const registerGTCEURecipes = (event) => {
 
         let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
 
-        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood) 
+        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) 
         {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
@@ -1443,7 +1443,7 @@ const registerGTCEURecipes = (event) => {
             {
                 if (!plateStack.isEmpty()) {
                     // Слиток -> Стержень
-                    event.recipes.createPressing(plateStack.withChance(0.97), ingotStack)
+                    event.recipes.createPressing(plateStack.withChance(0.8), ingotStack)
                     .id(`tfg:pressing/${material.getName()}_plate`)
 
                     if (!blockStack.isEmpty()) {
