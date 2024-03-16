@@ -131,6 +131,19 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(10)
         .EUt(2)*/
 
+    //#region Никстамаль
+
+    event.recipes.gtceu.macerator(`tfg:firmalife/nixtamal`)             
+            .itemInputs('firmalife:food/nixtamal')
+            .itemOutputs('4x firmalife:food/masa_flour')
+            .duration(60)
+            .EUt(2)
+
+    event.recipes.createMilling('4x firmalife:food/masa_flour', 'firmalife:food/nixtamal')
+        .id(`tfg:milling/firmalife/nixtamal`)
+
+    //#endregion
+
     //#region Рецепты теплиц
 
     //#region Медная

@@ -15,6 +15,8 @@
 - Gregified HandGlider recipes. (Exception)
 - Fixed some shit with clay -> mold assembler recipes. (Exception)
 - Added Olive -> Olive Paste mixer recipes. (Exception)
+- Added recipes for charcoal powder. (Exception)
+- Added crushing recipes for nixtamal. (Exception)
 ~~- Added new recipes for TFC alebaster via GTCEu + Create machines. (Exception)~~
 ~~- Возвращена механика из TFC.~~
 ~~- Механические блоки из TFC переименованы в примитивную механику.~~
