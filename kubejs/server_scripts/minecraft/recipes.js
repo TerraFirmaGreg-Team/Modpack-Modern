@@ -3165,6 +3165,13 @@ const registerMinecraftRecipes = (event) => {
         .duration(1600)
         .EUt(666)
 
+    event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')             
+        .itemInputs('6x #forge:plates/polyvinyl_butyral', Item.of('minecraft:elytra', '{Damage:431}').strongNBT())
+        .circuit(32)
+        .itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of Gods\",\"italic\":true}'}}"))
+        .duration(1600)
+        .EUt(120)
+
     //#endregion
 
     //#region Исправление дерьма с медью (Однажды разраб GTCEu вспомнит, лучше бы забыл)
