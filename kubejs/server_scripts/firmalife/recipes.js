@@ -131,19 +131,6 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(10)
         .EUt(2)*/
 
-    //#region Никстамаль
-
-    event.recipes.gtceu.macerator(`tfg:firmalife/nixtamal`)             
-            .itemInputs('firmalife:food/nixtamal')
-            .itemOutputs('4x firmalife:food/masa_flour')
-            .duration(60)
-            .EUt(2)
-
-    event.recipes.createMilling('4x firmalife:food/masa_flour', 'firmalife:food/nixtamal')
-        .id(`tfg:milling/firmalife/nixtamal`)
-
-    //#endregion
-
     //#region Рецепты теплиц
 
     //#region Медная
@@ -356,6 +343,21 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion
     
+    //#region Рецепты муки
+
+    global.FIRMALIFE_QUERN_FLOUR_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.gtceu.macerator(`tfg:${element.name}`)             
+            .itemInputs(element.input)
+            .itemOutputs(element.output)
+            .duration(200)
+            .EUt(16)
+
+        event.recipes.createMilling(element.output, element.input)
+            .id(`tfg:milling/${element.name}`)
+    })
+
+    //#endregion
+
     //#region Рецепты теста
 
     global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS .forEach(element => {
