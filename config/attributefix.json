@@ -110,6 +110,17 @@
         "value": 1000000
       }
     },
+    "minecolonies:mc_mob_damage": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 20,
+        "value": 20
+      }
+    },
     "minecraft:generic.luck": {
       "enabled": true,
       "min": {
