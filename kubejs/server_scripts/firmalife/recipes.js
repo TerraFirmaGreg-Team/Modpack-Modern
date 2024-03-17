@@ -363,9 +363,9 @@ const registerFirmaLifeRecipes = (event) => {
             .id(`tfg:smelting/${element.name}`)
     })
 
-    //#endregion
+    //#endregion 
 
-    //#region Рецепты пиццы
+    //#region mixing bowl
 
     //тесто для пиццы
     event.recipes.gtceu.mixer('firmalife:food/pizza_dough')             
@@ -377,19 +377,6 @@ const registerFirmaLifeRecipes = (event) => {
 
     event.recipes.create.mixing('4x firmalife:food/pizza_dough', ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt', Fluid.of('tfc:olive_oil', 1000)]
     ).id('firmalife:create/mixer/food/pizza_dough')
-    
-    //жарка пиццы
-    /*
-    event.recipes.gtceu.smelter('firmalife:food/cooked_pizza')             
-        .itemInputs('firmalife:food/raw_pizza')
-        .itemOutputs('firmalife:food/cooked_pizza')
-        .duration(200)
-        .EUt(4)
-        */
-
-    //#endregion
-
-    //#region mixing bowl
 
     //vanilla ice cream
     event.recipes.gtceu.mixer('firmalife:food/vanilla_ice_cream')             
@@ -610,6 +597,26 @@ const registerFirmaLifeRecipes = (event) => {
     event.recipes.create.mixing('4x firmalife:food/chocolate_chip_cookie_dough', ['4x firmalife:food/cookie_dough', '#firmalife:chocolate_blends']
     ).id('firmalife:create/mixer/food/chocolate_chip_cookie_dough')
 
-
     //#endregion
+    
+    //#region oven
+    //cooked pizza
+    event.smelting('firmalife:food/cooked_pizza', 'firmalife:food/raw_pizza')    
+    //taco shell
+    event.smelting('firmalife:food/taco_shell', 'firmalife:food/corn_tortilla')
+    //corn tortilla
+    event.smelting('firmalife:food/corn_tortilla', 'firmalife:food/masa') 
+    //sugar cookie
+    event.smelting('firmalife:food/sugar_cookie', 'firmalife:food/cookie_dough')
+    //chocolate_chip_cookie
+    event.smelting('firmalife:food/chocolate_chip_cookie', 'firmalife:food/chocolate_chip_cookie_dough')
+    //hardtack
+    event.smelting('firmalife:food/hardtack', 'firmalife:food/hardtack_dough')
+    //cooked_pie
+    event.smelting('firmalife:food/cooked_pie', 'firmalife:food/filled_pie')
+    //roasted_cocoa_beans
+    event.smelting('firmalife:food/roasted_cocoa_beans', 'firmalife:food/cocoa_beans')
+    //pumpkin_pie
+    event.smelting('minecraft:pumpkin_pie', 'firmalife:food/raw_pumpkin_pie')
+    //#endregion 
 }
