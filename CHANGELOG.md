@@ -19,11 +19,9 @@
 - Added crushing recipes for nixtamal. (Exception)
 - Fix dupes with gem blocks. (Exception)
 - Fix dupes with vanilla bricks. (Exception)
-~~- Added new recipes for TFC alebaster via GTCEu + Create machines. (Exception)~~
-~~- Возвращена механика из TFC.~~
-~~- Механические блоки из TFC переименованы в примитивную механику.~~
-~~- Исправлена проблема, когда было невозможно запитать разбрызгиватель из FirmaLife для теплицы.~~
-~~- Вовращены некоторые блоки, которые работали на механической энергии TFC.~~
+- Added new recipes for TFC alebaster via GTCEu + Create machines. (FriendlyCube)
+- Added a lot of smelting, mixing, and etc recipes for firmalife and tfc. (FriendlyCube)
+- Added rubber producing by using vat from firmalife. (FriendlyCube)
 ### New Mods
 - HangGlider-v8.0.1-1.20.1-Forge
 - u_team_core-forge-1.20.1-5.1.4.269
