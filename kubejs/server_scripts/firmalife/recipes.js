@@ -642,7 +642,7 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion 
 
-    //region sticky resin 
+    // Sticky Resin by Vat
     event.custom({
         "type": "firmalife:vat",
         "input_item": {
@@ -658,5 +658,5 @@ const registerFirmaLifeRecipes = (event) => {
           "item": 'gtceu:sticky_resin'
         }
       });
-    //#endregion
+    
 }
