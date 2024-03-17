@@ -607,7 +607,6 @@ const registerFirmaLifeRecipes = (event) => {
     // Taco Shell
     event.smelting('firmalife:food/taco_shell', 'firmalife:food/corn_tortilla')
     
-    
     // Sugar Cookie
     event.smelting('firmalife:food/sugar_cookie', 'firmalife:food/cookie_dough')
     
