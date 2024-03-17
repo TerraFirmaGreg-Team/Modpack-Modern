@@ -365,9 +365,9 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion 
 
-    //#region mixing bowl
+    //#region Смешивание в миске
 
-    //тесто для пиццы
+    // Тесто для пиццы
     event.recipes.gtceu.mixer('firmalife:food/pizza_dough')             
         .itemInputs('firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt')
         .inputFluids(Fluid.of('tfc:olive_oil', 1000))
@@ -375,10 +375,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('4x firmalife:food/pizza_dough', ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt', Fluid.of('tfc:olive_oil', 1000)]
-    ).id('firmalife:create/mixer/food/pizza_dough')
+    event.recipes.create.mixing('4x firmalife:food/pizza_dough', ['firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt', Fluid.of('tfc:olive_oil', 1000)])
+        .id('firmalife:create/mixer/food/pizza_dough')
 
-    //vanilla ice cream
+    // Vanilla Ice Cream
     event.recipes.gtceu.mixer('firmalife:food/vanilla_ice_cream')             
         .itemInputs('firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla')
         .inputFluids(Fluid.of('firmalife:cream', 1000))
@@ -386,10 +386,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/vanilla_ice_cream', ['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla', Fluid.of('firmalife:cream', 1000)]
-    ).id('firmalife:create/mixer/food/vanilla_ice_cream')
+    event.recipes.create.mixing('2x firmalife:food/vanilla_ice_cream', ['firmalife:ice_shavings', '#tfc:sweetener', 'firmalife:spice/vanilla', Fluid.of('firmalife:cream', 1000)])
+        .id('firmalife:create/mixer/food/vanilla_ice_cream')
 
-    //pumpkin pie dough
+    // Pumpkin Pie Dough
     event.recipes.gtceu.mixer('firmalife:food/pumpkin_pie_dough')             
         .itemInputs('#tfc:sweetener', '#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour')
         .inputFluids(Fluid.of('minecraft:water', 1000))
@@ -400,7 +400,7 @@ const registerFirmaLifeRecipes = (event) => {
     event.recipes.create.mixing('firmalife:food/pumpkin_pie_dough', ['#tfc:sweetener', '#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)]
     ).id('firmalife:create/mixer/food/pumpkin_pie_dough')
 
-    //butter
+    // Butter
     event.recipes.gtceu.mixer('firmalife:food/butter')             
         .itemInputs('tfc:powder/salt')
         .inputFluids(Fluid.of('firmalife:cream', 1000))
@@ -408,10 +408,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('firmalife:food/butter', ['tfc:powder/salt', Fluid.of('firmalife:cream', 1000)]
-    ).id('firmalife:create/mixer/food/butter')
+    event.recipes.create.mixing('firmalife:food/butter', ['tfc:powder/salt', Fluid.of('firmalife:cream', 1000)])
+        .id('firmalife:create/mixer/food/butter')
 
-    //pie dough
+    // Pie Dough
     event.recipes.gtceu.mixer('firmalife:food/pie_dough')             
         .itemInputs('#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour')
         .inputFluids(Fluid.of('minecraft:water', 1000))
@@ -419,20 +419,20 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('firmalife:food/pie_dough', ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)]
-    ).id('firmalife:create/mixer/food/pie_dough')
+    event.recipes.create.mixing('firmalife:food/pie_dough', ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)])
+        .id('firmalife:create/mixer/food/pie_dough')
 
-    //cookie dough
+    // Cookie Dough
     event.recipes.gtceu.mixer('firmalife:food/cookie_dough')             
         .itemInputs('#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', '#forge:eggs', 'firmalife:spice/vanilla')
         .itemOutputs('4x firmalife:food/cookie_dough')
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('4x firmalife:food/cookie_dough', ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', '#forge:eggs', 'firmalife:spice/vanilla']
-    ).id('firmalife:create/mixer/food/cookie_dough')
+    event.recipes.create.mixing('4x firmalife:food/cookie_dough', ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', '#forge:eggs', 'firmalife:spice/vanilla'])
+        .id('firmalife:create/mixer/food/cookie_dough')
 
-    //hardtack dough
+    // Hardtack Dough
     event.recipes.gtceu.mixer('firmalife:food/hardtack_dough')             
         .itemInputs('tfc:powder/salt', '#tfc:foods/flour')
         .inputFluids(Fluid.of('minecraft:water', 1000))
@@ -440,10 +440,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('4x firmalife:food/hardtack_dough', ['tfc:powder/salt', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)]
-    ).id('firmalife:create/mixer/food/hardtack_dough')
+    event.recipes.create.mixing('4x firmalife:food/hardtack_dough', ['tfc:powder/salt', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)])
+        .id('firmalife:create/mixer/food/hardtack_dough')
 
-    //chocolate ice cream
+    // Chocolate Ice Cream
     event.recipes.gtceu.mixer('firmalife:food/chocolate_ice_cream')             
         .itemInputs('firmalife:food/vanilla_ice_cream')
         .inputFluids(Fluid.of('firmalife:chocolate', 1000))
@@ -451,10 +451,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('firmalife:food/chocolate_ice_cream', ['firmalife:food/vanilla_ice_cream', Fluid.of('firmalife:chocolate', 1000)]
-    ).id('firmalife:create/mixer/food/chocolate_ice_cream')
+    event.recipes.create.mixing('firmalife:food/chocolate_ice_cream', ['firmalife:food/vanilla_ice_cream', Fluid.of('firmalife:chocolate', 1000)])
+        .id('firmalife:create/mixer/food/chocolate_ice_cream')
 
-    //white chocolate blend
+    // White Chocolate Blend
     event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/milk')             
         .itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
         .inputFluids(Fluid.of('minecraft:milk', 1000))
@@ -462,8 +462,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('minecraft:milk', 1000)]
-    ).id('firmalife:create/mixer/food/white_chocolate_blend/milk')
+    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('minecraft:milk', 1000)])
+        .id('firmalife:create/mixer/food/white_chocolate_blend/milk')
 
     event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/yak_milk')             
         .itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -472,8 +472,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('firmalife:yak_milk', 1000)]
-    ).id('firmalife:create/mixer/food/white_chocolate_blend/yak_milk')
+    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('firmalife:yak_milk', 1000)])
+        .id('firmalife:create/mixer/food/white_chocolate_blend/yak_milk')
 
     event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/goat_milk')             
         .itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -482,8 +482,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('firmalife:goat_milk', 1000)]
-    ).id('firmalife:create/mixer/food/white_chocolate_blend/goat_milk')
+    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('firmalife:goat_milk', 1000)])
+        .id('firmalife:create/mixer/food/white_chocolate_blend/goat_milk')
 
     event.recipes.gtceu.mixer('firmalife:food/white_chocolate_blend/coconut_milk')             
         .itemInputs('2x firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -492,10 +492,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('firmalife:coconut_milk', 1000)]
-    ).id('firmalife:create/mixer/food/white_chocolate_blend/coconut_milk')
+    event.recipes.create.mixing('2x firmalife:food/white_chocolate_blend', ['2x firmalife:food/cocoa_butter', '#tfc:sweetener', Fluid.of('firmalife:coconut_milk', 1000)])
+        .id('firmalife:create/mixer/food/white_chocolate_blend/coconut_milk')
 
-    //Dark chocolate blend
+    // Dark Chocolate Blend
     event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/milk')             
         .itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
         .inputFluids(Fluid.of('minecraft:milk', 1000))
@@ -503,8 +503,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('minecraft:milk', 1000)]
-    ).id('firmalife:create/mixer/food/dark_chocolate_blend/milk')
+    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('minecraft:milk', 1000)])
+        .id('firmalife:create/mixer/food/dark_chocolate_blend/milk')
 
     event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/yak_milk')             
         .itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
@@ -513,8 +513,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('firmalife:yak_milk', 1000)]
-    ).id('firmalife:create/mixer/food/dark_chocolate_blend/yak_milk')
+    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('firmalife:yak_milk', 1000)])
+        .id('firmalife:create/mixer/food/dark_chocolate_blend/yak_milk')
 
     event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/goat_milk')             
         .itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
@@ -523,8 +523,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('firmalife:goat_milk', 1000)]
-    ).id('firmalife:create/mixer/food/dark_chocolate_blend/goat_milk')
+    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('firmalife:goat_milk', 1000)])
+        .id('firmalife:create/mixer/food/dark_chocolate_blend/goat_milk')
 
     event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/coconut_milk')             
         .itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
@@ -533,10 +533,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('firmalife:coconut_milk', 1000)]
-    ).id('firmalife:create/mixer/food/dark_chocolate_blend/coconut_milk')
+    event.recipes.create.mixing('2x firmalife:food/dark_chocolate_blend', ['2x firmalife:food/cocoa_powder', '#tfc:sweetener', Fluid.of('firmalife:coconut_milk', 1000)])
+        .id('firmalife:create/mixer/food/dark_chocolate_blend/coconut_milk')
     
-    //milk chocolate blend
+    // Milk Chocolate Blend
     event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/milk')             
         .itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
         .inputFluids(Fluid.of('minecraft:milk', 1000))
@@ -544,8 +544,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('minecraft:milk', 1000)]
-    ).id('firmalife:create/mixer/food/milk_chocolate_blend/milk')
+    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('minecraft:milk', 1000)])
+        .id('firmalife:create/mixer/food/milk_chocolate_blend/milk')
 
     event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/yak_milk')             
         .itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -554,8 +554,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('firmalife:yak_milk', 1000)]
-    ).id('firmalife:create/mixer/food/milk_chocolate_blend/yak_milk')
+    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('firmalife:yak_milk', 1000)])
+        .id('firmalife:create/mixer/food/milk_chocolate_blend/yak_milk')
 
     event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/goat_milk')             
         .itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -564,8 +564,8 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('firmalife:goat_milk', 1000)]
-    ).id('firmalife:create/mixer/food/milk_chocolate_blend/goat_milk')
+    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('firmalife:goat_milk', 1000)])
+        .id('firmalife:create/mixer/food/milk_chocolate_blend/goat_milk')
 
     event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/coconut_milk')             
         .itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -574,10 +574,10 @@ const registerFirmaLifeRecipes = (event) => {
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('firmalife:coconut_milk', 1000)]
-    ).id('firmalife:create/mixer/food/milk_chocolate_blend/coconut_milk')
+    event.recipes.create.mixing('2x firmalife:food/milk_chocolate_blend', ['firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter','#tfc:sweetener', Fluid.of('firmalife:coconut_milk', 1000)])
+        .id('firmalife:create/mixer/food/milk_chocolate_blend/coconut_milk')
 
-    //strawberry ice cream
+    // Strawberry Ice Cream
     event.recipes.gtceu.mixer('firmalife:food/strawberry_ice_cream')             
         .itemInputs('firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry')
         .itemOutputs('firmalife:food/strawberry_ice_cream')
@@ -587,36 +587,45 @@ const registerFirmaLifeRecipes = (event) => {
         event.recipes.create.mixing('firmalife:food/strawberry_ice_cream', ['firmalife:food/vanilla_ice_cream', '2x tfc:food/strawberry']
         ).id('firmalife:create/mixer/food/strawberry_ice_cream')
 
-    //hardtack dough
+    // Hardtack Dough
     event.recipes.gtceu.mixer('firmalife:food/chocolate_chip_cookie_dough')             
         .itemInputs('4x firmalife:food/cookie_dough', '#firmalife:chocolate_blends')
         .itemOutputs('4x firmalife:food/chocolate_chip_cookie_dough')
         .duration(300)
         .EUt(16)
 
-    event.recipes.create.mixing('4x firmalife:food/chocolate_chip_cookie_dough', ['4x firmalife:food/cookie_dough', '#firmalife:chocolate_blends']
-    ).id('firmalife:create/mixer/food/chocolate_chip_cookie_dough')
+    event.recipes.create.mixing('4x firmalife:food/chocolate_chip_cookie_dough', ['4x firmalife:food/cookie_dough', '#firmalife:chocolate_blends'])
+        .id('firmalife:create/mixer/food/chocolate_chip_cookie_dough')
 
     //#endregion
     
-    //#region oven
-    //cooked pizza
+    //#region Обжарка некоторой еды
+    
+    // Cooked Pizza
     event.smelting('firmalife:food/cooked_pizza', 'firmalife:food/raw_pizza')    
-    //taco shell
+    
+    // Taco Shell
     event.smelting('firmalife:food/taco_shell', 'firmalife:food/corn_tortilla')
-    //corn tortilla
-    event.smelting('firmalife:food/corn_tortilla', 'firmalife:food/masa') 
-    //sugar cookie
+    
+    
+    // Sugar Cookie
     event.smelting('firmalife:food/sugar_cookie', 'firmalife:food/cookie_dough')
-    //chocolate_chip_cookie
+    
+    // Chocolate Chip Cookie
     event.smelting('firmalife:food/chocolate_chip_cookie', 'firmalife:food/chocolate_chip_cookie_dough')
-    //hardtack
+    
+    // Hardtack
     event.smelting('firmalife:food/hardtack', 'firmalife:food/hardtack_dough')
-    //cooked_pie
+    
+    // Cooked Pie
     event.smelting('firmalife:food/cooked_pie', 'firmalife:food/filled_pie')
-    //roasted_cocoa_beans
+    
+    // Roasted Cocoa Beans
     event.smelting('firmalife:food/roasted_cocoa_beans', 'firmalife:food/cocoa_beans')
-    //pumpkin_pie
+    
+    // Pumpkin Pie
     event.smelting('minecraft:pumpkin_pie', 'firmalife:food/raw_pumpkin_pie')
+    
     //#endregion 
+
 }
