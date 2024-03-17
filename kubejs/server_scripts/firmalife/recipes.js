@@ -360,7 +360,7 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#region Рецепты теста
 
-    global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS .forEach(element => {
+    global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS.forEach(element => {
         event.recipes.gtceu.mixer(element.name)             
             .itemInputs(element.input, '#tfc:sweetener')
             .inputFluids(Fluid.of('firmalife:yeast_starter', 100))
@@ -642,4 +642,21 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion 
 
+    // Sticky Resin by Vat
+    event.custom({
+        "type": "firmalife:vat",
+        "input_item": {
+          "ingredient": {
+            "item": 'tfc:powder/sulfur'
+          }
+        },
+        "input_fluid": {
+          "ingredient": 'gtceu:latex',
+          "amount": 1000
+        },
+        "output_item": {
+          "item": 'gtceu:sticky_resin'
+        }
+      });
+    
 }
