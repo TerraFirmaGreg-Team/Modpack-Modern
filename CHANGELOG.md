@@ -22,6 +22,7 @@
 - Added new recipes for TFC alebaster via GTCEu + Create machines. (FriendlyCube)
 - Added a lot of smelting, mixing, and etc recipes for firmalife and tfc. (FriendlyCube)
 - Added rubber producing by using vat from firmalife. (FriendlyCube)
+- Added new quests for Create. (FriendlyCube)
 ### New Mods
 - HangGlider-v8.0.1-1.20.1-Forge
 - u_team_core-forge-1.20.1-5.1.4.269
