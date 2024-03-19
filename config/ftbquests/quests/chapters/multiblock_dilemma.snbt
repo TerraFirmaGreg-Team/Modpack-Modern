@@ -84,15 +84,15 @@
 			id: "3003AF60FECF2899"
 			linked_quest: "33263404ED38C6D2"
 			shape: "rsquare"
-			x: 0.0d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
 			id: "7D7392009AC28773"
 			linked_quest: "1BB40CCF17D00719"
 			shape: "rsquare"
-			x: 0.0d
-			y: 3.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			id: "1666AE4895ABBED3"
@@ -199,14 +199,14 @@
 			id: "26A69E20AEC61DF1"
 			linked_quest: "249FA99AADAC3710"
 			shape: "rsquare"
-			x: 0.0d
-			y: 4.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			id: "7D67FF93BFAF6A4A"
 			linked_quest: "328CFD483C26EA44"
 			shape: "rsquare"
-			x: 0.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -243,7 +243,7 @@
 		{
 			id: "7DF7C035D303B90A"
 			linked_quest: "1D623D93EEDD3C67"
-			x: 1.5d
+			x: 3.0d
 			y: 6.0d
 		}
 	]

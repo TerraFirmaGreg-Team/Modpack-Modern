@@ -16,7 +16,7 @@
 		{
 			id: "09E0E263CC81CD99"
 			linked_quest: "2658E7679CD42ACD"
-			x: 9.5d
+			x: 9.0d
 			y: 4.5d
 		}
 		{
@@ -50,6 +50,12 @@
 			size: 3.0d
 			x: -7.5d
 			y: 0.0d
+		}
+		{
+			id: "3E93FFAACC24EEA5"
+			linked_quest: "7B74DB051202E97E"
+			x: 11.5d
+			y: -1.0d
 		}
 	]
 	quests: [
@@ -239,7 +245,7 @@
 				type: "item"
 			}]
 			title: "Electronics #1: Resistors"
-			x: 9.5d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -370,7 +376,7 @@
 				"4ED5A9AEF7B928BA"
 				"54AF8696674766B4"
 				"77EA56D16A9B3BFC"
-				"7941AFD548C8C405"
+				"7B74DB051202E97E"
 			]
 			description: [
 				"We made it to &7LV&r! Give yourself a pat on the back!"
@@ -786,18 +792,7 @@
 			x: -4.5d
 			y: 0.0d
 		}
-		{
-			dependencies: ["78BE0A10CE7B4BBE"]
-			id: "7941AFD548C8C405"
-			tasks: [{
-				id: "366B735B8F6F02B1"
-				item: "create:deployer"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -1.0d
-		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
-	title: "Steam Age"
+	title: "ULV - Steam Age"
 }

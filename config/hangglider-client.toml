@@ -1,0 +1,11 @@
+#Multiplier for camera tilt speed when gliding.
+#Range: 0.1 ~ 1.0
+gliding_tilt_speed = 0.4
+#Automatically switch to third-person mode while gliding.
+auto_third_person_gliding = false
+#Tilt camera depending on gliding turn angle.
+gliding_camera_tilt = true
+#Multiplier for camera tilt amount when gliding.
+#Range: 0.1 ~ 1.0
+gliding_tilt_amount = 0.5
+

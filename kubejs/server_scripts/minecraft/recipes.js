@@ -2856,6 +2856,7 @@ const registerMinecraftRecipes = (event) => {
 
     event.recipes.gtceu.assembler('cauldron')             
         .itemInputs('7x #forge:plates/wrought_iron')
+        .circuit(10)
         .itemOutputs('minecraft:cauldron')
         .duration(700)
         .EUt(4)
@@ -3130,6 +3131,15 @@ const registerMinecraftRecipes = (event) => {
 
     event.remove({ id: 'minecraft:brick' })
 
+    event.shaped('minecraft:bricks', [
+        'BAB', 
+        'ABA',
+        'BAB'  
+    ], {
+        A: 'tfc:mortar',
+        B: 'minecraft:brick'
+    }).id('tfc:crafting/bricks')
+
     //#endregion
 
     //#region Выъод: Незер кирпич
@@ -3164,6 +3174,13 @@ const registerMinecraftRecipes = (event) => {
         .itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of Gods\",\"italic\":true}'}}"))
         .duration(1600)
         .EUt(666)
+
+    event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')             
+        .itemInputs('6x #forge:plates/polyvinyl_butyral', Item.of('minecraft:elytra', '{Damage:431}').strongNBT())
+        .circuit(32)
+        .itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of Gods\",\"italic\":true}'}}"))
+        .duration(1600)
+        .EUt(120)
 
     //#endregion
 

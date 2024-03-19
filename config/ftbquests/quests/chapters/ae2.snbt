@@ -1,17 +1,24 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "rsquare"
 	filename: "ae2"
 	group: ""
 	icon: "ae2:controller"
 	id: "09BE9F51822EC180"
 	order_index: 7
-	quest_links: [ ]
+	quest_links: [{
+		id: "3293CB774C1A4DF0"
+		linked_quest: "1D88369409736DC7"
+		size: 2.0d
+		x: -5.0d
+		y: 0.0d
+	}]
 	quests: [
 		{
 			dependencies: ["15B4CB2A3B01C930"]
 			id: "11069B97D8CA203D"
-			shape: "circle"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "0F463046CA1A890F"
 				item: {
@@ -26,26 +33,24 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: 1.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["20AAF0C5177EC3FE"]
 			id: "15B4CB2A3B01C930"
-			shape: "diamond"
 			size: 1.0d
 			tasks: [{
 				id: "641D2A6D8BEF2A5E"
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11069B97D8CA203D"]
 			id: "64C0AAAC93D59520"
-			shape: "circle"
 			tasks: [{
 				id: "57F5A1752F077CF7"
 				item: {
@@ -60,13 +65,12 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: 4.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["64C0AAAC93D59520"]
 			id: "5D8C1BFC675A117F"
-			shape: "circle"
 			tasks: [{
 				id: "2FD9DC79452B5B40"
 				item: {
@@ -81,13 +85,12 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5D8C1BFC675A117F"]
 			id: "6495EE6BBB1F5182"
-			shape: "circle"
 			tasks: [{
 				id: "639E6F5FEBE8E2A6"
 				item: {
@@ -102,13 +105,12 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -7.0d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["64C0AAAC93D59520"]
 			id: "3D2A3259673738B1"
-			shape: "circle"
 			tasks: [{
 				id: "496B150BE185851D"
 				item: {
@@ -123,37 +125,34 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["11069B97D8CA203D"]
 			id: "6E2F0F0D9E5BA86D"
-			shape: "circle"
 			tasks: [{
 				id: "5ECA6F8EB97BE119"
 				item: "ae2:level_emitter"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6E2F0F0D9E5BA86D"]
 			id: "37321DFE14E8850F"
-			shape: "circle"
 			tasks: [{
 				id: "30254756C90272FE"
 				item: "ae2:energy_level_emitter"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.0d
+			x: 3.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6E2F0F0D9E5BA86D"]
 			id: "58F7CFE5F57C9FD7"
-			shape: "circle"
 			tasks: [{
 				id: "2A9825E43F2E4998"
 				item: {
@@ -168,20 +167,19 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["15B4CB2A3B01C930"]
+			dependencies: ["3E0EE1623F16A15A"]
 			id: "0BBA3FA755FB2698"
-			shape: "pentagon"
 			tasks: [{
 				id: "48D2855552F028D6"
 				item: "ae2:me_p2p_tunnel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.0d
+			x: 2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -191,8 +189,8 @@
 				item: "ae2:fe_p2p_tunnel"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -8.0d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -203,8 +201,8 @@
 				item: "ae2:fluid_p2p_tunnel"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -8.0d
+			x: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -214,8 +212,8 @@
 				item: "ae2:item_p2p_tunnel"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -8.0d
+			x: 3.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -225,8 +223,8 @@
 				item: "ae2:redstone_p2p_tunnel"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -8.0d
+			x: 3.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -236,52 +234,41 @@
 				item: "ae2:light_p2p_tunnel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -8.0d
+			x: 3.5d
+			y: 7.0d
 		}
 		{
-			dependencies: ["77865DA468B31959"]
+			dependencies: ["1D88369409736DC7"]
 			id: "20AAF0C5177EC3FE"
-			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "38FBD1879EDC06B6"
 				item: "ae2:charged_certus_quartz_crystal"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1E73F9956E6EC967"]
-			id: "77865DA468B31959"
-			shape: "circle"
-			tasks: [{
-				id: "48FD363CD151D50C"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"3568BC9742092FC5"
-				"16B735F9C391D260"
-			]
-			id: "1E73F9956E6EC967"
-			shape: "rsquare"
-			tasks: [{
-				id: "0587ACDD51ADC077"
-				item: "ae2:controller"
 				type: "item"
 			}]
 			x: -3.0d
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"3568BC9742092FC5"
+				"16B735F9C391D260"
+				"15B4CB2A3B01C930"
+			]
+			id: "1E73F9956E6EC967"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0587ACDD51ADC077"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
 			dependencies: ["1E73F9956E6EC967"]
 			id: "63114F9095903E55"
-			shape: "circle"
 			tasks: [{
 				id: "0624EA9D860EA98F"
 				item: {
@@ -296,80 +283,84 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["03051939555D211E"]
 			id: "4C9EB2FF05EB47CB"
-			shape: "circle"
 			tasks: [{
 				id: "7D24D63E3FFA3BF6"
 				item: "ae2:conversion_monitor"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -2.0d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["63114F9095903E55"]
 			id: "03051939555D211E"
-			shape: "circle"
 			tasks: [{
 				id: "6960A9B39312A77A"
 				item: "ae2:storage_monitor"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -1.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["63114F9095903E55"]
 			id: "311EFB6031E268F6"
-			shape: "circle"
+			size: 2.0d
 			tasks: [{
 				id: "4F1DAE02D4CBBDC0"
 				item: "ae2:terminal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.0d
+			x: -1.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["311EFB6031E268F6"]
+			dependencies: [
+				"311EFB6031E268F6"
+				"26FD8E74CFFF1971"
+			]
 			id: "2B69AC5267633F37"
-			shape: "circle"
 			tasks: [{
 				id: "3CAF0E94DF11F1C0"
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 0.0d
+			x: -2.5d
+			y: -8.5d
 		}
 		{
-			dependencies: ["311EFB6031E268F6"]
+			dependencies: [
+				"311EFB6031E268F6"
+				"26FD8E74CFFF1971"
+			]
 			id: "22262840D8FB66F6"
-			shape: "circle"
 			tasks: [{
 				id: "793F9E9150647BEE"
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 1.0d
+			x: 0.5d
+			y: -8.5d
 		}
 		{
-			dependencies: ["311EFB6031E268F6"]
+			dependencies: [
+				"311EFB6031E268F6"
+				"26FD8E74CFFF1971"
+			]
 			id: "1C1B3A46E03FCE67"
-			shape: "circle"
 			tasks: [{
 				id: "32DECB9740131BFF"
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 2.0d
+			x: -1.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -379,8 +370,8 @@
 				item: "ae2:annihilation_core"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -390,8 +381,8 @@
 				item: "ae2:formation_core"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.0d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5CAF4D91F281D3BC"]
@@ -401,8 +392,8 @@
 				item: "ae2:import_bus"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["780DB1BBED7236C3"]
@@ -412,8 +403,8 @@
 				item: "ae2:export_bus"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5CAF4D91F281D3BC"]
@@ -423,8 +414,8 @@
 				item: "ae2:annihilation_plane"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -3.0d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["780DB1BBED7236C3"]
@@ -434,8 +425,8 @@
 				item: "ae2:formation_plane"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.0d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -449,7 +440,7 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -460,7 +451,7 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -472,7 +463,7 @@
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -484,7 +475,7 @@
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
@@ -496,8 +487,8 @@
 				item: "ae2:1k_crafting_storage"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -2.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -508,8 +499,8 @@
 				item: "ae2:4k_crafting_storage"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -2.5d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -520,8 +511,8 @@
 				item: "ae2:16k_crafting_storage"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -2.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -532,8 +523,8 @@
 				item: "ae2:64k_crafting_storage"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -1.0d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -544,8 +535,8 @@
 				item: "ae2:256k_crafting_storage"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -556,8 +547,8 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.5d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -568,8 +559,8 @@
 				item: "ae2:crafting_monitor"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.5d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -585,7 +576,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -596,7 +587,7 @@
 				item: "ae2:network_tool"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 2.0d
 		}
 		{
@@ -608,7 +599,7 @@
 				item: "ae2:silicon_press"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -620,7 +611,7 @@
 				item: "ae2:engineering_processor_press"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -632,8 +623,8 @@
 				item: "ae2:logic_processor_press"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.5d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -644,8 +635,8 @@
 				item: "ae2:calculation_processor_press"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -670,7 +661,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 4.0d
 		}
 		{
@@ -682,7 +673,7 @@
 				item: "ae2:printed_logic_processor"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 5.5d
 		}
 		{
@@ -694,8 +685,8 @@
 				item: "ae2:printed_silicon"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.0d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6A000300061A94CB"]
@@ -706,7 +697,7 @@
 				item: "ae2:printed_calculation_processor"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: 5.5d
 		}
 		{
@@ -718,8 +709,8 @@
 				item: "ae2:printed_engineering_processor"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.0d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -749,8 +740,8 @@
 				}
 			]
 			title: "Processors"
-			x: 0.0d
-			y: 8.0d
+			x: -1.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -761,8 +752,8 @@
 				item: "ae2:chest"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 7.5d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -773,8 +764,8 @@
 				item: "ae2:cell_workbench"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 8.5d
+			x: -3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -785,7 +776,7 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 11.0d
 		}
 		{
@@ -797,8 +788,8 @@
 				item: "ae2:io_port"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.0d
+			x: 1.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -816,7 +807,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: -1.5d
 			y: 11.0d
 		}
 		{
@@ -828,8 +819,8 @@
 				item: "ae2:spatial_cell_component_2"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 13.0d
+			x: -1.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["29F882A468CF31F1"]
@@ -840,8 +831,8 @@
 				item: "ae2:spatial_cell_component_16"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 14.0d
+			x: -1.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["29F882A468CF31F1"]
@@ -852,8 +843,8 @@
 				item: "ae2:spatial_cell_component_128"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 15.0d
+			x: -1.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["631F87CEEA9DF64E"]
@@ -864,8 +855,8 @@
 				item: "ae2:spatial_storage_cell_2"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 13.0d
+			x: -3.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["11743B7B9DAF0004"]
@@ -876,8 +867,8 @@
 				item: "ae2:spatial_storage_cell_16"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 14.0d
+			x: -3.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["541634A975DCDCFC"]
@@ -888,8 +879,8 @@
 				item: "ae2:spatial_storage_cell_128"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.0d
+			x: -3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7FE61D03A7F15A6F"]
@@ -900,8 +891,8 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 11.0d
+			x: -0.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["7F4B44F220336BAC"]
@@ -912,8 +903,8 @@
 				item: "ae2:wireless_booster"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.0d
+			x: 1.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2054E9812A64BF56"]
@@ -924,8 +915,8 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 8.0d
+			x: 3.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["694C8A2A90A70052"]
@@ -940,8 +931,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 7.0d
+			x: 5.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["694C8A2A90A70052"]
@@ -952,8 +943,8 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 5.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -969,8 +960,8 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 8.0d
+			x: 7.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2054E9812A64BF56"]
@@ -981,8 +972,8 @@
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 10.0d
+			x: 2.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["2054E9812A64BF56"]
@@ -993,8 +984,8 @@
 				item: "ae2wtlib:magnet_card"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 11.0d
+			x: 1.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["694C8A2A90A70052"]
@@ -1005,8 +996,8 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 8.0d
+			x: 5.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -1017,8 +1008,8 @@
 				item: "ae2:item_cell_housing"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 7.0d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -1029,8 +1020,8 @@
 				item: "ae2:fluid_cell_housing"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 9.0d
+			x: -4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -1045,8 +1036,8 @@
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 8.0d
+			x: -5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1061,8 +1052,8 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 8.0d
+			x: -6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1077,8 +1068,8 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 8.0d
+			x: -7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1093,8 +1084,8 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 8.0d
+			x: -8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1109,8 +1100,8 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 8.0d
+			x: -9.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["10A45BEBBEA7A466"]
@@ -1125,8 +1116,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 6.5d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["10A45BEBBEA7A466"]
@@ -1141,8 +1132,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 9.5d
+			x: -9.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["10A45BEBBEA7A466"]
@@ -1157,8 +1148,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: 5.5d
+			x: -10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["10A45BEBBEA7A466"]
@@ -1173,8 +1164,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: 10.5d
+			x: -10.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["0607FA5840388340"]
@@ -1189,8 +1180,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 6.5d
+			x: -8.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["0607FA5840388340"]
@@ -1205,8 +1196,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 9.5d
+			x: -8.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0607FA5840388340"]
@@ -1221,8 +1212,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
-			y: 5.5d
+			x: -9.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0607FA5840388340"]
@@ -1237,8 +1228,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
-			y: 10.5d
+			x: -9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["2BC9838A531A4A09"]
@@ -1253,8 +1244,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 9.5d
+			x: -7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["2BC9838A531A4A09"]
@@ -1269,8 +1260,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 6.5d
+			x: -7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2BC9838A531A4A09"]
@@ -1285,8 +1276,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 5.5d
+			x: -8.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2BC9838A531A4A09"]
@@ -1301,8 +1292,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 10.5d
+			x: -8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["10E9CA0C1E6611A8"]
@@ -1317,8 +1308,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.5d
+			x: -6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["10E9CA0C1E6611A8"]
@@ -1333,8 +1324,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: 9.5d
+			x: -6.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["10E9CA0C1E6611A8"]
@@ -1349,8 +1340,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
-			y: 5.5d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["10E9CA0C1E6611A8"]
@@ -1365,8 +1356,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
-			y: 10.5d
+			x: -7.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6F6E7BCA93EA420B"]
@@ -1381,8 +1372,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 6.5d
+			x: -5.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6F6E7BCA93EA420B"]
@@ -1397,8 +1388,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 9.5d
+			x: -5.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6F6E7BCA93EA420B"]
@@ -1413,8 +1404,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 5.5d
+			x: -6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6F6E7BCA93EA420B"]
@@ -1429,9 +1420,9 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 10.5d
+			x: -6.0d
+			y: 9.5d
 		}
 	]
-	title: "AE2"
+	title: "&6HV&r - AE2"
 }

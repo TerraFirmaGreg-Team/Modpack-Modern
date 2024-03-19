@@ -108,6 +108,10 @@ global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/nightshade_bush', fluid_amount: 6000, output: '3x firmalife:food/nightshade_berry', name: 'nightshade' },
 ];
 
+global.FIRMALIFE_QUERN_FLOUR_RECIPE_COMPONENTS = [
+    { input: 'firmalife:food/nixtamal', output: '2x firmalife:food/masa_flour', name: 'masa_flour' },
+];
+
 global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS = [
     { input: 'tfc:food/barley_flour', output: '4x firmalife:food/barley_dough', name: 'firmalife_barley_dough' },
     { input: 'tfc:food/maize_flour', output: '4x firmalife:food/maize_dough', name: 'firmalife_maize_dough' },
@@ -115,6 +119,7 @@ global.FIRMALIFE_MIXER_FLATBREAD_DOUGH_RECIPE_COMPONENTS = [
     { input: 'tfc:food/rye_flour', output: '4x firmalife:food/rye_dough', name: 'firmalife_rye_dough' },
     { input: 'tfc:food/rice_flour', output: '4x firmalife:food/rice_dough', name: 'firmalife_rice_dough' },
     { input: 'tfc:food/wheat_flour', output: '4x firmalife:food/wheat_dough', name: 'firmalife_wheat_dough' },
+    { input: 'firmalife:food/masa_flour', output: '2x firmalife:food/masa', name: 'firmalife_masa' },
 ];
 
 global.FIRMALIFE_FURNACE_FLATBREAD_RECIPE_COMPONENTS = [
@@ -124,4 +129,5 @@ global.FIRMALIFE_FURNACE_FLATBREAD_RECIPE_COMPONENTS = [
     { input: 'tfc:food/rye_dough', output: 'firmalife:food/rye_flatbread', name: 'rye_flatbread' },
     { input: 'tfc:food/rice_dough', output: 'firmalife:food/rice_flatbread', name: 'rice_flatbread' },
     { input: 'tfc:food/wheat_dough', output: 'firmalife:food/wheat_flatbread', name: 'wheat_flatbread' },
+    { input: 'firmalife:food/masa', output: 'firmalife:food/corn_tortilla', name: 'corn_tortilla' },
 ];

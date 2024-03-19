@@ -23,9 +23,14 @@ const registerExposureRecipes = (event) => {
         B: 'gtceu:wrought_iron_gear',
         C: '#minecraft:wooden_buttons',
         D: '#forge:plates/wrought_iron',
-        E: '#forge:lenses/glass',
+        E: 'tfc:lens',
         F: '#forge:screws/wrought_iron'  
     }).id('exposure:camera')
+
+    // Album
+    event.shapeless('exposure:album', [
+        'minecraft:writable_book', 'minecraft:paper', 'minecraft:paper'  
+    ]).id('exposure:album')
 
     // Black and White Film
     event.shaped('exposure:black_and_white_film', [

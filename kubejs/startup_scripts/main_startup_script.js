@@ -3,21 +3,35 @@
 /**
  * Событие регистрации предметов.
  */
-StartupEvents.registry('item', (event) => {
+StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
 })
 
 /**
  * Событие регистрации блоков.
  */
-StartupEvents.registry('block', (event) => {
+StartupEvents.registry('block', event => {
     registerGTCEuBlocks(event)
+
+    
 })
+
+/**
+ * Событие изменения блоков.
+ */
+BlockEvents.modification(event => {
+    modifyFirmaCivBlocks(event)
+})
+
+/**
+ * Событие изменения предметов.
+ */
+ItemEvents.modification(event => {})
 
 /**
  * Событие регистрации жидкостей.
  */
-StartupEvents.registry('fluid', (event) => {})
+StartupEvents.registry('fluid', event => {})
 
 /**
  * Событие регистрации типов рецептов.

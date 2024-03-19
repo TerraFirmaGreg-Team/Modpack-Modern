@@ -5,7 +5,7 @@
 	group: ""
 	icon: "computercraft:computer_advanced"
 	id: "1A6D6B70EC13DDC6"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -31,8 +31,8 @@
 				item: "computercraft:computer_normal"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["591C5E26EE7466F3"]
@@ -42,8 +42,8 @@
 				item: "computercraft:computer_advanced"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["249A6189A9334B14"]
@@ -53,8 +53,8 @@
 				item: "computercraft:turtle_advanced"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0BFFB20573B2A9A5"]
@@ -64,7 +64,7 @@
 				item: "computercraft:turtle_normal"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 2.5d
 			y: -4.5d
 		}
 		{
@@ -79,7 +79,7 @@
 				item: "computercraft:cable"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -91,13 +91,13 @@
 			icon: "computercraft:monitor_advanced"
 			id: "7FFDA4C59514AA98"
 			shape: "octagon"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "7D070BAFC0F4226A"
 				type: "checkmark"
 			}]
 			title: "It's time to craft trinkets"
-			x: 6.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -109,7 +109,7 @@
 				item: "computercraft:monitor_normal"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
@@ -121,7 +121,7 @@
 				item: "computercraft:monitor_advanced"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 3.0d
 		}
 		{
@@ -133,7 +133,7 @@
 				item: "computercraft:wireless_modem_normal"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -145,7 +145,7 @@
 				item: "computercraft:wireless_modem_advanced"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.5d
 			y: 3.0d
 		}
 		{
@@ -209,5 +209,5 @@
 			y: 0.0d
 		}
 	]
-	title: "CC: Tweaked"
+	title: "&bMV&r - Computers"
 }

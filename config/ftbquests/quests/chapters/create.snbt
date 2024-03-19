@@ -6,25 +6,31 @@
 	icon: "create:cogwheel"
 	id: "73633085BF22A8E9"
 	order_index: 1
-	quest_links: [ ]
-	quests: [
+	quest_links: [
 		{
-			dependencies: ["2E3F6613C490E9AD"]
-			icon: "create:large_cogwheel"
-			id: "6E1CD5151284199F"
+			id: "36CEFCACDF2AA4A8"
+			linked_quest: "10FB27DD3C7BEC2F"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			id: "222131C44D4E98DF"
+			linked_quest: "517EFADD8F22717F"
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			id: "5D9724BBB04F9D78"
+			linked_quest: "222A4146EF7750E9"
 			shape: "gear"
 			size: 2.0d
-			tasks: [{
-				id: "46C68190E469F783"
-				item: "create:cogwheel"
-				type: "item"
-			}]
-			title: "The beginning of Create"
 			x: 0.0d
 			y: 0.0d
 		}
+	]
+	quests: [
 		{
-			dependencies: ["6E1CD5151284199F"]
+			dependencies: ["222A4146EF7750E9"]
 			id: "02BBC87042D9516B"
 			tasks: [
 				{
@@ -39,13 +45,13 @@
 				}
 			]
 			title: "Engineer's tools"
-			x: 0.0d
+			x: -1.0d
 			y: -3.0d
 		}
 		{
 			dependencies: [
-				"6E1CD5151284199F"
-				"01E921F78C3A9A3D"
+				"222A4146EF7750E9"
+				"10FB27DD3C7BEC2F"
 			]
 			id: "576584250B7CE6E9"
 			tasks: [
@@ -83,36 +89,11 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -4.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6BB98D128822730E"]
-			description: [
-				"If you want to be less fancy, just call it plastic."
-				""
-				"For the polymerization process, add &aOxygen&r, which gives better returns than Air, then solidify like you would with Rubber."
-				""
-				"&aPolyethylene (PE)&r is the key to unlocking &6many new things&r. It's commonly used as &dSheets&r, or in &dFluid&r form."
-				""
-				"&l&3Lore:&r&o The OreDict and fluid name for Polyethylene in 1.12.2 GTCEu was &bplastic&f, for cross-mod compatibility."
-			]
-			icon: "gtceu:polyethylene_plate"
-			id: "01E921F78C3A9A3D"
-			shape: "gear"
-			size: 1.0d
-			subtitle: "Baby's first polymer!"
-			tasks: [{
-				id: "2FC6492E5EB2C945"
-				item: "gtceu:polyethylene_plate"
-				type: "item"
-			}]
-			title: "Polyethylene"
-			x: 0.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["6E1CD5151284199F"]
+			dependencies: ["222A4146EF7750E9"]
 			id: "6C6579B8C07D4136"
 			shape: "circle"
 			tasks: [{
@@ -130,8 +111,8 @@
 				type: "item"
 			}]
 			title: "The first energy"
-			x: 0.0d
-			y: 2.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -141,11 +122,11 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["6E1CD5151284199F"]
+			dependencies: ["222A4146EF7750E9"]
 			id: "78BE0A10CE7B4BBE"
 			shape: "rsquare"
 			tasks: [{
@@ -153,22 +134,33 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["78BE0A10CE7B4BBE"]
+			description: [
+				"Let's break down sequential crafting using Precision Mechanism as an example."
+				"You will need 1 Gold Plate, 5 Deploy Cogwheel, 5 Deploy Large Cogwheel and 5 Iron Nugget"
+				""
+				"Place the gold plate on the Depot or Mechanical Belt that is under the Deployer"
+				"Next, place the items in the Deployer in order from the JEI."
+				""
+				"You will end up with Precision Mechanism"
+			]
 			id: "7B74DB051202E97E"
+			shape: "rsquare"
+			subtitle: "new mechanics"
 			tasks: [{
 				id: "135E35D4524364D0"
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: 2.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["6E1CD5151284199F"]
+			dependencies: ["222A4146EF7750E9"]
 			hide_dependency_lines: true
 			id: "525EA99C7879E3FB"
 			tasks: [{
@@ -176,7 +168,7 @@
 				item: "create:clipboard"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 3.0d
 			y: -3.0d
 		}
 		{
@@ -188,8 +180,8 @@
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.0d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -200,8 +192,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: -4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -212,8 +204,8 @@
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -224,8 +216,8 @@
 				item: "create:basin"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: -6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -236,8 +228,8 @@
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.0d
+			x: -5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["78BE0A10CE7B4BBE"]
@@ -248,7 +240,7 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.5d
 			y: 0.0d
 		}
 		{
@@ -259,23 +251,11 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.0d
+			x: 5.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["6E24ECF6CEE950D1"]
-			id: "7123E4EFAEB457B2"
-			shape: "gear"
-			tasks: [{
-				id: "4B14EA2B169153EA"
-				item: "tfc:glue"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["7123E4EFAEB457B2"]
+			dependencies: ["517EFADD8F22717F"]
 			id: "7067BC9D1CEB6982"
 			tasks: [{
 				id: "559495DDBA2E1557"
@@ -288,8 +268,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7B74DB051202E97E"]
@@ -299,8 +279,8 @@
 				item: "create:depot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -311,8 +291,8 @@
 				item: "create:item_drain"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.0d
+			x: -5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["45EA7CA14EE67AA4"]
@@ -329,8 +309,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 5.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["45EA7CA14EE67AA4"]
@@ -347,8 +327,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 5.0d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["45EA7CA14EE67AA4"]
@@ -359,8 +339,8 @@
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.0d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6C6579B8C07D4136"]
@@ -371,8 +351,8 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.0d
+			x: -6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7B74DB051202E97E"]
@@ -383,8 +363,8 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2D95C927AA8A641D"]
@@ -394,8 +374,8 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2D95C927AA8A641D"]
@@ -406,8 +386,8 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 8.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2D95C927AA8A641D"]
@@ -418,11 +398,11 @@
 				item: "create:controls"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.0d
+			x: -0.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["6E1CD5151284199F"]
+			dependencies: ["222A4146EF7750E9"]
 			hide_dependency_lines: true
 			id: "0553929CC6470D24"
 			tasks: [{
@@ -430,11 +410,11 @@
 				item: "create:brown_toolbox"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["6E1CD5151284199F"]
+			dependencies: ["222A4146EF7750E9"]
 			hide_dependency_lines: true
 			id: "560240B49B7BC7CA"
 			tasks: [{
@@ -442,9 +422,134 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			id: "48E26F1E509F4BD0"
+			tasks: [{
+				id: "531A0B06F3A3EB88"
+				item: "create:schedule"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "6F419731D917B8C0"
+			tasks: [{
+				id: "05FBF52F27F9279E"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Train Track\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(railways:track_create_andesite_wide)item(railways:track_create_andesite_narrow)item(railways:track_monorail))"
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "08AD4D4DF8FB3695"
+			tasks: [{
+				id: "50DA2411CD4D51AE"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "268A812D73AC53DF"
+			tasks: [{
+				id: "1A55B26A64B966F4"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "540FDE5960AAF38F"
+			tasks: [{
+				id: "7F6979FCA3DA0652"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "1C6B0CD142F5B472"
+			tasks: [{
+				id: "358613EF5374954C"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D95C927AA8A641D"]
+			hide_dependency_lines: true
+			id: "320CA5D0313DB27F"
+			tasks: [{
+				id: "4948D961FC3435A9"
+				item: "railways:remote_lens"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "3B19E2A579C1F3A2"
+			tasks: [{
+				id: "40851585BA2693AC"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any Track Switch\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(railways:track_switch_andesite)item(railways:track_switch_brass))"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["54D9026F3BE09E88"]
+			hide_dependency_lines: true
+			id: "13D5F948FE677003"
+			tasks: [{
+				id: "0FA370BC8CFB7600"
+				item: "railways:semaphore"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.5d
 		}
 	]
-	title: "Create"
+	title: "Mechanical Age"
 }

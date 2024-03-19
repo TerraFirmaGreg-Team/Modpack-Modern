@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.7.0] - 18.03.2024?
+### Changes
+- Fixed bug when some quests (when using eng language) displays russian titles and descriptions. (FriendlyCube)
+- Added new recipes for TFC alebaster via workbench. (FriendlyCube)
+- Fixed a lot of shit with quests. (FriendlyCube)
+- Added AE2 and Create chapters in quests (FriendlyCube)
+- Added new recipes for charged certus quarts. (Exception)
+- Fixed Exposure album recipe. (Exception)
+- Fixed bug when cleat from firmaciv cant be broken with hand. (Exception)
+- Replaced GTCEu lens with tfc lens for camera from Exposure. (Exception)
+- Added elytra repairing recipe. (Exception)
+- Removed polymer recipes from create press and packer. (Exception)
+- Gregified HandGlider recipes. (Exception)
+- Fixed some shit with clay -> mold assembler recipes. (Exception)
+- Added Olive -> Olive Paste mixer recipes. (Exception)
+- Added recipes for charcoal powder. (Exception)
+- Added crushing recipes for nixtamal. (Exception)
+- Fix dupes with gem blocks. (Exception)
+- Fix dupes with vanilla bricks. (Exception)
+- Added new recipes for TFC alebaster via GTCEu + Create machines. (FriendlyCube)
+- Added a lot of smelting, mixing, and etc recipes for firmalife and tfc. (FriendlyCube)
+- Added rubber producing by using vat from firmalife. (FriendlyCube)
+- Added new quests for Create. (FriendlyCube)
+### New Mods
+- HangGlider-v8.0.1-1.20.1-Forge
+- u_team_core-forge-1.20.1-5.1.4.269
+- music_player-forge-1.20.1-2.7.0.236
+- Embeddium/Rubidium Dynamic Lights
+
 ## [0.6.15] - 17.02.2024
 ### Changes
 - Fixed upgrading backpack through JEI crashes the game.

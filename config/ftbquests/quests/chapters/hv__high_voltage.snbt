@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
-	order_index: 5
+	order_index: 6
 	quest_links: [
 		{
 			id: "2583D0B64E51FAC8"
@@ -842,16 +842,6 @@
 				""
 				"The catch here is that it takes &dDistilled Water&r, and consumes a bit of &dSulfur&r with every step."
 			]
-			icon: {
-				Count: 1b
-				id: "gtceu:fluid_cell"
-				tag: {
-					Fluid: {
-						Amount: 8000
-						FluidName: "gtceu:nitrobenzene"
-					}
-				}
-			}
 			id: "56E7A3A0CC690C8A"
 			shape: "rsquare"
 			size: 0.66d
@@ -1107,16 +1097,6 @@
 				""
 				"The catch comes in the complexity of making &dTNM&r. In order to concoct it, you must react &aNitric Acid&r with either &dEthenone&r or &aMethyl Acetate&r, both of which have quite an involved process themselves!"
 			]
-			icon: {
-				Count: 1b
-				id: "gtceu:fluid_cell"
-				tag: {
-					Fluid: {
-						Amount: 8000
-						FluidName: "gtceu:cetane_boosted_diesel"
-					}
-				}
-			}
 			id: "04F6E968CEEC3D49"
 			shape: "rsquare"
 			size: 0.66d
@@ -1245,6 +1225,56 @@
 			title: "Ammonia"
 			x: 6.75d
 			y: -0.75d
+		}
+		{
+			dependencies: ["16A6AE5C770DB83A"]
+			id: "1D88369409736DC7"
+			size: 0.75d
+			tasks: [{
+				id: "722AEA3607BBAC94"
+				item: "gtceu:hv_polarizer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			id: "2F5778EDE6426D7E"
+			shape: "circle"
+			size: 0.8d
+			tasks: [{
+				id: "1BCFD5295BE92C4E"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.625d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F5778EDE6426D7E"]
+			id: "2045D32219AA0DCC"
+			shape: "circle"
+			size: 0.9d
+			tasks: [{
+				id: "3785469E7628386A"
+				item: {
+					Count: 1b
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.625d
+			y: -8.0d
 		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]
