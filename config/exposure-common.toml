@@ -1,7 +1,7 @@
 
 [Camera]
-	#Default focal range of the camera (with built in lens).
-	#Separated by a comma. Allowed range: 10-300
+	#Default focal range of the camera (without a lens attached).
+	#Allowed range: 10-300
 	#Default: 18-55
 	DefaultFocalRange = "18-55"
 	#Focal Range per lens. Item ID and min-max (or single number for primes) focal lengths. Separated by a comma. Allowed range: 10-300
@@ -31,4 +31,10 @@
 			ColorFilmSequence = ["{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:awkward\"}}", "{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:thick\"}}", "{FluidName:\"create:potion\",Amount:250,Tag:{Potion:\"minecraft:mundane\"}}"]
 			#Fluid spouting sequence required to develop black and white film.
 			BlackAndWhiteFilmSequence = ["{FluidName:\"minecraft:water\",Amount:250}"]
+
+[Photographs]
+	#How many photographs can be stacked in Stacked Photographs item. Default: 16.
+	#Larger numbers may cause errors. Use at your own risk.
+	#Range: 2 ~ 64
+	StackedPhotographsMaxSize = 16
 

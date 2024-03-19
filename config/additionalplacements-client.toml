@@ -1,0 +1,9 @@
+
+#Client settings
+[client]
+	#Default enabled state for Additional Placement placement logic. Please note that this value takes effect any time you load a world or log in to a server.
+	default_placement_logic_state = true
+	#The length of time in milliseconds for which the placement toggle key must be held for it to automatically return to the previous state when the key is released. setting to 0 turns the key into hold only, setting it to a high value (such as 1000000) will make it generally behave as always a toggle
+	#Range: 0 ~ 9223372036854775807
+	toggle_quickpress_time = 500
+

@@ -450,6 +450,13 @@
 	show-recipe-ids: false;
 
 	/**
+	 * Whether to display additional widgets added to recipes from other mods.
+	 * These are typically developer facing and compatibility related, and not useful
+	 * for players.
+	 */
+	show-recipe-decorators: false;
+
+	/**
 	 * Whether stacks in the index should display a highlight if they have a recipe
 	 * default.
 	 */

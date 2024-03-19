@@ -132,7 +132,7 @@
       },
       "texLocation": "minecraft:textures/gui/options_background.png"
     },
-    "worldGuiBackground": {
+    "altGuiBackground": {
       "start": {
         "red": 16,
         "green": 16,

@@ -4,8 +4,12 @@
     "showCommandExecutionErrors": true
   },
   "debugChunkloadAttempts": {
-    "desc:": "Enables debug logging of chunks being forceloaded on serverthread by directly accessing an unloaded chunk, which stalls the server until the chunk finishes loading: default:false",
+    "desc:": "Enables debug logging of chunks being forceloaded on serverthread by directly accessing an unloaded chunk, which stalls the server until the chunk finishes loading, incompatible with lithium and its forks: default:false",
     "debugChunkloadAttempts": false
+  },
+  "skipErrorOnEntityLoad": {
+    "desc:": "Prevent crashes on entity loading: default:false",
+    "skipErrorOnEntityLoad": false
   },
   "logOffthreadEntityAdd": {
     "desc:": "Entities should only be added on the server thread itself, cupboard fixes the crashes caused by mods violating that, this option enables the logging of those: default:true",

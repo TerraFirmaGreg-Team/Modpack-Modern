@@ -1,0 +1,181 @@
+{
+  "identifier": "dark",
+  "display_name": "fancymenu.ui.themes.dark",
+  "menu_bar_bottom_line_color": {
+    "hex": "#5D6164FF"
+  },
+  "layout_editor_mouse_selection_rectangle_color": {
+    "hex": "#0394FCFF"
+  },
+  "layout_editor_grid_color_normal": {
+    "hex": "#BA79F164"
+  },
+  "layout_editor_grid_color_center": {
+    "hex": "#5B5EFF64"
+  },
+  "layout_editor_element_border_color_normal": {
+    "hex": "#0394FCFF"
+  },
+  "layout_editor_element_border_color_selected": {
+    "hex": "#03DBFCFF"
+  },
+  "layout_editor_element_dragging_not_allowed_color": {
+    "hex": "#E83609C8"
+  },
+  "layout_editor_anchor_point_overlay_color_base": {
+    "hex": "#25B479FF"
+  },
+  "layout_editor_anchor_point_overlay_color_border": {
+    "hex": "#114F34FF"
+  },
+  "layout_editor_close_icon_color": {
+    "hex": "#DA3C1EFF"
+  },
+  "scroll_grabber_color_normal": {
+    "hex": "#595B5D64"
+  },
+  "scroll_grabber_color_hover": {
+    "hex": "#66686864"
+  },
+  "screen_background_color": {
+    "hex": "#3C3F41FF"
+  },
+  "screen_background_color_darker": {
+    "hex": "#262626FF"
+  },
+  "element_border_color_normal": {
+    "hex": "#5D6164FF"
+  },
+  "element_border_color_hover": {
+    "hex": "#5D6164FF"
+  },
+  "element_background_color_normal": {
+    "hex": "#474747FF"
+  },
+  "element_background_color_hover": {
+    "hex": "#539CD4FF"
+  },
+  "slider_handle_color_normal": {
+    "hex": "#4784B4FF"
+  },
+  "slider_handle_color_hover": {
+    "hex": "#539CD4FF"
+  },
+  "area_background_color": {
+    "hex": "#2B2B2BFF"
+  },
+  "edit_box_background_color": {
+    "hex": "#2B2B2BFF"
+  },
+  "edit_box_border_color_normal": {
+    "hex": "#D1C2D1FF"
+  },
+  "edit_box_border_color_focused": {
+    "hex": "#E3D3E3FF"
+  },
+  "list_entry_color_selected_hovered": {
+    "hex": "#323232FF"
+  },
+  "text_editor_sidebar_color": {
+    "hex": "#313335FF"
+  },
+  "text_editor_line_number_text_color_normal": {
+    "hex": "#5B5C5EFF"
+  },
+  "text_editor_line_number_text_color_selected": {
+    "hex": "#899396FF"
+  },
+  "listing_dot_color_1": {
+    "hex": "#3E86A0FF"
+  },
+  "listing_dot_color_2": {
+    "hex": "#AD6C79FF"
+  },
+  "listing_dot_color_3": {
+    "hex": "#AA823FFF"
+  },
+  "suggestions_background_color": {
+    "hex": "#474747FF"
+  },
+  "suggestions_text_color_normal": {
+    "hex": "#CEDDEDFF"
+  },
+  "suggestions_text_color_selected": {
+    "hex": "#64A5ECFF"
+  },
+  "ui_texture_color": {
+    "hex": "#FFFFFFFF"
+  },
+  "generic_text_base_color": {
+    "hex": "#FFFFFFFF"
+  },
+  "element_label_color_normal": {
+    "hex": "#CEDDEDFF"
+  },
+  "element_label_color_inactive": {
+    "hex": "#717577FF"
+  },
+  "edit_box_text_color_normal": {
+    "hex": "#CEDDEDFF"
+  },
+  "edit_box_text_color_uneditable": {
+    "hex": "#717577FF"
+  },
+  "edit_box_suggestion_text_color": {
+    "hex": "#808080FF"
+  },
+  "description_area_text_color": {
+    "hex": "#CEDDEDFF"
+  },
+  "text_editor_text_color": {
+    "hex": "#9EAAB8FF"
+  },
+  "success_text_color": {
+    "hex": "#31CE05FF"
+  },
+  "error_text_color": {
+    "hex": "#ED4545FF"
+  },
+  "warning_text_color": {
+    "hex": "#E59B12FF"
+  },
+  "text_editor_text_formatting_nested_text_color_1": {
+    "hex": "#EB7F7FFF"
+  },
+  "text_editor_text_formatting_nested_text_color_2": {
+    "hex": "#EBC97FFF"
+  },
+  "text_editor_text_formatting_nested_text_color_3": {
+    "hex": "#BEEB7FFF"
+  },
+  "text_editor_text_formatting_nested_text_color_4": {
+    "hex": "#7FEBE6FF"
+  },
+  "text_editor_text_formatting_nested_text_color_5": {
+    "hex": "#7F9EEBFF"
+  },
+  "text_editor_text_formatting_nested_text_color_6": {
+    "hex": "#967FEBFF"
+  },
+  "text_editor_text_formatting_nested_text_color_7": {
+    "hex": "#D47FEBFF"
+  },
+  "text_editor_text_formatting_nested_text_color_8": {
+    "hex": "#F53636FF"
+  },
+  "text_editor_text_formatting_nested_text_color_9": {
+    "hex": "#F59236FF"
+  },
+  "text_editor_text_formatting_nested_text_color_10": {
+    "hex": "#F5E536FF"
+  },
+  "text_editor_text_formatting_nested_text_color_11": {
+    "hex": "#69F536FF"
+  },
+  "text_editor_text_formatting_nested_text_color_12": {
+    "hex": "#3689F5FF"
+  },
+  "text_editor_text_formatting_brackets_color": {
+    "hex": "#FCDF03FF"
+  }
+}
