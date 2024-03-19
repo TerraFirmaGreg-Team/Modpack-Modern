@@ -71,6 +71,7 @@
 - sophisticatedbackpacks -> 3.20.3.1029
 - sophisticatedcore -> 0.6.11.578
 - voicechat -> 2.5.9
+- recipeessentials -> 3.3
 
 ## [0.6.15] - 17.02.2024
 ### Changes
