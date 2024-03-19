@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.0] - 18.03.2024?
+## [0.7.0] - 19.03.2024
 ### Changes
 - Fixed bug when some quests (when using eng language) displays russian titles and descriptions. (FriendlyCube)
 - Added new recipes for TFC alebaster via workbench. (FriendlyCube)
@@ -24,10 +24,53 @@
 - Added rubber producing by using vat from firmalife. (FriendlyCube)
 - Added new quests for Create. (FriendlyCube)
 ### New Mods
-- HangGlider-v8.0.1-1.20.1-Forge
-- u_team_core-forge-1.20.1-5.1.4.269
-- music_player-forge-1.20.1-2.7.0.236
+- Hang Glider
+- UTeam Core
+- Music Player
 - Embeddium/Rubidium Dynamic Lights
+- Melody
+### Updated mods
+- AdditionalPlacements -> 1.8.0
+- AmbientSounds -> 5.3.9
+- CraftPresence -> 2.3.5
+- CreativeCore -> 2.11.25
+- FTBQuestsOptimizer -> 1.2.2
+- Firmalife -> 2.0.9
+- PacketFixer -> 1.2.8
+- TerraFirmaCraft -> 3.1.9
+- XaerosWorldMap -> 1.38.1
+- Xaeros_Minimap -> 24.0.1
+- ae2wtlib -> 15.2.2
+- appliedenergistics2 -> 15.0.23
+- architectury -> 9.2.14
+- balm -> 7.2.2
+- cc-tweaked -> 1.109.6
+- chat_heads -> 0.10.32
+- cherishedworlds -> 6.1.6
+- connectivity -> 5.5
+- corpse -> 1.0.12
+- craftingtweaks -> 18.2.3
+- cupboard -> 2.6
+- curios -> 5.7.2
+- do_a_barrel_roll -> 3.5.2
+- drippyloadingscreen -> 3.0.1
+- embeddium -> 0.3.9
+- embeddiumplus -> 1.2.5
+- emi -> 1.1.3
+- exposure -> 1.4.1
+- fancymenu -> 3.1.2
+- firstperson -> 2.3.4
+- ftb-quests -> 2001.3.5
+- ftb-teams -> 2001.2.0
+- kubejs -> 2001.6.4-build.138
+- kubejs_tfc -> 1.1.0
+- modernfix -> 5.14.0
+- moonlight -> 2.11.4
+- oculus-flywheel-compat -> 0.2.4
+- smoothchunk -> 3.6
+- sophisticatedbackpacks -> 3.20.3.1029
+- sophisticatedcore -> 0.6.11.578
+- voicechat -> 2.5.9
 
 ## [0.6.15] - 17.02.2024
 ### Changes
