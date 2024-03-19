@@ -1,0 +1,12 @@
+type = layout_editor_widget_settings
+
+settings {
+  offset_x = -212.0
+  offset_y = 0.0
+  inner_width = 200.0
+  inner_height = 300.0
+  snapping_side = top-right
+  expanded = true
+  visible = true
+}
+
