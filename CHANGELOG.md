@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.1] - 19.03.2024
+### Changes
+- Fixed Menu. 
+
 ## [0.7.0] - 19.03.2024
 ### Changes
 - Fixed bug when some quests (when using eng language) displays russian titles and descriptions. (FriendlyCube)
