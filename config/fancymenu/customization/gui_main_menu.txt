@@ -150,7 +150,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 439fb617-02cf-43fe-a803-599ba19aa76c-1710837053356
-  [executable_action_instance:a3ce8295-09e2-46f2-8280-78b5f0f8490f-1710837053356][action_type:openlink] = https://discord.gg/terrafirmagreg
+  [executable_action_instance:a3ce8295-09e2-46f2-8280-78b5f0f8490f-1710837053356][action_type:openlink] = https://discord.com/invite/AEaCzCTUwQ
   [executable_block:439fb617-02cf-43fe-a803-599ba19aa76c-1710837053356][type:generic] = [executables:a3ce8295-09e2-46f2-8280-78b5f0f8490f-1710837053356;]
   backgroundnormal = [source:local]kubejs/assets/tfg/textures/gui/discord_logo.png
   backgroundhovered = [source:local]kubejs/assets/tfg/textures/gui/discord_logo_hovered.png
