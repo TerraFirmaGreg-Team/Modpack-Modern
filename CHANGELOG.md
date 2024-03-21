@@ -5,6 +5,7 @@
 - Fix some bugs with LAN game (by removing SimpeLogin).
 - Removed fix for ftbteams from TFG-Core.
 - Removed fix for simplelogin from TFG-Core.
+- Fix for fishing machine from GTCEu (loot).
 ### Removed mods
 - CustomSkinLoader
 - SimpleLogin
