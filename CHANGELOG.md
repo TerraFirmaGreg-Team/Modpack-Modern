@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.2] - ?
+### Changes
+- Fix some bugs with LAN game (by removing SimpeLogin).
+- Removed fix for ftbteams from TFG-Core.
+- Removed fix for simplelogin from TFG-Core.
+### Removed mods
+- CustomSkinLoader
+- SimpleLogin
+
 ## [0.7.1] - 19.03.2024
 ### Changes
 - Fixed Menu. 
