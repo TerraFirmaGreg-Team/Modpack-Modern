@@ -1,0 +1,74 @@
+##[general]
+
+I:default_gui_scale = '-1';
+B:play_vanilla_menu_music = 'true';
+B:force_fullscreen = 'false';
+
+
+##[customization]
+
+B:show_customization_overlay = 'false';
+B:advanced_customization_mode = 'false';
+
+
+##[loading]
+
+B:preload_animations = 'true';
+S:preload_resources = '';
+S:custom_game_intro_skip_text = '';
+B:allow_game_intro_skip = 'true';
+S:game_intro_animation_name = '';
+B:game_intro_fade_out = 'true';
+
+
+##[window]
+
+B:show_custom_window_icon = 'true';
+S:custom_window_icon_macos = '/config/fancymenu/assets/icons/macOS.icns';
+S:custom_window_icon_32 = '/config/fancymenu/assets/icons/icon32x32.png';
+S:custom_window_title = 'TerraFirmaGreg 1.20.1';
+S:custom_window_icon_16 = '/config/fancymenu/assets/icons/icon16x16.png';
+
+
+##[multiplayer_screen]
+
+B:show_multiplayer_screen_server_icons = 'true';
+
+
+##[singleplayer_screen]
+
+B:show_singleplayer_screen_world_icons = 'true';
+
+
+##[layout_editor]
+
+B:anchor_overlay_change_anchor_on_area_hover = 'true';
+B:show_layout_editor_grid = 'true';
+B:anchor_overlay_change_anchor_on_element_hover = 'true';
+S:anchor_overlay_visibility_mode = 'dragging';
+B:anchor_overlay_show_all_connection_lines = 'false';
+S:anchor_overlay_color_base_override = '';
+I:layout_editor_grid_size = '10';
+B:invert_anchor_overlay_color = 'false';
+S:anchor_overlay_color_border_override = '';
+F:anchor_overlay_opacity_normal = '0.5';
+F:anchor_overlay_opacity_busy = '0.7';
+D:anchor_overlay_hover_charging_time_seconds = '2.0';
+
+
+##[ui]
+
+I:context_menu_hover_open_speed = '1';
+S:ui_theme = 'dark';
+F:ui_scale = '4.0';
+B:play_ui_click_sounds = 'true';
+B:enable_ui_text_shadow = 'false';
+
+
+##[debug_overlay]
+
+B:debug_overlay_show_basic_screen_category = 'true';
+B:debug_overlay_show_system_category = 'true';
+B:debug_overlay_show_advanced_screen_category = 'true';
+B:show_debug_overlay = 'false';
+B:debug_overlay_show_resources_category = 'true';
