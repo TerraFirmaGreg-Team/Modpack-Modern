@@ -7,4 +7,6 @@
 	#Renders map textures using mipmap. Vastly improves look from afar as well when inside a Map Atlas from Map Atlases or similar. Set to 0 to have no mipmap like vanilla
 	#Range: 0 ~ 4
 	maps_mipmap = 3
+	#Fix minecraft entity shading to be exactly the same that blocks use. (1 for up,0.8 for north, 0.6 for west and 0.5 for down).This means that if you have a model and render it with a tile renderer or entity it will appear identical as one rendered via baked models
+	fix_entity_renderer_shade = true
 
