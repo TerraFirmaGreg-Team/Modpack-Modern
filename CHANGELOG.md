@@ -1,13 +1,33 @@
 # Changelog
 
-## [0.7.2] - 22.03.2024 ?
+## [0.7.2] - 22.03.2024
 ### Changes
 - Fix some bugs with LAN game (by removing SimpleLogin).
 - Removed fix for simplelogin from TFG-Core.
 - Fix for fishing machine from GTCEu (loot).
+### Updated mods
+- TFG-Core -> 0.4.10
+- cc-tweaked -> 1.110.0
+- o_a_barrel_roll -> 3.5.3
+- moonlight -> 2.11.9
+- sophisticatedbackpacks -> 3.20.3.1034
+- modelfix -> 1.15
+- PuzzlesLib -> 8.1.18
+### New Mods
+- bobby
 ### Removed mods
 - CustomSkinLoader
 - SimpleLogin
+- async-locator
+- betterchunkloading
+- chunksending
+- connectivity
+- dynview
+- gpumemleakfix
+- netherportalfix
+- smoothchunk
+- voicechat
+- farsight
 
 ## [0.7.1] - 19.03.2024
 ### Changes
