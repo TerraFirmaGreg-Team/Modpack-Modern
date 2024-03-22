@@ -32,6 +32,7 @@ chiselsandbits/*
 
 # Client data
 .idea/
+/.bobby
 .curseclient
 .sl_password
 options.txt
@@ -55,3 +56,4 @@ knownkeys.txt
 
 # Server Pack
 .github/buildtools/serverpack/*
+
