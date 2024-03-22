@@ -1,0 +1,469 @@
+/** EMI Config */
+
+#general {
+	/**
+	 * Whether EMI is enabled and visible.
+	 */
+	enabled: true;
+
+	/**
+	 * Whether cheating in items is enabled.
+	 */
+	cheat-mode: false;
+
+	/**
+	 * How much EMI should use tooltips and popups to show controls and information.
+	 */
+	help-level: normal;
+
+	/**
+	 * Where EMI should pull stacks from to populate the index.
+	 */
+	index-source: creative;
+
+	/**
+	 * Whether normal search queries should include the tooltip.
+	 */
+	search-tooltip-by-default: true;
+
+	/**
+	 * Whether normal search queries should include the mod name.
+	 */
+	search-mod-name-by-default: false;
+
+	/**
+	 * Whether normal search queries should include the stack's tags.
+	 */
+	search-tags-by-default: false;
+}
+
+#ui {
+	/**
+	 * Which action should be performed when clicking the recipe book.
+	 */
+	recipe-book-action: toggle-craftables;
+
+	/**
+	 * Where to display status effects in the inventory.
+	 */
+	effect-location: top;
+
+	/**
+	 * Whether to display a gray overlay when hovering over a stack.
+	 */
+	show-hover-overlay: true;
+
+	/**
+	 * Whether to add mod name to tooltips
+	 */
+	append-mod-id: true;
+
+	/**
+	 * Whether to add mod name to item tooltips, in case another mod provides behavior
+	 */
+	append-item-mod-id: true;
+
+	/**
+	 * Prevents recipes being quick crafted from shifting around under the cursor.
+	 */
+	miscraft-prevention: true;
+
+	/**
+	 * The unit to display fluids as.
+	 */
+	fluid-unit: millibuckets;
+
+	/**
+	 * Whether to use the batched render system. Batching is faster, but may have
+	 * incompatibilities with shaders or other mods.
+	 */
+	use-batched-renderer: true;
+
+	/**
+	 * Whether to have the search bar in the center of the screen, instead of to the
+	 * side.
+	 */
+	center-search-bar: true;
+
+	/**
+	 * Which sidebar type to switch to when searching.
+	 */
+	search-sidebar-focus: index;
+
+	/**
+	 * Which sidebar type to focus when the search is empty.
+	 */
+	empty-search-sidebar-focus: none;
+
+	/**
+	 * The amount of vertical margin to give in the recipe screen.
+	 */
+	vertical-margin: 20;
+
+	/**
+	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
+	 * can be, and where the page switching buttons go. The default is 176, the width
+	 * of most screens.
+	 */
+	minimum-recipe-screen-width: 176;
+
+	/**
+	 * Where to show workstations in the recipe screen
+	 */
+	workstation-location: left;
+
+	/**
+	 * Display cost per batch when hovering a recipe output
+	 */
+	show-cost-per-batch: true;
+
+	/**
+	 * Whether recipes should have a button to set as default.
+	 */
+	recipe-default-button: false;
+
+	/**
+	 * Whether recipes should have a button to show the recipe tree.
+	 */
+	recipe-tree-button: true;
+
+	/**
+	 * Whether recipes should have a button to fill the ingredients in a handler.
+	 */
+	recipe-fill-button: true;
+
+	/**
+	 * Whether recipes should have a button to take a screenshot of the recipe.
+	 */
+	recipe-screenshot-button: false;
+
+	/**
+	 * The GUI scale at which recipe screenshots are saved. Use 0 to use the current
+	 * GUI scale.
+	 */
+	recipe-screenshot-scale: 0;
+
+	/**
+	 * The pages in the left sidebar
+	 */
+	left-sidebar-pages: favorites;
+
+	/**
+	 * The subpanels in the left sidebar
+	 */
+	left-sidebar-subpanels: none;
+
+	/**
+	 * How many columns and rows of ingredients to limit the left sidebar to
+	 */
+	left-sidebar-size: 12, 100;
+
+	/**
+	 * How much space to maintain between the left sidebar and obstructions, in pixels
+	 */
+	left-sidebar-margins: 2, 2, 2, 2;
+
+	/**
+	 * Where to position the left sidebar
+	 */
+	left-sidebar-align: left, top;
+
+	/**
+	 * Whether to render the header buttons and page count for the left sidebar
+	 */
+	left-sidebar-header: visible;
+
+	/**
+	 * Which theme to use for the left sidebar
+	 */
+	left-sidebar-theme: transparent;
+
+	/**
+	 * The pages in the right sidebar
+	 */
+	right-sidebar-pages: index, craftables;
+
+	/**
+	 * The subpanels in the right sidebar
+	 */
+	right-sidebar-subpanels: none;
+
+	/**
+	 * How many columns and rows of ingredients to limit the right sidebar to
+	 */
+	right-sidebar-size: 11, 100;
+
+	/**
+	 * How much space to maintain between the right sidebar and obstructions, in pixels
+	 */
+	right-sidebar-margins: 2, 2, 2, 2;
+
+	/**
+	 * Where to position the right sidebar
+	 */
+	right-sidebar-align: right, top;
+
+	/**
+	 * Whether to render the header buttons and page count for the right sidebar
+	 */
+	right-sidebar-header: visible;
+
+	/**
+	 * Which theme to use for the right sidebar
+	 */
+	right-sidebar-theme: transparent;
+
+	/**
+	 * The pages in the top sidebar
+	 */
+	top-sidebar-pages: none;
+
+	/**
+	 * The subpanels in the top sidebar
+	 */
+	top-sidebar-subpanels: none;
+
+	/**
+	 * How many columns and rows of ingredients to limit the top sidebar to
+	 */
+	top-sidebar-size: 9, 9;
+
+	/**
+	 * How much space to maintain between the top sidebar and obstructions, in pixels
+	 */
+	top-sidebar-margins: 2, 2, 2, 2;
+
+	/**
+	 * Where to position the top sidebar
+	 */
+	top-sidebar-align: center, center;
+
+	/**
+	 * Whether to render the header buttons and page count for the top sidebar
+	 */
+	top-sidebar-header: visible;
+
+	/**
+	 * Which theme to use for the top sidebar
+	 */
+	top-sidebar-theme: transparent;
+
+	/**
+	 * The pages in the bottom sidebar
+	 */
+	bottom-sidebar-pages: none;
+
+	/**
+	 * The subpanels in the bottom sidebar
+	 */
+	bottom-sidebar-subpanels: none;
+
+	/**
+	 * How many columns and rows of ingredients to limit the bottom sidebar to
+	 */
+	bottom-sidebar-size: 9, 9;
+
+	/**
+	 * How much space to maintain between the bottom sidebar and obstructions, in
+	 * pixels
+	 */
+	bottom-sidebar-margins: 2, 2, 2, 2;
+
+	/**
+	 * Where to position the bottom sidebar
+	 */
+	bottom-sidebar-align: center, center;
+
+	/**
+	 * Whether to render the header buttons and page count for the bottom sidebar
+	 */
+	bottom-sidebar-header: visible;
+
+	/**
+	 * Which theme to use for the bottom sidebar
+	 */
+	bottom-sidebar-theme: transparent;
+}
+
+#binds {
+	/**
+	 * Toggle the visibility of EMI.
+	 */
+	toggle-visibility: "key.keyboard.unknown";
+
+	/**
+	 * Focuse the search bar.
+	 */
+	focus-search: "ctrl key.keyboard.f";
+
+	/**
+	 * Clears the search bar.
+	 */
+	clear-search: "key.keyboard.unknown";
+
+	/**
+	 * Display the recipes for creating a stack.
+	 */
+	view-recipes: "key.keyboard.r";
+	view-recipes: "key.mouse.left";
+
+	/**
+	 * Display the recipes that can be created using a stack.
+	 */
+	view-uses: "key.keyboard.u";
+	view-uses: "key.mouse.right";
+
+	/**
+	 * Favorite the item to display on the side of the screen opposite of recipies for
+	 * quick access.
+	 */
+	favorite: "key.keyboard.a";
+
+	/**
+	 * Set the default recipe for a given stack in the output of a recipe to that
+	 * recipe.
+	 */
+	default-stack: "key.keyboard.unknown";
+
+	/**
+	 * Display the recipe tree for a given stack.
+	 */
+	view-stack-tree: "key.keyboard.unknown";
+
+	/**
+	 * Display the recipe tree.
+	 */
+	view-tree: "key.keyboard.unknown";
+
+	/**
+	 * Return to the previous page in EMI.
+	 */
+	back: "key.keyboard.backspace";
+
+	/**
+	 * Return to the next page in EMI after going back.
+	 */
+	forward: "key.keyboard.unknown";
+
+	/**
+	 * When on a stack with an associated recipe:
+	 * Move ingredients for a single result.
+	 */
+	craft-one: "key.mouse.left";
+
+	/**
+	 * When on a stack with an associated recipe:
+	 * Move ingredients for as many results as possible.
+	 */
+	craft-all: "shift key.mouse.left";
+
+	/**
+	 * When on a stack with an associated recipe:
+	 * Move ingredients for a single result and put in inventory if possible.
+	 */
+	craft-one-to-inventory: "key.keyboard.unknown";
+
+	/**
+	 * When on a stack with an associated recipe:
+	 * Move ingredients for as many results as possible and put in inventory if
+	 * possible.
+	 */
+	craft-all-to-inventory: "key.keyboard.unknown";
+
+	/**
+	 * When on a stack with an associated recipe:
+	 * Move ingredients for a single result and put in cursor if possible.
+	 */
+	craft-one-to-cursor: "ctrl key.mouse.left";
+
+	/**
+	 * Display the recipe that will be used to craft on a stack with no recipe context.
+	 */
+	show-craft: "key.keyboard.left.shift";
+
+	/**
+	 * Cheat in one of an item into the inventory.
+	 */
+	cheat-one-to-inventory: "key.keyboard.unknown";
+
+	/**
+	 * Cheat in a stack of an item into the inventory.
+	 */
+	cheat-stack-to-inventory: "key.keyboard.unknown";
+
+	/**
+	 * Cheat in one of an item into the cursor.
+	 */
+	cheat-one-to-cursor: "key.mouse.left";
+
+	/**
+	 * Cheat in a stack of an item into the cursor.
+	 */
+	cheat-stack-to-cursor: "shift key.mouse.left";
+
+	/**
+	 * Delete the stack in the cursor when hovering the index
+	 */
+	delete-cursor-stack: "key.mouse.left";
+
+	/**
+	 * Copies the hovered recipe's ID to the clipboard
+	 */
+	copy-recipe-id: "key.mouse.middle";
+
+	/**
+	 * In edit mode, hide the hovered stack
+	 */
+	hide-stack: "key.keyboard.unknown";
+
+	/**
+	 * In edit mode, hide stacks with the hovered stack's id
+	 */
+	hide-stack-by-id: "key.keyboard.unknown";
+}
+
+#dev {
+	/**
+	 * Whether development functions should be enabled. Not recommended for general
+	 * play.
+	 */
+	dev-mode: false;
+
+	/**
+	 * Whether editing the index is enabled
+	 */
+	edit-mode: false;
+
+	/**
+	 * Whether to log untranslated tags as warnings.
+	 */
+	log-untranslated-tags: false;
+
+	/**
+	 * Whether to log ingredients that don't have a representative tag as warnings.
+	 */
+	log-non-tag-ingredients: false;
+
+	/**
+	 * Whether hovering the output of a recipe should show the recipe's EMI ID.
+	 */
+	show-recipe-ids: false;
+
+	/**
+	 * Whether to display additional widgets added to recipes from other mods.
+	 * These are typically developer facing and compatibility related, and not useful
+	 * for players.
+	 */
+	show-recipe-decorators: false;
+
+	/**
+	 * Whether stacks in the index should display a highlight if they have a recipe
+	 * default.
+	 */
+	highlight-defaulted: false;
+
+	/**
+	 * Whether to display exclusion areas
+	 */
+	highlight-exclusion-areas: false;
+}
