@@ -1,0 +1,114 @@
+
+[settings]
+	#mod.scena.config.settings.invert-pick-block-behaviour.comment
+	invert-pick-block-behaviour = false
+
+	[settings.bit-bag]
+		#mod.scena.config.settings.bit-bag.invert-durability-bar-indication.comment
+		invert-durability-bar-indication = false
+
+	[settings.placement]
+
+		[settings.placement.render-mode]
+			#mod.scena.config.settings.placement.render-mode.success.comment
+			#Allowed Values: GHOST_BLOCK_MODEL, GHOST_BLOCK_MODEL_SOLID_COLOR, WIREFRAME
+			success = "GHOST_BLOCK_MODEL"
+			#mod.scena.config.settings.placement.render-mode.failed.comment
+			#Allowed Values: GHOST_BLOCK_MODEL, GHOST_BLOCK_MODEL_SOLID_COLOR, WIREFRAME
+			failed = "GHOST_BLOCK_MODEL_SOLID_COLOR"
+
+		[settings.placement.color]
+			#mod.scena.config.settings.placement.color.success.comment
+			success = [0.1882352977991104, 0.47058823704719543, 0.7882353067398071, 0.7058823704719543]
+			#mod.scena.config.settings.placement.color.not-fitting.comment
+			not-fitting = [0.7176470756530762, 0.2549019753932953, 0.054901961237192154, 0.7058823704719543]
+			#mod.scena.config.settings.placement.color.missing-bits-or-space.comment
+			missing-bits-or-space = [1.0, 0.8588235378265381, 0.3450980484485626, 0.7058823704719543]
+
+	[settings.chiseling-previews]
+		#mod.scena.config.settings.chiseling-previews.renderer.comment
+		renderer = "chiselsandbits:default"
+
+		[settings.chiseling-previews.default]
+
+			[settings.chiseling-previews.default.colors]
+				#mod.scena.config.settings.chiseling-previews.default.colors.chiseling.comment
+				chiseling = [0.8500000238418579, 0.0, 0.0, 0.6499999761581421]
+				#mod.scena.config.settings.chiseling-previews.default.colors.placement.comment
+				placement = [0.0, 0.8500000238418579, 0.0, 0.6499999761581421]
+
+		[settings.chiseling-previews.debug]
+			#mod.scena.config.settings.chiseling-previews.debug.enabled.comment
+			enabled = false
+
+			[settings.chiseling-previews.debug.mutator]
+
+				[settings.chiseling-previews.debug.mutator.colors]
+					#mod.scena.config.settings.chiseling-previews.debug.mutator.colors.chiseling.comment
+					chiseling = [0.0, 0.0, 0.8500000238418579, 0.6499999761581421]
+					#mod.scena.config.settings.chiseling-previews.debug.mutator.colors.placement.comment
+					placement = [0.8500000238418579, 0.8500000238418579, 0.0, 0.6499999761581421]
+
+	[settings.selected-tool-mode-icons]
+		#mod.scena.config.settings.selected-tool-mode-icons.renderer.comment
+		renderer = "chiselsandbits:group"
+
+	[settings.clipboard]
+		#mod.scena.config.settings.clipboard.size.comment
+		#Range: 0 ~ 64
+		size = 64
+		#mod.scena.config.settings.clipboard.add-broken-blocks.comment
+		add-broken-blocks = true
+		#mod.scena.config.settings.clipboard.add-picked-blocks.comment
+		add-picked-blocks = true
+
+	[settings.patterns]
+		#mod.scena.config.settings.patterns.export-path.comment
+		export-path = "./chiselsandbits/patterns"
+
+	[settings.warnings]
+		#mod.scena.config.settings.warnings.show-cool-down-error.comment
+		show-cool-down-error = false
+
+	[settings.interactions]
+		#mod.scena.config.settings.interactions.scrolling-changes-mode.comment
+		scrolling-changes-mode = true
+
+[performance]
+
+	[performance.caches]
+
+		[performance.caches.sizes]
+			#mod.scena.config.performance.caches.sizes.bit-storage-content-models.comment
+			#Range: 0 ~ 9223372036854775807
+			bit-storage-content-models = 100
+			#mod.scena.config.performance.caches.sizes.block-models.comment
+			#Range: 3500 ~ 20000
+			block-models = 3500
+			#mod.scena.config.performance.caches.sizes.block-faces.comment
+			#Range: 350000 ~ 2000000
+			block-faces = 1000000
+			#mod.scena.config.performance.caches.sizes.cull-testing.comment
+			#Range: 3500 ~ 200000
+			cull-testing = 3500
+			#mod.scena.config.performance.caches.sizes.stack-models.comment
+			#Range: 0 ~ 9223372036854775807
+			stack-models = 100
+
+	[performance.lighting]
+		#mod.scena.config.performance.lighting.extract-lighting-values-from-faces.comment
+		extract-lighting-values-from-faces = true
+		#mod.scena.config.performance.lighting.extract-lighting-values-from-blockstates.comment
+		extract-lighting-values-from-blockstates = false
+
+	[performance.model-building]
+		#mod.scena.config.performance.model-building.thread-count.comment
+		#Range: 1 ~ 32
+		thread-count = 16
+
+[gui]
+
+	[gui.radial-menu]
+		#mod.scena.config.gui.radial-menu.display-mouse-indicator.comment
+		display-mouse-indicator = false
+

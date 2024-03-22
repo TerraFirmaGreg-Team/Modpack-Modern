@@ -1,0 +1,22 @@
+
+[help]
+	#mod.scena.config.help.enabled-in-tooltips.comment
+	enabled-in-tooltips = true
+
+[performance]
+
+	[performance.caches]
+
+		[performance.caches.sizes]
+			#mod.scena.config.performance.caches.sizes.collision-boxes.comment
+			#Range: 0 ~ 9223372036854775807
+			collision-boxes = 10000
+			#mod.scena.config.performance.caches.sizes.class-metadata.comment
+			#Range: 0 ~ 9223372036854775807
+			class-metadata = 10000
+
+	[performance.saving]
+		#mod.scena.config.performance.saving.thread-count.comment
+		#Range: 1 ~ 32
+		thread-count = 16
+
