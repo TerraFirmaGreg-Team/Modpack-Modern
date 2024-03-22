@@ -1,9 +1,8 @@
 # Changelog
 
-## [0.7.2] - ?
+## [0.7.2] - 22.03.2024 ?
 ### Changes
-- Fix some bugs with LAN game (by removing SimpeLogin).
-- Removed fix for ftbteams from TFG-Core.
+- Fix some bugs with LAN game (by removing SimpleLogin).
 - Removed fix for simplelogin from TFG-Core.
 - Fix for fishing machine from GTCEu (loot).
 ### Removed mods
