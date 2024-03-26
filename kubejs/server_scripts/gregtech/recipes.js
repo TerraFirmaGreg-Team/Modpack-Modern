@@ -1510,4 +1510,14 @@ const registerGTCEURecipes = (event) => {
     });
 
     //#endregion
+
+    //empty wooden form
+    event.remove({ id: 'gtceu:shaped/plank_to_wooden_shape' })
+    event.shaped('gtceu:empty_wooden_form', [
+        ' AA', 
+        'BAA'
+    ], {
+        A: '#minecraft:planks',
+        B: '#forge:tools/saws'
+    }).id('gtceu:shaped/empty_wooden_form')
 }
