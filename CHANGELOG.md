@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.3] - ?
+### Changes
+- Reverted some configs for create.
+
 ## [0.7.2] - 22.03.2024
 ### Changes
 - Fix some bugs with LAN game (by removing SimpleLogin).
