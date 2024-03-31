@@ -2,7 +2,7 @@
 
 const registerCreateAdditionsRecipes = (event) => {
     
-    // Удаление рецептов мода railways 
+    // Удаление рецептов мода CreateAdditions 
     event.remove({ mod: 'createaddition' });
 
     // Прокатный стан
