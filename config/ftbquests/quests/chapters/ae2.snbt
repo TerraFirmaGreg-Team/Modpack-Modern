@@ -753,7 +753,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -765,7 +765,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 11.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -903,7 +903,7 @@
 				item: "ae2:wireless_booster"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 12.5d
 		}
 		{
@@ -915,7 +915,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.5d
 			y: 12.5d
 		}
 		{
@@ -931,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: 11.5d
 		}
 		{
@@ -943,7 +943,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: 13.5d
 		}
 		{
@@ -960,7 +960,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.5d
 			y: 12.5d
 		}
 		{
@@ -984,7 +984,7 @@
 				item: "ae2wtlib:magnet_card"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 14.0d
 		}
 		{
@@ -996,7 +996,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: 12.5d
 		}
 		{
@@ -1422,6 +1422,77 @@
 			}]
 			x: -6.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["3E0EE1623F16A15A"]
+			description: [
+				"You can now remotely expand your AE2 network if you're looking to move bases."
+				""
+				"The &3Quantum Tunnel&r is no slouch to craft, so you'll need to work for it if you want it!"
+			]
+			icon: "ae2:quantum_link"
+			id: "58B4B9873997D6F7"
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					count: 2L
+					id: "2064A73C2FBBCCA9"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0DF81D63AB5514C6"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "158EE6B2D8A7B8E8"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+			]
+			title: "Quantum Tunnel"
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3E0EE1623F16A15A"]
+			id: "25FE0782973A96D2"
+			shape: "circle"
+			tasks: [{
+				id: "6D238C05611750C7"
+				item: "ae2netanalyser:network_analyser"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2054E9812A64BF56"]
+			id: "4094F7E8D29022FE"
+			shape: "circle"
+			tasks: [{
+				id: "7472E401840C645A"
+				item: "ae2insertexportcard:export_card"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2054E9812A64BF56"]
+			id: "6FC91BD5B11C9F11"
+			shape: "circle"
+			tasks: [{
+				id: "6672BE456A8B5B10"
+				item: "ae2insertexportcard:insert_card"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
 		}
 	]
 	title: "&6HV&r - AE2"
