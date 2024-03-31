@@ -2068,4 +2068,25 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('12x ae2:fluix_crystal')
         .duration(40)
         .EUt(18)
+
+    //wooden Crank
+    event.shaped('ae2:crank', [
+        'AAA',
+        'A  ',
+        'B  '
+    ], {
+        A: '#forge:rods/wooden',
+        B: 'gtceu:steel_plate'
+    }).id('tfg:crafting/crank')
+
+    //charger
+    event.shaped('ae2:charger', [
+        'ABA',
+        'C  ',
+        'ABA'
+    ], {
+        A: '#forge:plates/stainless_steel',
+        B: '#forge:plates/copper',
+        C: '#forge:plates/fluix'
+    }).id('tfg:crafting/charger')
 }

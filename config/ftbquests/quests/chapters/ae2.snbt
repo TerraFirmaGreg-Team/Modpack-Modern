@@ -915,7 +915,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: 12.5d
 		}
 		{
@@ -931,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: 11.5d
 		}
 		{
@@ -943,7 +943,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: 13.5d
 		}
 		{
@@ -960,7 +960,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.5d
 			y: 12.5d
 		}
 		{
@@ -996,7 +996,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: 12.5d
 		}
 		{
@@ -1493,6 +1493,30 @@
 			}]
 			x: 3.5d
 			y: 13.5d
+		}
+		{
+			dependencies: ["694C8A2A90A70052"]
+			description: [
+				""
+				"The charger can charge items from AE2 "
+				""
+				"&4It cannot charge certus quartz!&r"
+			]
+			id: "557E5939AB2271BC"
+			tasks: [
+				{
+					id: "69C54A70AABA8651"
+					item: { Count: 2b, id: "ae2:charger" }
+					type: "item"
+				}
+				{
+					id: "2EA8D5288CAFC97A"
+					item: "ae2:crank"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 10.5d
 		}
 	]
 	title: "&6HV&r - AE2"

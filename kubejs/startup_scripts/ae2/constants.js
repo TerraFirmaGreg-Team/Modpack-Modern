@@ -27,8 +27,6 @@ global.AE2_DISABLED_ITEMS = [
 
     // Блоки
     'ae2:vibration_chamber',
-    'ae2:crank',
-    'ae2:charger',
     'ae2:spatial_anchor',
     'ae2:inscriber',
     'ae2:growth_accelerator',
