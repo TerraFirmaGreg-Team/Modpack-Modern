@@ -4,21 +4,26 @@
 	#Allowed range: 10-300
 	#Default: 18-55
 	DefaultFocalRange = "18-55"
-	#Focal Range per lens. Item ID and min-max (or single number for primes) focal lengths. Separated by a comma. Allowed range: 10-300
-	#Note: to attach the custom lens to the camera - it needs to be added to '#exposure:lenses' item tag.
-	#Default: ["minecraft:spyglass,55-200"]
-	LensFocalRanges = ["minecraft:spyglass,55-200"]
 
 [Lightroom]
-	#Time in ticks to print black and white photograph.
+	#Time in ticks to print black and white photograph. Default: 80
 	#Range: > 1
 	BlackAndWhitePrintTime = 80
-	#Time in ticks to print color photograph.
+	#Time in ticks to print color photograph. Default: 200
 	#Range: > 1
 	ColorPrintTime = 200
-	#Amount of experience awarded per printed Photograph. Set to 0 to disable.
-	#Range: 0 ~ 32767
-	ExperiencePerPrint = 4
+	#Time in ticks to print one channel of a chromatic photograph. Default: 120
+	#Range: > 1
+	ChromaticPrintTime = 120
+	#Amount of experience awarded per printed black and white Photograph. Set to 0 to disable. Default: 2
+	#Range: 0 ~ 99
+	ExperiencePerPrintBW = 2
+	#Amount of experience awarded per printed color Photograph. Set to 0 to disable. Default: 4
+	#Range: 0 ~ 99
+	ExperiencePerPrintColor = 4
+	#Amount of experience awarded per printed chromatic Photograph (when all three channels have been printed). Set to 0 to disable. Default: 5
+	#Range: 0 ~ 99
+	ExperiencePerPrintChromatic = 5
 
 [Integration]
 

@@ -233,10 +233,6 @@ machines:
   # Default: false
   highTierContent: false
 
-  # Whether search for recipes asynchronously.
-  #  Default: true
-  asyncRecipeSearching: false
-
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
@@ -278,6 +274,10 @@ tools:
   # Random chance for electric tools to take actual damage
   # Default: 10%
   rngDamageElectricTools: 10
+
+  # Amount of blocks that can be spray painted at once
+  # Default: 16
+  sprayCanChainLength: 16
 
 # Config options for Mod Compatibility
 compat:

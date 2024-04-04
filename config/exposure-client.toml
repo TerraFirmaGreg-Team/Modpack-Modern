@@ -31,6 +31,12 @@
 [FileSaving]
 	#When the Photograph is viewed in UI, image will be saved to 'exposures' folder as a png.
 	SavePhotographs = true
-	#When saving, exposures will be organized into a folders corresponding to current world name.
+	#When saving, exposures will be placed into folder corresponding to current world name.
 	WorldNameSubfolder = true
+	#Saved exposures will be enlarged by this multiplier.
+	#Given the default exposure size of 320 - this will produce:
+	#320/640/960/1280px png image. Be careful with larger frame sizes.
+	#Default: X2
+	#Allowed Values: X1, X2, X3, X4
+	Size = "X2"
 
