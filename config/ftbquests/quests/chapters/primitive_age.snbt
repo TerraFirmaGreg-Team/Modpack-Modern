@@ -2250,16 +2250,7 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:bronze_dust"
-			}
+			icon: "gtceu:bronze_dust"
 			id: "2DEEDED2F21E60B9"
 			tasks: [
 				{
@@ -2444,16 +2435,7 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:bismuth_bronze_dust"
-			}
+			icon: "gtceu:bismuth_bronze_dust"
 			id: "515141734CA1A002"
 			subtitle: "Cheap and shiny"
 			tasks: [
@@ -2507,16 +2489,7 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:black_bronze_dust"
-			}
+			icon: "gtceu:black_bronze_dust"
 			id: "69B4B677A27121CF"
 			subtitle: "Expensive and black"
 			tasks: [
@@ -3281,16 +3254,7 @@
 			]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:nickel_dust"
-			}
+			icon: "gtceu:nickel_dust"
 			id: "27AC71D2454EF0FC"
 			tasks: [
 				{
@@ -3621,16 +3585,7 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:rose_gold_dust"
-			}
+			icon: "gtceu:rose_gold_dust"
 			id: "483D7FE6554FDC96"
 			tasks: [
 				{
@@ -3665,16 +3620,7 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:brass_dust"
-			}
+			icon: "gtceu:brass_dust"
 			id: "758B2176634789F6"
 			tasks: [
 				{
@@ -3712,16 +3658,7 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:sterling_silver_dust"
-			}
+			icon: "gtceu:sterling_silver_dust"
 			id: "0E0C589495AA31E8"
 			tasks: [
 				{
