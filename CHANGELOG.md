@@ -1,8 +1,13 @@
 # Changelog
 
-## [0.7.3] - ?
-### Changes
-- Reverted some configs for create.
+## [0.8.0] - ?
+### Features
+- ?
+### Fixes
+- Исправлен баг, когда оповещение об использовании экспериментальных настроек все равно появлялось перед созданием нового мира.
+### New Mods
+- YeetusExperimentus
+- BetterFoliage
 
 ## [0.7.2] - 22.03.2024
 ### Changes
