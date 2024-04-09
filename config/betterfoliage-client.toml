@@ -1,0 +1,26 @@
+
+[general]
+	#Attempts per tick to spawn a particle
+	#Range: > 0
+	particleAttempts = 2
+	#Horizontal and Vertical distance particles will spawn from
+	#Range: > 0
+	particleDistance = 15
+	#Enable Soul Particles?
+	souls = true
+	#Enable Leaf Particles?
+	leaves = true
+	#Enable Snowballs?
+	snowballs = true
+	#Determines the size of the leaves cache. Number of models cached per leaf block will be the number you input to the third power. Bigger cache = more RAM, but more variation and less z-fighting as a result
+	#Range: 5 ~ 20
+	leavesCacheSize = 7
+	#Determines the max distance leaves block fluff can deviate from the actual block. 0.0 means no distance variation (all fluff is in the middle of the block)
+	#Range: 0.0 ~ 7.0
+	leavesVariationDistance = 2.75
+	#Force Forge Lighting Pipeline? (should be true when not using Optifine)
+	forceForgeLighting = true
+	#Inverse of the rarity of the extra grass. Increase the value to make it less common.
+	#Range: > 1
+	extraGrassRarity = 2
+

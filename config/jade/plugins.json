@@ -1,4 +1,7 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -50,20 +53,6 @@
     "potion_effects": true,
     "painting": true,
     "chiseled_bookshelf": true
-  },
-  "firmalife": {
-    "oven_top": true,
-    "solar_drier": true,
-    "string": true,
-    "vat": true,
-    "oven_bottom": true,
-    "fruit_tree_sapling": true,
-    "jarbnet": true,
-    "drying_mat": true,
-    "tumbler": true,
-    "hanger": true,
-    "cheese": true,
-    "shelf": true
   },
   "tfc": {
     "bloomery": true,
@@ -145,6 +134,10 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
   "corpse": {
     "corpse": true
   },
@@ -162,5 +155,10 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "display.content": true,
+    "display.status": true
   }
 }

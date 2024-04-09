@@ -1,0 +1,13 @@
+{
+  "invertCrouchMining": false,
+  "soundSettings": {
+    "enabled": true,
+    "startVolume": 0.7,
+    "endVolume": 0.7
+  },
+  "animation": {
+    "fallAnimLength": 2.5,
+    "bounceAngleHeight": 10.0,
+    "bounceAnimLength": 1.0
+  }
+}

@@ -1,0 +1,14 @@
+#Should tumbleweeds drop items upon destroying.
+#The drop list is configurable using loot tables (using vanilla data packs or a mod like CraftTweaker).
+enableDrops = true
+#Chance a tumbleweed spawns in a chunk.
+#Spawner blocks and allowed biomes are customizable using data packs through block and biome tags.
+#Tumbleweeds can spawn in non-solid blocks with a solid block below and sky access above.
+spawnChance = 0.5
+#Maximum number of tumbleweeds existing per player (technically per 17x17 loaded chunks).
+maxPerPlayer = 8
+#Should tumbleweeds destroy crops they land upon.
+damageCrops = true
+#Drop items only when destroyed by player (normally also drops on lava and cactus damage, for example).
+dropOnlyByPlayer = false
+

@@ -1,0 +1,77 @@
+{
+    // Allow players to set custom flag images for their rockets.
+    "allowFlagImages": true,
+    // Allow rockets to be launched from any dimension, even if it's not considered a planet.
+    "launchAnywhere": false,
+    /*
+     * The random tick speed for breaking plants, torches, freezing water, etc. on planets.
+     * Type: Integer
+     */
+    "planetRandomTickSpeed": 20,
+    // Always tick every planet chunk for things like freezing water, breaking plants, etc., regardless of whether the chunk can tick randomly or not. This has a small performance impact.
+    "forcePlanetTick": false,
+    /*
+     * The y level where rockets should leave the dimension and enter space.
+     * Type: Integer
+     */
+    "atmosphereLeave": 600,
+    // A comma-separated list of planet IDs that should be hidden from the planets screen. e.g. minecraft:overworld,ad_astra:moon,ad_astra:mars,ad_astra:venus,ad_astra:mercury,ad_astra:glacio
+    "disabledPlanets": "",
+    // Disables oxygen damage.
+    "disableOxygen": false,
+    // Disables temperature damage.
+    "disableTemperature": false,
+    // Uses normal gravity for all planets.
+    "disableGravity": false,
+    // An Air Vortex is created when an oxygenated structure breaks its seal, causing every entity inside to rapidly get sucked out. This setting disables that.
+    "disableAirVortexes": false,
+    "cryoFreezer": {
+        // Type: Long
+        "ironTierMaxEnergyInOut": 100,
+        // Type: Long
+        "steelTierMaxEnergyInOut": 150,
+        // Type: Long
+        "deshTierMaxEnergyInOut": 250,
+        // Type: Long
+        "ostrumTierMaxEnergyInOut": 500,
+        // Type: Long
+        "ironTierEnergyCapacity": 10000,
+        // Type: Long
+        "steelTierEnergyCapacity": 20000,
+        // Type: Long
+        "deshTierEnergyCapacity": 50000,
+        // Type: Long
+        "ostrumTierEnergyCapacity": 100000,
+        // Type: Long
+        "steelTierFluidCapacity": 3000,
+        // Type: Long
+        "deshTierFluidCapacity": 5000,
+        // Type: Long
+        "ostrumTierFluidCapacity": 10000,
+        // Type: Long
+        "coalGeneratorEnergyGenerationPerTick": 20,
+        // Type: Long
+        "etrionicBlastFurnaceBlastingEnergyPerItem": 10,
+        // Type: Long
+        "waterPumpEnergyPerTick": 20,
+        // Type: Long
+        "waterPumpFluidGenerationPerTick": 50,
+        // Type: Long
+        "energizerEnergyCapacity": 2000000,
+        /*
+         * The maximum number of blocks that an oxygen distributor and gravity normalizer can distribute to.
+         * Type: Integer
+         */
+        "maxDistributionBlocks": 6000,
+        /*
+         * The tick rate (20 ticks = 1 second) at which the oxygen distributor and gravity normalizer will recalculate the distribution area.
+         * Type: Integer
+         */
+        "distributionRefreshRate": 100,
+        /*
+         * The tick rate (20 ticks = 1 second) at which cables and fluid pipes will recalculate their connections.
+         * Type: Integer
+         */
+        "pipeRefreshRate": 50
+    }
+}

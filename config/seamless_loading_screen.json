@@ -1,0 +1,20 @@
+{
+  "time": 80,
+  "fade": 20,
+  "tintColor": -14606047,
+  "tintStrength": 0.3,
+  "enableScreenshotBlur": false,
+  "screenshotBlurStrength": 1.0,
+  "screenshotBlurQuality": 5.0,
+  "playSoundEffect": false,
+  "soundEffect": "minecraft:ui.toast.out",
+  "soundPitch": 1.0,
+  "soundVolume": 1.0,
+  "resolution": "Normal",
+  "disableCamera": true,
+  "archiveScreenshots": false,
+  "updateWorldIcon": false,
+  "blacklistedAddresses": [
+    "play.wynncraft.com"
+  ]
+}

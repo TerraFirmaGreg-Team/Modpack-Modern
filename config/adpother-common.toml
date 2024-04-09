@@ -1,0 +1,75 @@
+#Global rate of emissions for all pollutants and sources on the server
+#Range: 0.0 ~ 10.0
+globalEmissionRate = 1.0
+#Experience gain after replacing the filter material in a respirator or a vacuum bag
+#Range: -10 ~ 10
+filterReplacingExpGain = 0
+#Maximum number of gas entities present at the same time in a chunk
+#Range: 0 ~ 256
+maxGasEntitiesInChunk = 10
+
+[GasExplosions]
+	#Enables/disables gas explosions caused by ignition sources
+	ignitionSources = true
+	#Enables/disables gas explosions caused by emitters (machines) when they produce pollution and it has no way to go
+	enclosedEmitters = true
+	#Whether gas explosions set surrounding blocks on fire
+	setOnFire = true
+	#The way gas explosions affect surroundings
+	#Allowed Values: NONE, BLOCK, MOB, TNT
+	explosionInteraction = "TNT"
+	#Maximum gas blocks that can be involved in an explosive chain reaction
+	#Range: 0 ~ 2048
+	maxChainLength = 512
+
+[EmissionSources]
+	#Rate of emissions from this source
+	#Range: 0.0 ~ 10.0
+	Breakables = 1.0
+	#Rate of emissions from this source
+	#Range: 0.0 ~ 10.0
+	Entities = 1.0
+	#Rate of emissions from this source
+	#Range: 0.0 ~ 10.0
+	WallTorches = 0.0
+	#Rate of emissions from this source
+	#Range: 0.0 ~ 10.0
+	DroppedTorches = 0.0
+	#Rate of emissions from this source
+	#Range: 0.0 ~ 10.0
+	Campfires = 0.0
+	#Rate of emissions from this source
+	#Range: 0.0 ~ 10.0
+	BurntItems = 1.0
+	#Enables / disables emissions from this source
+	Furnaces = true
+	#Enables / disables emissions from this source
+	BurntBlocks = true
+	#Enables / disables emissions from this source
+	Explosion = true
+	#Enables / disables emissions from this source
+	LavaTouchingWater = true
+	#Enables / disables emissions from this source
+	HostileMobDying = true
+	#Enables / disables emissions from this source
+	HostileMobBurning = true
+	#Enables / disables emissions from this source
+	PlayerEating = true
+	#Enables / disables emissions from this source
+	PlayerBurning = true
+	#Enables / disables emissions from this source
+	AnimalBurning = true
+	#Enables / disables emissions from this source
+	AnimalFeeding = true
+	#Enables / disables emissions from this source
+	AnimalDying = true
+	#Enables / disables emissions from this source
+	PlayerDying = true
+
+	[EmissionSources.Mods]
+		#Rate of emissions from this source
+		#Range: 0.0 ~ 10.0
+		ImmersiveVehicles = 1.0
+		#Enables / disables emissions from this source
+		CreateInWorldProcessing = true
+

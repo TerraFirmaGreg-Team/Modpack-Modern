@@ -1,0 +1,22 @@
+#Enable/Disable debug mode
+debug = false
+
+[SmokeContainers]
+	#Maximum length of the vent pipe for smoke or gas transmition
+	#Range: 1 ~ 64
+	maxVentPipeLength = 32
+	#Maximum distance from vent to the gas block to be sucked in
+	#Range: 1 ~ 16
+	ventReachDistance = 4
+	#Maximum amount of blocks that will be checked when searching for multiblock boundaries
+	#Range: 1 ~ 512
+	maxBlocksInMultiblock = 81
+	#Strength of the airflow created in the chimney by a connected exhaust pump
+	#Range: 0 ~ 10
+	pumpedChimneyAirflow = 1
+	#List of hoppers in the following format: blockID, suctionRange
+	#Where suctionRange is the radius of the cylindrical area above the hopper within which the pollution will be sucked in.
+	#The height of this area is always 3 blocks.
+	#Range: 1 ~ 64
+	suctionHoppers = ["minecraft:hopper, 8", "brickhopper:brick_hopper, 6", "goldenhopper:golden_hopper, 12", "littlelogistics:rapid_hopper, 12"]
+

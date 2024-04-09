@@ -159,6 +159,30 @@
 	#SIDE: CLIENT
 	"Render not placed blocks of stargate" = true
 
+	[Visual."Biome overlay biome matches"]
+		#This check comes last (after block is directly under sky (except Nether) and temperature is high enough).
+		#You can disable the temperature check by setting it to a negative value.
+		#Format: "modid:biomename", for example: 
+		#"minecraft:dark_forest"
+		#"minecraft:forest"
+		#SIDE: SERVER/CLIENT
+		NORMAL = []
+		FROST = []
+		MOSSY = ["minecraft:jungle", "minecraft:jungle_hills", "minecraft:jungle_edge", "minecraft:mutated_jungle", "minecraft:mutated_jungle_edge"]
+		AGED = []
+		SOOTY = ["minecraft:hell"]
+
+	[Visual."Biome overlay override blocks"]
+		#Format: "modid:blockid", for example: 
+		#"minecraft:red_wool"
+		#"minecraft:stone"
+		#SIDE: SERVER/CLIENT
+		NORMAL = ["minecraft:stone"]
+		FROST = ["minecraft:ice"]
+		MOSSY = ["minecraft:vine"]
+		AGED = ["minecraft:cobblestone"]
+		SOOTY = ["minecraft:coal_block"]
+
 [PointOfOrigins]
 	#SIDE: CLIENT
 	"Enable different Point Of Origins for MW gate" = true

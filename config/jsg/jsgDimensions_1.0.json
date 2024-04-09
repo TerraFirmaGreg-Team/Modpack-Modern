@@ -1,13 +1,49 @@
 {
-  "ae2:spatial_storage": {
-    "name": "ae2:spatial_storage",
-    "distance": 12,
+  "ad_astra:glacio_orbit": {
+    "name": "ad_astra:glacio_orbit",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:moon_orbit": {
+    "name": "ad_astra:moon_orbit",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "jsg:abydos": {
+    "name": "jsg:abydos",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:earth_orbit": {
+    "name": "ad_astra:earth_orbit",
+    "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "gcyr:mercury_orbit": {
+    "name": "gcyr:mercury_orbit",
+    "distance": 10,
     "groups": [],
     "milkyWayOrigins": {}
   },
   "gcyr:mars": {
     "name": "gcyr:mars",
     "distance": 13,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "gcyr:mercury": {
+    "name": "gcyr:mercury",
+    "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:mars_orbit": {
+    "name": "ad_astra:mars_orbit",
+    "distance": 11,
     "groups": [],
     "milkyWayOrigins": {}
   },
@@ -19,9 +55,35 @@
     ],
     "milkyWayOrigins": {}
   },
+  "ae2:spatial_storage": {
+    "name": "ae2:spatial_storage",
+    "distance": 12,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "minecraft:the_end": {
+    "name": "minecraft:the_end",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {
+      "NORMAL": 1
+    }
+  },
   "gcyr:venus_orbit": {
     "name": "gcyr:venus_orbit",
     "distance": 6,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:moon": {
+    "name": "ad_astra:moon",
+    "distance": 6,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:venus": {
+    "name": "ad_astra:venus",
+    "distance": 10,
     "groups": [],
     "milkyWayOrigins": {}
   },
@@ -31,9 +93,51 @@
     "groups": [],
     "milkyWayOrigins": {}
   },
+  "ad_astra:mercury": {
+    "name": "ad_astra:mercury",
+    "distance": 8,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "gcyr:mars_orbit": {
+    "name": "gcyr:mars_orbit",
+    "distance": 7,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:mercury_orbit": {
+    "name": "ad_astra:mercury_orbit",
+    "distance": 10,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:venus_orbit": {
+    "name": "ad_astra:venus_orbit",
+    "distance": 9,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "gcyr:luna": {
+    "name": "gcyr:luna",
+    "distance": 9,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
   "gcyr:overworld_orbit": {
     "name": "gcyr:overworld_orbit",
     "distance": 5,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "ad_astra:mars": {
+    "name": "ad_astra:mars",
+    "distance": 11,
+    "groups": [],
+    "milkyWayOrigins": {}
+  },
+  "gcyr:luna_orbit": {
+    "name": "gcyr:luna_orbit",
+    "distance": 14,
     "groups": [],
     "milkyWayOrigins": {}
   },
@@ -47,41 +151,9 @@
       "NORMAL": 2
     }
   },
-  "gcyr:mercury_orbit": {
-    "name": "gcyr:mercury_orbit",
-    "distance": 10,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "minecraft:the_end": {
-    "name": "minecraft:the_end",
-    "distance": 10,
-    "groups": [],
-    "milkyWayOrigins": {
-      "NORMAL": 1
-    }
-  },
-  "gcyr:luna_orbit": {
-    "name": "gcyr:luna_orbit",
-    "distance": 14,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "gcyr:luna": {
-    "name": "gcyr:luna",
-    "distance": 9,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "gcyr:mercury": {
-    "name": "gcyr:mercury",
-    "distance": 5,
-    "groups": [],
-    "milkyWayOrigins": {}
-  },
-  "gcyr:mars_orbit": {
-    "name": "gcyr:mars_orbit",
-    "distance": 7,
+  "ad_astra:glacio": {
+    "name": "ad_astra:glacio",
+    "distance": 11,
     "groups": [],
     "milkyWayOrigins": {}
   }

@@ -3,7 +3,7 @@
 	#
 	# Should TFC forcefully skip the 'Experimental World Generation' warning screen when creating or loading a world?
 	# Note: this also speeds up loading a world by about 2x.
-	ignoreExperimentalWorldGenWarning = true
+	ignoreExperimentalWorldGenWarning = false
 	#
 	# Enables a series of additional debugging tooltips, displayed information, and logging.
 	enableDebug = false
