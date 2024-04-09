@@ -25,7 +25,7 @@
 		[general.types.wood_type]
 
 			[general.types.wood_type.gtceu]
-				rubber = true
+				rubber = false
 
 			[general.types.wood_type.tfc]
 				acacia = true
@@ -57,7 +57,7 @@
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.gtceu]
-				rubber = true
+				rubber = false
 
 			[general.types.leaves_type.ad_astra]
 				glacian = true

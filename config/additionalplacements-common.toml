@@ -35,7 +35,7 @@
 	#Blacklist for blocks to not have generated placement variants
 	blacklist = []
 	#Blacklist for mods to not have generated placement variants
-	mod_blacklist = ["@mcw_tfc_aio"]
+	mod_blacklist = ["mcw_tfc_aio", "framedblocks"]
 	#Whitelist for blocks from blacklisted mods to still have generated placement variants
 	mod_block_whitelist = []
 
