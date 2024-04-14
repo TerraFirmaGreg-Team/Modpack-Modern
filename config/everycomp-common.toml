@@ -49,18 +49,10 @@
 				white_cedar = true
 				willow = true
 
-			[general.types.wood_type.ad_astra]
-				aeronos = true
-				strophar = true
-				glacian = true
-
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.gtceu]
 				rubber = false
-
-			[general.types.leaves_type.ad_astra]
-				glacian = true
 
 	#Disables specific entries
 	[general.entries]
