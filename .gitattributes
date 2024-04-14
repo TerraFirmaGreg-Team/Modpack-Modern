@@ -1,2 +1,6 @@
-# Default to LF for all files
-* text=auto eol=lf
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=autolf
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.json text eol=lf
