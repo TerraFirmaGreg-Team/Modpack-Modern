@@ -18,7 +18,7 @@
     "use_fog_occlusion": true,
     "use_block_face_culling": true,
     "use_compact_vertex_format": true,
-    "use_translucent_face_sorting": false,
+    "use_translucent_face_sorting": true,
     "use_no_error_g_l_context": true
   },
   "notifications": {
