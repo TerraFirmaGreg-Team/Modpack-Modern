@@ -1,0 +1,8 @@
+{
+    "filters": [
+        "/tfc:ore/[^*]+/[^*]+/",
+        "/firmalife:ore/[^*]+/[^*]+/",
+        "ae2:facade",
+        "chiselandbits:block_bit"
+    ]
+}

@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/cod",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/tropical_fish",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/calamari",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/shellfish",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/bluegill",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/crappie",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/lake_trout",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/largemouth_bass",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/rainbow_trout",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/salmon",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tfc:food/smallmouth_bass",
+          "weight": 8
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/fish"
+}

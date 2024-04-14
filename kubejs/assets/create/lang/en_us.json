@@ -1,0 +1,22 @@
+{
+    "block.create.andesite_bars": "Metal Bars",
+    "block.create.andesite_belt_funnel": "Metal Belt Funnel",
+    "block.create.andesite_casing": "Metal Casing",
+    "block.create.andesite_door": "Metal Door",
+    "block.create.andesite_encased_cogwheel": "Metal Encased Cogwheel",
+    "block.create.andesite_encased_large_cogwheel": "Metal Encased Large Cogwheel",
+    "block.create.andesite_encased_shaft": "Metal Encased Shaft",
+    "block.create.andesite_funnel": "Metal Funnel",
+    "block.create.andesite_ladder": "Metal Ladder",
+    "block.create.andesite_pillar": "Metal Pillar",
+    "block.create.andesite_scaffolding": "Metal Scaffolding",
+    "block.create.andesite_tunnel": "Metal Tunnel",
+
+    "create.ponder.andesite_tunnel.header": "Using Metal Tunnels",
+    "create.ponder.andesite_tunnel.text_1": "Metal Tunnels can be used to cover up your belts",
+    "create.ponder.andesite_tunnel.text_2": "Whenever an Metal Tunnel has connections to the sides...",
+    "create.ponder.belt_casing.text_1": "Brass or Metal Casing can be used to decorate Mechanical Belts",
+    "create.ponder.brass_funnel.text_1": "Metal Funnels can only ever extract single items.",
+    "create.ponder.cogwheel_casing.text_1": "Brass or Metal Casing can be used to decorate Cogwheels",
+    "create.ponder.shaft_casing.text_1": "Brass or Metal Casing can be used to decorate Shafts"
+}

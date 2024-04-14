@@ -1,0 +1,215 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 145,
+    "density": 0.25,
+    "min_y": 60,
+    "max_y": 210,
+    "size": 50,
+    "random_name": "surface_sphalerite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:rhyolite_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:rhyolite_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:basalt_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:basalt_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:andesite_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:andesite_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:dacite_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:dacite_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:quartzite_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:quartzite_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:slate_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:slate_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:phyllite_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:phyllite_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:schist_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:schist_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:gneiss_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:gneiss_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_sulfur_ore",
+            "weight": 55
+          },
+          {
+            "block": "gtceu:marble_sphalerite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:marble_pyrite_ore",
+            "weight": 5
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 60,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_sphalerite",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}

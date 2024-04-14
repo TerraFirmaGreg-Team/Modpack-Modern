@@ -1,0 +1,106 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 280,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 26,
+    "size": 28,
+    "random_name": "deep_sapphire",
+    "height": 8,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_almandine_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:rhyolite_pyrope_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:rhyolite_sapphire_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:rhyolite_green_sapphire_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_almandine_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:basalt_pyrope_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_sapphire_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:basalt_green_sapphire_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_almandine_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:andesite_pyrope_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:andesite_sapphire_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:andesite_green_sapphire_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_almandine_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:dacite_pyrope_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:dacite_sapphire_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dacite_green_sapphire_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

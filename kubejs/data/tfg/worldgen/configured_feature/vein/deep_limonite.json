@@ -1,0 +1,59 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 240,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 30,
+    "size": 32,
+    "random_name": "deep_limonite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_goethite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:marble_yellow_limonite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:marble_hematite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:marble_malachite_ore",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:limestone_goethite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:limestone_yellow_limonite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:limestone_hematite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:limestone_malachite_ore",
+            "weight": 20
+          }
+        ]
+      }
+    ]
+  }
+}
