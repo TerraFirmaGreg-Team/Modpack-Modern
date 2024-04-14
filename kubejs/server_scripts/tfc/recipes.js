@@ -1390,8 +1390,27 @@ const registerTFCRecipes = (event) => {
         .id('tfc:anvil/blue_steel_ingot')
 
     // Cast iron -> Raw Iron Bloom
-    event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
-        .id('tfc:bloomery/raw_iron_bloom')
+    event.custom({
+        type: "tfc:bloomery",
+        result: {
+            item: "tfc:raw_iron_bloom"
+        },
+        fluid: {
+            ingredient: "gtceu:iron",
+            amount: 144
+        },
+        catalyst: {
+            ingredient: {
+                item: "minecraft:charcoal"
+            },
+            count: 2
+        },
+        duration: 15000
+    })
+    
+    // TODO: Ждем обнову мода на TFC + KJS?
+    // event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
+    //     .id('tfc:bloomery/raw_iron_bloom')
 
     // Cast Iron -> Pig Iron
     event.recipes.tfc.blast_furnace(Fluid.of('gtceu:pig_iron', 1), '#tfc:flux', Fluid.of('gtceu:iron', 1))
