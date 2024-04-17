@@ -2,6 +2,7 @@
 
 const registerTFCItemTags = (event) => {
     // Теги для соответствия инструментов TFC и GT
+    
     event.add('tfc:swords', '#minecraft:swords')
     event.add('tfc:pickaxes', '#minecraft:pickaxes')
     event.add('tfc:axes', '#minecraft:axes')
@@ -9,7 +10,7 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:hoes', '#minecraft:hoes')
     
     event.add('tfc:hammers', '#forge:tools/hammers')
-    event.add('tfc:knives', '#forge:tools/knives')
+    // event.add('tfc:knives', '#forge:tools/knives') // TODO: Почему это вызывает удаление тегов у ножей грега? Я устал, я правда устал...
     event.add('tfc:saws', '#forge:tools/saws')
     event.add('tfc:scythes', '#forge:tools/scythes')
     
