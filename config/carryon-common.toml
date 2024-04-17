@@ -24,7 +24,7 @@
 	#Allow all blocks to be picked up, not just Tile Entites. White/Blacklist will still be respected.
 	pickupAllBlocks = false
 	#Whether Blocks and Entities slow the creative player down when carried
-	slownessInCreative = true
+	slownessInCreative = false
 	#Whether hostile mobs should be able to picked up in survival mode
 	pickupHostileMobs = false
 	#Larger Entities slow down the player more
@@ -32,11 +32,11 @@
 	#Allow babies to be carried even when adult mob is blacklisted (or not whitelisted)
 	allowBabies = false
 	#Use Whitelist instead of Blacklist for Blocks
-	useWhitelistBlocks = false
+	useWhitelistBlocks = true
 	#Use Whitelist instead of Blacklist for Entities
-	useWhitelistEntities = false
+	useWhitelistEntities = true
 	#Use Whitelist instead of Blacklist for Stacking
-	useWhitelistStacking = false
+	useWhitelistStacking = true
 	#Whether the player can hit blocks and entities while carrying or not
 	hitWhileCarrying = false
 	#Whether the player drops the carried object when hit or not
@@ -50,16 +50,16 @@
 	#Usually all the block state information is retained when placing a block that was picked up. But some information is changed to a modified property, like rotation or orientation. In this list, add additional properties that should NOT be saved and instead be updated when placed. Format: modid:block[propertyname]. Note: You don't need to add an entry for every subtype of a same block. For example, we only add an entry for one type of slab, but the change is applied to all slabs.
 	placementStateExceptions = ["minecraft:chest[type]", "minecraft:stone_button[face]", "minecraft:vine[north,east,south,west,up]", "minecraft:creeper_head[rotation]", "minecraft:glow_lichen[north,east,south,west,up,down]", "minecraft:oak_sign[rotation]", "minecraft:oak_trapdoor[half]"]
 	#Whether Players can be picked up. Creative players can't be picked up in Survival Mode
-	pickupPlayers = true
+	pickupPlayers = false
 	#Whether players in Survival Mode can pick up unbreakable blocks. Creative players always can.
 	pickupUnbreakableBlocks = false
 
 [whitelist]
 	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
 	#Entities that CAN be picked up (useWhitelistEntities must be true)
-	allowedEntities = []
+	allowedEntities = ["tfc:turkey", "tfc:dog", "tfc:isopod", "tfc:lobster", "tfc:frog", "tfc:penguin", "tfc:turtle", "tfc:horseshoe_crab", "tfc:crayfish", "tfc:grouse", "tfc:pheasant", "tfc:peafowl", "tfc:rat", "tfc:cat", "tfc:chicken", "tfc:duck", "tfc:quail", "tfc:rabbit"]
 	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
-	allowedBlocks = []
+	allowedBlocks = ["#forge:chests/wooden", "#storagedrawers:drawers"]
 	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)
 	allowedStacking = []
 

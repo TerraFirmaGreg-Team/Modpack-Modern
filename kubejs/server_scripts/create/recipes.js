@@ -143,10 +143,14 @@ const registerCreateRecipes = (event) => {
         .EUt(2)
 
     // Малая шестерня
-    event.shapeless('create:cogwheel', [
-        'create:shaft',
-        '#forge:gears/wood'
-    ]).id('tfg:create/shapeless/cogwheel')
+    event.shaped('create:cogwheel', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'gtceu:treated_wood_plate',
+        B: 'create:shaft'
+    }).id('tfg:create/shapeless/cogwheel')
 
     // Большая шестерня
     event.shaped('create:large_cogwheel', [
@@ -154,8 +158,8 @@ const registerCreateRecipes = (event) => {
         'ABA',
         ' A ' 
     ], {
-        A: '#forge:gears/wood',
-        B: 'create:shaft'
+        A: 'gtceu:treated_wood_plate',
+        B: 'create:cogwheel'
     }).id('tfg:create/shaped/large_cogwheel')
 
     // Внутриблочный двигатель цепи

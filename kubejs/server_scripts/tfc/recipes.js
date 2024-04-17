@@ -1406,7 +1406,7 @@ const registerTFCRecipes = (event) => {
             count: 2
         },
         duration: 15000
-    })
+    }).id('tfc:bloomery/raw_iron_bloom')
     
     // TODO: Ждем обнову мода на TFC + KJS?
     // event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)

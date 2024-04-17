@@ -2367,47 +2367,20 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["41DBE0B47E760DC4"]
-			description: [
-				"The &bPrimitive Water Pump&r is an easy way to automatically generate water for your boilers. It doesn't physically pump water from the world, instead generating it &einternally&r. Therefore, you don't need access to a &3body of water&r to make use of it. However, the humidity of the biome does apply a negligible bonus to its water production."
-				""
-				"It's a multiblock, so &5consult JEI&r for the structure. Multiblocks can be previewed in-world if you sneak right-click the \"&a&ocontroller&r\" block with an empty hand (in this case, the controller block is the &bPrimitive Water Pump&r itself)."
-				""
-				"&6Small tip for you:&r no need to worry about your base's biome for now, as your boilers will need very little water to keep up."
-				"{@pagebreak}"
-				"The &cOutput Hatch&r is where water will be generated. You can make it face up or down to auto-output water into your pipes. When you reach &7LV&r or &bMV&r, you can use an Output Hatch from either tier to further boost the Pump's output."
-				""
-				"&2Reminder:&r Use a Wrench to rotate GregTech blocks (sneak right-click)."
-				""
-				"&l&3Lore:&r&o This Multiblock was ported from GT IMPACT, a classic 1.7.10 GregTech modpack."
+			dependencies: [
+				"41DBE0B47E760DC4"
+				"07415D6305C3B1D2"
 			]
+			description: [""]
 			id: "1D623D93EEDD3C67"
 			size: 2.0d
 			subtitle: "There's no such thing as \"free\" water"
-			tasks: [
-				{
-					id: "24CCB2BF08C5400A"
-					item: "gtceu:primitive_pump"
-					type: "item"
-				}
-				{
-					id: "1EC1919EF0D22F00"
-					item: "gtceu:pump_hatch"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "4AA6B1931455F656"
-					item: "gtceu:pump_deck"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "31D4CB90405080DF"
-					item: "gtceu:treated_wood_frame"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 8L
+				id: "1124F6F7E0E161BF"
+				item: "gtceu:treated_wood_plate"
+				type: "item"
+			}]
 			title: "Primitive Water Pump"
 			x: 32.5d
 			y: 11.0d

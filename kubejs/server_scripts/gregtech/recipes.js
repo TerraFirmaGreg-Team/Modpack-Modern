@@ -845,54 +845,6 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
-    //#region Primitive Pump
-
-    // Pump Deck
-    event.shaped('gtceu:pump_deck', [
-        'ABA', 
-        'CDE'  
-    ], {
-        A: '#forge:screws/wrought_iron',
-        B: 'gtceu:treated_wood_planks',  
-        C: '#forge:tools/hammers',
-        D: '#tfg:rock_slabs',
-        E: '#forge:tools/screwdrivers'
-    }).id('gtceu:shaped/pump_deck')
-
-    // Pump Hatch
-    event.shaped('gtceu:pump_hatch', [
-        'ABC', 
-        'DED',
-        'FBF'  
-    ], {
-        A: '#forge:screws/wrought_iron',
-        B: '#forge:rings/wrought_iron',
-        C: '#forge:tools/screwdrivers',
-        D: 'gtceu:treated_wood_planks',
-        E: 'gtceu:wood_large_fluid_pipe',
-        F: '#tfg:rock_slabs'
-
-    }).id('gtceu:shaped/pump_hatch')
-
-    // Primitive Pump
-    event.shaped('gtceu:primitive_pump', [
-        'ABC', 
-        'DEF',
-        'GHG'  
-    ], {
-        A: '#forge:rings/wrought_iron',
-        B: 'gtceu:wood_normal_fluid_pipe',
-        C: '#forge:screws/wrought_iron',
-        D: '#forge:rotors/wrought_iron',
-        E: 'gtceu:treated_wood_planks',
-        F: '#forge:tools/screwdrivers',
-        G: '#tfg:rock_slabs',
-        H: 'gtceu:wood_large_fluid_pipe'
-
-    }).id('gtceu:shaped/primitive_pump')
-
-    //#endregion
-
     //#region CokeOven
 
     // Coke Oven
@@ -1087,6 +1039,14 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    // Удаление рецепта беск. воды кавера
+    event.remove('gtceu:assembler/cover_infinite_water')
+
+    // Удаление рецептов помпы
+    event.remove('gtceu:shaped/pump_deck')
+    event.remove('gtceu:shaped/pump_hatch')
+    event.remove('gtceu:shaped/primitive_pump')
+
     // Удаление рецептов связанных с Primitive Blast Furnace
     event.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
     event.remove({ id: 'gtceu:macerator/macerate_primitive_blast_furnace' })
@@ -1128,6 +1088,13 @@ const registerGTCEURecipes = (event) => {
         B: '#forge:tools/saws'
     }).id('gtceu:shaped/plank_to_wooden_shape')
     
+    // Creosote-Treated Wood Planks -> Treated Wood Pulp
+    event.recipes.gtceu.macerator('tfg:gtceu/nether_star_dust')             
+        .itemInputs('gtceu:treated_wood_planks')
+        .itemOutputs('gtceu:treated_wood_dust')
+        .duration(120)
+        .EUt(4)
+
     // Деревянная шестерня
     event.shaped('gtceu:wood_gear', [
         ' A ',

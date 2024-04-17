@@ -550,6 +550,30 @@
 			x: -6.5d
 			y: 3.5d
 		}
+		{
+			dependencies: ["222A4146EF7750E9"]
+			id: "5375840441A5621D"
+			tasks: [
+				{
+					id: "5A642029F133D847"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6353947817385853"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "5917A6575B41A825"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
 	]
 	title: "Mechanical Age"
 }
