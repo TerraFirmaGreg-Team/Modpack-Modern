@@ -5,23 +5,34 @@ const registerCreateConnectedRecipes = (event) => {
     event.remove({ id: 'create_connected:crafting/kinetics/item_silo' })
     event.remove({ id: 'create_connected:crafting/kinetics/sequenced_pulse_generator' })
     event.remove({ id: 'create_connected:crafting/kinetics/empty_fan_catalyst' })
+    event.remove({ id: 'create_connected:crafting/kinetics/overstress_clutch' })
 
+    event.remove({ id: 'create_connected:crafting/palettes/cherry_window' })
+    event.remove({ id: 'create_connected:crafting/palettes/cherry_window_pane' })
     
     //centrifugal_clutcha
     event.shapeless('create_connected:centrifugal_clutch', [
         'create:andesite_casing',
+        '#forge:plates/wrought_iron',
         'create:speedometer',
         'create:shaft',
-        '#forge:plates/wrought_iron',
     ]).id('tfg:create_connected/centrifugal_clutch')
 
-    //centrifugal_clutcha
+    //freewheel_clutch'
     event.shapeless('create_connected:freewheel_clutch', [
         'create:andesite_casing',
         '#forge:plates/wrought_iron',
         'create:shaft',
         'create:cogwheel',
     ]).id('tfg:create_connected/freewheel_clutch')
+
+    //overstress_clutch
+    event.shapeless('create_connected:overstress_clutch', [
+        'create:andesite_casing',
+        '#forge:plates/wrought_iron',
+        'create:shaft',
+        'create:electron_tube',
+    ]).id('tfg:create_connected/overstress_clutch')
 
     //item_silo
     event.shaped('create_connected:item_silo', [
