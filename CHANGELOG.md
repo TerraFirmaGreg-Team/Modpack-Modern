@@ -37,13 +37,78 @@
 - Исправлен декрафт LV машин в красную/синюю сталь вместо обычной стали (в работе).
 - Исправлен рецепт формы кирпичей из GTCEu (в работе).
 - ...
+### Updated mods
+- Clumps 12.0.0.3 -> 12.0.0.4
+- CraftPresence 2.3.5 -> 2.3.8
+- CreativeCore 2.11.25 -> 2.11.26
+- Cucumber 7.0.7 -> 7.0.8
+- FirmaCivilization 0.2.2 -> 0.2.7
+- Firmalife 2.0.9 -> 2.1.0
+- ImmediatelyFast 1.2.10 -> 1.2.11
+- ItemPhysicLite 1.6.1 -> 1.6.4
+- PlayerRevive 2.0.24 -> 2.0.25
+- Steam_Rails 1.5.3 -> 1.6.3
+- TerraFirmaCraft 3.1.9 -> 3.2.2
+- XaerosWorldMap 1.38.1 -> 1.38.4
+- Xaeros_Minimap 24.0.1 -> 24.1.1
+- ae2wtlib 15.2.2 -> 15.2.3
+- appliedenergistics2 15.0.23 -> 15.1.1
+- cc-tweaked 1.110.0 -> 1.110.2
+- chisels-and-bits 1.4.147 -> 1.4.148
+- curios 5.7.2 -> 5.8.1
+- do_a_barrel_roll 3.5.3 -> 3.5.5
+- embeddium 0.3.9 -> 0.3.14
+- embeddiumplus 1.2.5 -> 1.2.7
+- emi 1.1.3 -> 1.1.4
+- exposure 1.4.1 -> 1.5.1
+- ftb-xmod-compat 2.1.0 -> 2.1.1
+- gcyr 0.1.3 -> 0.1.6
+- gtceu 1.1.3.b -> 1.2.0.a
+- kubejs 2001.6.4-build.138 -> 2001.6.5-build.7
+- kubejs_tfc 1.1.0 -> 1.1.2
+- modernfix 5.14.0 -> 5.16.1
+- moonlight 2.11.9 -> 2.11.12
+- open-parties-and-claims 0.20.4 -> 0.22.0
+- PacketFixer 1.2.8 -> 1.3.1
+- radium 0.12.2 -> 0.12.3
+- sophisticatedbackpacks 3.20.3.1034 -> 3.20.5.1039
+- sophisticatedcore 0.6.11.578 -> 0.6.18.597
+- u_team_core 5.1.4.269 -> 5.1.4.289
 ### New Mods
+- AE2NetworkAnalyzer
+- AEInfinityBooster
+- ae2insertexportcard
+- ExtendedAE
+- Copycats
+- TFCDesirePaths
+- TFCHotOrNot
+- TFCTumbleweed
+- TFCVesselTooltip
+- FramedBlocks
+- Tumbleweed
+- tfc_support_indicator
+- supermartijn642configlib
+- supermartijn642corelib
+- storagedrawers
+- Showcaseitem
+- Seamless-loading-screen
+- Pandalib
+- Mcw_tfc_aio
+- Megacells
+- Precisionprospecting
+- yet-another-config-lib
+- JSG
+- Glodium
+- Everycomp
+- Fallingtrees
 - YeetusExperimentus
 - BetterFoliage
-- ...
+- Carryon
+- Clientcrafting
+- Corals-tfc
+- Create_connected
 ### Removed mods
 - Bobby
-- ...
 
 ## [0.7.2] - 22.03.2024
 ### Changes
