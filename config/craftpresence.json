@@ -151,7 +151,7 @@
     "stripTranslationFormatting": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
-    "configKeyCode": 48
+    "configKeyCode": -1
   },
   "displaySettings": {
     "presenceData": {
@@ -173,10 +173,7 @@
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png",
-      "SpeeeDCraft": "https://mc-heads.net/avatar/9d9c39ad4d3a4e6191c73d327f5dcf51",
-      "Xikaro": "https://mc-heads.net/avatar/57b3dfb5f8a649e28b544e4ffc63256f",
-      "modern.terrafirmagreg.su": "https://api.mcsrvstat.us/icon/modern.terrafirmagreg.su"
+      "default": "https://via.placeholder.com/256.png"
     },
     "dynamicVariables": {
       "default": "Example Text",
