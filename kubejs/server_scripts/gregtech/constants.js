@@ -23,3 +23,15 @@ global.GTCEU_ANVIL_TOOL_TYPES = [
     GTToolType.BUTCHERY_KNIFE,
     // GTToolType.PLUNGER
 ];
+
+global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS = {
+    "tfc:swords" : GTToolType.SWORD,
+    "tfc:pickaxes" : GTToolType.PICKAXE,
+    "tfc:axes" : GTToolType.AXE,
+    "tfc:shovels" : GTToolType.SHOVEL,
+    "tfc:hoes" : GTToolType.HOE,
+    "tfc:hammers" : GTToolType.MINING_HAMMER,
+    "tfc:knives" : GTToolType.KNIFE,
+    "tfc:saws" : GTToolType.SAW,
+    "tfc:scythes" : GTToolType.SCYTHE
+};

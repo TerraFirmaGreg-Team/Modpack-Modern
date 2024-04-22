@@ -2,26 +2,17 @@
 
 const registerTFCItemTags = (event) => {
     // Теги для соответствия инструментов TFC и GT
-    event.add('tfc:swords', '#minecraft:swords')
-    event.add('tfc:pickaxes', '#minecraft:pickaxes')
-    event.add('tfc:axes', '#minecraft:axes')
-    event.add('tfc:shovels', '#minecraft:shovels')
-    event.add('tfc:hoes', '#minecraft:hoes')
     
-    event.add('tfc:hammers', '#forge:tools/hammers')
-    event.add('tfc:knives', '#forge:tools/knives')
-    event.add('tfc:saws', '#forge:tools/saws')
-    event.add('tfc:scythes', '#forge:tools/scythes')
-    
-    event.add('tfc:usable_on_tool_rack', '#tfc:axes')
-    event.add('tfc:usable_on_tool_rack', '#tfc:hammers')
-    event.add('tfc:usable_on_tool_rack', '#tfc:hoes')
-    event.add('tfc:usable_on_tool_rack', '#tfc:knives')
-    event.add('tfc:usable_on_tool_rack', '#tfc:pickaxes')
-    event.add('tfc:usable_on_tool_rack', '#tfc:saws')
-    event.add('tfc:usable_on_tool_rack', '#tfc:scythes')
-    event.add('tfc:usable_on_tool_rack', '#tfc:shovels')
-    event.add('tfc:usable_on_tool_rack', '#tfc:swords')
+    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+        if (material.hasProperty(PropertyKey.TOOL)) {
+            for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
+                var tool = $ToolHelper.get(value, material)
+                if (!tool.isEmpty()) event.add(key, tool.getId())
+
+                event.add('tfc:usable_on_tool_rack', `#${key}`)
+            }
+        }
+    })
 
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mining_hammers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/wrenches')
@@ -48,15 +39,15 @@ const registerTFCItemTags = (event) => {
     // Мечи
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_sword')
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_sword')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_bronze_sword')
+    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_sword')
     // Топоры
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_axe')
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_axe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_bronze_axe')
+    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_axe')
     // Косы
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_scythe')
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_scythe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_bronze_scythe')
+    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_scythe')
 
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')
