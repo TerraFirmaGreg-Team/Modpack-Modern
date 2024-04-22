@@ -23,6 +23,7 @@ screenshots/*
 shaderpacks/*
 chiselsandbits/*
 .vscode/
+.kubejsd/
 
 # Extensions
 **/*.log
