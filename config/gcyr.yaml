@@ -58,3 +58,12 @@ rocket:
   # Default: 48 buckets.
   anywhereFuelAmount: 48000
 
+client:
+  # Offset of the oxygen bar from the left side of the screen.
+  # Default: 32
+  oxygenBarX: 32
+
+  # Offset of the oxygen bar from the bottom of the screen.
+  # Default: 32
+  oxygenBarY: 32
+

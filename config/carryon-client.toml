@@ -1,0 +1,7 @@
+#If the front of the Tile Entities should face the player or should face outward
+facePlayer = false
+#Arms should render on sides when carrying. Set to false if you experience issues with mods that replace the player model (like MoBends, etc)
+renderArms = true
+#Model Overrides based on NBT or Meta. Advanced users only! Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Model-Override-Config
+modelOverrides = ["minecraft:redstone_wire->(item)minecraft:redstone", "minecraft:bamboo_sapling->(block)minecraft:bamboo", "minecraft:candle_cake->(block)minecraft:cake"]
+

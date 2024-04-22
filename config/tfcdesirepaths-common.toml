@@ -1,0 +1,24 @@
+
+#You can change the block compaction (paths) chance via a datapack, as this uses recipes,
+#this means you can create custom desire path recipes, e.g. coal to diamond blocks, and set a custom chance
+#
+[general]
+	#When enabled, prints debug values to console
+	enableDebug = false
+	#When enabled, all animals create paths (possibly performance intensive depending on the amount)
+	allMobs = true
+	#Should carts be able to compact blocks and create desire paths? True = enabled
+	toggleCarts = true
+	#When enabled, vegetation like tall grass or loose rocks gets destroyed
+	destroyVegetation = true
+	#The minimum speed the player should move at, in order for blocks to compact.
+	#Player sneaking is about 0.06, walking is about 0.215 and sprinting is above 0.26.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	playerSpeedThreshold = 0.15
+	#The minimum speed a mob should move at, in order for blocks to compact
+	#Range: 0.0 ~ 1.7976931348623157E308
+	mobSpeedThreshold = 0.15
+	#The factor that affects the chance of path creation. Higher value equals higher chance
+	#Range: 1.0 ~ 1.7976931348623157E308
+	cartCompactFactor = 5.0
+

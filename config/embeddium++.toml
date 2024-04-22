@@ -29,15 +29,15 @@
 		#Toggles JREI item rendering until searching
 		#Increases performance a little bit and cleans your screen when you don't want to use it
 		hideJREI = false
-		#Toggles FastChest feature
-		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
-		fastChests = false
-		#Toggles FastBeds feature
-		fastBeds = true
 		#Toggles Minecraft Fonts shadows
 		#Depending of the case may increase performance
 		#Gives a flat style text
 		fontShadows = true
+		#Toggles FastChest feature
+		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
+		fastChest = false
+		#Toggles FastBeds feature
+		fastBed = false
 
 		[embeddiumplus.performance.distanceCulling]
 
@@ -105,8 +105,14 @@
 		#Range: 0 ~ 512
 		cloudsHeight = 256
 		#Toggle fog feature
-		#Fog was a vanilla feature, toggling off may increases performance
+		#Fog was a vanilla feature
 		fog = true
+		#Clean my skies
+		#Blue band was a vanilla feature, toggle off will show sky color directly
+		blueBand = true
+		#Do not show me your name
+		#disables nametag rendering for players and entities
+		disableNameTagRendering = false
 
 		[embeddiumplus.quality.darkness]
 			#Configure fog brightness on nether when darkness is enabled

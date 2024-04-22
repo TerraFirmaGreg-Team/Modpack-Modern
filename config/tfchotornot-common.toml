@@ -1,0 +1,41 @@
+
+[general]
+	#This sets whether an item that contains a fluid will have a tooltip that they are gaseous, too hot or too cold.
+	enableTooltips = true
+	#This sets whether gaseous effect for a fluid should be enabled.
+	enableGaseous = true
+	#If true, then items that melt into a fluid will create a puddle below you. Potentially dangerous if this is a molten metal, lava or equivalent.
+	toggleFluidPuddle = true
+	#If true, players yeet hot or cold items from their hands.
+	yeet = true
+	#This sets the temperature when a hot object should start burning the player (in celsius).
+	#Range: > -2147483648
+	hotTemperature = 300
+	#This sets the temperature when a cold object should add effects to the player (in celsius).
+	#Range: > -2147483648
+	coldTemperature = -20
+	#This sets the temperature when a hot fluid should start burning the player (in kelvin).
+	#Range: > -2147483648
+	hotFluidTemperature = 1300
+	#This sets the temperature when a cold fluid should add effects to the player (in kelvin).
+	#Range: > -2147483648
+	coldFluidTemperature = 273
+	#Modifier for how much the offhand item should heat up when holding hot items. Holding multiple hot items will heat your insulating items faster!
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	itemTemperatureModifier = 2.0
+	#How often the heat of your tongs, mittens or potholders should increase. Higher value -> slower. Too high and items won't heat up.
+	#Range: > 1
+	itemHeatTimeInterval = 1
+	#How often the durability of your tongs, mittens or potholders should take damage. Higher value -> slower. Holding multiple hot items will damage your insulating items faster!
+	#Range: > 1
+	itemDamageTimeInterval = 10
+	#Durability for wooden tongs.
+	#Range: > 0
+	woodenTongsDurability = 250
+	#Durability for potholders.
+	#Range: > 0
+	potholderDurability = 600
+	#Durability for mittens.
+	#Range: > 0
+	mittenDurability = 1600
+

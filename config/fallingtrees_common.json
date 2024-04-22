@@ -1,0 +1,102 @@
+{
+  "disableCrouchMining": false,
+  "disableExtraToolDamage": false,
+  "disableExtraFoodExhaustion": false,
+  "treeLifetimeLength": 4.0,
+  "dynamicMiningSpeed": {
+    "disable": false,
+    "speedMultiplication": 0.5,
+    "maxSpeedMultiplication": 16.0
+  },
+  "trees": {
+    "standardTree": {
+      "algorithm": {
+        "maxLeavesRadius": 10,
+        "maxLogAmount": 256,
+        "shouldFallOnMaxLogAmount": false,
+        "shouldIgnorePersistentLeaves": true
+      },
+      "logFilter": {
+        "whitelistedTags": [
+          "minecraft:logs"
+        ],
+        "whitelist": [],
+        "blacklist": []
+      },
+      "leavesFilter": {
+        "whitelistedTags": [
+          "minecraft:leaves"
+        ],
+        "whitelist": [],
+        "blacklist": []
+      },
+      "extraBlockFilter": {
+        "whitelistedTags": [],
+        "whitelist": [
+          "minecraft:vine",
+          "minecraft:bee_nest",
+          "minecraft:cocoa"
+        ],
+        "blacklist": []
+      },
+      "enabled": true,
+      "onlyFallWithRequiredTool": false,
+      "allowedToolFilter": {
+        "whitelistedTags": [
+          "minecraft:axes"
+        ],
+        "whitelist": [],
+        "blacklist": []
+      }
+    },
+    "verticalTree": {
+      "filter": {
+        "whitelistedTags": [],
+        "whitelist": [
+          "minecraft:cactus",
+          "minecraft:bamboo"
+        ],
+        "blacklist": []
+      },
+      "enabled": true,
+      "onlyFallWithRequiredTool": false,
+      "allowedToolFilter": {
+        "whitelistedTags": [],
+        "whitelist": [],
+        "blacklist": []
+      }
+    },
+    "chorusTree": {
+      "enabled": true,
+      "onlyFallWithRequiredTool": false,
+      "allowedToolFilter": {
+        "whitelistedTags": [],
+        "whitelist": [],
+        "blacklist": []
+      }
+    },
+    "mushroomTree": {
+      "stemFilter": {
+        "whitelistedTags": [
+          "minecraft:logs"
+        ],
+        "whitelist": [],
+        "blacklist": []
+      },
+      "capFilter": {
+        "whitelistedTags": [
+          "minecraft:leaves"
+        ],
+        "whitelist": [],
+        "blacklist": []
+      },
+      "enabled": true,
+      "onlyFallWithRequiredTool": false,
+      "allowedToolFilter": {
+        "whitelistedTags": [],
+        "whitelist": [],
+        "blacklist": []
+      }
+    }
+  }
+}

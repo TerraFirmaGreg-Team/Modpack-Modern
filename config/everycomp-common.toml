@@ -1,0 +1,74 @@
+
+[general]
+	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs
+	creative_tab = true
+	#Makes dynamic assets that are generated depend on loaded resource packs. Turn off to make them just use vanilla assets
+	assets_depend_on_loaded_packs = true
+	#Creates a debug folder inside your instance directory where all the dynamically generated resources will be saved
+	save_debug_resources = false
+	#Sends a packet to verify all dependencies mod versions are the same on connect. DIsable if it causes issues
+	mod_version_check_packet = false
+	#Don't touch unless you are told to
+	debug_packet = false
+
+	[general.tooltips]
+		#Enabled tooltips showing which mod an EC item is from
+		mod_origin_enabled = true
+		#Enabled tooltips showing which block type an EC item is made from
+		block_type_enabled = true
+		#Only show on advanced settings
+		show_on_advanced_tooltips = false
+
+	#Disables certain types
+	[general.types]
+
+		[general.types.leaves_type]
+
+			[general.types.leaves_type.gtceu]
+				rubber = false
+
+		[general.types.wood_type]
+
+			[general.types.wood_type.gtceu]
+				rubber = false
+
+			[general.types.wood_type.tfc]
+				acacia = true
+				ash = true
+				aspen = true
+				birch = true
+				blackwood = true
+				chestnut = true
+				douglas_fir = true
+				hickory = true
+				kapok = true
+				mangrove = true
+				maple = true
+				oak = true
+				palm = true
+				pine = true
+				rosewood = true
+				sequoia = true
+				spruce = true
+				sycamore = true
+				white_cedar = true
+				willow = true
+
+	#Disables specific entries
+	[general.entries]
+
+		[general.entries.wood_type]
+
+			[general.entries.wood_type.storagedrawers]
+				full_drawers_2 = true
+				half_drawers_1 = true
+				full_drawers_4 = true
+				half_drawers_4 = true
+				trim = true
+				half_drawers_2 = true
+				full_drawers_1 = true
+
+			[general.entries.wood_type.create]
+				window_pane = true
+				window = true
+

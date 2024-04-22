@@ -54,7 +54,8 @@
     "matterCannon": 200000
   },
   "worldGen": {
-    "spawnPressesInMeteorites": true
+    "spawnPressesInMeteorites": true,
+    "spawnFlawlessOnly": false
   },
   "wireless": {
     "wirelessBaseCost": 8.0,
@@ -73,7 +74,9 @@
     "ForgeEnergy": 0.5,
     "UsageMultiplier": 1.0,
     "GridEnergyStoragePerNode_comment": "How much energy can the internal grid buffer storage per node attached to the grid.",
-    "GridEnergyStoragePerNode": 25.0
+    "GridEnergyStoragePerNode": 25.0,
+    "CrystalResonanceGeneratorRate_comment": "How much energy a crystal resonance generator generates per tick.",
+    "CrystalResonanceGeneratorRate": 20.0
   },
   "Condenser": {
     "MatterBalls": 256,

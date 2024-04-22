@@ -1,0 +1,92 @@
+
+[general]
+	#Whether ghost blocks are shown when you are holding a framed block
+	showGhostBlocks = true
+	#If true, an alternate renderer will be used for the placement preview. May solve issues with certain shaders
+	altGhostRenderer = false
+	#Whether certain framed blocks should show fancy hitboxes
+	fancyHitboxes = true
+	#If false only full block faces of framed blocks will be culled, if true all outer faces of famed blocks can be culled
+	detailedCulling = true
+	#If true, the UV remapping will use discrete steps to avoid floating point errors
+	discreteUVSteps = true
+	#Configures how detailed connected textures are supported.
+	#Use anything above FULL_EDGE at your own risk (performance impact, unexpected behaviour)!
+	#If NONE, all connected textures support is disabled
+	#If FULL_FACE, connected textures are supported on full faces
+	#If FULL_EDGE, connected textures are supported as above and on faces whose connecting edge covers the full block width
+	#If DETAILED, connected textures are supported as above and on most faces when interacting with other framed blocks
+	#Allowed Values: NONE, FULL_FACE, FULL_EDGE, DETAILED
+	conTexMode = "FULL_FACE"
+	#Configures the verbosity of messages displayed when a block cannot be used as a camo
+	#If NONE, no message will be shown
+	#If DEFAULT, a message will be shown when the block has a BlockEntity and isn't explicitly allowed or the block is explicitly disallowed
+	#If DETAILED, a message will be shown as above or when a block is non-solid and not explicitly allowed
+	#Allowed Values: NONE, DEFAULT, DETAILED
+	camoMessageVerbosity = "DEFAULT"
+	#If true, ambient occlusion is applied to framed blocks which glow from applied glowstone dust.
+	#If false, the vanilla behavior of disabling AO for light-emitting blocks is used
+	forceAoOnGlowingBlocks = true
+	#If true, all possible recipes of the Framing Saw will be added to EMI, else only the permutations using the Framed Cube will be added
+	#This setting only has an effect when EMI is installed
+	showAllRecipePermutationsInEmi = true
+	#Configures in which cases a framed block without a camo gets a solid model
+	#If NEVER, the default frame texture will always be used
+	#If DEFAULT, certain blocks will use the default frame texture with a solid background texture
+	#If ALWAYS, all blocks will use the default frame texture with a solid background texture
+	#Allowed Values: NEVER, DEFAULT, ALWAYS
+	solidFrameMode = "DEFAULT"
+	#If enabled, non-wooden buttons and pressure plates will show a material overlay when a camo is applied
+	#Requires resource reload to take effect
+	showButtonPlateTypeOverlay = true
+	#If enabled, special cube blocks will show a type overlay when a camo is applied
+	#Requires resource reload to take effect
+	showSpecialCubeTypeOverlay = true
+
+[overlay]
+	#If set to HIDDEN, the State Lock overlay will be completely hidden
+	#If set to ICON, the State Lock overlay will only show an icon
+	#If set to DETAILED, the State Lock overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	stateLockMode = "DETAILED"
+	#If set to HIDDEN, the Toggle Waterloggable overlay will be completely hidden
+	#If set to ICON, the Toggle Waterloggable overlay will only show an icon
+	#If set to DETAILED, the Toggle Waterloggable overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	toggleWaterlogMode = "DETAILED"
+	#If set to HIDDEN, the Toggle Slope Face overlay will be completely hidden
+	#If set to ICON, the Toggle Slope Face overlay will only show an icon
+	#If set to DETAILED, the Toggle Slope Face overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	toggleYSlopeMode = "DETAILED"
+	#If set to HIDDEN, the Reinforcement overlay will be completely hidden
+	#If set to ICON, the Reinforcement overlay will only show an icon
+	#If set to DETAILED, the Reinforcement overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	reinforcedMode = "DETAILED"
+	#If set to HIDDEN, the Prism Offset overlay will be completely hidden
+	#If set to ICON, the Prism Offset overlay will only show an icon
+	#If set to DETAILED, the Prism Offset overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	prismOffsetMode = "DETAILED"
+	#If set to HIDDEN, the Collapsible Block Split Line overlay will be completely hidden
+	#If set to ICON, the Collapsible Block Split Line overlay will only show an icon
+	#If set to DETAILED, the Collapsible Block Split Line overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	splitLineMode = "DETAILED"
+	#If set to HIDDEN, the One-Way Window overlay will be completely hidden
+	#If set to ICON, the One-Way Window overlay will only show an icon
+	#If set to DETAILED, the One-Way Window overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	oneWayWindowMode = "DETAILED"
+	#If set to HIDDEN, the Item Frame Background overlay will be completely hidden
+	#If set to ICON, the Item Frame Background overlay will only show an icon
+	#If set to DETAILED, the Item Frame Background overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	itemFrameBackgroundMode = "DETAILED"
+	#If set to HIDDEN, the Camo Rotation overlay will be completely hidden
+	#If set to ICON, the Camo Rotation overlay will only show an icon
+	#If set to DETAILED, the Camo Rotation overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	camoRotationMode = "DETAILED"
+

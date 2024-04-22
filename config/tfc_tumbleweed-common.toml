@@ -1,0 +1,35 @@
+
+[General]
+	#
+	# Ticks between tumbleweed spawn attempts.
+	#Range: > 0
+	ticksBetween = 75
+	#
+	# How many attempts tumbleweeds have to spawn.
+	#Range: > 0
+	spawnAttempts = 15
+	#
+	# Tumbleweed spawn cahnce. Higher value = higher chance.
+	#Range: 0.0 ~ 1.0
+	spawnChance = 0.7
+	#
+	# The amount of tumbleweeds, that are allowed to be around a player, for a tumbleweed to spawn.
+	#Range: > 0
+	maxPerPlayer = 32
+	#
+	# Minimum rainfall for tumbleweed to spawn.
+	#Range: 0.0 ~ 500.0
+	minRainfall = 0.0
+	#
+	# Maximum rainfall for tumbleweed to spawn.
+	#Range: 0.0 ~ 500.0
+	maxRainfall = 100.0
+	#
+	# Factor that is multiplied to the wind speed applied to the tumbleweed. Higher value results in faster moving tumbleweed, while lower results in slower. If negative, the tumbleweed will move opposite the wind direction. This config only does something, if the Weather 2 mod is present!
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	windSpeedFactor = 0.075
+	#
+	# The minimum required wind speed for tumbleweeds to start tumbling about.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	windThreshold = 0.15
+

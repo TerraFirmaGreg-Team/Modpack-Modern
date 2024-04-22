@@ -1,0 +1,38 @@
+#.
+#Migrate copycats to Create: Copycats+ when they receive a block update
+migrateCopycatsOnBlockUpdate = true
+#.
+#Migrate copycats to Create: Copycats+ when their block entities are initialized
+migrateCopycatsOnInitialize = true
+
+#.
+#Enable/disable features. Values on server override clients
+[features]
+	#.
+	bamboo_window = true
+	item_silo = true
+	inverted_clutch = true
+	empty_fan_catalyst = true
+	parallel_gearbox = true
+	cherry_window = true
+	centrifugal_clutch = true
+	copycat_slab = true
+	overstress_clutch = true
+	brake = true
+	copycat_block = true
+	copycat_fence_gate = true
+	copycat_stairs = true
+	brass_gearbox = true
+	copycat_vertical_step = true
+	copycat_wall = true
+	six_way_gearbox = true
+	encased_chain_cogwheel = true
+	sequenced_pulse_generator = true
+	freewheel_clutch = true
+	shear_pin = true
+	inverted_gearshift = true
+	linked_transmitter = true
+	copycat_beam = true
+	copycat_board = true
+	copycat_fence = true
+
