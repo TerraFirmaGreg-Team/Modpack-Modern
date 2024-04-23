@@ -23,7 +23,7 @@
 - Отключена примитивная помпа из GTCEu, вы должны теперь использовать механическую из Create.
 - Отключены бесконечное выкачивание воды из любых источников воды, теперь установлено базовое значение в 1млн. блоков для бесконечного источника, веселитесь.
 - Отключен рецепт кавера на бесконечную воду, ха-ха.
-- Настроен CarryOn (в работе).
+- Настроен CarryOn.
 - Добавлены рецепты/квесты для StorageDrawers (в работе).
 - Добавлены рецепты/квесты для AE2InfinityCard (в работе).
 - Добавлены рецепты/квесты для ExtendedAE2 (в работе).
@@ -91,7 +91,6 @@
 - AEInfinityBooster
 - ae2insertexportcard
 - ExtendedAE
-- Copycats
 - TFCDesirePaths
 - TFCHotOrNot
 - TFCTumbleweed
@@ -109,7 +108,6 @@
 - Megacells
 - Precisionprospecting
 - yet-another-config-lib
-- JSG
 - Glodium
 - Everycomp
 - Fallingtrees
@@ -121,6 +119,7 @@
 - Create_connected
 ### Removed mods
 - Bobby
+- Starlight
 
 
 ## [0.7.2] - 22.03.2024
