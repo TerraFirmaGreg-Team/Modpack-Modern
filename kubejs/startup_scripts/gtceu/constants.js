@@ -17,6 +17,12 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:lp_steam_alloy_smelter',
     'gtceu:lp_steam_rock_crusher',
 
+    // Примитивная помпа
+    'gtceu:infinite_water_cover',
+    'gtceu:pump_deck', 
+    'gtceu:pump_hatch', 
+    'gtceu:primitive_pump',
+
     // Другое
     'gtceu:flint_mortar',
     'gtceu:flint_knife',
@@ -39,6 +45,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 
     'gtceu:rubber_planks',
+    
 ];
 
 global.GTCEU_HIDED_ITEMS = [
