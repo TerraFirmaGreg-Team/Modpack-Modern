@@ -1,7 +1,6 @@
 // priority: 0
 
 const registerGTCEURecipes = (event) => {
-    
     //#region Выход: Удобрение
 
     // В обычном миксере
@@ -178,7 +177,7 @@ const registerGTCEURecipes = (event) => {
     //#region Выход: Капля резины
 
     // Из латекса
-    event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('gtceu:latex', 1000), 5000, 300)
+    event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 5000, 300)
         .itemOutput('gtceu:sticky_resin')
         .id('tfg:pot/sticky_resin')
 
@@ -1342,12 +1341,11 @@ const registerGTCEURecipes = (event) => {
     //#region Рецепты, которые итерируются по всем материалам
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-        
         //#region Рецепты инструментов
         
         if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
             global.GTCEU_ANVIL_TOOL_TYPES.forEach(toolType => {
-                let toolStack = $ToolHelper.get(toolType, material)
+                let toolStack = ToolHelper.get(toolType, material)
 
                 event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
                     'A',
@@ -1443,7 +1441,7 @@ const registerGTCEURecipes = (event) => {
 
         let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
 
-        if (material.hasFlag($MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) 
+        if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) 
         {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
@@ -1479,7 +1477,7 @@ const registerGTCEURecipes = (event) => {
         }
 
         // Прокатка стержней
-        if (material.hasFlag($MaterialFlags.GENERATE_ROD) && material != GTMaterials.Wood)
+        if (material.hasFlag(MaterialFlags.GENERATE_ROD) && material != GTMaterials.Wood)
         {
             let rodStack = ChemicalHelper.get(TagPrefix.rod, material, 2)
 

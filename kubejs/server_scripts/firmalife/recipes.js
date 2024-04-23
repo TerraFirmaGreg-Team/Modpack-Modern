@@ -651,7 +651,7 @@ const registerFirmaLifeRecipes = (event) => {
           }
         },
         "input_fluid": {
-          "ingredient": 'gtceu:latex',
+          "ingredient": 'tfg:latex',
           "amount": 1000
         },
         "output_item": {

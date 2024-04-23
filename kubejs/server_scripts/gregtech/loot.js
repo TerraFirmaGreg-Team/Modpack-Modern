@@ -6,7 +6,7 @@ const registerGTCEULoots = (event) => {
         GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
             if (material.hasProperty(PropertyKey.ORE)) {
                 
-                let stoneTypeMaterial = GTMaterials.get(stoneType)
+                let stoneTypeMaterial = TFGHelpers.getMaterial(stoneType)
                 let stoneTypeDust = null
 
                 if (stoneTypeMaterial != null) stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)

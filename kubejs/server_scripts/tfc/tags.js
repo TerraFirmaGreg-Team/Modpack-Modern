@@ -6,7 +6,7 @@ const registerTFCItemTags = (event) => {
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         if (material.hasProperty(PropertyKey.TOOL)) {
             for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
-                var tool = $ToolHelper.get(value, material)
+                var tool = ToolHelper.get(value, material)
                 if (!tool.isEmpty()) event.add(key, tool.getId())
 
                 event.add('tfc:usable_on_tool_rack', `#${key}`)
@@ -286,15 +286,15 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_ingot_mold', 'gtceu:black_steel')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:blue_steel')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:pig_iron')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:high_carbon_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:high_carbon_black_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:high_carbon_red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:high_carbon_blue_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:weak_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:weak_red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:weak_blue_steel')
-    event.add('tfc:usable_in_ingot_mold', 'gtceu:unknown')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:pig_iron')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_black_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_red_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_blue_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_red_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_blue_steel')
+    event.add('tfc:usable_in_ingot_mold', 'tfg:unknown')
 
     event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
@@ -311,9 +311,9 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_tool_head_mold', 'gtceu:bronze')
 
     //
-    event.add('tfc:usable_in_pot', 'gtceu:latex')
-    event.add('tfc:usable_in_barrel', 'gtceu:latex')
-    event.add('tfc:usable_in_wooden_bucket', 'gtceu:latex')
+    event.add('tfc:usable_in_pot', 'tfg:latex')
+    event.add('tfc:usable_in_barrel', 'tfg:latex')
+    event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
 
     //
     event.add('tfc:usable_in_barrel', 'gtceu:creosote')

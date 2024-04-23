@@ -22,11 +22,11 @@ const registerTreeTapRecipes = (event) => {
         },
         processing_time: 9600,
         metal_result: {
-            item: "gtceu:latex_bucket"
+            item: "tfg:latex_bucket"
         },
         wooden_result: {
             item: "tfc:wooden_bucket",
-            nbt: "{fluid: {FluidName: \"gtceu:latex\", Amount: 1000}}"
+            nbt: "{fluid: {FluidName: \"tfg:latex\", Amount: 1000}}"
         },
         life_cycle: [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0],
         collect_bucket: true,

@@ -5,7 +5,7 @@ const registerComputerCraftData = (event) => {
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         TURTLE_TOOL_TYPES.forEach(type => {
-            let toolStack = $ToolHelper.get(type, material)
+            let toolStack = ToolHelper.get(type, material)
 
             if (!toolStack.isEmpty()) {
                 
