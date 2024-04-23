@@ -21,11 +21,19 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: /tfc:crafting\/metal\/block\/*_slab/ })
     event.remove({ id: /tfc:heating\/metal\/*_block_slab/ })
 
+    let getFillingNBT = (material, amount) => {
+        return {
+            tank: {
+                FluidName: Fluid.of(material.getFluid()).getId(),
+                Amount: amount
+            }
+        }
+    }
+
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
         if (tfcProperty != null) {
-
             let outputMaterial = (tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
 
             // Ingots
@@ -47,6 +55,21 @@ const registerTFCRecipes = (event) => {
                     event.recipes.tfc.casting(ingotItem, 'tfc:ceramic/fire_ingot_mold', Fluid.of(outputMaterial.getFluid(), 144), 0.01)
                         .id(`tfc:casting/${material.getName()}_fire_ingot`)
 
+                        event.recipes.create.filling(
+                            Item.of('tfc:ceramic/ingot_mold', getFillingNBT(outputMaterial, 144)), 
+                            [
+                                Fluid.of(outputMaterial.getFluid(), 144), 
+                                Item.of('tfc:ceramic/ingot_mold').strongNBT()
+                            ]
+                        ).id(`tfg:tfc/filling/${material.getName()}_ingot`)
+
+                        event.recipes.create.filling(
+                            Item.of('tfc:ceramic/fire_ingot_mold', getFillingNBT(outputMaterial, 144)), 
+                            [
+                                Fluid.of(outputMaterial.getFluid(), 144), 
+                                Item.of('tfc:ceramic/fire_ingot_mold').strongNBT()
+                            ]
+                        ).id(`tfg:tfc/filling/${material.getName()}_fire_ingot`)
                 }
       
                 // Double Ingots
@@ -300,7 +323,17 @@ const registerTFCRecipes = (event) => {
                             if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                                 event.recipes.tfc.casting(swordHeadItem, 'tfc:ceramic/sword_blade_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
                                     .id(`tfc:casting/${material.getName()}_sword_blade`)
+                            
+                                event.recipes.create.filling(
+                                    Item.of('tfc:ceramic/sword_blade_mold', getFillingNBT(outputMaterial, 288)), 
+                                    [
+                                        Fluid.of(outputMaterial.getFluid(), 288), 
+                                        Item.of('tfc:ceramic/sword_blade_mold').strongNBT()
+                                    ]
+                                ).id(`tfg:tfc/filling/${material.getName()}_sword_blade`)
                             }
+
+                            
                             
                         }
             
@@ -318,6 +351,15 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(`tfc:metal/mace_head/${material.getName()}`, 'tfc:ceramic/mace_head_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
                                 .id(`tfc:casting/${material.getName()}_mace_head`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/mace_head_mold', getFillingNBT(outputMaterial, 288)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 288), 
+                                    Item.of('tfc:ceramic/mace_head_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_mace_head`)
+                        
                         }
             
                         // Декрафт оголовья в жидкость
@@ -540,6 +582,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(pickaxeHeadItem, 'tfc:ceramic/pickaxe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_pickaxe_head`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/pickaxe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/pickaxe_head_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_pickaxe_head`)
                         }
         
                     }
@@ -579,6 +629,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(axeHeadItem, 'tfc:ceramic/axe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_axe_head`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/axe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/axe_head_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_axe_head`)
                         }
                     }
 
@@ -618,6 +676,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(shovelHeadItem, 'tfc:ceramic/shovel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_shovel_head`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/shovel_head_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/shovel_head_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_shovel_head_mold`)
                         }
         
                     }
@@ -656,6 +722,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(hoeHeadItem, 'tfc:ceramic/hoe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_hoe_head`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/hoe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/hoe_head_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_hoe_head_mold`)
                         }
                         
                     }
@@ -696,6 +770,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(hammerHeadItem, 'tfc:ceramic/hammer_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_hammer_head`)
+                        
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/hammer_head_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/hammer_head_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_hammer_head_mold`)
                         }
                     
                     }
@@ -736,6 +818,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(sawHeadItem, 'tfc:ceramic/saw_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_saw_blade`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/saw_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/saw_blade_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_saw_blade_mold`)
                         }
     
                     }
@@ -774,6 +864,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(scytheHeadItem, 'tfc:ceramic/scythe_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_scythe_blade`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/scythe_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/scythe_blade_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_scythe_blade_mold`)
                         }
                     
                     }
@@ -841,6 +939,14 @@ const registerTFCRecipes = (event) => {
                         if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                             event.recipes.tfc.casting(knifeHeadItem, 'tfc:ceramic/knife_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                                 .id(`tfc:casting/${material.getName()}_knife_blade`)
+
+                            event.recipes.create.filling(
+                                Item.of('tfc:ceramic/knife_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                                [
+                                    Fluid.of(outputMaterial.getFluid(), 144), 
+                                    Item.of('tfc:ceramic/knife_blade_mold').strongNBT()
+                                ]
+                            ).id(`tfg:tfc/filling/${material.getName()}_knife_blade_mold`)
                         }
 
                         //#region Ножницы 
@@ -878,6 +984,14 @@ const registerTFCRecipes = (event) => {
                     if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                         event.recipes.tfc.casting(`tfc:metal/propick_head/${material.getName()}`, 'tfc:ceramic/propick_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                             .id(`tfc:casting/${material.getName()}_propick_head`)
+
+                        event.recipes.create.filling(
+                            Item.of('tfc:ceramic/propick_head_mold', getFillingNBT(outputMaterial, 144)), 
+                            [
+                                Fluid.of(outputMaterial.getFluid(), 144), 
+                                Item.of('tfc:ceramic/propick_head_mold').strongNBT()
+                            ]
+                        ).id(`tfg:tfc/filling/${material.getName()}_propick_head_mold`)
                     }
         
                     //#endregion
@@ -899,6 +1013,14 @@ const registerTFCRecipes = (event) => {
                     if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                         event.recipes.tfc.casting(`tfc:metal/chisel_head/${material.getName()}`, 'tfc:ceramic/chisel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                             .id(`tfc:casting/${material.getName()}_chisel_head`)
+
+                        event.recipes.create.filling(
+                            Item.of('tfc:ceramic/chisel_head_mold', getFillingNBT(outputMaterial, 144)), 
+                            [
+                                Fluid.of(outputMaterial.getFluid(), 144), 
+                                Item.of('tfc:ceramic/chisel_head_mold').strongNBT()
+                            ]
+                        ).id(`tfg:tfc/filling/${material.getName()}_chisel_head_mold`)
                     }
         
                     //#endregion
@@ -920,6 +1042,14 @@ const registerTFCRecipes = (event) => {
                     if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
                         event.recipes.tfc.casting(`tfc:metal/javelin_head/${material.getName()}`, 'tfc:ceramic/javelin_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
                             .id(`tfc:casting/${material.getName()}_javelin_head`)
+
+                        event.recipes.create.filling(
+                            Item.of('tfc:ceramic/javelin_head_mold', getFillingNBT(outputMaterial, 144)), 
+                            [
+                                Fluid.of(outputMaterial.getFluid(), 144), 
+                                Item.of('tfc:ceramic/javelin_head_mold').strongNBT()
+                            ]
+                        ).id(`tfg:tfc/filling/${material.getName()}_javelin_head_mold`)
                     }
         
                     //#endregion
@@ -987,21 +1117,21 @@ const registerTFCRecipes = (event) => {
                     .resultFluid(Fluid.of(outputMaterial.getFluid(), 2016))
                     .id(`tfc:heating/metal/${material.getName()}_anvil`)
                 
-                // Наковальня из слитков
-                event.recipes.gtceu.alloy_smelter(`ingots_to_${material.getName()}_anvil`)             
-                    .itemInputs(`14x #forge:ingots/${material.getName()}`)
-                    .notConsumable('gtceu:anvil_casting_mold')
-                    .itemOutputs(`tfc:metal/anvil/${material.getName()}`)
-                    .duration(1680)
-                    .EUt(16)
+                // // Наковальня из слитков
+                // event.recipes.gtceu.alloy_smelter(`ingots_to_${material.getName()}_anvil`)             
+                //     .itemInputs(`14x #forge:ingots/${material.getName()}`)
+                //     .notConsumable('gtceu:anvil_casting_mold')
+                //     .itemOutputs(`tfc:metal/anvil/${material.getName()}`)
+                //     .duration(1680)
+                //     .EUt(16)
     
-                // Наковальня из жидкости
-                event.recipes.gtceu.fluid_solidifier(`solidify_${material.getName()}_anvil`)             
-                    .inputFluids(Fluid.of(outputMaterial.getFluid(), 2016))
-                    .notConsumable('gtceu:anvil_casting_mold')
-                    .itemOutputs(`tfc:metal/anvil/${material.getName()}`)
-                    .duration(1680)
-                    .EUt(16)
+                // // Наковальня из жидкости
+                // event.recipes.gtceu.fluid_solidifier(`solidify_${material.getName()}_anvil`)             
+                //     .inputFluids(Fluid.of(outputMaterial.getFluid(), 2016))
+                //     .notConsumable('gtceu:anvil_casting_mold')
+                //     .itemOutputs(`tfc:metal/anvil/${material.getName()}`)
+                //     .duration(1680)
+                //     .EUt(16)
             }
     
             // Small TFC Ores
@@ -1228,6 +1358,14 @@ const registerTFCRecipes = (event) => {
         .resultFluid(Fluid.of('gtceu:gold', 144))
         .id(`tfc:heating/gold_bell`)
 
+    event.recipes.create.filling(
+        Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Gold, 144)), 
+        [
+            Fluid.of(GTMaterials.Gold.getFluid(), 144), 
+            Item.of('tfc:ceramic/bell_mold').strongNBT()
+        ]
+    ).id(`tfg:tfc/filling/${GTMaterials.Gold.getName()}_bell_mold`)
+
     //#endregion
 
     //#region Из латуни
@@ -1238,6 +1376,14 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.heating(`tfc:brass_bell`, 930)
         .resultFluid(Fluid.of('gtceu:brass', 144))
         .id(`tfc:heating/brass_bell`)
+
+    event.recipes.create.filling(
+        Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Brass, 144)), 
+        [
+            Fluid.of(GTMaterials.Brass.getFluid(), 144), 
+            Item.of('tfc:ceramic/bell_mold').strongNBT()
+        ]
+    ).id(`tfg:tfc/filling/${GTMaterials.Brass.getName()}_bell_mold`)
     
     //#endregion
 
@@ -1249,6 +1395,14 @@ const registerTFCRecipes = (event) => {
     event.recipes.tfc.heating(`tfc:bronze_bell`, 930)
         .resultFluid(Fluid.of('gtceu:bronze', 144))
         .id(`tfc:heating/bronze_bell`)
+
+    event.recipes.create.filling(
+        Item.of('tfc:ceramic/bell_mold', getFillingNBT(GTMaterials.Bronze, 144)), 
+        [
+            Fluid.of(GTMaterials.Bronze.getFluid(), 144), 
+            Item.of('tfc:ceramic/bell_mold').strongNBT()
+        ]
+    ).id(`tfg:tfc/filling/${GTMaterials.Bronze.getName()}_bell_mold`)
 
     //#endregion
 
