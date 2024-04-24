@@ -2815,6 +2815,13 @@ const registerMinecraftRecipes = (event) => {
     event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
         .id('tfg:anvil/vanilla_bucket')
 
+    event.recipes.gtceu.assembler('tfg:vanilla/bucket')             
+        .itemInputs('#forge:plates/red_steel', '#forge:plates/blue_steel')
+        .circuit(6)
+        .itemOutputs('minecraft:bucket')
+        .duration(100)
+        .EUt(16)
+
     //#endregion
 
     //#region Выход: Седло

@@ -547,7 +547,6 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:arc_furnace/arc_chipped_anvil' })
     event.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
     event.remove({ id: 'gtceu:arc_furnace/arc_furnace_minecart' })
-    event.remove({ id: 'gtceu:arc_furnace/arc_bucket' })
     event.remove({ id: 'gtceu:arc_furnace/arc_compass' })
     
     //#endregion
@@ -555,18 +554,6 @@ const registerGTCEURecipes = (event) => {
     //#region Выход: Кованные самородки
 
     event.remove({ id: 'gtceu:arc_furnace/arc_iron_bars' })
-
-    event.recipes.gtceu.arc_furnace('arc_iron_door')             
-        .itemInputs('minecraft:iron_door')
-        .itemOutputs('9x gtceu:wrought_iron_dust', 'gtceu:steel_nugget')
-        .duration(200)
-        .EUt(30)
-
-    //#endregion
-
-    //#region Выход: Пыль кованного железа
-
-    event.remove({ id: 'gtceu:arc_furnace/arc_iron_door' })
 
     //#endregion
 
@@ -585,12 +572,6 @@ const registerGTCEURecipes = (event) => {
     //#region Выход: Крошечная железная пыль
 
     event.remove({ id: 'gtceu:macerator/macerate_iron_bars' })
-
-    event.recipes.gtceu.macerator('macerate_iron_door')             
-        .itemInputs('minecraft:iron_door')
-        .itemOutputs('gtceu:iron_dust', 'gtceu:tiny_steel_dust')
-        .duration(200)
-        .EUt(8)
 
     //#endregion
 

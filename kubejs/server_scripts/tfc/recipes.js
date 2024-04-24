@@ -1515,7 +1515,7 @@ const registerTFCRecipes = (event) => {
 
     // Ванильная дверь декрафт
     event.recipes.tfc.heating('minecraft:iron_door', 1535)
-        .resultFluid(Fluid.of('gtceu:iron', 288))
+        .resultFluid(Fluid.of('gtceu:iron', 144))
         .id(`tfc:heating/iron_door`)
     
     // Ванильная дверь на наковальне
@@ -2448,19 +2448,7 @@ const registerTFCRecipes = (event) => {
     
     //#region Дерево
     
-    // Декрафт деревянной херни в деревянную пыль
-    Object.entries(global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST).forEach(pair => {
-        
-        let typeName = pair[1].name
-        let typeOutput = pair[1].output
-        
-        event.recipes.gtceu.macerator(`tfg/macerate_${typeName}`)             
-            .itemInputs(pair[0])
-            .itemOutputs(typeOutput)
-            .duration(600)
-            .EUt(2)
-    })
-
+    // Какие то рецепты дерева
     global.TFC_WOOD_TYPES.forEach(wood => {
         event.remove({ id: `tfc:crafting/wood/${wood}_axle` })
         event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
