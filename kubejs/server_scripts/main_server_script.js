@@ -8,6 +8,8 @@ const $ToolHelper = Java.loadClass('com.gregtechceu.gtceu.api.item.tool.ToolHelp
  */
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
+    registerMEGASellsItemTags(event)
+    registerExpatternproviderItemTags(event)
     registerAsticorCartsItemTags(event)
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
@@ -105,6 +107,8 @@ GTCEuServerEvents.oreVeins(event => {
  */
 ServerEvents.recipes(event => {
     registerAE2Recipes(event)
+    registerMEGASellsRecipes(event)
+    registerExpatternproviderRecipes(event)
     registerAsticorCartsRecipes(event)
     registerAE2WTLibRecipes(event)
     registerChiselAndBitsRecipes(event)
