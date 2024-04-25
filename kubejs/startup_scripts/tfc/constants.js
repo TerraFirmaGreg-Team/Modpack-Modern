@@ -886,7 +886,7 @@ global.TFC_CLAY_TO_UNFIRED_MOLD_RECIPE_COMPONENTS = [
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_vessel', name: 'vessel' },
     { input: '5x minecraft:clay_ball', output: 'tfc:ceramic/unfired_large_vessel', name: 'large_vessel' },
     { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_fire_ingot_mold', name: 'fire_ingot_mold' },
-    { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_fire_brick', name: 'fire_brick' },
+    { input: '5x tfc:fire_clay', output: '3x tfc:ceramic/unfired_fire_brick', name: 'fire_brick' },
     { input: '5x tfc:fire_clay', output: 'tfc:ceramic/unfired_crucible', name: 'crucible' },
     { input: '5x tfc:fire_clay', output: 'tfcchannelcasting:unfired_channel', name: 'channel' },
     { input: '5x tfc:fire_clay', output: 'tfcchannelcasting:unfired_mold_table', name: 'mold_table' },
