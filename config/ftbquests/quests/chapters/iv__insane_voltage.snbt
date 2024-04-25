@@ -84,8 +84,9 @@
 			size: 0.75d
 			subtitle: "Approaching solar temperatures"
 			tasks: [{
-				icon: { Count: 16b, id: "gtceu:hssg_coil_block" }
-				id: "544762609C1B9613"
+				count: 16L
+				id: "4683154AB536993C"
+				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
 			title: "HSS-G Coils"
