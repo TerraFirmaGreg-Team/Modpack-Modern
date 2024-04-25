@@ -138,6 +138,13 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:tiny_phosphorus_dust', null, 0.016, null)
     event.fertilizer('gtceu:small_phosphorus_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
+
+    event.fertilizer('gtceu:tiny_saltpeter_dust', null, 0.038, 0.01)
+    event.fertilizer('gtceu:small_saltpeter_dust', null, 0.0875, 0.025)
+    event.fertilizer('gtceu:saltpeter_dust', null, 0.35, 0.10)
+
+    event.fertilizer('gtceu:tiny_bone_dust', null, 0.01, null)
+    event.fertilizer('gtceu:small_bone_dust', null, 0.025, null)
 }
 
 const registerTFCKnappingTypes = (event) => {
