@@ -39,7 +39,9 @@
 - Добавлены рецепты/квесты для AE2NetworkAnalyzer.
 - Добавлен рецепт ванильного ведра в assembler.
 - Добавлен рецепт тонированного стекла через GTCEu машины.
-
+- Возвращены в игру блоки кораллов, так как они все таки появляются в TFC.
+- Добавлено больше вариантов удобрений исходящих из GTCEu предметов (в работе).
+- Добавлены рецепты/квесты для TFCHotOrNot (в работе).
 - Изменены рецепты у рельсовых путей create, добавленных в обновлении Steam&Rails (в работе).
 - Добавлены рецепты/квесты для ExtendedAE2 (в работе).
 - Добавлены рецепты/квесты для MegaCells (в работе).
@@ -118,16 +120,13 @@
 - tfc_support_indicator
 - supermartijn642configlib
 - supermartijn642corelib
-- storagedrawers
 - Showcaseitem
 - Seamless-loading-screen
 - Pandalib
-- Mcw_tfc_aio
 - Megacells
 - Precisionprospecting
 - yet-another-config-lib
 - Glodium
-- Everycomp
 - Fallingtrees
 - YeetusExperimentus
 - BetterFoliage

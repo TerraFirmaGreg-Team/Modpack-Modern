@@ -189,18 +189,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:bubble_coral', 
     'minecraft:fire_coral',
 
-    // Блоки коралов
-    'minecraft:dead_tube_coral_block', 
-    'minecraft:dead_fire_coral_block', 
-    'minecraft:dead_horn_coral_block', 
-    'minecraft:dead_bubble_coral_block', 
-    'minecraft:dead_brain_coral_block', 
-    'minecraft:tube_coral_block', 
-    'minecraft:brain_coral_block', 
-    'minecraft:bubble_coral_block', 
-    'minecraft:fire_coral_block', 
-    'minecraft:horn_coral_block', 
-
     // Дерево
     // Дуб
     "minecraft:oak_wood",
