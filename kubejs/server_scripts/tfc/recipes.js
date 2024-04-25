@@ -3115,7 +3115,7 @@ const registerTFCRecipes = (event) => {
     event.recipes.gtceu.assembler('tfg:tfc/brass_mechanism')             
         .itemInputs('#forge:plates/brass')
         .circuit(10)
-        .itemOutputs('tfc:brass_mechanisms')
+        .itemOutputs('2x tfc:brass_mechanisms')
         .duration(100)
         .EUt(4)
 
