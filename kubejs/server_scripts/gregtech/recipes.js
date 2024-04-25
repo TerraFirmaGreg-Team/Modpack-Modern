@@ -1059,6 +1059,13 @@ const registerGTCEURecipes = (event) => {
         .duration(700)
         .EUt(2720)
 
+    // Creosote-Treated Wood Planks -> Treated Wood Pulp
+    event.recipes.gtceu.macerator('tfg:gtceu/macerate_treated_wood_planks')             
+        .itemInputs('gtceu:treated_wood_planks')
+        .itemOutputs('gtceu:treated_wood_dust')
+        .duration(120)
+        .EUt(4)
+
     // Empty Wooden Form
     event.shaped('gtceu:empty_wooden_form', [
         ' AA', 

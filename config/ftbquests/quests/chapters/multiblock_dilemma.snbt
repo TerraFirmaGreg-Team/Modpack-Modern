@@ -210,19 +210,6 @@
 			y: 6.0d
 		}
 		{
-			id: "20FEF24F801577EF"
-			linked_quest: "2DAC91AF2EBB68E2"
-			x: 4.5d
-			y: 6.0d
-		}
-		{
-			id: "5926D9421E5D2E5D"
-			linked_quest: "4194EC9F1C6632E4"
-			shape: "rsquare"
-			x: 6.0d
-			y: 6.0d
-		}
-		{
 			id: "1D2DEC9BC14B9F64"
 			linked_quest: "546CC03435E763CF"
 			x: 7.5d
@@ -238,12 +225,6 @@
 			id: "2B1E630DF1ED5624"
 			linked_quest: "023FF9633765A0EB"
 			x: 10.5d
-			y: 6.0d
-		}
-		{
-			id: "7DF7C035D303B90A"
-			linked_quest: "1D623D93EEDD3C67"
-			x: 3.0d
 			y: 6.0d
 		}
 	]
