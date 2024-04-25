@@ -2198,6 +2198,17 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Тонированное стекло
+
+    event.recipes.gtceu.chemical_bath('tfg:minecraft/tinted_glass')             
+        .itemInputs('minecraft:glass')
+        .inputFluids(Fluid.of('gtceu:black_dye', 144))
+        .itemOutputs('minecraft:tinted_glass')
+        .duration(260)
+        .EUt(16)
+
+    //#endregion
+
     //#region Выход: Пустая карта
 
     event.recipes.gtceu.assembler('map')             
