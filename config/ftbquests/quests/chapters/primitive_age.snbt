@@ -3011,8 +3011,8 @@
 			dependencies: ["370D5A954DCBFD34"]
 			id: "70814114EF197414"
 			tasks: [{
-				id: "72932B85E4BC9F13"
-				item: "minecraft:compass"
+				id: "152BB23D954315F0"
+				item: "firmaciv:firmaciv_compass"
 				type: "item"
 			}]
 			x: -6.5d
