@@ -915,7 +915,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: 12.5d
 		}
 		{
@@ -931,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.5d
 			y: 11.5d
 		}
 		{
@@ -943,7 +943,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.5d
 			y: 13.5d
 		}
 		{
@@ -960,7 +960,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.5d
 			y: 12.5d
 		}
 		{
@@ -972,8 +972,8 @@
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 14.0d
+			x: 1.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["2054E9812A64BF56"]
@@ -984,8 +984,8 @@
 				item: "ae2wtlib:magnet_card"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.0d
+			x: 0.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["694C8A2A90A70052"]
@@ -996,7 +996,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.5d
 			y: 12.5d
 		}
 		{
@@ -1422,6 +1422,40 @@
 			}]
 			x: -6.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["3E0EE1623F16A15A"]
+			id: "34A03EDFA166A83F"
+			shape: "circle"
+			tasks: [{
+				id: "7927F49F7DC0275B"
+				item: "ae2netanalyser:network_analyser"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2054E9812A64BF56"]
+			id: "6214719888444F36"
+			tasks: [{
+				id: "009962F974145F70"
+				item: "ae2insertexportcard:insert_card"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2054E9812A64BF56"]
+			id: "6CC384B9D7A9A1AB"
+			tasks: [{
+				id: "4A2F7338322999CA"
+				item: "ae2insertexportcard:export_card"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
 		}
 	]
 	title: "&6HV&r - AE2"

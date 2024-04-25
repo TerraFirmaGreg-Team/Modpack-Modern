@@ -102,6 +102,8 @@ GTCEuServerEvents.oreVeins(event => {
 ServerEvents.recipes(event => {
     registerAE2Recipes(event)
     registerAsticorCartsRecipes(event)
+    registerAE2InsertExportCardRecipes(event)
+    registerAE2NetworkAnalyzerRecipes(event)
     registerAE2WTLibRecipes(event)
     registerChiselAndBitsRecipes(event)
     registerComputerCraftRecipes(event)
