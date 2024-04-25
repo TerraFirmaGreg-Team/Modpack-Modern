@@ -1053,7 +1053,6 @@ const registerTFCRecipes = (event) => {
                     }
         
                     //#endregion
-        
                 }
                 
             }
@@ -1116,23 +1115,25 @@ const registerTFCRecipes = (event) => {
                 event.recipes.tfc.heating(`tfc:metal/anvil/${material.getName()}`, tfcProperty.getMeltTemp())
                     .resultFluid(Fluid.of(outputMaterial.getFluid(), 2016))
                     .id(`tfc:heating/metal/${material.getName()}_anvil`)
-                
-                // // Наковальня из слитков
-                // event.recipes.gtceu.alloy_smelter(`ingots_to_${material.getName()}_anvil`)             
-                //     .itemInputs(`14x #forge:ingots/${material.getName()}`)
-                //     .notConsumable('gtceu:anvil_casting_mold')
-                //     .itemOutputs(`tfc:metal/anvil/${material.getName()}`)
-                //     .duration(1680)
-                //     .EUt(16)
-    
-                // // Наковальня из жидкости
-                // event.recipes.gtceu.fluid_solidifier(`solidify_${material.getName()}_anvil`)             
-                //     .inputFluids(Fluid.of(outputMaterial.getFluid(), 2016))
-                //     .notConsumable('gtceu:anvil_casting_mold')
-                //     .itemOutputs(`tfc:metal/anvil/${material.getName()}`)
-                //     .duration(1680)
-                //     .EUt(16)
             }
+
+            //#region Щипцы
+            let tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
+            let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
+
+            if (!tongsStack.isEmpty() && !tongPartStack.isEmpty()) {
+                // Ручка щипцов
+                event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
+                    .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                    .id(`tfchotornot:heating/tong_part/${material.getName()}`)
+                
+                // Щипцы
+                event.recipes.tfc.heating(tongsStack, tfcProperty.getMeltTemp())
+                    .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                    .useDurability(true)
+                    .id(`tfchotornot:heating/tongs/${material.getName()}`)
+            }
+            //#endregion
     
             // Small TFC Ores
             if (material.hasFlag(TFGMaterialFlags.HAS_SMALL_TFC_ORE)) {
