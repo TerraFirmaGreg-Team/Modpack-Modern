@@ -5130,6 +5130,24 @@
 			x: 20.5d
 			y: 12.5d
 		}
+		{
+			dependencies: ["365F6F48E0BB2EFC"]
+			id: "23510E30D813C549"
+			tasks: [{
+				id: "09C1DBDEB5A47AB8"
+				item: {
+					Count: 1b
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(tfchotornot:tongs))"
+					}
+				}
+				title: "Any Tongs"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
 	]
 	title: "Primitive Age"
 }
