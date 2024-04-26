@@ -44,4 +44,7 @@ global.MEGA_SELLS_DISABLED_ITEMS = [
     'megacells:mega_crafting_monitor',
     'megacells:mega_crafting_accelerator',
     'megacells:cell_dock',
+
+    'megacells:mega_item_cell_housing',
+    'megacells:mega_fluid_cell_housing',
 ]

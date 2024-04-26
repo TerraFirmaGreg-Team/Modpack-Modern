@@ -190,7 +190,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -202,7 +202,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -213,7 +213,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -224,7 +224,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -371,7 +371,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -382,7 +382,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5CAF4D91F281D3BC"]
@@ -393,7 +393,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["780DB1BBED7236C3"]
@@ -404,7 +404,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5CAF4D91F281D3BC"]
@@ -415,7 +415,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["780DB1BBED7236C3"]
@@ -426,7 +426,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -548,7 +548,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1DDEDA43A63A1B14"]
@@ -560,7 +560,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0BBA3FA755FB2698"]
@@ -576,7 +576,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["15B4CB2A3B01C930"]
@@ -1422,6 +1422,67 @@
 			}]
 			x: -6.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["6A000300061A94CB"]
+			id: "2717B72E678FA17D"
+			shape: "circle"
+			tasks: [{
+				id: "02F08A721CA61B0D"
+				item: "megacells:printed_accumulation_processor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2717B72E678FA17D"]
+			id: "7D73988331237328"
+			shape: "octagon"
+			tasks: [{
+				id: "5796200E100F4450"
+				item: "megacells:accumulation_processor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5CAF4D91F281D3BC"
+				"780DB1BBED7236C3"
+			]
+			id: "2E5F62E4164C625B"
+			shape: "diamond"
+			tasks: [{
+				id: "3A81045D8A1F3136"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D73988331237328"]
+			id: "77EE676DF92055D5"
+			tasks: [{
+				id: "00CFE292F5D59B49"
+				item: "megacells:mega_pattern_provider"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7D73988331237328"]
+			id: "23110D69F105047B"
+			tasks: [{
+				id: "3B726ECF9FB1DE29"
+				item: "megacells:mega_interface"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
 		}
 	]
 	title: "&6HV&r - AE2"
