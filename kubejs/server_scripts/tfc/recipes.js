@@ -502,7 +502,7 @@ const registerTFCRecipes = (event) => {
                         
                         // Болт -> Металл
                         event.recipes.tfc.heating(boltItem, tfcProperty.getMeltTemp())
-                            .resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
+                            .resultFluid(Fluid.of(outputMaterial.getFluid(), 18))
                             .id(`tfc:heating/metal/${material.getName()}_bolt`)
 
                         // Стержень -> Болт
@@ -518,7 +518,7 @@ const registerTFCRecipes = (event) => {
                         
                         // Винт -> Металл
                         event.recipes.tfc.heating(screwItem, tfcProperty.getMeltTemp())
-                            .resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+                            .resultFluid(Fluid.of(outputMaterial.getFluid(), 16))
                             .id(`tfc:heating/metal/${material.getName()}_screw`)
 
                         // Стержень -> Винт
@@ -533,7 +533,7 @@ const registerTFCRecipes = (event) => {
                         
                         // Кольцо -> Металл
                         event.recipes.tfc.heating(ringItem, tfcProperty.getMeltTemp())
-                            .resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+                            .resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
                             .id(`tfc:heating/metal/${material.getName()}_ring`)
         
                         // Стержень -> Кольцо
