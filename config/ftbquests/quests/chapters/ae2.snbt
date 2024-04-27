@@ -1470,8 +1470,8 @@
 				item: "megacells:mega_pattern_provider"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7D73988331237328"]
@@ -1481,8 +1481,30 @@
 				item: "megacells:mega_interface"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.0d
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["77EE676DF92055D5"]
+			id: "250A3B37AC25322D"
+			tasks: [{
+				id: "1A7340A2E6E1C94D"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["23110D69F105047B"]
+			id: "3A092ED61955B188"
+			tasks: [{
+				id: "5C888DD0A1A9D960"
+				item: "expatternprovider:ex_interface"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
 		}
 	]
 	title: "&6HV&r - AE2"

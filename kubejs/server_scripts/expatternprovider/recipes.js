@@ -71,7 +71,7 @@ const registerExpatternproviderRecipes = (event) => {
     // IV
     event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_iv')
         .itemInputs(
-            '2x #megacells:mega_interface',
+            '2x #megacells:mega_pattern_provider',
             '4x megacells:accumulation_processor',
             '2x gtceu:iv_conveyor_module',
             '4x gtceu:tungsten_steel_plate',
@@ -85,7 +85,7 @@ const registerExpatternproviderRecipes = (event) => {
     // LuV
     event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_luv')
         .itemInputs(
-            '4x #megacells:mega_interface',
+            '4x #megacells:mega_pattern_provider',
             '4x megacells:accumulation_processor',
             '2x gtceu:luv_conveyor_module',
             '4x gtceu:rhodium_plated_palladium_plate',
@@ -99,7 +99,7 @@ const registerExpatternproviderRecipes = (event) => {
     // ZPM
     event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_zpm')
         .itemInputs(
-        '8x #megacells:mega_interface',
+        '8x #megacells:mega_pattern_provider',
         '4x megacells:accumulation_processor',
         '2x gtceu:zpm_conveyor_module',
         '4x gtceu:naquadah_alloy_plate',
@@ -113,7 +113,7 @@ const registerExpatternproviderRecipes = (event) => {
     //UV
     event.recipes.gtceu.assembler('expatternprovider:ex_pattern_provider_uv')
         .itemInputs(
-            '16x #megacells:mega_interface',
+            '16x #megacells:mega_pattern_provider',
             '4x megacells:accumulation_processor',
             '2x gtceu:uv_conveyor_module',
             '4x #forge:plates/darmstadtium',
