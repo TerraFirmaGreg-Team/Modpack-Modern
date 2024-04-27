@@ -25,6 +25,10 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
     
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/chainsaws')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/drills')
+    
     // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')
     event.add('tfc:pileable_sheets', '#forge:plates')
