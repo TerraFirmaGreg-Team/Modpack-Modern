@@ -524,7 +524,7 @@
 				"30A6EDDF25A5E5F8"
 			]
 			description: [
-				"&aRuthenium-tungsten-molybdenum (RTM) alloy Coils&r raise the Heat Capacity to a scorching &d4,500K&r."
+				"&aRuthenium-tungsten-molybdenum (RTM) Alloy Coils&r raise the Heat Capacity to a scorching &d4,500K&r."
 				""
 				"This will be required in &1IV&r, but as always, you should still get this earlier for the &6Coil bonuses&r."
 			]
@@ -538,7 +538,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "RTM alloy Coils"
+			title: "RTM Alloy Coils"
 			x: 9.0d
 			y: 2.25d
 		}
