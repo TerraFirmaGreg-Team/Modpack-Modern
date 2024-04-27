@@ -71,42 +71,46 @@
 - Исправлен кривой рецепт для bloomery после обновления TFC до 3.2.0 версии.
 - Исправлен декрафт LV машин в красную/синюю сталь вместо обычной стали.
 ### Updated mods
-- Clumps 12.0.0.3 -> 12.0.0.4
-- CraftPresence 2.3.5 -> 2.3.8
-- CreativeCore 2.11.25 -> 2.11.26
-- Cucumber 7.0.7 -> 7.0.8
-- FirmaCivilization 0.2.2 -> 0.2.7
-- Firmalife 2.0.9 -> 2.1.0
-- ImmediatelyFast 1.2.10 -> 1.2.11
-- ItemPhysicLite 1.6.1 -> 1.6.4
-- PlayerRevive 2.0.24 -> 2.0.25
-- Steam_Rails 1.5.3 -> 1.6.3
-- TerraFirmaCraft 3.1.9 -> 3.2.2
-- XaerosWorldMap 1.38.1 -> 1.38.4
-- Xaeros_Minimap 24.0.1 -> 24.1.1
-- ae2wtlib 15.2.2 -> 15.2.3
-- appliedenergistics2 15.0.23 -> 15.1.1
-- cc-tweaked 1.110.0 -> 1.110.2
-- chisels-and-bits 1.4.147 -> 1.4.148
-- curios 5.7.2 -> 5.8.1
-- do_a_barrel_roll 3.5.3 -> 3.5.5
-- embeddium 0.3.9 -> 0.3.14
-- embeddiumplus 1.2.5 -> 1.2.7
-- emi 1.1.3 -> 1.1.4
-- exposure 1.4.1 -> 1.5.1
-- ftb-xmod-compat 2.1.0 -> 2.1.1
-- gcyr 0.1.3 -> 0.1.6
-- gtceu 1.1.3.b -> 1.2.0.a
-- kubejs 2001.6.4-build.138 -> 2001.6.5-build.7
-- kubejs_tfc 1.1.0 -> 1.1.2
-- modernfix 5.14.0 -> 5.16.1
-- moonlight 2.11.9 -> 2.11.12
-- open-parties-and-claims 0.20.4 -> 0.22.0
-- PacketFixer 1.2.8 -> 1.3.1
-- radium 0.12.2 -> 0.12.3
-- sophisticatedbackpacks 3.20.3.1034 -> 3.20.5.1039
-- sophisticatedcore 0.6.11.578 -> 0.6.18.597
-- u_team_core 5.1.4.269 -> 5.1.4.289
+- Clumps -> 12.0.0.4
+- CraftPresence -> 2.3.9
+- CreativeCore -> 2.11.27
+- Cucumber -> 7.0.8
+- FirmaCivilization -> 0.2.8
+- Firmalife -> 2.1.0
+- ImmediatelyFast -> 1.2.11
+- ItemPhysicLite -> 1.6.4
+- PlayerRevive -> 2.0.25
+- Steam_Rails -> 1.6.3
+- TerraFirmaCraft -> 3.2.2
+- XaerosWorldMap -> 1.38.4
+- Xaeros_Minimap -> 24.1.1
+- AE2wtlib -> 15.2.3
+- Appliedenergistics2 -> 15.1.1
+- CC-tweaked -> 1.110.3
+- Chisels-and-bits -> 1.4.148
+- Curios -> 5.8.1
+- Do_a_barrel_roll -> 3.5.5
+- Embeddium -> 0.3.14
+- Embeddiumplus -> 1.2.7
+- EMI -> 1.1.4
+- Exposure -> 1.5.1
+- FTB-xmod-compat -> 2.1.1
+- GCYR -> 0.1.6
+- GTCEU -> 1.2.0.a
+- Kubejs -> 2001.6.5-build.7
+- Kubejs_tfc -> 1.1.2
+- Modernfix -> 5.17.0
+- Moonlight -> 2.11.12
+- Open-parties-and-claims -> 0.22.0
+- PacketFixer -> 1.3.2
+- Radium -> 0.12.3
+- Sophisticatedbackpacks -> 3.20.5.1039
+- Sophisticatedcore -> 0.6.18.597
+- U_team_core -> 5.1.4.289
+- EnhancedVisuals -> 1.7.0
+- Notenoughanimations -> 1.7.2
+- Recipeessentials -> 3.4
+- Searchables -> 1.0.3
 ### New Mods
 - AE2NetworkAnalyzer
 - AEInfinityBooster
@@ -118,15 +122,15 @@
 - TFCVesselTooltip
 - FramedBlocks
 - Tumbleweed
-- tfc_support_indicator
-- supermartijn642configlib
-- supermartijn642corelib
+- TFC_support_indicator
+- Supermartijn642configlib
+- Supermartijn642corelib
 - Showcaseitem
 - Seamless-loading-screen
 - Pandalib
 - Megacells
 - Precisionprospecting
-- yet-another-config-lib
+- YetAnotherConfigLib
 - Glodium
 - Fallingtrees
 - YeetusExperimentus
