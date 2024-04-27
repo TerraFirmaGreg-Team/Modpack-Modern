@@ -25,6 +25,7 @@ ServerEvents.tags('item', event => {
     registerRailWaysItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
     registerTFCItemTags(event)
+    registerFramedBlocksItemTags(event)
 })
 
 /**
@@ -130,4 +131,5 @@ ServerEvents.recipes(event => {
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
     registerWaterFlasksRecipes(event)
+    registerFramedBlocksRecipes(event)
 })
