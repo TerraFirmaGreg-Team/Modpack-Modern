@@ -30,7 +30,7 @@ global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS = {
     "tfc:axes" : GTToolType.AXE,
     "tfc:shovels" : GTToolType.SHOVEL,
     "tfc:hoes" : GTToolType.HOE,
-    "tfc:hammers" : GTToolType.MINING_HAMMER,
+    "tfc:hammers" : GTToolType.HARD_HAMMER,
     "tfc:knives" : GTToolType.KNIFE,
     "tfc:saws" : GTToolType.SAW,
     "tfc:scythes" : GTToolType.SCYTHE
