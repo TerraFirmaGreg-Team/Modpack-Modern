@@ -67,7 +67,7 @@ const registerCreateConnectedRecipes = (event) => {
     event.recipes.gtceu.circuit_assembler('tfg:create_connected/control_chip')             
         .itemInputs('#forge:plates/gold', 'gtceu:resin_printed_circuit_board', '2x create:electron_tube')
         .circuit(11)
-        .fluidInput(Fluid.of('gtceu:redstone', 144))
+        .inputFluids(Fluid.of('gtceu:redstone', 144))
         .itemOutputs('create_connected:control_chip')
         .duration(720)
         .EUt(16)
