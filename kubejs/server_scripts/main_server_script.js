@@ -113,6 +113,7 @@ ServerEvents.recipes(event => {
     registerComputerCraftRecipes(event)
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
+    registerCreateConnectedRecipes(event)
     registerExposureRecipes(event)
     registerFirmaCivRecipes(event)
     registerFirmaLifeRecipes(event)
