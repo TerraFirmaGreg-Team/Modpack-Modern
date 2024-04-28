@@ -764,8 +764,8 @@
 				item: "ae2:cell_workbench"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 11.0d
+			x: -3.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
@@ -1456,6 +1456,54 @@
 			}]
 			x: 3.5d
 			y: 13.5d
+		}
+		{
+			dependencies: ["29F882A468CF31F1"]
+			id: "467FCC8C01D0C23C"
+			shape: "circle"
+			tasks: [{
+				id: "5F0C174763195266"
+				item: {
+					Count: 1b
+					id: "ae2:energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["467FCC8C01D0C23C"]
+			id: "7C6412150AF961B7"
+			shape: "circle"
+			tasks: [{
+				id: "6E59C7CF1A1A8648"
+				item: {
+					Count: 1b
+					id: "ae2:dense_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7C6412150AF961B7"]
+			id: "204EF4CBDA3EE1E7"
+			shape: "circle"
+			tasks: [{
+				id: "6823C8CB85590022"
+				item: {
+					Count: 1b
+					id: "megacells:mega_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 11.0d
 		}
 	]
 	title: "&6HV&r - AE2"
