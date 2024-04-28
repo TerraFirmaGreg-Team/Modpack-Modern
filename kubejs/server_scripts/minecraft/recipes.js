@@ -2174,6 +2174,12 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
+    //#region Выход: Цепи
+
+    event.remove({ id: 'minecraft:chain' })
+
+    //#endregion
+
     //#region Выход: Светильник адский
 
     event.remove({ id: 'minecraft:soul_lantern' })
@@ -3088,7 +3094,7 @@ const registerMinecraftRecipes = (event) => {
     event.remove({ id: 'minecraft:powered_rail' })
 
     event.recipes.gtceu.assembler('powered_rail')             
-        .itemInputs('6x #forge:rods/gold', '#forge:rods/wooden', '#forge:dusts/redstone')
+        .itemInputs('6x #forge:rods/gold', '2x #forge:rods/wooden', '#forge:dusts/redstone')
         .circuit(1)
         .itemOutputs('16x minecraft:powered_rail')
         .duration(100)

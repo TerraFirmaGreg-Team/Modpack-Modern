@@ -583,6 +583,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:dried_kelp_block', 
     'minecraft:dried_kelp', 
     'minecraft:pink_petals',
+    'minecraft:chain',
     'minecraft:peony',
     'minecraft:rose_bush',
     'minecraft:lilac',

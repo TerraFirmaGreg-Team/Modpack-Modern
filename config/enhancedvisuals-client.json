@@ -363,6 +363,35 @@
         "disabled": false,
         "opacity": 1.0
       }
+    },
+    "rain": {
+      "enabled": true,
+      "opacity": 1.0,
+      "duration": {
+        "min": 100,
+        "max": 100
+      },
+      "drop": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.1,
+          "max": 0.5
+        },
+        "red": 41,
+        "green": 76,
+        "blue": 149,
+        "alpha": 255
+      },
+      "delay": {
+        "min": 0,
+        "max": 0
+      },
+      "amount": {
+        "min": 1,
+        "max": 1
+      }
     }
   }
 }
