@@ -410,17 +410,3 @@ const registerFramedBlocksRecipes = (event) => {
     }).id('framedblocks:powered_framing_saw')
 
 }
-
-// //#region Framed
-// event.shaped('framedblocks:', [
-//     '',
-//     '',
-//     ''
-// ], {
-//     A: '',
-//     B: '',
-//     C: ''
-// }).id('framedblocks:')
-
-// event.custom().id('framedblocks:framing_saw/')
-// //#endregion
