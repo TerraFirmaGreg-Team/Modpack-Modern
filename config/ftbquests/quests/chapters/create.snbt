@@ -573,6 +573,18 @@
 			x: 0.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["6C6579B8C07D4136"]
+			hide_dependency_lines: true
+			id: "2250B89A0F3DD536"
+			tasks: [{
+				id: "47FEE24AC5695718"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
 	]
 	title: "Mechanical Age"
 }
