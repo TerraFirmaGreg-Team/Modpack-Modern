@@ -3070,6 +3070,20 @@ const registerTFCRecipes = (event) => {
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
         .id('tfg:smelting/fireclay_brick')
 
+    // Salt Water
+    generateMixerRecipe(
+        event, 
+        ['#forge:dusts/salt'], 
+        Fluid.of('minecraft:water', 1000),
+        [],
+        null,
+        Fluid.of('tfc:salt_water', 1000),
+        40,
+        7,
+        64,
+        'tfg:tfc/salt_water'
+    )
+
     // Lamp Glass
     event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass`)             
         .itemInputs('#tfc:glass_batches')

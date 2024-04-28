@@ -66,7 +66,7 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.centrifuge('centrifuging_tfc_salt_water')             
         .inputFluids(Fluid.of('tfc:salt_water', 1000))
         .itemOutputs('1x gtceu:salt_dust')
-        .outputFluids(Fluid.of('minecraft:water', 500))
+        .outputFluids(Fluid.of('minecraft:water', 1000))
         .duration(51)
         .EUt(30)
 

@@ -5,7 +5,13 @@ const registerAE2Recipes = (event) => {
     // Удаление рецептов мода
     event.remove({ not: [
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
-        { id: 'ae2:transform/fluix_crystals' }
+        { id: 'ae2:transform/fluix_crystals' },
+        { id: 'ae2:network/parts/energy_acceptor' },
+        { id: 'ae2:network/blocks/energy_energy_acceptor_alt' },
+        { id: 'ae2:network/blocks/pattern_providers_interface_part' },
+        { id: 'ae2:network/blocks/pattern_providers_interface_alt' },
+        { id: 'ae2:network/blocks/interfaces_interface_part' },
+        { id: 'ae2:network/blocks/interfaces_interface_alt' },
     ], mod: 'ae2' });
 
     //#region Рецепты энтропии
@@ -370,13 +376,6 @@ const registerAE2Recipes = (event) => {
         E: 'ae2:engineering_processor'
     }).id('tfg:crafting/spatial_io_port')
 
-    // Interfaces
-    event.shapeless('ae2:interface', ['ae2:cable_interface'])
-        .id('tfg:crafting/interface')
-
-    event.shapeless('ae2:cable_interface', ['ae2:interface'])
-        .id('tfg:crafting/cable_interface')
-
     // Monitors
     event.shapeless('ae2:semi_dark_monitor', ['ae2:dark_monitor'])
         .id('tfg:crafting/semi_dark_monitor_2')
@@ -410,14 +409,6 @@ const registerAE2Recipes = (event) => {
         B: 'gtceu:hv_electric_piston',
         C: '#gtceu:circuits/hv',
     }).id('tfg:crafting/condenser')
-
-    
-    // Cable Pattern Provider
-    event.shapeless('ae2:pattern_provider', ['ae2:cable_pattern_provider'])
-        .id('tfg:crafting/pattern_provider')
-    
-    event.shapeless('ae2:cable_pattern_provider', ['ae2:pattern_provider'])
-        .id('tfg:crafting/cable_pattern_provider')
     
     // Toggle Bus
     event.shapeless('ae2:toggle_bus', ['ae2:inverted_toggle_bus'])
@@ -530,6 +521,30 @@ const registerAE2Recipes = (event) => {
         D: 'gtceu:hv_lithium_battery',
         E: '#forge:rods/steel',
     }).id('tfg:crafting/color_applicator')
+
+    // Energy Cell
+    event.recipes.gtceu.assembler('tfg:ae2/energy_cell')
+        .itemInputs('gtceu:titanium_frame', '6x gtceu:titanium_plate', '24x gtceu:titanium_screw', 'gtceu:energy_crystal')
+        .itemOutputs('ae2:energy_cell')
+        .circuit(1)
+        .duration(960)
+        .EUt(256)
+
+    // Dense Energy Cell
+    event.recipes.gtceu.assembler('tfg:ae2/dense_energy_cell')
+        .itemInputs('8x ae2:energy_cell', '8x gtceu:silver_quadruple_wire', '4x #gtceu:circuits/ev')
+        .itemOutputs('ae2:dense_energy_cell')
+        .circuit(1)
+        .duration(960)
+        .EUt(512)
+
+    // Energy Acceptor
+    event.recipes.gtceu.assembler('tfg:ae2/energy_acceptor')
+        .itemInputs('5x gtceu:silver_double_cable', 'gtceu:hv_1a_energy_converter', 'gtceu:annealed_copper_single_cable')
+        .itemOutputs('ae2:energy_acceptor')
+        .circuit(1)
+        .duration(520)
+        .EUt(128)
 
     // Glass Cable
     event.recipes.gtceu.assembler('fluix_glass_cable')
