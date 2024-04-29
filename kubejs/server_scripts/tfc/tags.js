@@ -33,6 +33,15 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:pileable_ingots', '#forge:ingots')
     event.add('tfc:pileable_sheets', '#forge:plates')
 
+    // Рыба
+    event.add('minecraft:fishes', 'tfc:food/calamari')
+    event.add('minecraft:fishes', 'tfc:food/bluegill')
+    event.add('minecraft:fishes', 'tfc:food/crappie')
+    event.add('minecraft:fishes', 'tfc:food/lake_trout')
+    event.add('minecraft:fishes', 'tfc:food/largemouth_bass')
+    event.add('minecraft:fishes', 'tfc:food/rainbow_trout')
+    event.add('minecraft:fishes', 'tfc:food/smallmouth_bass')
+
     // Чтобы жарились бревна из TFC в пиролиз. печке
     // Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
     global.TFC_WOOD_TYPES.forEach(woodType => {
