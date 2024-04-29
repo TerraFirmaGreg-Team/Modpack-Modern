@@ -303,7 +303,7 @@ compat:
 
     # Enable GTEU to Platform native (and vice versa) Converters.
     # Default: false
-    enablePlatformConverters: false
+    enablePlatformConverters: true
 
     # Platform native Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
