@@ -1,5 +1,5 @@
-name: Release
-run-name: "Release #${{ github.run_number }}"
+name: Build
+run-name: "Build #${{ github.run_number }}"
 
 on:
   push:
