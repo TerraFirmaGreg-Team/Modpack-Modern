@@ -1,81 +1,81 @@
 # Changelog
 
-## [0.7.3] - Ожидается 30.04.2024
+## [0.7.3] - Expected 30.04.2024
 ### Features
-- Теперь Spout может наливать жидкость(металл) в формы TFC.
-- Теперь при установке пластин, слитков, двойных слитков TFC на землю они будут принимать цвет, который указан в GTCEu.
-- Добавлены/улучшены рецепты крафта и декрафта таких TFC предметов как: Brass Mechanisms, Anvil, Unfinished Lamp, Lamp, Trapdoor, Chain.
-- Добавлены новые молды для отливки в GTCEu, как раз для того что было описано выше.
-- Добалены рецепты декрафта toolHeadBuzzSaw, toolHeadScrewdriver, toolHeadDrill, toolHeadChainsaw, toolHeadWrench.
-- Теперь рецепты оголовий инструментов из гемов используют стеклянную линзу в своем рецепте, а не стеклянную желтую линзу.
-- Множество рецептов добавляемых при помощи TerraFirmaGregCore теперь используют более логичные числа длительности и количества энергии для рецептов.
-- Добавлены рецепты двойных слитков в Bender.
-- Добавлены рецепты декрафта двойных слитков.
-- Добавлен рецепт переработки двойных слитков в пластины в ForgeHammer.
-- Добавлены рецепты переработки мелких кусков руды из TFC в пыль GTCEu.
-- Выполнен переезд различных предметов и рецептов на айди tfg, что может повлечь удаление некоторых предметов из вашего мира, например молдов GTCEu, но ничего перетерпим.
-- Убрана возможность выбирать другие генераторы мира, кроме того, что добавляет TFC.
-- Теперь во вкладке EMI, где отображаются жилы, которые спавнятся в мире отображаются не только обычные куски руды, но и бедные, богатые.
-- Добавлена переработка оголовий из ванильного грега, например электро-пилы или бура в материалы из которых они были созданы.
-- Добавлена возможность рандомного поворота поверхностных кусков руды из GTCEu.
-- Улучшена интеграция Create и различных блоков из FirmaLife.
-- Улучшена интеграция TFC-Ambiental и различных блоков (например были добавлены: лед, плотный лед и многие другие блоки).
-- Отключена книга гайд из TFC, так как модпак вносит слишком много изменений в TFC и книга является не актуальной, актуальная информация появится в квестах чуть позже.
-- Отключена примитивная помпа из GTCEu, вы должны теперь использовать механическую из Create.
-- Отключены бесконечное выкачивание воды из любых источников воды, теперь установлено базовое значение в 1млн. блоков для бесконечного источника, веселитесь.
-- Отключен рецепт кавера на бесконечную воду, ха-ха.
-- Настроен CarryOn.
-- Изменен рецепт для шестерней из create, теперь он использует обработанные креозотом доски.
-- Изменены квесты, чтобы соответствовать удалению примитивной помпы.
-- Улучшены рецепты FirmaLife, те самые, которые добавляются ассемблером, а так же раскрафт в металл / пыли грега.
-- Улучшены рецепты FirmaCiv, те самые, которые добавляются ассемблером, а так же раскрафт в металл.
-- Добавлены рецепты/квесты для AE2InfinityCard.
-- Добавлены рецепты/квесты для AE2NetworkAnalyzer.
-- Добавлен рецепт ванильного ведра в assembler.
-- Добавлен рецепт тонированного стекла через GTCEu машины.
-- Возвращены в игру блоки кораллов, так как они все таки появляются в TFC.
-- Если вы держите в руке щипцы из TFCHotOrNot и у вас в инвентаре горячий слиток GTCEu, то вы не будете получать урон.
-- Добавлены рецепты/квесты для TFCHotOrNot.
-- Добавлено больше вариантов удобрений исходящих из GTCEu предметов.
-- Добавлены новые рецепты для рельсовых путей, которые были добавлены в обновлении Steam&Rails.
-- Добавлена возможность класть электро инструменты GTCEu в стойку для инструментов.
-- Добавлены рецепты для CreateConnected.
-- Добавлены рецепты/квесты для FramedBlocks.
-- Возвращены ячейки энергии из AE2, так как нужны для перемещения блоков при помощи пространственных пилонов.
-- Добавлен рецепт морской воды TFC.
-- Переименована соленая вода TFC в морскую воду.
-- Включены рецепты для конвертеров энергии из GTCEu.
-- Возвращен рецепт для конвертера энергии AE2, нужен, чтобы запитывать пилоны или ячейки из AE2.
+- Using Spout from Create, you can now pour metal into TFC molds.
+- Now, when placing ingots, double ingots and plates, they will take the color from GTCEu, that is, they will be painted automatically.
+- Improved crafting and decraft recipes for such TFC items: Brass Mechanisms, Anvil, Unfinished Lamp, Lamp, Trapdoor, Chain, etc.
+- Added 5 new types of molds for casting various items specified in the last line.
+- Added decraft recipes for: toolHeadBuzzSaw, toolHeadScrewdriver, toolHeadDrill, toolHeadChainsaw, toolHeadWrench.
+- Now, gem tool headband recipes use a glass lens in their recipe, rather than a glass yellow lens.
+- A lot of recipes added using TerraFirmaGregCore now use more logical numbers of duration and amount of energy for recipes.
+- Added recipes for double ingots in Bender.
+- Added recipes for decrafting double ingots.
+- Added a recipe for processing double ingots into plates in ForgeHammer.
+- Added recipes for processing small pieces of ore from TFC into GTCEu dust.
+- The transfer of various items and recipes to the tfg ID has been completed, which may entail the removal of some items from your world, for example, GTCEu molds.
+- Removed the ability to select other generators of the world, except for what TFC adds.
+- Now, in the EMI tab, where the veins that spawn in the world are displayed, not only ordinary pieces of ore are displayed, but also poor, rich ones. (Disabled due to the lack of various ores from GTCEu, will appear in the next update, when we migrate from TFC generator to GTCEu)
+- Added the ability to randomly rotate surface pieces of ore from GTCEu.
+- Improved integration of Create and various blocks from FirmaLife.
+- Improved integration of TFC-Ambiental and various blocks (for example, ice, dense ice and many other blocks were added).
+- The guide book from TFC is disabled, since the mod pack makes too many changes to the TFC and the book is not relevant, the relevant information will appear in the quests a little later.
+- The primitive pump from GTCEu has been disabled, you must now use the mechanical one from Create.
+- Infinite pumping of water from any water sources is disabled, now the base value of 1 million blocks for an infinite source is set, have fun.
+- The recipe for the endless water cover is disabled, haha.
+- Configured CarryOn.
+- The recipe for gears from Create has been changed, now it uses creosote-treated boards.
+- Quests have been changed to match the removal of the primitive pump.
+- Improved Fermalife recipes, the ones that are added by the assembler, as well as Greg's metal/dust coloring.
+- Improved FirmaCiv recipes, the ones that are added by the assembler, and his decraft in metal values.
+- Added recipes/quests for AE2InfinityCard.
+- Added recipes/quests for AE2NetworkAnalyzer.
+- Added vanilla bucket recipe to assembler.
+- Added a tinted glass recipe via GTCEu machines.
+- Coral blocks have been returned to the game, as they still appear in TFC.
+- If you are holding tongs from TFCHotOrNot in your hand and you have a hot GTCEu ingot in your inventory, you will not receive damage.
+- Added recipes/quests for TFCHotOrNot.
+- Added more fertilizer options coming from GTCEu items.
+- Added new recipes for rail tracks that were added in the Steam&Rails update.
+- Added the ability to put GTCEu power tools in the tool rack.
+- Added recipes for CreateConnected.
+- Added recipes/quests for для FramedBlocks.
+- Energy cells from AE2 have been returned, as they are needed to move blocks using spatial pylons.
+- Added TFC sea water recipe.
+- Renamed TFC salt water to sea water.
+- Recipes for energy converters from GTCEu are enabled.
+- The recipe for the AE2 energy converter has been returned, it is needed to power pylons or cells from AE2.
+- The mod for the music player was removed, it loaded the RAM too much, it was decided to change it to another one in the next update.
 ### Fixes
-- Исправлен рецепт масла из рыбы, теперь там можно использовать любую рыбу из TFC.
-- Исправлен рецепт на золотые рельсы из ваниллы.
-- Исправлен квест на RTM койлы, а точнее его название и описание.
-- Исправлено кол-во металла содержащееся в кольцах, теперь 36.
-- Исправлено кол-во металла содержащиеся в болтах, теперь 18.
-- Исправлено кол-во металла содержащиеся в винтах, теперь 18.
-- Исправлен баг, когда нельзя было положить молот в стойку для инструментов.
-- Исправлен квест с компасом.
-- Исправлен рецепт огнеупорной глины в Assembler.
-- Исправлен баг с квестом на HSS-G койлы.
-- Исправлен рецепт Brass Mechanisms в Assembler, теперь выход +1.
-- Исправлен декрафт ведра в 1 слиток красной и 1 слиток синей стали.
-- Исправлен баг, когда железная дверь разбиралась в 288 металла, в место 144.
-- Исправлены баги связанные с некоторыми металлическими и не только предметами, которые крафтятся из 1 металла, например, а декрафтятся в GTCEu в 9 или более материала.
-- Исправлен баг, когда при поломке блока со слитками из TFC были белые частицы, теперь они совсем отключены.
-- Исправлен баг, когда обычный блок руды не имел в побочке кусочки пыли из породы из которой он сделан.
-- Исправлен баг, когда деревянную пластину из GTCEu было невозможно скрафтить из-за дубликатов паттернов рецептов.
-- Исправлен рецепт формы кирпичей из GTCEu из-за обновление до TFC 3.2.2.
-- Исправлен баг, когда рыболов не работал, когда установлен на соленой воде из TFC.
-- Исправлен баг, когда рыболов не работал, когда установлен на речной воде из TFC.
-- Исправлен баг, когда рыболов не тратил нитки, которые в него подавались.
-- Улучшено удаление достижений из игры, теперь еще больше свободной ОЗУ игрокам.
-- Уменьшено кол-во выхода материала из бедных кусков на 25%.
-- Исправлен баг рецептов бедных кусков руды.
-- Исправлен баг, когда не отображались микросхемы в рецептах хим. реактора используя EMI.
-- Исправлен баг, когда оповещение об использовании экспериментальных настроек все равно появлялось перед созданием нового мира.
-- Исправлен срач в консоли из-за кривых ручонок разраба CreateAdditions и рецептов прокатки create машины.
-- Исправлен кривой рецепт для bloomery после обновления TFC до 3.2.0 версии.
-- Исправлен декрафт LV машин в красную/синюю сталь вместо обычной стали.
+- Fixed the recipe for fish oil, now you can use any fish from TFC there.
+- Fixed the recipe for golden vanilla rails.
+- Fixed the quest for RTM coils, or rather its name and description.
+- Fixed the number of metal contained in the rings, now 36.
+- Fixed the number of metal contained in the bolts, now 18.
+- Fixed the number of metal contained in the screws, now 16.
+- Fixed a bug where it was impossible to put the hammer in the tool rack.
+- Fixed the compass quest.
+- Fixed the recipe for refractory clay in Assembler.
+- Fixed a bug with the quest for HSS-G coins.
+- Fixed the recipe for Brass Mechanisms in Assembler, now the output is +1.
+- Fixed the decraft of a bucket in 1 ingot of red and 1 ingot of blue steel.
+- Fixed a bug when the iron door was disassembled in 288 metal, in place 144.
+- Fixed bugs related to some metal and not only items that are crafted from 1 metal, for example, but are decoded in GTCEu in 9 or more materials.
+- Fixed a bug where there were white particles when the block with TFC ingots broke, now they are completely disabled.
+- Fixed a bug where an ordinary block of ore did not have pieces of dust from the rock it was made of in the side.
+- Fixed a bug where a wooden plate from GTCEu could not be crafted due to duplicate recipe patterns.
+- Fixed the recipe for the shape of bricks from GTCEu due to the update to TFC 3.2.2.
+- Fixed a bug where the fisher did not work when installed on salt water from TFC.
+- Fixed a bug where the fisher did not work when installed on river water from TFC.
+- Fixed a bug where the fisher did not waste the threads that were fed into it.
+- Improved the removal of achievements from the game, now there is even more free RAM for players.
+- Reduced the amount of material output from poor pieces by 25%.
+- Fixed a bug with recipes for poor pieces of ore.
+- Fixed a bug where chips were not displayed in chemical reactor recipes using EMI.
+- Fixed a bug where an alert about using experimental settings appeared anyway before creating a new world.
+- Fixed a bug in the console due to crooked CreateAdditions development handles and create machine rolling recipes.
+- Fixed a bad recipe for bloomery after updating TFC to version 3.2.0.
+- Fixed the decraft of LV machines in red/blue steel instead of regular steel.
 ### Updated mods
 - Clumps -> 12.0.0.4
 - CraftPresence -> 2.3.9
@@ -148,7 +148,6 @@
 ### Removed mods
 - Bobby
 - Starlight
-
 
 ## [0.7.2] - 22.03.2024
 ### Changes
