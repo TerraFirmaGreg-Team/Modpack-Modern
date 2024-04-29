@@ -1,6 +1,9 @@
 // priority: 0
 
 const registerMegaCellsRecipes = (event) => {
+    
+    event.remove({ mod: 'megacells' })
+    
     // event.recipes.gtceu.assembler('')
     //         .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
     //         .itemOutputs('megacells:mega_energy_cell')
