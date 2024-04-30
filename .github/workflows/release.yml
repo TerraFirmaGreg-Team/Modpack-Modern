@@ -97,8 +97,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Replace strings
         shell: bash
@@ -112,7 +110,7 @@ jobs:
             git submodule init
             cd mods
             git config user.name Xikaro
-            git config password ${{ secrets.GITHUB_TOKEN }}
+            git config password ${{ secrets.USER_TOKEN_XIKARO }}
             git submodule update --recursive
 
       - name: Export MMC
@@ -142,16 +140,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          submodules: true
 
       - name: Download Mods
         run: |
             git submodule init
             cd mods
-            git config user.name github-actions
-            git config user.email github-actions@github.com
+            git config user.name Xikaro
+            git config password ${{ secrets.USER_TOKEN_XIKARO }}
             git submodule update --recursive
 
       - name: Replace strings
