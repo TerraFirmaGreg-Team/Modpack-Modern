@@ -47,6 +47,9 @@
 - The recipe for the AE2 energy converter has been returned, it is needed to power pylons or cells from AE2.
 - The mod for the music player was removed, it loaded the RAM too much, it was decided to change it to another one in the next update.
 - Added salt recipe through TFC pot.
+- Added recipes/quests for MERequester.
+- Added recipes/quests for Etched.
+- Added few new recipes for minecart.
 ### Fixes
 - Fixed bug, when breaking the ship casing, it can drop copper screws from FirmaCiv (WIP).
 - Fixed the recipe for fish oil, now you can use any fish from TFC there.
