@@ -18,8 +18,8 @@ jobs:
     name: Project Info
     runs-on: ubuntu-latest
     outputs:
+      project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
-      project_version: ${{ steps.project_version.outputs.value }}
       mc_version: ${{ steps.mc_version.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
     
@@ -28,20 +28,13 @@ jobs:
         uses: actions/checkout@v4.1.1
 
       - name: Get tag
-        id: version
-        uses: "WyriHaximus/github-action-get-previous-tag@v1.3.0"
+        id: project_version
+        uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
         with:
           fallback: tag_not_found
 
       - name: Get project name
         id: project_name
-        uses: ActionsTools/read-json-action@main
-        with:
-          file_path: ".github/buildtools/modpack/manifest.json"
-          prop_path: "name"
-
-      - name: Get project name
-        id: project_version
         uses: ActionsTools/read-json-action@main
         with:
           file_path: ".github/buildtools/modpack/manifest.json"
