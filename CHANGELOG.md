@@ -48,6 +48,7 @@
 - The mod for the music player was removed, it loaded the RAM too much, it was decided to change it to another one in the next update.
 - Added salt recipe through TFC pot.
 ### Fixes
+- Fixed bug, when breaking the ship casing, it can drop copper screws from FirmaCiv (WIP).
 - Fixed the recipe for fish oil, now you can use any fish from TFC there.
 - Fixed the recipe for golden vanilla rails.
 - Fixed the quest for RTM coils, or rather its name and description.
