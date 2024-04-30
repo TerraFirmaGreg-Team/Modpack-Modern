@@ -74,7 +74,7 @@
 			}]
 			title: "Super Batteries"
 			x: 3.375d
-			y: -3.0d
+			y: -4.125d
 		}
 		{
 			dependencies: [
@@ -96,7 +96,7 @@
 				type: "item"
 			}]
 			title: "HV Autoclave"
-			x: 2.25d
+			x: 3.375d
 			y: -3.0d
 		}
 		{
@@ -1275,6 +1275,18 @@
 			}]
 			x: 5.625d
 			y: -8.0d
+		}
+		{
+			dependencies: ["16A6AE5C770DB83A"]
+			id: "05ABC370D7153350"
+			size: 0.75d
+			tasks: [{
+				id: "6D522B2EF097AA95"
+				item: "gtceu:hv_mixer"
+				type: "item"
+			}]
+			x: 2.25d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]

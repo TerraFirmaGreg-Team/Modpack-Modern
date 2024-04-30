@@ -5151,6 +5151,7 @@
 		{
 			dependencies: ["4F5C883CC5282151"]
 			id: "2A3FEA1A48B598D1"
+			size: 1.5d
 			tasks: [{
 				id: "616E6313036EF00C"
 				item: "framedblocks:framed_cube"
@@ -5158,6 +5159,104 @@
 			}]
 			x: 9.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["6156D157921CC5A8"]
+			id: "6EB5582F224A7D9E"
+			tasks: [{
+				id: "5C217C7C0FB5DC97"
+				item: "etched:etching_table"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["6156D157921CC5A8"]
+			id: "3F197DAB22F73BD1"
+			tasks: [{
+				id: "4D6AB30FD04E29E1"
+				item: "etched:album_jukebox"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6156D157921CC5A8"]
+			id: "7169A1209E35121A"
+			tasks: [{
+				id: "2E6731CF239E5118"
+				item: "etched:radio"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["6156D157921CC5A8"]
+			id: "3FE5DFFD7F79426E"
+			tasks: [{
+				id: "0714CB1F55EC4D1B"
+				item: "etched:jukebox_minecart"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["6156D157921CC5A8"]
+			id: "00DAC3E31BDB0775"
+			tasks: [{
+				id: "07EA44BEC48D43E3"
+				item: "etched:boombox"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["754CA10FD1725EC6"]
+			id: "38469FBD2B7998C1"
+			tasks: [{
+				id: "5B2D048464054ACA"
+				item: {
+					Count: 1b
+					id: "etched:music_label"
+					tag: {
+						Label: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 24.5d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"4CDE17A99074ADE2"
+				"2658E7679CD42ACD"
+			]
+			hide_dependency_lines: true
+			id: "754CA10FD1725EC6"
+			tasks: [{
+				id: "1E751F479E4D6B0A"
+				item: "etched:album_cover"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["38469FBD2B7998C1"]
+			id: "6156D157921CC5A8"
+			tasks: [{
+				id: "09CBD3F693A3CA6C"
+				item: "etched:blank_music_disc"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 24.0d
 		}
 	]
 	title: "Primitive Age"
