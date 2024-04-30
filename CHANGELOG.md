@@ -126,7 +126,7 @@
 ### New Mods
 - AE2NetworkAnalyzer
 - AEInfinityBooster
-- ae2insertexportcard
+- AE2insertexportcard
 - ExtendedAE
 - TFCDesirePaths
 - TFCHotOrNot
@@ -163,7 +163,7 @@
 ### Updated mods
 - TFG-Core -> 0.4.10
 - cc-tweaked -> 1.110.0
-- o_a_barrel_roll -> 3.5.3
+- Do_a_barrel_roll -> 3.5.3
 - moonlight -> 2.11.9
 - sophisticatedbackpacks -> 3.20.3.1034
 - modelfix -> 1.15
