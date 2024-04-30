@@ -14,13 +14,13 @@ env:
   RELEASE_TYPE: "RELEASE"
 
 jobs:
-  modpack-info:
-    name: Modpack Info
+  info:
+    name: Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_name: ${{ steps.info.outputs.project_name }}
-      project_version: ${{ steps.info.outputs.project_version }}
-      mc_version: ${{ steps.info.outputs.mc_version }}
+      project_name: ${{ steps.project_name.outputs.value }}
+      project_version: ${{ steps.project_version.outputs.value }}
+      mc_version: ${{ steps.mc_version.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
     
     steps:
@@ -33,28 +33,26 @@ jobs:
         with:
           fallback: tag_not_found
 
-      - name: Modpack info
-        id: info
-        shell: bash
-        run: |
-          set +e
+      - name: Get project name
+        id: project_name
+        uses: ActionsTools/read-json-action@main
+        with:
+          file_path: ".github/buildtools/modpack/manifest.json"
+          prop_path: "name"
 
-          if [ ! -f ./.github/buildtools/modpack/manifest.json ]; then
-            echo "::error::Could not find manifest.json" && exit 1
-          fi
-          manifestjson=`cat ./.github/buildtools/modpack/manifest.json`
+      - name: Get project name
+        id: project_version
+        uses: ActionsTools/read-json-action@main
+        with:
+          file_path: ".github/buildtools/modpack/manifest.json"
+          prop_path: "name"
 
-          project_name=`echo $(jq -r '.name' <<< "$manifestjson")`
-          echo "project_name=$project_name" >> $GITHUB_OUTPUT
-
-          mc_version=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
-          echo "mc_version=$mc_version" >> $GITHUB_OUTPUT
-
-          if [[ ${{ startsWith(github.ref, 'refs/tags/') }} == true ]]; then
-            echo "project_version=${{ steps.version.outputs.tag }}" >> $GITHUB_OUTPUT
-          else
-            echo "project_version=build.${{ github.run_number }}" >> $GITHUB_OUTPUT
-          fi
+      - name: Get project name
+        id: mc_version
+        uses: ActionsTools/read-json-action@main
+        with:
+          file_path: ".github/buildtools/modpack/manifest.json"
+          prop_path: "minecraft.version"
 
       - name: Changelog Parser
         id: changelog
@@ -65,15 +63,18 @@ jobs:
   build-cf-modpack:
     name: Build CF Modpack
     runs-on: ubuntu-latest
-    needs: [modpack-info]
+    needs: [info]
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: true
 
       - name: Replace strings
         shell: bash
         run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
+          VERSION=${{ needs.info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
@@ -83,27 +84,30 @@ jobs:
           mv -vf {config,defaultconfigs,kubejs}  overrides/
           mv -vf .github/buildtools/modpack/manifest.json ./
           mv -vf .github/buildtools/modpack/modlist.html ./
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
+          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
 
       - name: Upload zip cf
         uses: actions/upload-artifact@v4.0.0
         with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
-          path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
           retention-days: 5
 
   build-mmc-modpack:
     name: Build MMC Modpack
     runs-on: ubuntu-latest
-    needs: [modpack-info]
+    needs: [info]
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: true
 
       - name: Replace strings
         shell: bash
         run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
+          VERSION=${{ needs.info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/instance.cfg
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
@@ -111,9 +115,8 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config --global credential.helper '!f() { 
-              echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+            git config user.name github-actions
+            git config user.email github-actions@github.com
             git submodule update --recursive
 
       - name: Export MMC
@@ -127,36 +130,38 @@ jobs:
           mv -vf .github/buildtools/modpack/manifest.json flame/
           find .minecraft/mods -name "probejs-*" -delete;
           find .minecraft/mods -name ".git" -delete;
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip mmc
         uses: actions/upload-artifact@v4.0.0
         with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc
-          path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
           retention-days: 5
 
   build-serverpack:
     name: Build Serverpack
     runs-on: ubuntu-latest
-    needs: [modpack-info]
+    needs: [info]
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: true
 
       - name: Download Mods
         run: |
             git submodule init
             cd mods
-            git config --global credential.helper '!f() { 
-              echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
+            git config user.name github-actions
+            git config user.email github-actions@github.com
             git submodule update --recursive
 
       - name: Replace strings
         shell: bash
         run: |
-          VERSION=${{ needs.modpack-info.outputs.project_version }}
+          VERSION=${{ needs.info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
@@ -165,19 +170,18 @@ jobs:
           mkdir -p .minecraft
           mv -vf {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
           cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
-          find .minecraft/mods -name "SimpleLogin-*" -delete;
-          zip -r ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip .minecraft/*
+          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip .minecraft/*
 
       - name: Upload zip
         uses: actions/upload-artifact@v4.0.0
         with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
-          path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
           retention-days: 5
 
   release-curseforge:
     name: Deploy to CurseForge
-    needs: [modpack-info, build-cf-modpack, build-serverpack]
+    needs: [info, build-cf-modpack, build-serverpack]
     runs-on: ubuntu-latest
     outputs:
       cf_release_id: ${{ steps.cf_release.outputs.id }}
@@ -192,12 +196,12 @@ jobs:
       - name: Download cf modpack
         uses: actions/download-artifact@v4.1.0
         with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
 
       - name: Download serverpack
         uses: actions/download-artifact@v4.1.0
         with:
-          name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
 
       - name: Upload Curseforge
         id: cf_release
@@ -205,13 +209,13 @@ jobs:
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ vars.CF_MODPACK_ID }}
-          modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
-          modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-          changelog: ${{ needs.modpack-info.outputs.changelog }}
+          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+          modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
+          changelog: ${{ needs.info.outputs.changelog }}
           changelog-format: markdown
-          game-version: ${{ needs.modpack-info.outputs.mc_version }}
-          display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
-          server-display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+          game-version: ${{ needs.info.outputs.mc_version }}
+          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
+          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
           release-type: ${{ env.RELEASE_TYPE }}
 
   # release-modrinth:
@@ -241,18 +245,18 @@ jobs:
     #       with:
     #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
     #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
-    #         modpack-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mrd.zip
-    #         modpack-server-path: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-    #         changelog: ${{ needs.modpack-info.outputs.changelog }}
+    #         modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mrd.zip
+    #         modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
+    #         changelog: ${{ needs.info.outputs.changelog }}
     #         changelog-format: markdown
-    #         game-version: ${{ needs.modpack-info.outputs.mc_version }}
-    #         display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}
-    #         server-display-name: ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server
+    #         game-version: ${{ needs.info.outputs.mc_version }}
+    #         display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
+    #         server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
     #         release-type: ${{ env.RELEASE_TYPE }}
 
   release-github:
     name: Deploy to GitHub
-    needs: [modpack-info, build-cf-modpack, build-mmc-modpack, build-serverpack]
+    needs: [info, build-cf-modpack, build-mmc-modpack, build-serverpack]
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
@@ -265,19 +269,19 @@ jobs:
         with:
           prerelease: false
           generate_release_notes: true
-          name: ${{ needs.modpack-info.outputs.project_version }}
-          body: ${{ needs.modpack-info.outputs.changelog }}
+          name: ${{ needs.info.outputs.project_version }}
+          body: ${{ needs.info.outputs.changelog }}
           files: |
-            ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-cf.zip
-            ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-mmc.zip
-            ${{ needs.modpack-info.outputs.project_name }}-${{ needs.modpack-info.outputs.project_version }}-server.zip
-          tag_name: ${{ needs.modpack-info.outputs.project_version }}
+            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
+            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
+          tag_name: ${{ needs.info.outputs.project_version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
     name: Discord Message
-    needs: [modpack-info, release-github, release-curseforge]
+    needs: [info, release-github, release-curseforge]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -286,22 +290,22 @@ jobs:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
           avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
-          embed-title: Release ${{ needs.modpack-info.outputs.project_version }}
-          embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.modpack-info.outputs.project_version }}
+          embed-title: Release ${{ needs.info.outputs.project_version }}
+          embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}
           embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
-            **GameVersion**: `${{ needs.modpack-info.outputs.mc_version }}`
+            **GameVersion**: `${{ needs.info.outputs.mc_version }}`
             **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
 
             ** Сhangelog **
-            ```${{ needs.modpack-info.outputs.changelog }}```
+            ```${{ needs.info.outputs.changelog }}```
             ** [More details...](https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/blob/main/CHANGELOG.md) **
           embed-color: 5814783
 
   # close-fixed-issues:
   #   name: Close Fixed Issues
-  #   needs: [modpack-info, release-github, release-curseforge]
+  #   needs: [info, release-github, release-curseforge]
   #   runs-on: ubuntu-latest
   #   steps:
   #     - name: Checkout
@@ -311,7 +315,7 @@ jobs:
   #       uses: juraj-hrivnak/close-issues-based-on-label@master
   #       env:
   #         LABEL: "2. Status: Fixed in Dev"
-  #         VERSION: ${{ needs.modpack-info.outputs.project_version }}
+  #         VERSION: ${{ needs.info.outputs.project_version }}
   #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       
