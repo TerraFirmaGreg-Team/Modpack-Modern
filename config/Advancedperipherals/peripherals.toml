@@ -1,0 +1,161 @@
+
+#Peripherals config
+[Peripherals]
+
+	[Peripherals.Player_Detector]
+		#Enable the Player Detector or not.
+		enablePlayerDetector = true
+		#The max range of the player detector functions. If anyone use a higher range, the detector will use this max range. -1 for unlimited
+		#Range: > -1
+		playerDetMaxRange = -1
+		#Activates the "getPlayerPos" function of the Player Detector
+		enablePlayerPosFunction = true
+		#Adds more information to `getPlayerPos` of the Player Detector. Like rotation and dimension
+		morePlayerInformation = true
+		#If true, the player detector can observe players which aren't in the same dimension as the detector itself. `playerDetMaxRange` needs to be infinite(-1) for it to work.
+		chatBoxMultiDimensional = true
+		#If true, add random error to `getPlayerPos` player position that varies based on how far the player is from the detector. Prevents getting the exact position of players far from the detector.
+		enablePlayerPosRandomError = false
+		#The maximum amount of error (in blocks) that can be applied to each axis of the player's position.
+		#Range: > 0
+		playerPosRandomErrorAmount = 1000
+		#If random error is enabled: this is the maximum range at which an exact player position is returned, before random error starts to be applied.
+		#Range: > 0
+		playerPosPreciseMaxRange = 100
+
+	[Peripherals.Energy_Detector]
+		#Enable the Energy Detector or not.
+		enableEnergyDetector = true
+		#Defines the maximum energy flow of the energy detector.
+		#Range: > 1
+		energyDetectorMaxFlow = 2147483647
+
+	[Peripherals.NBT_Storage]
+		#Enable the nbt storage block or not
+		enableNBTStorage = true
+		#Defines max nbt string length that can be stored in nbt storage
+		#Range: > 0
+		nbtStorageMaxSize = 1048576
+
+	[Peripherals.Chunky_Turtle]
+		#Enable the Chunky Turtle or not.
+		enableChunkyTurtle = true
+		#Time in seconds, while loaded chunk can be consider as valid without touch
+		#Range: > 60
+		chunkLoadValidTime = 600
+		#Radius in chunks a single chunky turtle will load. The default value (0) only loads the chunk the turtle is in, 1 would also load the 8 surrounding chunks (9 in total) and so on
+		#Range: 0 ~ 16
+		chunkyTurtleRadius = 0
+
+	[Peripherals.Chat_Box]
+		#Enable the Chat Box or not.
+		enableChatBox = true
+		#Defines default chatbox prefix
+		defaultChatBoxPrefix = "AP"
+		#Defines the maximal range of the chat box in blocks. -1 for infinite. If the range is not -1, players in other dimensions won't able to receive messages
+		#Range: -1 ~ 30000000
+		chatBoxMaxRange = -1
+		#If true, the chat box is able to send messages to other dimensions than its own
+		chatBoxMultiDimensional = true
+
+	[Peripherals.ME_Bridge]
+		#Enable the Me Bridge or not.
+		enableMeBridge = true
+		#Power consumption per tick.
+		#Range: > 0
+		mePowerConsumption = 10
+
+	[Peripherals.RS_Bridge]
+		#Enable the Rs Bridge or not.
+		enableRsBridge = true
+		#Power consumption per tick.
+		#Range: > 0
+		rsPowerConsumption = 10
+
+	[Peripherals.Environment_Detector]
+		#Enable the Environment Detector or not.
+		enableEnvironmentDetector = true
+
+	[Peripherals.AR_Controller]
+		#Enable the AR goggles or not.
+		enableARGoggles = true
+
+	[Peripherals.Inventory_Manager]
+		#Enable the inventory manager or not.
+		enableInventoryManager = true
+
+	[Peripherals.Redstone_Integrator]
+		#Enable the redstone integrator or not.
+		enableRedstoneIntegrator = true
+
+	[Peripherals.Block_Reader]
+		#Enable the block reader or not.
+		enableBlockReader = true
+
+	[Peripherals.Geo_Scanner]
+		#Enable the geo scanner or not.
+		enableGeoScanner = true
+
+	[Peripherals.Colony_Integrator]
+		#Enable the colony integrator or not.
+		enableColonyIntegrator = true
+
+	[Peripherals.Compass_Turtle]
+		#Enable the compass turtle or not.
+		enableCompassTurtle = true
+
+	[Peripherals.Powered_Peripherals]
+		#Enable RF storage for peripherals, that could use it
+		enablePoweredPeripherals = false
+		#Defines max energy storage in any powered peripheral
+		#Range: > 1000000
+		poweredPeripheralMaxEnergyStored = 100000000
+
+	[Peripherals.Pocket_Peripherals]
+		#If true, pockets will have infinite fuel
+		disablePocketFuelConsumption = true
+
+	[Peripherals.Operations]
+		#Range: > 1000
+		digCooldown = 1000
+		#Range: > 0
+		digCost = 1
+		#Range: > 1000
+		useOnBlockCooldown = 5000
+		#Range: > 0
+		useOnBlockCost = 1
+		#Range: > 1000
+		suckCooldown = 1000
+		#Range: > 0
+		suckCost = 1
+		#Range: > 1000
+		useOnAnimalCooldown = 2500
+		#Range: > 0
+		useOnAnimalCost = 10
+		#Range: > 1000
+		captureAnimalCooldown = 50000
+		#Range: > 0
+		captureAnimalCost = 100
+		#Range: > 1000
+		warpCooldown = 1000
+		#Range: > 0
+		warpCost = 1
+		#Range: > 1000
+		scanBlocksCooldown = 2000
+		#Range: > 1
+		scanBlocksMaxFreeRadius = 8
+		#Range: > 1
+		scanBlocksMaxCostRadius = 16
+		#Range: 0.1 ~ 1.7976931348623157E308
+		scanBlocksExtraBlockCost = 0.17
+		#Range: > 1000
+		scanEntitiesCooldown = 2000
+		#Range: > 1
+		scanEntitiesMaxFreeRadius = 8
+		#Range: > 1
+		scanEntitiesMaxCostRadius = 16
+		#Range: 0.1 ~ 1.7976931348623157E308
+		scanEntitiesExtraBlockCost = 0.17
+		#Range: > 1000
+		chatMessageCooldown = 1000
+

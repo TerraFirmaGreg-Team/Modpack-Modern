@@ -1,0 +1,32 @@
+
+#Config for metaphysics
+[Metaphysics]
+	#Defines energy to fuel rate
+	#Range: > 575
+	energyToFuelRate = 575
+	enableWeakAutomataCore = true
+	enableEndAutomataCore = true
+	enableHusbandryAutomataCore = true
+	#Defines max warp point stored in warp core. Mostly need to not allow NBT overflow error
+	#Range: > 1
+	endAutomataCoreWarpPointLimit = 64
+	#Chance that overpowered automata will break after rotation cycle
+	#Range: 0.0 ~ 1.0
+	overpoweredAutomataBreakChance = 0.002
+	#Range: 1 ~ 64
+	tier1AutomataCoreInteractionRadius = 2
+	#Range: 1 ~ 32
+	tier1AutomataCoreMaxFuelConsumptionRate = 2
+	#Range: 1 ~ 64
+	tier2AutomataCoreInteractionRadius = 4
+	#Range: 1 ~ 32
+	tier2AutomataCoreMaxFuelConsumptionRate = 3
+	#Range: 1 ~ 64
+	overpoweredTier1AutomataCoreInteractionRadius = 4
+	#Range: 1 ~ 32
+	overpoweredTier1AutomataCoreMaxFuelConsumptionRate = 3
+	#Range: 1 ~ 64
+	overpoweredTier2AutomataCoreInteractionRadius = 6
+	#Range: 1 ~ 32
+	overpoweredTier2AutomataCoreMaxFuelConsumptionRate = 4
+

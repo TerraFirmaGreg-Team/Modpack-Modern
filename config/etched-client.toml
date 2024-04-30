@@ -1,0 +1,7 @@
+
+["Game Feel"]
+	#Displays note particles appear above jukeboxes while a record is playing.
+	"Display Note Particles" = true
+	#Always plays tracks in stereo even when in-world
+	"Force Stereo" = false
+

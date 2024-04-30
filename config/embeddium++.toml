@@ -33,17 +33,16 @@
 		#Depending of the case may increase performance
 		#Gives a flat style text
 		fontShadows = true
-		#Toggles FastChest feature
-		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
-		fastChest = false
-		#Toggles FastBeds feature
-		fastBed = false
+		#Sets culling mode
+		#Reduces number of visible faces when the neighbor blocks are leaves
+		#Allowed Values: ALL, OFF
+		leavesCulling = "OFF"
 
 		[embeddiumplus.performance.distanceCulling]
 
 			[embeddiumplus.performance.distanceCulling.entities]
-				#Toggles distance culling for entities
-				#Maybe you use another mod for that :(
+				#Toggles distance culling for entities, doesn't affect monsters culling
+				#Check the options below
 				enable = true
 				#List of all Entities to be ignored by distance culling
 				#Uses ResourceLocation to identify it
@@ -58,6 +57,24 @@
 				#Value is raw
 				#Range: 0 ~ 512
 				cullingMaxDistanceY = 32
+
+				[embeddiumplus.performance.distanceCulling.entities.monsters]
+					#Toggles distance culling for monsters (or hostile entities, whatever you want to call it), doesn't affect neutral/pacific entities
+					#Check the options above
+					enable = false
+					#Configure horizontal max distance before cull monster entities
+					#Value is squared, default was 64^2 (or 64x64)
+					#Range: > 0
+					cullingMaxDistanceX = 16384
+					#Configure vertical max distance before cull monster entities
+					#Value is raw
+					#Range: 0 ~ 512
+					cullingMaxDistanceY = 64
+					#List of all monster entities to be ignored by distance culling
+					#Uses ResourceLocation to identify it
+					#Example 1: "minecraft:bat" - Ignores bats only
+					#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
+					whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*"]
 
 			[embeddiumplus.performance.distanceCulling.tileEntities]
 				#Toggles distance culling for Block Entities
@@ -76,6 +93,13 @@
 				#Value is raw
 				#Range: 0 ~ 512
 				cullingMaxDistanceY = 32
+
+		[embeddiumplus.performance.fastModels]
+			#Toggles FastChest feature
+			#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
+			enableChests = false
+			#Toggles FastBeds feature
+			enableBeds = false
 
 	[embeddiumplus.dynlights]
 		#Toggle if Block Entities should have dynamic lights

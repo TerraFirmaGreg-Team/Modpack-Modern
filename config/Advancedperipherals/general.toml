@@ -1,0 +1,13 @@
+
+#Config to adjust general mod settings
+[General]
+	#Enables the debug mode. Only enable it if needed.
+	enableDebugMode = false
+
+[Core]
+	#Enables initial cooldown on peripheral initialization
+	isInitialCooldownEnabled = true
+	#Determinates initial cooldown sensitive level, values lower then this value will not trigger initial cooldown
+	#Range: > 0
+	initialCooldownSensitiveLevel = 6000
+

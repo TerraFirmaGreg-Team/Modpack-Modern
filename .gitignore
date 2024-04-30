@@ -22,8 +22,8 @@ CustomSkinLoader/*
 screenshots/*
 shaderpacks/*
 chiselsandbits/*
-.vscode/
-.kubejsd/
+.vscode/*
+.new_mods/*
 
 # Extensions
 **/*.log

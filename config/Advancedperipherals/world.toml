@@ -1,0 +1,11 @@
+
+#Config to adjust world settings
+[World]
+	#Enable the villager structures for the computer scientist.
+	enableVillagerStructures = true
+	#Gives the ap documentation to new players.
+	givePlayerBookOnJoin = true
+	#The weight of the villager structures.
+	#Range: 0 ~ 16000
+	villagerStructureWeight = 10
+
