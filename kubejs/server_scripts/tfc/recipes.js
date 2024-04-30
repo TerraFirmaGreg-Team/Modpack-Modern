@@ -3070,6 +3070,11 @@ const registerTFCRecipes = (event) => {
     event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
         .id('tfg:smelting/fireclay_brick')
 
+    // Выпаривание соли
+    event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 1000)
+        .itemOutput('gtceu:small_salt_dust')
+        .id('tfg:tfc/pot/salt')
+
     // Salt Water
     generateMixerRecipe(
         event, 
