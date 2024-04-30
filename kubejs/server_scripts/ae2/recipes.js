@@ -2052,35 +2052,39 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '#forge:gems/nether_quartz',
             '4x #forge:dusts/redstone',
-            'ae2:charged_certus_quartz_crystal',)
+            'ae2:charged_certus_quartz_crystal')
+        .inputFluids(Fluid.of('minecraft:water', 144))
         .itemOutputs('ae2:fluix_crystal')
-        .duration(40)
-        .EUt(18)
+        .duration(420)
+        .EUt(256)
     
     event.recipes.gtceu.mixer('ae2:fluix_crystal_ruby')
         .itemInputs(
             '#forge:gems/nether_quartz',
             '#forge:exquisite_gems/ruby',
-            'ae2:charged_certus_quartz_crystal',)
+            'ae2:charged_certus_quartz_crystal')
+            .inputFluids(Fluid.of('minecraft:water', 144))
         .itemOutputs('4x ae2:fluix_crystal')
-        .duration(40)
-        .EUt(18)
+        .duration(440)
+        .EUt(256)
     
     event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz')
         .itemInputs(
             '#forge:exquisite_gems/nether_quartz',
             '4x #forge:dusts/redstone',
-            'ae2:charged_certus_quartz_crystal',)
+            'ae2:charged_certus_quartz_crystal')
+            .inputFluids(Fluid.of('minecraft:water', 144))
         .itemOutputs('4x ae2:fluix_crystal')
-        .duration(40)
-        .EUt(18)
+        .duration(460)
+        .EUt(256)
    
     event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz_ruby')
         .itemInputs(
             '#forge:exquisite_gems/nether_quartz',
             '#forge:exquisite_gems/ruby',
-            'ae2:charged_certus_quartz_crystal',)
+            'ae2:charged_certus_quartz_crystal')
+        .inputFluids(Fluid.of('minecraft:water', 144))
         .itemOutputs('12x ae2:fluix_crystal')
-        .duration(40)
-        .EUt(18)
+        .duration(480)
+        .EUt(256)
 }

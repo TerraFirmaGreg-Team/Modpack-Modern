@@ -2856,13 +2856,30 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Вагонетка
 
     event.remove({ id: 'minecraft:minecart' })
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
+
+    event.shaped('minecraft:minecart', [
+        'A A',
+        'AAA',
+        'B B'
+    ], {
+        A: 'gtceu:wrought_iron_plate',
+        B: 'gtceu:iron_minecart_wheels'
+    }).id('tfc:crafting/vanilla/redstone/minecart')
+
+    event.shaped('minecraft:minecart', [
+        'A A',
+        'AAA',
+        'B B'
+    ], {
+        A: 'gtceu:wrought_iron_plate',
+        B: 'gtceu:steel_minecart_wheels'
+    }).id('tfc:crafting/vanilla/redstone/steel_minecart')
 
     event.recipes.gtceu.assembler('minecart')             
         .itemInputs('3x #forge:plates/wrought_iron', '3x #forge:rings/wrought_iron')
         .itemOutputs('minecraft:minecart')
         .duration(100)
-        .EUt(1)
+        .EUt(2)
 
     //#endregion
 
