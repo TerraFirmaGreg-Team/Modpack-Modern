@@ -10,6 +10,12 @@ const registerFirmaCivRecipes = (event) => {
 
     //#endregion
 
+    //#region Unfinished Sextant
+    event.recipes.tfc.heating('firmaciv:unfinished_sextant', 930)
+        .resultFluid(Fluid.of('gtceu:brass', 288))
+        .id(`firmaciv:heating/unfinished_sextant`)
+    //#endregion
+
     //#region Sextant
     event.recipes.gtceu.assembler('tfg:firmaciv/sextant')             
         .itemInputs('#forge:plates/brass', '2x #forge:rods/brass', '#forge:glass')
@@ -20,7 +26,13 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:sextant', 930)
         .resultFluid(Fluid.of('gtceu:brass', 288))
-        .id(`tfg:heating/firmaciv/sextant`)
+        .id(`firmaciv:heating/sextant`)
+    //#endregion
+
+    //#region Unfinished Navigator Timepiece
+    event.recipes.tfc.heating('firmaciv:unfinished_nav_clock', 930)
+        .resultFluid(Fluid.of('gtceu:brass', 288))
+        .id(`firmaciv:heating/unfinished_nav_clock`)
     //#endregion
 
     //#region Navigator Timepiece
@@ -33,7 +45,13 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:nav_clock', 930)
         .resultFluid(Fluid.of('gtceu:brass', 576))
-        .id(`tfg:heating/firmaciv/nav_clock`)
+        .id(`firmaciv:heating/nav_clock`)
+    //#endregion
+
+    //#region Unfinished Barometer
+    event.recipes.tfc.heating('firmaciv:unfinished_barometer', 930)
+        .resultFluid(Fluid.of('gtceu:brass', 144))
+        .id(`firmaciv:heating/unfinished_barometer`)
     //#endregion
 
     //#region Barometer
@@ -46,8 +64,8 @@ const registerFirmaCivRecipes = (event) => {
         .EUt(4)
 
     event.recipes.tfc.heating('firmaciv:barometer', 930)
-        .resultFluid(Fluid.of('gtceu:brass', 576))
-        .id(`tfg:heating/firmaciv/barometer`)
+        .resultFluid(Fluid.of('gtceu:brass', 216))
+        .id(`firmaciv:heating/barometer`)
     //#endregion
 
     //#region Compass
@@ -69,7 +87,7 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:oarlock', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`tfg:heating/firmaciv/oarlock`)
+        .id(`firmaciv:heating/oarlock`)
     //#endregion
 
     //#region Cleat
@@ -82,7 +100,7 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:cleat', 1535)
         .resultFluid(Fluid.of('gtceu:steel', 288))
-        .id(`tfg:heating/firmaciv/cleat`)
+        .id(`firmaciv:heating/cleat`)
     //#endregion
 
     //#region Anchor
@@ -95,7 +113,7 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:anchor', 1535)
         .resultFluid(Fluid.of('gtceu:steel', 288))
-        .id(`tfg:heating/firmaciv/anchor`)
+        .id(`firmaciv:heating/anchor`)
     //#endregion
 
     //#region Cannon Barrel
@@ -108,7 +126,7 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:cannon_barrel', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`tfg:heating/firmaciv/cannon_barrel`)
+        .id(`firmaciv:heating/cannon_barrel`)
     //#endregion
 
     //#region Cannonball
@@ -121,6 +139,12 @@ const registerFirmaCivRecipes = (event) => {
 
     event.recipes.tfc.heating('firmaciv:cannonball', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`tfg:heating/firmaciv/cannonball`)
+        .id(`firmaciv:heating/cannonball`)
+    //#endregion
+
+    //#region Cannon
+    event.recipes.tfc.heating('firmaciv:cannon', 1535)
+        .resultFluid(Fluid.of('gtceu:iron', 1872))
+        .id(`firmaciv:heating/cannon`)
     //#endregion
 }
