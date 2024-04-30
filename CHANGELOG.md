@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.3] - Expected 30.04.2024
+## [0.7.3] - 30.04.2024
 ### Features
 - Using Spout from Create, you can now pour metal into TFC molds.
 - Now, when placing ingots, double ingots and plates, they will take the color from GTCEu, that is, they will be painted automatically.
