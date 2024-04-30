@@ -3,8 +3,8 @@ run-name: "Build #${{ github.run_number }}"
 
 on:
   push:
-    branches:
-      - 'main'
+    tags:
+      - "*.*.*"
 
 concurrency:
   group: ${{ github.ref }}
@@ -109,8 +109,9 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config user.name Xikaro
-            git config password ${{ secrets.USER_TOKEN_XIKARO }}
+            git config --global credential.helper '!f() { 
+              echo "username=Xikaro"; 
+              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
 
       - name: Export MMC
@@ -145,8 +146,9 @@ jobs:
         run: |
             git submodule init
             cd mods
-            git config user.name Xikaro
-            git config password ${{ secrets.USER_TOKEN_XIKARO }}
+            git config --global credential.helper '!f() { 
+              echo "username=Xikaro"; 
+              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
 
       - name: Replace strings
