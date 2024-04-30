@@ -1,4 +1,8 @@
 # Changelog
+## [0.7.4] - 30.04.2024
+### Removed mods
+- Clientcrafting
+
 
 ## [0.7.3] - 30.04.2024
 ### Features
@@ -148,7 +152,6 @@
 - YeetusExperimentus
 - BetterFoliage
 - Carryon
-- Clientcrafting
 - Corals-tfc
 - Create_connected
 ### Removed mods
