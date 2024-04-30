@@ -3,8 +3,8 @@ run-name: "Build #${{ github.run_number }}"
 
 on:
   push:
-    tags:
-      - "*.*.*"
+    branches:
+      - 'main'
 
 concurrency:
   group: ${{ github.ref }}
@@ -18,7 +18,7 @@ jobs:
     name: Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.project_version.outputs.tag }}
+      project_version: "0.7.3"
       project_name: ${{ steps.project_name.outputs.value }}
       mc_version: ${{ steps.mc_version.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
@@ -27,11 +27,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
-      - name: Get tag
-        id: project_version
-        uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
-        with:
-          fallback: tag_not_found
+      # - name: Get tag
+      #   id: project_version
+      #   uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
+      #   with:
+      #     fallback: tag_not_found
 
       - name: Get project name
         id: project_name
@@ -165,44 +165,44 @@ jobs:
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
           retention-days: 5
 
-  release-curseforge:
-    name: Deploy to CurseForge
-    needs: [info, build-cf-modpack, build-serverpack]
-    runs-on: ubuntu-latest
-    outputs:
-      cf_release_id: ${{ steps.cf_release.outputs.id }}
-    steps:
-      - name: Check if CF_API_TOKEN exist
-        shell: bash
-        run: |
-          if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
-            echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-          fi  
+  # release-curseforge:
+  #   name: Deploy to CurseForge
+  #   needs: [info, build-cf-modpack, build-serverpack]
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     cf_release_id: ${{ steps.cf_release.outputs.id }}
+  #   steps:
+  #     - name: Check if CF_API_TOKEN exist
+  #       shell: bash
+  #       run: |
+  #         if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
+  #           echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #         fi  
 
-      - name: Download cf modpack
-        uses: actions/download-artifact@v4.1.0
-        with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
+  #     - name: Download cf modpack
+  #       uses: actions/download-artifact@v4.1.0
+  #       with:
+  #         name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
 
-      - name: Download serverpack
-        uses: actions/download-artifact@v4.1.0
-        with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
+  #     - name: Download serverpack
+  #       uses: actions/download-artifact@v4.1.0
+  #       with:
+  #         name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
 
-      - name: Upload Curseforge
-        id: cf_release
-        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-        with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ vars.CF_MODPACK_ID }}
-          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
-          modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
-          changelog: ${{ needs.info.outputs.changelog }}
-          changelog-format: markdown
-          game-version: ${{ needs.info.outputs.mc_version }}
-          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
-          release-type: ${{ env.RELEASE_TYPE }}
+  #     - name: Upload Curseforge
+  #       id: cf_release
+  #       uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #       with:
+  #         api-token: ${{ secrets.CF_API_TOKEN }}
+  #         project-id: ${{ vars.CF_MODPACK_ID }}
+  #         modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+  #         modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
+  #         changelog: ${{ needs.info.outputs.changelog }}
+  #         changelog-format: markdown
+  #         game-version: ${{ needs.info.outputs.mc_version }}
+  #         display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
+  #         server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
+  #         release-type: ${{ env.RELEASE_TYPE }}
 
   # release-modrinth:
     #   name: Deploy to Modrinth
@@ -240,38 +240,38 @@ jobs:
     #         server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
     #         release-type: ${{ env.RELEASE_TYPE }}
 
-  release-github:
-    name: Deploy to GitHub
-    needs: [info, build-cf-modpack, build-mmc-modpack, build-serverpack]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download modpack
-        uses: actions/download-artifact@v4.1.0
-        with:
-          merge-multiple: true
+  # release-github:
+  #   name: Deploy to GitHub
+  #   needs: [info, build-cf-modpack, build-mmc-modpack, build-serverpack]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Download modpack
+  #       uses: actions/download-artifact@v4.1.0
+  #       with:
+  #         merge-multiple: true
 
-      - name: Create release
-        uses: softprops/action-gh-release@v1
-        with:
-          prerelease: false
-          generate_release_notes: true
-          name: ${{ needs.info.outputs.project_version }}
-          body: ${{ needs.info.outputs.changelog }}
-          files: |
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
-          tag_name: ${{ needs.info.outputs.project_version }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     - name: Create release
+  #       uses: softprops/action-gh-release@v1
+  #       with:
+  #         prerelease: false
+  #         generate_release_notes: true
+  #         name: ${{ needs.info.outputs.project_version }}
+  #         body: ${{ needs.info.outputs.changelog }}
+  #         files: |
+  #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+  #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
+  #           ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
+  #         tag_name: ${{ needs.info.outputs.project_version }}
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
     name: Discord Message
-    needs: [info, release-github, release-curseforge]
+    needs: [info]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
-        uses: tsickert/discord-webhook@v5.4.0
+        uses: tsickert/discord-webhook@v6.0.0
         with:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
@@ -282,7 +282,7 @@ jobs:
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
             **GameVersion**: `${{ needs.info.outputs.mc_version }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
+            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5303630)
 
             ** Сhangelog **
             ```${{ needs.info.outputs.changelog }}```
