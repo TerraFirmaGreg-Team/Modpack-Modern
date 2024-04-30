@@ -51,6 +51,7 @@
 - Added recipes/quests for Etched.
 - Added few new recipes for minecart.
 ### Fixes
+- Fixed bug with firmaciv blocks, which drops firmaciv copper bolts instead of gtceu.
 - Fixed bug, when breaking the ship casing, it can drop copper screws from FirmaCiv (WIP).
 - Fixed the recipe for fish oil, now you can use any fish from TFC there.
 - Fixed the recipe for golden vanilla rails.
