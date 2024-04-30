@@ -46,6 +46,7 @@
 - Recipes for energy converters from GTCEu are enabled.
 - The recipe for the AE2 energy converter has been returned, it is needed to power pylons or cells from AE2.
 - The mod for the music player was removed, it loaded the RAM too much, it was decided to change it to another one in the next update.
+- Added salt recipe through TFC pot.
 ### Fixes
 - Fixed the recipe for fish oil, now you can use any fish from TFC there.
 - Fixed the recipe for golden vanilla rails.
