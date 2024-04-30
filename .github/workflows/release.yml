@@ -267,7 +267,7 @@ jobs:
 
   discord-message:
     name: Discord Message
-    needs: [info]
+    needs: [info, release-github, release-curseforge]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -282,7 +282,7 @@ jobs:
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
             **GameVersion**: `${{ needs.info.outputs.mc_version }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5303630)
+            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
 
             ** Сhangelog **
             ```${{ needs.info.outputs.changelog }}```
