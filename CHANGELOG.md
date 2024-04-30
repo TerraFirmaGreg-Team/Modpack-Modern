@@ -2,7 +2,8 @@
 ## [0.7.4] - 30.04.2024
 ### Removed mods
 - Clientcrafting
-
+### Updated mods
+- TerraFirmaGreg-Core -> 0.5.1
 
 ## [0.7.3] - 30.04.2024
 ### Features
