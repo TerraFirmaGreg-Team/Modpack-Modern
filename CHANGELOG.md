@@ -1,4 +1,11 @@
 # Changelog
+## [0.7.7] - 01.05.2024
+### Fixes
+- Rolled back the Embeddium version, freezes when loading the world
+### Updated mods
+- Embeddium -> 0.3.15
+### New Mods
+- Textrues_embeddium_options
 
 ## [0.7.6] - 01.05.2024
 ### Fixes
