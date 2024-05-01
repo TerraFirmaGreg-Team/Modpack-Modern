@@ -1,4 +1,11 @@
 # Changelog
+
+## [0.7.6] - Pending 02.05.2024
+### Fixes
+- Fixed shit with axe / saw behaviors.
+### Updated mods
+- TerraFirmaGreg-Core -> 0.5.3
+
 ## [0.7.5] - 01.05.2024
 ### Fixes
 - Fixed a crash on servers when opening interfaces GT.
