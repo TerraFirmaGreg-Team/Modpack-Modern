@@ -1,4 +1,14 @@
 # Changelog
+## [0.7.5] - 01.05.2024
+### Fixes
+- Fixed a crash on servers when opening interfaces GT.
+### Updated mods
+- TerraFirmaGreg-Core -> 0.5.2
+- EMI -> 1.1.5
+- EnhancedVisuals -> 1.7.1
+- Moonlight -> 2.11.13
+- TerraFirmaGreg-Core -> 0.5.2
+
 ## [0.7.4] - 30.04.2024
 ### Removed mods
 - Clientcrafting
