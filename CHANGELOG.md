@@ -1,10 +1,13 @@
 # Changelog
 
-## [0.7.6] - Pending 02.05.2024
+## [0.7.6] - 01.05.2024
 ### Fixes
 - Fixed shit with axe / saw behaviors.
 ### Updated mods
 - TerraFirmaGreg-Core -> 0.5.3
+- Embeddium -> 0.3.16
+### Removed mods
+- Textrues_embeddium_options
 
 ## [0.7.5] - 01.05.2024
 ### Fixes
