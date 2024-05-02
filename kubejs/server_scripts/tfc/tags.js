@@ -204,6 +204,9 @@ const registerTFCBlockTags = (event) => {
         })
     })
 
+    // Отключение ломания блоков установленных на полу
+    event.add('tfcdesirepaths:trample_blacklist', 'tfc:placed_item')
+
     // Возможность обрушения полу-блоков
     event.add('tfc:can_collapse', '#tfg:rock_slabs')
     event.add('tfc:can_start_collapse', '#tfg:rock_slabs')
