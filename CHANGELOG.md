@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.8] - ?
+## [0.7.8] - 03.05.2024
 ### Fixes
 - Fixed a bug where using GTCEu tools in the AstikoCarts plow caused the game to crash.
 - Fixed a bug where it was impossible to make feeders from TFC: Grooming Station.
