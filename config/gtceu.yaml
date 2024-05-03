@@ -121,9 +121,9 @@ worldgen:
     # Default: true
     removeVanillaLargeOreVeins: true
 
-    # Multiplier to bedrock ore generation amount
-    # Default: 1.0f
-    bedrockOreMultiplier: 1.0
+    # Distance between bedrock ore veins in chunks, if enabled.
+    # Default: 16
+    bedrockOreDistance: 16
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
