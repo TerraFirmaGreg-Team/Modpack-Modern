@@ -25,13 +25,13 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.1.4
 
       - name: Get tag
         id: project_version
         uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
         with:
-          fallback: tag_not_found
+          fallback: build.${{ github.run_number }}
 
       - name: Get project name
         id: project_name
@@ -53,13 +53,13 @@ jobs:
         with:
           path: CHANGELOG.md
 
-  build-cf-modpack:
-    name: Build CF Modpack
+  build-cf:
+    name: Build CF Pack
     runs-on: ubuntu-latest
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.1.4
 
       - name: Replace strings
         shell: bash
@@ -77,19 +77,19 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
 
       - name: Upload zip cf
-        uses: actions/upload-artifact@v4.0.0
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
           retention-days: 5
 
-  build-mmc-modpack:
-    name: Build MMC Modpack
+  build-mmc:
+    name: Build MMC Pack
     runs-on: ubuntu-latest
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.1.4
 
       - name: Replace strings
         shell: bash
@@ -121,19 +121,19 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip mmc
-        uses: actions/upload-artifact@v4.0.0
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
           retention-days: 5
 
-  build-serverpack:
-    name: Build Serverpack
+  build-server:
+    name: Build Server Pack
     runs-on: ubuntu-latest
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.1.4
 
       - name: Download Mods
         run: |
@@ -148,7 +148,7 @@ jobs:
         shell: bash
         run: |
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" .github/buildtools/modpack/manifest.json
+          sed -i -e "s/DEV/${VERSION}/g" ./.github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Export serverpack
@@ -159,7 +159,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip .minecraft/*
 
       - name: Upload zip
-        uses: actions/upload-artifact@v4.0.0
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
           path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
@@ -167,7 +167,7 @@ jobs:
 
   release-curseforge:
     name: Deploy to CurseForge
-    needs: [info, build-cf-modpack, build-serverpack]
+    needs: [info, build-cf, build-server]
     runs-on: ubuntu-latest
     outputs:
       cf_release_id: ${{ steps.cf_release.outputs.id }}
@@ -242,7 +242,7 @@ jobs:
 
   release-github:
     name: Deploy to GitHub
-    needs: [info, build-cf-modpack, build-mmc-modpack, build-serverpack]
+    needs: [info, build-cf, build-mmc, build-server]
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
@@ -295,7 +295,7 @@ jobs:
   #   runs-on: ubuntu-latest
   #   steps:
   #     - name: Checkout
-  #       uses: actions/checkout@v4.1.1
+  #       uses: actions/checkout@v4.1.4
 
   #     - name: Сlose fixed in dev
   #       uses: juraj-hrivnak/close-issues-based-on-label@master
