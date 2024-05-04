@@ -15,6 +15,7 @@ const registerTFCItemTags = (event) => {
     })
 
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mining_hammers')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/spades')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/wrenches')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/files')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/crowbars')
