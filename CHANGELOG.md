@@ -11,7 +11,7 @@
 - Some quest fixes for 0.7.3 pump update.
 ### Updated mods
 - EMI 1.1.5 -> 1.1.4
-- TerraFirmaGreg-Core 0.5.3 -> 0.5.5
+- TerraFirmaGreg-Core 0.5.3 -> 0.5.6
 
 ## [0.7.7] - 01.05.2024
 ### Fixes
