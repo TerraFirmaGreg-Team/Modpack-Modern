@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.8] - 03.05.2024
+## [0.7.8] - 04.05.2024
 ### Fixes
 - Fixed a bug where using GTCEu tools in the AstikoCarts plow caused the game to crash.
 - Fixed a bug where it was impossible to make feeders from TFC: Grooming Station.
@@ -8,6 +8,7 @@
 - Fixed a bug where the boiler could not accept river water.
 - Fixed a bug where recipes were incorrectly displayed in EMI. (The EMI version has been downgraded)
 - Fixed bug when spades cant be putted into tool rack.
+- Some quest fixes for 0.7.3 pump update.
 ### Updated mods
 - EMI 1.1.5 -> 1.1.4
 - TerraFirmaGreg-Core 0.5.3 -> 0.5.5
