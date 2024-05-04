@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "1C86D83D29134EBE"
@@ -40,8 +40,8 @@
 		{
 			id: "190A7A8C49F390C2"
 			linked_quest: "478D0DF94D7495EF"
-			x: -0.5d
-			y: -3.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			id: "3426BCAE1210DAE4"
@@ -56,6 +56,12 @@
 			linked_quest: "7B74DB051202E97E"
 			x: 11.5d
 			y: -1.0d
+		}
+		{
+			id: "5554A5384B8FBED2"
+			linked_quest: "3E82C14AF32AA103"
+			x: -4.5d
+			y: -3.0d
 		}
 	]
 	quests: [
@@ -791,6 +797,47 @@
 			}]
 			x: -4.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3E82C14AF32AA103"]
+			id: "0A522CC855BF3FEC"
+			tasks: [{
+				count: 8L
+				id: "62337B85F3A68DE3"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0A522CC855BF3FEC"]
+			id: "252FD7ED5BF225DD"
+			tasks: [{
+				id: "5E4B2C29C7893EF8"
+				item: "gtceu:treated_wood_plate"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"07415D6305C3B1D2"
+				"252FD7ED5BF225DD"
+			]
+			icon: "create:large_cogwheel"
+			id: "5CB27C93795281AB"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "0D3B31329089CFE4"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			title: "The beginning of Create"
+			x: -0.5d
+			y: -7.0d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]
