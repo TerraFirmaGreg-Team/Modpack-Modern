@@ -7,6 +7,7 @@
 - Fixed a bug where they could drop when walking on placed blocks.
 - Fixed a bug where the boiler could not accept river water.
 - Fixed a bug where recipes were incorrectly displayed in EMI. (The EMI version has been downgraded)
+- Fixed bug when spades cant be putted into tool rack.
 ### Updated mods
 - EMI 1.1.5 -> 1.1.4
 - TerraFirmaGreg-Core 0.5.3 -> 0.5.5
