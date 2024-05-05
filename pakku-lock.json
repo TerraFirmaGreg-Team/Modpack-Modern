@@ -1,0 +1,9 @@
+{
+    "target": "curseforge",
+    "mc_versions": [
+        "1.20.1"
+    ],
+    "loaders": {
+        "Forge": "47.2.6"
+    }
+}
