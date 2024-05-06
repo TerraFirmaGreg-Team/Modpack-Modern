@@ -1022,7 +1022,7 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:level_emitter')
         .circuit(1)
         .duration(20)
-        .EUt(7680)
+        .EUt(480)
         .cleanroom(CleanroomType.CLEANROOM)
 
     // Storage Bus
