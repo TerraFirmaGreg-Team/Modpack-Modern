@@ -1,24 +1,11 @@
 const registerExtendedAE2Recipes = (event) => {
 
-    event.remove([
-        { id: 'expatternprovider:ei' },
-        { id: 'expatternprovider:epp' },
-        { id: 'expatternprovider:ebus_in' },
-        { id: 'expatternprovider:ebus_out' },
-        { id: 'expatternprovider:tag_export_bus' },
-        { id: 'expatternprovider:mod_export_bus' },
-        { id: 'expatternprovider:pre_bus' },
-        { id: 'expatternprovider:caner' },
-        { id: 'expatternprovider:threshold_export_bus' },
-        { id: 'expatternprovider:precise_storage_bus' },
-        { id: 'expatternprovider:mod_storage_bus' },
-        { id: 'expatternprovider:active_formation_plane' },
-        { id: 'expatternprovider:tag_storage_bus' },
-        { id: 'expatternprovider:pattern_modifier' },
-        { id: 'expatternprovider:threshold_level_emitter' },
-
-
-    ]);
+    event.remove({not:[
+        { id: 'expatternprovider:epp_part' },
+        { id: 'expatternprovider:ei_part' },
+        { id: 'expatternprovider:epp_alt' },
+        { id: 'expatternprovider:ei_alt' },
+    ], mod: 'expatternprovider' });
     
 
     //#region Ext interface
@@ -455,4 +442,31 @@ const registerExtendedAE2Recipes = (event) => {
         .itemOutputs('expatternprovider:ex_io_port')
         .duration(200)
         .EUt(1000)
-}
+    
+    event.recipes.gtceu.assembler('expatternprovider:ex_drive')
+        .itemInputs(
+            'gtceu:ev_machine_casing',
+            'ae2:drive',
+            '2x megacells:accumulation_processor',
+            '4x ae2:logic_processor',
+            '4x ae2:engineering_processor',
+            '2x ae2:capacity_card',)
+        .itemOutputs('expatternprovider:ex_drive')
+        .duration(200)
+        .EUt(1920)
+
+    event.recipes.gtceu.assembler('expatternprovider:ingredient_buffer')
+        .itemInputs(
+            'gtceu:hv_machine_casing',
+            '2x ae2:quartz_vibrant_glass',
+            'gtceu:stainless_steel_drum',
+            '2x ae2:cell_component_1k',
+            'gtceu:hv_robot_arm',
+            'gtceu:hv_electric_pump',)
+        .itemOutputs('expatternprovider:ingredient_buffer')
+        .duration(200)
+        .EUt(1920)
+
+        
+
+    }
