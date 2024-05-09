@@ -2,31 +2,36 @@
 
 const registerMegaCellsRecipes = (event) => {
     
-    event.remove({ mod: 'megacells' })
+    event.remove({ not: [
+        {id: 'megacells:network/mega_pattern_provider_block'},
+        {id: 'megacells:network/mega_interface_block'},
+        {id: 'megacells:network/mega_interface_part'},
+        {id: 'megacells:network/mega_pattern_provider_part'},
+    ], mod: 'megacells' })
     
-    // event.recipes.gtceu.assembler('')
-    //         .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
-    //         .itemOutputs('megacells:mega_energy_cell')
-    //         .circuit(1)
-    //         .duration(960)
-    //         .EUt(2048)
+    event.recipes.gtceu.assembler('megacells:mega_energy_cell')
+            .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
+            .itemOutputs('megacells:mega_energy_cell')
+            .circuit(1)
+            .duration(960)
+            .EUt(2048)
 
-    /*
-    event.remove({ id: 'megacells:crafting/mega_energy_cell' })
-    event.remove({ id: 'megacells:crafting/sky_steel_block' })
-    event.remove({ id: 'megacells:crafting/sky_steel_ingot_from_sky_steel_block' })
-    event.remove({ id: 'megacells:transform/sky_steel_ingot' })
-    event.remove({ id: 'megacells:inscriber/accumulation_processor_press' })
-    event.remove({ id: 'megacells:inscriber/accumulation_processor_print' })
-    event.remove({ id: 'megacells:inscriber/accumulation_processor_press_extra' })
-    event.remove({ id: 'megacells:inscriber/accumulation_processor' })
-    event.remove({ id: 'megacells:cells/mega_fluid_cell_housing' })
-    event.remove({ id: 'megacells:cells/mega_item_cell_housing' })
-    event.remove({ id: 'megacells:crafting/decompression_module' })
-    event.remove({ id: 'megacells:cells/standard/bulk_item_cell' })
-    event.remove({ id: 'megacells:crafting/bulk_cell_component' })
-    event.remove({ id: 'megacells:crafting/compression_card' })
-*/
+    
+    // event.remove({ id: 'megacells:crafting/mega_energy_cell' })
+    // event.remove({ id: 'megacells:crafting/sky_steel_block' })
+    // event.remove({ id: 'megacells:crafting/sky_steel_ingot_from_sky_steel_block' })
+    // event.remove({ id: 'megacells:transform/sky_steel_ingot' })
+    // event.remove({ id: 'megacells:inscriber/accumulation_processor_press' })
+    // event.remove({ id: 'megacells:inscriber/accumulation_processor_print' })
+    // event.remove({ id: 'megacells:inscriber/accumulation_processor_press_extra' })
+    // event.remove({ id: 'megacells:inscriber/accumulation_processor' })
+    // event.remove({ id: 'megacells:cells/mega_fluid_cell_housing' })
+    // event.remove({ id: 'megacells:cells/mega_item_cell_housing' })
+    // event.remove({ id: 'megacells:crafting/decompression_module' })
+    // event.remove({ id: 'megacells:cells/standard/bulk_item_cell' })
+    // event.remove({ id: 'megacells:crafting/bulk_cell_component' })
+    // event.remove({ id: 'megacells:crafting/compression_card' })
+
     //printed accumulation circuit
 
     event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor')
@@ -59,7 +64,7 @@ const registerMegaCellsRecipes = (event) => {
             '#gtceu:circuits/iv',
             '2x #gtceu:resistors',
             '2x #forge:fine_wires/niobium_titanium',)
-        .inputFluids(Fluid.of('gtceu:fluix', 144))
+        .inputFluids(Fluid.of('tfg:fluix', 144))
         .itemOutputs('2x megacells:accumulation_processor')
         .duration(20)
         .EUt(1920)
@@ -72,13 +77,12 @@ const registerMegaCellsRecipes = (event) => {
             '#gtceu:circuits/iv',
             'gtceu:advanced_smd_resistor',
             '2x #forge:fine_wires/niobium_titanium',)
-        .inputFluids(Fluid.of('gtceu:fluix', 144))
+        .inputFluids(Fluid.of('tfg:fluix', 144))
         .itemOutputs('2x megacells:accumulation_processor')
         .duration(20)
         .EUt(1920)
         .cleanroom(CleanroomType.CLEANROOM)
 
-        /*
     //Mega Item Cell Housing
     event.shaped('megacells:mega_item_cell_housing', [
         'ABA',
@@ -204,7 +208,6 @@ const registerMegaCellsRecipes = (event) => {
         .duration(400)
         .EUt(122880)
         .cleanroom(CleanroomType.CLEANROOM)
-        */
     //#endregion
 
     //#region MEGA interface
@@ -344,20 +347,6 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     //#endregion
-
-    // cable mega interface
-    event.shapeless('megacells:cable_mega_interface', ['megacells:mega_interface'])
-        .id('megacells:crafting/cable_mega_interface')
-
-    event.shapeless('megacells:mega_interface', ['megacells:cable_mega_interface'])
-        .id('megacells:crafting/mega_interface')
-
-    // cable mega pattern provider
-    event.shapeless('megacells:cable_mega_pattern_provider', ['megacells:mega_pattern_provider'])
-        .id('megacells:crafting/cable_mega_pattern_provider')
-
-    event.shapeless('megacells:mega_pattern_provider', ['megacells:cable_mega_pattern_provider'])
-        .id('megacells:crafting/mega_pattern_provider')
 
     // greater energy card
     event.recipes.gtceu.assembler('megacells:greater_energy_card')

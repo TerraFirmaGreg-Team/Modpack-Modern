@@ -467,6 +467,21 @@ const registerExtendedAE2Recipes = (event) => {
         .duration(200)
         .EUt(1920)
 
+    event.recipes.gtceu.assembler('expatternprovider:ex_charger')
+        .itemInputs(
+            '4x ae2:charger',
+            '4x ae2:storage_bus',
+            'ae2:cable_interface',
+            '4x #forge:double_wires/uranium_triplatinum',
+            '4x ae2:logic_processor',
+            '4x ae2:engineering_processor',
+            '2x megacells:accumulation_processor',
+
+        )
+        .itemOutputs('expatternprovider:ex_charger')
+        .duration(200)
+        .EUt(1920)
+
         
 
     }
