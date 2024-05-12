@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.7.9] - Planned before 01.06.2024
+### Features
+- Replaced InventorySorterMod on InventoryTweaksRefoxes, this will be fix bug when you cant sort items inside GTM crates
+- TFC ore generation has been replaced with GTM ore generator. Now you will find pieces of ore from GTM on the surface, and not from TFC, if you have old pieces of ore left, then you can recycle them into GTM pieces. For the average user, no changes will be particularly felt.
+- Some ore veins have changed the chances of gen.
+- Nether has been returned to the game, now you can get there and dig up some ores, but we won't tell you how to get there yet :trollface:
+### Fixes
+- ???
+### Updated mods
+- ???
+
 ## [0.7.8] - 03.05.2024
 ### Fixes
 - Fixed a bug where using GTCEu tools in the AstikoCarts plow caused the game to crash.
