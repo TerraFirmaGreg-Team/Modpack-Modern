@@ -1,0 +1,19 @@
+
+#Client Configuration
+[client]
+
+	[client.options]
+		# If new item markers should be cleared when the inventory is closed.
+		clear_on_close = true
+		# If new item markers should be cleared when the item tooltip is displayed.
+		clear_on_hover = true
+		# If new item markers should be cleared when the item is selected on the hotbar.
+		clear_on_select = true
+		# If icons should match the color of items names (as shown in tooltips).  Otherwise icons will all be gold.
+		item_name_color = false
+		# If new item markers should show on the hotbar.
+		show_on_hotbar = true
+		# The position of new item markers.
+		#Allowed Values: UpperLeft, UpperRight, LowerLeft, LowerRight
+		icon_position = "UpperLeft"
+
