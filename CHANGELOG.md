@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.9] - 23.05.2024
+## [0.7.9] - 22.05.2024
 ### Fixes
 - Garnierite veins now spawns a bit frequently (60 -> 40).
 - Backpack upgrades now can be crafted from any leather.
