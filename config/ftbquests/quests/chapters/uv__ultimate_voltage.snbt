@@ -442,22 +442,6 @@
 			y: -0.75d
 		}
 		{
-			dependencies: ["0009F48B6E385A47"]
-			description: ["The &aCreative Energy Cell&r is one of the few craftable creative items. It provides infinite energy to your AE system, so you don't have to worry about blackouts or power anymore."]
-			id: "428C62749A1A1BAB"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Ok, maybe there are Creative items."
-			tasks: [{
-				id: "392079FDF410B9FD"
-				item: "ae2:creative_energy_cell"
-				type: "item"
-			}]
-			title: "Creative ME Energy"
-			x: 7.875d
-			y: -1.875d
-		}
-		{
 			dependencies: ["6DBF61D4F94BC851"]
 			description: ["The &aGravi Star&r is the final upgraded Nether Star in GTCEu. It's needed for &3UV&r Sensors, Emitters, and Field Generators."]
 			id: "0009F48B6E385A47"

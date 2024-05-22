@@ -547,39 +547,6 @@
 		}
 		{
 			dependencies: [
-				"5E6BA54E8A5BEBDE"
-				"14D277A164202FF8"
-				"6B128610C7D2825D"
-			]
-			description: [
-				"The &3Processing Array&r is a powerful &6automation tool&r. It combines several single block machines into one single multiblock."
-				""
-				"Start off by placing up to &d16&r Machines into the &3Machine Access Interface&r."
-				""
-				"The &3PA&r will now &asimulate&r all the machines you put inside, as if they were running at the same time."
-				""
-				"This means recipes can now be performed up to &d16&r at a time - this is true &4parallelisation&r!"
-				""
-				"&6This quest unlocks a new tutorial on parallel techniques in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GregTech 5, the Data Orb was used in the Matter Replicator to store the \"data\" of the material you wanted to replicate. There is no replication here - the Orb is now a mere crafting component."
-				""
-				"&oAdditionally, GregTech 5's PA and other Multiblocks acted as a Cleanroom. There's no such thing here!"
-			]
-			id: "2DAC91AF2EBB68E2"
-			size: 0.75d
-			subtitle: "The PA does so little but so much"
-			tasks: [{
-				id: "515EDFE316170EEA"
-				item: "gtceu:iv_processing_array"
-				type: "item"
-			}]
-			title: "Processing Array"
-			x: 6.0d
-			y: 4.875d
-		}
-		{
-			dependencies: [
 				"0988B5FB795FF7DA"
 				"383B789B654C4094"
 				"69E384F389B0D07B"
