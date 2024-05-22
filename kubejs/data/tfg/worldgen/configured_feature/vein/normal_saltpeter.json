@@ -1,0 +1,220 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 210,
+    "density": 0.3,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 50,
+    "random_name": "normal_saltpeter",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:diorite_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gabbro_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:quartzite_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:slate_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:phyllite_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:schist_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gneiss_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_alunite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_saltpeter_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:marble_diatomite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_electrotine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_alunite_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

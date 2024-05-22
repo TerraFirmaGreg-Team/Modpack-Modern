@@ -1,0 +1,202 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 205,
+    "density": 0.3,
+    "min_y": -64,
+    "max_y": 30,
+    "size": 34,
+    "random_name": "deep_magnetite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:shale_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:shale_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:shale_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:shale_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:shale_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:claystone_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:claystone_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:claystone_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:claystone_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:claystone_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:limestone_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:limestone_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:limestone_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:limestone_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:limestone_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:conglomerate_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:conglomerate_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:conglomerate_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:conglomerate_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:conglomerate_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:dolomite_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dolomite_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:dolomite_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dolomite_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:chert_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:chert_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:chert_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:chert_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_magnetite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:chalk_vanadium_magnetite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:chalk_chromite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:chalk_gold_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:chalk_sapphire_ore",
+            "weight": 5
+          }
+        ]
+      }
+    ]
+  }
+}

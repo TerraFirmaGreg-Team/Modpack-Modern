@@ -1,0 +1,220 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 190,
+    "density": 0.25,
+    "min_y": 0,
+    "max_y": 210,
+    "size": 36,
+    "random_name": "normal_mica",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:diorite_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gabbro_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:quartzite_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:slate_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:phyllite_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:schist_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gneiss_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_kyanite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:marble_mica_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_bauxite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_pollucite_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

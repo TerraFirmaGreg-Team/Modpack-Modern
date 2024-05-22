@@ -1,0 +1,221 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 180,
+    "density": 0.375,
+    "min_y": 20,
+    "max_y": 60,
+    "size": 35,
+    "random_name": "normal_spodumene",
+    "height": 6,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:granite_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:granite_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:granite_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:diorite_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:diorite_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:diorite_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:gabbro_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:gabbro_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:gabbro_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:quartzite_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:quartzite_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:slate_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:slate_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:slate_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:phyllite_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:phyllite_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:phyllite_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:schist_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:schist_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:schist_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:gneiss_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:gneiss_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:gneiss_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_rock_salt_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:marble_salt_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:marble_lepidolite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:marble_spodumene_ore",
+            "weight": 35
+          }
+        ]
+      }
+    ]
+  }
+}

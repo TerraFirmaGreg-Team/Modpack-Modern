@@ -1,0 +1,121 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 220,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 30,
+    "size": 30,
+    "random_name": "deep_hematite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_goethite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:rhyolite_yellow_limonite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:rhyolite_hematite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:rhyolite_gold_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:rhyolite_ruby_ore",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_goethite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_yellow_limonite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:basalt_hematite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:basalt_gold_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:basalt_ruby_ore",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_goethite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:andesite_yellow_limonite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:andesite_hematite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:andesite_gold_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:andesite_ruby_ore",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_goethite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:dacite_yellow_limonite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dacite_hematite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:dacite_gold_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:dacite_ruby_ore",
+            "weight": 20
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 190,
+    "density": 0.25,
+    "min_y": -40,
+    "max_y": 56,
+    "size": 36,
+    "random_name": "normal_lubricant",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_soapstone_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:granite_talc_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:granite_glauconite_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_pentlandite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:granite_trona_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_soapstone_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:diorite_talc_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:diorite_glauconite_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_pentlandite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:diorite_trona_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_soapstone_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:gabbro_talc_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:gabbro_glauconite_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_pentlandite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:gabbro_trona_ore",
+            "weight": 10
+          }
+        ]
+      }
+    ]
+  }
+}

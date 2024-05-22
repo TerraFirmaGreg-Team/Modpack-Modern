@@ -1,0 +1,152 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 260,
+    "density": 0.3,
+    "min_y": -64,
+    "max_y": 26,
+    "size": 28,
+    "random_name": "deep_topaz",
+    "height": 7,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_blue_topaz_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:quartzite_topaz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_chalcocite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_bornite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_blue_topaz_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:slate_topaz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_chalcocite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_bornite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_blue_topaz_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:phyllite_topaz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_chalcocite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_bornite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_blue_topaz_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:schist_topaz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_chalcocite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_bornite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_blue_topaz_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gneiss_topaz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_chalcocite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_bornite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_blue_topaz_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:marble_topaz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_chalcocite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_bornite_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}

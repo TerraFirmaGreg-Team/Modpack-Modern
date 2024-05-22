@@ -1,0 +1,70 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 220,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 0,
+    "size": 28,
+    "random_name": "deep_scheelite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_scheelite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:granite_tungstate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_lithium_ore",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_scheelite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:diorite_tungstate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:diorite_lithium_ore",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_scheelite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:gabbro_tungstate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gabbro_lithium_ore",
+            "weight": 20
+          }
+        ]
+      }
+    ]
+  }
+}

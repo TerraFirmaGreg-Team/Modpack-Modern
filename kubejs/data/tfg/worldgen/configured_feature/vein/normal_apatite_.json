@@ -1,0 +1,184 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 220,
+    "density": 0.25,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 34,
+    "random_name": "normal_apatite_",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:granite_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:diorite_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:diorite_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:gabbro_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gabbro_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:quartzite_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:quartzite_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:slate_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:slate_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:phyllite_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:phyllite_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:schist_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:schist_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:gneiss_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gneiss_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_apatite_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:marble_tricalcium_phosphate_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:marble_pyrochlore_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ]
+  }
+}
