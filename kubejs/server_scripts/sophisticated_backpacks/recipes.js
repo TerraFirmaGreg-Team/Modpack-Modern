@@ -161,7 +161,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     ], {
         A: '#forge:string',
         B: '#forge:rods/long/wrought_iron',
-        C: 'minecraft:leather',
+        C: '#forge:leather',
         D: '#forge:plates/steel'
     }).id('tfg:sophisticated_backpacks/shaped/upgrade_base')
 
