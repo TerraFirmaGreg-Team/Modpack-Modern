@@ -149,7 +149,6 @@ jobs:
           mkdir -p .minecraft
           mv -vf {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
           cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
-          cd .minecraft
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip .minecraft/*
 
       - name: Upload zip
