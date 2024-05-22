@@ -173,12 +173,12 @@ jobs:
           fi  
 
       - name: Download cf modpack
-        uses: actions/download-artifact@v4.1.0
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
 
       - name: Download serverpack
-        uses: actions/download-artifact@v4.1.0
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
 
@@ -188,13 +188,13 @@ jobs:
         with:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ vars.CF_MODPACK_ID }}
+          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
           modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
           changelog: ${{ needs.info.outputs.changelog }}
           changelog-format: markdown
           game-version: ${{ needs.info.outputs.mc_version }}
-          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
           release-type: ${{ env.RELEASE_TYPE }}
 
   # release-modrinth:
@@ -239,7 +239,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
-        uses: actions/download-artifact@v4.1.0
+        uses: actions/download-artifact@v4.1.7
         with:
           merge-multiple: true
 
