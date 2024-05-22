@@ -1,24 +1,11 @@
 # Changelog
 
-## [0.8.0] - Planned before 01.06.2024
+## [0.7.9] - Planned before 01.06.2024
 ### Features
 - Replaced InventorySorterMod on InventoryTweaksRefoxes, this will be fix bug when you cant sort items inside GTM crates
 - TFC ore generation has been replaced with GTM ore generator. Now you will find pieces of ore from GTM on the surface, and not from TFC, if you have old pieces of ore left, then you can recycle them into GTM pieces. For the average user, no changes will be particularly felt.
-- Some ore veins have changed the chances of gen (Main info you can gen in GT Ore EMI page).
+- Some ore veins have changed the chances of gen.
 - Nether has been returned to the game, now you can get there and dig up some ores, but we won't tell you how to get there yet :trollface:
-- WHAT? Ender has been returned to the game TOO.
-- Several custom biomes have been added to the end and nether.
-- Ore generation has also been added to nether and end.
-- Удален мод Chisel And Bits, так как вызывает множество крашей на сервере и вообще работает не стабильно. Рецепты под мод останутся, кому нужно, может поставить себе отдельно, об этом так же будет отдельно информация.
-- Дракон теперь становится сильнее в зависимости от того с каким кол-вом народа он сражается.
-- Кристаллы могут теперь восстанавливаться со временем, если вы слишком долго их ломаете, есть и другие фишки, которые вы сами узнаете в игре.
-- Изменен дроп всех лутовых комнат в энде и аду.
-- Добавлены множестно новых структур в ад и энд.
-- Достаточно сильно снижено потребление ОЗУ, даже с учетом добавленных новых модов, оно будет ниже чем на 0.7.8.
-- Теперь элитра можно надеть просто на спину.
-- Добавлены два мода, которые усложнят вашу жизнь в креейте, например теперь нельзя установить водное колесо под землей запитав это 1 источником воды и тому подобное, также, чтобы разогреть например тигель из Create вы можете использовать специальное под это устройство, которое добавляет мод Create Low Heated и тому подобное.
-- Теперь пинг чистых Ipv4 адресов намного быстрее.
-- Добавлен RFTools и множество аддонов для него, например получение энергии из кристаллов резонанса, создание собственных миров и многое другое.
 ### Fixes
 - ???
 ### Updated mods
