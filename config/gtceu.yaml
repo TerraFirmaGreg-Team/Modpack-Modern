@@ -14,16 +14,16 @@ recipes:
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: true
+  harderBrickRecipes: false
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: true
+  nerfWoodCrafting: false
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: true
+  hardWoodRecipes: false
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -31,16 +31,16 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: true
+  hardRedstoneRecipes: false
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: true
+  hardToolArmorRecipes: false
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: true
+  hardMiscRecipes: false
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
-  hardAdvancedIronRecipes: true
+  hardAdvancedIronRecipes: false
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
@@ -79,7 +79,7 @@ recipes:
 
   # Whether to nerf the output amounts of the first circuit in a set to 1 (from 2) and SoC to 2 (from 4).
   # Default: false
-  harderCircuitRecipes: true
+  harderCircuitRecipes: false
 
 worldgen:
   # Rubber Tree spawn chance (% per chunk)
@@ -281,23 +281,6 @@ client:
   # Duration of UI animations in ms
   # Default: 300
   animationTime: 300
-
-  armorHud:
-    # Sets HUD location
-    # 1 - left-upper corner
-    # 2 - right-upper corner
-    # 3 - left-bottom corner
-    # 4 - right-bottom corner
-    # Default: 1
-    hudLocation: 1
-
-    # Horizontal offset of HUD.
-    # Default: 0
-    hudOffsetX: 0
-
-    # Vertical offset of HUD.
-    # Default: 0
-    hudOffsetY: 0
 
 # Config options for Tools and Armor
 tools:
