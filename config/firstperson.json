@@ -5,8 +5,8 @@
   "sneakXOffset": 0,
   "sitXOffset": 0,
   "renderStuckFeatures": true,
-  "vanillaHands": false,
-  "doubleHands": false,
+  "vanillaHandsMode": "OFF",
+  "dynamicMode": true,
   "autoVanillaHands": [],
   "autoToggleModItems": [
     "exposure:camera"

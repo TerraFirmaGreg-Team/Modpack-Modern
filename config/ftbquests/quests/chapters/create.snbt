@@ -55,7 +55,7 @@
 				{
 					id: "103652A3387B66C6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:copper_diving_boots"
 						tag: {
 							Damage: 0
@@ -66,7 +66,7 @@
 				{
 					id: "7AA8E16D668D0F34"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:copper_diving_helmet"
 						tag: {
 							Damage: 0
@@ -77,7 +77,7 @@
 				{
 					id: "225CF48F13FCAB24"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:copper_backtank"
 						tag: {
 							Air: 900
@@ -96,7 +96,7 @@
 			tasks: [{
 				id: "33308D6C881935BC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -257,7 +257,7 @@
 			tasks: [{
 				id: "559495DDBA2E1557"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:super_glue"
 					tag: {
 						Damage: 0
@@ -298,7 +298,7 @@
 			tasks: [{
 				id: "135489C0971B8F04"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:potato_cannon"
 					tag: {
 						Damage: 0
@@ -316,7 +316,7 @@
 			tasks: [{
 				id: "352E3FCF3735048E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "create:extendo_grip"
 					tag: {
 						Damage: 0
@@ -440,7 +440,7 @@
 			tasks: [{
 				id: "05FBF52F27F9279E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -521,7 +521,7 @@
 			tasks: [{
 				id: "40851585BA2693AC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {

@@ -222,7 +222,7 @@
 					count: 2L
 					id: "619E37C6DE44F972"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/battery_alloy)"
@@ -569,7 +569,7 @@
 				"&l&3Lore:&r&o This feature is originally from GTNH."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:programmed_circuit"
 				tag: {
 					Configuration: 0
@@ -629,7 +629,7 @@
 				icon: "gtceu:lv_sodium_battery"
 				id: "47D0D12A26963702"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -666,7 +666,7 @@
 			tasks: [{
 				id: "3241F5B06FB7258A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -846,7 +846,7 @@
 				"&6This quest unlocks a new tutorial on Coils in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:cupronickel_coil_block"
 				tag: {
 					active: 1b
@@ -1172,7 +1172,7 @@
 			tasks: [{
 				id: "4A0B4A206ED30212"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -1580,7 +1580,7 @@
 			tasks: [{
 				id: "37396BE76A4F64C5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -1613,7 +1613,7 @@
 			tasks: [{
 				id: "11A5ECE835D2037C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -1647,7 +1647,7 @@
 			tasks: [{
 				id: "54B46E0C5903092F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {

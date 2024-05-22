@@ -11,7 +11,7 @@
 		{
 			description: ["{quests.76EF4D00586A8B74.d1}"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
 					Icon: "tfg:textures/gui/logo_512x512.png"
@@ -40,7 +40,7 @@
 					count: 5L
 					id: "71D34417AD85CBB7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:can_be_lit_on_torch)"
@@ -53,7 +53,7 @@
 					count: 10L
 					id: "764DF57F97EB2AB2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
@@ -76,7 +76,7 @@
 				{
 					id: "45ADEA53258F0876"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -90,7 +90,7 @@
 				{
 					id: "60AD410AF2AB1F3B"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -104,7 +104,7 @@
 				{
 					id: "76CE2DAD3450854A"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -118,7 +118,7 @@
 				{
 					id: "1C91EB0D412DD926"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -132,7 +132,7 @@
 				{
 					id: "41B270A3D4FFF7EA"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -146,7 +146,7 @@
 				{
 					id: "260DC2139C737E9D"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -160,7 +160,7 @@
 				{
 					id: "6444775ACB88FB47"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -174,7 +174,7 @@
 				{
 					id: "229B26271FA55CC9"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -188,7 +188,7 @@
 				{
 					id: "4542DDBDA2B8BAEE"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -202,7 +202,7 @@
 				{
 					id: "068ACE7436DD4957"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -216,7 +216,7 @@
 				{
 					id: "2CA4B0ED8BA926F6"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -230,7 +230,7 @@
 				{
 					id: "793C84936B5B0442"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -253,7 +253,7 @@
 			tasks: [{
 				id: "794D2D1559FA7CEA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
@@ -303,7 +303,7 @@
 			tasks: [{
 				id: "1D1EC6EF1FCBA733"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:firestarter"
 					tag: {
 						Damage: 0
@@ -357,7 +357,7 @@
 				count: 16L
 				id: "05DD41298C7884FD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
@@ -407,7 +407,7 @@
 			tasks: [{
 				id: "123D5D1D8D91D88A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -441,7 +441,7 @@
 			tasks: [{
 				id: "3E53D8286A792931"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -461,7 +461,7 @@
 			tasks: [{
 				id: "28CEE2DBF2AC79BD"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -481,7 +481,7 @@
 			tasks: [{
 				id: "529CB26EFD86E19B"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -536,7 +536,7 @@
 				{
 					id: "27816718899DCD1B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfc:handstone"
 						tag: {
 							Damage: 0
@@ -559,7 +559,7 @@
 			tasks: [{
 				id: "28D767CF80018E21"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -579,7 +579,7 @@
 			tasks: [{
 				id: "08C6B78C9F502ADC"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -599,7 +599,7 @@
 			tasks: [{
 				id: "78D4DB54E734D433"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -619,7 +619,7 @@
 			tasks: [{
 				id: "743306EEC814B850"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -639,7 +639,7 @@
 			tasks: [{
 				id: "18BE0AE52BCF136D"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -659,7 +659,7 @@
 			tasks: [{
 				id: "3300F74859EEFDA1"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -679,7 +679,7 @@
 			tasks: [{
 				id: "1BE5D35CB5FA4D90"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -699,7 +699,7 @@
 			tasks: [{
 				id: "2E7F90E71BF2E1A6"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -719,7 +719,7 @@
 			tasks: [{
 				id: "07B71D9E1191802F"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -739,7 +739,7 @@
 			tasks: [{
 				id: "3F71BCE908797381"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -759,7 +759,7 @@
 			tasks: [{
 				id: "3CC58AD9E3221D58"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -779,7 +779,7 @@
 			tasks: [{
 				id: "23F3B86202CB3AE5"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -799,7 +799,7 @@
 			tasks: [{
 				id: "0E36568EAD60A63D"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -819,7 +819,7 @@
 			tasks: [{
 				id: "5380F63EAF5D7EB1"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -839,7 +839,7 @@
 			tasks: [{
 				id: "68D766E9A037BC60"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -859,7 +859,7 @@
 			tasks: [{
 				id: "122B083A3E5A9648"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -879,7 +879,7 @@
 			tasks: [{
 				id: "69F4C88520EC510A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -899,7 +899,7 @@
 			tasks: [{
 				id: "2A2BF997858CEFBD"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -919,7 +919,7 @@
 			tasks: [{
 				id: "340B47A3D494A58A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -939,7 +939,7 @@
 			tasks: [{
 				id: "39D1102841206461"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -959,7 +959,7 @@
 			tasks: [{
 				id: "01564E7BA40431BB"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -979,7 +979,7 @@
 			tasks: [{
 				id: "50369C29A8FED043"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -999,7 +999,7 @@
 			tasks: [{
 				id: "684F827FEB040FFA"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1019,7 +1019,7 @@
 			tasks: [{
 				id: "0DA50C9F3BDE79C8"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1041,7 +1041,7 @@
 			tasks: [{
 				id: "27927A7A1267C056"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:stone_axe"
 					tag: {
 						Damage: 0
@@ -1064,7 +1064,7 @@
 			tasks: [{
 				id: "59508B56C7C3C891"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:stone_hoe"
 					tag: {
 						Damage: 0
@@ -1087,7 +1087,7 @@
 			tasks: [{
 				id: "061392B0556D6810"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
@@ -1107,7 +1107,7 @@
 			tasks: [{
 				id: "10A730E97830976C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:stone_shovel"
 					tag: {
 						Damage: 0
@@ -1131,7 +1131,7 @@
 			tasks: [{
 				id: "4BD017E2BEB690C4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:stone_hammer"
 					tag: {
 						Damage: 0
@@ -1175,7 +1175,7 @@
 			tasks: [{
 				id: "24625450C85F8A04"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:seeds)"
@@ -1199,7 +1199,7 @@
 			tasks: [{
 				id: "542CC6E7CC064CB7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/cooked_meats)"
@@ -1220,7 +1220,7 @@
 			tasks: [{
 				id: "094E96DABE2F5DD7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/raw_meats)"
@@ -1254,7 +1254,7 @@
 			tasks: [{
 				id: "45C890F7C082CA9E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:stone_knife"
 					tag: {
 						Damage: 0
@@ -1293,7 +1293,7 @@
 			tasks: [{
 				id: "59F6553DB3C48707"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1314,7 +1314,7 @@
 			tasks: [{
 				id: "42CEDE5B7EEAEC2D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
@@ -1333,7 +1333,7 @@
 			tasks: [{
 				id: "16D30907256FEBA9"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1354,7 +1354,7 @@
 			tasks: [{
 				id: "058C47108EE07BAF"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1375,7 +1375,7 @@
 			tasks: [{
 				id: "6E61EA191DB9B798"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1461,7 +1461,7 @@
 			tasks: [{
 				id: "71AB3DF803604E21"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1485,7 +1485,7 @@
 			tasks: [{
 				id: "521FE5C41A7AC93F"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1509,7 +1509,7 @@
 			tasks: [{
 				id: "57889ADDFB9BE0C3"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1533,7 +1533,7 @@
 			tasks: [{
 				id: "17482FD96A00520B"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1557,7 +1557,7 @@
 			tasks: [{
 				id: "06CC57344030E519"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1581,7 +1581,7 @@
 			tasks: [{
 				id: "51AD0A0E0A5EE9F8"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1616,7 +1616,7 @@
 			tasks: [{
 				id: "621C39B591C3100C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:ceramic/jug"
 					tag: {
 						fluid: {
@@ -1638,7 +1638,7 @@
 				count: 6L
 				id: "7ACB816A97136D3B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/raw)"
@@ -1656,7 +1656,7 @@
 			tasks: [{
 				id: "6AD179467B50D005"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:copper_pickaxe)item(gtceu:bismuth_bronze_pickaxe)item(gtceu:black_bronze_pickaxe)item(gtceu:bronze_pickaxe))"
@@ -1676,7 +1676,7 @@
 				count: 3L
 				id: "58914FFF11720933"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/smooth)"
@@ -1697,7 +1697,7 @@
 			tasks: [{
 				id: "4E07B3CADC38A2CE"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1718,7 +1718,7 @@
 			tasks: [{
 				id: "5DBB1490DF109B8E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(tfc:metal/chisel/copper)item(tfc:metal/chisel/bismuth_bronze)item(tfc:metal/chisel/bronze)item(tfc:metal/chisel/black_bronze))"
@@ -1761,7 +1761,7 @@
 			tasks: [{
 				id: "611E42A854560727"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -1809,7 +1809,7 @@
 				count: 4L
 				id: "4F43F136444B502A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -1854,7 +1854,7 @@
 			tasks: [{
 				id: "0CC93715D33E6211"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:barrels)"
@@ -1929,7 +1929,7 @@
 			tasks: [{
 				id: "28E92E097D56A46F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:copper_saw)item(gtceu:bismuth_bronze_saw)item(gtceu:bronze_saw)item(gtceu:black_bronze_saw))"
@@ -1948,7 +1948,7 @@
 			tasks: [{
 				id: "25CB975568D50B66"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(tfc:metal/propick/copper)item(tfc:metal/propick/bismuth_bronze)item(tfc:metal/propick/bronze)item(tfc:metal/propick/black_bronze))"
@@ -1967,7 +1967,7 @@
 			tasks: [{
 				id: "730D12AD7644BC1B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:copper_hammer)item(gtceu:bismuth_bronze_hammer)item(gtceu:bronze_hammer)item(gtceu:black_bronze_hammer))"
@@ -2013,7 +2013,7 @@
 			tasks: [{
 				id: "6493AF96E8B38197"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2038,7 +2038,7 @@
 				count: 7L
 				id: "5EB6E32F50CC86A9"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2065,7 +2065,7 @@
 			tasks: [{
 				id: "7A8EA2BE9813B1F1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:bronze_ingot)item(gtceu:black_bronze_ingot)item(gtceu:bismuth_bronze_ingot))"
@@ -2087,7 +2087,7 @@
 			tasks: [{
 				id: "05E9758EC5493B4C"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2110,7 +2110,7 @@
 			tasks: [{
 				id: "7CE0990FF2F83BD0"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2133,7 +2133,7 @@
 			tasks: [{
 				id: "36EFEF0DC6BB7637"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2154,7 +2154,7 @@
 				count: 7L
 				id: "6490BC5114D7AE13"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2175,7 +2175,7 @@
 				count: 7L
 				id: "523ACBC9B5E4B287"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2196,7 +2196,7 @@
 				count: 7L
 				id: "59B217DB0BCADB82"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2216,7 +2216,7 @@
 			tasks: [{
 				id: "06B99CF0B7120D13"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:bismuth_bronze_double_ingot)item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot))"
@@ -2235,7 +2235,7 @@
 			tasks: [{
 				id: "54334DA4AC22438E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
@@ -2251,7 +2251,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -2265,7 +2265,7 @@
 				{
 					id: "024533C5E4B89787"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -2280,7 +2280,7 @@
 				{
 					id: "26C207A03F30FB27"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
@@ -2301,7 +2301,7 @@
 			tasks: [{
 				id: "7E987D9B30125F52"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_hematite)item(gtceu:raw_hematite)item(tfc:ore/small_hematite)item(gtceu:poor_raw_hematite)item(gtceu:rich_raw_yellow_limonite)item(tfc:ore/small_limonite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:raw_yellow_limonite)item(tfc:ore/small_magnetite)item(gtceu:poor_raw_magnetite)item(gtceu:raw_magnetite)item(gtceu:rich_raw_magnetite)item(gtceu:poor_raw_iron)item(minecraft:raw_iron)item(gtceu:rich_raw_iron)item(gtceu:poor_raw_goethite)item(gtceu:raw_goethite)item(gtceu:rich_raw_goethite)item(gtceu:poor_raw_pyrite)item(gtceu:raw_pyrite)item(gtceu:rich_raw_pyrite))"
@@ -2319,7 +2319,7 @@
 			tasks: [{
 				id: "31AB0A3C7212977B"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2340,7 +2340,7 @@
 			tasks: [{
 				id: "7D178601494C202F"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2371,7 +2371,7 @@
 			tasks: [{
 				id: "0126B69CF40759CA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:dyes)"
@@ -2387,7 +2387,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -2402,7 +2402,7 @@
 				{
 					id: "7EBB6EC50EE8CFA1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -2417,7 +2417,7 @@
 				{
 					id: "51BEF595B2A3014C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -2432,7 +2432,7 @@
 				{
 					id: "74F88351793C165A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
@@ -2450,7 +2450,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -2465,7 +2465,7 @@
 				{
 					id: "1294B28A98775920"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -2480,7 +2480,7 @@
 				{
 					id: "53F7A77859F53B3D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
@@ -2492,7 +2492,7 @@
 				{
 					id: "755505207091F3E2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(gtceu:rich_raw_gold)item(gtceu:poor_raw_gold)item(tfc:ore/small_native_gold))"
@@ -2567,7 +2567,7 @@
 			tasks: [{
 				id: "0E4CF40332113E7C"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2588,7 +2588,7 @@
 			tasks: [{
 				id: "6FB7FE40C788F24B"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2609,7 +2609,7 @@
 			tasks: [{
 				id: "21FF8E20FE64F87A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2630,7 +2630,7 @@
 			tasks: [{
 				id: "2E08B9C22F3D7B0E"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2651,7 +2651,7 @@
 			tasks: [{
 				id: "7508240046289642"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2672,7 +2672,7 @@
 			tasks: [{
 				id: "70D15B063F22CD98"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2693,7 +2693,7 @@
 			tasks: [{
 				id: "7A4E17F7DD605A9E"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2714,7 +2714,7 @@
 			tasks: [{
 				id: "1B07BBCD49CB41CD"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -2749,7 +2749,7 @@
 			tasks: [{
 				id: "19D772A3B1F41323"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass)"
@@ -2812,7 +2812,7 @@
 			tasks: [{
 				id: "2BA6C9F89AF196C8"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -2835,7 +2835,7 @@
 			tasks: [{
 				id: "4DB6481F8CA18725"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:wooden_bucket"
 					tag: {
 						fluid: {
@@ -2856,7 +2856,7 @@
 			tasks: [{
 				id: "0D09463BB351AC9C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass_panes)"
@@ -2875,7 +2875,7 @@
 			tasks: [{
 				id: "1B60EBE483C770FF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:ore_deposits)"
@@ -2904,7 +2904,7 @@
 			tasks: [{
 				id: "1EE0A271B94ACAA0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_bottles)"
@@ -2977,7 +2977,7 @@
 			tasks: [{
 				id: "1BFBF95B7BEAA370"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lamps)"
@@ -3036,7 +3036,7 @@
 			tasks: [{
 				id: "40F8D7AFB08F80D7"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3057,7 +3057,7 @@
 				count: 8L
 				id: "262D71606A86F023"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:double_sheets/any_bronze)"
@@ -3091,7 +3091,7 @@
 			tasks: [{
 				id: "6C695F8BF1AD660F"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3112,7 +3112,7 @@
 			tasks: [{
 				id: "25AA212ADC5A71A6"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3132,7 +3132,7 @@
 			tasks: [{
 				id: "537CD0EEF5A7CFAF"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3152,7 +3152,7 @@
 			tasks: [{
 				id: "0889E2054105C782"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3173,7 +3173,7 @@
 				"6EFCFEF4EDFBB71E"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -3187,7 +3187,7 @@
 				{
 					id: "79A36E758132D64C"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -3201,7 +3201,7 @@
 				{
 					id: "48A6F6C306A1FDC1"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -3224,7 +3224,7 @@
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -3238,7 +3238,7 @@
 				{
 					id: "4433C1C9D816AD13"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f
@@ -3252,7 +3252,7 @@
 				{
 					id: "305EFF0F0ECD2E16"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -3274,7 +3274,7 @@
 			tasks: [{
 				id: "0C28F63E10B0FF53"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3294,7 +3294,7 @@
 			tasks: [{
 				id: "54DAC2F8584DE8A0"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3315,7 +3315,7 @@
 				count: 7L
 				id: "01D77B3A73A693A6"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3336,7 +3336,7 @@
 				count: 7L
 				id: "640895BC7A01C685"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3361,7 +3361,7 @@
 			tasks: [{
 				id: "0CA421EA60D850F6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item(tfc:metal/anvil/blue_steel)item(tfc:metal/anvil/red_steel))"
@@ -3379,7 +3379,7 @@
 			tasks: [{
 				id: "52FC94E909B16B77"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3399,7 +3399,7 @@
 			tasks: [{
 				id: "2F79F1596417EAF4"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3419,7 +3419,7 @@
 			tasks: [{
 				id: "63A236D7475FB9E5"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3439,7 +3439,7 @@
 			tasks: [{
 				id: "46B1590B1988E0AA"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3463,7 +3463,7 @@
 			tasks: [{
 				id: "35F1B208A0D51148"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3486,7 +3486,7 @@
 			tasks: [{
 				id: "1E7331DE0C534612"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3506,7 +3506,7 @@
 			tasks: [{
 				id: "348CC201F9D3211C"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3526,7 +3526,7 @@
 			tasks: [{
 				id: "5B7CE32CA4276722"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3546,7 +3546,7 @@
 			tasks: [{
 				id: "1F5CD5DBE6D75E7A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -3564,7 +3564,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -3578,7 +3578,7 @@
 				{
 					id: "184806817B6D9921"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(minecraft:raw_gold)item(gtceu:rich_raw_gold))"
@@ -3590,7 +3590,7 @@
 				{
 					id: "3101B42F9E34CDA1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
@@ -3608,7 +3608,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -3622,7 +3622,7 @@
 				{
 					id: "763128F1BD1FEB9B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -3637,7 +3637,7 @@
 				{
 					id: "34F5CDD35DDE2295"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
@@ -3655,7 +3655,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"tfc:item_heat": {
 						heat: 0.0f
@@ -3669,7 +3669,7 @@
 				{
 					id: "3E9AC72D1AF2CE1A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							display: {
@@ -3684,7 +3684,7 @@
 				{
 					id: "4E12D679975AEE9A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
 							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
@@ -3731,7 +3731,7 @@
 			tasks: [{
 				id: "0606E0C9495E1A59"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:tuyeres)"
@@ -3751,7 +3751,7 @@
 				count: 16L
 				id: "3A134909F4B25CAE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:support_beams)"
@@ -3769,7 +3769,7 @@
 			tasks: [{
 				id: "3E96D38D538B5A5D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:looms)"
@@ -3895,7 +3895,7 @@
 			tasks: [{
 				id: "5F944342D5C4195B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfcambiental:straw_hat"
 					tag: {
 						Damage: 0
@@ -3943,7 +3943,7 @@
 			tasks: [{
 				id: "2C29795E14F3C008"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:prepared_hides)"
@@ -3964,7 +3964,7 @@
 			tasks: [{
 				id: "2EA9AB18C7A79409"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:scraped_hides)"
@@ -3985,7 +3985,7 @@
 			tasks: [{
 				id: "32617E98CE91FDEF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:soaked_hides)"
@@ -4008,7 +4008,7 @@
 			tasks: [{
 				id: "69C31B73DF761B58"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:raw_hides)"
@@ -4027,7 +4027,7 @@
 			tasks: [{
 				id: "20EB604378FA0807"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:sheepskin_hides)"
@@ -4115,7 +4115,7 @@
 			tasks: [{
 				id: "64D9B70849F6176A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfc:spindle"
 					tag: {
 						Damage: 0
@@ -4179,7 +4179,7 @@
 			tasks: [{
 				id: "1500208D4CBDD15A"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -4203,7 +4203,7 @@
 				{
 					id: "39EB804E4B7FC490"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:burlap_cowl"
 						tag: {
 							Damage: 0
@@ -4214,7 +4214,7 @@
 				{
 					id: "719810851FA5EFE6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:burlap_shirt"
 						tag: {
 							Damage: 0
@@ -4225,7 +4225,7 @@
 				{
 					id: "62BBC7A8EDA7A4C5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:burlap_pants"
 						tag: {
 							Damage: 0
@@ -4236,7 +4236,7 @@
 				{
 					id: "178A66BEB7E191E1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:burlap_shoes"
 						tag: {
 							Damage: 0
@@ -4255,7 +4255,7 @@
 				{
 					id: "774D01EFA53FECB1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "firmalife:beekeeper_helmet"
 						tag: {
 							Damage: 0
@@ -4266,7 +4266,7 @@
 				{
 					id: "65A217CF81AC8FD6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "firmalife:beekeeper_chestplate"
 						tag: {
 							Damage: 0
@@ -4277,7 +4277,7 @@
 				{
 					id: "1C003267F992867C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "firmalife:beekeeper_leggings"
 						tag: {
 							Damage: 0
@@ -4288,7 +4288,7 @@
 				{
 					id: "65D6BDB93F7483B5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "firmalife:beekeeper_boots"
 						tag: {
 							Damage: 0
@@ -4336,7 +4336,7 @@
 			tasks: [{
 				id: "2A2503A086F19FAC"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
 							creationDate: 4842000L
@@ -4369,7 +4369,7 @@
 				{
 					id: "3D9D58C3CFF2AF0A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:silk_cowl"
 						tag: {
 							Damage: 0
@@ -4380,7 +4380,7 @@
 				{
 					id: "180F099449E82FC0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:silk_shirt"
 						tag: {
 							Damage: 0
@@ -4391,7 +4391,7 @@
 				{
 					id: "74366DE2E50A1A36"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:silk_pants"
 						tag: {
 							Damage: 0
@@ -4402,7 +4402,7 @@
 				{
 					id: "4F216CC704FBB28B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:silk_shoes"
 						tag: {
 							Damage: 0
@@ -4420,7 +4420,7 @@
 			tasks: [{
 				id: "4A9AB33FDB17322A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
@@ -4444,7 +4444,7 @@
 				{
 					id: "786C737E1798C9E5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:insulated_leather_boots"
 						tag: {
 							Damage: 0
@@ -4455,7 +4455,7 @@
 				{
 					id: "1B056220F83FD83B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:insulated_leather_pants"
 						tag: {
 							Damage: 0
@@ -4466,7 +4466,7 @@
 				{
 					id: "3EF69630C6A9ED0F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:insulated_leather_tunic"
 						tag: {
 							Damage: 0
@@ -4477,7 +4477,7 @@
 				{
 					id: "0F57D87B84D2DFBC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:insulated_leather_hat"
 						tag: {
 							Damage: 0
@@ -4500,7 +4500,7 @@
 				{
 					id: "14606DAF5A6A5F37"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:leather_helmet"
 						tag: {
 							Damage: 0
@@ -4511,7 +4511,7 @@
 				{
 					id: "74D51682F729B0D1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:leather_chestplate"
 						tag: {
 							Damage: 0
@@ -4522,7 +4522,7 @@
 				{
 					id: "00A04086241B4D4B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:leather_leggings"
 						tag: {
 							Damage: 0
@@ -4533,7 +4533,7 @@
 				{
 					id: "263FCB75FC8D55A9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:leather_boots"
 						tag: {
 							Damage: 0
@@ -4544,7 +4544,7 @@
 				{
 					id: "0D3CD273F67E8E3B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tfcambiental:leather_apron"
 						tag: {
 							Damage: 0
@@ -4567,7 +4567,7 @@
 			tasks: [{
 				id: "1C2176D311281B7E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "waterflasks:leather_flask"
 					tag: {
 						Damage: 0
@@ -4598,7 +4598,7 @@
 				{
 					id: "62EC0AEA77AF5C14"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "toolbelt:belt"
 						tag: { }
 					}
@@ -4685,7 +4685,7 @@
 			tasks: [{
 				id: "1305D6C4E52B055B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -4705,7 +4705,7 @@
 			tasks: [{
 				id: "74EB9E449D473FC9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -4725,7 +4725,7 @@
 			tasks: [{
 				id: "54A97AF79AA8E551"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -4745,7 +4745,7 @@
 			tasks: [{
 				id: "575BC984BA6ED21C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
@@ -4765,7 +4765,7 @@
 			tasks: [{
 				id: "586CBB50F542C2EE"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -4785,7 +4785,7 @@
 			tasks: [{
 				id: "53663E2AA8284479"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -4827,7 +4827,7 @@
 			tasks: [{
 				id: "0A1674892B490462"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -4847,7 +4847,7 @@
 			tasks: [{
 				id: "5DE11577CF333011"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							heat: 0.0f
@@ -4907,7 +4907,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			description: ["{quests.2672C65095539E23.d1}"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:aluminium_hammer"
 				tag: {
 					DisallowContainerItem: 0b
@@ -4936,7 +4936,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			description: ["{quests.3D7B0F3134C30364.d1}"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "tfc:field_guide"
@@ -5047,7 +5047,7 @@
 				count: 5L
 				id: "4D3A57BC6B9D5DF4"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -5078,7 +5078,7 @@
 			tasks: [{
 				id: "37312BCB967DE348"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hangglider:hang_glider"
 					tag: {
 						Damage: 0
@@ -5095,7 +5095,7 @@
 			tasks: [{
 				id: "09C1DBDEB5A47AB8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						"ftbfiltersystem:filter": "or(item_tag(tfchotornot:tongs))"
@@ -5180,7 +5180,7 @@
 			tasks: [{
 				id: "5B2D048464054ACA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "etched:music_label"
 					tag: {
 						Label: { }

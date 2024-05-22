@@ -1,7 +1,5 @@
 
 [UI]
-	#'Use while sneaking to open' message will be shown in Camera item tooltip.
-	CameraSneakOpenTooltip = true
 	#Photographer name will be shown in Photograph's tooltip.
 	PhotographPhotographerNameTooltip = false
 	#Crosshair will not get in the way when holding a photograph.
@@ -13,6 +11,14 @@
 	AlbumShowPhotosCount = true
 	#Signed Album item will have an enchantment glint.
 	SignedAlbumGlint = true
+	#Details about Camera configuring will be shown in Camera item tooltip.
+	CameraDetailsInTooltip = true
+	#Film Roll Frames will be shown in the camera tooltip.
+	#Default: true
+	CameraFilmFramesTooltip = true
+	#Film Roll fullness bar will be shown on the Camera item. Same as it does on Film Roll item.
+	#Default: false
+	CameraShowsFilmBar = false
 
 	[UI.Viewfinder]
 		#Mouse sensitivity modifier per 5 degrees of fov. Set to 0 to disable sensitivity changes.
@@ -21,12 +27,21 @@
 		BackgroundColorHex = "FA1F1D1B"
 		FontMainColorHex = "FF2B2622"
 		FontSecondaryColorHex = "FF7A736C"
+		#Clicking middle mouse button will open Viewfinder Controls. This is independent of Open Camera Controls keybind.
+		#Allows opening camera controls without dismounting from a vehicle - and keeping controls on sneak as well.
+		#Default: true
+		MiddleClickOpensControls = true
 
 [Capture]
 	#Delay in ticks before capturing an image when shooting with flash.
 	#If you experience flash synchronization issues (Flash having no effect on the image) - try increasing the value.
 	#Range: 1 ~ 6
 	FlashCaptureDelayTicks = 3
+	#Delay in frames before capturing an image.
+	#Set to higher value when leftovers of GUI elements (such as nameplates) are visible on the images
+	#(some shaders have temporal effects that take several frames to disappear fully)
+	#Range: 0 ~ 100
+	CaptureDelayFrames = 0
 
 [FileSaving]
 	#When the Photograph is viewed in UI, image will be saved to 'exposures' folder as a png.

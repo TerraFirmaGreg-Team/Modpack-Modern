@@ -89,7 +89,7 @@
 				"&6This quest unlocks a new tutorial on Turbine Mechanics in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:turbine_rotor"
 				tag: {
 					GT.PartStats: {
@@ -565,7 +565,7 @@
 			tasks: [{
 				id: "4BCA4F8ED0041BF6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {

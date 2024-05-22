@@ -1246,7 +1246,7 @@
 			tasks: [{
 				id: "1BCFD5295BE92C4E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:elytra"
 					tag: {
 						Damage: 0
@@ -1265,7 +1265,7 @@
 			tasks: [{
 				id: "3785469E7628386A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hangglider:reinforced_hang_glider"
 					tag: {
 						Damage: 0

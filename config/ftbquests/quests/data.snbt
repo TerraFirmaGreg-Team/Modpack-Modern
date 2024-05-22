@@ -10,7 +10,7 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "ftbquests:custom_icon"
 		tag: {
 			Icon: "tfg:textures/gui/logo_512x512.png"
