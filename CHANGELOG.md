@@ -10,6 +10,8 @@
 - Maybe something else? definitely no.
 ### Updated mods
 - Ksysis 1.2.0 -> 1.3.0
+### Removed mods
+- Chisel And Bits
 
 ## [0.7.8] - 03.05.2024
 ### Fixes
