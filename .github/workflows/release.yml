@@ -111,7 +111,7 @@ jobs:
         run: |
           mkdir -p .minecraft
           mkdir -p flame
-          mv -vf {config,defaultconfigs,kubejs,mods,resourcepacks} .minecraft/
+          mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
           mv -vf .github/buildtools/modpack/mmc-pack.json ./
           mv -vf .github/buildtools/modpack/instance.cfg ./
           mv -vf .github/buildtools/modpack/modlist.html ./
