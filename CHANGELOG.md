@@ -2,11 +2,12 @@
 
 ## [0.7.9] - 22.05.2024
 ### Fixes
+- Fixed some spade and butchery knife recipes.
 - Garnierite veins now spawns a bit frequently (60 -> 40).
 - Backpack upgrades now can be crafted from any leather.
 - Temp fix for glassworking with hot or not.
 - Fix some broken quests AGAIN!
-- Chisel and bits has been removed because it crashes servers often and has not yet been finalized. You can still return it to the assembly and its recipes that exist now will work correctly, we specifically left them in the modpack for this :)
+- Chisel and bits has been removed because it crashes servers often and has not yet been finalized. You can still return it to the modpack and its recipes that exist now will work correctly, we specifically left them in the modpack for this :)
 - Maybe something else? definitely no.
 ### Updated mods
 - Ksysis 1.2.0 -> 1.3.0
