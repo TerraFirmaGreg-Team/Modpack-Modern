@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.7.10] - Wait
+### Fixes
+- ?
+
+### New mods
+- Chunk Sending
+- Fast Async World Save
+- Connectivity
+- Smooth Chunk Save
+- Structure Essentials
+- Memory Settings
+- Chunk Sending
+### Updated mods
+### Removed mods
+- KryptonReforged
+
 ## [0.7.9] - 22.05.2024
 ### Fixes
 - Fixed some spade and butchery knife recipes.
