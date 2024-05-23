@@ -1,18 +1,14 @@
 # Changelog
 
-## [0.7.10] - Wait
+## [0.7.10] - 23.05.2024
 ### Fixes
-- ?
-
+- Probably fixed strange shit, when items could dispawn VERY quickly (1-2mins) (by deleting KryptonReforged as incompat with embeddium).
 ### New mods
-- Chunk Sending
-- Fast Async World Save
-- Connectivity
-- Smooth Chunk Save
-- Structure Essentials
-- Memory Settings
-- Chunk Sending
+- ?
 ### Updated mods
+- GregTech Modern 1.2.0.a -> 1.2.3
+- TerraFirmaGreg 0.5.6 -> 0.5.7
+- GCYR 0.1.6 -> 0.1.8
 ### Removed mods
 - KryptonReforged
 
