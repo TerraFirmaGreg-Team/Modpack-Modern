@@ -121,9 +121,9 @@ worldgen:
     # Default: true
     removeVanillaLargeOreVeins: true
 
-    # Multiplier to bedrock ore generation amount
-    # Default: 1.0f
-    bedrockOreMultiplier: 1.0
+    # Distance between bedrock ore veins in chunks, if enabled.
+    # Default: 16
+    bedrockOreDistance: 16
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
@@ -158,6 +158,10 @@ machines:
   # Energy use multiplier for electric items.
   # Default: 100
   energyUsageMultiplier: 100
+
+  # Energy use multiplier for prospectors.
+  # Default: 100
+  prospectorEnergyUseMultiplier: 100
 
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
@@ -282,6 +286,23 @@ client:
   # Default: 300
   animationTime: 300
 
+  armorHud:
+    # Sets HUD location
+    # 1 - left-upper corner
+    # 2 - right-upper corner
+    # 3 - left-bottom corner
+    # 4 - right-bottom corner
+    # Default: 1
+    hudLocation: 1
+
+    # Horizontal offset of HUD.
+    # Default: 0
+    hudOffsetX: 0
+
+    # Vertical offset of HUD.
+    # Default: 0
+    hudOffsetY: 0
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -291,6 +312,12 @@ tools:
   # Amount of blocks that can be spray painted at once
   # Default: 16
   sprayCanChainLength: 16
+
+# Config options for Game Mechanics
+gameplay:
+  # Enable hazardous materials
+  # Default: true
+  hazardsEnabled: true
 
 # Config options for Mod Compatibility
 compat:
