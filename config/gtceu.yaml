@@ -168,6 +168,10 @@ machines:
   # Default: true
   doesExplosionDamagesTerrain: true
 
+  # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
+  # Default: false
+  harmlessActiveTransformers: false
+
   # Divisor for Recipe Duration per Overclock.
   # Default: 2.0
   overclockDivisor: 2.0
