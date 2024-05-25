@@ -300,7 +300,7 @@ const registerExtendedAE2Recipes = (event) => {
             '3x #forge:plates/steel',
             '#gtceu:circuits/ev',
             '2x gtceu:ev_emitter',
-            '2xae2:wireless_receiver',
+            '2x ae2:wireless_receiver',
             'ae2:calculation_processor')
         .itemOutputs('expatternprovider:wireless_tool')
         .duration(100)
