@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.10] - 23.05.2024
+## [Unreleased]
 ### Fixes
 - Probably fixed strange shit, when items could dispawn VERY quickly (1-2mins) (by deleting KryptonReforged as incompat with embeddium).
 ### New mods
