@@ -22,6 +22,9 @@
 	#.
 	#Should the normal create conductor cap be rendered on top of the conductors existing hat?
 	renderNormalCap = true
+	#.
+	#Should flywheels and blocks extending the FlywheelBlock class be animated when apart of trains?
+	animatedFlywheels = true
 
 	#.
 	#Smoke Settings

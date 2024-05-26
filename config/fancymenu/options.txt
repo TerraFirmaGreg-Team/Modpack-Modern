@@ -7,6 +7,7 @@ B:force_fullscreen = 'false';
 
 ##[customization]
 
+B:modpack_mode = 'false';
 B:show_customization_overlay = 'false';
 B:advanced_customization_mode = 'false';
 
