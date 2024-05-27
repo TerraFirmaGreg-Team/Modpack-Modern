@@ -431,7 +431,7 @@
 				item: "ae2:annihilation_plane"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: -2.0d
 		}
 		{
@@ -442,7 +442,7 @@
 				item: "ae2:formation_plane"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: 2.0d
 		}
 		{
@@ -457,7 +457,7 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -468,7 +468,7 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -480,7 +480,7 @@
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
@@ -492,7 +492,7 @@
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
@@ -504,7 +504,7 @@
 				item: "ae2:1k_crafting_storage"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -2.0d
 		}
 		{
@@ -516,7 +516,7 @@
 				item: "ae2:4k_crafting_storage"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -1.0d
 		}
 		{
@@ -528,7 +528,7 @@
 				item: "ae2:16k_crafting_storage"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -540,7 +540,7 @@
 				item: "ae2:64k_crafting_storage"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 1.0d
 		}
 		{
@@ -552,7 +552,7 @@
 				item: "ae2:256k_crafting_storage"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 2.0d
 		}
 		{
@@ -564,7 +564,7 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: -2.0d
 		}
 		{
@@ -576,7 +576,7 @@
 				item: "ae2:crafting_monitor"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 2.0d
 		}
 		{
@@ -773,30 +773,52 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 9.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["3E0EE1623F16A15A"]
+			description: [
+				"Cell Dock:"
+				""
+				"1 slot "
+				"Passive Drain: 1 eu/t"
+				""
+				""
+				"ME Drive:"
+				""
+				"10 slot"
+				"Passive Drain: 4 eu/t"
+			]
 			id: "7FE61D03A7F15A6F"
 			shape: "circle"
 			tasks: [{
-				id: "4CA2AFDCC398E43B"
-				item: "ae2:drive"
+				id: "2A7C25B62FAA81D9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any start driver\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(ae2:drive)item(megacells:cell_dock))"
+					}
+				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["7FE61D03A7F15A6F"]
 			id: "0DD7D344F65BB09F"
 			shape: "circle"
+			subtitle: "Passive Drain: 2eu/t"
 			tasks: [{
 				id: "43B5F598E59DC820"
 				item: "ae2:io_port"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 11.0d
 		}
 		{
@@ -815,7 +837,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -2.0d
 			y: 11.0d
 		}
 		{
@@ -827,7 +849,7 @@
 				item: "ae2:spatial_cell_component_2"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -4.0d
 			y: 12.5d
 		}
 		{
@@ -839,7 +861,7 @@
 				item: "ae2:spatial_cell_component_16"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -4.0d
 			y: 13.5d
 		}
 		{
@@ -851,7 +873,7 @@
 				item: "ae2:spatial_cell_component_128"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -4.0d
 			y: 14.5d
 		}
 		{
@@ -863,7 +885,7 @@
 				item: "ae2:spatial_storage_cell_2"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.5d
 			y: 12.5d
 		}
 		{
@@ -875,7 +897,7 @@
 				item: "ae2:spatial_storage_cell_16"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.5d
 			y: 13.5d
 		}
 		{
@@ -887,7 +909,7 @@
 				item: "ae2:spatial_storage_cell_128"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.5d
 			y: 14.5d
 		}
 		{
@@ -899,7 +921,7 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 12.5d
 		}
 		{
@@ -911,7 +933,7 @@
 				item: "ae2:wireless_booster"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 12.5d
 		}
 		{
@@ -923,7 +945,7 @@
 				item: "ae2:wireless_terminal"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 12.5d
 		}
 		{
@@ -939,7 +961,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 11.5d
 		}
 		{
@@ -951,7 +973,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 13.5d
 		}
 		{
@@ -968,7 +990,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 12.5d
 		}
 		{
@@ -980,7 +1002,7 @@
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: 14.5d
 		}
 		{
@@ -992,7 +1014,7 @@
 				item: "ae2wtlib:magnet_card"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: 14.5d
 		}
 		{
@@ -1004,7 +1026,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 12.5d
 		}
 		{
@@ -1016,7 +1038,7 @@
 				item: "ae2:item_cell_housing"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 6.0d
 		}
 		{
@@ -1028,7 +1050,7 @@
 				item: "ae2:fluid_cell_housing"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 8.0d
 		}
 		{
@@ -1044,7 +1066,7 @@
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.0d
 			y: 7.0d
 		}
 		{
@@ -1057,7 +1079,7 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: 7.0d
 		}
 		{
@@ -1070,7 +1092,7 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 7.0d
 		}
 		{
@@ -1083,7 +1105,7 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 7.0d
 		}
 		{
@@ -1096,7 +1118,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.0d
 			y: 7.0d
 		}
 		{
@@ -1112,7 +1134,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.0d
 			y: 5.5d
 		}
 		{
@@ -1128,7 +1150,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.0d
 			y: 8.5d
 		}
 		{
@@ -1144,7 +1166,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: 4.5d
 		}
 		{
@@ -1160,7 +1182,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: 9.5d
 		}
 		{
@@ -1176,7 +1198,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 5.5d
 		}
 		{
@@ -1192,7 +1214,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 8.5d
 		}
 		{
@@ -1208,7 +1230,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: 4.5d
 		}
 		{
@@ -1224,7 +1246,7 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: 9.5d
 		}
 		{
@@ -1240,7 +1262,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 8.5d
 		}
 		{
@@ -1256,7 +1278,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 5.5d
 		}
 		{
@@ -1272,7 +1294,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -8.5d
 			y: 4.5d
 		}
 		{
@@ -1288,7 +1310,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -8.5d
 			y: 9.5d
 		}
 		{
@@ -1304,7 +1326,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: 5.5d
 		}
 		{
@@ -1320,7 +1342,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: 8.5d
 		}
 		{
@@ -1336,7 +1358,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -7.5d
 			y: 4.5d
 		}
 		{
@@ -1352,7 +1374,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -7.5d
 			y: 9.5d
 		}
 		{
@@ -1368,7 +1390,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.0d
 			y: 5.5d
 		}
 		{
@@ -1384,7 +1406,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.0d
 			y: 8.5d
 		}
 		{
@@ -1400,7 +1422,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 4.5d
 		}
 		{
@@ -1416,7 +1438,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 9.5d
 		}
 		{
@@ -1439,7 +1461,7 @@
 				item: "ae2insertexportcard:insert_card"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: 11.5d
 		}
 		{
@@ -1450,7 +1472,7 @@
 				item: "ae2insertexportcard:export_card"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: 13.5d
 		}
 		{
@@ -1466,7 +1488,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 11.0d
 		}
 		{
@@ -1482,7 +1504,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: 11.0d
 		}
 		{
@@ -1498,7 +1520,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: 11.0d
 		}
 		{
@@ -1509,11 +1531,15 @@
 				item: "merequester:requester"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 8.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["10A45BEBBEA7A466"]
+			dependencies: [
+				"0C8649DF8EECC311"
+				"4493C81ABD3BFC00"
+			]
+			dependency_requirement: "one_completed"
 			id: "58A223FCB61A60E9"
 			shape: "circle"
 			tasks: [{
@@ -1521,7 +1547,7 @@
 				item: "megacells:cell_component_1m"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -13.0d
 			y: 7.0d
 		}
 		{
@@ -1533,43 +1559,47 @@
 				item: "megacells:cell_component_4m"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -14.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["2017A13C254711F7"]
+			description: [""]
 			id: "1B44E57DAE367873"
 			shape: "circle"
+			subtitle: "in dev"
 			tasks: [{
 				id: "408DDCC9B2573DA9"
 				item: "megacells:cell_component_16m"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -15.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["1B44E57DAE367873"]
 			id: "5598720FF2E9F946"
 			shape: "circle"
+			subtitle: "in dev"
 			tasks: [{
 				id: "773358A900F41158"
 				item: "megacells:cell_component_64m"
 				type: "item"
 			}]
-			x: -13.5d
+			x: -16.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["5598720FF2E9F946"]
 			id: "416DB5C77D43FE29"
 			shape: "circle"
+			subtitle: "in dev"
 			tasks: [{
 				id: "721A317945FAF3C7"
 				item: "megacells:cell_component_256m"
 				type: "item"
 			}]
-			x: -14.5d
+			x: -17.0d
 			y: 7.0d
 		}
 		{
@@ -1584,7 +1614,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
+			x: -13.0d
 			y: 5.5d
 		}
 		{
@@ -1599,7 +1629,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
+			x: -14.0d
 			y: 5.5d
 		}
 		{
@@ -1614,7 +1644,7 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
+			x: -15.0d
 			y: 5.5d
 		}
 		{
@@ -1629,7 +1659,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.5d
+			x: -16.0d
 			y: 5.5d
 		}
 		{
@@ -1644,7 +1674,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.5d
+			x: -17.0d
 			y: 5.5d
 		}
 		{
@@ -1659,7 +1689,7 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
+			x: -13.0d
 			y: 8.5d
 		}
 		{
@@ -1674,7 +1704,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
+			x: -14.0d
 			y: 8.5d
 		}
 		{
@@ -1689,7 +1719,7 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
+			x: -15.0d
 			y: 8.5d
 		}
 		{
@@ -1704,7 +1734,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.5d
+			x: -16.0d
 			y: 8.5d
 		}
 		{
@@ -1719,7 +1749,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.5d
+			x: -17.0d
 			y: 8.5d
 		}
 		{
@@ -1734,7 +1764,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -13.5d
 			y: 4.5d
 		}
 		{
@@ -1749,7 +1779,7 @@
 				}
 				type: "item"
 			}]
-			x: -12.0d
+			x: -14.5d
 			y: 4.5d
 		}
 		{
@@ -1764,7 +1794,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.0d
+			x: -15.5d
 			y: 4.5d
 		}
 		{
@@ -1779,7 +1809,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
+			x: -16.5d
 			y: 4.5d
 		}
 		{
@@ -1794,7 +1824,7 @@
 				}
 				type: "item"
 			}]
-			x: -15.0d
+			x: -17.5d
 			y: 4.5d
 		}
 		{
@@ -1809,7 +1839,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -13.5d
 			y: 9.5d
 		}
 		{
@@ -1824,7 +1854,7 @@
 				}
 				type: "item"
 			}]
-			x: -12.0d
+			x: -14.5d
 			y: 9.5d
 		}
 		{
@@ -1839,7 +1869,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.0d
+			x: -15.5d
 			y: 9.5d
 		}
 		{
@@ -1854,7 +1884,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
+			x: -16.5d
 			y: 9.5d
 		}
 		{
@@ -1869,7 +1899,7 @@
 				}
 				type: "item"
 			}]
-			x: -15.0d
+			x: -17.5d
 			y: 9.5d
 		}
 		{
@@ -1880,8 +1910,8 @@
 				item: "merequester:requester_terminal"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1D88369409736DC7"]
@@ -1900,6 +1930,377 @@
 			}]
 			x: -7.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["10A45BEBBEA7A466"]
+			id: "4493C81ABD3BFC00"
+			tasks: [{
+				id: "770A039BEF516A07"
+				item: "megacells:mega_item_cell_housing"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["10A45BEBBEA7A466"]
+			id: "0C8649DF8EECC311"
+			tasks: [{
+				id: "33A8D4B45535C9BB"
+				item: "megacells:mega_fluid_cell_housing"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["584A8C2697AE1785"]
+			id: "4398318850154CEA"
+			tasks: [{
+				id: "76971A70F6196C15"
+				item: "megacells:accumulation_processor_press"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3E0EE1623F16A15A"]
+			id: "11C66CC52784686D"
+			tasks: [{
+				id: "1C5609179AFD0241"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["11C66CC52784686D"]
+			hide_dependency_lines: true
+			id: "584A8C2697AE1785"
+			size: 1.5d
+			tasks: [{
+				id: "17690B31AD36C391"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4398318850154CEA"]
+			id: "19C5C349EABFB29A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "328DB303390420FF"
+				item: "megacells:accumulation_processor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "3B9319944B47F3F2"
+			tasks: [{
+				id: "7D0A890D749CAAC1"
+				item: "megacells:mega_interface"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "76A7B49D92CE5EB5"
+			tasks: [{
+				id: "3B083B4DE93D31B8"
+				item: "megacells:mega_pattern_provider"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "6D1FC61E12586D57"
+			tasks: [{
+				id: "449FBA81C0A6A9B8"
+				item: "expatternprovider:ex_molecular_assembler"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "3D1933DCABD4006C"
+			tasks: [{
+				id: "19595D59E5DCA829"
+				item: "expatternprovider:ex_drive"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "63963147516C1F74"
+			tasks: [
+				{
+					id: "7BC071B7030C4E92"
+					item: "expatternprovider:wireless_connect"
+					type: "item"
+				}
+				{
+					id: "67E6562A9129D610"
+					item: "expatternprovider:wireless_tool"
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["76A7B49D92CE5EB5"]
+			id: "1FB2089C461BD7F5"
+			tasks: [{
+				id: "310078097905E96C"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3B9319944B47F3F2"]
+			id: "1269F30575599F10"
+			tasks: [{
+				id: "2337DF0CD810234D"
+				item: "expatternprovider:ex_interface"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "62B7FDDFF8BCF21D"
+			tasks: [{
+				id: "5CE7A2C50EEC5C93"
+				item: "expatternprovider:ex_charger"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "7A3B42320B7CCFE6"
+			tasks: [{
+				id: "6D66049C31E56F07"
+				item: "expatternprovider:ex_io_port"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"5CAF4D91F281D3BC"
+				"780DB1BBED7236C3"
+			]
+			id: "26CF84B52F34D2B6"
+			tasks: [{
+				id: "5A86009CAD7F0191"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "0BF8CB9EAD275C6F"
+			tasks: [{
+				id: "0F4DFF44A5A3C878"
+				item: "megacells:mega_crafting_unit"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "6BD1291E8D186C25"
+			tasks: [{
+				id: "136B2E4ED7C83291"
+				item: "megacells:mega_crafting_monitor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "29020780E7445FBB"
+			tasks: [{
+				id: "464E42D2A0CE7294"
+				item: "megacells:mega_crafting_accelerator"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "10C7EB316BAE2485"
+			tasks: [{
+				id: "011441417935728E"
+				item: "megacells:1m_crafting_storage"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "227D4D5B19AA6CE5"
+			tasks: [{
+				id: "037F173440F5374A"
+				item: "megacells:4m_crafting_storage"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "6C1609F45168FE27"
+			subtitle: "in dev"
+			tasks: [{
+				id: "0A7525D4C945C8EA"
+				item: "megacells:16m_crafting_storage"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "7233C77CE9F2C8D2"
+			subtitle: "in dev"
+			tasks: [{
+				id: "519B6D77D18C5D38"
+				item: "megacells:64m_crafting_storage"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0BF8CB9EAD275C6F"]
+			id: "5F8609C9F73D880E"
+			subtitle: "in dev"
+			tasks: [{
+				id: "497F303F52FAAF76"
+				item: "megacells:256m_crafting_storage"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"22262840D8FB66F6"
+				"19C5C349EABFB29A"
+			]
+			hide_dependency_lines: true
+			id: "175FDA9A221D9890"
+			tasks: [{
+				id: "638E87603393DE86"
+				item: "expatternprovider:ex_pattern_access_part"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6E2F0F0D9E5BA86D"]
+			id: "5190700FE8C07694"
+			tasks: [{
+				id: "18A7C8EBFACD3112"
+				item: "expatternprovider:threshold_level_emitter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"265776278F5E3F33"
+				"10C1BEE45AFA6A83"
+			]
+			id: "76FC803DD55B1761"
+			tasks: [{
+				id: "3F7DAEC6A2777B7F"
+				item: "expatternprovider:caner"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4248E24FE441B11D"]
+			id: "2E98E8200E671A9E"
+			tasks: [{
+				id: "38CA224074DD3ECD"
+				item: "expatternprovider:ingredient_buffer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E0EE1623F16A15A"]
+			id: "2948E38F4C54FEEE"
+			tasks: [{
+				id: "08D8B91E8678418D"
+				item: {
+					Count: 1
+					id: "expatternprovider:me_packing_tape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "7DBBCCF58C57B19F"
+			tasks: [{
+				id: "279A24F6BF43AC91"
+				item: "expatternprovider:ex_import_bus_part"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19C5C349EABFB29A"]
+			id: "586CA6482ABA61D3"
+			tasks: [{
+				id: "3B80592841923619"
+				item: "expatternprovider:ex_export_bus_part"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
 		}
 	]
 	title: "&6HV&r - AE2"
