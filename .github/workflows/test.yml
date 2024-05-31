@@ -1,0 +1,20 @@
+name: Test
+run-name: "Test #${{ github.run_number }}"
+
+on:
+  push:
+
+jobs:
+  info:
+    name: Project Info
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.4
+
+      - name: Replace strings
+        shell: bash
+        run: java -jar pakku.jar import <path> TerraFirmaGreg-1.20.x-0.7.9-cf.zip
+
+    
