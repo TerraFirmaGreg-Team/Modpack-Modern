@@ -5,5 +5,2348 @@
     ],
     "loaders": {
         "Forge": "47.2.6"
-    }
+    },
+    "projects": [
+        {
+            "pakku_id": "xANlH3wkFF8WsQOL",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "additional-placements"
+            },
+            "name": {
+                "curseforge": "Additional Placements"
+            },
+            "id": {
+                "curseforge": "674852"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "A66rthIlpoaA7qTM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ae2-insert-export-card"
+            },
+            "name": {
+                "curseforge": "AE2 Insert Export Card"
+            },
+            "id": {
+                "curseforge": "982512"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "1yKwYdqnHrLgTw9K",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ae2-network-analyser"
+            },
+            "name": {
+                "curseforge": "AE2 Network Analyser"
+            },
+            "id": {
+                "curseforge": "961856"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "MY5c5Ct7vezEoyx4",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "aeinfinitybooster"
+            },
+            "name": {
+                "curseforge": "AEInfinityBooster"
+            },
+            "id": {
+                "curseforge": "559313"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "FrdR3BWDsebaGHcK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ai-improvements"
+            },
+            "name": {
+                "curseforge": "AI Improvements"
+            },
+            "id": {
+                "curseforge": "233019"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "4ya7OFtNJMqhffmN",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ambientsounds"
+            },
+            "name": {
+                "curseforge": "AmbientSounds 6"
+            },
+            "id": {
+                "curseforge": "254284"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "xunkmTxJPrVImz1j",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "applied-energistics-2"
+            },
+            "name": {
+                "curseforge": "Applied Energistics 2"
+            },
+            "id": {
+                "curseforge": "223794"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "IzgqZpkBX9qga0wA",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "applied-energistics-2-wireless-terminals"
+            },
+            "name": {
+                "curseforge": "Applied Energistics 2 Wireless Terminals"
+            },
+            "id": {
+                "curseforge": "459929"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "wor9LV0cSIeyB8PQ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "architectury-api"
+            },
+            "name": {
+                "curseforge": "Architectury API (Fabric/Forge/NeoForge)"
+            },
+            "id": {
+                "curseforge": "419699"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "E5TmnF3lFaDgUnbG",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "astikor-carts-redux"
+            },
+            "name": {
+                "curseforge": "AstikorCarts Redux"
+            },
+            "id": {
+                "curseforge": "916493"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "hvx8LvBTYQJm6UPr",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "astikor-carts-tfc"
+            },
+            "name": {
+                "curseforge": "Astikor Carts TFC"
+            },
+            "id": {
+                "curseforge": "844019"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "JFBs7ZfLAnpMa1dw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "attributefix"
+            },
+            "name": {
+                "curseforge": "AttributeFix"
+            },
+            "id": {
+                "curseforge": "280510"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "i9nlh5BBou3WmUzc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "balm"
+            },
+            "name": {
+                "curseforge": "Balm (Forge Edition)"
+            },
+            "id": {
+                "curseforge": "531761"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "KbsFY1FpD21E3Gfh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "barrels-2012"
+            },
+            "name": {
+                "curseforge": "Barrels 2012"
+            },
+            "id": {
+                "curseforge": "662156"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "G9eqRU4jZWnbUvNf",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "better-foliage-renewed"
+            },
+            "name": {
+                "curseforge": "Better Foliage Renewed"
+            },
+            "id": {
+                "curseforge": "470013"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Gx4Vg7Ls2xQCf4np",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "better-ping-display"
+            },
+            "name": {
+                "curseforge": "Better Ping Display"
+            },
+            "id": {
+                "curseforge": "292038"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "eXkG172pqp2L7wrq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "better-third-person"
+            },
+            "name": {
+                "curseforge": "Better Third Person"
+            },
+            "id": {
+                "curseforge": "435044"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Ms9eOjrHZ5MbjTBl",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "betterf3"
+            },
+            "name": {
+                "curseforge": "BetterF3"
+            },
+            "id": {
+                "curseforge": "401648"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Eswzell3JmqGcquK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "blur-forge"
+            },
+            "name": {
+                "curseforge": "Blur (Forge)"
+            },
+            "id": {
+                "curseforge": "823106"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "S178wRDS24PifVLU",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "carpeted-stairs"
+            },
+            "name": {
+                "curseforge": "Carpeted Stairs & Slabs"
+            },
+            "id": {
+                "curseforge": "720848"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "367o5TqneGJkA6ix",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "carry-on"
+            },
+            "name": {
+                "curseforge": "Carry On"
+            },
+            "id": {
+                "curseforge": "274259"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "NQ2vuTR54S5Z0f8H",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "catalogue"
+            },
+            "name": {
+                "curseforge": "Catalogue"
+            },
+            "id": {
+                "curseforge": "459701"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Z4XtBX01a4DmLD5F",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cc-tweaked"
+            },
+            "name": {
+                "curseforge": "CC: Tweaked"
+            },
+            "id": {
+                "curseforge": "282001"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "6k4D5pDJM7FSeoPo",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "chat-heads"
+            },
+            "name": {
+                "curseforge": "Chat Heads"
+            },
+            "id": {
+                "curseforge": "407206"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "etrNlQaaIYKK0bk4",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cherished-worlds"
+            },
+            "name": {
+                "curseforge": "Cherished Worlds (Fabric/Forge/NeoForge/Quilt)"
+            },
+            "id": {
+                "curseforge": "308240"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "MP9RPOLPeKM9uYzE",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "client-tweaks"
+            },
+            "name": {
+                "curseforge": "Client Tweaks"
+            },
+            "id": {
+                "curseforge": "251407"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "qsiw1wqvhV6vS9W3",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cloth-config"
+            },
+            "name": {
+                "curseforge": "Cloth Config API (Fabric/Forge/NeoForge)"
+            },
+            "id": {
+                "curseforge": "348521"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "1fNOQQDJeZWAXzPP",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "clumps"
+            },
+            "name": {
+                "curseforge": "Clumps"
+            },
+            "id": {
+                "curseforge": "256717"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2yyC0M7PvqiXvCOs",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "controlling"
+            },
+            "name": {
+                "curseforge": "Controlling"
+            },
+            "id": {
+                "curseforge": "250398"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "etdxRdIzrLbWfAat",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "corals-tfc"
+            },
+            "name": {
+                "curseforge": "Corals TFC"
+            },
+            "id": {
+                "curseforge": "950924"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "L8XB7QoOiMg3MzXc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "corpse"
+            },
+            "name": {
+                "curseforge": "Corpse"
+            },
+            "id": {
+                "curseforge": "316582"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "8TV7GoZL9BSaCIl2",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cosmetic-armor-reworked"
+            },
+            "name": {
+                "curseforge": "Cosmetic Armor Reworked"
+            },
+            "id": {
+                "curseforge": "237307"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "ekxTMA8MgXnRVXCW",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "crafting-tweaks"
+            },
+            "name": {
+                "curseforge": "Crafting Tweaks"
+            },
+            "id": {
+                "curseforge": "233071"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "3glQelzi72mYgk0v",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "craftpresence"
+            },
+            "name": {
+                "curseforge": "CraftPresence"
+            },
+            "id": {
+                "curseforge": "297038"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "7J0FuZ6wEDpQC1pb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create"
+            },
+            "name": {
+                "curseforge": "Create"
+            },
+            "id": {
+                "curseforge": "328085"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Ft3vwLXho3colqZK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-connected"
+            },
+            "name": {
+                "curseforge": "Create: Connected"
+            },
+            "id": {
+                "curseforge": "947914"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2n0i4N3WMt7rDDez",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-steam-n-rails"
+            },
+            "name": {
+                "curseforge": "Create: Steam 'n' Rails"
+            },
+            "id": {
+                "curseforge": "688231"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "mQOGc4o0kb6FNnSw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "createaddition"
+            },
+            "name": {
+                "curseforge": "Create Crafts & Additions"
+            },
+            "id": {
+                "curseforge": "439890"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "tulIfMtNv5QuIyKy",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "creativecore"
+            },
+            "name": {
+                "curseforge": "CreativeCore"
+            },
+            "id": {
+                "curseforge": "257814"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "BhMHLImBkWdQFHIw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cucumber"
+            },
+            "name": {
+                "curseforge": "Cucumber Library"
+            },
+            "id": {
+                "curseforge": "272335"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "6hX1aUdxwQCmkslj",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cupboard"
+            },
+            "name": {
+                "curseforge": "Cupboard"
+            },
+            "id": {
+                "curseforge": "326652"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Lci1VNtLP8rsaN2U",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "curios"
+            },
+            "name": {
+                "curseforge": "Curios API (Forge/NeoForge)"
+            },
+            "id": {
+                "curseforge": "309927"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "5hAlWfGb2HkxWPLh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "default-options"
+            },
+            "name": {
+                "curseforge": "Default Options"
+            },
+            "id": {
+                "curseforge": "232131"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "yZdtlpZlSIuaRBEn",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "do-a-barrel-roll"
+            },
+            "name": {
+                "curseforge": "Do a Barrel Roll"
+            },
+            "id": {
+                "curseforge": "663658"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "PRAByM08L61pVCK2",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "drippy-loading-screen"
+            },
+            "name": {
+                "curseforge": "Drippy Loading Screen"
+            },
+            "id": {
+                "curseforge": "511770"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "xODpPCHlWqxDrZsP",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "dynamiclights-reforged"
+            },
+            "name": {
+                "curseforge": "Embeddium/Rubidium Dynamic Lights"
+            },
+            "id": {
+                "curseforge": "551736"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "AA4d4hYa66bHMJME",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "embeddium"
+            },
+            "name": {
+                "curseforge": "Embeddium"
+            },
+            "id": {
+                "curseforge": "908741"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "NEsII9eoeaUg4SsF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "embeddiumplus"
+            },
+            "name": {
+                "curseforge": "Embeddium++"
+            },
+            "id": {
+                "curseforge": "931925"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2Cbc0jtui5P3GRz8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emi"
+            },
+            "name": {
+                "curseforge": "EMI"
+            },
+            "id": {
+                "curseforge": "580555"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Xooi1zqivMzbK5wc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "enhancedvisuals"
+            },
+            "name": {
+                "curseforge": "EnhancedVisuals"
+            },
+            "id": {
+                "curseforge": "255389"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "XwsZyeB1sdIxUiUq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "etched"
+            },
+            "name": {
+                "curseforge": "Etched"
+            },
+            "id": {
+                "curseforge": "491890"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "YGIXLfUkwRpAKvkf",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ex-pattern-provider"
+            },
+            "name": {
+                "curseforge": "ExtendedAE"
+            },
+            "id": {
+                "curseforge": "892005"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "HJAo6cyM4o8nApgh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "exposure"
+            },
+            "name": {
+                "curseforge": "Exposure"
+            },
+            "id": {
+                "curseforge": "871755"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "f9RuwXOVxb8aVNyl",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "fancymenu"
+            },
+            "name": {
+                "curseforge": "FancyMenu"
+            },
+            "id": {
+                "curseforge": "367706"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "RF2ujNrV4iaIBXXd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ferritecore"
+            },
+            "name": {
+                "curseforge": "FerriteCore ((Neo)Forge)"
+            },
+            "id": {
+                "curseforge": "429235"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "N5iGiSGXvcccRaZ2",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "firmacivilization"
+            },
+            "name": {
+                "curseforge": "Firma: Civilization (TFC Ships)"
+            },
+            "id": {
+                "curseforge": "714158"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Mwkng1C9ggyD9tG7",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "firmalife"
+            },
+            "name": {
+                "curseforge": "FirmaLife"
+            },
+            "id": {
+                "curseforge": "453394"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "K2SPk6MNA7Yh8saS",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "first-person-model"
+            },
+            "name": {
+                "curseforge": "First-person Model (Forge/Fabric)"
+            },
+            "id": {
+                "curseforge": "333287"
+            },
+            "redistributable": false,
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Q5hNzZJ3nsbhZI8l",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "flickerfix"
+            },
+            "name": {
+                "curseforge": "FlickerFix"
+            },
+            "id": {
+                "curseforge": "431430"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "fGNHScAsGMCc1YnV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "fps-reducer"
+            },
+            "name": {
+                "curseforge": "FPS Reducer"
+            },
+            "id": {
+                "curseforge": "280294"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "VK4pxM2OAnvBSJwY",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "framedblocks"
+            },
+            "name": {
+                "curseforge": "FramedBlocks"
+            },
+            "id": {
+                "curseforge": "441647"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "XIo3DvZHMUrVyoB0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-essentials-forge"
+            },
+            "name": {
+                "curseforge": "FTB Essentials (Forge & Fabric)"
+            },
+            "id": {
+                "curseforge": "410811"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Dx03gkjW5DVtuENZ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-filter-system"
+            },
+            "name": {
+                "curseforge": "FTB Filter System"
+            },
+            "id": {
+                "curseforge": "943925"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "GXbmnzl4bq0xHsVY",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-library-forge"
+            },
+            "name": {
+                "curseforge": "FTB Library (Forge)"
+            },
+            "id": {
+                "curseforge": "404465"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "aCadoJqxAhDLpalo",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-quests-forge"
+            },
+            "name": {
+                "curseforge": "FTB Quests (Forge)"
+            },
+            "id": {
+                "curseforge": "289412"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2UcOoLYfTOonGcXr",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-quests-optimizer"
+            },
+            "name": {
+                "curseforge": "FTB Quests Optimizer"
+            },
+            "id": {
+                "curseforge": "912469"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "ufekenfDIK0htccP",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-ranks-forge"
+            },
+            "name": {
+                "curseforge": "FTB Ranks (Forge)"
+            },
+            "id": {
+                "curseforge": "314905"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "fD4fo4XFlXI4icAs",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-teams-forge"
+            },
+            "name": {
+                "curseforge": "FTB Teams (Forge)"
+            },
+            "id": {
+                "curseforge": "404468"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "826cz14NQB3wl6lG",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-xmod-compat"
+            },
+            "name": {
+                "curseforge": "FTB XMod Compat"
+            },
+            "id": {
+                "curseforge": "889915"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "wGuy9JORS2s4U0uC",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gcyr"
+            },
+            "name": {
+                "curseforge": "Gregicality Rocketry"
+            },
+            "id": {
+                "curseforge": "922713"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Zbe8zktFaCJ6kekD",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "get-it-together-drops"
+            },
+            "name": {
+                "curseforge": "Get It Together, Drops!"
+            },
+            "id": {
+                "curseforge": "411045"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Tf6H2Bl25fk5oPCy",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "glodium"
+            },
+            "name": {
+                "curseforge": "Glodium"
+            },
+            "id": {
+                "curseforge": "957920"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "0HKIQ2gYVMCOFv0z",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "gregtech-revival-32x"
+            },
+            "name": {
+                "curseforge": "GregTech Revival 32x"
+            },
+            "id": {
+                "curseforge": "964322"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1 ver 0.10.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5312/604/GregTech Revival 32x 1.19.2-1.20.1 ver 0.10.zip",
+                    "id": "5312604",
+                    "parent_id": "964322",
+                    "hashes": {
+                        "sha1": "5ad6379ee3a0dd145850e10219d156415f6b9bbc",
+                        "md5": "d7357b6d94eefb788dbe2147040bd8e5"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 6047671
+                }
+            ]
+        },
+        {
+            "pakku_id": "iuGque5ZUgdsc5qK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gregtechceu-modern"
+            },
+            "name": {
+                "curseforge": "GregTechCEu Modern"
+            },
+            "id": {
+                "curseforge": "890405"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "nUYT4ySmMhoVyR55",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "hang-glider"
+            },
+            "name": {
+                "curseforge": "Hang Glider [Forge & Fabric]"
+            },
+            "id": {
+                "curseforge": "852668"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "zdcQcbnwlAnMt9xS",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "ilaores-tfc-32x"
+            },
+            "name": {
+                "curseforge": "ILAORE's TFC 32x"
+            },
+            "id": {
+                "curseforge": "952112"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ILAORE's TFC 32x32 ver 0.11 1.20.1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5064/493/ILAORE's TFC 32x32 ver 0.11 1.20.1.zip",
+                    "id": "5064493",
+                    "parent_id": "952112",
+                    "hashes": {
+                        "sha1": "4787a478177326b760e6a40091fb88ba170a0cdc",
+                        "md5": "fd30dd11dd4bf38896ea19292f067cbe"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 21145752
+                }
+            ]
+        },
+        {
+            "pakku_id": "GMN23LRMOOzjlpB7",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "immediatelyfast"
+            },
+            "name": {
+                "curseforge": "ImmediatelyFast"
+            },
+            "id": {
+                "curseforge": "686911"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "hb6tyqb9MZK9NToo",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "improved-applied-energistics-2"
+            },
+            "name": {
+                "curseforge": "Improved Applied Energistics 2"
+            },
+            "id": {
+                "curseforge": "891816"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20.4"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5064/623/Improved AE 2 1.20.1 ver 0.03 - 32x32.zip",
+                    "id": "5064623",
+                    "parent_id": "891816",
+                    "hashes": {
+                        "sha1": "298baeaea7237a0c5361fd3186e4f5ad5bc0c266",
+                        "md5": "eee7211a342f9e59fe6d4c99f3988657"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 1987955
+                }
+            ]
+        },
+        {
+            "pakku_id": "FhlG86uaEYX7BAln",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "improved-create-32x"
+            },
+            "name": {
+                "curseforge": "Improved Create 32x"
+            },
+            "id": {
+                "curseforge": "973588"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Improved Create 32x ver 0.02 1.18.2-1.20.1.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5256/355/Improved Create 32x ver 0.02 1.18.2-1.20.1.zip",
+                    "id": "5256355",
+                    "parent_id": "973588",
+                    "hashes": {
+                        "sha1": "d1cdd3b2eb22113a7b622e9e69e2bdca366f6a4b",
+                        "md5": "d01acb051a4212d629c0ae1187d933a5"
+                    },
+                    "required_dependencies": [
+                    ],
+                    "size": 6925262
+                }
+            ]
+        },
+        {
+            "pakku_id": "PCawKj8YABVn5clf",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "inventory-hud-forge"
+            },
+            "name": {
+                "curseforge": "Inventory HUD+"
+            },
+            "id": {
+                "curseforge": "357540"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "HwKZD4vb9mO22X8q",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "inventory-sorter"
+            },
+            "name": {
+                "curseforge": "Inventory Sorter"
+            },
+            "id": {
+                "curseforge": "240633"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "jCU1VQHl96VJlZ4a",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "itemphysic-lite"
+            },
+            "name": {
+                "curseforge": "ItemPhysic Lite"
+            },
+            "id": {
+                "curseforge": "270441"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "WAxJ8YnvK3RDSesn",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jade"
+            },
+            "name": {
+                "curseforge": "Jade 🔍"
+            },
+            "id": {
+                "curseforge": "324717"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2G5YktcHxxb61tVh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jade-addons"
+            },
+            "name": {
+                "curseforge": "Jade Addons (Forge)"
+            },
+            "id": {
+                "curseforge": "583345"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2TegMYlNLxLdIJY5",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jei"
+            },
+            "name": {
+                "curseforge": "Just Enough Items (JEI)"
+            },
+            "id": {
+                "curseforge": "238222"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "GZHIWTMRQUmDS0PZ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "konkrete"
+            },
+            "name": {
+                "curseforge": "Konkrete [Forge]"
+            },
+            "id": {
+                "curseforge": "410295"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Xicxa6fLN5q8d9p1",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "krypton-reforged"
+            },
+            "name": {
+                "curseforge": "Krypton Reforged"
+            },
+            "id": {
+                "curseforge": "549394"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Le357p3NtvlY5x4A",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ksyxis"
+            },
+            "name": {
+                "curseforge": "Ksyxis"
+            },
+            "id": {
+                "curseforge": "537533"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Dr433u6w6dj2fQeb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubejs"
+            },
+            "name": {
+                "curseforge": "KubeJS"
+            },
+            "id": {
+                "curseforge": "238086"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "MvGKIDDmz4RRqcea",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubejs-create"
+            },
+            "name": {
+                "curseforge": "KubeJS Create"
+            },
+            "id": {
+                "curseforge": "429371"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "bp34xIbUBv7vvuNU",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubejs-tfc"
+            },
+            "name": {
+                "curseforge": "KubeJS TFC"
+            },
+            "id": {
+                "curseforge": "841001"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Ii1fRFXA6xtBizYo",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "let-me-despawn"
+            },
+            "name": {
+                "curseforge": "Let Me Despawn"
+            },
+            "id": {
+                "curseforge": "663477"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "JfIn51QymR7dXnna",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lootjs"
+            },
+            "name": {
+                "curseforge": "LootJS: KubeJS Addon"
+            },
+            "id": {
+                "curseforge": "570630"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "qQAiznBbEzMDEUin",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mega-cells"
+            },
+            "name": {
+                "curseforge": "MEGA Cells"
+            },
+            "id": {
+                "curseforge": "622112"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "dHaN3BJkcZUQ8fh0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "melody"
+            },
+            "name": {
+                "curseforge": "Melody"
+            },
+            "id": {
+                "curseforge": "938643"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "QxEP5kBPbIKsCPiz",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "merequester"
+            },
+            "name": {
+                "curseforge": "ME Requester"
+            },
+            "id": {
+                "curseforge": "688367"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "m9KKSAKjV8D3Lmtk",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "model-gap-fix"
+            },
+            "name": {
+                "curseforge": "Model Gap Fix"
+            },
+            "id": {
+                "curseforge": "676136"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "DyedIQX0h6UUGkq8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "modernfix"
+            },
+            "name": {
+                "curseforge": "ModernFix"
+            },
+            "id": {
+                "curseforge": "790626"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "MbIPHWeUo9H2Zioy",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "more-red"
+            },
+            "name": {
+                "curseforge": "More Red"
+            },
+            "id": {
+                "curseforge": "387638"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "FGB8eHtjMPsaxLnZ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mouse-tweaks"
+            },
+            "name": {
+                "curseforge": "Mouse Tweaks"
+            },
+            "id": {
+                "curseforge": "60089"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "W8Enaav3yiWiUt5f",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "my-server-is-compatible"
+            },
+            "name": {
+                "curseforge": "My Server Is Compatible"
+            },
+            "id": {
+                "curseforge": "492574"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "RzMAeowlFHXHLlAm",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "nan-health-fixer"
+            },
+            "name": {
+                "curseforge": "NaN Health Fixer"
+            },
+            "id": {
+                "curseforge": "828656"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "vrUR8lXtztWZDADO",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "no-report-button"
+            },
+            "name": {
+                "curseforge": "No Report Button"
+            },
+            "id": {
+                "curseforge": "658722"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Qj4BHMkHHfj5C9w7",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "noisium"
+            },
+            "name": {
+                "curseforge": "Noisium"
+            },
+            "id": {
+                "curseforge": "930207"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "5aAmTQdvvUQTqHde",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "not-enough-animations"
+            },
+            "name": {
+                "curseforge": "Not Enough Animations"
+            },
+            "id": {
+                "curseforge": "433760"
+            },
+            "redistributable": false,
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "wDpjlBUJfswgix5r",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "notenoughrecipebook"
+            },
+            "name": {
+                "curseforge": "Not Enough Recipe Book [NERB]"
+            },
+            "id": {
+                "curseforge": "738663"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "glICDhn8WjCYxyx2",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "oculus"
+            },
+            "name": {
+                "curseforge": "Oculus"
+            },
+            "id": {
+                "curseforge": "581495"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "a6TCmg7slIWX5zGu",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "open-parties-and-claims"
+            },
+            "name": {
+                "curseforge": "Open Parties and Claims"
+            },
+            "id": {
+                "curseforge": "636608"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "nK1oom3oSbLLw2Ij",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "packet-fixer"
+            },
+            "name": {
+                "curseforge": "Packet Fixer"
+            },
+            "id": {
+                "curseforge": "689467"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "63LGAXkkYSM3K6hV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pandalib"
+            },
+            "name": {
+                "curseforge": "PandaLib"
+            },
+            "id": {
+                "curseforge": "975460"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "BZBcuXr3ohEGsnnb",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pandas-falling-trees"
+            },
+            "name": {
+                "curseforge": "Panda's Falling Tree's"
+            },
+            "id": {
+                "curseforge": "880630"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "pMVxq24sI0ZahVJq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "patchouli"
+            },
+            "name": {
+                "curseforge": "Patchouli"
+            },
+            "id": {
+                "curseforge": "306770"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "P1YKEqgTTi0up2cK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pick-up-notifier"
+            },
+            "name": {
+                "curseforge": "Pick Up Notifier [Forge & Fabric]"
+            },
+            "id": {
+                "curseforge": "351441"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "n9pVTunkHR0zmhYk",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "placebo"
+            },
+            "name": {
+                "curseforge": "Placebo"
+            },
+            "id": {
+                "curseforge": "283644"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Y4Xq0EdjFzfxPD2z",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "playerrevive"
+            },
+            "name": {
+                "curseforge": "PlayerRevive"
+            },
+            "id": {
+                "curseforge": "266890"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "9ZHkjc5kQXdIx0RL",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "puzzles-lib"
+            },
+            "name": {
+                "curseforge": "Puzzles Lib [Forge & Fabric]"
+            },
+            "id": {
+                "curseforge": "495476"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Ej2HVlNHofk78v3K",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "radium-reforged"
+            },
+            "name": {
+                "curseforge": "Radium Reforged"
+            },
+            "id": {
+                "curseforge": "570017"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "dtzwynFBhXLfZf4v",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "recipe-essentials-forge-fabric"
+            },
+            "name": {
+                "curseforge": "Recipe Essentials[Forge/Fabric]"
+            },
+            "id": {
+                "curseforge": "907856"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "ctNqFrre4r4SnJvO",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rhino"
+            },
+            "name": {
+                "curseforge": "Rhino"
+            },
+            "id": {
+                "curseforge": "416294"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "aMxKUrOj9BhuKtYn",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rrls"
+            },
+            "name": {
+                "curseforge": "Remove Reloading Screen"
+            },
+            "id": {
+                "curseforge": "833233"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "mRIDoxMQJiYgFgPj",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "saturn"
+            },
+            "name": {
+                "curseforge": "Saturn"
+            },
+            "id": {
+                "curseforge": "670986"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "JVuOaSJ1zSmYJnUv",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "seamless-loading-screen"
+            },
+            "name": {
+                "curseforge": "Seamless Loading Screen"
+            },
+            "id": {
+                "curseforge": "429926"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "a2XuAlqdjQ1Q6mZQ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "searchables"
+            },
+            "name": {
+                "curseforge": "Searchables"
+            },
+            "id": {
+                "curseforge": "858542"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "vlKkUmIuAabz0Ryv",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "selene"
+            },
+            "name": {
+                "curseforge": "Moonlight Lib"
+            },
+            "id": {
+                "curseforge": "499980"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "44Xj3s55rqwLmR55",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "showcase-item"
+            },
+            "name": {
+                "curseforge": "Showcase Item"
+            },
+            "id": {
+                "curseforge": "627196"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "PUCPQ6SgktJVCn3j",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "simply-light"
+            },
+            "name": {
+                "curseforge": "Simply Light"
+            },
+            "id": {
+                "curseforge": "300331"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "xXk0o2FjUL3v996o",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "smooth-boot-reloaded"
+            },
+            "name": {
+                "curseforge": "Smooth Boot (Reloaded)"
+            },
+            "id": {
+                "curseforge": "633412"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "ytBPrfmyAf12rIbo",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sophisticated-backpacks"
+            },
+            "name": {
+                "curseforge": "Sophisticated Backpacks"
+            },
+            "id": {
+                "curseforge": "422301"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "bZW7eAXjE11rC4JF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sophisticated-core"
+            },
+            "name": {
+                "curseforge": "Sophisticated Core"
+            },
+            "id": {
+                "curseforge": "618298"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "Z8ABUcLzIDH3955s",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "supermartijn642s-config-lib"
+            },
+            "name": {
+                "curseforge": "SuperMartijn642's Config Lib"
+            },
+            "id": {
+                "curseforge": "438332"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "39MMpywzlp1nXhkz",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "supermartijn642s-core-lib"
+            },
+            "name": {
+                "curseforge": "SuperMartijn642's Core Lib"
+            },
+            "id": {
+                "curseforge": "454372"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "w5lPehxfLFAasity",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "terrafirmacraft"
+            },
+            "name": {
+                "curseforge": "TerraFirmaCraft"
+            },
+            "id": {
+                "curseforge": "302973"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "v1JyqOVg7QWlwPzM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "terrafirmagreg-core"
+            },
+            "name": {
+                "curseforge": "TerraFirmaGreg Core"
+            },
+            "id": {
+                "curseforge": "513402"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "wwRAL38ZYttNn4D9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-aged-alcohol"
+            },
+            "name": {
+                "curseforge": "TFC Aged Alcohol"
+            },
+            "id": {
+                "curseforge": "880532"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "bEQzWxnuvPS4CHvv",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-ambiental-second-edition"
+            },
+            "name": {
+                "curseforge": "TFC Ambiental - Second edition"
+            },
+            "id": {
+                "curseforge": "940350"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "baaHLvsys2Jewj5U",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-casting-with-channels"
+            },
+            "name": {
+                "curseforge": "TFC Casting with Channels!"
+            },
+            "id": {
+                "curseforge": "820815"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "vwxGn09dN6cODK9W",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-desire-paths"
+            },
+            "name": {
+                "curseforge": "TFC Desire Paths"
+            },
+            "id": {
+                "curseforge": "847065"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "1gFBJHk3twsHDWf6",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-grooming-station"
+            },
+            "name": {
+                "curseforge": "TFC Grooming Station"
+            },
+            "id": {
+                "curseforge": "1003785"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "YyjqmzCvQ7TTsHtV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-hot-or-not"
+            },
+            "name": {
+                "curseforge": "TFC Hot or Not"
+            },
+            "id": {
+                "curseforge": "499096"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "2i5HxeQbMFIU2yZM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-tumbleweed"
+            },
+            "name": {
+                "curseforge": "TFC Tumbleweed"
+            },
+            "id": {
+                "curseforge": "899986"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "dnuLqdVQJ0dKoPKF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-vessel-tooltip"
+            },
+            "name": {
+                "curseforge": "TFC Vessel Tooltip"
+            },
+            "id": {
+                "curseforge": "952386"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "RGmXy5VGoksSvXtq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "too-fast"
+            },
+            "name": {
+                "curseforge": "Too Fast"
+            },
+            "id": {
+                "curseforge": "550678"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "syJdqIaZuz8kAX9F",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tool-belt"
+            },
+            "name": {
+                "curseforge": "Tool Belt"
+            },
+            "id": {
+                "curseforge": "260262"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "uIrVCCpbg5rmwBxT",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "treetap"
+            },
+            "name": {
+                "curseforge": "Tree Tap"
+            },
+            "id": {
+                "curseforge": "927874"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "QnioSr3B0U7mEtmM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tumbleweed"
+            },
+            "name": {
+                "curseforge": "Tumbleweed"
+            },
+            "id": {
+                "curseforge": "245028"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "jSc8rFEkIkHrFhok",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "u-team-core"
+            },
+            "name": {
+                "curseforge": "U Team Core"
+            },
+            "id": {
+                "curseforge": "273744"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "GbODNwmVh5n2slCY",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "water-flasks"
+            },
+            "name": {
+                "curseforge": "TFC Water Flasks"
+            },
+            "id": {
+                "curseforge": "354353"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "1UTkHdTo0PbkwZ08",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "xaeros-minimap"
+            },
+            "name": {
+                "curseforge": "Xaero's Minimap"
+            },
+            "id": {
+                "curseforge": "263420"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "qbVlK7or3RtGyRKc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "xaeros-world-map"
+            },
+            "name": {
+                "curseforge": "Xaero's World Map"
+            },
+            "id": {
+                "curseforge": "317780"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "0T8lXLWaMQmSkazW",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yacl"
+            },
+            "name": {
+                "curseforge": "YetAnotherConfigLib"
+            },
+            "id": {
+                "curseforge": "667299"
+            },
+            "files": [
+            ]
+        },
+        {
+            "pakku_id": "ryMYuWbIGibiQH4R",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yeetusexperimentus"
+            },
+            "name": {
+                "curseforge": "Yeetus Experimentus"
+            },
+            "id": {
+                "curseforge": "635427"
+            },
+            "files": [
+            ]
+        }
+    ]
 }
