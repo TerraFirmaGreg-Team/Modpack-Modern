@@ -13,8 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.4
 
-      - name: Replace strings
+      - name: Pakku
         shell: bash
-        run: java -jar pakku.jar import <path> TerraFirmaGreg-1.20.x-0.7.9-cf.zip
+        run: java -jar pakku.jar import  TerraFirmaGreg-1.20.x-0.7.9-cf.zip
 
     
