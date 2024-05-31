@@ -15,7 +15,7 @@ jobs:
 
       - name: Pakku
         shell: bash
-        run: java -jar pakku.jar --debug TerraFirmaGreg-1.20.x-0.7.9-cf.zip
+        run: java -jar pakku.jar --debug import TerraFirmaGreg-1.20.x-0.7.9-cf.zip
 
       - name: Upload zip cf
         uses: actions/upload-artifact@v4.3.3
