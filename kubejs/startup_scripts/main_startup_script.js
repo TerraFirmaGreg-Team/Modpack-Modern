@@ -46,3 +46,19 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     registerGTCEuMachines(event)
 })
+
+/**
+ * Событие регистрации информации о составе предмета.
+ */
+TFGStartupEvents.materialInfo(event => {
+
+    const testMaterial1 = GTMaterials.Copper;
+    const testMaterial2 = GTMaterials.Tin;
+
+    const b = new ItemMaterialInfo(new MaterialStack(testMaterial1, GTValues.M), new MaterialStack(testMaterial2, GTValues.M))
+
+
+    event.remove('minecraft:acacia_planks')
+
+    event.add('minecraft:acacia_planks', b)
+})
