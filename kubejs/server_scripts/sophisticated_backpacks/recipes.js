@@ -3,7 +3,7 @@
 const registerSophisticatedBackpacksRecipes = (event) => {
 
     // Удаление рецептов мода sophisticatedBackpacks
-    event.remove({ mod: 'sophisticatedbackpacks' })
+    event.remove({ mod: 'sophisticatedbackpacks', not: {type: 'sophisticatedbackpacks:backpack_dye'} })
 
     // Рюкзаки
 
