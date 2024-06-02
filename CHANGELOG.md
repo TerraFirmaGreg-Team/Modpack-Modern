@@ -3,6 +3,8 @@
 ## [Unreleased]
 ### Fixes
 - Probably fixed strange shit, when items could dispawn VERY quickly (1-2mins) (by deleting KryptonReforged as incompat with embeddium).
+- Fixed a situation where quests could not be counted immediately after completing the quest conditions (by deleteing FTBQuestsOptimizer).
+- Fixed loom recipe of WoolPotholder from TFC Hot Or Not, which is duplicating with wool recipe.
 ### New mods
 - ?
 ### Updated mods
@@ -11,6 +13,7 @@
 - GCYR 0.1.6 -> 0.1.8
 ### Removed mods
 - KryptonReforged
+- FTBQuestsOptimizer
 
 ## [0.7.9] - 22.05.2024
 ### Fixes
