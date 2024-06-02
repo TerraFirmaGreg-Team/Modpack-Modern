@@ -50,6 +50,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 /**
  * Событие регистрации информации о составе предмета.
  */
-TFGStartupEvents.materialInfo(event => {
-    registerGTCEuMaterialInfo(event)
-})
+// TFGStartupEvents.materialInfo(event => {
+//     registerGTCEuMaterialInfo(event)
+// })
