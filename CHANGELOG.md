@@ -6,9 +6,11 @@
 - Fixed a situation where quests could not be counted immediately after completing the quest conditions. (by deleteing FTBQuestsOptimizer)
 - Fixed loom recipe of WoolPotholder from TFC Hot Or Not, which is duplicating with wool recipe.
 - Fixed a bug, when TFC Guide Book not working, (yes, its was a bug).
+### New Mods
+- Shimmer
 ### Updated mods
 - GregTech Modern 1.2.0.a -> 1.2.3
-- TerraFirmaGreg 0.5.6 -> 0.5.8
+- TerraFirmaGreg 0.5.6 -> 0.5.9
 - GCYR 0.1.6 -> 0.1.8
 - Appliedenergistics2 15.1.1 -> 15.2.2
 - CC-Tweaked 1.110.3 -> 1.111.0
