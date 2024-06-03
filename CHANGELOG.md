@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.12] - 03.06.2024
+### Changes
+- Small fixes in quests. (FriendlyCube)
+- The version of the Falling Tree's has been rolled back because it sometimes crashes, the developer has been notified.
+- Added AE2 quest line. (Friendly Cube) 
+- ExtendedAE and Mega Cells recipes have been added and changed. (Friendly Cube)
+### Updated mods
+- Panda's Falling Tree's  0.12.1 -> 0.12
+
 ## [0.7.11] - 03.06.2024
 ### Updated mods
 - Packet Fixer 1.4.0 -> 1.3.2
