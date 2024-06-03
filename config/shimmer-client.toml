@@ -1,0 +1,30 @@
+#setting UBO offset
+#-1 for auto setting
+#maximum is limited by your gpu,the OpenGL constant:GL_MAX_UNIFORM_BUFFER_BINDINGS-1,at least 36-1
+#Range: -1 ~ 128
+"UBO offset" = -1
+#setting block bloom
+#true for effect on
+#Block bloom only, does not apply to post-processing
+"Block Bloom Effect" = true
+#using light analyzeShaderProperties for more realistic lighting
+#true for light analyzeShaderProperties ON
+#If using the light analyzeShaderProperties, the light is more realistic and avoid lights through the wall. The light is smoother when closed. It is a tradeoff.
+"Using Light Map" = true
+"enable colored light" = true
+"enable bloom effect" = true
+#using additive blend for colored lights 
+#true - vivid, false - realistic
+"additive effect" = false
+#the color attachment number used for store bloom information
+#range from 1 (0 for vanilla use) to GL_MAX_COLOR_ATTACHMENTS-1, at least 8-1
+#
+#Range: 1 ~ 16
+"bloom color attachment number" = 1
+#whether inset shader name into shader source file or not
+#
+"inset shader" = false
+#whether enable buildin shimmer.json
+#
+"enable buildin setting" = true
+
