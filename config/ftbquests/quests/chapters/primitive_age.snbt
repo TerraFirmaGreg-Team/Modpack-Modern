@@ -2304,7 +2304,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_hematite)item(gtceu:raw_hematite)item(tfc:ore/small_hematite)item(gtceu:poor_raw_hematite)item(gtceu:rich_raw_yellow_limonite)item(tfc:ore/small_limonite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:raw_yellow_limonite)item(tfc:ore/small_magnetite)item(gtceu:poor_raw_magnetite)item(gtceu:raw_magnetite)item(gtceu:rich_raw_magnetite)item(gtceu:poor_raw_iron)item(minecraft:raw_iron)item(gtceu:rich_raw_iron)item(gtceu:poor_raw_goethite)item(gtceu:raw_goethite)item(gtceu:rich_raw_goethite)item(gtceu:poor_raw_pyrite)item(gtceu:raw_pyrite)item(gtceu:rich_raw_pyrite))"
+						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_hematite)item(gtceu:raw_hematite)item(tfc:ore/small_hematite)item(gtceu:poor_raw_hematite)item(gtceu:rich_raw_yellow_limonite)item(tfc:ore/small_limonite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:raw_yellow_limonite)item(tfc:ore/small_magnetite)item(gtceu:poor_raw_magnetite)item(gtceu:raw_magnetite)item(gtceu:rich_raw_magnetite)item(gtceu:poor_raw_iron)item(minecraft:raw_iron)item(gtceu:rich_raw_iron)item(gtceu:poor_raw_goethite)item(gtceu:raw_goethite)item(gtceu:rich_raw_goethite)item(gtceu:poor_raw_pyrite)item(gtceu:raw_pyrite)item(gtceu:rich_raw_pyrite)item(gtceu:crushed_yellow_limonite_ore))"
 					}
 				}
 				title: "Any Iron Ore"
