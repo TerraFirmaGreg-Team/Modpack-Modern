@@ -1,7 +1,7 @@
 # Changelog
 
 ## [0.7.10] - 03.06.2024
-### Fixes
+### Changes
 - Probably fixed strange shit, when items could dispawn VERY quickly. (1-2mins) (by deleting KryptonReforged as incompat with embeddium)
 - Fixed a situation where quests could not be counted immediately after completing the quest conditions. (by deleteing FTBQuestsOptimizer)
 - Fixed loom recipe of WoolPotholder from TFC Hot Or Not, which is duplicating with wool recipe.
