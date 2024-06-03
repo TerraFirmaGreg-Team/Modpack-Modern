@@ -1127,7 +1127,7 @@
 			description: ["Hammer: mainly used only to create a stone anvil and the first copper double ingots, but there will be information about this later in the quests."]
 			hide_dependency_lines: true
 			id: "120E5C0E43EC756B"
-			subtitle: "Сделайте лучше медный!"
+			subtitle: "Make a better copper one!"
 			tasks: [{
 				id: "4BD017E2BEB690C4"
 				item: {
