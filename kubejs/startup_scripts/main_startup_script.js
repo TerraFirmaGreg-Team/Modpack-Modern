@@ -46,3 +46,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     registerGTCEuMachines(event)
 })
+
+/**
+ * Событие регистрации информации о составе предмета.
+ */
+// TFGStartupEvents.materialInfo(event => {
+//     registerGTCEuMaterialInfo(event)
+// })

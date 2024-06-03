@@ -1,0 +1,13 @@
+# FTBQuestOptimizer config file
+# If you're a modpack maker, edit defaultconfigs/ftbqoptimizer-server.snbt instead
+
+{
+	# Enable optimization of quest completion detection
+	# Default: true
+	detect_optimization: true
+	
+	# Number of tick skips for checking player inventories, 0 to disable tick skipping. Experiment and find the best value for you!
+	# Default: 5
+	# Range: 0 ~ 100
+	skip_ticks_amount: 5
+}
