@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.11] - 03.06.2024
+### Updated mods
+- Packet Fixer 1.4.0 -> 1.3.2
+
 ## [0.7.10] - 03.06.2024
 ### Changes
 - Probably fixed strange shit, when items could dispawn VERY quickly. (1-2mins) (by deleting KryptonReforged as incompat with embeddium)
