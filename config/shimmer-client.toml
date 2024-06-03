@@ -11,7 +11,7 @@
 #true for light analyzeShaderProperties ON
 #If using the light analyzeShaderProperties, the light is more realistic and avoid lights through the wall. The light is smoother when closed. It is a tradeoff.
 "Using Light Map" = true
-"enable colored light" = true
+"enable colored light" = false
 "enable bloom effect" = true
 #using additive blend for colored lights 
 #true - vivid, false - realistic
