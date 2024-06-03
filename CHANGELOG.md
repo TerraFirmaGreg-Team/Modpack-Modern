@@ -6,6 +6,7 @@
 - Fixed a situation where quests could not be counted immediately after completing the quest conditions. (by deleteing FTBQuestsOptimizer)
 - Fixed loom recipe of WoolPotholder from TFC Hot Or Not, which is duplicating with wool recipe.
 - Fixed a bug, when TFC Guide Book not working, (yes, its was a bug).
+- Updated Quests For Primitive Age. (BabBimmaBome)
 ### New Mods
 - Shimmer
 ### Updated mods
