@@ -245,7 +245,7 @@ jobs:
         uses: Xikaro/close-issues-based-on-label@master
         env:
           LABEL: "2. Status: Fixed in Dev"
-          COMMENT: ${{ needs.info.outputs.project_version }}
+          COMMENT: fixed in ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release-github:
