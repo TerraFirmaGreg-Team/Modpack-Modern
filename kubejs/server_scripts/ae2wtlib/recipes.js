@@ -57,8 +57,7 @@ const registerAE2WTLibRecipes = (event) => {
         .itemInputs(
             '4x gtceu:iv_sensor',
             '4x ae2:wireless_booster',
-            '2x gtceu:luv_sensor',
-            'gtceu:wireless_digital_interface_cover',)
+            '2x gtceu:luv_sensor',)
         .itemOutputs('ae2wtlib:quantum_bridge_card')
         .duration(30)
         .EUt(250)
