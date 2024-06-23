@@ -69,25 +69,6 @@
 	quests: [
 		{
 			dependencies: [
-				"78277DBC07D3C45C"
-				"1783D89CE81C8E2E"
-			]
-			description: ["The &aAdvanced Processing Array&r is an upgrade to the regular version. It can now handle a maximum of &a64&r machines, instead of 16."]
-			id: "4194EC9F1C6632E4"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "Your blue cube is now green!"
-			tasks: [{
-				id: "356EC5387BA79103"
-				item: "gtceu:luv_processing_array"
-				type: "item"
-			}]
-			title: "Advanced Processing Array"
-			x: 1.125d
-			y: 0.0d
-		}
-		{
-			dependencies: [
 				"77B7B1EDD19831E0"
 				"78277DBC07D3C45C"
 			]

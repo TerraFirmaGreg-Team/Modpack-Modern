@@ -561,7 +561,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '2x #forge:rods/aluminium',
             '3x ae2:quartz_fiber',)
-        .inputFluids(Fluid.of('gtceu:fluix', 144))
+        .inputFluids(Fluid.of('tfg:fluix', 144))
         .itemOutputs('ae2:fluix_glass_cable')
         .circuit(1)
         .duration(20)
@@ -1022,7 +1022,7 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:level_emitter')
         .circuit(1)
         .duration(20)
-        .EUt(7680)
+        .EUt(480)
         .cleanroom(CleanroomType.CLEANROOM)
 
     // Storage Bus
@@ -2041,7 +2041,7 @@ const registerAE2Recipes = (event) => {
     // Chemical Reactor
     event.recipes.gtceu.chemical_reactor('ae2:fluix_pearl')
         .itemInputs('4x #forge:gems/fluix', '#forge:gems/ender_eye')
-        .inputFluids(Fluid.of('gtceu:fluix', 576))
+        .inputFluids(Fluid.of('tfg:fluix', 576))
 	    .itemOutputs('ae2:fluix_pearl')
 	    .duration(200)
         .EUt(480)
@@ -2087,4 +2087,14 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('12x ae2:fluix_crystal')
         .duration(480)
         .EUt(256)
+
+    //charger
+    event.recipes.gtceu.assembler('ae2:charger')
+        .itemInputs(
+            'gtceu:hv_battery_buffer_4x',
+            '4x gtceu:mercury_barium_calcium_cuprate_quadruple_wire', )
+        .inputFluids(Fluid.of('tfg:fluix', 476))
+        .itemOutputs('ae2:charger')
+        .duration(200)
+        .EUt(480)
 }

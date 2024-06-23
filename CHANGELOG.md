@@ -1,16 +1,59 @@
 # Changelog
 
-## [Unreleased]
-### Fixes
-- Probably fixed strange shit, when items could dispawn VERY quickly (1-2mins) (by deleting KryptonReforged as incompat with embeddium).
-### New mods
-- ?
+## [0.7.12] - 03.06.2024
+### Changes
+- Small fixes in quests. (FriendlyCube)
+- The version of the Falling Tree's has been rolled back because it sometimes crashes, the developer has been notified.
+- Added AE2 quest line. (Friendly Cube) 
+- ExtendedAE and Mega Cells recipes have been added and changed. (Friendly Cube)
+### Updated mods
+- Panda's Falling Tree's  0.12.1 -> 0.12
+
+## [0.7.11] - 03.06.2024
+### Updated mods
+- Packet Fixer 1.4.0 -> 1.3.2
+
+## [0.7.10] - 03.06.2024
+### Changes
+- Probably fixed strange shit, when items could dispawn VERY quickly. (1-2mins) (by deleting KryptonReforged as incompat with embeddium)
+- Fixed a situation where quests could not be counted immediately after completing the quest conditions. (by deleteing FTBQuestsOptimizer)
+- Fixed loom recipe of WoolPotholder from TFC Hot Or Not, which is duplicating with wool recipe.
+- Fixed a bug, when TFC Guide Book not working, (yes, its was a bug).
+- Updated Quests For Primitive Age. (BabBimmaBome)
+### New Mods
+- Shimmer
 ### Updated mods
 - GregTech Modern 1.2.0.a -> 1.2.3
-- TerraFirmaGreg 0.5.6 -> 0.5.7
+- TerraFirmaGreg 0.5.6 -> 0.5.9
 - GCYR 0.1.6 -> 0.1.8
+- Appliedenergistics2 15.1.1 -> 15.2.2
+- CC-Tweaked 1.110.3 -> 1.111.0
+- Create Connected 0.7.4 -> 0.8.2
+- CreativeCore 2.11.28 -> 2.11.30
+- Curios 5.9.0 -> 5.9.1
+- EnhancedVisuals 1.7.2 -> 1.8.1
+- Etched 3.0.1 -> 3.0.2
+- Exposure 1.5.1 -> 1.6.0
+- ExtendedAE 1.1.4 -> 1.1.8
+- Fallingtrees 0.12 -> 0.12.1
+- Fancymenu 3.1.2 -> 3.2.3
+- First Person 2.4.0 -> 2.4.1
+- FTB-Quests 2001.4.4 -> 2001.4.5
+- ImmediatelyFast 1.2.15 -> 1.2.17
+- Jade 11.9.2 -> 11.9.3
+- Ksyxis 1.3.0 -> 1.3.1
+- Let Me Despawn 1.2.0 -> 1.2.1
+- Mega Cells 2.3.5 -> 2.4.4
+- Moonlight 2.11.31 -> 2.11.28
+- Packet Fixer 1.3.2 -> 1.4.0
+- PuzzlesLib 8.1.19 -> 8.1.20
+- Steam_Rails 1.6.3 -> 1.6.4
+- ToolBelt 1.20.0 -> 1.20.01
+- YetAnotherConfigLib 3.4.2 -> 3.4.4
 ### Removed mods
 - KryptonReforged
+- FTBQuestsOptimizer
+- Rrls
 
 ## [0.7.9] - 22.05.2024
 ### Fixes

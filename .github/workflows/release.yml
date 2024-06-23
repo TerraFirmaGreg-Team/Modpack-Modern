@@ -233,9 +233,24 @@ jobs:
     #         server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
     #         release-type: ${{ env.RELEASE_TYPE }}
 
+  close-fixed-issues:
+    name: Close Fixed Issues
+    needs: [info, build-cf, build-mmc, build-server]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.6
+
+      - name: Сlose fixed in dev
+        uses: Xikaro/close-issues-based-on-label@master
+        env:
+          LABEL: "2. Status: Fixed in Dev"
+          COMMENT: fixed in ${{ needs.info.outputs.project_version }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   release-github:
     name: Deploy to GitHub
-    needs: [info, build-cf, build-mmc, build-server]
+    needs: [info, build-cf, build-mmc, build-server, close-fixed-issues]
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
@@ -281,21 +296,3 @@ jobs:
             ```${{ needs.info.outputs.changelog }}```
             ** [More details...](https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/blob/main/CHANGELOG.md) **
           embed-color: 5814783
-
-  # close-fixed-issues:
-  #   name: Close Fixed Issues
-  #   needs: [info, release-github, release-curseforge]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v4.1.4
-
-  #     - name: Сlose fixed in dev
-  #       uses: juraj-hrivnak/close-issues-based-on-label@master
-  #       env:
-  #         LABEL: "2. Status: Fixed in Dev"
-  #         VERSION: ${{ needs.info.outputs.project_version }}
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      
-

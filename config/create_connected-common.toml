@@ -8,7 +8,6 @@ migrateCopycatsOnInitialize = false
 #.
 #Enable/disable features. Values on server override clients
 [features]
-	#.
 	bamboo_window = false
 	item_silo = true
 	inverted_clutch = true
@@ -35,4 +34,9 @@ migrateCopycatsOnInitialize = false
 	copycat_beam = false
 	copycat_board = false
 	copycat_fence = false
+	#.
+	fluid_vessel = true
+	large_crank_wheel = true
+	crank_wheel = true
+	fan_freezing_catalyst = true
 
