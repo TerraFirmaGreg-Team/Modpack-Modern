@@ -53,13 +53,21 @@ const registerAE2WTLibRecipes = (event) => {
         .EUt(250)
 
     // Quantum Bridge Card
-    event.recipes.gtceu.assembler('ae2wtlib:quantum_bridge_card')
+    event.recipes.gtceu.assembly_line('ae2wtlib:quantum_bridge_card')
         .itemInputs(
-            '4x gtceu:iv_sensor',
+            '8x ae2:quantum_ring',
+            'ae2:quantum_link',
+            'gtceu:quantum_star',
+            '2x gtceu:zpm_sensor',
             '4x ae2:wireless_booster',
-            '2x gtceu:luv_sensor',
-            'gtceu:wireless_digital_interface_cover',)
+            '#gtceu:circuits/uv',)
+        .inputFluids(
+            Fluid.of('gtceu:tritanium', 2304),
+            Fluid.of('gtceu:titanium', 2160),
+            Fluid.of('gtceu:polybenzimidazole', 1152),
+            Fluid.of('gtceu:styrene_butadiene_rubber', 864)
+        )    
         .itemOutputs('ae2wtlib:quantum_bridge_card')
-        .duration(30)
-        .EUt(250)
+        .duration(300)
+        .EUt(64000)
 }
