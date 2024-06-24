@@ -2,7 +2,7 @@
 
 const registerAE2Recipes = (event) => {
     
-    //Удаление рецептов мода
+    // Удаление рецептов мода
     event.remove({ not: [
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:transform/fluix_crystals' },
