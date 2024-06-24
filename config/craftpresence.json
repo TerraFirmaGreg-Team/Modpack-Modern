@@ -59,6 +59,9 @@
     },
     "singleplayerData": {
       "textOverride": "Playing Singleplayer"
+    },
+    "realmData": {
+      "textOverride": "Playing on {server.motd.raw}"
     }
   },
   "advancedSettings": {
@@ -98,7 +101,8 @@
     "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
     "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
     "allowDuplicatePackets": false,
-    "maxConnectionAttempts": 10
+    "maxConnectionAttempts": 10,
+    "enableClassGraph": false
   },
   "accessibilitySettings": {
     "tooltipBackground": {

@@ -27,8 +27,6 @@
     "pinAutoCraftedItems": true
   },
   "search": {
-    "searchTooltips_comment": "Should tooltips be searched. Performance impact",
-    "searchTooltips": true,
     "searchModNameInTooltips_comment": "Should the mod name be included when searching in tooltips.",
     "searchModNameInTooltips": false,
     "useExternalSearch_comment": "Replaces AEs own search with the search of REI or JEI",
