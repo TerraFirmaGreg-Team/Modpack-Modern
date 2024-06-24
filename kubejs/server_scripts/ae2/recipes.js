@@ -2,7 +2,7 @@
 
 const registerAE2Recipes = (event) => {
     
-    // Удаление рецептов мода
+    //Удаление рецептов мода
     event.remove({ not: [
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
         { id: 'ae2:transform/fluix_crystals' },
@@ -12,6 +12,7 @@ const registerAE2Recipes = (event) => {
         { id: 'ae2:network/blocks/pattern_providers_interface_alt' },
         { id: 'ae2:network/blocks/interfaces_interface_part' },
         { id: 'ae2:network/blocks/interfaces_interface_alt' },
+        { id: 'ae2:special/facade'},
     ], mod: 'ae2' });
 
     //#region Рецепты энтропии
