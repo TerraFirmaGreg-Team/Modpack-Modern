@@ -3309,4 +3309,14 @@ const registerTFCRecipes = (event) => {
     }
     
     //#endregion
+
+    //bars
+    for (var i = 0; i < 9; i++ ) {
+        event.recipes.gtceu.assembler(global.TFC_METAL_FOR_BARS[i] + '_bars')
+            .itemInputs(`#forge:plates/${global.TFC_METAL_FOR_BARS[i]}`)
+            .itemOutputs(`8x tfc:metal/bars/${global.TFC_METAL_FOR_BARS[i]}`)
+            .circuit(16)
+            .duration(50)
+            .EUt(16)
+    }
 }

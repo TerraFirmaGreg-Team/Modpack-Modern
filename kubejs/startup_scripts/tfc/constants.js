@@ -1061,3 +1061,15 @@ global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1
 }
+
+global.TFC_METAL_FOR_BARS = [
+    'bismuth_bronze',
+    'black_bronze',
+    'bronze',
+    'copper',
+    'wrought_iron',
+    'steel',
+    'black_steel',
+    'blue_steel',
+    'red_steel',
+]
