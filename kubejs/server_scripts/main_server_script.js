@@ -4,6 +4,7 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
+    registerAdItemTags(event)
     registerAE2ItemTags(event)
     registerAsticorCartsItemTags(event)
     registerChiselAndBitsItemTags(event)
@@ -29,6 +30,7 @@ ServerEvents.tags('item', event => {
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
+    registerAdBlockTags(event)
     registerAE2BlockTags(event)
     registerAsticorCartsBlockTags(event)
     registerChiselAndBitsBlockTags(event)
@@ -108,6 +110,7 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+    registerADRecipes(event)   
     registerAE2Recipes(event)
     registerAsticorCartsRecipes(event)
     registerAE2InsertExportCardRecipes(event)
