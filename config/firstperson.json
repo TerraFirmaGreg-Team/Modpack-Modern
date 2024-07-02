@@ -7,6 +7,7 @@
   "renderStuckFeatures": true,
   "vanillaHandsMode": "OFF",
   "dynamicMode": true,
+  "vanillaHandsSkipSwimming": true,
   "autoVanillaHands": [],
   "autoToggleModItems": [
     "exposure:camera"
