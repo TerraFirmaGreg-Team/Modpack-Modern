@@ -181,7 +181,7 @@ element {
 
 element {
   button_element_executable_block_identifier = aa66e1ae-6d7d-48c4-82f4-e2afd0fb4926-1710837053356
-  [executable_action_instance:d4016aa6-44fa-4433-811f-b40c185664dc-1710837053357][action_type:openlink] = https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x
+  [executable_action_instance:d4016aa6-44fa-4433-811f-b40c185664dc-1710837053357][action_type:openlink] = https://github.com/TerraFirmaGreg-Team/Modpack-Modern
   [executable_block:aa66e1ae-6d7d-48c4-82f4-e2afd0fb4926-1710837053356][type:generic] = [executables:d4016aa6-44fa-4433-811f-b40c185664dc-1710837053357;]
   backgroundnormal = [source:local]kubejs/assets/tfg/textures/gui/github_logo.png
   backgroundhovered = [source:local]kubejs/assets/tfg/textures/gui/github_logo_hovered.png
@@ -273,7 +273,7 @@ element {
 }
 
 element {
-  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-1.20.x/releases/latest","json_path":"$.tag_name"}}§r
+  source = Forge {"placeholder":"modversion","values":{"modid":"forge"}}%n%Minecraft {"placeholder":"mcversion"}%n%{"placeholder":"loadedmods"} mods loaded%n%Modpack Version: §cDEV§r%n%Latest Modpack Version: §b{"placeholder":"json","values":{"source":"https://api.github.com/repos/TerraFirmaGreg-Team/Modpack-Modern/releases/latest","json_path":"$.tag_name"}}§r
   source_mode = direct
   shadow = true
   case_mode = normal

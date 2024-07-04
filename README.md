@@ -1,7 +1,7 @@
-# TerraFirmaGreg - 1.20.x
+# TerraFirmaGreg - Modern
 
 <div align="center">
-  <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x">
+  <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern">
     <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="75">
   </a>
   <br/>
@@ -13,11 +13,11 @@
   <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
   <br/>
   <p align="center">
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/wiki">Explore the wiki</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki">Explore the wiki</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/issues">Report Bugs</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Report Bugs</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/issues">Request Features</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Request Features</a>
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/projects/10">Roadmap</a>
   </p>

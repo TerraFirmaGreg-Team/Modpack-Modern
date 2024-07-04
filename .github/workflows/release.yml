@@ -294,5 +294,5 @@ jobs:
 
             ** Сhangelog **
             ```${{ needs.info.outputs.changelog }}```
-            ** [More details...](https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x/blob/main/CHANGELOG.md) **
+            ** [More details...](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/main/CHANGELOG.md) **
           embed-color: 5814783
