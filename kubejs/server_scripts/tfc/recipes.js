@@ -3319,4 +3319,25 @@ const registerTFCRecipes = (event) => {
             .duration(50)
             .EUt(16)
     }
+
+    //Fire bricks
+    event.recipes.gtceu.compressor('fire_bricks')             
+        .itemInputs('4x tfc:ceramic/fire_brick')
+        .itemOutputs('2x tfc:fire_bricks')
+        .duration(800)
+        .EUt(2)
+
+    event.recipes.gtceu.extractor('fire_bricks_to_ceramic_fire_brick')             
+        .itemInputs('tfc:fire_bricks')
+        .itemOutputs('2x tfc:ceramic/fire_brick')
+        .duration(800)
+        .EUt(2)
+
+    //fire brick
+    event.recipes.gtceu.alloy_smelter('fire_bricks')             
+        .itemInputs('tfc:fire_clay')
+        .notConsumable('gtceu:ingot_casting_mold')
+        .itemOutputs('tfc:ceramic/fire_brick')
+        .duration(800)
+        .EUt(2)
 }
