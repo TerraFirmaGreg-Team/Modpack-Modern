@@ -27,7 +27,7 @@ B:game_intro_fade_out = 'true';
 B:show_custom_window_icon = 'true';
 S:custom_window_icon_macos = '/config/fancymenu/assets/icons/macOS.icns';
 S:custom_window_icon_32 = '/config/fancymenu/assets/icons/icon32x32.png';
-S:custom_window_title = 'TerraFirmaGreg 1.20.1';
+S:custom_window_title = 'TerraFirmaGreg Modern';
 S:custom_window_icon_16 = '/config/fancymenu/assets/icons/icon16x16.png';
 
 
