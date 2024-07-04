@@ -1432,4 +1432,16 @@ const registerGTCEURecipes = (event) => {
     });
 
     //#endregion
+
+    //mold trapdoor
+    event.remove({ id: 'tfg:shaped/shape_mold_trapdoor'})
+
+    event.shaped('tfg:trapdoor_casting_mold', [
+        'A  ', 
+        '   ',
+        '  B'
+    ], {
+        A: 'gtceu:empty_mold',
+        B: '#forge:tools/hammers',
+    }).id('tfg:shaped/trapdoor_casting_mold')
 }
