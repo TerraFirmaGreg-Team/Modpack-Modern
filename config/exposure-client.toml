@@ -35,7 +35,7 @@
 [Capture]
 	#Delay in ticks before capturing an image when shooting with flash.
 	#If you experience flash synchronization issues (Flash having no effect on the image) - try increasing the value.
-	#Range: 1 ~ 6
+	#Range: 1 ~ 7
 	FlashCaptureDelayTicks = 3
 	#Delay in frames before capturing an image.
 	#Set to higher value when leftovers of GUI elements (such as nameplates) are visible on the images
@@ -54,4 +54,14 @@
 	#Default: X2
 	#Allowed Values: X1, X2, X3, X4
 	Size = "X2"
+
+[Render]
+	#Distance from the player beyond which Photograph Frame would not be rendered. Default: 64
+	#Note: this number may not relate to distance in blocks exactly. It's influenced by onRender distance and entity distance settings.
+	#Range: 8 ~ 128
+	PhotographFrameCullingDistance = 64
+
+[Integration]
+	#Useful information about some items will be shown in JEI description category. Default: true
+	JeiInformation = true
 

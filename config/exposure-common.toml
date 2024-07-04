@@ -52,3 +52,9 @@
 	#Range: 2 ~ 64
 	StackedPhotographsMaxSize = 16
 
+[Misc]
+	#Film rolls can be renamed by using the item. Default: true
+	FilmRollRenaming = true
+	#Generate items in loot chests. Default: true
+	AddItemsToLootChests = true
+

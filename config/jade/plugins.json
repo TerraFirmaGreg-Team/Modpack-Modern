@@ -127,7 +127,6 @@
     "sheet_pile": true,
     "quern": true,
     "pit_kiln_above": true,
-    "hot_poured_glass": true,
     "gearbox": true,
     "axle": true,
     "chested_horse": true,
@@ -154,7 +153,8 @@
     "equipment_requirement": ""
   },
   "exposure": {
-    "lightroom": true
+    "lightroom": true,
+    "photograph_frame": true
   },
   "create": {
     "filter": true,

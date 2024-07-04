@@ -20,21 +20,29 @@
     "void": 1
   },
   "regions": {
-    "dark": {
+    "abyssalcraft_dark": {
       "overall": 1,
       "suspense.suspense": 1
     },
-    "unknown": {
+    "end_unknown": {
       "overall": 1,
       "suspense.suspense": 1
     },
-    "wind": {
+    "galacticraft_planets_wind": {
       "overall": 1,
       "wind.light-wind": 1
     },
-    "suspense": {
+    "nether_suspense": {
       "overall": 1,
       "nether": 1
+    },
+    "twilightforest_unknown": {
+      "overall": 1,
+      "suspense.suspense": 1
+    },
+    "void_dark": {
+      "overall": 1,
+      "suspense.suspense": 1
     },
     "beach": {
       "overall": 1,
