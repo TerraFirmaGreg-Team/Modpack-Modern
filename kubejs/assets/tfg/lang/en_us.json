@@ -1,123 +1,503 @@
 {
+
     "quests.naming-1": "t - Title",
     "quests.naming-2": "st - Subtitle",
     "quests.naming-3": "d* - Description, where * description number, for example: d1, d2, d3, d4...",
     "quests.naming-4": "t* - Task, where * task number, for example: t1, t2, t3, t4...",
 
+    "ALL CHAPTER NAMES/SUBTITLES" : "",
+
+    "quests.092E486344CB830A.t" : "&8ULV&r - Primitive Age",
+    "quests.092E486344CB830A.st" : "Start your technological journey",
+
+    "quests.3B89FB8839204148.t" : "&8ULV&r - Steam Age",
+    "quests.3B89FB8839204148.st" : "Harness the power of Steam",
+
+    "quests.73633085BF22A8E9.t" : "&8ULV&r - Mechanical Age",
+    "quests.73633085BF22A8E9.st" : "Discover Machines and Mechanisms",
+
+    "quests.7D50771C3FE033D7.t" : "&7LV&r - Low Voltage",
+    "quests.7D50771C3FE033D7.st" : "Tame electricity and make your first machines",
+
+    "quests.43E779CEEB25D55B.t" : "&bMV&r - Medium Voltage",
+    "quests.43E779CEEB25D55B.st" : "Venture into petrochemistry and refine electronics",
+
+    "quests.1A6D6B70EC13DDC6.t" : "&bMV&r - Computers",
+    "quests.1A6D6B70EC13DDC6.st" : "Program computers to automate tasks",
+
+    "quests.237BDB19A9495869.t" : "&6HV&r - High Voltage",
+    "quests.237BDB19A9495869.st" : "Scale up your power and begin advanced chemistry",
+
+    "quests.09BE9F51822EC180.t" : "&6HV&r - AE2",
+    "quests.09BE9F51822EC180.st" : "Store items as data",
+
+    "quests.7FB9F636D95820A3.t" : "&5EV&r - Extreme Voltage",
+    "quests.7FB9F636D95820A3.st" : "Improve your infrastructure and parallelise your setups",
+
+    "quests.32EF20533F323E02.t" : "&1IV&r - Insane Voltage",
+    "quests.32EF20533F323E02.st" : "Automate everything and learn how to assemble",
+
+    "quests.262A03F6F4EC713C.t" : "&dLuV&r - Ludicrous Voltage",
+    "quests.262A03F6F4EC713C.st" : "Investigate the scientific and fuse elements",
+
+    "quests.0945247E83444D90.t" : "&cZPM&r - Zero Point Module",
+    "quests.0945247E83444D90.st" : "Harness the cosmos and wield the bacteriological",
+
+    "quests.2E730D6F5A7C2E83.t" : "&3UV&r - Ultimate Voltage",
+    "quests.2E730D6F5A7C2E83.st" : "Harness the power of a Dyson Sphere",
+
+    "quests.41FEC6178ABF1998.t" : "Multiblock Dilemma",
+    "quests.41FEC6178ABF1998.st" : "A handy reference of all the multiblocks",
+
+    "quests.28EBC0FF82EFD94B.t" : "Development table",
+    "quests.28EBC0FF82EFD94B.st" : "A step forward is always rewarding",
+
+    "PRIMITIVE AGE CHAPTER" : "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+
     "quests.76EF4D00586A8B74.t": "&aTerraFirmaGreg Modpack!",
     "quests.76EF4D00586A8B74.st": "Thank you for choosing our modpack!",
-    "quests.76EF4D00586A8B74.d1": "The fun starts right now! May this world be blessed with your existence!",
+    "quests.76EF4D00586A8B74.d1": "TerraFirmaGreg is an expert pack that is centered around realism, where the two main mods are : &eTerraFirmaCraft (TFC)&r, a mod that overhauls the average minecraft experience by making it more realistic, and &eGregTech (GT)&r, a technic mod that adds countless machines and ores that will help you to progress and conquer the stars.\nMay this world be blessed with your existence!",
+
+    "quests.40A930BEBFCFBF3B.t": "Finding an ore vein",
+    "quests.40A930BEBFCFBF3B.st": "Your first metal is already available, at a discount",
+    "quests.40A930BEBFCFBF3B.d1": "If you find this strange nuggets somewhere in your world, it means you found &eyour very first ore vein&r! Usually if you find one of these on the ground, it means you have a vein under your feet and, depending on the name of the nugget, you are able to find out what kind of vein you stumbled upon (ex. small Garnierite indicates a Garnierite vein)",
 
     "quests.387DEEADF4922AB3.t": "Ore generation in the TFG world",
     "quests.387DEEADF4922AB3.st": "Much more fun than vanilla",
-    "quests.387DEEADF4922AB3.d1": "In TerraFirmaGreg ore is generated more interestingly than anywhere else. \n1. Each ore appears in its own rock. TFC adds many different rocks to the world, that is, you won’t find a regular vanilla stone anywhere, so ores, like in real life, are generated only in certain rocks. \n2. There are several types of ore veins, such as: cluster, sphere, pipe and a few rare others that we will not talk about. \n3. To make life easier for players, ore indicators appear on the surface, under which in most cases the ore vein itself is located. \nTFG contains a small Wiki for this in an Excel spreadsheet. In order to follow the link, complete the task, then pick up the reward and a button will appear in the chat when you click on it, which will transfer you to an Excel table with ore generation.",
+    "quests.387DEEADF4922AB3.d1": "TerraFirmaGreg ore generation is based on two mods : TerraFirmaCraft and Gregtech.More specifically, TFG ore veins differs in 5 different ways from vanilla :\n1. There are multiple rock types in this world, and certain veins only spawn in a specific rock type.\n2. Veins come in various forms and shapes, which can affect its ore content.\n3. There are little markers (or nuggets) on the ground that indicate the location of a vein\n4. Dont expect that you will be able to find every kind of ore on earth, you will need to travel to other planets/moons to find certain resources.\n5. You can find secondary ores in a vein, that can be useful for other things\n\nFor those of you that are more nerdy and want to study the topic more, heres an excel spreadsheet : \n",
+    "quests.387DEEADF4922AB3.t1": "Click here to complete the quest",
 
-    "quests.63E6C5684E12828C.st": "You need to drink water in order not to die, try to find a river or lake with ordinary water!",
-    "quests.63E6C5684E12828C.d1": "Use the right mouse button to drink some water. \nCareful! If you drink salt water you will experience increased thirst and will most likely die.",
-    "quests.63E6C5684E12828C.t1": "Look at regular water (not salty or hot).",
+    "quests.63E6C5684E12828C.t1": "Look for regular water (not salty).",
+    "quests.63E6C5684E12828C.st": "Shift + Right click to drink",
+    "quests.63E6C5684E12828C.d1": "In this world you will need to drink water in order to survive, and like with hunger you will have a thirst bar indicating whether or not you'll need to drink.Altough be carefull, as water from the sea is not safe to drink.",
 
     "quests.6D43C29AC049341D.t": "How to create a team?",
-    "quests.6D43C29AC049341D.st": "Do you play with friends? Surprising...",
-    "quests.6D43C29AC049341D.d1": "You can create a team to complete quests together. To do this, open your inventory, then in the upper left corner select the button where 3 colorful people are drawn, then an interface will open in which you can create a team, use the §aCreate a team§r button, then give it a name and possibly some other parameters, after successful creating a team, you can invite other players to it using the plus button in the green circle in the upper right corner, in the future your quests will be synchronized and any team member will be able to complete them. Good luck!",
+    "quests.6D43C29AC049341D.st": "Oh you brought with friends? Surprising...",
+    "quests.6D43C29AC049341D.d1": "You can create a team to complete quests together.To do this, open your inventory, then in the upper left corner select the button where 3 colorful people are drawn, then an interface will open in which you can create a team, use the §aCreate a team§r button, then give it a name and possibly some other parameters, after successful creating a team, you can invite other players to it using the plus button in the green circle in the upper right corner, in the future your quests will be synchronized and any team member will be able to complete them.Good luck!",
     "quests.6D43C29AC049341D.t1": "Click here to complete the quest",
 
     "quests.0B42D4AE2AC67F93.t": "How to capture territory?",
-    "quests.0B42D4AE2AC67F93.st": "Or how to load chunks in your territory",
-    "quests.0B42D4AE2AC67F93.d1": "You can private the chunks you want if you play on a server, for example. How to do it? Use the button to open the mini-map, then select the chunks that you want to capture, then by clicking on the right mouse button, select §aCapture territory§r from the list, it seems to be the third item from the bottom, voila, you have captured the territory. Attention: your teammates will be able to break blocks in your region, which is logical.",
+    "quests.0B42D4AE2AC67F93.st": "Or how to private chunks in your territory",
+    "quests.0B42D4AE2AC67F93.d1": "You can private the chunks that you want if you want to protect your base from griefers, for example.To do it, press the M key to open the mini-map, then select the chunks that you want to capture by holding RMB, and click with LMB on §aClaim selected§r from the list that appears, abd voila, you have captured the territory.",
     "quests.0B42D4AE2AC67F93.t1": "Click here to complete the quest",
 
     "quests.2672C65095539E23.t": "How to get crushed ore without a crusher?",
     "quests.2672C65095539E23.st": "It's actually very simple.",
-    "quests.2672C65095539E23.d1": "Simply break a block of ore with a hammer (sledgehammer) and you will immediately receive crushed ore, which can be crushed by hand into powders such as graphite or sulfur.",
+    "quests.2672C65095539E23.d1": "Simply break a block of ore with a hammer and you will immediately receive the crushed ore, which can be crafted again with a hammer into powders, which can be useful for making graphite powder in the future.",
     "quests.2672C65095539E23.t1": "Click here to complete the quest",
 
     "quests.3D7B0F3134C30364.t": "Important information about quests!",
-    "quests.3D7B0F3134C30364.d1": "The quests are still in development, more descriptions and more will be added in the future. You can partially use the TFC book to find the information you need. &cFull quests in each branch with translation will appear in update 1.0.0, since now the developers have very little time.",
+    "quests.3D7B0F3134C30364.d1": "The quests are still in development, more descriptions and more chapters will be added in the future.If you have any complaints, make a report on our official guthub page (not for 1.12.2). &cFull quests in each branch with translation will appear in update 1.0.0, since now the developers have very little time.",
     "quests.3D7B0F3134C30364.t1": "Click here to complete the quest",
 
-    "quests.7196BB6BDBAE7B51.st": "Food is very important in this world!",
-    "quests.7196BB6BDBAE7B51.d1": "Try to kill some animal and get some meat from it. Eating raw meat is a bad idea, so try roasting it over a fire.",
+    "quests.7196BB6BDBAE7B51.st": "Food Yummy",
+    "quests.7196BB6BDBAE7B51.d1": "Try to kill some animals and gather food, but do not eat their meat raw or it will make you sick.",
     "quests.7196BB6BDBAE7B51.t1": "Get any raw meat",
 
-    "quests.557D3A67A36DF9D8.st": "Cook the meat over the fire!",
-    "quests.557D3A67A36DF9D8.d1": "Congratulations, you have cooked the meat and are now safe to eat.",
-    "quests.557D3A67A36DF9D8.t1": "Get any fried meat",
+    "quests.557D3A67A36DF9D8.st": "Food more Yummy",
+    "quests.557D3A67A36DF9D8.d1": "Congratulations, you have cooked the meat, which is now safe to eat.\n&4NOTE&r : If the meat was crafted with salt before, it will fill your hunger bar by a bigger ammount than normal.",
+    "quests.557D3A67A36DF9D8.t1": "Get any cooked meat",
 
-    "quests.682B58EC2D39F1A1.st": "A fire, but not an ordinary one",
-    "quests.682B58EC2D39F1A1.d1": "Throw 3 sticks and 1 log onto the block, then move the mouse cursor over this block and use a primitive lighter (Just hold down the right mouse button as if you were aiming with a bow), it may not work the first time. After success, a fire will appear in place of the discarded 3 sticks and 1 log, into which you need to throw logs so that the fire continues to burn. To increase the chance of creating a fire, you can add to the existing sticks and logs: paper, straw and other flammable items, +10% for each item.",
+    "quests.682B58EC2D39F1A1.st": "Dont touch it",
+    "quests.682B58EC2D39F1A1.d1": "To make a fireplace you'll need to get &e1 log and 3 straws minimum&r.Drop them all on the ground, then use a &eprimitive lighter&r and hold right click (as if you were using a bow) : congrants! You made your first fire.&4NOTE&r : if your fire didn't light up, dont worry, there is a 50% chance that it may not work, so just continue to try until you success.If you really want to be picky about your chances, you can add additional straw to increase the chance to +10% for every straw.",
     "quests.682B58EC2D39F1A1.t1": "Make a fire",
 
-    "quests.6D940527BFF1D4C0.t": "Primitive lighting",
-    "quests.6D940527BFF1D4C0.st": "Are they going out? Yes! They may go out, I'm shocked myself!",
-    "quests.6D940527BFF1D4C0.d1": "You will be surprised, but the torches are not endless in TFC. They will burn for about 2 game days, after which they will go out. But don’t worry, they don’t go out in your hands or inventory, so you can carry 1 torch with you and when others in your house go out, just use the right mouse button on them with a torch from your inventory, it will set fire to already extinguished torches.",
+    "quests.6D940527BFF1D4C0.t": "Finally, light",
+    "quests.6D940527BFF1D4C0.st": "Hot topic",
+    "quests.6D940527BFF1D4C0.d1": "You will be surprised, but torches do not last forever in TFC.They will burn for about 2 in-game days, after which they will go out.But don’t worry, they wont extinguish in your hands/inventory.To light up again extinguished torches, you can right click them with an ordinary torch.",
 
     "quests.3B3BA51C8CAEFC7F.t": "Primitive lighter",
-    "quests.3B3BA51C8CAEFC7F.st": "People in ancient times lit fires using such a thing, or maybe not, how should I know?",
-    "quests.3B3BA51C8CAEFC7F.d1": "This thing will allow you to start a fire, or set fire to anything, just move the mouse cursor over any block, then press and hold the right mouse button, after maximum tension, release, with a 50% chance the block you were looking at will be set on fire. How to make a fire using a primitive lighter in the next quest.",
+    "quests.3B3BA51C8CAEFC7F.st": "People in ancient times used to lit fires with such a thing, or maybe not, how should I know?",
+    "quests.3B3BA51C8CAEFC7F.d1": "This thing will allow you to start a fire, or set on fire anything.To use it, just move the mouse cursor over any block, then press and hold RMB and after some seconds, you'll have your fire.",
 
     "quests.365F6F48E0BB2EFC.t": "ROCK AND STONE!",
-    "quests.365F6F48E0BB2EFC.st": "Collect some stones and sticks for future development",
-    "quests.365F6F48E0BB2EFC.d1": "When entering the world, the first thing you encounter is a completely changed world. The main items at the start are sticks and pebbles, which lie on the ground and appear in any biome, they are also updated every season, that is, after winter, sticks and pebbles are regenerated on the ground. Collect several using RMB and proceed to the next one. step. \n\nTake 2 or more stones into your hand, then click the right mouse button, then a menu will open in which you can make headbands for stone tools, all recipes can be viewed in EMI or simply by clicking on the icon of the stone headband item in the quest. Then connect the headband with a stick and get a real aboriginal tool. \n\nNow you are a smart monkey!",
+    "quests.365F6F48E0BB2EFC.st": "Collect some stones and sticks for the true caveman experience",
+    "quests.365F6F48E0BB2EFC.d1": "Right after pawning in the world you can notice that quite a lot of things have changed, starting from finding sticks and stones on the ground.Gather some of these to get to the next step : &ecrafting your first tools&r.\n&aIf you're new to TFC&r, the next page explains how to make said tools.",
+    "quests.365F6F48E0BB2EFC.d2": "TFC adds a mechanic that allows you to craft tool head.By &eright clicking&r with &eat least two rocks&r in your main head, you will access the &eknapping interface&r.If you left click on one of the little quares that appear in the GUI, said square will get removed.The rest of the process is pretty simple as you will only need to draw out the shape of the tool head you're trying to head (&echeck in JEI&r to see what shape you need to make).",
     "quests.365F6F48E0BB2EFC.t1": "Find any sticks",
     "quests.365F6F48E0BB2EFC.t2": "Find any pebbles",
 
     "quests.508DA76FA2766B7B.st": "This is not a rocket launcher!",
-    "quests.508DA76FA2766B7B.d1": "Spears work on a similar principle to the trident from vanilla Minecraft, just hold down the right mouse button and aim, then release and your trident will fly where you were looking.",
+    "quests.508DA76FA2766B7B.d1": "Spears work on a similar principle to the trident from vanilla Minecraft, just hold down RMB and aim, then release and your spear will fly in the direction you were looking at.",
     "quests.508DA76FA2766B7B.t1": "Craft any stone spear",
 
-    "quests.318BF1F671BC4620.st": "Thank you for not being diamond...",
-    "quests.318BF1F671BC4620.d1": "Hoes are used for digging up beds and planting plants. Interesting fact: in TFC you can dig up beds even far from water, the main thing is that when you hover, look at the tooltip (the panel at the top), it will display the amount of water saturation of the bed. Next, select seeds collected in a world with suitable climatic conditions (including the humidity of the bed), plant them and wait.",
-
+    "quests.318BF1F671BC4620.st": "Not THAT kind of hoe",
+    "quests.318BF1F671BC4620.d1": "Hoes are used for digging up usable soil for your cultivations and planting plants.Remember that in TFC soil does not necessarily need to be near a block of water, and that &eplants grow slower than in vanilla&r.",
     "quests.36A9E5CD45A79288.st": "Realistic",
     "quests.36A9E5CD45A79288.d1": "Using the right mouse button with a hoe in your hand, plow the ground, seriously, it's very easy, try it.",
     "quests.36A9E5CD45A79288.t1": "Plow the ground",
 
     "quests.5C396041880D32FF.st": "Looks promising",
-    "quests.5C396041880D32FF.d1": "While exploring the world you can find wild plants, collect them with a knife or hand, this way you will get seeds and the plant itself.",
+    "quests.5C396041880D32FF.d1": "While exploring the world you may find wild crops, collect them with a knife or by hand, this way you will get seeds and the crop itself.",
     "quests.5C396041880D32FF.t1": "Find any seeds",
 
     "quests.4CF472C9778068D6.t": "Harvest your first harvest",
     "quests.4CF472C9778068D6.st": "Is it edible?",
-    "quests.4CF472C9778068D6.d1": "Not sure. \n\nAttention! Plants grow for a very long time and they are also very picky about their growth conditions; be sure to check the conditions in which a particular plant grows before planting it, otherwise it will turn into a dead bush.",
+    "quests.4CF472C9778068D6.d1": "Not sure.\n\nAttention! As said before, plants need a lot of time to grow and are also very picky about their growth conditions; be sure to check the conditions in which a particular plant grows before planting it, otherwise it will turn into a dead bush.",
     "quests.4CF472C9778068D6.t1": "Click here to complete the quest",
 
     "quests.2BFC2744E4DE4B5A.st": "Don't cut down a tree with your hand, it's wrong!",
-    "quests.2BFC2744E4DE4B5A.d1": "Axes are used to chop wood, and indeed anything wooden, because in TFC you cannot break a tree with your hand.",
+    "quests.2BFC2744E4DE4B5A.d1": "Yup, no punching wood, how original.\nAxes are used to chop wood of course, but &echopping down a whole tree is gonna take a while&r.Fortunately, once you break the first log the whole thing should get destroyed and you'll get your precious logs.",
 
     "quests.716B407EEED8BE95.st": "Thanks for digging",
-    "quests.716B407EEED8BE95.d1": "Shovels are used to create paths and dig up dirt, sand and possibly something else!",
+    "quests.716B407EEED8BE95.d1": "A classic, shovels are used for making paths and digging the usual stuff, but mainly for clay.",
 
     "quests.06C7B7138EDE4B38.st": "Your best friend",
-    "quests.06C7B7138EDE4B38.d1": "Knives are a very important tool in TFC, they allow you to cut grass and get straw, you can use it to make a fire pit and fry metals and clay molds, but more on that later in the quests.",
+    "quests.06C7B7138EDE4B38.d1": "Knives are a very important tool in the TFC early game, as they allow you to cut grass and get straw from it, which you can use to make a fire pit to melt metals and fry clay molds, but more on that later in the quests.",
 
-    "quests.45D907EF7902A200.st": "Needed to create a shelter or roasting pit",
-    "quests.45D907EF7902A200.d1": "An important item in the initial stages of development, you will need a lot of it, I suggest collecting about 3 stacks.",
+    "quests.45D907EF7902A200.st": "Needed to create a shelter or a Fire Pit",
+    "quests.45D907EF7902A200.d1": "You will needs lots of this early on, so i suggest getting at least 3 stacks so you wont have to worry about it for some time.",
 
-    "quests.27DA5AAB102611A2.st": "A cute hat that will save you from the heat and scorching sun",
+    "quests.27DA5AAB102611A2.st": "A cute little hat that will save you from the scorching heat of the SUN.",
 
-    "quests.30AE1FF285B64716.st": "This is a sheaf of straw, you can build a cute house out of it",
+    "quests.30AE1FF285B64716.st": "A cheap-to-craft block that can be used for base building.",
 
     "quests.0ED8BE436A0ECDDB.st": "This is a sheaf of hay, you can make beautiful decorations from it",
     "quests.0ED8BE436A0ECDDB.d1": "Indeed, this block is just decorative, do not try to feed it to the horse.",
 
     "quests.69D20168E26BBF59.st": "Realism",
-    "quests.69D20168E26BBF59.d1": "First, dig 1 block in the ground, or any other surface, then use the V key to place the things you want to fry in the hole. If we are talking about forms, there are 4 of them. Next, take Hay in your hand and right-click into the hole, the hay will begin to fill the hole, you need to use 8 hay, then add 8 logs in the same way, then you can safely set fire to this thing using a primitive flint or torch (just throw a torch on top of your hole and it will start to flare up). Then you must wait for the firing to finish and then take out your finished objects. Metal melting in containers occurs in the same way. That is, you put pieces of copper in a vessel and in this very pit, after the process described above you will get molten copper, which you can cast into ingots, headbands, and so on.",
-    "quests.69D20168E26BBF59.t1": "Create a roasting pit",
+    "quests.69D20168E26BBF59.d1": "First, dig 1 block on the ground, then use the V key to place the things you want to fry in the hole (with a maximum of four items).Next, take 8 straw, put it in your main hand and start right-clicking in the hole, which will begin to fill up with the straws, then repeat the same process with 8 logs.Finally, take your Firestarter and hold RMB, this will fire up the fire pit and you'll just have to wait 8 minutes for your items to be ready and served.\n&4NOTE&r : Melting Metal is done in the same way, but you'll have to put your raw ores in a vessel and then put the latter in the fire pit.",
+    "quests.69D20168E26BBF59.t1": "Create a Fire Pit",
 
     "quests.373FD04AD6CA9F92.t": "New or old tree",
-    "quests.373FD04AD6CA9F92.st": "Use an ax to collect some wood, I would like to remind you that logs cannot be obtained by hand",
+    "quests.373FD04AD6CA9F92.st": "Use an axe to collect some wood, I would like to remind you that logs cannot be obtained by hand",
     "quests.373FD04AD6CA9F92.t1": "Get any tree",
 
     "quests.5DB0CA9F9724D301.t": "Coal pits",
-    "quests.5DB0CA9F9724D301.st": "Get your first coal! Wait, why is it needed?",
-    "quests.5DB0CA9F9724D301.d1": "To create a charcoal pit you will need lots and lots of wood. First, dig a hole 1 block deep (you can go deeper if the amount of wood allows).",
-    "quests.5DB0CA9F9724D301.d2": "Afterwards, using Shift + RMB, click on any block in the hole, you will have an armful of logs, you can fill it by right-clicking with a log in your hand on the armful, or simply open the interface and fill it manually. The amount of coal subsequently obtained depends on the number of trees in the armful.",
-    "quests.5DB0CA9F9724D301.d3": "Next, cover it all with a non-flammable block, stone or earth, leave one block open and set it on fire using a discarded torch or a primitive igniter.",
-    "quests.5DB0CA9F9724D301.d4": "Now your pile of earth has started to smoke, cover the last block that you set on fire again with a non-combustible block and wait, as soon as the pile stops smoking, dig it up and get coal.",
+    "quests.5DB0CA9F9724D301.st": "Get your first charcoal! Wait, why is it needed?",
+    "quests.5DB0CA9F9724D301.d1": "Charcoal is a flammable material that will enable you to create a charcoal forge to melt ores faster.First, dig a hole 1 block deep (you can go deeper if you have enough logs).",
+    "quests.5DB0CA9F9724D301.d2": "Afterwards, by using Shift + RMB, click on any block in the hole and you will create a &elog pile&r.You can fill it with any type of wood by right-clicking with a log in your hand on the pile, or by simply opening the interface and filling it manually.The amount of coal subsequently obtained depends on the number of logs in the piles.",
+    "quests.5DB0CA9F9724D301.d3": "Next, cover it all with a non-flammable block, stone or dirt, leave one block open and set it on fire using a firestarter.",
+    "quests.5DB0CA9F9724D301.d4": "Now your pile of dirt has started to smoke, cover the last block that you set on fire again with a non-combustible block and wait.As soon as the pile stops smoking, dig it up and get your charcoal.",
 
-    "quests.478D0DF94D7495EF.st": "Is it really simple or not?",
-    "quests.478D0DF94D7495EF.d1": "The glass casting process is shown in the TFC guide book, which you can find in the inventory on the right side, but for glass blocks, or rather for their casting, brass blocks are used, in TerraFirmaGreg for this you can use brass blocks from GTCEu or kaolinite clay blocks, Good luck! :)",
+    "quests.478D0DF94D7495EF.st": "Isn't it simple?",
+    "quests.478D0DF94D7495EF.d1": "The glass working process is shown in the TFC guide book, that you can find on the right side of your inventory.\nTo make glass panes you'll need either brass-plated blocks or kaolinite blocks, and place them to form a flat surface, while for glass blocks you'll have to place these blocks in a basin shape. More information is shown in the 'Glass Products' part of the TFC Guide book.",
     "quests.478D0DF94D7495EF.t1": "Cast any block of glass",
+
+    "quests.5BBF0B6AED98072E.st": "Read the Glass Block quest for more info",
+
+    "quests.671A79C648DE2BCD.t": "A strange clay",
+    "quests.671A79C648DE2BCD.st": "This will be hard",
+    "quests.671A79C648DE2BCD.d1": "Kaolin Clay is a special material used to make heat-resistant bricks.\nYou wont find this everywhere in the world, but only in &ePlateaus, Old Mountains and Highlands that have at least 300mm of rainfall and an avg. temperature of 18 C°&r.\nYou'll find all these statistic in your inventory, more specifically in the tab indicated by the thermometer.\n&4TIPS ON HOW TO FIND KAOLINITE IN THE NEXT PAGE&r",
+    "quests.671A79C648DE2BCD.d2": "The TFC world is divided like a Cartesian plane, and its repeated every 10k blocks. heading &eNorth&r will result in &9lower temperatures&r, while heading &eSouth&r will result in &4higher temperatures&r. The same thing happens with the other two cardinal directions : heading &eOvest&r results in &6dryer areas&r and heading &eEast&r results in &9wetter areas&r.\n \nWith this in mind, you will be able to find Kaolinite Clay by heading South-East in a Tropical Rainforest. Of course, always check the stats and the biome you're in.",
+
+    "quests.297996E158D0A289.t": "Classic Clay",
+    "quests.297996E158D0A289.st": "Used to make clay molds",
+    "quests.297996E158D0A289.d1": "Unlike in Vanilla, clay in TFC doesnt spawn in river beds. Instead, its found in patches that arent visible on the surface, indicated by these flowers : &aAthyrium Fern, Canna, Goldenrod, Pampas Grass, Perovskia, Water Canna&r.\nIf you're still confused, you can look up these flowers in EMI to have an idea of what they look like.",
+
+    "quests.0546B04FC0F85C8C.d1": "A head of a spindle, used to craft the full tool.",
+
+    "quests.5B9E3FCFA11BB275.st": "I yarn this power",
+    "quests.5B9E3FCFA11BB275.d1": "This tool is used to make yarn from either pinapple or wool, but at this point in the game you'll probably use it only for wool.",
+
+    "quests.4CD7FDA83B07AE22.st": "Optional",
+    "quests.4CD7FDA83B07AE22.d1": "River beds can have deposits of copper, silver or gold.\n To extract these precious materials, you'll need to right click on them with an empty pan, then stand in water and hold RMB.\n &4NOTE&r : This method of getting ores is rather inefficient, so i'd suggest to just find the veins of these materials.",
+
+    "quests.70B6D235B47288B4.st": "Not really a bucket but we're there",
+    "quests.70B6D235B47288B4.d1": "It can also be used to make soup!",
+
+    "quests.6CCE62F683236AA6.st": "One of your early game storage options",
+    "quests.6CCE62F683236AA6.d1": "Vessels can be used to store items, foods and molten metals.\nFoods inside vessels will have a longer expiration date, which can help to prevent wasting food.\nMolten metals on the other hand, are made when a vessel with raw ore in it reaches a certain temperature in either a fire pit or a charcoal forge.Molten metals can be used to fill up molds, which is done by right clicking a vessel and putting a mold inside the GUI that will appear.\n&4NOTE&r : Molten metals will begin to cool down after some time, so make sure to pour them quickly before they solidify inside the vessel.",
+
+    "quests.3E03688C03778894.t": "Chug jug with you",
+    "quests.3E03688C03778894.st": "Im sorry",
+    "quests.3E03688C03778894.d1": "Ceramic Jugs can be used to store drinkable water, so i'd reccomend to make one if you dont want to be constantly thirsty.",
+
+    "quests.23510E30D813C549.st": "Hot topic x2",
+    "quests.23510E30D813C549.d1": "Tongs are used to &4hold hot items&r without getting burned, but be aware that this drains their durability. The first ones that you will be able to make are the wooden tongs, but in the future you will be able to craft more durable variants.",
+
+    "quests.51E7834A52F80482.st": "Your best friend x2",
+    "quests.51E7834A52F80482.d1": "Prospector's Picks (Propicks in short) are used to locate a vein. These will be particularly useful when you'll need to find veins that dont have surface samples, such as Graphite.",
+    "quests.51E7834A52F80482.t1": "Craft a Copper/Bronze ",
+
+    "quests.0EB682B44D83D12A.st": "You know the drill",
+    "quests.0EB682B44D83D12A.t1": "Craft a Copper/Bronze pickaxe",
+
+    "quests.3CE7C64290BADE9F.d1": "If you have already found Kaolinite, then you should have no issues finding a Kapok tree. This tree is used in the production of latex, one of the ingredients for creating sticky resin, basically the first tiny step into Gregtech.",
+
+    "quests.4B8BAB2494C82C36.st": "You know the... Chainsaw?",
+    "quests.4B8BAB2494C82C36.d1": "With the saw, you will be able to finally work wood, which means you will be able to unlock a crafting table.",
+    "quests.4B8BAB2494C82C36.t1": "Craft a Copper/Bronze Saw",
+
+    "quests.4F5C883CC5282151.st": "1/4 of a plank",
+    "quests.4F5C883CC5282151.d1": "Do i really have to explain this?",
+
+    "quests.3CEA1756725CF02D.t": "READ THIS CAREFULLY",
+    "quests.3CEA1756725CF02D.d1": "You probably already learned this the hard way, but TFC makes rocks have gravity, so no more giant strip mines.\nTo prevent blocks falling on your head and giving you a brain hemorrhage, use &aSupport beams&r.",
+    "quests.3CEA1756725CF02D.d2": "Support beams must be placed in a upside down U shape, and will make sure to hold blocks on top of it in a 9x9 area from the center.",
+
+    "quests.463F14478757D8E8.st": "Theres a loooooong way until you'll get an iron bucket",
+    "quests.463F14478757D8E8.d1": "Unlike iron buckets, wooden buckets cant store hot liquids (plus acid liquids from gregtech, but dont worry about those now) and cant place source blocks, meaning that if you get a water bucket and place it, it will get drained in the ground.\nAnother thing, buckets are used to obtain latex, and need to be placed after a tap (with a block of free space below said tap).",
+
+    "quests.6D34C97EA8A09223.d1": "Used to get latex : just place them on a Kapok tree, its that simple.",
+
+    "quests.7C3F180555E12A88.st": "Sticky and Precious",
+    "quests.7C3F180555E12A88.d1": "No, the tap not working isnt an issue.\nIn fact, you will be able to get latex for &asix months&r, starting from the first of february and ending the last day of october (in game of course).",
+    "quests.7C3F180555E12A88.t1": "Latex Bucket",
+
+    "quests.2A3FEA1A48B598D1.st": "Building but better, and without gravity",
+
+    "quests.253860AD4DF4224C.st": "Found in Sphalerite veins",
+
+    "quests.3029097F88B8AABF.st": "This is a tough one",
+    "quests.3029097F88B8AABF.d1": "Graphite doesnt have any surface indicators, making it &4harder to find than other veins&r.\nThe only way to find it is to either find patches of Gabbro on the surface and dig straight down, or to scan an ocean floor in the hopes of finding an exposed vein.\n&4Both methods dont guarantee finding a vein on the first try&r, so it will take a while.",
+
+    "quests.644D51EEF0A5641E.d1": "The Chisel allows you to craft bricks and chiesel stones to make stairs and slabs.",
+    "quests.644D51EEF0A5641E.t1": "Craft a Copper/Bronze Chisel",
+
+    "quests.2286E2D7A9178E13.d1": "To get raw stone, just mine all the blocks covering each respective side of a stone block.",
+
+    "quests.15E8DFB91603906B.t": "Shinji, crank that soulja boy",
+    "quests.15E8DFB91603906B.st": "Ultra extreme low voltage macerator",
+    "quests.15E8DFB91603906B.d1": "Think of it like the AE2 quartz grindstone, use it to macerate minerals into dusts and flowers into dyes.\nPut the item you want to grind in the center and right click the crank shaft to begin the process.",
+
+    "quests.6E13B0241CB1D536.st": "Greg",
+
+    "quests.3830E24B66F59E76.st": "The Upgrade",
+    "quests.3830E24B66F59E76.t1": "Craft a Copper/Bronze hammer",
+
+    "quests.120E5C0E43EC756B.st": "The Standard",
+    "quests.120E5C0E43EC756B.d1": "Make a Copper Hammer as soon as you can, as the Stone Hammer is only used to make stone anvils and double copper ingots.",
+
+    "quests.169485270E86A50C.d1": "To make a stone anvil, you'll need to right click on the top of a raw rock with a hammer (note that the rock needs to be igneous intrusive, so rocks like Gabbro, Diorite and Granite will do the job).",
+    "quests.169485270E86A50C.t1": "Make a Stone Anvil",
+
+    "quests.73BF0075860E666B.t1": "Get any Copper Ore",
+    "quests.73BF0075860E666B.st": "The first metal",
+
+    "quests.69B4B677A27121CF.t": "Resources for Black Bronze",
+    "quests.69B4B677A27121CF.st": "Black and expensive",
+
+    "quests.2DEEDED2F21E60B9.t": "Resources for Ordinary Bronze",
+    "quests.2DEEDED2F21E60B9.st": "Economic and Reliable",
+
+    "quests.515141734CA1A002.t": "Resources for Bismuth Bronze",
+    "quests.515141734CA1A002.st": "Cheap and Shiny",
+
+    "quests.5EBFCE37D727DFD0.d1": "To weld two items together, they need to reach a hot enough temperature (indicated in the tool tip) and the anvil needs to have some flux dust in its inventory.\nTo weld the items, press shift+RMB with a hammer in your main hand, and see the magic happen.",
+
+    "quests.1C1CD40818C97CB4.st": "Used to work copper",
+    "quests.1C1CD40818C97CB4.d1": "The anvil is a block that allows you to work hot metals ingots into things like tool heads without the need to melt the material.\n&4Use the perfected anvil helper resource pack to make the anvil easier to comprehend&r\nWhen you place an ingot in the anvil, you'll have to choose a recipe to make, then three icons will pop up at the top of the GUI and a green and red arrow in the bar below. The icons represent the &alast three actions that you'll need to make&r (if these are not respected, the item wont be crafted) and the bar represents &athe progress of forging the ingot&r.\nOnly the red arrow can be moved, and needs to be aligned perfectly to the green arrow. This can be done by blicking on the &4eight actions at the center of the GUI&r, which will move the progress bar by a certain ammount indicated on the bottom left of their icon.\nTo recap all of this : &ethe green arrow needs to be aligned to the red arrow in the progress bar, and it needs to do so while respecting the last three actions to make&r.\nUseful tips :\n1. If the green arrow was aligned with the red one and the item isnt being crafted even tough you respected the last three actions, hover over these with your mouse to see in what order they need to be done.\n2. You wont be able to work every metal in a copper anvil, and because of this you'll need to make higher tier anvils.",
+
+    "quests.5A3E944192851481.st": "Copper - Any Bronze",
+
+    "quests.566FA805413004CF.st": "Copper but better",
+
+    "quests.18E2972322AD572E.st": "How long did this take you?",
+    "quests.18E2972322AD572E.d1": "The bloomery is a multiblock that allows you to smelt &eyour first iron ingots&r (finally i'd say). To make it, place bricks in a 3x3x4 shape with the center hollow.",
+    "quests.18E2972322AD572E.d2": "To make it work, drop in the hollow center an &eequal number of raw iron ore and charcoal&r, with the maximum ammount being 24 ore and 24 charcoal. Once this is done, light up the bloomery with a primitive lighter and wait about 8 minutes, after that mine the block that was fromed in the bloomery, also called a &ebloom&r, and process the raw iron bloom that you got into refined iron blooms, and process those again into wrought iron ingots.\nThis was a pain huh?",
+
+    "quests.095104BA3C842978.st": "Copper - Any Bronze - Wrought Iron",
+
+    "quests.4718D375758B9219.t": "The Glider",
+    "quests.4718D375758B9219.st": "A new way of travel",
+    "quests.4718D375758B9219.d1": "The glider, as the name suggests, makes you able to glide through air at incredible speeds. Its best used in combinaiton with a jetpack, but since you still cant craft one of those your best bet is to launch yourself from a high place and glide from there.",
+
+    "quests.4A1690ADC239300D.st": "Even flow",
+
+    "quests.70D40085219B1CC2.st": "Not on fire",
+    "quests.70D40085219B1CC2.d1": "Combining Kaolinite, Graphite and Clay makes an intresting compound called &4Fire Clay&r, which is able to sustain temperatures as high as those needed to melt steel, and you know what that means : &eSteel production&r.\nAlso, its needed to craft crucibles, casting channels and mold tables that enable you to automate the casting process of molten metals.",
+
+    "quests.2E3834B5FA53CC37.d1": "Placing this near a crucible will join the two : if the casting channels are connected to one or more mold tables with a mold placed inside, the content of the crucible will flow into said molds.",
+
+    "quests.4BCDA03CE74059FA.d1": "To automate a certain mold, you can just place it in a Table Mold that is connected to a crucible : Very useful when you're trying to batch craft a lot of steel.",
+
+    "quests.6EFCFEF4EDFBB71E.d1": "Ingot molds are used to solidify molten metals into ingot forms, be aware tough that theres a 1/10 chance that the mold will break whenever you get an ingot out of it.",
+
+    "quests.4EE18624D06C6D14.d1": "Unlike the ceramic ingot mold, this fire clay variant will break less frequently, with a 1/100 chance of being broken whenever you get a ingot out of it.",
+
+    "quests.390C85E831B2B8A4.st": "Forget the Fire Pit",
+    "quests.390C85E831B2B8A4.d1": "With the crucible you will be able to process ores much faster, just &eplace it above a Charcoal Forge&r and, if you want, place a bellow beside it to increase the temperature.",
+
+    "quests.6E24ECF6CEE950D1.st": "Alchol Maker",
+    "quests.6E24ECF6CEE950D1.d1": "Now that you finally can work with wood, you'll want to craft some barrels, which are used for recipes that require a liquid. They can infuse an item into a liquid or do the complete opposite.\nThey can also be used for food preservation in combination with vinegar, but i'll let you discover that by yourself.",
+
+    "quests.5D0BA3647DAC9FC3.st": "Wet, just like your m-",
+
+    "quests.517EFADD8F22717F.st": "Sticky",
+
+    "quests.0988DE53C9217CE6.d1": "If you're confused on how to make this, just place any log on the ground, then place a soaked hide on top of it and proceed to &eright click it with a knife on all of its surface&r.",
+
+    "quests.0D47455ABB97C81D.st": "https://www.youtube.com/watch?v=FezNgPThD3M",
+
+    "quests.2D8BA79A54F6C352.st": "A juicy and usefull fruit",
+    "quests.2D8BA79A54F6C352.d1": "Pineapples can be found in tropical areas, in the same zones where kapok trees spawn. They can be used as a food or to make an alternative source of leather.",
+
+    "quests.7BCC18E3FCE6CE38.d1": "Drying mats are used to, well, dry stuff.\nThey are crafted with Fruit Leafs, that you can get by simply finding a fruit tree and breaking some of its leaves.",
+
+    "quests.42FD437930CA74C7.st": "Bro tought he only needed to kill a cow for this",
+
+    "quests.3D889F02ABAFEB85.st": "v2.0, even more useless now",
+
+    "quests.5D0B6CA6E0EB320B.t": "Insulated Clothes",
+    "quests.5D0B6CA6E0EB320B.st": "v3.0, now this is different",
+    "quests.5D0B6CA6E0EB320B.d1": "Temperature is one of the main factors that you'll need to worry about in TFC, sometimes you'll need to cool down, sometimes you'll need to heat up.\n&6Clothes are here for you&r : If you're in a &9cold environment&r you can wear either &6leather or wool clothes&r, while if you're in a &6hot environment&r you can wear either &9silk or burlap clothes&r.\n'But what about my armor? I wont be protected like this!' Dont worry, you can place clothes in the &ebaubles inventory&r. ",
+
+    "quests.0E5EFAEF4FC0C6FD.st": "Dropped by Sheep, Alpaca and Musk Ox",
+    
+    "quests.1CDCB41630875DC5.st": "You expected a block didnt you",
+
+    "quests.6F848650CAF10E9A.st": "I haven't slept properly for at least 2 weeks now",
+
+    "quests.4A957A44753A5B84.st": "Portable water",
+    "quests.4A957A44753A5B84.d1": "Tired of constantly needing to find a river just to drink water? Then the Leather Flask is here for you!\nYou'll even be able to store alchol if you want to make things a bit tastier.",
+
+    "quests.593CC9165759B714.st": "Vegans would love this",
+
+    "quests.147911B5CA3A7DD8.d1": "The Loom is used to arrange strings of various types of fabric into cloths, and to use it just right click it with the item you want to put in it, then just hold RMB until the recipe is finished.",
+
+    "quests.788103BCA370A39E.t": "Burlap Clothing",
+    "quests.788103BCA370A39E.st": "To resist hot environments",
+
+    "quests.23E44778FCDE781A.t": "Beekeper Clothing",
+    "quests.23E44778FCDE781A.st": "To protect against bee stings",
+
+    "quests.0A6AADCDD2A635EC.st": "The giant enemy spider",
+
+    "quests.3D959ED3EA366859.t": "Silk Clothing",
+    "quests.3D959ED3EA366859.st": "Expensive alternative to Burlap",
+
+    "quests.20F878A238471ED7.st": "Knowledge",
+    "quests.20F878A238471ED7.d1": "You can put these in bookshelves to decorate your base, but other than that they have no other use.",
+
+    "quests.61C41D648B6BD1B1.st": "Exposition",
+
+    "quests.5346CD3039C4B55A.st": "Exploration",
+    "quests.5346CD3039C4B55A.d1": "Kinda useless with the minimap.",
+
+    "quests.706F66F81DDEAA2D.st": "Art",
+    "quests.706F66F81DDEAA2D.d1": "Add a bit of decoration to your base.",
+
+    "quests.51A6F6EC85D7CDF7.st": "Wooooooshh",
+    "quests.51A6F6EC85D7CDF7.d1": "The Bellow is a block that, when placed near a Charcoal Forge/Blast Furnace, will increase the temperature at which the fuel burns, reaching as high as &lBrilliant White&r.\nThis of course will make the fuel burn at a much faster rate, so use it carefully",
+
+    "quests.7E8F9F6F35614B13.st": "Egyptian technology",
+
+    "quests.4E39A32FAA011FF5.st": "Adventure's best friend",
+    "quests.4E39A32FAA011FF5.d1": "The Backpack is like a portable chest, which is very useful for storing stuff while exploring.",
+
+    "quests.6A4FB96DB86D6CAB.st": "The Leather Flask upgrade",
+    "quests.6A4FB96DB86D6CAB.d1": "You still think that the Leather Flask is not good enough? Try the Iron Flask, with higher capacity and durability.",
+
+    "quests.5157705DAAC2C814.st": "Binding material for bricks",
+
+    "quests.6BFD0EF0AA74F136.st": "Heat Resistant Bricks",
+
+    "quests.460D944D0070C3AE.st": "Man of steel",
+    "quests.460D944D0070C3AE.d1": "The Blast Furnace is a multiblock added by TFC that is used in the process of making &8Steel&r, more precisely it will make &cPig Iron&r.\nTo make it, just place a crucible with a Blast Furnace on top of it, a bellow placed beside the latter and just above the Blast Furnace place 4 Fire Bricks just like this :",
+    "quests.460D944D0070C3AE.d2": "After that, proceed to cover the Fire Bricks with wrought iron plates but only from the sides (you can also use higher tier metal plates but wrought iron is cheaper).Lastly, put a &eTuyere&r inside of the Blast Furnace, and you're done!\nIts pretty simple to use honestly, similarly to the bloomery you'll need to drop 4 raw iron ores, 4 charcoal plus 4 flux dust that acts as a catalyst. Then just fire up the furnace and wait until the molten metal drains down into the crucible, and then solidify it into ingots.",
+    "quests.460D944D0070C3AE.d3": "The Blast Furnace can be upgraded of course, by adding a maximum of &e4 other layers&r and increasing the ore and fuel capacity to &e20 items&r.",
+
+    "quests.1F33E1E5FAFDD5A1.st": "Not exactly the one from Tinkers' Construct",
+
+    "quests.2EF3E77C3CDA06AE.st": "Smash it with a hammer",
+
+    "quests.4CDE17A99074ADE2.d1": "Steel is probably one of the most importants material in the game, as its used in a lot of recipes from TFC and Gregtech until at least &5EV&r, so prepare yourself to batch craft a lot of it or just automate it.",
+
+    "quests.445E060EF3300A49.st": "Copper - Any Bronze - Wrought Iron - Steel",
+
+    "quests.27AC71D2454EF0FC.t": "Resources for Black Steel",
+
+    "quests.688799FCA2C83FBF.st": "Black Steel is one of the many alloys of steel. It can be used as usual to make armors and equipment, however it can also be used to craft two other very important alloys : Red Steel and Blue Steel.\nThese two metals are both important as they are required to make ",
+
+    "quests.6BAF04F28F4153A1.st": "Weld it AND Hammer it",
+
+    "quests.1B241F6608950656.st": "Copper - Any Bronze - Wrought Iron - Steel - Black Steel",
+
+    "quests.0E0C589495AA31E8.t": "Resources for Sterling Silver",
+
+    "quests.483D7FE6554FDC96.t": "Resources for Rose Gold",
+
+    "quests.758B2176634789F6.t": "Resources for Brass",
+
+    "quests.1C3E72B84AF7C13A.st": "Just check EMI",
+
+    "quests.510827EC0C6AB4EE.st": "Just check EMI",
+
+    "quests.32B56CE2EED9E237.st": "Hot",
+    "quests.32B56CE2EED9E237.d1": "&4Red Steel&r is a special steel alloy that is used to make tools that have really high durability, but in the case of excavation equipment they have a lower mining speed than &9Blue Steel&r.\nIts one of the main ingredients to make &7LV Machine Casings&r.",
+
+    "quests.159F9D956BB2578B.st": "Cold",
+    "quests.159F9D956BB2578B.d1": "&9Blue Steer&r is a special steel alloy that is used to make mining tools that have really hihg mining speeds, but with a lower durability than &4Red Steel&r tools.\nIts one of the main ingredients to make &7LV Machine Casings&r.",
+
+    "quests.1D19FFD228A4951F.t": "Craft one of the two Tier 6 anvils",
+    
+    "quests.0A5D47D74F841FFE.st": "Part 1",
+
+    "quests.24FBEFECE4BA6899.st": "Part 2",
+
+    "quests.1BA0A6A06A37EC81.st": "Finally, placing source blocks",
+
+    "quests.26D532676AAFE17B.t": "LV - Part 0.5",
+    "quests.26D532676AAFE17B.st": "This is only the beginning trust me",
+    "quests.26D532676AAFE17B.d1": "The &7LV Machine Casing&r opens a new era of technology for you - at least for one part, because you'll still need to craft &dLV Circuits&r and all the other components to be able to make your first electric machines, and for that of course you'll need to start with &6steam powered machines&r.\nBut dont worry, those should be easier to deal with (or probably not).",
+
+    "quests.0AA2FEB9F4FFC4FE.st": "''Why do i need this when i can easily shape clay into bricks''? I dont know ask the devs",
+
+    "quests.3E82C14AF32AA103.st": "I always love some cold coke",
+    "quests.3E82C14AF32AA103.d1": "The Coke Oven is one of the many Gregtech multiblocks (probably the very first one that you will make), that can &econvert logs into charcoal more efficiently&r, creating as a by product &6Creosote Oil&r, that can be used as a fuel source for Bronze Boilers.",
+
+    "quests.3D3508CB85E24741.st": "Human technology at its finest",
+    
+    "quests.146B900F623869B5.st": "Easily Plow large quantities of soil",
+
+    "quests.219306E39AD47499.st": "Carry stuff around with your horse",
+
+    "quests.671C2E5239C4E644.st": "Slavery",
+
+    "quests.3FB3EE093DDC6B56.t": "Under Pressure",
+    "quests.3FB3EE093DDC6B56.st": "Putting the Steam in Steam Age",
+    "quests.3FB3EE093DDC6B56.d1": "The &dSolid Boiler&r is the first Gregtech machine that you'll make - Its used to boil water into &7steam&r that will power other steam machines and, in the future, &esteam turbines for electricity&r.\nBoilers are quite tricky to work with, they have three bars indicating &cheat&r, &9water&r and &7steam&r, and to heat them up you'll need to put a fuel inside its specific slot.\nIf the boiler happens to be out of water while still being hot, the next time it will recieve some &4it will explode&r, and the  explosion is pretty big so if you happen to have stuff near it, bye bye!\nThis fortunately wont happen if there is too much steam inside the boiler, that will just pump it out from the top &4damaging any entities above it&r.\nAlso, water will convert with a ratio of &11mb of water&r to &7160mb of steam&r, so if you have a pump from create up and running connected to it, you shouldnt have any problems with your steam supply.1nWith all of that being said, hop onto the next chapter : &6The Steam Age&r.",
+
+    "quests.2765DB2E20A745F8.st": "Blow A-Train",
+    "quests.2765DB2E20A745F8.d1": "The Ceramic Blowpipe, together with other tools, is an item used to work with &eGlass&r.\nTo use it, put it in a crafting table with a silica batch (the type is not important if you dont care about the color) and heat it up until it gets to at least &4Faint Red **&r. When it does, you will be able to perform various actions to the glass, such as :\n1. &aBlow&r - Done by holding RMB while facing towards with the blowpipe in your offhand\n2. &aStretch&r - Done by holding RMB while facing downwards with the blowpipe in your offhand\n3. &aFlatten&r - Right Click while holding the blowpipe with &6Paddles&r in your offhand\n4. &aPinch&r - Right Click while holding the blowpipe with &6Jacks&r in your offhand\n5. &aSaw&r - Right Click while holding the blowpipe with a &6Gem Saw&r in your offhand\n6. &aRoll&r - Right Click while holding the blowpipe with &6Any Cloth&r in your offhand\nYou will need to see the recipe for the item you want to make and permorm these actions in the order that is listed in the recipe.\nIf you want an upgrade from the brittle Ceramic Blowpipe, you can make a normal Blowpipe by working a Brass Rod.",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "STEAM AGE CHAPTER" : "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
+
+    "quests..t": "",
+    "quests..st": "",
+    "quests..d1": "",
+    "quests..t1": "",
 
     "quests..t": "",
     "quests..st": "",

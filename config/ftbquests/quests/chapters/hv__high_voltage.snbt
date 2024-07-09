@@ -270,6 +270,26 @@
 			y: 0.375d
 		}
 		{
+			dependencies: ["16B735F9C391D260"]
+			description: [
+				"Time to say goodbye to your &4Primitive Water Pumps&r. They've done you proud."
+				""
+				"Place this on the side of a machine to give it &616 buckets&o&r&r of Water every second!"
+			]
+			icon: "gtceu:infinite_water_cover"
+			id: "78464574AF8A27AC"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "3CE1967A82B9ED45"
+				item: "gtceu:infinite_water_cover"
+				type: "item"
+			}]
+			title: "Infinite Water"
+			x: 2.25d
+			y: 0.375d
+		}
+		{
 			dependencies: ["124B32A0583A636A"]
 			description: [
 				"The &aSimple System on Chip&r will be used for the best &dULV Circuit&r recipe."
@@ -1269,6 +1289,6 @@
 			y: -3.0d
 		}
 	]
-	subtitle: ["Scale up your power and begin advanced chemistry"]
-	title: "&6HV&r - High Voltage"
+	subtitle: ["{quests.237BDB19A9495869.st}"]
+	title: "{quests.237BDB19A9495869.t}"
 }

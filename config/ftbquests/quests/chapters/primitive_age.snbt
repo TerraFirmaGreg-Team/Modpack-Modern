@@ -31,7 +31,13 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.365F6F48E0BB2EFC.d1}"]
+			description: [
+				"{quests.365F6F48E0BB2EFC.d1}"
+				""
+				"{@pagebreak}"
+				""
+				"{quests.365F6F48E0BB2EFC.d2}"
+			]
 			id: "365F6F48E0BB2EFC"
 			size: 2.0d
 			subtitle: "{quests.365F6F48E0BB2EFC.st}"
@@ -352,7 +358,9 @@
 				"373FD04AD6CA9F92"
 				"4B8BAB2494C82C36"
 			]
+			description: ["{quests.4F5C883CC5282151.d1}"]
 			id: "4F5C883CC5282151"
+			subtitle: "{quests.4F5C883CC5282151.st}"
 			tasks: [{
 				count: 16L
 				id: "05DD41298C7884FD"
@@ -373,7 +381,6 @@
 			dependencies: ["76EF4D00586A8B74"]
 			description: [
 				"{quests.387DEEADF4922AB3.d1}"
-				""
 				"{ \"text\": \"Excel Link (Tap here)\", \"color\":\"#02FF00\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4\" } }"
 			]
 			icon: "gtceu:shale_aluminium_ore"
@@ -389,21 +396,30 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.297996E158D0A289.d1}"]
 			id: "297996E158D0A289"
 			size: 2.0d
+			subtitle: "{quests.297996E158D0A289.st}"
 			tasks: [{
 				count: 64L
 				id: "7DE49B3518768E16"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
+			title: "{quests.297996E158D0A289.t}"
 			x: -1.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
+			description: [
+				"{quests.671A79C648DE2BCD.d1} "
+				"{@pagebreak}"
+				"{quests.671A79C648DE2BCD.d2} "
+			]
 			id: "671A79C648DE2BCD"
 			size: 2.0d
+			subtitle: "{quests.671A79C648DE2BCD.st}"
 			tasks: [{
 				id: "123D5D1D8D91D88A"
 				item: {
@@ -418,6 +434,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.671A79C648DE2BCD.t}"
 			x: -1.5d
 			y: 11.0d
 		}
@@ -426,7 +443,9 @@
 				"1D40CA3A293CA0B8"
 				"6114E7A26576FE4C"
 			]
+			description: ["{quests.70D40085219B1CC2.d1}"]
 			id: "70D40085219B1CC2"
+			subtitle: "{quests.70D40085219B1CC2.st}"
 			tasks: [{
 				id: "2AFE24D5E16E294F"
 				item: "tfc:fire_clay"
@@ -530,8 +549,10 @@
 				"2286E2D7A9178E13"
 				"3D7FD4BCC0C66062"
 			]
+			description: ["{quests.15E8DFB91603906B.d1}"]
 			id: "15E8DFB91603906B"
 			size: 2.0d
+			subtitle: "{quests.15E8DFB91603906B.st}"
 			tasks: [
 				{
 					id: "27816718899DCD1B"
@@ -550,6 +571,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.15E8DFB91603906B.t}"
 			x: 12.0d
 			y: 14.5d
 		}
@@ -990,6 +1012,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.0546B04FC0F85C8C.d1}"
 			x: -1.5d
 			y: 19.5d
 		}
@@ -1124,10 +1147,10 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Hammer: mainly used only to create a stone anvil and the first copper double ingots, but there will be information about this later in the quests."]
+			description: ["{quests.120E5C0E43EC756B.d1}"]
 			hide_dependency_lines: true
 			id: "120E5C0E43EC756B"
-			subtitle: "Make a better copper one!"
+			subtitle: "{quests.120E5C0E43EC756B.st}"
 			tasks: [{
 				id: "4BD017E2BEB690C4"
 				item: {
@@ -1288,8 +1311,10 @@
 		}
 		{
 			dependencies: ["5EBFCE37D727DFD0"]
+			description: ["{quests.1C1CD40818C97CB4.d1}"]
 			id: "1C1CD40818C97CB4"
 			size: 2.0d
+			subtitle: "{quests.1C1CD40818C97CB4.st}"
 			tasks: [{
 				id: "59F6553DB3C48707"
 				item: {
@@ -1311,6 +1336,7 @@
 			dependencies: ["43C737BF10D3AC0E"]
 			id: "5A3E944192851481"
 			size: 2.0d
+			subtitle: "{quests.5A3E944192851481.st}"
 			tasks: [{
 				id: "42CEDE5B7EEAEC2D"
 				item: {
@@ -1330,6 +1356,7 @@
 			dependencies: ["474BC62CB10811FA"]
 			id: "095104BA3C842978"
 			size: 2.0d
+			subtitle: "{quests.095104BA3C842978.st}"
 			tasks: [{
 				id: "16D30907256FEBA9"
 				item: {
@@ -1351,6 +1378,7 @@
 			dependencies: ["76A8181B6F9331B9"]
 			id: "445E060EF3300A49"
 			size: 2.0d
+			subtitle: "{quests.445E060EF3300A49.st}"
 			tasks: [{
 				id: "058C47108EE07BAF"
 				item: {
@@ -1372,6 +1400,7 @@
 			dependencies: ["2A181CB1C187FD0E"]
 			id: "1B241F6608950656"
 			size: 2.0d
+			subtitle: "{quests.1B241F6608950656.st}"
 			tasks: [{
 				id: "6E61EA191DB9B798"
 				item: {
@@ -1436,7 +1465,10 @@
 				"45D907EF7902A200"
 				"373FD04AD6CA9F92"
 			]
-			description: ["{quests.69D20168E26BBF59.d1}"]
+			description: [
+				"{quests.69D20168E26BBF59.d1}"
+				""
+			]
 			id: "69D20168E26BBF59"
 			size: 2.0d
 			subtitle: "{quests.69D20168E26BBF59.st}"
@@ -1457,6 +1489,7 @@
 				"69D20168E26BBF59"
 				"1485A3993C9A92FD"
 			]
+			description: ["{quests.6EFCFEF4EDFBB71E.d1}"]
 			id: "6EFCFEF4EDFBB71E"
 			tasks: [{
 				id: "71AB3DF803604E21"
@@ -1577,7 +1610,9 @@
 				"69D20168E26BBF59"
 				"0148B1F36C067BE0"
 			]
+			description: ["{quests.6CCE62F683236AA6.d1}"]
 			id: "6CCE62F683236AA6"
+			subtitle: "{quests.6CCE62F683236AA6.st}"
 			tasks: [{
 				id: "51AD0A0E0A5EE9F8"
 				item: {
@@ -1601,12 +1636,15 @@
 				"6D419B6EDE146616"
 				"69D20168E26BBF59"
 			]
+			description: ["{quests.3E03688C03778894.d1}"]
 			id: "3E03688C03778894"
+			subtitle: "{quests.3E03688C03778894.st}"
 			tasks: [{
 				id: "2FBD3C008C1E7227"
 				item: "tfc:ceramic/jug"
 				type: "item"
 			}]
+			title: "{quests.3E03688C03778894.t}"
 			x: 6.5d
 			y: 19.5d
 		}
@@ -1632,7 +1670,7 @@
 		}
 		{
 			dependencies: ["0EB682B44D83D12A"]
-			description: [""]
+			description: ["{quests.2286E2D7A9178E13.d1}"]
 			id: "2286E2D7A9178E13"
 			tasks: [{
 				count: 6L
@@ -1653,6 +1691,7 @@
 		{
 			dependencies: ["64F3C1F270CFFE02"]
 			id: "0EB682B44D83D12A"
+			subtitle: "{quests.0EB682B44D83D12A.st}"
 			tasks: [{
 				id: "6AD179467B50D005"
 				item: {
@@ -1663,7 +1702,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze pickaxe"
+				title: "{quests.0EB682B44D83D12A.t1}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1714,6 +1753,7 @@
 		}
 		{
 			dependencies: ["3FD9C8B55B70ACC3"]
+			description: ["{quests.644D51EEF0A5641E.d1}"]
 			id: "644D51EEF0A5641E"
 			tasks: [{
 				id: "5DBB1490DF109B8E"
@@ -1725,7 +1765,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze chisel"
+				title: "{quests.644D51EEF0A5641E.t1}"
 				type: "item"
 			}]
 			x: 9.5d
@@ -1733,9 +1773,11 @@
 		}
 		{
 			dependencies: ["0EB682B44D83D12A"]
+			description: ["{quests.3029097F88B8AABF.d1}"]
 			hide_dependency_lines: true
 			id: "3029097F88B8AABF"
 			size: 1.5d
+			subtitle: "{quests.3029097F88B8AABF.st}"
 			tasks: [{
 				id: "37D21B5266C73385"
 				item: "gtceu:crushed_graphite_ore"
@@ -1746,6 +1788,7 @@
 		}
 		{
 			dependencies: ["7E75A4A0E4BCCAAF"]
+			description: ["{quests.390C85E831B2B8A4.d1}"]
 			id: "390C85E831B2B8A4"
 			tasks: [{
 				id: "29360B07ACD7ACE3"
@@ -1757,6 +1800,7 @@
 		}
 		{
 			dependencies: ["57A961BF9EE3F0A4"]
+			description: ["{quests.4EE18624D06C6D14.d1}"]
 			id: "4EE18624D06C6D14"
 			tasks: [{
 				id: "611E42A854560727"
@@ -1794,6 +1838,7 @@
 			]
 			id: "6BFD0EF0AA74F136"
 			size: 2.0d
+			subtitle: "{quests.6BFD0EF0AA74F136.st}"
 			tasks: [{
 				id: "75E63C92A571122E"
 				item: "tfc:fire_bricks"
@@ -1837,7 +1882,9 @@
 		}
 		{
 			dependencies: ["6E24ECF6CEE950D1"]
+			description: [""]
 			id: "5157705DAAC2C814"
+			subtitle: "{quests.5157705DAAC2C814.st}"
 			tasks: [{
 				count: 64L
 				id: "4F14DCBCEAE4C14D"
@@ -1849,8 +1896,10 @@
 		}
 		{
 			dependencies: ["4F5C883CC5282151"]
+			description: ["{quests.6E24ECF6CEE950D1.d1}"]
 			id: "6E24ECF6CEE950D1"
 			size: 2.0d
+			subtitle: "{quests.6E24ECF6CEE950D1.st}"
 			tasks: [{
 				id: "0CC93715D33E6211"
 				item: {
@@ -1870,6 +1919,7 @@
 			dependencies: ["06C7B7138EDE4B38"]
 			hide_dependency_lines: true
 			id: "0AA2FEB9F4FFC4FE"
+			subtitle: "{quests.0AA2FEB9F4FFC4FE.st}"
 			tasks: [{
 				id: "1BFBA1DC92466F7E"
 				item: "gtceu:brick_wooden_form"
@@ -1883,6 +1933,7 @@
 				"25E35E929922B872"
 				"712ACF130A558150"
 			]
+			description: [""]
 			id: "3E82C14AF32AA103"
 			size: 2.0d
 			tasks: [
@@ -1913,8 +1964,20 @@
 				"390C85E831B2B8A4"
 				"50E70601ABB5A40C"
 			]
+			description: [
+				"{quests.460D944D0070C3AE.d1}"
+				""
+				"{image:tfg:textures/quests/blast_furnace_1.png width:170 height:100 align:1}"
+				""
+				"{quests.460D944D0070C3AE.d2}"
+				""
+				"{image:tfg:textures/quests/blast_furnace_2.png width:170 height:100 align:1}"
+				""
+				"{quests.460D944D0070C3AE.d3}"
+			]
 			id: "460D944D0070C3AE"
 			size: 2.0d
+			subtitle: "{quests.460D944D0070C3AE.st}"
 			tasks: [{
 				id: "570752C82CA140BF"
 				item: "tfc:blast_furnace"
@@ -1925,7 +1988,9 @@
 		}
 		{
 			dependencies: ["6C4DD58DE6015FD7"]
+			description: ["{quests.4B8BAB2494C82C36.d1}"]
 			id: "4B8BAB2494C82C36"
+			subtitle: "{quests.4B8BAB2494C82C36.st}"
 			tasks: [{
 				id: "28E92E097D56A46F"
 				item: {
@@ -1936,7 +2001,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze saw"
+				title: "{quests.4B8BAB2494C82C36.t1}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1944,7 +2009,9 @@
 		}
 		{
 			dependencies: ["78DEFFC621068E18"]
+			description: ["{quests.51E7834A52F80482.d1}"]
 			id: "51E7834A52F80482"
+			subtitle: "{quests.51E7834A52F80482.st}"
 			tasks: [{
 				id: "25CB975568D50B66"
 				item: {
@@ -1955,7 +2022,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze propick"
+				title: "{quests.51E7834A52F80482.t1}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1964,6 +2031,7 @@
 		{
 			dependencies: ["7E98FD623005E4CA"]
 			id: "3830E24B66F59E76"
+			subtitle: "{quests.3830E24B66F59E76.st}"
 			tasks: [{
 				id: "730D12AD7644BC1B"
 				item: {
@@ -1974,7 +2042,7 @@
 					}
 				}
 				match_nbt: false
-				title: "A copper or bronze axe"
+				title: "{quests.3830E24B66F59E76.t1}"
 				type: "item"
 			}]
 			x: 12.0d
@@ -1986,18 +2054,14 @@
 				"3830E24B66F59E76"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"To make a stone anvil, you have to click on the top of the stone with a hammer"
-				""
-				"(you need to use igneous Intrusive stone)"
-			]
+			description: ["{quests.169485270E86A50C.d1}"]
 			id: "169485270E86A50C"
 			tasks: [{
 				icon: "tfc:rock/raw/andesite"
 				id: "028DBFDDC00B9949"
 				observe_type: 1
 				timer: 0L
-				title: "Make Rock Anvil"
+				title: "{quests.169485270E86A50C.t1}"
 				to_observe: "#tfc:rock_anvils"
 				type: "observation"
 			}]
@@ -2032,7 +2096,7 @@
 				"7A266A3E0A632D42"
 				"169485270E86A50C"
 			]
-			description: ["To make welding craft on an anvil, you need to take a hammer in your leading hand and press shift+rmb on the anvil"]
+			description: ["{quests.5EBFCE37D727DFD0.d1}"]
 			id: "5EBFCE37D727DFD0"
 			tasks: [{
 				count: 7L
@@ -2106,6 +2170,7 @@
 				"6EFCFEF4EDFBB71E"
 				"2EF3E77C3CDA06AE"
 			]
+			description: ["{quests.4CDE17A99074ADE2.d1}"]
 			id: "4CDE17A99074ADE2"
 			tasks: [{
 				id: "7CE0990FF2F83BD0"
@@ -2230,8 +2295,10 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
+			description: [""]
 			hide_dependency_lines: true
 			id: "73BF0075860E666B"
+			subtitle: "{quests.73BF0075860E666B.st}"
 			tasks: [{
 				id: "54334DA4AC22438E"
 				item: {
@@ -2241,7 +2308,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 					}
 				}
-				title: "Any Copper Ore"
+				title: "{quests.73BF0075860E666B.t1}"
 				type: "item"
 			}]
 			x: 16.5d
@@ -2261,6 +2328,7 @@
 				id: "gtceu:bronze_dust"
 			}
 			id: "2DEEDED2F21E60B9"
+			subtitle: "{quests.2DEEDED2F21E60B9.st}"
 			tasks: [
 				{
 					id: "024533C5E4B89787"
@@ -2290,7 +2358,7 @@
 					type: "item"
 				}
 			]
-			title: "Resources for ordinary bronze"
+			title: "{quests.2DEEDED2F21E60B9.t}"
 			x: 18.5d
 			y: 14.0d
 		}
@@ -2298,6 +2366,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "566FA805413004CF"
+			subtitle: "{quests.566FA805413004CF.st}"
 			tasks: [{
 				id: "7E987D9B30125F52"
 				item: {
@@ -2356,7 +2425,21 @@
 		}
 		{
 			dependencies: ["4504EBE720145441"]
+			description: [
+				"{quests.18E2972322AD572E.d1}"
+				""
+				"{image:tfg:textures/quests/bloomery_1.png width:170 height:100 align:1}"
+				""
+				"{image:tfg:textures/quests/bloomery_2.png width:170 height:100 align:1}"
+				""
+				"{image:tfg:textures/quests/bloomery_3.png width:170 height:100 align:1}"
+				""
+				"{@pagebreak}"
+				""
+				"{quests.18E2972322AD572E.d2}"
+			]
 			id: "18E2972322AD572E"
+			subtitle: "{quests.18E2972322AD572E.st}"
 			tasks: [{
 				id: "07DF6C37860ADD9E"
 				item: "tfc:bloomery"
@@ -2397,7 +2480,7 @@
 				id: "gtceu:bismuth_bronze_dust"
 			}
 			id: "515141734CA1A002"
-			subtitle: "Cheap and shiny"
+			subtitle: "{quests.515141734CA1A002.st}"
 			tasks: [
 				{
 					id: "7EBB6EC50EE8CFA1"
@@ -2442,7 +2525,7 @@
 					type: "item"
 				}
 			]
-			title: "Resources for Bismuth bronze"
+			title: "{quests.515141734CA1A002.t}"
 			x: 18.5d
 			y: 15.0d
 		}
@@ -2460,7 +2543,7 @@
 				id: "gtceu:black_bronze_dust"
 			}
 			id: "69B4B677A27121CF"
-			subtitle: "Expensive and black"
+			subtitle: "{quests.69B4B677A27121CF.st}"
 			tasks: [
 				{
 					id: "1294B28A98775920"
@@ -2502,7 +2585,7 @@
 					type: "item"
 				}
 			]
-			title: "Resources for Black Bronze"
+			title: "{quests.69B4B677A27121CF.t}"
 			x: 18.5d
 			y: 13.0d
 		}
@@ -2731,6 +2814,7 @@
 		}
 		{
 			dependencies: ["38058B5408BFD0C2"]
+			description: ["{quests.2765DB2E20A745F8.d1}"]
 			id: "2765DB2E20A745F8"
 			tasks: [{
 				id: "3E84976D6C8AB0EA"
@@ -2763,7 +2847,9 @@
 		}
 		{
 			dependencies: ["4BB76F3E38A2AFFB"]
+			description: ["{quests.70B6D235B47288B4.d1}"]
 			id: "70B6D235B47288B4"
+			subtitle: "{quests.70B6D235B47288B4.st}"
 			tasks: [{
 				id: "4641D6A5C6FEC1CF"
 				item: "tfc:ceramic/pot"
@@ -2780,7 +2866,7 @@
 			]
 			id: "6E13B0241CB1D536"
 			size: 2.0d
-			subtitle: "Did you think we would force you to use treetaps...?"
+			subtitle: "{quests.6E13B0241CB1D536.st}"
 			tasks: [{
 				id: "44C1C7857D5E60D7"
 				item: "gtceu:sticky_resin"
@@ -2791,6 +2877,7 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.3CE7C64290BADE9F.d1}"]
 			hide_dependency_lines: true
 			id: "3CE7C64290BADE9F"
 			size: 1.5d
@@ -2808,6 +2895,7 @@
 		}
 		{
 			dependencies: ["3CE7C64290BADE9F"]
+			description: ["{quests.6D34C97EA8A09223.d1}"]
 			id: "6D34C97EA8A09223"
 			tasks: [{
 				id: "2BA6C9F89AF196C8"
@@ -2831,7 +2919,9 @@
 				"463F14478757D8E8"
 				"6D34C97EA8A09223"
 			]
+			description: ["{quests.7C3F180555E12A88.d1}"]
 			id: "7C3F180555E12A88"
+			subtitle: "{quests.7C3F180555E12A88.st}"
 			tasks: [{
 				id: "4DB6481F8CA18725"
 				item: {
@@ -2845,14 +2935,17 @@
 					}
 				}
 				match_nbt: true
+				title: "{quests.7C3F180555E12A88.t1}"
 				type: "item"
 			}]
+			title: "{quests.7C3F180555E12A88.t1}"
 			x: 3.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["2765DB2E20A745F8"]
 			id: "5BBF0B6AED98072E"
+			subtitle: "{quests.5BBF0B6AED98072E.st}"
 			tasks: [{
 				id: "0D09463BB351AC9C"
 				item: {
@@ -2870,8 +2963,10 @@
 		}
 		{
 			dependencies: ["645D1F1C55674079"]
+			description: ["{quests.4CD7FDA83B07AE22.d1}"]
 			id: "4CD7FDA83B07AE22"
 			size: 1.5d
+			subtitle: "{quests.4CD7FDA83B07AE22.st}"
 			tasks: [{
 				id: "1B60EBE483C770FF"
 				item: {
@@ -2994,7 +3089,9 @@
 				"3CE7C64290BADE9F"
 				"4B8BAB2494C82C36"
 			]
+			description: ["{quests.463F14478757D8E8.d1}"]
 			id: "463F14478757D8E8"
+			subtitle: "{quests.463F14478757D8E8.st}"
 			tasks: [{
 				id: "5930A278D214573B"
 				item: "tfc:wooden_bucket"
@@ -3022,6 +3119,7 @@
 			dependencies: ["0EB682B44D83D12A"]
 			hide_dependency_lines: true
 			id: "253860AD4DF4224C"
+			subtitle: "{quests.253860AD4DF4224C.st}"
 			tasks: [{
 				id: "6E70D453F693036D"
 				item: "gtceu:crushed_sulfur_ore"
@@ -3076,18 +3174,20 @@
 			]
 			id: "1BA0A6A06A37EC81"
 			size: 3.0d
+			subtitle: "{quests.1BA0A6A06A37EC81.st}"
 			tasks: [{
 				id: "14FACDCDCCC7A916"
 				item: "minecraft:bucket"
 				type: "item"
 			}]
-			x: 44.0d
-			y: 16.0d
+			x: 37.142857142857125d
+			y: 7.375000000000007d
 		}
 		{
 			dependencies: ["4307F49F7BE46863"]
 			id: "0A5D47D74F841FFE"
 			size: 2.0d
+			subtitle: "{quests.0A5D47D74F841FFE.st}"
 			tasks: [{
 				id: "6C695F8BF1AD660F"
 				item: {
@@ -3102,13 +3202,14 @@
 				}
 				type: "item"
 			}]
-			x: 41.0d
-			y: 14.5d
+			x: 35.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["32EFAF9DD97AC387"]
 			id: "24FBEFECE4BA6899"
 			size: 2.0d
+			subtitle: "{quests.24FBEFECE4BA6899.st}"
 			tasks: [{
 				id: "25AA212ADC5A71A6"
 				item: {
@@ -3123,12 +3224,13 @@
 				}
 				type: "item"
 			}]
-			x: 41.0d
-			y: 18.0d
+			x: 39.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["460D944D0070C3AE"]
 			id: "1F33E1E5FAFDD5A1"
+			subtitle: "{quests.1F33E1E5FAFDD5A1.st}"
 			tasks: [{
 				id: "537CD0EEF5A7CFAF"
 				item: {
@@ -3149,6 +3251,7 @@
 		{
 			dependencies: ["1F33E1E5FAFDD5A1"]
 			id: "2EF3E77C3CDA06AE"
+			subtitle: "{quests.2EF3E77C3CDA06AE.st}"
 			tasks: [{
 				id: "0889E2054105C782"
 				item: {
@@ -3183,6 +3286,7 @@
 				id: "tfc:metal/ingot/weak_steel"
 			}
 			id: "6BAF04F28F4153A1"
+			subtitle: "{quests.6BAF04F28F4153A1.st}"
 			tasks: [
 				{
 					id: "79A36E758132D64C"
@@ -3222,6 +3326,7 @@
 				"1FFE279F43B0BA45"
 			]
 			dependency_requirement: "one_completed"
+			description: [""]
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -3234,6 +3339,7 @@
 				id: "gtceu:nickel_dust"
 			}
 			id: "27AC71D2454EF0FC"
+			subtitle: "{quests.27AC71D2454EF0FC.st}"
 			tasks: [
 				{
 					id: "4433C1C9D816AD13"
@@ -3265,12 +3371,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.27AC71D2454EF0FC.t}"
 			x: 26.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["06C62B63E81ACA3A"]
+			description: ["&4Red Steel&r is a special steel alloy that is used to make tools that have really high durability, but in the case of excavation equipment they have a lower mining speed than &9Blue Steel&r.\\nIts one of the main ingredients to make &7LV Machine Casings&r."]
 			id: "32B56CE2EED9E237"
+			subtitle: "{quests.32B56CE2EED9E237.st}"
 			tasks: [{
 				id: "0C28F63E10B0FF53"
 				item: {
@@ -3290,7 +3399,9 @@
 		}
 		{
 			dependencies: ["4F0E2C231AA63BB9"]
+			description: ["{quests.159F9D956BB2578B.d1}"]
 			id: "159F9D956BB2578B"
+			subtitle: "{quests.159F9D956BB2578B.st}"
 			tasks: [{
 				id: "54DAC2F8584DE8A0"
 				item: {
@@ -3370,6 +3481,7 @@
 				title: "Any Anvil of 6 Tier"
 				type: "item"
 			}]
+			title: "{quests.1D19FFD228A4951F.t}"
 			x: 37.0d
 			y: 16.0d
 		}
@@ -3390,8 +3502,8 @@
 				}
 				type: "item"
 			}]
-			x: 39.0d
-			y: 18.0d
+			x: 38.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["1D19FFD228A4951F"]
@@ -3410,8 +3522,8 @@
 				}
 				type: "item"
 			}]
-			x: 39.0d
-			y: 14.5d
+			x: 36.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["1C3E72B84AF7C13A"]
@@ -3460,6 +3572,7 @@
 				"06F1724135B11DDF"
 			]
 			id: "1C3E72B84AF7C13A"
+			subtitle: "{quests.1C3E72B84AF7C13A.st}"
 			tasks: [{
 				id: "35F1B208A0D51148"
 				item: {
@@ -3483,6 +3596,7 @@
 				"5B2E14BD237A35A3"
 			]
 			id: "510827EC0C6AB4EE"
+			subtitle: "{quests.510827EC0C6AB4EE.st}"
 			tasks: [{
 				id: "1E7331DE0C534612"
 				item: {
@@ -3600,7 +3714,7 @@
 					type: "item"
 				}
 			]
-			title: "Materials for Rose Gold"
+			title: "{quests.483D7FE6554FDC96.t}"
 			x: 30.0d
 			y: 13.0d
 		}
@@ -3647,7 +3761,7 @@
 					type: "item"
 				}
 			]
-			title: "Materials for Brass"
+			title: "{quests.758B2176634789F6.t}"
 			x: 31.0d
 			y: 13.0d
 		}
@@ -3694,7 +3808,7 @@
 					type: "item"
 				}
 			]
-			title: "Materials for Sterling Silver"
+			title: "{quests.0E0C589495AA31E8.t}"
 			x: 30.5d
 			y: 19.5d
 		}
@@ -3728,6 +3842,7 @@
 			dependencies: ["7A266A3E0A632D42"]
 			hide_dependency_lines: true
 			id: "4A1690ADC239300D"
+			subtitle: "{quests.4A1690ADC239300D.st}"
 			tasks: [{
 				id: "0606E0C9495E1A59"
 				item: {
@@ -3738,7 +3853,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Any Tuyeres"
+				title: "Any Tuyere"
 				type: "item"
 			}]
 			x: 22.5d
@@ -3746,6 +3861,15 @@
 		}
 		{
 			dependencies: ["4B8BAB2494C82C36"]
+			description: [
+				"{quests.3CEA1756725CF02D.d1}"
+				""
+				"{image:tfg:textures/quests/support_1.png width:170 height:100 align:1}"
+				""
+				"{quests.3CEA1756725CF02D.d2}"
+				""
+				"{image:tfg:textures/quests/support_2.png width:170 height:100 align:1}"
+			]
 			id: "3CEA1756725CF02D"
 			tasks: [{
 				count: 16L
@@ -3760,11 +3884,13 @@
 				title: "Any Support"
 				type: "item"
 			}]
+			title: "{quests.3CEA1756725CF02D.t}"
 			x: 13.0d
 			y: 12.5d
 		}
 		{
 			dependencies: ["4F5C883CC5282151"]
+			description: ["{quests.147911B5CA3A7DD8.d1}"]
 			id: "147911B5CA3A7DD8"
 			tasks: [{
 				id: "3E96D38D538B5A5D"
@@ -3796,6 +3922,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "0D47455ABB97C81D"
+			subtitle: "quests.0D47455ABB97C81D.st}"
 			tasks: [{
 				id: "3A90FF5E36D0ACF8"
 				item: "tfc:papyrus"
@@ -3834,7 +3961,9 @@
 				"147911B5CA3A7DD8"
 				"6F769ABFCA894E24"
 			]
+			description: [""]
 			id: "7E8F9F6F35614B13"
+			subtitle: "{quests.7E8F9F6F35614B13.st}"
 			tasks: [{
 				id: "2677C234ED0D56FF"
 				item: "tfc:unrefined_paper"
@@ -3850,8 +3979,10 @@
 				"593CC9165759B714"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.5346CD3039C4B55A.d1}"]
 			hide_dependency_lines: true
 			id: "5346CD3039C4B55A"
+			subtitle: "{quests.5346CD3039C4B55A.st}"
 			tasks: [{
 				id: "3634DBCEBC5306F4"
 				item: "minecraft:map"
@@ -3878,8 +4009,10 @@
 				"593CC9165759B714"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.20F878A238471ED7.d1}"]
 			hide_dependency_lines: true
 			id: "20F878A238471ED7"
+			subtitle: "{quests.20F878A238471ED7.st}"
 			tasks: [{
 				id: "33347A566327E820"
 				item: "minecraft:book"
@@ -3912,6 +4045,7 @@
 				"05C53EAAFCA780B4"
 			]
 			id: "42FD437930CA74C7"
+			subtitle: "{quests.42FD437930CA74C7.st}"
 			tasks: [{
 				id: "0A5EC3144D038A37"
 				item: "minecraft:leather"
@@ -3926,6 +4060,7 @@
 				"147911B5CA3A7DD8"
 			]
 			id: "593CC9165759B714"
+			subtitle: "{quests.593CC9165759B714.st}"
 			tasks: [{
 				id: "1F0B9004170C5CBD"
 				item: "firmalife:pineapple_leather"
@@ -3960,6 +4095,7 @@
 				"5D0BA3647DAC9FC3"
 				"06C7B7138EDE4B38"
 			]
+			description: ["{quests.0988DE53C9217CE6.d1}"]
 			id: "0988DE53C9217CE6"
 			tasks: [{
 				id: "2EA9AB18C7A79409"
@@ -3982,6 +4118,7 @@
 				"20DD59D97629F911"
 			]
 			id: "5D0BA3647DAC9FC3"
+			subtitle: "{quests.5D0BA3647DAC9FC3.st}"
 			tasks: [{
 				id: "32617E98CE91FDEF"
 				item: {
@@ -4024,6 +4161,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "0E5EFAEF4FC0C6FD"
+			subtitle: "{quests.0E5EFAEF4FC0C6FD.st}"
 			tasks: [{
 				id: "20EB604378FA0807"
 				item: {
@@ -4100,6 +4238,7 @@
 				"06C7B7138EDE4B38"
 			]
 			id: "42B0AF008FFE3F48"
+			subtitle: "{quests.1CDCB41630875DC5.st}"
 			tasks: [{
 				id: "1CDCB41630875DC5"
 				item: "tfc:wool"
@@ -4110,8 +4249,10 @@
 		}
 		{
 			dependencies: ["0546B04FC0F85C8C"]
+			description: ["{quests.5B9E3FCFA11BB275.d1}"]
 			hide_dependent_lines: true
 			id: "5B9E3FCFA11BB275"
+			subtitle: "{quests.5B9E3FCFA11BB275.st}"
 			tasks: [{
 				id: "64D9B70849F6176A"
 				item: {
@@ -4174,8 +4315,10 @@
 				"4E37B4C1A68FFE59"
 				"095104BA3C842978"
 			]
+			description: ["{quests.6A4FB96DB86D6CAB.d1}"]
 			id: "6A4FB96DB86D6CAB"
 			size: 1.5d
+			subtitle: "{quests.6A4FB96DB86D6CAB.st}"
 			tasks: [{
 				id: "1500208D4CBDD15A"
 				item: {
@@ -4199,6 +4342,7 @@
 		{
 			dependencies: ["4E37B4C1A68FFE59"]
 			id: "788103BCA370A39E"
+			subtitle: "{quests.788103BCA370A39E.st}"
 			tasks: [
 				{
 					id: "39EB804E4B7FC490"
@@ -4245,12 +4389,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.788103BCA370A39E.t}"
 			x: 15.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4E37B4C1A68FFE59"]
+			description: [""]
 			id: "23E44778FCDE781A"
+			subtitle: "{quests.23E44778FCDE781A.st}"
 			tasks: [
 				{
 					id: "774D01EFA53FECB1"
@@ -4297,6 +4444,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.23E44778FCDE781A.t}"
 			x: 15.5d
 			y: -1.5d
 		}
@@ -4331,6 +4479,7 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.2D8BA79A54F6C352.d1}"]
 			hide_dependency_lines: true
 			id: "2D8BA79A54F6C352"
 			tasks: [{
@@ -4352,6 +4501,7 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
+			description: ["{quests.7BCC18E3FCE6CE38.d1}"]
 			hide_dependency_lines: true
 			id: "7BCC18E3FCE6CE38"
 			tasks: [{
@@ -4364,7 +4514,9 @@
 		}
 		{
 			dependencies: ["314212B496B2D3C3"]
+			description: [""]
 			id: "3D959ED3EA366859"
+			subtitle: "{quests.3D959ED3EA366859.st}"
 			tasks: [
 				{
 					id: "3D9D58C3CFF2AF0A"
@@ -4411,12 +4563,14 @@
 					type: "item"
 				}
 			]
+			title: "{quests.3D959ED3EA366859.t}"
 			x: 18.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["665BC6BB76CE0EA3"]
 			id: "6F848650CAF10E9A"
+			subtitle: "{quests.6F848650CAF10E9A.st}"
 			tasks: [{
 				id: "4A9AB33FDB17322A"
 				item: {
@@ -4438,8 +4592,10 @@
 				"3D889F02ABAFEB85"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.5D0B6CA6E0EB320B.d1}"]
 			id: "5D0B6CA6E0EB320B"
 			size: 1.5d
+			subtitle: "{quests.5D0B6CA6E0EB320B.st}"
 			tasks: [
 				{
 					id: "786C737E1798C9E5"
@@ -4486,6 +4642,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.5D0B6CA6E0EB320B.t}"
 			x: 9.75d
 			y: -4.5d
 		}
@@ -4563,6 +4720,7 @@
 				"593CC9165759B714"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.4A957A44753A5B84.d1}"]
 			id: "4A957A44753A5B84"
 			tasks: [{
 				id: "1C2176D311281B7E"
@@ -4580,8 +4738,10 @@
 		}
 		{
 			dependencies: ["1E1A13F6B8D24207"]
+			description: ["{quests.4E39A32FAA011FF5.d1}"]
 			id: "4E39A32FAA011FF5"
 			size: 2.0d
+			subtitle: "{quests.4E39A32FAA011FF5.st}"
 			tasks: [{
 				id: "79E2F0E9233F4A86"
 				item: "sophisticatedbackpacks:backpack"
@@ -4620,8 +4780,10 @@
 				"593CC9165759B714"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.51A6F6EC85D7CDF7.d1}"]
 			id: "51A6F6EC85D7CDF7"
 			size: 2.0d
+			subtitle: "{quests.51A6F6EC85D7CDF7.st}"
 			tasks: [{
 				id: "33B3C1F3663F5694"
 				item: "tfc:bellows"
@@ -4634,7 +4796,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "0A6AADCDD2A635EC"
-			subtitle: "Kill the spiders!"
+			subtitle: "{quests.0A6AADCDD2A635EC.st}"
 			tasks: [{
 				id: "6218E98E7B9F86B6"
 				item: "minecraft:string"
@@ -4645,28 +4807,13 @@
 		}
 		{
 			dependencies: [
-				"314212B496B2D3C3"
-				"665BC6BB76CE0EA3"
-			]
-			dependency_requirement: "one_completed"
-			hide_dependency_lines: true
-			id: "706F66F81DDEAA2D"
-			tasks: [{
-				id: "59433C4042267637"
-				item: "minecraft:painting"
-				type: "item"
-			}]
-			x: 21.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
 				"42FD437930CA74C7"
 				"593CC9165759B714"
 			]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
 			id: "61C41D648B6BD1B1"
+			subtitle: "{quests.61C41D648B6BD1B1.st}"
 			tasks: [{
 				id: "154A263744D9BD15"
 				item: "minecraft:item_frame"
@@ -4682,6 +4829,7 @@
 			]
 			hide_dependency_lines: true
 			id: "3D3508CB85E24741"
+			subtitle: "{quests.3D3508CB85E24741.st}"
 			tasks: [{
 				id: "1305D6C4E52B055B"
 				item: {
@@ -4702,6 +4850,7 @@
 		{
 			dependencies: ["3D3508CB85E24741"]
 			id: "219306E39AD47499"
+			subtitle: "{quests.219306E39AD47499.st}"
 			tasks: [{
 				id: "74EB9E449D473FC9"
 				item: {
@@ -4722,6 +4871,7 @@
 		{
 			dependencies: ["3D3508CB85E24741"]
 			id: "146B900F623869B5"
+			subtitle: "{quests.146B900F623869B5.st}"
 			tasks: [{
 				id: "54A97AF79AA8E551"
 				item: {
@@ -4742,6 +4892,7 @@
 		{
 			dependencies: ["3D3508CB85E24741"]
 			id: "671C2E5239C4E644"
+			subtitle: "{quests.671C2E5239C4E644.st}"
 			tasks: [{
 				id: "575BC984BA6ED21C"
 				item: {
@@ -4801,6 +4952,7 @@
 		}
 		{
 			dependencies: ["1A28C8439C0DEC68"]
+			description: ["{quests.2E3834B5FA53CC37.d1}"]
 			id: "2E3834B5FA53CC37"
 			tasks: [{
 				id: "487D2E3A7B940B10"
@@ -4812,6 +4964,7 @@
 		}
 		{
 			dependencies: ["5773060592E254AF"]
+			description: ["{quests.4BCDA03CE74059FA.d1}"]
 			id: "4BCDA03CE74059FA"
 			tasks: [{
 				id: "4A483474864ADD17"
@@ -5002,41 +5155,17 @@
 		}
 		{
 			dependencies: ["32895F66C7A66088"]
-			description: [
-				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
-				""
-				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
-				"{@pagebreak}"
-				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
-				""
-				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
-				"...and..."
-				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
-				"...AND..."
-				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
-				"{@pagebreak}"
-				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
-				""
-				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
-				""
-				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
-				""
-				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
-				""
-				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
-				""
-				"Make &eone&r of the proposed HP machines to complete this quest."
-			]
+			description: ["{quests.3FB3EE093DDC6B56.d1}"]
 			id: "3FB3EE093DDC6B56"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Putting the Steam in Steam Age"
+			subtitle: "{quests.3FB3EE093DDC6B56.st}"
 			tasks: [{
-				id: "4DCB027DEC293E72"
-				item: "gtceu:bronze_brick_casing"
+				id: "68FBB47D46D288DE"
+				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
-			title: "Pressure Cookin'"
+			title: "{quests.3FB3EE093DDC6B56.t}"
 			x: 18.5d
 			y: 24.0d
 		}
@@ -5063,7 +5192,9 @@
 		}
 		{
 			dependencies: ["6E24ECF6CEE950D1"]
+			description: [""]
 			id: "517EFADD8F22717F"
+			subtitle: "{quests.517EFADD8F22717F.st}"
 			tasks: [{
 				id: "223513705634C41C"
 				item: "tfc:glue"
@@ -5074,7 +5205,9 @@
 		}
 		{
 			dependencies: ["095104BA3C842978"]
+			description: ["{quests.4718D375758B9219.d1}"]
 			id: "4718D375758B9219"
+			subtitle: "{quests.4718D375758B9219.st}"
 			tasks: [{
 				id: "37312BCB967DE348"
 				item: {
@@ -5086,12 +5219,15 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.4718D375758B9219.t}"
 			x: 20.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
+			description: ["{quests.23510E30D813C549.d1}"]
 			id: "23510E30D813C549"
+			subtitle: "{quests.23510E30D813C549.st}"
 			tasks: [{
 				id: "09C1DBDEB5A47AB8"
 				item: {
@@ -5111,6 +5247,7 @@
 			dependencies: ["4F5C883CC5282151"]
 			id: "2A3FEA1A48B598D1"
 			size: 1.5d
+			subtitle: "{quests.2A3FEA1A48B598D1.st}"
 			tasks: [{
 				id: "616E6313036EF00C"
 				item: "framedblocks:framed_cube"
@@ -5217,6 +5354,38 @@
 			x: 24.5d
 			y: 24.0d
 		}
+		{
+			description: ["{quests.706F66F81DDEAA2D.d1}"]
+			id: "62AD2F814C034B5A"
+			subtitle: "{quests.706F66F81DDEAA2D.st}"
+			tasks: [{
+				id: "42CA7B27895DD650"
+				item: "minecraft:painting"
+				type: "item"
+			}]
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4307F49F7BE46863"
+				"32EFAF9DD97AC387"
+			]
+			description: ["{quests.26D532676AAFE17B.d1}"]
+			id: "26D532676AAFE17B"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.26D532676AAFE17B.st}"
+			tasks: [{
+				id: "540F6441340EFCC2"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			title: "{quests.26D532676AAFE17B.t}"
+			x: 43.66071428571429d
+			y: 13.017857142857139d
+		}
 	]
-	title: "Primitive Age"
+	subtitle: ["{quests.092E486344CB830A.st}"]
+	title: "{quests.092E486344CB830A.t}"
 }
