@@ -96,9 +96,10 @@
 	empty-search-sidebar-focus: none;
 
 	/**
-	 * The amount of vertical margin to give in the recipe screen.
+	 * The maximum height the recipe screen will grow to be if space is available in
+	 * pixels.
 	 */
-	vertical-margin: 20;
+	maximum-recipe-screen-height: 256;
 
 	/**
 	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
@@ -106,6 +107,11 @@
 	 * of most screens.
 	 */
 	minimum-recipe-screen-width: 176;
+
+	/**
+	 * The amount of vertical margin to give in the recipe screen.
+	 */
+	vertical-margin: 20;
 
 	/**
 	 * Where to show workstations in the recipe screen
