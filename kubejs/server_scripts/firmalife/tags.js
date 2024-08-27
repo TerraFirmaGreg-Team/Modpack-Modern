@@ -32,10 +32,16 @@ const registerFirmaLifeFluidTags = (event) => {
     
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
-    event.add('c:hidden_from_recipe_viewers', 'create:honey')
 }
 
 const registerFirmaLifePlacedFeatures = (event) => {
-    event.remove('tfc:in_biome/veins', 'firmalife:vein/normal_chromite')
-    event.remove('tfc:in_biome/veins', 'firmalife:vein/deep_chromite')
+    const ALL_DISABLED_FIRMALIFE_VEINS = [
+        'firmalife:vein/normal_chromite',
+        'firmalife:vein/deep_chromite'
+    ]
+
+    // Удаление
+    ALL_DISABLED_FIRMALIFE_VEINS.forEach(vein => {
+        event.remove('tfc:in_biome/veins', vein)
+    })
 }
