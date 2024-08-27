@@ -2,11 +2,11 @@
 
 const registerGTCEULoots = (event) => {
     
-    global.TFC_STONE_TYPES.forEach(stoneType => {
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
             if (material.hasProperty(PropertyKey.ORE)) {
                 
-                let stoneTypeMaterial = TFGHelpers.getMaterial(stoneType)
+                let stoneTypeMaterial = TFGHelpers.getMaterial(stoneTypeName)
                 let stoneTypeDust = null
 
                 if (stoneTypeMaterial != null) stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
@@ -17,7 +17,7 @@ const registerGTCEULoots = (event) => {
 
                 let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material, 1)
 
-                let blockName = `gtceu:${stoneType}_${material.getName()}_ore`
+                let blockName = `gtceu:${stoneTypeName}_${material.getName()}_ore`
 
                 if (!richRawOre.isEmpty() && !normalRawOre.isEmpty() && !poorRawOre.isEmpty()) {
                     
