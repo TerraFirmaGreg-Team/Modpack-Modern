@@ -1252,6 +1252,13 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    event.recipes.gtceu.fluid_solidifier('tfg:latex_heating')             
+        .itemInputs('gtceu:sulfur_dust')
+        .inputFluids(Fluid.of('tfg:latex', 1000))
+        .itemOutputs('gtceu:sticky_resin')
+        .duration(480)
+        .EUt(7)
+
 
     //#region Рецепты, которые итерируются по всем материалам
 
