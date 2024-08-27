@@ -1,8 +1,8 @@
 // priority: 0
 
 const registerTFCItemTags = (event) => {
-    // Теги для соответствия инструментов TFC и GT
     
+    // Теги для соответствия инструментов TFC и GT
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         if (material.hasProperty(PropertyKey.TOOL)) {
             for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
@@ -30,6 +30,9 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/drills')
     
+    // Удаление у всех powders тэга dusts
+    event.remove('forge:dusts', '#tfc:powders')
+
     // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')
     event.add('tfc:pileable_sheets', '#forge:plates')
@@ -228,9 +231,13 @@ const registerTFCBlockTags = (event) => {
     event.add('tfc:can_start_collapse', '#forge:ores')
     event.add('tfc:can_trigger_collapse', '#forge:ores')
     
+    // Разрешить спавн мобов на руде
     event.add('tfc:monster_spawns_on', '#forge:ores')
+    
+    // Разрешить проспекторам тфк находить любые руды
     event.add('tfc:prospectable', '#forge:ores')
 
+    // Разрешить отливать стекло в кастомных блоках
     event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
     event.add('tfc:glass_pouring_table', 'gtceu:brass_block')
 
@@ -369,96 +376,88 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/unknown')
 }
 
-const registerTFCPlacedFeatures = (event) => {
-    
-    // Удаление
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_copper')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_malachite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_tetrahedrite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_malachite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_tetrahedrite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/rich_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/fake_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_silver')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_native_silver')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_cassiterite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_bismuthinite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_bismuthinite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_sphalerite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_sphalerite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_hematite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_magnetite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_limonite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_garnierite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/gabbro_garnierite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/graphite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/lignite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/bituminous_coal')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/sulfur')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/cryolite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/cinnabar')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/saltpeter')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/sylvite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/borax')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/gypsum')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/halite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/lapis_lazuli')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/diamond')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/emerald')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/amethyst')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/opal')
-    event.remove('tfc:in_biome/veins', 'tfc:geode')
+const registerTFCBiomeTags = (event) => {
+    const ALL_TFC_BIOMES = [
+        "tfc:badlands",
+        "tfc:canyons",
+        "tfc:deep_ocean",
+        "tfc:deep_ocean_trench",
+        "tfc:highlands",
+        "tfc:hills",
+        "tfc:inverted_badlands",
+        "tfc:lake",
+        "tfc:low_canyons",
+        "tfc:lowlands",
+        "tfc:mountain_lake",
+        "tfc:mountains",
+        "tfc:ocean",
+        "tfc:ocean_reef",
+        "tfc:oceanic_mountain_lake",
+        "tfc:oceanic_mountains",
+        "tfc:old_mountain_lake",
+        "tfc:old_mountains",
+        "tfc:plains",
+        "tfc:plateau",
+        "tfc:plateau_lake",
+        "tfc:river",
+        "tfc:rolling_hills",
+        "tfc:salt_marsh",
+        "tfc:shore",
+        "tfc:tidal_flats",
+        "tfc:volcanic_mountain_lake",
+        "tfc:volcanic_mountains",
+        "tfc:volcanic_oceanic_mountain_lake",
+        "tfc:volcanic_oceanic_mountains"
+    ]
 
     // Добавление
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_amethyst')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_opal')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_gold')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_hematite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_limonite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_magnetite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_molybdenum')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_naquadah')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_pitchblende')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_sapphire')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_scheelite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_sheldonite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_topaz')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_apatite_')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_basaltic_sands')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_bauxite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_beryllium')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_bismuthinite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_cassiterite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_certus_quartz')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_coal')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_copper')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_garnet_tin')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_garnierite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_gold')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_graphite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_hematite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_spodumene')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oil_sands')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_lapis')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_limonite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_lubricant')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_magnetite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_manganese')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_mica')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_monazite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_olivine')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_redstone')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_salt')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_saltpeter')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_silver')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sphalerite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sulfur')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_tetrahedrite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_bismuthinite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_cassiterite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_copper')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_sphalerite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_tetrahedrite')
-    event.add('tfc:in_biome/veins', 'tfg:geode')
+    ALL_TFC_BIOMES.forEach(biome => {
+        event.add('tfg:is_tfc_overworld', biome)
+    })
+}
+
+const registerTFCPlacedFeatures = (event) => {
+    const ALL_DISABLED_TFC_VEINS = [
+        'tfc:vein/surface_native_copper',
+        'tfc:vein/surface_malachite',
+        'tfc:vein/surface_tetrahedrite',
+        'tfc:vein/normal_malachite',
+        'tfc:vein/normal_tetrahedrite',
+        'tfc:vein/normal_native_gold',
+        'tfc:vein/rich_native_gold',
+        'tfc:vein/fake_native_gold',
+        'tfc:vein/surface_native_silver',
+        'tfc:vein/normal_native_silver',
+        'tfc:vein/surface_cassiterite',
+        'tfc:vein/surface_bismuthinite',
+        'tfc:vein/normal_bismuthinite',
+        'tfc:vein/surface_sphalerite',
+        'tfc:vein/normal_sphalerite',
+        'tfc:vein/surface_hematite',
+        'tfc:vein/surface_magnetite',
+        'tfc:vein/surface_limonite',
+        'tfc:vein/normal_garnierite',
+        'tfc:vein/gabbro_garnierite',
+        'tfc:vein/graphite',
+        'tfc:vein/lignite',
+        'tfc:vein/bituminous_coal',
+        'tfc:vein/sulfur',
+        'tfc:vein/cryolite',
+        'tfc:vein/cinnabar',
+        'tfc:vein/saltpeter',
+        'tfc:vein/sylvite',
+        'tfc:vein/borax',
+        'tfc:vein/gypsum',
+        'tfc:vein/halite',
+        'tfc:vein/lapis_lazuli',
+        'tfc:vein/diamond',
+        'tfc:vein/emerald',
+        'tfc:vein/amethyst',
+        'tfc:vein/opal'
+    ]
+
+    // Удаление
+    ALL_DISABLED_TFC_VEINS.forEach(vein => {
+        event.remove('tfc:in_biome/veins', vein)
+    })
 }
