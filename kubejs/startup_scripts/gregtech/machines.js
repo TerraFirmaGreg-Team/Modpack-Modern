@@ -29,7 +29,7 @@ const registerGregTechMachines = (event) => {
     // Регистрация мультиблока (хз как перевести, короче конвертит энергию физическую в энергию электрическую)
     event.create('alternator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('basic_alternator')
+        .recipeType('alternator')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
