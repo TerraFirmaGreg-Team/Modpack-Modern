@@ -15,7 +15,7 @@ ServerEvents.tags('item', event => {
     // registerFirmaLifeItemTags(event)
     // registerFramedBlocksItemTags(event)
     // registerFTBQuestsItemTags(event)
-    // registerGTCEUItemTags(event)
+    // registerGregTechItemTags(event)
     // registerMegaCellsItemTags(event)
     // registerMinecraftItemTags(event)
     // registerMoreRedItemTags(event)
@@ -40,7 +40,7 @@ ServerEvents.tags('block', event => {
     // registerFirmaLifeBlockTags(event)
     // registerFramedBlocksBlockTags(event)
     // registerFTBQuestsBlockTags(event)
-    // registerGTCEUBlockTags(event)
+    // registerGregTechBlockTags(event)
     // registerMegaCellsBlockTags(event)
     // registerMinecraftBlockTags(event)
     // registerMoreRedBlockTags(event)
@@ -61,7 +61,7 @@ ServerEvents.tags('fluid', event => {
 })
 
 /**
- * Событие регистрации тегов биомов.
+ * Событие регистрации биом-тегов.
  */
 ServerEvents.tags('worldgen/biome', event => {
     registerTFCBiomeTags(event)
@@ -80,7 +80,7 @@ ServerEvents.tags('worldgen/placed_feature', event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 ServerEvents.highPriorityData(event => {
-    // registerComputerCraftData(event)
+    registerComputerCraftData(event)
 })
 
 /**
@@ -88,19 +88,11 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
-    // registerTFCDataForGTCEU(event)
-    // registerTFCDataForTFC(event)
-    // registerTFCDataForTreeTap(event)
-    // registerTFCDataForWaterFlasks(event)
+    registerTFCDataForGregTech(event)
+    registerTFCDataForTFC(event)
+    registerTFCDataForTreeTap(event)
+    registerTFCDataForWaterFlasks(event)
 })
-
-/**
- * Событие регистрации лут-тейблов.
- * Срабатывает до инициализации рецептов, но после датапаков и тегов.
- */
-LootJS.modifiers((event) => {
-    registerGTCEULoots(event)
-});
 
 /**
  * Событие регистрации рецептов.
@@ -124,7 +116,7 @@ ServerEvents.recipes(event => {
     // registerFirmaLifeRecipes(event)
     // registerFramedBlocksRecipes(event)
     // registerFTBQuestsRecipes(event)
-    // registerGTCEURecipes(event)
+    // registerGregTechRecipes(event)
     // registerHandGliderRecipes(event)
     // registerHotOrNotRecipes(event)
     // registerMegaCellsRecipes(event)
@@ -142,15 +134,24 @@ ServerEvents.recipes(event => {
 })
 
 /**
- * Событие регистрации рудных жил GTM.
+ * Событие регистрации лут-тейблов.
+ * Срабатывает до инициализации рецептов, но после датапаков и тегов.
+ */
+LootJS.modifiers((event) => {
+    registerGregTechLoots(event)
+})
+
+
+/**
+ * Событие регистрации рудных жил GregTech.
 */
 GTCEuServerEvents.oreVeins(event => {
-    registerGTMOreVeins(event)
+    registerGregTechOreVeins(event)
 })
 
 /**
- * Событие регистрации жидкостных жил GTM.
+ * Событие регистрации жидкостных жил GregTech.
 */
 GTCEuServerEvents.fluidVeins(event => {
-    registerGTMFluidVeins(event)
+    registerGregTechFluidVeins(event)
 })

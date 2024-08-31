@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerGTCEUItemTags = (event) => {
+const registerGregTechItemTags = (event) => {
     
     // Удаление тегов у отключенных предметов
     global.GTCEU_DISABLED_ITEMS.forEach(item => {

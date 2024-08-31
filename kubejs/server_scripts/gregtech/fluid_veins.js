@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerGTMFluidVeins = (event) => {
+const registerGregTechFluidVeins = (event) => {
 
     event.add('tfg:fresh_water', vein => {
         vein.dimensions('minecraft:overworld')

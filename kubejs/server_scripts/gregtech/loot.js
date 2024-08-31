@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerGTCEULoots = (event) => {
+const registerGregTechLoots = (event) => {
     
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         GTMaterialRegistry.getRegisteredMaterials().forEach(material => {

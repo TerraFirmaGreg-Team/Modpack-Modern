@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerGTCEURecipes = (event) => {
+const registerGregTechRecipes = (event) => {
     //#region Выход: Удобрение
 
     // В обычном миксере
