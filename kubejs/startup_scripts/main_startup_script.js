@@ -10,18 +10,12 @@ StartupEvents.registry('item', event => {
 /**
  * Событие регистрации блоков.
  */
-StartupEvents.registry('block', event => {
-    // registerGTCEuBlocks(event)
-
-    
-})
+StartupEvents.registry('block', event => {})
 
 /**
  * Событие изменения блоков.
  */
-BlockEvents.modification(event => {
-    // modifyFirmaCivBlocks(event)
-})
+BlockEvents.modification(event => {})
 
 /**
  * Событие изменения предметов.
