@@ -1,7 +1,11 @@
 // priority: 0
 
-const registerGTMWorldGenLayers = (event) => {
+const registerGregTechWorldGenLayers = (event) => {
     
+    // Здесь куча конченных переменных. Почему? 
+    // А потому что мы не можем использовать у руды несколько слоев для гена и з-за этого приходится говнить. 
+    // Спасибо разрабам.
+
     const ALL = ['#tfc:rock/raw']
     
     const IE = [

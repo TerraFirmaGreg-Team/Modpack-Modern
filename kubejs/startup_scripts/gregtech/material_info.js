@@ -1,6 +1,6 @@
 // priority: 0
 
-const registerGTCEuMaterialInfo = (event) => {
+const registerGregTechMaterialInfo = (event) => {
     //#region Дерево
 
     global.VANILLA_WOOD_TYPES.forEach(woodType => {
