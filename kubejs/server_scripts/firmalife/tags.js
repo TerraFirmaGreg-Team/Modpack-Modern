@@ -26,6 +26,9 @@ const registerFirmaLifeBlockTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+    // Для того, чтобы стенками greenhouse могли быть фреймы грега (для передачи воды)
+    event.add('tfc:always_valid_greenhouse_wall', '#forge:frames')
 }
 
 const registerFirmaLifeFluidTags = (event) => {
