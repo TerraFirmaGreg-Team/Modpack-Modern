@@ -1,6 +1,28 @@
 // priority: 0
 
 const registerTFCItemTags = (event) => {
+    //#region Удаление тегов и скрытие руд TFC
+    const ALL_TFC_ORES = Ingredient.of(/tfc:ore\/[^*]+\/[^*]+/).itemIds
+
+    ALL_TFC_ORES.forEach(element => {
+        event.removeAllTagsFrom(element)
+        event.add('c:hidden_from_recipe_viewers', element)
+    })
+    //#endregion
+}
+
+const registerTFCBlockTags = (event) => {
+    //#region Удаление тегов и скрытие руд TFC
+    const allTFCOres = Ingredient.of(/tfc:ore\/[^*]+\/[^*]+/).itemIds
+
+    allTFCOres.forEach(element => {
+        event.removeAllTagsFrom(element)
+        event.add('c:hidden_from_recipe_viewers', element)
+    })
+    //#endregion
+}
+
+const registerTFCItemTags1 = (event) => {
     
     // Теги для соответствия инструментов TFC и GT
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
@@ -198,7 +220,7 @@ const registerTFCItemTags = (event) => {
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
 
-const registerTFCBlockTags = (event) => {
+const registerTFCBlockTags1 = (event) => {
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
