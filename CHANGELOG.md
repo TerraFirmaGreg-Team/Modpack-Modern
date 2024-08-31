@@ -1,4 +1,28 @@
 # Changelog
+## [0.8.0] - ??
+### TODO
+
+### Changes
+- Replaced TFC ore gen with GT oregen.
+- Fixed most of bad langs from TFG-Core.
+- Fixed compat for firmaciv 1.0.+.
+- Disabled HotOrNot.
+- Moved some textures from TFG-Core to KJS.
+- Moved 90% of recipes from TFG-Core to KJS.
+- Added custom biome tag for all TFC biomes (used for oregen).
+- Proper way to remove #dusts tag from TFC powders.
+- Enabled HighTier machines from GTM (but without circuit recipes).
+- Moved some custom items from TFG-Core to KJS (like molds and etc).
+- Make ores spawn inside grid with 5x5 sized with 32block offset (was 3x3 with 16).
+- Now nether availiable to research (dig ores, drink lava, kill pigmens, what?).
+- Small changes for loottables for nether.
+- You can now fill sprinkler(firmalife greenhouse) from any fluid source (example: GT pipes).
+- Unlocked steel steam machines (again, yes).
+- Added translation for ru_ru inside TFG-Core.
+- Fixed alternator multiblock (now works fine).
+- ...
+### Updated mods
+- ??
 
 ## [0.7.13] - 01.10.2024
 ### Changes
