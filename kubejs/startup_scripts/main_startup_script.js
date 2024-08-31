@@ -4,7 +4,7 @@
  * Событие регистрации предметов.
  */
 StartupEvents.registry('item', event => {
-    // registerGTCEuItems(event)
+    registerGTCEuItems(event)
 })
 
 /**

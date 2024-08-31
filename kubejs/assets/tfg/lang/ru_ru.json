@@ -1,4 +1,28 @@
 {
+    "item.tfg.mining_hammer_head_extruder_mold": "Форма экструдера (Оголовье шахтерского молота)",
+    "item.tfg.sword_head_extruder_mold": "Форма экструдера (Оголовье меча)",
+    "item.tfg.pickaxe_head_extruder_mold": "Форма экструдера (Оголовье кирки)",
+    "item.tfg.shovel_head_extruder_mold": "Форма экструдера (Оголовье лопаты)",
+    "item.tfg.axe_head_extruder_mold": "Форма экструдера (Оголовье топора)",
+    "item.tfg.hoe_head_extruder_mold": "Форма экструдера (Оголовье мотыги)",
+    "item.tfg.scythe_head_extruder_mold": "Форма экструдера (Оголовье косы)",
+    "item.tfg.file_head_extruder_mold": "Форма экструдера (Оголовье напильника)",
+    "item.tfg.hammer_head_extruder_mold": "Форма экструдера (Оголовье кувалды)",
+    "item.tfg.saw_head_extruder_mold": "Форма экструдера (Оголовье пилы)",
+    "item.tfg.knife_head_extruder_mold": "Форма экструдера (Оголовье меча)",
+    "item.tfg.butchery_knife_head_extruder_mold": "Форма экструдера (Оголовье тесака)",
+    "item.tfg.propick_head_extruder_mold": "Форма экструдера (Оголовье геологической кирки)",
+    "item.tfg.javelin_head_extruder_mold": "Форма экструдера (Оголовье копья)",
+    "item.tfg.chisel_head_extruder_mold": "Форма экструдера (Оголовье стамески)",
+    "item.tfg.mace_head_extruder_mold": "Форма экструдера (Оголовье биты)",
+
+    "item.tfg.lamp_casting_mold": "Отливная форма (Лампа)",
+    "item.tfg.trapdoor_casting_mold": "Отливная форма (Люк)",
+    "item.tfg.chain_casting_mold": "Отливная форма (Цепь)",
+    "item.tfg.bell_casting_mold": "Отливная форма (Колокол)",
+
+    "quests.placeholder.delimiter": "=== QUEST SECTION ===",
+    
     "quests.naming-1": "t - Заголовок",
     "quests.naming-2": "st - Подзаголовок",
     "quests.naming-3": "d* - Описание, где * номер описания, например: d1, d2, d3, d4...",
