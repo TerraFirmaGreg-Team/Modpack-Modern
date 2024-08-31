@@ -812,7 +812,7 @@ const registerGregTechRecipes1 = (event) => {
         B: 'gtceu:zpm_electric_piston',
         C: '#gtceu:circuits/zpm',
         D: 'gtceu:zpm_machine_hull',
-        E: '#tfc:red_or_blue_anvil',
+        E: '#tfg:tier_6_anvil',
     }).id('gtceu:shaped/zpm_forge_hammer')
 
     event.shaped('gtceu:uv_forge_hammer', [
@@ -824,7 +824,7 @@ const registerGregTechRecipes1 = (event) => {
         B: 'gtceu:uv_electric_piston',
         C: '#gtceu:circuits/uv',
         D: 'gtceu:uv_machine_hull',
-        E: '#tfc:red_or_blue_anvil',
+        E: '#tfg:tier_6_anvil',
     }).id('gtceu:shaped/uv_forge_hammer')
 
     //#endregion

@@ -4,7 +4,7 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
-    // registerAE2ItemTags(event)
+    registerAE2ItemTags(event)
     // registerAsticorCartsItemTags(event)
     // registerChiselAndBitsItemTags(event)
     // registerComputerCraftItemTags(event)
@@ -15,7 +15,7 @@ ServerEvents.tags('item', event => {
     registerFirmaLifeItemTags(event)
     // registerFramedBlocksItemTags(event)
     // registerFTBQuestsItemTags(event)
-    // registerGregTechItemTags(event)
+    registerGregTechItemTags(event)
     // registerMegaCellsItemTags(event)
     // registerMinecraftItemTags(event)
     // registerMoreRedItemTags(event)
@@ -40,7 +40,7 @@ ServerEvents.tags('block', event => {
     registerFirmaLifeBlockTags(event)
     // registerFramedBlocksBlockTags(event)
     // registerFTBQuestsBlockTags(event)
-    // registerGregTechBlockTags(event)
+    registerGregTechBlockTags(event)
     // registerMegaCellsBlockTags(event)
     // registerMinecraftBlockTags(event)
     // registerMoreRedBlockTags(event)
@@ -57,7 +57,7 @@ ServerEvents.tags('fluid', event => {
     // registerCreateFluidTags(event)
     // registerCreateAdditionsFluidTags(event)
     registerFirmaLifeBlockTags(event)
-    // registerTFCFluidTags(event)
+    registerTFCFluidTags(event)
 })
 
 /**
