@@ -12,7 +12,7 @@ ServerEvents.tags('item', event => {
     // registerCreateAdditionsItemTags(event)
     // registerExtendedAE2ItemTags(event)
     // registerFirmaCivItemTags(event)
-    // registerFirmaLifeItemTags(event)
+    registerFirmaLifeItemTags(event)
     // registerFramedBlocksItemTags(event)
     // registerFTBQuestsItemTags(event)
     // registerGregTechItemTags(event)
@@ -22,7 +22,7 @@ ServerEvents.tags('item', event => {
     // registerHotOrNotItemTags(event)
     // registerRailWaysItemTags(event)
     // registerSophisticatedBackpacksItemTags(event)
-    // registerTFCItemTags(event)
+    registerTFCItemTags(event)
 })
 
 /**
@@ -37,7 +37,7 @@ ServerEvents.tags('block', event => {
     // registerCreateAdditionsBlockTags(event)
     // registerExtendedAE2BlockTags(event)
     // registerFirmaCivBlockTags(event)
-    // registerFirmaLifeBlockTags(event)
+    registerFirmaLifeBlockTags(event)
     // registerFramedBlocksBlockTags(event)
     // registerFTBQuestsBlockTags(event)
     // registerGregTechBlockTags(event)
@@ -47,7 +47,7 @@ ServerEvents.tags('block', event => {
     // registerHotOrNotBlockTags(event)
     // registerRailWaysBlockTags(event)
     // registerSophisticatedBackpacksBlockTags(event)
-    // registerTFCBlockTags(event)
+    registerTFCBlockTags(event)
 })
 
 /**
@@ -56,7 +56,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('fluid', event => {
     // registerCreateFluidTags(event)
     // registerCreateAdditionsFluidTags(event)
-    // registerFirmaLifeBlockTags(event)
+    registerFirmaLifeBlockTags(event)
     // registerTFCFluidTags(event)
 })
 
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     // registerFirmaLifeRecipes(event)
     // registerFramedBlocksRecipes(event)
     // registerFTBQuestsRecipes(event)
-    // registerGregTechRecipes(event)
+    registerGregTechRecipes(event)
     // registerHandGliderRecipes(event)
     // registerHotOrNotRecipes(event)
     // registerMegaCellsRecipes(event)
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
     // registerRailWaysRecipes(event)
     // registerSophisticatedBackpacksRecipes(event)
     // registerTfceaRecipes(event)
-    // registerTFCRecipes(event)
+    registerTFCRecipes(event)
     // registerTFCGroomingStationRecipes(event)
     // registerToolBeltRecipes(event)
     // registerTreeTapRecipes(event)
@@ -140,7 +140,6 @@ ServerEvents.recipes(event => {
 LootJS.modifiers((event) => {
     registerGregTechLoots(event)
 })
-
 
 /**
  * Событие регистрации рудных жил GregTech.

@@ -20,6 +20,12 @@
 - Unlocked steel steam machines (again, yes).
 - Added translation for ru_ru inside TFG-Core.
 - Fixed alternator multiblock (now works fine).
+- Return raw ore blocks from GregTech.
+- True way to remove TFC ores from EMI.
+- True way to remove Firmelife ores from EMI.
+- True way to hide AE2 facades.
+- True way to hide chisel and bits bits, yes.
+- Fix double removing honey liquid from EMI.
 - ...
 ### Updated mods
 - ??

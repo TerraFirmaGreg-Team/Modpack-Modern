@@ -2,49 +2,66 @@
 
 const registerFirmaLifeItemTags = (event) => {
     
-    // Удаление тегов у отключенных предметов
+    //#region Удаление тегов и скрытие руд
+    const ALL_FIRMALIFE_ORES = Ingredient.of(/firmalife:ore\/[^*]+\/[^*]+/).itemIds
+
+    ALL_FIRMALIFE_ORES.forEach(element => {
+        event.removeAllTagsFrom(element)
+        event.add('c:hidden_from_recipe_viewers', element)
+    })
+    //#endregion
+
+    //#region Удаление тегов и скрытие предметов
     global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
         event.add('c:hidden_from_recipe_viewers', item)
     })
+    //#endregion
 
-    // Просто предметы для скрытия
+    //#region Скрытие предметов
     global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+    //#endregion
 }
 
 const registerFirmaLifeBlockTags = (event) => {
     
-    // Удаление тегов у отключенных предметов
+    //#region Удаление тегов и скрытие руд
+    const ALL_FIRMALIFE_ORES = Ingredient.of(/firmalife:ore\/[^*]+\/[^*]+/).itemIds
+
+    ALL_FIRMALIFE_ORES.forEach(element => {
+        event.removeAllTagsFrom(element)
+        event.add('c:hidden_from_recipe_viewers', element)
+    })
+    //#endregion
+
+    //#region Удаление тегов и скрытие предметов
     global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
+        event.add('c:hidden_from_recipe_viewers', item)
     })
-
-    // Удаление тегов у руд
-    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+    //#endregion
 
     // Для того, чтобы стенками greenhouse могли быть фреймы грега (для передачи воды)
-    event.add('tfc:always_valid_greenhouse_wall', '#forge:frames')
+    event.add('firmalife:always_valid_greenhouse_wall', '#forge:frames')
 }
 
 const registerFirmaLifeFluidTags = (event) => {
     
-    // Добавляем тег для скрытия в EMI
+    //#region Скрытие магического хрома
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
+    //#endregion
 }
 
 const registerFirmaLifePlacedFeatures = (event) => {
+    
+    //#region Удаление из генерации жил
     const ALL_DISABLED_FIRMALIFE_VEINS = [
         'firmalife:vein/normal_chromite',
         'firmalife:vein/deep_chromite'
     ]
 
-    // Удаление
-    ALL_DISABLED_FIRMALIFE_VEINS.forEach(vein => {
-        event.remove('tfc:in_biome/veins', vein)
-    })
+    ALL_DISABLED_FIRMALIFE_VEINS.forEach(vein => event.remove('tfc:in_biome/veins', vein))
+    //#endregion
 }

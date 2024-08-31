@@ -1,6 +1,10 @@
 // priority: 0
 
 const registerTFCRecipes = (event) => {
+
+}
+
+const registerTFCRecipes1 = (event) => {
     //return; TODO тут баг
     //#region Металлы
     
@@ -3310,3 +3314,55 @@ const registerTFCRecipes = (event) => {
     
     //#endregion
 }
+
+// {
+//     "category": "minecraft:campfire_cooking"
+// },
+// {
+//     "category": "minecraft:brewing"
+// },
+// {
+//     "category": "minecraft:stonecutting"
+// },
+// {
+//     "category": "emi:anvil_repairing"
+// },
+// {
+//     "category": "emi:world_interaction"
+// },
+// {
+//     "category": "gtceu:primitive_blast_furnace"
+// },
+// {
+//     "category": "create:mystery_conversion"
+// },
+// {
+//     "category": "jumbofurnace:jumbo_furnace_upgrade"
+// },
+// {
+//     "category": "jumbofurnace:jumbo_smelting"
+// },
+// {
+//     "category": "emi:composting"
+// },
+// {
+//     "category": "emi:fuel"
+// },
+// {
+//     "id": "/emi:/crafting/repairing/[^*]+/"
+// },
+// {
+//     "id": "/emi:/grindstone/repairing/minecraft/[^*]+/"
+// },
+// {
+//     "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
+// },
+// {
+//     "id": "/create:create.toolbox.color.block.create.[^*]+/"
+// },
+// {
+//     "id": "/sophisticatedbackpacks:single_color_[^*]+/"
+// },
+// {
+//     "id": "sophisticatedbackpacks:multiple_colors"
+// }
