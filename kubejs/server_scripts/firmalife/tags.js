@@ -43,8 +43,9 @@ const registerFirmaLifeBlockTags = (event) => {
     })
     //#endregion
 
-    // Для того, чтобы стенками greenhouse могли быть фреймы грега (для передачи воды)
+    //#region Для того, чтобы стенками greenhouse могли быть фреймы грега (для передачи воды)
     event.add('firmalife:always_valid_greenhouse_wall', '#forge:frames')
+    //#endregion
 }
 
 const registerFirmaLifeFluidTags = (event) => {
