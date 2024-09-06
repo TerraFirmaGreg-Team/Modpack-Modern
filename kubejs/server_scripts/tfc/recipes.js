@@ -9,7 +9,7 @@ const registerTFCRecipes = (event) => {
     //#endregion
     
     //#region Крафты и раскрафты металлических предметов
-    const getFluidTankNBT = (material, amount) => {
+    const getFluidTankAsNBT = (material, amount) => {
         return {
             tank: {
                 FluidName: Fluid.of(material.getFluid()).getId(),
@@ -43,7 +43,7 @@ const registerTFCRecipes = (event) => {
             .id(`tfc:casting/${material.getName()}_fire_ingot`)
 
         event.recipes.create.filling(
-            Item.of('tfc:ceramic/ingot_mold', getFluidTankNBT(outputMaterial, 144)), 
+            Item.of('tfc:ceramic/ingot_mold', getFluidTankAsNBT(outputMaterial, 144)), 
             [
                 Fluid.of(outputMaterial.getFluid(), 144), 
                 Item.of('tfc:ceramic/ingot_mold').strongNBT()
@@ -51,7 +51,7 @@ const registerTFCRecipes = (event) => {
         ).id(`tfg:tfc/filling/${material.getName()}_ingot`)
 
         event.recipes.create.filling(
-            Item.of('tfc:ceramic/fire_ingot_mold', getFluidTankNBT(outputMaterial, 144)), 
+            Item.of('tfc:ceramic/fire_ingot_mold', getFluidTankAsNBT(outputMaterial, 144)), 
             [
                 Fluid.of(outputMaterial.getFluid(), 144), 
                 Item.of('tfc:ceramic/fire_ingot_mold').strongNBT()
@@ -124,75 +124,999 @@ const registerTFCRecipes = (event) => {
             .id(`tfc:welding/${material.getName()}_double_sheet`)
     }
 
-    const processTFCMetalBlocks = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const platedBlock = ChemicalHelper.get(tagPrefix, material, 1)
-        if (platedBlock.isEmpty()) return
-
-        // Декрафт
-        event.recipes.tfc.heating(platedBlock, tfcProperty.getMeltTemp())
+    const processRods = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const rodItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (rodItem.isEmpty()) return
+        
+        // Декрафт стержня в жидкость
+        event.recipes.tfc.heating(rodItem, tfcProperty.getMeltTemp())
             .resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+            .id(`tfc:heating/metal/${material.getName()}_rod`)
+
+        // Слиток -> 2 Стержня
+        event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['bend_last', 'draw_second_last', 'draw_third_last'])
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_rod`)
+    }
+
+    const processLongRods = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const longRodItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (longRodItem.isEmpty()) return
+
+        // Декрафт длинного стержня в жидкость
+        event.recipes.tfc.heating(longRodItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .id(`tfc:heating/metal/${material.getName()}_long_rod`)
+
+        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
+        if (rodItem.isEmpty()) return
+
+        // Стержни -> Длинный стержень
+        event.recipes.tfc.welding(longRodItem, rodItem, rodItem)
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_long_rod`)
+    }
+
+    const processBolts = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const boltItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (boltItem.isEmpty()) return
+            
+        // Болт -> Металл
+        event.recipes.tfc.heating(boltItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 18))
+            .id(`tfc:heating/metal/${material.getName()}_bolt`)
+
+        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
+        if (rodItem.isEmpty()) return
+
+        // Стержень -> Болт
+        event.recipes.tfc.anvil(boltItem.withCount(2), rodItem, ['punch_last', 'draw_second_last', 'draw_third_last'])
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_bolt`)
+    }
+
+    const processScrews = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const screwItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (screwItem.isEmpty()) return
+
+        // Винт -> Металл
+        event.recipes.tfc.heating(screwItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 16))
+            .id(`tfc:heating/metal/${material.getName()}_screw`)
+
+        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
+        if (rodItem.isEmpty()) return
+
+        // Стержень -> Винт
+        event.recipes.tfc.anvil(screwItem, rodItem, ['punch_last', 'punch_second_last', 'shrink_third_last'])
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_screw`)
+    }
+
+    const processRings = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const ringItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (ringItem.isEmpty()) return
+            
+        // Кольцо -> Металл
+        event.recipes.tfc.heating(ringItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
+            .id(`tfc:heating/metal/${material.getName()}_ring`)
+
+        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
+        if (rodItem.isEmpty()) return
+
+        // Стержень -> Кольцо
+        event.recipes.tfc.anvil(ringItem, rodItem, ['hit_last', 'hit_second_last', 'hit_third_last'])
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_ring`)
+    }
+
+    const processBlocks = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const blockItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (blockItem.isEmpty()) return
+            
+        // Декрафт блока в жидкость
+        event.recipes.tfc.heating(`#forge:storage_blocks/${material.getName()}`, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 1296))
             .id(`tfc:heating/metal/${material.getName()}_block`)
+    }
+
+    const processTinyDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/tiny_dust/${material.getName()}`)
+    }
+
+    const processSmallDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/small_dust/${material.getName()}`)
+    }
+
+    const processDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/dust/${material.getName()}`)
+    }
+
+    const processImpureDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/impure_dust/${material.getName()}`)
+    }
+
+    const processPurifiedDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/purified_dust/${material.getName()}`)
+    }
+
+    const processCrushedOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(60, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/crushed_ore/${material.getName()}`)
+    }
+
+    const processCrushedPurifiedOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/crushed_purified_ore/${material.getName()}`)
+    }
+
+    const processCrushedRefinedOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/crushed_refined_ore/${material.getName()}`)
+    }
+
+    const processRichRawOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (oreItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
+            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/rich_raw/${material.getName()}`)
+    }
+
+    const processNormalRawore = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (oreItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
+            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/raw/${material.getName()}`)
+    }
+
+    const processPoorRawOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (oreItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
+            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/poor_raw/${material.getName()}`)
+    }
+
+    const processNuggets = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const nuggetItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (nuggetItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(nuggetItem, tfcProperty.getMeltTemp())
+            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/nugget/${material.getName()}`)
+    }
+
+    const processToolSword = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
+        if (ingotDoubleItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/sword/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const swordItem = ToolHelper.get(toolType, material)
+        if (!swordItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(swordItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_sword`)
+        }
+        
+        const swordHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!swordHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(swordHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .id(`tfc:heating/metal/${material.getName()}_sword_blade`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(swordHeadItem, ingotDoubleItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_sword_blade`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(swordHeadItem, 'tfc:ceramic/sword_blade_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
+                    .id(`tfc:casting/${material.getName()}_sword_blade`)
+            
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/sword_blade_mold', getFillingNBT(outputMaterial, 288)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 288), 
+                        Item.of('tfc:ceramic/sword_blade_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_sword_blade`)
+            }       
+        } 
+    }
+
+    const processToolPickaxe = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/pickaxe/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const pickaxeItem = ToolHelper.get(toolType, material)
+        if (!pickaxeItem.isEmpty()) {
+
+            event.recipes.tfc.heating(`gtceu:${material.getName()}_pickaxe`, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_pickaxe`)
+            
+        }
+
+        const pickaxeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!pickaxeHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(pickaxeHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_pickaxe_head`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(pickaxeHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_pickaxe_head`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(pickaxeHeadItem, 'tfc:ceramic/pickaxe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_pickaxe_head`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/pickaxe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/pickaxe_head_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_pickaxe_head`)
+            }
+
+        }
+    }
+
+    const processToolAxe = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/axe/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const axeItem = ToolHelper.get(toolType, material)
+        if (!axeItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(axeItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_axe`)
+            
+        }
+        
+        const axeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!axeHeadItem.isEmpty()) {
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(axeHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_axe_head`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(axeHeadItem, ingotItem, ['punch_last', 'hit_second_last', 'upset_third_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_axe_head`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(axeHeadItem, 'tfc:ceramic/axe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_axe_head`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/axe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/axe_head_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_axe_head`)
+            }
+        }
+    }
+
+    const processToolShovel = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/shovel/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const shovelItem = ToolHelper.get(toolType, material)
+        if (!shovelItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(shovelItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_shovel`)
+            
+        }
+
+        const shovelHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!shovelHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(shovelHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_shovel_head`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(shovelHeadItem, ingotItem, ['punch_last', 'hit_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_shovel_head`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(shovelHeadItem, 'tfc:ceramic/shovel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_shovel_head`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/shovel_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/shovel_head_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_shovel_head_mold`)
+            }
+
+        }
+    }
+
+    const processToolHoe = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/hoe/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const hoeItem = ToolHelper.get(toolType, material)
+        if (!hoeItem.isEmpty()) {
+            event.recipes.tfc.heating(hoeItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_hoe`)
+        }
+        
+        const hoeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!hoeHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(hoeHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_hoe_head`)
+            
+            // Крафт оголовья
+            event.recipes.tfc.anvil(hoeHeadItem, ingotItem, ['punch_last', 'hit_not_last', 'bend_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_hoe_head`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(hoeHeadItem, 'tfc:ceramic/hoe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_hoe_head`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/hoe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/hoe_head_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_hoe_head_mold`)
+            }
+            
+        }
+    }
+
+    const processToolKnife = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/knife/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const knifeItem = ToolHelper.get(toolType, material)
+        if (!knifeItem.isEmpty()) {
+            event.recipes.tfc.heating(knifeItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_knife`)
+        }
+        
+        const knifeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!knifeHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(knifeHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_knife_blade`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(knifeHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_knife_blade`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(knifeHeadItem, 'tfc:ceramic/knife_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_knife_blade`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/knife_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/knife_blade_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_knife_blade_mold`)
+            }
+            //#region Ножницы 
+
+            // Сварка оголовий
+            event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
+            .id(`tfc:welding/${material.getName()}_shears`)
+
+            // Декрафт инструмента в жидкость
+            event.recipes.tfc.heating(`tfc:metal/shears/${material.getName()}`, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_shears`)
+
+            //#endregion
+
+        }
+    }
+
+    const processToolMiningHammer = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
+        if (ingotDoubleItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        const miningHammerItem = ToolHelper.get(toolType, material)
+        if (!miningHammerItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(miningHammerItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_mining_hammer`)
+
+        }
+
+
+        const miningHammerHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!miningHammerHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(miningHammerHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .id(`tfc:heating/metal/${material.getName()}_mining_hammer_head`)
+
+                // Крафт оголовья
+            event.recipes.tfc.anvil(miningHammerHeadItem, ingotDoubleItem, ['punch_last', 'shrink_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_mining_hammer_head`)
+            
+        }
+    }
+
+    const processToolScythe = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/scythe/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const scytheItem = ToolHelper.get(toolType, material)
+        if (!scytheItem.isEmpty()) {
+            event.recipes.tfc.heating(scytheItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_scythe`)
+        }
+        
+        const scytheHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!scytheHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(scytheHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_scythe_blade`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(scytheHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_scythe_blade`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(scytheHeadItem, 'tfc:ceramic/scythe_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_scythe_blade`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/scythe_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/scythe_blade_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_scythe_blade_mold`)
+            }
+        
+        }
+    }
+
+    const processToolFile = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        const fileItem = ToolHelper.get(toolType, material)
+        if (!fileItem.isEmpty()) {
+            event.recipes.tfc.heating(fileItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_file`)
+        }
+        
+        const fileHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!fileHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(fileHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_file_head`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(fileHeadItem, ingotItem, ['upset_last', 'bend_not_last', 'punch_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_file_head`)
+
+        }
+    }
+
+    const processToolHammer = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/hammer/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const hammerItem = ToolHelper.get(toolType, material)
+        if (!hammerItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(hammerItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_hammer`)
+            
+        }
+        
+        const hammerHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!hammerHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(hammerHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_hammer_head`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(hammerHeadItem, ingotItem, ['punch_last', 'shrink_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_hammer_head`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(hammerHeadItem, 'tfc:ceramic/hammer_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_hammer_head`)
+            
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/hammer_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/hammer_head_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_hammer_head_mold`)
+            }
+        
+        }
+    }
+
+    const processToolSaw = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Крафт инструмента
+        event.remove({ id: `tfc:crafting/metal/saw/${material.getName()}` })
+
+        // Декрафт инструмента в жидкость
+        const sawItem = ToolHelper.get(toolType, material)
+        if (!sawItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(sawItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_saw`)
+            
+        }
+        
+        const sawHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!sawHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(sawHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_saw_blade`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(sawHeadItem, ingotItem, ['hit_last', 'hit_second_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_saw_blade`)
+
+            // Металл + Форма -> Оголовье
+            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+                event.recipes.tfc.casting(sawHeadItem, 'tfc:ceramic/saw_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                    .id(`tfc:casting/${material.getName()}_saw_blade`)
+
+                event.recipes.create.filling(
+                    Item.of('tfc:ceramic/saw_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                    [
+                        Fluid.of(outputMaterial.getFluid(), 144), 
+                        Item.of('tfc:ceramic/saw_blade_mold').strongNBT()
+                    ]
+                ).id(`tfg:tfc/filling/${material.getName()}_saw_blade_mold`)
+            }
+
+        }
+    }
+    
+    const processToolButcheryKnife = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        const butcheryKnifeItem = ToolHelper.get(toolType, material)
+        if (!butcheryKnifeItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(butcheryKnifeItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_butchery_knife`)
+
+        }
+        
+        let butcheryKnifeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!butcheryKnifeHeadItem.isEmpty()) {
+            
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(butcheryKnifeHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .id(`tfc:heating/metal/${material.getName()}_knife_butchery_head`)
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(butcheryKnifeHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'])
+                .tier(tfcProperty.getTier())
+                .bonus(true)
+                .id(`tfc:anvil/${material.getName()}_knife_butchery_head`)
+
+        }
+    }
+
+    const processToolSpade = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
+        if (ingotDoubleItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        const spadeItem = ToolHelper.get(toolType, material)
+        if (!spadeItem.isEmpty()) {
+            
+            event.recipes.tfc.heating(spadeItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .useDurability(true)
+                .id(`tfc:heating/metal/${material.getName()}_spade`)
+            
+        }
+        
+        const spadeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (!spadeHeadItem.isEmpty()) {
+
+            // Крафт оголовья
+            event.recipes.tfc.anvil(spadeHeadItem, ingotDoubleItem, ['punch_last', 'hit_not_last'])
+            .tier(tfcProperty.getTier())
+            .bonus(true)
+            .id(`tfc:anvil/${material.getName()}_spade_head`)
+
+            // Декрафт оголовья в жидкость
+            event.recipes.tfc.heating(spadeHeadItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+                .id(`tfc:heating/metal/${material.getName()}_spade_head`)
+            
+        }
+    }
+
+    const processToolPropick = (headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const propickItem = Item.of(`tfc:metal/propick/${material.getName()}`)
+        if (propickItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        event.recipes.tfc.heating(propickItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_propick`)
+
+        const propickHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (propickHeadItem.isEmpty()) return;
+
+        // Декрафт оголовья в жидкость
+        event.recipes.tfc.heating(propickHeadItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .id(`tfc:heating/metal/${material.getName()}_propick_head`)
+
+        // Металл + Форма -> Оголовье
+        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+            event.recipes.tfc.casting(propickHeadItem, 'tfc:ceramic/propick_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                .id(`tfc:casting/${material.getName()}_propick_head`)
+
+            event.recipes.create.filling(
+                Item.of('tfc:ceramic/propick_head_mold', getFillingNBT(outputMaterial, 144)), 
+                [
+                    Fluid.of(outputMaterial.getFluid(), 144), 
+                    Item.of('tfc:ceramic/propick_head_mold').strongNBT()
+                ]
+            ).id(`tfg:tfc/filling/${material.getName()}_propick_head_mold`)
+        }
+    }
+
+    const processToolJavelin = (headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const javelinItem = Item.of(`tfc:metal/javelin/${material.getName()}`)
+        if (javelinItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        event.recipes.tfc.heating(javelinItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_javelin`)
+
+        const javelinHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (javelinHeadItem.isEmpty()) return
+
+        // Декрафт оголовья в жидкость
+        event.recipes.tfc.heating(javelinHeadItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .id(`tfc:heating/metal/${material.getName()}_javelin_head`)
+
+        // Металл + Форма -> Оголовье
+        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+            event.recipes.tfc.casting(javelinHeadItem, 'tfc:ceramic/javelin_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                .id(`tfc:casting/${material.getName()}_javelin_head`)
+
+            event.recipes.create.filling(
+                Item.of('tfc:ceramic/javelin_head_mold', getFillingNBT(outputMaterial, 144)), 
+                [
+                    Fluid.of(outputMaterial.getFluid(), 144), 
+                    Item.of('tfc:ceramic/javelin_head_mold').strongNBT()
+                ]
+            ).id(`tfg:tfc/filling/${material.getName()}_javelin_head_mold`)
+        }
+    }
+
+    const processToolChisel = (headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const chiselItem = Item.of(`tfc:metal/chisel/${material.getName()}`)
+        if (chiselItem.isEmpty()) return
+
+        // Декрафт инструмента в жидкость
+        event.recipes.tfc.heating(chiselItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_chisel`)
+
+        const chiselHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (chiselHeadItem.isEmpty()) return
+
+        // Декрафт оголовья в жидкость
+        event.recipes.tfc.heating(chiselHeadItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .id(`tfc:heating/metal/${material.getName()}_chisel_head`)
+
+        // Металл + Форма -> Оголовье
+        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+            event.recipes.tfc.casting(chiselHeadItem, 'tfc:ceramic/chisel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
+                .id(`tfc:casting/${material.getName()}_chisel_head`)
+
+            event.recipes.create.filling(
+                Item.of('tfc:ceramic/chisel_head_mold', getFillingNBT(outputMaterial, 144)), 
+                [
+                    Fluid.of(outputMaterial.getFluid(), 144), 
+                    Item.of('tfc:ceramic/chisel_head_mold').strongNBT()
+                ]
+            ).id(`tfg:tfc/filling/${material.getName()}_chisel_head_mold`)
+        }
+    }
+
+    const processToolMace = (headTagPrefix, tfcProperty, material, outputMaterial) => {
+        const maceItem = Item.of(`tfc:metal/mace/${material.getName()}`)
+        if (maceItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        event.recipes.tfc.heating(maceItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_mace`)
+
+        const maceHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (maceHeadItem.isEmpty()) return
+
+        // Металл + Форма -> Оголовье
+        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
+            event.recipes.tfc.casting(maceHeadItem, 'tfc:ceramic/mace_head_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
+                .id(`tfc:casting/${material.getName()}_mace_head`)
+
+            event.recipes.create.filling(
+                Item.of('tfc:ceramic/mace_head_mold', getFillingNBT(outputMaterial, 288)), 
+                [
+                    Fluid.of(outputMaterial.getFluid(), 288), 
+                    Item.of('tfc:ceramic/mace_head_mold').strongNBT()
+                ]
+            ).id(`tfg:tfc/filling/${material.getName()}_mace_head`)
+        
+        }
+
+        // Декрафт оголовья в жидкость
+        event.recipes.tfc.heating(maceHeadItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+            .id(`tfc:heating/metal/${material.getName()}_mace_head`)
+    }
+
+    const processToolShield = (tfcProperty, material, outputMaterial) => {
+        const shieldItem = Item.of(`tfc:metal/shield/${material.getName()}`)
+        if (maceItem.isEmpty()) return
+        
+        // Декрафт щита в жидкость
+        event.recipes.tfc.heating(shieldItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_shield`)
+
+        const plateDoubleItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
+        if (plateDoubleItem.isEmpty()) return
+
+        // Щит
+        event.recipes.tfc.anvil(shieldItem, plateDoubleItem, ['upset_last', 'bend_second_last', 'bend_third_last'])
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_shield`)
+    }
+    
+    const processToolFishingRod = (tfcProperty, material, outputMaterial) => {
+        const fishingRodItem = Item.of(`tfc:metal/fishing_rod/${material.getName()}`)
+        if (fishingRodItem.isEmpty()) return
+        
+        const fishingRodHeadItem = Item.of(`tfc:metal/fish_hook/${material.getName()}`)
+        if (fishingRodHeadItem.isEmpty()) return
+
+        // Декрафт оголовья в жидкость
+        event.recipes.tfc.heating(fishingRodHeadItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .id(`tfc:heating/metal/${material.getName()}_fish_hook`)
 
         const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
         if (plateItem.isEmpty()) return
 
-        // Крафт в ассемблере
-        event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_block`)
-            .itemInputs(plateItem.copyWithCount(4), '#minecraft:planks')
-            .itemOutputs(platedBlock)
-            .duration(300)
-            .EUt(8)
+        // Крюк удочки
+        event.recipes.tfc.anvil(fishingRodHeadItem, plateItem, ['draw_not_last', 'bend_any', 'hit_any'])
+            .tier(tfcProperty.getTier())
+            .bonus(true)
+            .id(`tfc:anvil/${material.getName()}_fish_hook`)
+
+        // Декрафт инструмента в жидкость
+        event.recipes.tfc.heating(fishingRodItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_fishing_rod`)
+    }
+    
+    const processTuyere = (tfcProperty, material, outputMaterial) => {
+        const tuyereItem = Item.of(`tfc:metal/tuyere/${material.getName()}`)
+        if (fishingRodItem.isEmpty()) return
+        
+        // Декрафт инструмента в жидкость
+        event.recipes.tfc.heating(tuyereItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+            .useDurability(true)
+            .id(`tfc:heating/metal/${material.getName()}_tuyere`)
+
+        const plateDoubleItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
+        if (plateDoubleItem.isEmpty()) return
+
+        // Фурма
+        event.recipes.tfc.anvil(tuyereItem, plateDoubleItem, ['bend_last', 'bend_second_last'])
+            .tier(tfcProperty.getTier())
+            .id(`tfc:anvil/${material.getName()}_tuyere`)
     }
 
-    const processTFCMetalStairs = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const platedStairBlock = ChemicalHelper.get(tagPrefix, material, 1)
-        if (platedStairBlock.isEmpty()) return
+    const processToolTongs = (tfcProperty, material, outputMaterial) => {
+        // const tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
+        // const tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
-        // Удаление рецепта через верстак
-        event.remove({ id: `tfc:crafting/metal/block/${material.getName()}_stairs`})
+        // if (tongsStack.isEmpty() && tongPartStack.isEmpty()) return
 
-        // Декрафт
-        event.recipes.tfc.heating(platedStairBlock, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 54))
-            .id(`tfc:heating/metal/${material.getName()}_block_stairs`)
-
-        const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1)
-        if (platedBlock.isEmpty()) return
-
-        // Крафт в каттере
-        event.recipes.gtceu.cutter(`tfg:${material.getName()}_block_stairs`)             
-            .itemInputs(platedBlock.copyWithCount(3))
-            .itemOutputs(platedStairBlock)
-            .duration(300)
-            .EUt(8)
-    }
-
-    const processTFCMetalSlabs = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const platedSlabBlock = ChemicalHelper.get(tagPrefix, material, 1)
-        if (platedSlabBlock.isEmpty()) return
-
-        // Удаление рецепта через верстак
-        event.remove({ id: `tfc:crafting/metal/block/${material.getName()}_slab`})
-
-        // Декрафт
-        event.recipes.tfc.heating(platedSlabBlock, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
-            .id(`tfc:heating/metal/${material.getName()}_block_slab`)
-
-        const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1)
-        if (platedBlock.isEmpty()) return
-
-        // Крафт в каттере
-        event.recipes.gtceu.cutter(`tfg:${material.getName()}_block_slab`)             
-            .itemInputs(platedBlock)
-            .itemOutputs(platedSlabBlock.copyWithCount(2))
-            .duration(300)
-            .EUt(8)
+        // // Ручка щипцов
+        // event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
+        //     .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+        //     .id(`tfchotornot:heating/tong_part/${material.getName()}`)
+    
+        // // Щипцы
+        // event.recipes.tfc.heating(tongsStack, tfcProperty.getMeltTemp())
+        //     .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
+        //     .useDurability(true)
+        //     .id(`tfchotornot:heating/tongs/${material.getName()}`)
     }
 
     const processTFCArmor = (tfcProperty, material, outputMaterial) => {
-        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_ARMOR)) return
-        
         const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
         if (plateItem.isEmpty()) return
 
@@ -310,847 +1234,70 @@ const registerTFCRecipes = (event) => {
         //#endregion
     }
 
-    const processTFCTools = (tfcProperty, material, outputMaterial) => {
-        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) return
-        
-        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-        if (ingotItem.isEmpty()) return
+    const processTFCMetalBlocks = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const platedBlock = ChemicalHelper.get(tagPrefix, material, 1)
+        if (platedBlock.isEmpty()) return
 
-        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
-        if (ingotDoubleItem.isEmpty()) return
+        // Декрафт
+        event.recipes.tfc.heating(platedBlock, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
+            .id(`tfc:heating/metal/${material.getName()}_block`)
 
         const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
         if (plateItem.isEmpty()) return
 
-        const plateDoubleItem = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
-        if (plateDoubleItem.isEmpty()) return
-
-        //#region Фурма
-
-        // Декрафт инструмента в жидкость
-        event.recipes.tfc.heating(`tfc:metal/tuyere/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_tuyere`)
-
-        // Фурма
-        event.recipes.tfc.anvil(`tfc:metal/tuyere/${material.getName()}`, plateDoubleItem, ['bend_last', 'bend_second_last'])
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_tuyere`)
-
-        //#endregion
-
-        //#region Щит
-
-        // Декрафт щита в жидкость
-        event.recipes.tfc.heating(`tfc:metal/shield/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_shield`)
-
-        // Щит
-        event.recipes.tfc.anvil(`tfc:metal/shield/${material.getName()}`, plateDoubleItem, ['upset_last', 'bend_second_last', 'bend_third_last'])
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_shield`)
-
-        //#endregion
-
-        //#region Удочка
-
-        // Декрафт оголовья в жидкость
-        event.recipes.tfc.heating(`tfc:metal/fish_hook/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .id(`tfc:heating/metal/${material.getName()}_fish_hook`)
-
-        // Крюк удочки
-        event.recipes.tfc.anvil(`tfc:metal/fish_hook/${material.getName()}`, plateItem, ['draw_not_last', 'bend_any', 'hit_any'])
-            .tier(tfcProperty.getTier())
-            .bonus(true)
-            .id(`tfc:anvil/${material.getName()}_fish_hook`)
-
-        // Декрафт инструмента в жидкость
-        event.recipes.tfc.heating(`tfc:metal/fishing_rod/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_fishing_rod`)
-
-        //#endregion
-
-        //#region Меч
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/sword/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const swordItem = ToolHelper.get(GTToolType.SWORD, material)
-        if (!swordItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(swordItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_sword`)
-        }
-        
-        const swordHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSword, material, 1)
-        if (!swordHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(swordHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .id(`tfc:heating/metal/${material.getName()}_sword_blade`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(swordHeadItem, ingotDoubleItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_sword_blade`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(swordHeadItem, 'tfc:ceramic/sword_blade_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
-                    .id(`tfc:casting/${material.getName()}_sword_blade`)
-            
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/sword_blade_mold', getFillingNBT(outputMaterial, 288)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 288), 
-                        Item.of('tfc:ceramic/sword_blade_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_sword_blade`)
-            }       
-        } 
-        //#endregion
-
-        //#region Дубина
-        
-        // Декрафт инструмента в жидкость
-        event.recipes.tfc.heating(`tfc:metal/mace/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_mace`)
-
-        // Металл + Форма -> Оголовье
-        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-            event.recipes.tfc.casting(`tfc:metal/mace_head/${material.getName()}`, 'tfc:ceramic/mace_head_mold', Fluid.of(outputMaterial.getFluid(), 288), 1)
-                .id(`tfc:casting/${material.getName()}_mace_head`)
-
-            event.recipes.create.filling(
-                Item.of('tfc:ceramic/mace_head_mold', getFillingNBT(outputMaterial, 288)), 
-                [
-                    Fluid.of(outputMaterial.getFluid(), 288), 
-                    Item.of('tfc:ceramic/mace_head_mold').strongNBT()
-                ]
-            ).id(`tfg:tfc/filling/${material.getName()}_mace_head`)
-        
-        }
-
-        // Декрафт оголовья в жидкость
-        event.recipes.tfc.heating(`tfc:metal/mace_head/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-            .id(`tfc:heating/metal/${material.getName()}_mace_head`)
-        //#endregion
-
-        //#region Мясницкий нож
-    
-        // Декрафт инструмента в жидкость
-        const butcheryKnifeItem = ToolHelper.get(GTToolType.BUTCHERY_KNIFE, material)
-        if (!butcheryKnifeItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(butcheryKnifeItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_butchery_knife`)
-
-        }
-        
-        let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material, 1)
-        if (!butcheryKnifeHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(butcheryKnifeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_knife_butchery_head`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(butcheryKnifeHeadItem, `#forge:ingots/${material.getName()}`, ['punch_last', 'bend_not_last', 'bend_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_knife_butchery_head`)
-
-        }
-        //#endregion
-
-        //#region Молот шахтера
-
-        // Декрафт инструмента в жидкость
-        const miningHammerItem = ToolHelper.get(GTToolType.MINING_HAMMER, material)
-        if (!miningHammerItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(miningHammerItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_mining_hammer`)
-
-        }
-        
-
-        const miningHammerHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadMiningHammer, material, 1)
-        if (!miningHammerHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(miningHammerHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .id(`tfc:heating/metal/${material.getName()}_mining_hammer_head`)
-
-                // Крафт оголовья
-            event.recipes.tfc.anvil(miningHammerHeadItem, ingotDoubleItem, ['punch_last', 'shrink_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_mining_hammer_head`)
-            
-        }
-        //#endregion
-
-        //#region Большая лопата
-        
-        // Декрафт инструмента в жидкость
-        const spadeItem = ToolHelper.get(GTToolType.SPADE, material)
-        if (!spadeItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(spadeItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_spade`)
-            
-        }
-        
-        const spadeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSpade, material, 1)
-        if (!spadeHeadItem.isEmpty()) {
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(spadeHeadItem, ingotDoubleItem, ['punch_last', 'hit_not_last'])
-            .tier(tfcProperty.getTier())
-            .bonus(true)
-            .id(`tfc:anvil/${material.getName()}_spade_head`)
-
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(spadeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .id(`tfc:heating/metal/${material.getName()}_spade_head`)
-            
-        }
-        //#endregion
-
-        //#region Кирка
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/pickaxe/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const pickaxeItem = ToolHelper.get(GTToolType.PICKAXE, material)
-        if (!pickaxeItem.isEmpty()) {
-
-            event.recipes.tfc.heating(`gtceu:${material.getName()}_pickaxe`, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_pickaxe`)
-            
-        }
-
-        const pickaxeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadPickaxe, material, 1)
-        if (!pickaxeHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(pickaxeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_pickaxe_head`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(pickaxeHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_pickaxe_head`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(pickaxeHeadItem, 'tfc:ceramic/pickaxe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_pickaxe_head`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/pickaxe_head_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/pickaxe_head_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_pickaxe_head`)
-            }
-
-        }
-        //#endregion
-
-        //#region Топор
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/axe/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const axeItem = ToolHelper.get(GTToolType.AXE, material)
-        if (!axeItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(axeItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_axe`)
-            
-        }
-        
-        const axeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadAxe, material, 1)
-        if (!axeHeadItem.isEmpty()) {
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(axeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_axe_head`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(axeHeadItem, ingotItem, ['punch_last', 'hit_second_last', 'upset_third_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_axe_head`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(axeHeadItem, 'tfc:ceramic/axe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_axe_head`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/axe_head_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/axe_head_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_axe_head`)
-            }
-        }
-        //#endregion
-
-        //#region Лопата
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/shovel/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const shovelItem = ToolHelper.get(GTToolType.SHOVEL, material)
-        if (!shovelItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(shovelItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_shovel`)
-            
-        }
-        
-        const shovelHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadShovel, material, 1)
-        if (!shovelHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(shovelHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_shovel_head`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(shovelHeadItem, ingotItem, ['punch_last', 'hit_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_shovel_head`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(shovelHeadItem, 'tfc:ceramic/shovel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_shovel_head`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/shovel_head_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/shovel_head_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_shovel_head_mold`)
-            }
-
-        }
-        //#endregion
-
-        //#region Мотыга
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/hoe/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const hoeItem = ToolHelper.get(GTToolType.HOE, material)
-        if (!hoeItem.isEmpty()) {
-            event.recipes.tfc.heating(hoeItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_hoe`)
-        }
-        
-        const hoeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadHoe, material, 1)
-        if (!hoeHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(hoeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_hoe_head`)
-            
-            // Крафт оголовья
-            event.recipes.tfc.anvil(hoeHeadItem, ingotItem, ['punch_last', 'hit_not_last', 'bend_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_hoe_head`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(hoeHeadItem, 'tfc:ceramic/hoe_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_hoe_head`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/hoe_head_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/hoe_head_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_hoe_head_mold`)
-            }
-            
-        }
-        //#endregion
-
-        //#region Молот
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/hammer/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const hammerItem = ToolHelper.get(GTToolType.HARD_HAMMER, material)
-        if (!hammerItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(hammerItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_hammer`)
-            
-        }
-        
-        const hammerHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadHammer, material, 1)
-        if (!hammerHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(hammerHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_hammer_head`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(hammerHeadItem, ingotItem, ['punch_last', 'shrink_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_hammer_head`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(hammerHeadItem, 'tfc:ceramic/hammer_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_hammer_head`)
-            
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/hammer_head_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/hammer_head_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_hammer_head_mold`)
-            }
-        
-        }
-        //#endregion
-
-        //#region Пила
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/saw/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const sawItem = ToolHelper.get(GTToolType.SAW, material)
-        if (!sawItem.isEmpty()) {
-            
-            event.recipes.tfc.heating(sawItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_saw`)
-            
-        }
-        
-        const sawHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadSaw, material, 1)
-        if (!sawHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(sawHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_saw_blade`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(sawHeadItem, ingotItem, ['hit_last', 'hit_second_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_saw_blade`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(sawHeadItem, 'tfc:ceramic/saw_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_saw_blade`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/saw_blade_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/saw_blade_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_saw_blade_mold`)
-            }
-
-        }
-        //#endregion
-
-        //#region Коса
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/scythe/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const scytheItem = ToolHelper.get(GTToolType.SCYTHE, material)
-        if (!scytheItem.isEmpty()) {
-            event.recipes.tfc.heating(scytheItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_scythe`)
-        }
-        
-        const scytheHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadScythe, material, 1)
-        if (!scytheHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(scytheHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_scythe_blade`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(scytheHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_scythe_blade`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(scytheHeadItem, 'tfc:ceramic/scythe_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_scythe_blade`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/scythe_blade_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/scythe_blade_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_scythe_blade_mold`)
-            }
-        
-        }
-        //#endregion
-
-        //#region Напильник
-        
-        // Декрафт инструмента в жидкость
-        const fileItem = ToolHelper.get(GTToolType.FILE, material)
-        if (!fileItem.isEmpty()) {
-            event.recipes.tfc.heating(fileItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_file`)
-        }
-        
-        const fileHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadFile, material, 1)
-        if (!fileHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(fileHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_file_head`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(fileHeadItem, ingotItem, ['upset_last', 'bend_not_last', 'punch_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_file_head`)
-
-        }
-        //#endregion
-
-        //#region Нож
-        
-        // Крафт инструмента
-        event.remove({ id: `tfc:crafting/metal/knife/${material.getName()}` })
-
-        // Декрафт инструмента в жидкость
-        const knifeItem = ToolHelper.get(GTToolType.KNIFE, material)
-        if (!knifeItem.isEmpty()) {
-            event.recipes.tfc.heating(knifeItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_knife`)
-        }
-        
-        const knifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material, 1)
-        if (!knifeHeadItem.isEmpty()) {
-            
-            // Декрафт оголовья в жидкость
-            event.recipes.tfc.heating(knifeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-                .id(`tfc:heating/metal/${material.getName()}_knife_blade`)
-
-            // Крафт оголовья
-            event.recipes.tfc.anvil(knifeHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'draw_not_last'])
-                .tier(tfcProperty.getTier())
-                .bonus(true)
-                .id(`tfc:anvil/${material.getName()}_knife_blade`)
-
-            // Металл + Форма -> Оголовье
-            if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-                event.recipes.tfc.casting(knifeHeadItem, 'tfc:ceramic/knife_blade_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                    .id(`tfc:casting/${material.getName()}_knife_blade`)
-
-                event.recipes.create.filling(
-                    Item.of('tfc:ceramic/knife_blade_mold', getFillingNBT(outputMaterial, 144)), 
-                    [
-                        Fluid.of(outputMaterial.getFluid(), 144), 
-                        Item.of('tfc:ceramic/knife_blade_mold').strongNBT()
-                    ]
-                ).id(`tfg:tfc/filling/${material.getName()}_knife_blade_mold`)
-            }
-            //#region Ножницы 
-
-            // Сварка оголовий
-            event.recipes.tfc.welding(`tfc:metal/shears/${material.getName()}`, knifeHeadItem, knifeHeadItem, tfcProperty.getTier())
-            .id(`tfc:welding/${material.getName()}_shears`)
-
-            // Декрафт инструмента в жидкость
-            event.recipes.tfc.heating(`tfc:metal/shears/${material.getName()}`, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-                .useDurability(true)
-                .id(`tfc:heating/metal/${material.getName()}_shears`)
-
-            //#endregion
-
-        }
-
-        //#endregion
-
-        //#region Проспектор
-        
-        // Декрафт инструмента в жидкость
-        event.recipes.tfc.heating(`tfc:metal/propick/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_propick`)
-
-        // Декрафт оголовья в жидкость
-        event.recipes.tfc.heating(`tfc:metal/propick_head/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .id(`tfc:heating/metal/${material.getName()}_propick_head`)
-
-        // Металл + Форма -> Оголовье
-        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-            event.recipes.tfc.casting(`tfc:metal/propick_head/${material.getName()}`, 'tfc:ceramic/propick_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                .id(`tfc:casting/${material.getName()}_propick_head`)
-
-            event.recipes.create.filling(
-                Item.of('tfc:ceramic/propick_head_mold', getFillingNBT(outputMaterial, 144)), 
-                [
-                    Fluid.of(outputMaterial.getFluid(), 144), 
-                    Item.of('tfc:ceramic/propick_head_mold').strongNBT()
-                ]
-            ).id(`tfg:tfc/filling/${material.getName()}_propick_head_mold`)
-        }
-        //#endregion
-
-        //#region Стамеска
-        
-        // Декрафт инструмента в жидкость
-        event.recipes.tfc.heating(`tfc:metal/chisel/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_chisel`)
-
-        // Декрафт оголовья в жидкость
-        event.recipes.tfc.heating(`tfc:metal/chisel_head/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .id(`tfc:heating/metal/${material.getName()}_chisel_head`)
-
-        // Металл + Форма -> Оголовье
-        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-            event.recipes.tfc.casting(`tfc:metal/chisel_head/${material.getName()}`, 'tfc:ceramic/chisel_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                .id(`tfc:casting/${material.getName()}_chisel_head`)
-
-            event.recipes.create.filling(
-                Item.of('tfc:ceramic/chisel_head_mold', getFillingNBT(outputMaterial, 144)), 
-                [
-                    Fluid.of(outputMaterial.getFluid(), 144), 
-                    Item.of('tfc:ceramic/chisel_head_mold').strongNBT()
-                ]
-            ).id(`tfg:tfc/filling/${material.getName()}_chisel_head_mold`)
-        }
-        //#endregion
-
-        //#region Копье
-        
-        // Декрафт инструмента в жидкость
-        event.recipes.tfc.heating(`tfc:metal/javelin/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .useDurability(true)
-            .id(`tfc:heating/metal/${material.getName()}_javelin`)
-
-        // Декрафт оголовья в жидкость
-        event.recipes.tfc.heating(`tfc:metal/javelin_head/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .id(`tfc:heating/metal/${material.getName()}_javelin_head`)
-
-        // Металл + Форма -> Оголовье
-        if (material.hasFlag(TFGMaterialFlags.CAN_BE_UNMOLDED)) {
-            event.recipes.tfc.casting(`tfc:metal/javelin_head/${material.getName()}`, 'tfc:ceramic/javelin_head_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
-                .id(`tfc:casting/${material.getName()}_javelin_head`)
-
-            event.recipes.create.filling(
-                Item.of('tfc:ceramic/javelin_head_mold', getFillingNBT(outputMaterial, 144)), 
-                [
-                    Fluid.of(outputMaterial.getFluid(), 144), 
-                    Item.of('tfc:ceramic/javelin_head_mold').strongNBT()
-                ]
-            ).id(`tfg:tfc/filling/${material.getName()}_javelin_head_mold`)
-        }
-        //#endregion
-    
-        //#region Щипцы
-        // let tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
-        // let tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
-
-        // if (!tongsStack.isEmpty() && !tongPartStack.isEmpty()) {
-        //     // Ручка щипцов
-        //     event.recipes.tfc.heating(tongPartStack, tfcProperty.getMeltTemp())
-        //         .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-        //         .id(`tfchotornot:heating/tong_part/${material.getName()}`)
-            
-        //     // Щипцы
-        //     event.recipes.tfc.heating(tongsStack, tfcProperty.getMeltTemp())
-        //         .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
-        //         .useDurability(true)
-        //         .id(`tfchotornot:heating/tongs/${material.getName()}`)
-        // }
-        //#endregion
+        // Крафт в ассемблере
+        event.recipes.gtceu.assembler(`tfg:${material.getName()}_plated_block`)
+            .itemInputs(plateItem.copyWithCount(4), '#minecraft:planks')
+            .itemOutputs(platedBlock)
+            .duration(300)
+            .EUt(8)
     }
 
-    const processRods = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const rodItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (rodItem.isEmpty()) return
-        
-        // Декрафт стержня в жидкость
-        event.recipes.tfc.heating(rodItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
-            .id(`tfc:heating/metal/${material.getName()}_rod`)
+    const processTFCMetalStairs = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const platedStairBlock = ChemicalHelper.get(tagPrefix, material, 1)
+        if (platedStairBlock.isEmpty()) return
 
-        // Слиток -> 2 Стержня
-        event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['bend_last', 'draw_second_last', 'draw_third_last'])
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_rod`)
+        // Удаление рецепта через верстак
+        event.remove({ id: `tfc:crafting/metal/block/${material.getName()}_stairs`})
+
+        // Декрафт
+        event.recipes.tfc.heating(platedStairBlock, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 54))
+            .id(`tfc:heating/metal/${material.getName()}_block_stairs`)
+
+        const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1)
+        if (platedBlock.isEmpty()) return
+
+        // Крафт в каттере
+        event.recipes.gtceu.cutter(`tfg:${material.getName()}_block_stairs`)             
+            .itemInputs(platedBlock.copyWithCount(3))
+            .itemOutputs(platedStairBlock)
+            .duration(300)
+            .EUt(8)
     }
 
-    const processLongRods = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const longRodItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (longRodItem.isEmpty()) return
+    const processTFCMetalSlabs = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const platedSlabBlock = ChemicalHelper.get(tagPrefix, material, 1)
+        if (platedSlabBlock.isEmpty()) return
 
-        // Декрафт длинного стержня в жидкость
-        event.recipes.tfc.heating(longRodItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-            .id(`tfc:heating/metal/${material.getName()}_long_rod`)
+        // Удаление рецепта через верстак
+        event.remove({ id: `tfc:crafting/metal/block/${material.getName()}_slab`})
 
-        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
-        if (rodItem.isEmpty()) return
-
-        // Стержни -> Длинный стержень
-        event.recipes.tfc.welding(longRodItem, rodItem, rodItem)
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_long_rod`)
-    }
-
-    const processBolts = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const boltItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (boltItem.isEmpty()) return
-            
-        // Болт -> Металл
-        event.recipes.tfc.heating(boltItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 18))
-            .id(`tfc:heating/metal/${material.getName()}_bolt`)
-
-        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
-        if (rodItem.isEmpty()) return
-
-        // Стержень -> Болт
-        event.recipes.tfc.anvil(boltItem.withCount(2), rodItem, ['punch_last', 'draw_second_last', 'draw_third_last'])
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_bolt`)
-    }
-
-    const processScrews = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const screwItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (screwItem.isEmpty()) return
-
-        // Винт -> Металл
-        event.recipes.tfc.heating(screwItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 16))
-            .id(`tfc:heating/metal/${material.getName()}_screw`)
-
-        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
-        if (rodItem.isEmpty()) return
-
-        // Стержень -> Винт
-        event.recipes.tfc.anvil(screwItem, rodItem, ['punch_last', 'punch_second_last', 'shrink_third_last'])
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_screw`)
-    }
-
-    const processRings = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const ringItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (ringItem.isEmpty()) return
-            
-        // Кольцо -> Металл
-        event.recipes.tfc.heating(ringItem, tfcProperty.getMeltTemp())
+        // Декрафт
+        event.recipes.tfc.heating(platedSlabBlock, tfcProperty.getMeltTemp())
             .resultFluid(Fluid.of(outputMaterial.getFluid(), 36))
-            .id(`tfc:heating/metal/${material.getName()}_ring`)
+            .id(`tfc:heating/metal/${material.getName()}_block_slab`)
 
-        const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1)
-        if (rodItem.isEmpty()) return
+        const platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1)
+        if (platedBlock.isEmpty()) return
 
-        // Стержень -> Кольцо
-        event.recipes.tfc.anvil(ringItem, rodItem, ['hit_last', 'hit_second_last', 'hit_third_last'])
-            .tier(tfcProperty.getTier())
-            .id(`tfc:anvil/${material.getName()}_ring`)
-
-        
-    }
-
-    const processBlocks = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const blockItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (blockItem.isEmpty()) return
-            
-        // Декрафт блока в жидкость
-        event.recipes.tfc.heating(`#forge:storage_blocks/${material.getName()}`, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), 1296))
-            .id(`tfc:heating/metal/${material.getName()}_block`)
+        // Крафт в каттере
+        event.recipes.gtceu.cutter(`tfg:${material.getName()}_block_slab`)             
+            .itemInputs(platedBlock)
+            .itemOutputs(platedSlabBlock.copyWithCount(2))
+            .duration(300)
+            .EUt(8)
     }
 
     const processAnvils = (tagPrefix, tfcProperty, material, outputMaterial) => {
@@ -1324,7 +1471,7 @@ const registerTFCRecipes = (event) => {
             .id(`tfc:heating/ore/small_${material.getName()}`)
     }
 
-    const processTFCSmallNativeOres = () => {
+    const processTFCSmallNativeOres = (tagPrefix, tfcProperty, material, outputMaterial) => {
         if (!material.hasFlag(TFGMaterialFlags.HAS_SMALL_NATIVE_TFC_ORE)) return
         
         const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
@@ -1334,114 +1481,6 @@ const registerTFCRecipes = (event) => {
         event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
             .resultFluid(Fluid.of(outputMaterial.getFluid(), 16))
             .id(`tfc:heating/ore/small_native_${material.getName()}`)
-    }
-
-    const processTinyDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/tiny_dust/${material.getName()}`)
-    }
-
-    const processSmallDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/small_dust/${material.getName()}`)
-    }
-
-    const processDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/dust/${material.getName()}`)
-    }
-
-    const processImpureDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/impure_dust/${material.getName()}`)
-    }
-
-    const processPurifiedDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/purified_dust/${material.getName()}`)
-    }
-
-    const processCrushedOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(60, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/crushed_ore/${material.getName()}`)
-    }
-
-    const processCrushedPurifiedOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(90, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/crushed_purified_ore/${material.getName()}`)
-    }
-
-    const processCrushedRefinedOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (dustItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/crushed_refined_ore/${material.getName()}`)
-    }
-
-    const processRichRawOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (oreItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/rich_raw/${material.getName()}`)
-    }
-
-    const processNormalRawore = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (oreItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/raw/${material.getName()}`)
-    }
-
-    const processPoorRawOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (oreItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/poor_raw/${material.getName()}`)
-    }
-
-    const processNuggets = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const nuggetItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (nuggetItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(nuggetItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/nugget/${material.getName()}`)
     }
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
@@ -1478,28 +1517,42 @@ const registerTFCRecipes = (event) => {
             processPoorRawOre(TFGTagPrefix.poorRawOre, tfcProperty, material, outputMaterial)
             processNuggets(TagPrefix.nugget, tfcProperty, material, outputMaterial)
 
-            processTFCArmor(tfcProperty, material, outputMaterial)
-            processTFCTools(tfcProperty, material, outputMaterial) //todo: Разделить на отдельные методы под каждый инструмент
+            // 1. Тип инструмента
+            // 2. Префикс ассоциируемый с текущим предметом.
+            // 3. Проперти ТФК с нагревом металла и другими полезными проперти.
+            // 4. Материал из которого состоит объект.
+            // 5. Материал в который объект должен быть преобразован после разборки.
             
-            //todo: передавать еще и молд + (возможно тултайп?)
-            // processToolSword(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolPickaxe(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolAxe(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolShovel(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolHoe(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolKnife(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolMiningHammer(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolScythe(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolFile(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolHammer(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolSaw(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolButcheryKnife(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolSpade(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolPropick(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolJavelin(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolChisel(TagPrefix.?, tfcProperty, material, outputMaterial)
-            // processToolMace(TagPrefix.?, tfcProperty, material, outputMaterial)
+            if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
+                processToolSword(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, tfcProperty, material, outputMaterial)
+                processToolPickaxe(GTToolType.PICKAXE, TagPrefix.toolHeadPickaxe, tfcProperty, material, outputMaterial)
+                processToolAxe(GTToolType.AXE, TFGTagPrefix.toolHeadAxe, tfcProperty, material, outputMaterial)
+                processToolShovel(GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, tfcProperty, material, outputMaterial)
+                processToolHoe(GTToolType.HOE, TFGTagPrefix.toolHeadHoe, tfcProperty, material, outputMaterial)
+                processToolKnife(GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, tfcProperty, material, outputMaterial)
+                processToolMiningHammer(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, tfcProperty, material, outputMaterial)
+                processToolScythe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, tfcProperty, material, outputMaterial) // because sense dont make sense
+                processToolFile(GTToolType.FILE, TFGTagPrefix.toolHeadFile, tfcProperty, material, outputMaterial)
+                processToolHammer(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, tfcProperty, material, outputMaterial)
+                processToolSaw(GTToolType.SAW, TFGTagPrefix.toolHeadSaw, tfcProperty, material, outputMaterial)
+                processToolButcheryKnife(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, tfcProperty, material, outputMaterial)
+                processToolSpade(GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, tfcProperty, material, outputMaterial)
+    
+                processToolPropick(TFGTagPrefix.toolHeadPropick, tfcProperty, material, outputMaterial)
+                processToolJavelin(TFGTagPrefix.toolHeadJavelin, tfcProperty, material, outputMaterial)
+                processToolChisel(TFGTagPrefix.toolHeadChisel, tfcProperty, material, outputMaterial)
+                processToolMace(TFGTagPrefix.toolHeadMace, tfcProperty, material, outputMaterial)
 
+                processToolShield(tfcProperty, material, outputMaterial)
+                processToolFishingRod(tfcProperty, material, outputMaterial)
+                processTuyere(tfcProperty, material, outputMaterial)
+                processToolTongs(tfcProperty, material, outputMaterial)
+            }
+
+            if (material.hasFlag(TFGMaterialFlags.HAS_TFC_ARMOR)) {
+                processTFCArmor(tfcProperty, material, outputMaterial)
+            }
+            
             processTFCMetalBlocks(TFGTagPrefix.blockPlated, tfcProperty, material, outputMaterial)
             processTFCMetalStairs(TFGTagPrefix.stairPlated, tfcProperty, material, outputMaterial)
             processTFCMetalSlabs(TFGTagPrefix.slabPlated, tfcProperty, material, outputMaterial)
@@ -1509,6 +1562,7 @@ const registerTFCRecipes = (event) => {
             processLamps(TFGTagPrefix.lamp, tfcProperty, material, outputMaterial)
             processTrapdoors(TFGTagPrefix.trapdoor, tfcProperty, material, outputMaterial)
             processChains(TFGTagPrefix.chain, tfcProperty, material, outputMaterial)
+            
             processTFCSmallOres(TFGTagPrefix.oreSmall, tfcProperty, material, outputMaterial)
             processTFCSmallNativeOres(TFGTagPrefix.oreSmallNative, tfcProperty, material, outputMaterial)
         }
@@ -1528,6 +1582,27 @@ const registerTFCRecipes = (event) => {
         TFC.alloyPart('tfc:cast_iron', 0.45, 0.55)
     ]).id('tfg:alloy/tin_alloy')
     //#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 }
