@@ -137,9 +137,7 @@ ServerEvents.recipes(event => {
  * Событие регистрации лут-тейблов.
  * Срабатывает до инициализации рецептов, но после датапаков и тегов.
  */
-LootJS.modifiers((event) => {
-    registerGregTechLoots(event)
-})
+LootJS.modifiers((event) => {})
 
 /**
  * Событие регистрации рудных жил GregTech.
