@@ -3,6 +3,8 @@
 const registerGregTechRecipes = (event) => {
     
     //#region Рецепты электрического генератора
+
+    //todo: nerf
     event.recipes.gtceu.alternator('32_rpm_to_32_eu')
         .inputStress(256)
         .circuit(0)
