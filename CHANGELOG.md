@@ -26,6 +26,14 @@
 - True way to hide AE2 facades.
 - True way to hide chisel and bits bits, yes.
 - Fix double removing honey liquid from EMI.
+- Fixed bug when foods cant root inside EMI (of course not by mod dev (by myself)).
+- Now it is impossible to pour liquid from the TFC blast furnace into the GT pipe, which fixes the releated crash.
+- Fixed a bug where an item with the last durab broke the ore, then the ore did not dropped out.
+- Added recipes for crushing raw ores to crushed ores by workbench.
+- Fixed bug when electronic tools run out their durability, the tool breaks up without returning any power unit.
+- Alternator multiblock now works as intended.
+- Alternator recipes was sligthly nerfed.
+- Fixed bug when some items wont display inside EMI.
 - ...
 ### Updated mods
 - ??
