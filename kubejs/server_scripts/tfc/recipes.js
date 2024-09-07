@@ -23,6 +23,15 @@ const registerTFCRecipes = (event) => {
         return (value % 2 == 0) ? value : Math.round(value) - 1
     }
 
+    const processNuggets = (tagPrefix, tfcProperty, material, outputMaterial) => {
+        const nuggetItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (nuggetItem.isEmpty()) return
+        
+        event.recipes.tfc.heating(nuggetItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+            .id(`tfg:heating/nugget/${material.getName()}`)
+    }
+
     const processIngot = (tagPrefix, tfcProperty, material, outputMaterial) => {
         const ingotItem = ChemicalHelper.get(tagPrefix, material, 1)
         if (ingotItem.isEmpty()) return
@@ -75,6 +84,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.tfc.welding(doubleIngotItem, ingotItem, ingotItem, tfcProperty.getTier() - 1)
             .id(`tfc:welding/${material.getName()}_double_ingot`)
 
+        // Рецепт через бендер
         event.recipes.gtceu.bender(`tfg:${material.getName()}_double_ingot`)             
             .itemInputs(ingotItem.copyWithCount(2))
             .circuit(6)
@@ -99,11 +109,11 @@ const registerTFCRecipes = (event) => {
             .tier(tfcProperty.getTier())
             .id(`tfc:anvil/${material.getName()}_sheet`)
 
-        // Крафт в смолоте
+        // Крафт в молоте
         event.recipes.gtceu.forge_hammer(`tfg:${material.getName()}_plate_from_double_ingot`)
-            .inputItems(doubleIngotItem)
-            .outputItems(plateItem)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 4)
+            .itemInputs(doubleIngotItem)
+            .itemOutputs(plateItem)
+            .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 5)
     }
 
     const processDoublePlate = (tagPrefix, tfcProperty, material, outputMaterial) => {
@@ -343,15 +353,6 @@ const registerTFCRecipes = (event) => {
                 oreItem,
                 oreItem
         ]).id(`tfg:shapeless/poor_raw_${material.getName()}_to_crushed`)
-    }
-
-    const processNuggets = (tagPrefix, tfcProperty, material, outputMaterial) => {
-        const nuggetItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (nuggetItem.isEmpty()) return
-        
-        event.recipes.tfc.heating(nuggetItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/nugget/${material.getName()}`)
     }
 
     const processToolSword = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
@@ -1124,6 +1125,7 @@ const registerTFCRecipes = (event) => {
     }
 
     const processToolTongs = (tfcProperty, material, outputMaterial) => {
+        //todo: asd
         // const tongsStack = Item.of(`tfchotornot:tongs/${material.getName()}`)
         // const tongPartStack = Item.of(`tfchotornot:tong_part/${material.getName()}`)
 
@@ -1557,16 +1559,17 @@ const registerTFCRecipes = (event) => {
             // 3. Материал из которого состоит объект.
             // 4. Материал в который объект должен быть преобразован после разборки.
 
+            processNuggets(TagPrefix.nugget, tfcProperty, material, outputMaterial)
             processIngot(TagPrefix.ingot, tfcProperty, material, outputMaterial)
-            // processBlocks(TagPrefix.block, tfcProperty, material, outputMaterial)
-            // processDoubleIngot(TFGTagPrefix.ingotDouble, tfcProperty, material, outputMaterial)
-            // processPlate(TagPrefix.plate, tfcProperty, material, outputMaterial)
-            // processDoublePlate(TagPrefix.plateDouble, tfcProperty, material, outputMaterial)
+            processDoubleIngot(TFGTagPrefix.ingotDouble, tfcProperty, material, outputMaterial)
+            processPlate(TagPrefix.plate, tfcProperty, material, outputMaterial)
+            processDoublePlate(TagPrefix.plateDouble, tfcProperty, material, outputMaterial)
             // processRods(TagPrefix.rod, tfcProperty, material, outputMaterial)
             // processLongRods(TagPrefix.rodLong, tfcProperty, material, outputMaterial)
             // processBolts(TagPrefix.bolt, tfcProperty, material, outputMaterial)
             // processScrews(TagPrefix.screw, tfcProperty, material, outputMaterial)
             // processRings(TagPrefix.ring, tfcProperty, material, outputMaterial)
+            // processBlock(TagPrefix.block, tfcProperty, material, outputMaterial)
             // processTinyDust(TagPrefix.dustTiny, tfcProperty, material, outputMaterial)
             // processSmallDust(TagPrefix.dustSmall, tfcProperty, material, outputMaterial)
             // processDust(TagPrefix.dust, tfcProperty, material, outputMaterial)
@@ -1578,8 +1581,7 @@ const registerTFCRecipes = (event) => {
             // processRichRawOre(TFGTagPrefix.richRawOre, tfcProperty, material, outputMaterial)
             // processNormalRawore(TagPrefix.rawOre, tfcProperty, material, outputMaterial)
             // processPoorRawOre(TFGTagPrefix.poorRawOre, tfcProperty, material, outputMaterial)
-            // processNuggets(TagPrefix.nugget, tfcProperty, material, outputMaterial)
-
+            
             // 1. Тип инструмента
             // 2. Префикс ассоциируемый с текущим предметом.
             // 3. Проперти ТФК с нагревом металла и другими полезными проперти.
