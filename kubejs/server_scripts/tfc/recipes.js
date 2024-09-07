@@ -143,6 +143,9 @@ const registerTFCRecipes = (event) => {
             .resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
             .id(`tfc:heating/metal/${material.getName()}_rod`)
 
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+
         // Слиток -> 2 Стержня
         event.recipes.tfc.anvil(rodItem.withCount(2), ingotItem, ['bend_last', 'draw_second_last', 'draw_third_last'])
             .tier(tfcProperty.getTier())
@@ -221,14 +224,14 @@ const registerTFCRecipes = (event) => {
             .id(`tfc:anvil/${material.getName()}_ring`)
     }
 
-    const processBlocks = (tagPrefix, tfcProperty, material, outputMaterial) => {
+    const processBlock = (tagPrefix, tfcProperty, material, outputMaterial) => {
         const blockItem = ChemicalHelper.get(tagPrefix, material, 1)
         if (blockItem.isEmpty()) return
             
         // Декрафт блока в жидкость
         event.recipes.tfc.heating(`#forge:storage_blocks/${material.getName()}`, tfcProperty.getMeltTemp())
             .resultFluid(Fluid.of(outputMaterial.getFluid(), 1296))
-            .id(`tfc:heating/metal/${material.getName()}_block`)
+            .id(`tfc:heating/metal/${material.getName()}_storage_block`)
     }
 
     const processTinyDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
@@ -308,7 +311,7 @@ const registerTFCRecipes = (event) => {
         if (oreItem.isEmpty()) return
         
         event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/rich_raw/${material.getName()}`)
 
         const crushedItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
@@ -325,7 +328,7 @@ const registerTFCRecipes = (event) => {
         if (oreItem.isEmpty()) return
         
         event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+        .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/raw/${material.getName()}`)
 
         const crushedItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
@@ -342,7 +345,7 @@ const registerTFCRecipes = (event) => {
         if (oreItem.isEmpty()) return
         
         event.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/poor_raw/${material.getName()}`)
 
         const crushedItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
@@ -356,7 +359,7 @@ const registerTFCRecipes = (event) => {
     }
 
     const processToolSword = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
-        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
+        const ingotDoubleItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)
         if (ingotDoubleItem.isEmpty()) return
         
         // Крафт инструмента
@@ -392,7 +395,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_sword_blade`)
             
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/sword_blade_mold', getFillingNBT(outputMaterial, 288)), 
+                    Item.of('tfc:ceramic/sword_blade_mold', getFluidTankAsNBT(outputMaterial, 288)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 288), 
                         Item.of('tfc:ceramic/sword_blade_mold').strongNBT()
@@ -440,7 +443,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_pickaxe_head`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/pickaxe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/pickaxe_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/pickaxe_head_mold').strongNBT()
@@ -488,7 +491,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_axe_head`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/axe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/axe_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/axe_head_mold').strongNBT()
@@ -536,7 +539,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_shovel_head`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/shovel_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/shovel_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/shovel_head_mold').strongNBT()
@@ -583,7 +586,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_hoe_head`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/hoe_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/hoe_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/hoe_head_mold').strongNBT()
@@ -630,7 +633,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_knife_blade`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/knife_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/knife_blade_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/knife_blade_mold').strongNBT()
@@ -655,7 +658,7 @@ const registerTFCRecipes = (event) => {
     }
 
     const processToolMiningHammer = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
-        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
+        const ingotDoubleItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)
         if (ingotDoubleItem.isEmpty()) return
         
         // Декрафт инструмента в жидкость
@@ -723,7 +726,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_scythe_blade`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/scythe_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/scythe_blade_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/scythe_blade_mold').strongNBT()
@@ -801,7 +804,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_hammer_head`)
             
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/hammer_head_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/hammer_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/hammer_head_mold').strongNBT()
@@ -850,7 +853,7 @@ const registerTFCRecipes = (event) => {
                     .id(`tfc:casting/${material.getName()}_saw_blade`)
 
                 event.recipes.create.filling(
-                    Item.of('tfc:ceramic/saw_blade_mold', getFillingNBT(outputMaterial, 144)), 
+                    Item.of('tfc:ceramic/saw_blade_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                     [
                         Fluid.of(outputMaterial.getFluid(), 144), 
                         Item.of('tfc:ceramic/saw_blade_mold').strongNBT()
@@ -894,7 +897,7 @@ const registerTFCRecipes = (event) => {
     }
 
     const processToolSpade = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
-        const ingotDoubleItem = ChemicalHelper.get(TagPrefix.ingotDouble, material, 1)
+        const ingotDoubleItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)
         if (ingotDoubleItem.isEmpty()) return
         
         // Декрафт инструмента в жидкость
@@ -949,7 +952,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:casting/${material.getName()}_propick_head`)
 
             event.recipes.create.filling(
-                Item.of('tfc:ceramic/propick_head_mold', getFillingNBT(outputMaterial, 144)), 
+                Item.of('tfc:ceramic/propick_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                 [
                     Fluid.of(outputMaterial.getFluid(), 144), 
                     Item.of('tfc:ceramic/propick_head_mold').strongNBT()
@@ -982,7 +985,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:casting/${material.getName()}_javelin_head`)
 
             event.recipes.create.filling(
-                Item.of('tfc:ceramic/javelin_head_mold', getFillingNBT(outputMaterial, 144)), 
+                Item.of('tfc:ceramic/javelin_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                 [
                     Fluid.of(outputMaterial.getFluid(), 144), 
                     Item.of('tfc:ceramic/javelin_head_mold').strongNBT()
@@ -1015,7 +1018,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:casting/${material.getName()}_chisel_head`)
 
             event.recipes.create.filling(
-                Item.of('tfc:ceramic/chisel_head_mold', getFillingNBT(outputMaterial, 144)), 
+                Item.of('tfc:ceramic/chisel_head_mold', getFluidTankAsNBT(outputMaterial, 144)), 
                 [
                     Fluid.of(outputMaterial.getFluid(), 144), 
                     Item.of('tfc:ceramic/chisel_head_mold').strongNBT()
@@ -1043,7 +1046,7 @@ const registerTFCRecipes = (event) => {
                 .id(`tfc:casting/${material.getName()}_mace_head`)
 
             event.recipes.create.filling(
-                Item.of('tfc:ceramic/mace_head_mold', getFillingNBT(outputMaterial, 288)), 
+                Item.of('tfc:ceramic/mace_head_mold', getFluidTankAsNBT(outputMaterial, 288)), 
                 [
                     Fluid.of(outputMaterial.getFluid(), 288), 
                     Item.of('tfc:ceramic/mace_head_mold').strongNBT()
@@ -1060,7 +1063,7 @@ const registerTFCRecipes = (event) => {
 
     const processToolShield = (tfcProperty, material, outputMaterial) => {
         const shieldItem = Item.of(`tfc:metal/shield/${material.getName()}`)
-        if (maceItem.isEmpty()) return
+        if (shieldItem.isEmpty()) return
         
         // Декрафт щита в жидкость
         event.recipes.tfc.heating(shieldItem, tfcProperty.getMeltTemp())
@@ -1107,7 +1110,7 @@ const registerTFCRecipes = (event) => {
     
     const processTuyere = (tfcProperty, material, outputMaterial) => {
         const tuyereItem = Item.of(`tfc:metal/tuyere/${material.getName()}`)
-        if (fishingRodItem.isEmpty()) return
+        if (tuyereItem.isEmpty()) return
         
         // Декрафт инструмента в жидкость
         event.recipes.tfc.heating(tuyereItem, tfcProperty.getMeltTemp())
@@ -1342,15 +1345,15 @@ const registerTFCRecipes = (event) => {
         // Крафт в смелтере
         event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_anvil_from_ingots`)
             .itemInputs(ingotItem.copyWithCount(14))
-            .notConsumable('gtceu:anvil_casting_mold')
-            .outputItems(anvilItem)
+            .notConsumable('tfg:anvil_casting_mold')
+            .itemOutputs(anvilItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 6)
             
         // Крафт в солидифаере
-        event.recipes.gtceu.solidifier(`tfg:${material.getName()}_anvil_from_fluid`)
-            .inputFluids(outputMaterial.getFluid(2016))
-            .notConsumable('gtceu:anvil_casting_mold')
-            .outputItems(anvilItem)
+        event.recipes.gtceu.fluid_solidifier(`tfg:${material.getName()}_anvil_from_fluid`)
+            .inputFluids(Fluid.of(outputMaterial.getFluid(), 2016))
+            .notConsumable('tfg:anvil_casting_mold')
+            .itemOutputs(anvilItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 6)
     }
 
@@ -1369,15 +1372,15 @@ const registerTFCRecipes = (event) => {
         // Крафт в смелтере
         event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_unfinished_lamp_from_ingots`)
             .itemInputs(ingotItem)
-            .notConsumable('gtceu:lamp_casting_mold')
-            .outputItems(lampUnfinishedItem)
+            .notConsumable('tfg:lamp_casting_mold')
+            .itemOutputs(lampUnfinishedItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 2)
          
         // Крафт в солидифаере
-        event.recipes.gtceu.solidifier(`tfg:${material.getName()}_unfinished_lamp_from_fluid`)
-            .inputFluids(outputMaterial.getFluid(144))
-            .notConsumable('gtceu:lamp_casting_mold')
-            .outputItems(lampUnfinishedItem)
+        event.recipes.gtceu.fluid_solidifier(`tfg:${material.getName()}_unfinished_lamp_from_fluid`)
+            .inputFluids(Fluid.of(outputMaterial.getFluid(), 144))
+            .notConsumable('tfg:lamp_casting_mold')
+            .itemOutputs(lampUnfinishedItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 2)
     }
 
@@ -1397,14 +1400,14 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_lamp`)
             .itemInputs(lampUnfinishedItem, 'tfc:lamp_glass')
             .circuit(12)
-            .outputItems(lampItem)
+            .itemOutputs(lampItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 7)
 
         event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_lamp_from_liquid`)
             .itemInputs(lampUnfinishedItem)
             .inputFluids(GTMaterials.Glass.getFluid(576))
             .circuit(13)
-            .outputItems(lampItem)
+            .itemOutputs(lampItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 6)
     }
 
@@ -1431,15 +1434,15 @@ const registerTFCRecipes = (event) => {
         // Крафт в смелтере
         event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_trapdoor_from_ingots`)
             .itemInputs(ingotItem)
-            .notConsumable('gtceu:trapdoor_casting_mold')
-            .outputItems(trapdoorItem)
+            .notConsumable('tfg:trapdoor_casting_mold')
+            .itemOutputs(trapdoorItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 5)
          
         // Крафт в солидифаере
-        event.recipes.gtceu.solidifier(`tfg:${material.getName()}_trapdoor_from_fluid`)
-            .inputFluids(outputMaterial.getFluid(144))
-            .notConsumable('gtceu:trapdoor_casting_mold')
-            .outputItems(trapdoorItem)
+        event.recipes.gtceu.fluid_solidifier(`tfg:${material.getName()}_trapdoor_from_fluid`)
+            .inputFluids(Fluid.of(outputMaterial.getFluid(), 144))
+            .notConsumable('tfg:trapdoor_casting_mold')
+            .itemOutputs(trapdoorItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 5)
     }
 
@@ -1452,18 +1455,21 @@ const registerTFCRecipes = (event) => {
             .resultFluid(Fluid.of(outputMaterial.getFluid(), 9))
             .id(`tfc:heating/metal/${material.getName()}_chain`)
 
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+
         // Крафт в смелтере
         event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_chain_from_ingots`)
             .itemInputs(ingotItem)
-            .notConsumable('gtceu:chain_casting_mold')
-            .outputItems(barsItem.copyWithCount(9))
+            .notConsumable('tfg:chain_casting_mold')
+            .itemOutputs(chainItem.copyWithCount(9))
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 2)
          
         // Крафт в солидифаере
-        event.recipes.gtceu.solidifier(`tfg:${material.getName()}_chain_from_fluid`)
-            .inputFluids(outputMaterial.getFluid(144))
-            .notConsumable('gtceu:chain_casting_mold')
-            .outputItems(barsItem.copyWithCount(9))
+        event.recipes.gtceu.fluid_solidifier(`tfg:${material.getName()}_chain_from_fluid`)
+            .inputFluids(Fluid.of(outputMaterial.getFluid(), 144))
+            .notConsumable('tfg:chain_casting_mold')
+            .itemOutputs(chainItem.copyWithCount(9))
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 2)
     }
 
@@ -1499,7 +1505,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.assembler(`tfg:${material.getName()}_bars_from_rods`)
             .itemInputs(rodtItem.withCount(3))
             .circuit(3)
-            .outputItems(barsItem.copyWithCount(4))
+            .itemOutputs(barsItem.copyWithCount(4))
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 8)
     }
 
@@ -1508,20 +1514,37 @@ const registerTFCRecipes = (event) => {
 
         const bellItem = ChemicalHelper.get(tagPrefix, material, 1)
 
-        event.recipes.tfc.casting(bellItem, 'tfc:ceramic/bell_mold', outputMaterial.getFluid(144), 1)
+        event.recipes.tfc.casting(bellItem, 'tfc:ceramic/bell_mold', Fluid.of(outputMaterial.getFluid(), 144), 1)
             .id(`tfc:casting/${material.getName()}_bell`)
 
         event.recipes.tfc.heating(bellItem, tfcProperty.getMeltTemp())
-            .resultFluid(outputMaterial.getFluid(144))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
             .id(`tfc:heating/${material.getName()}_bell`)
 
         event.recipes.create.filling(
-            Item.of('tfc:ceramic/bell_mold', getFillingNBT(outputMaterial, 144)), 
+            Item.of('tfc:ceramic/bell_mold', getFluidTankAsNBT(outputMaterial, 144)), 
             [
-                outputMaterial.getFluid(144), 
+                Fluid.of(outputMaterial.getFluid(), 144), 
                 Item.of('tfc:ceramic/bell_mold').strongNBT()
             ]
         ).id(`tfg:tfc/filling/${material.getName()}_bell_mold`)
+
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        if (ingotItem.isEmpty()) return
+
+        // Крафт в смелтере
+        event.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_bell_from_ingots`)
+            .itemInputs(ingotItem)
+            .notConsumable('tfg:bell_casting_mold')
+            .itemOutputs(bellItem)
+            .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 8)
+         
+        // Крафт в солидифаере
+        event.recipes.gtceu.fluid_solidifier(`tfg:${material.getName()}_bell_from_fluid`)
+            .inputFluids(Fluid.of(outputMaterial.getFluid(), 144))
+            .notConsumable('tfg:bell_casting_mold')
+            .itemOutputs(bellItem)
+            .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 8)
     }
 
     const processTFCSmallOres = (tagPrefix, tfcProperty, material, outputMaterial) => {
@@ -1564,23 +1587,23 @@ const registerTFCRecipes = (event) => {
             processDoubleIngot(TFGTagPrefix.ingotDouble, tfcProperty, material, outputMaterial)
             processPlate(TagPrefix.plate, tfcProperty, material, outputMaterial)
             processDoublePlate(TagPrefix.plateDouble, tfcProperty, material, outputMaterial)
-            // processRods(TagPrefix.rod, tfcProperty, material, outputMaterial)
-            // processLongRods(TagPrefix.rodLong, tfcProperty, material, outputMaterial)
-            // processBolts(TagPrefix.bolt, tfcProperty, material, outputMaterial)
-            // processScrews(TagPrefix.screw, tfcProperty, material, outputMaterial)
-            // processRings(TagPrefix.ring, tfcProperty, material, outputMaterial)
-            // processBlock(TagPrefix.block, tfcProperty, material, outputMaterial)
-            // processTinyDust(TagPrefix.dustTiny, tfcProperty, material, outputMaterial)
-            // processSmallDust(TagPrefix.dustSmall, tfcProperty, material, outputMaterial)
-            // processDust(TagPrefix.dust, tfcProperty, material, outputMaterial)
-            // processImpureDust(TagPrefix.dustImpure, tfcProperty, material, outputMaterial)
-            // processPurifiedDust(TagPrefix.dustPure, tfcProperty, material, outputMaterial)
-            // processCrushedOre(TagPrefix.crushed, tfcProperty, material, outputMaterial)
-            // processCrushedPurifiedOre(TagPrefix.crushedPurified, tfcProperty, material, outputMaterial)
-            // processCrushedRefinedOre(TagPrefix.crushedRefined, tfcProperty, material, outputMaterial)
-            // processRichRawOre(TFGTagPrefix.richRawOre, tfcProperty, material, outputMaterial)
-            // processNormalRawore(TagPrefix.rawOre, tfcProperty, material, outputMaterial)
-            // processPoorRawOre(TFGTagPrefix.poorRawOre, tfcProperty, material, outputMaterial)
+            processRods(TagPrefix.rod, tfcProperty, material, outputMaterial)
+            processLongRods(TagPrefix.rodLong, tfcProperty, material, outputMaterial)
+            processBolts(TagPrefix.bolt, tfcProperty, material, outputMaterial)
+            processScrews(TagPrefix.screw, tfcProperty, material, outputMaterial)
+            processRings(TagPrefix.ring, tfcProperty, material, outputMaterial)
+            processBlock(TagPrefix.block, tfcProperty, material, outputMaterial)
+            processTinyDust(TagPrefix.dustTiny, tfcProperty, material, outputMaterial)
+            processSmallDust(TagPrefix.dustSmall, tfcProperty, material, outputMaterial)
+            processDust(TagPrefix.dust, tfcProperty, material, outputMaterial)
+            processImpureDust(TagPrefix.dustImpure, tfcProperty, material, outputMaterial)
+            processPurifiedDust(TagPrefix.dustPure, tfcProperty, material, outputMaterial)
+            processCrushedOre(TagPrefix.crushed, tfcProperty, material, outputMaterial)
+            processCrushedPurifiedOre(TagPrefix.crushedPurified, tfcProperty, material, outputMaterial)
+            processCrushedRefinedOre(TagPrefix.crushedRefined, tfcProperty, material, outputMaterial)
+            processRichRawOre(TFGTagPrefix.richRawOre, tfcProperty, material, outputMaterial)
+            processNormalRawore(TagPrefix.rawOre, tfcProperty, material, outputMaterial)
+            processPoorRawOre(TFGTagPrefix.poorRawOre, tfcProperty, material, outputMaterial)
             
             // 1. Тип инструмента
             // 2. Префикс ассоциируемый с текущим предметом.
@@ -1589,49 +1612,49 @@ const registerTFCRecipes = (event) => {
             // 5. Материал в который объект должен быть преобразован после разборки.
             
             if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
-                // processToolSword(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, tfcProperty, material, outputMaterial)
-                // processToolPickaxe(GTToolType.PICKAXE, TagPrefix.toolHeadPickaxe, tfcProperty, material, outputMaterial)
-                // processToolAxe(GTToolType.AXE, TFGTagPrefix.toolHeadAxe, tfcProperty, material, outputMaterial)
-                // processToolShovel(GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, tfcProperty, material, outputMaterial)
-                // processToolHoe(GTToolType.HOE, TFGTagPrefix.toolHeadHoe, tfcProperty, material, outputMaterial)
-                // processToolKnife(GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, tfcProperty, material, outputMaterial)
-                // processToolMiningHammer(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, tfcProperty, material, outputMaterial)
-                // processToolScythe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, tfcProperty, material, outputMaterial) // because sense dont make sense
-                // processToolFile(GTToolType.FILE, TFGTagPrefix.toolHeadFile, tfcProperty, material, outputMaterial)
-                // processToolHammer(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, tfcProperty, material, outputMaterial)
-                // processToolSaw(GTToolType.SAW, TFGTagPrefix.toolHeadSaw, tfcProperty, material, outputMaterial)
-                // processToolButcheryKnife(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, tfcProperty, material, outputMaterial)
-                // processToolSpade(GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, tfcProperty, material, outputMaterial)
+                processToolSword(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, tfcProperty, material, outputMaterial)
+                processToolPickaxe(GTToolType.PICKAXE, TFGTagPrefix.toolHeadPickaxe, tfcProperty, material, outputMaterial)
+                processToolAxe(GTToolType.AXE, TFGTagPrefix.toolHeadAxe, tfcProperty, material, outputMaterial)
+                processToolShovel(GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, tfcProperty, material, outputMaterial)
+                processToolHoe(GTToolType.HOE, TFGTagPrefix.toolHeadHoe, tfcProperty, material, outputMaterial)
+                processToolKnife(GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, tfcProperty, material, outputMaterial)
+                processToolMiningHammer(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, tfcProperty, material, outputMaterial)
+                processToolScythe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, tfcProperty, material, outputMaterial) // because sense dont make sense
+                processToolFile(GTToolType.FILE, TFGTagPrefix.toolHeadFile, tfcProperty, material, outputMaterial)
+                processToolHammer(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, tfcProperty, material, outputMaterial)
+                processToolSaw(GTToolType.SAW, TFGTagPrefix.toolHeadSaw, tfcProperty, material, outputMaterial)
+                processToolButcheryKnife(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, tfcProperty, material, outputMaterial)
+                processToolSpade(GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, tfcProperty, material, outputMaterial)
     
-                // processToolPropick(TFGTagPrefix.toolHeadPropick, tfcProperty, material, outputMaterial)
-                // processToolJavelin(TFGTagPrefix.toolHeadJavelin, tfcProperty, material, outputMaterial)
-                // processToolChisel(TFGTagPrefix.toolHeadChisel, tfcProperty, material, outputMaterial)
-                // processToolMace(TFGTagPrefix.toolHeadMace, tfcProperty, material, outputMaterial)
+                processToolPropick(TFGTagPrefix.toolHeadPropick, tfcProperty, material, outputMaterial)
+                processToolJavelin(TFGTagPrefix.toolHeadJavelin, tfcProperty, material, outputMaterial)
+                processToolChisel(TFGTagPrefix.toolHeadChisel, tfcProperty, material, outputMaterial)
+                processToolMace(TFGTagPrefix.toolHeadMace, tfcProperty, material, outputMaterial)
 
-                // processToolShield(tfcProperty, material, outputMaterial)
-                // processToolFishingRod(tfcProperty, material, outputMaterial)
-                // processTuyere(tfcProperty, material, outputMaterial)
-                // processToolTongs(tfcProperty, material, outputMaterial)
+                processToolShield(tfcProperty, material, outputMaterial)
+                processToolFishingRod(tfcProperty, material, outputMaterial)
+                processTuyere(tfcProperty, material, outputMaterial)
+                processToolTongs(tfcProperty, material, outputMaterial)
             }
 
             if (material.hasFlag(TFGMaterialFlags.HAS_TFC_ARMOR)) {
-                // processTFCArmor(tfcProperty, material, outputMaterial)
+                processTFCArmor(tfcProperty, material, outputMaterial)
             }
             
-            // processTFCMetalBlocks(TFGTagPrefix.blockPlated, tfcProperty, material, outputMaterial)
-            // processTFCMetalStairs(TFGTagPrefix.stairPlated, tfcProperty, material, outputMaterial)
-            // processTFCMetalSlabs(TFGTagPrefix.slabPlated, tfcProperty, material, outputMaterial)
+            processTFCMetalBlocks(TFGTagPrefix.blockPlated, tfcProperty, material, outputMaterial)
+            processTFCMetalStairs(TFGTagPrefix.stairPlated, tfcProperty, material, outputMaterial)
+            processTFCMetalSlabs(TFGTagPrefix.slabPlated, tfcProperty, material, outputMaterial)
 
-            // processAnvils(TFGTagPrefix.anvil, tfcProperty, material, outputMaterial)
-            // processUnfinishedLamp(TFGTagPrefix.lampUnfinished, tfcProperty, material, outputMaterial)
-            // processLamps(TFGTagPrefix.lamp, tfcProperty, material, outputMaterial)
-            // processTrapdoors(TFGTagPrefix.trapdoor, tfcProperty, material, outputMaterial)
-            // processChains(TFGTagPrefix.chain, tfcProperty, material, outputMaterial)
-            // processBars(TFGTagPrefix.bars, tfcProperty, material, outputMaterial)
-            // processBell(TFGTagPrefix.bell, tfcProperty, material, outputMaterial)
+            processAnvils(TFGTagPrefix.anvil, tfcProperty, material, outputMaterial)
+            processUnfinishedLamp(TFGTagPrefix.lampUnfinished, tfcProperty, material, outputMaterial)
+            processLamps(TFGTagPrefix.lamp, tfcProperty, material, outputMaterial)
+            processTrapdoors(TFGTagPrefix.trapdoor, tfcProperty, material, outputMaterial)
+            processChains(TFGTagPrefix.chain, tfcProperty, material, outputMaterial)
+            processBars(TFGTagPrefix.bars, tfcProperty, material, outputMaterial)
+            processBell(TFGTagPrefix.bell, tfcProperty, material, outputMaterial)
             
-            // processTFCSmallOres(TFGTagPrefix.oreSmall, tfcProperty, material, outputMaterial)
-            // processTFCSmallNativeOres(TFGTagPrefix.oreSmallNative, tfcProperty, material, outputMaterial)
+            processTFCSmallOres(TFGTagPrefix.oreSmall, tfcProperty, material, outputMaterial)
+            processTFCSmallNativeOres(TFGTagPrefix.oreSmallNative, tfcProperty, material, outputMaterial)
         }
     })
     //#endregion
