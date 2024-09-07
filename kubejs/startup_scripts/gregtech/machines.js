@@ -38,7 +38,7 @@ const registerGregTechMachines = (event) => {
             .aisle("CWI", "CWA", "#W#")
             .where('A', Predicates.controller(Predicates.blocks(definition.get())))
             .where('I', Predicates.abilities(PartAbility.IMPORT_ITEMS).setExactLimit(1))
-            .where('W', Predicates.blocks(GTBlocks.COIL_CUPRONICKEL.get()))
+            .where('W', Predicates.blocks('tfg:copper_coil_block'))
             .where("C", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
             .where('#', Predicates.any())
             .where('K', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))

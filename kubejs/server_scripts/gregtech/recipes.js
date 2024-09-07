@@ -2,6 +2,675 @@
 
 const registerGregTechRecipes = (event) => {
     
+    //#region Крафты и раскрафты металлических предметов
+    const makeToolRecipe  = (toolType, headTagPrefix, material) => {
+        const toolItem = ToolHelper.get(toolType, material)
+        if (toolItem.isEmpty()) return
+
+        const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        if (toolHeadItem.isEmpty()) return
+
+        if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
+            event.shapeless(toolItem, [
+                '#forge:rods/wooden',
+                toolHeadItem
+            ]).id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
+        }
+        else {
+            event.recipes.tfc.advanced_shapeless_crafting(TFC.itemStackProvider.of(toolHeadItem).copyForgingBonus(), ['#forge:rods/wooden', toolHeadItem])
+                .id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
+        }
+    }
+
+    const processToolSword = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolPickaxe = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolAxe = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolShovel = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolHoe = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolKnife = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolFile = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolSaw = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolSpade = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolMiningHammer = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolScythe = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolHammer = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolButcheryKnife = (toolType, headTagPrefix, material) => {
+        makeToolRecipe(toolType, headTagPrefix, material)
+    }
+
+    const processToolMortar = (toolType, material) => {
+        const toolItem = ToolHelper.get(toolType, material)
+        if (toolItem.isEmpty()) return
+
+        const usableTagPrefix = material.hasProperty(PropertyKey.GEM) ? TagPrefix.gem : TagPrefix.ingot;
+        const usableItem = ChemicalHelper.get(usableTagPrefix, material, 1)
+
+        if (usableItem.isEmpty()) return
+
+        event.shaped(toolItem, [
+            ' A ',
+            'BAB',
+            'BBB' 
+        ], {
+            A: usableItem,
+            B: '#tfc:rock/raw',
+        }).id(`gtceu:shaped/mortar_${material.getName()}`)
+    }
+
+    const processNugget = (tagPrefix, material) => {
+        if (material != TFGMaterials.Unknown) return
+
+        const item = ChemicalHelper.get(tagPrefix, material, 1)
+        if (item.isEmpty()) return
+
+        event.remove({ id: `gtceu:alloy_smelter/alloy_smelt_${material.getName()}_to_nugget` })
+        event.remove({ id: `gtceu:fluid_solidifier/solidify_${material.getName()}_to_nugget` })
+    }
+
+    const processIngot = (tagPrefix, material) => {
+        const ingotItem = ChemicalHelper.get(tagPrefix, material, 1)
+
+        if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) 
+        {
+            const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
+            const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
+
+            let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
+
+            if (!plateStack.isEmpty()) {
+                
+                // Слиток -> Стержень
+                event.recipes.createPressing(plateStack.withChance(0.8), ingotItem)
+                    .id(`tfg:pressing/${material.getName()}_plate`)
+    
+                if (!blockStack.isEmpty()) {
+                    
+                    // 9х Слиток -> Блок
+                    event.recipes.createCompacting(blockStack, ingotItem.withCount(matAmount))
+                        .heated()
+                        .id(`tfg:compacting/${material.getName()}_block`)
+                }
+            }
+            else
+            {
+                if (!blockStack.isEmpty()) {
+                    
+                    // Блок из гемов -> 9 Пластин
+                    event.recipes.createCutting(plateStack.withCount(matAmount).withChance(0.65), blockStack)
+                        .id(`tfg:cutting/${material.getName()}_plate`)
+                }
+                
+            }
+            
+        }
+
+        
+    }
+
+    const processPlate = (tagPrefix, material) => {
+        const item = ChemicalHelper.get(tagPrefix, material, 1)
+        if (item.isEmpty()) return
+
+        event.remove({ id: `gtceu:shaped/plate_${material.getName()}` })
+    }
+
+    const processPlateDouble = (tagPrefix, material) => {
+        const item = ChemicalHelper.get(tagPrefix, material, 1)
+        if (item.isEmpty()) return
+
+        event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
+    }
+
+    const processBlock = (tagPrefix, material) => {
+        const item = ChemicalHelper.get(tagPrefix, material, 1)
+        if (item.isEmpty()) return
+
+        event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_block` })
+    }
+
+    const processRod = (tagPrefix, material) => {
+        const rodItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (rodItem.isEmpty()) return
+        
+        const ingotItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (ingotItem.isEmpty()) return
+
+        if (!material.hasFlag(MaterialFlags.GENERATE_ROD) || material == GTMaterials.Wood) return
+        if (ingotItem.isEmpty() || rodItem.isEmpty()) return
+
+        // Прокатка стержней
+        event.custom({
+            type: "createaddition:rolling",
+            input: ingotItem.toJson(),
+            result: rodItem.toJson()
+        }).id(`tfg:rolling/${material.getName()}_rod`)
+    }
+
+    const processRodLong = (tagPrefix, material) => {
+        const item = ChemicalHelper.get(tagPrefix, material, 1)
+        if (item.isEmpty()) return
+
+        event.remove({ id: `gtceu:shaped/stick_long_stick_${material.getName()}` })
+    }
+
+    const processPoorRawOre = (tagPrefix, material) => {
+        const poorOreItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (poorOreItem.isEmpty()) return
+        
+        const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+        if (crushedOreItem.isEmpty()) return
+
+        // Бедная сырая руда -> Дробленная руда (75%)
+        event.recipes.createCrushing([crushedOreItem.withChance(0.75)], poorOreItem)
+            .processingTime(200)
+            .id(`tfg:crushing/${material.getName()}_crushed_ore_from_poor_raw_ore`)
+    }
+
+    const processNormalRawOre = (tagPrefix, material) => {
+        const normalOreItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (normalOreItem.isEmpty()) return
+        
+        const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+        if (crushedOreItem.isEmpty()) return
+
+        // Нормальная сырая руда -> Дробленная руда + Дробленная руда (20%)
+        event.recipes.createCrushing([crushedOreItem, crushedOreItem.withChance(0.2)], normalOreItem)
+            .processingTime(200)
+            .id(`tfg:crushing/${material.getName()}_crushed_ore_from_normal_raw_ore`)
+    }
+
+    const processRichRawOre = (tagPrefix, material) => {
+        const richOreItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (richOreItem.isEmpty()) return
+        
+        const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+        if (crushedOreItem.isEmpty()) return
+        
+        // Богатая сырая руда -> Дробленная руда + Дробленная руда (20%)
+        event.recipes.createCrushing([crushedOreItem, crushedOreItem, crushedOreItem.withChance(0.2)], richOreItem)
+            .processingTime(200)
+            .id(`tfg:crushing/${material.getName()}_crushed_ore_from_rich_raw_ore`)
+    }
+
+    const processCrushedDust = (tagPrefix, material) => {
+        const crushedDustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (crushedDustItem.isEmpty()) return
+        
+        const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
+        if (pureDustItem.isEmpty()) return
+
+        // Дробленная руда -> Очищенная руда (90%)
+        event.recipes.createSplashing(pureDustItem.withChance(0.9), crushedDustItem)
+            .id(`tfg:splashing/${material.getName()}_purified_ore`)
+
+        // Дробленная руда -> Очищенная руда
+        event.custom({
+            type: "ae2:transform",
+            circumstance: {
+                type: "fluid",
+                tag: "tfc:water"
+            },
+            ingredients: [
+                crushedDustItem.toJson()
+            ],
+            result: pureDustItem.toJson()
+        }).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
+    }
+
+    const processImpureDust = (tagPrefix, material) => {
+        const impureDustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (impureDustItem.isEmpty()) return
+        
+        const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        // Грязная пыль -> Пыль (90%)
+        event.recipes.createSplashing(dustItem.withChance(0.9), impureDustItem)
+            .id(`tfg:splashing/${material.getName()}_dust_from_impure`)
+
+        // Грязная пыль -> Пыль
+        event.custom({
+            type: "ae2:transform",
+            circumstance: {
+                type: "fluid",
+                tag: "tfc:water"
+            },
+            ingredients: [
+                impureDustItem.toJson()
+            ],
+            result: dustItem.toJson()
+        }).id(`tfg:ae_transform/${material.getName()}_dust_from_impure`)
+    }
+
+    const processPureDust = (tagPrefix, material) => {
+        const pureDust = ChemicalHelper.get(tagPrefix, material, 1)
+        if (pureDust.isEmpty()) return
+        
+        const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        // Очищенная пыль -> Пыль (90%)
+        event.recipes.createSplashing(dustItem.withChance(0.9), pureDust)
+            .id(`tfg:splashing/${material.getName()}_dust_from_pure`)
+
+        // Очищенная пыль -> Пыль
+        event.custom({
+            type: "ae2:transform",
+            circumstance: {
+                type: "fluid",
+                tag: "tfc:water"
+            },
+            ingredients: [
+                pureDust.toJson()
+            ],
+            result: dustItem.toJson()
+        }).id(`tfg:ae_transform/${material.getName()}_dust_from_pure`)
+    }
+
+    const processDust = (tagPrefix, material) => {
+        const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
+        if (dustItem.isEmpty()) return
+        
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+        const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
+
+        if (!ingotItem.isEmpty()) {
+            event.recipes.createCrushing(dustItem, ingotItem)
+                .processingTime(250)
+                .id(`tfg:crushing/${material.getName()}_dust`)
+        }
+        
+        if (!gemItem.isEmpty()) {
+            event.recipes.createMilling(dustItem, gemItem)
+                .processingTime(200)
+                .id(`tfg:milling/${material.getName()}_dust`)
+        }
+    }    
+
+    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+        const toolProperty = material.getProperty(PropertyKey.TOOL)
+        const ingotProperty = material.getProperty(PropertyKey.INGOT)
+        const oreProperty = material.getProperty(PropertyKey.ORE)
+
+        if (toolProperty != null) {
+            processToolSword(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, material)
+            processToolPickaxe(GTToolType.PICKAXE, TFGTagPrefix.toolHeadPickaxe, material)
+            processToolAxe(GTToolType.AXE, TFGTagPrefix.toolHeadAxe, material)
+            processToolShovel(GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, material)
+            processToolHoe(GTToolType.HOE, TFGTagPrefix.toolHeadHoe, material)
+            processToolKnife(GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, material)
+            processToolFile(GTToolType.FILE, TFGTagPrefix.toolHeadFile, material)
+            processToolSaw(GTToolType.SAW, TFGTagPrefix.toolHeadSaw, material)
+            processToolSpade(GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, material)
+            processToolMiningHammer(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, material)
+            processToolScythe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, material)
+            processToolHammer(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, material)
+            processToolButcheryKnife(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, material)
+            processToolMortar(GTToolType.MORTAR, material)
+        }
+
+        if (ingotProperty != null) {
+            processNugget(TagPrefix.nugget, material)
+            processIngot(TagPrefix.ingot, material)
+            processPlate(TagPrefix.plate, material)
+            processPlateDouble(TagPrefix.plateDouble, material)
+            processBlock(TagPrefix.block, material)
+            processRod(TagPrefix.rod, material)
+            processRodLong(TagPrefix.rodLong, material)
+        }
+
+        if (oreProperty != null) {
+            processPoorRawOre(TFGTagPrefix.poorRawOre, material)
+            processNormalRawOre(TagPrefix.rawOre, material)
+            processRichRawOre(TFGTagPrefix.richRawOre, material)
+
+            processCrushedDust(TagPrefix.crushed, material)
+            processImpureDust(TagPrefix.dustImpure, material)
+            processPureDust(TagPrefix.dustPure, material)
+            processDust(TagPrefix.dust, material)
+        }
+        
+    })
+    //#endregion
+
+    //#region Раскрафт камня стоунтайпов
+    // Gabbro
+    event.recipes.gtceu.centrifuge(`tfg:gabbro_dust_separation`)             
+        .itemInputs('tfg:gabbro_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Titanium, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Iron, 3700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1700, 700)
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Shale
+    event.recipes.gtceu.centrifuge(`tfg:shale_dust_separation`)             
+        .itemInputs('tfg:shale_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Sodium, 7500, 500)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1500, 500)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 16))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Claystone
+    event.recipes.gtceu.centrifuge(`tfg:claystone_dust_separation`)             
+        .itemInputs('tfg:claystone_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Aluminium, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Silicon, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Hematite, 6700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 5))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Limestone
+    event.recipes.gtceu.centrifuge(`tfg:limestone_dust_separation`)             
+        .itemInputs('tfg:limestone_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Calcium, 8700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 36))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Conglomerate
+    event.recipes.gtceu.centrifuge(`tfg:conglomerate_dust_separation`)             
+        .itemInputs('tfg:conglomerate_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Hematite, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Silicon, 4700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.TricalciumPhosphate, 3700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 5))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Dolomite
+    event.recipes.gtceu.centrifuge(`tfg:dolomite_dust_separation`)             
+        .itemInputs('tfg:dolomite_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Magnesium, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Calcium, 5700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 3700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 16))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Chert
+    event.recipes.gtceu.centrifuge(`tfg:chert_dust_separation`)             
+        .itemInputs('tfg:chert_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Silicon, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 5700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 24))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Chalk
+    event.recipes.gtceu.centrifuge(`tfg:chalk_dust_separation`)             
+        .itemInputs('tfg:chalk_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Calcium, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Carbon, 3700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 12))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Rhyolite
+    event.recipes.gtceu.centrifuge(`tfg:rhyolite_dust_separation`)             
+        .itemInputs('tfg:rhyolite_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.SiliconDioxide, 8700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 800, 700)
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Dacite
+    event.recipes.gtceu.centrifuge(`tfg:dacite_dust_separation`)             
+        .itemInputs('tfg:dacite_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Sodium, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Calcium, 5700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.SiliconDioxide, 4700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Aluminium, 3700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 150, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 12))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Slate
+    event.recipes.gtceu.centrifuge(`tfg:slate_dust_separation`)             
+        .itemInputs('tfg:slate_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 780, 480)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 6))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Phyllite
+    event.recipes.gtceu.centrifuge(`tfg:phyllite_dust_separation`)             
+        .itemInputs('tfg:phyllite_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Quartzite, 5700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.CalciumChloride, 1700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 2))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Schist
+    event.recipes.gtceu.centrifuge(`tfg:schist_dust_separation`)             
+        .itemInputs('tfg:schist_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Mica, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Talc, 5700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Graphite, 4700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.MetalMixture, 780, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 12))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+
+    // Gneiss
+    event.recipes.gtceu.centrifuge(`tfg:gneiss_dust_separation`)             
+        .itemInputs('tfg:gneiss_dust')
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Quartzite, 6700, 700)
+        .chancedOutput(TagPrefix.dustTiny, GTMaterials.Biotite, 3700, 700)
+        .outputFluids(Fluid.of(GTMaterials.Oxygen.getFluid(), 2))
+        .EUt(GTValues.VA[GTValues.MV]).duration(480)
+    //#endregion
+
+    //#region Молды крафты, дубляжи
+
+        //    private static void registerExtruderMoldRecipes(Consumer<FinishedRecipe> provider) {
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_mining_hammer_head"),
+    //                SHAPE_EXTRUDER_MINING_HAMMER_HEAD.asStack(),
+    //                "Sfh", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_sword_head"),
+    //                SHAPE_EXTRUDER_SWORD_HEAD.asStack(),
+    //                "Shf", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_pickaxe_head"),
+    //                SHAPE_EXTRUDER_PICKAXE_HEAD.asStack(),
+    //                "S  ", "hf ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_axe_head"),
+    //                SHAPE_EXTRUDER_AXE_HEAD.asStack(),
+    //                "S  ", " fh", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_hoe_head"),
+    //                SHAPE_EXTRUDER_HOE_HEAD.asStack(),
+    //                "S  ", " hf", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_scythe_head"),
+    //                SHAPE_EXTRUDER_SCYTHE_HEAD.asStack(),
+    //                "S  ", "   ", "fh ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_file_head"),
+    //                SHAPE_EXTRUDER_FILE_HEAD.asStack(),
+    //                "S  ", "   ", "hf ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_hammer_head"),
+    //                SHAPE_EXTRUDER_HAMMER_HEAD.asStack(),
+    //                "Sf ", " h ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_saw_head"),
+    //                SHAPE_EXTRUDER_SAW_HEAD.asStack(),
+    //                "Sh ", " f ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_knife_head"),
+    //                SHAPE_EXTRUDER_KNIFE_HEAD.asStack(),
+    //                "S f", "   ", "  h", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_butchery_head_head"),
+    //                SHAPE_EXTRUDER_BUTCHERY_KNIFE_HEAD.asStack(),
+    //                "S h", "   ", "  f", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_shovel_head"),
+    //                SHAPE_EXTRUDER_SHOVEL_HEAD.asStack(),
+    //                "S  ", "f  ", "h  ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_spade_head"),
+    //                SHAPE_EXTRUDER_SPADE_HEAD.asStack(),
+    //                "S  ", "f  ", "  h", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_propick_head"),
+    //                SHAPE_EXTRUDER_PROPICK_HEAD.asStack(),
+    //                "Sxf", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_javelin_head"),
+    //                SHAPE_EXTRUDER_JAVELIN_HEAD.asStack(),
+    //                "S x", "f  ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_chisel_head"),
+    //                SHAPE_EXTRUDER_CHISEL_HEAD.asStack(),
+    //                "S  ", "xf ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_extruder_mace_head"),
+    //                SHAPE_EXTRUDER_MACE_HEAD.asStack(),
+    //                "S  ", " xf", "   ", 'S', SHAPE_EMPTY.asStack());
+    //    }
+    
+    //    private static void registerCastingMoldRecipes(Consumer<FinishedRecipe> provider) {
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_mold_unfinished_lamp"),
+    //                SHAPE_MOLD_UNFINISHED_LAMP.asStack(),
+    //                "Sh ", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_mold_trapdoor"),
+    //                SHAPE_MOLD_TRAPDOOR.asStack(),
+    //                "S h", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_mold_chain"),
+    //                SHAPE_MOLD_CHAIN.asStack(),
+    //                "S  ", "h  ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //
+    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
+    //                TFGCore.id("shape_mold_bell"),
+    //                SHAPE_MOLD_BELL.asStack(),
+    //                "S  ", " h ", "   ", 'S', SHAPE_EMPTY.asStack());
+    //    }
+
+    //#endregion
+
+    //#region оставшееся под разобрать
+
+        //    private static void registerExtruderMoldCopyingRecipes(Consumer<FinishedRecipe> provider) {
+    //        for (var shapeMold : TFGItems.SHAPE_EXTRUDERS) {
+    //            FORMING_PRESS_RECIPES.recipeBuilder(TFGCore.id("copy_mold_" + shapeMold.get()))
+    //                    .duration(120).EUt(22)
+    //                    .notConsumable(shapeMold)
+    //                    .inputItems(SHAPE_EMPTY)
+    //                    .outputItems(shapeMold)
+    //                    .save(provider);
+    //        }
+    //    }
+    
+    //    private static void registerCastingMoldCopyingRecipes(Consumer<FinishedRecipe> provider) {
+    //        for (var shapeMold : TFGItems.SHAPE_MOLDS) {
+    //            FORMING_PRESS_RECIPES.recipeBuilder(TFGCore.id("copy_mold_" + shapeMold.get() + "_casting_mold"))
+    //                    .duration(120).EUt(22)
+    //                    .notConsumable(shapeMold)
+    //                    .inputItems(SHAPE_EMPTY)
+    //                    .outputItems(shapeMold)
+    //                    .save(provider);
+    //        }
+    //    }
+    
+    
+    //    private static void processDoubleIngot(TagPrefix prefix, Material material, TFCProperty property, Consumer<FinishedRecipe> provider) {
+    //        var ingotStack = ChemicalHelper.get(ingot, material);
+    //        var doubleIngotStack = ChemicalHelper.get(prefix, material);
+    //
+    //        EXTRACTOR_RECIPES.recipeBuilder(TFGCore.id("extract_" + material.getName() + "_double_ingot"))
+    //                .EUt(VA[ULV]).duration((int) material.getMass())
+    //                .inputItems(doubleIngotStack)
+    //                .outputFluids(material.getFluid(288))
+    //                .save(provider);
+    //
+    //        MACERATOR_RECIPES.recipeBuilder(TFGCore.id("macerate_" + material.getName() + "_double_ingot"))
+    //                .EUt(VA[ULV]).duration((int) material.getMass())
+    //                .inputItems(doubleIngotStack)
+    //                .outputItems(dust, material, 2)
+    //                .save(provider);
+    //    }
+    
+    
+    //    private static void processToolHead(TagPrefix prefix, Material material, ItemEntry<Item> extruderShape, int circuitValue, Consumer<FinishedRecipe> consumer) {
+    //        var output = ChemicalHelper.get(prefix, material);
+    //        if (output.isEmpty()) return;
+    //
+    //        if (material.hasProperty(PropertyKey.INGOT)) {
+    //            EXTRUDER_RECIPES.recipeBuilder(TFGCore.id("extrude_" + material.getName() + "_ingot_to_" + prefix.name().toLowerCase() + "_head"))
+    //                    .duration(12).EUt(32)
+    //                    .notConsumable(extruderShape)
+    //                    .inputItems(ingot, material, (int) (prefix.materialAmount() / GTValues.M))
+    //                    .outputItems(output)
+    //                    .save(consumer);
+    //        } else if (material.hasProperty(PropertyKey.GEM)) {
+    //            LASER_ENGRAVER_RECIPES.recipeBuilder(TFGCore.id("engrave_" + material.getName() + "_gem_to_" + prefix.name().toLowerCase() + "_head"))
+    //                    .duration(12).EUt(32)
+    //                    .circuitMeta(circuitValue)
+    //                    .notConsumable(ChemicalHelper.get(TagPrefix.lens, Glass))
+    //                    .inputItems(gem, material, (int) (prefix.materialAmount() / GTValues.M))
+    //                    .outputItems(output)
+    //                    .save(consumer);
+    //        }
+    //    }
+
+
+    //#endregion
+
     //#region Рецепты электрического генератора
 
     //todo: nerf
@@ -1263,780 +1932,4 @@ const registerGregTechRecipes1 = (event) => {
         .itemOutputs('gtceu:sticky_resin')
         .duration(480)
         .EUt(7)
-
-
-    //#region Рецепты, которые итерируются по всем материалам
-
-    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-        //#region Рецепты инструментов
-        
-        if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
-            global.GTCEU_ANVIL_TOOL_TYPES.forEach(toolType => {
-                let toolStack = ToolHelper.get(toolType, material)
-
-                event.recipes.tfc.advanced_shaped_crafting(TFC.itemStackProvider.of(toolStack).copyForgingBonus(), [
-                    'A',
-                    'B'
-                ], {
-                    A: `gtceu:${material.getName()}_${toolType.name}_head`,
-                    B: '#forge:rods/wooden'
-                }, 0, 0).id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-    
-            })
-        }
-    
-        //#endregion
-
-        if (material.hasProperty(PropertyKey.ORE)) 
-        {
-            let poorRawStack = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
-            let normalRawStack = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
-            let richRawStack = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
-
-            let crushedOreStack = ChemicalHelper.get(TagPrefix.crushed, material, 1)
-            let purifiedOreStack = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
-            let impureDustStack = ChemicalHelper.get(TagPrefix.dustImpure, material, 1)
-            let pureDustStack = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
-            let dustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
-
-            // Бедная сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing(crushedOreStack.withChance(0.75), poorRawStack)
-                .processingTime(200)
-                .id(`tfg:crushing/${material.getName()}_crushed_ore_from_poor_raw_ore`)
-
-            // Нормальная сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([crushedOreStack, crushedOreStack.withChance(0.2)], normalRawStack)
-                .processingTime(200)
-                .id(`tfg:crushing/${material.getName()}_crushed_ore_from_normal_raw_ore`)
-
-            // Богатая сырая руда -> Дробленная руда + Дробленная руда (30%)
-            event.recipes.createCrushing([crushedOreStack, crushedOreStack, crushedOreStack.withChance(0.2)], richRawStack)
-                .processingTime(200)
-                .id(`tfg:crushing/${material.getName()}_crushed_ore_from_rich_raw_ore`)
-
-            // Грязная пыль -> Пыль (90%)
-            event.recipes.createSplashing(dustStack.withChance(0.9), impureDustStack)
-                .id(`tfg:splashing/${material.getName()}_dust_from_impure`)
-
-            // Очищенная пыль -> Пыль (90%)
-            event.recipes.createSplashing(dustStack.withChance(0.9), pureDustStack)
-                .id(`tfg:splashing/${material.getName()}_dust_from_pure`)
-
-            // Дробленная руда -> Очищенная руда (90%)
-            event.recipes.createSplashing(purifiedOreStack.withChance(0.9), crushedOreStack)
-                .id(`tfg:splashing/${material.getName()}_purified_ore`)
-
-            // Грязная пыль -> Пыль
-            event.custom({
-                type: "ae2:transform",
-                circumstance: {
-                    type: "fluid",
-                    tag: "minecraft:water"
-                },
-                ingredients: [
-                    impureDustStack.toJson()
-                ],
-                result: dustStack.toJson()
-            }).id(`tfg:ae_transform/${material.getName()}_dust_from_impure`)
-
-            // Очищенная пыль -> Пыль
-            event.custom({
-                type: "ae2:transform",
-                circumstance: {
-                    type: "fluid",
-                    tag: "minecraft:water"
-                },
-                ingredients: [
-                    pureDustStack.toJson()
-                ],
-                result: dustStack.toJson()
-            }).id(`tfg:ae_transform/${material.getName()}_dust_from_pure`)
-
-            // Дробленная руда -> Очищенная руда
-            event.custom({
-                type: "ae2:transform",
-                circumstance: {
-                    type: "fluid",
-                    tag: "minecraft:water"
-                },
-                ingredients: [
-                    crushedOreStack.toJson()
-                ],
-                result: purifiedOreStack.toJson()
-            }).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
-        }
-
-        let ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-
-        if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) 
-        {
-            let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
-            let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
-
-            let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
-
-            if (material.hasProperty(PropertyKey.INGOT))
-            {
-                if (!plateStack.isEmpty()) {
-                    // Слиток -> Стержень
-                    event.recipes.createPressing(plateStack.withChance(0.8), ingotStack)
-                    .id(`tfg:pressing/${material.getName()}_plate`)
-
-                    if (!blockStack.isEmpty()) {
-                    // 9х Слиток -> Блок
-                    event.recipes.createCompacting(blockStack, ingotStack.withCount(matAmount))
-                        .heated()
-                        .id(`tfg:compacting/${material.getName()}_block`)
-                    }
-                }
-                
-                
-            }
-            else
-            {
-                if (!blockStack.isEmpty()) {
-                    // Блок из гемов -> 9 Пластин
-                    event.recipes.createCutting(Item.of(plateStack.withCount(matAmount)).withChance(0.65), `#forge:storage_blocks/${material.getName()}`)
-                        .id(`tfg:cutting/${material.getName()}_plate`)
-                }
-                
-            }
-        }
-
-        // Прокатка стержней
-        if (material.hasFlag(MaterialFlags.GENERATE_ROD) && material != GTMaterials.Wood)
-        {
-            let rodStack = ChemicalHelper.get(TagPrefix.rod, material, 2)
-
-            if (!ingotStack.isEmpty() && !rodStack.isEmpty()) {
-
-                event.custom({
-                    type: "createaddition:rolling",
-                    input: ingotStack.toJson(),
-                    result: rodStack.toJson()
-                }).id(`tfg:rolling/${material.getName()}_rod`)
-
-            }
-
-            
-        }
-
-        
-        let gemStack = ChemicalHelper.get(TagPrefix.gem, material, 1)
-        let dustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
-
-        if (!dustStack.isEmpty()) {
-            
-            if (!ingotStack.isEmpty()) {
-                event.recipes.createCrushing(dustStack, ingotStack)
-                    .processingTime(250)
-                    .id(`tfg:crushing/${material.getName()}_dust`)
-            }
-            
-            if (!gemStack.isEmpty()) {
-                event.recipes.createMilling(dustStack, gemStack)
-                    .processingTime(200)
-                    .id(`tfg:milling/${material.getName()}_dust`)
-            }
-            
-        }
-        
-    });
-
-    //#endregion
 }
-
-
-
-
-
-
-//    /**
-//     * Отключение рецепта генерации nugget'ов из слитков, если nugget'а нет.
-//     */
-//    @Redirect(method = "processIngot", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/builder/GTRecipeBuilder;save(Ljava/util/function/Consumer;)V", ordinal = 3), remap = false)
-//    private static void tfg$processIngot$gtRecipeBuilder$save$nugget(GTRecipeBuilder instance, Consumer<FinishedRecipe> consumer, TagPrefix ingotPrefix, Material material, IngotProperty property) {
-//        if (!ChemicalHelper.get(TagPrefix.nugget, material).isEmpty()) {
-//            instance.save(consumer);
-//        }
-//    }
-//
-//    /**
-//     * В GT при добавлении предмета в output или input сразу проверяется empty ли он,
-//     * чтобы отключить рецепт не хватит просто его не сохранять в некоторых случаях.
-//     * Если output'а или input'а нет, то нужно будет еще задать условие и какой-то предмет который существует,
-//     * собственно это мы тут и делаем.
-//     */
-//    @Redirect(method = "processIngot", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/builder/GTRecipeBuilder;outputItems(Lcom/gregtechceu/gtceu/api/data/tag/TagPrefix;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;I)Lcom/gregtechceu/gtceu/data/recipe/builder/GTRecipeBuilder;", ordinal = 1), remap = false)
-//    private static GTRecipeBuilder tfg$processIngot$gtRecipeBuilder$outputItems(GTRecipeBuilder instance, TagPrefix orePrefix, Material material, int count) {
-//        if (!ChemicalHelper.get(TagPrefix.nugget, material).isEmpty()) {
-//            instance.outputItems(TagPrefix.nugget, material, 9);
-//        }
-//        return instance;
-//    }
-//
-//    /**
-//     * Отключение генерации рецептов: 2 слитка + молот = пластина (верстак).
-//     * */
-//    @Redirect(method = "processIngot", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/VanillaRecipeHelper;addShapedRecipe(Ljava/util/function/Consumer;Ljava/lang/String;Lnet/minecraft/world/item/ItemStack;[Ljava/lang/Object;)V", ordinal = 2), remap = false)
-//    private static void tfg$processIngot$addShapedRecipe$plate(Consumer<FinishedRecipe> provider, String regName, ItemStack result, Object[] recipe) {}
-//
-//    /**
-//     * Отключение генерации рецептов: 9 слитков -> блок. (Компрессор)
-//     */
-//    @Redirect(method = "processIngot", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/builder/GTRecipeBuilder;save(Ljava/util/function/Consumer;)V", ordinal = 5), remap = false)
-//    private static void tfg$processIngot$gtRecipeBuilder$save$block(GTRecipeBuilder instance, Consumer<FinishedRecipe> consumer) {}
-
-//    /**
-//     * Отключение генерации рецептов: 2 пластины + молот = двойная пластина (верстак).
-//     * */
-//    @Redirect(method = "processPlateDouble", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/VanillaRecipeHelper;addShapedRecipe(Ljava/util/function/Consumer;Ljava/lang/String;Lnet/minecraft/world/item/ItemStack;[Ljava/lang/Object;)V"), remap = false)
-//    private static void tfg$processPlateDouble$vanillaRecipeHelper$addShapedRecipe$doublePlate(Consumer<FinishedRecipe> provider, String regName, ItemStack result, Object[] recipe) {}
-//
-//    /**
-//     * Отключение генерации рецептов: 2 стержня + молот = длинный стержень (верстак).
-//     * */
-//    @Redirect(method = "processLongStick", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/VanillaRecipeHelper;addShapedRecipe(Ljava/util/function/Consumer;Ljava/lang/String;Lnet/minecraft/world/item/ItemStack;[Ljava/lang/Object;)V", ordinal = 3), remap = false)
-//    private static void tfg$processLongStick$vanillaRecipeHelper$addShapedRecipe$longStick(Consumer<FinishedRecipe> provider, String regName, ItemStack result, Object[] recipe) {}
-
-//public static void init(Consumer<FinishedRecipe> provider) {
-    //        registerTFCRockDecompositionRecipes(provider);
-    //        registerExtruderMoldRecipes(provider);
-    //        registerCastingMoldRecipes(provider);
-    //        registerExtruderMoldCopyingRecipes(provider);
-    //        registerCastingMoldCopyingRecipes(provider);
-    //        registerProcessingToolHeadsRecipes(provider);
-    //        registerTagPrefixHandlerRecipes(provider);
-    //    }
-    
-    //    private static void registerTFCRockDecompositionRecipes(Consumer<FinishedRecipe> provider) {
-    //        // Gabbro
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("gabbro_dust_separation"))
-    //                .EUt(VA[MV]).duration(480)
-    //                .inputItems(dust, Gabbro)
-    //                .chancedOutput(dustTiny, Titanium, 6700, 700)
-    //                .chancedOutput(dustTiny, Iron, 3700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 1700, 700)
-    //                .save(provider);
-    //
-    //        // Shale
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("shale_dust_separation"))
-    //                .EUt(VA[MV]).duration(480)
-    //                .inputItems(dust, Shale)
-    //                .chancedOutput(dustTiny, Sodium, 7500, 500)
-    //                .chancedOutput(dustTiny, MetalMixture, 1500, 500)
-    //                .outputFluids(Oxygen.getFluid(16))
-    //                .save(provider);
-    //
-    //        // Claystone
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("claystone_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Claystone)
-    //                .chancedOutput(dustTiny, Aluminium, 6700, 700)
-    //                .chancedOutput(dustTiny, Silicon, 6700, 700)
-    //                .chancedOutput(dustTiny, Hematite, 6700, 700)
-    //                .outputFluids(Oxygen.getFluid(5))
-    //                .save(provider);
-    //
-    //        // Limestone
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("limestone_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Limestone)
-    //                .chancedOutput(dustTiny, Calcium, 8700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 1700, 700)
-    //                .outputFluids(Oxygen.getFluid(36))
-    //                .save(provider);
-    //
-    //        // Conglomerate
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("conglomerate_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Conglomerate)
-    //                .chancedOutput(dustTiny, Hematite, 6700, 700)
-    //                .chancedOutput(dustTiny, Silicon, 4700, 700)
-    //                .chancedOutput(dustTiny, TricalciumPhosphate, 3700, 700)
-    //                .outputFluids(Oxygen.getFluid(5))
-    //                .save(provider);
-    //
-    //        // Dolomite
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("dolomite_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Dolomite)
-    //                .chancedOutput(dustTiny, Magnesium, 6700, 700)
-    //                .chancedOutput(dustTiny, Calcium, 5700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 3700, 700)
-    //                .outputFluids(Oxygen.getFluid(16))
-    //                .save(provider);
-    //
-    //        // Chert
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("chert_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Chert)
-    //                .chancedOutput(dustTiny, Silicon, 6700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 5700, 700)
-    //                .outputFluids(Oxygen.getFluid(24))
-    //                .save(provider);
-    //
-    //        // Chalk
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("chalk_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Chalk)
-    //                .chancedOutput(dustTiny, Calcium, 6700, 700)
-    //                .chancedOutput(dustTiny, Carbon, 3700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 1700, 700)
-    //                .outputFluids(Oxygen.getFluid(12))
-    //                .save(provider);
-    //
-    //        // Rhyolite
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("rhyolite_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Rhyolite)
-    //                .chancedOutput(dustTiny, SiliconDioxide, 8700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 800, 700)
-    //                .save(provider);
-    //
-    //        // Dacite
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("dacite_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Dacite)
-    //                .chancedOutput(dustTiny, Sodium, 6700, 700)
-    //                .chancedOutput(dustTiny, Calcium, 5700, 700)
-    //                .chancedOutput(dustTiny, SiliconDioxide, 4700, 700)
-    //                .chancedOutput(dustTiny, Aluminium, 3700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 150, 700)
-    //                .outputFluids(Oxygen.getFluid(12))
-    //                .save(provider);
-    //
-    //        // Slate
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("slate_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Slate)
-    //                .chancedOutput(dustTiny, MetalMixture, 780, 480)
-    //                .outputFluids(Oxygen.getFluid(6))
-    //                .save(provider);
-    //
-    //        // Phyllite
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("phyllite_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Phyllite)
-    //                .chancedOutput(dustTiny, Quartzite, 5700, 700)
-    //                .chancedOutput(dustTiny, CalciumChloride, 1700, 700)
-    //                .outputFluids(Oxygen.getFluid(2))
-    //                .save(provider);
-    //
-    //        // Schist
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("schist_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Schist)
-    //                .chancedOutput(dustTiny, Mica, 6700, 700)
-    //                .chancedOutput(dustTiny, Talc, 5700, 700)
-    //                .chancedOutput(dustTiny, Graphite, 4700, 700)
-    //                .chancedOutput(dustTiny, MetalMixture, 780, 700)
-    //                .outputFluids(Oxygen.getFluid(12))
-    //                .save(provider);
-    //
-    //        // Gneiss
-    //        CENTRIFUGE_RECIPES.recipeBuilder(TFGCore.id("gneiss_dust_separation"))
-    //                .duration(480).EUt(VA[MV])
-    //                .inputItems(dust, Gneiss)
-    //                .chancedOutput(dustTiny, Quartzite, 6700, 700)
-    //                .chancedOutput(dustTiny, Biotite, 3700, 700)
-    //                .outputFluids(Oxygen.getFluid(2))
-    //                .save(provider);
-    //    }
-    
-    //    private static void registerExtruderMoldRecipes(Consumer<FinishedRecipe> provider) {
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_mining_hammer_head"),
-    //                SHAPE_EXTRUDER_MINING_HAMMER_HEAD.asStack(),
-    //                "Sfh", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_sword_head"),
-    //                SHAPE_EXTRUDER_SWORD_HEAD.asStack(),
-    //                "Shf", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_pickaxe_head"),
-    //                SHAPE_EXTRUDER_PICKAXE_HEAD.asStack(),
-    //                "S  ", "hf ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_axe_head"),
-    //                SHAPE_EXTRUDER_AXE_HEAD.asStack(),
-    //                "S  ", " fh", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_hoe_head"),
-    //                SHAPE_EXTRUDER_HOE_HEAD.asStack(),
-    //                "S  ", " hf", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_scythe_head"),
-    //                SHAPE_EXTRUDER_SCYTHE_HEAD.asStack(),
-    //                "S  ", "   ", "fh ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_file_head"),
-    //                SHAPE_EXTRUDER_FILE_HEAD.asStack(),
-    //                "S  ", "   ", "hf ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_hammer_head"),
-    //                SHAPE_EXTRUDER_HAMMER_HEAD.asStack(),
-    //                "Sf ", " h ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_saw_head"),
-    //                SHAPE_EXTRUDER_SAW_HEAD.asStack(),
-    //                "Sh ", " f ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_knife_head"),
-    //                SHAPE_EXTRUDER_KNIFE_HEAD.asStack(),
-    //                "S f", "   ", "  h", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_butchery_head_head"),
-    //                SHAPE_EXTRUDER_BUTCHERY_KNIFE_HEAD.asStack(),
-    //                "S h", "   ", "  f", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_shovel_head"),
-    //                SHAPE_EXTRUDER_SHOVEL_HEAD.asStack(),
-    //                "S  ", "f  ", "h  ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_spade_head"),
-    //                SHAPE_EXTRUDER_SPADE_HEAD.asStack(),
-    //                "S  ", "f  ", "  h", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_propick_head"),
-    //                SHAPE_EXTRUDER_PROPICK_HEAD.asStack(),
-    //                "Sxf", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_javelin_head"),
-    //                SHAPE_EXTRUDER_JAVELIN_HEAD.asStack(),
-    //                "S x", "f  ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_chisel_head"),
-    //                SHAPE_EXTRUDER_CHISEL_HEAD.asStack(),
-    //                "S  ", "xf ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_extruder_mace_head"),
-    //                SHAPE_EXTRUDER_MACE_HEAD.asStack(),
-    //                "S  ", " xf", "   ", 'S', SHAPE_EMPTY.asStack());
-    //    }
-    
-    //    private static void registerCastingMoldRecipes(Consumer<FinishedRecipe> provider) {
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_mold_unfinished_lamp"),
-    //                SHAPE_MOLD_UNFINISHED_LAMP.asStack(),
-    //                "Sh ", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_mold_trapdoor"),
-    //                SHAPE_MOLD_TRAPDOOR.asStack(),
-    //                "S h", "   ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_mold_chain"),
-    //                SHAPE_MOLD_CHAIN.asStack(),
-    //                "S  ", "h  ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //
-    //        VanillaRecipeHelper.addStrictShapedRecipe(provider,
-    //                TFGCore.id("shape_mold_bell"),
-    //                SHAPE_MOLD_BELL.asStack(),
-    //                "S  ", " h ", "   ", 'S', SHAPE_EMPTY.asStack());
-    //    }
-    
-    //    private static void registerExtruderMoldCopyingRecipes(Consumer<FinishedRecipe> provider) {
-    //        for (var shapeMold : TFGItems.SHAPE_EXTRUDERS) {
-    //            FORMING_PRESS_RECIPES.recipeBuilder(TFGCore.id("copy_mold_" + shapeMold.get()))
-    //                    .duration(120).EUt(22)
-    //                    .notConsumable(shapeMold)
-    //                    .inputItems(SHAPE_EMPTY)
-    //                    .outputItems(shapeMold)
-    //                    .save(provider);
-    //        }
-    //    }
-    
-    //    private static void registerCastingMoldCopyingRecipes(Consumer<FinishedRecipe> provider) {
-    //        for (var shapeMold : TFGItems.SHAPE_MOLDS) {
-    //            FORMING_PRESS_RECIPES.recipeBuilder(TFGCore.id("copy_mold_" + shapeMold.get() + "_casting_mold"))
-    //                    .duration(120).EUt(22)
-    //                    .notConsumable(shapeMold)
-    //                    .inputItems(SHAPE_EMPTY)
-    //                    .outputItems(shapeMold)
-    //                    .save(provider);
-    //        }
-    //    }
-    
-
-    
-    //    private static void processDoubleIngot(TagPrefix prefix, Material material, TFCProperty property, Consumer<FinishedRecipe> provider) {
-    //        var ingotStack = ChemicalHelper.get(ingot, material);
-    //        var doubleIngotStack = ChemicalHelper.get(prefix, material);
-    //
-    //        EXTRACTOR_RECIPES.recipeBuilder(TFGCore.id("extract_" + material.getName() + "_double_ingot"))
-    //                .EUt(VA[ULV]).duration((int) material.getMass())
-    //                .inputItems(doubleIngotStack)
-    //                .outputFluids(material.getFluid(288))
-    //                .save(provider);
-    //
-    //        MACERATOR_RECIPES.recipeBuilder(TFGCore.id("macerate_" + material.getName() + "_double_ingot"))
-    //                .EUt(VA[ULV]).duration((int) material.getMass())
-    //                .inputItems(doubleIngotStack)
-    //                .outputItems(dust, material, 2)
-    //                .save(provider);
-    //    }
-    
-
-    
-
-    
-
-    
-    //    private static void proccessBell(TagPrefix prefix, Material material, TFCProperty property, Consumer<FinishedRecipe> provider) {
-    //        var bell = ChemicalHelper.get(prefix, material);
-    //        var outputMaterial = property.getOutputMaterial() == null ? material : property.getOutputMaterial();
-    //
-    //
-    //        ALLOY_SMELTER_RECIPES.recipeBuilder(TFGCore.id(material.getName() + "_bell_from_ingots"))
-    //                .EUt(VA[ULV]).duration((int) material.getMass() * 4)
-    //                .inputItems(ingot, outputMaterial)
-    //                .notConsumable(SHAPE_MOLD_BELL)
-    //                .outputItems(bell)
-    //                .save(provider);
-    //
-    //        FLUID_SOLIDFICATION_RECIPES.recipeBuilder(TFGCore.id(material.getName() + "_bell_from_fluid"))
-    //                .EUt(VA[ULV]).duration((int) material.getMass() * 4)
-    //                .inputFluids(outputMaterial.getFluid(144))
-    //                .notConsumable(SHAPE_MOLD_BELL)
-    //                .outputItems(bell)
-    //                .save(provider);
-    //    }
-    
-    //    private static void processToolHead(TagPrefix prefix, Material material, ItemEntry<Item> extruderShape, int circuitValue, Consumer<FinishedRecipe> consumer) {
-    //        var output = ChemicalHelper.get(prefix, material);
-    //        if (output.isEmpty()) return;
-    //
-    //        if (material.hasProperty(PropertyKey.INGOT)) {
-    //            EXTRUDER_RECIPES.recipeBuilder(TFGCore.id("extrude_" + material.getName() + "_ingot_to_" + prefix.name().toLowerCase() + "_head"))
-    //                    .duration(12).EUt(32)
-    //                    .notConsumable(extruderShape)
-    //                    .inputItems(ingot, material, (int) (prefix.materialAmount() / GTValues.M))
-    //                    .outputItems(output)
-    //                    .save(consumer);
-    //        } else if (material.hasProperty(PropertyKey.GEM)) {
-    //            LASER_ENGRAVER_RECIPES.recipeBuilder(TFGCore.id("engrave_" + material.getName() + "_gem_to_" + prefix.name().toLowerCase() + "_head"))
-    //                    .duration(12).EUt(32)
-    //                    .circuitMeta(circuitValue)
-    //                    .notConsumable(ChemicalHelper.get(TagPrefix.lens, Glass))
-    //                    .inputItems(gem, material, (int) (prefix.materialAmount() / GTValues.M))
-    //                    .outputItems(output)
-    //                    .save(consumer);
-    //        }
-    //    }
-
-
-        /**
-     * Замена ванильного камня в рецепте ступки на тфк камень.
-     */
-//    @Redirect(method = "registerMortarRecipes", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V"), remap = false)
-//    private static void tfg$registerMortarRecipes$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        addToolRecipe(provider, material, GTToolType.MORTAR, false,
-//                " I ", "SIS", "SSS",
-//                'I', new UnificationEntry(material.hasProperty(PropertyKey.GEM) ? TagPrefix.gem : TagPrefix.ingot, material),
-//                'S', TFGTags.Items.RawRockBlocks);
-//    }
-
-    /**
-     * Отключение рецептов MiningHammer, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 0), remap = false)
-//    private static void tfg$processMiningHammer$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("mining_hammer_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadMiningHammer, material))
-//                    .output(ToolHelper.get(GTToolType.MINING_HAMMER, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Spade, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 1), remap = false)
-//    private static void processSpade$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.SPADE, TFGTagPrefix.toolHeadSpade);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("spade_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadSpade, material))
-//                    .output(ToolHelper.get(GTToolType.SPADE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Saw, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 2), remap = false)
-//    private static void tfg$processSaw$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.SAW, TFGTagPrefix.toolHeadSaw);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("saw_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadSaw, material))
-//                    .output(ToolHelper.get(GTToolType.SAW, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Axe, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 3), remap = false)
-//    private static void tfg$processAxe$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.AXE, TFGTagPrefix.toolHeadAxe);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("axe_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadAxe, material))
-//                    .output(ToolHelper.get(GTToolType.AXE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Hoe, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 4), remap = false)
-//    private static void tfg$processHoe$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.HOE, TFGTagPrefix.toolHeadHoe);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("hoe_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadHoe, material))
-//                    .output(ToolHelper.get(GTToolType.HOE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Pickaxe, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 5), remap = false)
-//    private static void tfg$processPickaxe$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.PICKAXE, TFGTagPrefix.toolHeadPickaxe);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("pickaxe_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadPickaxe, material))
-//                    .output(ToolHelper.get(GTToolType.PICKAXE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Scythe, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 6), remap = false)
-//    private static void tfg$processScythe$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("scythe_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadScythe, material))
-//                    .output(ToolHelper.get(GTToolType.SCYTHE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Shovel, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 7), remap = false)
-//    private static void tfg$processShovel$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("shovel_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadShovel, material))
-//                    .output(ToolHelper.get(GTToolType.SHOVEL, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Sword, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 8), remap = false)
-//    private static void tfg$processSword$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.SWORD, TFGTagPrefix.toolHeadSword);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("sword_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadSword, material))
-//                    .output(ToolHelper.get(GTToolType.SWORD, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Hammer, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 9), remap = false)
-//    private static void tfg$processHardHammer$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("hammer_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadHammer, material))
-//                    .output(ToolHelper.get(GTToolType.HARD_HAMMER, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов File, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 10), remap = false)
-//    private static void tfg$processFile$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.FILE, TFGTagPrefix.toolHeadFile);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("file_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadFile, material))
-//                    .output(ToolHelper.get(GTToolType.FILE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов Knife, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 11), remap = false)
-//    private static void tfg$processKnife$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("knife_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material))
-//                    .output(ToolHelper.get(GTToolType.KNIFE, material))
-//                    .save(provider);
-//    }
-
-    /**
-     * Отключение рецептов ButcheryKnife, только для металлов, которые дублирует TFC.
-     */
-//    @Redirect(method = "processTool", at = @At(value = "INVOKE", target = "Lcom/gregtechceu/gtceu/data/recipe/generated/ToolRecipeHandler;addToolRecipe(Ljava/util/function/Consumer;Lcom/gregtechceu/gtceu/api/data/chemical/material/Material;Lcom/gregtechceu/gtceu/api/item/tool/GTToolType;Z[Ljava/lang/Object;)V", ordinal = 13), remap = false)
-//    private static void tfg$processButcheryKnife$toolRecipeHandler$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType tool, boolean mirrored, Object[] recipe) {
-//        if (!material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL))
-//            tfg$addToolRecipe(provider, material, GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife);
-//        else
-//            new TFGAdvancedShapedToolRecipeBuilder("butchery_knife_" + material.getName())
-//                    .input(ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material))
-//                    .output(ToolHelper.get(GTToolType.BUTCHERY_KNIFE, material))
-//                    .save(provider);
-//    }
-
-//    @Unique
-//    private static void tfg$addToolRecipe(Consumer<FinishedRecipe> provider, Material material, GTToolType toolType, TagPrefix tagPrefix) {
-//        addToolRecipe(provider, material, toolType, false, "H", "S", 'H', new UnificationEntry(tagPrefix, material), 'S', TFGTags.Items.WoodenSticks);
-//    }
