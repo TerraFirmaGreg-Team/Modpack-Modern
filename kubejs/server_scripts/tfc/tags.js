@@ -256,7 +256,6 @@ const registerTFCBlockTags = (event) => {
     })
     //#endregion
     
-
     //#region Отключение ломания блоков установленных на полу 
     event.add('tfcdesirepaths:trample_blacklist', 'tfc:placed_item')
     //#endregion
@@ -402,7 +401,9 @@ const registerTFCFluidTags = (event) => {
     //#endregion
 
     //#region Удаляем TFC металлы из формы колокола
-    //todo:
+    event.remove('tfc:usable_in_bell_mold', "tfc:metal/bronze")
+    event.remove('tfc:usable_in_bell_mold', "tfc:metal/gold")
+    event.remove('tfc:usable_in_bell_mold', "tfc:metal/brass")
     //#endregion
 
     //#region Добавляем GregTech металлы в формы оголовья
@@ -413,7 +414,10 @@ const registerTFCFluidTags = (event) => {
     //#endregion
 
     //#region Удаляем TFC металлы из формы оголовья
-    //todo:
+    event.add('tfc:usable_in_tool_head_mold', 'tfc:metal/copper')
+    event.add('tfc:usable_in_tool_head_mold', 'tfc:metal/bismuth_bronze')
+    event.add('tfc:usable_in_tool_head_mold', 'tfc:metal/black_bronze')
+    event.add('tfc:usable_in_tool_head_mold', 'tfc:metal/bronze')
     //#endregion
 
     //#region Добавляем жидкости в чашу
@@ -439,34 +443,40 @@ const registerTFCFluidTags = (event) => {
     //#endregion
 
     //#region Скрываем неиспользуемые жидкости
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth_bronze')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bronze')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/black_bronze')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/brass')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/copper')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/gold')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/nickel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/rose_gold')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/silver')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/tin')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/zinc')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/sterling_silver')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/wrought_iron')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/black_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/red_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/cast_iron')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/pig_iron')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_black_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_red_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_red_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/unknown')
+    const ALL_DISABLED_FLUIDS = [
+        'tfc:metal/bismuth',
+        'tfc:metal/bismuth_bronze',
+        'tfc:metal/bronze',
+        'tfc:metal/black_bronze',
+        'tfc:metal/brass',
+        'tfc:metal/copper',
+        'tfc:metal/gold',
+        'tfc:metal/nickel',
+        'tfc:metal/rose_gold',
+        'tfc:metal/silver',
+        'tfc:metal/tin',
+        'tfc:metal/zinc',
+        'tfc:metal/sterling_silver',
+        'tfc:metal/wrought_iron',
+        'tfc:metal/steel',
+        'tfc:metal/black_steel',
+        'tfc:metal/red_steel',
+        'tfc:metal/blue_steel',
+        'tfc:metal/cast_iron',
+        'tfc:metal/pig_iron',
+        'tfc:metal/high_carbon_steel',
+        'tfc:metal/high_carbon_black_steel',
+        'tfc:metal/high_carbon_red_steel',
+        'tfc:metal/high_carbon_blue_steel',
+        'tfc:metal/weak_steel',
+        'tfc:metal/weak_red_steel',
+        'tfc:metal/weak_blue_steel',
+        'tfc:metal/unknown'
+    ]
+    
+    ALL_DISABLED_FLUIDS.forEach(fluid => {
+        event.add('c:hidden_from_recipe_viewers', fluid)
+    })
     //#endregion
 }
 
