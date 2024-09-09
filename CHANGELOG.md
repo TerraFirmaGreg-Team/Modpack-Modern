@@ -35,6 +35,7 @@
 - Alternator multiblock now works as intended.
 - Alternator recipes was sligthly nerfed.
 - Fixed bug when some items wont display inside EMI.
+- Simplified alternator multiblock reques and it controller block recipe.
 - ...
 ### Updated mods
 - ??
