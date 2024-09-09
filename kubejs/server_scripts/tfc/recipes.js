@@ -3329,25 +3329,7 @@ const registerTFCRecipes1 = (event) => {
 
     //#region Рецепты электрической теплицы
     
-    // Дерево
-    global.TFC_WOOD_TYPES.forEach(wood => {
-        generateGreenHouseRecipe(event, `tfc:wood/sapling/${wood}`, 16000, `32x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
-    })
-
-    // Семена фруктов
-    global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
-    })
-
-    // Семена овощей
-    global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
-    })
-
-    // Семена ягод
-    global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
-    })
+    
 
     //#endregion
 
