@@ -21,7 +21,7 @@ const registerGregTechRecipes = (event) => {
                 .id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
         }
 
-        processToolHead(toolType, headTagPrefix, extruderMold, cirucitMeta, material)
+        processToolHead(headTagPrefix, extruderMold, cirucitMeta, material)
     }
 
     const processToolHead = (headTagPrefix, extruderMold, cirucitMeta, material) => {
@@ -33,10 +33,10 @@ const registerGregTechRecipes = (event) => {
             const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
             if (ingotItem.isEmpty()) return
 
-            event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${headTagPrefix.name.toLowerCase()}_head`)             
-                .inputItems(ingotItem.copyWithCount(Math.floor(toolHeadItem.materialAmount() / GTValues.M)))
+            event.recipes.gtceu.extruder(`tfg:extrude_${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)             
+                .itemInputs(ingotItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
                 .notConsumable(extruderMold)
-                .outputItems(toolHeadItem)
+                .itemOutputs(toolHeadItem)
                 .duration(12).EUt(32)
         
         } else if (material.hasProperty(PropertyKey.GEM)) {
@@ -44,11 +44,11 @@ const registerGregTechRecipes = (event) => {
             const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
             if (gemItem.isEmpty()) return
 
-            event.recipes.gtceu.extruder(`tfg:engrave_${material.getName()}_gem_to_${headTagPrefix.name.toLowerCase()}_head`)             
-                .inputItems(gemItem.copyWithCount(Math.floor(toolHeadItem.materialAmount() / GTValues.M)))
+            event.recipes.gtceu.extruder(`tfg:engrave_${material.getName()}_gem_to_${new String(headTagPrefix.name).toLowerCase()}_head`)             
+                .itemInputs(gemItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
                 .notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
                 .circuit(cirucitMeta)
-                .outputItems(toolHeadItem)
+                .itemOutputs(toolHeadItem)
                 .duration(12).EUt(32)
         }
         // else: ignore :3
@@ -479,197 +479,197 @@ const registerGregTechRecipes = (event) => {
     //#region Молды для экструдера
         
     // Меч
-    event.shaped('tfg:shape_extruder_sword_head', [
+    event.shaped('tfg:sword_head_extruder_mold', [
         'ABC', 
         '   ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_sword_head')
+    }).id('tfg:shaped/sword_head_extruder_mold')
 
     // Кирка
-    event.shaped('tfg:shape_extruder_pickaxe_head', [
+    event.shaped('tfg:pickaxe_head_extruder_mold', [
         'A  ', 
         'BC ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_pickaxe_head')
+    }).id('tfg:shaped/pickaxe_head_extruder_mold')
 
     // Топор
-    event.shaped('tfg:shape_extruder_axe_head', [
+    event.shaped('tfg:axe_head_extruder_mold', [
         'A  ', 
         ' BC',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_axe_head')
+    }).id('tfg:shaped/axe_head_extruder_mold')
 
 
     // Лопата
-    event.shaped('tfg:shape_extruder_shovel_head', [
+    event.shaped('tfg:shovel_head_extruder_mold', [
         'A  ', 
         'B  ',
         'C  '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_shovel_head')
+    }).id('tfg:shaped/shovel_head_extruder_mold')
 
     // Мотыга
-    event.shaped('tfg:shape_extruder_hoe_head', [
+    event.shaped('tfg:hoe_head_extruder_mold', [
         'A  ', 
         'CB ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_hoe_head')
+    }).id('tfg:shaped/hoe_head_extruder_mold')
 
 
     // Молот
-    event.shaped('tfg:shape_extruder_hammer_head', [
+    event.shaped('tfg:hammer_head_extruder_mold', [
         'AB ', 
         ' C ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_hammer_head')
+    }).id('tfg:shaped/hammer_head_extruder_mold')
 
     // Пила
-    event.shaped('tfg:shape_extruder_saw_head', [
+    event.shaped('tfg:saw_head_extruder_mold', [
         'AC ', 
         ' B ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_saw_head')
+    }).id('tfg:shaped/saw_head_extruder_mold')
 
     // Нож
-    event.shaped('tfg:shape_extruder_knife_head', [
+    event.shaped('tfg:knife_head_extruder_mold', [
         'A B', 
         '   ',
         '  C'  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_knife_head')
+    }).id('tfg:shaped/knife_head_extruder_mold')
 
     // Напильник
-    event.shaped('tfg:shape_extruder_file_head', [
+    event.shaped('tfg:file_head_extruder_mold', [
         'A  ', 
         '   ',
         'CB '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_file_head')
+    }).id('tfg:shaped/file_head_extruder_mold')
 
     // Коса
-    event.shaped('tfg:shape_extruder_scythe_head', [
+    event.shaped('tfg:scythe_head_extruder_mold', [
         'A  ', 
         '   ',
         'BC '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_scythe_head')
+    }).id('tfg:shaped/scythe_head_extruder_mold')
 
     // Нож мясника
-    event.shaped('tfg:shape_extruder_butchery_knife_head', [
+    event.shaped('tfg:butchery_knife_head_extruder_mold', [
         'A C', 
         '   ',
         '  B'  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_butchery_knife_head')
+    }).id('tfg:shaped/butchery_knife_head_extruder_mold')
 
     // Молот шахтера
-    event.shaped('tfg:shape_extruder_mining_hammer_head', [
+    event.shaped('tfg:mining_hammer_head_extruder_mold', [
         'ABC', 
         '   ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_mining_hammer_head')
+    }).id('tfg:shaped/mining_hammer_head_extruder_mold')
 
     // Большая лопата
-    event.shaped('tfg:shape_extruder_spade_head', [
+    event.shaped('tfg:spade_head_extruder_mold', [
         'A  ', 
         'B  ',
         '  C'  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/hammers'  
-    }).id('tfg:shaped/shape_extruder_spade_head')
+    }).id('tfg:shaped/spade_head_extruder_mold')
 
     // Проспектор
-    event.shaped('tfg:shape_extruder_propick_head', [
+    event.shaped('tfg:propick_head_extruder_mold', [
         'ACB', 
         '   ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/wire_cutters'  
-    }).id('tfg:shaped/shape_extruder_propick_head')
+    }).id('tfg:shaped/propick_head_extruder_mold')
 
     // Копье
-    event.shaped('tfg:shape_extruder_javelin_head', [
+    event.shaped('tfg:javelin_head_extruder_mold', [
         'A C', 
         'B  ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/wire_cutters'  
-    }).id('tfg:shaped/shape_extruder_javelin_head')
+    }).id('tfg:shaped/javelin_head_extruder_mold')
 
     // Стамеска
-    event.shaped('tfg:shape_extruder_chisel_head', [
+    event.shaped('tfg:chisel_head_extruder_mold', [
         'A  ', 
         'CB ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/wire_cutters'  
-    }).id('tfg:shaped/shape_extruder_chisel_head')
+    }).id('tfg:shaped/chisel_head_extruder_mold')
 
     // Бита
-    event.shaped('tfg:shape_extruder_mace_head', [
+    event.shaped('tfg:mace_head_extruder_mold', [
         'A  ', 
         ' BC',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/files',  
         C: '#forge:tools/wire_cutters'  
-    }).id('tfg:shaped/shape_extruder_mace_head')
+    }).id('tfg:shaped/mace_head_extruder_mold')
 
     global.TFG_EXTRUDER_MOLDS.forEach(mold => {
         event.recipes.gtceu.forming_press(`tfg:copy_mold_${mold.split(':')[1]}`)             
-            .itemInputs('gtceu:shape_empty')
+            .itemInputs('gtceu:empty_mold')
             .notConsumable(mold)
             .itemOutputs(mold)
             .EUt(22).duration(120)
@@ -681,48 +681,48 @@ const registerGregTechRecipes = (event) => {
     //#region Молды для отливки
 
     // Лампа
-    event.shaped('tfg:shape_mold_unfisnished_lamp', [
+    event.shaped('tfg:lamp_casting_mold', [
         'AB ', 
         '   ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/hammers',  
-    }).id('tfg:shaped/shape_mold_unfisnished_lamp')
+    }).id('tfg:shaped/lamp_casting_mold')
 
     // Люк
-    event.shaped('tfg:shape_mold_trapdoor', [
+    event.shaped('tfg:trapdoor_casting_mold', [
         'A  ', 
         '   ',
         '  B'  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/hammers',  
-    }).id('tfg:shaped/shape_mold_trapdoor')
+    }).id('tfg:shaped/trapdoor_casting_mold')
     
     // Цепь
-    event.shaped('tfg:shape_mold_chain', [
+    event.shaped('tfg:chain_casting_mold', [
         'A  ', 
         'B  ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/hammers',  
-    }).id('tfg:shaped/shape_mold_chain')
+    }).id('tfg:shaped/chain_casting_mold')
 
     // Колокол
-    event.shaped('tfg:shape_mold_bell', [
+    event.shaped('tfg:bell_casting_mold', [
         'A  ', 
         ' B ',
         '   '  
     ], {
-        A: 'gtceu:shape_empty',
+        A: 'gtceu:empty_mold',
         B: '#forge:tools/hammers',  
-    }).id('tfg:shaped/shape_mold_bell')
+    }).id('tfg:shaped/bell_casting_mold')
 
     global.TFG_CASTING_MOLDS.forEach(mold => {
         event.recipes.gtceu.forming_press(`tfg:copy_mold_${mold.split(':')[1]}_casting_mold`)             
-            .itemInputs('gtceu:shape_empty')
+            .itemInputs('gtceu:empty_mold')
             .notConsumable(mold)
             .itemOutputs(mold)
             .EUt(22).duration(120)
