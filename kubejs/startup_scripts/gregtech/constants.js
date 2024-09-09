@@ -53,3 +53,30 @@ global.GTCEU_HIDED_ITEMS = [
     'gtceu:small_netherrack_dust', 
     'gtceu:tiny_netherrack_dust'
 ];
+
+global.TFG_EXTRUDER_MOLDS = [
+    'tfg:mining_hammer_head_extruder_mold',
+    'tfg:sword_head_extruder_mold',
+    'tfg:pickaxe_head_extruder_mold',
+    'tfg:shovel_head_extruder_mold',
+    'tfg:axe_head_extruder_mold',
+    'tfg:hoe_head_extruder_mold',
+    'tfg:scythe_head_extruder_mold',
+    'tfg:file_head_extruder_mold',
+    'tfg:hammer_head_extruder_mold',
+    'tfg:saw_head_extruder_mold',
+    'tfg:knife_head_extruder_mold',
+    'tfg:butchery_knife_head_extruder_mold',
+    'tfg:spade_head_extruder_mold',
+    'tfg:propick_head_extruder_mold',
+    'tfg:javelin_head_extruder_mold',
+    'tfg:chisel_head_extruder_mold',
+    'tfg:mace_head_extruder_mold'
+];
+
+global.TFG_CASTING_MOLDS = [
+    'tfg:lamp_casting_mold',
+    'tfg:trapdoor_casting_mold',
+    'tfg:chain_casting_mold',
+    'tfg:bell_casting_mold'
+];
