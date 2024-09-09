@@ -2,7 +2,7 @@
 
 const registerGregTechRecipes = (event) => {
     
-    //#region Крафты и раскрафты металлических предметов
+    //#region Обработчики рецептов основанных на материалах
     const makeToolRecipe  = (toolType, headTagPrefix, extruderMold, cirucitMeta, material) => {
         const toolItem = ToolHelper.get(toolType, material)
         if (toolItem.isEmpty()) return
@@ -301,7 +301,7 @@ const registerGregTechRecipes = (event) => {
                 .processingTime(200)
                 .id(`tfg:milling/${material.getName()}_dust`)
         }
-    }    
+    }
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         const toolProperty = material.getProperty(PropertyKey.TOOL)
@@ -355,7 +355,7 @@ const registerGregTechRecipes = (event) => {
     })
     //#endregion
 
-    //#region Раскрафт камня стоунтайпов
+    //#region Рецепты декрафта пыли каменных пород
     // Gabbro
     event.recipes.gtceu.centrifuge(`tfg:gabbro_dust_separation`)             
         .itemInputs('tfg:gabbro_dust')
@@ -476,7 +476,7 @@ const registerGregTechRecipes = (event) => {
         .EUt(GTValues.VA[GTValues.MV]).duration(480)
     //#endregion
 
-    //#region Молды для экструдера
+    //#region Рецепты форм для экструдера
         
     // Меч
     event.shaped('tfg:sword_head_extruder_mold', [
@@ -678,7 +678,7 @@ const registerGregTechRecipes = (event) => {
 
     //#endregion
 
-    //#region Молды для отливки
+    //#region Рецепты форм для формовки
 
     // Лампа
     event.shaped('tfg:lamp_casting_mold', [
@@ -732,35 +732,87 @@ const registerGregTechRecipes = (event) => {
     //#endregion
 
     //#region Рецепты электрического генератора
-
-    //todo: nerf
+    
+    //#region Контроллер
+    
+    //todo: облегчить
+    event.shaped('gtceu:alternator', [
+        'ABA', 
+        'CDC', 
+        'EBE'
+    ], {
+        A: '#gtceu:resistors',
+        B: '#gtceu:circuits/lv',
+        C: 'gtceu:lv_voltage_coil',
+        D: 'gtceu:solid_machine_casing',
+        E: 'gtceu:copper_single_cable'
+    }).id('tfg:shaped/alternator')
+    //#endregion
+    
     event.recipes.gtceu.alternator('32_rpm_to_32_eu')
         .inputStress(256)
         .circuit(0)
         .rpm(32)
         .duration(2)
-        .EUt(-32)
+        .EUt(-8)
 
     event.recipes.gtceu.alternator('64_rpm_to_48_eu')
         .inputStress(256)
         .circuit(1)
         .rpm(64)
         .duration(2)
-        .EUt(-48)
+        .EUt(-16)
 
     event.recipes.gtceu.alternator('128_rpm_to_64_eu')
         .inputStress(256)
         .circuit(2)
         .rpm(128)
         .duration(2)
-        .EUt(-64)
+        .EUt(-24)
 
     event.recipes.gtceu.alternator('256_rpm_to_96_eu')
         .inputStress(256)
         .circuit(3)
         .rpm(256)
         .duration(2)
-        .EUt(-96)
+        .EUt(-32)
+    //#endregion
+
+    //#region Рецепты теплицы
+    
+    //#region Контроллер
+    event.shaped('gtceu:greenhouse', [
+        'ABA', 
+        'CDC', 
+        'BCB'
+    ], {
+        A: '#gtceu:circuits/mv',
+        B: 'gtceu:copper_single_cable',
+        C: '#gtceu:circuits/mv',
+        D: 'gtceu:solid_machine_casing'
+    }).id('tfg:shaped/greenhouse')
+    //#endregion
+
+    // Дерево
+    global.TFC_WOOD_TYPES.forEach(wood => {
+        generateGreenHouseRecipe(event, `tfc:wood/sapling/${wood}`, 16000, `32x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
+    })
+
+    // Семена фруктов
+    global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
+        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+    })
+
+    // Семена овощей
+    global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
+        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+    })
+
+    // Семена ягод
+    global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
+        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+    })
+
     //#endregion
 }
 
@@ -1849,30 +1901,9 @@ const registerGregTechRecipes1 = (event) => {
         B: '#forge:tools/wrenches'
     }).id('gtceu:shaped/gear_wood')
 
-    // Контроллер теплицы
-    event.shaped('gtceu:greenhouse', [
-        'ABA', 
-        'CDC', 
-        'BCB'
-    ], {
-        A: '#gtceu:circuits/mv',
-        B: 'gtceu:copper_single_cable',
-        C: '#gtceu:circuits/mv',
-        D: 'gtceu:solid_machine_casing'
-    }).id('tfg:shaped/greenhouse')
+    
 
-    // Контроллер электрического генератора
-    event.shaped('gtceu:alternator', [
-        'ABA', 
-        'CDC', 
-        'EBE'
-    ], {
-        A: '#gtceu:resistors',
-        B: '#gtceu:circuits/lv',
-        C: 'gtceu:lv_voltage_coil',
-        D: 'gtceu:solid_machine_casing',
-        E: 'gtceu:copper_single_cable'
-    }).id('tfg:shaped/alternator')
+    
 
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
