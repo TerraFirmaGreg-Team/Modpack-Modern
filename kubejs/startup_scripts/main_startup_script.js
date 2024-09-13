@@ -5,6 +5,7 @@
  */
 StartupEvents.registry('item', event => {
     registerGregTechItems(event)
+    registerMinecraftItems(event)
 })
 
 /**

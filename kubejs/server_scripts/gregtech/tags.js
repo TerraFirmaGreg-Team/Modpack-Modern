@@ -69,6 +69,20 @@ const registerGregTechItemTags = (event) => {
     event.add('tfg:stone_dusts', 'gtceu:stone_dust')
     //#endregion
 
+    //#region Объединение некоторых предметов из WroughtIron и Iron в один тег
+    event.add('tfg:all_iron_screws', 'gtceu:iron_screw')
+    event.add('tfg:all_iron_screws', 'gtceu:wrought_iron_screw')
+
+    event.add('tfg:all_iron_rings', 'gtceu:iron_ring')
+    event.add('tfg:all_iron_rings', 'gtceu:wrought_iron_ring')
+
+    event.add('tfg:all_iron_bolts', 'gtceu:iron_bolt')
+    event.add('tfg:all_iron_bolts', 'gtceu:wrought_iron_bolt')
+
+    event.add('tfg:all_iron_springs', 'gtceu:iron_spring')
+    event.add('tfg:all_iron_springs', 'gtceu:wrought_iron_spring')
+    //#endregion
+
     //#region Скрываем все руды (не используем #forge:ores, потому что будет пересечение)
     event.add('c:hidden_from_recipe_viewers', '#forge:ores_in_ground/red_granite') //todo: может его удалить?
     event.add('c:hidden_from_recipe_viewers', '#forge:ores_in_ground/marble')
