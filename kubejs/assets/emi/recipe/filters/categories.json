@@ -1,5 +1,25 @@
 {
     "filters": [
-        
+        {
+            "category": "emi:world_interaction"
+        },
+        {
+            "category": "minecraft:blasting"
+        },
+        {
+            "category": "minecraft:smoking"
+        },
+        {
+            "category": "minecraft:campfire_cooking"
+        },
+        {
+            "category": "jumbofurnace:jumbo_furnace_upgrade"
+        },
+        {
+            "category": "jumbofurnace:jumbo_smelting"
+        },
+        {
+            "category": "emi:composting"
+        }
     ]
 }
