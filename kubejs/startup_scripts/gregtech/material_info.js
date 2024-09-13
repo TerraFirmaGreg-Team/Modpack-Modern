@@ -3,7 +3,7 @@
 const registerGregTechMaterialInfo = (event) => {
     //#region Дерево
 
-    global.VANILLA_WOOD_TYPES.forEach(woodType => {
+    global.MINECRAFT_OVERWORLD_WOOD_TYPES.forEach(woodType => {
         // event.remove(`minecraft:${woodType}_planks`)
         // event.remove(`minecraft:${woodType}_stairs`)
         // event.remove(`minecraft:${woodType}_slab`)
