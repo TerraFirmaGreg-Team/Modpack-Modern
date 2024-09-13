@@ -1,0 +1,26 @@
+{
+	member: {
+		name: "Player"
+		power: 1
+		condition: "always_active"
+		ftbranks.name_format: "{name}"
+		ftbchunks.max_claimed: 50
+		ftbchunks.max_force_loaded: 3
+		command.trashcan: true
+	}
+	vip: {
+		name: "VIP"
+		power: 50
+		ftbranks.name_format: "&b{name}&r"
+		ftbchunks.max_claimed: 150
+		ftbchunks.max_force_loaded: 5
+	}
+	admin: {
+		name: "Admin"
+		power: 1000
+		condition: "op"
+		ftbranks.name_format: "&c{name}&r"
+		ftbchunks.max_claimed: 1000
+		ftbchunks.max_force_loaded: 10
+	}
+}

@@ -1,0 +1,10 @@
+
+#World settings
+[server]
+	#Check for and notify of mismatching tags. Only works when the same option in the common config is true.
+	check_tags = true
+	#Automatically rebuild and reload the generated tags datapack when a tagging mismatch is detected. Only works when the same option in the server/world config is true.
+	auto_rebuild_tags = true
+	#Whether fake players (such as block placers) can utilize Additional Placement's placement logic.
+	fake_player_placement = true
+

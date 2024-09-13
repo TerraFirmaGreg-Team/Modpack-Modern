@@ -197,6 +197,10 @@
 		#.
 		#Whether minecart contraptions can be placed into container items.
 		minecartContraptionInContainers = false
+		#.
+		#Whether stabilised bearings create a separated entity even on non-rotating contraptions.
+		#[Technical]
+		stabiliseStableContraptions = false
 
 	#.
 	#Configure speed/capacity levels for requirements and indicators.
@@ -390,9 +394,8 @@
 	#Whether placing a Schematic directly in Creative Mode should replace world blocks with Air
 	creativePrintIncludesAir = false
 	#.
-	#[in KiloBytes]
-	#The maximum allowed file size of uploaded Schematics.
-	#Range: > 16
+	#The amount of Schematics a player can upload until previous ones are overwritten.
+	#Range: > 1
 	maxSchematics = 256
 	#.
 	#[in Bytes]
@@ -403,6 +406,11 @@
 	#Amount of game ticks without new packets arriving until an active schematic upload process is discarded.
 	#Range: > 100
 	schematicIdleTimeout = 600
+	#.
+	#[in KiloBytes]
+	#The maximum allowed file size of uploaded Schematics.
+	#Range: > 16
+	maxTotalSchematicSize = 256
 
 	#.
 	#Schematicannon
@@ -412,13 +420,9 @@
 		#Range: > 1
 		schematicannonDelay = 10
 		#.
-		#% of Schematicannon's Fuel filled by 1 Gunpowder.
-		#Range: 0.0 ~ 100.0
-		schematicannonGunpowderWorth = 20.0
-		#.
-		#% of Schematicannon's Fuel used for each fired block.
-		#Range: 0.0 ~ 100.0
-		schematicannonFuelUsage = 0.05000000074505806
+		#Amount of blocks a Schematicannon can print per Gunpowder item provided.
+		#Range: > 1
+		schematicannonShotsPerGunpowder = 400
 
 #.
 #Equipment and gadgets added by Create

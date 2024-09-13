@@ -1,0 +1,241 @@
+# Default config file that will be copied to world's serverconfig/ftbessentials.snbt location
+# Copy values you wish to override in here
+# Example:
+# 
+# {
+# 	misc: {
+# 		enderchest: {
+# 			enabled: false
+# 		}
+# 	}
+# }
+
+{
+	# Admin commands for cheating and moderation
+	admin: {
+		# Allows admins to toggle flying status using a command, without having to use Creative Mode
+		fly: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to toggle invincibility using a command, without having to use Creative Mode
+		god: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to heal themselves using a command
+		heal: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to view other users' inventories using a command
+		invsee: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to restrict players from chatting by using a command to mute (or unmute) them
+		mute: {
+			# Default: true
+			enabled: true
+		}
+	}
+	
+	# Miscellaneous features and utilities
+	misc: {
+		# Allows users to access their ender chest, as well as admins to manage other players' ender chests.
+		enderchest: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to set a custom hat as their head item by using a command
+		hat: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to kick themselves from the server, for example if they are stuck or desynced
+		kickme: {
+			# Default: true
+			enabled: false
+		}
+		
+		# Allows users to view player leaderboard stats.
+		leaderboard: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows users to change their display name, as well as admins to change nicknames for other users
+		nick: {
+			# Default: true
+			enabled: false
+		}
+		
+		# Allows users to announce their recording or streaming status to the server by using commands
+		rec: {
+			# Default: true
+			enabled: false
+		}
+		
+		# Enables usage of a trash can inventory, which can be used to void unneeded items
+		trashcan: {
+			# Default: true
+			enabled: true
+		}
+	}
+	
+	# Teleportation-related settings
+	teleportation: {
+		# Allows users to return to their previous location after teleporting (or dying)
+		back: {
+			# Cooldown between /back commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.back.cooldown
+			# Default: 30
+			# Range: 0 ~ 604800
+			cooldown: 30
+			
+			# Default: true
+			enabled: false
+			
+			# Max size of the teleport history. This limits how many times you can use /back
+			# You can override this with FTB Ranks using ftbessentials.back.max
+			# Default: 10
+			# Range: 0 ~ 2147483647
+			max: 10
+			
+			# Warm-up time before /back command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.back.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+		
+		# Allows users to set 'homes', which they can then freely teleport to by using /home afterwards
+		home: {
+			# Cooldown between /home commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.home.cooldown
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 10
+			
+			# Default: true
+			enabled: false
+			
+			# Max amount of homes a user can have.
+			# You can override this with FTB Ranks using ftbessentials.home.max
+			# Default: 1
+			# Range: 0 ~ 2147483647
+			max: 1
+			
+			# Warm-up time before /home command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.home.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+		
+		# Allows players to teleport to a random point in the Wilderness
+		# Note: This currently does not respect Claimed Chunks yet!
+		rtp: {
+			# Cooldown between /rtp commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.rtp.cooldown
+			# Default: 600
+			# Range: 0 ~ 604800
+			cooldown: 600
+			
+			# Default: true
+			enabled: false
+			
+			# /rtp max distance from spawn point
+			# Default: 100000
+			# Range: 0 ~ 30000000
+			max_distance: 100000
+			
+			# Number of tries before /rtp gives up
+			# Default: 100
+			# Range: 1 ~ 1000
+			max_tries: 100
+			
+			# /rtp min distance from spawn point
+			# Default: 1000
+			# Range: 0 ~ 30000000
+			min_distance: 1000
+			
+			# Warm-up time before /rtp command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.rtp.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+		spawn: {
+			# Cooldown between /spawn commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.spawn.cooldown
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 10
+			
+			# Default: true
+			enabled: false
+			
+			# Warm-up time before /spawn command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.spawn.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+		
+		# Allows players to create requests to teleport to other users on the server,
+		# as well as requesting other players to teleport to them
+		tpa: {
+			# Cooldown between /tpa commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.tpa.cooldown
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 10
+			
+			# Default: true
+			enabled: false
+			
+			# Warm-up time before /tpa command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.tpa.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+		
+		# Allows admins to teleport to the location a user was last seen at
+		tpl: {
+			# Default: true
+			enabled: false
+		}
+		
+		# Allows admins to teleport to dimension
+		tpx: {
+			# Default: true
+			enabled: true
+		}
+		
+		# Allows admins to create 'warps', which are fixed points in the world that users may teleport to using /warp
+		warp: {
+			# Cooldown between /warp commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.warp.cooldown
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 10
+			
+			# Default: true
+			enabled: false
+			
+			# Warm-up time before /warp command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.warp.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+	}
+}
