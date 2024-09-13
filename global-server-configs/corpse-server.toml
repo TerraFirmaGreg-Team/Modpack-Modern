@@ -1,0 +1,33 @@
+#The time (in real life days) deaths get stored
+#-1 for infinite storage
+#0 for not storing deaths at all
+#Range: > -1
+death_storage_duration = -1
+
+[corpse]
+	#The time passed (in ticks) after a corpse turns into a skeleton
+	#Range: > 0
+	skeleton_time = 72000
+	#If the corpse should lie on its face
+	lie_on_face = false
+	#If the corpse should wear the players equipment
+	show_equipment = true
+	#If the corpse should fall into the void
+	fall_into_void = false
+	#If the corpse should get removed when in lava
+	lava_damage = false
+
+	[corpse.access]
+		#If only the owner of the corpse can access the inventory
+		only_owner = true
+		#If everybody can access the corpse in the skeleton stage (Only if only_owner_access is set to true)
+		skeleton = true
+
+	[corpse.despawn]
+		#The time passed (in ticks) after a corpse despawns (only if empty)
+		#Range: > 20
+		time = 600
+		#The time passed (in ticks) after a corpse despawns even if its not empty (-1 = never)
+		#Range: > -1
+		force_time = -1
+
