@@ -100,6 +100,7 @@ TFCEvents.data(event => {
  */
 ServerEvents.recipes(event => {
     // registerAE2Recipes(event)
+    registerAlekiRoofsRecipes(event)
     // registerAsticorCartsRecipes(event)
     // registerAE2InsertExportCardRecipes(event)
     // registerAE2NetworkAnalyzerRecipes(event)
