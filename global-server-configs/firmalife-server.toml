@@ -36,7 +36,7 @@
 	enableSeedBalls = true
 	#If true, bees can swarm and hurt the player if provoked.
 	enableBeeSwarm = true
-	#The capacity in mB of the hollow shell. Default 100
+	#The capacity in mB of the wine glass. Default 250
 	#Range: > 1
 	hollowShellCapacity = 100
 	#The average temperature below which stronger decay modifiers apply to cellar blocks.
@@ -60,6 +60,8 @@
 	#The max bounded distance from the climate station a cellar wall can be. Higher numbers = more lag.
 	#Range: 1 ~ 128
 	cellarRadius = 15
+	#If true, the tumbler and the pumping station work magically with a redstone signal and no power required.
+	mechanicalPowerCheatMode = false
 
 [foodTraits]
 	#The modifier for the 'Dried' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
@@ -83,9 +85,6 @@
 	#The modifier for the 'Rancid_smoked' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitRancid_smokedModifier = 2.0
-	#The modifier for the 'Raw' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
-	#Range: 0.0 ~ 1.7976931348623157E308
-	traitRawModifier = 1.0
 	#The modifier for the 'Shelved' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitShelvedModifier = 0.4000000059604645
@@ -104,4 +103,19 @@
 	#The modifier for the 'Hung_3' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	traitHung_3Modifier = 0.25
+	#The modifier for the 'Fermented' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	traitFermentedModifier = 0.25
+	#The modifier for the 'Bee_pollinated' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	traitBee_pollinatedModifier = 0.800000011920929
+	#The modifier for the 'Dirt_grown' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	traitDirt_grownModifier = 0.8999999761581421
+	#The modifier for the 'Gravel_grown' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	traitGravel_grownModifier = 0.800000011920929
+	#The modifier for the 'Slope_grown' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	traitSlope_grownModifier = 0.800000011920929
 

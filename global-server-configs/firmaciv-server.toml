@@ -8,4 +8,6 @@
 	forceReducedDebugInfo = false
 	#Disables vanilla boats and base TFC boats from working.
 	disableVanillaBoatFunctionality = true
+	#Automatically adjusts latitude and longitude to match the climate scale of the TFC world.
+	changeLatitudeLongitudeBasedOnClimateConfig = false
 
