@@ -18,6 +18,28 @@ config/voicechat/username-cache.json
 config/xaerominimap.txt
 config/xaeroworldmap.txt
 
+# .minecraft
+crash-reports/*
+logs/*
+saves/*
+ldlib/
+local/*
+modernfix/*
+XaeroWaypoints*
+XaeroWorldMap/*
+CustomSkinLoader/*
+screenshots/*
+shaderpacks/*
+chiselsandbits/*
+.vscode/*
+.new_mods/*
+
+# Extensions
+**/*.log
+**/*.gz
+**/*.DS_Store
+**/*.jar
+
 # Client data
 .vscode/
 .idea/
@@ -63,3 +85,5 @@ knownkeys.txt
 !.github/buildtools/serverpack/user_jvm_args.txt
 !.github/buildtools/serverpack/minecraft_server.jar
 .github/buildtools/serverpack/*
+
+
