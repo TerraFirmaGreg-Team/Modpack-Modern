@@ -27,6 +27,7 @@ local/*
 modernfix/*
 XaeroWaypoints*
 XaeroWorldMap/*
+defaultconfigs/*
 CustomSkinLoader/*
 screenshots/*
 shaderpacks/*
@@ -85,5 +86,6 @@ knownkeys.txt
 !.github/buildtools/serverpack/user_jvm_args.txt
 !.github/buildtools/serverpack/minecraft_server.jar
 .github/buildtools/serverpack/*
+
 
 
