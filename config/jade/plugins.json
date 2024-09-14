@@ -22,6 +22,7 @@
     "crop_progress": true,
     "command_block": true,
     "mob_growth": true,
+    "waxed": true,
     "harvest_tool.new_line": false,
     "entity_health.max_for_render": 40,
     "entity_health.show_fractions": false,
@@ -105,18 +106,19 @@
     "part_name": true
   },
   "firmalife": {
-    "oven_top": true,
-    "solar_drier": true,
+    "barrel_press": true,
     "string": true,
     "vat": true,
+    "drying_mat": true,
+    "tumbler": true,
+    "cheese": true,
+    "shelf": true,
+    "oven_top": true,
+    "solar_drier": true,
     "oven_bottom": true,
     "fruit_tree_sapling": true,
     "jarbnet": true,
-    "drying_mat": true,
-    "tumbler": true,
-    "hanger": true,
-    "cheese": true,
-    "shelf": true
+    "hanger": true
   },
   "tfc": {
     "bloomery": true,
@@ -195,9 +197,6 @@
   },
   "corpse": {
     "corpse": true
-  },
-  "tfc_support_indicator": {
-    "support_indicator": true
   },
   "treetap": {
     "tap": true
