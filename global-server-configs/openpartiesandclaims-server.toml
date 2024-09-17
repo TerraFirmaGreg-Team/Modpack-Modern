@@ -169,7 +169,7 @@
 			#Projectile landing on blocks requires non-break block access through this option or blockAccessEntityGroups.
 			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
 			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
-			entitiesAllowedToGrief = ["minecraft:sheep"]
+			entitiesAllowedToGrief = ["minecraft:sheep", "interact$minecraft:potion", "interact$minecraft:trident", "interact$minecraft:(*_|)arrow", "interact$minecraft:ender_pearl", "interact$minecraft:egg"]
 			#Entities that can bypass all protection of other entities. Supports entity type tags.
 			#Prefixing an entity id/tag with "interact$" creates an exception which tries to exclude attacks.
 			#Prefixing an entity id/tag with "break$" creates an exception that only includes attacks.
@@ -179,7 +179,7 @@
 			#Projectile landing on entities requires non-attack entity access through this option or entityAccessEntityGroups.
 			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
 			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
-			entitiesAllowedToGriefEntities = []
+			entitiesAllowedToGriefEntities = ["interact$minecraft:potion", "interact$minecraft:trident", "interact$minecraft:(*_|)arrow", "interact$minecraft:ender_pearl", "interact$minecraft:egg"]
 			#Entities that can bypass all dropped item protection. Supports entity type tags.
 			#Supports patterns with special characters *, (, ) and |, where * matches anything, ( ) are used for grouping and | means OR.
 			#For example ["minecraft:(v|p)illager", "minecraft:*illager", "#minecraft:raiders"]
