@@ -3,11 +3,10 @@
 const registerMinecraftRecipes = (e) => {
     
     //#region Дерево
-    global.MINECRAFT_OVERWORLD_WOOD_TYPES.forEach(woodName => {
-        
+    const processOverworldWood = (woodName) => {
         // Wood
         e.remove({ id: `minecraft:${woodName}_wood` })
-        
+                
         // Stripped Log
         e.remove({ id: `create:cutting/${woodName}_log` })
 
@@ -23,12 +22,12 @@ const registerMinecraftRecipes = (e) => {
         e.remove({ id: `gtceu:cutter/${woodName}_planks_distilled_water` })
         e.remove({ id: `create:cutting/stripped_${woodName}_wood` })
         e.remove({ id: `create:cutting/stripped_${woodName}_log` })
-        
+
         // Stairs
         e.remove({ id: `minecraft:${woodName}_stairs` })
         e.remove({ id: `everycomp:c/minecraft/${woodName}_stairs_from_${woodName}_planks_stonecutting` })
         e.remove({ id: `gtceu:assembler/${woodName}_stairs` })
-        
+
         // Slabs
         e.remove({ id: `gtceu:shaped/${woodName}_slab_saw` })
         e.remove({ id: `everycomp:c/minecraft/${woodName}_slab_from_${woodName}_planks_stonecutting` })
@@ -80,52 +79,110 @@ const registerMinecraftRecipes = (e) => {
 
         // Sticks
         e.remove({ id: `everycomp:c/minecraft/null_from_${woodName}_planks_stonecutting` })
-    })
+    }
+
+    const processNetherWood = () => {
+        
+        const anyLogs = `#minecraft:${woodName}_stems`
+
+        const log = Item.of(`minecraft:${woodName}_stem`)
+        const wood = Item.of(`minecraft:${woodName}_hyphae`)
+
+        const strippedLog = Item.of(`minecraft:stripped_${woodName}_stem`)
+        const strippedWood = Item.of(`minecraft:stripped_${woodName}_hyphae`)
+
+        //#region Бревно
+        
+        // Нечего добавлять
+        // Нечего удалять
+
+        //#endregion
+
+        //#region Цельное бревно
+        e.remove({ id: `minecraft:${woodName}_hyphae` })
+
+        e.shaped(wood, [
+            'AA',
+            ' s'
+        ], {
+            A: log,
+            s: '#forge:tools/saws'
+        }).id(`tfg:workbench/${woodName}_wood`)
+
+        e.recipes.create.cutting(wood, log.copyWithCount(2))
+            .id(`tfg:create_cutting/${woodName}_wood`)
+
+        e.recipes.gtceu.cutter(`tfg:${woodName}_wood`)             
+            .itemInputs(log)
+            .circuit(0)
+            .itemOutputs(wood.copyWithCount(2))
+            .itemOutputs('4x gtceu:wood_dust')
+            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        //#endregion
+        
+        //#region Обтесанное бревно
+        e.recipes.create.cutting(strippedLog, log.copyWithCount(2))
+            .id(`tfg:create_cutting/${woodName}_wood`)
+
+        e.recipes.gtceu.cutter(`tfg:stripped_${woodName}_log`)             
+            .itemInputs(log)
+            .circuit(0)
+            .itemOutputs(strippedLog)
+            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        //#endregion
     
+        //#region Обтесанное цельное бревно
+        //#endregion
+    }
+
+    global.MINECRAFT_OVERWORLD_WOOD_TYPES.forEach(woodName => {
+        processOverworldWood(woodName)
+    })
+
     global.MINECRAFT_NETHER_WOOD_TYPES.forEach(woodName => {
 
         //#region Удаление
 
         // Planks
-        e.remove({ id: `gtceu:shapeless/${woodName}_planks` })
-        e.remove({ id: `gtceu:shaped/${woodName}_planks_saw` })
-        e.remove({ id: `gtceu:cutter/${woodName}_planks_distilled_water` })
-        e.remove({ id: `gtceu:cutter/${woodName}_planks` })
-        e.remove({ id: `gtceu:cutter/${woodName}_planks_water` })
-        e.remove({ id: `create:cutting/stripped_${woodName}_stem` })
-        e.remove({ id: `create:cutting/stripped_${woodName}_hyphae` })
+        // e.remove({ id: `gtceu:shapeless/${woodName}_planks` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_planks_saw` })
+        // e.remove({ id: `gtceu:cutter/${woodName}_planks_distilled_water` })
+        // e.remove({ id: `gtceu:cutter/${woodName}_planks` })
+        // e.remove({ id: `gtceu:cutter/${woodName}_planks_water` })
+        // e.remove({ id: `create:cutting/stripped_${woodName}_stem` })
+        // e.remove({ id: `create:cutting/stripped_${woodName}_hyphae` })
 
         // Stairs
-        e.remove({ id: `minecraft:${woodName}_stairs` })
+        // e.remove({ id: `minecraft:${woodName}_stairs` })
         // e.remove({ id: `everycomp:c/minecraft/${woodName}_stairs_from_${woodName}_planks_stonecutting` })
-        e.remove({ id: `gtceu:assembler/${woodName}_stairs` })
+        // e.remove({ id: `gtceu:assembler/${woodName}_stairs` })
 
         // Slabs
-        e.remove({ id: `gtceu:shaped/${woodName}_slab_saw` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_slab_saw` })
         // e.remove({ id: `everycomp:c/minecraft/${woodName}_slab_from_${woodName}_planks_stonecutting` })
-        e.remove({ id: `gtceu:cutter/${woodName}_slab_water` })
-        e.remove({ id: `gtceu:cutter/${woodName}_slab` })
-        e.remove({ id: `gtceu:cutter/${woodName}_slab_distilled_water` })
+        // e.remove({ id: `gtceu:cutter/${woodName}_slab_water` })
+        // e.remove({ id: `gtceu:cutter/${woodName}_slab` })
+        // e.remove({ id: `gtceu:cutter/${woodName}_slab_distilled_water` })
 
         // Fence
-        e.remove({ id: `gtceu:shaped/${woodName}_fence` })
-        e.remove({ id: `gtceu:assembler/${woodName}_fence` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_fence` })
+        // e.remove({ id: `gtceu:assembler/${woodName}_fence` })
         
         // Fence Gate
-        e.remove({ id: `gtceu:shaped/${woodName}_fence_gate` })
-        e.remove({ id: `gtceu:shaped/${woodName}_fence_gate_screws` })
-        e.remove({ id: `gtceu:assembler/${woodName}_fence_gate` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_fence_gate` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_fence_gate_screws` })
+        // e.remove({ id: `gtceu:assembler/${woodName}_fence_gate` })
 
         // Door
-        e.remove({ id: `gtceu:shaped/${woodName}_door` })
-        e.remove({ id: `gtceu:assembler/${woodName}_door` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_door` })
+        // e.remove({ id: `gtceu:assembler/${woodName}_door` })
 
         // Trapdoor
-        e.remove({ id: `minecraft:${woodName}_trapdoor` })
+        // e.remove({ id: `minecraft:${woodName}_trapdoor` })
 
         // Pressure Plate
-        e.remove({ id: `gtceu:shaped/${woodName}_pressure_plate` })
-        e.remove({ id: `gtceu:assembler/${woodName}_pressure_plate` })
+        // e.remove({ id: `gtceu:shaped/${woodName}_pressure_plate` })
+        // e.remove({ id: `gtceu:assembler/${woodName}_pressure_plate` })
 
         // Button
         // e.remove({ id: `gtceu:shaped/${woodName}_button` })
@@ -134,8 +191,8 @@ const registerMinecraftRecipes = (e) => {
         // e.remove({ id: `gtceu:cutter/${woodName}_button_distilled_water` })
 
         // Sign
-        e.remove({ id: `minecraft:${woodName}_sign` })
-        e.remove({ id: `gtceu:assembler/${woodName}_sign` })
+        // e.remove({ id: `minecraft:${woodName}_sign` })
+        // e.remove({ id: `gtceu:assembler/${woodName}_sign` })
 
         //#endregion
 
@@ -145,329 +202,323 @@ const registerMinecraftRecipes = (e) => {
         const log = Item.of(`minecraft:${woodName}_stem`);
         const strippedLog = Item.of(`minecraft:stripped_${woodName}_stem`)
 
-        const wood = Item.of(`minecraft:${woodName}_hyphae`)
-        const strippedWood = Item.of(`minecraft:stripped_${woodName}_hyphae`)
+        // const wood = Item.of(`minecraft:${woodName}_hyphae`)
+        // const strippedWood = Item.of(`minecraft:stripped_${woodName}_hyphae`)
 
-        const plank = Item.of(`minecraft:${woodName}_planks`)
-        const stair = Item.of(`minecraft:${woodName}_stairs`)
-        const slab = Item.of(`minecraft:${woodName}_slab`)
+        // const plank = Item.of(`minecraft:${woodName}_planks`)
+        // const stair = Item.of(`minecraft:${woodName}_stairs`)
+        // const slab = Item.of(`minecraft:${woodName}_slab`)
 
-        const fence = Item.of(`minecraft:${woodName}_fence`)
-        const fenceGate = Item.of(`minecraft:${woodName}_fence_gate`)
+        // const fence = Item.of(`minecraft:${woodName}_fence`)
+        // const fenceGate = Item.of(`minecraft:${woodName}_fence_gate`)
 
-        const door = Item.of(`minecraft:${woodName}_door`)
-        const trapdoor = Item.of(`minecraft:${woodName}_trapdoor`)
+        // const door = Item.of(`minecraft:${woodName}_door`)
+        // const trapdoor = Item.of(`minecraft:${woodName}_trapdoor`)
 
-        const pressurePlate = Item.of(`minecraft:${woodName}_pressure_plate`)
-        // const button = Item.of(`minecraft:${woodName}_button`)
+        // const pressurePlate = Item.of(`minecraft:${woodName}_pressure_plate`)
+        // // const button = Item.of(`minecraft:${woodName}_button`)
 
-        const sign = Item.of(`minecraft:${woodName}_sign`)
-        const hangingSign = Item.of(`minecraft:${woodName}_hanging_sign`)
+        // const sign = Item.of(`minecraft:${woodName}_sign`)
+        // const hangingSign = Item.of(`minecraft:${woodName}_hanging_sign`)
 
-        const lumber = Item.of(`tfg:${woodName}_lumber`)
+        // const lumber = Item.of(`tfg:${woodName}_lumber`)
 
-        //#region Очищенные бревна
-        e.recipes.gtceu.cutter(`tfg:stripped_${woodName}_log`)             
-            .itemInputs(log)
-            .circuit(0)
-            .itemOutputs(strippedLog)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
-
-        //#region Очищенная древесина
-        e.recipes.gtceu.cutter(`tfg:stripped_${woodName}_wood`)             
-            .itemInputs(wood)
-            .circuit(0)
-            .itemOutputs(strippedWood)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
-
-        //#region Доски
-        e.shaped(plank, [
-            'AA',
-            'AA' 
-        ], {
-            A: lumber
-        }).id(`tfg:${woodName}_planks`)
-
-        e.recipes.gtceu.cutter(`tfg:${woodName}_planks`)             
-            .itemInputs(allLogs)
-            .circuit(1)
-            .itemOutputs(plank.copyWithCount(6))
-            .itemOutputs('2x gtceu:wood_dust')
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-
-        e.recipes.create.cutting(plank.copyWithCount(3).withChance(0.95), allLogs)
-            .id(`tfg:${woodName}_planks_cutting`)
-        //#endregion
-
-        //#region Ступень
-        e.shaped(stair, [
-            'As'  
-        ], {
-            A: plank,
-            s: '#forge:tools/saws'
-        }).id(`tfg:${woodName}_stairs_saw`)
-
-        e.recipes.gtceu.cutter(`tfg:${woodName}_stairs_from_logs`)             
-            .itemInputs(allLogs)
-            .circuit(2)
-            .itemOutputs(stair.copyWithCount(12))
-            .itemOutputs('12x gtceu:wood_dust')
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-
-        e.recipes.gtceu.cutter(`tfg:${woodName}_stairs_from_planks`)             
-            .itemInputs(plank)
-            .circuit(0)
-            .itemOutputs(stair)
-            .itemOutputs('1x gtceu:wood_dust')
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
-
-        //#region Полублок
-        e.shaped(slab.copyWithCount(2), [
-            'sA'  
-        ], {
-            A: plank,
-            s: '#forge:tools/saws'
-        }).id(`tfg:${woodName}_slabs_saw`)
-
-        e.shaped(slab, [
-            'LL' 
-        ], {
-            L: lumber
-        }).id(`tfg:${woodName}_slabs`)
-
-        e.recipes.gtceu.cutter(`tfg:${woodName}_slabs_from_logs`)             
-            .itemInputs(allLogs)
-            .circuit(3)
-            .itemOutputs(slab.copyWithCount(24))
-            .itemOutputs('24x gtceu:wood_dust')
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-
-        e.recipes.gtceu.cutter(`tfg:${woodName}_slabs_from_planks`)             
-            .itemInputs(plank)
-            .circuit(1)
-            .itemOutputs(slab.copyWithCount(2))
-            .itemOutputs('1x gtceu:wood_dust')
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
         
-        //#region Забор
-        e.shaped(fence.copyWithCount(8), [
-            'h s',
-            'ABA',
-            'ACA'
-        ], {
-            A: plank,
-            B: '#forge:rods/wooden',
-            C: lumber,
-            h: '#forge:tools/hammers',
-            s: '#forge:tools/saws'
-        }).id(`tfg:${woodName}_fence`)
 
-        e.recipes.gtceu.cutter(`tfg:${woodName}_fence`)             
-            .itemInputs(plank)
-            .circuit(2)
-            .itemOutputs(fence.copyWithCount(2))
-            .itemOutputs('1x gtceu:wood_dust')
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // //#region Очищенная древесина
+        // e.recipes.gtceu.cutter(`tfg:stripped_${woodName}_wood`)             
+        //     .itemInputs(wood)
+        //     .circuit(0)
+        //     .itemOutputs(strippedWood)
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
 
-        //#region Калитка
-        e.shaped(fenceGate, [
-            'A A',
-            'BCB',
-            'DCD'
-        ], {
-            A: 'minecraft:flint',
-            B: '#forge:rods/wooden',
-            C: plank,
-            D: lumber
-        }).id(`tfg:${woodName}_fence_gate_flint`)
+        // //#region Доски
+        // e.shaped(plank, [
+        //     'AA',
+        //     'AA' 
+        // ], {
+        //     A: lumber
+        // }).id(`tfg:${woodName}_planks`)
 
-        e.shaped(fenceGate.copyWithCount(2), [
-            'AEA',
-            'BCB',
-            'DCD'
-        ], {
-            A: '#forge:screws',
-            B: '#forge:rods/wooden',
-            C: plank,
-            D: lumber,
-            E: '#forge:tools/screwdrivers'
-        }).id(`tfg:${woodName}_fence_gate_screws`)
+        // e.recipes.gtceu.cutter(`tfg:${woodName}_planks`)             
+        //     .itemInputs(allLogs)
+        //     .circuit(1)
+        //     .itemOutputs(plank.copyWithCount(6))
+        //     .itemOutputs('2x gtceu:wood_dust')
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
-        e.recipes.gtceu.assembler(`tfg:${woodName}_fence_gate`)             
-            .itemInputs(plank.copyWithCount(2))
-            .itemInputs('2x #forge:rods/wooden')
-            .circuit(3)
-            .itemOutputs(fenceGate)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // e.recipes.create.cutting(plank.copyWithCount(3).withChance(0.95), allLogs)
+        //     .id(`tfg:${woodName}_planks_cutting`)
+        // //#endregion
+
+        // //#region Ступень
+        // e.shaped(stair, [
+        //     'As'  
+        // ], {
+        //     A: plank,
+        //     s: '#forge:tools/saws'
+        // }).id(`tfg:${woodName}_stairs_saw`)
+
+        // e.recipes.gtceu.cutter(`tfg:${woodName}_stairs_from_logs`)             
+        //     .itemInputs(allLogs)
+        //     .circuit(2)
+        //     .itemOutputs(stair.copyWithCount(12))
+        //     .itemOutputs('12x gtceu:wood_dust')
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+
+        // e.recipes.gtceu.cutter(`tfg:${woodName}_stairs_from_planks`)             
+        //     .itemInputs(plank)
+        //     .circuit(0)
+        //     .itemOutputs(stair)
+        //     .itemOutputs('1x gtceu:wood_dust')
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
+
+        // //#region Полублок
+        // e.shaped(slab.copyWithCount(2), [
+        //     'sA'  
+        // ], {
+        //     A: plank,
+        //     s: '#forge:tools/saws'
+        // }).id(`tfg:${woodName}_slabs_saw`)
+
+        // e.shaped(slab, [
+        //     'LL' 
+        // ], {
+        //     L: lumber
+        // }).id(`tfg:${woodName}_slabs`)
+
+        // e.recipes.gtceu.cutter(`tfg:${woodName}_slabs_from_logs`)             
+        //     .itemInputs(allLogs)
+        //     .circuit(3)
+        //     .itemOutputs(slab.copyWithCount(24))
+        //     .itemOutputs('24x gtceu:wood_dust')
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+
+        // e.recipes.gtceu.cutter(`tfg:${woodName}_slabs_from_planks`)             
+        //     .itemInputs(plank)
+        //     .circuit(1)
+        //     .itemOutputs(slab.copyWithCount(2))
+        //     .itemOutputs('1x gtceu:wood_dust')
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
         
-        //#region Дверь
-        e.shaped(door, [
-            'ABd',
-            'ACD',
-            'AAs'
-        ], {
-            A: lumber,
-            B: trapdoor,
-            C: '#forge:rings',
-            D: '#forge:screws',
-            d: '#forge:tools/screwdrivers',
-            s: '#forge:tools/saws',
-        }).id(`tfg:${woodName}_door`)
+        // //#region Забор
+        // e.shaped(fence.copyWithCount(8), [
+        //     'h s',
+        //     'ABA',
+        //     'ACA'
+        // ], {
+        //     A: plank,
+        //     B: '#forge:rods/wooden',
+        //     C: lumber,
+        //     h: '#forge:tools/hammers',
+        //     s: '#forge:tools/saws'
+        // }).id(`tfg:${woodName}_fence`)
 
-        e.recipes.gtceu.assembler(`tfg:${woodName}_door`)             
-            .itemInputs(lumber.copyWithCount(4))
-            .itemInputs(trapdoor)
-            .inputFluids(Fluid.of('gtceu:iron', 16))
-            .circuit(0)
-            .itemOutputs(door)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // e.recipes.gtceu.cutter(`tfg:${woodName}_fence`)             
+        //     .itemInputs(plank)
+        //     .circuit(2)
+        //     .itemOutputs(fence.copyWithCount(2))
+        //     .itemOutputs('1x gtceu:wood_dust')
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
 
-        //#region Люк
-        e.shaped(trapdoor, [
-            'ABd',
-            'ACs'
-        ], {
-            A: lumber,
-            B: '#forge:rings',
-            C: '#forge:screws',
-            d: '#forge:tools/screwdrivers',
-            s: '#forge:tools/saws',
-        }).id(`tfg:${woodName}_trapdoor`)
+        // //#region Калитка
+        // e.shaped(fenceGate, [
+        //     'A A',
+        //     'BCB',
+        //     'DCD'
+        // ], {
+        //     A: 'minecraft:flint',
+        //     B: '#forge:rods/wooden',
+        //     C: plank,
+        //     D: lumber
+        // }).id(`tfg:${woodName}_fence_gate_flint`)
 
-        e.recipes.gtceu.assembler(`tfg:${woodName}_trapdoor`)             
-            .itemInputs(lumber.copyWithCount(2))
-            .inputFluids(Fluid.of('gtceu:iron', 16))
-            .circuit(0)
-            .itemOutputs(trapdoor)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // e.shaped(fenceGate.copyWithCount(2), [
+        //     'AEA',
+        //     'BCB',
+        //     'DCD'
+        // ], {
+        //     A: '#forge:screws',
+        //     B: '#forge:rods/wooden',
+        //     C: plank,
+        //     D: lumber,
+        //     E: '#forge:tools/screwdrivers'
+        // }).id(`tfg:${woodName}_fence_gate_screws`)
 
-        //#region Нажимная пластина
-        e.shaped(pressurePlate.copyWithCount(2), [
-            'AmA',
-            'BCB',
-            'AdA'
-        ], {
-            A: 'gtceu:wood_bolt',
-            B: slab,
-            C: '#tfg:all_iron_springs',
-            m: '#forge:tools/mallets',
-            d: '#forge:tools/screwdrivers'
-        }).id(`tfg:${woodName}_pressure_plate`)
-
-        e.recipes.gtceu.assembler(`tfg:${woodName}_pressure_plate`)             
-            .itemInputs(slab.copyWithCount(2))
-            .itemInputs('#tfg:all_iron_springs')
-            .circuit(0)
-            .itemOutputs(pressurePlate)
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_fence_gate`)             
+        //     .itemInputs(plank.copyWithCount(2))
+        //     .itemInputs('2x #forge:rods/wooden')
+        //     .circuit(3)
+        //     .itemOutputs(fenceGate)
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
         
-        //#region Пиломатериалы
+        // //#region Дверь
+        // e.shaped(door, [
+        //     'ABd',
+        //     'ACD',
+        //     'AAs'
+        // ], {
+        //     A: lumber,
+        //     B: trapdoor,
+        //     C: '#forge:rings',
+        //     D: '#forge:screws',
+        //     d: '#forge:tools/screwdrivers',
+        //     s: '#forge:tools/saws',
+        // }).id(`tfg:${woodName}_door`)
 
-        //#region Из бревен
-        e.shaped(lumber.copyWithCount(8), [
-            's',
-            'A'
-        ], {
-            A: allLogs,
-            s: '#forge:tools/saws'
-        }).id(`tfg:${woodName}_lumber_from_planks_saw`)
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_door`)             
+        //     .itemInputs(lumber.copyWithCount(4))
+        //     .itemInputs(trapdoor)
+        //     .inputFluids(Fluid.of('gtceu:iron', 16))
+        //     .circuit(0)
+        //     .itemOutputs(door)
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
 
-        e.recipes.create.cutting(lumber.copyWithCount(12).withChance(0.95), allLogs)
-            .id(`tfg:${woodName}_lumber_from_planks_cutting`)
+        // //#region Люк
+        // e.shaped(trapdoor, [
+        //     'ABd',
+        //     'ACs'
+        // ], {
+        //     A: lumber,
+        //     B: '#forge:rings',
+        //     C: '#forge:screws',
+        //     d: '#forge:tools/screwdrivers',
+        //     s: '#forge:tools/saws',
+        // }).id(`tfg:${woodName}_trapdoor`)
 
-        e.recipes.gtceu.assembler(`tfg:${woodName}_lumber_from_planks`)             
-            .itemInputs(allLogs)
-            .circuit(4)
-            .itemOutputs(lumber.copyWithCount(16))
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_trapdoor`)             
+        //     .itemInputs(lumber.copyWithCount(2))
+        //     .inputFluids(Fluid.of('gtceu:iron', 16))
+        //     .circuit(0)
+        //     .itemOutputs(trapdoor)
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
 
-        //#region Из ступенек
-        e.shaped(lumber.copyWithCount(3), [
-            'A',
-            's'
-        ], {
-            A: stair,
-            s: '#forge:tools/saws'
-        }).id(`tfg:${woodName}_lumber_from_stairs_saw`)
+        // //#region Нажимная пластина
+        // e.shaped(pressurePlate.copyWithCount(2), [
+        //     'AmA',
+        //     'BCB',
+        //     'AdA'
+        // ], {
+        //     A: 'gtceu:wood_bolt',
+        //     B: slab,
+        //     C: '#tfg:all_iron_springs',
+        //     m: '#forge:tools/mallets',
+        //     d: '#forge:tools/screwdrivers'
+        // }).id(`tfg:${woodName}_pressure_plate`)
 
-        e.recipes.create.cutting(lumber.copyWithCount(3).withChance(0.95), stair)
-            .id(`tfg:${woodName}_lumber_from_stairs_cutting`)
-
-        e.recipes.gtceu.assembler(`tfg:${woodName}_lumber_from_stairs`)             
-            .itemInputs(stair)
-            .circuit(4)
-            .itemOutputs(lumber.copyWithCount(3))
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
-
-        //#region Из полублоков
-        e.shaped(lumber.copyWithCount(2), [
-            'A',
-            's'
-        ], {
-            A: slab,
-            s: '#forge:tools/saws'
-        }).id(`tfg:${woodName}_lumber_from_slab_saw`)
-
-        e.recipes.create.cutting(lumber.copyWithCount(2).withChance(0.95), slab)
-            .id(`tfg:${woodName}_lumber_from_slab_cutting`)
-
-        e.recipes.gtceu.assembler(`tfg:${woodName}_lumber_from_slab`)             
-            .itemInputs(slab)
-            .circuit(4)
-            .itemOutputs(lumber.copyWithCount(2))
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
-
-        //#endregion
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_pressure_plate`)             
+        //     .itemInputs(slab.copyWithCount(2))
+        //     .itemInputs('#tfg:all_iron_springs')
+        //     .circuit(0)
+        //     .itemOutputs(pressurePlate)
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
         
-        //#region Табличка
-        e.shaped(sign.copyWithCount(3), [
-            'AAA',
-            'AAA',
-            'mB '
-        ], {
-            A: lumber,
-            B: '#forge:rods/wooden',
-            m: '#forge:tools/mallets'
-        }).id(`tfg:${woodName}_sign`)
+        // //#region Пиломатериалы
 
-        e.recipes.gtceu.assembler(`tfg:${woodName}_sign`)             
-            .itemInputs(lumber.copyWithCount(6))
-            .circuit(3)
-            .itemOutputs(sign.copyWithCount(3))
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
-        //#endregion
+        // //#region Из бревен
+        // e.shaped(lumber.copyWithCount(8), [
+        //     's',
+        //     'A'
+        // ], {
+        //     A: allLogs,
+        //     s: '#forge:tools/saws'
+        // }).id(`tfg:${woodName}_lumber_from_planks_saw`)
 
-        //#region Висящая табличка
-        e.shaped(hangingSign.copyWithCount(3), [
-            'AmA',
-            'CBC',
-            'BBB'
-        ], {
-            A: '#tfg:metal_chains',
-            B: lumber,
-            C: '#forge:screws',
-            m: '#forge:tools/mallets'
-        }).id(`tfg:${woodName}_hanging_sign`)
+        // e.recipes.create.cutting(lumber.copyWithCount(12).withChance(0.95), allLogs)
+        //     .id(`tfg:${woodName}_lumber_from_planks_cutting`)
 
-        e.recipes.gtceu.assembler(`tfg:${woodName}_hanging_sign`)             
-            .itemInputs(lumber.copyWithCount(4))
-            .itemInputs('2x #tfg:metal_chains')
-            .inputFluids(Fluid.of('gtceu:iron', 32))
-            .circuit(4)
-            .itemOutputs(hangingSign.copyWithCount(3))
-            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_lumber_from_planks`)             
+        //     .itemInputs(allLogs)
+        //     .circuit(4)
+        //     .itemOutputs(lumber.copyWithCount(16))
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
+
+        // //#region Из ступенек
+        // e.shaped(lumber.copyWithCount(3), [
+        //     'A',
+        //     's'
+        // ], {
+        //     A: stair,
+        //     s: '#forge:tools/saws'
+        // }).id(`tfg:${woodName}_lumber_from_stairs_saw`)
+
+        // e.recipes.create.cutting(lumber.copyWithCount(3).withChance(0.95), stair)
+        //     .id(`tfg:${woodName}_lumber_from_stairs_cutting`)
+
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_lumber_from_stairs`)             
+        //     .itemInputs(stair)
+        //     .circuit(4)
+        //     .itemOutputs(lumber.copyWithCount(3))
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
+
+        // //#region Из полублоков
+        // e.shaped(lumber.copyWithCount(2), [
+        //     'A',
+        //     's'
+        // ], {
+        //     A: slab,
+        //     s: '#forge:tools/saws'
+        // }).id(`tfg:${woodName}_lumber_from_slab_saw`)
+
+        // e.recipes.create.cutting(lumber.copyWithCount(2).withChance(0.95), slab)
+        //     .id(`tfg:${woodName}_lumber_from_slab_cutting`)
+
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_lumber_from_slab`)             
+        //     .itemInputs(slab)
+        //     .circuit(4)
+        //     .itemOutputs(lumber.copyWithCount(2))
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
+
+        // //#endregion
+        
+        // //#region Табличка
+        // e.shaped(sign.copyWithCount(3), [
+        //     'AAA',
+        //     'AAA',
+        //     'mB '
+        // ], {
+        //     A: lumber,
+        //     B: '#forge:rods/wooden',
+        //     m: '#forge:tools/mallets'
+        // }).id(`tfg:${woodName}_sign`)
+
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_sign`)             
+        //     .itemInputs(lumber.copyWithCount(6))
+        //     .circuit(3)
+        //     .itemOutputs(sign.copyWithCount(3))
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        // //#endregion
+
+        // //#region Висящая табличка
+        // e.shaped(hangingSign.copyWithCount(3), [
+        //     'AmA',
+        //     'CBC',
+        //     'BBB'
+        // ], {
+        //     A: '#tfg:metal_chains',
+        //     B: lumber,
+        //     C: '#forge:screws',
+        //     m: '#forge:tools/mallets'
+        // }).id(`tfg:${woodName}_hanging_sign`)
+
+        // e.recipes.gtceu.assembler(`tfg:${woodName}_hanging_sign`)             
+        //     .itemInputs(lumber.copyWithCount(4))
+        //     .itemInputs('2x #tfg:metal_chains')
+        //     .inputFluids(Fluid.of('gtceu:iron', 32))
+        //     .circuit(4)
+        //     .itemOutputs(hangingSign.copyWithCount(3))
+        //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
         //#endregion
 
         //#endregion
@@ -476,58 +527,58 @@ const registerMinecraftRecipes = (e) => {
     //#region Бамбук
 
     // Доски
-    e.remove({ id: 'gtceu:shapeless/bamboo_planks' })
+    // e.remove({ id: 'gtceu:shapeless/bamboo_planks' })
 
     // Ступенька
-    e.remove({ id: 'minecraft:bamboo_stairs' })
-    e.remove({ id: 'gtceu:assembler/bamboo_stairs' })
+    // e.remove({ id: 'minecraft:bamboo_stairs' })
+    // e.remove({ id: 'gtceu:assembler/bamboo_stairs' })
 
-    e.shaped('minecraft:bamboo_stairs', [
-        'As'  
-    ], {
-        A: 'minecraft:bamboo_planks',
-        s: '#forge:tools/saws'
-    }).id(`tfg:bamboo_stairs_saw`)
+    // e.shaped('minecraft:bamboo_stairs', [
+    //     'As'  
+    // ], {
+    //     A: 'minecraft:bamboo_planks',
+    //     s: '#forge:tools/saws'
+    // }).id(`tfg:bamboo_stairs_saw`)
 
-    e.recipes.gtceu.cutter(`tfg:bamboo_stairs_from_logs`)             
-        .itemInputs('#minecraft:bamboo_blocks')
-        .circuit(1)
-        .itemOutputs('4x minecraft:bamboo_stairs')
-        .itemOutputs('1x gtceu:wood_dust')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.cutter(`tfg:bamboo_stairs_from_logs`)             
+    //     .itemInputs('#minecraft:bamboo_blocks')
+    //     .circuit(1)
+    //     .itemOutputs('4x minecraft:bamboo_stairs')
+    //     .itemOutputs('1x gtceu:wood_dust')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
-    e.recipes.gtceu.cutter(`tfg:bamboo_stairs_from_planks`)             
-        .itemInputs('minecraft:bamboo_planks')
-        .circuit(0)
-        .itemOutputs('minecraft:bamboo_stairs')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.cutter(`tfg:bamboo_stairs_from_planks`)             
+    //     .itemInputs('minecraft:bamboo_planks')
+    //     .circuit(0)
+    //     .itemOutputs('minecraft:bamboo_stairs')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
     // Мозаичная ступенька 
-    e.remove({ id: 'minecraft:bamboo_mosaic_stairs' })
+    // e.remove({ id: 'minecraft:bamboo_mosaic_stairs' })
 
-    e.shaped('minecraft:bamboo_mosaic_stairs', [
-        'As'  
-    ], {
-        A: 'minecraft:bamboo_mosaic',
-        s: '#forge:tools/saws'
-    }).id(`tfg:bamboo_mosaic_stairs_saw`)
+    // e.shaped('minecraft:bamboo_mosaic_stairs', [
+    //     'As'  
+    // ], {
+    //     A: 'minecraft:bamboo_mosaic',
+    //     s: '#forge:tools/saws'
+    // }).id(`tfg:bamboo_mosaic_stairs_saw`)
 
-    e.recipes.gtceu.cutter(`tfg:bamboo_mosaic_stairs_from_planks`)             
-        .itemInputs('minecraft:bamboo_mosaic')
-        .circuit(0)
-        .itemOutputs('minecraft:bamboo_mosaic_stairs')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.cutter(`tfg:bamboo_mosaic_stairs_from_planks`)             
+    //     .itemInputs('minecraft:bamboo_mosaic')
+    //     .circuit(0)
+    //     .itemOutputs('minecraft:bamboo_mosaic_stairs')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
-    e.recipes.create.cutting('minecraft:bamboo_mosaic_stairs', 'minecraft:bamboo_mosaic')
-        .id(`tfg:bamboo_mosaic_planks_cutting`)
+    // e.recipes.create.cutting('minecraft:bamboo_mosaic_stairs', 'minecraft:bamboo_mosaic')
+    //     .id(`tfg:bamboo_mosaic_planks_cutting`)
 
     // Полублок
-    e.recipes.create.cutting('2x minecraft:bamboo_mosaic_slab', 'minecraft:bamboo_mosaic')
-        .id(`tfg:bamboo_mosaic_slabs_cutting`)
+    // e.recipes.create.cutting('2x minecraft:bamboo_mosaic_slab', 'minecraft:bamboo_mosaic')
+    //     .id(`tfg:bamboo_mosaic_slabs_cutting`)
 
     // Забор
-    e.remove({ id: 'gtceu:shaped/bamboo_fence' })
-    e.remove({ id: 'gtceu:assembler/bamboo_fence' })
+    // e.remove({ id: 'gtceu:shaped/bamboo_fence' })
+    // e.remove({ id: 'gtceu:assembler/bamboo_fence' })
 
     //todo: я устал, правда
     // e.shaped(fence.copyWithCount(8), [
@@ -560,11 +611,11 @@ const registerMinecraftRecipes = (e) => {
     
 
     // Очищенный блок бамбука
-    e.recipes.gtceu.cutter(`tfg:stripped_bamboo`)             
-        .itemInputs('minecraft:bamboo_block')
-        .circuit(0)
-        .itemOutputs('minecraft:stripped_bamboo_block')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.cutter(`tfg:stripped_bamboo`)             
+    //     .itemInputs('minecraft:bamboo_block')
+    //     .circuit(0)
+    //     .itemOutputs('minecraft:stripped_bamboo_block')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
     // Бамбуковый мозаичный блок
     // e.recipes.gtceu.cutter(`tfg:bamboo_mosaic`)             
@@ -576,25 +627,25 @@ const registerMinecraftRecipes = (e) => {
     //#endregion
 
     //#region Палки
-    e.remove({ id: 'gtceu:shaped/stick_normal' })
-    e.remove({ id: 'minecraft:stick_from_bamboo_item' })
+    // e.remove({ id: 'gtceu:shaped/stick_normal' })
+    // e.remove({ id: 'minecraft:stick_from_bamboo_item' })
 
-    e.remove({ id: 'gtceu:lathe/lathe_planks' })
+    // e.remove({ id: 'gtceu:lathe/lathe_planks' })
 
-    e.recipes.gtceu.lathe(`tfg:sticks_from_lumber`)             
-        .itemInputs('#tfc:lumber')
-        .itemOutputs('minecraft:stick')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.lathe(`tfg:sticks_from_lumber`)             
+    //     .itemInputs('#tfc:lumber')
+    //     .itemOutputs('minecraft:stick')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
-    e.recipes.gtceu.lathe(`tfg:sticks_from_planks`)             
-        .itemInputs('#minecraft:planks')
-        .itemOutputs('4x minecraft:stick')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.lathe(`tfg:sticks_from_planks`)             
+    //     .itemInputs('#minecraft:planks')
+    //     .itemOutputs('4x minecraft:stick')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
     
-    e.recipes.gtceu.lathe(`tfg:sticks_from_logs`)             
-        .itemInputs('#minecraft:logs')
-        .itemOutputs('32x minecraft:stick')
-        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    // e.recipes.gtceu.lathe(`tfg:sticks_from_logs`)             
+    //     .itemInputs('#minecraft:logs')
+    //     .itemOutputs('32x minecraft:stick')
+    //     .EUt(GTValues.VA[GTValues.ULV]).duration(200)
 
     //#endregion
 
