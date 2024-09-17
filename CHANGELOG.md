@@ -35,6 +35,8 @@
 - Alternator recipes was sligthly nerfed.
 - Fixed bug when some items wont display inside EMI.
 - Simplified alternator multiblock reques and it controller block recipe.
+- Added better recipes for any wood (nether wood too).
+- Added stripping recipes in emi world interaction page.
 - ...
 ### Updated mods
 - ??
