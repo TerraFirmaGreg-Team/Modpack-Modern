@@ -1,9 +1,6 @@
 {
     "filters": [
         {
-            "category": "emi:world_interaction"
-        },
-        {
             "category": "minecraft:blasting"
         },
         {
@@ -20,6 +17,52 @@
         },
         {
             "category": "emi:composting"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/flower_duping\//"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/stripping\/minecraft\//"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/shearing/minecraft/pumpkin"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/tilling\/minecraft\//"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/flattening\/minecraft\/grass_block\//"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_spring/minecraft/water"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_interaction/minecraft/cobblestone"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_interaction/minecraft/stone"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/emi\/bucket_filling\/minecraft\//"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/unique/minecraft/water_bottle"
         }
     ]
 }
