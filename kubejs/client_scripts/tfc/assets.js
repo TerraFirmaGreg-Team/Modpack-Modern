@@ -18,7 +18,7 @@ const registerTFCAssets = (e) => {
             output: `item:tfc:wood/stripped_wood/${woodName}`
         }
 
-        e.add(`emi:recipe/additions/tfc_${woodName}_wood_conversion`, logJson)
+        e.add(`emi:recipe/additions/tfc_${woodName}_log_conversion`, logJson)
         e.add(`emi:recipe/additions/tfc_${woodName}_wood_conversion`, woodJson)
     })
     //#endregion

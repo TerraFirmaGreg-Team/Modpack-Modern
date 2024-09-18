@@ -18,7 +18,7 @@ const registerMinecraftAssets = (e) => {
             output: `item:minecraft:stripped_${woodName}_hyphae`
         }
 
-        e.add(`emi:recipe/additions/vanilla_nether_${woodName}_wood_conversion`, logJson)
+        e.add(`emi:recipe/additions/vanilla_nether_${woodName}_log_conversion`, logJson)
         e.add(`emi:recipe/additions/vanilla_nether_${woodName}_wood_conversion`, woodJson)
     })
     //#endregion
