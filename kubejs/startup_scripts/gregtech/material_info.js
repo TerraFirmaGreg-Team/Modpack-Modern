@@ -3,16 +3,18 @@
 const registerGregTechMaterialInfo = (event) => {
     //#region Дерево
 
-    global.MINECRAFT_OVERWORLD_WOOD_TYPES.forEach(woodType => {
-        // event.remove(`minecraft:${woodType}_planks`)
-        // event.remove(`minecraft:${woodType}_stairs`)
-        // event.remove(`minecraft:${woodType}_slab`)
-        // event.remove(`minecraft:${woodType}_fence`)
-        // event.remove(`minecraft:${woodType}_fence_gate`)
-        // event.remove(`minecraft:${woodType}_door`)
-        // event.remove(`minecraft:${woodType}_button`)
-        // event.remove(`minecraft:${woodType}_boat`)
-    })
+    // ChemicalHelper.ITEM_MATERIAL_INFO.remove(Item.of('minecraft:acacia_planks'))
+
+    // global.MINECRAFT_ALL_WOOD_TYPES.forEach(woodType => {
+    //     event.remove(`minecraft:${woodType}_planks`)
+    //     event.remove(`minecraft:${woodType}_stairs`)
+    //     event.remove(`minecraft:${woodType}_slab`)
+    //     event.remove(`minecraft:${woodType}_fence`)
+    //     event.remove(`minecraft:${woodType}_fence_gate`)
+    //     event.remove(`minecraft:${woodType}_door`)
+    //     event.remove(`minecraft:${woodType}_button`)
+    //     event.remove(`minecraft:${woodType}_boat`)
+    // })
 
     // Сундуки
     // removeMaterialInfo(Blocks.CHEST);
