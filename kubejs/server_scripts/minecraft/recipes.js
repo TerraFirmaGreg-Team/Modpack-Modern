@@ -77,8 +77,23 @@ const registerMinecraftRecipes = (e) => {
         e.remove({ id: `gtceu:shaped/${woodName}_chest_boat` })
         e.remove({ id: `gtceu:assembler/${woodName}_chest_boat` })
 
-        // Roofs
+        // Roofs (AlekiRoofs)
         e.remove({ id: `alekiroofs:crafting/${woodName}_roofing` })
+
+        // Window (Create)
+        e.remove({ id: `create:oak_window` })
+
+        // Window Pane (Create)
+        e.remove({ id: `create:oak_window_pane` })
+
+        // Train Track Narrow
+        e.remove({ id: `railways:sequenced_assembly/track_${woodName}_narrow` })
+
+        // Train Track Normal
+        e.remove({ id: `railways:sequenced_assembly/track_${woodName}` })
+
+        // Train Track Wide
+        e.remove({ id: `railways:sequenced_assembly/track_${woodName}_wide` })
 
         // Sticks
         e.remove({ id: `everycomp:c/minecraft/null_from_${woodName}_planks_stonecutting` })
@@ -113,6 +128,17 @@ const registerMinecraftRecipes = (e) => {
         const hangingSign = Item.of(`minecraft:${woodName}_hanging_sign`)
 
         const roofing = Item.of(`alekiroofs:${woodName}_roofing`)
+        
+        const window = Item.of(`create:${woodName}_window_pane`)
+        const windowPane = Item.of(`create:${woodName}_window_pane`)
+
+        const incompleteTrackNarrow = Item.of(`railways:track_incomplete_${woodName}_narrow`)
+        const incompleteTrack = Item.of(`railways:track_incomplete_${woodName}`)
+        const incompleteTrackWide = Item.of(`railways:track_incomplete_${woodName}_wide`)
+
+        const trackNarrow = Item.of(`railways:narrow_${woodName}_track`)
+        const track = Item.of(`railways:${woodName}_track`)
+        const trackWide = Item.of(`railways:wide_${woodName}_track`)
 
         //#region Бревно
         e.shaped(log, [
@@ -198,7 +224,7 @@ const registerMinecraftRecipes = (e) => {
             .EUt(GTValues.VA[GTValues.ULV]).duration(200)
         //#endregion
     
-        //#region Пиломатериалы
+        //#region Пиломатериалы (TFC)
 
         //#region Из бревен
         e.shaped(lumber.copyWithCount(8), [
@@ -559,7 +585,7 @@ const registerMinecraftRecipes = (e) => {
             .EUt(GTValues.VA[GTValues.ULV]).duration(200)
         //#endregion
 
-        //#region Крыша
+        //#region Крыша (AlekiRoofs)
         e.remove({ id: `alekiroofs:crafting/${woodName}_roofing` })
 
         e.shaped(roofing.copyWithCount(2), [
@@ -579,6 +605,115 @@ const registerMinecraftRecipes = (e) => {
             .itemOutputs(roofing.copyWithCount(2))
             .itemOutputs('1x gtceu:wood_dust')
             .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        //#endregion
+    
+        //#region Окно (Create)
+        e.remove({ id: `create:${woodName}_window` })
+
+        e.shaped(window, [
+            ' A ',
+            'ABA',
+            ' m '
+        ], {
+            A: plank,
+            B: '#forge:glass/colorless',
+            m: '#forge:tools/mallets'
+        }).id(`tfg:workbench/${woodName}_window`)
+
+        e.recipes.gtceu.assembler(`tfg:${woodName}_window`)             
+            .itemInputs(plank)
+            .itemInputs('#forge:glass/colorless')
+            .circuit(16)
+            .itemOutputs(window)
+            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+        //#endregion
+
+        //#region Окнонная панель (Create)
+        e.remove({ id: `create:${woodName}_window_pane` })
+
+        e.shaped(windowPane.copyWithCount(2), [
+            'AB',
+            'Am'
+        ], {
+            A: plank,
+            B: '#forge:glass/colorless',
+            m: '#forge:tools/mallets'
+        }).id(`tfg:workbench/${woodName}_window_pane`)
+
+        e.recipes.gtceu.assembler(`tfg:${woodName}_window_pane`)             
+            .itemInputs(plank)
+            .itemInputs('#forge:glass/colorless')
+            .circuit(17)
+            .itemOutputs(windowPane.copyWithCount(2))
+            .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+
+        //#endregion
+    
+        //#region Железнодорожное полотно (Узкое) (Create)
+        e.remove({ id: `railways:sequenced_assembly/track_${woodName}_narrow` })
+
+        e.recipes.createSequencedAssembly([
+            trackNarrow,
+        ], slab, [
+            e.recipes.createDeploying(incompleteTrackNarrow, [incompleteTrackNarrow, '#tfg:all_iron_nuggets']),
+            e.recipes.createDeploying(incompleteTrackNarrow, [incompleteTrackNarrow, '#tfg:all_iron_nuggets']),
+            e.recipes.createDeploying(incompleteTrackNarrow, [incompleteTrackNarrow, '#tfg:all_iron_nuggets']),
+            e.recipes.createDeploying(incompleteTrackNarrow, [incompleteTrackNarrow, '#tfg:all_iron_nuggets']),
+            e.recipes.createDeploying(incompleteTrackNarrow, [incompleteTrackNarrow, '4x #forge:screws']),
+            e.recipes.createPressing(incompleteTrackNarrow, [incompleteTrackNarrow]),
+        ]).transitionalItem(incompleteTrackNarrow).loops(1)
+            .id(`tfg:sequenced_assembly/track_${woodName}_narrow`)
+    
+        e.recipes.gtceu.assembler(`tfg:narrow_${woodName}_track`)             
+            .itemInputs(slab, '4x #tfg:all_iron_nuggets', '4x #forge:screws')
+            .itemOutputs(trackNarrow)
+            .circuit(24)
+            .duration(800)
+            .EUt(32)
+
+        //#endregion
+
+        //#region Железнодорожное полотно (Нормальное) (Create)
+        e.remove({ id: `railways:sequenced_assembly/track_${woodName}` })
+
+        e.recipes.createSequencedAssembly([
+            track, 
+        ], trackNarrow, [
+            e.recipes.createCutting(incompleteTrack, incompleteTrack).processingTime(100),
+            e.recipes.createDeploying(incompleteTrack, [incompleteTrack, slab]),
+            e.recipes.createDeploying(incompleteTrack, [incompleteTrack, '4x #tfg:all_iron_nuggets']),
+            e.recipes.createPressing(incompleteTrack, [incompleteTrack]),
+        ]).transitionalItem(incompleteTrack).loops(1)
+            .id(`tfg:sequenced_assembly/track_${woodName}`)
+    
+        e.recipes.gtceu.assembler(`tfg:track_${woodName}`)             
+            .itemInputs(slab, trackNarrow, '4x #forge:screws')
+            .itemOutputs(track)
+            .circuit(24)
+            .duration(1200)
+            .EUt(32)
+
+        //#endregion
+
+        //#region Железнодорожное полотно (Широкое) (Create)
+        e.remove({ id: `railways:sequenced_assembly/track_${woodName}_wide` })
+
+        e.recipes.createSequencedAssembly([
+            trackWide, 
+        ], track, [
+            e.recipes.createCutting(incompleteTrackWide, incompleteTrackWide).processingTime(150),
+            e.recipes.createDeploying(incompleteTrackWide, [incompleteTrackWide, slab]),
+            e.recipes.createDeploying(incompleteTrackWide, [incompleteTrackWide, '4x #tfg:all_iron_nuggets']),
+            e.recipes.createPressing(incompleteTrackWide, [incompleteTrackWide]),
+        ]).transitionalItem(incompleteTrackWide).loops(1)
+            .id(`tfg:sequenced_assembly/track_${woodType}_wide`)
+    
+        e.recipes.gtceu.assembler(`tfg:track_${woodType}_wide`)             
+            .itemInputs(slab, track, '4x #forge:screws')
+            .itemOutputs(trackWide)
+            .duration(1600)
+            .EUt(16)
+
         //#endregion
     }
 

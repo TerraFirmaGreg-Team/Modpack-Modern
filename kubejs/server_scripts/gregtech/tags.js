@@ -81,6 +81,9 @@ const registerGregTechItemTags = (event) => {
 
     event.add('tfg:all_iron_springs', 'gtceu:iron_spring')
     event.add('tfg:all_iron_springs', 'gtceu:wrought_iron_spring')
+
+    event.add('tfg:all_iron_nuggets', 'minecraft:iron_nugget')
+    event.add('tfg:all_iron_nuggets', 'gtceu:wrought_iron_nugget')
     //#endregion
 
     //#region Скрываем все руды (не используем #forge:ores, потому что будет пересечение)
