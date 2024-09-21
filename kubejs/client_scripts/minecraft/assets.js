@@ -21,5 +21,20 @@ const registerMinecraftAssets = (e) => {
         e.add(`emi:recipe/additions/vanilla_nether_${woodName}_log_conversion`, logJson)
         e.add(`emi:recipe/additions/vanilla_nether_${woodName}_wood_conversion`, woodJson)
     })
+
+    //#region Бамбук
+    const woodName = 'bamboo'
+
+    const bambooJson = {
+        type: 'emi:world_interaction',
+        left: `item:minecraft:${woodName}_block`,
+        right: '#item:minecraft:axes',
+        output: `item:minecraft:stripped_${woodName}_block`
+    }
+
+    e.add(`emi:recipe/additions/vanilla_${woodName}_log_conversion`, bambooJson)
+
+    //#endregion
+
     //#endregion
 }
