@@ -10,4 +10,6 @@
 	disableVanillaBoatFunctionality = true
 	#Automatically adjusts latitude and longitude to match the climate scale of the TFC world.
 	changeLatitudeLongitudeBasedOnClimateConfig = false
+	#Expands water source creation to make canal building possible at sea level.
+	enableParallelSourceCreationAtSeaLevel = true
 

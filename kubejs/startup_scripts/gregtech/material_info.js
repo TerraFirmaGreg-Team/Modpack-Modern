@@ -1,33 +1,35 @@
 // priority: 0
 
+
 const registerGregTechMaterialInfo = (event) => {
     
+    //! отключено для проверки
     //#region Ванильное незер дерево
-    global.MINECRAFT_NETHER_WOOD_TYPES.forEach(woodName => {
-        const trapdoor = Item.of(`minecraft:${woodName}_trapdoor`)
-        const pressurePlate = Item.of(`minecraft:${woodName}_pressure_plate`)
-        const button = Item.of(`minecraft:${woodName}_button`)
-        const sign = Item.of(`minecraft:${woodName}_sign`)
-        const hangingSign = Item.of(`minecraft:${woodName}_hanging_sign`)
+    // global.MINECRAFT_NETHER_WOOD_TYPES.forEach(woodName => {
+    //     const trapdoor = Item.of(`minecraft:${woodName}_trapdoors`).of(`minecraft:${woodName}_trapdoor`)
+    //     const pressurePlate = Item.of(`minecraft:${woodName}_pressure_plate`)
+    //     const button = Item.of(`minecraft:${woodName}_button`)
+    //     const sign = Item.of(`minecraft:${woodName}_sign`)
+    //     const hangingSign = Item.of(`minecraft:${woodName}_hanging_sign`)
 
-        const trapdoorMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
-        const pressurePlateMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
-        const buttonMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M / 9))
-        const signMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
-        const hangingButtonMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+    //     const trapdoorMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+    //     const pressurePlateMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+    //     const buttonMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M / 9))
+    //     const signMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+    //     const hangingButtonMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
 
-        event.add(trapdoor, trapdoorMaterialInfo);
-        event.add(pressurePlate, pressurePlateMaterialInfo);
-        event.add(button, buttonMaterialInfo);
-        event.add(sign, signMaterialInfo);
-        event.add(hangingSign, hangingButtonMaterialInfo);
+    //     event.add(trapdoor, trapdoorMaterialInfo);
+    //     event.add(pressurePlate, pressurePlateMaterialInfo);
+    //     event.add(button, buttonMaterialInfo);
+    //     event.add(sign, signMaterialInfo);
+    //     event.add(hangingSign, hangingButtonMaterialInfo);
         
-    })
+    // })
     //#endregion
 
     //#region ТФК дерево
-    global.TFC_WOOD_TYPES.forEach(woodName => {
-        
+    global.WOOD_BLOCK_TYPES.forEach(wood => {
+        event.add(wood.tag, new ItemMaterialInfo(wood.material));
     })
     //#endregion
     

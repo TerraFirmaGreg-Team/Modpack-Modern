@@ -38,5 +38,26 @@ migrateCopycatsOnInitialize = false
 	fluid_vessel = true
 	large_crank_wheel = true
 	crank_wheel = true
-	fan_freezing_catalyst = true
+	inventory_access_port = true
+	inventory_bridge = true
+
+#.
+#Enable/disable categories of features. Disabling a category hides all related features. Values on server override clients
+[feature_categories]
+	#.
+	#.
+	#All kinetic components, such as gearboxes and crank wheels
+	kinetic = true
+	#.
+	#All redstone components, such as linked transmitter and sequenced pulse generator
+	redstone = true
+	#.
+	#All components related to item and fluid transport
+	logistics = true
+	#.
+	#All copycats (Install Create: Copycats+ to upgrade)
+	copycats = true
+	#.
+	#All building palette blocks
+	palette = true
 
