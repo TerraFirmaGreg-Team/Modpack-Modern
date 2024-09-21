@@ -5,6 +5,7 @@
  */
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
+    registerAlekiRoofsItemTags(event)
     // registerAsticorCartsItemTags(event)
     // registerChiselAndBitsItemTags(event)
     // registerComputerCraftItemTags(event)
