@@ -1,8 +1,38 @@
 // priority: 0
 
 const registerGregTechMaterialInfo = (event) => {
-    //#region Дерево
+    
+    //#region Ванильное незер дерево
+    global.MINECRAFT_NETHER_WOOD_TYPES.forEach(woodName => {
+        const trapdoor = Item.of(`minecraft:${woodName}_trapdoor`)
+        const pressurePlate = Item.of(`minecraft:${woodName}_pressure_plate`)
+        const button = Item.of(`minecraft:${woodName}_button`)
+        const sign = Item.of(`minecraft:${woodName}_sign`)
+        const hangingSign = Item.of(`minecraft:${woodName}_hanging_sign`)
 
+        const trapdoorMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+        const pressurePlateMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+        const buttonMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M / 9))
+        const signMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+        const hangingButtonMaterialInfo = new ItemMaterialInfo(new MaterialStack(GTMaterials.Wood, GTValues.M))
+
+        event.add(trapdoor, trapdoorMaterialInfo);
+        event.add(pressurePlate, pressurePlateMaterialInfo);
+        event.add(button, buttonMaterialInfo);
+        event.add(sign, signMaterialInfo);
+        event.add(hangingSign, hangingButtonMaterialInfo);
+        
+    })
+    //#endregion
+
+    //#region ТФК дерево
+    global.TFC_WOOD_TYPES.forEach(woodName => {
+        
+    })
+    //#endregion
+    
+
+    //#region Дерево
     // ChemicalHelper.ITEM_MATERIAL_INFO.remove(Item.of('minecraft:acacia_planks'))
 
     // global.MINECRAFT_ALL_WOOD_TYPES.forEach(woodType => {
