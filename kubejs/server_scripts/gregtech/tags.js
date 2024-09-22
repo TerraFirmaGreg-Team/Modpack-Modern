@@ -70,6 +70,9 @@ const registerGregTechItemTags = (event) => {
     //#endregion
 
     //#region Объединение некоторых предметов из WroughtIron и Iron в один тег
+    event.add('tfg:all_iron_plates', 'gtceu:iron_plate')
+    event.add('tfg:all_iron_plates', 'gtceu:wrought_iron_plate')
+
     event.add('tfg:all_iron_screws', 'gtceu:iron_screw')
     event.add('tfg:all_iron_screws', 'gtceu:wrought_iron_screw')
 

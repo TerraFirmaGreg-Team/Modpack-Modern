@@ -28,9 +28,9 @@ const registerGregTechMaterialInfo = (event) => {
     //#endregion
 
     //#region ТФК дерево
-    global.WOOD_BLOCK_TYPES.forEach(wood => {
-        event.add(wood.tag, new ItemMaterialInfo(wood.material));
-    })
+    // global.WOOD_BLOCK_TYPES.forEach(wood => {
+    //     event.add(wood.tag, new ItemMaterialInfo(wood.material));
+    // })
     //#endregion
     
 
