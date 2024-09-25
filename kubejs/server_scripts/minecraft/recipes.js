@@ -3519,6 +3519,216 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'tfc:crafting/vanilla/lightning_rod' })
     //#endregion
 
+    //#region Декоративная ваза
+    e.remove({ id: 'minecraft:decorated_pot_simple' })
+
+    e.shaped('minecraft:decorated_pot', [
+        ' A ', 
+        'AfA', 
+        ' A ', 
+    ], {
+        A: 'minecraft:brick',
+        f: '#forge:tools/files'
+    }).id('tfg:workbench/decorated_pot')
+
+    e.recipes.gtceu.assembler('tfg:decorated_pot')             
+        .itemInputs('4x minecraft:brick')
+        .circuit(12)
+        .itemOutputs('minecraft:cauldron')
+        .EUt(3).duration(120)
+    //#endregion
+
+    //#region Стойка для брони
+    e.remove({ id: 'tfc:crafting/vanilla/armor_stand' })
+    e.remove({ id: 'tfc:crafting/vanilla/armor_stand_bulk' })
+    e.remove({ id: 'gtceu:shaped/armor_stand' })
+    e.remove({ id: 'gtceu:assembler/armor_stand' })
+
+    e.shaped('minecraft:armor_stand', [
+        'ABA', 
+        'hBs',
+        'CDC'  
+    ], {
+        A: 'gtceu:wood_bolt',  
+        B: '#forge:rods/wooden',  
+        C: '#tfg:all_iron_plates',  
+        D: '#forge:smooth_stone_slab',  
+        h: '#forge:tools/hammers',  
+        s: '#forge:tools/saws'  
+    }).id('tfg:workbench/cauldron')
+
+    e.recipes.gtceu.assembler('tfg:cauldron')             
+        .itemInputs('#forge:smooth_stone_slab', '2x #forge:rods/wooden', '2x #tfg:all_iron_plates')
+        .circuit(7)
+        .itemOutputs('minecraft:armor_stand')
+        .EUt(7).duration(100)
+    //#endregion
+
+    //#region Рамка
+    e.remove({ id: 'gtceu:shaped/item_frame' })
+    e.remove({ id: 'tfc:crafting/vanilla/item_frame' })
+    e.remove({ id: 'gtceu:assembler/item_frame' })
+
+    e.shaped('minecraft:item_frame', [
+        'ABA', 
+        'CDC', 
+        'CCC', 
+    ], {
+        A: '#forge:string',
+        B: '#tfg:all_iron_rings',
+        C: '#forge:rods/wooden',
+        D: '#forge:leather',
+    }).id('tfg:workbench/item_frame')
+
+    e.recipes.gtceu.assembler('tfg:item_frame')             
+        .itemInputs('8x #forge:rods/wooden', '#forge:leather')
+        .itemOutputs('minecraft:item_frame')
+        .EUt(4).duration(100)
+    //#endregion
+
+    //#region Свето-рамка
+    e.remove({ id: 'minecraft:glow_item_frame' })
+
+    e.shapeless('minecraft:glow_item_frame', [
+        'minecraft:item_frame',
+        '#forge:dusts/glowstone'
+    ]).id('tfg:workbench/glow_item_frame')
+
+    e.recipes.gtceu.assembler('tfg:glow_item_frame')             
+        .itemInputs('2x minecraft:item_frame', '#forge:dusts/glowstone')
+        .itemOutputs('2x minecraft:glow_item_frame')
+        .EUt(4).duration(100)
+    //#endregion
+
+    //#region Картина
+    e.remove({ id: 'gtceu:shaped/painting' })
+    e.remove({ id: 'tfc:crafting/vanilla/painting' })
+
+    e.shaped('minecraft:painting', [
+        'ABA', 
+        'CDC', 
+        'CCC', 
+    ], {
+        A: '#forge:string',
+        B: '#tfg:all_iron_rings',
+        C: '#forge:rods/wooden',
+        D: '#tfc:high_quality_cloth',
+    }).id('tfg:workbench/painting')
+    //#endregion
+
+    //#region Книжные полки
+    e.remove({ id: 'gtceu:assembler/bookshelf' })
+    //#endregion
+
+    //#region Резные книжные полки
+    e.remove({ id: 'gtceu:assembler/chiseled_bookshelf' })
+    //#endregion
+
+    //#region Трибуна
+    e.remove({ id: 'gtceu:shaped/lectern' })
+    e.remove({ id: 'tfc:crafting/vanilla/lectern' })
+    e.remove({ id: 'gtceu:assembler/lectern' })
+    //#endregion
+
+    //#region Сундук
+    e.remove({ id: 'gtceu:shaped/chest' })
+    e.remove({ id: 'gtceu:assembler/chest' })
+    //#endregion
+
+    //#region Бочка
+    e.remove({ id: 'gtceu:shaped/barrel' })
+    e.remove({ id: 'gtceu:assembler/barrel' })
+    //#endregion
+
+    //#region Выход: Якорь возрождения
+    e.remove({ id: 'minecraft:respawn_anchor' })
+    //#endregion
+
+    //#region Голова игрока
+    e.remove({ id: 'computercraft:skull_dan200' })
+    e.remove({ id: 'computercraft:skull_cloudy' })
+    //#endregion
+
+    //#region Инфецированные камни 
+    e.remove({ id: 'create:haunting/infested_stone' })
+    e.remove({ id: 'create:haunting/infested_cobblestone' })
+    e.remove({ id: 'create:haunting/infested_stone_bricks' })
+    e.remove({ id: 'create:haunting/infested_mossy_stone_bricks' })
+    e.remove({ id: 'create:haunting/infested_cracked_stone_bricks' })
+    e.remove({ id: 'create:haunting/infested_chiseled_stone_bricks' })
+    e.remove({ id: 'create:haunting/infested_deepslate' })
+    //#endregion
+
+    //#region Редстоун
+    e.remove({ id: 'minecraft:redstone_from_smelting_redstone_ore' })
+    e.remove({ id: 'minecraft:redstone_from_smelting_deepslate_redstone_ore' })
+    
+    e.remove({ id: 'minecraft:redstone_from_blasting_redstone_ore' })
+    e.remove({ id: 'minecraft:redstone_from_blasting_deepslate_redstone_ore' })
+    //#endregion
+
+    //#region Повторитель
+    e.remove({ id: 'gtceu:shaped/repeater' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/repeater' })
+
+    e.shaped('minecraft:repeater', [
+        'A A', 
+        'BsB', 
+        'CDC', 
+    ], {
+        A: '#tfg:all_iron_screws',
+        B: 'minecraft:redstone_torch',
+        C: '#minecraft:stone_pressure_plates',
+        D: '#tfc:high_quality_cloth',
+        s: '#forge:tools/screwdrivers',
+    }).id('tfg:workbench/repeater')
+    //#endregion
+
+    //#region Компаратор
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/comparator' })
+    e.remove({ id: 'gtceu:shaped/comparator' })
+    e.remove({ id: 'gtceu:shaped/comparator_certus' })
+    e.remove({ id: 'gtceu:shaped/comparator_quartzite' })
+    
+    e.shaped('minecraft:comparator', [
+        'DAD',
+        'ABA',
+        'CsC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:plates/certus_quartz',
+        C: '#minecraft:stone_pressure_plates',
+        D: '#tfg:all_iron_screws',
+        s: '#forge:tools/screwdrivers',
+    }).id('tfg:workbench/comparator_certus');
+
+    e.shaped('minecraft:comparator', [
+        'DAD',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:plates/quartzite',
+        C: '#minecraft:stone_pressure_plates',
+        D: '#tfg:all_iron_screws',
+        s: '#forge:tools/screwdrivers',
+    }).id('tfg:workbench/comparator_quartzite');
+
+    e.shaped('minecraft:comparator', [
+        'DAD',
+        'ABA',
+        'CCC'
+    ], {
+        A: 'minecraft:redstone_torch',
+        B: '#forge:plates/nether_quartz',
+        C: '#minecraft:stone_pressure_plates',
+        D: '#tfg:all_iron_screws',
+        s: '#forge:tools/screwdrivers',
+    }).id('tfg:workbench/comparator_nether_quartz');
+
+    //#endregion
+
+
 
 
 
@@ -3598,15 +3808,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Редстоун
-
-    e.remove({ id: 'minecraft:redstone_from_smelting_redstone_ore' })
-    e.remove({ id: 'minecraft:redstone_from_smelting_deepslate_redstone_ore' })
     
-    e.remove({ id: 'minecraft:redstone_from_blasting_redstone_ore' })
-    e.remove({ id: 'minecraft:redstone_from_blasting_deepslate_redstone_ore' })
-
-    //#endregion
 
     //#region Выход: Изумруды
 
@@ -4120,11 +4322,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Сундук
-
-    e.remove({ id: 'gtceu:assembler/chest' })
-
-    //#endregion
+    
 
     //#region Выход: Удочки
 
@@ -4244,24 +4442,6 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Декор ваза
-
-    e.remove({ id: 'minecraft:decorated_pot_simple' })
-
-    //#endregion
-
-    //#region Выход: Резные книжные полки
-
-    e.remove({ id: 'minecraft:chiseled_bookshelf' })
-
-    //#endregion
-
-    //#region Выход: Книжные полки
-
-    e.remove({ id: 'gtceu:assembler/bookshelf' })
-
-    //#endregion
-
     //#region Выход: Кисточка
 
     e.remove({ id: 'minecraft:brush' })
@@ -4275,12 +4455,6 @@ const registerMinecraftRecipes1 = (e) => {
     e.shapeless('minecraft:book', [
         'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
     ]).id('minecraft:book')
-
-    //#endregion
-
-    //#region Выход: Трибуна
-
-    e.remove({ id: 'tfc:crafting/vanilla/lectern' })
 
     //#endregion
 
@@ -4529,45 +4703,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Компаратор
-
-    e.remove({id: 'minecraft:comparator'})
-    e.remove({id: 'gtceu:shaped/comparator_quartzite'})
-    e.remove({id: 'gtceu:shaped/comparator_certus'})
-    e.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
-
-    // Компаратор
-    e.shaped('minecraft:comparator', [
-        ' A ',
-        'ABA',
-        'CCC'
-    ], {
-        A: 'minecraft:redstone_torch',
-        B: '#forge:gems/certus_quartz',
-        C: '#tfc:rock/smooth'
-    }).id('tfg:shaped/comparator_certus');
-
-    e.shaped('minecraft:comparator', [
-        ' A ',
-        'ABA',
-        'CCC'
-    ], {
-        A: 'minecraft:redstone_torch',
-        B: '#forge:gems/quartzite',
-        C: '#tfc:rock/smooth'
-    }).id('tfg:shaped/comparator_quartzite');
-
-    e.shaped('minecraft:comparator', [
-        ' A ',
-        'ABA',
-        'CCC'
-    ], {
-        A: 'minecraft:redstone_torch',
-        B: '#forge:gems/nether_quartz',
-        C: '#tfc:rock/smooth'
-    }).id('tfg:shaped/comparator_nether_quartz');
-
-    //#endregion
+    
 
     //#region Выход: Крюк
 
@@ -4590,44 +4726,6 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Рамка
-
-    e.remove({ id: 'minecraft:item_frame' })
-
-    e.recipes.gtceu.assembler('item_frame')             
-        .itemInputs('8x #tfc:lumber', 'minecraft:leather')
-        .itemOutputs('8x minecraft:item_frame')
-        .duration(100)
-        .EUt(4)
-
-    //#endregion
-
-    //#region Выход: Свето-рамка
-
-    e.shapeless('minecraft:glow_item_frame', [
-        'minecraft:item_frame',
-        '#forge:dusts/glowstone'
-    ]).id('minecraft:glow_item_frame')
-
-    e.recipes.gtceu.assembler('tfg/glow_item_frame')             
-        .itemInputs('2x minecraft:item_frame', '#forge:dusts/glowstone')
-        .itemOutputs('2x minecraft:glow_item_frame')
-        .duration(100)
-        .EUt(4)
-
-    //#endregion
-
-    //#region Выход: Картина
-
-    e.recipes.gtceu.assembler('painting')             
-        .itemInputs('#tfc:high_quality_cloth','8x #forge:rods/wood')
-        .itemOutputs('2x minecraft:painting')
-        .circuit(1)
-        .duration(100)
-        .EUt(4)
-
-    //#endregion
-
     //#region Выход: Огниво
 
     e.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
@@ -4642,11 +4740,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Повторитель
-
-    e.remove({id: 'minecraft:repeater'})
-
-    //#endregion
+    
 
     //#region Выход: Ведро
 
@@ -4904,12 +4998,6 @@ const registerMinecraftRecipes1 = (e) => {
     //     A: 'tfc:mortar',
     //     B: 'minecraft:brick'
     // }).id('tfc:crafting/bricks')
-
-    //#endregion
-
-    //#region Выход: Якорь возрождения
-
-    e.remove({ id: 'minecraft:respawn_anchor' })
 
     //#endregion
 
