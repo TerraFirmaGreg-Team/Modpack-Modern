@@ -817,6 +817,26 @@ const registerGregTechRecipes = (event) => {
 }
 
 const registerGregTechRecipes1 = (event) => {
+
+
+    event.recipes.gtceu.macerator('dirt_from_bio_chaff')             
+        .itemInputs('gtceu:bio_chaff')
+        .itemOutputs('tfc:dirt/loam')
+        .duration(300)
+        .EUt(4)
+
+    // TODO: Из пыли лунного грунта
+    event.remove({ id: 'gtceu:centrifuge/endstone_separation' })
+    /*
+    event.recipes.gtceu.centrifuge('endstone_separation')             
+        .itemInputs('')
+        .chancedOutput('tfc:sand/yellow', 9000, 300)
+        .chancedOutput('gtceu:tungstate_small_dust', 1250, 450)
+        .chancedOutput('gtceu:tiny_platinum_dust', 630, 150)
+        .outputFluids(Fluid.of('gtceu:helium', 2000))
+        .duration(250)
+        .EUt(30)*/
+
     //#region Выход: Удобрение
 
     // В обычном миксере
