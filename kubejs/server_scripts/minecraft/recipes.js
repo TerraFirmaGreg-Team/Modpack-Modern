@@ -3332,7 +3332,7 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'create:haunting/soul_lantern' })
 
     e.recipes.create.haunting('minecraft:soul_lantern', '#tfc:lamps')
-        .id('tfg:haunting/soul_torch')
+        .id('tfg:haunting/soul_lantern')
     //#endregion
 
     //#region Стержень энда
@@ -3555,9 +3555,9 @@ const registerMinecraftRecipes = (e) => {
         D: '#forge:smooth_stone_slab',  
         h: '#forge:tools/hammers',  
         s: '#forge:tools/saws'  
-    }).id('tfg:workbench/cauldron')
+    }).id('tfg:workbench/armor_stand')
 
-    e.recipes.gtceu.assembler('tfg:cauldron')             
+    e.recipes.gtceu.assembler('tfg:armor_stand')             
         .itemInputs('#forge:smooth_stone_slab', '2x #forge:rods/wooden', '2x #tfg:all_iron_plates')
         .circuit(7)
         .itemOutputs('minecraft:armor_stand')
@@ -3700,7 +3700,7 @@ const registerMinecraftRecipes = (e) => {
         C: '#minecraft:stone_pressure_plates',
         D: '#tfg:all_iron_screws',
         s: '#forge:tools/screwdrivers',
-    }).id('tfg:workbench/comparator_certus');
+    }).id('tfg:workbench/comparator_certus')
 
     e.shaped('minecraft:comparator', [
         'DAD',
@@ -3712,7 +3712,7 @@ const registerMinecraftRecipes = (e) => {
         C: '#minecraft:stone_pressure_plates',
         D: '#tfg:all_iron_screws',
         s: '#forge:tools/screwdrivers',
-    }).id('tfg:workbench/comparator_quartzite');
+    }).id('tfg:workbench/comparator_quartzite')
 
     e.shaped('minecraft:comparator', [
         'DAD',
@@ -3724,22 +3724,123 @@ const registerMinecraftRecipes = (e) => {
         C: '#minecraft:stone_pressure_plates',
         D: '#tfg:all_iron_screws',
         s: '#forge:tools/screwdrivers',
-    }).id('tfg:workbench/comparator_nether_quartz');
+    }).id('tfg:workbench/comparator_nether_quartz')
 
     //#endregion
 
+    //#region Калиброванный скалк сенсер
+    e.remove({ id: 'minecraft:calibrated_sculk_sensor' })
+    e.remove({ id: 'gtceu:assembler/calibrated_sculk_sensor' })
+    //#endregion
 
+    //#region Крюк
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/tripwire_hook' })
+    e.remove({ id: 'gtceu:shaped/tripwire_hook' })
+    e.remove({ id: 'gtceu:assembler/tripwire_hook_wrought_iron' })
+    e.remove({ id: 'gtceu:assembler/tripwire_hook_iron' })
 
+    e.shaped('minecraft:tripwire_hook', [
+        'ABA',
+        'CBC',
+        ' C '
+    ], {
+        A: '#tfg:all_iron_rings',
+        B: '#forge:rods/wooden',
+        C: '#forge:string',
+    }).id('tfg:workbench/tripwire_hook')
 
+    e.shapeless('', [
+        '#forge:rings/wrought_iron',
+        '#forge:small_springs'
+    ]).id('tfg:shaped/tripwire_hook')
 
+    e.recipes.gtceu.assembler('tfg:tripwire_hook')             
+        .itemInputs('2x #tfg:all_iron_rings', '2x #forge:rods/wooden')
+        .itemOutputs('minecraft:tripwire_hook')
+        .EUt(4).duration(100)
 
+    //#endregion
 
+    //#region Нить
+    e.remove({ id: 'create:crushing/diamond_horse_armor' })
+    e.remove({ id: 'create:crushing/golden_horse_armor' })
+    e.remove({ id: 'create:crushing/iron_horse_armor' })
+    e.remove({ id: 'create:crushing/wool' })
+    //#endregion
 
+    //#region Детектор света
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/daylight_detector' })
+    //#endregion
 
+    //#region Поршень
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/piston' })
+    e.remove({ id: 'gtceu:shaped/piston_iron' })
+    e.remove({ id: 'gtceu:assembler/piston_iron' })
+    
+    e.shaped('minecraft:piston', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: '#minecraft:planks',
+        B: '#tfg:all_iron_small_gears',
+        C: '#minecraft:wooden_fences',
+        D: '#forge:cobblestone',
+        E: 'gtceu:red_alloy_plate',
+    }).id('tfg:workbench/piston')
 
+    e.recipes.gtceu.assembler('tfg:piston_iron')             
+        .itemInputs('#tfg:all_iron_rods', '#tfg:all_iron_small_gears', '#minecraft:wooden_slabs', '#forge:cobblestone')
+        .inputFluids(Fluid.of('gtceu:red_alloy', 144))
+        .itemOutputs('minecraft:piston')
+        .EUt(7).duration(140)
 
+    e.recipes.gtceu.assembler('tfg:unsticky_piston')             
+        .itemInputs('minecraft:sticky_piston')
+        .circuit(0)
+        .itemOutputs('minecraft:piston')
+        .EUt(7).duration(20)
+    //#endregion
 
+    //#region Липкий поршень
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/sticky_piston' })
 
+    e.shaped('minecraft:sticky_piston', [
+        'A',
+        'B',
+        'C'
+    ], {
+        A: '#forge:tools/hammers',
+        B: 'gtceu:sticky_resin',
+        C: 'minecraft:piston'
+    }).id('tfg:workbench/sticky_piston_from_sticky_resin')
+
+    e.shaped('minecraft:sticky_piston', [
+        'A',
+        'B',
+        'C'
+    ], {
+        A: '#forge:tools/hammers',
+        B: 'tfc:glue',
+        C: 'minecraft:piston'
+    }).id('tfg:workbench/sticky_piston_from_tfc_glue')
+
+    e.recipes.gtceu.assembler('tfg:sticky_piston_from_tfc_glue')             
+        .itemInputs('minecraft:piston', 'tfc:glue')
+        .itemOutputs('minecraft:sticky_piston')
+        .EUt(4).duration(100)
+    //#endregion
+
+    //#region Выход: Раздатчик
+
+    // e.recipes.gtceu.assembler('dispenser')             
+    //     .itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
+    //     .circuit(1)
+    //     .itemOutputs('minecraft:dispenser')
+    //     .duration(100)
+    //     .EUt(30)
+
+    //#endregion
 
     //#region 1
     //e.remove({ id: '' })
@@ -4705,26 +4806,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     
 
-    //#region Выход: Крюк
-
-    e.remove({id: 'minecraft:tripwire_hook'})
-    e.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
-    e.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
-    e.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
-
-    e.shapeless('minecraft:tripwire_hook', [
-        '#forge:rods/wood',
-        '#forge:rings/wrought_iron',
-        '#forge:small_springs'
-    ]).id('tfg:shaped/tripwire_hook')
-
-    e.recipes.gtceu.assembler('tripwire_hook')             
-        .itemInputs('#forge:rods/wood', '#forge:rings/wrought_iron', '#forge:small_springs')
-        .itemOutputs('2x minecraft:tripwire_hook')
-        .duration(100)
-        .EUt(4)
-
-    //#endregion
+    
 
     //#region Выход: Огниво
 
@@ -4801,11 +4883,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Детектор света
     
-    e.remove({ id: 'tfc:crafting/vanilla/redstone/daylight_detector' })
-
-    //#endregion
 
     //#region Выход: Воронка
     
@@ -4827,27 +4905,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Поршень
     
-    e.remove({ id: 'minecraft:piston' })
-    e.remove({ id: 'gtceu:shaped/piston_titanium' })
-    e.remove({ id: 'gtceu:shaped/piston_steel' })
-    e.remove({ id: 'gtceu:shaped/piston_bronze' })
-    e.remove({ id: 'gtceu:shaped/piston_aluminium' })
-
-    e.remove({ id: 'gtceu:assembler/piston_titanium' })
-    e.remove({ id: 'gtceu:assembler/piston_steel' })
-    e.remove({ id: 'gtceu:assembler/piston_iron' })
-    e.remove({ id: 'gtceu:assembler/piston_bronze' })
-    e.remove({ id: 'gtceu:assembler/piston_aluminium' })
-
-    e.recipes.gtceu.assembler('piston')             
-        .itemInputs('#forge:plates/wrought_iron', '3x tfc:wood/planks/acacia', '4x #tfc:rock/raw')
-        .itemOutputs('4x minecraft:piston')
-        .duration(100)
-        .EUt(16)
-
-    //#endregion
 
     //#region Выход: Кожа
         
@@ -4895,16 +4953,7 @@ const registerMinecraftRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Выход: Раздатчик
-
-    e.recipes.gtceu.assembler('dispenser')             
-        .itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
-        .circuit(1)
-        .itemOutputs('minecraft:dispenser')
-        .duration(100)
-        .EUt(30)
-
-    //#endregion
+    
 
     //#region Выход: Выбрасыватель
 
