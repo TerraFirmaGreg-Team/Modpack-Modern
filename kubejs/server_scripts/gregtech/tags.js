@@ -79,6 +79,12 @@ const registerGregTechItemTags = (event) => {
     event.add('tfg:all_iron_rings', 'gtceu:iron_ring')
     event.add('tfg:all_iron_rings', 'gtceu:wrought_iron_ring')
 
+    event.add('tfg:all_iron_small_gears', 'gtceu:small_iron_gear')
+    event.add('tfg:all_iron_small_gears', 'gtceu:small_wrought_iron_gear')
+
+    event.add('tfg:all_iron_rods', 'gtceu:iron_rod')
+    event.add('tfg:all_iron_rods', 'gtceu:wrought_iron_rod')
+
     event.add('tfg:all_iron_bolts', 'gtceu:iron_bolt')
     event.add('tfg:all_iron_bolts', 'gtceu:wrought_iron_bolt')
 
