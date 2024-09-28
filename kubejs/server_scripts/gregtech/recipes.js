@@ -1885,15 +1885,16 @@ const registerGregTechRecipes1 = (event) => {
     // TODO: Удалить после фикса GTCEu
     event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
 
-    // Пыль звезды незера 
-    // TODO: удалить после имплементации ада
-    event.recipes.gtceu.chemical_reactor('tfg:gtceu/nether_star_dust')             
+    //#region Пыль звезды незера 
+    // TODO: Нужно ли удалять?
+    event.recipes.gtceu.chemical_reactor('tfg:nether_star_dust')             
         .itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
         .circuit(10)
         .itemOutputs('gtceu:nether_star_dust')
         .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 6000), Fluid.of('gtceu:carbon_monoxide', 8000))
         .duration(700)
         .EUt(2720)
+    //#endregion
 
     // Creosote-Treated Wood Planks -> Treated Wood Pulp
     event.recipes.gtceu.macerator('tfg:gtceu/macerate_treated_wood_planks')             
