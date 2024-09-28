@@ -227,6 +227,11 @@ const registerTFCItemTags = (event) => {
     })
     //#endregion
 
+    //#region Теги для обхединения яблок
+    event.add(`tfg:all_apples`, `tfc:food/red_apple`)
+    event.add(`tfg:all_apples`, `tfc:food/green_apple`)
+    //#endregion
+
     //#region Удаление тегов и скрытие руд
     const ALL_TFC_ORES = Ingredient.of(/tfc:ore\/[^*]+\/[^*]+/).itemIds
 

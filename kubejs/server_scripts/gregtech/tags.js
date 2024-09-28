@@ -82,8 +82,14 @@ const registerGregTechItemTags = (event) => {
     event.add('tfg:all_iron_small_gears', 'gtceu:small_iron_gear')
     event.add('tfg:all_iron_small_gears', 'gtceu:small_wrought_iron_gear')
 
+    event.add('tfg:all_iron_small_springs', 'gtceu:small_iron_spring')
+    event.add('tfg:all_iron_small_springs', 'gtceu:small_wrought_iron_spring')
+
     event.add('tfg:all_iron_rods', 'gtceu:iron_rod')
     event.add('tfg:all_iron_rods', 'gtceu:wrought_iron_rod')
+
+    event.add('tfg:all_iron_gears', 'gtceu:iron_gear')
+    event.add('tfg:all_iron_gears', 'gtceu:wrought_iron_gear')
 
     event.add('tfg:all_iron_bolts', 'gtceu:iron_bolt')
     event.add('tfg:all_iron_bolts', 'gtceu:wrought_iron_bolt')
@@ -93,6 +99,11 @@ const registerGregTechItemTags = (event) => {
 
     event.add('tfg:all_iron_nuggets', 'minecraft:iron_nugget')
     event.add('tfg:all_iron_nuggets', 'gtceu:wrought_iron_nugget')
+    //#endregion
+
+    //#region Объединение стеклянных линз ТФК и ГТ
+    event.add('tfg:all_glass_lenses', 'gtceu:glass_lens')
+    event.add('tfg:all_glass_lenses', 'rfc:lens')
     //#endregion
 
     //#region Скрываем все руды (не используем #forge:ores, потому что будет пересечение)
