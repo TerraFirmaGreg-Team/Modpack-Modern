@@ -239,7 +239,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v4.2.0
 
       - name: Сlose fixed in dev
         uses: Xikaro/close-issues-based-on-label@master
