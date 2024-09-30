@@ -67,7 +67,7 @@
       }
     },
     "chorusTree": {
-      "enabled": true,
+      "enabled": false,
       "onlyFallWithRequiredTool": false,
       "allowedToolFilter": {
         "whitelistedTags": [],
@@ -78,19 +78,17 @@
     "mushroomTree": {
       "stemFilter": {
         "whitelistedTags": [
-          "minecraft:logs"
         ],
         "whitelist": [],
         "blacklist": []
       },
       "capFilter": {
         "whitelistedTags": [
-          "minecraft:leaves"
         ],
         "whitelist": [],
         "blacklist": []
       },
-      "enabled": true,
+      "enabled": false,
       "onlyFallWithRequiredTool": false,
       "allowedToolFilter": {
         "whitelistedTags": [],
