@@ -128,6 +128,10 @@
       "ocean": 1,
       "wind.light-wind": 1
     },
+    "ocean_deep": {
+      "overall": 1,
+      "whale": 1
+    },
     "plains": {
       "overall": 1,
       "cricket": 1,
@@ -145,6 +149,7 @@
       "cicadas-desert": 1,
       "cricket-warm-night": 1,
       "wolf": 1,
+      "long-wolf": 1,
       "bird-warm": 1
     },
     "sky": {
@@ -171,7 +176,8 @@
       "overall": 1,
       "cricket-swamp": 1,
       "cricket-warm-night": 1,
-      "frog": 1
+      "frog": 1,
+      "mouring_dove": 1
     },
     "taiga": {
       "overall": 1,
@@ -200,9 +206,11 @@
         "bird_night": 1
       },
       "cicadas": 1,
-      "cricket": 1,
-      "cricket_day": 1,
-      "cricket_night": 1
+      "cricket": {
+        "cricket": 1,
+        "cricket_day": 1,
+        "cricket_night": 1
+      }
     },
     "cave": 1,
     "weather": 1,

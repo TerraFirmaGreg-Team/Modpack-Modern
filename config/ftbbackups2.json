@@ -1,0 +1,71 @@
+{
+	// Allow the creation of backups automatically
+	"enabled": true,
+	// Permission level to use the /backup command
+	"command_permission_level": 3,
+	// Only send backup status to server ops
+	"notify_op_only": true,
+	// Don't send backup status at all
+	"do_not_notify": false,
+	/* Backup retention mode. Valid Modes: MAX_BACKUPS, TIERED
+	   Note: TIERED mode is an experimental feature, Use at your own risk.
+	*/
+	"retention_mode": "MAX_BACKUPS",
+	// Applies to retention_mode:MAX_BACKUPS, Sets the maximum number of backups to keep
+	"max_backups": 5,
+	// Applies to retention_mode:TIERED, The latest x number of backups will be retained
+	"keep_latest": 5,
+	// Applies to retention_mode:TIERED, Sets number of hourly backups to keep
+	"keep_hourly": 1,
+	// Applies to retention_mode:TIERED, Sets number of daily backups to keep
+	"keep_daily": 1,
+	// Applies to retention_mode:TIERED, Sets number of weekly backups to keep
+	"keep_weekly": 1,
+	// Applies to retention_mode:TIERED, Sets number of monthly backups to keep
+	"keep_monthly": 1,
+	/* This is done with an implementation of cron from the Quartz java library.
+	   More info here
+	   (http://www.cronmaker.com)
+	*/
+	"backup_cron": "0 */30 * * * ?",
+	// Time between manual backups using the command
+	"manual_backups_time": 0,
+	// Only run a backup if a player has been online since the last backup
+	"only_if_players_been_online": true,
+	// Additional directories to include in backup
+	"additional_directories": [],
+	/* Additional files and directories to include in backup.
+	   Can specify a file name, path relative to server directory or wildcard file path
+	   Examples:                       (All file paths are relative to server root)
+	   fileName.txt                    Any/all file named "fileName.txt"
+	   folder/file.txt                 Exact file path
+	   folder/                         Everything in this folder
+	   path/starts/with*               Any files who's path starts with
+	   *path/ends/with.txt             Any files who's path ends with
+	   *path/contains*                 Any files who's path contains
+	*/
+	"additional_files": [],
+	// Display file size in backup message
+	"display_file_size": false,
+	// backup location
+	"backup_location": ".",
+	// Specify the backup format. Valid options are ZIP and DIRECTORY
+	"backup_format": "ZIP",
+	// Minimum free disk space in MB. If a backup's creation would leave less than this amount of disk space remaining, the backup will be aborted.
+	"minimum_free_space": 0,
+	// If the previous backup failed due to lack of space, the oldest backup will be deleted to free space.
+	"free_space_if_needed": false,
+	/* Specify files or folders to be excluded.
+	   Can specify a file name, path relative to server directory or wildcard file path
+	   Examples:                       (All file paths are relative to server root)
+	   fileName.txt                    Any/all file named "fileName.txt"
+	   folder/file.txt                 Exact file path
+	   folder/                         Everything in this folder
+	   path/starts/with*               Any files who's path starts with
+	   *path/ends/with.txt             Any files who's path ends with
+	   *path/contains*                 Any files who's path contains
+	*/
+	"excluded": [],
+	// The dimension used when creating backup preview image, specify "all" to enable automatic detection of primary dimension (can be very slow)
+	"preview_dimension": "minecraft:overworld"
+}

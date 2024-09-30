@@ -1,3 +1,14 @@
 {
-  "rotateSpeed": 1.0
+  "rotateSpeed": 1.0,
+  "blockRequireOffset": {
+    "blocks": [
+      "minecraft:snow",
+      "minecraft:soul_sand"
+    ],
+    "tags": []
+  },
+  "blockBelowRequireOffset": {
+    "blocks": [],
+    "tags": []
+  }
 }
