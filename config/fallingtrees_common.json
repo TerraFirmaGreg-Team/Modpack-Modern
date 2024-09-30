@@ -11,7 +11,7 @@
   "trees": {
     "standardTree": {
       "algorithm": {
-        "maxLeavesRadius": 10,
+        "maxLeavesRadius": 20,
         "maxLogAmount": 256,
         "shouldFallOnMaxLogAmount": true,
         "shouldIgnorePersistentLeaves": true
