@@ -1252,6 +1252,31 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Long Distance Pipelines
+
+    event.remove({ id: 'gtceu:assembler/long_distance_item_pipe'  })
+    event.recipes.gtceu.assembler('long_distance_item_pipe')
+        .itemInputs(
+            '1x gtceu:tin_large_item_pipe',
+            '4x #forge:plates/steel')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144 / 4))
+        .itemOutputs('32x gtceu:long_distance_item_pipeline')
+        .circuit(2)
+        .duration(300)
+        .EUt(24)
+
+    event.remove({ id: 'gtceu:assembler/long_distance_fluid_pipe'  })
+    event.recipes.gtceu.assembler('long_distance_fluid_pipe')
+        .itemInputs(
+            '1x gtceu:bronze_large_fluid_pipe',
+            '4x #forge:plates/steel')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144 / 4))
+        .itemOutputs('32x gtceu:long_distance_fluid_pipeline')
+        .circuit(2)
+        .duration(300)
+        .EUt(24)
+
+    //#endregion
 
     //#region Рецепты, которые итерируются по всем материалам
 
