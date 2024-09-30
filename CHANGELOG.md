@@ -5,6 +5,8 @@
 - Fixed Long Distance Pipes recipe.
 - Fixed small shit with saltpeter firtilizer.
 - Fixed main menu misspelling.
+- Changed quantum_bridge_card recipe
+- Added recipe for refrigerator from tfcea
 ### New Mods
 - FTB-Backups 2
 - OctoLib
