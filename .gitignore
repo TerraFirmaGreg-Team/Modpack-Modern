@@ -1,6 +1,15 @@
 
+# Extensions
+**/*.log
+**/*.gz
+**/*.DS_Store
+**/*.jar
+**/*.code-workspace
+**/*.zip
+
 # Configs
-config/jei/world/*
+config/jei/world/
+
 config/oculus.properties
 config/fml.toml
 config/forge-client.toml
@@ -9,33 +18,25 @@ config/voicechat/username-cache.json
 config/xaerominimap.txt
 config/xaeroworldmap.txt
 
-# .minecraft
-crash-reports/*
-logs/*
-saves/*
-ldlib/
-local/*
-modernfix/*
-XaeroWaypoints*
-XaeroWorldMap/*
-xaero/*
-CustomSkinLoader/*
-screenshots/*
-shaderpacks/*
-chiselsandbits/*
-.vscode/*
-.new_mods/*
-
-# Extensions
-**/*.log
-**/*.gz
-**/*.DS_Store
-**/*.jar
-
 # Client data
+.vscode/
 .idea/
-/.bobby
-/profileImage
+.bobby/
+profileImage/
+crash-reports/
+logs/
+saves/
+ldlib/
+local/
+modernfix/
+XaeroWaypoints*/
+XaeroWorldMap*/
+xaero/
+CustomSkinLoader/
+screenshots/
+shaderpacks/
+chiselsandbits/
+
 .curseclient
 .sl_password
 options.txt
@@ -53,11 +54,12 @@ realms_persistence.json
 minecraftinstance.json
 knownkeys.txt
 
-*.code-workspace
-*.zip
-
-
-# Server Pack
+# Server data
+!.github/buildtools/serverpack/forge-auto-install.txt
+!.github/buildtools/serverpack/server.properties
+!.github/buildtools/serverpack/server_starter.conf
+!.github/buildtools/serverpack/server-icon.png
+!.github/buildtools/serverpack/start_server.bat
+!.github/buildtools/serverpack/user_jvm_args.txt
+!.github/buildtools/serverpack/minecraft_server.jar
 .github/buildtools/serverpack/*
-
-
