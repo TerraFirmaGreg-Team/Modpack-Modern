@@ -59,7 +59,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.2.0
 
       - name: Replace strings
         shell: bash
@@ -89,7 +89,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.2.0
 
       - name: Replace strings
         shell: bash
@@ -133,7 +133,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.2.0
 
       - name: Download Mods
         run: |
