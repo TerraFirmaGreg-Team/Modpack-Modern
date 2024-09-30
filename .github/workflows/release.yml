@@ -173,12 +173,12 @@ jobs:
           fi  
 
       - name: Download cf modpack
-        uses: actions/download-artifact@v4.1.7
+        uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
 
       - name: Download serverpack
-        uses: actions/download-artifact@v4.1.7
+        uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
 
@@ -254,7 +254,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
-        uses: actions/download-artifact@v4.1.7
+        uses: actions/download-artifact@v4.1.8
         with:
           merge-multiple: true
 
