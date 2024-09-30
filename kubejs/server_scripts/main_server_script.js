@@ -5,23 +5,24 @@
  */
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
-    registerAsticorCartsItemTags(event)
-    registerChiselAndBitsItemTags(event)
-    registerComputerCraftItemTags(event)
-    registerCreateItemTags(event)
-    registerCreateAdditionsItemTags(event)
-    registerExtendedAE2ItemTags(event)
-    registerFirmaCivItemTags(event)
+    registerAlekiRoofsItemTags(event)
+    // registerAsticorCartsItemTags(event)
+    // registerChiselAndBitsItemTags(event)
+    // registerComputerCraftItemTags(event)
+    // registerCreateItemTags(event)
+    // registerCreateAdditionsItemTags(event)
+    // registerExtendedAE2ItemTags(event)
+    // registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
-    registerFramedBlocksItemTags(event)
-    registerFTBQuestsItemTags(event)
-    registerGTCEUItemTags(event)
-    registerMegaCellsItemTags(event)
+    // registerFramedBlocksItemTags(event)
+    // registerFTBQuestsItemTags(event)
+    registerGregTechItemTags(event)
+    // registerMegaCellsItemTags(event)
     registerMinecraftItemTags(event)
-    registerMoreRedItemTags(event)
-    registerHotOrNotItemTags(event)
-    registerRailWaysItemTags(event)
-    registerSophisticatedBackpacksItemTags(event)
+    // registerMoreRedItemTags(event)
+    // registerHotOrNotItemTags(event)
+    // registerRailWaysItemTags(event)
+    // registerSophisticatedBackpacksItemTags(event)
     registerTFCItemTags(event)
 })
 
@@ -29,24 +30,24 @@ ServerEvents.tags('item', event => {
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
-    registerAE2BlockTags(event)
-    registerAsticorCartsBlockTags(event)
-    registerChiselAndBitsBlockTags(event)
-    registerComputerCraftBlockTags(event)
-    registerCreateBlockTags(event)
-    registerCreateAdditionsBlockTags(event)
-    registerExtendedAE2BlockTags(event)
-    registerFirmaCivBlockTags(event)
+    // registerAE2BlockTags(event)
+    // registerAsticorCartsBlockTags(event)
+    // registerChiselAndBitsBlockTags(event)
+    // registerComputerCraftBlockTags(event)
+    // registerCreateBlockTags(event)
+    // registerCreateAdditionsBlockTags(event)
+    // registerExtendedAE2BlockTags(event)
+    // registerFirmaCivBlockTags(event)
     registerFirmaLifeBlockTags(event)
-    registerFramedBlocksBlockTags(event)
-    registerFTBQuestsBlockTags(event)
-    registerGTCEUBlockTags(event)
-    registerMegaCellsBlockTags(event)
+    // registerFramedBlocksBlockTags(event)
+    // registerFTBQuestsBlockTags(event)
+    registerGregTechBlockTags(event)
+    // registerMegaCellsBlockTags(event)
     registerMinecraftBlockTags(event)
-    registerMoreRedBlockTags(event)
-    registerHotOrNotBlockTags(event)
-    registerRailWaysBlockTags(event)
-    registerSophisticatedBackpacksBlockTags(event)
+    // registerMoreRedBlockTags(event)
+    // registerHotOrNotBlockTags(event)
+    // registerRailWaysBlockTags(event)
+    // registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
 })
 
@@ -54,10 +55,17 @@ ServerEvents.tags('block', event => {
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
-    registerCreateFluidTags(event)
-    registerCreateAdditionsFluidTags(event)
+    // registerCreateFluidTags(event)
+    // registerCreateAdditionsFluidTags(event)
     registerFirmaLifeBlockTags(event)
     registerTFCFluidTags(event)
+})
+
+/**
+ * Событие регистрации биом-тегов.
+ */
+ServerEvents.tags('worldgen/biome', event => {
+    registerTFCBiomeTags(event)
 })
 
 /**
@@ -81,26 +89,10 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
-    registerTFCDataForGTCEU(event)
+    registerTFCDataForGregTech(event)
     registerTFCDataForTFC(event)
     registerTFCDataForTreeTap(event)
     registerTFCDataForWaterFlasks(event)
-})
-
-/**
- * Событие регистрации лут-тейблов.
- * Срабатывает до инициализации рецептов, но после датапаков и тегов.
- */
-LootJS.modifiers((event) => {
-    registerGTCEULoots(event)
-});
-
-/**
- * Событие регистрации рудных жил.
- * Не представляю когда срабатывает, но явно после тегов и датапаков.
- */
-GTCEuServerEvents.oreVeins(event => {
-    // event.removeAll()
 })
 
 /**
@@ -108,36 +100,57 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
-    registerAE2Recipes(event)
-    registerAsticorCartsRecipes(event)
-    registerAE2InsertExportCardRecipes(event)
-    registerAE2NetworkAnalyzerRecipes(event)
-    registerAE2WTLibRecipes(event)
-    registerChiselAndBitsRecipes(event)
-    registerComputerCraftRecipes(event)
-    registerCreateRecipes(event)
-    registerCreateAdditionsRecipes(event)
-    registerCreateConnectedRecipes(event)
-    registerExtendedAE2Recipes(event)
-    registerExposureRecipes(event)
-    registerEtchedRecipes(event)
-    registerFirmaCivRecipes(event)
-    registerFirmaLifeRecipes(event)
-    registerFramedBlocksRecipes(event)
-    registerFTBQuestsRecipes(event)
-    registerGTCEURecipes(event)
-    registerHandGliderRecipes(event)
-    registerHotOrNotRecipes(event)
-    registerMegaCellsRecipes(event)
-    registerMERequesterRecipes(event)
+    // registerAE2Recipes(event)
+    registerAlekiRoofsRecipes(event)
+    // registerAsticorCartsRecipes(event)
+    // registerAE2InsertExportCardRecipes(event)
+    // registerAE2NetworkAnalyzerRecipes(event)
+    // registerAE2WTLibRecipes(event)
+    // registerChiselAndBitsRecipes(event)
+    // registerComputerCraftRecipes(event)
+    // registerCreateRecipes(event)
+    // registerCreateAdditionsRecipes(event)
+    // registerCreateConnectedRecipes(event)
+    // registerExtendedAE2Recipes(event)
+    // registerExposureRecipes(event)
+    // registerEtchedRecipes(event)
+    // registerFirmaCivRecipes(event)
+    // registerFirmaLifeRecipes(event)
+    // registerFramedBlocksRecipes(event)
+    // registerFTBQuestsRecipes(event)
+    registerGregTechRecipes(event)
+    // registerHandGliderRecipes(event)
+    // registerHotOrNotRecipes(event)
+    // registerMegaCellsRecipes(event)
+    // registerMERequesterRecipes(event)
     registerMinecraftRecipes(event)
-    registerMoreRedRecipes(event)
-    registerRailWaysRecipes(event)
-    registerSophisticatedBackpacksRecipes(event)
-    registerTfceaRecipes(event)
+    // registerMoreRedRecipes(event)
+    // registerRailWaysRecipes(event)
+    // registerSophisticatedBackpacksRecipes(event)
+    // registerTfceaRecipes(event)
     registerTFCRecipes(event)
-    registerTFCGroomingStationRecipes(event)
-    registerToolBeltRecipes(event)
-    registerTreeTapRecipes(event)
-    registerWaterFlasksRecipes(event)
+    // registerTFCGroomingStationRecipes(event)
+    // registerToolBeltRecipes(event)
+    // registerTreeTapRecipes(event)
+    // registerWaterFlasksRecipes(event)
+})
+
+/**
+ * Событие регистрации лут-тейблов.
+ * Срабатывает до инициализации рецептов, но после датапаков и тегов.
+ */
+LootJS.modifiers((event) => {})
+
+/**
+ * Событие регистрации рудных жил GregTech.
+*/
+GTCEuServerEvents.oreVeins(event => {
+    registerGregTechOreVeins(event)
+})
+
+/**
+ * Событие регистрации жидкостных жил GregTech.
+*/
+GTCEuServerEvents.fluidVeins(event => {
+    registerGregTechFluidVeins(event)
 })

@@ -1,0 +1,439 @@
+
+#Server Settings
+[server]
+	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
+	disallowedItems = []
+	#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in backpacks
+	containerItemsDisallowed = false
+	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
+	noInteractionBlocks = []
+	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
+	noConnectionBlocks = []
+	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
+	itemFluidHandlerEnabled = true
+	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
+	allowOpeningOtherPlayerBackpacks = true
+	#Allows disabling item display settings. Primarily in cases where custom backpack model doesn't support showing the item. (Requires game restart to take effect)
+	itemDisplayDisabled = false
+	#Allows disabling logic that dedupes backpacks with the same UUID in players' inventory. This is here to allow turning off the logic just in case it would be causing performance issues.
+	tickDedupeLogicDisabled = false
+	#Determines if backpacks can be placed in container items (those that check for return value of canFitInsideContainerItems)
+	canBePlacedInContainerItems = false
+	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
+	maxUpgradesPerStorage = ["jukebox_upgrade|1", "stack_upgrades|3", "furnace_upgrades|1"]
+
+	#Leather Backpack Settings
+	[server.leatherBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 27
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Iron Backpack Settings
+	[server.ironBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 54
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
+
+	#Gold Backpack Settings
+	[server.goldBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 81
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 3
+
+	#Diamond Backpack Settings
+	[server.diamondBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 108
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 5
+
+	#Netherite Backpack Settings
+	[server.netheriteBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 120
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 7
+
+	#Compacting Upgrade Settings
+	[server.compactingUpgrade]
+		#Number of Compacting Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Compacting Upgrade Settings
+	[server.advancedCompactingUpgrade]
+		#Number of Advanced Compacting Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Deposit Upgrade Settings
+	[server.depositUpgrade]
+		#Number of Deposit Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Deposit Upgrade Settings
+	[server.advancedDepositUpgrade]
+		#Number of Advanced Deposit Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Feeding Upgrade Settings
+	[server.feedingUpgrade]
+		#Number of Feeding Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Feeding Upgrade Settings
+	[server.advancedFeedingUpgrade]
+		#Number of Advanced Feeding Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Filter Upgrade Settings
+	[server.filterUpgrade]
+		#Number of Filter Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Filter Upgrade Settings
+	[server.advancedFilterUpgrade]
+		#Number of Advanced Filter Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Magnet Upgrade Settings
+	[server.magnetUpgrade]
+		#Number of Magnet Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+		#Range around storage in blocks at which magnet will pickup items
+		#Range: 1 ~ 20
+		magnetRange = 3
+
+	#Advanced Magnet Upgrade Settings
+	[server.advancedMagnetUpgrade]
+		#Number of Advanced Magnet Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+		#Range around storage in blocks at which magnet will pickup items
+		#Range: 1 ~ 20
+		magnetRange = 5
+
+	#Pickup Upgrade Settings
+	[server.pickupUpgrade]
+		#Number of Pickup Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Pickup Upgrade Settings
+	[server.advancedPickupUpgrade]
+		#Number of Advanced Pickup Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Refill Upgrade Settings
+	[server.refillUpgrade]
+		#Number of Refill Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 6
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Refill Upgrade Settings
+	[server.advancedRefillUpgrade]
+		#Number of Advanced Refill Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 12
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Restock Upgrade Settings
+	[server.restockUpgrade]
+		#Number of Restock Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Restock Upgrade Settings
+	[server.advancedRestockUpgrade]
+		#Number of Advanced Restock Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Void Upgrade Settings
+	[server.voidUpgrade]
+		#Number of Void Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+		#Determines whether void upgrade allows voiding anything or it only has overflow option
+		voidAnythingEnabled = true
+
+	#Advanced Void Upgrade Settings
+	[server.advancedVoidUpgrade]
+		#Number of Advanced Void Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+		#Determines whether void upgrade allows voiding anything or it only has overflow option
+		voidAnythingEnabled = true
+
+	#Stack Upgrade Settings
+	[server.stackUpgrade]
+		#List of items that are not supposed to stack in storage even when stack upgrade is inserted. Item registry names are expected here.
+		nonStackableItems = ["minecraft:bundle", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+
+	#Smelting Upgrade Settings
+	[server.smeltingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+
+	#Smoking Upgrade Settings
+	[server.smokingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+
+	#Blasting Upgrade Settings
+	[server.blastingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+
+	#Auto-Smelting Upgrade Settings
+	[server.autoSmeltingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+		#Number of input filter slots
+		#Range: 1 ~ 20
+		inputFilterSlots = 8
+		#Number of input filter slots displayed in a row
+		#Range: 1 ~ 6
+		inputFilterSlotsInRow = 4
+		#Number of fuel filter slots
+		#Range: 1 ~ 20
+		fuelFilterSlots = 4
+		#Number of fuel filter slots displayed in a row
+		#Range: 1 ~ 6
+		fuelFilterSlotsInRow = 4
+
+	#Auto-Smoking Upgrade Settings
+	[server.autoSmokingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+		#Number of input filter slots
+		#Range: 1 ~ 20
+		inputFilterSlots = 8
+		#Number of input filter slots displayed in a row
+		#Range: 1 ~ 6
+		inputFilterSlotsInRow = 4
+		#Number of fuel filter slots
+		#Range: 1 ~ 20
+		fuelFilterSlots = 4
+		#Number of fuel filter slots displayed in a row
+		#Range: 1 ~ 6
+		fuelFilterSlotsInRow = 4
+
+	#Auto-Blasting Upgrade Settings
+	[server.autoBlastingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+		#Number of input filter slots
+		#Range: 1 ~ 20
+		inputFilterSlots = 8
+		#Number of input filter slots displayed in a row
+		#Range: 1 ~ 6
+		inputFilterSlotsInRow = 4
+		#Number of fuel filter slots
+		#Range: 1 ~ 20
+		fuelFilterSlots = 4
+		#Number of fuel filter slots displayed in a row
+		#Range: 1 ~ 6
+		fuelFilterSlotsInRow = 4
+
+	#Inception Upgrade Settings
+	[server.inceptionUpgrade]
+		#Allows / Disallows backpack upgrades to work with inventories of Backpacks in the Backpack with Inception Upgrade
+		upgradesUseInventoriesOfBackpacksInBackpack = true
+		#Allows / Disallows upgrades to be functional even when they are in Backpacks in the inventory of Backpack with Inception Upgrade
+		upgradesInContainedBackpacksAreFunctional = true
+
+	#Tool Swapper Upgrade Settings
+	[server.toolSwapperUpgrade]
+		#Number of Tool Swapper Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 8
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Tank Upgrade Settings
+	[server.tankUpgrade]
+		#Capacity in mB the tank upgrade will have per row of storage slots
+		#Range: 500 ~ 20000
+		capacityPerSlotRow = 4000
+		#Ratio that gets applied (multiplies) to inventory stack multiplier before this is applied to max energy of the battery and max in/out. Value lower than 1 makes stack multiplier affect the max energy less, higher makes it affect the max energy more. 0 turns off stack multiplier affecting battery upgrade
+		#Range: 0.0 ~ 5.0
+		stackMultiplierRatio = 1.0
+		#Cooldown between fill/drain actions done on fluid containers in tank slots. Only fills/drains one bucket worth to/from container after this cooldown and then waits again.
+		#Range: 1 ~ 100
+		autoFillDrainContainerCooldown = 20
+		#How much FE can be transfered in / out per operation. This is a base transfer rate and same as max capacity gets multiplied by number of rows in storage and stack multiplier.
+		#Range: 1 ~ 1000
+		maxInputOutput = 20
+		#Energy in FE the battery upgrade will have per row of storage slots
+		#Range: 500 ~ 50000
+		energyPerSlotRow = 10000
+
+	#Pump Upgrade Settings
+	[server.pumpUpgrade]
+		#Number of fluid filter slots
+		#Range: 1 ~ 20
+		filterSlots = 4
+		#How much mB can be transfered in / out per operation. This is a base transfer rate that gets multiplied by number of rows in storage and stack multiplier.
+		#Range: 1 ~ 1000
+		maxInputOutput = 20
+		#Ratio that gets applied (multiplies) to inventory stack multiplier before this is applied to max input/output value. Value lower than 1 makes stack multiplier affect the capacity less, higher makes it affect the capacity more. 0 turns off stack multiplier affecting input/output
+		#Range: 0.0 ~ 5.0
+		stackMultiplierRatio = 1.0
+
+	#Xp Pump Upgrade Settings
+	[server.xpPumpUpgrade]
+		#Whether xp pump can mend items with mending. Set false here to turn off the feature altogether.
+		mendingOn = true
+		#How many experience points at a maximum would be used to mend an item per operation (every 5 ticks and 1 xp point usually translates to 2 damage repaired).
+		#Range: 1 ~ 20
+		maxXpPointsPerMending = 5
+
+	#Settings for Spawning Entities with Backpack
+	[server.entityBackpackAdditions]
+		#Chance of an entity spawning with Backpack
+		#Range: 0.0 ~ 1.0
+		chance = 0.0
+		#Turns on/off addition of loot into backpacks
+		addLoot = false
+		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
+		buffWithPotionEffects = true
+		#Turns on/off buffing the entity that wears backpack with additional health. Health is scaled based on backpack tier the mob wears.
+		buffHealth = true
+		#Turns on/off equiping the entity that wears backpack with armor. What armor material and how enchanted is scaled based on backpack tier the mob wears.
+		equipWithArmor = true
+		#Map of entities that can spawn with backpack and related loot tables (if adding a loot is enabled) in format of "EntityRegistryName|LootTableName"
+		entityLootTableList = []
+		#List of music discs that are not supposed to be played by entities
+		discBlockList = []
+		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
+		playJukebox = true
+		#Determines whether backpack drops to fake players if killed by them in addition to real ones that it always drops to
+		dropToFakePlayers = false
+		#Chance of mob dropping backpack when killed by player
+		#Range: 0.0 ~ 1.0
+		backpackDropChance = 0.5
+		#Chance increase per looting level of mob dropping backpack
+		#Range: 0.0 ~ 0.3
+		lootingChanceIncreasePerLevel = 0.15
+
+	[server.nerfs]
+		#Determines if too many backpacks in player's inventory cause slowness to the player
+		tooManyBackpacksSlowness = true
+		#Maximum number of backpacks in player's inventory that will not cause slowness
+		#Range: 1 ~ 27
+		maxNumberOfBackpacks = 1
+		#Ratio of slowness levels per every backpack above the maximum number allowed. (number of backpacks above the max gets multiplied by this number and ceiled)
+		#Range: 0.1 ~ 5.0
+		slownessLevelsPerAdditionalBackpack = 1.0
+		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
+		onlyWornBackpackTriggersUpgrades = true
+
+	#Copper Backpack Settings
+	[server.copperBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 45
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+

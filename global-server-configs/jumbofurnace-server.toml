@@ -1,0 +1,10 @@
+
+["Cooking Settings"]
+	#Cook Time: Time in ticks needed for one cooking cycle
+	#Range: > 1
+	cooktime = 200
+
+["Construction Settings"]
+	#Shearable: Allow jumbo furnaces to be cleanly dismantled with shears
+	shearable = true
+

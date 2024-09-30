@@ -1,25 +1,13 @@
 {
     "filters": [
         {
+            "category": "minecraft:blasting"
+        },
+        {
+            "category": "minecraft:smoking"
+        },
+        {
             "category": "minecraft:campfire_cooking"
-        },
-        {
-            "category": "minecraft:brewing"
-        },
-        {
-            "category": "minecraft:stonecutting"
-        },
-        {
-            "category": "emi:anvil_repairing"
-        },
-        {
-            "category": "emi:world_interaction"
-        },
-        {
-            "category": "gtceu:primitive_blast_furnace"
-        },
-        {
-            "category": "create:mystery_conversion"
         },
         {
             "category": "jumbofurnace:jumbo_furnace_upgrade"
@@ -30,26 +18,51 @@
         {
             "category": "emi:composting"
         },
+
         {
-            "category": "emi:fuel"
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/flower_duping\//"
         },
         {
-            "id": "/emi:/crafting/repairing/[^*]+/"
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/stripping\/minecraft\//"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/shearing/minecraft/pumpkin"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/tilling\/minecraft\//"
         },
         {
-            "id": "/emi:/grindstone/repairing/minecraft/[^*]+/"
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/flattening\/minecraft\/grass_block\//"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_spring/minecraft/water"
         },
         {
-            "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_interaction/minecraft/cobblestone"
         },
         {
-            "id": "/create:create.toolbox.color.block.create.[^*]+/"
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_interaction/minecraft/stone"
         },
+
         {
-            "id": "/sophisticatedbackpacks:single_color_[^*]+/"
+            "category": "emi:world_interaction",
+            "id": "/emi:\/emi\/bucket_filling\/minecraft\//"
         },
+
         {
-            "id": "sophisticatedbackpacks:multiple_colors"
+            "category": "emi:world_interaction",
+            "id": "emi:/world/unique/minecraft/water_bottle"
         }
     ]
 }
