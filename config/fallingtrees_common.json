@@ -77,14 +77,12 @@
     },
     "mushroomTree": {
       "stemFilter": {
-        "whitelistedTags": [
-        ],
+        "whitelistedTags": [],
         "whitelist": [],
         "blacklist": []
       },
       "capFilter": {
-        "whitelistedTags": [
-        ],
+        "whitelistedTags": [],
         "whitelist": [],
         "blacklist": []
       },
