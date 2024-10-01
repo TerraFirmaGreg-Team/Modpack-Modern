@@ -2,7 +2,9 @@
 
 ## [0.7.13] - 01.10.2024
 ### Changes
-- Исправление краша при рубке деревьев с грибами на стволе.
+- Fixed a crash when cutting down trees with mushrooms on the trunk.
+- Adjusted the FTB backups backup that runs every hour.
+- FTB backups removed from serverpack.
 ### Removed mods
 - TFCDesirePaths
 
