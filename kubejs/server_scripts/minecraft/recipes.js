@@ -5059,11 +5059,66 @@ const registerMinecraftRecipes = (e) => {
 
     e.recipes.createMilling('2x minecraft:pink_dye', '#tfc:makes_pink_dye')
         .id('tfg:milling/pink_dye')
+
     //#endregion
+
+
+    //#endregion
+
+    //#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // e.shaped('minecraft:', [
+    //     'ABA',
+    //     'BCB',
+    //     'DED'
+    // ], {
+    //     A: '',
+    //     B: '',
+    //     C: '',
+    //     D: '',
+    //     E: '',
+    // }).id('tfg:workbench/')
+
+
+    //#region 1
+    //e.remove({ id: '' })
+    //#endregion
+
+    //#region 
+    //#endregion
+
+    //#region 1
+    //e.remove({ id: '' })
 
     //#endregion
 
     //#region Выход: Бумага
+
 
     e.remove({ id: 'gtceu:shaped/paper' })
     e.remove({ id: 'create:pressing/sugar_cane' })
@@ -5082,6 +5137,25 @@ const registerMinecraftRecipes = (e) => {
         .inputFluids(Fluid.of('gtceu:distilled_water', 100))
         .itemOutputs('minecraft:paper')
         .EUt(7).duration(100)
+
+    // e.remove({ id: 'gtceu:shaped/paper' })
+
+    // e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane' })
+    // e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled' })
+
+    // e.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
+    //     .itemInputs('tfc:papyrus')
+    //     .inputFluids(Fluid.of('gtceu:distilled_water', 100))
+    //     .itemOutputs('minecraft:paper')
+    //     .duration(100)
+    //     .EUt(7)
+
+    // e.recipes.gtceu.chemical_bath('paper_from_papyrus')             
+    //     .itemInputs('tfc:papyrus')
+    //     .inputFluids(Fluid.of('minecraft:water', 100))
+    //     .itemOutputs('minecraft:paper')
+    //     .duration(100)
+    //     .EUt(7)
 
     //#endregion
 

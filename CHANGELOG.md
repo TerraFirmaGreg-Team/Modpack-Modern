@@ -1,4 +1,107 @@
 # Changelog
+## [0.8.0] - ??
+### TODO
+
+### Changes
+- Replaced TFC ore gen with GT oregen.
+- Fixed most of bad langs from TFG-Core.
+- Fixed compat for firmaciv 1.0.+.
+- Disabled HotOrNot.
+- Moved some textures from TFG-Core to KJS.
+- Moved 90% of recipes from TFG-Core to KJS.
+- Added custom biome tag for all TFC biomes (used for oregen).
+- Proper way to remove #dusts tag from TFC powders.
+- Enabled HighTier machines from GTM (but without circuit recipes).
+- Moved some custom items from TFG-Core to KJS (like molds and etc).
+- Make ores spawn inside grid with 5x5 sized with 32block offset (was 3x3 with 16).
+- Now nether availiable to research (dig ores, drink lava, kill pigmens, what?).
+- Small changes for loottables for nether.
+- You can now fill sprinkler(firmalife greenhouse) from any fluid source (example: GT pipes).
+- Unlocked steel steam machines (again, yes).
+- Added translation for ru_ru inside TFG-Core.
+- Fixed alternator multiblock (now works fine).
+- Return raw ore blocks from GregTech.
+- True way to remove TFC ores from EMI.
+- True way to remove Firmelife ores from EMI.
+- True way to hide AE2 facades.
+- True way to hide chisel and bits bits, yes.
+- Fix double removing honey liquid from EMI.
+- Fixed bug when foods cant root inside EMI (of course not by mod dev (by myself)).
+- Now it is impossible to pour liquid from the TFC blast furnace into the GT pipe, which fixes the releated crash.
+- Fixed a bug where an item with the last durab broke the ore, then the ore did not dropped out.
+- Added recipes for crushing raw ores to crushed ores by workbench.
+- Fixed bug when electronic tools run out their durability, the tool breaks up without returning any power unit.
+- Alternator multiblock now works as intended.
+- Alternator recipes was sligthly nerfed.
+- Fixed bug when some items wont display inside EMI.
+- Simplified alternator multiblock reques and it controller block recipe.
+- Added better recipes for any wood (nether wood too).
+- Added stripping recipes in emi world interaction page.
+- ...
+### Updated mods
+- ??
+
+## [0.7.13] - 01.10.2024
+### Changes
+- Fixed Long Distance Pipes recipe.
+- Fixed small shit with saltpeter firtilizer.
+- Fixed main menu misspelling.
+- Changed quantum_bridge_card recipe.
+- Added recipe for refrigerator from tfcea.
+- For serverpack onlinemod changed to true by default.
+### New Mods
+- FTB-Backups 2
+- OctoLib
+- Polylib
+- TFC Electrical Appliances
+- UniLib
+### Removed mods
+- AEInfinityBooster
+- Seamless-loading-screen
+### Updated mods
+- ae2insertexportcard 1.2.1 -> 1.3.0
+- AmbientSounds 6.0.1 -> 6.1.1
+- appliedenergistics2 15.2.2 -> 15.2.13
+- balm 7.2.2 -> 7.3.9
+- chat_heads 0.12.2 -> 0.13.3
+- corpse 1.0.12 -> 1.0.14
+- craftingtweaks 18.2.3 -> 18.2.5
+- CraftPresence 2.3.9 -> 2.5.0
+- createaddition 1.2.3 -> 1.2.4c
+- CreativeCore 2.11.30 -> 2.12.15
+- Cucumber 7.0.8 -> 7.0.12
+- cupboard 2.6 -> 2.7
+- emi 1.1.6 -> 1.1.7
+- exposure 1.6.0 -> 1.7.7
+- ExtendedAE 1.1.8 -> 1.1.14
+- fallingtrees 0.12 -> 0.12.7
+- firstperson 2.4.1 -> 2.4.5
+- FramedBlocks 9.2.2 -> 9.3.1
+- ftb-library 2001.2.2 -> 2001.2.4
+- ftb-quests 2001.4.5 -> 2001.4.8
+- ImmediatelyFast 1.2.18 -> 1.2.17
+- inventoryhud 3.4.18 -> 3.4.26
+- ItemPhysicLite 1.6.4 -> 1.6.5
+- Jade 11.9.3 -> 11.9.4
+- jei 15.3.0.4 -> 15.3.0.8
+- Ksyxis 1.3.1 -> 1.3.2
+- kubejs 2001.6.5-build.14 -> 2001.6.5-build.7
+- letmedespawn 1.2.1 -> 1.3.2b
+- lootjs 2.11.0 -> 2.12.0
+- modernfix 5.17.0 -> 5.19.4
+- moonlight 2.11.31 -> 2.13.2
+- merequester 1.1.4 -> 1.1.5
+- Not Enough Recipe Book 0.3 -> 0.4.1
+- notenoughanimations 1.7.3 -> 1.7.6
+- open-parties-and-claims 0.22.2 -> 0.23.2
+- packetfixer 1.3.2 -> 1.4.2
+- pandalib 0.2.1 -> 0.4.2
+- Placebo 8.6.1 -> 8.6.2
+- PlayerRevive 2.0.25 -> 2.0.27
+- PuzzlesLib 8.1.20 -> 8.1.23
+- Xaeros_Minimap 24.1.1 -> 24.4.0
+- XaerosWorldMap 1.38.4 -> 1.39.0
+- YetAnotherConfigLib 3.4.4 -> 3.5.0
 
 ## [0.8.0] - ??
 ### TODO

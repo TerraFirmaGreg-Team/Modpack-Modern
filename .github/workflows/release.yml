@@ -53,13 +53,13 @@ jobs:
         with:
           path: CHANGELOG.md
 
-  build-cf:
-    name: Build CF Pack
+  build-curseforge:
+    name: Build CurseForge Pack
     runs-on: ubuntu-latest
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.2.0
 
       - name: Replace strings
         shell: bash
@@ -68,28 +68,28 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" ./.github/buildtools/modpack/manifest.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Export CF
+      - name: Export CurseForge
         run: |
           mkdir -p overrides
           mv -vf {config,defaultconfigs,kubejs} overrides/
           mv -vf .github/buildtools/modpack/manifest.json ./
           mv -vf .github/buildtools/modpack/modlist.html ./
-          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip manifest.json modlist.html overrides
+          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip manifest.json modlist.html overrides
 
-      - name: Upload zip cf
+      - name: Upload zip CurseForge
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
           retention-days: 5
 
-  build-mmc:
-    name: Build MMC Pack
+  build-multimc:
+    name: Build MultiMC Pack
     runs-on: ubuntu-latest
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.2.0
 
       - name: Replace strings
         shell: bash
@@ -107,7 +107,7 @@ jobs:
               echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
             git submodule update --recursive
 
-      - name: Export MMC
+      - name: Export MultiMC
         run: |
           mkdir -p .minecraft
           mkdir -p flame
@@ -118,13 +118,13 @@ jobs:
           mv -vf .github/buildtools/modpack/manifest.json flame/
           find .minecraft/mods -name "probejs-*" -delete;
           find .minecraft/mods -name ".git" -delete;
-          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
-      - name: Upload zip mmc
+      - name: Upload zip multimc
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
+          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
           retention-days: 5
 
   build-server:
@@ -133,7 +133,7 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4.2.0
 
       - name: Download Mods
         run: |
@@ -160,7 +160,7 @@ jobs:
 
   release-curseforge:
     name: Deploy to CurseForge
-    needs: [info, build-cf, build-server]
+    needs: [info, build-curseforge, build-server]
     runs-on: ubuntu-latest
     outputs:
       cf_release_id: ${{ steps.cf_release.outputs.id }}
@@ -175,7 +175,7 @@ jobs:
       - name: Download cf modpack
         uses: actions/download-artifact@v4.1.7
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
 
       - name: Download serverpack
         uses: actions/download-artifact@v4.1.7
@@ -189,7 +189,7 @@ jobs:
           api-token: ${{ secrets.CF_API_TOKEN }}
           project-id: ${{ vars.CF_MODPACK_ID }}
           display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
+          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
           changelog: ${{ needs.info.outputs.changelog }}
@@ -235,22 +235,22 @@ jobs:
 
   close-fixed-issues:
     name: Close Fixed Issues
-    needs: [info, build-cf, build-mmc, build-server]
+    needs: [info, build-curseforge, build-multimc, build-server]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v4.2.0
 
       - name: Сlose fixed in dev
         uses: Xikaro/close-issues-based-on-label@master
         env:
-          LABEL: "2. Status: Fixed in Dev"
-          COMMENT: fixed in ${{ needs.info.outputs.project_version }}
+          LABEL: "2. Status: In Dev"
+          COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release-github:
     name: Deploy to GitHub
-    needs: [info, build-cf, build-mmc, build-server, close-fixed-issues]
+    needs: [info, build-curseforge, build-multimc, build-server, close-fixed-issues]
     runs-on: ubuntu-latest
     steps:
       - name: Download modpack
@@ -266,8 +266,8 @@ jobs:
           name: ${{ needs.info.outputs.project_version }}
           body: ${{ needs.info.outputs.changelog }}
           files: |
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-cf.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mmc.zip
+            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
+            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
           tag_name: ${{ needs.info.outputs.project_version }}
         env:

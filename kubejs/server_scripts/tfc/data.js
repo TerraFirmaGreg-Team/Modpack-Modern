@@ -148,9 +148,9 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:small_phosphorus_dust', null, 0.037, null)
     event.fertilizer('gtceu:phosphorus_dust', null, 0.15, null)
 
-    event.fertilizer('gtceu:tiny_saltpeter_dust', null, 0.038, 0.01)
-    event.fertilizer('gtceu:small_saltpeter_dust', null, 0.0875, 0.025)
-    event.fertilizer('gtceu:saltpeter_dust', null, 0.35, 0.10)
+    event.fertilizer('gtceu:tiny_saltpeter_dust', 0.01, null, 0.038)
+    event.fertilizer('gtceu:small_saltpeter_dust', 0.025, null, 0.0875)
+    event.fertilizer('gtceu:saltpeter_dust', 0.10, null, 0.35)
 
     event.fertilizer('gtceu:tiny_bone_dust', null, 0.01, null)
     event.fertilizer('gtceu:small_bone_dust', null, 0.025, null)
