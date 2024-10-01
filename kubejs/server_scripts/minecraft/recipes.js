@@ -3193,11 +3193,11 @@ const registerMinecraftRecipes = (e) => {
     //#endregion
 
     //#region Адский гриб (Красный)
-    e.remove({ id: 'jei:/create/haunting/crimson_fungus' })
+    e.remove({ id: 'create:haunting/crimson_fungus' })
     //#endregion
 
     //#region Адский гриб (Синий)
-    e.remove({ id: 'jei:/create/haunting/warped_fungus' })
+    e.remove({ id: 'create:haunting/warped_fungus' })
     //#endregion
 
     //#region Сухой кустик
@@ -4214,14 +4214,6 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'create:crafting/kinetics/furnace_minecart_from_contraption_cart' })
     e.remove({ id: 'gtceu:shaped/furnace_minecart' })
     e.remove({ id: 'gtceu:assembler/furnace_minecart' })
-    //#endregion
-
-    //#region Деревянные инструменты
-    // Нечего удалять
-    //#endregion
-
-    //#region Каменные инстурменты
-    // Нечего удалять
     //#endregion
 
     //#region Железные инструменты
