@@ -2,6 +2,12 @@
 
 ## [0.7.13] - 01.10.2024
 ### Changes
+- Исправление краша при рубке деревьев с грибами на стволе.
+### Removed mods
+- TFCDesirePaths
+
+## [0.7.13] - 01.10.2024
+### Changes
 - Fixed Long Distance Pipes recipe.
 - Fixed small shit with saltpeter firtilizer.
 - Fixed main menu misspelling.
