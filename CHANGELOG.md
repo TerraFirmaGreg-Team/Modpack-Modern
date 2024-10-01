@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.13] - 01.10.2024
+## [0.7.14] - 01.10.2024
 ### Changes
 - Fixed a crash when cutting down trees with mushrooms on the trunk.
 - Adjusted the FTB backups backup that runs every hour.
