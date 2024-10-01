@@ -13,7 +13,7 @@
       "algorithm": {
         "maxLeavesRadius": 15,
         "maxLogAmount": 256,
-        "shouldFallOnMaxLogAmount": true,
+        "shouldFallOnMaxLogAmount": false,
         "shouldIgnorePersistentLeaves": true
       },
       "logFilter": {
