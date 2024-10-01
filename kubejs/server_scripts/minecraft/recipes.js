@@ -3054,6 +3054,7 @@ const registerMinecraftRecipes = (e) => {
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         e.remove({ id: `minecraft:${dye}_candle` })
         e.remove({ id: `gtceu:chemical_bath/${dye}_candle_to_white` })
+        e.remove({ id: `gtceu:chemical_bath/dye_candle_to_${dye}` })
     })
     //#endregion
 
@@ -5062,7 +5063,27 @@ const registerMinecraftRecipes = (e) => {
 
     //#endregion
 
+    //#region Выход: Бумага
 
+    e.remove({ id: 'gtceu:shaped/paper' })
+    e.remove({ id: 'create:pressing/sugar_cane' })
+
+    e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane' })
+    e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled' })
+
+    e.recipes.gtceu.chemical_bath('tfg:paper_from_papyrus')             
+        .itemInputs('tfc:papyrus')
+        .inputFluids(Fluid.of('minecraft:water', 100))
+        .itemOutputs('minecraft:paper')
+        .EUt(7).duration(100)
+
+    e.recipes.gtceu.chemical_bath('tfg:paper_from_papyrus_distilled')             
+        .itemInputs('tfc:papyrus')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
+        .itemOutputs('minecraft:paper')
+        .EUt(7).duration(100)
+
+    //#endregion
 
 
 
@@ -5111,28 +5132,7 @@ const registerMinecraftRecipes = (e) => {
     //e.remove({ id: '' })
     //#endregion
 
-    //#region Выход: Бумага
-
-    // e.remove({ id: 'gtceu:shaped/paper' })
-
-    // e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane' })
-    // e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled' })
-
-    // e.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
-    //     .itemInputs('tfc:papyrus')
-    //     .inputFluids(Fluid.of('gtceu:distilled_water', 100))
-    //     .itemOutputs('minecraft:paper')
-    //     .duration(100)
-    //     .EUt(7)
-
-    // e.recipes.gtceu.chemical_bath('paper_from_papyrus')             
-    //     .itemInputs('tfc:papyrus')
-    //     .inputFluids(Fluid.of('minecraft:water', 100))
-    //     .itemOutputs('minecraft:paper')
-    //     .duration(100)
-    //     .EUt(7)
-
-    //#endregion
+    
 
     //#region Выход: Сахар
 

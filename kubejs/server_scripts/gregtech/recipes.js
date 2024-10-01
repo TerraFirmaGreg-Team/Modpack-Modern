@@ -814,6 +814,41 @@ const registerGregTechRecipes = (event) => {
     })
 
     //#endregion
+
+    //#region Рецепты из ванильного камня
+
+    event.remove({ id: 'gtceu:lathe/stone_rod_from_stone' })
+    event.remove({ id: 'gtceu:lathe/stone_rod_from_cobblestone' })
+
+    // Из сырого камня
+    event.recipes.gtceu.lathe('tfg:stone_rod_from_stone')             
+        .itemInputs('#tfc:rock/raw')
+        .itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
+        .EUt(7).duration(20)
+        
+
+    // Из булыжника
+    event.recipes.gtceu.lathe('tfg:stone_rod_from_cobblestone')             
+        .itemInputs('#forge:cobblestone')
+        .itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
+        .EUt(7).duration(20)
+        
+    //#endregion
+
+    //#region Рецепты каменной пыли
+    //#endregion
+
+    //#region Рецепты средней каменной пыли
+    event.remove({ id: 'gtceu:macerator/macerate_stone_stairs' })
+    event.remove({ id: 'gtceu:macerator/macerate_stone_slab' })
+    //#endregion
+
+    //#region Рецепты мелкой каменной пыли
+    //#endregion
+
+    //#region Рецепты маскировочных крышек
+    // event.remove({ id: 'gtceu:crafting/facade_cover' })
+    //#endregion
 }
 
 const registerGregTechRecipes1 = (event) => {
@@ -838,6 +873,9 @@ const registerGregTechRecipes1 = (event) => {
         .EUt(30)*/
 
     //#region Выход: Удобрение
+
+    //#region Chad
+    //#endregion
 
     // В обычном миксере
     event.recipes.gtceu.mixer('fertilizer')             
@@ -958,19 +996,7 @@ const registerGregTechRecipes1 = (event) => {
 
     //#region Выход: Каменный стержень
 
-    // Из сырого камня
-    event.recipes.gtceu.lathe('stone_rod_from_stone')             
-        .itemInputs('#tfc:rock/raw')
-        .itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
-        .duration(15)
-        .EUt(2)
-
-    // Из булыжника
-    event.recipes.gtceu.lathe('stone_rod_from_cobblestone')             
-        .itemInputs('#forge:cobblestone')
-        .itemOutputs('gtceu:stone_rod', 'gtceu:small_stone_dust')
-        .duration(15)
-        .EUt(2)
+    
 
     //#endregion
 
