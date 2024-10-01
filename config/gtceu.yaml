@@ -251,6 +251,14 @@ machines:
   # Default: 50
   ldFluidPipeMinDistance: 50
 
+  # Whether non owners can open a machine gui
+  # Default: false
+  machineOwnerGUI: true
+
+  # Whether non owners can break a machine
+  # Default: false
+  machineOwnerBreak: true
+
   # If High Tier (>UV-tier) GT content should be registered.
   # Items and Machines enabled with this config will have missing recipes by default.
   # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
