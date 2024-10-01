@@ -2,43 +2,6 @@
 
 const registerMinecraftRecipes = (e) => {
     
-    const removeMaterialnfoRecipes = () => {
-        //#region Дерево
-
-        //#region Незер
-        global.MINECRAFT_OVERWORLD_WOOD_TYPES.forEach(woodName => {
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_planks` })
-
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_stairs` })
-
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_slab` })
-
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_fence` })
-
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_fence_gate` })
-
-            e.remove({ id: `gtceu:arc_furnace/arc_${woodName}_door` })
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_door` })
-
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_button` })
-
-            e.remove({ id: `gtceu:macerator/macerate_${woodName}_boat` })
-        })
-        //#endregion
-        
-        //#region Бамбук
-        e.remove({ id: `gtceu:macerator/macerate_bamboo_raft` })
-        //#endregion
-
-        //#endregion
-    
-        //#region Камень
-
-        //#endregion
-    }
-
-    removeMaterialnfoRecipes()
-
     //#region Дерево
     const processOverworldWood = (woodName) => {
         // Wood
@@ -2176,9 +2139,9 @@ const registerMinecraftRecipes = (e) => {
     //#endregion
 
     //#region Полублок
-    e.remove({ id: 'gtceu:shaped/red_sandstone_slab_saw' })
-    e.remove({ id: 'minecraft:red_sandstone_slab_from_red_sandstone_stonecutting' })
-    e.remove({ id: '' })
+    e.remove({ id: 'gtceu:shaped/smooth_red_sandstone_slab_saw' })
+    e.remove({ id: 'minecraft:smooth_red_sandstone_slab_from_smooth_red_sandstone_stonecutting' })
+    e.remove({ id: 'gtceu:forge_hammer/smooth_red_sandstone_to_red_sand' })
     //#endregion
 
     //#endregion
@@ -3558,6 +3521,22 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'gtceu:assembler/composter' })
     //#endregion
 
+    //#region Нотный блок
+    e.remove({ id: 'gtceu:shaped/note_block' })
+    e.remove({ id: 'gtceu:assembler/note_block' })
+    
+    e.shaped('minecraft:note_block', [
+        'AAA', 
+        'BCB',
+        'BDB'  
+    ], {
+        A: 'gtceu:wood_plank', 
+        B: '#tfg:metal_bars',
+        C: '#forge:gears/wood',
+        D: '#forge:rods/red_alloy',
+    }).id('tfg:workbench/note_block')
+    //#endregion
+
     //#region Варочная стойка
     e.remove({ id: 'gtceu:shaped/brewing_stand' })
     //#endregion
@@ -3843,6 +3822,18 @@ const registerMinecraftRecipes = (e) => {
         s: '#forge:tools/screwdrivers',
     }).id('tfg:workbench/comparator_nether_quartz')
 
+    //#endregion
+
+    //#region Рычаг
+    e.remove({ id: 'gtceu:shaped/lever' })
+
+    e.shaped('minecraft:lever', [
+        'A', 
+        'B'
+    ], {
+        A: '#forge:rods/wooden',
+        B: '#minecraft:buttons',
+    }).id('tfg:workbench/lever')
     //#endregion
 
     //#region Калиброванный скалк сенсер
@@ -4623,6 +4614,7 @@ const registerMinecraftRecipes = (e) => {
     //#region Кварц
     e.remove({ id: 'minecraft:quartz' })
     e.remove({ id: 'minecraft:quartz_from_blasting' })
+    e.remove({ id: 'create:crushing/diorite' })
     //#endregion
 
     //#region Железный самородок
