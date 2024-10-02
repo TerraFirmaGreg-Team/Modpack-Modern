@@ -54,6 +54,10 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "deepresonance": {
+    "crystal": true,
+    "generator_part": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,
@@ -92,6 +96,9 @@
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true
+  },
+  "mcjtylib": {
+    "jadeaddons": true
   },
   "ae2": {
     "part_icon": true,
@@ -200,5 +207,11 @@
   },
   "treetap": {
     "tap": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }
