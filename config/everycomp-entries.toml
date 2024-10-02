@@ -43,3 +43,12 @@
 			window_pane = true
 			window = true
 
+		[entries.wood_type.storagedrawers]
+			full_drawers_2 = true
+			half_drawers_1 = true
+			full_drawers_4 = true
+			half_drawers_4 = true
+			trim = true
+			half_drawers_2 = true
+			full_drawers_1 = true
+
