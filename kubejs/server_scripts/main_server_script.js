@@ -7,6 +7,7 @@ ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
     registerAlekiRoofsItemTags(event)
     // registerAsticorCartsItemTags(event)
+    registerBeneathItemTags(event)
     // registerChiselAndBitsItemTags(event)
     // registerComputerCraftItemTags(event)
     // registerCreateItemTags(event)
@@ -32,6 +33,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     // registerAE2BlockTags(event)
     // registerAsticorCartsBlockTags(event)
+    registerBeneathBlockTags(event)
     // registerChiselAndBitsBlockTags(event)
     // registerComputerCraftBlockTags(event)
     // registerCreateBlockTags(event)
@@ -72,6 +74,7 @@ ServerEvents.tags('worldgen/biome', event => {
  * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
+    registerBeneathPlacedFeatures(event)
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
 })

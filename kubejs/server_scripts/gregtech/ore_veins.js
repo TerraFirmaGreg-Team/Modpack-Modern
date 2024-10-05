@@ -5,7 +5,7 @@
 
 const registerGregTechOreVeins = (event) => {
 
-    // Перемещение - End -> Overworld
+    // Перемещение - End -> Overworld TFC StoneTypes
 
     event.modify("gtceu:bauxite_vein_end", vein => {
         vein.layer('tfg_tfc_s')
@@ -51,90 +51,90 @@ const registerGregTechOreVeins = (event) => {
         vein.biomes('#tfg:is_tfc_overworld')
     })
 
-    // Nether -> Overworld
+    // Перемещение - Nether -> Overworld TFC StoneTypes
 
-    event.modify("gtceu:banded_iron_vein", vein => {
-        vein.layer('tfg_tfc_ie')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:banded_iron_vein", vein => {
+    //     vein.layer('tfg_tfc_ie')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:beryllium_vein", vein => {
-        vein.layer('tfg_tfc_ie')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:beryllium_vein", vein => {
+    //     vein.layer('tfg_tfc_ie')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:certus_quartz", vein => {
-        vein.layer('tfg_tfc_m')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:certus_quartz", vein => {
+    //     vein.layer('tfg_tfc_m')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:manganese_vein", vein => {
-        vein.layer('tfg_tfc_ie_s')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:manganese_vein", vein => {
+    //     vein.layer('tfg_tfc_ie_s')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:molybdenum_vein", vein => {
-        vein.layer('tfg_tfc_ie_ii')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:molybdenum_vein", vein => {
+    //     vein.layer('tfg_tfc_ie_ii')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:monazite_vein", vein => {
-        vein.layer('tfg_tfc_ii')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:monazite_vein", vein => {
+    //     vein.layer('tfg_tfc_ii')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:nether_quartz_vein", vein => {
-        vein.layer('tfg_tfc_s_q_s_g')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:nether_quartz_vein", vein => {
+    //     vein.layer('tfg_tfc_s_q_s_g')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:redstone_vein", vein => {
-        vein.layer('tfg_tfc_granite')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:redstone_vein", vein => {
+    //     vein.layer('tfg_tfc_granite')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:saltpeter_vein", vein => {
-        vein.layer('tfg_tfc_ie_m')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
+    // event.modify("gtceu:saltpeter_vein", vein => {
+    //     vein.layer('tfg_tfc_ie_m')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
 
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Saltpeter).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Diatomite).size(1, 1))
-                .layer(l => l.weight(2).mat(GTMaterials.Electrotine).size(1, 1))
-                .layer(l => l.weight(1).mat(GTMaterials.Alunite).size(1, 1))
-            )
-        )
-    })
+    //     vein.layeredVeinGenerator(generator => generator
+    //         .buildLayerPattern(pattern => pattern
+    //             .layer(l => l.weight(3).mat(GTMaterials.Saltpeter).size(2, 4))
+    //             .layer(l => l.weight(2).mat(GTMaterials.Diatomite).size(1, 1))
+    //             .layer(l => l.weight(2).mat(GTMaterials.Electrotine).size(1, 1))
+    //             .layer(l => l.weight(1).mat(GTMaterials.Alunite).size(1, 1))
+    //         )
+    //     )
+    // })
 
-    event.modify("gtceu:sulfur_vein", vein => {
-        vein.layer('tfg_tfc_ie')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:sulfur_vein", vein => {
+    //     vein.layer('tfg_tfc_ie')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:tetrahedrite_vein", vein => {
-        vein.layer('tfg_tfc_m')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:tetrahedrite_vein", vein => {
+    //     vein.layer('tfg_tfc_m')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    event.modify("gtceu:topaz_vein", vein => {
-        vein.layer('tfg_tfc_m')
-        vein.dimensions('minecraft:overworld')
-        vein.biomes('#tfg:is_tfc_overworld')
-    })
+    // event.modify("gtceu:topaz_vein", vein => {
+    //     vein.layer('tfg_tfc_m')
+    //     vein.dimensions('minecraft:overworld')
+    //     vein.biomes('#tfg:is_tfc_overworld')
+    // })
 
-    // Перемещение - Overworld -> Overworld
+    // Перемещение - Overworld -> Overworld TFC StoneTypes
 
     event.modify("gtceu:apatite_vein", vein => {
         vein.layer('tfg_tfc_ii_m')
@@ -219,7 +219,7 @@ const registerGregTechOreVeins = (event) => {
         vein.biomes('#tfg:is_tfc_overworld')
     })
 
-    // Перемещение - Deepslate Overworld -> Overworld
+    // Перемещение - Deepslate Overworld -> Overworld TFC StoneTypes
 
     event.modify("gtceu:copper_vein", vein => {
         vein.layer('tfg_tfc_ie')
@@ -269,7 +269,7 @@ const registerGregTechOreVeins = (event) => {
         vein.biomes('#tfg:is_tfc_overworld')
     })
 
-    // Перемещение - Custom
+    // Кастомные
 
     event.add("tfg:bismuth", vein => {
         vein.weight(80)
@@ -296,7 +296,7 @@ const registerGregTechOreVeins = (event) => {
             .surfaceRock(GTMaterials.Bismuth)
             .placement("above")
             .density(0.4)
-            .radius(5)
+            .radius(8)
         )
     })
 }
