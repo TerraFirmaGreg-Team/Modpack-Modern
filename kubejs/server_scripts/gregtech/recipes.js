@@ -1203,7 +1203,7 @@ const registerGregTechRecipes = (e) => {
     //#region Из LV Machine Hull
     e.remove({ id: 'gtceu:arc_furnace/arc_lv_machine_hull' })
     
-    e.recipes.gtceu.arc_furnace('tfg:arc_lv_machine_casing')             
+    e.recipes.gtceu.arc_furnace('tfg:arc_lv_machine_hull')             
         .itemInputs('gtceu:lv_machine_hull')
         .itemOutputs('4x gtceu:red_steel_ingot')
         .itemOutputs('4x gtceu:blue_steel_ingot')
@@ -1230,7 +1230,7 @@ const registerGregTechRecipes = (e) => {
     //#region Из LV Machine Hull
     e.remove({ id: 'gtceu:macerator/macerate_lv_machine_hull' })
 
-    e.recipes.gtceu.macerator('tfg:macerate_lv_machine_casing')             
+    e.recipes.gtceu.macerator('tfg:macerate_lv_machine_hull')             
     .itemInputs('gtceu:lv_machine_hull')
         .itemOutputs('4x gtceu:red_steel_dust')
         .itemOutputs('4x gtceu:blue_steel_dust')
@@ -1326,7 +1326,7 @@ const registerGregTechRecipes = (e) => {
     }).id('tfg:shaped/lv_machine_casing')
 
     e.remove({ id: 'gtceu:assembler/casing_lv' })
-    e.recipes.gtceu.mixer('tfg:casing_lv')             
+    e.recipes.gtceu.assembler('tfg:casing_lv')             
         .itemInputs('4x #forge:plates/red_steel')
         .itemInputs('4x #forge:plates/blue_steel')
         .circuit(8)
@@ -1345,7 +1345,7 @@ const registerGregTechRecipes = (e) => {
         C: '#forge:plates/black_steel',
         D: 'gtceu:tin_single_cable',
         E: 'gtceu:lv_machine_casing',
-    }).id('tfg:shaped/lv_machine_casing')
+    }).id('tfg:shaped/lv_machine_hull')
     //#endregion
 
     //#region Assembly Line Grating
@@ -2017,7 +2017,7 @@ const registerGregTechRecipes = (e) => {
     }).id('tfg:workbench/wood_drum')
 
     e.remove({ id: 'gtceu:assembler/wood_barrel' })
-    e.recipes.gtceu.extractor('tfg:wood_barrel')
+    e.recipes.gtceu.assembler('tfg:wood_barrel')
         .itemInputs('2x #tfg:all_long_iron_rods', '5x #minecraft:planks')
         .itemOutputs('gtceu:wood_drum')
         .EUt(16).duration(100)
