@@ -865,30 +865,30 @@ const registerTFCRecipes = (e) => {
     }
     
     const processToolButcheryKnife = (toolType, headTagPrefix, tfcProperty, material, outputMaterial) => {
-        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-        if (ingotItem.isEmpty()) return
+        const ingotDoubleItem = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)
+        if (ingotDoubleItem.isEmpty()) return
         
         // Декрафт инструмента в жидкость
         const butcheryKnifeItem = ToolHelper.get(toolType, material)
         if (!butcheryKnifeItem.isEmpty()) {
             
             e.recipes.tfc.heating(butcheryKnifeItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
                 .useDurability(true)
                 .id(`tfc:heating/metal/${material.getName()}_butchery_knife`)
 
         }
         
-        let butcheryKnifeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
+        const butcheryKnifeHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
         if (!butcheryKnifeHeadItem.isEmpty()) {
             
             // Декрафт оголовья в жидкость
             e.recipes.tfc.heating(butcheryKnifeHeadItem, tfcProperty.getMeltTemp())
-                .resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), 288))
                 .id(`tfc:heating/metal/${material.getName()}_knife_butchery_head`)
 
             // Крафт оголовья
-            e.recipes.tfc.anvil(butcheryKnifeHeadItem, ingotItem, ['punch_last', 'bend_not_last', 'bend_not_last'])
+            e.recipes.tfc.anvil(butcheryKnifeHeadItem, ingotDoubleItem, ['punch_last', 'bend_not_last', 'bend_not_last'])
                 .tier(tfcProperty.getTier())
                 .bonus(true)
                 .id(`tfc:anvil/${material.getName()}_knife_butchery_head`)
@@ -1663,8 +1663,8 @@ const registerTFCRecipes = (e) => {
 
     //#region Сплав красного камня
     e.recipes.tfc.alloy('tfg:red_alloy', [
-        TFC.alloyPart('tfg:redstone', 0.15, 0.25),
-        TFC.alloyPart('tfc:copper', 0.75, 0.85)
+        TFC.alloyPart('tfg:redstone', 0.23, 0.27),
+        TFC.alloyPart('tfc:copper', 0.73, 0.77)
     ]).id('tfg:alloy/red_alloy')
     //#endregion
 

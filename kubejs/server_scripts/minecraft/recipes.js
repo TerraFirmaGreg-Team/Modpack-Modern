@@ -4211,64 +4211,9 @@ const registerMinecraftRecipes = (e) => {
 
     //#endregion
 
-
     //#endregion
 
-    //#endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // e.shaped('minecraft:', [
-    //     'ABA',
-    //     'BCB',
-    //     'DED'
-    // ], {
-    //     A: '',
-    //     B: '',
-    //     C: '',
-    //     D: '',
-    //     E: '',
-    // }).id('tfg:workbench/')
-
-
-    //#region 1
-    //e.remove({ id: '' })
-    //#endregion
-
-    //#region 
-    //#endregion
-
-    //#region 1
-    //e.remove({ id: '' })
-
-    //#endregion
-
-    //#region Выход: Бумага
-
-
+    //#region Бумага
     e.remove({ id: 'gtceu:shaped/paper' })
     e.remove({ id: 'create:pressing/sugar_cane' })
 
@@ -4287,173 +4232,63 @@ const registerMinecraftRecipes = (e) => {
         .itemOutputs('minecraft:paper')
         .EUt(7).duration(100)
 
-    // e.remove({ id: 'gtceu:shaped/paper' })
+    //#endregion
 
-    // e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane' })
-    // e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled' })
+    //#region Сахар
+    e.remove({ id: 'gtceu:shaped/sugar' })
+    e.remove({ id: 'minecraft:sugar_from_honey_bottle' })
+    e.remove({ id: 'gtceu:macerator/macerate_sugar_cane' })
 
-    // e.recipes.gtceu.chemical_bath('paper_from_papyrus_distilled')             
-    //     .itemInputs('tfc:papyrus')
-    //     .inputFluids(Fluid.of('gtceu:distilled_water', 100))
-    //     .itemOutputs('minecraft:paper')
-    //     .duration(100)
-    //     .EUt(7)
+    e.recipes.gtceu.centrifuge('tfg:sugar_from_sugarcane')             
+        .itemInputs('tfc:food/sugarcane')
+        .inputFluids(Fluid.of('minecraft:water', 600))
+        .itemOutputs('minecraft:sugar')
+        .EUt(6).duration(800)
 
-    // e.recipes.gtceu.chemical_bath('paper_from_papyrus')             
-    //     .itemInputs('tfc:papyrus')
-    //     .inputFluids(Fluid.of('minecraft:water', 100))
-    //     .itemOutputs('minecraft:paper')
-    //     .duration(100)
-    //     .EUt(7)
+    e.recipes.gtceu.centrifuge('tfg:sugar_from_beet')             
+        .itemInputs('tfc:food/beet')
+        .inputFluids(Fluid.of('minecraft:water', 600))
+        .itemOutputs('2x minecraft:sugar')
+        .EUt(8).duration(800)
+    //#endregion
+
+    //#region Ферментированный паучий глаз
+
+    e.remove({ id: 'gtceu:mixer/fermented_spider_eye_red' })
+    e.remove({ id: 'gtceu:mixer/fermented_spider_eye_brown' })
+    e.remove({ id: 'gtceu:create_mixer/fermented_spider_eye_red' })
+    e.remove({ id: 'gtceu:create_mixer/fermented_spider_eye_brown' })
+
+    e.recipes.gtceu.centrifuge('tfg:fermented_spider_eye')             
+        .itemInputs('#beneath:mushrooms', 'minecraft:sugar', 'minecraft:spider_eye')
+        .inputFluids(Fluid.of('minecraft:water', 600))
+        .itemOutputs('minecraft:fermented_spider_eye')
+        .EUt(7).duration(100)
 
     //#endregion
 
+    //#region Светящийся арбуз
+    e.remove({ id: 'gtceu:chemical_reactor/glistening_melon_slice' })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // e.shaped('minecraft:', [
-    //     'ABA',
-    //     'BCB',
-    //     'DED'
-    // ], {
-    //     A: '',
-    //     B: '',
-    //     C: '',
-    //     D: '',
-    //     E: '',
-    // }).id('tfg:workbench/')
-
-
-    //#region 1
-    //e.remove({ id: '' })
+    e.recipes.gtceu.chemical_reactor('tfg:glistening_melon_slice')             
+        .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
+        .itemOutputs('minecraft:glistering_melon_slice')
+        .EUt(30).duration(50)
     //#endregion
 
-    //#region 
-    //#endregion
+    //#region  Книга
+    e.remove({ id: 'gtceu:shaped/book' })
+    e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
 
-    //#region 1
-    //e.remove({ id: '' })
-    //#endregion
-
-    
-
-    //#region Выход: Сахар
-
-    // e.remove({ id: 'gtceu:shaped/sugar' })
-    // e.remove({ id: 'minecraft:sugar_from_honey_bottle' })
-    // e.remove({ id: 'gtceu:macerator/macerate_sugar_cane' })
-
-    // e.recipes.gtceu.centrifuge('sugar')             
-    //     .itemInputs('tfc:food/sugarcane')
-    //     .inputFluids(Fluid.of('minecraft:water', 600))
-    //     .itemOutputs('minecraft:sugar')
-    //     .duration(800)
-    //     .EUt(6)
-
-    //#endregion
-
-    //#region Выход: Ферментированный паучий глаз
-
-    // e.remove({ id: 'minecraft:fermented_spider_eye' })
-    // e.remove({ id: 'gtceu:mixer/fermented_spider_eye_red' })
-    // e.remove({ id: 'gtceu:mixer/fermented_spider_eye_brown' })
-    // e.remove({ id: 'gtceu:create_mixer/fermented_spider_eye_red' })
-    // e.remove({ id: 'gtceu:create_mixer/fermented_spider_eye_brown' })
-
-    //#endregion
-
-    //#region Выход: Светящийся арбуз
-
-    // e.shaped('minecraft:glistering_melon_slice', [
-    //     'AAA', 
-    //     'ABA',
-    //     'AAA'  
-    // ], {
-    //     A: '#forge:nuggets/gold', 
-    //     B: 'tfc:food/melon_slice'   
-    // }).id('minecraft:glistering_melon_slice')
-
-    // e.recipes.gtceu.chemical_reactor('glistening_melon_slice')             
-    //     .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
-    //     .itemOutputs('minecraft:glistering_melon_slice')
-    //     .duration(50)
-    //     .EUt(30)
-
-    // e.recipes.gtceu.large_chemical_reactor('glistening_melon_slice')             
-    //     .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
-    //     .itemOutputs('minecraft:glistering_melon_slice')
-    //     .duration(50)
-    //     .EUt(30)
-
-    //#endregion
-
-    
-
-    //#region Выход: Книга
-
-    // e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
-
-    // e.shapeless('minecraft:book', [
-    //     'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
-    // ]).id('minecraft:book')
-
-    //#endregion
-
-    //#region Шаблоны брони
-    // e.remove({id: 'minecraft:wild_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:wayfinder_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:ward_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:vex_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:tide_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:spire_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:snout_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:silence_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:shaper_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:sentry_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:rib_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:raiser_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:host_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:eye_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:dune_armor_trim_smithing_template_smithing_trim'})
-    // e.remove({id: 'minecraft:coast_armor_trim_smithing_template_smithing_trim'})
-
-    // e.remove({ id: 'minecraft:coast_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:vex_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:host_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:rib_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:spire_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:tide_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:eye_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:raiser_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:wild_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:shaper_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:snout_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:dune_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:netherite_upgrade_smithing_template' })
-    // e.remove({ id: 'minecraft:wayfinder_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:ward_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:silence_armor_trim_smithing_template' })
-    // e.remove({ id: 'minecraft:sentry_armor_trim_smithing_template' })
+    e.shaped('minecraft:book', [
+        'ABC',
+        'ABD',
+        'ABC'
+    ], {
+        A: '#forge:string',
+        B: 'minecraft:paper',
+        C: '#forge:leather',
+        D: 'gtceu:sticky_resin'
+    }).id('tfg:shaped/book')
     //#endregion
 }
-
