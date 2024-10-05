@@ -815,10 +815,22 @@ const registerGregTechRecipes = (e) => {
 
     //#endregion
 
+    //#region Отключение смешивания пылей на верстаке
+    e.remove({id: 'gtceu:shapeless/dust_brass'})
+    e.remove({id: 'gtceu:shapeless/glass_dust_flint'})
+    e.remove({id: 'gtceu:shapeless/dust_bronze'})
+    e.remove({id: 'gtceu:shapeless/potin_dust'})
+    //#endregion
+
+    //#region Дерево
+    e.remove({ id : 'gtceu:assembler/treated_hanging_sign' })
+    e.remove({ id : 'gtceu:assembler/rubber_hanging_sign' })
+    //#endregion
+
     //#region Рецепты MaterialInfo
 
     //#region Дерево
-    global.MINECRAFT_OVERWORLD_WOOD_TYPES.forEach(woodName => {
+    global.MINECRAFT_ALL_WOOD_TYPES.forEach(woodName => {
         e.remove({ id: `gtceu:macerator/macerate_${woodName}_planks` })
 
         e.remove({ id: `gtceu:macerator/macerate_${woodName}_stairs` })
@@ -843,17 +855,17 @@ const registerGregTechRecipes = (e) => {
     //#region Камень
 
     //#region Блок
-    e.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_stone_ingot_to_block' })
-    e.remove({ id: 'gtceu:extruder/extrude_stone_ingot_to_block' })
+    // e.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_stone_ingot_to_block' })
+    // e.remove({ id: 'gtceu:extruder/extrude_stone_ingot_to_block' })
     //#endregion
 
     //#region Слитки
-    e.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_stone_block' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_block' })
-    e.remove({ id: 'gtceu:cutter/cut_stone_block_to_plate_water' })
-    e.remove({ id: 'gtceu:cutter/cut_stone_block_to_plate_distilled_water' })
-    e.remove({ id: 'gtceu:cutter/cut_stone_block_to_plate' })
+    // e.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_stone_block' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_block' })
+    // e.remove({ id: 'gtceu:cutter/cut_stone_block_to_plate_water' })
+    // e.remove({ id: 'gtceu:cutter/cut_stone_block_to_plate_distilled_water' })
+    // e.remove({ id: 'gtceu:cutter/cut_stone_block_to_plate' })
     //#endregion
 
     //#region Стержни
@@ -873,7 +885,6 @@ const registerGregTechRecipes = (e) => {
         .itemOutputs('gtceu:stone_rod', '2x gtceu:small_stone_dust')
         .EUt(7).duration(20)
         
-
     //#endregion
 
     //#region Пыль
@@ -903,7 +914,7 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:macerator/macerate_stone_brick_stairs' })
     e.remove({ id: 'gtceu:macerator/macerate_stone_brick_slab' })
     e.remove({ id: 'gtceu:macerator/macerate_sandstone_slab' })
-    //#endregion
+    // //#endregion
 
     //#region Маленькая пыль
     e.remove({ id: 'gtceu:macerator/macerate_stone_button' })
@@ -951,10 +962,16 @@ const registerGregTechRecipes = (e) => {
 
     //#endregion
 
+    
+
+
+
+    //#endregion
+
     //#region Железо
 
     //#region Самородок
-
+    
     //#region Из каменной нажимной плиты
     e.remove({ id: 'gtceu:arc_furnace/arc_stone_pressure_plate' })
     //#endregion
@@ -968,650 +985,111 @@ const registerGregTechRecipes = (e) => {
 
     e.recipes.gtceu.arc_furnace('tfg:arc_iron_door')             
         .itemInputs('minecraft:iron_door')
-        .itemOutputs('8x gtceu:iron_nugget')
+        .itemOutputs('8x minecraft:iron_nugget')
         .EUt(30).duration(140)
 
     //#endregion
+
+    //#region Из контроллера примитивной доменной печи
+    e.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
+    //#endregion
     
     //#endregion
 
-    //#region Маленькая пыль
+    //#region Пыль
     
+    //#region Из люка
+    e.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
+    //#endregion
+
+    //#endregion
+
+    //#region Маленькая пыль
+
     //#region Из решеток
     e.remove({ id: 'gtceu:macerator/macerate_iron_bars' })
     //#endregion
 
-    //#region 
+    //#endregion
+
+    //#region Крошечная пыль
+
+    //#region Из железной двери
+    e.remove({ id: 'gtceu:macerator/macerate_iron_door' })
+
+    e.recipes.gtceu.macerator('tfg:iron_door')             
+        .itemInputs('minecraft:iron_door')
+        .itemOutputs('8x gtceu:tiny_iron_dust')
+        .EUt(8).duration(120)
+    //#endregion
+
+    //#region Из контроллера примитивной доменной печи
+    e.remove({ id: 'gtceu:macerator/macerate_primitive_blast_furnace' })
     //#endregion
 
     //#endregion
 
     //#endregion
 
+    //#region Кованное железо
 
-
-    //#endregion
-
-}
-
-const registerGregTechRecipes1 = (e) => {
-
-
-    e.recipes.gtceu.macerator('dirt_from_bio_chaff')             
-        .itemInputs('gtceu:bio_chaff')
-        .itemOutputs('tfc:dirt/loam')
-        .duration(300)
-        .EUt(4)
-
-    // TODO: Из пыли лунного грунта
-    e.remove({ id: 'gtceu:centrifuge/endstone_separation' })
-    /*
-    e.recipes.gtceu.centrifuge('endstone_separation')             
-        .itemInputs('')
-        .chancedOutput('tfc:sand/yellow', 9000, 300)
-        .chancedOutput('gtceu:tungstate_small_dust', 1250, 450)
-        .chancedOutput('gtceu:tiny_platinum_dust', 630, 150)
-        .outputFluids(Fluid.of('gtceu:helium', 2000))
-        .duration(250)
-        .EUt(30)*/
-
-    //#region Выход: Удобрение
-
-    // В обычном миксере
-    e.recipes.gtceu.mixer('fertilizer')             
-        .itemInputs(
-            '#tfc:dirt',
-            '2x #forge:dusts/wood',
-            '4x #forge:sand'
-        )
-        .circuit(1)
-        .inputFluids(Fluid.of('minecraft:water', 1000))
-        .itemOutputs('4x gtceu:fertilizer')
-        .duration(300)
-        .EUt(30)
-
-    // В create миксере
-    e.recipes.gtceu.create_mixer('fertilizer')             
-        .itemInputs(
-            '#tfc:dirt',
-            '2x #forge:dusts/wood',
-            '4x #forge:sand'
-        )
-        .circuit(1)
-        .inputFluids(Fluid.of('minecraft:water', 1000))
-        .itemOutputs('4x gtceu:fertilizer')
-        .duration(300)
-        .EUt(30)
-        .rpm(96)
-
-    //#endregion
-
-    //#region Выход: Кварцевый песок
-
-    e.shaped('gtceu:quartz_sand_dust', [
-        'A', 
-        'B'
-    ], {
-        A: '#forge:sand',
-        B: '#forge:tools/mortars'
-    }).id('gtceu:shaped/quartz_sand')
-
-    e.recipes.gtceu.macerator('quartz_sand_from_sand')             
-        .itemInputs('#forge:sand')
-        .itemOutputs('gtceu:quartz_sand_dust')
-        .duration(30)
-        .EUt(2)
-
-    //#endregion
-
-    //#region Выход: Диоксид силикона
-
-    e.recipes.gtceu.electrolyzer('sand_electrolysis')             
-        .itemInputs('8x #forge:sand')
-        .itemOutputs('gtceu:silicon_dioxide_dust')
-        .duration(500)
-        .EUt(25)
-
-    //#endregion
-
-    //#region Выход: Соленая пыль + Вода
-
-    // Декрафт в центрифуге
-    e.recipes.gtceu.centrifuge('centrifuging_tfc_salt_water')             
-        .inputFluids(Fluid.of('tfc:salt_water', 1000))
-        .itemOutputs('1x gtceu:salt_dust')
-        .outputFluids(Fluid.of('minecraft:water', 1000))
-        .duration(51)
-        .EUt(30)
-
-    // Декрафт в электролайзере
-    e.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')             
-        .inputFluids(Fluid.of('tfc:salt_water', 1000))
-        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:small_sodium_hydroxide_dust')
-        .outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
-        .duration(720)
-        .EUt(30)
-
-    //#endregion
-
-    //#region Выход: Крошечная кучка камня
-
-    e.remove({ id: 'gtceu:macerator/macerate_stone_button' })
-
-    //#endregion
+    //#region Слиток
     
-    //#region Выход: Маленькая кучка камня
-
-    e.remove({ id: 'gtceu:macerator/macerate_stone_stairs' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_slab' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_brick_stairs' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_brick_slab' })
-    e.remove({ id: 'gtceu:macerator/macerate_sandstone_stairs' })
-    e.remove({ id: 'gtceu:macerator/macerate_sandstone_slab' })
-    e.remove({ id: 'gtceu:macerator/macerate_red_sandstone_stairs' })
-    e.remove({ id: 'gtceu:macerator/macerate_red_sandstone_slab' })
-    e.remove({ id: 'gtceu:macerator/macerate_granite' })
-    e.remove({ id: 'gtceu:macerator/macerate_diorite' })
-    e.remove({ id: 'gtceu:macerator/macerate_cobblestone_slab' })
-    e.remove({ id: 'gtceu:macerator/macerate_andesite' })
-
+    //#region Из люка
+    e.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
     //#endregion
-    
-    //#region Выход: Кучка камня
-
-    e.remove({ id: 'gtceu:macerator/macerate_stone_sword' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_shovel' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_pressure_plate' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_pickaxe' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_hoe' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_bricks' })
-    e.remove({ id: 'gtceu:macerator/macerate_stone_axe' })
-    e.remove({ id: 'gtceu:macerator/macerate_mossy_cobblestone' })
-    e.remove({ id: 'gtceu:macerator/macerate_cobblestone_wall' })
-    e.remove({ id: 'gtceu:macerator/macerate_cobblestone' })
-    e.remove({ id: 'gtceu:macerator/gravel_to_flint' })
-    e.remove({ id: 'gtceu:macerator/macerate_furnace' })
 
     //#endregion
 
-    //#region Выход: Каменный стержень
-
-    
-
     //#endregion
 
-    //#region Выход: Сырая резиновая пыль
-    
-    // Из бревна капока
-    e.recipes.gtceu.extractor('raw_rubber_from_log')             
-        .itemInputs('#tfc:kapok_logs')
-        .itemOutputs('gtceu:raw_rubber_dust')
-        .duration(300)
-        .EUt(2)
+    //#region Мясо
 
-    // Из саженца капока
-    e.recipes.gtceu.extractor('raw_rubber_from_sapling')             
-        .itemInputs('tfc:wood/sapling/kapok')
-        .itemOutputs('gtceu:raw_rubber_dust')
-        .duration(300)
-        .EUt(2)
+    //#region Пыль мяса
 
-    // Из листвы капока
-    e.recipes.gtceu.extractor('raw_rubber_from_leaves')             
-        .itemInputs('16x tfc:wood/leaves/kapok')
-        .itemOutputs('gtceu:raw_rubber_dust')
-        .duration(300)
-        .EUt(2)
-
-    //#endregion
-    //#region Выход: Пропитанные доски
-
-    e.remove({ id: 'gtceu:shaped/treated_wood_planks' })
-
-    e.recipes.tfc.barrel_sealed(4000)
-        .outputItem('gtceu:treated_wood_planks')
-        .inputs('#minecraft:planks', TFC.fluidStackIngredient('#forge:creosote', 100))
-        .id('tfg:barrel/treated_wood_planks')
-
-    //#endregion
-
-    //#region Выход: Капля резины
-
-    // Из латекса
-    e.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 5000, 300)
-        .itemOutput('gtceu:sticky_resin')
-        .id('tfg:pot/sticky_resin')
-
-    // Из бревна капока
-    e.recipes.gtceu.centrifuge('rubber_log_separation')             
-        .itemInputs('#tfc:kapok_logs')
-        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
-        .chancedOutput('gtceu:plant_ball', 3750, 900)
-        .chancedOutput('gtceu:carbon_dust', 2500, 600)
-        .chancedOutput('gtceu:wood_dust', 2500, 700)
-        .outputFluids(Fluid.of('gtceu:methane', 60))
-        .duration(200)
-        .EUt(20)
-
-    //#endregion
-
-    //#region Выход: Растительный шарик
-
-    // 8x Ванильная растительность -> Plant Ball (Compressor)
-    e.remove({id: 'gtceu:compressor/plant_ball_from_wheat'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_warped_stem'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_crimson_stem'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_tube_coral'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_sugar_cane'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_red_mushroom'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_potato'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_nether_wart'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_horn_coral'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_fire_coral'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_carrot'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_cactus'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_bubble_coral'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
-    e.remove({id: 'gtceu:compressor/plant_ball_from_moss'})
-
-    e.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')             
-        .itemInputs('8x #tfc:seeds')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    e.recipes.gtceu.compressor('plant_ball_from_tfc_food')             
-        .itemInputs('8x #tfc:foods')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    e.recipes.gtceu.compressor('plant_ball_from_tfc_plants')             
-        .itemInputs('8x #tfc:plants')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    e.recipes.gtceu.compressor('plant_ball_from_tfc_corals')             
-        .itemInputs('8x #tfc:corals')
-        .itemOutputs('gtceu:plant_ball')
-        .duration(300)
-        .EUt(2)
-
-    //#endregion
-
-    //#region Выход: Биомасса
-
-    // Ванильная растительность -> Биомасса (Brewery)
-    e.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
-    e.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
-    e.remove({id: 'gtceu:brewery/biomass_from_potato'})
-    e.remove({id: 'gtceu:brewery/biomass_from_carrot'})
-    e.remove({id: 'gtceu:brewery/biomass_from_cactus'})
-    e.remove({id: 'gtceu:brewery/biomass_from_brown_mushroom'})
-    e.remove({id: 'gtceu:brewery/biomass_from_beetroot'})
-
-    e.recipes.gtceu.brewery('biomass_from_tfc_seeds')             
-        .itemInputs('#tfc:seeds')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    e.recipes.gtceu.brewery('biomass_from_tfc_food')             
-        .itemInputs('#tfc:foods')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    e.recipes.gtceu.brewery('biomass_from_tfc_plants')             
-        .itemInputs('#tfc:plants')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    e.recipes.gtceu.brewery('biomass_from_tfc_corals')             
-        .itemInputs('#tfc:corals')
-        .outputFluids(Fluid.of('gtceu:biomass', 20))
-        .duration(128)
-        .EUt(3)
-
-    //#endregion
-
-    //#region Выход: Рыбье масло
-
-    e.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
-    e.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
-    e.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
-    e.remove({ id: 'gtceu:extractor/fish_oil_from_cod' })
-
-    e.recipes.gtceu.extractor(`tfg/fish_oil`)             
-        .itemInputs('#minecraft:fishes')
-        .outputFluids(Fluid.of('gtceu:fish_oil', 40))
-        .duration(16)
-        .EUt(4)
-
-    //#endregion
-
-    //#region Выход: Семянное масло
-
-    e.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
-    e.remove({ id: 'gtceu:extractor/seed_oil_from_pumpkin' })
-    e.remove({ id: 'gtceu:extractor/seed_oil_from_melon' })
-    e.remove({ id: 'gtceu:extractor/seed_oil_from_beetroot' })
-
-    e.recipes.gtceu.extractor(`tfg/seed_oil`)             
-        .itemInputs('#tfc:seeds')
-        .outputFluids(Fluid.of('gtceu:seed_oil', 16))
-        .duration(32)
-        .EUt(2)
-
-    //#endregion
-
-    //#region Выход: Цемент
-
-    generateMixerRecipe(
-        e, 
-        ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'], 
-        Fluid.of('minecraft:water', 1000),
-        [],
-        null,
-        Fluid.of('gtceu:concrete', 1152),
-        40,
-        16,
-        64,
-        'concrete_from_marble'
-    )
-
-    generateMixerRecipe(
-        e, 
-        ['3x #tfg:stone_dusts', 'gtceu:clay_dust'], 
-        Fluid.of('minecraft:water', 500),
-        [],
-        null,
-        Fluid.of('gtceu:concrete', 576),
-        20,
-        16,
-        64,
-        'concrete_from_clay'
-    )
-
-    generateMixerRecipe(
-        e, 
-        ['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'], 
-        Fluid.of('minecraft:water', 1000),
-        [],
-        null,
-        Fluid.of('gtceu:concrete', 1152),
-        40,
-        16,
-        64,
-        'concrete_from_calcite'
-    )
-
-    //#endregion
-
-    //#region Выход: Бурильная жидкость
-    
-    generateMixerRecipe(
-        e, 
-        ['2x #tfg:stone_dusts'], 
-        [Fluid.of('gtceu:lubricant', 20), Fluid.of('minecraft:water', 4000)],
-        [],
-        null,
-        Fluid.of('gtceu:drilling_fluid', 5000),
-        40,
-        16,
-        64,
-        'drilling_fluid'
-    )
-
-    //#endregion
-
-    //#region Выход: Крошечная кучка дерева
-
-    e.remove({ id: 'gtceu:macerator/macerate_warped_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_spruce_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_oak_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_mangrove_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_jungle_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_dark_oak_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_crimson_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_cherry_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_birch_button' })
-    e.remove({ id: 'gtceu:macerator/macerate_acacia_button' })
-
-    //#endregion
-
-    //#region Выход: Маленькая кучка дерева
-
-   e.remove({ id: 'gtceu:macerator/macerate_wooden_sword' })
-   e.remove({ id: 'gtceu:macerator/macerate_wooden_shovel' })
-   e.remove({ id: 'gtceu:macerator/macerate_wooden_pickaxe' })
-   e.remove({ id: 'gtceu:macerator/macerate_wooden_hoe' })
-   e.remove({ id: 'gtceu:macerator/macerate_wooden_axe' })
-   e.remove({ id: 'gtceu:macerator/macerate_warped_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_warped_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_spruce_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_spruce_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_oak_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_oak_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_mangrove_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_mangrove_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_jungle_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_jungle_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_iron_sword' })
-   e.remove({ id: 'gtceu:macerator/macerate_iron_shovel' })
-   e.remove({ id: 'gtceu:macerator/macerate_iron_pickaxe' })
-   e.remove({ id: 'gtceu:macerator/macerate_iron_hoe' })
-   e.remove({ id: 'gtceu:macerator/macerate_iron_axe' })
-   e.remove({ id: 'gtceu:macerator/macerate_golden_sword' })
-   e.remove({ id: 'gtceu:macerator/macerate_golden_shovel' })
-   e.remove({ id: 'gtceu:macerator/macerate_golden_pickaxe' })
-   e.remove({ id: 'gtceu:macerator/macerate_golden_hoe' })
-   e.remove({ id: 'gtceu:macerator/macerate_golden_axe' })
-   e.remove({ id: 'gtceu:macerator/macerate_diamond_sword' })
-   e.remove({ id: 'gtceu:macerator/macerate_diamond_shovel' })
-   e.remove({ id: 'gtceu:macerator/macerate_diamond_pickaxe' })
-   e.remove({ id: 'gtceu:macerator/macerate_diamond_hoe' })
-   e.remove({ id: 'gtceu:macerator/macerate_diamond_axe' })
-   e.remove({ id: 'gtceu:macerator/macerate_dark_oak_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_dark_oak_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_crimson_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_crimson_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_cherry_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_cherry_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_birch_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_birch_slab' })
-   e.remove({ id: 'gtceu:macerator/macerate_acacia_stairs' })
-   e.remove({ id: 'gtceu:macerator/macerate_acacia_slab' })
-
-   //#endregion
-
-    //#region Выход: Деревянная пыль
-
-    e.remove({id: 'gtceu:macerator/macerate_trapped_chest'})
-    e.remove({id: 'gtceu:macerator/macerate_spruce_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_spruce_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_spruce_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_spruce_door'})
-    e.remove({id: 'gtceu:macerator/macerate_spruce_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_oak_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_oak_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_oak_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_oak_door'})
-    e.remove({id: 'gtceu:macerator/macerate_oak_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_mangrove_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_mangrove_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_mangrove_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_mangrove_door'})
-    e.remove({id: 'gtceu:macerator/macerate_mangrove_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_jungle_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_jungle_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_jungle_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_jungle_door'})
-    e.remove({id: 'gtceu:macerator/macerate_jungle_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_dark_oak_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_dark_oak_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_dark_oak_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_dark_oak_door'})
-    e.remove({id: 'gtceu:macerator/macerate_dark_oak_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_crafting_table'})
-    e.remove({id: 'gtceu:macerator/macerate_chest'})
-    e.remove({id: 'gtceu:macerator/macerate_chest_minecart'})
-    e.remove({id: 'gtceu:macerator/macerate_cherry_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_cherry_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_cherry_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_cherry_door'})
-    e.remove({id: 'gtceu:macerator/macerate_cherry_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_bookshelf'})
-    e.remove({id: 'gtceu:macerator/macerate_birch_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_birch_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_birch_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_birch_door'})
-    e.remove({id: 'gtceu:macerator/macerate_birch_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_acacia_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_acacia_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_acacia_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_acacia_door'})
-    e.remove({id: 'gtceu:macerator/macerate_acacia_boat'})
-    e.remove({id: 'gtceu:macerator/macerate_bamboo_raft'})
-    e.remove({id: 'gtceu:macerator/macerate_crimson_door'})
-    e.remove({id: 'gtceu:macerator/macerate_crimson_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_crimson_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_crimson_planks'})
-    e.remove({id: 'gtceu:macerator/macerate_warped_door'})
-    e.remove({id: 'gtceu:macerator/macerate_warped_fence'})
-    e.remove({id: 'gtceu:macerator/macerate_warped_fence_gate'})
-    e.remove({id: 'gtceu:macerator/macerate_warped_planks'})
-
-    //#endregion
-
-    //#region Выход: Бумажная пыль
-
-    e.remove({ id: 'gtceu:shaped/paper_dust' })
-
-    //#endregion
-
-    //#region Выход: Метан
-
-    e.remove({ id: 'gtceu:centrifuge/red_mushroom_separation' })
-    e.remove({ id: 'gtceu:centrifuge/brown_mushroom_separation' })
-
-    //#endregion
-
-    //#region Выход: Маленькая кучка мяса
-
+    e.remove({ id: 'gtceu:macerator/macerate_chicken' })
     e.remove({ id: 'gtceu:macerator/macerate_steak' })
     e.remove({ id: 'gtceu:macerator/macerate_rabbit' })
+    e.remove({ id: 'gtceu:macerator/macerate_mutton' })
     e.remove({ id: 'gtceu:macerator/macerate_pork_chop' })
 
-    //#endregion
-
-    //#region Выход: Пыль мяса
-
-    e.remove({ id: 'gtceu:macerator/macerate_mutton' })
-    e.remove({ id: 'gtceu:macerator/macerate_chicken' })
-    
-    e.recipes.gtceu.macerator('macerate_meat_to_dust')             
+    e.recipes.gtceu.macerator('tfg:macerate_tfg_meat_to_dust')             
         .itemInputs('#tfc:foods/meats')
         .itemOutputs('gtceu:meat_dust', 'gtceu:tiny_bone_dust')
-        .duration(100)
-        .EUt(2)
+        .EUt(2).duration(120)
+    //#endregion
 
     //#endregion
-    
-    //#region Выход: Пшеничная пыль
 
+    //#region Пшеница
     e.remove({ id: 'gtceu:shapeless/wheat_to_dust' })
+    e.shapeless('gtceu:wheat_dust', [
+        '#forge:tools/mortars',
+        'tfc:food/wheat',
+    ]).id('tfg:shaped/wheat_to_dust')
+    
     e.remove({ id: 'gtceu:macerator/macerate_wheat' })
-    e.remove({ id: 'gtceu:macerator/macerate_hay_block' })
+    e.recipes.gtceu.macerator('tfg:macerate_wheat')             
+        .itemInputs('tfc:food/wheat')
+        .itemOutputs('gtceu:wheat_dust')
+        .EUt(2).duration(150)
+
+    //#region Пыль
 
     //#endregion
 
-    //#region Выход: Пыль какао-бобов
-
-    e.recipes.gtceu.assembler('macerate_cocoa')             
-        .itemInputs('firmalife:food/cocoa_beans')
-        .itemOutputs('gtceu:cocoa_dust')
-        .duration(400)
-        .EUt(2)
+    //#endregion
 
     //#endregion
 
-    //#region Выход: Слиток кованного железа
-
-    e.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_damaged_anvil' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_chipped_anvil' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_furnace_minecart' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_compass' })
-    
+    //#region Рецепты примитивной помпы 
+    e.remove('gtceu:shaped/pump_deck')
+    e.remove('gtceu:shaped/pump_hatch')
+    e.remove('gtceu:shaped/primitive_pump')
     //#endregion
 
-    //#region Выход: Кованные самородки
-
-    e.remove({ id: 'gtceu:arc_furnace/arc_iron_bars' })
-
-    //#endregion
-
-    //#region Выход: Железная пыль
-
-    e.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
-    e.remove({ id: 'gtceu:macerator/macerate_damaged_anvil' })
-    e.remove({ id: 'gtceu:macerator/macerate_chipped_anvil' })
-    e.remove({ id: 'gtceu:macerator/macerate_anvil' })
-    e.remove({ id: 'gtceu:macerator/macerate_furnace_minecart' })
-    e.remove({ id: 'gtceu:macerator/macerate_bucket' })
-    e.remove({ id: 'gtceu:macerator/macerate_compass' })
-
-    //#endregion
-
-    //#region Выход: Крошечная железная пыль
-
-    e.remove({ id: 'gtceu:macerator/macerate_iron_bars' })
-
-    //#endregion
-
-    //#region Выход: Крошечная пыль золы
-
-    e.remove({ id: 'gtceu:arc_furnace/arc_bookshelf' })
-
-    //#endregion
-
-    //#region Выход: Пыль незерака
-
-    e.remove({ id: 'gtceu:macerator/macerate_nether_brick_stairs' })
-    e.remove({ id: 'gtceu:macerator/macerate_nether_brick_slab' })
-
-    //#endregion
-
-    //#region Выход: Пыль базальта
-
-    e.remove({ id: 'gtceu:macerator/macerate_basalt' })
-
-    //#endregion
-
-    //#region Выход: Filter Casing
-
-    e.shaped('gtceu:filter_casing', [
-        'AAA',
-        'BBB',
-        'CDE' 
-    ], {
-        A: '#tfg:metal_bars',
-        B: 'gtceu:item_filter',
-        C: 'gtceu:mv_electric_motor',
-        D: 'gtceu:steel_frame',
-        E: '#forge:rotors/steel'
-    }).id('gtceu:shaped/filter_casing')
-    
-    //#endregion
-
-    //#region Выход: Assembly Line Grating
+    //#region Assembly Line Grating
+    e.remove({ id: 'gtceu:shaped/casing_grate_casing' })
 
     e.shaped('2x gtceu:assembly_line_grating', [
         'ABA',
@@ -1622,12 +1100,26 @@ const registerGregTechRecipes1 = (e) => {
         B: '#forge:rotors/steel',
         C: 'gtceu:steel_frame',
         D: 'gtceu:mv_electric_motor'
-    }).id('gtceu:shaped/casing_grate_casing')
-    
+    }).id('tfg:workbench/casing_grate_casing')
+    //#endregion
+
+    //#region Filter Casing
+    e.remove({ id: 'gtceu:shaped/filter_casing' })
+    e.shaped('gtceu:filter_casing', [
+        'AAA',
+        'BBB',
+        'CDE' 
+    ], {
+        A: '#tfg:metal_bars',
+        B: 'gtceu:item_filter',
+        C: 'gtceu:mv_electric_motor',
+        D: 'gtceu:steel_frame',
+        E: '#forge:rotors/steel'
+    }).id('tfg:workbench/filter_casing')
     //#endregion
 
     //#region Gas Collectors
-
+    e.remove({ id: 'gtceu:shaped/lv_gas_collector' })
     e.shaped('gtceu:lv_gas_collector', [
         'ABA',
         'CEC',
@@ -1638,8 +1130,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:lv_electric_pump',
         D: '#gtceu:circuits/lv',
         E: 'gtceu:lv_machine_hull'
-    }).id('gtceu:shaped/lv_gas_collector')
+    }).id('tfg:workbench/lv_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/mv_gas_collector' })
     e.shaped('gtceu:mv_gas_collector', [
         'ABA',
         'CEC',
@@ -1650,8 +1143,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:mv_electric_pump',
         D: '#gtceu:circuits/mv',
         E: 'gtceu:mv_machine_hull'
-    }).id('gtceu:shaped/mv_gas_collector')
+    }).id('tfg:workbench/mv_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/hv_gas_collector' })
     e.shaped('gtceu:hv_gas_collector', [
         'ABA',
         'CEC',
@@ -1662,8 +1156,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:hv_electric_pump',
         D: '#gtceu:circuits/hv',
         E: 'gtceu:hv_machine_hull'
-    }).id('gtceu:shaped/hv_gas_collector')
+    }).id('tfg:workbench/hv_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/ev_gas_collector' })
     e.shaped('gtceu:ev_gas_collector', [
         'ABA',
         'CEC',
@@ -1674,8 +1169,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:ev_electric_pump',
         D: '#gtceu:circuits/ev',
         E: 'gtceu:ev_machine_hull'
-    }).id('gtceu:shaped/ev_gas_collector')
+    }).id('tfg:workbench/ev_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/iv_gas_collector' })
     e.shaped('gtceu:iv_gas_collector', [
         'ABA',
         'CEC',
@@ -1686,8 +1182,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:iv_electric_pump',
         D: '#gtceu:circuits/iv',
         E: 'gtceu:iv_machine_hull'
-    }).id('gtceu:shaped/iv_gas_collector')
+    }).id('tfg:workbench/iv_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/luv_gas_collector' })
     e.shaped('gtceu:luv_gas_collector', [
         'ABA',
         'CEC',
@@ -1698,8 +1195,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:luv_electric_pump',
         D: '#gtceu:circuits/luv',
         E: 'gtceu:luv_machine_hull'
-    }).id('gtceu:shaped/luv_gas_collector')
+    }).id('tfg:workbench/luv_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/zpm_gas_collector' })
     e.shaped('gtceu:zpm_gas_collector', [
         'ABA',
         'CEC',
@@ -1710,8 +1208,9 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:zpm_electric_pump',
         D: '#gtceu:circuits/zpm',
         E: 'gtceu:zpm_machine_hull'
-    }).id('gtceu:shaped/zpm_gas_collector')
+    }).id('tfg:workbench/zpm_gas_collector')
 
+    e.remove({ id: 'gtceu:shaped/uv_gas_collector' })
     e.shaped('gtceu:uv_gas_collector', [
         'ABA',
         'CEC',
@@ -1722,12 +1221,17 @@ const registerGregTechRecipes1 = (e) => {
         C: 'gtceu:uv_electric_pump',
         D: '#gtceu:circuits/uv',
         E: 'gtceu:uv_machine_hull'
-    }).id('gtceu:shaped/uv_gas_collector')
-    
+    }).id('tfg:workbench/uv_gas_collector')
+
+    e.remove({ id: 'gtceu:shaped/uhv_gas_collector' })
+    e.remove({ id: 'gtceu:shaped/uev_gas_collector' })
+    e.remove({ id: 'gtceu:shaped/uiv_gas_collector' })
+    e.remove({ id: 'gtceu:shaped/uxv_gas_collector' })
+    e.remove({ id: 'gtceu:shaped/opv_gas_collector' })
     //#endregion
 
     //#region Forge Hammers
-
+    e.remove({ id: 'gtceu:shaped/lv_forge_hammer' })
     e.shaped('gtceu:lv_forge_hammer', [
         'ABA',
         'CDC',
@@ -1738,8 +1242,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/lv',
         D: 'gtceu:lv_machine_hull',
         E: 'tfc:metal/anvil/steel',
-    }).id('gtceu:shaped/lv_forge_hammer')
+    }).id('tfg:shaped/lv_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/mv_forge_hammer' })
     e.shaped('gtceu:mv_forge_hammer', [
         'ABA',
         'CDC',
@@ -1750,8 +1255,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/mv',
         D: 'gtceu:mv_machine_hull',
         E: 'tfc:metal/anvil/steel',
-    }).id('gtceu:shaped/mv_forge_hammer')
+    }).id('tfg:shaped/mv_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/hv_forge_hammer' })
     e.shaped('gtceu:hv_forge_hammer', [
         'ABA',
         'CDC',
@@ -1762,8 +1268,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/hv',
         D: 'gtceu:hv_machine_hull',
         E: 'tfc:metal/anvil/steel',
-    }).id('gtceu:shaped/hv_forge_hammer')
+    }).id('tfg:shaped/hv_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/ev_forge_hammer' })
     e.shaped('gtceu:ev_forge_hammer', [
         'ABA',
         'CDC',
@@ -1774,8 +1281,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/ev',
         D: 'gtceu:ev_machine_hull',
         E: 'tfc:metal/anvil/black_steel',
-    }).id('gtceu:shaped/ev_forge_hammer')
+    }).id('tfg:shaped/ev_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/iv_forge_hammer' })
     e.shaped('gtceu:iv_forge_hammer', [
         'ABA',
         'CDC',
@@ -1786,8 +1294,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/iv',
         D: 'gtceu:iv_machine_hull',
         E: 'tfc:metal/anvil/black_steel',
-    }).id('gtceu:shaped/iv_forge_hammer')
+    }).id('tfg:shaped/iv_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/luv_forge_hammer' })
     e.shaped('gtceu:luv_forge_hammer', [
         'ABA',
         'CDC',
@@ -1798,8 +1307,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/luv',
         D: 'gtceu:luv_machine_hull',
         E: 'tfc:metal/anvil/black_steel',
-    }).id('gtceu:shaped/luv_forge_hammer')
+    }).id('tfg:shaped/luv_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/zpm_forge_hammer' })
     e.shaped('gtceu:zpm_forge_hammer', [
         'ABA',
         'CDC',
@@ -1810,8 +1320,9 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/zpm',
         D: 'gtceu:zpm_machine_hull',
         E: '#tfg:tier_6_anvil',
-    }).id('gtceu:shaped/zpm_forge_hammer')
+    }).id('tfg:shaped/zpm_forge_hammer')
 
+    e.remove({ id: 'gtceu:shaped/uv_forge_hammer' })
     e.shaped('gtceu:uv_forge_hammer', [
         'ABA',
         'CDC',
@@ -1822,187 +1333,424 @@ const registerGregTechRecipes1 = (e) => {
         C: '#gtceu:circuits/uv',
         D: 'gtceu:uv_machine_hull',
         E: '#tfg:tier_6_anvil',
-    }).id('gtceu:shaped/uv_forge_hammer')
+    }).id('tfg:shaped/uv_forge_hammer')
+
+    e.remove({ id: 'gtceu:shaped/uhv_forge_hammer' })
+    e.remove({ id: 'gtceu:shaped/uev_forge_hammer' })
+    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
+    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
+    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
+    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
+    //#endregion
+
+    //#region Удобрение
+    e.remove({ id: 'gtceu:mixer/fertilizer' })
+    e.remove({ id: 'gtceu:create_mixer/fertilizer' })
+
+    e.recipes.gtceu.mixer('tfg:fertilizer')             
+        .itemInputs(
+            '#tfc:dirt',
+            '2x #forge:dusts/wood',
+            '4x #forge:sand'
+        )
+        .circuit(1)
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .itemOutputs('4x gtceu:fertilizer')
+        .EUt(30).duration(300)
+    
+    //#endregion
+
+    //#region TODO: ДЕКРАФТ ЭНД КАМНЯ В ГОВНО
+    // TODO: Из пыли лунного грунта
+    e.remove({ id: 'gtceu:centrifuge/endstone_separation' })
+    
+    /*
+    e.recipes.gtceu.centrifuge('endstone_separation')             
+        .itemInputs('')
+        .chancedOutput('tfc:sand/yellow', 9000, 300)
+        .chancedOutput('gtceu:tungstate_small_dust', 1250, 450)
+        .chancedOutput('gtceu:tiny_platinum_dust', 630, 150)
+        .outputFluids(Fluid.of('gtceu:helium', 2000))
+        .duration(250)
+        .EUt(30)*/
 
     //#endregion
 
-    //#region CokeOven
+    //#region Кварцевый песок
+    e.remove({ id: 'gtceu:shaped/quartz_sand' })
+    e.shaped('gtceu:quartz_sand_dust', [
+        'A', 
+        'B'
+    ], {
+        A: '#forge:sand',
+        B: '#forge:tools/mortars'
+    }).id('tfg:shaped/quartz_sand')
 
-    // Coke Oven
+    e.remove({ id: 'gtceu:macerator/quartz_sand_from_sand' })
+    e.recipes.gtceu.macerator('tfg:quartz_sand_from_sand')             
+        .itemInputs('#forge:sand')
+        .itemOutputs('gtceu:quartz_sand_dust')
+        .EUt(2).duration(30)
+    //#endregion
+
+    //#region Диоксид силикона
+    e.remove({ id: 'gtceu:electrolyzer/sand_electrolysis' })
+    e.recipes.gtceu.electrolyzer('tfg:sand_electrolysis')             
+        .itemInputs('8x #forge:sand')
+        .itemOutputs('gtceu:silicon_dioxide_dust')
+        .EUt(25).duration(500)
+    //#endregion
+
+    //#region Соленая пыль + Вода
+
+    // Декрафт в центрифуге
+    e.recipes.gtceu.centrifuge('tfg:centrifuging_tfc_salt_water')             
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('1x gtceu:salt_dust')
+        .outputFluids(Fluid.of('minecraft:water', 1000))
+        .duration(51)
+        .EUt(30)
+
+    // Декрафт в электролайзере
+    e.recipes.gtceu.electrolyzer('tfg:electrolyze_tfc_salt_water')             
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('1x gtceu:sodium_hydroxide_dust', '2x gtceu:small_sodium_hydroxide_dust')
+        .outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
+        .duration(720)
+        .EUt(30)
+
+    //#endregion
+
+    //#region Сырая резиновая пыль
+    
+    // Из бревна капока
+    e.remove({ id: 'gtceu:extractor/raw_rubber_from_log' })
+    e.recipes.gtceu.extractor('tfg:raw_rubber_from_log')             
+        .itemInputs('#tfc:kapok_logs')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .EUt(2).duration(300)
+
+    // Из саженца капока
+    e.remove({ id: 'gtceu:extractor/raw_rubber_from_sapling' })
+    e.recipes.gtceu.extractor('tfg:raw_rubber_from_sapling')             
+        .itemInputs('tfc:wood/sapling/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .EUt(2).duration(300)
+
+    // Из листвы капока
+    e.remove({ id: 'gtceu:extractor/raw_rubber_from_leaves' })
+    e.recipes.gtceu.extractor('tfg:raw_rubber_from_leaves')             
+        .itemInputs('16x tfc:wood/leaves/kapok')
+        .itemOutputs('gtceu:raw_rubber_dust')
+        .EUt(2).duration(300)  
+    //#endregion
+
+    //#region Пропитанные доски
+    e.remove({ id: 'gtceu:shaped/treated_wood_planks' })
+
+    e.recipes.tfc.barrel_sealed(4000)
+        .outputItem('gtceu:treated_wood_planks')
+        .inputs('#minecraft:planks', TFC.fluidStackIngredient('#forge:creosote', 100))
+        .id('tfg:barrel/treated_wood_planks')
+    //#endregion
+
+    //#region Капля резины
+
+    // Из латекса
+    e.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 5000, 300)
+        .itemOutput('gtceu:sticky_resin')
+        .id('tfg:pot/sticky_resin')
+
+    // Из бревна капока
+    e.remove({ id: 'gtceu:centrifuge/rubber_log_separation' })
+    e.recipes.gtceu.centrifuge('tfg:rubber_log_separation')             
+        .itemInputs('#tfc:kapok_logs')
+        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
+        .chancedOutput('gtceu:plant_ball', 3750, 900)
+        .chancedOutput('gtceu:carbon_dust', 2500, 600)
+        .chancedOutput('gtceu:wood_dust', 2500, 700)
+        .outputFluids(Fluid.of('gtceu:methane', 60))
+        .EUt(20).duration(200)
+    //#endregion
+
+    //#region Растительный шарик
+
+    //#region В компрессоре
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_wheat' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_beetroot' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_red_mushroom' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_nether_wart' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_bubble_coral' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_potato' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_brain_coral' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_warped_stem' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_brown_mushroom' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_horn_coral' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_cactus' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_crimson_stem' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_sugar_cane' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_moss' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_carrot' })
+
+    e.recipes.gtceu.compressor('tfg:plant_ball_from_tfc_seeds')             
+        .itemInputs('8x #tfc:seeds')
+        .itemOutputs('gtceu:plant_ball')
+        .EUt(2).duration(300)
+
+    e.recipes.gtceu.compressor('tfg:plant_ball_from_tfc_food')             
+        .itemInputs('8x #tfc:foods')
+        .itemOutputs('gtceu:plant_ball')
+        .EUt(2).duration(300)
+
+    e.recipes.gtceu.compressor('tfg:plant_ball_from_tfc_plants')             
+        .itemInputs('8x #tfc:plants')
+        .itemOutputs('gtceu:plant_ball')
+        .EUt(2).duration(300)
+
+    e.recipes.gtceu.compressor('tfg:plant_ball_from_tfc_corals')             
+        .itemInputs('8x #tfc:corals')
+        .itemOutputs('gtceu:plant_ball')
+        .EUt(2).duration(300)
+
+    e.recipes.gtceu.compressor('tfg:plant_ball_from_beneath_')             
+        .itemInputs('8x #tfc:corals')
+        .itemOutputs('gtceu:plant_ball')
+        .EUt(2).duration(300)
+
+    //#endregion
+    
+    //#region В центрифуге
+
+    // Из земли
+    e.recipes.gtceu.centrifuge('tfg:dirt_separation')             
+        .itemInputs('#tfc:dirt')
+        .chancedOutput('gtceu:plant_ball', 1250, 700)
+        .chancedOutput('tfc:sand/yellow', 5000, 500)
+        .chancedOutput('gtceu:clay_dust', 450, 100)
+        .EUt(302).duration(150)
+        
+
+    // Из земли с травой
+    e.recipes.gtceu.centrifuge('tfg:grass_block_separation')             
+        .itemInputs('#tfc:grass')
+        .chancedOutput('gtceu:plant_ball', 3000, 700)
+        .chancedOutput('tfc:sand/yellow', 5000, 500)
+        .chancedOutput('gtceu:clay_dust', 450, 100)
+        .EUt(302).duration(150)
+
+    //#endregion
+
+    //#endregion
+
+    //#region Биомасса
+    e.remove({ id: 'gtceu:brewery/biomass_from_sugar_cane' })
+    e.remove({ id: 'gtceu:brewery/biomass_from_red_mushroom' })
+    e.remove({ id: 'gtceu:brewery/biomass_from_potato' })
+    e.remove({ id: 'gtceu:brewery/biomass_from_carrot' })
+    e.remove({ id: 'gtceu:brewery/biomass_from_cactus' })
+    e.remove({ id: 'gtceu:brewery/biomass_from_brown_mushroom' })
+    e.remove({ id: 'gtceu:brewery/biomass_from_beetroot' })
+
+    e.recipes.gtceu.brewery('tfg:biomass_from_tfc_seeds')             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .EUt(3).duration(128)
+        
+
+    e.recipes.gtceu.brewery('tfg:biomass_from_tfc_food')             
+        .itemInputs('#tfc:foods')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .EUt(3).duration(128)
+        
+
+    e.recipes.gtceu.brewery('tfg:biomass_from_tfc_plants')             
+        .itemInputs('#tfc:plants')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .EUt(3).duration(128)
+        
+
+    e.recipes.gtceu.brewery('tfg:biomass_from_tfc_corals')             
+        .itemInputs('#tfc:corals')
+        .outputFluids(Fluid.of('gtceu:biomass', 20))
+        .EUt(3).duration(128)
+        
+    //#endregion
+
+    //#region Рыбье масло
+    e.remove({ id: 'gtceu:extractor/fish_oil_from_tropical_fish' })
+    e.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
+    e.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
+    e.remove({ id: 'gtceu:extractor/fish_oil_from_cod' })
+
+    e.recipes.gtceu.extractor(`tfg:fish_oil`)             
+        .itemInputs('#minecraft:fishes')
+        .outputFluids(Fluid.of('gtceu:fish_oil', 40))
+        .EUt(4).duration(16)
+    //#endregion
+
+    //#region Семянное масло
+    e.remove({ id: 'gtceu:extractor/seed_oil_from_wheat_seeds' })
+    e.remove({ id: 'gtceu:extractor/seed_oil_from_pumpkin' })
+    e.remove({ id: 'gtceu:extractor/seed_oil_from_melon' })
+    e.remove({ id: 'gtceu:extractor/seed_oil_from_beetroot' })
+    e.remove({ id: 'gtceu:extractor/seed_oil_from_torchflower' })
+
+    e.recipes.gtceu.extractor(`tfg:seed_oil`)             
+        .itemInputs('#tfc:seeds')
+        .outputFluids(Fluid.of('gtceu:seed_oil', 16))
+        .EUt(2).duration(32)
+    //#endregion
+
+    //#region Пыль бетона
+    e.remove({ id: 'gtceu:mixer/concrete_from_marble' })
+    e.recipes.gtceu.mixer('tfg:concrete_from_marble')
+        .itemInputs('2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust')
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .outputFluids(Fluid.of('gtceu:concrete', 1152))
+        .EUt(16).duration(40)
+        
+    e.remove({ id: 'gtceu:mixer/concrete_from_clay' })
+    e.recipes.gtceu.mixer('tfg:concrete_from_clay')
+        .itemInputs('3x #tfg:stone_dusts', 'gtceu:clay_dust')
+        .inputFluids(Fluid.of('minecraft:water', 500))
+        .outputFluids(Fluid.of('gtceu:concrete', 576))
+        .EUt(16).duration(20)
+
+    e.remove({ id: 'gtceu:mixer/concrete_from_calcite' })
+    e.recipes.gtceu.mixer('tfg:concrete_from_calcite')
+        .itemInputs('3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust')
+        .inputFluids(Fluid.of('minecraft:water', 1000))
+        .outputFluids(Fluid.of('gtceu:concrete', 1152))
+        .EUt(16).duration(40)
+    //#endregion
+
+    //#region Бурильная жидкость
+    e.remove({ id: 'gtceu:mixer/drilling_fluid' })
+    e.recipes.gtceu.mixer('tfg:drilling_fluid')
+        .itemInputs('2x #tfg:stone_dusts')
+        .inputFluids(Fluid.of('gtceu:lubricant', 20), Fluid.of('minecraft:water', 4000))
+        .outputFluids(Fluid.of('gtceu:drilling_fluid', 5000))
+        .EUt(16).duration(65)
+
+    e.remove({ id: 'gtceu:mixer/drilling_fluid_distilled' })
+    e.recipes.gtceu.mixer('tfg:drilling_fluid_distilled')
+        .itemInputs('2x #tfg:stone_dusts')
+        .inputFluids(Fluid.of('gtceu:lubricant', 20), Fluid.of('gtceu:distilled_water', 4000))
+        .outputFluids(Fluid.of('gtceu:drilling_fluid', 5000))
+        .EUt(16).duration(65)
+    //#endregion
+
+    //#region Бумажная пыль
+    e.remove({ id: 'gtceu:shaped/paper_dust' })
+
+    e.shaped('2x gtceu:paper_dust', [
+        'AAA',
+        ' B ' 
+    ], {
+        A: 'tfc:unrefined_paper',
+        B: '#forge:tools/mortars'
+    }).id('tfg:shaped/paper_dust_from_papyrus')
+    //#endregion
+
+    //#region Метан
+    e.remove({ id: 'gtceu:centrifuge/red_mushroom_separation' })
+    e.remove({ id: 'gtceu:centrifuge/brown_mushroom_separation' })
+    //#endregion
+
+    //#region Пыль какао-бобов
+    e.remove({ id: 'gtceu:macerator/macerate_cocoa' })
+    e.recipes.gtceu.assembler('tfg:macerate_cocoa')             
+        .itemInputs('firmalife:food/cocoa_beans')
+        .itemOutputs('gtceu:cocoa_dust')
+        .EUt(2).duration(400)
+    //#endregion
+
+    //#region Коксовая печь
+
+    //#region Контроллер
+    e.remove({ id: 'gtceu:shaped/coke_oven' })
     e.shaped('gtceu:coke_oven', [
         'ABA', 
         'BCB',
         'ABA'  
     ], {
         A: 'gtceu:coke_oven_bricks',
-        B: '#forge:plates/wrought_iron',  
+        B: '#tfg:all_iron_plates',  
         C: '#forge:tools/wrenches'  
-    }).id('gtceu:shaped/coke_oven')
+    }).id('tfg:shaped/coke_oven')
+    //#endregion
 
-    // Coke Oven Hatch
+    //#region Люк
+    e.remove({ id: 'gtceu:shaped/coke_oven_hatch' })
     e.shaped('gtceu:coke_oven_hatch', [
-        'AB'  
+        'ABC'  
     ], {
         A: 'gtceu:coke_oven_bricks',
-        B: '#tfc:barrels' 
-    }).id('gtceu:shaped/coke_oven_hatch')
+        B: '#tfc:barrels',
+        C: '#forge:chests/wooden'
+    }).id('tfg:shaped/coke_oven_hatch')
+    //#endregion
 
     //#endregion
 
-    //#region Выход: Слиток камня
+    //#region Одноблочный бронзовый бойлер
+    e.remove({ id: 'gtceu:shaped/steam_boiler_coal_bronze' })
 
-    e.remove({id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot'})
-
-    //#endregion
-
-    //#region Выход: Бронзовые машины (Плюс их декрафты)
-    
-    e.remove({ id: 'gtceu:shaped/bronze_hull' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_bronze_machine_casing' })
-    e.remove({ id: 'gtceu:macerator/macerate_bronze_machine_casing' })
-
-    e.remove({ id: 'gtceu:shaped/steam_extractor_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_extractor' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_extractor' })
-
-    e.remove({ id: 'gtceu:shaped/steam_macerator_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_macerator' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_macerator' })
-
-    e.remove({ id: 'gtceu:shaped/steam_compressor_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_compressor' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_compressor' })
-
-    e.remove({ id: 'gtceu:shaped/steam_hammer_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_forge_hammer' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_forge_hammer' })
-
-    e.remove({ id: 'gtceu:shaped/steam_furnace_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_furnace' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_furnace' })
-
-    e.remove({ id: 'gtceu:shaped/steam_alloy_smelter_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_alloy_smelter' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_alloy_smelter' })
-
-    e.remove({ id: 'gtceu:shaped/steam_rock_breaker_bronze' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_lp_steam_rock_crusher' })
-    e.remove({ id: 'gtceu:macerator/macerate_lp_steam_rock_crusher' })
-
-    e.remove({ id: 'gtceu:shaped/steam_miner' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_steam_miner' })
-    e.remove({ id: 'gtceu:macerator/macerate_steam_miner' })
-
-    // Low Pressure Steam Solid Boiler
     e.shaped('gtceu:lp_steam_solid_boiler', [
-        'AAA',
-        'ABA',
-        'ACA'
+        'AAA', 
+        'ACA',
+        'BDB'  
     ], {
         A: '#forge:plates/bronze',
-        B: '#forge:tools/wrenches',
-        C: 'gtceu:bronze_brick_casing'
-    }).id('gtceu:shaped/steam_boiler_coal_bronze')
-
+        B: 'minecraft:bricks',  
+        C: '#forge:tools/wrenches',
+        D: 'tfc:blast_furnace'
+    }).id('tfg:shaped/steam_boiler_coal_bronze')
     //#endregion
 
-    //#region Выход: Стальные машины
+    //#region Одноблочный стальной бойлер
+    e.remove({ id: 'gtceu:shaped/steam_boiler_coal_steel' })
 
-    // Экстрактор
-    e.shaped('gtceu:hp_steam_extractor', [
-        'BEB',
-        'CAC',
-        'DBD'
+    e.shaped('gtceu:hp_steam_solid_boiler', [
+        'AAA', 
+        'ACA',
+        'BDB'  
     ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron',
-        E: '#forge:glass_panes'
-    }).id('gtceu:shaped/steam_extractor_steel')
-
-    // Дробитель
-    e.shaped('gtceu:hp_steam_macerator', [
-        'CCC',
-        'BAB',
-        'DDD'
-    ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron'
-    }).id('gtceu:shaped/steam_macerator_steel')
-
-    // Компрессор
-    e.shaped('gtceu:hp_steam_compressor', [
-        'BCB',
-        'DAD',
-        'BBB'
-    ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron'
-    }).id('gtceu:shaped/steam_compressor_steel')
-
-    // Молот
-    e.shaped('gtceu:hp_steam_forge_hammer', [
-        'DDD',
-        'BAB',
-        'CCC'
-    ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron'
-    }).id('gtceu:shaped/steam_hammer_steel')
-
-    // Печь
-    e.shaped('gtceu:hp_steam_furnace', [
-        'BCB',
-        'DAD',
-        'BCB'
-    ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron'
-    }).id('gtceu:shaped/steam_furnace_steel')
-
-    // Сплавщик
-    e.shaped('gtceu:hp_steam_alloy_smelter', [
-        'DCD',
-        'DAD',
-        'DBD'
-    ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron'
-    }).id('gtceu:shaped/steam_alloy_smelter_steel')
-
-    // Блоко-ломатель
-    e.shaped('gtceu:hp_steam_rock_crusher', [
-        'DCD',
-        'BAB',
-        'DDD'
-    ], {
-        A: 'gtceu:steel_brick_casing',
-        B: 'gtceu:tin_alloy_small_fluid_pipe',
-        C: '#forge:plates/steel',
-        D: '#forge:plates/wrought_iron'
-    }).id('gtceu:shaped/steam_rock_breaker_steel')
-
+        A: '#forge:plates/steel',
+        B: 'minecraft:bricks',  
+        C: '#forge:tools/wrenches',
+        D: 'tfc:blast_furnace'
+    }).id('tfg:shaped/steam_boiler_coal_steel')
     //#endregion
 
-    //#region Выход: некоторые рецепты пылей
-
-    e.remove({id: 'gtceu:shapeless/dust_brass'})
-    e.remove({id: 'gtceu:shapeless/glass_dust_flint'})
-    e.remove({id: 'gtceu:shapeless/dust_bronze'})
-    e.remove({id: 'gtceu:shapeless/potin_dust'})
-
+    //#region Glass Tube
+    e.recipes.tfc.glassworking('gtceu:glass_tube', '#tfc:glass_batches_tier_3', ['blow', 'stretch', 'stretch'])
+        .id('tfg:glassworking/glass_tube')
     //#endregion
+
+    //#region Контроллер притивной доменной печи
+    e.remove({ id: 'gtceu:shaped/bronze_primitive_blast_furnace' })
+    //#endregion
+
+    //#region Крышка на бесконечную воду
+    e.remove('gtceu:assembler/cover_infinite_water')
+    //#endregion
+
+    //#region Бесконечный резервуар с водой
+    e.remove('gtceu:assembler/reservoir_hatch')
+    //#endregion
+
+    //#region Бочка
+    
+    //#endregion
+}
+
+const registerGregTechRecipes1 = (e) => {
+
+
+
+
+    
 
     //#region Вырезка из резины
 
@@ -2012,31 +1760,10 @@ const registerGregTechRecipes1 = (e) => {
 
     //#endregion
 
-    //#region Стеклодувка
 
-    // Glass Tube
-    e.recipes.tfc.glassworking('gtceu:glass_tube', '#tfc:glass_batches_tier_3', ['blow', 'stretch', 'stretch'])
-        .id('tfg:gtceu/glassworking/glass_tube')
 
-    //#endregion
 
-    // Удаление рецептов связанных с Primitive Blast Furnace
-    e.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
-    e.remove({ id: 'gtceu:macerator/macerate_primitive_blast_furnace' })
 
-    // Удаление рецепта беск. воды кавера
-    e.remove('gtceu:assembler/cover_infinite_water')
-
-    // Удаление рецептов помпы
-    e.remove('gtceu:shaped/pump_deck')
-    e.remove('gtceu:shaped/pump_hatch')
-    e.remove('gtceu:shaped/primitive_pump')
-
-    // Удаление рецептов связанных с Barrel
-    e.remove({ id: 'gtceu:shaped/wooden_barrel' })
-    e.remove({ id: 'gtceu:assembler/wood_barrel' })
-    e.remove({ id: 'gtceu:arc_furnace/arc_wood_drum' })
-    e.remove({ id: 'gtceu:macerator/macerate_wood_drum' })
  
     // Удаление рецептов связанных с FireBricks
     e.remove({id: 'gtceu:shaped/casing_primitive_bricks' })
@@ -2114,17 +1841,7 @@ const registerGregTechRecipes1 = (e) => {
         .duration(15)
         .EUt(2)
 
-    // Steel Steam Boiler
-    e.shaped('gtceu:hp_steam_solid_boiler', [
-        'AAA', 
-        'ACA',
-        'BDB'  
-    ], {
-        A: '#forge:plates/steel',
-        B: 'minecraft:bricks',  
-        C: '#forge:tools/wrenches',
-        D: 'tfc:blast_furnace'
-    }).id('gtceu:shaped/steam_boiler_coal_steel')
+    
 
     // Multi-Smelter
     e.shaped('gtceu:multi_smelter', [
@@ -2210,3 +1927,223 @@ const registerGregTechRecipes1 = (e) => {
         .duration(480)
         .EUt(7)
 }
+
+//#region Выход: Крошечная кучка камня
+
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_button' })
+
+    //#endregion
+    
+    //#region Выход: Маленькая кучка камня
+
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_stairs' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_slab' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_brick_stairs' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_brick_slab' })
+    // e.remove({ id: 'gtceu:macerator/macerate_sandstone_stairs' })
+    // e.remove({ id: 'gtceu:macerator/macerate_sandstone_slab' })
+    // e.remove({ id: 'gtceu:macerator/macerate_red_sandstone_stairs' })
+    // e.remove({ id: 'gtceu:macerator/macerate_red_sandstone_slab' })
+    // e.remove({ id: 'gtceu:macerator/macerate_granite' })
+    // e.remove({ id: 'gtceu:macerator/macerate_diorite' })
+    // e.remove({ id: 'gtceu:macerator/macerate_cobblestone_slab' })
+    // e.remove({ id: 'gtceu:macerator/macerate_andesite' })
+
+    //#endregion
+    
+    //#region Выход: Кучка камня
+
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_sword' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_shovel' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_pressure_plate' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_pickaxe' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_hoe' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_bricks' })
+    // e.remove({ id: 'gtceu:macerator/macerate_stone_axe' })
+    // e.remove({ id: 'gtceu:macerator/macerate_mossy_cobblestone' })
+    // e.remove({ id: 'gtceu:macerator/macerate_cobblestone_wall' })
+    // e.remove({ id: 'gtceu:macerator/macerate_cobblestone' })
+    // e.remove({ id: 'gtceu:macerator/gravel_to_flint' })
+    // e.remove({ id: 'gtceu:macerator/macerate_furnace' })
+
+    //#endregion
+
+        //#region Выход: Крошечная кучка дерева
+
+    // e.remove({ id: 'gtceu:macerator/macerate_warped_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_spruce_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_oak_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_mangrove_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_jungle_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_dark_oak_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_crimson_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_cherry_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_birch_button' })
+    // e.remove({ id: 'gtceu:macerator/macerate_acacia_button' })
+
+    //#endregion
+
+    //#region Выход: Маленькая кучка дерева
+
+//    e.remove({ id: 'gtceu:macerator/macerate_wooden_sword' })
+//    e.remove({ id: 'gtceu:macerator/macerate_wooden_shovel' })
+//    e.remove({ id: 'gtceu:macerator/macerate_wooden_pickaxe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_wooden_hoe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_wooden_axe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_warped_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_warped_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_spruce_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_spruce_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_oak_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_oak_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_mangrove_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_mangrove_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_jungle_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_jungle_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_iron_sword' })
+//    e.remove({ id: 'gtceu:macerator/macerate_iron_shovel' })
+//    e.remove({ id: 'gtceu:macerator/macerate_iron_pickaxe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_iron_hoe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_iron_axe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_golden_sword' })
+//    e.remove({ id: 'gtceu:macerator/macerate_golden_shovel' })
+//    e.remove({ id: 'gtceu:macerator/macerate_golden_pickaxe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_golden_hoe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_golden_axe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_diamond_sword' })
+//    e.remove({ id: 'gtceu:macerator/macerate_diamond_shovel' })
+//    e.remove({ id: 'gtceu:macerator/macerate_diamond_pickaxe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_diamond_hoe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_diamond_axe' })
+//    e.remove({ id: 'gtceu:macerator/macerate_dark_oak_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_dark_oak_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_crimson_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_crimson_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_cherry_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_cherry_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_birch_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_birch_slab' })
+//    e.remove({ id: 'gtceu:macerator/macerate_acacia_stairs' })
+//    e.remove({ id: 'gtceu:macerator/macerate_acacia_slab' })
+
+   //#endregion
+
+    //#region Выход: Деревянная пыль
+
+    // e.remove({id: 'gtceu:macerator/macerate_trapped_chest'})
+    // e.remove({id: 'gtceu:macerator/macerate_spruce_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_spruce_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_spruce_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_spruce_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_spruce_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_oak_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_oak_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_oak_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_oak_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_oak_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_mangrove_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_mangrove_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_mangrove_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_mangrove_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_mangrove_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_jungle_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_jungle_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_jungle_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_jungle_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_jungle_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_dark_oak_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_dark_oak_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_dark_oak_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_dark_oak_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_dark_oak_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_crafting_table'})
+    // e.remove({id: 'gtceu:macerator/macerate_chest'})
+    // e.remove({id: 'gtceu:macerator/macerate_chest_minecart'})
+    // e.remove({id: 'gtceu:macerator/macerate_cherry_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_cherry_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_cherry_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_cherry_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_cherry_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_bookshelf'})
+    // e.remove({id: 'gtceu:macerator/macerate_birch_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_birch_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_birch_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_birch_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_birch_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_acacia_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_acacia_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_acacia_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_acacia_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_acacia_boat'})
+    // e.remove({id: 'gtceu:macerator/macerate_bamboo_raft'})
+    // e.remove({id: 'gtceu:macerator/macerate_crimson_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_crimson_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_crimson_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_crimson_planks'})
+    // e.remove({id: 'gtceu:macerator/macerate_warped_door'})
+    // e.remove({id: 'gtceu:macerator/macerate_warped_fence'})
+    // e.remove({id: 'gtceu:macerator/macerate_warped_fence_gate'})
+    // e.remove({id: 'gtceu:macerator/macerate_warped_planks'})
+
+    //#endregion
+
+     //#endregion
+
+    //#region Выход: Железная пыль
+
+    // e.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
+    // e.remove({ id: 'gtceu:macerator/macerate_damaged_anvil' })
+    // e.remove({ id: 'gtceu:macerator/macerate_chipped_anvil' })
+    // e.remove({ id: 'gtceu:macerator/macerate_anvil' })
+    // e.remove({ id: 'gtceu:macerator/macerate_furnace_minecart' })
+    // e.remove({ id: 'gtceu:macerator/macerate_bucket' })
+    // e.remove({ id: 'gtceu:macerator/macerate_compass' })
+
+    //#endregion
+
+    //#region Выход: Крошечная железная пыль
+
+    // e.remove({ id: 'gtceu:macerator/macerate_iron_bars' })
+
+    //#endregion
+
+    //#region Выход: Крошечная пыль золы
+
+    // e.remove({ id: 'gtceu:arc_furnace/arc_bookshelf' })
+
+    //#endregion
+
+    //#region Выход: Пыль незерака
+
+    // e.remove({ id: 'gtceu:macerator/macerate_nether_brick_stairs' })
+    // e.remove({ id: 'gtceu:macerator/macerate_nether_brick_slab' })
+
+    //#endregion
+
+    //#region Выход: Пыль базальта
+
+    // e.remove({ id: 'gtceu:macerator/macerate_basalt' })
+
+        //#region Выход: Кованные самородки
+
+        // e.remove({ id: 'gtceu:arc_furnace/arc_iron_bars' })
+
+    //#endregion
+
+        //#region Выход: Слиток кованного железа
+
+    // e.remove({ id: 'gtceu:arc_furnace/arc_chest_minecart' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_damaged_anvil' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_chipped_anvil' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_furnace_minecart' })
+    // e.remove({ id: 'gtceu:arc_furnace/arc_compass' })
+    
+    //#endregion
+
+    //#region Выход: Слиток камня
+
+    // e.remove({id: 'gtceu:alloy_smelter/alloy_smelt_stone_to_ingot'})
+// 
+    //#endregion

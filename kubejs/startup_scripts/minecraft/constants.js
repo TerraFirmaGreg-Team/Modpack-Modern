@@ -192,6 +192,42 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:bamboo_chest_raft',
     //#endregion
 
+    //#region Кримзон
+    'minecraft:crimson_stem', 
+    'minecraft:crimson_hyphae', 
+    'minecraft:stripped_crimson_stem', 
+    'minecraft:stripped_crimson_hyphae', 
+    'minecraft:crimson_planks', 
+    'minecraft:crimson_stairs', 
+    'minecraft:crimson_slab', 
+    'minecraft:crimson_fence', 
+    'minecraft:crimson_fence_gate', 
+    'minecraft:crimson_door', 
+    'minecraft:crimson_trapdoor', 
+    'minecraft:crimson_pressure_plate', 
+    'minecraft:crimson_button',
+    'minecraft:crimson_sign',
+    'minecraft:crimson_hanging_sign',
+    //#endregion
+
+    //#region Варпед
+    'minecraft:warped_stem', 
+    'minecraft:warped_hyphae', 
+    'minecraft:stripped_warped_stem', 
+    'minecraft:stripped_warped_hyphae', 
+    'minecraft:warped_planks', 
+    'minecraft:warped_stairs', 
+    'minecraft:warped_slab', 
+    'minecraft:warped_fence', 
+    'minecraft:warped_fence_gate', 
+    'minecraft:warped_door', 
+    'minecraft:warped_trapdoor', 
+    'minecraft:warped_pressure_plate', 
+    'minecraft:warped_button',
+    'minecraft:warped_sign',
+    'minecraft:warped_hanging_sign',
+    //#endregion
+
     //#endregion
 
     //#region Зараженные блоки
@@ -1414,37 +1450,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     // 'minecraft:iron_bars',
     // 'minecraft:honeycomb',
 
-    // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
-    // 'minecraft:crimson_stem', 
-    // 'minecraft:crimson_hyphae', 
-    // 'minecraft:stripped_crimson_stem', 
-    // 'minecraft:stripped_crimson_hyphae', 
-    // 'minecraft:crimson_planks', 
-    // 'minecraft:crimson_stairs', 
-    // 'minecraft:crimson_slab', 
-    // 'minecraft:crimson_fence', 
-    // 'minecraft:crimson_fence_gate', 
-    // 'minecraft:crimson_door', 
-    // 'minecraft:crimson_trapdoor', 
-    // 'minecraft:crimson_pressure_plate', 
-    // 'minecraft:crimson_button',
-
-    // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
-    // 'minecraft:warped_stem', 
-    // 'minecraft:warped_hyphae', 
-    // 'minecraft:stripped_warped_stem', 
-    // 'minecraft:stripped_warped_hyphae', 
-    // 'minecraft:warped_planks', 
-    // 'minecraft:warped_stairs', 
-    // 'minecraft:warped_slab', 
-    // 'minecraft:warped_fence', 
-    // 'minecraft:warped_fence_gate', 
-    // 'minecraft:warped_door', 
-    // 'minecraft:warped_trapdoor', 
-    // 'minecraft:warped_pressure_plate', 
-    // 'minecraft:warped_button',
+    
 
     // Куча незер блоков
     // TODO: Разблокировать после добавления ада
@@ -1543,7 +1549,7 @@ global.MINECRAFT_NETHER_WOOD_TYPES = [
     "warped" // TODO: Разблокировать когда появится АД
 ];
 
-global.MINECRAFT_ALL_WOOD_TYPES = global.MINECRAFT_OVERWORLD_WOOD_TYPES.concat(global.VANILLA_NETHER_WOOD_TYPES);
+global.MINECRAFT_ALL_WOOD_TYPES = global.MINECRAFT_OVERWORLD_WOOD_TYPES.concat(global.MINECRAFT_NETHER_WOOD_TYPES);
 
 global.MINECRAFT_STONE_TYPES = [
     "sand",

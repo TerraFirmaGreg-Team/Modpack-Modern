@@ -128,6 +128,91 @@ const registerAlekiRoofsRecipes = (e) => {
     e.remove({ id: 'alekiroofs:crafting/waxed_oxidized_cut_copper_roofing' })
     e.remove({ id: 'alekiroofs:crafting/waxed_oxidized_cut_copper_roofing_from_honeycomb' })
     e.remove({ id: 'alekiroofs:stonecutting/crafting/waxed_oxidized_cut_copper_roofing_from_stonecutting' })
+
+    //#region Дерево
+    global.MINECRAFT_ALL_WOOD_TYPES.forEach(woodName => {
+        
+        // Roofs
+        e.remove({ id: `alekiroofs:crafting/${woodName}_roofing` })
+    })
+
+    //#region Бамбук
+    const woodName = 'bamboo'
+
+    const plank = Item.of(`minecraft:${woodName}_planks`)
+    const plankMosaic = Item.of(`minecraft:${woodName}_mosaic`)
+
+    const fence = Item.of(`minecraft:${woodName}_fence`)
+
+    const roofing = Item.of(`alekiroofs:${woodName}_roofing`)
+    const roofingMosaic = Item.of(`alekiroofs:${woodName}_mosaic_roofing`)
+
+    //#region Крыша
+    e.remove({ id: `alekiroofs:crafting/${woodName}_roofing` })
+    
+    e.shaped(roofing.copyWithCount(2), [
+        'A ',
+        ' s'  
+    ], {
+        A: plank,
+        s: '#forge:tools/saws'
+    }).id(`tfg:workbench/${woodName}_roofing_saw`)
+
+    e.recipes.create.cutting([fence, Item.of('1x gtceu:wood_dust')], plank)
+        .id(`tfg:create_cutting/${woodName}_roofing`)
+
+    e.recipes.gtceu.cutter(`tfg:${woodName}_roofing`)             
+        .itemInputs(plank)
+        .circuit(4)
+        .itemOutputs(roofing.copyWithCount(2))
+        .itemOutputs('1x gtceu:wood_dust')
+        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    //#endregion
+
+    //#region Мозаичная крыша
+    e.remove({ id: `alekiroofs:crafting/${woodName}_mosaic_roofing` })
+
+    //#region Через обычные
+    e.shaped(roofingMosaic, [
+        'A ',
+        ' s'
+    ], {
+        A: roofing,
+        s: 'forge:tools/saws'
+    }).id(`tfg:workbench/${woodName}_mosaic_roofing`)
+
+    e.recipes.gtceu.laser_engraver(`tfg:${woodName}_mosaic_roofing`)             
+        .itemInputs(roofing)
+        .notConsumable('#forge:lenses/white')
+        .itemOutputs(roofingMosaic)
+        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    //#endregion
+
+    //#region Через мозаичные
+    e.shaped(roofingMosaic.copyWithCount(2), [
+        'sA'  
+    ], {
+        A: roofingMosaic,
+        s: '#forge:tools/saws'
+    }).id(`tfg:workbench/${woodName}_mosaic_roofing_saw`)
+
+    e.recipes.create.cutting(roofingMosaic.copyWithCount(2), plankMosaic)
+        .id(`tfg:create_cutting/${woodName}_mosaic_roofing_from_planks`)
+
+    e.recipes.gtceu.cutter(`tfg:${woodName}_mosaic_roofing_from_planks`)             
+        .itemInputs(plankMosaic)
+        .circuit(2)
+        .itemOutputs(roofingMosaic.copyWithCount(2))
+        .EUt(GTValues.VA[GTValues.ULV]).duration(200)
+    //#endregion
+
+    //#endregion
+
+    //#endregion
+
+    //#endregion
+
+
     // e.remove({ id: '' })
     // e.remove({ id: '' })
     // e.remove({ id: '' })

@@ -101,6 +101,7 @@ TFCEvents.data(event => {
  */
 ServerEvents.recipes(event => {
     // registerAE2Recipes(event)
+    registerAdvancedPeripheralsRecipes(event)
     registerAlekiRoofsRecipes(event)
     // registerAsticorCartsRecipes(event)
     // registerAE2InsertExportCardRecipes(event)
@@ -108,7 +109,7 @@ ServerEvents.recipes(event => {
     // registerAE2WTLibRecipes(event)
     // registerChiselAndBitsRecipes(event)
     // registerComputerCraftRecipes(event)
-    // registerCreateRecipes(event)
+    registerCreateRecipes(event)
     // registerCreateAdditionsRecipes(event)
     // registerCreateConnectedRecipes(event)
     // registerExtendedAE2Recipes(event)
@@ -125,7 +126,9 @@ ServerEvents.recipes(event => {
     // registerMERequesterRecipes(event)
     registerMinecraftRecipes(event)
     // registerMoreRedRecipes(event)
-    // registerRailWaysRecipes(event)
+    registerRailWaysRecipes(event)
+    registerRFToolsRecipes(event)
+    registerStorageDrawersRecipes(event)
     // registerSophisticatedBackpacksRecipes(event)
     // registerTfceaRecipes(event)
     registerTFCRecipes(event)
