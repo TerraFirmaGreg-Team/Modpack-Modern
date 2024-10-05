@@ -1185,6 +1185,64 @@ const registerGregTechRecipes = (e) => {
 
     //#endregion
 
+    //#region Сталь
+
+    //#region Слиток
+
+    //#region Из LV Machine Casing
+    e.remove({ id: 'gtceu:arc_furnace/arc_lv_machine_casing' })
+    
+    e.recipes.gtceu.arc_furnace('tfg:arc_lv_machine_casing')             
+        .itemInputs('gtceu:lv_machine_casing')
+        .itemOutputs('4x gtceu:red_steel_ingot')
+        .itemOutputs('4x gtceu:blue_steel_ingot')
+        .EUt(30).duration(140)
+    
+    //#endregion
+
+    //#region Из LV Machine Hull
+    e.remove({ id: 'gtceu:arc_furnace/arc_lv_machine_hull' })
+    
+    e.recipes.gtceu.arc_furnace('tfg:arc_lv_machine_casing')             
+        .itemInputs('gtceu:lv_machine_hull')
+        .itemOutputs('4x gtceu:red_steel_ingot')
+        .itemOutputs('4x gtceu:blue_steel_ingot')
+        .itemOutputs('gtceu:tin_ingot')
+        .itemOutputs('gtceu:small_ash_dust')
+        .EUt(30).duration(140)
+    
+    //#endregion
+
+    //#endregion
+
+    //#region Пыль
+    
+    //#region Из LV Machine Casing
+    e.remove({ id: 'gtceu:macerator/macerate_lv_machine_casing' })
+
+    e.recipes.gtceu.macerator('tfg:macerate_lv_machine_casing')             
+    .itemInputs('gtceu:lv_machine_casing')
+        .itemOutputs('4x gtceu:red_steel_dust')
+        .itemOutputs('4x gtceu:blue_steel_dust')
+        .EUt(30).duration(140)
+    //#endregion
+
+    //#region Из LV Machine Hull
+    e.remove({ id: 'gtceu:macerator/macerate_lv_machine_hull' })
+
+    e.recipes.gtceu.macerator('tfg:macerate_lv_machine_casing')             
+    .itemInputs('gtceu:lv_machine_hull')
+        .itemOutputs('4x gtceu:red_steel_dust')
+        .itemOutputs('4x gtceu:blue_steel_dust')
+        .itemOutputs('2x gtceu:rubber_dust')
+        .itemOutputs('gtceu:tin_dust')
+        .EUt(30).duration(140)
+    //#endregion
+    
+    //#endregion
+
+    //#endregion
+
     //#region Кованное железо
 
     //#region Слиток
@@ -1253,6 +1311,41 @@ const registerGregTechRecipes = (e) => {
     e.remove('gtceu:shaped/pump_deck')
     e.remove('gtceu:shaped/pump_hatch')
     e.remove('gtceu:shaped/primitive_pump')
+    //#endregion
+
+    //#region LV Casing
+    e.remove({ id: 'gtceu:shaped/casing_lv' })
+    e.shaped('gtceu:lv_machine_casing', [
+        'ABA',
+        'BwB',
+        'ABA' 
+    ], {
+        A: '#forge:plates/red_steel',
+        B: '#forge:plates/blue_steel',
+        w: '#forge:tools/wrenches',
+    }).id('tfg:shaped/lv_machine_casing')
+
+    e.remove({ id: 'gtceu:assembler/casing_lv' })
+    e.recipes.gtceu.mixer('tfg:casing_lv')             
+        .itemInputs('4x #forge:plates/red_steel')
+        .itemInputs('4x #forge:plates/blue_steel')
+        .circuit(8)
+        .itemOutputs('gtceu:lv_machine_casing')
+        .EUt(16).duration(30)
+    //#endregion
+
+    //#region LV Hull
+    e.remove({ id: 'gtceu:shaped/lv_machine_hull' })
+    e.shaped('gtceu:lv_machine_hull', [
+        'ABC',
+        'DED',
+    ], {
+        A: '#forge:plates/red_steel',
+        B: '#forge:plates/blue_steel',
+        C: '#forge:plates/black_steel',
+        D: 'gtceu:tin_single_cable',
+        E: 'gtceu:lv_machine_casing',
+    }).id('tfg:shaped/lv_machine_casing')
     //#endregion
 
     //#region Assembly Line Grating
@@ -1658,6 +1751,8 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:compressor/plant_ball_from_sugar_cane' })
     e.remove({ id: 'gtceu:compressor/plant_ball_from_moss' })
     e.remove({ id: 'gtceu:compressor/plant_ball_from_carrot' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_fire_coral' })
+    e.remove({ id: 'gtceu:compressor/plant_ball_from_tube_coral' })
 
     e.recipes.gtceu.compressor('tfg:plant_ball_from_tfc_seeds')             
         .itemInputs('8x #tfc:seeds')
@@ -1675,11 +1770,6 @@ const registerGregTechRecipes = (e) => {
         .EUt(2).duration(300)
 
     e.recipes.gtceu.compressor('tfg:plant_ball_from_tfc_corals')             
-        .itemInputs('8x #tfc:corals')
-        .itemOutputs('gtceu:plant_ball')
-        .EUt(2).duration(300)
-
-    e.recipes.gtceu.compressor('tfg:plant_ball_from_beneath_')             
         .itemInputs('8x #tfc:corals')
         .itemOutputs('gtceu:plant_ball')
         .EUt(2).duration(300)
@@ -1720,24 +1810,28 @@ const registerGregTechRecipes = (e) => {
 
     e.recipes.gtceu.brewery('tfg:biomass_from_tfc_seeds')             
         .itemInputs('#tfc:seeds')
+        .inputFluids(Fluid.of('minecraft:water', 20))
         .outputFluids(Fluid.of('gtceu:biomass', 20))
         .EUt(3).duration(128)
         
 
     e.recipes.gtceu.brewery('tfg:biomass_from_tfc_food')             
         .itemInputs('#tfc:foods')
+        .inputFluids(Fluid.of('minecraft:water', 20))
         .outputFluids(Fluid.of('gtceu:biomass', 20))
         .EUt(3).duration(128)
         
 
     e.recipes.gtceu.brewery('tfg:biomass_from_tfc_plants')             
         .itemInputs('#tfc:plants')
+        .inputFluids(Fluid.of('minecraft:water', 20))
         .outputFluids(Fluid.of('gtceu:biomass', 20))
         .EUt(3).duration(128)
         
 
     e.recipes.gtceu.brewery('tfg:biomass_from_tfc_corals')             
         .itemInputs('#tfc:corals')
+        .inputFluids(Fluid.of('minecraft:water', 20))
         .outputFluids(Fluid.of('gtceu:biomass', 20))
         .EUt(3).duration(128)
         
