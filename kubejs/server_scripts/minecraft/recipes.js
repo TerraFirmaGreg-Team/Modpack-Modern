@@ -2543,7 +2543,7 @@ const registerMinecraftRecipes = (e) => {
 
     e.shaped('minecraft:redstone_torch', [
         'A',
-        'B '
+        'B'
     ], {
         A: 'tfc:dead_torch', 
         B: 'minecraft:redstone'
@@ -2966,7 +2966,7 @@ const registerMinecraftRecipes = (e) => {
     e.shaped('minecraft:comparator', [
         'DAD',
         'ABA',
-        'CCC'
+        'CsC'
     ], {
         A: 'minecraft:redstone_torch',
         B: '#forge:plates/quartzite',
@@ -2978,7 +2978,7 @@ const registerMinecraftRecipes = (e) => {
     e.shaped('minecraft:comparator', [
         'DAD',
         'ABA',
-        'CCC'
+        'CsC'
     ], {
         A: 'minecraft:redstone_torch',
         B: '#forge:plates/nether_quartz',
