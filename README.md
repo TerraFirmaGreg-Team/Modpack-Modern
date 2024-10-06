@@ -2,15 +2,15 @@
 
 <div align="center">
   <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="75">
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="100">
   </a>
   <br/>
 
   <a href="https://discord.com/invite/AEaCzCTUwQ">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/social/discord-singular_vector.svg" alt="Chat on Discord"></a>
+  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
 
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
+  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on СurseForge" height="50"></a>
   <br/>
   <p align="center">
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki">Explore the wiki</a>
@@ -24,7 +24,7 @@
 </div>
 <br/>
 
-![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/terrafirmagreg-og.png?raw=true)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_large.png?raw=true)
 
 ***
 
