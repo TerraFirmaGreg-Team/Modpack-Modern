@@ -1,8 +1,10 @@
-name: Build
-run-name: "Build #${{ github.run_number }}"
+name: Release
+run-name: "Release #${{ github.run_number }}"
 
 on:
   push:
+    branches:
+      - main
     tags:
       - "*.*.*"
 
