@@ -24,7 +24,7 @@
 </div>
 <br/>
 
-![logotfg](https://user-images.githubusercontent.com/52341158/131987786-bf99e1af-318c-4ed4-a6f8-c4617d692adb.png)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/terrafirmagreg-og.png?raw=true)
 
 ***
 
