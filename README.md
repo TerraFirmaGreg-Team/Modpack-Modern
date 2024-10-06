@@ -45,4 +45,4 @@ Also in the modpack there are other interesting mods that will allow you to pass
 
 and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
 
-![img](https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/assets/55663835/0a71cfbf-c519-45b8-820c-c5ad6bf90e46)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
