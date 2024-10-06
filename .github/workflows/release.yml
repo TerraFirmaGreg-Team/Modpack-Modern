@@ -283,10 +283,10 @@ jobs:
         with:
           webhook-url: ${{secrets.RELEASES_1_20}}
           username: "TerraFirmaGreg"
-          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge.png"
+          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
           embed-title: Release ${{ needs.info.outputs.project_version }}
           embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}
-          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png
+          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png
           embed-description: |
             **Release Type**: `${{ env.RELEASE_TYPE }}`
             **GameVersion**: `${{ needs.info.outputs.mc_version }}`
