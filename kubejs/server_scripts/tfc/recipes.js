@@ -1851,7 +1851,7 @@ const registerTFCRecipes = (event) => {
         // Кирпич -> Блок кирпичей
         event.recipes.gtceu.assembler(`bricks_${stone}`)             
             .itemInputs(`5x tfc:brick/${stone}`)
-            .circuit(0)
+            .circuit(1)
             .inputFluids(Fluid.of('gtceu:concrete', 72))
             .itemOutputs(`4x tfc:rock/bricks/${stone}`)
             .duration(50)
@@ -1989,7 +1989,7 @@ const registerTFCRecipes = (event) => {
 
         event.recipes.gtceu.assembler(`aqueduct_${stone}`)             
             .itemInputs(`3x tfc:brick/${stone}`)
-            .circuit(1)
+            .circuit(2)
             .inputFluids(Fluid.of('gtceu:concrete', 16))
             .itemOutputs(`tfc:rock/aqueduct/${stone}`)
             .duration(50)
@@ -3309,4 +3309,35 @@ const registerTFCRecipes = (event) => {
     }
     
     //#endregion
+
+    //bars
+    for (var i = 0; i < 9; i++ ) {
+        event.recipes.gtceu.assembler(global.TFC_METAL_FOR_BARS[i] + '_bars')
+            .itemInputs(`#forge:plates/${global.TFC_METAL_FOR_BARS[i]}`)
+            .itemOutputs(`8x tfc:metal/bars/${global.TFC_METAL_FOR_BARS[i]}`)
+            .circuit(16)
+            .duration(50)
+            .EUt(16)
+    }
+
+    //Fire bricks
+    event.recipes.gtceu.compressor('fire_bricks')             
+        .itemInputs('4x tfc:ceramic/fire_brick')
+        .itemOutputs('2x tfc:fire_bricks')
+        .duration(800)
+        .EUt(2)
+
+    event.recipes.gtceu.extractor('fire_bricks_to_ceramic_fire_brick')             
+        .itemInputs('tfc:fire_bricks')
+        .itemOutputs('2x tfc:ceramic/fire_brick')
+        .duration(800)
+        .EUt(2)
+
+    //fire brick
+    event.recipes.gtceu.alloy_smelter('fire_bricks')             
+        .itemInputs('tfc:fire_clay')
+        .notConsumable('gtceu:ingot_casting_mold')
+        .itemOutputs('tfc:ceramic/fire_brick')
+        .duration(800)
+        .EUt(2)
 }
