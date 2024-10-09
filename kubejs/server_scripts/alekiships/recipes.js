@@ -13,6 +13,7 @@ const registerAlekiShipsRecipes = (e) => {
         .itemOutputs('alekiships:oarlock')
         .EUt(4).duration(75)
 
+    e.remove({ id: 'firmaciv:heating/oarlock' })
     e.recipes.tfc.heating('alekiships:oarlock', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
         .id(`tfg:heating/oarlock`)
@@ -27,6 +28,7 @@ const registerAlekiShipsRecipes = (e) => {
         .itemOutputs('alekiships:cleat')
         .EUt(4).duration(75)
 
+    e.remove({ id: 'firmaciv:heating/cleat' })
     e.recipes.tfc.heating('alekiships:cleat', 1535)
         .resultFluid(Fluid.of('gtceu:steel', 288))
         .id(`tfg:heating/alekiships/cleat`)
@@ -41,6 +43,7 @@ const registerAlekiShipsRecipes = (e) => {
         .itemOutputs('alekiships:anchor')
         .EUt(4).duration(75)
 
+    e.remove({ id: 'firmaciv:heating/anchor' })
     e.recipes.tfc.heating('alekiships:anchor', 1535)
         .resultFluid(Fluid.of('gtceu:steel', 288))
         .id(`tfg:heating/alekiships/anchor`)
@@ -55,6 +58,7 @@ const registerAlekiShipsRecipes = (e) => {
         .itemOutputs('alekiships:cannonball')
         .EUt(4).duration(75)
 
+    e.remove({ id: 'firmaciv:heating/cannonball' })
     e.recipes.tfc.heating('alekiships:cannonball', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
         .id(`tfg:heating/alekiships/cannonball`)
