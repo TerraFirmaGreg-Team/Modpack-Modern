@@ -28,7 +28,7 @@
         },
         {
             "category": "emi:world_interaction",
-            "id": "/emi:\/world\/stripping\/minecraft\//"
+            "id": "/emi:\/world\/stripping\/minecraft/"
         },
 
         {
@@ -38,11 +38,11 @@
 
         {
             "category": "emi:world_interaction",
-            "id": "/emi:\/world\/tilling\/minecraft\//"
+            "id": "/emi:\/world\/tilling\/minecraft/"
         },
         {
             "category": "emi:world_interaction",
-            "id": "/emi:\/world\/flattening\/minecraft\/grass_block\//"
+            "id": "/emi:\/world\/flattening\/minecraft/"
         },
 
         {
@@ -60,12 +60,17 @@
 
         {
             "category": "emi:world_interaction",
-            "id": "/emi:\/emi\/bucket_filling\/minecraft\//"
+            "id": "/emi:\/emi\/bucket_filling\/minecraft/"
         },
 
         {
             "category": "emi:world_interaction",
             "id": "emi:/world/unique/minecraft/water_bottle"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/unique/minecraft/mud"
         }
     ]
 }

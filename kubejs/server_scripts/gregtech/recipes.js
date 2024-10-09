@@ -1157,6 +1157,18 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
     //#endregion
 
+    //#region Из наковальни
+    e.remove({ id: 'gtceu:macerator/macerate_anvil' })
+    //#endregion
+
+    //#region Из поломанной наковальни
+    e.remove({ id: 'gtceu:macerator/macerate_chipped_anvil' })
+    //#endregion
+
+    //#region Из разрушенной наковальни
+    e.remove({ id: 'gtceu:macerator/macerate_damaged_anvil' })
+    //#endregion
+
     //#endregion
 
     //#region Маленькая пыль
@@ -1250,6 +1262,22 @@ const registerGregTechRecipes = (e) => {
     
     //#region Из люка
     e.remove({ id: 'gtceu:arc_furnace/arc_iron_trapdoor' })
+    //#endregion
+
+    //#region Из люка
+    e.remove({ id: 'gtceu:macerator/macerate_iron_trapdoor' })
+    //#endregion
+
+    //#region Из наковальни
+    e.remove({ id: 'gtceu:arc_furnace/arc_anvil' })
+    //#endregion
+
+    //#region Из поломанной наковальни
+    e.remove({ id: 'gtceu:arc_furnace/arc_chipped_anvil' })
+    //#endregion
+
+    //#region Из разрушенной наковальни
+    e.remove({ id: 'gtceu:arc_furnace/arc_damaged_anvil' })
     //#endregion
 
     //#endregion
@@ -1347,6 +1375,32 @@ const registerGregTechRecipes = (e) => {
         D: 'gtceu:tin_single_cable',
         E: 'gtceu:lv_machine_casing',
     }).id('tfg:shaped/lv_machine_hull')
+    //#endregion
+
+    //#region Бронзовая печь
+    e.remove({ id: 'gtceu:shaped/steam_furnace_bronze' })
+    e.shaped('gtceu:lp_steam_furnace', [
+        'AAA',
+        'ABA',
+        'ACA' 
+    ], {
+        A: 'gtceu:bronze_small_fluid_pipe',
+        B: 'gtceu:bronze_brick_casing',
+        C: '#forge:double_sheets/any_bronze',
+    }).id('tfg:shaped/steam_furnace_bronze')
+    //#endregion
+
+    //#region Бронзовый сплавщик
+    e.remove({ id: 'gtceu:shaped/steam_alloy_smelter_bronze' })
+    e.shaped('gtceu:lp_steam_alloy_smelter', [
+        'AAA',
+        'ABA',
+        'ACA' 
+    ], {
+        A: 'gtceu:bronze_small_fluid_pipe',
+        B: 'gtceu:bronze_brick_casing',
+        C: '#forge:double_sheets/any_bronze',
+    }).id('tfg:shaped/steam_alloy_smelter_bronze')
     //#endregion
 
     //#region Assembly Line Grating
@@ -1492,6 +1546,18 @@ const registerGregTechRecipes = (e) => {
     //#endregion
 
     //#region Forge Hammers
+    e.remove({ id: 'gtceu:shaped/steam_hammer_bronze' })
+    e.shaped('gtceu:lp_steam_forge_hammer', [
+        'ABA',
+        'ACA',
+        'ADA'
+    ], {
+        A: 'gtceu:bronze_small_fluid_pipe',
+        B: '#forge:pistons',
+        C: 'gtceu:bronze_machine_casing',
+        D: '#tfg:tier_2_anvil',
+    }).id('tfg:shaped/steam_hammer_bronze')
+
     e.remove({ id: 'gtceu:shaped/lv_forge_hammer' })
     e.shaped('gtceu:lv_forge_hammer', [
         'ABA',
@@ -1599,9 +1665,8 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:shaped/uhv_forge_hammer' })
     e.remove({ id: 'gtceu:shaped/uev_forge_hammer' })
     e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
-    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
-    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
-    e.remove({ id: 'gtceu:shaped/uiv_forge_hammer' })
+    e.remove({ id: 'gtceu:shaped/uxv_forge_hammerr' })
+    e.remove({ id: 'gtceu:shaped/opv_forge_hammer' })
     //#endregion
 
     //#region Удобрение
@@ -2163,6 +2228,10 @@ const registerGregTechRecipes = (e) => {
 
     //#region Уплотненная огнеупорная глина
     e.remove({ id: 'gtceu:compressor/compressed_fireclay' })
+    //#endregion
+
+    //#region Кальцитовая пыль
+    e.remove({ id: 'gtceu:macerator/macerate_calcite' })
     //#endregion
 
     //#region TODO: Не работает из-за магического бага / Вырезка из резины

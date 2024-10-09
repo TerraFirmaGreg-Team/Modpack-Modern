@@ -178,4 +178,10 @@ const registerTFCFoodData = (event) => {
         food.fruit(2)
         food.decayModifier(0.2)
     })
+
+    event.foodItem('minecraft:golden_carrot', food => {
+        food.hunger(8)
+        food.vegetables(1)
+        food.decayModifier(0.1)
+    })
 }

@@ -605,11 +605,9 @@ const registerMinecraftRecipes = (e) => {
         //#endregion
     
         //#region Табличка
-        e.remove({ id: `minecraft:${woodName}_sign` })
-        e.remove({ id: `gtceu:shaped/${woodName}_sign_steel` })
         e.remove({ id: `gtceu:shaped/${woodName}_sign_iron` })
+        e.remove({ id: `gtceu:shaped/${woodName}_sign_steel` })
         e.remove({ id: `gtceu:assembler/${woodName}_sign_steel` })
-        e.remove({ id: `gtceu:assembler/${woodName}_sign` })
         e.remove({ id: `gtceu:assembler/${woodName}_sign_iron` })
     
         e.shaped(sign.copyWithCount(3), [
@@ -630,8 +628,10 @@ const registerMinecraftRecipes = (e) => {
         //#endregion
     
         //#region Висящая табличка
-        e.remove({ id: `minecraft:${woodName}_hanging_sign` })
-        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign` })
+        e.remove({ id: `gtceu:shaped/${woodName}_hanging_sign` })
+        e.remove({ id: `gtceu:shaped/${woodName}_hanging_sign_steel` })
+        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign_iron` })
+        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign_steel` })
     
         e.shaped(hangingSign.copyWithCount(3), [
             'AmA',
@@ -1478,6 +1478,7 @@ const registerMinecraftRecipes = (e) => {
     //#region Блок
     e.remove({ id: 'gtceu:rock_breaker/blackstone' })
     e.remove({ id: 'create:crushing/gilded_blackstone' })
+    e.remove({ id: 'beneath:crafting/blackstone' })
     //#endregion
 
     //#region Пощолоченный Блок
@@ -1509,7 +1510,6 @@ const registerMinecraftRecipes = (e) => {
     //#region Блок
     e.remove({ id: 'minecraft:polished_blackstone' })
     e.remove({ id: 'minecraft:polished_blackstone_from_blackstone_stonecutting' })
-    e.remove({ id: '' })
     //#endregion
 
     //#region Резной Блок
@@ -1538,10 +1538,12 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Нажимная плита
     e.remove({ id: 'minecraft:polished_blackstone_pressure_plate' })
+    e.remove({ id: 'beneath:crafting/blackstone_plate' })
     //#endregion
 
     //#region Кнопка
     e.remove({ id: 'minecraft:polished_blackstone_button' })
+    e.remove({ id: 'beneath:crafting/blackstone_button' })
     //#endregion
     
     //#endregion
@@ -1552,10 +1554,12 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'minecraft:polished_blackstone_bricks' })
     e.remove({ id: 'minecraft:polished_blackstone_bricks_from_blackstone_stonecutting' })
     e.remove({ id: 'minecraft:polished_blackstone_bricks_from_polished_blackstone_stonecutting' })
+    e.remove({ id: 'beneath:crafting/blackstone_bricks' })
     //#endregion
 
     //#region Треснувший Блок
     e.remove({ id: 'minecraft:cracked_polished_blackstone_bricks' })
+    e.remove({ id: 'beneath:crafting/cracked_blackstone_bricks' })
     //#endregion
 
     //#region Ступень
@@ -2167,7 +2171,7 @@ const registerMinecraftRecipes = (e) => {
         D: '#forge:tools/mallets'
     }).id(`tfg:workbench/white_bed`)
 
-    e.recipes.gtceu.extractor('tfg:white_bed')             
+    e.recipes.gtceu.assembler('tfg:white_bed')             
         .itemInputs('3x minecraft:white_wool', '4x #minecraft:planks')
         .circuit(1)
         .itemOutputs('minecraft:white_bed')
@@ -2545,7 +2549,7 @@ const registerMinecraftRecipes = (e) => {
         'A',
         'B'
     ], {
-        A: 'tfc:dead_torch', 
+        A: 'tfc:torch', 
         B: 'minecraft:redstone'
     }).id('tfg:workbench/redstone_torch')
     //#endregion
@@ -3149,7 +3153,7 @@ const registerMinecraftRecipes = (e) => {
     ], {
         A: '#forge:cobblestone',
         B: '#tfg:all_iron_rings',
-        C: '#all_iron_small_springs',
+        C: '#tfg:all_iron_small_springs',
         D: '#forge:string',
         E: '#tfg:all_iron_gears',
         F: 'gtceu:red_alloy_rod'
@@ -3188,6 +3192,9 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Наблюдатель
     e.remove({ id: 'tfc:crafting/vanilla/redstone/observer' })
+    e.remove({ id: 'gtceu:shaped/observer' })
+    e.remove({ id: 'gtceu:shaped/observer_certus' })
+    e.remove({ id: 'gtceu:shaped/observer_quartzite' })
 
     e.recipes.gtceu.assembler('tfg:observer_certus_quartz')             
         .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/certus_quartz')
@@ -3357,13 +3364,14 @@ const registerMinecraftRecipes = (e) => {
     }).id('tfg:workbench/minecart_iron')
 
     e.recipes.gtceu.assembler('tfg:minecart')             
-        .itemInputs('3x #tfg:all_iron_plates', '4x #tfg_all_iron_rings')
+        .itemInputs('3x #tfg:all_iron_plates', '4x #tfg:all_iron_rings')
         .itemOutputs('minecraft:minecart')
         .EUt(4).duration(100)
     //#endregion
 
     //#region Выход: Вагонетка с сундуком
     e.remove({ id: 'gtceu:assembler/chest_minecart' })
+    e.remove({ id: 'gtceu:shaped/chest_minecart' })
     //#endregion
 
     //#region Выход: Вагонетка с печью
