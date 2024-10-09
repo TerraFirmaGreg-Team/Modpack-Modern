@@ -3,11 +3,17 @@
 const registerTreeTapRecipes = (e) => {
     
     // Удаление всех рецептов мода
-    e.remove({ mod: 'treetap' })
+    // e.remove({ mod: 'treetap' })
 
     // TreeTap
     e.recipes.tfc.anvil('treetap:tap', '#forge:ingots/copper', [ 'draw_not_last', 'hit_not_last', 'shrink_last' ])
         .id('tfg:anvil/treetap')
+
+    e.recipes.gtceu.alloy_smelter(`tfg:treetap`)
+        .itemInputs('#forge:ingots/copper')
+        .circuit(12)
+        .itemOutputs('treetap:tap')
+        .EUt(GTValues.VA[GTValues.ULV]).duration(100)
 
     // TreeTap Heating
     e.recipes.tfc.heating('treetap:tap', 1080)
