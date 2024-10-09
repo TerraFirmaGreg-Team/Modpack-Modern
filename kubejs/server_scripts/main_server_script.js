@@ -138,8 +138,8 @@ ServerEvents.recipes(event => {
     registerTFCRecipes(event)
     // registerTFCGroomingStationRecipes(event)
     // registerToolBeltRecipes(event)
-    // registerTreeTapRecipes(event)
-    // registerWaterFlasksRecipes(event)
+    registerTreeTapRecipes(event)
+    registerWaterFlasksRecipes(event)
 })
 
 /**
