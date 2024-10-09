@@ -96,16 +96,16 @@ const registerMinecraftRecipes = (e) => {
         e.remove({ id: `gtceu:cutter/${woodName}_button_water` })
 
         // Sign
-        e.remove({ id: `minecraft:${woodName}_sign` })
-        e.remove({ id: `gtceu:shaped/${woodName}_sign_steel` })
         e.remove({ id: `gtceu:shaped/${woodName}_sign_iron` })
+        e.remove({ id: `gtceu:shaped/${woodName}_sign_steel` })
         e.remove({ id: `gtceu:assembler/${woodName}_sign_steel` })
-        e.remove({ id: `gtceu:assembler/${woodName}_sign` })
         e.remove({ id: `gtceu:assembler/${woodName}_sign_iron` })
 
         // Hanging Sign
-        e.remove({ id: `minecraft:${woodName}_hanging_sign` })
-        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign` })
+        e.remove({ id: `gtceu:shaped/${woodName}_hanging_sign` })
+        e.remove({ id: `gtceu:shaped/${woodName}_hanging_sign_steel` })
+        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign_iron` })
+        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign_steel` })
 
         // Boat
         e.remove({ id: `gtceu:shaped/${woodName}_boat` })

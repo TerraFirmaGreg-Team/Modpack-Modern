@@ -844,6 +844,12 @@ const registerGregTechRecipes = (e) => {
 
     //#region Резиновое
 
+    // Wood
+    e.remove({ id: 'gtceu:shaped/rubber_wood' })
+
+    // Stripped Wood
+    e.remove({ id: 'gtceu:shaped/stripped_rubber_wood' })
+
     // Доски
     e.remove({ id : 'gtceu:shapeless/rubber_wood_planks' })
     e.remove({ id : 'gtceu:shapeless/rubber_planks' })
@@ -890,13 +896,16 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:assembler/rubber_fence_gate' })
 
     // Табличка
-    e.remove({ id: 'gtceu:shaped/rubber_sign_steel' })
     e.remove({ id: 'gtceu:shaped/rubber_sign_iron' })
+    e.remove({ id: 'gtceu:shaped/rubber_sign_steel' })
     e.remove({ id: 'gtceu:assembler/rubber_sign_steel' })
     e.remove({ id: 'gtceu:assembler/rubber_sign_iron' })
-    
+
     // Висящая табличка
-    e.remove({ id: 'gtceu:assembler/rubber_hanging_sign' })
+    e.remove({ id: 'gtceu:shaped/rubber_hanging_sign' })
+    e.remove({ id: 'gtceu:shaped/rubber_hanging_sign_steel' })
+    e.remove({ id: 'gtceu:assembler/rubber_hanging_sign_iron' })
+    e.remove({ id: 'gtceu:assembler/rubber_hanging_sign_steel' })
 
     // Лодка
     e.remove({ id: 'gtceu:shaped/rubber_boat' })
@@ -909,14 +918,6 @@ const registerGregTechRecipes = (e) => {
     //#endregion
 
     //#region Креозотовое
-
-    // Доски
-    e.remove({ id : 'gtceu:shapeless/rubber_wood_planks' })
-    e.remove({ id : 'gtceu:shapeless/rubber_planks' })
-    e.remove({ id : 'gtceu:shaped/rubber_planks_saw' })
-    e.remove({ id : 'gtceu:cutter/rubber_planks' })
-    e.remove({ id : 'gtceu:cutter/rubber_planks_water' })
-    e.remove({ id : 'gtceu:cutter/rubber_planks_distilled_water' })
 
     // Ступень
     e.remove({ id : 'gtceu:shaped/treated_stairs' })
