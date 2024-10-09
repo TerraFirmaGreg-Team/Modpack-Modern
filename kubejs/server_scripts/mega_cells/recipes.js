@@ -9,7 +9,7 @@ const registerMegaCellsRecipes = (event) => {
         {id: 'megacells:network/mega_pattern_provider_part'},
     ], mod: 'megacells' })
     
-    event.recipes.gtceu.assembler('megacells:mega_energy_cell')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_energy_cell')
         .itemInputs('8x ae2:dense_energy_cell', '8x gtceu:nichrome_quadruple_wire', '4x #gtceu:circuits/iv')
         .itemOutputs('megacells:mega_energy_cell')
         .circuit(1)
@@ -17,7 +17,7 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(2048)
 
     //printed accumulation circuit
-    event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor')
+    event.recipes.gtceu.forming_press('tfg:megacells/printed_accumulation_processor')
         .itemInputs('#forge:plates/enriched_naquadah')
         .notConsumable('megacells:accumulation_processor_press')
         .itemOutputs('megacells:printed_accumulation_processor')
@@ -25,14 +25,14 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(1920)
 
     // Inscrdiber Silicon Press
-    event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press_iron')
+    event.recipes.gtceu.laser_engraver('tfg:megacells/accumulation_processor_press_iron')
         .itemInputs('#forge:plates/iron', 'ae2:singularity')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
         .duration(6000)
         .EUt(1920)
 
-    event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press_wrought_iron')
+    event.recipes.gtceu.laser_engraver('tfg:megacells/accumulation_processor_press_wrought_iron')
         .itemInputs('#forge:plates/wrought_iron', 'ae2:singularity')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
@@ -40,7 +40,7 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(1920)
 
     //accumulation processor
-    event.recipes.gtceu.circuit_assembler('megacells:accumulation_processor')
+    event.recipes.gtceu.circuit_assembler('tfg:megacells/accumulation_processor')
         .itemInputs(
             'ae2:printed_silicon',
             'megacells:printed_accumulation_processor',
@@ -53,7 +53,7 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(1920)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.circuit_assembler('megacells:accumulation_processor_adv')
+    event.recipes.gtceu.circuit_assembler('tfg:megacells/accumulation_processor_adv')
         .itemInputs(
             'ae2:printed_silicon',
             'megacells:printed_accumulation_processor',
@@ -76,7 +76,7 @@ const registerMegaCellsRecipes = (event) => {
         B: '#forge:plates/enriched_naquadah',
         C: '#forge:fine_wires/niobium_titanium',
         D: '#gtceu:circuits/iv',
-    }).id('tfg:crafting/mega_item_cell_housing')
+    }).id('tfg:shaped/megacells/mega_item_cell_housing')
     
     //Mega Fluid Cell Housing
     event.shaped('megacells:mega_fluid_cell_housing', [
@@ -88,7 +88,7 @@ const registerMegaCellsRecipes = (event) => {
         B: '#forge:plates/incoloy_ma_956',
         C: '#forge:fine_wires/niobium_titanium',
         D: '#gtceu:circuits/iv',
-    }).id('tfg:crafting/mega_fluid_cell_housing')
+    }).id('tfg:shaped/megacells/mega_fluid_cell_housing')
 
     //cell dock
     event.shaped('megacells:cell_dock', [
@@ -99,12 +99,12 @@ const registerMegaCellsRecipes = (event) => {
         B: 'ae2:engineering_processor',
         C: '#ae2:glass_cable',
         D: '#gtceu:circuits/lv',
-    }).id('tfg:crafting/megacells_cell_dock')
+    }).id('tfg:shaped/megacells/megacells_cell_dock')
 
     //#region Storage Components
 
     // 1m storage components
-    event.recipes.gtceu.assembly_line('megacells:cell_component_1m')
+    event.recipes.gtceu.assembly_line('tfg:megacells/cell_component_1m')
         .itemInputs(
             '4x #gtceu:circuits/uv',
             '4x #forge:plates/darmstadtium',
@@ -119,7 +119,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // 4m storage components
-    event.recipes.gtceu.assembly_line('megacells:cell_component_4m')
+    event.recipes.gtceu.assembly_line('tfg:megacells/cell_component_4m')
         .itemInputs(
             '4x #gtceu:circuits/uhv',
             '4x #forge:plates/neutronium',
@@ -133,7 +133,7 @@ const registerMegaCellsRecipes = (event) => {
         .EUt(1966080)
         .cleanroom(CleanroomType.CLEANROOM)
     
-    event.recipes.gtceu.assembly_line('megacells:cell_component_4m_1m')
+    event.recipes.gtceu.assembly_line('tfg:megacells/cell_component_4m_1m')
         .itemInputs(
             '2x megacells:accumulation_processor',
             '2x #gtceu:circuits/uhv',
@@ -216,7 +216,7 @@ const registerMegaCellsRecipes = (event) => {
 
     //#region MEGA interface
     // EV
-    event.recipes.gtceu.assembler('megacells:mega_interface_ev')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_interface_ev')
         .itemInputs(
             '2x #ae2:interface',
             '4x megacells:accumulation_processor',
@@ -233,7 +233,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // IV
-    event.recipes.gtceu.assembler('megacells:mega_interface_iv')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_interface_iv')
         .itemInputs(
             '4x #ae2:interface',
             '4x megacells:accumulation_processor',
@@ -250,7 +250,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // LuV
-    event.recipes.gtceu.assembler('megacells:mega_interface_luv')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_interface_luv')
         .itemInputs(
             '8x #ae2:interface',
             '4x megacells:accumulation_processor',
@@ -267,7 +267,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // ZPM
-    event.recipes.gtceu.assembler('megacells:mega_interface_zpm')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_interface_zpm')
         .itemInputs(
             '16x #ae2:interface',
             '4x megacells:accumulation_processor',
@@ -287,7 +287,7 @@ const registerMegaCellsRecipes = (event) => {
 
     //#region MEGA provider
     // EV
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_ev')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_pattern_provider_ev')
         .itemInputs(
             '2x #ae2:pattern_provider',
             '4x megacells:accumulation_processor',
@@ -303,7 +303,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // IV
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_iv')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_pattern_provider_iv')
         .itemInputs(
             '4x #ae2:pattern_provider',
             '4x megacells:accumulation_processor',
@@ -319,7 +319,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // LuV
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_luv')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_pattern_provider_luv')
         .itemInputs(
             '8x #ae2:pattern_provider',
             '4x megacells:accumulation_processor',
@@ -335,7 +335,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // ZPM
-    event.recipes.gtceu.assembler('megacells:mega_pattern_provider_zpm')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_pattern_provider_zpm')
         .itemInputs(
             '16x #ae2:pattern_provider',
             '4x megacells:accumulation_processor',
@@ -353,7 +353,7 @@ const registerMegaCellsRecipes = (event) => {
     //#endregion
 
     // greater energy card
-    event.recipes.gtceu.assembler('megacells:greater_energy_card')
+    event.recipes.gtceu.assembler('tfg:megacells/greater_energy_card')
         .itemInputs(
             'ae2:energy_card',
             '2x gtceu:lapotronic_energy_orb')
@@ -363,14 +363,14 @@ const registerMegaCellsRecipes = (event) => {
 
     //#region Cell Packing
     //item
-    event.recipes.gtceu.packer('megacells:item_storage_cell_1m')
+    event.recipes.gtceu.packer('tfg:megacells/item_storage_cell_1m')
         .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_1m')
         .itemOutputs('megacells:item_storage_cell_1m')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:item_storage_cell_4m')
+    event.recipes.gtceu.packer('tfg:megacells/item_storage_cell_4m')
         .itemInputs('megacells:mega_item_cell_housing', 'megacells:cell_component_4m')
         .itemOutputs('megacells:item_storage_cell_4m')
         .duration(10)
@@ -399,14 +399,14 @@ const registerMegaCellsRecipes = (event) => {
     // .cleanroom(CleanroomType.CLEANROOM)
 
     //fluid
-    event.recipes.gtceu.packer('megacells:fluid_storage_cell_1m')
+    event.recipes.gtceu.packer('tfg:megacells/fluid_storage_cell_1m')
         .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_1m')
         .itemOutputs('megacells:fluid_storage_cell_1m')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:fluid_storage_cell_4m')
+    event.recipes.gtceu.packer('tfg:megacells/fluid_storage_cell_4m')
         .itemInputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_4m')
         .itemOutputs('megacells:fluid_storage_cell_4m')
         .duration(10)
@@ -435,14 +435,14 @@ const registerMegaCellsRecipes = (event) => {
     // .cleanroom(CleanroomType.CLEANROOM)
 
     //item back
-    event.recipes.gtceu.packer('megacells:item_storage_cell_1m_back')
+    event.recipes.gtceu.packer('tfg:megacells/item_storage_cell_1m_back')
         .itemInputs('megacells:item_storage_cell_1m')
         .itemOutputs('megacells:mega_item_cell_housing', 'megacells:cell_component_1m')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:item_storage_cell_4m_back')
+    event.recipes.gtceu.packer('tfg:megacells/item_storage_cell_4m_back')
         .itemInputs('megacells:item_storage_cell_4m')
         .itemOutputs('megacells:mega_item_cell_housing', 'megacells:cell_component_4m')
         .duration(10)
@@ -471,14 +471,14 @@ const registerMegaCellsRecipes = (event) => {
     // .cleanroom(CleanroomType.CLEANROOM)
 
     //fluid back
-    event.recipes.gtceu.packer('megacells:fluid_storage_cell_1m_back')
+    event.recipes.gtceu.packer('tfg:megacells/fluid_storage_cell_1m_back')
         .itemInputs('megacells:fluid_storage_cell_1m')
         .itemOutputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_1m')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:fluid_storage_cell_4m_back')
+    event.recipes.gtceu.packer('tfg:megacells/fluid_storage_cell_4m_back')
         .itemInputs('megacells:fluid_storage_cell_4m')
         .itemOutputs('megacells:mega_fluid_cell_housing', 'megacells:cell_component_4m')
         .duration(10)
@@ -509,7 +509,7 @@ const registerMegaCellsRecipes = (event) => {
     //#endregion 
 
     //mega crafting unit
-    event.recipes.gtceu.assembler('megacells:mega_crafting_unit')
+    event.recipes.gtceu.assembler('tfg:megacells/mega_crafting_unit')
         .itemInputs(
             '4x ae2:crafting_unit',
             '4x megacells:accumulation_processor',
@@ -523,21 +523,21 @@ const registerMegaCellsRecipes = (event) => {
 
 
         //#region Crafting  Storage
-    event.recipes.gtceu.packer('megacells:mega_crafting_accelerator')
+    event.recipes.gtceu.packer('tfg:megacells/mega_crafting_accelerator')
         .itemInputs('megacells:mega_crafting_unit', 'ae2:engineering_processor')
         .itemOutputs('megacells:mega_crafting_accelerator')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:1m_crafting_storage')
+    event.recipes.gtceu.packer('tfg:megacells/1m_crafting_storage')
         .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_1m')
         .itemOutputs('megacells:1m_crafting_storage')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:4m_crafting_storage')
+    event.recipes.gtceu.packer('tfg:megacells/4m_crafting_storage')
         .itemInputs('megacells:mega_crafting_unit', 'megacells:cell_component_4m')
         .itemOutputs('megacells:4m_crafting_storage')
         .duration(10)
@@ -565,7 +565,7 @@ const registerMegaCellsRecipes = (event) => {
     //     .EUt(12)
     //     .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:mega_crafting_monitor')
+    event.recipes.gtceu.packer('tfg:megacells/mega_crafting_monitor')
         .itemInputs('megacells:mega_crafting_unit', 'ae2:storage_monitor')
         .itemOutputs('megacells:mega_crafting_monitor')
         .duration(10)
@@ -573,21 +573,21 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
         //back
-    event.recipes.gtceu.packer('megacells:crafting_mega_accelerator_back')
+    event.recipes.gtceu.packer('tfg:megacells/crafting_mega_accelerator_back')
         .itemInputs('ae2:crafting_accelerator')
         .itemOutputs('megacells:mega_crafting_unit', 'ae2:engineering_processor')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:1m_crafting_storage_back')
+    event.recipes.gtceu.packer('tfg:megacells/1m_crafting_storage_back')
         .itemInputs('megacells:1m_crafting_storage')
         .itemOutputs('megacells:mega_crafting_unit', 'megacells:cell_component_1m')
         .duration(10)
         .EUt(12)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:4m_crafting_storage_back')
+    event.recipes.gtceu.packer('tfg:megacells/4m_crafting_storage_back')
         .itemInputs('megacells:4m_crafting_storage')
         .itemOutputs('megacells:mega_crafting_unit', 'megacells:cell_component_4m')
         .duration(10)
@@ -616,7 +616,7 @@ const registerMegaCellsRecipes = (event) => {
     //     .EUt(12)
     //     .cleanroom(CleanroomType.CLEANROOM)
 
-    event.recipes.gtceu.packer('megacells:crafting_monitor_back')
+    event.recipes.gtceu.packer('tfg:megacells/crafting_monitor_back')
         .itemInputs('megacells:mega_crafting_monitor')
         .itemOutputs('megacells:mega_crafting_unit', 'ae2:storage_monitor')
         .duration(10)
@@ -631,7 +631,7 @@ const registerMegaCellsRecipes = (event) => {
     //#region Item
     
     // 1m
-    event.recipes.gtceu.assembler('megacells:portable_item_cell_1m')
+    event.recipes.gtceu.assembler('tfg:megacells/portable_item_cell_1m')
     .itemInputs(
         'ae2:chest',
         'megacells:cell_component_1m',
@@ -645,7 +645,7 @@ const registerMegaCellsRecipes = (event) => {
     .cleanroom(CleanroomType.CLEANROOM)
 
     // 4m
-    event.recipes.gtceu.assembler('megacells:portable_item_cell_4m')
+    event.recipes.gtceu.assembler('tfg:megacells/portable_item_cell_4m')
         .itemInputs(
             'ae2:chest',
             'megacells:cell_component_4m',
@@ -706,7 +706,7 @@ const registerMegaCellsRecipes = (event) => {
     //#region Fluid
 
     // 1m
-    event.recipes.gtceu.assembler('megacells:portable_fluid_cell_1m')
+    event.recipes.gtceu.assembler('tfg:megacells/portable_fluid_cell_1m')
         .itemInputs(
             'ae2:chest',
             'megacells:cell_component_1m',
@@ -720,7 +720,7 @@ const registerMegaCellsRecipes = (event) => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     // 4m
-    event.recipes.gtceu.assembler('megacells:portable_fluid_cell_4m')
+    event.recipes.gtceu.assembler('tfg:megacells/portable_fluid_cell_4m')
         .itemInputs(
             'ae2:chest',
             'megacells:cell_component_4m',
