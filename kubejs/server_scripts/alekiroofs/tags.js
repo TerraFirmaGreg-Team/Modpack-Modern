@@ -26,7 +26,7 @@ const registerAlekiRoofsItemTags = (event) => {
     //#endregion
 }
 
-const registerMinecraftBlockTags123 = (event) => {
+const registerAlekiRoofsBlockTags = (event) => {
     global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
         // event.removeAllTagsFrom(item)
     })

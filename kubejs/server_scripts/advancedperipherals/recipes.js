@@ -4,7 +4,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
     e.remove({ mod: `advancedperipherals` })
 
     //
-    event.shaped('advancedperipherals:peripheral_casing', [
+    e.shaped('advancedperipherals:peripheral_casing', [
         'CBC',
         'ADA',
         'AAA',
@@ -15,7 +15,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         D: 'gtceu:ev_machine_hull',
     }).id('advancedperipherals:crafting/peripheral_casing')
 
-    event.shaped('advancedperipherals:environment_detector', [
+    e.shaped('advancedperipherals:environment_detector', [
         'ABA',
         'CDC',
         'EFE',
@@ -28,7 +28,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: 'gtceu:advanced_item_detector_cover',
     }).id('advancedperipherals:crafting/environment_detector')
 
-    event.shaped('advancedperipherals:chat_box', [
+    e.shaped('advancedperipherals:chat_box', [
         ' B ',
         'CDC',
         'EFE',
@@ -40,7 +40,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: '#forge:double_wires/uranium_triplatinum',
     }).id('advancedperipherals:crafting/chat_box')
 
-    event.shaped('advancedperipherals:player_detector', [
+    e.shaped('advancedperipherals:player_detector', [
         'ABA',
         'CDC',
         'EFE',
@@ -53,7 +53,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: '#forge:double_wires/indium_tin_barium_titanium_cuprate',
     }).id('advancedperipherals:crafting/player_detector')
 
-    event.shaped('advancedperipherals:me_bridge', [
+    e.shaped('advancedperipherals:me_bridge', [
         'ABC',
         'BDB',
         'EFG',
@@ -67,7 +67,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         G: 'gtceu:advanced_fluid_detector_cover',
     }).id('advancedperipherals:crafting/me_bridge')
 
-    event.shaped('advancedperipherals:energy_detector', [
+    e.shaped('advancedperipherals:energy_detector', [
         'ABA',
         'CDC',
         'EFE',
@@ -80,7 +80,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: 'gtceu:advanced_energy_detector_cover',
     }).id('advancedperipherals:crafting/energy_detector')
 
-    event.shaped('advancedperipherals:inventory_manager', [
+    e.shaped('advancedperipherals:inventory_manager', [
         'ABA',
         'CDC',
         'EFE',
@@ -93,7 +93,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: 'gtceu:hv_super_chest',
     }).id('advancedperipherals:crafting/inventory_manager')
 
-    event.shaped('advancedperipherals:redstone_integrator', [
+    e.shaped('advancedperipherals:redstone_integrator', [
         ' B ',
         'ADA',
         'EFE',
@@ -105,7 +105,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: 'gtceu:advanced_activity_detector_cover',
     }).id('advancedperipherals:crafting/redstone_integrator')
 
-    event.shaped('advancedperipherals:block_reader', [
+    e.shaped('advancedperipherals:block_reader', [
         'EBE',
         'ADA',
         'EFE',
@@ -117,7 +117,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: '#forge:double_wires/uranium_triplatinum',
     }).id('advancedperipherals:crafting/block_reader')
 
-    event.shaped('advancedperipherals:geo_scanner', [
+    e.shaped('advancedperipherals:geo_scanner', [
         'ABA',
         'CDC',
         'EFE',
@@ -130,7 +130,7 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         F: 'computercraft:wired_modem_full',
     }).id('advancedperipherals:crafting/geo_scanner')
 
-    event.shaped('advancedperipherals:nbt_storage', [
+    e.shaped('advancedperipherals:nbt_storage', [
         ' A ',
         'ADA',
         'EBE',
@@ -141,19 +141,19 @@ const registerAdvancedPeripheralsRecipes = (e) => {
         E: '#gtceu:circuits/ev',
     }).id('advancedperipherals:crafting/nbt_storage')
 
-    event.recipes.gtceu.assembler('advancedperipherals:overpowered_weak_automata_core')
+    e.recipes.gtceu.assembler('advancedperipherals:overpowered_weak_automata_core')
         .itemInputs('advancedperipherals:weak_automata_core', '2x gtceu:wetware_processor')
         .itemOutputs('advancedperipherals:overpowered_weak_automata_core')
         .duration(8000)
         .EUt(480)
 
-    event.recipes.gtceu.assembler('advancedperipherals:overpowered_end_automata_core')
+    e.recipes.gtceu.assembler('advancedperipherals:overpowered_end_automata_core')
         .itemInputs('advancedperipherals:end_automata_core', '2x gtceu:wetware_processor')
         .itemOutputs('advancedperipherals:overpowered_end_automata_core')
         .duration(8000)
         .EUt(480)
 
-    event.recipes.gtceu.assembler('advancedperipherals:overpowered_husbandry_automata_core')
+    e.recipes.gtceu.assembler('advancedperipherals:overpowered_husbandry_automata_core')
         .itemInputs('advancedperipherals:husbandry_automata_core', '2x gtceu:wetware_processor')
         .itemOutputs('advancedperipherals:overpowered_husbandry_automata_core')
         .duration(8000)

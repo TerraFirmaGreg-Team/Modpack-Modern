@@ -4,7 +4,6 @@ const registerMinecraftRecipes = (e) => {
     
     //#region Дерево
     global.MINECRAFT_ALL_WOOD_TYPES.forEach(woodName => {
-        console.log(woodName)
         const isNetherType = woodName === "crimson" || woodName === "warped" ? true : false
 
         //#region Wood
