@@ -17,7 +17,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         B: '#forge:leather',  
         C: '#forge:chests/wooden',
         D: 'minecraft:name_tag'   
-    }).id('tfg:sophisticated_backpacks/shaped/backpack')
+    }).id('tfg:shaped/backpack')
 
     // Железный рюкзак
     event.custom({
@@ -50,7 +50,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         result: {
           item: "sophisticatedbackpacks:iron_backpack"
         }
-    }).id('tfg:sophisticated_backpacks/shaped/iron_backpack')
+    }).id('tfg:shaped/iron_backpack')
 
     // Золотой рюкзак
     event.custom({
@@ -83,7 +83,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         result: {
           item: "sophisticatedbackpacks:gold_backpack"
         }
-    }).id('tfg:sophisticated_backpacks/shaped/gold_backpack')
+    }).id('tfg:shaped/gold_backpack')
 
     // Алмазный рюкзак
     event.custom({
@@ -116,7 +116,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         result: {
           item: "sophisticatedbackpacks:diamond_backpack"
         }
-    }).id('tfg:sophisticated_backpacks/shaped/diamond_backpack')
+    }).id('tfg:shaped/diamond_backpack')
     
     // Незеритовый рюкзак
     event.custom({
@@ -149,7 +149,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         result: {
           item: "sophisticatedbackpacks:netherite_backpack"
         }
-    }).id('tfg:sophisticated_backpacks/shaped/netherite_backpack')
+    }).id('tfg:shaped/netherite_backpack')
 
     // Апгрейды
 
@@ -163,7 +163,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         B: '#forge:rods/long/wrought_iron',
         C: '#forge:leather',
         D: '#forge:plates/steel'
-    }).id('tfg:sophisticated_backpacks/shaped/upgrade_base')
+    }).id('tfg:shaped/upgrade_base')
 
     // Улучшение - подбиратель
     event.shaped('sophisticatedbackpacks:pickup_upgrade', [
@@ -178,13 +178,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         E: 'gtceu:hv_robot_arm',
         F: '#gtceu:circuits/hv',
         G: '#gtceu:batteries/hv'
-    }).id('tfg:sophisticated_backpacks/shaped/pickup_upgrade')
+    }).id('tfg:shaped/pickup_upgrade')
 
     // Улучшение - улучшенный подбиратель
     event.shapeless('sophisticatedbackpacks:advanced_pickup_upgrade', [
         'sophisticatedbackpacks:pickup_upgrade',
         '#gtceu:circuits/ev'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_pickup_upgrade')
+    ]).id('tfg:shapeless/advanced_pickup_upgrade')
 
     // Улучшение - фильтр
     event.shaped('sophisticatedbackpacks:filter_upgrade', [
@@ -200,13 +200,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         F: 'gtceu:lv_robot_arm',
         G: '#gtceu:circuits/lv',
         H: 'gtceu:item_tag_filter'
-    }).id('tfg:sophisticated_backpacks/shaped/filter_upgrade')
+    }).id('tfg:shaped/filter_upgrade')
 
     // Улучшение - улучшенный фильтр
     event.shapeless('sophisticatedbackpacks:advanced_filter_upgrade', [
         'sophisticatedbackpacks:filter_upgrade',
         '#gtceu:circuits/mv'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_filter_upgrade')
+    ]).id('tfg:shapeless/advanced_filter_upgrade')
 
     // Улучшение - магнит
     event.shaped('sophisticatedbackpacks:magnet_upgrade', [
@@ -219,13 +219,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         C: '#gtceu:circuits/hv',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: '#gtceu:batteries/hv'
-    }).id('tfg:sophisticated_backpacks/shaped/magnet_upgrade')
+    }).id('tfg:shaped/magnet_upgrade')
 
     // Улучшение - улучшенный магнит
     event.shapeless('sophisticatedbackpacks:advanced_magnet_upgrade', [
         'sophisticatedbackpacks:magnet_upgrade',
         '#gtceu:circuits/ev'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_magnet_upgrade')
+    ]).id('tfg:shapeless/advanced_magnet_upgrade')
 
     // Улучшение - уничтожитель
     event.shaped('sophisticatedbackpacks:void_upgrade', [
@@ -240,13 +240,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         E: '#forge:tools/wrenches',
         F: 'gtceu:brass_normal_item_pipe',
         G: '#forge:ender_pearls'
-    }).id('tfg:sophisticated_backpacks/shaped/void_upgrade')
+    }).id('tfg:shaped/void_upgrade')
 
     // Улучшение - улучшенный уничтожитель
     event.shapeless('sophisticatedbackpacks:advanced_void_upgrade', [
         'sophisticatedbackpacks:void_upgrade',
         '#gtceu:circuits/mv'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_void_upgrade')
+    ]).id('tfg:shapeless/advanced_void_upgrade')
 
     // Улучшение - Deposit
     event.shaped('sophisticatedbackpacks:deposit_upgrade', [
@@ -260,13 +260,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: 'gtceu:lv_conveyor_module',
         E: 'sophisticatedbackpacks:upgrade_base',
         F: 'gtceu:lv_robot_arm'
-    }).id('tfg:sophisticated_backpacks/shaped/deposit_upgrade')
+    }).id('tfg:shaped/deposit_upgrade')
 
     // Улучшение - улучшенный Deposit
     event.shapeless('sophisticatedbackpacks:advanced_deposit_upgrade', [
         'sophisticatedbackpacks:deposit_upgrade',
         '#gtceu:circuits/mv'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_deposit_upgrade')
+    ]).id('tfg:shapeless/advanced_deposit_upgrade')
 
     // Улучшение - Restock
     event.shaped('sophisticatedbackpacks:restock_upgrade', [
@@ -280,13 +280,13 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: '#gtceu:batteries/lv',
         E: 'gtceu:manganese_phosphide_single_wire',
         F: '#gtceu:circuits/lv',
-    }).id('tfg:sophisticated_backpacks/shaped/restock_upgrade')
+    }).id('tfg:shaped/restock_upgrade')
 
     // Улучшение - улучшенный Restock
     event.shapeless('sophisticatedbackpacks:advanced_restock_upgrade', [
         'sophisticatedbackpacks:restock_upgrade',
         '#gtceu:circuits/mv'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_restock_upgrade')
+    ]).id('tfg:shapeless/advanced_restock_upgrade')
 
     // Улучшение - Refill
     event.shaped('sophisticatedbackpacks:refill_upgrade', [
@@ -299,7 +299,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         C: '#gtceu:batteries/lv',
         D: 'gtceu:lv_robot_arm',
         E: 'sophisticatedbackpacks:upgrade_base'
-    }).id('tfg:sophisticated_backpacks/shaped/refill_upgrade')
+    }).id('tfg:shaped/refill_upgrade')
 
     // Улучшение - улучшенный Refill
     event.shapeless('sophisticatedbackpacks:advanced_refill_upgrade', [
@@ -318,7 +318,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         C: '#gtceu:circuits/zpm',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: '#gtceu:batteries/zpm'
-    }).id('tfg:sophisticated_backpacks/shaped/everlasting_upgrade')
+    }).id('tfg:shaped/everlasting_upgrade')
 
     // Улучшение - верстак
     event.shaped('sophisticatedbackpacks:crafting_upgrade', [
@@ -330,7 +330,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         B: '#tfc:workbenches',
         C: '#forge:plates/steel',
         D: 'sophisticatedbackpacks:upgrade_base',
-    }).id('tfg:sophisticated_backpacks/shaped/crafting_upgrade')
+    }).id('tfg:shaped/crafting_upgrade')
 
     // Улучшение - Stack Lvl. 1
     event.shaped('sophisticatedbackpacks:stack_upgrade_tier_1', [
@@ -343,7 +343,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         C: '#gtceu:batteries/iv',
         D: 'sophisticatedbackpacks:upgrade_base',
         E: 'gtceu:iv_field_generator'
-    }).id('tfg:sophisticated_backpacks/shaped/stack_upgrade_tier_1')
+    }).id('tfg:shaped/stack_upgrade_tier_1')
 
     // Улучшение - проигрыватель
     event.shaped('sophisticatedbackpacks:jukebox_upgrade', [
@@ -355,7 +355,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         B: 'minecraft:jukebox',
         C: '#forge:plates/steel',
         D: 'sophisticatedbackpacks:upgrade_base',
-    }).id('tfg:sophisticated_backpacks/shaped/jukebox_upgrade')
+    }).id('tfg:shaped/jukebox_upgrade')
 
     // Улучшение - ToolSwapper
     event.shaped('sophisticatedbackpacks:tool_swapper_upgrade', [
@@ -370,11 +370,11 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         E: 'sophisticatedbackpacks:upgrade_base',
         F: '#tfc:shovels',
         G: '#tfc:axes',
-    }).id('tfg:sophisticated_backpacks/shaped/tool_swapper_upgrade')
+    }).id('tfg:shaped/tool_swapper_upgrade')
 
     // Улучшение - улучшенный ToolSwapper
     event.shapeless('sophisticatedbackpacks:advanced_tool_swapper_upgrade', [
         'sophisticatedbackpacks:tool_swapper_upgrade',
         '#gtceu:circuits/mv'
-    ]).id('tfg:sophisticated_backpacks/shapeless/advanced_tool_swapper_upgrade')
+    ]).id('tfg:shapeless/advanced_tool_swapper_upgrade')
 }
