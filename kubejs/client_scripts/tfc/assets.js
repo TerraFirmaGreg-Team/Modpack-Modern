@@ -22,4 +22,6 @@ const registerTFCAssets = (e) => {
         e.add(`emi:recipe/additions/tfc_${woodName}_wood_conversion`, woodJson)
     })
     //#endregion
+
+    //todo: flattering recipes, shovels, etc
 }
