@@ -6,16 +6,42 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:small_wheat_dust',
     'gtceu:tiny_wheat_dust',
 
-    // Bronze Machines
-    'gtceu:bronze_machine_casing',
-    'gtceu:steam_miner',
-    'gtceu:lp_steam_extractor',
-    'gtceu:lp_steam_macerator',
-    'gtceu:lp_steam_compressor',
-    'gtceu:lp_steam_forge_hammer',
-    'gtceu:lp_steam_furnace',
-    'gtceu:lp_steam_alloy_smelter',
-    'gtceu:lp_steam_rock_crusher',
+    //#region Резиновое
+    'gtceu:rubber_sapling', 
+    'gtceu:rubber_log', 
+    'gtceu:rubber_leaves', 
+    'gtceu:stripped_rubber_log',
+    'gtceu:rubber_wood', 
+    'gtceu:stripped_rubber_wood', 
+    'gtceu:rubber_planks', 
+    'gtceu:rubber_slab', 
+    'gtceu:rubber_fence', 
+    'gtceu:rubber_sign', 
+    'gtceu:rubber_hanging_sign', 
+    'gtceu:rubber_pressure_plate', 
+    'gtceu:rubber_trapdoor', 
+    'gtceu:rubber_stairs', 
+    'gtceu:rubber_button', 
+    'gtceu:rubber_fence_gate', 
+    'gtceu:rubber_door', 
+    'gtceu:rubber_boat', 
+    'gtceu:rubber_chest_boat',
+    //#endregion
+
+    //#region Обработанное
+    'gtceu:treated_wood_slab', 
+    'gtceu:treated_wood_fence', 
+    'gtceu:treated_wood_sign', 
+    'gtceu:treated_wood_hanging_sign', 
+    'gtceu:treated_wood_pressure_plate', 
+    'gtceu:treated_wood_trapdoor', 
+    'gtceu:treated_wood_stairs', 
+    'gtceu:treated_wood_button', 
+    'gtceu:treated_wood_fence_gate', 
+    'gtceu:treated_wood_door', 
+    'gtceu:treated_wood_boat', 
+    'gtceu:treated_wood_chest_boat',
+    //#endregion
 
     // Примитивная помпа
     'gtceu:infinite_water_cover',
