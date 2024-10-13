@@ -866,7 +866,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
 ];
 
 global.MINECRAFT_HIDED_ITEMS = [
-    // '/spawn_egg/',
+    '/spawn_egg/',
     
     /*
     'minecraft:exposed_copper', 

@@ -103,8 +103,7 @@ const registerMinecraftRecipes = (e) => {
         // Hanging Sign
         e.remove({ id: `gtceu:shaped/${woodName}_hanging_sign` })
         e.remove({ id: `gtceu:shaped/${woodName}_hanging_sign_steel` })
-        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign_iron` })
-        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign_steel` })
+        e.remove({ id: `gtceu:assembler/${woodName}_hanging_sign` })
 
         // Boat
         e.remove({ id: `gtceu:shaped/${woodName}_boat` })
@@ -2204,6 +2203,7 @@ const registerMinecraftRecipes = (e) => {
     //#endregion
 
     //#region Земля
+    e.remove({ id: 'gtceu:macerator/dirt_from_bio_chaff' })
     e.remove({ id: 'create:filling/grass_block' })
     //#endregion
 

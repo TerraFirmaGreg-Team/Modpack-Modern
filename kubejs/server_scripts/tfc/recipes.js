@@ -1915,7 +1915,6 @@ const registerTFCRecipes = (e) => {
     //#endregion
 
     //#region Земля
-    e.remove({ id: 'gtceu:macerator/dirt_from_bio_chaff' })
     e.recipes.gtceu.macerator('tfg:dirt_from_bio_chaff')             
         .itemInputs('gtceu:bio_chaff')
         .itemOutputs('tfc:dirt/loam')

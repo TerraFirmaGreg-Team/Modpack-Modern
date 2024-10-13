@@ -842,142 +842,90 @@ const registerGregTechRecipes = (e) => {
 
     //#region Дерево
 
-    //#region Резиновое
+    global.GTCEU_WOOD_TYPES.forEach(woodType => {
+        // Wood
+        e.remove({ id: `gtceu:shaped/${woodType}_wood` })
 
-    // Wood
-    e.remove({ id: 'gtceu:shaped/rubber_wood' })
+        // Stripped Wood
+        e.remove({ id: `gtceu:shaped/stripped_${woodType}_wood` })
 
-    // Stripped Wood
-    e.remove({ id: 'gtceu:shaped/stripped_rubber_wood' })
+        // Доски
+        e.remove({ id : `gtceu:shapeless/${woodType}_wood_planks` })
+        e.remove({ id : `gtceu:shapeless/${woodType}_planks` })
+        e.remove({ id : `gtceu:shaped/${woodType}_planks_saw` })
+        e.remove({ id : `gtceu:cutter/${woodType}_planks` })
+        e.remove({ id : `gtceu:cutter/${woodType}_planks_water` })
+        e.remove({ id : `gtceu:cutter/${woodType}_planks_distilled_water` })
 
-    // Доски
-    e.remove({ id : 'gtceu:shapeless/rubber_wood_planks' })
-    e.remove({ id : 'gtceu:shapeless/rubber_planks' })
-    e.remove({ id : 'gtceu:shaped/rubber_planks_saw' })
-    e.remove({ id : 'gtceu:cutter/rubber_planks' })
-    e.remove({ id : 'gtceu:cutter/rubber_planks_water' })
-    e.remove({ id : 'gtceu:cutter/rubber_planks_distilled_water' })
+        // Ступень
+        e.remove({ id : `gtceu:shaped/${woodType}_stairs` })
+        e.remove({ id : `everycomp:c/gtceu/${woodType}_stairs_from_${woodType}_planks_stonecutting` })
+        e.remove({ id : `gtceu:assembler/${woodType}_stairs` })
 
-    // Ступень
-    e.remove({ id : 'gtceu:shaped/rubber_stairs' })
-    e.remove({ id : 'everycomp:c/gtceu/rubber_stairs_from_rubber_planks_stonecutting' })
-    e.remove({ id : 'gtceu:assembler/rubber_stairs' })
+        // Полублок
+        e.remove({ id: `gtceu:shaped/${woodType}_slab_saw` })
+        e.remove({ id: `everycomp:c/gtceu/${woodType}_slab_from_${woodType}_planks_stonecutting` })
+        e.remove({ id: `gtceu:cutter/${woodType}_slab_water` })
+        e.remove({ id: `gtceu:cutter/${woodType}_slab_distilled_water` })
+        e.remove({ id: `gtceu:cutter/${woodType}_slab` })
+        
+        // Забор
+        e.remove({ id: `gtceu:shaped/${woodType}_fence` })
+        e.remove({ id: `gtceu:assembler/${woodType}_fence` })
 
-    // Полублок
-    e.remove({ id: 'gtceu:shaped/rubber_slab_saw' })
-    e.remove({ id: 'everycomp:c/gtceu/rubber_slab_from_rubber_planks_stonecutting' })
-    e.remove({ id: 'gtceu:cutter/rubber_slab_water' })
-    e.remove({ id: 'gtceu:cutter/rubber_slab_distilled_water' })
-    e.remove({ id: 'gtceu:cutter/rubber_slab' })
-    
-    // Забор
-    e.remove({ id: 'gtceu:shaped/rubber_fence' })
-    e.remove({ id: 'gtceu:assembler/rubber_fence' })
+        // Нажимная плита
+        e.remove({ id: `gtceu:shaped/${woodType}_pressure_plate` })
+        e.remove({ id: `gtceu:assembler/${woodType}_pressure_plate` })
 
-    // Нажимная плита
-    e.remove({ id: 'gtceu:shaped/rubber_pressure_plate' })
+        // Люк
+        e.remove({ id: `gtceu:shaped/${woodType}_trapdoor_iron` })
+        e.remove({ id: `gtceu:shaped/${woodType}_trapdoor_steel` })
+        e.remove({ id: `gtceu:assembler/${woodType}_trapdoor_steel` })
+        e.remove({ id: `gtceu:assembler/${woodType}_trapdoor_iron` })
 
-    // Люк
-    e.remove({ id: 'gtceu:shaped/rubber_trapdoor_iron' })
-    e.remove({ id: 'gtceu:shaped/rubber_trapdoor_steel' })
-    e.remove({ id: 'gtceu:assembler/rubber_trapdoor_steel' })
-    e.remove({ id: 'gtceu:assembler/rubber_trapdoor_iron' })
+        // Кнопка
+        e.remove({ id: `gtceu:shaped/${woodType}_button` })
+        e.remove({ id: `gtceu:cutter/${woodType}_button_distilled_water` })
+        e.remove({ id: `gtceu:cutter/${woodType}_button_water` })
+        e.remove({ id: `gtceu:cutter/${woodType}_button` })
 
-    // Кнопка
-    e.remove({ id: 'gtceu:shapeless/rubber_button' })
+        // Дверь
+        e.remove({ id: `gtceu:shaped/${woodType}_door` })
+        e.remove({ id: `gtceu:assembler/${woodType}_door` })
 
-    // Дверь
-    e.remove({ id: 'gtceu:shaped/rubber_door' })
-    e.remove({ id: 'gtceu:assembler/rubber_door' })
+        // Калитка
+        e.remove({ id: `gtceu:shaped/${woodType}_fence_gate` })
+        e.remove({ id: `gtceu:shaped/${woodType}_fence_gate_screws` })
+        e.remove({ id: `gtceu:assembler/${woodType}_fence_gate` })
 
-    // Калитка
-    e.remove({ id: 'gtceu:shaped/rubber_fence_gate' })
-    e.remove({ id: 'gtceu:shaped/rubber_fence_gate_screws' })
-    e.remove({ id: 'gtceu:assembler/rubber_fence_gate' })
+        // Табличка
+        e.remove({ id: `gtceu:shaped/${woodType}_sign_iron` })
+        e.remove({ id: `gtceu:shaped/${woodType}_sign_steel` })
+        e.remove({ id: `gtceu:assembler/${woodType}_sign_steel` })
+        e.remove({ id: `gtceu:assembler/${woodType}_sign_iron` })
 
-    // Табличка
-    e.remove({ id: 'gtceu:shaped/rubber_sign_iron' })
-    e.remove({ id: 'gtceu:shaped/rubber_sign_steel' })
-    e.remove({ id: 'gtceu:assembler/rubber_sign_steel' })
-    e.remove({ id: 'gtceu:assembler/rubber_sign_iron' })
+        // Висящая табличка
+        e.remove({ id: `gtceu:shaped/${woodType}_hanging_sign` })
+        e.remove({ id: `gtceu:shaped/${woodType}_hanging_sign_steel` })
+        e.remove({ id: `gtceu:assembler/${woodType}_hanging_sign` })
 
-    // Висящая табличка
-    e.remove({ id: 'gtceu:shaped/rubber_hanging_sign' })
-    e.remove({ id: 'gtceu:shaped/rubber_hanging_sign_steel' })
-    e.remove({ id: 'gtceu:assembler/rubber_hanging_sign_iron' })
-    e.remove({ id: 'gtceu:assembler/rubber_hanging_sign_steel' })
+        // Лодка
+        e.remove({ id: `gtceu:shaped/${woodType}_boat` })
+        e.remove({ id: `gtceu:assembler/${woodType}_boat` })
 
-    // Лодка
-    e.remove({ id: 'gtceu:shaped/rubber_boat' })
-    e.remove({ id: 'gtceu:assembler/rubber_boat' })
+        // Лодка с сундуком
+        e.remove({ id: `gtceu:shaped/${woodType}_chest_boat` })
+        e.remove({ id: `gtceu:assembler/${woodType}_chest_boat` })
+    })
 
-    // Лодка с сундуком
-    e.remove({ id: 'gtceu:shaped/rubber_chest_boat' })
-    e.remove({ id: 'gtceu:assembler/rubber_chest_boat' })
-
-    //#endregion
-
-    //#region Креозотовое
-
-    // Ступень
-    e.remove({ id : 'gtceu:shaped/treated_stairs' })
-    e.remove({ id : 'gtceu:assembler/treated_stairs' })
-
-    // Полублок
-    e.remove({ id: 'gtceu:shaped/treated_slab_saw' })
-    e.remove({ id: 'gtceu:cutter/treated_slab' })
-    e.remove({ id: 'gtceu:cutter/treated_slab_distilled_water' })
-    e.remove({ id: 'gtceu:cutter/treated_slab_water' })
-    
-    // Забор
-    e.remove({ id: 'gtceu:shaped/treated_fence' })
-    e.remove({ id: 'gtceu:assembler/treated_fence' })
-
-    // Нажимная плита
-    e.remove({ id: 'gtceu:shaped/treated_wood_plate' })
-
-    // Люк
-    e.remove({ id: 'gtceu:shaped/treated_trapdoor_iron' })
-    e.remove({ id: 'gtceu:shaped/treated_trapdoor_steel' })
-    e.remove({ id: 'gtceu:assembler/treated_trapdoor_steel' })
-    e.remove({ id: 'gtceu:assembler/treated_trapdoor_iron' })
-
-    // Кнопка
-    e.remove({ id: 'gtceu:shapeless/treated_wood_button' })
-
-    // Дверь
-    e.remove({ id: 'gtceu:shaped/treated_door' })
-    e.remove({ id: 'gtceu:assembler/treated_door' })
-
-    // Калитка
-    e.remove({ id: 'gtceu:shaped/treated_fence_gate' })
-    e.remove({ id: 'gtceu:shaped/treated_fence_gate_screws' })
-    e.remove({ id: 'gtceu:assembler/treated_fence_gate' })
-
-    // Табличка
-    e.remove({ id: 'gtceu:shaped/treated_sign_iron' })
-    e.remove({ id: 'gtceu:shaped/treated_sign_steel' })
-    e.remove({ id: 'gtceu:assembler/treated_sign_steel' })
-    e.remove({ id: 'gtceu:assembler/treated_sign_iron' })
-    
-    // Висящая табличка
-    e.remove({ id : 'gtceu:assembler/treated_hanging_sign' })
-
-    // Лодка
-    e.remove({ id: 'gtceu:shaped/treated_boat' })
-    e.remove({ id: 'gtceu:assembler/treated_boat' })
-
-    // Лодка с сундуком
-    e.remove({ id: 'gtceu:shaped/treated_chest_boat' })
-    e.remove({ id: 'gtceu:assembler/treated_chest_boat' })
+    // Креозот доски -> 2 палки
+    e.remove({ id: 'gtceu:shaped/treated_wood_stick' })
 
     //#region Creosote-Treated Wood Planks -> Treated Wood Pulp
     e.recipes.gtceu.macerator('tfg:treated_wood_dust')             
         .itemInputs('gtceu:treated_wood_planks')
         .itemOutputs('gtceu:treated_wood_dust')
         .EUt(4).duration(120)
-    //#endregion
-
     //#endregion
     
     //#endregion

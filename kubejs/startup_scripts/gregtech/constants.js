@@ -54,6 +54,11 @@ global.GTCEU_HIDED_ITEMS = [
     'gtceu:tiny_netherrack_dust'
 ];
 
+global.GTCEU_WOOD_TYPES = [
+    "rubber",
+    "treated"
+];
+
 global.TFG_EXTRUDER_MOLDS = [
     'tfg:mining_hammer_head_extruder_mold',
     'tfg:sword_head_extruder_mold',
