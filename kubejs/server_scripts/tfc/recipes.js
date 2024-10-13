@@ -1914,114 +1914,55 @@ const registerTFCRecipes = (e) => {
 
     //#endregion
 
-    //#region Земля
+    //#region Земля и ее виды
     e.recipes.gtceu.macerator('tfg:dirt_from_bio_chaff')             
         .itemInputs('gtceu:bio_chaff')
         .itemOutputs('tfc:dirt/loam')
         .duration(300)
         .EUt(4)
-    //#endregion
-
-
-
-
-
-
-
-
-
-
-
-
-    
-}
-
-const registerTFCRecipes1 = (e) => {
-
-    
-
-    
-
-
-
-    
-
-    
-
-    //#endregion
-    
-    //#region Земля
 
     // Loam + Silt -> Silty Loam (Миксер)
-    e.recipes.gtceu.mixer('silty_loam_dirt')             
+    e.recipes.gtceu.mixer('tfg:silty_loam_dirt')             
         .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
         .itemOutputs('tfc:dirt/silty_loam')
         .duration(1600)
         .EUt(12)
 
     // Silty Loam + Sticks -> Rooted Silty Loam (Миксер)
-    e.recipes.gtceu.mixer('rooted_silty_loam_dirt')             
-        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
+    e.recipes.gtceu.mixer('tfg:rooted_silty_loam_dirt')             
+        .itemInputs('tfc:dirt/silty_loam', '#forge:rods/wooden')
         .itemOutputs('tfc:rooted_dirt/silty_loam')
         .duration(1600)
         .EUt(12)
 
     // Loam + Sand -> Sandy Loam (Миксер)
-    e.recipes.gtceu.mixer('sandy_loam_dirt')             
+    e.recipes.gtceu.mixer('tfg:sandy_loam_dirt')             
         .itemInputs('tfc:dirt/loam', '#forge:sand')
         .itemOutputs('tfc:dirt/sandy_loam')
         .duration(1600)
         .EUt(12)
 
-    // Loam + Silt -> Silty Loam (Create Миксер)
-    e.recipes.gtceu.create_mixer('silty_loam_dirt')             
-        .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
-        .itemOutputs('tfc:dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
-    // Silty Loam + Sticks -> Rooted Silty Loam (Create Миксер)
-    e.recipes.gtceu.create_mixer('rooted_silty_loam_dirt')             
-        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
-        .itemOutputs('tfc:rooted_dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
-    // Loam + Sand -> Sandy Loam (Create Миксер)
-    e.recipes.gtceu.create_mixer('sandy_loam_dirt')             
-        .itemInputs('tfc:dirt/loam', '#forge:sand')
-        .itemOutputs('tfc:dirt/sandy_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
+    // Грязь -> Трава
     global.TFC_MUD_TYPES.forEach(mud => {
         e.smelting(`tfc:dirt/${mud}`, `tfc:mud/${mud}`)
-            .id(`tfg:smelting/${mud}_mud_to_grass`)
+            .id(`tfg:smelting/tfc/${mud}_mud_to_grass`)
     })
-
     //#endregion
 
     //#region Грязь
-
     global.TFC_MUD_TYPES.forEach(mud => {
         // Dirt -> Mud
-        e.recipes.gtceu.mixer(`${mud}_grass_to_mud`)             
+        e.recipes.gtceu.mixer(`tfg:${mud}_grass_to_mud`)             
             .itemInputs(`tfc:dirt/${mud}`)
             .inputFluids(Fluid.of('minecraft:water', 100))
             .itemOutputs(`tfc:mud/${mud}`)
             .duration(200)
             .EUt(16)
     })
-
     //#endregion
 
     //#region Грязь кирпичи
-    
     global.TFC_MUD_TYPES.forEach(mud => {
-        
         // Влажный кирпич -> Кирпич
         e.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)
             .id(`tfg:smelting/${mud}_drying_brick_to_brick`)
@@ -2050,16 +1991,19 @@ const registerTFCRecipes1 = (e) => {
             .itemInputs(`5x tfc:mud_brick/${mud}`)
             .inputFluids(Fluid.of('gtceu:concrete', 72))
             .itemOutputs(`4x tfc:mud_bricks/${mud}`)
-            .duration(50)
-            .EUt(2)
+            .EUt(2).duration(50)
 
         // Блок кирпичей -> Ступени
         e.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_stairs` })
 
         e.stonecutting(`tfc:mud_bricks/${mud}_stairs`, `tfc:mud_bricks/${mud}`)
             .id(`tfc:stonecutting/soil/${mud}_mud_bricks_stairs`)
-
-        generateCutterRecipe(e, `tfc:mud_bricks/${mud}`, 0, `tfc:mud_bricks/${mud}_stairs`, 100, 8, `${mud}_mud_bricks_to_stairs`)
+        
+        e.recipes.gtceu.cutter(`tfg:${mud}_mud_bricks_to_stairs`)             
+            .itemInputs(`tfc:mud_bricks/${mud}`)
+            .circuit(0)
+            .itemOutputs(`tfc:mud_bricks/${mud}_stairs`)
+            .EUt(8).duration(100)
 
         // Блок кирпичей -> Плиты
         e.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_slab` })
@@ -2067,7 +2011,11 @@ const registerTFCRecipes1 = (e) => {
         e.stonecutting(`2x tfc:mud_bricks/${mud}_slab`, `tfc:mud_bricks/${mud}`)
             .id(`tfc:stonecutting/soil/${mud}_mud_bricks_slab`)
 
-        generateCutterRecipe(e, `tfc:mud_bricks/${mud}`, 1, `2x tfc:mud_bricks/${mud}_slab`, 100, 8, `${mud}_mud_bricks_to_slab`)
+        e.recipes.gtceu.cutter(`tfg:${mud}_mud_bricks_to_slabs`)             
+            .itemInputs(`tfc:mud_bricks/${mud}`)
+            .circuit(1)
+            .itemOutputs(`2x tfc:mud_bricks/${mud}_slab`)
+            .EUt(8).duration(100)
 
         // Блок кирпичей -> Стена
         e.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_wall` })
@@ -2075,14 +2023,69 @@ const registerTFCRecipes1 = (e) => {
         e.stonecutting(`tfc:mud_bricks/${mud}_wall`, `tfc:mud_bricks/${mud}`)
             .id(`tfc:stonecutting/soil/${mud}_mud_bricks_wall`)
 
-        generateCutterRecipe(e, `tfc:mud_bricks/${mud}`, 2, `tfc:mud_bricks/${mud}_wall`, 100, 8, `${mud}_mud_bricks_to_wall`)
+        e.recipes.gtceu.cutter(`tfg:${mud}_mud_bricks_to_wall`)             
+            .itemInputs(`tfc:mud_bricks/${mud}`)
+            .circuit(2)
+            .itemOutputs(`tfc:mud_bricks/${mud}_wall`)
+            .EUt(8).duration(100)
+    })
+
+    //#endregion
+
+    //#region Дерево
+    
+    // Какие то рецепты дерева
+    global.TFC_WOOD_TYPES.forEach(wood => {
+        e.remove({ id: `tfc:crafting/wood/${wood}_axle` })
+        e.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
+        e.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
+        e.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
+        e.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
+        e.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
+    
+        // Бревна -> Пиломатериалы
+        generateCutterRecipe(e, `#tfc:${wood}_logs`, null, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+
+        // Доски -> Пиломатериалы
+        generateCutterRecipe(e, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
+
+        // Ступень -> Пиломатериалы
+        generateCutterRecipe(e, `tfc:wood/planks/${wood}_stairs`, null, `3x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
+    
+
+        // Плита -> Пиломатериалы
+        generateCutterRecipe(e, `tfc:wood/planks/${wood}_slab`, null, `2x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
+
+        // ? -> Деревянная нажимная пластина
+        e.shaped(`tfc:wood/planks/${wood}_pressure_plate`, [
+            'ABA',
+            'CDC',
+            'AEA'  
+        ], {
+            A: '#forge:screws/wood',
+            B: '#tfc:hammers',
+            C: `tfc:wood/planks/${wood}_slab`,
+            D: '#forge:springs',
+            E: '#forge:tools/screwdrivers'
+        }).id(`tfc:crafting/wood/${wood}_pressure_plate`)
+
+        e.recipes.gtceu.assembler(`${wood}_pressure_plate`)             
+            .itemInputs('#forge:springs', `2x tfc:wood/planks/${wood}_slab`)
+            .circuit(0)
+            .itemOutputs(`2x tfc:wood/planks/${wood}_pressure_plate`)
+            .duration(50)
+            .EUt(2)
+
+        // ? -> Деревянная кнопка
+        e.remove({ id: `tfc:crafting/wood/${wood}_button` })
+
+        generateCutterRecipe(e, `tfc:wood/planks/${wood}_pressure_plate`, null, `6x tfc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
         
     })
 
     //#endregion
 
     //#region Камень
-
     global.TFC_STONE_TYPES.forEach(stone => {
     
         let stoneMaterial = TFGHelpers.getMaterial(stone);
@@ -2093,8 +2096,8 @@ const registerTFCRecipes1 = (e) => {
         e.recipes.gtceu.assembler(`tfg:tfc/${stone}_loose_to_brick`)             
             .itemInputs(`tfc:rock/loose/${stone}`)
             .itemOutputs(`tfc:brick/${stone}`)
-            .duration(40)
-            .EUt(8)
+            .EUt(8).duration(40)
+            
 
         //#region Сырой камень
 
@@ -2102,15 +2105,13 @@ const registerTFCRecipes1 = (e) => {
         e.recipes.gtceu.rock_breaker(`${stone}_raw`)             
             .notConsumable(`tfc:rock/raw/${stone}`)
             .itemOutputs(`tfc:rock/raw/${stone}`)
-            .duration(16)
-            .EUt(7)
+            .EUt(7).duration(16)
 
         // Сырой камень -> Булыжник
         e.recipes.gtceu.forge_hammer(`${stone}_raw_to_cobble`)             
             .itemInputs(`tfc:rock/raw/${stone}`)
             .itemOutputs(`tfc:rock/cobble/${stone}`)
-            .duration(10)
-            .EUt(16)
+            .EUt(16).duration(10)
 
         // Сырой камень -> Ступени
         e.remove({ id: `tfc:crafting/rock/${stone}_raw_stairs` })
@@ -2245,7 +2246,7 @@ const registerTFCRecipes1 = (e) => {
         // Кирпич -> Блок кирпичей
         e.recipes.gtceu.assembler(`bricks_${stone}`)             
             .itemInputs(`5x tfc:brick/${stone}`)
-            .circuit(0)
+            .circuit(1)
             .inputFluids(Fluid.of('gtceu:concrete', 72))
             .itemOutputs(`4x tfc:rock/bricks/${stone}`)
             .duration(50)
@@ -2383,7 +2384,7 @@ const registerTFCRecipes1 = (e) => {
 
         e.recipes.gtceu.assembler(`aqueduct_${stone}`)             
             .itemInputs(`3x tfc:brick/${stone}`)
-            .circuit(1)
+            .circuit(2)
             .inputFluids(Fluid.of('gtceu:concrete', 16))
             .itemOutputs(`tfc:rock/aqueduct/${stone}`)
             .duration(50)
@@ -2639,17 +2640,15 @@ const registerTFCRecipes1 = (e) => {
     //#region Песок
 
     // Песок душ -> Желтый песок
-    // TODO: Включить после добавления ада
-    /*
-    e.recipes.gtceu.centrifuge('soul_sand_separation')             
+    e.recipes.gtceu.centrifuge('tfg:soul_sand_separation')             
         .itemInputs('minecraft:soul_sand')
         .chancedOutput('tfc:sand/yellow', 9000, 130)
         .chancedOutput('gtceu:small_saltpeter_dust', 8000, 480)
         .chancedOutput('gtceu:tiny_coal_dust', 2000, 340)
         .outputFluids(Fluid.of('gtceu:oil', 80))
         .duration(200)
-        .EUt(80)*/
-
+        .EUt(80)
+    
     // Нефтеносный -> Желтый песок
     e.recipes.gtceu.centrifuge('oilsands_ore_separation')             
         .itemInputs('#forge:ores/oilsands')
@@ -2789,7 +2788,7 @@ const registerTFCRecipes1 = (e) => {
 
         generateCutterRecipe(e, `tfc:cut_sandstone/${sandColor}`, 2, `tfc:cut_sandstone/${sandColor}_wall`, 100, 8, `${sandColor}_cut_sandstone_to_wall`)
     })
-    
+
     // Коричневый гравий -> Песок
     e.recipes.gtceu.forge_hammer('brown_gravel_to_sand')             
         .itemInputs('#tfc:brown_gravel')
@@ -2840,60 +2839,7 @@ const registerTFCRecipes1 = (e) => {
         .EUt(2)
 
     //#endregion
-    
-    //#region Дерево
-    
-    // Какие то рецепты дерева
-    global.TFC_WOOD_TYPES.forEach(wood => {
-        e.remove({ id: `tfc:crafting/wood/${wood}_axle` })
-        e.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
-        e.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
-        e.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
-        e.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
-        e.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
-    
-        // Бревна -> Пиломатериалы
-        generateCutterRecipe(e, `#tfc:${wood}_logs`, null, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
 
-        // Доски -> Пиломатериалы
-        generateCutterRecipe(e, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
-
-        // Ступень -> Пиломатериалы
-        generateCutterRecipe(e, `tfc:wood/planks/${wood}_stairs`, null, `3x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
-    
-
-        // Плита -> Пиломатериалы
-        generateCutterRecipe(e, `tfc:wood/planks/${wood}_slab`, null, `2x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
-
-        // ? -> Деревянная нажимная пластина
-        e.shaped(`tfc:wood/planks/${wood}_pressure_plate`, [
-            'ABA',
-            'CDC',
-            'AEA'  
-        ], {
-            A: '#forge:screws/wood',
-            B: '#tfc:hammers',
-            C: `tfc:wood/planks/${wood}_slab`,
-            D: '#forge:springs',
-            E: '#forge:tools/screwdrivers'
-        }).id(`tfc:crafting/wood/${wood}_pressure_plate`)
-
-        e.recipes.gtceu.assembler(`${wood}_pressure_plate`)             
-            .itemInputs('#forge:springs', `2x tfc:wood/planks/${wood}_slab`)
-            .circuit(0)
-            .itemOutputs(`2x tfc:wood/planks/${wood}_pressure_plate`)
-            .duration(50)
-            .EUt(2)
-
-        // ? -> Деревянная кнопка
-        e.remove({ id: `tfc:crafting/wood/${wood}_button` })
-
-        generateCutterRecipe(e, `tfc:wood/planks/${wood}_pressure_plate`, null, `6x tfc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
-        
-    })
-
-    //#endregion
-    
     //#region Рецепты порошков
     
     // Удаление рецептов
@@ -3685,56 +3631,25 @@ const registerTFCRecipes1 = (e) => {
     }
     
     //#endregion
-}
 
-// {
-//     "category": "minecraft:campfire_cooking"
-// },
-// {
-//     "category": "minecraft:brewing"
-// },
-// {
-//     "category": "minecraft:stonecutting"
-// },
-// {
-//     "category": "emi:anvil_repairing"
-// },
-// {
-//     "category": "emi:world_interaction"
-// },
-// {
-//     "category": "gtceu:primitive_blast_furnace"
-// },
-// {
-//     "category": "create:mystery_conversion"
-// },
-// {
-//     "category": "jumbofurnace:jumbo_furnace_upgrade"
-// },
-// {
-//     "category": "jumbofurnace:jumbo_smelting"
-// },
-// {
-//     "category": "emi:composting"
-// },
-// {
-//     "category": "emi:fuel"
-// },
-// {
-//     "id": "/emi:/crafting/repairing/[^*]+/"
-// },
-// {
-//     "id": "/emi:/grindstone/repairing/minecraft/[^*]+/"
-// },
-// {
-//     "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
-// },
-// {
-//     "id": "/create:create.toolbox.color.block.create.[^*]+/"
-// },
-// {
-//     "id": "/sophisticatedbackpacks:single_color_[^*]+/"
-// },
-// {
-//     "id": "sophisticatedbackpacks:multiple_colors"
-// }
+    //Fire bricks
+    e.recipes.gtceu.compressor('fire_bricks')             
+        .itemInputs('4x tfc:ceramic/fire_brick')
+        .itemOutputs('2x tfc:fire_bricks')
+        .duration(800)
+        .EUt(2)
+
+    e.recipes.gtceu.extractor('fire_bricks_to_ceramic_fire_brick')             
+        .itemInputs('tfc:fire_bricks')
+        .itemOutputs('2x tfc:ceramic/fire_brick')
+        .duration(800)
+        .EUt(2)
+
+    //fire brick
+    e.recipes.gtceu.alloy_smelter('fire_bricks')             
+        .itemInputs('tfc:fire_clay')
+        .notConsumable('gtceu:ingot_casting_mold')
+        .itemOutputs('tfc:ceramic/fire_brick')
+        .duration(800)
+        .EUt(2)
+}

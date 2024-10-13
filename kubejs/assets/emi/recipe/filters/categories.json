@@ -19,7 +19,35 @@
             "category": "emi:composting"
         },
         {
+            "category": "emi:anvil_repairing"
+        },
+        {
             "category": "gtceu:primitive_blast_furnace"
+        },
+        {
+            "category": "emi:fuel"
+        },
+        {
+            "category": "create:mystery_conversion"
+        },
+
+        {
+            "id": "/emi:/crafting/repairing/[^*]+/"
+        },
+        {
+            "id": "/emi:/grindstone/repairing/minecraft/[^*]+/"
+        },
+        {
+            "id": "/emi:/crafting/shulker_box_dying/minecraft/[^*]+/"
+        },
+        {
+            "id": "/create:create.toolbox.color.block.create.[^*]+/"
+        },
+        {
+            "id": "/sophisticatedbackpacks:single_color_[^*]+/"
+        },
+        {
+            "id": "sophisticatedbackpacks:multiple_colors"
         },
 
         {
