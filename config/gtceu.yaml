@@ -284,6 +284,10 @@ machines:
   # Need restart Minecraft to apply.
   enableMoreDualHatchAbility: true
 
+  # Default maximum parallel of steam multiblocks
+  # Default: 8
+  steamMultiParallelAmount: 8
+
   # Small Steam Boiler Options
   smallBoilers:
     # The amount of steam a Steam Solid Boiler produces per second at max temperature.
