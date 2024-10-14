@@ -1922,7 +1922,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ores/certus_quartz)"
+						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_certus_quartz)item(gtceu:raw_certus_quartz)item(gtceu:poor_raw_certus_quartz))" 
 					}
 				}
 				title: "Any #forge:ores/certus_quartz"

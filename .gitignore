@@ -9,6 +9,9 @@
 
 # Configs
 config/jei/world/
+config/roughlyenoughitems/
+config/fantasticlib/
+config/gregtech/terminal/
 
 config/oculus.properties
 config/fml.toml
@@ -17,6 +20,17 @@ config/xaerominimap_entities.json
 config/voicechat/username-cache.json
 config/xaerominimap.txt
 config/xaeroworldmap.txt
+config/jei/worldSettings.cfg
+config/JustEnoughCalculation/record.json
+config/splash.properties
+config/customloadingscreen_timings.nbt
+config/simplelogin.cfg
+config/fancymenu/menu_identifiers.db
+config/fancymenu/user_variables.db
+config/AppliedEnergistics2/items.csv
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/cherishedworlds/favorites.dat
+
 
 # .minecraft
 crash-reports/*
@@ -46,17 +60,23 @@ chiselsandbits/*
 .vscode/
 .idea/
 .bobby/
+backups/
 profileImage/
 crash-reports/
+classOut/
 logs/
+cache/
 saves/
 ldlib/
 local/
 modernfix/
+vintagefix/
 XaeroWaypoints*/
 XaeroWorldMap*/
 xaero/
 CustomSkinLoader/
+EverlastingSkins/
+visualores/
 screenshots/
 shaderpacks/
 chiselsandbits/
@@ -70,13 +90,19 @@ usernamecache.json
 usercache.json
 rhino.local.properties
 fancymenu_data/last_world.fmdata
+local/ftbutilities/backups.json
+
 profile.json
+OpenComputersMod-*
 emi.json
 servers.dat
 servers.dat_old
 cherishedworlds-favorites.dat
 realms_persistence.json
 minecraftinstance.json
+hei_bookmarks.ini
+optionsof.txt
+optionsshaders.txt
 knownkeys.txt
 
 # Server data
@@ -89,4 +115,3 @@ knownkeys.txt
 !.github/buildtools/serverpack/minecraft_server.jar
 .github/buildtools/serverpack/*
 /icon-exports-x32
-

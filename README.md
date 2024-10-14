@@ -2,15 +2,15 @@
 
 <div align="center">
   <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern">
-    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="75">
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="100">
   </a>
   <br/>
 
-  <a href="https://discord.com/invite/AEaCzCTUwQ">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/social/discord-singular_vector.svg" alt="Chat on Discord"></a>
+  <a href="https://discord.gg/AEaCzCTUwQ">
+  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
 
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1">
-  <img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges/assets/compact-minimal/available/curseforge_vector.svg" alt="Available on СurseForge"></a>
+  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on СurseForge" height="50"></a>
   <br/>
   <p align="center">
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki">Explore the wiki</a>
@@ -19,12 +19,12 @@
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Request Features</a>
     ·
-    <a href="https://github.com/TerraFirmaGreg-Team/projects/10">Roadmap</a>
+    <a href="https://github.com/orgs/TerraFirmaGreg-Team/projects/10">Roadmap</a>
   </p>
 </div>
 <br/>
 
-![logotfg](https://user-images.githubusercontent.com/52341158/131987786-bf99e1af-318c-4ed4-a6f8-c4617d692adb.png)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_large.png?raw=true)
 
 ***
 
@@ -45,4 +45,4 @@ Also in the modpack there are other interesting mods that will allow you to pass
 
 and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
 
-![img](https://github.com/TerraFirmaGreg-Team/Modpack-1.12.x/assets/55663835/0a71cfbf-c519-45b8-820c-c5ad6bf90e46)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)

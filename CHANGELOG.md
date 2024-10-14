@@ -41,6 +41,26 @@
 ### Updated mods
 - ??
 
+## [0.7.14] - 01.10.2024
+### Changes
+- Fixed a crash when cutting down trees with mushrooms on the trunk.
+- Adjusted the FTB backups backup that runs every hour.
+- FTB backups removed from serverpack.
+### Removed mods
+- TFCDesirePaths
+### Updated mods
+- TFCVesselTooltip 1.0 -> 1.1
+- waterflasks 3.0.2. -> 3.0.3
+- recipeessentials 3.4 -> 3.6
+- noisium 2.0.3 -> 2.3.0
+- cc-tweaked 1.111.0 -> 1.113.1
+- cloth-config 11.1.118 -> 11.1.136
+- curios 5.9.1 -> 5.10.0
+- astikorcarts 1.1.7 -> 1.1.8
+- TFCAstikorCarts 1.1.8.1 -> 1.1.8.2
+- u_team_core 5.1.4.299 -> 5.1.4.312
+- treetap 0.3.0 -> 0.4.0
+
 ## [0.7.13] - 01.10.2024
 ### Changes
 - Fixed Long Distance Pipes recipe.
