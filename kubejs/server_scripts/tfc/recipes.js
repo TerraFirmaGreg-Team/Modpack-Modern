@@ -3373,12 +3373,14 @@ const registerTFCRecipes = (e) => {
     }).id('tfc:crafting/blast_furnace')
 
     // Тыква -> Кусочки тыквы
-    e.recipes.minecraft.crafting_shaped('5x tfc:food/pumpkin_chunks', [
+    e.remove({ id: 'tfc:crafting/pumpkin_chunks' })
+
+    e.shaped('4x tfc:food/pumpkin_chunks', [
         'AB'
     ], {
         A: '#tfc:knives',
-        B: 'tfc:pumpkin'
-    })
+        B: TFC.ingredient.notRotten('tfc:pumpkin')
+    }).id('tfg:shaped/tfc/pumpkin_chunks')
 
     // Lime
     e.smelting('tfc:powder/lime', 'tfc:powder/flux')
