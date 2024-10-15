@@ -32,6 +32,30 @@ config/AppliedEnergistics2/CustomRecipes.cfg
 config/cherishedworlds/favorites.dat
 
 
+# .minecraft
+crash-reports/*
+logs/*
+saves/*
+ldlib/
+local/*
+modernfix/*
+XaeroWaypoints*
+XaeroWorldMap/*
+xaero/*
+defaultconfigs/*
+CustomSkinLoader/*
+screenshots/*
+shaderpacks/*
+chiselsandbits/*
+.vscode/*
+.new_mods/*
+
+# Extensions
+**/*.log
+**/*.gz
+**/*.DS_Store
+**/*.jar
+
 # Client data
 .vscode/
 .idea/
@@ -56,6 +80,7 @@ visualores/
 screenshots/
 shaderpacks/
 chiselsandbits/
+backups/
 
 .curseclient
 .sl_password
@@ -89,4 +114,4 @@ knownkeys.txt
 !.github/buildtools/serverpack/user_jvm_args.txt
 !.github/buildtools/serverpack/minecraft_server.jar
 .github/buildtools/serverpack/*
-
+/icon-exports-x32

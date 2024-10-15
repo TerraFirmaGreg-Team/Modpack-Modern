@@ -50,6 +50,9 @@
 	#.
 	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
 	ignoreFabulousWarning = false
+	#.
+	#Disable to prevent being rotated while seated on a Moving Contraption
+	rotateWhenSeated = true
 
 	#.
 	#Configure your vision range when submerged in Create's custom fluids

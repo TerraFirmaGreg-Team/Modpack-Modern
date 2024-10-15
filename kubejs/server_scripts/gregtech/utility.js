@@ -25,27 +25,9 @@ const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_o
 }
 
 const generateCutterRecipe = (event, input, circuit, output, duration, EUt, id) => {
-    // Вот зачем я, скажете вы, делаю тут всякие костыли, 
-    // потому что блядский разработчик GTCEu не может исправить баги своего мода
-    // Я так устал..
-
-    const recipe1 = event.recipes.gtceu.cutter(`tfg:${id}_water`)             
+    const recipe1 = event.recipes.gtceu.cutter(`tfg:${id}`)             
         .itemInputs(input)
         .inputFluids(Fluid.of('minecraft:water', 4))
-        .itemOutputs(output)
-        .duration(duration)
-        .EUt(EUt)
-
-    const recipe2 = event.recipes.gtceu.cutter(`tfg:${id}_dist_water`)             
-        .itemInputs(input)
-        .inputFluids(Fluid.of('gtceu:distilled_water', 3))
-        .itemOutputs(output)
-        .duration(duration)
-        .EUt(EUt)
-
-    const recipe3 = event.recipes.gtceu.cutter(`tfg:${id}_lubricant`)             
-        .itemInputs(input)
-        .inputFluids(Fluid.of('gtceu:lubricant', 1))
         .itemOutputs(output)
         .duration(duration)
         .EUt(EUt)
@@ -53,11 +35,9 @@ const generateCutterRecipe = (event, input, circuit, output, duration, EUt, id) 
     event.recipes.createCutting(output, input)
         .id(`tfg:cutting/${id}`)
 
-    
+
     if (circuit != null) {
         recipe1.circuit(circuit)
-        recipe2.circuit(circuit)
-        recipe3.circuit(circuit)
     }
 }
 

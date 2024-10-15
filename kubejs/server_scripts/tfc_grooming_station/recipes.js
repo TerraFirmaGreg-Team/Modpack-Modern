@@ -1,7 +1,7 @@
 // priority: 0
 
-const registerTFCGroomingStationRecipes = (event) => {
-    const materials = [
+const registerTFCGroomingStationRecipes = (e) => {
+    const GROOMING_MATERIALS = [
         'copper',
         'bismuth_bronze',
         'bronze',
@@ -13,9 +13,10 @@ const registerTFCGroomingStationRecipes = (event) => {
         'blue_steel'
     ]
 
-    materials.forEach(material => {
-        console.log(material)
-        event.shaped(`tfcgroomer:${material}_grooming_station`, [
+    GROOMING_MATERIALS.forEach(material => {
+        e.remove({ id: `tfcgroomer:${material}_grooming_station` })
+        
+        e.shaped(`tfcgroomer:${material}_grooming_station`, [
             'ABA', 
             'AAA',
             'C C'  
