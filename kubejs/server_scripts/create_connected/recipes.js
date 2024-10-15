@@ -71,4 +71,6 @@ const registerCreateConnectedRecipes = (event) => {
         .itemOutputs('create_connected:control_chip')
         .duration(720)
         .EUt(16)
+
+    event.remove({ input: 'create:copper_sheet'})
 }
