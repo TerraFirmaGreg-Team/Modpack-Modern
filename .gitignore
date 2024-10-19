@@ -34,6 +34,7 @@ config/cherishedworlds/favorites.dat
 
 # .minecraft
 crash-reports/*
+kubejs1/*
 logs/*
 saves/*
 ldlib/
