@@ -1,11 +1,6 @@
 // priority: 0
 
 global.GTCEU_DISABLED_ITEMS = [
-    // Пыль пшеницы
-    'gtceu:wheat_dust',
-    'gtceu:small_wheat_dust',
-    'gtceu:tiny_wheat_dust',
-
     //#region Резиновое
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 
@@ -43,34 +38,20 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:treated_wood_chest_boat',
     //#endregion
 
-    // Примитивная помпа
+    //#region Примитивная помпа
     'gtceu:infinite_water_cover',
     'gtceu:pump_deck', 
     'gtceu:pump_hatch', 
     'gtceu:primitive_pump',
+    //#endregion
+
+    //#region Примитивная домна
+    'gtceu:primitive_blast_furnace',
+    //#endregion
 
     // Другое
-    'gtceu:flint_mortar',
-    'gtceu:flint_knife',
     'gtceu:firebrick',
     'gtceu:firebricks',
-    'gtceu:wood_drum',
-    'gtceu:primitive_blast_furnace',
-    
-    'gtceu:wood_screwdriver_tip',
-    'gtceu:wood_wrench_tip',
-    'gtceu:wood_drill_head',
-    'gtceu:wood_chainsaw_head',
-
-    'gtceu:stone_drill_head', 
-    'gtceu:stone_chainsaw_head', 
-    'gtceu:stone_buzz_saw_blade', 
-    'gtceu:stone_wrench_tip',
-
-    'gtceu:rubber_sapling', 
-    'gtceu:rubber_log', 
-    'gtceu:rubber_leaves', 
-    'gtceu:rubber_planks',
     
 ];
 

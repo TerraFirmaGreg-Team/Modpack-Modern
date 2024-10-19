@@ -45,8 +45,11 @@ const registerFirmaLifeBlockTags = (event) => {
 
     //#region Для того, чтобы стенками greenhouse могли быть фреймы грега (для передачи воды)
     event.add('firmalife:always_valid_greenhouse_wall', '#forge:frames')
-    event.add('firmalife:always_valid_greenhouse_wall', '#forge:tiny_fluid_pipes')
-    event.add('firmalife:always_valid_greenhouse_wall', '#forge:small_item_pipes')
+    // event.add('firmalife:always_valid_greenhouse_wall', '#forge:tiny_fluid_pipes')
+    // event.add('firmalife:always_valid_greenhouse_wall', '#forge:small_item_pipes')
+    // event.add('firmalife:always_valid_greenhouse_wall', '#forge:normal_item_pipes')
+    // event.add('firmalife:always_valid_greenhouse_wall', '#forge:large_item_pipes')
+    // Добавление труб в текущий тег не дает никакого результата, поэтому я сделал это через TFG-Core.
     //#endregion
 }
 

@@ -140,21 +140,21 @@ const registerGregTechItemTags = (event) => {
     //#endregion
 
     // Удаление тегов и скрытие предметов
-    // global.GTCEU_DISABLED_ITEMS.forEach(item => {
-    //     event.removeAllTagsFrom(item)
-    //     event.add('c:hidden_from_recipe_viewers', item)
-    // })
+    global.GTCEU_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
 
     // Скрытие предметов
-    // global.GTCEU_HIDED_ITEMS.forEach(item => {
-    //     event.add('c:hidden_from_recipe_viewers', item)
-    // })
+    global.GTCEU_HIDED_ITEMS.forEach(item => {
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
 }
 
 const registerGregTechBlockTags = (event) => {
     
     // Удаление тегов и скрытие предметов
-    // global.GTCEU_DISABLED_ITEMS.forEach(item => {
-    //     event.removeAllTagsFrom(item)
-    // })
+    global.GTCEU_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
 }

@@ -1650,6 +1650,14 @@ const registerGregTechRecipes = (e) => {
 
     //#endregion
 
+    //#region TODO: Времененный рецепт Nether Air -> End Air
+    e.recipes.gtceu.electrolyzer('tfg:gtceu/liquid_nether_air_to_liquid_ender_air')             
+        .itemInputs('#forge:dusts/netherrack')
+        .inputFluids(Fluid.of('gtceu:liquid_nether_air', 1000))
+        .outputFluids(Fluid.of('gtceu:liquid_ender_air', 250))
+        .EUt(512).duration(1250)
+    //#endregion
+
     //#region Кварцевый песок
     e.remove({ id: 'gtceu:shaped/quartz_sand' })
     e.shaped('gtceu:quartz_sand_dust', [
@@ -2171,7 +2179,7 @@ const registerGregTechRecipes = (e) => {
     //#endregion
 
     //#region Огнеупорные кирпичи (блок)
-    e.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
+    e.remove({ id: 'gtceu:shaped_fluid_container/casing_primitive_bricks' })
     //#endregion
 
     //#region Уплотненная огнеупорная глина
