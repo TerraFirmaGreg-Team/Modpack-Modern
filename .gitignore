@@ -18,8 +18,8 @@ config/fml.toml
 config/forge-client.toml
 config/xaerominimap_entities.json
 config/voicechat/username-cache.json
-config/xaerominimap.txt
-config/xaeroworldmap.txt
+# config/xaerominimap.txt
+# config/xaeroworldmap.txt
 config/jei/worldSettings.cfg
 config/JustEnoughCalculation/record.json
 config/splash.properties
