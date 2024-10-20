@@ -13,6 +13,7 @@ ServerEvents.tags('item', event => {
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
+    registerCreateLowHeatedItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
@@ -71,6 +72,7 @@ ServerEvents.tags('fluid', event => {
  */
 ServerEvents.tags('worldgen/biome', event => {
     registerTFCBiomeTags(event)
+    registerCreatePickyWheelsBiomeTags(event)
 })
 
 /**
