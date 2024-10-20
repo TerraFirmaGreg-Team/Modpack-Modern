@@ -241,12 +241,11 @@ const registerTFCItemTags = (event) => {
     })
     //#endregion
 
-    // todo:
     // Удаление тегов у отключенных предметов
-    // global.TFC_DISABLED_ITEMS.forEach(item => {
-    //     event.removeAllTagsFrom(item)
-    //     event.add('c:hidden_from_recipe_viewers', item)
-    // })
+    global.TFC_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+        event.add('c:hidden_from_recipe_viewers', item)
+    })
 }
 
 const registerTFCBlockTags = (event) => {
@@ -324,11 +323,10 @@ const registerTFCBlockTags = (event) => {
     })
     //#endregion
 
-    // todo:
-    // // Удаление тегов у отключенных предметов
-    // global.TFC_DISABLED_ITEMS.forEach(item => {
-    //     event.removeAllTagsFrom(item)
-    // })
+    // Удаление тегов у отключенных предметов
+    global.TFC_DISABLED_ITEMS.forEach(item => {
+        event.removeAllTagsFrom(item)
+    })
 }
 
 const registerTFCFluidTags = (event) => {
