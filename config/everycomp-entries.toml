@@ -34,6 +34,31 @@
 		[types.wood_type.gtceu]
 			rubber = false
 
+	[types.stone_type]
+
+		[types.stone_type.gtceu]
+			coke_oven = false
+			red_granite = false
+			marble = false
+			light_concrete = false
+			dark_concrete = false
+
+		[types.stone_type.create]
+			cut_granite = false
+			cut_diorite = false
+			cut_andesite = false
+			cut_calcite = false
+			cut_dripstone = false
+			cut_deepslate = false
+			cut_tuff = false
+			cut_asurine = false
+			cut_crimsite = false
+			cut_limestone = false
+			cut_ochrum = false
+			cut_scoria = false
+			cut_scorchia = false
+			cut_veridium = false
+
 #Disables specific entries
 [entries]
 
