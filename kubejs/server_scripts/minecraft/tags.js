@@ -27,6 +27,12 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
     //#endregion
+
+    //#region Материалы для тримминга
+    global.MINECRAFT_TRIM_MATERIALS.forEach(el => {
+        event.add('minecraft:trim_materials', el)
+    })
+    //#endregion
 }
 
 const registerMinecraftBlockTags = (event) => {

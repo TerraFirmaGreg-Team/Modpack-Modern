@@ -947,3 +947,20 @@ global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS = [
     { block: 'minecraft:waxed_weathered_copper', cutted: 'minecraft:waxed_weathered_cut_copper', stairs: 'minecraft:waxed_weathered_cut_copper_stairs', slabs: 'minecraft:waxed_weathered_cut_copper_slab', name: 'waxed_weathered_copper' },
     { block: 'minecraft:waxed_oxidized_copper', cutted: 'minecraft:waxed_oxidized_cut_copper', stairs: 'minecraft:waxed_oxidized_cut_copper_stairs', slabs: 'minecraft:waxed_oxidized_cut_copper_slab', name: 'waxed_oxidized_copper' }
 ];
+
+global.MINECRAFT_TRIM_MATERIALS =  [
+    'minecraft:amethyst_shard', 
+    'gtceu:bismuth_ingot', 
+    'minecraft:diamond', 
+    'minecraft:emerald', 
+    'minecraft:gold_ingot', 
+    'minecraft:lapis_lazuli', 
+    'gtceu:opal_gem', 
+    'gtceu:raw_pyrite', 
+    'gtceu:rose_gold_ingot', 
+    'gtceu:ruby_gem', 
+    'gtceu:sapphire_gem', 
+    'gtceu:silver_ingot', 
+    'gtceu:sterling_silver_ingot', 
+    'gtceu:topaz_gem'
+];
