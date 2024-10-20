@@ -9,7 +9,7 @@ const registerGregTechBlocks = (event) => {
         .energyDiscount(1)
         .tier(0)
         .coilMaterial(() => GTMaterials.get('copper'))
-        .texture('kubejs:block/example_block')
+        .texture('tfg:block/casings/coils/machine_coil_copper')
         .hardness(2)
         .requiresTool(true)
         .material('metal')
