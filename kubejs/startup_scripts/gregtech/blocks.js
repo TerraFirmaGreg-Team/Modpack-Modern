@@ -9,8 +9,10 @@ const registerGregTechBlocks = (event) => {
         .energyDiscount(1)
         .tier(0)
         .coilMaterial(() => GTMaterials.get('copper'))
-        .texture('tfg:block/casings/coils/machine_coil_copper')
         .hardness(2)
         .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .soundType('metal')
         .material('metal')
 }
