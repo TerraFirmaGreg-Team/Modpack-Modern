@@ -1,7 +1,7 @@
 
 
 const registerTfceaRecipes = (event) => {
-    //удаление рецептов мода
+    // Удаление рецептов мода
     event.remove({ mod: 'tfcea' })
 
     event.shaped('tfcea:refrigerator', [
@@ -15,6 +15,6 @@ const registerTfceaRecipes = (event) => {
         D: 'gtceu:lv_fluid_regulator',
         E: 'gtceu:lv_machine_hull',
         F: 'gtceu:lv_electric_pump',
-    }).id('tfcea:refrigerator')
+    }).id('tfg:shaped/refrigerator')
 
 }

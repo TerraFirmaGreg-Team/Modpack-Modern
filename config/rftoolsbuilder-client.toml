@@ -1,0 +1,21 @@
+
+#Settings for the builder
+[builder]
+	#If true a holo hud with current progress is shown above the builder
+	showProgressHud = true
+
+#Settings for the scanner, composer, and projector
+[scanner]
+	#Height of the beacon in case beacons are used
+	#Range: > 0
+	locatorBeaconHeight = 30
+	#The amount of milliseconds before the client will remove shape render data that hasn't been used. Decreasing this will free memory faster at the cost of having to update shape renders more often
+	#Range: 100 ~ 1000000
+	clientRenderDataTimeout = 10000
+	#The amount of milliseconds that a scanline 'flash' will exist on the client
+	#Range: 10 ~ 1000000
+	projectorFlashTimeout = 400
+	#The volume for the projector sound (0.0 is off)
+	#Range: 0.0 ~ 1.0
+	baseProjectorVolume = 0.4
+

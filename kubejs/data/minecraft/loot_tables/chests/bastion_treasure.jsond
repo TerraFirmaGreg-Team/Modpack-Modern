@@ -1,0 +1,293 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "gtceu:damascus_steel_ingot",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "gtceu:damascus_steel_ingot",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "gtceu:damascus_steel_ingot",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "gtceu:damascus_steel_ingot",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{DisallowContainerItem:0b,GT.Behaviours:{},GT.Tool:{AttackDamage:10.0f,AttackSpeed:-2.3000002f,Damage:0,MaxDamage:4607},HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{DisallowContainerItem:0b,GT.Behaviours:{},GT.Tool:{AttackDamage:8.0f,AttackSpeed:-2.7f,Damage:0,HarvestLevel:3,MaxDamage:4607,ToolSpeed:10.0f},HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b,TreeFelling:1b},GT.Tool:{AttackDamage:12.0f,AttackSpeed:-3.1000001f,Damage:0,HarvestLevel:3,MaxDamage:4607,ToolSpeed:8.0f},HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:diamond_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{DisallowContainerItem:0b,GT.Behaviours:{},GT.Tool:{AttackDamage:8.5f,AttackSpeed:-2.9f,Damage:0,HarvestLevel:3,MaxDamage:4607,ToolSpeed:10.0f},HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:diamond_hammer",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{DisallowContainerItem:0b,GT.Behaviours:{},GT.Tool:{AttackDamage:8.0f,AttackSpeed:-2.7f,Damage:0,HarvestLevel:3,MaxDamage:4607,ToolSpeed:10.0f},HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gtceu:diamond_mining_hammer",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{DisallowContainerItem:0b,GT.Behaviours:{AoEColumn:1,AoELayer:0,AoERow:1,MaxAoEColumn:1,MaxAoELayer:0,MaxAoERow:1},GT.Tool:{AttackDamage:8.5f,AttackSpeed:-3.1000001f,Damage:0,HarvestLevel:3,MaxDamage:13823,ToolSpeed:6.4f},HideFlags:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:diamond",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 2
+        }
+      ],
+      "rolls": 3.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 25.0,
+                "min": 12.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:spectral_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_block"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_block"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:crying_obsidian"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 23.0,
+                "min": 8.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:quartz"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 15.0,
+                "min": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gilded_blackstone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:magma_cream"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 4.0,
+        "min": 3.0
+      }
+    }
+  ],
+  "random_sequence": "minecraft:chests/bastion_treasure"
+}

@@ -1,0 +1,17 @@
+
+[core]
+
+	[core.general]
+		#If mod compatibility loader should crash hard if errors occur in that process.
+		crashOnModCompatCrash = false
+		#The default image width in px to render at.
+		defaultScale = 32
+		#If the NBT tag should be hashed with MD5 when constructing the file name, and if an auxiliary txt file should be created with the full tag contents.
+		fileNameHashTag = false
+		#If the recipe loader should crash when finding invalid recipes.
+		crashOnInvalidRecipe = false
+		#If an anonymous mod startup analytics request may be sent to our analytics service.
+		analytics = true
+		#If the version checker should be enabled.
+		versionChecker = true
+

@@ -1,25 +1,13 @@
 {
     "filters": [
         {
+            "category": "minecraft:blasting"
+        },
+        {
+            "category": "minecraft:smoking"
+        },
+        {
             "category": "minecraft:campfire_cooking"
-        },
-        {
-            "category": "minecraft:brewing"
-        },
-        {
-            "category": "minecraft:stonecutting"
-        },
-        {
-            "category": "emi:anvil_repairing"
-        },
-        {
-            "category": "emi:world_interaction"
-        },
-        {
-            "category": "gtceu:primitive_blast_furnace"
-        },
-        {
-            "category": "create:mystery_conversion"
         },
         {
             "category": "jumbofurnace:jumbo_furnace_upgrade"
@@ -31,8 +19,18 @@
             "category": "emi:composting"
         },
         {
+            "category": "emi:anvil_repairing"
+        },
+        {
+            "category": "gtceu:primitive_blast_furnace"
+        },
+        {
             "category": "emi:fuel"
         },
+        {
+            "category": "create:mystery_conversion"
+        },
+
         {
             "id": "/emi:/crafting/repairing/[^*]+/"
         },
@@ -50,6 +48,57 @@
         },
         {
             "id": "sophisticatedbackpacks:multiple_colors"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/flower_duping\//"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/stripping\/minecraft/"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/shearing/minecraft/pumpkin"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/tilling\/minecraft/"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/world\/flattening\/minecraft/"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_spring/minecraft/water"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_interaction/minecraft/cobblestone"
+        },
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/fluid_interaction/minecraft/stone"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "/emi:\/emi\/bucket_filling\/minecraft/"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/unique/minecraft/water_bottle"
+        },
+
+        {
+            "category": "emi:world_interaction",
+            "id": "emi:/world/unique/minecraft/mud"
         }
     ]
 }

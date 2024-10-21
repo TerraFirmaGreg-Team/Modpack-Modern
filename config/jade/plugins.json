@@ -22,6 +22,7 @@
     "crop_progress": true,
     "command_block": true,
     "mob_growth": true,
+    "waxed": true,
     "harvest_tool.new_line": false,
     "entity_health.max_for_render": 40,
     "entity_health.show_fractions": false,
@@ -53,11 +54,29 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "deepresonance": {
+    "crystal": true,
+    "generator_part": true
+  },
   "gtceu": {
-    "recipe_logic_provider": true,
+    "primitive_pump": true,
+    "auto_output_info": true,
     "workable_provider": true,
+    "transformer": true,
+    "controllable_provider": true,
+    "me_pattern_buffer": true,
+    "exhaust_vent_info": true,
+    "me_pattern_buffer_proxy": true,
+    "multiblock_structure": true,
+    "recipe_logic_provider": true,
+    "maintenance_info": true,
+    "machine_mode": true,
     "electric_container_provider": true,
-    "controllable_provider": true
+    "recipe_output_info": true,
+    "stained_color": true,
+    "hazard_cleaner_provider": true,
+    "cable_info": true,
+    "parallel_info": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -67,9 +86,19 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "alekiships": {
+    "furnace": true,
+    "jukebox": true,
+    "brewing_stand": true,
+    "block": true,
+    "note_block": true
+  },
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true
+  },
+  "mcjtylib": {
+    "jadeaddons": true
   },
   "ae2": {
     "part_icon": true,
@@ -84,18 +113,19 @@
     "part_name": true
   },
   "firmalife": {
-    "oven_top": true,
-    "solar_drier": true,
+    "barrel_press": true,
     "string": true,
     "vat": true,
+    "drying_mat": true,
+    "tumbler": true,
+    "cheese": true,
+    "shelf": true,
+    "oven_top": true,
+    "solar_drier": true,
     "oven_bottom": true,
     "fruit_tree_sapling": true,
     "jarbnet": true,
-    "drying_mat": true,
-    "tumbler": true,
-    "hanger": true,
-    "cheese": true,
-    "shelf": true
+    "hanger": true
   },
   "tfc": {
     "bloomery": true,
@@ -127,6 +157,7 @@
     "sheet_pile": true,
     "quern": true,
     "pit_kiln_above": true,
+    "hot_poured_glass": true,
     "gearbox": true,
     "axle": true,
     "chested_horse": true,
@@ -148,6 +179,10 @@
     "jack_o_lantern": true,
     "firepit": true,
     "ingot_pile": true
+  },
+  "firmaciv": {
+    "tfc_chest": true,
+    "barrel": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
@@ -175,5 +210,11 @@
   },
   "treetap": {
     "tap": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }
