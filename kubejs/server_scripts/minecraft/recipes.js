@@ -3876,6 +3876,28 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'minecraft:leather' })
     e.remove({ id: 'create:crushing/leather_horse_armor' })
     e.remove({ id: 'create:milling/saddle' })
+
+    // Сырая маленькая шкура -> Кожа
+    e.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+        .itemInputs('tfc:small_raw_hide')
+        .inputFluids(Fluid.of('tfc:tannin', 300))
+        .itemOutputs('minecraft:leather')
+        .EUt(4).duration(600)
+
+    // Сырая средняя шкура -> Кожа
+    e.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+        .itemInputs('tfc:medium_raw_hide')
+        .inputFluids(Fluid.of('tfc:tannin', 400))
+        .itemOutputs('2x minecraft:leather')
+        .EUt(4).duration(700)
+
+    // Сырая большая шкура -> Кожа
+    e.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+        .itemInputs('tfc:large_raw_hide')
+        .inputFluids(Fluid.of('tfc:tannin', 500))
+        .itemOutputs('3x minecraft:leather')
+        .EUt(4).duration(800)
+
     //#endregion
 
     //#region Светящийся мешок с чернилами
@@ -4227,17 +4249,24 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane' })
     e.remove({ id: 'gtceu:chemical_bath/paper_from_sugar_cane_distilled' })
 
-    e.recipes.gtceu.chemical_bath('tfg:paper_from_papyrus')             
+    e.recipes.gtceu.chemical_bath('tfg:minecraft/paper_from_papyrus')             
         .itemInputs('tfc:papyrus')
         .inputFluids(Fluid.of('minecraft:water', 100))
         .itemOutputs('minecraft:paper')
         .EUt(7).duration(100)
 
-    e.recipes.gtceu.chemical_bath('tfg:paper_from_papyrus_distilled')             
+    e.recipes.gtceu.chemical_bath('tfg:minecraft/paper_from_papyrus_distilled')             
         .itemInputs('tfc:papyrus')
         .inputFluids(Fluid.of('gtceu:distilled_water', 100))
         .itemOutputs('minecraft:paper')
         .EUt(7).duration(100)
+
+    // Unrefined Paper -> Paper
+    event.recipes.gtceu.assembler('tfg:minecraft/paper_from_unrefined_paper')
+        .itemInputs('tfc:unrefined_paper')
+        .circuit(7)
+        .itemOutputs('minecraft:paper')
+        .EUt(16).duration(50)
 
     //#endregion
 
