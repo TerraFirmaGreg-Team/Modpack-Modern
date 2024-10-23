@@ -3,6 +3,7 @@
 const registerGregTechItems = (event) => {
     event.create('tfg:unfinished_vacuum_tube', 'create:sequenced_assembly')
     event.create('tfg:unfinished_basic_electronic_circuit', 'create:sequenced_assembly')
+    event.create('tfg:unfinished_copper_coil_block', 'create:sequenced_assembly')
 
     // Extrudel Molds
     event.create('tfg:mining_hammer_head_extruder_mold')

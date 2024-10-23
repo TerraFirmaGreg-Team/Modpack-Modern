@@ -3878,21 +3878,21 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'create:milling/saddle' })
 
     // Сырая маленькая шкура -> Кожа
-    e.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+    e.recipes.gtceu.chemical_bath(`tfg:minecraft/leather_1`)             
         .itemInputs('tfc:small_raw_hide')
         .inputFluids(Fluid.of('tfc:tannin', 300))
         .itemOutputs('minecraft:leather')
         .EUt(4).duration(600)
 
     // Сырая средняя шкура -> Кожа
-    e.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+    e.recipes.gtceu.chemical_bath(`tfg:minecraft/leather_2`)             
         .itemInputs('tfc:medium_raw_hide')
         .inputFluids(Fluid.of('tfc:tannin', 400))
         .itemOutputs('2x minecraft:leather')
         .EUt(4).duration(700)
 
     // Сырая большая шкура -> Кожа
-    e.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
+    e.recipes.gtceu.chemical_bath(`tfg:minecraft/leather_3`)             
         .itemInputs('tfc:large_raw_hide')
         .inputFluids(Fluid.of('tfc:tannin', 500))
         .itemOutputs('3x minecraft:leather')
@@ -4262,7 +4262,7 @@ const registerMinecraftRecipes = (e) => {
         .EUt(7).duration(100)
 
     // Unrefined Paper -> Paper
-    event.recipes.gtceu.assembler('tfg:minecraft/paper_from_unrefined_paper')
+    e.recipes.gtceu.assembler('tfg:minecraft/paper_from_unrefined_paper')
         .itemInputs('tfc:unrefined_paper')
         .circuit(7)
         .itemOutputs('minecraft:paper')
@@ -4312,7 +4312,7 @@ const registerMinecraftRecipes = (e) => {
         .EUt(30).duration(50)
     //#endregion
 
-    //#region  Книга
+    //#region Книга
     e.remove({ id: 'gtceu:shaped/book' })
     e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
 
