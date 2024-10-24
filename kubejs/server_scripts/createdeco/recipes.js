@@ -12,8 +12,8 @@ ServerEvents.recipes(event => {
         'create:brass_sheet' : 'gtceu:brass_plate',
         'minecraft:torch' : 'tfc:torch',
         'create:brass_nugget' : 'gtceu:brass_nugget',
-        'create:andesite_alloy' : 'gtceu:tin_alloy_ingot',
-        'createdeco:andesite_sheet' : 'gtceu:tin_alloy_plate',
+        'create:andesite_alloy' : 'gtceu:wrought_iron_ingot',
+        'createdeco:andesite_sheet' : 'gtceu:wrought_iron_plate',
     };
 
     event.shaped("tfc:metal/bars/wrought_iron", [
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             replacementLampType = 'steel';
         }
         if(lampType == 'andesite') {
-            replacementLampType = 'tin_alloy';
+            replacementLampType = 'wrought_iron';
         }
 
         let ingredients = {
@@ -76,8 +76,8 @@ ServerEvents.recipes(event => {
             ingredients.N = 'minecraft:iron_nugget';  // Use Minecraft iron nugget for iron lamps
         }
         if (lampType === 'andesite') {
-            ingredients.N = 'gtceu:tin_alloy_nugget'; 
-            ingredients.P = 'gtceu:tin_alloy_plate';
+            ingredients.N = 'gtceu:wrought_iron_nugget'; 
+            ingredients.P = 'gtceu:wrought_iron_plate';
         }
 
         console.log(`Ingredients for ${output}:`, ingredients);
