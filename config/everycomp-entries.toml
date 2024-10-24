@@ -1,0 +1,79 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.leaves_type]
+
+		[types.leaves_type.gtceu]
+			rubber = false
+
+	[types.wood_type]
+
+		[types.wood_type.tfc]
+			acacia = true
+			ash = true
+			aspen = true
+			birch = true
+			blackwood = true
+			chestnut = true
+			douglas_fir = true
+			hickory = true
+			kapok = true
+			mangrove = true
+			maple = true
+			oak = true
+			palm = true
+			pine = true
+			rosewood = true
+			sequoia = true
+			spruce = true
+			sycamore = true
+			white_cedar = true
+			willow = true
+
+		[types.wood_type.gtceu]
+			rubber = false
+
+	[types.stone_type]
+
+		[types.stone_type.gtceu]
+			coke_oven = false
+			red_granite = false
+			marble = false
+			light_concrete = false
+			dark_concrete = false
+
+		[types.stone_type.create]
+			cut_granite = false
+			cut_diorite = false
+			cut_andesite = false
+			cut_calcite = false
+			cut_dripstone = false
+			cut_deepslate = false
+			cut_tuff = false
+			cut_asurine = false
+			cut_crimsite = false
+			cut_limestone = false
+			cut_ochrum = false
+			cut_scoria = false
+			cut_scorchia = false
+			cut_veridium = false
+
+#Disables specific entries
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
+
+		[entries.wood_type.storagedrawers]
+			full_drawers_2 = true
+			half_drawers_1 = true
+			full_drawers_4 = true
+			half_drawers_4 = true
+			trim = true
+			half_drawers_2 = true
+			full_drawers_1 = true
+

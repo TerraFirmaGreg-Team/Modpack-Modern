@@ -5,69 +5,6 @@
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
 global.TFC_DISABLED_ITEMS = [
-    // Blocks
-    'tfc:metal/block/bismuth', 
-    'tfc:metal/block/bismuth_bronze', 
-    'tfc:metal/block/black_bronze', 
-    'tfc:metal/block/bronze', 
-    'tfc:metal/block/brass', 
-    'tfc:metal/block/copper', 
-    'tfc:metal/block/gold', 
-    'tfc:metal/block/nickel', 
-    'tfc:metal/block/rose_gold', 
-    'tfc:metal/block/silver', 
-    'tfc:metal/block/tin', 
-    'tfc:metal/block/zinc', 
-    'tfc:metal/block/sterling_silver', 
-    'tfc:metal/block/wrought_iron', 
-    'tfc:metal/block/cast_iron', 
-    'tfc:metal/block/steel', 
-    'tfc:metal/block/black_steel', 
-    'tfc:metal/block/blue_steel', 
-    'tfc:metal/block/red_steel',
-
-    // Stairs
-    'tfc:metal/block/bismuth_stairs', 
-    'tfc:metal/block/bismuth_bronze_stairs', 
-    'tfc:metal/block/black_bronze_stairs', 
-    'tfc:metal/block/bronze_stairs', 
-    'tfc:metal/block/brass_stairs', 
-    'tfc:metal/block/copper_stairs', 
-    'tfc:metal/block/gold_stairs', 
-    'tfc:metal/block/nickel_stairs', 
-    'tfc:metal/block/rose_gold_stairs', 
-    'tfc:metal/block/silver_stairs', 
-    'tfc:metal/block/tin_stairs', 
-    'tfc:metal/block/zinc_stairs', 
-    'tfc:metal/block/sterling_silver_stairs', 
-    'tfc:metal/block/wrought_iron_stairs', 
-    'tfc:metal/block/cast_iron_stairs', 
-    'tfc:metal/block/steel_stairs', 
-    'tfc:metal/block/black_steel_stairs', 
-    'tfc:metal/block/blue_steel_stairs', 
-    'tfc:metal/block/red_steel_stairs',
-
-    // Slabs
-    'tfc:metal/block/bismuth_slab', 
-    'tfc:metal/block/bismuth_bronze_slab', 
-    'tfc:metal/block/black_bronze_slab', 
-    'tfc:metal/block/bronze_slab', 
-    'tfc:metal/block/brass_slab', 
-    'tfc:metal/block/copper_slab', 
-    'tfc:metal/block/gold_slab', 
-    'tfc:metal/block/nickel_slab', 
-    'tfc:metal/block/rose_gold_slab', 
-    'tfc:metal/block/silver_slab', 
-    'tfc:metal/block/tin_slab', 
-    'tfc:metal/block/zinc_slab', 
-    'tfc:metal/block/sterling_silver_slab', 
-    'tfc:metal/block/wrought_iron_slab', 
-    'tfc:metal/block/cast_iron_slab', 
-    'tfc:metal/block/steel_slab', 
-    'tfc:metal/block/black_steel_slab', 
-    'tfc:metal/block/blue_steel_slab', 
-    'tfc:metal/block/red_steel_slab',
-
     // Ingots
     "tfc:metal/ingot/bismuth",
     "tfc:metal/ingot/bismuth_bronze",
@@ -109,7 +46,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/double_ingot/cast_iron",
     "tfc:metal/double_ingot/copper",
     "tfc:metal/double_ingot/gold",
-    
+
     // Sheets
     "tfc:metal/sheet/bismuth",
     "tfc:metal/sheet/bismuth_bronze",
@@ -131,7 +68,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/sheet/tin",
     "tfc:metal/sheet/zinc",
     "tfc:metal/sheet/cast_iron",
-    
+
     // Double Sheets
     "tfc:metal/double_sheet/bismuth",
     "tfc:metal/double_sheet/bismuth_bronze",
@@ -153,7 +90,7 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/double_sheet/tin",
     "tfc:metal/double_sheet/zinc",
     "tfc:metal/double_sheet/cast_iron",
-    
+
     // Rods
     "tfc:metal/rod/bismuth",
     "tfc:metal/rod/bismuth_bronze",
@@ -175,252 +112,252 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/rod/tin",
     "tfc:metal/rod/zinc",
     "tfc:metal/rod/cast_iron",
-    
+
     // Tool Heads
     // Copper
-    'tfc:metal/pickaxe/copper', 
-    'tfc:metal/pickaxe_head/copper', 
-    'tfc:metal/axe/copper', 
-    'tfc:metal/axe_head/copper', 
-    'tfc:metal/shovel/copper', 
-    'tfc:metal/shovel_head/copper', 
-    'tfc:metal/hoe/copper', 
-    'tfc:metal/hoe_head/copper', 
-    'tfc:metal/hammer/copper', 
-    'tfc:metal/hammer_head/copper', 
-    'tfc:metal/saw/copper', 
-    'tfc:metal/saw_blade/copper', 
-    'tfc:metal/sword/copper', 
-    'tfc:metal/sword_blade/copper', 
-    'tfc:metal/knife/copper', 
-    'tfc:metal/knife_blade/copper', 
-    'tfc:metal/scythe/copper', 
+    'tfc:metal/pickaxe/copper',
+    'tfc:metal/pickaxe_head/copper',
+    'tfc:metal/axe/copper',
+    'tfc:metal/axe_head/copper',
+    'tfc:metal/shovel/copper',
+    'tfc:metal/shovel_head/copper',
+    'tfc:metal/hoe/copper',
+    'tfc:metal/hoe_head/copper',
+    'tfc:metal/hammer/copper',
+    'tfc:metal/hammer_head/copper',
+    'tfc:metal/saw/copper',
+    'tfc:metal/saw_blade/copper',
+    'tfc:metal/sword/copper',
+    'tfc:metal/sword_blade/copper',
+    'tfc:metal/knife/copper',
+    'tfc:metal/knife_blade/copper',
+    'tfc:metal/scythe/copper',
     'tfc:metal/scythe_blade/copper',
 
     // Bismuth Bronze
-    'tfc:metal/pickaxe/bismuth_bronze', 
-    'tfc:metal/pickaxe_head/bismuth_bronze', 
-    'tfc:metal/axe/bismuth_bronze', 
-    'tfc:metal/axe_head/bismuth_bronze', 
-    'tfc:metal/shovel/bismuth_bronze', 
-    'tfc:metal/shovel_head/bismuth_bronze', 
-    'tfc:metal/hoe/bismuth_bronze', 
-    'tfc:metal/hoe_head/bismuth_bronze', 
-    'tfc:metal/hammer/bismuth_bronze', 
-    'tfc:metal/hammer_head/bismuth_bronze', 
-    'tfc:metal/saw/bismuth_bronze', 
-    'tfc:metal/saw_blade/bismuth_bronze', 
-    'tfc:metal/sword/bismuth_bronze', 
-    'tfc:metal/sword_blade/bismuth_bronze', 
-    'tfc:metal/knife/bismuth_bronze', 
-    'tfc:metal/knife_blade/bismuth_bronze', 
-    'tfc:metal/scythe/bismuth_bronze', 
+    'tfc:metal/pickaxe/bismuth_bronze',
+    'tfc:metal/pickaxe_head/bismuth_bronze',
+    'tfc:metal/axe/bismuth_bronze',
+    'tfc:metal/axe_head/bismuth_bronze',
+    'tfc:metal/shovel/bismuth_bronze',
+    'tfc:metal/shovel_head/bismuth_bronze',
+    'tfc:metal/hoe/bismuth_bronze',
+    'tfc:metal/hoe_head/bismuth_bronze',
+    'tfc:metal/hammer/bismuth_bronze',
+    'tfc:metal/hammer_head/bismuth_bronze',
+    'tfc:metal/saw/bismuth_bronze',
+    'tfc:metal/saw_blade/bismuth_bronze',
+    'tfc:metal/sword/bismuth_bronze',
+    'tfc:metal/sword_blade/bismuth_bronze',
+    'tfc:metal/knife/bismuth_bronze',
+    'tfc:metal/knife_blade/bismuth_bronze',
+    'tfc:metal/scythe/bismuth_bronze',
     'tfc:metal/scythe_blade/bismuth_bronze',
 
     // Bronze
-    'tfc:metal/pickaxe/bronze', 
-    'tfc:metal/pickaxe_head/bronze', 
-    'tfc:metal/axe/bronze', 
-    'tfc:metal/axe_head/bronze', 
-    'tfc:metal/shovel/bronze', 
-    'tfc:metal/shovel_head/bronze', 
-    'tfc:metal/hoe/bronze', 
-    'tfc:metal/hoe_head/bronze', 
-    'tfc:metal/hammer/bronze', 
-    'tfc:metal/hammer_head/bronze', 
-    'tfc:metal/saw/bronze', 
-    'tfc:metal/saw_blade/bronze', 
-    'tfc:metal/sword/bronze', 
-    'tfc:metal/sword_blade/bronze', 
-    'tfc:metal/knife/bronze', 
-    'tfc:metal/knife_blade/bronze', 
-    'tfc:metal/scythe/bronze', 
+    'tfc:metal/pickaxe/bronze',
+    'tfc:metal/pickaxe_head/bronze',
+    'tfc:metal/axe/bronze',
+    'tfc:metal/axe_head/bronze',
+    'tfc:metal/shovel/bronze',
+    'tfc:metal/shovel_head/bronze',
+    'tfc:metal/hoe/bronze',
+    'tfc:metal/hoe_head/bronze',
+    'tfc:metal/hammer/bronze',
+    'tfc:metal/hammer_head/bronze',
+    'tfc:metal/saw/bronze',
+    'tfc:metal/saw_blade/bronze',
+    'tfc:metal/sword/bronze',
+    'tfc:metal/sword_blade/bronze',
+    'tfc:metal/knife/bronze',
+    'tfc:metal/knife_blade/bronze',
+    'tfc:metal/scythe/bronze',
     'tfc:metal/scythe_blade/bronze',
 
     // Black Bronze
-    'tfc:metal/pickaxe/black_bronze', 
-    'tfc:metal/pickaxe_head/black_bronze', 
-    'tfc:metal/axe/black_bronze', 
-    'tfc:metal/axe_head/black_bronze', 
-    'tfc:metal/shovel/black_bronze', 
-    'tfc:metal/shovel_head/black_bronze', 
-    'tfc:metal/hoe/black_bronze', 
-    'tfc:metal/hoe_head/black_bronze', 
-    'tfc:metal/hammer/black_bronze', 
-    'tfc:metal/hammer_head/black_bronze', 
-    'tfc:metal/saw/black_bronze', 
-    'tfc:metal/saw_blade/black_bronze', 
-    'tfc:metal/sword/black_bronze', 
-    'tfc:metal/sword_blade/black_bronze', 
-    'tfc:metal/knife/black_bronze', 
-    'tfc:metal/knife_blade/black_bronze', 
-    'tfc:metal/scythe/black_bronze', 
+    'tfc:metal/pickaxe/black_bronze',
+    'tfc:metal/pickaxe_head/black_bronze',
+    'tfc:metal/axe/black_bronze',
+    'tfc:metal/axe_head/black_bronze',
+    'tfc:metal/shovel/black_bronze',
+    'tfc:metal/shovel_head/black_bronze',
+    'tfc:metal/hoe/black_bronze',
+    'tfc:metal/hoe_head/black_bronze',
+    'tfc:metal/hammer/black_bronze',
+    'tfc:metal/hammer_head/black_bronze',
+    'tfc:metal/saw/black_bronze',
+    'tfc:metal/saw_blade/black_bronze',
+    'tfc:metal/sword/black_bronze',
+    'tfc:metal/sword_blade/black_bronze',
+    'tfc:metal/knife/black_bronze',
+    'tfc:metal/knife_blade/black_bronze',
+    'tfc:metal/scythe/black_bronze',
     'tfc:metal/scythe_blade/black_bronze',
 
     // Wrought Iron
-    'tfc:metal/pickaxe/wrought_iron', 
-    'tfc:metal/pickaxe_head/wrought_iron', 
-    'tfc:metal/axe/wrought_iron', 
-    'tfc:metal/axe_head/wrought_iron', 
-    'tfc:metal/shovel/wrought_iron', 
-    'tfc:metal/shovel_head/wrought_iron', 
-    'tfc:metal/hoe/wrought_iron', 
-    'tfc:metal/hoe_head/wrought_iron', 
-    'tfc:metal/hammer/wrought_iron', 
-    'tfc:metal/hammer_head/wrought_iron', 
-    'tfc:metal/saw/wrought_iron', 
-    'tfc:metal/saw_blade/wrought_iron', 
-    'tfc:metal/sword/wrought_iron', 
-    'tfc:metal/sword_blade/wrought_iron', 
-    'tfc:metal/knife/wrought_iron', 
-    'tfc:metal/knife_blade/wrought_iron', 
-    'tfc:metal/scythe/wrought_iron', 
+    'tfc:metal/pickaxe/wrought_iron',
+    'tfc:metal/pickaxe_head/wrought_iron',
+    'tfc:metal/axe/wrought_iron',
+    'tfc:metal/axe_head/wrought_iron',
+    'tfc:metal/shovel/wrought_iron',
+    'tfc:metal/shovel_head/wrought_iron',
+    'tfc:metal/hoe/wrought_iron',
+    'tfc:metal/hoe_head/wrought_iron',
+    'tfc:metal/hammer/wrought_iron',
+    'tfc:metal/hammer_head/wrought_iron',
+    'tfc:metal/saw/wrought_iron',
+    'tfc:metal/saw_blade/wrought_iron',
+    'tfc:metal/sword/wrought_iron',
+    'tfc:metal/sword_blade/wrought_iron',
+    'tfc:metal/knife/wrought_iron',
+    'tfc:metal/knife_blade/wrought_iron',
+    'tfc:metal/scythe/wrought_iron',
     'tfc:metal/scythe_blade/wrought_iron',
 
     // Steel
-    'tfc:metal/pickaxe/steel', 
-    'tfc:metal/pickaxe_head/steel', 
-    'tfc:metal/axe/steel', 
-    'tfc:metal/axe_head/steel', 
-    'tfc:metal/shovel/steel', 
-    'tfc:metal/shovel_head/steel', 
-    'tfc:metal/hoe/steel', 
-    'tfc:metal/hoe_head/steel', 
-    'tfc:metal/hammer/steel', 
-    'tfc:metal/hammer_head/steel', 
-    'tfc:metal/saw/steel', 
-    'tfc:metal/saw_blade/steel', 
-    'tfc:metal/sword/steel', 
-    'tfc:metal/sword_blade/steel', 
-    'tfc:metal/knife/steel', 
-    'tfc:metal/knife_blade/steel', 
-    'tfc:metal/scythe/steel', 
+    'tfc:metal/pickaxe/steel',
+    'tfc:metal/pickaxe_head/steel',
+    'tfc:metal/axe/steel',
+    'tfc:metal/axe_head/steel',
+    'tfc:metal/shovel/steel',
+    'tfc:metal/shovel_head/steel',
+    'tfc:metal/hoe/steel',
+    'tfc:metal/hoe_head/steel',
+    'tfc:metal/hammer/steel',
+    'tfc:metal/hammer_head/steel',
+    'tfc:metal/saw/steel',
+    'tfc:metal/saw_blade/steel',
+    'tfc:metal/sword/steel',
+    'tfc:metal/sword_blade/steel',
+    'tfc:metal/knife/steel',
+    'tfc:metal/knife_blade/steel',
+    'tfc:metal/scythe/steel',
     'tfc:metal/scythe_blade/steel',
 
     // Black Steel
-    'tfc:metal/pickaxe/black_steel', 
-    'tfc:metal/pickaxe_head/black_steel', 
-    'tfc:metal/axe/black_steel', 
-    'tfc:metal/axe_head/black_steel', 
-    'tfc:metal/shovel/black_steel', 
-    'tfc:metal/shovel_head/black_steel', 
-    'tfc:metal/hoe/black_steel', 
-    'tfc:metal/hoe_head/black_steel', 
-    'tfc:metal/hammer/black_steel', 
-    'tfc:metal/hammer_head/black_steel', 
-    'tfc:metal/saw/black_steel', 
-    'tfc:metal/saw_blade/black_steel', 
-    'tfc:metal/sword/black_steel', 
-    'tfc:metal/sword_blade/black_steel', 
-    'tfc:metal/knife/black_steel', 
-    'tfc:metal/knife_blade/black_steel', 
-    'tfc:metal/scythe/black_steel', 
+    'tfc:metal/pickaxe/black_steel',
+    'tfc:metal/pickaxe_head/black_steel',
+    'tfc:metal/axe/black_steel',
+    'tfc:metal/axe_head/black_steel',
+    'tfc:metal/shovel/black_steel',
+    'tfc:metal/shovel_head/black_steel',
+    'tfc:metal/hoe/black_steel',
+    'tfc:metal/hoe_head/black_steel',
+    'tfc:metal/hammer/black_steel',
+    'tfc:metal/hammer_head/black_steel',
+    'tfc:metal/saw/black_steel',
+    'tfc:metal/saw_blade/black_steel',
+    'tfc:metal/sword/black_steel',
+    'tfc:metal/sword_blade/black_steel',
+    'tfc:metal/knife/black_steel',
+    'tfc:metal/knife_blade/black_steel',
+    'tfc:metal/scythe/black_steel',
     'tfc:metal/scythe_blade/black_steel',
 
     // Red Steel
-    'tfc:metal/pickaxe/red_steel', 
-    'tfc:metal/pickaxe_head/red_steel', 
-    'tfc:metal/axe/red_steel', 
-    'tfc:metal/axe_head/red_steel', 
-    'tfc:metal/shovel/red_steel', 
-    'tfc:metal/shovel_head/red_steel', 
-    'tfc:metal/hoe/red_steel', 
-    'tfc:metal/hoe_head/red_steel', 
-    'tfc:metal/hammer/red_steel', 
-    'tfc:metal/hammer_head/red_steel', 
-    'tfc:metal/saw/red_steel', 
-    'tfc:metal/saw_blade/red_steel', 
-    'tfc:metal/sword/red_steel', 
-    'tfc:metal/sword_blade/red_steel', 
-    'tfc:metal/knife/red_steel', 
-    'tfc:metal/knife_blade/red_steel', 
-    'tfc:metal/scythe/red_steel', 
+    'tfc:metal/pickaxe/red_steel',
+    'tfc:metal/pickaxe_head/red_steel',
+    'tfc:metal/axe/red_steel',
+    'tfc:metal/axe_head/red_steel',
+    'tfc:metal/shovel/red_steel',
+    'tfc:metal/shovel_head/red_steel',
+    'tfc:metal/hoe/red_steel',
+    'tfc:metal/hoe_head/red_steel',
+    'tfc:metal/hammer/red_steel',
+    'tfc:metal/hammer_head/red_steel',
+    'tfc:metal/saw/red_steel',
+    'tfc:metal/saw_blade/red_steel',
+    'tfc:metal/sword/red_steel',
+    'tfc:metal/sword_blade/red_steel',
+    'tfc:metal/knife/red_steel',
+    'tfc:metal/knife_blade/red_steel',
+    'tfc:metal/scythe/red_steel',
     'tfc:metal/scythe_blade/red_steel',
 
     // Blue Steel
-    'tfc:metal/pickaxe/blue_steel', 
-    'tfc:metal/pickaxe_head/blue_steel', 
-    'tfc:metal/axe/blue_steel', 
-    'tfc:metal/axe_head/blue_steel', 
-    'tfc:metal/shovel/blue_steel', 
-    'tfc:metal/shovel_head/blue_steel', 
-    'tfc:metal/hoe/blue_steel', 
-    'tfc:metal/hoe_head/blue_steel', 
-    'tfc:metal/hammer/blue_steel', 
-    'tfc:metal/hammer_head/blue_steel', 
-    'tfc:metal/saw/blue_steel', 
-    'tfc:metal/saw_blade/blue_steel', 
-    'tfc:metal/sword/blue_steel', 
-    'tfc:metal/sword_blade/blue_steel', 
-    'tfc:metal/knife/blue_steel', 
-    'tfc:metal/knife_blade/blue_steel', 
-    'tfc:metal/scythe/blue_steel', 
+    'tfc:metal/pickaxe/blue_steel',
+    'tfc:metal/pickaxe_head/blue_steel',
+    'tfc:metal/axe/blue_steel',
+    'tfc:metal/axe_head/blue_steel',
+    'tfc:metal/shovel/blue_steel',
+    'tfc:metal/shovel_head/blue_steel',
+    'tfc:metal/hoe/blue_steel',
+    'tfc:metal/hoe_head/blue_steel',
+    'tfc:metal/hammer/blue_steel',
+    'tfc:metal/hammer_head/blue_steel',
+    'tfc:metal/saw/blue_steel',
+    'tfc:metal/saw_blade/blue_steel',
+    'tfc:metal/sword/blue_steel',
+    'tfc:metal/sword_blade/blue_steel',
+    'tfc:metal/knife/blue_steel',
+    'tfc:metal/knife_blade/blue_steel',
+    'tfc:metal/scythe/blue_steel',
     'tfc:metal/scythe_blade/blue_steel',
-    
+
     // Ores
-    'tfc:ore/poor_native_copper', 
-    'tfc:ore/normal_native_copper', 
+    'tfc:ore/poor_native_copper',
+    'tfc:ore/normal_native_copper',
     'tfc:ore/rich_native_copper',
-    'tfc:ore/poor_native_gold', 
-    'tfc:ore/normal_native_gold', 
-    'tfc:ore/rich_native_gold', 
-    'tfc:ore/poor_hematite', 
-    'tfc:ore/normal_hematite', 
-    'tfc:ore/rich_hematite', 
-    'tfc:ore/rich_tetrahedrite', 
-    'tfc:ore/normal_tetrahedrite', 
+    'tfc:ore/poor_native_gold',
+    'tfc:ore/normal_native_gold',
+    'tfc:ore/rich_native_gold',
+    'tfc:ore/poor_hematite',
+    'tfc:ore/normal_hematite',
+    'tfc:ore/rich_hematite',
+    'tfc:ore/rich_tetrahedrite',
+    'tfc:ore/normal_tetrahedrite',
     'tfc:ore/poor_tetrahedrite',
-    'tfc:ore/rich_sphalerite', 
-    'tfc:ore/normal_sphalerite', 
-    'tfc:ore/poor_sphalerite', 
-    'tfc:ore/rich_limonite', 
-    'tfc:ore/normal_limonite', 
-    'tfc:ore/poor_limonite', 
-    'tfc:ore/rich_magnetite', 
-    'tfc:ore/normal_magnetite', 
-    'tfc:ore/poor_magnetite', 
-    'tfc:ore/rich_malachite', 
-    'tfc:ore/normal_malachite', 
-    'tfc:ore/poor_malachite', 
-    'tfc:ore/rich_garnierite', 
-    'tfc:ore/normal_garnierite', 
-    'tfc:ore/poor_garnierite', 
-    'tfc:ore/rich_bismuthinite', 
-    'tfc:ore/normal_bismuthinite', 
-    'tfc:ore/poor_bismuthinite', 
-    'tfc:ore/rich_cassiterite', 
-    'tfc:ore/normal_cassiterite', 
-    'tfc:ore/poor_cassiterite', 
-    'tfc:ore/rich_native_silver', 
-    'tfc:ore/normal_native_silver', 
+    'tfc:ore/rich_sphalerite',
+    'tfc:ore/normal_sphalerite',
+    'tfc:ore/poor_sphalerite',
+    'tfc:ore/rich_limonite',
+    'tfc:ore/normal_limonite',
+    'tfc:ore/poor_limonite',
+    'tfc:ore/rich_magnetite',
+    'tfc:ore/normal_magnetite',
+    'tfc:ore/poor_magnetite',
+    'tfc:ore/rich_malachite',
+    'tfc:ore/normal_malachite',
+    'tfc:ore/poor_malachite',
+    'tfc:ore/rich_garnierite',
+    'tfc:ore/normal_garnierite',
+    'tfc:ore/poor_garnierite',
+    'tfc:ore/rich_bismuthinite',
+    'tfc:ore/normal_bismuthinite',
+    'tfc:ore/poor_bismuthinite',
+    'tfc:ore/rich_cassiterite',
+    'tfc:ore/normal_cassiterite',
+    'tfc:ore/poor_cassiterite',
+    'tfc:ore/rich_native_silver',
+    'tfc:ore/normal_native_silver',
     'tfc:ore/poor_native_silver',
 
     // Gems
-    'tfc:gem/amethyst', 
-    'tfc:gem/diamond', 
-    'tfc:gem/lapis_lazuli', 
-    'tfc:gem/emerald', 
-    'tfc:gem/pyrite', 
-    'tfc:gem/opal', 
-    'tfc:gem/ruby', 
-    'tfc:gem/sapphire', 
-    'tfc:gem/topaz', 
-    'tfc:ore/amethyst', 
-    'tfc:ore/diamond', 
-    'tfc:ore/lapis_lazuli', 
-    'tfc:ore/emerald', 
-    'tfc:ore/pyrite', 
-    'tfc:ore/opal', 
-    'tfc:ore/ruby', 
-    'tfc:ore/sapphire', 
+    'tfc:gem/amethyst',
+    'tfc:gem/diamond',
+    'tfc:gem/lapis_lazuli',
+    'tfc:gem/emerald',
+    'tfc:gem/pyrite',
+    'tfc:gem/opal',
+    'tfc:gem/ruby',
+    'tfc:gem/sapphire',
+    'tfc:gem/topaz',
+    'tfc:ore/amethyst',
+    'tfc:ore/diamond',
+    'tfc:ore/lapis_lazuli',
+    'tfc:ore/emerald',
+    'tfc:ore/pyrite',
+    'tfc:ore/opal',
+    'tfc:ore/ruby',
+    'tfc:ore/sapphire',
     'tfc:ore/topaz',
 
-    'tfc:ore/graphite', 
-    'tfc:ore/sulfur', 
-    'tfc:ore/cinnabar', 
-    'tfc:ore/cryolite', 
-    'tfc:ore/saltpeter', 
-    'tfc:ore/borax', 
+    'tfc:ore/graphite',
+    'tfc:ore/sulfur',
+    'tfc:ore/cinnabar',
+    'tfc:ore/cryolite',
+    'tfc:ore/saltpeter',
+    'tfc:ore/borax',
     'tfc:ore/sylvite',
     'tfc:ore/bituminous_coal',
     'tfc:ore/lignite',
@@ -537,47 +474,47 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:wood/gear_box/willow',
 
     // Water Wheels  
-    'tfc:wood/water_wheel/acacia', 
-    'tfc:wood/water_wheel/ash', 
+    'tfc:wood/water_wheel/acacia',
+    'tfc:wood/water_wheel/ash',
     'tfc:wood/water_wheel/aspen',
-    'tfc:wood/water_wheel/birch', 
-    'tfc:wood/water_wheel/blackwood', 
-    'tfc:wood/water_wheel/chestnut', 
-    'tfc:wood/water_wheel/douglas_fir', 
-    'tfc:wood/water_wheel/hickory', 
-    'tfc:wood/water_wheel/kapok', 
-    'tfc:wood/water_wheel/mangrove', 
-    'tfc:wood/water_wheel/maple', 
-    'tfc:wood/water_wheel/oak', 
-    'tfc:wood/water_wheel/palm', 
-    'tfc:wood/water_wheel/pine', 
-    'tfc:wood/water_wheel/rosewood', 
-    'tfc:wood/water_wheel/sequoia', 
-    'tfc:wood/water_wheel/spruce', 
-    'tfc:wood/water_wheel/sycamore', 
-    'tfc:wood/water_wheel/white_cedar', 
+    'tfc:wood/water_wheel/birch',
+    'tfc:wood/water_wheel/blackwood',
+    'tfc:wood/water_wheel/chestnut',
+    'tfc:wood/water_wheel/douglas_fir',
+    'tfc:wood/water_wheel/hickory',
+    'tfc:wood/water_wheel/kapok',
+    'tfc:wood/water_wheel/mangrove',
+    'tfc:wood/water_wheel/maple',
+    'tfc:wood/water_wheel/oak',
+    'tfc:wood/water_wheel/palm',
+    'tfc:wood/water_wheel/pine',
+    'tfc:wood/water_wheel/rosewood',
+    'tfc:wood/water_wheel/sequoia',
+    'tfc:wood/water_wheel/spruce',
+    'tfc:wood/water_wheel/sycamore',
+    'tfc:wood/water_wheel/white_cedar',
     'tfc:wood/water_wheel/willow',
 
     // Boat
-    'tfc:wood/boat/acacia', 
-    'tfc:wood/boat/ash', 
+    'tfc:wood/boat/acacia',
+    'tfc:wood/boat/ash',
     'tfc:wood/boat/aspen',
-    'tfc:wood/boat/birch', 
-    'tfc:wood/boat/blackwood', 
-    'tfc:wood/boat/chestnut', 
-    'tfc:wood/boat/douglas_fir', 
-    'tfc:wood/boat/hickory', 
-    'tfc:wood/boat/kapok', 
-    'tfc:wood/boat/mangrove', 
-    'tfc:wood/boat/maple', 
-    'tfc:wood/boat/oak', 
-    'tfc:wood/boat/palm', 
-    'tfc:wood/boat/pine', 
-    'tfc:wood/boat/rosewood', 
-    'tfc:wood/boat/sequoia', 
-    'tfc:wood/boat/spruce', 
-    'tfc:wood/boat/sycamore', 
-    'tfc:wood/boat/white_cedar', 
+    'tfc:wood/boat/birch',
+    'tfc:wood/boat/blackwood',
+    'tfc:wood/boat/chestnut',
+    'tfc:wood/boat/douglas_fir',
+    'tfc:wood/boat/hickory',
+    'tfc:wood/boat/kapok',
+    'tfc:wood/boat/mangrove',
+    'tfc:wood/boat/maple',
+    'tfc:wood/boat/oak',
+    'tfc:wood/boat/palm',
+    'tfc:wood/boat/pine',
+    'tfc:wood/boat/rosewood',
+    'tfc:wood/boat/sequoia',
+    'tfc:wood/boat/spruce',
+    'tfc:wood/boat/sycamore',
+    'tfc:wood/boat/white_cedar',
     'tfc:wood/boat/willow',
 
     // Windmill Blades
@@ -599,62 +536,62 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:black_windmill_blade",
 
     // Каменные инстрменты
-    'tfc:stone/knife_head/igneous_extrusive', 
-    'tfc:stone/knife_head/igneous_intrusive', 
-    'tfc:stone/knife_head/metamorphic', 
-    'tfc:stone/knife_head/sedimentary', 
-    
-    'tfc:stone/knife/igneous_extrusive', 
-    'tfc:stone/knife/igneous_intrusive', 
+    'tfc:stone/knife_head/igneous_extrusive',
+    'tfc:stone/knife_head/igneous_intrusive',
+    'tfc:stone/knife_head/metamorphic',
+    'tfc:stone/knife_head/sedimentary',
+
+    'tfc:stone/knife/igneous_extrusive',
+    'tfc:stone/knife/igneous_intrusive',
     'tfc:stone/knife/metamorphic',
-    'tfc:stone/knife/sedimentary', 
-    
-    'tfc:stone/axe_head/igneous_extrusive', 
-    'tfc:stone/axe_head/igneous_intrusive', 
-    'tfc:stone/axe_head/metamorphic', 
-    'tfc:stone/axe_head/sedimentary', 
-    
-    'tfc:stone/axe/igneous_extrusive', 
-    'tfc:stone/axe/igneous_intrusive', 
-    'tfc:stone/axe/metamorphic', 
-    'tfc:stone/axe/sedimentary', 
-    
-    'tfc:stone/shovel_head/igneous_extrusive', 
-    'tfc:stone/shovel_head/igneous_intrusive', 
-    'tfc:stone/shovel_head/metamorphic', 
+    'tfc:stone/knife/sedimentary',
+
+    'tfc:stone/axe_head/igneous_extrusive',
+    'tfc:stone/axe_head/igneous_intrusive',
+    'tfc:stone/axe_head/metamorphic',
+    'tfc:stone/axe_head/sedimentary',
+
+    'tfc:stone/axe/igneous_extrusive',
+    'tfc:stone/axe/igneous_intrusive',
+    'tfc:stone/axe/metamorphic',
+    'tfc:stone/axe/sedimentary',
+
+    'tfc:stone/shovel_head/igneous_extrusive',
+    'tfc:stone/shovel_head/igneous_intrusive',
+    'tfc:stone/shovel_head/metamorphic',
     'tfc:stone/shovel_head/sedimentary',
-    
-    'tfc:stone/shovel/igneous_extrusive', 
-    'tfc:stone/shovel/igneous_intrusive', 
-    'tfc:stone/shovel/metamorphic', 
-    'tfc:stone/shovel/sedimentary', 
-    
-    'tfc:stone/hammer_head/igneous_extrusive', 
-    'tfc:stone/hammer_head/igneous_intrusive', 
-    'tfc:stone/hammer_head/metamorphic', 
-    'tfc:stone/hammer_head/sedimentary', 
-    
-    'tfc:stone/hammer/igneous_extrusive', 
-    'tfc:stone/hammer/igneous_intrusive', 
-    'tfc:stone/hammer/metamorphic', 
-    'tfc:stone/hammer/sedimentary', 
-    
-    'tfc:stone/hoe_head/igneous_extrusive', 
-    'tfc:stone/hoe_head/igneous_intrusive', 
-    'tfc:stone/hoe_head/metamorphic', 
-    'tfc:stone/hoe_head/sedimentary', 
-    
-    'tfc:stone/hoe/igneous_extrusive', 
-    'tfc:stone/hoe/igneous_intrusive', 
-    'tfc:stone/hoe/metamorphic', 
-    'tfc:stone/hoe/sedimentary', 
+
+    'tfc:stone/shovel/igneous_extrusive',
+    'tfc:stone/shovel/igneous_intrusive',
+    'tfc:stone/shovel/metamorphic',
+    'tfc:stone/shovel/sedimentary',
+
+    'tfc:stone/hammer_head/igneous_extrusive',
+    'tfc:stone/hammer_head/igneous_intrusive',
+    'tfc:stone/hammer_head/metamorphic',
+    'tfc:stone/hammer_head/sedimentary',
+
+    'tfc:stone/hammer/igneous_extrusive',
+    'tfc:stone/hammer/igneous_intrusive',
+    'tfc:stone/hammer/metamorphic',
+    'tfc:stone/hammer/sedimentary',
+
+    'tfc:stone/hoe_head/igneous_extrusive',
+    'tfc:stone/hoe_head/igneous_intrusive',
+    'tfc:stone/hoe_head/metamorphic',
+    'tfc:stone/hoe_head/sedimentary',
+
+    'tfc:stone/hoe/igneous_extrusive',
+    'tfc:stone/hoe/igneous_intrusive',
+    'tfc:stone/hoe/metamorphic',
+    'tfc:stone/hoe/sedimentary',
 
     // Other
-    "tfc:trip_hammer",
+    'tfc:trip_hammer',
     'tfc:steel_pipe',
     'tfc:steel_pump',
     'tfc:crankshaft',
-    'tfc:hand_wheel_base', 
+    'tfc:hand_wheel_base',
     'tfc:hand_wheel',
 ];
 
@@ -662,21 +599,21 @@ global.TFC_DISABLED_ITEMS = [
  * Хранит список всех имен типов камней в TFC.
  */
 global.TFC_STONE_TYPES = [
-    'gabbro', 
-    'shale', 
-    'claystone', 
-    'limestone', 
-    'conglomerate', 
-    'dolomite', 
-    'chert', 
-    'chalk', 
-    'rhyolite', 
-    'dacite', 
-    'quartzite', 
-    'slate', 
-    'phyllite', 
-    'schist', 
-    'gneiss', 
+    'gabbro',
+    'shale',
+    'claystone',
+    'limestone',
+    'conglomerate',
+    'dolomite',
+    'chert',
+    'chalk',
+    'rhyolite',
+    'dacite',
+    'quartzite',
+    'slate',
+    'phyllite',
+    'schist',
+    'gneiss',
     'marble',
     'basalt', // Есть в GT
     'diorite', // Есть в GT
@@ -706,6 +643,259 @@ global.TFC_WOOD_TYPES = [
     "white_cedar",
     "willow"
 ];
+
+global.WOOD_BLOCK_TYPES = {
+    "track": {
+        tag: "create:track",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "track_wide": {
+        tag: "create:track_wide",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "track_narrow": {
+        tag: "create:track_narrow",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "window": {
+        tag: "create:window",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "window_pane": {
+        tag: "create:window_pane",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "log": {
+        tag: "minecraft:logs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "stripped_log": {
+        tag: "minecraft:stripped_logs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "wood": {
+        tag: "minecraft:wood",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "stripped_wood": {
+        tag: "minecraft:stripped_logs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "leaves": {
+        tag: "minecraft:leaves",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "planks": {
+        tag: "minecraft:planks",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "sapling": {
+        tag: "minecraft:saplings",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "bookshelf": {
+        tag: "tfc:bookshelves",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "door": {
+        tag: "minecraft:doors",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "trapdoor": {
+        tag: "minecraft:trapdoors",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "fence": {
+        tag: "minecraft:fences",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "log_fence": {
+        tag: "minecraft:log_fence",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "fence_gate": {
+        tag: "minecraft:fence_gates",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "button": {
+        tag: "minecraft:buttons",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M / 9)
+    },
+    "pressure_plate": {
+        tag: "minecraft:pressure_plates",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "slab": {
+        tag: "minecraft:slabs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "stairs": {
+        tag: "minecraft:stairs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "tool_rack": {
+        tag: "tfc:tool_racks",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "twig": {
+        tag: "tfc:twigs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "fallen_leaves": {
+        tag: "minecraft:fallen_leaves",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "workbench": {
+        tag: "tfc:workbenches",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "trapped_chest": {
+        tag: "tfg:trapped_chest",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "chest": {
+        tag: "tfg:default_chests",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "loom": {
+        tag: "minecraft:looms",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "sluice": {
+        tag: "tfc:sluices",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "barrel": {
+        tag: "tfc:barrels",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "lectern": {
+        tag: "minecraft:lecterns",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "scribing_table": {
+        tag: "tfc:scribing_tables",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "sewing_table": {
+        tag: "tfc:sewing_tables",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "jar_shelf": {
+        tag: "tfc:jar_shelves",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "axle": {
+        tag: "tfc:axles",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "blade_axle": {
+        tag: "tfc:blade_axles",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "encased_axle": {
+        tag: "tfc:encased_axles",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "clutch": {
+        tag: "tfc:clutches",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "gear_box": {
+        tag: "tfc:gear_boxes",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "water_wheel": {
+        tag: "tfc:water_wheels",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "lumber": {
+        tag: "tfc:lumber",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "boat": {
+        tag: "minecraft:boats",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "support": {
+        tag: "tfc:support_beams",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "chest_minecart": {
+        tag: "tfc:minecarts",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "sign": {
+        tag: "minecraft:signs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "handing_sign": {
+        tag: "minecraft:handing_signs",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "food_shelf": {
+        tag: "firmalife:food_shelves",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "hangers": {
+        tag: "firmalife:hangers",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "jarbnet": {
+        tag: "firmalife:jarbnets",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "roofing": {
+        tag: "alekiroofs:roofing",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "wheel": {
+        tag: "tfcastikorcarts:cart_wheel",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "supply_cart": {
+        tag: "tfcastikorcarts:supply_carts",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "plow": {
+        tag: "tfcastikorcarts:plows",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "animal_cart": {
+        tag: "tfcastikorcarts:animal_carts",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "big_barel": {
+        tag: "firmalife:big_barels",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "stomping_barel": {
+        tag: "firmalife:stomping_barels",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "barel_press": {
+        tag: "firmalife:barel_presses",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "wine_shelf": {
+        tag: "firmalife:wine_shelves",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "incomplete_track": {
+        tag: "create:incomplete_track",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "incomplete_track_wide": {
+        tag: "create:incomplete_track_wide",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    },
+    "incomplete_track_narrow": {
+        tag: "create:incomplete_track_narrow",
+        material: new MaterialStack(GTMaterials.Wood, GTValues.M)
+    }
+}
+
+
 
 global.TFC_MUD_TYPES = [
     'silt',
@@ -900,37 +1090,37 @@ global.TFC_BATCH_TO_BOTTLE_ASSEMBLING_RECIPE_COMPONENTS = [
 ];
 
 global.TFC_FURNACE_MEAT_RECIPE_COMPONENTS = [
-    { input: 'tfc:food/horse_meat', output: 'tfc:food/cooked_horse_meat', name: 'cooked_horse_meat' }, 
-    { input: 'tfc:food/bear', output: 'tfc:food/cooked_bear', name: 'cooked_bear' }, 
-    { input: 'tfc:food/mutton', output: 'tfc:food/cooked_mutton', name: 'cooked_mutton' }, 
-    { input: 'tfc:food/pheasant', output: 'tfc:food/cooked_pheasant', name: 'cooked_pheasant' }, 
-    { input: 'tfc:food/quail', output: 'tfc:food/cooked_quail', name: 'cooked_quail' }, 
-    { input: 'tfc:food/chicken', output: 'tfc:food/cooked_chicken', name: 'cooked_chicken' }, 
-    { input: 'tfc:food/pork', output: 'tfc:food/cooked_pork', name: 'cooked_pork' }, 
-    { input: 'tfc:food/beef', output: 'tfc:food/cooked_beef', name: 'cooked_beef' }, 
-    { input: 'tfc:food/crappie', output: 'tfc:food/cooked_crappie', name: 'cooked_crappie' }, 
-    { input: 'tfc:food/lake_trout', output: 'tfc:food/cooked_lake_trout', name: 'cooked_lake_trout' }, 
-    { input: 'tfc:food/largemouth_bass', output: 'tfc:food/cooked_largemouth_bass', name: 'cooked_largemouth_bass' }, 
-    { input: 'tfc:food/rainbow_trout', output: 'tfc:food/cooked_rainbow_trout', name: 'cooked_rainbow_trout' }, 
-    { input: 'tfc:food/salmon', output: 'tfc:food/cooked_salmon', name: 'cooked_salmon' }, 
-    { input: 'tfc:food/smallmouth_bass', output: 'tfc:food/cooked_smallmouth_bass', name: 'cooked_smallmouth_bass' }, 
-    { input: 'tfc:food/camelidae', output: 'tfc:food/cooked_camelidae', name: 'cooked_camelidae' }, 
-    { input: 'tfc:food/frog_legs', output: 'tfc:food/cooked_frog_legs', name: 'cooked_frog_legs' }, 
-    { input: 'tfc:food/gran_feline', output: 'tfc:food/cooked_gran_feline', name: 'cooked_gran_feline' }, 
-    { input: 'tfc:food/turtle', output: 'tfc:food/cooked_turtle', name: 'cooked_turtle' }, 
-    { input: 'tfc:food/cod', output: 'tfc:food/cooked_cod', name: 'cooked_cod' }, 
-    { input: 'tfc:food/tropical_fish', output: 'tfc:food/cooked_tropical_fish', name: 'cooked_tropical_fish' }, 
-    { input: 'tfc:food/calamari', output: 'tfc:food/cooked_calamari', name: 'cooked_calamari' }, 
-    { input: 'tfc:food/shellfish', output: 'tfc:food/cooked_shellfish', name: 'cooked_shellfish' }, 
-    { input: 'tfc:food/bluegill', output: 'tfc:food/cooked_bluegill', name: 'cooked_bluegill' }, 
-    { input: 'tfc:food/turkey', output: 'tfc:food/cooked_turkey', name: 'cooked_turkey' }, 
-    { input: 'tfc:food/peafowl', output: 'tfc:food/cooked_peafowl', name: 'cooked_peafowl' }, 
-    { input: 'tfc:food/grouse', output: 'tfc:food/cooked_grouse', name: 'cooked_grouse' }, 
-    { input: 'tfc:food/venison', output: 'tfc:food/cooked_venison', name: 'cooked_venison' }, 
-    { input: 'tfc:food/wolf', output: 'tfc:food/cooked_wolf', name: 'cooked_wolf' }, 
-    { input: 'tfc:food/rabbit', output: 'tfc:food/cooked_rabbit', name: 'cooked_rabbit' }, 
-    { input: 'tfc:food/hyena', output: 'tfc:food/cooked_hyena', name: 'cooked_hyena' }, 
-    { input: 'tfc:food/duck', output: 'tfc:food/cooked_duck', name: 'cooked_duck' }, 
+    { input: 'tfc:food/horse_meat', output: 'tfc:food/cooked_horse_meat', name: 'cooked_horse_meat' },
+    { input: 'tfc:food/bear', output: 'tfc:food/cooked_bear', name: 'cooked_bear' },
+    { input: 'tfc:food/mutton', output: 'tfc:food/cooked_mutton', name: 'cooked_mutton' },
+    { input: 'tfc:food/pheasant', output: 'tfc:food/cooked_pheasant', name: 'cooked_pheasant' },
+    { input: 'tfc:food/quail', output: 'tfc:food/cooked_quail', name: 'cooked_quail' },
+    { input: 'tfc:food/chicken', output: 'tfc:food/cooked_chicken', name: 'cooked_chicken' },
+    { input: 'tfc:food/pork', output: 'tfc:food/cooked_pork', name: 'cooked_pork' },
+    { input: 'tfc:food/beef', output: 'tfc:food/cooked_beef', name: 'cooked_beef' },
+    { input: 'tfc:food/crappie', output: 'tfc:food/cooked_crappie', name: 'cooked_crappie' },
+    { input: 'tfc:food/lake_trout', output: 'tfc:food/cooked_lake_trout', name: 'cooked_lake_trout' },
+    { input: 'tfc:food/largemouth_bass', output: 'tfc:food/cooked_largemouth_bass', name: 'cooked_largemouth_bass' },
+    { input: 'tfc:food/rainbow_trout', output: 'tfc:food/cooked_rainbow_trout', name: 'cooked_rainbow_trout' },
+    { input: 'tfc:food/salmon', output: 'tfc:food/cooked_salmon', name: 'cooked_salmon' },
+    { input: 'tfc:food/smallmouth_bass', output: 'tfc:food/cooked_smallmouth_bass', name: 'cooked_smallmouth_bass' },
+    { input: 'tfc:food/camelidae', output: 'tfc:food/cooked_camelidae', name: 'cooked_camelidae' },
+    { input: 'tfc:food/frog_legs', output: 'tfc:food/cooked_frog_legs', name: 'cooked_frog_legs' },
+    { input: 'tfc:food/gran_feline', output: 'tfc:food/cooked_gran_feline', name: 'cooked_gran_feline' },
+    { input: 'tfc:food/turtle', output: 'tfc:food/cooked_turtle', name: 'cooked_turtle' },
+    { input: 'tfc:food/cod', output: 'tfc:food/cooked_cod', name: 'cooked_cod' },
+    { input: 'tfc:food/tropical_fish', output: 'tfc:food/cooked_tropical_fish', name: 'cooked_tropical_fish' },
+    { input: 'tfc:food/calamari', output: 'tfc:food/cooked_calamari', name: 'cooked_calamari' },
+    { input: 'tfc:food/shellfish', output: 'tfc:food/cooked_shellfish', name: 'cooked_shellfish' },
+    { input: 'tfc:food/bluegill', output: 'tfc:food/cooked_bluegill', name: 'cooked_bluegill' },
+    { input: 'tfc:food/turkey', output: 'tfc:food/cooked_turkey', name: 'cooked_turkey' },
+    { input: 'tfc:food/peafowl', output: 'tfc:food/cooked_peafowl', name: 'cooked_peafowl' },
+    { input: 'tfc:food/grouse', output: 'tfc:food/cooked_grouse', name: 'cooked_grouse' },
+    { input: 'tfc:food/venison', output: 'tfc:food/cooked_venison', name: 'cooked_venison' },
+    { input: 'tfc:food/wolf', output: 'tfc:food/cooked_wolf', name: 'cooked_wolf' },
+    { input: 'tfc:food/rabbit', output: 'tfc:food/cooked_rabbit', name: 'cooked_rabbit' },
+    { input: 'tfc:food/hyena', output: 'tfc:food/cooked_hyena', name: 'cooked_hyena' },
+    { input: 'tfc:food/duck', output: 'tfc:food/cooked_duck', name: 'cooked_duck' },
     { input: 'tfc:food/chevon', output: 'tfc:food/cooked_chevon', name: 'cooked_chevon' },
     { input: 'minecraft:egg', output: 'tfc:food/cooked_egg', name: 'cooked_egg' },
 ];
@@ -1014,7 +1204,7 @@ global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/peach_sapling', fluid_amount: 8000, output: '3x tfc:food/peach', name: 'peach' },
     { input: 'tfc:plant/plum_sapling', fluid_amount: 8000, output: '3x tfc:food/plum', name: 'plum' },
     { input: 'tfc:plant/red_apple_sapling', fluid_amount: 8000, output: '3x tfc:food/red_apple', name: 'red_apple' },
-    { input: 'tfc:plant/banana_sapling', fluid_amount:8000, output: '3x tfc:food/banana', name: 'banana' },
+    { input: 'tfc:plant/banana_sapling', fluid_amount: 8000, output: '3x tfc:food/banana', name: 'banana' },
 ];
 
 global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS = [
@@ -1057,7 +1247,3 @@ global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/cranberry_bush', fluid_amount: 6000, output: '3x tfc:food/cranberry', name: 'cranberry' },
 ];
 
-global.calcAmountOfMetal = (defaultAmount, percents) => {
-    const value = defaultAmount / (100 / percents)
-    return (value % 2 == 0) ? value : Math.round(value) - 1
-}

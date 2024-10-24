@@ -13,9 +13,26 @@ const registerMinecraftItemTags = (event) => {
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
 
-    // Бамбуковые полублоки
+    //#region  Бамбуковые доски в один тег
+    event.add('tfg:bamboo_planks', 'minecraft:bamboo_planks')
+    event.add('tfg:bamboo_planks', 'minecraft:bamboo_mosaic')
+    //#endregion
+
+    //#region  Бамбуковые ступени в один тег
+    event.add('tfg:bamboo_stairs', 'minecraft:bamboo_stairs')
+    event.add('tfg:bamboo_stairs', 'minecraft:bamboo_mosaic_stairs')
+    //#endregion
+
+    //#region  Бамбуковые полублоки в один тег
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
+    //#endregion
+
+    //#region Материалы для тримминга
+    global.MINECRAFT_TRIM_MATERIALS.forEach(el => {
+        event.add('minecraft:trim_materials', el)
+    })
+    //#endregion
 }
 
 const registerMinecraftBlockTags = (event) => {

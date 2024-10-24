@@ -61,6 +61,20 @@ const registerFirmaLifeRecipes = (event) => {
 
     //#endregion
 
+    //#region Распрыскиватель
+    event.recipes.gtceu.assembler(`tfg:firmalife/sprinkler`)             
+        .itemInputs('#forge:ingots/copper')
+        .circuit(12)
+        .itemOutputs('firmalife:sprinkler')
+        .EUt(7).duration(50)
+
+    // Декрафт
+    event.recipes.tfc.heating('firmalife:sprinkler', 450)
+        .resultFluid(Fluid.of('gtceu:copper', 144))
+        .id(`tfg:heating/firmalife/sprinkler`)
+
+    //#endregion
+
     // Декрафт Jag Lid
     event.recipes.tfc.heating('tfc:jar_lid', 230)
         .resultFluid(Fluid.of('gtceu:tin', 9))

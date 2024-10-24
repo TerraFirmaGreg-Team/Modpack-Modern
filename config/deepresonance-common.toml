@@ -1,0 +1,23 @@
+#Enable this if you want to get retrogen (generation of ores/crystals) for already existing chunks
+retrogen = true
+#Enable this if you want to see in the log where crystals are spawned
+verboseSpawn = false
+#Enable this if you want resonating ore in nether biomes
+generateOreNether = true
+#Enable this if you want resonating ore in end biomes
+generateOreEnd = false
+#Enable this if you want resonating ore in other biomes (if they have stone)
+generateOreOther = true
+#Biome blacklist, resonant crystals will not spawn in biomes listed here
+otherBiomeBlacklist = ["minecraft:the_void"]
+#Enable this if you want resonating crystals in nether biomes
+generateCrystalsNether = true
+#Enable this if you want resonating crystals in other dimensions biomes (if they have stone caves)
+generateCrystalsOther = true
+#The chance that a crystal will spawn in a chunk. (0 = never, 1 = every chunk
+#Range: 0.0 ~ 1.0
+crystalSpawnChance = 0.3
+#The number of times that the worldgen will try to spawn a crystal in a chunk before it fails.
+#Range: 1 ~ 32
+crystalSpawnTries = 20
+

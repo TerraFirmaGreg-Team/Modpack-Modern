@@ -5,7 +5,254 @@
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
 global.MINECRAFT_DISABLED_ITEMS = [
-    // Зараженные блоки
+
+    //#region Дерево
+
+    //#region Дуб
+    "minecraft:oak_wood",
+    "minecraft:oak_leaves",
+    "minecraft:oak_sapling",
+    "minecraft:stripped_oak_wood",
+    "minecraft:oak_log",
+    "minecraft:stripped_oak_log",
+    "minecraft:oak_planks",
+    "minecraft:oak_stairs",
+    "minecraft:oak_slab",
+    "minecraft:petrified_oak_slab",
+    "minecraft:oak_pressure_plate",
+    "minecraft:oak_fence",
+    "minecraft:oak_fence_gate",
+    "minecraft:oak_door",
+    "minecraft:oak_trapdoor",
+    "minecraft:oak_boat",
+    "minecraft:oak_chest_boat",
+    "minecraft:oak_sign",
+    "minecraft:oak_hanging_sign",
+    "minecraft:oak_button",
+    //#endregion
+
+    //#region Темный дуб
+    "minecraft:dark_oak_planks",
+    "minecraft:dark_oak_sapling",
+    "minecraft:dark_oak_log",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:stripped_dark_oak_wood",
+    "minecraft:dark_oak_wood",
+    "minecraft:dark_oak_leaves",
+    "minecraft:dark_oak_slab",
+    "minecraft:dark_oak_fence",
+    "minecraft:dark_oak_stairs",
+    "minecraft:dark_oak_button",
+    "minecraft:dark_oak_pressure_plate",
+    "minecraft:dark_oak_door",
+    "minecraft:dark_oak_trapdoor",
+    "minecraft:dark_oak_fence_gate",
+    "minecraft:dark_oak_boat",
+    "minecraft:dark_oak_chest_boat",
+    "minecraft:dark_oak_sign",
+    "minecraft:dark_oak_hanging_sign",
+    //#endregion
+    
+    //#region Акация
+    "minecraft:acacia_planks",
+    "minecraft:acacia_sapling",
+    "minecraft:acacia_log",
+    "minecraft:stripped_acacia_log",
+    "minecraft:stripped_acacia_wood",
+    "minecraft:acacia_wood",
+    "minecraft:acacia_leaves",
+    "minecraft:acacia_slab",
+    "minecraft:acacia_fence",
+    "minecraft:acacia_stairs",
+    "minecraft:acacia_button",
+    "minecraft:acacia_pressure_plate",
+    "minecraft:acacia_door",
+    "minecraft:acacia_trapdoor",
+    "minecraft:acacia_fence_gate",
+    "minecraft:acacia_boat",
+    "minecraft:acacia_chest_boat",
+    "minecraft:acacia_sign",
+    "minecraft:acacia_hanging_sign",
+    //#endregion
+
+    //#region Береза
+    "minecraft:birch_planks",
+    "minecraft:birch_sapling",
+    "minecraft:birch_log",
+    "minecraft:stripped_birch_log",
+    "minecraft:stripped_birch_wood",
+    "minecraft:birch_wood",
+    "minecraft:birch_leaves",
+    "minecraft:birch_slab",
+    "minecraft:birch_fence",
+    "minecraft:birch_stairs",
+    "minecraft:birch_button",
+    "minecraft:birch_pressure_plate",
+    "minecraft:birch_door",
+    "minecraft:birch_trapdoor",
+    "minecraft:birch_fence_gate",
+    "minecraft:birch_boat",
+    "minecraft:birch_chest_boat",
+    "minecraft:birch_sign",
+    "minecraft:birch_hanging_sign",
+    //#endregion
+
+    //#region Тропическое
+    "minecraft:jungle_planks",
+    "minecraft:jungle_sapling",
+    "minecraft:jungle_log",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_jungle_wood",
+    "minecraft:jungle_wood",
+    "minecraft:jungle_leaves",
+    "minecraft:jungle_slab",
+    "minecraft:jungle_fence",
+    "minecraft:jungle_stairs",
+    "minecraft:jungle_button",
+    "minecraft:jungle_pressure_plate",
+    "minecraft:jungle_door",
+    "minecraft:jungle_trapdoor",
+    "minecraft:jungle_fence_gate",
+    "minecraft:jungle_boat",
+    "minecraft:jungle_chest_boat",
+    "minecraft:jungle_sign",
+    "minecraft:jungle_hanging_sign",
+    //#endregion
+
+    //#region Ель
+    "minecraft:spruce_planks",
+    "minecraft:spruce_sapling",
+    "minecraft:spruce_log",
+    "minecraft:stripped_spruce_log",
+    "minecraft:stripped_spruce_wood",
+    "minecraft:spruce_wood",
+    "minecraft:spruce_leaves",
+    "minecraft:spruce_slab",
+    "minecraft:spruce_fence",
+    "minecraft:spruce_stairs",
+    "minecraft:spruce_button",
+    "minecraft:spruce_pressure_plate",
+    "minecraft:spruce_door",
+    "minecraft:spruce_trapdoor",
+    "minecraft:spruce_fence_gate",
+    "minecraft:spruce_boat",
+    "minecraft:spruce_chest_boat",
+    "minecraft:spruce_sign",
+    "minecraft:spruce_hanging_sign",
+    //#endregion
+
+    //#region Вишня
+    "minecraft:cherry_planks",
+    "minecraft:cherry_sapling",
+    "minecraft:cherry_log",
+    "minecraft:stripped_cherry_log",
+    "minecraft:stripped_cherry_wood",
+    "minecraft:cherry_wood",
+    "minecraft:cherry_leaves",
+    "minecraft:cherry_slab",
+    "minecraft:cherry_fence",
+    "minecraft:cherry_stairs",
+    "minecraft:cherry_button",
+    "minecraft:cherry_pressure_plate",
+    "minecraft:cherry_door",
+    "minecraft:cherry_trapdoor",
+    "minecraft:cherry_fence_gate",
+    "minecraft:cherry_boat",
+    "minecraft:cherry_chest_boat",
+    "minecraft:cherry_sign",
+    "minecraft:cherry_hanging_sign",
+    //#endregion
+
+    //#region Мангровое
+    "minecraft:mangrove_planks",
+    "minecraft:mangrove_propagule",
+    "minecraft:mangrove_log",
+    "minecraft:mangrove_roots",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:stripped_mangrove_log",
+    "minecraft:stripped_mangrove_wood",
+    "minecraft:mangrove_wood",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_slab",
+    "minecraft:mangrove_fence",
+    "minecraft:mangrove_stairs",
+    "minecraft:mangrove_button",
+    "minecraft:mangrove_pressure_plate",
+    "minecraft:mangrove_door",
+    "minecraft:mangrove_trapdoor",
+    "minecraft:mangrove_fence_gate",
+    "minecraft:mangrove_boat",
+    "minecraft:mangrove_chest_boat",
+    "minecraft:mangrove_sign",
+    "minecraft:mangrove_hanging_sign",
+    //#endregion
+
+    //#region Бамбук
+    'minecraft:bamboo_raft',
+    'minecraft:bamboo_chest_raft',
+    //#endregion
+
+    //#region Кримзон
+    'minecraft:crimson_stem', 
+    'minecraft:crimson_hyphae', 
+    'minecraft:stripped_crimson_stem', 
+    'minecraft:stripped_crimson_hyphae', 
+    'minecraft:crimson_planks', 
+    'minecraft:crimson_stairs', 
+    'minecraft:crimson_slab', 
+    'minecraft:crimson_fence', 
+    'minecraft:crimson_fence_gate', 
+    'minecraft:crimson_door', 
+    'minecraft:crimson_trapdoor', 
+    'minecraft:crimson_pressure_plate', 
+    'minecraft:crimson_button',
+    'minecraft:crimson_sign',
+    'minecraft:crimson_hanging_sign',
+    //#endregion
+
+    //#region Варпед
+    'minecraft:warped_stem', 
+    'minecraft:warped_hyphae', 
+    'minecraft:stripped_warped_stem', 
+    'minecraft:stripped_warped_hyphae', 
+    'minecraft:warped_planks', 
+    'minecraft:warped_stairs', 
+    'minecraft:warped_slab', 
+    'minecraft:warped_fence', 
+    'minecraft:warped_fence_gate', 
+    'minecraft:warped_door', 
+    'minecraft:warped_trapdoor', 
+    'minecraft:warped_pressure_plate', 
+    'minecraft:warped_button',
+    'minecraft:warped_sign',
+    'minecraft:warped_hanging_sign',
+    //#endregion
+
+    //#endregion
+
+    //#region Руды
+    'minecraft:coal_ore', 
+    'minecraft:iron_ore', 
+    'minecraft:copper_ore', 
+    'minecraft:gold_ore', 
+    'minecraft:redstone_ore', 
+    'minecraft:emerald_ore', 
+    'minecraft:lapis_ore', 
+    'minecraft:diamond_ore', 
+    'minecraft:deepslate_coal_ore', 
+    'minecraft:deepslate_iron_ore', 
+    'minecraft:deepslate_copper_ore',
+    'minecraft:deepslate_gold_ore', 
+    'minecraft:deepslate_redstone_ore', 
+    'minecraft:deepslate_emerald_ore', 
+    'minecraft:deepslate_lapis_ore', 
+    'minecraft:deepslate_diamond_ore', 
+    'minecraft:nether_gold_ore', 
+    'minecraft:nether_quartz_ore', 
+    'minecraft:ancient_debris',
+    //#endregion
+
+    //#region Зараженные блоки
     'minecraft:infested_stone',
     'minecraft:infested_cobblestone',
     'minecraft:infested_stone_bricks', 
@@ -13,8 +260,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:infested_cracked_stone_bricks', 
     'minecraft:infested_chiseled_stone_bricks', 
     'minecraft:infested_deepslate',
+    //#endregion
 
-    // Каменные блоки
+    //#region Каменные блоки
     'minecraft:stone', 
     'minecraft:stone_stairs', 
     'minecraft:stone_slab', 
@@ -40,8 +288,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:mossy_cobblestone_stairs', 
     'minecraft:mossy_cobblestone_slab', 
     'minecraft:mossy_cobblestone_wall',
-
-    // Гранитовые блоки
+    //#endregion
+    
+    //#region Гранитовые блоки
     'minecraft:granite', 
     'minecraft:granite_stairs', 
     'minecraft:granite_slab', 
@@ -49,8 +298,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:polished_granite', 
     'minecraft:polished_granite_stairs', 
     'minecraft:polished_granite_slab', 
+    //#endregion
     
-    // Диоритовые блоки
+    //#region Диоритовые блоки
     'minecraft:diorite', 
     'minecraft:diorite_stairs', 
     'minecraft:diorite_slab', 
@@ -58,8 +308,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:polished_diorite', 
     'minecraft:polished_diorite_stairs', 
     'minecraft:polished_diorite_slab', 
-    
-    // Андезитовые блоки
+    //#endregion
+
+    //#region Андезитовые блоки
     'minecraft:andesite', 
     'minecraft:andesite_stairs', 
     'minecraft:andesite_slab', 
@@ -67,8 +318,17 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:polished_andesite', 
     'minecraft:polished_andesite_stairs', 
     'minecraft:polished_andesite_slab',
+    //#endregion
 
-    // Призмарин
+    //#region Эндерняк
+    'minecraft:end_stone', 
+    'minecraft:end_stone_bricks', 
+    'minecraft:end_stone_brick_stairs',
+    'minecraft:end_stone_brick_slab', 
+    'minecraft:end_stone_brick_wall',
+    //#endregion
+
+    //#region Призмарин
     'minecraft:prismarine', 
     'minecraft:prismarine_stairs', 
     'minecraft:prismarine_slab', 
@@ -79,17 +339,12 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:dark_prismarine', 
     'minecraft:dark_prismarine_stairs', 
     'minecraft:dark_prismarine_slab', 
+
     'minecraft:prismarine_crystals', 
     'minecraft:prismarine_shard',
+    //#endregion
 
-    // Эндстоун
-    'minecraft:end_stone', 
-    'minecraft:end_stone_bricks', 
-    'minecraft:end_stone_brick_stairs',
-    'minecraft:end_stone_brick_slab', 
-    'minecraft:end_stone_brick_wall',
-
-    // Сланец
+    //#region Глубоко-Сланец
     'minecraft:cobbled_deepslate', 
     'minecraft:cobbled_deepslate_stairs', 
     'minecraft:cobbled_deepslate_slab', 
@@ -111,36 +366,17 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:cracked_deepslate_bricks', 
     'minecraft:deepslate', 
     'minecraft:reinforced_deepslate',
+    //#endregion
 
-    // Грязь
+    //#region Грязь
     'minecraft:mud_brick_wall', 
     'minecraft:packed_mud', 
     'minecraft:mud_bricks', 
     'minecraft:mud_brick_stairs', 
     'minecraft:mud_brick_slab',
-
-    // Руды
-    'minecraft:coal_ore', 
-    'minecraft:iron_ore', 
-    'minecraft:copper_ore', 
-    'minecraft:gold_ore', 
-    'minecraft:redstone_ore', 
-    'minecraft:emerald_ore', 
-    'minecraft:lapis_ore', 
-    'minecraft:diamond_ore', 
-    'minecraft:deepslate_coal_ore', 
-    'minecraft:deepslate_iron_ore', 
-    'minecraft:deepslate_copper_ore',
-    'minecraft:deepslate_gold_ore', 
-    'minecraft:deepslate_redstone_ore', 
-    'minecraft:deepslate_emerald_ore', 
-    'minecraft:deepslate_lapis_ore', 
-    'minecraft:deepslate_diamond_ore', 
-    'minecraft:nether_gold_ore', 
-    'minecraft:nether_quartz_ore', 
-    'minecraft:ancient_debris',
-
-    // Песок
+    //#endregion
+    
+    //#region Песок
     'minecraft:sandstone', 
     'minecraft:sandstone_stairs', 
     'minecraft:sandstone_slab', 
@@ -153,8 +389,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:chiseled_sandstone', 
     'minecraft:sand', 
     'minecraft:suspicious_sand',
-
-    // Красный песок
+    //#endregion
+    
+    //#region Красный песок
     'minecraft:red_sandstone', 
     'minecraft:red_sandstone_stairs', 
     'minecraft:red_sandstone_slab', 
@@ -166,8 +403,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:cut_red_sandstone_slab', 
     'minecraft:chiseled_red_sandstone', 
     'minecraft:red_sand',
+    //#endregion
 
-    // Кораллы
+    //#region Кораллы
     'minecraft:horn_coral',
     'minecraft:horn_coral_fan', 
     'minecraft:dead_brain_coral', 
@@ -188,186 +426,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:brain_coral_fan', 
     'minecraft:bubble_coral', 
     'minecraft:fire_coral',
+    //#endregion
 
-    // Дерево
-    // Дуб
-    "minecraft:oak_wood",
-    "minecraft:oak_leaves",
-    "minecraft:oak_sapling",
-    "minecraft:stripped_oak_wood",
-    "minecraft:oak_log",
-    "minecraft:stripped_oak_log",
-    "minecraft:oak_planks",
-    "minecraft:oak_stairs",
-    "minecraft:oak_slab",
-    "minecraft:petrified_oak_slab",
-    "minecraft:oak_pressure_plate",
-    "minecraft:oak_fence",
-    "minecraft:oak_fence_gate",
-    "minecraft:oak_door",
-    "minecraft:oak_trapdoor",
-    "minecraft:oak_boat",
-    "minecraft:oak_chest_boat",
-    "minecraft:oak_sign",
-    "minecraft:oak_hanging_sign",
-    "minecraft:oak_button",
-
-    // Темный дуб
-    "minecraft:dark_oak_planks",
-    "minecraft:dark_oak_sapling",
-    "minecraft:dark_oak_log",
-    "minecraft:stripped_dark_oak_log",
-    "minecraft:stripped_dark_oak_wood",
-    "minecraft:dark_oak_wood",
-    "minecraft:dark_oak_leaves",
-    "minecraft:dark_oak_slab",
-    "minecraft:dark_oak_fence",
-    "minecraft:dark_oak_stairs",
-    "minecraft:dark_oak_button",
-    "minecraft:dark_oak_pressure_plate",
-    "minecraft:dark_oak_door",
-    "minecraft:dark_oak_trapdoor",
-    "minecraft:dark_oak_fence_gate",
-    "minecraft:dark_oak_boat",
-    "minecraft:dark_oak_chest_boat",
-    "minecraft:dark_oak_sign",
-    "minecraft:dark_oak_hanging_sign",
-
-    // Акация
-    "minecraft:acacia_planks",
-    "minecraft:acacia_sapling",
-    "minecraft:acacia_log",
-    "minecraft:stripped_acacia_log",
-    "minecraft:stripped_acacia_wood",
-    "minecraft:acacia_wood",
-    "minecraft:acacia_leaves",
-    "minecraft:acacia_slab",
-    "minecraft:acacia_fence",
-    "minecraft:acacia_stairs",
-    "minecraft:acacia_button",
-    "minecraft:acacia_pressure_plate",
-    "minecraft:acacia_door",
-    "minecraft:acacia_trapdoor",
-    "minecraft:acacia_fence_gate",
-    "minecraft:acacia_boat",
-    "minecraft:acacia_chest_boat",
-    "minecraft:acacia_sign",
-    "minecraft:acacia_hanging_sign",
-
-    // Береза
-    "minecraft:birch_planks",
-    "minecraft:birch_sapling",
-    "minecraft:birch_log",
-    "minecraft:stripped_birch_log",
-    "minecraft:stripped_birch_wood",
-    "minecraft:birch_wood",
-    "minecraft:birch_leaves",
-    "minecraft:birch_slab",
-    "minecraft:birch_fence",
-    "minecraft:birch_stairs",
-    "minecraft:birch_button",
-    "minecraft:birch_pressure_plate",
-    "minecraft:birch_door",
-    "minecraft:birch_trapdoor",
-    "minecraft:birch_fence_gate",
-    "minecraft:birch_boat",
-    "minecraft:birch_chest_boat",
-    "minecraft:birch_sign",
-    "minecraft:birch_hanging_sign",
-
-    // Тропическое
-    "minecraft:jungle_planks",
-    "minecraft:jungle_sapling",
-    "minecraft:jungle_log",
-    "minecraft:stripped_jungle_log",
-    "minecraft:stripped_jungle_wood",
-    "minecraft:jungle_wood",
-    "minecraft:jungle_leaves",
-    "minecraft:jungle_slab",
-    "minecraft:jungle_fence",
-    "minecraft:jungle_stairs",
-    "minecraft:jungle_button",
-    "minecraft:jungle_pressure_plate",
-    "minecraft:jungle_door",
-    "minecraft:jungle_trapdoor",
-    "minecraft:jungle_fence_gate",
-    "minecraft:jungle_boat",
-    "minecraft:jungle_chest_boat",
-    "minecraft:jungle_sign",
-    "minecraft:jungle_hanging_sign",
-
-    // Ель
-    "minecraft:spruce_planks",
-    "minecraft:spruce_sapling",
-    "minecraft:spruce_log",
-    "minecraft:stripped_spruce_log",
-    "minecraft:stripped_spruce_wood",
-    "minecraft:spruce_wood",
-    "minecraft:spruce_leaves",
-    "minecraft:spruce_slab",
-    "minecraft:spruce_fence",
-    "minecraft:spruce_stairs",
-    "minecraft:spruce_button",
-    "minecraft:spruce_pressure_plate",
-    "minecraft:spruce_door",
-    "minecraft:spruce_trapdoor",
-    "minecraft:spruce_fence_gate",
-    "minecraft:spruce_boat",
-    "minecraft:spruce_chest_boat",
-    "minecraft:spruce_sign",
-    "minecraft:spruce_hanging_sign",
-
-    // Вишня
-    "minecraft:cherry_planks",
-    "minecraft:cherry_sapling",
-    "minecraft:cherry_log",
-    "minecraft:stripped_cherry_log",
-    "minecraft:stripped_cherry_wood",
-    "minecraft:cherry_wood",
-    "minecraft:cherry_leaves",
-    "minecraft:cherry_slab",
-    "minecraft:cherry_fence",
-    "minecraft:cherry_stairs",
-    "minecraft:cherry_button",
-    "minecraft:cherry_pressure_plate",
-    "minecraft:cherry_door",
-    "minecraft:cherry_trapdoor",
-    "minecraft:cherry_fence_gate",
-    "minecraft:cherry_boat",
-    "minecraft:cherry_chest_boat",
-    "minecraft:cherry_sign",
-    "minecraft:cherry_hanging_sign",
-
-    // Мангровое
-    "minecraft:mangrove_planks",
-    "minecraft:mangrove_propagule",
-    "minecraft:mangrove_log",
-    "minecraft:mangrove_roots",
-    "minecraft:muddy_mangrove_roots",
-    "minecraft:stripped_mangrove_log",
-    "minecraft:stripped_mangrove_wood",
-    "minecraft:mangrove_wood",
-    "minecraft:mangrove_leaves",
-    "minecraft:mangrove_slab",
-    "minecraft:mangrove_fence",
-    "minecraft:mangrove_stairs",
-    "minecraft:mangrove_button",
-    "minecraft:mangrove_pressure_plate",
-    "minecraft:mangrove_door",
-    "minecraft:mangrove_trapdoor",
-    "minecraft:mangrove_fence_gate",
-    "minecraft:mangrove_boat",
-    "minecraft:mangrove_chest_boat",
-    "minecraft:mangrove_sign",
-    "minecraft:mangrove_hanging_sign",
-
-    // Бамбук
-    'minecraft:bamboo_sign',
-    'minecraft:bamboo_hanging_sign',
-    'minecraft:bamboo_raft',
-    'minecraft:bamboo_chest_raft',
-
-    // Шалкеры
+    //#region Шалкеры
     'minecraft:shulker_box', 
     'minecraft:white_shulker_box', 
     'minecraft:orange_shulker_box', 
@@ -385,8 +446,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:green_shulker_box', 
     'minecraft:red_shulker_box', 
     'minecraft:black_shulker_box',
+    //#endregion
 
-    // Мясо
+    //#region Мясо
     'minecraft:porkchop', 
     'minecraft:chicken', 
     'minecraft:mutton', 
@@ -397,15 +459,17 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:cooked_mutton', 
     'minecraft:cooked_rabbit', 
     'minecraft:cooked_beef',
+    //#endregion
 
-    // Семена
+    //#region Семяна
     'minecraft:wheat_seeds',
     'minecraft:pumpkin_seeds', 
     'minecraft:melon_seeds', 
     'minecraft:torchflower_seeds', 
     'minecraft:beetroot_seeds',
-
-    // Инструменты
+    //#endregion
+    
+    //#region Инструменты
     "minecraft:wooden_sword",
     "minecraft:wooden_pickaxe",
     "minecraft:wooden_axe",
@@ -441,8 +505,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:netherite_axe",
     "minecraft:netherite_shovel",
     "minecraft:netherite_hoe",
-
-    // Броня
+    //#endregion
+    
+    //#region Броня
     "minecraft:netherite_helmet",
     "minecraft:netherite_chestplate",
     "minecraft:netherite_leggings",
@@ -467,8 +532,56 @@ global.MINECRAFT_DISABLED_ITEMS = [
     "minecraft:iron_horse_armor",
     "minecraft:golden_horse_armor",
     "minecraft:diamond_horse_armor",
+    //#endregion
 
-    // Декоративные куски вазы
+    //#region Шаблоны брони
+    'minecraft:wayfinder_armor_trim_smithing_template', 
+    'minecraft:netherite_upgrade_smithing_template', 
+    'minecraft:dune_armor_trim_smithing_template', 
+    'minecraft:snout_armor_trim_smithing_template', 
+    'minecraft:shaper_armor_trim_smithing_template', 
+    'minecraft:coast_armor_trim_smithing_template', 
+    'minecraft:vex_armor_trim_smithing_template', 
+    'minecraft:host_armor_trim_smithing_template', 
+    'minecraft:rib_armor_trim_smithing_template', 
+    'minecraft:silence_armor_trim_smithing_template', 
+    'minecraft:spire_armor_trim_smithing_template', 
+    'minecraft:tide_armor_trim_smithing_template',
+    'minecraft:eye_armor_trim_smithing_template', 
+    'minecraft:raiser_armor_trim_smithing_template', 
+    'minecraft:wild_armor_trim_smithing_template', 
+    'minecraft:sentry_armor_trim_smithing_template', 
+    'minecraft:ward_armor_trim_smithing_template',
+    //#endregion
+
+    //#region Свечи
+    'minecraft:candle', 
+    'minecraft:white_candle', 
+    'minecraft:light_gray_candle', 
+    'minecraft:gray_candle', 
+    'minecraft:black_candle', 
+    'minecraft:brown_candle', 
+    'minecraft:red_candle', 
+    'minecraft:orange_candle', 
+    'minecraft:yellow_candle', 
+    'minecraft:lime_candle', 
+    'minecraft:green_candle', 
+    'minecraft:cyan_candle', 
+    'minecraft:light_blue_candle', 
+    'minecraft:blue_candle', 
+    'minecraft:purple_candle', 
+    'minecraft:magenta_candle', 
+    'minecraft:pink_candle',
+    //#endregion
+
+    //#region Мед
+    // 'minecraft:honeycomb',
+    // 'minecraft:honey_bottle', 
+    // 'minecraft:honeycomb_block', 
+    // 'minecraft:honey_block',
+    //#endregion
+
+    //#region Декоративные куски вазы
     'minecraft:danger_pottery_sherd', 
     'minecraft:explorer_pottery_sherd', 
     'minecraft:friend_pottery_sherd', 
@@ -489,44 +602,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:blade_pottery_sherd', 
     'minecraft:brewer_pottery_sherd', 
     'minecraft:burn_pottery_sherd',
-
-    // Шаблоны брони
-    'minecraft:wayfinder_armor_trim_smithing_template', 
-    'minecraft:netherite_upgrade_smithing_template', 
-    'minecraft:dune_armor_trim_smithing_template', 
-    'minecraft:snout_armor_trim_smithing_template', 
-    'minecraft:shaper_armor_trim_smithing_template', 
-    'minecraft:coast_armor_trim_smithing_template', 
-    'minecraft:vex_armor_trim_smithing_template', 
-    'minecraft:host_armor_trim_smithing_template', 
-    'minecraft:rib_armor_trim_smithing_template', 
-    'minecraft:silence_armor_trim_smithing_template', 
-    'minecraft:spire_armor_trim_smithing_template', 
-    'minecraft:tide_armor_trim_smithing_template',
-    'minecraft:eye_armor_trim_smithing_template', 
-    'minecraft:raiser_armor_trim_smithing_template', 
-    'minecraft:wild_armor_trim_smithing_template', 
-    'minecraft:sentry_armor_trim_smithing_template', 
-    'minecraft:ward_armor_trim_smithing_template',
-
-    // Свечи
-    'minecraft:candle', 
-    'minecraft:white_candle', 
-    'minecraft:light_gray_candle', 
-    'minecraft:gray_candle', 
-    'minecraft:black_candle', 
-    'minecraft:brown_candle', 
-    'minecraft:red_candle', 
-    'minecraft:orange_candle', 
-    'minecraft:yellow_candle', 
-    'minecraft:lime_candle', 
-    'minecraft:green_candle', 
-    'minecraft:cyan_candle', 
-    'minecraft:light_blue_candle', 
-    'minecraft:blue_candle', 
-    'minecraft:purple_candle', 
-    'minecraft:magenta_candle', 
-    'minecraft:pink_candle',
+    //#endregion
 
     // Другое
     'minecraft:calcite', 
@@ -663,9 +739,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:tropical_fish',
     'minecraft:melon_slice',
     'minecraft:beehive', 
-    'minecraft:honey_bottle', 
-    'minecraft:honeycomb_block', 
-    'minecraft:honey_block',
     'minecraft:chorus_fruit', 
     'minecraft:popped_chorus_fruit', 
     'minecraft:purpur_pillar', 
@@ -723,103 +796,73 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:raw_iron_block', 
     'minecraft:raw_gold_block', 
     'minecraft:raw_copper_block',
-    'minecraft:compass',
     'minecraft:iron_bars',
-    'minecraft:honeycomb',
-
-    // Кримзон незер дерево
-    // TODO: Разблокировать после добавления ада
-    'minecraft:crimson_stem', 
-    'minecraft:crimson_hyphae', 
-    'minecraft:stripped_crimson_stem', 
-    'minecraft:stripped_crimson_hyphae', 
-    'minecraft:crimson_planks', 
-    'minecraft:crimson_stairs', 
-    'minecraft:crimson_slab', 
-    'minecraft:crimson_fence', 
-    'minecraft:crimson_fence_gate', 
-    'minecraft:crimson_door', 
-    'minecraft:crimson_trapdoor', 
-    'minecraft:crimson_pressure_plate', 
-    'minecraft:crimson_button',
-
-    // Варпед незер дерево
-    // TODO: Разблокировать после добавления ада
-    'minecraft:warped_stem', 
-    'minecraft:warped_hyphae', 
-    'minecraft:stripped_warped_stem', 
-    'minecraft:stripped_warped_hyphae', 
-    'minecraft:warped_planks', 
-    'minecraft:warped_stairs', 
-    'minecraft:warped_slab', 
-    'minecraft:warped_fence', 
-    'minecraft:warped_fence_gate', 
-    'minecraft:warped_door', 
-    'minecraft:warped_trapdoor', 
-    'minecraft:warped_pressure_plate', 
-    'minecraft:warped_button',
+    'minecraft:dragon_head', 
+    'minecraft:creeper_head',
+    'minecraft:skeleton_skull', 
+    'minecraft:zombie_head', 
+    'minecraft:piglin_head', 
+    'minecraft:dragon_breath', 
+    'minecraft:phantom_membrane',
 
     // Куча незер блоков
     // TODO: Разблокировать после добавления ада
-    'minecraft:polished_blackstone_bricks', 
-    'minecraft:cracked_polished_blackstone_bricks', 
-    'minecraft:polished_blackstone_brick_stairs', 
-    'minecraft:polished_blackstone_brick_slab', 
-    'minecraft:polished_blackstone_brick_wall', 
-    'minecraft:netherrack', 
-    'minecraft:nether_bricks', 
-    'minecraft:cracked_nether_bricks',
-    'minecraft:nether_brick_stairs', 
-    'minecraft:nether_brick_slab', 
-    'minecraft:nether_brick_wall', 
-    'minecraft:nether_brick_fence', 
-    'minecraft:chiseled_nether_bricks', 
-    'minecraft:red_nether_bricks', 
-    'minecraft:red_nether_brick_stairs', 
-    'minecraft:red_nether_brick_slab', 
-    'minecraft:red_nether_brick_wall',
-    'minecraft:basalt', 
-    'minecraft:smooth_basalt', 
-    'minecraft:polished_basalt', 
-    'minecraft:blackstone', 
-    'minecraft:gilded_blackstone', 
-    'minecraft:blackstone_stairs', 
-    'minecraft:blackstone_slab', 
-    'minecraft:blackstone_wall', 
-    'minecraft:chiseled_polished_blackstone', 
-    'minecraft:polished_blackstone', 
-    'minecraft:polished_blackstone_stairs', 
-    'minecraft:polished_blackstone_slab', 
-    'minecraft:polished_blackstone_wall', 
-    'minecraft:polished_blackstone_pressure_plate', 
-    'minecraft:polished_blackstone_button',
+    // 'minecraft:polished_blackstone_bricks', 
+    // 'minecraft:cracked_polished_blackstone_bricks', 
+    // 'minecraft:polished_blackstone_brick_stairs', 
+    // 'minecraft:polished_blackstone_brick_slab', 
+    // 'minecraft:polished_blackstone_brick_wall', 
+    // 'minecraft:netherrack', 
+    // 'minecraft:nether_bricks', 
+    // 'minecraft:cracked_nether_bricks',
+    // 'minecraft:nether_brick_stairs', 
+    // 'minecraft:nether_brick_slab', 
+    // 'minecraft:nether_brick_wall', 
+    // 'minecraft:nether_brick_fence', 
+    // 'minecraft:chiseled_nether_bricks', 
+    // 'minecraft:red_nether_bricks', 
+    // 'minecraft:red_nether_brick_stairs', 
+    // 'minecraft:red_nether_brick_slab', 
+    // 'minecraft:red_nether_brick_wall',
+    // 'minecraft:basalt', 
+    // 'minecraft:smooth_basalt', 
+    // 'minecraft:polished_basalt', 
+    // 'minecraft:blackstone', 
+    // 'minecraft:gilded_blackstone', 
+    // 'minecraft:blackstone_stairs', 
+    // 'minecraft:blackstone_slab', 
+    // 'minecraft:blackstone_wall', 
+    // 'minecraft:chiseled_polished_blackstone', 
+    // 'minecraft:polished_blackstone', 
+    // 'minecraft:polished_blackstone_stairs', 
+    // 'minecraft:polished_blackstone_slab', 
+    // 'minecraft:polished_blackstone_wall', 
+    // 'minecraft:polished_blackstone_pressure_plate', 
+    // 'minecraft:polished_blackstone_button',
 
     // И еще куча незер блоков
-    // TODO: Разблокировать после добавления ада
-    'minecraft:crying_obsidian', 
-    'minecraft:crimson_nylium', 
-    'minecraft:warped_nylium', 
-    'minecraft:soul_sand', 
-    'minecraft:soul_soil', 
-    'minecraft:nether_wart_block', 
-    'minecraft:warped_wart_block', 
-    'minecraft:shroomlight', 
-    'minecraft:crimson_fungus', 
-    'minecraft:piglin_head', 
-    'minecraft:zombie_head', 
-    'minecraft:skeleton_skull', 
-    'minecraft:nether_sprouts', 
-    'minecraft:warped_roots', 
-    'minecraft:dragon_head', 
-    'minecraft:creeper_head', 
-    'minecraft:wither_skeleton_skull', 
-    'minecraft:weeping_vines', 
-    'minecraft:crimson_roots', 
-    'minecraft:nether_brick', 
-    'minecraft:nether_wart', 
-    'minecraft:twisting_vines', 
-    'minecraft:warped_fungus',
-    'minecraft:respawn_anchor',
+    // 'minecraft:crying_obsidian', 
+    // 'minecraft:crimson_nylium', 
+    // 'minecraft:warped_nylium', 
+    // 'minecraft:soul_sand', 
+    // 'minecraft:soul_soil', 
+    // 'minecraft:nether_wart_block', 
+    // 'minecraft:warped_wart_block', 
+    // 'minecraft:shroomlight', 
+    // 'minecraft:crimson_fungus', 
+    // 'minecraft:piglin_head', 
+    // 'minecraft:zombie_head', 
+    // 'minecraft:skeleton_skull', 
+    // 'minecraft:nether_sprouts', 
+    // 'minecraft:warped_roots', 
+    // 'minecraft:wither_skeleton_skull', 
+    // 'minecraft:weeping_vines', 
+    // 'minecraft:crimson_roots', 
+    // 'minecraft:nether_brick', 
+    // 'minecraft:nether_wart', 
+    // 'minecraft:twisting_vines', 
+    // 'minecraft:warped_fungus',
+    // 'minecraft:respawn_anchor',
 ];
 
 global.MINECRAFT_HIDED_ITEMS = [
@@ -840,7 +883,7 @@ global.MINECRAFT_HIDED_ITEMS = [
     'minecraft:oxidized_cut_copper_slab',*/
 ];
 
-global.VANILLA_WOOD_TYPES = [
+global.MINECRAFT_OVERWORLD_WOOD_TYPES = [
     "oak",
     "spruce",
     "birch",
@@ -849,11 +892,16 @@ global.VANILLA_WOOD_TYPES = [
     "cherry",
     "dark_oak",
     "mangrove",
-    "crimson", // TODO: Разблокировать когда появится АД
-    "warped" // TODO: Разблокировать когда появится АД
 ];
 
-global.VANILLA_STONE_TYPES = [
+global.MINECRAFT_NETHER_WOOD_TYPES = [
+    "crimson",
+    "warped"
+];
+
+global.MINECRAFT_ALL_WOOD_TYPES = global.MINECRAFT_OVERWORLD_WOOD_TYPES.concat(global.MINECRAFT_NETHER_WOOD_TYPES);
+
+global.MINECRAFT_STONE_TYPES = [
     "sand",
     "red_sand",
     "gravel",
@@ -898,4 +946,21 @@ global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS = [
     { block: 'minecraft:waxed_exposed_copper', cutted: 'minecraft:waxed_exposed_cut_copper', stairs: 'minecraft:waxed_exposed_cut_copper_stairs', slabs: 'minecraft:waxed_exposed_cut_copper_slab', name: 'waxed_exposed_copper' },
     { block: 'minecraft:waxed_weathered_copper', cutted: 'minecraft:waxed_weathered_cut_copper', stairs: 'minecraft:waxed_weathered_cut_copper_stairs', slabs: 'minecraft:waxed_weathered_cut_copper_slab', name: 'waxed_weathered_copper' },
     { block: 'minecraft:waxed_oxidized_copper', cutted: 'minecraft:waxed_oxidized_cut_copper', stairs: 'minecraft:waxed_oxidized_cut_copper_stairs', slabs: 'minecraft:waxed_oxidized_cut_copper_slab', name: 'waxed_oxidized_copper' }
+];
+
+global.MINECRAFT_TRIM_MATERIALS =  [
+    'minecraft:amethyst_shard', 
+    'gtceu:bismuth_ingot', 
+    'minecraft:diamond', 
+    'minecraft:emerald', 
+    'minecraft:gold_ingot', 
+    'minecraft:lapis_lazuli', 
+    'gtceu:opal_gem', 
+    'gtceu:raw_pyrite', 
+    'gtceu:rose_gold_ingot', 
+    'gtceu:ruby_gem', 
+    'gtceu:sapphire_gem', 
+    'gtceu:silver_ingot', 
+    'gtceu:sterling_silver_ingot', 
+    'gtceu:topaz_gem'
 ];

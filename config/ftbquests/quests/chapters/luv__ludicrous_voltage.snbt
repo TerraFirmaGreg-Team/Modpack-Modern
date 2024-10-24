@@ -613,7 +613,7 @@
 				""
 				"&l&3Lore:&r&o There may be a rebalance for these in the future. See the Multiblock Miner quest for details."
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "1BE779AF4487E3EB"
 			shape: "rsquare"
 			size: 0.66d

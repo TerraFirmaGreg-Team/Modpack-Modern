@@ -43,11 +43,20 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:nickel', 1453, 0.00625, '#forge:ingots/nickel', '#forge:double_ingots/nickel', '#forge:plates/nickel', 1, 'tfc:nickel')
     event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
     
-    event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
+    event.metal('gtceu:redstone', 460, 0.01729, null, null, '#forge:plates/redstone', 1, 'tfg:redstone')
     event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
     event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
 
+/**
+ * event.itemHeat(
+    ingredient: Ingredient, 
+    heatCapacity: number, 
+    forgingTemperature: @Nullable number, 
+    weldingTemperature: @Nullable number, 
+    name?: string
+    )
+ */
 const registerTFCHeats = (event) => {
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty, heatCapacity) {
@@ -168,5 +177,11 @@ const registerTFCFoodData = (event) => {
         food.hunger(3)
         food.fruit(2)
         food.decayModifier(0.2)
+    })
+
+    event.foodItem('minecraft:golden_carrot', food => {
+        food.hunger(8)
+        food.vegetables(1)
+        food.decayModifier(0.1)
     })
 }
