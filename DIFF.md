@@ -1,0 +1,81 @@
+```diff
++ Advanced Peripherals
++ Almanac Lib
++ Beneath
++ Boat Item View (Forge)
++ Create Low-Heated
++ Create Picky Wheels
++ Decay 2012
++ Deep Resonance
++ DefaultSettings
++ Every Compat (Wood Good)
++ Forgiving World - Dimension Stacking[Forge/Fabric]
++ Icterine
++ Inventory Tweaks - ReFoxed
++ Load My F***ing Tags
++ McJtyLib
++ Petrol's Parts (Create add-on)
++ ProbeJS
++ RFTools Base
++ RFTools Builder
++ RFTools Control
++ RFTools Dimensions
++ RFTools Utility
++ Seamless Loading Screen
++ Sodium/Embeddium Extras
++ Sodium/Embeddium Options API
++ Sound Physics Remastered
++ Storage Drawers
++ TFC Barrels
++ TFC Canes
++ TFC Desire Paths
++ Visual Workbench [Forge & Fabric]
++ aleki's Nifty Ships
++ aleki's Ridiculously Simple Roofs
+- Embeddium++
+- GregTech Revival 32x
+- ILAORE's TFC 32x (terrafirmacraft, terra firma craft)
+- Improved Applied Energistics 2 (ae2, ae 2)
+- Improved Create 32x
+- Inventory Sorter
+- Simply Light
+- TerraFirmaGreg Core
+! Astikor Carts TFC
+! Corpse
+! CraftPresence
+! Create
+! Create Crafts & Additions
+! Create: Connected
+! Create: Steam 'n' Rails
+! CreativeCore
+! Drippy Loading Screen
+! EMI
+! Embeddium
+! ExtendedAE
+! FTB Quests (Forge)
+! FancyMenu
+! Firma: Civilization (TFC)
+! FirmaLife
+! GregTechCEu Modern
+! Gregicality Rocketry
+! ImmediatelyFast
+! Jade Addons (NeoForge)
+! Jade 🔍
+! Just Enough Items (JEI)
+! KubeJS TFC
+! Let Me Despawn
+! ModernFix
+! Moonlight Lib
+! Puzzles Lib [Forge & Fabric]
+! Radium Reforged
+! Rhino
+! Sodium/Embeddium Dynamic Lights
+! Sophisticated Backpacks
+! Sophisticated Core
+! SuperMartijn642's Core Lib
+! TFC Ambiental - Second edition
+! TFC Hot or Not
+! TerraFirmaCraft
+! UniLib
+! Xaero's Minimap
+```
