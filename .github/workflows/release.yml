@@ -3,8 +3,6 @@ run-name: Build #${{ github.run_number }} by @${{ github.actor }}
 
 on:
   push:
-    branches:
-      - main
     tags:
       - "*.*.*"
 
