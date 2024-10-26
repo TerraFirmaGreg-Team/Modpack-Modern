@@ -313,7 +313,13 @@ const registerTFCBlockTags = (event) => {
     event.add('tfc:glass_basin_blocks', 'tfc:white_kaolin_clay')
     event.add('tfc:glass_pouring_table', 'tfc:white_kaolin_clay')
     //#endregion
-    
+
+    //#region Позволяем ТФК магме греть бойлер из Create
+    global.TFC_MAGMA_BLOCKS.forEach(el => {
+        event.add('create:passive_boiler_heaters', el)
+    })
+    //#endregion
+
     //#region Удаление тегов и скрытие руд
     const ALL_TFC_ORES = Ingredient.of(/tfc:ore\/[^*]+\/[^*]+/).itemIds
 

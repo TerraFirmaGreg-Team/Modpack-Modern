@@ -1247,3 +1247,12 @@ global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/cranberry_bush', fluid_amount: 6000, output: '3x tfc:food/cranberry', name: 'cranberry' },
 ];
 
+global.TFC_MAGMA_BLOCKS = [
+    'tfc:rock/magma/granite', 
+    'tfc:rock/magma/diorite', 
+    'tfc:rock/magma/gabbro', 
+    'tfc:rock/magma/rhyolite', 
+    'tfc:rock/magma/basalt', 
+    'tfc:rock/magma/andesite', 
+    'tfc:rock/magma/dacite'
+];
