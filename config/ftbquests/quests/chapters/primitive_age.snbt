@@ -2742,7 +2742,11 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["2765DB2E20A745F8"]
+			dependencies: [
+				"2765DB2E20A745F8"
+				"48AED37B4E20A99A"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.478D0DF94D7495EF.d1}"]
 			id: "478D0DF94D7495EF"
 			subtitle: "{quests.478D0DF94D7495EF.st}"
@@ -4863,7 +4867,12 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["2765DB2E20A745F8"]
+			dependencies: [
+				"2765DB2E20A745F8"
+				"48AED37B4E20A99A"
+				"39E8CE6A86731567"
+			]
+			dependency_requirement: "one_completed"
 			id: "04D4E196824D53C4"
 			tasks: [{
 				id: "0121A0A3EFBF3A46"
@@ -4967,7 +4976,7 @@
 				}
 			]
 			title: "Copper Waxing [WIP]"
-			x: -8.0d
+			x: -9.5d
 			y: 0.0d
 		}
 		{
@@ -4977,7 +4986,7 @@
 				title: "Cellar [WIP]"
 				type: "checkmark"
 			}]
-			x: -7.0d
+			x: -8.5d
 			y: -1.0d
 		}
 		{
@@ -4987,7 +4996,7 @@
 				title: "Bees [WIP]"
 				type: "checkmark"
 			}]
-			x: -7.0d
+			x: -8.5d
 			y: 1.0d
 		}
 		{
@@ -4997,7 +5006,7 @@
 				title: "Greenhouse [WIP]"
 				type: "checkmark"
 			}]
-			x: -7.0d
+			x: -8.5d
 			y: 0.0d
 		}
 		{
@@ -5127,8 +5136,8 @@
 				item: "etched:etching_table"
 				type: "item"
 			}]
-			x: 24.5d
-			y: 25.5d
+			x: 8.0d
+			y: 24.5d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5138,8 +5147,8 @@
 				item: "etched:album_jukebox"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 24.0d
+			x: 6.5d
+			y: 23.0d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5149,8 +5158,8 @@
 				item: "etched:radio"
 				type: "item"
 			}]
-			x: 26.0d
-			y: 25.5d
+			x: 9.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5160,8 +5169,8 @@
 				item: "etched:jukebox_minecart"
 				type: "item"
 			}]
-			x: 23.0d
-			y: 25.5d
+			x: 6.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5171,8 +5180,8 @@
 				item: "etched:boombox"
 				type: "item"
 			}]
-			x: 26.0d
-			y: 24.0d
+			x: 9.5d
+			y: 23.0d
 		}
 		{
 			dependencies: ["754CA10FD1725EC6"]
@@ -5188,8 +5197,8 @@
 				}
 				type: "item"
 			}]
-			x: 24.5d
-			y: 23.0d
+			x: 8.0d
+			y: 22.0d
 		}
 		{
 			dependencies: [
@@ -5203,8 +5212,8 @@
 				item: "etched:album_cover"
 				type: "item"
 			}]
-			x: 24.5d
-			y: 22.0d
+			x: 8.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["38469FBD2B7998C1"]
@@ -5214,8 +5223,68 @@
 				item: "etched:blank_music_disc"
 				type: "item"
 			}]
+			x: 8.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["23DD6D6E78F62757"]
+			id: "2B862C1ED65D0526"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "7DB951FDB7063659"
+				item: "gtceu:steel_brick_casing"
+				type: "item"
+			}]
 			x: 24.5d
 			y: 24.0d
+		}
+		{
+			dependencies: ["445E060EF3300A49"]
+			id: "23DD6D6E78F62757"
+			tasks: [{
+				count: 5L
+				id: "1C607358F45ABAD6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_plate"
+				}
+				type: "item"
+			}]
+			x: 24.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["But how? Try to descend to a depth of y = -60 blocks. Or perhaps lower?"]
+			id: "30C61004FB5FA9AC"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "2928FC0BBF500E88"
+				title: "Visit Nether"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30C61004FB5FA9AC"]
+			description: ["Maybe you need to climb as high as possible? But I'm not sure."]
+			id: "53C8B91A1A5BBE3E"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "162808CB268A36CE"
+				title: "How to escape from Alcatrazzz?"
+				type: "dimension"
+			}]
+			x: -7.0d
+			y: 0.0d
 		}
 	]
 	title: "Primitive Age"
