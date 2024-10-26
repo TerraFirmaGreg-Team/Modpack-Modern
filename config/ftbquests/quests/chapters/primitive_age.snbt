@@ -371,11 +371,7 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: [
-				"{quests.387DEEADF4922AB3.d1}"
-				""
-				"{ \"text\": \"Excel Link (Tap here)\", \"color\":\"#02FF00\", \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4\" } }"
-			]
+			description: ["{quests.387DEEADF4922AB3.d1}"]
 			icon: "gtceu:shale_aluminium_ore"
 			id: "387DEEADF4922AB3"
 			subtitle: "{quests.387DEEADF4922AB3.st}"
