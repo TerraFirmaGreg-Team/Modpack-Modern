@@ -1,2 +1,7 @@
-# Default to LF for all files
-* text=lf
+* text=auto eol=lf
+
+*.zip binary
+*.png binary
+
+dumps/**/*.* linguist-generated=true
+*.log linguist-generated=true
