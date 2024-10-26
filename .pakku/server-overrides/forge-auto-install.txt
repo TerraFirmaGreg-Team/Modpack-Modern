@@ -1,0 +1,13 @@
+# Forge Auto-Install Configuration
+
+# Specify your desired Minecraft-Version.
+# Possible options are [Version like: "1.20.4" or "latest"]
+minecraftVersion=1.20.1
+
+# Specify your desired LoaderType.
+# Possible options are ["Forge" or "NeoForge"]
+loaderType=Forge
+
+# Specify your desired Loader-Version.
+# Possible options are [Version like: "20.4.164-beta" or "latest" or "recommended"]
+loaderVersion=47.2.6
