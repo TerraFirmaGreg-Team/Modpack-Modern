@@ -1,21 +1,29 @@
 // priority: 0
 
-const registerTreeTapRecipes = (event) => {
+const registerTreeTapRecipes = (e) => {
     
-    // Удаление всех рецептов мода
-    event.remove({ mod: 'treetap' })
+    //#region Treetap
+    e.remove({ id: 'treetap:tap' })
 
-    // TreeTap
-    event.recipes.tfc.anvil('treetap:tap', '#forge:ingots/copper', [ 'draw_not_last', 'hit_not_last', 'shrink_last' ])
+    e.recipes.tfc.anvil('treetap:tap', '#forge:ingots/copper', [ 'draw_not_last', 'hit_not_last', 'shrink_last' ])
         .id('tfg:anvil/treetap')
 
-    // TreeTap Heating
-    event.recipes.tfc.heating('treetap:tap', 1080)
+    e.recipes.gtceu.assembler(`tfg:treetap`)
+        .itemInputs('#forge:ingots/copper')
+        .circuit(12)
+        .itemOutputs('treetap:tap')
+        .EUt(GTValues.VA[GTValues.ULV]).duration(100)
+
+    //#endregion
+
+    //#region Декрафт Treetap
+    e.recipes.tfc.heating('treetap:tap', 1080)
         .resultFluid(Fluid.of('gtceu:copper', 144))
         .id('tfg:heating/treetap')
+    //#endregion    
 
-    // Latex From Kapok
-    event.custom({
+    //#region Рецепты Treetap
+    e.custom({
         type: "treetap:tap_extract",
         log: {
             "item": "tfc:wood/log/kapok"
@@ -38,4 +46,5 @@ const registerTreeTapRecipes = (event) => {
             }
         ]
     }).id('tfg:treetap/latex')
+    //#endregion
 }

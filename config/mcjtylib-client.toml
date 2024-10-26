@@ -1,0 +1,144 @@
+
+#Style settings for all mods using mcjtylib
+[style]
+	#Color: slider top left border
+	colorSliderTopLeft = "2b2b2b"
+	#Color: slider bottom right border
+	colorSliderBottomRight = "ffffff"
+	#Color: slider background
+	colorSliderFiller = "636363"
+	#Color: slider knob top left border
+	colorSliderKnobTopLeft = "eeeeee"
+	#Color: slider knob bottom right border
+	colorSliderKnobBottomRight = "333333"
+	#Color: slider knob background
+	colorSliderKnobFiller = "8b8b8b"
+	#Color: slider knob top left border while dragging
+	colorSliderKnobDraggingTopLeft = "5c669d"
+	#Color: slider knob bottom right border while dragging
+	colorSliderKnobDraggingBottomRight = "bcc5ff"
+	#Color: slider knob background while dragging
+	colorSliderKnobDraggingFiller = "7f89bf"
+	#Color: slider knob top left border while hovering
+	colorSliderKnobHoveringTopLeft = "a5aac5"
+	#Color: slider knob bottom right border while hovering
+	colorSliderKnobHoveringBottomRight = "777c99"
+	#Color: slider knob background while hovering
+	colorSliderKnobHoveringFiller = "858aa5"
+	#Color: slider knob little marker lines
+	colorSliderKnobMarkerLine = "4e4e4e"
+	#Color: text normal
+	colorTextNormal = "303030"
+	#Color: text as used in lists
+	colorTextInListNormal = "151515"
+	#Color: text disabled
+	colorTextDisabled = "a0a0a0"
+	#Color: textfield top left border
+	colorTextFieldTopLeft = "2b2b2b"
+	#Color: textfield bottom right border
+	colorTextFieldBottomRight = "ffffff"
+	#Color: textfield background
+	colorTextFieldFiller = "c6c6c6"
+	#Color: textfield backbground while focused
+	colorTextFieldFocusedFiller = "eeeeee"
+	#Color: textfield backbground while hovering
+	colorTextFieldHoveringFiller = "dadada"
+	#Color: textfield cursor
+	colorTextFieldCursor = "0"
+	#Color: energy bar top left border
+	colorEnergyBarTopLeft = "2b2b2b"
+	#Color: energy bar bottom right border
+	colorEnergyBarBottomRight = "ffffff"
+	#Color: energy bar high energy level
+	colorEnergyBarHighEnergy = "dd0000"
+	#Color: energy bar low energy level
+	colorEnergyBarLowEnergy = "631111"
+	#Color: energy bar spacer (between every energy level bar)
+	colorEnergyBarSpacer = "430000"
+	#Color: energy bar text
+	colorEnergyBarText = "ffffff"
+	#Color: list background
+	colorListBackground = "8b8b8b"
+	#Color: list separator line
+	colorListSeparatorLine = "5c5c5c"
+	#Color: list selected and highlighted gradient
+	colorListSelectedHighlightedGradient1 = "bbbb00"
+	#Color: list selected and highlighted gradient
+	colorListSelectedHighlightedGradient2 = "999900"
+	#Color: list selected gradient
+	colorListSelectedGradient1 = "616161"
+	#Color: list selected gradient
+	colorListSelectedGradient2 = "414141"
+	#Color: list highlighted gradient
+	colorListHighlightedGradient1 = "717120"
+	#Color: list highlighted gradient
+	colorListHighlightedGradient2 = "515110"
+	#Color: standard bevel bright border color
+	colorBackgroundBevelBright = "ffffff"
+	#Color: standard bevel dark border color
+	colorBackgroundBevelDark = "2b2b2b"
+	#Color: standard background color
+	colorBackgroundFiller = "c6c6c6"
+	#Color: toggle button normal top left border
+	colorToggleNormalBorderTopLeft = "eeeeee"
+	#Color: toggle button normal bottom right border
+	colorToggleNormalBorderBottomRight = "777777"
+	#Color: toggle button normal background
+	colorToggleNormalFiller = "c6c6c6"
+	#Color: toggle button disabled top left border
+	colorToggleDisabledBorderTopLeft = "eeeeee"
+	#Color: toggle button disabled bottom right border
+	colorToggleDisabledBorderBottomRight = "777777"
+	#Color: toggle button disabled background
+	colorToggleDisabledFiller = "c6c6c6"
+	#Color: toggle button normal text
+	colorToggleTextNormal = "303030"
+	#Color: toggle button disabled text
+	colorToggleTextDisabled = "a0a0a0"
+	#Color: cycle button small triangle
+	colorCycleButtonTriangleNormal = "0"
+	#Color: cycle button disabled small triangle
+	colorCycleButtonTriangleDisabled = "888888"
+	#Color: external border around buttons and some other components
+	colorButtonExternalBorder = "0"
+	#Color: button top left border
+	colorButtonBorderTopLeft = "eeeeee"
+	#Color: button bottom right border
+	colorButtonBorderBottomRight = "777777"
+	#Color: button background
+	colorButtonFiller = "c6c6c6"
+	#Color: button background gradient
+	colorButtonFillerGradient1 = "b1b1b1"
+	#Color: button background gradient
+	colorButtonFillerGradient2 = "e1e1e1"
+	#Color: disabled button top left border
+	colorButtonDisabledBorderTopLeft = "eeeeee"
+	#Color: disabled button bottom right border
+	colorButtonDisabledBorderBottomRight = "777777"
+	#Color: disabled button background
+	colorButtonDisabledFiller = "c6c6c6"
+	#Color: disabled button background gradient
+	colorButtonDisabledFillerGradient1 = "b1b1b1"
+	#Color: disabled button background gradient
+	colorButtonDisabledFillerGradient2 = "e1e1e1"
+	#Color: selected button top left border
+	colorButtonSelectedBorderTopLeft = "5c669d"
+	#Color: selected button bottom right border
+	colorButtonSelectedBorderBottomRight = "bcc5ff"
+	#Color: selected button background
+	colorButtonSelectedFiller = "7f89bf"
+	#Color: selected button background gradient
+	colorButtonSelectedFillerGradient1 = "6a74aa"
+	#Color: selected button background gradient
+	colorButtonSelectedFillerGradient2 = "949ed4"
+	#Color: hovering button top left border
+	colorButtonHoveringBorderTopLeft = "a5aac5"
+	#Color: hovering button bottom right border
+	colorButtonHoveringBorderBottomRight = "999ebb"
+	#Color: hovering button background
+	colorButtonHoveringFiller = "a2a7c2"
+	#Color: hovering button background gradient
+	colorButtonHoveringFillerGradient1 = "8d92ad"
+	#Color: hovering button background gradient
+	colorButtonHoveringFillerGradient2 = "babfda"
+

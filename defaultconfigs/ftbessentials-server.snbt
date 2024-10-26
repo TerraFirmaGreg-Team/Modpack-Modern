@@ -49,13 +49,13 @@
 		# Allows users to access their ender chest, as well as admins to manage other players' ender chests.
 		enderchest: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to set a custom hat as their head item by using a command
 		hat: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to kick themselves from the server, for example if they are stuck or desynced
@@ -67,7 +67,7 @@
 		# Allows users to view player leaderboard stats.
 		leaderboard: {
 			# Default: true
-			enabled: true
+			enabled: false
 		}
 		
 		# Allows users to change their display name, as well as admins to change nicknames for other users
