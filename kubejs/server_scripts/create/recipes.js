@@ -104,10 +104,6 @@ const registerCreateRecipes = (e) => {
     })
     //#endregion
 
-    
-}
-
-const dead = () => {
     // Train Station
     e.shapeless('2x create:track_station', [
         'create:railway_casing',

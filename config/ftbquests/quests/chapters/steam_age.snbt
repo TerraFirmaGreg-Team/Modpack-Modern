@@ -10,58 +10,71 @@
 		{
 			id: "1C86D83D29134EBE"
 			linked_quest: "253860AD4DF4224C"
-			x: 5.5d
+			x: -2.5d
 			y: -6.0d
 		}
 		{
 			id: "09E0E263CC81CD99"
 			linked_quest: "2658E7679CD42ACD"
-			x: 9.0d
-			y: 4.5d
+			shape: "circle"
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			id: "26D1A18BE2F694C4"
 			linked_quest: "6E13B0241CB1D536"
-			x: 7.5d
-			y: 3.0d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			id: "580358D6164B9CEA"
 			linked_quest: "04D4E196824D53C4"
-			x: 2.5d
-			y: -1.5d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			id: "4DFB0BF29099F2A1"
 			linked_quest: "5BBF0B6AED98072E"
-			x: 2.5d
-			y: 0.0d
+			shape: "circle"
+			x: -6.5d
+			y: 1.5d
 		}
 		{
 			id: "190A7A8C49F390C2"
 			linked_quest: "478D0DF94D7495EF"
-			x: 1.0d
-			y: -4.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			id: "3426BCAE1210DAE4"
 			linked_quest: "3FB3EE093DDC6B56"
 			shape: "gear"
 			size: 3.0d
-			x: -7.5d
+			x: -12.5d
 			y: 0.0d
-		}
-		{
-			id: "3E93FFAACC24EEA5"
-			linked_quest: "7B74DB051202E97E"
-			x: 11.5d
-			y: -1.0d
 		}
 		{
 			id: "5554A5384B8FBED2"
 			linked_quest: "3E82C14AF32AA103"
-			x: -4.5d
-			y: -3.0d
+			shape: "gear"
+			size: 2.0d
+			x: -7.5d
+			y: -9.0d
+		}
+		{
+			id: "53F621640316AE50"
+			linked_quest: "2B862C1ED65D0526"
+			shape: "gear"
+			size: 3.0d
+			x: -10.0d
+			y: 5.98333333333332d
+		}
+		{
+			id: "4B34A70CD02F5F2D"
+			linked_quest: "7B74DB051202E97E"
+			shape: "circle"
+			x: -4.0d
+			y: -1.5d
 		}
 	]
 	quests: [
@@ -85,7 +98,7 @@
 				type: "item"
 			}]
 			title: "S is for Sulfur"
-			x: 5.5d
+			x: -2.5d
 			y: -4.5d
 		}
 		{
@@ -109,7 +122,7 @@
 				type: "item"
 			}]
 			title: "The First of Many Motors"
-			x: 7.5d
+			x: 2.0d
 			y: -3.0d
 		}
 		{
@@ -128,7 +141,7 @@
 				"&l&3Lore:&r&o These drums are actually ported from GregTech 6."
 			]
 			id: "2B74E56C9E138F18"
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "Just kidding, tanks for fluids"
 			tasks: [{
@@ -137,8 +150,8 @@
 				type: "item"
 			}]
 			title: "Armoured Tanks"
-			x: -9.0d
-			y: -3.0d
+			x: -13.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3F087862270F649A"]
@@ -171,11 +184,14 @@
 				}
 			]
 			title: "Molding"
-			x: 2.5d
-			y: -3.0d
+			x: -1.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["5BBF0B6AED98072E"]
+			dependencies: [
+				"5BBF0B6AED98072E"
+				"612C0D994EAF0CB6"
+			]
 			description: [
 				"Not many items are made in the &3Extractor&r during the &6Steam Age&r, but it's used to make &9Rubber&r, which you'll need after Steel."
 				""
@@ -187,12 +203,12 @@
 			subtitle: "The Steam Extractor extracts..."
 			tasks: [{
 				id: "12A46916B1BC17EC"
-				item: "gtceu:hp_steam_extractor"
+				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
 			title: "Steam Extractor"
-			x: 4.0d
-			y: 0.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -226,7 +242,7 @@
 				}
 			]
 			title: "Rubbering up"
-			x: 5.5d
+			x: -1.0d
 			y: -3.0d
 		}
 		{
@@ -251,8 +267,8 @@
 				type: "item"
 			}]
 			title: "Electronics #1: Resistors"
-			x: 9.0d
-			y: 3.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3FB3EE093DDC6B56"]
@@ -289,30 +305,11 @@
 				type: "item"
 			}]
 			title: "Fluid Pipes"
-			x: -7.5d
-			y: -3.0d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["3F087862270F649A"]
-			description: [
-				"&dSteam Machines&r accept any Steam that is pumped from nearby Boilers into their internal storage tank. They will run recipes from JEI up to 32 EU/t (&7LV&r-tier)."
-				""
-				"&6This quest unlocks a new tutorial on Steam in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
-			]
-			id: "03DBF1961AE21C76"
-			shape: "square"
-			size: 1.0d
-			tasks: [{
-				id: "03BA041BE9C347FD"
-				item: "gtceu:steel_brick_casing"
-				type: "item"
-			}]
-			title: "Steam Machine Behaviour"
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["03DBF1961AE21C76"]
+			dependencies: ["612C0D994EAF0CB6"]
 			description: [
 				"The &bAlloy Smelter&r is used for, well, alloys. You'll want it for the efficient &6Bronze&r recipe, and for &4Red Alloy&r in the near future."
 				""
@@ -324,15 +321,18 @@
 			subtitle: "The Alloy Smelter makes alloys..."
 			tasks: [{
 				id: "2F3B195A110E41C2"
-				item: "gtceu:hp_steam_alloy_smelter"
+				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
 			title: "Steam Alloy Smelter"
-			x: 2.5d
-			y: 1.5d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["04D4E196824D53C4"]
+			dependencies: [
+				"04D4E196824D53C4"
+				"7B74DB051202E97E"
+			]
 			description: [
 				"Crafting Vacuum Tubes might make you question your existence. Sorry about that."
 				""
@@ -350,8 +350,8 @@
 				type: "item"
 			}]
 			title: "Electronics #3: Vacuum Tubes"
-			x: 4.0d
-			y: -1.5d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["48AED37B4E20A99A"]
@@ -372,7 +372,7 @@
 				type: "item"
 			}]
 			title: "Red Alloy"
-			x: 4.0d
+			x: -4.0d
 			y: 1.5d
 		}
 		{
@@ -414,7 +414,7 @@
 				}
 			]
 			title: "Electronics #4: The Circuit"
-			x: 9.0d
+			x: 2.0d
 			y: -1.0d
 		}
 		{
@@ -432,7 +432,7 @@
 			]
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "3C70B0717E9377A4"
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "...I'm going into battle, and I need only your finest Potin."
 			tasks: [{
@@ -448,11 +448,11 @@
 				type: "item"
 			}]
 			title: "Potin Seller..."
-			x: -7.5d
-			y: -4.5d
+			x: -12.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["03DBF1961AE21C76"]
+			dependencies: ["612C0D994EAF0CB6"]
 			description: [
 				"With the creation of this machine, many recipes that once required you to use a hammer can instead be made here!"
 				""
@@ -468,15 +468,15 @@
 			subtitle: "The Forge Hammer hammers..."
 			tasks: [{
 				id: "4F4074D7CE5A61A0"
-				item: "gtceu:hp_steam_forge_hammer"
+				item: "gtceu:lp_steam_forge_hammer"
 				type: "item"
 			}]
 			title: "Steam Forge Hammer"
-			x: 1.0d
-			y: -1.5d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["03DBF1961AE21C76"]
+			dependencies: ["612C0D994EAF0CB6"]
 			description: [
 				"The &bMacerator&r frees you from the painful process of &egrinding stuff into dust&r with a &3Mortar&r, but at the steep cost of time. Processing a single piece of Iron Ore in this machine will take &ctwenty seconds&r - twice the time it takes to smelt an ingot in a furnace!"
 				""
@@ -492,11 +492,11 @@
 			subtitle: "The Macerator macerates..."
 			tasks: [{
 				id: "6DFD6AC8CF31305C"
-				item: "gtceu:hp_steam_macerator"
+				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
 			title: "Steam Macerator"
-			x: -0.5d
+			x: -2.5d
 			y: 3.0d
 		}
 		{
@@ -530,8 +530,8 @@
 				}
 			]
 			title: "Electronics #2: Circuit Boards"
-			x: 5.5d
-			y: 3.0d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1C50A758A1DE25CB"]
@@ -555,7 +555,7 @@
 				type: "checkmark"
 			}]
 			title: "What is this Mess?!"
-			x: -0.5d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -569,7 +569,7 @@
 			]
 			icon: "gtceu:steam_grinder"
 			id: "7FF95F1216D104B2"
-			shape: "square"
+			shape: "circle"
 			size: 1.0d
 			subtitle: "The Steam Oven's elder brother"
 			tasks: [
@@ -601,11 +601,11 @@
 				}
 			]
 			title: "Steam Grinder"
-			x: 1.0d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["011EC2CE0111C9A0"]
+			dependencies: ["3B8D9846F50DEF34"]
 			description: [
 				"&o...or little brother. Don't let him know!&r"
 				""
@@ -656,24 +656,24 @@
 				}
 			]
 			title: "Steam Oven"
-			x: -6.0d
-			y: 4.5d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["03DBF1961AE21C76"]
+			dependencies: ["612C0D994EAF0CB6"]
 			description: ["The Steam Compressor unlocks some tantalising new recipes that will help you to progress towards Steel."]
 			id: "07415D6305C3B1D2"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "The Steam Compressor compresses..."
 			tasks: [{
 				id: "21C99D59F1BE48A3"
-				item: "gtceu:hp_steam_compressor"
+				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
 			title: "Steam Compressor"
-			x: -0.5d
-			y: -1.5d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["48AED37B4E20A99A"]
@@ -700,7 +700,7 @@
 			]
 			icon: "gtceu:tin_small_item_pipe"
 			id: "539CF1B85725786D"
-			shape: "rsquare"
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "158F4EEDC214A3BA"
@@ -718,30 +718,30 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 2.5d
+			x: -6.5d
 			y: 4.5d
 		}
 		{
-			dependencies: ["3F087862270F649A"]
+			dependencies: ["3B8D9846F50DEF34"]
 			id: "011EC2CE0111C9A0"
 			tasks: [{
 				id: "7A1C685F48E09F6B"
 				item: "gtceu:hp_steam_furnace"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.0d
+			x: -7.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["3F087862270F649A"]
+			dependencies: ["2F44D9034CBEB774"]
 			id: "41F23E44E154C3E9"
 			tasks: [{
 				id: "22542CDE2F0C0524"
 				item: "gtceu:hp_steam_rock_crusher"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -755,12 +755,13 @@
 				item: "gtceu:glass_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: -5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3FB3EE093DDC6B56"]
 			id: "7470E713F599B891"
+			shape: "circle"
 			tasks: [{
 				id: "0DF1243A3267F636"
 				item: {
@@ -770,19 +771,17 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:lp_steam_solid_boiler)item(gtceu:lp_steam_liquid_boiler)item(gtceu:lp_steam_solar_boiler))"
 					}
 				}
-				title: "Any Low Pressure Boiler"
+				title: "Any Low Pressure Steam Boiler"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.0d
+			x: -11.5d
+			y: -3.5d
 		}
 		{
-			dependencies: [
-				"3FB3EE093DDC6B56"
-				"445E060EF3300A49"
-			]
+			dependencies: ["2B862C1ED65D0526"]
 			id: "3F087862270F649A"
-			size: 2.0d
+			shape: "circle"
+			size: 1.0d
 			tasks: [{
 				id: "0BBF678F5A0517D7"
 				item: {
@@ -795,8 +794,8 @@
 				title: "Any High Pressure Boiler"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.0d
+			x: -10.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["3E82C14AF32AA103"]
@@ -807,19 +806,22 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.5d
+			x: -4.0d
+			y: -9.0d
 		}
 		{
-			dependencies: ["0A522CC855BF3FEC"]
+			dependencies: [
+				"0A522CC855BF3FEC"
+				"55DD22C8ECBEE079"
+			]
 			id: "252FD7ED5BF225DD"
 			tasks: [{
 				id: "5E4B2C29C7893EF8"
 				item: "gtceu:treated_wood_plate"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -7.0d
+			x: -2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -829,15 +831,182 @@
 			icon: "create:large_cogwheel"
 			id: "5CB27C93795281AB"
 			shape: "gear"
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "0D3B31329089CFE4"
 				item: "create:cogwheel"
 				type: "item"
 			}]
 			title: "The beginning of Create"
-			x: -0.5d
-			y: -7.0d
+			x: 0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["07415D6305C3B1D2"]
+			description: ["The Steam Compressor unlocks some tantalising new recipes that will help you to progress towards Steel."]
+			id: "54CA9AF368FCC274"
+			size: 1.0d
+			subtitle: "The Steam Compressor compresses..."
+			tasks: [{
+				id: "5CA938E8348E4228"
+				item: "gtceu:hp_steam_compressor"
+				type: "item"
+			}]
+			title: "Steam Compressor"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1C50A758A1DE25CB"]
+			description: [
+				"The &bMacerator&r frees you from the painful process of &egrinding stuff into dust&r with a &3Mortar&r, but at the steep cost of time. Processing a single piece of Iron Ore in this machine will take &ctwenty seconds&r - twice the time it takes to smelt an ingot in a furnace!"
+				""
+				"The Macerator also marks the advent of &eOre Processing&r, but that's a scary topic that we'll dip our toes into in the next quest."
+				"{@pagebreak}"
+				"The macerator will output only the first item shown in recipes from JEI. The other slots are locked until you make a &6HV&r Macerator. How unfortunate..."
+				""
+				"Our (&oimportant!&r) advice: it's actually better to keep directly smelting for now! The efficiency loss is made up with faster mining. Use the Macerator to make things like &aClay Dust&r instead!"
+			]
+			id: "79F8CCB9AAC2418A"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Macerator macerates..."
+			tasks: [{
+				id: "63E61AE537B5ED1F"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			title: "Steam Macerator"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["48AED37B4E20A99A"]
+			description: [
+				"The &bAlloy Smelter&r is used for, well, alloys. You'll want it for the efficient &6Bronze&r recipe, and for &4Red Alloy&r in the near future."
+				""
+				"Out of all the &6Steam Age&r machines, this is the most steam-hungry. If you ever find yourself running out of steam, give your machine a &alove-tap&r with &dany Soft Mallet&r to momentarily pause it."
+			]
+			id: "33B6BA83EA354B24"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Alloy Smelter makes alloys..."
+			tasks: [{
+				id: "320681036ECB878D"
+				item: "gtceu:hp_steam_alloy_smelter"
+				type: "item"
+			}]
+			title: "Steam Alloy Smelter"
+			x: -5.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1436DB89E21264F3"]
+			description: [
+				"Not many items are made in the &3Extractor&r during the &6Steam Age&r, but it's used to make &9Rubber&r, which you'll need after Steel."
+				""
+				"You can also process Dirt in the Extractor for &aBones&r, which makes getting &aBone Meal&r a lot easier for Peaceful players."
+			]
+			id: "152A238740E6ADA8"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Steam Extractor extracts..."
+			tasks: [{
+				id: "3167FD92D7FB37B5"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			title: "Steam Extractor"
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1931FC6DEAC29646"]
+			description: [
+				"With the creation of this machine, many recipes that once required you to use a hammer can instead be made here!"
+				""
+				"It can process &bCobblestone into Gravel&r, and &dGravel into Sand&r - and it's zippy at that to boot."
+				""
+				"Last but not least, it makes &aPlates&r at a better ratio: &6three Ingots for two Plates&r. A worthwhile investment!"
+				""
+				"You know what? &aBonus&r! We'll give you the &8Anvil&r back if you craft the Forge Hammer. This is a gentle reminder that you can repair GregTech tools in an Anvil."
+			]
+			id: "2AD496393F5F9421"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Forge Hammer hammers..."
+			tasks: [{
+				id: "08DB1E42BA032AAD"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			title: "Steam Forge Hammer"
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3FB3EE093DDC6B56"]
+			description: [
+				"&dSteam Machines&r accept any Steam that is pumped from nearby Boilers into their internal storage tank. They will run recipes from JEI up to 32 EU/t (&7LV&r-tier)."
+				""
+				"&6This quest unlocks a new tutorial on Steam in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+			]
+			id: "3E1DF79F85C2AD99"
+			shape: "gear"
+			subtitle: "Open me, its important, or not?"
+			tasks: [{
+				id: "635CBC166F9FD406"
+				title: "Some useful info about steam"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E1DF79F85C2AD99"]
+			id: "612C0D994EAF0CB6"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "78EB6ABEE40D1867"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E1DF79F85C2AD99"]
+			id: "3B8D9846F50DEF34"
+			tasks: [{
+				id: "5C54AF2AC3307B4A"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["612C0D994EAF0CB6"]
+			id: "2F44D9034CBEB774"
+			tasks: [{
+				id: "6F2953EC4D8DEF27"
+				item: "gtceu:lp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1C50A758A1DE25CB"]
+			id: "55DD22C8ECBEE079"
+			tasks: [{
+				id: "5B70E7F9DB1372B0"
+				item: "gtceu:treated_wood_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
 		}
 	]
 	subtitle: ["Harness the power of Steam and learn the basics"]

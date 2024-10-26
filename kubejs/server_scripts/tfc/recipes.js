@@ -308,12 +308,14 @@ const registerTFCRecipes = (e) => {
 
     const processRichRawOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
         const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
-        if (oreItem.isEmpty()) return
-        
-        e.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/rich_raw/${material.getName()}`)
+            if (oreItem.isEmpty()) return
 
+        if (tfcProperty != null && outputMaterial != null) {
+            e.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
+                .id(`tfg:heating/rich_raw/${material.getName()}`)    
+        }
+        
         const crushedItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
         if (crushedItem.isEmpty()) return
 
@@ -327,9 +329,11 @@ const registerTFCRecipes = (e) => {
         const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
         if (oreItem.isEmpty()) return
         
-        e.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-        .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/raw/${material.getName()}`)
+        if (tfcProperty != null && outputMaterial != null) {
+            e.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+                .id(`tfg:heating/raw/${material.getName()}`)
+        }
 
         const crushedItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
         if (crushedItem.isEmpty()) return
@@ -343,10 +347,12 @@ const registerTFCRecipes = (e) => {
     const processPoorRawOre = (tagPrefix, tfcProperty, material, outputMaterial) => {
         const oreItem = ChemicalHelper.get(tagPrefix, material, 1)
         if (oreItem.isEmpty()) return
-        
-        e.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/poor_raw/${material.getName()}`)
+
+        if (tfcProperty != null && outputMaterial != null) {
+            e.recipes.tfc.heating(oreItem, tfcProperty.getMeltTemp())
+                .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
+                .id(`tfg:heating/poor_raw/${material.getName()}`)
+        }
 
         const crushedItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
         if (crushedItem.isEmpty()) return
@@ -1573,10 +1579,13 @@ const registerTFCRecipes = (e) => {
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
         const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+        const outputMaterial = (tfcProperty == null) ? material : (tfcProperty.getOutputMaterial() == null ? material : tfcProperty.getOutputMaterial())
+
+        processRichRawOre(TFGTagPrefix.richRawOre, tfcProperty, material, outputMaterial)
+        processNormalRawore(TagPrefix.rawOre, tfcProperty, material, outputMaterial)
+        processPoorRawOre(TFGTagPrefix.poorRawOre, tfcProperty, material, outputMaterial)
 
         if (tfcProperty != null) {
-            const outputMaterial = (tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
-
             // 1. Префикс ассоциируемый с текущим предметом.
             // 2. Проперти ТФК с нагревом металла и другими полезными проперти.
             // 3. Материал из которого состоит объект.
@@ -1601,9 +1610,6 @@ const registerTFCRecipes = (e) => {
             processCrushedOre(TagPrefix.crushed, tfcProperty, material, outputMaterial)
             processCrushedPurifiedOre(TagPrefix.crushedPurified, tfcProperty, material, outputMaterial)
             processCrushedRefinedOre(TagPrefix.crushedRefined, tfcProperty, material, outputMaterial)
-            processRichRawOre(TFGTagPrefix.richRawOre, tfcProperty, material, outputMaterial)
-            processNormalRawore(TagPrefix.rawOre, tfcProperty, material, outputMaterial)
-            processPoorRawOre(TFGTagPrefix.poorRawOre, tfcProperty, material, outputMaterial)
             
             // 1. Тип инструмента
             // 2. Префикс ассоциируемый с текущим предметом.
@@ -3395,7 +3401,7 @@ const registerTFCRecipes = (e) => {
         .id('tfg:smelting/fireclay_brick')
 
     // Выпаривание соли
-    e.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 1000)
+    e.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 1000), 300, 250)
         .itemOutput('gtceu:small_salt_dust')
         .id('tfg:tfc/pot/salt')
 
@@ -3634,9 +3640,30 @@ const registerTFCRecipes = (e) => {
     
     //#endregion
 
+    //#region Каолинитовая глина
+    e.shapeless('tfc:kaolin_clay', [
+        'minecraft:clay_ball', 
+        'gtceu:aluminium_dust',
+        ['gtceu:fullers_earth_dust', 'gtceu:silicon_dust', 'gtceu:silicon_dioxide_dust'],
+        ['minecraft:bone_meal', 'gtceu:calcium_dust'],
+        ['tfg:shale_dust', 'tfg:claystone_dust', 'tfg:limestone_dust', 'tfg:conglomerate_dust', 'tfg:dolomite_dust', 'tfg:chert_dust', 'tfg:chalk_dust']
+    ]).id('tfg:tfc/kaolinite_clay')
+    //#endregion
+
+    //#region Каолинитовая глина -> Порошок каолинита
+    e.recipes.createMilling('2x tfc:powder/kaolinite', 'tfc:kaolin_clay')
+        .id(`tfg:milling/tfc/kaolinite_powder`)
+
+    e.recipes.gtceu.macerator('tfg:tfc/kaolinite_powder')             
+        .itemInputs('tfc:kaolin_clay')
+        .itemOutputs('2x tfc:powder/kaolinite')
+        .EUt(2).duration(40)
+    //#endregion
+
+
     //Fire bricks
     e.recipes.gtceu.compressor('fire_bricks')             
-        .itemInputs('4x tfc:ceramic/fire_brick')
+        .itemInputs()
         .itemOutputs('2x tfc:fire_bricks')
         .duration(800)
         .EUt(2)

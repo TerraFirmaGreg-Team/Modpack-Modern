@@ -190,7 +190,7 @@ machines:
 
   # Whether Steam Multiblocks should use Steel instead of Bronze.
   # Default: false
-  steelSteamMultiblocks: true
+  steelSteamMultiblocks: false
 
   # Whether to enable the cleanroom, required for various recipes.
   # Default: true
