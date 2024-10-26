@@ -3634,9 +3634,19 @@ const registerTFCRecipes = (e) => {
     
     //#endregion
 
+    //#region Каолинитовая глина -> Порошок каолинита
+    e.recipes.createMilling('2x tfc:powder/kaolinite', 'tfc:kaolin_clay')
+        .id(`tfg:milling/tfc/kaolinite_powder`)
+
+    e.recipes.gtceu.macerator('tfg:tfc/kaolinite_powder')             
+        .itemInputs('tfc:kaolin_clay')
+        .itemOutputs('2x tfc:powder/kaolinite')
+        .EUt(2).duration(40)
+    //#endregion
+
     //Fire bricks
     e.recipes.gtceu.compressor('fire_bricks')             
-        .itemInputs('4x tfc:ceramic/fire_brick')
+        .itemInputs()
         .itemOutputs('2x tfc:fire_bricks')
         .duration(800)
         .EUt(2)
