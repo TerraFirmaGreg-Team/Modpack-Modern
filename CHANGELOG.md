@@ -37,6 +37,7 @@
 - Simplified alternator multiblock reques and it controller block recipe.
 - Added better recipes for any wood (nether wood too).
 - Added stripping recipes in emi world interaction page.
+- And another 2123462384234 fixed, tweaks, and etc.
 - ...
 ### Updated mods
 - ??
