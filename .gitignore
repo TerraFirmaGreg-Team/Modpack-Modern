@@ -95,3 +95,9 @@ OpenComputersMod-*
 hei_bookmarks.ini
 
 # Server data
+.pakku/server-overrides/libraries
+.pakku/server-overrides/config
+.pakku/server-overrides/defaultconfigs
+.pakku/server-overrides/kubejs
+.pakku/server-overrides/mods
+.pakku/server-overrides/user_jvm_args.txt

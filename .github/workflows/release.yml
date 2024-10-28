@@ -2,8 +2,8 @@ name: Release
 run-name: "Release #${{ github.run_number }} by @${{ github.actor }}"
 
 env:
-  RELEASE_TYPE: "release"
-  MC_VERSION: "1.20.1"
+  RELEASE_TYPE: "beta"
+  MINECRAFT_VERSION: "1.20.1"
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.lockfile.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
-      mc_version: ${{ env.MC_VERSION }}
+      minecraft_version: ${{ env.MINECRAFT_VERSION }}
     
     steps:
       - name: Checkout
@@ -105,7 +105,7 @@ jobs:
         run: |
           echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 MC Versions=${{ env.MC_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
           echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
@@ -123,7 +123,9 @@ jobs:
         run: |
           set +e
 
-          sed -i -e "s/DEV/${{ needs.info.outputs.project_version }}/g" pakku.json
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Cache pakku
         uses: actions/cache@v4.1.2
@@ -174,7 +176,9 @@ jobs:
         run: |
           set +e
 
-          sed -i -e "s/DEV/${{ needs.info.outputs.project_version }}/g" pakku.json
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Cache pakku
         uses: actions/cache@v4.1.2
@@ -213,6 +217,11 @@ jobs:
         shell: bash
         run: |
           set +e
+
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
       - name: Cache pakku
         uses: actions/cache@v4.1.2
@@ -281,45 +290,45 @@ jobs:
           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
           changelog: ${{ needs.info.outputs.changelog }}
           changelog-format: markdown
-          game-version: ${{ needs.info.outputs.mc_version }}
+          game-version: ${{ needs.info.outputs.minecraft_version }}
           release-type: ${{ needs.info.outputs.release_type }}
 
-  release-modrinth:
-      name: Deploy to Modrinth
-      needs: [info, build-modpack, build-server]
-      runs-on: ubuntu-latest
-      steps:
-        - name: Check if MODRINTH_API_TOKEN exist
-          shell: bash
-          run: |
-            if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
-              echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-            fi  
+  # release-modrinth:
+  #     name: Deploy to Modrinth
+  #     needs: [info, build-modpack, build-server]
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - name: Check if MODRINTH_API_TOKEN exist
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi  
     
-        - name: Download artifact modrinth
-          uses: actions/download-artifact@v4.1.8
-          with:
-            name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
+  #       - name: Download artifact modrinth
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
     
-        - name: Download artifact server
-          uses: actions/download-artifact@v4.1.8
-          with:
-            name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+  #       - name: Download artifact server
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
     
-        - name: Upload Modrinth
-          id: cf_release
-          uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-          with:
-            api-token: ${{ secrets.MODRINTH_API_TOKEN }}
-            project-id: ${{ vars.MODRINTH_MODPACK_ID }}
-            modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
-            modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
-            changelog: ${{ needs.info.outputs.changelog }}
-            changelog-format: markdown
-            game-version: ${{ needs.info.outputs.mc_version }}
-            display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-            server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
-            release-type: ${{ needs.info.outputs.release_type }}
+  #       - name: Upload Modrinth
+  #         id: cf_release
+  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #         with:
+  #           api-token: ${{ secrets.MODRINTH_API_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_MODPACK_ID }}
+  #           modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
+  #           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+  #           changelog: ${{ needs.info.outputs.changelog }}
+  #           changelog-format: markdown
+  #           game-version: ${{ needs.info.outputs.minecraft_version }}
+  #           display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
+  #           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+  #           release-type: ${{ needs.info.outputs.release_type }}
 
   release-github:
     name: Deploy to GitHub
@@ -355,7 +364,7 @@ jobs:
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
-          prerelease: false
+          prerelease: ${{ env.RELEASE_TYPE != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -367,14 +376,14 @@ jobs:
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.2
         with:
-          key: ${{ secrets.RELEASES_1_20 }}
+          key: ${{ secrets.DISCORD_RELEASES }}
           username: "TerraFirmaGreg"
           avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
           content_links_no_embed: .+
           content: |
             **Release**: `${{ needs.info.outputs.project_version }}`
             **Release Type**: `${{ needs.info.outputs.release_type }}`
-            **Game Version**: `${{ needs.info.outputs.mc_version }}`
+            **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
             ```markdown
