@@ -1,0 +1,28 @@
+{
+    "name": "TerraFirmaGreg-Modern",
+    "version": "DEV",
+    "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
+    "author": "Exception, Xikaro",
+    "overrides": [
+        "config",
+        "defaultconfigs",
+        "kubejs"
+    ],
+    "server_overrides": [
+        "forge-auto-install.txt",
+        "minecraft_server.jar",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat"
+    ],
+    "client_overrides": [
+        "resourcepacks"
+    ],
+    "multimc_overrides": [
+        "icon.png",
+        "instance.cfg",
+        "mmc-pack.json"
+    ],
+    "projects": {
+    }
+}
