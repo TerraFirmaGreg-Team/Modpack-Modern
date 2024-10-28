@@ -96,7 +96,7 @@ jobs:
 
       - name: Upload Diff
         id: diff
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: diff
           path: PROJECTS_DIFF.md
@@ -145,7 +145,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
       - name: Upload artifact CurseForge
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
@@ -157,7 +157,7 @@ jobs:
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
       - name: Upload artifact modrinth
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
@@ -199,7 +199,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
       - name: Upload artifact server
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
@@ -248,7 +248,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip multimc
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
