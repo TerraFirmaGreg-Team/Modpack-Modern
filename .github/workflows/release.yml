@@ -98,7 +98,7 @@ jobs:
         id: diff
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: diff
+          name: Mods-diff
           path: PROJECTS_DIFF.md
           
       - name: Generate Github Summary
