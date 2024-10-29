@@ -398,5 +398,6 @@ jobs:
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
              ```markdown
-            ${{ needs.info.outputs.truncated_changelog }}```
+            ${{ needs.info.outputs.truncated_changelog }}
+            - ...```
             ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
