@@ -72,7 +72,9 @@ jobs:
           fi
           {
             echo 'diff<<EOF'
-            sed 's/.*/\`\`\`markdown\n&\`\`\`/' PROJECTS_DIFF.md
+            echo '```markdown'
+            cat -v PROJECTS_DIFF.md
+            echo '```'
             echo EOF
           } >> "$GITHUB_OUTPUT"
 
