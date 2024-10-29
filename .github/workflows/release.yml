@@ -9,8 +9,6 @@ on:
   push:
     tags:
       - "*.*.*"
-    branches:
-      - main
 
 concurrency:
   group: ${{ github.ref }}
@@ -28,7 +26,7 @@ jobs:
       diff: ${{ steps.lockfile.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       minecraft_version: ${{ env.MINECRAFT_VERSION }}
-      exists: ${{ steps.check_tag.outputs.exists }}
+      # exists: ${{ steps.check_tag.outputs.exists }}
     
     steps:
       - name: Checkout
@@ -113,11 +111,11 @@ jobs:
           name: Mods-diff
           path: PROJECTS_DIFF.md
 
-      - name: Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
-        id: check_tag
-        with:
-          tag: ${{ steps.project_version.outputs.tag }}
+      # - name: Check if tag exists
+      #   uses: mukunku/tag-exists-action@v1.6.0
+      #   id: check_tag
+      #   with:
+      #     tag: ${{ steps.project_version.outputs.tag }}
           
       - name: Generate Github Summary
         run: |
@@ -132,7 +130,7 @@ jobs:
     name: Build Modpack
     runs-on: ubuntu-latest
     needs: [info]
-    if: needs.info.outputs.exists != 'true'
+    # if: needs.info.outputs.exists != 'true'
 
     steps:
       - name: Checkout
