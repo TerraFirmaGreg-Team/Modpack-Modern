@@ -7,8 +7,8 @@ env:
 
 on:
   push:
-    # tags:
-    #   - "*.*.*"
+    tags:
+      - "*.*.*"
 
 concurrency:
   group: ${{ github.ref }}
@@ -72,9 +72,7 @@ jobs:
           fi
           {
             echo 'diff<<EOF'
-            echo '```markdown'
             cat -v PROJECTS_DIFF.md
-            echo '```'
             echo EOF
           } >> "$GITHUB_OUTPUT"
 
