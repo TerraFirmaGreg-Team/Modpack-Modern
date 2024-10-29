@@ -377,7 +377,9 @@ jobs:
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            ${{ steps.info.outputs.diff != '' && format('```markdown\n{}\n```', steps.info.outputs.diff) }}
+            ```markdown
+            ${{ needs.info.outputs.diff }}
+            ```
           files: |
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
             ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
