@@ -3,7 +3,7 @@
 const registerGregTechRecipes = (e) => {
     
     //#region Обработчики рецептов основанных на материалах
-    const makeToolRecipe  = (toolType, headTagPrefix, extruderMold, cirucitMeta, material) => {
+    const makeToolRecipe = (toolType, headTagPrefix, extruderMold, cirucitMeta, material) => {
         const toolItem = ToolHelper.get(toolType, material)
         if (toolItem.isEmpty()) return
 
@@ -17,7 +17,7 @@ const registerGregTechRecipes = (e) => {
             ]).id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
         }
         else {
-            e.recipes.tfc.advanced_shapeless_crafting(TFC.itemStackProvider.of(toolHeadItem).copyForgingBonus(), ['#forge:rods/wooden', toolHeadItem])
+            e.recipes.tfc.advanced_shapeless_crafting(TFC.itemStackProvider.of(toolItem).copyForgingBonus(), ['#forge:rods/wooden', toolHeadItem])
                 .id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
         }
 
