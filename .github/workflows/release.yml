@@ -68,15 +68,8 @@ jobs:
             fi
           fi
           {
-          if [ -s PROJECTS_DIFF.md ]; then
-            echo '```markdown'
-            echo 'diff<<EOF'
-            cat -v PROJECTS_DIFF.md
-            echo EOF
-            echo '```'
-          else
-            echo ''
-          fi
+          {
+            format "```markdown\ndiff<<EOF\n{}\nEOF\n```", "$(cat -v PROJECTS_DIFF.md)"
           } >> "$GITHUB_OUTPUT"
 
       - name: Get Project Name
