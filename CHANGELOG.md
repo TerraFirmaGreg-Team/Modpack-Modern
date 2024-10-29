@@ -1,8 +1,14 @@
 # Changelog
 
+## [0.8.1] - 29.10.2024
+### Changes
+- Fixed axe recipe.
+- Fixed missing default configs.
+- Small quest fixes.
+
 ## [0.8.0] - 29.10.2024
 ### Changes
-- This is a beta, make a backup of the world before updating, if you find any errors, let us know
+- This is a beta, make a backup of the world before updating, if you find any errors, let us know.
 - Replaced TFC ore gen with GT oregen.
 - Fixed most of bad langs from TFG-Core.
 - Fixed compat for firmaciv 1.0.+.
