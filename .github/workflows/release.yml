@@ -101,7 +101,6 @@ jobs:
         with:
           text: '${{ steps.changelog.outputs.description }}'
           max_chars: '1450'
-          read_more: '** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ steps.project_version.outputs.tag }}) **'
 
       - name: Upload Diff
         id: diff
@@ -398,4 +397,6 @@ jobs:
 
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
-            ${{ needs.info.outputs.truncated_changelog }}
+             ```markdown
+            ${{ needs.info.outputs.truncated_changelog }}```
+            ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
