@@ -22,7 +22,7 @@ jobs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
-      truncated_changelog: ${{ steps.truncated.outputs.changelog_text }}
+      truncated_changelog: ${{ steps.truncated.outputs.text }}
       diff: ${{ steps.lockfile.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       minecraft_version: ${{ env.MINECRAFT_VERSION }}
@@ -97,14 +97,11 @@ jobs:
 
       - name: Truncate Changelog
         id: truncated
-        run: |
-          changelog_text=${{ steps.changelog.outputs.description }}
-          if [ ${#changelog_text} -gt 1450 ]; then
-            truncated_text=${changelog_text:0:1450}"..."
-            echo "truncated_changelog=$truncated_text" >> $GITHUB_ENV
-          else
-            echo "truncated_changelog=$changelog_text" >> $GITHUB_ENV
-          fi
+        uses: johnforeland/truncate-tool@v0.5.0
+        with:
+          text: ${{ steps.changelog.outputs.description }}
+          max_characters: '1450'
+          string_to_append: '...'
 
       - name: Upload Diff
         id: diff
@@ -139,13 +136,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Cache pakku
-        uses: actions/cache@v4.1.2
-        with:
-          path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
       - name: Export modpack
         run: |
@@ -193,13 +189,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Cache pakku
-        uses: actions/cache@v4.1.2
-        with:
-          path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
       - name: Export modpack
         run: |
@@ -237,13 +232,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
-      - name: Cache pakku
-        uses: actions/cache@v4.1.2
-        with:
-          path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
       - name: Export
         run: |
@@ -402,7 +396,7 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
 
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5855615) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
             ```markdown
             ${{ needs.info.outputs.truncated_changelog }}
