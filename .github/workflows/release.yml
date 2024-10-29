@@ -2,7 +2,7 @@ name: Release
 run-name: "Release #${{ github.run_number }} by @${{ github.actor }}"
 
 env:
-  RELEASE_TYPE: "beta"
+  RELEASE_TYPE: "alpha"
   MINECRAFT_VERSION: "1.20.1"
 
 on:
