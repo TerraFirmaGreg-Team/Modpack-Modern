@@ -67,10 +67,7 @@ jobs:
               echo "❌ File pakku-lock.json not found in previous tag"
             fi
           fi
-          {
-          {
-            format "```markdown\ndiff<<EOF\n{}\nEOF\n```", "$(cat -v PROJECTS_DIFF.md)"
-          } >> "$GITHUB_OUTPUT"
+          [ -f PROJECTS_DIFF.md ] && [ -s PROJECTS_DIFF.md ] && format "```markdown\ndiff<<EOF\n{}\nEOF\n```", "$(cat -v PROJECTS_DIFF.md)" || echo '' >> "$GITHUB_OUTPUT"
 
       - name: Get Project Name
         id: project_name
