@@ -309,6 +309,7 @@
 						Damage: 0
 					}
 				}
+				match_nbt: false
 				type: "item"
 			}]
 			title: "{quests.3B3BA51C8CAEFC7F.t}"
@@ -1089,6 +1090,7 @@
 						"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
 					}
 				}
+				match_nbt: false
 				title: "{quests.508DA76FA2766B7B.t1}"
 				type: "item"
 			}]
