@@ -1,0 +1,6 @@
+
+[general]
+	#The modifier for the 'Refrigerating' food trait. Values less than 1 extend food lifetime, values greater than one decrease it. A value of zero stops decay.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	traitRefrigeratingModifier = 0.125
+

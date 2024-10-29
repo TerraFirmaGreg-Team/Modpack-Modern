@@ -11,6 +11,9 @@
 build/
 !.pakku/**/*
 
+# BuildTools
+buildtools/
+
 # Configs
 config/jei/world/
 config/gregtech/terminal/
@@ -58,7 +61,7 @@ vintagefix/
 modernfix/
 XaeroWaypoints*/
 XaeroWorldMap*/
-defaultconfigs/
+#defaultconfigs/
 xaero/
 visualores/
 mods-carryover/

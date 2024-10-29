@@ -1,0 +1,6 @@
+
+[general]
+	#
+	# If enabled, rideable animals will not be slowed by plants/snow/mud when ridden.
+	enableRideableConstantSpeed = true
+
