@@ -99,7 +99,7 @@ jobs:
         id: truncated
         uses: johnforeland/truncate-tool@v0.5.0
         with:
-          text: ${{ steps.changelog.outputs.description }}
+          text: '${{ steps.changelog.outputs.description }}'
           max_characters: '1450'
           string_to_append: '...'
 
