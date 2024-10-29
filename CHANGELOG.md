@@ -1,6 +1,6 @@
 # Changelog
-## [0.8.0] - ??.??.2024
 
+## [0.8.0] - 29.10.2024
 ### Changes
 - Replaced TFC ore gen with GT oregen.
 - Fixed most of bad langs from TFG-Core.
