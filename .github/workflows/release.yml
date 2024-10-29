@@ -7,8 +7,8 @@ env:
 
 on:
   push:
-    # tags:
-    #   - "*.*.*"
+    tags:
+      - "*.*.*"
 
 concurrency:
   group: ${{ github.ref }}
@@ -262,46 +262,46 @@ jobs:
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
           if-no-files-found: error
 
-  # release-curseforge:
-  #   name: Deploy to CurseForge
-  #   needs: [info, build-modpack, build-server]
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #     id: ${{ steps.cf_release.outputs.id }}
-  #   steps:
-  #     - name: Check if CF_API_TOKEN exist
-  #       shell: bash
-  #       run: |
-  #         if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
-  #           echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-  #         fi  
+  release-curseforge:
+    name: Deploy to CurseForge
+    needs: [info, build-modpack, build-server]
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.cf_release.outputs.id }}
+    steps:
+      - name: Check if CF_API_TOKEN exist
+        shell: bash
+        run: |
+          if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
+            echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+          fi  
 
-  #     - name: Download artifact curseforge
-  #       uses: actions/download-artifact@v4.1.8
-  #       with:
-  #         name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
+      - name: Download artifact curseforge
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
 
-  #     - name: Download artifact server
-  #       uses: actions/download-artifact@v4.1.8
-  #       with:
-  #         name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+      - name: Download artifact server
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
 
-  #     - name: Upload Curseforge
-  #       id: cf_release
-  #       uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-  #       with:
-  #         api-token: ${{ secrets.CF_API_TOKEN }}
-  #         project-id: ${{ vars.CF_MODPACK_ID }}
-  #         display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-  #         modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-  #         server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
-  #         modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
-  #         changelog: |
-  #           ${{ needs.info.outputs.changelog }}
-  #           ${{ needs.info.outputs.diff }}
-  #         changelog-format: markdown
-  #         game-version: ${{ needs.info.outputs.minecraft_version }}
-  #         release-type: ${{ needs.info.outputs.release_type }}
+      - name: Upload Curseforge
+        id: cf_release
+        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+        with:
+          api-token: ${{ secrets.CF_API_TOKEN }}
+          project-id: ${{ vars.CF_MODPACK_ID }}
+          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
+          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
+          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+          modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+          changelog: |
+            ${{ needs.info.outputs.changelog }}
+            ${{ needs.info.outputs.diff }}
+          changelog-format: markdown
+          game-version: ${{ needs.info.outputs.minecraft_version }}
+          release-type: ${{ needs.info.outputs.release_type }}
 
   # release-modrinth:
   #     name: Deploy to Modrinth
@@ -395,7 +395,7 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
 
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5855711) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
             ```markdown
             ${{ needs.info.outputs.truncated_changelog }}```
