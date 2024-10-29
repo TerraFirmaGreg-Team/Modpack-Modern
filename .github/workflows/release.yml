@@ -401,5 +401,4 @@ jobs:
             ```markdown
             ${{ needs.info.outputs.truncated_changelog }}
             ```
-
             ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
