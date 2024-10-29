@@ -142,6 +142,7 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       # - name: Cache pakku
@@ -194,6 +195,7 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       # - name: Cache pakku
@@ -235,6 +237,7 @@ jobs:
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
