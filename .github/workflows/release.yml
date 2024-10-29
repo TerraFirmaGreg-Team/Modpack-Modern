@@ -22,6 +22,7 @@ jobs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
+      truncated_changelog: ${{ steps.truncated.outputs.changelog_text }}
       diff: ${{ steps.lockfile.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       minecraft_version: ${{ env.MINECRAFT_VERSION }}
@@ -93,6 +94,17 @@ jobs:
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
+
+      - name: Truncate Changelog
+        id: truncated
+        run: |
+          changelog_text=${{ steps.changelog.outputs.description }}
+          if [ ${#changelog_text} -gt 1450 ]; then
+            truncated_text=${changelog_text:0:1450}"..."
+            echo "truncated_changelog=$truncated_text" >> $GITHUB_ENV
+          else
+            echo "truncated_changelog=$changelog_text" >> $GITHUB_ENV
+          fi
 
       - name: Upload Diff
         id: diff
@@ -389,9 +401,11 @@ jobs:
             **Release**: `${{ needs.info.outputs.project_version }}`
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/5855615) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
             ```markdown
-            ${{ needs.info.outputs.changelog }}
+            ${{ needs.info.outputs.truncated_changelog }}
             ```
+
             ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
