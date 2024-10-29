@@ -137,6 +137,7 @@ jobs:
 
       - name: Export modpack
         run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar export
 
       - name: Rename artifact curseforge
@@ -191,6 +192,7 @@ jobs:
       - name: Export modpack
         run: |
           mv -vf ./.pakku/server-overrides/* ./
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar export
 
       - name: Rename artifact server
@@ -233,6 +235,7 @@ jobs:
 
       - name: Export
         run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar --debug fetch
           java -jar pakku.jar --debug export
           
