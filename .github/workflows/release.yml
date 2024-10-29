@@ -137,7 +137,7 @@ jobs:
 
       - name: Export modpack
         run: |
-          java -jar ./pakku.jar export
+          java -jar pakku.jar export
 
       - name: Rename artifact curseforge
         run: |
@@ -191,7 +191,7 @@ jobs:
       - name: Export modpack
         run: |
           mv -vf ./.pakku/server-overrides/* ./
-          java -jar ./pakku.jar export
+          java -jar pakku.jar export
 
       - name: Rename artifact server
         run: |
@@ -288,7 +288,9 @@ jobs:
           modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
-          changelog: ${{ needs.info.outputs.changelog }}
+          changelog: |
+            ${{ needs.info.outputs.changelog }}
+            ${{ needs.info.outputs.diff }}
           changelog-format: markdown
           game-version: ${{ needs.info.outputs.minecraft_version }}
           release-type: ${{ needs.info.outputs.release_type }}
