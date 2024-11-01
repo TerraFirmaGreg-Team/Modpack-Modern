@@ -148,7 +148,7 @@ const registerGregTechRecipes = (e) => {
         const rodItem = ChemicalHelper.get(tagPrefix, material, 1)
         if (rodItem.isEmpty()) return
         
-        const ingotItem = ChemicalHelper.get(tagPrefix, material, 1)
+        const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
         if (ingotItem.isEmpty()) return
 
         if (!material.hasFlag(MaterialFlags.GENERATE_ROD) || material == GTMaterials.Wood) return
