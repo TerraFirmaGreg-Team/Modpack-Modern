@@ -21,6 +21,7 @@ jobs:
     outputs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
+      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
       changelog: ${{ steps.changelog.outputs.description }}
       truncated_changelog: ${{ steps.truncated.outputs.text }}
       diff: ${{ steps.lockfile.outputs.diff }}
@@ -165,8 +166,8 @@ jobs:
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
-          path: ./build/curseforge/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
+          name: ${{ needs.info.outputs.project_full_name }}-curseforge
+          path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
       - name: Rename artifact modrinth
@@ -177,8 +178,8 @@ jobs:
       - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
-          path: ./build/modrinth/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
+          name: ${{ needs.info.outputs.project_full_name }}-modrinth
+          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
           if-no-files-found: warn
 
   build-server:
@@ -219,8 +220,8 @@ jobs:
       - name: Upload artifact server
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
-          path: ./build/serverpack/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+          name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
           if-no-files-found: error
 
   build-multimc:
@@ -263,13 +264,13 @@ jobs:
           mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
           cd .pakku/multimc-overrides/
           
-          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+          zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: Upload zip multimc
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
-          path: .pakku/multimc-overrides/${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
+          name: ${{ needs.info.outputs.project_full_name }}-multimc
+          path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
           if-no-files-found: error
 
   release-curseforge:
@@ -279,33 +280,33 @@ jobs:
     outputs:
       id: ${{ steps.cf_release.outputs.id }}
     steps:
-      - name: Check if CF_API_TOKEN exist
+      - name: Check if CURSEFORGE_TOKEN exist
         shell: bash
         run: |
-          if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
-            echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+          if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
+            echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
           fi  
 
       - name: Download artifact curseforge
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
+          name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
       - name: Download artifact server
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+          name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
       - name: Upload Curseforge
         id: cf_release
         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
         with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ vars.CF_MODPACK_ID }}
-          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+          api-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          project-id: ${{ vars.CURSEFORGE_ID }}
+          display-name: ${{ needs.info.outputs.project_full_name }}
+          modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
           changelog: |
             ${{ needs.info.outputs.changelog }}
             ${{ needs.info.outputs.diff }}
@@ -318,42 +319,44 @@ jobs:
   #     needs: [info, build-modpack, build-server]
   #     runs-on: ubuntu-latest
   #     steps:
-  #       - name: Check if MODRINTH_API_TOKEN exist
+  #       - name: Check if MODRINTH_TOKEN exist
   #         shell: bash
   #         run: |
-  #           if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
-  #             echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
   #           fi  
     
   #       - name: Download artifact modrinth
   #         uses: actions/download-artifact@v4.1.8
   #         with:
-  #           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth
+  #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
   #       - name: Download artifact server
   #         uses: actions/download-artifact@v4.1.8
   #         with:
-  #           name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+  #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
   #       - name: Upload Modrinth
   #         id: cf_release
   #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
   #         with:
-  #           api-token: ${{ secrets.MODRINTH_API_TOKEN }}
-  #           project-id: ${{ vars.MODRINTH_MODPACK_ID }}
-  #           modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-modrinth.mrpack
-  #           modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
+  #           api-token: ${{ secrets.MODRINTH_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_ID }}
+  #           modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+  #           modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
   #           changelog: ${{ needs.info.outputs.changelog }}
   #           changelog-format: markdown
   #           game-version: ${{ needs.info.outputs.minecraft_version }}
-  #           display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-  #           server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack
+  #           display-name: ${{ needs.info.outputs.project_full_name }}
+  #           server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
   #           release-type: ${{ needs.info.outputs.release_type }}
 
   release-github:
     name: Deploy to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.release.outputs.url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -371,6 +374,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create release
+        id: release
         uses: softprops/action-gh-release@v2.0.8
         with:
           name: ${{ needs.info.outputs.project_version }}
@@ -381,16 +385,16 @@ jobs:
             ${{ needs.info.outputs.diff }}
             ```
           files: |
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-serverpack.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
+            ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+            ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+            ${{ needs.info.outputs.project_full_name }}-multimc.zip
           prerelease: ${{ env.RELEASE_TYPE != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
     name: Discord Message
-    needs: [info, release-github]
+    needs: [info, release-curseforge, release-github]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
@@ -405,9 +409,9 @@ jobs:
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
 
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
 
              ```markdown
             ${{ needs.info.outputs.truncated_changelog }}
             - ...```
-            ** [Read more...](https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}) **
+            ** [Read more...](${{ needs.release-github.outputs.url }}) **
