@@ -1,6 +1,6 @@
 name: "[RU] Задайте вопрос"
 description: Задайте вопрос по этому проекту.
-labels: [ "1. Type: Question" ]
+labels: [ "1. Type: Question", "ru" ]
 body:
   - type: markdown
     attributes:

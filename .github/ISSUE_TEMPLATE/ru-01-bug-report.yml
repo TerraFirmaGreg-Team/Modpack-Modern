@@ -1,6 +1,6 @@
 name: "[RU] Отчет об ошибке"
 description: Сообщите об ошибке, когда что-то работает не так, как ожидалось, что не приводит к сбою игры.
-labels: [ "1. Type: Bug", "2. Status: Unverified" ]
+labels: [ "1. Type: Bug", "2. Status: Unverified", "ru" ]
 body:
   - type: input
     id: version

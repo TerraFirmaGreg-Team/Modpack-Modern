@@ -1,6 +1,6 @@
 name: "[RU] Запросить функцию"
 description: Запросите новую функцию или изменение существующей.
-labels: [ "1. Type: Feature" ]
+labels: [ "1. Type: Feature", "ru" ]
 body:
   - type: input
     id: version

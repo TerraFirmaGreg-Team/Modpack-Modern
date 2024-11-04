@@ -1,6 +1,6 @@
 name: "[EN] Crash Report"
 description: Report a bug that crashes the game or prevents startup.
-labels: [ "1. Type: Crash", "2. Status: Unverified" ]
+labels: [ "1. Type: Crash", "2. Status: Unverified", "en" ]
 body:
   - type: input
     id: version
