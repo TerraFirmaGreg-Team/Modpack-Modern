@@ -20,8 +20,22 @@ const registerRailWaysRecipes = (event) => {
         .duration(200)
         .EUt(28)
 
+    event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
+        .itemInputs(`railways:screwlink_coupler`, `#forge:ingots/steel`)
+        .circuit(1)
+        .itemOutputs(`railways:small_buffer`)
+        .duration(200)
+        .EUt(28)
+
+    event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
+        .itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
+        .circuit(1)
+        .itemOutputs(`railways:big_buffer`)
+        .duration(200)
+        .EUt(28)
+
     event.recipes.gtceu.assembler(`tfg:railways/buffer`)
-        .itemInputs(`6x #forge:rods/long/steel`, `2x railways:copycat_headstock_screwlink_coupler`)
+        .itemInputs(`8x #forge:rods/long/steel`, `2x railways:small_buffer`)
         .circuit(1)
         .itemOutputs(`railways:buffer`)
         .duration(200)
