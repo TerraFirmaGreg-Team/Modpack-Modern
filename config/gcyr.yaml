@@ -32,6 +32,11 @@ server:
   # Default: -270.0
   spaceTemperature: -270.0
 
+  # The Maximum size of a single space station.
+  # DO NOT CHANGE AFTER LOADING THE SPACE STATION WORLD, THAT WILL BREAK THE WORLD BORDER
+  # Default: 512
+  spaceStationMaxSize: 512
+
 machine:
   # Damage caused by standing in an active dyson system controller's beam. (per tick)
   # Default: 5.0
@@ -39,24 +44,24 @@ machine:
 
 rocket:
   # How much fuel is required to travel to a moon or back?
-  # note: this is platform-specific.
   # Default: 8 buckets.
   moonFuelAmount: 8000
 
   # How much fuel is required to travel to a planet in the same solar system?
-  # note: this is platform-specific.
   # Default: 14 buckets.
   solarSystemFuelAmount: 14000
 
   # How much fuel is required to travel to a planet in the same galaxy?
-  # note: this is platform-specific.
   # Default: 26 buckets.
   galaxyFuelAmount: 26000
 
   # How much fuel is required to travel to a planet anywhere?
-  # note: this is platform-specific.
   # Default: 48 buckets.
   anywhereFuelAmount: 48000
+
+  # Do rockets explode if landing is executed improperly?
+  # Default: true.
+  doCrashLandingExplosion: true
 
 client:
   # Offset of the oxygen bar from the left side of the screen.

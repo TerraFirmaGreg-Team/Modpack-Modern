@@ -1,0 +1,16 @@
+
+#Settings for the infusing system
+[infuser]
+	#Maximum amount of dimensional shards before a machine is fully infused
+	#Range: > 1
+	maxInfuse = 256
+	#Amount of RF used per tick while infusing
+	#Range: > 0
+	usePerTick = 600
+	#Maximum RF storage that the infuser can hold
+	#Range: > 0
+	infuserMaxRF = 60000
+	#RF per tick that the infuser can receive
+	#Range: > 0
+	infuserRFPerTick = 600
+

@@ -9,7 +9,7 @@
   <a href="https://discord.gg/AEaCzCTUwQ">
   <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
 
-  <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files?page=1&pageSize=20&version=1.20.1">
+  <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern">
   <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on СurseForge" height="50"></a>
   <br/>
   <p align="center">
@@ -28,9 +28,9 @@
 
 ***
 
-# Survival Modpack As It Should've Been
+## Survival Modpack As It Should've Been
 
-**TerraFirmaGreg** is a Forge modpack that makes the gameplay of Minecraft realistic and challenging, because it contains two of the hard and coolest mods for Minecraft, these are [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft) and [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern).
+**TerraFirmaGreg-Modern** is a Forge modpack that makes the gameplay of Minecraft realistic and challenging, because it contains two of the hard and coolest mods for Minecraft, these are [TerraFirmaCraft](https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft) and [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern).
 
 Modpack developers have carefully combined TerraFirmaCraft, which has little compatibility ability, and [GregTech Modern](https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern), the best of the technical mods.
 

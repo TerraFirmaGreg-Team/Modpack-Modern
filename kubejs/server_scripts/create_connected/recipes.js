@@ -71,4 +71,13 @@ const registerCreateConnectedRecipes = (event) => {
         .itemOutputs('create_connected:control_chip')
         .duration(720)
         .EUt(16)
+
+    // Fluid Vessel
+    event.remove({ id: 'create_connected:crafting/kinetics/fluid_vessel' })
+    event.shaped('create_connected:fluid_vessel', [
+        'ABA'
+    ], {
+        A: '#forge:plates/copper',
+        B: '#tfcbarrels:barrels'
+    }).id('tfg:shaped/create_connected/fluid_vessel')
 }

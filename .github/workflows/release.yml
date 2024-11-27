@@ -1,5 +1,9 @@
-name: Build
-run-name: Build #${{ github.run_number }} by @${{ github.actor }}
+name: Release
+run-name: "Release #${{ github.run_number }} by @${{ github.actor }}"
+
+env:
+  RELEASE_TYPE: "alpha"
+  MINECRAFT_VERSION: "1.20.1"
 
 on:
   push:
@@ -10,9 +14,6 @@ concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
 
-env:
-  RELEASE_TYPE: "RELEASE"
-
 jobs:
   info:
     name: Project Info
@@ -20,32 +21,75 @@ jobs:
     outputs:
       project_version: ${{ steps.project_version.outputs.tag }}
       project_name: ${{ steps.project_name.outputs.value }}
-      mc_version: ${{ steps.mc_version.outputs.value }}
+      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
       changelog: ${{ steps.changelog.outputs.description }}
+      truncated_changelog: ${{ steps.truncated.outputs.text }}
+      diff: ${{ steps.lockfile.outputs.diff }}
+      release_type: ${{ env.RELEASE_TYPE }}
+      minecraft_version: ${{ env.MINECRAFT_VERSION }}
+      # exists: ${{ steps.check_tag.outputs.exists }}
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4.2.2
 
-      - name: Get tag
+      - name: Check lockfile
+        shell: bash
+        run: |
+          set +e
+          echo "🔎 Getting modpack info..."
+
+          if [ ! -f pakku-lock.json ]; then
+            echo "::error::Could not find pakku-lock.json" && exit 1
+          else
+            echo "✔️ pakku-lock.json"
+          fi
+
+          if [ ! -f pakku.json ]; then
+            echo "::error::Could not find pakku.json" && exit 1
+          else
+            echo "✔️ pakku.json"
+          fi
+
+      - name: Get previous lockfile
+        id: lockfile
+        shell: bash
+        run: |
+          set +e
+          echo "🔎 Getting previous lockfile..."
+          if [ "$latest_tag" = ${{ github.ref_name }} ]; then
+            latest_tag_prev=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
+            latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev | sed -n 2p)
+
+            if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
+              git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
+              curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+              java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-pre.json ./pakku-lock.json 
+            else
+              echo "❌ File pakku-lock.json not found in previous tag"
+            fi
+          fi
+          if [ ! -f PROJECTS_DIFF.md ]; then
+            touch PROJECTS_DIFF.md
+          fi
+          {
+            echo 'diff<<EOF'
+            cat -v PROJECTS_DIFF.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Get Project Name
+        id: project_name
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+          prop_path: "name"
+
+      - name: Get Project Version
         id: project_version
         uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
         with:
           fallback: build.${{ github.run_number }}
-
-      - name: Get project name
-        id: project_name
-        uses: ActionsTools/read-json-action@main
-        with:
-          file_path: ".github/buildtools/modpack/manifest.json"
-          prop_path: "name"
-
-      - name: Get project name
-        id: mc_version
-        uses: ActionsTools/read-json-action@main
-        with:
-          file_path: ".github/buildtools/modpack/manifest.json"
-          prop_path: "minecraft.version"
 
       - name: Changelog Parser
         id: changelog
@@ -53,79 +97,90 @@ jobs:
         with:
           path: CHANGELOG.md
 
-  build-curseforge:
-    name: Build CurseForge Pack
+      - name: Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ steps.changelog.outputs.description }}'
+          max_chars: '1450'
+
+      - name: Upload Diff
+        id: diff
+        uses: actions/upload-artifact@v4.4.3
+        if: ${{ steps.lockfile.outputs.diff != '' }}
+        with:
+          name: Mods-diff
+          path: PROJECTS_DIFF.md
+
+      # - name: Check if tag exists
+      #   uses: mukunku/tag-exists-action@v1.6.0
+      #   id: check_tag
+      #   with:
+      #     tag: ${{ steps.project_version.outputs.tag }}
+          
+      - name: Generate Github Summary
+        run: |
+          echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+
+  build-modpack:
+    name: Build Modpack
     runs-on: ubuntu-latest
     needs: [info]
+    # if: needs.info.outputs.exists != 'true'
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4.2.2
 
       - name: Replace strings
         shell: bash
         run: |
+          set +e
+
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" ./.github/buildtools/modpack/manifest.json
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Export CurseForge
-        run: |
-          mkdir -p overrides
-          mv -vf {config,defaultconfigs,kubejs} overrides/
-          mv -vf .github/buildtools/modpack/manifest.json ./
-          mv -vf .github/buildtools/modpack/modlist.html ./
-          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip manifest.json modlist.html overrides
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Upload zip CurseForge
+      - name: Export modpack
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar export
+
+      - name: Rename artifact curseforge
+        run: |
+          cd ./build/curseforge/
+          mv *.zip $(basename -s .zip *.zip)-curseforge.zip
+          
+      - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-          retention-days: 5
+          name: ${{ needs.info.outputs.project_full_name }}-curseforge
+          path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
+          if-no-files-found: error
 
-  build-multimc:
-    name: Build MultiMC Pack
-    runs-on: ubuntu-latest
-    needs: [info]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.1
-
-      - name: Replace strings
-        shell: bash
+      - name: Rename artifact modrinth
         run: |
-          VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" ./.github/buildtools/modpack/instance.cfg
-          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          cd ./build/modrinth/
+          mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: Download Mods
-        run: |
-            git submodule init
-            cd mods
-            git config --global credential.helper '!f() { 
-              echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
-            git submodule update --recursive
-
-      - name: Export MultiMC
-        run: |
-          mkdir -p .minecraft
-          mkdir -p flame
-          mv -vf {config,defaultconfigs,kubejs,mods} .minecraft/
-          mv -vf .github/buildtools/modpack/mmc-pack.json ./
-          mv -vf .github/buildtools/modpack/instance.cfg ./
-          mv -vf .github/buildtools/modpack/modlist.html ./
-          mv -vf .github/buildtools/modpack/manifest.json flame/
-          find .minecraft/mods -name "probejs-*" -delete;
-          find .minecraft/mods -name ".git" -delete;
-          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
-      
-      - name: Upload zip multimc
+      - name: Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
-          retention-days: 5
+          name: ${{ needs.info.outputs.project_full_name }}-modrinth
+          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+          if-no-files-found: warn
 
   build-server:
     name: Build Server Pack
@@ -133,113 +188,183 @@ jobs:
     needs: [info]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4.2.2
 
-      - name: Download Mods
+      - name: Replace strings
+        shell: bash
         run: |
-            git submodule init
-            cd mods
-            git config --global credential.helper '!f() { 
-              echo "username=Xikaro"; 
-              echo "password=${{ secrets.USER_TOKEN_XIKARO }}"; }; f'
-            git submodule update --recursive
+          set +e
 
-      - name: Export serverpack
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+
+      - name: Export modpack
         run: |
-          mkdir -p .minecraft
-          mv -vf {config,defaultconfigs,kubejs,mods,.github/buildtools/serverpack/*} .minecraft
-          cat .github/buildtools/client_mod.txt | while read -r line; do find .minecraft/mods -name "$line" -delete; done
-          zip -r ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip .minecraft/*
+          mv -vf ./.pakku/server-overrides/* ./
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar export
 
-      - name: Upload zip
+      - name: Rename artifact server
+        run: |
+          cd ./build/serverpack/
+          mv *.zip $(basename -s .zip *.zip)-serverpack.zip
+
+      - name: Upload artifact server
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
-          path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
-          retention-days: 5
+          name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          if-no-files-found: error
+
+  build-multimc:
+    name: Build MultiMC Pack
+    runs-on: ubuntu-latest
+    needs: [info]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Replace strings
+        shell: bash
+        run: |
+          set +e
+
+          VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/DEV/${VERSION}/g" pakku.json
+          sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
+          sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
+
+      # - name: Cache pakku
+      #   uses: actions/cache@v4.1.2
+      #   with:
+      #     path: build/.cache
+      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+
+      - name: Export
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar pakku.jar --debug fetch
+          java -jar pakku.jar --debug export
+          
+      - name: Move files
+        run: |
+          ls
+          mkdir -p .pakku/multimc-overrides/flame
+          mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
+          mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
+          mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
+          cd .pakku/multimc-overrides/
+          
+          zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
+      
+      - name: Upload zip multimc
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-multimc
+          path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
+          if-no-files-found: error
 
   release-curseforge:
     name: Deploy to CurseForge
-    needs: [info, build-curseforge, build-server]
+    needs: [info, build-modpack, build-server]
     runs-on: ubuntu-latest
     outputs:
-      cf_release_id: ${{ steps.cf_release.outputs.id }}
+      id: ${{ steps.cf_release.outputs.id }}
     steps:
-      - name: Check if CF_API_TOKEN exist
+      - name: Check if CURSEFORGE_TOKEN exist
         shell: bash
         run: |
-          if [ "${{ secrets.CF_API_TOKEN }}" == '' ]; then
-            echo '::error::No value found for secret key `CF_API_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+          if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
+            echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
           fi  
 
-      - name: Download cf modpack
+      - name: Download artifact curseforge
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge
+          name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
-      - name: Download serverpack
+      - name: Download artifact server
         uses: actions/download-artifact@v4.1.8
         with:
-          name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
+          name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
       - name: Upload Curseforge
         id: cf_release
         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
         with:
-          api-token: ${{ secrets.CF_API_TOKEN }}
-          project-id: ${{ vars.CF_MODPACK_ID }}
-          display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-          modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
-          modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
-          changelog: ${{ needs.info.outputs.changelog }}
+          api-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          project-id: ${{ vars.CURSEFORGE_ID }}
+          display-name: ${{ needs.info.outputs.project_full_name }}
+          modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          changelog: |
+            ${{ needs.info.outputs.changelog }}
+            ${{ needs.info.outputs.diff }}
           changelog-format: markdown
-          game-version: ${{ needs.info.outputs.mc_version }}
-          release-type: ${{ env.RELEASE_TYPE }}
+          game-version: ${{ needs.info.outputs.minecraft_version }}
+          release-type: ${{ needs.info.outputs.release_type }}
 
   # release-modrinth:
-    #   name: Deploy to Modrinth
-    #   runs-on: ubuntu-latest
-    #   steps:
-    #     - name: Check if MODRINTH_API_TOKEN exist
-    #       shell: bash
-    #       run: |
-    #         if [ "${{ secrets.MODRINTH_API_TOKEN }}" == '' ]; then
-    #           echo '::error::No value found for secret key `MODRINTH_API_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-    #         fi  
+  #     name: Deploy to Modrinth
+  #     needs: [info, build-modpack, build-server]
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - name: Check if MODRINTH_TOKEN exist
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi  
     
-    #     - name: Download modpack
-    #       uses: actions/download-artifact@v4.1.0
-    #       with:
-    #         name: modpack_mrd
+  #       - name: Download artifact modrinth
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
-    #     - name: Download serverpack
-    #       uses: actions/download-artifact@v4.1.0
-    #       with:
-    #         name: server_pack
+  #       - name: Download artifact server
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
-    #     - name: Upload Modrinth
-    #       id: cf_release
-    #       uses: SwitchAlpha/upload-curseforge-modpack-action@master
-    #       with:
-    #         api-token: ${{ secrets.MODRINTH_API_TOKEN }}
-    #         project-id: ${{ vars.MODRINTH_MODPACK_ID }}
-    #         modpack-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-mrd.zip
-    #         modpack-server-path: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
-    #         changelog: ${{ needs.info.outputs.changelog }}
-    #         changelog-format: markdown
-    #         game-version: ${{ needs.info.outputs.mc_version }}
-    #         display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}
-    #         server-display-name: ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server
-    #         release-type: ${{ env.RELEASE_TYPE }}
+  #       - name: Upload Modrinth
+  #         id: cf_release
+  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #         with:
+  #           api-token: ${{ secrets.MODRINTH_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_ID }}
+  #           modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+  #           modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+  #           changelog: ${{ needs.info.outputs.changelog }}
+  #           changelog-format: markdown
+  #           game-version: ${{ needs.info.outputs.minecraft_version }}
+  #           display-name: ${{ needs.info.outputs.project_full_name }}
+  #           server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+  #           release-type: ${{ needs.info.outputs.release_type }}
 
-  close-fixed-issues:
-    name: Close Fixed Issues
-    needs: [info, build-curseforge, build-multimc, build-server]
+  release-github:
+    name: Deploy to GitHub
+    needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.release.outputs.url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.1
+        uses: actions/checkout@v4.2.2
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          merge-multiple: true
 
       - name: Сlose fixed in dev
         uses: Xikaro/close-issues-based-on-label@master
@@ -248,51 +373,45 @@ jobs:
           COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  release-github:
-    name: Deploy to GitHub
-    needs: [info, build-curseforge, build-multimc, build-server, close-fixed-issues]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download modpack
-        uses: actions/download-artifact@v4.1.8
-        with:
-          merge-multiple: true
-
       - name: Create release
-        uses: softprops/action-gh-release@v2
+        id: release
+        uses: softprops/action-gh-release@v2.1.0
         with:
-          prerelease: false
-          generate_release_notes: true
           name: ${{ needs.info.outputs.project_version }}
-          body: ${{ needs.info.outputs.changelog }}
-          files: |
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-curseforge.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-multimc.zip
-            ${{ needs.info.outputs.project_name }}-${{ needs.info.outputs.project_version }}-server.zip
           tag_name: ${{ needs.info.outputs.project_version }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            ${{ needs.info.outputs.changelog }}
+            ```markdown
+            ${{ needs.info.outputs.diff }}
+            ```
+          files: |
+            ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+            ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+            ${{ needs.info.outputs.project_full_name }}-multimc.zip
+          prerelease: ${{ env.RELEASE_TYPE != 'release' }}
+          generate_release_notes: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
     name: Discord Message
-    needs: [info, release-github, release-curseforge]
+    needs: [info, release-curseforge, release-github]
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
-        uses: tsickert/discord-webhook@v6.0.0
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
         with:
-          webhook-url: ${{secrets.RELEASES_1_20}}
+          key: ${{ secrets.DISCORD_RELEASES }}
           username: "TerraFirmaGreg"
-          avatar-url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
-          embed-title: Release ${{ needs.info.outputs.project_version }}
-          embed-url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.info.outputs.project_version }}
-          embed-thumbnail-url: https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/curseforge_logo.png
-          embed-description: |
-            **Release Type**: `${{ env.RELEASE_TYPE }}`
-            **GameVersion**: `${{ needs.info.outputs.mc_version }}`
-            **Website Link**: [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg/files/${{ needs.release-curseforge.outputs.cf_release_id }})
+          avatar_url: "https://raw.githubusercontent.com/TerraFirmaGreg-Team/.github/main/branding/logo.png"
+          content_links_no_embed: .+
+          content: |
+            **Release**: `${{ needs.info.outputs.project_version }}`
+            **Release Type**: `${{ needs.info.outputs.release_type }}`
+            **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
 
-            ** Сhangelog **
-            ```${{ needs.info.outputs.changelog }}```
-            ** [More details...](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/blob/main/CHANGELOG.md) **
-          embed-color: 5814783
+            [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
+
+             ```markdown
+            ${{ needs.info.outputs.truncated_changelog }}
+            - ...```
+            ** [Read more...](${{ needs.release-github.outputs.url }}) **

@@ -1,0 +1,123 @@
+
+#Dimension settings
+[dimensions]
+	#The maintenance cost of randomized dimlets is multiplied with this value before applying to the dimension
+	#Range: 0.0 ~ 10.0
+	randomizedDimletCostFactor = 0.1
+	#The chance of a dimlet hut for a given chunk
+	#Range: 0.0 ~ 1.0
+	dimletHutChance = 0.005
+	#At this maintenance cost thresshold and below the minimum dimension power (dimensionPowerMinimum is used
+	#Range: > 0
+	minPowerThresshold = 100
+	#At this maintenance cost thresshold and above the maximum dimension power (dimensionPowerMaximum is used
+	#Range: > 0
+	maxPowerThresshold = 5000
+	#Maximum power in a dimension. This is the minimum value used by dimensions that don't consume a lot of power
+	#Range: 0 ~ 9223372036854775807
+	dimensionPowerMinimum = 20000000
+	#Maximum power in a dimension. This is the maximum value used by dimensions that consume a lot of power
+	#Range: 0 ~ 9223372036854775807
+	dimensionPowerMaximum = 40000000
+	#Maximum power of a dimension is always a multiple of this value
+	#Range: 1 ~ 9223372036854775807
+	powerMultiples = 500000
+	#The zero power percentage at which power warning signs are starting to happen. This is only used for lighting level. No other debuffs occur at this level.
+	#Range: 0 ~ 100
+	dimensionPowerWarn0 = 12
+	#The first power percentage at which power warning signs are starting to happen
+	#Range: 0 ~ 100
+	dimensionPowerWarn1 = 9
+	#The second power percentage at which power warning signs are starting to become worse
+	#Range: 0 ~ 100
+	dimensionPowerWarn2 = 2
+	#The third power percentage at which power warning signs are starting to be very bad
+	#Range: 0 ~ 100
+	dimensionPowerWarn3 = 1
+	#Enable dynamic scaling of the Phase Field Generator cost based on world tick cost
+	enableDynamicPhaseCost = false
+	#How much of the tick cost of the world is applied to the PFG cost, as a ratio from 0 to 1
+	#Range: 0.0 ~ 1.0
+	dynamicPhaseCostAmount = 0.05000000074505806
+	#If true you will get some debufs when the PFG is in use. If false there will be no debufs
+	phasedFieldGeneratorDebuf = true
+	#If true creating dimensions requires an owner dimlet
+	ownerDimletRequired = false
+	#The default base block for a dimension
+	defaultBaseBlock = "minecraft:stone"
+	#The default base fluid for a dimension
+	defaultBaseFluid = "minecraft:water"
+
+#Dimension Builder settings
+[dimensionbuilder]
+	#Maximum RF storage that the dimension builder can receive per side
+	#Range: > 0
+	generatorMaxRF = 20000
+	#Maximum RF storage that the phased field generator item can hold
+	#Range: 0 ~ 9223372036854775807
+	phasedFieldMaxRF = 1000000
+	#RF per tick that the phased field generator item can receive
+	#Range: 0 ~ 9223372036854775807
+	phasedFieldRFPerTick = 1000
+	#RF per tick that the phased field generator item will consume
+	#Range: 0 ~ 9223372036854775807
+	phasedFieldConsumePerTick = 100
+
+#Dimension Editor settings
+[dimensioneditor]
+	#Maximum RF storage that the dimension editor can receive per side
+	#Range: > 0
+	generatorMaxRF = 20000
+	#Set to true to allow the dimension editor to destroy dimensions using tnt
+	tntCanDestroyDimension = true
+
+#Dimlets settings
+[dimlets]
+	#This is a list of dimlet packages that will be used. Later dimlet packages can override dimlets defined in earlier packages. You can place these packages in the 'config/rftoolsdim' folder
+	dimletPackages = ["base.json", "vanilla_blocks.json", "vanilla_tags.json", "vanilla_fluids.json", "vanilla_biomes.json", "vanilla_structures.json", "rftools.json", "appliedenergistics2.json", "biggerreactors.json", "bigreactors.json", "botania.json", "immersiveengineering.json", "mekanism.json", "powah.json", "quark.json", "tconstruct.json", "thermal.json", "biomesoplenty.json", "emendatusenigmatica.json"]
+
+#Dimlet Workbench settings
+[dimletworkbench]
+	#Maximum amount of power the researcher can store
+	#Range: > 0
+	researcherMaxPower = 100000
+	#Amount of RF per tick input (per side) for the researcher
+	#Range: > 0
+	researcherRFPerTick = 10000
+	#Amount of RF per tick the researcher uses while operating
+	#Range: > 0
+	researcherUsePerTick = 200
+	#How many ticks are needed to research one item
+	#Range: > 0
+	researcheTime = 400
+
+#Dimension Builder settings
+[blobs]
+	#Regeneration level of the common blob in case the dimension has power
+	#Range: > 0
+	commonBlobRegen = 2
+	#Regeneration level of the rare blob in case the dimension has power
+	#Range: > 0
+	rareBlobRegen = 3
+	#Regeneration level of the legendary blob in case the dimension has power
+	#Range: > 0
+	legendaryBlobRegen = 4
+	#Below this dimension power the regeneration of the blobs stop
+	#Range: 0 ~ 9223372036854775807
+	blobRegenerationLevel = 1000
+
+#Essence settings
+[essences]
+	#Amount of blocks needed for a single block dimlet (for the block absorber)
+	#Range: > 1
+	maxBlockAbsorption = 256
+	#Amount of fluid blocks needed for a single fluid dimlet (for the fluid absorber)
+	#Range: > 1
+	maxFluidAbsorption = 256
+	#Amount of ticks needed for a single biome dimlet (for the biome absorber)
+	#Range: > 1
+	maxBiomeAbsorption = 5000
+	#Amount of ticks needed for a single structure dimlet (for the structure absorber)
+	#Range: > 1
+	maxStructureAbsorption = 5000
+

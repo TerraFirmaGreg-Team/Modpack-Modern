@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "active=false": {
+            "model": "tfg:block/copper_coil_block"
+        },
+        "active=true": {
+            "model": "tfg:block/copper_coil_block_active"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+
+#General settings for all mods using mcjtylib
+[general]
+	#If true dump a lot of logging information about various things. Useful for debugging
+	logging = false
+	#If true then blocks using mcjtylib will have ownership tagged on them (useful for the rftools security manager)
+	manageOwnership = true
+	#The maximum amount of dimensional shards that can be infused in a single machine
+	#Range: > 1
+	maxInfuse = 256
+

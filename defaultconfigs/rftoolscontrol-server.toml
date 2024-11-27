@@ -1,0 +1,60 @@
+
+#General settings
+[general]
+	#Maximum RF storage that the processor can hold
+	#Range: > 1
+	processorMaxRF = 100000
+	#RF per tick that the processor can receive
+	#Range: > 1
+	processorRFPerTick = 1000
+	#Maximum number of lines to keep in the log
+	#Range: 0 ~ 100000
+	processorMaxLogLines = 100
+	#Maximum stack size for a program (used by 'call' opcode)
+	#Range: 1 ~ 10000
+	maxStackSize = 100
+	#Maximum amount of graphics opcodes that a graphics card supports
+	#Range: 1 ~ 10000
+	maxGraphicsOpcodes = 30
+	#Maximum amount of event queue entries supported by a processor. More events will be ignored
+	#Range: 1 ~ 10000
+	maxEventQueueSize = 100
+	#Maximum amount of craft requests supported by the crafting station. More requests will be ignored
+	#Range: 1 ~ 10000
+	maxCraftRequests = 200
+	#If true double click is needed in programmer to change connector. If false single click is sufficient
+	doubleClickToChangeConnector = true
+	#If 2 tooltips in the programmer gui are verbose and give a lot of info. With 1 the information is decreased. 0 means no tooltips
+	#Range: 0 ~ 2
+	tooltipVerbosityLevel = 2
+	#Amount of instructions per tick for the CPU Core B500
+	#Range: 1 ~ 1000
+	speedB500 = 1
+	#Amount of instructions per tick for the CPU Core S1000
+	#Range: 1 ~ 1000
+	speedS1000 = 4
+	#Amount of instructions per tick for the CPU Core EX2000
+	#Range: 1 ~ 1000
+	speedEX2000 = 16
+	#RF per tick for the CPU Core B500
+	#Range: > 0
+	rfB500 = 4
+	#RF per tick for the CPU Core S1000
+	#Range: > 0
+	rfS1000 = 14
+	#RF per tick for the CPU Core EX2000
+	#Range: > 0
+	rfEX2000 = 50
+	#RF per tick/per block for the variable screen module
+	#Range: > 0
+	variableModuleRFPerTick = 1
+	#RF per tick/per block for the interaction screen module
+	#Range: > 0
+	interactionModuleRFPerTick = 2
+	#RF per tick/per block for the console screen module
+	#Range: > 0
+	consoleModuleRFPerTick = 2
+	#RF per tick/per block for the vector art screen module
+	#Range: > 0
+	vectorArtModuleRFPerTick = 2
+

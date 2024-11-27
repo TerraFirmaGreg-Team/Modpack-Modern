@@ -1,0 +1,20 @@
+
+[sodiumdynamiclights]
+	#Lighting mode
+	#Allowed Values: OFF, SLOW, FAST, REALTIME
+	mode = "REALTIME"
+	#Enable entities light source.
+	entities = true
+	#Enable first-person player light source.
+	self = true
+	#Enable block entities light source.
+	block_entities = true
+	#Enables water-sensitive light sources check. This means that water-sensitive items will not light up when submerged in water.
+	water_sensitive_check = true
+	#TNT lighting mode. May be off, simple or fancy.
+	#Allowed Values: OFF, SIMPLE, FANCY
+	tnt = "SIMPLE"
+	#Creeper lighting mode. May be off, simple or fancy.
+	#Allowed Values: OFF, SIMPLE, FANCY
+	creeper = "OFF"
+

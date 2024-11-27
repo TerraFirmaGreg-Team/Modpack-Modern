@@ -2,7 +2,7 @@
 
 /**
  * Список хранит предметы, 
- * у которых должны быть удалены тэги и они должны быть скрыты в REI.
+ * у которых должны быть удалены тэги и они должны быть скрыты в EMI.
  */
 global.FIRMALIFE_DISABLED_ITEMS = [
     
@@ -37,6 +37,10 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:pumping_station'
 ];
 
+/**
+ * Список хранит предметы, 
+ * у которых должны быть скрыты в EMI.
+ */
 global.FIRMALIFE_HIDED_ITEMS = [
     'firmalife:weathered_copper_greenhouse_wall', 
     'firmalife:weathered_copper_greenhouse_panel_wall', 
@@ -93,10 +97,10 @@ global.FIRMALIFE_HIDED_ITEMS = [
     'firmalife:weathered_treated_wood_greenhouse_port'
 ];
 
-
-global.FIRMALIFE_ORE_MATERIALS = [
-    'chromite'
-];
+//todo: to remove
+// global.FIRMALIFE_ORE_MATERIALS = [
+//     'chromite'
+// ];
 
 global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS = [
     { input: 'firmalife:plant/cocoa_sapling', fluid_amount: 8000, output: '3x firmalife:food/cocoa_beans', name: 'cocoa_beans' },

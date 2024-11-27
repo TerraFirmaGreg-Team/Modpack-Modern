@@ -19,6 +19,8 @@
 	tickDedupeLogicDisabled = false
 	#Determines if backpacks can be placed in container items (those that check for return value of canFitInsideContainerItems)
 	canBePlacedInContainerItems = false
+	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
+	maxUpgradesPerStorage = ["jukebox_upgrade|1", "stack_upgrades|3", "furnace_upgrades|1"]
 
 	#Leather Backpack Settings
 	[server.leatherBackpack]
@@ -425,4 +427,13 @@
 		slownessLevelsPerAdditionalBackpack = 1.0
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
 		onlyWornBackpackTriggersUpgrades = true
+
+	#Copper Backpack Settings
+	[server.copperBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 45
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
 

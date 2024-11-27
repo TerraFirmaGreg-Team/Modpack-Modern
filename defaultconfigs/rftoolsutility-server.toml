@@ -1,0 +1,274 @@
+
+#Settings for the crafter
+[crafter]
+	#Amount of RF used per crafting operation
+	#Range: > 0
+	rfPerOperation = 100
+	#How many operations to do at once in fast mode
+	#Range: > 0
+	speedOperations = 5
+	#Maximum RF storage that the crafter can hold
+	#Range: > 0
+	crafterMaxRF = 50000
+	#RF per tick that the crafter can receive
+	#Range: > 0
+	crafterRFPerTick = 500
+
+#Settings for the screen system
+[screen]
+	#Maximum RF storage that the screen controller can hold
+	#Range: > 0
+	screenControllerMaxRF = 60000
+	#RF per tick that the the screen controller can receive
+	#Range: > 0
+	screenControllerRFPerTick = 1000
+	#RF per tick/per block for the button module
+	#Range: > 0
+	buttonRFPerTick = 9
+	#RF per tick/per block for the clock module
+	#Range: > 0
+	clockRFPerTick = 1
+	#RF per tick/per block for the computer module
+	#Range: > 0
+	computerRFPerTick = 4
+	#RF per tick/per block for the counter plus module
+	#Range: > 0
+	counterPlusRFPerTick = 30
+	#RF per tick/per block for the counter module
+	#Range: > 0
+	counterRFPerTick = 4
+	#RF per tick/per block for the dimension module
+	#Range: > 0
+	dimensionRFPerTick = 6
+	#RF per tick/per block for the energy module
+	#Range: > 0
+	energyRFPerTick = 4
+	#RF per tick/per block for the energy plus module
+	#Range: > 0
+	energyPlusRFPerTick = 30
+	#RF per tick/per block for the fluid module
+	#Range: > 0
+	fluidRFPerTick = 4
+	#RF per tick/per block for the fluid plus module
+	#Range: > 0
+	fluidPlusRFPerTick = 30
+	#RF per tick/per block for the itemstack plus module
+	#Range: > 0
+	itemstackPlusRFPerTick = 30
+	#RF per tick/per block for the itemstack module
+	#Range: > 0
+	itemstackRFPerTick = 4
+	#RF per tick/per block for the machine information module
+	#Range: > 0
+	machineInfoRFPerTick = 4
+	#RF per tick/per block for the redstone module
+	#Range: > 0
+	redstoneRFPerTick = 4
+	#RF per tick/per block for the text module
+	#Range: > 0
+	textRFPerTick = 0
+	#How many times the screen will update. Higher numbers make the screens less accurate but better for network bandwidth
+	#Range: > 0
+	screenRefreshTiming = 500
+
+#Settings for the spawner system
+[spawner]
+	#Maximum amount of injections we need to do a full mob extraction.
+	#Range: > 1
+	maxMobInjections = 10
+
+#Settings for the tank
+[tank]
+	#Maximum tank capacity (in mb)
+	#Range: > 0
+	maxCapacity = 32000
+
+#Settings for the teleportation system
+[teleporter]
+	#Maximum RF storage that the matter transmitter can hold. This should be at least equal to 'rfStartTeleportDim'
+	#Range: > 0
+	transmitterMaxRF = 200000
+	#RF per tick that the matter transmitter can receive. It is recommended to keep this at least equal to 'rfTeleportPerTick'
+	#Range: > 0
+	transmitterRFPerTick = 1000
+	#Maximum RF storage that the matter receiver can hold
+	#Range: > 0
+	receiverMaxRF = 100000
+	#RF per tick that the matter receiver can receive
+	#Range: > 0
+	receiverRFPerTick = 500
+	#Maximum RF storage that the dialing device can hold
+	#Range: > 0
+	dialerMaxRF = 50000
+	#RF per tick that the dialing device can receive
+	#Range: > 0
+	dialerRFPerTick = 100
+	#Percentage of power left in a dimension before giving a warning with the destination analyzer
+	#Range: 0 ~ 100
+	dimensionWarnPercentage = 5
+	#Maximum RF storage that the advanced charged porter item can hold (note that teleporting this way uses 50% more RF then with a matter transmitter)
+	#Range: > 0
+	advancedChargedPorterMaxRF = 1000000
+	#Maximum RF storage that the charged porter item can hold (note that teleporting this way uses 50% more RF then with a matter transmitter)
+	#Range: > 0
+	chargedPorterMaxRF = 200000
+	#RF per tick that the the charged porter item can receive
+	#Range: > 0
+	chargedPorterRFPerTick = 2000
+	#The speed bonus for the advanced charged porter (compared to the normal one)
+	#Range: > 0
+	advancedSpeedBonus = 4
+	#The horizontal range the dialing device uses to check for transmitters. These are the transmitters the dialing device will be able to control
+	#Range: > 0
+	horizontalDialerRange = 10
+	#The vertical range the dialing device uses to check for transmitters
+	#Range: > 0
+	verticalDialerRange = 5
+	#The amount of RF consumed when dialing a transmitter to another receiver
+	#Range: > 0
+	rfPerDial = 1000
+	#The amount of RF consumed when the dialing device checks for the capabilities of a receiver ('Check' button)
+	#Range: > 0
+	rfPerCheck = 5000
+	#The amount of RF that is consumed by the matter transmitter when a dial is active
+	#Range: > 0
+	rfDialedConnectionPerTick = 10
+	#The amount of RF that is consumed by a matter transmitter when the player goes to stand in the teleportation beam allowing the teleportation process to start. This value is used for a teleport in the same dimension. In addition to this value the 'rfStartTeleportDist' is also added per traveled distance
+	#Range: > 0
+	rfStartTeleportLocal = 5000
+	#The amount of RF that is consumed by a matter transmitter when the player goes to stand in the teleportation beam allowing the teleportation process to start. This version is for a teleportation to another dimension and in this case 'rfStartTeleportDist' is not used. This value also acts as the maximum rf that can be consumed for a local teleport
+	#Range: > 0
+	rfStartTeleportDim = 100000
+	#For every unit in distance this value is added to the initial RF cost for starting the teleportation. This value is not used when teleporting to another dimension
+	#Range: > 0
+	rfStartTeleportDist = 10
+	#For the duration of the teleport process this value represents the amount of RF that is consumed by the matter transmitter for every tick
+	#Range: > 0
+	rfTeleportPerTick = 500
+	#The amount of RF/tick an idle dialed transmitter consumes
+	#Range: > 0
+	rfMatterIdleTick = 0
+	#This is the amount of RF that is consumed at the receiving side for every teleport. This RF is only consumed when the teleportation actually happens
+	#Range: > 0
+	rfPerTeleportReceiver = 5000
+	#This is the amount of RF that is consumed at a boosted transmitter in case the receiver doesn't have enough power
+	#Range: > 0
+	rfBoostedTeleport = 20000
+	#The base time used for a teleportation for a local teleport. The 'timeTeleportDist' value is added per distance traveled
+	#Range: > 0
+	timeTeleportBaseLocal = 5
+	#The base time used for a teleportation to another dimension. The 'timeTeleportDist' value is not used
+	#Range: > 0
+	timeTeleportBaseDim = 50
+	#The amount of time that is added depending on distance for a local teleport. This value is in militicks which means that 1000 is one tick and one tick is 1/20 of a second
+	#Range: > 0
+	timeTeleportDist = 10
+	#Set this to false to disable the 'whoosh' message on teleport
+	whooshMessage = true
+	#The volume for the teleporting sound (1.0 is default)
+	#Range: 0.0 ~ 1.0
+	volumeTeleport = 1.0
+	#The volume for the error sound when teleportation fails (1.0 is default)
+	#Range: 0.0 ~ 1.0
+	volumeTeleportError = 1.0
+	#The amount of ticks that a matter transmitter with destination checker will wait before checking a receiver in case the chunk is not loaded (-1 to disable this check completely)
+	#Range: > -1
+	checkUnloadedChunk = -1
+	#The amount of ticks that a matter transmitter with destination checker will wait before checking a receiver in case the world is not loaded (-1 to disable this check completely)
+	#Range: > -1
+	checkUnloadedWorld = -1
+	#If this is true then all usages of the teleport system are logged
+	logTeleportUsages = false
+	#If this is true then the RFTools teleportation system cannot be used to travel in the same dimension
+	preventInterdimensionalTeleports = false
+	#Comma separated list of dimension ids that the teleportation system can't teleport from
+	blacklistedTeleportationSources = ""
+	#Comma separated list of dimension ids that the teleportation system can't teleport to
+	blacklistedTeleportationDestinations = ""
+
+#Settings for the environmental controller
+[environmental]
+	#Maximum RF storage that the environmental controller can hold
+	#Range: > 0
+	environmentalMaxRF = 500000
+	#RF per tick that the the environmental controller can receive
+	#Range: > 0
+	environmentalRFPerTick = 20000
+	#The minimum RF/tick usage that an active controller consumes
+	#Range: > 0
+	environmentalMinRFUsage = 5
+	#When the environmental controller is used on mobs the power usage is multiplied with this
+	#Range: 0.0 ~ 1.0E8
+	mobsPowerMultiplier = 2.0
+	#RF per tick/per block for the feather falling module
+	#Range: 0.0 ~ 1.0E9
+	featherfallingRFPerTick = 0.001
+	#RF per tick/per block for the feather falling plus module
+	#Range: 0.0 ~ 1.0E9
+	featherfallingPlusRFPerTick = 0.003
+	#RF per tick/per block for the flight module
+	#Range: 0.0 ~ 1.0E9
+	flightRFPerTick = 0.004
+	#RF per tick/per block for the glowing module
+	#Range: 0.0 ~ 1.0E9
+	glowingRFPerTick = 0.001
+	#RF per tick/per block for the haste module
+	#Range: 0.0 ~ 1.0E9
+	hasteRFPerTick = 0.001
+	#RF per tick/per block for the haste plus module
+	#Range: 0.0 ~ 1.0E9
+	hastePlusRFPerTick = 0.003
+	#RF per tick/per block for the night vision module
+	#Range: 0.0 ~ 1.0E9
+	nightvisionRFPerTick = 0.001
+	#RF per tick/per block for the peaceful module
+	#Range: 0.0 ~ 1.0E9
+	peacefulRFPerTick = 0.001
+	#RF per tick/per block for the regeneration module
+	#Range: 0.0 ~ 1.0E9
+	regenerationRFPerTick = 0.0015
+	#RF per tick/per block for the regeneration plus module
+	#Range: 0.0 ~ 1.0E9
+	regenerationPlusRFPerTick = 0.0045
+	#RF per tick/per block for the saturation module
+	#Range: 0.0 ~ 1.0E9
+	saturationRFPerTick = 0.001
+	#RF per tick/per block for the saturation plus module
+	#Range: 0.0 ~ 1.0E9
+	saturationPlusRFPerTick = 0.003
+	#RF per tick/per block for the speed module
+	#Range: 0.0 ~ 1.0E9
+	speedRFPerTick = 0.001
+	#RF per tick/per block for the speed plus module
+	#Range: 0.0 ~ 1.0E9
+	speedPlusRFPerTick = 0.003
+	#RF per tick/per block for the wather breathing module
+	#Range: 0.0 ~ 1.0E9
+	watherBreathingRFPerTick = 0.001
+	#RF per tick/per block for the luck module
+	#Range: 0.0 ~ 1.0E9
+	luckRFPerTick = 0.002
+	#RF per tick/per block for the noTeleport module
+	#Range: 0.0 ~ 1.0E9
+	noTeleportRFPerTick = 0.002
+	#RF per tick/per block for the blindness module
+	#Range: 0.0 ~ 1.0E9
+	blindnessRFPerTick = 0.01
+	#Set to true to make the blindness module work on players
+	blindnessAvailable = false
+	#RF per tick/per block for the weakness module
+	#Range: 0.0 ~ 1.0E9
+	weaknessRFPerTick = 0.01
+	#Set to true to make the weakness module work on players
+	weaknessAvailable = false
+	#RF per tick/per block for the poison module
+	#Range: 0.0 ~ 1.0E9
+	poisonRFPerTick = 0.02
+	#Set to true to make the poison module work on players
+	poisonAvailable = false
+	#RF per tick/per block for the slowness module
+	#Range: 0.0 ~ 1.0E9
+	slownessRFPerTick = 0.012
+	#Set to true to make the slowness module work on players
+	slownessAvailable = false
+

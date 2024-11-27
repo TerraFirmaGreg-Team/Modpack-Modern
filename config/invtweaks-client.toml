@@ -1,0 +1,150 @@
+
+#Sorting customization
+[sorting]
+	#Rules for sorting
+	#Each element is of the form <POS> <CATEGORY>
+	#A-D is the row from top to bottom
+	#1-9 is the column from left to right
+	#POS denotes the target slots
+	#Exs. POS = D3 means 3rd slot of hotbar
+	#     POS = B means 2nd row, left to right
+	#     POS = 9 means 9th column, bottom to top
+	#     POS = A1-C9 means slots A1,A2,…,A9,B1,…,B9,C1,…,C9
+	#     POS = A9-C1 means slots A9,A8,…,A1,B9,…,B1,C9,…,C1
+	#Append v to POS of the form A1-C9 to move in columns instead of rows
+	#Append r to POS of the form B or 9 to reverse slot order
+	#CATEGORY is the item category to designate the slots to
+	#CATEGORY = /LOCKED prevents slots from moving in sorting
+	#CATEGORY = /FROZEN has the effect of /LOCKED and, in addition, ignores slot in auto-refill
+	#CATEGORY = /OTHER covers all remaining items after other rules are exhausted
+	rules = ["D /LOCKED", "A1-C9 /OTHER"]
+
+	#Custom settings per GUI
+	#x = x-position of external sort button relative to GUI top left
+	#y = same as above except for the y-position
+	#Omit x and y to leave position unchanged
+	#sortRange = slots to sort
+	#E.g. sortRange = "5,0-2" sorts slots 5,0,1,2 in that order
+	#sortRange = "" disables sorting for that container
+	#Out-of-bound slots are ignored
+	#Omit sortRange to leave as default
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.client.gui.implementations.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.client.gui.me.items.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "de.mari_023.ae2wtlib.wct.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.github.glodblock.epp.client.gui.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "org.cyclops.integrateddynamics.inventory.container.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "org.cyclops.integratedterminals.inventory.container.ContainerTerminalStoragePart"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.screen.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "net.p3pp3rf1y.sophisticatedbackpacks.common.gui.BackpackContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "net.p3pp3rf1y.sophisticatedstorage.common.gui.StorageContainerMenu"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "tfar.craftingstation.CraftingStationMenu"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "tfar.dankstorage.container.DankContainers"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mcjty.rftoolsutility.modules.crafter.blocks.CrafterContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "gripe._90.megacells.menu.MEGAInterfaceMenu"
+		sortRange = ""
+
+	#Categor(y/ies) for sorting
+	#
+	#name: the name of the category
+	#
+	#spec:
+	#Each element denotes a series of semicolon-separated clauses
+	#Items need to match all clauses of at least one element
+	#Items matching earlier elements are earlier in order
+	#A clause of the form /tag:<tag_value> matches a tag
+	#Clauses /instanceof:<fully_qualified_name> or /class:<fully_qualified_name> check if item is
+	#instance of class or exactly of that class respectively
+	#Specifying an item's registry name as a clause checks for that item
+	#Prepending an exclamation mark at the start of a clause inverts it
+	[[sorting.category]]
+		name = "sword"
+		spec = ["/instanceof:net.minecraft.world.item.SwordItem"]
+
+	[[sorting.category]]
+		name = "axe"
+		spec = ["/instanceof:net.minecraft.world.item.AxeItem"]
+
+	[[sorting.category]]
+		name = "pickaxe"
+		spec = ["/instanceof:net.minecraft.world.item.PickaxeItem"]
+
+	[[sorting.category]]
+		name = "shovel"
+		spec = ["/instanceof:net.minecraft.world.item.ShovelItem"]
+
+	[[sorting.category]]
+		name = "hoe"
+		spec = ["/instanceof:net.minecraft.world.item.HoeItem"]
+
+	[[sorting.category]]
+		name = "acceptableFood"
+		spec = ["/isFood:; !minecraft:rotten_flesh; !minecraft:spider_eye; !minecraft:poisonous_potato; !minecraft:pufferfish"]
+
+	[[sorting.category]]
+		name = "torch"
+		spec = ["minecraft:torch"]
+
+	[[sorting.category]]
+		name = "cheapBlocks"
+		spec = ["/tag:forge:cobblestone", "/tag:minecraft:dirt"]
+
+	[[sorting.category]]
+		name = "blocks"
+		spec = ["/instanceof:net.minecraft.world.item.BlockItem"]
+
+#Tweaks
+[tweaks]
+	#0 = disable buttons (i.e. keybind only)
+	#1 = buttons for player sorting only
+	#2 = buttons for external sorting only
+	#3 = all buttons enabled (default)
+	#Range: 0 ~ 3
+	enableButtons = 3
+	#Enable auto-refill
+	autoRefill = true
+	#0 = disable sorting
+	#1 = player sorting only
+	#2 = external sorting only
+	#3 = all sorting enabled (default)
+	#Range: 0 ~ 3
+	enableSort = 3
+	#Enable a quick view of how many items that you're currently holding exists in your inventory by displaying it next your hotbar.
+	quickView = true
+
