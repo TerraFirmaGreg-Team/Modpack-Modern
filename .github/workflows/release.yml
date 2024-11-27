@@ -398,7 +398,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Discord message
-        uses: hugoalh/send-discord-webhook-ghaction@v7.0.2
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
         with:
           key: ${{ secrets.DISCORD_RELEASES }}
           username: "TerraFirmaGreg"
