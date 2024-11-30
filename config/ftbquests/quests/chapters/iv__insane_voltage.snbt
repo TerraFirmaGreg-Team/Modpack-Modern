@@ -20,7 +20,7 @@
 				"300348B1238BCB9A"
 				"7A1E3C3A2D699C5B"
 			]
-			description: ["This Superconductor will be required for progression during &dLuV&r."]
+			description: ["{TFG.iv__insane_voltage.description0}"]
 			icon: "gtceu:samarium_iron_arsenic_oxide_double_wire"
 			id: "52D952ADBEB67454"
 			size: 0.75d
@@ -30,27 +30,27 @@
 				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
 				type: "item"
 			}]
-			title: "IV Superconductors"
+			title: "{TFG.iv__insane_voltage.title0}"
 			x: -0.75d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7FA0ACB7F161F378"]
 			description: [
-				"If you already made and centrifuged &aRare Earth&r, that's great! If you haven't, you can obtain it as a &9Byproduct&r from various ores, or from centrifuging &dMonazite&r."
+				"{TFG.iv__insane_voltage.description1}"
 				""
-				"To extract the &aRare Earths&r&r, you should use a &3Centrifuge&r &4as high a tier as possible&r, due to the increased chance of bonus outputs."
-				"{@pagebreak}"
-				"The elements you can obtain are:"
+				"{TFG.iv__insane_voltage.description2}"
+				"{TFG.iv__insane_voltage.description3}"
+				"{TFG.iv__insane_voltage.description4}"
 				""
-				"&9-&r &aLanthanum&r is used in &3Fusion&r&r - you will eventually want a lot of it!"
-				"&9-&r &aYttrium&r is used in &dYttrium-Barium-Cuprate-Oxide&r (YBCO), a wire material for &3UV&r."
-				"&9-&r &aCerium&r is not particularly useful."
-				"&9-&r &aSamarium&r is used for &dIV Superconductors&r and &dMagnetic Rods&r for &dLuV&r+ Motors."
-				"&9-&r &aNeodymium&r normally makes the strongest magnets, but gameplay balance... y'know."
-				"&9-&r &aCadmium&r is not particularly useful."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o Rare Earth Elements (REE) contain a lot more metals than these, but we're struggling as is to give them use."
+				"{TFG.iv__insane_voltage.description5}"
+				"{TFG.iv__insane_voltage.description6}"
+				"{TFG.iv__insane_voltage.description7}"
+				"{TFG.iv__insane_voltage.description8}"
+				"{TFG.iv__insane_voltage.description9}"
+				"{TFG.iv__insane_voltage.description10}"
+				"{TFG.iv__insane_voltage.description11}"
+				"{TFG.iv__insane_voltage.description12}"
 			]
 			id: "300348B1238BCB9A"
 			size: 0.75d
@@ -60,7 +60,7 @@
 				item: "gtceu:rare_earth_dust"
 				type: "item"
 			}]
-			title: "Rare Earth"
+			title: "{TFG.iv__insane_voltage.title1}"
 			x: -1.875d
 			y: 1.5d
 		}
@@ -71,36 +71,36 @@
 				"069FD86133D7D582"
 			]
 			description: [
-				"&aHSS-G Coils&r bring up the Heat Capacity to &d5,400K&r."
+				"{TFG.iv__insane_voltage.description13}"
 				""
-				"The ever-tempting &6Coil bonuses&r&r should be high incentive to make those early, as they become mandatory only during &dLuV&r."
+				"{TFG.iv__insane_voltage.description14}"
 				""
-				"At this point, you may go back to using only one &3Electric Blast Furnace&r for your entire base, powering with the highest available Voltage you have."
+				"{TFG.iv__insane_voltage.description15}"
 				""
-				"&6Hot Metals&r will start taking longer to cool down, as the &3Vacuum Freezer&r doesn't get perfect overclocks. For that, you probably want a dual (or quad) &3Vacuum Freezer&r."
+				"{TFG.iv__insane_voltage.description16}"
 			]
 			icon: "gtceu:hssg_coil_block"
 			id: "7A1E3C3A2D699C5B"
 			size: 0.75d
-			subtitle: "Approaching solar temperatures"
+			subtitle: "{TFG.iv__insane_voltage.subtitle0}"
 			tasks: [{
 				count: 16L
 				id: "4683154AB536993C"
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			title: "HSS-G Coils"
+			title: "{TFG.iv__insane_voltage.title2}"
 			x: 0.375d
 			y: 1.5d
 		}
 		{
 			dependencies: ["069FD86133D7D582"]
 			description: [
-				"&7High-Speed Steels&r (HSS) are more resistant Steel Alloys typically used in Rails."
+				"{TFG.iv__insane_voltage.description17}"
 				""
-				"If you previously made &dUltimet&r for whatever reason, you've already acquired &aMolybdenum&r. Otherwise, it can be found in a Nether vein."
+				"{TFG.iv__insane_voltage.description18}"
 				""
-				"We hope you have a lot of &9Tungstensteel&r, because you're still gonna need more! It's used for the creation of &aHSS&r alloys - in this case, &aHSS-G&r."
+				"{TFG.iv__insane_voltage.description19}"
 			]
 			hide_dependency_lines: true
 			id: "1776FA1F3255731E"
@@ -110,18 +110,18 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			title: "HSS-G"
+			title: "{TFG.iv__insane_voltage.title3}"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7A1E3C3A2D699C5B"]
 			description: [
-				"Technically, HSS-E doesn't contain Manganese, but some other HSS alloys do have Manganese, so... close enough?"
+				"{TFG.iv__insane_voltage.description20}"
 				""
-				"&aHSS-E&r has some niche uses in progression."
+				"{TFG.iv__insane_voltage.description21}"
 				""
-				"This alloy has great durability and damage property for tools. It has the best Power multiplier (until Neutronium!) as a &dRotor&r for &3Large Turbines&r, though it's slightly less efficient than &aHSS-S&r."
+				"{TFG.iv__insane_voltage.description22}"
 			]
 			id: "1783D89CE81C8E2E"
 			shape: "rsquare"
@@ -131,7 +131,7 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			title: "HSS-E"
+			title: "{TFG.iv__insane_voltage.title4}"
 			x: 0.375d
 			y: 2.625d
 		}
@@ -142,34 +142,34 @@
 				"58BBD540D7D4FF01"
 			]
 			description: [
-				"When running the &3Extreme Combustion Engine&r, you're gonna want to boost it! &mWhy bother otherwise?&r"
+				"{TFG.iv__insane_voltage.description23}"
 				""
-				"Get yourself a &34A IV Dynamo Hatch&r as the output, and one &3Vacuum Freezer&r for &aLiquid Oxygen&r."
+				"{TFG.iv__insane_voltage.description24}"
 				""
-				"You should now be wielding the equivalent of 1 &dLuV&r Amp, all whilst burning fuel at &6200% efficiency&r!"
+				"{TFG.iv__insane_voltage.description25}"
 				""
-				"Don't forget to keep it supplied with a small amount of &aLubricant&r."
+				"{TFG.iv__insane_voltage.description26}"
 				""
-				"The &3ECE&r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The ECE comes from GT:NH. However... its implementation wasn't so rosy at first. The stats on the tooltip looked similar to this one - so far, so good."
+				"{TFG.iv__insane_voltage.description27}"
+				"{TFG.iv__insane_voltage.description28}"
+				"{TFG.iv__insane_voltage.description29}"
 				""
-				"The bad part came when crunching the numbers. Players ended up realizing they needed to run around 16 whole &6HV&r Vacuum Freezers to keep up with the Liquid Oxygen demand..."
+				"{TFG.iv__insane_voltage.description30}"
 				""
-				"The one and only fuel it would accept is High Octane Gasoline, which was stated to be burned at 300% efficiency when boosted, but the UI was lying. The efficiency remained at 100%."
+				"{TFG.iv__insane_voltage.description31}"
 				""
-				"The GT:NH team eventually decided to rework the ECE among other power options... phew!"
+				"{TFG.iv__insane_voltage.description32}"
 			]
 			id: "466AC4DD902115EF"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "The ultimate Combustion generator!"
+			subtitle: "{TFG.iv__insane_voltage.subtitle1}"
 			tasks: [{
 				id: "7F0E2A5AD0E2FC25"
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			title: "Extreme Combustion Engine"
+			title: "{TFG.iv__insane_voltage.title5}"
 			x: 1.5d
 			y: 2.625d
 		}
@@ -182,14 +182,14 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"You should have all the tools available to produce &aPolybenzimidazole&r on your own!"
+				"{TFG.iv__insane_voltage.description33}"
 				""
-				"&aPBI&r only becomes mandatory to progress from &dLuV&r to &cZPM&r, but tackling it earlier will unlock the &6Advanced SMDs&r."
+				"{TFG.iv__insane_voltage.description34}"
 			]
 			icon: "gtceu:polybenzimidazole_plate"
 			id: "7CFC112B8F460549"
 			size: 0.75d
-			subtitle: "GTCEu's toughest polymer!"
+			subtitle: "{TFG.iv__insane_voltage.subtitle2}"
 			tasks: [
 				{
 					id: "7C5D37940A0C8409"
@@ -208,7 +208,7 @@
 					type: "item"
 				}
 			]
-			title: "Polybenzimidazole"
+			title: "{TFG.iv__insane_voltage.title6}"
 			x: -0.75d
 			y: 3.75d
 		}
@@ -218,11 +218,11 @@
 				"7CFC112B8F460549"
 			]
 			description: [
-				"Better &aSMDs&r to make far more complex Circuits at a much cheaper price."
+				"{TFG.iv__insane_voltage.description35}"
 				""
-				"These'll require Alloys that you have not made yet, most of which will be common in &dLuV&r and onwards."
+				"{TFG.iv__insane_voltage.description36}"
 				""
-				"&aAdvanced SMDs&r are required for the &dCrystal&r Circuit line."
+				"{TFG.iv__insane_voltage.description37}"
 			]
 			icon: "gtceu:advanced_smd_transistor"
 			id: "195E5BFDE4C5A0DE"
@@ -254,7 +254,7 @@
 					type: "item"
 				}
 			]
-			title: "Advanced SMDs"
+			title: "{TFG.iv__insane_voltage.title7}"
 			x: -0.75d
 			y: 2.625d
 		}
@@ -264,13 +264,13 @@
 				"30A6EDDF25A5E5F8"
 			]
 			description: [
-				"Tungstensteel under your belt? Nanoprocessor Mainframes on demand? Let's make some machinery."
+				"{TFG.iv__insane_voltage.description38}"
 				""
-				"The &3IV Assembler&r is required to unlock &3IV Energy and Dynamo Hatches&r, as well as &3HSS-G Coils&r."
+				"{TFG.iv__insane_voltage.description39}"
 				""
-				"Upgrading this to its &2GCYM&r variant isn't a bad idea."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o Did you know that GTCE's content stopped at &5EV&r&o, and all content up to &3UV&f was provided by Shadows of Greg, a third party mod?"
+				"{TFG.iv__insane_voltage.description40}"
+				"{TFG.iv__insane_voltage.description41}"
+				"{TFG.iv__insane_voltage.description42}"
 			]
 			icon: "gtceu:iv_assembler"
 			id: "5CA86A333670A55C"
@@ -280,7 +280,7 @@
 				item: "gtceu:iv_assembler"
 				type: "item"
 			}]
-			title: "IV Assembler"
+			title: "{TFG.iv__insane_voltage.title8}"
 			x: 0.375d
 			y: 3.75d
 		}
@@ -290,19 +290,19 @@
 				"14D277A164202FF8"
 			]
 			description: [
-				"The &aLarge Tungstensteel Boiler&r is the final Steam Boiler. It's even more efficient than the previous ones, and produces more steam."
+				"{TFG.iv__insane_voltage.description43}"
 				""
-				"This thing is &la colossal noob trap&r, and you should &4ABSOLUTELY&r use something else. &cDon't&r make this, it's not good, not even as a meme! Steam &4doesn't&r scale beyond this point, and this boiler will likely be &3removed&r in the future."
+				"{TFG.iv__insane_voltage.description44}"
 				""
-				"&eNote&r: This quest can be skipped (for completion progress) by clicking the Checkmark. You do not have to actually craft one."
+				"{TFG.iv__insane_voltage.description45}"
 				""
-				"&l&3Lore:&r&o No one makes these in GT5u either... y'know, almost makes you feel sorry for the poor boiler."
+				"{TFG.iv__insane_voltage.description46}"
 			]
 			icon: "gtceu:tungstensteel_large_boiler"
 			id: "328CFD483C26EA44"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Good luck fueling this, lmao"
+			subtitle: "{TFG.iv__insane_voltage.subtitle3}"
 			tasks: [
 				{
 					id: "4C89839747EDFFF5"
@@ -314,20 +314,20 @@
 					type: "checkmark"
 				}
 			]
-			title: "Worst Combustion"
+			title: "{TFG.iv__insane_voltage.title9}"
 			x: -0.75d
 			y: 4.875d
 		}
 		{
 			dependencies: ["528CE69DA4358B2E"]
 			description: [
-				"&aLaminated Glass&r is the shiny new tier of Glass for &1IV&r and onwards. It is made in the &3Forming Press&r using a new Polymer: &dPolyvinyl Butyral&r."
+				"{TFG.iv__insane_voltage.description47}"
 				""
-				"None of the steps should be particularly difficult if you already have the &3Distillation Tower&r for Cracked Fuels, and you have also automated Epoxy."
+				"{TFG.iv__insane_voltage.description48}"
 				""
-				"If you don't already have both set up, you know what to do!"
+				"{TFG.iv__insane_voltage.description49}"
 				""
-				"&9Note:&r &dPolyvinyl Acetate&r (required for the Glass) can also be used for &aGlue&r!"
+				"{TFG.iv__insane_voltage.description50}"
 			]
 			id: "12B4423F055BFBF5"
 			size: 0.75d
@@ -336,7 +336,7 @@
 				item: "gtceu:laminated_glass"
 				type: "item"
 			}]
-			title: "Laminated Glass"
+			title: "{TFG.iv__insane_voltage.title10}"
 			x: 2.625d
 			y: 4.875d
 		}
@@ -346,45 +346,45 @@
 				"216E5A3574AC08BF"
 			]
 			description: [
-				"HSS-S is another &mcompletely fictional&r &7High Speed Steel&r, alloyed with Iridium and Osmium."
+				"{TFG.iv__insane_voltage.description51}"
 				""
-				"&aHSS-S&r will be necessary to craft &dLuV Motors&r."
+				"{TFG.iv__insane_voltage.description52}"
 				""
-				"This alloy has a great mining speed, which translates into extremely good &6efficiency&r when used as a &dRotor&r in &3Large Turbines&r."
+				"{TFG.iv__insane_voltage.description53}"
 			]
 			id: "3A7491323AC5C70C"
 			size: 0.75d
-			subtitle: "We made this one up"
+			subtitle: "{TFG.iv__insane_voltage.subtitle4}"
 			tasks: [{
 				id: "578E3442D589DAE8"
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			title: "HSS-S"
+			title: "{TFG.iv__insane_voltage.title11}"
 			x: 2.625d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7D15EEE81B1A3100"]
 			description: [
-				"Getting &aIndium&r requires a lot of &dSulfuric Acid&r, and two different ores: Galena and Sphalerite."
+				"{TFG.iv__insane_voltage.description54}"
 				""
-				"&dSulfuric Acid&r can be produced in large scale in the &3Large Chemical Reactor&r, or obtained as a waste from the &9Platinum Group Sludge&r process."
+				"{TFG.iv__insane_voltage.description55}"
 				""
-				"In &dLuV&r, the mandatory &9Naquadah chain&r will grant &aIndium&r too, which means this setup will have a limited life."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This is another small chain inherited from GregTech 5. However, this used to yield one tiny Dust instead, which was... interesting."
+				"{TFG.iv__insane_voltage.description56}"
+				"{TFG.iv__insane_voltage.description57}"
+				"{TFG.iv__insane_voltage.description58}"
 			]
 			icon: "gtceu:indium_dust"
 			id: "0F192D1F44B9B599"
 			size: 0.75d
-			subtitle: "Superconductor Supreme"
+			subtitle: "{TFG.iv__insane_voltage.subtitle5}"
 			tasks: [{
 				id: "1BC2B3ED9FD76DA2"
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			title: "Indium"
+			title: "{TFG.iv__insane_voltage.title12}"
 			x: 2.625d
 			y: 2.625d
 		}
@@ -396,11 +396,11 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"The &aHPIC&r unlocks &3IV Energy Hatches&r and &3Dynamos&r... You know the drill!"
+				"{TFG.iv__insane_voltage.description59}"
 				""
-				"Making an &3IV Chemical Reactor&r is &doptional&r. You can craft this with a &3Large Chemical Reactor&r if you wish."
+				"{TFG.iv__insane_voltage.description60}"
 				""
-				"If you wish to automate your LCR with patterns, circle back to the P2P Tunnel Quest for more information."
+				"{TFG.iv__insane_voltage.description61}"
 			]
 			id: "0425179329ED1B72"
 			size: 0.75d
@@ -409,18 +409,18 @@
 				item: "gtceu:hpic_chip"
 				type: "item"
 			}]
-			title: "High Power Integrated Circuit"
+			title: "{TFG.iv__insane_voltage.title13}"
 			x: 2.625d
 			y: 3.75d
 		}
 		{
 			dependencies: ["30A6EDDF25A5E5F8"]
 			description: [
-				"&1IV&r Components - fortunately for you - aren't a massive step up in terms of complexity."
+				"{TFG.iv__insane_voltage.description62}"
 				""
-				"However, the amount of &dTungsten&r required in crafting these is huge."
+				"{TFG.iv__insane_voltage.description63}"
 				""
-				"&aEmitters&r and &aSensors&r are in their own league, as they require &dNether Stars&r and &dIridium&r, both of which have their own dedicated Quests."
+				"{TFG.iv__insane_voltage.description64}"
 			]
 			icon: "gtceu:iv_electric_motor"
 			id: "01AB252C72B565FE"
@@ -463,7 +463,7 @@
 					type: "item"
 				}
 			]
-			title: "There is no limit to \"Fun\""
+			title: "{TFG.iv__insane_voltage.title14}"
 			x: 0.375d
 			y: 6.0d
 		}
@@ -474,11 +474,11 @@
 				"14D277A164202FF8"
 			]
 			description: [
-				"Better Ore Processing for &6chanced Byproducts&r, only at the cost of this &3Macerator&r! A must have."
+				"{TFG.iv__insane_voltage.description65}"
 				""
-				"And now, it's finally time for mass ore processing automation."
+				"{TFG.iv__insane_voltage.description66}"
 				""
-				"The next Quest will kick things off!"
+				"{TFG.iv__insane_voltage.description67}"
 			]
 			id: "05003665368F5A57"
 			size: 0.75d
@@ -487,18 +487,18 @@
 				item: "gtceu:iv_macerator"
 				type: "item"
 			}]
-			title: "Shredding your Ores with further more Byproducts"
+			title: "{TFG.iv__insane_voltage.title15}"
 			x: 1.5d
 			y: 4.875d
 		}
 		{
 			dependencies: ["05003665368F5A57"]
 			description: [
-				"Welcome to the age of automation!"
+				"{TFG.iv__insane_voltage.description68}"
 				""
-				"Ore Processing is now at your fingertips."
+				"{TFG.iv__insane_voltage.description69}"
 				""
-				"&6This quest unlocks a definitive tutorial on Ore Processing in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+				"{TFG.iv__insane_voltage.description70}"
 			]
 			icon: "gtceu:refined_almandine_ore"
 			id: "724FB950CC472BB4"
@@ -508,7 +508,7 @@
 				id: "496C00BA0D8F5445"
 				type: "checkmark"
 			}]
-			title: "Setting up Ore Processing"
+			title: "{TFG.iv__insane_voltage.title16}"
 			x: 1.5d
 			y: 6.0d
 		}
@@ -522,26 +522,26 @@
 				"6B128610C7D2825D"
 			]
 			description: [
-				"Making &dLuV&r Components will require more work. You'll need to look at making the &3Assembly Line&r in order to progress."
+				"{TFG.iv__insane_voltage.description71}"
 				""
-				"This Multiblock has a &evariable size&r&r. Each &3ULV Input Bus&r accepts a different stack of items."
+				"{TFG.iv__insane_voltage.description72}"
 				""
-				"You will want to build this with a size of &d10&r to get started, or of a size of &d14&r to accept all possible recipes in base GTCEu."
+				"{TFG.iv__insane_voltage.description73}"
 				""
-				"Recipes require &aFluids&r, so it is a good idea to keep the &3Input Hatches&r permanently filled with &dSoldering Alloy&r, &dLubricant&r and &dStyrene-Butadienne Rubber&r."
+				"{TFG.iv__insane_voltage.description74}"
 				""
-				"&6This quest unlocks two new tutorials on the Assembly Line and Research in the &lTips and Tricks&r&6 tab - check them out to learn more!&r"
+				"{TFG.iv__insane_voltage.description75}"
 			]
 			id: "77B7B1EDD19831E0"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "AKA the \"Assline\""
+			subtitle: "{TFG.iv__insane_voltage.subtitle6}"
 			tasks: [{
 				id: "1BD34023E42B4E50"
 				item: "gtceu:assembly_line"
 				type: "item"
 			}]
-			title: "Assembly Line"
+			title: "{TFG.iv__insane_voltage.title17}"
 			x: 3.75d
 			y: 4.875d
 		}
@@ -552,18 +552,18 @@
 				"69E384F389B0D07B"
 			]
 			description: [
-				"&o&7\"250,000,000 EU in a Battery? That's 25 minutes of Power when drained constantly.\""
+				"{TFG.iv__insane_voltage.description76}"
 				""
-				"The &aLapotronic Energy Orb&r should be the beginning of the end of your energy storage struggles."
+				"{TFG.iv__insane_voltage.description77}"
 				""
-				"This form of Energy Storage is perfect if your Power Generation is inconsistent, or if you need to buffer large amounts due to the nature of &3Large Turbines&r."
+				"{TFG.iv__insane_voltage.description78}"
 				""
-				"Such a boost in power does not come cheap. The &dEngraved Lapotron Crystal Chips&r are worth &a8 Lapotron Crystals&r."
+				"{TFG.iv__insane_voltage.description79}"
 			]
 			icon: "gtceu:lapotronic_energy_orb"
 			id: "5B07279B08BF8DDE"
 			size: 0.75d
-			subtitle: "It's amazing!"
+			subtitle: "{TFG.iv__insane_voltage.subtitle7}"
 			tasks: [
 				{
 					id: "3B8E3903EA888A6F"
@@ -577,13 +577,13 @@
 					type: "item"
 				}
 			]
-			title: "Insane Batteries"
+			title: "{TFG.iv__insane_voltage.title18}"
 			x: 7.125d
 			y: 4.875d
 		}
 		{
 			dependencies: ["145F71A817C5996E"]
-			description: ["The &aZPM Mainframe&r is used to make the &3LuV Circuit Assembler&r (of course), but also allows you to step into &3Fusion&r."]
+			description: ["{TFG.iv__insane_voltage.description80}"]
 			id: "327C3E02CD751453"
 			size: 0.75d
 			tasks: [{
@@ -591,7 +591,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			title: "First ZPM Circuits!"
+			title: "{TFG.iv__insane_voltage.title19}"
 			x: 8.25d
 			y: 4.875d
 		}
@@ -601,16 +601,16 @@
 				"216E5A3574AC08BF"
 			]
 			description: [
-				"&aNether Stars&r are used for high tier &dSensors&r, &dEmitters&r and &dField Generators&r."
+				"{TFG.iv__insane_voltage.description81}"
 				""
-				"You can also use them for &dBeacons&r if you desire the permanent potion effects. Finally, a vanilla multiblock!"
+				"{TFG.iv__insane_voltage.description82}"
 				""
-				"On the topic of the &aNether Air&r which is required in the recipe: take a look at &9Liquid Nether Air&r distillation at your own leisure. It's quite rewarding."
+				"{TFG.iv__insane_voltage.description83}"
 			]
 			icon: "minecraft:nether_star"
 			id: "6B128610C7D2825D"
 			size: 0.75d
-			subtitle: "Jump Up, Superstar"
+			subtitle: "{TFG.iv__insane_voltage.subtitle8}"
 			tasks: [
 				{
 					id: "71D5FE3076C1F56C"
@@ -621,11 +621,11 @@
 				{
 					id: "08814DD921835365"
 					item: "minecraft:nether_star"
-					title: "Nether Star"
+					title: "{TFG.iv__insane_voltage.title20}"
 					type: "item"
 				}
 			]
-			title: "Nether Stars"
+			title: "{TFG.iv__insane_voltage.title21}"
 			x: 4.875d
 			y: 3.75d
 		}
@@ -635,23 +635,23 @@
 				"5BACED5AE350EAB1"
 			]
 			description: [
-				"The &aPlatinum Group Metals&r are six rare metals with useful catalytic properties. They are &3Ruthenium&r, &dRhodium&r, &7Palladium&r, &9Osmium&r, &bIridium&r, and &ePlatinum&r."
+				"{TFG.iv__insane_voltage.description84}"
 				""
-				"You will need to &4automate&r this entire process, as every single one of these metals will be used extensively in the late game."
-				"{@pagebreak}"
-				"To begin, treat various PGM-bearing &aPurified Crushed Ores&r with &dNitric Acid&r to produce &aPlatinum Group Sludge&r."
+				"{TFG.iv__insane_voltage.description85}"
+				"{TFG.iv__insane_voltage.description86}"
+				"{TFG.iv__insane_voltage.description87}"
 				""
-				"Then, centrifuge it with &dAqua Regia&r to produce the various PGM salts."
+				"{TFG.iv__insane_voltage.description88}"
 				""
-				"&dChlorine&r can be perfectly recycled from the &eRaw Platinum Powder&r."
+				"{TFG.iv__insane_voltage.description89}"
 				""
-				"&dNitric Acid&r is &osort of&r recycled from &7Raw Palladium Powder&r through &dAmmonia&r, though we'd recommend keeping the excess Ammonia for other uses (Rocket Fuel and PBI)."
+				"{TFG.iv__insane_voltage.description90}"
 				""
-				"The other PGM salts have their own special mini-chain associated to them - more on this in the next quests."
-				"{@pagebreak}"
-				"&9Note:&r &ePlatinum&r and &7Palladium&r can also be obtained from The End or through normal Ore Processing."
+				"{TFG.iv__insane_voltage.description91}"
+				"{TFG.iv__insane_voltage.description92}"
+				"{TFG.iv__insane_voltage.description93}"
 				""
-				"&l&3Lore:&r&o Heard of the infamous \"Platline\" from either Gregicality or GregTech: New Horizons? The extremely daunting chain was added in GT:NH through Bartworks. The concept is amazing, but we had to tune it down significantly to make entering late game in GTCEu much smoother."
+				"{TFG.iv__insane_voltage.description94}"
 			]
 			icon: "gtceu:platinum_group_sludge_dust"
 			id: "635D14B8E9F996FD"
@@ -661,7 +661,7 @@
 				item: "gtceu:platinum_group_sludge_dust"
 				type: "item"
 			}]
-			title: "Platinum Group Processing"
+			title: "{TFG.iv__insane_voltage.title22}"
 			x: 3.75d
 			y: 1.5d
 		}
@@ -672,13 +672,13 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"This part of the chain starts by obtaining some &aRarest Metal Mixture&r."
+				"{TFG.iv__insane_voltage.description95}"
 				""
-				"You'll need at least an &1IV&r &3Large Chemical Reactor&r, but the average power draw isn't too bad."
+				"{TFG.iv__insane_voltage.description96}"
 				""
-				"&dChlorine&r is fully looped, and &dHydrogen&r is slightly negative (&ounless you put Acidic Osmium Solution in the Distillation Tower and electrolyze the water back... on second thoughts, don't do that&r)."
+				"{TFG.iv__insane_voltage.description97}"
 				""
-				"&aIridium&r is required to progress through &1IV&r, so get your PGS line automated ASAP!"
+				"{TFG.iv__insane_voltage.description98}"
 			]
 			icon: "gtceu:iridium_ingot"
 			id: "216E5A3574AC08BF"
@@ -700,7 +700,7 @@
 					type: "item"
 				}
 			]
-			title: "Iridium and Osmium"
+			title: "{TFG.iv__insane_voltage.title23}"
 			x: 3.75d
 			y: 2.625d
 		}
@@ -712,11 +712,11 @@
 				"5DBBD9B1F5B01F4E"
 			]
 			description: [
-				"This part of the chain starts with &aInert Metal Mixture&r."
+				"{TFG.iv__insane_voltage.description99}"
 				""
-				"&dSulfuric Acid&r can be perfectly recycled. You will produce excess &dOxygen&r and &dHydrogen&r that can be stored."
+				"{TFG.iv__insane_voltage.description100}"
 				""
-				"&aRuthenium&r and &aRhodium&r are gatekeepers to &dLuV&r. If you automate them now, you won't need to do it later!"
+				"{TFG.iv__insane_voltage.description101}"
 			]
 			icon: "gtceu:ruthenium_ingot"
 			id: "214783B2BB6730C5"
@@ -738,43 +738,43 @@
 					type: "item"
 				}
 			]
-			title: "Ruthenium and Rhodium"
+			title: "{TFG.iv__insane_voltage.title24}"
 			x: 3.75d
 			y: 0.375d
 		}
 		{
 			dependencies: ["214783B2BB6730C5"]
 			description: [
-				"Progressing into &dLuV&r will require more than &aRhodium Plated Palladium&r and &9LuV Circuits&r alone. You'll also need the &3Assembly Line&r."
+				"{TFG.iv__insane_voltage.description102}"
 				""
-				"The &4resource costs&r for components will also start to increase &4significantly&r as you work towards &eFusion&r."
+				"{TFG.iv__insane_voltage.description103}"
 				""
-				"If you haven't got automation for nearly everything, now (in &1IV&r) is a good time to do it."
+				"{TFG.iv__insane_voltage.description104}"
 				""
-				"Make use of &3Processing Arrays&r or all the special &2GCYM Multiblocks&r."
+				"{TFG.iv__insane_voltage.description105}"
 				""
-				"If your power generation is relying on &3Large Turbines&r, you can pick up the &3LuV Rotor Holder&r."
+				"{TFG.iv__insane_voltage.description106}"
 			]
 			id: "4F6E351C5F676618"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "The main &dLuV&r material"
+			subtitle: "{TFG.iv__insane_voltage.subtitle9}"
 			tasks: [{
 				icon: "gtceu:rhodium_plated_palladium_ingot"
 				id: "0A57BEFB8BD9958A"
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			title: "Rhodium-Plated Palladium"
+			title: "{TFG.iv__insane_voltage.title25}"
 			x: 4.875d
 			y: 0.375d
 		}
 		{
 			dependencies: ["216E5A3574AC08BF"]
 			description: [
-				"This Large Miner is nearly identical to the regular one, except it has a wider range and uses more drilling fluid."
+				"{TFG.iv__insane_voltage.description107}"
 				""
-				"It's an optional upgrade - one you might not even need!"
+				"{TFG.iv__insane_voltage.description108}"
 			]
 			id: "07906458E1A15683"
 			shape: "rsquare"
@@ -784,32 +784,32 @@
 				item: "gtceu:iv_large_miner"
 				type: "item"
 			}]
-			title: "Multiblock Miner II"
+			title: "{TFG.iv__insane_voltage.title26}"
 			x: 6.0d
 			y: 0.375d
 		}
 		{
 			dependencies: ["216E5A3574AC08BF"]
 			description: [
-				"The &3Power Substation&r is a multiblock power storage system. Fill it with &a2-18 layers&r of assorted &9Capacitor Blocks&r to increase its storage. Each layer must be full of capacitors, and you can use Empty Capacitors to fill unused spaces."
+				"{TFG.iv__insane_voltage.description109}"
 				""
-				"&9Capacitors&r also hold significantly more energy than the batteries used to make them. In the &3Power Substation&r, &9Capacitors&r can be mixed, so they do not all have to be the same tier."
+				"{TFG.iv__insane_voltage.description110}"
 				""
-				"At &1IV&r, you can make &5EV&r and/or &1IV&r Capacitors."
-				"{@pagebreak}"
-				"Energy can be inputted with regular Energy Hatches, and output with regular Dynamo Hatches."
+				"{TFG.iv__insane_voltage.description111}"
+				"{TFG.iv__insane_voltage.description112}"
+				"{TFG.iv__insane_voltage.description113}"
 				""
-				"You can also use &9Substation Hatches&r to transmit many more amps. These hatches only work in Substations, and do not work in regular multiblocks."
+				"{TFG.iv__insane_voltage.description114}"
 			]
 			id: "04E9D2F484702965"
 			size: 0.75d
-			subtitle: "Centralised power, at last"
+			subtitle: "{TFG.iv__insane_voltage.subtitle10}"
 			tasks: [{
 				id: "7A5A2DC7C8C3406E"
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
-			title: "Power Substation"
+			title: "{TFG.iv__insane_voltage.title27}"
 			x: 4.875d
 			y: 1.5d
 		}
@@ -820,19 +820,19 @@
 				"63A87C9303D54487"
 			]
 			description: [
-				"We know... this isn't actually gated behind &dIndium&r. However, you gotta trust us - this is the better recipe, so we don't want you wasting your time."
+				"{TFG.iv__insane_voltage.description115}"
 				""
-				"&aQubit CPUs&r are used in the production of &1Quantum&r Processors."
+				"{TFG.iv__insane_voltage.description116}"
 			]
 			id: "225F57C95C6D7650"
 			size: 0.75d
-			subtitle: "This actually has no relation to Quantum"
+			subtitle: "{TFG.iv__insane_voltage.subtitle11}"
 			tasks: [{
 				id: "4C2C6546F0928AD7"
 				item: "gtceu:qbit_cpu_chip"
 				type: "item"
 			}]
-			title: "Qubit CPUs"
+			title: "{TFG.iv__insane_voltage.title28}"
 			x: 4.875d
 			y: 2.625d
 		}
@@ -844,11 +844,11 @@
 				"6B128610C7D2825D"
 			]
 			description: [
-				"Woah! It's been tough to get here. You'll appreciate not having to make a new polymer for Circuits Boards."
+				"{TFG.iv__insane_voltage.description117}"
 				""
-				"The &3IV Circuit Assembler&r unlocks the &1Quantum&r Circuit line."
+				"{TFG.iv__insane_voltage.description118}"
 				""
-				"This also unlocks the &6best recipe&r for &dMV Circuits&r."
+				"{TFG.iv__insane_voltage.description119}"
 			]
 			id: "2BB16260A76718B8"
 			size: 0.75d
@@ -857,20 +857,20 @@
 				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			title: "IV Circuit Assembling"
+			title: "{TFG.iv__insane_voltage.title29}"
 			x: 6.0d
 			y: 2.625d
 		}
 		{
 			dependencies: ["0338C9219DC2F819"]
 			description: [
-				"The next Board for the &1Quantum&r Circuit line."
+				"{TFG.iv__insane_voltage.description120}"
 				""
-				"&9Tips:&r For efficient and fast board production, you should use two &3Large Chemical Reactors&r, both supplied with &6HV&r power or higher (make them both share the same &3Energy Hatch&r):"
+				"{TFG.iv__insane_voltage.description121}"
 				""
-				"&9-&r One &3LCR&r should be dedicated to &aIron III Chloride&r. The &dHydrogen&r is loopable, so reproduce &dHydrochloric Acid&r locally - that way, you'd only need to passively input &aIron Dusts&r and &aChlorine&r."
+				"{TFG.iv__insane_voltage.description122}"
 				""
-				"&9-&r One &3LCR&r should be making both the &acoated Boards&r and the &aempty Circuit Boards&r to make future &ecrafting requests&r with AE2 extremely easy. Keeping an Input Hatch full of Sulfuric Acid shouldn't be a problem, either."
+				"{TFG.iv__insane_voltage.description123}"
 			]
 			id: "0988B5FB795FF7DA"
 			size: 0.75d
@@ -879,7 +879,7 @@
 				item: "gtceu:fiber_reinforced_printed_circuit_board"
 				type: "item"
 			}]
-			title: "Extreme Circuit Boards"
+			title: "{TFG.iv__insane_voltage.title30}"
 			x: 7.125d
 			y: 2.625d
 		}
@@ -890,11 +890,11 @@
 				"2BB16260A76718B8"
 			]
 			description: [
-				"The first Circuit of the &1Quantum&r line."
+				"{TFG.iv__insane_voltage.description124}"
 				""
-				"If you wish, you could go even further and aim for &dAdvanced SMDs&r to make these Circuits cheaper. "
+				"{TFG.iv__insane_voltage.description125}"
 				""
-				"Doing so will require &9PBI&r... and Alloys that require &aHSS-G Coils&r in your EBF."
+				"{TFG.iv__insane_voltage.description126}"
 			]
 			id: "49C1D61741AA288E"
 			size: 0.75d
@@ -903,20 +903,20 @@
 				item: "gtceu:quantum_processor"
 				type: "item"
 			}]
-			title: "Best EV Circuits!"
+			title: "{TFG.iv__insane_voltage.title31}"
 			x: 8.25d
 			y: 2.625d
 		}
 		{
 			dependencies: ["4343746E706264E6"]
 			description: [
-				"Rocket Fuel mostly exists for compatibility with other mods. You'll love it if you're making your own pack."
+				"{TFG.iv__insane_voltage.description127}"
 				""
-				"As an actual fuel for GTCEu generators? Terrible!"
+				"{TFG.iv__insane_voltage.description128}"
 				""
-				"In this modpack, &aRocket Fuel&r is required to obtain &dNether Stars&r."
+				"{TFG.iv__insane_voltage.description129}"
 				""
-				"Automating it may be a big hit to your resources, but you can safely batch craft using an overclocked &3Large Chemical Reactor&r."
+				"{TFG.iv__insane_voltage.description130}"
 			]
 			id: "1B520580219AFAE9"
 			shape: "rsquare"
@@ -926,16 +926,16 @@
 				item: "gtceu:rocket_fuel_bucket"
 				type: "item"
 			}]
-			title: "Rocket Fuel"
+			title: "{TFG.iv__insane_voltage.title32}"
 			x: 6.0d
 			y: 3.75d
 		}
 		{
 			dependencies: ["117FBB18DEE6F08B"]
 			description: [
-				"The next board material."
+				"{TFG.iv__insane_voltage.description131}"
 				""
-				"It's as easy as using some &aEpoxy&r in the &3Chemical Bath&r."
+				"{TFG.iv__insane_voltage.description132}"
 			]
 			id: "0338C9219DC2F819"
 			size: 0.75d
@@ -944,13 +944,13 @@
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			title: "Fiber-Reinforced Epoxy"
+			title: "{TFG.iv__insane_voltage.title33}"
 			x: 7.125d
 			y: 3.75d
 		}
 		{
 			dependencies: ["698B5F65F2DE4439"]
-			description: ["Good news for any mainframe haters out there - &dLuV&r Circuits that aren't mainframes!"]
+			description: ["{TFG.iv__insane_voltage.description133}"]
 			id: "145F71A817C5996E"
 			size: 0.75d
 			tasks: [{
@@ -958,16 +958,16 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			title: "More LuV Circuits"
+			title: "{TFG.iv__insane_voltage.title34}"
 			x: 8.25d
 			y: 4.125d
 		}
 		{
 			dependencies: ["49C1D61741AA288E"]
 			description: [
-				"Better &1IV&r Circuits. "
+				"{TFG.iv__insane_voltage.description134}"
 				""
-				"Your march through &1IV&r continues. Stay strong, soldier."
+				"{TFG.iv__insane_voltage.description135}"
 			]
 			id: "698B5F65F2DE4439"
 			size: 0.75d
@@ -976,7 +976,7 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			title: "Even more IV Circuits"
+			title: "{TFG.iv__insane_voltage.title35}"
 			x: 8.25d
 			y: 3.375d
 		}
@@ -986,11 +986,11 @@
 				"0425179329ED1B72"
 			]
 			description: [
-				"This Quest will be completed with &eeither&r an &3IV Energy Hatch&r&r... or an &3IV Dynamo Hatch&r for your Multiblock Generators."
+				"{TFG.iv__insane_voltage.description136}"
 				""
-				"Don't forget that &d4 Amp&r variants exist! However they require &aNiobium-Titanium Cables&r, which need &9Polyphenylene Sulfide&r."
+				"{TFG.iv__insane_voltage.description137}"
 				""
-				"Look down in the &dLuV&r Chapter for that (don't worry... it's easy to obtain)."
+				"{TFG.iv__insane_voltage.description138}"
 			]
 			icon: "gtceu:iv_energy_input_hatch"
 			id: "48DEABA155605D23"
@@ -1003,24 +1003,24 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"IV Dyanamo/Energy Hatch\"}"
+							Name: "{'text':'IV Dyanamo/Energy Hatch'}"
 						}
 						"ftbfiltersystem:filter": "or(item(gtceu:iv_energy_output_hatch)item(gtceu:iv_energy_output_hatch_4a)item(gtceu:iv_energy_output_hatch_16a)item(gtceu:iv_substation_output_hatch_64a)item(gtceu:iv_energy_input_hatch)item(gtceu:iv_energy_input_hatch_4a)item(gtceu:iv_energy_input_hatch_16a)item(gtceu:iv_substation_input_hatch_64a))"
 					}
 				}
-				title: "IV Dynamo/Energy Hatch"
+				title: "{TFG.iv__insane_voltage.title36}"
 				type: "item"
 			}]
-			title: "Upgrading your EBF for the millionth time"
+			title: "{TFG.iv__insane_voltage.title37}"
 			x: 3.75d
 			y: 3.75d
 		}
 		{
 			dependencies: ["12B4423F055BFBF5"]
 			description: [
-				"The &3IV Cutting Machine&r is required to unlock &3IV Energy and Dynamo Hatches&r."
+				"{TFG.iv__insane_voltage.description139}"
 				""
-				"Upgrading this to its &2GCYM&r variant isn't a bad idea."
+				"{TFG.iv__insane_voltage.description140}"
 			]
 			icon: "gtceu:iv_cutter"
 			id: "7CC40BDAA803D044"
@@ -1030,11 +1030,11 @@
 				item: "gtceu:iv_cutter"
 				type: "item"
 			}]
-			title: "IV Cutting Machine"
+			title: "{TFG.iv__insane_voltage.title38}"
 			x: 1.5d
 			y: 3.75d
 		}
 	]
-	subtitle: ["Automate everything and learn how to assemble"]
-	title: "&1IV&r - Insane Voltage"
+	subtitle: ["{TFG.iv__insane_voltage.subtitle12}"]
+	title: "{TFG.iv__insane_voltage.title39}"
 }

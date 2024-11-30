@@ -40,29 +40,29 @@
 		{
 			dependencies: ["6F15D7574B8F6DB5"]
 			description: [
-				"Crafting the &aUltimate Battery&r marks the end of GTCEu and the GregTech Community Modpack. &6Congratulations!&r"
+				"{TFG.uv__ultimate_voltage.description0}"
 				""
-				"Now that you've finished the mod, there's a few things you should do:"
+				"{TFG.uv__ultimate_voltage.description1}"
 				""
-				"- &9Join the GTCEu Discord&r and tell us about how your playthrough went! Feel free to show off your battery :) "
+				"{TFG.uv__ultimate_voltage.description2}"
 				""
-				"- &eGo outside&r (and start playing GregTech in real life, right?). Integrate back into regular society."
+				"{TFG.uv__ultimate_voltage.description3}"
 				""
-				"- &cBlow up your world with TNT and GT Dynamite&r. &nPlease, please, PLEASE make a backup first!!!&r"
+				"{TFG.uv__ultimate_voltage.description4}"
 				""
-				"&6&lThank you for playing the pack! :D&r"
-				"- The GregTech Community Pack Dev Team"
+				"{TFG.uv__ultimate_voltage.description5}"
+				"{TFG.uv__ultimate_voltage.description6}"
 			]
 			icon: "gtceu:nan_certificate"
 			id: "6E8F257261F93501"
 			shape: "heart"
 			size: 4.0d
-			subtitle: "Is this... the end?"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle0}"
 			tasks: [{
 				id: "3BE7164F661251AD"
 				type: "checkmark"
 			}]
-			title: "The Finale"
+			title: "{TFG.uv__ultimate_voltage.title0}"
 			x: 10.125d
 			y: 1.5d
 		}
@@ -74,9 +74,9 @@
 				"0199DBC46D7BC2B9"
 			]
 			description: [
-				"This Maintenance Hatch is an upgrade to the Automatic Maintenance Hatch."
+				"{TFG.uv__ultimate_voltage.description7}"
 				""
-				"It allows your Multiblock to run regular &aCleanroom recipes&r when not contained inside one - but not Sterilized recipes."
+				"{TFG.uv__ultimate_voltage.description8}"
 			]
 			id: "1976F9B2220BBEDE"
 			shape: "rsquare"
@@ -86,7 +86,7 @@
 				item: "gtceu:cleaning_maintenance_hatch"
 				type: "item"
 			}]
-			title: "Cleaning Maintenance Hatch"
+			title: "{TFG.uv__ultimate_voltage.title1}"
 			x: 5.625d
 			y: 2.625d
 		}
@@ -97,14 +97,14 @@
 				"762C48F0C2EA6B81"
 			]
 			description: [
-				"The &aUV Lapotronic Orb&r is even better than the &cZPM&r one! It of course comes at a price..."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o Imagine making 512 &1IV&f Orbs, or 64 &dLuV&f Orbs... or 8 &cZPM&f Orbs.... for just one of these! See the Lore for the LuV orb for details."
+				"{TFG.uv__ultimate_voltage.description9}"
+				"{TFG.uv__ultimate_voltage.description10}"
+				"{TFG.uv__ultimate_voltage.description11}"
 			]
 			icon: "gtceu:energy_cluster"
 			id: "3D9D27F29D9D12F6"
 			size: 0.75d
-			subtitle: "It holds way too much power!"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle1}"
 			tasks: [
 				{
 					id: "3A3B82E7FEE173C3"
@@ -117,7 +117,7 @@
 					type: "item"
 				}
 			]
-			title: "Ultimate Battery?"
+			title: "{TFG.uv__ultimate_voltage.title2}"
 			x: 7.875d
 			y: 2.625d
 		}
@@ -127,26 +127,26 @@
 				"0009F48B6E385A47"
 			]
 			description: [
-				"The amount of EU this battery can storage is the max value of a Long Integer in Java."
+				"{TFG.uv__ultimate_voltage.description12}"
 				""
-				"Don't try to win Minecraft - you can't."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o You're probably tired of this by now, but things are different with the battery lore this time. We promise."
+				"{TFG.uv__ultimate_voltage.description13}"
+				"{TFG.uv__ultimate_voltage.description14}"
+				"{TFG.uv__ultimate_voltage.description15}"
 				""
-				"&oGTCEu's ultimate battery uses 16 &3UV&f orbs. GTNH's only uses 8. However, GTNH also has a &lReally Ultimate Battery&r&o made of 8 Ultimate Batteries! It's not useful at all, but still exists..."
+				"{TFG.uv__ultimate_voltage.description16}"
 				""
-				"&oThey also added an &lExtremely Ultimate Battery&r&o made of 8 Really Ultimate Batteries, which is ludicrously expensive."
+				"{TFG.uv__ultimate_voltage.description17}"
 			]
 			id: "6F15D7574B8F6DB5"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Consider touching some grass"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle2}"
 			tasks: [{
 				id: "5EDF6F9FD702E463"
 				item: "gtceu:max_battery"
 				type: "item"
 			}]
-			title: "Ultimate Battery!"
+			title: "{TFG.uv__ultimate_voltage.title3}"
 			x: 7.875d
 			y: 1.5d
 		}
@@ -163,12 +163,12 @@
 			]
 			id: "0BADFBA6F96E457E"
 			size: 0.75d
-			subtitle: "With our powers combined..."
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle3}"
 			tasks: [{
 				id: "3DAB523583CEACA8"
 				type: "checkmark"
 			}]
-			title: "Network Switch"
+			title: "{TFG.uv__ultimate_voltage.title4}"
 			x: 2.25d
 			y: 0.375d
 		}
@@ -178,20 +178,20 @@
 				"359121584E056022"
 			]
 			description: [
-				"This is a huge accomplishment, nice job!"
+				"{TFG.uv__ultimate_voltage.description18}"
 				""
-				"The only ingredient that should be new to you are the &4Tritanium Frames&r."
+				"{TFG.uv__ultimate_voltage.description19}"
 			]
 			id: "3B49BD004F38E1A2"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "The &6final&r circuit"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle4}"
 			tasks: [{
 				id: "433027F7B7C732A1"
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			title: "Wetware Mainframe - The UHV Circuit"
+			title: "{TFG.uv__ultimate_voltage.title5}"
 			x: 3.375d
 			y: -0.75d
 		}
@@ -207,33 +207,33 @@
 			]
 			id: "45E300FD7CD05A37"
 			size: 0.75d
-			subtitle: "Data storage sure is expensive..."
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle5}"
 			tasks: [{
 				id: "4F9B678E31002121"
 				type: "checkmark"
 			}]
-			title: "Data Module"
+			title: "{TFG.uv__ultimate_voltage.title6}"
 			x: 3.375d
 			y: 0.375d
 		}
 		{
 			dependencies: ["023FF9633765A0EB"]
 			description: [
-				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun. It is the final primary material in GTCEu."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GCYL, Neutronium is unlocked at UMV-tier (called UXV in CEu). There is also Cosmic Neutronium, which is equivalent to Avaritia's Neutronium in GT5u, which was unlocked even later in GCYL!"
+				"{TFG.uv__ultimate_voltage.description20}"
+				"{TFG.uv__ultimate_voltage.description21}"
+				"{TFG.uv__ultimate_voltage.description22}"
 				""
-				"&l&More Lore:&r&o Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+				"{TFG.uv__ultimate_voltage.description23}"
 			]
 			id: "6DBF61D4F94BC851"
 			size: 0.75d
-			subtitle: "Pure Neutrons"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle6}"
 			tasks: [{
 				id: "0454B12D9A5C9795"
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			title: "Neutronium"
+			title: "{TFG.uv__ultimate_voltage.title7}"
 			x: 5.625d
 			y: -0.75d
 		}
@@ -244,44 +244,44 @@
 				"35F13B6D60361904"
 			]
 			description: [
-				"&aTritanium Coils&r bring the Heat Capacity to &d10,800K&r."
+				"{TFG.uv__ultimate_voltage.description24}"
 				""
-				"These coils aren't needed for much, but they'll provide another perfect overclock for most recipes!"
+				"{TFG.uv__ultimate_voltage.description25}"
 			]
 			id: "6AF3A40BC9CE7122"
 			size: 0.75d
-			subtitle: "Why would you even need something this hot?!"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle7}"
 			tasks: [{
 				count: 16L
 				id: "43CE7370C6D03DFD"
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			title: "Tritanium Coils"
+			title: "{TFG.uv__ultimate_voltage.title8}"
 			x: 4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["6DBF61D4F94BC851"]
 			description: [
-				"A goal if you really want to make a point."
+				"{TFG.uv__ultimate_voltage.description26}"
 				""
-				"If you make this in a &3UV&r machine, it'll take you 10 days."
+				"{TFG.uv__ultimate_voltage.description27}"
 				""
-				"If you overclock a Gregicality Multiblock to UEV (by using a 4A &4UHV&r hatch), you'll still be waiting for 2.5 days!"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The NAN Certificate comes from Crops++, a GT5u addon that adds a wide variety of IC2 crops."
+				"{TFG.uv__ultimate_voltage.description28}"
+				"{TFG.uv__ultimate_voltage.description29}"
+				"{TFG.uv__ultimate_voltage.description30}"
 			]
 			id: "3ED40CE1E4476C99"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "GGEZ"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle8}"
 			tasks: [{
 				id: "29384189E33C8CB1"
 				item: "gtceu:nan_certificate"
 				type: "item"
 			}]
-			title: "Certificate of not being a Noob anymore"
+			title: "{TFG.uv__ultimate_voltage.title9}"
 			x: 5.625d
 			y: 0.375d
 		}
@@ -293,22 +293,22 @@
 				"0199DBC46D7BC2B9"
 			]
 			description: [
-				"&3UV&r Components are a tad harder than &cZPM&r. "
+				"{TFG.uv__ultimate_voltage.description31}"
 				""
-				"They use lots of &9Tritanium&r and &9Naquadria&r, so make sure your have enough Fusion Reactors, and a fast enough Naquadah Plant."
+				"{TFG.uv__ultimate_voltage.description32}"
 				""
-				"They also need a lot more &9Computation&r, which means &3Advanced HPCA Components&r are now required!"
+				"{TFG.uv__ultimate_voltage.description33}"
 				""
-				"Computation Needs for early &3UV&r:"
+				"{TFG.uv__ultimate_voltage.description34}"
 				""
-				"- &a32 CWU/t&r: Basic &3UV&r Components and the Network Switch"
-				"- &a48 CWU/t&r: &3UV&r Sensor, Emitter, and Field Generator"
+				"{TFG.uv__ultimate_voltage.description35}"
+				"{TFG.uv__ultimate_voltage.description36}"
 			]
 			icon: "gtceu:uv_electric_motor"
 			id: "26F5A04750F6B6DD"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Prepare your Fusion Reactors!"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle9}"
 			tasks: [
 				{
 					id: "3AD82F68865047F3"
@@ -336,7 +336,7 @@
 					type: "item"
 				}
 			]
-			title: "Total Euphoria"
+			title: "{TFG.uv__ultimate_voltage.title10}"
 			x: 5.625d
 			y: 1.5d
 		}
@@ -346,11 +346,11 @@
 				"0BADFBA6F96E457E"
 			]
 			description: [
-				"This Quest will be completed with &eeither&r a &3ZPM Energy Hatch&r&r... or a &3ZPM Dynamo Hatch&r for your Multiblock Generators."
+				"{TFG.uv__ultimate_voltage.description37}"
 				""
-				"Don't forget that &d16 Amp&r variants exist!"
+				"{TFG.uv__ultimate_voltage.description38}"
 				""
-				"Additionally, remember that these hatches require a &9Data Orb&r for research."
+				"{TFG.uv__ultimate_voltage.description39}"
 			]
 			icon: "gtceu:uv_energy_input_hatch"
 			id: "2F2F82D9DE3C798C"
@@ -368,16 +368,16 @@
 					type: "item"
 				}
 			]
-			title: "Upgrading your Assembly Line III"
+			title: "{TFG.uv__ultimate_voltage.title11}"
 			x: 4.5d
 			y: 0.375d
 		}
 		{
 			dependencies: ["6AF3A40BC9CE7122"]
 			description: [
-				"&aUV Superconductors&r show up a lot in recipes when making a &9Fusion Reactor Mk3&r. Better get ready to make a boatload..."
+				"{TFG.uv__ultimate_voltage.description40}"
 				""
-				"You can also use them to cheapen &9Superconducting Coils&r even further."
+				"{TFG.uv__ultimate_voltage.description41}"
 			]
 			id: "3CDA855A045A9F4D"
 			shape: "rsquare"
@@ -387,18 +387,18 @@
 				item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
 				type: "item"
 			}]
-			title: "UV Superconductors"
+			title: "{TFG.uv__ultimate_voltage.title12}"
 			x: 2.25d
 			y: 1.5d
 		}
 		{
 			dependencies: ["616DB394EB7D81D6"]
 			description: [
-				"This Quest will be completed with &eeither&r a &3UHV Energy Hatch&r&r... or a &3UHV Dynamo Hatch&r for your Multiblock Generators."
+				"{TFG.uv__ultimate_voltage.description42}"
 				""
-				"These are the final energy hatches in GTCEu. It's been a pleasure upgrading our multiblocks together o7"
+				"{TFG.uv__ultimate_voltage.description43}"
 				""
-				"Don't forget about the &d16 amp&r versions!"
+				"{TFG.uv__ultimate_voltage.description44}"
 			]
 			icon: "gtceu:uhv_energy_input_hatch"
 			id: "5570F02C03267B36"
@@ -416,43 +416,43 @@
 					type: "item"
 				}
 			]
-			title: "Upgrading your Assembly Line for the Last Time"
+			title: "{TFG.uv__ultimate_voltage.title13}"
 			x: 6.75d
 			y: -1.875d
 		}
 		{
 			dependencies: ["6DBF61D4F94BC851"]
 			description: [
-				"This is the &afinal silicon boule&r, which will allow you to produce a ton of wafers."
+				"{TFG.uv__ultimate_voltage.description45}"
 				""
-				"It also unlocks the recipe for the &aHighly Advanced SoC&r, which is used to make cheaper &4wetware circuits&r."
+				"{TFG.uv__ultimate_voltage.description46}"
 			]
 			icon: "gtceu:neutronium_boule"
 			id: "3F058322E1A8D5EC"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Neutron -> Electron Holes"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle10}"
 			tasks: [{
 				id: "74712C8E9A6561A0"
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			title: "Neutronium-doped Silicon Boule"
+			title: "{TFG.uv__ultimate_voltage.title14}"
 			x: 6.75d
 			y: -0.75d
 		}
 		{
 			dependencies: ["6DBF61D4F94BC851"]
-			description: ["The &aGravi Star&r is the final upgraded Nether Star in GTCEu. It's needed for &3UV&r Sensors, Emitters, and Field Generators."]
+			description: ["{TFG.uv__ultimate_voltage.description47}"]
 			id: "0009F48B6E385A47"
 			size: 0.75d
-			subtitle: "Unfortunately, doesn't make you float"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle11}"
 			tasks: [{
 				id: "06668056CFF73DBD"
 				item: "gtceu:gravi_star"
 				type: "item"
 			}]
-			title: "Gravi Star"
+			title: "{TFG.uv__ultimate_voltage.title15}"
 			x: 7.875d
 			y: -0.75d
 		}
@@ -463,68 +463,68 @@
 				"762C48F0C2EA6B81"
 			]
 			description: [
-				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				"{TFG.uv__ultimate_voltage.description48}"
 				""
-				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				"{TFG.uv__ultimate_voltage.description49}"
 				""
-				"The &aFusion Reactor Mk3&r is even more expensive than the Mk2! The key difference is that it has a higher &6Energy To Start&r than the Mk2, allowing you to run new recipes."
+				"{TFG.uv__ultimate_voltage.description50}"
 				""
-				"It can also overclock lower voltage recipes, such as those in the Mk1 or Mk2 reactor. See the Mk1's quest for how these mechanics work."
+				"{TFG.uv__ultimate_voltage.description51}"
 			]
 			id: "023FF9633765A0EB"
 			size: 0.75d
-			subtitle: "The most expensive form of Fusion"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle12}"
 			tasks: [{
 				id: "571672CEA7362C63"
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			title: "Fusion Reactor III"
+			title: "{TFG.uv__ultimate_voltage.title16}"
 			x: 4.5d
 			y: -0.75d
 		}
 		{
 			dependencies: ["6DBF61D4F94BC851"]
 			description: [
-				"You probably don't even need these, but &aUHV Superconductors&r exist, and are used for a few things, which you also probably don't need..."
+				"{TFG.uv__ultimate_voltage.description52}"
 				""
-				"Craft these if you feel like flexing."
+				"{TFG.uv__ultimate_voltage.description53}"
 			]
 			id: "616DB394EB7D81D6"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Is Neutronate even a real thing?"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle13}"
 			tasks: [{
 				id: "665AC3D87C204E18"
 				item: "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
 				type: "item"
 			}]
-			title: "UHV Superconductors"
+			title: "{TFG.uv__ultimate_voltage.title17}"
 			x: 5.625d
 			y: -1.875d
 		}
 		{
 			dependencies: ["3F058322E1A8D5EC"]
 			description: [
-				"&aHighly Advanced SoC&rs will make crafting &4wetware circuits&r much easier."
+				"{TFG.uv__ultimate_voltage.description54}"
 				""
-				"The drawback is that the recipe requires UV power, but that's no problem to you, right?"
+				"{TFG.uv__ultimate_voltage.description55}"
 			]
 			icon: "gtceu:highly_advanced_soc"
 			id: "0D3B74E82F1CFE8A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Can we get much higher?"
+			subtitle: "{TFG.uv__ultimate_voltage.subtitle14}"
 			tasks: [{
 				id: "493CC040B9974B42"
 				item: "gtceu:highly_advanced_soc"
 				type: "item"
 			}]
-			title: "Highly Advanced SoCs"
+			title: "{TFG.uv__ultimate_voltage.title18}"
 			x: 6.75d
 			y: 0.375d
 		}
 	]
-	subtitle: ["Bring your long journey to a well-deserved end"]
-	title: "&3UV&r - Ultimate Voltage"
+	subtitle: ["{TFG.uv__ultimate_voltage.subtitle15}"]
+	title: "{TFG.uv__ultimate_voltage.title19}"
 }

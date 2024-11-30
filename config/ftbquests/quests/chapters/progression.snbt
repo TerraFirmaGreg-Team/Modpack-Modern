@@ -335,16 +335,16 @@
 				"4B979482EF026BFF"
 			]
 			description: [
-				"Early game Circuits are hand craftable."
+				"{TFG.progression.description0}"
 				""
-				"Pick up the &3Circuit Assembler&r to make them a lot more efficient."
+				"{TFG.progression.description1}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:bronze_machine_casing"
 			id: "4252B1AF36FFB4F6"
 			size: 0.85d
-			subtitle: "Hand crafted and artisanal"
-			title: "Craftable in &6Steam Age&r and &7LV&r"
+			subtitle: "{TFG.progression.subtitle0}"
+			title: "{TFG.progression.title0}"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -355,18 +355,18 @@
 				"26394C1290D70AB6"
 			]
 			description: [
-				"The &9Integrated&r Circuit line may not be a strict upgrade in terms of cost, but will tide you over as a stepping stone towards the next tier."
+				"{TFG.progression.description2}"
 				""
-				"They will require a MV &3Laser Engraver&r and a MV &3Cutting Machine&r."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In Omnifactory, and in previous Gregicality, this circuit line was called &9Refined&r and was standardized like further tiers."
+				"{TFG.progression.description3}"
+				"{TFG.progression.description4}"
+				"{TFG.progression.description5}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:mv_machine_hull"
 			id: "5E4FBB2287D9E635"
 			size: 0.85d
-			subtitle: "Integrated Dynamics"
-			title: "Craftable in &bMV&r"
+			subtitle: "{TFG.progression.subtitle1}"
+			title: "{TFG.progression.title1}"
 			x: 1.0d
 			y: -2.0d
 		}
@@ -380,16 +380,16 @@
 				"5E76D4C24026157D"
 			]
 			description: [
-				"&eMicro&r Circuits are where the &3Cleanroom&r becomes a requirement to progress."
+				"{TFG.progression.description6}"
 				""
-				"Don't get caught out by the &aMainframe&r - it requires a &3HV Circuit Assembler&r."
+				"{TFG.progression.description7}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:hv_machine_hull"
 			id: "1D717E742E50A6BD"
 			size: 0.85d
-			subtitle: "Micro Miners"
-			title: "Craftable in &bMV&r and &6HV&r"
+			subtitle: "{TFG.progression.subtitle2}"
+			title: "{TFG.progression.title2}"
 			x: 2.0d
 			y: -2.0d
 		}
@@ -401,21 +401,21 @@
 				"58BBD540D7D4FF01"
 			]
 			description: [
-				"This is the &9Nano&r Circuit line."
+				"{TFG.progression.description8}"
 				""
-				"Starting from here, circuit progression will follow a pattern:"
+				"{TFG.progression.description9}"
 				""
-				"&9-&r Processor"
-				"&9-&r Assembly"
-				"&9-&r Cupercomputer"
-				"&9-&r Mainframe"
+				"{TFG.progression.description10}"
+				"{TFG.progression.description11}"
+				"{TFG.progression.description12}"
+				"{TFG.progression.description13}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:ev_machine_hull"
 			id: "29C2A82490261F1C"
 			size: 0.85d
-			subtitle: "Nano Age"
-			title: "Craftable in &5EV&r"
+			subtitle: "{TFG.progression.subtitle3}"
+			title: "{TFG.progression.title3}"
 			x: 3.0d
 			y: -2.0d
 		}
@@ -427,16 +427,16 @@
 				"145F71A817C5996E"
 			]
 			description: [
-				"Welcome to the &9Quantum&r Circuit line."
+				"{TFG.progression.description14}"
 				""
-				"You may want to invest in &aPBI&r at this point, as &dAdvanced SMDs&r will skyrocket your circuit production."
+				"{TFG.progression.description15}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_hull"
 			id: "66A23AC2EE9BC4AE"
 			size: 0.85d
-			subtitle: "GregTech gets Quantum"
-			title: "Craftable in &1IV&r"
+			subtitle: "{TFG.progression.subtitle4}"
+			title: "{TFG.progression.title4}"
 			x: 4.0d
 			y: -2.0d
 		}
@@ -448,16 +448,16 @@
 				"7AE681E2AB31EA0D"
 			]
 			description: [
-				"This is the &9Crystal&r Circuit line."
+				"{TFG.progression.description16}"
 				""
-				"It's locked behind &3Fusion&r."
+				"{TFG.progression.description17}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_hull"
 			id: "6906121936A688C0"
 			size: 0.85d
-			subtitle: "Crystallisation"
-			title: "Craftable in &dLuV&r"
+			subtitle: "{TFG.progression.subtitle5}"
+			title: "{TFG.progression.title5}"
 			x: 5.0d
 			y: -2.0d
 		}
@@ -469,16 +469,16 @@
 				"359121584E056022"
 			]
 			description: [
-				"This is the &9Wetware&r Circuit line."
+				"{TFG.progression.description18}"
 				""
-				"It will be the biggest automation challenge to face in this modpack. Best of luck."
+				"{TFG.progression.description19}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_hull"
 			id: "629E023752317A31"
 			size: 0.85d
-			subtitle: "Soft and Wetware"
-			title: "Craftable in &cZPM&r"
+			subtitle: "{TFG.progression.subtitle6}"
+			title: "{TFG.progression.title6}"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -487,12 +487,12 @@
 				"3CF550B81716B8B9"
 				"15EC934CE8F4DC86"
 			]
-			description: ["On this line you can see the Steam, or &8&8ULV&r, equivalents."]
+			description: ["{TFG.progression.description20}"]
 			hide_dependency_lines: true
 			icon: "gtceu:ulv_machine_casing"
 			id: "1C1976238A2FBEE0"
 			size: 0.85d
-			title: "&8ULV&r Circuits"
+			title: "{TFG.progression.title7}"
 			x: -1.0d
 			y: -1.0d
 		}
@@ -503,19 +503,19 @@
 				"5E76D4C24026157D"
 			]
 			description: [
-				"Circuits along this line are &7LV&r, and are interchangeable in recipes."
+				"{TFG.progression.description21}"
 				""
-				"&cElectronic Circuits&r are the \"worst\" in terms of cost and effort required to produce, but you have to start somewhere."
+				"{TFG.progression.description22}"
 				""
-				"&eBasic Integrated Processors&r act as a middle layer between &cElectronic Circuits&r and &2Microchip Processors.&r"
+				"{TFG.progression.description23}"
 				""
-				"Finally, &2Microchip Processors&r will be the best option for the rest of the playthrough."
+				"{TFG.progression.description24}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_machine_casing"
 			id: "7707E5B061A7FFF7"
 			size: 0.85d
-			title: "&7LV&r Circuits"
+			title: "{TFG.progression.title8}"
 			x: -1.0d
 			y: 0.0d
 		}
@@ -526,15 +526,15 @@
 				"0DBC148D92A9F69F"
 			]
 			description: [
-				"Circuits along this line are &bMV&r, and are interchangeable in recipes."
+				"{TFG.progression.description25}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+				"{TFG.progression.description26}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:mv_machine_casing"
 			id: "45CA8DCA8226945A"
 			size: 0.85d
-			title: "&bMV&r Circuits"
+			title: "{TFG.progression.title9}"
 			x: -1.0d
 			y: 1.0d
 		}
@@ -545,15 +545,15 @@
 				"26394C1290D70AB6"
 			]
 			description: [
-				"Circuits along this line are &6HV&r, and are interchangeable in recipes."
+				"{TFG.progression.description27}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+				"{TFG.progression.description28}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:hv_machine_casing"
 			id: "54CF2016ED44CC45"
 			size: 0.85d
-			title: "&6HV&r Circuits"
+			title: "{TFG.progression.title10}"
 			x: -1.0d
 			y: 2.0d
 		}
@@ -564,15 +564,15 @@
 				"0017FFFAD7CD2EFE"
 			]
 			description: [
-				"Circuits along this line are &5EV&r, and are interchangeable in recipes."
+				"{TFG.progression.description29}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+				"{TFG.progression.description30}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:ev_machine_casing"
 			id: "2A9ECD745E15A5D8"
 			size: 0.85d
-			title: "&5EV&r Circuits"
+			title: "{TFG.progression.title11}"
 			x: -1.0d
 			y: 3.0d
 		}
@@ -584,15 +584,15 @@
 				"5CC9B0E832545569"
 			]
 			description: [
-				"Circuits along this line are &1IV&r, and are interchangeable in recipes."
+				"{TFG.progression.description31}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+				"{TFG.progression.description32}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_casing"
 			id: "5B0AC445672E14B6"
 			size: 0.85d
-			title: "&1IV&r Circuits"
+			title: "{TFG.progression.title12}"
 			x: -1.0d
 			y: 4.0d
 		}
@@ -604,19 +604,19 @@
 				"58BBD540D7D4FF01"
 			]
 			description: [
-				"Circuits along this line are &dLuV&r, and are interchangeable in recipes."
+				"{TFG.progression.description33}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+				"{TFG.progression.description34}"
 				""
-				"Make sure to set up &3wetware board production&r as soon as possible! These take a &6very long time&r to make."
+				"{TFG.progression.description35}"
 				""
-				"It's &dLuV&r, not &4LUV&r."
+				"{TFG.progression.description36}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_casing"
 			id: "140E91C53C30C096"
 			size: 0.85d
-			title: "&dLuV&r Circuits"
+			title: "{TFG.progression.title13}"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -626,12 +626,12 @@
 				"327C3E02CD751453"
 				"7AE681E2AB31EA0D"
 			]
-			description: ["Circuits along this line are &cZPM&r, and are interchangeable in recipes."]
+			description: ["{TFG.progression.description37}"]
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_casing"
 			id: "2E00E10D4E92F64D"
 			size: 0.85d
-			title: "&cZPM&r Circuits"
+			title: "{TFG.progression.title14}"
 			x: -1.0d
 			y: 6.0d
 		}
@@ -640,27 +640,27 @@
 				"79E4E53E9DF45549"
 				"359121584E056022"
 			]
-			description: ["Circuits along this line are &3UV&r, and are interchangeable for each other."]
+			description: ["{TFG.progression.description38}"]
 			hide_dependency_lines: true
 			icon: "gtceu:uv_machine_casing"
 			id: "35EFFA6C85EFCA58"
 			size: 0.85d
-			title: "&3UV&r Circuits"
+			title: "{TFG.progression.title15}"
 			x: -1.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["3B49BD004F38E1A2"]
 			description: [
-				"Congratulations! You've reached the end of the circuit progression."
+				"{TFG.progression.description39}"
 				""
-				"The only &4UHV&r circuit is the &6Wetware Mainframe&r, which is used for crafting some endgame stuff."
+				"{TFG.progression.description40}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:uhv_machine_casing"
 			id: "177ADFFD33DDA624"
 			size: 0.85d
-			title: "&4UHV&r Circuits"
+			title: "{TFG.progression.title16}"
 			x: -1.0d
 			y: 8.0d
 		}
@@ -710,6 +710,6 @@
 			y: -4.0d
 		}
 	]
-	subtitle: ["A step forward is always rewarding"]
-	title: "Development table"
+	subtitle: ["{TFG.progression.subtitle7}"]
+	title: "{TFG.progression.title17}"
 }

@@ -44,7 +44,7 @@
 					type: "item"
 				}
 			]
-			title: "Engineer's tools"
+			title: "{TFG.create.title0}"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -100,14 +100,14 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"a source of kinetic energy\"}"
+							Name: "{'text':'a source of kinetic energy'}"
 						}
 						"ftbfiltersystem:filter": "or(or(item(create:water_wheel)item(create:large_water_wheel))and(item_tag(create:valve_handles))or(item(create:steam_engine))item(create:windmill_bearing))"
 					}
 				}
 				type: "item"
 			}]
-			title: "The first energy"
+			title: "{TFG.create.title1}"
 			x: -2.5d
 			y: 0.0d
 		}
@@ -137,17 +137,17 @@
 		{
 			dependencies: ["78BE0A10CE7B4BBE"]
 			description: [
-				"Let's break down sequential crafting using Precision Mechanism as an example."
-				"You will need 1 Gold Plate, 5 Deploy Cogwheel, 5 Deploy Large Cogwheel and 5 Iron Nugget"
+				"{TFG.create.description0}"
+				"{TFG.create.description1}"
 				""
-				"Place the gold plate on the Depot or Mechanical Belt that is under the Deployer"
-				"Next, place the items in the Deployer in order from the JEI."
+				"{TFG.create.description2}"
+				"{TFG.create.description3}"
 				""
-				"You will end up with Precision Mechanism"
+				"{TFG.create.description4}"
 			]
 			id: "7B74DB051202E97E"
 			shape: "rsquare"
-			subtitle: "new mechanics"
+			subtitle: "{TFG.create.subtitle0}"
 			tasks: [{
 				id: "135E35D4524364D0"
 				item: "create:deployer"
@@ -444,7 +444,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Train Track\"}"
+							Name: "{'text':'Any Train Track'}"
 						}
 						"ftbfiltersystem:filter": "or(item(railways:track_create_andesite_wide)item(railways:track_create_andesite_narrow)item(railways:track_monorail))"
 					}
@@ -525,7 +525,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Track Switch\"}"
+							Name: "{'text':'Any Track Switch'}"
 						}
 						"ftbfiltersystem:filter": "or(item(railways:track_switch_andesite)item(railways:track_switch_brass))"
 					}
@@ -567,7 +567,7 @@
 					type: "item"
 				}
 			]
-			title: "Fluid Pump"
+			title: "{TFG.create.title2}"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -584,5 +584,5 @@
 			y: 0.0d
 		}
 	]
-	title: "ULV - Mechanical Age"
+	title: "{TFG.create.title3}"
 }
