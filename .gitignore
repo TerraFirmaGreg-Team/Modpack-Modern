@@ -11,14 +11,12 @@
 build/
 !.pakku/**/*
 
-# BuildTools
-buildtools/
-
 # Configs
 config/jei/world/
 config/gregtech/terminal/
 config/roughlyenoughitems/
 config/fantasticlib/
+config/better_quest_popup/completed-cache/
 
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
@@ -42,6 +40,9 @@ config/fml.toml
 config/forge-client.toml
 config/voicechat/username-cache.json
 
+config/stellarcore_stitcher_cache_jei.dat
+config/stellarcore_stitcher_cache_vanilla.dat
+
 # .minecraft
 !bansoukou/**.zip
 
@@ -49,6 +50,7 @@ config/voicechat/username-cache.json
 .idea/
 .bobby/
 .mixin.out/
+assets/
 classOut/
 backups/
 profileImage/
@@ -65,6 +67,7 @@ XaeroWorldMap*/
 xaero/
 visualores/
 mods-carryover/
+EnderStorage/
 fancymenu_data/
 fancymenu_setups/
 downloads/
@@ -76,6 +79,7 @@ shaderpacks/
 chiselsandbits/
 
 # Client data
+bansoukou
 .curseclient
 .sl_password
 options.txt
@@ -101,6 +105,7 @@ hei_bookmarks.ini
 .pakku/server-overrides/libraries
 .pakku/server-overrides/config
 .pakku/server-overrides/defaultconfigs
-.pakku/server-overrides/kubejs
+.pakku/server-overrides/groovy
+.pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt

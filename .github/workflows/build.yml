@@ -1,149 +1,191 @@
-name: Release
-run-name: "Release #${{ github.run_number }} by @${{ github.actor }}"
+name: Project Build
+run-name: "Project Build #${{ github.run_number }}"
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 env:
   RELEASE_TYPE: "alpha"
   MINECRAFT_VERSION: "1.20.1"
 
-on:
-  push:
-    tags:
-      - "*.*.*"
-
-concurrency:
-  group: ${{ github.ref }}
-  cancel-in-progress: true
-
-jobs:
+jobs:    
   info:
-    name: Project Info
+    name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.project_version.outputs.tag }}
+      project_version: ${{ steps.project_version.outputs.value }}
       project_name: ${{ steps.project_name.outputs.value }}
-      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.tag }}
+      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.value }}
       changelog: ${{ steps.changelog.outputs.description }}
-      truncated_changelog: ${{ steps.truncated.outputs.text }}
-      diff: ${{ steps.lockfile.outputs.diff }}
+      diff: ${{ steps.read_diff.outputs.diff }}
       release_type: ${{ env.RELEASE_TYPE }}
       minecraft_version: ${{ env.MINECRAFT_VERSION }}
-      # exists: ${{ steps.check_tag.outputs.exists }}
+      exists: ${{ steps.check_tag.outputs.exists }}
     
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
-
-      - name: Check lockfile
+        with:
+          fetch-depth: 0
+        
+      - name: 🔍 Check pakku-lock.json
+        id: check_pakku_lock
         shell: bash
         run: |
-          set +e
-          echo "🔎 Getting modpack info..."
-
           if [ ! -f pakku-lock.json ]; then
-            echo "::error::Could not find pakku-lock.json" && exit 1
+            echo "❌ Could not find pakku-lock.json" && exit 1
           else
             echo "✔️ pakku-lock.json"
           fi
-
+        
+      - name: 🔍 Check pakku.json
+        id: check_pakku
+        shell: bash
+        run: |
           if [ ! -f pakku.json ]; then
-            echo "::error::Could not find pakku.json" && exit 1
+            echo "❌ Could not find pakku.json" && exit 1
           else
             echo "✔️ pakku.json"
           fi
-
-      - name: Get previous lockfile
-        id: lockfile
+        
+      - name: 📈 Get latest tag
+        id: latest_tag
         shell: bash
         run: |
-          set +e
-          echo "🔎 Getting previous lockfile..."
-          if [ "$latest_tag" = ${{ github.ref_name }} ]; then
-            latest_tag_prev=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
-            latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev | sed -n 2p)
-
-            if git cat-file -e $latest_tagged_commit:./pakku-lock.json; then
-              git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
-              curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
-              java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-pre.json ./pakku-lock.json 
-            else
-              echo "❌ File pakku-lock.json not found in previous tag"
-            fi
+          tag=$(git describe --tags --abbrev=0)
+          if [ -z "$tag" ]; then
+            echo "❌ Latest tag not found" && exit 1
+          else
+            echo "✔️ Latest tag found: $tag"
+            echo "tag=$tag" >> $GITHUB_OUTPUT
           fi
-          if [ ! -f PROJECTS_DIFF.md ]; then
-            touch PROJECTS_DIFF.md
+        
+      - name: 🔍 Check pakku-lock.json in previous tag
+        id: check_pakku_lock_prev
+        shell: bash
+        run: |
+          if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
+            echo "❌ File pakku-lock.json not found in previous tag" && exit 1
+          else
+            echo "✔️ File pakku-lock.json found in previous tag"
           fi
+        
+      - name: 📁 Copy pakku-lock.json from previous tag
+        id: copy_pakku_lock_prev
+        shell: bash
+        run: |
+          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
+          if [ -s ./pakku-lock-prev.json ]; then
+            echo "✔️ File pakku-lock-prev.json created"
+          else
+            echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
+          fi
+        
+      - name: 📦 Download pakku.jar
+        id: download_pakku
+        shell: bash
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          echo "✔️ Downloaded pakku.jar "
+        
+      - name: 🔄 Run pakku diff
+        id: pakku_diff
+        shell: bash
+        run: |
+          java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
+          if [ -f PROJECTS_DIFF.md ]; then
+            echo "✔️ Comparison completed"
+          else
+            echo "❌ Error: File PROJECTS_DIFF.md not created" && exit 1
+          fi
+        
+      - name: 📝 Read PROJECTS_DIFF.md to variable
+        id: read_diff
+        shell: bash
+        run: |
+          echo "📝 Reading PROJECTS_DIFF.md to variable..."
           {
             echo 'diff<<EOF'
             cat -v PROJECTS_DIFF.md
             echo EOF
           } >> "$GITHUB_OUTPUT"
-
-      - name: Get Project Name
+          echo "✔️ Diff content read to variable"
+        
+      - name: 📊 Get Project Name
         id: project_name
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku.json"
           prop_path: "name"
-
-      - name: Get Project Version
+        
+      - name: 📊 Get Project Version
         id: project_version
-        uses: "WyriHaximus/github-action-get-previous-tag@v1.4.0"
+        uses: ActionsTools/read-json-action@v1.0.5
         with:
-          fallback: build.${{ github.run_number }}
+          file_path: "pakku.json"
+          prop_path: "version"
 
-      - name: Changelog Parser
+      - name: 📊 Get Minecraft Version
+        id: minecraft_version
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku-lock.json"
+          prop_path: "mc_versions"
+        
+      - name: 📄 Changelog Parser
         id: changelog
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-
-      - name: Truncate Changelog
-        id: truncated
-        uses: cisox/read-more-action@v1.0.2
-        with:
-          text: '${{ steps.changelog.outputs.description }}'
-          max_chars: '1450'
-
-      - name: Upload Diff
-        id: diff
+        
+      - name: 📈 Upload Diff
+        id: upload_diff
+        if: ${{ steps.read_diff.outputs.diff != '' }}
         uses: actions/upload-artifact@v4.4.3
-        if: ${{ steps.lockfile.outputs.diff != '' }}
         with:
           name: Mods-diff
           path: PROJECTS_DIFF.md
-
-      # - name: Check if tag exists
-      #   uses: mukunku/tag-exists-action@v1.6.0
-      #   id: check_tag
-      #   with:
-      #     tag: ${{ steps.project_version.outputs.tag }}
-          
-      - name: Generate Github Summary
+        
+      - name: 🔍 Check if tag exists
+        uses: mukunku/tag-exists-action@v1.6.0
+        id: check_tag
+        with:
+          tag: ${{ steps.project_version.outputs.value }}
+        
+      - name: 📝 Generate Github Summary
         run: |
-          echo "📃 Project Name=${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 Project Version=${{ steps.project_version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 MC Versions=${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 Release Type=${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.truncated.outputs.text }}" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.lockfile.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Release**: ${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
+          echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          
+          echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
+          if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
+            echo "${{ steps.read_diff.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
+          fi
+  
 
   build-modpack:
-    name: Build Modpack
-    runs-on: ubuntu-latest
+    name: 📦 Build Modpack
     needs: [info]
-    # if: needs.info.outputs.exists != 'true'
+    runs-on: ubuntu-latest
+    if: needs.info.outputs.exists != 'true'
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Replace strings
+      - name: 🔄 Replace strings
         shell: bash
         run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       # - name: Cache pakku
@@ -153,29 +195,29 @@ jobs:
       #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
       #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Export modpack
+      - name: 📦 Export modpack
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar export
 
-      - name: Rename artifact curseforge
+      - name: 📁 Rename artifact curseforge
         run: |
           cd ./build/curseforge/
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
-      - name: Upload artifact CurseForge
+      - name: 🚀 Upload artifact CurseForge
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: Rename artifact modrinth
+      - name: 📁 Rename artifact modrinth
         run: |
           cd ./build/modrinth/
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: Upload artifact modrinth
+      - name: 🚀 Upload artifact modrinth
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
@@ -183,20 +225,21 @@ jobs:
           if-no-files-found: warn
 
   build-server:
-    name: Build Server Pack
-    runs-on: ubuntu-latest
+    name: 📦 Build Server
     needs: [info]
+    runs-on: ubuntu-latest
+    if: needs.info.outputs.exists != 'true'
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Replace strings
+      - name: 🔄 Replace strings
         shell: bash
         run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       # - name: Cache pakku
@@ -206,18 +249,18 @@ jobs:
       #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
       #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Export modpack
+      - name: 📦 Export modpack
         run: |
           mv -vf ./.pakku/server-overrides/* ./
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar export
 
-      - name: Rename artifact server
+      - name: 📁 Rename artifact server
         run: |
           cd ./build/serverpack/
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
-      - name: Upload artifact server
+      - name: 🚀 Upload artifact server
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
@@ -225,20 +268,21 @@ jobs:
           if-no-files-found: error
 
   build-multimc:
-    name: Build MultiMC Pack
-    runs-on: ubuntu-latest
+    name: 📦 Build MultiMC
     needs: [info]
+    runs-on: ubuntu-latest
+    if: needs.info.outputs.exists != 'true'
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Replace strings
+      - name: 🔄 Replace strings
         shell: bash
         run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
-          sed -i -e "s/DEV/${VERSION}/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
@@ -249,13 +293,13 @@ jobs:
       #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
       #     restore-keys: ${{ runner.OS }}-pakku-cache-
 
-      - name: Export
+      - name: 📦 Export
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           java -jar pakku.jar --debug fetch
           java -jar pakku.jar --debug export
           
-      - name: Move files
+      - name: 📁 Move files
         run: |
           ls
           mkdir -p .pakku/multimc-overrides/flame
@@ -266,7 +310,7 @@ jobs:
           
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
-      - name: Upload zip multimc
+      - name: 🚀 Upload zip multimc
         uses: actions/upload-artifact@v4.4.3
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
@@ -274,31 +318,32 @@ jobs:
           if-no-files-found: error
 
   release-curseforge:
-    name: Deploy to CurseForge
+    name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server]
     runs-on: ubuntu-latest
     outputs:
-      id: ${{ steps.cf_release.outputs.id }}
+      id: ${{ steps.release.outputs.id }}
+
     steps:
-      - name: Check if CURSEFORGE_TOKEN exist
+      - name: 🔒 Check if CURSEFORGE_TOKEN exist
         shell: bash
         run: |
           if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
             echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
           fi  
 
-      - name: Download artifact curseforge
+      - name: 📦 Download artifact curseforge
         uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
 
-      - name: Download artifact server
+      - name: 📦 Download artifact server
         uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
 
-      - name: Upload Curseforge
-        id: cf_release
+      - name: 🚀 Upload Curseforge
+        id: release
         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
         with:
           api-token: ${{ secrets.CURSEFORGE_TOKEN }}
@@ -315,29 +360,30 @@ jobs:
           release-type: ${{ needs.info.outputs.release_type }}
 
   # release-modrinth:
-  #     name: Deploy to Modrinth
+  #     name: 🚀 Release to Modrinth
   #     needs: [info, build-modpack, build-server]
   #     runs-on: ubuntu-latest
+
   #     steps:
-  #       - name: Check if MODRINTH_TOKEN exist
+  #       - name: 🔒 Check if MODRINTH_API_TOKEN exist
   #         shell: bash
   #         run: |
   #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
   #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
   #           fi  
     
-  #       - name: Download artifact modrinth
+  #       - name: 📦 Download artifact modrinth
   #         uses: actions/download-artifact@v4.1.8
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
     
-  #       - name: Download artifact server
+  #       - name: 📦 Download artifact server
   #         uses: actions/download-artifact@v4.1.8
   #         with:
   #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
     
-  #       - name: Upload Modrinth
-  #         id: cf_release
+  #       - name: 🚀 Upload Modrinth
+  #         id: release
   #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
   #         with:
   #           api-token: ${{ secrets.MODRINTH_TOKEN }}
@@ -352,28 +398,41 @@ jobs:
   #           release-type: ${{ needs.info.outputs.release_type }}
 
   release-github:
-    name: Deploy to GitHub
+    name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
     outputs:
       url: ${{ steps.release.outputs.url }}
+
     steps:
-      - name: Checkout
+      - name: 📦 Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Download artifact
+      - name: 📦 Download artifact
         uses: actions/download-artifact@v4.1.8
         with:
           merge-multiple: true
 
-      - name: Сlose fixed in dev
+      - name: 🚫 Сlose fixed in dev
         uses: Xikaro/close-issues-based-on-label@master
         env:
           LABEL: "2. Status: In Dev"
           COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create release
+      - name: Format diff
+        id: format_diff
+        run: |
+          if [ -n "${{ needs.info.outputs.diff }}" ]; then
+            value="```markdown
+            ${{ needs.info.outputs.diff }}
+            ```"
+          else
+            value=""
+          fi
+          echo "value=${formatted_diff}" >> $GITHUB_OUTPUT
+
+      - name: 🚀 Create release
         id: release
         uses: softprops/action-gh-release@v2.1.0
         with:
@@ -381,23 +440,28 @@ jobs:
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            ```markdown
-            ${{ needs.info.outputs.diff }}
-            ```
+            ${{ steps.format_diff.outputs.value }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
             ${{ needs.info.outputs.project_full_name }}-multimc.zip
-          prerelease: ${{ env.RELEASE_TYPE != 'release' }}
+          prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
-    name: Discord Message
+    name: 📱 Discord Message
     needs: [info, release-curseforge, release-github]
     runs-on: ubuntu-latest
     steps:
-      - name: Send Discord message
+      - name: ✂️ Truncate Changelog
+        id: truncated
+        uses: cisox/read-more-action@v1.0.2
+        with:
+          text: '${{ needs.info.outputs.changelog }}'
+          max_chars: '1450'
+
+      - name: 📨 Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
         with:
           key: ${{ secrets.DISCORD_RELEASES }}
@@ -410,8 +474,7 @@ jobs:
             **Game Version**: `${{ needs.info.outputs.minecraft_version }}`
 
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
-
-             ```markdown
-            ${{ needs.info.outputs.truncated_changelog }}
+            ```markdown
+            ${{ steps.truncated.outputs.text  }}
             - ...```
             ** [Read more...](${{ needs.release-github.outputs.url }}) **
