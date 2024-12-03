@@ -1,0 +1,34 @@
+name: "Enhancement"
+description: "Provide supporting details for a feature in development"
+title: "[🪡]: "
+labels: [ "1. Type: Enhancement" ]
+
+body:
+  - type: checkboxes
+    id: exists
+    attributes:
+      label: "Was this enhancement asked before?"
+      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      options:
+        - label: "No, it was not."
+          required: true
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like to be added?
+      description: |
+        Feature requests are unlikely to make progress as issues.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this request enhancement."

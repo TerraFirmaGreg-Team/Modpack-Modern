@@ -1,0 +1,52 @@
+name: "Pull Request"
+description: "Submit a pull request."
+title: "[🚀]: "
+labels: [ "1. Type: Pull Request", "2. Status: Unverified" ]
+
+body:
+  - type: checkboxes
+    id: type-of-change
+    attributes:
+      label: "Type of Change"
+      description: "Please select the type of change made in this pull request."
+      options:
+        - label: "Bugfix"
+        - label: "New feature"
+        - label: "Documentation update"
+        - label: "Refactoring"
+        - label: "Dependency updates"
+    validations:
+      required: true
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: "Add any related issue numbers."
+      placeholder: Fixes #123
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Description of contributions in a few bullet points."
+      placeholder: |
+        "* Added mod for nuclear reactors."
+        "* Added recipe for ae controller."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Additional information"
+      description: Any additional information you wish to provide. Please add anything which did not fit into the other sections here.
+      placeholder: "Example: This is likely achieveable by doing X because..."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "Thanks for taking the time to fill out this pull request report!"

@@ -10,6 +10,8 @@ updates:
     open-pull-requests-limit: 1
     schedule:
       interval: "weekly"
+    labels:
+      - "1. Type: Dependencies"
     groups:
       dependencies:
         applies-to: version-updates
