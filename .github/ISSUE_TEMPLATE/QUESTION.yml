@@ -22,12 +22,12 @@ body:
 
   - type: textarea
     id: question
+    validations:
+      required: true
     attributes:
       label: Your Question
       description: Feel free to ask any question regarding this project here.
       placeholder: "Example: How can I...?"
-    validations:
-      required: true
 
   - type: markdown
     attributes:

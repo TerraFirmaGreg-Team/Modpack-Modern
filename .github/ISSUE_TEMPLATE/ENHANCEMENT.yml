@@ -15,19 +15,18 @@ body:
 
   - type: textarea
     id: feature
-    attributes:
-      label: What would you like to be added?
-      description: |
-        Feature requests are unlikely to make progress as issues.
     validations:
       required: true
+    attributes:
+      label: What would you like to be added?
+      description: Feature requests are unlikely to make progress as issues.
 
   - type: textarea
     id: rationale
-    attributes:
-      label: Why is this needed?
     validations:
       required: true
+    attributes:
+      label: Why is this needed?
 
   - type: markdown
     attributes:

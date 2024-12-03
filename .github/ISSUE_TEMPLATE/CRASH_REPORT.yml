@@ -15,24 +15,26 @@ body:
 
   - type: input
     id: version
+    validations:
+      required: true
     attributes:
       label: Version modpack used
       description: Write which version of the modpack you are using.
       placeholder: "Example: 0.1.1"
-    validations:
-      required: true
 
   - type: input
     id: environment
+    validations:
+      required: true
     attributes:
       label: Environment
       description: "How you were playing on the world. Typical answers include: Singleplayer, Open to LAN, Forge Server, Sponge Server, or Mohist Server."
       placeholder: "Example: Singleplayer"
-    validations:
-      required: true
 
   - type: dropdown
     id: crash
+    validations:
+      required: true
     attributes:
       label: Side Crashed
       description: Where the game crashed.
@@ -41,11 +43,11 @@ body:
         - "Server"
         - "Client and Server"
         - "Unsure"
-    validations:
-      required: true
 
   - type: dropdown
     id: world
+    validations:
+      required: true
     attributes:
       label: New Worlds
       description: Does this crash occur on a newly generated world?
@@ -53,11 +55,11 @@ body:
         - "Yes"
         - "No"
         - "Unsure"
-    validations:
-      required: true
 
   - type: input
     id: log
+    validations:
+      required: true
     attributes:
       label: "Please provide a link to your latest.log, if relevant"
       description: |
@@ -71,26 +73,25 @@ body:
         > **Do not paste the contents of either these files directly into the text box.**
         > If you skip this step, this issue might be **labeled** with `please add a reproduction` and **closed**.
       placeholder: https://mclo.gs/MydIQBu...
-    validations:
-      required: true
 
   - type: textarea
     id: reproduction
+    validations:
+      required: true
     attributes:
       label: Steps to Reproduce
       description: How to reproduce the crash.
       placeholder: "Example: 1) I did X..."
-    validations:
-      required: true
+
 
   - type: textarea
     id: additional-info
+    validations:
+      required: false
     attributes:
       label: Additional Information
       description: Any additional information you wish to provide. Please add anything which did not fit into the other sections here.
       placeholder: "Example: This is likely caused by X because..."
-    validations:
-      required: false
 
   - type: markdown
     attributes:
