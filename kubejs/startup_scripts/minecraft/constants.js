@@ -751,7 +751,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:smoker', 
     'minecraft:blast_furnace', 
     'minecraft:chiseled_bookshelf', 
-    'minecraft:decorated_pot', 
     'minecraft:poisonous_potato', 
     'minecraft:potato', 
     'minecraft:baked_potato',
