@@ -10,14 +10,14 @@
 	quests: [
 		{
 			dependencies: ["26394C1290D70AB6"]
-			description: ["To continue the quest line, you need to craft any of the computers."]
+			description: ["{TFG.cc.description0}"]
 			icon: "computercraft:computer_advanced"
 			id: "591C5E26EE7466F3"
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				id: "6BC9F3064F29B986"
-				title: "CC: Tweaked"
+				title: "{TFG.cc.title0}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -96,7 +96,7 @@
 				id: "7D070BAFC0F4226A"
 				type: "checkmark"
 			}]
-			title: "It's time to craft trinkets"
+			title: "{TFG.cc.title1}"
 			x: 5.0d
 			y: 0.0d
 		}
@@ -209,5 +209,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&bMV&r - Computers"
+	title: "{TFG.cc.title2}"
 }
