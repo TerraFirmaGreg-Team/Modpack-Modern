@@ -49,29 +49,29 @@
 		{
 			dependencies: ["16B735F9C391D260"]
 			description: [
-				"It's time to be blunt - Steam as a power option really isn't worth it at this point anymore. "
+				"{TFG.ev__extreme_voltage.description0}"
 				""
-				"The &3Large Steam Turbine&r acts as a multiblock Steam Turbine for &6HV&r power. It's quite an expensive multiblock to build just for a measly 1024 EU/t, but it also boasts the powerful ability to scale to &9higher Power Production and higher Efficiency&r."
-				"{@pagebreak}"
-				"The Turbine outputs &dDistilled Water&r if given an &3Output Hatch&r, which you could loop back to your &3Large Boilers&r. We don't entirely endorse this, as your Boilers will end up exploding if the system fails."
+				"{TFG.ev__extreme_voltage.description1}"
+				"{TFG.ev__extreme_voltage.description2}"
+				"{TFG.ev__extreme_voltage.description3}"
 				""
-				"Each Large Turbine will require a &aTurbine Rotor&r and a &3Rotor Holder&r. You can find out more about the Turbine mechanics in the &lnext&r Quest."
-				"{@pagebreak}"
-				"&9Note:&r This Quest &eonly&r requires the Controller, but you'll still need all the multiblock parts to construct the Turbine."
+				"{TFG.ev__extreme_voltage.description4}"
+				"{TFG.ev__extreme_voltage.description5}"
+				"{TFG.ev__extreme_voltage.description6}"
 				""
-				"Turbines &cvoid&r energy if they're unable to output. If you plan on using this with &6HV&r power, use a Rotor close to a 100% Power stat."
+				"{TFG.ev__extreme_voltage.description7}"
 			]
 			icon: "gtceu:steam_large_turbine"
 			id: "189F84D6C76CDC8B"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "If you're still running off Steam... boy, do we have a solution for you!"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle0}"
 			tasks: [{
 				id: "793B9FC5F9ACCCC7"
 				item: "gtceu:steam_large_turbine"
 				type: "item"
 			}]
-			title: "Large Steam Turbine"
+			title: "{TFG.ev__extreme_voltage.title0}"
 			x: 3.375d
 			y: 4.5d
 		}
@@ -82,11 +82,11 @@
 				"4E9DED9569AA17F5"
 			]
 			description: [
-				"The Large Turbines are the most complex Multiblock Generators that you'll find in GTCEu in the present day."
+				"{TFG.ev__extreme_voltage.description8}"
 				""
-				"Let's delve into Turbines!"
+				"{TFG.ev__extreme_voltage.description9}"
 				""
-				"&6This quest unlocks a new tutorial on Turbine Mechanics in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+				"{TFG.ev__extreme_voltage.description10}"
 			]
 			icon: {
 				Count: 1
@@ -101,46 +101,46 @@
 			min_required_dependencies: 1
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "My mechanics are... complex"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle1}"
 			tasks: [{
 				id: "2CE74616CF080BF9"
 				type: "checkmark"
 			}]
-			title: "Large Turbine Mechanics"
+			title: "{TFG.ev__extreme_voltage.title1}"
 			x: 2.25d
 			y: 4.5d
 		}
 		{
 			dependencies: ["35E7E45987D9B1F6"]
 			description: [
-				"Starting from here, &3Energy&r and &3Dynamo Hatches&r can be upgraded to a &d4A&r variant."
+				"{TFG.ev__extreme_voltage.description11}"
 				""
-				"This is extremely useful for Multiblock Generators."
+				"{TFG.ev__extreme_voltage.description12}"
 			]
 			icon: "gtceu:ev_energy_input_hatch"
 			id: "7820DF52516344F4"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Perfectly regular progression"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle2}"
 			tasks: [{
 				id: "1696F760B75B3544"
 				item: "gtceu:ev_energy_input_hatch"
 				type: "item"
 			}]
-			title: "Upgrading your EBF III"
+			title: "{TFG.ev__extreme_voltage.title2}"
 			x: 2.25d
 			y: 2.25d
 		}
 		{
 			dependencies: ["35E7E45987D9B1F6"]
 			description: [
-				"The &3Large Gas Turbine&r may not leave a huge impression in &5EV&r, but it has the ability to scale to &9better production&r than the base 4096 EU/t, and boasts &9greater efficiency&r."
+				"{TFG.ev__extreme_voltage.description13}"
 				""
-				"Each Large Turbine will require a &aTurbine Rotor&r and a &3Rotor Holder&r. More on the Turbine mechanics in the &lnext&r Quest."
-				"{@pagebreak}"
-				"&9Note:&r This Quest &eonly&r requires the Controller, but you still need all the multiblock parts to construct the Turbine."
+				"{TFG.ev__extreme_voltage.description14}"
+				"{TFG.ev__extreme_voltage.description15}"
+				"{TFG.ev__extreme_voltage.description16}"
 				""
-				"Turbines &cvoid&r energy if they're unable to output. If you plan on using this with HV power, use a Rotor with close to 100% Power stat."
+				"{TFG.ev__extreme_voltage.description17}"
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "0F539EC8D2361791"
@@ -151,7 +151,7 @@
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			title: "Large Gas Turbine"
+			title: "{TFG.ev__extreme_voltage.title3}"
 			x: 2.25d
 			y: 3.375d
 		}
@@ -161,17 +161,17 @@
 				"7A55CC71442CC854"
 			]
 			description: [
-				"New Cutting Machine? &a✓&r"
+				"{TFG.ev__extreme_voltage.description18}"
 				""
-				"New Lens? &a✓&r"
+				"{TFG.ev__extreme_voltage.description19}"
 				""
-				"New Power Circuit? &a✓&r"
+				"{TFG.ev__extreme_voltage.description20}"
 				""
-				"New EBF Metal required? &a✓&r"
+				"{TFG.ev__extreme_voltage.description21}"
 				""
-				"New Coil for Energy Hatch? &a✓&r"
+				"{TFG.ev__extreme_voltage.description22}"
 				""
-				"&9Note:&r If you haven't found a Jungle yet, you can &acentrifuge Stone Dust&r for &dMetal Mixture Dust&r. This doubles as a Brown Dye."
+				"{TFG.ev__extreme_voltage.description23}"
 			]
 			icon: "gtceu:mpic_chip"
 			id: "35E7E45987D9B1F6"
@@ -189,7 +189,7 @@
 					type: "item"
 				}
 			]
-			title: "Power Integrated Circuit"
+			title: "{TFG.ev__extreme_voltage.title4}"
 			x: 3.375d
 			y: 2.25d
 		}
@@ -199,19 +199,19 @@
 				"14D277A164202FF8"
 			]
 			description: [
-				"The &3Large Combustion Engine&r is a multiblock able to burn &dCombustion Fuels&r for even more Power Generation!"
+				"{TFG.ev__extreme_voltage.description24}"
 				""
-				"Its default production outputs 2048 EU/t, which is the same as 4 &3Turbo Combustion Generators&r."
+				"{TFG.ev__extreme_voltage.description25}"
 				""
-				"Where it shines is the ability to &6boost&r it with &aOxygen&r. This will double the fuel consumption, but &9triple the power generation&r, for 6144 EU/t! This results in &6150% Fuel efficiency&r."
+				"{TFG.ev__extreme_voltage.description26}"
 				""
-				"It also requires a small amount of &aLubricant&r - nothing too crazy."
+				"{TFG.ev__extreme_voltage.description27}"
 				""
-				"The &3LCE&r is also void-free, unlike Large Turbines. Any energy that cannot be output will momentarily pause the multiblock."
-				"{@pagebreak}"
-				"&9Note:&r This Quest requires &eany&r task to be completed, but you should still need all the parts."
+				"{TFG.ev__extreme_voltage.description28}"
+				"{TFG.ev__extreme_voltage.description29}"
+				"{TFG.ev__extreme_voltage.description30}"
 				""
-				"To harness the 6144 EU/t Power output, you will need a &34A EV Dynamo Hatch&r or an &3IV Dynamo Hatch&r."
+				"{TFG.ev__extreme_voltage.description31}"
 			]
 			icon: "gtceu:large_combustion_engine"
 			id: "1AD309112ADD8D8D"
@@ -229,7 +229,7 @@
 					type: "item"
 				}
 			]
-			title: "Large Combustion"
+			title: "{TFG.ev__extreme_voltage.title5}"
 			x: 3.375d
 			y: 1.125d
 		}
@@ -239,31 +239,31 @@
 				"478B0D55369C0F7F"
 			]
 			description: [
-				"At the cost of 4x the drilling Power, the &3Advanced Fluid Drilling Rig&r gains &616x the output&r in Fluid."
+				"{TFG.ev__extreme_voltage.description32}"
 				""
-				"The depletion of veins is also halved. This means you will get a total of &632x&r as much Oil (or whatever fluid) from a bedrock fluid vein until depletion!"
+				"{TFG.ev__extreme_voltage.description33}"
 				""
-				"Even when depleted, you can still use this and be firmly power positive."
+				"{TFG.ev__extreme_voltage.description34}"
 				""
-				"One single &3Advanced Fluid Drilling Rig&r should be enough to supply Power for a base up to &dLuV&r... and possibly beyond!"
-				"{@pagebreak}"
-				"As a &9reminder&r, since this last appeared in &bMV&r:"
+				"{TFG.ev__extreme_voltage.description35}"
+				"{TFG.ev__extreme_voltage.description36}"
+				"{TFG.ev__extreme_voltage.description37}"
 				""
-				"&9-&r &aLight Oil&r can be used for &dLPG&r and &dMethane&r to run in &3Large Gas Turbines&r."
-				"&9-&r &aOil&r can be used for &dDiesel&r and &dCetane-Boosted Diesel&r to run in &3Large Combustion Engines&r."
-				"&9-&r &aHeavy Oil&r can be used for &dNitrobenzene&r to run in &3Large Gas Turbines&r."
+				"{TFG.ev__extreme_voltage.description38}"
+				"{TFG.ev__extreme_voltage.description39}"
+				"{TFG.ev__extreme_voltage.description40}"
 			]
 			icon: "gtceu:hv_fluid_drilling_rig"
 			id: "10987A49F647279E"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Extreme is an apt descriptor"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle3}"
 			tasks: [{
 				id: "3FE1F17DD37F0A56"
 				item: "gtceu:hv_fluid_drilling_rig"
 				type: "item"
 			}]
-			title: "Extreme Fluid Drilling"
+			title: "{TFG.ev__extreme_voltage.title6}"
 			x: 3.375d
 			y: 3.375d
 		}
@@ -273,15 +273,15 @@
 				"41D32C5178760F47"
 			]
 			description: [
-				"How do you get Platinum?"
+				"{TFG.ev__extreme_voltage.description41}"
 				""
-				"&9-&r As a byproduct of &aNickel Ore&r processing, either with a &3Chemical Bath&r, or a &3HV Macerator&r"
-				"&9-&r From &aSheldonite veins&r in the End"
-				"&9-&r From &aPlatinum Group Sludge&r, a complicated chain granting all Platinum Group metals. Highly &cunrecommended until IV&r, but eventually required."
+				"{TFG.ev__extreme_voltage.description42}"
+				"{TFG.ev__extreme_voltage.description43}"
+				"{TFG.ev__extreme_voltage.description44}"
 				""
-				"Platinum is needed in small amounts for &dSMD Diodes&r, and for a plethora of recipes starting in &5EV&r."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o Mekanism's primary material was planned to be Platinum. However, GregoriusT didn't agree - the fact that such a rare material could be found all over the world wasn't quite to his tastes. The Mekanism devs thus opted to make the primary material Osmium."
+				"{TFG.ev__extreme_voltage.description45}"
+				"{TFG.ev__extreme_voltage.description46}"
+				"{TFG.ev__extreme_voltage.description47}"
 			]
 			icon: "gtceu:platinum_ingot"
 			id: "3398FC108D9DCB46"
@@ -299,7 +299,7 @@
 					type: "item"
 				}
 			]
-			title: "Platinum"
+			title: "{TFG.ev__extreme_voltage.title7}"
 			x: 4.5d
 			y: 3.75d
 		}
@@ -309,19 +309,19 @@
 				"7A55CC71442CC854"
 			]
 			description: [
-				"We admit it... this is a completely &doptional&r Multiblock. Many playtesters kept using their &6HV&r singleblock miners and didn't find any problems in throughput."
+				"{TFG.ev__extreme_voltage.description48}"
 				""
-				"The &3Larger Miner&r will further boost your returns when collecting ores from veins."
+				"{TFG.ev__extreme_voltage.description49}"
 				""
-				"Ores are mined as if they were &amacerated&r, but they yield &6three times&r as many &dCrushed ores&r."
+				"{TFG.ev__extreme_voltage.description50}"
 				""
-				"You will need to have automated &aDrilling Fluid&r to run this."
+				"{TFG.ev__extreme_voltage.description51}"
 				""
-				"You might also want to use a &3Quantum Tunnel&r from AE2 and &3GTEU P2P Tunnels&r to transfer the items and to power it up."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o There were some interesting side effects from porting this over from Gregicality, as the multiblock originated from GregTech 5."
+				"{TFG.ev__extreme_voltage.description52}"
+				"{TFG.ev__extreme_voltage.description53}"
+				"{TFG.ev__extreme_voltage.description54}"
 				""
-				"It's not perfect, as there isn't really any advantage on upgrading this miner to the advanced versions. We were thinking of rebalancing the energy costs and yield per tier."
+				"{TFG.ev__extreme_voltage.description55}"
 			]
 			icon: "gtceu:ev_large_miner"
 			id: "16E7CAC7BC8BFD8E"
@@ -332,7 +332,7 @@
 				item: "gtceu:ev_large_miner"
 				type: "item"
 			}]
-			title: "Multiblock Miner"
+			title: "{TFG.ev__extreme_voltage.title8}"
 			x: 5.625d
 			y: 3.375d
 		}
@@ -342,26 +342,26 @@
 				"7FA0ACB7F161F378"
 				"4AFD3073C731A1E4"
 			]
-			description: ["You know the drill by now."]
+			description: ["{TFG.ev__extreme_voltage.description56}"]
 			icon: "gtceu:ev_assembler"
 			id: "7A55CC71442CC854"
 			size: 0.75d
-			subtitle: "Pushing into EV"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle4}"
 			tasks: [{
 				id: "2F60DE9B52FDEFFC"
 				item: "gtceu:ev_assembler"
 				type: "item"
 			}]
-			title: "EV Assembler"
+			title: "{TFG.ev__extreme_voltage.title9}"
 			x: 4.5d
 			y: 2.25d
 		}
 		{
 			dependencies: ["7A55CC71442CC854"]
 			description: [
-				"The Best Battery-like item for &5EV&r!"
+				"{TFG.ev__extreme_voltage.description57}"
 				""
-				"The &aLapotron Crystal&r requires quite a bit of nested crafting, so craft it in large batches or automate it with AE2 patterns."
+				"{TFG.ev__extreme_voltage.description58}"
 			]
 			icon: "gtceu:lapotron_crystal"
 			id: "69E384F389B0D07B"
@@ -380,7 +380,7 @@
 					type: "item"
 				}
 			]
-			title: "Extreme Batteries"
+			title: "{TFG.ev__extreme_voltage.title10}"
 			x: 4.5d
 			y: 1.125d
 		}
@@ -394,68 +394,68 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"This quest will cover the Tungsten Chain. &aTungsten&r is obtained from either &eTungstate&r or &eScheelite&r, which are part of the same vein in the End."
+				"{TFG.ev__extreme_voltage.description59}"
 				""
-				"Just like the &dRutile&r chain, you will only need to input one item type, and everything else will be looped perfectly!"
-				"{@pagebreak}"
-				"You will need:"
+				"{TFG.ev__extreme_voltage.description60}"
+				"{TFG.ev__extreme_voltage.description61}"
+				"{TFG.ev__extreme_voltage.description62}"
 				""
-				"&9-&r One &3Chemical Bath&r, to make &dTungstic Acid&r."
-				"&9-&r One &3Electrolyzer&r, to electrolyze &oboth&r Bath outputs."
-				"&9-&r One &3Chemical Reactor&r, to loop &dHydrogen&r and &dChlorine&r back into &aHydrochloric Acid&r."
+				"{TFG.ev__extreme_voltage.description63}"
+				"{TFG.ev__extreme_voltage.description64}"
+				"{TFG.ev__extreme_voltage.description65}"
 				""
-				"You will be granted either Calcium or Lithium as a byproduct - it's on the house!"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GTCE, Tungstate or Scheelite took 40sec and 4 Hydrogen buckets at 1920 EU/t to electrolyze into 1 Tungsten Dust. Even if it was simpler, it was much more expensive!"
+				"{TFG.ev__extreme_voltage.description66}"
+				"{TFG.ev__extreme_voltage.description67}"
+				"{TFG.ev__extreme_voltage.description68}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:tungsten_dust"
 			id: "271CE5C2B78A1EDC"
 			size: 0.75d
-			subtitle: "All in one!"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle5}"
 			tasks: [{
 				id: "6BA811C086B5CF00"
 				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
-			title: "Tungsten Chain"
+			title: "{TFG.ev__extreme_voltage.title11}"
 			x: 6.75d
 			y: 3.375d
 		}
 		{
 			dependencies: ["271CE5C2B78A1EDC"]
-			description: ["The &3EV Mixer&r is required for more alloys, the most important being &dTungstensteel&r."]
+			description: ["{TFG.ev__extreme_voltage.description69}"]
 			hide_dependency_lines: false
 			hide_dependent_lines: true
 			icon: "gtceu:ev_mixer"
 			id: "478B0D55369C0F7F"
 			size: 0.75d
-			subtitle: "Beginning to notice a pattern?"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle6}"
 			tasks: [{
 				id: "0E0232ACC9B93FE4"
 				item: "gtceu:ev_mixer"
 				type: "item"
 			}]
-			title: "Extreme Mixing"
+			title: "{TFG.ev__extreme_voltage.title12}"
 			x: 5.625d
 			y: 2.25d
 		}
 		{
 			dependencies: ["478B0D55369C0F7F"]
 			description: [
-				"&aTungstensteel&r is composed half of Steel... suffice to say, you'll need large quantities of both &aIron&r and &aTungsten&r!"
+				"{TFG.ev__extreme_voltage.description70}"
 				""
-				"Right now, you will need it for &3Energy&r or &3Dynamo Hatches&r... one step closer to moving away from those pesky single block Generators."
+				"{TFG.ev__extreme_voltage.description71}"
 				""
-				"Boosting the smelting recipe in the &3Electric Blast Furnace&r will require &eHelium&r. You can get an initial supply from &aextracting Monazite&r or &acentrifuging Endstone&r."
+				"{TFG.ev__extreme_voltage.description72}"
 				""
-				"In the long term, you will want to get Helium via &aLiquid Air Distillation&r."
+				"{TFG.ev__extreme_voltage.description73}"
 			]
 			icon: "gtceu:tungsten_steel_ingot"
 			id: "30A6EDDF25A5E5F8"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "The main &1IV&r Material!"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle7}"
 			tasks: [
 				{
 					id: "4BEA3166CD486845"
@@ -469,16 +469,16 @@
 					type: "item"
 				}
 			]
-			title: "Tungstensteel"
+			title: "{TFG.ev__extreme_voltage.title13}"
 			x: 6.75d
 			y: 2.25d
 		}
 		{
 			dependencies: ["271CE5C2B78A1EDC"]
 			description: [
-				"Tungsten in Swedish translates directly as \"Heavy Stone\", which is pretty funny. You may know of this element as Wolfram too, hence its formula being W."
+				"{TFG.ev__extreme_voltage.description74}"
 				""
-				"&aTungsten&r will be the main &1IV&r Cable material, but will also show its face elsewhere!"
+				"{TFG.ev__extreme_voltage.description75}"
 			]
 			icon: "gtceu:tungsten_ingot"
 			id: "0B25A282F677744B"
@@ -488,31 +488,31 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			title: "Tungsten"
+			title: "{TFG.ev__extreme_voltage.title14}"
 			x: 6.75d
 			y: 4.5d
 		}
 		{
 			dependencies: ["069FD86133D7D582"]
 			description: [
-				"If you want a big boost to your processing abilities, look no further than these powerful Multiblocks!"
+				"{TFG.ev__extreme_voltage.description76}"
 				""
-				"Formerly known as &2Gregicality Multiblocks&r, the add-on has been fully integrated into GregTech CEu Modern!"
+				"{TFG.ev__extreme_voltage.description77}"
 				""
-				"You'll need to make use of many new &9alloys&r to build the new Multiblocks. Yay, more content!"
+				"{TFG.ev__extreme_voltage.description78}"
 				""
-				"&6This quest unlocks a new tutorial on the GCYM mechanics in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+				"{TFG.ev__extreme_voltage.description79}"
 			]
 			icon: "gtceu:vibration_safe_casing"
 			id: "3B2D2C47BEBCFFA7"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "We made it so far..."
+			subtitle: "{TFG.ev__extreme_voltage.subtitle8}"
 			tasks: [{
 				id: "02739BCF3877B446"
 				type: "checkmark"
 			}]
-			title: "Gregicality Multiblocks"
+			title: "{TFG.ev__extreme_voltage.title15}"
 			x: 9.0d
 			y: 6.6d
 		}
@@ -524,21 +524,21 @@
 				"30A6EDDF25A5E5F8"
 			]
 			description: [
-				"&aRuthenium-tungsten-molybdenum (RTM) Alloy Coils&r raise the Heat Capacity to a scorching &d4,500K&r."
+				"{TFG.ev__extreme_voltage.description80}"
 				""
-				"This will be required in &1IV&r, but as always, you should still get this earlier for the &6Coil bonuses&r."
+				"{TFG.ev__extreme_voltage.description81}"
 			]
 			icon: "gtceu:rtm_alloy_coil_block"
 			id: "069FD86133D7D582"
 			size: 0.75d
-			subtitle: "Wow, that's hot :flushed:"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle9}"
 			tasks: [{
 				count: 16L
 				id: "16A26A909A8CE527"
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "RTM Alloy Coils"
+			title: "{TFG.ev__extreme_voltage.title16}"
 			x: 9.0d
 			y: 2.25d
 		}
@@ -548,15 +548,15 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"The &3Diode&r (the block, not the component) accepts energy inputs from 5 sides, but only outputs through a single side."
+				"{TFG.ev__extreme_voltage.description82}"
 				""
-				"Its main purpose is to &dlimit Amperage&r. It can be useful when regulating centralised Power generation, so you can distribute your power everywhere without having to math out what cable size is safe depending on consumers..."
+				"{TFG.ev__extreme_voltage.description83}"
 				""
-				"They can also be used as an electric equivalent to Repeaters when the voltage loss from Cables (or GTEU P2P tunnels - more on that later!) gets too high."
+				"{TFG.ev__extreme_voltage.description84}"
 				""
-				"You can use a &5Soft Hammer&r to change the Amperage limit of the output."
+				"{TFG.ev__extreme_voltage.description85}"
 				""
-				"&eAny&r of the listed Diodes will complete this Quest."
+				"{TFG.ev__extreme_voltage.description86}"
 			]
 			icon: "gtceu:ev_diode"
 			id: "4B8D66A65F102D7E"
@@ -569,15 +569,15 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any diode\"}"
+							Name: "{'text':'Any diode'}"
 						}
 						"ftbfiltersystem:filter": "or(item(gtceu:lv_diode)item(gtceu:mv_diode)item(gtceu:hv_diode)item(gtceu:ev_diode)item(gtceu:iv_diode))"
 					}
 				}
-				title: "Any of these diodes"
+				title: "{TFG.ev__extreme_voltage.title17}"
 				type: "item"
 			}]
-			title: "Diode"
+			title: "{TFG.ev__extreme_voltage.title18}"
 			x: 2.25d
 			y: 5.625d
 		}
@@ -587,24 +587,24 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"The &aLarge Titanium Boiler&r is yet another steam boiler. It's even more efficient than the previous ones, and produces more steam too. However, Steam &cbarely scales&r at this voltage."
+				"{TFG.ev__extreme_voltage.description87}"
 				""
-				"This thing absolutely isn't worth it, and there are so many better options for power by this point, so you should avoid making this. The better options require &9EV energy hatches&r, which are later in the chapter."
+				"{TFG.ev__extreme_voltage.description88}"
 				""
-				"&eNote&r: The LTB is so awful that we'll let you skip this quest (for completion progress) by clicking the Checkmark. You don't actually have to craft one."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o In GT5u, players can construct another multiblock - the Large Heat Exchanger. It's also constructed with titanium, but produced Superheated Steam from hot IC2 coolant, or lava. This was a much better than regular steam, and was actually viable! This might make its way to CEu in the future."
+				"{TFG.ev__extreme_voltage.description89}"
+				"{TFG.ev__extreme_voltage.description90}"
+				"{TFG.ev__extreme_voltage.description91}"
 			]
 			id: "249FA99AADAC3710"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "We're gonna need more charcoal"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle10}"
 			tasks: [{
 				id: "7D2406F7A603AAAE"
 				item: "gtceu:titanium_large_boiler"
 				type: "item"
 			}]
-			title: "Worse Combustion"
+			title: "{TFG.ev__extreme_voltage.title19}"
 			x: 3.375d
 			y: 5.625d
 		}
@@ -614,13 +614,13 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"A lot of &dKanthal&r will be required for the &aEV Motors&r. This may feel painful when you're on the edge of &5EV&r, but it won't be a problem later - trust us."
+				"{TFG.ev__extreme_voltage.description92}"
 				""
-				"&dNeodymium&r is the metal used for &aMagnetic Rods&r."
+				"{TFG.ev__extreme_voltage.description93}"
 				""
-				"&aAluminium Cables&r require &dPVC&r to be insulated."
+				"{TFG.ev__extreme_voltage.description94}"
 				""
-				"Lastly, you will need &4Radon&r for the &dQuantum Eyes&r in the &aEmitter&r recipe."
+				"{TFG.ev__extreme_voltage.description95}"
 			]
 			icon: "gtceu:ev_electric_motor"
 			id: "26575D4FEB3D3F62"
@@ -663,27 +663,27 @@
 					type: "item"
 				}
 			]
-			title: "The \"Fun\" will never stop"
+			title: "{TFG.ev__extreme_voltage.title20}"
 			x: 3.375d
 			y: 6.75d
 		}
 		{
 			dependencies: ["7FA0ACB7F161F378"]
 			description: [
-				"The &3ME Hatches&r directly connect to your &aAE System&r, allowing you to skip placing interfaces directly on buses and hatches."
+				"{TFG.ev__extreme_voltage.description96}"
 				""
-				"&l&3Lore:&r&o This feature originally comes from GTNH!"
+				"{TFG.ev__extreme_voltage.description97}"
 			]
 			id: "681F1423A36FD4FF"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "No more interfaces on buses"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle11}"
 			tasks: [{
 				id: "69FC6941E6C83799"
 				item: "gtceu:me_input_bus"
 				type: "item"
 			}]
-			title: "ME Hatches"
+			title: "{TFG.ev__extreme_voltage.title21}"
 			x: 5.625d
 			y: 4.5d
 		}
@@ -694,9 +694,9 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"You've probably noticed the &9\"chance per tier\"&r when hovering over the bonus outputs in &2JEI&r Each overclock above the required tier will add that % bonus to the chanced output!"
+				"{TFG.ev__extreme_voltage.description98}"
 				""
-				"This means using an &3EV Macerator&r will yield &6more Byproducts&r!"
+				"{TFG.ev__extreme_voltage.description99}"
 			]
 			id: "7B23AF5B6B62BC19"
 			size: 0.75d
@@ -705,7 +705,7 @@
 				item: "gtceu:ev_macerator"
 				type: "item"
 			}]
-			title: "Even more byproducts"
+			title: "{TFG.ev__extreme_voltage.title22}"
 			x: 5.625d
 			y: 6.75d
 		}
@@ -718,19 +718,19 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"Quite a journey to get here."
+				"{TFG.ev__extreme_voltage.description100}"
 				""
-				"The &3EV Circuit Assembling&r \"unlocks\" the next tier of Circuits, &5Nano&r."
+				"{TFG.ev__extreme_voltage.description101}"
 			]
 			id: "383B789B654C4094"
 			size: 0.75d
-			subtitle: "Consider yourself firmly in EV!"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle12}"
 			tasks: [{
 				id: "544E19AF6D2630DC"
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			title: "EV Circuit Assembling"
+			title: "{TFG.ev__extreme_voltage.title23}"
 			x: 4.5d
 			y: 7.875d
 		}
@@ -740,9 +740,9 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"Note that in theory, the &3EV Chemical Reactor&r is skippable by using the &3Large Chemical Reactor&r instead, but we're evil enough to force you to make this."
+				"{TFG.ev__extreme_voltage.description102}"
 				""
-				"Its cost really shouldn't be an issue to you, and it's still useful due to its compact size."
+				"{TFG.ev__extreme_voltage.description103}"
 			]
 			id: "7D15EEE81B1A3100"
 			shape: "square"
@@ -752,20 +752,20 @@
 				item: "gtceu:ev_chemical_reactor"
 				type: "item"
 			}]
-			title: "Extreme Chemical Reactions"
+			title: "{TFG.ev__extreme_voltage.title24}"
 			x: 5.625d
 			y: 5.625d
 		}
 		{
 			dependencies: ["7D15EEE81B1A3100"]
 			description: [
-				"&aNano CPU Wafers&r are made by infusing regular &aCPU Wafers&r with &dGlowstone&r and &9Raw Carbon Fibers&r."
+				"{TFG.ev__extreme_voltage.description104}"
 				""
-				"They will be needed in large quantities when making the &5Nano&r line of Circuits."
+				"{TFG.ev__extreme_voltage.description105}"
 				""
-				"Higher-tier polymers will increase your yield of &9Raw Carbon Fibers&r. One &dEpoxy&r is enough for a full stack."
+				"{TFG.ev__extreme_voltage.description106}"
 				""
-				"&9Tip:&r Don't like mining &dGlowstone&r? Check out Redstone ore processing."
+				"{TFG.ev__extreme_voltage.description107}"
 			]
 			icon: "gtceu:nano_cpu_wafer"
 			id: "63A87C9303D54487"
@@ -790,7 +790,7 @@
 					type: "item"
 				}
 			]
-			title: "Nano CPUs"
+			title: "{TFG.ev__extreme_voltage.title25}"
 			x: 6.75d
 			y: 6.75d
 		}
@@ -802,11 +802,11 @@
 				"4C3805F75C9EE3DD"
 			]
 			description: [
-				"Making the best &6HV&r Circuits will allow for easier &6HV&r Machines for your on-demand automation. Convenient!"
+				"{TFG.ev__extreme_voltage.description108}"
 				""
-				"Starting from here, all circuit lines will be consistent with each other until the end of the game."
+				"{TFG.ev__extreme_voltage.description109}"
 				""
-				"Each tier until &cZPM&r will show its own challenges when acquiring new and better Circuits."
+				"{TFG.ev__extreme_voltage.description110}"
 			]
 			id: "196FC518F744B983"
 			size: 0.75d
@@ -815,40 +815,40 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			title: "Best HV Circuits!"
+			title: "{TFG.ev__extreme_voltage.title26}"
 			x: 6.75d
 			y: 7.875d
 		}
 		{
 			dependencies: ["117FBB18DEE6F08B"]
 			description: [
-				"Now that you have &aEpoxy&r, you can make &aAdvanced Circuit Boards&r! The next Circuit tier is oh so close, so keep pushing."
+				"{TFG.ev__extreme_voltage.description111}"
 				""
-				"&9&lTips:&r"
+				"{TFG.ev__extreme_voltage.description112}"
 				""
-				"- Consider using &dElectrotine decomposition&r and &dOre Processing&r for &eElectrum&r."
-				"- Consider using the &3Chemical Bath&r with &dMercury&r for &eGold&r, from a wide variety of ores."
+				"{TFG.ev__extreme_voltage.description113}"
+				"{TFG.ev__extreme_voltage.description114}"
 			]
 			id: "5E6BA54E8A5BEBDE"
 			size: 0.75d
-			subtitle: "Quite the gold cost..."
+			subtitle: "{TFG.ev__extreme_voltage.subtitle13}"
 			tasks: [{
 				id: "27C6D1AB82DA805D"
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			title: "Advanced Circuit Boards"
+			title: "{TFG.ev__extreme_voltage.title27}"
 			x: 5.625d
 			y: 7.875d
 		}
 		{
 			dependencies: ["383B789B654C4094"]
 			description: [
-				"The &6System-on-Chip&r (or &bSoC&r) is a specialty component that miniaturizes all the typical circuit components (like SMDs) onto a single chip."
+				"{TFG.ev__extreme_voltage.description115}"
 				""
-				"These are very useful as they unlock the most efficient recipes for creating &6Refined&r, &6Micro&r, and &6Nano Circuits&r."
+				"{TFG.ev__extreme_voltage.description116}"
 				""
-				"Each SoC-based circuit recipe requires a different minimum tier of &aAssembling Machine&r, with the Nano Circuits requiring you to hit &dLuV&r. &aSystem on Chip&r unlocks the best recipe for &dLV Circuits&r."
+				"{TFG.ev__extreme_voltage.description117}"
 			]
 			id: "6781213726919716"
 			shape: "rsquare"
@@ -858,7 +858,7 @@
 				item: "gtceu:soc"
 				type: "item"
 			}]
-			title: "System on Chip"
+			title: "{TFG.ev__extreme_voltage.title28}"
 			x: 7.875d
 			y: 7.875d
 		}
@@ -868,19 +868,19 @@
 				"7F272A099E65F848"
 			]
 			description: [
-				"Nothing to say here."
+				"{TFG.ev__extreme_voltage.description118}"
 				""
-				"Nice work, we suppose."
+				"{TFG.ev__extreme_voltage.description119}"
 			]
 			id: "0017FFFAD7CD2EFE"
 			size: 0.75d
-			subtitle: "Harder, Better, Faster, Stronger"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle14}"
 			tasks: [{
 				id: "658F8D1F068928CE"
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			title: "More EV Circuits!"
+			title: "{TFG.ev__extreme_voltage.title29}"
 			x: 7.875d
 			y: 9.0d
 		}
@@ -889,7 +889,7 @@
 				"0017FFFAD7CD2EFE"
 				"2D5BECC0AC0E316B"
 			]
-			description: ["Entering &1IV&r with these Circuits shouldn't be too painful."]
+			description: ["{TFG.ev__extreme_voltage.description120}"]
 			id: "5CC9B0E832545569"
 			size: 0.75d
 			tasks: [{
@@ -897,17 +897,17 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			title: "More IV Circuits"
+			title: "{TFG.ev__extreme_voltage.title30}"
 			x: 7.875d
 			y: 10.125d
 		}
 		{
 			dependencies: ["017019EB38F7A18C"]
 			description: [
-				"A NOR gate takes two input signals, and outputs a high signal only if both input signals are low."
+				"{TFG.ev__extreme_voltage.description121}"
 				""
-				"This doesn't matter for now though, and it's simply a more complex wafer."
-				"It is used for the &aData Orb&r (a crafting component for the &3Processing Array&r), and in &5Nano&r Circuit production."
+				"{TFG.ev__extreme_voltage.description122}"
+				"{TFG.ev__extreme_voltage.description123}"
 			]
 			id: "2D5BECC0AC0E316B"
 			shape: "rsquare"
@@ -917,13 +917,13 @@
 				item: "gtceu:nor_memory_chip"
 				type: "item"
 			}]
-			title: "NOR Gates"
+			title: "{TFG.ev__extreme_voltage.title31}"
 			x: 6.75d
 			y: 10.125d
 		}
 		{
 			dependencies: ["5CC9B0E832545569"]
-			description: ["Save two of these for the &3IV Circuit Assembler&r."]
+			description: ["{TFG.ev__extreme_voltage.description124}"]
 			id: "58BBD540D7D4FF01"
 			size: 0.75d
 			tasks: [{
@@ -931,7 +931,7 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			title: "First LuV Circuits!"
+			title: "{TFG.ev__extreme_voltage.title32}"
 			x: 7.875d
 			y: 11.25d
 		}
@@ -940,7 +940,7 @@
 				"06B4AAC7DD796182"
 				"069FD86133D7D582"
 			]
-			description: ["Amperage goes up - we're now at a whopping &e6A&r per Superconductor."]
+			description: ["{TFG.ev__extreme_voltage.description125}"]
 			id: "4A96337843BAC13A"
 			shape: "rsquare"
 			size: 0.66d
@@ -949,7 +949,7 @@
 				item: "gtceu:uranium_triplatinum_double_wire"
 				type: "item"
 			}]
-			title: "EV Superconductors"
+			title: "{TFG.ev__extreme_voltage.title33}"
 			x: 9.0d
 			y: 11.25d
 		}
@@ -959,15 +959,15 @@
 				"16B735F9C391D260"
 			]
 			description: [
-				"&aEnder Fluid Link Covers&r are &dGregTech&r's answer to &r&3Ender Tanks&r."
+				"{TFG.ev__extreme_voltage.description126}"
 				""
-				"Each Cover sends their fluids through a frequency defined by an &68-digit hexadecimal number&r (0-9, then A-F for each digit). That gives you &64.29 billion&r channels to work with! Ender Fluid Link Covers work as long as their chunk is loaded - regardless of distance or dimension."
+				"{TFG.ev__extreme_voltage.description127}"
 				""
-				"They don't come cheap, so consider setting up a way to farm &3Ender Pearls&r."
-				"{@pagebreak}"
-				"Setting the mode to Import will &c&opull&r fluids from the world location it is attached to, while Export will &o&9&opush&r fluids to the world. You must turn the I/O to Enabled for it to start working. Each channel has a buffer of &d64 buckets&r."
+				"{TFG.ev__extreme_voltage.description128}"
+				"{TFG.ev__extreme_voltage.description129}"
+				"{TFG.ev__extreme_voltage.description130}"
 				""
-				"We recommend you set up a system to organise all those channels. We would also advise against using the default channel (FFFFFFFF) in all cases."
+				"{TFG.ev__extreme_voltage.description131}"
 			]
 			id: "23A7E6D95549B1F8"
 			shape: "rsquare"
@@ -977,7 +977,7 @@
 				item: "gtceu:ender_fluid_link_cover"
 				type: "item"
 			}]
-			title: "Ender Fluid Linking"
+			title: "{TFG.ev__extreme_voltage.title34}"
 			x: 6.75d
 			y: 9.0d
 		}
@@ -987,24 +987,24 @@
 				"4024C831C77101CA"
 			]
 			description: [
-				"The &aAdvanced Energy Detector&r is an RS-latch for Energy Control."
+				"{TFG.ev__extreme_voltage.description132}"
 				""
-				"Slap it on a &3Battery Buffer&r, set a Minimum EU near 0, and a Maximum EU near the max capacity."
+				"{TFG.ev__extreme_voltage.description133}"
 				""
-				"The Cover will output a &4Redstone&r signal until the high threshold is reached, and then it will wait until the low threshold is reached to output redstone again."
+				"{TFG.ev__extreme_voltage.description134}"
 				""
-				"This is a must to automate inertia-based power generators such as Boilers, or more importantly &3Large Turbines&r."
+				"{TFG.ev__extreme_voltage.description135}"
 			]
 			id: "7F2FE3AF6F0C1190"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "Save on Redstone contraptions"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle15}"
 			tasks: [{
 				id: "305731DA47087165"
 				item: "gtceu:advanced_energy_detector_cover"
 				type: "item"
 			}]
-			title: "Advanced Energy Detector"
+			title: "{TFG.ev__extreme_voltage.title35}"
 			x: 5.625d
 			y: 9.0d
 		}
@@ -1014,9 +1014,9 @@
 				"45F9AAE4ABE32033"
 			]
 			description: [
-				"You can now remotely expand your AE2 network if you're looking to move bases."
+				"{TFG.ev__extreme_voltage.description136}"
 				""
-				"The &3Quantum Tunnel&r is no slouch to craft, so you'll need to work for it if you want it!"
+				"{TFG.ev__extreme_voltage.description137}"
 			]
 			icon: "ae2:quantum_link"
 			id: "46C7E1D5E37B1ED2"
@@ -1041,7 +1041,7 @@
 					type: "item"
 				}
 			]
-			title: "Quantum Tunnel"
+			title: "{TFG.ev__extreme_voltage.title36}"
 			x: 3.375d
 			y: 10.125d
 		}
@@ -1051,27 +1051,27 @@
 				"42FB276AB16258D9"
 			]
 			description: [
-				"&aUranium&r has very few uses in &2GTCEu&r right now, as we're &4yet to&r implement our &3Nuclear Reactor&r (it's planned!)."
+				"{TFG.ev__extreme_voltage.description138}"
 				""
-				"Make &dUranium Hexafluoride&r from &aUraninite&r. This will allow you to seperate the isotopes between U-238 and U-235."
-				"{@pagebreak}"
-				"&9Fluorine&r is fully recycled in the reaction, but you will need around maybe 40 buckets to bootstrap."
+				"{TFG.ev__extreme_voltage.description139}"
+				"{TFG.ev__extreme_voltage.description140}"
+				"{TFG.ev__extreme_voltage.description141}"
 				""
-				"&9Hydrogen&r is consumed, so you will need quite a lot of it. Either electrolyze a lot of water using several &3LV Electrolyzers&r for the best energy efficiency, or recycle any unused &dhydrocarbons&r such as Methane."
+				"{TFG.ev__extreme_voltage.description142}"
 				""
-				"&9Tip:&r You can make this setup compact by having one single &3Centrifuge&r and using a &6Fluid Regulator&r set to &dSupply Exact 1,000&r."
+				"{TFG.ev__extreme_voltage.description143}"
 			]
 			icon: "gtceu:uranium_dust"
 			id: "06B4AAC7DD796182"
 			size: 0.75d
-			subtitle: "Let's hope this quest doesn't put you on a list"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle16}"
 			tasks: [
 				{
 					count: 3L
 					id: "1BE01DA0E8A143FB"
 					item: "gtceu:uraninite_dust"
 					optional_task: true
-					title: "Uraninite Dust"
+					title: "{TFG.ev__extreme_voltage.title37}"
 					type: "item"
 				}
 				{
@@ -1085,7 +1085,7 @@
 					type: "item"
 				}
 			]
-			title: "Uranium Refinement"
+			title: "{TFG.ev__extreme_voltage.title38}"
 			x: 4.5d
 			y: 11.25d
 		}
@@ -1095,19 +1095,19 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"Don't worry, this is nothing compared to running an EBF."
+				"{TFG.ev__extreme_voltage.description144}"
 				""
-				"Hopefully for you, the &3LCR&r recipe in &2JEI&r for &aRadon&r should be self explanatory on how to set it up."
+				"{TFG.ev__extreme_voltage.description145}"
 				""
-				"Input some &aUranium&r, loop back the &dPlutonium&r using a &3Electric Furnace&r, and let the magic happen."
+				"{TFG.ev__extreme_voltage.description146}"
 				""
-				"&l&3Lore:&r&o This cursed yet charming \"chain\" is inherited from GregTech 5. Plutonium 239 existing as an ore is a sort of a placeholder to avoid having to obtain it through complicated means."
+				"{TFG.ev__extreme_voltage.description147}"
 			]
 			icon: "gtceu:radon_bucket"
 			id: "73E8283634E5E33A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "200 seconds?! WHAT?!"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle17}"
 			tasks: [
 				{
 					id: "4DBCC15F0E1C0EB8"
@@ -1120,7 +1120,7 @@
 					type: "item"
 				}
 			]
-			title: "Radon"
+			title: "{TFG.ev__extreme_voltage.title39}"
 			x: 4.5d
 			y: 9.0d
 		}
@@ -1132,47 +1132,47 @@
 				"40018C0546454CD9"
 			]
 			description: [
-				"&aEpoxy&r is the foundation for all future Circuit Boards in the game!"
+				"{TFG.ev__extreme_voltage.description148}"
 				""
-				"&9&lNote:&r This Quest is quite complicated, so tackle everything else before trying to make Epoxy. You'll need all the help you can get!"
-				"{@pagebreak}"
-				"There are several ways to obtain the ingredients for &aEpoxy&r."
+				"{TFG.ev__extreme_voltage.description149}"
+				"{TFG.ev__extreme_voltage.description150}"
+				"{TFG.ev__extreme_voltage.description151}"
 				""
-				"We will ignore recipes related to Glycerol, as they're never worth it unless modpack devs tweak things around. &mHint hint, if you're making your own pack!&r"
+				"{TFG.ev__extreme_voltage.description152}"
 				""
-				"Try and use &3Large Chemical Reactors&r to shortcut recipes."
-				"{@pagebreak}"
-				"&dChlorine&r is only partially recycled, so you'll need a constant supply. Feeding it manually will be sufficient at first."
+				"{TFG.ev__extreme_voltage.description153}"
+				"{TFG.ev__extreme_voltage.description154}"
+				"{TFG.ev__extreme_voltage.description155}"
 				""
-				"Recipes involving &dSodium Hydroxide&r could be looped by electrolyzing the &9Salt Water&r co-product."
+				"{TFG.ev__extreme_voltage.description156}"
 				""
-				"Doing this will probably require you to make some Quadruple Pipes, Pump Covers, Fluid Filters... or route everything using AE2."
+				"{TFG.ev__extreme_voltage.description157}"
 				""
-				"In general, closed loop setups are nice to prevent overproduction or overconsumption, but go for whatever's more fun for you."
+				"{TFG.ev__extreme_voltage.description158}"
 			]
 			id: "117FBB18DEE6F08B"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "Prime circuit board material"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle18}"
 			tasks: [{
 				id: "35EAB019D81FD0A6"
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			title: "Epoxy"
+			title: "{TFG.ev__extreme_voltage.title40}"
 			x: 3.375d
 			y: 7.875d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"You're going to want to use the &3LCR&r recipe for your first &aEpichlorohydrin&r."
+				"{TFG.ev__extreme_voltage.description159}"
 				""
-				"This recipe requires &aPropene&r, which means that &dOil Processing&r and &dFuel Cracking&r are now necessary ventures. We're truly sorry if you've been dragging your heels!"
+				"{TFG.ev__extreme_voltage.description160}"
 				""
-				"It's quite important that you make your first &3Distillation Tower&r before progressing to the right."
+				"{TFG.ev__extreme_voltage.description161}"
 				""
-				"Last of all, if you haven't noticed, you can loop the &dSalt Water&r byproduct to bootstrap the &dSodium Hydroxide&r."
+				"{TFG.ev__extreme_voltage.description162}"
 			]
 			id: "1F571B9E1555DA04"
 			shape: "rsquare"
@@ -1182,34 +1182,34 @@
 				item: "gtceu:epichlorohydrin_bucket"
 				type: "item"
 			}]
-			title: "Epichlorohydrin"
+			title: "{TFG.ev__extreme_voltage.title41}"
 			x: 2.25d
 			y: 7.875d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"Obtain &aPhenol&r from:"
+				"{TFG.ev__extreme_voltage.description163}"
 				""
-				"&91 -&r &aWood Tar&r distillation."
+				"{TFG.ev__extreme_voltage.description164}"
 				""
-				"&92 -&r Reacting &aBenzene&r with &dChlorine&r and &dSodium Hydroxide&r This should be performed in an &3LCR&r, and the Chlorine is perfectly looped."
+				"{TFG.ev__extreme_voltage.description165}"
 				""
-				"&93 -&r Shortcutting the above recipe by ignoring the &dSodium Hydroxide&r. This is net negative on &dChlorine&r."
+				"{TFG.ev__extreme_voltage.description166}"
 				""
-				"&94 -&r Reacting &aBenzene&r, &dPropene&r and &dOxygen&r using a small amount of &4Phosphoric Acid&r - normally a catalyst, but consumed here in small quantities. This is called the Cumene process."
-				"{@pagebreak}"
-				"If you're having trouble deciding between the options presented, here's the appeal of each route:"
+				"{TFG.ev__extreme_voltage.description167}"
+				"{TFG.ev__extreme_voltage.description168}"
+				"{TFG.ev__extreme_voltage.description169}"
 				""
-				"&91 -&r Great if you're willing to set up a &3Pyrolyse Oven&r + &3Distillation Tower&r combo."
+				"{TFG.ev__extreme_voltage.description170}"
 				""
-				"&92 -&r This one's our preference! You can use the &dSalt&r to make more &dSalt Water&r, then electrolyze to create a loop."
+				"{TFG.ev__extreme_voltage.description171}"
 				""
-				"&93 -&r Very appealing if you have an infinite supply of &dChlorine&r. You could achieve this by setting up a &3Fluid Drilling Rig&r on a Salt Water vein."
+				"{TFG.ev__extreme_voltage.description172}"
 				""
-				"&94 -&r ...&4Phosphoric Acid&r is a pain to produce. You'd be mad to consider this."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o The Benzene + Oxygen recipe was added in GTCE with the intent of fixing missing chemical recipes, as the Large Chemical Reactor didn't exist. Now that CEu provides more realistic options, we may remove the recipe in future."
+				"{TFG.ev__extreme_voltage.description173}"
+				"{TFG.ev__extreme_voltage.description174}"
+				"{TFG.ev__extreme_voltage.description175}"
 			]
 			id: "4CD9F6D1B4CC7D81"
 			shape: "rsquare"
@@ -1219,22 +1219,22 @@
 				item: "gtceu:phenol_bucket"
 				type: "item"
 			}]
-			title: "Phenol"
+			title: "{TFG.ev__extreme_voltage.title42}"
 			x: 2.25d
 			y: 6.75d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"While distilling &aWood Vinegar&r gives &aAcetone&r, the yield is low and might not meet your needs."
+				"{TFG.ev__extreme_voltage.description176}"
 				""
-				"You might want to use the direct &3LCR&r recipe from &aAcetic Acid&r to obtain &aAcetone&r."
+				"{TFG.ev__extreme_voltage.description177}"
 				""
-				"If you want to be fancy, you can also the good old &aAcetic Acid&r -> &dDissolved Calcium Acetate&r -> &aAcetone&r loop, which does not require a &3LCR&r, but still recycles the Calcium compound perfectly."
-				"{@pagebreak}"
-				"We've been talking about Acetic Acid, but we're yet to tell you how to obtain it. Wouldn't that be great?"
+				"{TFG.ev__extreme_voltage.description178}"
+				"{TFG.ev__extreme_voltage.description179}"
+				"{TFG.ev__extreme_voltage.description180}"
 				""
-				"&aAcetic Acid&r can be synthesized in the &3Chemical Reactor&r. Our favorite recipe is from &dEthylene&r."
+				"{TFG.ev__extreme_voltage.description181}"
 			]
 			id: "40018C0546454CD9"
 			shape: "rsquare"
@@ -1244,37 +1244,37 @@
 				item: "gtceu:acetone_bucket"
 				type: "item"
 			}]
-			title: "Acetone"
+			title: "{TFG.ev__extreme_voltage.title43}"
 			x: 2.25d
 			y: 9.0d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"Silicone Rubber has its uses in Cable insulation, Conveyor recipes, and more."
+				"{TFG.ev__extreme_voltage.description182}"
 				""
-				"You may want to shelve this quest for now, as tackling Silicone Rubber can be a pretty severe &dChlorine&r sink."
-				"{@pagebreak}"
-				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
+				"{TFG.ev__extreme_voltage.description183}"
+				"{TFG.ev__extreme_voltage.description184}"
+				"{TFG.ev__extreme_voltage.description185}"
 				""
-				"Both these rubbers will be required once you make it to &dLuV&r."
+				"{TFG.ev__extreme_voltage.description186}"
 			]
 			icon: "gtceu:silicone_rubber_plate"
 			id: "1A4AD56965407DC5"
 			size: 0.75d
-			subtitle: "An alternate rubber"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle19}"
 			tasks: [
 				{
 					id: "3E2FBCED1C782E7C"
 					item: "gtceu:silicone_rubber_ingot"
 					optional_task: true
-					title: "Silicone Rubber Ingot"
+					title: "{TFG.ev__extreme_voltage.title44}"
 					type: "item"
 				}
 				{
 					id: "3CF87D26761354C4"
 					item: "gtceu:silicone_rubber_plate"
-					title: "Silicone Rubber Plate"
+					title: "{TFG.ev__extreme_voltage.title45}"
 					type: "item"
 				}
 				{
@@ -1283,32 +1283,32 @@
 					type: "item"
 				}
 			]
-			title: "Silicone Rubber"
+			title: "{TFG.ev__extreme_voltage.title46}"
 			x: 1.125d
 			y: 6.75d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"&7Styrene-Butadiene Rubber (SBR)&r is an enhanced type of Rubber."
+				"{TFG.ev__extreme_voltage.description187}"
 				""
-				"It can be used in place of Rubber in most recipes, and is &6four times more efficient&r at &ainsulating Cables&r. It is also strictly required for certain higher-tier recipes."
+				"{TFG.ev__extreme_voltage.description188}"
 				""
-				"This isn't exactly worth making until you get the &3Distillation Tower&r, but it eventually becomes easier with &dFuel Cracking&r."
-				"{@pagebreak}"
-				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
+				"{TFG.ev__extreme_voltage.description189}"
+				"{TFG.ev__extreme_voltage.description190}"
+				"{TFG.ev__extreme_voltage.description191}"
 				""
-				"Both these rubbers will be required once you make it to &dLuV&r."
+				"{TFG.ev__extreme_voltage.description192}"
 			]
 			id: "77070668969E31BF"
 			size: 0.75d
-			subtitle: "Steel Ball Run"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle20}"
 			tasks: [{
 				id: "7D952AF37FC51956"
 				item: "gtceu:styrene_butadiene_rubber_plate"
 				type: "item"
 			}]
-			title: "Styrene-Butadiene Rubber"
+			title: "{TFG.ev__extreme_voltage.title47}"
 			x: 0.0d
 			y: 7.875d
 		}
@@ -1318,11 +1318,11 @@
 				"48141DBA683F6B5A"
 			]
 			description: [
-				"&aGasoline&r is an extremely powerful Combustion Fuel. It's over &63 times&r as energy dense as &dDiesel&r!"
+				"{TFG.ev__extreme_voltage.description193}"
 				""
-				"&9Note:&r This Combustion Fuel exists solely as a &echallenge&r for you to overcome if you desire to take on it."
+				"{TFG.ev__extreme_voltage.description194}"
 				""
-				"It's completely &doptional&r, so we'll let you figure out how to obtain it, without any further tips."
+				"{TFG.ev__extreme_voltage.description195}"
 			]
 			id: "00E2BAEDB8199E4E"
 			shape: "rsquare"
@@ -1332,18 +1332,18 @@
 				item: "gtceu:gasoline_bucket"
 				type: "item"
 			}]
-			title: "Gasoline"
+			title: "{TFG.ev__extreme_voltage.title48}"
 			x: 1.125d
 			y: 9.0d
 		}
 		{
 			dependencies: ["00E2BAEDB8199E4E"]
 			description: [
-				"&6Multiply the energy density by 2&r and you have &aHigh Octane Gasoline&r."
+				"{TFG.ev__extreme_voltage.description196}"
 				""
-				"&9Note:&r Automating this requires a lot of &3Distillation Towers&r! A huge portion of your base would be dedicated to producing this constantly without anything bottlenecking."
+				"{TFG.ev__extreme_voltage.description197}"
 				""
-				"If you have a base successfully running on &aHOG&r, feel free to brag and share some screenshots on our &8Discord&r."
+				"{TFG.ev__extreme_voltage.description198}"
 			]
 			id: "046B4A0B2639B16A"
 			shape: "rsquare"
@@ -1353,7 +1353,7 @@
 				item: "gtceu:high_octane_gasoline_bucket"
 				type: "item"
 			}]
-			title: "High Octane Gasoline"
+			title: "{TFG.ev__extreme_voltage.title49}"
 			x: 0.0d
 			y: 9.0d
 		}
@@ -1363,30 +1363,30 @@
 				"16A6AE5C770DB83A"
 			]
 			description: [
-				"The &3Distillation Tower&r is a multiblock that will help you extract the most out of fluids. In &3Distilleries&r, you had to pick only one product to output. DTs output &6all of it at once&r!"
+				"{TFG.ev__extreme_voltage.description199}"
 				""
-				"&9Note the special placement rules:&r Energy, Items, and Fluid Inputs can only be placed on the bottom layer. Maintenance can be placed anywhere. Fluid Outputs can only be placed starting on the second vertical layer, and only allow one per layer as well."
-				"{@pagebreak}"
-				"The &3DT&r can form at any height from &c&c3&r to &c13&r blocks, allowing 2 to 12 Fluid Outputs. Fluid will always output on the layer corresponding to the recipe in &2JEI&r."
+				"{TFG.ev__extreme_voltage.description200}"
+				"{TFG.ev__extreme_voltage.description201}"
+				"{TFG.ev__extreme_voltage.description202}"
 				""
-				"The &3DT&r has one more &9special&r rule. You can deliberately build it too short, and it will &cvoid&r whichever Fluid should have been output at the top layers that were removed. This can be useful in some very niche situations."
+				"{TFG.ev__extreme_voltage.description203}"
 				""
-				"It is a good idea to use &3Super Tanks&r as the output for every layer."
-				"{@pagebreak}"
-				"&cNote:&r Using the &3Distillation Tower&r for Oil -> Fuel -> Diesel is &cnot&r worth it! You will spend more energy overclocking the Multiblock than what you would get back from the products. It would be better to wait until you can make the &3Processing Array&r (&1IV&r) for large scale Diesel production. "
+				"{TFG.ev__extreme_voltage.description204}"
+				"{TFG.ev__extreme_voltage.description205}"
+				"{TFG.ev__extreme_voltage.description206}"
 				""
-				"However, the DT is &6very valuable&r when extracting Cracked Fuels and Pyrolyse products."
+				"{TFG.ev__extreme_voltage.description207}"
 			]
 			id: "48141DBA683F6B5A"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Time for a real oil refinery!"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle21}"
 			tasks: [{
 				id: "53541406691632A9"
 				item: "gtceu:distillation_tower"
 				type: "item"
 			}]
-			title: "Distillation Tower"
+			title: "{TFG.ev__extreme_voltage.title50}"
 			x: 1.125d
 			y: 10.125d
 		}
@@ -1396,11 +1396,11 @@
 				"48141DBA683F6B5A"
 			]
 			description: [
-				"&aLiquid Air&r is a great way to get large amounts of &aNitrogen&r and &aOxygen&r at the cost of using more energy than &3LV Centrifuges&r."
+				"{TFG.ev__extreme_voltage.description208}"
 				""
-				"However, this will also give you both &6Helium&r and &6Argon&r - which are great to boost smelting in the &3Electric Blast Furnace&r."
+				"{TFG.ev__extreme_voltage.description209}"
 				""
-				"&cNote:&r You will need at least &3HV Input and Output Hatches&r to be able to run this recipe."
+				"{TFG.ev__extreme_voltage.description210}"
 			]
 			icon: "gtceu:air_bucket"
 			id: "1030A9F4AAC685ED"
@@ -1428,22 +1428,22 @@
 					type: "item"
 				}
 			]
-			title: "True Distillation: Air"
+			title: "{TFG.ev__extreme_voltage.title51}"
 			x: 2.25d
 			y: 11.25d
 		}
 		{
 			dependencies: ["6958029B5514D4EC"]
 			description: [
-				"Some specific fluids are &dCryogenic&r, which are too cold for ordinary pipes. "
+				"{TFG.ev__extreme_voltage.description211}"
 				""
-				"Thus... you need to pick the right pipe for the job."
+				"{TFG.ev__extreme_voltage.description212}"
 				""
-				"Not many pipes support cold fluids, so you'll want to give &aStainless Steel&r or &aIridium&r a try. Later on you can use &aNaquadah&r or most of the fusion materials when you get there."
+				"{TFG.ev__extreme_voltage.description213}"
 				""
-				"&cWARNING:&r&r Cryogenics in the wrong pipes will cause &cvoiding&r, &cpipe freezing&r, and high rates of &cdeath&r! Be careful."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This is the first time GregTech has cryogenic mechanics, a GTCEu-original feature!"
+				"{TFG.ev__extreme_voltage.description214}"
+				"{TFG.ev__extreme_voltage.description215}"
+				"{TFG.ev__extreme_voltage.description216}"
 			]
 			icon: "gtceu:stainless_steel_large_fluid_pipe"
 			id: "6D12CE80F92FC485"
@@ -1453,22 +1453,22 @@
 				id: "5C8340E344B1EA59"
 				type: "checkmark"
 			}]
-			title: "This isn't Cryotheum!"
+			title: "{TFG.ev__extreme_voltage.title52}"
 			x: 3.375d
 			y: 11.25d
 		}
 		{
 			dependencies: ["48141DBA683F6B5A"]
 			description: [
-				"Here are the four most relevant &dHydrocarbons&r you will be obtaining from distilling Steam-Cracked Fuels."
+				"{TFG.ev__extreme_voltage.description217}"
 				""
-				"You will want to set this up &lbefore&r moving to &1IV&r."
+				"{TFG.ev__extreme_voltage.description218}"
 				""
-				"&aSteam-Cracked Light Fuel&r as input is probably the most favorable, but you are free to experiment."
+				"{TFG.ev__extreme_voltage.description219}"
 				""
-				"We know what you're thinking - something along the lines of \"&7&oThat Carbon output is just SO infuriating! It's ruining my automation!&r\"."
+				"{TFG.ev__extreme_voltage.description220}"
 				""
-				"Enable Item Voiding (in the controller GUI) if you don't want to build an Output Bus."
+				"{TFG.ev__extreme_voltage.description221}"
 			]
 			icon: "gtceu:oil_bucket"
 			id: "46367A76755866D9"
@@ -1496,31 +1496,31 @@
 					type: "item"
 				}
 			]
-			title: "True Distillation: Fuel"
+			title: "{TFG.ev__extreme_voltage.title53}"
 			x: 2.25d
 			y: 10.125d
 		}
 		{
 			dependencies: ["48141DBA683F6B5A"]
 			description: [
-				"This Quest requires the &3Pyrolyse Oven&r and is &doptional&r, yet convenient."
+				"{TFG.ev__extreme_voltage.description222}"
 				""
-				"The first four fluids are the important products of &aWood Tar&r Distillation:"
-				"&9-&r Phenol: useful for Epoxy and PBI"
-				"&9-&r Benzene: an important hydrocarbon"
-				"&9-&r Toluene: useful for TNT"
-				"&9-&r Dimethylbenzene: useful for PBI"
+				"{TFG.ev__extreme_voltage.description223}"
+				"{TFG.ev__extreme_voltage.description224}"
+				"{TFG.ev__extreme_voltage.description225}"
+				"{TFG.ev__extreme_voltage.description226}"
+				"{TFG.ev__extreme_voltage.description227}"
 				""
-				"Unlike Oil, putting &aWood Tar&r in the &3Distillation Tower&r for the byproducts, and using &dNitrobenzene&r for power is arguably worth it."
-				"{@pagebreak}"
-				"The bottom three are the important products from &aWood Vinegar&r Distillation:"
-				"&9-&r Acetic Acid: useful to make more Acetone"
-				"&9-&r Methanol: a moderately important hydrocarbon"
-				"&9-&r Acetone: useful for Epoxy and Gasoline"
-				"{@pagebreak}"
-				"It's also possible to use a \"full combo\" of 4 &3DTs&r -  input &aCharcoal Byproducts&r into a first tower, splitting into &aWood Tar&r, &aWood Gas&r and &aWood Vinegar&r."
+				"{TFG.ev__extreme_voltage.description228}"
+				"{TFG.ev__extreme_voltage.description229}"
+				"{TFG.ev__extreme_voltage.description230}"
+				"{TFG.ev__extreme_voltage.description231}"
+				"{TFG.ev__extreme_voltage.description232}"
+				"{TFG.ev__extreme_voltage.description233}"
+				"{TFG.ev__extreme_voltage.description234}"
+				"{TFG.ev__extreme_voltage.description235}"
 				""
-				"This isn't the most efficient cost-to-production ratio, but the option is there if you get bored."
+				"{TFG.ev__extreme_voltage.description236}"
 			]
 			icon: "gtceu:seed_oil_bucket"
 			id: "5742702B8021B1F5"
@@ -1563,49 +1563,49 @@
 					type: "item"
 				}
 			]
-			title: "True Distillation: Organic"
+			title: "{TFG.ev__extreme_voltage.title54}"
 			x: 1.125d
 			y: 11.25d
 		}
 		{
 			dependencies: ["48141DBA683F6B5A"]
 			description: [
-				"The &3Cracker&r is a multiblock built with the sole purpose of cracking fluids. It comes with all the recipes of &3Chemical Reactor&r Cracking, but it is &6lossless&r."
+				"{TFG.ev__extreme_voltage.description237}"
 				""
-				"This is a great way to save a lot of Fuel in the long term!"
+				"{TFG.ev__extreme_voltage.description238}"
 				""
-				"Higher Coil tiers provide a small energy discount - up to 70% with the best Coils available."
+				"{TFG.ev__extreme_voltage.description239}"
 			]
 			id: "24866E83B280C9AB"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "You Crack Me Up"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle22}"
 			tasks: [{
 				id: "4307AF60A80EE9FC"
 				item: "gtceu:cracker"
 				type: "item"
 			}]
-			title: "Multiblock Cracking"
+			title: "{TFG.ev__extreme_voltage.title55}"
 			x: 0.0d
 			y: 10.125d
 		}
 		{
 			dependencies: ["3B2D2C47BEBCFFA7"]
 			description: [
-				"The &aAlloy Blast Smelter&r is the only main &2GCYM&r machine available in &5EV&r. You can use it to produce any alloy that you'd normally use the Mixer for. "
+				"{TFG.ev__extreme_voltage.description240}"
 				""
-				"Instead of producing &6Hot Ingots&r, the ABS produces &9Molten Fluids&r if the recipe is \"hot\" enough. These fluids require cooling with a &bVacuum Freezer&r. Otherwise, it produces regular liquids."
+				"{TFG.ev__extreme_voltage.description241}"
 				""
-				"Don't let the long smelting times scare you off. This machine incorporates the &dMixer step&r directly into the smelting recipe, and actually saves you quite a bit of time over smelting the dust in an EBF!"
+				"{TFG.ev__extreme_voltage.description242}"
 				""
-				"Nearly every &2GCYM&r material is produced in this machine, so if you have trouble finding a Mixer recipe, look for a Molten Fluid!"
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This multiblock was inspired by GT++. It didn't use any heating coils, had no temperature requirements, and only produced regular liquids for all materials. It was pretty OP back in the day, but it eventually got restricted to only a single Energy Hatch to balance it out. For some reason, it also allowed you to melt any dust... into liquid...?"
+				"{TFG.ev__extreme_voltage.description243}"
+				"{TFG.ev__extreme_voltage.description244}"
+				"{TFG.ev__extreme_voltage.description245}"
 			]
 			id: "5979B0E13A1EDC9C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "Visions of GT++"
+			subtitle: "{TFG.ev__extreme_voltage.subtitle23}"
 			tasks: [{
 				id: "1493AF342D999313"
 				item: "gtceu:alloy_blast_smelter"
@@ -1615,6 +1615,6 @@
 			y: 6.75d
 		}
 	]
-	subtitle: ["Improve your infrastructure and parallelise your setups"]
-	title: "&5EV&r - Extreme Voltage"
+	subtitle: ["{TFG.ev__extreme_voltage.subtitle24}"]
+	title: "{TFG.ev__extreme_voltage.title56}"
 }

@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{quests.76EF4D00586A8B74.d1}"]
+			description: ["{TFG.primitive_age.description0}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -20,21 +20,21 @@
 			id: "76EF4D00586A8B74"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "{quests.76EF4D00586A8B74.st}"
+			subtitle: "{TFG.primitive_age.subtitle0}"
 			tasks: [{
 				id: "7CFEDEBD7D6FD796"
 				type: "checkmark"
 			}]
-			title: "{quests.76EF4D00586A8B74.t}"
+			title: "{TFG.primitive_age.title0}"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.365F6F48E0BB2EFC.d1}"]
+			description: ["{TFG.primitive_age.description1}"]
 			id: "365F6F48E0BB2EFC"
 			size: 2.0d
-			subtitle: "{quests.365F6F48E0BB2EFC.st}"
+			subtitle: "{TFG.primitive_age.subtitle1}"
 			tasks: [
 				{
 					count: 5L
@@ -46,7 +46,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:can_be_lit_on_torch)"
 						}
 					}
-					title: "{quests.365F6F48E0BB2EFC.t1}"
+					title: "{TFG.primitive_age.title1}"
 					type: "item"
 				}
 				{
@@ -59,19 +59,19 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock_knapping)"
 						}
 					}
-					title: "{quests.365F6F48E0BB2EFC.t2}"
+					title: "{TFG.primitive_age.title2}"
 					type: "item"
 				}
 			]
-			title: "{quests.365F6F48E0BB2EFC.t}"
+			title: "{TFG.primitive_age.title3}"
 			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["Instead of ordinary pebbles, you can find pieces of ore in the world, they usually indicate that somewhere underground there is a vein with ore similar in material to a piece of ore found on the surface, but so far you do not have a pickaxe, so you should collect such pieces, because they can be melted into metal using molds and a fire pit, which we will talk about later."]
+			description: ["{TFG.primitive_age.description2}"]
 			id: "40A930BEBFCFBF3B"
-			subtitle: "Your first metal is already available, at a discount"
+			subtitle: "{TFG.primitive_age.subtitle2}"
 			tasks: [
 				{
 					id: "45ADEA53258F0876"
@@ -242,14 +242,14 @@
 					type: "item"
 				}
 			]
-			title: "Pebbles with ore"
+			title: "{TFG.primitive_age.title4}"
 			x: -3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2BFC2744E4DE4B5A"]
 			id: "373FD04AD6CA9F92"
-			subtitle: "{quests.373FD04AD6CA9F92.st}"
+			subtitle: "{TFG.primitive_age.subtitle3}"
 			tasks: [{
 				id: "794D2D1559FA7CEA"
 				item: {
@@ -259,47 +259,47 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
 					}
 				}
-				title: "{quests.373FD04AD6CA9F92.t1}"
+				title: "{TFG.primitive_age.title5}"
 				type: "item"
 			}]
-			title: "{quests.373FD04AD6CA9F92.t}"
+			title: "{TFG.primitive_age.title6}"
 			x: 6.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["373FD04AD6CA9F92"]
 			description: [
-				"{quests.5DB0CA9F9724D301.d1}"
+				"{TFG.primitive_age.description3}"
 				""
-				"{image:tfg:textures/quests/primitive_charcoal_1.png width:170 height:100 align:1}"
+				"{TFG.primitive_age.description4}"
 				""
-				"{quests.5DB0CA9F9724D301.d2}"
+				"{TFG.primitive_age.description5}"
 				""
-				"{image:tfg:textures/quests/primitive_charcoal_2.png width:200 height:100 align:1}"
+				"{TFG.primitive_age.description6}"
 				""
-				"{quests.5DB0CA9F9724D301.d3}"
+				"{TFG.primitive_age.description7}"
 				""
-				"{image:tfg:textures/quests/primitive_charcoal_3.png width:190 height:100 align:1}"
+				"{TFG.primitive_age.description8}"
 				""
-				"{quests.5DB0CA9F9724D301.d4}"
+				"{TFG.primitive_age.description9}"
 			]
 			id: "5DB0CA9F9724D301"
-			subtitle: "{quests.5DB0CA9F9724D301.st}"
+			subtitle: "{TFG.primitive_age.subtitle4}"
 			tasks: [{
 				count: 16L
 				id: "58361DD51C891C43"
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			title: "{quests.5DB0CA9F9724D301.t}"
+			title: "{TFG.primitive_age.title7}"
 			x: 8.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["{quests.3B3BA51C8CAEFC7F.d1}"]
+			description: ["{TFG.primitive_age.description10}"]
 			id: "3B3BA51C8CAEFC7F"
-			subtitle: "{quests.3B3BA51C8CAEFC7F.st}"
+			subtitle: "{TFG.primitive_age.subtitle5}"
 			tasks: [{
 				id: "1D1EC6EF1FCBA733"
 				item: {
@@ -309,24 +309,23 @@
 						Damage: 0
 					}
 				}
-				match_nbt: false
 				type: "item"
 			}]
-			title: "{quests.3B3BA51C8CAEFC7F.t}"
+			title: "{TFG.primitive_age.title8}"
 			x: 3.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3B3BA51C8CAEFC7F"]
-			description: ["{quests.682B58EC2D39F1A1.d1}"]
+			description: ["{TFG.primitive_age.description11}"]
 			id: "682B58EC2D39F1A1"
-			subtitle: "{quests.682B58EC2D39F1A1.st}"
+			subtitle: "{TFG.primitive_age.subtitle6}"
 			tasks: [{
 				icon: "tfc:firepit"
 				id: "4639272D5258BCFC"
 				observe_type: 0
 				timer: 0L
-				title: "{quests.682B58EC2D39F1A1.t1}"
+				title: "{TFG.primitive_age.title9}"
 				to_observe: "tfc:firepit"
 				type: "observation"
 			}]
@@ -335,16 +334,16 @@
 		}
 		{
 			dependencies: ["682B58EC2D39F1A1"]
-			description: ["{quests.6D940527BFF1D4C0.d1}"]
+			description: ["{TFG.primitive_age.description12}"]
 			id: "6D940527BFF1D4C0"
-			subtitle: "{quests.6D940527BFF1D4C0.st}"
+			subtitle: "{TFG.primitive_age.subtitle7}"
 			tasks: [{
 				count: 2L
 				id: "6697694A11A541B9"
 				item: "tfc:torch"
 				type: "item"
 			}]
-			title: "{quests.6D940527BFF1D4C0.t}"
+			title: "{TFG.primitive_age.title10}"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -364,7 +363,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
 					}
 				}
-				title: "Any Lumber"
+				title: "{TFG.primitive_age.title11}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -372,15 +371,19 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.387DEEADF4922AB3.d1}"]
+			description: [
+				"{TFG.primitive_age.description13}"
+				""
+				"{TFG.primitive_age.description14}"
+			]
 			icon: "gtceu:shale_aluminium_ore"
 			id: "387DEEADF4922AB3"
-			subtitle: "{quests.387DEEADF4922AB3.st}"
+			subtitle: "{TFG.primitive_age.subtitle8}"
 			tasks: [{
 				id: "7E131C48FAB52A11"
 				type: "checkmark"
 			}]
-			title: "{quests.387DEEADF4922AB3.t}"
+			title: "{TFG.primitive_age.title12}"
 			x: -4.5d
 			y: 0.5d
 		}
@@ -1032,9 +1035,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["{quests.2BFC2744E4DE4B5A.d1}"]
+			description: ["{TFG.primitive_age.description15}"]
 			id: "2BFC2744E4DE4B5A"
-			subtitle: "{quests.2BFC2744E4DE4B5A.st}"
+			subtitle: "{TFG.primitive_age.subtitle9}"
 			tasks: [{
 				id: "27927A7A1267C056"
 				item: {
@@ -1055,9 +1058,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["{quests.318BF1F671BC4620.d1}"]
+			description: ["{TFG.primitive_age.description16}"]
 			id: "318BF1F671BC4620"
-			subtitle: "{quests.318BF1F671BC4620.st}"
+			subtitle: "{TFG.primitive_age.subtitle10}"
 			tasks: [{
 				id: "59508B56C7C3C891"
 				item: {
@@ -1078,9 +1081,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["{quests.508DA76FA2766B7B.d1}"]
+			description: ["{TFG.primitive_age.description17}"]
 			id: "508DA76FA2766B7B"
-			subtitle: "{quests.508DA76FA2766B7B.st}"
+			subtitle: "{TFG.primitive_age.subtitle11}"
 			tasks: [{
 				id: "061392B0556D6810"
 				item: {
@@ -1090,8 +1093,7 @@
 						"ftbfiltersystem:filter": "or(item(tfc:stone/javelin/igneous_extrusive)item(tfc:stone/javelin/igneous_intrusive)item(tfc:stone/javelin/metamorphic)item(tfc:stone/javelin/sedimentary))"
 					}
 				}
-				match_nbt: false
-				title: "{quests.508DA76FA2766B7B.t1}"
+				title: "{TFG.primitive_age.title13}"
 				type: "item"
 			}]
 			x: 2.0d
@@ -1099,9 +1101,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["{quests.716B407EEED8BE95.d1}"]
+			description: ["{TFG.primitive_age.description18}"]
 			id: "716B407EEED8BE95"
-			subtitle: "{quests.716B407EEED8BE95.st}"
+			subtitle: "{TFG.primitive_age.subtitle12}"
 			tasks: [{
 				id: "10A730E97830976C"
 				item: {
@@ -1122,10 +1124,10 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["Hammer: mainly used only to create a stone anvil and the first copper double ingots, but there will be information about this later in the quests."]
+			description: ["{TFG.primitive_age.description19}"]
 			hide_dependency_lines: true
 			id: "120E5C0E43EC756B"
-			subtitle: "Make a better copper one!"
+			subtitle: "{TFG.primitive_age.subtitle13}"
 			tasks: [{
 				id: "4BD017E2BEB690C4"
 				item: {
@@ -1149,15 +1151,15 @@
 				"318BF1F671BC4620"
 				"5C396041880D32FF"
 			]
-			description: ["{quests.36A9E5CD45A79288.d1}"]
+			description: ["{TFG.primitive_age.description20}"]
 			id: "36A9E5CD45A79288"
-			subtitle: "{quests.36A9E5CD45A79288.st}"
+			subtitle: "{TFG.primitive_age.subtitle14}"
 			tasks: [{
 				icon: "tfc:farmland/silt"
 				id: "3321FE657126AD2E"
 				observe_type: 1
 				timer: 0L
-				title: "{quests.36A9E5CD45A79288.t1}"
+				title: "{TFG.primitive_age.title14}"
 				to_observe: "tfc:farmland"
 				type: "observation"
 			}]
@@ -1167,9 +1169,9 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			dependency_requirement: "one_completed"
-			description: ["{quests.5C396041880D32FF.d1}"]
+			description: ["{TFG.primitive_age.description21}"]
 			id: "5C396041880D32FF"
-			subtitle: "{quests.5C396041880D32FF.st}"
+			subtitle: "{TFG.primitive_age.subtitle15}"
 			tasks: [{
 				id: "24625450C85F8A04"
 				item: {
@@ -1179,7 +1181,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:seeds)"
 					}
 				}
-				title: "{quests.5C396041880D32FF.t1}"
+				title: "{TFG.primitive_age.title15}"
 				type: "item"
 			}]
 			x: 0.5d
@@ -1190,10 +1192,10 @@
 				"682B58EC2D39F1A1"
 				"7196BB6BDBAE7B51"
 			]
-			description: ["{quests.557D3A67A36DF9D8.d1}"]
+			description: ["{TFG.primitive_age.description22}"]
 			id: "557D3A67A36DF9D8"
 			size: 2.0d
-			subtitle: "{quests.557D3A67A36DF9D8.st}"
+			subtitle: "{TFG.primitive_age.subtitle16}"
 			tasks: [{
 				id: "542CC6E7CC064CB7"
 				item: {
@@ -1203,7 +1205,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/cooked_meats)"
 					}
 				}
-				title: "{quests.557D3A67A36DF9D8.t1}"
+				title: "{TFG.primitive_age.title16}"
 				type: "item"
 			}]
 			x: 3.5d
@@ -1212,9 +1214,9 @@
 		{
 			dependencies: ["76EF4D00586A8B74"]
 			dependency_requirement: "one_completed"
-			description: ["{quests.7196BB6BDBAE7B51.d1}"]
+			description: ["{TFG.primitive_age.description23}"]
 			id: "7196BB6BDBAE7B51"
-			subtitle: "{quests.7196BB6BDBAE7B51.st}"
+			subtitle: "{TFG.primitive_age.subtitle17}"
 			tasks: [{
 				id: "094E96DABE2F5DD7"
 				item: {
@@ -1224,7 +1226,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/raw_meats)"
 					}
 				}
-				title: "{quests.7196BB6BDBAE7B51.t1}"
+				title: "{TFG.primitive_age.title17}"
 				type: "item"
 			}]
 			x: -1.5d
@@ -1232,9 +1234,9 @@
 		}
 		{
 			dependencies: ["06C7B7138EDE4B38"]
-			description: ["{quests.45D907EF7902A200.d1}"]
+			description: ["{TFG.primitive_age.description24}"]
 			id: "45D907EF7902A200"
-			subtitle: "{quests.45D907EF7902A200.st}"
+			subtitle: "{TFG.primitive_age.subtitle18}"
 			tasks: [{
 				count: 16L
 				id: "77860121847D8117"
@@ -1246,9 +1248,9 @@
 		}
 		{
 			dependencies: ["365F6F48E0BB2EFC"]
-			description: ["{quests.06C7B7138EDE4B38.d1}"]
+			description: ["{TFG.primitive_age.description25}"]
 			id: "06C7B7138EDE4B38"
-			subtitle: "{quests.06C7B7138EDE4B38.st}"
+			subtitle: "{TFG.primitive_age.subtitle19}"
 			tasks: [{
 				id: "45C890F7C082CA9E"
 				item: {
@@ -1269,15 +1271,15 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.63E6C5684E12828C.d1}"]
+			description: ["{TFG.primitive_age.description26}"]
 			id: "63E6C5684E12828C"
-			subtitle: "{quests.63E6C5684E12828C.st}"
+			subtitle: "{TFG.primitive_age.subtitle20}"
 			tasks: [{
 				icon: "minecraft:water_bucket"
 				id: "193361529488FE5C"
 				observe_type: 0
 				timer: 0L
-				title: "{quests.63E6C5684E12828C.t1}"
+				title: "{TFG.primitive_age.title18}"
 				to_observe: "minecraft:water"
 				type: "observation"
 			}]
@@ -1318,7 +1320,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
 					}
 				}
-				title: "Any anvil from any bronze"
+				title: "{TFG.primitive_age.title19}"
 				type: "item"
 			}]
 			x: 18.5d
@@ -1389,23 +1391,23 @@
 		}
 		{
 			dependencies: ["36A9E5CD45A79288"]
-			description: ["{quests.4CF472C9778068D6.d1}"]
+			description: ["{TFG.primitive_age.description27}"]
 			icon: "tfc:wild_crop/barley"
 			id: "4CF472C9778068D6"
-			subtitle: "{quests.4CF472C9778068D6.st}"
+			subtitle: "{TFG.primitive_age.subtitle21}"
 			tasks: [{
 				id: "7226C69847993160"
-				title: "{quests.4CF472C9778068D6.t1}"
+				title: "{TFG.primitive_age.title20}"
 				type: "checkmark"
 			}]
-			title: "{quests.4CF472C9778068D6.t}"
+			title: "{TFG.primitive_age.title21}"
 			x: 2.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["45D907EF7902A200"]
 			id: "30AE1FF285B64716"
-			subtitle: "{quests.30AE1FF285B64716.st}"
+			subtitle: "{TFG.primitive_age.subtitle22}"
 			tasks: [{
 				count: 16L
 				id: "71AD45BFB355905E"
@@ -1417,9 +1419,9 @@
 		}
 		{
 			dependencies: ["45D907EF7902A200"]
-			description: ["{quests.0ED8BE436A0ECDDB.d1}"]
+			description: ["{TFG.primitive_age.description28}"]
 			id: "0ED8BE436A0ECDDB"
-			subtitle: "{quests.0ED8BE436A0ECDDB.st}"
+			subtitle: "{TFG.primitive_age.subtitle23}"
 			tasks: [{
 				count: 16L
 				id: "485D243786542A96"
@@ -1434,16 +1436,16 @@
 				"45D907EF7902A200"
 				"373FD04AD6CA9F92"
 			]
-			description: ["{quests.69D20168E26BBF59.d1}"]
+			description: ["{TFG.primitive_age.description29}"]
 			id: "69D20168E26BBF59"
 			size: 2.0d
-			subtitle: "{quests.69D20168E26BBF59.st}"
+			subtitle: "{TFG.primitive_age.subtitle24}"
 			tasks: [{
 				icon: "tfc:firepit"
 				id: "4104866DD66BFB2E"
 				observe_type: 0
 				timer: 0L
-				title: "{quests.69D20168E26BBF59.t1}"
+				title: "{TFG.primitive_age.title22}"
 				to_observe: "tfc:pit_kiln"
 				type: "observation"
 			}]
@@ -1642,7 +1644,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/raw)"
 					}
 				}
-				title: "Any Raw Stone"
+				title: "{TFG.primitive_age.title23}"
 				type: "item"
 			}]
 			x: 9.5d
@@ -1661,7 +1663,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze pickaxe"
+				title: "{TFG.primitive_age.title24}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1680,7 +1682,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/smooth)"
 					}
 				}
-				title: "Any Smooth Stone"
+				title: "{TFG.primitive_age.title25}"
 				type: "item"
 			}]
 			x: 11.0d
@@ -1723,7 +1725,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze chisel"
+				title: "{TFG.primitive_age.title26}"
 				type: "item"
 			}]
 			x: 9.5d
@@ -1734,9 +1736,8 @@
 			hide_dependency_lines: true
 			id: "3029097F88B8AABF"
 			size: 1.5d
-			subtitle: "Broke ore using Hammer (Not Mining Hammer)"
 			tasks: [{
-				id: "0F58D0E86DAC23CD"
+				id: "37D21B5266C73385"
 				item: "gtceu:crushed_graphite_ore"
 				type: "item"
 			}]
@@ -1859,7 +1860,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:barrels)"
 					}
 				}
-				title: "Any Barrels"
+				title: "{TFG.primitive_age.title27}"
 				type: "item"
 			}]
 			x: 16.5d
@@ -1935,7 +1936,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze saw"
+				title: "{TFG.primitive_age.title28}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1954,7 +1955,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Copper or bronze propick"
+				title: "{TFG.primitive_age.title29}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -1973,7 +1974,7 @@
 					}
 				}
 				match_nbt: false
-				title: "A copper or bronze hammer"
+				title: "{TFG.primitive_age.title30}"
 				type: "item"
 			}]
 			x: 12.0d
@@ -1986,9 +1987,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"To make a stone anvil, you have to click on the top of the stone with a hammer"
+				"{TFG.primitive_age.description30}"
 				""
-				"(you need to use igneous Intrusive stone)"
+				"{TFG.primitive_age.description31}"
 			]
 			id: "169485270E86A50C"
 			tasks: [{
@@ -1996,7 +1997,7 @@
 				id: "028DBFDDC00B9949"
 				observe_type: 1
 				timer: 0L
-				title: "Make Rock Anvil"
+				title: "{TFG.primitive_age.title31}"
 				to_observe: "#tfc:rock_anvils"
 				type: "observation"
 			}]
@@ -2031,7 +2032,7 @@
 				"7A266A3E0A632D42"
 				"169485270E86A50C"
 			]
-			description: ["To make welding craft on an anvil, you need to take a hammer in your leading hand and press shift+rmb on the anvil"]
+			description: ["{TFG.primitive_age.description32}"]
 			id: "5EBFCE37D727DFD0"
 			tasks: [{
 				count: 7L
@@ -2070,7 +2071,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:bronze_ingot)item(gtceu:black_bronze_ingot)item(gtceu:bismuth_bronze_ingot))"
 					}
 				}
-				title: "Any bronze ingot"
+				title: "{TFG.primitive_age.title32}"
 				type: "item"
 			}]
 			x: 18.5d
@@ -2221,7 +2222,7 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:bismuth_bronze_double_ingot)item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot))"
 					}
 				}
-				title: "Double ingots of any Bronze"
+				title: "{TFG.primitive_age.title33}"
 				type: "item"
 			}]
 			x: 18.5d
@@ -2232,15 +2233,15 @@
 			hide_dependency_lines: true
 			id: "73BF0075860E666B"
 			tasks: [{
-				id: "0B0CF81DC4968709"
+				id: "54334DA4AC22438E"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 					}
 				}
-				title: "Any Copper Ore"
+				title: "{TFG.primitive_age.title34}"
 				type: "item"
 			}]
 			x: 16.5d
@@ -2262,31 +2263,34 @@
 			id: "2DEEDED2F21E60B9"
 			tasks: [
 				{
-					id: "61FBFAD12DD6486F"
+					id: "024533C5E4B89787"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+							display: {
+								Name: "{'text':'any tin ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_cassiterite)item(gtceu:raw_tin)item(gtceu:raw_cassiterite)item(gtceu:raw_cassiterite_sand)item(gtceu:poor_raw_tin)item(gtceu:poor_raw_cassiterite)item(gtceu:poor_raw_cassiterite_sand)item(gtceu:rich_raw_tin)item(gtceu:rich_raw_cassiterite)item(gtceu:rich_raw_cassiterite_sand))"
 						}
 					}
-					title: "Any Copper Ore"
+					title: "{TFG.primitive_age.title35}"
 					type: "item"
 				}
 				{
-					id: "4A4A9E47E7251680"
+					id: "26C207A03F30FB27"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:ore/small_cassiterite)item(gtceu:tiny_tin_dust)item(gtceu:tiny_cassiterite_sand_dust)item(gtceu:tiny_cassiterite_dust)item(gtceu:raw_tin)item(gtceu:raw_cassiterite)item(gtceu:raw_cassiterite_sand)item(gtceu:rich_raw_tin)item(gtceu:rich_raw_cassiterite)item(gtceu:rich_raw_cassiterite_sand)item(gtceu:poor_raw_tin)item(gtceu:poor_raw_cassiterite)item(gtceu:poor_raw_cassiterite_sand))"
+							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 						}
 					}
-					title: "Any Tin Ore"
+					title: "{TFG.primitive_age.title36}"
 					type: "item"
 				}
 			]
-			title: "Resources for ordinary bronze"
+			title: "{TFG.primitive_age.title37}"
 			x: 18.5d
 			y: 14.0d
 		}
@@ -2295,15 +2299,15 @@
 			hide_dependency_lines: true
 			id: "566FA805413004CF"
 			tasks: [{
-				id: "74026020BB7FD0C8"
+				id: "7E987D9B30125F52"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(minecraft:raw_iron)item(tfc:ore/small_hematite)item(tfc:ore/small_magnetite)item(tfc:ore/small_limonite)item(gtceu:tiny_iron_dust)item(gtceu:tiny_hematite_dust)item(gtceu:tiny_goethite_dust)item(gtceu:tiny_magnetite_dust)item(gtceu:tiny_pyrite_dust)item(gtceu:tiny_yellow_limonite_dust)item(gtceu:raw_hematite)item(gtceu:raw_goethite)item(gtceu:raw_pyrite)item(gtceu:raw_yellow_limonite)item(gtceu:poor_raw_iron)item(gtceu:poor_raw_hematite)item(gtceu:poor_raw_goethite)item(gtceu:poor_raw_magnetite)item(gtceu:poor_raw_pyrite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:rich_raw_iron)item(gtceu:rich_raw_hematite)item(gtceu:rich_raw_goethite)item(gtceu:rich_raw_magnetite)item(gtceu:rich_raw_pyrite)item(gtceu:rich_raw_yellow_limonite))"
+						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_hematite)item(gtceu:raw_hematite)item(tfc:ore/small_hematite)item(gtceu:poor_raw_hematite)item(gtceu:rich_raw_yellow_limonite)item(tfc:ore/small_limonite)item(gtceu:poor_raw_yellow_limonite)item(gtceu:raw_yellow_limonite)item(tfc:ore/small_magnetite)item(gtceu:poor_raw_magnetite)item(gtceu:raw_magnetite)item(gtceu:rich_raw_magnetite)item(gtceu:poor_raw_iron)item(minecraft:raw_iron)item(gtceu:rich_raw_iron)item(gtceu:poor_raw_goethite)item(gtceu:raw_goethite)item(gtceu:rich_raw_goethite)item(gtceu:poor_raw_pyrite)item(gtceu:raw_pyrite)item(gtceu:rich_raw_pyrite)item(gtceu:crushed_yellow_limonite_ore))"
 					}
 				}
-				title: "Any Iron Ore"
+				title: "{TFG.primitive_age.title38}"
 				type: "item"
 			}]
 			x: 22.5d
@@ -2373,7 +2377,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:dyes)"
 					}
 				}
-				title: "Any Dyes"
+				title: "{TFG.primitive_age.title39}"
 				type: "item"
 			}]
 			x: 14.0d
@@ -2393,46 +2397,52 @@
 				id: "gtceu:bismuth_bronze_dust"
 			}
 			id: "515141734CA1A002"
-			subtitle: "Cheap and shiny"
+			subtitle: "{TFG.primitive_age.subtitle25}"
 			tasks: [
 				{
-					id: "72D482BA2D14A873"
+					id: "7EBB6EC50EE8CFA1"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+							display: {
+								Name: "{'text':'any bismuth ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_bismuthinite)item(gtceu:raw_bismuth)item(gtceu:poor_raw_bismuth)item(gtceu:rich_raw_bismuth))"
 						}
 					}
-					title: "Any Copper Ore"
+					title: "{TFG.primitive_age.title40}"
 					type: "item"
 				}
 				{
-					id: "7EE7D70C8B855FD4"
+					id: "51BEF595B2A3014C"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite)item(gtceu:tiny_zinc_dust)item(gtceu:tiny_sphalerite_dust)item(gtceu:raw_sphalerite)item(gtceu:poor_raw_sphalerite)item(gtceu:rich_raw_sphalerite))"
+							display: {
+								Name: "{'text':'any sphalerite ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite)item(gtceu:raw_sphalerite)item(gtceu:poor_raw_sphalerite)item(gtceu:rich_raw_sphalerite))"
 						}
 					}
-					title: "Any Zinc Ore"
+					title: "{TFG.primitive_age.title41}"
 					type: "item"
 				}
 				{
-					id: "0828B00285E5DBD8"
+					id: "74F88351793C165A"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_bismuth_dust)item(tfc:ore/small_bismuthinite)item(gtceu:raw_bismuth)item(gtceu:rich_raw_bismuth)item(gtceu:poor_raw_bismuth))"
+							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 						}
 					}
-					title: "Any Bismuth Ore"
+					title: "{TFG.primitive_age.title42}"
 					type: "item"
 				}
 			]
-			title: "Resources for Bismuth bronze"
+			title: "{TFG.primitive_age.title43}"
 			x: 18.5d
 			y: 15.0d
 		}
@@ -2450,46 +2460,49 @@
 				id: "gtceu:black_bronze_dust"
 			}
 			id: "69B4B677A27121CF"
-			subtitle: "Expensive and black"
+			subtitle: "{TFG.primitive_age.subtitle26}"
 			tasks: [
 				{
-					id: "45C62339992715C9"
+					id: "1294B28A98775920"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+							display: {
+								Name: "{'text':'any silver ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_silver)item(gtceu:poor_raw_silver)item(gtceu:rich_raw_silver)item(gtceu:raw_silver))"
 						}
 					}
-					title: "Any Copper Ore"
+					title: "{TFG.primitive_age.title44}"
 					type: "item"
 				}
 				{
-					id: "5461C4FA5EAD78F0"
+					id: "53F7A77859F53B3D"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_silver)item(gtceu:tiny_silver_dust)item(gtceu:raw_silver)item(gtceu:rich_raw_silver)item(gtceu:poor_raw_silver))"
+							"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(tfc:ore/small_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:rich_raw_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(tfc:ore/small_native_copper)item(gtceu:poor_raw_copper)item(minecraft:raw_copper)item(gtceu:rich_raw_copper))"
 						}
 					}
-					title: "Any Silver Ore"
+					title: "{TFG.primitive_age.title45}"
 					type: "item"
 				}
 				{
-					id: "0DE4CC2BCDE489C0"
+					id: "755505207091F3E2"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(gtceu:rich_raw_gold)item(gtceu:tiny_gold_dust))"
+							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(gtceu:rich_raw_gold)item(gtceu:poor_raw_gold)item(tfc:ore/small_native_gold))"
 						}
 					}
-					title: "Any Gold Ore"
+					title: "{TFG.primitive_age.title46}"
 					type: "item"
 				}
 			]
-			title: "Resources for Black Bronze"
+			title: "{TFG.primitive_age.title47}"
 			x: 18.5d
 			y: 13.0d
 		}
@@ -2729,14 +2742,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"2765DB2E20A745F8"
-				"48AED37B4E20A99A"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{quests.478D0DF94D7495EF.d1}"]
+			dependencies: ["2765DB2E20A745F8"]
+			description: ["{TFG.primitive_age.description33}"]
 			id: "478D0DF94D7495EF"
-			subtitle: "{quests.478D0DF94D7495EF.st}"
+			subtitle: "{TFG.primitive_age.subtitle27}"
 			tasks: [{
 				id: "19D772A3B1F41323"
 				item: {
@@ -2746,7 +2755,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass)"
 					}
 				}
-				title: "{quests.478D0DF94D7495EF.t1}"
+				title: "{TFG.primitive_age.title48}"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2771,7 +2780,7 @@
 			]
 			id: "6E13B0241CB1D536"
 			size: 2.0d
-			subtitle: "Did you think we would force you to use treetaps...?"
+			subtitle: "{TFG.primitive_age.subtitle28}"
 			tasks: [{
 				id: "44C1C7857D5E60D7"
 				item: "gtceu:sticky_resin"
@@ -2790,7 +2799,7 @@
 				id: "33278CA851060438"
 				observe_type: 1
 				timer: 0L
-				title: "Find the tree: Kapok"
+				title: "{TFG.primitive_age.title49}"
 				to_observe: "tfc:kapok_logs"
 				type: "observation"
 			}]
@@ -2853,7 +2862,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass_panes)"
 					}
 				}
-				title: "Any Glass Panes"
+				title: "{TFG.primitive_age.title50}"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2872,7 +2881,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:ore_deposits)"
 					}
 				}
-				title: "Any Ore Deposits"
+				title: "{TFG.primitive_age.title51}"
 				type: "item"
 			}]
 			x: -11.0d
@@ -2901,7 +2910,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_bottles)"
 					}
 				}
-				title: "Any Glass Bottles"
+				title: "{TFG.primitive_age.title52}"
 				type: "item"
 			}]
 			x: -7.5d
@@ -2974,7 +2983,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lamps)"
 					}
 				}
-				title: "Any Lamps"
+				title: "{TFG.primitive_age.title53}"
 				type: "item"
 			}]
 			x: -9.0d
@@ -3013,7 +3022,6 @@
 			dependencies: ["0EB682B44D83D12A"]
 			hide_dependency_lines: true
 			id: "253860AD4DF4224C"
-			subtitle: "Broke ore using Hammer (Not Mining Hammer)"
 			tasks: [{
 				id: "6E70D453F693036D"
 				item: "gtceu:crushed_sulfur_ore"
@@ -3055,7 +3063,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:double_sheets/any_bronze)"
 					}
 				}
-				title: "Any Bronze Double Plates"
+				title: "{TFG.primitive_age.title54}"
 				type: "item"
 			}]
 			x: 20.5d
@@ -3242,15 +3250,18 @@
 					type: "item"
 				}
 				{
-					id: "45979C3F7588F352"
+					id: "305EFF0F0ECD2E16"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_nickel_dust)item(gtceu:tiny_garnierite_dust)item(gtceu:raw_nickel)item(gtceu:raw_garnierite)item(tfc:ore/small_garnierite)item(gtceu:poor_raw_nickel)item(gtceu:poor_raw_garnierite)item(gtceu:rich_raw_nickel)item(gtceu:rich_raw_garnierite))"
+							display: {
+								Name: "{'text':'Any Nickel Ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:raw_nickel)item(gtceu:raw_garnierite)item(gtceu:raw_pentlandite)item(gtceu:rich_raw_nickel)item(gtceu:rich_raw_garnierite)item(gtceu:rich_raw_pentlandite)item(gtceu:poor_raw_nickel)item(gtceu:poor_raw_garnierite)item(gtceu:poor_raw_pentlandite))"
 						}
 					}
-					title: "Any Nickel Ore"
+					title: "{TFG.primitive_age.title55}"
 					type: "item"
 				}
 			]
@@ -3356,7 +3367,7 @@
 						"ftbfiltersystem:filter": "or(item(tfc:metal/anvil/blue_steel)item(tfc:metal/anvil/red_steel))"
 					}
 				}
-				title: "Any Anvil of 6 Tier"
+				title: "{TFG.primitive_age.title56}"
 				type: "item"
 			}]
 			x: 37.0d
@@ -3565,31 +3576,31 @@
 			id: "483D7FE6554FDC96"
 			tasks: [
 				{
-					id: "7ED98EFD0C27E0FD"
+					id: "184806817B6D9921"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(minecraft:raw_gold)item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(gtceu:rich_raw_gold)item(gtceu:tiny_gold_dust))"
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_gold)item(gtceu:poor_raw_gold)item(minecraft:raw_gold)item(gtceu:rich_raw_gold))"
 						}
 					}
-					title: "Any Gold Ore"
+					title: "{TFG.primitive_age.title57}"
 					type: "item"
 				}
 				{
-					id: "2A88B5EB303D2265"
+					id: "3101B42F9E34CDA1"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
 						}
 					}
-					title: "Any Copper Ore"
+					title: "{TFG.primitive_age.title58}"
 					type: "item"
 				}
 			]
-			title: "Materials for Rose Gold"
+			title: "{TFG.primitive_age.title59}"
 			x: 30.0d
 			y: 13.0d
 		}
@@ -3609,31 +3620,34 @@
 			id: "758B2176634789F6"
 			tasks: [
 				{
-					id: "10F5386F960AE8C8"
+					id: "763128F1BD1FEB9B"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite)item(gtceu:tiny_zinc_dust)item(gtceu:tiny_sphalerite_dust)item(gtceu:raw_sphalerite)item(gtceu:poor_raw_sphalerite)item(gtceu:rich_raw_sphalerite))"
+							display: {
+								Name: "{'text':'any sphalerite ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_sphalerite)item(gtceu:raw_sphalerite)item(gtceu:poor_raw_sphalerite)item(gtceu:rich_raw_sphalerite))"
 						}
 					}
-					title: "Any Zinc Ore"
+					title: "{TFG.primitive_age.title60}"
 					type: "item"
 				}
 				{
-					id: "1F79B37BB871845A"
+					id: "34F5CDD35DDE2295"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
 						}
 					}
-					title: "Any Copper Ore"
+					title: "{TFG.primitive_age.title61}"
 					type: "item"
 				}
 			]
-			title: "Materials for Brass"
+			title: "{TFG.primitive_age.title62}"
 			x: 31.0d
 			y: 13.0d
 		}
@@ -3653,31 +3667,34 @@
 			id: "0E0C589495AA31E8"
 			tasks: [
 				{
-					id: "27FEFEA3A46F09FD"
+					id: "3E9AC72D1AF2CE1A"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:tiny_copper_dust)item(gtceu:tiny_chalcopyrite_dust)item(gtceu:tiny_tetrahedrite_dust)item(gtceu:tiny_malachite_dust)item(minecraft:raw_copper)item(gtceu:raw_chalcopyrite)item(gtceu:raw_tetrahedrite)item(gtceu:raw_malachite)item(gtceu:rich_raw_copper)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:rich_raw_malachite)item(gtceu:poor_raw_copper)item(gtceu:poor_raw_chalcopyrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_malachite)item(tfc:ore/small_native_copper)item(tfc:ore/small_malachite)item(tfc:ore/small_tetrahedrite))"
+							display: {
+								Name: "{'text':'any silver ore'}"
+							}
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_silver)item(gtceu:poor_raw_silver)item(gtceu:rich_raw_silver)item(gtceu:raw_silver))"
 						}
 					}
-					title: "Any Copper Ore"
+					title: "{TFG.primitive_age.title63}"
 					type: "item"
 				}
 				{
-					id: "6897CE0365F602F1"
+					id: "4E12D679975AEE9A"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:ore/small_native_silver)item(gtceu:tiny_silver_dust)item(gtceu:raw_silver)item(gtceu:rich_raw_silver)item(gtceu:poor_raw_silver))"
+							"ftbfiltersystem:filter": "or(item(tfc:ore/small_tetrahedrite)item(tfc:ore/small_malachite)item(gtceu:poor_raw_malachite)item(gtceu:raw_malachite)item(gtceu:rich_raw_malachite)item(gtceu:rich_raw_tetrahedrite)item(gtceu:raw_tetrahedrite)item(gtceu:poor_raw_tetrahedrite)item(gtceu:poor_raw_chalcopyrite)item(gtceu:raw_chalcopyrite)item(gtceu:rich_raw_chalcopyrite)item(gtceu:rich_raw_copper)item(minecraft:raw_copper)item(gtceu:poor_raw_copper)item(tfc:ore/small_native_copper))"
 						}
 					}
-					title: "Any Silver Ore"
+					title: "{TFG.primitive_age.title64}"
 					type: "item"
 				}
 			]
-			title: "Materials for Sterling Silver"
+			title: "{TFG.primitive_age.title65}"
 			x: 30.5d
 			y: 19.5d
 		}
@@ -3721,7 +3738,7 @@
 					}
 				}
 				match_nbt: false
-				title: "Any Tuyeres"
+				title: "{TFG.primitive_age.title66}"
 				type: "item"
 			}]
 			x: 22.5d
@@ -3740,7 +3757,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:support_beams)"
 					}
 				}
-				title: "Any Support"
+				title: "{TFG.primitive_age.title67}"
 				type: "item"
 			}]
 			x: 13.0d
@@ -3758,7 +3775,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:looms)"
 					}
 				}
-				title: "Any Loom"
+				title: "{TFG.primitive_age.title68}"
 				type: "item"
 			}]
 			x: 13.0d
@@ -3874,7 +3891,7 @@
 		{
 			dependencies: ["45D907EF7902A200"]
 			id: "27DA5AAB102611A2"
-			subtitle: "{quests.27DA5AAB102611A2.st}"
+			subtitle: "{TFG.primitive_age.subtitle29}"
 			tasks: [{
 				id: "5F944342D5C4195B"
 				item: {
@@ -3932,7 +3949,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:prepared_hides)"
 					}
 				}
-				title: "Any Prepared Hide"
+				title: "{TFG.primitive_age.title69}"
 				type: "item"
 			}]
 			x: 6.5d
@@ -3953,7 +3970,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:scraped_hides)"
 					}
 				}
-				title: "Any Scraped Hide"
+				title: "{TFG.primitive_age.title70}"
 				type: "item"
 			}]
 			x: 5.0d
@@ -3974,7 +3991,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:soaked_hides)"
 					}
 				}
-				title: "Any Soaked Hides"
+				title: "{TFG.primitive_age.title71}"
 				type: "item"
 			}]
 			x: 5.0d
@@ -3997,7 +4014,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:raw_hides)"
 					}
 				}
-				title: "Any Raw Hides"
+				title: "{TFG.primitive_age.title72}"
 				type: "item"
 			}]
 			x: 3.5d
@@ -4016,7 +4033,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:sheepskin_hides)"
 					}
 				}
-				title: "Any Sheepskin Hides"
+				title: "{TFG.primitive_age.title73}"
 				type: "item"
 			}]
 			x: 8.0d
@@ -4409,7 +4426,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
 					}
 				}
-				title: "Any Beds"
+				title: "{TFG.primitive_age.title74}"
 				type: "item"
 			}]
 			x: 10.0d
@@ -4617,7 +4634,7 @@
 			dependencies: ["76EF4D00586A8B74"]
 			hide_dependency_lines: true
 			id: "0A6AADCDD2A635EC"
-			subtitle: "Kill the spiders!"
+			subtitle: "{TFG.primitive_age.subtitle30}"
 			tasks: [{
 				id: "6218E98E7B9F86B6"
 				item: "minecraft:string"
@@ -4672,7 +4689,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Wheel\"}"
+							Name: "{'text':'Any Wheel'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:cart_wheel))"
 					}
@@ -4692,7 +4709,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Supply Cart\"}"
+							Name: "{'text':'Any Supply Cart'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:supply_cart))"
 					}
@@ -4712,7 +4729,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Plow\"}"
+							Name: "{'text':'Any Plow'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:plow))"
 					}
@@ -4732,7 +4749,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Animal Cart\"}"
+							Name: "{'text':'Any Animal Cart'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(tfcastikorcarts:animal_cart))"
 					}
@@ -4846,12 +4863,7 @@
 			y: 24.0d
 		}
 		{
-			dependencies: [
-				"2765DB2E20A745F8"
-				"48AED37B4E20A99A"
-				"39E8CE6A86731567"
-			]
-			dependency_requirement: "one_completed"
+			dependencies: ["2765DB2E20A745F8"]
 			id: "04D4E196824D53C4"
 			tasks: [{
 				id: "0121A0A3EFBF3A46"
@@ -4863,37 +4875,37 @@
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.6D43C29AC049341D.d1}"]
+			description: ["{TFG.primitive_age.description34}"]
 			icon: "minecraft:cake"
 			id: "6D43C29AC049341D"
-			subtitle: "{quests.6D43C29AC049341D.st}"
+			subtitle: "{TFG.primitive_age.subtitle31}"
 			tasks: [{
 				id: "124CFC2DE7647588"
-				title: "{quests.6D43C29AC049341D.t1}"
+				title: "{TFG.primitive_age.title75}"
 				type: "checkmark"
 			}]
-			title: "{quests.6D43C29AC049341D.t}"
+			title: "{TFG.primitive_age.title76}"
 			x: -3.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.0B42D4AE2AC67F93.d1}"]
+			description: ["{TFG.primitive_age.description35}"]
 			icon: "createaddition:chocolate_cake"
 			id: "0B42D4AE2AC67F93"
-			subtitle: "{quests.0B42D4AE2AC67F93.st}"
+			subtitle: "{TFG.primitive_age.subtitle32}"
 			tasks: [{
 				id: "5EB438DED5A994C4"
-				title: "{quests.0B42D4AE2AC67F93.t1}"
+				title: "{TFG.primitive_age.title77}"
 				type: "checkmark"
 			}]
-			title: "{quests.0B42D4AE2AC67F93.t}"
+			title: "{TFG.primitive_age.title78}"
 			x: -3.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.2672C65095539E23.d1}"]
+			description: ["{TFG.primitive_age.description36}"]
 			icon: {
 				Count: 1
 				id: "gtceu:aluminium_hammer"
@@ -4910,19 +4922,19 @@
 				}
 			}
 			id: "2672C65095539E23"
-			subtitle: "{quests.2672C65095539E23.st}"
+			subtitle: "{TFG.primitive_age.subtitle33}"
 			tasks: [{
 				id: "5CD6F659836A78C8"
-				title: "{quests.2672C65095539E23.t1}"
+				title: "{TFG.primitive_age.title79}"
 				type: "checkmark"
 			}]
-			title: "{quests.2672C65095539E23.t}"
+			title: "{TFG.primitive_age.title80}"
 			x: -4.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["76EF4D00586A8B74"]
-			description: ["{quests.3D7B0F3134C30364.d1}"]
+			description: ["{TFG.primitive_age.description37}"]
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -4933,10 +4945,10 @@
 			id: "3D7B0F3134C30364"
 			tasks: [{
 				id: "6EB0915B34A4054C"
-				title: "{quests.3D7B0F3134C30364.t1}"
+				title: "{TFG.primitive_age.title81}"
 				type: "checkmark"
 			}]
-			title: "{quests.3D7B0F3134C30364.t}"
+			title: "{TFG.primitive_age.title82}"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -4954,77 +4966,77 @@
 					type: "item"
 				}
 			]
-			title: "Copper Waxing [WIP]"
-			x: -9.5d
+			title: "{TFG.primitive_age.title83}"
+			x: -8.0d
 			y: 0.0d
 		}
 		{
 			id: "0C1314591528B194"
 			tasks: [{
 				id: "2708890F286F7653"
-				title: "Cellar [WIP]"
+				title: "{TFG.primitive_age.title84}"
 				type: "checkmark"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: -1.0d
 		}
 		{
 			id: "13C1E19024011698"
 			tasks: [{
 				id: "4694D073712B6BE1"
-				title: "Bees [WIP]"
+				title: "{TFG.primitive_age.title85}"
 				type: "checkmark"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 1.0d
 		}
 		{
 			id: "260CCACEAE35BFDC"
 			tasks: [{
 				id: "06F24C35A067A09B"
-				title: "Greenhouse [WIP]"
+				title: "{TFG.primitive_age.title86}"
 				type: "checkmark"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["32895F66C7A66088"]
 			description: [
-				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
+				"{TFG.primitive_age.description38}"
 				""
-				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
-				"{@pagebreak}"
-				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
+				"{TFG.primitive_age.description39}"
+				"{TFG.primitive_age.description40}"
+				"{TFG.primitive_age.description41}"
 				""
-				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
-				"...and..."
-				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
-				"...AND..."
-				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
-				"{@pagebreak}"
-				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
+				"{TFG.primitive_age.description42}"
+				"{TFG.primitive_age.description43}"
+				"{TFG.primitive_age.description44}"
+				"{TFG.primitive_age.description45}"
+				"{TFG.primitive_age.description46}"
+				"{TFG.primitive_age.description47}"
+				"{TFG.primitive_age.description48}"
 				""
-				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
+				"{TFG.primitive_age.description49}"
 				""
-				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
+				"{TFG.primitive_age.description50}"
 				""
-				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
+				"{TFG.primitive_age.description51}"
 				""
-				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
+				"{TFG.primitive_age.description52}"
 				""
-				"Make &eone&r of the proposed HP machines to complete this quest."
+				"{TFG.primitive_age.description53}"
 			]
 			id: "3FB3EE093DDC6B56"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Putting the Steam in Steam Age"
+			subtitle: "{TFG.primitive_age.subtitle34}"
 			tasks: [{
 				id: "4DCB027DEC293E72"
 				item: "gtceu:bronze_brick_casing"
 				type: "item"
 			}]
-			title: "Pressure Cookin'"
+			title: "{TFG.primitive_age.title87}"
 			x: 18.5d
 			y: 24.0d
 		}
@@ -5089,7 +5101,7 @@
 						"ftbfiltersystem:filter": "or(item_tag(tfchotornot:tongs))"
 					}
 				}
-				title: "Any Tongs"
+				title: "{TFG.primitive_age.title88}"
 				type: "item"
 			}]
 			x: 0.5d
@@ -5115,8 +5127,8 @@
 				item: "etched:etching_table"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 24.5d
+			x: 24.5d
+			y: 25.5d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5126,8 +5138,8 @@
 				item: "etched:album_jukebox"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 23.0d
+			x: 23.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5137,8 +5149,8 @@
 				item: "etched:radio"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 24.5d
+			x: 26.0d
+			y: 25.5d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5148,8 +5160,8 @@
 				item: "etched:jukebox_minecart"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 24.5d
+			x: 23.0d
+			y: 25.5d
 		}
 		{
 			dependencies: ["6156D157921CC5A8"]
@@ -5159,8 +5171,8 @@
 				item: "etched:boombox"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 23.0d
+			x: 26.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["754CA10FD1725EC6"]
@@ -5176,8 +5188,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 22.0d
+			x: 24.5d
+			y: 23.0d
 		}
 		{
 			dependencies: [
@@ -5191,8 +5203,8 @@
 				item: "etched:album_cover"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 21.0d
+			x: 24.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["38469FBD2B7998C1"]
@@ -5202,69 +5214,9 @@
 				item: "etched:blank_music_disc"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 23.0d
-		}
-		{
-			dependencies: ["23DD6D6E78F62757"]
-			id: "2B862C1ED65D0526"
-			shape: "gear"
-			size: 3.0d
-			tasks: [{
-				id: "7DB951FDB7063659"
-				item: "gtceu:steel_brick_casing"
-				type: "item"
-			}]
 			x: 24.5d
 			y: 24.0d
 		}
-		{
-			dependencies: ["445E060EF3300A49"]
-			id: "23DD6D6E78F62757"
-			tasks: [{
-				count: 5L
-				id: "1C607358F45ABAD6"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "gtceu:steel_plate"
-				}
-				type: "item"
-			}]
-			x: 24.5d
-			y: 22.0d
-		}
-		{
-			dependencies: ["76EF4D00586A8B74"]
-			description: ["But how? Try to descend to a depth of y = -60 blocks. Or perhaps lower?"]
-			id: "30C61004FB5FA9AC"
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "2928FC0BBF500E88"
-				title: "Visit Nether"
-				type: "dimension"
-			}]
-			x: -5.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["30C61004FB5FA9AC"]
-			description: ["Maybe you need to climb as high as possible? But I'm not sure."]
-			id: "53C8B91A1A5BBE3E"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "162808CB268A36CE"
-				title: "How to escape from Alcatrazzz?"
-				type: "dimension"
-			}]
-			x: -7.0d
-			y: 0.0d
-		}
 	]
-	title: "Primitive Age"
+	title: "{TFG.primitive_age.title89}"
 }

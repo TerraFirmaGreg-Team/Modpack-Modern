@@ -229,6 +229,6 @@
 		}
 	]
 	quests: [ ]
-	subtitle: ["A handy reference of all the multiblocks"]
-	title: "Multiblock Dilemma"
+	subtitle: ["{TFG.multiblock_dilemma.subtitle0}"]
+	title: "{TFG.multiblock_dilemma.title0}"
 }

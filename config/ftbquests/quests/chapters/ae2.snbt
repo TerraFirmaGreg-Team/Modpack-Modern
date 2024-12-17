@@ -37,7 +37,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Glass Cable\"}"
+							Name: "{'text':'Any Glass Cable'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(ae2:glass_cable))"
 					}
@@ -72,7 +72,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Covered Cable\"}"
+							Name: "{'text':'Any Covered Cable'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(ae2:covered_cable))"
 					}
@@ -92,7 +92,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Dence Covered Cable\"}"
+							Name: "{'text':'Any Dence Covered Cable'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(ae2:covered_dense_cable))"
 					}
@@ -112,7 +112,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Smart Dence Cable\"}"
+							Name: "{'text':'Any Smart Dence Cable'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(ae2:smart_cable))"
 					}
@@ -132,7 +132,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Smart Cable\"}"
+							Name: "{'text':'Any Smart Cable'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(ae2:smart_cable))"
 					}
@@ -174,7 +174,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"ME Toggle Bus\"}"
+							Name: "{'text':'ME Toggle Bus'}"
 						}
 						"ftbfiltersystem:filter": "or(item(ae2:toggle_bus)item(ae2:inverted_toggle_bus))"
 					}
@@ -293,7 +293,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any Illuminated Panel\"}"
+							Name: "{'text':'Any Illuminated Panel'}"
 						}
 						"ftbfiltersystem:filter": "or(item_tag(ae2:illuminated_panel))"
 					}
@@ -747,7 +747,7 @@
 					type: "item"
 				}
 			]
-			title: "Processors"
+			title: "{TFG.ae2.title0}"
 			x: -1.0d
 			y: 7.0d
 		}
@@ -778,16 +778,16 @@
 		{
 			dependencies: ["3E0EE1623F16A15A"]
 			description: [
-				"Cell Dock:"
+				"{TFG.ae2.description0}"
 				""
-				"1 slot "
-				"Passive Drain: 1 eu/t"
+				"{TFG.ae2.description1}"
+				"{TFG.ae2.description2}"
 				""
 				""
-				"ME Drive:"
+				"{TFG.ae2.description3}"
 				""
-				"10 slot"
-				"Passive Drain: 4 eu/t"
+				"{TFG.ae2.description4}"
+				"{TFG.ae2.description5}"
 			]
 			id: "7FE61D03A7F15A6F"
 			shape: "circle"
@@ -798,7 +798,7 @@
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
 						display: {
-							Name: "{\"text\":\"Any start driver\"}"
+							Name: "{'text':'Any start driver'}"
 						}
 						"ftbfiltersystem:filter": "or(item(ae2:drive)item(megacells:cell_dock))"
 					}
@@ -812,7 +812,7 @@
 			dependencies: ["7FE61D03A7F15A6F"]
 			id: "0DD7D344F65BB09F"
 			shape: "circle"
-			subtitle: "Passive Drain: 2eu/t"
+			subtitle: "{TFG.ae2.subtitle0}"
 			tasks: [{
 				id: "43B5F598E59DC820"
 				item: "ae2:io_port"
@@ -1567,7 +1567,7 @@
 			description: [""]
 			id: "1B44E57DAE367873"
 			shape: "circle"
-			subtitle: "in dev"
+			subtitle: "{TFG.ae2.subtitle1}"
 			tasks: [{
 				id: "408DDCC9B2573DA9"
 				item: "megacells:cell_component_16m"
@@ -1580,7 +1580,7 @@
 			dependencies: ["1B44E57DAE367873"]
 			id: "5598720FF2E9F946"
 			shape: "circle"
-			subtitle: "in dev"
+			subtitle: "{TFG.ae2.subtitle2}"
 			tasks: [{
 				id: "773358A900F41158"
 				item: "megacells:cell_component_64m"
@@ -1593,7 +1593,7 @@
 			dependencies: ["5598720FF2E9F946"]
 			id: "416DB5C77D43FE29"
 			shape: "circle"
-			subtitle: "in dev"
+			subtitle: "{TFG.ae2.subtitle3}"
 			tasks: [{
 				id: "721A317945FAF3C7"
 				item: "megacells:cell_component_256m"
@@ -1922,10 +1922,10 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:rich_raw_certus_quartz)item(gtceu:raw_certus_quartz)item(gtceu:poor_raw_certus_quartz))"
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ores/certus_quartz)"
 					}
 				}
-				title: "Any #forge:ores/certus_quartz"
+				title: "{TFG.ae2.title1}"
 				type: "item"
 			}]
 			x: -7.0d
@@ -2179,7 +2179,7 @@
 		{
 			dependencies: ["0BF8CB9EAD275C6F"]
 			id: "6C1609F45168FE27"
-			subtitle: "in dev"
+			subtitle: "{TFG.ae2.subtitle4}"
 			tasks: [{
 				id: "0A7525D4C945C8EA"
 				item: "megacells:16m_crafting_storage"
@@ -2191,7 +2191,7 @@
 		{
 			dependencies: ["0BF8CB9EAD275C6F"]
 			id: "7233C77CE9F2C8D2"
-			subtitle: "in dev"
+			subtitle: "{TFG.ae2.subtitle5}"
 			tasks: [{
 				id: "519B6D77D18C5D38"
 				item: "megacells:64m_crafting_storage"
@@ -2203,7 +2203,7 @@
 		{
 			dependencies: ["0BF8CB9EAD275C6F"]
 			id: "5F8609C9F73D880E"
-			subtitle: "in dev"
+			subtitle: "{TFG.ae2.subtitle6}"
 			tasks: [{
 				id: "497F303F52FAAF76"
 				item: "megacells:256m_crafting_storage"
@@ -2303,5 +2303,5 @@
 			y: 4.0d
 		}
 	]
-	title: "&6HV&r - AE2"
+	title: "{TFG.ae2.title2}"
 }
