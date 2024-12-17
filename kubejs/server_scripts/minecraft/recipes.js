@@ -2798,7 +2798,7 @@ const registerMinecraftRecipes = (e) => {
     e.recipes.gtceu.assembler('tfg:decorated_pot')             
         .itemInputs('4x minecraft:brick')
         .circuit(12)
-        .itemOutputs('minecraft:cauldron')
+        .itemOutputs('minecraft:decorated_pot')
         .EUt(3).duration(120)
     //#endregion
 

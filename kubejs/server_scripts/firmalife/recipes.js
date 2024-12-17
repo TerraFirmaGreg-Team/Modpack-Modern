@@ -64,7 +64,7 @@ const registerFirmaLifeRecipes = (event) => {
     //#region Распрыскиватель
     event.recipes.gtceu.assembler(`tfg:firmalife/sprinkler`)             
         .itemInputs('#forge:ingots/copper')
-        .circuit(12)
+        .circuit(11)
         .itemOutputs('firmalife:sprinkler')
         .EUt(7).duration(50)
 
