@@ -2759,31 +2759,6 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
-    //#region Молот
-
-    // Инструмент
-    event.remove({ id: `tfc:crafting/stone/hammer_igneous_extrusive` })
-    event.remove({ id: `tfc:crafting/stone/hammer_igneous_intrusive` })
-    event.remove({ id: `tfc:crafting/stone/hammer_metamorphic` })
-    event.remove({ id: `tfc:crafting/stone/hammer_sedimentary` })
-
-    // Оголовья
-    event.remove({ id: `tfc:rock_knapping/hammer_head_igneous_extrusive` })
-    event.remove({ id: `tfc:rock_knapping/hammer_head_igneous_intrusive` })
-    event.remove({ id: `tfc:rock_knapping/hammer_head_metamorphic` })
-    event.remove({ id: `tfc:rock_knapping/hammer_head_sedimentary` })
-
-    event.recipes.tfc.knapping('gtceu:stone_hammer_head', 'tfc:rock', [
-            "XXXXX",
-            "XXXXX",
-            "  X  "
-        ])
-        .ingredient('#tfc:rock_knapping')
-        .outsideSlotRequired(false)
-        .id('tfg:rock_knapping/stone_hammer_head')
-
-    //#endregion
-
     //#region Мотыга
 
     // Инструмент
