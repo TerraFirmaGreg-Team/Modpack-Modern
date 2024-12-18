@@ -629,16 +629,6 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:stone/shovel/metamorphic', 
     'tfc:stone/shovel/sedimentary', 
     
-    'tfc:stone/hammer_head/igneous_extrusive', 
-    'tfc:stone/hammer_head/igneous_intrusive', 
-    'tfc:stone/hammer_head/metamorphic', 
-    'tfc:stone/hammer_head/sedimentary', 
-    
-    'tfc:stone/hammer/igneous_extrusive', 
-    'tfc:stone/hammer/igneous_intrusive', 
-    'tfc:stone/hammer/metamorphic', 
-    'tfc:stone/hammer/sedimentary', 
-    
     'tfc:stone/hoe_head/igneous_extrusive', 
     'tfc:stone/hoe_head/igneous_intrusive', 
     'tfc:stone/hoe_head/metamorphic', 
