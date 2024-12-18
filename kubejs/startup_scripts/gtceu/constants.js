@@ -45,6 +45,9 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 
     'gtceu:rubber_planks',
+
+    'gtceu:stone_hammer_head',
+    'gtceu:stone_hammer'
     
 ];
 
