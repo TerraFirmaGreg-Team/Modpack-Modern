@@ -19,11 +19,11 @@
           },
           {
             "block": "gtceu:quartzite_copper_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:quartzite_stibnite_ore",
-            "weight": 30
+            "weight": 20
           }
         ]
       },
@@ -38,11 +38,11 @@
           },
           {
             "block": "gtceu:slate_copper_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:slate_stibnite_ore",
-            "weight": 30
+            "weight": 20
           }
         ]
       },
@@ -57,11 +57,11 @@
           },
           {
             "block": "gtceu:phyllite_copper_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:phyllite_stibnite_ore",
-            "weight": 30
+            "weight": 20
           }
         ]
       },
@@ -76,11 +76,11 @@
           },
           {
             "block": "gtceu:schist_copper_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:schist_stibnite_ore",
-            "weight": 30
+            "weight": 20
           }
         ]
       },
@@ -95,11 +95,11 @@
           },
           {
             "block": "gtceu:gneiss_copper_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:gneiss_stibnite_ore",
-            "weight": 30
+            "weight": 20
           }
         ]
       },
@@ -114,11 +114,11 @@
           },
           {
             "block": "gtceu:marble_copper_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:marble_stibnite_ore",
-            "weight": 30
+            "weight": 20
           }
         ]
       }
@@ -131,7 +131,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_tetrahedrite",
-          "weight": 100
+          "weight": 80
+        },
+		{
+          "block": "tfc:ore/small_native_copper",
+          "weight": 20
         }
       ]
     }

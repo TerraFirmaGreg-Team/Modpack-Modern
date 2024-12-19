@@ -169,6 +169,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:bentonite_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:magnesite_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:olivine_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:glauconite_sand_indicator",
+          "weight": 15
+        }
+      ]
+    }
   }
 }
