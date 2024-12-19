@@ -143,6 +143,22 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:pitchblende_indicator",
+          "weight": 50
+        },
+		{
+          "block": "gtceu:uraninite_indicator",
+          "weight": 50
+        }
+      ]
+    }
   }
 }

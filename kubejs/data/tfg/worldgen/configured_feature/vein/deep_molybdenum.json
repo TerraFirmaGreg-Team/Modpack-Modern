@@ -169,6 +169,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:wulfenite_indicator",
+          "weight": 40
+        },
+		{
+          "block": "gtceu:molybdenite_indicator",
+          "weight": 30
+        },
+		{
+          "block": "gtceu:molybdenum_indicator",
+          "weight": 15
+        },
+		{
+          "block": "gtceu:powellite_indicator",
+          "weight": 15
+        }
+      ]
+    }
   }
 }

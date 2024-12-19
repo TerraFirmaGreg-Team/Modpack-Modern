@@ -146,6 +146,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:bornite_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:cooperite_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:platinum_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:palladium_indicator",
+          "weight": 15
+        }
+      ]
+    }
   }
 }

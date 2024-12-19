@@ -116,6 +116,26 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 1000,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_hematite",
+          "weight": 40
+        },
+		{
+          "block": "tfc:ore/small_limonite",
+          "weight": 40
+        },
+		{
+          "block": "tfc:ore/small_native_gold",
+          "weight": 20
+        }
+      ]
+    }
   }
 }

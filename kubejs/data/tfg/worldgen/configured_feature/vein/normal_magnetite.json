@@ -145,12 +145,16 @@
     "indicator": {
       "rarity": 12,
       "depth": 35,
-      "underground_rarity": 1,
-      "underground_count": 0,
+      "underground_rarity": 40,
+      "underground_count": 200,
       "blocks": [
         {
           "block": "tfc:ore/small_magnetite",
-          "weight": 100
+          "weight": 80
+        },
+		{
+          "block": "tfc:ore/small_native_gold",
+          "weight": 20
         }
       ]
     }

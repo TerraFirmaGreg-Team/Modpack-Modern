@@ -89,6 +89,34 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:soapstone_indicator",
+          "weight": 30
+        },
+		{
+          "block": "gtceu:talc_indicator",
+          "weight": 20
+        },
+		{
+          "block": "gtceu:glauconite_sand_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:pentlandite_indicator",
+          "weight": 15
+        },
+		{
+          "block": "gtceu:trona_indicator",
+          "weight": 10
+        }
+      ]
+    }
   }
 }
