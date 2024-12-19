@@ -439,7 +439,7 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_graphite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_hematite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_spodumene')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oil_sands')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oilsands')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_lapis')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_limonite')
     event.add('tfc:in_biome/veins', 'tfg:vein/normal_lubricant')
