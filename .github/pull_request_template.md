@@ -1,18 +1,41 @@
-## Что
-_В этом разделе описывается суть данного PR. Это должно быть четкое и краткое описание того, для чего предназначен этот PR, почему он необходим и почему его следует принять._
-_Связывание проблемы можно использовать вместо написания описания._
+<!--- Please provide a general summary of your changes in the title above -->
 
-## Детали реализации
-_Любые реализации в этом PR, которые следует тщательно изучить или для которых могут/должны быть предложены альтернативные решения._
+## Pull Request type
 
-## Исход
-_Краткое описание того, что добавлено/исправлено/изменено/удалено в этом PR._
-_Для правильного связывания проблем используйте любое из ключевых слов Closes/Fixes/Resolves. Пример: когда PR исправляет ошибку, используйте «Исправления: #номер-ошибки»_.
+<!-- Please try to limit your pull request to one type; submit multiple pull requests if needed. -->
 
-## Дополнительная информация
-_Этот раздел предназначен для снимков экрана или любой другой дополнительной информации, о которой рецензенты должны знать._
+Please check the type of change your PR introduces:
 
-## Потенциальные проблемы совместимости
-_Этот раздел предназначен для определения возможных проблем совместимости._
+- [ ] Bugfix
+- [ ] Feature
+- [ ] Code style update (formatting, renaming)
+- [ ] Refactoring (no functional changes)
+- [ ] Other (please describe):
 
-**Пожалуйста, укажите как можно больше полезной информации. Также удалите все неиспользуемые разделы, включая это и другие пояснения.**
+## What is the current behavior?
+
+<!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
+
+Issue Number: #123
+
+## What is the new behavior?
+
+<!-- Please describe the behavior or changes that are being added by this PR. -->
+
+-
+-
+-
+
+## Does this introduce a breaking change?
+
+- [ ] Yes
+- [ ] No
+
+<!-- If this does introduce a breaking change, please describe the impact and migration path for existing applications below. -->
+
+## Other information
+
+<!-- Any other information that is important to this PR, such as screenshots of how the component looks before and after the change. -->
+
+
+

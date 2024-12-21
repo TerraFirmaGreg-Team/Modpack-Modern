@@ -1,5 +1,50 @@
 # Changelog
 
+## [0.8.1] - 29.10.2024
+### Changes
+- Fixed axe recipe.
+- Fixed missing default configs.
+- Small quest fixes.
+
+## [0.8.0] - 29.10.2024
+### Changes
+- This is a beta, make a backup of the world before updating, if you find any errors, let us know.
+- Replaced TFC ore gen with GT oregen.
+- Fixed most of bad langs from TFG-Core.
+- Fixed compat for firmaciv 1.0.+.
+- Disabled HotOrNot.
+- Moved some textures from TFG-Core to KJS.
+- Moved 90% of recipes from TFG-Core to KJS.
+- Added custom biome tag for all TFC biomes (used for oregen).
+- Proper way to remove #dusts tag from TFC powders.
+- Enabled HighTier machines from GTM (but without circuit recipes).
+- Moved some custom items from TFG-Core to KJS (like molds and etc).
+- Make ores spawn inside grid with 5x5 sized with 32block offset (was 3x3 with 16).
+- Now nether availiable to research (dig ores, drink lava, kill pigmens, what?).
+- Small changes for loottables for nether.
+- You can now fill sprinkler(firmalife greenhouse) from any fluid source (example: GT pipes).
+- Unlocked steel steam machines (again, yes).
+- Added translation for ru_ru inside TFG-Core.
+- Fixed alternator multiblock (now works fine).
+- Return raw ore blocks from GregTech.
+- True way to remove TFC ores from EMI.
+- True way to remove Firmelife ores from EMI.
+- True way to hide AE2 facades.
+- True way to hide chisel and bits bits, yes.
+- Fix double removing honey liquid from EMI.
+- Fixed bug when foods cant root inside EMI (of course not by mod dev (by myself)).
+- Now it is impossible to pour liquid from the TFC blast furnace into the GT pipe, which fixes the releated crash.
+- Fixed a bug where an item with the last durab broke the ore, then the ore did not dropped out.
+- Added recipes for crushing raw ores to crushed ores by workbench.
+- Fixed bug when electronic tools run out their durability, the tool breaks up without returning any power unit.
+- Alternator multiblock now works as intended.
+- Alternator recipes was sligthly nerfed.
+- Fixed bug when some items wont display inside EMI.
+- Simplified alternator multiblock reques and it controller block recipe.
+- Added better recipes for any wood (nether wood too).
+- Added stripping recipes in emi world interaction page.
+- And another 2123462384234 fixed, tweaks, and etc.
+
 ## [0.7.14] - 01.10.2024
 ### Changes
 - Fixed a crash when cutting down trees with mushrooms on the trunk.

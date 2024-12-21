@@ -1,21 +1,34 @@
-name: "[EN] Ask a Question"
-description: Ask a question regarding this project.
+name: "Ask a Question"
+description: "Ask a question regarding this project."
+title: "[❓]: "
 labels: [ "1. Type: Question" ]
+
 body:
+  - type: checkboxes
+    id: exists
+    attributes:
+      label: "Was this question asked before?"
+      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      options:
+        - label: "No, it was not."
+          required: true
+
   - type: markdown
     attributes:
       value: |
         If you are in need of quick response, Discord may be a better place. You can find a link to join in our README.md for this project.
         
         If you are looking for a game wiki, we are currently developing it, however most information is available in-game info through tooltips, JEI/HEI and quest. You can also ask any question on Discord, and someone will most likely have a response.
+
   - type: textarea
     id: question
+    validations:
+      required: true
     attributes:
       label: Your Question
       description: Feel free to ask any question regarding this project here.
       placeholder: "Example: How can I...?"
-    validations:
-      required: true
+
   - type: markdown
     attributes:
-      value: Thank you for taking the time to ask us a question.
+      value: "Thank you for taking the time to ask us a question."
