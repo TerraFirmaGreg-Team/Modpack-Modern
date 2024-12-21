@@ -68,8 +68,8 @@ jobs:
             echo "tag=$tag" >> $GITHUB_OUTPUT
           fi
         
-      - name: 🔍 Check pakku-lock.json in previous tag
-        id: check_pakku_lock_prev
+      - name: 🔍 Check and copy pakku-lock.json from previous tag
+        id: check_copy_lock
         shell: bash
         run: |
           if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
@@ -77,24 +77,19 @@ jobs:
             echo "file_found=false" >> $GITHUB_OUTPUT
           else
             echo "✔️ File pakku-lock.json found in previous tag"
-            echo "file_found=true" >> $GITHUB_OUTPUT
-          fi
-        
-      - name: 📁 Copy pakku-lock.json from previous tag
-        id: copy_pakku_lock_prev
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
-        shell: bash
-        run: |
-          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
-          if [ -s ./pakku-lock-prev.json ]; then
-            echo "✔️ File pakku-lock-prev.json created"
-          else
-            echo "❌ Error: File pakku-lock-prev.json is empty or not created"
+            git show ${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
+            if [ -s ./pakku-lock-prev.json ]; then
+              echo "✔️ File pakku-lock-prev.json created"
+              echo "file_found=true" >> $GITHUB_OUTPUT
+            else
+              echo "❌ Error: File pakku-lock-prev.json is empty or not created"
+              echo "file_found=false" >> $GITHUB_OUTPUT
+            fi
           fi
         
       - name: 📦 Download pakku.jar
         id: download_pakku
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_copy_lock.outputs.file_found == 'true'
         shell: bash
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
@@ -102,7 +97,7 @@ jobs:
         
       - name: 🔄 Run pakku diff
         id: pakku_diff
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_copy_lock.outputs.file_found == 'true'
         shell: bash
         run: |
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
@@ -114,7 +109,7 @@ jobs:
         
       - name: 📝 Read PROJECTS_DIFF.md to variable
         id: read_diff
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_copy_lock.outputs.file_found == 'true'
         shell: bash
         run: |
           echo "📝 Reading PROJECTS_DIFF.md to variable..."
@@ -167,16 +162,18 @@ jobs:
           tag: ${{ steps.project_version.outputs.value }}
         
       - name: 📝 Generate Github Summary
-        run: |
-          echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Release**: ${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
-          
-          echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
-            echo "${{ steps.read_diff.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
-          fi
+        uses: WcAServices/markdown-template-action@v1.1.0
+        with:
+          template: |
+            echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" 
+            echo "📃 **Release**: ${{ steps.project_version.outputs.value }}"
+            echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}"
+            echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}"
+
+            echo "${{ steps.changelog.outputs.description }}"
+            if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
+              echo "${{ steps.read_diff.outputs.diff }}"
+            fi
   
 
   build-modpack:
