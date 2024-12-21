@@ -70,13 +70,14 @@ jobs:
         shell: bash
         run: |
           if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
-            echo "❌ File pakku-lock.json not found in previous tag" && exit 1
+            echo "❌ File pakku-lock.json not found in previous tag"
           else
             echo "✔️ File pakku-lock.json found in previous tag"
           fi
         
       - name: 📁 Copy pakku-lock.json from previous tag
         id: copy_pakku_lock_prev
+        if: steps.check_pakku_lock_prev.conclusion == 'success'
         shell: bash
         run: |
           git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
@@ -88,6 +89,7 @@ jobs:
         
       - name: 📦 Download pakku.jar
         id: download_pakku
+        if: steps.check_pakku_lock_prev.conclusion == 'success'
         shell: bash
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
@@ -95,6 +97,7 @@ jobs:
         
       - name: 🔄 Run pakku diff
         id: pakku_diff
+        if: steps.check_pakku_lock_prev.conclusion == 'success'
         shell: bash
         run: |
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
@@ -106,6 +109,7 @@ jobs:
         
       - name: 📝 Read PROJECTS_DIFF.md to variable
         id: read_diff
+        if: steps.check_pakku_lock_prev.conclusion == 'success'
         shell: bash
         run: |
           echo "📝 Reading PROJECTS_DIFF.md to variable..."
@@ -145,7 +149,7 @@ jobs:
         
       - name: 📈 Upload Diff
         id: upload_diff
-        if: ${{ steps.read_diff.outputs.diff != '' }}
+        if: ${{ steps.read_diff.outputs.diff != '' }} && steps.check_pakku_lock_prev.conclusion == 'success'
         uses: actions/upload-artifact@v4.5.0
         with:
           name: Mods-diff
@@ -422,25 +426,23 @@ jobs:
 
       - name: Format diff
         id: format_diff
-        run: |
-          if [ -n "${{ needs.info.outputs.diff }}" ]; then
-            value="```markdown
+        if: ${{ needs.info.outputs.diff != '' }}
+        uses: roamingowl/template-output-with-eta@v1.10.0
+        with:
+          template: |
+            ```markdown
             ${{ needs.info.outputs.diff }}
-            ```"
-          else
-            value=""
-          fi
-          echo "value=${formatted_diff}" >> $GITHUB_OUTPUT
+            ```
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.0
+        uses: softprops/action-gh-release@v2.1.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            ${{ steps.format_diff.outputs.value }}
+            ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
