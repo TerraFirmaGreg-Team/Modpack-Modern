@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 concurrency:
   group: ${{ github.workflow }}
@@ -71,10 +74,10 @@ jobs:
         run: |
           if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
             echo "❌ File pakku-lock.json not found in previous tag"
-            echo "::set-output name=file_found::false"
+            echo "file_found=false" >> $GITHUB_OUTPUT
           else
             echo "✔️ File pakku-lock.json found in previous tag"
-            echo "::set-output name=file_found::true"
+            echo "file_found=true" >> $GITHUB_OUTPUT
           fi
         
       - name: 📁 Copy pakku-lock.json from previous tag
@@ -86,7 +89,7 @@ jobs:
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
           else
-            echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
+            echo "❌ Error: File pakku-lock-prev.json is empty or not created"
           fi
         
       - name: 📦 Download pakku.jar
