@@ -56,15 +56,23 @@ jobs:
             echo "✔️ pakku.json"
           fi
 
-      - name: 📈 Latest & Previous Tag
-        id: tag
-        uses: JinoArch/get-latest-tag@latest
+      - name: 📈 Get latest tag
+        id: latest_tag
+        shell: bash
+        run: |
+          tag=$(git describe --tags --abbrev=0)
+          if [ -z "$tag" ]; then
+            echo "❌ Latest tag not found" && exit 1
+          else
+            echo "✔️ Latest tag found: $tag"
+            echo "tag=$tag" >> $GITHUB_OUTPUT
+          fi
         
       - name: 🔍 Check pakku-lock.json in previous tag
         id: check_pakku_lock_prev
         shell: bash
         run: |
-          if ! git ls-tree -r ${{ steps.tag.outputs.latestTag }} -- ./pakku-lock.json &> /dev/null; then
+          if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
             echo "❌ File pakku-lock.json not found in previous tag"
           else
             echo "✔️ File pakku-lock.json found in previous tag"
@@ -74,7 +82,7 @@ jobs:
         id: check_copy_lock
         shell: bash
         run: |
-          git show tags/${{ steps.tag.outputs.latestTag }}:./pakku-lock.json > ./pakku-lock-prev.json
+          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
           else
@@ -166,14 +174,14 @@ jobs:
         uses: WcAServices/markdown-template-action@v1.1.0
         with:
           template: |
-            echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" 
-            echo "📃 **Release**: ${{ steps.project_version.outputs.value }}"
-            echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}"
-            echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}"
+            📃 **Name**: ${{ steps.project_name.outputs.value }}
+            📃 **Release**: ${{ steps.project_version.outputs.value }}
+            📃 **Release Type**: ${{ env.RELEASE_TYPE }}
+            📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
 
-            echo "${{ steps.changelog.outputs.description }}"
+            ${{ steps.changelog.outputs.description }}
             if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
-              echo "${{ steps.read_diff.outputs.diff }}"
+              ${{ steps.read_diff.outputs.diff }}
             fi
   
 
