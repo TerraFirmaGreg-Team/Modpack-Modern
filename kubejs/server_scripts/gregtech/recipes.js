@@ -1455,7 +1455,6 @@ const registerGTCEURecipes = (event) => {
         }
         
     });
-
     //#endregion
 
     // Fix LV recycling producing red/blue steel.
@@ -1479,4 +1478,22 @@ const registerGTCEURecipes = (event) => {
         /gtceu:macerator\/macerate_lv_.*/,
         '#forge:dusts/blue_steel',
         '')
+
+    // Clear NBT on tanks with shapeless crafts.
+    [
+        "lv_super",
+        "mv_super",
+        "hv_super",
+        "ev_super",
+        "iv_quantum",
+        "luv_quantum",
+        "zpm_quantum",
+        "uv_quantum",
+        "uhv_quantum",
+    ].forEach(prefix => {
+        // Craft super tanks to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
+        // Craft super chests to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
+    });
 }
