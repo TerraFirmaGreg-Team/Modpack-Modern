@@ -1,0 +1,191 @@
+{
+    "name": "TerraFirmaGreg-Modern",
+    "version": "0.8.1",
+    "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
+    "author": "Exception, Xikaro",
+    "overrides": [
+        "config",
+        "defaultconfigs",
+        "kubejs"
+    ],
+    "server_overrides": [
+        "forge-auto-install.txt",
+        "minecraft_server.jar",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat"
+    ],
+    "client_overrides": [
+        "resourcepacks"
+    ],
+    "projects": {
+        "ambient-environment": {
+            "side": "CLIENT"
+        },
+        "ambientsounds": {
+            "side": "CLIENT"
+        },
+        "better-chat": {
+            "side": "CLIENT"
+        },
+        "better-foliage-renewed": {
+            "side": "CLIENT"
+        },
+        "betterf3": {
+            "side": "CLIENT"
+        },
+        "blur": {
+            "side": "CLIENT"
+        },
+        "better-ping-display": {
+            "side": "CLIENT"
+        },
+        "better-third-person": {
+            "side": "CLIENT"
+        },
+        "chunk-animator": {
+            "side": "CLIENT"
+        },
+        "craftpresence": {
+            "side": "CLIENT"
+        },
+        "better-loading-screen": {
+            "side": "CLIENT"
+        },
+        "controlling": {
+            "side": "CLIENT"
+        },
+        "dynamic-darkness": {
+            "side": "CLIENT"
+        },
+        "dynamic-lights": {
+            "side": "CLIENT"
+        },
+        "dynamic-surroundings": {
+            "side": "CLIENT"
+        },
+        "fancymenu": {
+            "side": "CLIENT"
+        },
+        "farsight": {
+            "side": "CLIENT"
+        },
+        "fps-reducer": {
+            "side": "CLIENT"
+        },
+        "inventory-hud-forge": {
+            "side": "CLIENT"
+        },
+        "itemphysic-lite": {
+            "side": "CLIENT"
+        },
+        "legendary-tooltips": {
+            "side": "CLIENT"
+        },
+        "konkrete": {
+            "side": "CLIENT"
+        },
+        "more-overlays": {
+            "side": "CLIENT"
+        },
+        "my-server-is-compatible": {
+            "side": "CLIENT"
+        },
+        "mouse-tweaks-unofficial": {
+            "side": "CLIENT"
+        },
+        "options-enforcer": {
+            "side": "CLIENT"
+        },
+        "particle-culling": {
+            "side": "CLIENT"
+        },
+        "placement-preview": {
+            "side": "CLIENT"
+        },
+        "real-first-person-render": {
+            "side": "CLIENT"
+        },
+        "valkyrie": {
+            "side": "CLIENT"
+        },
+        "wrapfix": {
+            "side": "CLIENT"
+        },
+        "sound-physics-remixin": {
+            "side": "CLIENT"
+        },
+        "tfc-towerheat": {
+            "side": "CLIENT"
+        },
+        "tfc-toohotaroundhere": {
+            "side": "CLIENT"
+        },
+        "keybind-description-fix": {
+            "side": "CLIENT"
+        },
+        "better-quest-pop-up": {
+            "side": "CLIENT"
+        },
+        "ctm": {
+            "side": "CLIENT"
+        },
+        "simple-login": {
+            "side": "CLIENT"
+        },
+        "cherished-worlds": {
+            "side": "CLIENT"
+        },
+        "jetif": {
+            "side": "CLIENT"
+        },
+        "client-tweaks": {
+            "side": "CLIENT"
+        },
+        "chat-heads": {
+            "side": "CLIENT"
+        },
+        "drippy-loading-screen": {
+            "side": "CLIENT"
+        },
+        "embeddium": {
+            "side": "CLIENT"
+        },
+        "first-person-model": {
+            "side": "CLIENT"
+        },
+        "ftb-backups-2": {
+            "side": "CLIENT"
+        },
+        "no-report-button": {
+            "side": "CLIENT"
+        },
+        "not-enough-animations": {
+            "side": "CLIENT"
+        },
+        "mouse-tweaks": {
+            "side": "CLIENT"
+        },
+        "oculus": {
+            "side": "CLIENT"
+        },
+        "sound-physics-remastered": {
+            "side": "CLIENT"
+        },
+        "searchables": {
+            "side": "CLIENT"
+        },
+        "tfc-vessel-tooltip": {
+            "side": "CLIENT"
+        },
+        "sodium-options-api": {
+            "side": "CLIENT"
+        },
+        "magnesium-extras": {
+            "side": "CLIENT"
+        },
+        "dynamiclights-reforged": {
+            "side": "CLIENT"
+        }
+    }
+}

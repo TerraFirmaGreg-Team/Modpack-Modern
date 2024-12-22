@@ -1,25 +1,40 @@
-name: "[EN] Crash Report"
-description: Report a bug that crashes the game or prevents startup.
+name: "Crash Report"
+description: "Report a bug that crashes the game or prevents startup."
+title: "[💥]: "
 labels: [ "1. Type: Crash", "2. Status: Unverified" ]
+
 body:
+  - type: checkboxes
+    id: exists
+    attributes:
+      label: "Was this crash report before?"
+      description: "Please search open/closed issues before submitting, as the issue may have already been reported/addressed."
+      options:
+        - label: "No, it was not."
+          required: true
+
   - type: input
     id: version
-    attributes:
-      label: Version modpack Used
-      description: Write which version of the modpack you are using.
-      placeholder: "Example: 0.1.1"
     validations:
       required: true
+    attributes:
+      label: Version modpack used
+      description: Write which version of the modpack you are using.
+      placeholder: "Example: 0.1.1"
+
   - type: input
     id: environment
+    validations:
+      required: true
     attributes:
       label: Environment
       description: "How you were playing on the world. Typical answers include: Singleplayer, Open to LAN, Forge Server, Sponge Server, or Mohist Server."
       placeholder: "Example: Singleplayer"
-    validations:
-      required: true
+
   - type: dropdown
     id: crash
+    validations:
+      required: true
     attributes:
       label: Side Crashed
       description: Where the game crashed.
@@ -28,10 +43,11 @@ body:
         - "Server"
         - "Client and Server"
         - "Unsure"
-    validations:
-      required: true
+
   - type: dropdown
     id: world
+    validations:
+      required: true
     attributes:
       label: New Worlds
       description: Does this crash occur on a newly generated world?
@@ -39,32 +55,44 @@ body:
         - "Yes"
         - "No"
         - "Unsure"
+
+  - type: input
+    id: log
     validations:
       required: true
+    attributes:
+      label: "Please provide a link to your latest.log, if relevant"
+      description: |
+        "You can find the crash report in `/crash-reports/`, if one was created."
+        "Additionally, please attach `/logs/latest.log` or `/logs/debug.log`. If either or both files do not exist, state such."
+        "Please link to a paste site with their content, such as GitHub Gists or Pastebin, mclo.gs, etc."
+        "We recommend always using https://mclo.gs/."
+        
+        
+        > [!CAUTION]
+        > **Do not paste the contents of either these files directly into the text box.**
+        > If you skip this step, this issue might be **labeled** with `please add a reproduction` and **closed**.
+      placeholder: https://mclo.gs/MydIQBu...
+
   - type: textarea
     id: reproduction
+    validations:
+      required: true
     attributes:
       label: Steps to Reproduce
       description: How to reproduce the crash.
       placeholder: "Example: 1) I did X..."
-    validations:
-      required: true
-  - type: textarea
-    id: crash-report
-    attributes:
-      label: Crash Report
-      description: "You can find the crash report in `installation/crash-reports/`, if one was created. Additionally, please attach `installation/logs/latest.log`. If either or both files do not exist, state such. Please link to a paste site with their content, such as GitHub Gists or Pastebin. **Do not paste the contents of either these files directly into the text box.**"
-      placeholder: "Example: a link to a paste site with the crash report and latest.log."
-    validations:
-      required: true
+
+
   - type: textarea
     id: additional-info
+    validations:
+      required: false
     attributes:
       label: Additional Information
       description: Any additional information you wish to provide. Please add anything which did not fit into the other sections here.
       placeholder: "Example: This is likely caused by X because..."
-    validations:
-      required: false
+
   - type: markdown
     attributes:
       value: Thank you for taking the time to fill out this crash report.

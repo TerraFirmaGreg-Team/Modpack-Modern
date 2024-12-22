@@ -1,27 +1,57 @@
-
 # Extensions
 **/*.log
 **/*.gz
 **/*.DS_Store
 **/*.jar
+**/*.mrpack
 **/*.code-workspace
 **/*.zip
 
+# Pakku
+build/
+!.pakku/**/*
+
 # Configs
 config/jei/world/
+config/gregtech/terminal/
+config/roughlyenoughitems/
+config/fantasticlib/
+config/better_quest_popup/completed-cache/
 
-config/oculus.properties
+config/AppliedEnergistics2/items.csv
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/cherishedworlds/favorites.dat
+config/jei/worldSettings.cfg
+config/JustEnoughCalculation/record.json
+config/splash.properties
+config/customloadingscreen_timings.nbt
+config/simplelogin.cfg
 config/fml.toml
 config/forge-client.toml
 config/xaerominimap_entities.json
+# config/xaerominimap.txt
+# config/xaeroworldmap.txt
+config/fancymenu/menu_identifiers.db
+config/fancymenu/user_variables.db
+config/oculus.properties
+config/embeddium-fingerprint.json
+config/everycomp-hazardous.properties
+config/fml.toml
+config/forge-client.toml
 config/voicechat/username-cache.json
-config/xaerominimap.txt
-config/xaeroworldmap.txt
 
-# Client data
+config/stellarcore_stitcher_cache_jei.dat
+config/stellarcore_stitcher_cache_vanilla.dat
+
+# .minecraft
+!bansoukou/**.zip
+
 .vscode/
 .idea/
 .bobby/
+.mixin.out/
+assets/
+classOut/
 backups/
 profileImage/
 crash-reports/
@@ -29,15 +59,27 @@ logs/
 saves/
 ldlib/
 local/
+vintagefix/
 modernfix/
 XaeroWaypoints*/
 XaeroWorldMap*/
+#defaultconfigs/
 xaero/
+visualores/
+mods-carryover/
+EnderStorage/
+fancymenu_data/
+fancymenu_setups/
+downloads/
 CustomSkinLoader/
+EverlastingSkins/
+cache/
 screenshots/
 shaderpacks/
 chiselsandbits/
 
+# Client data
+bansoukou
 .curseclient
 .sl_password
 options.txt
@@ -45,22 +87,25 @@ patchouli_data.json
 usernamecache.json
 usercache.json
 rhino.local.properties
-fancymenu_data/last_world.fmdata
 profile.json
 emi.json
+sl_password.txt
 servers.dat
 servers.dat_old
 cherishedworlds-favorites.dat
 realms_persistence.json
 minecraftinstance.json
 knownkeys.txt
+optionsof.txt
+optionsshaders.txt
+OpenComputersMod-*
+hei_bookmarks.ini
 
 # Server data
-!.github/buildtools/serverpack/forge-auto-install.txt
-!.github/buildtools/serverpack/server.properties
-!.github/buildtools/serverpack/server_starter.conf
-!.github/buildtools/serverpack/server-icon.png
-!.github/buildtools/serverpack/start_server.bat
-!.github/buildtools/serverpack/user_jvm_args.txt
-!.github/buildtools/serverpack/minecraft_server.jar
-.github/buildtools/serverpack/*
+.pakku/server-overrides/libraries
+.pakku/server-overrides/config
+.pakku/server-overrides/defaultconfigs
+.pakku/server-overrides/groovy
+.pakku/server-overrides/scripts
+.pakku/server-overrides/mods
+.pakku/server-overrides/user_jvm_args.txt
