@@ -166,6 +166,10 @@ jobs:
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.0
         with:
+          variables: >-
+            if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
+              DIFF="${{ steps.read_diff.outputs.diff }}"
+            fi
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**: ${{ steps.project_version.outputs.value }}
@@ -173,7 +177,5 @@ jobs:
             📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
 
             ${{ steps.changelog.outputs.description }}
-            if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
-              ${{ steps.read_diff.outputs.diff }}
-            fi
+            $DIFF
   
