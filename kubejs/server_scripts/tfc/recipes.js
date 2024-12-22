@@ -1699,6 +1699,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.assembler(`tfg:tfc/${stone}_loose_to_brick`)             
             .itemInputs(`tfc:rock/loose/${stone}`)
             .itemOutputs(`tfc:brick/${stone}`)
+            .circuit(1)
             .duration(40)
             .EUt(8)
 
@@ -1788,7 +1789,7 @@ const registerTFCRecipes = (event) => {
 
         event.recipes.gtceu.assembler(`${stone}_loose_rocks_to_cobble`)             
             .itemInputs(`4x tfc:rock/loose/${stone}`)
-            .circuit(0)
+            .circuit(2)
             .inputFluids(Fluid.of('gtceu:concrete', 72))
             .itemOutputs(`tfc:rock/cobble/${stone}`)
             .duration(50)
