@@ -308,6 +308,26 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 20,
+      "depth": 35,
+      "underground_rarity": 80,
+      "underground_count": 1000,
+      "blocks": [
+        {
+          "block": "minecraft:small_amethyst_bud",
+          "weight": 50
+        },
+		{
+          "block": "minecraft:medium_amethyst_bud",
+          "weight": 30
+        },
+		{
+          "block": "minecraft:large_amethyst_bud",
+          "weight": 20
+        }
+      ]
+    }
   }
 }

@@ -33,6 +33,26 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 50,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:diamond_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:graphite_indicator",
+          "weight": 45
+        },
+		{
+          "block": "gtceu:coal_indicator",
+          "weight": 39
+        }
+      ]
+    }
   }
 }

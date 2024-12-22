@@ -8,5 +8,45 @@
     "gtceu.alternator": "Alternator",
 
     "material.treated_wood": "Creosote-Treated Wood",
-    "block.gtceu.treated_wood_planks": "Creosote-Treated Wood Planks"
+    "block.gtceu.treated_wood_planks": "Creosote-Treated Wood Planks",
+
+    "block.gtceu.lv_kinetic_mixer": "Basic Kinetic Mixer",
+    "block.gtceu.mv_kinetic_mixer": "Advanced Kinetic Mixer",
+    "block.gtceu.hv_kinetic_mixer": "Advanced Kinetic Mixer II",
+    "block.gtceu.ev_kinetic_mixer": "Advanced Kinetic Mixer III",
+
+    "block.gtceu.lv_electric_gear_box_2a": "Low Voltage 2x Gear Box",
+    "block.gtceu.mv_electric_gear_box_2a": "Medium Voltage 2x Gear Box",
+    "block.gtceu.hv_electric_gear_box_2a": "High Voltage 2x Gear Box",
+    "block.gtceu.ev_electric_gear_box_2a": "Extreme Voltage 2x Gear Box",
+    "block.gtceu.lv_electric_gear_box_8a": "Low Voltage 8x Gear Box",
+    "block.gtceu.mv_electric_gear_box_8a": "Medium Voltage 8x Gear Box",
+    "block.gtceu.hv_electric_gear_box_8a": "High Voltage 8x Gear Box",
+    "block.gtceu.ev_electric_gear_box_8a": "Extreme Voltage 8x Gear Box",
+    "block.gtceu.lv_electric_gear_box_16a": "Low Voltage 16x Gear Box",
+    "block.gtceu.mv_electric_gear_box_16a": "Medium Voltage 16x Gear Box",
+    "block.gtceu.hv_electric_gear_box_16a": "High Voltage 16x Gear Box",
+    "block.gtceu.ev_electric_gear_box_16a": "Extreme Voltage 16x Gear Box",
+    "block.gtceu.lv_electric_gear_box_32a": "Low Voltage 32x Gear Box",
+    "block.gtceu.mv_electric_gear_box_32a": "Medium Voltage 32x Gear Box",
+    "block.gtceu.hv_electric_gear_box_32a": "High Voltage 32x Gear Box",
+    "block.gtceu.ev_electric_gear_box_32a": "Extreme Voltage 32x Gear Box",
+
+    "block.gtceu.lv_kinetic_input_box": "Low Voltage Kinetic Input Box",
+    "block.gtceu.mv_kinetic_input_box": "Medium Voltage Kinetic Input Box",
+    "block.gtceu.hv_kinetic_input_box": "High Voltage Kinetic Input Box",
+    "block.gtceu.ev_kinetic_input_box": "Extreme Voltage Kinetic Input Box",
+    "block.gtceu.iv_kinetic_input_box": "Insane Voltage Kinetic Input Box",
+    "block.gtceu.luv_kinetic_input_box": "Ludicrous Voltage Kinetic Input Box",
+    "block.gtceu.zpm_kinetic_input_box": "ZPM Voltage Kinetic Input Box",
+    "block.gtceu.uv_kinetic_input_box": "Ultimate Voltage Kinetic Input Box",
+
+    "block.gtceu.lv_kinetic_output_box": "Low Voltage Kinetic Output Box",
+    "block.gtceu.mv_kinetic_output_box": "Medium Voltage Kinetic Output Box",
+    "block.gtceu.hv_kinetic_output_box": "High Voltage Kinetic Output Box",
+    "block.gtceu.ev_kinetic_output_box": "Extreme Voltage Kinetic Output Box",
+    "block.gtceu.iv_kinetic_output_box": "Insane Voltage Kinetic Output Box",
+    "block.gtceu.luv_kinetic_output_box": "Ludicrous Voltage Kinetic Output Box",
+    "block.gtceu.zpm_kinetic_output_box": "ZPM Voltage Kinetic Output Box",
+    "block.gtceu.uv_kinetic_output_box": "Ultimate Voltage Kinetic Output Box"
 }

@@ -101,6 +101,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:almandine_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:pyrope_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:sapphire_indicator",
+          "weight": 15
+        },
+		{
+          "block": "gtceu:green_sapphire_indicator",
+          "weight": 15
+        }
+      ]
+    }
   }
 }

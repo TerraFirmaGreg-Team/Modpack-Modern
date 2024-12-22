@@ -261,6 +261,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 40,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:grossular_indicator",
+          "weight": 30
+        },
+		{
+          "block": "gtceu:spessartine_indicator",
+          "weight": 20
+        },
+		{
+          "block": "gtceu:pyrolusite_indicator",
+          "weight": 20
+        },
+		{
+          "block": "gtceu:tantalite_indicator",
+          "weight": 10
+        }
+      ]
+    }
   }
 }

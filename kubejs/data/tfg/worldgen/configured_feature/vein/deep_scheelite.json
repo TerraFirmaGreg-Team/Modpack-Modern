@@ -65,6 +65,26 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:scheelite_indicator",
+          "weight": 45
+        },
+		{
+          "block": "gtceu:tungstate_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:lithium_indicator",
+          "weight": 20
+        }
+      ]
+    }
   }
 }

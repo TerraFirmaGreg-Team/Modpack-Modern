@@ -55,6 +55,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:basaltic_mineral_sand_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:granitic_mineral_sand_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:fullers_earth_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:gypsum_indicator",
+          "weight": 15
+        }
+      ]
+    }
   }
 }

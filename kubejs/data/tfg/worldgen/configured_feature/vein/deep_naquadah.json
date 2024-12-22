@@ -2,10 +2,10 @@
   "type": "tfc:cluster_vein",
   "config": {
     "rarity": 310,
-    "density": 0.25,
+    "density": 0.30,
     "min_y": -64,
     "max_y": -20,
-    "size": 22,
+    "size": 32,
     "random_name": "deep_naquadah",
     "blocks": [
       {
@@ -98,6 +98,22 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:naquadah_indicator",
+          "weight": 75
+        },
+		{
+          "block": "gtceu:plutonium_indicator",
+          "weight": 25
+        }
+      ]
+    }
   }
 }

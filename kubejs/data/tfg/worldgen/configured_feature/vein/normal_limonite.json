@@ -57,13 +57,21 @@
     ],
     "indicator": {
       "rarity": 12,
-      "depth": 35,
-      "underground_rarity": 1,
-      "underground_count": 0,
+      "depth": 50,
+      "underground_rarity": 40,
+      "underground_count": 200,
       "blocks": [
         {
           "block": "tfc:ore/small_limonite",
-          "weight": 100
+          "weight": 65
+        },
+		{
+          "block": "tfc:ore/small_hematite",
+          "weight": 20
+        },
+		{
+          "block": "tfc:ore/small_malachite",
+          "weight": 15
         }
       ]
     }

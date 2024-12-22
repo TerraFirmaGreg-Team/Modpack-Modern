@@ -1,8 +1,8 @@
 {
   "type": "tfc:cluster_vein",
   "config": {
-    "rarity": 155,
-    "density": 0.25,
+    "rarity": 185,
+    "density": 0.20,
     "min_y": 0,
     "max_y": 70,
     "size": 55,
@@ -85,6 +85,18 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:oilsands_indicator",
+          "weight": 100
+        }
+      ]
+    }
   }
 }
