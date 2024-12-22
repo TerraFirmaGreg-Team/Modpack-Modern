@@ -1554,6 +1554,26 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region metal bars
+	
+	const METAL_BARS = [
+		"copper",
+		"bronze",
+		"black_bronze",
+		"bismuth_bronze",
+		"wrought_iron",
+		"steel",
+		"black_steel",
+		"red_steel",
+		"blue_steel"
+	];
+	
+	METAL_BARS.forEach(metal => {
+		 generateCutterRecipe(event, `gtceu:${metal}_plate`, 9, `8x tfc:metal/bars/${metal}`, 100, 16, `${metal}_plate_to_bars`)
+	 });
+
+    //#endregion
+
     //#endregion
     
     //#region Земля
