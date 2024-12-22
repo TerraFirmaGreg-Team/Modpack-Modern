@@ -5,7 +5,6 @@ const registerAE2Recipes = (event) => {
     // Удаление рецептов мода
     event.remove({ not: [
         { id: 'ae2:transform/entangled_singularity_from_pearl' },
-        { id: 'ae2:transform/fluix_crystals' },
         { id: 'ae2:network/parts/energy_acceptor' },
         { id: 'ae2:network/blocks/energy_energy_acceptor_alt' },
         { id: 'ae2:network/blocks/pattern_providers_interface_part' },
@@ -2073,11 +2072,11 @@ const registerAE2Recipes = (event) => {
     event.recipes.gtceu.mixer('ae2:fluix_crystal')
         .itemInputs(
             '#forge:gems/nether_quartz',
-            '4x #forge:dusts/redstone',
+            '#forge:dusts/redstone',
             'ae2:charged_certus_quartz_crystal')
         .inputFluids(Fluid.of('minecraft:water', 144))
-        .itemOutputs('ae2:fluix_crystal')
-        .duration(420)
+        .itemOutputs('2x ae2:fluix_crystal')
+        .duration(120)
         .EUt(256)
     
     event.recipes.gtceu.mixer('ae2:fluix_crystal_ruby')
@@ -2086,18 +2085,18 @@ const registerAE2Recipes = (event) => {
             '#forge:exquisite_gems/ruby',
             'ae2:charged_certus_quartz_crystal')
             .inputFluids(Fluid.of('minecraft:water', 144))
-        .itemOutputs('4x ae2:fluix_crystal')
-        .duration(440)
+        .itemOutputs('8x ae2:fluix_crystal')
+        .duration(80)
         .EUt(256)
     
     event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz')
         .itemInputs(
             '#forge:exquisite_gems/nether_quartz',
-            '4x #forge:dusts/redstone',
+            '#forge:dusts/redstone',
             'ae2:charged_certus_quartz_crystal')
             .inputFluids(Fluid.of('minecraft:water', 144))
-        .itemOutputs('4x ae2:fluix_crystal')
-        .duration(460)
+        .itemOutputs('8x ae2:fluix_crystal')
+        .duration(80)
         .EUt(256)
    
     event.recipes.gtceu.mixer('ae2:fluix_crystal_quartz_ruby')
@@ -2105,9 +2104,9 @@ const registerAE2Recipes = (event) => {
             '#forge:exquisite_gems/nether_quartz',
             '#forge:exquisite_gems/ruby',
             'ae2:charged_certus_quartz_crystal')
-        .inputFluids(Fluid.of('minecraft:water', 144))
-        .itemOutputs('12x ae2:fluix_crystal')
-        .duration(480)
+        .inputFluids(Fluid.of('gtceu:distilled_water', 144))
+        .itemOutputs('24x ae2:fluix_crystal')
+        .duration(60)
         .EUt(256)
 
     //charger
