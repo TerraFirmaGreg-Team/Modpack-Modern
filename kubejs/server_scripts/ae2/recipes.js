@@ -24,6 +24,27 @@ const registerAE2Recipes = (event) => {
 
     //#endregion
 
+    // Cutting knives (for renaming things)
+    event.shaped('ae2:certus_quartz_cutting_knife', [
+        '  A',
+        'BA ',
+        'CCB',
+    ], {
+        A: '#forge:rods/aluminium',
+        B: '#forge:plates/steel',
+        C: '#forge:exquisite_gems/certus_quartz',
+    }).id('tfg:crafting/certus_quartz_cutting_knife')
+
+    event.shaped('ae2:nether_quartz_cutting_knife', [
+        '  A',
+        'BA ',
+        'CCB',
+    ], {
+        A: '#forge:rods/aluminium',
+        B: '#forge:plates/steel',
+        C: '#forge:exquisite_gems/nether_quartz',
+    }).id('tfg:crafting/nether_quartz_cutting_knife')
+
     // Network tool
     event.shaped('ae2:network_tool', [
         'AB',
