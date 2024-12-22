@@ -458,6 +458,30 @@ const registerFirmaLifeRecipes = (event) => {
     event.recipes.create.mixing('4x firmalife:food/hardtack_dough', ['tfc:powder/salt', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)])
         .id('firmalife:create/mixer/food/hardtack_dough')
 
+    // Yeast starter
+	event.recipes.gtceu.mixer('firmalife:yeast_starter')
+		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
+        .itemInputs('#tfc:foods/flour')
+        .outputFluids('firmalife:yeast_starter', 600)
+        .duration(1200)
+        .EUt(8)
+		
+	event.recipes.create.mixing(Fluid.of('firmalife:yeast_starter', 600), ['#tfc:foods/flour', Fluid.of('firmalife:yeast_starter', 100)])
+		.id('firmalife:create/mixer/yeast_starter')
+
+	// Cocoa Powder
+	event.recipes.gtceu.macerator('firmalife:food/cocoa_powder')
+		.itemInputs('gtceu:cocoa_dust')
+		.itemOutputs('4x firmalife:food/cocoa_powder')
+		.duration(100)
+		.EUt(2)
+		
+	event.recipes.createMilling('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
+		.id('firmalife:milling/food/cocoa_dust')
+		
+	event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
+		.id(`tfg:quern/cocoa_powder`)
+
     // Chocolate Ice Cream
     event.recipes.gtceu.mixer('firmalife:food/chocolate_ice_cream')             
         .itemInputs('firmalife:food/vanilla_ice_cream')
