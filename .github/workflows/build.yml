@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 concurrency:
   group: ${{ github.workflow }}
@@ -72,28 +69,25 @@ jobs:
         id: check_pakku_lock_prev
         shell: bash
         run: |
-          if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
-            echo "❌ File pakku-lock.json not found in previous tag"
-          else
+          if git cat-file -e ${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json 2>/dev/null; then
             echo "✔️ File pakku-lock.json found in previous tag"
+            echo "file_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "❌ File pakku-lock.json not found in previous tag"
+            echo "file_found=false" >> $GITHUB_OUTPUT
           fi
         
       - name: 📁 Check and copy pakku-lock.json from previous tag
         id: check_copy_lock
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
         shell: bash
         run: |
           git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
           if [ -s ./pakku-lock-prev.json ]; then
             echo "✔️ File pakku-lock-prev.json created"
           else
-            echo "❌ Error: File pakku-lock-prev.json is empty or not created"
-            echo "Creating pakku-lock-prev.json from current repository file"
-            cp ./pakku-lock.json ./pakku-lock-prev.json
-            if [ -s ./pakku-lock-prev.json ]; then
-              echo "✔️ File pakku-lock-prev.json created from current repository file"
-            else
-              echo "❌ Error: Failed to create pakku-lock-prev.json from current repository file"
-            fi
+            echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
+          fi
           fi
         
       - name: 📦 Download pakku.jar
