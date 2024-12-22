@@ -1,0 +1,183 @@
+name: Project Build
+run-name: "Project Build #${{ github.run_number }}"
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+env:
+  RELEASE_TYPE: "alpha"
+  MINECRAFT_VERSION: "1.20.1"
+
+jobs:    
+  info:
+    name: 🖥️ Project Info
+    runs-on: ubuntu-latest
+    outputs:
+      project_version: ${{ steps.project_version.outputs.value }}
+      project_name: ${{ steps.project_name.outputs.value }}
+      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.value }}
+      changelog: ${{ steps.changelog.outputs.description }}
+      diff: ${{ steps.read_diff.outputs.diff }}
+      release_type: ${{ env.RELEASE_TYPE }}
+      minecraft_version: ${{ env.MINECRAFT_VERSION }}
+      exists: ${{ steps.check_tag.outputs.exists }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+        
+      - name: 🔍 Check pakku-lock.json
+        id: check_pakku_lock
+        shell: bash
+        run: |
+          if [ ! -f pakku-lock.json ]; then
+            echo "❌ Could not find pakku-lock.json" && exit 1
+          else
+            echo "✔️ pakku-lock.json"
+          fi
+        
+      - name: 🔍 Check pakku.json
+        id: check_pakku
+        shell: bash
+        run: |
+          if [ ! -f pakku.json ]; then
+            echo "❌ Could not find pakku.json" && exit 1
+          else
+            echo "✔️ pakku.json"
+          fi
+
+      - name: 📈 Get latest tag
+        id: latest_tag
+        shell: bash
+        run: |
+          tag=$(git describe --tags --abbrev=0)
+          if [ -z "$tag" ]; then
+            echo "❌ Latest tag not found" && exit 1
+          else
+            echo "✔️ Latest tag found: $tag"
+            echo "tag=$tag" >> $GITHUB_OUTPUT
+          fi
+        
+      - name: 🔍 Check pakku-lock.json in previous tag
+        id: check_pakku_lock_prev
+        shell: bash
+        run: |
+          if git cat-file -e ${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json 2>/dev/null; then
+            echo "✔️ File pakku-lock.json found in previous tag"
+            echo "file_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "❌ File pakku-lock.json not found in previous tag"
+            echo "file_found=false" >> $GITHUB_OUTPUT
+          fi
+        
+      - name: 📁 Check and copy pakku-lock.json from previous tag
+        id: check_copy_lock
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
+          if [ -s ./pakku-lock-prev.json ]; then
+            echo "✔️ File pakku-lock-prev.json created"
+          else
+            echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
+          fi
+          fi
+        
+      - name: 📦 Download pakku.jar
+        id: download_pakku
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          echo "✔️ Downloaded pakku.jar "
+        
+      - name: 🔄 Run pakku diff
+        id: pakku_diff
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
+          if [ -f PROJECTS_DIFF.md ]; then
+            echo "✔️ Comparison completed"
+          else
+            echo "❌ Error: File PROJECTS_DIFF.md not created" && exit 1
+          fi
+        
+      - name: 📝 Read PROJECTS_DIFF.md to variable
+        id: read_diff
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          echo "📝 Reading PROJECTS_DIFF.md to variable..."
+          {
+            echo 'diff<<EOF'
+            cat -v PROJECTS_DIFF.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+          echo "✔️ Diff content read to variable"
+        
+      - name: 📊 Get Project Name
+        id: project_name
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+          prop_path: "name"
+        
+      - name: 📊 Get Project Version
+        id: project_version
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+          prop_path: "version"
+
+      - name: 📊 Get Minecraft Version
+        id: minecraft_version
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku-lock.json"
+          prop_path: "mc_versions"
+        
+      - name: 📄 Changelog Parser
+        id: changelog
+        uses: coditory/changelog-parser@v1.0.2
+        with:
+          path: CHANGELOG.md
+        
+      - name: 📈 Upload Diff
+        id: upload_diff
+        if: ${{ steps.read_diff.outputs.diff != '' }} && steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        uses: actions/upload-artifact@v4.5.0
+        with:
+          name: Mods-diff
+          path: PROJECTS_DIFF.md
+        
+      - name: 🔍 Check if tag exists
+        uses: mukunku/tag-exists-action@v1.6.0
+        id: check_tag
+        with:
+          tag: ${{ steps.project_version.outputs.value }}
+        
+      - name: 📝 Generate Github Summary
+        uses: WcAServices/markdown-template-action@v1.1.0
+        with:
+          template: |
+            📃 **Name**: ${{ steps.project_name.outputs.value }}
+            📃 **Release**: ${{ steps.project_version.outputs.value }}
+            📃 **Release Type**: ${{ env.RELEASE_TYPE }}
+            📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
+
+            ${{ steps.changelog.outputs.description }}
+            if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
+              ${{ steps.read_diff.outputs.diff }}
+            fi
+  
