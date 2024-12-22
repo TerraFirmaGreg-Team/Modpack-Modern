@@ -573,7 +573,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '3x ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:rubber', 432))
-        .itemOutputs('ae2:fluix_covered_cable')
+        .itemOutputs('3x ae2:fluix_covered_cable')
         .circuit(1)
         .duration(20)
         .EUt(480)
@@ -582,7 +582,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '3x ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:silicone_rubber', 216))
-        .itemOutputs('ae2:fluix_covered_cable')
+        .itemOutputs('3x ae2:fluix_covered_cable')
         .circuit(1)
         .duration(20)
         .EUt(480)
@@ -591,7 +591,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '3x ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 108))
-        .itemOutputs('ae2:fluix_covered_cable')
+        .itemOutputs('3x ae2:fluix_covered_cable')
         .circuit(1)
         .duration(20)
         .EUt(480)
@@ -603,18 +603,18 @@ const registerAE2Recipes = (event) => {
             '#forge:dusts/glowstone',
             '#forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:rubber', 432))
-        .itemOutputs('ae2:fluix_smart_cable')
+        .itemOutputs('3x ae2:fluix_smart_cable')
         .circuit(2)
         .duration(20)
         .EUt(480)
         
-    event.recipes.gtceu.assembler('fluix_smart_cable_silicone_rubber')        
+    event.recipes.gtceu.assembler('fluix_smart_cable_silicone_rubber')
         .itemInputs(
             '3x ae2:fluix_glass_cable',
             '#forge:dusts/glowstone',
             '#forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:silicone_rubber', 216))
-        .itemOutputs('ae2:fluix_smart_cable')
+        .itemOutputs('3x ae2:fluix_smart_cable')
         .circuit(2)
         .duration(20)
         .EUt(480)
@@ -625,7 +625,7 @@ const registerAE2Recipes = (event) => {
             '#forge:dusts/glowstone',
             '#forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 108))
-        .itemOutputs('ae2:fluix_smart_cable')
+        .itemOutputs('3x ae2:fluix_smart_cable')
         .circuit(2)
         .duration(20)
         .EUt(480)
@@ -645,7 +645,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '12x ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:rubber', 1728))
-        .itemOutputs('ae2:fluix_covered_dense_cable')
+        .itemOutputs('3x ae2:fluix_covered_dense_cable')
         .circuit(3)
         .duration(20)
         .EUt(480)
@@ -654,7 +654,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '12x ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:silicone_rubber', 864))
-        .itemOutputs('ae2:fluix_covered_dense_cable')
+        .itemOutputs('3x ae2:fluix_covered_dense_cable')
         .circuit(3)
         .duration(20)
         .EUt(480)
@@ -663,7 +663,7 @@ const registerAE2Recipes = (event) => {
         .itemInputs(
             '12x ae2:fluix_glass_cable')
         .inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 432))
-        .itemOutputs('ae2:fluix_covered_dense_cable')
+        .itemOutputs('3x ae2:fluix_covered_dense_cable')
         .circuit(3)
         .duration(20)
         .EUt(480)
@@ -676,41 +676,41 @@ const registerAE2Recipes = (event) => {
         .duration(20)
         .EUt(480)
         
-    // Smart dence cable
-    event.recipes.gtceu.assembler('fluix_smart_dence_cable_rubber')
+    // Smart dense cable
+    event.recipes.gtceu.assembler('fluix_smart_dense_cable_rubber')
         .itemInputs(
             '12x ae2:fluix_glass_cable',
             '#forge:dusts/glowstone',
             '#forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:rubber', 1728))
-        .itemOutputs('ae2:fluix_smart_dense_cable')
+        .itemOutputs('3x ae2:fluix_smart_dense_cable')
         .circuit(4)
         .duration(20)
         .EUt(480)
         
-    event.recipes.gtceu.assembler('fluix_smart_dence_cable_silicone_rubber')        
+    event.recipes.gtceu.assembler('fluix_smart_dense_cable_silicone_rubber')        
         .itemInputs(
             '12x ae2:fluix_glass_cable',
             '#forge:dusts/glowstone',
             '#forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:silicone_rubber', 864))
-        .itemOutputs('ae2:fluix_smart_dense_cable')
+        .itemOutputs('3x ae2:fluix_smart_dense_cable')
         .circuit(4)
         .duration(20)
         .EUt(480)
         
-    event.recipes.gtceu.assembler('fluix_smart_dence_cable_styrene_butadiene_rubber')
+    event.recipes.gtceu.assembler('fluix_smart_dense_cable_styrene_butadiene_rubber')
         .itemInputs(
             '12x ae2:fluix_glass_cable',
             '#forge:dusts/glowstone',
             '#forge:dusts/redstone')
         .inputFluids(Fluid.of('gtceu:styrene_butadiene_rubber', 432))
-        .itemOutputs('ae2:fluix_smart_dense_cable')
+        .itemOutputs('3x ae2:fluix_smart_dense_cable')
         .circuit(4)
         .duration(20)
         .EUt(480)
         
-    event.recipes.gtceu.assembler('fluix_smart_dence_cable_covered_cable')
+    event.recipes.gtceu.assembler('fluix_smart_dense_cable_covered_cable')
         .itemInputs(
             '4x ae2:fluix_covered_cable',
             '#forge:dusts/glowstone',
@@ -720,7 +720,7 @@ const registerAE2Recipes = (event) => {
         .duration(20)
         .EUt(480)
         
-    event.recipes.gtceu.assembler('fluix_smart_dence_cable_smart_cable')
+    event.recipes.gtceu.assembler('fluix_smart_dense_cable_smart_cable')
         .itemInputs(
             '4x ae2:fluix_smart_cable',)
         .itemOutputs('ae2:fluix_smart_dense_cable')
@@ -728,7 +728,7 @@ const registerAE2Recipes = (event) => {
         .duration(20)
         .EUt(480)
         
-    event.recipes.gtceu.assembler('fluix_smart_dence_cable')
+    event.recipes.gtceu.assembler('fluix_smart_dense_cable')
         .itemInputs(
             'ae2:fluix_covered_dense_cable',
             '#forge:dusts/glowstone',
