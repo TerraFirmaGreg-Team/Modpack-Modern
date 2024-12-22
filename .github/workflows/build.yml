@@ -174,9 +174,7 @@ jobs:
             📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
 
             ${{ steps.changelog.outputs.description }}
-            if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
-              ${{ steps.read_diff.outputs.diff }}
-            fi
+            ${{ steps.read_diff.outputs.diff }}
   
 
   build-modpack:
