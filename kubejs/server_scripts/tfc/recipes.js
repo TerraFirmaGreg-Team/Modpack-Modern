@@ -1286,8 +1286,8 @@ const registerTFCRecipes = (event) => {
     //#region Рецепты для новых сплавов
 
     event.recipes.tfc.alloy('tfg:red_alloy', [
-        TFC.alloyPart('tfg:redstone', 0.15, 0.25),
-        TFC.alloyPart('tfc:copper', 0.75, 0.85)
+        TFC.alloyPart('tfg:redstone', 0.75, 0.85),
+        TFC.alloyPart('tfc:copper', 0.15, 0.25)
     ]).id('tfg:alloy/red_alloy')
 
     event.recipes.tfc.alloy('tfg:tin_alloy', [
