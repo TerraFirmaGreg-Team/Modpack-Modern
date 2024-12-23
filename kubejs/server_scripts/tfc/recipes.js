@@ -1669,8 +1669,8 @@ const registerTFCRecipes = (e) => {
 
     //#region Сплав красного камня
     e.recipes.tfc.alloy('tfg:red_alloy', [
-        TFC.alloyPart('tfg:redstone', 0.23, 0.27),
-        TFC.alloyPart('tfc:copper', 0.73, 0.77)
+        TFC.alloyPart('tfg:redstone', 0.75, 0.85),
+        TFC.alloyPart('tfc:copper', 0.15, 0.25)
     ]).id('tfg:alloy/red_alloy')
     //#endregion
 
