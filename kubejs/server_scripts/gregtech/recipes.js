@@ -145,7 +145,7 @@ const registerGregTechRecipes = (e) => {
     }
 
     const processRod = (tagPrefix, material) => {
-        const rodItem = ChemicalHelper.get(tagPrefix, material, 1)
+        const rodItem = ChemicalHelper.get(tagPrefix, material, 2)
         if (rodItem.isEmpty()) return
         
         const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
