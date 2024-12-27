@@ -1105,7 +1105,7 @@ const registerCreateRecipes = (e) => {
     ]).ingredient('#tfc:leather_knapping').id('tfg:create/shaped/belt_connector')
 
     e.recipes.gtceu.assembler('tfg:create/belt_connector')             
-        .itemInputs('minecraft:leather')
+        .itemInputs('#forge:leather')
         .circuit(2)
         .itemOutputs('create:belt_connector')
         .duration(25)
