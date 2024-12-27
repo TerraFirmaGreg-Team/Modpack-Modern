@@ -1342,12 +1342,13 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:shaped/steam_alloy_smelter_bronze' })
     e.shaped('gtceu:lp_steam_alloy_smelter', [
         'AAA',
-        'ABA',
+        'DBD',
         'ACA' 
     ], {
         A: 'gtceu:bronze_small_fluid_pipe',
         B: 'gtceu:bronze_brick_casing',
         C: '#forge:double_sheets/any_bronze',
+        D: '#forge:plates/bronze',
     }).id('tfg:shaped/steam_alloy_smelter_bronze')
     //#endregion
 
