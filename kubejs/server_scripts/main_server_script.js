@@ -156,13 +156,6 @@ ServerEvents.recipes(event => {
 LootJS.modifiers((event) => {})
 
 /**
- * Событие регистрации рудных жил GregTech.
-*/
-GTCEuServerEvents.oreVeins(event => {
-    registerGregTechOreVeins(event)
-})
-
-/**
  * Событие регистрации жидкостных жил GregTech.
 */
 GTCEuServerEvents.fluidVeins(event => {
