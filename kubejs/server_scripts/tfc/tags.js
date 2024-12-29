@@ -577,4 +577,63 @@ const registerTFCPlacedFeatures = (event) => {
         event.remove('tfc:in_biome/veins', vein)
     })
     //#endregion
+
+    //#region Setting new custom veins for TFC ore generation
+    const TFG_VEINS = [
+        'tfg:vein/deep_garnet_amethyst',
+        'tfg:vein/deep_garnet_opal',
+        'tfg:vein/deep_gold',
+        'tfg:vein/deep_hematite',
+        'tfg:vein/deep_limonite',
+        'tfg:vein/deep_magnetite',
+        'tfg:vein/deep_molybdenum',
+        'tfg:vein/deep_naquadah',
+        'tfg:vein/deep_pitchblende',
+        'tfg:vein/deep_sapphire',
+        'tfg:vein/deep_scheelite',
+        'tfg:vein/deep_sheldonite',
+        'tfg:vein/deep_topaz',
+        'tfg:vein/normal_apatite_',
+        'tfg:vein/normal_basaltic_sands',
+        'tfg:vein/normal_bauxite',
+        'tfg:vein/normal_beryllium',
+        'tfg:vein/normal_bismuthinite',
+        'tfg:vein/normal_cassiterite',
+        'tfg:vein/normal_certus_quartz',
+        'tfg:vein/normal_coal',
+        'tfg:vein/normal_copper',
+        'tfg:vein/normal_garnet_tin',
+        'tfg:vein/normal_garnierite',
+        'tfg:vein/normal_gold',
+        'tfg:vein/normal_graphite',
+        'tfg:vein/normal_hematite',
+        'tfg:vein/normal_spodumene',
+        'tfg:vein/normal_oil_sands',
+        'tfg:vein/normal_lapis',
+        'tfg:vein/normal_limonite',
+        'tfg:vein/normal_lubricant',
+        'tfg:vein/normal_magnetite',
+        'tfg:vein/normal_manganese',
+        'tfg:vein/normal_mica',
+        'tfg:vein/normal_monazite',
+        'tfg:vein/normal_olivine',
+        'tfg:vein/normal_redstone',
+        'tfg:vein/normal_salt',
+        'tfg:vein/normal_saltpeter',
+        'tfg:vein/normal_silver',
+        'tfg:vein/normal_sphalerite',
+        'tfg:vein/normal_sulfur',
+        'tfg:vein/normal_tetrahedrite',
+        'tfg:vein/surface_bismuthinite',
+        'tfg:vein/surface_cassiterite',
+        'tfg:vein/surface_copper',
+        'tfg:vein/surface_sphalerite',
+        'tfg:vein/surface_tetrahedrite',
+        'tfg:geode'
+    ];
+
+    TFG_VEINS.forEach(vein => {
+        event.add('tfc:in_biome/veins', vein);
+    });
+    //#endregion
 }
