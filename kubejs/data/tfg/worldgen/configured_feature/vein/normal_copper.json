@@ -1,0 +1,117 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 170,
+    "density": 0.4,
+    "min_y": -32,
+    "max_y": 75,
+    "size": 40,
+    "random_name": "normal_copper",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_chalcopyrite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:rhyolite_iron_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:rhyolite_pyrite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:rhyolite_copper_ore",
+            "weight": 65
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_chalcopyrite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:basalt_iron_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:basalt_pyrite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:basalt_copper_ore",
+            "weight": 65
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_chalcopyrite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:andesite_iron_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:andesite_pyrite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:andesite_copper_ore",
+            "weight": 65
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_chalcopyrite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:dacite_iron_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:dacite_pyrite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:dacite_copper_ore",
+            "weight": 65
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 85,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_native_copper",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}

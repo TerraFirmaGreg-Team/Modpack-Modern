@@ -1,0 +1,139 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 140,
+    "density": 0.25,
+    "min_y": 60,
+    "max_y": 210,
+    "size": 50,
+    "random_name": "surface_tetrahedrite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_tetrahedrite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:quartzite_copper_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:quartzite_stibnite_ore",
+            "weight": 30
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_tetrahedrite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:slate_copper_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:slate_stibnite_ore",
+            "weight": 30
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_tetrahedrite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:phyllite_copper_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:phyllite_stibnite_ore",
+            "weight": 30
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_tetrahedrite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:schist_copper_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:schist_stibnite_ore",
+            "weight": 30
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_tetrahedrite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:gneiss_copper_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:gneiss_stibnite_ore",
+            "weight": 30
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_tetrahedrite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:marble_copper_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:marble_stibnite_ore",
+            "weight": 30
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 60,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_tetrahedrite",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 220,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 62,
+    "size": 26,
+    "random_name": "deep_garnet_opal",
+    "height": 6,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:rhyolite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:rhyolite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:rhyolite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:basalt_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:basalt_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:andesite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:andesite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:andesite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:dacite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dacite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:dacite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:granite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:granite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:diorite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:diorite_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_opal_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:gabbro_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:gabbro_amethyst_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_opal_ore",
+            "weight": 55
+          }
+        ]
+      }
+    ]
+  }
+}
