@@ -100,6 +100,26 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 5,
+      "depth": 40,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "ae2:small_quartz_bud",
+          "weight": 50
+        },
+		{
+          "block": "ae2:medium_quartz_bud",
+          "weight": 30
+        },
+		{
+          "block": "ae2:large_quartz_bud",
+          "weight": 20
+        }
+      ]
+    }
   }
 }

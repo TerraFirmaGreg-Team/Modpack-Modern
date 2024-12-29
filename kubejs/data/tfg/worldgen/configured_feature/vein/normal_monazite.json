@@ -65,6 +65,26 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:bastnasite_indicator",
+          "weight": 50
+        },
+		{
+          "block": "gtceu:monazite_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:neodymium_indicator",
+          "weight": 25
+        }
+      ]
+    }
   }
 }

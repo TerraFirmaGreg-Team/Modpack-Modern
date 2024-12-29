@@ -50,7 +50,7 @@ body:
     attributes:
       label: "Please provide a link to your latest.log, if relevant."
       description: |
-        "The `latest.log` file is found in `/logs\` within the modpack files."
+        "The `latest.log` file is found in `/logs/` within the modpack files."
         "We recommend always using https://mclo.gs/."
         
         > [!CAUTION]

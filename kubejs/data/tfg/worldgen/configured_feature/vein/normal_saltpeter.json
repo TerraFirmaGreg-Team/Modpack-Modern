@@ -215,6 +215,30 @@
           }
         ]
       }
-    ]
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 100,
+      "blocks": [
+        {
+          "block": "gtceu:saltpeter_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:diatomite_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:electrotine_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:alunite_indicator",
+          "weight": 15
+        }
+      ]
+    }
   }
 }

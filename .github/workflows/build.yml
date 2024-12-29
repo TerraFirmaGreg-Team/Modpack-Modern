@@ -52,7 +52,7 @@ jobs:
           else
             echo "✔️ pakku.json"
           fi
-        
+
       - name: 📈 Get latest tag
         id: latest_tag
         shell: bash
@@ -69,14 +69,17 @@ jobs:
         id: check_pakku_lock_prev
         shell: bash
         run: |
-          if ! git ls-tree -r ${{ steps.latest_tag.outputs.tag }} -- ./pakku-lock.json &> /dev/null; then
-            echo "❌ File pakku-lock.json not found in previous tag" && exit 1
-          else
+          if git cat-file -e ${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json 2>/dev/null; then
             echo "✔️ File pakku-lock.json found in previous tag"
+            echo "file_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "❌ File pakku-lock.json not found in previous tag"
+            echo "file_found=false" >> $GITHUB_OUTPUT
           fi
         
-      - name: 📁 Copy pakku-lock.json from previous tag
-        id: copy_pakku_lock_prev
+      - name: 📁 Check and copy pakku-lock.json from previous tag
+        id: check_copy_lock
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
         shell: bash
         run: |
           git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
@@ -85,9 +88,11 @@ jobs:
           else
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
           fi
+          fi
         
       - name: 📦 Download pakku.jar
         id: download_pakku
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
         shell: bash
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
@@ -95,6 +100,7 @@ jobs:
         
       - name: 🔄 Run pakku diff
         id: pakku_diff
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
         shell: bash
         run: |
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
@@ -106,6 +112,7 @@ jobs:
         
       - name: 📝 Read PROJECTS_DIFF.md to variable
         id: read_diff
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
         shell: bash
         run: |
           echo "📝 Reading PROJECTS_DIFF.md to variable..."
@@ -145,8 +152,8 @@ jobs:
         
       - name: 📈 Upload Diff
         id: upload_diff
-        if: ${{ steps.read_diff.outputs.diff != '' }}
-        uses: actions/upload-artifact@v4.4.3
+        if: ${{ steps.read_diff.outputs.diff != '' }} && steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: Mods-diff
           path: PROJECTS_DIFF.md
@@ -158,16 +165,16 @@ jobs:
           tag: ${{ steps.project_version.outputs.value }}
         
       - name: 📝 Generate Github Summary
-        run: |
-          echo "📃 **Name**: ${{ steps.project_name.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Release**: ${{ steps.project_version.outputs.value }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Release Type**: ${{ env.RELEASE_TYPE }}" >> $GITHUB_STEP_SUMMARY
-          echo "📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}" >> $GITHUB_STEP_SUMMARY
-          
-          echo "${{ steps.changelog.outputs.description }}" >> $GITHUB_STEP_SUMMARY
-          if [ -n "${{ steps.read_diff.outputs.diff != '' }}" ]; then
-            echo "${{ steps.read_diff.outputs.diff }}" >> $GITHUB_STEP_SUMMARY
-          fi
+        uses: WcAServices/markdown-template-action@v1.1.0
+        with:
+          template: |
+            📃 **Name**: ${{ steps.project_name.outputs.value }}
+            📃 **Release**: ${{ steps.project_version.outputs.value }}
+            📃 **Release Type**: ${{ env.RELEASE_TYPE }}
+            📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
+
+            ${{ steps.changelog.outputs.description }}
+            ${{ steps.read_diff.outputs.diff }}
   
 
   build-modpack:
@@ -206,7 +213,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
       - name: 🚀 Upload artifact CurseForge
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
@@ -218,7 +225,7 @@ jobs:
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
       - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
@@ -261,7 +268,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
       - name: 🚀 Upload artifact server
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
@@ -311,7 +318,7 @@ jobs:
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: 🚀 Upload zip multimc
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
@@ -422,25 +429,23 @@ jobs:
 
       - name: Format diff
         id: format_diff
-        run: |
-          if [ -n "${{ needs.info.outputs.diff }}" ]; then
-            value="```markdown
+        if: ${{ needs.info.outputs.diff != '' }}
+        uses: roamingowl/template-output-with-eta@v1.10.0
+        with:
+          template: |
+            ```markdown
             ${{ needs.info.outputs.diff }}
-            ```"
-          else
-            value=""
-          fi
-          echo "value=${formatted_diff}" >> $GITHUB_OUTPUT
+            ```
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.0
+        uses: softprops/action-gh-release@v2.1.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
           body: |
             ${{ needs.info.outputs.changelog }}
-            ${{ steps.format_diff.outputs.value }}
+            ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_full_name }}-curseforge.zip
             ${{ needs.info.outputs.project_full_name }}-serverpack.zip
