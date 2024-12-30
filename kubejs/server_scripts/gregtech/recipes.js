@@ -1278,6 +1278,82 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region remove LV casing exploit
+	
+    event.remove({ id: 'gtceu:assembler/casing_lv' })
+	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
+		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
+		.itemOutputs('gtceu:lv_machine_casing')
+		.circuit(8)
+		.duration(50)
+		.EUt(16)
+		
+	//#endregion
+		
+	//#region make colored steel a bit easier to compensate
+		
+	event.recipes.gtceu.arc_furnace('tfg:black_steel_dust_to_ingot')
+		.itemInputs('gtceu:black_steel_dust')
+		.itemOutputs('gtceu:black_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(500)
+		.EUt(24)
+		
+	event.recipes.gtceu.arc_furnace('tfg:red_steel_dust_to_ingot')
+		.itemInputs('gtceu:red_steel_dust')
+		.itemOutputs('gtceu:red_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(700)
+		.EUt(32)
+		
+	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
+		.itemInputs('gtceu:blue_steel_dust')
+		.itemOutputs('gtceu:blue_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(700)
+		.EUt(32)
+		
+	//#endregion
+	
+	//#region add regular furnace recipes for other tfc alloys
+	
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_bismuth_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_bismuth_bronze_gas' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_black_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_black_bronze_gas' })
+	event.remove({id: 'gtceu:vacuum_freezer/cool_hot_black_bronze_ingot' })
+	event.remove({id: 'gtceu:vacuum_freezer/black_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_sterling_silver' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_sterling_silver_gas' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_rose_gold' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_rose_gold_gas' })
+		
+	event.recipes.gtceu.electric_furnace('tfg:bismuth_bronze_dust_to_ingot')
+		.itemInputs('gtceu:bismuth_bronze_dust')
+		.itemOutputs('gtceu:bismuth_bronze_ingot')
+		.duration(200)
+		.EUt(16)
+		
+	event.recipes.gtceu.electric_furnace('tfg:black_bronze_dust_to_ingot')
+		.itemInputs('gtceu:black_bronze_dust')
+		.itemOutputs('gtceu:black_bronze_ingot')
+		.duration(200)
+		.EUt(16)
+		
+	event.recipes.gtceu.electric_furnace('tfg:sterling_silver_dust_to_ingot')
+		.itemInputs('gtceu:sterling_silver_dust')
+		.itemOutputs('gtceu:sterling_silver_ingot')
+		.duration(300)
+		.EUt(20)
+		
+	event.recipes.gtceu.electric_furnace('tfg:rose_gold_dust_to_ingot')
+		.itemInputs('gtceu:rose_gold_dust')
+		.itemOutputs('gtceu:rose_gold_ingot')
+		.duration(300)
+		.EUt(20)
+	
+	//#endregion
+
     //#region Рецепты, которые итерируются по всем материалам
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
