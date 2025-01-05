@@ -1278,6 +1278,16 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    // Add circuit to assembler recipe for redstone lamp.
+    // Avoids conflict with AE2 smart cables.
+    event.remove({ id: 'gtceu:assembler/redstone_lamp' })
+    event.recipes.gtceu.assembler('redstone_lamp')
+        .itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
+        .itemOutputs('1x minecraft:redstone_lamp')
+        .circuit(1)
+        .duration(100)
+        .EUt(1)
+
     //#region Рецепты, которые итерируются по всем материалам
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
