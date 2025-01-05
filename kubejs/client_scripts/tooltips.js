@@ -1,7 +1,4 @@
 ItemEvents.tooltip(event => {
-    event.addAdvanced(['tfc:red_kaolin_clay','tfc:pink_kaolin_clay','tfc:white_kaolin_clay','gtceu:brass_block'], (item, advanced, text) => {
-        text.add(1, [text.of('Used in glassblowing as a replacement for Brass Plated Blocks')])
-    })
     event.addAdvanced(['gtceu:lv_macerator','gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {
         text.add(1, [text.of('Only outputs the first slot shown in EMI/JEI until HV.')])
     })
