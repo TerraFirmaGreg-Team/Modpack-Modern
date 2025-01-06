@@ -1278,6 +1278,16 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    // Add circuit to assembler recipe for redstone lamp.
+    // Avoids conflict with AE2 smart cables.
+    event.remove({ id: 'gtceu:assembler/redstone_lamp' })
+    event.recipes.gtceu.assembler('redstone_lamp')
+        .itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
+        .itemOutputs('1x minecraft:redstone_lamp')
+        .circuit(1)
+        .duration(100)
+        .EUt(1)
+
     //#region Рецепты, которые итерируются по всем материалам
 
     GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
@@ -1455,7 +1465,6 @@ const registerGTCEURecipes = (event) => {
         }
         
     });
-
     //#endregion
 
     // Fix LV recycling producing red/blue steel.
@@ -1479,4 +1488,22 @@ const registerGTCEURecipes = (event) => {
         /gtceu:macerator\/macerate_lv_.*/,
         '#forge:dusts/blue_steel',
         '')
+
+    // Clear NBT on tanks with shapeless crafts.
+    [
+        "lv_super",
+        "mv_super",
+        "hv_super",
+        "ev_super",
+        "iv_quantum",
+        "luv_quantum",
+        "zpm_quantum",
+        "uv_quantum",
+        "uhv_quantum",
+    ].forEach(prefix => {
+        // Craft super tanks to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
+        // Craft super chests to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
+    });
 }

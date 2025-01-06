@@ -22,7 +22,6 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:fluix_pickaxe',
     'ae2:entropy_manipulator',
     'ae2:charged_staff',
-    '#ae2:knife',
     'ae2:name_press',
 
     // Блоки
