@@ -24,7 +24,9 @@
   - This means a tank can be crafted to remove NBT data stuck to it, so it can stack with other tanks again.
   5. It adds a circuit (1) to the GTCEu assembler recipe for minecraft:redstone_lamp.
   - This was conflicting with the AE2 smart cable recipes.
-- Fix LV recycling recipes to produce basic steel.
+- Fix LV recycling recipes to produce basic steel (fluffle).
+- Adds early glowstone recipe (Pyritie).
+- Added recipes to stop duping of red alloy + steam machines (Pyritie).
 ### Removed mods
 - ?
 ### Updated mods
