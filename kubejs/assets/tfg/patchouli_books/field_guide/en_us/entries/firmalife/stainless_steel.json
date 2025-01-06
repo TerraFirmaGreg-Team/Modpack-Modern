@@ -1,0 +1,14 @@
+{
+    "name": "Stainless Steel",
+    "icon": "firmalife:metal/ingot/stainless_steel",
+    "category": "tfc:firmalife",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+			"item": "gtceu:stainless_steel_ingot",
+			"title": "Stainless Steel",
+            "text": "This page is here to override the default Firmalife stainless steel page.$(br2)Stainless Steel is a GregTech $(thing)HV$() material, so it's not craftable with primitive age tools like it normally is with Firmalife.$(br)The stainless steel greenhouse isn't craftable either. Sorry!"
+        }
+    ]
+}

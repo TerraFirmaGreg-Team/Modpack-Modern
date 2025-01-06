@@ -165,7 +165,7 @@ jobs:
           tag: ${{ steps.project_version.outputs.value }}
         
       - name: 📝 Generate Github Summary
-        uses: WcAServices/markdown-template-action@v1.1.0
+        uses: WcAServices/markdown-template-action@v1.1.1
         with:
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
@@ -439,7 +439,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.1.0
+        uses: softprops/action-gh-release@v2.2.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
@@ -467,7 +467,7 @@ jobs:
           max_chars: '1450'
 
       - name: 📨 Send Discord message
-        uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.4
         with:
           key: ${{ secrets.DISCORD_RELEASES }}
           username: "TerraFirmaGreg"
