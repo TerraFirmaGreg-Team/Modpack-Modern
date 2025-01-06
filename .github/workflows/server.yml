@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: 📨 Send Discord message
-        uses: hugoalh/send-discord-webhook-ghaction@v7.0.3
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.4
         with:
           key: ${{ secrets.DISCORD_NEWS_SERVER }}
           username: "TerraFirmaGreg"

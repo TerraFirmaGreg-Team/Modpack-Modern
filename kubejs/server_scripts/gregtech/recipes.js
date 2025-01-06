@@ -1280,7 +1280,7 @@ const registerGTCEURecipes = (event) => {
 
     //#region remove LV casing exploit
 	
-    event.remove({ id: 'gtceu:assembler/casing_lv' })
+  event.remove({ id: 'gtceu:assembler/casing_lv' })
 	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
 		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
 		.itemOutputs('gtceu:lv_machine_casing')
@@ -1353,6 +1353,16 @@ const registerGTCEURecipes = (event) => {
 		.EUt(20)
 	
 	//#endregion
+  
+    // Add circuit to assembler recipe for redstone lamp.
+    // Avoids conflict with AE2 smart cables.
+    event.remove({ id: 'gtceu:assembler/redstone_lamp' })
+    event.recipes.gtceu.assembler('redstone_lamp')
+        .itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
+        .itemOutputs('1x minecraft:redstone_lamp')
+        .circuit(1)
+        .duration(100)
+        .EUt(1)
 
     //#region Рецепты, которые итерируются по всем материалам
 
@@ -1531,6 +1541,194 @@ const registerGTCEURecipes = (event) => {
         }
         
     });
-
     //#endregion
+
+    // Fix LV recycling producing red/blue steel.
+    // Replace red steel outputs with 8x steel, delete blue steel outputs.
+    event.replaceOutput(
+        /gtceu:arc_furnace\/arc_lv_.*/,
+        '#forge:ingots/red_steel',
+        '8x #forge:ingots/steel')
+
+    event.replaceOutput(
+        /gtceu:arc_furnace\/arc_lv_.*/,
+        '#forge:ingots/blue_steel',
+        '')
+
+    event.replaceOutput(
+        /gtceu:macerator\/macerate_lv_.*/,
+        '#forge:dusts/red_steel',
+        '8x #forge:dusts/steel')
+
+    event.replaceOutput(
+        /gtceu:macerator\/macerate_lv_.*/,
+        '#forge:dusts/blue_steel',
+        '')
+
+    // Clear NBT on tanks with shapeless crafts.
+    [
+        "lv_super",
+        "mv_super",
+        "hv_super",
+        "ev_super",
+        "iv_quantum",
+        "luv_quantum",
+        "zpm_quantum",
+        "uv_quantum",
+        "uhv_quantum",
+    ].forEach(prefix => {
+        // Craft super tanks to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
+        // Craft super chests to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
+    });
+
+    //#region fix more duping
+	
+	// red alloy, because crucible always makes 4+1=5
+	
+	event.remove({id: 'gtceu:mixer/red_alloy' })
+	event.recipes.gtceu.mixer('tfg:red_alloy_mixer')
+		.itemInputs('1x gtceu:copper_dust', '4x minecraft:redstone')
+		.itemOutputs('5x gtceu:red_alloy_dust')
+		.circuit(2)
+		.duration(100)
+		.EUt(7)
+	
+	event.remove({id: 'gtceu:centrifuge/red_alloy_separation' })
+	event.recipes.gtceu.centrifuge('tfg:red_alloy_separation')
+		.itemInputs('5x gtceu:red_alloy_dust')
+		.itemOutputs('1x gtceu:copper_dust', '4x minecraft:redstone')
+		.duration(900)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:alloy_smelter/copper_dust_and_redstone_dust_into_red_alloy' })
+	event.recipes.gtceu.alloy_smelter('tfg:copper_dust_and_redstone_dust_into_red_alloy')
+		.itemInputs('1x gtceu:copper_dust', '4x minecraft:redstone')
+		.itemOutputs('5x gtceu:red_alloy_ingot')
+		.duration(50)
+		.EUt(16)
+		
+	event.remove({id: 'gtceu:alloy_smelter/annealed_copper_dust_and_redstone_dust_into_red_alloy' })
+	event.recipes.gtceu.alloy_smelter('tfg:annealed_copper_dust_and_redstone_dust_into_red_alloy')
+		.itemInputs('1x gtceu:annealed_copper_dust', '4x minecraft:redstone')
+		.itemOutputs('5x gtceu:red_alloy_ingot')
+		.duration(50)
+		.EUt(16)
+		
+	event.remove({id: 'gtceu:alloy_smelter/copper_ingot_and_redstone_dust_into_red_alloy' })
+	event.recipes.gtceu.alloy_smelter('tfg:copper_ingot_and_redstone_dust_into_red_alloy')
+		.itemInputs('1x minecraft:copper_ingot', '4x minecraft:redstone')
+		.itemOutputs('5x gtceu:red_alloy_ingot')
+		.duration(50)
+		.EUt(16)
+		
+	event.remove({id: 'gtceu:alloy_smelter/annealed_copper_ingot_and_redstone_dust_into_red_alloy' })
+	event.recipes.gtceu.alloy_smelter('tfg:annealed_copper_ingot_and_redstone_dust_into_red_alloy')
+		.itemInputs('1x gtceu:annealed_copper_ingot', '4x minecraft:redstone')
+		.itemOutputs('5x gtceu:red_alloy_ingot')
+		.duration(50)
+		.EUt(16)
+	
+	// steam machines
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_forge_hammer' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_forge_hammer')
+		.itemInputs('1x gtceu:hp_steam_forge_hammer')
+		.itemOutputs('8x gtceu:wrought_iron_ingot', '3x gtceu:steel_ingot', '2x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_forge_hammer' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_forge_hammer')
+		.itemInputs('1x gtceu:hp_steam_forge_hammer')
+		.itemOutputs('8x gtceu:iron_dust', '3x gtceu:steel_dust', '2x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_extractor' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_extractor')
+		.itemInputs('1x gtceu:hp_steam_extractor')
+		.itemOutputs('7x gtceu:wrought_iron_ingot', '2x gtceu:steel_ingot', '3x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_extractor' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_extractor')
+		.itemInputs('1x gtceu:hp_steam_extractor')
+		.itemOutputs('7x gtceu:iron_dust', '2x gtceu:steel_dust', '3x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_macerator' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_macerator')
+		.itemInputs('1x gtceu:hp_steam_macerator')
+		.itemOutputs('8x gtceu:wrought_iron_ingot', '3x gtceu:steel_ingot', '2x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_macerator' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_macerator')
+		.itemInputs('1x gtceu:hp_steam_macerator')
+		.itemOutputs('8x gtceu:iron_dust', '3x gtceu:steel_dust', '2x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_compressor' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_compressor')
+		.itemInputs('1x gtceu:hp_steam_compressor')
+		.itemOutputs('7x gtceu:wrought_iron_ingot', '1x gtceu:steel_ingot', '5x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_compressor' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_compressor')
+		.itemInputs('1x gtceu:hp_steam_compressor')
+		.itemOutputs('7x gtceu:iron_dust', '1x gtceu:steel_dust', '5x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_furnace' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_furnace')
+		.itemInputs('1x gtceu:hp_steam_furnace')
+		.itemOutputs('7x gtceu:wrought_iron_ingot', '2x gtceu:steel_ingot', '4x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_furnace' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_furnace')
+		.itemInputs('1x gtceu:hp_steam_furnace')
+		.itemOutputs('7x gtceu:iron_dust', '2x gtceu:steel_dust', '4x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_alloy_smelter' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_alloy_smelter')
+		.itemInputs('1x gtceu:hp_steam_alloy_smelter')
+		.itemOutputs('11x gtceu:wrought_iron_ingot', '1x gtceu:steel_ingot', '1x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_alloy_smelter' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_alloy_smelter')
+		.itemInputs('1x gtceu:hp_steam_alloy_smelter')
+		.itemOutputs('11x gtceu:iron_dust', '1x gtceu:steel_dust', '1x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+		
+	event.remove({id: 'gtceu:arc_furnace/arc_hp_steam_rock_crusher' })
+	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_rock_crusher')
+		.itemInputs('1x gtceu:hp_steam_rock_crusher')
+		.itemOutputs('10x gtceu:wrought_iron_ingot', '1x gtceu:steel_ingot', '2x gtceu:tin_alloy_ingot')
+		.duration(3310)
+		.EUt(30)
+		
+	event.remove({id: 'gtceu:macerator/macerate_hp_steam_rock_crusher' })
+	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_rock_crusher')
+		.itemInputs('1x gtceu:hp_steam_rock_crusher')
+		.itemOutputs('10x gtceu:iron_dust', '1x gtceu:steel_dust', '2x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
+		.duration(3254)
+		.EUt(8)
+	
+	//#endregion
 }
