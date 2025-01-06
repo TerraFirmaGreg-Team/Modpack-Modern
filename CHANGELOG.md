@@ -1,49 +1,34 @@
 # Changelog
 
-## [0.8.1] - 29.10.2024
+## [0.7.15] - 06.01.2025
 ### Changes
-- Fixed axe recipe.
-- Fixed missing default configs.
-- Small quest fixes.
-
-## [0.8.0] - 29.10.2024
-### Changes
-- This is a beta, make a backup of the world before updating, if you find any errors, let us know.
-- Replaced TFC ore gen with GT oregen.
-- Fixed most of bad langs from TFG-Core.
-- Fixed compat for firmaciv 1.0.+.
-- Disabled HotOrNot.
-- Moved some textures from TFG-Core to KJS.
-- Moved 90% of recipes from TFG-Core to KJS.
-- Added custom biome tag for all TFC biomes (used for oregen).
-- Proper way to remove #dusts tag from TFC powders.
-- Enabled HighTier machines from GTM (but without circuit recipes).
-- Moved some custom items from TFG-Core to KJS (like molds and etc).
-- Make ores spawn inside grid with 5x5 sized with 32block offset (was 3x3 with 16).
-- Now nether availiable to research (dig ores, drink lava, kill pigmens, what?).
-- Small changes for loottables for nether.
-- You can now fill sprinkler(firmalife greenhouse) from any fluid source (example: GT pipes).
-- Unlocked steel steam machines (again, yes).
-- Added translation for ru_ru inside TFG-Core.
-- Fixed alternator multiblock (now works fine).
-- Return raw ore blocks from GregTech.
-- True way to remove TFC ores from EMI.
-- True way to remove Firmelife ores from EMI.
-- True way to hide AE2 facades.
-- True way to hide chisel and bits bits, yes.
-- Fix double removing honey liquid from EMI.
-- Fixed bug when foods cant root inside EMI (of course not by mod dev (by myself)).
-- Now it is impossible to pour liquid from the TFC blast furnace into the GT pipe, which fixes the releated crash.
-- Fixed a bug where an item with the last durab broke the ore, then the ore did not dropped out.
-- Added recipes for crushing raw ores to crushed ores by workbench.
-- Fixed bug when electronic tools run out their durability, the tool breaks up without returning any power unit.
-- Alternator multiblock now works as intended.
-- Alternator recipes was sligthly nerfed.
-- Fixed bug when some items wont display inside EMI.
-- Simplified alternator multiblock reques and it controller block recipe.
-- Added better recipes for any wood (nether wood too).
-- Added stripping recipes in emi world interaction page.
-- And another 2123462384234 fixed, tweaks, and etc.
+- Fixed oilsands, added missing english strings, added indicators for all ores (Pyritie).
+- Fixed not being able to make cobble in assembler (Pyritie).
+- Added recipe for metal bars (Pyritie).
+- Added yeast starter and cocoa powder recipes (Pyritie).
+- Added quern recipes for graphite (Pyritie).
+- Fixed red alloy crucible recipe (Pyritie).
+- Precision mech recipe in assembler (SverhRazum-Nah).
+- Fixed TFG things in field guide, added oregen section (Pyritie). <-- Legend Feature.
+- Various fixes for 0.7.14 (fluffle).
+  1. It changes the costs of AE2 covered, dense and smart cables so the 3:1 ratio for fluix cables is reduced to 1:1.
+  - Covered cables should not be 3x the price for the same functionality.
+  - The 3x cost makes it unnecessarily painful and expensive to run dense cable to where it's needed.
+  2. It re-enables AE2 cutting knives and adds recipes for them.
+  - This allows AE parts like interfaces to be renamed easily and cheaply.
+  3. It removes the in-world transformation recipe for AE2 fluix crystals.
+  - Mixer recipes for fluix crystals are buffed to match in-world transformation recipe costs.
+  - Mixer recipe duration is reduced.
+  - Note that the create mixing recipe for fluix crystals still remains.
+  4. It adds self-crafting recipes for all super tanks and chests.
+  - This means a tank can be crafted to remove NBT data stuck to it, so it can stack with other tanks again.
+  5. It adds a circuit (1) to the GTCEu assembler recipe for minecraft:redstone_lamp.
+  - This was conflicting with the AE2 smart cable recipes.
+- Fix LV recycling recipes to produce basic steel.
+### Removed mods
+- ?
+### Updated mods
+- ?
 
 ## [0.7.14] - 01.10.2024
 ### Changes
