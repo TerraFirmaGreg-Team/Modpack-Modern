@@ -27,6 +27,7 @@
 - Fix LV recycling recipes to produce basic steel (fluffle).
 - Adds early glowstone recipe (Pyritie).
 - Added recipes to stop duping of red alloy + steam machines (Pyritie).
+- Fix stone dust tag (Pyritie).
 ### Removed mods
 - ?
 ### Updated mods

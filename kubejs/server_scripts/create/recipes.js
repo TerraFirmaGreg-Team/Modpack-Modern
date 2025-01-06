@@ -1188,7 +1188,7 @@ const registerCreateRecipes = (event) => {
 
     //#region Механизм точности
 
-    e.recipes.gtceu.assembler('tfg:create/precision_mechanism')
+    event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
     .itemInputs('#forge:sheets/gold','3x create:cogwheel', '3x create:large_cogwheel', '3x #forge:nuggets/iron')
     .itemOutputs('create:precision_mechanism')
     .duration(2000)

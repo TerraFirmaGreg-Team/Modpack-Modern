@@ -1566,7 +1566,7 @@ const registerGTCEURecipes = (event) => {
         '')
 
     // Clear NBT on tanks with shapeless crafts.
-    [
+    const TANK_NAMES = [
         "lv_super",
         "mv_super",
         "hv_super",
@@ -1576,12 +1576,14 @@ const registerGTCEURecipes = (event) => {
         "zpm_quantum",
         "uv_quantum",
         "uhv_quantum",
-    ].forEach(prefix => {
+    ]
+
+    TANK_NAMES.forEach(prefix => {
         // Craft super tanks to remove their NBT data.
         event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
         // Craft super chests to remove their NBT data.
         event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
-    });
+    })
 
     //#region fix more duping
 	
