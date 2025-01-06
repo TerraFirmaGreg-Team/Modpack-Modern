@@ -1,0 +1,56 @@
+{
+    "name": "Garnet & Cassiterite Sands",
+    "icon": "gtceu:raw_garnet_sand",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 360$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: -40 - 64$(br)Size: 40$(br2)Stone types: All$(br2)Indicator: Cassiterite"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Cassiterite Sand",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cassiterite_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Melts into: Tin$(br)Formula: SnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Garnet Sand",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/garnet_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Asbestos",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/asbestos" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Magnesium, Lung cancer$(br)Formula: Mg₃Si₂H₄O₉$(br)Hazardous: Yes"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Diatomite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/diatomite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Iron, Aluminium$(br)Formula: (SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+		}
+    ]
+}
