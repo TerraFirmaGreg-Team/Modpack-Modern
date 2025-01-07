@@ -439,7 +439,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.0
+        uses: softprops/action-gh-release@v2.1.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
