@@ -6,6 +6,7 @@
 	[
 		{
 			"type": "patchouli:text",
+			"title": "Inventory Management",
 			"text": "So you've got a few $(l:getting_started/pottery#vessel)Vessels$() and you've made a few $(item)Wooden Chests$(), but you still have more items than you know what to do with. What's next?$(br2)A $(thing)Backpack$() can double your on-person inventory at base level, and further backpack upgrades increase it even more!"
 		},
 		{

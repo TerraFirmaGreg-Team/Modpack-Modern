@@ -6,6 +6,7 @@
 	[
 		{
 			"type": "patchouli:text",
+			"title": "Getting Started With Create",
 			"text": "In TerraFirmaGreg, TFC's own mechanical power system has been replaced with $(thing)Create$().$(br2)You can make a few Create things once you have Wrought Iron, but you can only really get started once you have access to $(l:mechanics/steel)Steel$() and $(thing)Steam Machines$().$(br2)First, you will need a source of $(thing)Mechanical Power$(), either Water Wheels, Windmills, or a Steam Engine. Of these, $(thing)Water Wheels$() are the easiest to start with, just put them in a river!$(br)"
 		},
 		{

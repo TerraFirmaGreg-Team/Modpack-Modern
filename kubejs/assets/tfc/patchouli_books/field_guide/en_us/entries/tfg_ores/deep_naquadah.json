@@ -28,7 +28,7 @@
 				"pattern": [[ "0" ], [ " " ]]
 			},
 			"enable_visualize": false,
-			"text": "Percentage: 25%$(br)Source of: Plutonium$(br)Formula: Pu²³⁹"
+			"text": "Percentage: 25%$(br)Source of: Plutonium$(br)Formula: Pu²³⁹$(br)Hazardous: Yes"
 		}
     ]
 }

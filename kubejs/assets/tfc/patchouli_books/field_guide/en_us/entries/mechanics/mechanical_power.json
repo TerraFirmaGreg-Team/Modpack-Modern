@@ -6,6 +6,7 @@
 	[
 		{
 			"type": "patchouli:text",
+			"title": "Basic Automation",
 			"text": "Tired of making charcoal in huge pits? Once you've got $(l:mechanics/bloomery)Wrought Iron$(), you'll be able to make your first GregTech multiblock, the $(item)Coke Oven$().$(br)It will turn logs into $(thing)charcoal$() automatically, as well as upgrade any $(thing)Coal$() into $(thing)Coke$() which burns twice as long in a $(l:mechanics/charcoal_forge)Forge$().$(br)All recipes output $(thing)Creosote$(), which can be used as a lamp fuel and is required for $(l:mechanics/pumps)Create$()."
 		},
 		{

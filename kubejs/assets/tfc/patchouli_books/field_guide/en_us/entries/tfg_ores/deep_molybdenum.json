@@ -17,7 +17,7 @@
 				"pattern": [[ "0" ], [ " " ]]
 			},
 			"enable_visualize": false,
-			"text": "Percentage: 40%$(br)Source of: Lead, Molybdenum$(br)Formula: PbMoO₄"
+			"text": "Percentage: 40%$(br)Source of: Lead, Molybdenum$(br)Formula: PbMoO₄$(br)Hazardous: Yes"
 		},
 		{
 			"type": "patchouli:multiblock",

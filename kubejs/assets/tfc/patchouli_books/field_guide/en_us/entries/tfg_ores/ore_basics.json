@@ -3,6 +3,7 @@
 	"icon": "gtceu:pyrite_dust",
 	"category": "tfc:tfg_ores",
 	"priority": true,
+	"sortnum": 0,
 	"pages": [
 		{
 			"type": "patchouli:text",
