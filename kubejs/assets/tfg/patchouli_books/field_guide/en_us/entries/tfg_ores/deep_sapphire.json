@@ -1,5 +1,5 @@
 {
-    "name": "Sapphire",
+    "name": "Sapphire & Almandine",
     "icon": "gtceu:sapphire_gem",
     "category": "tfc:tfg_ores",
 	"read_by_default": true,
@@ -11,6 +11,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": "Almandine",
+			"anchor": "almandine",
 			"multiblock":
 			{
 				"mapping": { "0": "#forge:ores/almandine" },
@@ -22,6 +23,7 @@
 		{
 			"type": "patchouli:multiblock",
 			"name": "Pyrope",
+			"anchor": "pyrope",
 			"multiblock":
 			{
 				"mapping": { "0": "#forge:ores/pyrope" },
