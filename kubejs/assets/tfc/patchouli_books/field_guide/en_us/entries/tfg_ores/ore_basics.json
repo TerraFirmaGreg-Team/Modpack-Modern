@@ -1,0 +1,59 @@
+{
+	"name": "Mining in TFG",
+	"icon": "gtceu:pyrite_dust",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "There are two ways of mining ores - with a $(thing)Pickaxe$(), or with a $(thing)Hammer$().$(br)Generally, you should mine anything meltable (such as $(thing)Copper$()) with a hammer, and everything else with a pickaxe, but check JEI if you're unsure."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Pickaxe",
+			"text": "Breaking an ore block with a pickaxe will yield $(thing)Raw$() ores (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)Coal$().",
+			"item": {
+				"tag": "minecraft:pickaxes"
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Hammer",
+			"text": "Breaking an ore block with a hammer will yield 1-2 $(thing)Crushed Ores$(). These already melt into more mB than Raw ores, but with a little $(l:tfg_ores/ore_basics#processing)extra processing$() they can be worth even more!",
+			"item": {
+				"tag": "forge:tools/hammers"
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Mining Hammer",
+			"text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)Raw$() ores as well. Also good for clearing stone after you've hammered the ores out!$(br2)Holding $(thing)Sneak$() will only break a single block at a time.",
+			"item": {
+				"tag": "forge:tools/mining_hammers"
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Basic ore processing",
+			"anchor": "processing",
+			"item": "gtceu:copper_dust",
+			"text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$().$(br2)To further purify it, throw the dust into some water and wait a few seconds, or right-click a $(thing)Cauldron$() filled with water."
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": "Impure Dust",
+			"recipe": "gtceu:shapeless/crushed_ore_to_dust_copper"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Steam Age",
+			"text": "Once you have $(thing)Steam machines$(), you can mine everything with a $(thing)Mining Hammer$() - putting Raw ores into a $(thing)Steam Forge Hammer$() or $(thing)Steam Macerator$() gives about the same yield as mining with a Hammer yourself.",
+			"item": "gtceu:hp_steam_forge_hammer,gtceu:hp_steam_macerator"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Later, when you're in LV, check the LV quests to learn about all the different ore processing machines and extra byproducts they can give you. Remember the $(thing)Macerator$() does not give byproducts until $(thing)HV$()!$(br2)Here's a $(l:https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4/edit?usp=sharing)Spreadsheet$() if you prefer to see this section's ore generation data that way."
+		}
+	]
+}

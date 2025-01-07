@@ -1,0 +1,56 @@
+{
+    "name": "Topaz & Chalcocite",
+    "icon": "gtceu:topaz_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 260$(br)Density: 0.3$(br)Type: Disc Vein$(br)Y: -64 - 26$(br)Size: 28$(br2)Stone types: Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Topaz, Blue Topaz, Chalcocite, Bornite"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Topaz",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/topaz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Aluminium, Fluorine$(br)Formula: Al₂SiFH₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Blue Topaz",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/blue_topaz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Source of: Aluminium, Fluorine$(br)Formula: Al₂SiF₂H₂O₆"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Chalcocite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/chalcocite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Smelts into: Copper$(br)Formula: Cu₂S"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Bornite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bornite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Smelts into: Copper$(br)Formula: Cu₅FeS₄"
+		}
+    ]
+}

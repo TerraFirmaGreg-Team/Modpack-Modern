@@ -1,0 +1,45 @@
+{
+    "name": "Bauxite & Ilmenite",
+    "icon": "gtceu:raw_bauxite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 185$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -32 - 60$(br)Size: 40$(br2)Stone types: Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Bauxite, Ilmenite, Aluminium"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Bauxite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bauxite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 45%$(br)Source of: Aluminium$(br)Formula: Al₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Aluminium",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/aluminium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Aluminium$(br)Formula: Al"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Ilmenite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/ilmenite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 30%$(br)Source of: Titanium$(br)Formula: FeTiO₃"
+		}
+    ]
+}
