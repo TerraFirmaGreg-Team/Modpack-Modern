@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "If you're having trouble finding Realgar, another source of Arsenic is $(thing)Cobaltite$() (found in $(l:tfg_ores/normal_garnierite)Garnierite veins$()), although it will require an $(thing)Electric Blast Furnace$() to process."
+			"text": "If you're having trouble finding Realgar, another source of Arsenic is $(l:tfg_ores/normal_garnierite)Cobaltite$(), although it will require an $(thing)Electric Blast Furnace$() to process."
 		}
     ]
 }
