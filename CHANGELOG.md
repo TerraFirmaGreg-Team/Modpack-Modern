@@ -11,19 +11,19 @@
 - Precision mech recipe in assembler (SverhRazum-Nah).
 - Fixed TFG things in field guide, added oregen section (Pyritie). <-- Legend Feature.
 - Various fixes for 0.7.14 (fluffle).
-  1. It changes the costs of AE2 covered, dense and smart cables so the 3:1 ratio for fluix cables is reduced to 1:1.
-  - Covered cables should not be 3x the price for the same functionality.
-  - The 3x cost makes it unnecessarily painful and expensive to run dense cable to where it's needed.
-  2. It re-enables AE2 cutting knives and adds recipes for them.
-  - This allows AE parts like interfaces to be renamed easily and cheaply.
-  3. It removes the in-world transformation recipe for AE2 fluix crystals.
-  - Mixer recipes for fluix crystals are buffed to match in-world transformation recipe costs.
-  - Mixer recipe duration is reduced.
-  - Note that the create mixing recipe for fluix crystals still remains.
-  4. It adds self-crafting recipes for all super tanks and chests.
-  - This means a tank can be crafted to remove NBT data stuck to it, so it can stack with other tanks again.
-  5. It adds a circuit (1) to the GTCEu assembler recipe for minecraft:redstone_lamp.
-  - This was conflicting with the AE2 smart cable recipes.
+  - It changes the costs of AE2 covered, dense and smart cables so the 3:1 ratio for fluix cables is reduced to 1:1.
+    - Covered cables should not be 3x the price for the same functionality.
+    - The 3x cost makes it unnecessarily painful and expensive to run dense cable to where it's needed.
+  - It re-enables AE2 cutting knives and adds recipes for them.
+    - This allows AE parts like interfaces to be renamed easily and cheaply.
+  - It removes the in-world transformation recipe for AE2 fluix crystals.
+    - Mixer recipes for fluix crystals are buffed to match in-world transformation recipe costs.
+    - Mixer recipe duration is reduced.
+    - Note that the create mixing recipe for fluix crystals still remains.
+  - It adds self-crafting recipes for all super tanks and chests.
+    - This means a tank can be crafted to remove NBT data stuck to it, so it can stack with other tanks again.
+  - It adds a circuit (1) to the GTCEu assembler recipe for minecraft:redstone_lamp.
+    - This was conflicting with the AE2 smart cable recipes.
 - Fix LV recycling recipes to produce basic steel (fluffle).
 - Adds early glowstone recipe (Pyritie).
 - Added recipes to stop duping of red alloy + steam machines (Pyritie).
