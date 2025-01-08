@@ -53,7 +53,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Later, when you're in LV, check the LV quests to learn about all the different ore processing machines and extra byproducts they can give you. Remember the $(thing)Macerator$() does not give byproducts until $(thing)HV$()!$(br2)Here's a $(l:https://docs.google.com/spreadsheets/d/1P3Baz4y5vgJ3XrCoNs4l3BXGPiFEPlW7i4taPEWpTB4/edit?usp=sharing)Spreadsheet$() if you prefer to see this section's ore generation data that way."
+			"text": "Later, when you're in LV, check the LV quests to learn about all the different ore processing machines and extra byproducts they can give you. Remember the $(thing)Macerator$() does not give byproducts until $(thing)HV$()!"
 		}
 	]
 }
