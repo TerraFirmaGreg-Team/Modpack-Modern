@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.16] - ?
+### Changes
+- Removed links for excel spreadsheet ore gen (Pyritie).
+
 ## [0.7.15] - 08.01.2025
 ### Changes
 - Fixed oilsands, added missing english strings, added indicators for all ores (Pyritie).
