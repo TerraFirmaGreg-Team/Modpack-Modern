@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RELEASE_TYPE: "alpha"
+  RELEASE_TYPE: "release"
   MINECRAFT_VERSION: "1.20.1"
 
 jobs:    
@@ -87,7 +87,6 @@ jobs:
             echo "✔️ File pakku-lock-prev.json created"
           else
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
-          fi
           fi
         
       - name: 📦 Download pakku.jar

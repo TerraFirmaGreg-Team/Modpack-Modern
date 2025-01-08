@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.15] - 06.01.2025
+## [0.7.15] - 08.01.2025
 ### Changes
 - Fixed oilsands, added missing english strings, added indicators for all ores (Pyritie).
 - Fixed not being able to make cobble in assembler (Pyritie).
@@ -28,10 +28,6 @@
 - Adds early glowstone recipe (Pyritie).
 - Added recipes to stop duping of red alloy + steam machines (Pyritie).
 - Fix stone dust tag (Pyritie).
-### Removed mods
-- ?
-### Updated mods
-- ?
 
 ## [0.7.14] - 01.10.2024
 ### Changes
