@@ -2190,6 +2190,84 @@ const registerGregTechRecipes = (e) => {
     e.remove({ id: 'gtceu:macerator/macerate_calcite' })
     //#endregion
 
+    //#region ULV предметный входной люк
+    e.remove({ id: 'gtceu:assembler/item_import_bus_ulv_polytetrafluoroethylene' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polytetrafluoroethylene')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 72))
+        .itemOutputs('gtceu:ulv_input_bus')
+        .circuit(1)
+        .EUt(7).duration(300)
+
+    e.remove({ id: 'gtceu:assembler/item_import_bus_ulv_glue' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_glue')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:glue', 288))
+        .itemOutputs('gtceu:ulv_input_bus')
+        .circuit(1)
+        .EUt(7).duration(300)
+
+    e.remove({ id: 'gtceu:assembler/item_import_bus_ulv_polybenzimidazole' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polybenzimidazole')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 36))
+        .itemOutputs('gtceu:ulv_input_bus')
+        .circuit(1)
+        .EUt(7).duration(300)
+
+    e.remove({ id: 'gtceu:assembler/item_import_bus_ulv_polyethylene' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polyethylene')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('gtceu:ulv_input_bus')
+        .circuit(1)
+        .EUt(7).duration(300)
+
+    //#endregion
+
+    //#region ULV предметный выходной люк
+    e.remove({ id: 'gtceu:assembler/item_export_bus_ulv_polytetrafluoroethylene' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polytetrafluoroethylene')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 72))
+        .itemOutputs('gtceu:ulv_output_bus')
+        .circuit(2)
+        .EUt(7).duration(300)
+    
+    e.remove({ id: 'gtceu:assembler/item_export_bus_ulv_glue' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_glue')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:glue', 288))
+        .itemOutputs('gtceu:ulv_output_bus')
+        .circuit(2)
+        .EUt(7).duration(300)
+
+    e.remove({ id: 'gtceu:assembler/item_export_bus_ulv_polybenzimidazole' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polybenzimidazole')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 36))
+        .itemOutputs('gtceu:ulv_output_bus')
+        .circuit(2)
+        .EUt(7).duration(300)
+
+    e.remove({ id: 'gtceu:assembler/item_export_bus_ulv_polyethylene' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polyethylene')
+        .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('gtceu:ulv_output_bus')
+        .circuit(2)
+        .EUt(7).duration(300)
+
+    //#endregion
+
     //#region TODO: Не работает из-за магического бага / Вырезка из резины
 
     // e.recipes.tfc.knapping('gtceu:rubber_ring', 'tfg:rubber', ['XXX', 'X X', 'XXX'])
