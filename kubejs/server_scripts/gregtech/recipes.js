@@ -1470,22 +1470,22 @@ const registerGTCEURecipes = (event) => {
     // Fix LV recycling producing red/blue steel.
     // Replace red steel outputs with 8x steel, delete blue steel outputs.
     event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
         '#forge:ingots/red_steel',
         '8x #forge:ingots/steel')
 
     event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
         '#forge:ingots/blue_steel',
         '')
 
     event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
         '#forge:dusts/red_steel',
         '8x #forge:dusts/steel')
 
     event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
         '#forge:dusts/blue_steel',
         '')
 
