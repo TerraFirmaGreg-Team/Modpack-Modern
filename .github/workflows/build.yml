@@ -9,8 +9,11 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
+permissions:
+  pull-requests: none
+
 env:
-  RELEASE_TYPE: "alpha"
+  RELEASE_TYPE: "release"
   MINECRAFT_VERSION: "1.20.1"
 
 jobs:    
@@ -87,7 +90,6 @@ jobs:
             echo "✔️ File pakku-lock-prev.json created"
           else
             echo "❌ Error: File pakku-lock-prev.json is empty or not created" && exit 1
-          fi
           fi
         
       - name: 📦 Download pakku.jar
@@ -430,7 +432,7 @@ jobs:
       - name: Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.10.0
+        uses: roamingowl/template-output-with-eta@v1.11.0
         with:
           template: |
             ```markdown
@@ -439,7 +441,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.0
+        uses: softprops/action-gh-release@v2.1.0
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
