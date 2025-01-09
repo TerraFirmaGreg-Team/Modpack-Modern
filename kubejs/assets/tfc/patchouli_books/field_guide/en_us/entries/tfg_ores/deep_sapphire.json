@@ -1,0 +1,58 @@
+{
+    "name": "Sapphire & Almandine",
+    "icon": "gtceu:sapphire_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 280$(br)Density: 0.35$(br)Type: Disc Vein$(br)Y: -64 - 26$(br)Size: 28$(br)Height: 8$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Almandine, Pyrope, Sapphire, Green Sapphire$(br2)If you're looking for $(thing)Aluminium$(), find a $(l:tfg_ores/normal_bauxite)Bauxite$() vein instead.$(br)"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Almandine",
+			"anchor": "almandine",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/almandine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Source of: Aluminium, Iron$(br)Formula: Al₂Fe₃Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Pyrope",
+			"anchor": "pyrope",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrope" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Aluminium, Magnesium$(br)Formula: Al₂Mg₃Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Sapphire",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sapphire" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Aluminium$(br)Formula: Al₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Green Sapphire",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/green_sapphire" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Aluminium$(br)Formula: Al₂O₃"
+		}
+    ]
+}

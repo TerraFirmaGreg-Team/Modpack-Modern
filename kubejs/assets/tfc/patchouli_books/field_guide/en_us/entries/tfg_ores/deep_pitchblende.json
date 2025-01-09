@@ -1,0 +1,34 @@
+{
+    "name": "Uraninite & Pitchblende",
+    "icon": "gtceu:rich_raw_uraninite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 220$(br)Density: 0.45$(br)Type: Cluster Vein$(br)Y: -64 - -20$(br)Size: 24$(br2)Stone types: Granite, Diorite, Gabbro, Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Pitchblende, Uraninite$(br2)There's no fission reactors in TFG, but Uranium has other uses."
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Uraninite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/uraninite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 50%$(br)Source of: Uranium$(br)Formula: UO₂$(br)Hazardous: Yes"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Pitchblende",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pitchblende" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 50%$(br)Source of: Uranium$(br)Formula: (UO₂)₃ThPb$(br)Hazardous: Yes"
+		}
+    ]
+}

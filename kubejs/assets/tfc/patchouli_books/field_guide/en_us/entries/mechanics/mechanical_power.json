@@ -1,0 +1,39 @@
+{
+	"name": "Basic Automation",
+	"category": "tfc:mechanics",
+	"icon": "gtceu:coke_oven",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"title": "Basic Automation",
+			"text": "Tired of making charcoal in huge pits? Once you've got $(l:mechanics/bloomery)Wrought Iron$(), you'll be able to make your first GregTech multiblock, the $(item)Coke Oven$().$(br)It will turn logs into $(thing)charcoal$() automatically, as well as upgrade any $(thing)Coal$() into $(thing)Coke$() which burns twice as long in a $(l:mechanics/charcoal_forge)Forge$().$(br)All recipes output $(thing)Creosote$(), which can be used as a lamp fuel and is required for $(l:mechanics/pumps)Create$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Coke Oven",
+			"item": "gtceu:coke_oven,gtceu:coke_oven_bricks,gtceu:coke_oven_hatch",
+			"text": "Use JEI for a multiblock preview by looking at the $(thing)Coke Oven$() and pressing $(item)$(k:jei.showUses)$(). You can click individual blocks to see what's valid there.$(br2)Note that the center is hollow, and up to 5 $(thing)Coke Oven Hatches$() can be placed anywhere instead of bricks."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:tin_small_item_pipe",
+			"title": "Item Pipes",
+			"text": "Hatches will automatically pull items into them and push fluids and items out, so you can put $(l:mechanics/crankshaft#crates)Crates$(), $(l:mechanics/crankshaft#drums)Drums$(), and $(l:mechanics/barrels)Barrels$() right up against them, but if you'd like to have more control, you'll want to use GregTech's pipes.$(br2)$(item)Item Pipes$() will not pull from any inventory they're attached to, so you'll want to use a $(thing)Chute$() or $(thing)Hopper$() to pull from the inventory and push into the pipe."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Different tiers of pipes will move different amounts of items, but the cheapest to start with is the $(item)Small Tin Item Pipe$().$(br2)Item pipes move items instantly, prioritizing closest inventories first. You can make pipes one-way by $(thing)Sneak-Right-Clicking$() them with a $(thing)Wrench$() and en empty offhand.$(br2)You can also control how items move with $(thing)Item Filters$(), $(thing)Item Tag Filters$(), and $(thing)Restricted Item Pipes$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:wood_normal_fluid_pipe,gtceu:bronze_normal_fluid_pipe",
+			"title": "Fluid Pipes",
+			"text": "$(item)Fluid Pipes$() unsurprisingly are for moving fluids. Unlike item pipes, fluid pipes do not move fluids instantly, and will \"slosh\" back and forth, so it's a good idea to make them all one-way by $(thing)Sneak-Right-Clicking$() with a $(thing)Wrench$() and an empty offhand."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Different kinds of pipes can hold different things. $(thing)Wooden pipes$() can't hold gases, for example, and will burn if you try to put something hot in them. Other metal pipes like $(thing)Bronze$() can handle some hot things like Steam and Lava, but not acids.$(br2)Hold shift over a fluid pipe to see what it can handle."
+		}
+	]
+}

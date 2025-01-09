@@ -4943,6 +4943,17 @@
 				}
 			}
 			id: "3D7B0F3134C30364"
+			rewards: [{
+				id: "497758E935ED5CBA"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "tfc:field_guide"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6EB0915B34A4054C"
 				title: "{quests.3D7B0F3134C30364.t1}"

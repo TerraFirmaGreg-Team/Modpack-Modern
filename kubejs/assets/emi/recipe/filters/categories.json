@@ -34,6 +34,9 @@
             "category": "emi:fuel"
         },
         {
+            "category": "gtceu:ore_vein_diagram"
+        },
+        {
             "id": "/emi:/crafting/repairing/[^*]+/"
         },
         {
