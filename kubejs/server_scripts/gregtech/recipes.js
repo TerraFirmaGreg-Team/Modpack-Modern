@@ -1657,4 +1657,65 @@ const registerGTCEURecipes = (event) => {
 		.EUt(8)
 	
 	//#endregion
+
+    //#region Quantum mainframe stack fix.
+    //
+    // Quantum Mainframes need 48x annealed copper wire but
+    // the stacking limit is 32 so instead allow 24x 2x.
+    //
+    // Frustratingly event.replaceInput doesn't allow for
+    // changing item counts, only types.
+    event.remove(/gtceu:circuit_assembler\/quantum_mainframe_zpm.*/)
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+	//#endregion
 }
