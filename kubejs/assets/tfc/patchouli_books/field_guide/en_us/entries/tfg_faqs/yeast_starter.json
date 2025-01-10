@@ -1,0 +1,12 @@
+{
+	"name": "How do I make yeast starter?",
+	"icon": "tfc:food/flour",
+	"category": "tfc:tfg_faqs",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"text": "Make sure you dry the fruit first using a $(item)Drying Mat$(). Then follow the rest of the steps in $(l:firmalife/bread#yeast)FIXME$()."
+		}
+	]
+}

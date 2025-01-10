@@ -1,0 +1,12 @@
+{
+	"name": "Why did my boat sink?",
+	"icon": "firmalife:canoe_paddle",
+	"category": "tfc:tfg_faqs",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"text": "Build your boat on land, then push it or use a $(item)Lead$() to launch it. If it's already sunk, too bad, make another one."
+		}
+	]
+}
