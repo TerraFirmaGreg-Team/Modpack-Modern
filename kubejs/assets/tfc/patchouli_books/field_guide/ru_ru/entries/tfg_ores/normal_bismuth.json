@@ -1,0 +1,45 @@
+{
+    "name": "Висмут (Обычный)",
+    "icon": "gtceu:raw_bismuth",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 170$(br)Плотность: 0.4$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 75$(br)Размер: 40$(br2)Виды камней: Гранит, Диорит, Габбро, Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикаторы: Висмутин"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Висмут",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bismuth" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 80%$(br)Плавится в: Висмут$(br)Формула: Bi"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сера",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sulfur" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 9%$(br)Формула: S"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Свинец",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/lead" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 11%$(br)Плавится в: свинец$(br)Формула: Pb$(br)Ядовит: Да"
+		}
+    ]
+}
