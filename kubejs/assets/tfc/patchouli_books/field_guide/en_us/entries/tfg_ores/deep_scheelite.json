@@ -13,7 +13,7 @@
 			"name": "Scheelite",
 			"multiblock":
 			{
-				"mapping": { "0": "#forge:ores/cooperite" },
+				"mapping": { "0": "#forge:ores/scheelite" },
 				"pattern": [[ "0" ], [ " " ]]
 			},
 			"enable_visualize": false,
