@@ -1050,12 +1050,11 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
 
     // Пыль звезды незера 
-    // TODO: удалить после имплементации ада
     event.recipes.gtceu.chemical_reactor('tfg:gtceu/nether_star_dust')             
         .itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
         .circuit(10)
         .itemOutputs('gtceu:nether_star_dust')
-        .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 6000), Fluid.of('gtceu:carbon_monoxide', 8000))
+        .inputFluids(Fluid.of('gtceu:nether_air', 1000))
         .duration(700)
         .EUt(2720)
 
@@ -1277,16 +1276,82 @@ const registerGTCEURecipes = (event) => {
         .EUt(24)
 
     //#endregion
-
-    // Add circuit to assembler recipe for redstone lamp.
-    // Avoids conflict with AE2 smart cables.
-    event.remove({ id: 'gtceu:assembler/redstone_lamp' })
-    event.recipes.gtceu.assembler('redstone_lamp')
-        .itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
-        .itemOutputs('1x minecraft:redstone_lamp')
-        .circuit(1)
-        .duration(100)
-        .EUt(1)
+	
+	//#region remove LV casing exploit
+	
+    /*event.remove({ id: 'gtceu:assembler/casing_lv' })
+	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
+		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
+		.itemOutputs('gtceu:lv_machine_casing')
+		.circuit(8)
+		.duration(50)
+		.EUt(16)*/
+		
+	//#endregion
+		
+	//#region make colored steel a bit easier to compensate
+		
+	event.recipes.gtceu.arc_furnace('tfg:black_steel_dust_to_ingot')
+		.itemInputs('gtceu:black_steel_dust')
+		.itemOutputs('gtceu:black_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(500)
+		.EUt(24)
+		
+	event.recipes.gtceu.arc_furnace('tfg:red_steel_dust_to_ingot')
+		.itemInputs('gtceu:red_steel_dust')
+		.itemOutputs('gtceu:red_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(700)
+		.EUt(32)
+		
+	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
+		.itemInputs('gtceu:blue_steel_dust')
+		.itemOutputs('gtceu:blue_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(700)
+		.EUt(32)
+		
+	//#endregion
+	
+	//#region add regular furnace recipes for other tfc alloys
+	
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_bismuth_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_bismuth_bronze_gas' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_black_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_black_bronze_gas' })
+	event.remove({id: 'gtceu:vacuum_freezer/cool_hot_black_bronze_ingot' })
+	event.remove({id: 'gtceu:vacuum_freezer/black_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_sterling_silver' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_sterling_silver_gas' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_rose_gold' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_rose_gold_gas' })
+		
+	event.recipes.gtceu.electric_furnace('tfg:bismuth_bronze_dust_to_ingot')
+		.itemInputs('gtceu:bismuth_bronze_dust')
+		.itemOutputs('gtceu:bismuth_bronze_ingot')
+		.duration(200)
+		.EUt(16)
+		
+	event.recipes.gtceu.electric_furnace('tfg:black_bronze_dust_to_ingot')
+		.itemInputs('gtceu:black_bronze_dust')
+		.itemOutputs('gtceu:black_bronze_ingot')
+		.duration(200)
+		.EUt(16)
+		
+	event.recipes.gtceu.electric_furnace('tfg:sterling_silver_dust_to_ingot')
+		.itemInputs('gtceu:sterling_silver_dust')
+		.itemOutputs('gtceu:sterling_silver_ingot')
+		.duration(300)
+		.EUt(20)
+		
+	event.recipes.gtceu.electric_furnace('tfg:rose_gold_dust_to_ingot')
+		.itemInputs('gtceu:rose_gold_dust')
+		.itemOutputs('gtceu:rose_gold_ingot')
+		.duration(300)
+		.EUt(20)
+	
+	//#endregion
 
     //#region Рецепты, которые итерируются по всем материалам
 
@@ -1465,51 +1530,10 @@ const registerGTCEURecipes = (event) => {
         }
         
     });
+
     //#endregion
-
-    // Fix LV recycling producing red/blue steel.
-    // Replace red steel outputs with 8x steel, delete blue steel outputs.
-    event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
-        '#forge:ingots/red_steel',
-        '8x #forge:ingots/steel')
-
-    event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
-        '#forge:ingots/blue_steel',
-        '')
-
-    event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
-        '#forge:dusts/red_steel',
-        '8x #forge:dusts/steel')
-
-    event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
-        '#forge:dusts/blue_steel',
-        '')
-
-    // Clear NBT on tanks with shapeless crafts.
-    const TANK_NAMES = [
-        "lv_super",
-        "mv_super",
-        "hv_super",
-        "ev_super",
-        "iv_quantum",
-        "luv_quantum",
-        "zpm_quantum",
-        "uv_quantum",
-        "uhv_quantum",
-    ]
-
-    TANK_NAMES.forEach(prefix => {
-        // Craft super tanks to remove their NBT data.
-        event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
-        // Craft super chests to remove their NBT data.
-        event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
-    })
-
-    //#region fix more duping
+	
+	//#region fix more duping
 	
 	// red alloy, because crucible always makes 4+1=5
 	
