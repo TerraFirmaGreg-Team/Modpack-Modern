@@ -34,7 +34,8 @@ global.CREATE_ADDITIONS_DISABLED_ITEMS = [
     'createaddition:gold_spool',
     'createaddition:biomass_pellet_block',
     'createaddition:connector', 
-    'createaddition:redstone_relay', 
+    'createaddition:redstone_relay',
+    'createaddition:alternator'
     'createaddition:spool', 
     'createaddition:copper_spool', 
     'createaddition:festive_spool', 
