@@ -1533,7 +1533,51 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 	
-	//#region fix more duping
+	  //#region fix more duping
+  
+    // Fix LV recycling producing red/blue steel.
+    // Replace red steel outputs with 8x steel, delete blue steel outputs.
+    event.replaceOutput(
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
+        '#forge:ingots/red_steel',
+        '8x #forge:ingots/steel')
+
+    event.replaceOutput(
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
+        '#forge:ingots/blue_steel',
+        '')
+
+    event.replaceOutput(
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
+        '#forge:dusts/red_steel',
+        '8x #forge:dusts/steel')
+
+    event.replaceOutput(
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
+        '#forge:dusts/blue_steel',
+        '')
+
+    // Clear NBT on tanks with shapeless crafts.
+    const TANK_NAMES = [
+        "lv_super",
+        "mv_super",
+        "hv_super",
+        "ev_super",
+        "iv_quantum",
+        "luv_quantum",
+        "zpm_quantum",
+        "uv_quantum",
+        "uhv_quantum",
+    ]
+
+    TANK_NAMES.forEach(prefix => {
+        // Craft super tanks to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
+        // Craft super chests to remove their NBT data.
+        event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
+    })
+
+    //#region fix more duping
 	
 	// red alloy, because crucible always makes 4+1=5
 	
@@ -1680,5 +1724,66 @@ const registerGTCEURecipes = (event) => {
 		.duration(3254)
 		.EUt(8)
 	
+	//#endregion
+
+    //#region Quantum mainframe stack fix.
+    //
+    // Quantum Mainframes need 48x annealed copper wire but
+    // the stacking limit is 32 so instead allow 24x 2x.
+    //
+    // Frustratingly event.replaceInput doesn't allow for
+    // changing item counts, only types.
+    event.remove(/gtceu:circuit_assembler\/quantum_mainframe_zpm.*/)
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
 	//#endregion
 }

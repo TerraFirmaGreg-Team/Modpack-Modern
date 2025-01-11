@@ -409,4 +409,28 @@ const registerFramedBlocksRecipes = (event) => {
         E: 'framedblocks:framed_cube'
     }).id('framedblocks:powered_framing_saw')
 
+    // Framed Chest
+    event.shapeless(
+      Item.of('framedblocks:framed_chest', 1), 
+      [
+        'gtceu:wood_crate',
+        'framedblocks:framed_cube',
+      ]
+    ).id('framedblocks:framed_chest')
+
+    event.custom({
+        type: "framedblocks:frame",
+        additives: [
+            {
+                "count": 1,
+                "ingredient": {
+                item: "gtceu:wood_crate"
+                }
+            }
+        ],
+        material: 6144,
+        result: {
+            item: "framedblocks:framed_chest"
+        }
+    }).id('framedblocks:framing_saw/framed_chest')
 }

@@ -1,0 +1,56 @@
+{
+    "name": "Халькопирит и Реальгар",
+    "icon": "gtceu:raw_chalcopyrite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 140$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: 30 - 210$(br)Размер: 50$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит$(br2)Индикаторы: Самородная медь, Касситерит, Реальгар$(br2)Не получается найти это? $(l:tfg_ores/normal_garnierite)Кобальтит$() служит альтернативным источником мышьяка, однако для этого понадобится $(thing)Электрическая доменная печь$()"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Халькопирит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/chalcopyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 55%$(br)Плавится в: Медь$(br)Формула: CuFeS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Цеолит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/zeolite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Алюминий, Кислород$(br)Формула: NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Касситерит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cassiterite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Плавится в: Олово$(br)Формула: SnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Реальгар",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/realgar" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Мышьяк$(br)Формула: As₄S₄$(br)Ядовит: Да"
+		},
+    ]
+}
