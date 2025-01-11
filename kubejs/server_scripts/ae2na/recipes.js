@@ -8,11 +8,11 @@ const registerAE2NetworkAnalyzerRecipes = (event) => {
         'CDC',
         'EFE' 
     ], {
-        A: 'gtceu:iv_sensor',
-        B: 'gtceu:iv_emitter',
-        C: '#gtceu:circuits/iv',
+        A: 'gtceu:hv_sensor',
+        B: 'gtceu:hv_emitter',
+        C: '#gtceu:circuits/ev',
         D: 'gtceu:computer_monitor_cover',
-        E: '#forge:plates/tungsten_steel',
-        F: '#gtceu:batteries/iv'
+        E: '#forge:plates/stainless_steel',
+        F: '#gtceu:batteries/hv'
     }).id('ae2netanalyser:analyser')
 }
