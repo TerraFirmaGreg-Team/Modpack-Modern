@@ -3074,6 +3074,121 @@ const registerTFCRecipes = (event) => {
     // А где?
     //#endregion
 
+    // Бумага
+    event.recipes.gtceu.cutter('tfg:unrefined_paper')
+        .itemInputs('tfc:unrefined_paper')
+        .itemOutputs('minecraft:paper')
+        .duration(100)
+        .EUt(16)
+
+    // Limewater
+    event.recipes.gtceu.mixer('tfg:limewater_from_lime')
+        .itemInputs('tfc:powder/lime')
+        .inputFluids(Fluid.of('water', 500))
+        .outputFluids(Fluid.of('tfc:limewater', 500))
+        .duration(20)
+        .EUt(16)
+
+    event.recipes.gtceu.mixer('tfg:limewater_from_flux')
+        .itemInputs('tfc:powder/flux')
+        .inputFluids(Fluid.of('water', 500))
+        .outputFluids(Fluid.of('tfc:limewater', 500))
+        .duration(20)
+        .EUt(16)
+    
+    // Tannin
+    event.recipes.gtceu.chemical_bath('tfg:tannin')
+        .itemInputs('#tfc:makes_tannin')
+        .inputFluids(Fluid.of('water', 1000))
+        .outputFluids(Fluid.of('tfc:tannin', 1000))
+        .duration(2400)
+        .EUt(16)
+    
+    // Soaked hides
+    event.recipes.gtceu.chemical_bath('tfg:small_soaked_hide')
+        .itemInputs('tfc:small_raw_hide')
+        .inputFluids(Fluid.of('tfc:limewater', 300))
+        .itemOutputs('tfc:small_soaked_hide')
+        .duration(1600)
+        .EUt(16)
+    
+    event.recipes.gtceu.chemical_bath('tfg:medium_soaked_hide')
+        .itemInputs('tfc:medium_raw_hide')
+        .inputFluids(Fluid.of('tfc:limewater', 400))
+        .itemOutputs('tfc:medium_soaked_hide')
+        .duration(2400)
+        .EUt(16)
+
+    event.recipes.gtceu.chemical_bath('tfg:large_soaked_hide')
+        .itemInputs('tfc:large_raw_hide')
+        .inputFluids(Fluid.of('tfc:limewater', 500))
+        .itemOutputs('tfc:large_soaked_hide')
+        .duration(3200)
+        .EUt(16)
+
+    // Scraped Hides
+    event.recipes.gtceu.cutter('tfg:small_scraped_hide')
+        .itemInputs('tfc:small_soaked_hide')
+        .itemOutputs('tfc:small_scraped_hide')
+        .duration(100)
+        .EUt(16)
+
+    event.recipes.gtceu.cutter('tfg:medium_scraped_hide')
+        .itemInputs('tfc:medium_soaked_hide')
+        .itemOutputs('tfc:medium_scraped_hide')
+        .duration(100)
+        .EUt(16)
+
+    event.recipes.gtceu.cutter('tfg:large_scraped_hide')
+        .itemInputs('tfc:large_soaked_hide')
+        .itemOutputs('tfc:large_scraped_hide')
+        .duration(100)
+        .EUt(16)
+    
+    // Prepared hides
+    event.recipes.gtceu.chemical_bath('tfg:small_prepared_hide')
+        .itemInputs('tfc:small_soaked_hide')
+        .inputFluids(Fluid.of('water', 300))
+        .itemOutputs('tfc:small_prepared_hide')
+        .duration(1600)
+        .EUt(16)
+
+    event.recipes.gtceu.chemical_bath('tfg:medium_prepared_hide')
+        .itemInputs('tfc:medium_soaked_hide')
+        .inputFluids(Fluid.of('water', 400))
+        .itemOutputs('tfc:medium_prepared_hide')
+        .duration(2400)
+        .EUt(16)
+
+    event.recipes.gtceu.chemical_bath('tfg:large_prepared_hide')
+        .itemInputs('tfc:large_soaked_hide')
+        .inputFluids(Fluid.of('water', 500))
+        .itemOutputs('tfc:large_prepared_hide')
+        .duration(3200)
+        .EUt(16)
+    
+    // Leather
+    event.recipes.gtceu.chemical_bath('tfg:small_leather')
+        .itemInputs('tfc:small_prepared_hide')
+        .inputFluids(Fluid.of('tfc:tannin', 300))
+        .itemOutputs('minecraft:leather')
+        .duration(1600)
+        .EUt(16)
+
+    event.recipes.gtceu.chemical_bath('tfg:medium_leather')
+        .itemInputs('tfc:medium_prepared_hide')
+        .inputFluids(Fluid.of('tfc:tannin', 400))
+        .itemOutputs('2x minecraft:leather')
+        .duration(2400)
+        .EUt(16)
+
+    event.recipes.gtceu.chemical_bath('tfg:large_leather')
+        .itemInputs('tfc:large_prepared_hide')
+        .inputFluids(Fluid.of('tfc:tannin', 500))
+        .itemOutputs('3x minecraft:leather')
+        .duration(3200)
+        .EUt(16)
+
     // Другое
     event.remove({ id: `tfc:crafting/trip_hammer` })
     event.remove({ id: `tfc:anvil/steel_pump` })
