@@ -39,6 +39,8 @@ const registerGTCEUItemTags = (event) => {
 
     event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 
+	event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
+    
     //#endregion
 }
 
