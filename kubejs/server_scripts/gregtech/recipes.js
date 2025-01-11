@@ -1097,19 +1097,6 @@ const registerGTCEURecipes = (event) => {
         D: 'gtceu:solid_machine_casing'
     }).id('tfg:shaped/greenhouse')
 
-    // Контроллер электрического генератора
-    event.shaped('gtceu:alternator', [
-        'ABA', 
-        'CDC', 
-        'EBE'
-    ], {
-        A: '#gtceu:resistors',
-        B: '#gtceu:circuits/lv',
-        C: 'gtceu:lv_voltage_coil',
-        D: 'gtceu:solid_machine_casing',
-        E: 'gtceu:copper_single_cable'
-    }).id('tfg:shaped/alternator')
-
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
         'AAA', 
