@@ -1,0 +1,45 @@
+{
+    "name": "Редстоун, Киноварь и Рубин",
+    "icon": "minecraft:redstone",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 160$(br)Плотность: 0.4$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 100$(br)Размер: 40$(br2)Виды камней: Гранит$(br2)Индикаторы: Редстоун, Рубин, Киноварь$(br2)Не получается найти это? На дне океана легко увидеть красное свечение!"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Редстоун",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/redstone" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 45%$(br)Плавится в: Редстоун$(br)Формула: Si(FeS₂)₅(CrAl₂O₃)Hg₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Рубин",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/ruby" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Алюминий, Хром$(br)Формула: CrAl₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Киноварь",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cinnabar" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Содержит: Ртуть$(br)Формула: HgS$(br)Ядовит: Да"
+		}
+    ]
+}

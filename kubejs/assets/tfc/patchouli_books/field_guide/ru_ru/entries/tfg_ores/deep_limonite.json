@@ -1,0 +1,56 @@
+{
+    "name": "Гётит и Малахит (Глубокие)",
+    "icon": "gtceu:rich_raw_goethite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 240$(br)Плотность: 0.35$(br)Вид: кластерная жила$(br)Y-уровень: -64 - 30$(br)Размер: 32$(br2)Виды камней: Мрамор, Известняк$(br2)Индикаторы: Лимонит, Гематит, Малахит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гётит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/goethite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 50%$(br)Плавится в: Железо$(br)Формула: FeHO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Жёлтый лимонит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/yellow_limonite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Железо$(br)Формула: FeHO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гематит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/hematite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Железо$(br)Формула: Fe₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Малахит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/malachite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Плавится в: Медь$(br)Формула: Cu₂CH₂O₅"
+		}
+    ]
+}

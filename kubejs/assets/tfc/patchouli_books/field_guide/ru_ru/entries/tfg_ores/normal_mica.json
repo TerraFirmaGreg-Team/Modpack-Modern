@@ -1,0 +1,56 @@
+{
+    "name": "Ционит, Слюда и Боксит",
+    "icon": "gtceu:raw_mica",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 190$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: 0 - 210$(br)Размер: 36$(br2)Виды камней: Гранит, Диорит, Габбро, Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Ционит, Слюда, Боксит, Поллуцит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Ционит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/kyanite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Алюминий$(br)Формула: Al₂SiO₅"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Слюда",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/mica" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Калий, Алюминий, Фтор$(br)Формула: KAl₃Si₃F₂O₁₀"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Боксит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bauxite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Алюминий$(br)Формула: Al₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Поллуцит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pollucite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Алюминий$(br)Формула: Cs₂Al₂Si₄(H₂O)₂O₁₂"
+		}
+    ]
+}

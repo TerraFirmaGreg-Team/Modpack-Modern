@@ -1,0 +1,56 @@
+{
+    "name": "Вульфенит & Молибденит (Глубокие)",
+    "icon": "gtceu:rich_raw_wulfenite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 245$(br)Плотность: 0.45$(br)Вид: кластерная жила$(br)Y-уровень: -64 - 10$(br)Размер: 26$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит, Гранит, Диорит, Габбро$(br2)Индикатор: Вульфенит, Молибденит, Молибден, Повеллит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Вульфенит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/wulfenite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 40%$(br)Содержит: Свинец, Молибден$(br)Формула: PbMoO₄$(br)Ядовит: Да"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Молибденит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/molybdenite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Содержит: Молибден$(br)Формула: MoS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Молибден",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/molybdenum" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Молибден$(br)Формула: Mo"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Повеллит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/powellite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Молибден$(br)Формула: CaMoO₄"
+		}
+    ]
+}

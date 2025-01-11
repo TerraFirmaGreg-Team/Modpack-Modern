@@ -1,0 +1,56 @@
+{
+    "name": "Аметист и гранат (Глубокие)",
+    "icon": "minecraft:amethyst_shard",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 230$(br)Плотность: 0.25$(br)Вид: дискообразная жила$(br)Y-уровень: -64 - 26$(br)Размер: 28$(br)Высота: 8$(br2)Виды камней: Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор, Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикатор: Цветущий аметист"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Аметист",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/amethyst" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 65%$(br)Содержит: Железо$(br)Формула: (SiO₂)₄Fe"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Опал",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/opal" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Формула: (SiO₂)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Красный гранат",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/red_garnet" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Содержит: Пироп, Альмандин, Спасерит"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Жёлтый гранат",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/yellow_garnet" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Андрадит, Гроссуляр, Уваровит"
+		}
+    ]
+}
