@@ -2982,6 +2982,14 @@ const registerTFCRecipes = (event) => {
         generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
     })
 
+    // Растения
+    Ingredient.of('#tfc:plants').stacks.forEach(element => {
+        const itemId = element.id;
+        const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
+    
+        generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId);
+    });
+
     //#endregion
 
     //#region Рецепты плоского теста
@@ -3047,6 +3055,19 @@ const registerTFCRecipes = (event) => {
     event.recipes.createMilling('2x tfc:olive_paste', 'tfc:food/olive')
         .id(`tfg:milling/tfc/olive_paste`)
 
+    event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
+        .inputFluids(Fluid.of('water', 200))
+        .itemInputs('2x tfc:olive_paste')
+        .outputFluids(Fluid.of('tfc:olive_oil_water', 200))
+        .duration(200)
+        .EUt(28)
+
+    event.recipes.gtceu.distillery('tfg:tfc/olive_oil')
+        .inputFluids(Fluid.of('tfc:olive_oil_water', 250))
+        .outputFluids(Fluid.of('tfc:olive_oil', 50))
+        .duration(600)
+        .EUt(28)
+    
     //#endregion
     
     //#region Рецепты бочки в миксере

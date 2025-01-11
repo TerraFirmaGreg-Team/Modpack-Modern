@@ -1,0 +1,56 @@
+{
+    "name": "Опал и гранат (Глубокие)",
+    "icon": "gtceu:opal_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 220$(br)Плотность: 0.35$(br)Вид: дискообразная жила$(br)Y-уровень: -64 - 62$(br)Размер: 26$(br)Высота: 6$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит, Гранит, Диорит, Габбро$(br2)Индикатор: Цветущий аметист"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Опал",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/opal" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 55%$(br)Формула: (SiO₂)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Аметист",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/amethyst" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Железо$(br)Формула: (SiO₂)₄Fe"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Красный гранат",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/red_garnet" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Содержит: Пироп, Альмандин, Спасерит"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Жёлтый гранат",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/yellow_garnet" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Андрадит, Гроссуляр, Уваровит"
+		}
+    ]
+}

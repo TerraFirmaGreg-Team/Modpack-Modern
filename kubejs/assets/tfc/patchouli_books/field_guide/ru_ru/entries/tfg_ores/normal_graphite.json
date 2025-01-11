@@ -1,0 +1,45 @@
+{
+    "name": "Графит и Алмаз",
+    "icon": "minecraft:diamond",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 175$(br)Плотность: 0.35$(br)Вид: трубчатая жила$(br)Y-уровень: -64 - 100$(br)Высота: 60$(br)Радиус: 12$(br2)Виды камней: Габбро$(br2)Индикатор: Алмаз, Графит, Уголь$(br2)Не получается найти это? Габбро всегда генерируется под $(thing)Базальтом$(), а на дне океана легко обнаружить столбы, ведущие к нижнему слою!"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Графит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/graphite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 45%$(br)Используется для: $(l:mechanics/fire_clay)Огнеупорная глина$(), Графен$(br)Формула: C"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Алмаз",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/diamond" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Используется для: Измельчители, предметы из AE2$(br)Формула: C"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Уголь",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/coal" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Используется для: топливо, ректификация$(br)Формула: C"
+		}
+    ]
+}
