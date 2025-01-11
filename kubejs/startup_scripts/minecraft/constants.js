@@ -815,7 +815,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:wither_skeleton_skull', 
     'minecraft:weeping_vines', 
     'minecraft:crimson_roots', 
-    'minecraft:nether_brick', 
+    //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
     'minecraft:twisting_vines', 
     'minecraft:warped_fungus',
