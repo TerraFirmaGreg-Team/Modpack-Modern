@@ -809,11 +809,33 @@ const registerCreateRecipes = (event) => {
         'DED' 
     ], {
         A: 'gtceu:glass_tube',
-        B: 'gtceu:resistor',
+        B: '#gtceu:resistors',
         C: 'gtceu:resin_circuit_board',
         D: 'gtceu:red_alloy_single_wire',
         E: '#forge:plates/wrought_iron'
     }).id('tfg:create/shaped/electron_tube')
+
+    event.shaped('2x create:electron_tube', [
+        ' A ',
+        'BCB',
+        'DED' 
+    ], {
+        A: 'gtceu:glass_tube',
+        B: '#gtceu:resistors',
+        C: 'gtceu:plastic_circuit_board',
+        D: 'gtceu:red_alloy_single_wire',
+        E: '#forge:plates/wrought_iron'
+    }).id('tfg:create/shaped/electron_tube2')
+
+    event.shaped('3x create:electron_tube', [
+        ' A ',
+        ' B ',
+        ' C '
+    ], {
+        A: 'gtceu:glass_tube',
+        B: 'gtceu:nand_chip',
+        C: '#forge:plates/wrought_iron'
+    }).id('tfg:create/shaped/electron_tube3')
 
     // Тюбик с клеем
     event.shaped('create:super_glue', [
@@ -1195,18 +1217,4 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     //#endregion
-    
-    // #region electron tubes for later tiers
-    
-    event.shaped('create:electron_tube', [
-        ' A ',
-        ' B ',
-        ' C '
-    ], {
-        A: 'gtceu:glass_tube',
-        B: 'gtceu:nand_chip',
-        C: 'gtceu:wrought_iron_plate'
-    }).id('tfg:advanced_electron_tube')
-
-    // #endregion
 }
