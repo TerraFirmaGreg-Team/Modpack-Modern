@@ -2982,6 +2982,14 @@ const registerTFCRecipes = (event) => {
         generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
     })
 
+    // Растения
+    Ingredient.of('#tfc:plants').stacks.forEach(element => {
+        const itemId = element.id;
+        const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
+    
+        generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId);
+    });
+
     //#endregion
 
     //#region Рецепты плоского теста
