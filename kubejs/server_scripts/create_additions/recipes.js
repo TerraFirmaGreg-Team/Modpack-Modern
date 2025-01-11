@@ -68,18 +68,4 @@ const registerCreateAdditionsRecipes = (event) => {
         .itemOutputs('4x createaddition:barbed_wire')
         .duration(200)
         .EUt(20)
-	
-	// alternator: SU to EU
-    event.shaped('createaddition:alternator', [
-        'ABA',
-        'CDC',
-        'EFE'
-    ], {
-        A: '#gtceu:resistors',
-        B: '#gtceu:circuits/lv',
-        C: 'gtceu:lv_voltage_coil',
-        D: 'gtceu:mv_machine_casing',
-        E: 'gtceu:manganese_phosphide_quadruple_wire',
-        F: 'create:rotation_speed_controller'
-    }).id('tfg:alternator_mv')
 }
