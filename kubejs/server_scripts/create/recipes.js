@@ -1189,11 +1189,24 @@ const registerCreateRecipes = (event) => {
     //#region Механизм точности
 
     event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
-    .itemInputs('#forge:sheets/gold','3x create:cogwheel', '3x create:large_cogwheel', '3x #forge:nuggets/iron')
-    .itemOutputs('create:precision_mechanism')
-    .duration(2000)
-    .EUt(20)
+        .itemInputs('#forge:sheets/gold','3x create:cogwheel', '3x create:large_cogwheel', '3x #forge:nuggets/iron')
+        .itemOutputs('create:precision_mechanism')
+        .duration(2000)
+        .EUt(20)
 
     //#endregion
     
+    // #region electron tubes for later tiers
+    
+    event.shaped('create:electron_tube', [
+        ' A ',
+        ' B ',
+        ' C '
+    ], {
+        A: 'gtceu:glass_tube',
+        B: 'gtceu:nand_chip',
+        C: 'gtceu:wrought_iron_plate'
+    }).id('tfg:advanced_electron_tube')
+
+    // #endregion
 }
