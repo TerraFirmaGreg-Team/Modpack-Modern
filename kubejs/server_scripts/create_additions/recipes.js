@@ -68,21 +68,9 @@ const registerCreateAdditionsRecipes = (event) => {
         .itemOutputs('4x createaddition:barbed_wire')
         .duration(200)
         .EUt(20)
-
-    // electric motor: EU to SU
-    event.shaped('createaddition:electric_motor', [
-        'CCC',
-        'BAD',
-        'CCC'
-    ], {
-        A: 'gtceu:mv_machine_casing',
-        B: 'create:rotation_speed_controller',
-        C: 'gtceu:manganese_phosphide_quadruple_wire',
-        D: 'gtceu:mv_electric_motor',
-    }).id('tfg:electric_motor_mv')
 	
 	// alternator: SU to EU
-	event.shaped('createaddition:alternator', [
+    event.shaped('createaddition:alternator', [
         'ABA',
         'CDC',
         'EFE'
@@ -91,7 +79,7 @@ const registerCreateAdditionsRecipes = (event) => {
         B: '#gtceu:circuits/lv',
         C: 'gtceu:lv_voltage_coil',
         D: 'gtceu:mv_machine_casing',
-		E: 'gtceu:manganese_phosphide_quadruple_wire',
+        E: 'gtceu:manganese_phosphide_quadruple_wire',
         F: 'create:rotation_speed_controller'
     }).id('tfg:alternator_mv')
 }
