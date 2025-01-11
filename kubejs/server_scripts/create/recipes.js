@@ -1195,5 +1195,26 @@ const registerCreateRecipes = (event) => {
     .EUt(20)
 
     //#endregion
-    
+
+    //#region Blaze burner
+	
+	event.shaped('create:blaze_burner', [
+        '   ',
+        ' A ',
+        'BBB' 
+    ], {
+        A: 'gtceu:charcoal_block',
+        B: 'gtceu:wrought_iron_plate'
+    }).id('tfg:create/shaped/blaze_burner_charcoal')
+	
+	event.shaped('create:blaze_burner', [
+        '   ',
+        ' A ',
+        'BBB' 
+    ], {
+        A: 'minecraft:coal_block',
+        B: 'gtceu:wrought_iron_plate'
+    }).id('tfg:create/shaped/blaze_burner_coal')
+	
+	//#endregion
 }
