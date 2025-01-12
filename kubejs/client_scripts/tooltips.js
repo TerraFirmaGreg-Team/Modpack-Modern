@@ -20,7 +20,12 @@ ItemEvents.tooltip(event => {
     event.addAdvanced(['firmalife:bucket/yeast_starter'], (item, advanced, text) => {
         text.add(1, [text.of('Created with dried fruit')])
     })
-	event.addAdvanced(['firmalife:beehive'], (item, advanced, text) => {
+    event.addAdvanced(['firmalife:beehive'], (item, advanced, text) => {
         text.add(1, [text.of('Needs to be filled with empty frames and surrounded by flowers to attract bees.')])
+    })
+    event.addAdvanced(['gtceu:alternator'], (item, advanced, text) => {
+        text.add(1, text.of('Generates 2A of the matching §6Kinetic Input Box§r and §6Dynamo Hatch§r.')),
+        text.add(2, text.of(`Select Circuit 1 for LV, 2 for MV, 3 for HV, and 4 for EV.`)),
+        text.add(3, text.of(`§cRequires 256 RPM to run.§r`))
     })
 })
