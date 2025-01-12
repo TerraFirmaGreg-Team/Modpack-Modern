@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.16] - 12.01.2025
+## [0.7.16] - 13.01.2025
 ### Changes
 - Removed links for excel spreadsheet ore gen (Pyritie).
 - Fix maintenance hatch recycling recipes too (fluffle).
@@ -11,6 +11,11 @@
 - Craft recipe for framed chest so it isn't cheaper then the alternatives (Juzrm).
 - RU_RU translation for tfc guide book (recently added pages) (8oyNextDoor).
 - Based gas multiblocks, more suffering! (Pyritie).
+- Creosote treated planks fixes (Pyritie).
+- Fixed mixer recipes for red/blue steel (Pyritie).
+- Added another recipe for Create's electron tubes (Pyritie).
+- Electric cheese, tomato sauce and cream (Saaghh).
+- Leather producting using GTM machines.
 
 ## [0.7.15] - 08.01.2025
 ### Changes
