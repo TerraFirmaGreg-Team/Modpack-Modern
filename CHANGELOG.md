@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.16] - 13.01.2025
+## [0.7.16] - 12.01.2025
 ### Changes
 - Removed links for excel spreadsheet ore gen (Pyritie).
 - Fix maintenance hatch recycling recipes too (fluffle).

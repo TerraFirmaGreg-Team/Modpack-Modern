@@ -9,9 +9,6 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
-permissions:
-  pull-requests: none
-
 env:
   RELEASE_TYPE: "release"
   MINECRAFT_VERSION: "1.20.1"
@@ -326,86 +323,6 @@ jobs:
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
           if-no-files-found: error
 
-  release-curseforge:
-    name: 🚀 Release to CurseForge
-    needs: [info, build-modpack, build-server]
-    runs-on: ubuntu-latest
-    outputs:
-      id: ${{ steps.release.outputs.id }}
-
-    steps:
-      - name: 🔒 Check if CURSEFORGE_TOKEN exist
-        shell: bash
-        run: |
-          if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
-            echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-          fi  
-
-      - name: 📦 Download artifact curseforge
-        uses: actions/download-artifact@v4.1.8
-        with:
-          name: ${{ needs.info.outputs.project_full_name }}-curseforge
-
-      - name: 📦 Download artifact server
-        uses: actions/download-artifact@v4.1.8
-        with:
-          name: ${{ needs.info.outputs.project_full_name }}-serverpack
-
-      - name: 🚀 Upload Curseforge
-        id: release
-        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-        with:
-          api-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          project-id: ${{ vars.CURSEFORGE_ID }}
-          display-name: ${{ needs.info.outputs.project_full_name }}
-          modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
-          changelog: |
-            ${{ needs.info.outputs.changelog }}
-            ${{ needs.info.outputs.diff }}
-          changelog-format: markdown
-          game-version: ${{ needs.info.outputs.minecraft_version }}
-          release-type: ${{ needs.info.outputs.release_type }}
-
-  # release-modrinth:
-  #     name: 🚀 Release to Modrinth
-  #     needs: [info, build-modpack, build-server]
-  #     runs-on: ubuntu-latest
-
-  #     steps:
-  #       - name: 🔒 Check if MODRINTH_API_TOKEN exist
-  #         shell: bash
-  #         run: |
-  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
-  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-  #           fi  
-    
-  #       - name: 📦 Download artifact modrinth
-  #         uses: actions/download-artifact@v4.1.8
-  #         with:
-  #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
-    
-  #       - name: 📦 Download artifact server
-  #         uses: actions/download-artifact@v4.1.8
-  #         with:
-  #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
-    
-  #       - name: 🚀 Upload Modrinth
-  #         id: release
-  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-  #         with:
-  #           api-token: ${{ secrets.MODRINTH_TOKEN }}
-  #           project-id: ${{ vars.MODRINTH_ID }}
-  #           modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-  #           modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
-  #           changelog: ${{ needs.info.outputs.changelog }}
-  #           changelog-format: markdown
-  #           game-version: ${{ needs.info.outputs.minecraft_version }}
-  #           display-name: ${{ needs.info.outputs.project_full_name }}
-  #           server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
-  #           release-type: ${{ needs.info.outputs.release_type }}
-
   release-github:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
@@ -455,6 +372,87 @@ jobs:
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
+
+  release-curseforge:
+    name: 🚀 Release to CurseForge
+    needs: [info, build-modpack, build-server, release-github]
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.release.outputs.id }}
+
+    steps:
+      - name: 🔒 Check if CURSEFORGE_TOKEN exist
+        shell: bash
+        run: |
+          if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
+            echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+          fi  
+
+      - name: 📦 Download artifact curseforge
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-curseforge
+
+      - name: 📦 Download artifact server
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: ${{ needs.info.outputs.project_full_name }}-serverpack
+
+      - name: 🚀 Upload Curseforge
+        id: release
+        uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+        with:
+          api-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          project-id: ${{ vars.CURSEFORGE_ID }}
+          display-name: ${{ needs.info.outputs.project_full_name }}
+          modpack-path: ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+          server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+          modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+          changelog: |
+            ${{ needs.info.outputs.changelog }}
+            ${{ needs.info.outputs.diff }}
+          changelog-format: markdown
+          game-version: ${{ needs.info.outputs.minecraft_version }}
+          release-type: ${{ needs.info.outputs.release_type }}
+
+  # release-modrinth:
+  #     name: 🚀 Release to Modrinth
+  #     needs: [info, build-modpack, build-server, release-github]
+  #     runs-on: ubuntu-latest
+
+  #     steps:
+  #       - name: 🔒 Check if MODRINTH_API_TOKEN exist
+  #         shell: bash
+  #         run: |
+  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
+  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
+  #           fi  
+    
+  #       - name: 📦 Download artifact modrinth
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_full_name }}-modrinth
+    
+  #       - name: 📦 Download artifact server
+  #         uses: actions/download-artifact@v4.1.8
+  #         with:
+  #           name: ${{ needs.info.outputs.project_full_name }}-serverpack
+    
+  #       - name: 🚀 Upload Modrinth
+  #         id: release
+  #         uses: Xikaro/upload-curseforge-modpack-action@1.1.1
+  #         with:
+  #           api-token: ${{ secrets.MODRINTH_TOKEN }}
+  #           project-id: ${{ vars.MODRINTH_ID }}
+  #           modpack-path: ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+  #           modpack-server-path: ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+  #           changelog: ${{ needs.info.outputs.changelog }}
+  #           changelog-format: markdown
+  #           game-version: ${{ needs.info.outputs.minecraft_version }}
+  #           display-name: ${{ needs.info.outputs.project_full_name }}
+  #           server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
+  #           release-type: ${{ needs.info.outputs.release_type }}
+
 
   discord-message:
     name: 📱 Discord Message
