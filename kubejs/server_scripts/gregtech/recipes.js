@@ -1544,29 +1544,6 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 	
-	  //#region fix more duping
-  
-    // Fix LV recycling producing red/blue steel.
-    // Replace red steel outputs with 8x steel, delete blue steel outputs.
-    event.replaceOutput(
-        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
-        '#forge:ingots/red_steel',
-        '8x #forge:ingots/steel')
-
-    event.replaceOutput(
-        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
-        '#forge:ingots/blue_steel',
-        '')
-
-    event.replaceOutput(
-        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
-        '#forge:dusts/red_steel',
-        '8x #forge:dusts/steel')
-
-    event.replaceOutput(
-        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
-        '#forge:dusts/blue_steel',
-        '')
 
     // Clear NBT on tanks with shapeless crafts.
     const TANK_NAMES = [
@@ -1587,8 +1564,6 @@ const registerGTCEURecipes = (event) => {
         // Craft super chests to remove their NBT data.
         event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
     })
-
-    //#region fix more duping
 	
 	// red alloy, because crucible always makes 4+1=5
 	
