@@ -3001,6 +3001,7 @@ const registerTFCRecipes = (event) => {
             .itemOutputs(element.output)
             .duration(300)
             .EUt(16)
+            .circuit(3)
     })
 
     //#endregion
