@@ -1060,6 +1060,13 @@ global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/cranberry_bush', fluid_amount: 6000, output: '3x tfc:food/cranberry', name: 'cranberry' },
 ];
 
+global.TFC_MILKS = [
+    {id: 'minecraft:milk'},
+    {id: 'firmalife:yak_milk'},
+    {id: 'firmalife:goat_milk'},
+    {id: 'firmalife:coconut_milk'},
+];
+
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1

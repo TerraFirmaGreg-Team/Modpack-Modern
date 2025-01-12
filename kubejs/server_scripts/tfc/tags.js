@@ -29,6 +29,11 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/chainsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/drills')
+
+    // Ингредиенты для закваски
+    event.add('tfg:ferments_to_rennet', 'tfc:food/soybean')
+    event.add('tfg:ferments_to_rennet', 'firmalife:food/fig')
+    event.add('tfg:ferments_to_rennet', 'tfc:plant/ivy')
     
     // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')

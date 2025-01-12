@@ -1,4 +1,7 @@
 ItemEvents.tooltip(event => {
+    event.addAdvanced(['tfc:red_kaolin_clay','tfc:pink_kaolin_clay','tfc:white_kaolin_clay','gtceu:brass_block'], (item, advanced, text) => {
+        text.add(1, [text.of('Used in glassblowing as a replacement for Brass Plated Blocks')])
+    })
     event.addAdvanced(['gtceu:lv_macerator','gtceu:mv_macerator', 'gtceu:hp_steam_macerator'], (item, advanced, text) => {
         text.add(1, [text.of('Only outputs the first slot shown in EMI/JEI until HV.')])
     })
@@ -23,4 +26,12 @@ ItemEvents.tooltip(event => {
 	event.addAdvanced(['firmalife:beehive'], (item, advanced, text) => {
         text.add(1, [text.of('Needs to be filled with empty frames and surrounded by flowers to attract bees.')])
     })
+	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
+		text.add(1, text.of('Artificial enviroment to simulate the Nether.')),
+		text.add(2, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
+	})
+	event.addAdvanced(['gtceu:end_dome'], (item, advanced, text) => {
+		text.add(1, text.of('Artificial enviroment to simulate the End.')),
+		text.add(2, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
+	})
 })
