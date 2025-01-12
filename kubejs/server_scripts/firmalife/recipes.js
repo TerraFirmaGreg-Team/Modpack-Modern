@@ -393,6 +393,7 @@ const registerFirmaLifeRecipes = (event) => {
             .itemOutputs(element.output)
             .duration(300)
             .EUt(16)
+        	.circuit(2)
     })
 
     //#endregion
