@@ -1214,37 +1214,28 @@ const registerGTCEURecipes = (event) => {
     //#region Рецепты электрического генератора
 
     event.recipes.gtceu.alternator('lv_alternator')
-        .inputStress(8192)
-        .circuit(0)
-        .rpm(256)
-        .duration(2)
-  	.outputEU(32)
-	// this does not actually do anything except write the number in JEI
-	.EUt(-32)
-
-    event.recipes.gtceu.alternator('mv_alternator')
-        .inputStress(32768)
         .circuit(1)
         .rpm(256)
         .duration(2)
-	.outputEU(128)
-	.EUt(-128)
+        .outputEU(128)
 
-    event.recipes.gtceu.alternator('hv_alternator')
-        .inputStress(131072)
+    event.recipes.gtceu.alternator('mv_alternator')
         .circuit(2)
         .rpm(256)
         .duration(2)
-	.outputEU(512)
-	.EUt(-512)
+        .outputEU(512)
 
-    event.recipes.gtceu.alternator('ev_alternator')
-        .inputStress(524288)
+    event.recipes.gtceu.alternator('hv_alternator')
         .circuit(3)
         .rpm(256)
         .duration(2)
-	.outputEU(2048)
-	.EUt(-2048)
+        .outputEU(2048)
+
+    event.recipes.gtceu.alternator('ev_alternator')
+        .circuit(4)
+        .rpm(256)
+        .duration(2)
+        .outputEU(8192)
     
     //#endregion
 
