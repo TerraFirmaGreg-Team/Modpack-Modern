@@ -12,8 +12,7 @@ StartupEvents.registry('item', event => {
  */
 StartupEvents.registry('block', event => {
     registerGTCEuBlocks(event)
-
-    
+    registerTFGBlocks(event)    
 })
 
 /**
@@ -31,7 +30,9 @@ ItemEvents.modification(event => {})
 /**
  * Событие регистрации жидкостей.
  */
-StartupEvents.registry('fluid', event => {})
+StartupEvents.registry('fluid', event => {
+    registerTFGFluids(event)
+})
 
 /**
  * Событие регистрации типов рецептов.
