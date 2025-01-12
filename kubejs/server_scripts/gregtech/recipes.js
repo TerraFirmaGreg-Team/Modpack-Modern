@@ -1717,5 +1717,18 @@ const registerGTCEURecipes = (event) => {
         .itemOutputs('gtceu:quantum_processor_mainframe')
         .duration(800)
         .EUt(7680)
-	//#endregion
+    //#endregion
+
+	// #region fix mixer recipes for colored steel
+	
+	event.replaceInput({id: 'gtceu:mixer/red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceInput({id: 'gtceu:mixer/red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	
+	// #endregion
 }
