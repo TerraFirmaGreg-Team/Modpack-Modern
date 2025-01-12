@@ -83,7 +83,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:prismarine_shard',
 
     // Эндстоун
-    'minecraft:end_stone', 
+    //'minecraft:end_stone', 
     'minecraft:end_stone_bricks', 
     'minecraft:end_stone_brick_stairs',
     'minecraft:end_stone_brick_slab', 
@@ -491,8 +491,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:burn_pottery_sherd',
 
     // Шаблоны брони
-    'minecraft:wayfinder_armor_trim_smithing_template', 
-    'minecraft:netherite_upgrade_smithing_template', 
+    /*'minecraft:wayfinder_armor_trim_smithing_template', 
     'minecraft:dune_armor_trim_smithing_template', 
     'minecraft:snout_armor_trim_smithing_template', 
     'minecraft:shaper_armor_trim_smithing_template', 
@@ -507,7 +506,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:raiser_armor_trim_smithing_template', 
     'minecraft:wild_armor_trim_smithing_template', 
     'minecraft:sentry_armor_trim_smithing_template', 
-    'minecraft:ward_armor_trim_smithing_template',
+    'minecraft:ward_armor_trim_smithing_template',*/
+	'minecraft:netherite_upgrade_smithing_template',
 
     // Свечи
     'minecraft:candle', 
@@ -666,7 +666,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honey_bottle', 
     'minecraft:honeycomb_block', 
     'minecraft:honey_block',
-    'minecraft:chorus_fruit', 
+    //'minecraft:chorus_fruit', 
     'minecraft:popped_chorus_fruit', 
     'minecraft:purpur_pillar', 
     'minecraft:purpur_block', 
@@ -700,7 +700,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:mushroom_stem', 
     'minecraft:brown_mushroom_block', 
     'minecraft:red_mushroom_block', 
-    'minecraft:dragon_egg', 
+    //'minecraft:dragon_egg', 
     'minecraft:end_portal_frame', 
     'minecraft:mushroom_stew', 
     'minecraft:structure_void',
@@ -766,8 +766,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:polished_blackstone_brick_stairs', 
     'minecraft:polished_blackstone_brick_slab', 
     'minecraft:polished_blackstone_brick_wall', 
-    'minecraft:netherrack', 
-    'minecraft:nether_bricks', 
+    //'minecraft:netherrack', 
+    //'minecraft:nether_bricks', 
     'minecraft:cracked_nether_bricks',
     'minecraft:nether_brick_stairs', 
     'minecraft:nether_brick_slab', 
@@ -815,7 +815,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:wither_skeleton_skull', 
     'minecraft:weeping_vines', 
     'minecraft:crimson_roots', 
-    'minecraft:nether_brick', 
+    //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
     'minecraft:twisting_vines', 
     'minecraft:warped_fungus',
