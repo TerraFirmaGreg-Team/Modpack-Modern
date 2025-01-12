@@ -1198,23 +1198,15 @@ const registerCreateRecipes = (event) => {
 
     //#region Blaze burner
 	
-	event.shaped('create:blaze_burner', [
-        '   ',
-        ' A ',
-        'BBB' 
-    ], {
-        A: 'gtceu:charcoal_block',
-        B: 'gtceu:wrought_iron_plate'
-    }).id('tfg:create/shaped/blaze_burner_charcoal')
-	
-	event.shaped('create:blaze_burner', [
-        '   ',
-        ' A ',
-        'BBB' 
+    event.shaped('create:blaze_burner', [
+        'B B',
+        'BAB',
+        'CCC' 
     ], {
         A: 'minecraft:coal_block',
-        B: 'gtceu:wrought_iron_plate'
-    }).id('tfg:create/shaped/blaze_burner_coal')
+        B: 'tfc:metal/bars/blue_steel',
+		C: 'gtceu:blue_steel_plate',
+    }).id('tfg:create/shaped/blaze_burner')
 	
 	//#endregion
 }
