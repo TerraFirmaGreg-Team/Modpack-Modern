@@ -146,6 +146,30 @@ const registerFirmaLifeRecipes = (event) => {
 		C: '#tfc:barrels',
 		D: 'create:mechanical_pump'
     }).id('tfg:shaped/pumping_station')
+
+		event.shaped('firmalife:pumping_station',
+	[
+		' B ',
+		'ACA',
+		' D '
+	], {
+        A: 'firmalife:copper_pipe',
+		B: 'gtceu:black_bronze_plate',
+		C: '#tfc:barrels',
+		D: 'create:mechanical_pump'
+    }).id('tfg:shaped/pumping_station2')
+	
+	event.shaped('firmalife:pumping_station',
+	[
+		' B ',
+		'ACA',
+		' D '
+	], {
+        A: 'firmalife:copper_pipe',
+		B: 'gtceu:bismuth_bronze_plate',
+		C: '#tfc:barrels',
+		D: 'create:mechanical_pump'
+    }).id('tfg:shaped/pumping_station3')
 	
 	event.recipes.gtceu.bender('tfg:firmalife/copper_pipe')
 		.itemInputs('gtceu:copper_plate')
