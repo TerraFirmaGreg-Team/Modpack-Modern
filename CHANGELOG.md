@@ -3,6 +3,7 @@
 ## [0.7.17] - ?
 ### Changes
 - Added ore index, started work on other TFC info category (Pyritie).
+- Changed the AE2 network analyzer to HV instead of IV (Pyritie).
 
 ## [0.7.16] - 12.01.2025
 ### Changes
