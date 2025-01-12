@@ -3044,6 +3044,140 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region СЫЫЫР 0_0
+
+    // Rennet
+    event.recipes.gtceu.fermenter('tfg:fermenter/vegetable_rennet')
+        .itemInputs('#tfg:ferments_to_rennet')
+        .itemOutputs('firmalife:rennet')
+        .duration(400)
+        .EUt(16)
+
+    event.recipes.gtceu.fermenter('tfg:fermenter/biomass_rennet')
+        .inputFluids(Fluid.of('gtceu:fermented_biomass', 100))
+        .itemOutputs('firmalife:rennet')
+        .duration(2400)
+        .EUt(16)
+
+    // Curdled milk
+    event.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
+        .inputFluids(Fluid.of('minecraft:milk', 1000))
+        .itemInputs('firmalife:rennet')
+        .outputFluids(Fluid.of('tfc:curdled_milk'))
+        .duration(2400)
+        .EUt(16)
+    
+    event.recipes.gtceu.fermenter('tfg:fermenter/curdled_yak_milk')
+        .inputFluids(Fluid.of('firmalife:yak_milk', 1000))
+        .itemInputs('firmalife:rennet')
+        .outputFluids(Fluid.of('firmalife:curdled_yak_milk'))
+        .duration(2400)
+        .EUt(16)
+    
+    event.recipes.gtceu.fermenter('tfg:fermenter/curdled_goat_milk')
+        .inputFluids(Fluid.of('firmalife:goat_milk', 1000))
+        .itemInputs('firmalife:rennet')
+        .outputFluids(Fluid.of('firmalife:curdled_goat_milk'))
+        .duration(2400)
+        .EUt(16)
+
+    //Curds
+    event.recipes.gtceu.fermenter('tfg:fermenter/milk_curd')
+        .inputFluids(Fluid.of('tfc:curdled_milk', 1000))
+        .itemOutputs('firmalife:food/milk_curd')
+        .duration(1200)
+        .EUt(16)
+
+    event.recipes.gtceu.fermenter('tfg:fermenter/yak_curd')
+        .inputFluids(Fluid.of('firmalife:curdled_yak_milk', 1000))
+        .itemOutputs('firmalife:food/yak_curd')
+        .duration(1200)
+        .EUt(16)
+    
+    event.recipes.gtceu.fermenter('tfg:fermenter/goat_curd')
+        .inputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
+        .itemOutputs('firmalife:food/goat_curd')
+        .duration(1200)
+        .EUt(16)
+
+    // Cheese wheels
+    event.recipes.gtceu.fermenter('tfg:fermenter/gouda_wheel')
+        .inputFluids(Fluid.of('tfc:salt_water', 750))
+        .itemInputs('3x firmalife:food/milk_curd')
+        .itemOutputs('firmalife:gouda_wheel')
+        .duration(12000)
+        .EUt(24)
+    
+    event.recipes.gtceu.fermenter('tfg:fermenter/shosha_wheel')
+        .inputFluids(Fluid.of('tfc:salt_water', 750))
+        .itemInputs('3x firmalife:food/yak_curd')
+        .itemOutputs('firmalife:shosha_wheel')
+        .duration(12000)
+        .EUt(24)
+    
+    event.recipes.gtceu.fermenter('tfg:fermenter/feta_wheel')
+        .inputFluids(Fluid.of('tfc:salt_water', 750))
+        .itemInputs('3x firmalife:food/goat_curd')
+        .itemOutputs('firmalife:feta_wheel')
+        .duration(12000)
+        .EUt(24)
+
+    // Cutting
+    event.recipes.gtceu.cutter('tfg:cutter/gouda')
+        .itemInputs('firmalife:gouda_wheel')
+        .itemOutputs('4x firmalife:food/gouda')
+        .duration(40)
+        .EUt(28)
+
+    event.recipes.gtceu.cutter('tfg:cutter/shosha')
+        .itemInputs('firmalife:shosha_wheel')
+        .itemOutputs('4x firmalife:food/shosha')
+        .duration(40)
+        .EUt(28)
+    
+    event.recipes.gtceu.cutter('tfg:cutter/feta')
+        .itemInputs('firmalife:feta_wheel')
+        .itemOutputs('4x firmalife:food/feta')
+        .duration(40)
+        .EUt(28)
+    
+    event.recipes.gtceu.cutter('tfg:cutter/cheddar')
+        .itemInputs('firmalife:cheddar_wheel')
+        .itemOutputs('4x firmalife:food/cheddar')
+        .duration(40)
+        .EUt(28)
+
+    event.recipes.gtceu.cutter('tfg:cutter/chevre')
+        .itemInputs('firmalife:chevre_wheel')
+        .itemOutputs('4x firmalife:food/chevre')
+        .duration(40)
+        .EUt(28)
+
+    event.recipes.gtceu.cutter('tfg:cutter/rajya_metok')
+        .itemInputs('firmalife:rajya_metok_wheel')
+        .itemOutputs('4x firmalife:food/rajya_metok')
+        .duration(40)
+        .EUt(28)
+
+    // Misc
+    global.TFC_MILKS.forEach(milk => {
+        event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milk.id.replace(':', '_')}`)
+            .inputFluids(Fluid.of(milk.id, 1000))
+            .outputFluids(Fluid.of('firmalife:cream'))
+            .duration(1200)
+            .EUt(24)
+    })
+
+    event.recipes.gtceu.mixer('tfg:mixer/tomato_sauce')
+        .itemInputs('firmalife:food/tomato_sauce_mix')
+        .inputFluids(Fluid.of('minecraft:water', 200))
+        .itemOutputs('firmalife:food/tomato_sauce')
+        .duration(200)
+        .EUt(24)
+
+    
+    //endregion
+
     //#region Оливки
 
     event.recipes.gtceu.macerator(`tfg:tfc/olive_paste`)             
