@@ -28,4 +28,7 @@ ItemEvents.tooltip(event => {
         text.add(2, text.of(`Select Circuit 1 for LV, 2 for MV, 3 for HV, and 4 for EV.`)),
         text.add(3, text.of(`§cRequires 256 RPM to run.§r`))
     })
+    event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
+		text.add(1, text.of('§cSuperheat§r with Flawless and Exquisite coal gems.'))
+	})
 })
