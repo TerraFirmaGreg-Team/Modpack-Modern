@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.17] - ?
+### Changes
+- Added ore index, started work on other TFC info category (Pyritie).
+
 ## [0.7.16] - 12.01.2025
 ### Changes
 - Removed links for excel spreadsheet ore gen (Pyritie).
@@ -15,7 +19,7 @@
 - Fixed mixer recipes for red/blue steel (Pyritie).
 - Added another recipe for Create's electron tubes (Pyritie).
 - Electric cheese, tomato sauce and cream (Saaghh).
-- Leather producting using GTM machines.
+- Leather producting using GTM machines (Saaghh).
 
 ## [0.7.15] - 08.01.2025
 ### Changes
