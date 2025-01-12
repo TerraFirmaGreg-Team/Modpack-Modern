@@ -10,7 +10,7 @@ const registerAE2NetworkAnalyzerRecipes = (event) => {
     ], {
         A: 'gtceu:hv_sensor',
         B: 'gtceu:hv_emitter',
-        C: '#gtceu:circuits/ev',
+        C: '#gtceu:circuits/hv',
         D: 'gtceu:computer_monitor_cover',
         E: '#forge:plates/stainless_steel',
         F: '#gtceu:batteries/hv'
