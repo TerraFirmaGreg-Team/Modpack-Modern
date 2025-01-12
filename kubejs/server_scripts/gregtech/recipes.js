@@ -1050,12 +1050,11 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
 
     // Пыль звезды незера 
-    // TODO: удалить после имплементации ада
     event.recipes.gtceu.chemical_reactor('tfg:gtceu/nether_star_dust')             
         .itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
         .circuit(10)
         .itemOutputs('gtceu:nether_star_dust')
-        .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 6000), Fluid.of('gtceu:carbon_monoxide', 8000))
+        .inputFluids(Fluid.of('gtceu:nether_air', 1000))
         .duration(700)
         .EUt(2720)
 
@@ -1281,6 +1280,7 @@ const registerGTCEURecipes = (event) => {
     //#region remove LV casing exploit
 	
   event.remove({ id: 'gtceu:assembler/casing_lv' })
+
 	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
 		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
 		.itemOutputs('gtceu:lv_machine_casing')
@@ -1541,27 +1541,30 @@ const registerGTCEURecipes = (event) => {
         }
         
     });
-    //#endregion
 
+    //#endregion
+	
+	  //#region fix more duping
+  
     // Fix LV recycling producing red/blue steel.
     // Replace red steel outputs with 8x steel, delete blue steel outputs.
     event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
         '#forge:ingots/red_steel',
         '8x #forge:ingots/steel')
 
     event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
         '#forge:ingots/blue_steel',
         '')
 
     event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
         '#forge:dusts/red_steel',
         '8x #forge:dusts/steel')
 
     event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
         '#forge:dusts/blue_steel',
         '')
 
@@ -1733,4 +1736,78 @@ const registerGTCEURecipes = (event) => {
 		.EUt(8)
 	
 	//#endregion
+
+    //#region Quantum mainframe stack fix.
+    //
+    // Quantum Mainframes need 48x annealed copper wire but
+    // the stacking limit is 32 so instead allow 24x 2x.
+    //
+    // Frustratingly event.replaceInput doesn't allow for
+    // changing item counts, only types.
+    event.remove(/gtceu:circuit_assembler\/quantum_mainframe_zpm.*/)
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+    //#endregion
+
+	// #region fix mixer recipes for colored steel
+	
+	event.replaceInput({id: 'gtceu:mixer/red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceInput({id: 'gtceu:mixer/red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	
+	// #endregion
 }

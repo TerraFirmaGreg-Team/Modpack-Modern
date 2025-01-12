@@ -1,0 +1,48 @@
+{
+	"name": "Infinite Resources?!",
+	"icon": "tfc:rock/dust/diorite",
+	"category": "tfc:tfg_tips",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"text": "Most of the raw resources you'll need are non-renewable and will require you to mine for them, but a few of them are infinitely renewable once you get to $(thing)LV$() and $(thing)MV$().$(br2)A lot of these methods are pretty slow, however, so it's up to you whether it's worth setting these up or just digging up another ore vein."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Fluids",
+			"item": "create:hose_pulley",
+			"text": "$(thing)Water$(), $(thing)Sea Water$(), and $(thing)Lava$() are all renewable through a $(item)Hose Pulley$() and a single source block of fluid. You can pull out of the hose pulley with a $(l:mechanics/pumps)Mechanical Pump$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Sea Water$() can be centrifuged for Water and $(thing)Salt$(), which can be electrolyzed into $(thing)Chlorine$() and $(thing)Sodium$().$(br2)$(item)Lava$() can be centrifuged into $(thing)Gold Nuggets$(), $(thing)Tantalite$(), $(thing)Sapphire$(), $(thing)Quicklime$(), $(thing)Silicon Dioxide$(), and ___.$(br2)Lava can also be used to fuel your steam boilers!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Stone Dusts",
+			"item": { "tag": "tfc:stone/dusts" },
+			"text": "The other source of infinite resources is through $(thing)Stone Dusts$(). You can obtain infinite raw rock through a $(item)Rock Breaker$(), and then macerate it into different dusts.$(br2)These stone dusts can then be centrifuged into different resources. Most of them give Silicon Dioxide and Oxygen, so only other resources will be listed."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Sedimentary",
+			"text": "$(li)$(thing)Shale$(): Sodium, Metal Mixture$(li)$(thing)Claystone$(): Aluminium, Hematite$(li)$(thing)Limestone$(): Calcium, Metal Mixture$(li)$(thing)Conglomerate$(): Tricalcium Phosphate, Hematite$(li)$(thing)Dolomite$(): Magnesium, Calcium, Metal Mixture$(li)$(thing)Chert$(): Metal Mixture$(li)$(thing)Chalk$(): Calcium, Carbon, Metal Mixture"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Metamorphic",
+			"text": "$(li)$(thing)Quartzite$(): Nothing$(li)$(thing)Slate$(): Metal Mixture$(li)$(thing)Phyllite$(): Calcium Chloride$(li)$(thing)Schist$(): Mica, Talc, Graphite, Metal Mixture$(li)$(thing)Gneiss$():Biotite (Fluorine)$(li)$(thing)Marble$(): Magnesium, Calcite"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Igneous Intrusive",
+			"text": "$(li)$(thing)Granite$(): Redrock (which gives...?$(li)$(thing)Gabbro$(): Titanium, Iron, Metal Mixture$(li)$(thing)Diorite$(): Clay Dust, Mirabilite$(li2)Aluminium, Sulfur, Sodium, Lithium..."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Igneous Extrusive",
+			"text": "$(li)$(thing)Rhyolite$(): Metal Mixture$(li)$(thing)Basalt$(): Olivine, Calcite, Flint, Dark Ashes$(li)$(thing)Andesite$(): Asbestos, Saltpeter$(li)$(thing)Dacite$(): Sodium, Calcium, Aluminium, Metal Mixture"
+		}
+	]
+}

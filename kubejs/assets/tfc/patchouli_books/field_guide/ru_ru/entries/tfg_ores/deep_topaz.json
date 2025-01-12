@@ -1,0 +1,56 @@
+{
+    "name": "Топаз и Халькозин (Глубокие)",
+    "icon": "gtceu:topaz_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 260$(br)Плотность: 0.3$(br)Вид: дискообразная жила$(br)Y-уровень: -64 - 26$(br)Размер: 28$(br2)Виды камней: Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Топаз, Синий топаз, Халькозин, Борнит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Топаз",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/topaz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Алюминий, Фтор$(br)Формула: Al₂SiFH₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Синий топаз",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/blue_topaz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Алюминий, Фтор$(br)Формула: Al₂SiF₂H₂O₆"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Халькозин",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/chalcocite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Плавится в: Медь$(br)Формула: Cu₂S"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Борнит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bornite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Медь$(br)Формула: Cu₅FeS₄"
+		}
+    ]
+}
