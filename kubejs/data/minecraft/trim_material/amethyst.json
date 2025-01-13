@@ -1,0 +1,9 @@
+{
+  "asset_name": "amethyst",
+  "description": {
+    "translate": "trim_material.minecraft.amethyst",
+    "color": "#9A5CC6"
+  },
+  "ingredient": "tfc:gem/amethyst",
+  "item_model_index": 1
+}
