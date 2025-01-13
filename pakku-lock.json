@@ -3822,6 +3822,111 @@
             ]
         },
         {
+            "pakku_id": "7NI7Pp9Wt1WPCGnK",
+            "pakku_links": [
+                "PoLmjPG7k4Yh69wn"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "functional-storage",
+                "modrinth": "functional-storage"
+            },
+            "name": {
+                "curseforge": "Functional Storage",
+                "modrinth": "Functional Storage"
+            },
+            "id": {
+                "curseforge": "556861",
+                "modrinth": "cO40ZIg3"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "functionalstorage-1.20.1-1.2.12.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5650/296/functionalstorage-1.20.1-1.2.12.jar",
+                    "id": "5650296",
+                    "parent_id": "556861",
+                    "hashes": {
+                        "sha1": "5e1c98a440f93eac4269a2ab3ac86912eab825bb",
+                        "md5": "8f4dbd3c8bcd8c9eec454db0039dd864"
+                    },
+                    "required_dependencies": [
+                        "287342"
+                    ],
+                    "size": 679572,
+                    "date_published": "2024-08-21T16:02:26.030Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "functionalstorage-1.20.1-1.2.12.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/cO40ZIg3/versions/HpvTQCZn/functionalstorage-1.20.1-1.2.12.jar",
+                    "id": "HpvTQCZn",
+                    "parent_id": "cO40ZIg3",
+                    "hashes": {
+                        "sha512": "36437ef7d88e45fc26424173542533fef4537ecd292cdb34c0802d91e55751986301e541704fbe3c29869f85a6c427be531817ffb01e46fe293f3ca400a42eae",
+                        "sha1": "5e1c98a440f93eac4269a2ab3ac86912eab825bb"
+                    },
+                    "required_dependencies": [
+                        "1Ro7m06l"
+                    ],
+                    "size": 679572,
+                    "date_published": "2024-08-21T16:02:28.447568Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "c5gyONkgqCoS63p7",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftfc"
+            },
+            "name": {
+                "curseforge": "Functional TFC"
+            },
+            "id": {
+                "curseforge": "676893"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Functional TFC 1.20.1-0.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5418/410/Functional TFC 1.20.1-0.0.4.jar",
+                    "id": "5418410",
+                    "parent_id": "676893",
+                    "hashes": {
+                        "sha1": "1b88546723085b5a151c4f58e0bfad2c3d2d6d01",
+                        "md5": "9d50528b5ae309e9e902a3250714a7d8"
+                    },
+                    "required_dependencies": [],
+                    "size": 424673,
+                    "date_published": "2024-06-11T15:09:18.583Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "rSUHapr2idxvSjLh",
             "type": "MOD",
             "side": "SERVER",
@@ -8815,6 +8920,67 @@
                     ],
                     "size": 3215608,
                     "date_published": "2024-06-03T03:30:56.570Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PoLmjPG7k4Yh69wn",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "titanium",
+                "modrinth": "titanium"
+            },
+            "name": {
+                "curseforge": "Titanium",
+                "modrinth": "Titanium"
+            },
+            "id": {
+                "curseforge": "287342",
+                "modrinth": "1Ro7m06l"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "titanium-1.20.1-3.8.32.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5468/426/titanium-1.20.1-3.8.32.jar",
+                    "id": "5468426",
+                    "parent_id": "287342",
+                    "hashes": {
+                        "sha1": "4672c64a8019e81a4a6c8239f20661d5edbd5da1",
+                        "md5": "75baf7f67163a1da0fbb6a8bc98fa012"
+                    },
+                    "required_dependencies": [],
+                    "size": 622068,
+                    "date_published": "2024-06-24T17:03:52.457Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "titanium-1.20.1-3.8.32.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/1Ro7m06l/versions/8krhHkrZ/titanium-1.20.1-3.8.32.jar",
+                    "id": "8krhHkrZ",
+                    "parent_id": "1Ro7m06l",
+                    "hashes": {
+                        "sha512": "c4563176fad77499859691d8b5e18c35e08fec0a31f57f9e51f3538462f1ad738fb29335fc46d5857bffbdfc2dbd49bb32dc96614876d1f858b8cc81d6264057",
+                        "sha1": "4672c64a8019e81a4a6c8239f20661d5edbd5da1"
+                    },
+                    "required_dependencies": [],
+                    "size": 622068,
+                    "date_published": "2024-06-24T17:04:00.648306Z"
                 }
             ]
         },
