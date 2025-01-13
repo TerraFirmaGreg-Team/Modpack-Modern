@@ -63,7 +63,8 @@ global.GTCEU_ARMORS = [
 	'gtceu:nanomuscle_leggings',
 	'gtceu:nanomuscle_boots',
 	'gtceu:nanomuscle_helmet',
-	'gtceu:advanced_nanomuscle_chestplate',
+	// typo in gtceu
+	'gtceu:avanced_nanomuscle_chestplate',
 	'gtceu:quarktech_chestplate',
 	'gtceu:quarktech_leggings',
 	'gtceu:quarktech_boots',
