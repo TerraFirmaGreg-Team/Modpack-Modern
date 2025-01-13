@@ -1799,4 +1799,30 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
 	
 	// #endregion
+
+    // #region Add all glass colors to macerator/hammer
+    event.remove({id: "gtceu:macerator/macerate_glass"});
+    event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass")
+        .itemInputs(
+            "#forge:glass"
+        )
+        .itemOutputs("gtceu:glass_dust")
+        .duration(20)
+        .EUt(2);
+
+    event.remove({id: "gtceu:macerator/macerate_glass_pane"});
+    event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass_pane")
+        .itemInputs(
+            "#forge:glass_panes"
+        )
+        .itemOutputs("3x gtceu:tiny_glass_dust")
+        .duration(6)
+        .EUt(2)
+
+    event.replaceInput(
+        {id: "gtceu:shaped/glass_dust_hammer"},
+        "minecraft:glass",
+        "#forge:glass"
+    );
+    // #endregion
 }
