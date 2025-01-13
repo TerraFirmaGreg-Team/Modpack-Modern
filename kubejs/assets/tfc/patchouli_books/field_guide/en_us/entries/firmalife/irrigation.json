@@ -1,0 +1,62 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Irrigation",
+  "category": "tfc:firmalife",
+  "icon": "firmalife:sprinkler",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(thing)Sprinkler$() is a device that sprinkles water in a 5x6x5 area centered on the block below the sprinkler block. You know it is working when it drips out water particles. Sprinklers placed facing up irrigate the same 5x6x5 area above."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "firmalife:anvil/sprinkler",
+      "text": "The sprinkler is made with a $(thing)Copper Plate$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Copper Pipes$() to them. Copper Pipes transport water up to 32 blocks to a sprinkler. They are connected to $(thing)Pumping Stations$()."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "firmalife:anvil/copper_pipe",
+      "text": "The copper pipe is made with a plate."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "firmalife:pumping_station"
+        }
+      },
+      "name": "",
+      "text": "",
+      "enable_visualize": false
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfg:shaped/pumping_station",
+      "text": "Pumping stations must be above a source block of water in order to work. Activate them with a redstone signal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/oxidized_copper_pipe",
+      "text": "Oxidized pipes are the same as regular copper pipes, except they do not connect to the other kind of pipe."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "firmalife:crafting/greenhouse/iron_greenhouse_port",
+      "text": "Greenhouse ports have a single pipe inside of them. They can be used to pass water through the walls of greenhouses!"
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 8
+}
