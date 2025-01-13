@@ -12,6 +12,10 @@ const registerGTCEUItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
+    global.GTCEU_ARMORS.forEach(item => {
+        event.add('minecraft:trimmable_armor', item)
+    })
+
     // Добавление тега EMI для скрытия всех руд
     event.add('c:hidden_from_recipe_viewers', '#forge:ores')
 
