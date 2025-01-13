@@ -3270,4 +3270,8 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(32)
 
     //#endregion
+	
+	// Nether Brick
+	
+	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
 }
