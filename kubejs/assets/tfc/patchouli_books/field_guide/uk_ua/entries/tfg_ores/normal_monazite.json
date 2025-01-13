@@ -1,0 +1,69 @@
+{
+    "name": "Бастнезит і Монацит",
+    "icon": "gtceu:monazite_gem",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 185$(br)Щільність: 0.25$(br)Тип: Cluster Vein$(br)Y: -32 - 50$(br)Розмір: 40$(br2)Типи каменю: Граніт, Діорит, Габро$(br2)Індикатор: Бастнезит Монацит, Неодим"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Бастнезит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bastnasite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Джерело: Церію, Фтору$(br)Формула: CeCFO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Монацит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/monazite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Фосфор, Рідкоземельні$(br)Формула: ?(PO₄)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Неодим",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/neodymium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Формула: Nd"
+        }
+    ]
+}

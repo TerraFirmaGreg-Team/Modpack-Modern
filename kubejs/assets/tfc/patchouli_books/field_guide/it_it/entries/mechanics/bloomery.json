@@ -1,0 +1,80 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Fucina",
+  "category": "tfc:mechanics",
+  "icon": "tfc:bloomery",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "La $(thing)Fucina$() è un dispositivo usato per fondere del$(thing)Minerale di Ferro$() in $(thing)Blumi di Ferro$() che possono essere forgiati in $(thing)Ferro Battuto$(). \nI minerali di ferro sono : $(l:the_world/ores_and_minerals#hematite)Hematite$(), $(l:the_world/ores_and_minerals#limonite)Limonite$(), e $(l:the_world/ores_and_minerals#magnetite)Magnetite$(). Quasti minerali possono essere fusi per creare $(thing)Ghisa$() al posto di $(thing)Ferro Battuto$(). Tutti gli oggetti contenenti ferro, se fusi, daranno Ghisa. Per farli diventare ferro usabile, c'è bisogno della fucina. Ogni oggetto in ferro piò essere usato nella fucina, inclusi attrezzi e lingotti di Ghisa!$(thing)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bloomery",
+      "text": "La fucina si crea con 8 $(thing)Doppie Piaste di Bronzo$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:bloomery",
+      "name": "Una Fucina",
+      "text": "Una Fucina di grandezza minima. Il blocco della fucina si può aprire e chiudere con $(item)$(k:key.use)$().",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The bloomery can contain up to a maximum of 48 $(thing)Inputs$(), with 16 items per layer of the chimney. To add layers to the chimney, stack up two more layers of stone blocks.$(br2)To add items to the bloomery, climb up to the top and throw items inside. A tower of grey ore should form."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/bloomery_hole.png"
+      ],
+      "text": "Aggiungere oggetti alla fucina.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Aggiungere oggetti alla fucina."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:bloom[layers=8]"
+        }
+      },
+      "name": "The Bloom Block",
+      "text": "A large $(thing)Bloom$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/refined_iron_bloom",
+      "text": "The $(thing)Raw Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Refined Iron Bloom$()."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/metal/ingot/wrought_iron",
+      "text": "The $(thing)Refined Iron Bloom$() must be worked in a $(l:mechanics/anvils)anvil$() to make $(thing)Wrought Iron Ingots$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)If the bloomery finds itself with more items contained than it can handle based on its chimney, it will try to spit them out the front.$()$(li)To retrieve your items from a bloomery that is not lit, do not break the molten block tower. Break the bloomery block.$()$(li)Blooms will only melt into cast iron, not wrought iron. They must be worked!$()",
+      "title": "Smith's Notes"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:bloom": 6,
+    "tfc:raw_iron_bloom": 7,
+    "tfc:refined_iron_bloom": 8
+  }
+}

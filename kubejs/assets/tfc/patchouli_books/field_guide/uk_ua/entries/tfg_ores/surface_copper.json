@@ -1,0 +1,92 @@
+{
+    "name": "Халькопірит та Реальгар",
+    "icon": "gtceu:raw_chalcopyrite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 140$(br)Щільність: 0.25$(br)Тип: Кластерна вена$(br)Y: 30 - 210$(br)Розмір: 50$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит$(br2)Індикатор: Самородна мідь, Каситерит, Реальгар"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Халькопирит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/chalcopyrite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 55%$(br)Розплавляється в: Мідь$(br)Формула: CuFeS₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Цеоліт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/zeolite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Алюмінію, Кисню$(br)Формула: NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Каситерит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cassiterite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 5%$(br)Розплавляється в: Олово$(br)Формула: SnO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Реальгар",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/realgar"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Миш'яку$(br)Формула: As₄S₄$(br)Небезпечний: Yes"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Якщо у вас виникли проблеми з пошуком Реальгару, іншим джерелом миш'яку є $(l:tfg_ores/normal_garnierite)Кобальтиту$(), хоча для цього знадобиться $(thing)Електрична доменна піч$() для обробки."
+        }
+    ]
+}
