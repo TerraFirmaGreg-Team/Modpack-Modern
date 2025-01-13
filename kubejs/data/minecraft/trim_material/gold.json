@@ -1,12 +1,9 @@
 {
-  "asset_name": "gold",
-  "description": {
-    "color": "#DEB12D",
-    "translate": "trim_material.minecraft.gold"
-  },
-  "ingredient": "tfc:gem/diamond",
-  "item_model_index": 0.6,
-  "override_armor_materials": {
-    "gold": "gold_darker"
-  }
+    "asset_name": "gold_tfc",
+    "description": {
+        "color": "#DEB12D",
+        "translate": "trim_material.tfc.gold"
+    },
+    "ingredient": "minecraft:gold_ingot",
+    "item_model_index": 0.9
 }
