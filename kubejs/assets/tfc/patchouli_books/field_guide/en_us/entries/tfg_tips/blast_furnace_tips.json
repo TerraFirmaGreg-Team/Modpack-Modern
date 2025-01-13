@@ -23,7 +23,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can pump liquid directly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:tfcchannelcasting/channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation! You can automate the bellows with a $(item)Deployer$() too! Just be careful, as using the bellows excessively consumes more $(thing)fuel$()."
+			"text": "You can pump liquid directly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:tfcchannelcasting/channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can automate the bellows with a $(item)Deployer$() too! Just be careful, as using the bellows excessively consumes more fuel and breaks your $(thing)tuyere$() faster.$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$()."
 		}
 	]
 }
