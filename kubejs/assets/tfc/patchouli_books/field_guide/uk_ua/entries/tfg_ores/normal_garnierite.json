@@ -1,0 +1,107 @@
+{
+    "name": "Гарнієрит і Кобальтит",
+    "icon": "gtceu:raw_garnierite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 140$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 60$(br)Розмір: 40$(br2)Типи каменю: Габро$(br2)Індикатор: Гарнієрит"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гарнієрит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/garnierite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Розплавляється в: Нікель$(br)Формула: NiO"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Нікель",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/nickel"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 10%$(br)Розплавляється в: Нікель$(br)Формула: Ni"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кобальтит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cobaltite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Джерело: Кобальту, Миш'яку$(br)Формула: CoAsS$(br)Небезпечний: Так"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Пентландит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pentlandite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Розплавляється в: Нікель$(br)Формула: Ni₉S₈"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кобальт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cobalt"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Кобальт$(br)Формула: Co"
+        }
+    ]
+}

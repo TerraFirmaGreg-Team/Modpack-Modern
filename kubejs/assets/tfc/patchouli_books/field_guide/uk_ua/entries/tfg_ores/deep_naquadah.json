@@ -1,0 +1,50 @@
+{
+    "name": "Наквадак і Плутоній",
+    "icon": "gtceu:rich_raw_naquadah",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 310$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -64 - -20$(br)Розмір: 32$(br2)Типи каменю: Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Наквадак, Плутоній"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Наквадак",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/naquadah"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 75%$(br)Джерело: Старгейтіум$(br)Формула: Nq"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Плутоній",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/plutonium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Плутонію$(br)Формула: Pu²³⁹$(br)Небезпечний: Так"
+        }
+    ]
+}

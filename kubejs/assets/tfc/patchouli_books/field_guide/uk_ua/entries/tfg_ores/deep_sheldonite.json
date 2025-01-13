@@ -1,0 +1,88 @@
+{
+    "name": "Шелдоніт і Борніт",
+    "icon": "gtceu:rich_raw_platinum",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 300$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -64 - 0$(br)Розмір: 30$(br2)Типи каменю: Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Борніт, Куприт., Платина, Паладій"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Шелдонітн",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cooperite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Платини, Нікелю, Паладію$(br)Формула: Pt₃NiSPd"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Платина",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/platinum"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Платини$(br)Формула: Pt"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Паладій",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/palladium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Паладію$(br)Формула: Pt"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Борніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bornite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Розплавляється в: Мідь$(br)Формула: Cu₅FeS₄"
+        }
+    ]
+}

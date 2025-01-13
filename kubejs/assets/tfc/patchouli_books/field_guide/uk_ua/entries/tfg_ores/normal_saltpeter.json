@@ -1,0 +1,88 @@
+{
+    "name": "Селітра та Електротин",
+    "icon": "gtceu:raw_saltpeter",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 210$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -32 - 60$(br)Розмір: 50$(br2)Типи каменю: Граніт, Діорит, Габро, Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Селітра, Діатоміт, Електротин, Алуніт"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Saltpeter",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/saltpeter"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Калію$(br)Формула: KNO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Діатоміт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/diatomite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Заліза, Алюмінію$(br)Формула: (SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Електротин",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/electrotine"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Золота, Срібла, Редстоуна$(br)Формула: (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Алуніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/alunite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Калію, Алюмінію$(br)Формула: KAl₃Si₂H₆O₁₄"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "name": "Срібло, Гален і Свинець",
+    "icon": "gtceu:raw_silver",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 160$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 75$(br)Розмір: 40$(br2)Типи каменю: Граніт, Гнейс$(br2)Індикатор: Самородне срібло"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Галена",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/galena"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Розплавляється в: Свинцю$(br)Формула: PbS$(br)Небезпечний: Yes"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Срібло",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/silver"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Срібло$(br)Формула: Ag"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Свинець",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lead"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 55%$(br)Розплавляється в: Свинцю$(br)Формула: Pb$(br)Небезпечний: Yes"
+        }
+    ]
+}

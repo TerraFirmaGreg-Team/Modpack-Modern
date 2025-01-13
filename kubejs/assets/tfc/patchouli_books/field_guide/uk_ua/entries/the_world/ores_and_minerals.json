@@ -1,0 +1,13 @@
+{
+  "name": "Руди та Мінерали",
+  "category": "tfc:the_world",
+  "icon": "tfc:ore/normal_hematite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ця сторінка призначена для заміни сторінки руд і мінералів TFC за замовчуванням.$(br2)Інформацію про руди можна знайти в розділі $(l:tfg_ores)Руди TFG$()."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 1
+}

@@ -1,0 +1,69 @@
+{
+    "name": "Тетраедрит (Поверхня)",
+    "icon": "gtceu:poor_raw_tetrahedrite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 140$(br)Щільність: 0.25$(br)Тип: Кластерна вена$(br)Y: 60 - 210$(br)Розмір: 50$(br2)Типи каменю: Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Тетраедрит, Самородна мідь"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Тетраедрит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tetrahedrite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 60%$(br)Розплавляється в: Мідь$(br)Формула: Cu₃SbS₃Fe"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Самородна Мідь",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/copper"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Розплавляється в: Мідь$(br)Формула: Cu"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Стибніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/stibnite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Розплавляється в: Сурму$(br)Формула: Sb₂S₃"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "name": "Гематит, Гетит і Рубін",
+    "icon": "gtceu:rich_raw_hematite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 220$(br)Щільність: 0.35$(br)Тип: Кластерна вена$(br)Y: -64 - 30$(br)Розмір: 40$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит$(br2)Індикатор: Гематит, Лимоніт, Самородне золото"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гематит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/hematite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Розплавляється в: Чугун$(br)Формула: Fe₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Жовтий лимоніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/yellow_limonite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Чавун$(br)Формула: FeHO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гетит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/goethite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Розплавляється в: Чавун$(br)Формула: FeHO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Золото",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/gold"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 5%$(br)Розплавляється в: Золото$(br)Формула: Au"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Рубін",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/ruby"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Джерело: Хрому, Алюмінію$(br)Формула: CrAl₂O₃"
+        }
+    ]
+}

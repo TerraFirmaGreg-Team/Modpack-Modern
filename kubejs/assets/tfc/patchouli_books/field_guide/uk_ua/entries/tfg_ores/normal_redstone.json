@@ -1,0 +1,69 @@
+{
+    "name": "Редстоун, Кіновар і Рубін",
+    "icon": "minecraft:redstone",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 160$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 100$(br)Розмір: 40$(br2)Типи каменю: Граніт$(br2)Індикатор: Редстоун, Рубін, Кіновар $(br2)Не можете знайти? Спробуйте пошукати в океанах, Червоний камінь світиться!"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Редстоун",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/redstone"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 45%$(br)Розплавляється в: Редстоун$(br)Формула: Si(FeS₂)₅(CrAl₂O₃)Hg₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Рубін",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/ruby"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Алюмінію, Хрому$(br)Формула: CrAl₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кіновар",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cinnabar"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Джерело: Ртуті$(br)Формула: HgS$(br)Небезпечний: Yes"
+        }
+    ]
+}

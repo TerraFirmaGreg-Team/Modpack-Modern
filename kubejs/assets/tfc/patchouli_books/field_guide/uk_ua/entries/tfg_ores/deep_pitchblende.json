@@ -1,0 +1,50 @@
+{
+    "name": "Ураніт & Пітчбленд",
+    "icon": "gtceu:rich_raw_uraninite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 220$(br)Щільність: 0.45$(br)Тип: Кластерна вена$(br)Y: -64 - -20$(br)Розмір: 24$(br2)Тип каменю: Граніт, Діорит, Габро, Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Пітчбленд, Ураніт$(br2)У TFG немає реакторів для розщеплення, але уран має інше застосування."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Ураніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/uraninite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Джерело: Урану$(br)Формула: UO₂$(br)Небезпечний: Так"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Пітчбленд",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pitchblende"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Джерело: Урану$(br)Формула: (UO₂)₃ThPb$(br)Небезпечний: Так"
+        }
+    ]
+}

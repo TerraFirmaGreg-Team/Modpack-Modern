@@ -1,0 +1,14 @@
+{
+    "name": "Нержавіюча сталь",
+    "icon": "firmalife:metal/ingot/stainless_steel",
+    "category": "tfc:firmalife",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:stainless_steel_ingot",
+            "title": "Нержавіюча сталь",
+            "text": "Ця сторінка замінює сторінку Firmalife з нержавіючої сталі за замовчуванням.$(br2)Нержавіюча сталь - це матеріал GregTech $(thing)HV$(), тому її неможливо виготовити за допомогою примітивних інструментів, як це зазвичай робиться з Firmalife.$(br)Теплицю з нержавіючої сталі також неможливо виготовити. Вибачте!"
+        }
+    ]
+}

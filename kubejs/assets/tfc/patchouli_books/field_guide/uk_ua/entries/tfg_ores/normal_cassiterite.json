@@ -1,0 +1,50 @@
+{
+    "name": "Каситерит (звичайний)",
+    "icon": "gtceu:raw_cassiterite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 170$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 75$(br)Розмір: 40$(br2)Типи каменю: Граніт, Діорит, Габро$(br2)Індикатор: Каситерит"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Каситерит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cassiterite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 40%$(br)Розплавляється в: Олово$(br)Формула: SnO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Олово",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tin"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 60%$(br)Розплавляється в: Олово$(br)Формула: Sn"
+        }
+    ]
+}

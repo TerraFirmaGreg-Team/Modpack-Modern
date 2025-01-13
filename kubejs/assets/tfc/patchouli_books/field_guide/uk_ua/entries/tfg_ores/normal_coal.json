@@ -1,0 +1,31 @@
+{
+    "name": "Вугілля",
+    "icon": "minecraft:coal",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 215$(br)Щільність: 0.55$(br)Тип: Кластерна вена$(br)Y: 0 - 210$(br)Розмір: 60$(br2)Типи каменю: Глинистий сланець, Аргіліт, Вапняк, Конгломерат, Доломіт, Кременистий сланець, Крейда$(br2)Індикатор: Вугілля"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Вугілля",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/coal"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 100%$(br)Використовується для: Ковальське паливо, Дистиляція$(br)Формула: C"
+        }
+    ]
+}

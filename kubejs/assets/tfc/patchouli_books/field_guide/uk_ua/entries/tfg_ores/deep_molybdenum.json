@@ -1,0 +1,88 @@
+{
+    "name": "Вульфеніт і Молібденіт",
+    "icon": "gtceu:rich_raw_wulfenite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 245$(br)Щільність: 0.45$(br)Тип: Кластерна вена$(br)Y: -64 - 10$(br)Розмір: 26$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит, Граніт, Діорит, Габро $(br2)Індикатор: Вульфеніт, Молібденіт, Молібденум, Повеліт"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Вульфеніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/wulfenite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 40%$(br)Джерело: Свинець, Молібденум$(br)Формула: PbMoO₄$(br)Небезпечний: Так"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Молібденіт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/molybdenite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Джерело: Молібденум $(br)Формула: MoS₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Молібденум",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/molybdenum"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Формула: 15%$(br)Джерело: Молібденум$(br)Формула: Mo"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Повеліт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/powellite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Молібденум $(br)Формула: CaMoO₄"
+        }
+    ]
+}

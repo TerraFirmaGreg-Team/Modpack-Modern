@@ -1,0 +1,14 @@
+{
+    "name": "Acciaio inossidabile",
+    "icon": "firmalife:metal/ingot/stainless_steel",
+    "category": "tfc:firmalife",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "gtceu:stainless_steel_ingot",
+            "title": "Acciaio inossidabile",
+            "text": "$(thing)Questa pagina serve per sovrascrivere la pagina predefinita di Firmalife per l'acciaio Inossidabile.$(br2)L'Acciaio inossidabile è un materiale di Gregtech sbloccato in $(thing)HV, quindi non è craftabile con attrezzi dell'era primitiva come sarebbe normalmente possibile con Firmalife.$(br)Anche la serra in acciaio inossidabile non è craftabile. Ci dispiace!"
+        }
+    ]
+}

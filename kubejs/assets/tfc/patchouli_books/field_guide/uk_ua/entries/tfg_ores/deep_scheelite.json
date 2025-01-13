@@ -1,0 +1,69 @@
+{
+    "name": "Шеєліт та Вольфрам",
+    "icon": "gtceu:rich_raw_scheelite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 220$(br)Щільність: 0.35$(br)Тип: Кластерна вена$(br)Y: -64 - 0$(br)Розмір: 28$(br2)Типи каменю: Граніт, Діорит, Габро$(br2)Індикатор: Шеєліт, Вольфрам, Літій"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Шеєліт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cooperite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 45%$(br)Джерело: Вольфрам$(br)Формула: Ca(WO₃)O"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Вольфрам",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tungstate"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Вольфраму, Літію$(br)Формула: Li₂(WO₃)O"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Літій",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lithium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Джерело: Літію$(br)Формула: Li"
+        }
+    ]
+}

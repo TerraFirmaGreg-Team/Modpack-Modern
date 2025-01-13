@@ -1,0 +1,88 @@
+{
+    "name": "Бентоніт та Олівін",
+    "icon": "gtceu:olivine_gem",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 180$(br)Щільність: 0.25$(br)Тип: Кластерна вена$(br)Y: -40 - 30$(br)Розмір: 26$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит, Граніт, Діорит, Габро$(br2)Індикатор: Бентоніт, Магнезит, Олівін, Глауконітовий пісок"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Бентоніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bentonite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Магнію$(br)Формула: NaMg₆Si₁₂H₄(H₂O)₅O₃₆"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Магнезит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/magnesite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Магнію$(br)Формула: MgCO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Оливін",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/olivine"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Магнію$(br)Формула: Mg₂Fe(SiO₂)₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Глауконітовий пісок",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/glauconite_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Магнезії, Алюмінію$(br)Формула: KMg₂Al₄H₂O₁₂"
+        }
+    ]
+}

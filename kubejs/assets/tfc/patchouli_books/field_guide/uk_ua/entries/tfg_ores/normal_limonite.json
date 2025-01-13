@@ -1,0 +1,88 @@
+{
+    "name": "Лімоніт",
+    "icon": "gtceu:raw_yellow_limonite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 190$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 75$(br)Розмір: 40$(br2)Типи каменю: Мармур, Вапняк$(br2)Індикатор: Лимоніт, Гематит, Малахіт"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Жовтий лимоніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/yellow_limonite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Розплавляється в: Чавун$(br)Формула: FeHO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гетит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/goethite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Чавун $(br)Формула: FeHO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гематит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/hematite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Розплавляється в: Чавун$(br)Формула: Fe₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Малахіт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/malachite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Мідь$(br)Формула: Cu₂CH₂O₅"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "name": "Смарагд, Лазурит та Содаліт",
+    "icon": "minecraft:lapis_lazuli",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 170$(br)Щільність: 0.25$(br)Тип: Кластерна вена$(br)Y: -60 - 10$(br)Розмір: 50$(br2)Типи каменю: Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Лазурит, Содаліт, Смарагд, Кальцит$(br2)В основному використовується для рідинних фільтрів."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Лазурит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lazurite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Алюмінію, Кальцію, Натрію$(br)Формула: Al₆Si₆Ca₈Na₈"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Содаліт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sodalite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Алюмінію, Натрію$(br)Формула: Al₃Si₃Na₄Cl"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кальцит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/calcite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Кальцію$(br)Формула: CaCO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Смарагд",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lapis"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Лазуриту, Содаліту, Піриту, Кальциту"
+        }
+    ]
+}

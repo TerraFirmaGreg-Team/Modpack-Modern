@@ -1,0 +1,88 @@
+{
+    "name": "Топаз і Халькоцит",
+    "icon": "gtceu:topaz_gem",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 260$(br)Щільність: 0.3$(br)Тип: Дискова вена$(br)Y: -64 - 26$(br)Розмір: 28$(br2)Типи каменю: Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Топаз, Блакитний топаз, Халькоцит, Борніт"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Топаз",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/topaz"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Алюмінію, Фтору$(br)Формула: Al₂SiFH₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Блакитний топаз",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/blue_topaz"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Алюмінію, Фтору$(br)Формула: Al₂SiF₂H₂O₆"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Халькоцит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/chalcocite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Розплавляється в: Мідь$(br)Формула: Cu₂S"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Борніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bornite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Мідь$(br)Формула: Cu₅FeS₄"
+        }
+    ]
+}

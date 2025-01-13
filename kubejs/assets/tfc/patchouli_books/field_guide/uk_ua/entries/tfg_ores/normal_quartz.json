@@ -1,0 +1,88 @@
+{
+    "name": "Кварц",
+    "icon": "minecraft:quartz",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 150$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -32 - 100$(br)Розмір: 40$(br2)Типи каменю: Глинистий сланець, Кварцит, Аспідний сланець, Гнейс$(br2)Індикатор: Бутон Істинного Кварцу"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кварцит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/quartzite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 45%$(br)Формула: SiO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Поклади Істинного Кварцу",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/certus_quartz"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Використовується для: Applied Energistics 2$(br)Формула: SiO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кварц Нижнього Світу",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/nether_quartz"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 10%$(br)Використовується для: Applied Energistics 2$(br)Формула: SiO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Барит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/barite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Барію$(br)Формула: BaSO₂"
+        }
+    ]
+}

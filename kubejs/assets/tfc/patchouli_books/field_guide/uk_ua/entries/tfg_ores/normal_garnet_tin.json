@@ -1,0 +1,88 @@
+{
+    "name": "Гранат і Каситеритові піски",
+    "icon": "gtceu:raw_garnet_sand",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 360$(br)Щільність: 0.25$(br)Тип: Кластерна вена$(br)Y: -40 - 64$(br)Розмір: 40$(br2)Типи каменю: Всі$(br2)Індикатор: Каситерит"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Каситеритові піски",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cassiterite_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Розплавляється в: Олово$(br)Формула: SnO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гранатовий пісок",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/garnet_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Алмадін, Андрадит, Гросулар, Піроп, Спесартін, Уваровіт"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Азбест",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/asbestos"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Магнію, Рак легенів$(br)Формула: Mg₃Si₂H₄O₉$(br)Небезпечний: Так"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Діатомітн",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/diatomite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Заліза, Алюмінію$(br)Формула: (SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+        }
+    ]
+}

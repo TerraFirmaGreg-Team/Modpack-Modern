@@ -1,0 +1,69 @@
+{
+    "name": "Графіт і Діамант",
+    "icon": "minecraft:diamond",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 175$(br)Щільність: 0.35$(br)Тип: Трубна вена$(br)Y: -64 - 100$(br)Висота: 60$(br)Радіус: 12$(br2)Типи каменю: Габро$(br2)Індикатор: Діамант, Графіт, Вугілля$(br2)Не можеш знайти? Габро завжди залягає нижче $(thing)Базальту$(), і дамби з Габро в океанах теж можуть бути корисними!"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Графіт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/graphite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 45%$(br)Використовується для: $(l:mechanics/fire_clay)Вогнетривкової глини$(), Графену$(br)Формула: C"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Діамант",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/diamond"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Використовується для: Подрібнювачів, AE2$(br)Формула: C"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Вугілля",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/coal"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Використовується для: Ковальське паливо, Дистиляція$(br)Формула: C"
+        }
+    ]
+}
