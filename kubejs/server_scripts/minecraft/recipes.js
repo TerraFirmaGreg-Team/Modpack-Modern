@@ -2623,8 +2623,8 @@ const registerMinecraftRecipes = (event) => {
     event.remove({ id: 'minecraft:item_frame' })
 
     event.recipes.gtceu.assembler('item_frame')             
-        .itemInputs('8x #tfc:lumber', 'minecraft:leather')
-        .itemOutputs('8x minecraft:item_frame')
+        .itemInputs('8x #forge:rods/wooden', '#forge:leather')
+        .itemOutputs('minecraft:item_frame')
         .duration(100)
         .EUt(4)
 
@@ -3330,6 +3330,30 @@ const registerMinecraftRecipes = (event) => {
     	.itemInputs('minecraft:leather_chestplate')
     	.itemOutputs('minecraft:leather')
     	.EUt(7).duration(80)
+    //#endregion
+
+    //#region Подзорная труба
+    e.remove({ id: 'tfc:crafting/vanilla/spyglass' })
+
+    e.shaped('minecraft:spyglass', [
+        'hAs',
+        'BCD',
+        'fE '
+    ], {
+        A: '#tfg:all_glass_lenses',
+        B: '#forge:leather',
+        C: '#forge:rings/gold',
+        D: '#tfg:all_iron_screws',
+        E: '#forge:plates/copper',
+        h: '#forge:tools/hammers',
+        s: '#forge:tools/screwdrivers',
+        f: '#forge:tools/files',
+    }).id('tfg:workbench/spyglass')
+
+    e.recipes.gtceu.assembler('tfg:spyglass')             
+        .itemInputs('#tfg:all_glass_lenses', '#forge:rings/gold', '#forge:plates/copper', '#forge:leather')
+        .itemOutputs('minecraft:spyglass')
+        .EUt(4).duration(100)
     //#endregion
 	
 }
