@@ -2265,14 +2265,43 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Книга
 
-    event.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+    e.remove({ id: 'gtceu:shaped/book' })
+    e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+    e.remove({ id: 'gtceu:assembler/book_from_leather' })
+    e.remove({ id: 'minecraft:book' })
 
-    event.shapeless('minecraft:book', [
-        'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
-    ]).id('minecraft:book')
+    e.shaped('minecraft:book', [
+        'ABC',
+        'ABD',
+        'ABC'
+    ], {
+        A: '#forge:string',
+        B: 'minecraft:paper',
+        B: '#forge:paper',
+        C: '#forge:leather',
+        D: 'gtceu:sticky_resin'
+    }).id('tfg:shaped/book')
+
+    e.recipes.gtceu.assembler('tfg:assembler/book_from_leather')
+    	.itemInputs('3x #forge:paper', '#forge:leather')
+    	.itemOutputs('minecraft:book')
+    	.inputFluids(Fluid.of('gtceu:glue', 40))
+    	.EUt(7).duration(30)
 
     //#endregion
 
+    //#region Бирка
+	
+    e.remove({ id: 'gtceu:assembler/name_tag' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/name_tag')
+    	.itemInputs('minecraft:lead', '#forge:leather')
+    	.itemOutputs('minecraft:name_tag')
+    	.inputFluids(Fluid.of('gtceu:glue', 100))
+    	.EUt(7).duration(100)
+	
+    //#endregion
+	
     //#region Выход: Трибуна
 
     event.remove({ id: 'tfc:crafting/vanilla/lectern' })
