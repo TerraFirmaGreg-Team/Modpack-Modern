@@ -591,13 +591,24 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     // Парус ветряной мельницы
-    event.shaped('2x create:white_sail', [
-        'AB',
-        'BC' 
+
+    event.shaped('4x create:sail_frame',[
+        'ABA',
+        'BCB',
+        'ABA'
     ], {
-        A: '#minecraft:wool',
-        B: '#forge:rods/wooden',
-        C: '#forge:screws/wrought_iron'
+        A: '#forge:screws/wrought_iron',
+        B: '#tfc:lumber',
+        C: ''
+    }).id('tfg:create/shaped/sail_frame')
+
+    event.shaped('8x create:white_sail', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'create:sail_frame',
+        B: '#tfg:usable_in_sail_frame'
     }).id('tfg:create/shaped/white_sail')
 
     // Андезитовый корпус
