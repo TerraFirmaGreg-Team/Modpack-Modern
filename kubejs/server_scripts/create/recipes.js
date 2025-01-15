@@ -1037,7 +1037,7 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     // Деталь рельса
-    event.shaped('create:metal_girder', [
+    event.shaped('3x create:metal_girder', [
         'AAA',
         'BBB' 
     ], {
