@@ -1213,28 +1213,25 @@ const registerGTCEURecipes = (event) => {
     //#region Рецепты электрического генератора
 
     event.recipes.gtceu.alternator('lv_alternator')
+	    .inputStress(8192)
         .circuit(1)
         .rpm(256)
         .duration(2)
         .outputEU(128)
 
     event.recipes.gtceu.alternator('mv_alternator')
+		.inputStress(32768)
         .circuit(2)
         .rpm(256)
         .duration(2)
         .outputEU(512)
 
     event.recipes.gtceu.alternator('hv_alternator')
+		.inputStress(131072)
         .circuit(3)
         .rpm(256)
         .duration(2)
         .outputEU(2048)
-
-    event.recipes.gtceu.alternator('ev_alternator')
-        .circuit(4)
-        .rpm(256)
-        .duration(2)
-        .outputEU(8192)
     
     //#endregion
 
