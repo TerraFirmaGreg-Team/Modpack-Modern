@@ -50,6 +50,18 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    event.recipes.gtceu.macerator('flux')
+        .itemInputs('#tfc:fluxstone')
+        .itemOutputs('2x tfc:powder/flux')
+        .duration(30)
+        .EUt(2)
+
+    event.recipes.gtceu.forge_hammer('flux')
+        .itemInputs('#tfc:fluxstone')
+        .itemOutputs('2x tfc:powder/flux')
+        .duration(30)
+        .EUt(2)
+
     //#region Выход: Диоксид силикона
 
     event.recipes.gtceu.electrolyzer('sand_electrolysis')             
