@@ -588,8 +588,9 @@ const registerCreateRecipes = (event) => {
         .duration(200)
         .EUt(20)
 
-    // Парус ветряной мельницы
-    event.shaped('4x create:sail_frame',[
+    // Create sail creation using custom sail items.
+    
+    event.shaped('8x create:sail_frame',[
         'ABA',
         'BCB',
         'ABA'

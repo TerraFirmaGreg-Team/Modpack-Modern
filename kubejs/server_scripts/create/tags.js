@@ -15,8 +15,10 @@ const registerCreateItemTags = (event) => {
         if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
     })
 
+    // Add "cloth" items so sails can be created with any kind of cloth instead of wool blocks
     event.add('tfg:usable_in_sail_frame', 'tfc:burlap_cloth')
     event.add('tfg:usable_in_sail_frame', 'tfc:wool_cloth')
+    event.add('tfg:usable_in_sail_frame', "tfc:silk_cloth")
 }
 
 const registerCreateBlockTags = (event) => {
