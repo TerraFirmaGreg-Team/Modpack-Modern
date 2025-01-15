@@ -35,8 +35,6 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/deployer' },
         { id: 'create:crafting/kinetics/portable_storage_interface' },
         { id: 'create:crafting/kinetics/mechanical_roller' },
-        { id: 'create:crafting/kinetics/sail_framefrom_conversion' },
-        { id: 'create:crafting/kinetics/white_sailfrom_conversion' },
         { id: 'create:crafting/kinetics/sequenced_gearshift' },
         { id: 'create:crafting/kinetics/rotation_speed_controller' },
         { id: 'create:crafting/kinetics/track_signal' },
@@ -591,7 +589,6 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     // Парус ветряной мельницы
-
     event.shaped('4x create:sail_frame',[
         'ABA',
         'BCB',
@@ -610,6 +607,7 @@ const registerCreateRecipes = (event) => {
         A: 'create:sail_frame',
         B: '#tfg:usable_in_sail_frame'
     }).id('tfg:create/shaped/white_sail')
+
 
     // Андезитовый корпус
     event.recipes.createItemApplication(['create:andesite_casing'], ['#minecraft:logs', '#forge:plates/wrought_iron'])
