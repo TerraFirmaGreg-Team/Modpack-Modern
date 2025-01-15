@@ -14,6 +14,9 @@ const registerCreateItemTags = (event) => {
         
         if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
     })
+
+    event.add('tfg:usable_in_sail_frame', 'tfc:burlap_cloth')
+    event.add('tfg:usable_in_sail_frame', 'tfc:wool_cloth')
 }
 
 const registerCreateBlockTags = (event) => {
