@@ -1,0 +1,88 @@
+{
+    "name": "Мідь та Халькопірит",
+    "icon": "minecraft:raw_copper",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 170$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 75$(br)Розмір: 40$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит $(br2)Індикатор: Самородна Мідь"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Мідь",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/copper"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 65%$(br)Розплавляється в: Мідь$(br)Формула: Cu"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Халькопирит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/chalcopyrite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Розплавляється в: Мідь$(br)Формула: CuFeS₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Залізо",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/iron"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 5%$(br)Розплавляється в: Чавун$(br)Формула: Fe"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Пірит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pyrite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 10%$(br)Розплавляється в: Чавун$(br)Формула: FeS₂"
+        }
+    ]
+}

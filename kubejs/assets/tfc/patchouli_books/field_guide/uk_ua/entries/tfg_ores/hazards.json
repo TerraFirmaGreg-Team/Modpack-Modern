@@ -1,0 +1,71 @@
+{
+	"name": "Робота з Небезпеками",
+	"icon": "gtceu:hazmat_headpiece",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Деякі руди небезпечні! Якщо вони є у вашому інвентарі, то завдають постійної шкоди від отрути.$(br2)У нас тут повний $(thing)захисний костюм$(), але це ще не все. $(thing)MV$(), то що ви можете зробити замість цього?$(br2)Ось кілька порад, поки TFG не зможе оновитися до новішої версії GregTech, яка надає власне примітивне обладнання для захисту."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Пізніше, якщо ви захочете переміщати небезпечні матеріали, ви можете перевантажити їх з невеликих ємностей у скрині та посудини за допомогою $(thing)ПКМ$() на посудині. Таким чином, він ніколи не потрапить до вашого інвентарю!$(br2)Нарешті, якщо вам не подобаються небезпеки, ви можете вимкнути їх у налаштуваннях GregTech."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Каміння",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"text": "Найпростіший спосіб запобігти потраплянню небезпечних предметів до вашого інвентарю - не брати їх взагалі.$(br)Поповнення вашого інвентарю $(thing)Камінням$(), наприклад, дозволить вам вибрати, які предмети ви хочете забрати, а з небезпечними ви зможете розібратися пізніше."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Контейнери",
+			"text": "Як уже згадувалося, небезпечні матеріали завдають шкоди лише тоді, коли вони знаходяться у вашому $(thing)інвентарі$(), але це не стосується інших контейнерів!$(br)Небезпечні матеріали не завдадуть шкоди, якщо вони знаходяться в іншому контейнері, наприклад, в $(l:mechanics/crankshaft)Рюкзаку$() або $(l:getting_started/pottery#vessel)Пусудині$().",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Обладунок",
+			"text": "Краща броня зменшить шкоду від небезпечних матеріалів.",
+			"item": {
+				"tag": "minecraft:trimmable_armor"
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Джерельна вода",
+			"item": "tfc:bucket/spring_water",
+			"text": "Стоячи у $(thing)Джерельній воді$() забезпечить повільний $(thing)Регенеративний$() ефект."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Витриманий алкоголь",
+			"text": "$(thing)Витриманий алкоголь$() дасть бафи зілля, деякі з яких можуть стати вам у пригоді.$(br2)Ви можете пити їх з $(l:getting_started/pottery#jug)Глечика$() або $(l:waterflasks/recipes)Фляг$().",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Витримане Пиво: Абсорбція II (20:00)$(br2)Витриманий Сидр: Швидкість (5:20)$(br2)Витриманий Ром: Швидкість II (2:40)$(br2)Витримане Саке: Опір (5:20)$(br2)Витримана Горілка: Опір II (2:40)$(br2)Витриманий Кукурудзяний Віскі: Поспіх (5:20)$(br2)Витриманий Житній Віскі: Поспіх (5:20)$(br2)Витриманий Віскі: Поспіх II (2:40)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"tag": "tfc:foods"
+			},
+			"title": "Харчування",
+			"text": "Їсти кращу їжу з більшою кількістю $(l:getting_started/food_and_water#nutrients)поживностей$() підвищить ваш максимальний рівень здоров'я на значну кількість одиниць.$(br2)$(l:mechanics/pot#soup)Супи$(), $(l:mechanics/sandwiches)Бутерброди$(), та $(l:mechanics/salad)Салати$() чудово підходять для цього."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Ліжко",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"text": "Якщо нічого іншого не допомагає, варто взяти з собою ліжко для відродження.$(br2)Якщо у вас немає доступу до $(thing)Вовни$() або $(thing)Палиць$(), Ви також можете зробити $(l:getting_started/a_place_to_sleep)Настил$()."
+		}
+	]
+}

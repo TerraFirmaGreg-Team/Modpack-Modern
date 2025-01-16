@@ -1,0 +1,88 @@
+{
+    "name": "Мінеральні піски",
+    "icon": "gtceu:raw_basaltic_mineral_sand",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 160$(br)Щільність: 0.3$(br)Тип: Дискова вена$(br)Y: -32 - 60$(br)Розмір: 48$(br)Висота: 9$(br2)Типи каменю: Граніт, Базальт$(br2)Індикатор: Базальтовий та гранітний мінеральний пісок, Земля Фуллера, Гіпс"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Базальтовий мінеральний пісок",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/basaltic_mineral_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Розплавляється в: Чугун$(br)Формула: (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гранітний мінеральний пісок",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/granitic_mineral_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Розплавляється в: Чугун$(br)Формула: (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Земля Фуллера",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/fullers_earth"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Магнезії$(br)Формула: MgSi₄H(H₂O)₄O₁₁"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гіпс",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/gypsum"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Використовується для: Алебастрової (фарбованої) цегли$(br)Формула: CaS(H₂O)₂O₄"
+        }
+    ]
+}
