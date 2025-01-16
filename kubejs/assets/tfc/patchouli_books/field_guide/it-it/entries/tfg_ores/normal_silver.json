@@ -1,0 +1,69 @@
+{
+    "name": "Silver, Galena, & Lead",
+    "icon": "gtceu:raw_silver",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 160$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 75$(br)Size: 40$(br2)Stone types: Granite, Gneiss$(br2)Indicator: Native Silver"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Galena",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/galena"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 30%$(br)Smelts into: Lead$(br)Formula: PbS$(br)Hazardous: Yes"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Silver",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/silver"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Melts into: Silver$(br)Formula: Ag"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Lead",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lead"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 55%$(br)Smelts into: Lead$(br)Formula: Pb$(br)Hazardous: Yes"
+        }
+    ]
+}

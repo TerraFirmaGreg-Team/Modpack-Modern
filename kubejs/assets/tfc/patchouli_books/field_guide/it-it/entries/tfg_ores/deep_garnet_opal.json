@@ -1,0 +1,88 @@
+{
+    "name": "Opal & Garnet",
+    "icon": "gtceu:opal_gem",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 220$(br)Density: 0.35$(br)Type: Disc Vein$(br)Y: -64 - 62$(br)Size: 26$(br)Height: 6$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite, Granite, Diorite, Gabbro$(br2)Indicator: Amethyst Bud"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Opal",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/opal"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 55%$(br)Formula: (SiO₂)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Amethyst",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/amethyst"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Iron$(br)Formula: (SiO₂)₄Fe"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Red Garnet",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/red_garnet"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 5%$(br)Source of: Pyrope, Almandine, Spessartine"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Yellow Garnet",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/yellow_garnet"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Andradite, Grossular, Uvarovite"
+        }
+    ]
+}

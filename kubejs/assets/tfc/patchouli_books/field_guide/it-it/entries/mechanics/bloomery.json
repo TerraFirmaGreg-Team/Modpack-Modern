@@ -1,0 +1,80 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Fucina",
+  "category": "tfc:mechanics",
+  "icon": "tfc:bloomery",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "La $(thing)Fucina$() è un dispositivo usato per fondere del$(thing)Minerale di Ferro$() in $(thing)Blumi di Ferro$() che possono essere forgiati in $(thing)Ferro Battuto$(). \nI minerali di ferro sono : $(l:the_world/ores_and_minerals#hematite)Hematite$(), $(l:the_world/ores_and_minerals#limonite)Limonite$(), e $(l:the_world/ores_and_minerals#magnetite)Magnetite$(). Quasti minerali possono essere fusi per creare $(thing)Ghisa$() al posto di $(thing)Ferro Battuto$(). Tutti gli oggetti contenenti ferro, se fusi, daranno Ghisa. Per farli diventare ferro usabile, c'è bisogno della fucina. Ogni oggetto in ferro piò essere usato nella fucina, inclusi attrezzi e lingotti di Ghisa!$(thing)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/bloomery",
+      "text": "La fucina si crea con 8 $(thing)Doppie Piaste di Bronzo$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock_id": "tfc:bloomery",
+      "name": "Una Fucina",
+      "text": "Una Fucina di grandezza minima. Il blocco della fucina si può aprire e chiudere con $(item)$(k:key.use)$().",
+      "enable_visualize": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "La fucina può contenere un massimo di 48 $(thing)Input$(), con 16 item per strato della ciminiera. Per aggiungere strati alla ciminiera, piazza altri 2 strati di blocchi di pietra.$(br2)Per aggiungere oggetti alla fucina, arrampicati su di essa e lancia gli oggetti al suo interno. Una pila di minerale grigio dovrebbe comparire."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tfc:textures/gui/book/tutorial/bloomery_hole.png"
+      ],
+      "text": "Aggiungere oggetti alla fucina.",
+      "border": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Aggiungere oggetti alla fucina."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [
+            "X"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "mapping": {
+          "X": "tfc:bloom[layers=8]"
+        }
+      },
+      "name": "Blocco di Blumi",
+      "text": "Un grande $(thing)Blumo$().",
+      "enable_visualize": false
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/refined_iron_bloom",
+      "text": "Un $(thing)Blumo di Ferro Grezzo$() deve essere forgiato in una $(l:mechanics/anvils)incudine$() per creare  un $(thing)Blumo di Ferro Raffinato$()."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/metal/ingot/wrought_iron",
+      "text": "Un $(thing)Blumi di Ferro Raffinato$()  deve essere forgiato in una $(l:mechanics/anvils)incudine$() per creare $(thing)Ferro Battuto$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Se la fucina si ritrova con più oggetti di quanti ne può contenere in base alla sua ciminiera, li sputerà fuori dal davanti.$()$(li)Per riprendere i tuoi oggetti da una fucina che non è accesa, non rompere i blocchi al suo interno. Rompi il blocco principale della fucina.$()$(li)I blumi si fondono solo in ghisa e non in ferro battuto. Devono essere lavorati!$()",
+      "title": "Note del Fabbro"
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:bloom": 6,
+    "tfc:raw_iron_bloom": 7,
+    "tfc:refined_iron_bloom": 8
+  }
+}
