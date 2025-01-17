@@ -4,6 +4,29 @@
 ### Changes
 - Added ore index, started work on other TFC info category (Pyritie).
 - Changed the AE2 network analyzer to HV instead of IV (Pyritie).
+- Fixed a typo in salt water boiling recipe's temperature for small salt pile - 1000 > 100 (8oyNextDoor).
+- Fix sprinklers + fix bread and yeast starter recipe conflict (Pyritie).
+- Added recipes for create glass, more windows, fixed tinted glass recipe conflict (Pyritie).
+- Added missing recipe for nether brick (Pyritie).
+- Added armor trims (Pyritie).
+- Add blast furnace tips entry (CaptainGold1).
+- Allows stick bundles to be used in the coke oven (CaptainGold1).
+- Allows all colors of glass to be macerated/hammered to dust (CaptainGold1).
+- Add alternate papermaking quests using treated hide (CaptainGold1).
+- Fix dupes via recycling firmaciv items (Egogorka).
+- Create fluxstone recipes in macerator and forge hammer (KorGgenT).
+- Fixes fertilizer recipe and modifies some mixer recipes relating to dirt (CaptainGold1).
+- Changed train tracks to be cheaper (Pyritie).
+- Create Sails: Recipe Improvements (Nebby1999)
+### New mods
+- Inventory Tweaks Refoxed 1.1
+- EveryCompat
+- MemoryLeakFix
+### Updated mods
+- FirmaLife ? -> 2.1.15
+- Moonlight ? -> ?
+### Removed mods
+- Inventory Sorter
 
 ## [0.7.16] - 12.01.2025
 ### Changes

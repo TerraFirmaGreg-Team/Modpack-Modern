@@ -54,6 +54,9 @@ const registerTFCItemTags = (event) => {
         event.add('minecraft:logs_that_burn', `#tfc:${woodType}_logs`)
     })
 
+    // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
+    event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
+
     // Определеяет какое оружие может появиться у зомбя/скелета в руках
     // Мечи
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_sword')
