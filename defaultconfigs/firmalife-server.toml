@@ -1,0 +1,6 @@
+
+[general]
+	#If true, the tumbler and the pumping station work magically with a redstone signal and no power required.
+	mechanicalPowerCheatMode = true
+	#If true, sprinkler will not accept firmalife pipes and will instead require something that exposes a fluid capability, eg. a barrel.
+	usePipesForSprinklers = false
