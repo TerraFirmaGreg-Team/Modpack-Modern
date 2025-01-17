@@ -11,6 +11,7 @@ ServerEvents.tags('item', event => {
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
+    registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
@@ -23,6 +24,7 @@ ServerEvents.tags('item', event => {
     registerHotOrNotItemTags(event)
     registerRailWaysItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
+    registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
 })
 
@@ -119,6 +121,7 @@ ServerEvents.recipes(event => {
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
     registerCreateConnectedRecipes(event)
+    registerEveryCompatRecipes(event)
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
     registerEtchedRecipes(event)

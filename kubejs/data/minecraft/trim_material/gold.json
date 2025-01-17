@@ -1,0 +1,9 @@
+{
+    "asset_name": "gold_tfc",
+    "description": {
+        "color": "#DEB12D",
+        "translate": "trim_material.tfc.gold"
+    },
+    "ingredient": "minecraft:gold_ingot",
+    "item_model_index": 0.9
+}
