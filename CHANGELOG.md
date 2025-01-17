@@ -21,6 +21,7 @@
 ### New mods
 - Inventory Tweaks Refoxed 1.1
 - EveryCompat
+- MemoryLeakFix
 ### Updated mods
 - FirmaLife ? -> 2.1.15
 - Moonlight ? -> ?
