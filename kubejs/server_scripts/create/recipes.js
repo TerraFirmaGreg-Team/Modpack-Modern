@@ -1047,7 +1047,7 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     // Деталь рельса
-    event.shaped('create:metal_girder', [
+    event.shaped('3x create:metal_girder', [
         'AAA',
         'BBB' 
     ], {
@@ -1227,4 +1227,96 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     //#endregion
+
+    // #region So-called "Shit Glass"
+	
+	event.shaped('4x create:framed_glass',
+	[
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/framed_glass')
+	
+	event.shaped('4x create:tiled_glass',
+	[
+		'A A',
+		'   ',
+		'A A'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/tiled_glass')
+	
+	event.shaped('4x create:horizontal_framed_glass',
+	[
+		'AA',
+		'  ',
+		'AA'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/horizontal_framed_glass')
+	
+	event.shaped('4x create:vertical_framed_glass',
+	[
+		'A A',
+		'A A'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/vertical_framed_glass')
+	
+	const CREATE_FRAMED_GLASS_WINDOWS =
+	[
+		'framed_glass',
+		'tiled_glass',
+		'horizontal_framed_glass',
+		'vertical_framed_glass'
+	]
+	
+	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
+		event.shapeless(`2x create:${x}_pane`,
+		[ 
+			`create:${x}`,
+			'#forge:tools/saws'
+		])
+		.id(`tfg:create/shapeless/${x}_pane`)
+		
+		event.recipes.gtceu.cutter(`tfg:create/${x}_pane`)
+			.itemInputs(`3x create:${x}`)
+			.itemOutputs(`8x create:${x}_pane`)
+			.duration(40)
+			.EUt(20)
+	})
+
+	const CREATE_OTHER_GLASS_WINDOWS =
+	[
+		[ 'dark_oak', 'tfc:wood/lumber/hickory' ],
+		[ 'mangrove', 'tfc:wood/lumber/mangrove' ],
+		[ 'ornate_iron', 'gtceu:wrought_iron_rod' ]
+	]
+	
+	CREATE_OTHER_GLASS_WINDOWS.forEach(x => {
+		event.shaped(`2x create:${x[0]}_window`,
+		[
+			' B ',
+			'BAB'
+		], {
+			A: 'minecraft:glass',
+			B: x[1]
+		}).id(`tfg:create/shaped/${x[0]}_window`)
+		
+		event.shapeless(`2x create:${x[0]}_window_pane`,
+		[ 
+			`create:${x[0]}_window`, 
+			'#forge:tools/saws' 
+		])
+		.id(`tfg:create/shapeless/${x[0]}_window_pane`)
+		
+		event.recipes.gtceu.cutter(`tfg:create/${x[0]}_window_pane`)
+			.itemInputs(`3x create:${x[0]}_window`)
+			.itemOutputs(`8x create:${x[0]}_window_pane`)
+			.duration(40)
+			.EUt(20)
+	})
+	
+	// #endregion
 }

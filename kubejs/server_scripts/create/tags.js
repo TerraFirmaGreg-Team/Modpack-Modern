@@ -19,6 +19,10 @@ const registerCreateItemTags = (event) => {
     event.add('tfg:usable_in_sail_frame', 'tfc:burlap_cloth')
     event.add('tfg:usable_in_sail_frame', 'tfc:wool_cloth')
     event.add('tfg:usable_in_sail_frame', "tfc:silk_cloth")
+
+    event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
+    event.add('minecraft:trimmable_armor', 'create:copper_diving_boots')
+
 }
 
 const registerCreateBlockTags = (event) => {

@@ -33,8 +33,7 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:metal/block/stainless_steel_slab',
 
     // Other
-    'firmalife:compost_tumbler', 
-    'firmalife:pumping_station'
+    'firmalife:compost_tumbler'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [
