@@ -6,6 +6,8 @@ const registerFirmaLifeRecipes = (event) => {
 
     event.remove({ id: 'firmalife:crafting/compost_tumbler' })
     event.remove({ id: 'firmalife:crafting/pumping_station' })
+    event.remove({ id: 'firmalife:crafting/pumping_station2' })
+    event.remove({ id: 'firmalife:crafting/pumping_station3' })
 
     // - Chromium
     
