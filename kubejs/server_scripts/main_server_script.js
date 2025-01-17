@@ -10,6 +10,7 @@ ServerEvents.tags('item', event => {
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
+    registerCreateConnectedItemTags(event)
     registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
