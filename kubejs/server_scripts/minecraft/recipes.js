@@ -2206,9 +2206,8 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Тонированное стекло
 
-    event.recipes.gtceu.chemical_bath('tfg:minecraft/tinted_glass')             
-        .itemInputs('minecraft:glass')
-        .inputFluids(Fluid.of('gtceu:black_dye', 144))
+    event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
+        .itemInputs('minecraft:glass', 'tfc:powder/amethyst')
         .itemOutputs('minecraft:tinted_glass')
         .duration(260)
         .EUt(16)
