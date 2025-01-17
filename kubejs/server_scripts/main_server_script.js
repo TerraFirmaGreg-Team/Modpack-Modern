@@ -23,6 +23,7 @@ ServerEvents.tags('item', event => {
     registerHotOrNotItemTags(event)
     registerRailWaysItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
+    registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
 })
 

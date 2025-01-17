@@ -2336,27 +2336,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Шаблоны брони
-
-    event.remove({id: 'minecraft:wild_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:wayfinder_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:ward_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:vex_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:tide_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:spire_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:snout_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:silence_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:shaper_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:sentry_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:rib_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:raiser_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:host_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:eye_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:dune_armor_trim_smithing_template_smithing_trim'})
-    event.remove({id: 'minecraft:coast_armor_trim_smithing_template_smithing_trim'})
-
-    //#endregion
-
     //#region Кольчуга
     
     event.remove({id: 'gtceu:shaped/chainmail_boots'})
@@ -2502,28 +2481,6 @@ const registerMinecraftRecipes = (event) => {
     event.remove({id: 'minecraft:netherite_axe_smithing'})
     event.remove({id: 'minecraft:netherite_shovel_smithing'})
     event.remove({id: 'minecraft:netherite_hoe_smithing'})
-
-    //#endregion
-
-    //#region Выход: Шаблоны брони
-
-    event.remove({ id: 'minecraft:coast_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:vex_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:host_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:rib_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:spire_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:tide_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:eye_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:raiser_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:wild_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:shaper_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:snout_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:dune_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:netherite_upgrade_smithing_template' })
-    event.remove({ id: 'minecraft:wayfinder_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:ward_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:silence_armor_trim_smithing_template' })
-    event.remove({ id: 'minecraft:sentry_armor_trim_smithing_template' })
 
     //#endregion
 

@@ -14,6 +14,9 @@ const registerCreateItemTags = (event) => {
         
         if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
     })
+
+    event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
+    event.add('minecraft:trimmable_armor', 'create:copper_diving_boots')
 }
 
 const registerCreateBlockTags = (event) => {
