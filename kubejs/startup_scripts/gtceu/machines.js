@@ -55,7 +55,7 @@ const registerGTCEuMachines = (event) => {
           .where('A', controller, Direction.SOUTH)
           .where('C', GTBlocks.CASING_STEEL_SOLID.get())
           .where(' ', Block.getBlock('minecraft:air'))
-          .where('W', Block.getBlock('tfg:copper_coil_block'))
+          .where('W', GTBlocks.COIL_CUPRONICKEL.get())
           .where('k', Block.getBlock('gtceu:lv_kinetic_input_box'))
           .where('e', GTMachines.ENERGY_OUTPUT_HATCH[GTValues.LV], Direction.SOUTH)
           .where('i', GTMachines.ITEM_IMPORT_BUS[GTValues.LV], Direction.SOUTH)
