@@ -40,7 +40,7 @@ const registerGTCEuMachines = (event) => {
             .aisle("WWW", "W#W", "WWW")
             .aisle("CAC", "CEC", "#C#")
             .where('A', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('W', Predicates.blocks('tfg:copper_coil_block'))
+            .where('W', Predicates.blocks(GTBlocks.COIL_CUPRONICKEL.get()))
             .where("C", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setExactLimit(1)))
             .where('#', Predicates.any())
