@@ -5,6 +5,7 @@
  */
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
+    registerTFGItems(event)
 })
 
 /**
@@ -46,6 +47,11 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
  */
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     registerGTCEuMachines(event)
+})
+
+GTCEuStartupEvents.registry('gtceu:material', event =>
+{
+    registerTFGMaterials(event)
 })
 
 /**
