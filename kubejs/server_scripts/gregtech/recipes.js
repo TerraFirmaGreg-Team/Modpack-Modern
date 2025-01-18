@@ -1870,4 +1870,46 @@ const registerGTCEURecipes = (event) => {
         "#forge:glass"
     );
     // #endregion
+
+    // #region Rich coal processing
+    event.recipes.gtceu.coke_oven("tfg:rich_coal_to_coke")
+        .itemInputs('gtceu:rich_raw_coal')
+        .itemOutputs('4x gtceu:coke_gem')
+        .outputFluids(Fluid.of('gtceu:creosote', 2000))
+        .duration(3240)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
+        .itemInputs('3x gtceu:rich_raw_coal')
+        .chancedOutput('gtceu:dark_ash_dust', 5000, 0)
+        .outputFluids(Fluid.of('gtceu:coal_tar', 3000))
+        .duration(288)
+        .EUt(96)
+        .circuit(8)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_coke_creosote")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .outputFluids(Fluid.of('gtceu:creosote', 8000))
+        .duration(576)
+        .EUt(64)
+        .circuit(1)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coal_gas")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:steam'))
+        .outputFluids(Fluid.of('gtceu:coal_gas', 4000))
+        .duration(288)
+        .EUt(96)
+        .circuit(22)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coke_creosote_nitrogen")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:nitrogen'))
+        .outputFluids(Fluid.of('gtceu:creosote', 8000))
+        .duration(288)
+        .EUt(96)
+        .circuit(2)
+    // #endregion
 }
