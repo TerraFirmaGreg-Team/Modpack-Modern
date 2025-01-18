@@ -54,7 +54,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 // TFGStartupEvents.materialInfo(event => {
 //     registerGTCEuMaterialInfo(event)
 // })
-
-GTCEuStartupEvents.materialModification(event => {
-        GTMaterials.BismuthBronze.setMaterialARGB(0x8CDCB6) //цвет ближе к ТФКшному
-    })
