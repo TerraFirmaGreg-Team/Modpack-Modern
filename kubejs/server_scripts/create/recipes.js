@@ -1227,6 +1227,20 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     //#endregion
+  
+    //#region Blaze burner
+	
+    event.shaped('create:blaze_burner', [
+        'B B',
+        'BAB',
+        'CCC' 
+    ], {
+        A: 'minecraft:coal_block',
+        B: 'tfc:metal/bars/blue_steel',
+		C: 'gtceu:blue_steel_plate',
+    }).id('tfg:create/shaped/blaze_burner')
+	
+	//#endregion
 
     // #region So-called "Shit Glass"
 	
