@@ -33,6 +33,16 @@ const registerFirmaCivRecipes = (event) => {
     event.recipes.tfc.heating('firmaciv:unfinished_nav_clock', 930)
         .resultFluid(Fluid.of('gtceu:brass', 288))
         .id(`firmaciv:heating/unfinished_nav_clock`)
+
+    event.replaceOutput( // This problem would come each time there's a double-plate recipe in an anvil. Dunno how to fix it other than that.
+        'gtceu:arc_furnace/arc_unfinished_nav_clock',
+        'gtceu:brass_ingot',
+        '2x gtceu:brass_ingot')     
+    
+    event.replaceOutput(
+        'gtceu:macerator/macerate_unfinished_nav_clock',
+        'gtceu:brass_dust',
+        '2x gtceu:brass_dust')
     //#endregion
 
     //#region Navigator Timepiece
@@ -114,6 +124,16 @@ const registerFirmaCivRecipes = (event) => {
     event.recipes.tfc.heating('firmaciv:anchor', 1535)
         .resultFluid(Fluid.of('gtceu:steel', 288))
         .id(`firmaciv:heating/anchor`)
+
+    event.replaceOutput( 
+        'gtceu:arc_furnace/arc_anchor',
+        'gtceu:steel_ingot',
+        '2x gtceu:steel_ingot')     
+    
+    event.replaceOutput(
+        'gtceu:macerator/macerate_anchor',
+        'gtceu:steel_dust',
+        '2x gtceu:steel_dust')
     //#endregion
 
     //#region Cannon Barrel
@@ -140,6 +160,16 @@ const registerFirmaCivRecipes = (event) => {
     event.recipes.tfc.heating('firmaciv:cannonball', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
         .id(`firmaciv:heating/cannonball`)
+
+    event.replaceOutput(
+        'gtceu:arc_furnace/arc_cannon_barrel',
+        'gtceu:wrought_iron_ingot',
+        '2x gtceu:wrought_iron_ingot')     
+        
+    event.replaceOutput(
+        'gtceu:macerator/macerate_cannon_barrel',
+        'gtceu:iron_dust',
+        '2x gtceu:iron_dust')
     //#endregion
 
     //#region Cannon

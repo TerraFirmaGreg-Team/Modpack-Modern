@@ -1,0 +1,47 @@
+{
+	"name": "Frequently Asked Questions",
+	"icon": "minecraft:spyglass",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"priority": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "FAQs",
+			"text": "Stuck on something? Try looking through this book first and in the quests, but if you're still stumped, you can ask on our $(l:https://discord.com/invite/AEaCzCTUwQ)Discord$() or $(l:https://www.reddit.com/r/TerraFirmaGreg)Subreddit$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:tfg_tips/faqs#boats)Why did my boat sink?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make yeast starter?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make pineapple fiber?$()$(li)$(l:tfg_tips/faqs#jam)How do I make jam?$()$(li)$(l:tfg_tips/faqs#resin)How do I make Sticky Resin?$()$(li)$(l:tfg_tips/faqs#chunks)How do I force-load a chunk or increase my limit?$()"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boats",
+			"text": "$(italic)Why did my boat sink?$()$(br2)Build your boat on land, then push it or use a $(item)Lead$() to launch it. If it's already sunk, too bad, make another one."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dried_fruit",
+			"text": "$(italic)How do I make yeast starter or pineapple fiber?$()$(br2)Make sure you dry the fruit first using a $(item)Drying Mat$(). Then follow the rest of the steps for $(l:firmalife/bread)bread$() or $(l:firmalife/berry_bushes)pineapple leather$()."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jam",
+			"text": "$(italic)How do I make jam?$()$(br2)It's easiest with a $(l:firmalife/oven_appliances#vat)Vat$(). Follow the steps in that section, but you don't need to make a $(thing)Jarring Station$() or $(thing)Lids$() unless you want to automate it. Just right-click the Vat of $(thing)Fruity Fluid$() with an empty jar, then right-click it again to take it out, and it should be full of jam and sealed.$(br2)Make sure you $(bold)close the lid$() on the Vat with $(item)$(k:sneak)$() + $(item)$(k:use)$()!"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chunks",
+			"text": "$(italic)How do I force-load a chunk?$()$(br2)Open your map with $(item)$(k:gui.xaero_open_map)$(), then right-click the chunk > $(thing)Claim Selected$(). Right-click a claimed chunk again > $(thing)Forceload Selected$().$(br2)To increase the number of forceloaded chunks, press $(item)$(k:gui.xaero_pac_key_open_menu)$(), then go to the player settings and increase the number of bonus chunk forceloads."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "resin",
+			"text": "$(italic)How do I make sticky resin?$()$(br2)First, grow some $(thing)Kapok$() trees and make some $(thing)Tree Taps$(). Place a tree tap on the main trunk of each kapok tree (more taps on a tree just splits the output). Right-click each tree tap with an empty $(thing)Wooden Bucket$(), then wait for the correct season (Feb-Oct, excluding July). When the bucket is full, $(item)$(k:use)$() it with an $(thing)empty hand$(). You can automate this with a $(l:mechanics/pumps)Mechanical Pump$() on the bucket, if you'd like."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "It's quickest to cook your latex in a $(l:firmalife/oven_appliances#vat)Vat$(). Combine your latex with $(item)Sulfur$() dust in the vat (put the GregTech one in a Quern to get the TFC one), add heat, and $(bold)close the lid$() on the Vat with $(item)$(k:sneak)$() + $(item)$(k:use)$().$(br2)You can automate this later with the $(thing)LV Centrifuge$()."
+		}
+	]
+}

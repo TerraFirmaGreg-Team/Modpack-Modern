@@ -1,0 +1,69 @@
+{
+    "name": "Bismuth (Normal)",
+    "icon": "gtceu:raw_bismuth",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 170$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 75$(br)Size: 40$(br2)Stone types: Granite, Diorite, Gabbro, Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Bismuthinite$(br2)Only used for Bismuth Bronze."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Bismuth",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bismuth"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 80%$(br)Melts into: Bismuth$(br)Formula: Bi"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Sulfur",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sulfur"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 9%$(br)Formula: S"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Lead",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lead"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 11%$(br)Smelts into: Lead$(br)Formula: Pb$(br)Hazardous: Yes"
+        }
+    ]
+}

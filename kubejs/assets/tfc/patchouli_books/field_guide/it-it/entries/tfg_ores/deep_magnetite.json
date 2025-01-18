@@ -1,0 +1,107 @@
+{
+    "name": "Chromite & Magnetite",
+    "icon": "gtceu:rich_raw_chromite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 205$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -64 - 30$(br)Size: 340$(br2)Stone types: Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Magnetite, Native Gold, Chromite, Sapphire"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Chromite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/chromite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 60%$(br)Source of: Chromium$(br)Formula: FeCr₂O₄"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Magnetite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/magnetite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 5%$(br)Melts into: Cast Iron$(br)Formula: Fe₃O₄"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Vanadium Magnetite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/vanadium_magnetite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Iron, Vanadium$(br)Formula: (Fe₃O₄)V"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Gold",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/gold"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Melts into: Gold$(br)Formula: Au"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Sapphire",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sapphire"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 5%$(br)Source of: Aluminium$(br)Formula: Al₂O₃"
+        }
+    ]
+}

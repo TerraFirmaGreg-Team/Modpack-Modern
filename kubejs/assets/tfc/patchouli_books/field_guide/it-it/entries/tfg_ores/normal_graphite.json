@@ -1,0 +1,69 @@
+{
+    "name": "Graphite & Diamond",
+    "icon": "minecraft:diamond",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 175$(br)Density: 0.35$(br)Type: Pipe Vein$(br)Y: -64 - 100$(br)Height: 60$(br)Radius: 12$(br2)Stone types: Gabbro$(br2)Indicator: Diamond, Graphite, Coal$(br2)Can't find it? Gabbro always spawns below $(thing)Basalt$(), and Gabbro dikes in oceans can be useful too!"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Graphite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/graphite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 45%$(br)Used for: $(l:mechanics/fire_clay)Fire Clay$(), Graphene$(br)Formula: C"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Diamond",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/diamond"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Used for: Macerators, AE2$(br)Formula: C"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Coal",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/coal"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 30%$(br)Used for: Forge fuel, Distillation$(br)Formula: C"
+        }
+    ]
+}

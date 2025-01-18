@@ -53,3 +53,21 @@ global.GTCEU_HIDED_ITEMS = [
     'gtceu:small_netherrack_dust', 
     'gtceu:tiny_netherrack_dust'
 ];
+
+global.GTCEU_ARMORS = [
+	'gtceu:hazmat_chestpiece',
+	'gtceu:hazmat_leggings',
+	'gtceu:hazmat_boots',
+	'gtceu:hazmat_headpiece',
+	'gtceu:nanomuscle_chestplate',
+	'gtceu:nanomuscle_leggings',
+	'gtceu:nanomuscle_boots',
+	'gtceu:nanomuscle_helmet',
+	// typo in gtceu
+	'gtceu:avanced_nanomuscle_chestplate',
+	'gtceu:quarktech_chestplate',
+	'gtceu:quarktech_leggings',
+	'gtceu:quarktech_boots',
+	'gtceu:quarktech_helmet',
+	'gtceu:advanced_quarktech_chestplate'
+];

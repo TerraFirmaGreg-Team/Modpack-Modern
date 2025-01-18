@@ -35,8 +35,6 @@ const registerCreateRecipes = (event) => {
         { id: 'create:crafting/kinetics/deployer' },
         { id: 'create:crafting/kinetics/portable_storage_interface' },
         { id: 'create:crafting/kinetics/mechanical_roller' },
-        { id: 'create:crafting/kinetics/sail_framefrom_conversion' },
-        { id: 'create:crafting/kinetics/white_sailfrom_conversion' },
         { id: 'create:crafting/kinetics/sequenced_gearshift' },
         { id: 'create:crafting/kinetics/rotation_speed_controller' },
         { id: 'create:crafting/kinetics/track_signal' },
@@ -590,15 +588,27 @@ const registerCreateRecipes = (event) => {
         .duration(200)
         .EUt(20)
 
-    // Парус ветряной мельницы
-    event.shaped('2x create:white_sail', [
-        'AB',
-        'BC' 
+    // Create sail creation using custom sail items.
+    
+    event.shaped('8x create:sail_frame',[
+        'ABA',
+        'BCB',
+        'ABA'
     ], {
-        A: '#minecraft:wool',
-        B: '#forge:rods/wooden',
-        C: '#forge:screws/wrought_iron'
+        A: '#forge:screws/wrought_iron',
+        B: '#tfc:lumber',
+        C: ''
+    }).id('tfg:create/shaped/sail_frame')
+
+    event.shaped('8x create:white_sail', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'create:sail_frame',
+        B: '#tfg:usable_in_sail_frame'
     }).id('tfg:create/shaped/white_sail')
+
 
     // Андезитовый корпус
     event.recipes.createItemApplication(['create:andesite_casing'], ['#minecraft:logs', '#forge:plates/wrought_iron'])
@@ -1037,7 +1047,7 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     // Деталь рельса
-    event.shaped('create:metal_girder', [
+    event.shaped('3x create:metal_girder', [
         'AAA',
         'BBB' 
     ], {
@@ -1217,4 +1227,110 @@ const registerCreateRecipes = (event) => {
         .EUt(20)
 
     //#endregion
+  
+    //#region Blaze burner
+	
+    event.shaped('create:blaze_burner', [
+        'B B',
+        'BAB',
+        'CCC' 
+    ], {
+        A: 'minecraft:coal_block',
+        B: 'tfc:metal/bars/blue_steel',
+		C: 'gtceu:blue_steel_plate',
+    }).id('tfg:create/shaped/blaze_burner')
+	
+	//#endregion
+
+    // #region So-called "Shit Glass"
+	
+	event.shaped('4x create:framed_glass',
+	[
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/framed_glass')
+	
+	event.shaped('4x create:tiled_glass',
+	[
+		'A A',
+		'   ',
+		'A A'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/tiled_glass')
+	
+	event.shaped('4x create:horizontal_framed_glass',
+	[
+		'AA',
+		'  ',
+		'AA'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/horizontal_framed_glass')
+	
+	event.shaped('4x create:vertical_framed_glass',
+	[
+		'A A',
+		'A A'
+	], {
+		A: 'minecraft:glass'
+	}).id('tfg:create/vertical_framed_glass')
+	
+	const CREATE_FRAMED_GLASS_WINDOWS =
+	[
+		'framed_glass',
+		'tiled_glass',
+		'horizontal_framed_glass',
+		'vertical_framed_glass'
+	]
+	
+	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
+		event.shapeless(`2x create:${x}_pane`,
+		[ 
+			`create:${x}`,
+			'#forge:tools/saws'
+		])
+		.id(`tfg:create/shapeless/${x}_pane`)
+		
+		event.recipes.gtceu.cutter(`tfg:create/${x}_pane`)
+			.itemInputs(`3x create:${x}`)
+			.itemOutputs(`8x create:${x}_pane`)
+			.duration(40)
+			.EUt(20)
+	})
+
+	const CREATE_OTHER_GLASS_WINDOWS =
+	[
+		[ 'dark_oak', 'tfc:wood/lumber/hickory' ],
+		[ 'mangrove', 'tfc:wood/lumber/mangrove' ],
+		[ 'ornate_iron', 'gtceu:wrought_iron_rod' ]
+	]
+	
+	CREATE_OTHER_GLASS_WINDOWS.forEach(x => {
+		event.shaped(`2x create:${x[0]}_window`,
+		[
+			' B ',
+			'BAB'
+		], {
+			A: 'minecraft:glass',
+			B: x[1]
+		}).id(`tfg:create/shaped/${x[0]}_window`)
+		
+		event.shapeless(`2x create:${x[0]}_window_pane`,
+		[ 
+			`create:${x[0]}_window`, 
+			'#forge:tools/saws' 
+		])
+		.id(`tfg:create/shapeless/${x[0]}_window_pane`)
+		
+		event.recipes.gtceu.cutter(`tfg:create/${x[0]}_window_pane`)
+			.itemInputs(`3x create:${x[0]}_window`)
+			.itemOutputs(`8x create:${x[0]}_window_pane`)
+			.duration(40)
+			.EUt(20)
+	})
+	
+	// #endregion
 }

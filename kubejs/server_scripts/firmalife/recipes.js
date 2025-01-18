@@ -6,6 +6,8 @@ const registerFirmaLifeRecipes = (event) => {
 
     event.remove({ id: 'firmalife:crafting/compost_tumbler' })
     event.remove({ id: 'firmalife:crafting/pumping_station' })
+    event.remove({ id: 'firmalife:crafting/pumping_station2' })
+    event.remove({ id: 'firmalife:crafting/pumping_station3' })
 
     // - Chromium
     
@@ -134,6 +136,56 @@ const registerFirmaLifeRecipes = (event) => {
     //#region Рецепты теплиц
 
     //#region Медная
+	
+	event.shaped('firmalife:pumping_station',
+	[
+		' B ',
+		'ACA',
+		' D '
+	], {
+        A: 'firmalife:copper_pipe',
+		B: 'gtceu:bronze_plate',
+		C: '#tfc:barrels',
+		D: 'create:mechanical_pump'
+    }).id('tfg:shaped/pumping_station')
+
+		event.shaped('firmalife:pumping_station',
+	[
+		' B ',
+		'ACA',
+		' D '
+	], {
+        A: 'firmalife:copper_pipe',
+		B: 'gtceu:black_bronze_plate',
+		C: '#tfc:barrels',
+		D: 'create:mechanical_pump'
+    }).id('tfg:shaped/pumping_station2')
+	
+	event.shaped('firmalife:pumping_station',
+	[
+		' B ',
+		'ACA',
+		' D '
+	], {
+        A: 'firmalife:copper_pipe',
+		B: 'gtceu:bismuth_bronze_plate',
+		C: '#tfc:barrels',
+		D: 'create:mechanical_pump'
+    }).id('tfg:shaped/pumping_station3')
+	
+	event.recipes.gtceu.bender('tfg:firmalife/copper_pipe')
+		.itemInputs('gtceu:copper_plate')
+		.itemOutputs('8x firmalife:copper_pipe')
+		.circuit(3)
+		.duration(40)
+		.EUt(8)
+		
+	event.recipes.gtceu.bender('tfg:firmalife/sprinkler')
+		.itemInputs('gtceu:copper_plate')
+		.itemOutputs('firmalife:sprinkler')
+		.circuit(4)
+		.duration(60)
+		.EUt(8)
 
     // Стена
     event.shaped('8x firmalife:copper_greenhouse_wall', [
@@ -204,7 +256,7 @@ const registerFirmaLifeRecipes = (event) => {
     }).id('firmalife:crafting/greenhouse/copper_greenhouse_door')
 
     // Порт
-    event.shaped('8x firmalife:copper_greenhouse_port', [
+    event.shaped('firmalife:copper_greenhouse_port', [
         'AA',
         'BC',
         'AA' 
@@ -287,7 +339,7 @@ const registerFirmaLifeRecipes = (event) => {
     }).id('firmalife:crafting/greenhouse/iron_greenhouse_door')
 
     // Порт
-    event.shaped('8x firmalife:iron_greenhouse_port', [
+    event.shaped('firmalife:iron_greenhouse_port', [
         'AA',
         'BC',
         'AA' 
@@ -367,6 +419,7 @@ const registerFirmaLifeRecipes = (event) => {
             .itemOutputs(element.output)
             .duration(300)
             .EUt(16)
+        	.circuit(2)
     })
 
     //#endregion
@@ -411,6 +464,7 @@ const registerFirmaLifeRecipes = (event) => {
         .itemOutputs('firmalife:food/pumpkin_pie_dough')
         .duration(300)
         .EUt(16)
+        .circuit(2)
 
     event.recipes.create.mixing('firmalife:food/pumpkin_pie_dough', ['#tfc:sweetener', '#forge:eggs', '2x tfc:food/pumpkin_chunks', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)]
     ).id('firmalife:create/mixer/food/pumpkin_pie_dough')
@@ -433,6 +487,7 @@ const registerFirmaLifeRecipes = (event) => {
         .itemOutputs('firmalife:food/pie_dough')
         .duration(300)
         .EUt(16)
+        .circuit(2)
 
     event.recipes.create.mixing('firmalife:food/pie_dough', ['#tfc:sweetener', 'firmalife:food/butter', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)])
         .id('firmalife:create/mixer/food/pie_dough')
@@ -454,6 +509,7 @@ const registerFirmaLifeRecipes = (event) => {
         .itemOutputs('4x firmalife:food/hardtack_dough')
         .duration(300)
         .EUt(16)
+        .circuit(2)
 
     event.recipes.create.mixing('4x firmalife:food/hardtack_dough', ['tfc:powder/salt', '#tfc:foods/flour', Fluid.of('minecraft:water', 1000)])
         .id('firmalife:create/mixer/food/hardtack_dough')
@@ -465,6 +521,7 @@ const registerFirmaLifeRecipes = (event) => {
         .outputFluids('firmalife:yeast_starter', 600)
         .duration(1200)
         .EUt(8)
+        .circuit(1)
 		
 	event.recipes.create.mixing(Fluid.of('firmalife:yeast_starter', 600), ['#tfc:foods/flour', Fluid.of('firmalife:yeast_starter', 100)])
 		.id('firmalife:create/mixer/yeast_starter')
