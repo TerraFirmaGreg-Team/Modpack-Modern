@@ -1,0 +1,107 @@
+{
+    "name": "Soapstone, Talc, & Trona",
+    "icon": "gtceu:raw_soapstone",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 190$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: -40 - 56$(br)Size: 36$(br2)Stone types: Granite, Diorite, Gabbro$(br2)Indicator: Soapstone, Talc, Glauconite Sand, Pentlandite, Trona"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Soapstone",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/soapstone"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 30%$(br)Source of: Magnesium$(br)Formula: Mg₃Si₄H₂O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Talc",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/talc"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 20%$(br)Source of: Magnesium$(br)Formula: Mg₃Si₄H₂O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Glauconite Sand",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/glauconite_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Magnesium, Aluminium$(br)Formula: KMg₂Al₄H₂O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Pentlandite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pentlandite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Smelts into: Nickel$(br)Formula: Ni₉S₈"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Trona",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/trona"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 10%$(br)Formula: Na₃C₂H(H₂O)₂O₆"
+        }
+    ]
+}

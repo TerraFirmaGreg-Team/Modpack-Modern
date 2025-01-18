@@ -1,0 +1,69 @@
+{
+    "name": "Боксит і Ільменіт",
+    "icon": "gtceu:raw_bauxite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 185$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -32 - 60$(br)Розмір: 40$(br2)Типи каменю: Глинистий сланець, Аргіліт, Вапняк, Конгломерат, Доломіт, Кременистий сланець, Крейда$(br2)Індикатор: Боксит, Ільменіт, Алюміній"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Боксит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bauxite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 45%$(br)Джерело: Алюмінію$(br)Формула: Al₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Алюміній",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/aluminium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Алюмінію $(br)Формула: Al"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Ільменіт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/ilmenite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Джерело: Титану$(br)Формула: FeTiO₃"
+        }
+    ]
+}
