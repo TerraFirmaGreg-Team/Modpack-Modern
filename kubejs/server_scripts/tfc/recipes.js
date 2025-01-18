@@ -1579,49 +1579,28 @@ const registerTFCRecipes = (event) => {
     //#region Земля
 
     // Loam + Silt -> Silty Loam (Миксер)
-    event.recipes.gtceu.mixer('silty_loam_dirt')             
+    event.recipes.gtceu.mixer('silty_loam_dirt')
         .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
         .itemOutputs('tfc:dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-
-    // Silty Loam + Sticks -> Rooted Silty Loam (Миксер)
-    event.recipes.gtceu.mixer('rooted_silty_loam_dirt')             
-        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
-        .itemOutputs('tfc:rooted_dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
+        .duration(200)
+        .EUt(16)
 
     // Loam + Sand -> Sandy Loam (Миксер)
     event.recipes.gtceu.mixer('sandy_loam_dirt')             
         .itemInputs('tfc:dirt/loam', '#forge:sand')
+        .circuit(3)
         .itemOutputs('tfc:dirt/sandy_loam')
-        .duration(1600)
-        .EUt(12)
+        .duration(200)
+        .EUt(16)
 
-    // Loam + Silt -> Silty Loam (Create Миксер)
-    event.recipes.gtceu.create_mixer('silty_loam_dirt')             
-        .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
-        .itemOutputs('tfc:dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
-    // Silty Loam + Sticks -> Rooted Silty Loam (Create Миксер)
-    event.recipes.gtceu.create_mixer('rooted_silty_loam_dirt')             
-        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
-        .itemOutputs('tfc:rooted_dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
-    // Loam + Sand -> Sandy Loam (Create Миксер)
-    event.recipes.gtceu.create_mixer('sandy_loam_dirt')             
-        .itemInputs('tfc:dirt/loam', '#forge:sand')
-        .itemOutputs('tfc:dirt/sandy_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
+    // Dirt + Sticks -> Rooted Dirt
+    global.TFC_MUD_TYPES.forEach(mud => {
+        event.recipes.gtceu.mixer(`${mud}_to_rooted`)
+            .itemInputs(`tfc:dirt/${mud}`, "#tfc:can_be_lit_on_torch")
+            .itemOutputs(`tfc:rooted_dirt/${mud}`)
+            .duration(200)
+            .EUt(16)
+    })
 
     global.TFC_MUD_TYPES.forEach(mud => {
         event.smelting(`tfc:dirt/${mud}`, `tfc:mud/${mud}`)
@@ -1637,6 +1616,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)             
             .itemInputs(`tfc:dirt/${mud}`)
             .inputFluids(Fluid.of('minecraft:water', 100))
+            .circuit(2)
             .itemOutputs(`tfc:mud/${mud}`)
             .duration(200)
             .EUt(16)
@@ -3001,6 +2981,7 @@ const registerTFCRecipes = (event) => {
             .itemOutputs(element.output)
             .duration(300)
             .EUt(16)
+            .circuit(3)
     })
 
     //#endregion
@@ -3362,7 +3343,7 @@ const registerTFCRecipes = (event) => {
         .id('tfg:smelting/fireclay_brick')
 
     // Выпаривание соли
-    event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 1000)
+    event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)
         .itemOutput('gtceu:small_salt_dust')
         .id('tfg:tfc/pot/salt')
 

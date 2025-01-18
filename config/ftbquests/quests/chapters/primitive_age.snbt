@@ -3782,7 +3782,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["7E8F9F6F35614B13"]
+			dependencies: [
+				"7E8F9F6F35614B13"
+				"25C1C646790CFB6E"
+			]
+			dependency_requirement: "one_completed"
 			id: "2658E7679CD42ACD"
 			tasks: [{
 				id: "5D95FC92B930ACC0"
@@ -5227,6 +5231,32 @@
 			}]
 			x: 24.5d
 			y: 24.0d
+		}
+		{
+			dependencies: [
+				"0988DE53C9217CE6"
+				"332C0086D53DDAA3"
+			]
+			id: "25C1C646790CFB6E"
+			tasks: [{
+				id: "7ACE2BE9075B650E"
+				item: "tfc:treated_hide"
+				type: "item"
+			}]
+			x: 24.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			hide_dependency_lines: true
+			id: "332C0086D53DDAA3"
+			tasks: [{
+				id: "322DF9A30CFE57CE"
+				item: "tfc:groundcover/pumice"
+				type: "item"
+			}]
+			x: 27.0d
+			y: -7.0d
 		}
 	]
 	title: "Primitive Age"

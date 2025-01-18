@@ -1,0 +1,88 @@
+{
+    "name": "Kyanite, Mica, & Bauxite",
+    "icon": "gtceu:raw_mica",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 190$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: 0 - 210$(br)Size: 36$(br2)Stone types: Granite, Diorite, Gabbro, Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Kyanite, Mica, Bauxite, Pollucite"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Kyanite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/kyanite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Source of: Aluminium$(br)Formula: Al₂SiO₅"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Mica",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/mica"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Potassium, Aluminium, Fluorine$(br)Formula: KAl₃Si₃F₂O₁₀"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Bauxite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bauxite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Aluminium$(br)Formula: Al₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Pollucite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pollucite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Aluminium$(br)Formula: Cs₂Al₂Si₄(H₂O)₂O₁₂"
+        }
+    ]
+}

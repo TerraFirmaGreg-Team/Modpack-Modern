@@ -1,0 +1,69 @@
+{
+    "name": "Scheelite & Tungstate",
+    "icon": "gtceu:rich_raw_scheelite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 220$(br)Density: 0.35$(br)Type: Cluster Vein$(br)Y: -64 - 0$(br)Size: 28$(br2)Stone types: Granite, Diorite, Gabbro$(br2)Indicator: Scheelite, Tungstate, Lithium"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Scheelite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cooperite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 45%$(br)Source of: Tungsten$(br)Formula: Ca(WO₃)O"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Tungstate",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tungstate"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Source of: Tungsten, Lithium$(br)Formula: Li₂(WO₃)O"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Lithium",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lithium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 20%$(br)Source of: Lithium$(br)Formula: Li"
+        }
+    ]
+}

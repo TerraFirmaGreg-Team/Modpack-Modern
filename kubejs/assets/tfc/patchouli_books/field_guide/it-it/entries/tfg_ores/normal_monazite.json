@@ -1,0 +1,69 @@
+{
+    "name": "Bastnasite & Monazite",
+    "icon": "gtceu:monazite_gem",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 185$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: -32 - 50$(br)Size: 40$(br2)Stone types: Granite, Diorite, Gabbro$(br2)Indicator: Bastnasite, Monazite, Neodymium"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Bastnasite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bastnasite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 50%$(br)Source of: Cerium, Fluorine$(br)Formula: CeCFO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Monazite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/monazite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Phosphorous, Rare Earth$(br)Formula: ?(PO₄)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Neodymium",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/neodymium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Formula: Nd"
+        }
+    ]
+}
