@@ -9,9 +9,6 @@ concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
-permissions:
-  pull-requests: none
-
 env:
   RELEASE_TYPE: "release"
   MINECRAFT_VERSION: "1.20.1"
@@ -155,7 +152,7 @@ jobs:
       - name: 📈 Upload Diff
         id: upload_diff
         if: ${{ steps.read_diff.outputs.diff != '' }} && steps.check_pakku_lock_prev.outputs.file_found == 'true'
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: Mods-diff
           path: PROJECTS_DIFF.md
@@ -215,7 +212,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-curseforge.zip
           
       - name: 🚀 Upload artifact CurseForge
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
@@ -227,7 +224,7 @@ jobs:
           mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
       - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-modrinth
           path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
@@ -270,7 +267,7 @@ jobs:
           mv *.zip $(basename -s .zip *.zip)-serverpack.zip
 
       - name: 🚀 Upload artifact server
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-serverpack
           path: ./build/serverpack/${{ needs.info.outputs.project_full_name }}-serverpack.zip
@@ -320,15 +317,65 @@ jobs:
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
       
       - name: 🚀 Upload zip multimc
-        uses: actions/upload-artifact@v4.5.0
+        uses: actions/upload-artifact@v4.6.0
         with:
           name: ${{ needs.info.outputs.project_full_name }}-multimc
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
           if-no-files-found: error
 
+  release-github:
+    name: 🚀 Release to GitHub
+    needs: [info, build-modpack, build-server, build-multimc]
+    runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.release.outputs.url }}
+
+    steps:
+      - name: 📦 Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: 📦 Download artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          merge-multiple: true
+
+      - name: 🚫 Сlose fixed in dev
+        uses: Xikaro/close-issues-based-on-label@master
+        env:
+          LABEL: "2. Status: In Dev"
+          COMMENT: In ${{ needs.info.outputs.project_version }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Format diff
+        id: format_diff
+        if: ${{ needs.info.outputs.diff != '' }}
+        uses: roamingowl/template-output-with-eta@v1.11.0
+        with:
+          template: |
+            ```markdown
+            ${{ needs.info.outputs.diff }}
+            ```
+
+      - name: 🚀 Create release
+        id: release
+        uses: softprops/action-gh-release@v2.2.1
+        with:
+          name: ${{ needs.info.outputs.project_version }}
+          tag_name: ${{ needs.info.outputs.project_version }}
+          body: |
+            ${{ needs.info.outputs.changelog }}
+            ${{ steps.format_diff.outputs.text }}
+          files: |
+            ${{ needs.info.outputs.project_full_name }}-curseforge.zip
+            ${{ needs.info.outputs.project_full_name }}-serverpack.zip
+            ${{ needs.info.outputs.project_full_name }}-multimc.zip
+          prerelease: ${{ needs.info.outputs.release_type != 'release' }}
+          generate_release_notes: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
   release-curseforge:
     name: 🚀 Release to CurseForge
-    needs: [info, build-modpack, build-server]
+    needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
     outputs:
       id: ${{ steps.release.outputs.id }}
@@ -370,7 +417,7 @@ jobs:
 
   # release-modrinth:
   #     name: 🚀 Release to Modrinth
-  #     needs: [info, build-modpack, build-server]
+  #     needs: [info, build-modpack, build-server, release-github]
   #     runs-on: ubuntu-latest
 
   #     steps:
@@ -406,55 +453,6 @@ jobs:
   #           server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
   #           release-type: ${{ needs.info.outputs.release_type }}
 
-  release-github:
-    name: 🚀 Release to GitHub
-    needs: [info, build-modpack, build-server, build-multimc]
-    runs-on: ubuntu-latest
-    outputs:
-      url: ${{ steps.release.outputs.url }}
-
-    steps:
-      - name: 📦 Checkout
-        uses: actions/checkout@v4.2.2
-
-      - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.1.8
-        with:
-          merge-multiple: true
-
-      - name: 🚫 Сlose fixed in dev
-        uses: Xikaro/close-issues-based-on-label@master
-        env:
-          LABEL: "2. Status: In Dev"
-          COMMENT: In ${{ needs.info.outputs.project_version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Format diff
-        id: format_diff
-        if: ${{ needs.info.outputs.diff != '' }}
-        uses: roamingowl/template-output-with-eta@v1.11.0
-        with:
-          template: |
-            ```markdown
-            ${{ needs.info.outputs.diff }}
-            ```
-
-      - name: 🚀 Create release
-        id: release
-        uses: softprops/action-gh-release@v2.1.0
-        with:
-          name: ${{ needs.info.outputs.project_version }}
-          tag_name: ${{ needs.info.outputs.project_version }}
-          body: |
-            ${{ needs.info.outputs.changelog }}
-            ${{ steps.format_diff.outputs.text }}
-          files: |
-            ${{ needs.info.outputs.project_full_name }}-curseforge.zip
-            ${{ needs.info.outputs.project_full_name }}-serverpack.zip
-            ${{ needs.info.outputs.project_full_name }}-multimc.zip
-          prerelease: ${{ needs.info.outputs.release_type != 'release' }}
-          generate_release_notes: true
-          token: ${{ secrets.GITHUB_TOKEN }}
 
   discord-message:
     name: 📱 Discord Message

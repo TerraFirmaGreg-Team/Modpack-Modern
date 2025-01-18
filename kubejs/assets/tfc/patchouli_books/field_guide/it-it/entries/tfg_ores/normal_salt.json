@@ -1,0 +1,88 @@
+{
+    "name": "Salts & Borax",
+    "icon": "tfc:powder/salt",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 175$(br)Density: 0.4$(br)Type: Disc Vein$(br)Y: 30 - 70$(br)Size: 40$(br)Height: 4$(br2)Stone types: Shale, Claystone, Limestone$(br2)Indicator: Salt lick, Rock salt, Lepidolite, Borax"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Rock Salt",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/rock_salt"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 40%$(br)Source of: Potassium, Chlorine$(br)Formula: KCl"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Salt",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/salt"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 30%$(br)Source of: High blood pressure$(br)Formula: NaCl"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Lepidolite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lepidolite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Potassium, Lithium, Aluminium, Fluorine$(br)Formula: KLi₃Al₄F₂O₁₀"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Borax",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/borax"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Boron$(br)Formula: Na₂B₄(H₂O)₁₀O₇"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "name": "Garnierite & Cobaltite",
+    "icon": "gtceu:raw_garnierite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 140$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 60$(br)Size: 40$(br2)Stone types: Gabbro$(br2)Indicator: Garnierite"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Garnierite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/garnierite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 30%$(br)Melts into: Nickel$(br)Formula: NiO"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Nickel",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/nickel"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 10%$(br)Melts into: Nickel$(br)Formula: Ni"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Cobaltite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cobaltite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 20%$(br)Source of: Cobalt, Arsenic$(br)Formula: CoAsS$(br)Hazardous: Yes"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Pentlandite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pentlandite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Smelts into: Nickel$(br)Formula: Ni₉S₈"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Cobalt",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cobalt"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Smelts into: Cobalt$(br)Formula: Co"
+        }
+    ]
+}

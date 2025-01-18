@@ -1,0 +1,34 @@
+{
+    "name": "Касситерит (Обычный)",
+    "icon": "gtceu:raw_cassiterite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 170$(br)Плотность: 0.4$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 75$(br)Размер: 40$(br2)Виды камней: Гранит, Диорит, Габбро$(br2)Индикатор: Касситерит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Касситерит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cassiterite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 40%$(br)Плавится в: Олово$(br)Формула: SnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Олово",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/tin" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 60%$(br)Плавится в: Олово$(br)Формула: Sn"
+		}
+    ]
+}

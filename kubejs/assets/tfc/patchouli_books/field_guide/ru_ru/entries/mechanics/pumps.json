@@ -1,0 +1,40 @@
+{
+	"name": "Первые шаги с модом Create",
+	"category": "tfc:mechanics",
+	"icon": "create:cogwheel",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"title": "Первые шаги с модом Create",
+			"text": "В TFG, кинетика мода TFC упразднена в пользу мода $(thing)Create$().$(br2)Кованое железо даёт доступ к небольшой части мода, однако полноценно к нему приступить получится только по получению $(l:mechanics/steel)Стали$() и $(thing)Паровых машин$().$(br2)Перво-наперво вам потребуется $(thing)Механическая энергия$()- водяное колесо, ветряная мельница или паровой двигатель. Самое просто из трёх - это $(thing)Водяное колесо$(), его достаточно просто поставить над рекой и вуаля!$(br)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/kinetics/water_wheel",
+			"recipe2": "create:crafting/kinetics/large_water_wheel"
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/treated_wood_planks",
+			"text": "Для передачи кинетической энергии используют $(thing)Шестерни$().$(br)Чтобы их сделать, необходим $(l:mechanics/mechanical_power)Креозот$() и любые $(thing)Доски$(), запечатанные в $(l:mechanics/barrels)Бочке из TFC$().$(br)Через 8 минут вас будут ждать $(thing)Доски из обработанного креозотом дерева$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Кучка обработанной древесной массы",
+			"item": "gtceu:hp_steam_macerator,gtceu:treated_wood_dust",
+			"text": "После этого, доски необходимо измельчить в $(thing)Паровом измельчителе$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Обработанная доска",
+			"item": "gtceu:hp_steam_compressor,gtceu:treated_wood_plate",
+			"text": "И, наконец, положив эту кучку в $(thing)Паровой компрессор$(), вы получите сами $(thing)обработанные доски$().$(br2)И уже с их помощью можно создавать $(item)Шестерни$()!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shapeless/cogwheel",
+			"recipe2": "tfg:create/shaped/large_cogwheel"
+		}
+	]
+}

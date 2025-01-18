@@ -1,0 +1,88 @@
+{
+    "name": "Lapis, Lazurite, & Sodalite",
+    "icon": "minecraft:lapis_lazuli",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 170$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: -60 - 10$(br)Size: 50$(br2)Stone types: Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Lazurite, Sodalite, Lapis, Calcite$(br2)Mostly used for fluid filters."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Lazurite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lazurite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Source of: Aluminium, Calcium, Sodium$(br)Formula: Al₆Si₆Ca₈Na₈"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Sodalite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sodalite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Aluminium, Sodium$(br)Formula: Al₃Si₃Na₄Cl"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Calcite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/calcite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Calcium$(br)Formula: CaCO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Lapis",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lapis"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Lazurite, Sodalite, Pyrite, Calcite"
+        }
+    ]
+}

@@ -966,7 +966,7 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: '#forge:dusts/graphite', output: '4x tfc:powder/graphite', name: 'graphite_powder' },
     { input: '#forge:dusts/borax', output: '4x tfc:powder/flux', name: 'flux_powder' },
     { input: '#forge:dusts/soda_ash', output: '4x tfc:powder/soda_ash', name: 'soda_ash' },
-    { input: 'minecraft:charcoal', output: '2x tfc:powder/charcoal', name: 'charcoal' },
+    { input: 'gtceu:charcoal_dust', output: '2x tfc:powder/charcoal', name: 'charcoal' },
     { input: 'gtceu:raw_graphite', output: 'gtceu:graphite_dust', name: 'raw_graphite_to_dust' },
     { input: 'gtceu:poor_raw_graphite', output: '5x gtceu:tiny_graphite_dust', name: 'poor_raw_graphite_to_dust' },
     { input: 'gtceu:rich_raw_graphite', output: '2x gtceu:graphite_dust', name: 'rich_graphite_to_dust' },
@@ -1058,6 +1058,13 @@ global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS = [
     { input: 'tfc:plant/blueberry_bush', fluid_amount: 6000, output: '3x tfc:food/blueberry', name: 'blueberry' },
     { input: 'tfc:plant/elderberry_bush', fluid_amount: 6000, output: '3x tfc:food/elderberry', name: 'elderberry' },
     { input: 'tfc:plant/cranberry_bush', fluid_amount: 6000, output: '3x tfc:food/cranberry', name: 'cranberry' },
+];
+
+global.TFC_MILKS = [
+    {id: 'minecraft:milk'},
+    {id: 'firmalife:yak_milk'},
+    {id: 'firmalife:goat_milk'},
+    {id: 'firmalife:coconut_milk'},
 ];
 
 global.calcAmountOfMetal = (defaultAmount, percents) => {

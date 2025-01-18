@@ -1,0 +1,56 @@
+{
+    "name": "Марганец и Тантал",
+    "icon": "gtceu:raw_grossular",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 195$(br)Плотность: 0.3$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 60$(br)Размер: 40$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит, Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикаторы: Гроссуляр, Спасерит, Пиролюзит, Танталит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гроссуляр",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/grossular" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Содержит: Кальций, Алюминий$(br)Формула: Ca₃Al₂Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Спасерит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/spessartine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Содержит: Марганец, Алюминий$(br)Формула: Al₂Mn₃Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Пиролюзит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrolusite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Плавится в: Марганец$(br)Формула: MnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Танталит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/tantalite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 10%$(br)Содержит: Марганец, Тантал$(br)Формула: MnTa₂O₆"
+		}
+    ]
+}

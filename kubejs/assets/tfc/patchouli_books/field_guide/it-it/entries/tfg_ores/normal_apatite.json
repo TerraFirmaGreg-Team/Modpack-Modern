@@ -1,0 +1,69 @@
+{
+    "name": "Apatite & Pyrochlore",
+    "icon": "gtceu:raw_apatite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 220$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: -32 - 60$(br)Size: 34$(br2)Stone types: Granite, Diorite, Gabbro, Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Apatite, Tricalcium Phosphate, Pyrochlore"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Apatite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/apatite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 50%$(br)Source of: Calcium, Phosphorus, Forestry PTSD$(br)Formula: Ca₅(PO₄)₃Cl"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Tricalcium Phosphate",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tricalcium_phosphate"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Source of: Calcium, Phosphorus$(br)Formula: Ca₃(PO₄)₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Pyrochlore",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pyrochlore"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Niobium$(br)Formula: Ca₂Nb₂O₇"
+        }
+    ]
+}

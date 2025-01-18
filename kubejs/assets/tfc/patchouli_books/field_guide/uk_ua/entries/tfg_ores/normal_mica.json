@@ -1,0 +1,88 @@
+{
+    "name": "Кіаніт, Слюда та Боксити",
+    "icon": "gtceu:raw_mica",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 190$(br)Щільність: 0.25$(br)Тип: Cluster Vein$(br)Y: 0 - 210$(br)Розмір: 36$(br2)Типи каменю: Граніт, Діорит, Габро, Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Кіаніт, Слюда, Боксити, Полюцит"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Кіаніт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/kyanite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Алюмінію$(br)Формула: Al₂SiO₅"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Слюда",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/mica"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Калію, Алюмінію, Фтору$(br)Формула: KAl₃Si₃F₂O₁₀"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Боксит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bauxite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Алюмінію$(br)Формула: Al₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Полюцит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pollucite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Алюмінію$(br)Формула: Cs₂Al₂Si₄(H₂O)₂O₁₂"
+        }
+    ]
+}

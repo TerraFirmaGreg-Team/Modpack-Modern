@@ -50,6 +50,18 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    event.recipes.gtceu.macerator('flux')
+        .itemInputs('#tfc:fluxstone')
+        .itemOutputs('2x tfc:powder/flux')
+        .duration(30)
+        .EUt(2)
+
+    event.recipes.gtceu.forge_hammer('flux')
+        .itemInputs('#tfc:fluxstone')
+        .itemOutputs('2x tfc:powder/flux')
+        .duration(30)
+        .EUt(2)
+
     //#region Выход: Диоксид силикона
 
     event.recipes.gtceu.electrolyzer('sand_electrolysis')             
@@ -1050,12 +1062,11 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
 
     // Пыль звезды незера 
-    // TODO: удалить после имплементации ада
     event.recipes.gtceu.chemical_reactor('tfg:gtceu/nether_star_dust')             
         .itemInputs('2x #forge:dusts/iridium', '#forge:dusts/diamond')
         .circuit(10)
         .itemOutputs('gtceu:nether_star_dust')
-        .inputFluids(Fluid.of('gtceu:sulfur_dioxide', 6000), Fluid.of('gtceu:carbon_monoxide', 8000))
+        .inputFluids(Fluid.of('gtceu:nether_air', 1000))
         .duration(700)
         .EUt(2720)
 
@@ -1096,7 +1107,7 @@ const registerGTCEURecipes = (event) => {
         C: '#gtceu:circuits/mv',
         D: 'gtceu:solid_machine_casing'
     }).id('tfg:shaped/greenhouse')
-
+	
     // Контроллер электрического генератора
     event.shaped('gtceu:alternator', [
         'ABA', 
@@ -1212,34 +1223,27 @@ const registerGTCEURecipes = (event) => {
     //#endregion
 
     //#region Рецепты электрического генератора
-    
-    event.recipes.gtceu.alternator('32_rpm_to_32_eu')
-        .inputStress(256)
-        .circuit(0)
-        .rpm(32)
-        .duration(2)
-        .EUt(-32)
 
-    event.recipes.gtceu.alternator('64_rpm_to_48_eu')
-        .inputStress(256)
+    event.recipes.gtceu.alternator('lv_alternator')
+	    .inputStress(8192)
         .circuit(1)
-        .rpm(64)
+        .rpm(256)
         .duration(2)
-        .EUt(-48)
+        .outputEU(128)
 
-    event.recipes.gtceu.alternator('128_rpm_to_64_eu')
-        .inputStress(256)
+    event.recipes.gtceu.alternator('mv_alternator')
+		.inputStress(32768)
         .circuit(2)
-        .rpm(128)
+        .rpm(256)
         .duration(2)
-        .EUt(-64)
+        .outputEU(512)
 
-    event.recipes.gtceu.alternator('256_rpm_to_96_eu')
-        .inputStress(256)
+    event.recipes.gtceu.alternator('hv_alternator')
+		.inputStress(131072)
         .circuit(3)
         .rpm(256)
         .duration(2)
-        .EUt(-96)
+        .outputEU(2048)
     
     //#endregion
 
@@ -1277,16 +1281,82 @@ const registerGTCEURecipes = (event) => {
         .EUt(24)
 
     //#endregion
-
-    // Add circuit to assembler recipe for redstone lamp.
-    // Avoids conflict with AE2 smart cables.
-    event.remove({ id: 'gtceu:assembler/redstone_lamp' })
-    event.recipes.gtceu.assembler('redstone_lamp')
-        .itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
-        .itemOutputs('1x minecraft:redstone_lamp')
-        .circuit(1)
-        .duration(100)
-        .EUt(1)
+	
+	//#region remove LV casing exploit
+	
+    /*event.remove({ id: 'gtceu:assembler/casing_lv' })
+	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
+		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
+		.itemOutputs('gtceu:lv_machine_casing')
+		.circuit(8)
+		.duration(50)
+		.EUt(16)*/
+		
+	//#endregion
+		
+	//#region make colored steel a bit easier to compensate
+		
+	event.recipes.gtceu.arc_furnace('tfg:black_steel_dust_to_ingot')
+		.itemInputs('gtceu:black_steel_dust')
+		.itemOutputs('gtceu:black_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(500)
+		.EUt(24)
+		
+	event.recipes.gtceu.arc_furnace('tfg:red_steel_dust_to_ingot')
+		.itemInputs('gtceu:red_steel_dust')
+		.itemOutputs('gtceu:red_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(700)
+		.EUt(32)
+		
+	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
+		.itemInputs('gtceu:blue_steel_dust')
+		.itemOutputs('gtceu:blue_steel_ingot')
+		.inputFluids(Fluid.of('gtceu:oxygen', 72))
+		.duration(700)
+		.EUt(32)
+		
+	//#endregion
+	
+	//#region add regular furnace recipes for other tfc alloys
+	
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_bismuth_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_bismuth_bronze_gas' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_black_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_black_bronze_gas' })
+	event.remove({id: 'gtceu:vacuum_freezer/cool_hot_black_bronze_ingot' })
+	event.remove({id: 'gtceu:vacuum_freezer/black_bronze' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_sterling_silver' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_sterling_silver_gas' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_rose_gold' })
+	event.remove({id: 'gtceu:electric_blast_furnace/blast_rose_gold_gas' })
+		
+	event.recipes.gtceu.electric_furnace('tfg:bismuth_bronze_dust_to_ingot')
+		.itemInputs('gtceu:bismuth_bronze_dust')
+		.itemOutputs('gtceu:bismuth_bronze_ingot')
+		.duration(200)
+		.EUt(16)
+		
+	event.recipes.gtceu.electric_furnace('tfg:black_bronze_dust_to_ingot')
+		.itemInputs('gtceu:black_bronze_dust')
+		.itemOutputs('gtceu:black_bronze_ingot')
+		.duration(200)
+		.EUt(16)
+		
+	event.recipes.gtceu.electric_furnace('tfg:sterling_silver_dust_to_ingot')
+		.itemInputs('gtceu:sterling_silver_dust')
+		.itemOutputs('gtceu:sterling_silver_ingot')
+		.duration(300)
+		.EUt(20)
+		
+	event.recipes.gtceu.electric_furnace('tfg:rose_gold_dust_to_ingot')
+		.itemInputs('gtceu:rose_gold_dust')
+		.itemOutputs('gtceu:rose_gold_ingot')
+		.duration(300)
+		.EUt(20)
+	
+	//#endregion
 
     //#region Рецепты, которые итерируются по всем материалам
 
@@ -1465,27 +1535,30 @@ const registerGTCEURecipes = (event) => {
         }
         
     });
-    //#endregion
 
+    //#endregion
+	
+	  //#region fix more duping
+  
     // Fix LV recycling producing red/blue steel.
     // Replace red steel outputs with 8x steel, delete blue steel outputs.
     event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
         '#forge:ingots/red_steel',
         '8x #forge:ingots/steel')
 
     event.replaceOutput(
-        /gtceu:arc_furnace\/arc_lv_.*/,
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
         '#forge:ingots/blue_steel',
         '')
 
     event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
         '#forge:dusts/red_steel',
         '8x #forge:dusts/steel')
 
     event.replaceOutput(
-        /gtceu:macerator\/macerate_lv_.*/,
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
         '#forge:dusts/blue_steel',
         '')
 
@@ -1660,28 +1733,28 @@ const registerGTCEURecipes = (event) => {
 
 	//#region ULV предметный входной люк
 	
-	e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polytetrafluoroethylene')
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polytetrafluoroethylene')
    		 .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
    		 .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 72))
    		 .itemOutputs('gtceu:ulv_input_bus')
    		 .circuit(1)
    		 .EUt(7).duration(300)
 
-	e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_glue')
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_glue')
   		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
 		.inputFluids(Fluid.of('gtceu:glue', 288))
 		.itemOutputs('gtceu:ulv_input_bus')
    		.circuit(1)
    		.EUt(7).duration(300)
 
-	e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polybenzimidazole')
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polybenzimidazole')
   		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
   		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 36))
    		.itemOutputs('gtceu:ulv_input_bus')
    		.circuit(1)
    		.EUt(7).duration(300)
 
-	e.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polyethylene')
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polyethylene')
    	 	.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
     		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
     		.itemOutputs('gtceu:ulv_input_bus')
@@ -1692,28 +1765,28 @@ const registerGTCEURecipes = (event) => {
 
 	//#region ULV предметный выходной люк
 	
-	e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polytetrafluoroethylene')
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polytetrafluoroethylene')
     		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
     		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 72))
     		.itemOutputs('gtceu:ulv_output_bus')
     		.circuit(2)
     		.EUt(7).duration(300)
 
-	e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_glue')
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_glue')
     		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
     		.inputFluids(Fluid.of('gtceu:glue', 288))
     		.itemOutputs('gtceu:ulv_output_bus')
     		.circuit(2)
     		.EUt(7).duration(300)
 
-	e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polybenzimidazole')
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polybenzimidazole')
     		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
     		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 36))
     		.itemOutputs('gtceu:ulv_output_bus')
     		.circuit(2)
     		.EUt(7).duration(300)
 
-	e.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polyethylene')
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polyethylene')
     		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
     		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
     		.itemOutputs('gtceu:ulv_output_bus')
@@ -1722,4 +1795,178 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 	
+    //#region Quantum mainframe stack fix.
+    //
+    // Quantum Mainframes need 48x annealed copper wire but
+    // the stacking limit is 32 so instead allow 24x 2x.
+    //
+    // Frustratingly event.replaceInput doesn't allow for
+    // changing item counts, only types.
+    event.remove(/gtceu:circuit_assembler\/quantum_mainframe_zpm.*/)
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '48x gtceu:smd_capacitor',
+            '24x gtceu:smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:tin', 576))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+
+    event.recipes.gtceu.circuit_assembler('quantum_mainframe_zpm_asmd_soldering_alloy')
+        .itemInputs(
+            '2x gtceu:hssg_frame',
+            '2x gtceu:quantum_processor_computer',
+            '12x gtceu:advanced_smd_capacitor',
+            '6x gtceu:advanced_smd_inductor',
+            '24x gtceu:ram_chip',
+            '24x gtceu:annealed_copper_double_wire')
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 288))
+        .itemOutputs('gtceu:quantum_processor_mainframe')
+        .duration(800)
+        .EUt(7680)
+    //#endregion
+
+	// #region fix mixer recipes for colored steel
+	
+	event.replaceInput({id: 'gtceu:mixer/red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceInput({id: 'gtceu:mixer/red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	
+	// #endregion
+
+	// #region Move MV superconductor to early HV instead of post-vac freezer
+	
+	event.remove({id: 'gtceu:shaped/hv_chemical_bath' })
+	event.shaped('gtceu:hv_chemical_bath', [
+        'ABC',
+        'DEA',
+        'FGF' 
+    ], {
+        A: 'gtceu:hv_conveyor_module',
+        B: 'gtceu:tempered_glass',
+        C: 'gtceu:gold_single_cable',
+        D: 'gtceu:hv_electric_pump',
+		// swap one of the tempered glass for a PE pipe to ensure they've finished the plastic part of MV
+        E: 'gtceu:polyethylene_normal_fluid_pipe', 
+		F: '#gtceu:circuits/hv',
+		G: 'gtceu:hv_machine_hull'
+    }).id('tfg:shaped/hv_chemical_bath')
+	
+	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down_distilled_water')
+		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
+		.itemOutputs('gtceu:magnesium_diboride_ingot')
+		.duration(250)
+		.EUt(480)
+		
+	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down')
+		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
+        .inputFluids(Fluid.of('minecraft:water', 100))
+		.itemOutputs('gtceu:magnesium_diboride_ingot')
+		.duration(400)
+		.EUt(480)
+		
+	// #endregion
+  
+    // #region Add all glass colors to macerator/hammer
+    event.remove({id: "gtceu:macerator/macerate_glass"});
+    event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass")
+        .itemInputs(
+            "#forge:glass"
+        )
+        .itemOutputs("gtceu:glass_dust")
+        .duration(20)
+        .EUt(2);
+
+    event.remove({id: "gtceu:macerator/macerate_glass_pane"});
+    event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass_pane")
+        .itemInputs(
+            "#forge:glass_panes"
+        )
+        .itemOutputs("3x gtceu:tiny_glass_dust")
+        .duration(6)
+        .EUt(2)
+
+    event.replaceInput({id: "gtceu:shaped/glass_dust_hammer"},
+        "minecraft:glass",
+        "#forge:glass"
+    );
+    // #endregion
+
+    // #region Rich coal processing
+    event.recipes.gtceu.coke_oven("tfg:rich_coal_to_coke")
+        .itemInputs('gtceu:rich_raw_coal')
+        .itemOutputs('4x gtceu:coke_gem')
+        .outputFluids(Fluid.of('gtceu:creosote', 2000))
+        .duration(3240)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
+        .itemInputs('3x gtceu:rich_raw_coal')
+        .chancedOutput('gtceu:dark_ash_dust', 5000, 0)
+        .outputFluids(Fluid.of('gtceu:coal_tar', 3000))
+        .duration(288)
+        .EUt(96)
+        .circuit(8)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_coke_creosote")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .outputFluids(Fluid.of('gtceu:creosote', 8000))
+        .duration(576)
+        .EUt(64)
+        .circuit(1)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coal_gas")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:steam'))
+        .outputFluids(Fluid.of('gtceu:coal_gas', 4000))
+        .duration(288)
+        .EUt(96)
+        .circuit(22)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coke_creosote_nitrogen")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:nitrogen'))
+        .outputFluids(Fluid.of('gtceu:creosote', 8000))
+        .duration(288)
+        .EUt(96)
+        .circuit(2)
+    // #endregion
 }

@@ -1,0 +1,45 @@
+{
+    "name": "Сера и Пирит",
+    "icon": "gtceu:raw_sulfur",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 165$(br)Плотность: 0.2$(br)Вид: Кластерная жила$(br)Y-уровень: 0 - 210$(br)Размер: 45$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит$(br2)Индикаторы: Сера, Пирит, Сфалерит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сера",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sulfur" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 50%$(br)Формула: S"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Пирит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Плавится в: Железо$(br)Формула: FeS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сфалерит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sphalerite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Цинк$(br)Формула: ZnS"
+		}
+    ]
+}

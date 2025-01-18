@@ -1,8 +1,54 @@
 # Changelog
 
-## [0.7.16] - ?
+## [0.7.17] - ?
+### Changes
+- Added ore index, started work on other TFC info category (Pyritie).
+- Changed the AE2 network analyzer to HV instead of IV (Pyritie).
+- Fixed a typo in salt water boiling recipe's temperature for small salt pile - 1000 > 100 (8oyNextDoor).
+- Fix sprinklers + fix bread and yeast starter recipe conflict (Pyritie).
+- Added recipes for create glass, more windows, fixed tinted glass recipe conflict (Pyritie).
+- Added missing recipe for nether brick (Pyritie).
+- Added armor trims (Pyritie).
+- Add blast furnace tips entry (CaptainGold1).
+- Allows stick bundles to be used in the coke oven (CaptainGold1).
+- Allows all colors of glass to be macerated/hammered to dust (CaptainGold1).
+- Add alternate papermaking quests using treated hide (CaptainGold1).
+- Fix dupes via recycling firmaciv items (Egogorka).
+- Create fluxstone recipes in macerator and forge hammer (KorGgenT).
+- Fixes fertilizer recipe and modifies some mixer recipes relating to dirt (CaptainGold1).
+- Changed train tracks to be cheaper (Pyritie).
+- Create Sails: Recipe Improvements (Nebby1999).
+- Moved MV superconductor to early HV instead of late HV (Pyritie).
+- Added some Italy and Ukraine translation (MetenBouldry).
+- Сreate some rich coal recipes in coke oven and pyro oven (Exzept1on).
+- Add blaze burner, fix alternator (Pyritie).
+### New mods
+- Inventory Tweaks Refoxed 1.1
+- EveryCompat
+- MemoryLeakFix
+### Updated mods
+- FirmaLife ? -> 2.1.15
+- Moonlight ? -> ?
+- TFC ? -> ?
+### Removed mods
+- Inventory Sorter
+
+## [0.7.16] - 12.01.2025
 ### Changes
 - Removed links for excel spreadsheet ore gen (Pyritie).
+- Fix maintenance hatch recycling recipes too (fluffle).
+- Olive oil in machines (Saaghh).
+- Fix charcoal in macerator overlap (Pyritie).
+- Added greenhouse recipes for tfc plants tag (Saaghh).
+- Use 2x annealed copper wires in ZPM mainframe recipe (fluffle).
+- Craft recipe for framed chest so it isn't cheaper then the alternatives (Juzrm).
+- RU_RU translation for tfc guide book (recently added pages) (8oyNextDoor).
+- Based gas multiblocks, more suffering! (Pyritie).
+- Creosote treated planks fixes (Pyritie).
+- Fixed mixer recipes for red/blue steel (Pyritie).
+- Added another recipe for Create's electron tubes (Pyritie).
+- Electric cheese, tomato sauce and cream (Saaghh).
+- Leather producting using GTM machines (Saaghh).
 
 ## [0.7.15] - 08.01.2025
 ### Changes
