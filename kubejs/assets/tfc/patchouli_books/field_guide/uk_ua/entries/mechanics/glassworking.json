@@ -1,0 +1,82 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Склоробство",
+  "category": "tfc:mechanics",
+  "icon": "tfc:silica_glass_bottle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Склоробство - це процес перетворення піску на скло. Для початку необхідно створити $(thing)Партія Скла$(), яких є чотири типи:$(br)$(br) 1. $(thing)Силікат$(), з білого піску.$(br) 2. $(thing)Геморагічний$(), з жовтого, червоного або рожевого піску..$(br) 3. $(thing)Олівін$(), із зеленого або коричневого піску.$(br) 4. $(thing)Вулканічний$(), з чорного піску."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Силікатна Партія Скла",
+      "recipe": "tfc:crafting/silica_glass_batch",
+      "text": "Скляні партії можуть бути виготовлені з використанням одного з вищезгаданих кольорів піску, а також $(l:mechanics/glassworking#lime)Вапно$() і різновид $(l:mechanics/glassworking#potash)Поташу$()."
+    },
+    {
+      "type": "patchouli:smelting",
+      "anchor": "lime",
+      "recipe": "tfg:smelting/lime",
+      "text": "$(thing)Вапно$() є одним з інгредієнтів, необхідних для виготовлення скляної партії. Це порошок, який отримують шляхом $(l:mechanics/heating)опалення$() $(l:mechanics/flux)Флюксу$()."
+    },
+    {
+      "type": "patchouli:smelting",
+      "anchor": "potash",
+      "recipe": "tfg:smelting/dried_seaweed_to_soda",
+      "recipe2": "tfg:smelting/dried_kelp_to_soda",
+      "text": "Для скляних партій також потрібен тип$(thing)Поташ$() або еквівалент. $(thing)Кальцинована сода$() порошок, виготовлений шляхом нагрівання $(thing)Сушених водоростей$() або $(thing)Kelp$(). Також можна використовувати \n $(l:tfg_ores/normal_saltpeter)Сіль$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Склоробство виконується, починаючи з партії скла, а потім виконують низку етапів. Ці етапи можуть потребувати певних інструментів:$(br)$(li)A $(l:mechanics/glassworking#blowpipe)Видувна труба$(), для $(thing)Видування$() та $(thing)Розтягування$()$(li) $(l:mechanics/glassworking#paddle)Лопатка$(), для $(thing)Вирівнювання$()$(li)$(l:mechanics/glassworking#jacks)Щипці$(), для $(thing)Затискання$()$(li) $(l:mechanics/glassworking#saw)Алмазну Пилку$(), для $(thing)Спилювання$()",
+      "title": "Знаряддя праці"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "blowpipe",
+      "recipe": "tfc:clay_knapping/blowpipe",
+      "text": "Найважливішим інструментом є $(thing)Видувна труба$(). Вона може бути $(thing)висічена$() з глини, а потім обпалити в $(thing)Керамічну Видувну Трубку$()."
+    },
+    {
+      "type": "tfc:anvil_recipe",
+      "recipe": "tfc:anvil/blowpipe",
+      "text": "Керамічні видувні трубки крихкі та можуть зламатися під час використання. Більш міцні видувні трубки можуть бути $(l:mechanics/anvils#working)виковані$() з $(thing)Латунного стрежня$() на ковадлі."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "paddle",
+      "recipe": "tfc:crafting/paddle",
+      "text": "Операцію $(thing)Вирівнювання$() можна виконати за допомогою $(thing)Лопатки$(), яка виготовлена з дерева."
+    },
+    {
+      "type": "tfc:welding_recipe",
+      "anchor": "jacks",
+      "recipe": "tfc:welding/jacks",
+      "text": "Операцію $(thing)Затискання$() можна виконати за допомогою $(thing)Щипців$(), виготовлений шляхом зварювання двох латунних стрижнів між собою."
+    },
+    {
+      "type": "patchouli:crafting",
+      "anchor": "saw",
+      "recipe": "tfc:crafting/gem_saw",
+      "text": "Операцію $(thing)Спилювання$() можна виконати за допомогою $(thing)Алмазної Пилки$(). Алмазна пилка також використовується для розбиття обох $(thing)Скляних Блоків$() та $(thing)Скляних Панелей$() і отримати їх."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "По-перше, скло на видувній трубі повинно бути нагріте до $(4)$(bold)Блідо-червоного$(). Потім візьміть видувну трубу в $(thing)вільну руку$() і тримати $(item)$(k:key.use)$() для виконання кожного кроку$().$(br)Use $(item)$(k:key.swapOffhand)$() щоб забрати гарячу трубку в твою вільну руку.$(br2)$(bold)Дути$()$(br)Використайте $(thing)Видувну Трубку$() дивлячись прямо перед собою.$(br2)$(bold)Розтягування$()$(br)Використайте $(thing)Видувну Трубку$() дивлячись до низу.",
+      "title": "Як видути скло"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)Вирівнювання$()$(br)Використайте $(thing)Видувну Трубку$() тримаючи $(l:mechanics/glassworking#paddle)Лопатку$() у вашій головній руці.$(br2)$(bold)Затискання$()$(br)Використайте $(thing)Видувну Трубку$() тримаючи $(l:mechanics/glassworking#jacks)Щипці$() у вашій головній руці.$(br2)$(bold)Спиляти$()$(br)Використайте $(thing)Видувну Трубку$() тримаючи $(l:mechanics/glassworking#saw)Алмазну Пилку$() у вашій головній руці.$(br2)$(bold)Катати$()$(br)Використайте $(thing)Видувну Трубку$() з $(l:mechanics/weaving#wool_cloth)Вовняною тканиною$() у вашій головній руці."
+    }
+  ],
+  "read_by_default": true,
+  "extra_recipe_mappings": {
+    "tfc:powder/lime": 2,
+    "tfc:powder/soda_ash": 3,
+    "tfc:paddle": 7,
+    "tfc:jacks": 8,
+    "tfc:gem_saw": 9
+  }
+}

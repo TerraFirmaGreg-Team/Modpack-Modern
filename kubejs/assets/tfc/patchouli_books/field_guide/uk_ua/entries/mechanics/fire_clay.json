@@ -1,0 +1,40 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Вогнетривка глина",
+  "category": "tfc:mechanics",
+  "icon": "tfc:fire_clay",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Список застосувань вогнетривкої глини невеликий, але всі вони важливі. Вогнетривка глина - це міцніший варіант глини, який має кращу термостійкість. З неї виготовляють речі, які мають бути дуже гарячими!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "tfc:crafting/fire_clay",
+      "text": "Вогнетривку глину виготовляють з $(l:tfg_ores/normal_graphite)графітового$() порошку, перетертий в $(l:mechanics/quern)жорнах$(), а також $(l:tfg_ores/surface_kaolin#powder)каолінітового$() порошку"
+    },
+    {
+      "type": "tfc:heat_recipe",
+      "recipe": "tfc:heating/kaolin_clay",
+      "text": "Каолінітовий порошок виготовляється шляхом нагрівання $(l:tfg_ores/surface_kaolin)Каолінітової глини$(). Однак процес не ідеальний, і лише 20% глини перетвориться на порошок!"
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "crucible",
+      "recipe": "tfc:fire_clay_knapping/crucible",
+      "text": "$(l:mechanics/crucible)Тигель$() у невипаленому стані виготовляється з вогнетривкої глини."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "anchor": "fire_bricks",
+      "recipe": "tfc:fire_clay_knapping/brick",
+      "text": "The $(l:mechanics/blast_furnace)Доменна Піч$() приймає ізоляцію лише вогнетривкою цеглиною."
+    },
+    {
+      "type": "tfc:knapping_recipe",
+      "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
+      "text": "$(thing)Вогнетривких Виливків для Злитків$() є сильнішим типом $(l:getting_started/pottery#mold)Виливків для Злитків$() ймовірність зламання якої становить лише 1 до 100, проти 1 до 10 для звичайних виливків для злитків."
+    }
+  ],
+  "read_by_default": true
+}

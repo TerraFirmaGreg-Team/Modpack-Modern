@@ -1,0 +1,39 @@
+{
+	"name": "Початок роботи з Create",
+	"category": "tfc:mechanics",
+	"icon": "create:cogwheel",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Початок роботи з Create",
+			"text": "У TerraFirmaGreg, власна механічна система енергопостачання TFC була замінена на $(thing)Create$().$(br2)Ви можете створити кілька Create, як тільки отримаєте коване залізо, але по-справжньому розпочати роботу можна лише після того, як отримаєте доступ до $(l:mechanics/steel)Сталі$() та $(thing)Парових Машин$().$(br2)По-перше, вам знадобиться джерело $(thing)Механічної Сили$(), або водяні колеса, або вітряки, або паровий двигун. З них, $(thing)Водяні Колеса$() найпростіші для початку, просто поставте їх у річку!$(br)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/kinetics/water_wheel",
+			"recipe2": "create:crafting/kinetics/large_water_wheel"
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/treated_wood_planks",
+			"text": "Для переміщення механічної енергії вам знадобляться $(thing)Зубчасті колеса$().$(br)Щоб виготовити їх, спочатку покладіть трохи $(l:mechanics/mechanical_power)Креозота$() та Будь-які $(thing)Дерев'яні Дошки$() в $(l:mechanics/barrels)Герметичну Діжку$().$(br)Це дасть вам $(thing)Дерев'яні Дошки, Оброблені Креозотом$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Оброблений м'якуш",
+			"item": "gtceu:hp_steam_macerator,gtceu:treated_wood_dust",
+			"text": "Потім покладіть оброблені дошки в $(thing)Паровий Подрібнювач$(). Це утворить $(thing)Оброблену м'якуш$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Дерев'яні Дошки, Оброблені Креозотом",
+			"item": "gtceu:hp_steam_compressor,gtceu:treated_wood_plate",
+			"text": "Нарешті, поклавши м'якуш в $(thing)Паровий Компресор$() створить $(thing)Оброблену Дерев'яну Дошку$().$(br2)Потім ви можете використовувати їх для створення $(item)Зубчастих Колес$()!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shapeless/cogwheel",
+			"recipe2": "tfg:create/shaped/large_cogwheel"
+		}
+	]
+}

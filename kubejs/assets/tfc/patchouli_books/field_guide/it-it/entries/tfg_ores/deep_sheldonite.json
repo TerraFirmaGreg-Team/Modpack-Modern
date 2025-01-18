@@ -1,0 +1,88 @@
+{
+    "name": "Sheldonite & Bornite",
+    "icon": "gtceu:rich_raw_platinum",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 300$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -64 - 0$(br)Size: 30$(br2)Stone types: Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Bornite, Cooperite, Platinum, Palladium"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Sheldonite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cooperite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Platinum, Nickel, Palladium$(br)Formula: Pt₃NiSPd"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Platinum",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/platinum"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Smelts into: Platinum$(br)Formula: Pt"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Palladium",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/palladium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Palladium$(br)Formula: Pt"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Bornite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bornite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Smelts into: Copper$(br)Formula: Cu₅FeS₄"
+        }
+    ]
+}
