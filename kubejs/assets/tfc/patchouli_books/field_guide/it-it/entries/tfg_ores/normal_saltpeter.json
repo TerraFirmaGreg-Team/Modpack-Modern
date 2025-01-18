@@ -1,0 +1,88 @@
+{
+    "name": "Saltpeter & Electrotine",
+    "icon": "gtceu:raw_saltpeter",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 210$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -32 - 60$(br)Size: 50$(br2)Stone types: Granite, Diorite, Gabbro, Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Saltpeter, Diatomite, Electrotine, Alunite"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Saltpeter",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/saltpeter"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Source of: Potassium$(br)Formula: KNO₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Diatomite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/diatomite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Iron, Aluminium$(br)Formula: (SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Electrotine",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/electrotine"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Gold, Silver, Redstone$(br)Formula: (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Alunite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/alunite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Source of: Potassium, Aluminium$(br)Formula: KAl₃Si₂H₆O₁₄"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Cassiterite (Surface)",
+    "icon": "gtceu:poor_raw_cassiterite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 135$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: 60 - 210$(br)Size: 50$(br2)Stone types: Granite, Diorite, Gabbro$(br2)Indicator: Cassiterite"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Cassiterite",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/cassiterite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 60%$(br)Melts into: Tin$(br)Formula: SnO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Tin",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tin"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 40%$(br)Melts into: Tin$(br)Formula: Sn"
+        }
+    ]
+}

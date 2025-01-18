@@ -1,0 +1,69 @@
+{
+    "name": "Сірка та Пірит",
+    "icon": "gtceu:raw_sulfur",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 165$(br)Щільність: 0.2$(br)Тип: Кластерна вена$(br)Y: 0 - 210$(br)Розмір: 45$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит$(br2)Індикатор: Сірка, Пірит, Сфалерит"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Сірка",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sulfur"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Формула: S"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Пірит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pyrite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Розплавляється в: Чавун$(br)Формула: FeS₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Сфалерит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sphalerite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Цинк$(br)Формула: ZnS"
+        }
+    ]
+}

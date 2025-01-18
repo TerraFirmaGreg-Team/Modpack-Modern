@@ -1107,7 +1107,7 @@ const registerGTCEURecipes = (event) => {
         C: '#gtceu:circuits/mv',
         D: 'gtceu:solid_machine_casing'
     }).id('tfg:shaped/greenhouse')
-
+	
     // Контроллер электрического генератора
     event.shaped('gtceu:alternator', [
         'ABA', 
@@ -1223,34 +1223,27 @@ const registerGTCEURecipes = (event) => {
     //#endregion
 
     //#region Рецепты электрического генератора
-    
-    event.recipes.gtceu.alternator('32_rpm_to_32_eu')
-        .inputStress(256)
-        .circuit(0)
-        .rpm(32)
-        .duration(2)
-        .EUt(-32)
 
-    event.recipes.gtceu.alternator('64_rpm_to_48_eu')
-        .inputStress(256)
+    event.recipes.gtceu.alternator('lv_alternator')
+	    .inputStress(8192)
         .circuit(1)
-        .rpm(64)
+        .rpm(256)
         .duration(2)
-        .EUt(-48)
+        .outputEU(128)
 
-    event.recipes.gtceu.alternator('128_rpm_to_64_eu')
-        .inputStress(256)
+    event.recipes.gtceu.alternator('mv_alternator')
+		.inputStress(32768)
         .circuit(2)
-        .rpm(128)
+        .rpm(256)
         .duration(2)
-        .EUt(-64)
+        .outputEU(512)
 
-    event.recipes.gtceu.alternator('256_rpm_to_96_eu')
-        .inputStress(256)
+    event.recipes.gtceu.alternator('hv_alternator')
+		.inputStress(131072)
         .circuit(3)
         .rpm(256)
         .duration(2)
-        .EUt(-96)
+        .outputEU(2048)
     
     //#endregion
 
@@ -1812,6 +1805,40 @@ const registerGTCEURecipes = (event) => {
 	
 	// #endregion
 
+	// #region Move MV superconductor to early HV instead of post-vac freezer
+	
+	event.remove({id: 'gtceu:shaped/hv_chemical_bath' })
+	event.shaped('gtceu:hv_chemical_bath', [
+        'ABC',
+        'DEA',
+        'FGF' 
+    ], {
+        A: 'gtceu:hv_conveyor_module',
+        B: 'gtceu:tempered_glass',
+        C: 'gtceu:gold_single_cable',
+        D: 'gtceu:hv_electric_pump',
+		// swap one of the tempered glass for a PE pipe to ensure they've finished the plastic part of MV
+        E: 'gtceu:polyethylene_normal_fluid_pipe', 
+		F: '#gtceu:circuits/hv',
+		G: 'gtceu:hv_machine_hull'
+    }).id('tfg:shaped/hv_chemical_bath')
+	
+	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down_distilled_water')
+		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 100))
+		.itemOutputs('gtceu:magnesium_diboride_ingot')
+		.duration(250)
+		.EUt(480)
+		
+	event.recipes.gtceu.chemical_bath('tfg:magnesium_diboride_cool_down')
+		.itemInputs('gtceu:hot_magnesium_diboride_ingot')
+        .inputFluids(Fluid.of('minecraft:water', 100))
+		.itemOutputs('gtceu:magnesium_diboride_ingot')
+		.duration(400)
+		.EUt(480)
+		
+	// #endregion
+  
     // #region Add all glass colors to macerator/hammer
     event.remove({id: "gtceu:macerator/macerate_glass"});
     event.recipes.gtceu.macerator("gtceu:macerator/macerate_glass")
@@ -1831,10 +1858,51 @@ const registerGTCEURecipes = (event) => {
         .duration(6)
         .EUt(2)
 
-    event.replaceInput(
-        {id: "gtceu:shaped/glass_dust_hammer"},
+    event.replaceInput({id: "gtceu:shaped/glass_dust_hammer"},
         "minecraft:glass",
         "#forge:glass"
     );
+    // #endregion
+
+    // #region Rich coal processing
+    event.recipes.gtceu.coke_oven("tfg:rich_coal_to_coke")
+        .itemInputs('gtceu:rich_raw_coal')
+        .itemOutputs('4x gtceu:coke_gem')
+        .outputFluids(Fluid.of('gtceu:creosote', 2000))
+        .duration(3240)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
+        .itemInputs('3x gtceu:rich_raw_coal')
+        .chancedOutput('gtceu:dark_ash_dust', 5000, 0)
+        .outputFluids(Fluid.of('gtceu:coal_tar', 3000))
+        .duration(288)
+        .EUt(96)
+        .circuit(8)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_coke_creosote")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .outputFluids(Fluid.of('gtceu:creosote', 8000))
+        .duration(576)
+        .EUt(64)
+        .circuit(1)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coal_gas")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:steam'))
+        .outputFluids(Fluid.of('gtceu:coal_gas', 4000))
+        .duration(288)
+        .EUt(96)
+        .circuit(22)
+
+    event.recipes.gtceu.pyrolyse_oven("tfg:coal_to_coke_creosote_nitrogen")
+        .itemInputs('4x gtceu:rich_raw_coal')
+        .itemOutputs('16x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:nitrogen'))
+        .outputFluids(Fluid.of('gtceu:creosote', 8000))
+        .duration(288)
+        .EUt(96)
+        .circuit(2)
     // #endregion
 }

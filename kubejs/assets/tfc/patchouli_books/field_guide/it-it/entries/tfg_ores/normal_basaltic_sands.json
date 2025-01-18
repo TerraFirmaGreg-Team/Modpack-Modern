@@ -1,0 +1,88 @@
+{
+    "name": "Mineral Sands",
+    "icon": "gtceu:raw_basaltic_mineral_sand",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 160$(br)Density: 0.3$(br)Type: Disc Vein$(br)Y: -32 - 60$(br)Size: 48$(br)Height: 9$(br2)Stone types: Granite, Basalt$(br2)Indicator: Basaltic & Granitic Mineral Sand, Fuller's Earth, Gypsum"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Basaltic Mineral Sand",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/basaltic_mineral_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 35%$(br)Smelts into: Cast Iron$(br)Formula: (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Granitic Mineral Sand",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/granitic_mineral_sand"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Smelts into: Cast Iron$(br)Formula: (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Fuller's Earth",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/fullers_earth"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 25%$(br)Source of: Magnesium$(br)Formula: MgSi₄H(H₂O)₄O₁₁"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Gypsum",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/gypsum"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Percentage: 15%$(br)Used for: Alabaster (dyeable) bricks$(br)Formula: CaS(H₂O)₂O₄"
+        }
+    ]
+}

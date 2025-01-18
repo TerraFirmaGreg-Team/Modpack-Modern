@@ -1,0 +1,69 @@
+{
+    "name": "Смарагд і Берилій",
+    "icon": "minecraft:emerald",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 180$(br)Щільність: 0.35$(br)Тип: Трубна вена$(br)Y: -32 - 50$(br)Висота: 60$(br)Радіус: 10$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит$(br2)Індикатор: Берилій, Смарагд, Торій"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Берилій",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/beryllium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Використовується для: Перли Енда$(br)Формула: Be$(br)Небезпечний: Так"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Смарагд",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/emerald"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Використовується для: MV компонентів, Фільтр тегів предметів$(br)Формула: Be₃Al₂Si₆O₁₈"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Торій",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/thorium"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Використовується для: Нічого!$(br)Формула: Th"
+        }
+    ]
+}
