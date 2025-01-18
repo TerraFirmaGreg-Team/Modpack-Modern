@@ -17,7 +17,9 @@
 - Create fluxstone recipes in macerator and forge hammer (KorGgenT).
 - Fixes fertilizer recipe and modifies some mixer recipes relating to dirt (CaptainGold1).
 - Changed train tracks to be cheaper (Pyritie).
-- Create Sails: Recipe Improvements (Nebby1999)
+- Create Sails: Recipe Improvements (Nebby1999).
+- Moved MV superconductor to early HV instead of late HV (Pyritie).
+- Added some Italy and Ukraine translation (MetenBouldry).
 ### New mods
 - Inventory Tweaks Refoxed 1.1
 - EveryCompat
@@ -25,6 +27,7 @@
 ### Updated mods
 - FirmaLife ? -> 2.1.15
 - Moonlight ? -> ?
+- TFC ? -> ?
 ### Removed mods
 - Inventory Sorter
 

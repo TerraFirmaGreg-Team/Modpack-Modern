@@ -1,0 +1,48 @@
+{
+	"name": "Blast Furnace Tips",
+	"icon": "tfc:blast_furnace",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "TerraFirmaCraft Blast Furnace Tips",
+			"text": "So, you finally found that $(item)Kaolinite$() and are probably feeling pretty excited about making a 5-level $(thing)Blast Furnace$(). Here are some tips before you go wild!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:compressed_fireclay",
+			"text": "Before you use all your fire clay on 20 fire bricks, note that once you get into the steam age, you can create fire bricks out of only clay, through $(item)Compressed Fireclay$() (you'll need steam machines for the clay dust). This allows you to save $(item)Kaolinite$() and $(item)Graphite$() for $(thing)Casting Tables$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Preheating Metal",
+			"item": "tfc:firepit",
+			"text": "To convert the iron to steel, the blast furnace must heat the iron inside to $(thing)Brilliant White$(). On the first operation, the metal warms up along with the blast furnace. However, subsequent operations will take a similar amount of time despite the furnace being at temp already, as it needs to heat the metal from cold."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "If the metal is hot when added into the blast furnace, it will take less time to reach brilliant white. Consider heating your metal in a $(l:tfc:mechanics/charcoal_forge)Charcoal Forge$() before putting it into an already-hot furnace to save time, especially with smaller blast furnaces that process less at a time."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Valid Inputs",
+			"item": "gtceu:iron_dust",
+			"text": "Only certain processing stages of ores are accepted in the blast furnace. $(thing)Ore Dusts$(), $(thing)Raw Ores$(), and $(thing)Cast/Wrought Iron Ingots$() work, while $(thing)Crushed$(), $(thing)Impure$(), or other stages of processing will not. But you really should $(l:tfc:tfg_ores/ore_basics#processing)Process$() your ores to dust."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Automation",
+			"item": "create:mechanical_pump",
+			"text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can pump liquid directly out of the blast furnace using a Create $(item)Mechanical Pump$(). Pump into a $(l:tfc:tfcchannelcasting/channel_casting)Mold Table$() and extract the ingots with a hopper or chute: Easy automation!$(br2)You can automate the bellows with a $(item)Deployer$() too! Just be careful, as using the bellows excessively consumes more fuel and breaks your $(thing)tuyere$() faster.$(br2)You can process the resulting $(item)Pig Iron$() and $(item)High Carbon Steel$() in a $(thing)Forge Hammer$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "You can automatically replace broken tuyeres with a hopper facing into the blast furnace."
+		}
+	]
+}

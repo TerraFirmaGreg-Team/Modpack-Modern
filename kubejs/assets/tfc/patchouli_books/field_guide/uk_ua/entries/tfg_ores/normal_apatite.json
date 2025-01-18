@@ -1,0 +1,69 @@
+{
+    "name": "Апатит і Пірохлор",
+    "icon": "gtceu:raw_apatite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 220$(br)Щільність: 0.25$(br)Тип: Кластерна вена$(br)Y: -32 - 60$(br)Розмір: 34$(br2)Типи каменю: Граніт, Діорит, Габро, Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур$(br2)Індикатор: Апатит, Трикальційфосфат, Пірохлор"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Апатит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/apatite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 50%$(br)Джерело: Кальцій, Фосфор, Лісовий ПТСР$(br)Формула: Ca₅(PO₄)₃Cl"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Трикальційфосфат",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tricalcium_phosphate"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Кальцію, Фосфору$(br)Формула: Ca₃(PO₄)₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Пірохлор",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pyrochlore"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Ніобій$(br)Формула: Ca₂Nb₂O₇"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+	"name": "Dealing with Hazards",
+	"icon": "gtceu:hazmat_headpiece",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Some ores are hazardous! Having them in your inventory will deal continuous poison damage.$(br2)There's a full $(thing)hazmat suit$(), but that's all the way in $(thing)MV$(), so what can you do instead?$(br2)Here's some tips until TFG is able to update to a newer version of a GregTech that provides its own primitive protection equipment."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Later, if you want to move hazardous materials around, you can take them out of small vessels and into chests and machines by $(thing)Right-clicking$() on the vessel. This way, it will never enter your inventory!$(br2)Lastly, if you don't enjoy hazards, you can turn them off in the GregTech options."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Rocks",
+			"item": {
+				"tag": "tfc:rock_knapping"
+			},
+			"text": "The easiest way to prevent hazardous items from entering your inventory is to not pick them up at all.$(br)Filling your inventory with $(thing)Rocks$(), for example, will let you pick and choose which items you want to pick up, letting you deal with the hazardous ones all at once later."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Containers",
+			"text": "As mentioned, the hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:mechanics/crankshaft)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$().",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Armor",
+			"text": "Better armor will reduce the damage taken from hazardous materials.",
+			"item": {
+				"tag": "minecraft:trimmable_armor"
+			}
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Spring Water",
+			"item": "tfc:bucket/spring_water",
+			"text": "Standing in $(thing)Spring Water$() will provide a slow $(thing)Regeneration$() effect."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Aged Alcohol",
+			"text": "$(thing)Aged Alcohol$() will give potion buffs, some of which you might find useful.$(br2)You can drink them with a $(l:getting_started/pottery#jug)Jug$() or $(l:waterflasks/recipes)Flask$().",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Aged Beer: Absorption II (20:00)$(br2)Aged Cider: Speed (5:20)$(br2)Aged Rum: Speed II (2:40)$(br2)Aged Sake: Resistance (5:20)$(br2)Aged Vodka: Resistance II (2:40)$(br2)Aged Corn Whiskey: Haste (5:20)$(br2)Aged Rye Whiskey: Haste (5:20)$(br2)Aged Whiskey: Haste II (2:40)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"tag": "tfc:foods"
+			},
+			"title": "Nutrition",
+			"text": "Eating better foods with more $(l:getting_started/food_and_water#nutrients)nutrition$() will raise your maximum HP by a significant amount.$(br2)$(l:mechanics/pot#soup)Soups$(), $(l:mechanics/sandwiches)Sandwiches$(), and $(l:mechanics/salad)Salads$() are great for this."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Bed",
+			"item": {
+				"tag": "minecraft:beds"
+			},
+			"text": "If all else fails, bringing along a bed to respawn is a good idea.$(br2)If you don't have access to $(thing)Wool$() or $(thing)String$(), you can also make a $(l:getting_started/a_place_to_sleep)Thatch Bed$()."
+		}
+	]
+}

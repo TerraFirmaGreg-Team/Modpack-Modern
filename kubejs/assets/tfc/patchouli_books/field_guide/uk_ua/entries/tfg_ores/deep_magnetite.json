@@ -1,0 +1,107 @@
+{
+    "name": "Хроміт і Магнетит",
+    "icon": "gtceu:rich_raw_chromite",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 205$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -64 - 30$(br)Розмір: 340$(br2)Типи каменю: Глинистий сланець, Аргіліт, Вапняк, Конгломерат, Доломіт, Кременистий сланець, Крейда$(br2)Індикатор: Магнетит, Самородне золото, Хроміт, Сапфір"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Хроміт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/chromite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 60%$(br)Джерело: Хрому$(br)Формула: FeCr₂O₄"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Магнетит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/magnetite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 5%$(br)Розплавляється в: Чавун$(br)Формула: Fe₃O₄"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Ванадієвий магнетит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/vanadium_magnetite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Заліза, Ванадію$(br)Формула: (Fe₃O₄)V"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Золото",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/gold"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Розплавляється в: Золото$(br)Формула: Au"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Сапфір",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sapphire"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 5%$(br)Джерело: Алюмінію$(br)Формула: Al₂O₃"
+        }
+    ]
+}
