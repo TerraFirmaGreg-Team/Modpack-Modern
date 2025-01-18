@@ -27,6 +27,7 @@
 ### Updated mods
 - FirmaLife ? -> 2.1.15
 - Moonlight ? -> ?
+- TFC ? -> ?
 ### Removed mods
 - Inventory Sorter
 
