@@ -192,6 +192,15 @@ const registerTFCItemTags = (event) => {
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
+    
+    // Теги для кирпичных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
 
     // Удаление тегов у отключенных предметов
     global.TFC_DISABLED_ITEMS.forEach(item => {
@@ -210,6 +219,15 @@ const registerTFCBlockTags = (event) => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
             event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
+    
+    // Теги для кирпичных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
 
