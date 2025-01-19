@@ -1353,7 +1353,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "chat_heads-0.13.3-forge-1.20.jar",
+                    "file_name": "chat_heads-0.13.9-forge-1.20.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -1362,16 +1362,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5761/157/chat_heads-0.13.3-forge-1.20.jar",
-                    "id": "5761157",
+                    "url": "https://edge.forgecdn.net/files/6086/695/chat_heads-0.13.9-forge-1.20.jar",
+                    "id": "6086695",
                     "parent_id": "407206",
                     "hashes": {
-                        "sha1": "7bff1413cffdb3ef89cd771424ce43e90c920b66",
-                        "md5": "61594d1228912c730cb57c131a970774"
+                        "sha1": "3577a46f533736bcc8167322db86634dbcdf8316",
+                        "md5": "6782ffbed16af1e1015d958347a05381"
                     },
                     "required_dependencies": [],
-                    "size": 261328,
-                    "date_published": "2024-09-27T08:59:47.183Z"
+                    "size": 266124,
+                    "date_published": "2025-01-14T15:31:08.823Z"
                 }
             ]
         },
@@ -1416,7 +1416,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "cherishedworlds-forge-6.1.6+1.20.1.jar",
+                    "file_name": "cherishedworlds-forge-6.1.7+1.20.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -1425,16 +1425,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5161/389/cherishedworlds-forge-6.1.6+1.20.1.jar",
-                    "id": "5161389",
+                    "url": "https://edge.forgecdn.net/files/5955/879/cherishedworlds-forge-6.1.7+1.20.1.jar",
+                    "id": "5955879",
                     "parent_id": "308240",
                     "hashes": {
-                        "sha1": "07dc81c2c36fd3686185eaa1668bf1e9a483e048",
-                        "md5": "8172ddff5a27a1a31baffac05d4b340b"
+                        "sha1": "d3eb588c64691c9da83460e3b2e783401d337a34",
+                        "md5": "f05683884add93d912932c601dff8ef5"
                     },
                     "required_dependencies": [],
-                    "size": 60991,
-                    "date_published": "2024-03-06T03:34:25.920Z"
+                    "size": 60956,
+                    "date_published": "2024-12-02T08:22:35.773Z"
                 }
             ]
         },
@@ -3674,7 +3674,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.3.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3683,18 +3683,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5280/601/Firmalife-1.20.1-2.1.3.jar",
-                    "id": "5280601",
+                    "url": "https://edge.forgecdn.net/files/6033/720/Firmalife-1.20.1-2.1.15.jar",
+                    "id": "6033720",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "d6e816739414ba33b656abb64a768ebd59a3741e",
-                        "md5": "76e7894b778a5aba23abff1aa42c7879"
+                        "sha1": "9151f69e32e11b26ad2b951d7d59a6a80c338dc2",
+                        "md5": "fd688c9477317cfb1ff04df897221c79"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 3782265,
-                    "date_published": "2024-04-21T19:43:47.553Z"
+                    "size": 4521752,
+                    "date_published": "2024-12-29T16:29:54.183Z"
                 }
             ]
         },
@@ -8868,7 +8868,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.2.jar",
+                    "file_name": "TerraFirmaCraft-Forge-1.20.1-3.2.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8877,18 +8877,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5276/689/TerraFirmaCraft-Forge-1.20.1-3.2.2.jar",
-                    "id": "5276689",
+                    "url": "https://edge.forgecdn.net/files/5994/481/TerraFirmaCraft-Forge-1.20.1-3.2.12.jar",
+                    "id": "5994481",
                     "parent_id": "302973",
                     "hashes": {
-                        "sha1": "1c9e57a231a3d4b71211fd5469740a28dcd15d9b",
-                        "md5": "dc80609fd7709b1012d9d66e5f98f5a4"
+                        "sha1": "7e687dd2f44517572b02be44d07647a8a882e121",
+                        "md5": "e92901bf830a050b2676e629f2c8e3cb"
                     },
                     "required_dependencies": [
                         "306770"
                     ],
-                    "size": 49761021,
-                    "date_published": "2024-04-20T14:23:02.793Z"
+                    "size": 47443029,
+                    "date_published": "2024-12-15T21:45:03.430Z"
                 }
             ]
         },
