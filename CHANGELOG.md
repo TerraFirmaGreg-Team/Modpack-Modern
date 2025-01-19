@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.7.18] - 19.01.2025
+### Changes
+- Fix moonlight mod.
+
 ## [0.7.17] - 19.01.2025
 ### Changes
 - Added ore index, started work on other TFC info category (Pyritie).
