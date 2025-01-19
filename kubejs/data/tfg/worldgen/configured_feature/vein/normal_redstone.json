@@ -29,22 +29,38 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
+      "rarity": 15,
       "depth": 60,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
           "block": "minecraft:redstone_wire",
-          "weight": 70
+          "weight": 45
         },
-		{
-          "block": "gtceu:ruby_indicator",
+        {
+          "block": "tfg:buds/small_ruby_bud",
           "weight": 20
         },
-		{
-          "block": "gtceu:cinnabar_indicator",
+        {
+          "block": "tfg:buds/medium_ruby_bud",
+          "weight": 12
+        },
+        {
+          "block": "tfg:buds/large_ruby_bud",
+          "weight": 8
+        },
+        {
+          "block": "tfg:buds/small_cinnabar_bud",
           "weight": 10
+        },
+        {
+          "block": "tfg:buds/medium_cinnabar_bud",
+          "weight": 6
+        },
+        {
+          "block": "tfg:buds/large_cinnabar_bud",
+          "weight": 4
         }
       ]
     }

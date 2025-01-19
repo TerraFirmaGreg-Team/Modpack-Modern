@@ -116,8 +116,16 @@
           "weight": 40
         },
 		{
-          "block": "gtceu:realgar_indicator",
-          "weight": 20
+          "block": "tfg:buds/small_realgar_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/medium_realgar_bud",
+          "weight": 6
+        },
+		{
+          "block": "tfg:buds/large_realgar_bud",
+          "weight": 4
         }
       ]
     }
