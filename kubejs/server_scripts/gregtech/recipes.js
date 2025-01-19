@@ -1281,16 +1281,17 @@ const registerGTCEURecipes = (event) => {
         .EUt(24)
 
     //#endregion
+
+    //#region remove LV casing exploit
 	
-	//#region remove LV casing exploit
-	
-    /*event.remove({ id: 'gtceu:assembler/casing_lv' })
+  event.remove({ id: 'gtceu:assembler/casing_lv' })
+
 	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
 		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
 		.itemOutputs('gtceu:lv_machine_casing')
 		.circuit(8)
 		.duration(50)
-		.EUt(16)*/
+		.EUt(16)
 		
 	//#endregion
 		
@@ -1357,6 +1358,16 @@ const registerGTCEURecipes = (event) => {
 		.EUt(20)
 	
 	//#endregion
+  
+    // Add circuit to assembler recipe for redstone lamp.
+    // Avoids conflict with AE2 smart cables.
+    event.remove({ id: 'gtceu:assembler/redstone_lamp' })
+    event.recipes.gtceu.assembler('redstone_lamp')
+        .itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
+        .itemOutputs('1x minecraft:redstone_lamp')
+        .circuit(1)
+        .duration(100)
+        .EUt(1)
 
     //#region Рецепты, которые итерируются по всем материалам
 
@@ -1538,29 +1549,6 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 	
-	  //#region fix more duping
-  
-    // Fix LV recycling producing red/blue steel.
-    // Replace red steel outputs with 8x steel, delete blue steel outputs.
-    event.replaceOutput(
-        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
-        '#forge:ingots/red_steel',
-        '8x #forge:ingots/steel')
-
-    event.replaceOutput(
-        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
-        '#forge:ingots/blue_steel',
-        '')
-
-    event.replaceOutput(
-        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
-        '#forge:dusts/red_steel',
-        '8x #forge:dusts/steel')
-
-    event.replaceOutput(
-        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
-        '#forge:dusts/blue_steel',
-        '')
 
     // Clear NBT on tanks with shapeless crafts.
     const TANK_NAMES = [
@@ -1581,8 +1569,6 @@ const registerGTCEURecipes = (event) => {
         // Craft super chests to remove their NBT data.
         event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
     })
-
-    //#region fix more duping
 	
 	// red alloy, because crucible always makes 4+1=5
 	
