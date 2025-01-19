@@ -6302,7 +6302,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.13.2-forge.jar",
+                    "file_name": "moonlight-1.20-2.13.51-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6311,16 +6311,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5768/751/moonlight-1.20-2.13.2-forge.jar",
-                    "id": "5768751",
+                    "url": "https://edge.forgecdn.net/files/6100/164/moonlight-1.20-2.13.51-forge.jar",
+                    "id": "6100164",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "8a3e4b474f6615bb55f1da0107f08f3431092ebc",
-                        "md5": "534883d070391e776d06562c8464eb0d"
+                        "sha1": "c32ada3857b70dff88aa698e4c2f0a1d36b956d6",
+                        "md5": "37ec156a26377b695017e4568990427f"
                     },
                     "required_dependencies": [],
-                    "size": 1184120,
-                    "date_published": "2024-09-29T19:52:55.607Z"
+                    "size": 1223674,
+                    "date_published": "2025-01-18T17:33:26.290Z"
                 }
             ]
         },
