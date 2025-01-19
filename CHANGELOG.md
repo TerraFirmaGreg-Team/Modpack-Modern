@@ -22,6 +22,7 @@
 - Added some Italy and Ukraine translation (MetenBouldry).
 - Сreate some rich coal recipes in coke oven and pyro oven (Exzept1on).
 - Add blaze burner, fix alternator (Pyritie).
+- Added budding crystals for the other gemstone ores (Pyritie).
 ### New mods
 - Inventory Tweaks Refoxed 1.1
 - EveryCompat
