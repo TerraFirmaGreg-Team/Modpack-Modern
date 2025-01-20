@@ -5,7 +5,7 @@
     "pages": [
       {
         "type": "patchouli:text",
-        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or from a lengthy process using specific types of Wood. Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
+        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or $(l:mechanics/papermaking/paperfromwood)from a lengthy process using specific types of Wood$(). Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
       },
       {
         "type": "patchouli:crafting",
@@ -78,6 +78,7 @@
       },
       {
         "type": "patchouli:text",
+        "anchor": "paperfromwood",
         "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper",
         "title": "Paper from Wood"
       },
@@ -113,13 +114,13 @@
         "type": "patchouli:crafting",
         "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
         "title": "Piling up the Pulp",
-        "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench. $(bold)More sophisticated methods of crushing the strips yield higher amounts of pulp$()"
+        "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More sophisticated methods of crushing the strips yield higher amounts of pulp"
       },
       {
         "type": "patchouli:spotlight",
         "item": "gtceu:thermochemically_treated_hardwood_dust",
         "title": "Breaking down the Pulp",
-        "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(l:firmalife/oven_appliances#vat)Boiling it with Lye in a Vat$(). At least 200 Milibuckets of Lye must be present in the vat for the process to complete."
+        "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
       },
       {
         "type": "patchouli:empty"
