@@ -3453,7 +3453,7 @@ const registerTFCRecipes = (event) => {
         .duration(100)
         .EUt(4)
 
-    // Silk Cloth
+    // Wool Cloth
     event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')             
         .itemInputs('16x tfc:wool_yarn')
         .itemOutputs('tfc:wool_cloth')
