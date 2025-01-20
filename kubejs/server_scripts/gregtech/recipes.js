@@ -1,38 +1,12 @@
 // priority: 0
 
 const registerGTCEURecipes = (event) => {
-    
-    //#region Hardwood Dust from Hardwood
-    //Lathe - Replace regular logs tag with softwood tag
-    event.replaceInput({id: 'gtceu:lathe/lathe_logs'}, '#minecraft:logs', '#tfg:softwood')
-    //Create identical lathe recipe for hardwood
-    event.recipes.gtceu.lathe('lathe_hardwood')
-        .itemInputs('#tfg:hardwood')
-        .itemOutputs('4x gtceu:long_wood_rod', '2x gtceu:hardwood_dust')
-        .duration(160)
-        .EUt(7)
-
-    //Replace any recipe that outputs wood dust to use hardwood dust if it's ID string contains the name of one of the hardwood types.
-    //This absolutely fuckin sucks but it works
-    event.forEachRecipe({output: 'gtceu:wood_dust'}, r =>{
-        global.TFC_HARDWOOD_TYPES.forEach(hardwoodType =>
-        {
-            if(r.id.toString().includes(hardwoodType))
-            {
-                r.replaceOutput('gtceu:wood_dust', 'gtceu:hardwood_dust')
-                r.replaceOutput('gtceu:small_wood_dust', 'gtceu:small_hardwood_dust')
-                r.replaceOutput('gtceu:tiny_wood_dust', 'gtceu_tiny_hardwood_dust')
-                return;
-            }
-        })
-    })
-    
     //#region Выход: Удобрение
     // В обычном миксере
     event.recipes.gtceu.mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
-            '2x #forge:dusts/wood',
+            '2x #tfg:wood_dusts',
             '4x #forge:sand'
         )
         .circuit(1)
@@ -45,7 +19,7 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.create_mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
-            '2x #forge:dusts/wood',
+            '2x #tfg:wood_dusts',
             '4x #forge:sand'
         )
         .circuit(1)

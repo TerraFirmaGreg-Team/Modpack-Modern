@@ -26,6 +26,7 @@ ServerEvents.tags('item', event => {
     registerSophisticatedBackpacksItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
+    registerTFGItemTags(event)
 })
 
 /**
