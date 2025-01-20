@@ -1,6 +1,10 @@
 # Changelog
 
-## [0.7.17] - ?
+## [0.7.18] - 19.01.2025
+### Changes
+- Fix moonlight mod.
+
+## [0.7.17] - 19.01.2025
 ### Changes
 - Added ore index, started work on other TFC info category (Pyritie).
 - Changed the AE2 network analyzer to HV instead of IV (Pyritie).
@@ -22,16 +26,8 @@
 - Added some Italy and Ukraine translation (MetenBouldry).
 - Сreate some rich coal recipes in coke oven and pyro oven (Exzept1on).
 - Add blaze burner, fix alternator (Pyritie).
-### New mods
-- Inventory Tweaks Refoxed 1.1
-- EveryCompat
-- MemoryLeakFix
-### Updated mods
-- FirmaLife ? -> 2.1.15
-- Moonlight ? -> ?
-- TFC ? -> ?
-### Removed mods
-- Inventory Sorter
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Fix casing exploit, change recipes for tfc alloy (Pyritie).
 
 ## [0.7.16] - 12.01.2025
 ### Changes
