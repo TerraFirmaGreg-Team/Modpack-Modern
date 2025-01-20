@@ -3442,20 +3442,23 @@ const registerTFCRecipes = (event) => {
     // Burlap Cloth
     event.recipes.gtceu.assembler('tfg:tfc/burlap_cloth')             
         .itemInputs('12x tfc:jute_fiber')
+        .circuit(0)
         .itemOutputs('tfc:burlap_cloth')
         .duration(100)
         .EUt(4)
 
     // Silk Cloth
-    event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')             
+    event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')
         .itemInputs('24x minecraft:string')
+        .circuit(0)
         .itemOutputs('tfc:silk_cloth')
         .duration(100)
         .EUt(4)
 
     // Wool Cloth
-    event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')             
+    event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')
         .itemInputs('16x tfc:wool_yarn')
+        .circuit(0)
         .itemOutputs('tfc:wool_cloth')
         .duration(100)
         .EUt(4)
