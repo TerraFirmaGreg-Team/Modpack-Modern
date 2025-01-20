@@ -3466,6 +3466,7 @@ const registerTFCRecipes = (event) => {
     // Cloths to Wool
     event.recipes.gtceu.assembler('tfg:tfc/cloth_to_wool')
         .itemInputs('4x #tfc:sewing_light_cloth')
+	.circuit(0)
         .itemOutputs('8x minecraft:white_wool')
         .duration(100)
         .EUt(4)
