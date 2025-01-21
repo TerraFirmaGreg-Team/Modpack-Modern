@@ -3585,8 +3585,8 @@ const registerTFCRecipes = (event) => {
     event.replaceInput({id: 'firmalife:crafting/solar_drier'}, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
 
     //Wood ash
-    event.blasting('tfc:powder/wood_ash', 'tfc:powder/charcoal')
-        .id('blast_charcoal_powder')
+    event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
+        .id('tfg:splashing/wash_torch')
 
     //Lye in mixer
     generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
