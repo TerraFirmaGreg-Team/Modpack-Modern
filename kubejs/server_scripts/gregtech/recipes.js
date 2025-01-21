@@ -1891,4 +1891,15 @@ const registerGTCEURecipes = (event) => {
         .EUt(96)
         .circuit(2)
     // #endregion
+
+    // #region tin double alloy ingot ulv to lv recipe
+
+    event.remove({id: "tfg:bender/tin_alloy_double_ingot"});
+    event.recipes.gtceu.bender('tfg:bender/tin_alloy_double_ingot')
+        .itemInputs('2x gtceu:tin_alloy_ingot')
+        .itemOutputs('1x gtceu:tin_alloy_double_ingot')
+        .duration(87)
+        .EUt(30)
+        .circuit(2)
+    // #endregion
 }
