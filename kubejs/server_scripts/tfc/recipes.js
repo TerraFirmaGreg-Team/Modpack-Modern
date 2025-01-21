@@ -3463,6 +3463,14 @@ const registerTFCRecipes = (event) => {
     // Jute Fiber
     generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
+    // Seaweed and kelp
+    event.recipes.tfc.heating('tfc:groundcover/seaweed', 200)
+	.resultItem('tfc:food/dried_seaweed')
+    event.recipes.tfc.heating('tfc:plant/leafy_kelp', 200)
+	.resultItem('tfc:food/dried_kelp')
+    event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
+	.resultItem('tfc:food/dried_kelp')
+	
     // Soda Ash
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
