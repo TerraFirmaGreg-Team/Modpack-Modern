@@ -78,6 +78,13 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
             makeItemHeatByTagPrefix(TFGTagPrefix.poorRawOre, material, tfcProperty, 1.429)
 
+            // Ore processing stages
+            makeItemHeatByTagPrefix(TagPrefix.dustImpure, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.dustPure, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.crushed, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.crushedPurified, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty, 1.429)
+
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadScythe, material, tfcProperty, 1.429)
