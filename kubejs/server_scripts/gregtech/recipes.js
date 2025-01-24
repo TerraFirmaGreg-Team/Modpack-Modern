@@ -1896,7 +1896,8 @@ const registerGTCEURecipes = (event) => {
     event.remove({ id: "gtceu:alloy_smelter/glass_plate" });
 
     event.recipes.gtceu.alloy_smelter('tfg:glass_plate')
-        .itemInputs('gtceu:glass_dust', 'gtceu:plate_casting_mold')
+        .itemInputs('gtceu:glass_dust')
+        .notConsumable('gtceu:plate_casting_mold')
         .itemOutputs('gtceu:glass_plate')
         .duration(40)
         .EUt(6)
