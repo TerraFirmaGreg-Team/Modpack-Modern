@@ -2,7 +2,7 @@
 	"type": "tfc:cluster_vein",
 	"biomes": "#tfg:moon_biomes",
 	"config": {
-		"rarity": 50,
+		"rarity": 100,
 		"density": 0.3,
 		"min_y": -32,
 		"max_y": 100,
@@ -16,15 +16,15 @@
 				"with": [
 					{
 						"block": "gtceu:basalt_quartzite_ore",
-						"weight": 15
+						"weight": 10
 					},
 					{
 						"block": "gtceu:basalt_certus_quartz_ore",
-						"weight": 40
+						"weight": 50
 					},
 					{
 						"block": "gtceu:basalt_barite_ore",
-						"weight": 15
+						"weight": 10
 					},
 					{
 						"block": "gtceu:basalt_nether_quartz_ore",
@@ -38,19 +38,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:basalt_quartzite_ore",
-						"weight": 15
+						"block": "gtceu:dunite_quartzite_ore",
+						"weight": 10
 					},
 					{
-						"block": "gtceu:basalt_certus_quartz_ore",
-						"weight": 40
+						"block": "gtceu:dunite_certus_quartz_ore",
+						"weight": 50
 					},
 					{
-						"block": "gtceu:basalt_barite_ore",
-						"weight": 15
+						"block": "gtceu:dunite_barite_ore",
+						"weight": 10
 					},
 					{
-						"block": "gtceu:basalt_nether_quartz_ore",
+						"block": "gtceu:dunite_nether_quartz_ore",
 						"weight": 30
 					}
 				]
@@ -62,15 +62,15 @@
 				"with": [
 					{
 						"block": "gtceu:gabbro_quartzite_ore",
-						"weight": 15
+						"weight": 10
 					},
 					{
 						"block": "gtceu:gabbro_certus_quartz_ore",
-						"weight": 40
+						"weight": 50
 					},
 					{
 						"block": "gtceu:gabbro_barite_ore",
-						"weight": 15
+						"weight": 10
 					},
 					{
 						"block": "gtceu:gabbro_nether_quartz_ore",
@@ -84,19 +84,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:gabbro_quartzite_ore",
-						"weight": 15
+						"block": "gtceu:anorthite_quartzite_ore",
+						"weight": 10
 					},
 					{
-						"block": "gtceu:gabbro_certus_quartz_ore",
-						"weight": 40
+						"block": "gtceu:anorthite_certus_quartz_ore",
+						"weight": 50
 					},
 					{
-						"block": "gtceu:gabbro_barite_ore",
-						"weight": 15
+						"block": "gtceu:anorthite_barite_ore",
+						"weight": 10
 					},
 					{
-						"block": "gtceu:gabbro_nether_quartz_ore",
+						"block": "gtceu:anorthite_nether_quartz_ore",
 						"weight": 30
 					}
 				]
@@ -108,15 +108,15 @@
 				"with": [
 					{
 						"block": "gtceu:diorite_quartzite_ore",
-						"weight": 15
+						"weight": 10
 					},
 					{
 						"block": "gtceu:diorite_certus_quartz_ore",
-						"weight": 40
+						"weight": 50
 					},
 					{
 						"block": "gtceu:diorite_barite_ore",
-						"weight": 15
+						"weight": 10
 					},
 					{
 						"block": "gtceu:diorite_nether_quartz_ore",
@@ -126,7 +126,7 @@
 			}
 		],
 		"indicator": {
-			"rarity": 5,
+			"rarity": 12,
 			"depth": 40,
 			"underground_rarity": 40,
 			"underground_count": 200,

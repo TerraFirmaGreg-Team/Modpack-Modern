@@ -48,6 +48,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     registerGTCEuMachines(event)
 })
 
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    registerGTCEuTagPrefixes(event)
+})
+
 /**
  * Событие регистрации информации о составе предмета.
  */
