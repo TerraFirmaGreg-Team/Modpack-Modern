@@ -4,6 +4,7 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
+	registerAdAstraItemTags(event)
     registerAE2ItemTags(event)
     registerAsticorCartsItemTags(event)
     registerChiselAndBitsItemTags(event)
@@ -32,6 +33,7 @@ ServerEvents.tags('item', event => {
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
+	registerAdAstraBlockTags(event)
     registerAE2BlockTags(event)
     registerAsticorCartsBlockTags(event)
     registerChiselAndBitsBlockTags(event)
@@ -57,6 +59,7 @@ ServerEvents.tags('block', event => {
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
+	registerAdAstraFluidTags(event)
     registerCreateFluidTags(event)
     registerCreateAdditionsFluidTags(event)
     registerFirmaLifeBlockTags(event)
@@ -67,8 +70,17 @@ ServerEvents.tags('fluid', event => {
  * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
+    registerAdAstraPlacedFeatures(event)
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
+})
+
+ServerEvents.tags('worldgen/biome', event => {
+	registerAdAstraBiomeTags(event)
+})
+
+ServerEvents.tags('entity_type', event => {
+	registerAdAstraEntityTypeTags(event)
 })
 
 /**
@@ -111,6 +123,7 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+	registerAdAstraRecipes(event)
     registerAE2Recipes(event)
     registerAsticorCartsRecipes(event)
     registerAE2InsertExportCardRecipes(event)

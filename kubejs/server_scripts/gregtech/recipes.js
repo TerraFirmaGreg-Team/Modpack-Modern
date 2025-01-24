@@ -1282,16 +1282,32 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
-    //#region remove LV casing exploit
+    //#region LV casings and hulls
 	
-  event.remove({ id: 'gtceu:assembler/casing_lv' })
+	event.replaceInput('gtceu:shaped/casing_lv', '#forge:plates/red_steel', '#forge:plates/steel')
+	event.replaceInput('gtceu:shaped/casing_lv', '#forge:plates/blue_steel', '#forge:plates/steel')
+	event.replaceInput('gtceu:shaped/lv_machine_hull', '#forge:plates/wrought_iron', '#forge:plates/red_steel')
+		
+    // Replace red steel outputs with 8x steel, delete blue steel outputs.
+    event.replaceOutput(
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
+        '#forge:ingots/red_steel', '8x #forge:ingots/steel')
 
-	event.recipes.gtceu.assembler('tfg:assembler/casing_lv')
-		.itemInputs('4x gtceu:blue_steel_plate', '4x gtceu:red_steel_plate')
-		.itemOutputs('gtceu:lv_machine_casing')
-		.circuit(8)
-		.duration(50)
-		.EUt(16)
+    event.replaceOutput(
+        [/gtceu:arc_furnace\/arc_lv_.*/, 'gtceu:arc_furnace/arc_maintenance_hatch'],
+        '#forge:ingots/blue_steel', '')
+
+    event.replaceOutput(
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
+        '#forge:dusts/red_steel', '8x #forge:dusts/steel')
+
+    event.replaceOutput(
+        [/gtceu:macerator\/macerate_lv_.*/, 'gtceu:macerator/macerate_maintenance_hatch'],
+        '#forge:dusts/blue_steel', '')
+		
+	event.replaceOutput(
+		['gtceu:arc_furnace/arc_configurable_maintenance_hatch', 'gtceu:arc_furnace/arc_auto_maintenance_hatch'],
+		['#forge:ingots/blue_steel', '#forge:ingots/red_steel'], '8x #forge:ingots/steel')
 		
 	//#endregion
 		
@@ -1788,6 +1804,15 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
 	event.replaceInput({id: 'gtceu:mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
 	event.replaceInput({id: 'gtceu:create_mixer/blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+
+    // #endregion
+
+    // #region fix centrifuge recipes for colored steel
+
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
 	
 	// #endregion
 

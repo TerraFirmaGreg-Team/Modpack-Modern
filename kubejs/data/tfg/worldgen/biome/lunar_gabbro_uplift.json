@@ -1,0 +1,71 @@
+{
+	"carvers": {
+		"air": [
+			"tfc:cave",
+			"tfc:canyon"
+		]
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 0,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"sky_color": 1447444,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"features": [
+		[],
+		[],
+		[],
+		[
+			"tfg:moon/blob/asurine",
+			"tfg:moon/blob/cut_deepslate"
+		],
+		[
+			"tfc:vein/diorite_dike",
+			"tfg:moon/surface/warped_sprouts_patch",
+			"tfg:moon/surface/gabbro_rock_pile",
+			"tfg:moon/surface/loose_gabbro_rocks"
+		],
+		[],
+		"#tfg:moon_veins",
+		[]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"ad_astra:star_crawler": {
+			"charge": 0.2,
+			"energy_budget": 0.03
+		}
+	},
+	"spawners": {
+		"ambient": [],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "minecraft:rabbit",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 12
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "ad_astra:star_crawler",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 0.7
+}

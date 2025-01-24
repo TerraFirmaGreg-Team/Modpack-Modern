@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:huge_fungus",
+	"config": {
+		"decor_state": {
+			"Name": "minecraft:shroomlight"
+		},
+		"hat_state": {
+			"Name": "ad_astra:aeronos_cap"
+		},
+		"planted": false,
+		"replaceable_blocks": {
+			"type": "minecraft:solid"
+		},
+		"stem_state": {
+			"Name": "ad_astra:aeronos_stem",
+			"Properties": {
+				"axis": "y"
+			}
+		},
+		"valid_base_block": {
+			"Name": "tfc:rock/gravel/gabbro"
+		}
+	}
+}
