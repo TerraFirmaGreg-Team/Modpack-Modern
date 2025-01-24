@@ -1477,7 +1477,6 @@ const registerGTCEURecipes = (event) => {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
             let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
-            console.log(smallDustStack);
             
 
             let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
