@@ -1071,3 +1071,13 @@ global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1
 }
+
+global.TFC_MAGMA_BLOCKS = [
+    'tfc:rock/magma/granite',
+    'tfc:rock/magma/diorite',
+    'tfc:rock/magma/gabbro',
+    'tfc:rock/magma/rhyolite',
+    'tfc:rock/magma/basalt',
+    'tfc:rock/magma/andesite',
+    'tfc:rock/magma/dacite'
+];
