@@ -71,6 +71,8 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.bolt, material, tfcProperty, 0.245)
             makeItemHeatByTagPrefix(TagPrefix.screw, material, tfcProperty, 0.567)
             makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
+            makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
+            makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
 
             makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
             
