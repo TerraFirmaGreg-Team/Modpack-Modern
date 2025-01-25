@@ -1920,4 +1920,40 @@ const registerGTCEURecipes = (event) => {
         .EUt(96)
         .circuit(2)
     // #endregion
+
+    // #region Fix TFC hanging sign metal dupe for Macerator and Arc Furnace
+
+    const SIGN_METALS = [
+		"copper",
+		"bronze",
+		"black_bronze",
+		"bismuth_bronze",
+		"wrought_iron",
+		"steel",
+		"black_steel",
+		"red_steel",
+		"blue_steel"
+	];
+	
+    SIGN_METALS.forEach(metal => {
+        global.TFC_WOOD_TYPES.forEach(wood => {
+            event.remove(`gtceu:macerator/macerate_wood/hanging_sign/${metal}/${wood}`)
+            event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal}/${wood}`)
+                .itemInputs(`tfc:wood/hanging_sign/${metal}/${wood}`)
+                .itemOutputs('gtceu:wood_dust')
+                .chancedOutput(`gtceu:tiny_${metal}_dust`, 3750, 0)
+                .duration(108)
+                .EUt(8)
+
+            event.remove(`gtceu:arc_furnace/arc_wood/hanging_sign/${metal}/${wood}`)
+            event.recipes.gtceu.arc_furnace(`gtceu:arc_furnace/macerate_wood/hanging_sign/${metal}/${wood}`)
+                .itemInputs(`tfc:wood/hanging_sign/${metal}/${wood}`)
+                .itemOutputs('gtceu:tiny_ash_dust')
+                .chancedOutput(`gtceu:${metal}_nugget`, 3750, 0)
+                .inputFluids(Fluid.of('gtceu:oxygen', 12))
+                .duration(12)
+                .EUt(30)
+        })
+    })
+    // #endregion
 }
