@@ -171,8 +171,8 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 35,
+      "rarity": 15,
+      "depth": 20,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
@@ -185,12 +185,20 @@
           "weight": 25
         },
 		{
-          "block": "gtceu:olivine_indicator",
-          "weight": 25
-        },
-		{
           "block": "gtceu:glauconite_sand_indicator",
           "weight": 15
+        },
+		{
+          "block": "tfg:buds/small_olivine_bud",
+          "weight": 15
+        },
+		{
+          "block": "tfg:buds/medium_olivine_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/large_olivine_bud",
+          "weight": 5
         }
       ]
     }

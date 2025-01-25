@@ -134,6 +134,18 @@
 		{
           "block": "tfc:ore/small_native_gold",
           "weight": 20
+        },
+		{
+          "block": "tfg:buds/small_ruby_bud",
+          "weight": 7
+        },
+		{
+          "block": "tfg:buds/medium_ruby_bud",
+          "weight": 5
+        },
+		{
+          "block": "tfg:buds/large_ruby_bud",
+          "weight": 3
         }
       ]
     }
