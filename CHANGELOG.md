@@ -8,7 +8,7 @@
 - Get small dust from failed pressing (Nebby1999).
 - Fixed cassiterite heating "exploit" (CaptainGold1).
 - TFC magma as passive boiler heater (SverhRazum-Nah).
-- I want us to move away from using TFG-Core in a lot of things related to the modpack, as it was done in 0.8.2, almost everything is done there based on KJS, if someone wants to port the code or write it again, why not (CaptainGold1).
+- Adds heat values for items with valid heating recipes but no heat values (CaptainGold1).
 - Add circuit settings to netherarium/enderarium (Pyritie).
 - Fixed colored steel dust centrifuge recipes (Pyritie).
 - Automatic Scraping with Sequenced Assembly (Nebby1999).
