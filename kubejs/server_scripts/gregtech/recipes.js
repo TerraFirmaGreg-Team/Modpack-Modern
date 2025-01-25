@@ -1476,15 +1476,20 @@ const registerGTCEURecipes = (event) => {
         {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
+            let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
+            
 
             let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
             if (material.hasProperty(PropertyKey.INGOT))
             {
                 if (!plateStack.isEmpty()) {
-                    // Слиток -> Стержень
-                    event.recipes.createPressing(plateStack.withChance(0.8), ingotStack)
-                    .id(`tfg:pressing/${material.getName()}_plate`)
+                    event.recipes.createSequencedAssembly([plateStack.withChance(4), smallDustStack], ingotStack,[
+                        event.recipes.createPressing(ingotStack, ingotStack)
+                    ])
+                    .transitionalItem(ingotStack)
+                    .loops(1)
+                    .id(`tfg:pressing/${material.getName()}_plate`);
 
                     if (!blockStack.isEmpty()) {
                     // 9х Слиток -> Блок
