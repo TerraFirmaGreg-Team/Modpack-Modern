@@ -1,0 +1,157 @@
+{
+    "name": "Papermaking",
+    "category": "tfc:mechanics",
+    "icon": "tfc:unrefined_paper",
+    "pages": [
+      {
+        "type": "patchouli:text",
+        "text": "$(thing)Paper$() is either made from the processed stalk of the $(l:mechanics/crops#papyrus)Papyrus$() crop, from $(l:mechanics/papermaking#parchment)Animal Hides$(), or $(l:mechanics/papermaking/paperfromwood)from a lengthy process using specific types of Wood$(). Paper is useful for written materials like $(thing)Books$() and $(thing)Maps$()."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/papyrus_strips",
+        "text": "Papyrus must first be cut into strips with a $(thing)Knife$()"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "recipe": "tfc:barrel/soaked_papyrus_strip",
+        "text": "Then, papyrus strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$()."
+      },
+      {
+        "type": "tfc:loom_recipe",
+        "recipe": "tfc:loom/unrefined_paper",
+        "text": "Then, soaked papyrus strips are woven together in a loom to make $(thing)Unrefined Paper$(). Finally, it must be placed on a log and $(l:mechanics/leather_making#scraping)Scraped$() to make $(thing)Paper$()."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/vanilla/map",
+        "recipe2": "tfc:crafting/vanilla/name_tag"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "minecraft:writable_book",
+        "recipe2": "minecraft:book"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/wood/pine_lectern",
+        "recipe2": "tfc:crafting/wood/kapok_bookshelf"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "Flip to the next page for information on papermaking via the parchment process."
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "parchment",
+        "text": "$(thing)Parchment Paper$() starts with a scraped hide. Review the $(l:mechanics/leather_making)leather making chapter$() to learn how to make it. Parchment requires treatment with a few different items. First, $(thing)Pumice$() is needed. Pumice is found on the ground near $(l:the_world/geology)Volcanoes$(), or from $(l:mechanics/sluices)Sluicing$() or $(l:mechanics/panning)Panning$() ore deposits with Andesite, Rhyolite, or Dacite in them.",
+        "title": "Parchment"
+      },
+      {
+        "type": "patchouli:multiblock",
+        "multiblock": {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "tfc:groundcover/pumice"
+          }
+        },
+        "name": "Pumice",
+        "text": "A Pumice rock placed on the ground.",
+        "enable_visualize": false
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/large_treated_hide",
+        "text": "Crafting pumice, a hammer, and scraped hide gives sections of $(thing)Treated Hide$()."
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "tfc:crafting/parchment",
+        "text": "Treated hide, $(l:mechanics/glassworking#lime)lime powder$(), flour, and a fresh egg will complete the treatment process and yield usable paper."
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "paperfromwood",
+        "text": "$(thing)Creating Paper from Wood$() is an ancient process that requires processing of sturdy types of wood into sheets, which are broken down into a pulp, and then pressed, dried and scraped to make paper.$(br2)Note that softer types of wood are not suitable for making paper",
+        "title": "Paper from Wood"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "First you need to find Hardwood:$(br2)Acacia$(br)Ash$(br)Aspen$(br)Birch$(br)Blackwood$(br)Chestnut$(br)Hickory$(br)Maple$(br)Oak$(br)Rosewood$(br)Sycamore"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "Stripped Hardwood",
+        "item": {"tag": "tfg:stripped_hardwood"},
+        "text": "The process begins by stripping the $(thing)Hardwood$()'s bark off to expose the internal fibers of the log, You can strip the log by placing it down and right clicking it with an axe"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": "Hardwood Strip",
+        "recipe": "tfg:crafting/strip_hardwood",
+        "text": "Next, the stripped wood is shaven with an axe to obtain $(item)Hardwood Strips$(). This can be done using an Axe or more sophisticated methods"
+      },
+      {
+        "type": "tfc:sealed_barrel_recipe",
+        "title": "Soaked Hardwood Strip",
+        "recipe": "tfg:barrel/soak_hardwood_strip",
+        "text": "Then, the individual strips are soaked in a $(l:mechanics/barrels)Barrel$() of $(thing)Water$(). This $(thing)debilitates the structural integrity$() of the $(thing)wood$() so it can be $(thing)broken down further$()"
+      },
+      {
+        "type": "tfc:quern_recipe",
+        "recipe": "tfg:quern/soaked_hardwood_strip",
+        "title": "Hardwood Pulp",
+        "text": "Afterwards, utilize the $(l:mechanics/quern)Quern$() to break down the soaked strips into $(item)Hardwood Pulp$()"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "gtceu:shaped/small_dust_assembling_hardwood",
+        "title": "Piling up the Pulp",
+        "text": "While the quern gives you small piles of pulp, you'll want to combine them together in a $(thing)Workbench$(). More sophisticated methods of crushing the strips yield higher amounts of pulp"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "gtceu:thermochemically_treated_hardwood_dust",
+        "title": "Breaking down the Pulp",
+        "text": "Before the pulp can be processed further into paper, it needs to be broken down further by $(thing)Boiling it with Lye$() in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()."
+      },
+      {
+        "type": "patchouli:empty"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "item": "tfg:soaked_unrefined_paper",
+        "title": "Pressing the Pulp",
+        "text": "After broken down by boiling it with Lye, the $(item)Thermochemically Treated Hardwood Pulp$() can be pressed down into a sheet of $(item)Soaked Unrefined Paper$()"
+      },
+      {
+        "type": "tfc:anvil_recipe",
+        "recipe": "tfg:anvil/soaked_unrefined_paper",
+        "text": "You can utilize an $(l:mechanics/anvils)Anvil$() to beat down the pulp into a sheet"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "title": "Stomping in Barrel",
+        "item": {"tag": "firmalife:stomping_barrels"},
+        "text": "Alternatively, you can stomp the Thermochemically Treated Hardwood Pulp in a $(l:firmalife/wine)Stomping Barrel$()"
+      },
+      {
+        "type": "tfc:drying_recipe",
+        "recipe": "tfg:drying/unrefined_paper",
+        "text": "The final step is $(l:firmalife/drying)Drying$() the $(item)Soaked Unrefined Paper$() into $(item)Unrefined Paper$(), Which then can be Scraped into $(item)Paper$() as shown before."
+      },
+      {
+        "type": "patchouli:text",
+        "title": "Cutting Steps...?",
+        "text": "Advancing in the Tech-Tree will allow you to create paper from wood with less overall steps, check $(thing)EMI$() for the different approaches you can take for making paper with wood."
+      }
+    ],
+    "read_by_default": true
+  }
