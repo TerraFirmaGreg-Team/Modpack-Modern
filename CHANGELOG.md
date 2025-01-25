@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.19] - ?
+## [0.7.19] - 25.01.2025
 ### Changes
 - Added budding crystals for the other gemstone ores (Pyritie).
 - Add a Forging Guide to the Field Guide (Nebby1999).
