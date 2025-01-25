@@ -86,20 +86,52 @@
 			"underground_count": 200,
 			"blocks": [
 				{
-					"block": "gtceu:olivine_indicator",
-					"weight": 65
-				},
-				{
-					"block": "gtceu:diopside_indicator",
+					"block": "tfg:buds/small_olivine_bud",
 					"weight": 15
 				},
 				{
-					"block": "gtceu:enstatite_indicator",
-					"weight": 10
+					"block": "tfg:buds/medium_olivine_bud",
+					"weight": 12
 				},
 				{
-					"block": "gtceu:fayalite_indicator",
-					"weight": 10
+					"block": "tfg:buds/large_olivine_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/small_diopside_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/medium_diopside_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/large_diopside_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/small_enstatite_bud",
+					"weight": 9
+				},
+				{
+					"block": "tfg:buds/medium_enstatite_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_enstatite_bud",
+					"weight": 5
+				},
+				{
+					"block": "tfg:buds/small_fayalite_bud",
+					"weight": 9
+				},
+				{
+					"block": "tfg:buds/medium_fayalite_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_fayalite_bud",
+					"weight": 5
 				}
 			]
 		}

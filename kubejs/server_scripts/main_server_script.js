@@ -154,7 +154,6 @@ ServerEvents.recipes(event => {
     registerSophisticatedBackpacksRecipes(event)
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
-    registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
     registerTFGRecipes(event)
     registerToolBeltRecipes(event)

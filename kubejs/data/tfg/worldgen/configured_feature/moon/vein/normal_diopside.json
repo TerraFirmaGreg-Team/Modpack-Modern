@@ -1,7 +1,7 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 180,
+		"rarity": 250,
 		"density": 0.25,
 		"min_y": -10,
 		"max_y": 80,
@@ -132,8 +132,16 @@
 			"underground_count": 200,
 			"blocks": [
 				{
-					"block": "gtceu:diopside_indicator",
-					"weight": 45
+					"block": "tfg:buds/small_diopside_bud",
+					"weight": 25
+				},
+				{
+					"block": "tfg:buds/medium_diopside_bud",
+					"weight": 18
+				},
+				{
+					"block": "tfg:buds/large_diopside_bud",
+					"weight": 12
 				},
 				{
 					"block": "gtceu:trona_indicator",

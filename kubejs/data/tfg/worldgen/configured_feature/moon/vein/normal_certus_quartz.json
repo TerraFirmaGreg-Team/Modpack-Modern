@@ -132,16 +132,44 @@
 			"underground_count": 200,
 			"blocks": [
 				{
+					"block": "gtceu:barite_indicator",
+					"weight": 10
+				},
+				{
 					"block": "ae2:small_quartz_bud",
-					"weight": 50
+					"weight": 25
 				},
 				{
 					"block": "ae2:medium_quartz_bud",
-					"weight": 30
+					"weight": 15
 				},
 				{
 					"block": "ae2:large_quartz_bud",
-					"weight": 20
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/small_quartzite_bud",
+					"weight": 5
+				},
+				{
+					"block": "tfg:buds/medium_quartzite_bud",
+					"weight": 3
+				},
+				{
+					"block": "tfg:buds/large_quartzite_bud",
+					"weight": 2
+				},
+				{
+					"block": "tfg:buds/small_nether_quartz_bud",
+					"weight": 18
+				},
+				{
+					"block": "tfg:buds/medium_nether_quartz_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/large_nether_quartz_bud",
+					"weight": 12
 				}
 			]
 		}

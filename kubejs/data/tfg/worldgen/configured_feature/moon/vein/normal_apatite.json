@@ -74,16 +74,24 @@
 			"underground_count": 200,
 			"blocks": [
 				{
-					"block": "gtceu:apatite_indicator",
-					"weight": 25
-				},
-				{
 					"block": "gtceu:tricalcium_phosphate_indicator",
 					"weight": 35
 				},
 				{
 					"block": "gtceu:pyrochlore_indicator",
 					"weight": 40
+				},
+				{
+					"block": "tfg:buds/small_apatite_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/medium_apatite_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/large_apatite_bud",
+					"weight": 5
 				}
 			]
 		}

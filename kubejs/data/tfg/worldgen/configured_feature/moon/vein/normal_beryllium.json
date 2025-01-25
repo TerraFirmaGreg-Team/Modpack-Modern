@@ -84,11 +84,19 @@
 					"weight": 35
 				},
 				{
-					"block": "gtceu:emerald_indicator",
-					"weight": 50
+					"block": "gtceu:thorium_indicator",
+					"weight": 15
 				},
 				{
-					"block": "gtceu:thorium_indicator",
+					"block": "tfg:buds/small_emerald_bud",
+					"weight": 35
+				},
+				{
+					"block": "tfg:buds/medium_emerald_bud",
+					"weight": 25
+				},
+				{
+					"block": "tfg:buds/large_emerald_bud",
 					"weight": 15
 				}
 			]

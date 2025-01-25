@@ -78,7 +78,10 @@ const registerTFGBlocks = (event) => {
 		[ 'apatite', 0x06caed ],
 		[ 'red_garnet', 0x930c15 ],
 		[ 'yellow_garnet', 0xf2fb09 ],
-		[ 'monazite', 0xcdea96 ]
+		[ 'monazite', 0xcdea96 ],
+		[ 'diopside', 0xb7cca1 ],
+		[ 'enstatite', 0x595813 ],
+		[ 'fayalite', 0x421209 ]
 		
 		// skip coal, coke, salt, rock salt, certus, malachite, glass, and amethyst
 	]

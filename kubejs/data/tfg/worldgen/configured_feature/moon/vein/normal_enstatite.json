@@ -1,7 +1,7 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 200,
+		"rarity": 250,
 		"density": 0.25,
 		"min_y": -20,
 		"max_y": 90,
@@ -132,8 +132,16 @@
 			"underground_count": 200,
 			"blocks": [
 				{
-					"block": "gtceu:enstatite_indicator",
-					"weight": 45
+					"block": "tfg:buds/small_enstatite_bud",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/medium_enstatite_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/large_enstatite_bud",
+					"weight": 10
 				},
 				{
 					"block": "gtceu:chromite_indicator",
@@ -144,8 +152,16 @@
 					"weight": 15
 				},
 				{
-					"block": "gtceu:fayalite_indicator",
-					"weight": 10
+					"block": "tfg:buds/small_fayalite_bud",
+					"weight": 9
+				},
+				{
+					"block": "tfg:buds/medium_fayalite_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_fayalite_bud",
+					"weight": 5
 				}
 			]
 		}
