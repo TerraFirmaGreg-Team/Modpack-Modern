@@ -2460,7 +2460,7 @@ const registerTFCRecipes = (event) => {
         event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
     
         // Бревна -> Пиломатериалы
-        generateCutterRecipe(event, `#tfc:${wood}_logs`, null, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+        generateCutterRecipe(event, `#tfc:${wood}_logs`, 1, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
 
         // Доски -> Пиломатериалы
         generateCutterRecipe(event, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
@@ -3598,6 +3598,15 @@ const registerTFCRecipes = (event) => {
         .duration(20)
         .EUt(7)
     }
-    
     //#endregion
+
+    //More accesible solar drier
+    event.replaceInput({id: 'firmalife:crafting/solar_drier'}, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
+
+    //Wood ash
+    event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
+        .id('tfg:splashing/wash_torch')
+
+    //Lye in mixer
+    generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
 }

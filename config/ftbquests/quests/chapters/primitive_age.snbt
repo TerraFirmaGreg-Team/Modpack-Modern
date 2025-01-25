@@ -3805,8 +3805,8 @@
 				item: "tfc:papyrus"
 				type: "item"
 			}]
-			x: 27.0d
-			y: 1.0d
+			x: 23.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0D47455ABB97C81D"]
@@ -3816,8 +3816,8 @@
 				item: "tfc:papyrus_strip"
 				type: "item"
 			}]
-			x: 24.0d
-			y: 1.0d
+			x: 23.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -3831,13 +3831,16 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"147911B5CA3A7DD8"
 				"6F769ABFCA894E24"
+				"0F9BE65A65F9CF4D"
 			]
+			dependency_requirement: "one_completed"
+			description: ["You can either use 4 Papyrus Strips in a Loom, or Dry a Soaked Unrefined Paper in a Drying Mat"]
 			id: "7E8F9F6F35614B13"
 			tasks: [{
 				id: "2677C234ED0D56FF"
@@ -3862,7 +3865,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2658E7679CD42ACD"]
@@ -3872,7 +3875,7 @@
 				item: "minecraft:name_tag"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 23.5d
 			y: 3.0d
 		}
 		{
@@ -3890,7 +3893,7 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["45D907EF7902A200"]
@@ -4592,7 +4595,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 27.0d
+			x: 26.5d
 			y: 3.0d
 		}
 		{
@@ -4661,12 +4664,13 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
 				"42FD437930CA74C7"
 				"593CC9165759B714"
+				"2658E7679CD42ACD"
 			]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
@@ -4677,7 +4681,7 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -5243,7 +5247,7 @@
 				item: "tfc:treated_hide"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 21.5d
 			y: -7.0d
 		}
 		{
@@ -5255,8 +5259,112 @@
 				item: "tfc:groundcover/pumice"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 21.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["07EACA7D4EB51EB8"]
+			description: ["Press the Thermochemically Treated Hardwood Pulp into a Sheet"]
+			id: "0F9BE65A65F9CF4D"
+			tasks: [{
+				id: "06E98C5646CEF615"
+				item: "tfg:soaked_unrefined_paper"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B95877FDA27F418"]
+			description: ["Cook the Hardwood Pulp in Lye using a Vat or a Pot"]
+			id: "07EACA7D4EB51EB8"
+			tasks: [{
+				id: "2521D9D73CC0BCA5"
+				item: "gtceu:thermochemically_treated_hardwood_dust"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["72B2543628818D03"]
+			description: ["Quern the Soaked Hardwood Strip to get Hardwood Pulp"]
+			id: "2B95877FDA27F418"
+			tasks: [{
+				id: "392BBB461D37F945"
+				item: "gtceu:hardwood_dust"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6E24ECF6CEE950D1"
+				"5FD97BDCAA82B23A"
+			]
+			description: ["Submerge the Hardwood Strip in a Barrel full of Water to Soak it"]
+			id: "72B2543628818D03"
+			tasks: [{
+				id: "27EC545C4FD8B47E"
+				item: "tfg:soaked_hardwood_strip"
+				type: "item"
+			}]
+			x: 26.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3579D6F2BC5DAABB"]
+			description: ["Put an Axe and a Stripped Hardwood Log in a Crafting Table to create the Strips"]
+			id: "5FD97BDCAA82B23A"
+			tasks: [{
+				id: "0324746AB4D87295"
+				item: "tfg:hardwood_strip"
+				type: "item"
+			}]
+			x: 26.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["0CC8FB9750DF4E27"]
+			description: ["Right click a placed Hardwood Log to Strip it"]
+			id: "3579D6F2BC5DAABB"
+			tasks: [{
+				id: "6831FBD90C8DD7A6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:stripped_hardwood)"
+					}
+				}
+				title: "Any #tfg:stripped_hardwood"
+				type: "item"
+			}]
+			title: "Any Stripped Hardwood"
+			x: 26.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["76EF4D00586A8B74"]
+			description: ["Get any kind of Hardwood, check the Papermaking page for a list of valid wood types"]
+			hide_dependency_lines: true
+			id: "0CC8FB9750DF4E27"
+			tasks: [{
+				id: "5067BA8D80512DF4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:hardwood)"
+					}
+				}
+				title: "Any #tfg:hardwood"
+				type: "item"
+			}]
+			title: "Get Hardwood"
+			x: 24.5d
+			y: -8.5d
 		}
 	]
 	title: "Primitive Age"

@@ -707,6 +707,32 @@ global.TFC_WOOD_TYPES = [
     "willow"
 ];
 
+global.TFC_HARDWOOD_TYPES = [
+    "acacia",
+    "ash",
+    "aspen",
+    "birch",
+    "blackwood",
+    "chestnut",
+    "hickory",
+    "maple",
+    "oak",
+    "rosewood",
+    "sycamore"
+];
+
+global.TFC_SOFTWOOD_TYPES = [
+    "douglas_fir",
+    "kapok",
+    "mangrove",
+    "palm",
+    "pine",
+    "sequoia",
+    "spruce",
+    "white_cedar",
+    "willow"
+];
+
 global.TFC_MUD_TYPES = [
     'silt',
     'loam',

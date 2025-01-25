@@ -2,12 +2,11 @@
 
 const registerGTCEURecipes = (event) => {
     //#region Выход: Удобрение
-
     // В обычном миксере
     event.recipes.gtceu.mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
-            '2x #forge:dusts/wood',
+            '2x #tfg:wood_dusts',
             '4x #forge:sand'
         )
         .circuit(1)
@@ -20,7 +19,7 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.create_mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
-            '2x #forge:dusts/wood',
+            '2x #tfg:wood_dusts',
             '4x #forge:sand'
         )
         .circuit(1)
