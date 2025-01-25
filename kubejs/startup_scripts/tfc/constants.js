@@ -783,17 +783,23 @@ global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
 };
 
 /**
- * Хранит названия типов полублоков из камня в TFC.
+ * Хранит названия типов полублоков из камня в TFC. (Не кирпичей)
  */
 global.TFC_ROCK_SLAB_BLOCK_TYPES = [
     'raw',
     'smooth',
-    'bricks',
     'cobble',
-    'mossy_bricks',
     'mossy_cobble',
-    'cracked_bricks'
 ];
+
+/**
+ * Хранит названия типов полублоков из кирпича из камня в TFC
+ */
+global.TFC_BRICK_SLAB_BLOCK_TYPES = [
+    'bricks',
+    'mossy_bricks',
+    'cracked_bricks'
+]
 
 /**
  * Хранит названия цветов песка в TFC.
