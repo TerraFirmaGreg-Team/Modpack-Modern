@@ -258,6 +258,13 @@ const registerTFCBlockTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+
+    //#region Позволяем ТФК магме греть бойлер из Create
+    global.TFC_MAGMA_BLOCKS.forEach(el => {
+        event.add('create:passive_boiler_heaters', el)
+    })
+    //#endregion
 }
 
 const registerTFCFluidTags = (event) => {
