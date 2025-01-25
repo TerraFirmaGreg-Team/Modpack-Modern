@@ -3459,6 +3459,7 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('tfc:wool_cloth')
         .duration(100)
         .EUt(4)
+        .circuit(16)
 
     // Jute Fiber
     generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
