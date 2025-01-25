@@ -1067,7 +1067,25 @@ global.TFC_MILKS = [
     {id: 'firmalife:coconut_milk'},
 ];
 
+global.TFC_MAGMA_BLOCKS = [
+    'tfc:rock/magma/granite',
+    'tfc:rock/magma/diorite',
+    'tfc:rock/magma/gabbro',
+    'tfc:rock/magma/rhyolite',
+    'tfc:rock/magma/basalt',
+    'tfc:rock/magma/andesite',
+    'tfc:rock/magma/dacite'
+];
+
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1
 }
+
+// This prevents the "exploit" where Cassiterite dust gives 2x as much from melting as smelting in a furnace
+global.calcAmountOfMetalProcessed = (defaultAmount, percents) => {
+    const percentPerItem = percents / Math.ceil(percents / 100)
+    const value = defaultAmount * (percentPerItem / 100)
+    return (value % 2 == 0) ? value : Math.round(value) - 1
+}
+

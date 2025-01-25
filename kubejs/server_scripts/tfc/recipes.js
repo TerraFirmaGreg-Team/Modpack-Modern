@@ -1159,7 +1159,7 @@ const registerTFCRecipes = (event) => {
                 if (!tinyDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(tinyDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(16, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/tiny_dust/${material.getName()}`)
                     
                 }
@@ -1169,7 +1169,7 @@ const registerTFCRecipes = (event) => {
                 if (!smallDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(smallDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/small_dust/${material.getName()}`)
                     
                 }
@@ -1179,7 +1179,7 @@ const registerTFCRecipes = (event) => {
                 if (!dust.isEmpty()) {
                    
                     event.recipes.tfc.heating(dust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(144, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/dust/${material.getName()}`)
                     
                 }
@@ -1189,7 +1189,7 @@ const registerTFCRecipes = (event) => {
                 if (!impureDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(impureDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/impure_dust/${material.getName()}`)
                     
                 }
@@ -1199,7 +1199,7 @@ const registerTFCRecipes = (event) => {
                 if (!purifiedDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(purifiedDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(120, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/purified_dust/${material.getName()}`)
                     
                 }
@@ -1214,7 +1214,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_ore/${material.getName()}`)
                     
                 }
@@ -1224,7 +1224,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedPurifiedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedPurifiedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(100, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_purified_ore/${material.getName()}`)
                     
                 }
@@ -1234,7 +1234,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedRefinedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedRefinedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(110, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_refined_ore/${material.getName()}`)
                     
                 }
@@ -3462,18 +3462,26 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('tfc:wool_cloth')
         .duration(100)
         .EUt(4)
-	    
+
     // Cloths to Wool
     event.recipes.gtceu.assembler('tfg:tfc/cloth_to_wool')
         .itemInputs('4x #tfc:sewing_light_cloth')
-	.circuit(0)
         .itemOutputs('8x minecraft:white_wool')
+        .circuit(16)  
         .duration(100)
         .EUt(4)
 
     // Jute Fiber
     generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
+    // Seaweed and kelp
+    event.recipes.tfc.heating('tfc:groundcover/seaweed', 200)
+	.resultItem('tfc:food/dried_seaweed')
+    event.recipes.tfc.heating('tfc:plant/leafy_kelp', 200)
+	.resultItem('tfc:food/dried_kelp')
+    event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
+	.resultItem('tfc:food/dried_kelp')
+	
     // Soda Ash
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')

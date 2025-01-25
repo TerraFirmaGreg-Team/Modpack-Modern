@@ -71,12 +71,21 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.bolt, material, tfcProperty, 0.245)
             makeItemHeatByTagPrefix(TagPrefix.screw, material, tfcProperty, 0.567)
             makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
+            makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
+            makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
 
             makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
             
             makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty, 1.429)
             makeItemHeatByTagPrefix(TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
             makeItemHeatByTagPrefix(TFGTagPrefix.poorRawOre, material, tfcProperty, 1.429)
+
+            // Ore processing stages
+            makeItemHeatByTagPrefix(TagPrefix.dustImpure, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.dustPure, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.crushed, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.crushedPurified, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty, 1.429)
 
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
             makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
@@ -113,6 +122,11 @@ const registerTFCHeats = (event) => {
 
     // Ведро из красной
     event.itemHeat('tfc:metal/bucket/red_steel', 1.429, 924, 1232)
+
+    // Seaweed and Kelp
+    event.itemHeat('tfc:groundcover/seaweed', 1.0, null, null)
+    event.itemHeat('tfc:plant/leafy_kelp', 1.0, null, null)
+    event.itemHeat('tfc:plant/winged_kelp', 1.0, null, null)
 }
 
 const registerTFCFuels = (event) => {
@@ -126,6 +140,7 @@ const registerTFCFuels = (event) => {
 
 const registerTFCLampFuels = (event) => {
     event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
+    event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
 
 const registerTFCFertilizers = (event) => {

@@ -35,22 +35,30 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 50,
+      "rarity": 10,
+      "depth": 60,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:diamond_indicator",
-          "weight": 25
-        },
-		{
           "block": "gtceu:graphite_indicator",
           "weight": 45
         },
 		{
           "block": "gtceu:coal_indicator",
           "weight": 39
+        },
+		{
+          "block": "tfg:buds/small_diamond_bud",
+          "weight": 12
+        },
+		{
+          "block": "tfg:buds/medium_diamond_bud",
+          "weight": 8
+        },
+		{
+          "block": "tfg:buds/large_diamond_bud",
+          "weight": 6
         }
       ]
     }
