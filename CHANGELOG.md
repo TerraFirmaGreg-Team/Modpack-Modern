@@ -15,6 +15,11 @@
 - Add glowstone as infinite lamp fuel (CaptainGold1).
 - Changed LV casing/hull recipes (again) (Pyritie).
 - Add seaweed and kelp drying recipes (Metriximor).
+- Fix assembler wool recipe conflicts (deneth-weerasinghe).
+- Feature: Papermaking Overhaul with Wood (Nebby1999).
+- Hanging Sign Metal Dupe fix (AirRice).
+- Adjusted LV machines book entry (Pyritie).
+- Fix collapsible brick slab blocks (Egogorka).
 
 ## [0.7.18] - 19.01.2025
 ### Changes
