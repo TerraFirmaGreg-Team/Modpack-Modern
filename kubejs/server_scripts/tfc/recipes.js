@@ -1159,7 +1159,7 @@ const registerTFCRecipes = (event) => {
                 if (!tinyDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(tinyDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(16, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/tiny_dust/${material.getName()}`)
                     
                 }
@@ -1169,7 +1169,7 @@ const registerTFCRecipes = (event) => {
                 if (!smallDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(smallDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/small_dust/${material.getName()}`)
                     
                 }
@@ -1179,7 +1179,7 @@ const registerTFCRecipes = (event) => {
                 if (!dust.isEmpty()) {
                    
                     event.recipes.tfc.heating(dust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(144, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/dust/${material.getName()}`)
                     
                 }
@@ -1189,7 +1189,7 @@ const registerTFCRecipes = (event) => {
                 if (!impureDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(impureDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/impure_dust/${material.getName()}`)
                     
                 }
@@ -1199,7 +1199,7 @@ const registerTFCRecipes = (event) => {
                 if (!purifiedDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(purifiedDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(120, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/purified_dust/${material.getName()}`)
                     
                 }
@@ -1214,7 +1214,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_ore/${material.getName()}`)
                     
                 }
@@ -1224,7 +1224,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedPurifiedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedPurifiedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(100, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_purified_ore/${material.getName()}`)
                     
                 }
@@ -1234,7 +1234,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedRefinedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedRefinedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(110, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_refined_ore/${material.getName()}`)
                     
                 }
@@ -3459,6 +3459,7 @@ const registerTFCRecipes = (event) => {
         .itemOutputs('tfc:wool_cloth')
         .duration(100)
         .EUt(4)
+        .circuit(16)
 
     // Jute Fiber
     generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')

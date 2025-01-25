@@ -1,0 +1,152 @@
+{
+    "name": "Anvil Working Guide",
+    "icon": "gtceu:red_steel_hammer",
+    "category": "tfc:tfg_tips",
+    "read_by_default": false,
+    "priority": false,
+    "pages":
+    [
+        {
+            "type": "patchouli:text",
+            "title": "Working with Anvils",
+            "text": "$(l:mechanics/anvils#working)Working$() in $(l:mechanics/anvils)Anvils$() is a key process inside $(thing)TerraFirmaGreg$(), as most of your work towards the $(thing)Steam and Mechanical ages$() will require the usage of an Anvil.$(br)This guide is broken down into two parts, $(l:tfg_tips/anvil_working_guide#ui_explained)Understanding the UI$() and $(l:tfg_tips/anvil_working_guide#how_to_perfectly_forge)How to Perfectly Forge$().$(br2)The Modpack has a custom $(thing)Resource Pack$() called $(l:https://www.curseforge.com/minecraft/texture-packs/tfc-anvil-helper)TFC Anvil Helper$() that you need to enable for this guide to make sense.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui.png"],
+            "border": false,
+            "text": "The UI for the Anvil with TFC Anvil Helper Enabled"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false,
+            "anchor": "ui_explained",
+            "tile": "The UI and You",
+            "text": "The UI for the Anvil with TFC Anvil Helper Enabled, Color Coded."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#ff0000)1.$() The item you've selected to Create in the Anvil. Each item has a specific set of required $(#be00ff)Steps$() and $(#ff6b00)Work Amount$() $(br)$(#ff00c6)2.$() The Input item you're currently working. $(br)$(#be00ff)3.$() The required Steps in Order that must be completed before the Item is considered complete. There are a total of 4 different Orders (See next Page):"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "(Note: X is a wild-card for any kind of Step)$(br)$(li)x_Any: Step can occurr in any of the last 3 actions.$()$(li)x_Last: Must be the last step performed.$()$(li)x_Not Last: The Step cannot be the Last Step performed.$()$(li)x_Second Last: Must be the Second to Last step performed.$()$(li)x_Third Last: Must be the Third to Last step performed$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#2e00ff)4.$() The types of Steps. Each type of step Subtracts or Adds to the current Work value. These are, in order from Left to Right, Top to Bottom:$(li)Light Hit: -3$()$(li)Medium Hit: -6$()$(li)Punch: +2$()$(li)Bend: +7$()$(li)Hard Hit: -9$()$(li)Draw: -15$()$(li)Upset: +13$()$(li)Shrink: +16$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/anvil_ui_marked.png"],
+            "border": false
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#00a7ff)5.$() The Slots where your Hammer goes, and Flux if youre Welding.$(br)$(#00ff26)6. $()The current Work amount the item has, Doing different Steps either Increases or Decreases the amount of Work the item has.$(br)$(#fff400)7. $()The Target Work value, the $(#00ff26)Work$() value must be aligned EXACTLY with the Target Work, AND the $(#ff00c6)Required Steps$() must be fulfilled for the Item to be considered complete.$(br)$(#ff6b00)8. $()The Work Bar, used for Aligning the Work value with the Target Work value."
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "how_to_perfectly_forge",
+            "title": "How to Perfectly Forge",
+            "text": "$(thing)Perfectly Forging$() an Item which can break, such as $(thing)Tool Heads$(), $(thing)Weapons$(), and $(thing)Armor$() causes the Item to gain bonuses to it's durability and general efficiency with the less total steps you take to forge the Item. Completing the Work on an Item with very few steps causes it to be Perfectly Forged, not only giving your finished item bonuses, but also reducing the overall wear and tear to the Hammer."
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/perfectly_forged_item.png"],
+            "border": false,
+            "text": "A Perfectly Forged Wrought Iron Pickaxe Head"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "title": "Guide to Forging",
+            "item": "gtceu:wrought_iron_pickaxe_head",
+            "text": "This part of the guide will cover how to Perfectly Forge anything, starting with a Wrought Iron Pickaxe Head.$(br2)$(bold)$(italic)DISCLAIMER:$()$(br)While the Required Steps and Orders for an Item are universal within all worlds in TerraFirmaGreg, the Target Work value differs because its derived from your world's Seed, as such, this Guide ASSUMES the Target Work value for the Wrought Iron Pickaxe Head is $(bold)83$()"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 1",
+            "text": "The first Step in your Forging Journey is to get the Value taken by Adding all of the Required Step's values together. For a Pickaxe Head, you need the following Steps:$(li)$(bold)Punch$() Last$()$(li)$(bold)Bend$() Not Last$()$(li)$(bold)Draw$() Not Last$().$(br)By adding the Values on the Bottom of each Step, We get the Value we're looking for. Lets call this value \"requiredWork\".$(br)$(bold)2 + 7 + (-15) = -6$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/steps.png"],
+            "text": "The steps required for a Pickaxe"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 2",
+            "text": "While our main goal for the Work Amount is to align it with the Target Work, we need to make sure both that requirement AND the Steps requirements are fulfilled, as such, directly aligning the Work Amount with the Target Work will not yield desirable results. Instead, we can calculate the a value derived from Target Work and \"requiredWork\""
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This value can be obtained depending on the Sign of \"requiredWork\" (IE: if the value is Negative or Positive).$(li)If \"requiredWork\" is Positive$()$(li2)Subtract \"requiredWork\"'s Absolute Value from \"Target Work\"$()$(li3)83 - 6 == $(bold)77$()$()$(li)If \"requiredWork\" is Negative$()$(li2)Add \"requiredWork\"'s Absolute Value to \"Target Work\"$()$(li3)83 + 6 = $(bold)89$()$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Since the \"requiredWork\" for our item is -6, the value we're looking for is $(bold)89$().$(br)You may be wondering, how can you get exact numerical values for your Target Work? Well, the Anvil UI shows us with the Work Bar. It only shows the multiples of 20, but we can know the other numbers easily via the colored lines:$(li)Light Gray: Represents a multiple of 5$()$(li)Gray: Represents an Odd Number$()$(li)Dark Gray: Represents an Even Number$()"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/work_bar_numbers.png", "tfg:textures/gui/field_guide/anvil_working_guide/target_work_for_wrought_iron_pickaxe_head.png"]
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 3",
+            "text": "With the value derived from \"Target Work\" and \"requiredWork\", we now need to reach said Work value, this can be done either manually by adding the numbers attached for each step, or by using the cheat sheet in the UI bar. Each color represents the Step Type in the UI. $(br)IE: Red == Shrink (+16)"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/work_bar_cheat_sheet.png"],
+            "text": "16 + 16 + 16 + 16 + 16 + 7 + 2 = 89"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Step 4",
+            "text": "Now that we know the required steps, its time to reach the Value derived from \"Target Work\" and \"requiredWork\". For a pickaxe head where it's TotalWork value is 83, we need to reach 89. As such, we do: (Shrink x 5) -> Bend -> Punch.$(br2)Once our Work value is at our desired value, just follow the Required Steps, which for a pickaxe head its: Draw -> Bend -> Punch. And Voila! We've obtained a Perfectly Forged Item!"
+        },
+        {
+            "type": "patchouli:image",
+            "images": ["tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_no_work.png", "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_some_work.png", "tfg:textures/gui/field_guide/anvil_working_guide/wrought_iron_pickaxe_head_complete.png"],
+            "text": "An Ingot with No Work->Desired Work Value Reached->Doing the Required Steps for our Item."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Examples",
+            "text": "Lets see this process with other items, such as a Plate, or a Rod. Again, the Target Work differs by the world seed, so their values will be different on your world.$(br)Plate Target Value: $(bold)111$()$(br)Required Steps: Hit x 3, Any Order.$(br)\"requiredWork\": -3 x 3 = -9$(br)Derived Value: 111 + 9 = 120.$(br)Reaching the Value: (Shrink x 5)->(Upset x 2)->(Punch x 2)$(br)Getting the Item: 120 - (Light Hit x 3) == $(bold)111$(). Both requirements met."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Rod Target Value: $(bold)78$()$(br)Required Steps: Draw->Draw->Bend$(br)\"requiredWork\": (-15 x 2) + 7 = -23$(br)Derived Value: 78 + 23 = 101.$(br)Reaching the Value: (Shrink x 5)->(Bend x 3)$(br)Getting the Item: 101 - 15 - 15 + 7 = 101."
+        },
+        {
+            "type": "patchouli:text",
+            "title": "Other Tidbits",
+            "text": "If one of the Required Steps is Empty, it means it's a Wild Card, any Step can be used.$(br2)If you fail your calculations, you can always melt and cast your item back into an ingot, this will remove the \"worked\" tag for the item, letting you try again to perfectly forge it."
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Congratulations on Reaching the End, if youre a contributor looking to re-take the pictures in this guide, the seed used during it's writing is $(bold)-7291708953208913102$(), You could also create a creative world to test the algorithm yourself!$(br2)$(br)Also... since you're here, if you cant be bothered to do all the calculations yourself, you can always use the $(l:https://adrianmiller99.github.io/tfg-anvil-calculator/src/index.html)TFC Anvil Calculator$()..."
+        }
+    ]
+}

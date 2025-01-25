@@ -67,8 +67,8 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 35,
+      "rarity": 15,
+      "depth": 20,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
@@ -77,12 +77,20 @@
           "weight": 50
         },
 		{
-          "block": "gtceu:monazite_indicator",
+          "block": "gtceu:neodymium_indicator",
           "weight": 25
         },
 		{
-          "block": "gtceu:neodymium_indicator",
-          "weight": 25
+          "block": "tfg:buds/small_monazite_bud",
+          "weight": 14
+        },
+		{
+          "block": "tfg:buds/medium_monazite_bud",
+          "weight": 8
+        },
+		{
+          "block": "tfg:buds/large_monazite_bud",
+          "weight": 5
         }
       ]
     }
