@@ -1,0 +1,153 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 200,
+		"density": 0.25,
+		"min_y": -20,
+		"max_y": 90,
+		"size": 36,
+		"random_name": "normal_enstatite",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_enstatite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:diorite_chromite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:diorite_ilmenite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:diorite_fayalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_enstatite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:gabbro_chromite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_ilmenite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:gabbro_fayalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_enstatite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:basalt_chromite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_ilmenite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_fayalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_enstatite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:anorthite_chromite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:anorthite_ilmenite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:anorthite_fayalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_enstatite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dunite_chromite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dunite_ilmenite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dunite_fayalite_ore",
+						"weight": 10
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:enstatite_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:chromite_indicator",
+					"weight": 30
+				},
+				{
+					"block": "gtceu:ilmenite_indicator",
+					"weight": 15
+				},
+				{
+					"block": "gtceu:fayalite_indicator",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

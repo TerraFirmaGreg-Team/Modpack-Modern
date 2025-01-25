@@ -1,0 +1,85 @@
+{
+	"type": "tfc:disc_vein",
+	"config": {
+		"rarity": 280,
+		"density": 0.35,
+		"min_y": -64,
+		"max_y": 26,
+		"size": 28,
+		"random_name": "deep_sapphire",
+		"biomes": "#tfg:moon_biomes",
+		"height": 8,
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_almandine_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_pyrope_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_sapphire_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_green_sapphire_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_almandine_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dunite_pyrope_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_sapphire_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dunite_green_sapphire_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 500,
+			"blocks": [
+				{
+					"block": "gtceu:almandine_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:pyrope_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:sapphire_indicator",
+					"weight": 15
+				},
+				{
+					"block": "gtceu:green_sapphire_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

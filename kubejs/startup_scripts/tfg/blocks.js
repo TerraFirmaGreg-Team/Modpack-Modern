@@ -15,4 +15,35 @@ const registerTFGBlocks = (event) => {
 
 	event.createCustom(`tfg:lunar_warped_roots`, () => new $ClusterBlock(6, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 	event.createCustom(`tfg:lunar_sprouts`, () => new $ClusterBlock(4, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
+
+
+	event.create('tfg:raw_anorthite')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/moon_stone' })
+		})
+		.fullBlock(true)
+		//.tagBoth('forge:stone')
+		//.tagBoth('tfc:rock/raw')
+
+	event.create('tfg:raw_dunite')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/moon_deepslate' })
+		})
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/raw')
+		.fullBlock(true)
+
+	event.create('tfg:hardened_anorthite')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/moon_stone' })
+		})
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.fullBlock(true)
 }

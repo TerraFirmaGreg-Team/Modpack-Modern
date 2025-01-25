@@ -1,0 +1,107 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 150,
+		"density": 0.3,
+		"min_y": -32,
+		"max_y": 60,
+		"size": 35,
+		"random_name": "normal_saltpeter",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_saltpeter_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:diorite_soapstone_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_electrotine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_talc_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_saltpeter_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dunite_soapstone_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_electrotine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_talc_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_saltpeter_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:anorthite_soapstone_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_electrotine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_talc_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 100,
+			"blocks": [
+				{
+					"block": "gtceu:saltpeter_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:soapstone_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:electrotine_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:talc_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

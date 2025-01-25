@@ -36,7 +36,12 @@
 		[]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"minecraft:enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.15
+		}
+	},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -49,7 +54,14 @@
 			}
 		],
 		"misc": [],
-		"monster": [],
+		"monster": [
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"underground_water_creature": [],
 		"water_ambient": [],
 		"water_creature": []

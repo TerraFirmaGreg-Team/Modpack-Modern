@@ -1,7 +1,4 @@
 {
-	"block.ad_astra.moon_deepslate": "Raw Dunite",
-	"block.ad_astra.moon_stone": "Raw Anorthite",
-
 	"block.ad_astra.moon_sand": "Moon Sand",
 	"block.ad_astra.moon_cobblestone": "Anorthite Cobblestone",
 	"block.ad_astra.moon_cobblestone_slab": "Anorthite Cobblestone Slab",
@@ -19,8 +16,5 @@
 	"block.ad_astra.cracked_moon_stone_bricks": "Cracked Anorthite Bricks",
 	"block.ad_astra.polished_moon_stone": "Polished Anorthite",
 	"block.ad_astra.polished_moon_stone_slab": "Polished Anorthite Slab",
-	"block.ad_astra.polished_moon_stone_stairs": "Polished Anorthite Stairs",
-
-	"tagprefix.anorthite": "Anorthite %s Ore",
-	"tagprefix.dunite": "Dunite %s Ore"
+	"block.ad_astra.polished_moon_stone_stairs": "Polished Anorthite Stairs"
 }

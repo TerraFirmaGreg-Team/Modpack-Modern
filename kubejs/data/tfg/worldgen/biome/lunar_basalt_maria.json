@@ -45,6 +45,10 @@
 		"ad_astra:star_crawler": {
 			"charge": 0.2,
 			"energy_budget": 0.015
+		},
+		"minecraft:enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.15
 		}
 	},
 	"spawners": {
@@ -57,7 +61,13 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 100
+				"weight": 90
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
 			}
 		],
 		"underground_water_creature": [],

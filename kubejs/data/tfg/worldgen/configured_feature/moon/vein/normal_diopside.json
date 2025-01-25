@@ -1,0 +1,153 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 180,
+		"density": 0.25,
+		"min_y": -10,
+		"max_y": 80,
+		"size": 36,
+		"random_name": "normal_diopside",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_diopside_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:diorite_trona_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_cobalt_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_tricalcium_phosphate_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_diopside_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:gabbro_trona_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_cobalt_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_tricalcium_phosphate_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_diopside_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:basalt_trona_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_cobalt_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_tricalcium_phosphate_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_diopside_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:anorthite_trona_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_cobalt_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_tricalcium_phosphate_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_diopside_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dunite_trona_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_cobalt_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_tricalcium_phosphate_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:diopside_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:trona_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:cobalt_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:tricalcium_phosphate_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

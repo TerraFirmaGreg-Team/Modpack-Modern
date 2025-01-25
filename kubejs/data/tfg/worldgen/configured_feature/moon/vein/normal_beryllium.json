@@ -1,0 +1,97 @@
+{
+	"type": "tfc:pipe_vein",
+	"config": {
+		"rarity": 300,
+		"density": 0.35,
+		"min_y": -32,
+		"max_y": 50,
+		"random_name": "normal_beryllium",
+		"min_skew": 6,
+		"max_skew": 18,
+		"min_slant": 0,
+		"max_slant": 4,
+		"sign": 0,
+		"height": 60,
+		"radius": 10,
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_beryllium_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_emerald_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basalt_thorium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_beryllium_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:anorthite_emerald_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:anorthite_thorium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_beryllium_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dunite_emerald_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:dunite_thorium_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:beryllium_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:emerald_indicator",
+					"weight": 50
+				},
+				{
+					"block": "gtceu:thorium_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

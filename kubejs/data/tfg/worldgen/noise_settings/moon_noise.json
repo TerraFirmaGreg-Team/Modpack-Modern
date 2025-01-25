@@ -1,11 +1,11 @@
 {
-	"sea_level": 90,
+	"sea_level": -100,
 	"disable_mob_generation": false,
 	"aquifers_enabled": false,
 	"ore_veins_enabled": false,
 	"legacy_random_source": false,
 	"default_block": {
-		"Name": "ad_astra:moon_stone"
+		"Name": "tfg:raw_anorthite"
 	},
 	"default_fluid": {
 		"Name": "minecraft:air"
@@ -314,7 +314,7 @@
 				"then_run": {
 					"type": "minecraft:block",
 					"result_state": {
-						"Name": "ad_astra:moon_deepslate",
+						"Name": "tfg:raw_dunite",
 						"Properties": {
 							"axis": "y"
 						}
@@ -330,31 +330,52 @@
 					]
 				},
 				"then_run": {
-					"type": "minecraft:condition",
-					"if_true": {
-						"type": "minecraft:y_above",
-						"anchor": {
-							"absolute": 87
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 2,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfg:hardened_anorthite"
+								}
+							}
 						},
-						"surface_depth_multiplier": 2,
-						"add_stone_depth": false
-					},
-					"then_run": {
-						"type": "minecraft:condition",
-						"if_true": {
-							"type": "minecraft:stone_depth",
-							"offset": 3,
-							"surface_type": "floor",
-							"add_surface_depth": false,
-							"secondary_depth_range": 0
-						},
-						"then_run": {
-							"type": "minecraft:block",
-							"result_state": {
-								"Name": "ad_astra:moon_sand"
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:y_above",
+								"anchor": {
+									"absolute": 87
+								},
+								"surface_depth_multiplier": 2,
+								"add_stone_depth": false
+							},
+							"then_run": {
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 3,
+									"surface_type": "floor",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "ad_astra:moon_sand"
+									}
+								}
 							}
 						}
-					}
+					]
 				}
 			},
 			{
@@ -389,7 +410,7 @@
 							"if_true": {
 								"type": "minecraft:y_above",
 								"anchor": {
-									"absolute": 80
+									"absolute": 87
 								},
 								"surface_depth_multiplier": 0,
 								"add_stone_depth": false
@@ -503,7 +524,7 @@
 							"if_true": {
 								"type": "minecraft:y_above",
 								"anchor": {
-									"absolute": 80
+									"absolute": 87
 								},
 								"surface_depth_multiplier": 0,
 								"add_stone_depth": false
@@ -602,7 +623,7 @@
 							"if_true": {
 								"type": "minecraft:y_above",
 								"anchor": {
-									"absolute": 80
+									"absolute": 87
 								},
 								"surface_depth_multiplier": 0,
 								"add_stone_depth": false

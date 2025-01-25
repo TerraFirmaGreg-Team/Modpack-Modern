@@ -6,7 +6,7 @@
     "min_y": -32,
     "max_y": 100,
     "size": 40,
-    "random_name": "normal_certus_quartz",
+    "random_name": "normal_quartz",
     "blocks": [
       {
         "replace": [
@@ -15,15 +15,11 @@
         "with": [
           {
             "block": "gtceu:shale_quartzite_ore",
-            "weight": 45
-          },
-          {
-            "block": "gtceu:shale_certus_quartz_ore",
-            "weight": 30
+            "weight": 65
           },
           {
             "block": "gtceu:shale_barite_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:shale_nether_quartz_ore",
@@ -38,15 +34,11 @@
         "with": [
           {
             "block": "gtceu:quartzite_quartzite_ore",
-            "weight": 45
-          },
-          {
-            "block": "gtceu:quartzite_certus_quartz_ore",
-            "weight": 30
+            "weight": 65
           },
           {
             "block": "gtceu:quartzite_barite_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:quartzite_nether_quartz_ore",
@@ -61,15 +53,11 @@
         "with": [
           {
             "block": "gtceu:schist_quartzite_ore",
-            "weight": 45
-          },
-          {
-            "block": "gtceu:schist_certus_quartz_ore",
-            "weight": 30
+            "weight": 65
           },
           {
             "block": "gtceu:schist_barite_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:schist_nether_quartz_ore",
@@ -84,15 +72,11 @@
         "with": [
           {
             "block": "gtceu:gneiss_quartzite_ore",
-            "weight": 45
-          },
-          {
-            "block": "gtceu:gneiss_certus_quartz_ore",
-            "weight": 30
+            "weight": 65
           },
           {
             "block": "gtceu:gneiss_barite_ore",
-            "weight": 15
+            "weight": 25
           },
           {
             "block": "gtceu:gneiss_nether_quartz_ore",

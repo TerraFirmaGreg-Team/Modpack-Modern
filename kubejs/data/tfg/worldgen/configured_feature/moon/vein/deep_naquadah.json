@@ -1,0 +1,45 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 310,
+		"density": 0.30,
+		"min_y": -64,
+		"max_y": -20,
+		"size": 32,
+		"random_name": "deep_naquadah",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_naquadah_ore",
+						"weight": 75
+					},
+					{
+						"block": "gtceu:dunite_plutonium_ore",
+						"weight": 25
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 500,
+			"blocks": [
+				{
+					"block": "gtceu:naquadah_indicator",
+					"weight": 75
+				},
+				{
+					"block": "gtceu:plutonium_indicator",
+					"weight": 25
+				}
+			]
+		}
+	}
+}

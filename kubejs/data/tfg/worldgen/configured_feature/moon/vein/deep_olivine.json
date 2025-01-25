@@ -1,0 +1,107 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 100,
+		"density": 0.4,
+		"min_y": -64,
+		"max_y": 20,
+		"size": 40,
+		"random_name": "normal_olivine",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_olivine_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:dunite_diopside_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dunite_enstatite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:dunite_fayalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_olivine_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:basalt_diopside_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_enstatite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:basalt_fayalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_olivine_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:gabbro_diopside_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:gabbro_enstatite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:gabbro_fayalite_ore",
+						"weight": 10
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:olivine_indicator",
+					"weight": 65
+				},
+				{
+					"block": "gtceu:diopside_indicator",
+					"weight": 15
+				},
+				{
+					"block": "gtceu:enstatite_indicator",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:fayalite_indicator",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

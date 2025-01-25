@@ -5,27 +5,33 @@
 			"type": "minecraft:weighted_state_provider",
 			"entries": [
 				{
-					"weight": 25,
+					"weight": 20,
 					"data": {
 						"Name": "ad_astra:moon_cobblestone_slab"
 					}
 				},
 				{
-					"weight": 25,
+					"weight": 20,
 					"data": {
 						"Name": "ad_astra:moon_cobblestone"
 					}
 				},
 				{
-					"weight": 25,
+					"weight": 20,
 					"data": {
 						"Name": "ad_astra:moon_stone_slab"
 					}
 				},
 				{
-					"weight": 25,
+					"weight": 20,
 					"data": {
-						"Name": "ad_astra:moon_deepslate"
+						"Name": "tfg:raw_dunite"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "tfg:raw_anorthite"
 					}
 				}
 			]

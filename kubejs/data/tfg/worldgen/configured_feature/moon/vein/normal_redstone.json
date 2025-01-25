@@ -1,0 +1,72 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 210,
+		"density": 0.4,
+		"min_y": -32,
+		"max_y": 100,
+		"size": 40,
+		"random_name": "normal_redstone",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_redstone_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:anorthite_ruby_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:anorthite_cinnabar_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_redstone_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dunite_ruby_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dunite_cinnabar_ore",
+						"weight": 20
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "minecraft:redstone_wire",
+					"weight": 70
+				},
+				{
+					"block": "gtceu:ruby_indicator",
+					"weight": 20
+				},
+				{
+					"block": "gtceu:cinnabar_indicator",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

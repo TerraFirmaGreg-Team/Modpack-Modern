@@ -1,0 +1,110 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 180,
+		"density": 0.35,
+		"min_y": -64,
+		"max_y": 0,
+		"size": 40,
+		"random_name": "deep_scheelite",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_scheelite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:diorite_tungstate_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:diorite_lithium_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_scheelite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:gabbro_tungstate_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:gabbro_lithium_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_scheelite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:anorthite_tungstate_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:anorthite_lithium_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_scheelite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:dunite_tungstate_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:dunite_lithium_ore",
+						"weight": 10
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 500,
+			"blocks": [
+				{
+					"block": "gtceu:scheelite_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:tungstate_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:lithium_indicator",
+					"weight": 20
+				}
+			]
+		}
+	}
+}

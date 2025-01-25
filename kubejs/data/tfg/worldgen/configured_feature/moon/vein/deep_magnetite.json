@@ -1,0 +1,146 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 180,
+		"density": 0.3,
+		"min_y": -64,
+		"max_y": 30,
+		"size": 34,
+		"random_name": "deep_magnetite",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_magnetite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:diorite_chromite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:diorite_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:diorite_sapphire_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_magnetite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:gabbro_chromite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:gabbro_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:gabbro_sapphire_ore",
+						"weight": 5
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_magnetite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:anorthite_chromite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:anorthite_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:anorthite_sapphire_ore",
+						"weight": 5
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_magnetite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dunite_chromite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:dunite_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dunite_sapphire_ore",
+						"weight": 5
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 1000,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_magnetite",
+					"weight": 40
+				},
+				{
+					"block": "tfc:ore/small_native_gold",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:chromite_indicator",
+					"weight": 40
+				},
+				{
+					"block": "gtceu:sapphire_indicator",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

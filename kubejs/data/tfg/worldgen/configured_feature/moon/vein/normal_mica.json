@@ -1,0 +1,130 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.25,
+		"min_y": 0,
+		"max_y": 210,
+		"size": 36,
+		"random_name": "normal_mica",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_kyanite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:diorite_mica_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_bauxite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_pollucite_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_kyanite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:gabbro_mica_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_bauxite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_pollucite_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_kyanite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:anorthite_mica_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_bauxite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_pollucite_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_kyanite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dunite_mica_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_bauxite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_pollucite_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:kyanite_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:mica_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:bauxite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:pollucite_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

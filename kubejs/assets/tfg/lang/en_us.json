@@ -1,6 +1,13 @@
 {
     "material.tfg.latex": "Latex",
     "material.tfg.fluix": "Fluix",
+    "material.gtceu.fayalite": "Fayalite",
+    "material.gtceu.diopside": "Diopside",
+    "material.gtceu.enstatite": "Enstatite",
+
+    "tagprefix.anorthite": "Anorthite %s Ore",
+    "tagprefix.dunite": "Dunite %s Ore",
+
     "item.tfg.spade_head_extruder_mold": "Extruder Mold (Spade Head)",
 
     "biome.tfg.lunar_basalt_maria": "Lunar Maria",

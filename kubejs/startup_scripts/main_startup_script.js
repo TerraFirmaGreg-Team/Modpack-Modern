@@ -55,6 +55,6 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 /**
  * Событие регистрации информации о составе предмета.
  */
-// TFGStartupEvents.materialInfo(event => {
-//     registerGTCEuMaterialInfo(event)
-// })
+ GTCEuStartupEvents.registry('gtceu:material', event => {
+     registerGTCEuMaterials(event)
+})

@@ -1,0 +1,107 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.3,
+		"min_y": -64,
+		"max_y": 0,
+		"size": 30,
+		"random_name": "deep_sheldonite",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfg:raw_anorthite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthite_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:anorthite_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:anorthite_palladium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_dunite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dunite_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dunite_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dunite_palladium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_palladium_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 500,
+			"blocks": [
+				{
+					"block": "gtceu:bornite_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:cooperite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:platinum_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:palladium_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}
