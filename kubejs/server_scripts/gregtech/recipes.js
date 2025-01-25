@@ -2,12 +2,11 @@
 
 const registerGTCEURecipes = (event) => {
     //#region Выход: Удобрение
-
     // В обычном миксере
     event.recipes.gtceu.mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
-            '2x #forge:dusts/wood',
+            '2x #tfg:wood_dusts',
             '4x #forge:sand'
         )
         .circuit(1)
@@ -20,7 +19,7 @@ const registerGTCEURecipes = (event) => {
     event.recipes.gtceu.create_mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
-            '2x #forge:dusts/wood',
+            '2x #tfg:wood_dusts',
             '4x #forge:sand'
         )
         .circuit(1)
@@ -1492,15 +1491,20 @@ const registerGTCEURecipes = (event) => {
         {
             let plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             let blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
+            let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
+            
 
             let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
             if (material.hasProperty(PropertyKey.INGOT))
             {
                 if (!plateStack.isEmpty()) {
-                    // Слиток -> Стержень
-                    event.recipes.createPressing(plateStack.withChance(0.8), ingotStack)
-                    .id(`tfg:pressing/${material.getName()}_plate`)
+                    event.recipes.createSequencedAssembly([plateStack.withChance(4), smallDustStack], ingotStack,[
+                        event.recipes.createPressing(ingotStack, ingotStack)
+                    ])
+                    .transitionalItem(ingotStack)
+                    .loops(1)
+                    .id(`tfg:pressing/${material.getName()}_plate`);
 
                     if (!blockStack.isEmpty()) {
                     // 9х Слиток -> Блок
@@ -1816,6 +1820,15 @@ const registerGTCEURecipes = (event) => {
 	
 	// #endregion
 
+	// #region fix centrifuge recipes for colored steel
+
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
+	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
+	
+	// #endregion
+
 	// #region Move MV superconductor to early HV instead of post-vac freezer
 	
 	event.remove({id: 'gtceu:shaped/hv_chemical_bath' })
@@ -1915,5 +1928,41 @@ const registerGTCEURecipes = (event) => {
         .duration(288)
         .EUt(96)
         .circuit(2)
+    // #endregion
+
+    // #region Fix TFC hanging sign metal dupe for Macerator and Arc Furnace
+
+    const SIGN_METALS = [
+		"copper",
+		"bronze",
+		"black_bronze",
+		"bismuth_bronze",
+		"wrought_iron",
+		"steel",
+		"black_steel",
+		"red_steel",
+		"blue_steel"
+	];
+	
+    SIGN_METALS.forEach(metal => {
+        global.TFC_WOOD_TYPES.forEach(wood => {
+            event.remove(`gtceu:macerator/macerate_wood/hanging_sign/${metal}/${wood}`)
+            event.recipes.gtceu.macerator(`gtceu:macerator/macerate_wood/hanging_sign/${metal}/${wood}`)
+                .itemInputs(`tfc:wood/hanging_sign/${metal}/${wood}`)
+                .itemOutputs('gtceu:wood_dust')
+                .chancedOutput(`gtceu:tiny_${metal}_dust`, 3750, 0)
+                .duration(108)
+                .EUt(8)
+
+            event.remove(`gtceu:arc_furnace/arc_wood/hanging_sign/${metal}/${wood}`)
+            event.recipes.gtceu.arc_furnace(`gtceu:arc_furnace/macerate_wood/hanging_sign/${metal}/${wood}`)
+                .itemInputs(`tfc:wood/hanging_sign/${metal}/${wood}`)
+                .itemOutputs('gtceu:tiny_ash_dust')
+                .chancedOutput(`gtceu:${metal}_nugget`, 3750, 0)
+                .inputFluids(Fluid.of('gtceu:oxygen', 12))
+                .duration(12)
+                .EUt(30)
+        })
+    })
     // #endregion
 }

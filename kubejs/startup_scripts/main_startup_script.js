@@ -5,6 +5,7 @@
  */
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
+    registerTFGItems(event)
 })
 
 /**
@@ -57,4 +58,5 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
  */
  GTCEuStartupEvents.registry('gtceu:material', event => {
      registerGTCEuMaterials(event)
+     registerTFGMaterials(event)
 })

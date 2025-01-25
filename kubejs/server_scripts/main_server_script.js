@@ -27,6 +27,7 @@ ServerEvents.tags('item', event => {
     registerSophisticatedBackpacksItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
+    registerTFGItemTags(event)
 })
 
 /**
@@ -153,6 +154,7 @@ ServerEvents.recipes(event => {
     registerSophisticatedBackpacksRecipes(event)
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
+    registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
     registerTFGRecipes(event)
     registerToolBeltRecipes(event)

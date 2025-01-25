@@ -27,12 +27,6 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"title": "Valid Inputs",
-			"item": "gtceu:iron_dust",
-			"text": "Only certain processing stages of ores are accepted in the blast furnace. $(thing)Ore Dusts$(), $(thing)Raw Ores$(), and $(thing)Cast/Wrought Iron Ingots$() work, while $(thing)Crushed$(), $(thing)Impure$(), or other stages of processing will not. But you really should $(l:tfc:tfg_ores/ore_basics#processing)Process$() your ores to dust."
-		},
-		{
-			"type": "patchouli:spotlight",
 			"title": "Automation",
 			"item": "create:mechanical_pump",
 			"text": "You'll need lots of $(item)Steel$() for the $(thing)Steam$() and $(thing)LV$() ages. Lots of steel. The $(thing)Electric Blast Furnace$() is far off, so maybe think about optimizing your steel production."
