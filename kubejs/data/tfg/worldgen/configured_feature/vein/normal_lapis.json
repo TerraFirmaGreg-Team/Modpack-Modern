@@ -148,26 +148,50 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 35,
+      "rarity": 15,
+      "depth": 20,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:lazurite_indicator",
-          "weight": 35
-        },
-		{
-          "block": "gtceu:sodalite_indicator",
-          "weight": 25
-        },
-		{
-          "block": "gtceu:lapis_indicator",
-          "weight": 25
-        },
-		{
           "block": "gtceu:calcite_indicator",
           "weight": 15
+        },
+		{
+          "block": "tfg:buds/small_lazurite_bud",
+          "weight": 30
+        },
+		{
+          "block": "tfg:buds/medium_lazurite_bud",
+          "weight": 20
+        },
+		{
+          "block": "tfg:buds/large_lazurite_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/small_sodalite_bud",
+          "weight": 20
+        },
+		{
+          "block": "tfg:buds/medium_sodalite_bud",
+          "weight": 12
+        },
+		{
+          "block": "tfg:buds/large_sodalite_bud",
+          "weight": 8
+        },
+		{
+          "block": "tfg:buds/small_lapis_bud",
+          "weight": 20
+        },
+		{
+          "block": "tfg:buds/medium_lapis_bud",
+          "weight": 12
+        },
+		{
+          "block": "tfg:buds/large_lapis_bud",
+          "weight": 8
         }
       ]
     }

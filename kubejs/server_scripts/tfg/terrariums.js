@@ -32,12 +32,14 @@ ServerEvents.recipes(event => {
 		.outputFluids(Fluid.of('gtceu:nether_air', 32000))
 		.duration(200)
 		.EUt(256)
+		.circuit(1)
 		
 	event.recipes.gtceu.nether_dome('tfg:enriched_slurry_to_air')
 		.inputFluids(Fluid.of('tfg:enriched_nether_slurry', 100))
 		.outputFluids(Fluid.of('gtceu:nether_air', 128000))
 		.duration(200)
 		.EUt(256)
+		.circuit(1)
 		
 	event.recipes.gtceu.nether_dome('tfg:quartz')
 		.itemInputs('gtceu:quartzite_gem')
@@ -45,23 +47,9 @@ ServerEvents.recipes(event => {
 		.itemOutputs('minecraft:quartz')
 		.duration(200)
 		.EUt(512)
+		.circuit(2)
 		
 	// netherarium
-		
-	/*event.shaped('gtceu:nether_dome', [
-        'GCB',
-        'DEH',
-        'FAF' 
-    ], {
-        A: 'minecraft:flint_and_steel',
-        B: 'minecraft:gold_nugget',
-        C: 'minecraft:blaze_rod',
-		D: 'minecraft:quartz',
-        E: 'gtceu:hv_gas_collector',
-		F: 'gtceu:dense_obsidian_plate',
-		G: 'minecraft:rotten_flesh',
-		H: 'minecraft:bone'
-    }).id('tfg:shaped/nether_dome')*/
 	
 	event.shaped('gtceu:nether_dome', [
         'ADA',
@@ -132,12 +120,14 @@ ServerEvents.recipes(event => {
 		.outputFluids(Fluid.of('gtceu:ender_air', 32000))
 		.duration(200)
 		.EUt(1024)
+		.circuit(1)
 		
 	event.recipes.gtceu.end_dome('tfg:enriched_slurry_to_air')
 		.inputFluids(Fluid.of('tfg:enriched_ender_slurry', 25))
 		.outputFluids(Fluid.of('gtceu:ender_air', 128000))
 		.duration(200)
 		.EUt(1024)
+		.circuit(1)
 		
 	event.recipes.gtceu.end_dome('tfg:pearls')
 		.itemInputs('gtceu:quantum_eye')
@@ -145,15 +135,10 @@ ServerEvents.recipes(event => {
 		.itemOutputs('2x minecraft:ender_pearl')
 		.duration(200)
 		.EUt(2048)
+		.circuit(2)
 		
 	// enderarium
 	
-	/*event.recipes.gtceu.assembler('tfg:end_dome')
-		.itemInputs('12x minecraft:ender_eye', 'minecraft:chorus_fruit', 'minecraft:end_crystal', '#minecraft:beds', 'gtceu:ev_gas_collector', 'tfc:metal/bars/wrought_iron', 'minecraft:bow', 'minecraft:end_stone', 'minecraft:obsidian')
-		.itemOutputs('gtceu:end_dome')
-		.duration(600)
-		.EUt(2048)*/
-		
 	event.shaped('gtceu:end_dome', [
         'DAD',
         'CEC',

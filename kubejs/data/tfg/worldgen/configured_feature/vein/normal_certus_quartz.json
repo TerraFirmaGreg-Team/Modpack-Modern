@@ -102,22 +102,50 @@
       }
     ],
 	"indicator": {
-      "rarity": 5,
+      "rarity": 15,
       "depth": 40,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
+	    {
+          "block": "gtceu:barite_indicator",
+          "weight": 20
+        },
         {
           "block": "ae2:small_quartz_bud",
-          "weight": 50
+          "weight": 20
         },
 		{
           "block": "ae2:medium_quartz_bud",
-          "weight": 30
+          "weight": 10
         },
 		{
           "block": "ae2:large_quartz_bud",
-          "weight": 20
+          "weight": 5
+        },
+		{
+          "block": "tfg:buds/small_quartzite_bud",
+          "weight": 30
+        },
+		{
+          "block": "tfg:buds/medium_quartzite_bud",
+          "weight": 15
+        },
+		{
+          "block": "tfg:buds/large_quartzite_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/small_nether_quartz_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/medium_nether_quartz_bud",
+          "weight": 6
+        },
+		{
+          "block": "tfg:buds/large_nether_quartz_bud",
+          "weight": 4
         }
       ]
     }

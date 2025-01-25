@@ -179,15 +179,51 @@
       "blocks": [
         {
           "block": "minecraft:small_amethyst_bud",
-          "weight": 50
+          "weight": 15
         },
 		{
           "block": "minecraft:medium_amethyst_bud",
-          "weight": 30
+          "weight": 10
         },
 		{
           "block": "minecraft:large_amethyst_bud",
-          "weight": 20
+          "weight": 5
+        },
+		{
+          "block": "tfg:buds/small_red_garnet_bud",
+          "weight": 3
+        },
+        {
+          "block": "tfg:buds/medium_red_garnet_bud",
+          "weight": 2
+        },
+        {
+          "block": "tfg:buds/large_red_garnet_bud",
+          "weight": 1
+        },
+		{
+          "block": "tfg:buds/small_yellow_garnet_bud",
+          "weight": 7
+        },
+        {
+          "block": "tfg:buds/medium_yellow_garnet_bud",
+          "weight": 5
+        },
+        {
+          "block": "tfg:buds/large_yellow_garnet_bud",
+          "weight": 3
+        },
+		{
+          "block": "tfg:buds/small_opal_bud",
+          "weight": 30
+        },
+        {
+          "block": "tfg:buds/medium_opal_bud",
+          "weight": 12
+        },
+        {
+          "block": "tfg:buds/large_opal_bud",
+          "weight": 8
         }
       ]
     }

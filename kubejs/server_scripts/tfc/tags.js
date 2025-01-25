@@ -86,6 +86,20 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
     })
 
+    //Hardwood Tags
+    global.TFC_HARDWOOD_TYPES.forEach(woodType => {
+        event.add('tfg:hardwood', `#tfc:${woodType}_logs`)
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_log/${woodType}`)
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_wood/${woodType}`)
+    });
+
+    //Softwood Tags
+    global.TFC_SOFTWOOD_TYPES.forEach(woodType =>{
+        event.add('tfg:softwood', `#tfc:${woodType}_logs`)
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_log/${woodType}`)
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_wood/${woodType}`)
+    })
+
     // Теги для сосудов по цветам
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.add('tfg:colorized_unfired_vessels', `tfc:ceramic/${dye}_unfired_vessel`)
@@ -258,6 +272,13 @@ const registerTFCBlockTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+
+    //#region Позволяем ТФК магме греть бойлер из Create
+    global.TFC_MAGMA_BLOCKS.forEach(el => {
+        event.add('create:passive_boiler_heaters', el)
+    })
+    //#endregion
 }
 
 const registerTFCFluidTags = (event) => {
