@@ -122,6 +122,11 @@ const registerTFCHeats = (event) => {
 
     // Ведро из красной
     event.itemHeat('tfc:metal/bucket/red_steel', 1.429, 924, 1232)
+
+    // Seaweed and Kelp
+    event.itemHeat('tfc:groundcover/seaweed', 1.0, null, null)
+    event.itemHeat('tfc:plant/leafy_kelp', 1.0, null, null)
+    event.itemHeat('tfc:plant/winged_kelp', 1.0, null, null)
 }
 
 const registerTFCFuels = (event) => {
