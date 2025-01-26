@@ -218,22 +218,22 @@
       }
     ],
 	"indicator": {
-      "rarity": 40,
-      "depth": 35,
+      "rarity": 4,
+      "depth": 20,
       "underground_rarity": 80,
       "underground_count": 1000,
       "blocks": [
         {
           "block": "gtceu:rock_salt_indicator",
-          "weight": 4
+          "weight": 6
         },
 		{
           "block": "tfc:groundcover/salt_lick",
-          "weight": 90
+          "weight": 80
         },
 		{
           "block": "gtceu:lepidolite_indicator",
-          "weight": 4
+          "weight": 6
         },
 		{
           "block": "gtceu:spodumene_indicator",

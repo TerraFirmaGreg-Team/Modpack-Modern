@@ -17,6 +17,7 @@ ServerEvents.tags('item', event => {
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
     registerFTBQuestsItemTags(event)
+    registerFStorageItemTags(event)
     registerGTCEUItemTags(event)
     registerMegaCellsItemTags(event)
     registerMinecraftItemTags(event)
@@ -26,7 +27,8 @@ ServerEvents.tags('item', event => {
     registerSophisticatedBackpacksItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
-    registerFStorageItemTags(event)
+    registerTFGItemTags(event)
+
 })
 
 /**
@@ -141,6 +143,7 @@ ServerEvents.recipes(event => {
     registerSophisticatedBackpacksRecipes(event)
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
+    registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)

@@ -24,6 +24,10 @@
           {
             "block": "gtceu:shale_gold_ore",
             "weight": 10
+          },
+	  {
+            "block": "gtceu:shale_chromite_ore",
+            "weight": 10
           }
         ]
       },
@@ -42,6 +46,10 @@
           },
           {
             "block": "gtceu:claystone_gold_ore",
+            "weight": 10
+          },
+	  {
+            "block": "gtceu:claystone_chromite_ore",
             "weight": 10
           }
         ]
@@ -62,6 +70,10 @@
           {
             "block": "gtceu:limestone_gold_ore",
             "weight": 10
+          },
+	  {
+            "block": "gtceu:limestone_chromite_ore",
+            "weight": 10
           }
         ]
       },
@@ -80,6 +92,10 @@
           },
           {
             "block": "gtceu:conglomerate_gold_ore",
+            "weight": 10
+          },
+	  {
+            "block": "gtceu:conglomerate_chromite_ore",
             "weight": 10
           }
         ]
@@ -100,6 +116,10 @@
           {
             "block": "gtceu:dolomite_gold_ore",
             "weight": 10
+          },
+	  {
+            "block": "gtceu:dolomite_chromite_ore",
+            "weight": 10
           }
         ]
       },
@@ -119,6 +139,10 @@
           {
             "block": "gtceu:chert_gold_ore",
             "weight": 10
+          },
+	  {
+            "block": "gtceu:chert_chromite_ore",
+            "weight": 10
           }
         ]
       },
@@ -137,6 +161,10 @@
           },
           {
             "block": "gtceu:chalk_gold_ore",
+            "weight": 10
+          },
+	  {
+            "block": "gtceu:chalk_chromite_ore",
             "weight": 10
           }
         ]

@@ -263,19 +263,11 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 40,
+      "rarity": 15,
+      "depth": 20,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
-        {
-          "block": "gtceu:grossular_indicator",
-          "weight": 30
-        },
-		{
-          "block": "gtceu:spessartine_indicator",
-          "weight": 20
-        },
 		{
           "block": "gtceu:pyrolusite_indicator",
           "weight": 20
@@ -283,6 +275,30 @@
 		{
           "block": "gtceu:tantalite_indicator",
           "weight": 10
+        },
+		{
+          "block": "tfg:buds/small_grossular_bud",
+          "weight": 16
+        },
+		{
+          "block": "tfg:buds/medium_grossular_bud",
+          "weight": 9
+        },
+		{
+          "block": "tfg:buds/large_grossular_bud",
+          "weight": 5
+        },
+		{
+          "block": "tfg:buds/small_spessartine_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/medium_spessartine_bud",
+          "weight": 7
+        },
+		{
+          "block": "tfg:buds/large_spessartine_bud",
+          "weight": 3
         }
       ]
     }

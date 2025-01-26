@@ -1,6 +1,31 @@
 # Changelog
 
-## [0.7.17] - ?
+## [0.7.19] - 25.01.2025
+### Changes
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Add a Forging Guide to the Field Guide (Nebby1999).
+- Fixes wool cloth recipe conflict (CaptainGold1).
+- Get small dust from failed pressing (Nebby1999).
+- Fixed cassiterite heating "exploit" (CaptainGold1).
+- TFC magma as passive boiler heater (SverhRazum-Nah).
+- Adds heat values for items with valid heating recipes but no heat values (CaptainGold1).
+- Add circuit settings to netherarium/enderarium (Pyritie).
+- Fixed colored steel dust centrifuge recipes (Pyritie).
+- Automatic Scraping with Sequenced Assembly (Nebby1999).
+- Add glowstone as infinite lamp fuel (CaptainGold1).
+- Changed LV casing/hull recipes (again) (Pyritie).
+- Add seaweed and kelp drying recipes (Metriximor).
+- Fix assembler wool recipe conflicts (deneth-weerasinghe).
+- Feature: Papermaking Overhaul with Wood (Nebby1999).
+- Hanging Sign Metal Dupe fix (AirRice).
+- Adjusted LV machines book entry (Pyritie).
+- Fix collapsible brick slab blocks (Egogorka).
+
+## [0.7.18] - 19.01.2025
+### Changes
+- Fix moonlight mod.
+
+## [0.7.17] - 19.01.2025
 ### Changes
 - Added ore index, started work on other TFC info category (Pyritie).
 - Changed the AE2 network analyzer to HV instead of IV (Pyritie).
@@ -22,16 +47,8 @@
 - Added some Italy and Ukraine translation (MetenBouldry).
 - Сreate some rich coal recipes in coke oven and pyro oven (Exzept1on).
 - Add blaze burner, fix alternator (Pyritie).
-### New mods
-- Inventory Tweaks Refoxed 1.1
-- EveryCompat
-- MemoryLeakFix
-### Updated mods
-- FirmaLife ? -> 2.1.15
-- Moonlight ? -> ?
-- TFC ? -> ?
-### Removed mods
-- Inventory Sorter
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Fix casing exploit, change recipes for tfc alloy (Pyritie).
 
 ## [0.7.16] - 12.01.2025
 ### Changes

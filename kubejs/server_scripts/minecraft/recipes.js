@@ -2917,7 +2917,7 @@ const registerMinecraftRecipes = (event) => {
     //#region Выход: Шерсть
 
     event.recipes.gtceu.assembler('wool_from_string')             
-        .itemInputs('4x #forge:string')
+        .itemInputs('8x #forge:string')
         .circuit(4)
         .itemOutputs('minecraft:white_wool')
         .duration(100)
