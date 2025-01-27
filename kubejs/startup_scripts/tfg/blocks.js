@@ -13,8 +13,8 @@ const registerTFGBlocks = (event) => {
 	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 
-	event.createCustom(`tfg:lunar_warped_roots`, () => new $ClusterBlock(6, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
-	event.createCustom(`tfg:lunar_sprouts`, () => new $ClusterBlock(4, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
+	event.createCustom(`tfg:lunar_warped_roots`, () => new $ClusterBlock(1, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
+	event.createCustom(`tfg:lunar_sprouts`, () => new $ClusterBlock(1, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 
 
 	event.create('tfg:raw_anorthite')

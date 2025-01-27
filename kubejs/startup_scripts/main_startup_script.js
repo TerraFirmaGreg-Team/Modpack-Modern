@@ -60,3 +60,8 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
      registerGTCEuMaterials(event)
      registerTFGMaterials(event)
 })
+
+GTCEuStartupEvents.materialModification(event => {
+
+    modifyGTCEuMaterials(event)
+})
