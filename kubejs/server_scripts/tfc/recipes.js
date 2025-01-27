@@ -3322,14 +3322,6 @@ const registerTFCRecipes = (event) => {
         B: 'tfc:crucible'
     }).id('tfc:crafting/blast_furnace')
 
-    // Тыква -> Кусочки тыквы
-    event.recipes.minecraft.crafting_shaped('5x tfc:food/pumpkin_chunks', [
-        'AB'
-    ], {
-        A: '#tfc:knives',
-        B: 'tfc:pumpkin'
-    })
-
     // Lime
     event.smelting('tfc:powder/lime', 'tfc:powder/flux')
         .id('tfg:smelting/lime')
