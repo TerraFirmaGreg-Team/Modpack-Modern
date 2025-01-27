@@ -6,6 +6,7 @@
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
     registerTFGItems(event)
+    registerKubejsItems(event)
 })
 
 /**
@@ -52,6 +53,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 GTCEuStartupEvents.registry('gtceu:material', event =>
 {
     registerTFGMaterials(event)
+    registerKubejsMaterials(event)
 })
 
 /**

@@ -8,6 +8,7 @@ ServerEvents.tags('item', event => {
     registerAsticorCartsItemTags(event)
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
+    registerKubejsItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
@@ -146,4 +147,5 @@ ServerEvents.recipes(event => {
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
     registerWaterFlasksRecipes(event)
+    registerKubejsRecipes(event)
 })
