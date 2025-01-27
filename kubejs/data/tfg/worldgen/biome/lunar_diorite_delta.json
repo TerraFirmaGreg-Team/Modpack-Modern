@@ -41,8 +41,12 @@
 	"has_precipitation": false,
 	"spawn_costs": {
 		"ad_astra:star_crawler": {
-			"charge": 0.2,
-			"energy_budget": 0.03
+			"charge": 0.4,
+			"energy_budget": 0.1
+		},
+		"minecraft:corrupted_lunarian": {
+			"charge": 0.4,
+			"energy_budget": 0.1
 		},
 		"minecraft:enderman": {
 			"charge": 0.7,
@@ -55,7 +59,7 @@
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 3,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 12
 			}
@@ -64,9 +68,15 @@
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 1,
+				"maxCount": 3,
 				"minCount": 1,
-				"weight": 90
+				"weight": 45
+			},
+			{
+				"type": "ad_astra:corrupted_lunarian",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 45
 			},
 			{
 				"type": "minecraft:enderman",

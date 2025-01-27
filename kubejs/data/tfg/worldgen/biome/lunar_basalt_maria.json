@@ -46,6 +46,10 @@
 			"charge": 0.2,
 			"energy_budget": 0.015
 		},
+		"minecraft:corrupted_lunarian": {
+			"charge": 0.7,
+			"energy_budget": 0.15
+		},
 		"minecraft:enderman": {
 			"charge": 0.7,
 			"energy_budget": 0.15
@@ -61,7 +65,13 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 90
+				"weight": 80
+			},
+			{
+				"type": "ad_astra:corrupted_lunarian",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
 			},
 			{
 				"type": "minecraft:enderman",
