@@ -1,0 +1,84 @@
+{
+  "type": "tfc:cluster_vein",
+    "config": {
+        "rarity": 120,
+        "density": 0.3,
+        "min_y": -32,
+        "max_y": 70,
+        "size": 20,
+        "random_name": "normal_bauxite",
+        "biomes": "#tfg:moon_biomes",
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:rock/raw/basalt"
+                ],
+                "with": [
+                    {
+                        "block": "gtceu:basalt_bauxite_ore",
+                        "weight": 25
+                    },
+                    {
+                        "block": "gtceu:basalt_ilmenite_ore",
+                        "weight": 40
+                    },
+                    {
+                        "block": "gtceu:basalt_aluminium_ore",
+                        "weight": 35
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfg:raw_dunite"
+                ],
+                "with": [
+                    {
+                        "block": "gtceu:dunite_bauxite_ore",
+                        "weight": 25
+                    },
+                    {
+                        "block": "gtceu:dunite_ilmenite_ore",
+                        "weight": 40
+                    },
+                    {
+                        "block": "gtceu:dunite_aluminium_ore",
+                        "weight": 35
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 15,
+            "depth": 50,
+            "underground_rarity": 40,
+            "underground_count": 200,
+            "blocks": [
+                {
+                    "block": "gtceu:bauxite_indicator",
+                    "weight": 15
+                },
+                {
+                    "block": "gtceu:ilmenite_indicator",
+                    "weight": 40
+                },
+                {
+                    "block": "gtceu:aluminium_indicator",
+                    "weight": 25
+                },
+                {
+                    "block": "tfg:buds/small_rutile_bud",
+                    "weight": 10
+                },
+                {
+                    "block": "tfg:buds/medium_rutile_bud",
+                    "weight": 7
+                },
+                {
+                    "block": "tfg:buds/large_rutile_bud",
+                    "weight": 4
+                }
+            ]
+        }
+    }
+}

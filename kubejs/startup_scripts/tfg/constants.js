@@ -29,6 +29,7 @@ global.MOON_VEINS =
 	'tfg:moon/vein/deep_scheelite',
 	'tfg:moon/vein/deep_sheldonite',
 	'tfg:moon/vein/normal_apatite',
+	'tfg:moon/vein/normal_bauxite',
 	'tfg:moon/vein/normal_beryllium',
 	'tfg:moon/vein/normal_certus_quartz',
 	'tfg:moon/vein/normal_diopside',
