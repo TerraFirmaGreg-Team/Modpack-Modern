@@ -38,14 +38,6 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"ad_astra:star_crawler": {
-			"charge": 0.7,
-			"energy_budget": 0.15
-		},
-		"minecraft:corrupted_lunarian": {
-			"charge": 0.2,
-			"energy_budget": 0.015
-		},
 		"minecraft:enderman": {
 			"charge": 0.7,
 			"energy_budget": 0.15
@@ -68,19 +60,25 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 80
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "minecraft:endermite",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],

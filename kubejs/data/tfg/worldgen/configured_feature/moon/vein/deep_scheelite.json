@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 180,
+		"rarity": 250,
 		"density": 0.35,
 		"min_y": -64,
 		"max_y": 0,
-		"size": 40,
+		"size": 20,
 		"random_name": "deep_scheelite",
 		"biomes": "#tfg:moon_biomes",
 		"blocks": [

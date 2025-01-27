@@ -96,6 +96,12 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:enderman')
 	event.add('ad_astra:lives_without_oxygen', 'minecraft:enderman')
+	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
+
+	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:endermite')
+	event.add('ad_astra:lives_without_oxygen', 'minecraft:endermite')
+	event.add('tfc:deals_piercing_damage', 'minecraft:endermite')
+	event.add('tfc:hunted_by_land_predators', 'minecraft:endermite')
 
 	event.add('tfc:hunts_land_prey', 'ad_astra:star_crawler')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
