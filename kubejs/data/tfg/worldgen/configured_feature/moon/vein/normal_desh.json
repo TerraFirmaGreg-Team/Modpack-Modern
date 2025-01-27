@@ -1,0 +1,104 @@
+{
+  "type": "tfc:cluster_vein",
+    "config": {
+        "rarity": 180,
+        "density": 0.3,
+        "min_y": -32,
+        "max_y": 70,
+        "size": 30,
+        "random_name": "normal_desh",
+        "biomes": "#tfg:moon_biomes",
+        "blocks": [
+            {
+                "replace": [
+                    "tfc:raw_anorthite"
+                ],
+                "with": [
+                    {
+                        "block": "gtceu:anorthite_desh_ore",
+                        "weight": 40
+                    },
+                    {
+                        "block": "gtceu:anorthite_ilmenite_ore",
+                        "weight": 20
+                    },
+                    {
+                        "block": "gtceu:anorthite_aluminium_ore",
+                        "weight": 20
+                    },
+                    {
+                        "block": "gtceu:anorthite_fayalite_ore",
+                        "weight": 20
+                    }
+                ]
+            },
+            {
+                "replace": [
+                    "tfg:raw_dunite"
+                ],
+                "with": [
+                    {
+                        "block": "gtceu:dunite_desh_ore",
+                        "weight": 40
+                    },
+                    {
+                        "block": "gtceu:dunite_ilmenite_ore",
+                        "weight": 20
+                    },
+                    {
+                        "block": "gtceu:dunite_aluminium_ore",
+                        "weight": 20
+                    },
+                    {
+                        "block": "gtceu:dunite_fayalite_ore",
+                        "weight": 20
+                    }
+                ]
+            }
+        ],
+        "indicator": {
+            "rarity": 15,
+            "depth": 50,
+            "underground_rarity": 40,
+            "underground_count": 200,
+            "blocks": [
+                {
+                    "block": "gtceu:desh_indicator",
+                    "weight": 40
+                },
+                {
+                    "block": "gtceu:ilmenite_indicator",
+                    "weight": 10
+                },
+                {
+                    "block": "gtceu:aluminium_indicator",
+                    "weight": 20
+                },
+                {
+                    "block": "tfg:buds/small_rutile_bud",
+                    "weight": 10
+                },
+                {
+                    "block": "tfg:buds/medium_rutile_bud",
+                    "weight": 7
+                },
+                {
+                    "block": "tfg:buds/large_rutile_bud",
+                    "weight": 4
+                },
+                {
+                    "block": "tfg:buds/small_fayalite_bud",
+                    "weight": 10
+                },
+                {
+                    "block": "tfg:buds/medium_fayalite_bud",
+                    "weight": 7
+                },
+                {
+                    "block": "tfg:buds/large_fayalite_bud",
+                    "weight": 4
+                }
+            ]
+        }
+    }
+}
