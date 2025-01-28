@@ -13,4 +13,10 @@ const registerTFGMaterials = (event) =>
         .iconSet(GTMaterialIconSet.FINE)
         .color('0x52482c')
         .secondaryColor('0x52482c')
+
+    event.create('lactose')
+        .dust()
+        .iconSet(GTMaterialIconSet.FINE)
+        .color('0xede8da')
+        .secondaryColor('0xeddcad')
 }

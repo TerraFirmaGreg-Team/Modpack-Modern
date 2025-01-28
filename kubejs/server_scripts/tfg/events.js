@@ -17,7 +17,7 @@ pill_event.forEach(pill_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:${pill_event}_pill`) return
+        if (item.id != `tfg:${pill_event}_pill`) return
         item.count--
         player.addItemCooldown(item, 100)
         player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 480 0 true`)
@@ -26,7 +26,7 @@ pill_event.forEach(pill_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:${pill_event}_tablet`) return
+        if (item.id != `tfg:${pill_event}_tablet`) return
         item.count--
         player.addItemCooldown(item, 100)
         player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 1800 0 true`)
@@ -36,7 +36,7 @@ pill_event.forEach(pill_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:antipoison_pill`) return
+        if (item.id != `tfg:antipoison_pill`) return
         item.count--
         player.addItemCooldown(item, 50)
         event.player.removeEffect('minecraft:poison')
@@ -45,7 +45,7 @@ pill_event.forEach(pill_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:antipoison_tablet`) return
+        if (item.id != `tfg:antipoison_tablet`) return
         item.count--
         player.addItemCooldown(item, 50)
         event.player.removeEffect('minecraft:poison')
@@ -75,7 +75,7 @@ salvo_event.forEach(salvo_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:${salvo_event}_salvo`) return
+        if (item.id != `tfg:${salvo_event}_salvo`) return
         item.count--
         player.addItemCooldown(item, 100)
         player.runCommandSilent(`effect give ${username} minecraft:${salvo_event} 480 0 true`)
@@ -85,7 +85,7 @@ salvo_event.forEach(salvo_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:absorption_salvo`) return
+        if (item.id != `tfg:absorption_salvo`) return
         item.count--
         player.addItemCooldown(item, 200)
         player.runCommandSilent(`effect give ${username} minecraft:absorption 480 4 true`)
@@ -94,7 +94,7 @@ salvo_event.forEach(salvo_event => {
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `kubejs:instant_health_salvo`) return
+        if (item.id != `tfg:instant_health_salvo`) return
         item.count--
         player.addItemCooldown(item, 100)
         player.runCommandSilent(`effect give ${username} minecraft:instant_health 1 1 true`)
