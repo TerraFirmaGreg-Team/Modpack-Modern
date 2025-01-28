@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "tfg:moon/meteors",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 124895654,
+		"spacing": 32,
+		"separation": 8,
+		"type": "minecraft:random_spread"
+	}
+}

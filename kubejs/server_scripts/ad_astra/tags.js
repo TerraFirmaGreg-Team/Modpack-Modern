@@ -85,7 +85,10 @@ const registerAdAstraBiomeTags = (event) => {
 
 	global.MOON_BIOMES.forEach(biome => {
 		event.add('tfg:moon_biomes', biome)
+		event.add('tfg:has_structure/meteors', biome)
 	})
+
+	event.add('tfg:has_structure/moon_rabbit_houses', 'tfg:lunar_plains')
 }
 
 const registerAdAstraEntityTypeTags = (event) => {
