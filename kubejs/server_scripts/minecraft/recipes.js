@@ -2308,33 +2308,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Зачарованное золотое яблоко
-
-    event.recipes.gtceu.chemical_reactor('notch_apple')             
-        .itemInputs('tfc:food/green_apple', '8x minecraft:gold_block')
-        .itemOutputs('minecraft:enchanted_golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    event.recipes.gtceu.large_chemical_reactor('notch_apple')             
-        .itemInputs('tfc:food/green_apple', '8x minecraft:gold_block')
-        .itemOutputs('minecraft:enchanted_golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    event.recipes.gtceu.chemical_reactor('notch_apple_1')             
-        .itemInputs('tfc:food/red_apple', '8x minecraft:gold_block')
-        .itemOutputs('minecraft:enchanted_golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    event.recipes.gtceu.large_chemical_reactor('notch_apple_1')             
-        .itemInputs('tfc:food/red_apple', '8x minecraft:gold_block')
-        .itemOutputs('minecraft:enchanted_golden_apple')
-        .duration(50)
-        .EUt(30)
-
-    //#endregion
 
     //#region Кольчуга
     

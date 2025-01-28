@@ -86,6 +86,7 @@ const registerAdAstraBiomeTags = (event) => {
 	global.MOON_BIOMES.forEach(biome => {
 		event.add('tfg:moon_biomes', biome)
 		event.add('tfg:has_structure/meteors', biome)
+		event.add('tfg:has_structure/cheese_ores', biome)
 	})
 
 	event.add('tfg:has_structure/moon_rabbit_houses', 'tfg:lunar_plains')
@@ -96,6 +97,10 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:rabbit')
 	event.add('ad_astra:lives_without_oxygen', 'minecraft:rabbit')
 	event.add('tfc:hunted_by_land_predators', 'minecraft:rabbit')
+
+	event.add('ad_astra:can_survive_extreme_cold', 'tfc:rat')
+	event.add('ad_astra:lives_without_oxygen', 'tfc:rat')
+	event.add('tfc:hunted_by_land_predators', 'tfc:rat')
 
 	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:enderman')
 	event.add('ad_astra:lives_without_oxygen', 'minecraft:enderman')
