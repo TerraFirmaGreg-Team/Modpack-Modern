@@ -527,6 +527,7 @@
         { "block": "ae2:small_quartz_bud" },
         { "block": "ae2:medium_quartz_bud" },
         { "block": "ae2:large_quartz_bud" },
+        { "block": "ae2:quartz_cluster" },
 
         { "fluid": "minecraft:lava" }
     ],
