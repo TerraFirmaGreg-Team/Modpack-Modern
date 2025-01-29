@@ -80,6 +80,15 @@ const registerGTCEURecipes = (event) => {
         .outputFluids(Fluid.of('minecraft:water', 1000))
         .duration(51)
         .EUt(30)
+        .circuit(1)
+
+    event.recipes.gtceu.centrifuge('beets_to_sugar')
+        .itemInputs('5x tfc:food/beet')
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('3x minecraft:sugar')
+        .duration(800)
+        .EUt(7)
+        .circuit(30)
 
     // Декрафт в электролайзере
     event.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')             
