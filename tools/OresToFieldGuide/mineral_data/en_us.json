@@ -1,0 +1,691 @@
+﻿{
+	"minerals": [
+		{
+			"id": "almandine",
+			"use": "Source of",
+			"for": "Aluminium, Iron",
+			"formula": "Al₂Fe₃Si₃O₁₂"
+		},
+		{
+			"id": "aluminium",
+			"use": "Source of",
+			"for": "Aluminium",
+			"formula": "Al"
+		},
+		{
+			"id": "alunite",
+			"use": "Source of",
+			"for": "Potassium, Aluminium",
+			"formula": "KAl₃Si₂H₆O₁₄"
+		},
+		{
+			"id": "amethyst",
+			"use": "Source of",
+			"for": "Iron",
+			"formula": "(SiO₂)₄Fe"
+		},
+		{
+			"id": "apatite",
+			"use": "Source of",
+			"for": "Calcium, Phosphorus, Forestry PTSD",
+			"formula": "Ca₅(PO₄)₃Cl"
+		},
+		{
+			"id": "asbestos",
+			"use": "Source of",
+			"for": "Magnesium, Lung cancer",
+			"formula": "Mg₃Si₂H₄O₉",
+			"hazardous": true
+		},
+		{
+			"id": "barite",
+			"use": "Source of",
+			"for": "Barium",
+			"formula": "BaSO₂"
+		},
+		{
+			"id": "basaltic_mineral_sand",
+			"use": "Smelts into",
+			"for": "Cast Iron",
+			"formula": "(Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)"
+		},
+		{
+			"id": "bastnasite",
+			"use": "Source of",
+			"for": "Cerium, Fluorine",
+			"formula": "CeCFO₃"
+		},
+		{
+			"id": "bauxite",
+			"use": "Source of",
+			"for": "Aluminium",
+			"formula": "Al₂O₃"
+		},
+		{
+			"id": "bentonite",
+			"use": "Source of",
+			"for": "Sodium, Magnesium",
+			"formula": "NaMg₆Si₁₂H₄(H₂O)₅O₃₆"
+		},
+		{
+			"id": "beryllium",
+			"use": "Source of",
+			"for": "Beryllium",
+			"formula": "Be",
+			"hazardous": true
+		},
+		{
+			"id": "bismuth",
+			"use": "Melts into",
+			"for": "Bismuth",
+			"formula": "Bi"
+		},
+		{
+			"id": "blue_topaz",
+			"use": "Source of",
+			"for": "Aluminium, Fluorine",
+			"formula": "Al₂SiF₂H₂O₆"
+		},
+		{
+			"id": "borax",
+			"use": "Source of",
+			"for": "Boron",
+			"formula": "Na₂B₄(H₂O)₁₀O₇"
+		},
+		{
+			"id": "bornite",
+			"use": "Source of",
+			"for": "Copper, Iron",
+			"formula": "Cu₅FeS₄"
+		},
+		{
+			"id": "calcite",
+			"use": "Source of",
+			"for": "Calcium",
+			"formula": "CaCO₃"
+		},
+		{
+			"id": "cassiterite",
+			"use": "Melts into",
+			"for": "Tin",
+			"formula": "SnO₂"
+		},
+		{
+			"id": "cassiterite_sand",
+			"use": "Melts into",
+			"for": "Tin",
+			"formula": "SnO₂"
+		},
+		{
+			"id": "certus_quartz",
+			"use": "Used for",
+			"for": "Applied Energistics 2",
+			"formula": "SiO₂"
+		},
+		{
+			"id": "chalcocite",
+			"use": "Source of",
+			"for": "Copper",
+			"formula": "Cu₂S"
+		},
+		{
+			"id": "chalcopyrite",
+			"use": "Melts into",
+			"for": "Copper",
+			"formula": "CuFeS₂"
+		},
+		{
+			"id": "chromite",
+			"use": "Source of",
+			"for": "Chromium",
+			"formula": "FeCr₂O₄"
+		},
+		{
+			"id": "cinnabar",
+			"use": "Source of",
+			"for": "Mercury",
+			"formula": "HgS",
+			"hazardous": true
+		},
+		{
+			"id": "coal",
+			"use": "Used for",
+			"for": "Fuel, distillation",
+			"formula": "C"
+		},
+		{
+			"id": "cobalt",
+			"use": "Smelts into",
+			"for": "Cobalt",
+			"formula": "Co"
+		},
+		{
+			"id": "cobaltite",
+			"use": "Source of",
+			"for": "Cobalt, Arsenic",
+			"formula": "CoAsS",
+			"hazardous": true
+		},
+		{
+			"id": "copper",
+			"name": "Native Copper",
+			"use": "Melts into",
+			"for": "Copper",
+			"formula": "Cu"
+		},
+		{
+			"id": "diamond",
+			"use": "Used for",
+			"for": "Macerators, AE2",
+			"formula": "C"
+		},
+		{
+			"id": "diatomite",
+			"use": "Source of",
+			"for": "Iron, Aluminium",
+			"formula": "(SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+		},
+		{
+			"id": "electrotine",
+			"use": "Source of",
+			"for": "Gold, Silver, Redstone",
+			"formula": "(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
+		},
+		{
+			"id": "emerald",
+			"use": "Used for",
+			"for": "MV components, Item tag filters",
+			"formula": "Be₃Al₂Si₆O₁₈"
+		},
+		{
+			"id": "fullers_earth",
+			"name": "Fuller's Earth",
+			"use": "Source of",
+			"for": "Magnesium",
+			"formula": "MgSi₄H(H₂O)₄O₁₁"
+		},
+		{
+			"id": "galena",
+			"use": "Smelts into",
+			"for": "Lead",
+			"formula": "PbS",
+			"hazardous": true
+		},
+		{
+			"id": "garnet_sand",
+			"use": "Source of",
+			"for": "Almandine, Andradite, Grossular, Pyrope, Spessartine, Uvarovite"
+		},
+		{
+			"id": "garnierite",
+			"use": "Melts into",
+			"for": "Nickel",
+			"formula": "NiO"
+		},
+		{
+			"id": "glauconite_sand",
+			"use": "Source of",
+			"for": "Magnesium, Aluminium",
+			"formula": "KMg₂Al₄H₂O₁₂"
+		},
+		{
+			"id": "goethite",
+			"use": "Melts into",
+			"for": "Cast Iron",
+			"formula": "FeHO₂"
+		},
+		{
+			"id": "gold",
+			"name": "Native Gold",
+			"use": "Melts into",
+			"for": "Gold",
+			"formula": "Au"
+		},
+		{
+			"id": "granitic_mineral_sand",
+			"use": "Smelts into",
+			"for": "Cast Iron",
+			"formula": "(Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))"
+		},
+		{
+			"id": "graphite",
+			"use": "Used for",
+			"for": "$(l:mechanics/fire_clay)Fire Clay$(), Graphene",
+			"formula": "C"
+		},
+		{
+			"id": "green_sapphire",
+			"use": "Source of",
+			"for": "Aluminium",
+			"formula": "Al₂O₃"
+		},
+		{
+			"id": "grossular",
+			"use": "Source of",
+			"for": "Calcium, Aluminium",
+			"formula": "Ca₃Al₂Si₃O₁₂"
+		},
+		{
+			"id": "gypsum",
+			"use": "Used for",
+			"for": "Alabaster (dyeable) bricks",
+			"formula": "CaS(H₂O)₂O₄"
+		},
+		{
+			"id": "hematite",
+			"use": "Melts into",
+			"for": "Cast Iron",
+			"formula": "Fe₂O₃"
+		},
+		{
+			"id": "ilmenite",
+			"use": "Source of",
+			"for": "Titanium",
+			"formula": "FeTiO₃"
+		},
+		{
+			"id": "iron",
+			"use": "Melts into",
+			"for": "Cast Iron",
+			"formula": "Fe"
+		},
+		{
+			"id": "kaolinite",
+			"use": "Used for",
+			"for": "$(l:mechanics/fire_clay)Fire Clay$()"
+		},
+		{
+			"id": "kyanite",
+			"use": "Source of",
+			"for": "Aluminium",
+			"formula": "Al₂SiO₅"
+		},
+		{
+			"id": "lapis",
+			"use": "Source of",
+			"for": "Lazurite, Sodalite, Pyrite, Calcite"
+		},
+		{
+			"id": "lazurite",
+			"use": "Source of",
+			"for": "Aluminium, Calcium, Sodium",
+			"formula": "Al₆Si₆Ca₈Na₈"
+		},
+		{
+			"id": "lead",
+			"use": "Smelts into",
+			"for": "Lead",
+			"formula": "Pb",
+			"hazardous": true
+		},
+		{
+			"id": "lepidolite",
+			"use": "Source of",
+			"for": "Potassium, Lithium, Aluminium, Fluorine",
+			"formula": "KLi₃Al₄F₂O₁₀"
+		},
+		{
+			"id": "lithium",
+			"use": "Source of",
+			"for": "Lithium",
+			"formula": "Li"
+		},
+		{
+			"id": "magnesite",
+			"use": "Source of",
+			"for": "Magnesium",
+			"formula": "MgCO₃"
+		},
+		{
+			"id": "magnetite",
+			"use": "Melts into",
+			"for": "Cast Iron",
+			"formula": "Fe₃O₄"
+		},
+		{
+			"id": "malachite",
+			"use": "Melts into",
+			"for": "Copper",
+			"formula": "Cu₂CH₂O₅"
+		},
+		{
+			"id": "mica",
+			"use": "Source of",
+			"for": "Potassium, Aluminium, Fluorine",
+			"formula": "KAl₃Si₃F₂O₁₀"
+		},
+		{
+			"id": "molybdenite",
+			"use": "Source of",
+			"for": "Molybdenum",
+			"formula": "MoS₂"
+		},
+		{
+			"id": "molybdenum",
+			"use": "Source of",
+			"for": "Molybdenum",
+			"formula": "Mo"
+		},
+		{
+			"id": "monazite",
+			"use": "Source of",
+			"for": "Phosphorous, Rare Earth",
+			"formula": "?(PO₄)"
+		},
+		{
+			"id": "naquadah",
+			"use": "Source of",
+			"for": "Naquadah, Tritanium",
+			"formula": "Nq"
+		},
+		{
+			"id": "neodymium",
+			"use": "Source of",
+			"for": "Neodymium",
+			"formula": "Nd"
+		},
+		{
+			"id": "nether_quartz",
+			"use": "Used for",
+			"for": "Applied Energistics 2",
+			"formula": "SiO₂"
+		},
+		{
+			"id": "nickel",
+			"use": "Melts into",
+			"for": "Nickel",
+			"formula": "Ni"
+		},
+		{
+			"id": "oilsands",
+			"use": "Source of",
+			"for": "Freedom 🛢🦅🗽"
+		},
+		{
+			"id": "olivine",
+			"use": "Source of",
+			"for": "Magnesium, Iron",
+			"formula": "Mg₂Fe(SiO₂)₂"
+		},
+		{
+			"id": "opal",
+			"formula": "(SiO₂)"
+		},
+		{
+			"id": "palladium",
+			"use": "Source of",
+			"for": "Palladium",
+			"formula": "Pd"
+		},
+		{
+			"id": "pentlandite",
+			"use": "Smelts into",
+			"for": "Nickel",
+			"formula": "Ni₉S₈"
+		},
+		{
+			"id": "pitchblende",
+			"use": "Source of",
+			"for": "Uranium, Thorium, Lead",
+			"formula": "(UO₂)₃ThPb",
+			"hazardous": true
+		},
+		{
+			"id": "platinum",
+			"use": "Smelts into",
+			"for": "Platinum",
+			"formula": "Pt"
+		},
+		{
+			"id": "plutonium",
+			"use": "Source of",
+			"for": "Plutonium",
+			"formula": "Pu²³⁹",
+			"hazardous": true
+		},
+		{
+			"id": "pollucite",
+			"use": "Source of",
+			"for": "Caesium, Aluminium",
+			"formula": "Cs₂Al₂Si₄(H₂O)₂O₁₂"
+		},
+		{
+			"id": "powellite",
+			"use": "Source of",
+			"for": "Molybdenum",
+			"formula": "CaMoO₄"
+		},
+		{
+			"id": "pyrite",
+			"use": "Melts into",
+			"for": "Cast Iron",
+			"formula": "FeS₂"
+		},
+		{
+			"id": "pyrochlore",
+			"use": "Source of",
+			"for": "Niobium",
+			"formula": "Ca₂Nb₂O₇"
+		},
+		{
+			"id": "pyrolusite",
+			"use": "Source of",
+			"for": "Manganese",
+			"formula": "MnO₂"
+		},
+		{
+			"id": "pyrope",
+			"use": "Source of",
+			"for": "Aluminium, Magnesium",
+			"formula": "Al₂Mg₃Si₃O₁₂"
+		},
+		{
+			"id": "quartzite",
+			"use": "Used for",
+			"for": "LV components",
+			"formula": "SiO₂"
+		},
+		{
+			"id": "realgar",
+			"use": "Source of",
+			"for": "Arsenic",
+			"formula": "As₄S₄",
+			"hazardous": true,
+			"tips": "If you're having trouble finding Realgar, another source of Arsenic is $(item)Cobaltite$(), although it will require an $(thing)Electric Blast Furnace$() to process."
+		},
+		{
+			"id": "red_garnet",
+			"use": "Source of",
+			"for": "Pyrope, Almandine, Spessartine"
+		},
+		{
+			"id": "redstone",
+			"use": "Melts into",
+			"for": "Redstone",
+			"formula": "Si(FeS₂)₅(CrAl₂O₃)Hg₃"
+		},
+		{
+			"id": "rock_salt",
+			"use": "Source of",
+			"for": "Potassium, Chlorine",
+			"formula": "KCl"
+		},
+		{
+			"id": "ruby",
+			"use": "Source of",
+			"for": "Chromium, Aluminium",
+			"formula": "CrAl₂O₃"
+		},
+		{
+			"id": "salt",
+			"use": "Source of",
+			"for": "Sodium, Chlorine",
+			"formula": "NaCl"
+		},
+		{
+			"id": "saltpeter",
+			"use": "Source of",
+			"for": "Potassium, Nitrogen",
+			"formula": "KNO₃"
+		},
+		{
+			"id": "sapphire",
+			"use": "Source of",
+			"for": "Aluminium",
+			"formula": "Al₂O₃"
+		},
+		{
+			"id": "scheelite",
+			"use": "Source of",
+			"for": "Tungsten",
+			"formula": "Ca(WO₃)O"
+		},
+		{
+			"id": "cooperite",
+			"name": "Sheldonite",
+			"use": "Source of",
+			"for": "Platinum, Nickel, Palladium",
+			"formula": "Pt₃NiSPd"
+		},
+		{
+			"id": "silver",
+			"name": "Native Silver",
+			"use": "Melts into",
+			"for": "Silver",
+			"formula": "Ag"
+		},
+		{
+			"id": "soapstone",
+			"use": "Source of",
+			"for": "Magnesium",
+			"formula": "Mg₃Si₄H₂O₁₂"
+		},
+		{
+			"id": "sodalite",
+			"use": "Source of",
+			"for": "Aluminium, Sodium",
+			"formula": "Al₃Si₃Na₄Cl"
+		},
+		{
+			"id": "spessartine",
+			"use": "Source of",
+			"for": "Manganese, Aluminium",
+			"formula": "Al₂Mn₃Si₃O₁₂"
+		},
+		{
+			"id": "sphalerite",
+			"use": "Melts into",
+			"for": "Zinc",
+			"formula": "ZnS"
+		},
+		{
+			"id": "spodumene",
+			"use": "Source of",
+			"for": "Lithium, Aluminium",
+			"formula": "LiAlSi₂O₆"
+		},
+		{
+			"id": "stibnite",
+			"use": "Smelts into",
+			"for": "Antimony",
+			"formula": "Sb₂S₃"
+		},
+		{
+			"id": "sulfur",
+			"use": "Source of",
+			"for": "Sulfur",
+			"formula": "S"
+		},
+		{
+			"id": "talc",
+			"use": "Source of",
+			"for": "Magnesium",
+			"formula": "Mg₃Si₄H₂O₁₂"
+		},
+		{
+			"id": "tantalite",
+			"use": "Source of",
+			"for": "Manganese, Tantalum",
+			"formula": "MnTa₂O₆"
+		},
+		{
+			"id": "tetrahedrite",
+			"use": "Melts into",
+			"for": "Copper",
+			"formula": "Cu₃SbS₃Fe"
+		},
+		{
+			"id": "thorium",
+			"use": "Source of",
+			"for": "Thorium",
+			"formula": "Th"
+		},
+		{
+			"id": "tin",
+			"use": "Melts into",
+			"for": "Tin",
+			"formula": "Sn"
+		},
+		{
+			"id": "topaz",
+			"use": "Source of",
+			"for": "Aluminium, Fluorine",
+			"formula": "Al₂SiFH₂"
+		},
+		{
+			"id": "tricalcium_phosphate",
+			"use": "Source of",
+			"for": "Calcium, Phosphorus",
+			"formula": "Ca₃(PO₄)₂"
+		},
+		{
+			"id": "trona",
+			"use": "Source of",
+			"for": "Sodium",
+			"formula": "Na₃C₂H(H₂O)₂O₆"
+		},
+		{
+			"id": "tungstate",
+			"use": "Source of",
+			"for": "Tungsten, Lithium",
+			"formula": "Li₂(WO₃)O"
+		},
+		{
+			"id": "uraninite",
+			"use": "Source of",
+			"for": "Uranium",
+			"formula": "UO₂",
+			"hazardous": true
+		},
+		{
+			"id": "vanadium_magnetite",
+			"use": "Source of",
+			"for": "Iron, Vanadium",
+			"formula": "(Fe₃O₄)V"
+		},
+		{
+			"id": "wulfenite",
+			"use": "Source of",
+			"for": "Lead, Molybdenum",
+			"formula": "PbMoO₄",
+			"hazardous": true
+		},
+		{
+			"id": "yellow_garnet",
+			"use": "Source of",
+			"for": "Andradite, Grossular, Uvarovite"
+		},
+		{
+			"id": "yellow_limonite",
+			"use": "Melts into",
+			"for": "Cast Iron",
+			"formula": "FeHO₂"
+		},
+		{
+			"id": "zeolite",
+			"use": "Source of",
+			"for": "Aluminium, Oxygen",
+			"formula": "NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
+		}
+	]
+}
