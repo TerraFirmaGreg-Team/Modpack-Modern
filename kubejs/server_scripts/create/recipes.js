@@ -601,7 +601,7 @@ const registerCreateRecipes = (e) => {
 
     // Create sail creation using custom sail items.
     
-    event.shaped('8x create:sail_frame',[
+    e.shaped('8x create:sail_frame',[
         'ABA',
         'BCB',
         'ABA'
@@ -611,7 +611,7 @@ const registerCreateRecipes = (e) => {
         C: ''
     }).id('tfg:create/shaped/sail_frame')
 
-    event.shaped('8x create:white_sail', [
+    e.shaped('8x create:white_sail', [
         'AAA',
         'ABA',
         'AAA'
@@ -836,7 +836,7 @@ const registerCreateRecipes = (e) => {
         E: '#forge:plates/wrought_iron'
     }).id('tfg:create/shaped/electron_tube')
 
-    event.shaped('2x create:electron_tube', [
+    e.shaped('2x create:electron_tube', [
         ' A ',
         'BCB',
         'DED' 
@@ -848,7 +848,7 @@ const registerCreateRecipes = (e) => {
         E: '#forge:plates/wrought_iron'
     }).id('tfg:create/shaped/electron_tube2')
 
-    event.shaped('3x create:electron_tube', [
+    e.shaped('3x create:electron_tube', [
         ' A ',
         ' B ',
         ' C '
@@ -1058,7 +1058,7 @@ const registerCreateRecipes = (e) => {
         .EUt(20)
 
     // Деталь рельса
-    event.shaped('3x create:metal_girder', [
+    e.shaped('3x create:metal_girder', [
         'AAA',
         'BBB' 
     ], {
@@ -1231,7 +1231,7 @@ const registerCreateRecipes = (e) => {
 
     //#region Механизм точности
 
-    event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
+    e.recipes.gtceu.assembler('tfg:create/precision_mechanism')
         .itemInputs('#forge:sheets/gold','3x create:cogwheel', '3x create:large_cogwheel', '3x #forge:nuggets/iron')
         .itemOutputs('create:precision_mechanism')
         .duration(2000)
@@ -1241,7 +1241,7 @@ const registerCreateRecipes = (e) => {
   
     //#region Blaze burner
 	
-    event.shaped('create:blaze_burner', [
+    e.shaped('create:blaze_burner', [
         'B B',
         'BAB',
         'CCC' 
@@ -1255,7 +1255,7 @@ const registerCreateRecipes = (e) => {
 
     // #region So-called "Shit Glass"
 	
-	event.shaped('4x create:framed_glass',
+	e.shaped('4x create:framed_glass',
 	[
 		'AA',
 		'AA'
@@ -1263,7 +1263,7 @@ const registerCreateRecipes = (e) => {
 		A: 'minecraft:glass'
 	}).id('tfg:create/framed_glass')
 	
-	event.shaped('4x create:tiled_glass',
+	e.shaped('4x create:tiled_glass',
 	[
 		'A A',
 		'   ',
@@ -1272,7 +1272,7 @@ const registerCreateRecipes = (e) => {
 		A: 'minecraft:glass'
 	}).id('tfg:create/tiled_glass')
 	
-	event.shaped('4x create:horizontal_framed_glass',
+	e.shaped('4x create:horizontal_framed_glass',
 	[
 		'AA',
 		'  ',
@@ -1281,7 +1281,7 @@ const registerCreateRecipes = (e) => {
 		A: 'minecraft:glass'
 	}).id('tfg:create/horizontal_framed_glass')
 	
-	event.shaped('4x create:vertical_framed_glass',
+	e.shaped('4x create:vertical_framed_glass',
 	[
 		'A A',
 		'A A'
@@ -1298,14 +1298,14 @@ const registerCreateRecipes = (e) => {
 	]
 	
 	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
-		event.shapeless(`2x create:${x}_pane`,
+		e.shapeless(`2x create:${x}_pane`,
 		[ 
 			`create:${x}`,
 			'#forge:tools/saws'
 		])
 		.id(`tfg:create/shapeless/${x}_pane`)
 		
-		event.recipes.gtceu.cutter(`tfg:create/${x}_pane`)
+		e.recipes.gtceu.cutter(`tfg:create/${x}_pane`)
 			.itemInputs(`3x create:${x}`)
 			.itemOutputs(`8x create:${x}_pane`)
 			.duration(40)
@@ -1320,7 +1320,7 @@ const registerCreateRecipes = (e) => {
 	]
 	
 	CREATE_OTHER_GLASS_WINDOWS.forEach(x => {
-		event.shaped(`2x create:${x[0]}_window`,
+		e.shaped(`2x create:${x[0]}_window`,
 		[
 			' B ',
 			'BAB'
@@ -1329,14 +1329,14 @@ const registerCreateRecipes = (e) => {
 			B: x[1]
 		}).id(`tfg:create/shaped/${x[0]}_window`)
 		
-		event.shapeless(`2x create:${x[0]}_window_pane`,
+		e.shapeless(`2x create:${x[0]}_window_pane`,
 		[ 
 			`create:${x[0]}_window`, 
 			'#forge:tools/saws' 
 		])
 		.id(`tfg:create/shapeless/${x[0]}_window_pane`)
 		
-		event.recipes.gtceu.cutter(`tfg:create/${x[0]}_window_pane`)
+		e.recipes.gtceu.cutter(`tfg:create/${x[0]}_window_pane`)
 			.itemInputs(`3x create:${x[0]}_window`)
 			.itemOutputs(`8x create:${x[0]}_window_pane`)
 			.duration(40)
@@ -1344,13 +1344,13 @@ const registerCreateRecipes = (e) => {
 	})
 
     //Allow automatic scraping by using sequenced assembly
-    event.forEachRecipe({ type: 'tfc:scraping' }, r =>
+    e.forEachRecipe({ type: 'tfc:scraping' }, r =>
     {
         let originalRecipeIngredient = r.json.get("ingredient").get("item");
         let output = r.originalRecipeResult;
 
-        event.recipes.createSequencedAssembly([output], originalRecipeIngredient,[
-            event.recipes.createDeploying(originalRecipeIngredient, [originalRecipeIngredient, '#tfc:knives']).keepHeldItem()
+        e.recipes.createSequencedAssembly([output], originalRecipeIngredient,[
+            e.recipes.createDeploying(originalRecipeIngredient, [originalRecipeIngredient, '#tfc:knives']).keepHeldItem()
         ]).transitionalItem(originalRecipeIngredient).loops(16)
     })
 	

@@ -4316,7 +4316,7 @@ const registerMinecraftRecipes = (e) => {
     e.remove({ id: 'gtceu:shaped/book' })
     e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
 
-    event.recipes.gtceu.large_chemical_reactor('glistening_melon_slice')             
+    e.recipes.gtceu.large_chemical_reactor('glistening_melon_slice')             
         .itemInputs('tfc:food/melon_slice', '6x #forge:nuggets/gold')
         .itemOutputs('minecraft:glistering_melon_slice')
         .duration(50)
@@ -4326,31 +4326,31 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Улей
 
-    event.remove({ id: 'minecraft:beehive' })
+    e.remove({ id: 'minecraft:beehive' })
 
     //#endregion
 
     //#region Выход: Блок сот
 
-    event.remove({ id: 'minecraft:honeycomb_block' })
+    e.remove({ id: 'minecraft:honeycomb_block' })
 
     //#endregion
 
     //#region Выход: Пузырек с медом
 
-    event.remove({ id: 'minecraft:honey_bottle' })
+    e.remove({ id: 'minecraft:honey_bottle' })
 
     //#endregion
 
     //#region Выход: Блок меда
 
-    event.remove({ id: 'minecraft:honey_block' })
+    e.remove({ id: 'minecraft:honey_block' })
 
     //#endregion
 
     //#region Выход: Сухая губка
 
-    event.recipes.tfc.heating('minecraft:wet_sponge', 790)
+    e.recipes.tfc.heating('minecraft:wet_sponge', 790)
         .resultItem('minecraft:sponge')
         .id('tfg:minecraft/heating/sponge')
 
@@ -4358,82 +4358,82 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Прожаренный фрукт хоруса
 
-    event.remove({ id: 'minecraft:popped_chorus_fruit' })
+    e.remove({ id: 'minecraft:popped_chorus_fruit' })
 
     //#endregion
 
     //#region Выход: Фиолетовый блок
 
-    event.remove({ id: 'gtceu:compressor/purpur_block' })
+    e.remove({ id: 'gtceu:compressor/purpur_block' })
 
     //#endregion
 
     //#region Выход: Фиолетовый блок ступень
 
-    event.remove({ id: 'minecraft:purpur_stairs' })
-    event.remove({ id: 'minecraft:purpur_stairs_from_purpur_block_stonecutting' })
+    e.remove({ id: 'minecraft:purpur_stairs' })
+    e.remove({ id: 'minecraft:purpur_stairs_from_purpur_block_stonecutting' })
 
     //#endregion
 
     //#region Выход: Фиолетовый блок плита
 
-    event.remove({ id: 'minecraft:purpur_slab' })
-    event.remove({ id: 'gtceu:shaped/purpur_slab_saw' })
-    event.remove({ id: 'minecraft:purpur_slab_from_purpur_block_stonecutting' })
+    e.remove({ id: 'minecraft:purpur_slab' })
+    e.remove({ id: 'gtceu:shaped/purpur_slab_saw' })
+    e.remove({ id: 'minecraft:purpur_slab_from_purpur_block_stonecutting' })
 
     //#endregion
 
     //#region Выход: Фиолетовый блок столб
 
-    event.remove({ id: 'minecraft:purpur_pillar_from_purpur_block_stonecutting' })
+    e.remove({ id: 'minecraft:purpur_pillar_from_purpur_block_stonecutting' })
 
     //#endregion
 
     //#region Выход: Ножницы
 
-    event.remove({ id: 'minecraft:shears' })
+    e.remove({ id: 'minecraft:shears' })
 
     //#endregion
 
     //#region Выход: Светильник
 
-    event.remove({ id: 'minecraft:lantern' })
+    e.remove({ id: 'minecraft:lantern' })
 
     //#endregion
 
     //#region Выход: Цепи
 
-    event.remove({ id: 'minecraft:chain' })
+    e.remove({ id: 'minecraft:chain' })
 
     //#endregion
 
     //#region Выход: Светильник адский
 
-    event.remove({ id: 'minecraft:soul_lantern' })
+    e.remove({ id: 'minecraft:soul_lantern' })
 
     //#endregion
 
     //#region Выход: Стол для ковки
 
-    event.remove({ id: 'minecraft:smithing_table' })
+    e.remove({ id: 'minecraft:smithing_table' })
 
     //#endregion
 
     //#region Выход: Плавильня
 
-    event.remove({ id: 'minecraft:blast_furnace' })
+    e.remove({ id: 'minecraft:blast_furnace' })
 
     //#endregion
 
     //#region Выход: Коптильня
 
-    event.remove({ id: 'minecraft:blast_furnace' })
+    e.remove({ id: 'minecraft:blast_furnace' })
 
     //#endregion
 
     //#region Выход: Тонированное стекло
 
-    event.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
+    e.recipes.gtceu.alloy_smelter('tfg:minecraft/tinted_glass')
         .itemInputs('minecraft:glass', 'tfc:powder/amethyst')
         .itemOutputs('minecraft:tinted_glass')
         .duration(260)
@@ -4443,7 +4443,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Пустая карта
 
-    event.recipes.gtceu.assembler('map')             
+    e.recipes.gtceu.assembler('map')             
         .itemInputs('8x minecraft:paper', 'firmaciv:firmaciv_compass')
         .itemOutputs('minecraft:map')
         .duration(100)
@@ -4453,47 +4453,47 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Жаренный картофель
 
-    event.remove({ id: 'minecraft:baked_potato' })
-    event.remove({ id: 'minecraft:baked_potato_from_smoking' })
+    e.remove({ id: 'minecraft:baked_potato' })
+    e.remove({ id: 'minecraft:baked_potato_from_smoking' })
 
     //#endregion
 
     //#region Выход: Декор ваза
 
-    event.remove({ id: 'minecraft:decorated_pot_simple' })
+    e.remove({ id: 'minecraft:decorated_pot_simple' })
 
     //#endregion
 
     //#region Выход: Резные книжные полки
 
-    event.remove({ id: 'minecraft:chiseled_bookshelf' })
+    e.remove({ id: 'minecraft:chiseled_bookshelf' })
 
     //#endregion
 
     //#region Выход: Книжные полки
 
-    event.remove({ id: 'gtceu:assembler/bookshelf' })
+    e.remove({ id: 'gtceu:assembler/bookshelf' })
 
     //#endregion
 
     //#region Выход: Стержень энда
 
-    event.remove({ id: 'minecraft:end_rod' })
-    event.remove({ id: 'gtceu:assembler/end_rod' })
+    e.remove({ id: 'minecraft:end_rod' })
+    e.remove({ id: 'gtceu:assembler/end_rod' })
 
     //#endregion
 
     //#region Выход: Кисточка
 
-    event.remove({ id: 'minecraft:brush' })
+    e.remove({ id: 'minecraft:brush' })
 
     //#endregion
 
     //#region Выход: Книга
 
-    event.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+    e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
 
-    event.shapeless('minecraft:book', [
+    e.shapeless('minecraft:book', [
         'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
     ]).id('minecraft:book')
 
@@ -4501,33 +4501,33 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Трибуна
 
-    event.remove({ id: 'tfc:crafting/vanilla/lectern' })
+    e.remove({ id: 'tfc:crafting/vanilla/lectern' })
 
     //#endregion
 
     //#region Выход: Золотое яблоко
 
-    event.remove({ id: 'minecraft:golden_apple' })
+    e.remove({ id: 'minecraft:golden_apple' })
 
-    event.recipes.gtceu.chemical_reactor('golden_apple')             
+    e.recipes.gtceu.chemical_reactor('golden_apple')             
         .itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
         .itemOutputs('minecraft:golden_apple')
         .duration(50)
         .EUt(30)
 
-    event.recipes.gtceu.large_chemical_reactor('golden_apple')             
+    e.recipes.gtceu.large_chemical_reactor('golden_apple')             
         .itemInputs('tfc:food/green_apple', '8x #forge:ingots/gold')
         .itemOutputs('minecraft:golden_apple')
         .duration(50)
         .EUt(30)
 
-    event.recipes.gtceu.chemical_reactor('golden_apple_1')             
+    e.recipes.gtceu.chemical_reactor('golden_apple_1')             
         .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
         .itemOutputs('minecraft:golden_apple')
         .duration(50)
         .EUt(30)
 
-    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
+    e.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
         .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
         .itemOutputs('minecraft:golden_apple')
         .duration(50)
@@ -4537,25 +4537,25 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Зачарованное золотое яблоко
 
-    event.recipes.gtceu.chemical_reactor('notch_apple')             
+    e.recipes.gtceu.chemical_reactor('notch_apple')             
         .itemInputs('tfc:food/green_apple', '8x minecraft:gold_block')
         .itemOutputs('minecraft:enchanted_golden_apple')
         .duration(50)
         .EUt(30)
 
-    event.recipes.gtceu.large_chemical_reactor('notch_apple')             
+    e.recipes.gtceu.large_chemical_reactor('notch_apple')             
         .itemInputs('tfc:food/green_apple', '8x minecraft:gold_block')
         .itemOutputs('minecraft:enchanted_golden_apple')
         .duration(50)
         .EUt(30)
 
-    event.recipes.gtceu.chemical_reactor('notch_apple_1')             
+    e.recipes.gtceu.chemical_reactor('notch_apple_1')             
         .itemInputs('tfc:food/red_apple', '8x minecraft:gold_block')
         .itemOutputs('minecraft:enchanted_golden_apple')
         .duration(50)
         .EUt(30)
 
-    event.recipes.gtceu.large_chemical_reactor('notch_apple_1')             
+    e.recipes.gtceu.large_chemical_reactor('notch_apple_1')             
         .itemInputs('tfc:food/red_apple', '8x minecraft:gold_block')
         .itemOutputs('minecraft:enchanted_golden_apple')
         .duration(50)
@@ -4565,161 +4565,161 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Кольчуга
     
-    event.remove({id: 'gtceu:shaped/chainmail_boots'})
-    event.remove({id: 'gtceu:shaped/chainmail_leggings'})
-    event.remove({id: 'gtceu:shaped/chainmail_chestplate'})
-    event.remove({id: 'gtceu:shaped/chainmail_helmet'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_chainmail_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_chainmail_helmet'})
-    event.remove({id: 'minecraft:iron_nugget_from_smelting'})
-    event.remove({id: 'minecraft:iron_nugget_from_blasting'})
+    e.remove({id: 'gtceu:shaped/chainmail_boots'})
+    e.remove({id: 'gtceu:shaped/chainmail_leggings'})
+    e.remove({id: 'gtceu:shaped/chainmail_chestplate'})
+    e.remove({id: 'gtceu:shaped/chainmail_helmet'})
+    e.remove({id: 'gtceu:arc_furnace/arc_chainmail_boots'})
+    e.remove({id: 'gtceu:arc_furnace/arc_chainmail_leggings'})
+    e.remove({id: 'gtceu:arc_furnace/arc_chainmail_chestplate'})
+    e.remove({id: 'gtceu:arc_furnace/arc_chainmail_helmet'})
+    e.remove({id: 'gtceu:macerator/macerate_chainmail_boots'})
+    e.remove({id: 'gtceu:macerator/macerate_chainmail_leggings'})
+    e.remove({id: 'gtceu:macerator/macerate_chainmail_chestplate'})
+    e.remove({id: 'gtceu:macerator/macerate_chainmail_helmet'})
+    e.remove({id: 'minecraft:iron_nugget_from_smelting'})
+    e.remove({id: 'minecraft:iron_nugget_from_blasting'})
 
     //#endregion
 
     //#region Железная броня
 
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_helmet'})
-    event.remove({id: 'gtceu:shaped/iron_horse_armor'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_horse_armor'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_boots'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_leggings'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_chestplate'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_helmet'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_boots'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_leggings'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_chestplate'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_helmet'})
+    e.remove({id: 'gtceu:shaped/iron_horse_armor'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_horse_armor'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_horse_armor'})
 
     //#endregion
 
     //#region Золотая броня
 
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_boots'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_leggings'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_chestplate'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_helmet'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_helmet'})
-    event.remove({id: 'gtceu:shaped/golden_horse_armor'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_horse_armor'})
-    event.remove({id: 'minecraft:gold_nugget_from_smelting'})
-    event.remove({id: 'minecraft:gold_nugget_from_blasting'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_boots'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_leggings'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_chestplate'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_helmet'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_boots'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_leggings'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_chestplate'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_helmet'})
+    e.remove({id: 'gtceu:shaped/golden_horse_armor'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_horse_armor'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_horse_armor'})
+    e.remove({id: 'minecraft:gold_nugget_from_smelting'})
+    e.remove({id: 'minecraft:gold_nugget_from_blasting'})
 
     //#endregion
 
     //#region Алмазная броня
    
-    event.remove({id: 'gtceu:macerator/macerate_diamond_boots'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_leggings'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_chestplate'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_helmet'})
-    event.remove({id: 'gtceu:shaped/diamond_horse_armor'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_horse_armor'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_boots'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_leggings'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_chestplate'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_helmet'})
+    e.remove({id: 'gtceu:shaped/diamond_horse_armor'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_horse_armor'})
 
     //#endregion
 
     //#region Незеритовая броня
     
-    event.remove({id: 'minecraft:netherite_helmet_smithing'})
-    event.remove({id: 'minecraft:netherite_chestplate_smithing'})
-    event.remove({id: 'minecraft:netherite_leggings_smithing'})
-    event.remove({id: 'minecraft:netherite_boots_smithing'})
+    e.remove({id: 'minecraft:netherite_helmet_smithing'})
+    e.remove({id: 'minecraft:netherite_chestplate_smithing'})
+    e.remove({id: 'minecraft:netherite_leggings_smithing'})
+    e.remove({id: 'minecraft:netherite_boots_smithing'})
 
     //#endregion
 
     //#region Деревянные инструменты
     
-    event.remove({id: 'gtceu:macerator/macerate_wooden_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_wooden_hoe'})
+    e.remove({id: 'gtceu:macerator/macerate_wooden_sword'})
+    e.remove({id: 'gtceu:macerator/macerate_wooden_pickaxe'})
+    e.remove({id: 'gtceu:macerator/macerate_wooden_axe'})
+    e.remove({id: 'gtceu:macerator/macerate_wooden_shovel'})
+    e.remove({id: 'gtceu:macerator/macerate_wooden_hoe'})
 
     //#endregion
 
     //#region Каменные инстурменты
     
-    event.remove({id: 'gtceu:macerator/macerate_stone_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_stone_hoe'})
+    e.remove({id: 'gtceu:macerator/macerate_stone_sword'})
+    e.remove({id: 'gtceu:macerator/macerate_stone_pickaxe'})
+    e.remove({id: 'gtceu:macerator/macerate_stone_axe'})
+    e.remove({id: 'gtceu:macerator/macerate_stone_shovel'})
+    e.remove({id: 'gtceu:macerator/macerate_stone_hoe'})
 
     //#endregion
 
     //#region Железные инструменты
     
-    event.remove({id: 'gtceu:macerator/macerate_iron_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_iron_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_iron_hoe'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_sword'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_pickaxe'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_axe'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_shovel'})
+    e.remove({id: 'gtceu:macerator/macerate_iron_hoe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_sword'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_pickaxe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_axe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_shovel'})
+    e.remove({id: 'gtceu:arc_furnace/arc_iron_hoe'})
 
     //#endregion
 
     //#region Золотые инструменты
     
-    event.remove({id: 'gtceu:macerator/macerate_golden_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_golden_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_golden_hoe'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_sword'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_pickaxe'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_axe'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_shovel'})
+    e.remove({id: 'gtceu:macerator/macerate_golden_hoe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_sword'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_pickaxe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_axe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_shovel'})
+    e.remove({id: 'gtceu:arc_furnace/arc_golden_hoe'})
 
     //#endregion
 
     //#region Алмазные инструменты
     
-    event.remove({id: 'gtceu:macerator/macerate_diamond_sword'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_pickaxe'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_axe'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_shovel'})
-    event.remove({id: 'gtceu:macerator/macerate_diamond_hoe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_sword'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_pickaxe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_axe'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_shovel'})
-    event.remove({id: 'gtceu:arc_furnace/arc_diamond_hoe'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_sword'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_pickaxe'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_axe'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_shovel'})
+    e.remove({id: 'gtceu:macerator/macerate_diamond_hoe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_diamond_sword'})
+    e.remove({id: 'gtceu:arc_furnace/arc_diamond_pickaxe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_diamond_axe'})
+    e.remove({id: 'gtceu:arc_furnace/arc_diamond_shovel'})
+    e.remove({id: 'gtceu:arc_furnace/arc_diamond_hoe'})
 
     //#endregion
 
     //#region Незеритовые инструменты
     
-    event.remove({id: 'minecraft:netherite_sword_smithing'})
-    event.remove({id: 'minecraft:netherite_pickaxe_smithing'})
-    event.remove({id: 'minecraft:netherite_axe_smithing'})
-    event.remove({id: 'minecraft:netherite_shovel_smithing'})
-    event.remove({id: 'minecraft:netherite_hoe_smithing'})
+    e.remove({id: 'minecraft:netherite_sword_smithing'})
+    e.remove({id: 'minecraft:netherite_pickaxe_smithing'})
+    e.remove({id: 'minecraft:netherite_axe_smithing'})
+    e.remove({id: 'minecraft:netherite_shovel_smithing'})
+    e.remove({id: 'minecraft:netherite_hoe_smithing'})
 
     //#endregion
 
     //#region Выход: Компаратор
 
-    event.remove({id: 'minecraft:comparator'})
-    event.remove({id: 'gtceu:shaped/comparator_quartzite'})
-    event.remove({id: 'gtceu:shaped/comparator_certus'})
-    event.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
+    e.remove({id: 'minecraft:comparator'})
+    e.remove({id: 'gtceu:shaped/comparator_quartzite'})
+    e.remove({id: 'gtceu:shaped/comparator_certus'})
+    e.remove({id: 'tfc:crafting/vanilla/redstone/comparator'})
 
     // Компаратор
-    event.shaped('minecraft:comparator', [
+    e.shaped('minecraft:comparator', [
         ' A ',
         'ABA',
         'CCC'
@@ -4729,7 +4729,7 @@ const registerMinecraftRecipes = (e) => {
         C: '#tfc:rock/smooth'
     }).id('tfg:shaped/comparator_certus');
 
-    event.shaped('minecraft:comparator', [
+    e.shaped('minecraft:comparator', [
         ' A ',
         'ABA',
         'CCC'
@@ -4739,7 +4739,7 @@ const registerMinecraftRecipes = (e) => {
         C: '#tfc:rock/smooth'
     }).id('tfg:shaped/comparator_quartzite');
 
-    event.shaped('minecraft:comparator', [
+    e.shaped('minecraft:comparator', [
         ' A ',
         'ABA',
         'CCC'
@@ -4753,18 +4753,18 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Крюк
 
-    event.remove({id: 'minecraft:tripwire_hook'})
-    event.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
-    event.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
-    event.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
+    e.remove({id: 'minecraft:tripwire_hook'})
+    e.remove({id: 'tfc:crafting/vanilla/redstone/tripwire_hook'})
+    e.remove({id: 'gtceu:assembler/tripwire_hook_wrought_iron'})
+    e.remove({id: 'gtceu:assembler/tripwire_hook_iron'})
 
-    event.shapeless('minecraft:tripwire_hook', [
+    e.shapeless('minecraft:tripwire_hook', [
         '#forge:rods/wood',
         '#forge:rings/wrought_iron',
         '#forge:small_springs'
     ]).id('tfg:shaped/tripwire_hook')
 
-    event.recipes.gtceu.assembler('tripwire_hook')             
+    e.recipes.gtceu.assembler('tripwire_hook')             
         .itemInputs('#forge:rods/wood', '#forge:rings/wrought_iron', '#forge:small_springs')
         .itemOutputs('2x minecraft:tripwire_hook')
         .duration(100)
@@ -4774,9 +4774,9 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Рамка
 
-    event.remove({ id: 'minecraft:item_frame' })
+    e.remove({ id: 'minecraft:item_frame' })
 
-    event.recipes.gtceu.assembler('item_frame')             
+    e.recipes.gtceu.assembler('item_frame')             
         .itemInputs('8x #tfc:lumber', 'minecraft:leather')
         .itemOutputs('8x minecraft:item_frame')
         .duration(100)
@@ -4786,12 +4786,12 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Свето-рамка
 
-    event.shapeless('minecraft:glow_item_frame', [
+    e.shapeless('minecraft:glow_item_frame', [
         'minecraft:item_frame',
         '#forge:dusts/glowstone'
     ]).id('minecraft:glow_item_frame')
 
-    event.recipes.gtceu.assembler('tfg/glow_item_frame')             
+    e.recipes.gtceu.assembler('tfg/glow_item_frame')             
         .itemInputs('2x minecraft:item_frame', '#forge:dusts/glowstone')
         .itemOutputs('2x minecraft:glow_item_frame')
         .duration(100)
@@ -4801,7 +4801,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Картина
 
-    event.recipes.gtceu.assembler('painting')             
+    e.recipes.gtceu.assembler('painting')             
         .itemInputs('#tfc:high_quality_cloth','8x #forge:rods/wood')
         .itemOutputs('2x minecraft:painting')
         .circuit(1)
@@ -4815,7 +4815,7 @@ const registerMinecraftRecipes = (e) => {
     //#region В Верстаке
 
     // Из серы
-    event.shaped('2x tfc:dead_torch', [
+    e.shaped('2x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4824,7 +4824,7 @@ const registerMinecraftRecipes = (e) => {
     }).id('gtceu:shaped/torch_sulfur')
 
     // Из фосфора
-    event.shaped('6x tfc:dead_torch', [
+    e.shaped('6x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4834,10 +4834,10 @@ const registerMinecraftRecipes = (e) => {
 
     // Из креозота
     // Я не виноват, что рецепт с ведром грега не работает
-    event.remove({ id: 'gtceu:shaped/torch_creosote' })
+    e.remove({ id: 'gtceu:shaped/torch_creosote' })
 
     // Из пыли кокса
-    event.shaped('8x tfc:dead_torch', [
+    e.shaped('8x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4846,7 +4846,7 @@ const registerMinecraftRecipes = (e) => {
     }).id('gtceu:shaped/torch_coke_dust')
 
     // Из гема кокса
-    event.shaped('8x tfc:dead_torch', [
+    e.shaped('8x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4855,7 +4855,7 @@ const registerMinecraftRecipes = (e) => {
     }).id('gtceu:shaped/torch_coke')
 
     // Из пыли угля
-    event.shaped('4x tfc:dead_torch', [
+    e.shaped('4x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4864,7 +4864,7 @@ const registerMinecraftRecipes = (e) => {
     }).id('gtceu:shaped/torch_coal_dust')
 
     // Из гема угля
-    event.shaped('4x tfc:dead_torch', [
+    e.shaped('4x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4873,7 +4873,7 @@ const registerMinecraftRecipes = (e) => {
     }).id('tfg:crafting/torch_coal')
 
     // Из пыли древесного угля
-    event.shaped('4x tfc:dead_torch', [
+    e.shaped('4x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4882,7 +4882,7 @@ const registerMinecraftRecipes = (e) => {
     }).id('gtceu:shaped/torch_charcoal_dust')
 
     // Из гема древесного угля
-    event.shaped('4x tfc:dead_torch', [
+    e.shaped('4x tfc:dead_torch', [
         'A',
         'B'
     ], {
@@ -4891,62 +4891,62 @@ const registerMinecraftRecipes = (e) => {
     }).id('tfg:crafting/torch_charcoal')
 
     // Из резины
-    event.shaped('3x tfc:dead_torch', [
-        'A',
-        'B'
-    ], {
-        A: 'gtceu:sticky_resin', 
-        B: '#tfc:can_be_lit_on_torch' 
-    }).id('gtceu:shaped/sticky_resin_torch')
+    // e.shaped('3x tfc:dead_torch', [
+    //     'A',
+    //     'B'
+    // ], {
+    //     A: 'gtceu:sticky_resin', 
+    //     B: '#tfc:can_be_lit_on_torch' 
+    // }).id('gtceu:shaped/sticky_resin_torch')
 
     //#endregion
 
     //#region В сборщике
 
     // Из серы
-    event.recipes.gtceu.assembler('torch_sulfur')             
+    e.recipes.gtceu.assembler('torch_sulfur')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:sulfur_dust')
         .itemOutputs('2x tfc:dead_torch')
         .duration(100)
         .EUt(1)
 
     // Из фосфора
-    event.recipes.gtceu.assembler('torch_phosphorus')             
+    e.recipes.gtceu.assembler('torch_phosphorus')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:phosphorus_dust')
         .itemOutputs('6x tfc:dead_torch')
         .duration(100)
         .EUt(1)
 
     // Из гема кокса
-    event.recipes.gtceu.assembler('torch_coke_gem')             
+    e.recipes.gtceu.assembler('torch_coke_gem')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_gem')
         .itemOutputs('8x tfc:dead_torch')
         .duration(100)
         .EUt(1)
 
     // Из пыли кокса
-    event.recipes.gtceu.assembler('torch_coke_dust')             
+    e.recipes.gtceu.assembler('torch_coke_dust')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coke_dust')
         .itemOutputs('8x tfc:dead_torch')
         .duration(100)
         .EUt(1)
 
     // Из гема ванильного угля
-    event.recipes.gtceu.assembler('torch_coal')             
+    e.recipes.gtceu.assembler('torch_coal')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'minecraft:coal')
         .itemOutputs('4x tfc:dead_torch')
         .duration(100)
         .EUt(1)
 
     // Из пыли ванильного угля
-    event.recipes.gtceu.assembler('torch_coal_dust')             
+    e.recipes.gtceu.assembler('torch_coal_dust')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:coal_dust')
         .itemOutputs('4x tfc:dead_torch')
         .duration(100)
         .EUt(1)
 
     // Из пыли древесного угля
-    event.recipes.gtceu.assembler('torch_charcoal_dust')             
+    e.recipes.gtceu.assembler('torch_charcoal_dust')             
         .itemInputs('#tfc:can_be_lit_on_torch', 'gtceu:charcoal_dust')
         .itemOutputs('4x tfc:dead_torch')
         .duration(100)
@@ -4956,66 +4956,66 @@ const registerMinecraftRecipes = (e) => {
     //#endregion
 
     // Мертвый факел в обычный
-    event.smelting('tfc:torch', 'tfc:dead_torch')
-        .id('tfg:smelting/dead_torch_to_torch')
+    // e.smelting('tfc:torch', 'tfc:dead_torch')
+    //     .id('tfg:smelting/dead_torch_to_torch')
 
     //#endregion
 
     //#region Выход: Палки
 
-    event.remove({id: 'minecraft:stick'})
+    e.remove({id: 'minecraft:stick'})
 
     //#endregion
 
     //#region Выход: Огниво
 
-    event.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
-    event.remove({id: 'ad_astra:recipes/flint_and_steel'})
+    e.remove({id: 'tfc:crafting/vanilla/flint_and_steel'})
+    e.remove({id: 'ad_astra:recipes/flint_and_steel'})
 
     //#endregion
 
     //#region Выход: Наковальни
 
-    event.remove({id: 'gtceu:alloy_smelter/anvil'})
-    event.remove({id: 'gtceu:fluid_solidifier/solidify_anvil'})
+    e.remove({id: 'gtceu:alloy_smelter/anvil'})
+    e.remove({id: 'gtceu:fluid_solidifier/solidify_anvil'})
 
     //#endregion
 
     //#region Выход: Железные прутья
 
-    event.remove({id: 'gtceu:shaped/iron_bars'})
-    event.remove({id: 'gtceu:assembler/iron_nars'})
+    e.remove({id: 'gtceu:shaped/iron_bars'})
+    e.remove({id: 'gtceu:assembler/iron_nars'})
 
     //#endregion
 
     //#region Выход: Печь
 
-    event.remove({ id: 'gtceu:assembler/furnace' })
+    e.remove({ id: 'gtceu:assembler/furnace' })
 
     //#endregion
 
     //#region Выход: Вагонетка с печью
 
-    event.remove({ id: 'minecraft:furnace_minecart' })
-    event.remove({ id: 'gtceu:assembler/furnace_minecart' })
+    e.remove({ id: 'minecraft:furnace_minecart' })
+    e.remove({ id: 'gtceu:assembler/furnace_minecart' })
 
     //#endregion
 
     //#region Выход: Повторитель
 
-    event.remove({id: 'minecraft:repeater'})
+    e.remove({id: 'minecraft:repeater'})
 
     //#endregion
 
     //#region Выход: Ведро
 
-    event.remove({id: 'gtceu:bender/bucket'})
-    event.remove({id: 'gtceu:shaped/iron_bucket'})
+    e.remove({id: 'gtceu:bender/bucket'})
+    e.remove({id: 'gtceu:shaped/iron_bucket'})
 
-    event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
+    e.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
         .id('tfg:anvil/vanilla_bucket')
 
-    event.recipes.gtceu.assembler('tfg:vanilla/bucket')             
+    e.recipes.gtceu.assembler('tfg:vanilla/bucket')             
         .itemInputs('#forge:plates/red_steel', '#forge:plates/blue_steel')
         .circuit(6)
         .itemOutputs('minecraft:bucket')
@@ -5026,21 +5026,21 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Седло
 
-    event.remove({id: 'gtceu:shaped/saddle'})
+    e.remove({id: 'gtceu:shaped/saddle'})
 
     //#endregion
 
     //#region Выход: Блок лазурита
 
-    event.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
+    e.remove({ id: 'tfc:crafting/vanilla/lapis_block' })
 
     //#endregion
 
     //#region Выход: Вагонетка
 
-    event.remove({ id: 'minecraft:minecart' })
+    e.remove({ id: 'minecraft:minecart' })
 
-    event.shaped('minecraft:minecart', [
+    e.shaped('minecraft:minecart', [
         'A A',
         'AAA',
         'B B'
@@ -5049,7 +5049,7 @@ const registerMinecraftRecipes = (e) => {
         B: 'gtceu:iron_minecart_wheels'
     }).id('tfc:crafting/vanilla/redstone/minecart')
 
-    event.shaped('minecraft:minecart', [
+    e.shaped('minecraft:minecart', [
         'A A',
         'AAA',
         'B B'
@@ -5058,7 +5058,7 @@ const registerMinecraftRecipes = (e) => {
         B: 'gtceu:steel_minecart_wheels'
     }).id('tfc:crafting/vanilla/redstone/steel_minecart')
 
-    event.recipes.gtceu.assembler('minecart')             
+    e.recipes.gtceu.assembler('minecart')             
         .itemInputs('3x #forge:plates/wrought_iron', '3x #forge:rings/wrought_iron')
         .itemOutputs('minecraft:minecart')
         .duration(100)
@@ -5067,9 +5067,9 @@ const registerMinecraftRecipes = (e) => {
     //#endregion
 
     //#region Выход: Тигель
-    event.remove({ id: 'tfc:crafting/vanilla/cauldron' })
+    e.remove({ id: 'tfc:crafting/vanilla/cauldron' })
     
-    event.shaped('minecraft:cauldron', [
+    e.shaped('minecraft:cauldron', [
         'A A', 
         'ABA',
         'AAA'  
@@ -5078,7 +5078,7 @@ const registerMinecraftRecipes = (e) => {
         B: '#tfc:hammers'  
     }).id('gtceu:shaped/cauldron')
 
-    event.recipes.gtceu.assembler('cauldron')             
+    e.recipes.gtceu.assembler('cauldron')             
         .itemInputs('7x #forge:plates/wrought_iron')
         .circuit(10)
         .itemOutputs('minecraft:cauldron')
@@ -5089,17 +5089,17 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Детектор света
     
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/daylight_detector' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/daylight_detector' })
 
     //#endregion
 
     //#region Выход: Воронка
     
-    event.remove({ id: 'gtceu:assembler/hopper_iron' })
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_hopper' })
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/hopper' })
+    e.remove({ id: 'gtceu:assembler/hopper_iron' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/steel_hopper' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/hopper' })
 
-    event.shaped('minecraft:hopper', [
+    e.shaped('minecraft:hopper', [
         'ABA', 
         'ACA',
         'DAE'  
@@ -5115,19 +5115,19 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Поршень
     
-    event.remove({ id: 'minecraft:piston' })
-    event.remove({ id: 'gtceu:shaped/piston_titanium' })
-    event.remove({ id: 'gtceu:shaped/piston_steel' })
-    event.remove({ id: 'gtceu:shaped/piston_bronze' })
-    event.remove({ id: 'gtceu:shaped/piston_aluminium' })
+    e.remove({ id: 'minecraft:piston' })
+    e.remove({ id: 'gtceu:shaped/piston_titanium' })
+    e.remove({ id: 'gtceu:shaped/piston_steel' })
+    e.remove({ id: 'gtceu:shaped/piston_bronze' })
+    e.remove({ id: 'gtceu:shaped/piston_aluminium' })
 
-    event.remove({ id: 'gtceu:assembler/piston_titanium' })
-    event.remove({ id: 'gtceu:assembler/piston_steel' })
-    event.remove({ id: 'gtceu:assembler/piston_iron' })
-    event.remove({ id: 'gtceu:assembler/piston_bronze' })
-    event.remove({ id: 'gtceu:assembler/piston_aluminium' })
+    e.remove({ id: 'gtceu:assembler/piston_titanium' })
+    e.remove({ id: 'gtceu:assembler/piston_steel' })
+    e.remove({ id: 'gtceu:assembler/piston_iron' })
+    e.remove({ id: 'gtceu:assembler/piston_bronze' })
+    e.remove({ id: 'gtceu:assembler/piston_aluminium' })
 
-    event.recipes.gtceu.assembler('piston')             
+    e.recipes.gtceu.assembler('piston')             
         .itemInputs('#forge:plates/wrought_iron', '3x tfc:wood/planks/acacia', '4x #tfc:rock/raw')
         .itemOutputs('4x minecraft:piston')
         .duration(100)
@@ -5137,13 +5137,13 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Кожа
         
-    event.remove({ id: 'minecraft:leather' })
+    e.remove({ id: 'minecraft:leather' })
 
     //#endregion
 
     //#region Выход: Шерсть
 
-    event.recipes.gtceu.assembler('wool_from_string')             
+    e.recipes.gtceu.assembler('wool_from_string')             
         .itemInputs('8x #forge:string')
         .circuit(4)
         .itemOutputs('minecraft:white_wool')
@@ -5152,17 +5152,17 @@ const registerMinecraftRecipes = (e) => {
 
     
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
-        event.remove({ id: `minecraft:dye_${dye}_wool` })
+        e.remove({ id: `minecraft:dye_${dye}_wool` })
     })
 
     //#endregion
 
     //#region Выход: Свечи
 
-    event.remove({ id: `minecraft:candle` })
+    e.remove({ id: `minecraft:candle` })
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
-        event.remove({ id: `minecraft:${dye}_candle` })
+        e.remove({ id: `minecraft:${dye}_candle` })
     })
 
     //#endregion
@@ -5171,15 +5171,15 @@ const registerMinecraftRecipes = (e) => {
     
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
-        event.remove({ id: `minecraft:dye_${dye}_carpet` })
+        e.remove({ id: `minecraft:dye_${dye}_carpet` })
 
-        event.shapeless(`2x minecraft:${dye}_carpet`, [
+        e.shapeless(`2x minecraft:${dye}_carpet`, [
             '#tfc:saws',
             `minecraft:${dye}_wool`
         ]).id(`minecraft:${dye}_carpet`)
 
         if (dye != 'white') {
-            event.recipes.gtceu.chemical_bath(`tfg:${dye}_carpet`)             
+            e.recipes.gtceu.chemical_bath(`tfg:${dye}_carpet`)             
                 .itemInputs(`minecraft:white_carpet`)
                 .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
                 .itemOutputs(`minecraft:${dye}_carpet`)
@@ -5192,7 +5192,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Кровати
 
-    event.recipes.gtceu.chemical_bath(`bed_decolor`)             
+    e.recipes.gtceu.chemical_bath(`bed_decolor`)             
         .itemInputs('#tfc:colored_bed')
         .inputFluids(Fluid.of(`gtceu:chlorine`, 72))
         .itemOutputs(`minecraft:white_bed`)
@@ -5200,11 +5200,11 @@ const registerMinecraftRecipes = (e) => {
         .EUt(4)
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
-        event.remove({ id: `minecraft:${dye}_bed` })
-        event.remove({ id: `minecraft:dye_${dye}_bed` })
+        e.remove({ id: `minecraft:${dye}_bed` })
+        e.remove({ id: `minecraft:dye_${dye}_bed` })
 
         if (dye != "white")
-            event.recipes.gtceu.chemical_bath(`${dye}_bed`)             
+            e.recipes.gtceu.chemical_bath(`${dye}_bed`)             
                 .itemInputs(`minecraft:white_bed`)
                 .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 216))
                 .itemOutputs(`minecraft:${dye}_bed`)
@@ -5216,13 +5216,13 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Арбалет
 
-    event.remove({ id: 'minecraft:crossbow' })
+    e.remove({ id: 'minecraft:crossbow' })
 
     //#endregion
 
     //#region Выход: Лук
 
-    event.recipes.gtceu.assembler('bow')             
+    e.recipes.gtceu.assembler('bow')             
         .itemInputs('3x #forge:string', '3x #forge:rods/wooden')
         .itemOutputs('minecraft:bow')
         .duration(100)
@@ -5232,21 +5232,21 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Наблюдатель
 
-    event.remove({ id: 'minecraft:observer' })
+    e.remove({ id: 'minecraft:observer' })
 
-    event.recipes.gtceu.assembler('observer_certus_quartz')             
+    e.recipes.gtceu.assembler('observer_certus_quartz')             
         .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/certus_quartz')
         .itemOutputs('minecraft:observer')
         .duration(100)
         .EUt(30)
 
-    event.recipes.gtceu.assembler('observer_nether_quartz')             
+    e.recipes.gtceu.assembler('observer_nether_quartz')             
         .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/nether_quartz')
         .itemOutputs('minecraft:observer')
         .duration(100)
         .EUt(30)
 
-    event.recipes.gtceu.assembler('observer_quartzite')             
+    e.recipes.gtceu.assembler('observer_quartzite')             
         .itemInputs('6x #forge:cobblestone', '2x minecraft:redstone', '#forge:plates/quartzite')
         .itemOutputs('minecraft:observer')
         .duration(100)
@@ -5256,7 +5256,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Раздатчик
 
-    event.recipes.gtceu.assembler('dispenser')             
+    e.recipes.gtceu.assembler('dispenser')             
         .itemInputs('7x #forge:cobblestone', 'minecraft:redstone', 'minecraft:bow')
         .circuit(1)
         .itemOutputs('minecraft:dispenser')
@@ -5267,7 +5267,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Выбрасыватель
 
-    event.recipes.gtceu.assembler('dropper')             
+    e.recipes.gtceu.assembler('dropper')             
         .itemInputs('7x #forge:cobblestone', '2x minecraft:redstone')
         .circuit(2)
         .itemOutputs('minecraft:dropper')
@@ -5278,9 +5278,9 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Рельсы
 
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_rail' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/steel_rail' })
 
-    event.recipes.gtceu.assembler('rail')             
+    e.recipes.gtceu.assembler('rail')             
         .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden')
         .circuit(1)
         .itemOutputs('32x minecraft:rail')
@@ -5291,9 +5291,9 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Заряженные рельсы
 
-    event.remove({ id: 'minecraft:powered_rail' })
+    e.remove({ id: 'minecraft:powered_rail' })
 
-    event.recipes.gtceu.assembler('powered_rail')             
+    e.recipes.gtceu.assembler('powered_rail')             
         .itemInputs('6x #forge:rods/gold', '2x #forge:rods/wooden', '#forge:dusts/redstone')
         .circuit(1)
         .itemOutputs('16x minecraft:powered_rail')
@@ -5304,10 +5304,10 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Активаторные рельсы
 
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_activator_rail' })
-    event.remove({ id: 'minecraft:activator_rail' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/steel_activator_rail' })
+    e.remove({ id: 'minecraft:activator_rail' })
 
-    event.recipes.gtceu.assembler('activator_rail')             
+    e.recipes.gtceu.assembler('activator_rail')             
         .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', 'minecraft:redstone_torch')
         .circuit(1)
         .itemOutputs('4x minecraft:activator_rail')
@@ -5318,10 +5318,10 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Нажимные рельсы
 
-    event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_detector_rail' })
-    event.remove({ id: 'minecraft:detector_rail' })
+    e.remove({ id: 'tfc:crafting/vanilla/redstone/steel_detector_rail' })
+    e.remove({ id: 'minecraft:detector_rail' })
 
-    event.recipes.gtceu.assembler('detector_rail')             
+    e.recipes.gtceu.assembler('detector_rail')             
         .itemInputs('6x #forge:rods/wrought_iron', '#forge:rods/wooden', '#minecraft:stone_pressure_plates')
         .circuit(1)
         .itemOutputs('4x minecraft:detector_rail')
@@ -5332,7 +5332,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Выход: Веревка
 
-    event.remove({ id: 'gtceu:assembler/lead' })
+    e.remove({ id: 'gtceu:assembler/lead' })
 
     e.shaped('minecraft:book', [
         'ABC',
@@ -5348,7 +5348,7 @@ const registerMinecraftRecipes = (e) => {
 
     //#region Glowstone
 
-    event.recipes.gtceu.mixer('gtceu:lv_glowstone')
+    e.recipes.gtceu.mixer('gtceu:lv_glowstone')
 		.inputFluids(Fluid.of('gtceu:creosote', 1000))
 		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust', 'gtceu:coal_dust')
 		.itemOutputs('minecraft:glowstone_dust')
@@ -5360,5 +5360,5 @@ const registerMinecraftRecipes = (e) => {
 	
 	// Nether Brick
 	
-	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
+	e.smelting('minecraft:nether_brick', 'minecraft:netherrack')
 }

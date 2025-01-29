@@ -28,9 +28,9 @@ const registerFirmaCivRecipes = (event) => {
     //#endregion
 
     //#region Unfinished Sextant
-    event.recipes.tfc.heating('firmaciv:unfinished_sextant', 930)
-        .resultFluid(Fluid.of('gtceu:brass', 288))
-        .id(`firmaciv:heating/unfinished_nav_clock`)
+    // event.recipes.tfc.heating('firmaciv:unfinished_sextant', 930)
+    //     .resultFluid(Fluid.of('gtceu:brass', 288))
+    //     .id(`firmaciv:heating/unfinished_nav_clock`)
 
     event.replaceOutput( // This problem would come each time there's a double-plate recipe in an anvil. Dunno how to fix it other than that.
         'gtceu:arc_furnace/arc_unfinished_nav_clock',
@@ -98,9 +98,9 @@ const registerFirmaCivRecipes = (event) => {
         .duration(75)
         .EUt(4)
 
-    event.recipes.tfc.heating('firmaciv:oarlock', 1535)
-        .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`firmaciv:heating/oarlock`)
+    // event.recipes.tfc.heating('firmaciv:oarlock', 1535)
+    //     .resultFluid(Fluid.of('gtceu:iron', 288))
+    //     .id(`firmaciv:heating/oarlock`)
     //#endregion
 
     //#region Cleat
@@ -111,9 +111,9 @@ const registerFirmaCivRecipes = (event) => {
         .duration(75)
         .EUt(4)
 
-    event.recipes.tfc.heating('firmaciv:cleat', 1535)
-        .resultFluid(Fluid.of('gtceu:steel', 288))
-        .id(`firmaciv:heating/cleat`)
+    // event.recipes.tfc.heating('firmaciv:cleat', 1535)
+    //     .resultFluid(Fluid.of('gtceu:steel', 288))
+    //     .id(`firmaciv:heating/cleat`)
     //#endregion
 
     //#region Anchor
@@ -124,9 +124,9 @@ const registerFirmaCivRecipes = (event) => {
         .duration(75)
         .EUt(4)
 
-    event.recipes.tfc.heating('firmaciv:anchor', 1535)
-        .resultFluid(Fluid.of('gtceu:steel', 288))
-        .id(`firmaciv:heating/anchor`)
+    // event.recipes.tfc.heating('firmaciv:anchor', 1535)
+    //     .resultFluid(Fluid.of('gtceu:steel', 288))
+    //     .id(`firmaciv:heating/anchor`)
 
     event.replaceOutput( 
         'gtceu:arc_furnace/arc_anchor',
@@ -160,9 +160,9 @@ const registerFirmaCivRecipes = (event) => {
         .duration(75)
         .EUt(4)
 
-    event.recipes.tfc.heating('firmaciv:cannonball', 1535)
-        .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`firmaciv:heating/cannonball`)
+    // event.recipes.tfc.heating('firmaciv:cannonball', 1535)
+    //     .resultFluid(Fluid.of('gtceu:iron', 288))
+    //     .id(`firmaciv:heating/cannonball`)
 
     event.replaceOutput(
         'gtceu:arc_furnace/arc_cannon_barrel',
@@ -176,8 +176,8 @@ const registerFirmaCivRecipes = (event) => {
     //#endregion
 
     //#region Cannon
-    event.recipes.tfc.heating('firmaciv:cannon', 1535)
-        .resultFluid(Fluid.of('gtceu:iron', 1872))
-        .id(`firmaciv:heating/cannon`)
+    // event.recipes.tfc.heating('firmaciv:cannon', 1535)
+    //     .resultFluid(Fluid.of('gtceu:iron', 1872))
+    //     .id(`firmaciv:heating/cannon`)
     //#endregion
 }

@@ -591,44 +591,6 @@ const registerTFCBiomeTags = (event) => {
 const registerTFCPlacedFeatures = (event) => {
     
     //#region Удаляем все руды TFC из генерации мира
-    const ALL_DISABLED_TFC_VEINS = [
-        'tfc:vein/surface_native_copper',
-        'tfc:vein/surface_malachite',
-        'tfc:vein/surface_tetrahedrite',
-        'tfc:vein/normal_malachite',
-        'tfc:vein/normal_tetrahedrite',
-        'tfc:vein/normal_native_gold',
-        'tfc:vein/rich_native_gold',
-        'tfc:vein/fake_native_gold',
-        'tfc:vein/surface_native_silver',
-        'tfc:vein/normal_native_silver',
-        'tfc:vein/surface_cassiterite',
-        'tfc:vein/surface_bismuthinite',
-        'tfc:vein/normal_bismuthinite',
-        'tfc:vein/surface_sphalerite',
-        'tfc:vein/normal_sphalerite',
-        'tfc:vein/surface_hematite',
-        'tfc:vein/surface_magnetite',
-        'tfc:vein/surface_limonite',
-        'tfc:vein/normal_garnierite',
-        'tfc:vein/gabbro_garnierite',
-        'tfc:vein/graphite',
-        'tfc:vein/lignite',
-        'tfc:vein/bituminous_coal',
-        'tfc:vein/sulfur',
-        'tfc:vein/cryolite',
-        'tfc:vein/cinnabar',
-        'tfc:vein/saltpeter',
-        'tfc:vein/sylvite',
-        'tfc:vein/borax',
-        'tfc:vein/gypsum',
-        'tfc:vein/halite',
-        'tfc:vein/lapis_lazuli',
-        'tfc:vein/diamond',
-        'tfc:vein/emerald',
-        'tfc:vein/amethyst',
-        'tfc:vein/opal'
-    ]
 
     // Добавление
     event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_amethyst')

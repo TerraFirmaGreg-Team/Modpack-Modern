@@ -1667,7 +1667,7 @@ const registerTFCRecipes = (e) => {
 
     //#region Новые сплавы
 
-    event.recipes.tfc.alloy('tfg:red_alloy', [
+    e.recipes.tfc.alloy('tfg:red_alloy', [
         TFC.alloyPart('tfg:redstone', 0.75, 0.85),
         TFC.alloyPart('tfc:copper', 0.15, 0.25)
     ]).id('tfg:alloy/red_alloy')
@@ -1934,7 +1934,7 @@ const registerTFCRecipes = (e) => {
 	];
 	
 	METAL_BARS.forEach(metal => {
-		 generateCutterRecipe(event, `gtceu:${metal}_plate`, 9, `8x tfc:metal/bars/${metal}`, 100, 16, `${metal}_plate_to_bars`)
+		 generateCutterRecipe(e, `gtceu:${metal}_plate`, 9, `8x tfc:metal/bars/${metal}`, 100, 16, `${metal}_plate_to_bars`)
 	 });
 
     //#endregion
@@ -1970,7 +1970,7 @@ const registerTFCRecipes = (e) => {
 
     // Dirt + Sticks -> Rooted Dirt
     global.TFC_MUD_TYPES.forEach(mud => {
-        event.recipes.gtceu.mixer(`${mud}_to_rooted`)
+        e.recipes.gtceu.mixer(`${mud}_to_rooted`)
             .itemInputs(`tfc:dirt/${mud}`, "#tfc:can_be_lit_on_torch")
             .itemOutputs(`tfc:rooted_dirt/${mud}`)
             .duration(200)
@@ -2879,53 +2879,53 @@ const registerTFCRecipes = (e) => {
     //#region Дерево
     
     // Какие то рецепты дерева
-    global.TFC_WOOD_TYPES.forEach(wood => {
-        event.remove({ id: `tfc:crafting/wood/${wood}_axle` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
-        event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
+    // global.TFC_WOOD_TYPES.forEach(wood => {
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_axle` })
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_bladed_axle` })
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_encased_axle` })
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_clutch` })
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_gear_box` })
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
     
-        // Бревна -> Пиломатериалы
-        generateCutterRecipe(event, `#tfc:${wood}_logs`, 1, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+    //     // Бревна -> Пиломатериалы
+    //     generateCutterRecipe(e, `#tfc:${wood}_logs`, 1, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
 
-        // Доски -> Пиломатериалы
-        generateCutterRecipe(event, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
+    //     // Доски -> Пиломатериалы
+    //     generateCutterRecipe(e, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
 
-        // Ступень -> Пиломатериалы
-        generateCutterRecipe(event, `tfc:wood/planks/${wood}_stairs`, null, `3x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
+    //     // Ступень -> Пиломатериалы
+    //     generateCutterRecipe(e, `tfc:wood/planks/${wood}_stairs`, null, `3x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
     
 
-        // Плита -> Пиломатериалы
-        generateCutterRecipe(event, `tfc:wood/planks/${wood}_slab`, null, `2x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
+    //     // Плита -> Пиломатериалы
+    //     generateCutterRecipe(e, `tfc:wood/planks/${wood}_slab`, null, `2x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
 
-        // ? -> Деревянная нажимная пластина
-        event.shaped(`tfc:wood/planks/${wood}_pressure_plate`, [
-            'ABA',
-            'CDC',
-            'AEA'  
-        ], {
-            A: '#forge:screws/wood',
-            B: '#tfc:hammers',
-            C: `tfc:wood/planks/${wood}_slab`,
-            D: '#forge:springs',
-            E: '#forge:tools/screwdrivers'
-        }).id(`tfc:crafting/wood/${wood}_pressure_plate`)
+    //     // ? -> Деревянная нажимная пластина
+    //     e.shaped(`tfc:wood/planks/${wood}_pressure_plate`, [
+    //         'ABA',
+    //         'CDC',
+    //         'AEA'  
+    //     ], {
+    //         A: '#forge:screws/wood',
+    //         B: '#tfc:hammers',
+    //         C: `tfc:wood/planks/${wood}_slab`,
+    //         D: '#forge:springs',
+    //         E: '#forge:tools/screwdrivers'
+    //     }).id(`tfc:crafting/wood/${wood}_pressure_plate`)
 
-        event.recipes.gtceu.assembler(`${wood}_pressure_plate`)             
-            .itemInputs('#forge:springs', `2x tfc:wood/planks/${wood}_slab`)
-            .circuit(0)
-            .itemOutputs(`2x tfc:wood/planks/${wood}_pressure_plate`)
-            .duration(50)
-            .EUt(2)
+    //     e.recipes.gtceu.assembler(`${wood}_pressure_plate`)             
+    //         .itemInputs('#forge:springs', `2x tfc:wood/planks/${wood}_slab`)
+    //         .circuit(0)
+    //         .itemOutputs(`2x tfc:wood/planks/${wood}_pressure_plate`)
+    //         .duration(50)
+    //         .EUt(2)
 
-        // ? -> Деревянная кнопка
-        event.remove({ id: `tfc:crafting/wood/${wood}_button` })
+    //     // ? -> Деревянная кнопка
+    //     e.remove({ id: `tfc:crafting/wood/${wood}_button` })
 
-        generateCutterRecipe(event, `tfc:wood/planks/${wood}_pressure_plate`, null, `6x tfc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
+    //     generateCutterRecipe(e, `tfc:wood/planks/${wood}_pressure_plate`, null, `6x tfc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
         
-    })
+    // })
 
     //#endregion
 
@@ -3371,32 +3371,32 @@ const registerTFCRecipes = (e) => {
     //#region Рецепты электрической теплицы
     
     // Дерево
-    global.TFC_WOOD_TYPES.forEach(wood => {
-        generateGreenHouseRecipe(event, `tfc:wood/sapling/${wood}`, 16000, `32x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
-    })
+    // global.TFC_WOOD_TYPES.forEach(wood => {
+    //     generateGreenHouseRecipe(e, `tfc:wood/sapling/${wood}`, 16000, `32x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
+    // })
 
-    // Семена фруктов
-    global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
-    })
+    // // Семена фруктов
+    // global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
+    //     generateGreenHouseRecipe(e, element.input, element.fluid_amount, element.output, element.name)
+    // })
 
-    // Семена овощей
-    global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
-    })
+    // // Семена овощей
+    // global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
+    //     generateGreenHouseRecipe(e, element.input, element.fluid_amount, element.output, element.name)
+    // })
 
-    // Семена ягод
-    global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-        generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
-    })
+    // // Семена ягод
+    // global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
+    //     generateGreenHouseRecipe(e, element.input, element.fluid_amount, element.output, element.name)
+    // })
 
     // Растения
-    Ingredient.of('#tfc:plants').stacks.forEach(element => {
-        const itemId = element.id;
-        const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
+    // Ingredient.of('#tfc:plants').stacks.forEach(element => {
+    //     const itemId = element.id;
+    //     const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
     
-        generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId);
-    });
+    //     generateGreenHouseRecipe(e, itemId, 8000, `8x ${itemId}`, recipeId);
+    // });
 
     //#endregion
 
@@ -3456,34 +3456,34 @@ const registerTFCRecipes = (e) => {
     //#region СЫЫЫР 0_0
 
     // Rennet
-    event.recipes.gtceu.fermenter('tfg:fermenter/vegetable_rennet')
+    e.recipes.gtceu.fermenter('tfg:fermenter/vegetable_rennet')
         .itemInputs('#tfg:ferments_to_rennet')
         .itemOutputs('firmalife:rennet')
         .duration(400)
         .EUt(16)
 
-    event.recipes.gtceu.fermenter('tfg:fermenter/biomass_rennet')
+    e.recipes.gtceu.fermenter('tfg:fermenter/biomass_rennet')
         .inputFluids(Fluid.of('gtceu:fermented_biomass', 100))
         .itemOutputs('firmalife:rennet')
         .duration(2400)
         .EUt(16)
 
     // Curdled milk
-    event.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
+    e.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
         .inputFluids(Fluid.of('minecraft:milk', 1000))
         .itemInputs('firmalife:rennet')
         .outputFluids(Fluid.of('tfc:curdled_milk'))
         .duration(2400)
         .EUt(16)
     
-    event.recipes.gtceu.fermenter('tfg:fermenter/curdled_yak_milk')
+    e.recipes.gtceu.fermenter('tfg:fermenter/curdled_yak_milk')
         .inputFluids(Fluid.of('firmalife:yak_milk', 1000))
         .itemInputs('firmalife:rennet')
         .outputFluids(Fluid.of('firmalife:curdled_yak_milk'))
         .duration(2400)
         .EUt(16)
     
-    event.recipes.gtceu.fermenter('tfg:fermenter/curdled_goat_milk')
+    e.recipes.gtceu.fermenter('tfg:fermenter/curdled_goat_milk')
         .inputFluids(Fluid.of('firmalife:goat_milk', 1000))
         .itemInputs('firmalife:rennet')
         .outputFluids(Fluid.of('firmalife:curdled_goat_milk'))
@@ -3491,40 +3491,40 @@ const registerTFCRecipes = (e) => {
         .EUt(16)
 
     //Curds
-    event.recipes.gtceu.fermenter('tfg:fermenter/milk_curd')
+    e.recipes.gtceu.fermenter('tfg:fermenter/milk_curd')
         .inputFluids(Fluid.of('tfc:curdled_milk', 1000))
         .itemOutputs('firmalife:food/milk_curd')
         .duration(1200)
         .EUt(16)
 
-    event.recipes.gtceu.fermenter('tfg:fermenter/yak_curd')
+    e.recipes.gtceu.fermenter('tfg:fermenter/yak_curd')
         .inputFluids(Fluid.of('firmalife:curdled_yak_milk', 1000))
         .itemOutputs('firmalife:food/yak_curd')
         .duration(1200)
         .EUt(16)
     
-    event.recipes.gtceu.fermenter('tfg:fermenter/goat_curd')
+    e.recipes.gtceu.fermenter('tfg:fermenter/goat_curd')
         .inputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
         .itemOutputs('firmalife:food/goat_curd')
         .duration(1200)
         .EUt(16)
 
     // Cheese wheels
-    event.recipes.gtceu.fermenter('tfg:fermenter/gouda_wheel')
+    e.recipes.gtceu.fermenter('tfg:fermenter/gouda_wheel')
         .inputFluids(Fluid.of('tfc:salt_water', 750))
         .itemInputs('3x firmalife:food/milk_curd')
         .itemOutputs('firmalife:gouda_wheel')
         .duration(12000)
         .EUt(24)
     
-    event.recipes.gtceu.fermenter('tfg:fermenter/shosha_wheel')
+    e.recipes.gtceu.fermenter('tfg:fermenter/shosha_wheel')
         .inputFluids(Fluid.of('tfc:salt_water', 750))
         .itemInputs('3x firmalife:food/yak_curd')
         .itemOutputs('firmalife:shosha_wheel')
         .duration(12000)
         .EUt(24)
     
-    event.recipes.gtceu.fermenter('tfg:fermenter/feta_wheel')
+    e.recipes.gtceu.fermenter('tfg:fermenter/feta_wheel')
         .inputFluids(Fluid.of('tfc:salt_water', 750))
         .itemInputs('3x firmalife:food/goat_curd')
         .itemOutputs('firmalife:feta_wheel')
@@ -3532,37 +3532,37 @@ const registerTFCRecipes = (e) => {
         .EUt(24)
 
     // Cutting
-    event.recipes.gtceu.cutter('tfg:cutter/gouda')
+    e.recipes.gtceu.cutter('tfg:cutter/gouda')
         .itemInputs('firmalife:gouda_wheel')
         .itemOutputs('4x firmalife:food/gouda')
         .duration(40)
         .EUt(28)
 
-    event.recipes.gtceu.cutter('tfg:cutter/shosha')
+    e.recipes.gtceu.cutter('tfg:cutter/shosha')
         .itemInputs('firmalife:shosha_wheel')
         .itemOutputs('4x firmalife:food/shosha')
         .duration(40)
         .EUt(28)
     
-    event.recipes.gtceu.cutter('tfg:cutter/feta')
+    e.recipes.gtceu.cutter('tfg:cutter/feta')
         .itemInputs('firmalife:feta_wheel')
         .itemOutputs('4x firmalife:food/feta')
         .duration(40)
         .EUt(28)
     
-    event.recipes.gtceu.cutter('tfg:cutter/cheddar')
+    e.recipes.gtceu.cutter('tfg:cutter/cheddar')
         .itemInputs('firmalife:cheddar_wheel')
         .itemOutputs('4x firmalife:food/cheddar')
         .duration(40)
         .EUt(28)
 
-    event.recipes.gtceu.cutter('tfg:cutter/chevre')
+    e.recipes.gtceu.cutter('tfg:cutter/chevre')
         .itemInputs('firmalife:chevre_wheel')
         .itemOutputs('4x firmalife:food/chevre')
         .duration(40)
         .EUt(28)
 
-    event.recipes.gtceu.cutter('tfg:cutter/rajya_metok')
+    e.recipes.gtceu.cutter('tfg:cutter/rajya_metok')
         .itemInputs('firmalife:rajya_metok_wheel')
         .itemOutputs('4x firmalife:food/rajya_metok')
         .duration(40)
@@ -3570,14 +3570,14 @@ const registerTFCRecipes = (e) => {
 
     // Misc
     global.TFC_MILKS.forEach(milk => {
-        event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milk.id.replace(':', '_')}`)
+        e.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milk.id.replace(':', '_')}`)
             .inputFluids(Fluid.of(milk.id, 1000))
             .outputFluids(Fluid.of('firmalife:cream'))
             .duration(1200)
             .EUt(24)
     })
 
-    event.recipes.gtceu.mixer('tfg:mixer/tomato_sauce')
+    e.recipes.gtceu.mixer('tfg:mixer/tomato_sauce')
         .itemInputs('firmalife:food/tomato_sauce_mix')
         .inputFluids(Fluid.of('minecraft:water', 200))
         .itemOutputs('firmalife:food/tomato_sauce')
@@ -3598,14 +3598,14 @@ const registerTFCRecipes = (e) => {
     e.recipes.createMilling('2x tfc:olive_paste', 'tfc:food/olive')
         .id(`tfg:milling/tfc/olive_paste`)
 
-    event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
+    e.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
         .inputFluids(Fluid.of('water', 200))
         .itemInputs('2x tfc:olive_paste')
         .outputFluids(Fluid.of('tfc:olive_oil_water', 200))
         .duration(200)
         .EUt(28)
 
-    event.recipes.gtceu.distillery('tfg:tfc/olive_oil')
+    e.recipes.gtceu.distillery('tfg:tfc/olive_oil')
         .inputFluids(Fluid.of('tfc:olive_oil_water', 250))
         .outputFluids(Fluid.of('tfc:olive_oil', 50))
         .duration(600)
@@ -3618,21 +3618,21 @@ const registerTFCRecipes = (e) => {
     //#endregion
 
     // Бумага
-    event.recipes.gtceu.cutter('tfg:unrefined_paper')
+    e.recipes.gtceu.cutter('tfg:unrefined_paper')
         .itemInputs('tfc:unrefined_paper')
         .itemOutputs('minecraft:paper')
         .duration(100)
         .EUt(16)
 
     // Limewater
-    event.recipes.gtceu.mixer('tfg:limewater_from_lime')
+    e.recipes.gtceu.mixer('tfg:limewater_from_lime')
         .itemInputs('tfc:powder/lime')
         .inputFluids(Fluid.of('water', 500))
         .outputFluids(Fluid.of('tfc:limewater', 500))
         .duration(20)
         .EUt(16)
 
-    event.recipes.gtceu.mixer('tfg:limewater_from_flux')
+    e.recipes.gtceu.mixer('tfg:limewater_from_flux')
         .itemInputs('tfc:powder/flux')
         .inputFluids(Fluid.of('water', 500))
         .outputFluids(Fluid.of('tfc:limewater', 500))
@@ -3640,7 +3640,7 @@ const registerTFCRecipes = (e) => {
         .EUt(16)
     
     // Tannin
-    event.recipes.gtceu.chemical_bath('tfg:tannin')
+    e.recipes.gtceu.chemical_bath('tfg:tannin')
         .itemInputs('#tfc:makes_tannin')
         .inputFluids(Fluid.of('water', 1000))
         .outputFluids(Fluid.of('tfc:tannin', 1000))
@@ -3648,21 +3648,21 @@ const registerTFCRecipes = (e) => {
         .EUt(16)
     
     // Soaked hides
-    event.recipes.gtceu.chemical_bath('tfg:small_soaked_hide')
+    e.recipes.gtceu.chemical_bath('tfg:small_soaked_hide')
         .itemInputs('tfc:small_raw_hide')
         .inputFluids(Fluid.of('tfc:limewater', 300))
         .itemOutputs('tfc:small_soaked_hide')
         .duration(1600)
         .EUt(16)
     
-    event.recipes.gtceu.chemical_bath('tfg:medium_soaked_hide')
+    e.recipes.gtceu.chemical_bath('tfg:medium_soaked_hide')
         .itemInputs('tfc:medium_raw_hide')
         .inputFluids(Fluid.of('tfc:limewater', 400))
         .itemOutputs('tfc:medium_soaked_hide')
         .duration(2400)
         .EUt(16)
 
-    event.recipes.gtceu.chemical_bath('tfg:large_soaked_hide')
+    e.recipes.gtceu.chemical_bath('tfg:large_soaked_hide')
         .itemInputs('tfc:large_raw_hide')
         .inputFluids(Fluid.of('tfc:limewater', 500))
         .itemOutputs('tfc:large_soaked_hide')
@@ -3670,40 +3670,40 @@ const registerTFCRecipes = (e) => {
         .EUt(16)
 
     // Scraped Hides
-    event.recipes.gtceu.cutter('tfg:small_scraped_hide')
+    e.recipes.gtceu.cutter('tfg:small_scraped_hide')
         .itemInputs('tfc:small_soaked_hide')
         .itemOutputs('tfc:small_scraped_hide')
         .duration(100)
         .EUt(16)
 
-    event.recipes.gtceu.cutter('tfg:medium_scraped_hide')
+    e.recipes.gtceu.cutter('tfg:medium_scraped_hide')
         .itemInputs('tfc:medium_soaked_hide')
         .itemOutputs('tfc:medium_scraped_hide')
         .duration(100)
         .EUt(16)
 
-    event.recipes.gtceu.cutter('tfg:large_scraped_hide')
+    e.recipes.gtceu.cutter('tfg:large_scraped_hide')
         .itemInputs('tfc:large_soaked_hide')
         .itemOutputs('tfc:large_scraped_hide')
         .duration(100)
         .EUt(16)
     
     // Prepared hides
-    event.recipes.gtceu.chemical_bath('tfg:small_prepared_hide')
+    e.recipes.gtceu.chemical_bath('tfg:small_prepared_hide')
         .itemInputs('tfc:small_soaked_hide')
         .inputFluids(Fluid.of('water', 300))
         .itemOutputs('tfc:small_prepared_hide')
         .duration(1600)
         .EUt(16)
 
-    event.recipes.gtceu.chemical_bath('tfg:medium_prepared_hide')
+    e.recipes.gtceu.chemical_bath('tfg:medium_prepared_hide')
         .itemInputs('tfc:medium_soaked_hide')
         .inputFluids(Fluid.of('water', 400))
         .itemOutputs('tfc:medium_prepared_hide')
         .duration(2400)
         .EUt(16)
 
-    event.recipes.gtceu.chemical_bath('tfg:large_prepared_hide')
+    e.recipes.gtceu.chemical_bath('tfg:large_prepared_hide')
         .itemInputs('tfc:large_soaked_hide')
         .inputFluids(Fluid.of('water', 500))
         .itemOutputs('tfc:large_prepared_hide')
@@ -3711,21 +3711,21 @@ const registerTFCRecipes = (e) => {
         .EUt(16)
     
     // Leather
-    event.recipes.gtceu.chemical_bath('tfg:small_leather')
+    e.recipes.gtceu.chemical_bath('tfg:small_leather')
         .itemInputs('tfc:small_prepared_hide')
         .inputFluids(Fluid.of('tfc:tannin', 300))
         .itemOutputs('minecraft:leather')
         .duration(1600)
         .EUt(16)
 
-    event.recipes.gtceu.chemical_bath('tfg:medium_leather')
+    e.recipes.gtceu.chemical_bath('tfg:medium_leather')
         .itemInputs('tfc:medium_prepared_hide')
         .inputFluids(Fluid.of('tfc:tannin', 400))
         .itemOutputs('2x minecraft:leather')
         .duration(2400)
         .EUt(16)
 
-    event.recipes.gtceu.chemical_bath('tfg:large_leather')
+    e.recipes.gtceu.chemical_bath('tfg:large_leather')
         .itemInputs('tfc:large_prepared_hide')
         .inputFluids(Fluid.of('tfc:tannin', 500))
         .itemOutputs('3x minecraft:leather')
@@ -3894,7 +3894,7 @@ const registerTFCRecipes = (e) => {
         .EUt(4)
 
     // Cloths to Wool
-    event.recipes.gtceu.assembler('tfg:tfc/cloth_to_wool')
+    e.recipes.gtceu.assembler('tfg:tfc/cloth_to_wool')
         .itemInputs('4x #tfc:sewing_light_cloth')
         .itemOutputs('8x minecraft:white_wool')
         .circuit(16)  
@@ -3905,11 +3905,11 @@ const registerTFCRecipes = (e) => {
     generateMixerRecipe(e, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
     // Seaweed and kelp
-    event.recipes.tfc.heating('tfc:groundcover/seaweed', 200)
+    e.recipes.tfc.heating('tfc:groundcover/seaweed', 200)
 	.resultItem('tfc:food/dried_seaweed')
-    event.recipes.tfc.heating('tfc:plant/leafy_kelp', 200)
+    e.recipes.tfc.heating('tfc:plant/leafy_kelp', 200)
 	.resultItem('tfc:food/dried_kelp')
-    event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
+    e.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
 	.resultItem('tfc:food/dried_kelp')
 	
     // Soda Ash
@@ -4031,14 +4031,14 @@ const registerTFCRecipes = (e) => {
     //#endregion
 
     //More accesible solar drier
-    event.replaceInput({id: 'firmalife:crafting/solar_drier'}, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
+    e.replaceInput({id: 'firmalife:crafting/solar_drier'}, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
 
     //Wood ash
-    event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
+    e.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
         .id('tfg:splashing/wash_torch')
 
     //Lye in mixer
-    generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+    generateMixerRecipe(e, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
 
     //#region Каолинитовая глина
     e.shapeless('tfc:kaolin_clay', [

@@ -42,7 +42,7 @@ const generateCutterRecipe = (event, input, circuit, output, duration, EUt, id) 
 }
 
 const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
-    
+    // event.remove({id: 'gtceu:greenhouse/' + id})
     // Без удобрения
     event.recipes.gtceu.greenhouse(id)
         .itemInputs(input)
