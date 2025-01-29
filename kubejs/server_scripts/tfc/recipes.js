@@ -1351,14 +1351,14 @@ const registerTFCRecipes = (e) => {
         // Крафт в смелтере
         e.recipes.gtceu.alloy_smelter(`tfg:${material.getName()}_anvil_from_ingots`)
             .itemInputs(ingotItem.copyWithCount(14))
-            .notConsumable('tfg:anvil_casting_mold')
+            .notConsumable('gtceu:anvil_casting_mold')
             .itemOutputs(anvilItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 6)
             
         // Крафт в солидифаере
         e.recipes.gtceu.fluid_solidifier(`tfg:${material.getName()}_anvil_from_fluid`)
             .inputFluids(Fluid.of(outputMaterial.getFluid(), 2016))
-            .notConsumable('tfg:anvil_casting_mold')
+            .notConsumable('gtceu:anvil_casting_mold')
             .itemOutputs(anvilItem)
             .EUt(GTValues.VA[GTValues.ULV]).duration(material.getMass() * 6)
     }
