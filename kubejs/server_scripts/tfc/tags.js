@@ -46,6 +46,13 @@ const registerTFCItemTags = (event) => {
     //#endregion
 
     //#region Позволяет складывать все слитки и пластины в игре
+
+    // Ингредиенты для закваски
+    event.add('tfg:ferments_to_rennet', 'tfc:food/soybean')
+    event.add('tfg:ferments_to_rennet', 'firmalife:food/fig')
+    event.add('tfg:ferments_to_rennet', 'tfc:plant/ivy')
+    
+    // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')
     event.add('tfc:pileable_sheets', '#forge:plates')
     //#endregion
@@ -68,6 +75,11 @@ const registerTFCItemTags = (event) => {
 
     //#region Позволяет скелетам и зомбям использовать GT оружие
     // Мечи    
+    // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
+    event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
+
+    // Определеяет какое оружие может появиться у зомбя/скелета в руках
+    // Мечи
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_sword')
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_sword')
     event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_sword')
@@ -101,6 +113,21 @@ const registerTFCItemTags = (event) => {
     //#endregion
 
     //#region Теги для сосудов по цветам
+    //Hardwood Tags
+    global.TFC_HARDWOOD_TYPES.forEach(woodType => {
+        event.add('tfg:hardwood', `#tfc:${woodType}_logs`)
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_log/${woodType}`)
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_wood/${woodType}`)
+    });
+
+    //Softwood Tags
+    global.TFC_SOFTWOOD_TYPES.forEach(woodType =>{
+        event.add('tfg:softwood', `#tfc:${woodType}_logs`)
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_log/${woodType}`)
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_wood/${woodType}`)
+    })
+
+    // Теги для сосудов по цветам
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.add('tfg:colorized_unfired_vessels', `tfc:ceramic/${dye}_unfired_vessel`)
         event.add('tfg:colorized_fired_vessels', `tfc:ceramic/${dye}_glazed_vessel`)
@@ -240,6 +267,15 @@ const registerTFCItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', element)
     })
     //#endregion
+    
+    // Теги для кирпичных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
 
     // Удаление тегов у отключенных предметов
     global.TFC_DISABLED_ITEMS.forEach(item => {
@@ -261,6 +297,17 @@ const registerTFCBlockTags = (event) => {
     //#endregion
     
     //#region Отключение ломания блоков установленных на полу 
+    
+    // Теги для кирпичных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
+
+    // Отключение ломания блоков установленных на полу
     event.add('tfcdesirepaths:trample_blacklist', 'tfc:placed_item')
     //#endregion
     
@@ -333,6 +380,16 @@ const registerTFCBlockTags = (event) => {
     global.TFC_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
     })
+
+    // Удаление тегов у руд
+    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+
+    //#region Позволяем ТФК магме греть бойлер из Create
+    global.TFC_MAGMA_BLOCKS.forEach(el => {
+        event.add('create:passive_boiler_heaters', el)
+    })
+    //#endregion
 }
 
 const registerTFCFluidTags = (event) => {
@@ -573,8 +630,55 @@ const registerTFCPlacedFeatures = (event) => {
         'tfc:vein/opal'
     ]
 
-    ALL_DISABLED_TFC_VEINS.forEach(vein => {
-        event.remove('tfc:in_biome/veins', vein)
-    })
-    //#endregion
+    // Добавление
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_amethyst')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_opal')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_gold')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_hematite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_limonite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_magnetite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_molybdenum')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_naquadah')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_pitchblende')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_sapphire')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_scheelite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_sheldonite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/deep_topaz')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_apatite_')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_basaltic_sands')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_bauxite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_beryllium')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_bismuthinite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_cassiterite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_certus_quartz')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_coal')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_copper')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_garnet_tin')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_garnierite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_gold')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_graphite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_hematite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_spodumene')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oilsands')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_lapis')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_limonite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_lubricant')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_magnetite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_manganese')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_mica')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_monazite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_olivine')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_redstone')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_salt')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_saltpeter')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_silver')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sphalerite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sulfur')
+    event.add('tfc:in_biome/veins', 'tfg:vein/normal_tetrahedrite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/surface_bismuthinite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/surface_cassiterite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/surface_copper')
+    event.add('tfc:in_biome/veins', 'tfg:vein/surface_sphalerite')
+    event.add('tfc:in_biome/veins', 'tfg:vein/surface_tetrahedrite')
+    event.add('tfc:in_biome/veins', 'tfg:geode')
 }

@@ -1,0 +1,56 @@
+{
+    "name": "Amethyst & Garnet",
+    "icon": "minecraft:amethyst_shard",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 230$(br)Density: 0.25$(br)Type: Disc Vein$(br)Y: -64 - 26$(br)Size: 28$(br)Height: 8$(br2)Stone types: Quartzite, Slate, Phyllite, Schist, Gneiss, Marble, Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Amethyst, Red Garnet, Yellow Garnet, Opal Buds"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Amethyst",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/amethyst" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 65%$(br)Source of: Iron$(br)Formula: (SiO₂)₄Fe"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Opal",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/opal" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Formula: (SiO₂)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Red Garnet",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/red_garnet" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 5%$(br)Source of: Pyrope, Almandine, Spessartine"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Yellow Garnet",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/yellow_garnet" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Andradite, Grossular, Uvarovite"
+		}
+    ]
+}

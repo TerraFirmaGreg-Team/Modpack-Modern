@@ -1,0 +1,55 @@
+{
+	"name": "Infinite Resources?!",
+	"icon": "minecraft:lava_bucket",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"text": "Most of the raw resources you'll need are non-renewable and will require you to mine for them, but a few of them are infinitely renewable once you get to $(thing)LV$() and $(thing)MV$().$(br2)A lot of these methods are pretty slow, however, so it's up to you whether it's worth setting these up or just digging up another ore vein."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Fluids",
+			"item": "create:hose_pulley",
+			"text": "$(thing)Water$(), $(thing)Sea Water$(), and $(thing)Lava$() are all renewable through a $(item)Hose Pulley$() and a single source block of fluid. You can pull out of the hose pulley with a $(l:mechanics/pumps)Mechanical Pump$()."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(item)Sea Water$() can be centrifuged for Water and $(thing)Salt$(), which can be electrolyzed into $(thing)Chlorine$() and $(thing)Sodium$().$(br2)$(item)Lava$() can be centrifuged into $(thing)Gold Nuggets$(), $(thing)Tantalite$(), $(thing)Sapphire$(), $(thing)Quicklime$(), and $(thing)Silicon Dioxide$().$(br2)Lava can also be used as $(item)infinite, free fuel$() for your steam boilers!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Stone Dusts",
+			"item": { "tag": "tfg:stone_dusts" },
+			"text": "The other source of infinite resources is through $(thing)Stone Dusts$(). You can obtain infinite raw rock through a $(item)Rock Crusher$(), and then macerate it into different dusts.$(br2)These stone dusts can then be centrifuged into different resources (though most require $(thing)MV$()). Most of them give Silicon Dioxide and Oxygen, so only other resources will be listed.  "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Sedimentary",
+			"text": "$(thing)Shale$(): Sodium, Metal Mixture$(br)$(thing)Claystone$(): Aluminium, Hematite$(br)$(thing)Limestone$(): Calcium, Metal Mixture$(br)$(thing)Conglomerate$(): Tricalcium Phosphate, Hematite$(br)$(thing)Dolomite$(): Magnesium, Calcium, Metal Mixture$(br)$(thing)Chert$(): Metal Mixture$(br)$(thing)Chalk$(): Calcium, Carbon, Metal Mixture"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Metamorphic",
+			"text": "$(thing)Quartzite$(): Nothing$(br)$(thing)Slate$(): Metal Mixture$(br)$(thing)Phyllite$(): Calcium Chloride$(br)$(thing)Schist$(): Mica (Fluorine), Talc (Magnesium), Graphite, Metal Mixture$(br)$(thing)Gneiss$(): Biotite (Fluorine)$(br)$(thing)Marble$(): Magnesium, Calcite"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Igneous Intrusive",
+			"text": "$(thing)Granite$(): Calcite, Flint$(br)$(thing)Gabbro$(): Titanium, Iron, Metal Mixture$(br)$(thing)Diorite$(): Clay, Aluminium, Sulfur, Sodium, Lithium"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Igneous Extrusive",
+			"text": "$(thing)Rhyolite$(): Metal Mixture$(br)$(thing)Basalt$(): Olivine, Calcite, Flint, Dark Ashes$(br)$(thing)Andesite$(): Asbestos, Saltpeter$(br)$(thing)Dacite$(): Sodium, Calcium, Aluminium, Metal Mixture"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Dimensional Terrariums",
+			"item": "gtceu:nether_dome,gtceu:end_dome",
+			"text": "Later on, you'll be able to use the $(item)Netherarium$() and $(item)Enderarium$() to make $(thing)Redstone$(), $(thing)Nether Quartz$(), and $(thing)Ender Pearls$() renewable."
+		}
+	]
+}

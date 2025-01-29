@@ -1,0 +1,66 @@
+{
+  "type": "tfc:pipe_vein",
+  "config": {
+    "rarity": 175,
+    "density": 0.35,
+    "min_y": -64,
+    "max_y": 100,
+    "random_name": "normal_graphite",
+    "min_skew": 6,
+    "max_skew": 18,
+    "min_slant": 0,
+    "max_slant": 5,
+    "sign": 0,
+    "height": 60,
+    "radius": 12,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_graphite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:gabbro_diamond_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_coal_ore",
+            "weight": 30
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 10,
+      "depth": 60,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:graphite_indicator",
+          "weight": 45
+        },
+		{
+          "block": "gtceu:coal_indicator",
+          "weight": 39
+        },
+		{
+          "block": "tfg:buds/small_diamond_bud",
+          "weight": 12
+        },
+		{
+          "block": "tfg:buds/medium_diamond_bud",
+          "weight": 8
+        },
+		{
+          "block": "tfg:buds/large_diamond_bud",
+          "weight": 6
+        }
+      ]
+    }
+  }
+}

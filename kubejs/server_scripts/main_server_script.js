@@ -13,6 +13,8 @@ ServerEvents.tags('item', event => {
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
+    registerCreateConnectedItemTags(event)
+    registerEveryCompatItemTags(event)
     registerCreateLowHeatedItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
@@ -26,7 +28,9 @@ ServerEvents.tags('item', event => {
     // registerHotOrNotItemTags(event)
     registerRailWaysItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
+    registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
+    registerTFGItemTags(event)
 })
 
 /**
@@ -122,6 +126,7 @@ ServerEvents.recipes(event => {
     registerCreateAdditionsRecipes(event)
     registerCreateLowHeatedRecipes(event)
     registerCreateConnectedRecipes(event)
+    registerEveryCompatRecipes(event)
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
     registerEtchedRecipes(event)
@@ -147,24 +152,4 @@ ServerEvents.recipes(event => {
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
     registerWaterFlasksRecipes(event)
-})
-
-/**
- * Событие регистрации лут-тейблов.
- * Срабатывает до инициализации рецептов, но после датапаков и тегов.
- */
-LootJS.modifiers((event) => {})
-
-/**
- * Событие регистрации рудных жил GregTech.
-*/
-GTCEuServerEvents.oreVeins(event => {
-    registerGregTechOreVeins(event)
-})
-
-/**
- * Событие регистрации жидкостных жил GregTech.
-*/
-GTCEuServerEvents.fluidVeins(event => {
-    registerGregTechFluidVeins(event)
 })

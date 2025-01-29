@@ -1,0 +1,45 @@
+{
+    "name": "Боксит и Ильменит",
+    "icon": "gtceu:raw_bauxite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 185$(br)Плотность: 0.3$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 60$(br)Размер: 40$(br2)Виды камней: Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикаторы: Боксит, Ильменит, Алюминий"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Боксит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bauxite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 45%$(br)Содержит: Алюминий$(br)Формула: Al₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Алюминий",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/aluminium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Алюминий$(br)Формула: Al"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Ильменит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/ilmenite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Содержит: Титан$(br)Формула: FeTiO₃"
+		}
+    ]
+}

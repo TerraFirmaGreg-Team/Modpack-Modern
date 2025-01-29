@@ -1,0 +1,198 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 245,
+    "density": 0.45,
+    "min_y": -64,
+    "max_y": 10,
+    "size": 26,
+    "random_name": "deep_molybdenum",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:rhyolite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:rhyolite_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:rhyolite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:basalt_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:basalt_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:basalt_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:andesite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:andesite_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:andesite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:dacite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:dacite_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dacite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:granite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:granite_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:granite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:diorite_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:diorite_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:diorite_powellite_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_wulfenite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:gabbro_molybdenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:gabbro_molybdenum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:gabbro_powellite_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:wulfenite_indicator",
+          "weight": 40
+        },
+		{
+          "block": "gtceu:molybdenite_indicator",
+          "weight": 30
+        },
+		{
+          "block": "gtceu:molybdenum_indicator",
+          "weight": 15
+        },
+		{
+          "block": "gtceu:powellite_indicator",
+          "weight": 15
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 230,
+    "density": 0.25,
+    "min_y": -64,
+    "max_y": 26,
+    "size": 28,
+    "random_name": "deep_garnet_amethyst",
+    "height": 8,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:quartzite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:quartzite_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:quartzite_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:slate_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:slate_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:slate_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:phyllite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:phyllite_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:phyllite_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:schist_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:schist_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:schist_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:gneiss_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:gneiss_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:gneiss_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:marble_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:marble_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:marble_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:shale_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:shale_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:shale_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:shale_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:claystone_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:claystone_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:claystone_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:claystone_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:limestone_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:limestone_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:limestone_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:limestone_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:conglomerate_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:conglomerate_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:conglomerate_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:conglomerate_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:dolomite_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dolomite_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:dolomite_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:chert_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:chert_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:chert_opal_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_red_garnet_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:chalk_yellow_garnet_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:chalk_amethyst_ore",
+            "weight": 65
+          },
+          {
+            "block": "gtceu:chalk_opal_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 20,
+      "depth": 35,
+      "underground_rarity": 80,
+      "underground_count": 1000,
+      "blocks": [
+        {
+          "block": "minecraft:small_amethyst_bud",
+          "weight": 30
+        },
+		{
+          "block": "minecraft:medium_amethyst_bud",
+          "weight": 20
+        },
+		{
+          "block": "minecraft:large_amethyst_bud",
+          "weight": 15
+        },
+		{
+          "block": "tfg:buds/small_red_garnet_bud",
+          "weight": 3
+        },
+        {
+          "block": "tfg:buds/medium_red_garnet_bud",
+          "weight": 2
+        },
+        {
+          "block": "tfg:buds/large_red_garnet_bud",
+          "weight": 1
+        },
+		{
+          "block": "tfg:buds/small_yellow_garnet_bud",
+          "weight": 7
+        },
+        {
+          "block": "tfg:buds/medium_yellow_garnet_bud",
+          "weight": 5
+        },
+        {
+          "block": "tfg:buds/large_yellow_garnet_bud",
+          "weight": 3
+        },
+		{
+          "block": "tfg:buds/small_opal_bud",
+          "weight": 7
+        },
+        {
+          "block": "tfg:buds/medium_opal_bud",
+          "weight": 5
+        },
+        {
+          "block": "tfg:buds/large_opal_bud",
+          "weight": 3
+        }
+      ]
+    }
+  }
+}

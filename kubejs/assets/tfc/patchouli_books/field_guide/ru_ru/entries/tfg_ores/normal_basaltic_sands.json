@@ -1,0 +1,56 @@
+{
+    "name": "Минеральные пески",
+    "icon": "gtceu:raw_basaltic_mineral_sand",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 160$(br)Плотность: 0.3$(br)Вид: дискообразная жила$(br)Y-уровень: -32 - 60$(br)Размер: 48$(br)Высота: 9$(br2)Виды камней: Гранит, Базальт$(br2)Индикаторы: Базальтовый и Гранитовый минеральные пески, Смектическая глина, Гипс"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Базальтовый минеральный песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/basaltic_mineral_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Плавится в: Железо$(br)Формула: (Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гранитовый минеральный песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/granitic_mineral_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Плавится в: Железо$(br)Формула: (Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Смектическая глина",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/fullers_earth" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Магний$(br)Формула: MgSi₄H(H₂O)₄O₁₁"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гипс",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/gypsum" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Используется для: Алебастр (можно покрасить) и его кирпичи$(br)Формула: CaS(H₂O)₂O₄"
+		}
+    ]
+}

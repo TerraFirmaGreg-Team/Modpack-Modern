@@ -1,0 +1,23 @@
+{
+    "name": "Oilsands",
+    "icon": "gtceu:raw_oilsands",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 185$(br)Density: 0.20$(br)Type: Cluster Vein$(br)Y: 0 - 70$(br)Size: 55$(br2)Stone types: Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Oilsands$(br2)Used as an early combustion fuel."
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Oilsands",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/oilsands" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 100%$(br)Source of: Freedom 🛢🦅🗽"
+		}
+    ]
+}

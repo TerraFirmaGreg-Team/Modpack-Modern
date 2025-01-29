@@ -1,0 +1,178 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 185,
+    "density": 0.3,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 40,
+    "random_name": "normal_bauxite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:shale_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:shale_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:shale_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:claystone_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:claystone_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:claystone_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:limestone_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:limestone_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:limestone_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:conglomerate_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:conglomerate_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:conglomerate_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:dolomite_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:dolomite_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:chert_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:chert_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_bauxite_ore",
+            "weight": 45
+          },
+          {
+            "block": "gtceu:chalk_ilmenite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:chalk_aluminium_ore",
+            "weight": 25
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 15,
+      "depth": 20,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:bauxite_indicator",
+          "weight": 45
+        },
+		{
+          "block": "gtceu:ilmenite_indicator",
+          "weight": 30
+        },
+		{
+          "block": "gtceu:aluminium_indicator",
+          "weight": 25
+        },
+		{
+          "block": "tfg:buds/small_rutile_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/medium_rutile_bud",
+          "weight": 7
+        },
+		{
+          "block": "tfg:buds/large_rutile_bud",
+          "weight": 4
+        }
+      ]
+    }
+  }
+}

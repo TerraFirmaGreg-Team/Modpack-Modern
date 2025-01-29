@@ -1,0 +1,215 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 170,
+    "density": 0.4,
+    "min_y": -32,
+    "max_y": 75,
+    "size": 40,
+    "random_name": "normal_bismuthinite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:granite_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:granite_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:diorite_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:diorite_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:gabbro_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:gabbro_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/shale"
+        ],
+        "with": [
+          {
+            "block": "gtceu:shale_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:shale_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:shale_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/claystone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:claystone_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:claystone_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:claystone_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/limestone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:limestone_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:limestone_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:limestone_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/conglomerate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:conglomerate_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:conglomerate_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:conglomerate_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dolomite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dolomite_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:dolomite_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:dolomite_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chert"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chert_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:chert_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:chert_lead_ore",
+            "weight": 11
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/chalk"
+        ],
+        "with": [
+          {
+            "block": "gtceu:chalk_bismuth_ore",
+            "weight": 80
+          },
+          {
+            "block": "gtceu:chalk_sulfur_ore",
+            "weight": 9
+          },
+          {
+            "block": "gtceu:chalk_lead_ore",
+            "weight": 11
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 40,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_bismuthinite",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}

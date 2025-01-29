@@ -1,0 +1,45 @@
+{
+    "name": "Emerald & Beryllium",
+    "icon": "minecraft:emerald",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 180$(br)Density: 0.35$(br)Type: Pipe Vein$(br)Y: -32 - 50$(br)Height: 60$(br)Radius: 10$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Beryllium, Emerald, Thorium"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Beryllium",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/beryllium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Used for: Ender Pearls$(br)Formula: Be$(br)Hazardous: Yes"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Emerald",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/emerald" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 50%$(br)Used for: MV components, Item tag filters$(br)Formula: Be₃Al₂Si₆O₁₈"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Thorium",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/thorium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Used for: Nothing!$(br)Formula: Th"
+		}
+    ]
+}

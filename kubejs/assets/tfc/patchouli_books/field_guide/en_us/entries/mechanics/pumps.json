@@ -1,0 +1,40 @@
+{
+	"name": "Getting Started With Create",
+	"category": "tfc:mechanics",
+	"icon": "create:cogwheel",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"title": "Getting Started With Create",
+			"text": "In TerraFirmaGreg, TFC's own mechanical power system has been replaced with $(thing)Create$().$(br2)You can make a few Create things once you have Wrought Iron, but you can only really get started once you have access to $(l:mechanics/steel)Steel$() and $(thing)Steam Machines$().$(br2)First, you will need a source of $(thing)Mechanical Power$(), either Water Wheels, Windmills, or a Steam Engine. Of these, $(thing)Water Wheels$() are the easiest to start with, just put them in a river!$(br)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "create:crafting/kinetics/water_wheel",
+			"recipe2": "create:crafting/kinetics/large_water_wheel"
+		},
+		{
+			"type": "tfc:sealed_barrel_recipe",
+			"recipe": "tfg:barrel/treated_wood_planks",
+			"text": "To move mechanical power around, you will need $(thing)Cogwheels$().$(br)To make these, first put some $(l:mechanics/mechanical_power)Creosote$() and any $(thing)Wooden Planks$() in a $(l:mechanics/barrels)Sealed Barrel$().$(br)This will give you $(thing)Creosote-Treated Wood Planks$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Treated Wood Pulp",
+			"item": "gtceu:hp_steam_macerator,gtceu:treated_wood_dust",
+			"text": "Next, put those treated planks in a $(thing)Steam Macerator$(). This will produce $(thing)Treated Wood Pulp$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Treated Wood Plank",
+			"item": "gtceu:hp_steam_compressor,gtceu:treated_wood_plate",
+			"text": "Lastly, putting the pulp into a $(thing)Steam Compressor$() will produce a $(thing)Treated Wood Plank$().$(br2)You can then use these to craft $(item)Cogwheels$()!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shapeless/cogwheel",
+			"recipe2": "tfg:create/shaped/large_cogwheel"
+		}
+	]
+}

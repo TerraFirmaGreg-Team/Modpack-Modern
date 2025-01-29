@@ -1,0 +1,58 @@
+{
+    "name": "Сапфир и Альмандин (Глубокие)",
+    "icon": "gtceu:sapphire_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 180$(br)Плотность: 0.35$(br)Вид: дискообразная жила$(br)Y-уровень: -64 - 26$(br)Размер: 28$(br)Высота: 8$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит$(br2)Индикаторы: Альмандин, Пироп, Сапфир, Зелёный сапфир$(br2)Если вы ищите $(thing)Алюминий$(), то лучше выбрать жилу $(l:tfg_ores/normal_bauxite)Боксита$().$(br)"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Альмандин",
+			"anchor": "almandine",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/almandine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Алюминий, Железо$(br)Формула: Al₂Fe₃Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Пироп",
+			"anchor": "pyrope",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrope" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Алюминий, Магний$(br)Формула: Al₂Mg₃Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сапфир",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sapphire" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Алюминий$(br)Формула: Al₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Зелёный сапфир",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/green_sapphire" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Алюминий$(br)Формула: Al₂O₃"
+		}
+    ]
+}

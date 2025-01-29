@@ -1,0 +1,88 @@
+{
+    "name": "Аметист і Гранат",
+    "icon": "minecraft:amethyst_shard",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 230$(br)Щільність: 0.25$(br)Тип: Дискова вена$(br)Y: -64 - 26$(br)Розмір: 28$(br)Висота: 8$(br2)Типи каменю: Кварцит, Шиферний сланець, Філіт, Аспідний сланець, Гнейс, Мармур, Глинистий сланець, Аргиліт, Вапняк, Конгломерат, Доломіт, Кременистий сланець, Крейда$(br2)Індикатор: Родючий Аметист"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Аметист",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/amethyst"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 65%$(br)Джерело: Заліза$(br)Формула: (SiO₂)₄Fe"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Опал",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/opal"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Формула: (SiO₂)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Червоний гранат",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/red_garnet"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 5%$(br)Джерело: Піроп, Альмандин, Спессартин"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Жовтий гранат",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/yellow_garnet"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Андрадит, Гроссулар, Уваровіт"
+        }
+    ]
+}

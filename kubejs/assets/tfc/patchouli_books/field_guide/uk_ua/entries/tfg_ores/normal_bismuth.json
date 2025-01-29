@@ -1,0 +1,69 @@
+{
+    "name": "Бісмут (Звичайний)",
+    "icon": "gtceu:raw_bismuth",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 170$(br)Щільність: 0.4$(br)Тип: Кластерна вена$(br)Y: -32 - 75$(br)Розмір: 40$(br2)Типи каменю: Граніт, Діорит, Габро, Глинистий сланець, Аргіліт, Вапняк, Конгломерат, Доломіт, Кременистий сланець, Крейда$(br2)Індикатор: Вісмутиніт$(br2)Використовується тільки для вісмутової бронзи."
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Бісмут",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/bismuth"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 80%$(br)Розплавляється в: Бісмут$(br)Формула: Bi"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Сірка",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sulfur"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 9%$(br)Формула: S"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Свинець",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/lead"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 11%$(br)Розплавляється в: Свинець$(br)Формула: Pb$(br)Небезпечний: Так"
+        }
+    ]
+}

@@ -45,6 +45,102 @@
 - Added stripping recipes in emi world interaction page.
 - And another 2123462384234 fixed, tweaks, and etc.
 
+## [0.7.19] - 25.01.2025
+### Changes
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Add a Forging Guide to the Field Guide (Nebby1999).
+- Fixes wool cloth recipe conflict (CaptainGold1).
+- Get small dust from failed pressing (Nebby1999).
+- Fixed cassiterite heating "exploit" (CaptainGold1).
+- TFC magma as passive boiler heater (SverhRazum-Nah).
+- Adds heat values for items with valid heating recipes but no heat values (CaptainGold1).
+- Add circuit settings to netherarium/enderarium (Pyritie).
+- Fixed colored steel dust centrifuge recipes (Pyritie).
+- Automatic Scraping with Sequenced Assembly (Nebby1999).
+- Add glowstone as infinite lamp fuel (CaptainGold1).
+- Changed LV casing/hull recipes (again) (Pyritie).
+- Add seaweed and kelp drying recipes (Metriximor).
+- Fix assembler wool recipe conflicts (deneth-weerasinghe).
+- Feature: Papermaking Overhaul with Wood (Nebby1999).
+- Hanging Sign Metal Dupe fix (AirRice).
+- Adjusted LV machines book entry (Pyritie).
+- Fix collapsible brick slab blocks (Egogorka).
+
+## [0.7.18] - 19.01.2025
+### Changes
+- Fix moonlight mod.
+
+## [0.7.17] - 19.01.2025
+### Changes
+- Added ore index, started work on other TFC info category (Pyritie).
+- Changed the AE2 network analyzer to HV instead of IV (Pyritie).
+- Fixed a typo in salt water boiling recipe's temperature for small salt pile - 1000 > 100 (8oyNextDoor).
+- Fix sprinklers + fix bread and yeast starter recipe conflict (Pyritie).
+- Added recipes for create glass, more windows, fixed tinted glass recipe conflict (Pyritie).
+- Added missing recipe for nether brick (Pyritie).
+- Added armor trims (Pyritie).
+- Add blast furnace tips entry (CaptainGold1).
+- Allows stick bundles to be used in the coke oven (CaptainGold1).
+- Allows all colors of glass to be macerated/hammered to dust (CaptainGold1).
+- Add alternate papermaking quests using treated hide (CaptainGold1).
+- Fix dupes via recycling firmaciv items (Egogorka).
+- Create fluxstone recipes in macerator and forge hammer (KorGgenT).
+- Fixes fertilizer recipe and modifies some mixer recipes relating to dirt (CaptainGold1).
+- Changed train tracks to be cheaper (Pyritie).
+- Create Sails: Recipe Improvements (Nebby1999).
+- Moved MV superconductor to early HV instead of late HV (Pyritie).
+- Added some Italy and Ukraine translation (MetenBouldry).
+- Сreate some rich coal recipes in coke oven and pyro oven (Exzept1on).
+- Add blaze burner, fix alternator (Pyritie).
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Fix casing exploit, change recipes for tfc alloy (Pyritie).
+
+## [0.7.16] - 12.01.2025
+### Changes
+- Removed links for excel spreadsheet ore gen (Pyritie).
+- Fix maintenance hatch recycling recipes too (fluffle).
+- Olive oil in machines (Saaghh).
+- Fix charcoal in macerator overlap (Pyritie).
+- Added greenhouse recipes for tfc plants tag (Saaghh).
+- Use 2x annealed copper wires in ZPM mainframe recipe (fluffle).
+- Craft recipe for framed chest so it isn't cheaper then the alternatives (Juzrm).
+- RU_RU translation for tfc guide book (recently added pages) (8oyNextDoor).
+- Based gas multiblocks, more suffering! (Pyritie).
+- Creosote treated planks fixes (Pyritie).
+- Fixed mixer recipes for red/blue steel (Pyritie).
+- Added another recipe for Create's electron tubes (Pyritie).
+- Electric cheese, tomato sauce and cream (Saaghh).
+- Leather producting using GTM machines (Saaghh).
+
+## [0.7.15] - 08.01.2025
+### Changes
+- Fixed oilsands, added missing english strings, added indicators for all ores (Pyritie).
+- Fixed not being able to make cobble in assembler (Pyritie).
+- Added recipe for metal bars (Pyritie).
+- Added yeast starter and cocoa powder recipes (Pyritie).
+- Added quern recipes for graphite (Pyritie).
+- Fixed red alloy crucible recipe (Pyritie).
+- Precision mech recipe in assembler (SverhRazum-Nah).
+- Fixed TFG things in field guide, added oregen section (Pyritie). <-- Legend Feature.
+- Various fixes for 0.7.14 (fluffle).
+  - It changes the costs of AE2 covered, dense and smart cables so the 3:1 ratio for fluix cables is reduced to 1:1.
+    - Covered cables should not be 3x the price for the same functionality.
+    - The 3x cost makes it unnecessarily painful and expensive to run dense cable to where it's needed.
+  - It re-enables AE2 cutting knives and adds recipes for them.
+    - This allows AE parts like interfaces to be renamed easily and cheaply.
+  - It removes the in-world transformation recipe for AE2 fluix crystals.
+    - Mixer recipes for fluix crystals are buffed to match in-world transformation recipe costs.
+    - Mixer recipe duration is reduced.
+    - Note that the create mixing recipe for fluix crystals still remains.
+  - It adds self-crafting recipes for all super tanks and chests.
+    - This means a tank can be crafted to remove NBT data stuck to it, so it can stack with other tanks again.
+  - It adds a circuit (1) to the GTCEu assembler recipe for minecraft:redstone_lamp.
+    - This was conflicting with the AE2 smart cable recipes.
+- Fix LV recycling recipes to produce basic steel (fluffle).
+- Adds early glowstone recipe (Pyritie).
+- Added recipes to stop duping of red alloy + steam machines (Pyritie).
+- Fix stone dust tag (Pyritie).
+
 ## [0.7.14] - 01.10.2024
 ### Changes
 - Fixed a crash when cutting down trees with mushrooms on the trunk.

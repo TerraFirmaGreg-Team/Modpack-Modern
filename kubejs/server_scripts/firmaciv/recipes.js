@@ -30,7 +30,17 @@ const registerFirmaCivRecipes = (event) => {
     //#region Unfinished Sextant
     event.recipes.tfc.heating('firmaciv:unfinished_sextant', 930)
         .resultFluid(Fluid.of('gtceu:brass', 288))
-        .id(`firmaciv:heating/unfinished_sextant`)
+        .id(`firmaciv:heating/unfinished_nav_clock`)
+
+    event.replaceOutput( // This problem would come each time there's a double-plate recipe in an anvil. Dunno how to fix it other than that.
+        'gtceu:arc_furnace/arc_unfinished_nav_clock',
+        'gtceu:brass_ingot',
+        '2x gtceu:brass_ingot')     
+    
+    event.replaceOutput(
+        'gtceu:macerator/macerate_unfinished_nav_clock',
+        'gtceu:brass_dust',
+        '2x gtceu:brass_dust')
     //#endregion
 
     //#region Navigator Timepiece
@@ -80,6 +90,55 @@ const registerFirmaCivRecipes = (event) => {
         .EUt(4)
     //#endregion
 
+    //#region Oarlock
+    event.recipes.gtceu.assembler('tfg:firmaciv/oarlock')             
+        .itemInputs('#forge:double_plates/wrought_iron')
+        .circuit(13)
+        .itemOutputs('firmaciv:oarlock')
+        .duration(75)
+        .EUt(4)
+
+    event.recipes.tfc.heating('firmaciv:oarlock', 1535)
+        .resultFluid(Fluid.of('gtceu:iron', 288))
+        .id(`firmaciv:heating/oarlock`)
+    //#endregion
+
+    //#region Cleat
+    event.recipes.gtceu.assembler('tfg:firmaciv/cleat')             
+        .itemInputs('#forge:double_plates/steel')
+        .circuit(14)
+        .itemOutputs('firmaciv:cleat')
+        .duration(75)
+        .EUt(4)
+
+    event.recipes.tfc.heating('firmaciv:cleat', 1535)
+        .resultFluid(Fluid.of('gtceu:steel', 288))
+        .id(`firmaciv:heating/cleat`)
+    //#endregion
+
+    //#region Anchor
+    event.recipes.gtceu.assembler('tfg:firmaciv/anchor')             
+        .itemInputs('#forge:double_plates/steel')
+        .circuit(10)
+        .itemOutputs('firmaciv:anchor')
+        .duration(75)
+        .EUt(4)
+
+    event.recipes.tfc.heating('firmaciv:anchor', 1535)
+        .resultFluid(Fluid.of('gtceu:steel', 288))
+        .id(`firmaciv:heating/anchor`)
+
+    event.replaceOutput( 
+        'gtceu:arc_furnace/arc_anchor',
+        'gtceu:steel_ingot',
+        '2x gtceu:steel_ingot')     
+    
+    event.replaceOutput(
+        'gtceu:macerator/macerate_anchor',
+        'gtceu:steel_dust',
+        '2x gtceu:steel_dust')
+    //#endregion
+
     //#region Cannon Barrel
     event.recipes.gtceu.assembler('tfg:firmaciv/cannon_barrel')             
         .itemInputs('#forge:double_plates/wrought_iron')
@@ -91,5 +150,34 @@ const registerFirmaCivRecipes = (event) => {
     event.recipes.tfc.heating('firmaciv:cannon_barrel', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 288))
         .id(`firmaciv:heating/cannon_barrel`)
+    //#endregion
+
+    //#region Cannonball
+    event.recipes.gtceu.assembler('tfg:firmaciv/cannonball')             
+        .itemInputs('#forge:double_plates/wrought_iron')
+        .circuit(12)
+        .itemOutputs('firmaciv:cannonball')
+        .duration(75)
+        .EUt(4)
+
+    event.recipes.tfc.heating('firmaciv:cannonball', 1535)
+        .resultFluid(Fluid.of('gtceu:iron', 288))
+        .id(`firmaciv:heating/cannonball`)
+
+    event.replaceOutput(
+        'gtceu:arc_furnace/arc_cannon_barrel',
+        'gtceu:wrought_iron_ingot',
+        '2x gtceu:wrought_iron_ingot')     
+        
+    event.replaceOutput(
+        'gtceu:macerator/macerate_cannon_barrel',
+        'gtceu:iron_dust',
+        '2x gtceu:iron_dust')
+    //#endregion
+
+    //#region Cannon
+    event.recipes.tfc.heating('firmaciv:cannon', 1535)
+        .resultFluid(Fluid.of('gtceu:iron', 1872))
+        .id(`firmaciv:heating/cannon`)
     //#endregion
 }

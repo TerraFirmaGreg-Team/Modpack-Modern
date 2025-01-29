@@ -1,0 +1,45 @@
+{
+    "name": "Magnetite & Vanadium",
+    "icon": "gtceu:raw_magnetite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 200$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 75$(br)Size: 40$(br2)Stone types: Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Magnetite, Native Gold"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Magnetite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/magnetite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 65%$(br)Melts into: Cast Iron$(br)Formula: Fe₃O₄"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Vanadium Magnetite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/vanadium_magnetite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Iron, Vanadium$(br)Formula: (Fe₃O₄)V"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Gold",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/gold" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 10%$(br)Melts into: Gold$(br)Formula: Au"
+		}
+    ]
+}

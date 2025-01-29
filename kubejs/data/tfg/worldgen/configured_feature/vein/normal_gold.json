@@ -1,0 +1,195 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 170,
+    "density": 0.4,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 40,
+    "random_name": "normal_gold",
+    "height": 12,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:rhyolite_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:rhyolite_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:rhyolite_gold_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:basalt_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:basalt_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:basalt_gold_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:andesite_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:andesite_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:andesite_gold_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:dacite_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:dacite_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:dacite_gold_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:granite_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:granite_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:granite_gold_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:diorite_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:diorite_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:diorite_gold_ore",
+            "weight": 55
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_goethite_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:gabbro_yellow_limonite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:gabbro_hematite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:gabbro_gold_ore",
+            "weight": 55
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 60,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_limonite",
+          "weight": 25
+        },
+		{
+          "block": "tfc:ore/small_hematite",
+          "weight": 25
+        },
+		{
+          "block": "tfc:ore/small_native_gold",
+          "weight": 50
+        }
+      ]
+    }
+  }
+}

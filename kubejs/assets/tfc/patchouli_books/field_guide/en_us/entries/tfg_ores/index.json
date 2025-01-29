@@ -1,0 +1,44 @@
+{
+	"name": "Ore Index",
+	"icon": "minecraft:diamond_pickaxe",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 2,
+	"read_by_default": true,
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"text": "This is a list of every ore in the world, sorted alphabetically, and then by richest to poorest vein type.$(br2)Almandine: $(l:tfg_ores/deep_sapphire)35%$()$(br)Aluminium: $(l:tfg_ores/normal_bauxite)25%$()$(br)Alunite: $(l:tfg_ores/normal_saltpeter)15%$()$(br)Amethyst: $(l:tfg_ores/deep_garnet_amethyst)65%$(), $(l:tfg_ores/deep_garnet_opal)25%$()$(br)Apatite: $(l:tfg_ores/normal_apatite)50%$()$(br)Asbestos: $(l:tfg_ores/normal_garnet_tin)25%$()$(br)Barite: $(l:tfg_ores/normal_quartz)15%$()$(br)Basaltic Mineral Sand: $(l:tfg_ores/normal_basaltic_sands)35%$()$(br)Bastnasite: $(l:tfg_ores/normal_monazite)50%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Bauxite: $(l:tfg_ores/normal_bauxite)45%$(), $(l:tfg_ores/normal_mica)25%$()$(br)Bentonite: $(l:tfg_ores/normal_olivine)35%$()$(br)Beryllium: $(l:tfg_ores/normal_beryllium)35%$()$(br)Bismuth: $(l:tfg_ores/surface_bismuth)90%$(), $(l:tfg_ores/normal_bismuth)80%$()$(br)Blue Topaz: $(l:tfg_ores/deep_topaz)35%$()$(br)Borax: $(l:tfg_ores/normal_salt)15%$()$(br)Bornite: $(l:tfg_ores/deep_sheldonite)35%$(), $(l:tfg_ores/deep_topaz)15%$()$(br)Calcite: $(l:tfg_ores/normal_lapis)15%$()$(br)Cassiterite: $(l:tfg_ores/surface_cassiterite)60%$(), $(l:tfg_ores/normal_cassiterite)40%$(), $(l:tfg_ores/surface_copper)5%$()$(br)Cassiterite Sand: $(l:tfg_ores/normal_garnet_tin)35%$()$(br)Certus Quartz: $(l:tfg_ores/normal_quartz)30%$()$(br)Chalcocite: $(l:tfg_ores/deep_topaz)25%$()$(br)Chalcopyrite: $(l:tfg_ores/surface_copper)55%$(), $(l:tfg_ores/normal_copper)20%$()$(br)Chromite: $(l:tfg_ores/deep_magnetite)60%$()$(br)Cinnabar: $(l:tfg_ores/normal_redstone)20%$()$(br)Coal: $(l:tfg_ores/normal_coal)100%$(), $(l:tfg_ores/normal_graphite)30%$()$(br)Cobalt: $(l:tfg_ores/normal_garnierite)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Cobaltite: $(l:tfg_ores/normal_garnierite)20%$()$(br)Copper: $(l:tfg_ores/normal_copper)65%$(), $(l:tfg_ores/normal_tetrahedrite)30%$(), $(l:tfg_ores/surface_tetrahedrite)20%$()$(br)Diamond: $(l:tfg_ores/normal_graphite)25%$()$(br)Diatomite: $(l:tfg_ores/normal_saltpeter)25%$(), $(l:tfg_ores/normal_garnet_tin)15%$()$(br)Electrotine: $(l:tfg_ores/normal_saltpeter)25%$()$(br)Emerald: $(l:tfg_ores/normal_beryllium)50%$()$(br)Fuller's Earth: $(l:tfg_ores/normal_basaltic_sands)25%$()$(br)Galena: $(l:tfg_ores/normal_silver)30%$()$(br)Garnet Sand: $(l:tfg_ores/normal_garnet_tin)25%$()$(br)Garnierite: $(l:tfg_ores/normal_garnierite)30%$()$(br)Glauconite Sand: $(l:tfg_ores/normal_lubricant)25%$(), $(l:tfg_ores/normal_olivine)15%$()$(br)Goethite: $(l:tfg_ores/deep_limonite)50%$(), $(l:tfg_ores/deep_hematite)25%$(), $(l:tfg_ores/normal_hematite)15%$(), $(l:tfg_ores/normal_limonite)15%$(), $(l:tfg_ores/normal_gold)5%$(), $(l:tfg_ores/deep_gold)5%$()$(br)Gold: $(l:tfg_ores/deep_gold)75%$(), $(l:tfg_ores/normal_gold)55%$(), $(l:tfg_ores/deep_magnetite)15%$(), $(l:tfg_ores/normal_magnetite)10%$(), $(l:tfg_ores/deep_hematite)5%$(), $(l:tfg_ores/normal_hematite)5%$()$(br)Granitic Mineral Sand: $(l:tfg_ores/normal_basaltic_sands)25%$()$(br)Graphite: $(l:tfg_ores/normal_graphite)45%$()$(br)Green Sapphire: $(l:tfg_ores/deep_sapphire)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Grossular: $(l:tfg_ores/normal_manganese)30%$()$(br)Gypsum: $(l:tfg_ores/normal_basaltic_sands)15%$()$(br)Hematite: $(l:tfg_ores/normal_hematite)50%$(), $(l:tfg_ores/deep_hematite)35%$(), $(l:tfg_ores/normal_gold)20%$(), $(l:tfg_ores/normal_limonite)20%$(), $(l:tfg_ores/deep_gold)15%$(), $(l:tfg_ores/deep_limonite)15%$()$(br)Ilmenite: $(l:tfg_ores/normal_bauxite)30%$()$(br)Iron: $(l:tfg_ores/normal_copper)5%$()$(br)Kaolinite: $(l:tfg_ores/surface_kaolin)20%$()$(br)Kyanite: $(l:tfg_ores/normal_mica)35%$()$(br)Lapis: $(l:tfg_ores/normal_lapis)25%$()$(br)Lazurite: $(l:tfg_ores/normal_lapis)35%$()$(br)Lead: $(l:tfg_ores/normal_silver)55%$(), $(l:tfg_ores/normal_bismuth)11%$(), $(l:tfg_ores/surface_bismuth)7%$()$(br)Lepidolite: $(l:tfg_ores/normal_salt)15%$(), $(l:tfg_ores/normal_spodumene)15%$()$(br)Lithium: $(l:tfg_ores/deep_scheelite)20%$()$(br)Magnesite: $(l:tfg_ores/normal_olivine)25%$()$(br)Magnetite: $(l:tfg_ores/normal_magnetite)65%$(), $(l:tfg_ores/deep_magnetite)5%$()$(br)Malachite: $(l:tfg_ores/deep_limonite)20%$(), $(l:tfg_ores/normal_limonite)15%$()$(br)Mica: $(l:tfg_ores/normal_mica)25%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Molybdenite: $(l:tfg_ores/deep_molybdenum)30%$()$(br)Molybdenum: $(l:tfg_ores/deep_molybdenum)15%$()$(br)Monazite: $(l:tfg_ores/normal_monazite)25%$()$(br)Naquadah: $(l:tfg_ores/deep_naquadah)75%$()$(br)Neodymium: $(l:tfg_ores/normal_monazite)25%$()$(br)Nether Quartz: $(l:tfg_ores/normal_quartz)10%$()$(br)Nickel: $(l:tfg_ores/normal_garnierite)10%$()$(br)Oilsands: $(l:tfg_ores/normal_oilsands)100%$()$(br)Olivine: $(l:tfg_ores/normal_olivine)25%$()$(br)Opal: $(l:tfg_ores/deep_garnet_opal)55%$(), $(l:tfg_ores/deep_garnet_amethyst)15%$()$(br)Palladium: $(l:tfg_ores/deep_sheldonite)15%$()$(br)Pentlandite: $(l:tfg_ores/normal_garnierite)25%$(), $(l:tfg_ores/normal_lubricant)15%$()$(br)Pitchblende: $(l:tfg_ores/deep_pitchblende)50%$()$(br)Platinum: $(l:tfg_ores/deep_sheldonite)25%$()$(br)Plutonium: $(l:tfg_ores/deep_naquadah)25%$()$(br)Pollucite: $(l:tfg_ores/normal_mica)15%$()$(br)Powellite: $(l:tfg_ores/deep_molybdenum)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Pyrite: $(l:tfg_ores/normal_sulfur)35%$(), $(l:tfg_ores/normal_sphalerite)25%$(), $(l:tfg_ores/normal_copper)10%$(), $(l:tfg_ores/surface_sphalerite)5%$()$(br)Pyrochlore: $(l:tfg_ores/normal_apatite)15%$()$(br)Pyrolusite: $(l:tfg_ores/normal_manganese)20%$()$(br)Pyrope: $(l:tfg_ores/deep_sapphire)25%$()$(br)Quartzite: $(l:tfg_ores/normal_quartz)45%$()$(br)Realgar: $(l:tfg_ores/surface_copper)15%$()$(br)Red Garnet: $(l:tfg_ores/deep_garnet_amethyst)5%$(), $(l:tfg_ores/deep_garnet_opal)5%$()$(br)Redstone: $(l:tfg_ores/normal_redstone)45%$()$(br)Rock Salt: $(l:tfg_ores/normal_salt)40%$(), $(l:tfg_ores/normal_spodumene)20%$()$(br)Ruby: $(l:tfg_ores/normal_redstone)35%$(), $(l:tfg_ores/deep_hematite)20%$()$(br)Salt: $(l:tfg_ores/normal_salt)30%$(), $(l:tfg_ores/normal_spodumene)30%$()$(br)Saltpeter: $(l:tfg_ores/normal_saltpeter)35%$()$(br)Sapphire: $(l:tfg_ores/deep_sapphire)15%$(), $(l:tfg_ores/deep_magnetite)5%$()$(br)Scheelite: $(l:tfg_ores/deep_scheelite)45%$()$(br)Sheldonite: $(l:tfg_ores/deep_sheldonite)25%$()$(br)Silver: $(l:tfg_ores/normal_silver)15%$()$(br)Soapstone: $(l:tfg_ores/normal_lubricant)30%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Sodalite: $(l:tfg_ores/normal_lapis)25%$()$(br)Spessartine: $(l:tfg_ores/normal_manganese)20%$()$(br)Sphalerite: $(l:tfg_ores/normal_sphalerite)40%$(), $(l:tfg_ores/surface_sphalerite)40%$(), $(l:tfg_ores/normal_sulfur)15%$()$(br)Spodumene: $(l:tfg_ores/normal_spodumene)35%$()$(br)Stibnite: $(l:tfg_ores/normal_tetrahedrite)20%$(), $(l:tfg_ores/surface_tetrahedrite)20%$()$(br)Sulfur: $(l:tfg_ores/surface_sphalerite)55%$(), $(l:tfg_ores/normal_sulfur)50%$(), $(l:tfg_ores/normal_sphalerite)35%$(), $(l:tfg_ores/normal_bismuth)9%$(), $(l:tfg_ores/surface_bismuth)3%$()$(br)Talc: $(l:tfg_ores/normal_lubricant)20%$()$(br)Tantalite: $(l:tfg_ores/normal_manganese)10%$()$(br)Tetrahedrite: $(l:tfg_ores/surface_tetrahedrite)60%$(), $(l:tfg_ores/normal_tetrahedrite)50%$()$(br)Thorium: $(l:tfg_ores/normal_beryllium)15%$()$(br)Tin: $(l:tfg_ores/normal_cassiterite)60%$(), $(l:tfg_ores/surface_cassiterite)40%$()$(br)Topaz: $(l:tfg_ores/deep_topaz)25%$()$(br)Tricalcium Phosphate: $(l:tfg_ores/normal_apatite)35%$()$(br)Trona: $(l:tfg_ores/normal_lubricant)10%$()$(br)Tungstate: $(l:tfg_ores/deep_scheelite)35%$()$(br)Uraninite: $(l:tfg_ores/deep_pitchblende)50%$()$(br)Vanadium Magnetite: $(l:tfg_ores/normal_magnetite)25%$(), $(l:tfg_ores/deep_magnetite)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Wulfenite: $(l:tfg_ores/deep_molybdenum)40%$()$(br)Yellow Garnet: $(l:tfg_ores/deep_garnet_amethyst)5%$(), $(l:tfg_ores/deep_garnet_opal)5%$()$(br)Yellow Limonite: $(l:tfg_ores/normal_limonite)50%$(), $(l:tfg_ores/normal_hematite)30%$(), $(l:tfg_ores/normal_gold)20%$(), $(l:tfg_ores/deep_limonite)15%$(), $(l:tfg_ores/deep_hematite)15%$(), $(l:tfg_ores/deep_gold)5%$()$(br)Zeolite: $(l:tfg_ores/surface_copper)15%$()"
+		}
+	]
+}
+

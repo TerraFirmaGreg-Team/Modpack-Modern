@@ -1,0 +1,88 @@
+{
+    "name": "Марганець і Тантал",
+    "icon": "gtceu:raw_grossular",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 195$(br)Щільність: 0.3$(br)Тип: Кластерна вена$(br)Y: -32 - 60$(br)Розмір: 40$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит, Глинистий сланець, Аргіліт, Вапняк, Конгломерат, Доломіт, Кременистий сланець, Крейда$(br2)Індикатор: Гроссуляр, Спесартин, Піролюзит, Танталіт"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Гроссуляр",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/grossular"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 30%$(br)Джерело: Кальцію, Алюмінію$(br)Формула: Ca₃Al₂Si₃O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Спесартин",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/spessartine"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 20%$(br)Джерело: Магнезії, Алюмінію$(br)Формула: Al₂Mn₃Si₃O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Піролюзит",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pyrolusite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Формула: 20%$(br)Джерело: Магнезії$(br)Формула: MnO₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Танталіт",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/tantalite"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 10%$(br)Джерело: Магнезії, Танталу$(br)Формула: MnTa₂O₆"
+        }
+    ]
+}

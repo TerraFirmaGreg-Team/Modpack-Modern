@@ -22,7 +22,11 @@ const registerFirmaLifeItemTags = (event) => {
     global.FIRMALIFE_HIDED_ITEMS.forEach(item => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
-    //#endregion
+
+    event.add('minecraft:trimmable_armor', '#firmalife:beekeeper_armor')
+
+    // Удаление тегов у руд
+    event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
 }
 
 const registerFirmaLifeBlockTags = (event) => {

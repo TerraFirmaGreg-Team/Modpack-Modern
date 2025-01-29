@@ -1,0 +1,14 @@
+{
+    "name": "Нержавеющая сталь",
+    "icon": "firmalife:metal/ingot/stainless_steel",
+    "category": "tfc:firmalife",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+			"item": "gtceu:stainless_steel_ingot",
+			"title": "Нержавеющая сталь",
+            "text": "Эта страница не используется.$(br2)Нержавеющая сталь - Грегтеховский материал $(thing)HV$(), поэтому в примитивной эре он не создаётся.$(br)Теплицу из нержавеющей стали так же сделать невозможно, приносим свои извинения!"
+        }
+    ]
+}

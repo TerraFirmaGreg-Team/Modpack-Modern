@@ -1,0 +1,90 @@
+{
+    "name": "Сапфір і Альмадін",
+    "icon": "gtceu:sapphire_gem",
+    "category": "tfc:tfg_ores",
+    "read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Рідкість: 180$(br)Щільність: 0.35$(br)Тип: Дискова вена$(br)Y: -64 - 26$(br)Розмір: 28$(br)Висота: 8$(br2)Типи каменю: Ріоліт, Базальт, Андезит, Дацит$(br2)Індикатор: Алмадін, Піроп, Сапфір, Зелений Сапфір $(br2)Якщо ви шукаєте $(thing)Алюміній$(), знайдіть $(l:tfg_ores/normal_bauxite)Бокситну$() вену замість.$(br)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Алмандін",
+            "anchor": "almandine",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/almandine"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 35%$(br)Джерело: Алюміній, Залізо$(br)Формула: Al₂Fe₃Si₃O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Піроп",
+            "anchor": "pyrope",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/pyrope"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 25%$(br)Джерело: Алюмінію, Магнію$(br)Формула: Al₂Mg₃Si₃O₁₂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Сапфір",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/sapphire"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Алюмінію$(br)Формула: Al₂O₃"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "name": "Зелений сапфір",
+            "multiblock": {
+                "mapping": {
+                    "0": "#forge:ores/green_sapphire"
+                },
+                "pattern": [
+                    [
+                        "0"
+                    ],
+                    [
+                        " "
+                    ]
+                ]
+            },
+            "enable_visualize": false,
+            "text": "Відсоток: 15%$(br)Джерело: Алюмінію$(br)Формула: Al₂O₃"
+        }
+    ]
+}

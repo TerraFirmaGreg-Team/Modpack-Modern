@@ -1,0 +1,56 @@
+{
+    "name": "Сподумен и Лепидолит",
+    "icon": "gtceu:raw_spodumene",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 180$(br)плотность: 0.375$(br)Вид: дискообразная жила$(br)Y-уровень: 20 - 60$(br)Размер: 35$(br)Высота: 6$(br2)Виды камней: Гранит, Диорит, Габбро, Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Самосадочная соль, Каменная соль, Лепидолит, Сподумен"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Каменная соль",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/rock_salt" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Содержит: Калий, Хлор$(br)Формула: KCl"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Соль",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/salt" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Содержит: Натрий, Хлор$(br)Формула: NaCl"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Лепидолит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/lepidolite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Калий, Литий, Алюминий, Фтор$(br)Формула: KLi₃Al₄F₂O₁₀"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сподумен",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/spodumene" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Литий, Алюминий$(br)Формула: LiAlSi₂O₆"
+		}
+    ]
+}

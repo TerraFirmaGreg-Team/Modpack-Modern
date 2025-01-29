@@ -1,0 +1,84 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 160,
+    "density": 0.3,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 48,
+    "random_name": "normal_basaltic_sands",
+    "height": 9,
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_basaltic_mineral_sand_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_granitic_mineral_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_fullers_earth_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_gypsum_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_basaltic_mineral_sand_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:basalt_granitic_mineral_sand_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_fullers_earth_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_gypsum_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 15,
+      "depth": 20,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:basaltic_mineral_sand_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:granitic_mineral_sand_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:fullers_earth_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:gypsum_indicator",
+          "weight": 15
+        }
+      ]
+    }
+  }
+}

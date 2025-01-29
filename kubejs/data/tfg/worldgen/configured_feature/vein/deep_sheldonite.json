@@ -1,0 +1,175 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 300,
+    "density": 0.3,
+    "min_y": -64,
+    "max_y": 0,
+    "size": 30,
+    "random_name": "deep_sheldonite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/quartzite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:quartzite_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:quartzite_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_platinum_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:quartzite_palladium_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/slate"
+        ],
+        "with": [
+          {
+            "block": "gtceu:slate_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:slate_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_platinum_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:slate_palladium_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/phyllite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:phyllite_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:phyllite_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_platinum_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:phyllite_palladium_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/schist"
+        ],
+        "with": [
+          {
+            "block": "gtceu:schist_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:schist_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_platinum_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:schist_palladium_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gneiss"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gneiss_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gneiss_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_platinum_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gneiss_palladium_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/marble"
+        ],
+        "with": [
+          {
+            "block": "gtceu:marble_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:marble_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_platinum_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:marble_palladium_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 12,
+      "depth": 35,
+      "underground_rarity": 40,
+      "underground_count": 500,
+      "blocks": [
+        {
+          "block": "gtceu:bornite_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:cooperite_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:platinum_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:palladium_indicator",
+          "weight": 15
+        }
+      ]
+    }
+  }
+}

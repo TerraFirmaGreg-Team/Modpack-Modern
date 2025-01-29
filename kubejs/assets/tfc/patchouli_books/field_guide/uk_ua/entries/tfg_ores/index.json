@@ -1,0 +1,43 @@
+{
+	"name": "Індекс руд",
+	"icon": "minecraft:diamond_pickaxe",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 2,
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Це список усіх руд у світі, відсортованих в алфавітному порядку, а потім за типом жил - від найбагатших до найбідніших.$(br2)Альмандін: $(l:tfg_ores/deep_sapphire)35%$()$(br)Алюміній: $(l:tfg_ores/normal_bauxite)25%$()$(br)Алуніт: $(l:tfg_ores/normal_saltpeter)15%$()$(br)Аметист: $(l:tfg_ores/deep_garnet_amethyst)65%$(), $(l:tfg_ores/deep_garnet_opal)25%$()$(br)Апатит: $(l:tfg_ores/normal_apatite)50%$()$(br)Азбест: $(l:tfg_ores/normal_garnet_tin)25%$()$(br)Барит: $(l:tfg_ores/normal_quartz)15%$()$(br)Базальтовий Мінеральний Пісок: $(l:tfg_ores/normal_basaltic_sands)35%$()$(br)Бастназит: $(l:tfg_ores/normal_monazite)50%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Боксити: $(l:tfg_ores/normal_bauxite)45%$(), $(l:tfg_ores/normal_mica)25%$()$(br)Бентоніт: $(l:tfg_ores/normal_olivine)35%$()$(br)Берилій: $(l:tfg_ores/normal_beryllium)35%$()$(br)Бісмут: $(l:tfg_ores/surface_bismuth)90%$(), $(l:tfg_ores/normal_bismuth)80%$()$(br)Синій топаз: $(l:tfg_ores/deep_topaz)35%$()$(br)Бура: $(l:tfg_ores/normal_salt)15%$()$(br)Борніт: $(l:tfg_ores/deep_sheldonite)35%$(), $(l:tfg_ores/deep_topaz)15%$()$(br)Кальцит: $(l:tfg_ores/normal_lapis)15%$()$(br)Каситерит: $(l:tfg_ores/surface_cassiterite)60%$(), $(l:tfg_ores/normal_cassiterite)40%$(), $(l:tfg_ores/surface_copper)5%$()$(br)Каситеритовий Пісок: $(l:tfg_ores/normal_garnet_tin)35%$()$(br)Істинний кварц: $(l:tfg_ores/normal_quartz)30%$()$(br)Халькоцит: $(l:tfg_ores/deep_topaz)25%$()$(br)Халькопірит: $(l:tfg_ores/surface_copper)55%$(), $(l:tfg_ores/normal_copper)20%$()$(br)Хроміт: $(l:tfg_ores/deep_magnetite)60%$()$(br)Киноварь: $(l:tfg_ores/normal_redstone)20%$()$(br)Вугілля: $(l:tfg_ores/normal_coal)100%$(), $(l:tfg_ores/normal_graphite)30%$()$(br)Кабальт: $(l:tfg_ores/normal_garnierite)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Кобальтит: $(l:tfg_ores/normal_garnierite)20%$()$(br)Мідь: $(l:tfg_ores/normal_copper)65%$(), $(l:tfg_ores/normal_tetrahedrite)30%$(), $(l:tfg_ores/surface_tetrahedrite)20%$()$(br)Діамант: $(l:tfg_ores/normal_graphite)25%$()$(br)Діатоміт: $(l:tfg_ores/normal_saltpeter)25%$(), $(l:tfg_ores/normal_garnet_tin)15%$()$(br)Електротин: $(l:tfg_ores/normal_saltpeter)25%$()$(br)Смарагд: $(l:tfg_ores/normal_beryllium)50%$()$(br)Земля Фуллера: $(l:tfg_ores/normal_basaltic_sands)25%$()$(br)Галена: $(l:tfg_ores/normal_silver)30%$()$(br)Гранатовий Пісок: $(l:tfg_ores/normal_garnet_tin)25%$()$(br)Гарнієрит: $(l:tfg_ores/normal_garnierite)30%$()$(br)Глауконітовий пісок:: $(l:tfg_ores/normal_lubricant)25%$(), $(l:tfg_ores/normal_olivine)15%$()$(br)Гетит: $(l:tfg_ores/deep_limonite)50%$(), $(l:tfg_ores/deep_hematite)25%$(), $(l:tfg_ores/normal_hematite)15%$(), $(l:tfg_ores/normal_limonite)15%$(), $(l:tfg_ores/normal_gold)5%$(), $(l:tfg_ores/deep_gold)5%$()$(br)Золото: $(l:tfg_ores/deep_gold)75%$(), $(l:tfg_ores/normal_gold)55%$(), $(l:tfg_ores/deep_magnetite)15%$(), $(l:tfg_ores/normal_magnetite)10%$(), $(l:tfg_ores/deep_hematite)5%$(), $(l:tfg_ores/normal_hematite)5%$()$(br)Гранітний мінеральний пісок: $(l:tfg_ores/normal_basaltic_sands)25%$()$(br)Графіт: $(l:tfg_ores/normal_graphite)45%$()$(br)Зелений Сапфір: $(l:tfg_ores/deep_sapphire)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Гроссулар: $(l:tfg_ores/normal_manganese)30%$()$(br)Гіпс: $(l:tfg_ores/normal_basaltic_sands)15%$()$(br)Гематит: $(l:tfg_ores/normal_hematite)50%$(), $(l:tfg_ores/deep_hematite)35%$(), $(l:tfg_ores/normal_gold)20%$(), $(l:tfg_ores/normal_limonite)20%$(), $(l:tfg_ores/deep_gold)15%$(), $(l:tfg_ores/deep_limonite)15%$()$(br)Ілменіт: $(l:tfg_ores/normal_bauxite)30%$()$(br)Залізо: $(l:tfg_ores/normal_copper)5%$()$(br)Каолініт: $(l:tfg_ores/surface_kaolin)20%$()$(br)Кіаніт: $(l:tfg_ores/normal_mica)35%$()$(br)Смарагд: $(l:tfg_ores/normal_lapis)25%$()$(br)Лазурит: $(l:tfg_ores/normal_lapis)35%$()$(br)Свинець: $(l:tfg_ores/normal_silver)55%$(), $(l:tfg_ores/normal_bismuth)11%$(), $(l:tfg_ores/surface_bismuth)7%$()$(br)Лепідоліт: $(l:tfg_ores/normal_salt)15%$(), $(l:tfg_ores/normal_spodumene)15%$()$(br)Літій: $(l:tfg_ores/deep_scheelite)20%$()$(br)Магнезит: $(l:tfg_ores/normal_olivine)25%$()$(br)Магнетит: $(l:tfg_ores/normal_magnetite)65%$(), $(l:tfg_ores/deep_magnetite)5%$()$(br)Малахіт: $(l:tfg_ores/deep_limonite)20%$(), $(l:tfg_ores/normal_limonite)15%$()$(br)Слюда: $(l:tfg_ores/normal_mica)25%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Молібденіт: $(l:tfg_ores/deep_molybdenum)30%$()$(br)Молібден: $(l:tfg_ores/deep_molybdenum)15%$()$(br)Монацит: $(l:tfg_ores/normal_monazite)25%$()$(br)Наквадак: $(l:tfg_ores/deep_naquadah)75%$()$(br)Неодим: $(l:tfg_ores/normal_monazite)25%$()$(br)Кварц Нижнього Світу: $(l:tfg_ores/normal_quartz)10%$()$(br)Нікель: $(l:tfg_ores/normal_garnierite)10%$()$(br)Нафтові піски: $(l:tfg_ores/normal_oilsands)100%$()$(br)Олівін: $(l:tfg_ores/normal_olivine)25%$()$(br)Опал: $(l:tfg_ores/deep_garnet_opal)55%$(), $(l:tfg_ores/deep_garnet_amethyst)15%$()$(br)Паладій: $(l:tfg_ores/deep_sheldonite)15%$()$(br)Пентландит: $(l:tfg_ores/normal_garnierite)25%$(), $(l:tfg_ores/normal_lubricant)15%$()$(br)Пітчбленд: $(l:tfg_ores/deep_pitchblende)50%$()$(br)Платина: $(l:tfg_ores/deep_sheldonite)25%$()$(br)Плутоній: $(l:tfg_ores/deep_naquadah)25%$()$(br)Полюцит: $(l:tfg_ores/normal_mica)15%$()$(br)Повеліт: $(l:tfg_ores/deep_molybdenum)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Пірит: $(l:tfg_ores/normal_sulfur)35%$(), $(l:tfg_ores/normal_sphalerite)25%$(), $(l:tfg_ores/normal_copper)10%$(), $(l:tfg_ores/surface_sphalerite)5%$()$(br)Пірохлор: $(l:tfg_ores/normal_apatite)15%$()$(br)Піролюзит: $(l:tfg_ores/normal_manganese)20%$()$(br)Піроп: $(l:tfg_ores/deep_sapphire)25%$()$(br)Кварцит: $(l:tfg_ores/normal_quartz)45%$()$(br)Реалгар: $(l:tfg_ores/surface_copper)15%$()$(br)Червоний гранат: $(l:tfg_ores/deep_garnet_amethyst)5%$(), $(l:tfg_ores/deep_garnet_opal)5%$()$(br)Редстоун: $(l:tfg_ores/normal_redstone)45%$()$(br)Кам'яна Сіль: $(l:tfg_ores/normal_salt)40%$(), $(l:tfg_ores/normal_spodumene)20%$()$(br)Рубін: $(l:tfg_ores/normal_redstone)35%$(), $(l:tfg_ores/deep_hematite)20%$()$(br)Сіль: $(l:tfg_ores/normal_salt)30%$(), $(l:tfg_ores/normal_spodumene)30%$()$(br)Сапфір: $(l:tfg_ores/normal_saltpeter)35%$()$(br)Sapphire: $(l:tfg_ores/deep_sapphire)15%$(), $(l:tfg_ores/deep_magnetite)5%$()$(br)Шеєліт: $(l:tfg_ores/deep_scheelite)45%$()$(br)Шелдоніт: $(l:tfg_ores/deep_sheldonite)25%$()$(br)Срібло: $(l:tfg_ores/normal_silver)15%$()$(br)Соапстоун: $(l:tfg_ores/normal_lubricant)30%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Содаліт: $(l:tfg_ores/normal_lapis)25%$()$(br)Спесартін: $(l:tfg_ores/normal_manganese)20%$()$(br)Сфалерит: $(l:tfg_ores/normal_sphalerite)40%$(), $(l:tfg_ores/surface_sphalerite)40%$(), $(l:tfg_ores/normal_sulfur)15%$()$(br)Сподумен: $(l:tfg_ores/normal_spodumene)35%$()$(br)Стибніт: $(l:tfg_ores/normal_tetrahedrite)20%$(), $(l:tfg_ores/surface_tetrahedrite)20%$()$(br)Сірка: $(l:tfg_ores/surface_sphalerite)55%$(), $(l:tfg_ores/normal_sulfur)50%$(), $(l:tfg_ores/normal_sphalerite)35%$(), $(l:tfg_ores/normal_bismuth)9%$(), $(l:tfg_ores/surface_bismuth)3%$()$(br)Тальк: $(l:tfg_ores/normal_lubricant)20%$()$(br)Танталіт: $(l:tfg_ores/normal_manganese)10%$()$(br)Тетраедр: $(l:tfg_ores/surface_tetrahedrite)60%$(), $(l:tfg_ores/normal_tetrahedrite)50%$()$(br)Торій: $(l:tfg_ores/normal_beryllium)15%$()$(br)Олово: $(l:tfg_ores/normal_cassiterite)60%$(), $(l:tfg_ores/surface_cassiterite)40%$()$(br)Топаз: $(l:tfg_ores/deep_topaz)25%$()$(br)Трикальційфосфат: $(l:tfg_ores/normal_apatite)35%$()$(br)Трона.: $(l:tfg_ores/normal_lubricant)10%$()$(br)Вольфрам: $(l:tfg_ores/deep_scheelite)35%$()$(br)Уранініт: $(l:tfg_ores/deep_pitchblende)50%$()$(br)Ванадієвий магнетит: $(l:tfg_ores/normal_magnetite)25%$(), $(l:tfg_ores/deep_magnetite)15%$()"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Вульфеніт: $(l:tfg_ores/deep_molybdenum)40%$()$(br)Жовтий гранат: $(l:tfg_ores/deep_garnet_amethyst)5%$(), $(l:tfg_ores/deep_garnet_opal)5%$()$(br)Жовтий лімоніт: $(l:tfg_ores/normal_limonite)50%$(), $(l:tfg_ores/normal_hematite)30%$(), $(l:tfg_ores/normal_gold)20%$(), $(l:tfg_ores/deep_limonite)15%$(), $(l:tfg_ores/deep_hematite)15%$(), $(l:tfg_ores/deep_gold)5%$()$(br)Цеоліт: $(l:tfg_ores/surface_copper)15%$()"
+		}
+	]
+}
+
