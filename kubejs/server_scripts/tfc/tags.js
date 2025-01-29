@@ -589,58 +589,61 @@ const registerTFCBiomeTags = (event) => {
 }
 
 const registerTFCPlacedFeatures = (event) => {
-    
-    //#region Удаляем все руды TFC из генерации мира
-
     // Добавление
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_amethyst')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_garnet_opal')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_gold')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_hematite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_limonite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_magnetite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_molybdenum')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_naquadah')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_pitchblende')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_sapphire')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_scheelite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_sheldonite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/deep_topaz')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_apatite_')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_basaltic_sands')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_bauxite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_beryllium')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_bismuthinite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_cassiterite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_certus_quartz')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_coal')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_copper')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_garnet_tin')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_garnierite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_gold')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_graphite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_hematite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_spodumene')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_oilsands')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_lapis')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_limonite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_lubricant')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_magnetite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_manganese')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_mica')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_monazite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_olivine')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_redstone')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_salt')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_saltpeter')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_silver')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sphalerite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_sulfur')
-    event.add('tfc:in_biome/veins', 'tfg:vein/normal_tetrahedrite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_bismuthinite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_cassiterite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_copper')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_sphalerite')
-    event.add('tfc:in_biome/veins', 'tfg:vein/surface_tetrahedrite')
-    event.add('tfc:in_biome/veins', 'tfg:geode')
+    const TFG_VEINS = [
+        'tfg:vein/deep_garnet_amethyst',
+        'tfg:vein/deep_garnet_opal',
+        'tfg:vein/deep_gold',
+        'tfg:vein/deep_hematite',
+        'tfg:vein/deep_limonite',
+        'tfg:vein/deep_magnetite',
+        'tfg:vein/deep_molybdenum',
+        'tfg:vein/deep_naquadah',
+        'tfg:vein/deep_pitchblende',
+        'tfg:vein/deep_sapphire',
+        'tfg:vein/deep_scheelite',
+        'tfg:vein/deep_sheldonite',
+        'tfg:vein/deep_topaz',
+        'tfg:vein/normal_apatite_',
+        'tfg:vein/normal_basaltic_sands',
+        'tfg:vein/normal_bauxite',
+        'tfg:vein/normal_beryllium',
+        'tfg:vein/normal_bismuthinite',
+        'tfg:vein/normal_cassiterite',
+        'tfg:vein/normal_certus_quartz',
+        'tfg:vein/normal_coal',
+        'tfg:vein/normal_copper',
+        'tfg:vein/normal_garnet_tin',
+        'tfg:vein/normal_garnierite',
+        'tfg:vein/normal_gold',
+        'tfg:vein/normal_graphite',
+        'tfg:vein/normal_hematite',
+        'tfg:vein/normal_spodumene',
+        'tfg:vein/normal_oilsands',
+        'tfg:vein/normal_lapis',
+        'tfg:vein/normal_limonite',
+        'tfg:vein/normal_lubricant',
+        'tfg:vein/normal_magnetite',
+        'tfg:vein/normal_manganese',
+        'tfg:vein/normal_mica',
+        'tfg:vein/normal_monazite',
+        'tfg:vein/normal_olivine',
+        'tfg:vein/normal_redstone',
+        'tfg:vein/normal_salt',
+        'tfg:vein/normal_saltpeter',
+        'tfg:vein/normal_silver',
+        'tfg:vein/normal_sphalerite',
+        'tfg:vein/normal_sulfur',
+        'tfg:vein/normal_tetrahedrite',
+        'tfg:vein/surface_bismuthinite',
+        'tfg:vein/surface_cassiterite',
+        'tfg:vein/surface_copper',
+        'tfg:vein/surface_sphalerite',
+        'tfg:vein/surface_tetrahedrite',
+        'tfg:geode'
+    ];
+
+    TFG_VEINS.forEach(vein => {
+        event.add('tfc:in_biome/veins', vein);
+    });
 }

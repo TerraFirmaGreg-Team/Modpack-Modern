@@ -1,0 +1,70 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 135,
+    "density": 0.25,
+    "min_y": 60,
+    "max_y": 210,
+    "size": 50,
+    "random_name": "surface_cassiterite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_cassiterite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:granite_tin_ore",
+            "weight": 40
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_cassiterite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:diorite_tin_ore",
+            "weight": 40
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_cassiterite_ore",
+            "weight": 60
+          },
+          {
+            "block": "gtceu:gabbro_tin_ore",
+            "weight": 40
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 60,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_cassiterite",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}
