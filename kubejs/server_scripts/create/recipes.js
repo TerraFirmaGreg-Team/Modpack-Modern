@@ -1344,4 +1344,91 @@ const registerCreateRecipes = (event) => {
     })
 	
 	// #endregion
+
+
+    //#region Decoration blocks
+
+    event.smelting('1x create:cut_diorite', '1x tfc:rock/raw/diorite')
+        .id('tfg:smelting/cut_diorite')
+    event.smelting('1x create:cut_granite', '1x gtceu:red_granite')
+        .id('tfg:smelting/red_granite')
+    event.smelting('1x create:cut_andesite', '1x tfc:rock/raw/andesite')
+        .id('tfg:smelting/cut_andesite')
+    event.smelting('1x create:cut_limestone', '1x tfc:rock/raw/limestone')
+        .id('tfg:smelting/cut_limestone')
+    event.smelting('1x create:cut_deepslate', '1x tfg:raw_dunite')
+        .id('tfg:smelting/cut_deepslate')
+    event.smelting('1x create:cut_asurine', '1x create:asurine')
+        .id('tfg:smelting/asurine')
+
+    const DECO_BLOCKS = [
+        // tfc rocks
+        "diorite", "granite", "andesite", "limestone",
+        // not tfc but realistic
+        "tuff", "deepslate", "dripstone", "calcite",
+        // made up
+        "veridium", "scorchia", "scoria", "ochrum", "crimsite", "asurine",
+    ]
+
+    DECO_BLOCKS.forEach(block => {
+
+        event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:polished_cut_${block}`,
+            [
+                'AB'
+            ], {
+                A: `create:cut_${block}`,
+                B: '#tfc:chisels'
+            }))
+
+        event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:cut_${block}_bricks`,
+            [
+                'A',
+                'B'
+            ], {
+                A: `create:cut_${block}`,
+                B: '#tfc:chisels'
+            }))
+
+        event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:small_${block}_bricks`,
+            [
+                'A ',
+                ' B'
+            ], {
+                A: `create:cut_${block}`,
+                B: '#tfc:chisels'
+            }))
+
+        generateCutterRecipe(event, `create:cut_${block}`, 0, [`create:cut_${block}_stairs`], 100, 8, `cut_${block}_to_stairs`)
+        generateCutterRecipe(event, `create:cut_${block}`, 1, [`2x create:cut_${block}_slab`], 100, 8, `cut_${block}_to_slab`)
+        generateCutterRecipe(event, `create:cut_${block}`, 2, [`create:cut_${block}_wall`], 100, 8, `cut_${block}_to_wall`)
+
+        generateCutterRecipe(event, `create:polished_cut_${block}`, 0, [`create:polished_cut_${block}_stairs`], 100, 8, `polished_cut_${block}_to_stairs`)
+        generateCutterRecipe(event, `create:polished_cut_${block}`, 1, [`2x create:polished_cut_${block}_slab`], 100, 8, `polished_cut_${block}_to_slab`)
+        generateCutterRecipe(event, `create:polished_cut_${block}`, 2, [`create:polished_cut_${block}_wall`], 100, 8, `polished_cut_${block}_to_wall`)
+
+        generateCutterRecipe(event, `create:cut_${block}_bricks`, 0, [`create:cut_${block}_brick_stairs`], 100, 8, `cut_${block}_bricks_to_stairs`)
+        generateCutterRecipe(event, `create:cut_${block}_bricks`, 1, [`2x create:cut_${block}_brick_slab`], 100, 8, `cut_${block}_bricks_to_slab`)
+        generateCutterRecipe(event, `create:cut_${block}_bricks`, 2, [`create:cut_${block}_brick_wall`], 100, 8, `cut_${block}_bricks_to_wall`)
+
+        generateCutterRecipe(event, `create:small_${block}_bricks`, 0, [`create:small_${block}_brick_stairs`], 100, 8, `small_${block}_bricks_to_stairs`)
+        generateCutterRecipe(event, `create:small_${block}_bricks`, 1, [`2x create:small_${block}_brick_slab`], 100, 8, `small_${block}_bricks_to_slab`)
+        generateCutterRecipe(event, `create:small_${block}_bricks`, 2, [`create:small_${block}_brick_wall`], 100, 8, `small_${block}_bricks_to_wall`)
+
+        event.shaped(Item.of(`create:layered_${block}`, 2),
+            [
+                'AA'
+            ], {
+                A: `create:cut_${block}`
+            })
+
+        event.shaped(Item.of(`create:${block}_pillar`, 2),
+            [
+                'A',
+                'A'
+            ], {
+                A: `create:cut_${block}`
+            })
+    })
+
+    //#endregion
 }

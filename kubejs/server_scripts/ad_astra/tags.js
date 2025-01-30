@@ -17,7 +17,7 @@ const registerAdAstraFluidTags = (event) => {
 
 const registerAdAstraItemTags = (event) => {
 
-
+	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 }
 
 const registerAdAstraBlockTags = (event) => {
