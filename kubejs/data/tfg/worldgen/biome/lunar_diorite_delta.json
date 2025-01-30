@@ -40,9 +40,17 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
-		"minecraft:enderman": {
+		"ad_astra:star_crawler": {
+			"charge": 0.7,
+			"energy_budget": 0.3
+		},
+		"minecraft:corrupted_lunarian": {
 			"charge": 0.7,
 			"energy_budget": 0.15
+		},
+		"minecraft:enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.3
 		}
 	},
 	"spawners": {
