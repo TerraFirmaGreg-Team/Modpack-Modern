@@ -6,10 +6,10 @@ TFCEvents.registerClimateModel(event => {
 		// will be inside a nice comfy space suit the whole time
 
 		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return 15
+			return 10
 		})
 		model.setAverageTemperatureCalculation((level, pos) => {
-			return 15
+			return -77
 		})
 		model.setAverageRainfallCalculation((level, pos) => {
 			return 0
