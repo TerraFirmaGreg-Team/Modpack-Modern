@@ -20,6 +20,7 @@ const registerGTCEuMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'olivine', 'magnetite')
 
+	// TODO: add smelting recipe for this
 	event.create('fayalite')
 		.gem(2)
 		.components('2x iron', '1x silicon', '4x oxygen')
@@ -39,6 +40,8 @@ const registerGTCEuMaterials = (event) => {
 		.secondaryColor(0xa90936)
 		.iconSet(GTMaterialIconSet.METALLIC)
 		.ore()
+
+	// TODO: still need to balance these
 
 	// mars
 	event.create('ostrum')

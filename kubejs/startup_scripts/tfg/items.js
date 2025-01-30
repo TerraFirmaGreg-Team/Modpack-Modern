@@ -8,4 +8,7 @@ const registerTFGItems = (event) =>
 
     event.create('tfg:soaked_unrefined_paper')
         .translationKey('item.tfg.soaked_unrefined_paper')
+
+    event.create('tfg:anorthite_brick')
+        .translationKey('item.tfg.anorthite_brick')
 }

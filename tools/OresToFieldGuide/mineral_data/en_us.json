@@ -105,6 +105,12 @@
 			"formula": "CaCO₃"
 		},
 		{
+			"id": "calorite",
+			"use": "Source of",
+			"for": "TODO",
+			"formula": "TODO"
+		},
+		{
 			"id": "cassiterite",
 			"use": "Melts into",
 			"for": "Tin",
@@ -174,6 +180,12 @@
 			"formula": "Cu"
 		},
 		{
+			"id": "desh",
+			"use": "Source of",
+			"for": "Iron, Titanium, Nitrogen",
+			"formula": "(Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄"
+		},
+		{
 			"id": "diamond",
 			"use": "Used for",
 			"for": "Macerators, AE2",
@@ -186,6 +198,12 @@
 			"formula": "(SiO₂)₈(Fe₂O₃)(Al₂O₃)"
 		},
 		{
+			"id": "diopside",
+			"use": "Source of",
+			"for": "Magnesium, Calcium",
+			"formula": "MgCaSi₂O₅"
+		},
+		{
 			"id": "electrotine",
 			"use": "Source of",
 			"for": "Gold, Silver, Redstone",
@@ -196,6 +214,24 @@
 			"use": "Used for",
 			"for": "MV components, Item tag filters",
 			"formula": "Be₃Al₂Si₆O₁₈"
+		},
+		{
+			"id": "enstatite",
+			"use": "Source of",
+			"for": "Magnesium",
+			"formula": "MgSiO₃"
+		},
+		{
+			"id": "etrium",
+			"use": "Source of",
+			"for": "TODO",
+			"formula": "TODO"
+		},
+		{
+			"id": "fayalite",
+			"use": "Smelts into",
+			"for": "Iron",
+			"formula": "Fe₂SiO₄"
 		},
 		{
 			"id": "fullers_earth",
@@ -410,6 +446,12 @@
 		{
 			"id": "opal",
 			"formula": "(SiO₂)"
+		},
+		{
+			"id": "ostrum",
+			"use": "Source of",
+			"for": "TODO",
+			"formula": "TODO"
 		},
 		{
 			"id": "palladium",

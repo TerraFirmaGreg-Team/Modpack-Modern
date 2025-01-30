@@ -46,6 +46,10 @@ const registerTFGBlocks = (event) => {
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
 		.fullBlock(true)
+
+	event.create('tfg:loose_anorthite', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose_anorthite')
+		.rockTypeModel('igneous_extrusive')
 	
 	
 	// gem indicators
