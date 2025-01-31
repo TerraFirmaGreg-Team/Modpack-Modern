@@ -1,92 +1,44 @@
 ﻿{
-	"keywords": {
-		"Rarity": "Редкость",
-		"Density": "Плотность",
-		"Type": "Вид",
-		"Y": "Y-уровень",
-		"Size": "Размер",
-		"Height": "Высота",
-		"Radius": "Радиус",
-		"Stone types": "Виды камней",
-		"Indicator": "Индикатор",
-		"Percentage": "Процент руды",
-		"Source of": "Хромит",
-		"Melts into": "Плавится в",
-		"Smelts into": "Плавится в",
-		"Used for": "Используется для",
-		"Formula": "Формула",
-		"Hazardous": "Ядовит",
-		"Yes": "Да"
-	},
-	"veins": {
-		"cluster": "кластерная жила",
-		"pipe": "трубчатая жила",
-		"disc": "дискообразная жила"
-	},
-	"rocks": {
-		"quartzite": "Кварцит",
-		"slate": "Шиферный сланец",
-		"phyllite": "Филлит",
-		"schist": "Аспидный сланец",
-		"gneiss": "Гнейс",
-		"marble": "Мрамор",
-		"shale": "Сланец",
-		"claystone": "Аргиллит",
-		"limestone": "Известняк",
-		"conglomerate": "Конгломерат",
-		"dolomite": "Доломит",
-		"chert": "Кремнистый сланец",
-		"chalk": "Мел",
-		"gabbro": "Габбро",
-		"rhyolite": "Риолит",
-		"basalt": "Базальт",
-		"andesite": "Андезит",
-		"dacite": "Дацит",
-		"granite": "Гранит",
-		"diorite": "Диорит",
-		"anorthite": "Анортит",
-		"dunite": "Дунит"
-	},
 	"minerals": [
 		{
 			"id": "almandine",
 			"name": "Альмандин",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Железо" ],
 			"formula": "Al₂Fe₃Si₃O₁₂"
 		},
 		{
 			"id": "aluminium",
 			"name": "Алюминий",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий" ],
 			"formula": "Al"
 		},
 		{
 			"id": "alunite",
 			"name": "Алунит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Калий", "Алюминий" ],
 			"formula": "KAl₃Si₂H₆O₁₄"
 		},
 		{
 			"id": "amethyst",
 			"name": "Аметист",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Железо" ],
 			"formula": "(SiO₂)₄Fe"
 		},
 		{
 			"id": "apatite",
 			"name": "Апатит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Кальций", "Фосфор" ],
 			"formula": "Ca₅(PO₄)₃Cl"
 		},
 		{
 			"id": "asbestos",
 			"name": "Асбест",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний" ],
 			"formula": "Mg₃Si₂H₄O₉",
 			"hazardous": true
@@ -94,42 +46,42 @@
 		{
 			"id": "barite",
 			"name": "Барит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Барий" ],
 			"formula": "BaSO₂"
 		},
 		{
 			"id": "basaltic_mineral_sand",
 			"name": "Базальтовый минеральный песок",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "(Fe₃O₄)((Mg₂Fe(SiO₂)₂)(CaCo₃)₃(SiO₂)₈C₄)"
 		},
 		{
 			"id": "bastnasite",
 			"name": "Бастнезит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Церий", "Фтор" ],
 			"formula": "CeCFO₃"
 		},
 		{
 			"id": "bauxite",
 			"name": "Боксит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий" ],
 			"formula": "Al₂O₃"
 		},
 		{
 			"id": "bentonite",
 			"name": "Бентонит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Натрий", "Магний" ],
 			"formula": "NaMg₆Si₁₂H₄(H₂O)₅O₃₆"
 		},
 		{
 			"id": "beryllium",
 			"name": "Бериллий",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "Эндер-жемчуг" ],
 			"formula": "Be",
 			"hazardous": true
@@ -137,90 +89,90 @@
 		{
 			"id": "bismuth",
 			"name": "Висмут",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Висмут" ],
 			"formula": "Bi"
 		},
 		{
 			"id": "blue_topaz",
 			"name": "Синий топаз",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Фтор" ],
 			"formula": "Al₂SiF₂H₂O₆"
 		},
 		{
 			"id": "borax",
 			"name": "Бура",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Натрий", "Бор" ],
 			"formula": "Na₂B₄(H₂O)₁₀O₇"
 		},
 		{
 			"id": "bornite",
 			"name": "Борнит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Медь", "Железо" ],
 			"formula": "Cu₅FeS₄"
 		},
 		{
 			"id": "calcite",
 			"name": "Кальцит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Кальций" ],
 			"formula": "CaCO₃"
 		},
 		{
 			"id": "calorite",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [],
 			"formula": "TODO"
 		},
 		{
 			"id": "cassiterite",
 			"name": "Касситерит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Олово" ],
 			"formula": "SnO₂"
 		},
 		{
 			"id": "cassiterite_sand",
 			"name": "Касситеритовый песок",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Олово" ],
 			"formula": "SnO₂"
 		},
 		{
 			"id": "certus_quartz",
 			"name": "Истинный кварц",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "рецепты Applied Energistics 2" ],
 			"formula": "SiO₂"
 		},
 		{
 			"id": "chalcocite",
 			"name": "Халькозин",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Медь" ],
 			"formula": "Cu₂S"
 		},
 		{
 			"id": "chalcopyrite",
 			"name": "Халькопирит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Медь" ],
 			"formula": "CuFeS₂"
 		},
 		{
 			"id": "chromite",
 			"name": "Хромит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Хром" ],
 			"formula": "FeCr₂O₄"
 		},
 		{
 			"id": "cinnabar",
 			"name": "Киноварь",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Ртуть" ],
 			"formula": "HgS",
 			"hazardous": true
@@ -228,21 +180,21 @@
 		{
 			"id": "coal",
 			"name": "Уголь",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "топливо", "ректификация" ],
 			"formula": "C"
 		},
 		{
 			"id": "cobalt",
 			"name": "Кобальт",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Кобальт" ],
 			"formula": "Co"
 		},
 		{
 			"id": "cobaltite",
 			"name": "Кобальтит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Кобальт", "Мышьяк" ],
 			"formula": "CoAsS",
 			"hazardous": true
@@ -250,79 +202,79 @@
 		{
 			"id": "copper",
 			"name": "Самородная Медь",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Медь" ],
 			"formula": "Cu"
 		},
 		{
 			"id": "desh",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Железо", "Титан", "Азот" ],
 			"formula": "(Mg₂Fe(SiO₂)₂)₂(TiO₂)N₄"
 		},
 		{
 			"id": "diamond",
 			"name": "Алмаз",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "Измельчители", "предметы из AE2" ],
 			"formula": "C"
 		},
 		{
 			"id": "diatomite",
 			"name": "Диатомовый пелит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Железо", "Алюминий" ],
 			"formula": "(SiO₂)₈(Fe₂O₃)(Al₂O₃)"
 		},
 		{
 			"id": "diopside",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний", "Кальций" ],
 			"formula": "MgCaSi₂O₅"
 		},
 		{
 			"id": "electrotine",
 			"name": "Электротин",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Золото", "Серебро", "Редстоун" ],
 			"formula": "(Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
 		},
 		{
 			"id": "emerald",
 			"name": "Изумруд",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "компоненты уровня MV", "Предметные фильтры (Тэг)" ],
 			"formula": "Be₃Al₂Si₆O₁₈"
 		},
 		{
 			"id": "enstatite",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний" ],
 			"formula": "MgSiO₃"
 		},
 		{
 			"id": "etrium",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [],
 			"formula": "TODO"
 		},
 		{
 			"id": "fayalite",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "Fe₂SiO₄"
 		},
 		{
 			"id": "fullers_earth",
 			"name": "Смектическая глина",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний" ],
 			"formula": "MgSi₄H(H₂O)₄O₁₁"
 		},
 		{
 			"id": "galena",
 			"name": "Галена",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Свинец" ],
 			"formula": "PbS",
 			"hazardous": true
@@ -330,123 +282,123 @@
 		{
 			"id": "garnet_sand",
 			"name": "Гранатовый песок",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Альмандин", "Андрадит", "Гроссуляр", "Пироп", "Спасерит", "Уваровит" ]
 		},
 		{
 			"id": "garnierite",
 			"name": "Гарниерит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Никель" ],
 			"formula": "NiO"
 		},
 		{
 			"id": "glauconite_sand",
 			"name": "Глауконитовый песок",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний", "Алюминий" ],
 			"formula": "KMg₂Al₄H₂O₁₂"
 		},
 		{
 			"id": "goethite",
 			"name": "Гётит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "FeHO₂"
 		},
 		{
 			"id": "gold",
 			"name": "Самородная Золото",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Золото" ],
 			"formula": "Au"
 		},
 		{
 			"id": "granitic_mineral_sand",
 			"name": "Гранитовый минеральный песок",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "(Fe₃O₄)((SiO₂)₄(KMg₃Al₃F₂Si₃O₁₀))"
 		},
 		{
 			"id": "graphite",
 			"name": "Графит",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "$(l:mechanics/fire_clay)Огнеупорная глина$()", "Графен" ],
 			"formula": "C"
 		},
 		{
 			"id": "green_sapphire",
 			"name": "Зелёный сапфир",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий" ],
 			"formula": "Al₂O₃"
 		},
 		{
 			"id": "grossular",
 			"name": "Гроссуляр",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Кальций", "Алюминий" ],
 			"formula": "Ca₃Al₂Si₃O₁₂"
 		},
 		{
 			"id": "gypsum",
 			"name": "Гипс",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "Алебастр (можно покрасить) и его кирпичи" ],
 			"formula": "CaS(H₂O)₂O₄"
 		},
 		{
 			"id": "hematite",
 			"name": "Гематит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "Fe₂O₃"
 		},
 		{
 			"id": "ilmenite",
 			"name": "Ильменит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Железо", "Титан" ],
 			"formula": "FeTiO₃"
 		},
 		{
 			"id": "iron",
 			"name": "Железо",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "Fe"
 		},
 		{
 			"id": "kaolinite",
 			"name": "Каолинит",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "$(l:mechanics/fire_clay)Огнеупорная глина$()" ]
 		},
 		{
 			"id": "kyanite",
 			"name": "Ционит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий" ],
 			"formula": "Al₂SiO₅"
 		},
 		{
 			"id": "lapis",
 			"name": "Лазурит 2",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Лазурит", "Содалит", "Пирит", "Кальцит" ]
 		},
 		{
 			"id": "lazurite",
 			"name": "Лазурит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Кальций", "Натрий" ],
 			"formula": "Al₆Si₆Ca₈Na₈"
 		},
 		{
 			"id": "lead",
 			"name": "Свинец",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Свинец" ],
 			"formula": "Pb",
 			"hazardous": true
@@ -454,104 +406,104 @@
 		{
 			"id": "lepidolite",
 			"name": "Лепидолит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Калий", "Литий", "Алюминий", "Фтор" ],
 			"formula": "KLi₃Al₄F₂O₁₀"
 		},
 		{
 			"id": "lithium",
 			"name": "Литий",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Литий" ],
 			"formula": "Li"
 		},
 		{
 			"id": "magnesite",
 			"name": "Магнезит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний" ],
 			"formula": "MgCO₃"
 		},
 		{
 			"id": "magnetite",
 			"name": "Магнетит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "Fe₃O₄"
 		},
 		{
 			"id": "malachite",
 			"name": "Малахит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Медь" ],
 			"formula": "Cu₂CH₂O₅"
 		},
 		{
 			"id": "mica",
 			"name": "Слюда",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Калий", "Алюминий", "Фтор" ],
 			"formula": "KAl₃Si₃F₂O₁₀"
 		},
 		{
 			"id": "molybdenite",
 			"name": "Молибденит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Молибден" ],
 			"formula": "MoS₂"
 		},
 		{
 			"id": "molybdenum",
 			"name": "Молибден",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Молибден" ],
 			"formula": "Mo"
 		},
 		{
 			"id": "monazite",
 			"name": "Монацит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Фосфор", "Редкая земля" ],
 			"formula": "?(PO₄)"
 		},
 		{
 			"id": "naquadah",
 			"name": "Наквада",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Наквада", "Тританий" ],
 			"formula": "Nq"
 		},
 		{
 			"id": "neodymium",
 			"name": "Неодим",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Неодим" ],
 			"formula": "Nd"
 		},
 		{
 			"id": "nether_quartz",
 			"name": "Незер-кварц",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "рецепты Applied Energistics 2" ],
 			"formula": "SiO₂"
 		},
 		{
 			"id": "nickel",
 			"name": "Никель",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Никель" ],
 			"formula": "Ni"
 		},
 		{
 			"id": "oilsands",
 			"name": "Нефтеносный песок",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "топливо" ]
 		},
 		{
 			"id": "olivine",
 			"name": "Оливин",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний", "Железо" ],
 			"formula": "Mg₂Fe(SiO₂)₂"
 		},
@@ -559,33 +511,33 @@
 			"id": "opal",
 			"name": "Опал",
 			"formula": "(SiO₂)",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Кремний", "Кислород" ]
 		},
 		{
 			"id": "ostrum",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [],
 			"formula": "TODO"
 		},
 		{
 			"id": "palladium",
 			"name": "Палладий",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Палладий" ],
 			"formula": "Pd"
 		},
 		{
 			"id": "pentlandite",
 			"name": "Пентландит",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Никель" ],
 			"formula": "Ni₉S₈"
 		},
 		{
 			"id": "pitchblende",
 			"name": "Уранит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Уран", "Торий", "Свинец" ],
 			"formula": "(UO₂)₃ThPb",
 			"hazardous": true
@@ -593,14 +545,14 @@
 		{
 			"id": "platinum",
 			"name": "Платина",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Платина" ],
 			"formula": "Pt"
 		},
 		{
 			"id": "plutonium",
 			"name": "Плутоний",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Плутоний" ],
 			"formula": "Pu²³⁹",
 			"hazardous": true
@@ -608,56 +560,56 @@
 		{
 			"id": "pollucite",
 			"name": "Поллуцит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Цезий", "Алюминий" ],
 			"formula": "Cs₂Al₂Si₄(H₂O)₂O₁₂"
 		},
 		{
 			"id": "powellite",
 			"name": "Повеллит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Молибден" ],
 			"formula": "CaMoO₄"
 		},
 		{
 			"id": "pyrite",
 			"name": "Пирит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "FeS₂"
 		},
 		{
 			"id": "pyrochlore",
 			"name": "Пирохлор",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Ниобий" ],
 			"formula": "Ca₂Nb₂O₇"
 		},
 		{
 			"id": "pyrolusite",
 			"name": "Пиролюзит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Марганец" ],
 			"formula": "MnO₂"
 		},
 		{
 			"id": "pyrope",
 			"name": "Пироп",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Магний" ],
 			"formula": "Al₂Mg₃Si₃O₁₂"
 		},
 		{
 			"id": "quartzite",
 			"name": "Кварцит",
-			"use": "Used for",
+			"use": "Используется для",
 			"for": [ "компоненты уровня LV" ],
 			"formula": "SiO₂"
 		},
 		{
 			"id": "realgar",
 			"name": "Реальгар",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Мышьяк" ],
 			"formula": "As₄S₄",
 			"hazardous": true
@@ -665,188 +617,188 @@
 		{
 			"id": "red_garnet",
 			"name": "Красный гранат",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Пироп", "Альмандин", "Спасерит" ]
 		},
 		{
 			"id": "redstone",
 			"name": "Редстоун",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Редстоун" ],
 			"formula": "Si(FeS₂)₅(CrAl₂O₃)Hg₃"
 		},
 		{
 			"id": "rock_salt",
 			"name": "Каменная соль",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Калий", "Хлор" ],
 			"formula": "KCl"
 		},
 		{
 			"id": "ruby",
 			"name": "Рубин",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Хром", "Алюминий" ],
 			"formula": "CrAl₂O₃"
 		},
 		{
 			"id": "salt",
 			"name": "Соль",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Натрий", "Хлор" ],
 			"formula": "NaCl"
 		},
 		{
 			"id": "saltpeter",
 			"name": "Селитра",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Калий", "Азот" ],
 			"formula": "KNO₃"
 		},
 		{
 			"id": "sapphire",
 			"name": "Сапфир",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий" ],
 			"formula": "Al₂O₃"
 		},
 		{
 			"id": "scheelite",
 			"name": "Шеелит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Вольфрам" ],
 			"formula": "Ca(WO₃)O"
 		},
 		{
 			"id": "cooperite",
 			"name": "Шелдонит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Платина", "Никель", "Палладий" ],
 			"formula": "Pt₃NiSPd"
 		},
 		{
 			"id": "silver",
 			"name": "Самородная Серебро",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Серебро" ],
 			"formula": "Ag"
 		},
 		{
 			"id": "soapstone",
 			"name": "Мыльный камень",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний" ],
 			"formula": "Mg₃Si₄H₂O₁₂"
 		},
 		{
 			"id": "sodalite",
 			"name": "Содалит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Натрий" ],
 			"formula": "Al₃Si₃Na₄Cl"
 		},
 		{
 			"id": "spessartine",
 			"name": "Спасерит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Марганец", "Алюминий" ],
 			"formula": "Al₂Mn₃Si₃O₁₂"
 		},
 		{
 			"id": "sphalerite",
 			"name": "Сфалерит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Цинк" ],
 			"formula": "ZnS"
 		},
 		{
 			"id": "spodumene",
 			"name": "Сподумен",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Литий", "Алюминий" ],
 			"formula": "LiAlSi₂O₆"
 		},
 		{
 			"id": "stibnite",
 			"name": "Стибнит",
-			"use": "Smelts into",
+			"use": "Плавится в",
 			"for": [ "Сурьма" ],
 			"formula": "Sb₂S₃"
 		},
 		{
 			"id": "sulfur",
 			"name": "Сера",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Сера" ],
 			"formula": "S"
 		},
 		{
 			"id": "talc",
 			"name": "Тальк",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Магний" ],
 			"formula": "Mg₃Si₄H₂O₁₂"
 		},
 		{
 			"id": "tantalite",
 			"name": "Танталит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Марганец", "Тантал" ],
 			"formula": "MnTa₂O₆"
 		},
 		{
 			"id": "tetrahedrite",
 			"name": "Тетраэдрит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Медь" ],
 			"formula": "Cu₃SbS₃Fe"
 		},
 		{
 			"id": "thorium",
 			"name": "Торий",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Торий" ],
 			"formula": "Th"
 		},
 		{
 			"id": "tin",
 			"name": "Олово",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Олово" ],
 			"formula": "Sn"
 		},
 		{
 			"id": "topaz",
 			"name": "Топаз",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Фтор" ],
 			"formula": "Al₂SiFH₂"
 		},
 		{
 			"id": "tricalcium_phosphate",
 			"name": "Трикальцийфосфат",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Кальций", "Фосфор" ],
 			"formula": "Ca₃(PO₄)₂"
 		},
 		{
 			"id": "trona",
 			"name": "Трона",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Натрий" ],
 			"formula": "Na₃C₂H(H₂O)₂O₆"
 		},
 		{
 			"id": "tungstate",
 			"name": "Вольфрамат",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Вольфрам", "Литий" ],
 			"formula": "Li₂(WO₃)O"
 		},
 		{
 			"id": "uraninite",
 			"name": "Уранинит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Уран" ],
 			"formula": "UO₂",
 			"hazardous": true
@@ -854,14 +806,14 @@
 		{
 			"id": "vanadium_magnetite",
 			"name": "Ванадий магнетит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Железо", "Ванадий" ],
 			"formula": "(Fe₃O₄)V"
 		},
 		{
 			"id": "wulfenite",
 			"name": "Вульфенит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Свинец", "Молибден" ],
 			"formula": "PbMoO₄",
 			"hazardous": true
@@ -869,20 +821,20 @@
 		{
 			"id": "yellow_garnet",
 			"name": "Жёлтый гранат",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Андрадит", "Гроссуляр", "Уваровит" ]
 		},
 		{
 			"id": "yellow_limonite",
 			"name": "Жёлтый лимонит",
-			"use": "Melts into",
+			"use": "Плавится в",
 			"for": [ "Железо" ],
 			"formula": "FeHO₂"
 		},
 		{
 			"id": "zeolite",
 			"name": "Цеолит",
-			"use": "Source of",
+			"use": "Хромит",
 			"for": [ "Алюминий", "Кислород" ],
 			"formula": "NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
 		}
