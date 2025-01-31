@@ -42,9 +42,21 @@
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
+		"ad_astra:star_crawler": {
+			"charge": 0.5,
+			"energy_budget": 0.015
+		},
+		"minecraft:corrupted_lunarian": {
+			"charge": 0.5,
+			"energy_budget": 0.015
+		},
 		"minecraft:enderman": {
 			"charge": 0.7,
-			"energy_budget": 0.15
+			"energy_budget": 0.015
+		},
+		"minecraft:endermite": {
+			"charge": 0.2,
+			"energy_budget": 0.015
 		}
 	},
 	"spawners": {
@@ -75,7 +87,13 @@
 				"type": "minecraft:endermite",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 20
+				"weight": 10
+			},
+			{
+				"type": "species:limpet",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

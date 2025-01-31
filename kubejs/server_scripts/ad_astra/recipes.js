@@ -2,6 +2,8 @@
 
 const registerAdAstraRecipes = (event) => {
 
+    event.remove({ mod: 'ad_astra' })
+
     //#region Детали Ракеты 1 тира
 
     //#region Ракетный обтекатель

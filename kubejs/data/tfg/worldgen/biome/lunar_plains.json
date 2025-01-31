@@ -29,7 +29,8 @@
 		[
 			"tfc:vein/gabbro_dike",
 			"tfc:vein/diorite_dike",
-			"tfg:moon/surface/moon_rock_pile"
+			"tfg:moon/surface/moon_rock_pile",
+			"tfg:moon/surface/loose_anorthite_rocks"
 		],
 		[],
 		"#tfg:moon_veins",
@@ -39,7 +40,7 @@
 	"spawn_costs": {
 		"minecraft:enderman": {
 			"charge": 0.7,
-			"energy_budget": 0.15
+			"energy_budget": 0.015
 		}
 	},
 	"spawners": {
@@ -48,9 +49,9 @@
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 12
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 80
 			}
 		],
 		"misc": [],
@@ -59,7 +60,13 @@
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
+			},
+			{
+				"type": "species:limpet",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],
