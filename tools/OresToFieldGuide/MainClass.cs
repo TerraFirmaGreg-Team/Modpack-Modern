@@ -12,6 +12,7 @@ namespace OresToFieldGuide
         #region Constants
         public const string PROJECT_NAME = "OresToFieldGuide";
         public const string MINERAL_DATA = "mineral_data";
+        public const string LANGUAGE_TOKENS = "language_tokens";
 
         public const string MINECRAFT = "minecraft";
         public const string TOOLS = "tools";
@@ -39,19 +40,13 @@ namespace OresToFieldGuide
 
             if(!TryGetProgramArguments(out ProgramArguments programArguments))
             {
-                using(new ConsoleForegroundColorScope(ConsoleColor.Red))
-                {
-                    Console.WriteLine("Failed to get Program's Arguments, Press any key to exit...");
-                }
+                ConsoleLogHelper.WriteLine("Failed to get Program's Arguments, Press any key to exit...", LogLevel.Error);
                 Console.ReadKey();
                 return;
             }
 
-            using(new ConsoleForegroundColorScope(ConsoleColor.Cyan))
-            {
-                Console.WriteLine("Arguments have been obtained! printing...");
-                Console.WriteLine(programArguments);
-            }
+            ConsoleLogHelper.WriteLine("Arguments have been obtained! Printing...", LogLevel.Info);
+            ConsoleLogHelper.WriteLine(programArguments.ToString(), LogLevel.Message);
 
             var programInstance = new OresToFieldGuideProgram(programArguments);
             var task = programInstance.Run();
@@ -61,11 +56,15 @@ namespace OresToFieldGuide
 
             var result = task.Result;
 
-            using (new ConsoleForegroundColorScope(result ? ConsoleColor.Green : ConsoleColor.Red))
+            if(result)
             {
-                Console.WriteLine(result ? "Success :D! Press any key to exit..." : "Failure D:! Press any key to exit...");
-                Console.ReadKey();
+                ConsoleLogHelper.WriteLine("Success :D! Press any key to exit...", LogLevel.Info);
             }
+            else
+            {
+                ConsoleLogHelper.WriteLine("Failure D:! Press any key to exit...", LogLevel.Error);
+            }
+            Console.ReadKey();
         }
 
         private static bool TryGetProgramArguments(out ProgramArguments programArguments)
@@ -75,14 +74,12 @@ namespace OresToFieldGuide
             {
                 programArguments.minecraftFolder = GetMinecraftDirectory();
                 programArguments.mineralDataFolder = GetMineralDataFolder(programArguments.minecraftFolder);
+                programArguments.languageTokenFolder = GetLanguageTokenFolder(programArguments.minecraftFolder);
                 programArguments.planetToVeinsPath = GetPlanetNameToVeinPaths(programArguments.minecraftFolder);
             }
             catch(Exception e)
             {
-                using(new ConsoleForegroundColorScope(ConsoleColor.Red))
-                {
-                    Console.WriteLine("An Exception has been Thrown! " + e);
-                }
+                ConsoleLogHelper.WriteLine("An Exception has been Thrown! " + e, LogLevel.Fatal);
                 return false;
             }
             return true;
@@ -117,6 +114,16 @@ namespace OresToFieldGuide
             return mineralDataPath;
         }
 
+        private static string GetLanguageTokenFolder(string dotMinecraftFolder)
+        {
+            string languageTokenPath = Path.Combine(dotMinecraftFolder, TOOLS, PROJECT_NAME, LANGUAGE_TOKENS);
+            if(!Directory.Exists(languageTokenPath))
+            {
+                throw new DirectoryNotFoundException($"The \"{LANGUAGE_TOKENS}\" folder was not found in {languageTokenPath}");
+            }
+            return languageTokenPath;
+        }
+
         private static Dictionary<string, string[]> GetPlanetNameToVeinPaths(string dotMinecraftFolder)
         {
             string configuredFeaturePath = Path.Combine(dotMinecraftFolder, KUBEJS, DATA, TFG, WORLDGEN, CONFIGURED_FEATURE);
@@ -134,12 +141,9 @@ namespace OresToFieldGuide
             foreach(var planetVeinDirectory in directories)
             {
                 var planetName = Directory.GetParent(planetVeinDirectory).Name;
-                if(!Directory.Exists(planetVeinDirectory))
+                if (!Directory.Exists(planetVeinDirectory))
                 {
-                    using (new ConsoleForegroundColorScope(ConsoleColor.Yellow))
-                    {
-                        Console.WriteLine($"Planet \"{planetName}\" has no \"vein\" folder! skipping File Enumeration process.");
-                    }
+                    ConsoleLogHelper.WriteLine($"Planet \"{planetName}\" has no \"vein\" folder! skipping file enumeration process.", LogLevel.Warning);
                     continue;
                 }
                 string[] filesInDirectory = Directory.EnumerateFiles(planetVeinDirectory).ToArray();

@@ -27,6 +27,11 @@ namespace OresToFieldGuide
         public Dictionary<string, string[]> planetToVeinsPath;
 
         /// <summary>
+        /// The path to the Language Token JSON files
+        /// </summary>
+        public string languageTokenFolder;
+
+        /// <summary>
         /// Returns the arguments in a human readable format.
         /// </summary>
         public override string ToString()
@@ -34,7 +39,8 @@ namespace OresToFieldGuide
             StringBuilder stringBuilder = new StringBuilder();
 
             stringBuilder.AppendLine($".minecraft Folder Path: \"{minecraftFolder}\"");
-            stringBuilder.AppendLine($"mineral_data folder path: \"{mineralDataFolder}\"");
+            stringBuilder.AppendLine($"mineral_data Folder Path: \"{mineralDataFolder}\"");
+            stringBuilder.AppendLine($"language_tokens Folder Path: \"{languageTokenFolder}\"");
 
             foreach (var planet in planetToVeinsPath.Keys)
             {

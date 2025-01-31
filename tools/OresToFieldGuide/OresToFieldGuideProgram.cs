@@ -1,4 +1,5 @@
-﻿using OresToFieldGuide.JSONObjects;
+﻿using Newtonsoft.Json;
+using OresToFieldGuide.JSONObjects;
 using OresToFieldGuide.JSONObjects.Patchouli;
 using OresToFieldGuide.JSONObjects.Patchouli.PageTypes;
 using OresToFieldGuide.JSONObjects.Veins;
@@ -12,14 +13,25 @@ namespace OresToFieldGuide
 {
     internal class OresToFieldGuideProgram
     {
+        public static string fallbackLocale => locales[0];
+        public static readonly string[] locales = new string[]
+        {
+            "en_us", //US English
+            "it_it", //Italian
+            "ru_ru", //Russian
+            "uk_ua" //Ukranian
+        };
+
         private ProgramArguments _arguments;
         private Dictionary<string, MineralData> _localToMineralData = new Dictionary<string, MineralData>();
+        private Dictionary<string, LocalizationTokens> _localToTokens = new Dictionary<string, LocalizationTokens>();
         private Dictionary<string, LocalizationOutput> _localToOutputs = new Dictionary<string, LocalizationOutput>();
         private Dictionary<string, Vein[]> _planetToVeins = new Dictionary<string, Vein[]>();
         public async Task<bool> Run()
         {
             Console.WriteLine("Ores to Field Guide Program has Started!");
-            await DetermineLocalizations();
+            await DeserializeLanguageTokens();
+            await DeserializeMineralDatas();
             await DeserializeVeins();
             await CreateOutputDirectories();
             
@@ -36,10 +48,31 @@ namespace OresToFieldGuide
             return true;
         }
 
-        /// <summary>
-        /// Determines which localizations we're working with
-        /// </summary>
-        private async Task DetermineLocalizations()
+        private async Task DeserializeLanguageTokens()
+        {
+            var en_usTokenPath = Path.Combine(_arguments.languageTokenFolder, $"{fallbackLocale}.json");
+            LocalizationTokens en_usTokens = await LocalizationTokens.FromJSON(en_usTokenPath);
+
+            _localToTokens.Add(fallbackLocale, en_usTokens);
+            foreach (var locale in locales)
+            {
+                if (_localToTokens.ContainsKey(locale))
+                    continue;
+
+                var localeTokenPath = Path.Combine(_arguments.languageTokenFolder, $"{locale}.json");
+                if (!File.Exists(localeTokenPath))
+                {
+                    ConsoleLogHelper.WriteLine($"Could not file localization tokens for locale {locale}! Assigning {fallbackLocale}'s Localization Tokens.", LogLevel.Warning);
+                    _localToTokens.Add(locale, en_usTokens);
+                    continue;
+                }
+
+                LocalizationTokens localeTokens = await LocalizationTokens.FromJSON(localeTokenPath);
+                _localToTokens.Add(locale, localeTokens);
+            }
+        }
+
+        private async Task DeserializeMineralDatas()
         {
             var mineralDatas = Directory.EnumerateFiles(_arguments.mineralDataFolder);
 
@@ -82,7 +115,7 @@ namespace OresToFieldGuide
 
             Directory.CreateDirectory(outputDirectory);
 
-            foreach(var local in _localToMineralData.Keys)
+            foreach(var local in locales)
             {
                 string fieldGuideOutput = Path.Combine(outputDirectory, MainClass.KUBEJS, MainClass.ASSETS, MainClass.TFC, MainClass.PATCHOULI_BOOKS, MainClass.FIELD_GUIDE, local);
                 Directory.CreateDirectory(fieldGuideOutput);
