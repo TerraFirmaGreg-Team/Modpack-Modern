@@ -190,10 +190,6 @@ const registerTFGRecipes = (event) => {
 			.duration(50)
 			.EUt(2)
 
-		// cobble to raw
-		event.smelting(`1x tfg:raw_${rock}`, `1x ad_astra:${planet}_cobblestone`)
-			.id(`tfg:smelting/raw_${rock}`)
-
 		// loose to bricks
 		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfg:${rock}_brick`, [`tfg:loose_${rock}`, '#tfc:chisels']))
 
