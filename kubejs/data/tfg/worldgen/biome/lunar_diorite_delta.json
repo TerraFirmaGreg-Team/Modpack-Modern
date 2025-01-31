@@ -65,7 +65,7 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 12
+				"weight": 20
 			}
 		],
 		"misc": [],
@@ -90,9 +90,15 @@
 			},
 			{
 				"type": "minecraft:endermite",
-				"maxCount": 4,
-				"minCount": 2,
+				"maxCount": 3,
+				"minCount": 1,
 				"weight": 20
+			},
+			{
+				"type": "species:limpet",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

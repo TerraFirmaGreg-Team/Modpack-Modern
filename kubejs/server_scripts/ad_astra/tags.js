@@ -94,13 +94,12 @@ const registerAdAstraBiomeTags = (event) => {
 
 const registerAdAstraEntityTypeTags = (event) => {
 
+	// moon
 	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:rabbit')
 	event.add('ad_astra:lives_without_oxygen', 'minecraft:rabbit')
-	event.add('tfc:hunted_by_land_predators', 'minecraft:rabbit')
 
 	event.add('ad_astra:can_survive_extreme_cold', 'tfc:rat')
 	event.add('ad_astra:lives_without_oxygen', 'tfc:rat')
-	event.add('tfc:hunted_by_land_predators', 'tfc:rat')
 
 	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:enderman')
 	event.add('ad_astra:lives_without_oxygen', 'minecraft:enderman')
@@ -109,10 +108,15 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:endermite')
 	event.add('ad_astra:lives_without_oxygen', 'minecraft:endermite')
 	event.add('tfc:deals_piercing_damage', 'minecraft:endermite')
-	event.add('tfc:hunted_by_land_predators', 'minecraft:endermite')
 
 	event.add('tfc:hunts_land_prey', 'ad_astra:star_crawler')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
+
+	event.add('ad_astra:can_survive_extreme_cold', 'species:limpet')
+	event.add('ad_astra:lives_without_oxygen', 'species:limpet')
+
+	//event.add('ad_astra:can_survive_extreme_cold', 'species:birt')
+	//event.add('ad_astra:lives_without_oxygen', 'species:birt')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
