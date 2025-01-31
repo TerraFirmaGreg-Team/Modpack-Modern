@@ -30,7 +30,14 @@ namespace OresToFieldGuide.JSONObjects
         [JsonProperty("minerals")]
         public Entry[] Minerals { get; set; }
 
+        [JsonProperty("keywords")]
+        public Dictionary<string, string>  Keywords { get; set; }
 
+        [JsonProperty("rocks")]
+        public Dictionary<string, string> Rocks { get; set; }
+
+        [JsonProperty("veins")]
+        public Dictionary<string, string> Veins { get; set; }
         /// <summary>
         /// A .NET representation of a MineralData Entry.
         /// </summary>
