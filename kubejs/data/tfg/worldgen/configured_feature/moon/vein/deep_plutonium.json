@@ -5,8 +5,8 @@
 		"density": 0.30,
 		"min_y": -64,
 		"max_y": -20,
-		"size": 32,
-		"random_name": "deep_naquadah",
+		"size": 15,
+		"random_name": "deep_plutonium",
 		"biomes": "#tfg:moon_biomes",
 		"blocks": [
 			{
@@ -15,11 +15,11 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_naquadah_ore",
+						"block": "gtceu:dunite_desh_ore",
 						"weight": 75
 					},
 					{
-						"block": "gtceu:dunite_plutonium_ore",
+						"block": "gtceu:dunite_desh_ore",
 						"weight": 25
 					}
 				]

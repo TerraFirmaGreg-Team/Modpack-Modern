@@ -23,8 +23,8 @@ global.MOON_VEINS =
 [
 	'tfg:moon/vein/deep_magnetite',
 	'tfg:moon/vein/deep_molybdenum',
-	'tfg:moon/vein/deep_naquadah',
 	'tfg:moon/vein/deep_olivine',
+	'tfg:moon/vein/deep_plutonium',
 	'tfg:moon/vein/deep_sapphire',
 	'tfg:moon/vein/deep_scheelite',
 	'tfg:moon/vein/deep_sheldonite',
