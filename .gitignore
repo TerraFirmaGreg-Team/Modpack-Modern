@@ -111,7 +111,5 @@ hei_bookmarks.ini
 .pakku/server-overrides/user_jvm_args.txt
 
 #Tools
-/tools/OresToFieldGuide/obj/Debug/net8.0
-/tools/OresToFieldGuide/obj/Release/net8.0
 /tools/OresToFieldGuide/bin/*
 /tools/OresToFieldGuide/obj/*
