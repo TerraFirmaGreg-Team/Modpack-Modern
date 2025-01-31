@@ -45,11 +45,15 @@
 			"energy_budget": 0.015
 		},
 		"minecraft:corrupted_lunarian": {
-			"charge": 0.4,
+			"charge": 0.7,
 			"energy_budget": 0.015
 		},
 		"minecraft:enderman": {
 			"charge": 0.7,
+			"energy_budget": 0.015
+		},
+		"minecraft:endermite": {
+			"charge": 0.2,
 			"energy_budget": 0.015
 		}
 	},

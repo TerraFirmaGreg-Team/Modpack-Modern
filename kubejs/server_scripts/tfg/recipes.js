@@ -1,5 +1,7 @@
 // priority: 0
 const registerTFGRecipes = (event) => {
+
+	//#region paper from wood
 	var generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
 		event.custom({
 			"type": "firmalife:vat",
@@ -145,8 +147,9 @@ const registerTFGRecipes = (event) => {
 		.itemOutputs('minecraft:paper')
 		.duration(40)
 		.EUt(4)
+	//#endregion
 
-	// landslide
+	// #region collapse/landslide recipes (needed for them to actually function)
 
 	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:raw_anorthite')
 	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:hardened_anorthite')
@@ -154,4 +157,145 @@ const registerTFGRecipes = (event) => {
 
 	event.recipes.tfc.landslide('ad_astra:moon_cobblestone', 'ad_astra:moon_cobblestone')
 	event.recipes.tfc.landslide('ad_astra:moon_sand', 'ad_astra:moon_sand')
+
+	// #endregion
+
+	// #region space bricks
+
+	const AD_ASTRA_ROCKS = {
+		//mercury: "TODO",
+		//venus: "TODO",
+		moon: "anorthite",
+		//mars: "TODO",
+		//glacio: "TODO"
+	}
+
+	for (const [planet, rock] of Object.entries(AD_ASTRA_ROCKS)) {
+
+		// loose rocks to cobble
+		event.shaped(`ad_astra:${planet}_cobblestone`, [
+			'ABA',
+			'BAB',
+			'ABA'
+		], {
+			A: `tfg:loose_${rock}`,
+			B: 'tfc:mortar'
+		})
+
+		event.recipes.gtceu.assembler(`ad_astra:${planet}_cobblestone`)
+			.itemInputs(`4x tfg:loose_${rock}`)
+			.inputFluids(Fluid.of('gtceu:concrete', 72))
+			.itemOutputs(`ad_astra:${planet}_cobblestone`)
+			.circuit(2)
+			.duration(50)
+			.EUt(2)
+
+		// cobble to raw
+		event.smelting(`1x tfg:raw_${rock}`, `1x ad_astra:${planet}_cobblestone`)
+			.id(`tfg:smelting/raw_${rock}`)
+
+		// loose to bricks
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfg:${rock}_brick`, [`tfg:loose_${rock}`, '#tfc:chisels']))
+
+		event.recipes.gtceu.assembler(`tfg:${rock}_brick`)
+			.itemInputs(`1x tfg:loose_${rock}`)
+			.itemOutputs(`1x tfg:${rock}_brick`)
+			.circuit(1)
+			.duration(40)
+			.EUt(8)
+
+		// bricks to brick blocks
+		event.shaped(`4x ad_astra:${planet}_stone_bricks`, [
+			'ABA',
+			'BAB',
+			'ABA'
+		], {
+			A: `tfg:${rock}_brick`,
+			B: 'tfc:mortar'
+		})
+
+		event.recipes.gtceu.assembler(`ad_astra:${planet}_stone_bricks`)
+			.itemInputs(`5x tfg:${rock}_brick`)
+			.itemOutputs(`4x ad_astra:${planet}_stone_bricks`)
+			.circuit(1)
+			.duration(50)
+			.EUt(2)
+
+		// raw to polished
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`ad_astra:polished_${planet}_stone`, [`tfg:raw_${rock}`, '#tfc:chisels']))
+
+		event.recipes.gtceu.laser_engraver(`ad_astra:polished_${planet}_stone`)
+			.itemInputs(`tfg:raw_${rock}`)
+			.itemOutputs(`ad_astra:polished_${planet}_stone`)
+			.notConsumable('#forge:lenses/white')
+			.duration(30)
+			.EUt(100)
+
+		// bricks to chiseled
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`ad_astra:chiseled_${planet}_stone_bricks`, [`ad_astra:${planet}_stone_bricks`, '#tfc:chisels']))
+
+		event.recipes.gtceu.laser_engraver(`ad_astra:chiseled_${planet}_stone_bricks`)
+			.itemInputs(`ad_astra:${planet}_stone_bricks`)
+			.itemOutputs(`ad_astra:chiseled_${planet}_stone_bricks`)
+			.notConsumable('#forge:lenses/white')
+			.duration(30)
+			.EUt(100)
+
+		// cracked bricks
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`ad_astra:cracked_${planet}_stone_bricks`, [`ad_astra:${planet}_stone_bricks`, '#tfc:hammers']))
+
+		event.recipes.gtceu.forge_hammer(`ad_astra:cracked_${planet}_stone_bricks`)
+			.itemInputs(`ad_astra:${planet}_stone_bricks`)
+			.itemOutputs(`ad_astra:cracked_${planet}_stone_bricks`)
+			.duration(12)
+			.EUt(8)
+
+		// slabs, stairs, walls
+
+		generateCutterRecipe(event, `tfg:raw_${rock}`, 0, [`ad_astra:${planet}_stone_stairs`], 100, 8, `${planet}_stone_to_stairs`)
+		generateCutterRecipe(event, `tfg:raw_${rock}`, 1, [`2x ad_astra:${planet}_stone_slab`], 100, 8, `${planet}_stone_to_slabs`)
+
+		generateCutterRecipe(event, `ad_astra:${planet}_cobblestone`, 0, [`ad_astra:${planet}_cobblestone_stairs`], 100, 8, `${planet}_cobblestone_to_stairs`)
+		generateCutterRecipe(event, `ad_astra:${planet}_cobblestone`, 1, [`2x ad_astra:${planet}_cobblestone_slab`], 100, 8, `${planet}_cobblestone_to_slabs`)
+
+		generateCutterRecipe(event, `ad_astra:${planet}_stone_bricks`, 0, [`ad_astra:${planet}_stone_brick_stairs`], 100, 8, `${planet}_stone_bricks_to_stairs`)
+		generateCutterRecipe(event, `ad_astra:${planet}_stone_bricks`, 1, [`2x ad_astra:${planet}_stone_brick_slab`], 100, 8, `${planet}_stone_bricks_to_slabs`)
+		generateCutterRecipe(event, `ad_astra:${planet}_stone_bricks`, 2, [`ad_astra:${planet}_stone_brick_wall`], 100, 8, `${planet}_stone_bricks_to_wall`)
+
+		generateCutterRecipe(event, `ad_astra:chiseled_${planet}_stone_bricks`, 0, [`ad_astra:chiseled_${planet}_stone_stairs`], 100, 8, `chiseled_${planet}_stone_bricks_to_stairs`)
+		generateCutterRecipe(event, `ad_astra:chiseled_${planet}_stone_bricks`, 1, [`2x ad_astra:chiseled_${planet}_stone_slab`], 100, 8, `chiseled_${planet}_stone_bricks_to_slabs`)
+
+		generateCutterRecipe(event, `ad_astra:polished_${planet}_stone`, 0, [`ad_astra:polished_${planet}_stone_stairs`], 100, 8, `polished_${planet}_stone_to_stairs`)
+		generateCutterRecipe(event, `ad_astra:polished_${planet}_stone`, 1, [`2x ad_astra:polished_${planet}_stone_slab`], 100, 8, `polished_${planet}_stone_to_slabs`)
+
+		// pillar
+
+		event.shaped(`2x ad_astra:${planet}_pillar`, [
+			'A',
+			'A'
+		], {
+			A: `ad_astra:${planet}_stone_bricks`,
+		})
+
+		// rock breaker duping
+
+		event.recipes.gtceu.rock_breaker(`tfg:raw_${rock}`)
+			.notConsumable(`tfg:raw_${rock}`)
+			.itemOutputs(`tfg:raw_${rock}`)
+			.duration(16)
+			.EUt(7)
+
+		event.recipes.gtceu.rock_breaker(`ad_astra:${planet}_cobblestone`)
+			.notConsumable(`ad_astra:${planet}_cobblestone`)
+			.itemOutputs(`ad_astra:${planet}_cobblestone`)
+			.duration(16)
+			.EUt(7)
+
+		// taking cobble apart
+
+		event.shapeless(`4x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone`])
+		event.shapeless(`3x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone_stairs`])
+		event.shapeless(`2x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone_slab`])
+	}
+	// #endregion
 }

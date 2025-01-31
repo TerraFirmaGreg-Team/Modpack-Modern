@@ -29,7 +29,8 @@
 		[
 			"tfc:vein/gabbro_dike",
 			"tfc:vein/diorite_dike",
-			"tfg:moon/surface/moon_rock_pile"
+			"tfg:moon/surface/moon_rock_pile",
+			"tfg:moon/surface/loose_anorthite_rocks"
 		],
 		[],
 		"#tfg:moon_veins",
@@ -48,8 +49,8 @@
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 4,
-				"minCount": 2,
+				"maxCount": 3,
+				"minCount": 1,
 				"weight": 12
 			}
 		],
