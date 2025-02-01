@@ -239,8 +239,8 @@ const registerTFCRecipes = (e) => {
         if (dustItem.isEmpty()) return
         
         e.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
-            .id(`tfg:heating/tiny_dust/${material.getName()}`)
+        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(16, tfcProperty.getPercentOfMaterial())))
+        .id(`tfg:heating/tiny_dust/${material.getName()}`)
     }
 
     const processSmallDust = (tagPrefix, tfcProperty, material, outputMaterial) => {
@@ -248,7 +248,7 @@ const registerTFCRecipes = (e) => {
         if (dustItem.isEmpty()) return
         
         e.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/small_dust/${material.getName()}`)
     }
 
@@ -257,7 +257,7 @@ const registerTFCRecipes = (e) => {
         if (dustItem.isEmpty()) return
         
         e.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(144, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/dust/${material.getName()}`)
     }
 
@@ -266,7 +266,7 @@ const registerTFCRecipes = (e) => {
         if (dustItem.isEmpty()) return
         
         e.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/impure_dust/${material.getName()}`)
     }
 
@@ -275,7 +275,7 @@ const registerTFCRecipes = (e) => {
         if (dustItem.isEmpty()) return
         
         e.recipes.tfc.heating(dustItem, tfcProperty.getMeltTemp())
-            .resultFluid(Fluid.of(outputMaterial.getFluid(), calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
+            .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(120, tfcProperty.getPercentOfMaterial())))
             .id(`tfg:heating/purified_dust/${material.getName()}`)
     }
 
