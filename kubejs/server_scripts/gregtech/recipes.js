@@ -84,25 +84,30 @@ const registerGregTechRecipes = (e) => {
     }
 
     const processIngot = (tagPrefix, material) => {
-        const ingotItem = ChemicalHelper.get(tagPrefix, material, 1)
+        const ingotStack = ChemicalHelper.get(tagPrefix, material, 1)
 
         if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) 
         {
             const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
             const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
+            let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
             let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
             if (!plateStack.isEmpty()) {
                 
                 // Слиток -> Стержень
-                e.recipes.createPressing(plateStack.withChance(0.8), ingotItem)
-                    .id(`tfg:pressing/${material.getName()}_plate`)
+                e.recipes.createSequencedAssembly([plateStack.withChance(4), smallDustStack], ingotStack,[
+                    e.recipes.createPressing(ingotStack, ingotStack)
+                ])
+                .transitionalItem(ingotStack)
+                .loops(1)
+                .id(`tfg:pressing/${material.getName()}_plate`);
     
                 if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
                     
                     // 9х Слиток -> Блок
-                    e.recipes.createCompacting(blockStack, ingotItem.withCount(matAmount))
+                    e.recipes.createCompacting(blockStack, ingotStack.withCount(matAmount))
                         .heated()
                         .id(`tfg:compacting/${material.getName()}_block`)
                 }
