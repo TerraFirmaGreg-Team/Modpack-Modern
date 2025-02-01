@@ -218,6 +218,21 @@ const registerTFGRecipes = (event) =>
         .EUt(30)
         .rpm(96)
 
+//advanced kaolin
+
+    event.recipes.gtceu.mixer('fire_clay_mixer')
+        .itemInputs('#forge:dusts/clay', 'tfc:kaolin_clay', '#forge:dusts/carbon')
+        .itemOutputs('1x tfc:fire_clay')
+        .duration(40)
+        .EUt(20)
+
+    event.recipes.gtceu.create_mixer('fire_clay_mixer')
+        .itemInputs('#forge:dusts/clay', 'tfc:kaolin_clay', '#forge:dusts/carbon')
+        .itemOutputs('1x tfc:fire_clay')
+        .duration(20)
+        .EUt(20)
+        .rpm(64)
+
 //#medicine
 
 //antipoison

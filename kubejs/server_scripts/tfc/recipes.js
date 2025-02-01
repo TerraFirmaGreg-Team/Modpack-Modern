@@ -2241,6 +2241,14 @@ const registerTFCRecipes = (event) => {
         //#endregion
     })
 
+    //firebrick assembler
+    event.recipes.gtceu.assembler(`fire_brick_concrete`)             
+            .itemInputs(`5x tfc:ceramic/fire_brick`)
+            .inputFluids(Fluid.of('gtceu:concrete', 72))
+            .itemOutputs(`2x tfc:fire_bricks`)
+            .duration(50)
+            .EUt(2)
+
     //#endregion
 
     //#region Песок
