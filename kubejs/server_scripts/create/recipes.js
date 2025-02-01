@@ -91,6 +91,14 @@ const registerCreateRecipes = (event) => {
         { id: 'create:milling/bone' },
     ], mod: 'create' })
 
+    // Experience Nugget
+    event.recipes.gtceu.fermenter('tfg:fermenter/experience_nugget')
+        .itemInputs('gtceu:yellow_garnet_gem')
+        .inputFluids(Fluid.of('gtceu:biomass', 1000))
+        .itemOutputs('32x create:experience_nugget')
+        .duration(400)
+        .EUt(20)
+
     // Train Station
     event.shapeless('2x create:track_station', [
         'create:railway_casing',
