@@ -26,6 +26,8 @@ namespace OresToFieldGuide
         /// </summary>
         public Dictionary<string, string[]> planetToVeinsPath;
 
+        public bool shouldVerifyVeinWeights;
+
         /// <summary>
         /// The path to the Language Token JSON files
         /// </summary>
@@ -41,7 +43,7 @@ namespace OresToFieldGuide
             stringBuilder.AppendLine($".minecraft Folder Path: \"{minecraftFolder}\"");
             stringBuilder.AppendLine($"mineral_data Folder Path: \"{mineralDataFolder}\"");
             stringBuilder.AppendLine($"language_tokens Folder Path: \"{languageTokenFolder}\"");
-
+            stringBuilder.AppendLine($"shouldVerifyVeinWeights: \"{shouldVerifyVeinWeights}\"");
             foreach (var planet in planetToVeinsPath.Keys)
             {
                 stringBuilder.AppendLine($"{planet}'s Vein Files:");

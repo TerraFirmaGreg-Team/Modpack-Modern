@@ -1,4 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//Uncomment this to enable verification of vein weights
+#define VERIFY_VEIN_WEIGHTS
+
+// See https://aka.ms/new-console-template for more information
 using System.Collections.Generic;
 using System.Text;
 
@@ -75,9 +78,10 @@ namespace OresToFieldGuide
                 programArguments.minecraftFolder = GetMinecraftDirectory();
                 programArguments.mineralDataFolder = GetMineralDataFolder(programArguments.minecraftFolder);
                 programArguments.languageTokenFolder = GetLanguageTokenFolder(programArguments.minecraftFolder);
+                programArguments.shouldVerifyVeinWeights = GetShouldVerifyVeinWeights();
                 programArguments.planetToVeinsPath = GetPlanetNameToVeinPaths(programArguments.minecraftFolder);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 ConsoleLogHelper.WriteLine("An Exception has been Thrown! " + e, LogLevel.Fatal);
                 return false;
@@ -150,6 +154,15 @@ namespace OresToFieldGuide
                 planetNameToVeinPathsDictionary.Add(planetName, filesInDirectory);
             }
             return planetNameToVeinPathsDictionary;
+        }
+
+        private static bool GetShouldVerifyVeinWeights()
+        {
+#if VERIFY_VEIN_WEIGHTS
+            return true;
+#else
+            return false;
+#endif
         }
     }
 }

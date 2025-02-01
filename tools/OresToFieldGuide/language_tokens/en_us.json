@@ -1,13 +1,12 @@
 {
-    "planet_names":
-    {
-        "earth": "Earth",
-        "moon": "Moon",
-        "mars": "Mars",
-        "venus": "Venus"
-    },
+	"planet_names": {
+		"earth": "Earth",
+		"moon": "Moon",
+		"mars": "Mars",
+		"venus": "Venus"
+	},
 
-    "keywords": {
+	"keywords": {
 		"Rarity": "Rarity",
 		"Density": "Density",
 		"Type": "Type",
@@ -51,12 +50,12 @@
 		"anorthite": "Anorthite",
 		"dunite": "Dunite"
 	},
-    
+
 	"veins": {
 		"cluster": "Cluster Vein",
 		"pipe": "Pipe Vein",
 		"disc": "Disc Vein"
 	},
 
-    "ore_index": "This is a $(thing)list$() of every $(item)Ore$() in the planet $(thing)Earth$(), sorted alphabetically and then by richest to poorest vein type."
+	"ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the planet $(thing)Earth$(), sorted alphabetically and then by richest to poorest vein type."
 }

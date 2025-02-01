@@ -56,8 +56,13 @@ namespace OresToFieldGuide
             {
                 get
                 {
-                    return ore.Substring(ore.IndexOf(':') + 1);
+                    return Util.RemoveModID(ore);
                 }
+            }
+
+            public bool TryGetOreNameWithoutIDAndWithoutRock(string rockSubstring, out string rocklessString)
+            {
+                return Util.TryRemoveStartingSubstring(OreNameWithoutModID, rockSubstring, out rocklessString);
             }
             public string ore;
             public float weight;

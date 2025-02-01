@@ -58,5 +58,5 @@
 		"dunite": "Дунит"
 	},
 
-    "ore_index": "This is a $(thing)list$() of every $(item)Ore$() in the planet $(thing)Earth$(), sorted alphabetically and then by richest to poorest vein type."
+    "ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the planet $(thing){0}(), sorted alphabetically and then by richest to poorest vein type."
 }

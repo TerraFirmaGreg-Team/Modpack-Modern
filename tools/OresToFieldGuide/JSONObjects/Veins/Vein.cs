@@ -18,9 +18,11 @@ namespace OresToFieldGuide.JSONObjects.Veins
             string json = await File.ReadAllTextAsync(jsonFilePath);
 
             var vein = JsonConvert.DeserializeObject<Vein>(json);
+            vein.FileName = Path.GetFileNameWithoutExtension(jsonFilePath);
             return vein;
         }
 
+        public string FileName { get; private set; }
         /// <summary>
         /// What type of Vein this is, IE: tfc:disc_vein
         /// </summary>
