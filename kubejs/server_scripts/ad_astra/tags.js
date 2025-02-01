@@ -28,6 +28,8 @@ const registerAdAstraBlockTags = (event) => {
 		event.add('tfc:breaks_when_isolated', rock)
 		event.add('tfc:rock/raw', rock)
 		event.add('minecraft:mineable/pickaxe', rock)
+		// Collapse tags also require a collapse recipe to work.
+		// Don't add the recipe if you don't want them to actually collapse!
 		event.add('tfc:can_collapse', rock)
 		event.add('tfc:can_trigger_collapse', rock)
 		event.add('tfc:can_start_collapse', rock)
@@ -38,7 +40,6 @@ const registerAdAstraBlockTags = (event) => {
 	})
 
 	global.EXTRATERRESTRIAL_HARDENED_ROCKS.forEach(rock => {
-		event.add('tfc:breaks_when_isolated', rock)
 		event.add('minecraft:mineable/pickaxe', rock)
 		event.add('tfc:can_collapse', rock)
 		event.add('tfc:can_trigger_collapse', rock)
@@ -51,6 +52,7 @@ const registerAdAstraBlockTags = (event) => {
 	// Moon
 	event.add('minecraft:rabbits_spawnable_on', 'tfg:raw_anorthite')
 	event.add('minecraft:rabbits_spawnable_on', 'tfg:hardened_anorthite')
+	event.add('minecraft:rabbits_spawnable_on', 'tfg:raw_dunite')
 	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_sand')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/black')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/white')
@@ -95,28 +97,29 @@ const registerAdAstraBiomeTags = (event) => {
 const registerAdAstraEntityTypeTags = (event) => {
 
 	// moon
-	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:rabbit')
-	event.add('ad_astra:lives_without_oxygen', 'minecraft:rabbit')
 
-	event.add('ad_astra:can_survive_extreme_cold', 'tfc:rat')
-	event.add('ad_astra:lives_without_oxygen', 'tfc:rat')
+	const MOON_ENTITIES = 
+	[
+		'minecraft:rabbit',
+		'tfc:rat',
+		'minecraft:enderman',
+		'minecraft:endermite',
+		'species:limpet',
+		'endermanoverhaul:windswept_hills_enderman',
+		'endermanoverhaul:soulsand_valley_enderman'
+	]
 
-	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:enderman')
-	event.add('ad_astra:lives_without_oxygen', 'minecraft:enderman')
+	MOON_ENTITIES.forEach(entity => {
+
+		event.add('ad_astra:can_survive_extreme_cold', entity)
+		event.add('ad_astra:lives_without_oxygen', entity)
+	})
+
 	event.add('tfc:deals_crushing_damage', 'minecraft:enderman')
-
-	event.add('ad_astra:can_survive_extreme_cold', 'minecraft:endermite')
-	event.add('ad_astra:lives_without_oxygen', 'minecraft:endermite')
+	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:windswept_hills_enderman')
+	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:soulsand_valley_enderman')
 	event.add('tfc:deals_piercing_damage', 'minecraft:endermite')
-
-	event.add('tfc:hunts_land_prey', 'ad_astra:star_crawler')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
-
-	event.add('ad_astra:can_survive_extreme_cold', 'species:limpet')
-	event.add('ad_astra:lives_without_oxygen', 'species:limpet')
-
-	//event.add('ad_astra:can_survive_extreme_cold', 'species:birt')
-	//event.add('ad_astra:lives_without_oxygen', 'species:birt')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {

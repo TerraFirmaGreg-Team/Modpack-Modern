@@ -39,31 +39,14 @@
 		[]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {
-		"ad_astra:star_crawler": {
-			"charge": 0.2,
-			"energy_budget": 0.015
-		},
-		"minecraft:corrupted_lunarian": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"minecraft:enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"minecraft:endermite": {
-			"charge": 0.2,
-			"energy_budget": 0.015
-		}
-	},
+	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 2,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
 			}
@@ -86,7 +69,7 @@
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 50
 			},
 			{
 				"type": "minecraft:endermite",
@@ -97,6 +80,12 @@
 			{
 				"type": "species:limpet",
 				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:windswept_hills_enderman",
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
 			}

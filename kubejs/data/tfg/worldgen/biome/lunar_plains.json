@@ -41,6 +41,10 @@
 		"minecraft:enderman": {
 			"charge": 0.7,
 			"energy_budget": 0.015
+		},
+		"endermanoverhaul:windswept_hills_enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.015
 		}
 	},
 	"spawners": {
@@ -49,7 +53,7 @@
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 3,
+				"maxCount": 1,
 				"minCount": 1,
 				"weight": 80
 			}
@@ -57,16 +61,22 @@
 		"misc": [],
 		"monster": [
 			{
+				"type": "species:limpet",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
 			},
 			{
-				"type": "species:limpet",
-				"maxCount": 2,
+				"type": "endermanoverhaul:windswept_hills_enderman",
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],
