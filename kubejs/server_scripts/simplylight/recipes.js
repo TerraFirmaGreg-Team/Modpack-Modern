@@ -19,7 +19,7 @@ const registerSimplyLightRecipes = (event) => {
         '   '  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:foils/tin'
+        B: '#forge:plates/tin_alloy'
     }).id('tfg:simplylight/illuminant_slab')
 
     event.shaped('4x simplylight:wall_lamp', [
@@ -28,7 +28,7 @@ const registerSimplyLightRecipes = (event) => {
         'BA '  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:foils/tin'
+        B: '#forge:plates/tin_alloy'
     }).id('tfg:simplylight/wall_lamp')
 
     event.shaped('12x simplylight:rodlamp', [
@@ -37,8 +37,8 @@ const registerSimplyLightRecipes = (event) => {
         'ACA'  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:rods/tin',
-        C: '#forge:bolts/tin'
+        B: '#forge:rods/tin_alloy',
+        C: '#forge:bolts/tin_alloy'
     }).id('tfg:simplylight/rod_lamp')
 
     event.shaped('2x simplylight:lightbulb', [
@@ -47,7 +47,7 @@ const registerSimplyLightRecipes = (event) => {
         '   '  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:foils/tin'
+        B: '#forge:plates/tin_alloy'
     }).id('tfg:simplylight/light_bulb')
 
     event.shaped('6x simplylight:edge_light', [
@@ -56,8 +56,8 @@ const registerSimplyLightRecipes = (event) => {
         '   '  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:rods/tin',
-        C: '#forge:bolts/tin'
+        B: '#forge:rods/tin_alloy',
+        C: '#forge:bolts/tin_alloy'
     }).id('tfg:simplylight/edge_light')
 
     event.shaped('8x simplylight:lamp_post', [
@@ -77,7 +77,7 @@ const registerSimplyLightRecipes = (event) => {
         'BAB'  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:foils/tin',
+        B: '#forge:plates/tin_alloy',
         C: '#forge:fine_wires/red_alloy',
     }).id('tfg:simplylight/illuminant_block_on')
 
@@ -87,7 +87,7 @@ const registerSimplyLightRecipes = (event) => {
         'ABA'  
     ], {
         A: '#forge:dusts/glowstone',
-        B: '#forge:foils/tin',
+        B: '#forge:plates/tin_alloy',
         C: '#forge:fine_wires/red_alloy',
     }).id('tfg:simplylight/illuminant_block')
 }
