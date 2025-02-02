@@ -1,14 +1,14 @@
 {
 	"structures": [
 		{
-			"structure": "tfg:moon/cheese_ores",
+			"structure": "tfg:moon/moonbase",
 			"weight": 1
 		}
 	],
 	"placement": {
-		"salt": 486424619,
-		"spacing": 4,
-		"separation": 1,
+		"salt": 73746546,
+		"spacing": 40,
+		"separation": 20,
 		"type": "minecraft:random_spread",
 		"exclusion_zone": {
 			"other_set": "tfg:moon/meteors",

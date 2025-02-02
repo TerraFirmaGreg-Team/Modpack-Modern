@@ -367,9 +367,9 @@ const registerAdAstraRecipes = (event) => {
 
     event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
         .itemInputs(
-            '#forge:double_wires/annealed_copper',
+            '#forge:double_wires/manganese_phosphide',
             '#forge:plates/steel',)
-        .inputFluids(Fluid.of('gtceu:polyethylene', 144 ))
+        .inputFluids(Fluid.of('gtceu:polyethylene', 72 ))
         .itemOutputs('ad_astra:steel_cable')
         .duration(60)
         .EUt(120)
@@ -380,9 +380,9 @@ const registerAdAstraRecipes = (event) => {
 
     event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
         .itemInputs(
-            '#forge:double_wires/aluminium',
-            '#forge:plates/titanium',)
-        .inputFluids(Fluid.of('gtceu:polyethylene', 144 ))
+            '#forge:double_wires/magnesium_diboride',
+            '#forge:plates/desh',)
+        .inputFluids(Fluid.of('gtceu:polyethylene', 72 ))
         .itemOutputs('ad_astra:desh_cable')
         .duration(60)
         .EUt(480)
@@ -397,8 +397,13 @@ const registerAdAstraRecipes = (event) => {
         'A  '
     ], {
         A:'#forge:rods/long/steel',
-        B:'tfc:wool_cloth',
+        B:'#tfc:high_quality_cloth',
     }).id('tfg:white_flag')
+
+    global.MINECRAFT_DYE_NAMES.forEach(color => {
+        event.shapeless(`ad_astra:${color}_flag`, ['#ad_astra:flags', `#forge:dyes/${color}`])
+    })
+
     
     //#endregion
 
@@ -426,7 +431,7 @@ const registerAdAstraRecipes = (event) => {
     ], {
         A:'#forge:nuggets/desh',
         B:'#forge:ingots/desh',
-        C:'tfc:wool_cloth' ,
+        C:'#tfc:high_quality_cloth' ,
     }).id('tfg:space_painting')
     
     //#endregion

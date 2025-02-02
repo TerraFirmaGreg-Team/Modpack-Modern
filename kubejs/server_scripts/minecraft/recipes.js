@@ -2852,7 +2852,7 @@ const registerMinecraftRecipes = (event) => {
     ], {
         A: '#forge:plates/wrought_iron',
         B: '#forge:chests/wooden',
-        C: '#forge:gears/wrought_iron',
+        C: '#forge:small_gears/wrought_iron',
         D: '#forge:tools/wrenches',
         E: '#forge:tools/hammers',
     }).id('gtceu:shaped/hopper')
