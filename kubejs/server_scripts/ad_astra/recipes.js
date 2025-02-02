@@ -360,13 +360,13 @@ const registerAdAstraRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:tier_1_rover')
 		.itemInputs(
-			'gtceu:hv_sensor',
+			'gtceu:mv_sensor',
 			'ad_astra:radio',
 			'ad_astra:gas_tank',
 			'4x ad_astra:wheel',
-			'2x gtceu:ev_electric_motor',
-			'4x #forge:plates/titanium',
-			'4x #forge:frames/titanium')
+			'2x gtceu:hv_electric_motor',
+			'4x #forge:plates/stainless_steel',
+			'4x #forge:frames/stainless_steel')
 		.itemOutputs('ad_astra:tier_1_rover')
 		.duration(2000)
 		.EUt(1920)
