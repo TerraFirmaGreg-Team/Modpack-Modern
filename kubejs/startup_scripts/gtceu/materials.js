@@ -98,13 +98,11 @@ const registerGTCEuMaterials = (event) => {
         .color(0x2D5596)
 
     /* Dead */
-    const Limonite = event
+    const Limonite = event.create('tfg:limonite')
         .liquid()
         .color(0x000000)
-        .create('tfg:limonite')
-    
-    const Bismuthinite = event
+        
+    const Bismuthinite = event.create('tfg:bismuthinite')
         .liquid()
-        .color(0x000000)
-        .create('tfg:bismuthinite')
+        .color(0x000000) 
 }
