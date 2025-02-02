@@ -12,6 +12,7 @@ ServerEvents.tags('item', event => {
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
+    registerEndermenOverhaulItemTags(event)
     registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
@@ -25,6 +26,7 @@ ServerEvents.tags('item', event => {
     registerHotOrNotItemTags(event)
     registerRailWaysItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
+    registerSpeciesItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
     registerTFGItemTags(event)
@@ -53,6 +55,7 @@ ServerEvents.tags('block', event => {
     registerHotOrNotBlockTags(event)
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
+    registerSpeciesBlockTags(event)
     registerTFCBlockTags(event)
 })
 
