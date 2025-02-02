@@ -1,6 +1,13 @@
 // priority: 0
 
 const registerAdAstraFluidTags = (event) => {
+
+	global.AD_ASTRA_DISABLED_FLUIDS.forEach(fluid => {
+		event.removeAllTagsFrom(fluid)
+		event.add('c:hidden_from_recipe_viewers', fluid)
+	})
+
+
 	event.removeAll('ad_astra:fuel')
 	event.removeAll('ad_astra:efficient_fuel')
 	event.add('ad_astra:tier_1_rocket_fuel', 'gtceu:rocket_fuel')
@@ -17,10 +24,20 @@ const registerAdAstraFluidTags = (event) => {
 
 const registerAdAstraItemTags = (event) => {
 
+	global.AD_ASTRA_DISABLED_ITEMS.forEach(item => {
+		event.removeAllTagsFrom(item)
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
+
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
 }
 
 const registerAdAstraBlockTags = (event) => {
+
+	global.AD_ASTRA_DISABLED_ITEMS.forEach(item => {
+		event.removeAllTagsFrom(item)
+		event.add('c:hidden_from_recipe_viewers', item)
+	})
 
 	// All new stones
 	global.EXTRATERRESTRIAL_RAW_ROCKS.forEach(rock => {
@@ -99,8 +116,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 	// moon
 
-	const MOON_ENTITIES = 
-	[
+	const MOON_ENTITIES = [
 		'tfc:rat',
 		'minecraft:rabbit',
 		'minecraft:enderman',

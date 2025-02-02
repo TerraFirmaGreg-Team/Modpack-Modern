@@ -279,13 +279,15 @@ const registerTFGRecipes = (event) => {
 			.notConsumable(`tfg:raw_${rock}`)
 			.itemOutputs(`tfg:raw_${rock}`)
 			.duration(16)
-			.EUt(7)
+			.EUt(33)
+			.dimension(`ad_astra:${planet}`)
 
 		event.recipes.gtceu.rock_breaker(`ad_astra:${planet}_cobblestone`)
 			.notConsumable(`ad_astra:${planet}_cobblestone`)
 			.itemOutputs(`ad_astra:${planet}_cobblestone`)
 			.duration(16)
-			.EUt(7)
+			.EUt(33)
+			.dimension(`ad_astra:${planet}`)
 
 		// taking cobble apart
 
@@ -293,5 +295,13 @@ const registerTFGRecipes = (event) => {
 		event.shapeless(`3x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone_stairs`])
 		event.shapeless(`2x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone_slab`])
 	}
+
+	event.recipes.gtceu.rock_breaker('tfg:raw_dunite')
+			.notConsumable('tfg:raw_dunite')
+			.itemOutputs('tfg:raw_dunite')
+			.duration(16)
+			.EUt(33)
+			.dimension('ad_astra:moon')
+
 	// #endregion
 }

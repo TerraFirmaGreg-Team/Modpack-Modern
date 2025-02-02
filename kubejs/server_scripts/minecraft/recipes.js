@@ -2019,17 +2019,17 @@ const registerMinecraftRecipes = (event) => {
         'CDC',
         'AEA'  
     ], {
-        A: '#forge:screws/wrought_iron',
+        A: '#forge:screws',
         B: '#tfc:hammers',
-        C: 'gtceu:wrought_iron_block',
+        C: '#forge:plates/iron',
         D: '#forge:springs',
         E: '#forge:tools/screwdrivers'
     }).id('minecraft:heavy_weighted_pressure_plate')
 
-    event.recipes.gtceu.assembler('heavy_weighted_pressure_plate')             
-        .itemInputs('#forge:springs', 'gtceu:wrought_iron_block')
+    event.recipes.gtceu.assembler('heavy_weighted_pressure_plate')
+        .itemInputs('4x #forge:screws', '#forge:springs', '#forge:plates/iron')
         .circuit(0)
-        .itemOutputs('4x minecraft:heavy_weighted_pressure_plate')
+        .itemOutputs('minecraft:heavy_weighted_pressure_plate')
         .duration(50)
         .EUt(4)
 
@@ -2042,17 +2042,17 @@ const registerMinecraftRecipes = (event) => {
         'CDC',
         'AEA'  
     ], {
-        A: '#forge:screws/wrought_iron',
+        A: '#forge:screws',
         B: '#tfc:hammers',
-        C: 'minecraft:gold_block',
+        C: '#forge:plates/gold',
         D: '#forge:springs',
         E: '#forge:tools/screwdrivers'
     }).id('minecraft:light_weighted_pressure_plate')
 
-    event.recipes.gtceu.assembler('light_weighted_pressure_plate')             
-        .itemInputs('#forge:springs', 'minecraft:gold_block')
+    event.recipes.gtceu.assembler('light_weighted_pressure_plate')
+        .itemInputs('4x #forge:screws', '#forge:springs', '#forge:plates/gold')
         .circuit(0)
-        .itemOutputs('4x minecraft:light_weighted_pressure_plate')
+        .itemOutputs('minecraft:light_weighted_pressure_plate')
         .duration(50)
         .EUt(4)
 
