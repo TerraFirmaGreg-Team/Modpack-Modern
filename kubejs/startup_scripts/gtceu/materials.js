@@ -48,7 +48,7 @@ const registerGTCEuMaterials = (event) => {
             GTMaterialFlags.DISABLE_DECOMPOSITION, 
             GTMaterialFlags.FORCE_GENERATE_BLOCK
         )
-        .components(Silicon, 1, Oxygen, 2)
+        .components(GTMaterials.Silicon, 1, GTMaterials.Oxygen, 2)
         .color(0x57448d)
 
     /* TFC Metals Materials */
