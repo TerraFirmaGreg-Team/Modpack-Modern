@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 
 namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
 {
+    /// <summary>
+    /// A .NET Representation of a Patchouli Page for displaying Entities
+    /// <para></para>
+    /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#entity-pages-patchoulientity">Patchouli Docs</a>
+    /// </summary>
     [Serializable, JsonObject]
     public class EntityPage : PatchouliPage
     {
-        public override string Type => "entity";
+        public override string Type => "patchouli:entity";
 
         [JsonProperty("entity")]
         public required string Entity { get; set; }

@@ -7,18 +7,22 @@ using System.Threading.Tasks;
 
 namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
 {
+    /// <summary>
+    /// A .NET Representation of a Patchouli Page for displaying Multiblocks
+    /// <para></para>
+    /// See also <see cref="Patchouli.Multiblock"/>
+    /// <br></br>
+    /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#multiblock-pages-patchoulimultiblock">Patchouli Docs</a>
+    /// </summary>
     [Serializable, JsonObject]
     public class MultiblockPage : PatchouliPage
     {
-        public override string Type => "multiblock";
+        public override string Type => "patchouli:multiblock";
 
         [JsonProperty("name")]
         public required string Name { get; set; }
 
-        [JsonProperty("mutliblock_id")]
-        public string Multiblock_ID { get; set; }
-
-        [JsonProperty("mutliblock")]
+        [JsonProperty("multiblock")]
         public Multiblock Multiblock { get; set; }
 
         [JsonProperty("enable_visualize")]

@@ -24,7 +24,13 @@
 		"Used for": "Використовується для",
 		"Formula": "Формула",
 		"Hazardous": "Небезпечний",
-		"Yes": "Так"
+		"Yes": "Так",
+		"&" : "&",
+		"Vein Index": "Vein Index",
+		"Ore Index": "Ore Index",
+		"normal": "Normal",
+		"deep": "Deep",
+		"surface": "Surface"
 	},
 
 	"veins": {
@@ -58,5 +64,6 @@
 		"dunite": "Дуніт"
 	},
 
-    "ore_index": "Це список усіх руд у світі, відсортованих в алфавітному порядку, а потім за типом жил - від найбагатших до найбідніших."
+    "ore_index_format": "Це список усіх руд у світі, відсортованих в алфавітному порядку, а потім за типом жил - від найбагатших до найбідніших.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for the celestial body $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
 }
