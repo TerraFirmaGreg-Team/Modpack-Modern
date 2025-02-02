@@ -23,9 +23,11 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'ad_astra:item/moon_stone' })
 		})
-		.fullBlock(true)
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/raw')
+		.mapColor('terracotta_cyan')
+		.fullBlock(true)
+		.opaque(true)
 
 	event.create('tfg:raw_dunite')
 		.stoneSoundType()
@@ -35,7 +37,9 @@ const registerTFGBlocks = (event) => {
 		})
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/raw')
+		.mapColor('terracotta_cyan')
 		.fullBlock(true)
+		.opaque(true)
 
 	event.create('tfg:hardened_anorthite')
 		.stoneSoundType()
@@ -45,7 +49,9 @@ const registerTFGBlocks = (event) => {
 		})
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_cyan')
 		.fullBlock(true)
+		.opaque(true)
 
 	event.create('tfg:loose_anorthite', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose_anorthite')
