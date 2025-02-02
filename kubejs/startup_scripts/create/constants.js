@@ -55,27 +55,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:layered_veridium', 
     'create:veridium_pillar',
 
-    // Scorchia
-    'create:scorchia', 
-    'create:cut_scorchia', 
-    'create:cut_scorchia_stairs', 
-    'create:cut_scorchia_slab', 
-    'create:cut_scorchia_wall', 
-    'create:polished_cut_scorchia', 
-    'create:polished_cut_scorchia_stairs', 
-    'create:polished_cut_scorchia_slab', 
-    'create:polished_cut_scorchia_wall', 
-    'create:cut_scorchia_bricks', 
-    'create:cut_scorchia_brick_stairs', 
-    'create:cut_scorchia_brick_slab', 
-    'create:cut_scorchia_brick_wall', 
-    'create:small_scorchia_bricks', 
-    'create:small_scorchia_brick_stairs', 
-    'create:small_scorchia_brick_slab',
-    'create:small_scorchia_brick_wall', 
-    'create:layered_scorchia', 
-    'create:scorchia_pillar',
-
     // Scoria
     'create:scoria', 
     'create:cut_scoria', 

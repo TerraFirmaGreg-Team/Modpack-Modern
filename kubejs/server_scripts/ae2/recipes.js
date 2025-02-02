@@ -365,7 +365,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:plates/steel',
         B: 'ae2:engineering_processor',
         C: '#ae2:glass_cable',
-        D: '#gtceu:circuits/lv',
+        D: '#gtceu:circuits/mv',
         E: '#forge:plates/titanium'
     }).id('tfg:crafting/drive')
 
@@ -377,7 +377,7 @@ const registerAE2Recipes = (event) => {
         A: '#forge:plates/steel',
         B: 'ae2:engineering_processor',
         C: '#ae2:glass_cable',
-        D: '#gtceu:circuits/lv',
+        D: '#gtceu:circuits/mv',
         E: 'minecraft:shulker_shell'
     }).id('tfg:crafting/drive_shulker')
 
@@ -1697,64 +1697,36 @@ const registerAE2Recipes = (event) => {
     };
 
     // Inscriber Silicon Press
-    event.recipes.gtceu.laser_engraver('ae2:silicon_press_iron')
-        .itemInputs('#forge:plates/iron')
-        .notConsumable('#forge:lenses/white')
+    event.recipes.gtceu.forming_press('ae2:silicon_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:silicon_press')
         .itemOutputs('ae2:silicon_press')
-        .duration(12000)
-        .EUt(116)
-    
-    event.recipes.gtceu.laser_engraver('ae2:silicon_press_wrought_iron')
-        .itemInputs('#forge:plates/wrought_iron')
-        .notConsumable('#forge:lenses/white')
-        .itemOutputs('ae2:silicon_press')
-        .duration(8000)
-        .EUt(116)
+        .duration(100)
+        .EUt(480)
 
     // Inscriber logic Press
-    event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_iron')
-        .itemInputs('#forge:plates/iron')
-        .notConsumable('#forge:lenses/green')
+    event.recipes.gtceu.forming_press('ae2:logic_processor_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:logic_processor_press')
         .itemOutputs('ae2:logic_processor_press')
-        .duration(12000)
-        .EUt(116)
-    
-    event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_wrought_iron')
-        .itemInputs('#forge:plates/wrought_iron')
-        .notConsumable('#forge:lenses/green')
-        .itemOutputs('ae2:logic_processor_press')
-        .duration(8000)
-        .EUt(116)
+        .duration(100)
+        .EUt(480)
 
     // Inscriber engineering Press
-    event.recipes.gtceu.laser_engraver('ae2:engineering_press_iron')
-        .itemInputs('#forge:plates/iron')
-        .notConsumable('#forge:lenses/light_blue')
+    event.recipes.gtceu.forming_press('ae2:engineering_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:engineering_processor_press')
         .itemOutputs('ae2:engineering_processor_press')
-        .duration(12000)
-        .EUt(116)
-    
-    event.recipes.gtceu.laser_engraver('ae2:engineering_press_wrought_iron')
-        .itemInputs('#forge:plates/wrought_iron')
-        .notConsumable('#forge:lenses/light_blue')
-        .itemOutputs('ae2:engineering_processor_press')
-        .duration(8000)
-        .EUt(116)
+        .duration(100)
+        .EUt(480)
 
     // Inscriber calculation Press
-    event.recipes.gtceu.laser_engraver('ae2:calculation_press_iron')
-        .itemInputs('#forge:plates/iron')
-        .notConsumable('#forge:lenses/blue')
+    event.recipes.gtceu.forming_press('ae2:calculation_press_stainless_steel')
+        .itemInputs('#forge:plates/stainless_steel')
+        .notConsumable('ae2:calculation_processor_press')
         .itemOutputs('ae2:calculation_processor_press')
-        .duration(12000)
-        .EUt(116)
-    
-    event.recipes.gtceu.laser_engraver('ae2:calculation_press_wrought_iron')
-        .itemInputs( '#forge:plates/wrought_iron')
-        .notConsumable('#forge:lenses/blue')
-        .itemOutputs('ae2:calculation_processor_press')
-        .duration(8000)
-        .EUt(116)
+        .duration(100)
+        .EUt(480)
 
     // Quartz Fiber
     event.recipes.gtceu.wiremill('ae2:quartz_fiber_certus')

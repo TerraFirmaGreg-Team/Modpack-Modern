@@ -41,14 +41,14 @@
 		{
 			"weight": 50,
 			"element": {
-				"location": "tfg:moon/moonbase/end/moonbase_flag",
+				"location": "tfg:moon/moonbase/end/moonbase_dish",
 				"processors": "minecraft:empty",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
 		{
-			"weight": 50,
+			"weight": 30,
 			"element": {
 				"location": "tfg:moon/moonbase/end/moonbase_launch_pad",
 				"processors": "minecraft:empty",

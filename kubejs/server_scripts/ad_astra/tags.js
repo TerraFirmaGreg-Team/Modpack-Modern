@@ -109,7 +109,8 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'minecraft:shulker_bullet',
 		'species:limpet',
 		'endermanoverhaul:windswept_hills_enderman',
-		'endermanoverhaul:soulsand_valley_enderman'
+		'endermanoverhaul:soulsand_valley_enderman',
+		'endermanoverhaul:spirit'
 	]
 
 	MOON_ENTITIES.forEach(entity => {

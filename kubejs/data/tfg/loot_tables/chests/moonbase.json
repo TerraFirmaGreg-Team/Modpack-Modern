@@ -255,7 +255,12 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "ae2:certus_quartz_crystal",
+					"name": "gtceu:advanced_integrated_circuit",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:good_integrated_circuit",
 					"weight": 20,
 					"functions": [
 						{
@@ -271,13 +276,67 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "gtceu:basic_integrated_circuit",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:certus_quartz_crystal",
+					"weight": 20,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 6,
+								"min": 2
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "ae2:charged_certus_quartz_crystal",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5,
+								"min": 3
+							},
+							"function": "minecraft:set_count"
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "ae2:fluix_crystal",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
@@ -288,12 +347,37 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
+								"max": 6,
+								"min": 3
 							},
 							"function": "minecraft:set_count"
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:interface",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:engineering_processor",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:item_storage_cell_1k",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "ae2:fluid_storage_cell_1k",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "species:music_disc_dial",
+					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
@@ -426,8 +510,8 @@
 			],
 			"rolls": {
 				"type": "minecraft:uniform",
-				"max": 8,
-				"min": 4
+				"max": 12,
+				"min": 5
 			}
 		}
 	]

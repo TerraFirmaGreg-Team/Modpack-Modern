@@ -7,8 +7,8 @@
 	],
 	"placement": {
 		"salt": 486424619,
-		"spacing": 5,
-		"separation": 2,
+		"spacing": 4,
+		"separation": 1,
 		"type": "minecraft:random_spread",
 		"exclusion_zone": {
 			"other_set": "tfg:moon/meteors",
