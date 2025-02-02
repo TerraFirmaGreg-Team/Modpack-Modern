@@ -1,4 +1,8 @@
+// priority: 0
+
 const registerTFGBlocks = (event) => {
+
+	//#region Artificial End Portal Frame
 	
 	event.create('tfg:artificial_end_portal_frame')
 		.stoneSoundType()
@@ -8,12 +12,12 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
-		
 	
-	// gem indicators
+	//#endregion
+
+	//#region Gem Indicators
 	
-	const GEM_INDICATORS = 
-	[
+	const GEM_INDICATORS = [
 		[ 'almandine', 0x991616 ],
 		[ 'andradite', 0xfbcb25 ],
 		[ 'blue_topaz', 0xd8fafb ],
@@ -49,10 +53,11 @@ const registerTFGBlocks = (event) => {
 	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 	
-	GEM_INDICATORS.forEach(gem => 
-	{
+	GEM_INDICATORS.forEach(gem => {
 		event.createCustom(`tfg:buds/small_${gem[0]}_bud`,  () => new $ClusterBlock(3, 4, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 		event.createCustom(`tfg:buds/medium_${gem[0]}_bud`, () => new $ClusterBlock(4, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 		event.createCustom(`tfg:buds/large_${gem[0]}_bud`,  () => new $ClusterBlock(5, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 	})
+	
+	//#endregion	
 }

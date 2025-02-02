@@ -4,16 +4,15 @@
  * Событие регистрации предметов.
  */
 StartupEvents.registry('item', event => {
-    // registerGTCEuItems(event)
-    // registerTFGItems(event)
+    registerGTCEuItems(event)
+    registerTFGItems(event)
 })
 
 /**
  * Событие регистрации блоков.
  */
 StartupEvents.registry('block', event => {
-    // registerGTCEuBlocks(event)
-    // registerTFGBlocks(event)    
+    registerTFGBlocks(event)    
 })
 
 /**
@@ -26,27 +25,29 @@ BlockEvents.modification(event => {
 /**
  * Событие изменения предметов.
  */
-ItemEvents.modification(event => {})
+ItemEvents.modification(event => {
+    //
+})
 
 /**
  * Событие регистрации жидкостей.
  */
 StartupEvents.registry('fluid', event => {
-    // registerTFGFluids(event)
+    registerTFGFluids(event)
 })
 
 /**
  * Событие регистрации типов рецептов.
  */
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    // registerGTCEuRecipeTypes(event)
+    registerGTCEuRecipeTypes(event)
 })
 
 /**
  * Событие регистрации механизмов.
  */
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    // registerGTCEuMachines(event)
+    registerGTCEuMachines(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -60,7 +61,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
  * Событие модификации материалов.
 */
 GTCEuStartupEvents.materialModification(event => {
-    
+    registerGTCEuMaterialModification(event)
 })
 
 /**
@@ -70,6 +71,21 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     registerGTCEuTagPrefixes(event)
     registerTFCTagPrefixes(event)
 })
+
+/**
+ * Событие регистрации иконок тэг префиксов.
+*/
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    //
+})
+
+/**
+ * Событие регистрации типов иконок тэг префиксов.
+*/
+GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
+    registerGTCEuMaterialIconTypes(event)
+})
+
 
 
 /**

@@ -1,5 +1,6 @@
+// priority: 0
+
 const registerTFGFluids = (event) => {
-	
 	event.create('tfg:nether_slurry')
 		.thickTexture(0x6b281b)
 		.bucketColor(0x6b281b)

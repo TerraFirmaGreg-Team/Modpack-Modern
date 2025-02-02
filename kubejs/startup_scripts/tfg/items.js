@@ -1,5 +1,6 @@
-const registerTFGItems = (event) =>
-{
+// priority: 0
+
+const registerTFGItems = (event) => {
     event.create('tfg:hardwood_strip')
         .translationKey('item.tfg.hardwood_strip')
 
