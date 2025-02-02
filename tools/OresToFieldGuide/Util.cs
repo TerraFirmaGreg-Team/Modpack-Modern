@@ -16,6 +16,13 @@ namespace OresToFieldGuide
             return input.Substring(input.IndexOf(':') + 1);
         }
 
+        public static string Dump(this StringBuilder stringBuilder)
+        {
+            var result = stringBuilder.ToString();
+            stringBuilder.Clear();
+            return result;
+        }
+
         public static bool TryRemoveStartingSubstring(string input, string substring, out string output)
         {
             if(input.StartsWith(substring))

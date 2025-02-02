@@ -201,15 +201,42 @@ namespace OresToFieldGuide
             patchouliPages.Add(new TextPage()
             {
                 Title = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Vein Index"]}",
-                Text = pageBuilder.ToString(),
+                Text = pageBuilder.Dump(),
             });
 
-
-            patchouliPages.Add(new EmptyPage());
-
+            //Sort the veins alphabetically
+            List<KeyValuePair<string, Vein>> veinNames = new List<KeyValuePair<string, Vein>>();
             foreach (var vein in veins)
             {
-                pageBuilder.Clear();
+                veinNames.Add(new KeyValuePair<string, Vein>(vein.ComputeWeightiestOreNames(tokens.RockDictionary.Keys.ToArray(), mineralData, oreToEntry), vein));
+            }
+
+            veinNames = veinNames.OrderBy(x => x.Key).ToList();
+            //Build index of veins
+            TextPage veinIndexPage = new TextPage() { Text = "" };
+            for (int i = 0; i < veinNames.Count; i++)
+            {
+                KeyValuePair<string, Vein> kvp = veinNames[i];
+                var veinName = veinNames[i].Key;
+                var vein = veinNames[i].Value;
+
+                if (i != 0 && i % 14 == 0)
+                {
+                    veinIndexPage.Text = pageBuilder.Dump();
+                    patchouliPages.Add(veinIndexPage);
+
+                    veinIndexPage = new TextPage() { Text = "" };
+                }
+
+                pageBuilder.List($"$(l:tfg_ores/{patchouliEntry.FileNameWithoutExtension}#{vein.FileName}){veinName}$()");
+            }
+
+            pageBuilder.Clear();
+            foreach(var kvp in veinNames)
+            {
+                string veinName = kvp.Key;
+                Vein vein = kvp.Value;
+
                 Vein.Config config = vein.VeinConfig;
                 //Build the main page
                 TextPage mainPage = new TextPage()
@@ -217,7 +244,8 @@ namespace OresToFieldGuide
                     Text = "",
                     Anchor = $"{vein.FileName}",
                 };
-                mainPage.Title = vein.ComputeVeinName(tokens.RockDictionary.Keys.ToArray(), mineralData, oreToEntry);
+                // I'd like to make it so the main page for the name displayed a translated, nicified file name. CBA atm tho
+                //mainPage.Title = vein.ComputeVeinTitle(tokens.KeywordDictionary, mineralData);
 
                 //Rarity
                 if(config.Rarity.HasValue)
@@ -312,7 +340,7 @@ namespace OresToFieldGuide
                     }
                 }
                 pageBuilder.LineBreak2();
-                mainPage.Text = pageBuilder.ToString();
+                mainPage.Text = pageBuilder.Dump();
 
                 patchouliPages.Add(mainPage);
             }
@@ -341,10 +369,8 @@ namespace OresToFieldGuide
             patchouliPages.Add(new TextPage()
             {
                 Title = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Ore Index"]}",
-                Text = pageBuilder.ToString()
+                Text = pageBuilder.Dump()
             });
-
-            pageBuilder.Clear();
 
             patchouliPages.Add(new EmptyPage());
 
@@ -403,17 +429,15 @@ namespace OresToFieldGuide
 
             var alphabetizedOres = oreToEntry.Keys.OrderBy(k => k).ToArray();
             TextPage oreIndexPage = new TextPage() { Text = "" };
-            pageBuilder.Clear();
 
             for(int i = 0; i < alphabetizedOres.Length; i++)
             {
-                if(i != 0 && i % 14 == 0)
+                if (i != 0 && i % 14 == 0)
                 {
-                    oreIndexPage.Text = pageBuilder.ToString();
+                    oreIndexPage.Text = pageBuilder.Dump();
                     patchouliPages.Add(oreIndexPage);
 
                     oreIndexPage = new TextPage() { Text = "" };
-                    pageBuilder.Clear();
                 }
 
                 var ore = alphabetizedOres[i];

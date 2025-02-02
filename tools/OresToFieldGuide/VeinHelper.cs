@@ -12,6 +12,7 @@ namespace OresToFieldGuide
 {
     public static class VeinHelper
     {
+        private static StringBuilder stringBuilder = new StringBuilder();
         public static bool TryGetOresAndPercentage(this Vein vein, out WeightedOre[] weightedOres)
         {
             weightedOres = null;
@@ -54,7 +55,7 @@ namespace OresToFieldGuide
         }
 
         //Computes the vein's name inside the book
-        internal static string ComputeVeinName(this Vein vein, string[] internalRockNames, MineralData mineralData, Dictionary<string, OreIndexEntry> oreToEntry)
+        internal static string ComputeWeightiestOreNames(this Vein vein, string[] internalRockNames, MineralData mineralData, Dictionary<string, OreIndexEntry> oreToEntry)
         {
             string[] oresInVein = Array.Empty<string>();
 
@@ -78,6 +79,7 @@ namespace OresToFieldGuide
             .ToArray()!;
 
             WeightedOre? firstHeaviestOre = null;
+            WeightedOre? secondHeaviestOre = null;
             foreach (var ore in oresInVein)
             {
                 if (!oreToEntry.TryGetValue(ore, out var oreIndexEntry))
@@ -105,11 +107,11 @@ namespace OresToFieldGuide
                 }
                 else if(weightedOreToCheckAgainst > firstHeaviestOre)
                 {
+                    secondHeaviestOre = firstHeaviestOre;
                     firstHeaviestOre = weightedOreToCheckAgainst;
                 }
             }
 
-            StringBuilder result = new StringBuilder();
             if(firstHeaviestOre != null)
             {
                 if(Util.TryRemoveLastSubstring(firstHeaviestOre.Value.ore, "ore", out var orelessString))
@@ -117,12 +119,23 @@ namespace OresToFieldGuide
                     var mineralDataEntry = mineralData.FindMineral(orelessString);
                     if(mineralDataEntry != null)
                     {
-                        result.Append(mineralDataEntry.Name);
-                        result.Append(' ');
+                        stringBuilder.Append(mineralDataEntry.Name);
                     }
                 }
             }
-            return result.ToString();
+            if(secondHeaviestOre != null)
+            {
+                if(Util.TryRemoveLastSubstring(secondHeaviestOre.Value.ore, "ore", out var orelessString))
+                {
+                    var mineralDataEntry = mineralData.FindMineral(orelessString);
+                    if(mineralDataEntry != null)
+                    {
+                        stringBuilder.Append(" & ");
+                        stringBuilder.Append(mineralDataEntry.Name);
+                    }
+                }
+            }
+            return stringBuilder.Dump();
         }
 
         public static string[] GetRocksInVein(this Vein vein, string[] internalRockNames)

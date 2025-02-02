@@ -26,7 +26,10 @@
     "Yes": "Yes",
 		"&" : "&",
     "Vein Index": "Vein Index",
-		"Ore Index": "Ore Index"
+		"Ore Index": "Ore Index",
+		"normal": "Normal",
+		"deep": "Deep",
+		"surface": "Surface"
   },
 
   "rocks": {
