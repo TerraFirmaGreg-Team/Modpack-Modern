@@ -1,8 +1,4 @@
-// priority: 0
-
-// Visit the wiki for more info - https://kubejs.com/
-
-console.info('Hello, World! (Loaded startup scripts)')
+// priority: 1
 
 /**
  * Событие регистрации предметов.
@@ -30,9 +26,7 @@ BlockEvents.modification(event => {
 /**
  * Событие изменения предметов.
  */
-ItemEvents.modification(event => {
-
-})
+ItemEvents.modification(event => {})
 
 /**
  * Событие регистрации жидкостей.
@@ -55,11 +49,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // registerGTCEuMachines(event)
 })
 
-/**
- * Событие регистрации материалов.
-*/
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    registerAE2Materials(event)
     registerGTCEuMaterials(event)
+    registerTFCMaterials(event)
+    registerTFGMaterials(event)
 })
 
 /**
@@ -74,4 +68,13 @@ GTCEuStartupEvents.materialModification(event => {
 */
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     registerGTCEuTagPrefixes(event)
+    registerTFCTagPrefixes(event)
 })
+
+
+/**
+ * Событие регистрации информации о составе предмета.
+ */
+// TFGStartupEvents.materialInfo(event => {
+//     registerGTCEuMaterialInfo(event)
+// })

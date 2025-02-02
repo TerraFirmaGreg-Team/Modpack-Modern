@@ -1,5 +1,6 @@
-const registerTFGMaterials = (event) =>
-{
+// priority: 0
+
+const registerTFGMaterials = (event) => {
     event.create('hardwood')
         .dust()
         .flags(GTMaterialFlags.FLAMMABLE)
