@@ -36,7 +36,7 @@ const registerGTCEuMaterials = (event) => {
         .fluid()
         .color(0xFBB982)
 
-    const Fluix = event.creater('tfg:fluix')
+    const Fluix = event.create('tfg:fluix')
         .fluid()
         .gem(1)
         .color(0xD2D2E6)
