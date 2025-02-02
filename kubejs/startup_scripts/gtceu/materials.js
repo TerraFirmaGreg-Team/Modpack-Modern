@@ -33,11 +33,11 @@ const registerGTCEuMaterials = (event) => {
 
     /* Specific Materials */
     const Latex = event.create('tfg:latex')
-        .fluid()
+        .liquid()
         .color(0xFBB982)
 
     const Fluix = event.create('tfg:fluix')
-        .fluid()
+        .liquid()
         .gem(1)
         .color(0xD2D2E6)
         .iconSet(GTMaterialIconSet.CERTUS)
@@ -54,55 +54,55 @@ const registerGTCEuMaterials = (event) => {
     /* TFC Metals Materials */
     const Unknown = event.create('tfg:unknown')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x2F2B27)
 
     const PigIron = event.create('tfg:pig_iron')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x6A595C)
 
     const HighCarbonSteel = event.create('tfg:high_carbon_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x5F5F5F)
        
     const HighCarbonBlackSteel = event.create('tfg:high_carbon_black_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x111111)
 
     const HighCarbonRedSteel = event.create('tfg:high_carbon_red_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x700503)
 
     const HighCarbonBlueSteel = event.create('tfg:high_carbon_blue_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x2D5596)
 
     const WeakSteel = event.create('tfg:weak_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x111111)
 
     const WeakRedSteel = event.create('tfg:weak_red_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x700503)
 
     const WeakBlueSteel = event.create('tfg:weak_blue_steel')
         .ingot()
-        .fluid()
+        .liquid()
         .color(0x2D5596)
 
     /* Dead */
     const Limonite = event
-        .fluid()
+        .liquid()
         .create('tfg:limonite')
     
     const Bismuthinite = event
-        .fluid()
+        .liquid()
         .create('tfg:bismuthinite')
 }
