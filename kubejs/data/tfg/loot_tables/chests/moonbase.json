@@ -208,7 +208,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:aluminium_ingot",
-					"weight": 50,
+					"weight": 65,
 					"functions": [
 						{
 							"add": false,
@@ -224,7 +224,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:steel_ingot",
-					"weight": 50,
+					"weight": 80,
 					"functions": [
 						{
 							"add": false,
@@ -240,7 +240,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:stainless_steel_ingot",
-					"weight": 30,
+					"weight": 50,
 					"functions": [
 						{
 							"add": false,
@@ -357,7 +357,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "ae2:interface",
-					"weight": 10
+					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
