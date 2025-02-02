@@ -46,6 +46,7 @@ config/stellarcore_stitcher_cache_vanilla.dat
 # .minecraft
 !bansoukou/**.zip
 
+gtceu/
 .vscode/
 .idea/
 .bobby/
