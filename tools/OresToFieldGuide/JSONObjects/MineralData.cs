@@ -51,7 +51,7 @@ namespace OresToFieldGuide.JSONObjects
             /// The internal name of the mineral, cannot be null
             /// </summary>
             [JsonProperty("id")]
-            public string? Id { get; set; }
+            public string Id { get; set; }
 
             /// <summary>
             /// What can it be used for, Can be null
@@ -70,12 +70,6 @@ namespace OresToFieldGuide.JSONObjects
             /// </summary>
             [JsonProperty("formula")]
             public string? Formula { get; set; }
-
-            /// <summary>
-            /// A "Tip" for the mineral, can be null
-            /// </summary>
-            [JsonProperty("tips")]
-            public string? Tips { get; set; }
 
             /// <summary>
             /// Wether the mineral is hazardous or not, defaults to false

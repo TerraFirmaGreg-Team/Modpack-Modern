@@ -23,6 +23,9 @@ namespace OresToFieldGuide.JSONObjects
         [JsonProperty("ore_index_format")]
         public string OreIndex { get; set; }
 
+        [JsonProperty("vein_index_format")]
+        public string VeinIndex { get; set; }
+
         [JsonProperty("planet_names")]
         public Dictionary<string, string> PlanetDictionary { get; set; }
 

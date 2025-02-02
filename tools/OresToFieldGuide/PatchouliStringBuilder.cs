@@ -34,6 +34,8 @@ namespace OresToFieldGuide
 
         public void Append(string value) => stringBuilder.Append(value);
 
+        public void Append(char value) => stringBuilder.Append(value);
+
         public void Clear() => stringBuilder.Clear();
 
         public void LineBreak() => Append(LINE_BREAK);

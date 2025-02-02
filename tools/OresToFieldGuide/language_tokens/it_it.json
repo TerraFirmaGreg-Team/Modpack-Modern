@@ -24,6 +24,7 @@
     "formula": "formula",
     "hazardous": "hazardous",
     "Yes": "Yes",
+		"&" : "&",
     "Vein Index": "Vein Index",
 		"Ore Index": "Ore Index"
   },
@@ -59,5 +60,6 @@
     "disc": "Disc Vein"
   },
 
-  "ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the celestial body $(thing){0}$(), sorted alphabetically and then by richest to poorest vein type."
+  "ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the celestial body $(thing){0}$(), sorted alphabetically and then by richest to poorest vein type.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for the celestial body $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
 }
