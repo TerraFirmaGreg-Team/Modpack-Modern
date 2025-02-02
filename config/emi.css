@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -20,6 +20,11 @@
 	 * Where EMI should pull stacks from to populate the index.
 	 */
 	index-source: creative;
+
+	/**
+	 * Which sidebar should be searched using the search bar.
+	 */
+	search-sidebar: right;
 
 	/**
 	 * Whether normal search queries should include the tooltip.
@@ -96,9 +101,20 @@
 	empty-search-sidebar-focus: none;
 
 	/**
-	 * The amount of vertical margin to give in the recipe screen.
+	 * Whether the EMI config button should be visible.
 	 */
-	vertical-margin: 20;
+	emi-config-button-visibility: shown;
+
+	/**
+	 * Whether the recipe tree button should be visible.
+	 */
+	recipe-tree-button-visibility: auto;
+
+	/**
+	 * The maximum height the recipe screen will grow to be if space is available in
+	 * pixels.
+	 */
+	maximum-recipe-screen-height: 256;
 
 	/**
 	 * The minimum width of the recipe screen in pixels. Controls how many tabs there
@@ -106,6 +122,11 @@
 	 * of most screens.
 	 */
 	minimum-recipe-screen-width: 176;
+
+	/**
+	 * The amount of vertical margin to give in the recipe screen.
+	 */
+	vertical-margin: 20;
 
 	/**
 	 * Where to show workstations in the recipe screen
@@ -292,7 +313,7 @@
 	toggle-visibility: "key.keyboard.unknown";
 
 	/**
-	 * Focuse the search bar.
+	 * Focuses the search bar.
 	 */
 	focus-search: "ctrl key.keyboard.f";
 
