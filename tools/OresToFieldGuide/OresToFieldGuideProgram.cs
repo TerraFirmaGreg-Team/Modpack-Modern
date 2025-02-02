@@ -361,7 +361,7 @@ namespace OresToFieldGuide
             }
         }
 
-        private async Task MoveFilesToInGameFieldGuide()
+        private Task MoveFilesToInGameFieldGuide()
         {
             //Iterate thru the locales
             foreach(var locale in _localeToOutputs.Keys)
@@ -392,6 +392,7 @@ namespace OresToFieldGuide
                     File.Copy(pagePath, Path.Combine(destinationFolder, fileName), true);
                 }
             }
+            return Task.CompletedTask;
         }
 
         public OresToFieldGuideProgram(ProgramArguments arguments)

@@ -167,8 +167,8 @@ namespace OresToFieldGuide
         {
             return new string[]
             {
-                "hazards.json",
-                "ore_basics.json"
+                "hazards",
+                "ore_basics"
             };
         }
 
