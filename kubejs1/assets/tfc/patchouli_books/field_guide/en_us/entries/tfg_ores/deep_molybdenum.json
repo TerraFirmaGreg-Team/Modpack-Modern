@@ -1,0 +1,56 @@
+{
+    "name": "Wulfenite & Molybdenite",
+    "icon": "gtceu:rich_raw_wulfenite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 245$(br)Density: 0.45$(br)Type: Cluster Vein$(br)Y: -64 - 10$(br)Size: 26$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite, Granite, Diorite, Gabbro$(br2)Indicator: Wulfenite, Molybdenite, Molybdenum, Powellite"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Wulfenite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/wulfenite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 40%$(br)Source of: Lead, Molybdenum$(br)Formula: PbMoO₄$(br)Hazardous: Yes"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Molybdenite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/molybdenite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 30%$(br)Source of: Molybdenum$(br)Formula: MoS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Molybdenum",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/molybdenum" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Molybdenum$(br)Formula: Mo"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Powellite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/powellite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Molybdenum$(br)Formula: CaMoO₄"
+		}
+    ]
+}

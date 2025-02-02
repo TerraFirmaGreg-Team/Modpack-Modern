@@ -1,0 +1,56 @@
+{
+    "name": "Bentonite & Olivine",
+    "icon": "gtceu:olivine_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 180$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: -40 - 30$(br)Size: 26$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite, Granite, Diorite, Gabbro$(br2)Indicator: Bentonite, Magnesite, Olivine, Glauconite Sand"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Bentonite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bentonite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Source of: Magnesium$(br)Formula: NaMg₆Si₁₂H₄(H₂O)₅O₃₆"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Magnesite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/magnesite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Magnesium$(br)Formula: MgCO₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Olivine",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/olivine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Magnesium$(br)Formula: Mg₂Fe(SiO₂)₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Glauconite Sand",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/glauconite_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Magnesium, Aluminium$(br)Formula: KMg₂Al₄H₂O₁₂"
+		}
+    ]
+}

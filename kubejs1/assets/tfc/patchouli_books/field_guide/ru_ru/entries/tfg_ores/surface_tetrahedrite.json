@@ -1,0 +1,45 @@
+{
+    "name": "Тетраэдрит (Поверхностный)",
+    "icon": "gtceu:poor_raw_tetrahedrite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 140$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: 60 - 210$(br)Размер: 50$(br2)Виды камней: Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Тетраэдрит, Самородная медь"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Тетраэдрит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/tetrahedrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 60%$(br)Плавится в: Медь$(br)Формула: Cu₃SbS₃Fe"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Самородная медь",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/copper" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Плавится в: Медь$(br)Формула: Cu"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Стибнит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/stibnite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Плавится в: Сурьма$(br)Формула: Sb₂S₃"
+		}
+    ]
+}

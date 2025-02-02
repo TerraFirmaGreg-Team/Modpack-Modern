@@ -1,0 +1,56 @@
+{
+    "name": "Бентонит и Оливин",
+    "icon": "gtceu:olivine_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 180$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: -40 - 30$(br)Размер: 26$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит, Гранит, Диорит, Габбро$(br2)Индикаторы: Бентонит, Магнезит, Оливин, Глауконитовый песок"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Бентонит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bentonite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Магний$(br)Формула: NaMg₆Si₁₂H₄(H₂O)₅O₃₆"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Магнезит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/magnesite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Магний$(br)Формула: MgCO₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Оливин",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/olivine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Магний$(br)Формула: Mg₂Fe(SiO₂)₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Глауконитовый песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/glauconite_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Магний, Алюминий$(br)Формула: KMg₂Al₄H₂O₁₂"
+		}
+    ]
+}

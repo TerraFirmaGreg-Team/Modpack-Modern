@@ -1,0 +1,56 @@
+{
+    "name": "Селитра и Электротин",
+    "icon": "gtceu:raw_saltpeter",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 210$(br)Плотность: 0.3$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 60$(br)Размер: 50$(br2)Виды камней: Гранит, Диорит, Габбро, Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Селитра, Диатомовый пелит, Электротин, Алунит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Селитра",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/saltpeter" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Калий$(br)Формула: KNO₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Диатомовый пелит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/diatomite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Железо, Алюминий$(br)Формула: (SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Электротин",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/electrotine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Золото, Серебро, Редстоун$(br)Формула: (Si(FeS₂)₅(CrAl₂O₃)Hg₃)(AgAu)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Алунит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/alunite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Калий, Алюминий$(br)Формула: KAl₃Si₂H₆O₁₄"
+		}
+    ]
+}

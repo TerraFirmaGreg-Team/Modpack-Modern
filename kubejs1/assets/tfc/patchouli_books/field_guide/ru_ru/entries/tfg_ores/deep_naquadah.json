@@ -1,0 +1,34 @@
+{
+    "name": "Наквада и Плутоний (Глубокие)",
+    "icon": "gtceu:rich_raw_naquadah",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 310$(br)Плотность: 0.3$(br)Вид: кластерная жила$(br)Y-уровень: -64 - -20$(br)Размер: 32$(br2)Виды камней: Кварцит, Сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Наквада, Плутоний"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Наквада",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/naquadah" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 75%$(br)Содержит: Наквада$(br)Формула: Nq"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Плутоний",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/plutonium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Плутоний$(br)Формула: Pu²³⁹$(br)Ядовит: Да"
+		}
+    ]
+}

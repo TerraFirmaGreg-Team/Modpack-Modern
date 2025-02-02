@@ -1,0 +1,23 @@
+{
+    "name": "Coal",
+    "icon": "minecraft:coal",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 215$(br)Density: 0.55$(br)Type: Cluster Vein$(br)Y: 0 - 210$(br)Size: 60$(br2)Stone types: Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Coal"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Coal",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/coal" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 100%$(br)Used for: Forge fuel, Distillation$(br)Formula: C"
+		}
+    ]
+}

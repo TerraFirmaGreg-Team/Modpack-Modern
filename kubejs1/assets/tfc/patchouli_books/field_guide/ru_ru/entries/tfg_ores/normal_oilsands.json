@@ -1,0 +1,23 @@
+{
+    "name": "Нефтеносный песок",
+    "icon": "gtceu:raw_oilsands",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 185$(br)Плотность: 0.20$(br)Вид: Кластерная жила$(br)Y-уровень: 0 - 70$(br)Размер: 55$(br2)Виды камней: Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикаторы: Нефтеносный песок$(br2)Ранний доступ к нефти и её продуктам."
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Нефтеносный песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/oilsands" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 100%"
+		}
+    ]
+}

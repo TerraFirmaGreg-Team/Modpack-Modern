@@ -1,0 +1,53 @@
+{
+    "name": "Kaolin Clay",
+    "icon": "tfc:kaolin_clay",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+			"anchor": "kaolinite",
+            "text": "Kaolin Clay is required to make $(l:mechanics/fire_clay)Fire Clay$(). It can be found spawning at high altitudes in Plateaus, Old Mountains, Rolling Hills, and Highlands, at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay."
+        },
+		{
+			"type": "tfc:multimultiblock",
+			"text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
+			"multiblocks": [
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:kaolin_clay_grass"
+					}
+				},
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:red_kaolin_clay"
+					}
+				},
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:white_kaolin_clay"
+					}
+				},
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:pink_kaolin_clay"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:powder/kaolinite",
+			"anchor": "powder",
+			"text": "Only $(thing)20%$() of Kaolin Clay will turn into $(thing)Kaolinite Powder$(), so it's recommended to bake it on-site using $(l:getting_started/pit_kiln)Pit Kilns$() to save inventory space.$(br2)Bring home around 20 $(thing)Blocks$() of Kaolin Clay as well, for $(l:mechanics/glassworking_applications)Glassworking$() later."
+		}
+    ]
+}

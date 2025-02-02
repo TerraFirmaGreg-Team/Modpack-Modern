@@ -1,0 +1,45 @@
+{
+    "name": "Сфалерит и Сера (поверхностные)",
+    "icon": "gtceu:poor_raw_sphalerite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 145$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: 60 - 210$(br)Размер: 50$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит, Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикатор: Сфалерит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сфалерит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sphalerite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 40%$(br)Плавится в: Цинк$(br)Формула: ZnS"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сера",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sulfur" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 55%$(br)Формула: S"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Пирит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Плавится в: Железо$(br)Формула: FeS₂"
+		}
+    ]
+}

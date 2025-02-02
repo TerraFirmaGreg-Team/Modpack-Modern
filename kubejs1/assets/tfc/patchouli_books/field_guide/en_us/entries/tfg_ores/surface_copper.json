@@ -1,0 +1,60 @@
+{
+    "name": "Chalcopyrite & Realgar",
+    "icon": "gtceu:raw_chalcopyrite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 140$(br)Density: 0.25$(br)Type: Cluster Vein$(br)Y: 30 - 210$(br)Size: 50$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Native Copper, Cassiterite, Realgar"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Chalcopyrite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/chalcopyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 55%$(br)Melts into: Copper$(br)Formula: CuFeS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Zeolite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/zeolite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Aluminium, Oxygen$(br)Formula: NaCa₄Si₂₇Al₉(H₂O)₂₈O₇₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Cassiterite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cassiterite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 5%$(br)Melts into: Tin$(br)Formula: SnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Realgar",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/realgar" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Arsenic$(br)Formula: As₄S₄$(br)Hazardous: Yes"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "If you're having trouble finding Realgar, another source of Arsenic is $(l:tfg_ores/normal_garnierite)Cobaltite$(), although it will require an $(thing)Electric Blast Furnace$() to process."
+		}
+    ]
+}

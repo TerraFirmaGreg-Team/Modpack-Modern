@@ -1,0 +1,67 @@
+{
+    "name": "Гарниерит и Кобальтит",
+    "icon": "gtceu:raw_garnierite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 140$(br)Плотность: 0.4$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 60$(br)Размер: 40$(br2)Виды камней: Габбро$(br2)Индикатор: Гарниерит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гарниерит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/garnierite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Плавится в: Никель$(br)Формула: NiO"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Никель",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/nickel" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 10%$(br)Плавится в: Никель$(br)Формула: Ni"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Кобальтит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cobaltite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Содержит: Кобальт, Мышьяк$(br)Формула: CoAsS$(br)Ядовит: Да"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Пентландит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pentlandite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Плавится в: Никель$(br)Формула: Ni₉S₈"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Кобальт",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cobalt" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Кобальт$(br)Формула: Co"
+		}
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Tetrahedrite (Normal)",
+    "icon": "gtceu:raw_tetrahedrite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 170$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 75$(br)Size: 40$(br2)Stone types: Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Tetrahedrite, Native Copper"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Tetrahedrite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/tetrahedrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 50%$(br)Melts into: Copper$(br)Formula: Cu₃SbS₃Fe"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Native Copper",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/copper" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 30%$(br)Melts into: Copper$(br)Formula: Cu"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Stibnite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/stibnite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 20%$(br)Smelts into: Antimony$(br)Formula: Sb₂S₃"
+		}
+    ]
+}

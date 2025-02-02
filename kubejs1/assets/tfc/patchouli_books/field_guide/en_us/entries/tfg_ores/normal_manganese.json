@@ -1,0 +1,56 @@
+{
+    "name": "Manganese & Tantalum",
+    "icon": "gtceu:raw_grossular",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 195$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -32 - 60$(br)Size: 40$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite, Shale, Claystone, Limestone, Conglomerate, Dolomite, Chert, Chalk$(br2)Indicator: Grossular, Spessartine, Pyrolusite, Tantalite"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Grossular",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/grossular" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 30%$(br)Source of: Calcium, Aluminium$(br)Formula: Ca₃Al₂Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Spessartine",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/spessartine" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 20%$(br)Source of: Manganese, Aluminium$(br)Formula: Al₂Mn₃Si₃O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Pyrolusite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrolusite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 20%$(br)Smelts into: Manganese$(br)Formula: MnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Tantalite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/tantalite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 10%$(br)Source of: Manganese, Tantalum$(br)Formula: MnTa₂O₆"
+		}
+    ]
+}

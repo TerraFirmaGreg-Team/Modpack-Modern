@@ -1,0 +1,34 @@
+{
+    "name": "Naquadah & Plutonium",
+    "icon": "gtceu:rich_raw_naquadah",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 310$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -64 - -20$(br)Size: 32$(br2)Stone types: Quartzite, Slate, Phyllite, Schist, Gneiss, Marble$(br2)Indicator: Naquadah, Plutonium"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Naquadah",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/naquadah" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 75%$(br)Source of: Stargatium$(br)Formula: Nq"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Plutonium",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/plutonium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 25%$(br)Source of: Plutonium$(br)Formula: Pu²³⁹$(br)Hazardous: Yes"
+		}
+    ]
+}

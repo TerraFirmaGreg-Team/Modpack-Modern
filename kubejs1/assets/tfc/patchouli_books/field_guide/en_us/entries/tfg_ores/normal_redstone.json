@@ -1,0 +1,45 @@
+{
+    "name": "Redstone, Cinnabar, & Ruby",
+    "icon": "minecraft:redstone",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 160$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 100$(br)Size: 40$(br2)Stone types: Granite$(br2)Indicator: Redstone, Ruby, Cinnabar$(br2)Can't find it? Try looking in oceans, the Redstone glows!"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Redstone",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/redstone" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 45%$(br)Melts into: Redstone$(br)Formula: Si(FeS₂)₅(CrAl₂O₃)Hg₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Ruby",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/ruby" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Source of: Aluminium, Chromium$(br)Formula: CrAl₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Cinnabar",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cinnabar" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 20%$(br)Source of: Mercury$(br)Formula: HgS$(br)Hazardous: Yes"
+		}
+    ]
+}

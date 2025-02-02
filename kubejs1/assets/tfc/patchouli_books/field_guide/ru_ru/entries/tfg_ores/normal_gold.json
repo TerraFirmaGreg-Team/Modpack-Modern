@@ -1,0 +1,56 @@
+{
+    "name": "Золото, Лимонит и Гематит (обычные)",
+    "icon": "minecraft:raw_gold",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 170$(br)Плотность: 0.4$(br)Вид: дискообразная жила$(br)Y-уровень: -32 - 60$(br)Размер: 40$(br)Высота: 12$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит, Гранит, Диорит, Габбро$(br2)Индикаторы: Лимонит, Гематит, Самородное золото"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Золото",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/gold" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 55%$(br)Плавится в: Золото$(br)Формула: Au"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Жёлтый лимонит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/yellow_limonite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Плавится в: Железо$(br)Формула: FeHO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гематит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/hematite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Плавится в: Железо$(br)Формула: Fe₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гётит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/goethite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Плавится в: Железо$(br)Формула: FeHO₂"
+		}
+    ]
+}

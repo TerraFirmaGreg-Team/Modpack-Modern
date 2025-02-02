@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "tfg:block/buds/large_realgar_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "tfg:block/buds/large_realgar_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tfg:block/buds/large_realgar_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "tfg:block/buds/large_realgar_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "tfg:block/buds/large_realgar_bud"
+    },
+    "facing=west": {
+      "model": "tfg:block/buds/large_realgar_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

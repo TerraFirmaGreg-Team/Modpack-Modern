@@ -1,0 +1,63 @@
+{
+	"name": "Противодействие ядовитым рудам",
+	"icon": "gtceu:hazmat_headpiece",
+	"category": "tfc:tfg_ores",
+	"priority": true,
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Некоторые руды ядовиты! Их перенос в инвентаре будет наносить вам урон.$(br2)Существует $(thing)костюм хим. защиты (Hazmat)$(), но он становится доступен в $(thing)MV$(). Так что же нам делать?$(br2)Вот несколько советов по противодействию этому в TFG на данный момент:"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "С помощью сосудов, руду можно переносить безопасно, а с помощью же $(thing)ПКМ$() самим сосудом по руде (или с рудой внутри), можно либо поместить руду внутрь сундука или машины, либо выложить её без повторного помещения её непосредственно в инвентарь. $(br2)Либо же можно отключить яды в настройках мода."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Камни",
+			"item": { "tag": "tfc:rock_knapping" },
+			"text": "Чтобы избежать ядовитых камней, проще всего их вовсе не поднимать.$(br)Забив инвентарь, например, $(thing)Камнями$(), можно <<забронировать>> место в инвентаре, а потом за один заход поднять все ядовитые предметы и быстренько их сложить в $(thing)Сосуд$() или $(thing)Рюкзак$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Контейнеры",
+			"text": "Как уже говорилось ранее, урон от отравления наносится если предметы лежат непосредственно в $(thing)инвентаре$() игрока, нахождение их в любом другом контейнере полностью нейтрализует все отрицательные эффекты.",
+			"item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Броня",
+			"text": "Чем лучше броня, тем меньше урона вы будете получать даже от ядовитых руд.",
+			"item": { "tag": "minecraft:trimmable_armor" }
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Родниковая вода",
+			"item": "tfc:bucket/spring_water",
+			"text": "Нахождение в $(thing)Родниковой воде$() усиливает естественную $(thing)Регенерацию$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Выдержанный алкоголь",
+			"text": "$(thing)Выдержанные (Aged)$() версии алкоголя дают эффекты ванильных зелий.$(br2)Переносить же его можно в $(l:getting_started/pottery#jug)Кувшине$() или $(l:waterflasks/recipes)Фляге$().",
+			"item": "tfcagedalcohol:bucket/aged_beer,tfcagedalcohol:bucket/aged_cider,tfcagedalcohol:bucket/aged_rum,tfcagedalcohol:bucket/aged_sake,tfcagedalcohol:bucket/aged_vodka,tfcagedalcohol:bucket/aged_whiskey,tfcagedalcohol:bucket/aged_corn_whiskey,tfcagedalcohol:bucket/aged_rye_whiskey"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Выдержанное пиво: Поглощение II (20:00)$(br2)Выдержанный сидр: Скорость (5:20)$(br2)Выдержанный ром: Скорость II (2:40)$(br2)Выдержанное сакэ: Сопротивление (5:20)$(br2)Выдержанная водка: Сопротивление II (2:40)$(br2)Выдержанный кукурузный виски: Спешка (5:20)$(br2)Выдержанный ржаной виски: Спещка (5:20)$(br2)Выдержанный виски: Спешка II (2:40)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": { "tag": "tfc:foods" },
+			"title": "Рацион питания",
+			"text": "Поддержание хорошего $(l:getting_started/food_and_water#nutrients)рациона$() значительно увеличивает максимальный уровень здоровья.$(br2)$(l:mechanics/pot#soup)Супы$(), $(l:mechanics/sandwiches)Бутерброды$() и $(l:mechanics/salad)Салаты$() - вот здоровая еда."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Кровать",
+			"item": { "tag": "minecraft:beds" },
+			"text": "Крайняя мера - умер, возродился.$(br2)Если $(thing)Шерсти$() или $(thing)Ниток$() нет, то можно сделать $(l:getting_started/a_place_to_sleep)кровать из сена$()."
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+	"name": "Which LV machine first?",
+	"icon": "gtceu:lv_machine_hull",
+	"category": "tfc:tfg_tips",
+	"read_by_default": true,
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"text": "So you've finally made a batch of colored steel and are ready to make your first step into $(thing)LV$(). The obvious first choice for an LV machine is a $(item)Steam Generator$(), but what about after that? There's so many options!$(br2)There's no simple answer to this, because it's subjective, but you should think of which part of progressing is the most painful and make the machine that helps the most with that.$(br)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_mixer",
+			"title": "Mixer",
+			"text": "The $(item)Mixer$() makes colored steel much cheaper.$(br2)The kinetic mixer requires both SU and EU (and has a high stress impact and needs to run at 64 RPM), but runs twice as fast as the pure electric one.$(br)Whether that's worth the bother is up to you!$(br2)It also has a recipe to make $(thing)Glowstone$().$(br)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Arc Furnace",
+			"item": "gtceu:lv_arc_furnace",
+			"text": "The $(item)Arc Furnace$() can turn your Colored Steel Dust from the mixer into ingots, Cast Iron directly into $(thing)Wrought Iron$(), Sand into $(thing)Glass$(), and Copper into $(thing)Annealed Copper$(). All of its recipes need $(thing)Oxygen$() though, so it's useless without an $(item)Electrolyzer$() or $(item)Centrifuge$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_assembler",
+			"title": "Assembler",
+			"text": "The $(item)Assembler$() is a very expensive machine, but can make cheaper electronic components like $(thing)Vacuum Tubes$() and $(thing)Resistors$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_bender",
+			"title": "Bender",
+			"text": "The $(item)Bender$() can make 1:1 $(thing)Plates$() out of a single ingot. Finally, no more gambling with the Mechanical Press!$(br2)It can also make $(thing)Thin Sheets$() for things like a $(l:tfg_tips/infinite_resources)Hose Pulley$()."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_wiremill",
+			"title": "Wiremill",
+			"text": "The $(item)Wiremill$() halves the cost of $(thing)Wire$(). Not much else to say here, except that there's no such thing as too many copper wires or tin cables."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Chem Reactor/Solidifer",
+			"item": "gtceu:lv_chemical_reactor,gtceu:lv_fluid_solidifier",
+			"text": "The $(item)Chemical Reactor$() makes much cheaper $(thing)Rubber$() which the $(item)Fluid Solidifier$() can turn into cheaper $(thing)Rubber Sheets$(), and can also make cheaper $(thing)Rotors$().$(br2)The $(item)Extractor$() is also useful paired up with the Fluid Solidifier, and is a big upgrade over the steam one because it can make metal fluids."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Centrifuge",
+			"item": "gtceu:lv_centrifuge",
+			"text": "The $(item)Centrifuge$() makes $(thing)Sticky Resin$() directly from Kapok logs, and much cheaper $(thing)Raw Rubber$() as well. No more latex!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Polarizer",
+			"item": "gtceu:lv_polarizer",
+			"text": "The $(item)Polarizer$() makes $(thing)Magnetic Rods$() basically for free. If you're short on redstone, this is a good first machine, and it's dirt cheap too."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Miner",
+			"item": "gtceu:lv_miner",
+			"text": "Put the $(item)Miner$() (or multiple!) down over an ore vein, bring along a boiler, steam generator, water, and fuel, and then just chunk load it and walk away. No need to ever go mining again!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Chemical Bath",
+			"item": "gtceu:lv_chemical_bath",
+			"text": "The $(item)Chemical Bath$() makes cheaper paper. That's about it. And once you have an $(thing)Assembler$() you won't need paper any more anyway.$(br2)It can also automate most of the steps to make $(thing)Leather$() if you're tired of barrels."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Extruder",
+			"item": "gtceu:lv_extruder",
+			"text": "This is only here as a warning: do not make the $(item)Extruder$(). The only thing it can do is make tools and Thin Rubber Sheets (which the Bender can also do). All of the good extruder recipes are gated to $(thing)MV$() onwards."
+		}
+	]
+}

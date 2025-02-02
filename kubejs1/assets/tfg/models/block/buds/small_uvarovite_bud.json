@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/small_amethyst_bud",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "cross": "tfg:block/buds/small_uvarovite_bud"
+  }
+}

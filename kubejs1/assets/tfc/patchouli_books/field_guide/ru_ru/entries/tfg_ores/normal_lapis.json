@@ -1,0 +1,56 @@
+{
+    "name": "Лазурит, Лазурит 2 и Содалит",
+    "icon": "minecraft:lapis_lazuli",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 170$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: -60 - 10$(br)Размер: 50$(br2)Виды камней: Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Лазурит, Содалит, Лазурит 2, Кальцит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Лазурит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/lazurite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Содержит: Алюминий, Кальций, Натрий$(br)Формула: Al₆Si₆Ca₈Na₈"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Содалит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sodalite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Алюминий, Натрий$(br)Формула: Al₃Si₃Na₄Cl"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Кальцит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/calcite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Кальций$(br)Формула: CaCO₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Лазурит 2",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/lapis" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Лазурит, Содалит, Пирит, Кальцит"
+		}
+    ]
+}

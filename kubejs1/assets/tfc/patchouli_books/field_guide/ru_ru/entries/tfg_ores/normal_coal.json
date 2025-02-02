@@ -1,0 +1,23 @@
+{
+    "name": "Уголь",
+    "icon": "minecraft:coal",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 215$(br)Плотность: 0.55$(br)Вид: кластерная жила$(br)Y-уровень: 0 - 210$(br)Размер: 60$(br2)Виды камней: Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикатор: Уголь"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Уголь",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/coal" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 100%$(br)Используется для: топливо, ректификация$(br)Формула: C"
+		}
+    ]
+}

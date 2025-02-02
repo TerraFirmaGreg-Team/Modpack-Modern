@@ -1,0 +1,56 @@
+{
+    "name": "Кварцы",
+    "icon": "minecraft:quartz",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 150$(br)Плотность: 0.3$(br)Виды: кластерная жила$(br)Y-уровень: -32 - 100$(br)Размер: 40$(br2)Виды камней: Сланец, Кварцит, Аспидный сланец, Гнейс$(br2)Индикатор: Цветущий истинный кварц"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Кварцит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/quartzite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 45%$(br)Формула: SiO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Истинный кварц",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/certus_quartz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Используется для: рецепты Applied Energistics 2$(br)Формула: SiO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Незер-кварц",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/nether_quartz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 10%$(br)Используется для: рецепты Applied Energistics 2$(br)Формула: SiO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Барит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/barite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Барий$(br)Формула: BaSO₂"
+		}
+    ]
+}

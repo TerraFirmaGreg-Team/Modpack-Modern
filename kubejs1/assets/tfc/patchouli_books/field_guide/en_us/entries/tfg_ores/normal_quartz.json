@@ -1,0 +1,56 @@
+{
+    "name": "Quartzes",
+    "icon": "minecraft:quartz",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 150$(br)Density: 0.3$(br)Type: Cluster Vein$(br)Y: -32 - 100$(br)Size: 40$(br2)Stone types: Shale, Quartzite, Schist, Gneiss$(br2)Indicator: Certus Quartz, Nether Quartz, and Quartzite Buds"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Quartzite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/quartzite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 45%$(br)Formula: SiO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Certus Quartz",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/certus_quartz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 30%$(br)Used for: Applied Energistics 2$(br)Formula: SiO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Nether Quartz",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/nether_quartz" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 10%$(br)Used for: Applied Energistics 2$(br)Formula: SiO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Barite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/barite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Source of: Barium$(br)Formula: BaSO₂"
+		}
+    ]
+}

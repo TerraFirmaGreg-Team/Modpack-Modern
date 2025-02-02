@@ -1,0 +1,56 @@
+{
+    "name": "Шелдонит и Борнит (Глубокие)",
+    "icon": "gtceu:rich_raw_platinum",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 300$(br)Плотность: 0.3$(br)Вид: Кластерная жила$(br)Y-уровень: -64 - 0$(br)Размер: 30$(br2)Виды камней: Кварцит, Шиферный сланец, Филлит, Аспидный сланец, Гнейс, Мрамор$(br2)Индикаторы: Борнит, Шелдонит, Платина, Палладий"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Шелдонит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cooperite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Платина, Никель, Палладий$(br)Формула: Pt₃NiSPd"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Платина",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/platinum" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Плавится в: Платина$(br)Формула: Pt"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Палладий",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/palladium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Палладий$(br)Формула: Pt"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Борнит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bornite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Плавится в: Медь$(br)Формула: Cu₅FeS₄"
+		}
+    ]
+}

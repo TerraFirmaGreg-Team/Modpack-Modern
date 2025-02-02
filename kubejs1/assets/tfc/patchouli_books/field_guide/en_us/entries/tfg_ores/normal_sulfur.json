@@ -1,0 +1,45 @@
+{
+    "name": "Sulfur & Pyrite",
+    "icon": "gtceu:raw_sulfur",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 165$(br)Density: 0.2$(br)Type: Cluster Vein$(br)Y: 0 - 210$(br)Size: 45$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Sulfur, Pyrite, Sphalerite"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Sulfur",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sulfur" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 50%$(br)Formula: S"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Pyrite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 35%$(br)Melts into: Cast Iron$(br)Formula: FeS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Sphalerite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sphalerite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Melts into: Zinc$(br)Formula: ZnS"
+		}
+    ]
+}

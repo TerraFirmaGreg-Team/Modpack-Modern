@@ -1,0 +1,67 @@
+{
+    "name": "Хромит и Магнетит (Глубокие)",
+    "icon": "gtceu:rich_raw_chromite",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 205$(br)Плотность: 0.3$(br)Вид: кластерная жила$(br)Y-уровень: -64 - 30$(br)Размер: 340$(br2)Виды камней: Сланец, Аргиллит, Известняк, Конгломерат, Доломит, Кремнистый сланец, Мел$(br2)Индикаторы: Магнетит, Самородное золото, Хромит, Сапфир"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Хромит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/chromite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 60%$(br)Содержит: Хром$(br)Формула: FeCr₂O₄"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Магнетит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/magnetite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Плавится в: Железо$(br)Формула: Fe₃O₄"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Ванадий магнетит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/vanadium_magnetite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Железо, Ванадий$(br)Формула: (Fe₃O₄)V"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Золото",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/gold" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Золото$(br)Формула: Au"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Сапфир",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/sapphire" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 5%$(br)Содержит: Алюминий$(br)Формула: Al₂O₃"
+		}
+    ]
+}

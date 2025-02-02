@@ -1,0 +1,52 @@
+{
+	"name": "Inventory Management",
+	"category": "tfc:mechanics",
+	"icon": "minecraft:chest",
+	"pages":
+	[
+		{
+			"type": "patchouli:text",
+			"title": "Inventory Management",
+			"text": "So you've got a few $(l:getting_started/pottery#vessel)Vessels$() and you've made a few $(item)Wooden Chests$(), but you still have more items than you know what to do with. What's next?$(br2)A $(thing)Backpack$() can double your on-person inventory at base level, and further backpack upgrades increase it even more!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:sophisticated_backpacks/shaped/backpack",
+			"text": "Backpacks can carry multiple heavy items without encumbering you, as well as big items like stacks of logs.$(br2)You can even upgrade it with a $(thing)Crafting Upgrade$() to have a Crafting Table with you everywhere."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Crates",
+			"anchor": "crates",
+			"text": "For storage, GregTech has $(item)Crates$() which can hold all the bigger items a backpack can, and different tiers can hold more and more items.$(br2)Crates can also have $(thing)Item Filters$() and $(thing)Item Tag Filters$() put on them if you'd like to make a basic sorting system.$(br2)$(thing)Item Pipes$() don't pull by themselves though, so you'll need a $(thing)Chute$() or $(thing)Hopper$() to push into them."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/wooden_crate",
+			"recipe2": "gtceu:shaped/bronze_crate"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Drums",
+			"anchor": "drums",
+			"text": "For storing fluids, GregTech has $(item)Drums$(). These can hold a large amount of a single fluid type, and different tiers hold more, just like with crates.$(br2)Unlike crates, drums will retain their fluid when broken, making them ideal for moving fluids around.$(br2)Drums can automatically push their fluid out of their bottom face by right-clicking them with a $(thing)Screwdriver$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/bronze_drum",
+			"text": "Place the drum in a crafting grid to clear its contents." 
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_super_chest,gtceu:lv_super_tank",
+			"title": "Super Storage",
+			"text": "Are you producing an item on an industrial scale? GregTech's $(thing)Super Chests$() and $(thing)Super Tanks$() can hold a silly amount of a single item type, and can even void any overflow."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Applied Energistics 2",
+			"item": "ae2:drive",
+			"text": "Available at the end of $(thing)HV$(), AE2 can provide everything you'd ever want for storage and logistics."
+		}
+	]
+}

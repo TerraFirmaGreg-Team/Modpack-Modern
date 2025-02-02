@@ -1,0 +1,67 @@
+{
+    "name": "Мыльный камень, Тальк и Трона",
+    "icon": "gtceu:raw_soapstone",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 190$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: -40 - 56$(br)Размер: 36$(br2)Виды камней: Гранит, Диорит, Габбро$(br2)Индикаторы: Мыльный камень, Тальк, Глауконитовый песок, Пентландит, Трона"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Мыльный камень",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/soapstone" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Содержит: Магний$(br)Формула: Mg₃Si₄H₂O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Тальк",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/talc" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 20%$(br)Содержит: Магний$(br)Формула: Mg₃Si₄H₂O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Глауконитовый песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/glauconite_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Магний, Алюминий$(br)Формула: KMg₂Al₄H₂O₁₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Пентландит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pentlandite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Никель$(br)Формула: Ni₉S₈"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Трона",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/trona" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 10%$(br)Формула: Na₃C₂H(H₂O)₂O₆"
+		}
+    ]
+}

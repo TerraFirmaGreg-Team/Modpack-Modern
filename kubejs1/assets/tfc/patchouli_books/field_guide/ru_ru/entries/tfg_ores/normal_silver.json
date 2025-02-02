@@ -1,0 +1,45 @@
+{
+    "name": "Серебро, Галена и Свинец",
+    "icon": "gtceu:raw_silver",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 160$(br)Плотность: 0.4$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 75$(br)Размер: 40$(br2)Виды камней: Гранит, Гнейс$(br2)Индикатор: Самородное серебро"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Галена",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/galena" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 30%$(br)Плавится в: Свинец$(br)Формула: PbS$(br)Ядовит: Да"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Серебро",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/silver" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Плавится в: Серебро$(br)Формула: Ag"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Свинец",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/lead" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 55%$(br)Плавится в: Свинец$(br)Формула: Pb$(br)Ядовит: Да"
+		}
+    ]
+}

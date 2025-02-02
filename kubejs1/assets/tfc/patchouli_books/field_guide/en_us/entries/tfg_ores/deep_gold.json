@@ -1,0 +1,56 @@
+{
+    "name": "Gold (Deep)",
+    "icon": "gtceu:rich_raw_gold",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 260$(br)Density: 0.45$(br)Type: Cluster Vein$(br)Y: -64 - 30$(br)Size: 32$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite, Granite, Diorite, Gabbro$(br2)Indicator: Limonite, Hematite, Native Gold"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Gold",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/gold" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 75%$(br)Melts into: Gold$(br)Formula: Au"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Yellow Limonite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/yellow_limonite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 5%$(br)Melts into: Cast Iron$(br)Formula: FeHO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Hematite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/hematite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 15%$(br)Melts into: Cast Iron$(br)Formula: Fe₂O₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Goethite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/goethite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 5%$(br)Melts into: Cast Iron$(br)Formula: FeHO₂"
+		}
+    ]
+}

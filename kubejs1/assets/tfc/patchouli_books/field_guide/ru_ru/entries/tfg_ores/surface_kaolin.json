@@ -1,0 +1,53 @@
+{
+    "name": "Каолинитовая глина",
+    "icon": "tfc:kaolin_clay",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+			"anchor": "kaolinite",
+			"text": "Каолинит - это мягкий $(thing)минерал$(), который используется в создании $(l:mechanics/fire_clay)Огнеупорной глины$(). Его можно найти на больших высотах на плато, древних горах и в высокогорьях, при $(l:the_world/climate#temperature)температуре$() не менее 18°C и $(l:the_world/climate#rainfall)осадках$() не менее 300 мм. Цветок $(thing)кровавой лилии$() растёт неподалёку от каолиновой глины."
+        },
+		{
+			"type": "tfc:multimultiblock",
+			"text": "В большинстве случаев, надо идти на $(thing)Юго-восток$() для увеличения температуры и осадков.",
+			"multiblocks": [
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:kaolin_clay_grass"
+					}
+				},
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:red_kaolin_clay"
+					}
+				},
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:white_kaolin_clay"
+					}
+				},
+				{
+					"pattern": [ [ "X" ], [ "Y" ], [ "0" ] ],
+					"mapping": {
+					"X": "tfc:plant/blood_lily",
+					"Y": "tfc:pink_kaolin_clay"
+					}
+				}
+			]
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfc:powder/kaolinite",
+			"anchor": "powder",
+			"text": "Лишь $(thing)20%$() от глины превратятся в $(thing)Каолинитовый порошок$(), поэтому разжечь несколько $(l:getting_started/pit_kiln)Земляных печей$() - очень даже хорошая идея.$(br2)Так же следует взять с собой хотя бы 20 $(thing)Блоков$() каолинитовой глины для $(l:mechanics/glassworking_applications)Стеклоделия$()."
+		}
+    ]
+}

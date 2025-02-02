@@ -1,0 +1,45 @@
+{
+    "name": "Изумруд и Бериллий",
+    "icon": "minecraft:emerald",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 180$(br)Плотность: 0.35$(br)Вид: трубчатая жила$(br)Y-уровень: -32 - 50$(br)Высота: 60$(br)Радиус: 10$(br2)Виды камней: Риолит, Базальт, Андезит, Дацит$(br2)Индикаторы: Бериллий, Изумруд, Торий"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Бериллий",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/beryllium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Используется для: Эндер-жемчуг$(br)Формула: Be$(br)Ядовит: Да"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Изумруд",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/emerald" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 50%$(br)Используется для: компоненты уровня MV, Предметные фильтры (Тэг)$(br)Формула: Be₃Al₂Si₆O₁₈"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Торий",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/thorium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Бесполезен!$(br)Формула: Th"
+		}
+    ]
+}

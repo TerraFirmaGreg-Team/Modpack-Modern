@@ -1,0 +1,45 @@
+{
+    "name": "Бастнезит и Монацит",
+    "icon": "gtceu:monazite_gem",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 185$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: -32 - 50$(br)Размер: 40$(br2)Виды камней: Гранит, Диорит, Габбро$(br2)Индикаторы: Бастнезит, Монацит, Неодим"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Бастнезит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/bastnasite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 50%$(br)Содержит: Церий, Фтор$(br)Формула: CeCFO₃"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Монацит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/monazite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Фосфор, Редкая земля$(br)Формула: ?(PO₄)"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Неодим",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/neodymium" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Формула: Nd"
+		}
+    ]
+}

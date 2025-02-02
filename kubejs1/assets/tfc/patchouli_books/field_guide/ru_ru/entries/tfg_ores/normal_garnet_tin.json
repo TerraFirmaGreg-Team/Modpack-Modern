@@ -1,0 +1,56 @@
+{
+    "name": "Гранатовый и Касситеритовый песок",
+    "icon": "gtceu:raw_garnet_sand",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Редкость: 360$(br)Плотность: 0.25$(br)Вид: кластерная жила$(br)Y-уровень: -40 - 64$(br)Размер: 40$(br2)Виды камней: Все$(br2)Индикаторы: Касситерит"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Касситеритовый песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/cassiterite_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 35%$(br)Плавится в: Олово$(br)Формула: SnO₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Гранатовый песок",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/garnet_sand" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Альмандин, Андрадит, Гроссуляр, Пироп, Спасерит, Уваровит"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Асбест",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/asbestos" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 25%$(br)Содержит: Магний$(br)Формула: Mg₃Si₂H₄O₉$(br)Ядовит: Да"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Диатомовый пелит",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/diatomite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Процент руды: 15%$(br)Содержит: Железо, Алюминий$(br)Формула: (SiO₂)₈(Fe₂O₃)(Al₂O₃)"
+		}
+    ]
+}

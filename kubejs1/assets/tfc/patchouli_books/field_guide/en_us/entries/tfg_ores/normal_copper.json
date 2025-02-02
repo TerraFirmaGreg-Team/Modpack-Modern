@@ -1,0 +1,56 @@
+{
+    "name": "Copper & Chalcopyrite",
+    "icon": "minecraft:raw_copper",
+    "category": "tfc:tfg_ores",
+	"read_by_default": true,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Rarity: 170$(br)Density: 0.4$(br)Type: Cluster Vein$(br)Y: -32 - 75$(br)Size: 40$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Native Copper"
+        },
+		{
+			"type": "patchouli:multiblock",
+			"name": "Copper",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/copper" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 65%$(br)Melts into: Copper$(br)Formula: Cu"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Chalcopyrite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/chalcopyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 20%$(br)Melts into: Copper$(br)Formula: CuFeS₂"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Iron",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/iron" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 5%$(br)Melts into: Cast Iron$(br)Formula: Fe"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"name": "Pyrite",
+			"multiblock":
+			{
+				"mapping": { "0": "#forge:ores/pyrite" },
+				"pattern": [[ "0" ], [ " " ]]
+			},
+			"enable_visualize": false,
+			"text": "Percentage: 10%$(br)Melts into: Cast Iron$(br)Formula: FeS₂"
+		}
+    ]
+}
