@@ -261,6 +261,16 @@ const registerAE2Recipes = (event) => {
         D: '#forge:plates/titanium',
     }).id('tfg:crafting/wireless_booster')
 
+    event.shaped('ae2:wireless_booster', [
+        'ABC',
+        'DDD',
+    ], {
+        A: '#forge:dusts/fluix',
+        B: '#forge:gems/certus_quartz',
+        C: '#forge:plates/ender_pearl',
+        D: 'minecraft:shulker_shell',
+    }).id('tfg:crafting/wireless_booster_shulker')
+
     // Memory Card
     event.shaped('ae2:memory_card', [
         'ABB',
@@ -359,6 +369,18 @@ const registerAE2Recipes = (event) => {
         E: '#forge:plates/titanium'
     }).id('tfg:crafting/drive')
 
+    event.shaped('ae2:drive', [
+        'ABA',
+        'CDC',
+        'EBE'
+    ], {
+        A: '#forge:plates/steel',
+        B: 'ae2:engineering_processor',
+        C: '#ae2:glass_cable',
+        D: '#gtceu:circuits/lv',
+        E: 'minecraft:shulker_shell'
+    }).id('tfg:crafting/drive_shulker')
+
     // Spatial Pylon
     event.shaped('ae2:spatial_pylon', [
         'ABA',
@@ -384,6 +406,18 @@ const registerAE2Recipes = (event) => {
         E: 'ae2:engineering_processor'
     }).id('tfg:crafting/io_port')
 
+    event.shaped('ae2:io_port', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: '#forge:plates/glass',
+        B: 'ae2:drive',
+        C: '#ae2:glass_cable',
+        D: 'minecraft:shulker_shell',
+        E: 'ae2:engineering_processor'
+    }).id('tfg:crafting/io_port_shulker')
+
     // Spatial IO Port
     event.shaped('ae2:spatial_io_port', [
         'AAA',
@@ -396,6 +430,18 @@ const registerAE2Recipes = (event) => {
         D: '#forge:plates/titanium',
         E: 'ae2:engineering_processor'
     }).id('tfg:crafting/spatial_io_port')
+
+    event.shaped('ae2:spatial_io_port', [
+        'AAA',
+        'BCB',
+        'DED'
+    ], {
+        A: '#forge:plates/glass',
+        B: '#ae2:glass_cable',
+        C: 'ae2:io_port',
+        D: 'minecraft:shulker_shell',
+        E: 'ae2:engineering_processor'
+    }).id('tfg:crafting/spatial_io_port_shulker')
 
     // Monitors
     event.shapeless('ae2:semi_dark_monitor', ['ae2:dark_monitor'])
@@ -864,6 +910,18 @@ const registerAE2Recipes = (event) => {
         .duration(200)
         .EUt(1920)
         .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.assembler('ae2:cell_component_4k_shulker')
+        .itemInputs(
+            '4x #gtceu:circuits/ev',
+            '4x minecraft:shulker_shell',
+            '4x #forge:dusts/certus_quartz',
+            'ae2:logic_processor')
+        .inputFluids(Fluid.of('gtceu:steel', 144))
+        .itemOutputs('ae2:cell_component_4k')
+        .duration(200)
+        .EUt(1920)
+        .cleanroom(CleanroomType.CLEANROOM)
     
     event.recipes.gtceu.assembler('ae2:cell_component_4k_1k')
         .itemInputs(
@@ -1156,6 +1214,18 @@ const registerAE2Recipes = (event) => {
             '2x ae2:engineering_processor',
             '2x #gtceu:circuits/hv',
             '2x #forge:plates/titanium',
+            'ae2:fluix_block')
+        .inputFluids(Fluid.of('gtceu:polyethylene', 144))
+        .itemOutputs('ae2:controller')
+        .duration(200)
+        .EUt(480)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.assembler('ae2:controller_shulker')
+        .itemInputs(
+            '2x ae2:engineering_processor',
+            '2x #gtceu:circuits/hv',
+            '2x minecraft:shulker_shell',
             'ae2:fluix_block')
         .inputFluids(Fluid.of('gtceu:polyethylene', 144))
         .itemOutputs('ae2:controller')

@@ -89,6 +89,7 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:moon_biomes', biome)
 		event.add('tfg:has_structure/meteors', biome)
 		event.add('tfg:has_structure/cheese_ores', biome)
+		event.add('tfg:has_structure/moonbase', biome)
 	})
 
 	event.add('tfg:has_structure/moon_rabbit_houses', 'tfg:lunar_plains')
@@ -100,10 +101,12 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 	const MOON_ENTITIES = 
 	[
-		'minecraft:rabbit',
 		'tfc:rat',
+		'minecraft:rabbit',
 		'minecraft:enderman',
 		'minecraft:endermite',
+		'minecraft:shulker',
+		'minecraft:shulker_bullet',
 		'species:limpet',
 		'endermanoverhaul:windswept_hills_enderman',
 		'endermanoverhaul:soulsand_valley_enderman'
