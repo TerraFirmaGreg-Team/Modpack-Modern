@@ -12,18 +12,19 @@ namespace OresToFieldGuide.JSONObjects.Patchouli
         /// The Display name for this Entry
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// The file name for this Entry
         /// </summary>
-        public string FileName { get; set; }
+        [JsonIgnore]
+        public string FileNameWithoutExtension { get; set; }
 
         /// <summary>
         /// The Icon for this Entry, IE: "minecraft:stick"
         /// </summary>
         [JsonProperty("icon")]
-        public string Icon { get; set; }
+        public required string Icon { get; set; }
 
         /// <summary>
         /// The Category for this Entry, this is set to "tfc:tfg_ores"

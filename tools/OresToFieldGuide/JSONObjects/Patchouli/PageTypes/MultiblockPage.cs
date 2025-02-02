@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class MultiblockPage : PatchouliPage
     {
-        public override string Type => "multiblock";
+        public override string Type => "patchouli:multiblock";
 
         [JsonProperty("name")]
         public required string Name { get; set; }

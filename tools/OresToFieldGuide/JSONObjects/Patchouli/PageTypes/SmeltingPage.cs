@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class SmeltingPage : PatchouliPage
     {
-        public override string Type => "smelting";
+        public override string Type => "patchouli:smelting";
 
         [JsonProperty("recipe")]
         public required string Recipe { get; set; }

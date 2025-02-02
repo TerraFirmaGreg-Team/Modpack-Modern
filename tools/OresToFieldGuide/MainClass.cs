@@ -1,5 +1,9 @@
 ﻿//Uncomment this to enable verification of vein weights
 #define VERIFY_VEIN_WEIGHTS
+//Uncomment this to write json in a Prettified format, only really useful for debugging the output
+#define PRETTY_PRINT
+//Uncomment this to make the program overwrite all the files within .minecraf/kubejs/assets/../tfg_ores/
+#define OVERWRITE_FILES
 
 // See https://aka.ms/new-console-template for more information
 using System.Collections.Generic;
@@ -79,7 +83,10 @@ namespace OresToFieldGuide
                 programArguments.mineralDataFolder = GetMineralDataFolder(programArguments.minecraftFolder);
                 programArguments.languageTokenFolder = GetLanguageTokenFolder(programArguments.minecraftFolder);
                 programArguments.shouldVerifyVeinWeights = GetShouldVerifyVeinWeights();
+                programArguments.whitelistedPatchouliEntryFilenames = GetWhitelistedPatchoulyEntryFilenames();
                 programArguments.planetToVeinsPath = GetPlanetNameToVeinPaths(programArguments.minecraftFolder);
+                programArguments.shouldPrettyPrint = GetShouldPrettyPrint();
+                programArguments.shouldOverwriteFiles = GetShouldOverwriteFiles();
             }
             catch (Exception e)
             {
@@ -156,9 +163,37 @@ namespace OresToFieldGuide
             return planetNameToVeinPathsDictionary;
         }
 
+        private static string[] GetWhitelistedPatchoulyEntryFilenames()
+        {
+            return new string[]
+            {
+                "hazards.json",
+                "ore_basics.json"
+            };
+        }
+
+
         private static bool GetShouldVerifyVeinWeights()
         {
 #if VERIFY_VEIN_WEIGHTS
+            return true;
+#else
+            return false;
+#endif
+        }
+
+        private static bool GetShouldPrettyPrint()
+        {
+#if PRETTY_PRINT
+            return true;
+#else
+            return false;
+#endif
+        }
+
+        private static bool GetShouldOverwriteFiles()
+        {
+#if OVERWRITE_FILES
             return true;
 #else
             return false;

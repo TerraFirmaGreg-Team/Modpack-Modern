@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class RelationsPage : PatchouliPage
     {
-        public override string Type => "relations";
+        public override string Type => "patchouli:relations";
 
         public string? Entries { get; set; }
         public string? Title { get; set; }

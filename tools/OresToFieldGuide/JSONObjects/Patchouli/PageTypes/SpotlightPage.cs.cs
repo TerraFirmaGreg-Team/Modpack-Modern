@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class SpotlightPage : PatchouliPage
     {
-        public override string Type => "spotlight";
+        public override string Type => "patchouli:spotlight";
 
         [JsonProperty("item")]
         public required string Item { get; set; }

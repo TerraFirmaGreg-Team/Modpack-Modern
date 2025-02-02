@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class ImagePage : PatchouliPage
     {
-        public override string Type => "image";
+        public override string Type => "patchouli:image";
 
         [JsonProperty("images")]
         public required string[] Images { get; set; }

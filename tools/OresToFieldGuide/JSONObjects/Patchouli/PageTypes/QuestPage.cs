@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class QuestPage : PatchouliPage
     {
-        public override string Type => "quest";
+        public override string Type => "patchouli:quest";
         [JsonProperty("trigger")]
         public string Trigger { get; set; }
 

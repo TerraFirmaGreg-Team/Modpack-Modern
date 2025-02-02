@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [Serializable, JsonObject]
     public class LinkPage : TextPage
     {
-        public override string Type => "link";
+        public override string Type => "patchouli:link";
 
         [JsonProperty("url")]
         public required string URL { get; set; }

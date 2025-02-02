@@ -66,9 +66,11 @@ namespace OresToFieldGuide
                 await CreateEntriesForLocale(tokens, mineralData, output);
             }
 
-//            await WriteFiles();
-//            await MoveFiles();
-            Thread.Sleep(2000);
+            await WriteFiles();
+
+            if(_arguments.shouldOverwriteFiles)
+                await MoveFilesToInGameFieldGuide();
+
             return true;
         }
 
@@ -182,7 +184,9 @@ namespace OresToFieldGuide
         {
             var entry = new PatchouliEntry()
             {
-                FileName = $"{planet}_vein_index",
+                FileNameWithoutExtension = $"{planet}_vein_index",
+                Icon = "minecraft:stone",
+                Name = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Vein Index"]}",
                 ReadByDefault = true
             };
 
@@ -200,7 +204,9 @@ namespace OresToFieldGuide
         {
             var patchouliEntry = new PatchouliEntry()
             {
-                FileName = $"{planet}_ore_index",
+                FileNameWithoutExtension = $"{planet}_ore_index",
+                Icon = "minecraft:stone",
+                Name = $"{tokens.PlanetDictionary[planet]} {tokens.KeywordDictionary["Ore Index"]}",
                 ReadByDefault = true
             };
 
@@ -283,7 +289,7 @@ namespace OresToFieldGuide
 
             for(int i = 0; i < alphabetizedOres.Length; i++)
             {
-                if(i != 0 && i % 16 == 0)
+                if(i != 0 && i % 14 == 0)
                 {
                     oreIndexPage.Text = pageBuilder.ToString();
                     patchouliPages.Add(oreIndexPage);
@@ -322,6 +328,70 @@ namespace OresToFieldGuide
             var textPages = patchouliEntry.Pages.OfType<TextPage>();
 
             return patchouliEntry;
+        }
+
+        private async Task WriteFiles()
+        {
+            //Iterate thru the locales
+            foreach(var locale in _localeToOutputs.Keys)
+            {
+                Output output = _localeToOutputs[locale];
+
+                //Delete the previous outputs
+                foreach(var filePath in Directory.EnumerateFiles(output.pagesOutput))
+                {
+                    File.Delete(filePath);
+                }
+
+                //write the new outputs
+                foreach(var page in output.pages)
+                {
+                    var filePath = Path.Combine(output.pagesOutput, page.FileNameWithoutExtension + ".json");
+
+                    using (StreamWriter writer = File.CreateText(filePath))
+                    {
+                        var json = JsonConvert.SerializeObject(page, _arguments.shouldPrettyPrint ? Formatting.Indented : Formatting.None, new JsonSerializerSettings
+                        {
+                            NullValueHandling = NullValueHandling.Ignore,
+                        });
+                        await writer.WriteAsync(json);
+                        ConsoleLogHelper.WriteLine($"Wrote file {page.FileNameWithoutExtension} and saved it in {filePath}", LogLevel.Info);
+                    }
+                }
+            }
+        }
+
+        private async Task MoveFilesToInGameFieldGuide()
+        {
+            //Iterate thru the locales
+            foreach(var locale in _localeToOutputs.Keys)
+            {
+                Output output = _localeToOutputs[locale];
+
+                //Get the path from the KubeJS folder down to this locale's tfg_ores path, something along the lines of "\kubejs\assets\tfc\patchouli_books\field_guide\en_us\entries\tfg_ores" for english
+                string kubeJSFolderToTFGOresFolderPath = output.pagesOutput.Substring(output.rootOutputFolder.Length + 1); //+2 because this will capute the starting "\" in the variable, there has to be a cleaner way but idgaf
+                string destinationFolder = Path.Combine(_arguments.minecraftFolder, kubeJSFolderToTFGOresFolderPath);
+
+                var filePathsInDestinationFolder = Directory.EnumerateFiles(destinationFolder);
+                foreach(var existingFilePath in filePathsInDestinationFolder)
+                {
+                    var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(existingFilePath);
+
+                    //If the file name points to one of the manually written patchouli entries, do not delete it.
+                    if(_arguments.whitelistedPatchouliEntryFilenames.Contains(fileNameWithoutExtension))
+                    {
+                        continue;
+                    }
+                    File.Delete(existingFilePath);
+                }
+
+                var outputPages = Directory.EnumerateFiles(output.pagesOutput);
+                foreach (var pagePath in outputPages)
+                {
+                    string fileName = Path.GetFileName(pagePath);
+                    File.Copy(pagePath, Path.Combine(destinationFolder, fileName), true);
+                }
+            }
         }
 
         public OresToFieldGuideProgram(ProgramArguments arguments)

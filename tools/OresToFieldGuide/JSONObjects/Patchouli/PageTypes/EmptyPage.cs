@@ -10,7 +10,7 @@ namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
     [JsonObject, Serializable]
     public class EmptyPage : PatchouliPage
     {
-        public override string Type => "empty";
+        public override string Type => "patchouli:empty";
 
         [JsonProperty("draw_filler")]
         public bool DrawFiller { get; set; } = true;
