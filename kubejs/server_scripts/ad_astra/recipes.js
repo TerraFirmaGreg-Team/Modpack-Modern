@@ -318,11 +318,10 @@ const registerAdAstraRecipes = (event) => {
 	//#region TI-69 (ручной детектор кислорода хз)
 
 	event.shaped('ad_astra:ti_69', [
-		'ABC',
-		'BDB',
-		'BEB'
+		'DBC',
+		'AE '
 	], {
-		A: 'gtceu:lv_emitter',
+		A: '#forge:screwdrivers',
 		B: '#forge:plates/steel',
 		C: 'gtceu:lv_sensor',
 		D: 'gtceu:computer_monitor_cover',
