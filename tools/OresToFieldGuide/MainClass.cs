@@ -1,7 +1,7 @@
 ﻿//Uncomment this to enable verification of vein weights
 #define VERIFY_VEIN_WEIGHTS
 //Uncomment this to write json in a Prettified format, only really useful for debugging the output
-//#define PRETTY_PRINT
+#define PRETTY_PRINT
 //Uncomment this to make the program overwrite all the files within .minecraf/kubejs/assets/../tfg_ores/
 #define OVERWRITE_FILES
 
@@ -61,9 +61,7 @@ namespace OresToFieldGuide
             try
             {
                 var task = programInstance.Run();
-                while(!task.IsCompleted)
-                {
-                }
+                task.Wait();
 
                 result = task.Result;
             }
