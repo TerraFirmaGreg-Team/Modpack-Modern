@@ -11,4 +11,7 @@ const registerTFGItems = (event) =>
 
     event.create('tfg:anorthite_brick')
         .translationKey('item.tfg.anorthite_brick')
+
+    event.create('tfg:anorthite_dust')
+        .translationKey('item.tfg.anorthite_dust')
 }

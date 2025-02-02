@@ -1,7 +1,7 @@
 // priority: 0
 const registerTFGRecipes = (event) => {
 
-	//#region paper from wood
+	//#region Paper from wood
 	var generateVatRecipe = (id, inputItem, fluid, fluidAmount, output) => {
 		event.custom({
 			"type": "firmalife:vat",
@@ -149,7 +149,7 @@ const registerTFGRecipes = (event) => {
 		.EUt(4)
 	//#endregion
 
-	// #region collapse/landslide recipes (needed for them to actually function)
+	// #region Collapse/landslide recipes (needed for them to actually function)
 
 	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:raw_anorthite')
 	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:hardened_anorthite')
@@ -160,7 +160,7 @@ const registerTFGRecipes = (event) => {
 
 	// #endregion
 
-	// #region space bricks
+	// #region Common space rock recipes
 
 	const AD_ASTRA_ROCKS = {
 		//mercury: "TODO",
@@ -294,14 +294,47 @@ const registerTFGRecipes = (event) => {
 		event.shapeless(`4x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone`])
 		event.shapeless(`3x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone_stairs`])
 		event.shapeless(`2x tfg:loose_${rock}`, [`ad_astra:${planet}_cobblestone_slab`])
+
+		// dust
+
+		event.recipes.gtceu.macerator(`tfg:raw_${rock}`)
+			.itemInputs(`tfg:raw_${rock}`)
+			.itemOutputs(`tfg:${rock}_dust`)
+			.duration(4)
+			.EUt(72)
+
+		event.recipes.gtceu.macerator(`tfg:hardened_${rock}`)
+			.itemInputs(`tfg:hardened_${rock}`)
+			.itemOutputs(`tfg:${rock}_dust`)
+			.duration(4)
+			.EUt(72)
+
+		event.recipes.gtceu.macerator(`ad_astra:${planet}_cobblestone`)
+			.itemInputs(`ad_astra:${planet}_cobblestone`)
+			.itemOutputs(`tfg:${rock}_dust`)
+			.duration(4)
+			.EUt(72)
 	}
+	// #endregion
+
+	//#region Other space rock recipes
 
 	event.recipes.gtceu.rock_breaker('tfg:raw_dunite')
-			.notConsumable('tfg:raw_dunite')
-			.itemOutputs('tfg:raw_dunite')
-			.duration(16)
-			.EUt(33)
-			.dimension('ad_astra:moon')
+		.notConsumable('tfg:raw_dunite')
+		.itemOutputs('tfg:raw_dunite')
+		.duration(16)
+		.EUt(33)
+		.dimension('ad_astra:moon')
 
-	// #endregion
+
+	event.recipes.gtceu.centrifuge(`tfg:anorthite_dust`)
+		.itemInputs(`tfg:anorthite_dust`)
+		.chancedOutput('#forge:tiny_dusts/olivine', 3700, 700)
+		.chancedOutput('#forge:tiny_dusts/magnetite', 3700, 700)
+		.chancedOutput('#forge:tiny_dusts/ilmenite', 1700, 700)
+		.outputFluids(Fluid.of('gtceu:helium_3', 50))
+		.duration(480)
+		.EUt(120)
+
+	//#endregion
 }
