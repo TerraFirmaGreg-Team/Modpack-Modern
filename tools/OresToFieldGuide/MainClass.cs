@@ -1,7 +1,7 @@
 ﻿//Uncomment this to enable verification of vein weights
 #define VERIFY_VEIN_WEIGHTS
 //Uncomment this to write json in a Prettified format, only really useful for debugging the output
-#define PRETTY_PRINT
+//#define PRETTY_PRINT
 //Uncomment this to make the program overwrite all the files within .minecraf/kubejs/assets/../tfg_ores/
 #define OVERWRITE_FILES
 
@@ -45,6 +45,7 @@ namespace OresToFieldGuide
         {
             Console.WriteLine("Creating updated entries of Ores for the Field Guide!");
 
+            //Get our arguments based off the application's location, preprocessor directives, etc
             if(!TryGetProgramArguments(out ProgramArguments programArguments))
             {
                 ConsoleLogHelper.WriteLine("Failed to get Program's Arguments, Press any key to exit...", LogLevel.Error);
@@ -56,12 +57,21 @@ namespace OresToFieldGuide
             ConsoleLogHelper.WriteLine(programArguments.ToString(), LogLevel.Message);
 
             var programInstance = new OresToFieldGuideProgram(programArguments);
-            var task = programInstance.Run();
-            while(!task.IsCompleted)
+            bool result = false;
+            try
             {
-            }
+                var task = programInstance.Run();
+                while(!task.IsCompleted)
+                {
+                }
 
-            var result = task.Result;
+                result = task.Result;
+            }
+            catch(Exception e)
+            {
+                ConsoleLogHelper.WriteLine($"Exception has been thrown. {e}", LogLevel.Fatal);
+                result = false;
+            }
 
             if(result)
             {

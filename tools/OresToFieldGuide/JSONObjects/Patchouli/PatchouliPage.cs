@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace OresToFieldGuide.JSONObjects.Patchouli
 {
+    /// <summary>
+    /// A .NET Abstract Class representing a Patchouli Page
+    /// </summary>
     [Serializable, JsonObject]
     public abstract class PatchouliPage
     {

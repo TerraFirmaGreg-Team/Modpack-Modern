@@ -343,6 +343,86 @@ namespace OresToFieldGuide
                 mainPage.Text = pageBuilder.Dump();
 
                 patchouliPages.Add(mainPage);
+
+                //Build the ore pages
+                int orePageCount = 0;
+                foreach(var oreName in oreToEntry.Keys)
+                {
+                    var oreIndexEntry = oreToEntry[oreName];
+                    if(!oreIndexEntry.TryGetNormalizedWeightInVein(vein.FileName, out int normalizedWeight))
+                    {
+                        continue;
+                    }
+
+                    if(!Util.TryRemoveLastSubstring(oreName, "ore", out string orelessString))
+                    {
+                        continue;
+                    }
+
+                    //This ore is present in the current vein, log it.
+                    MineralData.Entry? mineralDataEntry = mineralData.FindMineral(orelessString);
+                    if(mineralDataEntry == null)
+                    {
+                        continue;
+                    }
+
+                    var multiblockPage = new MultiblockPage
+                    {
+                        Name = mineralDataEntry.Name,
+                        Multiblock = oreIndexEntry.BuildMultiblockDisplay(),
+                        EnableVisualize = false,
+                    };
+
+                    //Percentage
+                    pageBuilder.ThingMacro($"{tokens.KeywordDictionary["Percentage"]}");
+                    pageBuilder.Append(": ");
+                    pageBuilder.Append($"{normalizedWeight}%");
+                    pageBuilder.LineBreak();
+                    
+                    //Use and For
+                    if(mineralDataEntry.Use != null && mineralDataEntry.For != null)
+                    {
+                        pageBuilder.ThingMacro($"{mineralDataEntry.Use}");
+                        pageBuilder.Append(": ");
+                        for (int i = 0; i < mineralDataEntry.For.Length; i++)
+                        {
+                            string? forUse = mineralDataEntry.For[i];
+                            pageBuilder.Append(forUse);
+                            if(i != mineralDataEntry.For.Length - 1)
+                            {
+                                pageBuilder.Append(", ");
+                            }
+                            else
+                            {
+                                pageBuilder.Append(".");
+                            }
+                        }
+                        pageBuilder.LineBreak();
+                    }
+
+                    //Formula
+                    if(mineralDataEntry.Formula != null)
+                    {
+                        pageBuilder.ThingMacro($"{tokens.KeywordDictionary["Formula"]}");
+                        pageBuilder.Append(": ");
+                        pageBuilder.Append($"{mineralDataEntry.Formula}");
+                        pageBuilder.LineBreak();
+                    }
+
+                    //Is Hazardous
+                    if(mineralDataEntry.Hazardous)
+                    {
+                        pageBuilder.Color($"[{tokens.KeywordDictionary["Hazardous"].ToUpperInvariant()}]", MinecraftColorCode.Red);
+                    }
+
+                    multiblockPage.Text = pageBuilder.Dump();
+                    patchouliPages.Add(multiblockPage);
+                    orePageCount++;
+                }
+                if(orePageCount % 2 == 0)
+                {
+                    patchouliPages.Add(new EmptyPage());
+                }
             }
 
             patchouliEntry.Pages = patchouliPages.ToArray();

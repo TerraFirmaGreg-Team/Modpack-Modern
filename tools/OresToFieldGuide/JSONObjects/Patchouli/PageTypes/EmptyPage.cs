@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
 {
+    /// <summary>
+    /// A .NET Representation of a Patchouli Page that's Empty
+    /// <para></para>
+    /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#empty-pages-patchouliempty">Patchouli Docs</a>
+    /// </summary>
     [JsonObject, Serializable]
     public class EmptyPage : PatchouliPage
     {

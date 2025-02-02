@@ -1,4 +1,5 @@
-﻿using OresToFieldGuide.JSONObjects.Veins;
+﻿using OresToFieldGuide.JSONObjects.Patchouli;
+using OresToFieldGuide.JSONObjects.Veins;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,26 @@ namespace OresToFieldGuide
                 orderedVeinToCount[veinName] = veinToCount[veinName];
             }
             veinToCount = orderedVeinToCount;
+        }
+
+        internal Multiblock BuildMultiblockDisplay()
+        {
+            Multiblock result = new Multiblock();
+
+            if(!Util.TryRemoveLastSubstring(ore, "ore", out var oreless))
+            {
+                return result;
+            }
+            var tag = $"#forge:ores/{oreless}";
+
+            result.Mapping = new Dictionary<string, string>
+            {
+                ["0"] = tag
+            };
+            result.Pattern = new string[2][];
+            result.Pattern[0] = new string[] { "0" };
+            result.Pattern[1] = new string[] { " " };
+            return result;
         }
 
         internal bool TryGetNormalizedWeightInVein(Vein vein, out int normalizedWeight)
