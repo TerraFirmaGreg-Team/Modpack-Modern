@@ -34,6 +34,8 @@ namespace OresToFieldGuide
 
         public void Append(string value) => stringBuilder.Append(value);
 
+        public void Append(char value) => stringBuilder.Append(value);
+
         public void Clear() => stringBuilder.Clear();
 
         public void LineBreak() => Append(LINE_BREAK);
@@ -45,6 +47,7 @@ namespace OresToFieldGuide
         public void Keybind(string keybindName) => Append(string.Format(KEY_FORMAT, keybindName));
 
         public void ThingMacro(string value) => Append($"$(thing){value}{EMPTY}");
+
         public void ItemMacro(string value) => Append($"$(item){value}{EMPTY}");
 
         public void List(string value, int? nesting = null)
@@ -111,6 +114,14 @@ namespace OresToFieldGuide
         public void Command(string value, string command, bool keepFormatting = false)
         {
             Append($"{string.Format(COMMAND_FORMAT, command)}{value}{(keepFormatting ? "$(/c)" : EMPTY)}");
+        }
+
+        /// <summary>
+        /// Returns the built string by calling the <see cref="ToString"/> method, then clears the internal stringbuilder array
+        /// </summary>
+        public string Dump()
+        {
+            return stringBuilder.Dump();
         }
 
         public override string ToString()

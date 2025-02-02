@@ -18,9 +18,11 @@ namespace OresToFieldGuide.JSONObjects.Veins
             string json = await File.ReadAllTextAsync(jsonFilePath);
 
             var vein = JsonConvert.DeserializeObject<Vein>(json);
+            vein.FileName = Path.GetFileNameWithoutExtension(jsonFilePath);
             return vein;
         }
 
+        public string FileName { get; private set; }
         /// <summary>
         /// What type of Vein this is, IE: tfc:disc_vein
         /// </summary>
@@ -43,31 +45,31 @@ namespace OresToFieldGuide.JSONObjects.Veins
             /// The Rarity of the vein
             /// </summary>
             [JsonProperty("rarity")]
-            public float Rarity { get; set; }
+            public float? Rarity { get; set; }
 
             /// <summary>
             /// The Density of the vein
             /// </summary>
             [JsonProperty("Density")]
-            public float Density { get; set; }
+            public float? Density { get; set; }
 
             /// <summary>
             /// The min Y value at which this vein can spawn
             /// </summary>
             [JsonProperty("min_y")]
-            public float Min_Y { get; set; }
+            public float? Min_Y { get; set; }
 
             /// <summary>
             /// The max Y value at which this vein can spawn
             /// </summary>
             [JsonProperty("max_y")]
-            public float Max_Y { get; set; }
+            public float? Max_Y { get; set; }
 
             /// <summary>
             /// The Size of the Vein
             /// </summary>
             [JsonProperty("size")]
-            public float Size { get; set; }
+            public float? Size { get; set; }
 
             /// <summary>
             /// The Height of the Vein
@@ -86,12 +88,6 @@ namespace OresToFieldGuide.JSONObjects.Veins
             /// </summary>
             [JsonProperty("blocks")]
             public BlockReplacements[] Blocks { get; set; }
-
-            /// <summary>
-            /// What indicator this vein uses
-            /// </summary>
-            [JsonProperty("indicator")]
-            public Indicator Indicator { get; set; }
 
             private Config() { }
         }

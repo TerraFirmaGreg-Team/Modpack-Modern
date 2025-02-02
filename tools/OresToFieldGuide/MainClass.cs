@@ -1,4 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//Uncomment this to enable verification of vein weights
+#define VERIFY_VEIN_WEIGHTS
+//Uncomment this to write json in a Prettified format, only really useful for debugging the output
+#define PRETTY_PRINT
+//Uncomment this to make the program overwrite all the files within .minecraf/kubejs/assets/../tfg_ores/
+#define OVERWRITE_FILES
+
+// See https://aka.ms/new-console-template for more information
 using System.Collections.Generic;
 using System.Text;
 
@@ -38,6 +45,7 @@ namespace OresToFieldGuide
         {
             Console.WriteLine("Creating updated entries of Ores for the Field Guide!");
 
+            //Get our arguments based off the application's location, preprocessor directives, etc
             if(!TryGetProgramArguments(out ProgramArguments programArguments))
             {
                 ConsoleLogHelper.WriteLine("Failed to get Program's Arguments, Press any key to exit...", LogLevel.Error);
@@ -49,12 +57,19 @@ namespace OresToFieldGuide
             ConsoleLogHelper.WriteLine(programArguments.ToString(), LogLevel.Message);
 
             var programInstance = new OresToFieldGuideProgram(programArguments);
-            var task = programInstance.Run();
-            while(!task.IsCompleted)
+            bool result = false;
+            try
             {
-            }
+                var task = programInstance.Run();
+                task.Wait();
 
-            var result = task.Result;
+                result = task.Result;
+            }
+            catch(Exception e)
+            {
+                ConsoleLogHelper.WriteLine($"Exception has been thrown. {e}", LogLevel.Fatal);
+                result = false;
+            }
 
             if(result)
             {
@@ -75,9 +90,13 @@ namespace OresToFieldGuide
                 programArguments.minecraftFolder = GetMinecraftDirectory();
                 programArguments.mineralDataFolder = GetMineralDataFolder(programArguments.minecraftFolder);
                 programArguments.languageTokenFolder = GetLanguageTokenFolder(programArguments.minecraftFolder);
+                programArguments.shouldVerifyVeinWeights = GetShouldVerifyVeinWeights();
+                programArguments.whitelistedPatchouliEntryFilenames = GetWhitelistedPatchoulyEntryFilenames();
                 programArguments.planetToVeinsPath = GetPlanetNameToVeinPaths(programArguments.minecraftFolder);
+                programArguments.shouldPrettyPrint = GetShouldPrettyPrint();
+                programArguments.shouldOverwriteFiles = GetShouldOverwriteFiles();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 ConsoleLogHelper.WriteLine("An Exception has been Thrown! " + e, LogLevel.Fatal);
                 return false;
@@ -150,6 +169,43 @@ namespace OresToFieldGuide
                 planetNameToVeinPathsDictionary.Add(planetName, filesInDirectory);
             }
             return planetNameToVeinPathsDictionary;
+        }
+
+        private static string[] GetWhitelistedPatchoulyEntryFilenames()
+        {
+            return new string[]
+            {
+                "hazards",
+                "ore_basics"
+            };
+        }
+
+
+        private static bool GetShouldVerifyVeinWeights()
+        {
+#if VERIFY_VEIN_WEIGHTS
+            return true;
+#else
+            return false;
+#endif
+        }
+
+        private static bool GetShouldPrettyPrint()
+        {
+#if PRETTY_PRINT
+            return true;
+#else
+            return false;
+#endif
+        }
+
+        private static bool GetShouldOverwriteFiles()
+        {
+#if OVERWRITE_FILES
+            return true;
+#else
+            return false;
+#endif
         }
     }
 }

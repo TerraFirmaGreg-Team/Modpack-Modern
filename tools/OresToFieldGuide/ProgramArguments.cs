@@ -27,9 +27,29 @@ namespace OresToFieldGuide
         public Dictionary<string, string[]> planetToVeinsPath;
 
         /// <summary>
+        /// If true, the program will verify that all of an ore's weights in a vein are equal.
+        /// </summary>
+        public bool shouldVerifyVeinWeights;
+
+        /// <summary>
+        /// If true, the program will print out JSON in an indented format
+        /// </summary>
+        public bool shouldPrettyPrint;
+
+        /// <summary>
+        /// If true, the program will overwrite any files that are not inside <see cref="whitelistedPatchouliEntryFilenames"/> within the FieldGuide's tfg_ores patchouli category.
+        /// </summary>
+        public bool shouldOverwriteFiles;
+
+        /// <summary>
         /// The path to the Language Token JSON files
         /// </summary>
         public string languageTokenFolder;
+
+        /// <summary>
+        /// Any PatchouliEntry FileName specified here will not be deleted from the game's field guide.
+        /// </summary>
+        public string[] whitelistedPatchouliEntryFilenames;
 
         /// <summary>
         /// Returns the arguments in a human readable format.
@@ -41,7 +61,7 @@ namespace OresToFieldGuide
             stringBuilder.AppendLine($".minecraft Folder Path: \"{minecraftFolder}\"");
             stringBuilder.AppendLine($"mineral_data Folder Path: \"{mineralDataFolder}\"");
             stringBuilder.AppendLine($"language_tokens Folder Path: \"{languageTokenFolder}\"");
-
+            stringBuilder.AppendLine($"shouldVerifyVeinWeights: \"{shouldVerifyVeinWeights}\"");
             foreach (var planet in planetToVeinsPath.Keys)
             {
                 stringBuilder.AppendLine($"{planet}'s Vein Files:");

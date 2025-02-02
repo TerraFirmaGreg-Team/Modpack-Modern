@@ -24,7 +24,13 @@
 		"Used for": "Используется для",
 		"Formula": "Формула",
 		"Hazardous": "Ядовит",
-		"Yes": "Да"
+		"Yes": "Да",
+		"&" : "&",
+		"Vein Index": "Vein Index",
+		"Ore Index": "Ore Index",
+		"normal": "Normal",
+		"deep": "Deep",
+		"surface": "Surface"
 	},
     
 	"veins": {
@@ -58,5 +64,6 @@
 		"dunite": "Дунит"
 	},
 
-    "ore_index": "This is a $(thing)list$() of every $(item)Ore$() in the planet $(thing)Earth$(), sorted alphabetically and then by richest to poorest vein type."
+    "ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the celestial body $(thing){0}(), sorted alphabetically and then by richest to poorest vein type.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for the celestial body $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
 }

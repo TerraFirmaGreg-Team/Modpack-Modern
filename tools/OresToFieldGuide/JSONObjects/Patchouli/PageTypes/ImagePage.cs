@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 
 namespace OresToFieldGuide.JSONObjects.Patchouli.PageTypes
 {
+    /// <summary>
+    /// A .NET Representation of a Patchouli Page for displaying Images
+    /// <para></para>
+    /// <a href="https://vazkiimods.github.io/Patchouli/docs/patchouli-basics/page-types/#image-pages-patchouliimage">Patchouli Docs</a>
+    /// </summary>
     [Serializable, JsonObject]
     public class ImagePage : PatchouliPage
     {
-        public override string Type => "image";
+        public override string Type => "patchouli:image";
 
         [JsonProperty("images")]
         public required string[] Images { get; set; }
