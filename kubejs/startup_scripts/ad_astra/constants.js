@@ -43,6 +43,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:cryo_fuel_bucket',
 	'ad_astra:moon_stone',
 	'ad_astra:moon_deepslate',
+	'ad_astra:mars_stone',
 	'ad_astra_giselle_addon:gravity_normalizer',
 	'ad_astra:steel_block',
 	'ad_astra:raw_desh_block',

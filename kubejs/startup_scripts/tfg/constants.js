@@ -3,12 +3,14 @@
 global.EXTRATERRESTRIAL_RAW_ROCKS = 
 [
 	'tfg:raw_anorthite', 
-	'tfg:raw_dunite'
+	'tfg:raw_dunite',
+	'tfg:raw_plagiocite'
 ]
 
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = 
 [
-	'tfg:hardened_anorthite'
+	'tfg:hardened_anorthite',
+	'tfg:hardened_plagiocite'
 ]
 
 global.MOON_BIOMES = 
@@ -17,6 +19,13 @@ global.MOON_BIOMES =
 	'tfg:lunar_basalt_maria',
 	'tfg:lunar_gabbro_uplift',
 	'tfg:lunar_diorite_delta'
+]
+
+global.MARS_BIOMES =
+[
+	'tfg:martian_plains',
+	'tfg:martian_riverbed',
+	'tfg:martian_mountains'
 ]
 
 global.MOON_VEINS =

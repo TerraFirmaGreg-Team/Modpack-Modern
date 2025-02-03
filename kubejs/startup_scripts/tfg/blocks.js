@@ -17,6 +17,8 @@ const registerTFGBlocks = (event) => {
 	event.createCustom(`tfg:lunar_sprouts`, () => new $ClusterBlock(1, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 
 
+	// Moon rocks
+
 	event.create('tfg:raw_anorthite')
 		.stoneSoundType()
 		.requiresTool(true)
@@ -55,6 +57,36 @@ const registerTFGBlocks = (event) => {
 
 	event.create('tfg:loose_anorthite', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose_anorthite')
+		.rockTypeModel('igneous_extrusive')
+
+	// Mars rocks
+
+	event.create('tfg:raw_plagioclase')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/mars_stone' })
+		})
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/raw')
+		.mapColor('terracotta_orange')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:hardened_plagioclase')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/mars_stone' })
+		})
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_orange')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:loose_plagioclase', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose_plagioclase')
 		.rockTypeModel('igneous_extrusive')
 	
 	

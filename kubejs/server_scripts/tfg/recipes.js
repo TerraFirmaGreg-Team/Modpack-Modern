@@ -166,7 +166,7 @@ const registerTFGRecipes = (event) => {
 		//mercury: "TODO",
 		//venus: "TODO",
 		moon: "anorthite",
-		//mars: "TODO",
+		mars: "plagioclase",
 		//glacio: "TODO"
 	}
 
