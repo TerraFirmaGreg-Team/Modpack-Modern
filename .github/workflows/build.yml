@@ -467,7 +467,7 @@ jobs:
           max_chars: '1450'
 
       - name: 📨 Send Discord message
-        uses: hugoalh/send-discord-webhook-ghaction@v7.0.4
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
         with:
           key: ${{ secrets.DISCORD_RELEASES }}
           username: "TerraFirmaGreg"
