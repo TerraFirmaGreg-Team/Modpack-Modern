@@ -379,7 +379,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:martian_plains"
+						"tfg:mars/martian_plains"
 					]
 				},
 				"then_run": {
@@ -436,7 +436,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:martian_riverbed"
+						"tfg:mars/martian_riverbed"
 					]
 				},
 				"then_run": {
@@ -535,7 +535,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:martian_mountains"
+						"tfg:mars/martian_mountains"
 					]
 				},
 				"then_run": {

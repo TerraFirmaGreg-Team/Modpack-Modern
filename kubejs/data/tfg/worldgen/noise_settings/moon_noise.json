@@ -326,7 +326,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:lunar_plains"
+						"tfg:moon/lunar_plains"
 					]
 				},
 				"then_run": {
@@ -383,7 +383,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:lunar_basalt_maria"
+						"tfg:moon/lunar_basalt_maria"
 					]
 				},
 				"then_run": {
@@ -482,7 +482,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:lunar_gabbro_uplift"
+						"tfg:moon/lunar_gabbro_uplift"
 					]
 				},
 				"then_run": {
@@ -581,7 +581,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:lunar_diorite_delta"
+						"tfg:moon/lunar_diorite_delta"
 					]
 				},
 				"then_run": {

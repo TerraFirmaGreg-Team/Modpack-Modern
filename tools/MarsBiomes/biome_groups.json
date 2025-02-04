@@ -3,7 +3,7 @@
 		{
 			"name": "mountains",
 			"mars_biome": {
-				"name": "tfg:martian_mountains"
+				"name": "tfg:mars/martian_mountains"
 			},
 			"vanilla_biomes": [
 				"minecraft:jagged_peaks",
@@ -39,7 +39,7 @@
 		{
 			"name": "rivers",
 			"mars_biome": {
-				"name": "tfg:martian_riverbed"
+				"name": "tfg:mars/martian_riverbed"
 			},
 			"vanilla_biomes": [
 				"minecraft:frozen_river",

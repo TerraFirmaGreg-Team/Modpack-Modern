@@ -7,7 +7,7 @@
 			"type": "minecraft:multi_noise",
 			"biomes": [
 				{
-					"biome": "tfg:lunar_plains",
+					"biome": "tfg:moon/lunar_plains",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
@@ -19,7 +19,7 @@
 					}
 				},
 				{
-					"biome": "tfg:lunar_basalt_maria",
+					"biome": "tfg:moon/lunar_basalt_maria",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"biome": "tfg:lunar_gabbro_uplift",
+					"biome": "tfg:moon/lunar_gabbro_uplift",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
@@ -43,7 +43,7 @@
 					}
 				},
 				{
-					"biome": "tfg:lunar_diorite_delta",
+					"biome": "tfg:moon/lunar_diorite_delta",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
