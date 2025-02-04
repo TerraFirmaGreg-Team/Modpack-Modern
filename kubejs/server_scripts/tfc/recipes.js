@@ -1159,7 +1159,7 @@ const registerTFCRecipes = (event) => {
                 if (!tinyDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(tinyDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(16, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/tiny_dust/${material.getName()}`)
                     
                 }
@@ -1169,7 +1169,7 @@ const registerTFCRecipes = (event) => {
                 if (!smallDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(smallDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(36, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/small_dust/${material.getName()}`)
                     
                 }
@@ -1179,7 +1179,7 @@ const registerTFCRecipes = (event) => {
                 if (!dust.isEmpty()) {
                    
                     event.recipes.tfc.heating(dust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(144, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(144, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/dust/${material.getName()}`)
                     
                 }
@@ -1189,7 +1189,7 @@ const registerTFCRecipes = (event) => {
                 if (!impureDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(impureDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/impure_dust/${material.getName()}`)
                     
                 }
@@ -1199,7 +1199,7 @@ const registerTFCRecipes = (event) => {
                 if (!purifiedDust.isEmpty()) {
                    
                     event.recipes.tfc.heating(purifiedDust, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(120, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(120, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/purified_dust/${material.getName()}`)
                     
                 }
@@ -1214,7 +1214,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(80, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(80, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_ore/${material.getName()}`)
                     
                 }
@@ -1224,7 +1224,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedPurifiedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedPurifiedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(100, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(100, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_purified_ore/${material.getName()}`)
                     
                 }
@@ -1234,7 +1234,7 @@ const registerTFCRecipes = (event) => {
                 if (!crushedRefinedOre.isEmpty()) {
                    
                     event.recipes.tfc.heating(crushedRefinedOre, tfcProperty.getMeltTemp())
-                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(110, tfcProperty.getPercentOfMaterial())))
+                        .resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetalProcessed(110, tfcProperty.getPercentOfMaterial())))
                         .id(`tfg:heating/crushed_refined_ore/${material.getName()}`)
                     
                 }
@@ -1579,49 +1579,28 @@ const registerTFCRecipes = (event) => {
     //#region Земля
 
     // Loam + Silt -> Silty Loam (Миксер)
-    event.recipes.gtceu.mixer('silty_loam_dirt')             
+    event.recipes.gtceu.mixer('silty_loam_dirt')
         .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
         .itemOutputs('tfc:dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-
-    // Silty Loam + Sticks -> Rooted Silty Loam (Миксер)
-    event.recipes.gtceu.mixer('rooted_silty_loam_dirt')             
-        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
-        .itemOutputs('tfc:rooted_dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
+        .duration(200)
+        .EUt(16)
 
     // Loam + Sand -> Sandy Loam (Миксер)
     event.recipes.gtceu.mixer('sandy_loam_dirt')             
         .itemInputs('tfc:dirt/loam', '#forge:sand')
+        .circuit(3)
         .itemOutputs('tfc:dirt/sandy_loam')
-        .duration(1600)
-        .EUt(12)
+        .duration(200)
+        .EUt(16)
 
-    // Loam + Silt -> Silty Loam (Create Миксер)
-    event.recipes.gtceu.create_mixer('silty_loam_dirt')             
-        .itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
-        .itemOutputs('tfc:dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
-    // Silty Loam + Sticks -> Rooted Silty Loam (Create Миксер)
-    event.recipes.gtceu.create_mixer('rooted_silty_loam_dirt')             
-        .itemInputs('tfc:dirt/silty_loam', '#tfc:can_be_lit_on_torch')
-        .itemOutputs('tfc:rooted_dirt/silty_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
-
-    // Loam + Sand -> Sandy Loam (Create Миксер)
-    event.recipes.gtceu.create_mixer('sandy_loam_dirt')             
-        .itemInputs('tfc:dirt/loam', '#forge:sand')
-        .itemOutputs('tfc:dirt/sandy_loam')
-        .duration(1600)
-        .EUt(12)
-        .rpm(60)
+    // Dirt + Sticks -> Rooted Dirt
+    global.TFC_MUD_TYPES.forEach(mud => {
+        event.recipes.gtceu.mixer(`${mud}_to_rooted`)
+            .itemInputs(`tfc:dirt/${mud}`, "#tfc:can_be_lit_on_torch")
+            .itemOutputs(`tfc:rooted_dirt/${mud}`)
+            .duration(200)
+            .EUt(16)
+    })
 
     global.TFC_MUD_TYPES.forEach(mud => {
         event.smelting(`tfc:dirt/${mud}`, `tfc:mud/${mud}`)
@@ -1637,6 +1616,7 @@ const registerTFCRecipes = (event) => {
         event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)             
             .itemInputs(`tfc:dirt/${mud}`)
             .inputFluids(Fluid.of('minecraft:water', 100))
+            .circuit(2)
             .itemOutputs(`tfc:mud/${mud}`)
             .duration(200)
             .EUt(16)
@@ -2480,7 +2460,7 @@ const registerTFCRecipes = (event) => {
         event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
     
         // Бревна -> Пиломатериалы
-        generateCutterRecipe(event, `#tfc:${wood}_logs`, null, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+        generateCutterRecipe(event, `#tfc:${wood}_logs`, 1, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
 
         // Доски -> Пиломатериалы
         generateCutterRecipe(event, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
@@ -3001,6 +2981,7 @@ const registerTFCRecipes = (event) => {
             .itemOutputs(element.output)
             .duration(300)
             .EUt(16)
+            .circuit(3)
     })
 
     //#endregion
@@ -3362,7 +3343,7 @@ const registerTFCRecipes = (event) => {
         .id('tfg:smelting/fireclay_brick')
 
     // Выпаривание соли
-    event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 1000)
+    event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)
         .itemOutput('gtceu:small_salt_dust')
         .id('tfg:tfc/pot/salt')
 
@@ -3461,27 +3442,46 @@ const registerTFCRecipes = (event) => {
     // Burlap Cloth
     event.recipes.gtceu.assembler('tfg:tfc/burlap_cloth')             
         .itemInputs('12x tfc:jute_fiber')
+        .circuit(0)
         .itemOutputs('tfc:burlap_cloth')
         .duration(100)
         .EUt(4)
 
     // Silk Cloth
-    event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')             
+    event.recipes.gtceu.assembler('tfg:tfc/silk_cloth')
         .itemInputs('24x minecraft:string')
+        .circuit(0)
         .itemOutputs('tfc:silk_cloth')
         .duration(100)
         .EUt(4)
 
-    // Silk Cloth
-    event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')             
+    // Wool Cloth
+    event.recipes.gtceu.assembler('tfg:tfc/wool_cloth')
         .itemInputs('16x tfc:wool_yarn')
+        .circuit(0)
         .itemOutputs('tfc:wool_cloth')
+        .duration(100)
+        .EUt(4)
+
+    // Cloths to Wool
+    event.recipes.gtceu.assembler('tfg:tfc/cloth_to_wool')
+        .itemInputs('4x #tfc:sewing_light_cloth')
+        .itemOutputs('8x minecraft:white_wool')
+        .circuit(16)  
         .duration(100)
         .EUt(4)
 
     // Jute Fiber
     generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
 
+    // Seaweed and kelp
+    event.recipes.tfc.heating('tfc:groundcover/seaweed', 200)
+	.resultItem('tfc:food/dried_seaweed')
+    event.recipes.tfc.heating('tfc:plant/leafy_kelp', 200)
+	.resultItem('tfc:food/dried_kelp')
+    event.recipes.tfc.heating('tfc:plant/winged_kelp', 200)
+	.resultItem('tfc:food/dried_kelp')
+	
     // Soda Ash
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_seaweed').id('tfg:smelting/dried_seaweed_to_soda')
     event.smelting('3x tfc:powder/soda_ash', 'tfc:food/dried_kelp').id('tfg:smelting/dried_kelp_to_soda')
@@ -3598,6 +3598,15 @@ const registerTFCRecipes = (event) => {
         .duration(20)
         .EUt(7)
     }
-    
     //#endregion
+
+    //More accesible solar drier
+    event.replaceInput({id: 'firmalife:crafting/solar_drier'}, 'gtceu:stainless_steel_rod', 'gtceu:silver_rod')
+
+    //Wood ash
+    event.recipes.create.splashing([Item.of('tfc:powder/wood_ash').withChance(0.25), Item.of('minecraft:stick').withChance(0.25)], 'tfc:torch')
+        .id('tfg:splashing/wash_torch')
+
+    //Lye in mixer
+    generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
 }

@@ -143,8 +143,8 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 35,
+      "rarity": 15,
+      "depth": 20,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
@@ -159,6 +159,18 @@
 		{
           "block": "gtceu:aluminium_indicator",
           "weight": 25
+        },
+		{
+          "block": "tfg:buds/small_rutile_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/medium_rutile_bud",
+          "weight": 7
+        },
+		{
+          "block": "tfg:buds/large_rutile_bud",
+          "weight": 4
         }
       ]
     }

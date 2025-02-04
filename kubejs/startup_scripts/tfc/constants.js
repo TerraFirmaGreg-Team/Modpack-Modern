@@ -707,6 +707,32 @@ global.TFC_WOOD_TYPES = [
     "willow"
 ];
 
+global.TFC_HARDWOOD_TYPES = [
+    "acacia",
+    "ash",
+    "aspen",
+    "birch",
+    "blackwood",
+    "chestnut",
+    "hickory",
+    "maple",
+    "oak",
+    "rosewood",
+    "sycamore"
+];
+
+global.TFC_SOFTWOOD_TYPES = [
+    "douglas_fir",
+    "kapok",
+    "mangrove",
+    "palm",
+    "pine",
+    "sequoia",
+    "spruce",
+    "white_cedar",
+    "willow"
+];
+
 global.TFC_MUD_TYPES = [
     'silt',
     'loam',
@@ -757,17 +783,23 @@ global.TFC_WOOD_ITEM_TYPES_TO_WOOD_DUST = {
 };
 
 /**
- * Хранит названия типов полублоков из камня в TFC.
+ * Хранит названия типов полублоков из камня в TFC. (Не кирпичей)
  */
 global.TFC_ROCK_SLAB_BLOCK_TYPES = [
     'raw',
     'smooth',
-    'bricks',
     'cobble',
-    'mossy_bricks',
     'mossy_cobble',
-    'cracked_bricks'
 ];
+
+/**
+ * Хранит названия типов полублоков из кирпича из камня в TFC
+ */
+global.TFC_BRICK_SLAB_BLOCK_TYPES = [
+    'bricks',
+    'mossy_bricks',
+    'cracked_bricks'
+]
 
 /**
  * Хранит названия цветов песка в TFC.
@@ -1067,7 +1099,25 @@ global.TFC_MILKS = [
     {id: 'firmalife:coconut_milk'},
 ];
 
+global.TFC_MAGMA_BLOCKS = [
+    'tfc:rock/magma/granite',
+    'tfc:rock/magma/diorite',
+    'tfc:rock/magma/gabbro',
+    'tfc:rock/magma/rhyolite',
+    'tfc:rock/magma/basalt',
+    'tfc:rock/magma/andesite',
+    'tfc:rock/magma/dacite'
+];
+
 global.calcAmountOfMetal = (defaultAmount, percents) => {
     const value = defaultAmount / (100 / percents)
     return (value % 2 == 0) ? value : Math.round(value) - 1
 }
+
+// This prevents the "exploit" where Cassiterite dust gives 2x as much from melting as smelting in a furnace
+global.calcAmountOfMetalProcessed = (defaultAmount, percents) => {
+    const percentPerItem = percents / Math.ceil(percents / 100)
+    const value = defaultAmount * (percentPerItem / 100)
+    return (value % 2 == 0) ? value : Math.round(value) - 1
+}
+

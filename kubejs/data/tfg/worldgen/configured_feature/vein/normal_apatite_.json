@@ -181,22 +181,30 @@
       }
     ],
 	"indicator": {
-      "rarity": 12,
-      "depth": 35,
+      "rarity": 15,
+      "depth": 20,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:apatite_indicator",
-          "weight": 50
-        },
-		{
           "block": "gtceu:tricalcium_phosphate_indicator",
           "weight": 35
         },
 		{
           "block": "gtceu:pyrochlore_indicator",
           "weight": 15
+        },
+		{
+          "block": "tfg:buds/small_apatite_bud",
+          "weight": 30
+        },
+		{
+          "block": "tfg:buds/medium_apatite_bud",
+          "weight": 20
+        },
+		{
+          "block": "tfg:buds/large_apatite_bud",
+          "weight": 10
         }
       ]
     }

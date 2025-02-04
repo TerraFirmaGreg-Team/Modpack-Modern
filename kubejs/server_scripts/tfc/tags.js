@@ -54,6 +54,9 @@ const registerTFCItemTags = (event) => {
         event.add('minecraft:logs_that_burn', `#tfc:${woodType}_logs`)
     })
 
+    // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
+    event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
+
     // Определеяет какое оружие может появиться у зомбя/скелета в руках
     // Мечи
     event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_sword')
@@ -81,6 +84,20 @@ const registerTFCItemTags = (event) => {
         event.add('tfg:trapped_chests', `tfc:wood/trapped_chest/${woodType}`)
 
         event.add('tfg:bladed_axles', `tfc:wood/bladed_axle/${woodType}`)
+    })
+
+    //Hardwood Tags
+    global.TFC_HARDWOOD_TYPES.forEach(woodType => {
+        event.add('tfg:hardwood', `#tfc:${woodType}_logs`)
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_log/${woodType}`)
+        event.add('tfg:stripped_hardwood', `tfc:wood/stripped_wood/${woodType}`)
+    });
+
+    //Softwood Tags
+    global.TFC_SOFTWOOD_TYPES.forEach(woodType =>{
+        event.add('tfg:softwood', `#tfc:${woodType}_logs`)
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_log/${woodType}`)
+        event.add('tfg:stripped_softwood', `tfc:wood/stripped_wood/${woodType}`)
     })
 
     // Теги для сосудов по цветам
@@ -189,6 +206,15 @@ const registerTFCItemTags = (event) => {
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
+    
+    // Теги для кирпичных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
 
     // Удаление тегов у отключенных предметов
     global.TFC_DISABLED_ITEMS.forEach(item => {
@@ -207,6 +233,15 @@ const registerTFCBlockTags = (event) => {
             event.add(`tfg:rock_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
             event.add(`tfg:rock_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
             event.add(`tfg:rock_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
+        })
+    })
+    
+    // Теги для кирпичных ступенек тфк
+    global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        global.TFC_BRICK_SLAB_BLOCK_TYPES.forEach(slabType => {
+            event.add(`tfg:brick_slabs`, `tfc:rock/${slabType}/${stoneTypeName}_slab`)
+            event.add(`tfg:brick_stairs`, `tfc:rock/${slabType}/${stoneTypeName}_stairs`)
+            event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
 
@@ -255,6 +290,13 @@ const registerTFCBlockTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+
+    //#region Позволяем ТФК магме греть бойлер из Create
+    global.TFC_MAGMA_BLOCKS.forEach(el => {
+        event.add('create:passive_boiler_heaters', el)
+    })
+    //#endregion
 }
 
 const registerTFCFluidTags = (event) => {

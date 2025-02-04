@@ -1,9 +1,54 @@
 # Changelog
 
-## [0.7.17] - ?
+## [0.7.19] - 25.01.2025
+### Changes
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Add a Forging Guide to the Field Guide (Nebby1999).
+- Fixes wool cloth recipe conflict (CaptainGold1).
+- Get small dust from failed pressing (Nebby1999).
+- Fixed cassiterite heating "exploit" (CaptainGold1).
+- TFC magma as passive boiler heater (SverhRazum-Nah).
+- Adds heat values for items with valid heating recipes but no heat values (CaptainGold1).
+- Add circuit settings to netherarium/enderarium (Pyritie).
+- Fixed colored steel dust centrifuge recipes (Pyritie).
+- Automatic Scraping with Sequenced Assembly (Nebby1999).
+- Add glowstone as infinite lamp fuel (CaptainGold1).
+- Changed LV casing/hull recipes (again) (Pyritie).
+- Add seaweed and kelp drying recipes (Metriximor).
+- Fix assembler wool recipe conflicts (deneth-weerasinghe).
+- Feature: Papermaking Overhaul with Wood (Nebby1999).
+- Hanging Sign Metal Dupe fix (AirRice).
+- Adjusted LV machines book entry (Pyritie).
+- Fix collapsible brick slab blocks (Egogorka).
+
+## [0.7.18] - 19.01.2025
+### Changes
+- Fix moonlight mod.
+
+## [0.7.17] - 19.01.2025
 ### Changes
 - Added ore index, started work on other TFC info category (Pyritie).
 - Changed the AE2 network analyzer to HV instead of IV (Pyritie).
+- Fixed a typo in salt water boiling recipe's temperature for small salt pile - 1000 > 100 (8oyNextDoor).
+- Fix sprinklers + fix bread and yeast starter recipe conflict (Pyritie).
+- Added recipes for create glass, more windows, fixed tinted glass recipe conflict (Pyritie).
+- Added missing recipe for nether brick (Pyritie).
+- Added armor trims (Pyritie).
+- Add blast furnace tips entry (CaptainGold1).
+- Allows stick bundles to be used in the coke oven (CaptainGold1).
+- Allows all colors of glass to be macerated/hammered to dust (CaptainGold1).
+- Add alternate papermaking quests using treated hide (CaptainGold1).
+- Fix dupes via recycling firmaciv items (Egogorka).
+- Create fluxstone recipes in macerator and forge hammer (KorGgenT).
+- Fixes fertilizer recipe and modifies some mixer recipes relating to dirt (CaptainGold1).
+- Changed train tracks to be cheaper (Pyritie).
+- Create Sails: Recipe Improvements (Nebby1999).
+- Moved MV superconductor to early HV instead of late HV (Pyritie).
+- Added some Italy and Ukraine translation (MetenBouldry).
+- Сreate some rich coal recipes in coke oven and pyro oven (Exzept1on).
+- Add blaze burner, fix alternator (Pyritie).
+- Added budding crystals for the other gemstone ores (Pyritie).
+- Fix casing exploit, change recipes for tfc alloy (Pyritie).
 
 ## [0.7.16] - 12.01.2025
 ### Changes
