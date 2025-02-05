@@ -13,11 +13,11 @@ const registerTFGBlocks = (event) => {
 	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 
+
+	// #region Moon blocks
+
 	event.createCustom(`tfg:lunar_warped_roots`, () => new $ClusterBlock(1, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 	event.createCustom(`tfg:lunar_sprouts`, () => new $ClusterBlock(1, 2, $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
-
-
-	// Moon rocks
 
 	event.create('tfg:raw_anorthite')
 		.stoneSoundType()
@@ -25,18 +25,7 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'ad_astra:item/moon_stone' })
 		})
-		.tagBoth('forge:stone')
-		.tagBoth('tfc:rock/raw')
-		.mapColor('terracotta_cyan')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:raw_dunite')
-		.stoneSoundType()
-		.requiresTool(true)
-		.item(item => {
-			item.modelJson({ parent: 'ad_astra:item/moon_deepslate' })
-		})
+		.tagBlock('tfc:can_carve')
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/raw')
 		.mapColor('terracotta_cyan')
@@ -49,8 +38,22 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'ad_astra:item/moon_stone' })
 		})
+		.tagBlock('tfc:can_carve')
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_cyan')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:raw_dunite')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/moon_deepslate' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/raw')
 		.mapColor('terracotta_cyan')
 		.fullBlock(true)
 		.opaque(true)
@@ -59,7 +62,9 @@ const registerTFGBlocks = (event) => {
 		.itemTexture('tfg:item/loose_anorthite')
 		.rockTypeModel('igneous_extrusive')
 
-	// Mars rocks
+	// #endregion
+
+	// #region Mars blocks
 
 	event.create('tfg:raw_plagioclase')
 		.stoneSoundType()
@@ -67,6 +72,7 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'ad_astra:item/mars_stone' })
 		})
+		.tagBlock('tfc:can_carve')
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/raw')
 		.mapColor('terracotta_orange')
@@ -79,6 +85,7 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'ad_astra:item/mars_stone' })
 		})
+		.tagBlock('tfc:can_carve')
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
 		.mapColor('terracotta_orange')
@@ -88,9 +95,10 @@ const registerTFGBlocks = (event) => {
 	event.create('tfg:loose_plagioclase', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose_plagioclase')
 		.rockTypeModel('igneous_extrusive')
+	// #endregion
 	
 	
-	// gem indicators
+	// #region Gem indicators
 	
 	const GEM_INDICATORS = 
 	[
@@ -135,4 +143,6 @@ const registerTFGBlocks = (event) => {
 		event.createCustom(`tfg:buds/medium_${gem[0]}_bud`, () => new $ClusterBlock(4, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 		event.createCustom(`tfg:buds/large_${gem[0]}_bud`,  () => new $ClusterBlock(5, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 	})
+
+	// #endregion
 }
