@@ -73,7 +73,7 @@ TFCEvents.registerClimateModel(event => {
 			return 0.25
 		})
 		model.setWindVector((block, calendarTicks) => {
-			return event.newVec2(2, 2)
+			return event.newVec2(0.5, 0.5)
 		})
 	})
 })
