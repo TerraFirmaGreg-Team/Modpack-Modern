@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "steam_age"
-	group: ""
+	group: "74A4CF77167DFFCE"
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
 	order_index: 1
@@ -544,7 +544,16 @@
 				""
 				"&6This quest unlocks a new tutorial on rudimentary Ore Processing in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
 			]
-			icon: "gtceu:crushed_gold_ore"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:crushed_gold_ore"
+			}
 			id: "7813F183681E0342"
 			shape: "circle"
 			size: 1.0d

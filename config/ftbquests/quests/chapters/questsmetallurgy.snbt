@@ -1,0 +1,550 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "questsmetallurgy"
+	group: "3C4612A920658A7E"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "gtceu:wrought_iron_ingot"
+	}
+	id: "5F560FF28458A555"
+	order_index: 1
+	quest_links: [
+		{
+			id: "763EE3CC2D320738"
+			linked_quest: "48A8E3210B2BAE1C"
+			shape: "gear"
+			size: 4.0d
+			x: -4.5d
+			y: -32.0d
+		}
+		{
+			id: "292F0E5F9768917A"
+			linked_quest: "5301A38F7EA81140"
+			x: -5.5d
+			y: -17.5d
+		}
+		{
+			id: "0F7AB259776E037A"
+			linked_quest: "5E186CD5E83BFDF0"
+			x: -3.5d
+			y: -17.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["003EB186944BD36E"]
+			id: "25551B8DB67BE0A9"
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "4AB43F0CB3DCFD4B"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["29D53D587AD1B0E6"]
+			id: "003EB186944BD36E"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7218CBCCA313343B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/bucket/red_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "41001037515E3120"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/bucket/blue_steel"
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["195DB41394C9FF08"]
+			id: "29D53D587AD1B0E6"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "7B53866C1D6433B4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:red_or_blue_anvil)"
+					}
+				}
+				title: "Any #tfc:red_or_blue_anvil"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0C728B7B596E9B33"]
+			id: "52DAF93E2F3D688A"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "5E7E9401FF7C5402"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4310B619B57276ED"]
+			id: "04DE7C58F20B535A"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "338F94FE331E0954"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/steel"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["358571B6E692F198"]
+			id: "174DA15847665CF8"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "0E566B2921529CFE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/wrought_iron"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -19.5d
+		}
+		{
+			dependencies: ["133DB645B6E0585A"]
+			id: "3C173357029AB649"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "19778123CAB30DAA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
+					}
+				}
+				title: "Any #tfc:bronze_anvils"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -25.5d
+		}
+		{
+			id: "133DB645B6E0585A"
+			tasks: [{
+				count: 7L
+				id: "497C431206F498A5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot)item(gtceu:bismuth_bronze_double_ingot))"
+					}
+				}
+				title: "Any #forge:double_ingots/bronze"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -29.0d
+		}
+		{
+			dependencies: [
+				"021D3DEEB15A3D17"
+				"3C173357029AB649"
+			]
+			id: "0A92F5C4BB6AF972"
+			size: 2.0d
+			tasks: [
+				{
+					id: "323A28991DD98C8D"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					id: "15B937178A5E5D8E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:raw_iron_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "7A883AAC52684AE6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:refined_iron_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "38651A52735D8872"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:wrought_iron_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -23.0d
+		}
+		{
+			dependencies: ["12CB3B9ADC586521"]
+			id: "5996A3A0D475B8A6"
+			size: 2.0d
+			tasks: [{
+				id: "3A2A3286F594F977"
+				item: "tfc:blast_furnace"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0A92F5C4BB6AF972"]
+			id: "358571B6E692F198"
+			tasks: [{
+				count: 7L
+				id: "05AD17F66DFE3C56"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:wrought_iron_double_ingot"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -21.5d
+		}
+		{
+			id: "021D3DEEB15A3D17"
+			tasks: [{
+				id: "588EB07E980386F9"
+				item: "tfc:bellows"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -23.0d
+		}
+		{
+			dependencies: ["5996A3A0D475B8A6"]
+			id: "4310B619B57276ED"
+			tasks: [{
+				count: 7L
+				id: "0EDB1D851E198274"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_double_ingot"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			id: "0C728B7B596E9B33"
+			tasks: [{
+				count: 7L
+				id: "03C3B0C1F08B8989"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:black_steel_double_ingot"
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			id: "195DB41394C9FF08"
+			tasks: [{
+				count: 7L
+				id: "05D83514FD24E91E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:blue_steel_double_ingot)item(gtceu:red_steel_double_ingot))"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C173357029AB649"]
+			description: [
+				"The &dSolid Boiler&r is the only available Boiler for now, as the &aGlass&r needed for the others is not available just yet. You can get by with only one, but we would recommend making at least two."
+				""
+				"Important: Boilers can explode! This still catches out &eexperienced GT players&r, so keep this warning in mind when setting your Boiler up."
+				"{@pagebreak}"
+				"Water does not gel well with &6high temperatures&r, and a &cSteam Explosion&r (Launch!) may occur under the following conditions:"
+				""
+				"- The Boiler is &4overheating.&r Its temperature is indicated by the &cred bar&r in the GUI."
+				"...and..."
+				"- The Boiler does not have any &bwater&r. This is signified by the absence of a &bblue bar&r in the GUI."
+				"...AND..."
+				"- The Boiler receives water whilst &6both&r conditions are &2true&r."
+				"{@pagebreak}"
+				"You can avert catastrophe by filling the boiler with water before heating it up, and making sure the water supply is constant. The drain is slow - &b1 mB&r of Water boils into &7160 mB&r of Steam - so you shouldn't have to worry about running out."
+				""
+				"The Boiler can auto eject steam on all its faces except the bottom. For automated Water input, use the bottom face."
+				""
+				"&3Note:&r In this modpack, explosions are configured to &cnot&r damage any block or entity, but you'll &dstill lose&r your machine."
+				""
+				"You may recall that regular Steam machines had a duration penalty, and were twice as slow. Not great."
+				""
+				"&5High Pressure&r Steam machines no longer bear a &bduration penalty &rfor recipes, making them objective upgrades."
+				""
+				"Make &eone&r of the proposed HP machines to complete this quest."
+			]
+			id: "1E9939FFC4A5D54E"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Putting the Steam in Steam Age"
+			tasks: [{
+				id: "6D19C5A76543D699"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			title: "Pressure Cookin'"
+			x: 0.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["174DA15847665CF8"]
+			id: "72F1C122FC26229C"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [
+				{
+					id: "673D38EB62FFD65F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:kaolin_clay"
+					}
+					type: "item"
+				}
+				{
+					id: "576163D694ECF915"
+					observe_type: 1
+					timer: 0L
+					to_observe: "#tfc:kaolin_clay"
+					type: "observation"
+				}
+				{
+					id: "7B96BA138E3F0C6E"
+					observe_type: 0
+					timer: 0L
+					to_observe: "tfc:plant/blood_lily"
+					type: "observation"
+				}
+			]
+			x: -7.5d
+			y: -16.5d
+		}
+		{
+			id: "53E1383F12EC6765"
+			optional: true
+			tasks: [
+				{
+					biome: "tfc:ocean"
+					id: "4012F0C64B38E134"
+					type: "biome"
+				}
+				{
+					id: "0960B9F960BFFFDE"
+					item: "tfc:rock/raw/gabbro"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"53E1383F12EC6765"
+				"174DA15847665CF8"
+			]
+			id: "31CE13462759950C"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "6B0C9D862BFD27BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:raw_graphite)item(gtceu:rich_raw_graphite)item(gtceu:poor_raw_graphite)item(gtceu:graphite_dust)item(gtceu:crushed_graphite_ore))"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["0139038AA49CD2A6"]
+			id: "2C76EE197C14B0DC"
+			tasks: [{
+				id: "71DAE9C9C0192316"
+				item: "tfc:fire_clay"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			id: "12CB3B9ADC586521"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "13A5CE864D0F9AE4"
+				item: "tfc:crucible"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"72F1C122FC26229C"
+				"31CE13462759950C"
+				"5E186CD5E83BFDF0"
+				"5301A38F7EA81140"
+			]
+			id: "0139038AA49CD2A6"
+			tasks: [
+				{
+					count: 4L
+					id: "4425051268390DAB"
+					item: "tfc:powder/kaolinite"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6508F06E8CDFCB5F"
+					item: "tfc:powder/graphite"
+					type: "item"
+				}
+				{
+					id: "7E71419B1EF3AB5A"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -15.0d
+		}
+	]
+	subtitle: ["{quests.metallurgy_age.subtitle}"]
+	title: "{quests.metal_age}"
+}

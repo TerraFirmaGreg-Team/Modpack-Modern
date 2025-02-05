@@ -9,4 +9,7 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:soaked_unrefined_paper')
         .translationKey('item.tfg.soaked_unrefined_paper')
+    
+    event.create('tfg:terra_firma_greg')
+        .translationKey('item.tfg.terra_firma_greg')
 }
