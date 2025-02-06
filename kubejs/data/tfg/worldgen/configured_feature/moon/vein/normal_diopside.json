@@ -103,23 +103,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_diopside_ore",
+						"block": "gtceu:basanite_diopside_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:dunite_trona_ore",
+						"block": "gtceu:basanite_trona_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_cobalt_ore",
+						"block": "gtceu:basanite_cobalt_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_tricalcium_phosphate_ore",
+						"block": "gtceu:basanite_tricalcium_phosphate_ore",
 						"weight": 15
 					}
 				]

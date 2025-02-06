@@ -49,19 +49,19 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_apatite_ore",
+						"block": "gtceu:basanite_apatite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_tricalcium_phosphate_ore",
+						"block": "gtceu:basanite_tricalcium_phosphate_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:dunite_pyrochlore_ore",
+						"block": "gtceu:basanite_pyrochlore_ore",
 						"weight": 40
 					}
 				]

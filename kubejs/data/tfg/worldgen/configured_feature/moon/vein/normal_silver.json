@@ -11,19 +11,19 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_galena_ore",
+						"block": "gtceu:basanite_galena_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:dunite_silver_ore",
+						"block": "gtceu:basanite_silver_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:dunite_lead_ore",
+						"block": "gtceu:basanite_lead_ore",
 						"weight": 55
 					}
 				]

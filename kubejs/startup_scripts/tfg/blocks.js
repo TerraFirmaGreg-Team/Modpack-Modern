@@ -46,7 +46,7 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:raw_dunite')
+	event.create('tfg:raw_basanite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -99,6 +99,8 @@ const registerTFGBlocks = (event) => {
 
 
 	// TODO: trachyte for mercury?
+	// Phonolite - says it has zirconium often (venus/mercury)
+	// Ignimbrite - volcanic ashy, similar to tuff
 	
 	
 	// #region Gem indicators

@@ -153,7 +153,7 @@ const registerTFGRecipes = (event) => {
 
 	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:raw_anorthosite')
 	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:hardened_anorthosite')
-	event.recipes.tfc.collapse('create:cut_deepslate', 'tfg:raw_dunite')
+	event.recipes.tfc.collapse('tfg:raw_basanite', 'tfg:raw_basanite')
 
 	event.recipes.tfc.landslide('ad_astra:moon_cobblestone', 'ad_astra:moon_cobblestone')
 	event.recipes.tfc.landslide('ad_astra:moon_sand', 'ad_astra:moon_sand')
@@ -319,9 +319,9 @@ const registerTFGRecipes = (event) => {
 
 	//#region Other space rock recipes
 
-	event.recipes.gtceu.rock_breaker('tfg:raw_dunite')
-		.notConsumable('tfg:raw_dunite')
-		.itemOutputs('tfg:raw_dunite')
+	event.recipes.gtceu.rock_breaker('tfg:raw_basanite')
+		.notConsumable('tfg:raw_basanite')
+		.itemOutputs('tfg:raw_basanite')
 		.duration(16)
 		.EUt(33)
 		.dimension('ad_astra:moon')

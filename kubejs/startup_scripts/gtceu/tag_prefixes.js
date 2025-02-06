@@ -9,8 +9,8 @@ const registerGTCEuTagPrefixes = (event) => {
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
 
-    event.create('dunite', 'ore')
-        .stateSupplier(() => Block.getBlock('tfg:raw_dunite').defaultBlockState())
+    event.create('basanite', 'ore')
+        .stateSupplier(() => Block.getBlock('tfg:raw_basanite').defaultBlockState())
         .baseModelLocation('ad_astra:block/moon_deepslate')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)

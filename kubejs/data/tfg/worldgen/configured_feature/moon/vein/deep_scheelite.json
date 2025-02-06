@@ -68,19 +68,19 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_scheelite_ore",
+						"block": "gtceu:basanite_scheelite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:dunite_tungstate_ore",
+						"block": "gtceu:basanite_tungstate_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:dunite_lithium_ore",
+						"block": "gtceu:basanite_lithium_ore",
 						"weight": 10
 					}
 				]

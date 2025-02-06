@@ -11,23 +11,23 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_olivine_ore",
+						"block": "gtceu:basanite_olivine_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:dunite_diopside_ore",
+						"block": "gtceu:basanite_diopside_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:dunite_enstatite_ore",
+						"block": "gtceu:basanite_enstatite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:dunite_fayalite_ore",
+						"block": "gtceu:basanite_fayalite_ore",
 						"weight": 10
 					}
 				]

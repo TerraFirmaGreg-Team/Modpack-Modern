@@ -69,7 +69,7 @@ const registerAdAstraBlockTags = (event) => {
 	// Moon
 	event.add('minecraft:rabbits_spawnable_on', 'tfg:raw_anorthosite')
 	event.add('minecraft:rabbits_spawnable_on', 'tfg:hardened_anorthosite')
-	event.add('minecraft:rabbits_spawnable_on', 'tfg:raw_dunite')
+	event.add('minecraft:rabbits_spawnable_on', 'tfg:raw_basanite')
 	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_sand')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/black')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/white')
@@ -80,7 +80,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/gabbro')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/basalt')
 
-	event.add('ad_astra:moon_stone_replaceables', 'tfg:raw_dunite')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:raw_basanite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfg:raw_anorthosite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfg:hardened_anorthosite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/basalt')

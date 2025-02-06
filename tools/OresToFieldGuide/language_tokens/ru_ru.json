@@ -61,7 +61,7 @@
 		"granite": "Гранит",
 		"diorite": "Диорит",
 		"anorthosite": "Анортит",
-		"dunite": "Дунит"
+		"basanite": "Дунит"
 	},
 
     "ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the celestial body $(thing){0}(), sorted alphabetically and then by richest to poorest vein type.",

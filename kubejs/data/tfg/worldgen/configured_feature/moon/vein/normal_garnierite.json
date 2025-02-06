@@ -38,27 +38,27 @@
             },
             {
                 "replace": [
-                    "tfg:raw_dunite"
+                    "tfg:raw_basanite"
                 ],
                 "with": [
                     {
-                        "block": "gtceu:dunite_garnierite_ore",
+                        "block": "gtceu:basanite_garnierite_ore",
                         "weight": 30
                     },
                     {
-                        "block": "gtceu:dunite_nickel_ore",
+                        "block": "gtceu:basanite_nickel_ore",
                         "weight": 10
                     },
                     {
-                        "block": "gtceu:dunite_cobaltite_ore",
+                        "block": "gtceu:basanite_cobaltite_ore",
                         "weight": 20
                     },
                     {
-                        "block": "gtceu:dunite_pentlandite_ore",
+                        "block": "gtceu:basanite_pentlandite_ore",
                         "weight": 25
                     },
                     {
-                        "block": "gtceu:dunite_cobalt_ore",
+                        "block": "gtceu:basanite_cobalt_ore",
                         "weight": 15
                     }
                 ]

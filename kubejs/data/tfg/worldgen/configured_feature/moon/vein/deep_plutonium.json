@@ -11,19 +11,19 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_desh_ore",
+						"block": "gtceu:basanite_desh_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:dunite_armalcolite_ore",
+						"block": "gtceu:basanite_armalcolite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:dunite_plutonium_ore",
+						"block": "gtceu:basanite_plutonium_ore",
 						"weight": 25
 					}
 				]

@@ -30,19 +30,19 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_redstone_ore",
+						"block": "gtceu:basanite_redstone_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:dunite_ruby_ore",
+						"block": "gtceu:basanite_ruby_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:dunite_cinnabar_ore",
+						"block": "gtceu:basanite_cinnabar_ore",
 						"weight": 20
 					}
 				]

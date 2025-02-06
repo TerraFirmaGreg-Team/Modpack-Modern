@@ -68,19 +68,19 @@
             },
             {
                 "replace": [
-                    "tfg:raw_dunite"
+                    "tfg:raw_basanite"
                 ],
                 "with": [
                     {
-                        "block": "gtceu:dunite_magnetite_ore",
+                        "block": "gtceu:basanite_magnetite_ore",
                         "weight": 65
                     },
                     {
-                        "block": "gtceu:dunite_vanadium_magnetite_ore",
+                        "block": "gtceu:basanite_vanadium_magnetite_ore",
                         "weight": 25
                     },
                     {
-                        "block": "gtceu:dunite_gold_ore",
+                        "block": "gtceu:basanite_gold_ore",
                         "weight": 10
                     }
                 ]

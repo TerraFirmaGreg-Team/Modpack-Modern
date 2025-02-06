@@ -34,23 +34,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_quartzite_ore",
+						"block": "gtceu:basanite_quartzite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:dunite_certus_quartz_ore",
+						"block": "gtceu:basanite_certus_quartz_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:dunite_barite_ore",
+						"block": "gtceu:basanite_barite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:dunite_nether_quartz_ore",
+						"block": "gtceu:basanite_nether_quartz_ore",
 						"weight": 30
 					}
 				]

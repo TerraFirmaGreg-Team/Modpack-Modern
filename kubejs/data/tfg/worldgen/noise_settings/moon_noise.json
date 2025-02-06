@@ -250,7 +250,7 @@
 				"then_run": {
 					"type": "minecraft:block",
 					"result_state": {
-						"Name": "tfg:raw_dunite",
+						"Name": "tfg:raw_basanite",
 						"Properties": {
 							"axis": "y"
 						}

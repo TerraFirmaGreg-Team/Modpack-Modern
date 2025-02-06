@@ -80,23 +80,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_wulfenite_ore",
+						"block": "gtceu:basanite_wulfenite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:dunite_molybdenite_ore",
+						"block": "gtceu:basanite_molybdenite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:dunite_molybdenum_ore",
+						"block": "gtceu:basanite_molybdenum_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:dunite_powellite_ore",
+						"block": "gtceu:basanite_powellite_ore",
 						"weight": 15
 					}
 				]

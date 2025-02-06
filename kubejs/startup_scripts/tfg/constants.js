@@ -3,7 +3,7 @@
 global.EXTRATERRESTRIAL_RAW_ROCKS = 
 [
 	'tfg:raw_anorthosite', 
-	'tfg:raw_dunite',
+	'tfg:raw_basanite',
 	'tfg:raw_plagiocite'
 ]
 

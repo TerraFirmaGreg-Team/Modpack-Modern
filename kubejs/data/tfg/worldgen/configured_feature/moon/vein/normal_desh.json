@@ -34,23 +34,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_desh_ore",
+						"block": "gtceu:basanite_desh_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:dunite_ilmenite_ore",
+						"block": "gtceu:basanite_ilmenite_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:dunite_aluminium_ore",
+						"block": "gtceu:basanite_aluminium_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:dunite_armalcolite_ore",
+						"block": "gtceu:basanite_armalcolite_ore",
 						"weight": 20
 					}
 				]

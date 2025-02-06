@@ -35,23 +35,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_almandine_ore",
+						"block": "gtceu:basanite_almandine_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:dunite_pyrope_ore",
+						"block": "gtceu:basanite_pyrope_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_sapphire_ore",
+						"block": "gtceu:basanite_sapphire_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:dunite_green_sapphire_ore",
+						"block": "gtceu:basanite_green_sapphire_ore",
 						"weight": 15
 					}
 				]

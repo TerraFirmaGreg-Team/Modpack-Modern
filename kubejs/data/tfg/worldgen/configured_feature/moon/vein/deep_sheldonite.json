@@ -34,23 +34,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_bornite_ore",
+						"block": "gtceu:basanite_bornite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:dunite_cooperite_ore",
+						"block": "gtceu:basanite_cooperite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_platinum_ore",
+						"block": "gtceu:basanite_platinum_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_palladium_ore",
+						"block": "gtceu:basanite_palladium_ore",
 						"weight": 15
 					}
 				]

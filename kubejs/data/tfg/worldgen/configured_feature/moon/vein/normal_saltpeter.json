@@ -34,23 +34,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_dunite"
+					"tfg:raw_basanite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dunite_saltpeter_ore",
+						"block": "gtceu:basanite_saltpeter_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:dunite_soapstone_ore",
+						"block": "gtceu:basanite_soapstone_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_electrotine_ore",
+						"block": "gtceu:basanite_electrotine_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dunite_talc_ore",
+						"block": "gtceu:basanite_talc_ore",
 						"weight": 15
 					}
 				]
