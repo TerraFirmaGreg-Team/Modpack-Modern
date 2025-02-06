@@ -2,14 +2,14 @@
 
 global.EXTRATERRESTRIAL_RAW_ROCKS = 
 [
-	'tfg:raw_anorthite', 
+	'tfg:raw_anorthosite', 
 	'tfg:raw_dunite',
 	'tfg:raw_plagiocite'
 ]
 
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = 
 [
-	'tfg:hardened_anorthite',
+	'tfg:hardened_anorthosite',
 	'tfg:hardened_plagiocite'
 ]
 

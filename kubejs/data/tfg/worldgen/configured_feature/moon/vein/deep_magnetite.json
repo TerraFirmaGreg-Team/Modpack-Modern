@@ -65,27 +65,27 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_magnetite_ore",
+						"block": "gtceu:anorthosite_magnetite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_vanadium_magnetite_ore",
+						"block": "gtceu:anorthosite_vanadium_magnetite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:anorthite_chromite_ore",
+						"block": "gtceu:anorthosite_chromite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:anorthite_gold_ore",
+						"block": "gtceu:anorthosite_gold_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:anorthite_sapphire_ore",
+						"block": "gtceu:anorthosite_sapphire_ore",
 						"weight": 5
 					}
 				]

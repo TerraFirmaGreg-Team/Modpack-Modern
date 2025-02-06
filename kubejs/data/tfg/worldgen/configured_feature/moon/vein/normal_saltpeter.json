@@ -57,23 +57,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_saltpeter_ore",
+						"block": "gtceu:anorthosite_saltpeter_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:anorthite_soapstone_ore",
+						"block": "gtceu:anorthosite_soapstone_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_electrotine_ore",
+						"block": "gtceu:anorthosite_electrotine_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_talc_ore",
+						"block": "gtceu:anorthosite_talc_ore",
 						"weight": 15
 					}
 				]

@@ -80,23 +80,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_diopside_ore",
+						"block": "gtceu:anorthosite_diopside_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:anorthite_trona_ore",
+						"block": "gtceu:anorthosite_trona_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_cobalt_ore",
+						"block": "gtceu:anorthosite_cobalt_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_tricalcium_phosphate_ore",
+						"block": "gtceu:anorthosite_tricalcium_phosphate_ore",
 						"weight": 15
 					}
 				]

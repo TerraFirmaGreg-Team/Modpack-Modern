@@ -30,19 +30,19 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_apatite_ore",
+						"block": "gtceu:anorthosite_apatite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_tricalcium_phosphate_ore",
+						"block": "gtceu:anorthosite_tricalcium_phosphate_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:anorthite_pyrochlore_ore",
+						"block": "gtceu:anorthosite_pyrochlore_ore",
 						"weight": 40
 					}
 				]

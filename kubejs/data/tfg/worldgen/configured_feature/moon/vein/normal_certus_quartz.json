@@ -80,23 +80,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_quartzite_ore",
+						"block": "gtceu:anorthosite_quartzite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:anorthite_certus_quartz_ore",
+						"block": "gtceu:anorthosite_certus_quartz_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:anorthite_barite_ore",
+						"block": "gtceu:anorthosite_barite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:anorthite_nether_quartz_ore",
+						"block": "gtceu:anorthosite_nether_quartz_ore",
 						"weight": 30
 					}
 				]

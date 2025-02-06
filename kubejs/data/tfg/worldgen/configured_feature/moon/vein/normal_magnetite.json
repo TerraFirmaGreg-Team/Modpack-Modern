@@ -49,19 +49,19 @@
             },
             {
                 "replace": [
-                    "tfg:raw_anorthite"
+                    "tfg:raw_anorthosite"
                 ],
                 "with": [
                     {
-                        "block": "gtceu:anorthite_magnetite_ore",
+                        "block": "gtceu:anorthosite_magnetite_ore",
                         "weight": 65
                     },
                     {
-                        "block": "gtceu:anorthite_vanadium_magnetite_ore",
+                        "block": "gtceu:anorthosite_vanadium_magnetite_ore",
                         "weight": 25
                     },
                     {
-                        "block": "gtceu:anorthite_gold_ore",
+                        "block": "gtceu:anorthosite_gold_ore",
                         "weight": 10
                     }
                 ]

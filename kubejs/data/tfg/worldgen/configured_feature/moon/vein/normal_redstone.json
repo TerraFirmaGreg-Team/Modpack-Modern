@@ -11,19 +11,19 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_redstone_ore",
+						"block": "gtceu:anorthosite_redstone_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:anorthite_ruby_ore",
+						"block": "gtceu:anorthosite_ruby_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:anorthite_cinnabar_ore",
+						"block": "gtceu:anorthosite_cinnabar_ore",
 						"weight": 20
 					}
 				]

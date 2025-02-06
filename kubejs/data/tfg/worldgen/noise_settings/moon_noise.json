@@ -5,7 +5,7 @@
 	"ore_veins_enabled": false,
 	"legacy_random_source": false,
 	"default_block": {
-		"Name": "tfg:raw_anorthite"
+		"Name": "tfg:raw_anorthosite"
 	},
 	"default_fluid": {
 		"Name": "minecraft:air"
@@ -344,7 +344,7 @@
 							"then_run": {
 								"type": "minecraft:block",
 								"result_state": {
-									"Name": "tfg:hardened_anorthite"
+									"Name": "tfg:hardened_anorthosite"
 								}
 							}
 						},

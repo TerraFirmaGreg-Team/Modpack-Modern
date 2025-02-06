@@ -19,7 +19,7 @@ const registerTFGBlocks = (event) => {
 
 	// Moon rocks
 
-	event.create('tfg:raw_anorthite')
+	event.create('tfg:raw_anorthosite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -43,7 +43,7 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:hardened_anorthite')
+	event.create('tfg:hardened_anorthosite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -55,8 +55,8 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:loose_anorthite', 'tfc:loose_rock')
-		.itemTexture('tfg:item/loose_anorthite')
+	event.create('tfg:loose_anorthosite', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose_anorthosite')
 		.rockTypeModel('igneous_extrusive')
 
 	// Mars rocks

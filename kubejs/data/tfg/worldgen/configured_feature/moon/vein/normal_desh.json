@@ -11,23 +11,23 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_desh_ore",
+						"block": "gtceu:anorthosite_desh_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:anorthite_ilmenite_ore",
+						"block": "gtceu:anorthosite_ilmenite_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:anorthite_aluminium_ore",
+						"block": "gtceu:anorthosite_aluminium_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:anorthite_armalcolite_ore",
+						"block": "gtceu:anorthosite_armalcolite_ore",
 						"weight": 20
 					}
 				]

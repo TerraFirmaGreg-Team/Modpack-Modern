@@ -2,8 +2,8 @@
 
 const registerGTCEuTagPrefixes = (event) => {
 	
-	event.create('anorthite', 'ore')
-        .stateSupplier(() => Block.getBlock('tfg:raw_anorthite').defaultBlockState())
+	event.create('anorthosite', 'ore')
+        .stateSupplier(() => Block.getBlock('tfg:raw_anorthosite').defaultBlockState())
         .baseModelLocation('ad_astra:block/moon_stone')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)

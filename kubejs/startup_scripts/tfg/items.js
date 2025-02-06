@@ -13,11 +13,11 @@ const registerTFGItems = (event) =>
 
     // Moon
 
-    event.create('tfg:anorthite_brick')
-        .translationKey('item.tfg.anorthite_brick')
+    event.create('tfg:anorthosite_brick')
+        .translationKey('item.tfg.anorthosite_brick')
 
-    event.create('tfg:anorthite_dust')
-        .translationKey('item.tfg.anorthite_dust')
+    event.create('tfg:anorthosite_dust')
+        .translationKey('item.tfg.anorthosite_dust')
 
     // Mars
 

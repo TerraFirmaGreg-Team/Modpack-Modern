@@ -151,8 +151,8 @@ const registerTFGRecipes = (event) => {
 
 	// #region Collapse/landslide recipes (needed for them to actually function)
 
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:raw_anorthite')
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:hardened_anorthite')
+	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:raw_anorthosite')
+	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:hardened_anorthosite')
 	event.recipes.tfc.collapse('create:cut_deepslate', 'tfg:raw_dunite')
 
 	event.recipes.tfc.landslide('ad_astra:moon_cobblestone', 'ad_astra:moon_cobblestone')
@@ -165,7 +165,7 @@ const registerTFGRecipes = (event) => {
 	const AD_ASTRA_ROCKS = {
 		//mercury: "TODO",
 		//venus: "TODO",
-		moon: "anorthite",
+		moon: "anorthosite",
 		mars: "plagioclase",
 		//glacio: "TODO"
 	}
@@ -327,8 +327,8 @@ const registerTFGRecipes = (event) => {
 		.dimension('ad_astra:moon')
 
 
-	event.recipes.gtceu.centrifuge(`tfg:anorthite_dust`)
-		.itemInputs(`tfg:anorthite_dust`)
+	event.recipes.gtceu.centrifuge(`tfg:anorthosite_dust`)
+		.itemInputs(`tfg:anorthosite_dust`)
 		.chancedOutput('#forge:tiny_dusts/olivine', 3700, 700)
 		.chancedOutput('#forge:tiny_dusts/magnetite', 3700, 700)
 		.chancedOutput('#forge:tiny_dusts/ilmenite', 1700, 700)

@@ -80,23 +80,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_enstatite_ore",
+						"block": "gtceu:anorthosite_enstatite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:anorthite_pyrite_ore",
+						"block": "gtceu:anorthosite_pyrite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:anorthite_pentlandite_ore",
+						"block": "gtceu:anorthosite_pentlandite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:anorthite_fayalite_ore",
+						"block": "gtceu:anorthosite_fayalite_ore",
 						"weight": 45
 					}
 				]

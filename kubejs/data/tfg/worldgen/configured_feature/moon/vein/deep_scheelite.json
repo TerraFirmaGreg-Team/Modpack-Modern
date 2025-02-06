@@ -49,19 +49,19 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_scheelite_ore",
+						"block": "gtceu:anorthosite_scheelite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:anorthite_tungstate_ore",
+						"block": "gtceu:anorthosite_tungstate_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:anorthite_lithium_ore",
+						"block": "gtceu:anorthosite_lithium_ore",
 						"weight": 10
 					}
 				]

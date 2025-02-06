@@ -11,23 +11,23 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_bornite_ore",
+						"block": "gtceu:anorthosite_bornite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:anorthite_cooperite_ore",
+						"block": "gtceu:anorthosite_cooperite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_platinum_ore",
+						"block": "gtceu:anorthosite_platinum_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_palladium_ore",
+						"block": "gtceu:anorthosite_palladium_ore",
 						"weight": 15
 					}
 				]

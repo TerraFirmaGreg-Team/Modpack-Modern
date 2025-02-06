@@ -57,23 +57,23 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_kyanite_ore",
+						"block": "gtceu:anorthosite_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:anorthite_mica_ore",
+						"block": "gtceu:anorthosite_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_bauxite_ore",
+						"block": "gtceu:anorthosite_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:anorthite_pollucite_ore",
+						"block": "gtceu:anorthosite_pollucite_ore",
 						"weight": 15
 					}
 				]

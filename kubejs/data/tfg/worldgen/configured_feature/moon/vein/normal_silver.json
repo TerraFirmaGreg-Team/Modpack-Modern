@@ -30,19 +30,19 @@
 			},
 			{
 				"replace": [
-					"tfg:raw_anorthite"
+					"tfg:raw_anorthosite"
 				],
 				"with": [
 					{
-						"block": "gtceu:anorthite_galena_ore",
+						"block": "gtceu:anorthosite_galena_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:anorthite_silver_ore",
+						"block": "gtceu:anorthosite_silver_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:anorthite_lead_ore",
+						"block": "gtceu:anorthosite_lead_ore",
 						"weight": 55
 					}
 				]
