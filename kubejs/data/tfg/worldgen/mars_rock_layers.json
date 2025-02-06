@@ -1,0 +1,62 @@
+{
+	"__TODO__": "ADD RED GRANITE",
+
+
+	"rocks": {
+		"granite": "tfc:granite",
+		"diorite": "tfc:diorite",
+		"gabbro": "tfc:gabbro",
+
+		"shale": "tfc:shale",
+		"claystone": "tfc:claystone",
+		"limestone": "tfc:limestone",
+		"conglomerate": "tfc:conglomerate",
+		"dolomite": "tfc:dolomite",
+		"chert": "tfc:chert",
+		"chalk": "tfc:chalk",
+
+		"rhyolite": "tfc:rhyolite",
+		"basalt": "tfc:basalt",
+		"andesite": "tfc:andesite",
+		"dacite": "tfc:dacite",
+
+		"plagioclase": {
+			"raw": "tfg:raw_plagioclase",
+			"hardened": "tfg:hardened_plagioclase",
+			"gravel": "ad_astra:mars_sand",
+			"cobble": "ad_astra:mars_cobblestone",
+			"sand": "ad_astra:mars_sand",
+			"sandstone": "tfg:raw_plagioclase"
+		}
+	},
+	"bottom": [
+		"granite",
+		"gabbro",
+		"diorite",
+		"rhyolite",
+		"basalt",
+		"andesite",
+		"dacite",
+		"plagioclase"
+	],
+	"layers": [
+		{
+			"id": "felsic",
+			"layers": {
+				"granite": "bottom"
+			}
+		},
+		{
+			"id": "intermediate",
+			"layers": {
+				"diorite": "bottom"
+			}
+		},
+		{
+			"id": "mafic",
+			"layers": {
+				"gabbro": "bottom"
+			}
+		}
+	]
+}

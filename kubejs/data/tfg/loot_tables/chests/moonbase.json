@@ -455,6 +455,22 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "gtceu:armalcolite_gem",
+					"weight": 50,
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10,
+								"min": 1
+							},
+							"function": "minecraft:set_count"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
 					"name": "gtceu:treated_wood_rod",
 					"weight": 20,
 					"functions": [

@@ -20,7 +20,6 @@ const registerGTCEuMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'olivine', 'magnetite')
 
-	// TODO: add smelting recipe for this
 	event.create('fayalite')
 		.gem(2)
 		.components('2x iron', '1x silicon', '4x oxygen')
@@ -29,11 +28,21 @@ const registerGTCEuMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'magnetite', 'magnetite')
 
+	event.create('armalcolite')
+		.gem(2)
+		.components('1x magnesium', '1x rutile', '1x ilmenite')
+		.color(0x443333)
+		.iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+		.ore()
+		.addOreByproducts('rutile', 'rutile', 'ilmenite')
+
 	// #endregion
 
 	// #region ad astra ores
 
 	// moon
+
+	// TODO: add smelting recipe for this
 	event.create('desh')
 		.components('2x olivine', '1x rutile', '4x nitrogen')
 		.color(0xd38b4c)

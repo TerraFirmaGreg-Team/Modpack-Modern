@@ -25,6 +25,10 @@
                     {
                         "block": "gtceu:basalt_aluminium_ore",
                         "weight": 35
+                    },
+                    {
+                        "block": "gtceu:basalt_armalcolite_ore",
+                        "weight": 20
                     }
                 ]
             },
@@ -44,6 +48,10 @@
                     {
                         "block": "gtceu:dunite_aluminium_ore",
                         "weight": 35
+                    },
+                    {
+                        "block": "gtceu:dunite_armalcolite_ore",
+                        "weight": 20
                     }
                 ]
             }
@@ -77,6 +85,10 @@
                 {
                     "block": "tfg:buds/large_rutile_bud",
                     "weight": 4
+                },
+                {
+                    "block": "gtceu:armalcolite_indicator",
+                    "weight": 20
                 }
             ]
         }

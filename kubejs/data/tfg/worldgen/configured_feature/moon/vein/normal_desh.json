@@ -27,7 +27,7 @@
 						"weight": 20
 					},
 					{
-						"block": "gtceu:anorthite_fayalite_ore",
+						"block": "gtceu:anorthite_armalcolite_ore",
 						"weight": 20
 					}
 				]
@@ -50,7 +50,7 @@
 						"weight": 20
 					},
 					{
-						"block": "gtceu:dunite_fayalite_ore",
+						"block": "gtceu:dunite_armalcolite_ore",
 						"weight": 20
 					}
 				]
@@ -87,16 +87,8 @@
 					"weight": 4
 				},
 				{
-					"block": "tfg:buds/small_fayalite_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/medium_fayalite_bud",
-					"weight": 7
-				},
-				{
-					"block": "tfg:buds/large_fayalite_bud",
-					"weight": 4
+					"block": "gtceu:armalcolite_indicator",
+					"weight": 20
 				}
 			]
 		}

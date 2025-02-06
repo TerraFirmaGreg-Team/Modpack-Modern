@@ -16,10 +16,14 @@
 				"with": [
 					{
 						"block": "gtceu:dunite_desh_ore",
-						"weight": 75
+						"weight": 45
 					},
 					{
-						"block": "gtceu:dunite_desh_ore",
+						"block": "gtceu:dunite_armalcolite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dunite_plutonium_ore",
 						"weight": 25
 					}
 				]
@@ -32,8 +36,12 @@
 			"underground_count": 500,
 			"blocks": [
 				{
-					"block": "gtceu:naquadah_indicator",
-					"weight": 75
+					"block": "gtceu:desh_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:armalcolite_indicator",
+					"weight": 30
 				},
 				{
 					"block": "gtceu:plutonium_indicator",
