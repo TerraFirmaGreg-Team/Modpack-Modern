@@ -57,11 +57,11 @@ const registerTFGBlocks = (event) => {
 
 	event.create('tfg:loose_anorthosite', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose_anorthosite')
-		.rockTypeModel('igneous_extrusive')
+		.rockTypeModel('igneous_intrusive')
 
 	// Mars rocks
 
-	event.create('tfg:raw_plagioclase')
+	event.create('tfg:raw_syenite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -73,7 +73,7 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:hardened_plagioclase')
+	event.create('tfg:hardened_syenite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -85,9 +85,12 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:loose_plagioclase', 'tfc:loose_rock')
-		.itemTexture('tfg:item/loose_plagioclase')
-		.rockTypeModel('igneous_extrusive')
+	event.create('tfg:loose_syenite', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose_syenite')
+		.rockTypeModel('igneous_intrusive')
+
+
+	// TODO: trachyte for mercury?
 	
 	
 	// gem indicators

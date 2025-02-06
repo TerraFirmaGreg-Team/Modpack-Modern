@@ -21,9 +21,9 @@ const registerTFGItems = (event) =>
 
     // Mars
 
-    event.create('tfg:plagioclase_brick')
-        .translationKey('item.tfg.plagioclase_brick')
+    event.create('tfg:syenite_brick')
+        .translationKey('item.tfg.syenite_brick')
 
-    event.create('tfg:plagioclase_dust')
-        .translationKey('item.tfg.plagioclase_dust')
+    event.create('tfg:syenite_dust')
+        .translationKey('item.tfg.syenite_dust')
 }

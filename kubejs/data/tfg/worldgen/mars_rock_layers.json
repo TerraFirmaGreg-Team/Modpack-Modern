@@ -20,13 +20,13 @@
 		"andesite": "tfc:andesite",
 		"dacite": "tfc:dacite",
 
-		"plagioclase": {
-			"raw": "tfg:raw_plagioclase",
-			"hardened": "tfg:hardened_plagioclase",
+		"syenite": {
+			"raw": "tfg:raw_syenite",
+			"hardened": "tfg:hardened_syenite",
 			"gravel": "ad_astra:mars_sand",
 			"cobble": "ad_astra:mars_cobblestone",
 			"sand": "ad_astra:mars_sand",
-			"sandstone": "tfg:raw_plagioclase"
+			"sandstone": "tfg:raw_syenite"
 		}
 	},
 	"bottom": [
@@ -37,13 +37,14 @@
 		"basalt",
 		"andesite",
 		"dacite",
-		"plagioclase"
+		"syenite"
 	],
 	"layers": [
 		{
 			"id": "felsic",
 			"layers": {
-				"granite": "bottom"
+				"granite": "bottom",
+				"syenite": "bottom"
 			}
 		},
 		{
