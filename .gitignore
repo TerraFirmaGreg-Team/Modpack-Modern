@@ -108,3 +108,7 @@ hei_bookmarks.ini
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
+
+# this shouldn't be here
+tools/
+.vs/
