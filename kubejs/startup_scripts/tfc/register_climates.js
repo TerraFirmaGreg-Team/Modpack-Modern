@@ -49,33 +49,11 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
 	}
 	else {
 
-		// Prevent /0 errors
-		if (coreTempMult == 0) {
-			return averageTemp;
-		}
-
-		let depthPercent = (playerY + 64) / (seaLevel + 64);
+		let depthPercent = 1 - (playerY / -64);
 
 		let bedrockTemp = lerp(averageTemp, coreTemp, coreTempMult);
 		
-		return lerp(averageTemp, bedrockTemp, depthPercent);
-
-
-		// Trend towards the average temp the deeper the player is underground
-		// (+60 to account for the -64 bedrock depth)
-
-		// TODO THIS DOESN'T WORK
-		//let depthPercent = (playerY + 60) / (seaLevel + 60)
-
-		//let coreFactor = coreTemp * coreTempMult * (1 - depthPercent);
-		//let averageFactor = averageTemp * (1 - coreTempMult) * depthPercent;
-		//let depthFactor = tempDiff * depthPercent;
-
-		//return coreFactor + averageFactor + depthFactor;
-
-		//let currentInfluence = invLerp(playerY, 0
-		//let depthInfluence = invLerp(playerY, -64, 0);
-
+		return lerp(bedrockTemp, averageTemp, depthPercent);
 	}
 }
 
