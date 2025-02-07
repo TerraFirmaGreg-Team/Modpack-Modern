@@ -39,37 +39,44 @@ function calcCurrentTemp(averageTemp, seaLevel, playerY, calendarTicks, tempRang
 
 	if (playerY > seaLevel) {
 
-		// This is taken from TFC/OverworldClimateModel.java
+		// This is taken from TFC's OverworldClimateModel.java
 		let elevationTemp = clamp((playerY - seaLevel) * 0.16225, 0, 17.822);
 		return averageTemp - elevationTemp + tempDiff;
 	}
 	else if (playerY > 0) {
 
-		// TODO currently returning NaN
-		let currentInfluence = invLerp(seaLevel, 0, playerY);
-		return averageTemp + lerp(tempDiff, 0, currentInfluence);
+		return averageTemp + (tempDiff * (playerY / seaLevel));
 	}
 	else {
+
+		// Prevent /0 errors
+		if (coreTempMult == 0) {
+			return averageTemp;
+		}
+
+		let depthPercent = (playerY + 64) / (seaLevel + 64);
+
+		let bedrockTemp = lerp(averageTemp, coreTemp, coreTempMult);
+		
+		return lerp(averageTemp, bedrockTemp, depthPercent);
+
+
 		// Trend towards the average temp the deeper the player is underground
 		// (+60 to account for the -64 bedrock depth)
 
 		// TODO THIS DOESN'T WORK
-		let depthPercent = (playerY + 60) / (seaLevel + 60)
+		//let depthPercent = (playerY + 60) / (seaLevel + 60)
 
-		let coreFactor = coreTemp * coreTempMult * (1 - depthPercent);
-		let averageFactor = averageTemp * (1 - coreTempMult) * depthPercent;
-		let depthFactor = tempDiff * depthPercent;
+		//let coreFactor = coreTemp * coreTempMult * (1 - depthPercent);
+		//let averageFactor = averageTemp * (1 - coreTempMult) * depthPercent;
+		//let depthFactor = tempDiff * depthPercent;
 
-		return coreFactor + averageFactor + depthFactor;
+		//return coreFactor + averageFactor + depthFactor;
 
 		//let currentInfluence = invLerp(playerY, 0
 		//let depthInfluence = invLerp(playerY, -64, 0);
 
 	}
-	//else {
-	//	// Get a bit colder the higher up the player is
-	//	return averageTemp + tempDiff + ((seaLevel - playerY) / 8);
-	//}
 }
 
 /**
@@ -97,34 +104,25 @@ function calcAverage(playerZ, scale, min, max) {
 }
 
 
+// This will be fighting between TFC, which wants to melt everything when the average
+// temp is above 0, and Ad Astra, which wants to freeze everything that isn't in an
+// oxygenated bubble.
+// Is there a way to disable TFC's system here?
+// Alternatively, is there a way to tell if a block is oxygenated and then give it a different average temp?
+// That'd let you grow tfc crops on other planets
+
 TFCEvents.registerClimateModel(event => {
 
 	event.registerClimateModel('tfg:orbit_climate', model => {
 
-		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return 0
-		})
-		model.setAverageTemperatureCalculation((level, pos) => {
-			return -270
-		})
-		model.setAverageRainfallCalculation((level, pos) => {
-			return 0
-		})
-		model.setAirFog((level, pos, calendarTicks) => {
-			return 0
-		})
-		model.setWaterFog((level, pos, calendarTicks) => {
-			return 0.25
-		})
-		model.setWindVector((block, calendarTicks) => {
-			return event.newVec2(0, 0)
-		})
+		// There's basically no heat diffusion in space so we can pretend this is your spacesuit temp
+		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
+		model.setAverageTemperatureCalculation((level, pos) => -270)
+		model.setAverageRainfallCalculation((level, pos) => 0)
+		model.setAirFog((level, pos, calendarTicks) => 0)
+		model.setWaterFog((level, pos, calendarTicks) => 0.25)
+		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
 	})
-
-	// This will be fighting between TFC, which wants to melt everything when the average
-	// temp is above 0, and Ad Astra, which wants to freeze everything that isn't in an
-	// oxygenated bubble.
-	// Is there a way to disable TFC's system here?
 
 	event.registerClimateModel('tfg:moon_climate', model => {
 
@@ -145,7 +143,7 @@ TFCEvents.registerClimateModel(event => {
 		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
 
 			let avgTemp = calcAverage(pos.z, 10000, -110, -15);
-			return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0);
+			return calcCurrentTemp(avgTemp, 65, pos.y, calendarTicks, 45, -10, 0.5);
 		})
 
 		model.setAverageTemperatureCalculation((level, pos) => {
@@ -156,8 +154,9 @@ TFCEvents.registerClimateModel(event => {
 
 		model.setAverageRainfallCalculation((level, pos) => {
 		
-			// irl it's 0.13mm but that's barely noticeable in tfc, so
-			return calcAverage(pos.z, 10000, 1.3, -0.25)
+			// irl mars' poles have a snowfall of 0.13mm but that's barely noticeable here.
+			// Use a negative rainfall to stop it snowing closer to the equator. TFC clamps negatives to zero so it's fine
+			return calcAverage(pos.z, 10000, 13, -25)
 		})
 
 		model.setAirFog((level, pos, calendarTicks) => 0)
