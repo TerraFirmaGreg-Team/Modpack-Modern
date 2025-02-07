@@ -1,7 +1,4 @@
 {
-	"__TODO__": "ADD RED GRANITE",
-
-
 	"rocks": {
 		"granite": "tfc:granite",
 		"diorite": "tfc:diorite",
@@ -27,30 +24,39 @@
 			"cobble": "ad_astra:mars_cobblestone",
 			"sand": "ad_astra:mars_sand",
 			"sandstone": "tfg:raw_syenite"
+		},
+
+		"red_granite": {
+			"raw": "TODO",
+			"hardened": "TODO",
+			"gravel": "TODO",
+			"cobble": "TODO",
+			"sand": "tfc:sand/red",
+			"sandstone": "tfc:raw_sandstone/red"
 		}
 	},
 	"bottom": [
 		"granite",
 		"gabbro",
-		"diorite",
 		"rhyolite",
 		"basalt",
 		"andesite",
 		"dacite",
-		"syenite"
+		"syenite",
+		"red_granite"
 	],
 	"layers": [
 		{
 			"id": "felsic",
 			"layers": {
 				"granite": "bottom",
-				"syenite": "bottom"
+				"red_granite": "bottom"
 			}
 		},
 		{
 			"id": "intermediate",
 			"layers": {
-				"diorite": "bottom"
+				"syenite": "bottom"
 			}
 		},
 		{
@@ -58,6 +64,67 @@
 			"layers": {
 				"gabbro": "bottom"
 			}
+		},
+		{
+			"id": "igneous_extrusive",
+			"layers": {
+				"rhyolite": "felsic",
+				"andesite": "intermediate",
+				"dacite": "intermediate",
+				"basalt": "mafic"
+			}
+		},
+		{
+			"id": "igneous_extrusive_x2",
+			"layers": {
+				"rhyolite": "igneous_extrusive",
+				"andesite": "igneous_extrusive",
+				"dacite": "igneous_extrusive",
+				"basalt": "igneous_extrusive"
+			}
+		},
+		{
+			"id": "land_sedimentary",
+			"layers": {
+				"claystone": "igneous_extrusive",
+				"conglomerate": "igneous_extrusive",
+				"dolomite": "igneous_extrusive",
+				"chert": "igneous_extrusive",
+				"chalk": "igneous_extrusive"
+			}
+		},
+		{
+			"id": "water_sedimentary",
+			"layers": {
+				"shale": "bottom",
+				"claystone": "bottom",
+				"dolomite": "bottom",
+				"limestone": "bottom",
+				"chert": "bottom"
+			}
+		},
+		{
+			"id": "uplift",
+			"layers": {
+				"red_granite": "land_sedimentary",
+				"granite": "land_sedimentary",
+				"gabbro": "land_sedimentary",
+				"syenite": "land_sedimentary"
+			}
 		}
+	],
+	"ocean_floor": [
+		"water_sedimentary"
+	],
+	"volcanic": [
+		"igneous_extrusive",
+		"igneous_extrusive_x2"
+	],
+	"land": [
+		"land_sedimentary",
+		"igneous_extrusive"
+	],
+	"uplift": [
+		"uplift"
 	]
 }

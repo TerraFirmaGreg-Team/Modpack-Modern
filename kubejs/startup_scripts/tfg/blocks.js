@@ -98,7 +98,7 @@ const registerTFGBlocks = (event) => {
 		.rockTypeModel('igneous_intrusive')
 
 
-	// TODO: trachyte for mercury?
+	// TODO: trachyte or keratophyre for mercury?
 	// Phonolite - says it has zirconium often (venus/mercury)
 	// Ignimbrite - volcanic ashy, similar to tuff
 	
