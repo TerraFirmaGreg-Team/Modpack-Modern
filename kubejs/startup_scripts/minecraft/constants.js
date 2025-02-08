@@ -90,26 +90,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_stone_brick_wall',
 
     // Сланец
-    'minecraft:cobbled_deepslate', 
-    'minecraft:cobbled_deepslate_stairs', 
-    'minecraft:cobbled_deepslate_slab', 
-    'minecraft:cobbled_deepslate_wall', 
-    'minecraft:deepslate_tiles', 
-    'minecraft:deepslate_tile_stairs', 
-    'minecraft:deepslate_tile_slab', 
-    'minecraft:deepslate_tile_wall', 
-    'minecraft:deepslate_bricks', 
-    'minecraft:deepslate_brick_stairs', 
-    'minecraft:deepslate_brick_slab', 
-    'minecraft:deepslate_brick_wall', 
-    'minecraft:polished_deepslate', 
-    'minecraft:polished_deepslate_stairs', 
-    'minecraft:polished_deepslate_slab', 
-    'minecraft:polished_deepslate_wall', 
-    'minecraft:cracked_deepslate_tiles', 
-    'minecraft:chiseled_deepslate', 
-    'minecraft:cracked_deepslate_bricks', 
-    'minecraft:deepslate', 
     'minecraft:reinforced_deepslate',
 
     // Грязь
@@ -513,9 +493,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:pink_candle',
 
     // Другое
-    'minecraft:calcite', 
-    'minecraft:tuff', 
-    'minecraft:dripstone_block', 
     'minecraft:grass_block', 
     'minecraft:dirt', 
     'minecraft:coarse_dirt', 
@@ -526,7 +503,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:suspicious_gravel',
     'minecraft:stonecutter',
     'minecraft:gravel',
-    'minecraft:moss_block',
     'minecraft:moss_carpet',
     'minecraft:large_fern', 
     'minecraft:tall_grass', 
@@ -552,9 +528,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:wither_rose', 
     'minecraft:torchflower', 
     'minecraft:pitcher_plant', 
-    'minecraft:spore_blossom', 
-    'minecraft:big_dripleaf', 
-    'minecraft:small_dripleaf', 
     'minecraft:sculk', 
     'minecraft:sculk_vein', 
     'minecraft:sculk_catalyst', 
@@ -698,7 +671,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:damaged_anvil', 
     'minecraft:furnace', 
     'minecraft:furnace_minecart',
-    'minecraft:pointed_dripstone', 
     'minecraft:small_amethyst_bud', 
     'minecraft:medium_amethyst_bud', 
     'minecraft:large_amethyst_bud', 
@@ -744,12 +716,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_button',
 
     // Куча незер блоков
-    // TODO: Разблокировать после добавления ада
-    'minecraft:polished_blackstone_bricks', 
-    'minecraft:cracked_polished_blackstone_bricks', 
-    'minecraft:polished_blackstone_brick_stairs', 
-    'minecraft:polished_blackstone_brick_slab', 
-    'minecraft:polished_blackstone_brick_wall', 
     //'minecraft:netherrack', 
     //'minecraft:nether_bricks', 
     'minecraft:cracked_nether_bricks',
@@ -762,21 +728,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:red_nether_brick_stairs', 
     'minecraft:red_nether_brick_slab', 
     'minecraft:red_nether_brick_wall',
-    'minecraft:basalt', 
-    'minecraft:smooth_basalt', 
-    'minecraft:polished_basalt', 
-    'minecraft:blackstone', 
-    'minecraft:gilded_blackstone', 
-    'minecraft:blackstone_stairs', 
-    'minecraft:blackstone_slab', 
-    'minecraft:blackstone_wall', 
-    'minecraft:chiseled_polished_blackstone', 
-    'minecraft:polished_blackstone', 
-    'minecraft:polished_blackstone_stairs', 
-    'minecraft:polished_blackstone_slab', 
-    'minecraft:polished_blackstone_wall', 
-    'minecraft:polished_blackstone_pressure_plate', 
-    'minecraft:polished_blackstone_button',
 
     // И еще куча незер блоков
     // TODO: Разблокировать после добавления ада

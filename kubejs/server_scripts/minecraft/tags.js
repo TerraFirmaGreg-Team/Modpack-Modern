@@ -16,6 +16,14 @@ const registerMinecraftItemTags = (event) => {
     // Бамбуковые полублоки
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
+
+    event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
+    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
 }
 
 const registerMinecraftBlockTags = (event) => {

@@ -1,0 +1,52 @@
+{
+	"type": "minecraft:simple_block",
+	"config": {
+		"to_place": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"data": {
+						"Name": "tfc:plant/blood_lily"
+					},
+					"weight": 25
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/moss"
+					},
+					"weight": 25
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/athyrium_fern"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/canna"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/goldenrod"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/pampas_grass"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/perovskia"
+					},
+					"weight": 10
+				}
+			]
+		}
+	}
+}
