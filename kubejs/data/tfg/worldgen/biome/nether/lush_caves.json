@@ -1,0 +1,128 @@
+{
+	"carvers": {
+		"air": [
+			"minecraft:nether_cave"
+		]
+	},
+	"downfall": 0.5,
+	"effects": {
+		"fog_color": 5799235,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.overworld.lush_caves"
+		},
+		"sky_color": 8103167,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"features": [
+		[],
+		[],
+		[
+			"tfg:earth/geode"
+		],
+		[],
+		[],
+		[],
+		[
+			
+		],
+		[],
+		[
+
+		],
+		[
+			"tfg:nether/glow_lichen",
+			"tfg:nether/lush_caves_ceiling_vegetation",
+			"tfg:nether/lush_caves_clay",
+			"tfg:nether/lush_caves_vegetation",
+			"tfg:nether/spore_blossom"
+		],
+		[
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {},
+	"spawners": {
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			},
+			{
+				"type": "tfc:frog",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			},
+			{
+				"type": "tfc:isopod",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 10
+			}
+		],
+		"axolotls": [
+			{
+				"type": "minecraft:axolotl",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 10
+			}
+		],
+		"creature": [],
+		"misc": [],
+		"monster": [
+			{
+				"type": "terramod:tfc",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:drowned",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 95
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
+		"underground_water_creature": [
+			{
+				"type": "minecraft:glow_squid",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 10
+			}
+		],
+		"water_creature": []
+	},
+	"temperature": 0.5
+}

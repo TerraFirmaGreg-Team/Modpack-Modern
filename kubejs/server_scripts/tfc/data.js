@@ -184,4 +184,10 @@ const registerTFCFoodData = (event) => {
         food.fruit(2)
         food.decayModifier(0.2)
     })
+
+    event.foodItem('minecraft:glow_berries', food => {
+        food.hunger(1)
+        food.fruit(0.8)
+        food.water(5)
+    })
 }
