@@ -45,6 +45,18 @@
 						"Name": "tfc:plant/sword_fern"
 					},
 					"weight": 15
+				},
+				{
+					"data": {
+						"Name": "minecraft:fern"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "minecraft:large_fern"
+					},
+					"weight": 10
 				}
 			]
 		}

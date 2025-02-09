@@ -8,25 +8,13 @@
 					"data": {
 						"Name": "tfc:plant/blood_lily"
 					},
-					"weight": 20
+					"weight": 30
 				},
 				{
 					"data": {
 						"Name": "tfc:plant/moss"
 					},
-					"weight": 25
-				},
-				{
-					"data": {
-						"Name": "tfc:plant/athyrium_fern"
-					},
-					"weight": 10
-				},
-				{
-					"data": {
-						"Name": "tfc:plant/canna"
-					},
-					"weight": 10
+					"weight": 15
 				},
 				{
 					"data": {
@@ -44,13 +32,25 @@
 					"data": {
 						"Name": "tfc:plant/ostrich_fern"
 					},
-					"weight": 20
+					"weight": 15
 				},
 				{
 					"data": {
 						"Name": "tfc:plant/sword_fern"
 					},
-					"weight": 20
+					"weight": 15
+				},
+				{
+					"data": {
+						"Name": "minecraft:fern"
+					},
+					"weight": 15
+				},
+				{
+					"data": {
+						"Name": "minecraft:large_fern"
+					},
+					"weight": 15
 				}
 			]
 		}
