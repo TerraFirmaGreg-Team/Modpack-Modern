@@ -1,8 +1,6 @@
 {
 	"carvers": {
-		"air": [
-			"minecraft:nether_cave"
-		]
+		"air": []
 	},
 	"downfall": 0.5,
 	"effects": {
@@ -20,8 +18,8 @@
 			"sound": "minecraft:music.overworld.lush_caves"
 		},
 		"sky_color": 8103167,
-		"water_color": 4159204,
-		"water_fog_color": 329011
+		"water_color": 7255466,
+		"water_fog_color": 3169873
 	},
 	"features": [
 		[],
@@ -30,45 +28,62 @@
 			"tfg:earth/geode"
 		],
 		[],
-		[],
-		[],
 		[
-			
+			"beneath:glowstone_spikes",
+			"beneath:nether_spikes",
+			"tfg:nether/spring_water"
 		],
 		[],
 		[
 
 		],
+		[],
+		[],
 		[
+			"tfg:nether/guano_patch",
 			"tfg:glow_lichen",
-			"tfg:nether/lush_caves_ceiling_vegetation",
+			"tfg:nether/philodendron",
+			"tfg:nether/moss_patch_wall",
+			"tfg:nether/lush_caves_ceiling",
 			"tfg:nether/lush_caves_clay",
 			"tfg:nether/lush_caves_vegetation",
-			"tfg:nether/spore_blossom"
-		],
-		[
+			"minecraft:spore_blossom",
+			"beneath:blackstone_pebble_patch",
+			"beneath:blackstone_boulders",
+			"beneath:sulfur_patch",
+			"beneath:button_patch",
+			"beneath:chantrelle_patch",
+			"beneath:death_cap_patch",
+			"beneath:destroying_angels_patch",
+			"beneath:fools_funnel_patch",
+			"beneath:oyster_patch",
+			"beneath:parasol_patch",
+			"beneath:portobello_patch",
+			"beneath:shittake_patch",
+			"beneath:sulfur_tuft_patch"
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"tfc:octopoteuthis": {
+			"energy_budget": 0.12,
+			"charge": 1.0
+		}
+	},
 	"spawners": {
+		"water_ambient": [
+			{
+				"type": "tfc:isopod",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 10
+			}
+		],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
 				"maxCount": 8,
 				"minCount": 8,
-				"weight": 10
-			},
-			{
-				"type": "tfc:frog",
-				"maxCount": 8,
-				"minCount": 8,
-				"weight": 10
-			},
-			{
-				"type": "tfc:isopod",
-				"maxCount": 4,
-				"minCount": 2,
 				"weight": 10
 			}
 		],
@@ -80,43 +95,56 @@
 				"weight": 10
 			}
 		],
-		"creature": [],
+		"creature": [
+			{
+				"type": "minecraft:frog",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 10
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
-				"type": "terramod:tfc",
+				"type": "kaolinclayze:tfc",
 				"maxCount": 4,
-				"minCount": 4,
+				"minCount": 1,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:drowned",
+				"type": "minecraft:zombie",
 				"maxCount": 4,
-				"minCount": 4,
+				"minCount": 1,
 				"weight": 95
 			},
 			{
 				"type": "minecraft:creeper",
 				"maxCount": 4,
-				"minCount": 4,
+				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:slime",
 				"maxCount": 4,
-				"minCount": 4,
+				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:swamp_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [
 			{
-				"type": "minecraft:glow_squid",
+				"type": "tfc:octopoteuthis",
 				"maxCount": 6,
 				"minCount": 4,
 				"weight": 10

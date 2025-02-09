@@ -16,14 +16,6 @@ const registerMinecraftItemTags = (event) => {
     // Бамбуковые полублоки
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
-
-    event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
-    event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
-    event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
-    event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
-    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
-    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -33,4 +25,21 @@ const registerMinecraftBlockTags = (event) => {
 
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
+
+
+    // Nether lush cave
+    event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:moss_block')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:calcite')
+    event.add('minecraft:moss_replaceable', 'minecraft:blackstone')
+    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_plantable_on', 'minecraft:deepslate')
+    event.add('tfc:creeping_plantable_on', 'minecraft:blackstone')
+    event.add('tfc:creeping_plantable_on', 'minecraft:calcite')
+    event.add('minecraft:axolotls_spawnable_on', 'minecraft:calcite')
 }

@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/moss_patch",
+	"feature": "tfg:nether/moss_patch_floor",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 64
+			"count": 96
 		},
 		{
 			"type": "minecraft:in_square"

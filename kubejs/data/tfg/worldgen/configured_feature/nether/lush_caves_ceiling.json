@@ -20,7 +20,7 @@
 		"surface": "ceiling",
 		"vegetation_chance": 0.08,
 		"vegetation_feature": {
-			"feature": "tfg:nether/cave_vine_in_moss",
+			"feature": "tfg:nether/glowberry_vine",
 			"placement": []
 		},
 		"vertical_range": 5,

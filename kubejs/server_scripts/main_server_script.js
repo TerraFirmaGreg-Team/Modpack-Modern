@@ -52,6 +52,7 @@ ServerEvents.tags('block', event => {
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
+    registerTFGBlockTags(event)
 })
 
 /**
@@ -70,6 +71,10 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.tags('worldgen/placed_feature', event => {
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
+})
+
+ServerEvents.tags('worldgen/biome', event => {
+    registerTFGBiomeTags(event)
 })
 
 /**

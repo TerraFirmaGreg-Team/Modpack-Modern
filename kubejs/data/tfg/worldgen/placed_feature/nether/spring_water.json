@@ -1,0 +1,22 @@
+{
+	"feature": "tfg:nether/spring_water",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 4
+		},
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 2
+		},
+		{
+			"type": "tfc:flat_enough",
+			"flatness": 0.4,
+			"radius": 4,
+			"max_depth": 4
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

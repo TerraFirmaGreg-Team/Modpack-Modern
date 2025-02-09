@@ -6,15 +6,33 @@
 			"entries": [
 				{
 					"data": {
+						"Name": "tfc:plant/blood_lily"
+					},
+					"weight": 20
+				},
+				{
+					"data": {
 						"Name": "tfc:plant/moss"
 					},
-					"weight": 30
+					"weight": 25
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/athyrium_fern"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/canna"
+					},
+					"weight": 10
 				},
 				{
 					"data": {
 						"Name": "tfc:plant/lady_fern"
 					},
-					"weight": 20
+					"weight": 10
 				},
 				{
 					"data": {
@@ -26,7 +44,7 @@
 					"data": {
 						"Name": "tfc:plant/ostrich_fern"
 					},
-					"weight": 25
+					"weight": 20
 				},
 				{
 					"data": {

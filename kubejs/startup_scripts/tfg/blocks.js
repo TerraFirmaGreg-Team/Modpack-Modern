@@ -9,8 +9,28 @@ const registerTFGBlocks = (event) => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
 		
+	const $ClusterBlock = Java.loadClass('net.minecraft.world.level.block.AmethystClusterBlock')
+	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
+	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
+
+	// #region Nether blocks
+
+	event.create('tfg:hardened_deepslate')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/deepslate' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_grey')
+		.fullBlock(true)
+		.opaque(true)
+
+	// #endregion
 	
-	// gem indicators
+	// #region Gem indicators
 	
 	const GEM_INDICATORS = 
 	[
@@ -45,9 +65,6 @@ const registerTFGBlocks = (event) => {
 		// skip coal, coke, salt, rock salt, certus, malachite, glass, and amethyst
 	]
 
-	const $ClusterBlock = Java.loadClass('net.minecraft.world.level.block.AmethystClusterBlock')
-	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
-	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 	
 	GEM_INDICATORS.forEach(gem => 
 	{
@@ -55,4 +72,6 @@ const registerTFGBlocks = (event) => {
 		event.createCustom(`tfg:buds/medium_${gem[0]}_bud`, () => new $ClusterBlock(4, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 		event.createCustom(`tfg:buds/large_${gem[0]}_bud`,  () => new $ClusterBlock(5, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 	})
+
+	// #endregion
 }
