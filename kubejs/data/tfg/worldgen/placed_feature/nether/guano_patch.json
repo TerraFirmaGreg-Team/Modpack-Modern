@@ -1,0 +1,22 @@
+{
+	"feature": "tfc:guano",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 15
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "tfc:on_top",
+			"predicate": {
+				"type": "minecraft:matching_block_tag",
+				"tag": "minecraft:lush_ground_replaceable"
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

@@ -1,8 +1,8 @@
 {
-	"type": "minecraft:the_nether",
+	"type": "tfg:the_nether",
 	"generator": {
 		"type": "minecraft:noise",
-		"settings": "minecraft:nether",
+		"settings": "tfg:nether",
 		"biome_source": {
 			"type": "minecraft:multi_noise",
 			"biomes": [
@@ -11,7 +11,7 @@
 					"biome": "tfg:nether/lush_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": [ 0.2, 0.9 ],
+						"depth": [ 0.7, 1 ],
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -19,7 +19,6 @@
 						"weirdness": 0
 					}
 				}
-				
 			]
 		}
 	}

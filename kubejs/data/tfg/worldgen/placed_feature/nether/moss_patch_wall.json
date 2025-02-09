@@ -1,13 +1,13 @@
 {
-	"feature": "tfg:glow_lichen",
+	"feature": "tfg:nether/moss_patch_wall",
 	"placement": [
 		{
 			"type": "minecraft:count",
 			"count": {
 				"type": "minecraft:uniform",
 				"value": {
-					"max_inclusive": 157,
-					"min_inclusive": 104
+					"max_inclusive": 150,
+					"min_inclusive": 100
 				}
 			}
 		},
@@ -25,11 +25,6 @@
 		},
 		{
 			"type": "minecraft:in_square"
-		},
-		{
-			"type": "minecraft:surface_relative_threshold_filter",
-			"heightmap": "OCEAN_FLOOR_WG",
-			"max_inclusive": -13
 		}
 	]
 }
