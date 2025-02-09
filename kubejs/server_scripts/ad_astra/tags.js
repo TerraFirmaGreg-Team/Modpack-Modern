@@ -107,6 +107,8 @@ const registerAdAstraBiomeTags = (event) => {
 		event.add('tfg:has_structure/meteors', biome)
 		event.add('tfg:has_structure/cheese_ores', biome)
 		event.add('tfg:has_structure/moonbase', biome)
+		event.add('minecraft:spawns_gold_rabbits', biome)
+		event.add('minecraft:spawns_white_rabbits', biome)
 	})
 
 	event.add('tfg:has_structure/moon_rabbit_houses', 'tfg:lunar_plains')
