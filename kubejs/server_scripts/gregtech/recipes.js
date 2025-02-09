@@ -31,6 +31,14 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    // new soldering alloy: Wood's metal shouldn't be transmutable, so the centrifuge recipe is removed.
+    event.remove('gtceu:centrifuge/decomposition_centrifuging__soldering_alloy')
+    event.recipes.gtceu.mixer('woods_alloy')
+        .itemInputs('15x gtceu:bismuth_dust', '8x gtceu:lead_dust', '4x gtceu:tin_dust', '3x gtceu:cadmium_dust')
+        .itemOutputs('30x gtceu:soldering_alloy_dust')
+        .duration(200)
+        .EUt(30)
+
     //#region Выход: Кварцевый песок
 
     event.shaped('gtceu:quartz_sand_dust', [
