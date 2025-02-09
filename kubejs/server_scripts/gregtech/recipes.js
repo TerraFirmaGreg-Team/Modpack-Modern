@@ -1956,4 +1956,11 @@ const registerGTCEURecipes = (event) => {
         })
     })
     // #endregion
+
+    event.remove({ id: 'tfg:fluid_solidifier/latex_heating' })
+    event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_heating')
+        .duration(24*20)
+        .EUt(30)
+        .itemOutputs('gtceu:sticky_resin')
+        .inputFluids(Fluid.of('tfg:latex', 1000))
 }
