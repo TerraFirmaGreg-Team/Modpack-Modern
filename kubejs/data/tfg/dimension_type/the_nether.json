@@ -1,7 +1,7 @@
 {
 	"ambient_light": 0.1,
 	"bed_works": true,
-	"coordinate_scale": 8,
+	"coordinate_scale": 1,
 	"effects": "minecraft:the_nether",
 	"has_ceiling": true,
 	"has_raids": false,
