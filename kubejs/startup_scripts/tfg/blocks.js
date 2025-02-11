@@ -28,6 +28,12 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
+
+	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
+
+	event.createCustom('tfg:mushroom_roots', () => new $SproutsBlock($Properties.copy($Blocks.WARPED_ROOTS)))
+	event.createCustom('tfg:mushroom_sprouts', () => new $SproutsBlock($Properties.copy($Blocks.NETHER_SPROUTS)))
+
 	// #endregion
 	
 	// #region Gem indicators

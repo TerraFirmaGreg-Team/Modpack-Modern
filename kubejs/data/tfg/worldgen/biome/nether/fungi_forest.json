@@ -1,0 +1,196 @@
+{
+	"carvers": {
+		"air": [
+			"tfc:cave"
+		]
+	},
+	"downfall": 0.5,
+	"effects": {
+		"additions_sound": {
+			"sound": "minecraft:ambient.warped_forest.additions",
+			"tick_chance": 0.0111
+		},
+		"ambient_sound": "minecraft:ambient.warped_forest.loop",
+		"fog_color": 10397563,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.overworld.swamp"
+		},
+		"sky_color": 10397563,
+		"water_color": 6388580,
+		"water_fog_color": 2302743,
+		"foliage_color": 7171928,
+		"particle": {
+			"options": {
+				"type": "minecraft:mycelium"
+			},
+			"probability": 0.1
+		}
+	},
+	"features": [
+		[],
+		[
+			"tfg:nether/lava_lake"
+		],
+		[
+			"minecraft:basalt_pillar",
+			"tfg:earth/geode"
+		],
+		[],
+		[
+			"beneath:glowstone_spikes",
+			"beneath:nether_spikes"
+		],
+		[],
+		"#tfg:nether_veins",
+		[
+			"tfg:nether/crackrack_blob",
+			"beneath:vein/crackrack_pipe",
+			"beneath:vein/cursecoal",
+			"beneath:magma_rhyolite",
+			"beneath:magma_basalt",
+			"beneath:magma_andesite",
+			"beneath:magma_dacite"
+		],
+		[],
+		[
+			"minecraft:spring_lava",
+			"beneath:blackstone_boulders",
+			"beneath:blackstone_pebble_patch",
+			"tfg:nether/big_mushrooms",
+			"tfg:nether/glow_mushroom",
+			"tfg:nether/humus_patch",
+			"tfg:nether/bone_patch",
+			"tfg:nether/rotten_flesh_patch",
+			"tfg:nether/dead_bush_patch",
+			"tfg:nether/mushroom_sprouts",
+			"tfg:nether/mud_pool",
+			"tfg:nether/green_algae_patch",
+			"tfg:nether/small_mushrooms",
+			"tfg:nether/liana_ceiling",
+			"minecraft:spore_blossom",
+			"beneath:burpflower_patch",
+			"beneath:gleamflower_patch",
+			"beneath:sulfur_patch",
+			"tfg:nether/beneath_mushrooms",
+			"tfg:nether/moss_patch_big",
+			"tfg:nether/guano_patch",
+			"tfg:glow_lichen"
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"tfc:octopoteuthis": {
+			"energy_budget": 0.12,
+			"charge": 1.0
+		}
+	},
+	"spawners": {
+		"water_ambient": [
+			{
+				"type": "tfc:isopod",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 10
+			}
+		],
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			}
+		],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "minecraft:frog",
+				"maxCount": 5,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 8,
+				"minCount": 4,
+				"weight": 100
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "minecraft:zombie",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 95
+			},
+			{
+				"type": "minecraft:drowned",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 95
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:silverfish",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:spider",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [
+			{
+				"type": "tfc:octopoteuthis",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 10
+			}
+		],
+		"water_creature": []
+	},
+	"temperature": 0.8
+}

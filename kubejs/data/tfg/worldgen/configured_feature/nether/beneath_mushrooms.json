@@ -1,0 +1,47 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": "beneath:button_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:chantrelle_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:death_cap_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:destroying_angels_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:fools_funnel_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:oyster_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:parasol_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:portobello_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:shittake_patch",
+				"placement": []
+			},
+			{
+				"feature": "beneath:sulfur_tuft_patch",
+				"placement": []
+			}
+		]
+	}
+}

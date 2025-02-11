@@ -10,6 +10,18 @@
 			"count": 2
 		},
 		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 110
+				},
+				"min_inclusive": {
+					"above_bottom": 24
+				}
+			}
+		},
+		{
 			"type": "tfc:flat_enough",
 			"flatness": 0.4,
 			"radius": 4,

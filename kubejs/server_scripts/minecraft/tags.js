@@ -41,5 +41,9 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfc:creeping_plantable_on', 'minecraft:deepslate')
     event.add('tfc:creeping_plantable_on', 'minecraft:blackstone')
     event.add('tfc:creeping_plantable_on', 'minecraft:calcite')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:deepslate')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:blackstone')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:calcite')
     event.add('minecraft:axolotls_spawnable_on', 'minecraft:calcite')
 }

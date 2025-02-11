@@ -300,20 +300,22 @@ const registerTFCBlockTags = (event) => {
 
     //#region Nether
 
-    event.add('minecraft:small_dripleaf_placeable', 'tfc:kaolin_clay_grass')
-    event.add('minecraft:big_dripleaf_placeable', 'tfc:kaolin_clay_grass')
-    event.add('minecraft:frogs_spawnable_on', 'tfc:kaolin_clay_grass')
-    event.add('minecraft:small_dripleaf_placeable', 'tfc:clay_grass/silt')
-    event.add('minecraft:big_dripleaf_placeable', 'tfc:clay_grass/silt')
-    event.add('minecraft:frogs_spawnable_on', 'tfc:clay_grass/silt')
-    event.add('minecraft:small_dripleaf_placeable', 'tfc:clay/silt')
-    event.add('minecraft:big_dripleaf_placeable', 'tfc:clay/silt')
-    event.add('beneath:nether_bush_plantable_on', 'tfc:clay_grass/silt')
-    event.add('beneath:nether_bush_plantable_on', 'tfc:kaolin_clay_grass')
+    event.add('beneath:nether_bush_plantable_on', '#tfc:clay_grass')
+    event.add('minecraft:small_dripleaf_placeable', '#tfc:clay_grass')
+    event.add('minecraft:big_dripleaf_placeable', '#tfc:clay_grass')
+    event.add('minecraft:frogs_spawnable_on', '#tfc:clay_grass')
+    event.add('minecraft:axolotls_spawnable_on', '#tfc:clay_grass')
 
-    event.add('minecraft:axolotls_spawnable_on', 'tfc:clay_grass/silt')
-    event.add('minecraft:axolotls_spawnable_on', 'tfc:clay/silt')
+    event.add('minecraft:small_dripleaf_placeable', '#tfc:clay')
+    event.add('minecraft:big_dripleaf_placeable', '#tfc:clay')
+    event.add('minecraft:frogs_spawnable_on', '#tfc:clay')
+    event.add('minecraft:axolotls_spawnable_on', '#tfc:clay')
 
+    event.add('beneath:nether_bush_plantable_on', '#tfc:mud')
+    event.add('minecraft:frogs_spawnable_on', '#tfc:mud')
+
+    event.add('beneath:nether_bush_plantable_on', '#tfc:dirt')
+    event.add('minecraft:frogs_spawnable_on', '#tfc:dirt')
 
     //#endregion
 }

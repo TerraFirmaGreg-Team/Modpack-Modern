@@ -41,20 +41,20 @@
 									"from_value": 0.0,
 									"from_y": -8,
 									"to_value": 1.0,
-									"to_y": 24
+									"to_y": 12
 								},
 								"argument2": {
 									"type": "minecraft:add",
 									"argument1": -2.5,
 									"argument2": {
 										"type": "minecraft:add",
-										"argument1": 0.9375,
+										"argument1": 0.96,
 										"argument2": {
 											"type": "minecraft:mul",
 											"argument1": {
 												"type": "minecraft:y_clamped_gradient",
 												"from_value": 1.0,
-												"from_y": 104,
+												"from_y": 118,
 												"to_value": 0.0,
 												"to_y": 128
 											},
@@ -100,7 +100,7 @@
 		"vein_toggle": 0.0
 	},
 	"ore_veins_enabled": false,
-	"sea_level": 24,
+	"sea_level": 20,
 	"spawn_target": [],
 	"surface_rule": {
 		"type": "minecraft:sequence",
@@ -283,6 +283,132 @@
 								"result_state": {
 									"Name": "tfg:hardened_deepslate"
 								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/fungi_forest"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfg:hardened_deepslate"
+								}
+							}
+						},
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 1,
+								"surface_type": "floor",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:sequence",
+								"sequence": [
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "minecraft:powder_snow",
+											"min_threshold": 0.1,
+											"max_threshold": 0.25
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:mud/silty_loam"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "minecraft:iceberg_pillar",
+											"min_threshold": 0.1,
+											"max_threshold": 0.25
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "minecraft:soul_soil"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "minecraft:iceberg_pillar",
+											"min_threshold": 0.5,
+											"max_threshold": 1
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:dirt/loam"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "minecraft:powder_snow",
+											"min_threshold": 0.3,
+											"max_threshold": 0.5
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:mud/loam"
+											}
+										}
+									},
+									{
+										"type": "minecraft:condition",
+										"if_true": {
+											"type": "minecraft:noise_threshold",
+											"noise": "minecraft:powder_snow",
+											"min_threshold": 0.6,
+											"max_threshold": 1
+										},
+										"then_run": {
+											"type": "minecraft:block",
+											"result_state": {
+												"Name": "tfc:peat"
+											}
+										}
+									},
+									{
+										"type": "minecraft:block",
+										"result_state": {
+											"Name": "tfc:dirt/silty_loam"
+										}
+									}
+								]
 							}
 						}
 					]
