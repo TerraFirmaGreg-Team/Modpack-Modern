@@ -1,6 +1,8 @@
 {
 	"carvers": {
-		"air": []
+		"air": [
+			"tfc:cave"
+		]
 	},
 	"downfall": 0.5,
 	"effects": {
@@ -17,50 +19,59 @@
 			"replace_current_music": false,
 			"sound": "minecraft:music.overworld.lush_caves"
 		},
-		"sky_color": 8103167,
+		"sky_color": 5799235,
 		"water_color": 7255466,
-		"water_fog_color": 3169873
+		"water_fog_color": 3169873,
+		"grass_color": 6466617,
+		"particle": {
+			"options": {
+				"type": "minecraft:falling_water"
+			},
+			"probability": 0.005
+		}
 	},
 	"features": [
 		[],
-		[],
 		[
+			"tfg:nether/lava_lake"
+		],
+		[
+			"minecraft:basalt_pillar",
 			"tfg:earth/geode"
 		],
 		[],
 		[
 			"beneath:glowstone_spikes",
-			"beneath:nether_spikes",
-			"tfg:nether/spring_water"
+			"beneath:nether_spikes"
+		],
+		[],
+		"#tfg:nether_veins",
+		[
+			"tfg:nether/crackrack_blob",
+			"beneath:vein/crackrack_pipe",
+			"beneath:vein/cursecoal",
+			"beneath:magma_rhyolite",
+			"beneath:magma_basalt",
+			"beneath:magma_andesite",
+			"beneath:magma_dacite"
 		],
 		[],
 		[
-
-		],
-		[],
-		[],
-		[
-			"tfg:nether/guano_patch",
-			"tfg:glow_lichen",
+			"tfg:nether/spring_water",
+			"beneath:blackstone_boulders",
+			"beneath:blackstone_pebble_patch",
 			"tfg:nether/philodendron",
-			"tfg:nether/moss_patch_wall",
 			"tfg:nether/lush_caves_ceiling",
 			"tfg:nether/lush_caves_clay",
 			"tfg:nether/lush_caves_vegetation",
 			"minecraft:spore_blossom",
-			"beneath:blackstone_pebble_patch",
-			"beneath:blackstone_boulders",
+			"beneath:burpflower_patch",
+			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
-			"beneath:button_patch",
-			"beneath:chantrelle_patch",
-			"beneath:death_cap_patch",
-			"beneath:destroying_angels_patch",
-			"beneath:fools_funnel_patch",
-			"beneath:oyster_patch",
-			"beneath:parasol_patch",
-			"beneath:portobello_patch",
-			"beneath:shittake_patch",
-			"beneath:sulfur_tuft_patch"
+			"tfg:nether/beneath_mushrooms",
+			"tfg:nether/moss_patch_small",
+			"tfg:nether/guano_patch",
+			"tfg:glow_lichen"
 		]
 	],
 	"has_precipitation": false,
@@ -152,5 +163,5 @@
 		],
 		"water_creature": []
 	},
-	"temperature": 0.5
+	"temperature": 0.8
 }

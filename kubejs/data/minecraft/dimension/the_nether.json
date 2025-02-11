@@ -6,19 +6,45 @@
 		"biome_source": {
 			"type": "minecraft:multi_noise",
 			"biomes": [
-				
 				{
-					"biome": "tfg:nether/lush_caves",
+					"biome": "tfg:nether/basalt_deltas",
 					"parameters": {
 						"continentalness": 0,
-						"depth": [ 0.7, 1 ],
+						"depth": [ 0.5, 1.1 ],
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
-						"temperature": 0.4,
+						"temperature": 0,
+						"weirdness": 0
+					}
+				},
+				{
+					"biome": "tfg:nether/fungi_forest",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0, 0.5 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 0
+					}
+				},
+				{
+					"biome": "tfg:nether/lush_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0, 0.5 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
 						"weirdness": 0
 					}
 				}
+			],
+			"disabled_biomes": [
+				
 			]
 		}
 	}

@@ -190,4 +190,18 @@ const registerTFCFoodData = (event) => {
         food.fruit(0.8)
         food.water(5)
     })
+
+
+    event.foodItem('minecraft:red_mushroom', food => {
+        food.hunger(1)
+        food.vegetables(1)
+        food.water(5)
+    })
+
+    event.foodItem('minecraft:brown_mushroom', food => {
+        food.saturation(2)
+        food.hunger(2)
+        food.vegetables(1)
+        food.water(2)
+    })
 }
