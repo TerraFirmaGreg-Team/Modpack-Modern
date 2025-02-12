@@ -37,7 +37,7 @@
 	"features": [
 		[],
 		[
-			"tfg:nether/lava_lake"
+			"tfg:nether/terrain/lava_lake"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -45,7 +45,7 @@
 		],
 		[],
 		[
-			"tfg:nether/glowstone_ceiling",
+			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
 			"beneath:nether_spikes",
 			"beneath:delta",
@@ -55,7 +55,7 @@
 		[],
 		"#tfg:nether_veins",
 		[
-			"tfg:nether/crackrack_blob",
+			"tfg:nether/blob/crackrack_blob",
 			"beneath:vein/crackrack_pipe",
 			"beneath:vein/cursecoal",
 			"beneath:magma_rhyolite",
@@ -73,9 +73,9 @@
 			"beneath:blackstone_pebble_patch",
 			"beneath:burpflower_patch",
 			"beneath:sulfur_patch",
-			"tfg:nether/pumice_patch",
-			"tfg:nether/beneath_mushrooms",
-			"tfg:nether/guano_patch",
+			"tfg:nether/surface/pumice_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/guano_patch",
 			"tfg:glow_lichen"
 		]
 	],
