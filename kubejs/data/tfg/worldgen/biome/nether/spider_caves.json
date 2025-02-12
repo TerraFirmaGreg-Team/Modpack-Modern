@@ -6,12 +6,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"additions_sound": {
-			"sound": "minecraft:ambient.warped_forest.additions",
-			"tick_chance": 0.0111
-		},
-		"ambient_sound": "minecraft:ambient.warped_forest.loop",
-		"fog_color": 10397563,
+		"fog_color": 10329508,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -22,18 +17,12 @@
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.overworld.swamp"
+			"sound": "minecraft:music.overworld.dripstone_caves"
 		},
-		"sky_color": 10397563,
-		"water_color": 6388580,
-		"water_fog_color": 2302743,
-		"foliage_color": 7171928,
-		"particle": {
-			"options": {
-				"type": "minecraft:mycelium"
-			},
-			"probability": 0.1
-		}
+		"sky_color": 5799235,
+		"water_color": 7255466,
+		"water_fog_color": 3169873,
+		"grass_color": 6466617
 	},
 	"features": [
 		[],
@@ -42,7 +31,7 @@
 			"tfg:nether/spring_water_lake"
 		],
 		[
-			"minecraft:basalt_pillar",
+			"minecraft:large_dripstone",
 			"tfg:earth/geode"
 		],
 		[],
@@ -60,31 +49,27 @@
 			"beneath:magma_rhyolite",
 			"beneath:magma_basalt",
 			"beneath:magma_andesite",
-			"beneath:magma_dacite"
+			"beneath:magma_dacite",
+			"minecraft:dripstone_cluster"
 		],
-		[],
 		[
-			"minecraft:spring_lava",
+			"minecraft:spring_lava" 
+		],
+		[
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
-			"tfg:nether/big_mushrooms",
-			"tfg:nether/glow_mushroom",
-			"tfg:nether/humus_patch",
 			"tfg:nether/bone_patch",
 			"tfg:nether/rotten_flesh_patch",
 			"tfg:nether/dead_bush_patch",
-			"tfg:nether/mushroom_sprouts",
 			"tfg:nether/mud_pool",
 			"tfg:nether/green_algae_patch",
-			"tfg:nether/small_mushrooms",
-			"tfg:nether/liana_ceiling",
-			"minecraft:spore_blossom",
+			"tfg:nether/spanish_moss_ceiling",
+			"tfg:nether/cobwebs",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
 			"tfg:nether/pumice_patch",
 			"tfg:nether/beneath_mushrooms",
-			"tfg:nether/moss_patch_big",
 			"tfg:nether/guano_patch",
 			"tfg:glow_lichen"
 		]
@@ -113,75 +98,39 @@
 				"weight": 10
 			}
 		],
-		"axolotls": [],
-		"creature": [
+		"axolotls": [
 			{
-				"type": "minecraft:frog",
-				"maxCount": 5,
-				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "beneath:red_elk",
-				"maxCount": 8,
+				"type": "minecraft:axolotl",
+				"maxCount": 6,
 				"minCount": 4,
-				"weight": 100
+				"weight": 10
 			}
 		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{
 				"type": "minecraft:piglin",
-				"maxCount": 4,
-				"minCount": 3,
-				"weight": 100
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 15
 			},
 			{
 				"type": "minecraft:zombified_piglin",
-				"maxCount": 3,
-				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:zombie",
-				"maxCount": 4,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 95
+				"weight": 10
 			},
 			{
-				"type": "minecraft:drowned",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 95
-			},
-			{
-				"type": "minecraft:creeper",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:silverfish",
+				"type": "minecraft:spider",
 				"maxCount": 5,
 				"minCount": 3,
 				"weight": 100
 			},
 			{
-				"type": "minecraft:skeleton",
+				"type": "minecraft:cave_spider",
 				"maxCount": 4,
 				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:spider",
-				"maxCount": 4,
-				"minCount": 4,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:slime",
-				"maxCount": 4,
-				"minCount": 4,
 				"weight": 100
 			},
 			{
@@ -191,10 +140,28 @@
 				"weight": 10
 			},
 			{
-				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"type": "minecraft:silverfish",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 75
+			},
+			{
+				"type": "endermanoverhaul:scarab",
+				"maxCount": 6,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:cave_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:swamp_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [

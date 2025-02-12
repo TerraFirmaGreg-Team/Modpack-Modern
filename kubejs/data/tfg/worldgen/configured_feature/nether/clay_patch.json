@@ -10,7 +10,7 @@
 				"Name": "tfc:clay_grass/silt"
 			}
 		},
-		"replaceable": "#minecraft:lush_ground_replaceable",
+		"replaceable": "#tfg:lush_ground_replaceable",
 		"surface": "floor",
 		"vegetation_chance": 0.8,
 		"vegetation_feature": {

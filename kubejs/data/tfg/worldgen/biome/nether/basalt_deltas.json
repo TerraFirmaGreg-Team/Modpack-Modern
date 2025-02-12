@@ -45,6 +45,7 @@
 		],
 		[],
 		[
+			"tfg:nether/glowstone_ceiling",
 			"beneath:glowstone_spikes",
 			"beneath:nether_spikes",
 			"beneath:delta",
@@ -62,7 +63,9 @@
 			"beneath:magma_andesite",
 			"beneath:magma_dacite"
 		],
-		[],
+		[
+			"minecraft:spring_lava"
+		],
 		[
 			"minecraft:spring_delta",
 			"minecraft:spring_closed_double",
@@ -70,6 +73,7 @@
 			"beneath:blackstone_pebble_patch",
 			"beneath:burpflower_patch",
 			"beneath:sulfur_patch",
+			"tfg:nether/pumice_patch",
 			"tfg:nether/beneath_mushrooms",
 			"tfg:nether/guano_patch",
 			"tfg:glow_lichen"
@@ -98,6 +102,12 @@
 		"misc": [],
 		"monster": [
 			{
+				"type": "minecraft:zombified_piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
 				"type": "kaolinclayze:golem_2",
 				"maxCount": 4,
 				"minCount": 1,
@@ -111,9 +121,15 @@
 			},
 			{
 				"type": "minecraft:enderman",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:nether_wastes_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

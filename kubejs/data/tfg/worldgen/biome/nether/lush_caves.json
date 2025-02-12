@@ -22,7 +22,8 @@
 		"sky_color": 5799235,
 		"water_color": 7255466,
 		"water_fog_color": 3169873,
-		"grass_color": 6466617,
+		"grass_color": 12568641,
+		"foliage_color": 12568641,
 		"particle": {
 			"options": {
 				"type": "minecraft:falling_water"
@@ -33,7 +34,8 @@
 	"features": [
 		[],
 		[
-			"tfg:nether/lava_lake"
+			"tfg:nether/lava_lake",
+			"tfg:nether/spring_water_lake"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -41,6 +43,7 @@
 		],
 		[],
 		[
+			"tfg:nether/glowstone_ceiling",
 			"beneath:glowstone_spikes",
 			"beneath:nether_spikes"
 		],
@@ -57,7 +60,6 @@
 		],
 		[],
 		[
-			"tfg:nether/spring_water",
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/philodendron",
@@ -68,6 +70,7 @@
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
+			"tfg:nether/pumice_patch",
 			"tfg:nether/beneath_mushrooms",
 			"tfg:nether/moss_patch_small",
 			"tfg:nether/guano_patch",
@@ -117,6 +120,18 @@
 		"misc": [],
 		"monster": [
 			{
+				"type": "minecraft:piglin",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:zombified_piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
 				"type": "kaolinclayze:tfc",
 				"maxCount": 4,
 				"minCount": 1,
@@ -142,7 +157,7 @@
 			},
 			{
 				"type": "minecraft:enderman",
-				"maxCount": 3,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 10
 			},

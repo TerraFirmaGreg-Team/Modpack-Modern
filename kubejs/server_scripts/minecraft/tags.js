@@ -29,6 +29,9 @@ const registerMinecraftBlockTags = (event) => {
 
     //#region Nether blocks
 
+    event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')
+    event.add('tfg:lush_ground_replaceable', 'minecraft:blackstone')
+
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
@@ -47,6 +50,7 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfc:creeping_stone_plantable_on', 'minecraft:blackstone')
     event.add('tfc:creeping_stone_plantable_on', 'minecraft:calcite')
     event.add('minecraft:axolotls_spawnable_on', 'minecraft:calcite')
+    event.add('forge:stone', 'minecraft:blackstone')
 
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
