@@ -38,8 +38,8 @@
 	"features": [
 		[],
 		[
-			"tfg:nether/lava_lake",
-			"tfg:nether/spring_water_lake"
+			"tfg:nether/terrain/lava_lake",
+			"tfg:nether/terrain/spring_water_lake"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -47,14 +47,14 @@
 		],
 		[],
 		[
-			"tfg:nether/glowstone_ceiling",
+			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
 			"beneath:nether_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
 		[
-			"tfg:nether/crackrack_blob",
+			"tfg:nether/blob/crackrack_blob",
 			"beneath:vein/crackrack_pipe",
 			"beneath:vein/cursecoal",
 			"beneath:magma_rhyolite",
@@ -67,25 +67,25 @@
 			"minecraft:spring_lava",
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
-			"tfg:nether/big_mushrooms",
-			"tfg:nether/glow_mushroom",
-			"tfg:nether/humus_patch",
-			"tfg:nether/bone_patch",
-			"tfg:nether/rotten_flesh_patch",
-			"tfg:nether/dead_bush_patch",
-			"tfg:nether/mushroom_sprouts",
-			"tfg:nether/mud_pool",
-			"tfg:nether/green_algae_patch",
-			"tfg:nether/small_mushrooms",
-			"tfg:nether/liana_ceiling",
+			"tfg:nether/surface/big_mushrooms",
+			"tfg:nether/surface/glow_mushroom",
+			"tfg:nether/surface/humus_patch",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/surface/mushroom_sprouts",
+			"tfg:nether/terrain/mud_pool",
+			"tfg:nether/surface/green_algae_patch",
+			"tfg:nether/surface/small_mushrooms",
+			"tfg:nether/terrain/liana_ceiling",
 			"minecraft:spore_blossom",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
-			"tfg:nether/pumice_patch",
-			"tfg:nether/beneath_mushrooms",
-			"tfg:nether/moss_patch_big",
-			"tfg:nether/guano_patch",
+			"tfg:nether/surface/pumice_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/moss_patch_big",
+			"tfg:nether/surface/guano_patch",
 			"tfg:glow_lichen"
 		]
 	],

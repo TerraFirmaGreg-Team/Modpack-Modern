@@ -34,8 +34,8 @@
 	"features": [
 		[],
 		[
-			"tfg:nether/lava_lake",
-			"tfg:nether/spring_water_lake"
+			"tfg:nether/terrain/lava_lake",
+			"tfg:nether/terrain/spring_water_lake"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -43,14 +43,14 @@
 		],
 		[],
 		[
-			"tfg:nether/glowstone_ceiling",
+			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
 			"beneath:nether_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
 		[
-			"tfg:nether/crackrack_blob",
+			"tfg:nether/blob/crackrack_blob",
 			"beneath:vein/crackrack_pipe",
 			"beneath:vein/cursecoal",
 			"beneath:magma_rhyolite",
@@ -62,18 +62,18 @@
 		[
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
-			"tfg:nether/philodendron",
-			"tfg:nether/lush_caves_ceiling",
-			"tfg:nether/lush_caves_clay",
-			"tfg:nether/lush_caves_vegetation",
+			"tfg:nether/surface/philodendron",
+			"tfg:nether/terrain/lush_caves_ceiling",
+			"tfg:nether/terrain/lush_caves_clay",
+			"tfg:nether/terrain/lush_caves_vegetation",
 			"minecraft:spore_blossom",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
 			"beneath:sulfur_patch",
-			"tfg:nether/pumice_patch",
-			"tfg:nether/beneath_mushrooms",
-			"tfg:nether/moss_patch_small",
-			"tfg:nether/guano_patch",
+			"tfg:nether/surface/pumice_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/moss_patch_small",
+			"tfg:nether/surface/guano_patch",
 			"tfg:glow_lichen"
 		]
 	],
