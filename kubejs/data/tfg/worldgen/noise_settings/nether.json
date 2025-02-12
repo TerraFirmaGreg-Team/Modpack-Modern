@@ -41,7 +41,7 @@
 									"from_value": 0.0,
 									"from_y": -8,
 									"to_value": 1.0,
-									"to_y": 12
+									"to_y": 24
 								},
 								"argument2": {
 									"type": "minecraft:add",
@@ -100,7 +100,7 @@
 		"vein_toggle": 0.0
 	},
 	"ore_veins_enabled": false,
-	"sea_level": 20,
+	"sea_level": 32,
 	"spawn_target": [],
 	"surface_rule": {
 		"type": "minecraft:sequence",

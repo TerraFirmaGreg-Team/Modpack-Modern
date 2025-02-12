@@ -10,7 +10,7 @@
 				"Name": "tfc:kaolin_clay_grass"
 			}
 		},
-		"replaceable": "#tfc:kaolin_clay_replaceable",
+		"replaceable": "#tfg:lush_ground_replaceable",
 		"surface": "floor",
 		"vegetation_chance": 0.8,
 		"vegetation_feature": {

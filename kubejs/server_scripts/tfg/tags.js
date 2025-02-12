@@ -48,6 +48,10 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
 	event.add('minecraft:has_structure/mineshaft', 'tfg:nether/basalt_deltas')
+	
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/spider_caves')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/spider_caves')
+	event.add('minecraft:has_structure/mineshaft', 'tfg:nether/spider_caves')
 
 	// #endregion
 }
