@@ -6,7 +6,7 @@
     "min_y": -32,
     "max_y": 100,
     "size": 40,
-    "random_name": "normal_certus_quartz",
+    "random_name": "normal_quartz",
     "blocks": [
       {
         "replace": [
@@ -15,19 +15,15 @@
         "with": [
           {
             "block": "gtceu:shale_quartzite_ore",
-            "weight": 45
+            "weight": 65
           },
-          {
+		  {
             "block": "gtceu:shale_certus_quartz_ore",
             "weight": 30
           },
           {
             "block": "gtceu:shale_barite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:shale_nether_quartz_ore",
-            "weight": 10
+            "weight": 25
           }
         ]
       },
@@ -38,19 +34,15 @@
         "with": [
           {
             "block": "gtceu:quartzite_quartzite_ore",
-            "weight": 45
+            "weight": 65
           },
-          {
+		  {
             "block": "gtceu:quartzite_certus_quartz_ore",
             "weight": 30
           },
           {
             "block": "gtceu:quartzite_barite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:quartzite_nether_quartz_ore",
-            "weight": 10
+            "weight": 25
           }
         ]
       },
@@ -61,19 +53,15 @@
         "with": [
           {
             "block": "gtceu:schist_quartzite_ore",
-            "weight": 45
+            "weight": 65
           },
-          {
+		  {
             "block": "gtceu:schist_certus_quartz_ore",
             "weight": 30
           },
           {
             "block": "gtceu:schist_barite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:schist_nether_quartz_ore",
-            "weight": 10
+            "weight": 25
           }
         ]
       },
@@ -84,19 +72,15 @@
         "with": [
           {
             "block": "gtceu:gneiss_quartzite_ore",
-            "weight": 45
+            "weight": 65
           },
-          {
+		  {
             "block": "gtceu:gneiss_certus_quartz_ore",
             "weight": 30
           },
           {
             "block": "gtceu:gneiss_barite_ore",
-            "weight": 15
-          },
-          {
-            "block": "gtceu:gneiss_nether_quartz_ore",
-            "weight": 10
+            "weight": 25
           }
         ]
       }
@@ -134,18 +118,6 @@
 		{
           "block": "tfg:buds/large_quartzite_bud",
           "weight": 10
-        },
-		{
-          "block": "tfg:buds/small_nether_quartz_bud",
-          "weight": 10
-        },
-		{
-          "block": "tfg:buds/medium_nether_quartz_bud",
-          "weight": 6
-        },
-		{
-          "block": "tfg:buds/large_nether_quartz_bud",
-          "weight": 4
         }
       ]
     }
