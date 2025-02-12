@@ -84,7 +84,9 @@
     { "block": "tfc:rock/magma/rhyolite" },
     { "block": "tfc:rock/magma/diorite" },
     { "block": "tfc:rock/magma/dacite" },
-    { "block": "tfc:rock/magma/diorite" },
+    { "block": "tfc:rock/magma/andesite" },
+    { "block": "tfc:rock/magma/granite" },
+    { "block": "tfc:rock/magma/gabbro" },
     
     { "block": "framedblocks:framed_activator_rail_slope", "state": { "glowing": true } },
     { "block": "framedblocks:framed_bouncy_cube", "state": { "glowing": true } },
@@ -405,6 +407,8 @@
     { "block": "tfc:rock/magma/dacite", "color": "#magmaRed", "radius": 4 },
     { "block": "tfc:rock/magma/rhyolite", "color": "#magmaRed", "radius": 4 },
     { "block": "tfc:rock/magma/andesite", "color": "#magmaRed", "radius": 4 },
+    { "block": "tfc:rock/magma/granite", "color": "#magmaRed", "radius": 4 },
+    { "block": "tfc:rock/magma/gabbro", "color": "#magmaRed", "radius": 4 },
 
     { "block": "framedblocks:framed_redstone_torch", "state": { "lit": true }, "color": "#redstoneRed", "radius": 7 },
     { "block": "framedblocks:framed_redstone_wall_torch", "state": { "lit": true }, "color": "#redstoneRed", "radius": 7 },
