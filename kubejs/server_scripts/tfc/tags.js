@@ -492,7 +492,7 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_scheelite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sheldonite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_topaz')
-    event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_apatite_')
+    event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_apatite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_basaltic_sands')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_bauxite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_beryllium')
