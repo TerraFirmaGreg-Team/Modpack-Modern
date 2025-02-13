@@ -1,0 +1,52 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 140,
+    "density": 0.4,
+    "min_y": -32,
+    "max_y": 60,
+    "size": 40,
+    "random_name": "normal_garnierite",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_garnierite_ore",
+            "weight": 30
+          },
+          {
+            "block": "gtceu:gabbro_nickel_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:gabbro_cobaltite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:gabbro_pentlandite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_cobalt_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 12,
+      "depth": 60,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_garnierite",
+          "weight": 100
+        }
+      ]
+    }
+  }
+}

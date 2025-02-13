@@ -51,3 +51,19 @@ const registerTFGBiomeTags = (event) => {
 
 	// #endregion
 }
+
+
+const registerTFCPlacedFeatures = (event) => {
+	
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_limonite')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_magnetite')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_molybdenum')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
+    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_quartz')
+
+	// TODO: figure out what other rock types will be in the nether, add to these veins
+	// TODO: re-enable deepslate/blackstone ores?
+}

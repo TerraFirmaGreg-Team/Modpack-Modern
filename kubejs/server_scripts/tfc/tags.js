@@ -486,7 +486,6 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_limonite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_magnetite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_molybdenum')
-    event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_naquadah')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_pitchblende')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sapphire')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_scheelite')
@@ -531,7 +530,4 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/geode')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
-
-
-    event.add('tfg:nether_veins', 'tfg:nether/vein/normal_quartz')
 }
