@@ -498,7 +498,6 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_beryllium')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_bismuthinite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_cassiterite')
-    event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_certus_quartz')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_coal')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_copper')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_garnet_tin')
@@ -516,6 +515,7 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_mica')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_monazite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_olivine')
+    event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_quartz')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_redstone')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_salt')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_saltpeter')
@@ -531,4 +531,7 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/geode')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
+
+
+    event.add('tfg:nether_veins', 'tfg:nether/vein/normal_quartz')
 }

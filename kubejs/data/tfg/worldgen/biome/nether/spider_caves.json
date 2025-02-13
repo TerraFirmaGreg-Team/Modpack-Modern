@@ -38,7 +38,8 @@
 		[
 			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
-			"beneath:nether_spikes"
+			"beneath:nether_spikes",
+			"tfg:nether/terrain/dripstone_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
@@ -49,8 +50,7 @@
 			"beneath:magma_rhyolite",
 			"beneath:magma_basalt",
 			"beneath:magma_andesite",
-			"beneath:magma_dacite",
-			"minecraft:dripstone_cluster"
+			"beneath:magma_dacite"
 		],
 		[
 			"minecraft:spring_lava" 
@@ -62,7 +62,6 @@
 			"tfg:nether/surface/rotten_flesh_patch",
 			"tfg:nether/surface/dead_bush_patch",
 			"tfg:nether/terrain/mud_pool",
-			"tfg:nether/surface/green_algae_patch",
 			"tfg:nether/terrain/spanish_moss_ceiling",
 			"tfg:nether/surface/cobwebs",
 			"beneath:burpflower_patch",

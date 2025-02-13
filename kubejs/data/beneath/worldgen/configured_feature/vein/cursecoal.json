@@ -1,0 +1,48 @@
+{
+	"type": "tfc:disc_vein",
+	"config": {
+		"rarity": 45,
+		"size": 13,
+		"height": 4,
+		"density": 0.88,
+		"min_y": 80,
+		"max_y": 127,
+		"project": false,
+		"random_name": "cursecoal",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate"
+				],
+				"with": [
+					{
+						"weight": 1,
+						"block": "beneath:ore/nether_cursecoal"
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"weight": 1,
+						"block": "beneath:ore/nether_cursecoal"
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:hardened_deepslate"
+				],
+				"with": [
+					{
+						"weight": 1,
+						"block": "beneath:ore/nether_cursecoal"
+					}
+				]
+			}
+		]
+	}
+}
