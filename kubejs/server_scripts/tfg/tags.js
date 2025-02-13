@@ -53,7 +53,7 @@ const registerTFGBiomeTags = (event) => {
 }
 
 
-const registerTFCPlacedFeatures = (event) => {
+const registerTFGPlacedFeatures = (event) => {
 	
     event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
     event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
@@ -66,4 +66,6 @@ const registerTFCPlacedFeatures = (event) => {
 
 	// TODO: figure out what other rock types will be in the nether, add to these veins
 	// TODO: re-enable deepslate/blackstone ores?
+
+	event.add('tfg:nether_top_layer_modification', 'tfg:nether/hardening')
 }

@@ -28,9 +28,23 @@ const registerTFGBlocks = (event) => {
 		.mapColor('terracotta_grey')
 		.fullBlock(true)
 		.opaque(true)
+		
+	event.create('tfg:hardened_blackstone')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/blackstone' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_grey')
+		.fullBlock(true)
+		.opaque(true)
 
-	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
-		.noItem()
+	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike').noItem()
+	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike').noItem()
+	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike').noItem()
 
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
