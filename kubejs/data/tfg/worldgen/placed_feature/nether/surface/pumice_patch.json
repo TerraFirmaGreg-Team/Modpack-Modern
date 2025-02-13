@@ -3,7 +3,7 @@
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 14
+			"chance": 3
 		},
 		{
 			"type": "minecraft:count_on_every_layer",
@@ -15,6 +15,9 @@
 				"minecraft:lava"
 			],
 			"radius": 5
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:biome"

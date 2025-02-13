@@ -1,8 +1,6 @@
 {
 	"carvers": {
-		"air": [
-			"tfc:cave"
-		]
+		"air": "minecraft:nether_cave"
 	},
 	"downfall": 0.5,
 	"effects": {
@@ -49,7 +47,8 @@
 		[
 			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
-			"beneath:nether_spikes"
+			"tfg:nether/terrain/deepslate_spikes",
+			"tfg:nether/terrain/blackstone_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
@@ -62,9 +61,10 @@
 			"beneath:magma_andesite",
 			"beneath:magma_dacite"
 		],
-		[],
 		[
-			"minecraft:spring_lava",
+			"minecraft:spring_lava"
+		],
+		[
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/big_mushrooms",
@@ -87,7 +87,8 @@
 			"tfg:nether/surface/beneath_mushrooms",
 			"tfg:nether/surface/guano_patch",
 			"tfg:glow_lichen"
-		]
+		],
+		"#tfg:nether_top_layer_modification"
 	],
 	"has_precipitation": false,
 	"spawn_costs": {
