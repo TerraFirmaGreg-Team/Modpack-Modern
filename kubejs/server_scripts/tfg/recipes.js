@@ -155,6 +155,9 @@ const registerTFGRecipes = (event) => {
 	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'tfg:hardened_deepslate')
 	event.recipes.tfc.collapse('minecraft:blackstone', 'minecraft:blackstone')
 	event.recipes.tfc.collapse('minecraft:blackstone', 'tfg:hardened_blackstone')
+	event.recipes.tfc.collapse('minecraft:dripstone_block', 'minecraft:dripstone_block')
+	
+	event.recipes.tfc.landslide('minecraft:cobbled_deepslate', 'minecraft:cobbled_deepslate')
 
 	// #endregion
 }
