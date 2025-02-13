@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "minecraft:dripstone_block",
+		"spike": "tfg:spike/dripstone_spike",
+		"anchor_blocks": "minecraft:base_stone_nether"
+	}
+}

@@ -18,12 +18,12 @@ const registerTFGBlockTags = (event) => {
 
 	// #region Nether blocks
 
-	event.add('beneath:nether_bush_plantable_on', 'tfg:hardened_deepslate')
 	event.add('minecraft:nether_carver_replaceables', 'tfg:hardened_deepslate')
-	event.add('tfc:grass_plantable_on', 'tfg:hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:hardened_deepslate')
+    event.add('minecraft:base_stone_nether', 'tfg:hardened_deepslate')
+	event.add('beneath:nether_bush_plantable_on', 'tfg:hardened_deepslate')
+	event.add('tfc:grass_plantable_on', 'tfg:hardened_deepslate')
     event.add('tfc:creeping_plantable_on', 'tfg:hardened_deepslate')
-    event.remove('minecraft:lush_ground_replaceable', 'tfg:hardened_deepslate')
 
 	// #endregion
 }
@@ -35,23 +35,19 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lush_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lush_caves')
-	event.add('minecraft:has_structure/mineshaft', 'tfg:nether/lush_caves')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/lush_caves')
 	event.add('minecraft:spawns_cold_variant_frogs', 'tfg:nether/lush_caves')
 	
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/fungi_forest')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/fungi_forest')
-	event.add('minecraft:has_structure/mineshaft', 'tfg:nether/fungi_forest')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/fungi_forest')
 	event.add('minecraft:spawns_warm_variant_frogs', 'tfg:nether/fungi_forest')
 	event.add('minecraft:has_closer_water_fog', 'tfg:nether/fungi_forest')
 
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
-	event.add('minecraft:has_structure/mineshaft', 'tfg:nether/basalt_deltas')
 	
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/spider_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/spider_caves')
-	event.add('minecraft:has_structure/mineshaft', 'tfg:nether/spider_caves')
 
 	// #endregion
 }

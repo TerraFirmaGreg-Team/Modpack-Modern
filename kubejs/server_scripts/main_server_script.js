@@ -6,6 +6,7 @@
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
     registerAsticorCartsItemTags(event)
+    registerBeneathItemTags(event)
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
@@ -35,6 +36,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     registerAE2BlockTags(event)
     registerAsticorCartsBlockTags(event)
+    registerBeneathBlockTags(event)
     registerChiselAndBitsBlockTags(event)
     registerComputerCraftBlockTags(event)
     registerCreateBlockTags(event)

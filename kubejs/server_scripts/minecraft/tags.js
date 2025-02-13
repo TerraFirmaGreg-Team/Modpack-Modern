@@ -31,7 +31,9 @@ const registerMinecraftBlockTags = (event) => {
 
     event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')
     event.add('tfg:lush_ground_replaceable', 'minecraft:blackstone')
-
+    
+    event.add('tfc:rock/raw', 'minecraft:deepslate')
+    event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
@@ -39,6 +41,7 @@ const registerMinecraftBlockTags = (event) => {
     event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
     event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
     event.add('minecraft:nether_carver_replaceables', 'minecraft:calcite')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:dripstone')
     event.add('minecraft:moss_replaceable', 'minecraft:blackstone')
     event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
     event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
@@ -50,10 +53,11 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfc:creeping_stone_plantable_on', 'minecraft:blackstone')
     event.add('tfc:creeping_stone_plantable_on', 'minecraft:calcite')
     event.add('minecraft:axolotls_spawnable_on', 'minecraft:calcite')
+    event.add('minecraft:base_stone_nether', 'minecraft:deepslate')
+    event.add('minecraft:base_stone_nether', 'minecraft:blackstone')
+    event.add('minecraft:base_stone_nether', 'minecraft:dripstone')
     event.add('forge:stone', 'minecraft:blackstone')
 
-    
-    event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:can_landslide', 'minecraft:cobbled_deepslate')
     event.add('tfg:rock_stairs', 'minecraft:cobbled_deepslate_stairs')
     event.add('tfg:rock_slabs', 'minecraft:cobbled_deepslate_slab')
@@ -84,7 +88,6 @@ const registerMinecraftBlockTags = (event) => {
     event.remove('tfc:can_start_collapse', 'minecraft:polished_blackstone_brick_wall')
     event.remove('tfc:can_trigger_collapse', 'minecraft:polished_blackstone_brick_wall')
 
-    event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('tfg:rock_stairs', 'minecraft:blackstone_stairs')
     event.add('tfg:rock_slabs', 'minecraft:blackstone_slab')
     event.add('tfg:rock_walls', 'minecraft:blackstone_wall')

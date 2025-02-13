@@ -28,6 +28,9 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
+	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+		.noItem()
+
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
 
