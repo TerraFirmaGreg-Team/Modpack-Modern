@@ -1,0 +1,125 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 240,
+		"density": 0.35,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 32,
+		"random_name": "nether_limonite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate"
+				],
+				"with": [
+					{
+						"block": "gtceu:slate_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:slate_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:slate_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:slate_malachite_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basalt_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_malachite_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basalt_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_malachite_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:limestone_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:limestone_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:limestone_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:limestone_malachite_ore",
+						"weight": 20
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_hematite",
+					"weight": 30
+				},
+				{
+					"block": "tfc:ore/small_limonite",
+					"weight": 30
+				},
+				{
+					"block": "tfc:ore/small_malachite",
+					"weight": 40
+				}
+			]
+		}
+	}
+}

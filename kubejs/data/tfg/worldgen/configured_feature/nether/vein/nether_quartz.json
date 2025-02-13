@@ -6,80 +6,80 @@
 		"min_y": 0,
 		"max_y": 128,
 		"size": 40,
-		"random_name": "normal_quartz",
+		"random_name": "nether_quartz",
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/shale"
+					"minecraft:deepslate"
 				],
 				"with": [
 					{
-						"block": "gtceu:shale_quartzite_ore",
+						"block": "gtceu:slate_quartzite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:shale_nether_quartz_ore",
+						"block": "gtceu:slate_nether_quartz_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:shale_barite_ore",
+						"block": "gtceu:slate_barite_ore",
 						"weight": 25
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/quartzite"
+					"minecraft:blackstone"
 				],
 				"with": [
 					{
-						"block": "gtceu:quartzite_quartzite_ore",
+						"block": "gtceu:basalt_quartzite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:quartzite_nether_quartz_ore",
+						"block": "gtceu:basalt_nether_quartz_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:quartzite_barite_ore",
+						"block": "gtceu:basalt_barite_ore",
 						"weight": 25
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"minecraft:basalt"
 				],
 				"with": [
 					{
-						"block": "gtceu:schist_quartzite_ore",
+						"block": "gtceu:basalt_quartzite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:schist_nether_quartz_ore",
+						"block": "gtceu:basalt_nether_quartz_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:schist_barite_ore",
+						"block": "gtceu:basalt_barite_ore",
 						"weight": 25
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss"
+					"minecraft:dripstone_block"
 				],
 				"with": [
 					{
-						"block": "gtceu:gneiss_quartzite_ore",
+						"block": "gtceu:limestone_quartzite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:gneiss_nether_quartz_ore",
+						"block": "gtceu:limestone_nether_quartz_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:gneiss_barite_ore",
+						"block": "gtceu:limestone_barite_ore",
 						"weight": 25
 					}
 				]

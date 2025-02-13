@@ -1,0 +1,206 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 180,
+    "density": 0.25,
+    "min_y": -40,
+    "max_y": 30,
+    "size": 26,
+    "random_name": "normal_olivine",
+    "blocks": [
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:rhyolite_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:rhyolite_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:rhyolite_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/basalt"
+        ],
+        "with": [
+          {
+            "block": "gtceu:basalt_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:basalt_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:basalt_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:andesite_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:andesite_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:andesite_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:dacite_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:dacite_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:dacite_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/granite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:granite_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:granite_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:granite_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/diorite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:diorite_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:diorite_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:diorite_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/gabbro"
+        ],
+        "with": [
+          {
+            "block": "gtceu:gabbro_bentonite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:gabbro_magnesite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_olivine_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:gabbro_glauconite_sand_ore",
+            "weight": 15
+          }
+        ]
+      }
+    ],
+	"indicator": {
+      "rarity": 15,
+      "depth": 20,
+      "underground_rarity": 40,
+      "underground_count": 200,
+      "blocks": [
+        {
+          "block": "gtceu:bentonite_indicator",
+          "weight": 35
+        },
+		{
+          "block": "gtceu:magnesite_indicator",
+          "weight": 25
+        },
+		{
+          "block": "gtceu:glauconite_sand_indicator",
+          "weight": 15
+        },
+		{
+          "block": "tfg:buds/small_olivine_bud",
+          "weight": 15
+        },
+		{
+          "block": "tfg:buds/medium_olivine_bud",
+          "weight": 10
+        },
+		{
+          "block": "tfg:buds/large_olivine_bud",
+          "weight": 5
+        }
+      ]
+    }
+  }
+}

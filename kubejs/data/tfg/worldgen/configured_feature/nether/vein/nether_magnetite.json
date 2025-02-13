@@ -1,0 +1,153 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 205,
+		"density": 0.3,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 34,
+		"random_name": "nether_magnetite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate"
+				],
+				"with": [
+					{
+						"block": "gtceu:slate_magnetite_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:slate_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:slate_chromite_ore",
+						"weight": 60
+					},
+					{
+						"block": "gtceu:slate_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:slate_sapphire_ore",
+						"weight": 5
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_magnetite_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:basalt_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_chromite_ore",
+						"weight": 60
+					},
+					{
+						"block": "gtceu:basalt_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_sapphire_ore",
+						"weight": 5
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_magnetite_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:basalt_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_chromite_ore",
+						"weight": 60
+					},
+					{
+						"block": "gtceu:basalt_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_sapphire_ore",
+						"weight": 5
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:limestone_magnetite_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:limestone_vanadium_magnetite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:limestone_chromite_ore",
+						"weight": 60
+					},
+					{
+						"block": "gtceu:limestone_gold_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:limestone_sapphire_ore",
+						"weight": 5
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_magnetite",
+					"weight": 20
+				},
+				{
+					"block": "tfc:ore/small_native_gold",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:chromite_indicator",
+					"weight": 60
+				},
+				{
+					"block": "tfg:buds/small_sapphire_bud",
+					"weight": 3
+				},
+				{
+					"block": "tfg:buds/medium_sapphire_bud",
+					"weight": 2
+				},
+				{
+					"block": "tfg:buds/large_sapphire_bud",
+					"weight": 1
+				}
+			]
+		}
+	}
+}

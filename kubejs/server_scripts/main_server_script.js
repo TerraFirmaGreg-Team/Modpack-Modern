@@ -77,6 +77,7 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.tags('worldgen/placed_feature', event => {
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
+    registerTFGPlacedFeatures(event)
 })
 
 ServerEvents.tags('worldgen/biome', event => {
