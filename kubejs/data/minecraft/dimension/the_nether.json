@@ -7,6 +7,20 @@
 			"type": "minecraft:multi_noise",
 			"biomes": [
 				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0, 1.5 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 0
+					}
+				}
+			],
+			"disabled_biomes": [
+				{
 					"biome": "tfg:nether/spider_caves",
 					"parameters": {
 						"continentalness": 0,
@@ -17,14 +31,12 @@
 						"temperature": 0,
 						"weirdness": 0.5
 					}
-				}
-			],
-			"disabled_biomes": [
+				},
 				{
 					"biome": "tfg:nether/basalt_deltas",
 					"parameters": {
 						"continentalness": 0,
-						"depth": [ 0.5, 1.1 ],
+						"depth": [ 0.5, 1.5 ],
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
