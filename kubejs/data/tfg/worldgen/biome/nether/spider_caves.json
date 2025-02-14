@@ -42,15 +42,7 @@
 		],
 		[],
 		"#tfg:nether_veins",
-		[
-			"tfg:nether/blob/crackrack_blob",
-			"beneath:vein/crackrack_pipe",
-			"beneath:vein/cursecoal",
-			"beneath:magma_rhyolite",
-			"beneath:magma_basalt",
-			"beneath:magma_andesite",
-			"beneath:magma_dacite"
-		],
+		"#tfg:nether_underground_decoration",
 		[
 			"minecraft:spring_lava"
 		],
@@ -105,7 +97,20 @@
 				"weight": 10
 			}
 		],
-		"creature": [],
+		"creature": [
+			{
+				"type": "minecraft:frog",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 8,
+				"minCount": 4,
+				"weight": 100
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
@@ -146,15 +151,15 @@
 			},
 			{
 				"type": "endermanoverhaul:scarab",
-				"maxCount": 6,
-				"minCount": 3,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "endermanoverhaul:cave_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 75
 			},
 			{
 				"type": "endermanoverhaul:swamp_enderman",
@@ -166,8 +171,8 @@
 		"underground_water_creature": [
 			{
 				"type": "tfc:octopoteuthis",
-				"maxCount": 6,
-				"minCount": 4,
+				"maxCount": 3,
+				"minCount": 1,
 				"weight": 10
 			}
 		],

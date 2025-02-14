@@ -53,15 +53,7 @@
 		],
 		[],
 		"#tfg:nether_veins",
-		[
-			"tfg:nether/blob/crackrack_blob",
-			"beneath:vein/crackrack_pipe",
-			"beneath:vein/cursecoal",
-			"beneath:magma_rhyolite",
-			"beneath:magma_basalt",
-			"beneath:magma_andesite",
-			"beneath:magma_dacite"
-		],
+		"#tfg:nether_underground_decoration",
 		[
 			"minecraft:spring_lava"
 		],

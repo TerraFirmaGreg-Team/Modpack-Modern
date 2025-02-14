@@ -41,23 +41,23 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:basalt_magnetite_ore",
+						"block": "gtceu:blackstone_magnetite_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:basalt_vanadium_magnetite_ore",
+						"block": "gtceu:blackstone_vanadium_magnetite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:basalt_chromite_ore",
+						"block": "gtceu:blackstone_chromite_ore",
 						"weight": 60
 					},
 					{
-						"block": "gtceu:basalt_gold_ore",
+						"block": "gtceu:blackstone_gold_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:basalt_sapphire_ore",
+						"block": "gtceu:blackstone_sapphire_ore",
 						"weight": 5
 					}
 				]
@@ -95,23 +95,23 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:limestone_magnetite_ore",
+						"block": "gtceu:dripstone_magnetite_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:limestone_vanadium_magnetite_ore",
+						"block": "gtceu:dripstone_vanadium_magnetite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:limestone_chromite_ore",
+						"block": "gtceu:dripstone_chromite_ore",
 						"weight": 60
 					},
 					{
-						"block": "gtceu:limestone_gold_ore",
+						"block": "gtceu:dripstone_gold_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:limestone_sapphire_ore",
+						"block": "gtceu:dripstone_sapphire_ore",
 						"weight": 5
 					}
 				]
