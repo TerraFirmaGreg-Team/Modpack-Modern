@@ -37,19 +37,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:basalt_wulfenite_ore",
+						"block": "gtceu:blackstone_wulfenite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:basalt_molybdenite_ore",
+						"block": "gtceu:blackstone_molybdenite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:basalt_molybdenum_ore",
+						"block": "gtceu:blackstone_molybdenum_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:basalt_powellite_ore",
+						"block": "gtceu:blackstone_powellite_ore",
 						"weight": 15
 					}
 				]
@@ -83,19 +83,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:limestone_wulfenite_ore",
+						"block": "gtceu:dripstone_wulfenite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:limestone_molybdenite_ore",
+						"block": "gtceu:dripstone_molybdenite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:limestone_molybdenum_ore",
+						"block": "gtceu:dripstone_molybdenum_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:limestone_powellite_ore",
+						"block": "gtceu:dripstone_powellite_ore",
 						"weight": 15
 					}
 				]

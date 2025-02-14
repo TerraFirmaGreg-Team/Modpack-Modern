@@ -20,17 +20,17 @@ const registerTFGBlockTags = (event) => {
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:hardened_deepslate')
 	event.add('minecraft:moss_replaceable', 'tfg:hardened_deepslate')
-    event.add('minecraft:base_stone_nether', 'tfg:hardened_deepslate')
+	event.add('minecraft:base_stone_nether', 'tfg:hardened_deepslate')
 	event.add('beneath:nether_bush_plantable_on', 'tfg:hardened_deepslate')
 	event.add('tfc:grass_plantable_on', 'tfg:hardened_deepslate')
-    event.add('tfc:creeping_plantable_on', 'tfg:hardened_deepslate')
+	event.add('tfc:creeping_plantable_on', 'tfg:hardened_deepslate')
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:hardened_blackstone')
 	event.add('minecraft:moss_replaceable', 'tfg:hardened_blackstone')
-    event.add('minecraft:base_stone_nether', 'tfg:hardened_blackstone')
+	event.add('minecraft:base_stone_nether', 'tfg:hardened_blackstone')
 	event.add('beneath:nether_bush_plantable_on', 'tfg:hardened_blackstone')
 	event.add('tfc:grass_plantable_on', 'tfg:hardened_blackstone')
-    event.add('tfc:creeping_plantable_on', 'tfg:hardened_blackstone')
+	event.add('tfc:creeping_plantable_on', 'tfg:hardened_blackstone')
 
 	// #endregion
 }
@@ -56,23 +56,32 @@ const registerTFGBiomeTags = (event) => {
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/spider_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/spider_caves')
 
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gneiss_caves')
+	// TODO: other metamorphic caves
+
 	// #endregion
 }
 
 
 const registerTFGPlacedFeatures = (event) => {
 	
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_limonite')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_magnetite')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_molybdenum')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
-    event.add('tfg:nether_veins', 'tfg:nether/vein/nether_quartz')
+	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_limonite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_magnetite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_molybdenum')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_quartz')
 
-	// TODO: figure out what other rock types will be in the nether, add to these veins
-	// TODO: re-enable deepslate/blackstone ores?
+	// TODO: add biomes for other bottom rocks: gneiss, schist, diorite, granite, gabbro
+	// TODO: re-enable deepslate ore (requires tfg-core edit)
+
+	event.add('tfg:nether_underground_decoration', 'beneath:magma_rhyolite')
+	event.add('tfg:nether_underground_decoration', 'beneath:magma_basalt')
+	event.add('tfg:nether_underground_decoration', 'beneath:magma_andesite')
+	event.add('tfg:nether_underground_decoration', 'beneath:magma_dacite')
 
 	event.add('tfg:nether_top_layer_modification', 'tfg:nether/hardening')
 }

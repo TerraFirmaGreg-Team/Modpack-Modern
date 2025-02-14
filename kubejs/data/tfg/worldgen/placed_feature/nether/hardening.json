@@ -15,13 +15,50 @@
 				{
 					"target": {
 						"predicate_type": "minecraft:block_match",
-						"block": "minecraft:deepslate"
+						"block": "tfc:rock/raw/gneiss"
 					},
 					"state": {
-						"Name": "tfg:hardened_deepslate"
+						"Name": "tfc:rock/hardened/gneiss"
 					}
 				},
 				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/schist"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/schist"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/diorite"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/diorite"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/granite"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/granite"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/gabbro"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/gabbro"
+					}
+				},
+				{
+					"__comment__": "Fallback to deepslate for everything else",
 					"target": {
 						"predicate_type": "minecraft:always_true"
 					},

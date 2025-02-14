@@ -29,11 +29,11 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:basalt_naquadah_ore",
+						"block": "gtceu:blackstone_naquadah_ore",
 						"weight": 75
 					},
 					{
-						"block": "gtceu:basalt_plutonium_ore",
+						"block": "gtceu:blackstone_plutonium_ore",
 						"weight": 25
 					}
 				]
@@ -59,11 +59,11 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:limestone_naquadah_ore",
+						"block": "gtceu:dripstone_naquadah_ore",
 						"weight": 75
 					},
 					{
-						"block": "gtceu:limestone_plutonium_ore",
+						"block": "gtceu:dripstone_plutonium_ore",
 						"weight": 25
 					}
 				]

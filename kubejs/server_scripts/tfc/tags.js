@@ -317,6 +317,19 @@ const registerTFCBlockTags = (event) => {
     event.add('beneath:nether_bush_plantable_on', '#tfc:dirt')
     event.add('minecraft:frogs_spawnable_on', '#tfc:dirt')
 
+    
+    event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gneiss')
+    event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/schist')
+    event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/diorite')
+    event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/granite')
+    event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gabbro')
+    event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gneiss')
+    event.add('minecraft:base_stone_nether', 'tfc:rock/raw/schist')
+    event.add('minecraft:base_stone_nether', 'tfc:rock/raw/diorite')
+    event.add('minecraft:base_stone_nether', 'tfc:rock/raw/granite')
+    event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gabbro')
+    event.add('minecraft:axolotls_spawnable_on', 'tfc:rock/hardened/limestone')
+
     //#endregion
 }
 
