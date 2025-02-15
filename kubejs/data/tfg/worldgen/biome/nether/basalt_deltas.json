@@ -48,14 +48,14 @@
 			"beneath:delta",
 			"minecraft:small_basalt_columns",
 			"minecraft:large_basalt_columns",
-			"tfg:nether/terrain/deepslate_spikes",
-			"tfg:nether/terrain/blackstone_spikes"
+			"tfg:nether/spikes/deepslate_spikes",
+			"tfg:nether/spikes/blackstone_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"minecraft:spring_lava"
+			"tfg:nether/terrain/spring_lava"
 		],
 		[
 			"minecraft:spring_delta",
@@ -95,6 +95,12 @@
 		"monster": [
 			{
 				"type": "minecraft:zombified_piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:magma_cube",
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 100

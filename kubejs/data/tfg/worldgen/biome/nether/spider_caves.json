@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 10329508,
+		"fog_color": 6579304,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -36,15 +36,15 @@
 		[
 			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
-			"tfg:nether/terrain/deepslate_spikes",
-			"tfg:nether/terrain/blackstone_spikes",
-			"tfg:nether/terrain/dripstone_spikes"
+			"tfg:nether/spikes/deepslate_spikes",
+			"tfg:nether/spikes/blackstone_spikes",
+			"tfg:nether/spikes/dripstone_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
 		"#tfg:nether_underground_decoration",
 		[
-			"minecraft:spring_lava"
+			"tfg:nether/terrain/spring_lava"
 		],
 		[
 			"beneath:blackstone_boulders",

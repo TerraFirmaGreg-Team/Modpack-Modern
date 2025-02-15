@@ -328,6 +328,11 @@ const registerTFCBlockTags = (event) => {
     event.add('minecraft:base_stone_nether', 'tfc:rock/raw/diorite')
     event.add('minecraft:base_stone_nether', 'tfc:rock/raw/granite')
     event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gabbro')
+    event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gneiss')
+    event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/schist')
+    event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/diorite')
+    event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/granite')
+    event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
     event.add('minecraft:axolotls_spawnable_on', 'tfc:rock/hardened/limestone')
 
     //#endregion
