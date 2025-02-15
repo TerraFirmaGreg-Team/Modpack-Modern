@@ -9,7 +9,7 @@
 			"tick_chance": 0.0111
 		},
 		"ambient_sound": "minecraft:ambient.warped_forest.loop",
-		"fog_color": 10397563,
+		"fog_color": 7369031,
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
@@ -22,7 +22,7 @@
 			"replace_current_music": false,
 			"sound": "minecraft:music.overworld.swamp"
 		},
-		"sky_color": 10397563,
+		"sky_color": 7369031,
 		"water_color": 6388580,
 		"water_fog_color": 2302743,
 		"foliage_color": 7171928,

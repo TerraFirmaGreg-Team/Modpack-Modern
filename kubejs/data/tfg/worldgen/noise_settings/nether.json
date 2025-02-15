@@ -436,6 +436,150 @@
 			{
 				"type": "minecraft:condition",
 				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/gabbro_caves"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfc:rock/hardened/gabbro"
+								}
+							}
+						},
+						{
+							"type": "minecraft:block",
+							"result_state": {
+								"Name": "tfc:rock/raw/gabbro"
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/diorite_caves"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfc:rock/hardened/diorite"
+								}
+							}
+						},
+						{
+							"type": "minecraft:block",
+							"result_state": {
+								"Name": "tfc:rock/raw/diorite"
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/granite_caves"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfc:rock/hardened/granite"
+								}
+							}
+						},
+						{
+							"type": "minecraft:block",
+							"result_state": {
+								"Name": "tfc:rock/raw/granite"
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
+					"type": "minecraft:biome",
+					"biome_is": [
+						"tfg:nether/schist_caves"
+					]
+				},
+				"then_run": {
+					"type": "minecraft:sequence",
+					"sequence": [
+						{
+							"type": "minecraft:condition",
+							"if_true": {
+								"type": "minecraft:stone_depth",
+								"offset": 0,
+								"surface_type": "ceiling",
+								"add_surface_depth": false,
+								"secondary_depth_range": 0
+							},
+							"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+									"Name": "tfc:rock/hardened/schist"
+								}
+							}
+						},
+						{
+							"type": "minecraft:block",
+							"result_state": {
+								"Name": "tfc:rock/raw/schist"
+							}
+						}
+					]
+				}
+			},
+			{
+				"type": "minecraft:condition",
+				"if_true": {
 					"type": "minecraft:stone_depth",
 					"offset": 0,
 					"surface_type": "ceiling",

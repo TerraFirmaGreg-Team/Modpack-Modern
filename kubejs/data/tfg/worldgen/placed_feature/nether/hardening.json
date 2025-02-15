@@ -68,6 +68,15 @@
 				},
 				{
 					"target": {
+						"predicate_type": "minecraft:block_match",
+						"block": "tfc:rock/raw/basalt"
+					},
+					"state": {
+						"Name": "tfc:rock/hardened/basalt"
+					}
+				},
+				{
+					"target": {
 						"predicate_type": "minecraft:tag_match",
 						"tag": "tfc:can_landslide"
 					},

@@ -7,24 +7,12 @@
 			"type": "minecraft:multi_noise",
 			"biomes": [
 				{
+					"__comment__": "Top layer special biomes",
+
 					"biome": "tfg:nether/lush_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": [ 0, 0.5 ],
-						"erosion": 0,
-						"humidity": 0,
-						"offset": 0,
-						"temperature": 0,
-						"weirdness": 0
-					}
-				}
-			],
-			"disabled_biomes": [
-				{
-					"biome": "tfg:nether/gneiss_caves",
-					"parameters": {
-						"continentalness": 0,
-						"depth": [ 0, 1.5 ],
+						"depth": [ 0, 0.4 ],
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -36,19 +24,7 @@
 					"biome": "tfg:nether/spider_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": [ 0, 0.5 ],
-						"erosion": 0,
-						"humidity": 0,
-						"offset": 0,
-						"temperature": 0,
-						"weirdness": 0.5
-					}
-				},
-				{
-					"biome": "tfg:nether/basalt_deltas",
-					"parameters": {
-						"continentalness": 0,
-						"depth": [ 0.5, 1.5 ],
+						"depth": [ 0, 0.4 ],
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -60,14 +36,261 @@
 					"biome": "tfg:nether/fungi_forest",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": [ 0, 0.5 ],
+						"depth": [ 0, 0.4 ],
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
 						"weirdness": 0
 					}
+				},
+
+
+				{
+					"__comment__": "Bottom layer special biomes",
+
+					"biome": "tfg:nether/basalt_deltas",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0.5, 1.5 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 0
+					}
+				},
+
+
+				{
+					"__comment__": "Top layer boring biomes",
+
+					"biome": "tfg:nether/gabbro_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0, 0.3 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0, 0.3 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/schist_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0, 0.3 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0, 0.3 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0, 0.3 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/diorite_caves",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0, 0.3 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+
+
+				{
+					"__comment__": "Middle layer boring biomes",
+
+					"biome": "tfg:nether/schist_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0.4, 0.7 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/diorite_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0.4, 0.7 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/gabbro_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0.4, 0.7 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0.4, 0.7 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0.4, 0.7 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0.4, 0.7 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+
+
+				{
+					"__comment__": "Bottom layer boring biomes",
+
+					"biome": "tfg:nether/gabbro_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0.8, 1.2 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": 0.5,
+						"depth": [ 0.8, 1.2 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/schist_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0.8, 1.2 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/diorite_caves",
+					"parameters": {
+						"continentalness": 0,
+						"depth": [ 0.8, 1.2 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
+				},
+				{
+					"biome": "tfg:nether/gabbro_caves",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0.8, 1.2 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": -1
+					}
+				},
+				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": -0.5,
+						"depth": [ 0.8, 1.2 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 1
+					}
 				}
+			],
+			"disabled_biomes": [
+				
 			]
 		}
 	}
