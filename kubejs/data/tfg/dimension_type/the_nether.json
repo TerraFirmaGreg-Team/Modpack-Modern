@@ -5,7 +5,7 @@
 	"effects": "minecraft:the_nether",
 	"has_ceiling": true,
 	"has_raids": false,
-	"has_skylight": true,
+	"has_skylight": false,
 	"height": 256,
 	"infiniburn": "#minecraft:infiniburn_nether",
 	"logical_height": 128,
