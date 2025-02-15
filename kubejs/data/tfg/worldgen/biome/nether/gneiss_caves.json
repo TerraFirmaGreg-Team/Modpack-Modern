@@ -5,17 +5,22 @@
 	"downfall": 0.5,
 	"effects": {
 		"fog_color": 6641752,
+		"additions_sound": {
+			"sound": "minecraft:ambient.crimson_forest.additions",
+			"tick_chance": 0.0111
+		},
+		"ambient_sound": "minecraft:ambient.crimson_forest.loop",
 		"mood_sound": {
 			"block_search_extent": 8,
 			"offset": 2,
-			"sound": "minecraft:ambient.cave",
+			"sound": "minecraft:ambient.crimson_forest.mood",
 			"tick_delay": 6000
 		},
 		"music": {
 			"max_delay": 24000,
 			"min_delay": 12000,
 			"replace_current_music": false,
-			"sound": "minecraft:music.overworld.dripstone_caves"
+			"sound": "minecraft:music.nether.crimson_forest"
 		},
 		"sky_color": 5799235,
 		"water_color": 7255466,
@@ -37,7 +42,9 @@
 			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
 			"tfg:nether/spikes/blackstone_spikes",
-			"tfg:nether/spikes/gneiss_spikes"
+			"tfg:nether/spikes/gneiss_spikes",
+			"tfg:nether/spikes/calcite",
+			"tfg:nether/spikes/mega_calcite"
 		],
 		[],
 		"#tfg:nether_veins",
