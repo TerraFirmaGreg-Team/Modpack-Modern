@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/terrain/deepslate_spikes",
+	"feature": "tfg:nether/spikes/gneiss_spikes",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 128
+			"count": 256
 		},
 		{
 			"type": "minecraft:in_square"

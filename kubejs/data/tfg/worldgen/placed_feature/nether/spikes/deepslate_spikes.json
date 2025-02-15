@@ -1,13 +1,9 @@
 {
-	"feature": "tfg:nether/terrain/dripstone_spikes",
+	"feature": "tfg:nether/spikes/deepslate_spikes",
 	"placement": [
 		{
 			"type": "minecraft:count",
 			"count": 256
-		},
-		{
-			"type": "minecraft:count",
-			"count": 4
 		},
 		{
 			"type": "minecraft:in_square"
@@ -20,7 +16,7 @@
 					"below_top": 10
 				},
 				"min_inclusive": {
-					"above_bottom": 30
+					"above_bottom": 50
 				}
 			}
 		},

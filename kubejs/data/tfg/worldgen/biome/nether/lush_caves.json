@@ -43,8 +43,7 @@
 		[
 			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
-			"tfg:nether/terrain/deepslate_spikes",
-			"tfg:nether/terrain/blackstone_spikes"
+			"tfg:nether/spikes/blackstone_spikes"
 		],
 		[],
 		"#tfg:nether_veins",
@@ -55,10 +54,10 @@
 			"beneath:blackstone_pebble_patch",
 			"tfg:nether/surface/philodendron",
 			"tfg:nether/surface/moss_patch_small",
+			"tfg:nether/surface/mangrove_tree",
 			"tfg:nether/terrain/lush_caves_ceiling",
 			"tfg:nether/terrain/lush_caves_clay",
 			"tfg:nether/terrain/lush_caves_vegetation",
-			"tfg:nether/surface/mangrove_tree",
 			"minecraft:spore_blossom",
 			"beneath:burpflower_patch",
 			"beneath:gleamflower_patch",
@@ -111,9 +110,9 @@
 			},
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
-				"weight": 100
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 50
 			}
 		],
 		"misc": [],
@@ -122,13 +121,13 @@
 				"type": "minecraft:piglin",
 				"maxCount": 4,
 				"minCount": 3,
-				"weight": 100
+				"weight": 75
 			},
 			{
 				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 75
 			},
 			{
 				"type": "kaolinclayze:tfc",

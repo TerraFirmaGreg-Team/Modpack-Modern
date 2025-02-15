@@ -362,7 +362,7 @@
 				"if_true": {
 					"type": "minecraft:vertical_gradient",
 					"false_at_and_above": {
-						"absolute": 70
+						"absolute": 50
 					},
 					"random_name": "minecraft:blackstone_bottom_layer",
 					"true_at_and_below": {

@@ -1,9 +1,13 @@
 {
-	"feature": "tfg:nether/terrain/blackstone_spikes",
+	"feature": "tfg:nether/spikes/dripstone_spikes",
 	"placement": [
 		{
 			"type": "minecraft:count",
-			"count": 64
+			"count": 256
+		},
+		{
+			"type": "minecraft:count",
+			"count": 4
 		},
 		{
 			"type": "minecraft:in_square"
@@ -11,9 +15,9 @@
 		{
 			"type": "minecraft:height_range",
 			"height": {
-				"type": "minecraft:biased_to_bottom",
+				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"absolute": 80
+					"below_top": 10
 				},
 				"min_inclusive": {
 					"above_bottom": 30

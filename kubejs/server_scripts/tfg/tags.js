@@ -78,10 +78,12 @@ const registerTFGPlacedFeatures = (event) => {
 	// TODO: add biomes for other bottom rocks: gneiss, schist, diorite, granite, gabbro
 	// TODO: re-enable deepslate ore (requires tfg-core edit)
 
+	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
 	event.add('tfg:nether_underground_decoration', 'beneath:magma_rhyolite')
 	event.add('tfg:nether_underground_decoration', 'beneath:magma_basalt')
 	event.add('tfg:nether_underground_decoration', 'beneath:magma_andesite')
 	event.add('tfg:nether_underground_decoration', 'beneath:magma_dacite')
+	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 
 	event.add('tfg:nether_top_layer_modification', 'tfg:nether/hardening')
 }

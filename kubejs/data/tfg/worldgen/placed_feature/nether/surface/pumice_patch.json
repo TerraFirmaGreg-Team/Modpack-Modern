@@ -2,6 +2,18 @@
 	"feature": "tfc:pumice_patch",
 	"placement": [
 		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"above_bottom": 50
+				},
+				"min_inclusive": {
+					"above_bottom": 30
+				}
+			}
+		},
+		{
 			"type": "minecraft:rarity_filter",
 			"chance": 3
 		},

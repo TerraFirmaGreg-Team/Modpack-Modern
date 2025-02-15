@@ -96,16 +96,16 @@
 					"weight": 20
 				},
 				{
-					"block": "ae2:small_quartz_bud",
+					"block": "tfg:buds/small_nether_quartz_bud",
+					"weight": 35
+				},
+				{
+					"block": "tfg:buds/medium_nether_quartz_bud",
 					"weight": 20
 				},
 				{
-					"block": "ae2:medium_quartz_bud",
+					"block": "tfg:buds/large_nether_quartz_bud",
 					"weight": 10
-				},
-				{
-					"block": "ae2:large_quartz_bud",
-					"weight": 5
 				},
 				{
 					"block": "tfg:buds/small_quartzite_bud",
