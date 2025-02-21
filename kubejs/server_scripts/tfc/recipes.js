@@ -1703,6 +1703,21 @@ const registerTFCRecipes = (event) => {
             .duration(40)
             .EUt(8)
 
+        // loose rocks to gravel
+        event.shapeless(`1x tfc:rock/gravel/${stone}`, [
+            `4x tfc:rock/loose/${stone}`
+            ]).id(`tfg:tfc/${stone}_loose_to_gravel`)
+
+        // loose mossy rocks to gravel
+        event.shapeless(`1x tfc:rock/gravel/${stone}`, [
+            `4x tfc:rock/mossy_loose/${stone}`
+            ]).id(`tfg:tfc/${stone}_mossy_loose_to_gravel`)
+
+        // gravel to loose rocks
+        event.shapeless(`4x tfc:rock/loose/${stone}`, [
+            `tfc:rock/gravel/${stone}`
+            ]).id(`tfg:tfc/${stone}_gravel_to_loose`)
+
         //#region Сырой камень
 
         // Сырой камень -> Сырой камень
@@ -2240,6 +2255,14 @@ const registerTFCRecipes = (event) => {
 
         //#endregion
     })
+
+    //firebrick assembler
+    event.recipes.gtceu.assembler(`fire_brick_concrete`)             
+            .itemInputs(`5x tfc:ceramic/fire_brick`)
+            .inputFluids(Fluid.of('gtceu:concrete', 72))
+            .itemOutputs(`2x tfc:fire_bricks`)
+            .duration(50)
+            .EUt(2)
 
     //#endregion
 
