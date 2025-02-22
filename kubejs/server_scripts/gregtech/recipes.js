@@ -71,6 +71,12 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    event.recipes.gtceu.electric_furnace('tfg:wood_ash')
+        .itemInputs('1x #minecraft:logs')
+        .itemOutputs('4x tfc:powder/wood_ash')
+        .duration(200)
+        .EUt(30)
+
     //#region Выход: Соленая пыль + Вода
 
     // Декрафт в центрифуге
