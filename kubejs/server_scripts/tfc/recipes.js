@@ -2587,6 +2587,16 @@ const registerTFCRecipes = (event) => {
 
     //#endregion
 
+    //#region Graphite recipes
+    global.TFC_QUERN_GRAPHITE_RECIPE_COMPONENTS.forEach(element => {
+        event.recipes.tfc.quern(element.output, element.input)
+            .id(`tfg:quern/${element.name}`)
+
+        event.recipes.createMilling(element.output, element.input)
+            .id(`tfg:milling/${element.name}`)
+    })
+    //#endregion
+
     //#region Рецепты зерен
 
     global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS.forEach(element => {
