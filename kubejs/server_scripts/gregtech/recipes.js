@@ -1737,6 +1737,70 @@ const registerGTCEURecipes = (event) => {
 	
 	//#endregion
 
+	//#region ULV предметный входной люк
+	
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polytetrafluoroethylene')
+   		 .itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+   		 .inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 72))
+   		 .itemOutputs('gtceu:ulv_input_bus')
+   		 .circuit(1)
+   		 .EUt(7).duration(300)
+
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_glue')
+  		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+		.inputFluids(Fluid.of('gtceu:glue', 288))
+		.itemOutputs('gtceu:ulv_input_bus')
+   		.circuit(1)
+   		.EUt(7).duration(300)
+
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polybenzimidazole')
+  		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+  		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 36))
+   		.itemOutputs('gtceu:ulv_input_bus')
+   		.circuit(1)
+   		.EUt(7).duration(300)
+
+	event.recipes.gtceu.assembler('tfg:assembler/item_import_bus_ulv_polyethylene')
+   	 	.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+    		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
+    		.itemOutputs('gtceu:ulv_input_bus')
+    		.circuit(1)
+		.EUt(7).duration(300)
+
+	//#endregion
+
+	//#region ULV предметный выходной люк
+	
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polytetrafluoroethylene')
+    		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+    		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 72))
+    		.itemOutputs('gtceu:ulv_output_bus')
+    		.circuit(2)
+    		.EUt(7).duration(300)
+
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_glue')
+    		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+    		.inputFluids(Fluid.of('gtceu:glue', 288))
+    		.itemOutputs('gtceu:ulv_output_bus')
+    		.circuit(2)
+    		.EUt(7).duration(300)
+
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polybenzimidazole')
+    		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+    		.inputFluids(Fluid.of('gtceu:polybenzimidazole', 36))
+    		.itemOutputs('gtceu:ulv_output_bus')
+    		.circuit(2)
+    		.EUt(7).duration(300)
+
+	event.recipes.gtceu.assembler('tfg:assembler/item_export_bus_ulv_polyethylene')
+    		.itemInputs('gtceu:ulv_machine_hull', '#forge:chests')
+    		.inputFluids(Fluid.of('gtceu:polyethylene', 144))
+    		.itemOutputs('gtceu:ulv_output_bus')
+    		.circuit(2)
+    		.EUt(7).duration(300)
+
+	//#endregion
+	
     //#region Quantum mainframe stack fix.
     //
     // Quantum Mainframes need 48x annealed copper wire but
