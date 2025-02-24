@@ -10,19 +10,19 @@ const registerGTCEuMaterialModification = (event) => {
 
     const $TFG_PROPERTY_KEYS = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
     const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
-
-    const PigIron = GTCEuAPI.materialManager.getMaterial('pig_iron')
-    const HighCarbonSteel = GTCEuAPI.materialManager.getMaterial('high_carbon_steel')
-    const HighCarbonBlackSteel = GTCEuAPI.materialManager.getMaterial('high_carbon_black_steel')
-    const HighCarbonRedSteel = GTCEuAPI.materialManager.getMaterial('high_carbon_red_steel')
-    const HighCarbonBlueSteel = GTCEuAPI.materialManager.getMaterial('high_carbon_blue_steel')
-    const WeakSteel = GTCEuAPI.materialManager.getMaterial('weak_steel')
-    const WeakBlueSteel = GTCEuAPI.materialManager.getMaterial('weak_blue_steel')
-    const WeakRedSteel = GTCEuAPI.materialManager.getMaterial('weak_red_steel')
-    const Unknown = GTCEuAPI.materialManager.getMaterial('unknown')
     
-    const Bismuthinite = GTCEuAPI.materialManager.getMaterial('bismuthinite')
-    const Limonite = GTCEuAPI.materialManager.getMaterial('limonite')
+    const PigIron = GTCEuAPI.materialManager.getMaterial('tfg:pig_iron')
+    const HighCarbonSteel = GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_steel')
+    const HighCarbonBlackSteel = GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_black_steel')
+    const HighCarbonRedSteel = GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_red_steel')
+    const HighCarbonBlueSteel = GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_blue_steel')
+    const WeakSteel = GTCEuAPI.materialManager.getMaterial('tfg:weak_steel')
+    const WeakBlueSteel = GTCEuAPI.materialManager.getMaterial('tfg:weak_blue_steel')
+    const WeakRedSteel = GTCEuAPI.materialManager.getMaterial('tfg:weak_red_steel')
+    const Unknown = GTCEuAPI.materialManager.getMaterial('tfg:unknown')
+    
+    const Bismuthinite = GTCEuAPI.materialManager.getMaterial('tfg:bismuthinite')
+    const Limonite = GTCEuAPI.materialManager.getMaterial('tfg:limonite')
 
     /* TFC Проперти для материалов */
     GTMaterials.Copper.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 1080, 1));

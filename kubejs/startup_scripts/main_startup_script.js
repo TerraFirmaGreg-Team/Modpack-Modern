@@ -52,8 +52,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     registerAE2Materials(event)
-    registerGTCEuMaterials(event)
     registerTFCMaterials(event)
+    registerGTCEuMaterials(event)
+  
     registerTFGMaterials(event)
 })
 
@@ -83,7 +84,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
  * Событие регистрации типов иконок тэг префиксов.
 */
 GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
-    registerGTCEuMaterialIconTypes(event)
+    //registerGTCEuMaterialIconTypes(event)
 })
 
 
@@ -91,6 +92,6 @@ GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
 /**
  * Событие регистрации информации о составе предмета.
  */
-// TFGStartupEvents.materialInfo(event => {
-//     registerGTCEuMaterialInfo(event)
-// })
+ TFGStartupEvents.materialInfo(event => {
+     registerGTCEuMaterialInfo(event)
+ })
