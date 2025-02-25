@@ -739,5 +739,17 @@ const registerFirmaLifeRecipes = (event) => {
           "item": 'gtceu:sticky_resin'
         }
       });
+
+    //#endregion 
+	
+    //#region Распрыскиватель
+	
+    event.recipes.gtceu.assembler(`tfg:firmalife/sprinkler`)             
+        .itemInputs('#forge:ingots/copper')
+        .circuit(11)
+        .itemOutputs('firmalife:sprinkler')
+        .EUt(7).duration(50)
+
+    //#endregion 
     
 }
