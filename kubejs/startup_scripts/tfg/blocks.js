@@ -58,11 +58,17 @@ const registerTFGBlocks = (event) => {
 		.noCollision()
 		.property(BlockProperties.LAYERS)
 		.sandSoundType()
-		.requiresTool(false)
 		.tagBoth('minecraft:mineable/shovel')
 		.hardness(0.5)
 		.mapColor('grey')
 		.speedFactor(0.7)
+
+	event.create('tfg:charred_log')
+		.fullBlock(true)
+		.woodSoundType()
+		.property(BlockProperties.AXIS)
+		.tagBoth('minecraft:mineable/axe')
+		.mapColor('black')
 
 
 	// #endregion
