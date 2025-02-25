@@ -1344,9 +1344,4 @@ const registerCreateRecipes = (event) => {
     })
 	
 	// #endregion
-
-        //Cococa Dust
-        event.recipes
-        .createMilling('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
-        .id('create:milling/food/cocoa_dust');
 }

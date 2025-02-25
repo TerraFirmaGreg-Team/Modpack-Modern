@@ -547,6 +547,9 @@ const registerGTCEURecipes = (event) => {
         .itemOutputs('gtceu:cocoa_dust')
         .duration(400)
         .EUt(2)
+    
+    event.recipes.createMilling('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
+        .id('create:milling/food/cocoa_dust');
 
     //#endregion
 
