@@ -51,6 +51,19 @@ const registerTFGBlocks = (event) => {
 
 	event.createCustom('tfg:mushroom_roots', () => new $SproutsBlock($Properties.copy($Blocks.WARPED_ROOTS)))
 	event.createCustom('tfg:mushroom_sprouts', () => new $SproutsBlock($Properties.copy($Blocks.NETHER_SPROUTS)))
+	
+	event.create('tfg:ash_pile')
+		.box(0, 0, 0, 16, 2, 16, true)
+		.fullBlock(false)
+		.noCollision()
+		.property(BlockProperties.LAYERS)
+		.sandSoundType()
+		.requiresTool(false)
+		.tagBoth('minecraft:mineable/shovel')
+		.hardness(0.5)
+		.mapColor('grey')
+		.speedFactor(0.7)
+
 
 	// #endregion
 	
