@@ -53,11 +53,22 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
 	
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/ash_forest')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/ash_forest')
+	
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/spider_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/spider_caves')
-
+	
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gneiss_caves')
-	// TODO: other metamorphic caves
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/diorite_caves')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/diorite_caves')
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gabbro_caves')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gabbro_caves')
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/granite_caves')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/granite_caves')
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/schist_caves')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/schist_caves')
 
 	// #endregion
 }

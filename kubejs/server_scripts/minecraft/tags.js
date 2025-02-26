@@ -42,7 +42,6 @@ const registerMinecraftBlockTags = (event) => {
     event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
     event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
     event.add('minecraft:nether_carver_replaceables', 'minecraft:dripstone_block')
-    event.add('minecraft:moss_replaceable', 'minecraft:blackstone')
     event.add('minecraft:frogs_spawnable_on', 'minecraft:deepslate')
     event.add('minecraft:frogs_spawnable_on', 'minecraft:blackstone')
     event.add('minecraft:frogs_spawnable_on', 'minecraft:dripstone_block')

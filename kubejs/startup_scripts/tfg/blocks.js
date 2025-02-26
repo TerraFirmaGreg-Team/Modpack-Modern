@@ -17,7 +17,8 @@ const registerTFGBlocks = (event) => {
 	// #region Nether blocks
 
 	event.create('tfg:hardened_deepslate')
-		.stoneSoundType()
+		.soundType('deepslate')
+		.property(BlockProperties.AXIS)
 		.requiresTool(true)
 		.item(item => {
 			item.modelJson({ parent: 'minecraft:item/deepslate' })
@@ -59,6 +60,7 @@ const registerTFGBlocks = (event) => {
 		.property(BlockProperties.LAYERS)
 		.sandSoundType()
 		.tagBoth('minecraft:mineable/shovel')
+		.tagBoth('tfc:can_collapse')
 		.hardness(0.5)
 		.mapColor('grey')
 		.speedFactor(0.7)
