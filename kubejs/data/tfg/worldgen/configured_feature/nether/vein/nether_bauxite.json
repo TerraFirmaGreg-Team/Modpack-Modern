@@ -1,0 +1,122 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 310,
+		"density": 0.3,
+		"min_y": 48,
+		"max_y": 128,
+		"size": 25,
+		"random_name": "nether_bauxite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate"
+				],
+				"with": [
+					{
+						"block": "gtceu:slate_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:slate_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:slate_aluminium_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:blackstone_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:blackstone_aluminium_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:basalt_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_aluminium_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dripstone_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dripstone_aluminium_ore",
+						"weight": 25
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:bauxite_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:ilmenite_indicator",
+					"weight": 30
+				},
+				{
+					"block": "gtceu:aluminium_indicator",
+					"weight": 25
+				},
+				{
+					"block": "tfg:buds/small_rutile_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/medium_rutile_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_rutile_bud",
+					"weight": 4
+				}
+			]
+		}
+	}
+}

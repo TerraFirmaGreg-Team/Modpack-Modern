@@ -82,13 +82,17 @@ const registerTFGPlacedFeatures = (event) => {
 
 	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
 
+	// Lower only
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
+
+	// Full height
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_graphite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_limonite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_magnetite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_molybdenum')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_pitchblende')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_quartz')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sapphire')
@@ -96,8 +100,25 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sheldonite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
 	
-	event.add('tfg:nether_veins', 'tfg:nether/vein/upper_nether_apatite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/upper_nether_basaltic_sands')
+	// Upper only
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_apatite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_basaltic_sands')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_bauxite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_cassiterite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_copper')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet_tin')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnierite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_lapis')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_lubricant')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_manganese')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_monazite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_olivine')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_redstone')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_saltpeter')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_silver')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sphalerite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sulfur')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_tetrahedrite')
 
 	// #endregion
 

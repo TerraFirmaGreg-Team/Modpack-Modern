@@ -10,21 +10,6 @@
 		"blocks": [
 			{
 				"replace": [
-					"minecraft:deepslate"
-				],
-				"with": [
-					{
-						"block": "gtceu:slate_naquadah_ore",
-						"weight": 75
-					},
-					{
-						"block": "gtceu:slate_plutonium_ore",
-						"weight": 25
-					}
-				]
-			},
-			{
-				"replace": [
 					"minecraft:blackstone"
 				],
 				"with": [
@@ -50,21 +35,6 @@
 					},
 					{
 						"block": "gtceu:basalt_plutonium_ore",
-						"weight": 25
-					}
-				]
-			},
-			{
-				"replace": [
-					"minecraft:dripstone_block"
-				],
-				"with": [
-					{
-						"block": "gtceu:dripstone_naquadah_ore",
-						"weight": 75
-					},
-					{
-						"block": "gtceu:dripstone_plutonium_ore",
 						"weight": 25
 					}
 				]

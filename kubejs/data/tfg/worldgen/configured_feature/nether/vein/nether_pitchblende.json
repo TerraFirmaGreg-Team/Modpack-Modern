@@ -82,6 +82,21 @@
 						"weight": 50
 					}
 				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_pitchblende_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:blackstone_uraninite_ore",
+						"weight": 50
+					}
+				]
 			}
 		],
 		"indicator": {
