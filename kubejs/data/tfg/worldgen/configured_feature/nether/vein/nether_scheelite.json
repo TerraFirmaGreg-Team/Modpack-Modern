@@ -64,13 +64,51 @@
 						"weight": 20
 					}
 				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gneiss"
+				],
+				"with": [
+					{
+						"block": "gtceu:gneiss_scheelite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:gneiss_tungstate_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:gneiss_lithium_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/schist"
+				],
+				"with": [
+					{
+						"block": "gtceu:schist_scheelite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:schist_tungstate_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:schist_lithium_ore",
+						"weight": 20
+					}
+				]
 			}
 		],
 		"indicator": {
 			"rarity": 12,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "gtceu:scheelite_indicator",

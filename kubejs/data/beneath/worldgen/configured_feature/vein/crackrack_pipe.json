@@ -18,29 +18,10 @@
 		"blocks": [
 			{
 				"replace": [
-					"minecraft:deepslate"
-				],
-				"with": [
-					{
-						"weight": 1,
-						"block": "beneath:crackrack"
-					}
-				]
-			},
-			{
-				"replace": [
-					"minecraft:blackstone"
-				],
-				"with": [
-					{
-						"weight": 1,
-						"block": "beneath:crackrack"
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfg:hardened_deepslate"
+					"minecraft:deepslate",
+					"tfg:hardened_deepslate",
+					"minecraft:blackstone",
+					"tfg:hardened_blackstone"
 				],
 				"with": [
 					{

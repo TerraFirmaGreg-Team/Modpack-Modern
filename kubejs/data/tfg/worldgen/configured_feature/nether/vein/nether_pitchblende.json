@@ -55,51 +55,6 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/quartzite"
-				],
-				"with": [
-					{
-						"block": "gtceu:quartzite_pitchblende_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:quartzite_uraninite_ore",
-						"weight": 50
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/slate"
-				],
-				"with": [
-					{
-						"block": "gtceu:slate_pitchblende_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:slate_uraninite_ore",
-						"weight": 50
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/phyllite"
-				],
-				"with": [
-					{
-						"block": "gtceu:phyllite_pitchblende_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:phyllite_uraninite_ore",
-						"weight": 50
-					}
-				]
-			},
-			{
-				"replace": [
 					"tfc:rock/raw/schist"
 				],
 				"with": [
@@ -127,28 +82,13 @@
 						"weight": 50
 					}
 				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/marble"
-				],
-				"with": [
-					{
-						"block": "gtceu:marble_pitchblende_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:marble_uraninite_ore",
-						"weight": 50
-					}
-				]
 			}
 		],
 		"indicator": {
 			"rarity": 12,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "gtceu:pitchblende_indicator",
