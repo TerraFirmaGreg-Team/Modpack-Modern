@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 320,
+		"rarity": 210,
 		"density": 0.4,
-		"min_y": 64,
+		"min_y": 32,
 		"max_y": 128,
-		"size": 20,
+		"size": 30,
 		"random_name": "nether_cassiterite",
 		"blocks": [
 			{

@@ -1,7 +1,7 @@
 {
 	"type": "tfc:pipe_vein",
 	"config": {
-		"rarity": 175,
+		"rarity": 120,
 		"density": 0.35,
 		"min_y": 0,
 		"max_y": 128,
@@ -105,6 +105,25 @@
 					},
 					{
 						"block": "gtceu:granite_coal_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:blackstone_diamond_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:blackstone_coal_ore",
 						"weight": 15
 					}
 				]

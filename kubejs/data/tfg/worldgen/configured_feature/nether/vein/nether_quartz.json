@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 210,
+		"rarity": 175,
 		"density": 0.3,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 32,
+		"size": 40,
 		"random_name": "nether_quartz",
 		"blocks": [
 			{
@@ -14,15 +14,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_quartzite_ore",
+						"block": "gtceu:deepslate_quartzite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:slate_nether_quartz_ore",
+						"block": "gtceu:deepslate_nether_quartz_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:slate_barite_ore",
+						"block": "gtceu:deepslate_barite_ore",
 						"weight": 25
 					}
 				]

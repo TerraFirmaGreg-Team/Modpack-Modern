@@ -1,13 +1,13 @@
 {
 	"type": "tfc:disc_vein",
 	"config": {
-		"rarity": 260,
+		"rarity": 180,
 		"density": 0.3,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 28,
+		"size": 38,
 		"random_name": "nether_topaz",
-		"height": 7,
+		"height": 8,
 		"blocks": [
 			{
 				"replace": [
@@ -38,19 +38,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_blue_topaz_ore",
+						"block": "gtceu:deepslate_blue_topaz_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:slate_topaz_ore",
+						"block": "gtceu:deepslate_topaz_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:slate_chalcocite_ore",
+						"block": "gtceu:deepslate_chalcocite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:slate_bornite_ore",
+						"block": "gtceu:deepslate_bornite_ore",
 						"weight": 15
 					}
 				]
