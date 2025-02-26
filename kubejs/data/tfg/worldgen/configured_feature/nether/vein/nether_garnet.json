@@ -57,7 +57,8 @@
 			},
 			{
 				"replace": [
-					"minecraft:basalt"
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
 				],
 				"with": [
 					{
@@ -106,7 +107,7 @@
 			"rarity": 20,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "minecraft:small_amethyst_bud",

@@ -11,92 +11,115 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/rhyolite"
+					"tfc:rock/raw/gabbro"
 				],
 				"with": [
 					{
-						"block": "gtceu:rhyolite_almandine_ore",
+						"block": "gtceu:gabbro_almandine_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:rhyolite_pyrope_ore",
+						"block": "gtceu:gabbro_pyrope_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:rhyolite_sapphire_ore",
+						"block": "gtceu:gabbro_sapphire_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:rhyolite_green_sapphire_ore",
+						"block": "gtceu:gabbro_green_sapphire_ore",
 						"weight": 15
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/basalt"
+					"tfc:rock/raw/granite"
 				],
 				"with": [
 					{
-						"block": "gtceu:basalt_almandine_ore",
+						"block": "gtceu:granite_almandine_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:basalt_pyrope_ore",
+						"block": "gtceu:granite_pyrope_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:basalt_sapphire_ore",
+						"block": "gtceu:granite_sapphire_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:basalt_green_sapphire_ore",
+						"block": "gtceu:granite_green_sapphire_ore",
 						"weight": 15
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/andesite"
+					"tfc:rock/raw/gneiss"
 				],
 				"with": [
 					{
-						"block": "gtceu:andesite_almandine_ore",
+						"block": "gtceu:gneiss_almandine_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:andesite_pyrope_ore",
+						"block": "gtceu:gneiss_pyrope_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:andesite_sapphire_ore",
+						"block": "gtceu:gneiss_sapphire_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:andesite_green_sapphire_ore",
+						"block": "gtceu:gneiss_green_sapphire_ore",
 						"weight": 15
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/dacite"
+					"tfc:rock/raw/diorite"
 				],
 				"with": [
 					{
-						"block": "gtceu:dacite_almandine_ore",
+						"block": "gtceu:diorite_almandine_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:dacite_pyrope_ore",
+						"block": "gtceu:diorite_pyrope_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:dacite_sapphire_ore",
+						"block": "gtceu:diorite_sapphire_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:dacite_green_sapphire_ore",
+						"block": "gtceu:diorite_green_sapphire_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/schist"
+				],
+				"with": [
+					{
+						"block": "gtceu:schist_almandine_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:schist_pyrope_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:schist_sapphire_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:schist_green_sapphire_ore",
 						"weight": 15
 					}
 				]
@@ -106,7 +129,7 @@
 			"rarity": 12,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "tfg:buds/small_almandine_bud",

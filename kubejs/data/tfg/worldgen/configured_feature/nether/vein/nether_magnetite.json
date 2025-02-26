@@ -64,7 +64,8 @@
 			},
 			{
 				"replace": [
-					"minecraft:basalt"
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
 				],
 				"with": [
 					{
@@ -121,7 +122,7 @@
 			"rarity": 12,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "tfc:ore/small_magnetite",

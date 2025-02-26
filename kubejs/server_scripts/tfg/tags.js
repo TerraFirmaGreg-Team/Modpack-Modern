@@ -76,7 +76,12 @@ const registerTFGBiomeTags = (event) => {
 
 const registerTFGPlacedFeatures = (event) => {
 	
+	// #region Nether ores
+	
+	// TODO: re-enable deepslate ore (requires tfg-core edit)
+
 	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
+
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
@@ -84,10 +89,20 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_magnetite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_molybdenum')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_pitchblende')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_quartz')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sapphire')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_scheelite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sheldonite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
+	
+	event.add('tfg:nether_veins', 'tfg:nether/vein/upper_nether_apatite')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/upper_nether_basaltic_sands')
 
-	// TODO: add biomes for other bottom rocks: gneiss, schist, diorite, granite, gabbro
-	// TODO: re-enable deepslate ore (requires tfg-core edit)
+	// #endregion
+
+
+	// #region Nether decorations
 
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
 	event.add('tfg:nether_underground_decoration', 'beneath:magma_rhyolite')
@@ -97,4 +112,6 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 
 	event.add('tfg:nether_top_layer_modification', 'tfg:nether/hardening')
+
+	// #endregion
 }

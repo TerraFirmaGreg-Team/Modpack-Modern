@@ -12,29 +12,9 @@
 		"blocks": [
 			{
 				"replace": [
-					"minecraft:deepslate"
-				],
-				"with": [
-					{
-						"weight": 1,
-						"block": "beneath:ore/nether_cursecoal"
-					}
-				]
-			},
-			{
-				"replace": [
+					"minecraft:deepslate",
+					"tfg:hardened_deepslate",
 					"minecraft:blackstone"
-				],
-				"with": [
-					{
-						"weight": 1,
-						"block": "beneath:ore/nether_cursecoal"
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfg:hardened_deepslate"
 				],
 				"with": [
 					{

@@ -4,37 +4,37 @@
 		"rarity": 260,
 		"density": 0.3,
 		"min_y": 0,
-		"max_y": 1,
+		"max_y": 128,
 		"size": 28,
 		"random_name": "nether_topaz",
 		"height": 7,
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/quartzite"
+					"minecraft:blackstone"
 				],
 				"with": [
 					{
-						"block": "gtceu:quartzite_blue_topaz_ore",
+						"block": "gtceu:blackstone_blue_topaz_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:quartzite_topaz_ore",
+						"block": "gtceu:blackstone_topaz_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:quartzite_chalcocite_ore",
+						"block": "gtceu:blackstone_chalcocite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:quartzite_bornite_ore",
+						"block": "gtceu:blackstone_bornite_ore",
 						"weight": 15
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/slate"
+					"minecraft:deepslate"
 				],
 				"with": [
 					{
@@ -57,92 +57,47 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/phyllite"
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
 				],
 				"with": [
 					{
-						"block": "gtceu:phyllite_blue_topaz_ore",
+						"block": "gtceu:basalt_blue_topaz_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:phyllite_topaz_ore",
+						"block": "gtceu:basalt_topaz_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:phyllite_chalcocite_ore",
+						"block": "gtceu:basalt_chalcocite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:phyllite_bornite_ore",
+						"block": "gtceu:basalt_bornite_ore",
 						"weight": 15
 					}
 				]
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"minecraft:dripstone_block"
 				],
 				"with": [
 					{
-						"block": "gtceu:schist_blue_topaz_ore",
+						"block": "gtceu:dripstone_blue_topaz_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:schist_topaz_ore",
+						"block": "gtceu:dripstone_topaz_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:schist_chalcocite_ore",
+						"block": "gtceu:dripstone_chalcocite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:schist_bornite_ore",
-						"weight": 15
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/gneiss"
-				],
-				"with": [
-					{
-						"block": "gtceu:gneiss_blue_topaz_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:gneiss_topaz_ore",
-						"weight": 25
-					},
-					{
-						"block": "gtceu:gneiss_chalcocite_ore",
-						"weight": 25
-					},
-					{
-						"block": "gtceu:gneiss_bornite_ore",
-						"weight": 15
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/marble"
-				],
-				"with": [
-					{
-						"block": "gtceu:marble_blue_topaz_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:marble_topaz_ore",
-						"weight": 25
-					},
-					{
-						"block": "gtceu:marble_chalcocite_ore",
-						"weight": 25
-					},
-					{
-						"block": "gtceu:marble_bornite_ore",
+						"block": "gtceu:dripstone_bornite_ore",
 						"weight": 15
 					}
 				]
@@ -152,7 +107,7 @@
 			"rarity": 12,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 150,
 			"blocks": [
 				{
 					"block": "gtceu:chalcocite_indicator",
