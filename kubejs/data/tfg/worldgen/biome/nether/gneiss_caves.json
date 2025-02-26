@@ -144,13 +144,13 @@
 				"type": "minecraft:zombie",
 				"maxCount": 4,
 				"minCount": 1,
-				"weight": 75
+				"weight": 100
 			},
 			{
 				"type": "minecraft:creeper",
 				"maxCount": 2,
 				"minCount": 1,
-				"weight": 75
+				"weight": 90
 			},
 			{
 				"type": "minecraft:silverfish",
