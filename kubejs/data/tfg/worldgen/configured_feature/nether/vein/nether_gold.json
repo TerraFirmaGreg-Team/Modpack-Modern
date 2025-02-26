@@ -5,7 +5,7 @@
 		"density": 0.45,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 32,
+		"size": 24,
 		"random_name": "nether_gold",
 		"blocks": [
 			{
@@ -119,6 +119,29 @@
 					},
 					{
 						"block": "gtceu:schist_gold_ore",
+						"weight": 75
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_goethite_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:blackstone_yellow_limonite_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:blackstone_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:blackstone_gold_ore",
 						"weight": 75
 					}
 				]

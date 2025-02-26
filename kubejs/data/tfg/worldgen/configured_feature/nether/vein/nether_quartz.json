@@ -5,7 +5,7 @@
 		"density": 0.3,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 40,
+		"size": 32,
 		"random_name": "nether_quartz",
 		"blocks": [
 			{
@@ -81,6 +81,63 @@
 					},
 					{
 						"block": "gtceu:dripstone_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:granite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:granite_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:diorite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:diorite_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:gabbro_barite_ore",
 						"weight": 25
 					}
 				]

@@ -1,0 +1,138 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 320,
+		"density": 0.25,
+		"min_y": 48,
+		"max_y": 128,
+		"size": 26,
+		"random_name": "nether_olivine",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate"
+				],
+				"with": [
+					{
+						"block": "gtceu:slate_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:slate_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:slate_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:slate_glauconite_sand_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_glauconite_sand_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:blackstone_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_glauconite_sand_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dripstone_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_glauconite_sand_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:bentonite_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:magnesite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:glauconite_sand_indicator",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/small_olivine_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/medium_olivine_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/large_olivine_bud",
+					"weight": 5
+				}
+			]
+		}
+	}
+}

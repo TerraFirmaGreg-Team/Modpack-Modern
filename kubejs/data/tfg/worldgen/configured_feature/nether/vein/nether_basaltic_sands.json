@@ -3,9 +3,9 @@
 	"config": {
 		"rarity": 160,
 		"density": 0.3,
-		"min_y": 64,
+		"min_y": 72,
 		"max_y": 128,
-		"size": 48,
+		"size": 32,
 		"random_name": "nether_basaltic_sands",
 		"height": 9,
 		"blocks": [

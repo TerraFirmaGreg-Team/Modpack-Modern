@@ -3,68 +3,11 @@
 	"config": {
 		"rarity": 220,
 		"density": 0.25,
-		"min_y": 64,
+		"min_y": 72,
 		"max_y": 128,
-		"size": 34,
+		"size": 20,
 		"random_name": "nether_apatite",
 		"blocks": [
-			{
-				"replace": [
-					"tfc:rock/raw/granite"
-				],
-				"with": [
-					{
-						"block": "gtceu:granite_apatite_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:granite_tricalcium_phosphate_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:granite_pyrochlore_ore",
-						"weight": 15
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/diorite"
-				],
-				"with": [
-					{
-						"block": "gtceu:diorite_apatite_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:diorite_tricalcium_phosphate_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:diorite_pyrochlore_ore",
-						"weight": 15
-					}
-				]
-			},
-			{
-				"replace": [
-					"tfc:rock/raw/gabbro"
-				],
-				"with": [
-					{
-						"block": "gtceu:gabbro_apatite_ore",
-						"weight": 50
-					},
-					{
-						"block": "gtceu:gabbro_tricalcium_phosphate_ore",
-						"weight": 35
-					},
-					{
-						"block": "gtceu:gabbro_pyrochlore_ore",
-						"weight": 15
-					}
-				]
-			},
 			{
 				"replace": [
 					"tfc:rock/raw/schist"
