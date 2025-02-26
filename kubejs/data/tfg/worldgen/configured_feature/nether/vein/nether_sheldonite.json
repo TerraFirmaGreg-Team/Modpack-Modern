@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 300,
+		"rarity": 200,
 		"density": 0.3,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 25,
+		"size": 30,
 		"random_name": "nether_sheldonite",
 		"blocks": [
 			{
@@ -14,19 +14,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_bornite_ore",
+						"block": "gtceu:deepslate_bornite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:slate_cooperite_ore",
+						"block": "gtceu:deepslate_cooperite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:slate_platinum_ore",
+						"block": "gtceu:deepslate_platinum_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:slate_palladium_ore",
+						"block": "gtceu:deepslate_palladium_ore",
 						"weight": 15
 					}
 				]

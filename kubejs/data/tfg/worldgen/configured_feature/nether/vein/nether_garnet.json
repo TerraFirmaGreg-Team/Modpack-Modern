@@ -15,19 +15,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_red_garnet_ore",
+						"block": "gtceu:deepslate_red_garnet_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:slate_yellow_garnet_ore",
+						"block": "gtceu:deepslate_yellow_garnet_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:slate_amethyst_ore",
+						"block": "gtceu:deepslate_amethyst_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:slate_opal_ore",
+						"block": "gtceu:deepslate_opal_ore",
 						"weight": 40
 					}
 				]

@@ -5,7 +5,7 @@
 		"density": 0.35,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 27,
+		"size": 32,
 		"random_name": "nether_limonite",
 		"blocks": [
 			{
@@ -14,19 +14,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_goethite_ore",
+						"block": "gtceu:deepslate_goethite_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:slate_yellow_limonite_ore",
+						"block": "gtceu:deepslate_yellow_limonite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:slate_hematite_ore",
+						"block": "gtceu:deepslate_hematite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:slate_malachite_ore",
+						"block": "gtceu:deepslate_malachite_ore",
 						"weight": 20
 					}
 				]

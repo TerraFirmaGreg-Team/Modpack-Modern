@@ -3,9 +3,9 @@
 	"config": {
 		"rarity": 185,
 		"density": 0.25,
-		"min_y": 32,
+		"min_y": 24,
 		"max_y": 128,
-		"size": 25,
+		"size": 40,
 		"random_name": "nether_monazite",
 		"blocks": [
 			{

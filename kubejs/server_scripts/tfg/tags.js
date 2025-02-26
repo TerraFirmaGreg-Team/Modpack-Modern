@@ -77,10 +77,9 @@ const registerTFGBiomeTags = (event) => {
 const registerTFGPlacedFeatures = (event) => {
 	
 	// #region Nether ores
-	
-	// TODO: re-enable deepslate ore (requires tfg-core edit)
 
 	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
+	event.add('tfg:nether_veins', 'beneath:vein/crackrack_pipe')
 
 	// Lower only
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')

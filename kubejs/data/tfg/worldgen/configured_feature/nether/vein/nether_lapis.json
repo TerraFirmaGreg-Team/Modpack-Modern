@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 250,
+		"rarity": 190,
 		"density": 0.25,
-		"min_y": 72,
+		"min_y": 32,
 		"max_y": 128,
-		"size": 25,
+		"size": 35,
 		"random_name": "nether_lapis",
 		"blocks": [
 			{
@@ -14,19 +14,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_lazurite_ore",
+						"block": "gtceu:deepslate_lazurite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:slate_sodalite_ore",
+						"block": "gtceu:deepslate_sodalite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:slate_lapis_ore",
+						"block": "gtceu:deepslate_lapis_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:slate_calcite_ore",
+						"block": "gtceu:deepslate_calcite_ore",
 						"weight": 15
 					}
 				]

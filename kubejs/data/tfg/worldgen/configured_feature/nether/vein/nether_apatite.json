@@ -3,9 +3,9 @@
 	"config": {
 		"rarity": 220,
 		"density": 0.25,
-		"min_y": 72,
+		"min_y": 48,
 		"max_y": 128,
-		"size": 20,
+		"size": 34,
 		"random_name": "nether_apatite",
 		"blocks": [
 			{

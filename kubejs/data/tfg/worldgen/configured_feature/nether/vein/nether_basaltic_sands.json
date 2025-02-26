@@ -3,9 +3,9 @@
 	"config": {
 		"rarity": 160,
 		"density": 0.3,
-		"min_y": 72,
+		"min_y": 48,
 		"max_y": 128,
-		"size": 32,
+		"size": 48,
 		"random_name": "nether_basaltic_sands",
 		"height": 9,
 		"blocks": [
@@ -34,7 +34,7 @@
 			},
 			{
 				"replace": [
-					"mincraft:basalt",
+					"minecraft:basalt",
 					"tfc:rock/raw/basalt"
 				],
 				"with": [

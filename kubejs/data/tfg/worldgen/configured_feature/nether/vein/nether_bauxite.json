@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 310,
+		"rarity": 185,
 		"density": 0.3,
-		"min_y": 48,
+		"min_y": 32,
 		"max_y": 128,
-		"size": 25,
+		"size": 35,
 		"random_name": "nether_bauxite",
 		"blocks": [
 			{
@@ -14,15 +14,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:slate_bauxite_ore",
+						"block": "gtceu:deepslate_bauxite_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:slate_ilmenite_ore",
+						"block": "gtceu:deepslate_ilmenite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:slate_aluminium_ore",
+						"block": "gtceu:deepslate_aluminium_ore",
 						"weight": 25
 					}
 				]

@@ -3,9 +3,9 @@
 	"config": {
 		"rarity": 160,
 		"density": 0.4,
-		"min_y": 48,
+		"min_y": 16,
 		"max_y": 128,
-		"size": 35,
+		"size": 40,
 		"random_name": "nether_redstone",
 		"blocks": [
 			{
