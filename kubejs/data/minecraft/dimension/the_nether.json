@@ -97,7 +97,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
@@ -109,7 +109,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
@@ -121,7 +121,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
@@ -133,7 +133,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
@@ -145,7 +145,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
@@ -157,7 +157,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 
@@ -173,7 +173,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
@@ -185,7 +185,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
@@ -197,7 +197,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
@@ -209,7 +209,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
@@ -221,7 +221,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
@@ -233,7 +233,7 @@
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 
@@ -244,72 +244,72 @@
 					"biome": "tfg:nether/gabbro_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": 0.1,
+						"depth": 0.15,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
 					"biome": "tfg:nether/granite_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": 0.1,
+						"depth": 0.15,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
 					"biome": "tfg:nether/schist_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": 0.1,
+						"depth": 0.15,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
 					"biome": "tfg:nether/diorite_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": 0.1,
+						"depth": 0.15,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				},
 				{
 					"biome": "tfg:nether/gabbro_caves",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": 0.1,
+						"depth": 0.15,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": -0.55
+						"weirdness": -0.65
 					}
 				},
 				{
 					"biome": "tfg:nether/gneiss_caves",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": 0.1,
+						"depth": 0.15,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
 						"temperature": 0,
-						"weirdness": 0.55
+						"weirdness": 0.65
 					}
 				}
 			]
