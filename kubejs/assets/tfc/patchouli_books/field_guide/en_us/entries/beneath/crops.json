@@ -1,0 +1,53 @@
+{
+	"name": "Crops",
+	"category": "tfc:beneath",
+	"icon": "beneath:gleamflower",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Soul soil may be tilled to form $(thing)Soul Farmland$(). Crops work a little differently when you are Beneath. There are five nutrients: Death, Destruction, Decay, Sorrow, and Flame. Nutrients are viewed by holding a hoe, but will not appear unless they have a value greater than zero."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Crops have a preferred nutrient: Instead of consuming it, this is the nutrient they will add to over time. The crop will happily consume the other four nutrients in order to grow. Nether crops cannot die, but still need block light to grow."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The fertilizers are as follows: $(br)$(br)Sulfur: 20% decay, 10% flame$(br)Gunpowder: 60% Destruction, 10% Flame, 40% Death$(br)Ghast Tear: 30% Sorrow$(br)Blaze Powder: 20% Flame"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The fertilizers are also available in obtainable 'pure' forms from chest loot. Crafting these together yields $(thing)Agonizing Fertilizer$(), which has them all in a neat package."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Crimson Roots (Decay) and Warped Roots (Destruction) are growable as crops. These are most useful as means of improving the nutrient quality of your soul farmland. Nether Wart (Death), found in fortresses, can also be grown as a crop."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:gleamflower"
+				}
+			},
+			"name": "Gleamflower",
+			"text": "The Gleamflower (Flame) can be grown as a crop, and also found in the world as a plant. It is useful as an infinite light source.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ghost_pepper",
+			"link_recipes": false,
+			"text": "Ghost Peppers (Sorrow) are an edible vegetable that can be grown in the Beneath!"
+		}
+	],
+	"read_by_default": true
+}

@@ -1,0 +1,12 @@
+{
+	"name": "Ores and Minerals",
+	"category": "tfc:beneath",
+	"icon": "beneath:ore/normal_nether_gold",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "This page is here to override the default Beneath ores and minerals page.$(br2)Information about ores can be found in the $(l:tfg_ores)Ores in TFG$() category."
+		}
+	],
+	"read_by_default": true
+}
