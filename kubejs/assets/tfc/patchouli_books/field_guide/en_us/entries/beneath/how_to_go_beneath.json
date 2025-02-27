@@ -1,0 +1,12 @@
+{
+	"name": "How to Go Beneath",
+	"category": "tfc:beneath",
+	"icon": "minecraft:flint_and_steel",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TODO: how to get to beneath"
+		}
+	],
+	"read_by_default": true
+}

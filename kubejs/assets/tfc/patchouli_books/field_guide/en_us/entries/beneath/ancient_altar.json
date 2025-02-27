@@ -1,0 +1,12 @@
+{
+	"name": "Piglin Trading",
+	"category": "tfc:beneath",
+	"icon": "minecraft:gold_ingot",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TODO: page about piglin trades"
+		}
+	],
+	"read_by_default": true
+}

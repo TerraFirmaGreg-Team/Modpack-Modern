@@ -1,0 +1,13 @@
+{
+	"name": "Beneath?",
+	"category": "tfc:beneath",
+	"icon": "minecraft:blackstone",
+	"priority": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TODO: intro to beneath"
+		}
+	],
+	"read_by_default": true
+}

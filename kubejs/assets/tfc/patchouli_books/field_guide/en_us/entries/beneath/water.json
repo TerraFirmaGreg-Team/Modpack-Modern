@@ -1,0 +1,21 @@
+{
+	"name": "Water",
+	"category": "tfc:beneath",
+	"icon": "beneath:juicer",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "Unlike the Nether, water will not instantly evaporate when you are in the Beneath. However, there is also the option of crafting a $(thing)Juicer$()."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/juicer",
+			"text": "The juicer is a drinking vessel that allows the compression of $(thing)Mushrooms$() into water. The single-slot user interface automatically processes inserted mushrooms into water."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Mushrooms spawn freely around the place Beneath the overworld. Fresh fruits may also be squeezed into water, if you have them handy."
+		}
+	],
+	"read_by_default": true
+}
