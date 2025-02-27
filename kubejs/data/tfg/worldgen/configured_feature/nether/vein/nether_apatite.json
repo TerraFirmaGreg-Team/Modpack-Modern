@@ -10,7 +10,8 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"tfc:rock/raw/schist",
+					"tfc:rock/hardened/schist"
 				],
 				"with": [
 					{
@@ -29,7 +30,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss"
+					"tfc:rock/raw/gneiss",
+					"tfc:rock/hardened/gneiss"
 				],
 				"with": [
 					{

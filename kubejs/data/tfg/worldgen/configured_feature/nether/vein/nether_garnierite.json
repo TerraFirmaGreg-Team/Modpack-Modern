@@ -150,7 +150,8 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone"
+					"minecraft:blackstone",
+					"tfg:hardened_blackstone"
 				],
 				"with": [
 					{

@@ -10,7 +10,8 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"tfc:rock/raw/schist",
+					"tfc:rock/hardened/schist"
 				],
 				"with": [
 					{
@@ -29,7 +30,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss"
+					"tfc:rock/raw/gneiss",
+					"tfc:rock/hardened/gneiss"
 				],
 				"with": [
 					{
@@ -42,6 +44,26 @@
 					},
 					{
 						"block": "gtceu:gneiss_lead_ore",
+						"weight": 55
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"tfg:hardened_blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_galena_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:blackstone_silver_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:blackstone_lead_ore",
 						"weight": 55
 					}
 				]
