@@ -45,6 +45,7 @@ const registerMinecraftBlockTags = (event) => {
     event.add('minecraft:frogs_spawnable_on', 'minecraft:deepslate')
     event.add('minecraft:frogs_spawnable_on', 'minecraft:blackstone')
     event.add('minecraft:frogs_spawnable_on', 'minecraft:dripstone_block')
+    event.add('minecraft:axolotls_spawnable_on', 'minecraft:deepslate')
     event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
     event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
     event.add('tfc:creeping_plantable_on', 'minecraft:deepslate')

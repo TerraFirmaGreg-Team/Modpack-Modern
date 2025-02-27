@@ -92,8 +92,8 @@
 		"axolotls": [
 			{
 				"type": "minecraft:axolotl",
-				"maxCount": 6,
-				"minCount": 4,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 10
 			}
 		],

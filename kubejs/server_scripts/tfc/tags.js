@@ -323,6 +323,7 @@ const registerTFCBlockTags = (event) => {
     event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/diorite')
     event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/granite')
     event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/gabbro')
+    event.add('minecraft:nether_carver_replaceables', 'tfc:rock/raw/basalt')
     event.add('minecraft:base_stone_nether', 'tfc:rock/raw/gneiss')
     event.add('minecraft:base_stone_nether', 'tfc:rock/raw/schist')
     event.add('minecraft:base_stone_nether', 'tfc:rock/raw/diorite')
@@ -334,7 +335,11 @@ const registerTFCBlockTags = (event) => {
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/diorite')
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/granite')
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
-    event.add('minecraft:axolotls_spawnable_on', 'tfc:rock/hardened/limestone')
+
+    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/basalt')
+    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/granite')
+    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/diorite')
+    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/gabbro')
 
     //#endregion
 }

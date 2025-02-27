@@ -4,7 +4,7 @@
 	},
 	"downfall": 0.5,
 	"effects": {
-		"fog_color": 13750492,
+		"fog_color": 9868701,
 		"additions_sound": {
 			"sound": "minecraft:ambient.crimson_forest.additions",
 			"tick_chance": 0.0111
@@ -22,7 +22,7 @@
 			"replace_current_music": false,
 			"sound": "minecraft:music.nether.crimson_forest"
 		},
-		"sky_color": 13750492,
+		"sky_color": 9868701,
 		"water_color": 7255466,
 		"water_fog_color": 3169873,
 		"grass_color": 6466617
@@ -95,8 +95,8 @@
 		"axolotls": [
 			{
 				"type": "minecraft:axolotl",
-				"maxCount": 6,
-				"minCount": 4,
+				"maxCount": 5,
+				"minCount": 1,
 				"weight": 10
 			}
 		],
@@ -105,7 +105,7 @@
 				"type": "minecraft:frog",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 10
+				"weight": 50
 			},
 			{
 				"type": "beneath:red_elk",

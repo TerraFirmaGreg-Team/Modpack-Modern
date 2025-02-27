@@ -50,11 +50,14 @@ const registerTFGBiomeTags = (event) => {
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/fungi_forest')
 	event.add('minecraft:spawns_warm_variant_frogs', 'tfg:nether/fungi_forest')
 	event.add('minecraft:has_closer_water_fog', 'tfg:nether/fungi_forest')
-
+	
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
 	
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/ash_forest')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/ash_forest')
+
+	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lava_rivers')
+	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lava_rivers')
 	
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/spider_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/spider_caves')
@@ -125,10 +128,10 @@ const registerTFGPlacedFeatures = (event) => {
 	// #region Nether decorations
 
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
-	event.add('tfg:nether_underground_decoration', 'beneath:magma_rhyolite')
 	event.add('tfg:nether_underground_decoration', 'beneath:magma_basalt')
-	event.add('tfg:nether_underground_decoration', 'beneath:magma_andesite')
-	event.add('tfg:nether_underground_decoration', 'beneath:magma_dacite')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_granite')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_diorite')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_gabbro')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 
 	event.add('tfg:nether_top_layer_modification', 'tfg:nether/hardening')

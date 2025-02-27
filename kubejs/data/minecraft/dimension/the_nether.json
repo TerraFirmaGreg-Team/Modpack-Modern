@@ -51,8 +51,20 @@
 
 					"biome": "tfg:nether/ash_forest",
 					"parameters": {
+						"continentalness": 0.5,
+						"depth": 0.05,
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": 0
+					}
+				},
+				{
+					"biome": "tfg:nether/lava_rivers",
+					"parameters": {
 						"continentalness": 0,
-						"depth": 0.2,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -63,8 +75,8 @@
 				{
 					"biome": "tfg:nether/basalt_deltas",
 					"parameters": {
-						"continentalness": -0.01,
-						"depth": 0.2,
+						"continentalness": -0.5,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -156,7 +168,7 @@
 					"biome": "tfg:nether/schist_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": 0.25,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -168,7 +180,7 @@
 					"biome": "tfg:nether/diorite_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": 0.2,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -180,7 +192,7 @@
 					"biome": "tfg:nether/gabbro_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": 0.2,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -192,7 +204,7 @@
 					"biome": "tfg:nether/gneiss_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": 0.2,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -204,7 +216,7 @@
 					"biome": "tfg:nether/gneiss_caves",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": 0.2,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -216,7 +228,7 @@
 					"biome": "tfg:nether/granite_caves",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": 0.2,
+						"depth": 0.05,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -232,7 +244,7 @@
 					"biome": "tfg:nether/gabbro_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": 0.4,
+						"depth": 0.1,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -244,7 +256,7 @@
 					"biome": "tfg:nether/granite_caves",
 					"parameters": {
 						"continentalness": 0.5,
-						"depth": 0.4,
+						"depth": 0.1,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -256,7 +268,7 @@
 					"biome": "tfg:nether/schist_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": 0.4,
+						"depth": 0.1,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -268,7 +280,7 @@
 					"biome": "tfg:nether/diorite_caves",
 					"parameters": {
 						"continentalness": 0,
-						"depth": 0.4,
+						"depth": 0.1,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -280,7 +292,7 @@
 					"biome": "tfg:nether/gabbro_caves",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": 0.4,
+						"depth": 0.1,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,
@@ -292,7 +304,7 @@
 					"biome": "tfg:nether/gneiss_caves",
 					"parameters": {
 						"continentalness": -0.5,
-						"depth": 0.4,
+						"depth": 0.1,
 						"erosion": 0,
 						"humidity": 0,
 						"offset": 0,

@@ -297,6 +297,7 @@
     { "block": "minecraft:furnace", "state": { "lit": true }, "color": "#faintOrange", "radius": 12 },
     { "block": "minecraft:glow_lichen", "color": "#faintWhite", "radius": 9 },
     { "block": "minecraft:glowstone", "color": "#glowstoneOrange", "radius": 15 },
+    { "block": "beneath:glowstone_spike", "color": "#glowstoneOrange", "radius": 15 },
     { "block": "beneath:glowstone_spike", "state": { "part": "base" }, "color": "#glowstoneOrange", "radius": 14 },
     { "block": "beneath:glowstone_spike", "state": { "part": "middle" }, "color": "#glowstoneOrange", "radius": 13 },
     { "block": "beneath:glowstone_spike", "state": { "part": "tip" }, "color": "#glowstoneOrange", "radius": 12 },
