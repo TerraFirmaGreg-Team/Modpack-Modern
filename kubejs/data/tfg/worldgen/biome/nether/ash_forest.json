@@ -35,7 +35,8 @@
 	"features": [
 		[],
 		[
-			"tfg:nether/terrain/lava_lake"
+			"tfg:nether/terrain/lava_lake",
+			"tfg:nether/terrain/spring_water_lake"
 		],
 		[
 			"minecraft:basalt_pillar",
@@ -45,7 +46,6 @@
 		[
 			"tfg:nether/terrain/glowstone_ceiling",
 			"beneath:glowstone_spikes",
-			"tfg:nether/terrain/rarer_delta",
 			"tfg:nether/spikes/deepslate_spikes",
 			"tfg:nether/spikes/blackstone_spikes"
 		],
@@ -60,6 +60,9 @@
 			"minecraft:spring_closed_double",
 			"beneath:blackstone_boulders",
 			"beneath:blackstone_pebble_patch",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
 			"tfg:nether/surface/ash_pile",
 			"tfg:nether/surface/ash_pile_small",
 			"tfg:nether/surface/charcoal_pile",
@@ -85,8 +88,21 @@
 				"weight": 10
 			}
 		],
-		"axolotls": [],
+		"axolotls": [
+			{
+				"type": "minecraft:axolotl",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
 		"creature": [
+			{
+				"type": "minecraft:frog",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
 			{
 				"type": "beneath:red_elk",
 				"maxCount": 8,

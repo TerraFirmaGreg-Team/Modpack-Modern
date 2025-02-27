@@ -95,8 +95,8 @@
 		"axolotls": [
 			{
 				"type": "minecraft:axolotl",
-				"maxCount": 6,
-				"minCount": 4,
+				"maxCount": 5,
+				"minCount": 1,
 				"weight": 10
 			}
 		],
@@ -105,7 +105,7 @@
 				"type": "minecraft:frog",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 10
+				"weight": 50
 			},
 			{
 				"type": "beneath:red_elk",

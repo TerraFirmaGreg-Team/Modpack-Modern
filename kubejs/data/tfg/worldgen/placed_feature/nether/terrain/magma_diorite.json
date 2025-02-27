@@ -1,6 +1,10 @@
 {
-	"feature": "tfc:calcite",
+	"feature": "tfg:nether/terrain/magma_diorite",
 	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 10
+		},
 		{
 			"type": "minecraft:count",
 			"count": 4
@@ -11,14 +15,17 @@
 		{
 			"type": "minecraft:height_range",
 			"height": {
-				"type": "minecraft:uniform",
+				"type": "uniform",
 				"min_inclusive": {
-					"absolute": 42
+					"absolute": 27
 				},
 				"max_inclusive": {
-					"absolute": 128
+					"absolute": 36
 				}
 			}
+		},
+		{
+			"type": "minecraft:biome"
 		}
 	]
 }

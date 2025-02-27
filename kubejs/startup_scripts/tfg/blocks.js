@@ -43,9 +43,17 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike').noItem()
-	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike').noItem()
-	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike').noItem()
+	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
 
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
