@@ -10,7 +10,14 @@
 		"blocks": [
 			{
 				"replace": [
-					"minecraft:deepslate"
+					"minecraft:deepslate",
+					"tfg:hardened_deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
 				],
 				"with": [
 					{
@@ -29,7 +36,8 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone"
+					"minecraft:blackstone",
+					"tfg:hardened_blackstone"
 				],
 				"with": [
 					{
@@ -49,7 +57,9 @@
 			{
 				"replace": [
 					"minecraft:basalt",
-					"tfc:rock/raw/basalt"
+					"tfc:rock/raw/basalt",
+					"tfc:rock/hardened/basalt",
+					"tfc:rock/magma/basalt"
 				],
 				"with": [
 					{

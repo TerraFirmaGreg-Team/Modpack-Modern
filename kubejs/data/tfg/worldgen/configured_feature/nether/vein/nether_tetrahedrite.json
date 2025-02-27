@@ -10,7 +10,14 @@
 		"blocks": [
 			{
 				"replace": [
-					"minecraft:deepslate"
+					"minecraft:deepslate",
+					"tfg:hardened_deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
 				],
 				"with": [
 					{
@@ -48,7 +55,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"tfc:rock/raw/schist",
+					"tfc:rock/hardened/schist"
 				],
 				"with": [
 					{
@@ -67,7 +75,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss"
+					"tfc:rock/raw/gneiss",
+					"tfc:rock/hardened/gneiss"
 				],
 				"with": [
 					{

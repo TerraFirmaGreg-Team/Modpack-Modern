@@ -11,7 +11,8 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/gabbro"
+					"tfc:rock/raw/gabbro",
+					"tfc:rock/hardened/gabbro"
 				],
 				"with": [
 					{
@@ -34,7 +35,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/granite"
+					"tfc:rock/raw/granite",
+					"tfc:rock/hardened/granite"
 				],
 				"with": [
 					{
@@ -57,7 +59,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss"
+					"tfc:rock/raw/gneiss",
+					"tfc:rock/hardened/gneiss"
 				],
 				"with": [
 					{
@@ -80,7 +83,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/diorite"
+					"tfc:rock/raw/diorite",
+					"tfc:rock/hardened/diorite"
 				],
 				"with": [
 					{
@@ -103,7 +107,32 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"tfc:rock/raw/schist",
+					"tfc:rock/hardened/schist"
+				],
+				"with": [
+					{
+						"block": "gtceu:schist_almandine_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:schist_pyrope_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:schist_sapphire_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:schist_green_sapphire_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"tfg:hardened_blackstone"
 				],
 				"with": [
 					{

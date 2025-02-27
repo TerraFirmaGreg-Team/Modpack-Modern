@@ -10,7 +10,8 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/granite"
+					"tfc:rock/raw/granite",
+					"tfc:rock/hardened/granite"
 				],
 				"with": [
 					{
@@ -33,7 +34,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/diorite"
+					"tfc:rock/raw/diorite",
+					"tfc:rock/hardened/diorite"
 				],
 				"with": [
 					{
@@ -56,7 +58,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gabbro"
+					"tfc:rock/raw/gabbro",
+					"tfc:rock/hardened/gabbro"
 				],
 				"with": [
 					{
@@ -79,7 +82,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist"
+					"tfc:rock/raw/schist",
+					"tfc:rock/hardened/schist"
 				],
 				"with": [
 					{
@@ -102,7 +106,8 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss"
+					"tfc:rock/raw/gneiss",
+					"tfc:rock/hardened/gneiss"
 				],
 				"with": [
 					{
