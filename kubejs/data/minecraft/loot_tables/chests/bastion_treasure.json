@@ -23,62 +23,229 @@
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_hammer",
-					"weight": 10
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:damascus_steel_sword",
-					"weight": 5
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:damascus_steel_knife",
-					"weight": 10
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:damascus_steel_butchery_knife",
-					"weight": 5
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 3
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_pickaxe",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:mending": 1,
+								"minecraft:efficiency": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_sword",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:sweeping": 3,
+								"minecraft:smite": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_knife",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:fire_aspect": 2,
+								"minecraft:sharpness": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_butchery_knife",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:knockback": 2,
+								"minecraft:sharpness": 2
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_mining_hammer",
-					"weight": 5
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 2,
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_shovel",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 3
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_spade",
-					"weight": 5
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 2,
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_scythe",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 3,
+								"minecraft:smite": 3
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_wire_cutter",
-					"weight": 15
+					"weight": 15,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 2
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_wrench",
-					"weight": 15
+					"weight": 15,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 2
+							},
+							"add": false
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_crowbar",
-					"weight": 15
+					"weight": 15,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_screwdriver",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_saw",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crossbow",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:quick_charge": 3,
+								"minecraft:piercing": 2
+							},
+							"add": false
+						}
+					]
 				}
 			]
 		},
