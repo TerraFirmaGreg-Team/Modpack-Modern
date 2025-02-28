@@ -251,10 +251,61 @@
 		},
 		{
 			"name": "loot_pool",
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/ingot/pig_iron",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rose_gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 7,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
 			"rolls": {
 				"type": "minecraft:uniform",
-				"min": 4,
-				"max": 6
+				"min": 6,
+				"max": 8
 			},
 			"entries": [
 				{
@@ -619,56 +670,6 @@
 				}
 			]
 		},
-		{
-			"name": "loot_pool",
-			"rolls": 2,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/ingot/pig_iron",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 7,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				}
-			]
-		}
+		
 	]
 }
