@@ -260,132 +260,368 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:sapphire_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:ruby_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:emerald",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:topaz_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:malachite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:yellow_garnet_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:red_garnet_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:amethyst_shard",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:almandine_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:andradite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:blue_topaz_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:green_sapphire_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:grossular_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:rutile_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:lazurite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:pyrope_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:sodalite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:spessartine_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:uvarovite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:quartzite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:olivine_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:apatite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:monazite_gem",
-					"weight": 10
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
 				}
 			]
 		},
 		{
 			"name": "loot_pool",
-			"rolls": {
-				"type": "minecraft:uniform",
-				"min": 3,
-				"max": 4
-			},
+			"rolls": 2,
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -419,28 +655,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:black_bronze_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
 					"name": "gtceu:rose_gold_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 1,
-								"max": 5,
+								"min": 3,
+								"max": 7,
 								"type": "minecraft:uniform"
 							}
 						}

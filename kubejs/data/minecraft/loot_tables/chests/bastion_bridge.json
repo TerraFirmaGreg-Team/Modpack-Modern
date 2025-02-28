@@ -13,99 +13,17 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.1,
-								"max": 0.9
+								"min": 0.5,
+								"max": 1
 							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:glow_arrow",
-					"functions": [
+						},
 						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 10,
-								"max": 28,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/ingot/pig_iron",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:black_bronze_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:quick_charge": 2,
+								"minecraft:piercing": 1
+							},
+							"add": false
 						}
 					],
 					"weight": 1
@@ -169,6 +87,21 @@
 							}
 						}
 					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/shield/black_bronze",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.75,
+								"max": 1
+							}
+						}
+					]
 				}
 			]
 		},
@@ -176,8 +109,8 @@
 			"name": "loot_pool",
 			"rolls": {
 				"type": "minecraft:uniform",
-				"min": 2,
-				"max": 4
+				"min": 4,
+				"max": 6
 			},
 			"entries": [
 				{
@@ -189,6 +122,21 @@
 							"count": {
 								"min": 4,
 								"max": 16,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:silk_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -232,8 +180,68 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 5,
-								"max": 17,
+								"min": 10,
+								"max": 28,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rose_gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/ingot/pig_iron",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -258,6 +266,36 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/graphite",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 16,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/kaolinite",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

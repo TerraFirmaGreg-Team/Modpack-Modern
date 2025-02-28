@@ -16,6 +16,31 @@ const registerMinecraftItemTags = (event) => {
     // Бамбуковые полублоки
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
+
+    event.add('tfc:foods', 'minecraft:red_mushroom')
+    event.add('tfc:foods', 'minecraft:brown_mushroom')
+    event.add('tfc:foods', 'minecraft:glow_berries')
+    event.add('tfc:foods', 'minecraft:chorus_fruit')
+
+    event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
+    event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
+    event.add('tfc:foods/fruits', 'minecraft:glow_berries')
+    event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
+
+    event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
+    event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
+    event.add('beneath:usable_in_juicer', 'minecraft:red_mushroom')
+    event.add('beneath:usable_in_juicer', 'minecraft:brown_mushroom')
+
+    event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
+
+    event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -25,8 +50,7 @@ const registerMinecraftBlockTags = (event) => {
 
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
-
-
+    
     //#region Nether blocks
 
     event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')

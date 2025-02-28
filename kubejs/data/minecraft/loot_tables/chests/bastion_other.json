@@ -3,7 +3,11 @@
 	"pools": [
 		{
 			"name": "loot_pool",
-			"rolls": 1,
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 2
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -223,7 +227,11 @@
 		},
 		{
 			"name": "loot_pool",
-			"rolls": 4,
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 4,
+				"max": 6
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -253,7 +261,7 @@
 							}
 						}
 					],
-					"weight": 10
+					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
@@ -268,7 +276,7 @@
 							}
 						}
 					],
-					"weight": 2
+					"weight": 1
 				},
 				{
 					"type": "minecraft:item",
@@ -279,36 +287,6 @@
 							"count": {
 								"min": 1,
 								"max": 3,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:gold_bolt",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 10,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:gold_screw",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 10,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -343,26 +321,26 @@
 							}
 						}
 					],
-					"weight": 5
+					"weight": 7
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_rod",
+					"name": "gtceu:black_bronze_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 1,
-								"max": 5,
+								"min": 2,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 3
+					"weight": 7
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:long_rose_gold_rod",
+					"name": "gtceu:black_bronze_plate",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -377,7 +355,22 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_bolt",
+					"name": "gtceu:long_bronze_rod",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:wrought_iron_screw",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -388,52 +381,7 @@
 							}
 						}
 					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_screw",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 10,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_plate",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ring",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
+					"weight": 1
 				},
 				{
 					"type": "minecraft:item",
@@ -449,6 +397,126 @@
 						}
 					],
 					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/graphite",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 16,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 3
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/kaolinite",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 3
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shroomlight",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glowstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/log/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:cursed_hide",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:silk_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:glow_arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 17,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
 				}
 			]
 		}
