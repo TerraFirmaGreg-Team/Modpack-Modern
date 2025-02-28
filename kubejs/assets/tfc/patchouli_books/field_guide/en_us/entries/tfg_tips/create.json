@@ -2,6 +2,7 @@
 	"name": "Getting Started With Create",
 	"category": "tfc:tfg_tips",
 	"icon": "create:cogwheel",
+	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:text",

@@ -7,7 +7,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/shovel/wrought_iron",
+					"name": "gtceu:invar_shovel",
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -22,7 +22,22 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/pickaxe/wrought_iron",
+					"name": "gtceu:invar_spade",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.4
+							}
+						}
+					],
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:invar_hammer",
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -37,8 +52,78 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:saddle",
-					"weight": 12
+					"name": "gtceu:invar_mining_hammer",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.4
+							}
+						}
+					],
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:invar_axe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:invar_saw",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:invar_hoe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/propick/wrought_iron",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
 				}
 			]
 		},
@@ -52,7 +137,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/axe/copper",
+					"name": "gtceu:black_bronze_axe",
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -97,12 +182,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/lamp/bronze",
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/lamp/copper",
+					"name": "tfc:metal/lamp/black_bronze",
 					"weight": 1
 				},
 				{
@@ -112,13 +192,28 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 7,
+								"min": 4,
+								"max": 16,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/log/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
