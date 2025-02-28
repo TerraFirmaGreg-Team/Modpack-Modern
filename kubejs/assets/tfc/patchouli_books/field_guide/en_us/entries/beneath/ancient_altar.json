@@ -1,11 +1,16 @@
 {
-	"name": "Piglin Trading",
+	"name": "Piglin Bartering",
 	"category": "tfc:beneath",
 	"icon": "minecraft:gold_ingot",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "TODO: page about piglin trades"
+			"title": "Piglin Bartering",
+			"text": "Like you'd expect, you can trade with Piglins in the same way you trade with them in vanilla.$(br)They accept anything that contains at least one ingot's worth of $(item)Gold$().$(br)See the $(thing)#minecraft:piglin_loves$() tag for specifics."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Results:$(br)$(li)TODO"
 		}
 	],
 	"read_by_default": true

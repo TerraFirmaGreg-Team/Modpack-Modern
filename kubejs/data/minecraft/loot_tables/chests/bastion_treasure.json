@@ -1,0 +1,196 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/chestplate/black_steel",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/helmet/black_steel",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/greaves/black_steel",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/boots/black_steel",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/sword/black_steel",
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/scythe/black_steel",
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:gem/diamond",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:gem/opal",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:gem/ruby",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:pure_sorrow",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:pure_flame",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:pure_death",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:pure_destruction",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:pure_decay",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:lost_page",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:lost_page",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 3,
+				"max": 4
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:spectral_arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 12,
+								"max": 25,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/ingot/pig_iron",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/ingot/gold",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crying_obsidian",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gilded_blackstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 15,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:magma_cream",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:lost_page",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

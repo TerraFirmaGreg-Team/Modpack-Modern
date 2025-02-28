@@ -1,0 +1,257 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/pickaxe/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/shovel/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crossbow",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:glow_arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 10,
+								"max": 22,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:piglin_banner_pattern",
+					"weight": 9
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:music_disc_pigstep",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:seeds/ghost_pepper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:seeds/gleamflower",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:stone/axe/igneous_extrusive",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:stone/shovel/igneous_extrusive",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:stone/hoe/igneous_extrusive",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/scythe/copper",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:book",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/ingot/gold",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gilded_blackstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/chain/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 10,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:obsidian",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 17,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:food/cooked_pork",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:lost_page",
+					"weight": 1
+				}
+			]
+		}
+	]
+}
