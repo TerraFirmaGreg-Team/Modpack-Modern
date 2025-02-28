@@ -3,7 +3,11 @@
 	"pools": [
 		{
 			"name": "loot_pool",
-			"rolls": 1,
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 2
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -161,13 +165,28 @@
 			"name": "loot_pool",
 			"rolls": {
 				"type": "minecraft:uniform",
-				"min": 3,
-				"max": 4
+				"min": 4,
+				"max": 6
 			},
 			"entries": [
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:glowstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shroomlight",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -260,8 +279,8 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 7,
+								"min": 1,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -362,36 +381,6 @@
 					"type": "minecraft:item",
 					"name": "tfc:food/cooked_venison",
 					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:wood/lumber/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 12,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:wood/log/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
 				},
 				{
 					"type": "minecraft:item",

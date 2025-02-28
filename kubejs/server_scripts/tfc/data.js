@@ -187,7 +187,14 @@ const registerTFCFoodData = (event) => {
 
     event.foodItem('minecraft:glow_berries', food => {
         food.hunger(1)
-        food.fruit(0.8)
+        food.fruit(0.5)
+        food.water(5)
+        food.decayModifier(2)
+    })
+    
+    event.foodItem('minecraft:chorus_fruit', food => {
+        food.hunger(1)
+        food.fruit(1)
         food.water(5)
     })
 
@@ -196,6 +203,7 @@ const registerTFCFoodData = (event) => {
         food.hunger(1)
         food.vegetables(1)
         food.water(5)
+        food.decayModifier(2)
     })
 
     event.foodItem('minecraft:brown_mushroom', food => {
@@ -203,5 +211,6 @@ const registerTFCFoodData = (event) => {
         food.hunger(2)
         food.vegetables(1)
         food.water(2)
+        food.decayModifier(2)
     })
 }
