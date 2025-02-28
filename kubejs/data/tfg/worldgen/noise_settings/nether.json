@@ -4,10 +4,7 @@
 		"Name": "minecraft:deepslate"
 	},
 	"default_fluid": {
-		"Name": "minecraft:lava",
-		"Properties": {
-			"level": "0"
-		}
+		"Name": "minecraft:lava"
 	},
 	"disable_mob_generation": false,
 	"legacy_random_source": true,

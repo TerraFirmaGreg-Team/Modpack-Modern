@@ -79,6 +79,8 @@
     { "block": "minecraft:small_amethyst_bud" },
     { "block": "minecraft:soul_fire" },
     { "block": "minecraft:verdant_froglight" },
+    { "block": "beneath:glowstone_spike" },
+    { "block": "beneath:gleamflower" },
 
     { "block": "tfc:rock/magma/basalt" },
     { "block": "tfc:rock/magma/rhyolite" },
@@ -406,13 +408,7 @@
     { "block": "minecraft:yellow_candle", "state": { "candles": 4, "lit": true }, "color": "#faintOrange", "radius": 12 },
     { "block": "minecraft:yellow_candle_cake", "state": { "lit": true }, "color": "#faintOrange", "radius": 3 },
 
-    { "block": "tfc:rock/magma/basalt", "color": "#magmaRed", "radius": 4 },
-    { "block": "tfc:rock/magma/diorite", "color": "#magmaRed", "radius": 4 },
-    { "block": "tfc:rock/magma/dacite", "color": "#magmaRed", "radius": 4 },
-    { "block": "tfc:rock/magma/rhyolite", "color": "#magmaRed", "radius": 4 },
-    { "block": "tfc:rock/magma/andesite", "color": "#magmaRed", "radius": 4 },
-    { "block": "tfc:rock/magma/granite", "color": "#magmaRed", "radius": 4 },
-    { "block": "tfc:rock/magma/gabbro", "color": "#magmaRed", "radius": 4 },
+    { "block": "beneath:gleamflower", "color": "#magmaRed", "radius": 8 },
 
     { "block": "framedblocks:framed_redstone_torch", "state": { "lit": true }, "color": "#redstoneRed", "radius": 7 },
     { "block": "framedblocks:framed_redstone_wall_torch", "state": { "lit": true }, "color": "#redstoneRed", "radius": 7 },
