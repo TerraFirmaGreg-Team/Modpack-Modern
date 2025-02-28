@@ -23,7 +23,7 @@
 								"min": 0.0
 							},
 							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
+							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "ae2:ender_dust"
@@ -53,7 +53,7 @@
 								"min": 0.0
 							},
 							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
+							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "minecraft:red_mushroom"
@@ -83,7 +83,7 @@
 								"min": 0.0
 							},
 							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
+							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "minecraft:brown_mushroom"

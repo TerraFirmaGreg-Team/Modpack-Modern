@@ -508,7 +508,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:tall_grass', 
     'minecraft:sculk_vein', 
     'minecraft:lily_pad', 
-    'minecraft:glow_lichen', 
     'minecraft:vine',
     'minecraft:seagrass', 
     'minecraft:grass', 
@@ -595,7 +594,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:frogspawn', 
     'minecraft:cactus', 
     'minecraft:sweet_berries', 
-    'minecraft:glow_berries', 
     'minecraft:campfire', 
     'minecraft:soul_campfire', 
     'minecraft:bee_nest', 
@@ -724,7 +722,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
 
     // И еще куча незер блоков
     // TODO: Разблокировать после добавления ада
-    'minecraft:crying_obsidian', 
     'minecraft:crimson_nylium', 
     'minecraft:warped_nylium', 
     'minecraft:soul_sand', 
