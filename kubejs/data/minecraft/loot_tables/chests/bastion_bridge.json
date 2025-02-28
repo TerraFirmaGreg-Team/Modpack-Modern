@@ -37,13 +37,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:gilded_blackstone",
+					"name": "gtceu:rose_gold_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 8,
-								"max": 12,
+								"min": 1,
+								"max": 5,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -97,14 +97,44 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/chestplate/wrought_iron",
+					"name": "gtceu:rose_gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/chestplate/black_bronze",
 					"weight": 1,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.5,
+								"min": 0.75,
 								"max": 1
 							}
 						}
@@ -112,14 +142,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/helmet/wrought_iron",
+					"name": "tfc:metal/helmet/black_bronze",
 					"weight": 1,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.5,
+								"min": 0.75,
 								"max": 1
 							}
 						}
@@ -127,14 +157,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/greaves/wrought_iron",
+					"name": "tfc:metal/greaves/black_bronze",
 					"weight": 1,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.5,
+								"min": 0.75,
 								"max": 1
 							}
 						}
@@ -142,14 +172,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/boots/wrought_iron",
+					"name": "tfc:metal/boots/black_bronze",
 					"weight": 1,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.5,
+								"min": 0.75,
 								"max": 1
 							}
 						}
@@ -219,6 +249,36 @@
 							"count": {
 								"min": 5,
 								"max": 17,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:magma_cream",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gunpowder",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 8,
 								"type": "minecraft:uniform"
 							}
 						}

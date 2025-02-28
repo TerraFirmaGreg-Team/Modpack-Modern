@@ -7,83 +7,208 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/chestplate/black_steel",
-					"weight": 6
+					"name": "gtceu:damascus_steel_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/helmet/black_steel",
-					"weight": 6
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/greaves/black_steel",
-					"weight": 6
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/boots/black_steel",
-					"weight": 6
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/sword/black_steel",
-					"weight": 7
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/scythe/black_steel",
-					"weight": 7
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:gem/diamond",
+					"name": "gtceu:damascus_steel_hammer",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:gem/opal",
+					"name": "gtceu:damascus_steel_sword",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_knife",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:gem/ruby",
+					"name": "gtceu:damascus_steel_butchery_knife",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_pickaxe",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:pure_sorrow",
-					"weight": 1
+					"name": "gtceu:damascus_steel_mining_hammer",
+					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:pure_flame",
-					"weight": 1
+					"name": "gtceu:damascus_steel_shovel",
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:pure_death",
-					"weight": 1
+					"name": "gtceu:damascus_steel_spade",
+					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:pure_destruction",
-					"weight": 1
+					"name": "gtceu:damascus_steel_scythe",
+					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:pure_decay",
-					"weight": 1
+					"name": "gtceu:damascus_steel_wire_cutter",
+					"weight": 15
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:lost_page",
-					"weight": 1
+					"name": "gtceu:damascus_steel_wrench",
+					"weight": 15
 				},
 				{
 					"type": "minecraft:item",
-					"name": "beneath:lost_page",
-					"weight": 1
+					"name": "gtceu:damascus_steel_crowbar",
+					"weight": 15
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 4,
+				"max": 6
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:sapphire_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ruby_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:topaz_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:malachite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:yellow_garnet_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:red_garnet_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:amethyst_shard",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:almandine_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:andradite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:blue_topaz_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:green_sapphire_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:grossular_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rutile_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:lazurite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:pyrope_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:sodalite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:spessartine_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:uvarovite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:quartzite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:olivine_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:apatite_gem",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:monazite_gem",
+					"weight": 10
 				}
 			]
 		},
@@ -95,21 +220,6 @@
 				"max": 4
 			},
 			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:spectral_arrow",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 12,
-								"max": 25,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
 				{
 					"type": "minecraft:item",
 					"name": "tfc:metal/ingot/pig_iron",
@@ -127,7 +237,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:metal/ingot/gold",
+					"name": "minecraft:gold_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -142,52 +252,32 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:crying_obsidian",
+					"name": "gtceu:black_bronze_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
 								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rose_gold_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
 								"max": 5,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:gilded_blackstone",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 5,
-								"max": 15,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:magma_cream",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 8,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "beneath:lost_page",
 					"weight": 1
 				}
 			]
