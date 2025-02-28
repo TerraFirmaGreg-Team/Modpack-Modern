@@ -1,0 +1,60 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:enchanted_count_increase"
+						}
+					],
+					"name": "gtceu:ender_pearl_dust"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"type": "minecraft:item",
+			"functions": [
+				{
+					"add": false,
+					"count": {
+						"type": "minecraft:uniform",
+						"max": 1.0,
+						"min": 0.0
+					},
+					"function": "minecraft:set_count"
+				},
+				{
+					"count": {
+						"type": "minecraft:uniform",
+						"max": 1.0,
+						"min": 0.0
+					},
+					"enchantment": "minecraft:looting",
+					"function": "minecraft:enchanted_count_increase"
+				}
+			],
+			"name": "endermanoverhaul:summoner_pearl"
+		}
+	],
+	"random_sequence": "endermanoverhaul:entities/nether_wastes_enderman"
+}
