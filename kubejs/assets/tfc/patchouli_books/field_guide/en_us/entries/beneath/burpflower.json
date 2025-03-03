@@ -5,15 +5,15 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Burpflower$() has the power to put a helpful curse on other blocks. It can be found all around the Beneath. The Burpflower has a facing direction, which is the direction that it performs the action in. Behind it, place a $(thing)Sulfur$() block to charge it."
+			"text": "The $(thing)Burpflower$() has the power to change blocks into other blocks. It can be found all around the Beneath. The Burpflower has a facing direction, which is the direction that it performs the action in. Behind it, place $(thing)Sulfur Powder$() to charge it."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Soon, if there is sulfur, the burpflower will charge, and have a yellow sulfuric flower. It then soon will make a burping sound and expel sulfuric smoke. This smoke has the power to change blocks into other blocks."
+			"text": "Soon, if there is sulfur, the burpflower will charge, and have a yellow sulfuric flower. It then soon will make a burping sound and expel sulfuric smoke."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "First, Nether Bricks can be changed into $(thing)Hellbricks$(). Charcoal piles can be transformed into $(l:beneath/ores_and_minerals#cursecoal)Cursecoal Piles$(). Further, $(thing)Decay$() can be added to $(thing)Soul Farmland$()."
+			"text": "$(item)Pyroxenite Bricks$() can be changed into $(thing)Hellbricks$(). Charcoal piles can be transformed into $(l:beneath/ores_and_minerals#cursecoal)Cursecoal Piles$()."
 		}
 	],
 	"read_by_default": true

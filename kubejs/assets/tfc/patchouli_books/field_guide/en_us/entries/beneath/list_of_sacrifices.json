@@ -1,11 +1,11 @@
 {
-	"name": "temp",
+	"name": "Biomes",
 	"category": "tfc:beneath",
-	"icon": "tfc:gem/diamond",
+	"icon": "minecraft:glow_berries",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "TODO: biomes?"
+			"text": "TFG has a full set of new nether biomes to explore! They are split into two categories: wet and hot. The wet ones are always on top of the hot ones."
 		}
 	],
 	"read_by_default": true

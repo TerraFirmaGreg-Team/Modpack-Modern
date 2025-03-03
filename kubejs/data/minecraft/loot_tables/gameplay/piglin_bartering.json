@@ -22,21 +22,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:silk_cloth",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
 					"name": "minecraft:quartz",
 					"functions": [
 						{
@@ -52,12 +37,22 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:obsidian",
+					"name": "gtceu:tin_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
 					"weight": 1
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:crying_obsidian",
+					"name": "minecraft:copper_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -102,6 +97,21 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "tfg:deepslate_brick",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 8,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:arrow",
 					"functions": [
 						{
@@ -114,51 +124,6 @@
 						}
 					],
 					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:glow_arrow",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 6,
-								"max": 12,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:deepslate",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 8,
-								"max": 16,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:blackstone",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 8,
-								"max": 16,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
 				},
 				{
 					"type": "minecraft:item",
@@ -177,13 +142,28 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/graphite",
+					"name": "gtceu:graphite_dust",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
 								"min": 2,
 								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/sulfur",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 8,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -199,21 +179,6 @@
 							"count": {
 								"min": 2,
 								"max": 4,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "tfc:wood/support/mangrove",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 9,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -283,6 +248,21 @@
 				{
 					"type": "minecraft:item",
 					"name": "beneath:ghost_pepper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glowstone_dust",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
