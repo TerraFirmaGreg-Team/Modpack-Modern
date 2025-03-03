@@ -1,5 +1,5 @@
 {
-	"name": "Piglin Bartering",
+	"name": "Piglins",
 	"category": "tfc:beneath",
 	"icon": "minecraft:gold_ingot",
 	"pages": [
@@ -11,6 +11,11 @@
 		{
 			"type": "patchouli:text",
 			"text": "Results:$(br)$(li)TODO"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Bastions",
+			"text": "Raiding a bastion might be very dangerous, but they can also be very rewarding! There's too much treasure to list, but you can find anything from metal ingots to "
 		}
 	],
 	"read_by_default": true

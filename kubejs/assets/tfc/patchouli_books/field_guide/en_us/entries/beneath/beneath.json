@@ -1,12 +1,34 @@
 {
-	"name": "Beneath?",
+	"name": "What is the Beneath?",
 	"category": "tfc:beneath",
-	"icon": "minecraft:blackstone",
+	"icon": "minecraft:deepslate",
 	"priority": true,
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "TODO: intro to beneath"
+			"text": "The $(thing)Beneath$() is a TFC Addon that adds support for the Nether.$(br)However, the Nether doesn't really fit the theme of TFG, so we've changed it a bunch.$(br)Instead, it's now themed around really deep caves, directly below the Overworld."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The Beneath is balanced around mid to late $(thing)primitive age$(). It's more dangerous than the overworld, so we recommend a full set of bronze armor + a metal shield as a minimum, as well as plenty of food, water, and other tools."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed ore veins, as well as other treasures."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "Entering the Beneath",
+			"text": "Nether portals are too magical!$(br)Instead, to travel Beneath, simply stand on overworld bedrock for a few seconds.$(br)To return, stand directly below the ceiling bedrock for a few seconds."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
 		}
 	],
 	"read_by_default": true

@@ -310,12 +310,27 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "gtceu:silver_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
 					"name": "gtceu:rose_gold_ingot",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 1,
+								"min": 2,
 								"max": 5,
 								"type": "minecraft:uniform"
 							}
@@ -347,21 +362,6 @@
 							"count": {
 								"min": 1,
 								"max": 3,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 2
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:long_bronze_rod",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
