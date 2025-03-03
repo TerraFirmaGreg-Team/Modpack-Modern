@@ -22,6 +22,36 @@
 				},
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:charcoal",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:quartz",
 					"functions": [
 						{
@@ -142,13 +172,13 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:graphite_dust",
+					"name": "gtceu:raw_graphite",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 2,
-								"max": 4,
+								"min": 1,
+								"max": 2,
 								"type": "minecraft:uniform"
 							}
 						}
