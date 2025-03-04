@@ -54,6 +54,10 @@ const registerTFGBlocks = (event) => {
 		.stoneSoundType()
 		.noItem()
 
+	event.create('tfg:loose/deepslate', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/deepslate')
+		.rockTypeModel('metamorphic')
+
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
 
