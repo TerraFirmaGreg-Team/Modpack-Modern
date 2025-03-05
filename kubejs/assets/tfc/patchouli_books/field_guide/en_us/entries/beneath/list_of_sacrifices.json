@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "TFG has a full set of new nether biomes to explore! They are split into two categories: wet and hot. The wet ones are always on top of the hot ones."
+			"text": "TFG has a full set of new nether biomes to explore! They are split into two categories: $(thing)wet$() and $(thing)hot$(). The wet ones are always on top of the hot ones."
 		}
 	],
 	"read_by_default": true
