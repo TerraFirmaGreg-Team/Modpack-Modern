@@ -9,7 +9,7 @@
 						"block": "minecraft:blackstone"
 					},
 					"state": {
-						"Name": "tfg:hardened_blackstone"
+						"Name": "tfg:rock/hardened_blackstone"
 					}
 				},
 				{
@@ -18,7 +18,7 @@
 						"block": "minecraft:deepslate"
 					},
 					"state": {
-						"Name": "tfg:hardened_deepslate"
+						"Name": "tfg:rock/hardened_deepslate"
 					}
 				},
 				{
@@ -81,7 +81,7 @@
 						"tag": "tfc:can_landslide"
 					},
 					"state": {
-						"Name": "tfg:hardened_deepslate"
+						"Name": "tfg:rock/hardened_deepslate"
 					}
 				}
 			]

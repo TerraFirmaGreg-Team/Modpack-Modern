@@ -19,9 +19,9 @@
 			{
 				"replace": [
 					"minecraft:deepslate",
-					"tfg:hardened_deepslate",
+					"tfg:rock/hardened_deepslate",
 					"minecraft:blackstone",
-					"tfg:hardened_blackstone"
+					"tfg:rock/hardened_blackstone"
 				],
 				"with": [
 					{

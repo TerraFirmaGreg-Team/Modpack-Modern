@@ -53,7 +53,7 @@
 					"minecraft:clay",
 					"minecraft:moss_block",
 					"minecraft:deepslate",
-					"tfg:hardened_deepslate"
+					"tfg:rock/hardened_deepslate"
 				],
 				"muddy_roots_provider": {
 					"type": "minecraft:simple_state_provider",
