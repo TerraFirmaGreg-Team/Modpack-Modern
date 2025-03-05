@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The $(thing)Beneath$() is a TFC Addon that adds support for the Nether.$(br)However, the Nether doesn't really fit the theme of TFG, so we've changed it a bunch.$(br)Instead, it's now themed around really deep caves, directly below the Overworld."
+			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Primitive Age$(). It's more dangerous than the surface, so we recommend a full set of bronze armor + a metal shield as a minimum, as well as plenty of food, water, and other tools."
 		},
 		{
 			"type": "patchouli:text",
@@ -14,17 +14,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The Beneath is balanced around mid to late $(thing)primitive age$(). It's more dangerous than the overworld, so we recommend a full set of bronze armor + a metal shield as a minimum, as well as plenty of food, water, and other tools."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed ore veins, as well as other treasures."
+			"text": "In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "entering",
 			"title": "Entering the Beneath",
-			"text": "Nether portals are too magical!$(br)Instead, to travel Beneath, simply stand on overworld bedrock for a few seconds.$(br)To return, stand directly below the ceiling bedrock for a few seconds."
+			"text": "To travel Beneath, simply stand on overworld bedrock for a few seconds.$(br)To return, stand directly below the ceiling bedrock for a few seconds."
 		},
 		{
 			"type": "patchouli:text",

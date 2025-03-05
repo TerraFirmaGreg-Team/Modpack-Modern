@@ -5,11 +5,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "Soul soil may be tilled to form $(thing)Soul Farmland$(). Crops work a little differently when you are Beneath. There are five nutrients: Death, Destruction, Decay, Sorrow, and Flame. Nutrients are viewed by holding a hoe, but will not appear unless they have a value greater than zero."
+			"text": "$(thing)Undersoil$() may be tilled to form $(thing)Undersoil Farmland$(). Crops work a little differently when you are Beneath. Beneath crops cannot die, but still need block light to grow."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Crops have a preferred nutrient: Instead of consuming it, this is the nutrient they will add to over time. The crop will happily consume the other four nutrients in order to grow. Nether crops cannot die, but still need block light to grow."
+			"text": "Crops have a preferred nutrient: Instead of consuming it, this is the nutrient they will add to over time. The crop will happily consume the other four nutrients in order to grow."
 		},
 		{
 			"type": "patchouli:text",
