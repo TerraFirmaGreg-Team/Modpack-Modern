@@ -48,7 +48,7 @@
 			"tfc:rock/hardened/andesite",
 			"tfc:rock/raw/dacite",
 			"tfc:rock/hardened/dacite",
-			"tfg:hardened_deepslate"
+			"tfg:rock/hardened_deepslate"
 		],
 		"can_place_on_ceiling": true,
 		"can_place_on_floor": false,

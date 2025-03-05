@@ -13,7 +13,7 @@
 		"ground_state": {
 			"type": "minecraft:simple_state_provider",
 			"state": {
-				"Name": "tfg:hardened_deepslate"
+				"Name": "tfg:rock/hardened_deepslate"
 			}
 		},
 		"replaceable": "#minecraft:moss_replaceable",

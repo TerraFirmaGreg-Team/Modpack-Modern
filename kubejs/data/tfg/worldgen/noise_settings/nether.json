@@ -513,7 +513,7 @@
 							"then_run": {
 								"type": "minecraft:block",
 								"result_state": {
-									"Name": "tfg:hardened_blackstone"
+									"Name": "tfg:rock/hardened_blackstone"
 								}
 							}
 						},
@@ -553,7 +553,7 @@
 							"then_run": {
 								"type": "minecraft:block",
 								"result_state": {
-									"Name": "tfg:hardened_blackstone"
+									"Name": "tfg:rock/hardened_blackstone"
 								}
 							}
 						},
@@ -758,7 +758,7 @@
 				"then_run": {
 					"type": "minecraft:block",
 					"result_state": {
-						"Name": "tfg:hardened_deepslate"
+						"Name": "tfg:rock/hardened_deepslate"
 					}
 				}
 			},

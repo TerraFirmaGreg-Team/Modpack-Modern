@@ -51,7 +51,7 @@
 			{
 				"replace": [
 					"minecraft:blackstone",
-					"tfg:hardened_blackstone"
+					"tfg:rock/hardened_blackstone"
 				],
 				"with": [
 					{
