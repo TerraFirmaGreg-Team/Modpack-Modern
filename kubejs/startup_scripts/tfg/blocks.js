@@ -15,7 +15,7 @@ const registerTFGBlocks = (event) => {
 
 	// #region Nether blocks
 
-	event.create('tfg:hardened_deepslate')
+	event.create('tfg:rock/hardened_deepslate')
 		.soundType('deepslate')
 		.property(BlockProperties.AXIS)
 		.requiresTool(true)
@@ -29,7 +29,7 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 		
-	event.create('tfg:hardened_blackstone')
+	event.create('tfg:rock/hardened_blackstone')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
