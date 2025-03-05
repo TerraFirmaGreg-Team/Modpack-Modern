@@ -152,9 +152,9 @@ const registerTFGRecipes = (event) => {
 	// #region Collapse/landslide recipes (needed for them to actually function)
 
 	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'minecraft:deepslate')
-	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'tfg:hardened_deepslate')
+	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', 'tfg:rock/hardened_deepslate')
 	event.recipes.tfc.collapse('minecraft:blackstone', 'minecraft:blackstone')
-	event.recipes.tfc.collapse('minecraft:blackstone', 'tfg:hardened_blackstone')
+	event.recipes.tfc.collapse('minecraft:blackstone', 'tfg:rock/hardened_blackstone')
 	event.recipes.tfc.collapse('minecraft:dripstone_block', 'minecraft:dripstone_block')
 	event.recipes.tfc.collapse('tfg:ash_pile', 'tfg:ash_pile')
 	
