@@ -52,9 +52,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     registerAE2Materials(event)
-    registerGTCEuMaterials(event)
     registerTFCMaterials(event)
     registerTFGMaterials(event)
+    registerGTCEuMaterials(event)
 })
 
 /**
