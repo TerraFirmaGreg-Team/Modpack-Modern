@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lush Hollow (Upper)",
+			"title": "Lush Hollow",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lush_hollow.png"
 			],
@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Decaying Caverns (Upper)",
+			"title": "Decaying Caverns",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/decaying_caverns.png"
 			],
@@ -27,7 +27,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Webbed Lair (Upper)",
+			"title": "Webbed Lair",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/webbed_lair.png"
 			],
@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Ash Forest (Lower)",
+			"title": "Ash Forest",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/ash_forest.png"
 			],
@@ -45,7 +45,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Lava Floes (Lower)",
+			"title": "Lava Floes",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/lava_floes.png"
 			],
@@ -54,7 +54,7 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Basalt Deltas (Lower)",
+			"title": "Basalt Deltas",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/basalt_deltas.png"
 			],
@@ -63,12 +63,12 @@
 		},
 		{
 			"type": "patchouli:image",
-			"title": "Deep Caves (Both)",
+			"title": "Deep Caves",
 			"images": [
 				"tfg:textures/gui/field_guide/nether/deep_caves.png"
 			],
 			"border": true,
-			"text": "Between the other biomes are more plain areas of either Gabbro, Schist, Granite, Diorite, and Gneiss."
+			"text": "Between the other biomes are more plain areas of either Gabbro, Schist, Granite, Diorite, and Gneiss.$(br)"
 		}
 	],
 	"read_by_default": true

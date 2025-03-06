@@ -82,6 +82,7 @@ const registerTFGPlacedFeatures = (event) => {
 	// #region Nether ores
 
 	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
+	event.add('tfg:nether_veins', 'beneath:vein/sylvite')
 	event.add('tfg:nether_veins', 'beneath:vein/crackrack_pipe')
 
 	// Lower only

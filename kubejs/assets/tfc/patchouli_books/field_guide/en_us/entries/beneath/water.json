@@ -14,12 +14,13 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "These mushrooms spawn freely around the place Beneath the overworld. Fresh fruits (such as $(thing)Glow Berries$()) may also be squeezed into water.$(br2)You can also find water and $(thing)Hot Springs$() in the upper areas of the Beneath."
+			"text": "These mushrooms spawn all over the Beneath. Fresh fruits (such as $(thing)Glow Berries$()) may also be squeezed into water.$(br2)You can also find water and $(thing)Hot Springs$() in the upper areas of the Beneath."
 		},
 		{
 			"type": "patchouli:spotlight",
+			"title": "Cooling Down",
 			"item": "minecraft:packed_ice",
-			"text": "Struggling to stay cool? Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and packed and Blue ice won't melt."
+			"text": "Struggling to stay cool? Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and $(thing)Packed$() and $(thing)Blue$() ice won't melt."
 		}
 	],
 	"read_by_default": true
