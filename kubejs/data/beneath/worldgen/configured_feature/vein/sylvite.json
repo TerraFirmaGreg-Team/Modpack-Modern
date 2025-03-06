@@ -1,0 +1,26 @@
+{
+	"__comment__": "This file was automatically created by mcresources",
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 35,
+		"size": 17,
+		"density": 0.6,
+		"min_y": 64,
+		"max_y": 127,
+		"random_name": "sylvite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"tfg:rock/hardened_blackstone"
+				],
+				"with": [
+					{
+						"weight": 1,
+						"block": "beneath:ore/blackstone_sylvite"
+					}
+				]
+			}
+		]
+	}
+}

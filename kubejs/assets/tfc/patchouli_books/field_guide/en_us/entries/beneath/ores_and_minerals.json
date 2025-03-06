@@ -9,13 +9,55 @@
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "minecraft:deepslate",
+			"title": "Migmatite",
+			"item": { "tag": "forge:ores_in_ground/deepslate" },
 			"text": "The most common rock type found is Migmatite. This deep metamorphic rock contains a wide variety of ores you'd normally find in other rock types on the surface."
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "minecraft:blackstone",
-			"text": "TODO: replace this with the blackstone ores tag$(br)Around the level of the lava oceans, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
+			"title": "Pyroxenite",
+			"item": { "tag": "forge:ores_in_ground/blackstone" },
+			"text": "Around the level of the lava oceans, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "cursecoal",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:ore/nether_cursecoal"
+				}
+			},
+			"name": "Anthracite",
+			"text": "Anthracite is a powerful $(l:beneath/hellforge)fuel$(). It replaces Migmatite in the upper half of the Beneath.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "sylvite",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:ore/blackstone_sylvite"
+				}
+			},
+			"name": "Sylvite",
+			"text": "Sylvite is an Overworld fertiliser that can be found replacing Pyroxenite in the lower half of the Beneath.",
+			"enable_visualize": false
 		}
 	],
 	"read_by_default": true
