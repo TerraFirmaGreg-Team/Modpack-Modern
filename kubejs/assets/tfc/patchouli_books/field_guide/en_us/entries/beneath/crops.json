@@ -13,15 +13,11 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The fertilizers are as follows: $(br)$(br)Sulfur: 20% Decay, 10% Flame$(br)Gunpowder: 60% Destruction, 10% Flame, 40% Death$(br)Ghast Tear: 30% Sorrow$(br)Blaze Powder: 20% Flame"
+			"text": "The fertilizers are as follows: $(br)$(br)Sulfur: 20% Heat, 10% Sulfic$(br)Gunpowder: 60% Niter, 10% Sulfic, 40% Deflagration$(br)Blaze Powder: 20% Sulfic"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "The fertilizers are also available in obtainable 'pure' forms from chest loot. Crafting these together yields $(thing)Agonizing Fertilizer$(), which has them all in a neat package."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "Crimson Roots (Decay) and Warped Roots (Destruction) are growable as crops. These are most useful as means of improving the nutrient quality of your soul farmland. Nether Wart (Death), found in fortresses, can also be grown as a crop."
+			"text": "You can also craft $(thing)Agonizing Fertilizer$(), which has all of the nutrients in a neat package."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -39,14 +35,14 @@
 				}
 			},
 			"name": "Gleamflower",
-			"text": "The Gleamflower (Flame) can be grown as a crop, and also found in the world as a plant. It is useful as an infinite light source.",
+			"text": "The Gleamflower (Sulfic) can be grown as a crop, and also found in the world as a plant. It is useful as an infinite light source.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:spotlight",
 			"item": "beneath:ghost_pepper",
 			"link_recipes": false,
-			"text": "Ghost Peppers (Sorrow) are an edible vegetable that can be grown in the Beneath!"
+			"text": "Ghost Peppers (Pep) are an edible vegetable that can be grown in the Beneath! You can find their seeds in Bastions."
 		}
 	],
 	"read_by_default": true

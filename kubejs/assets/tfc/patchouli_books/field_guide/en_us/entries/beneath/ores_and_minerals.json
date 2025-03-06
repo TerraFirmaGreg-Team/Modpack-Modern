@@ -5,7 +5,17 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "This page is here to override the default Beneath ores and minerals page.$(br2)Information about ores can be found in the $(l:tfg_ores)Ores in TFG$() category."
+			"text": "The ores you can find Beneath are mostly similar to what you can find on the surface, but with a few changes. Consult the $(l:tfg_ores)Ores in TFG$() category for exact details."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:deepslate",
+			"text": "The most common rock type found is Migmatite. This deep metamorphic rock contains a wide variety of ores you'd normally find in other rock types on the surface."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:blackstone",
+			"text": "TODO: replace this with the blackstone ores tag$(br)Around the level of the lava oceans, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
 		}
 	],
 	"read_by_default": true
