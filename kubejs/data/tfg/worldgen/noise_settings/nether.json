@@ -254,7 +254,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:nether/fungi_forest"
+						"tfg:nether/decaying_caverns"
 					]
 				},
 				"then_run": {
@@ -359,7 +359,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:nether/lava_rivers"
+						"tfg:nether/lava_floes"
 					]
 				},
 				"then_run": {
