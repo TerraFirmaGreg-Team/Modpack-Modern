@@ -2264,14 +2264,43 @@ const registerMinecraftRecipes = (event) => {
 
     //#region Выход: Книга
 
-    event.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+    e.remove({ id: 'gtceu:shaped/book' })
+    e.remove({ id: 'gtceu:extractor/bookshelf_extraction' })
+    e.remove({ id: 'gtceu:assembler/book_from_leather' })
+    e.remove({ id: 'minecraft:book' })
 
-    event.shapeless('minecraft:book', [
-        'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
-    ]).id('minecraft:book')
+    e.shaped('minecraft:book', [
+        'ABC',
+        'ABD',
+        'ABC'
+    ], {
+        A: '#forge:string',
+        B: 'minecraft:paper',
+        B: '#forge:paper',
+        C: '#forge:leather',
+        D: 'gtceu:sticky_resin'
+    }).id('tfg:shaped/book')
+
+    e.recipes.gtceu.assembler('tfg:assembler/book_from_leather')
+    	.itemInputs('3x #forge:paper', '#forge:leather')
+    	.itemOutputs('minecraft:book')
+    	.inputFluids(Fluid.of('gtceu:glue', 40))
+    	.EUt(7).duration(30)
 
     //#endregion
 
+    //#region Бирка
+	
+    e.remove({ id: 'gtceu:assembler/name_tag' })
+
+    e.recipes.gtceu.assembler('tfg:assembler/name_tag')
+    	.itemInputs('minecraft:lead', '#forge:leather')
+    	.itemOutputs('minecraft:name_tag')
+    	.inputFluids(Fluid.of('gtceu:glue', 100))
+    	.EUt(7).duration(100)
+	
+    //#endregion
+	
     //#region Выход: Трибуна
 
     event.remove({ id: 'tfc:crafting/vanilla/lectern' })
@@ -2550,8 +2579,8 @@ const registerMinecraftRecipes = (event) => {
     event.remove({ id: 'minecraft:item_frame' })
 
     event.recipes.gtceu.assembler('item_frame')             
-        .itemInputs('8x #tfc:lumber', 'minecraft:leather')
-        .itemOutputs('8x minecraft:item_frame')
+        .itemInputs('8x #forge:rods/wooden', '#forge:leather')
+        .itemOutputs('minecraft:item_frame')
         .duration(100)
         .EUt(4)
 
@@ -3226,8 +3255,67 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(32)
 
     //#endregion
+
+
+    //#region Кожа из кожаных предметов в дробилке
+    e.recipes.gtceu.macerator('tfg:leather_from_boots')
+    	.itemInputs('minecraft:leather_boots')
+    	.itemOutputs('minecraft:leather')
+    	.EUt(7).duration(80)
+
+    e.recipes.gtceu.macerator('tfg:leather_from_saddle')
+    	.itemInputs('minecraft:saddle')
+    	.itemOutputs('minecraft:leather')
+    	.EUt(7).duration(80)
+
+    e.recipes.gtceu.macerator('tfg:leather_from_horse_armor')
+    	.itemInputs('minecraft:leather_horse_armor')
+    	.itemOutputs('minecraft:leather')
+    	.EUt(7).duration(80)
+
+    e.recipes.gtceu.macerator('tfg:leather_from_helmet')
+    	.itemInputs('minecraft:leather_helmet')
+    	.itemOutputs('minecraft:leather')
+    	.EUt(7).duration(80)
+
+    e.recipes.gtceu.macerator('tfg:leather_from_leggings')
+    	.itemInputs('minecraft:leather_leggings')
+    	.itemOutputs('minecraft:leather')
+    	.EUt(7).duration(80)
+
+    e.recipes.gtceu.macerator('tfg:leather_from_chestplate')
+    	.itemInputs('minecraft:leather_chestplate')
+    	.itemOutputs('minecraft:leather')
+    	.EUt(7).duration(80)
+    //#endregion
+
+    //#region Подзорная труба
+    e.remove({ id: 'tfc:crafting/vanilla/spyglass' })
+
+    e.shaped('minecraft:spyglass', [
+        'hAs',
+        'BCD',
+        'fE '
+    ], {
+        A: '#tfg:all_glass_lenses',
+        B: '#forge:leather',
+        C: '#forge:rings/gold',
+        D: '#tfg:all_iron_screws',
+        E: '#forge:plates/copper',
+        h: '#forge:tools/hammers',
+        s: '#forge:tools/screwdrivers',
+        f: '#forge:tools/files',
+    }).id('tfg:workbench/spyglass')
+
+    e.recipes.gtceu.assembler('tfg:spyglass')             
+        .itemInputs('#tfg:all_glass_lenses', '#forge:rings/gold', '#forge:plates/copper', '#forge:leather')
+        .itemOutputs('minecraft:spyglass')
+        .EUt(4).duration(100)
+    //#endregion
+	
 	
 	// Nether Brick
 	
 	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
+
 }

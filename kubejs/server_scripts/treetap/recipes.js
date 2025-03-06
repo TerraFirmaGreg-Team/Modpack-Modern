@@ -9,6 +9,12 @@ const registerTreeTapRecipes = (event) => {
     event.recipes.tfc.anvil('treetap:tap', '#forge:ingots/copper', [ 'draw_not_last', 'hit_not_last', 'shrink_last' ])
         .id('tfg:anvil/treetap')
 
+    e.recipes.gtceu.assembler(`tfg:treetap`)
+        .itemInputs('#forge:ingots/copper')
+        .circuit(12)
+        .itemOutputs('treetap:tap')
+        .EUt(GTValues.VA[GTValues.ULV]).duration(100)
+
     // TreeTap Heating
     event.recipes.tfc.heating('treetap:tap', 1080)
         .resultFluid(Fluid.of('gtceu:copper', 144))
