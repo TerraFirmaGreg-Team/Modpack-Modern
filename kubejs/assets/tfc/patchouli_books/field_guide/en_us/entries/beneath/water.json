@@ -1,5 +1,5 @@
 {
-	"name": "Water",
+	"name": "Staying Hydrated",
 	"category": "tfc:beneath",
 	"icon": "beneath:juicer",
 	"pages": [
@@ -10,11 +10,16 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "beneath:crafting/juicer",
-			"text": "The juicer is a drinking vessel that allows the compression of $(thing)Mushrooms$() into water. The single-slot user interface automatically processes inserted mushrooms into water."
+			"text": "The juicer is a drinking vessel that allows the compression of $(thing)Mushrooms$() and $(thing)Fruit$() into water. The single-slot user interface automatically processes inserted mushrooms into water."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Mushrooms spawn freely around the place Beneath the overworld. Fresh fruits may also be squeezed into water, if you have them handy."
+			"text": "These mushrooms spawn freely around the place Beneath the overworld. Fresh fruits (such as $(thing)Glow Berries$()) may also be squeezed into water.$(br2)You can also find water and $(thing)Hot Springs$() in the upper areas of the Beneath."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:packed_ice",
+			"text": "Struggling to stay cool? Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and packed and Blue ice won't melt."
 		}
 	],
 	"read_by_default": true
