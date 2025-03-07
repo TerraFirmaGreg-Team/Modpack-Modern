@@ -14,7 +14,7 @@ const registerTFCTagPrefixes = (event) => {
 
     // TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
 
-    // TagPrefix.ORES.remove(TagPrefix.ore)
+    TagPrefix.ORES.remove(TagPrefix.ore)
     TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
     TagPrefix.ORES.remove(TagPrefix.oreTuff)
     TagPrefix.ORES.remove(TagPrefix.oreSand)
@@ -29,6 +29,7 @@ const registerTFCTagPrefixes = (event) => {
     TagPrefix.ORES.remove(TagPrefix.oreGranite)
 
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
+        console.log(stoneTypeName)
         const material = GTCEuAPI.materialManager.getMaterial(stoneTypeName)
         
         // Kjs sucks
@@ -50,8 +51,11 @@ const registerTFCTagPrefixes = (event) => {
             // .templateProperties(template.requiresCorrectToolForDrops().strength(3, 3))
             .unificationEnabled(true)
             .materialSupplier(() => material)
+            .doubleDrops(false)
 
             .materialIconType(GTMaterialIconType.ore)
             .generationCondition(ItemGenerationCondition.hasOreProperty)
     })
+
+    console.log(`Ores ${TagPrefix.ORES.keySet()}`)
 }

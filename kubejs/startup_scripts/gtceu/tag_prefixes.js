@@ -206,8 +206,6 @@ const registerGTCEuTagPrefixes = (event) => {
             .and(mat => mat.getProperty(PropertyKey.TOOL).hasType(GTToolType.SPADE))
         )
 
-        console.log("just another check")
-
     event.create("propick_head")
         .defaultTagPath("propick_heads/%s")
         .unformattedTagPath("propick_heads")
@@ -264,7 +262,7 @@ const registerGTCEuTagPrefixes = (event) => {
         .materialIconType(poorRawOreIcon)
         .unificationEnabled(true)
         .generateItem(true)
-        .generationCondition(TagPrefix.Conditions.hasToolProperty);
+        .generationCondition(TagPrefix.Conditions.hasOreProperty);
 
     event.create("rich_raw")
         .defaultTagPath("rich_raw_materials/%s")
@@ -272,7 +270,7 @@ const registerGTCEuTagPrefixes = (event) => {
         .materialIconType(richRawOreIcon)
         .unificationEnabled(true)
         .generateItem(true)
-        .generationCondition(TagPrefix.Conditions.hasToolProperty);
+        .generationCondition(TagPrefix.Conditions.hasOreProperty);
 
     event.create("small_ore")
         .materialAmount(GTValues.M / 4)

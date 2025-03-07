@@ -262,10 +262,10 @@ const registerGTCEuMaterialModification = (event) => {
 //        /* Другое */
 
     // TODO: Exception needs to check the wizardry
-    GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    // GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
     GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
-    GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    // GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 //
     GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
     GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
@@ -280,24 +280,25 @@ const registerGTCEuMaterialModification = (event) => {
     GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
     GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 //
-//        Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2F, 1.0F, 8, 1, new GTToolType[]{
-//                GTToolType.AXE,
-//                GTToolType.HARD_HAMMER,
-//                GTToolType.HOE,
-//                GTToolType.KNIFE,
-//                GTToolType.SHOVEL
-//        }).build());
+    GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
+            GTToolType.AXE,
+            GTToolType.HARD_HAMMER,
+            GTToolType.HOE,
+            GTToolType.KNIFE,
+            GTToolType.SHOVEL
+    ]).build());
+
     GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2).build());
     GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 2.0, 178, 2).build());
     GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.3, 2.0, 204, 2).build());
     GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3).build());
 //
-//        for (var material : GTCEuAPI.materialManager.getRegisteredMaterials()) {
-//            var toolProperty = material.getProperty(PropertyKey.TOOL);
-//            if (toolProperty == null) continue;
-//
-//            toolProperty.setDurability(toolProperty.getDurability() * 6);
-//        }
+    for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+        var toolProperty = material.getProperty(PropertyKey.TOOL);
+        if (toolProperty == null) continue;
+
+        toolProperty.setDurability(toolProperty.getDurability() * 6);
+    }
 //
 //        /* AE 2 */
 //        if (TFGModsResolver.AE2.isLoaded()) {
@@ -314,4 +315,8 @@ const registerGTCEuMaterialModification = (event) => {
 //            block.modifyMaterialAmount(TFGMaterials.Fluix, 4);
 //        }
 //    }
+
+    console.log(GTMaterials)
+    console.log(GTMaterials.Aluminium)
+    console.log(GTMaterials.Aluminium.flags)
 }

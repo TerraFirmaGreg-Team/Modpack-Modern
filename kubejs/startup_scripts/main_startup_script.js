@@ -59,8 +59,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 */
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     console.log("gtceu:tag_prefix")
-    registerGTCEuTagPrefixes(event)
     registerTFCTagPrefixes(event)
+    registerGTCEuTagPrefixes(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
