@@ -132,6 +132,7 @@ ServerEvents.recipes(event => {
     registerAE2InsertExportCardRecipes(event)
     registerAE2NetworkAnalyzerRecipes(event)
     registerAE2WTLibRecipes(event)
+    registerBeneathRecipes(event)
     registerChiselAndBitsRecipes(event)
     registerComputerCraftRecipes(event)
     registerCreateRecipes(event)
