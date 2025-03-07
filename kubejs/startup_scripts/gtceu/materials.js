@@ -1,7 +1,4 @@
-// priority: 1
-
 const registerGTCEuMaterials = (event) => {
-    console.log("registerGTCEuMaterials", Object.keys(event))
 }
 
 const registerGTCEuMaterialModification = (event) => {
@@ -11,6 +8,35 @@ const registerGTCEuMaterialModification = (event) => {
 
     const $TFG_PROPERTY_KEYS = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
     const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
+    const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
+
+    const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
+
+
+    const KJSTagPrefix = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.built.KJSTagPrefix')
+
+    const {
+        HAS_TFC_TOOL,
+        HAS_TFC_ARMOR,
+        HAS_TFC_UTILITY,
+        HAS_PLATED_BLOCK,
+        CAN_BE_UNMOLDED,
+        GENERATE_BELL,
+        GENERATE_DOUBLE_INGOTS,
+        GENERATE_FIRMALIFE_GREENHOUSE_BLOCKS,
+        HAS_SMALL_TFC_ORE,
+        HAS_SMALL_NATIVE_TFC_ORE
+    } = TFGMaterialFlags
+
+    const {
+        GENERATE_ROD,
+        GENERATE_LONG_ROD,
+        GENERATE_BOLT_SCREW,
+        GENERATE_ROTOR,
+        GENERATE_SPRING,
+        GENERATE_SMALL_GEAR,
+        GENERATE_FRAME
+    } = $MATERIAL_FLAGS
 
     const TFGMetalMaterial = {
         "PIG_IRON" : GTCEuAPI.materialManager.getMaterial('tfg:pig_iron'),
@@ -104,40 +130,44 @@ const registerGTCEuMaterialModification = (event) => {
         RED_STEEL: GTMaterials.RedSteel,
         BLUE_STEEL: GTMaterials.BlueSteel
     }
-    const ignorePropick = ([key, material]) => TFGTagPrefix.toolHeadPropick.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.PROPICK_HEAD).get());
+
+    console.log(TagPrefix.PREFIXES)
+    console.log(KJSTagPrefix.PREFIXES)
+
+    const ignorePropick = ([key, material]) => KJSTagPrefix.getPrefix("propick_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.PROPICK_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignorePropick )
     
-    const ignoreJavelin = ([key, material]) => TFGTagPrefix.toolHeadJavelin.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.JAVELIN_HEAD).get());
+    const ignoreJavelin = ([key, material]) => KJSTagPrefix.getPrefix("javelin_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.JAVELIN_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreJavelin )
-    const ignoreChisel = ([key, material]) => TFGTagPrefix.toolHeadChisel.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHISEL_HEAD).get());
+    const ignoreChisel = ([key, material]) => KJSTagPrefix.getPrefix("chisel_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHISEL_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreChisel )
-    const ignoreMace = ([key, material]) => TFGTagPrefix.toolHeadMace.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.MACE_HEAD).get());
+    const ignoreMace = ([key, material]) => KJSTagPrefix.getPrefix("mace_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.MACE_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreMace )
-    const ignoreAnvil = ([key, material]) => TFGTagPrefix.anvil.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.ANVIL).get());
+    const ignoreAnvil = ([key, material]) => KJSTagPrefix.getPrefix("anvil").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.ANVIL).get());
     Object.entries(toolHeadIgnore).forEach( ignoreAnvil )
 
-    const ignoreLamp = ([key, material]) => TFGTagPrefix.lamp.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.LAMP).get());
+    const ignoreLamp = ([key, material]) => KJSTagPrefix.getPrefix("lamp").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.LAMP).get());
     Object.entries(toolHeadIgnore).forEach( ignoreLamp )
 
-    const ignoreLampUnfinished = ([key, material]) => TFGTagPrefix.lampUnfinished.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.UNFINISHED_LAMP).get());
+    const ignoreLampUnfinished = ([key, material]) => KJSTagPrefix.getPrefix("unfinished_lamp").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.UNFINISHED_LAMP).get());
     Object.entries(toolHeadIgnore).forEach( ignoreLampUnfinished )
 
-    const ignoreTrapdoor = ([key, material]) => TFGTagPrefix.trapdoor.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.TRAPDOOR).get());
+    const ignoreTrapdoor = ([key, material]) => KJSTagPrefix.getPrefix("trapdoor").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.TRAPDOOR).get());
     Object.entries(toolHeadIgnore).forEach( ignoreTrapdoor )
     
-    const ignoreChain = ([key, material]) => TFGTagPrefix.chain.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHAIN).get());
+    const ignoreChain = ([key, material]) => KJSTagPrefix.getPrefix("chain").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHAIN).get());
     Object.entries(toolHeadIgnore).forEach( ignoreChain )
 
-    const ignoreBars = ([key, material]) => TFGTagPrefix.bars.setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.BARS).get());
+    const ignoreBars = ([key, material]) => KJSTagPrefix.getPrefix("bars").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.BARS).get());
     Object.entries(toolHeadIgnore).forEach( ignoreBars )
 
-    // TFGTagPrefix.bell.setIgnored(GTMaterials.Gold, Blocks.BELL);
-    // TFGTagPrefix.bell.setIgnored(GTMaterials.Brass, $TFC_BLOCKS.BRASS_BELL);
-    // TFGTagPrefix.bell.setIgnored(GTMaterials.Bronze, $TFC_BLOCKS.BRONZE_BELL);
+    KJSTagPrefix.getPrefix("bell").setIgnored(GTMaterials.Gold, Blocks.BELL);
+    KJSTagPrefix.getPrefix("bell").setIgnored(GTMaterials.Brass, $TFC_BLOCKS.BRASS_BELL);
+    KJSTagPrefix.getPrefix("bell").setIgnored(GTMaterials.Bronze, $TFC_BLOCKS.BRONZE_BELL);
 
-    // GTMaterials.Gold.addFlags(TFGMaterialFlags.GENERATE_BELL);
-    // GTMaterials.Brass.addFlags(TFGMaterialFlags.GENERATE_BELL);
-    // GTMaterials.Bronze.addFlags(TFGMaterialFlags.GENERATE_BELL);
+    GTMaterials.Gold.addFlags(GENERATE_BELL);
+    GTMaterials.Brass.addFlags(GENERATE_BELL);
+    GTMaterials.Bronze.addFlags(GENERATE_BELL);
 
     const platedIgnore = {
        COPPER: GTMaterials.Copper,
@@ -160,95 +190,95 @@ const registerGTCEuMaterialModification = (event) => {
        ZINC: GTMaterials.Zinc
     }
 
-    // const ignoreBlockPlated = ([key, material]) => TFGTagPrefix.blockPlated.setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK).get())
+    const ignoreBlockPlated = ([key, material]) => KJSTagPrefix.getPrefix("plated_block").setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK).get())
 
-    // Object.entries(platedIgnore).forEach( ignoreBlockPlated )
+    Object.entries(platedIgnore).forEach( ignoreBlockPlated )
 
-    // const ignoreStairPlated = ([key, material]) => TFGTagPrefix.stairPlated.setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK_STAIRS).get())
+    const ignoreStairPlated = ([key, material]) => KJSTagPrefix.getPrefix("plated_stair").setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK_STAIRS).get())
 
-    // Object.entries(platedIgnore).forEach( ignoreStairPlated )
+    Object.entries(platedIgnore).forEach( ignoreStairPlated )
 
-    // const ignoreSlabPlated = ([key, material]) => TFGTagPrefix.slabPlated.setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK_SLAB).get())
+    const ignoreSlabPlated = ([key, material]) => KJSTagPrefix.getPrefix("plated_slab").setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK_SLAB).get())
 
-    // Object.entries(platedIgnore).forEach( ignoreSlabPlated )
+    Object.entries(platedIgnore).forEach( ignoreSlabPlated )
 
-
-
-//        oreSmall.setIgnored(Bismuthinite, () -> TFCBlocks.SMALL_ORES.get(Ore.BISMUTHINITE).get());
-//        oreSmall.setIgnored(Cassiterite, () -> TFCBlocks.SMALL_ORES.get(Ore.CASSITERITE).get());
-//        oreSmall.setIgnored(Garnierite, () -> TFCBlocks.SMALL_ORES.get(Ore.GARNIERITE).get());
-//        oreSmall.setIgnored(Hematite, () -> TFCBlocks.SMALL_ORES.get(Ore.HEMATITE).get());
-//        oreSmall.setIgnored(Limonite, () -> TFCBlocks.SMALL_ORES.get(Ore.LIMONITE).get());
-//        oreSmall.setIgnored(Magnetite, () -> TFCBlocks.SMALL_ORES.get(Ore.MAGNETITE).get());
-//        oreSmall.setIgnored(Malachite, () -> TFCBlocks.SMALL_ORES.get(Ore.MALACHITE).get());
-//        oreSmall.setIgnored(Sphalerite, () -> TFCBlocks.SMALL_ORES.get(Ore.SPHALERITE).get());
-//        oreSmall.setIgnored(Tetrahedrite, () -> TFCBlocks.SMALL_ORES.get(Ore.TETRAHEDRITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(Bismuthinite, () => TFCBlocks.SMALL_ORES.get(Ore.BISMUTHINITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Cassiterite, () => TFCBlocks.SMALL_ORES.get(Ore.CASSITERITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Garnierite, () => TFCBlocks.SMALL_ORES.get(Ore.GARNIERITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Hematite, () => TFCBlocks.SMALL_ORES.get(Ore.HEMATITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(Limonite, () => TFCBlocks.SMALL_ORES.get(Ore.LIMONITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Magnetite, () => TFCBlocks.SMALL_ORES.get(Ore.MAGNETITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Malachite, () => TFCBlocks.SMALL_ORES.get(Ore.MALACHITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Sphalerite, () => TFCBlocks.SMALL_ORES.get(Ore.SPHALERITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Tetrahedrite, () => TFCBlocks.SMALL_ORES.get(Ore.TETRAHEDRITE).get());
 //
-//        oreSmallNative.setIgnored(Copper, () -> TFCBlocks.SMALL_ORES.get(Ore.NATIVE_COPPER).get());
-//        oreSmallNative.setIgnored(Gold, () -> TFCBlocks.SMALL_ORES.get(Ore.NATIVE_GOLD).get());
-//        oreSmallNative.setIgnored(Silver, () -> TFCBlocks.SMALL_ORES.get(Ore.NATIVE_SILVER).get());
+    KJSTagPrefix.getPrefix("small_native_ore").setIgnored(GTMaterials.Copper, () => TFCBlocks.SMALL_ORES.get(Ore.NATIVE_COPPER).get());
+    KJSTagPrefix.getPrefix("small_native_ore").setIgnored(GTMaterials.Gold, () => TFCBlocks.SMALL_ORES.get(Ore.NATIVE_GOLD).get());
+    KJSTagPrefix.getPrefix("small_native_ore").setIgnored(GTMaterials.Silver, () => TFCBlocks.SMALL_ORES.get(Ore.NATIVE_SILVER).get());
 //
 //
 //        /* Имеют двойные слитки */
-//        Gold.addFlags(GENERATE_DOUBLE_INGOTS);
-//        Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
-//        Brass.addFlags(GENERATE_DOUBLE_INGOTS);
-//        Nickel.addFlags(GENERATE_DOUBLE_INGOTS);
-//        RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
-//        Silver.addFlags(GENERATE_DOUBLE_INGOTS);
-//        Tin.addFlags(GENERATE_DOUBLE_INGOTS);
-//        Zinc.addFlags(GENERATE_DOUBLE_INGOTS);
-//        SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Nickel.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.RoseGold.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Silver.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Tin.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.Zinc.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.SterlingSilver.addFlags(GENERATE_DOUBLE_INGOTS);
 //
 //        /* Имеют инструменты, броню TFC, двойные слитки */
-//        Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-//        BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-//        Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-//        BlackBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
-//        WroughtIron.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
-//        Steel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
-//        BlackSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
-//        RedSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
-//        BlueSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+    GTMaterials.Copper.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
+    GTMaterials.BismuthBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
+    GTMaterials.Bronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
+    GTMaterials.BlackBronze.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY, CAN_BE_UNMOLDED);
+    GTMaterials.WroughtIron.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+    GTMaterials.Steel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+    GTMaterials.BlackSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+    GTMaterials.RedSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
+    GTMaterials.BlueSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 //
 //        /* Имеют маленькие куски руды TFC */
-//        Bismuthinite.addFlags(HAS_SMALL_TFC_ORE);
-//        Cassiterite.addFlags(HAS_SMALL_TFC_ORE);
-//        Garnierite.addFlags(HAS_SMALL_TFC_ORE);
-//        Hematite.addFlags(HAS_SMALL_TFC_ORE);
-//        Limonite.addFlags(HAS_SMALL_TFC_ORE);
-//        Magnetite.addFlags(HAS_SMALL_TFC_ORE);
-//        Malachite.addFlags(HAS_SMALL_TFC_ORE);
-//        Sphalerite.addFlags(HAS_SMALL_TFC_ORE);
-//        Tetrahedrite.addFlags(HAS_SMALL_TFC_ORE);
+    Bismuthinite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Cassiterite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Garnierite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Hematite.addFlags(HAS_SMALL_TFC_ORE);
+    Limonite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Magnetite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Malachite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Sphalerite.addFlags(HAS_SMALL_TFC_ORE);
+    GTMaterials.Tetrahedrite.addFlags(HAS_SMALL_TFC_ORE);
 //
 //        /* Имеют маленькие чистые куски руды TFC */
-//        Copper.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
-//        Gold.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
-//        Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
+    GTMaterials.Copper.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
+    GTMaterials.Gold.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
+    GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 //
 //        /* Имеют двойные слитки */
-//        RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
-//        TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+    GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 //
 //        /* Другое */
-//        Bismuth.setProperty(PropertyKey.ORE, new OreProperty());
-//        Bismuth.addFlags(EXT2_METAL.toArray(new MaterialFlag[0]));
+
+    // TODO: Exception needs to check the wizardry
+    GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
+
+    GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 //
-//        Borax.setProperty(PropertyKey.ORE, new OreProperty());
+    GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
+    GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
 //
-//        CertusQuartz.addFlags(GENERATE_ROD);
-//        NetherQuartz.addFlags(GENERATE_ROD);
+    GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
+    GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
+    GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
+    GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
+    GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 //
-//        Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
-//        BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
-//        BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
-//        RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
-//        WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
-//
-//        Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME);
-//        DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
-//        Duranium.addFlags(GENERATE_BOLT_SCREW);
+    GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME);
+    GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
+    GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 //
 //        Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2F, 1.0F, 8, 1, new GTToolType[]{
 //                GTToolType.AXE,
@@ -257,10 +287,10 @@ const registerGTCEuMaterialModification = (event) => {
 //                GTToolType.KNIFE,
 //                GTToolType.SHOVEL
 //        }).build());
-//        Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0F, 1.5F, 132, 2).build());
-//        BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5F, 2.0F, 178, 2).build());
-//        BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.3F, 2.0F, 204, 2).build());
-//        BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5F, 4.5F, 1228, 3).build());
+    GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2).build());
+    GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 2.0, 178, 2).build());
+    GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.3, 2.0, 204, 2).build());
+    GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3).build());
 //
 //        for (var material : GTCEuAPI.materialManager.getRegisteredMaterials()) {
 //            var toolProperty = material.getProperty(PropertyKey.TOOL);

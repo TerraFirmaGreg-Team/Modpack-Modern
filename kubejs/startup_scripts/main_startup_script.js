@@ -1,4 +1,6 @@
-// priority: 1
+// priority: 0
+
+console.log("priority: 0")
 
 /**
  * Событие регистрации предметов.
@@ -40,6 +42,7 @@ StartupEvents.registry('fluid', event => {
  * Событие регистрации типов рецептов.
  */
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    console.log("recipe+type")
     registerGTCEuRecipeTypes(event)
 })
 
@@ -47,10 +50,21 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
  * Событие регистрации механизмов.
  */
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+    console.log("gtceu:machine")
     registerGTCEuMachines(event)
 })
 
+/**
+ * Событие регистрации тэг префиксов.
+*/
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    console.log("gtceu:tag_prefix")
+    registerGTCEuTagPrefixes(event)
+    registerTFCTagPrefixes(event)
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    console.log("gtceu:material")
     registerAE2Materials(event)
     registerTFCMaterials(event)
     registerTFGMaterials(event)
@@ -61,16 +75,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
  * Событие модификации материалов.
 */
 GTCEuStartupEvents.materialModification(event => {
+    console.log("material modification")
     registerGTCEuMaterialModification(event)
 })
 
-/**
- * Событие регистрации тэг префиксов.
-*/
-GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-    registerGTCEuTagPrefixes(event)
-    registerTFCTagPrefixes(event)
+StartupEvents.postInit(event => {
+    console.log("PostINIT")
 })
+
 
 /**
  * Событие регистрации иконок тэг префиксов.

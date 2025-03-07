@@ -19,6 +19,8 @@ const registerGTCEuTagPrefixes = (event) => {
     const toolHeadChiselIcon = GTMaterialIconType.getByName('tool_head_chisel')
     const toolHeadMaceIcon = GTMaterialIconType.getByName('tool_head_mace')
 
+    const bellIcon = GTMaterialIconType.getByName('bell')
+
     const createBlockTag = (path) => 
         $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
 
@@ -204,6 +206,8 @@ const registerGTCEuTagPrefixes = (event) => {
             .and(mat => mat.getProperty(PropertyKey.TOOL).hasType(GTToolType.SPADE))
         )
 
+        console.log("just another check")
+
     event.create("propick_head")
         .defaultTagPath("propick_heads/%s")
         .unformattedTagPath("propick_heads")
@@ -321,6 +325,7 @@ const registerGTCEuTagPrefixes = (event) => {
     event.create("bell")
         .materialAmount(GTValues.M)
         .unificationEnabled(true)
+        // .materialIconType(bellIcon)
         .generateItem(true)
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.GENERATE_BELL));
 
