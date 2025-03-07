@@ -7,7 +7,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/wood_ash"
+					"name": "tfc:lamp_glass"
 				}
 			],
 			"conditions": [
@@ -22,13 +22,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:soot",
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.5
-						}
-					]
+					"name": "tfc:metal/lamp/black_bronze"
 				}
 			],
 			"conditions": [

@@ -83,6 +83,10 @@ const registerMinecraftBlockTags = (event) => {
     event.add('forge:stone', 'minecraft:blackstone')
 
     event.add('tfc:can_landslide', 'minecraft:cobbled_deepslate')
+    event.add('tfc:can_landslide', 'minecraft:soul_soil')
+
+    event.add('tfc:breaks_when_isolated', 'minecraft:deepslate')
+    event.add('tfc:breaks_when_isolated', 'minecraft:blackstone')
 
     event.add('tfg:rock_stairs', 'minecraft:cobbled_deepslate_stairs')
     event.add('tfg:rock_slabs', 'minecraft:cobbled_deepslate_slab')
