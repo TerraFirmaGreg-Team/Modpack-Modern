@@ -536,9 +536,11 @@ const registerFirmaLifeRecipes = (event) => {
 	event.recipes.createMilling('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
 		.id('firmalife:milling/food/cocoa_dust')
 		
-	event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
-		.id(`tfg:quern/cocoa_powder`)
-
+    event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
+        .id('tfg:quern/cocoa_powder');
+    
+    event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'firmalife:food/roasted_cocoa_beans')
+        .id('firmalife:quern/cocoa_powder');
     // Chocolate Ice Cream
     event.recipes.gtceu.mixer('firmalife:food/chocolate_ice_cream')             
         .itemInputs('firmalife:food/vanilla_ice_cream')

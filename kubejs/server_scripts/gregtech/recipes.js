@@ -542,11 +542,14 @@ const registerGTCEURecipes = (event) => {
 
     //#region Выход: Пыль какао-бобов
 
-    event.recipes.gtceu.assembler('macerate_cocoa')             
-        .itemInputs('firmalife:food/cocoa_beans')
+    event.recipes.gtceu.macerator('macerate_cocoa')             
+        .itemInputs('firmalife:food/roasted_cocoa_beans')
         .itemOutputs('gtceu:cocoa_dust')
         .duration(400)
         .EUt(2)
+    
+    event.recipes.createMilling('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
+        .id('create:milling/food/cocoa_dust');
 
     //#endregion
 
