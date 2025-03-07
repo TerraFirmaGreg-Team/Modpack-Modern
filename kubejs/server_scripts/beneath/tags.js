@@ -7,6 +7,10 @@ const registerBeneathBlockTags = (event) => {
 
 
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
+	event.add('forge:ores', 'beneath:ore/nether_sylvite')
+
+    // Beneath makes these collapse for some reason?
+    event.remove('beneath:blackstone')
 }
 
 const registerBeneathItemTags = (event) => {
@@ -17,4 +21,5 @@ const registerBeneathItemTags = (event) => {
 	})
 
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
+	event.add('forge:ores', 'beneath:ore/nether_sylvite')
 }

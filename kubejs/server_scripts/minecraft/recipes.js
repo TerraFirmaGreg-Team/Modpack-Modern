@@ -1628,7 +1628,6 @@ const registerMinecraftRecipes = (event) => {
         .id('tfg:milling/magenta_dye')
 
     // Orange
-    event.remove({id: 'tfc:crafting/vanilla/orange_dye_from_sylvite'})
     event.remove({id: 'minecraft:orange_dye_from_torchflower'})
     event.remove({id: 'minecraft:orange_dye_from_orange_tulip'})
     event.remove({id: 'gtceu:extractor/orange_tulip_dye'})
