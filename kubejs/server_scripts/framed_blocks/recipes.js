@@ -7,6 +7,60 @@ const registerFramedBlocksRecipes = (event) => {
     event.remove({ id: 'framedblocks:framed_soul_torch' })
     event.remove({ id: 'framedblocks:framing_saw/framed_soul_torch' })
 
+    //#region Framed Torch
+    event.shaped('framedblocks:framed_torch', [
+        ' A ',
+        ' B '
+    ], {
+        A: '#forge:dusts/glowstone',
+        B: 'framedblocks:framed_cube'
+    }).id('framedblocks:framed_torch')
+
+    event.custom({
+        type: "framedblocks:frame",
+        additives: [
+            {
+                count: 1,
+                ingredient: {
+                    tag: "forge:dusts/glowstone"
+                }
+            }
+        ],
+        material: 6144,
+        result: {
+            count: 1,
+            item: "framedblocks:framed_torch"
+        }
+      }).id('framedblocks:framing_saw/framed_torch')
+    //#endregion
+
+    //#region Framed Soul Torch
+    event.shaped('framedblocks:framed_soul_torch', [
+        ' A ',
+        ' B '
+    ], {
+        A: '#forge:dusts/blue_alloy',
+        B: 'framedblocks:framed_cube'
+    }).id('framedblocks:framed_soul_torch')
+
+    event.custom({
+        type: "framedblocks:frame",
+        additives: [
+            {
+                count: 1,
+                ingredient: {
+                    tag: "forge:dusts/blue_alloy"
+                }
+            }
+        ],
+        material: 6144,
+        result: {
+            count: 1,
+            item: "framedblocks:framed_soul_torch"
+        }
+      }).id('framedblocks:framing_saw/framed_soul_torch')
+    //#endregion
+
     //#region Framed Iron Door
     event.shaped('framedblocks:framed_iron_door', [
         'ABA'

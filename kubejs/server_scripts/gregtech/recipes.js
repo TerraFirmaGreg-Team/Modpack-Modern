@@ -203,6 +203,28 @@ const registerGTCEURecipes = (event) => {
         .duration(200)
         .EUt(20)
 
+    // dandelion to sticky resin
+    event.recipes.gtceu.centrifuge('rubber_dandelion_separation')             
+        .itemInputs('tfc:plant/dandelion')
+        .chancedOutput('gtceu:sticky_resin', 5000, 1200)
+        .chancedOutput('gtceu:plant_ball', 3750, 900)
+        .chancedOutput('minecraft:yellow_dye', 1500, 600)
+        .outputFluids(Fluid.of('gtceu:methane', 15))
+        .duration(200)
+        .EUt(20)
+
+    // morning glory to sulfur
+    event.recipes.gtceu.centrifuge('sulfur_morning_glory_separation')             
+        .itemInputs('tfc:plant/morning_glory')
+        .itemOutputs('2x gtceu:small_sulfur_dust')
+        .chancedOutput('gtceu:small_sulfur_dust', 5000, 1500)
+        .chancedOutput('gtceu:small_sulfur_dust', 5000, 1500)
+        .chancedOutput('gtceu:plant_ball', 3750, 900)
+        .chancedOutput('minecraft:magenta_dye', 1500, 600)
+        .outputFluids(Fluid.of('gtceu:methane', 15))
+        .duration(200)
+        .EUt(20)
+
     //#endregion
 
     //#region Выход: Растительный шарик

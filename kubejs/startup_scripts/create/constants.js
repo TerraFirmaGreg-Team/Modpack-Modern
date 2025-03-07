@@ -434,7 +434,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:crushed_raw_copper', 
     'create:crushed_raw_gold', 
     'create:crushed_raw_iron', 
-    'create:experience_nugget',
     'create:andesite_bars', 
     'create:brass_bars', 
     'create:copper_bars', 
