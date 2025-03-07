@@ -99,26 +99,6 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfg:brick_stairs', 'minecraft:blackstone_stairs')
     event.add('tfg:brick_slabs', 'minecraft:blackstone_slab')
     event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
-
-    // Beneath makes these collapse for some reason?
-    event.remove('tfc:can_collapse', 'minecraft:chiseled_polished_blackstone')
-    event.remove('tfc:can_start_collapse', 'minecraft:chiseled_polished_blackstone')
-    event.remove('tfc:can_trigger_collapse', 'minecraft:chiseled_polished_blackstone')
-    event.remove('tfc:can_collapse', 'minecraft:polished_blackstone_bricks')
-    event.remove('tfc:can_start_collapse', 'minecraft:polished_blackstone_bricks')
-    event.remove('tfc:can_trigger_collapse', 'minecraft:polished_blackstone_bricks')
-    event.remove('tfc:can_collapse', 'minecraft:cracked_polished_blackstone_bricks')
-    event.remove('tfc:can_start_collapse', 'minecraft:cracked_polished_blackstone_bricks')
-    event.remove('tfc:can_trigger_collapse', 'minecraft:cracked_polished_blackstone_bricks')
-    event.remove('tfc:can_collapse', 'minecraft:polished_blackstone_brick_stairs')
-    event.remove('tfc:can_start_collapse', 'minecraft:polished_blackstone_brick_stairs')
-    event.remove('tfc:can_trigger_collapse', 'minecraft:polished_blackstone_brick_stairs')
-    event.remove('tfc:can_collapse', 'minecraft:polished_blackstone_brick_slab')
-    event.remove('tfc:can_start_collapse', 'minecraft:polished_blackstone_brick_slab')
-    event.remove('tfc:can_trigger_collapse', 'minecraft:polished_blackstone_brick_slab')
-    event.remove('tfc:can_collapse', 'minecraft:polished_blackstone_brick_wall')
-    event.remove('tfc:can_start_collapse', 'minecraft:polished_blackstone_brick_wall')
-    event.remove('tfc:can_trigger_collapse', 'minecraft:polished_blackstone_brick_wall')
     
     //#region
 }

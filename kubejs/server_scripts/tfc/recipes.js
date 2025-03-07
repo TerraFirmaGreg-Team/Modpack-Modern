@@ -2566,7 +2566,6 @@ const registerTFCRecipes = (event) => {
     event.remove({ id: 'tfc:quern/sapphire' })
     event.remove({ id: 'tfc:quern/sapphire_cut' })
     event.remove({ id: 'tfc:quern/sulfur' })
-    event.remove({ id: 'tfc:quern/sylvite' })
     event.remove({ id: 'tfc:quern/topaz' })
     event.remove({ id: 'tfc:quern/topaz_cut' })
 
