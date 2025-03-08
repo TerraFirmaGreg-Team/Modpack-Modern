@@ -11,9 +11,9 @@ const registerGTCEULoots = (event) => {
 
                 if (stoneTypeMaterial != null) stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
 
-                let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
+                let richRawOre = ChemicalHelper.get(TagPrefix.getPrefix("rich_raw"), material, 1)
                 let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
-                let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
+                let poorRawOre = ChemicalHelper.get(TagPrefix.getPrefix("poor_raw"), material, 1)
 
                 let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material, 1)
 
