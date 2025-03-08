@@ -262,10 +262,10 @@ const registerGTCEuMaterialModification = (event) => {
 //        /* Другое */
 
     // TODO: Exception needs to check the wizardry
-    // GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    GTMaterials.Bismuth.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
     GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
-    // GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 //
     GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
     GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
