@@ -126,6 +126,7 @@ ServerEvents.recipes(event => {
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
     registerEtchedRecipes(event)
+    registerAlekishipsRecipes(event)
     registerFirmaCivRecipes(event)
     registerFirmaLifeRecipes(event)
     registerFramedBlocksRecipes(event)

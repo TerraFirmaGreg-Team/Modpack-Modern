@@ -16,7 +16,8 @@ const registerGTCEURecipes = (event) => {
         .EUt(30)
 
     // В create миксере
-    event.recipes.gtceu.create_mixer('fertilizer')             
+    //FIXME: GTCEU Create Mixer got removed and added by a 3rd party addon, kjs support is borked
+    /*event.recipes.gtceu.create_mixer('fertilizer')             
         .itemInputs(
             '#tfc:dirt',
             '2x #tfg:wood_dusts',
@@ -27,7 +28,7 @@ const registerGTCEURecipes = (event) => {
         .itemOutputs('4x gtceu:fertilizer')
         .duration(300)
         .EUt(30)
-        .rpm(96)
+        .rpm(96)*/
 
     //#endregion
 
@@ -1223,7 +1224,8 @@ const registerGTCEURecipes = (event) => {
 
     //#region Рецепты электрического генератора
 
-    event.recipes.gtceu.alternator('lv_alternator')
+    //FIXME: GTCEU Create Capabilities got removed and added by a 3rd party addon, kjs support is borked
+    /*event.recipes.gtceu.alternator('lv_alternator')
 	    .inputStress(8192)
         .circuit(1)
         .rpm(256)
@@ -1242,7 +1244,7 @@ const registerGTCEURecipes = (event) => {
         .circuit(3)
         .rpm(256)
         .duration(2)
-        .outputEU(2048)
+        .outputEU(2048)*/
     
     //#endregion
 
@@ -1408,9 +1410,9 @@ const registerGTCEURecipes = (event) => {
 
         if (material.hasProperty(PropertyKey.ORE)) 
         {
-            let poorRawStack = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
+            let poorRawStack = ChemicalHelper.get(TagPrefix.getPrefix("poor_raw"), material, 1)
             let normalRawStack = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
-            let richRawStack = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
+            let richRawStack = ChemicalHelper.get(TagPrefix.getPrefix("rich_raw"), material, 1)
 
             let crushedOreStack = ChemicalHelper.get(TagPrefix.crushed, material, 1)
             let purifiedOreStack = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
