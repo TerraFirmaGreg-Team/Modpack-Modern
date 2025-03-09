@@ -13,6 +13,7 @@ ServerEvents.tags('item', event => {
     registerCreateConnectedItemTags(event)
     registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
+    registerAlekishipsItemTags(event);
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
@@ -27,6 +28,7 @@ ServerEvents.tags('item', event => {
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
     registerTFGItemTags(event)
+    registerAFCItemTags(event)
 })
 
 /**
@@ -52,6 +54,7 @@ ServerEvents.tags('block', event => {
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
+    registerAFCBlockTags(event)
 })
 
 /**
@@ -62,6 +65,7 @@ ServerEvents.tags('fluid', event => {
     registerCreateAdditionsFluidTags(event)
     registerFirmaLifeBlockTags(event)
     registerTFCFluidTags(event)
+    registerAFCFluidTags(event)
 })
 
 /**
@@ -89,6 +93,7 @@ TFCEvents.data(event => {
     registerTFCDataForTFC(event)
     registerTFCDataForTreeTap(event)
     registerTFCDataForWaterFlasks(event)
+    registerTFCDataForArborFirmaCraft(event)
 })
 
 /**

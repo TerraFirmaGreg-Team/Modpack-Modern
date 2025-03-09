@@ -1,5 +1,16 @@
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerAlekishipsRecipes = (event) =>
 {
+    //remove recipes
+    event.remove("alekiships:crafting/oarlock")
+    event.remove("alekiships:crafting/cleat")
+    event.remove("alekiships:crafting/anchor")
+    event.remove("alekiships:crafting/cannon")
+    event.remove("alekiships:crafting/cannonball")
+
     //#region Oarlock
     event.recipes.gtceu.assembler('tfg:alekiships/oarlock')             
         .itemInputs('#forge:double_plates/wrought_iron')

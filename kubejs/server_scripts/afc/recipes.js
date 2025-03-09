@@ -1,3 +1,7 @@
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerAFCRecipes = (event) =>{
     
     global.AFC_WOOD_TYPES.forEach(wood => {
@@ -46,4 +50,35 @@ const registerAFCRecipes = (event) =>{
     
         generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, null, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)  
     })
+
+    event.shapeless("afc:tree_tap", "treetap:tap")
+
+    event.remove({id: "afc:tree_tapping/hevea_latex"})
+    event.remove({id: "afc:tree_tapping/rubber_fig_latex"})
+
+    event.replaceInput({ id: "afc:anvil/tree_tap" }, "tfc:metal/sheet/wrought_iron", "minecraft:copper_ingot")
+
+    // TreeTap Heating
+    event.recipes.tfc.heating('afc:tree_tap', 1080)
+    .resultFluid(Fluid.of('gtceu:copper', 144))
+    .id('tfg:heating/tree_tap')
+
+    //Custom rubber and hevea tappings
+    //Hevea is the most efficient but requires the warmest temperatures
+    //Rubber fig requires average temperatures and its mildly efficient
+    event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/hevea"))
+        .resultFluid(Fluid.of("tfg:latex", 3))
+        .minTemp(22)
+        .id("tfg:tree_tapping/latex/hevea")
+
+    event.recipes.afc.tree_tapping(TFC.blockIngredient("afc:wood/log/rubber_fig"))
+        .resultFluid(Fluid.of("tfg:latex", 2))
+        .minTemp(12)
+        .id("tfg:tree_tapping/latex/rubber_fig")
+        
+    //Kapok Grandfathered, least efficient but works as long as the temperature is not freezing
+    event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/kapok"))
+        .resultFluid(Fluid.of("tfg:latex", 1))
+        .minTemp(1)
+        .id("tfg:tree_tapping/kapok_latex")
 }

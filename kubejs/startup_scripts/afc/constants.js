@@ -81,7 +81,10 @@ global.AFC_DISABLED_ITEMS = [
             'afc:wood/boat/cypress', 
             'afc:wood/boat/fig', 
             'afc:wood/boat/ironwood', 
-            'afc:wood/boat/ipe'
+            'afc:wood/boat/ipe',
+
+            //rubber
+            'afc:rubber_bar'
 ]
 
 global.AFC_WOOD_TYPES =

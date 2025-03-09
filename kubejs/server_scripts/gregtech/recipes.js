@@ -1109,7 +1109,8 @@ const registerGTCEURecipes = (event) => {
     }).id('tfg:shaped/greenhouse')
 	
     // Контроллер электрического генератора
-    event.shaped('gtceu:alternator', [
+    //FIXME: GTCEU Create Capabilities got removed and added by a 3rd party addon, kjs support is borked
+    /*event.shaped('gtceu:alternator', [
         'ABA', 
         'CDC', 
         'EBE'
@@ -1119,7 +1120,7 @@ const registerGTCEURecipes = (event) => {
         C: 'gtceu:lv_voltage_coil',
         D: 'gtceu:solid_machine_casing',
         E: 'gtceu:copper_single_cable'
-    }).id('tfg:shaped/alternator')
+    }).id('tfg:shaped/alternator')*/
 
     // Compressed Coke Clay
     event.shaped('gtceu:compressed_coke_clay', [
