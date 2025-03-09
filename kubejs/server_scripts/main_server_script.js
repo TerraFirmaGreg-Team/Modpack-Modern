@@ -28,6 +28,7 @@ ServerEvents.tags('item', event => {
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
     registerTFGItemTags(event)
+    registerAFCItemTags(event)
 })
 
 /**
@@ -53,6 +54,7 @@ ServerEvents.tags('block', event => {
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
+    registerAFCBlockTags(event)
 })
 
 /**
@@ -63,6 +65,7 @@ ServerEvents.tags('fluid', event => {
     registerCreateAdditionsFluidTags(event)
     registerFirmaLifeBlockTags(event)
     registerTFCFluidTags(event)
+    registerAFCFluidTags(event)
 })
 
 /**
