@@ -51,6 +51,8 @@ const registerAFCRecipes = (event) =>{
         generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, null, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)  
     })
 
+    event.shapeless("afc:tree_tap", "treetap:tap")
+
     event.remove({id: "afc:tree_tapping/hevea_latex"})
     event.remove({id: "afc:tree_tapping/rubber_fig_latex"})
 
@@ -77,6 +79,6 @@ const registerAFCRecipes = (event) =>{
     //Kapok Grandfathered, least efficient but works as long as the temperature is not freezing
     event.recipes.afc.tree_tapping(TFC.blockIngredient("tfc:wood/log/kapok"))
         .resultFluid(Fluid.of("tfg:latex", 1))
-        .minTemp(0)
+        .minTemp(1)
         .id("tfg:tree_tapping/kapok_latex")
 }

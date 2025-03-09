@@ -49,6 +49,6 @@ const registerAFCBlockTags = (event) =>{
  */
 const registerAFCFluidTags = (event) =>
 {
-    /*event.removeAllTagsFrom("afc:latex")
-    event.add("c:hidden_from_recipe_viewers", "afc:latex")*/
+    event.removeAllTagsFrom("afc:latex")
+    event.add("c:hidden_from_recipe_viewers", "afc:latex")
 }

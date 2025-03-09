@@ -93,6 +93,7 @@ TFCEvents.data(event => {
     registerTFCDataForTFC(event)
     registerTFCDataForTreeTap(event)
     registerTFCDataForWaterFlasks(event)
+    registerTFCDataForArborFirmaCraft(event)
 })
 
 /**
