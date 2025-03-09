@@ -5,31 +5,31 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "So you've gotten some latex by tapping specific tropical trees... Congratulations! Latex by itself doesnt do much, but by processing it we can get some very useful byproducts!$(br2)If you havent obtained Latex producing Trees, you can look at the Tapping Index entry!"
+            "text": "So you've gotten some latex by tapping specific tropical trees... congratulations! Latex by itself doesnt do much, but by processing it we can get some very useful byproducts!$(br2)If you havent obtained Latex producing trees, you can look at the $(l:arborfirmacraft/tapping_index)Tapping Index$() entry!"
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:sticky_resin",
             "title": "A sticky substance",
             "link_recipe": true,
-            "text": "To begin, At the very least a Bucket of Latex needs to be processed in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$() alongside some $(thing)Sulfur$(), this will create Sticky Resin."
+            "text": "To begin, $(thing)Latex$() needs to be processed in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$() with some $(thing)Sulfur Powder$(), this will create $(item)Sticky Resin$()."
         },
         {
             "type": "patchouli:spotlight",
             "title": "Sticky Business",
-            "item": "create:sticky_mechanical_piston,gtceu:basic_tape,gtceu:resin_circuit_board,gtceu:resistor",
-            "text": "$(thing)Sticky Resin$() has a number of usages, thanks to it being well... sticky, it can be used to create multiple items such as Tapes and Sticky Pistons, but more importnatly, it can be used to create $(thing)Resin Circuit Boards$() and $(thing)Resistors$(), which will be your first electrical components."
+            "item": "gtceu:resin_circuit_board,gtceu:resistor,gtceu:basic_tape",
+            "text": "$(thing)Sticky Resin$() has a number of uses, thanks to it being well... sticky. It can be used to create multiple items such as $(thing)Tape$() to move crates around, but more importantly, it can be used to create $(thing)Resin Circuit Boards$() and $(thing)Resistors$(), which will be your first electrical components."
         },
         {
             "type": "patchouli:spotlight",
             "title": "Extraction",
             "item": "gtceu:raw_rubber_dust",
-            "text": "Utilizing an $(thing)Extractor$(), you can proceed to extract $(thing)Raw Rubber Pulp$(), this pulp can then be placed inside an $(thing)Alloy Smelter$() with a bit of $(thing)Sulfur$() to create $(thing)Rubber Ingots$()"
+            "text": "Using an $(thing)Extractor$(), you can extract $(thing)Raw Rubber Pulp$(). This pulp can then be placed inside an $(thing)Alloy Smelter$() with a bit of $(thing)Sulfur Dust$() to create $(thing)Rubber Ingots$()."
         },
         {
             "type": "patchouli:spotlight",
             "item": "gtceu:rubber_ingot",
-            "text": "$(thing)Rubber Ingots$() have a number of uses, It's mainly used to $(bold)Insulate$() $(thing)electrical wires$(), making them safe to touch without accidentally electrocuting yourself."
+            "text": "$(thing)Rubber Ingots$() have a number of uses, but mostly to $(bold)insulate$() $(thing)electrical wires$(), making them safe to touch without accidentally electrocuting yourself, as well as reducing their voltage loss."
         }
 	],
 	"read_by_default": true,
