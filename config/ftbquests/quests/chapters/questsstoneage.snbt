@@ -96,7 +96,7 @@
 				"4C3414E10EDB2E82"
 			]
 			description: ["{quests.stone_age.stone_tools.desc}"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "6EBC3E2B59B1833D"
 			optional: true
 			shape: "heart"
@@ -813,7 +813,10 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["4333D5794A37CF2D"]
+			dependencies: [
+				"4333D5794A37CF2D"
+				"4C3414E10EDB2E82"
+			]
 			id: "20B910AAAC661E09"
 			tasks: [
 				{
@@ -988,7 +991,7 @@
 				"3630ED3B85753BB2"
 				"3687ACAD307EE7EF"
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "01B6CFB4A317A10F"
 			optional: true
 			shape: "heart"
@@ -1750,7 +1753,7 @@
 		}
 		{
 			dependencies: ["25FDB2A4C3C58566"]
-			hide: true
+			hide_until_deps_visible: true
 			id: "0D1E3CAF5D4B6B7B"
 			invisible: true
 			shape: "heart"
