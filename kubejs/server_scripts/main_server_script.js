@@ -13,6 +13,7 @@ ServerEvents.tags('item', event => {
     registerCreateConnectedItemTags(event)
     registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
+    registerAlekishipsItemTags(event);
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
