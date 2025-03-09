@@ -5,14 +5,14 @@
 	"pages": [
         {
             "type": "patchouli:text",
-            "text": "Some types of trees can be tapped for useful fluids. Most notably trees can either produce sugary saps which can be concentrated into syrup and used as a sweetner, or Latex which can be processed into rubber."
+            "text": "Some types of trees can be tapped for useful fluids. These trees can either produce sugary saps which can be concentrated into syrup and used as a sweetener, or Latex which can be processed into rubber."
         },
         {
             "type": "patchouli:image",
             "title": "Tapping a Maple Tree",
             "images": [
-            "afc:textures/gui/book/maple_tapping.png"
-        ],
+            	"afc:textures/gui/book/maple_tapping.png"
+            ],
             "border": true
         },
         {
