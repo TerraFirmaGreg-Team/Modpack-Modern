@@ -289,16 +289,20 @@ const registerGTCEuMaterialModification = (event) => {
     ]).build());
 
     GTMaterials.Copper.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.0, 1.5, 132, 2,[
-        GTToolType.SAW
+        GTToolType.SAW,
+        GTToolType.PICKAXE
     ]).build());
     GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 2.0, 178, 2, [
-        GTToolType.SAW
+        GTToolType.SAW,
+        GTToolType.PICKAXE
     ]).build());
     GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.3, 2.0, 204, 2, [
-        GTToolType.SAW
+        GTToolType.SAW,
+        GTToolType.PICKAXE
     ]).build());
     GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, [
-        GTToolType.SAW
+        GTToolType.SAW,
+        GTToolType.PICKAXE
     ]).build());
 //
     for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
