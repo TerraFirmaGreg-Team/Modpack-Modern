@@ -12,8 +12,6 @@ const registerAFCItemTags = (event) =>{
         event.add('minecraft:logs_that_burn', `#afc:${woodType}_logs`)
         event.add('tfg:default_chests', `afc:wood/chest/${woodType}`)
         event.add('tfg:trapped_chests', `afc:wood/trapped_chest/${woodType}`)
-
-        event.add('tfg:bladed_axles', `afc:wood/bladed_axle/${woodType}`)
     })
 
     //Hardwood Tags
