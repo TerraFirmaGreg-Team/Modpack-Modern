@@ -31,8 +31,8 @@ const registerGTCEuMachines = (event) => {
         )
         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor', false)
 
-  
-	event.create('alternator', 'multiblock')
+    //FIXME: GTCEU Create Capabilities got removed and added by a 3rd party addon, kjs support is borked
+	/*event.create('alternator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('alternator')
         .pattern(definition => FactoryBlockPattern.start()
@@ -64,7 +64,7 @@ const registerGTCEuMachines = (event) => {
         .workableCasingRenderer(
             "gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/implosion_compressor", false
-        )
+        )*/
 	
 	event.create('nether_dome', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
