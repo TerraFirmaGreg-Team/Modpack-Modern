@@ -1,6 +1,3 @@
-// priority: 0
+// priority: 1
 
-// Visit the wiki for more info - https://kubejs.com/
-
-console.info('Hello, World! (Loaded client scripts)')
-
+console.log('TerraFirmaGreg the best modpack in the world :)')

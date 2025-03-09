@@ -26,11 +26,15 @@ ItemEvents.tooltip(event => {
     event.addAdvanced(['firmalife:beehive'], (item, advanced, text) => {
         text.add(1, [text.of('Needs to be filled with empty frames and surrounded by flowers to attract bees.')])
     })
-    event.addAdvanced(['gtceu:alternator'], (item, advanced, text) => {
+    event.addAdvanced(["treetap:tap"], (item, advanced, text) =>{
+        text.add(1, [text.of("§4Obsolete§f: Replaced by the AFC TreeTap, you can craft it from this one by placing this in a crafting table!")])
+    })
+    //FIXME: GTCEU Create Capabilities got removed and added by a 3rd party addon, kjs support is borked
+    /*event.addAdvanced(['gtceu:alternator'], (item, advanced, text) => {
         text.add(1, text.of('Generates 2A of the matching §6Kinetic Input Box§r and §6Dynamo Hatch§r.')),
         text.add(2, text.of(`Select Circuit 1 for LV, 2 for MV, 3 for HV, and 4 for EV.`)),
         text.add(3, text.of(`§cRequires 256 RPM to run.§r`))
-    })
+    })*/
     event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		    text.add(1, text.of('§cSuperheat§r with Flawless and Exquisite coal gems.'))
     })
