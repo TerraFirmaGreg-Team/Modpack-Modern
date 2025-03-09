@@ -482,7 +482,7 @@
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:raw_graphite)item(gtceu:rich_raw_graphite)item(gtceu:poor_raw_graphite)item(gtceu:graphite_dust)item(gtceu:crushed_graphite_ore))"
+						"ftbfiltersystem:filter": "or(item(gtceu:raw_graphite)item(gtceu:graphite_rich_raw)item(gtceu:graphite_poor_raw)item(gtceu:graphite_dust)item(gtceu:crushed_graphite_ore))"
 					}
 				}
 				type: "item"
