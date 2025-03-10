@@ -10472,6 +10472,47 @@
             ]
         },
         {
+            "pakku_id": "4WwQ11qPky8VtFcw",
+            "pakku_links": [
+                "F6H99cZ4H6jZRpEK"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-better-blast-furnace"
+            },
+            "name": {
+                "curseforge": "TFC Better Blast Furnace"
+            },
+            "id": {
+                "curseforge": "1046432"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5461/10/TFCBetterBlastFurnace-1.20.1-1.0.0.jar",
+                    "id": "5461010",
+                    "parent_id": "1046432",
+                    "hashes": {
+                        "sha1": "91dbfe3c3e7e7fc9ffb126d879c1507e8c2f8b82",
+                        "md5": "4faf2e4c9ac0af08b6d5e9abca4c411d"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 21088,
+                    "date_published": "2024-06-23T02:44:03.777Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Gq0f388dnqOU5Dnz",
             "type": "MOD",
             "slug": {

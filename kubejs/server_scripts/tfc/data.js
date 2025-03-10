@@ -51,13 +51,11 @@ const registerTFCMetals = (event) => {
 const registerTFCHeats = (event) => {
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty, heatCapacity) {
-        console.log(tagPrefix, material)
         let item = ChemicalHelper.get(tagPrefix, material, 1)
         if (!item.isEmpty()) event.itemHeat(item, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
     }
 
     function makeItemHeatByToolType(toolType, material, tfcProperty, heatCapacity) {
-        console.log(toolType, material)
         let tool = ToolHelper.get(toolType, material)
         if (!tool.isEmpty()) event.itemHeat(tool, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
     }
@@ -66,72 +64,41 @@ const registerTFCHeats = (event) => {
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
         
         if (tfcProperty != null) {
-            console.log("dustTiny")
             makeItemHeatByTagPrefix(TagPrefix.dustTiny, material, tfcProperty, 0.357)
-            console.log("dustSmall")
             makeItemHeatByTagPrefix(TagPrefix.dustSmall, material, tfcProperty, 0.714)
-            console.log("dust")
             makeItemHeatByTagPrefix(TagPrefix.dust, material, tfcProperty, 1.429)
-            console.log("rod")
             makeItemHeatByTagPrefix(TagPrefix.rod, material, tfcProperty, 0.567)
-            console.log("bolt")
             makeItemHeatByTagPrefix(TagPrefix.bolt, material, tfcProperty, 0.245)
-            console.log("screw")
             makeItemHeatByTagPrefix(TagPrefix.screw, material, tfcProperty, 0.567)
-            console.log("nugget")
             makeItemHeatByTagPrefix(TagPrefix.nugget, material, tfcProperty, 0.124)
-            console.log("block")
             makeItemHeatByTagPrefix(TagPrefix.block, material, tfcProperty, 20)
-            console.log("rodLong")
             makeItemHeatByTagPrefix(TagPrefix.rodLong, material, tfcProperty, 1.429)
 
-            console.log("ingot")
             makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
             
-            console.log("rawOre")
             makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty, 1.429)
-            console.log("rich_raw")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("rich_raw"), material, tfcProperty, 1.429)
-            console.log("poor_raw")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("poor_raw"), material, tfcProperty, 1.429)
 
             // Ore processing stages
-            console.log("dustImpure")
             makeItemHeatByTagPrefix(TagPrefix.dustImpure, material, tfcProperty, 1.429)
-            console.log("dustPure")
             makeItemHeatByTagPrefix(TagPrefix.dustPure, material, tfcProperty, 1.429)
-            console.log("crushed")
             makeItemHeatByTagPrefix(TagPrefix.crushed, material, tfcProperty, 1.429)
-            console.log("crushedPurified")
             makeItemHeatByTagPrefix(TagPrefix.crushedPurified, material, tfcProperty, 1.429)
-            console.log("crushedRefined")
             makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty, 1.429)
 
-            console.log("sword_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("sword_head"), material, tfcProperty, 2.875)
-            console.log("shovel_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("shovel_head"), material, tfcProperty, 1.429)
-            console.log("scythe_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("scythe_head"), material, tfcProperty, 1.429)
-            console.log("pickaxe_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("pickaxe_head"), material, tfcProperty, 1.429)
-            console.log("saw_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("saw_head"), material, tfcProperty, 1.429)
-            console.log("knife_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("knife_head"), material, tfcProperty, 1.429)
-            console.log("hoe_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("hoe_head"), material, tfcProperty, 1.429)
-            console.log("hammer_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("hammer_head"), material, tfcProperty, 1.429)
-            console.log("axe_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("axe_head"), material, tfcProperty, 1.429)
-            console.log("file_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("file_head"), material, tfcProperty, 1.429)
-            console.log("butchery_knife_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("butchery_knife_head"), material, tfcProperty, 2.875)
-            console.log("mining_hammer_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("mining_hammer_head"), material, tfcProperty, 2.875)
-            console.log("spade_head")
             makeItemHeatByTagPrefix(TagPrefix.getPrefix("spade_head"), material, tfcProperty, 2.875)
 
             makeItemHeatByToolType(GTToolType.SWORD, material, tfcProperty, 1.429)

@@ -6,7 +6,6 @@ const registerGTCEuTagPrefixes = (event) => {
     const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 
     const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.materials.TFGMaterialFlags')
-    const $TagPrefixBuilder = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.builders.prefix.TagPrefixBuilder')
 
     const poorRawOreIcon = GTMaterialIconType.getByName('poor_raw_ore')
     

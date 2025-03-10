@@ -9,6 +9,7 @@ const registerFirmaCivRecipes = (event) => {
     event.remove({ id: 'firmaciv:crafting/watercraft_frame_angled_2' }) // Как же меня заебал разраб со своими кривыми руками
     event.remove("firmaciv:heating/cleat")
     event.remove("firmaciv:heating/oarlock")
+    event.remove("firmaciv:heating/cannonball")
 
     //#endregion
 

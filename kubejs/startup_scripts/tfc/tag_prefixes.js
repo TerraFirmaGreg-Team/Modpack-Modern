@@ -29,7 +29,6 @@ const registerTFCTagPrefixes = (event) => {
     TagPrefix.ORES.remove(TagPrefix.oreGranite)
 
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
-        console.log(stoneTypeName)
         const material = GTCEuAPI.materialManager.getMaterial(stoneTypeName)
         
         // Kjs sucks
@@ -56,6 +55,4 @@ const registerTFCTagPrefixes = (event) => {
             .generationCondition(ItemGenerationCondition.hasOreProperty)
             
     })
-
-    console.log(`Ores ${TagPrefix.ORES.keySet()}`)
 }
