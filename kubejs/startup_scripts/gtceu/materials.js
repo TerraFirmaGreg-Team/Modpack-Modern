@@ -39,8 +39,12 @@ const registerGTCEuMaterialModification = (event) => {
     } = $MATERIAL_FLAGS
 
     var metalTooling = [
+        GTToolType.SAW,
         GTToolType.AXE,
+        GTToolType.BUZZSAW,
+        GTToolType.CHAINSAW_LV,
         GTToolType.PICKAXE,
+        GTToolType.MINING_HAMMER,
         GTToolType.HARD_HAMMER
     ]
 
