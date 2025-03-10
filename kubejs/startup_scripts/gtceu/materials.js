@@ -35,7 +35,8 @@ const registerGTCEuMaterialModification = (event) => {
         GENERATE_ROTOR,
         GENERATE_SPRING,
         GENERATE_SMALL_GEAR,
-        GENERATE_FRAME
+        GENERATE_FRAME,
+        GENERATE_PLATE
     } = $MATERIAL_FLAGS
 
     var metalTooling = [
@@ -54,10 +55,20 @@ const registerGTCEuMaterialModification = (event) => {
         GTToolType.KNIFE,
         GTToolType.BUZZSAW,
         GTToolType.SCYTHE,
+        GTToolType.WIRE_CUTTER,
         GTToolType.DRILL_LV,
+        GTToolType.DRILL_MV,
+        GTToolType.DRILL_HV,
+        GTToolType.DRILL_EV,
+        GTToolType.DRILL_IV,
+        GTToolType.SCREWDRIVER,
         GTToolType.SCREWDRIVER_LV,
         GTToolType.CHAINSAW_LV,
+        GTToolType.WRENCH,
         GTToolType.WRENCH_LV,
+        GTToolType.WRENCH_HV,
+        GTToolType.WRENCH_IV,
+        GTToolType.CROWBAR,
     ]
 
     const TFGMetalMaterial = {
@@ -281,6 +292,8 @@ const registerGTCEuMaterialModification = (event) => {
 //        /* Имеют двойные слитки */
     GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
     GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+
+    GTMaterials.TitaniumTungstenCarbide.addFlags(GENERATE_ROD);
 //
 //        /* Другое */
 
@@ -303,6 +316,8 @@ const registerGTCEuMaterialModification = (event) => {
     GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME);
     GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
     GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
+
+    GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 //
     GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
             GTToolType.AXE,
