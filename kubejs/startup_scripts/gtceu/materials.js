@@ -41,7 +41,23 @@ const registerGTCEuMaterialModification = (event) => {
     var metalTooling = [
         GTToolType.AXE,
         GTToolType.PICKAXE,
-        GTToolType.HARD_HAMMER
+        GTToolType.HARD_HAMMER,
+        GTToolType.BUTCHERY_KNIFE,
+        GTToolType.SWORD,
+        GTToolType.FILE,
+        GTToolType.SAW,
+        GTToolType.SHOVEL,
+        GTToolType.SHOVEL,
+        GTToolType.SPADE,
+        GTToolType.MINING_HAMMER,
+        GTToolType.HOE,
+        GTToolType.KNIFE,
+        GTToolType.BUZZSAW,
+        GTToolType.SCYTHE,
+        GTToolType.DRILL_LV,
+        GTToolType.SCREWDRIVER_LV,
+        GTToolType.CHAINSAW_LV,
+        GTToolType.WRENCH_LV,
     ]
 
     const TFGMetalMaterial = {
@@ -125,6 +141,7 @@ const registerGTCEuMaterialModification = (event) => {
     const ignoreIngot = ([key, material]) => TagPrefix.ingot.setIgnored(material, () => $TFC_ITEMS.METAL_ITEMS.get($TFC_METAL.Default[key]).get($TFC_METAL.ItemType.INGOT).get())
     Object.entries(TFGMetalMaterial).forEach( ignoreIngot )
 
+    // Association between [TFCItems.METAL_ITEMS] and GTMaterials
     const toolHeadIgnore = {
         COPPER: GTMaterials.Copper,
         BISMUTH_BRONZE: GTMaterials.BismuthBronze,
@@ -137,18 +154,18 @@ const registerGTCEuMaterialModification = (event) => {
         BLUE_STEEL: GTMaterials.BlueSteel
     }
 
-    console.log(TagPrefix.PREFIXES)
-    console.log(KJSTagPrefix.PREFIXES)
-
     const ignorePropick = ([key, material]) => KJSTagPrefix.getPrefix("propick_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.PROPICK_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignorePropick )
     
     const ignoreJavelin = ([key, material]) => KJSTagPrefix.getPrefix("javelin_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.JAVELIN_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreJavelin )
+
     const ignoreChisel = ([key, material]) => KJSTagPrefix.getPrefix("chisel_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHISEL_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreChisel )
+
     const ignoreMace = ([key, material]) => KJSTagPrefix.getPrefix("mace_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.MACE_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreMace )
+
     const ignoreAnvil = ([key, material]) => KJSTagPrefix.getPrefix("anvil").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.ANVIL).get());
     Object.entries(toolHeadIgnore).forEach( ignoreAnvil )
 
@@ -272,6 +289,7 @@ const registerGTCEuMaterialModification = (event) => {
     GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
     GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    GTMaterials.Titanium.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 //
     GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
     GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
