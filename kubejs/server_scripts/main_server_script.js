@@ -91,9 +91,9 @@ ServerEvents.highPriorityData(event => {
 TFCEvents.data(event => {
     registerTFCDataForGTCEU(event)
     registerTFCDataForTFC(event)
-    registerTFCDataForTreeTap(event)
     registerTFCDataForWaterFlasks(event)
     registerTFCDataForArborFirmaCraft(event)
+    registerTFCDataForTFCBetterBF(event)
 })
 
 /**
@@ -152,5 +152,6 @@ ServerEvents.recipes(event => {
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
     registerWaterFlasksRecipes(event)
-    registerAFCRecipes(event);
+    registerAFCRecipes(event)
+    registerTFCBetterBFRecipes(event)
 })
