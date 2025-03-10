@@ -6,8 +6,10 @@ const registerGTCEuTagPrefixes = (event) => {
     const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 
     const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.materials.TFGMaterialFlags')
+    const $TagPrefixBuilder = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.builders.prefix.TagPrefixBuilder')
 
     const poorRawOreIcon = GTMaterialIconType.getByName('poor_raw_ore')
+    
     const richRawOreIcon = GTMaterialIconType.getByName('rich_raw_ore')
 
     const toolHeadMiningHammerIcon = GTMaterialIconType.getByName('tool_head_mining_hammer')
@@ -257,12 +259,14 @@ const registerGTCEuTagPrefixes = (event) => {
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.GENERATE_DOUBLE_INGOTS));
 
     event.create("poor_raw")
+        //.idPattern("rich_raw_%s")
         .defaultTagPath("poor_raw_materials/%s")
         .unformattedTagPath("poor_raw_materials")
         .materialIconType(poorRawOreIcon)
         .unificationEnabled(true)
         .generateItem(true)
-        .generationCondition(TagPrefix.Conditions.hasOreProperty);
+        .generationCondition(TagPrefix.Conditions.hasOreProperty)
+        .base.idPattern("poor_raw_%s");
 
     event.create("rich_raw")
         .defaultTagPath("rich_raw_materials/%s")
@@ -270,7 +274,8 @@ const registerGTCEuTagPrefixes = (event) => {
         .materialIconType(richRawOreIcon)
         .unificationEnabled(true)
         .generateItem(true)
-        .generationCondition(TagPrefix.Conditions.hasOreProperty);
+        .generationCondition(TagPrefix.Conditions.hasOreProperty)
+        .base.idPattern("rich_raw_%s");
 
     event.create("small_ore")
         .materialAmount(GTValues.M / 4)
