@@ -35,17 +35,40 @@ const registerGTCEuMaterialModification = (event) => {
         GENERATE_ROTOR,
         GENERATE_SPRING,
         GENERATE_SMALL_GEAR,
-        GENERATE_FRAME
+        GENERATE_FRAME,
+        GENERATE_PLATE
     } = $MATERIAL_FLAGS
 
     var metalTooling = [
-        GTToolType.SAW,
         GTToolType.AXE,
-        GTToolType.BUZZSAW,
-        GTToolType.CHAINSAW_LV,
         GTToolType.PICKAXE,
+        GTToolType.HARD_HAMMER,
+        GTToolType.BUTCHERY_KNIFE,
+        GTToolType.SWORD,
+        GTToolType.FILE,
+        GTToolType.SAW,
+        GTToolType.SHOVEL,
+        GTToolType.SHOVEL,
+        GTToolType.SPADE,
         GTToolType.MINING_HAMMER,
-        GTToolType.HARD_HAMMER
+        GTToolType.HOE,
+        GTToolType.KNIFE,
+        GTToolType.BUZZSAW,
+        GTToolType.SCYTHE,
+        GTToolType.WIRE_CUTTER,
+        GTToolType.DRILL_LV,
+        GTToolType.DRILL_MV,
+        GTToolType.DRILL_HV,
+        GTToolType.DRILL_EV,
+        GTToolType.DRILL_IV,
+        GTToolType.SCREWDRIVER,
+        GTToolType.SCREWDRIVER_LV,
+        GTToolType.CHAINSAW_LV,
+        GTToolType.WRENCH,
+        GTToolType.WRENCH_LV,
+        GTToolType.WRENCH_HV,
+        GTToolType.WRENCH_IV,
+        GTToolType.CROWBAR,
     ]
 
     const TFGMetalMaterial = {
@@ -129,6 +152,7 @@ const registerGTCEuMaterialModification = (event) => {
     const ignoreIngot = ([key, material]) => TagPrefix.ingot.setIgnored(material, () => $TFC_ITEMS.METAL_ITEMS.get($TFC_METAL.Default[key]).get($TFC_METAL.ItemType.INGOT).get())
     Object.entries(TFGMetalMaterial).forEach( ignoreIngot )
 
+    // Association between [TFCItems.METAL_ITEMS] and GTMaterials
     const toolHeadIgnore = {
         COPPER: GTMaterials.Copper,
         BISMUTH_BRONZE: GTMaterials.BismuthBronze,
@@ -141,18 +165,18 @@ const registerGTCEuMaterialModification = (event) => {
         BLUE_STEEL: GTMaterials.BlueSteel
     }
 
-    console.log(TagPrefix.PREFIXES)
-    console.log(KJSTagPrefix.PREFIXES)
-
     const ignorePropick = ([key, material]) => KJSTagPrefix.getPrefix("propick_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.PROPICK_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignorePropick )
     
     const ignoreJavelin = ([key, material]) => KJSTagPrefix.getPrefix("javelin_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.JAVELIN_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreJavelin )
+
     const ignoreChisel = ([key, material]) => KJSTagPrefix.getPrefix("chisel_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHISEL_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreChisel )
+
     const ignoreMace = ([key, material]) => KJSTagPrefix.getPrefix("mace_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.MACE_HEAD).get());
     Object.entries(toolHeadIgnore).forEach( ignoreMace )
+
     const ignoreAnvil = ([key, material]) => KJSTagPrefix.getPrefix("anvil").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.ANVIL).get());
     Object.entries(toolHeadIgnore).forEach( ignoreAnvil )
 
@@ -268,6 +292,8 @@ const registerGTCEuMaterialModification = (event) => {
 //        /* Имеют двойные слитки */
     GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
     GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+
+    GTMaterials.TitaniumTungstenCarbide.addFlags(GENERATE_ROD);
 //
 //        /* Другое */
 
@@ -276,6 +302,7 @@ const registerGTCEuMaterialModification = (event) => {
     GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
     GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+    GTMaterials.Titanium.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
 //
     GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
     GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
@@ -289,6 +316,8 @@ const registerGTCEuMaterialModification = (event) => {
     GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME);
     GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
     GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
+
+    GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 //
     GTMaterials.Stone.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(1.2, 1.0, 8, 1, [
             GTToolType.AXE,
