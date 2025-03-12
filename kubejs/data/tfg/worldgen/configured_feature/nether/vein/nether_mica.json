@@ -1,12 +1,12 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 210,
-		"density": 0.3,
+		"rarity": 230,
+		"density": 0.25,
 		"min_y": 32,
 		"max_y": 128,
-		"size": 35,
-		"random_name": "nether_saltpeter",
+		"size": 36,
+		"random_name": "nether_mica",
 		"blocks": [
 			{
 				"replace": [
@@ -15,19 +15,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:granite_saltpeter_ore",
+						"block": "gtceu:granite_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:granite_diatomite_ore",
+						"block": "gtceu:granite_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:granite_electrotine_ore",
+						"block": "gtceu:granite_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:granite_alunite_ore",
+						"block": "gtceu:granite_pollucite_ore",
 						"weight": 15
 					}
 				]
@@ -39,19 +39,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:diorite_saltpeter_ore",
+						"block": "gtceu:diorite_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:diorite_diatomite_ore",
+						"block": "gtceu:diorite_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:diorite_electrotine_ore",
+						"block": "gtceu:diorite_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:diorite_alunite_ore",
+						"block": "gtceu:diorite_pollucite_ore",
 						"weight": 15
 					}
 				]
@@ -63,19 +63,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:gabbro_saltpeter_ore",
+						"block": "gtceu:gabbro_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:gabbro_diatomite_ore",
+						"block": "gtceu:gabbro_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:gabbro_electrotine_ore",
+						"block": "gtceu:gabbro_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:gabbro_alunite_ore",
+						"block": "gtceu:gabbro_pollucite_ore",
 						"weight": 15
 					}
 				]
@@ -87,19 +87,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:schist_saltpeter_ore",
+						"block": "gtceu:schist_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:schist_diatomite_ore",
+						"block": "gtceu:schist_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:schist_electrotine_ore",
+						"block": "gtceu:schist_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:schist_alunite_ore",
+						"block": "gtceu:schist_pollucite_ore",
 						"weight": 15
 					}
 				]
@@ -111,19 +111,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:gneiss_saltpeter_ore",
+						"block": "gtceu:gneiss_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:gneiss_diatomite_ore",
+						"block": "gtceu:gneiss_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:gneiss_electrotine_ore",
+						"block": "gtceu:gneiss_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:gneiss_alunite_ore",
+						"block": "gtceu:gneiss_pollucite_ore",
 						"weight": 15
 					}
 				]
@@ -135,19 +135,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_saltpeter_ore",
+						"block": "gtceu:blackstone_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_diatomite_ore",
+						"block": "gtceu:blackstone_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_electrotine_ore",
+						"block": "gtceu:blackstone_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_alunite_ore",
+						"block": "gtceu:blackstone_pollucite_ore",
 						"weight": 15
 					}
 				]
@@ -160,19 +160,19 @@
 			"underground_count": 150,
 			"blocks": [
 				{
-					"block": "gtceu:saltpeter_indicator",
+					"block": "gtceu:kyanite_indicator",
 					"weight": 35
 				},
 				{
-					"block": "gtceu:diatomite_indicator",
+					"block": "gtceu:mica_indicator",
 					"weight": 25
 				},
 				{
-					"block": "gtceu:electrotine_indicator",
+					"block": "gtceu:bauxite_indicator",
 					"weight": 25
 				},
 				{
-					"block": "gtceu:alunite_indicator",
+					"block": "gtceu:pollucite_indicator",
 					"weight": 15
 				}
 			]

@@ -60,6 +60,30 @@
 						"weight": 15
 					}
 				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"tfg:rock/hardened_blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_lazurite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:blackstone_sodalite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_lapis_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_calcite_ore",
+						"weight": 15
+					}
+				]
 			}
 		],
 		"indicator": {
