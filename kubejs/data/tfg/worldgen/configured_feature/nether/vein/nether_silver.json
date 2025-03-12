@@ -10,20 +10,20 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/schist",
-					"tfc:rock/hardened/schist"
+					"tfc:rock/raw/granite",
+					"tfc:rock/hardened/granite"
 				],
 				"with": [
 					{
-						"block": "gtceu:schist_galena_ore",
+						"block": "gtceu:granite_galena_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:schist_silver_ore",
+						"block": "gtceu:granite_silver_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:schist_lead_ore",
+						"block": "gtceu:granite_lead_ore",
 						"weight": 55
 					}
 				]

@@ -87,6 +87,22 @@
 						"weight": 60
 					}
 				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"tfg:rock/hardened_blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_cassiterite_ore",
+						"weight": 40
+					},
+					{
+						"block": "gtceu:blackstone_tin_ore",
+						"weight": 60
+					}
+				]
 			}
 		],
 		"indicator": {

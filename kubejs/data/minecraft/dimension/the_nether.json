@@ -43,7 +43,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/gneiss_caves",
+					"biome": "tfg:nether/granite_caves",
 					"parameters": {
 						"continentalness": [ 0.3, 1 ],
 						"depth": [ 0, 1 ],
@@ -91,7 +91,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/gneiss_caves",
+					"biome": "tfg:nether/granite_caves",
 					"parameters": {
 						"continentalness": [ 0.3, 1 ],
 						"depth": [ 0, 1 ],

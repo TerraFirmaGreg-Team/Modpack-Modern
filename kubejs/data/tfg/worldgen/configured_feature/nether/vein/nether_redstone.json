@@ -3,7 +3,7 @@
 	"config": {
 		"rarity": 160,
 		"density": 0.4,
-		"min_y": 16,
+		"min_y": 0,
 		"max_y": 128,
 		"size": 40,
 		"random_name": "nether_redstone",
