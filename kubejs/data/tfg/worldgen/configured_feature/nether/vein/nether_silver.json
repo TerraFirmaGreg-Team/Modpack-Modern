@@ -2,10 +2,10 @@
 	"type": "tfc:cluster_vein",
 	"config": {
 		"rarity": 160,
-		"density": 0.4,
+		"density": 0.5,
 		"min_y": 24,
 		"max_y": 128,
-		"size": 40,
+		"size": 45,
 		"random_name": "nether_silver",
 		"blocks": [
 			{

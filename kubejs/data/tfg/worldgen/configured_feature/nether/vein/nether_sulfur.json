@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 185,
-		"density": 0.2,
+		"rarity": 165,
+		"density": 0.3,
 		"min_y": 0,
-		"max_y": 92,
-		"size": 45,
+		"max_y": 128,
+		"size": 50,
 		"random_name": "nether_sulfur",
 		"blocks": [
 			{
