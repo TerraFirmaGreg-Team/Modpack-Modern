@@ -42,12 +42,26 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+	event.create('tfg:rock/hardened_dripstone')
+		.soundType('dripstone')
 		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/dripstone_block' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+		.soundType('dripstone')
 		.noItem()
 
 	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike')
-		.stoneSoundType()
+		.soundType('deepslate')
 		.noItem()
 
 	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike')
@@ -57,12 +71,12 @@ const registerTFGBlocks = (event) => {
 	event.create('tfg:loose/deepslate', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/deepslate')
 		.rockTypeModel('metamorphic')
-		.stoneSoundType()
+		.soundType('deepslate')
 
 	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/dripstone')
 		.rockTypeModel('sedimentary')
-		.stoneSoundType()
+		.soundType('dripstone')
 
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
@@ -88,7 +102,6 @@ const registerTFGBlocks = (event) => {
 		.property(BlockProperties.AXIS)
 		.tagBoth('minecraft:mineable/axe')
 		.mapColor('black')
-
 
 	// #endregion
 	

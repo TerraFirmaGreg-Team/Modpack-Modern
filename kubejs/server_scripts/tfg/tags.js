@@ -29,8 +29,10 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_blackstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_blackstone')
 	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_blackstone')
-	event.add('tfc:grass_plantable_on', 'tfg:rock/hardened_blackstone')
 	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_blackstone')
+
+	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
+	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 
 	// #endregion
 }

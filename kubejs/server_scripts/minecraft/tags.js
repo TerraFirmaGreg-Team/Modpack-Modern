@@ -58,6 +58,7 @@ const registerMinecraftBlockTags = (event) => {
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
+    event.add('tfc:rock/raw', 'minecraft:dripstone_block')
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
@@ -80,6 +81,7 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfc:creeping_stone_plantable_on', 'minecraft:blackstone')
     event.add('minecraft:base_stone_nether', 'minecraft:deepslate')
     event.add('minecraft:base_stone_nether', 'minecraft:blackstone')
+    event.add('minecraft:base_stone_nether', 'minecraft:dripstone_block')
     event.add('forge:stone', 'minecraft:blackstone')
 
     event.add('tfc:can_landslide', 'minecraft:cobbled_deepslate')
@@ -87,6 +89,8 @@ const registerMinecraftBlockTags = (event) => {
 
     event.add('tfc:breaks_when_isolated', 'minecraft:deepslate')
     event.add('tfc:breaks_when_isolated', 'minecraft:blackstone')
+    event.add('tfc:breaks_when_isolated', 'minecraft:gilded_blackstone')
+    event.add('tfc:breaks_when_isolated', 'minecraft:dripstone_block')
 
     event.add('tfg:rock_stairs', 'minecraft:cobbled_deepslate_stairs')
     event.add('tfg:rock_slabs', 'minecraft:cobbled_deepslate_slab')

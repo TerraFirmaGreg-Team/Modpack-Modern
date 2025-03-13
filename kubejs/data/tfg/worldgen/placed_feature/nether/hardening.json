@@ -24,6 +24,15 @@
 				{
 					"target": {
 						"predicate_type": "minecraft:block_match",
+						"block": "minecraft:dripstone_block"
+					},
+					"state": {
+						"Name": "tfg:rock/hardened_dripstone"
+					}
+				},
+				{
+					"target": {
+						"predicate_type": "minecraft:block_match",
 						"block": "tfc:rock/raw/gneiss"
 					},
 					"state": {
