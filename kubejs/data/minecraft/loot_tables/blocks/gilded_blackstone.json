@@ -6,8 +6,32 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:item",
-					"name": "minecraft:blackstone"
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:gilded_blackstone",
+							"conditions": [
+								{
+									"condition": "tfc:is_isolated"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "beneath:blackstone_pebble",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"type": "minecraft:uniform",
+										"min": 2,
+										"max": 4
+									}
+								}
+							]
+						}
+					]
 				}
 			],
 			"conditions": [
