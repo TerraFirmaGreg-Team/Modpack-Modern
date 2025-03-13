@@ -72,10 +72,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"76EF4D00586A8B74"
-				"427814F6E9386772"
-			]
+			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.field_guide.desc} | {quests.3D7B0F3134C30364.d1}"]
 			icon: {
 				Count: 1

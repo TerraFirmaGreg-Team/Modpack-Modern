@@ -12,6 +12,14 @@ const registerAFCItemTags = (event) =>{
         event.add('minecraft:logs_that_burn', `#afc:${woodType}_logs`)
         event.add('tfg:default_chests', `afc:wood/chest/${woodType}`)
         event.add('tfg:trapped_chests', `afc:wood/trapped_chest/${woodType}`)
+        
+        event.add('firmalife:food_shelves', `afc:wood/food_shelf/${woodType}`)
+        event.add('firmalife:hangers', `afc:wood/hanger/${woodType}`)
+        event.add('firmalife:jarbnets', `afc:wood/jarbnet/${woodType}`)
+        event.add('firmalife:big_barrels', `afc:wood/big_barrel/${woodType}`)
+        event.add('firmalife:wine_shelves', `afc:wood/wine_shelf/${woodType}`)
+        event.add('firmalife:stomping_barrels', `afc:wood/stomping_barrel/${woodType}`)
+        event.add('firmalife:barrel_presses', `afc:wood/barrel_press/${woodType}`)
     })
 
     //Hardwood Tags
@@ -39,6 +47,13 @@ const registerAFCBlockTags = (event) =>{
     })
 
     event.add("afc:tappable_logs", "tfc:wood/log/kapok")
+
+    event.add("tfg:latex_logs", "#tfc:kapok_logs")
+    event.add("tfg:latex_logs", "#afc:hevea_logs")
+    event.add("tfg:latex_logs", "#afc:rubber_fig_logs")
+
+    event.add("tfg:syrup_logs", "#tfc:maple_logs")
+    event.add("tfg:syrup_logs", "#tfc:birch_logs")
 }
 
 /**

@@ -216,7 +216,9 @@
 		}
 		{
 			dependencies: ["20B910AAAC661E09"]
+			description: ["{quests.stone_age.gather_logs.desc}"]
 			id: "2108338E1693768B"
+			subtitle: "{quests.stone_age.gather_logs.subtitle}"
 			tasks: [{
 				count: 10L
 				id: "1BC63DC54B3067C5"
@@ -227,17 +229,20 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
 					}
 				}
-				title: "Any #minecraft:logs"
+				title: "{quests.tasktype.item.any} #minecraft:logs"
 				type: "item"
 			}]
+			title: "{quests.stone_age.gather_logs.title}"
 			x: 12.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0B140885C77A752D"]
+			description: ["{quests.stone_age.workbench.desc}"]
 			id: "4C444814F1C7B600"
 			shape: "octagon"
 			size: 3.0d
+			subtitle: "{quests.stone_age.workbench.subtitle}"
 			tasks: [{
 				id: "370C19839C680D81"
 				item: {
@@ -247,9 +252,10 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:workbenches)"
 					}
 				}
-				title: "Any #tfc:workbenches"
+				title: "{quests.tasktype.item.any} #tfc:workbenches"
 				type: "item"
 			}]
+			title: "{quests.stone_age.workbench.title}"
 			x: 11.0d
 			y: 12.0d
 		}
@@ -260,8 +266,10 @@
 				"3CA3B76D09F03ED6"
 			]
 			dependency_requirement: "all_started"
+			description: ["{quests.stone_age.first_saw.desc}"]
 			id: "76B145EFF9B5DB67"
 			min_required_dependencies: 2
+			subtitle: "{quests.stone_age.first_saw.subtitle}"
 			tasks: [
 				{
 					id: "025AB5FDFA6CFADE"
@@ -272,7 +280,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:copper_saw_head)item(gtceu:bismuth_bronze_saw_head)item(gtceu:bronze_saw_head)item(gtceu:black_bronze_saw_head))"
 						}
 					}
-					title: "Any #forge:saw_heads"
+					title: "{quests.stone_age.first_saw.tasks.primitive_saw_heads}"
 					type: "item"
 				}
 				{
@@ -284,16 +292,19 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:copper_saw)item(gtceu:bismuth_bronze_saw)item(gtceu:bronze_saw)item(gtceu:black_bronze_saw))"
 						}
 					}
-					title: "Any #tfc:saws"
+					title: "{quests.stone_age.first_saw.tasks.primitive_saws}"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.first_saw.title}"
 			x: 11.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["76B145EFF9B5DB67"]
+			description: ["{quests.stone_age.craft_lumber.desc}"]
 			id: "0B140885C77A752D"
+			subtitle: "{quests.stone_age.craft_lumber.subtitle}"
 			tasks: [
 				{
 					count: 16L
@@ -305,7 +316,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lumber)"
 						}
 					}
-					title: "Any #tfc:lumber"
+					title: "{quests.tasktype.item.any} #tfc:lumber"
 					type: "item"
 				}
 				{
@@ -318,10 +329,11 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
 						}
 					}
-					title: "Any #minecraft:planks"
+					title: "{quests.tasktype.item.any} #minecraft:planks"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.craft_lumber.title}"
 			x: 11.0d
 			y: 9.5d
 		}
@@ -330,7 +342,9 @@
 				"718CDC407CDE32E1"
 				"1562419608EB333D"
 			]
+			description: ["{quests.stone_age.water_jug.desc}"]
 			id: "7D828280098F6BEE"
+			subtitle: "{quests.stone_age.water_jug.subtitle}"
 			tasks: [{
 				id: "0D682F8BE96153F9"
 				item: {
@@ -345,6 +359,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.stone_age.water_jug.title}"
 			x: 7.0d
 			y: 6.0d
 		}
@@ -362,6 +377,7 @@
 				id: "66D681FE9C9D8249"
 				observe_type: 0
 				timer: 0L
+				title: "{quests.tasktype.lookat} tfc:pit_kiln"
 				to_observe: "tfc:pit_kiln"
 				type: "observation"
 			}]
@@ -389,7 +405,9 @@
 				"560B17BFBE8D477D"
 				"1562419608EB333D"
 			]
+			description: ["{quests.stone_age.leather_flask.desc}"]
 			id: "62BD1E75FD629161"
+			subtitle: "{quests.stone_age.leather_flask.subtitle}"
 			tasks: [{
 				id: "19738C50367BC37B"
 				item: {
@@ -401,12 +419,15 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.stone_age.leather_flask.title}"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["1562419608EB333D"]
+			description: ["{quests.stone_age.iron_flask.desc}"]
 			id: "11C45DBB20ED7647"
+			subtitle: "{quests.stone_age.iron_flask.subtitle}"
 			tasks: [{
 				id: "6D628C84743356F0"
 				item: {
@@ -424,19 +445,23 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.stone_age.iron_flask.title}"
 			x: 4.5d
 			y: 8.5d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.stone_age.find_clay.desc}"]
 			hide_dependency_lines: true
 			id: "021921B4D2044B3B"
+			subtitle: "{quests.stone_age.find_clay.subtitle}"
 			tasks: [
 				{
 					icon: "tfc:clay/loam"
 					id: "365FB8F8FC235855"
 					observe_type: 1
 					timer: 0L
+					title: "{quests.tasktype.lookat} #tfc:lay"
 					to_observe: "#tfc:clay"
 					type: "observation"
 				}
@@ -445,30 +470,35 @@
 					id: "0DEAAE4416D8F289"
 					observe_type: 1
 					timer: 0L
+					title: "{quests.tasktype.lookat} #tfc:clay_indicators"
 					to_observe: "#tfc:clay_indicators"
 					type: "observation"
 				}
 			]
+			title: "{quests.stone_age.find_clay.title}"
 			x: 14.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["021921B4D2044B3B"]
+			description: ["{quests.stone_age.clay.desc}"]
 			id: "3687ACAD307EE7EF"
+			subtitle: "{quests.stone_age.clay.subtitle}"
 			tasks: [{
 				id: "4FCD61B48E983629"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
+			title: "{quests.stone_age.clay.title}"
 			x: 14.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
-			description: ["Instead of ordinary pebbles, you can find pieces of ore in the world, they usually indicate that somewhere underground there is a vein with ore similar in material to a piece of ore found on the surface, but so far you do not have a pickaxe, so you should collect such pieces, because they can be melted into metal using molds and a fire pit, which we will talk about later."]
+			description: ["{quests.stone_age.native_ores.desc} | Instead of ordinary pebbles, you can find pieces of ore in the world, they usually indicate that somewhere underground there is a vein with ore similar in material to a piece of ore found on the surface, but so far you do not have a pickaxe, so you should collect such pieces, because they can be melted into metal using molds and a fire pit, which we will talk about later."]
 			hide_dependency_lines: true
 			id: "669F84C6A2A64145"
-			subtitle: "Your first metal is already available, at a discount"
+			subtitle: "{quests.stone_age.native_ores.subtitle} | Your first metal is already available, at a discount"
 			tasks: [
 				{
 					id: "0B70FD35D2C27E4C"
@@ -639,8 +669,8 @@
 					type: "item"
 				}
 			]
-			title: "Pebbles with ore"
-			x: 7.0d
+			title: "{quests.stone_age.native_ores.title} | Pebbles with ore"
+			x: 9.5d
 			y: 8.0d
 		}
 		{
@@ -648,7 +678,10 @@
 				"4C3414E10EDB2E82"
 				"2108338E1693768B"
 			]
+			description: ["{quests.stone_age.firepit.desc}"]
+			icon: "tfc:firepit"
 			id: "5301A38F7EA81140"
+			subtitle: "{quests.stone_age.firepit.subtitle}"
 			tasks: [
 				{
 					id: "77A0EB7DDAA334C8"
@@ -666,18 +699,22 @@
 					id: "201FCF5880F6237F"
 					observe_type: 0
 					timer: 0L
+					title: "{quests.tasktype.lookat} tfc:firepit"
 					to_observe: "tfc:firepit"
 					type: "observation"
 				}
 			]
+			title: "{quests.stone_age.firepit.title}"
 			x: 14.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["45A09AD0043FF92B"]
+			description: ["{quests.metal_age.copper_anvil.desc}"]
 			id: "48A8E3210B2BAE1C"
 			shape: "gear"
 			size: 4.0d
+			subtitle: "{quests.metal_age.copper_anvil.subtitle}"
 			tasks: [{
 				id: "3F1120F05AD5FB2B"
 				item: {
@@ -692,6 +729,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.metal_age.copper_anvil.title}"
 			x: 24.0d
 			y: 11.5d
 		}
@@ -702,7 +740,9 @@
 				"706A1824B1487385"
 				"4D1CD95482EE2CDD"
 			]
+			description: ["{quests.stone_age.weld_copper_ingots.desc}"]
 			id: "45A09AD0043FF92B"
+			subtitle: "{quests.stone_age.weld_copper_ingots.subtitle}"
 			tasks: [{
 				count: 7L
 				id: "5A6EF9EBF232601C"
@@ -718,6 +758,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.stone_age.weld_copper_ingots.title}"
 			x: 21.0d
 			y: 11.5d
 		}
@@ -727,7 +768,9 @@
 				"706A1824B1487385"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.stone_age.flux.desc}"]
 			id: "30E26DC33FD019FE"
+			subtitle: "{quests.stone_age.flux.subtitle}"
 			tasks: [
 				{
 					id: "3CADC091B8162193"
@@ -738,7 +781,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fluxstone)"
 						}
 					}
-					title: "Any #tfc:fluxstone"
+					title: "{quests.tasktype.item.any} #tfc:fluxstone"
 					type: "item"
 				}
 				{
@@ -757,6 +800,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.flux.title}"
 			x: 21.0d
 			y: 13.5d
 		}
@@ -765,7 +809,9 @@
 				"618090A6D0D3B2F1"
 				"669F84C6A2A64145"
 			]
+			description: ["{quests.stone_age.copper_for_anvil.desc}"]
 			id: "6EEBBF78AFA3F42A"
+			subtitle: "{quests.stone_age.copper_for_anvil.subtitle}"
 			tasks: [{
 				count: 14L
 				id: "302196CB1816F316"
@@ -781,12 +827,15 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.stone_age.copper_for_anvil.title}"
 			x: 21.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
+			description: ["{quests.stone_age.rock_anvil.desc}"]
 			id: "706A1824B1487385"
+			subtitle: "{quests.stone_age.rock_anvil.subtitle}"
 			tasks: [
 				{
 					id: "0425FDD03AEC4F0D"
@@ -797,18 +846,20 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:hammers)"
 						}
 					}
-					title: "Any #tfc:hammers"
+					title: "{quests.tasktype.item.any} #tfc:hammers"
 					type: "item"
 				}
 				{
-					icon: "tfc:rock/raw/andesite"
+					icon: "tfc:rock/anvil/gabbro"
 					id: "2C45B0BB9F3521D6"
 					observe_type: 1
 					timer: 0L
-					to_observe: "#tfc:rock/raw"
+					title: "{quests.tasktype.lookat} #tfc:rock_anvils"
+					to_observe: "#tfc:rock_anvils"
 					type: "observation"
 				}
 			]
+			title: "{quests.stone_age.rock_anvil.title}"
 			x: 19.0d
 			y: 11.5d
 		}
@@ -817,7 +868,9 @@
 				"4333D5794A37CF2D"
 				"4C3414E10EDB2E82"
 			]
+			description: ["{quests.stone_age.first_stone_tools.desc}"]
 			id: "20B910AAAC661E09"
+			subtitle: "{quests.stone_age.first_stone_tools.subtitle}"
 			tasks: [
 				{
 					id: "3D3D5F09154EC219"
@@ -861,12 +914,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.first_stone_tools.title}"
 			x: 11.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["78E3BF0BEB48635B"]
+			description: ["{quests.stone_age.first_stone_heads.desc}"]
 			id: "4333D5794A37CF2D"
+			subtitle: "{quests.stone_age.first_stone_heads.subtitle}"
 			tasks: [
 				{
 					id: "7F838F64A76D8DE9"
@@ -879,6 +935,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.first_stone_heads.title}"
 			x: 9.0d
 			y: 0.0d
 		}
@@ -887,7 +944,9 @@
 				"3630ED3B85753BB2"
 				"3687ACAD307EE7EF"
 			]
+			description: ["{quests.stone_age.make_vessel.desc}"]
 			id: "13BC619900C60011"
+			subtitle: "{quests.stone_age.make_vessel.subtitle}"
 			tasks: [
 				{
 					id: "213723450D53ADC4"
@@ -898,7 +957,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:unfired_vessels)"
 						}
 					}
-					title: "Any #tfc:unfired_vessels"
+					title: "{quests.tasktype.item.any} #tfc:unfired_vessels"
 					type: "item"
 				}
 				{
@@ -910,10 +969,11 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:vessels)"
 						}
 					}
-					title: "Any #tfc:vessels"
+					title: "{quests.tasktype.item.any} #tfc:vessels"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.make_vessel.title}"
 			x: 12.5d
 			y: 6.0d
 		}
@@ -922,7 +982,9 @@
 				"3630ED3B85753BB2"
 				"3687ACAD307EE7EF"
 			]
+			description: ["{quests.stone_age.make_saw_mold.desc}"]
 			id: "3CA3B76D09F03ED6"
+			subtitle: "{quests.stone_age.make_saw_mold_subtitle}"
 			tasks: [
 				{
 					id: "5801C01836A543B5"
@@ -953,6 +1015,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.make_saw_mold.title}"
 			x: 11.0d
 			y: 6.0d
 		}
@@ -961,7 +1024,9 @@
 				"3630ED3B85753BB2"
 				"3687ACAD307EE7EF"
 			]
+			description: ["{quests.stone_age.make_jug.desc}"]
 			id: "718CDC407CDE32E1"
+			subtitle: "{quests.stone_age.make_jug.subtitle}"
 			tasks: [
 				{
 					id: "5C0D168E0E85C6E5"
@@ -983,6 +1048,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.make_jug.title}"
 			x: 9.5d
 			y: 6.0d
 		}
@@ -991,10 +1057,12 @@
 				"3630ED3B85753BB2"
 				"3687ACAD307EE7EF"
 			]
+			description: ["{quests.stone_age.clay_products.desc}"]
 			hide_until_deps_visible: true
 			id: "01B6CFB4A317A10F"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.stone_age.clay_products.subtitle}"
 			tasks: [
 				{
 					id: "49D59028557EF5B3"
@@ -1090,15 +1158,12 @@
 					id: "5F57E638ED5BFCA5"
 					item: {
 						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:fired_vessels)"
 						}
-						id: "tfc:ceramic/vessel"
-						tag: { }
 					}
+					title: "{quests.tasktype.item.any} #tfc:fired_vessels"
 					type: "item"
 				}
 				{
@@ -1253,40 +1318,57 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.clay_products.title}"
 			x: 13.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
+			description: ["{quests.stone_age.create_forge.desc}"]
 			id: "4D1CD95482EE2CDD"
 			size: 2.0d
+			subtitle: "{quests.stone_age.create_forge.subtitle}"
 			tasks: [{
 				icon: "gtceu:charcoal_block"
 				id: "4569B9DABD1A4E39"
 				observe_type: 0
 				timer: 0L
+				title: "{quests.tasktype.lookat} tfc:charcoal_forge"
 				to_observe: "tfc:charcoal_forge"
 				type: "observation"
 			}]
+			title: "{quests.stone_age.create_forge.title}"
 			x: 19.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.stone_age.get_raw_rock.desc}"]
 			hide_dependency_lines: true
 			id: "193F214E9F154980"
 			size: 1.5d
+			subtitle: "{quests.stone_age.get_raw_rock.subtitle}"
 			tasks: [{
-				id: "2658B2FB722CC43D"
-				item: "tfc:rock/raw/gabbro"
+				id: "07F779EAC86103F3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/raw)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:rock/raw"
 				type: "item"
 			}]
+			title: "{quests.stone_age.get_raw_rock.title}"
 			x: 16.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
+			description: ["{quests.stone_age.quern.desc}"]
 			id: "5E186CD5E83BFDF0"
+			subtitle: "{quests.stone_age.quern.subtitle}"
 			tasks: [
 				{
 					id: "343DA4CA8AFBFEBC"
@@ -1305,12 +1387,15 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.quern.title}"
 			x: 19.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["2108338E1693768B"]
+			description: ["{quests.stone_age.mining_prep_desc}"]
 			id: "451AAAE0C17DB730"
+			subtitle: "{quests.stone_age.mining_prep_subtitle}"
 			tasks: [
 				{
 					id: "308F5E45F3701E77"
@@ -1321,7 +1406,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:propicks)"
 						}
 					}
-					title: "Any #tfc:propicks"
+					title: "{quests.tasktype.item.any} #tfc:propicks"
 					type: "item"
 				}
 				{
@@ -1333,7 +1418,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:pickaxes)"
 						}
 					}
-					title: "Any #tfc:pickaxes"
+					title: "{quests.tasktype.item.any} #tfc:pickaxes"
 					type: "item"
 				}
 				{
@@ -1345,7 +1430,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:hammers)"
 						}
 					}
-					title: "Any #tfc:hammers"
+					title: "{quests.tasktype.item.any} #tfc:hammers"
 					type: "item"
 				}
 				{
@@ -1358,7 +1443,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:support_beams)"
 						}
 					}
-					title: "Any #tfc:support_beams"
+					title: "{quests.tasktype.item.any} #tfc:support_beams"
 					type: "item"
 				}
 				{
@@ -1371,30 +1456,36 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
 						}
 					}
-					title: "Any #minecraft:planks"
+					title: "{quests.tasktype.item.any} #minecraft:planks"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.mining_prep.title}"
 			x: 21.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["451AAAE0C17DB730"]
+			description: ["{quests.stone_age.hazards.desc}"]
 			icon: "gtceu:generic_hazard_sign_block"
 			id: "618090A6D0D3B2F1"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "{quests.stone_age.hazards.subtitle}"
 			tasks: [{
 				id: "4B7BB6246D3A5A26"
-				title: "{quests.stone_age.hazards}"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
+			title: "{quests.stone_age.hazards.title}"
 			x: 21.0d
 			y: 5.25d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.stone_age.food_desc}"]
 			id: "0FB8FD84B13F10C6"
+			subtitle: "{quests.stone_age.foods.subtitle}"
 			tasks: [{
 				id: "5B3676A1FAFDDF5E"
 				item: {
@@ -1404,9 +1495,10 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods)"
 					}
 				}
-				title: "Any #tfc:foods"
+				title: "{quests.tasktype.item.any} #tfc:foods"
 				type: "item"
 			}]
+			title: "{quests.stone_age.foods.title}"
 			x: 4.5d
 			y: -5.0d
 		}
@@ -1415,7 +1507,9 @@
 				"5301A38F7EA81140"
 				"749B3C8698D34E91"
 			]
+			description: ["{quests.stone_age.cook_meat.desc}"]
 			id: "0301508D93520519"
+			subtitle: "{quests.stone_age.cook_meat.subtitle}"
 			tasks: [
 				{
 					id: "793B7863AF61FC8E"
@@ -1426,7 +1520,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/raw_meats)"
 						}
 					}
-					title: "Any #tfc:foods/raw_meats"
+					title: "{quests.tasktype.item.any} #tfc:foods/raw_meats"
 					type: "item"
 				}
 				{
@@ -1438,10 +1532,11 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:foods/cooked_meats)"
 						}
 					}
-					title: "Any #tfc:foods/cooked_meats"
+					title: "{quests.tasktype.item.any} #tfc:foods/cooked_meats"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.cook_meat.title}"
 			x: 14.5d
 			y: -5.0d
 		}
@@ -1450,7 +1545,9 @@
 				"5301A38F7EA81140"
 				"0301508D93520519"
 			]
+			description: ["{quests.stone_age.soup_time.desc}"]
 			id: "25FDB2A4C3C58566"
+			subtitle: "{quests.stone_age.soup_time.subtitle}"
 			tasks: [
 				{
 					id: "38AD3CF566E22669"
@@ -1466,31 +1563,37 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:soups)"
 						}
 					}
-					title: "Any #tfc:soups"
+					title: "{quests.tasktype.item.any} #tfc:soups"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.soup_time.title}"
 			x: 17.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["0FB8FD84B13F10C6"]
+			description: ["{quests.stone_age.nutrition.desc}"]
 			icon: "minecraft:apple"
 			id: "749B3C8698D34E91"
 			size: 1.5d
+			subtitle: "{quests.stone_age.nutrition.subtitle}"
 			tasks: [{
 				id: "37922BAC8F69F8D3"
-				title: "Nutrition"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
+			title: "{quests.stone_age.nutrition_title}"
 			x: 9.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["25FDB2A4C3C58566"]
+			description: ["{quests.stone_age.meals.desc}"]
 			id: "64EC9A55008BD417"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.stone_age.meals.subtitle}"
 			tasks: [
 				{
 					id: "7D77C6BFE159FDC9"
@@ -1527,7 +1630,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:salads)"
 						}
 					}
-					title: "Any #tfc:salads"
+					title: "{quests.tasktype.item.any} #tfc:salads"
 					type: "item"
 				}
 				{
@@ -1539,6 +1642,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:food/barley_bread_sandwich)item(tfc:food/maize_bread_sandwich)item(tfc:food/oat_bread_sandwich)item(tfc:food/rye_bread_sandwich)item(tfc:food/rice_bread_sandwich)item(tfc:food/wheat_bread_sandwich))"
 						}
 					}
+					title: "{quests.stone_age.meals.tasks.sandwiches}"
 					type: "item"
 				}
 				{
@@ -1550,15 +1654,19 @@
 							"ftbfiltersystem:filter": "or(item(tfc:food/barley_bread_jam_sandwich)item(tfc:food/maize_bread_jam_sandwich)item(tfc:food/oat_bread_jam_sandwich)item(tfc:food/rye_bread_jam_sandwich)item(tfc:food/rice_bread_jam_sandwich)item(tfc:food/wheat_bread_jam_sandwich))"
 						}
 					}
+					title: "{quests.stone_age.meals.tasks.jam_sandwiches}"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.meals.title}"
 			x: 19.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
+			description: ["{quests.stone_age.inventory.desc}"]
 			id: "61B15F0C9B4B647F"
+			subtitle: "{quests.stone_age.inventory.subtitle}"
 			tasks: [
 				{
 					id: "2BF9C5E12B00EF38"
@@ -1569,7 +1677,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:default_chests)"
 						}
 					}
-					title: "Any #tfg:default_chests"
+					title: "{quests.tasktype.item.any} #tfg:default_chests"
 					type: "item"
 				}
 				{
@@ -1586,16 +1694,19 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
 						}
 					}
-					title: "Any #tfcastikorcarts:supply_cart"
+					title: "{quests.tasktype.item.any} #tfcastikorcarts:supply_cart"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.inventory.title}"
 			x: 11.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
+			description: ["{quests.stone_age.barrels.desc}"]
 			id: "3E8833E7CE591E6F"
+			subtitle: "{quests.stone_age.barrels.subtitle}"
 			tasks: [{
 				id: "59BC7103C78BC630"
 				item: {
@@ -1605,25 +1716,30 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:barrels)"
 					}
 				}
-				title: "Any #tfc:barrels"
+				title: "{quests.tasktype.item.any} #tfc:barrels"
 				type: "item"
 			}]
+			title: "{quests.stone_age.barrels.title}"
 			x: 7.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["3E8833E7CE591E6F"]
+			description: ["{quests.stone_age.leather.desc}"]
 			id: "560B17BFBE8D477D"
+			subtitle: "{quests.stone_age.leather.subtitle}"
 			tasks: [{
 				id: "603DB1A67BB20D71"
 				item: "minecraft:leather"
 				type: "item"
 			}]
+			title: "{quests.stone_age.leather.title}"
 			x: 2.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1D40CAE675C4BB91"]
+			description: ["{quests.stone_age.hydration.desc}"]
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -1633,41 +1749,52 @@
 			}
 			id: "1562419608EB333D"
 			size: 1.5d
+			subtitle: "{quests.stone_age.hydration.subtitle}"
 			tasks: [{
 				id: "01CB74D1BA1BC018"
-				title: "Hydration"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
+			title: "{quests.stone_age.hydration.title}"
 			x: 4.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.stone_age.temperature.desc}"]
 			id: "38839D3E049215CE"
+			subtitle: "{quests.stone_age.temperature.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "ad_astra:earth_globe"
 				id: "0734DEADAB513E43"
+				title: "{quests.stone_age.temperature.task}"
 				type: "dimension"
 			}]
+			title: "{quests.stone_age.temperature.title}"
 			x: 1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["38839D3E049215CE"]
+			description: ["{quests.stone_age.insulation.desc}"]
 			id: "4521BB8892B386AF"
 			size: 1.5d
+			subtitle: "{quests.stone_age.insulation.subtitle}"
 			tasks: [{
 				id: "139FA72AB6F06E57"
-				title: "insulation"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
+			title: "{quests.stone_age.insulation.title}"
 			x: -1.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["560B17BFBE8D477D"]
+			description: ["{quests.stone_age.leather_armor.desc}"]
 			id: "04E900CFE39D6A6C"
+			subtitle: "{quests.stone_age.leather_armor.subtitle}"
 			tasks: [
 				{
 					id: "0329D517A7921656"
@@ -1714,16 +1841,20 @@
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.leather_armor.title}"
 			x: -1.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"4521BB8892B386AF"
 				"04E900CFE39D6A6C"
+				"2897146D3163F90D"
 			]
-			dependency_requirement: "one_completed"
+			dependency_requirement: "all_started"
+			description: ["{quests.stone_age.clothes.desc}"]
 			id: "590F3CBAB5F79DEE"
+			subtitle: "{quests.stone_age.clothes.subtitle}"
 			tasks: [
 				{
 					id: "780E763F13FE6919"
@@ -1734,6 +1865,7 @@
 							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_hat)item(tfcambiental:wool_sweater)item(tfcambiental:wool_pants)item(tfcambiental:wool_boots)item(tfcambiental:insulated_leather_hat)item(tfcambiental:insulated_leather_tunic)item(tfcambiental:insulated_leather_pants)item(tfcambiental:insulated_leather_boots))"
 						}
 					}
+					title: "{quests.stone_age.clothes.tasks.for_cold}"
 					type: "item"
 				}
 				{
@@ -1745,38 +1877,87 @@
 							"ftbfiltersystem:filter": "or(item(tfcambiental:silk_cowl)item(tfcambiental:silk_shirt)item(tfcambiental:silk_pants)item(tfcambiental:silk_shoes)item(tfcambiental:burlap_cowl)item(tfcambiental:burlap_shirt)item(tfcambiental:burlap_pants)item(tfcambiental:burlap_shoes))"
 						}
 					}
+					title: "{quests.stone_age.clothes.tasks.for_hot"
 					type: "item"
 				}
 			]
+			title: "{quests.stone_age.clothes.title}"
 			x: -1.5d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["25FDB2A4C3C58566"]
+			description: ["{quests.stone_age.garlic_bread.desc}"]
 			hide_until_deps_visible: true
 			id: "0D1E3CAF5D4B6B7B"
 			invisible: true
+			optional: true
 			shape: "heart"
+			subtitle: "{quests.stone_age.garlic_bread.subtitle}"
 			tasks: [{
+				consume_items: true
 				count: 1024L
-				id: "7A340EB1C4825C4A"
-				item: {
-					Count: 1024
+				icon: {
+					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: 420000L
+							creationDate: -9223372036854775808L
 							traits: [ ]
 						}
 					}
 					id: "firmalife:food/garlic_bread"
 				}
+				id: "7A340EB1C4825C4A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(firmalife:food/garlic_bread))"
+					}
+				}
 				match_nbt: false
 				only_from_crafting: false
 				optional_task: true
+				title: "{quests.stone_age.garlic_bread.task}"
 				type: "item"
+				weak_nbt_match: true
 			}]
+			title: "{quests.stone_age.garlic_bread.title}"
 			x: 17.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["3D7B0F3134C30364"]
+			description: ["{quests.stone_age.material_for_clothes.desc}"]
+			hide_dependency_lines: true
+			id: "2897146D3163F90D"
+			progression_mode: "flexible"
+			subtitle: "{quests.stone_age.material_for_clothes.subtitle}}"
+			tasks: [
+				{
+					id: "403201EB41B617AE"
+					item: "tfc:silk_cloth"
+					type: "item"
+				}
+				{
+					id: "03F00B2771E29CFE"
+					item: "tfc:wool_cloth"
+					type: "item"
+				}
+				{
+					id: "39393C4B76174DFC"
+					item: "tfc:burlap_cloth"
+					type: "item"
+				}
+				{
+					id: "5D8FDC1A41984A42"
+					item: "tfc:wool_yarn"
+					type: "item"
+				}
+			]
+			title: "{quests.stone_age.material_for_clothes.title}"
+			x: -4.0d
+			y: 9.0d
 		}
 	]
 	subtitle: ["{quests.stoneage.subtitle}"]

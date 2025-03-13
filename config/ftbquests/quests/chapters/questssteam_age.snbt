@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "questssteam_age"
+	group: "3C4612A920658A7E"
+	icon: "gtceu:steam_bucket"
+	id: "784A885090386609"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"something like"
+			"1) any hp steam boiler"
+			"2) a branch for macerator and compressor to make cogs"
+			"3) a branch with forge hammer and then mech press for cheaper plates. Also rolling mill"
+			"4) tree tapping for latex, then resin, then circuit boards"
+			"5) maybe an optional quest telling people about your blast furnace automation guide"
+			"6) a branch for glassblowing to eventually make tubes"
+			"6) then at the very end, deployer and the vacuum tube "
+		]
+		id: "188A3B7ABDCB2847"
+		tasks: [{
+			id: "0DE8AF823A6A8DF1"
+			title: "PYRITIE IDEA"
+			type: "custom"
+		}]
+		x: -8.0d
+		y: 0.5d
+	}]
+	title: "{quests.steam_age}"
+}
