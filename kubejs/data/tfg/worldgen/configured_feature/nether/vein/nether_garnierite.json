@@ -10,8 +10,7 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/gabbro",
-					"tfc:rock/hardened/gabbro"
+					"tfc:rock/raw/gabbro"
 				],
 				"with": [
 					{
@@ -38,8 +37,7 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/diorite",
-					"tfc:rock/hardened/diorite"
+					"tfc:rock/raw/diorite"
 				],
 				"with": [
 					{
@@ -66,8 +64,7 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone",
-					"tfg:rock/hardened_blackstone"
+					"minecraft:blackstone"
 				],
 				"with": [
 					{

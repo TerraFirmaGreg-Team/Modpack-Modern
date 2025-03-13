@@ -11,8 +11,7 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/gabbro",
-					"tfc:rock/hardened/gabbro"
+					"tfc:rock/raw/gabbro"
 				],
 				"with": [
 					{
@@ -35,8 +34,7 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/granite",
-					"tfc:rock/hardened/granite"
+					"tfc:rock/raw/granite"
 				],
 				"with": [
 					{
@@ -59,8 +57,7 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/gneiss",
-					"tfc:rock/hardened/gneiss"
+					"tfc:rock/raw/gneiss"
 				],
 				"with": [
 					{
@@ -83,8 +80,7 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/diorite",
-					"tfc:rock/hardened/diorite"
+					"tfc:rock/raw/diorite"
 				],
 				"with": [
 					{
@@ -107,8 +103,7 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist",
-					"tfc:rock/hardened/schist"
+					"tfc:rock/raw/schist"
 				],
 				"with": [
 					{
@@ -131,8 +126,7 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone",
-					"tfg:rock/hardened_blackstone"
+					"minecraft:blackstone"
 				],
 				"with": [
 					{

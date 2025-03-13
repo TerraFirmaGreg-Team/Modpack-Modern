@@ -17,7 +17,6 @@
 			{
 				"replace": [
 					"minecraft:deepslate",
-					"tfg:rock/hardened_deepslate",
 					"tfc:mud/silty_loam",
 					"minecraft:soul_soil",
 					"tfc:dirt/loam",
@@ -42,8 +41,7 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone",
-					"tfg:rock/hardened_blackstone"
+					"minecraft:blackstone"
 				],
 				"with": [
 					{
@@ -64,7 +62,6 @@
 				"replace": [
 					"minecraft:basalt",
 					"tfc:rock/raw/basalt",
-					"tfc:rock/hardened/basalt",
 					"tfc:rock/magma/basalt"
 				],
 				"with": [

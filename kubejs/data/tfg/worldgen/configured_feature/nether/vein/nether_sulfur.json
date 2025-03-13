@@ -10,8 +10,7 @@
 		"blocks": [
 			{
 				"replace": [
-					"tfc:rock/raw/diorite",
-					"tfc:rock/hardened/diorite"
+					"tfc:rock/raw/diorite"
 				],
 				"with": [
 					{
@@ -32,7 +31,6 @@
 				"replace": [
 					"minecraft:basalt",
 					"tfc:rock/raw/basalt",
-					"tfc:rock/hardened/basalt",
 					"tfc:rock/magma/basalt"
 				],
 				"with": [
@@ -52,8 +50,7 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone",
-					"tfg:rock/hardened_blackstone"
+					"minecraft:blackstone"
 				],
 				"with": [
 					{
@@ -72,8 +69,7 @@
 			},
 			{
 				"replace": [
-					"tfc:rock/raw/schist",
-					"tfc:rock/hardened/schist"
+					"tfc:rock/raw/schist"
 				],
 				"with": [
 					{
