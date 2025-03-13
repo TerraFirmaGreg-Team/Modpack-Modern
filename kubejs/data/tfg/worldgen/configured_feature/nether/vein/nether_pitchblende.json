@@ -2,10 +2,10 @@
 	"type": "tfc:cluster_vein",
 	"config": {
 		"rarity": 220,
-		"density": 0.45,
+		"density": 0.55,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 24,
+		"size": 29,
 		"random_name": "nether_pitchblende",
 		"blocks": [
 			{

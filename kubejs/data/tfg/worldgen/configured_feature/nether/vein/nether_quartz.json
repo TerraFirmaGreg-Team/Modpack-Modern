@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 130,
-		"density": 0.3,
+		"rarity": 150,
+		"density": 0.4,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 35,
+		"size": 45,
 		"random_name": "nether_quartz",
 		"blocks": [
 			{

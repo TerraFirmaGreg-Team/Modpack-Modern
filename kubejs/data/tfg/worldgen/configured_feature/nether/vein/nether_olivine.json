@@ -1,11 +1,11 @@
 {
 	"type": "tfc:cluster_vein",
 	"config": {
-		"rarity": 270,
-		"density": 0.25,
+		"rarity": 250,
+		"density": 0.35,
 		"min_y": 24,
 		"max_y": 128,
-		"size": 26,
+		"size": 31,
 		"random_name": "nether_olivine",
 		"blocks": [
 			{

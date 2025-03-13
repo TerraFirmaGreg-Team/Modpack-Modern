@@ -2,10 +2,10 @@
 	"type": "tfc:disc_vein",
 	"config": {
 		"rarity": 230,
-		"density": 0.25,
+		"density": 0.35,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 28,
+		"size": 45,
 		"random_name": "nether_garnet",
 		"height": 8,
 		"blocks": [

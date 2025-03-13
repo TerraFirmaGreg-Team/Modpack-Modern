@@ -2,12 +2,12 @@
 	"type": "tfc:disc_vein",
 	"config": {
 		"rarity": 180,
-		"density": 0.3,
+		"density": 0.4,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 38,
+		"size": 33,
 		"random_name": "nether_topaz",
-		"height": 8,
+		"height": 7,
 		"blocks": [
 			{
 				"replace": [

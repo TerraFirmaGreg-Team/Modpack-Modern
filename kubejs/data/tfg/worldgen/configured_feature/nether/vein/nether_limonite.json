@@ -2,10 +2,10 @@
 	"type": "tfc:cluster_vein",
 	"config": {
 		"rarity": 240,
-		"density": 0.35,
+		"density": 0.45,
 		"min_y": 0,
 		"max_y": 128,
-		"size": 32,
+		"size": 37,
 		"random_name": "nether_limonite",
 		"blocks": [
 			{
