@@ -6,12 +6,11 @@ const registerAE2Materials = (event) => {
         .gem(1)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(
-            GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.NO_SMELTING, 
             GTMaterialFlags.CRYSTALLIZABLE, 
             GTMaterialFlags.DISABLE_DECOMPOSITION, 
             GTMaterialFlags.FORCE_GENERATE_BLOCK
         )
         .components('1x silicon', '2x oxygen')
-        .color(0x57448d)
+        .color(0x744ead)
 }
