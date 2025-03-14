@@ -44,7 +44,7 @@ const registerTFGBlocks = (event) => {
 		.opaque(true)
 
 	event.create('tfg:rock/hardened_dripstone')
-		.soundType('dripstone')
+		.soundType('dripstone_block')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -58,7 +58,7 @@ const registerTFGBlocks = (event) => {
 		.opaque(true)
 
 	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
-		.soundType('dripstone')
+		.soundType('dripstone_block')
 		.noItem()
 
 	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike')
@@ -77,7 +77,7 @@ const registerTFGBlocks = (event) => {
 	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/dripstone')
 		.rockTypeModel('sedimentary')
-		.soundType('dripstone')
+		.soundType('dripstone_block')
 
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
