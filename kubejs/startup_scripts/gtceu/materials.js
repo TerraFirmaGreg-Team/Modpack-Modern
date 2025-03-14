@@ -217,16 +217,4 @@ const registerGTCEuMaterialModification = (event) => {
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
-	//
-	//        /* AE 2 */
-	//        if (TFGModsResolver.AE2.isLoaded()) {
-	//            
-	//            block.setIgnored(CertusQuartz, () -> AEBlocks.QUARTZ_BLOCK);
-	//            dust.setIgnored(CertusQuartz, () -> AEItems.CERTUS_QUARTZ_DUST);
-	//            gem.setIgnored(CertusQuartz, () -> AEItems.CERTUS_QUARTZ_CRYSTAL);
-	//
-	//            dust.setIgnored(EnderPearl, () -> AEItems.ENDER_DUST);
-	//        }
-	//    }
-
 }

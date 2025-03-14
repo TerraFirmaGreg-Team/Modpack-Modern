@@ -5,21 +5,17 @@ const registerAE2TagPrefixes = (event) => {
 	const $AE_BLOCKS = Java.loadClass('appeng.core.definitions.AEBlocks');
 	const $AE_ITEMS = Java.loadClass('appeng.core.definitions.AEItems');
 
-	//const KJSTagPrefix = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.built.KJSTagPrefix')
-
-
 	const Fluix = GTCEuAPI.materialManager.getMaterial('tfg:fluix')
 
+	TagPrefix.block.setIgnored(Fluix, $AE_BLOCKS.FLUIX_BLOCK);
+	TagPrefix.dust.setIgnored(Fluix, $AE_ITEMS.FLUIX_DUST);
+	TagPrefix.gem.setIgnored(Fluix, $AE_ITEMS.FLUIX_CRYSTAL);
 
-	let blockPrefix = TagPrefix.block;
-	let dustPrefix = TagPrefix.dust;
-	let gemPrefix = TagPrefix.gem;
+	TagPrefix.dust.setIgnored(GTMaterials.CertusQuartz, $AE_ITEMS.CERTUS_QUARTZ_DUST);
+	TagPrefix.gem.setIgnored(GTMaterials.CertusQuartz, $AE_ITEMS.CERTUS_QUARTZ_CRYSTAL);
 
-	blockPrefix.setIgnored(Fluix, $AE_BLOCKS.FLUIX_BLOCK);
-	dustPrefix.setIgnored(Fluix, $AE_ITEMS.FLUIX_DUST);
-	gemPrefix.setIgnored(Fluix, $AE_ITEMS.FLUIX_CRYSTAL);
-
+	TagPrefix.dust.setIgnored(GTMaterials.EnderPearl, $AE_ITEMS.ENDER_DUST);
 
 	// TODO: make fluid solidifier/extractor recipes for fluix block
-	//blockPrefix.modifyMaterialAmount(Fluix, 4);
+	//TagPrefix.block.modifyMaterialAmount(Fluix, 4);
 }
