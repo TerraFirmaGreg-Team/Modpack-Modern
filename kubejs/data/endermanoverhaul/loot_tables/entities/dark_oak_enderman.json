@@ -41,7 +41,7 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 1.0,
+								"max": 3.0,
 								"min": 0.0
 							},
 							"function": "minecraft:set_count"
@@ -56,11 +56,41 @@
 							"function": "minecraft:looting_enchant"
 						}
 					],
-					"name": "endermanoverhaul:summoner_pearl"
+					"name": "tfc:powder/wood_ash"
+				}
+			],
+			"rolls": 1.0
+		},
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 3.0,
+								"min": 0.0
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:looting_enchant"
+						}
+					],
+					"name": "minecraft:charcoal"
 				}
 			],
 			"rolls": 1.0
 		}
 	],
-	"random_sequence": "endermanoverhaul:entities/swamp_enderman"
+	"random_sequence": "endermanoverhaul:entities/dark_oak_enderman"
 }
