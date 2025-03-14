@@ -28,7 +28,7 @@
 			subtitle: "{quests.tfg.welcome.subtitle}"
 			tasks: [{
 				id: "4BDD4127FC81B680"
-				title: "{quests.tasktypes.checkmark}"
+				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
 			title: "{quests.tfg.welcome.title}"

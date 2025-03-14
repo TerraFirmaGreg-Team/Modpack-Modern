@@ -42,6 +42,12 @@
 			x: 24.0d
 			y: -34.0d
 		}
+		{
+			id: "118AABC6BC02A7AB"
+			linked_quest: "7B2068B200631D5C"
+			x: 7.0d
+			y: -30.0d
+		}
 	]
 	quests: [
 		{
@@ -249,6 +255,7 @@
 				"3C173357029AB649"
 				"234B68E86F72C29E"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.bloomery.desc}"]
 			id: "0A92F5C4BB6AF972"
 			size: 2.0d
@@ -301,17 +308,34 @@
 			id: "5996A3A0D475B8A6"
 			size: 2.0d
 			subtitle: "{quests.metal_age.blast_furnace.subtitle}"
-			tasks: [{
-				id: "3A2A3286F594F977"
-				item: "tfc:blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3A2A3286F594F977"
+					item: "tfc:blast_furnace"
+					type: "item"
+				}
+				{
+					id: "0EE45FC2BA2E363E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:tuyeres)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:tuyeres"
+					type: "item"
+				}
+			]
 			title: "{quests.metal_age.blast_furnace.title}"
 			x: 22.0d
 			y: -32.0d
 		}
 		{
-			dependencies: ["0A92F5C4BB6AF972"]
+			dependencies: [
+				"0A92F5C4BB6AF972"
+				"7B2068B200631D5C"
+			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.weld_wrought_iron_ingots.desc}"]
 			id: "358571B6E692F198"

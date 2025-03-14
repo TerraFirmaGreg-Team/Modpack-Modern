@@ -670,7 +670,7 @@
 				}
 			]
 			title: "{quests.stone_age.native_ores.title} | Pebbles with ore"
-			x: 9.5d
+			x: 12.5d
 			y: 8.0d
 		}
 		{
@@ -809,6 +809,7 @@
 				"618090A6D0D3B2F1"
 				"669F84C6A2A64145"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.copper_for_anvil.desc}"]
 			id: "6EEBBF78AFA3F42A"
 			subtitle: "{quests.stone_age.copper_for_anvil.subtitle}"
@@ -1766,7 +1767,7 @@
 			subtitle: "{quests.stone_age.temperature.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
-				icon: "ad_astra:earth_globe"
+				icon: "minecraft:grass_block"
 				id: "0734DEADAB513E43"
 				title: "{quests.stone_age.temperature.task}"
 				type: "dimension"

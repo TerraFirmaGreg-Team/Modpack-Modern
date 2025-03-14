@@ -873,7 +873,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.aluminium_backpack.title}"
-			x: 14.0d
+			x: 12.5d
 			y: -2.0d
 		}
 		{
@@ -890,7 +890,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.titanium_backpack.title}"
-			x: 16.5d
+			x: 13.5d
 			y: -2.0d
 		}
 		{
@@ -909,7 +909,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.tungstensteel_backpack.title}"
-			x: 20.0d
+			x: 16.0d
 			y: -2.0d
 		}
 		{
@@ -923,7 +923,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.crafting_upgrade.title}"
-			x: 14.0d
+			x: 12.5d
 			y: 3.0d
 		}
 		{
@@ -944,7 +944,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.advanced_upgrades.title}"
-			x: 14.0d
+			x: 12.5d
 			y: 1.0d
 		}
 		{
@@ -1045,11 +1045,14 @@
 				}
 			]
 			title: "{quests.tfg_tips.all_backpack_upgrades.title}"
-			x: 16.5d
+			x: 13.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["1469936B5DE3AC28"]
+			dependencies: [
+				"1469936B5DE3AC28"
+				"48A8E3210B2BAE1C"
+			]
 			description: ["{quests.tfg_tips.treetap.desc}"]
 			id: "128483FFDC8277A0"
 			subtitle: "{quests.tfg_tips.treetap.subtitle}"
@@ -1059,8 +1062,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.treetap.title}"
-			x: -8.0d
-			y: 0.0d
+			x: -9.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6FFD4990FF07078A"]
@@ -1075,7 +1078,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_rubber_ingot.title}"
-			x: -16.0d
+			x: -18.0d
 			y: -2.0d
 		}
 		{
@@ -1090,7 +1093,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_sticky_resin.title}"
-			x: -13.0d
+			x: -14.5d
 			y: -2.0d
 		}
 		{
@@ -1108,7 +1111,7 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_latex_tree.title}"
-			x: -10.5d
+			x: -12.0d
 			y: -2.0d
 		}
 		{
@@ -1126,8 +1129,8 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_syrup_tree.title}"
-			x: -10.5d
-			y: 2.0d
+			x: -12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["308BB7D9D210C8DA"]
@@ -1147,8 +1150,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_tree_sugar.title}"
-			x: -13.0d
-			y: 2.0d
+			x: -14.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7FA5B6354A49C396"]
@@ -1416,7 +1419,8 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cellar.desc}"]
 			id: "3D1FF501DE2E56FE"
-			size: 2.0d
+			shape: "gear"
+			size: 4.0d
 			subtitle: "{quests.tfg_tips.cellar.subtitle}"
 			tasks: [
 				{
@@ -1461,7 +1465,7 @@
 			}]
 			title: "{quests.tfg_tips.cellar_blocks.title}"
 			x: 2.0d
-			y: -18.5d
+			y: -20.0d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -1774,6 +1778,29 @@
 			subtitle: "{quests.tfg_tips.brine_something.subtitle}"
 			tasks: [
 				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								foodData: {
+									dairy: 0.0f
+									decay: 0.0f
+									food: 0
+									fruit: 0.0f
+									grain: 0.0f
+									meat: 0.0f
+									sat: 0.0f
+									veg: 0.0f
+									water: 0.0f
+								}
+								ingredients: [ ]
+								traits: [ ]
+							}
+						}
+						id: "tfc:food/grain_salad"
+						tag: { }
+					}
 					id: "5D58C24125272168"
 					item: {
 						Count: 1
@@ -1827,6 +1854,29 @@
 					type: "item"
 				}
 				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								foodData: {
+									dairy: 0.0f
+									decay: 0.0f
+									food: 0
+									fruit: 0.0f
+									grain: 0.0f
+									meat: 0.0f
+									sat: 0.0f
+									veg: 0.0f
+									water: 0.0f
+								}
+								ingredients: [ ]
+								traits: [ ]
+							}
+						}
+						id: "tfc:food/grain_salad"
+						tag: { }
+					}
 					id: "139F7A97E56F0BB9"
 					item: {
 						Count: 1
@@ -1854,7 +1904,7 @@
 						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
-								creationDate: 26328000L
+								creationDate: -9223372036854775808L
 								traits: ["firmalife:dried"]
 							}
 						}
@@ -1945,7 +1995,7 @@
 						Count: 1
 						ForgeCaps: {
 							"tfc:food": {
-								creationDate: 26429034L
+								creationDate: -9223372036854775808L
 								traits: [
 									"tfc:brined"
 									"firmalife:smoked"
@@ -2113,6 +2163,1261 @@
 			x: -2.0d
 			y: -6.0d
 		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.glassblowing.desc}"]
+			id: "22E604DB7E7E87FB"
+			subtitle: "{quests.tfg_tips.glassblowing.subtitle}"
+			tasks: [
+				{
+					id: "00630DE980C1D57D"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:blowpipes)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:blowpipes"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7FA4E6B37E8C5F89"
+					item: { Count: 9, id: "tfc:white_kaolin_clay" }
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.glassblowing.title}"
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["22E604DB7E7E87FB"]
+			description: ["{quests.tfg_tips.glassblowing_tools.desc}"]
+			id: "2D959136A5FC5F46"
+			subtitle: "{quests.tfg_tips.glassblowing_tools.subtitle}"
+			tasks: [
+				{
+					id: "5892192552832DEA"
+					item: "tfc:paddle"
+					type: "item"
+				}
+				{
+					id: "1F8678327A8FADC3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:gem_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "494608A0E498901F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:jacks"
+					}
+					type: "item"
+				}
+				{
+					id: "44C4CBA164BE8812"
+					item: "tfc:wool_cloth"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.glassblowing_tools.title}"
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2D959136A5FC5F46"]
+			description: ["{quests.tfg_tips.lamps.desc}"]
+			id: "037CDA933FBE2CBE"
+			subtitle: "{quests.tfg_tips.lamps.subtitle}"
+			tasks: [
+				{
+					id: "0173845209C6B380"
+					item: "tfc:lamp_glass"
+					type: "item"
+				}
+				{
+					id: "539A1E3793AD3088"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:unfinished_lamps)"
+						}
+					}
+					title: "Any #tfg:unfinished_lamps"
+					type: "item"
+				}
+				{
+					id: "146E09EE00F0EC3F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:lamps)"
+						}
+					}
+					title: "Any #tfc:lamps"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.lamps.title}"
+			x: -5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["037CDA933FBE2CBE"]
+			description: ["{quests.tfg_tips.lava_lamp.desc}"]
+			id: "4EBABACAB444244D"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.lava_lamp.subtitle}"
+			tasks: [
+				{
+					id: "50C7B060CC8E91AA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/lamp/blue_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "5A61ADFCB2AE868E"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.lava_lamp.title}"
+			x: -5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["037CDA933FBE2CBE"]
+			description: ["{quests.tfg_tips.creosote.desc}"]
+			id: "72C1E430FF6D2DD8"
+			subtitle: "{quests.tfg_tips.creosote.subtitle}"
+			tasks: [{
+				id: "6980AF89760133FD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "only_one(item(gtceu:creosote_bucket)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"gtceu:creosote\"}}))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.creosote.title}"
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["037CDA933FBE2CBE"]
+			description: ["{quests.tfg_tips.olive_oil.desc}"]
+			id: "13FC17F88DFEB8A8"
+			subtitle: "{quests.tfg_tips.olive_oil.subtitle}"
+			tasks: [{
+				id: "41B624CA79C96356"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "only_one(item(tfc:bucket/olive_oil)nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:olive_oil\"}}))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.olive_oil.title}"
+			x: -4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2D959136A5FC5F46"]
+			description: ["{quests.tfg_tips.glass_blocks.desc}"]
+			id: "382FC8824F311665"
+			subtitle: "{quests.tfg_tips.glass_blocks.subtitle}"
+			tasks: [
+				{
+					id: "443E37E091069F5E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:glass/silica)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #forge:glass/silica"
+					type: "item"
+				}
+				{
+					id: "4D76B5D2C7738271"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "item_tag(exposure:filters)item_tag(forge:glass_panes)"
+						}
+					}
+					title: "Any #forge:glass_panes"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.glass_blocks.title}"
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.coal_pile.desc}"]
+			id: "7B2068B200631D5C"
+			subtitle: "{quests.tfg_tips.coal_pile.subtitle}"
+			tasks: [{
+				icon: "minecraft:charcoal"
+				id: "6AE2426E2C6CD97C"
+				observe_type: 0
+				timer: 0L
+				title: "{quests.tasktype.lookat} tfc:burning_log_pile"
+				to_observe: "tfc:burning_log_pile"
+				type: "observation"
+			}]
+			title: "{quests.tfg_tips.coal_pile.title}"
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tasktype.thatch_bed.desc}"]
+			id: "4D11F11CE0E9F379"
+			subtitle: "{quests.tasktype.thatch_bed.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "043F36EA13E6E426"
+					item: "tfc:thatch"
+					type: "item"
+				}
+				{
+					id: "414BD19EE363C720"
+					item: "tfc:large_raw_hide"
+					type: "item"
+				}
+				{
+					icon: "tfc:thatch_bed"
+					id: "469CFB85AB4A154F"
+					observe_type: 0
+					timer: 0L
+					title: "{quests.tasktype.looktat} tfc:thatch_bed"
+					to_observe: "tfc:thatch_bed"
+					type: "observation"
+				}
+			]
+			title: "{quests.tasktype.thatch_bed.title}"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["11AB8966EC8C10ED"]
+			description: ["{quests.tfg_tips.bed.desc}"]
+			id: "5C01BDDA66249D7B"
+			shape: "gear"
+			size: 4.0d
+			subtitle: "{quests.tfg_tips.bed.subtitle}"
+			tasks: [{
+				id: "2967EABE3AE54241"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #minecraft:beds"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.bed.title}"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4D11F11CE0E9F379"]
+			description: ["{quests.tfg_tips.loom.desc}"]
+			id: "1766C916084261AA"
+			subtitle: "{quests.tfg_tips.loom.subtitle}"
+			tasks: [{
+				id: "625E0FB3A603902D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:looms)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:looms"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.loom.title}"
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.wool_cloth.desc}"]
+			id: "11AB8966EC8C10ED"
+			subtitle: "{quests.tfg_tips.wool_cloth.subtitle}"
+			tasks: [{
+				id: "0DE4C9EE8F736C75"
+				item: "tfc:wool_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.wool_cloth.title}"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.pineapple_leather.desc}"]
+			id: "6D0017F4B44A0D45"
+			subtitle: "{quests.tfg_tips.pineapple_leather.subtitle}"
+			tasks: [{
+				id: "24704F950819F332"
+				item: "firmalife:pineapple_leather"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.pineapple_leather.title}"
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.burlap_cloth.desc}"]
+			id: "3FE557D2A6460561"
+			subtitle: "{quests.tfg_tips.burlap_cloth.subtitle}"
+			tasks: [{
+				id: "1B9B2F664691C9AA"
+				item: "tfc:burlap_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.burlap_cloth.title}"
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.silk_cloth.desc}"]
+			id: "0FACA5FBFCB26266"
+			subtitle: "{quests.tfg_tips.silk_cloth.subtitle}"
+			tasks: [{
+				id: "17226443DEC56609"
+				item: "tfc:silk_cloth"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.silk_cloth.title}"
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1766C916084261AA"]
+			description: ["{quests.tfg_tips.unrefined_paper.desc}"]
+			id: "4CD3F04793CE47A2"
+			subtitle: "{quests.tfg_tips.unrefined_paper.subtitle}"
+			tasks: [{
+				id: "6A74D8B7FCDCC636"
+				item: "tfc:unrefined_paper"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.unrefined_paper.title}"
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.panning.desc}"]
+			id: "082310DF9BEA92CE"
+			subtitle: "{quests.tfg_tips.panning.subtitle}"
+			tasks: [
+				{
+					id: "1864A20BCD18139C"
+					item: "tfc:pan/empty"
+					type: "item"
+				}
+				{
+					id: "61B05C6828DE1714"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:ore_deposits)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:ore_deposits"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.panning.title}"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["082310DF9BEA92CE"]
+			description: ["{quests.tfg_tips.sluice.desc}"]
+			id: "5261ECBE3438B05E"
+			subtitle: "{quests.tfg_tips.sluice.subtitle}"
+			tasks: [{
+				id: "33B9DEDAD0DAC0A3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:sluices)"
+					}
+				}
+				title: "Any #tfc:sluices"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.sluice.title}"
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"3B3A0FEEB59F597C"
+				"174DA15847665CF8"
+			]
+			description: ["{quests.tfg_tips.glider.desc}"]
+			id: "7EE13BE102F323F3"
+			subtitle: "{quests.tfg_tips.glider.subtitle}"
+			tasks: [{
+				id: "33731B2300E088A4"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.glider.title}"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7EE13BE102F323F3"]
+			description: ["{quests.tfg_tips.reinforced_glider.desc}"]
+			hide_until_deps_complete: true
+			id: "472D1C507490CC8A"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.reinforced_glider.subtitle}"
+			tasks: [{
+				id: "1A3E7CD15E316BBC"
+				item: {
+					Count: 1
+					id: "hangglider:reinforced_hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.reinforced_glider.title}"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FA5B6354A49C396"]
+			description: ["{quests.tfg_tips.toolbelt.desc}"]
+			id: "4433748B4DA986B0"
+			subtitle: "{quests.tfg_tips.toolbelt.subtitle}"
+			tasks: [
+				{
+					id: "72ED34F55F7DDC14"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+				{
+					id: "3AD198BF4ECFCB8B"
+					item: "toolbelt:pouch"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.toolbelt.title}"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4433748B4DA986B0"]
+			description: ["{quests.tfg_tips.maxed_out_toolbelt.desc}"]
+			id: "3439B50B06C5BC5D"
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.maxed_out_toolbelt.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "toolbelt:belt"
+					tag: {
+						Items: [{
+							Count: 1b
+							Slot: 0
+							id: "minecraft:wooden_pickaxe"
+							tag: {
+								Damage: 0
+							}
+						}]
+						Size: 9.0d
+					}
+				}
+				id: "1E84FC347B772440"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "nbt(fuzzy:{Size:9.0d})"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.maxed_out_toolbelt.title}"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B3A0FEEB59F597C"]
+			description: ["{quests.tfg_tips.blank_disc.desc}"]
+			id: "6197774254321BEC"
+			subtitle: "{quests.tfg_tips.blank_disc.subtitle}"
+			tasks: [{
+				id: "32B6A6C1F8A6E5E6"
+				item: "etched:blank_music_disc"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.blank_disc.title}"
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6197774254321BEC"]
+			description: ["{quests.tfg_tips.dye_discs.desc}"]
+			id: "0B8F9C3AD6A12CB6"
+			subtitle: "{quests.tfg_tips.dye_discs.subtitle}"
+			tasks: [{
+				id: "13E20F55DD3DB88C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:creeper_drop_music_discs)"
+					}
+				}
+				title: "{quests.tfg_tips.dye_disks.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.dye_discs.title}"
+			x: -9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6197774254321BEC"]
+			description: ["{quests.tfg_tips.amogus.desc}"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "1074B137571B3F94"
+			invisible: true
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.amogus.subtitle}"
+			tasks: [{
+				id: "2FF9DCD0199D9DBA"
+				item: "gtceu:sus_record"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.amogus.title}"
+			x: -9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6197774254321BEC"]
+			description: ["{quests.tfg_tips.special_discs.desc}"]
+			id: "7C13AE728BBF0143"
+			subtitle: "{quests.tfg_tips.special_discs.subtitle}"
+			tasks: [{
+				id: "3B4CD2ED82944A2F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(minecraft:music_disc_otherside)item(minecraft:music_disc_5)item(minecraft:music_disc_pigstep)item(minecraft:music_disc_relic)item(alekiships:music_disc_pirate_crafting)item(create_connected:music_disc_elevator)item(create_connected:music_disc_interlude))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.special_discs.title}"
+			x: -9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0B8F9C3AD6A12CB6"
+				"7C13AE728BBF0143"
+			]
+			description: ["{quests.tfg_tips.disc_collector.desc}"]
+			hide_until_deps_complete: true
+			id: "02082DC32D4CA243"
+			ignore_reward_blocking: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.disc_collector.subtitle}"
+			tasks: [
+				{
+					id: "24B43805803B53CA"
+					item: "minecraft:music_disc_13"
+					type: "item"
+				}
+				{
+					id: "1159D566559E5F35"
+					item: "minecraft:music_disc_cat"
+					type: "item"
+				}
+				{
+					id: "07100A24C41FB1CE"
+					item: "minecraft:music_disc_blocks"
+					type: "item"
+				}
+				{
+					id: "3373103EFC55A78D"
+					item: "minecraft:music_disc_chirp"
+					type: "item"
+				}
+				{
+					id: "3E2800F825241179"
+					item: "minecraft:music_disc_far"
+					type: "item"
+				}
+				{
+					id: "79ABCB6113A7E1DE"
+					item: "minecraft:music_disc_mall"
+					type: "item"
+				}
+				{
+					id: "257F5BD35CF1EE40"
+					item: "minecraft:music_disc_mellohi"
+					type: "item"
+				}
+				{
+					id: "77A7292A5EF7E4CF"
+					item: "minecraft:music_disc_stal"
+					type: "item"
+				}
+				{
+					id: "28C17C33ECB70188"
+					item: "minecraft:music_disc_strad"
+					type: "item"
+				}
+				{
+					id: "691AC3897E696E25"
+					item: "minecraft:music_disc_ward"
+					type: "item"
+				}
+				{
+					id: "2C0F3BC25F8AAC9C"
+					item: "minecraft:music_disc_11"
+					type: "item"
+				}
+				{
+					id: "27AD5A6B311A902B"
+					item: "minecraft:music_disc_wait"
+					type: "item"
+				}
+				{
+					id: "50AAF85172A25310"
+					item: "minecraft:music_disc_otherside"
+					type: "item"
+				}
+				{
+					id: "38E544AE090529DA"
+					item: "minecraft:music_disc_5"
+					type: "item"
+				}
+				{
+					id: "4E695E99B5A3A67F"
+					item: "minecraft:music_disc_pigstep"
+					type: "item"
+				}
+				{
+					id: "51AE173DAB886094"
+					item: "minecraft:music_disc_relic"
+					type: "item"
+				}
+				{
+					id: "10C922DAB1EBB8E3"
+					item: "alekiships:music_disc_pirate_crafting"
+					type: "item"
+				}
+				{
+					id: "73844BD0542A6ACA"
+					item: "create_connected:music_disc_elevator"
+					type: "item"
+				}
+				{
+					id: "3A7EB997DD873A2D"
+					item: "create_connected:music_disc_interlude"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.disc_collector.title}"
+			x: -10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6197774254321BEC"]
+			description: ["{quests.tfg_tips.label_album.desc}"]
+			id: "08C37B4ED7DB918B"
+			subtitle: "{quests.tfg_tips.label_album.subtitle}"
+			tasks: [
+				{
+					id: "6EF6B96A209EF78F"
+					item: {
+						Count: 1
+						id: "etched:music_label"
+						tag: {
+							Label: {
+								Author: "Nebby1999"
+								Title: "Custom Music"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4367D62BE629E928"
+					item: "etched:album_cover"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.label_album.title}"
+			x: -8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["08C37B4ED7DB918B"]
+			description: ["{quests.tfg_tips.etching_disc.desc}"]
+			id: "7560DC5AA338F0CD"
+			subtitle: "{quests.tfg_tips.etching_disc.subtitle}"
+			tasks: [
+				{
+					id: "76BD74F5BBFB17D4"
+					item: "etched:etching_table"
+					type: "item"
+				}
+				{
+					id: "446CE2C288EC58BF"
+					item: "etched:etched_music_disc"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.etching_disc.title}"
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7560DC5AA338F0CD"]
+			description: ["{quests.tfg_tips.disc_players.desc}"]
+			id: "1EE19C01C2651279"
+			subtitle: "{quests.tfg_tips.disc_players.subtitle}"
+			tasks: [{
+				id: "7C80BDB49F96AEE0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(etched:album_jukebox)item(etched:boombox))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.disc_players.title}"
+			x: -9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6197774254321BEC"]
+			description: ["{quests.tfg_tips.radio.desc}"]
+			id: "6D3B064ACEFC3630"
+			subtitle: "{quests.tfg_tips.radio.subtitle}"
+			tasks: [{
+				id: "4E7E1EC89D6E1E1F"
+				item: "etched:radio"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.radio.title}"
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7560DC5AA338F0CD"]
+			description: ["{quests.tfg_tips.DIGGY_DIGGY_HOLE.desc}"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6EF03629D3881D7B"
+			invisible: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.DIGGY_DIGGY_HOLE.subtitle}"
+			tasks: [{
+				icon: "etched:blank_music_disc"
+				id: "5FFC33BE7B19801C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{Music:{Author:\"Wind Rose\",Title:'{\"text\":\"Diggy Diggy Hole\"}',Url:\"https://wind-rose.bandcamp.com/track/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Wind Rose\",Title:'{\"text\":\"Diggy Diggy Hole\"}',Url:\"https://soundcloud.com/windrosemusic/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Yogscast\",Title:'{\"text\":\"â™ª Diggy Diggy Hole - Original Song\"}',Url:\"https://soundcloud.com/yogscastofficial/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Yogscast\",Title:'{\"text\":\"Diggy Diggy Hole\"}',Url:\"https://soundcloud.com/yogscast/diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole (Diggy Diggy Hole)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole 2020 (Diggy Diggy Hole)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-2020-diggy-diggy-hole\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole (Diggy Diggy Hole) (2020 remaster)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-diggy-diggy-hole-2020-remaster\"}})nbt(fuzzy:{Music:{Author:\"Patient Zero\",Title:'{\"text\":\"Dwarf Hole (Extra Diggy Mix) (2020 remaster)\"}',Url:\"https://patientzero.bandcamp.com/track/dwarf-hole-extra-diggy-mix-2020-remaster\"}}))"
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.DIGGY_DIGGY_HOLE.title}"
+			x: -8.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"3B3A0FEEB59F597C"
+				"174DA15847665CF8"
+			]
+			description: ["{quests.tfg_tips.camera.desc}"]
+			id: "275C8EA942AB49DD"
+			subtitle: "{quests.tfg_tips.camera.subtitle}"
+			tasks: [{
+				id: "1EEC134E3699756E"
+				item: "exposure:camera"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.camera.title}"
+			x: -11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["275C8EA942AB49DD"]
+			description: ["{quests.tfg_tips.camera_rolls.desc}"]
+			id: "5D4EBB3347A69A42"
+			subtitle: "{quests.tfg_tips.camera_rolls.subtitle}"
+			tasks: [{
+				id: "6ED3F6674D310225"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exposure:film_rolls)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #exposure:film_rolls"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.film_rolls.title}"
+			x: -11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5D4EBB3347A69A42"]
+			description: ["{quests.tfg_tips.developing_film.desc}"]
+			id: "399A7716D4A2AAC6"
+			subtitle: "{quests.tfg_tips.developing_film.subtitle}"
+			tasks: [
+				{
+					id: "2A5965A7455A3027"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exposure:developed_film_rolls)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #exposure:developed_film_rolls"
+					type: "item"
+				}
+				{
+					id: "770F748F902AC680"
+					item: "exposure:lightroom"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.developing_film.title}"
+			x: -11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["275C8EA942AB49DD"]
+			description: ["{quests.tfg_tips.selfies.desc}"]
+			id: "2B26C247DE1EC95C"
+			subtitle: "{quests.tfg_tips.selfies.subtitle}"
+			tasks: [{
+				id: "7B97C1070D656769"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.selfies.title}"
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["399A7716D4A2AAC6"]
+			description: ["{quests.tfg_tips.photo.desc}"]
+			id: "3811F97636DBC518"
+			subtitle: "{quests.tfg_tips.photo.subtitle}"
+			tasks: [{
+				id: "1871A9FA59079915"
+				item: "exposure:photograph"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.photo.title}"
+			x: -11.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3811F97636DBC518"]
+			description: ["{quests.tfg_tips.photo_album.desc}"]
+			id: "39BF972F09B09D4E"
+			subtitle: "{quests.tfg_tips.photo_album.subtitle}"
+			tasks: [{
+				id: "657ED910AECB4C14"
+				item: "exposure:album"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.photo_album.title}"
+			x: -12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3811F97636DBC518"]
+			description: ["{quests.tfg_tips.photo_frame.desc}"]
+			id: "67F69C63EFF6990C"
+			subtitle: "{quests.tfg_tips.photo_frame.subtitle}"
+			tasks: [{
+				id: "7417611F7203A781"
+				item: "exposure:photograph_frame"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.photo_frame.title}"
+			x: -11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["275C8EA942AB49DD"]
+			description: ["{quests.tfg_tips.camera_attachments.desc}"]
+			id: "15AD11C9C5249AAF"
+			subtitle: "{quests.tfg_tips.camera_attachments.subtitle}"
+			tasks: [{
+				id: "79F9084E031CFAF3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(minecraft:redstone_lamp)item(minecraft:spyglass))"
+					}
+				}
+				title: "{quests.tfg_tips.camera_attachments.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.camera_attachments.title}"
+			x: -12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["275C8EA942AB49DD"]
+			description: ["{quests.tfg_tips.filters.desc}"]
+			id: "4E2C1CAD883EB032"
+			subtitle: "{quests.tfg_tips.filters.subtitle}"
+			tasks: [{
+				id: "3B6862254E5EF802"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "item_tag(exposure:filters)item_tag(forge:glass_panes)"
+					}
+				}
+				title: "{quests.tfg_tips.filters.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.filters.title}"
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4E2C1CAD883EB032"]
+			description: ["{quests.tfg_tips.interplanar_projector.desc}"]
+			id: "3952D56556B35FDB"
+			subtitle: "{quests.tfg_tips.interplanar_projector.subtitle}"
+			tasks: [{
+				id: "1FD277716ACD285F"
+				item: {
+					Count: 1
+					id: "exposure:interplanar_projector"
+					tag: {
+						Clean: 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.interplanar_projector.title}"
+			x: -13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["79FA776C414AE8E5"]
+			description: ["{quests.tfg_tips.candles.desc}"]
+			id: "368E3C94EEDC11BB"
+			subtitle: "{quests.tfg_tips.candles.subtitle}"
+			tasks: [{
+				id: "50F55E0F2074E277"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:candles)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:candles"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.candles.title}"
+			x: -2.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			id: "77B75E9682830138"
+			tasks: [{
+				id: "6FC2ED1904E6206C"
+				type: "custom"
+			}]
+			title: "TODO: Aged Alcohol \\& Pills"
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			id: "75C6BF1C9405B4C7"
+			tasks: [
+				{
+					id: "37DD99D32072ADFC"
+					item: {
+						Count: 1
+						id: "tfccanes:walking_cane"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74EEB2158DA406BE"
+					item: {
+						Count: 1
+						id: "tfccanes:refined_walking_cane"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5C01BDDA66249D7B"]
+			id: "0EEB7293B5CA65D8"
+			tasks: [{
+				id: "56B210487D97FA31"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:sleeping_bags)"
+					}
+				}
+				title: "Any #comforts:sleeping_bags"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5C01BDDA66249D7B"]
+			id: "47723F97A3E60425"
+			tasks: [
+				{
+					id: "774182313E02EDEB"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:hammocks)"
+						}
+					}
+					title: "Any #comforts:hammocks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "324BAF05D22BEFA8"
+					item: "comforts:rope_and_nail"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3B3A0FEEB59F597C"]
+			id: "1768B6EDDAAC431D"
+			tasks: [{
+				id: "34C81B874E8B02AE"
+				item: "coldsgrappler:grappler_item"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1768B6EDDAAC431D"]
+			id: "4FEC71C933B63639"
+			tasks: [
+				{
+					id: "5A207C9FE1109565"
+					item: "coldsgrappler:extra_rope_item"
+					type: "item"
+				}
+				{
+					id: "5E608FAB38045124"
+					item: "coldsgrappler:rope_light_item"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B3A0FEEB59F597C"]
+			id: "60D7605B4286C007"
+			tasks: [{
+				id: "7D3FFED593B5CE48"
+				item: "measurements:tape_measure"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3B3A0FEEB59F597C"]
+			id: "63508402A5BF5169"
+			tasks: [
+				{
+					id: "2AA5B777EBBCF583"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(chalk:chalks)"
+						}
+					}
+					title: "Any #chalk:chalks"
+					type: "item"
+				}
+				{
+					id: "28B065D2AD85D082"
+					item: {
+						Count: 1
+						id: "chalk:chalk_box"
+						tag: {
+							Items: [
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+								{
+									Count: 0b
+									id: "minecraft:air"
+									tag: { }
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 5.5d
+		}
 	]
+	subtitle: ["{quests.tfg_tips.subtitle}"]
 	title: "{quests.tfg_tips}"
 }
