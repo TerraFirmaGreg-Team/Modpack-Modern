@@ -44,12 +44,9 @@
 		[],
 		[
 			"tfg:nether/terrain/glowstone_ceiling",
-			"beneath:glowstone_spikes",
 			"beneath:delta",
 			"minecraft:small_basalt_columns",
-			"minecraft:large_basalt_columns",
-			"tfg:nether/spikes/deepslate_spikes",
-			"tfg:nether/spikes/blackstone_spikes"
+			"minecraft:large_basalt_columns"
 		],
 		[],
 		"#tfg:nether_veins",
@@ -70,7 +67,12 @@
 			"tfg:nether/surface/guano_patch",
 			"tfg:glow_lichen"
 		],
-		"#tfg:nether_top_layer_modification"
+		[
+			"beneath:glowstone_spikes",
+			"tfg:nether/spikes/basalt_spikes",
+			"tfg:nether/spikes/blackstone_spikes",
+			"tfg:nether/hardening"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {},
