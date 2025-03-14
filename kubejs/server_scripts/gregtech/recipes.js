@@ -378,6 +378,12 @@ const registerGTCEURecipes = (event) => {
 	.duration(20)
 	.EUt(7)
 
+    event.recipes.gtceu.extractor('gtceu:extractor/extract_light_concrete')
+	.itemInputs('1x gtceu:light_concrete')
+	.outputFluids(Fluid.of('gtceu:concrete', 144))
+	.duration(98)
+	.EUt(30)
+
     //#endregion
 
     //#region Выход: Бурильная жидкость
