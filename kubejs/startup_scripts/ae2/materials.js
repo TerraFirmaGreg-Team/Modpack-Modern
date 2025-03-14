@@ -4,7 +4,6 @@ const registerAE2Materials = (event) => {
     event.create('tfg:fluix')
         .liquid()
         .gem(1)
-        .color(0xD2D2E6)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
