@@ -29,6 +29,7 @@ ServerEvents.tags('item', event => {
     registerTFCItemTags(event)
     registerTFGItemTags(event)
     registerAFCItemTags(event)
+    registerExposureItemTags(event)
 })
 
 /**

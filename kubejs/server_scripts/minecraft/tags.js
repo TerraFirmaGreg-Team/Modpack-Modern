@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {TagEvent.Item} event 
+ */
 const registerMinecraftItemTags = (event) => {
     global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
@@ -16,6 +20,8 @@ const registerMinecraftItemTags = (event) => {
     // Бамбуковые полублоки
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
+
+    event.remove('minecraft:creeper_drop_music_discs', ['minecraft:music_disc_11'])
 }
 
 const registerMinecraftBlockTags = (event) => {

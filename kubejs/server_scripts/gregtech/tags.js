@@ -45,6 +45,7 @@ const registerGTCEUItemTags = (event) => {
 
 	event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
     
+    event.add('c:hidden_from_recipe_viewers', 'gtceu:sus_record')
     //#endregion
 }
 
