@@ -41,11 +41,7 @@
 		],
 		[],
 		[
-			"tfg:nether/terrain/glowstone_ceiling",
-			"beneath:glowstone_spikes",
-			"tfg:nether/spikes/blackstone_spikes",
-			"tfc:calcite",
-			"tfc:mega_calcite"
+			"tfg:nether/terrain/glowstone_ceiling"
 		],
 		[],
 		"#tfg:nether_veins",
@@ -70,7 +66,12 @@
 			"tfg:nether/surface/stick_patch",
 			"tfg:glow_lichen"
 		],
-		"#tfg:nether_top_layer_modification"
+		[
+			"beneath:glowstone_spikes",
+			"tfg:nether/spikes/deepslate_spikes",
+			"tfg:nether/spikes/blackstone_spikes",
+			"tfg:nether/hardening"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {

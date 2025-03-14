@@ -139,7 +139,5 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_gabbro')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 
-	event.add('tfg:nether_top_layer_modification', 'tfg:nether/hardening')
-
 	// #endregion
 }

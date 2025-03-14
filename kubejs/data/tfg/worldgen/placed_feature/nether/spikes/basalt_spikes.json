@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:nether/spikes/blackstone_spikes",
+	"feature": "tfg:nether/spikes/basalt_spikes",
 	"placement": [
 		{
 			"type": "minecraft:count",
@@ -11,7 +11,7 @@
 		{
 			"type": "minecraft:height_range",
 			"height": {
-				"type": "minecraft:biased_to_bottom",
+				"type": "minecraft:uniform",
 				"max_inclusive": {
 					"absolute": 80
 				},
