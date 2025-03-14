@@ -1,0 +1,87 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 160,
+		"density": 0.5,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_redstone",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_redstone_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:granite_ruby_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:granite_cinnabar_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_redstone_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:blackstone_ruby_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:blackstone_cinnabar_ore",
+						"weight": 20
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "minecraft:redstone_wire",
+					"weight": 45
+				},
+				{
+					"block": "tfg:buds/small_ruby_bud",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/medium_ruby_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/large_ruby_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/small_cinnabar_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/medium_cinnabar_bud",
+					"weight": 6
+				},
+				{
+					"block": "tfg:buds/large_cinnabar_bud",
+					"weight": 4
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,153 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 195,
+		"density": 0.4,
+		"min_y": 32,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_manganese",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_grossular_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:deepslate_spessartine_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:deepslate_pyrolusite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:deepslate_tantalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt",
+					"tfc:rock/magma/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_grossular_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_spessartine_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:basalt_pyrolusite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:basalt_tantalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_grossular_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:blackstone_spessartine_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:blackstone_pyrolusite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:blackstone_tantalite_ore",
+						"weight": 10
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_grossular_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dripstone_spessartine_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:dripstone_pyrolusite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:dripstone_tantalite_ore",
+						"weight": 10
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:pyrolusite_indicator",
+					"weight": 20
+				},
+				{
+					"block": "gtceu:tantalite_indicator",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/small_grossular_bud",
+					"weight": 16
+				},
+				{
+					"block": "tfg:buds/medium_grossular_bud",
+					"weight": 9
+				},
+				{
+					"block": "tfg:buds/large_grossular_bud",
+					"weight": 5
+				},
+				{
+					"block": "tfg:buds/small_spessartine_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/medium_spessartine_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_spessartine_bud",
+					"weight": 3
+				}
+			]
+		}
+	}
+}

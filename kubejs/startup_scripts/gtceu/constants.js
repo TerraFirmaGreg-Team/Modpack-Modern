@@ -46,6 +46,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_leaves', 
     'gtceu:rubber_planks',
     
+    'gtceu:ender_fluid_link_cover'
 ];
 
 global.GTCEU_HIDED_ITEMS = [

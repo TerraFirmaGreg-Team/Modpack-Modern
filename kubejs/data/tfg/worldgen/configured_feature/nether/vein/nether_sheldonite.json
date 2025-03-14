@@ -1,0 +1,137 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.4,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 35,
+		"random_name": "nether_sheldonite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:deepslate_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_palladium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:blackstone_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_palladium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt",
+					"tfc:rock/magma/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_palladium_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_bornite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dripstone_cooperite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_platinum_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_palladium_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:bornite_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:cooperite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:platinum_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:palladium_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

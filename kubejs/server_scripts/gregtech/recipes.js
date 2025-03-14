@@ -747,7 +747,6 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:compressor/plant_ball_from_crimson_stem'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_tube_coral'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_sugar_cane'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_red_mushroom'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_potato'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_nether_wart'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_horn_coral'})
@@ -755,7 +754,6 @@ const registerGTCEURecipes = (event) => {
     event.remove({id: 'gtceu:compressor/plant_ball_from_carrot'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_cactus'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_bubble_coral'})
-    event.remove({id: 'gtceu:compressor/plant_ball_from_brown_mushroom'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_brain_coral'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_beetroot'})
     event.remove({id: 'gtceu:compressor/plant_ball_from_moss'})
@@ -790,11 +788,9 @@ const registerGTCEURecipes = (event) => {
 
     // Ванильная растительность -> Биомасса (Brewery)
     event.remove({id: 'gtceu:brewery/biomass_from_sugar_cane'})
-    event.remove({id: 'gtceu:brewery/biomass_from_red_mushroom'})
     event.remove({id: 'gtceu:brewery/biomass_from_potato'})
     event.remove({id: 'gtceu:brewery/biomass_from_carrot'})
     event.remove({id: 'gtceu:brewery/biomass_from_cactus'})
-    event.remove({id: 'gtceu:brewery/biomass_from_brown_mushroom'})
     event.remove({id: 'gtceu:brewery/biomass_from_beetroot'})
 
     event.recipes.gtceu.brewery('biomass_from_tfc_seeds')             
@@ -1038,12 +1034,6 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
-    //#region Выход: Метан
-
-    event.remove({ id: 'gtceu:centrifuge/red_mushroom_separation' })
-    event.remove({ id: 'gtceu:centrifuge/brown_mushroom_separation' })
-
-    //#endregion
 
     //#region Выход: Маленькая кучка мяса
 

@@ -288,10 +288,10 @@ const registerGTCEuTagPrefixes = (event) => {
         .unificationEnabled(true)
         .generateItem(true)
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.HAS_SMALL_TFC_ORE));
-
+	
     event.create("small_native_ore")
         .materialAmount(GTValues.M / 4)
-        .unificationEnabled(true)
+		.unificationEnabled(true)
         .generateItem(true)
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.HAS_SMALL_NATIVE_TFC_ORE));
 
@@ -300,10 +300,10 @@ const registerGTCEuTagPrefixes = (event) => {
         .unificationEnabled(true)
         .generateItem(true)
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.HAS_TFC_UTILITY));
-
+		
     event.create("lamp")
         .materialAmount(GTValues.M)
-        .unificationEnabled(true)
+		.unificationEnabled(true)
         .generateItem(true)
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.HAS_TFC_UTILITY));
 
@@ -355,6 +355,32 @@ const registerGTCEuTagPrefixes = (event) => {
         .unificationEnabled(true)
         .generateItem(true)
         .generationCondition(mat => mat.hasFlag($TFGMaterialFlags.HAS_PLATED_BLOCK));
+
+    // Custom stone types
+
+	event.create('blackstone', 'ore')
+		.stateSupplier(() => Block.getBlock('minecraft:blackstone').defaultBlockState())
+		.baseModelLocation('minecraft:block/blackstone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+
+	event.create('dripstone', 'ore')
+		.stateSupplier(() => Block.getBlock('minecraft:dripstone_block').defaultBlockState())
+		.baseModelLocation('minecraft:block/dripstone_block')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	// TODO: Delete this, fix it in tfg-core instead
+
+	event.create('deepslate', 'ore')
+		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
+		.baseModelLocation('minecraft:block/deepslate')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
 
     /* Tag Fixes */
     TagPrefix.plate.defaultTagPath("sheets/%s")

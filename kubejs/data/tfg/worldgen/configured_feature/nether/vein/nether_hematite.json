@@ -1,0 +1,161 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 220,
+		"density": 0.45,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 35,
+		"random_name": "nether_hematite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_goethite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:deepslate_hematite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:deepslate_gold_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:deepslate_ruby_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_goethite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:blackstone_hematite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:blackstone_gold_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:blackstone_ruby_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt",
+					"tfc:rock/magma/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_goethite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_hematite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_gold_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:basalt_ruby_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_goethite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dripstone_hematite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dripstone_gold_ore",
+						"weight": 5
+					},
+					{
+						"block": "gtceu:dripstone_ruby_ore",
+						"weight": 20
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_hematite",
+					"weight": 40
+				},
+				{
+					"block": "tfc:ore/small_limonite",
+					"weight": 40
+				},
+				{
+					"block": "tfc:ore/small_native_gold",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/small_ruby_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/medium_ruby_bud",
+					"weight": 5
+				},
+				{
+					"block": "tfg:buds/large_ruby_bud",
+					"weight": 3
+				}
+			]
+		}
+	}
+}

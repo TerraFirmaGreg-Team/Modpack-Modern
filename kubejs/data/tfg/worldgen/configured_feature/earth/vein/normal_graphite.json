@@ -1,0 +1,137 @@
+{
+	"type": "tfc:disc_vein",
+	"config": {
+		"rarity": 120,
+		"density": 0.4,
+		"min_y": -64,
+		"max_y": -24,
+		"size": 26,
+		"random_name": "normal_graphite",
+		"height": 6,
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:gabbro_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:granite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:granite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:diorite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/schist"
+				],
+				"with": [
+					{
+						"block": "gtceu:schist_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:schist_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:schist_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gneiss"
+				],
+				"with": [
+					{
+						"block": "gtceu:gneiss_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:gneiss_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gneiss_coal_ore",
+						"weight": 30
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 10,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:graphite_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:coal_indicator",
+					"weight": 39
+				},
+				{
+					"block": "tfg:buds/small_diamond_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/medium_diamond_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/large_diamond_bud",
+					"weight": 6
+				}
+			]
+		}
+	}
+}

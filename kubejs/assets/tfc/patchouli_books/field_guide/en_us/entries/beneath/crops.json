@@ -1,0 +1,41 @@
+{
+	"name": "Crops",
+	"category": "tfc:beneath",
+	"icon": "beneath:gleamflower",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Undersoil$() may be tilled to form $(thing)Undersoil Farmland$(). Crops work a little differently when you are Beneath. Beneath crops cannot die, but still need block light to grow.$(br2)Crops have a preferred nutrient: Instead of consuming it, this is the nutrient they will add to over time. The crop will happily consume the other four nutrients in order to grow."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "The fertilizers are as follows:$(br)$(li)Sulfur: 20% Heat, 10% Sulfic$(li)Gunpowder: 60% Niter, 10% Sulfic, 40% Deflagration$(li)Blaze Powder: 20% Sulfic$(br2)You can also craft $(thing)Agonizing Fertilizer$(), which has all of the nutrients in a neat package."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:gleamflower"
+				}
+			},
+			"name": "Gleamflower",
+			"text": "The Gleamflower (Sulfic) can be grown as a crop, and also found in the world as a plant. It is useful as an infinite light source.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "beneath:ghost_pepper",
+			"link_recipes": false,
+			"text": "Ghost Peppers (Pep) are an edible vegetable that can be grown in the Beneath! You can find their seeds in Bastions."
+		}
+	],
+	"read_by_default": true
+}

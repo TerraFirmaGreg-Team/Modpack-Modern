@@ -1,0 +1,129 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 185,
+		"density": 0.4,
+		"min_y": 32,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_bauxite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:deepslate_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:deepslate_aluminium_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:blackstone_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:blackstone_aluminium_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt",
+					"tfc:rock/magma/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:basalt_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_aluminium_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_bauxite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dripstone_ilmenite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dripstone_aluminium_ore",
+						"weight": 25
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:bauxite_indicator",
+					"weight": 45
+				},
+				{
+					"block": "gtceu:ilmenite_indicator",
+					"weight": 30
+				},
+				{
+					"block": "gtceu:aluminium_indicator",
+					"weight": 25
+				},
+				{
+					"block": "tfg:buds/small_rutile_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/medium_rutile_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_rutile_bud",
+					"weight": 4
+				}
+			]
+		}
+	}
+}

@@ -16,6 +16,31 @@ const registerMinecraftItemTags = (event) => {
     // Бамбуковые полублоки
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_slab')
     event.add('tfg:bamboo_slabs', 'minecraft:bamboo_mosaic_slab')
+
+    event.add('tfc:foods', 'minecraft:red_mushroom')
+    event.add('tfc:foods', 'minecraft:brown_mushroom')
+    event.add('tfc:foods', 'minecraft:glow_berries')
+    event.add('tfc:foods', 'minecraft:chorus_fruit')
+
+    event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
+    event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
+    event.add('tfc:foods/fruits', 'minecraft:glow_berries')
+    event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
+
+    event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
+    event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
+    event.add('beneath:usable_in_juicer', 'minecraft:red_mushroom')
+    event.add('beneath:usable_in_juicer', 'minecraft:brown_mushroom')
+
+    event.add('tfc:foods/usable_in_soup', 'minecraft:red_mushroom')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
+
+    event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -25,4 +50,63 @@ const registerMinecraftBlockTags = (event) => {
 
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
+    
+    //#region Nether blocks
+
+    event.add('tfg:lush_ground_replaceable', 'minecraft:deepslate')
+    event.add('tfg:lush_ground_replaceable', 'minecraft:blackstone')
+    
+    event.add('tfc:rock/raw', 'minecraft:deepslate')
+    event.add('tfc:rock/raw', 'minecraft:blackstone')
+    event.add('tfc:rock/raw', 'minecraft:dripstone_block')
+    event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:moss_block')
+    event.add('beneath:nether_bush_plantable_on', 'minecraft:dripstone_block')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:blackstone')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:deepslate')
+    event.add('minecraft:nether_carver_replaceables', 'minecraft:dripstone_block')
+    event.add('minecraft:frogs_spawnable_on', 'minecraft:deepslate')
+    event.add('minecraft:frogs_spawnable_on', 'minecraft:blackstone')
+    event.add('minecraft:frogs_spawnable_on', 'minecraft:dripstone_block')
+    event.add('minecraft:axolotls_spawnable_on', 'minecraft:deepslate')
+    event.add('minecraft:axolotls_spawnable_on', 'minecraft:dripstone_block')
+    event.add('tfc:grass_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_plantable_on', 'minecraft:deepslate')
+    event.add('tfc:creeping_plantable_on', 'minecraft:blackstone')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:moss_block')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:deepslate')
+    event.add('tfc:creeping_stone_plantable_on', 'minecraft:blackstone')
+    event.add('minecraft:base_stone_nether', 'minecraft:deepslate')
+    event.add('minecraft:base_stone_nether', 'minecraft:blackstone')
+    event.add('minecraft:base_stone_nether', 'minecraft:dripstone_block')
+    event.add('forge:stone', 'minecraft:blackstone')
+
+    event.add('tfc:can_landslide', 'minecraft:cobbled_deepslate')
+    event.add('tfc:can_landslide', 'minecraft:soul_soil')
+
+    event.add('tfc:breaks_when_isolated', 'minecraft:deepslate')
+    event.add('tfc:breaks_when_isolated', 'minecraft:blackstone')
+    event.add('tfc:breaks_when_isolated', 'minecraft:gilded_blackstone')
+    event.add('tfc:breaks_when_isolated', 'minecraft:dripstone_block')
+
+    event.add('tfg:rock_stairs', 'minecraft:cobbled_deepslate_stairs')
+    event.add('tfg:rock_slabs', 'minecraft:cobbled_deepslate_slab')
+    event.add('tfg:rock_walls', 'minecraft:cobbled_deepslate_wall')
+    event.add('tfg:brick_stairs', 'minecraft:deepslate_brick_stairs')
+    event.add('tfg:brick_slabs', 'minecraft:deepslate_brick_slab')
+    event.add('tfg:brick_walls', 'minecraft:deepslate_brick_wall')
+    event.add('tfg:brick_stairs', 'minecraft:deepslate_tile_stairs')
+    event.add('tfg:brick_slabs', 'minecraft:deepslate_tile_slab')
+    event.add('tfg:brick_walls', 'minecraft:deepslate_tile_wall')
+    event.add('tfg:rock_stairs', 'minecraft:blackstone_stairs')
+    event.add('tfg:rock_slabs', 'minecraft:blackstone_slab')
+    event.add('tfg:rock_walls', 'minecraft:blackstone_wall')
+    event.add('tfg:brick_stairs', 'minecraft:blackstone_stairs')
+    event.add('tfg:brick_slabs', 'minecraft:blackstone_slab')
+    event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
+    
+    //#region
 }

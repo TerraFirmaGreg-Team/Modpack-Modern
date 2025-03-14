@@ -1,0 +1,136 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 220,
+		"density": 0.35,
+		"min_y": 32,
+		"max_y": 128,
+		"size": 40,
+		"random_name": "nether_lapis",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_lazurite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:deepslate_sodalite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_lapis_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_calcite_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_lazurite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dripstone_sodalite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_lapis_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_calcite_ore",
+						"weight": 15
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"block": "gtceu:blackstone_lazurite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:blackstone_sodalite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_lapis_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:blackstone_calcite_ore",
+						"weight": 15
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:calcite_indicator",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/small_lazurite_bud",
+					"weight": 30
+				},
+				{
+					"block": "tfg:buds/medium_lazurite_bud",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/large_lazurite_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/small_sodalite_bud",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/medium_sodalite_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/large_sodalite_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/small_lapis_bud",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/medium_lapis_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/large_lapis_bud",
+					"weight": 8
+				}
+			]
+		}
+	}
+}

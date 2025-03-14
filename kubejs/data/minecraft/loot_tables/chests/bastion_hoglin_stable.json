@@ -1,0 +1,403 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 2
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_shovel",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_spade",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.4
+							}
+						}
+					],
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_hammer",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_mining_hammer",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.4
+							}
+						}
+					],
+					"weight": 7
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_axe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_saw",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_scythe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_knife",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/propick/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						}
+					],
+					"weight": 15
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 4,
+				"max": 6
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glowstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shroomlight",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:crossbow",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.4
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:quick_charge": 1,
+								"minecraft:piercing": 1
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/lamp/black_bronze",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/lumber/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 16,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/log/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 7,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:cursed_hide",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 17,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:glow_arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 17,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:string",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 8,
+								"max": 16,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:silk_cloth",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:seeds/ghost_pepper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:seeds/gleamflower",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:food/cooked_venison",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glow_berries",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 2
+				}
+			]
+		}
+	]
+}
