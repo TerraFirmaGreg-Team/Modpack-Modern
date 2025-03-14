@@ -360,6 +360,24 @@ const registerGTCEURecipes = (event) => {
         'concrete_from_calcite'
     )
 
+    //GT light/dark concrete recipe fix
+	
+    event.remove({id: 'gtceu:fluid_solidifier/solidify_concrete_block'})
+	
+    event.recipes.gtceu.fluid_solidifier('gtceu:fluid_solidifier/solidify_light_concrete')
+	.inputFluids(Fluid.of('gtceu:concrete', 144))
+	.notConsumable('1x gtceu:block_casting_mold')
+	.itemOutputs('1x gtceu:light_concrete')
+	.duration(98)
+	.EUt(7)
+
+    event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/dark_concrete')
+	.inputFluids(Fluid.of('gtceu:black_dye', 18))
+	.itemInputs('1x gtceu:light_concrete')
+	.itemOutputs('1x gtceu:dark_concrete')
+	.duration(20)
+	.EUt(7)
+
     //#endregion
 
     //#region Выход: Бурильная жидкость
