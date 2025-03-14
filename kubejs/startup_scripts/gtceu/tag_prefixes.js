@@ -358,7 +358,7 @@ const registerGTCEuTagPrefixes = (event) => {
 
     // Custom stone types
 
-    event.create('blackstone', 'ore')
+	event.create('blackstone', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:blackstone').defaultBlockState())
 		.baseModelLocation('minecraft:block/blackstone')
 		.unificationEnabled(true)
@@ -370,10 +370,10 @@ const registerGTCEuTagPrefixes = (event) => {
 		.stateSupplier(() => Block.getBlock('minecraft:dripstone_block').defaultBlockState())
 		.baseModelLocation('minecraft:block/dripstone_block')
 		.unificationEnabled(true)
-        .materialIconType(GTMaterialIconType.ore)
+		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(ItemGenerationCondition.hasOreProperty)
 
-    // TODO: Delete this, fix it in tfg-core instead
+	// TODO: Delete this, fix it in tfg-core instead
 
 	event.create('deepslate', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
