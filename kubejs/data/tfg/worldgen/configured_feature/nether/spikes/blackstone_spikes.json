@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "tfg:rock/hardened_blackstone",
+		"spike": "tfg:spike/blackstone_spike",
+		"anchor_blocks": "minecraft:base_stone_nether"
+	}
+}

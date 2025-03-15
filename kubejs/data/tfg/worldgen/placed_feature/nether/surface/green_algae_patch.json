@@ -1,0 +1,27 @@
+{
+	"feature": "tfg:nether/surface/green_algae_patch",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 20
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 120
+				},
+				"min_inclusive": {
+					"above_bottom": 42
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

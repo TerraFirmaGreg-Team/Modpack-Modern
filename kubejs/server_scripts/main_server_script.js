@@ -5,15 +5,18 @@
  */
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
+    registerAFCItemTags(event)
+    registerAlekishipsItemTags(event)
     registerAsticorCartsItemTags(event)
+    registerBeneathItemTags(event)
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
+    registerEndermanOverhaulItemTags(event)
     registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
-    registerAlekishipsItemTags(event);
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
@@ -28,7 +31,6 @@ ServerEvents.tags('item', event => {
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
     registerTFGItemTags(event)
-    registerAFCItemTags(event)
     registerExposureItemTags(event)
 })
 
@@ -37,11 +39,14 @@ ServerEvents.tags('item', event => {
  */
 ServerEvents.tags('block', event => {
     registerAE2BlockTags(event)
+    registerAFCBlockTags(event)
     registerAsticorCartsBlockTags(event)
+    registerBeneathBlockTags(event)
     registerChiselAndBitsBlockTags(event)
     registerComputerCraftBlockTags(event)
     registerCreateBlockTags(event)
     registerCreateAdditionsBlockTags(event)
+    registerEndermanOverhaulBlockTags(event)
     registerExtendedAE2BlockTags(event)
     registerFirmaCivBlockTags(event)
     registerFirmaLifeBlockTags(event)
@@ -55,18 +60,18 @@ ServerEvents.tags('block', event => {
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
-    registerAFCBlockTags(event)
+    registerTFGBlockTags(event)
 })
 
 /**
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
+    registerAFCFluidTags(event)
     registerCreateFluidTags(event)
     registerCreateAdditionsFluidTags(event)
-    registerFirmaLifeBlockTags(event)
+    registerFirmaLifeFluidTags(event)
     registerTFCFluidTags(event)
-    registerAFCFluidTags(event)
 })
 
 /**
@@ -75,6 +80,11 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.tags('worldgen/placed_feature', event => {
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
+    registerTFGPlacedFeatures(event)
+})
+
+ServerEvents.tags('worldgen/biome', event => {
+    registerTFGBiomeTags(event)
 })
 
 /**
@@ -90,11 +100,11 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
+    registerTFCDataForArborFirmaCraft(event)
     registerTFCDataForGTCEU(event)
     registerTFCDataForTFC(event)
-    registerTFCDataForWaterFlasks(event)
-    registerTFCDataForArborFirmaCraft(event)
     registerTFCDataForTFCBetterBF(event)
+    registerTFCDataForWaterFlasks(event)
 })
 
 /**
@@ -118,11 +128,14 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+    registerAlekishipsRecipes(event)
     registerAE2Recipes(event)
+    registerAFCRecipes(event)
     registerAsticorCartsRecipes(event)
     registerAE2InsertExportCardRecipes(event)
     registerAE2NetworkAnalyzerRecipes(event)
     registerAE2WTLibRecipes(event)
+    registerBeneathRecipes(event)
     registerChiselAndBitsRecipes(event)
     registerComputerCraftRecipes(event)
     registerCreateRecipes(event)
@@ -132,7 +145,6 @@ ServerEvents.recipes(event => {
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
     registerEtchedRecipes(event)
-    registerAlekishipsRecipes(event)
     registerFirmaCivRecipes(event)
     registerFirmaLifeRecipes(event)
     registerFramedBlocksRecipes(event)
@@ -148,11 +160,10 @@ ServerEvents.recipes(event => {
     registerSophisticatedBackpacksRecipes(event)
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
+    registerTFCBetterBFRecipes(event)
     registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
     registerWaterFlasksRecipes(event)
-    registerAFCRecipes(event)
-    registerTFCBetterBFRecipes(event)
 })

@@ -1,0 +1,12 @@
+{
+	"name": "Beneath Logistics",
+	"category": "tfc:beneath",
+	"icon": "minecraft:flint_and_steel",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TODO: update this when there's a way to automatically transport stuff back and forth"
+		}
+	],
+	"read_by_default": true
+}
