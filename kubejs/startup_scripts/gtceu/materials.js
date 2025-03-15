@@ -217,4 +217,7 @@ const registerGTCEuMaterialModification = (event) => {
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
+
+	GTMaterials.BismuthBronze.setMaterialARGB(0x8CDCB6)
+	GTMaterials.BlackBronze.setMaterialARGB(0xB681CE)
 }
