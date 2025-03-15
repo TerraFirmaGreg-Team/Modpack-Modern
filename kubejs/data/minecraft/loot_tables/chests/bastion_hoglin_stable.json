@@ -3,7 +3,11 @@
 	"pools": [
 		{
 			"name": "loot_pool",
-			"rolls": 1,
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 2
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -13,7 +17,7 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.5,
+								"min": 0.75,
 								"max": 1
 							}
 						},
@@ -40,6 +44,10 @@
 								"min": 0.75,
 								"max": 1
 							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -55,6 +63,10 @@
 								"min": 0.75,
 								"max": 1
 							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -70,6 +82,10 @@
 								"min": 0.75,
 								"max": 1
 							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -85,6 +101,10 @@
 								"min": 0.75,
 								"max": 1
 							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -100,6 +120,10 @@
 								"min": 0.75,
 								"max": 1
 							}
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -116,11 +140,8 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -138,11 +159,8 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -160,11 +178,8 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -182,11 +197,8 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:sharpness": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -204,11 +216,8 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:smite": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -226,11 +235,8 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:sharpness": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -243,16 +249,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.1,
+								"min": 0.5,
 								"max": 0.9
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -265,16 +268,13 @@
 							"function": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
-								"min": 0.1,
+								"min": 0.5,
 								"max": 0.9
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					],
 					"weight": 100
@@ -307,216 +307,159 @@
 							}
 						}
 					],
-					"weight": 20
+					"weight": 30
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_hammer",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_pickaxe",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:mending": 1,
-								"minecraft:efficiency": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_sword",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:sweeping": 3,
-								"minecraft:smite": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_knife",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:fire_aspect": 2,
-								"minecraft:sharpness": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_butchery_knife",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:knockback": 2,
-								"minecraft:sharpness": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_mining_hammer",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 2,
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_shovel",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_spade",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 2,
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_scythe",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 3,
-								"minecraft:smite": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_wire_cutter",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_wrench",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_crowbar",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_screwdriver",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_saw",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				}
@@ -526,8 +469,8 @@
 			"name": "loot_pool",
 			"rolls": {
 				"type": "minecraft:uniform",
-				"min": 4,
-				"max": 6
+				"min": 8,
+				"max": 10
 			},
 			"entries": [
 				{
