@@ -59,6 +59,7 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('tfc:rock/raw', 'minecraft:dripstone_block')
+    event.add('forge:cobblestone/normal', 'minecraft:cobbled_deepslate')
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')

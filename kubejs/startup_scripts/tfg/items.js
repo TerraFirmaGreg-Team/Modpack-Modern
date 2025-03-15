@@ -3,6 +3,7 @@
 const registerTFGItems = (event) => {
     console.log("StartupEvents.registry('item')", Object.entries(event))
 
+    // #region Paper making
     event.create('tfg:hardwood_strip')
         .translationKey('item.tfg.hardwood_strip')
 
@@ -11,10 +12,19 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:soaked_unrefined_paper')
         .translationKey('item.tfg.soaked_unrefined_paper')
+    // #endregion
 
-    // Extrudel Molds
+    // #region Molds
     global.TFG_EXTRUDER_MOLDS.forEach(id => event.create(id))
 
-    // Other Molds
     global.TFG_CASTING_MOLDS.forEach(id => event.create(id))
+    // #endregion
+
+    // #region Stone bricks and dusts
+    event.create('tfg:brick/deepslate')
+        .translationKey('item.tfg.brick.deepslate')
+
+    event.create('tfg:dust/dripstone')
+        .translationKey('item.tfg.dust.dripstone')
+    // #endregion
 }

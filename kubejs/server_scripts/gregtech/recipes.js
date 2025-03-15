@@ -665,6 +665,113 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    //#region Deepslate
+    
+    event.remove({ id: 'gtceu:shaped/deepslate_hammer' })
+    event.remove({ id: 'gtceu:shaped/cobbled_deepslate_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/cobbled_deepslate_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/cobbled_deepslate_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/cobbled_deepslate_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_cobbled_deepslate_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_cobbled_deepslate_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_cobbled_deepslate_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_cobbled_deepslate_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_cobbled_deepslate_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_cobbled_deepslate_into_slab_distilled_water' })
+
+    event.remove({ id: 'gtceu:shaped/cobbled_deepslate_polished_hammer' })
+    event.remove({ id: 'gtceu:forming_press/form_cobbled_deepslate_slab_into_pillar' })
+
+    event.remove({ id: 'gtceu:shaped/polished_deepslate_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_deepslate_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_deepslate_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_deepslate_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_deepslate_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_deepslate_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_deepslate_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_deepslate_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_deepslate_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_deepslate_into_slab_distilled_water' })
+    
+    event.remove({ id: 'gtceu:shaped/deepslate_bricks_hammer' })
+    event.remove({ id: 'gtceu:shaped/deepslate_bricks_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/deepslate_bricks_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/deepslate_bricks_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/deepslate_bricks_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_deepslate_bricks_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_deepslate_bricks_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_deepslate_bricks_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_deepslate_bricks_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_deepslate_bricks_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_deepslate_bricks_into_slab_distilled_water' })
+
+    event.remove({ id: 'gtceu:shaped/deepslate_tile_hammer' })
+    event.remove({ id: 'gtceu:shaped/deepslate_tile_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/deepslate_tile_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/deepslate_tile_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/deepslate_tile_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_deepslate_tile_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_deepslate_tile_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_deepslate_tile_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_deepslate_tile_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_deepslate_tile_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_deepslate_tile_into_slab_distilled_water' })
+
+    event.remove({ id: 'gtceu:rock_breaker/deepslate' })
+
+    // #endregion
+
+    // #region Blackstone
+    
+    event.remove({ id: 'gtceu:shaped/blackstone_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/blackstone_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/blackstone_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/blackstone_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_blackstone_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_blackstone_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_blackstone_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_blackstone_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_blackstone_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_blackstone_into_slab_distilled_water' })
+    
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_hammer' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_blackstone_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_blackstone_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_blackstone_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_blackstone_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_blackstone_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_blackstone_into_slab_distilled_water' })
+
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_polished_hammer' })
+    event.remove({ id: 'gtceu:forming_press/form_polished_blackstone_slab_into_pillar' })
+    
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_brick_hammer' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_brick_stair_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_brick_slab_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_brick_wall_saw' })
+    event.remove({ id: 'gtceu:shaped/polished_blackstone_brick_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_blackstone_brick_into_stair' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_blackstone_brick_into_polished' })
+    event.remove({ id: 'gtceu:assembler/assemble_polished_blackstone_brick_into_wall' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_blackstone_brick_into_slab' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_blackstone_brick_into_slab_water' })
+    event.remove({ id: 'gtceu:cutter/cut_polished_blackstone_brick_into_slab_distilled_water' })
+
+    event.remove({ id: 'gtceu:rock_breaker/blackstone' })
+
+    // #endregion
+
+    // #region basalt
+
+    event.remove({ id: 'gtceu:shaped/basalt_polish_hammer' })
+    event.remove({ id: 'gtceu:assembler/assemble_basalt_into_polished' })
+
+    // #endregion
+
     //#region Выход: Каменный стержень
 
     // Из сырого камня
