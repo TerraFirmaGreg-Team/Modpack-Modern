@@ -102,7 +102,7 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'minecraft:deepslate', hammered: 'minecraft:cobbled_deepslate' },
 		{ raw: 'minecraft:cobbled_deepslate', hammered: 'tfc:sand/black' },
 		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black' },
-		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/red' }
+		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink' }
 	]
 
 	HAMMERING.forEach(x => {
