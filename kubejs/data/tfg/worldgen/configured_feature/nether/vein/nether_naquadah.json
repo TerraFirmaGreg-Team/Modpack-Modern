@@ -14,11 +14,11 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_naquadah_ore",
+						"block": "gtceu:pyroxenite_naquadah_ore",
 						"weight": 75
 					},
 					{
-						"block": "gtceu:blackstone_plutonium_ore",
+						"block": "gtceu:pyroxenite_plutonium_ore",
 						"weight": 25
 					}
 				]

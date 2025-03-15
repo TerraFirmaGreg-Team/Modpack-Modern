@@ -43,19 +43,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_chalcopyrite_ore",
+						"block": "gtceu:pyroxenite_chalcopyrite_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:blackstone_iron_ore",
+						"block": "gtceu:pyroxenite_iron_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:blackstone_pyrite_ore",
+						"block": "gtceu:pyroxenite_pyrite_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:blackstone_copper_ore",
+						"block": "gtceu:pyroxenite_copper_ore",
 						"weight": 65
 					}
 				]

@@ -130,19 +130,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_almandine_ore",
+						"block": "gtceu:pyroxenite_almandine_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_pyrope_ore",
+						"block": "gtceu:pyroxenite_pyrope_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_sapphire_ore",
+						"block": "gtceu:pyroxenite_sapphire_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_green_sapphire_ore",
+						"block": "gtceu:pyroxenite_green_sapphire_ore",
 						"weight": 15
 					}
 				]

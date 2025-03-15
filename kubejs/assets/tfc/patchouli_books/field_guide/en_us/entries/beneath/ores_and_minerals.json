@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Pyroxenite",
-			"item": { "tag": "forge:ores_in_ground/blackstone" },
+			"item": { "tag": "forge:ores_in_ground/pyroxenite" },
 			"text": "Around the level of the lava oceans, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
 		},
 		{

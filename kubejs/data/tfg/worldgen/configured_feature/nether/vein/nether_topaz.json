@@ -15,19 +15,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_blue_topaz_ore",
+						"block": "gtceu:pyroxenite_blue_topaz_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_topaz_ore",
+						"block": "gtceu:pyroxenite_topaz_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_chalcocite_ore",
+						"block": "gtceu:pyroxenite_chalcocite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_bornite_ore",
+						"block": "gtceu:pyroxenite_bornite_ore",
 						"weight": 15
 					}
 				]

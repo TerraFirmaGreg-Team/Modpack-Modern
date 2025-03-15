@@ -47,23 +47,23 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_magnetite_ore",
+						"block": "gtceu:pyroxenite_magnetite_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:blackstone_vanadium_magnetite_ore",
+						"block": "gtceu:pyroxenite_vanadium_magnetite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_chromite_ore",
+						"block": "gtceu:pyroxenite_chromite_ore",
 						"weight": 60
 					},
 					{
-						"block": "gtceu:blackstone_gold_ore",
+						"block": "gtceu:pyroxenite_gold_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_sapphire_ore",
+						"block": "gtceu:pyroxenite_sapphire_ore",
 						"weight": 5
 					}
 				]

@@ -115,15 +115,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_graphite_ore",
+						"block": "gtceu:pyroxenite_graphite_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:blackstone_diamond_ore",
+						"block": "gtceu:pyroxenite_diamond_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:blackstone_coal_ore",
+						"block": "gtceu:pyroxenite_coal_ore",
 						"weight": 15
 					}
 				]

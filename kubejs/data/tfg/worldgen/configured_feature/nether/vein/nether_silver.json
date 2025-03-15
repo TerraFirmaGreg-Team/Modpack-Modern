@@ -52,15 +52,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_galena_ore",
+						"block": "gtceu:pyroxenite_galena_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_silver_ore",
+						"block": "gtceu:pyroxenite_silver_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_lead_ore",
+						"block": "gtceu:pyroxenite_lead_ore",
 						"weight": 55
 					}
 				]

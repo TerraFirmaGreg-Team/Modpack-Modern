@@ -7,8 +7,7 @@ const registerBeneathRecipes = (event) => {
 
 	event.recipes.tfc.collapse('tfc:rock/cobble/basalt', 'minecraft:basalt')
 	event.recipes.tfc.collapse('minecraft:cobbled_deepslate', '#forge:ores_in_ground/deepslate')
-	event.recipes.tfc.collapse('minecraft:blackstone', '#forge:ores_in_ground/blackstone')
-	// TODO: check this
+	event.recipes.tfc.collapse('minecraft:blackstone', '#forge:ores_in_ground/pyroxenite')
 	event.recipes.tfc.collapse('minecraft:dripstone_block', '#forge:ores_in_ground/dripstone')
 
 

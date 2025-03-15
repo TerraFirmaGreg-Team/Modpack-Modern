@@ -44,19 +44,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_red_garnet_ore",
+						"block": "gtceu:pyroxenite_red_garnet_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:blackstone_yellow_garnet_ore",
+						"block": "gtceu:pyroxenite_yellow_garnet_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_amethyst_ore",
+						"block": "gtceu:pyroxenite_amethyst_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:blackstone_opal_ore",
+						"block": "gtceu:pyroxenite_opal_ore",
 						"weight": 40
 					}
 				]

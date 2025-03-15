@@ -149,23 +149,23 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_soapstone_ore",
+						"block": "gtceu:pyroxenite_soapstone_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_talc_ore",
+						"block": "gtceu:pyroxenite_talc_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:blackstone_glauconite_sand_ore",
+						"block": "gtceu:pyroxenite_glauconite_sand_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_pentlandite_ore",
+						"block": "gtceu:pyroxenite_pentlandite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_trona_ore",
+						"block": "gtceu:pyroxenite_trona_ore",
 						"weight": 10
 					}
 				]

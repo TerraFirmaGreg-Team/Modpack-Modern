@@ -109,15 +109,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_scheelite_ore",
+						"block": "gtceu:pyroxenite_scheelite_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:blackstone_tungstate_ore",
+						"block": "gtceu:pyroxenite_tungstate_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_lithium_ore",
+						"block": "gtceu:pyroxenite_lithium_ore",
 						"weight": 20
 					}
 				]

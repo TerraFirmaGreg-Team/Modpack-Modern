@@ -68,23 +68,23 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_garnierite_ore",
+						"block": "gtceu:pyroxenite_garnierite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_nickel_ore",
+						"block": "gtceu:pyroxenite_nickel_ore",
 						"weight": 10
 					},
 					{
-						"block": "gtceu:blackstone_cobaltite_ore",
+						"block": "gtceu:pyroxenite_cobaltite_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:blackstone_pentlandite_ore",
+						"block": "gtceu:pyroxenite_pentlandite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_cobalt_ore",
+						"block": "gtceu:pyroxenite_cobalt_ore",
 						"weight": 15
 					}
 				]

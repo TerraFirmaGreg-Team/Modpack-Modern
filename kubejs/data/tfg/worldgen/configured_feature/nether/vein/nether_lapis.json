@@ -66,19 +66,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_lazurite_ore",
+						"block": "gtceu:pyroxenite_lazurite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_sodalite_ore",
+						"block": "gtceu:pyroxenite_sodalite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_lapis_ore",
+						"block": "gtceu:pyroxenite_lapis_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_calcite_ore",
+						"block": "gtceu:pyroxenite_calcite_ore",
 						"weight": 15
 					}
 				]

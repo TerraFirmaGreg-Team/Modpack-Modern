@@ -96,15 +96,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_tetrahedrite_ore",
+						"block": "gtceu:pyroxenite_tetrahedrite_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:blackstone_copper_ore",
+						"block": "gtceu:pyroxenite_copper_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_stibnite_ore",
+						"block": "gtceu:pyroxenite_stibnite_ore",
 						"weight": 20
 					}
 				]

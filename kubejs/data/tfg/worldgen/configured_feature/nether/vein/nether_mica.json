@@ -129,19 +129,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_kyanite_ore",
+						"block": "gtceu:pyroxenite_kyanite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_mica_ore",
+						"block": "gtceu:pyroxenite_mica_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_bauxite_ore",
+						"block": "gtceu:pyroxenite_bauxite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_pollucite_ore",
+						"block": "gtceu:pyroxenite_pollucite_ore",
 						"weight": 15
 					}
 				]

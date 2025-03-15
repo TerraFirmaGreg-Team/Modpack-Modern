@@ -43,19 +43,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_cassiterite_sand_ore",
+						"block": "gtceu:pyroxenite_cassiterite_sand_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_garnet_sand_ore",
+						"block": "gtceu:pyroxenite_garnet_sand_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_asbestos_ore",
+						"block": "gtceu:pyroxenite_asbestos_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_diatomite_ore",
+						"block": "gtceu:pyroxenite_diatomite_ore",
 						"weight": 15
 					}
 				]

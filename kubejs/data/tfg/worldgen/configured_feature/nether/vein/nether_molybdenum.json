@@ -129,19 +129,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_wulfenite_ore",
+						"block": "gtceu:pyroxenite_wulfenite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:blackstone_molybdenite_ore",
+						"block": "gtceu:pyroxenite_molybdenite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_molybdenum_ore",
+						"block": "gtceu:pyroxenite_molybdenum_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_powellite_ore",
+						"block": "gtceu:pyroxenite_powellite_ore",
 						"weight": 15
 					}
 				]

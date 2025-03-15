@@ -89,11 +89,11 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_pitchblende_ore",
+						"block": "gtceu:pyroxenite_pitchblende_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:blackstone_uraninite_ore",
+						"block": "gtceu:pyroxenite_uraninite_ore",
 						"weight": 50
 					}
 				]

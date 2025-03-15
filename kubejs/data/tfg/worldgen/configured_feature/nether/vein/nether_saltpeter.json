@@ -129,19 +129,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_saltpeter_ore",
+						"block": "gtceu:pyroxenite_saltpeter_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_diatomite_ore",
+						"block": "gtceu:pyroxenite_diatomite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_electrotine_ore",
+						"block": "gtceu:pyroxenite_electrotine_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_alunite_ore",
+						"block": "gtceu:pyroxenite_alunite_ore",
 						"weight": 15
 					}
 				]

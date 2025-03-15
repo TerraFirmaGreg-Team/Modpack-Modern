@@ -109,15 +109,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_bastnasite_ore",
+						"block": "gtceu:pyroxenite_bastnasite_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:blackstone_monazite_ore",
+						"block": "gtceu:pyroxenite_monazite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_neodymium_ore",
+						"block": "gtceu:pyroxenite_neodymium_ore",
 						"weight": 25
 					}
 				]

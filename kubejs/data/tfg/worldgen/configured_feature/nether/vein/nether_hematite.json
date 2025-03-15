@@ -47,23 +47,23 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_goethite_ore",
+						"block": "gtceu:pyroxenite_goethite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_yellow_limonite_ore",
+						"block": "gtceu:pyroxenite_yellow_limonite_ore",
 						"weight": 15
 					},
 					{
-						"block": "gtceu:blackstone_hematite_ore",
+						"block": "gtceu:pyroxenite_hematite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_gold_ore",
+						"block": "gtceu:pyroxenite_gold_ore",
 						"weight": 5
 					},
 					{
-						"block": "gtceu:blackstone_ruby_ore",
+						"block": "gtceu:pyroxenite_ruby_ore",
 						"weight": 20
 					}
 				]

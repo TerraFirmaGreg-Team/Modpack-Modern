@@ -45,15 +45,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_beryllium_ore",
+						"block": "gtceu:pyroxenite_beryllium_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_emerald_ore",
+						"block": "gtceu:pyroxenite_emerald_ore",
 						"weight": 50
 					},
 					{
-						"block": "gtceu:blackstone_thorium_ore",
+						"block": "gtceu:pyroxenite_thorium_ore",
 						"weight": 15
 					}
 				]

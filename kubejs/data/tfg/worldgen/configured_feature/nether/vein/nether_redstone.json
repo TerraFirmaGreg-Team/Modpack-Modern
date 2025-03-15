@@ -33,15 +33,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_redstone_ore",
+						"block": "gtceu:pyroxenite_redstone_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:blackstone_ruby_ore",
+						"block": "gtceu:pyroxenite_ruby_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_cinnabar_ore",
+						"block": "gtceu:pyroxenite_cinnabar_ore",
 						"weight": 20
 					}
 				]

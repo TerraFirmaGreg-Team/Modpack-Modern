@@ -68,19 +68,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_bentonite_ore",
+						"block": "gtceu:pyroxenite_bentonite_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_magnesite_ore",
+						"block": "gtceu:pyroxenite_magnesite_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_olivine_ore",
+						"block": "gtceu:pyroxenite_olivine_ore",
 						"weight": 25
 					},
 					{
-						"block": "gtceu:blackstone_glauconite_sand_ore",
+						"block": "gtceu:pyroxenite_glauconite_sand_ore",
 						"weight": 15
 					}
 				]

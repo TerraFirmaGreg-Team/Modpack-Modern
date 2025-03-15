@@ -60,15 +60,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_sulfur_ore",
+						"block": "gtceu:pyroxenite_sulfur_ore",
 						"weight": 35
 					},
 					{
-						"block": "gtceu:blackstone_sphalerite_ore",
+						"block": "gtceu:pyroxenite_sphalerite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:blackstone_pyrite_ore",
+						"block": "gtceu:pyroxenite_pyrite_ore",
 						"weight": 25
 					}
 				]

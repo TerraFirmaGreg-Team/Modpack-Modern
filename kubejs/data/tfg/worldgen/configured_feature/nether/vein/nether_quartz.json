@@ -39,15 +39,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_quartzite_ore",
+						"block": "gtceu:pyroxenite_quartzite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_nether_quartz_ore",
+						"block": "gtceu:pyroxenite_nether_quartz_ore",
 						"weight": 65
 					},
 					{
-						"block": "gtceu:blackstone_barite_ore",
+						"block": "gtceu:pyroxenite_barite_ore",
 						"weight": 25
 					}
 				]

@@ -39,15 +39,15 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_bauxite_ore",
+						"block": "gtceu:pyroxenite_bauxite_ore",
 						"weight": 45
 					},
 					{
-						"block": "gtceu:blackstone_ilmenite_ore",
+						"block": "gtceu:pyroxenite_ilmenite_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_aluminium_ore",
+						"block": "gtceu:pyroxenite_aluminium_ore",
 						"weight": 25
 					}
 				]

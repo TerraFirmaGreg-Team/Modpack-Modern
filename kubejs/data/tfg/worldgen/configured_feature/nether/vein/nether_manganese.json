@@ -68,19 +68,19 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_grossular_ore",
+						"block": "gtceu:pyroxenite_grossular_ore",
 						"weight": 30
 					},
 					{
-						"block": "gtceu:blackstone_spessartine_ore",
+						"block": "gtceu:pyroxenite_spessartine_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:blackstone_pyrolusite_ore",
+						"block": "gtceu:pyroxenite_pyrolusite_ore",
 						"weight": 20
 					},
 					{
-						"block": "gtceu:blackstone_tantalite_ore",
+						"block": "gtceu:pyroxenite_tantalite_ore",
 						"weight": 10
 					}
 				]

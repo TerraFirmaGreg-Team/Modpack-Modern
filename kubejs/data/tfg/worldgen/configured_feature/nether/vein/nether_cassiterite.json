@@ -89,11 +89,11 @@
 				],
 				"with": [
 					{
-						"block": "gtceu:blackstone_cassiterite_ore",
+						"block": "gtceu:pyroxenite_cassiterite_ore",
 						"weight": 40
 					},
 					{
-						"block": "gtceu:blackstone_tin_ore",
+						"block": "gtceu:pyroxenite_tin_ore",
 						"weight": 60
 					}
 				]
