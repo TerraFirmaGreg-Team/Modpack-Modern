@@ -20,8 +20,25 @@
 					"below_top": 5
 				},
 				"min_inclusive": {
-					"above_bottom": 50
+					"above_bottom": 36
 				}
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:all_of",
+				"predicates": [
+					{
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					},
+					{
+						"type": "minecraft:matching_block_tag",
+						"offset": [ 0, -1, 0 ],
+						"tag": "forge:stone"
+					}
+				]
 			}
 		},
 		{

@@ -216,7 +216,7 @@
 												"then_run": {
 													"type": "minecraft:block",
 													"result_state": {
-														"Name": "tfc:rock/magma/basalt"
+														"Name": "minecraft:magma_block"
 													}
 												}
 											}
@@ -269,6 +269,22 @@
 					"then_run": {
 						"type": "minecraft:sequence",
 						"sequence": [
+							{
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:stone_depth",
+									"offset": 0,
+									"surface_type": "ceiling",
+									"add_surface_depth": false,
+									"secondary_depth_range": 0
+								},
+								"then_run": {
+									"type": "minecraft:block",
+									"result_state": {
+										"Name": "tfg:rock/hardened_deepslate"
+									}
+								}
+							},
 							{
 								"type": "minecraft:condition",
 								"if_true": {
@@ -404,7 +420,7 @@
 										"then_run": {
 											"type": "minecraft:block",
 											"result_state": {
-												"Name": "tfc:rock/magma/basalt"
+												"Name": "minecraft:magma_block"
 											}
 										}
 									},
@@ -479,7 +495,7 @@
 										"then_run": {
 											"type": "minecraft:block",
 											"result_state": {
-												"Name": "tfc:rock/magma/basalt"
+												"Name": "minecraft:magma_block"
 											}
 										}
 									},

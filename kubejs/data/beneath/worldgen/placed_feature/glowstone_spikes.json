@@ -1,13 +1,13 @@
 {
-	"feature": "tfg:nether/spikes/gneiss_spikes",
+	"feature": "beneath:glowstone_spikes",
 	"placement": [
 		{
-			"type": "minecraft:count",
-			"count": 256
+			"type": "minecraft:rarity_filter",
+			"chance": 6
 		},
 		{
 			"type": "minecraft:count",
-			"count": 2
+			"count": 16
 		},
 		{
 			"type": "minecraft:in_square"
@@ -17,10 +17,10 @@
 			"height": {
 				"type": "minecraft:uniform",
 				"max_inclusive": {
-					"below_top": 5
+					"below_top": 10
 				},
 				"min_inclusive": {
-					"above_bottom": 36
+					"above_bottom": 29
 				}
 			}
 		},
