@@ -3457,6 +3457,7 @@
         {
             "pakku_id": "Vl9JDBWAzQ5W19ta",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -3748,72 +3749,6 @@
             ]
         },
         {
-            "pakku_id": "KqiRcsArzq5XspVO",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "enchantment-descriptions",
-                "modrinth": "enchantment-descriptions"
-            },
-            "name": {
-                "curseforge": "Enchantment Descriptions",
-                "modrinth": "Enchantment Descriptions"
-            },
-            "id": {
-                "curseforge": "250419",
-                "modrinth": "UVtY3ZAC"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/UVtY3ZAC/versions/nq9ce04C/EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar",
-                    "id": "nq9ce04C",
-                    "parent_id": "UVtY3ZAC",
-                    "hashes": {
-                        "sha512": "d57228e02a626e3605a32952ed9ae5ea9c3fc0e1a953080cddec8bc6e3f2931e6e7102549116840be02a8ecd9db166e001efab89cd28e404ab73ddce8bb8ea76",
-                        "sha1": "7cb8e1242d058c9800e1f3f886930647de7f44e1"
-                    },
-                    "required_dependencies": [
-                        "uy4Cnpcm"
-                    ],
-                    "size": 69476,
-                    "date_published": "2024-10-28T22:30:15.185428Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5855/251/EnchantmentDescriptions-Forge-1.20.1-17.1.19.jar",
-                    "id": "5855251",
-                    "parent_id": "250419",
-                    "hashes": {
-                        "sha1": "7cb8e1242d058c9800e1f3f886930647de7f44e1",
-                        "md5": "445422556264d2129fde704f35d9680f"
-                    },
-                    "required_dependencies": [
-                        "228525"
-                    ],
-                    "size": 69476,
-                    "date_published": "2024-10-28T22:30:06.733Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "GmEWXR5FUyidD4Fi",
             "pakku_links": [
                 "cxgo5IyMJwtpohRH",
@@ -3822,7 +3757,7 @@
                 "uCACXyPoJ4iKQzNG"
             ],
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "enderman-overhaul",
                 "modrinth": "enderman-overhaul"
@@ -5476,7 +5411,7 @@
         {
             "pakku_id": "uCACXyPoJ4iKQzNG",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "geckolib",
                 "modrinth": "geckolib"
@@ -6145,6 +6080,69 @@
                     "required_dependencies": [],
                     "size": 238088,
                     "date_published": "2024-08-18T09:52:06.760Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "XmA9kaNL0SN6voqF",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "inventory-tweaks-refoxed",
+                "modrinth": "inventory-tweaks-refoxed"
+            },
+            "name": {
+                "curseforge": "Inventory Tweaks - ReFoxed",
+                "modrinth": "Inventory Tweaks: ReFoxed"
+            },
+            "id": {
+                "curseforge": "976858",
+                "modrinth": "uqnMI1kq"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "invtweaks-1.20.1-1.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5939/627/invtweaks-1.20.1-1.2.0.jar",
+                    "id": "5939627",
+                    "parent_id": "976858",
+                    "hashes": {
+                        "sha1": "d0a419f3b026b4949ed178119befbcf734deb6eb",
+                        "md5": "e1888186be0600089055dd9b872cea57"
+                    },
+                    "required_dependencies": [],
+                    "size": 74689,
+                    "date_published": "2024-11-26T18:52:29.943Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "invtweaks-1.20.1-1.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/uqnMI1kq/versions/eyPkQyNd/invtweaks-1.20.1-1.2.0.jar",
+                    "id": "eyPkQyNd",
+                    "parent_id": "uqnMI1kq",
+                    "hashes": {
+                        "sha512": "da66e64b3bca754076fec4a0d1e70d4a17c57ba3586ff38842d8ecff0ba4353f3a626ef24117f2fb3c41b5b87bec9dab9cbd6646d144b486e30eac94581f90bf",
+                        "sha1": "d0a419f3b026b4949ed178119befbcf734deb6eb"
+                    },
+                    "required_dependencies": [],
+                    "size": 74689,
+                    "date_published": "2024-11-26T18:52:57.351918Z"
                 }
             ]
         },
@@ -9542,6 +9540,7 @@
         {
             "pakku_id": "pITFJNUBx59dBitK",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "primitive-creatures"
             },
@@ -9781,7 +9780,7 @@
         {
             "pakku_id": "J5CyvX6hIaMAyzVK",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "resourceful-config",
                 "modrinth": "resourceful-config"
@@ -9842,7 +9841,7 @@
         {
             "pakku_id": "cxgo5IyMJwtpohRH",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "resourceful-lib",
                 "modrinth": "resourceful-lib"
@@ -10056,6 +10055,52 @@
                     "required_dependencies": [],
                     "size": 77732,
                     "date_published": "2024-04-23T06:56:49.313Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "krdftIvsucF2HrmK",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "shimmer",
+                "modrinth": "shimmer"
+            },
+            "name": {
+                "curseforge": "Shimmer",
+                "modrinth": "Shimmer"
+            },
+            "id": {
+                "curseforge": "627824",
+                "modrinth": "loOLVxG0"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Shimmer-forge-1.20.1-0.2.4.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5685/940/Shimmer-forge-1.20.1-0.2.4.jar",
+                    "id": "5685940",
+                    "parent_id": "627824",
+                    "hashes": {
+                        "sha1": "6e51070337e954de2843e44fc8810e22325c2e55",
+                        "md5": "6c2332b82b6bd2e44cf9fc86e1c3bc66"
+                    },
+                    "required_dependencies": [],
+                    "size": 918461,
+                    "date_published": "2024-09-02T10:16:12.170Z"
                 }
             ]
         },
@@ -11465,72 +11510,6 @@
                     "parent_id": "668983056",
                     "size": 325760,
                     "date_published": "2024-10-28T14:40:14Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "A1OQCxuECZibmxA0",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "tips",
-                "modrinth": "tips"
-            },
-            "name": {
-                "curseforge": "Tips",
-                "modrinth": "Tips"
-            },
-            "id": {
-                "curseforge": "306549",
-                "modrinth": "AMCbgyVw"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "Tips-Forge-1.20.1-12.1.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AMCbgyVw/versions/Op6VN0JV/Tips-Forge-1.20.1-12.1.8.jar",
-                    "id": "Op6VN0JV",
-                    "parent_id": "AMCbgyVw",
-                    "hashes": {
-                        "sha512": "73930800913520170fe20cc4cb7b30e175ab19e8457e572f20ddfd47082a5a7fa12e7072f278b3ed4191a59efc979f65a9c9592be1287eba3faa65ed35b2cc4b",
-                        "sha1": "bb1aaf585ac975f94d27162a1346c60a8d8f2765"
-                    },
-                    "required_dependencies": [
-                        "uy4Cnpcm"
-                    ],
-                    "size": 130094,
-                    "date_published": "2024-07-20T03:11:29.680686Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "Tips-Forge-1.20.1-12.1.8.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5547/510/Tips-Forge-1.20.1-12.1.8.jar",
-                    "id": "5547510",
-                    "parent_id": "306549",
-                    "hashes": {
-                        "sha1": "bb1aaf585ac975f94d27162a1346c60a8d8f2765",
-                        "md5": "bda7f9db0b3c89405a12d180449c1210"
-                    },
-                    "required_dependencies": [
-                        "228525"
-                    ],
-                    "size": 130094,
-                    "date_published": "2024-07-20T03:11:25.113Z"
                 }
             ]
         },
