@@ -10,7 +10,8 @@
 		"blocks": [
 			{
 				"replace": [
-					"minecraft:blackstone"
+					"minecraft:blackstone",
+					"minecraft:magma_block"
 				],
 				"with": [
 					{
@@ -26,8 +27,7 @@
 			{
 				"replace": [
 					"minecraft:basalt",
-					"tfc:rock/raw/basalt",
-					"tfc:rock/magma/basalt"
+					"tfc:rock/raw/basalt"
 				],
 				"with": [
 					{

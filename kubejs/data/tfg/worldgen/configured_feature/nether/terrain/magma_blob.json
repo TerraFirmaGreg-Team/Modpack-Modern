@@ -6,7 +6,7 @@
 		"targets": [
 			{
 				"state": {
-					"Name": "tfc:rock/magma/andesite"
+					"Name": "minecraft:magma_block"
 				},
 				"target": {
 					"predicate_type": "minecraft:tag_match",

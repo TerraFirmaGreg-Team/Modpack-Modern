@@ -64,7 +64,8 @@
 			},
 			{
 				"replace": [
-					"minecraft:blackstone"
+					"minecraft:blackstone",
+					"minecraft:magma_block"
 				],
 				"with": [
 					{

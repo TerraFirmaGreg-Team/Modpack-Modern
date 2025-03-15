@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:nether/terrain/magma_granite",
+	"feature": "tfg:nether/terrain/magma_blob",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 10
+			"chance": 2
 		},
 		{
 			"type": "minecraft:count",

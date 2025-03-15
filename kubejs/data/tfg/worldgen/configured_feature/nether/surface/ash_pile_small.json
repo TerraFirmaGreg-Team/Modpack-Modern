@@ -43,8 +43,10 @@
 						],
 						"blocks": [
 							"minecraft:deepslate",
+							"tfg:rock/hardened_deepslate",
 							"minecraft:blackstone",
-							"tfc:rock/magma/basalt"
+							"tfg:rock/hardened_blackstone",
+							"minecraft:magma_block"
 						]
 					}
 				}

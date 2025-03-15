@@ -336,11 +336,6 @@ const registerTFCBlockTags = (event) => {
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/granite')
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
 
-    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/basalt')
-    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/granite')
-    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/diorite')
-    event.add('minecraft:piglin_repellents', 'tfc:rock/magma/gabbro')
-
     //#endregion
 }
 

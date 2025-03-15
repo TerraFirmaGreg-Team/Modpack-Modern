@@ -133,10 +133,7 @@ const registerTFGPlacedFeatures = (event) => {
 	// #region Nether decorations
 
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
-	event.add('tfg:nether_underground_decoration', 'beneath:magma_basalt')
-	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_granite')
-	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_diorite')
-	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_gabbro')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
 
 	// #endregion
