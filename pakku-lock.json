@@ -10059,52 +10059,6 @@
             ]
         },
         {
-            "pakku_id": "krdftIvsucF2HrmK",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "shimmer",
-                "modrinth": "shimmer"
-            },
-            "name": {
-                "curseforge": "Shimmer",
-                "modrinth": "Shimmer"
-            },
-            "id": {
-                "curseforge": "627824",
-                "modrinth": "loOLVxG0"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Shimmer-forge-1.20.1-0.2.4.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5685/940/Shimmer-forge-1.20.1-0.2.4.jar",
-                    "id": "5685940",
-                    "parent_id": "627824",
-                    "hashes": {
-                        "sha1": "6e51070337e954de2843e44fc8810e22325c2e55",
-                        "md5": "6c2332b82b6bd2e44cf9fc86e1c3bc66"
-                    },
-                    "required_dependencies": [],
-                    "size": 918461,
-                    "date_published": "2024-09-02T10:16:12.170Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "3wLGdl5QOJNVEgeg",
             "type": "MOD",
             "side": "BOTH",
