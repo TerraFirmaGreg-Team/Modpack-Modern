@@ -3455,6 +3455,43 @@
             ]
         },
         {
+            "pakku_id": "Vl9JDBWAzQ5W19ta",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "detected-setblock-be-gone"
+            },
+            "name": {
+                "curseforge": "Detected setBlock Be Gone"
+            },
+            "id": {
+                "curseforge": "942945"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "dsbg-1.0-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4907/288/dsbg-1.0-1.20.1.jar",
+                    "id": "4907288",
+                    "parent_id": "942945",
+                    "hashes": {
+                        "sha1": "349a91654be8df6af5a19b02c7bb47758c09bac4",
+                        "md5": "143f9fe8813d87e3e2f3d93b4e159643"
+                    },
+                    "required_dependencies": [],
+                    "size": 273328,
+                    "date_published": "2023-11-27T22:50:51.187Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LStFy4sfjjGCv9JS",
             "type": "MOD",
             "side": "BOTH",

@@ -188,6 +188,24 @@
         },
         "dynamiclights-reforged": {
             "side": "CLIENT"
-        }
+        },
+		"resourceful-config": {
+			"side": "CLIENT"
+		},
+		"resourceful-lib": {
+			"side": "CLIENT"
+		},
+		"enderman-overhaul": {
+			"side": "CLIENT"
+		},
+		"primitive-creatures": {
+			"side": "CLIENT"
+		},
+		"geckolib": {
+			"side": "CLIENT"
+		},
+		"detected-setblock-be-gone": {
+			"side": "CLIENT"
+		}
     }
 }
