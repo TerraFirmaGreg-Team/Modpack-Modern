@@ -3,7 +3,7 @@
 	"pools": [
 		{
 			"name": "loot_pool",
-			"rolls": 3,
+			"rolls": 2,
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -251,76 +251,10 @@
 		},
 		{
 			"name": "loot_pool",
-			"rolls": 2,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/ingot/pig_iron",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 7,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:silver_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 7,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				}
-			]
-		},
-		{
-			"name": "loot_pool",
 			"rolls": {
 				"type": "minecraft:uniform",
-				"min": 6,
-				"max": 8
+				"min": 8,
+				"max": 12
 			},
 			"entries": [
 				{

@@ -26,12 +26,12 @@
 							"add": false
 						}
 					],
-					"weight": 1
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
 					"name": "tfc:metal/chestplate/black_bronze",
-					"weight": 1,
+					"weight": 50,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -46,7 +46,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:metal/helmet/black_bronze",
-					"weight": 1,
+					"weight": 50,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -61,7 +61,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:metal/greaves/black_bronze",
-					"weight": 1,
+					"weight": 50,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -76,7 +76,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:metal/boots/black_bronze",
-					"weight": 1,
+					"weight": 50,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -91,7 +91,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "tfc:metal/shield/black_bronze",
-					"weight": 1,
+					"weight": 50,
 					"functions": [
 						{
 							"function": "minecraft:set_damage",
@@ -100,6 +100,423 @@
 								"min": 0.75,
 								"max": 1
 							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_pickaxe",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_shovel",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_hammer",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_sword",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:sharpness": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/mace/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:smite": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/javelin/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:sharpness": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/rose_gold",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfchotornot:tongs/gold",
+					"functions": [
+						{
+							"function": "minecraft:set_damage",
+							"damage": {
+								"type": "minecraft:uniform",
+								"min": 0.1,
+								"max": 0.9
+							}
+						},
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 1
+							},
+							"add": false
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:piglin_banner_pattern",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:music_disc_pigstep",
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:snout_armor_trim_smithing_template",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_ingot",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 20
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_hammer",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_pickaxe",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:mending": 1,
+								"minecraft:efficiency": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_sword",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:sweeping": 3,
+								"minecraft:smite": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_knife",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:fire_aspect": 2,
+								"minecraft:sharpness": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_butchery_knife",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:knockback": 2,
+								"minecraft:sharpness": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_mining_hammer",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 2,
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_shovel",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_spade",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 2,
+								"minecraft:efficiency": 1
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_scythe",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 3,
+								"minecraft:smite": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_wire_cutter",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_wrench",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3,
+								"minecraft:efficiency": 2
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_crowbar",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_screwdriver",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3
+							},
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_saw",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_enchantments",
+							"enchantments": {
+								"minecraft:unbreaking": 3
+							},
+							"add": false
 						}
 					]
 				}
@@ -126,7 +543,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
@@ -141,7 +558,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 70
 				},
 				{
 					"type": "minecraft:item",
@@ -150,13 +567,13 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 6,
+								"min": 2,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
+					"weight": 70
 				},
 				{
 					"type": "minecraft:item",
@@ -171,7 +588,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
@@ -186,7 +603,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 100
 				},
 				{
 					"type": "minecraft:item",
@@ -195,13 +612,13 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 9,
+								"min": 2,
+								"max": 5,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
+					"weight": 80
 				},
 				{
 					"type": "minecraft:item",
@@ -210,8 +627,83 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 9,
+								"min": 2,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:gold_plate",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:gold_rod",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:long_gold_rod",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:gold_ring",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:wrought_iron_screw",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 5,
 								"type": "minecraft:uniform"
 							}
 						}
@@ -225,13 +717,13 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 9,
+								"min": 2,
+								"max": 5,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -240,13 +732,43 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 9,
+								"min": 2,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:black_bronze_plate",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 3,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/chain/black_bronze",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 10,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -255,13 +777,13 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"min": 4,
-								"max": 9,
+								"min": 2,
+								"max": 4,
 								"type": "minecraft:uniform"
 							}
 						}
 					],
-					"weight": 1
+					"weight": 80
 				},
 				{
 					"type": "minecraft:item",
@@ -276,7 +798,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 80
 				},
 				{
 					"type": "minecraft:item",
@@ -291,7 +813,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 50
 				},
 				{
 					"type": "minecraft:item",
@@ -306,7 +828,7 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 30
 				},
 				{
 					"type": "minecraft:item",
@@ -321,7 +843,142 @@
 							}
 						}
 					],
-					"weight": 1
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shroomlight",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glowstone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/log/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/lumber/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 16,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:cursed_hide",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:metal/lamp/black_bronze",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:spyglass",
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:seeds/ghost_pepper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 80
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:seeds/gleamflower",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 80
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:food/cooked_venison",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glow_berries",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 50
 				}
 			]
 		}
