@@ -1,14 +1,21 @@
-// priority: 0
+﻿// priority: 0
 
 const registerGTCEuTagPrefixes = (event) => {
-    const $TagKeyClazz = Java.loadClass('net.minecraft.tags.TagKey')
+    const $TagKeyClass = Java.loadClass('net.minecraft.tags.TagKey')
     const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
     const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+    
+	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
+	const $TFC_METAL = Java.loadClass('net.dries007.tfc.util.Metal')
+	const $TFC_ITEMS = Java.loadClass('net.dries007.tfc.common.items.TFCItems')
+	const $TFC_BLOCKS = Java.loadClass('net.dries007.tfc.common.blocks.TFCBlocks')
+
+	const KJSTagPrefix = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.built.KJSTagPrefix')
 
     const $TFGMaterialFlags = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.materials.TFGMaterialFlags')
+	const $TFG_PROPERTY_KEYS = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 
     const poorRawOreIcon = GTMaterialIconType.getByName('poor_raw_ore')
-    
     const richRawOreIcon = GTMaterialIconType.getByName('rich_raw_ore')
 
     const toolHeadMiningHammerIcon = GTMaterialIconType.getByName('tool_head_mining_hammer')
@@ -23,7 +30,7 @@ const registerGTCEuTagPrefixes = (event) => {
     const bellIcon = GTMaterialIconType.getByName('bell')
 
     const createBlockTag = (path) => 
-        $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
+        $TagKeyClass.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
 
     event.create("sword_head")
         .defaultTagPath("sword_heads/%s")
@@ -434,4 +441,133 @@ const registerGTCEuTagPrefixes = (event) => {
 
     TagPrefix.turbineBlade.defaultTagPath("turbine_blades/%s")
     TagPrefix.turbineBlade.unformattedTagPath("turbine_blades")
+
+
+    
+
+	const TFGMetalMaterial = {
+		"PIG_IRON": GTCEuAPI.materialManager.getMaterial('tfg:pig_iron'),
+		"HIGH_CARBON_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_steel'),
+		"HIGH_CARBON_BLACK_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_black_steel'),
+		"HIGH_CARBON_RED_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_red_steel'),
+		"HIGH_CARBON_BLUE_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_blue_steel'),
+		"WEAK_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:weak_steel'),
+		"WEAK_BLUE_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:weak_blue_steel'),
+		"WEAK_RED_STEEL": GTCEuAPI.materialManager.getMaterial('tfg:weak_red_steel'),
+		"UNKNOWN": GTCEuAPI.materialManager.getMaterial('tfg:unknown')
+	}
+
+
+    /* Игнорирование для некоторых металлов */
+    const list = Object.values(TFGMetalMaterial)
+
+    list.forEach(item => {
+        TagPrefix.dustTiny.setIgnored(item);
+        TagPrefix.dustSmall.setIgnored(item);
+        TagPrefix.dust.setIgnored(item);
+        TagPrefix.block.setIgnored(item);
+    })
+
+    const ignoreIngot = ([key, material]) => TagPrefix.ingot.setIgnored(material, () => $TFC_ITEMS.METAL_ITEMS.get($TFC_METAL.Default[key]).get($TFC_METAL.ItemType.INGOT).get())
+    Object.entries(TFGMetalMaterial).forEach( ignoreIngot )
+
+
+    // Association between [TFCItems.METAL_ITEMS] and GTMaterials
+    const toolHeadIgnore = {
+        COPPER: GTMaterials.Copper,
+        BISMUTH_BRONZE: GTMaterials.BismuthBronze,
+        BRONZE: GTMaterials.Bronze,
+        BLACK_BRONZE: GTMaterials.BlackBronze,
+        WROUGHT_IRON: GTMaterials.WroughtIron,
+        STEEL: GTMaterials.Steel,
+        BLACK_STEEL: GTMaterials.BlackSteel,
+        RED_STEEL: GTMaterials.RedSteel,
+        BLUE_STEEL: GTMaterials.BlueSteel
+    }
+
+
+
+    const ignorePropick = ([key, material]) => KJSTagPrefix.getPrefix("propick_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.PROPICK_HEAD).get());
+    Object.entries(toolHeadIgnore).forEach( ignorePropick )
+    
+    const ignoreJavelin = ([key, material]) => KJSTagPrefix.getPrefix("javelin_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.JAVELIN_HEAD).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreJavelin )
+
+    const ignoreChisel = ([key, material]) => KJSTagPrefix.getPrefix("chisel_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHISEL_HEAD).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreChisel )
+
+    const ignoreMace = ([key, material]) => KJSTagPrefix.getPrefix("mace_head").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.MACE_HEAD).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreMace )
+
+    const ignoreAnvil = ([key, material]) => KJSTagPrefix.getPrefix("anvil").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.ANVIL).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreAnvil )
+
+    const ignoreLamp = ([key, material]) => KJSTagPrefix.getPrefix("lamp").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.LAMP).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreLamp )
+
+    const ignoreLampUnfinished = ([key, material]) => KJSTagPrefix.getPrefix("unfinished_lamp").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.UNFINISHED_LAMP).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreLampUnfinished )
+
+    const ignoreTrapdoor = ([key, material]) => KJSTagPrefix.getPrefix("trapdoor").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.TRAPDOOR).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreTrapdoor )
+    
+    const ignoreChain = ([key, material]) => KJSTagPrefix.getPrefix("chain").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.CHAIN).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreChain )
+
+    const ignoreBars = ([key, material]) => KJSTagPrefix.getPrefix("bars").setIgnored(material, () => TFCItems.METAL_ITEMS.get(Metal.Default[key]).get(Metal.ItemType.BARS).get());
+    Object.entries(toolHeadIgnore).forEach( ignoreBars )
+
+    KJSTagPrefix.getPrefix("bell").setIgnored(GTMaterials.Gold, Blocks.BELL);
+    KJSTagPrefix.getPrefix("bell").setIgnored(GTMaterials.Brass, $TFC_BLOCKS.BRASS_BELL);
+    KJSTagPrefix.getPrefix("bell").setIgnored(GTMaterials.Bronze, $TFC_BLOCKS.BRONZE_BELL);
+
+
+    
+	const platedIgnore = {
+		COPPER: GTMaterials.Copper,
+		BISMUTH_BRONZE: GTMaterials.BismuthBronze,
+		BRONZE: GTMaterials.Bronze,
+		BLACK_BRONZE: GTMaterials.BlackBronze,
+		WROUGHT_IRON: GTMaterials.WroughtIron,
+		STEEL: GTMaterials.Steel,
+		BLACK_STEEL: GTMaterials.BlackSteel,
+		RED_STEEL: GTMaterials.RedSteel,
+		BLUE_STEEL: GTMaterials.BlueSteel,
+		BRASS: GTMaterials.Brass,
+		GOLD: GTMaterials.Gold,
+		NICKEL: GTMaterials.Nickel,
+		ROSE_GOLD: GTMaterials.RoseGold,
+		SILVER: GTMaterials.Silver,
+		TIN: GTMaterials.Tin,
+		STERLING_SILVER: GTMaterials.SterlingSilver,
+		BISMUTH: GTMaterials.Bismuth,
+		ZINC: GTMaterials.Zinc
+	}
+
+    const ignoreBlockPlated = ([key, material]) => KJSTagPrefix.getPrefix("plated_block").setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK).get())
+    Object.entries(platedIgnore).forEach( ignoreBlockPlated )
+
+    const ignoreStairPlated = ([key, material]) => KJSTagPrefix.getPrefix("plated_stair").setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK_STAIRS).get())
+    Object.entries(platedIgnore).forEach( ignoreStairPlated )
+
+    const ignoreSlabPlated = ([key, material]) => KJSTagPrefix.getPrefix("plated_slab").setIgnored(material, () => $TFC_BLOCKS.METALS.get(Metal.Default[key]).get(Metal.BlockType.BLOCK_SLAB).get())
+    Object.entries(platedIgnore).forEach( ignoreSlabPlated )
+
+    
+	const Bismuthinite = GTCEuAPI.materialManager.getMaterial('tfg:bismuthinite')
+	const Limonite = GTCEuAPI.materialManager.getMaterial('tfg:limonite')
+
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(Bismuthinite, () => TFCBlocks.SMALL_ORES.get(Ore.BISMUTHINITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Cassiterite, () => TFCBlocks.SMALL_ORES.get(Ore.CASSITERITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Garnierite, () => TFCBlocks.SMALL_ORES.get(Ore.GARNIERITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Hematite, () => TFCBlocks.SMALL_ORES.get(Ore.HEMATITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(Limonite, () => TFCBlocks.SMALL_ORES.get(Ore.LIMONITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Magnetite, () => TFCBlocks.SMALL_ORES.get(Ore.MAGNETITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Malachite, () => TFCBlocks.SMALL_ORES.get(Ore.MALACHITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Sphalerite, () => TFCBlocks.SMALL_ORES.get(Ore.SPHALERITE).get());
+    KJSTagPrefix.getPrefix("small_ore").setIgnored(GTMaterials.Tetrahedrite, () => TFCBlocks.SMALL_ORES.get(Ore.TETRAHEDRITE).get());
+//
+    KJSTagPrefix.getPrefix("small_native_ore").setIgnored(GTMaterials.Copper, () => TFCBlocks.SMALL_ORES.get(Ore.NATIVE_COPPER).get());
+    KJSTagPrefix.getPrefix("small_native_ore").setIgnored(GTMaterials.Gold, () => TFCBlocks.SMALL_ORES.get(Ore.NATIVE_GOLD).get());
+    KJSTagPrefix.getPrefix("small_native_ore").setIgnored(GTMaterials.Silver, () => TFCBlocks.SMALL_ORES.get(Ore.NATIVE_SILVER).get());
 }

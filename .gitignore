@@ -46,8 +46,8 @@ config/stellarcore_stitcher_cache_vanilla.dat
 # .minecraft
 !bansoukou/**.zip
 
-gtceu/
 .vscode/
+.vs/
 .idea/
 .bobby/
 .mixin.out/
@@ -109,3 +109,9 @@ hei_bookmarks.ini
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
+
+#Tools
+/tools/OresToFieldGuide/bin/*
+/tools/OresToFieldGuide/obj/*
+/tools/MarsBiomes/bin/*
+/tools/MarsBiomes/obj/*

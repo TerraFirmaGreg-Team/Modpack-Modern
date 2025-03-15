@@ -54,6 +54,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
  * Событие регистрации тэг префиксов.
 */
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    registerAE2TagPrefixes(event)
     registerTFCTagPrefixes(event)
     registerGTCEuTagPrefixes(event)
 })
