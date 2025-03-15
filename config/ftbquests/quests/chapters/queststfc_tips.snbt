@@ -3228,31 +3228,22 @@
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.cane.desc}"]
 			id: "75C6BF1C9405B4C7"
-			tasks: [
-				{
-					id: "37DD99D32072ADFC"
-					item: {
-						Count: 1
-						id: "tfccanes:walking_cane"
-						tag: {
-							Damage: 0
-						}
+			subtitle: "{quests.tfg_tips.cane.subtitle}"
+			tasks: [{
+				id: "37DD99D32072ADFC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfccanes:walking_cane)item(tfccanes:refined_walking_cane))"
 					}
-					type: "item"
 				}
-				{
-					id: "74EEB2158DA406BE"
-					item: {
-						Count: 1
-						id: "tfccanes:refined_walking_cane"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				title: "{quests.tfg_tips.cane.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.cane.title}"
 			x: 1.5d
 			y: 6.0d
 		}
