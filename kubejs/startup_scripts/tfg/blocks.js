@@ -73,11 +73,19 @@ const registerTFGBlocks = (event) => {
 		.itemTexture('tfg:item/loose/deepslate')
 		.rockTypeModel('metamorphic')
 		.soundType('deepslate')
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem('tfc:metamorphic_rock')
 
 	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/dripstone')
 		.rockTypeModel('sedimentary')
 		.soundType('dripstone_block')
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem('tfc:sedimentary_rock')
 
 
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')

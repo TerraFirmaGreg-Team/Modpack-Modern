@@ -12,7 +12,7 @@ const registerTFCTagPrefixes = (event) => {
         return $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
     }
 
-    // TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
+    TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
 
     TagPrefix.ORES.remove(TagPrefix.ore)
     TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
