@@ -1095,13 +1095,7 @@ const registerMinecraftRecipes = (event) => {
 	event.remove({ id: 'minecraft:polished_basalt_from_basalt_stonecutting' })
 
 	//#endregion
-	
-	//#region Выход: Черный камень
-
-	event.remove({ id: 'gtceu:rock_breaker/blackstone' })
-
-	//#endregion
-	
+		
 	//#region Выход: Ступень из черного камня
 
 	event.remove({ id: 'minecraft:blackstone_stairs' })
@@ -3233,5 +3227,5 @@ const registerMinecraftRecipes = (event) => {
 
 	// Soul Soil
 
-	event.recipes.tfc.landslide('minecraft:soil_soil', 'minecraft:soul_soil')
+	event.recipes.tfc.landslide('minecraft:soul_soil', 'minecraft:soul_soil')
 }
