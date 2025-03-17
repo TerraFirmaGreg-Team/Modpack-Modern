@@ -22,16 +22,6 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:blue_steel', 1540, 0.00857, '#forge:ingots/blue_steel', '#forge:double_ingots/blue_steel', '#forge:plates/blue_steel', 6, 'tfc:blue_steel')
     event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
 
-    event.metal('tfg:pig_iron', 1535, 0.00857, '#forge:ingots/pig_iron', null, null, 3, 'tfc:pig_iron')
-    event.metal('tfg:high_carbon_steel', 1540, 0.00857, '#forge:ingots/high_carbon_steel', null, null, 3, 'tfc:high_carbon_steel')
-    event.metal('tfg:high_carbon_black_steel', 1535, 0.00857, '#forge:ingots/high_carbon_black_steel', null, null, 4, 'tfc:high_carbon_black_steel')
-    event.metal('tfg:high_carbon_red_steel', 1535, 0.00857, '#forge:ingots/high_carbon_red_steel', null, null, 5, 'tfc:high_carbon_red_steel')
-    event.metal('tfg:high_carbon_blue_steel', 1535, 0.00857, '#forge:ingots/high_carbon_blue_steel', null, null, 5, 'tfc:high_carbon_blue_steel')
-    event.metal('tfg:weak_steel', 1540, 0.00857, '#forge:ingots/weak_steel', null, null, 4, 'tfc:weak_steel')
-    event.metal('tfg:weak_red_steel', 1540, 0.00857, '#forge:ingots/weak_red_steel', null, null, 5, 'tfc:weak_red_steel')
-    event.metal('tfg:weak_blue_steel', 1540, 0.00857, '#forge:ingots/weak_blue_steel', null, null, 5, 'tfc:weak_blue_steel')
-    event.metal('tfg:unknown', 400, 0.006, '#forge:ingots/unknown', null, null, 0, 'tfc:unknown')
-
     event.metal('gtceu:iron', 1535, 0.00857, '#forge:ingots/iron', '#forge:double_ingots/iron', '#forge:plates/iron', 3, 'tfc:cast_iron')
     event.metal('gtceu:tin', 230, 0.02143, '#forge:ingots/tin', '#forge:double_ingots/tin', '#forge:plates/tin', 1, 'tfc:tin')
     event.metal('gtceu:bismuth', 270, 0.02143, '#forge:ingots/bismuth', '#forge:double_ingots/bismuth', '#forge:plates/bismuth', 1, 'tfc:bismuth')
@@ -77,8 +67,8 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.ingot, material, tfcProperty, 1.429)
             
             makeItemHeatByTagPrefix(TagPrefix.rawOre, material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("rich_raw"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("poor_raw"), material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.richRawOre, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.poorRawOre, material, tfcProperty, 1.429)
 
             // Ore processing stages
             makeItemHeatByTagPrefix(TagPrefix.dustImpure, material, tfcProperty, 1.429)
@@ -87,19 +77,19 @@ const registerTFCHeats = (event) => {
             makeItemHeatByTagPrefix(TagPrefix.crushedPurified, material, tfcProperty, 1.429)
             makeItemHeatByTagPrefix(TagPrefix.crushedRefined, material, tfcProperty, 1.429)
 
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("sword_head"), material, tfcProperty, 2.875)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("shovel_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("scythe_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("pickaxe_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("saw_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("knife_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("hoe_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("hammer_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("axe_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("file_head"), material, tfcProperty, 1.429)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("butchery_knife_head"), material, tfcProperty, 2.875)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("mining_hammer_head"), material, tfcProperty, 2.875)
-            makeItemHeatByTagPrefix(TagPrefix.getPrefix("spade_head"), material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSword, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadShovel, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadScythe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadPickaxe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSaw, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadKnife, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadHoe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadHammer, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadAxe, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadFile, material, tfcProperty, 1.429)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadButcheryKnife, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadMiningHammer, material, tfcProperty, 2.875)
+            makeItemHeatByTagPrefix(TFGTagPrefix.toolHeadSpade, material, tfcProperty, 2.875)
 
             makeItemHeatByToolType(GTToolType.SWORD, material, tfcProperty, 1.429)
             makeItemHeatByToolType(GTToolType.PICKAXE, material, tfcProperty, 1.429)
@@ -212,5 +202,10 @@ const registerTFCFoodData = (event) => {
         food.vegetables(1)
         food.water(2)
         food.decayModifier(2)
+    })
+
+    event.foodItem('gtceu:chocolate_coin', food => {
+        food.hunger(1)
+        food.dairy(0.5)
     })
 }

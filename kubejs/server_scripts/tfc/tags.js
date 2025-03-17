@@ -360,15 +360,10 @@ const registerTFCFluidTags = (event) => {
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/red_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/blue_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/cast_iron')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/pig_iron')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_black_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_red_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_blue_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/weak_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/weak_red_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/weak_blue_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/unknown')
 
     // Добавление GTCEu металлов в форму слитков
     event.add('tfc:usable_in_ingot_mold', 'gtceu:bismuth')
@@ -390,15 +385,6 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_ingot_mold', 'gtceu:black_steel')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:blue_steel')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:pig_iron')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_black_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_blue_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_blue_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:unknown')
 
     event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
@@ -445,15 +431,10 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/red_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/blue_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/cast_iron')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/pig_iron')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_black_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_red_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_red_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/unknown')
 }
 
 const registerTFCPlacedFeatures = (event) => {

@@ -1,6 +1,7 @@
 // priority: 0
 
 const registerGTCEURecipes = (event) => {
+	
 	const makeToolRecipe = (toolType, headTagPrefix, extruderMold, cirucitMeta, material) => {
 		const toolItem = ToolHelper.get(toolType, material)
 		if (toolItem.isEmpty()) return
@@ -71,16 +72,6 @@ const registerGTCEURecipes = (event) => {
 		}).id(`gtceu:shaped/mortar_${material.getName()}`)
 	}
 
-	const processNugget = (tagPrefix, material) => {
-		if (material != TFGMaterials.Unknown) return
-
-		const item = ChemicalHelper.get(tagPrefix, material, 1)
-		if (item.isEmpty()) return
-
-		event.remove({ id: `gtceu:alloy_smelter/alloy_smelt_${material.getName()}_to_nugget` })
-		event.remove({ id: `gtceu:fluid_solidifier/solidify_${material.getName()}_to_nugget` })
-	}
-
 	const processIngot = (tagPrefix, material) => {
 		const ingotStack = ChemicalHelper.get(tagPrefix, material, 1)
 
@@ -116,12 +107,8 @@ const registerGTCEURecipes = (event) => {
 					event.recipes.createCutting(plateStack.withCount(matAmount).withChance(0.65), blockStack)
 						.id(`tfg:cutting/${material.getName()}_plate`)
 				}
-
 			}
-
 		}
-
-
 	}
 
 	const processPlate = (tagPrefix, material) => {
@@ -171,6 +158,8 @@ const registerGTCEURecipes = (event) => {
 	}
 
 	const processIngotDouble = (tagPrefix, material) => {
+		if (!material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) return;
+
 		const doubleIngotStack = ChemicalHelper.get(tagPrefix, material, 1);
 		const dustStack = ChemicalHelper.get(TagPrefix.dust, material, 2);
 
@@ -193,11 +182,12 @@ const registerGTCEURecipes = (event) => {
 			.itemOutputs(dustStack)
 			.duration(material.getMass())
 			.EUt(GTValues.VA[GTValues.ULV])
-
 	}
 
 	const processSmallOre = (tagPrefix, material) => {
-		const smallOre = ChemicalHelper.get(tagPrefix, material, 1)
+		if (!material.hasFlag(TFGMaterialFlags.HAS_SMALL_TFC_ORE)) return;
+
+		const smallOre = ChemicalHelper.get(tagPrefix, material, 1);
 		const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_small_ore`)
@@ -208,7 +198,9 @@ const registerGTCEURecipes = (event) => {
 	}
 
 	const processSmallNativeOre = (tagPrefix, material) => {
-		const smallNativeOre = ChemicalHelper.get(tagPrefix, material, 1)
+		if (!material.hasFlag(TFGMaterialFlags.HAS_SMALL_NATIVE_TFC_ORE)) return;
+
+		const smallNativeOre = ChemicalHelper.get(tagPrefix, material, 1);
 		const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_small_native_ore`)
@@ -356,52 +348,52 @@ const registerGTCEURecipes = (event) => {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
-		const anvilStack = ChemicalHelper.get(TagPrefix.getPrefix("anvil"), material, 1)
-		const finishedLampStack = ChemicalHelper.get(TagPrefix.getPrefix("lamp"), material, 1)
-		const trapdoorStack = ChemicalHelper.get(TagPrefix.getPrefix("trapdoor"), material, 1)
-		const chainStack = ChemicalHelper.get(TagPrefix.getPrefix("chain"), material, 1)
-		const bellStack = ChemicalHelper.get(TagPrefix.getPrefix("bell"), material, 1)
+
+		const anvilStack = ChemicalHelper.get(TFGTagPrefix.anvil, material, 1)
+		const finishedLampStack = ChemicalHelper.get(TFGTagPrefix.lamp, material, 1)
+		const trapdoorStack = ChemicalHelper.get(TFGTagPrefix.trapdoor, material, 1)
+		const chainStack = ChemicalHelper.get(TFGTagPrefix.chain, material, 1)
+		const bellStack = ChemicalHelper.get(TFGTagPrefix.bell, material, 1)
 
 		if (toolProperty != null) {
-			makeToolRecipe(GTToolType.SWORD, TagPrefix.getPrefix("sword_head"), 'tfg:sword_head_extruder_mold', 1, material)
-			makeToolRecipe(GTToolType.PICKAXE, TagPrefix.getPrefix("pickaxe_head"), 'tfg:pickaxe_head_extruder_mold', 2, material)
-			makeToolRecipe(GTToolType.AXE, TagPrefix.getPrefix("axe_head"), 'tfg:axe_head_extruder_mold', 3, material)
-			makeToolRecipe(GTToolType.SHOVEL, TagPrefix.getPrefix("shovel_head"), 'tfg:shovel_head_extruder_mold', 4, material)
-			makeToolRecipe(GTToolType.HOE, TagPrefix.getPrefix("hoe_head"), 'tfg:hoe_head_extruder_mold', 5, material)
-			makeToolRecipe(GTToolType.KNIFE, TagPrefix.getPrefix("knife_head"), 'tfg:knife_head_extruder_mold', 6, material)
-			makeToolRecipe(GTToolType.FILE, TagPrefix.getPrefix("file_head"), 'tfg:file_head_extruder_mold', 7, material)
-			makeToolRecipe(GTToolType.SAW, TagPrefix.getPrefix("saw_head"), 'tfg:saw_head_extruder_mold', 8, material)
-			makeToolRecipe(GTToolType.SPADE, TagPrefix.getPrefix("spade_head"), 'tfg:spade_head_extruder_mold', 9, material)
-			makeToolRecipe(GTToolType.MINING_HAMMER, TagPrefix.getPrefix("mining_hammer_head"), 'tfg:mining_hammer_head_extruder_mold', 10, material)
-			makeToolRecipe(GTToolType.SCYTHE, TagPrefix.getPrefix("scythe_head"), 'tfg:scythe_head_extruder_mold', 11, material)
-			makeToolRecipe(GTToolType.HARD_HAMMER, TagPrefix.getPrefix("hammer_head"), 'tfg:hammer_head_extruder_mold', 12, material)
-			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TagPrefix.getPrefix("butchery_knife_head"), 'tfg:butchery_knife_head_extruder_mold', 13, material)
+			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', 1, material)
+			makeToolRecipe(GTToolType.PICKAXE, TFGTagPrefix.toolHeadPickaxe, 'tfg:pickaxe_head_extruder_mold', 2, material)
+			makeToolRecipe(GTToolType.AXE, TFGTagPrefix.toolHeadAxe, 'tfg:axe_head_extruder_mold', 3, material)
+			makeToolRecipe(GTToolType.SHOVEL, TFGTagPrefix.toolHeadShovel, 'tfg:shovel_head_extruder_mold', 4, material)
+			makeToolRecipe(GTToolType.HOE, TFGTagPrefix.toolHeadHoe, 'tfg:hoe_head_extruder_mold', 5, material)
+			makeToolRecipe(GTToolType.KNIFE, TFGTagPrefix.toolHeadKnife, 'tfg:knife_head_extruder_mold', 6, material)
+			makeToolRecipe(GTToolType.FILE, TFGTagPrefix.toolHeadFile, 'tfg:file_head_extruder_mold', 7, material)
+			makeToolRecipe(GTToolType.SAW, TFGTagPrefix.toolHeadSaw, 'tfg:saw_head_extruder_mold', 8, material)
+			makeToolRecipe(GTToolType.SPADE, TFGTagPrefix.toolHeadSpade, 'tfg:spade_head_extruder_mold', 9, material)
+			makeToolRecipe(GTToolType.MINING_HAMMER, TFGTagPrefix.toolHeadMiningHammer, 'tfg:mining_hammer_head_extruder_mold', 10, material)
+			makeToolRecipe(GTToolType.SCYTHE, TFGTagPrefix.toolHeadScythe, 'tfg:scythe_head_extruder_mold', 11, material)
+			makeToolRecipe(GTToolType.HARD_HAMMER, TFGTagPrefix.toolHeadHammer, 'tfg:hammer_head_extruder_mold', 12, material)
+			makeToolRecipe(GTToolType.BUTCHERY_KNIFE, TFGTagPrefix.toolHeadButcheryKnife, 'tfg:butchery_knife_head_extruder_mold', 13, material)
 
 			processToolMortar(GTToolType.MORTAR, material)
 
-			processToolHead(TagPrefix.getPrefix("propick_head"), 'tfg:propick_head_extruder_mold', 14, material)
-			processToolHead(TagPrefix.getPrefix("javelin_head"), 'tfg:javelin_head_extruder_mold', 15, material)
-			processToolHead(TagPrefix.getPrefix("chisel_head"), 'tfg:chisel_head_extruder_mold', 16, material)
-			processToolHead(TagPrefix.getPrefix("mace_head"), 'tfg:mace_head_extruder_mold', 17, material)
+			processToolHead(TFGTagPrefix.toolHeadPropick, 'tfg:propick_head_extruder_mold', 14, material)
+			processToolHead(TFGTagPrefix.toolHeadJavelin, 'tfg:javelin_head_extruder_mold', 15, material)
+			processToolHead(TFGTagPrefix.toolHeadChisel, 'tfg:chisel_head_extruder_mold', 16, material)
+			processToolHead(TFGTagPrefix.toolHeadMace, 'tfg:mace_head_extruder_mold', 17, material)
 		}
 
 		if (ingotProperty != null) {
-			processNugget(TagPrefix.nugget, material)
 			processIngot(TagPrefix.ingot, material)
 			processPlate(TagPrefix.plate, material)
 			processPlateDouble(TagPrefix.plateDouble, material)
 			processBlock(TagPrefix.block, material)
 			processRod(TagPrefix.rod, material)
 			processRodLong(TagPrefix.rodLong, material)
-			processIngotDouble(TagPrefix.getPrefix("double_ingot"), material)
+			processIngotDouble(TFGTagPrefix.ingotDouble, material)
 		}
 
 		if (oreProperty != null) {
-			processSmallOre(TagPrefix.getPrefix("small_ore"), material)
-			processSmallNativeOre(TagPrefix.getPrefix("small_native_ore"), material)
-			processPoorRawOre(TagPrefix.getPrefix("poor_raw"), material)
+			processSmallOre(TFGTagPrefix.oreSmall, material)
+			processSmallNativeOre(TFGTagPrefix.oreSmallNative, material)
+			processPoorRawOre(TFGTagPrefix.poorRawOre, material)
 			processNormalRawOre(TagPrefix.rawOre, material)
-			processRichRawOre(TagPrefix.getPrefix("rich_raw"), material)
+			processRichRawOre(TFGTagPrefix.richRawOre, material)
 
 			processCrushedDust(TagPrefix.crushed, material)
 			processImpureDust(TagPrefix.dustImpure, material)
@@ -410,33 +402,31 @@ const registerGTCEURecipes = (event) => {
 		}
 
 		if (anvilStack != null) {
-
-			const dustStack = ChemicalHelper.get(TagPrefix.dust, material, 14)
 			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_anvil`)
 				.itemInputs(anvilStack)
-				.itemOutputs(dustStack)
+				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 14))
 				.duration(material.getMass() * 32)
 				.EUt(GTValues.VA[GTValues.LV])
+
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_anvil`)
 				.itemInputs(anvilStack)
-				.itemOutputs(dustStack)
+				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
 				.duration(material.getMass() * 32)
 				.EUt(GTValues.VA[GTValues.ULV])
 
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_anvil`)
+				.inputFluids(Fluid.of(material.getFluid(), 14 * 144))
+				.notConsumable('gtceu:anvil_casting_mold')
+				.itemOutputs(anvilStack)
+				.duration(material.getMass() * 32)
+				.EUt(GTValues.VA[GTValues.ULV])
 		}
 
 		if (finishedLampStack != null) {
-			// GTRecipeTypes.MACERATOR_RECIPES.recipeBuilder(
-			//     TerraFirmaGreg.id("macerate_" + material.getName() + "_lamp"), new Object[0])
-			//     .EUt((long)GTValues.VA[1])
-			//     .duration((int)outputMaterial.getMass() * 8)
-			//     .inputItems(finishedLamp)
-			//     .outputItems(new ItemStack[]{ChemicalHelper.get(TagPrefix.dust, outputMaterial), ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 4)})
-			//     .save(provider);
 			const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
 			const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
 			const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 4)
-			const unfinishedLampStack = ChemicalHelper.get(TagPrefix.getPrefix("lampUnfinished"), material, 1)
+			const unfinishedLampStack = ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1)
 
 			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_lamp`)
 				.itemInputs(finishedLampStack)
@@ -477,6 +467,12 @@ const registerGTCEURecipes = (event) => {
 				.duration(material.getMass() * 8)
 				.EUt(GTValues.VA[GTValues.ULV])
 
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_lamp`)
+				.inputFluids(Fluid.of(material.getFluid(), 144))
+				.notConsumable('tfg:lamp_casting_mold')
+				.itemOutputs(unfinishedLampStack)
+				.duration(material.getMass() * 8)
+				.EUt(GTValues.VA[GTValues.ULV])
 		}
 
 		if (trapdoorStack != null) {
@@ -492,6 +488,13 @@ const registerGTCEURecipes = (event) => {
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_trapdoor`)
 				.itemInputs(trapdoorStack)
 				.itemOutputs(materialIngotStack)
+				.duration(material.getMass() * 7)
+				.EUt(GTValues.VA[GTValues.ULV])
+
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_trapdoor`)
+				.inputFluids(Fluid.of(material.getFluid(), 144))
+				.notConsumable('tfg:trapdoor_casting_mold')
+				.itemOutputs(trapdoorStack)
 				.duration(material.getMass() * 7)
 				.EUt(GTValues.VA[GTValues.ULV])
 		}
@@ -511,6 +514,13 @@ const registerGTCEURecipes = (event) => {
 				.itemOutputs(materialNuggetStack)
 				.duration(material.getMass() * 3)
 				.EUt(GTValues.VA[GTValues.ULV])
+
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_chain`)
+				.inputFluids(Fluid.of(material.getFluid(), 144))
+				.notConsumable('tfg:chain_casting_mold')
+				.itemOutputs(chainStack)
+				.duration(material.getMass() * 3)
+				.EUt(GTValues.VA[GTValues.ULV])
 		}
 
 		if (bellStack != null) {
@@ -528,8 +538,14 @@ const registerGTCEURecipes = (event) => {
 				.itemOutputs(materialIngotStack)
 				.duration(material.getMass() * 5)
 				.EUt(GTValues.VA[GTValues.ULV])
-		}
 
+			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_bell`)
+				.inputFluids(Fluid.of(material.getFluid(), 144))
+				.notConsumable('tfg:bell_casting_mold')
+				.itemOutputs(bellStack)
+				.duration(material.getMass() * 5)
+				.EUt(GTValues.VA[GTValues.ULV])
+		}
 	})
 
 	//#region Выход: Удобрение
@@ -545,21 +561,6 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('4x gtceu:fertilizer')
 		.duration(300)
 		.EUt(30)
-
-	// В create миксере
-	//FIXME: GTCEU Create Mixer got removed and added by a 3rd party addon, kjs support is borked
-	/*event.recipes.gtceu.create_mixer('fertilizer')             
-		.itemInputs(
-			'#tfc:dirt',
-			'2x #tfg:wood_dusts',
-			'4x #forge:sand'
-		)
-		.circuit(1)
-		.inputFluids(Fluid.of('minecraft:water', 1000))
-		.itemOutputs('4x gtceu:fertilizer')
-		.duration(300)
-		.EUt(30)
-		.rpm(96)*/
 
 	//#endregion
 
@@ -1685,6 +1686,9 @@ const registerGTCEURecipes = (event) => {
 	// Удаление рецептов связанных с FireBrick
 	event.remove({ id: 'gtceu:smelting/fireclay_brick' })
 	event.remove({ id: 'gtceu:macerator/macerate_firebrick' })
+
+	// Clay from mud
+	event.remove({ id: 'gtceu:compressor/mud_to_clay' })
 
 	// TODO: Удалить после фикса GTCEu
 	event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })

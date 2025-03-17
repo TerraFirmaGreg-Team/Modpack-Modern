@@ -1,16 +1,16 @@
 // priority: 0
 
 const registerTFCTagPrefixes = (event) => {
-    const $TagKeyClazz = Java.loadClass('net.minecraft.tags.TagKey')
-    const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
-    const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+    //const $TagKeyClazz = Java.loadClass('net.minecraft.tags.TagKey')
+    //const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
+    //const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 
     // const $BlockBehavior = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour')
     // const $MapColor = Java.loadClass('net.minecraft.world.level.material.MapColor')
 
-    const createItemTag = (path) => {
-        return $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
-    }
+    //const createItemTag = (path) => {
+    //    return $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
+    //}
 
     TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
 
