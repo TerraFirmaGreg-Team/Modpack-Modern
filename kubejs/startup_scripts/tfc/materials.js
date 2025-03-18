@@ -27,6 +27,8 @@ const registerTFCMaterials = (event) => {
     registerOreMaterial('phyllite', 0x706B61)
     registerOreMaterial('schist', 0x6E735C)
     registerOreMaterial('gneiss', 0x6A6D60)
+
+    registerOreMaterial('dripstone', 0x927965)
     
     /* Specific Materials */
     event.create('tfg:latex')

@@ -869,6 +869,8 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Dripstone
 
 	event.remove({ id: 'minecraft:dripstone_block' })
+	event.remove({ id: 'gtceu:forge_hammer/pointed_dripstone_from_dripstone_block' })
+	event.remove({ id: 'gtceu:compressor/dripstone_block_from_pointed_dripstone' })
 
 	//#endregion
 

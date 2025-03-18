@@ -23,8 +23,5 @@ const registerTFGItems = (event) => {
     // #region Stone bricks and dusts
     event.create('tfg:brick/deepslate')
         .translationKey('item.tfg.brick.deepslate')
-
-    event.create('tfg:dust/dripstone')
-        .translationKey('item.tfg.dust.dripstone')
     // #endregion
 }

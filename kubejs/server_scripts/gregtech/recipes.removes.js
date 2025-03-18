@@ -94,6 +94,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:cutter/cut_deepslate_tile_into_slab_water' })
 	event.remove({ id: 'gtceu:cutter/cut_deepslate_tile_into_slab_distilled_water' })
 
+	event.remove({ id: 'gtceu:macerator/macerate_deepslate' })
 	event.remove({ id: 'gtceu:rock_breaker/deepslate' })
 
 	// #endregion

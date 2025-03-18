@@ -9,7 +9,8 @@ function registerTFGRockRecipes(event) {
 	const GLUEING_TOGETHER = [
 		{ loose: 'tfg:loose/deepslate', block: 'minecraft:cobbled_deepslate' },
 		{ loose: 'beneath:blackstone_pebble', block: 'minecraft:blackstone' },
-		{ loose: 'tfg:brick/deepslate', block: '4x minecraft:deepslate_bricks' }
+		{ loose: 'tfg:brick/deepslate', block: '4x minecraft:deepslate_bricks' },
+		{ loose: 'tfg:loose/dripstone', block: 'minecraft:dripstone_block' }
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
@@ -102,7 +103,8 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'minecraft:deepslate', hammered: 'minecraft:cobbled_deepslate' },
 		{ raw: 'minecraft:cobbled_deepslate', hammered: 'tfc:sand/black' },
 		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black' },
-		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink' }
+		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink' },
+		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown' }
 	]
 
 	HAMMERING.forEach(x => {
@@ -174,6 +176,13 @@ function registerTFGRockRecipes(event) {
 			event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
 			generateCutterRecipe(event, x.raw, 0, [x.stair, x.dust], 100, 8, `${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
 
+			event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
+				.itemInputs(x.stair)
+				.itemOutputs(x.dust)
+				.duration(150)
+				.EUt(2)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
 			if ("loose" in x) {
 				event.shapeless(`3x ${x.loose}`, [x.stair])
 			}
@@ -182,12 +191,26 @@ function registerTFGRockRecipes(event) {
 			event.recipes.tfc.chisel(x.slab, x.raw, 'slab')
 			generateCutterRecipe(event, x.raw, 1, [`2x ${x.slab}`, x.dust], 100, 8, `${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
 
+			event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
+				.itemInputs(`2x ${x.slab}`)
+				.itemOutputs(x.dust)
+				.duration(150)
+				.EUt(2)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
 			if ("loose" in x) {
 				event.shapeless(`2x ${x.loose}`, [x.slab])
 			}
 		}
 		if ("wall" in x) {
 			generateCutterRecipe(event, x.raw, 2, [x.wall, x.dust], 100, 8, `${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
+
+			event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
+				.itemInputs(x.wall)
+				.itemOutputs(x.dust)
+				.duration(150)
+				.EUt(2)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		}
 
 		if ("loose" in x) {
@@ -195,12 +218,27 @@ function registerTFGRockRecipes(event) {
 		}
 	})
 
+	const MACERATOR = [
+		{ block: 'minecraft:deepslate', dust: 'gtceu:deepslate_dust' },
+		{ block: 'minecraft:dripstone_block', dust: 'tfg:dripstone_dust' }
+	]
+
+	MACERATOR.forEach(x => {
+		event.recipes.gtceu.macerator(`macerate_${x.block}`.replace(/:/g, '_'))
+			.itemInputs(x.block)
+			.itemOutputs(x.dust)
+			.duration(150)
+			.EUt(2)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+	})
+
 	// rock breaker
 
 	const ROCK_DUPING = [
 		'minecraft:deepslate',
 		'minecraft:cobbled_deepslate',
-		'minecraft:blackstone'
+		'minecraft:blackstone',
+		'minecraft:dripstone_block'
 	]
 	
 	ROCK_DUPING.forEach(x => {

@@ -89,6 +89,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_stone_brick_slab', 
     'minecraft:end_stone_brick_wall',
 
+    // Dripstone
+    'minecraft:pointed_dripstone',
+
     // Сланец
     'minecraft:reinforced_deepslate',
 

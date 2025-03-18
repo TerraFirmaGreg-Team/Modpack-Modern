@@ -40,6 +40,9 @@ const registerGTCEUItemTags = (event) => {
     event.add('tfg:stone_dusts', 'gtceu:diorite_dust')
     event.add('tfg:stone_dusts', 'gtceu:andesite_dust')
     event.add('tfg:stone_dusts', 'gtceu:granite_dust')
+    event.add('tfg:stone_dusts', 'gtceu:deepslate_dust')
+    event.add('tfg:stone_dusts', 'gtceu:blackstone_dust')
+    event.add('tfg:stone_dusts', 'tfg:dripstone_dust')
 
     event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 
