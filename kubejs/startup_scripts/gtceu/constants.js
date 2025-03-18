@@ -7,8 +7,8 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:tiny_wheat_dust',
 
     // Bronze Machines
-    'gtceu:bronze_machine_casing',
-    'gtceu:steam_miner',
+    'gtceu:bronze_brick_casing',
+    'gtceu:lp_steam_miner',
     'gtceu:lp_steam_extractor',
     'gtceu:lp_steam_macerator',
     'gtceu:lp_steam_compressor',
@@ -16,9 +16,14 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:lp_steam_furnace',
     'gtceu:lp_steam_alloy_smelter',
     'gtceu:lp_steam_rock_crusher',
+    'gtceu:lp_steam_solid_boiler', 
+    'gtceu:lp_steam_liquid_boiler', 
+    'gtceu:lp_steam_solar_boiler',
+    'gtceu:charcoal_pile_igniter',
 
     // Примитивная помпа
     'gtceu:infinite_water_cover',
+    'gtceu:ender_fluid_link_cover',
     'gtceu:pump_deck', 
     'gtceu:pump_hatch', 
     'gtceu:primitive_pump',
@@ -30,6 +35,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:firebricks',
     'gtceu:wood_drum',
     'gtceu:primitive_blast_furnace',
+    'gtceu:hp_steam_miner',
     
     'gtceu:wood_screwdriver_tip',
     'gtceu:wood_wrench_tip',
@@ -44,9 +50,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 
-    'gtceu:rubber_planks',
-    
-    'gtceu:ender_fluid_link_cover'
+    'gtceu:rubber_planks'
 ];
 
 global.GTCEU_HIDED_ITEMS = [
