@@ -57,19 +57,7 @@ const registerTFCItemTags = (event) => {
     // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
     event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
 
-    // Определеяет какое оружие может появиться у зомбя/скелета в руках
-    // Мечи
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_sword')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_sword')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_sword')
-    // Топоры
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_axe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_axe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_axe')
-    // Косы
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_scythe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_scythe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_scythe')
+    event.remove('forge:dusts/sulfur', 'tfc:powder/sulfur');
 
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')

@@ -1,27 +1,16 @@
 // priority: 0
 
 const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_output, duration, EUt, rpm, id) => {
-    const recipe1 = event.recipes.gtceu.mixer(id)             
+    const recipe = event.recipes.gtceu.mixer(id)             
         .itemInputs(input)
         .inputFluids(fluid_input)
         .itemOutputs(output)
         .outputFluids(fluid_output)
         .duration(duration)
         .EUt(EUt)
-
-        //FIXME: GTCEU Create Mixer got removed and added by a 3rd party addon, KJS supported is borked
-    /*const recipe2 = event.recipes.gtceu.create_mixer(id)             
-        .itemInputs(input)
-        .inputFluids(fluid_input)
-        .itemOutputs(output)
-        .outputFluids(fluid_output)
-        .duration(duration)
-        .EUt(EUt)
-        .rpm(rpm)*/
 
     if (circuit != null) {
-        recipe1.circuit(circuit)
-        //recipe2.circuit(circuit)
+        recipe.circuit(circuit)
     }
 }
 
