@@ -53,12 +53,14 @@ function registerGTCEUMetalRecipes(event) {
 				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
-				.itemInputs(toolHeadItem)
-				.outputFluids(Fluid.of(material.getFluid(), 144))
-				.duration(material.getMass() * 6)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
+			if (GTMaterials.Stone != material) {
+				event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+					.itemInputs(toolHeadItem)
+					.outputFluids(Fluid.of(material.getFluid(), 144))
+					.duration(material.getMass() * 6)
+					.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+					.EUt(GTValues.VA[GTValues.ULV])
+			}
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
 
