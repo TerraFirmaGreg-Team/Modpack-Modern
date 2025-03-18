@@ -162,17 +162,16 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	GTMaterials.Titanium.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	//
+	
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
-	//
+	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
-	//
+	
 	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_SMALL_GEAR);
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
@@ -202,5 +201,15 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.BismuthBronze.setMaterialARGB(0x8CDCB6)
 	GTMaterials.BlackBronze.setMaterialARGB(0xB681CE)
-	// TODO: make zinc match create's color?
+	GTMaterials.RedSteel.setMaterialARGB(0xc8575d)
+	GTMaterials.RedSteel.setMaterialSecondaryARGB(0x560307)
+	GTMaterials.BlueSteel.setMaterialARGB(0x7a87b7)
+	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x283467)
+
+	GTMaterials.Iron.setMaterialARGB(0x503d32)
+	GTMaterials.Iron.setMaterialSecondaryARGB(0x131212)
+	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)
+	GTMaterials.IronMagnetic.setMaterialSecondaryARGB(0x131212)
+	GTMaterials.Zinc.setMaterialARGB(0xd6ffdc)
+	GTMaterials.Zinc.setMaterialSecondaryARGB(0x213b3f)
 }
