@@ -15,6 +15,7 @@ const registerTFCTagPrefixes = (event) => {
     TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
 
     TagPrefix.ORES.remove(TagPrefix.ore)
+    TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
     TagPrefix.ORES.remove(TagPrefix.oreTuff)
     TagPrefix.ORES.remove(TagPrefix.oreSand)
     TagPrefix.ORES.remove(TagPrefix.oreRedSand)
