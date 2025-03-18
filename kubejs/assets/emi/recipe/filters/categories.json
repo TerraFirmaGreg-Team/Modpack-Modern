@@ -37,6 +37,12 @@
             "category": "gtceu:ore_vein_diagram"
         },
         {
+            "category": "create:automatic_shaped"
+        },
+        {
+            "category": "create:automatic_shapeless"
+        },
+        {
             "id": "/emi:/crafting/repairing/[^*]+/"
         },
         {
