@@ -1490,17 +1490,17 @@ const registerTFCRecipes = (event) => {
 		.EUt(4)
 
 	const TFC_INTERMEDIATE_METALS =
-	[
-		{ metal: 'pig_iron', meltTemp: 1535 },
-		{ metal: 'high_carbon_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_black_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_red_steel', meltTemp: 1540 },
-		{ metal: 'high_carbon_blue_steel', meltTemp: 1540 },
-		{ metal: 'weak_steel', meltTemp: 1540 },
-		{ metal: 'weak_blue_steel', meltTemp: 1540 },
-		{ metal: 'weak_red_steel', meltTemp: 1540 },
-		{ metal: 'unknown', meltTemp: 400 }
-	]
+		[
+			{ metal: 'pig_iron', meltTemp: 1535 },
+			{ metal: 'high_carbon_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_black_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_red_steel', meltTemp: 1540 },
+			{ metal: 'high_carbon_blue_steel', meltTemp: 1540 },
+			{ metal: 'weak_steel', meltTemp: 1540 },
+			{ metal: 'weak_blue_steel', meltTemp: 1540 },
+			{ metal: 'weak_red_steel', meltTemp: 1540 },
+			{ metal: 'unknown', meltTemp: 400 }
+		]
 
 	TFC_INTERMEDIATE_METALS.forEach(x => {
 
@@ -1515,13 +1515,13 @@ const registerTFCRecipes = (event) => {
 			.id(`tfc:heating/metal/${x.metal}_ingot`)
 
 		event.recipes.create.filling(
-			Item.of('tfc:ceramic/ingot_mold', 
-			{
-				tank: {
-					FluidName: `tfc:metal/${x.metal}`,
-					Amount: 144
-				}
-			}),
+			Item.of('tfc:ceramic/ingot_mold',
+				{
+					tank: {
+						FluidName: `tfc:metal/${x.metal}`,
+						Amount: 144
+					}
+				}),
 			[
 				Fluid.of(`tfc:metal/${x.metal}`, 144),
 				Item.of('tfc:ceramic/ingot_mold').strongNBT()
@@ -1530,17 +1530,17 @@ const registerTFCRecipes = (event) => {
 
 		event.recipes.create.filling(
 			Item.of('tfc:ceramic/fire_ingot_mold',
-			{
-				tank: {
-					FluidName: `tfc:metal/${x.metal}`,
-					Amount: 144
-				}
-			}),
+				{
+					tank: {
+						FluidName: `tfc:metal/${x.metal}`,
+						Amount: 144
+					}
+				}),
 			[
 				Fluid.of(`tfc:metal/${x.metal}`, 144),
 				Item.of('tfc:ceramic/fire_ingot_mold').strongNBT()
 			]
-			).id(`tfg:tfc/filling/${x.metal}_fire_ingot`)
+		).id(`tfg:tfc/filling/${x.metal}_fire_ingot`)
 	})
 
 	//#endregion
@@ -2719,6 +2719,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:ceramic/unfired_vessel')
 		.duration(300)
 		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	event.recipes.gtceu.chemical_bath(`fired_vessel_decolor`)
 		.itemInputs('#tfg:colorized_fired_vessels')
@@ -2726,6 +2727,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:ceramic/vessel')
 		.duration(300)
 		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.recipes.gtceu.chemical_bath(`${dye}_unfired_vessel`)
@@ -2734,6 +2736,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:ceramic/${dye}_unfired_vessel`)
 			.duration(150)
 			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
 
 		event.recipes.gtceu.chemical_bath(`${dye}_vessel`)
 			.itemInputs('tfc:ceramic/vessel')
@@ -2741,6 +2744,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:ceramic/${dye}_glazed_vessel`)
 			.duration(150)
 			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
 	})
 
 	//#endregion
@@ -2753,6 +2757,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:ceramic/unfired_large_vessel')
 		.duration(300)
 		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	event.recipes.gtceu.chemical_bath(`fired_large_vessel_decolor`)
 		.itemInputs('#tfg:colorized_fired_large_vessels')
@@ -2760,6 +2765,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:ceramic/large_vessel')
 		.duration(300)
 		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.recipes.gtceu.chemical_bath(`${dye}_large_unfired_vessel`)
@@ -2768,6 +2774,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:ceramic/unfired_large_vessel/${dye}`)
 			.duration(150)
 			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
 
 		event.recipes.gtceu.chemical_bath(`${dye}_large_vessel`)
 			.itemInputs('tfc:ceramic/large_vessel')
@@ -2775,6 +2782,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:ceramic/large_vessel/${dye}`)
 			.duration(150)
 			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
 	})
 
 	//#endregion
@@ -3573,6 +3581,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:candle')
 		.duration(300)
 		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 
@@ -3582,6 +3591,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:candle/${dye}`)
 			.duration(300)
 			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
 
 	})
 
@@ -3612,6 +3622,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:alabaster/bricks')
 		.duration(400)
 		.EUt(2)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	for (let i = 0; i < 16; i++) {
 		event.recipes.gtceu.chemical_bath(`tfg:tfc/alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
@@ -3620,6 +3631,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
 			.duration(20)
 			.EUt(7)
+			.category(GTRecipeCategories.CHEM_DYES)
 	}
 
 	// Raw Alabaster
@@ -3650,6 +3662,7 @@ const registerTFCRecipes = (event) => {
 		.itemOutputs('tfc:alabaster/raw')
 		.duration(400)
 		.EUt(2)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	for (let i = 0; i < 16; i++) {
 		event.recipes.gtceu.chemical_bath(`tfg:tfc/alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)
@@ -3658,6 +3671,7 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(`tfc:alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)
 			.duration(20)
 			.EUt(7)
+			.category(GTRecipeCategories.CHEM_DYES)
 	}
 	//#endregion
 

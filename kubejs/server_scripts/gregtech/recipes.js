@@ -36,7 +36,22 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(ingotItem.copyWithCount(Math.floor(headTagPrefix.materialAmount() / GTValues.M)))
 				.notConsumable(extruderMold)
 				.itemOutputs(toolHeadItem)
-				.duration(12).EUt(32)
+				.duration(material.getMass() * 6)
+				.EUt(GTValues.VA[GTValues.LV])
+
+			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				.itemInputs(toolHeadItem)
+				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
+				.duration(material.getMass() * 6)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+				.EUt(GTValues.VA[GTValues.ULV])
+
+			event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				.itemInputs(toolHeadItem)
+				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
+				.duration(material.getMass() * 6)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+				.EUt(GTValues.VA[GTValues.LV])
 
 		} else if (material.hasProperty(PropertyKey.GEM)) {
 
@@ -48,7 +63,15 @@ const registerGTCEURecipes = (event) => {
 				.notConsumable(ChemicalHelper.get(TagPrefix.lens, GTMaterials.Glass, 1))
 				.circuit(cirucitMeta)
 				.itemOutputs(toolHeadItem)
-				.duration(12).EUt(32)
+				.duration(material.getMass() * 6)
+				.EUt(GTValues.VA[GTValues.LV])
+
+			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
+				.itemInputs(toolHeadItem)
+				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
+				.duration(material.getMass() * 6)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+				.EUt(GTValues.VA[GTValues.ULV])
 		}
 		// else: ignore :3
 	}
@@ -163,25 +186,30 @@ const registerGTCEURecipes = (event) => {
 		const doubleIngotStack = ChemicalHelper.get(tagPrefix, material, 1);
 		const dustStack = ChemicalHelper.get(TagPrefix.dust, material, 2);
 
-		if (!material.hasProperty(PropertyKey.FLUID)) {
-			console.log(`${material.getName()} has no related fluid`)
-			return
+		if (material.hasProperty(PropertyKey.FLUID)) {
+			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_double_ingot`)
+				.itemInputs(doubleIngotStack)
+				.outputFluids(Fluid.of(material.getFluid(), 288))
+				.duration(material.getMass())
+				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+				.EUt(GTValues.VA[GTValues.ULV])
 		}
 
-		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_double_ingot`)
-			.itemInputs(doubleIngotStack)
-			.outputFluids(Fluid.of(material.getFluid(), 288))
-			.duration(material.getMass())
-			.EUt(GTValues.VA[GTValues.ULV])
+		if (material.hasProperty(PropertyKey.DUST)) {
+			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_double_ingot`)
+				.itemInputs(doubleIngotStack)
+				.itemOutputs(dustStack)
+				.duration(material.getMass())
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
+				.EUt(GTValues.VA[GTValues.ULV])
+		}
 
-		if (!material.hasProperty(PropertyKey.DUST))
-			console.log(`${material.getName()} has no related dust`)
-
-		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_double_ingot`)
+		event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_double_ingot`)
 			.itemInputs(doubleIngotStack)
-			.itemOutputs(dustStack)
-			.duration(material.getMass())
-			.EUt(GTValues.VA[GTValues.ULV])
+			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
+			.duration(material.getMass() * 6)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
 	}
 
 	const processSmallOre = (tagPrefix, material) => {
@@ -194,6 +222,7 @@ const registerGTCEURecipes = (event) => {
 			.itemInputs(smallOre)
 			.itemOutputs(smallDust)
 			.duration(material.getMass())
+			.category(GTRecipeCategories.ORE_CRUSHING)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
@@ -207,6 +236,7 @@ const registerGTCEURecipes = (event) => {
 			.itemInputs(smallNativeOre)
 			.itemOutputs(smallDust)
 			.duration(material.getMass())
+			.category(GTRecipeCategories.ORE_CRUSHING)
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
@@ -406,12 +436,14 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(anvilStack)
 				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 14))
 				.duration(material.getMass() * 32)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_anvil`)
 				.itemInputs(anvilStack)
 				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
 				.duration(material.getMass() * 32)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
 
 			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_anvil`)
@@ -432,12 +464,14 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(finishedLampStack)
 				.itemOutputs([materialDustStack, glassDustStack])
 				.duration(material.getMass() * 8)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_lamp`)
 				.itemInputs(finishedLampStack)
 				.itemOutputs([materialIngotStack, glassDustStack])
 				.duration(material.getMass() * 8)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
 
 			event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp`)
@@ -459,12 +493,14 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(unfinishedLampStack)
 				.itemOutputs(materialDustStack)
 				.duration(material.getMass() * 8)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_unfinished_lamp`)
 				.itemInputs(unfinishedLampStack)
 				.itemOutputs([materialIngotStack, glassDustStack])
 				.duration(material.getMass() * 8)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
 
 			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_lamp`)
@@ -483,12 +519,14 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(trapdoorStack)
 				.itemOutputs(materialDustStack)
 				.duration(material.getMass() * 7)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_trapdoor`)
 				.itemInputs(trapdoorStack)
 				.itemOutputs(materialIngotStack)
 				.duration(material.getMass() * 7)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
 
 			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_trapdoor`)
@@ -507,12 +545,14 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(chainStack)
 				.itemOutputs(materialDustTinyStack)
 				.duration(material.getMass() * 3)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_chain`)
 				.itemInputs(chainStack)
 				.itemOutputs(materialNuggetStack)
 				.duration(material.getMass() * 3)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
 
 			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_chain`)
@@ -531,12 +571,14 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(bellStack)
 				.itemOutputs(materialDustStack)
 				.duration(material.getMass() * 5)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.LV])
 
 			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_bell`)
 				.itemInputs(bellStack)
 				.itemOutputs(materialIngotStack)
 				.duration(material.getMass() * 5)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
 
 			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_bell`)
@@ -2099,6 +2141,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('8x gtceu:wrought_iron_ingot', '3x gtceu:steel_ingot', '2x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_forge_hammer' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_forge_hammer')
@@ -2106,6 +2149,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('8x gtceu:iron_dust', '3x gtceu:steel_dust', '2x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.remove({ id: 'gtceu:arc_furnace/arc_hp_steam_extractor' })
 	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_extractor')
@@ -2113,6 +2157,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('7x gtceu:wrought_iron_ingot', '2x gtceu:steel_ingot', '3x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_extractor' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_extractor')
@@ -2120,6 +2165,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('7x gtceu:iron_dust', '2x gtceu:steel_dust', '3x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.remove({ id: 'gtceu:arc_furnace/arc_hp_steam_macerator' })
 	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_macerator')
@@ -2127,6 +2173,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('8x gtceu:wrought_iron_ingot', '3x gtceu:steel_ingot', '2x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_macerator' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_macerator')
@@ -2134,6 +2181,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('8x gtceu:iron_dust', '3x gtceu:steel_dust', '2x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.remove({ id: 'gtceu:arc_furnace/arc_hp_steam_compressor' })
 	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_compressor')
@@ -2141,6 +2189,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('7x gtceu:wrought_iron_ingot', '1x gtceu:steel_ingot', '5x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_compressor' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_compressor')
@@ -2148,6 +2197,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('7x gtceu:iron_dust', '1x gtceu:steel_dust', '5x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.remove({ id: 'gtceu:arc_furnace/arc_hp_steam_furnace' })
 	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_furnace')
@@ -2155,6 +2205,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('7x gtceu:wrought_iron_ingot', '2x gtceu:steel_ingot', '4x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_furnace' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_furnace')
@@ -2162,6 +2213,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('7x gtceu:iron_dust', '2x gtceu:steel_dust', '4x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.remove({ id: 'gtceu:arc_furnace/arc_hp_steam_alloy_smelter' })
 	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_alloy_smelter')
@@ -2169,6 +2221,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('11x gtceu:wrought_iron_ingot', '1x gtceu:steel_ingot', '1x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_alloy_smelter' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_alloy_smelter')
@@ -2176,6 +2229,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('11x gtceu:iron_dust', '1x gtceu:steel_dust', '1x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	event.remove({ id: 'gtceu:arc_furnace/arc_hp_steam_rock_crusher' })
 	event.recipes.gtceu.arc_furnace('tfg:arc_hp_steam_rock_crusher')
@@ -2183,6 +2237,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('10x gtceu:wrought_iron_ingot', '1x gtceu:steel_ingot', '2x gtceu:tin_alloy_ingot')
 		.duration(3310)
 		.EUt(30)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.remove({ id: 'gtceu:macerator/macerate_hp_steam_rock_crusher' })
 	event.recipes.gtceu.macerator('tfg:macerate_hp_steam_rock_crusher')
@@ -2190,6 +2245,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('10x gtceu:iron_dust', '1x gtceu:steel_dust', '2x gtceu:tin_alloy_dust', '12x gtceu:brick_dust')
 		.duration(3254)
 		.EUt(8)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
 
@@ -2400,6 +2456,7 @@ const registerGTCEURecipes = (event) => {
 				.chancedOutput(`gtceu:tiny_${metal}_dust`, 3750, 0)
 				.duration(108)
 				.EUt(8)
+				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 			event.remove(`gtceu:arc_furnace/arc_wood/hanging_sign/${metal}/${wood}`)
 			event.recipes.gtceu.arc_furnace(`gtceu:arc_furnace/macerate_wood/hanging_sign/${metal}/${wood}`)
@@ -2409,6 +2466,7 @@ const registerGTCEURecipes = (event) => {
 				.inputFluids(Fluid.of('gtceu:oxygen', 12))
 				.duration(12)
 				.EUt(30)
+				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		})
 	})
 	// #endregion

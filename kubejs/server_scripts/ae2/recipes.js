@@ -1539,6 +1539,7 @@ const registerAE2Recipes = (event) => {
         .itemOutputs('ae2:fluix_glass_cable')
         .duration(8)
         .EUt(480)
+        .category(GTRecipeCategories.CHEM_DYES)
     
     // Covered Cable
     event.recipes.gtceu.chemical_bath('ae2:fluix_covered_cable')
@@ -1580,6 +1581,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_GLASS_CABLES[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
 
         event.recipes.gtceu.chemical_bath(global.AE2_COVERED_CABLES[i] + '_dye')
             .itemInputs('ae2:fluix_covered_cable')
@@ -1587,6 +1589,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_COVERED_CABLES[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
 
         event.recipes.gtceu.chemical_bath(global.AE2_COVERED_DENSE_CABLES[i] + '_dye')
             .itemInputs('ae2:fluix_covered_dense_cable')
@@ -1594,6 +1597,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_COVERED_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
 
         event.recipes.gtceu.chemical_bath(global.AE2_SMART_CABLES[i] + '_dye')
             .itemInputs('ae2:fluix_smart_cable')
@@ -1601,6 +1605,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_SMART_CABLES[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
 
         event.recipes.gtceu.chemical_bath(global.AE2_SMART_DENSE_CABLES[i] + '_dye')
             .itemInputs('ae2:fluix_smart_dense_cable')
@@ -1608,6 +1613,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_SMART_DENSE_CABLES[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
 
         // Paint Balls
         event.recipes.gtceu.chemical_bath(global.AE2_PAINTBALLS[i] + '_dye')
@@ -1616,6 +1622,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_PAINTBALLS[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
 
         // Lumen Paint Ball
         event.recipes.gtceu.chemical_bath(global.AE2_LUMEN_PAINTBALLS[i] + '_gtceu_dye')
@@ -1624,6 +1631,7 @@ const registerAE2Recipes = (event) => {
             .itemOutputs(global.AE2_LUMEN_PAINTBALLS[i])
             .duration(20)
             .EUt(7)
+            .category(GTRecipeCategories.CHEM_DYES)
     };
 
     // Inscriber Silicon Press

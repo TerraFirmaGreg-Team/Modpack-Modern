@@ -5,6 +5,8 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:collapse/basalt' })
 	event.remove({ id: 'beneath:collapse/nether_bricks' })
 
+	event.remove({ id: 'beneath:crafting/ancient_altar' })
+
 
 	event.remove({ id: 'beneath:crafting/agonizing_fertilizer' })
 	// TODO: add new one

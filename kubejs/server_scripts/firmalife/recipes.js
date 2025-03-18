@@ -61,6 +61,9 @@ const registerFirmaLifeRecipes = (event) => {
     event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
     event.remove({ id: 'firmalife:heating/metal/stainless_steel_rod' })
 
+    // Jar lid
+    event.remove({ id: 'firmalife:heating/metal/stainless_steel_jar_lid' })
+
     //#endregion
 
     // Декрафт Jag Lid

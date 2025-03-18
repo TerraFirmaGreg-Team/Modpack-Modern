@@ -1145,6 +1145,7 @@ const registerCreateRecipes = (event) => {
         .itemOutputs('create:copper_valve_handle')
         .duration(150)
         .EUt(4)
+        .category(GTRecipeCategories.CHEM_DYES)
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.recipes.tfc.barrel_sealed(1000)
@@ -1158,6 +1159,7 @@ const registerCreateRecipes = (event) => {
             .itemOutputs(`create:${dye}_valve_handle`)
             .duration(300)
             .EUt(4)
+            .category(GTRecipeCategories.CHEM_DYES)
     })
 
     //#endregion
@@ -1179,6 +1181,7 @@ const registerCreateRecipes = (event) => {
                 .itemOutputs(`create:${dye}_toolbox`)
                 .duration(200)
                 .EUt(4)
+                .category(GTRecipeCategories.CHEM_DYES)
         }
         
     })
@@ -1198,6 +1201,7 @@ const registerCreateRecipes = (event) => {
         .itemOutputs('create:white_seat')
         .duration(200)
         .EUt(4)
+        .category(GTRecipeCategories.CHEM_DYES)
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         if (dye != "white") {
@@ -1213,6 +1217,7 @@ const registerCreateRecipes = (event) => {
                 .itemOutputs(`create:${dye}_seat`)
                 .duration(300)
                 .EUt(4)
+                .category(GTRecipeCategories.CHEM_DYES)
         }
     })
 
