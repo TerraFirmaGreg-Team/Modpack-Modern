@@ -455,4 +455,47 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:macerator/macerate_steam_miner_steel' })
 
 	// #endregion
+
+	
+	//#region Выход: некоторые рецепты пылей
+
+	event.remove({ id: 'gtceu:shapeless/dust_brass' })
+	event.remove({ id: 'gtceu:shapeless/glass_dust_flint' })
+	event.remove({ id: 'gtceu:shapeless/dust_bronze' })
+	event.remove({ id: 'gtceu:shapeless/potin_dust' })
+
+	//#endregion
+
+	// Удаление рецептов связанных с Primitive Blast Furnace
+	event.remove({ id: 'gtceu:arc_furnace/arc_primitive_blast_furnace' })
+	event.remove({ id: 'gtceu:macerator/macerate_primitive_blast_furnace' })
+
+	// Удаление рецепта беск. воды кавера
+	event.remove('gtceu:assembler/cover_infinite_water')
+
+	// Удаление рецептов помпы
+	event.remove('gtceu:shaped/pump_deck')
+	event.remove('gtceu:shaped/pump_hatch')
+	event.remove('gtceu:shaped/primitive_pump')
+
+	// Удаление рецептов связанных с Barrel
+	event.remove({ id: 'gtceu:shaped/wooden_barrel' })
+	event.remove({ id: 'gtceu:assembler/wood_barrel' })
+	event.remove({ id: 'gtceu:arc_furnace/arc_wood_drum' })
+	event.remove({ id: 'gtceu:macerator/macerate_wood_drum' })
+
+	// Удаление рецептов связанных с FireBricks
+	event.remove({ id: 'gtceu:shaped/casing_primitive_bricks' })
+	event.remove({ id: 'gtceu:macerator/macerate_firebricks' })
+	event.remove({ id: 'gtceu:extractor/extract_primitive_bricks' })
+
+	// Удаление рецептов связанных с FireBrick
+	event.remove({ id: 'gtceu:smelting/fireclay_brick' })
+	event.remove({ id: 'gtceu:macerator/macerate_firebrick' })
+
+	// Clay from mud
+	event.remove({ id: 'gtceu:compressor/mud_to_clay' })
+
+	// TODO: Удалить после фикса GTCEu
+	event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
 }

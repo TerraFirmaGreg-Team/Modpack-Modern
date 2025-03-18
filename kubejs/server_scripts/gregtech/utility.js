@@ -87,3 +87,12 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
         .duration(16000)
         .EUt(256)
 }
+
+const getFillingNBT = (material, amount) => {
+	return {
+		tank: {
+			FluidName: Fluid.of(material.getFluid()).getId(),
+			Amount: amount
+		}
+	}
+}
