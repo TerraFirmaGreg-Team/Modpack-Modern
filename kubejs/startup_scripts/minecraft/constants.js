@@ -654,7 +654,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_portal_frame', 
     'minecraft:mushroom_stew', 
     'minecraft:structure_void',
-    'minecraft:lectern', 
     'minecraft:sea_pickle',
     'minecraft:apple',
     'minecraft:soul_torch', 

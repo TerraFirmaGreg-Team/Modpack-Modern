@@ -1692,12 +1692,6 @@ function removeMinecraftRecipes(event) {
 
 	//#endregion
 
-	//#region Выход: Трибуна
-
-	event.remove({ id: 'tfc:crafting/vanilla/lectern' })
-
-	//#endregion
-
 	//#region Выход: Золотое яблоко
 
 	event.remove({ id: 'minecraft:golden_apple' })

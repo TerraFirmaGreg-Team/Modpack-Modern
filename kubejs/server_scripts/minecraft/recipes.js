@@ -248,7 +248,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.canner('jack_o_lantern')
 		.itemInputs('tfc:pumpkin')
-		.itemOutputs('minecraft:jack_o_lantern')
+		.itemOutputs('tfc:jack_o_lantern')
 		.duration(100)
 		.EUt(4)
 
@@ -649,14 +649,19 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Ведро
 
-	//event.replaceInput({ id: 'gtceu:shaped/iron_bucket' })
-
 	event.recipes.tfc.welding('minecraft:bucket', 'tfc:metal/bucket/red_steel', 'tfc:metal/bucket/blue_steel', 6)
 		.id('tfg:anvil/vanilla_bucket')
 
 	event.recipes.gtceu.assembler('tfg:vanilla/bucket')
 		.itemInputs('#forge:plates/red_steel', '#forge:plates/blue_steel')
 		.circuit(6)
+		.itemOutputs('minecraft:bucket')
+		.duration(100)
+		.EUt(16)
+
+	event.recipes.gtceu.assembler('tfg:vanilla/bucket2')
+		.itemInputs('2x #forge:plates/stainless_steel')
+		.circuit(7)
 		.itemOutputs('minecraft:bucket')
 		.duration(100)
 		.EUt(16)
