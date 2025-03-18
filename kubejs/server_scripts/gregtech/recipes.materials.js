@@ -676,7 +676,10 @@ function registerGTCEUMetalRecipes(event) {
 				.EUt(GTValues.VA[GTValues.ULV])
 		}
 
-		event.replaceInput({ id: `gtceu:shaped/${material.getName()}_surface_indicator`},
-			'minecraft:gravel', '#tfc:rock/gravel')
+		// Indicators
+		if (oreProperty != null) {
+			event.replaceInput({ id: `gtceu:shaped/${material.getName()}_surface_indicator`},
+				'minecraft:gravel', '#tfc:rock/gravel')
+		}
 	})
 }
