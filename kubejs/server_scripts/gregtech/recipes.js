@@ -893,25 +893,10 @@ const registerGTCEURecipes = (event) => {
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rose_gold' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rose_gold_gas' })
 
-	event.recipes.gtceu.electric_furnace('tfg:bismuth_bronze_dust_to_ingot')
-		.itemInputs('gtceu:bismuth_bronze_dust')
-		.itemOutputs('gtceu:bismuth_bronze_ingot')
-		.duration(200)
-
-	event.recipes.gtceu.electric_furnace('tfg:black_bronze_dust_to_ingot')
-		.itemInputs('gtceu:black_bronze_dust')
-		.itemOutputs('gtceu:black_bronze_ingot')
-		.duration(200)
-
-	event.recipes.gtceu.electric_furnace('tfg:sterling_silver_dust_to_ingot')
-		.itemInputs('gtceu:sterling_silver_dust')
-		.itemOutputs('gtceu:sterling_silver_ingot')
-		.duration(300)
-
-	event.recipes.gtceu.electric_furnace('tfg:rose_gold_dust_to_ingot')
-		.itemInputs('gtceu:rose_gold_dust')
-		.itemOutputs('gtceu:rose_gold_ingot')
-		.duration(300)
+	event.smelting('gtceu:bismuth_bronze_ingot', 'gtceu:bismuth_bronze_dust')
+	event.smelting('gtceu:black_bronze_ingot', 'gtceu:black_bronze_dust')
+	event.smelting('gtceu:sterling_silver_ingot', 'gtceu:sterling_silver_dust')
+	event.smelting('gtceu:rose_gold_ingot', 'gtceu:rose_gold_dust')
 
 	//#endregion
 
