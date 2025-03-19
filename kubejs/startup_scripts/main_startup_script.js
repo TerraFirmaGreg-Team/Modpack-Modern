@@ -74,21 +74,3 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.materialModification(event => {
     registerGTCEuMaterialModification(event)
 })
-
-StartupEvents.postInit(event => {
-})
-
-
-/**
- * Событие регистрации иконок тэг префиксов.
-*/
-GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-    //
-})
-
-/**
- * Событие регистрации типов иконок тэг префиксов.
-*/
-GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
-    //registerGTCEuMaterialIconTypes(event)
-})
