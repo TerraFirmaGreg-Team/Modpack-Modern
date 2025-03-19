@@ -1,0 +1,82 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:blackstone"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:bush_foliage_placer",
+			"height": 0,
+			"offset": 0,
+			"radius": 0
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "minecraft:air"
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": true,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 1,
+			"lower_size": 0,
+			"upper_size": 2
+		},
+		"trunk_placer": {
+			"type": "minecraft:cherry_trunk_placer",
+			"base_height": 7,
+			"branch_count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"data": 1,
+						"weight": 2
+					},
+					{
+						"data": 2,
+						"weight": 1
+					},
+					{
+						"data": 3,
+						"weight": 3
+					}
+				]
+			},
+			"branch_end_offset_from_top": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 0,
+					"min_inclusive": -1
+				}
+			},
+			"branch_horizontal_length": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 4,
+					"min_inclusive": 2
+				}
+			},
+			"branch_start_offset_from_top": {
+				"max_inclusive": -3,
+				"min_inclusive": -4
+			},
+			"height_rand_a": 1,
+			"height_rand_b": 0
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfg:charred_log",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		}
+	}
+}

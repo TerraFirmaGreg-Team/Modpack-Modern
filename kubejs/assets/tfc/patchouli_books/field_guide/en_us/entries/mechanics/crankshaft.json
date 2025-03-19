@@ -1,0 +1,12 @@
+{
+	"name": "Crankshafts",
+	"category": "tfc:mechanics",
+	"icon": "tfc:crankshaft",
+	"read_by_default": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "TFC's own mechanical power system is disabled in favour of $(l:tfg_tips/create)Create$()."
+		}
+	]
+}

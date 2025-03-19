@@ -1,0 +1,190 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 150,
+		"density": 0.4,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_quartz",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"minecraft:soul_soil",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:deepslate_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:deepslate_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:pyroxenite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:pyroxenite_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:basalt_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dripstone_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:dripstone_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:granite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:granite_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:diorite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:diorite_barite_ore",
+						"weight": 25
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:gabbro_barite_ore",
+						"weight": 25
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:barite_indicator",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/small_nether_quartz_bud",
+					"weight": 35
+				},
+				{
+					"block": "tfg:buds/medium_nether_quartz_bud",
+					"weight": 20
+				},
+				{
+					"block": "tfg:buds/large_nether_quartz_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/small_quartzite_bud",
+					"weight": 30
+				},
+				{
+					"block": "tfg:buds/medium_quartzite_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/large_quartzite_bud",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

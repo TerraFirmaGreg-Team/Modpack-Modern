@@ -40,6 +40,9 @@ const registerGTCEUItemTags = (event) => {
     event.add('tfg:stone_dusts', 'gtceu:diorite_dust')
     event.add('tfg:stone_dusts', 'gtceu:andesite_dust')
     event.add('tfg:stone_dusts', 'gtceu:granite_dust')
+    event.add('tfg:stone_dusts', 'gtceu:deepslate_dust')
+    event.add('tfg:stone_dusts', 'gtceu:blackstone_dust')
+    event.add('tfg:stone_dusts', 'tfg:dripstone_dust')
 
     event.add('tfg:stone_dusts', 'gtceu:stone_dust')
 
@@ -53,5 +56,18 @@ const registerGTCEUBlockTags = (event) => {
     // Удаление тегов у отключенных предметов
     global.GTCEU_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
+    })
+
+
+    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+        const oreProperty = material.getProperty(PropertyKey.ORE)
+
+        if (oreProperty != null) {
+            let indicator = `gtceu:${material.getName()}_indicator`;
+
+            event.add('tfg:dust_ore_indicators', indicator)
+            event.add('tfc:can_be_snow_piled', indicator)
+            event.add('tfc:can_be_ice_piled', indicator)
+        }
     })
 }

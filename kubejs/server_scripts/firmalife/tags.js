@@ -34,7 +34,6 @@ const registerFirmaLifeFluidTags = (event) => {
     
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'firmalife:metal/chromium')
-    event.add('c:hidden_from_recipe_viewers', 'create:honey')
 }
 
 const registerFirmaLifePlacedFeatures = (event) => {

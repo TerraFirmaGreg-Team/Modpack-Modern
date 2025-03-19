@@ -1,4 +1,4 @@
-// priority: 1
+// priority: 0
 
 /**
  * Событие регистрации предметов.
@@ -50,12 +50,22 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     registerGTCEuMachines(event)
 })
 
+/**
+ * Событие регистрации тэг префиксов.
+*/
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    registerAE2TagPrefixes(event)
+    registerTFCTagPrefixes(event)
+    registerGTCEuTagPrefixes(event)
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     registerAE2Materials(event)
     registerTFCMaterials(event)
     registerGTCEuMaterials(event)
   
     registerTFGMaterials(event)
+    registerGTCEuMaterials(event)
 })
 
 /**
@@ -65,13 +75,9 @@ GTCEuStartupEvents.materialModification(event => {
     registerGTCEuMaterialModification(event)
 })
 
-/**
- * Событие регистрации тэг префиксов.
-*/
-GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-    registerGTCEuTagPrefixes(event)
-    registerTFCTagPrefixes(event)
+StartupEvents.postInit(event => {
 })
+
 
 /**
  * Событие регистрации иконок тэг префиксов.

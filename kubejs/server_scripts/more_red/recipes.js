@@ -257,6 +257,7 @@ const registerMoreRedRecipes = (event) => {
         .itemOutputs('morered:red_alloy_wire')
         .duration(300)
         .EUt(4)
+        .category(GTRecipeCategories.CHEM_DYES)
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
@@ -266,6 +267,7 @@ const registerMoreRedRecipes = (event) => {
             .itemOutputs(`morered:${dye}_network_cable`)
             .duration(300)
             .EUt(4)
+            .category(GTRecipeCategories.CHEM_DYES)
 
     })
 

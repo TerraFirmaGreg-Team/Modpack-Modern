@@ -1,0 +1,24 @@
+{
+	"feature": "tfg:nether/surface/mushroom_sprouts",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 32
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 120
+				},
+				"min_inclusive": {
+					"above_bottom": 42
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

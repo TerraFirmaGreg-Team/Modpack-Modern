@@ -7,6 +7,9 @@ const registerFirmaCivRecipes = (event) => {
     event.remove({ id: '/firmaciv:quern/' })
     event.remove({ id: 'firmaciv:anvil/copper_bolt' })
     event.remove({ id: 'firmaciv:crafting/watercraft_frame_angled_2' }) // Как же меня заебал разраб со своими кривыми руками
+    event.remove("firmaciv:heating/cleat")
+    event.remove("firmaciv:heating/oarlock")
+    event.remove("firmaciv:heating/cannonball")
 
     //#endregion
 
@@ -87,55 +90,6 @@ const registerFirmaCivRecipes = (event) => {
         .EUt(4)
     //#endregion
 
-    //#region Oarlock
-    event.recipes.gtceu.assembler('tfg:firmaciv/oarlock')             
-        .itemInputs('#forge:double_plates/wrought_iron')
-        .circuit(13)
-        .itemOutputs('firmaciv:oarlock')
-        .duration(75)
-        .EUt(4)
-
-    event.recipes.tfc.heating('firmaciv:oarlock', 1535)
-        .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`firmaciv:heating/oarlock`)
-    //#endregion
-
-    //#region Cleat
-    event.recipes.gtceu.assembler('tfg:firmaciv/cleat')             
-        .itemInputs('#forge:double_plates/steel')
-        .circuit(14)
-        .itemOutputs('firmaciv:cleat')
-        .duration(75)
-        .EUt(4)
-
-    event.recipes.tfc.heating('firmaciv:cleat', 1535)
-        .resultFluid(Fluid.of('gtceu:steel', 288))
-        .id(`firmaciv:heating/cleat`)
-    //#endregion
-
-    //#region Anchor
-    event.recipes.gtceu.assembler('tfg:firmaciv/anchor')             
-        .itemInputs('#forge:double_plates/steel')
-        .circuit(10)
-        .itemOutputs('firmaciv:anchor')
-        .duration(75)
-        .EUt(4)
-
-    event.recipes.tfc.heating('firmaciv:anchor', 1535)
-        .resultFluid(Fluid.of('gtceu:steel', 288))
-        .id(`firmaciv:heating/anchor`)
-
-    event.replaceOutput( 
-        'gtceu:arc_furnace/arc_anchor',
-        'gtceu:steel_ingot',
-        '2x gtceu:steel_ingot')     
-    
-    event.replaceOutput(
-        'gtceu:macerator/macerate_anchor',
-        'gtceu:steel_dust',
-        '2x gtceu:steel_dust')
-    //#endregion
-
     //#region Cannon Barrel
     event.recipes.gtceu.assembler('tfg:firmaciv/cannon_barrel')             
         .itemInputs('#forge:double_plates/wrought_iron')
@@ -149,18 +103,6 @@ const registerFirmaCivRecipes = (event) => {
         .id(`firmaciv:heating/cannon_barrel`)
     //#endregion
 
-    //#region Cannonball
-    event.recipes.gtceu.assembler('tfg:firmaciv/cannonball')             
-        .itemInputs('#forge:double_plates/wrought_iron')
-        .circuit(12)
-        .itemOutputs('firmaciv:cannonball')
-        .duration(75)
-        .EUt(4)
-
-    event.recipes.tfc.heating('firmaciv:cannonball', 1535)
-        .resultFluid(Fluid.of('gtceu:iron', 288))
-        .id(`firmaciv:heating/cannonball`)
-
     event.replaceOutput(
         'gtceu:arc_furnace/arc_cannon_barrel',
         'gtceu:wrought_iron_ingot',
@@ -170,7 +112,6 @@ const registerFirmaCivRecipes = (event) => {
         'gtceu:macerator/macerate_cannon_barrel',
         'gtceu:iron_dust',
         '2x gtceu:iron_dust')
-    //#endregion
 
     //#region Cannon
     event.recipes.tfc.heating('firmaciv:cannon', 1535)

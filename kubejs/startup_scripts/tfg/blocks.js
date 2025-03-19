@@ -1,8 +1,5 @@
-// priority: 0
 
 const registerTFGBlocks = (event) => {
-
-	//#region Artificial End Portal Frame
 	
 	event.create('tfg:artificial_end_portal_frame')
 		.stoneSoundType()
@@ -12,12 +9,115 @@ const registerTFGBlocks = (event) => {
 		.item(item => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
-	
-	//#endregion
+		
+	const $ClusterBlock = Java.loadClass('net.minecraft.world.level.block.AmethystClusterBlock')
+	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
+	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 
-	//#region Gem Indicators
+	// #region Nether blocks
+
+	event.create('tfg:rock/hardened_deepslate')
+		.soundType('deepslate')
+		.property(BlockProperties.AXIS)
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/deepslate' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_grey')
+		.fullBlock(true)
+		.opaque(true)
+		
+	event.create('tfg:rock/hardened_blackstone')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/blackstone' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta_grey')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/hardened_dripstone')
+		.soundType('dripstone_block')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/dripstone_block' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.mapColor('terracotta')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:spike/dripstone_spike', 'tfc:rock_spike')
+		.soundType('dripstone_block')
+		.noItem()
+
+	event.create('tfg:spike/deepslate_spike', 'tfc:rock_spike')
+		.soundType('deepslate')
+		.noItem()
+
+	event.create('tfg:spike/blackstone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:loose/deepslate', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/deepslate')
+		.rockTypeModel('metamorphic')
+		.soundType('deepslate')
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem('tfc:metamorphic_rock')
+
+	event.create('tfg:loose/dripstone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/dripstone')
+		.rockTypeModel('sedimentary')
+		.soundType('dripstone_block')
+		.tagBlock('tfc:loose_rocks')
+		.tagItem('tfc:any_knapping')
+		.tagItem('tfc:rock_knapping')
+		.tagItem('tfc:sedimentary_rock')
+
+
+	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
+
+	event.createCustom('tfg:mushroom_roots', () => new $SproutsBlock($Properties.copy($Blocks.WARPED_ROOTS)))
+	event.createCustom('tfg:mushroom_sprouts', () => new $SproutsBlock($Properties.copy($Blocks.NETHER_SPROUTS)))
 	
-	const GEM_INDICATORS = [
+	event.create('tfg:ash_pile')
+		.box(0, 0, 0, 16, 2, 16, true)
+		.fullBlock(false)
+		.noCollision()
+		.property(BlockProperties.LAYERS)
+		.sandSoundType()
+		.tagBoth('minecraft:mineable/shovel')
+		.tagBoth('tfc:can_collapse')
+		.hardness(0.5)
+		.mapColor('grey')
+		.speedFactor(0.7)
+
+	event.create('tfg:charred_log')
+		.fullBlock(true)
+		.woodSoundType()
+		.property(BlockProperties.AXIS)
+		.tagBoth('minecraft:mineable/axe')
+		.mapColor('black')
+
+	// #endregion
+	
+	// #region Gem indicators
+	
+	const GEM_INDICATORS = 
+	[
 		[ 'almandine', 0x991616 ],
 		[ 'andradite', 0xfbcb25 ],
 		[ 'blue_topaz', 0xd8fafb ],
@@ -49,15 +149,13 @@ const registerTFGBlocks = (event) => {
 		// skip coal, coke, salt, rock salt, certus, malachite, glass, and amethyst
 	]
 
-	const $ClusterBlock = Java.loadClass('net.minecraft.world.level.block.AmethystClusterBlock')
-	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
-	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 	
-	GEM_INDICATORS.forEach(gem => {
+	GEM_INDICATORS.forEach(gem => 
+	{
 		event.createCustom(`tfg:buds/small_${gem[0]}_bud`,  () => new $ClusterBlock(3, 4, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 		event.createCustom(`tfg:buds/medium_${gem[0]}_bud`, () => new $ClusterBlock(4, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 		event.createCustom(`tfg:buds/large_${gem[0]}_bud`,  () => new $ClusterBlock(5, 3, $Properties.copy($Blocks.AMETHYST_CLUSTER)))
 	})
-	
-	//#endregion	
+
+	// #endregion
 }
