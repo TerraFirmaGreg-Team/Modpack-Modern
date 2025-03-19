@@ -107,7 +107,11 @@ function registerGTCEUMetalRecipes(event) {
 	const processIngot = (tagPrefix, material) => {
 		const ingotStack = ChemicalHelper.get(tagPrefix, material, 1)
 
-		if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && material != GTMaterials.Wood && material != GTMaterials.TreatedWood && !material.hasProperty(PropertyKey.POLYMER)) {
+		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
+			&& material != GTMaterials.Wood
+			&& material != GTMaterials.TreatedWood 
+			&& !material.hasProperty(PropertyKey.POLYMER))
+		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
 			const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
 			let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
@@ -193,7 +197,6 @@ function registerGTCEUMetalRecipes(event) {
 		if (!material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) return;
 
 		const doubleIngotStack = ChemicalHelper.get(tagPrefix, material, 1);
-		const dustStack = ChemicalHelper.get(TagPrefix.dust, material, 2);
 
 		if (material.hasProperty(PropertyKey.FLUID)) {
 			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_double_ingot`)
@@ -207,7 +210,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (material.hasProperty(PropertyKey.DUST)) {
 			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_double_ingot`)
 				.itemInputs(doubleIngotStack)
-				.itemOutputs(dustStack)
+				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 2))
 				.duration(material.getMass())
 				.category(GTRecipeCategories.MACERATOR_RECYCLING)
 				.EUt(GTValues.VA[GTValues.ULV])
@@ -215,7 +218,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_double_ingot`)
 			.itemInputs(doubleIngotStack)
-			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1))
+			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 2))
 			.duration(material.getMass() * 6)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
@@ -296,7 +299,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (pureDustItem.isEmpty()) return
 
 		// Дробленная руда -> Очищенная руда (90%)
-		event.recipes.createSplashing(pureDustItem.withChance(0.9), crushedDustItem)
+		event.recipes.createSplashing(pureDustItem, crushedDustItem)
 			.id(`tfg:splashing/${material.getName()}_purified_ore`)
 
 		// Дробленная руда -> Очищенная руда
@@ -321,7 +324,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (dustItem.isEmpty()) return
 
 		// Грязная пыль -> Пыль (90%)
-		event.recipes.createSplashing(dustItem.withChance(0.9), impureDustItem)
+		event.recipes.createSplashing(dustItem, impureDustItem)
 			.id(`tfg:splashing/${material.getName()}_dust_from_impure`)
 
 		// Грязная пыль -> Пыль
@@ -346,7 +349,7 @@ function registerGTCEUMetalRecipes(event) {
 		if (dustItem.isEmpty()) return
 
 		// Очищенная пыль -> Пыль (90%)
-		event.recipes.createSplashing(dustItem.withChance(0.9), pureDust)
+		event.recipes.createSplashing(dustItem, pureDust)
 			.id(`tfg:splashing/${material.getName()}_dust_from_pure`)
 
 		// Очищенная пыль -> Пыль
