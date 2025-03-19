@@ -934,7 +934,7 @@ const registerMinecraftRecipes = (event) => {
 		'CDC' 
 	], {
 		A: '#forge:screws/blue_steel',
-		B: 'tfc:metal/leggings/blue_steel',
+		B: 'tfc:metal/greaves/blue_steel',
 		C: '#forge:plates/blue_steel',
 		D: 'beneath:cursed_hide'
 	}).id('tfg:minecraft/shaped/netherite_leggings')
