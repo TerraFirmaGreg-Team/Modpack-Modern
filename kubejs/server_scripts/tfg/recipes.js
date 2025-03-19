@@ -5,4 +5,5 @@ const registerTFGRecipes = (event) => {
 	registerTFGRockRecipes(event)
 	registerTFGCollapseRecipes(event)
 	registerTFGMoldRecipes(event)
+	registerTFGTerrariumRecipes(event)
 }

@@ -1,13 +1,9 @@
-ServerEvents.recipes(event => {
+// priority: 0
+
+function registerTFGTerrariumRecipes(event) {
 	
 	event.remove({ id: 'gtceu:gas_collector/nether_air' })
-	event.remove({ id: 'minecraft:netherite_upgrade_smithing_template' })
 	event.remove({ id: 'gtceu:gas_collector/ender_air' })
-	event.remove({ id: 'gtceu:macerator/macerate_end_stone' })
-	event.remove({ id: 'minecraft:ender_chest' })
-	event.remove({ id: 'gtceu:assembler/ender_chest' })
-	event.remove({ id: 'minecraft:end_crystal' })
-	event.remove({ id: 'gtceu:assembler/end_crystal' })
 	
 	// nether slurry
 	
@@ -52,17 +48,17 @@ ServerEvents.recipes(event => {
 	// netherarium
 	
 	event.shaped('gtceu:nether_dome', [
-        'ADA',
-        'CEC',
-        'FBF' 
-    ], {
-        A: 'minecraft:quartz',
+		'ADA',
+		'CEC',
+		'FBF' 
+	], {
+		A: 'minecraft:quartz',
 		B: 'minecraft:gold_block',
-        C: 'minecraft:blaze_rod',
+		C: 'minecraft:blaze_rod',
 		D: 'gtceu:hv_emitter',
-        E: 'gtceu:hv_gas_collector',
+		E: 'gtceu:hv_gas_collector',
 		F: 'gtceu:dense_obsidian_plate'
-    }).id('tfg:shaped/nether_dome2')
+	}).id('tfg:shaped/nether_dome2')
 	
 	// netherrack
 	
@@ -82,13 +78,13 @@ ServerEvents.recipes(event => {
 	// nether bricks
 		
 	event.shaped('4x minecraft:nether_bricks', [
-        'ABA',
-        'BAB',
-        'ABA' 
-    ], {
-        A: 'minecraft:nether_brick',
-        B: 'tfc:mortar'
-    }).id('tfg:shaped/nether_bricks')
+		'ABA',
+		'BAB',
+		'ABA' 
+	], {
+		A: 'minecraft:nether_brick',
+		B: 'tfc:mortar'
+	}).id('tfg:shaped/nether_bricks')
 	
 	event.recipes.gtceu.assembler('tfg:nether_bricks')
 		.itemInputs('5x minecraft:nether_brick')
@@ -140,29 +136,29 @@ ServerEvents.recipes(event => {
 	// enderarium
 	
 	event.shaped('gtceu:end_dome', [
-        'DAD',
-        'CEC',
-        'FBF' 
-    ], {
-        A: 'gtceu:ev_emitter',
+		'DAD',
+		'CEC',
+		'FBF' 
+	], {
+		A: 'gtceu:ev_emitter',
 		B: 'minecraft:end_stone',
-        C: 'tfc:metal/bars/wrought_iron',
+		C: 'tfc:metal/bars/wrought_iron',
 		D: 'minecraft:end_crystal',
-        E: 'gtceu:ev_gas_collector',
+		E: 'gtceu:ev_gas_collector',
 		F: 'gtceu:dense_obsidian_plate'
-    }).id('tfg:shaped/end_dome')
+	}).id('tfg:shaped/end_dome')
 		
 	// parts for the ender dome
 		
 	event.shaped('minecraft:end_crystal', [
-        'AAA',
-        'ABA',
-        'ACA' 
-    ], {
-        A: 'gtceu:tempered_glass',
-        B: 'gtceu:quantum_eye',
+		'AAA',
+		'ABA',
+		'ACA' 
+	], {
+		A: 'gtceu:tempered_glass',
+		B: 'gtceu:quantum_eye',
 		C: '#forge:exquisite_gems'
-    }).id('tfg:shaped/end_crystal')
+	}).id('tfg:shaped/end_crystal')
 	
 	// chorus fruit
 	
@@ -206,13 +202,13 @@ ServerEvents.recipes(event => {
 	// end portal frame
 	
 	event.shaped('tfg:artificial_end_portal_frame', [
-        'A',
-        'B',
-        'C' 
-    ], {
-        A: 'minecraft:ender_eye',
-        B: 'minecraft:cyan_carpet',
+		'A',
+		'B',
+		'C' 
+	], {
+		A: 'minecraft:ender_eye',
+		B: 'minecraft:cyan_carpet',
 		C: 'minecraft:end_stone'
-    }).id('tfg:shaped/artificial_end_portal_frame')
+	}).id('tfg:shaped/artificial_end_portal_frame')
 })
 

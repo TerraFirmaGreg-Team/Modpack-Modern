@@ -1765,7 +1765,8 @@ function removeMinecraftRecipes(event) {
 	//#endregion
 
 	//#region Незеритовая броня
-
+	
+	event.remove({ id: 'minecraft:netherite_upgrade_smithing_template' })
 	event.remove({ id: 'minecraft:netherite_helmet_smithing' })
 	event.remove({ id: 'minecraft:netherite_chestplate_smithing' })
 	event.remove({ id: 'minecraft:netherite_leggings_smithing' })
@@ -2102,4 +2103,15 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:raw_iron' })
 
 	//#endregion
+
+	//#region The End
+
+	event.remove({ id: 'minecraft:ender_chest' })
+	event.remove({ id: 'minecraft:end_crystal' })
+	
+	event.remove({ id: 'gtceu:macerator/macerate_end_stone' })
+	event.remove({ id: 'gtceu:assembler/ender_chest' })
+	event.remove({ id: 'gtceu:assembler/end_crystal' })
+	//#endregion
+
 }
