@@ -160,7 +160,7 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:smelting/lime')
 
 	// Kaolinite Clay
-	event.smelting('tfc:kaolin_clay', 'tfc:powder/kaolinite')
+	event.smelting('tfc:powder/kaolinite', 'tfc:kaolin_clay')
 		.id('tfg:smelting/kaolinite_clay')
 
 	// Fire Brick
