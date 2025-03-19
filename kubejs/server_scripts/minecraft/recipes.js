@@ -915,12 +915,29 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	// Nether Brick
+	//#region Nether Brick
 
 	event.smelting('minecraft:nether_brick', 'minecraft:netherrack')
 
+	//#endregion
 
-	// Soul Soil
+	//#region Soul Soil
 
 	event.recipes.tfc.landslide('minecraft:soul_soil', 'minecraft:soul_soil')
+
+	//#endregion
+
+	//#region Netherite leggings (for the lavaproof diving set)
+
+	event.shaped('minecraft:netherite_leggings', [
+		'ABA',
+		'CDC' 
+	], {
+		A: '#forge:screws/blue_steel',
+		B: 'tfc:metal/leggings/blue_steel',
+		C: '#forge:plates/blue_steel',
+		D: 'beneath:cursed_hide'
+	}).id('tfg:minecraft/shaped/netherite_leggings')
+
+	//#endregion
 }
