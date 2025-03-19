@@ -930,7 +930,7 @@ const registerCreateRecipes = (event) => {
 		B: 'create:shaft',
 		C: '#forge:plates/copper',
 		D: 'tfc:bellows',
-		E: 'firmaciv:large_waterpoof_hide',
+		E: 'firmaciv:large_waterproof_hide',
 		F: 'tfc:metal/chestplate/copper'
 	}).id('tfg:create/shaped/copper_backtank')
 
@@ -942,7 +942,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:plates/copper',
 		B: 'tfc:metal/helmet/copper',
 		C: '#forge:glass_panes',
-		D: 'firmaciv:large_waterpoof_hide'
+		D: 'firmaciv:large_waterproof_hide'
 	}).id('tfg:create/shaped/copper_diving_helmet')
 
 	// Ботинки для дайвинга
@@ -953,7 +953,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:screws/wrought_iron',
 		B: 'tfc:metal/boots/copper',
 		C: '#forge:ingots/lead',
-		D: 'firmaciv:large_waterpoof_hide'
+		D: 'firmaciv:large_waterproof_hide'
 	}).id('tfg:create/shaped/copper_diving_boots')
 
 	// Netherite backtank
