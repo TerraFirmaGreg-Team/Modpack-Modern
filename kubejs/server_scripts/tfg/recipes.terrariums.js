@@ -175,7 +175,7 @@ function registerTFGTerrariumRecipes(event) {
 		.duration(200)
 		.EUt(480)
 		
-	event.recipes.gtceu.centrifuge('tfg:kovarex')
+	event.recipes.gtceu.large_chemical_reactor('tfg:kovarex')
 		.itemInputs('40x gtceu:uranium_235_dust', '5x gtceu:uranium_dust')
 		.itemOutputs('41x gtceu:uranium_235_dust', '2x gtceu:uranium_dust')
 		.duration(600)
