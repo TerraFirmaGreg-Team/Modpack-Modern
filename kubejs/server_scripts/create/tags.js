@@ -23,6 +23,9 @@ const registerCreateItemTags = (event) => {
     event.add('minecraft:trimmable_armor', 'create:copper_diving_helmet')
     event.add('minecraft:trimmable_armor', 'create:copper_diving_boots')
 
+    event.add('minecraft:trimmable_armor', 'create:netherite_diving_helmet')
+    event.add('minecraft:trimmable_armor', 'create:netherite_backtank')
+    event.add('minecraft:trimmable_armor', 'create:netherite_diving_boots')
 }
 
 const registerCreateBlockTags = (event) => {
