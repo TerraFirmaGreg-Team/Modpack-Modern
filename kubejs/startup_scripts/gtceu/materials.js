@@ -108,7 +108,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Brass.addFlags(GENERATE_BELL);
 	GTMaterials.Bronze.addFlags(GENERATE_BELL);
 
-
 	//
 	//
 	//        /* Имеют двойные слитки */
