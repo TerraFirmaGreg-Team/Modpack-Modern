@@ -92,12 +92,3 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
 GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
     //registerGTCEuMaterialIconTypes(event)
 })
-
-
-
-/**
- * Событие регистрации информации о составе предмета.
- */
- TFGStartupEvents.materialInfo(event => {
-     registerGTCEuMaterialInfo(event)
- })
