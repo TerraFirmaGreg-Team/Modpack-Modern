@@ -167,6 +167,7 @@ function registerTFGTerrariumRecipes(event) {
 		.itemOutputs('minecraft:chorus_fruit', 'gtceu:uranium_dust')
 		.duration(500)
 		.EUt(480)
+		.circuit(1)
 		
 	event.recipes.gtceu.large_chemical_reactor('tfg:chorus_fruit_plutonium')
 		.itemInputs('#tfc:foods/fruits', 'gtceu:plutonium_241_dust')
@@ -177,8 +178,9 @@ function registerTFGTerrariumRecipes(event) {
 	event.recipes.gtceu.centrifuge('tfg:kovarex')
 		.itemInputs('40x gtceu:uranium_235_dust', '5x gtceu:uranium_dust')
 		.itemOutputs('41x gtceu:uranium_235_dust', '2x gtceu:uranium_dust')
-		.duration(1000)
-		.EUt(512)
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.LuV])
+		.circuit(2)
 		
 	// end stone
 	
@@ -210,5 +212,4 @@ function registerTFGTerrariumRecipes(event) {
 		B: 'minecraft:cyan_carpet',
 		C: 'minecraft:end_stone'
 	}).id('tfg:shaped/artificial_end_portal_frame')
-})
-
+}

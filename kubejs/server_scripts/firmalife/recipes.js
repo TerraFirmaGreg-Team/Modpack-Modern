@@ -521,7 +521,7 @@ const registerFirmaLifeRecipes = (event) => {
 	event.recipes.gtceu.mixer('firmalife:yeast_starter')
 		.inputFluids(Fluid.of('firmalife:yeast_starter', 100))
         .itemInputs('#tfc:foods/flour')
-        .outputFluids('firmalife:yeast_starter', 600)
+        .outputFluids(Fluid.of('firmalife:yeast_starter', 600))
         .duration(1200)
         .EUt(8)
         .circuit(1)

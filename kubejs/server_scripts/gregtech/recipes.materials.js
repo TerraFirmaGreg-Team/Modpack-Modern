@@ -216,12 +216,21 @@ function registerGTCEUMetalRecipes(event) {
 				.EUt(GTValues.VA[GTValues.ULV])
 		}
 
+		const twoIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 2);
+
 		event.recipes.gtceu.arc_furnace(`tfg:arc_furnace_${material.getName()}_double_ingot`)
 			.itemInputs(doubleIngotStack)
-			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 2))
+			.itemOutputs(twoIngotStack)
 			.duration(material.getMass() * 6)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.bender(`tfg:bend_${material.getName()}_double_ingot`)
+			.itemInputs(twoIngotStack)
+			.itemOutputs(doubleIngotStack)
+			.duration(material.getMass() * 6)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(3)
 	}
 
 	const processSmallOre = (tagPrefix, material) => {

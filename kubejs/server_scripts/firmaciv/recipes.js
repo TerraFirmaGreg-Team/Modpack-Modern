@@ -82,9 +82,9 @@ const registerFirmaCivRecipes = (event) => {
     //#endregion
 
     //#region Compass
-    event.recipes.gtceu.canner('tfg:firmaciv/compass')             
+    event.recipes.gtceu.assembler('tfg:firmaciv/compass')             
         .itemInputs('minecraft:redstone', '#forge:plates/wrought_iron')
-        .circuit(1)
+        .circuit(21)
         .itemOutputs('firmaciv:firmaciv_compass')
         .duration(100)
         .EUt(4)
