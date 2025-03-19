@@ -1026,7 +1026,6 @@ function registerTFCMaterialsRecipes(event) {
 
 				//#endregion
 			}
-
 		}
 
 		// Blocks
@@ -1229,6 +1228,13 @@ function registerTFCMaterialsRecipes(event) {
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
 					.id(`tfg:heating/rich_raw/${material.getName()}`)
 
+				let ingotItem = ChemicalHelper.get(TagPrefix.ingot, outputMaterial, 2)
+				if (!ingotItem.isEmpty()) {
+					event.recipes.gtceu.electric_furnace(`tfg:smelt_rich_raw_${material.getName()}_in_furnace`)
+						.itemInputs(richRawOre)
+						.itemOutputs(ingotItem)
+						.duration(200)
+				}
 			}
 
 			// Декрафт нормального куска руды
@@ -1239,6 +1245,13 @@ function registerTFCMaterialsRecipes(event) {
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
 					.id(`tfg:heating/raw/${material.getName()}`)
 
+				let ingotItem = ChemicalHelper.get(TagPrefix.ingot, outputMaterial, 1)
+				if (!ingotItem.isEmpty()) {
+					event.recipes.gtceu.electric_furnace(`tfg:smelt_normal_raw_${material.getName()}_in_furnace`)
+						.itemInputs(normalRawOre)
+						.itemOutputs(ingotItem)
+						.duration(200)
+				}
 			}
 
 			// Декрафт бедного куска руды
@@ -1247,6 +1260,14 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.heating(poorRawOre, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
 					.id(`tfg:heating/poor_raw/${material.getName()}`)
+
+				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, outputMaterial, 5)
+				if (!nuggetItem.isEmpty()) {
+					event.recipes.gtceu.electric_furnace(`tfg:smelt_poor_raw_${material.getName()}_in_furnace`)
+						.itemInputs(poorRawOre)
+						.itemOutputs(nuggetItem)
+						.duration(200)
+				}
 			}
 		}
 
@@ -1258,7 +1279,6 @@ function registerTFCMaterialsRecipes(event) {
 			event.recipes.tfc.heating(nuggetItem, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(16, tfcProperty.getPercentOfMaterial())))
 				.id(`tfg:heating/nugget/${material.getName()}`)
-
 		}
 	})
 }

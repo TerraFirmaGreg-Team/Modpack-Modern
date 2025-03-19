@@ -7,9 +7,6 @@
 global.FIRMALIFE_DISABLED_ITEMS = [
     
     // Chromite
-    'firmalife:ore/poor_chromite', 
-    'firmalife:ore/normal_chromite', 
-    'firmalife:ore/rich_chromite', 
     'firmalife:metal/ingot/chromium', 
     'firmalife:metal/double_ingot/chromium', 
     'firmalife:metal/sheet/chromium', 

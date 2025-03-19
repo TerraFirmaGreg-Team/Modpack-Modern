@@ -897,25 +897,21 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('gtceu:bismuth_bronze_dust')
 		.itemOutputs('gtceu:bismuth_bronze_ingot')
 		.duration(200)
-		.EUt(16)
 
 	event.recipes.gtceu.electric_furnace('tfg:black_bronze_dust_to_ingot')
 		.itemInputs('gtceu:black_bronze_dust')
 		.itemOutputs('gtceu:black_bronze_ingot')
 		.duration(200)
-		.EUt(16)
 
 	event.recipes.gtceu.electric_furnace('tfg:sterling_silver_dust_to_ingot')
 		.itemInputs('gtceu:sterling_silver_dust')
 		.itemOutputs('gtceu:sterling_silver_ingot')
 		.duration(300)
-		.EUt(20)
 
 	event.recipes.gtceu.electric_furnace('tfg:rose_gold_dust_to_ingot')
 		.itemInputs('gtceu:rose_gold_dust')
 		.itemOutputs('gtceu:rose_gold_ingot')
 		.duration(300)
-		.EUt(20)
 
 	//#endregion
 
