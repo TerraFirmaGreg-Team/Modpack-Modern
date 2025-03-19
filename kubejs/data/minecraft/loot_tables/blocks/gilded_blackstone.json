@@ -46,7 +46,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:poor_raw_gold",
+					"name": "tfc:ore/poor_native_gold",
 					"conditions": [
 						{
 							"condition": "minecraft:random_chance",
