@@ -561,12 +561,14 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/coke_oven')
 
 	// Coke Oven Hatch
-	event.shaped('gtceu:coke_oven_hatch', [
-		'AB'
-	], {
-		A: 'gtceu:coke_oven_bricks',
-		B: '#tfc:barrels'
-	}).id('gtceu:shaped/coke_oven_hatch')
+	event.recipes.tfc.no_remainder_shaped_crafting(
+		event.shaped('gtceu:coke_oven_hatch', [
+			'AB'
+		], {
+			A: 'gtceu:coke_oven_bricks',
+			B: '#tfc:barrels'
+		})
+	).id('gtceu:shaped/coke_oven_hatch')
 
 	//#endregion
 
