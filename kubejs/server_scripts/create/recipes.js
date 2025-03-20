@@ -970,6 +970,17 @@ const registerCreateRecipes = (event) => {
 		F: 'tfc:metal/chestplate/blue_steel'
 	}).id('tfg:create/shaped/netherite_backtank')
 
+	event.shaped('create:netherite_backtank', [
+		'ACA',
+		'CCC',
+		'EDE'
+	], {
+		A: '#forge:screws/blue_steel',
+		C: '#forge:plates/blue_steel',
+		D: 'create:copper_backtank',
+		E: 'beneath:cursed_hide'
+	}).id('tfg:create/shaped/netherite_backtank_upgrade')
+
 	// Netherite diving helmet
 	event.shaped('create:netherite_diving_helmet', [
 		'ABA',
@@ -981,16 +992,38 @@ const registerCreateRecipes = (event) => {
 		D: 'beneath:cursed_hide'
 	}).id('tfg:create/shaped/netherite_diving_helmet')
 
+	event.shaped('create:netherite_diving_helmet', [
+		' A ',
+		'ABA',
+		'CDC'
+	], {
+		A: '#forge:plates/blue_steel',
+		B: 'create:copper_diving_helmet',
+		C: 'firmalife:reinforced_glass',
+		D: 'beneath:cursed_hide'
+	}).id('tfg:create/shaped/netherite_diving_helmet_upgrade')
+
 	// Netherite diving boots
+	event.shaped('create:netherite_diving_boots', [
+		'ABC',
+		'EDE'
+	], {
+		A: '#forge:screws/blue_steel',
+		B: 'tfc:metal/boots/blue_steel',
+		C: '#forge:plates/blue_steel',
+		D: 'beneath:cursed_hide',
+		E: '#forge:ingots/lead'
+	}).id('tfg:create/shaped/netherite_diving_boots')
+
 	event.shaped('create:netherite_diving_boots', [
 		'ABA',
 		'CDC'
 	], {
 		A: '#forge:screws/blue_steel',
-		B: 'tfc:metal/boots/blue_steel',
-		C: '#forge:ingots/lead',
+		B: 'create:copper_diving_boots',
+		C: '#forge:plates/blue_steel',
 		D: 'beneath:cursed_hide'
-	}).id('tfg:create/shaped/netherite_diving_boots')
+	}).id('tfg:create/shaped/netherite_diving_boots_upgrade')
 
 	// Херь, увеличивающая дистанцию копки
 	event.recipes.createMechanicalCrafting('create:extendo_grip', [
