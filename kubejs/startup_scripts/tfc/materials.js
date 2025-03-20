@@ -1,7 +1,7 @@
 // priority: 0
 
 const registerTFCMaterials = (event) => {
-    const registerOreMaterial = (rockType, color) => 
+    const registerStoneMaterial = (rockType, color) => 
         event.create(`tfg:${rockType}`)
             .dust()
             .color(color)
@@ -13,22 +13,22 @@ const registerTFCMaterials = (event) => {
             )
 
     /* TFC Stone Types Materials */
-    registerOreMaterial('gabbro', 0x7F8081)
-    registerOreMaterial('shale', 0x686567)
-    registerOreMaterial('claystone', 0xAF9377)
-    registerOreMaterial('limestone', 0xA09885)
-    registerOreMaterial('conglomerate', 0xA3977F)
-    registerOreMaterial('dolomite', 0x515155)
-    registerOreMaterial('chert', 0x7A6756)
-    registerOreMaterial('chalk', 0xA4A39F)
-    registerOreMaterial('rhyolite', 0x726D69)
-    registerOreMaterial('dacite', 0x979797)
-    registerOreMaterial('slate', 0x989287)
-    registerOreMaterial('phyllite', 0x706B61)
-    registerOreMaterial('schist', 0x6E735C)
-    registerOreMaterial('gneiss', 0x6A6D60)
+    registerStoneMaterial('gabbro', 0x7F8081)
+    registerStoneMaterial('shale', 0x686567)
+    registerStoneMaterial('claystone', 0xAF9377)
+    registerStoneMaterial('limestone', 0xA09885)
+    registerStoneMaterial('conglomerate', 0xA3977F)
+    registerStoneMaterial('dolomite', 0x515155)
+    registerStoneMaterial('chert', 0x7A6756)
+    registerStoneMaterial('chalk', 0xA4A39F)
+    registerStoneMaterial('rhyolite', 0x726D69)
+    registerStoneMaterial('dacite', 0x979797)
+    registerStoneMaterial('slate', 0x989287)
+    registerStoneMaterial('phyllite', 0x706B61)
+    registerStoneMaterial('schist', 0x6E735C)
+    registerStoneMaterial('gneiss', 0x6A6D60)
 
-    registerOreMaterial('dripstone', 0x927965)
+    registerStoneMaterial('dripstone', 0x927965)
     
     /* Specific Materials */
     event.create('tfg:latex')
