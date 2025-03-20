@@ -189,7 +189,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:plates/wrought_iron',
-		C: '#minecraft:wool'
+		C: '#tfg:cloth'
 	}).id('tfg:create/shaped/nozzle')
 
 	// Ручка, чтобы люто крутить
@@ -608,7 +608,7 @@ const registerCreateRecipes = (event) => {
 		'AAA'
 	], {
 		A: 'create:sail_frame',
-		B: '#tfg:usable_in_sail_frame'
+		B: '#tfg:cloth'
 	}).id('tfg:create/shaped/white_sail')
 
 
@@ -1059,7 +1059,7 @@ const registerCreateRecipes = (event) => {
 		'ABA'
 	], {
 		A: '#forge:nuggets/wrought_iron',
-		B: '#minecraft:wool'
+		B: '#tfg:cloth'
 	}).id('tfg:create/shaped/filter')
 
 	// Фильтр аттрибутов
@@ -1067,7 +1067,7 @@ const registerCreateRecipes = (event) => {
 		'ABA'
 	], {
 		A: '#forge:nuggets/brass',
-		B: '#minecraft:wool'
+		B: '#tfg:cloth'
 	}).id('tfg:create/shaped/attribute_filter')
 
 	// Расписание поездов

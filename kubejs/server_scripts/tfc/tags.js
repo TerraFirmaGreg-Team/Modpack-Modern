@@ -57,6 +57,7 @@ const registerTFCItemTags = (event) => {
     // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
     event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
 
+    // Remove sulfur dust overlap
     event.remove('forge:dusts/sulfur', 'tfc:powder/sulfur');
 
     // Тэги для возможности использования разных углей в кузне
@@ -185,6 +186,11 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:corals', 'tfc:coral/brain_dead_coral')
     event.add('tfc:corals', 'tfc:coral/fire_dead_coral')
     event.add('tfc:corals', 'tfc:coral/horn_dead_coral')
+
+    // Cloth
+    event.add('tfg:cloth', 'tfc:burlap_cloth')
+    event.add('tfg:cloth', 'tfc:wool_cloth')
+    event.add('tfg:cloth', "tfc:silk_cloth")
 
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
