@@ -35,7 +35,7 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "minecraft:redstone_wire",
+          "block": "gtceu:redstone_indicator",
           "weight": 45
         },
         {
