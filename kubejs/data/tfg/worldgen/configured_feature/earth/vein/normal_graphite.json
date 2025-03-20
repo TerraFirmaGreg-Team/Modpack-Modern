@@ -1,11 +1,11 @@
 {
 	"type": "tfc:disc_vein",
 	"config": {
-		"rarity": 120,
+		"rarity": 100,
 		"density": 0.4,
 		"min_y": -64,
 		"max_y": -24,
-		"size": 26,
+		"size": 16,
 		"random_name": "normal_graphite",
 		"height": 6,
 		"blocks": [
@@ -100,6 +100,82 @@
 					},
 					{
 						"block": "gtceu:gneiss_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/quartzite"
+				],
+				"with": [
+					{
+						"block": "gtceu:quartzite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:quartzite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:quartzite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/phyllite"
+				],
+				"with": [
+					{
+						"block": "gtceu:phyllite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:phyllite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:phyllite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/slate"
+				],
+				"with": [
+					{
+						"block": "gtceu:slate_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:slate_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:slate_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/marble"
+				],
+				"with": [
+					{
+						"block": "gtceu:marble_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:marble_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:marble_coal_ore",
 						"weight": 30
 					}
 				]
