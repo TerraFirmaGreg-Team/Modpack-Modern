@@ -107,14 +107,13 @@ const registerCreateRecipes = (event) => {
 
 	// Пушка для постройки схематик
 	event.shaped('create:schematicannon', [
-		' A ',
-		'BAB',
-		'CDC'
+		'DE ',
+		'CAC'
 	], {
 		A: '#forge:storage_blocks/wrought_iron',
-		B: '#minecraft:logs',
 		C: '#tfc:rock/smooth',
 		D: 'minecraft:dispenser',
+		E: 'firmaciv:cannon'
 	}).id('tfg:create/shaped/schematicannon')
 
 	// Стол для схематик
@@ -220,7 +219,7 @@ const registerCreateRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:plates/wrought_iron',
+		A: '#forge:rods/wrought_iron',
 		B: '#forge:rods/long/wrought_iron',
 		C: '#forge:rings/wrought_iron'
 	}).id('tfg:create/shaped/whisk')
@@ -265,7 +264,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	// Металлический держатель
-	event.shaped('create:metal_bracket', [
+	event.shaped('4x create:metal_bracket', [
 		'AAA',
 		'BBB'
 	], {
@@ -275,9 +274,7 @@ const registerCreateRecipes = (event) => {
 
 	// Жидкостная труба
 	event.shaped('create:fluid_pipe', [
-		' B ',
-		'BAB',
-		' B '
+		'BAB'
 	], {
 		A: '#forge:tools/hammers',
 		B: '#forge:plates/copper'
@@ -298,7 +295,7 @@ const registerCreateRecipes = (event) => {
 
 	// Ручка жидкостного люка
 	event.shaped('create:copper_valve_handle', [
-		'AAA',
+		' A ',
 		'BCD'
 	], {
 		A: '#forge:plates/copper',
@@ -853,7 +850,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	// Электронная трубка
-	event.shaped('create:electron_tube', [
+	event.shaped('2x create:electron_tube', [
 		' A ',
 		'BCB',
 		'DED'
@@ -865,7 +862,7 @@ const registerCreateRecipes = (event) => {
 		E: '#forge:plates/wrought_iron'
 	}).id('tfg:create/shaped/electron_tube')
 
-	event.shaped('2x create:electron_tube', [
+	event.shaped('4x create:electron_tube', [
 		' A ',
 		'BCB',
 		'DED'
@@ -877,7 +874,7 @@ const registerCreateRecipes = (event) => {
 		E: '#forge:plates/wrought_iron'
 	}).id('tfg:create/shaped/electron_tube2')
 
-	event.shaped('3x create:electron_tube', [
+	event.shaped('6x create:electron_tube', [
 		' A ',
 		' B ',
 		' C '
@@ -1192,10 +1189,12 @@ const registerCreateRecipes = (event) => {
 	// Липкий механический поршень
 	event.shaped('create:sticky_mechanical_piston', [
 		'A',
-		'B'
+		'B',
+		'C'
 	], {
-		A: 'tfc:glue',
-		B: 'create:mechanical_piston'
+		A: '#forge:tools/hammers',
+		B: 'tfc:glue',
+		C: 'create:mechanical_piston'
 	}).id('tfg:create/shaped/sticky_mechanical_piston_from_glue')
 
 	event.shaped('create:sticky_mechanical_piston', [
