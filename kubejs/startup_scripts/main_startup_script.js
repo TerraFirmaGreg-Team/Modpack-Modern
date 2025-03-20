@@ -26,7 +26,7 @@ BlockEvents.modification(event => {
  * Событие изменения предметов.
  */
 ItemEvents.modification(event => {
-    //
+    registerBeneathItemModifications(event)
 })
 
 /**
