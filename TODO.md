@@ -41,6 +41,7 @@
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
+- Fix up the #minecraft:piglin_loved tag 
 - A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
 - Netherite diving suit needs insulation and art
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
