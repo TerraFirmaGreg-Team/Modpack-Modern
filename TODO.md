@@ -57,6 +57,8 @@
 	- https://terrafirmacraft.github.io/Documentation/1.20.x/worldgen/decorators/#climate
 - Tag prefix to auto generate bricks?
 - Reskin the rockets to match the GT casing textures
+- Caelum TFC mod? makes the sky look more interesting which is thematic, is it compatible with ad astra?
+- Waypoints but retextured, is there a way to make it require "payment" like through a bucket of rocket fuel?
 
 ### Mars
 - Merge the cold + temperate biomes on mars and instead spread out the different forest tiers
