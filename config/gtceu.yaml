@@ -10,7 +10,7 @@ recipes:
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
-  harderRods: true
+  harderRods: false
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
@@ -79,11 +79,11 @@ recipes:
 
   # Whether to nerf the output amounts of the first circuit in a set to 1 (from 2) and SoC to 2 (from 4).
   # Default: false
-  harderCircuitRecipes: true
+  harderCircuitRecipes: false
 
   # Whether to nerf machine controller recipes.
   # Default: false
-  hardMultiRecipes: true
+  hardMultiRecipes: false
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
@@ -161,7 +161,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  shouldWeatherOrTerrainExplosion: false
+  shouldWeatherOrTerrainExplosion: true
 
   # Energy use multiplier for electric items.
   # Default: 100
@@ -199,7 +199,7 @@ machines:
 
   # Block to replace mined ores with in the miner and multiblock miner.
   # Default: minecraft:cobblestone
-  replaceMinedBlocksWith: tfc:rock/cobble/rhyolite
+  replaceMinedBlocksWith: tfc:rock/hardened/rhyolite
 
   # Whether to enable Assembly Line research for recipes.
   # Default: true
@@ -426,7 +426,7 @@ tools:
 
     # Should Zombies spawn with charged, active NanoSabers on hard difficulty?
     # Default: true
-    zombieSpawnWithSabers: true
+    zombieSpawnWithSabers: false
 
     # The EU/t consumption of the NanoSaber.
     # Default: 64
@@ -488,7 +488,7 @@ compat:
 
     # Enable GTEU to FE (and vice versa) Converters.
     # Default: false
-    enableFEConverters: false
+    enableFEConverters: true
 
     # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
@@ -522,12 +522,12 @@ compat:
       journeyMapIntegration: false
 
       # Xaerox's map integration enabled
-      xaerosMapIntegration: true
+      xaerosMapIntegration: false
 
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24
-    surfaceRockProspectRange: 24
+    surfaceRockProspectRange: -1
 
     # The radius, in blocks, that clicking an ore block will search for veins in.
     # -1 to disable
