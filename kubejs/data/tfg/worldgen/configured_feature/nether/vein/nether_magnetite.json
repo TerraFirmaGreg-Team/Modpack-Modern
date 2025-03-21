@@ -133,15 +133,19 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_magnetite",
-					"weight": 20
+					"weight": 5
 				},
 				{
 					"block": "tfc:ore/small_native_gold",
-					"weight": 10
+					"weight": 15
 				},
 				{
 					"block": "firmalife:ore/small_chromite",
 					"weight": 60
+				},
+				{
+					"block": "gtceu:vanadium_magnetite_indicator",
+					"weight": 15
 				},
 				{
 					"block": "tfg:buds/small_sapphire_bud",

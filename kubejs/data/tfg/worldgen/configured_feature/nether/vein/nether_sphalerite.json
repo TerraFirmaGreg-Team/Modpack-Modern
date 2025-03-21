@@ -101,7 +101,15 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_sphalerite",
-					"weight": 100
+					"weight": 40
+				},
+				{
+					"block": "gtceu:sulfur_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:pyrite_indicator",
+					"weight": 25
 				}
 			]
 		}
