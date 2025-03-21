@@ -674,6 +674,10 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:compass',
     'minecraft:iron_bars',
     'minecraft:honeycomb',
+    'minecraft:potion',
+    'minecraft:tipped_arrow',
+    'minecraft:splash_potion',
+    'minecraft:lingering_potion',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада

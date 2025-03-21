@@ -74,3 +74,10 @@ const registerGTCEUBlockTags = (event) => {
 		}
 	})
 }
+
+
+const registerGTCEUFluidTags = (event) => {
+
+	event.add('c:hidden_from_recipe_viewers', /gtceu.*potion.*/)
+
+}
