@@ -68,6 +68,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     registerGTCEuMaterials(event)
 })
 
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    registerTFCIconSets(event)
+})
+
 /**
  * Событие модификации материалов.
 */
