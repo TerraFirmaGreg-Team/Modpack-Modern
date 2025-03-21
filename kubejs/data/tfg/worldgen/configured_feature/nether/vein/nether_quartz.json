@@ -170,19 +170,19 @@
 				},
 				{
 					"block": "tfg:buds/large_nether_quartz_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/small_quartzite_bud",
-					"weight": 30
-				},
-				{
-					"block": "tfg:buds/medium_quartzite_bud",
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/large_quartzite_bud",
+					"block": "tfg:buds/small_quartzite_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/medium_quartzite_bud",
 					"weight": 10
+				},
+				{
+					"block": "tfg:buds/large_quartzite_bud",
+					"weight": 8
 				}
 			]
 		}

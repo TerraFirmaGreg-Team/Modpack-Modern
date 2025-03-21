@@ -133,15 +133,15 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_hematite",
-					"weight": 40
+					"weight": 35
 				},
 				{
 					"block": "tfc:ore/small_limonite",
-					"weight": 40
+					"weight": 15
 				},
 				{
 					"block": "tfc:ore/small_native_gold",
-					"weight": 20
+					"weight": 5
 				},
 				{
 					"block": "tfg:buds/small_ruby_bud",
@@ -154,6 +154,10 @@
 				{
 					"block": "tfg:buds/large_ruby_bud",
 					"weight": 3
+				},
+				{
+					"block": "gtceu:goethite_indicator",
+					"weight": 25
 				}
 			]
 		}

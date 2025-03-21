@@ -208,7 +208,19 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_cassiterite",
-					"weight": 100
+					"weight": 35
+				},
+				{
+					"block": "gtceu:garnet_sand_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:asbestos_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:diatomite_indicator",
+					"weight": 15
 				}
 			]
 		}

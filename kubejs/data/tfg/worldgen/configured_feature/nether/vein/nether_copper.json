@@ -117,8 +117,20 @@
 			"underground_count": 150,
 			"blocks": [
 				{
+					"block": "gtceu:chalcopyrite_indicator",
+					"weight": 20
+				},
+				{
+					"block": "tfc:ore/small_hematite",
+					"weight": 5
+				},
+				{
+					"block": "gtceu:pyrite_indicator",
+					"weight": 10
+				},
+				{
 					"block": "tfc:ore/small_native_copper",
-					"weight": 100
+					"weight": 65
 				}
 			]
 		}

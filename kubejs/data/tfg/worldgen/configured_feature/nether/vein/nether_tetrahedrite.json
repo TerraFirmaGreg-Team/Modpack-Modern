@@ -119,11 +119,15 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_tetrahedrite",
-					"weight": 70
+					"weight": 50
 				},
 				{
 					"block": "tfc:ore/small_native_copper",
 					"weight": 30
+				},
+				{
+					"block": "gtceu:stibnite_indicator",
+					"weight": 20
 				}
 			]
 		}
