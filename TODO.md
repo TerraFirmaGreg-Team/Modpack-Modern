@@ -21,7 +21,8 @@
 	- https://www.curseforge.com/minecraft/mc-mods/forgiving-world
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - TFC textile? for some more drip
-- add that airplane tfg compat mod in the server thread
+- Add that airplane tfg compat mod in the server thread
+- Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust?
 
 ## Technical
 - GT icon sets
