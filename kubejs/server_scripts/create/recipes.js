@@ -834,12 +834,13 @@ const registerCreateRecipes = (event) => {
 	// Латунная рука
 	event.shaped('create:brass_hand', [
 		' AB',
-		'CCA',
+		'CCD',
 		' C '
 	], {
 		A: '#forge:tools/hammers',
 		B: '#forge:nuggets/brass',
-		C: '#forge:plates/brass'
+		C: '#forge:plates/brass',
+		D: '#forge:tools/file'
 	}).id('tfg:create/shaped/brass_hand')
 
 	event.recipes.gtceu.assembler('tfg:create/brass_hand')
