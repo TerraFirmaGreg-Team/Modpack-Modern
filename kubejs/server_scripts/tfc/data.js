@@ -117,6 +117,9 @@ const registerTFCHeats = (event) => {
     event.itemHeat('tfc:groundcover/seaweed', 1.0, null, null)
     event.itemHeat('tfc:plant/leafy_kelp', 1.0, null, null)
     event.itemHeat('tfc:plant/winged_kelp', 1.0, null, null)
+
+    // Misc
+    event.itemHeat('tfg:latex_soaked_gloves', 1.0, null, null)
 }
 
 const registerTFCFuels = (event) => {
@@ -126,11 +129,13 @@ const registerTFCFuels = (event) => {
     event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
     event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
     event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
+    // TODO: crushed etc coal?
 }
 
 const registerTFCLampFuels = (event) => {
     event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
     event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
+    // TODO: soybean oil?
 }
 
 const registerTFCFertilizers = (event) => {
