@@ -5,6 +5,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:wheat_dust',
     'gtceu:small_wheat_dust',
     'gtceu:tiny_wheat_dust',
+    'gtceu:dough',
 
     // Bronze Machines
     'gtceu:bronze_brick_casing',
