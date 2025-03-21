@@ -5,6 +5,7 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:wheat_dust',
     'gtceu:small_wheat_dust',
     'gtceu:tiny_wheat_dust',
+    'gtceu:dough',
 
     // Bronze Machines
     'gtceu:bronze_brick_casing',
@@ -102,4 +103,31 @@ global.TFG_CASTING_MOLDS = [
     'tfg:trapdoor_casting_mold',
     'tfg:chain_casting_mold',
     'tfg:bell_casting_mold'
+];
+
+global.ORE_BEARING_STONES = [
+    'gabbro', 
+    'shale', 
+    'claystone', 
+    'limestone', 
+    'conglomerate', 
+    'dolomite', 
+    'chert', 
+    'chalk', 
+    'rhyolite', 
+    'dacite', 
+    'quartzite', 
+    'slate', 
+    'phyllite', 
+    'schist', 
+    'gneiss', 
+    'marble',
+    'basalt',
+    'diorite',
+    'andesite',
+    'granite',
+
+    'deepslate',
+    'pyroxenite',
+    'dripstone'
 ];

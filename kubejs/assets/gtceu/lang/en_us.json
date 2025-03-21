@@ -1,6 +1,9 @@
 {
 	"item.gtceu.tool.behavior.canoe_creator": "§5Boater: §fCan Create Canoes",
 
+	"metaitem.dust.tooltip.purify": "Drop in Water to get Clean Dust",
+	"metaitem.crushed.tooltip.purify": "Drop in Water to get Purified Ore",
+
 	"tagprefix.double_ingot": "%s Double Ingot",
 	"tagprefix.poor_raw": "Poor Raw %s",
 	"tagprefix.rich_raw": "Rich Raw %s",

@@ -29,9 +29,10 @@ const registerTFCMaterials = (event) => {
     registerStoneMaterial('gneiss', 0x6A6D60)
 
     registerStoneMaterial('dripstone', 0x927965)
-    
-    /* Specific Materials */
-    event.create('tfg:latex')
-        .liquid()
-        .color(0xFBB982)
+
+
+    // Specialized icon sets for TFC's own
+
+    GTMaterials.Sapphire.setMaterialIconSet(GTMaterialIconSet.getByName('sapphire'))
+    GTMaterials.Ruby.setMaterialIconSet(GTMaterialIconSet.RUBY)
 }

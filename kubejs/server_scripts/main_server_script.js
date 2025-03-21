@@ -69,6 +69,7 @@ ServerEvents.tags('fluid', event => {
     registerAFCFluidTags(event)
     registerCreateFluidTags(event)
     registerCreateAdditionsFluidTags(event)
+    registerGTCEUFluidTags(event)
     registerFirmaLifeFluidTags(event)
     registerTFCFluidTags(event)
 })

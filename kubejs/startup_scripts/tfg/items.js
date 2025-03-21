@@ -24,4 +24,12 @@ const registerTFGItems = (event) => {
     event.create('tfg:brick/deepslate')
         .translationKey('item.tfg.brick.deepslate')
     // #endregion
+
+    // #region Primitive rubber gloves
+    event.create('tfg:prepared_leather_gloves')
+        .translationKey('item.tfg.prepared_leather_gloves')
+
+    event.create('tfg:latex_soaked_gloves')
+        .translationKey('item.tfg.latex_soaked_gloves')
+    // #endregion
 }

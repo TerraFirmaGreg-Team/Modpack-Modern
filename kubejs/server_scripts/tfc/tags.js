@@ -48,6 +48,10 @@ const registerTFCItemTags = (event) => {
     event.add('minecraft:fishes', 'tfc:food/rainbow_trout')
     event.add('minecraft:fishes', 'tfc:food/smallmouth_bass')
 
+    // Make eggs not useless
+    event.add('tfc:foods/usable_in_salad', 'tfc:food/cooked_egg')
+    event.add('tfc:foods/usable_in_salad', 'tfc:food/boiled_egg')
+
     // Чтобы жарились бревна из TFC в пиролиз. печке
     // Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
     global.TFC_WOOD_TYPES.forEach(woodType => {

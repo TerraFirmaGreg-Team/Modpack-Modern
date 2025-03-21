@@ -561,12 +561,14 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/coke_oven')
 
 	// Coke Oven Hatch
-	event.shaped('gtceu:coke_oven_hatch', [
-		'AB'
-	], {
-		A: 'gtceu:coke_oven_bricks',
-		B: '#tfc:barrels'
-	}).id('gtceu:shaped/coke_oven_hatch')
+	event.recipes.tfc.no_remainder_shaped_crafting(
+		event.shaped('gtceu:coke_oven_hatch', [
+			'AB'
+		], {
+			A: 'gtceu:coke_oven_bricks',
+			B: '#tfc:barrels'
+		})
+	).id('gtceu:shaped/coke_oven_hatch')
 
 	//#endregion
 
@@ -1290,5 +1292,77 @@ const registerGTCEURecipes = (event) => {
 				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		})
 	})
+	// #endregion
+
+	//#region Voiding covers
+
+	event.replaceInput({ id: 'gtceu:shaped/cover_fluid_voiding' },
+		'minecraft:ender_pearl', 'ae2:ender_dust');
+
+	event.replaceInput({ id: 'gtceu:assembler/cover_fluid_voiding' },
+		'minecraft:ender_pearl', 'ae2:ender_dust');
+
+	event.replaceInput({ id: 'gtceu:shaped/cover_item_voiding' },
+		'minecraft:ender_pearl', 'ae2:ender_dust');
+
+	event.replaceInput({ id: 'gtceu:assembler/cover_item_voiding' },
+		'minecraft:ender_pearl', 'ae2:ender_dust');
+
+	//#endregion
+
+	// #region Primitive protection
+
+	event.recipes.tfc.barrel_sealed(2000)
+		.outputItem('tfg:prepared_leather_gloves')
+		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
+		.id('tfg:prepared_leather_gloves_sealed_barrel')
+
+	event.recipes.firmalife.vat()
+		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 100))
+		.outputFluid(Fluid.of('tfg:vulcanized_latex', 100))
+		.length(300)
+		.temperature(300)
+		.id('tfg:vulcanized_latex_vat')
+
+	event.recipes.firmalife.vat()
+		.outputItem('tfg:latex_soaked_gloves')
+		.inputs('tfg:prepared_leather_gloves', Fluid.of('tfg:vulcanized_latex', 1000))
+		.length(300)
+		.temperature(200)
+		.id('tfg:latex_soaked_gloves_vat')
+
+	event.recipes.firmalife.oven('tfg:latex_soaked_gloves', 120, 1200, 'gtceu:rubber_gloves')
+		.id('tfg:rubber_gloves_oven')
+
+	event.remove({ id: 'gtceu:shaped/rubber_gloves' })
+
+	event.recipes.gtceu.alloy_smelter('rubber_gloves_alloy_smelter')
+		.itemInputs('2x #forge:plates/rubber')
+		.notConsumable('create:brass_hand')
+		.itemOutputs('gtceu:rubber_gloves')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('gtceu:face_mask', [
+			'ACA',
+			'ABA',
+			' D '
+		], {
+			A: '#forge:string',
+			B: '#tfg:cloth',
+			C: 'minecraft:paper',
+			D: '#tfc:sewing_needles'
+		})
+	).id('gtceu:shaped/face_mask')
+
+	event.recipes.gtceu.assembler('assemble_face_mask')
+		.itemInputs('4x #forge:string', '#tfg:cloth', 'minecraft:paper')
+		.itemOutputs('gtceu:face_mask')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(7)
+
 	// #endregion
 }

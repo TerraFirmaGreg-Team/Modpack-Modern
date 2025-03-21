@@ -26,7 +26,7 @@ BlockEvents.modification(event => {
  * Событие изменения предметов.
  */
 ItemEvents.modification(event => {
-    //
+    registerBeneathItemModifications(event)
 })
 
 /**
@@ -66,6 +66,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
   
     registerTFGMaterials(event)
     registerGTCEuMaterials(event)
+})
+
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    registerTFCIconSets(event)
 })
 
 /**
