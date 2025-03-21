@@ -18,8 +18,10 @@
 - Add recipes for chalk
 - Add that one with a helmet with a light in it
 - Find and add the one that lets you travel to the nether via bedrock
+	- https://www.curseforge.com/minecraft/mc-mods/forgiving-world
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - TFC textile? for some more drip
+- add that airplane tfg compat mod in the server thread
 
 ## Technical
 - GT icon sets
