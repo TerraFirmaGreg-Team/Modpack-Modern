@@ -33,6 +33,44 @@ const registerTFCMaterials = (event) => {
 
     // Specialized icon sets for TFC's own
 
-    GTMaterials.Sapphire.setMaterialIconSet(GTMaterialIconSet.getByName('sapphire'))
-    GTMaterials.Ruby.setMaterialIconSet(GTMaterialIconSet.RUBY)
+    // Free: cryolite, sylvite
+    GTMaterials.Coal.setMaterialIconSet(GTMaterialIconSet.LIGNITE)
+    GTMaterials.Borax.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_borax'))
+    GTMaterials.Gypsum.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gypsum'))
+    GTMaterials.Graphite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_graphite'))
+    GTMaterials.Saltpeter.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_saltpeter'))
+    GTMaterials.Sulfur.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_sulfur'))
+
+    GTMaterials.Amethyst.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_amethyst'))
+    GTMaterials.Redstone.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_redstone'))
+    GTMaterials.Diamond.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_diamond'))
+    GTMaterials.Emerald.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_emerald'))
+    GTMaterials.Lapis.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_lapis'))
+    GTMaterials.Opal.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_opal'))
+    GTMaterials.Pyrite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_pyrite'))
+    GTMaterials.Ruby.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_ruby'))
+    GTMaterials.Sapphire.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_sapphire'))
+    GTMaterials.Topaz.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_topaz'))
+    GTMaterials.BlueTopaz.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_topaz'))
+    
+    GTMaterials.Bismuth.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_bismuth'))
+    GTMaterials.Cassiterite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
+    GTMaterials.Garnierite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
+    GTMaterials.Hematite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_hematite'))
+    GTMaterials.YellowLimonite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_limonite'))
+    GTMaterials.Magnetite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_magnetite'))
+    GTMaterials.Malachite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_malachite'))
+    GTMaterials.Copper.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
+    GTMaterials.Gold.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_gold'))
+    GTMaterials.Silver.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_silver'))
+    GTMaterials.Sphalerite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_sphalerite'))
+    GTMaterials.Tetrahedrite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_tetrahedrite'))
+    GTMaterials.Chromite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_chromite'))
+
+    GTMaterials.NetherQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
+    GTMaterials.RedAlloy.setMaterialIconSet(GTMaterialIconSet.SHINY)
+    GTMaterials.TinAlloy.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
+    GTMaterials.BismuthBronze.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
+    GTMaterials.Nickel.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
+    GTMaterials.BlackBronze.setMaterialIconSet(GTMaterialIconSet.SHINY)
 }
