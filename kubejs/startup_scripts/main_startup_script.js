@@ -78,3 +78,11 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
 GTCEuStartupEvents.materialModification(event => {
     registerGTCEuMaterialModification(event)
 })
+
+
+//GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
+//    event.create('ad_astra:earth_orbit')
+//        .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())
+//        .tier(0)
+//        .overrideName('Earth Orbit')
+//})
