@@ -23,4 +23,10 @@ const registerTFGMaterials = (event) => {
 	event.create('tfg:vulcanized_latex')
 		.liquid()
 		.color(0xc79973)
+
+	event.create('lactose')
+        .dust()
+        .iconSet(GTMaterialIconSet.FINE)
+        .color('0xede8da')
+        .secondaryColor('0xeddcad')
 }

@@ -10,6 +10,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:wood_dusts', 'gtceu:wood_dust')
 	event.add('tfg:tiny_wood_dusts', 'gtceu:tiny_wood_dust')
 	event.add('tfg:small_wood_dusts', 'gtceu:small_wood_dust')
+	
+    event.add('forge:wax', 'tfg:paraffin_wax')
+    event.add('forge:wax', 'firmalife:beeswax')
 
 	// #endregion
 }
