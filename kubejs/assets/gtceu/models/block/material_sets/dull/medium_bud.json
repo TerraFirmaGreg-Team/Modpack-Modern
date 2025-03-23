@@ -1,7 +1,0 @@
-{
-    "parent": "gtceu:block/cross_2_layer",
-    "textures": {
-        "bot_all": "gtceu:block/material_sets/dull/medium_bud",
-        "top_all": "gtceu:block/material_sets/dull/medium_bud_secondary"
-    }
-}

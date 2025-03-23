@@ -28,6 +28,7 @@
 	"block.minecraft.polished_deepslate_slab": "Polished Migmatite Slab",
 	"block.minecraft.polished_deepslate_stairs": "Polished Migmatite Stairs",
 	"block.minecraft.polished_deepslate_wall": "Polished Migmatite Wall",
+	"tagprefix.deepslate": "Migmatite %s Ore",
 
 	"block.minecraft.blackstone": "Raw Pyroxenite",
 	"block.minecraft.blackstone_slab": "Pyroxenite Slab",
@@ -46,11 +47,13 @@
 	"block.minecraft.polished_blackstone_slab": "Polished Pyroxenite Slab",
 	"block.minecraft.polished_blackstone_stairs": "Polished Pyroxenite Stairs",
 	"block.minecraft.polished_blackstone_wall": "Polished Pyroxenite Wall",
+	"tagprefix.pyroxenite": "Pyroxenite %s Ore",
 	"item.beneath.loose_blackstone": "Loose Pyroxenite",
 	"block.beneath.loose_blackstone": "Loose Pyroxenite",
 
 	"material.tfg.dripstone": "Travertine",
 	"block.minecraft.dripstone_block": "Raw Travertine",
+	"tagprefix.dripstone": "Travertine %s Ore",
 
 	"block.minecraft.soul_soil": "Undersoil",
 	"block.minecraft.magma_block": "Pyroxenite Magma",

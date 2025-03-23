@@ -149,17 +149,6 @@ const registerTFGBlocks = (event) => {
 		// skip coal, coke, salt, rock salt, certus, malachite, glass, and amethyst
 	]
 
-
-	//for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
-	//	var gemProperty = material.getProperty(PropertyKey.GEM);
-	//	var oreProperty = material.getProperty(PropertyKey.ORE);
-
-	//	if (gemProperty == null || oreProperty == null) {
-
-
-	//	}
-	//}
-
 	
 	GEM_INDICATORS.forEach(gem => 
 	{

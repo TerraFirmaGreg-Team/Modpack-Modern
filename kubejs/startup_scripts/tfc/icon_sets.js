@@ -9,7 +9,7 @@ function registerTFCIconSets(event) {
 	event.create('tfc_sulfur').parent('fine')
 
 	event.create('tfc_amethyst').parent('ruby')
-	event.create('tfc_redstone').parent('fine')
+	event.create('tfc_redstone').parent('rough')
 	event.create('tfc_diamond').parent('diamond')
 	event.create('tfc_emerald').parent('emerald')
 	event.create('tfc_lapis').parent('lapis')
@@ -20,10 +20,10 @@ function registerTFCIconSets(event) {
 	event.create('tfc_topaz').parent('gem_vertical')
 		
 	event.create('tfc_bismuth').parent('bright')
-	event.create('tfc_cassiterite').parent('bright')
-	event.create('tfc_garnierite').parent('bright')
-	event.create('tfc_hematite').parent('metallic')
-	event.create('tfc_limonite').parent('metallic')
+	event.create('tfc_cassiterite').parent('dull')
+	event.create('tfc_garnierite').parent('dull')
+	event.create('tfc_hematite').parent('dull')
+	event.create('tfc_limonite').parent('dull')
 	event.create('tfc_magnetite').parent('dull')
 	event.create('tfc_malachite').parent('shiny')
 	event.create('tfc_copper').parent('shiny')
