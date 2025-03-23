@@ -88,6 +88,8 @@ const registerFirmaCivRecipes = (event) => {
         .itemOutputs('firmaciv:firmaciv_compass')
         .duration(100)
         .EUt(4)
+
+    event.shapeless('firmaciv:firmaciv_compass', ['tfc:lens', '#tfc:bowls', '#tfc:magnetic_rocks' ])
     //#endregion
 
     //#region Cannon Barrel
