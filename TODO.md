@@ -3,7 +3,6 @@
 ## Gameplay
 - Wait for exception's thoughts about my earlier create progression changes
 - Quest overhaul
-- Merge medicines into 0.9
 - Make chalcocite melt into tfc copper? gtceu/materials.js
 - Make backpacks big enough to not go inside vessels - see registerTFCItemSize()
 - Field guide
@@ -25,12 +24,6 @@
 - Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust?
 
 ## Technical
-- GT icon sets
-	- How do the icons for the dirty crushed ores work, they have a non-colored overlay?
-		- If I can figure this out, then using tfc textures for gt tools should be very easy
-		- Maybe the tfc gems can use their own too
-	- Do the rest of the tfc ore block textures
-	- Spread out some more of the GT textures to use the other generated overlays
 - Auto generate buds
 	- Generate loot tables, have it change if you use a gem saw?
 - GT + TFC food expiration compat
@@ -43,9 +36,9 @@
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
 - Fix up the #minecraft:piglin_loved tag 
 - A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
-- Netherite diving suit needs insulation and art
+- Netherite diving suit needs insulation
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
-- Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? It’s the only thing you can farm along with gleamflowers which are pretty useless
+- Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? Itâ€™s the only thing you can farm along with gleamflowers which are pretty useless
 	- Or just disable ghost peppers and that system altogether, maybe they can just be piglin trade/loot exclusive
 	- If we disable it, remove vanilla soul soil and replace with an identical block (the texture is nice)
 
