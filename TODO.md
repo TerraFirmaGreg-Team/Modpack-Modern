@@ -13,7 +13,7 @@
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
-- Recipes for advanced peripherals
+- Recipes for advanced peripherals and computercraft
 - Add particular?
 - Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
@@ -31,7 +31,6 @@
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
-- Fix up the #minecraft:piglin_loved tag 
 - A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
 - Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? It’s the only thing you can farm along with gleamflowers which are pretty useless
