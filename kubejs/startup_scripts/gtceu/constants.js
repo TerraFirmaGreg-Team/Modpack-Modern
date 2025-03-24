@@ -51,7 +51,22 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 
-    'gtceu:rubber_planks'
+    'gtceu:rubber_planks',
+
+    // Sculk
+    'gtceu:tiny_echo_shard_dust',
+    'gtceu:small_echo_shard_dust',
+    'gtceu:echo_shard_dust',
+    'gtceu:chipped_echo_shard_gem',
+    'gtceu:flawed_echo_shard_gem',
+    'gtceu:flawless_echo_shard_gem',
+    'gtceu:exquisite_echo_shard_gem',
+    'gtceu:echo_shard_plate',
+    'gtceu:echo_shard_rod',
+    'gtceu:echo_shard_block',
+    'gtceu:tiny_skulk_dust',
+    'gtceu:small_skulk_dust',
+    'gtceu:skulk_dust'
 ];
 
 global.GTCEU_HIDED_ITEMS = [
