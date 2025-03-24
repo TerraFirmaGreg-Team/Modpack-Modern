@@ -8,12 +8,14 @@ global.BENEATH_DISABLED_ITEMS = [
 	"beneath:raw_slime",
 	"beneath:haunted_spike", 
 	"beneath:fungal_cobblerack",
-	"beneath:soul_clay",
+	"beneath:soul_farmland",
 	"beneath:gold_chunk",
 	"beneath:nether_pebble",
 	"beneath:seeds/crimson_roots",
 	"beneath:seeds/warped_roots",
 	"beneath:seeds/nether_wart",
+	"beneath:seeds/ghost_pepper",
+	"beneath:seeds/gleamflower",
 
 	"beneath:ore/poor_nether_gold",
 	"beneath:ore/normal_nether_gold",
@@ -25,6 +27,7 @@ global.BENEATH_DISABLED_ITEMS = [
 	"beneath:pure_decay",
 	"beneath:pure_sorrow",
 	"beneath:pure_flame",
+	"beneath:agonizing_fertilizer",
 
 	"beneath:wood/water_wheel/crimson",
 	"beneath:wood/gear_box/crimson",

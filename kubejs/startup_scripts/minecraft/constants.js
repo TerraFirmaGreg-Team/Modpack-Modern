@@ -669,6 +669,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:rabbit_hide',
     'minecraft:raw_iron',
     'minecraft:raw_iron_block', 
+    'minecraft:raw_gold',
     'minecraft:raw_gold_block', 
     'minecraft:raw_copper_block',
     'minecraft:compass',

@@ -48,6 +48,48 @@ const registerGTCEUItemTags = (event) => {
 	//#endregion
 
 	event.remove('minecraft:planks', 'gtceu:treated_wood_planks')
+
+	// Piglin things
+	event.add('minecraft:piglin_loved', 'gtceu:gold_plate')
+	event.add('minecraft:piglin_loved', 'gtceu:long_gold_rod')
+	event.add('minecraft:piglin_loved', 'gtceu:double_gold_plate')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_double_ingot')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_dust')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_double_wire')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_quadruple_wire')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_octal_wire')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_hex_wire')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_double_cable')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_quadruple_cable')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_octal_cable')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_hex_cable')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_small_fluid_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_normal_fluid_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_large_fluid_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_huge_fluid_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_quadruple_fluid_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_nonuple_fluid_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:gold_drum')
+	event.add('minecraft:piglin_loved', 'gtceu:purified_gold_ore')
+	event.add('minecraft:piglin_loved', 'gtceu:crushed_gold_ore')
+	event.add('minecraft:piglin_loved', 'gtceu:refined_gold_ore')
+	event.add('minecraft:piglin_loved', 'gtceu:impure_gold_dust')
+
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_ingot')
+	event.add('minecraft:piglin_loved', 'gtceu:long_rose_gold_rod')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_plate')
+	event.add('minecraft:piglin_loved', 'gtceu:double_rose_gold_plate')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_double_ingot')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_gear')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_block')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_small_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_normal_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_large_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_huge_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_small_restrictive_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_normal_restrictive_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_large_restrictive_item_pipe')
+	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_huge_restrictive_item_pipe')
 }
 
 const registerGTCEUBlockTags = (event) => {

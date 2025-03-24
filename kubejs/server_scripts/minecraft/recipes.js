@@ -921,12 +921,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Soul Soil
-
-	event.recipes.tfc.landslide('minecraft:soul_soil', 'minecraft:soul_soil')
-
-	//#endregion
-
 	//#region Netherite leggings (for the lavaproof diving set)
 
 	event.shaped('minecraft:netherite_leggings', [

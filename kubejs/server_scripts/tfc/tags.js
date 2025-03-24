@@ -71,6 +71,11 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:forge_fuel', 'gtceu:raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:poor_raw_coal')
 
+    // Piglin
+    event.add('minecraft:piglin_loved', 'tfc:ore/poor_native_gold')
+    event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
+    event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
+
     // Тэги для сундуков, чтобы отличать их виды
     global.TFC_WOOD_TYPES.forEach(woodType => {
         event.add('tfg:default_chests', `tfc:wood/chest/${woodType}`)
