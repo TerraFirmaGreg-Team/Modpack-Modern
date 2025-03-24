@@ -6,4 +6,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGCollapseRecipes(event)
 	registerTFGMoldRecipes(event)
 	registerTFGTerrariumRecipes(event)
+	registerTFGMedicineRecipes(event)
+	registerTFGMiscellaneousRecipes(event)
 }

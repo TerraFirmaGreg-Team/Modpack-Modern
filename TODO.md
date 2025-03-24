@@ -3,7 +3,6 @@
 ## Gameplay
 - Wait for exception's thoughts about my earlier create progression changes
 - Quest overhaul
-- Merge medicines into 0.9
 - Make chalcocite melt into tfc copper? gtceu/materials.js
 - Make backpacks big enough to not go inside vessels - see registerTFCItemSize()
 - Field guide
@@ -29,6 +28,7 @@
 - GT + TFC food expiration compat
 - Finish porting everything else in tfg-core that can be ported
 - Fix up the ores field guide generator tool
+- Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 
 ## Beneath
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
@@ -36,9 +36,9 @@
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
 - Fix up the #minecraft:piglin_loved tag 
 - A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
-- Netherite diving suit needs insulation and art
+- Netherite diving suit needs insulation
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
-- Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? It’s the only thing you can farm along with gleamflowers which are pretty useless
+- Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? Itâ€™s the only thing you can farm along with gleamflowers which are pretty useless
 	- Or just disable ghost peppers and that system altogether, maybe they can just be piglin trade/loot exclusive
 	- If we disable it, remove vanilla soul soil and replace with an identical block (the texture is nice)
 
