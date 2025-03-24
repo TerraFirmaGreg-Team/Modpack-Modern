@@ -14,6 +14,7 @@ ServerEvents.tags('item', event => {
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
+    registerDiggerHelmetItemTags(event)
     registerEndermanOverhaulItemTags(event)
     registerEveryCompatItemTags(event)
     registerExtendedAE2ItemTags(event)
@@ -30,6 +31,7 @@ ServerEvents.tags('item', event => {
     registerSophisticatedBackpacksItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
+    registerTFCTextileItemTags(event)
     registerTFGItemTags(event)
 })
 
@@ -112,7 +114,6 @@ TFCEvents.data(event => {
  * Срабатывает до инициализации рецептов, но после датапаков и тегов.
  */
 LootJS.modifiers((event) => {
-    event.enableLogging();
     registerGTCEULoots(event)
 });
 
@@ -142,6 +143,7 @@ ServerEvents.recipes(event => {
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
     registerCreateConnectedRecipes(event)
+    registerDiggerHelmetRecipes(event)
     registerEveryCompatRecipes(event)
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)

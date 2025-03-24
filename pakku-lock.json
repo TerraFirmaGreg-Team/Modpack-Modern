@@ -327,81 +327,6 @@
             ]
         },
         {
-            "pakku_id": "NhZu7nK81rpboBUH",
-            "pakku_links": [
-                "d8BnQkUyCUjyUmNE",
-                "uCACXyPoJ4iKQzNG"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "advancedae",
-                "modrinth": "advancedae"
-            },
-            "name": {
-                "curseforge": "AdvancedAE",
-                "modrinth": "AdvancedAE"
-            },
-            "id": {
-                "curseforge": "1084104",
-                "modrinth": "rxYaglEe"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "advanced_ae-1.0.11-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/rxYaglEe/versions/VzBWQasE/advanced_ae-1.0.11-1.20.1.jar",
-                    "id": "VzBWQasE",
-                    "parent_id": "rxYaglEe",
-                    "hashes": {
-                        "sha512": "f0560215a2c763763d9385f92513a7f9d6b42ed3403d98d6b75464f876ae0b8fcd83d8017c49886e1b4a791f4a00b579175d254ea0bb201c0b1e7e34301d0d61",
-                        "sha1": "935beb399b4c199da476ee3b288f140eb21ba2f2"
-                    },
-                    "required_dependencies": [
-                        "UhW5uCKw",
-                        "XxWD5pD3",
-                        "8BmcQJ2H"
-                    ],
-                    "size": 1364688,
-                    "date_published": "2024-12-23T21:12:53.129193Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "advanced_ae-1.0.11-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6017/571/advanced_ae-1.0.11-1.20.1.jar",
-                    "id": "6017571",
-                    "parent_id": "1084104",
-                    "hashes": {
-                        "sha1": "935beb399b4c199da476ee3b288f140eb21ba2f2",
-                        "md5": "b0056fc6860ca2aaa586f091cd7d3513"
-                    },
-                    "required_dependencies": [
-                        "957920",
-                        "388172",
-                        "223794"
-                    ],
-                    "size": 1364688,
-                    "date_published": "2024-12-23T21:12:45.730Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "4vY2wc52lDqNRsmG",
             "type": "MOD",
             "slug": {
@@ -3493,6 +3418,49 @@
             ]
         },
         {
+            "pakku_id": "j8Ir2JRnUYQEZNvJ",
+            "pakku_links": [
+                "uCACXyPoJ4iKQzNG"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "digger-helmet"
+            },
+            "name": {
+                "modrinth": "Digger Helmet"
+            },
+            "id": {
+                "modrinth": "8Aatj9Zy"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "diggerhelmet-1.20.1-1.0.0.15.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://cdn.modrinth.com/data/8Aatj9Zy/versions/SqKewtyi/diggerhelmet-1.20.1-1.0.0.15.jar",
+                    "id": "SqKewtyi",
+                    "parent_id": "8Aatj9Zy",
+                    "hashes": {
+                        "sha512": "f4d4c5b4bfcad60fb39f011f46c951a3a8a730c9f84d779b10a57622bcfae285180ed924900222b452d9f0c68874cfa00eecf53334ab0394b451ddb4ce8ce307",
+                        "sha1": "c42d40a023b0fcfbd9f3751f1ea31757ae65bb7b"
+                    },
+                    "required_dependencies": [
+                        "8BmcQJ2H"
+                    ],
+                    "size": 87578,
+                    "date_published": "2024-10-04T05:05:23.621223Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LStFy4sfjjGCv9JS",
             "type": "MOD",
             "side": "BOTH",
@@ -3890,45 +3858,6 @@
                     ],
                     "size": 4726281,
                     "date_published": "2024-05-25T08:46:14.527Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "Db5CX6DG4FVEMdtj",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "modrinth": "ebe-forge"
-            },
-            "name": {
-                "modrinth": "EnlightenedBlockEntities"
-            },
-            "id": {
-                "modrinth": "ntz4ZX7h"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "EBE-1.20-1.20.1-0.9.1B.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ntz4ZX7h/versions/rQm3ja4Q/EBE-1.20-1.20.1-0.9.1B.jar",
-                    "id": "rQm3ja4Q",
-                    "parent_id": "ntz4ZX7h",
-                    "hashes": {
-                        "sha512": "6f9b1eef1cc3982d9505c96e941190aa9c5996c30dd8de0f789a1b2cca0e4a41573d54ba199d93779586584361fafce0f109d7ea715cecff4e93a74196f52e17",
-                        "sha1": "581ac917ce1708a708fe5c66eef82e1978972743"
-                    },
-                    "required_dependencies": [],
-                    "size": 287043,
-                    "date_published": "2024-10-10T17:06:31.834220Z"
                 }
             ]
         },
@@ -5236,6 +5165,48 @@
                     "required_dependencies": [],
                     "size": 5630,
                     "date_published": "2023-08-31T22:12:50.967Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "nNBnQWZwvzYe5kBt",
+            "pakku_links": [
+                "GOh1ocuoLHhYMq2J"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "forgiving-world"
+            },
+            "name": {
+                "curseforge": "Forgiving World - Dimension Stacking[Forge/Fabric]"
+            },
+            "id": {
+                "curseforge": "523233"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "forgivingworld-1.20.1-4.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5470/219/forgivingworld-1.20.1-4.7.jar",
+                    "id": "5470219",
+                    "parent_id": "523233",
+                    "hashes": {
+                        "sha1": "3cc56387ad8646106f624d64b7e684594c1b443e",
+                        "md5": "3a4e1cb898b1ab5dd042ca48613eafd4"
+                    },
+                    "required_dependencies": [
+                        "326652"
+                    ],
+                    "size": 24083,
+                    "date_published": "2024-06-24T21:54:19.433Z"
                 }
             ]
         },
@@ -11055,6 +11026,79 @@
             ]
         },
         {
+            "pakku_id": "kSdjRVVlNT7JZpt4",
+            "pakku_links": [
+                "Wp4bimC12ZfUWRDW",
+                "4gtgWhFu0zLNFoiE",
+                "F6H99cZ4H6jZRpEK"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tfc-textile",
+                "modrinth": "tfc-textile"
+            },
+            "name": {
+                "curseforge": "TFC Textile (Legacy)",
+                "modrinth": "TFC Textile (Legacy)"
+            },
+            "id": {
+                "curseforge": "1085858",
+                "modrinth": "23aEXYED"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tfc_textile-1.0.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5761/738/tfc_textile-1.0.5.jar",
+                    "id": "5761738",
+                    "parent_id": "1085858",
+                    "hashes": {
+                        "sha1": "0f68aff31c58bcfd12306218766d24022d6e78db",
+                        "md5": "c4c9325e6e844d7285b0bf58707531bd"
+                    },
+                    "required_dependencies": [
+                        "309927",
+                        "940350",
+                        "302973"
+                    ],
+                    "size": 198232,
+                    "date_published": "2024-09-27T14:03:11.930Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "tfc_textile-1.0.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/23aEXYED/versions/wGgJ8Tae/tfc_textile-1.0.5.jar",
+                    "id": "wGgJ8Tae",
+                    "parent_id": "23aEXYED",
+                    "hashes": {
+                        "sha512": "2aa299b98fca1aef27334b23f68d58085e3d02be1650e68656e9313480bc76038685a4aaa3938bd20c59b49898d1ec992d02ede026a2e6f8fb2fe27985ae259e",
+                        "sha1": "0f68aff31c58bcfd12306218766d24022d6e78db"
+                    },
+                    "required_dependencies": [
+                        "K7eNiRnX",
+                        "JaCEZUhg"
+                    ],
+                    "size": 198232,
+                    "date_published": "2024-09-27T14:02:59.003826Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NPCQvjl7kGbWfW8M",
             "type": "MOD",
             "side": "BOTH",
@@ -11503,45 +11547,6 @@
                     "parent_id": "668983056",
                     "size": 325760,
                     "date_published": "2024-10-28T14:40:14Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "D6TNqURR5n4hKwTD",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "toadlib"
-            },
-            "name": {
-                "modrinth": "ToadLib"
-            },
-            "id": {
-                "modrinth": "CYQ7VYrM"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ToadLib-1.20-1.20.1-1.2.2.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/CYQ7VYrM/versions/dMYxJUuR/ToadLib-1.20-1.20.1-1.2.2.jar",
-                    "id": "dMYxJUuR",
-                    "parent_id": "CYQ7VYrM",
-                    "hashes": {
-                        "sha512": "03300bafba1ca19c17af04b226e655d919f0e67ca4cec16e1bfb428f502001ca5c3f1b740d49b064269bf59ef01c0d96a1c8c29717cd5cfbfc316e081f1f0fc9",
-                        "sha1": "05ffc78c81b5fc1760347c2ce32fc1fe1716d0f8"
-                    },
-                    "required_dependencies": [],
-                    "size": 618210,
-                    "date_published": "2025-01-10T15:56:53.990744Z"
                 }
             ]
         },
