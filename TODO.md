@@ -2,8 +2,6 @@
 
 ## Gameplay
 - Quest overhaul
-- Make chalcocite melt into tfc copper? gtceu/materials.js
-	- pentlandite into nickel too
 - Make backpacks big enough to not go inside vessels - see registerTFCItemSize()
 	- newer versions of sophisticated backpacks don't show up in jei for some reason?
 - Field guide
@@ -28,7 +26,6 @@
 - Fix up the ores field guide generator tool
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - Add sapling item tag to AFC saplings (they only have the block tag), make greenhouse recipes for them
-- Fix fluix block isIgnored()
 
 ## Beneath
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
