@@ -129,13 +129,12 @@ const registerTFCFuels = (event) => {
     event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
     event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
     event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
-    // TODO: crushed etc coal?
+    event.fuel('gtceu:coal_dust', 1415, 1200, 0.95)
 }
 
 const registerTFCLampFuels = (event) => {
     event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
     event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
-    // TODO: soybean oil?
 }
 
 const registerTFCFertilizers = (event) => {
