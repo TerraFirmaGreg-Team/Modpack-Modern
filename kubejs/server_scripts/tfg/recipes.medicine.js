@@ -52,6 +52,8 @@ function registerTFGMedicineRecipes(event) {
 			.itemInputs('gtceu:sodium_bicarbonate_dust', 'gtceu:lactose_dust', `${antipoison_ingredients}`, 'gtceu:tricalcium_phosphate_dust')
 			.duration(200)
 			.EUt(21)
+
+		// TODO: mixing bowl recipes? https://notenoughmail.github.io/kubejs_tfc/1.20.1/recipes/#firmalife-mixing-bowl
 	});
 	//#endregion
 
