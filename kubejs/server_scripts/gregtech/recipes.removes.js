@@ -499,4 +499,13 @@ function removeGTCEURecipes(event) {
 
 	// TODO: Удалить после фикса GTCEu
 	event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
+
+	// Mortar
+	event.remove({ id: 'gtceu:shaped/gem_to_dust_coal_chipped_gem' })
+	event.remove({ id: 'gtceu:shaped/gem_to_dust_coke_chipped_gem' })
+	event.remove({ id: 'gtceu:shaped/sandstone_polished_hammer' })
+	event.remove({ id: 'gtceu:shaped/stone_brick_polished_hammer' })
+	event.remove({ id: 'gtceu:shaped/purpur_polished_hammer' })
+	event.remove({ id: 'gtceu:shaped/red_sandstone_polished_hammer' })
+	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
 }
