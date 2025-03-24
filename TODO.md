@@ -31,9 +31,6 @@
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
 - A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
-- Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? It’s the only thing you can farm along with gleamflowers which are pretty useless
-	- Or just disable ghost peppers and that system altogether, maybe they can just be piglin trade/loot exclusive
-	- If we disable it, remove vanilla soul soil and replace with an identical block (the texture is nice)
 
 ## Post-0.9
 - Create 6

@@ -1,0 +1,6 @@
+{
+	"__comment__": "This removes the nether fertiliser tooltip that Beneath adds",
+	"ingredient": {
+		"item": "tfc:powder/sulfur"
+	}
+}
