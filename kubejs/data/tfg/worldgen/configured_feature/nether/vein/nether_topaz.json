@@ -125,28 +125,12 @@
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/small_blue_topaz_bud",
-					"weight": 20
+					"block": "gtceu:blue_topaz_bud_indicator",
+					"weight": 35
 				},
 				{
-					"block": "tfg:buds/medium_blue_topaz_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/large_blue_topaz_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/small_topaz_bud",
-					"weight": 15
-				},
-				{
-					"block": "tfg:buds/medium_topaz_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/large_topaz_bud",
-					"weight": 5
+					"block": "gtceu:topaz_bud_indicator",
+					"weight": 25
 				}
 			]
 		}

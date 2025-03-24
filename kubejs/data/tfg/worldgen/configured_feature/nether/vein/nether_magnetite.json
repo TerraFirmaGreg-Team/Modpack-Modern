@@ -148,16 +148,8 @@
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/small_sapphire_bud",
-					"weight": 3
-				},
-				{
-					"block": "tfg:buds/medium_sapphire_bud",
-					"weight": 2
-				},
-				{
-					"block": "tfg:buds/large_sapphire_bud",
-					"weight": 1
+					"block": "gtceu:sapphire_bud_indicator",
+					"weight": 5
 				}
 			]
 		}

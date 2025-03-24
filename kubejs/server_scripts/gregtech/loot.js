@@ -2,6 +2,33 @@
 
 const registerGTCEULoots = (event) => {
 
+	// #region Indicator Buds
+
+	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+
+		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)) {
+
+			let normalDrop = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
+			let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
+
+			let bud = `gtceu:${material.getName()}_bud_indicator`
+
+			console.log(`Geneating loot table for: ${bud}, ${normalDrop}, ${sawDrop}`)
+
+			event.addBlockLootModifier(bud)
+				.matchMainHand("tfc:gem_saw")
+				.addLoot(sawDrop);
+
+			event.addBlockLootModifier(bud)
+				.not(n => n.matchMainHand("tfc:gem_saw"))
+				.addLoot(normalDrop);
+		}
+	})
+
+	// #endregion
+
+	// #region Ores
+
 	global.ORE_BEARING_STONES.forEach(stoneType => {
 		GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 			if (material.hasProperty(PropertyKey.ORE)) {
@@ -54,4 +81,6 @@ const registerGTCEULoots = (event) => {
 			}
 		})
 	})
+
+	// #endregion
 }

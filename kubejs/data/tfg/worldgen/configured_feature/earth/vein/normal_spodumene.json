@@ -225,11 +225,19 @@
 			"blocks": [
 				{
 					"block": "gtceu:rock_salt_indicator",
-					"weight": 20
+					"weight": 10
+				},
+				{
+					"block": "gtceu:rock_salt_bud_indicator",
+					"weight": 10
 				},
 				{
 					"block": "gtceu:salt_indicator",
-					"weight": 30
+					"weight": 15
+				},
+				{
+					"block": "gtceu:salt_bud_indicator",
+					"weight": 15
 				},
 				{
 					"block": "gtceu:lepidolite_indicator",

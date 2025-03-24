@@ -124,28 +124,12 @@
 					"weight": 10
 				},
 				{
-					"block": "tfg:buds/small_grossular_bud",
-					"weight": 16
+					"block": "gtceu:grossular_bud_indicator",
+					"weight": 30
 				},
 				{
-					"block": "tfg:buds/medium_grossular_bud",
-					"weight": 9
-				},
-				{
-					"block": "tfg:buds/large_grossular_bud",
-					"weight": 5
-				},
-				{
-					"block": "tfg:buds/small_spessartine_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/medium_spessartine_bud",
-					"weight": 7
-				},
-				{
-					"block": "tfg:buds/large_spessartine_bud",
-					"weight": 3
+					"block": "gtceu:spessartine_bud_indicator",
+					"weight": 20
 				}
 			]
 		}

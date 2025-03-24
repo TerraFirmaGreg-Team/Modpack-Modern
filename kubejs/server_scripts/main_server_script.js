@@ -112,6 +112,7 @@ TFCEvents.data(event => {
  * Срабатывает до инициализации рецептов, но после датапаков и тегов.
  */
 LootJS.modifiers((event) => {
+    event.enableLogging();
     registerGTCEULoots(event)
 });
 

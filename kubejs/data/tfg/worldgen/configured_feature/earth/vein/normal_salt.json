@@ -86,12 +86,20 @@
 			"underground_count": 200,
 			"blocks": [
 				{
+					"block": "gtceu:rock_salt_bud_indicator",
+					"weight": 20
+				},
+				{
 					"block": "gtceu:rock_salt_indicator",
-					"weight": 40
+					"weight": 20
+				},
+				{
+					"block": "gtceu:salt_bud_indicator",
+					"weight": 15
 				},
 				{
 					"block": "gtceu:salt_indicator",
-					"weight": 30
+					"weight": 15
 				},
 				{
 					"block": "gtceu:lepidolite_indicator",

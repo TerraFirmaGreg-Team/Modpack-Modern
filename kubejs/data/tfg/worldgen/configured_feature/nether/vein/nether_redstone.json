@@ -59,28 +59,12 @@
 					"weight": 45
 				},
 				{
-					"block": "tfg:buds/small_ruby_bud",
+					"block": "gtceu:ruby_bud_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:cinnabar_bud_indicator",
 					"weight": 20
-				},
-				{
-					"block": "tfg:buds/medium_ruby_bud",
-					"weight": 12
-				},
-				{
-					"block": "tfg:buds/large_ruby_bud",
-					"weight": 8
-				},
-				{
-					"block": "tfg:buds/small_cinnabar_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/medium_cinnabar_bud",
-					"weight": 6
-				},
-				{
-					"block": "tfg:buds/large_cinnabar_bud",
-					"weight": 4
 				}
 			]
 		}

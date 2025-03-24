@@ -144,16 +144,8 @@
 					"weight": 5
 				},
 				{
-					"block": "tfg:buds/small_ruby_bud",
-					"weight": 7
-				},
-				{
-					"block": "tfg:buds/medium_ruby_bud",
-					"weight": 5
-				},
-				{
-					"block": "tfg:buds/large_ruby_bud",
-					"weight": 3
+					"block": "gtceu:ruby_bud_indicator",
+					"weight": 20
 				},
 				{
 					"block": "gtceu:goethite_indicator",

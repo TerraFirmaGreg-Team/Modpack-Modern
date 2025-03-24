@@ -196,16 +196,8 @@
 					"weight": 30
 				},
 				{
-					"block": "tfg:buds/small_diamond_bud",
-					"weight": 12
-				},
-				{
-					"block": "tfg:buds/medium_diamond_bud",
-					"weight": 8
-				},
-				{
-					"block": "tfg:buds/large_diamond_bud",
-					"weight": 6
+					"block": "gtceu:diamond_bud_indicator",
+					"weight": 25
 				}
 			]
 		}

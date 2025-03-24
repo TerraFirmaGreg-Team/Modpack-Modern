@@ -109,7 +109,7 @@
 			"blocks": [
 				{
 					"block": "gtceu:chalcopyrite_indicator",
-					"weight": 55
+					"weight": 60
 				},
 				{
 					"block": "gtceu:zeolite_indicator",
@@ -120,16 +120,8 @@
 					"weight": 20
 				},
 				{
-					"block": "tfg:buds/small_realgar_bud",
+					"block": "gtceu:realgar_bud_indicator",
 					"weight": 10
-				},
-				{
-					"block": "tfg:buds/medium_realgar_bud",
-					"weight": 6
-				},
-				{
-					"block": "tfg:buds/large_realgar_bud",
-					"weight": 4
 				}
 			]
 		}

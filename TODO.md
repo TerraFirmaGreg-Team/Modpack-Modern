@@ -10,6 +10,7 @@
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 	- Is there a way to use pack.json or something to just hide pages entirely?
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
+- Make our favourite ores hazardous again :)
 
 ## Mods
 - Check if we want to keep that advanced AE one
@@ -25,14 +26,6 @@
 - Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust?
 
 ## Technical
-- GT icon sets
-	- How do the icons for the dirty crushed ores work, they have a non-colored overlay?
-		- If I can figure this out, then using tfc textures for gt tools should be very easy
-		- Maybe the tfc gems can use their own too
-	- Do the rest of the tfc ore block textures
-	- Spread out some more of the GT textures to use the other generated overlays
-- Auto generate buds
-	- Generate loot tables, have it change if you use a gem saw?
 - GT + TFC food expiration compat
 - Finish porting everything else in tfg-core that can be ported
 - Fix up the ores field guide generator tool

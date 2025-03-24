@@ -139,16 +139,8 @@
 					"weight": 25
 				},
 				{
-					"block": "tfg:buds/small_monazite_bud",
-					"weight": 14
-				},
-				{
-					"block": "tfg:buds/medium_monazite_bud",
-					"weight": 8
-				},
-				{
-					"block": "tfg:buds/large_monazite_bud",
-					"weight": 5
+					"block": "gtceu:monazite_bud_indicator",
+					"weight": 25
 				}
 			]
 		}

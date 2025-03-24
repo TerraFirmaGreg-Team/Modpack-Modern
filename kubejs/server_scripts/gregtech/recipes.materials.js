@@ -399,6 +399,7 @@ function registerGTCEUMetalRecipes(event) {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
+		const gemProperty = material.getProperty(PropertyKey.GEM)
 
 		const anvilStack = ChemicalHelper.get(TFGTagPrefix.anvil, material, 1)
 		const finishedLampStack = ChemicalHelper.get(TFGTagPrefix.lamp, material, 1)
@@ -450,6 +451,20 @@ function registerGTCEUMetalRecipes(event) {
 			processImpureDust(TagPrefix.dustImpure, material)
 			processPureDust(TagPrefix.dustPure, material)
 			processDust(TagPrefix.dust, material)
+
+			if (gemProperty != null) {
+				let gem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+				let chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
+				let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
+
+				event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
+					`gtceu:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
+					.id(`shapeless/${material.getName()}_bud_indicator`)
+
+				event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
+					smallDust, [chipped, '#forge:tools/mortars']))
+					.id(`shapeless/hammer_chipped_${material.getName()}`)
+			}
 		}
 
 		if (anvilStack != null) {

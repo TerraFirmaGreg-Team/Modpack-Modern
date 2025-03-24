@@ -43,7 +43,6 @@ const registerTFCTagPrefixes = (event) => {
             .baseModelLocation(`tfc:block/rock/raw/${stoneTypeName}`)
             .unificationEnabled(true)
             .materialSupplier(() => material)
-
             .materialIconType(GTMaterialIconType.ore)
             .generationCondition(ItemGenerationCondition.hasOreProperty)
             

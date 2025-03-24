@@ -140,16 +140,8 @@
 					"weight": 5
 				},
 				{
-					"block": "tfg:buds/small_ruby_bud",
-					"weight": 8
-				},
-				{
-					"block": "tfg:buds/medium_ruby_bud",
-					"weight": 6
-				},
-				{
-					"block": "tfg:buds/large_ruby_bud",
-					"weight": 4
+					"block": "gtceu:ruby_bud_indicator",
+					"weight": 20
 				}
 			]
 		}

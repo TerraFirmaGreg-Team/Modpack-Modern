@@ -63,14 +63,24 @@ const registerGTCEUBlockTags = (event) => {
 
 	// Let GT indicators be covered by snow
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-		const oreProperty = material.getProperty(PropertyKey.ORE)
-
-		if (oreProperty != null) {
+		
+		if (material.hasProperty(PropertyKey.ORE)) {
 			let indicator = `gtceu:${material.getName()}_indicator`;
 
 			event.add('tfg:dust_ore_indicators', indicator)
 			event.add('tfc:can_be_snow_piled', indicator)
 			event.add('tfc:can_be_ice_piled', indicator)
+
+			if (material.hasProperty(PropertyKey.GEM)) {
+
+				let bud = `gtceu:${material.getName()}_bud_indicator`;
+				
+				event.add('tfg:bud_ore_indicators', bud)
+				event.add('tfc:can_be_snow_piled', bud)
+				event.add('tfc:can_be_ice_piled', bud)
+
+				event.add('minecraft:mineable/pickaxe', bud)
+			}
 		}
 	})
 }
