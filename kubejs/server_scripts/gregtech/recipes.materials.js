@@ -461,9 +461,11 @@ function registerGTCEUMetalRecipes(event) {
 					`gtceu:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
 					.id(`shapeless/${material.getName()}_bud_indicator`)
 
-				event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-					smallDust, [chipped, '#forge:tools/mortars']))
-					.id(`shapeless/hammer_chipped_${material.getName()}`)
+				event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(
+					smallDust,
+					[ 'A', 'B' ],
+					{ A: chipped, B: '#forge:tools/mortars'}))
+					.id(`shapeless/mortar_chipped_${material.getName()}`)
 			}
 		}
 
