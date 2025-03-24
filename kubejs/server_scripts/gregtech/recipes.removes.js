@@ -508,4 +508,5 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/purpur_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
+	event.remove({ id: 'gtceu:shaped_fluid_container/brick_from_water' })
 }

@@ -1,6 +1,10 @@
 // priority: 0
 
 const registerCreateConnectedRecipes = (event) => {
+
+    // Remove Fluid Vessel Crafting
+    event.remove({id: 'create_connected:crafting/kinetics/fluid_vessel'})
+    
     // Centrifugal Clutch
     event.shapeless('create_connected:centrifugal_clutch', [
         'create:andesite_casing',
