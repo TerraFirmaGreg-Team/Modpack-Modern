@@ -3383,16 +3383,40 @@
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
-                "curseforge": "detected-setblock-be-gone"
+                "curseforge": "detected-setblock-be-gone",
+                "modrinth": "dsbg"
             },
             "name": {
-                "curseforge": "Detected setBlock Be Gone"
+                "curseforge": "Detected setBlock Be Gone",
+                "modrinth": "Detected setBlock Be Gone"
             },
             "id": {
-                "curseforge": "942945"
+                "curseforge": "942945",
+                "modrinth": "zv7fYVyQ"
             },
             "redistributable": false,
             "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "dsbg-1.0-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/zv7fYVyQ/versions/JJU0kqnK/dsbg-1.0-1.20.1.jar",
+                    "id": "JJU0kqnK",
+                    "parent_id": "zv7fYVyQ",
+                    "hashes": {
+                        "sha512": "9590a9652e85220d7195ac18df17d99d1b292aa5e5126656eeeeaead65018d50e8d35f7f2eccd403ad6651ca328d7fccb57f55fac0d14e4324e27b0d864c216c",
+                        "sha1": "349a91654be8df6af5a19b02c7bb47758c09bac4"
+                    },
+                    "required_dependencies": [],
+                    "size": 273328,
+                    "date_published": "2024-01-25T00:03:33.444363Z"
+                },
                 {
                     "type": "curseforge",
                     "file_name": "dsbg-1.0-1.20.1.jar",
@@ -10354,7 +10378,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.23.6.1211.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.20.5.1044.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10363,18 +10387,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6303/388/sophisticatedbackpacks-1.20.1-3.23.6.1211.jar",
-                    "id": "6303388",
+                    "url": "https://edge.forgecdn.net/files/5296/475/sophisticatedbackpacks-1.20.1-3.20.5.1044.jar",
+                    "id": "5296475",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "10e7979236c1fac796c172ce14016b03c2b6ff8e",
-                        "md5": "848e20a3094e77d5263464fe7c82ab8a"
+                        "sha1": "82e97629d2383d87d65f6684c6270c438f95156b",
+                        "md5": "1cb86d978ee8780206de685497d1faf0"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 897034,
-                    "date_published": "2025-03-14T15:01:13.337Z"
+                    "size": 851750,
+                    "date_published": "2024-04-27T20:58:03.903Z"
                 }
             ]
         },
@@ -10393,7 +10417,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.2.23.902.jar",
+                    "file_name": "sophisticatedcore-1.20.1-0.6.22.611.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10402,16 +10426,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6317/48/sophisticatedcore-1.20.1-1.2.23.902.jar",
-                    "id": "6317048",
+                    "url": "https://edge.forgecdn.net/files/5326/245/sophisticatedcore-1.20.1-0.6.22.611.jar",
+                    "id": "5326245",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "382432e5e2f6c8eb1212ef7cfbee4eb8ef5fa323",
-                        "md5": "dff2aaa24facbad483eac3582f1966ae"
+                        "sha1": "f2f9639f50d04fa4f6ae7a2e972428f40a8f80d4",
+                        "md5": "3569d694bccc0e8e35ab7707b4baf0b1"
                     },
                     "required_dependencies": [],
-                    "size": 1170980,
-                    "date_published": "2025-03-17T21:45:08.283Z"
+                    "size": 1080551,
+                    "date_published": "2024-05-08T09:36:29.750Z"
                 }
             ]
         },
@@ -11867,7 +11891,7 @@
                 "modrinth": "visual-workbench"
             },
             "name": {
-                "curseforge": "Visual Workbench [Forge & Fabric]",
+                "curseforge": "Visual Workbench",
                 "modrinth": "Visual Workbench"
             },
             "id": {
