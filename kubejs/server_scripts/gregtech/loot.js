@@ -11,9 +11,7 @@ const registerGTCEULoots = (event) => {
 			let normalDrop = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
 			let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
 
-			let bud = `gtceu:${material.getName()}_bud_indicator`
-
-			console.log(`Geneating loot table for: ${bud}, ${normalDrop}, ${sawDrop}`)
+			let bud = `gtceu:${material.getName()}_bud_indicator`;
 
 			event.addBlockLootModifier(bud)
 				.matchMainHand("tfc:gem_saw")
