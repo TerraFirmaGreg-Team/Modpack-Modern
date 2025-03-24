@@ -1,7 +1,6 @@
 # TO-DO LIST
 
 ## Gameplay
-- Wait for exception's thoughts about my earlier create progression changes
 - Quest overhaul
 - Make chalcocite melt into tfc copper? gtceu/materials.js
 - Make backpacks big enough to not go inside vessels - see registerTFCItemSize()
@@ -10,17 +9,13 @@
 	- Is there a way to use pack.json or something to just hide pages entirely?
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
+- Early game create changes? not sure if 0.9 or post-0.9
 
 ## Mods
-- Check if we want to keep that advanced AE one
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
 - Add particular?
 - Add recipes for chalk
-- Add that one with a helmet with a light in it
-- Find and add the one that lets you travel to the nether via bedrock
-	- https://www.curseforge.com/minecraft/mc-mods/forgiving-world
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
-- TFC textile? for some more drip
 - Add that airplane tfg compat mod in the server thread
 - Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust?
 
@@ -29,6 +24,7 @@
 - Finish porting everything else in tfg-core that can be ported
 - Fix up the ores field guide generator tool
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
+- Add sapling item tag to AFC saplings (they only have the block tag), make greenhouse recipes for them
 
 ## Beneath
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
@@ -53,6 +49,7 @@
 - Reskin the rockets to match the GT casing textures
 - Caelum TFC mod? makes the sky look more interesting which is thematic, is it compatible with ad astra?
 - Waypoints but retextured, is there a way to make it require "payment" like through a bucket of rocket fuel?
+- Configure forgiving world to work with orbits
 
 ### Mars
 - Merge the cold + temperate biomes on mars and instead spread out the different forest tiers
