@@ -2,8 +2,6 @@
 
 ## Gameplay
 - Quest overhaul
-- Make backpacks big enough to not go inside vessels - see registerTFCItemSize()
-	- newer versions of sophisticated backpacks don't show up in jei for some reason?
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 	- Is there a way to use pack.json or something to just hide pages entirely?
