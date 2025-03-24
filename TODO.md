@@ -14,7 +14,7 @@
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
 - Add particular?
-- Add recipes for chalk
+- Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - Add that airplane tfg compat mod in the server thread
 - Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust?
@@ -32,7 +32,6 @@
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
 - Fix up the #minecraft:piglin_loved tag 
 - A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
-- Netherite diving suit needs insulation
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
 - Think about fertiliser system, is it possible to turn the ghost peppers into a normal crop and just disable beneath's system? It’s the only thing you can farm along with gleamflowers which are pretty useless
 	- Or just disable ghost peppers and that system altogether, maybe they can just be piglin trade/loot exclusive
