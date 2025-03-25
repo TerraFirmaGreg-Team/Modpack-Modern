@@ -8,6 +8,7 @@
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
 - Early game create changes? not sure if 0.9 or post-0.9
+- Any recipe that wants beeswax? make it also allow paraffin wax or whatever that new one is called. Helpful so people don't get as screwed by bee RNG
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
