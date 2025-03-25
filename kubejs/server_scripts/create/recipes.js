@@ -188,7 +188,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:plates/wrought_iron',
-		C: '#tfg:cloth'
+		C: '#forge:cloth'
 	}).id('tfg:create/shaped/nozzle')
 
 	// Ручка, чтобы люто крутить
@@ -605,7 +605,7 @@ const registerCreateRecipes = (event) => {
 		'AAA'
 	], {
 		A: 'create:sail_frame',
-		B: '#tfg:cloth'
+		B: '#forge:cloth'
 	}).id('tfg:create/shaped/white_sail')
 
 
@@ -950,7 +950,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: 'tfc:metal/boots/copper',
-		C: '#forge:ingots/lead',
+		C: '#forge:ingots/iron',
 		D: 'firmaciv:large_waterproof_hide'
 	}).id('tfg:create/shaped/copper_diving_boots')
 
@@ -1057,7 +1057,7 @@ const registerCreateRecipes = (event) => {
 		'ABA'
 	], {
 		A: '#forge:nuggets/wrought_iron',
-		B: '#tfg:cloth'
+		B: '#forge:cloth'
 	}).id('tfg:create/shaped/filter')
 
 	// Фильтр аттрибутов
@@ -1065,7 +1065,7 @@ const registerCreateRecipes = (event) => {
 		'ABA'
 	], {
 		A: '#forge:nuggets/brass',
-		B: '#tfg:cloth'
+		B: '#forge:cloth'
 	}).id('tfg:create/shaped/attribute_filter')
 
 	// Расписание поездов

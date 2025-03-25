@@ -12,10 +12,9 @@
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
 - Recipes for advanced peripherals and computercraft
-- Add particular?
+	- half of computercraft seems to have vanished for some reason?
 - Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
-- Add that airplane tfg compat mod in the server thread
 - Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust?
 
 ## Technical

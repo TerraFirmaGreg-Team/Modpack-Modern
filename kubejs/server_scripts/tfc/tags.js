@@ -196,11 +196,6 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:corals', 'tfc:coral/fire_dead_coral')
     event.add('tfc:corals', 'tfc:coral/horn_dead_coral')
 
-    // Cloth
-    event.add('tfg:cloth', 'tfc:burlap_cloth')
-    event.add('tfg:cloth', 'tfc:wool_cloth')
-    event.add('tfg:cloth', "tfc:silk_cloth")
-
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {

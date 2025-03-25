@@ -155,6 +155,7 @@ ServerEvents.recipes(event => {
     registerGTCEURecipes(event)
     registerHandGliderRecipes(event)
     registerHotOrNotRecipes(event)
+    registerImmersiveAircraftRecipes(event)
     registerMegaCellsRecipes(event)
     registerMERequesterRecipes(event)
     registerMinecraftRecipes(event)

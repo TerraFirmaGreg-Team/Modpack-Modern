@@ -728,6 +728,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_nylium', 
     'minecraft:warped_nylium', 
     'minecraft:soul_sand', 
+    'minecraft:soul_soil', 
+    'minecraft:crying_obsidian', 
     'minecraft:nether_wart_block', 
     'minecraft:warped_wart_block', 
     'minecraft:crimson_fungus', 

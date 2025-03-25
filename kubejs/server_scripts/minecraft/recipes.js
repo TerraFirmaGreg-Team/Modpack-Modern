@@ -158,44 +158,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Бамбуковые доски
-
-	event.shapeless('2x minecraft:bamboo_planks', [
-		'#minecraft:bamboo_blocks',
-		'#tfc:saws'
-	]).id('minecraft:bamboo_planks')
-
-	//#endregion
-
-	//#region Бамбуковая кнопка
-
-	event.shaped('minecraft:bamboo_pressure_plate', [
-		'ABA',
-		'CDC',
-		'AEA'
-	], {
-		A: '#forge:screws/wood',
-		B: '#tfc:hammers',
-		C: '#tfg:bamboo_slabs',
-		D: '#forge:springs',
-		E: '#forge:tools/screwdrivers'
-	}).id(`minecraft:bamboo_pressure_plate`)
-
-	event.recipes.gtceu.assembler(`tfg:minecraft/bamboo_pressure_plate`)
-		.itemInputs('#forge:springs', '#tfg:bamboo_slabs')
-		.circuit(0)
-		.itemOutputs('2x minecraft:bamboo_pressure_plate')
-		.duration(50)
-		.EUt(2)
-
-	//#endregion
-
-	//#region Бамбуковая нажимная плита
-
-	generateCutterRecipe(event, 'minecraft:bamboo_pressure_plate', null, '6x minecraft:bamboo_button', 50, 2, `bamboo_button`)
-
-	//#endregion
-
 	//#region Выход: Шаблон баннера
 
 	event.shapeless('minecraft:flower_banner_pattern', [
@@ -264,63 +226,6 @@ const registerMinecraftRecipes = (event) => {
 		B: '#forge:rods/wooden',
 		C: '#tfg:rock_slabs'
 	}).id('minecraft:grindstone')
-
-	//#endregion
-
-	//#region Выхож: Железная дверь
-
-	event.recipes.gtceu.assembler('iron_door')
-		.itemInputs('#forge:plates/wrought_iron')
-		.circuit(6)
-		.itemOutputs('minecraft:iron_door')
-		.duration(100)
-		.EUt(16)
-
-	//#endregion
-
-	//#region Выход: Железная нажимная плита
-
-	event.shaped('2x minecraft:heavy_weighted_pressure_plate', [
-		'ABA',
-		'CDC',
-		'AEA'
-	], {
-		A: '#forge:screws/wrought_iron',
-		B: '#tfc:hammers',
-		C: 'gtceu:wrought_iron_block',
-		D: '#forge:springs',
-		E: '#forge:tools/screwdrivers'
-	}).id('minecraft:heavy_weighted_pressure_plate')
-
-	event.recipes.gtceu.assembler('heavy_weighted_pressure_plate')
-		.itemInputs('#forge:springs', 'gtceu:wrought_iron_block')
-		.circuit(0)
-		.itemOutputs('4x minecraft:heavy_weighted_pressure_plate')
-		.duration(50)
-		.EUt(4)
-
-	//#endregion
-
-	//#region Выход: Золотая нажимная плита
-
-	event.shaped('2x minecraft:light_weighted_pressure_plate', [
-		'ABA',
-		'CDC',
-		'AEA'
-	], {
-		A: '#forge:screws/wrought_iron',
-		B: '#tfc:hammers',
-		C: 'minecraft:gold_block',
-		D: '#forge:springs',
-		E: '#forge:tools/screwdrivers'
-	}).id('minecraft:light_weighted_pressure_plate')
-
-	event.recipes.gtceu.assembler('light_weighted_pressure_plate')
-		.itemInputs('#forge:springs', 'minecraft:gold_block')
-		.circuit(0)
-		.itemOutputs('4x minecraft:light_weighted_pressure_plate')
-		.duration(50)
-		.EUt(4)
 
 	//#endregion
 
@@ -445,22 +350,6 @@ const registerMinecraftRecipes = (event) => {
 		B: '#forge:gems/nether_quartz',
 		C: '#tfc:rock/smooth'
 	}).id('tfg:shaped/comparator_nether_quartz');
-
-	//#endregion
-
-	//#region Выход: Крюк
-
-	event.shapeless('minecraft:tripwire_hook', [
-		'#forge:rods/wood',
-		'#forge:rings/wrought_iron',
-		'#forge:small_springs'
-	]).id('tfg:shaped/tripwire_hook')
-
-	event.recipes.gtceu.assembler('tripwire_hook')
-		.itemInputs('#forge:rods/wood', '#forge:rings/wrought_iron', '#forge:small_springs')
-		.itemOutputs('2x minecraft:tripwire_hook')
-		.duration(100)
-		.EUt(4)
 
 	//#endregion
 
@@ -668,34 +557,6 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Вагонетка
-
-	event.shaped('minecraft:minecart', [
-		'A A',
-		'AAA',
-		'B B'
-	], {
-		A: 'gtceu:wrought_iron_plate',
-		B: 'gtceu:iron_minecart_wheels'
-	}).id('tfc:crafting/vanilla/redstone/minecart')
-
-	event.shaped('minecraft:minecart', [
-		'A A',
-		'AAA',
-		'B B'
-	], {
-		A: 'gtceu:wrought_iron_plate',
-		B: 'gtceu:steel_minecart_wheels'
-	}).id('tfc:crafting/vanilla/redstone/steel_minecart')
-
-	event.recipes.gtceu.assembler('minecart')
-		.itemInputs('3x #forge:plates/wrought_iron', '3x #forge:rings/wrought_iron')
-		.itemOutputs('minecraft:minecart')
-		.duration(100)
-		.EUt(2)
-
-	//#endregion
-
 	//#region Выход: Тигель
 
 	event.shaped('minecraft:cauldron', [
@@ -801,6 +662,17 @@ const registerMinecraftRecipes = (event) => {
 		.duration(100)
 		.EUt(30)
 
+	event.shaped('minecraft:dispenser', [
+		'ADA',
+		'ABA',
+		'ACA'
+	], {
+		A: '#forge:stone',
+		B: 'minecraft:bow',
+		C: 'minecraft:redstone',
+		D: 'tfc:brass_mechanisms'
+	}).id('gtceu:shaped/dispenser')
+
 	//#endregion
 
 	//#region Выход: Выбрасыватель
@@ -811,6 +683,16 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:dropper')
 		.duration(100)
 		.EUt(30)
+
+	event.shaped('minecraft:dropper', [
+		'AAA',
+		'ADA',
+		'ACA'
+	], {
+		A: '#forge:stone',
+		C: 'minecraft:redstone',
+		D: 'tfc:brass_mechanisms'
+	}).id('gtceu:shaped/dropper')
 
 	//#endregion
 
