@@ -1351,18 +1351,24 @@ const registerGTCEURecipes = (event) => {
 			' D '
 		], {
 			A: '#forge:string',
-			B: '#tfg:cloth',
+			B: '#forge:cloth',
 			C: 'minecraft:paper',
 			D: '#tfc:sewing_needles'
 		})
 	).id('gtceu:shaped/face_mask')
 
 	event.recipes.gtceu.assembler('assemble_face_mask')
-		.itemInputs('4x #forge:string', '#tfg:cloth', 'minecraft:paper')
+		.itemInputs('4x #forge:string', '#forge:cloth', 'minecraft:paper')
 		.itemOutputs('gtceu:face_mask')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.circuit(7)
 
 	// #endregion
+
+	event.replaceInput({id: 'gtceu:shaped/nightvision_goggles'}, 'gtceu:glass_lens', 'tfc:lens')
+	
+	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'minecraft:iron_bars', '#tfg:metal_bars')
+	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'gtceu:wood_plate', '#tfc:lumber')
+
 }

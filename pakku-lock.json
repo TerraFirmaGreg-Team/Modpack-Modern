@@ -5939,6 +5939,56 @@
             ]
         },
         {
+            "pakku_id": "8krnDkKYFce3qZfO",
+            "pakku_links": [
+                "w5G2EmycbcFrsM0g",
+                "F6H99cZ4H6jZRpEK",
+                "apqasFnXUkYXZUFj",
+                "5N8b1NjyistuTaVG",
+                "NcKQPvd5HQneyraR"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "iatfg-integration"
+            },
+            "name": {
+                "modrinth": "IA + TFG Integration"
+            },
+            "id": {
+                "modrinth": "6Wl3t7s9"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "iatfg-1.3.2-mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/6Wl3t7s9/versions/jXoVQDSZ/iatfg-1.3.2-mc1.20.1.jar",
+                    "id": "jXoVQDSZ",
+                    "parent_id": "6Wl3t7s9",
+                    "hashes": {
+                        "sha512": "e519a65b18284d4c62e12165ed6a1e60a16daf31fd4d8bc057cdbe98feda46f892e84386d2ca2ec4edb388c31d9ba51a2591e9016972a4e8aafd7455d9e0bcbe",
+                        "sha1": "6a4894f6b92da3879509eaf70725b9287aefd758"
+                    },
+                    "required_dependencies": [
+                        "x3HZvrj6",
+                        "JaCEZUhg",
+                        "7tG215v7",
+                        "wbgfS34j",
+                        "9qdTHi0q"
+                    ],
+                    "size": 40576,
+                    "date_published": "2025-01-14T10:45:44.008667Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "z1qM65HXcowNZoh2",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
@@ -6128,6 +6178,67 @@
                     "required_dependencies": [],
                     "size": 428350,
                     "date_published": "2025-03-16T17:12:38.090Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "w5G2EmycbcFrsM0g",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "immersive-aircraft",
+                "modrinth": "immersive-aircraft"
+            },
+            "name": {
+                "curseforge": "Immersive Aircraft [Fabric/Forge]",
+                "modrinth": "Immersive Aircraft"
+            },
+            "id": {
+                "curseforge": "666014",
+                "modrinth": "x3HZvrj6"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "immersive_aircraft-1.2.2+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6316/345/immersive_aircraft-1.2.2+1.20.1-forge.jar",
+                    "id": "6316345",
+                    "parent_id": "666014",
+                    "hashes": {
+                        "sha1": "5f1c9fb4a9825557a951bd5f97465fe44fc01df7",
+                        "md5": "18fa516980439d1b7f4fd1d3a68334f8"
+                    },
+                    "required_dependencies": [],
+                    "size": 2180392,
+                    "date_published": "2025-03-17T18:06:57.950Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "immersive_aircraft-1.2.2+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/x3HZvrj6/versions/X2smCkoc/immersive_aircraft-1.2.2+1.20.1-forge.jar",
+                    "id": "X2smCkoc",
+                    "parent_id": "x3HZvrj6",
+                    "hashes": {
+                        "sha512": "51131231da1e9953e6c5850b103cb87b04de7767d2771e7cc1477b6c8ef83a7088c0823ade27ab9e45c075924043151af34c716c7a051296b9b1ff13d6b328af",
+                        "sha1": "5f1c9fb4a9825557a951bd5f97465fe44fc01df7"
+                    },
+                    "required_dependencies": [],
+                    "size": 2180392,
+                    "date_published": "2025-03-17T18:07:00.527935Z"
                 }
             ]
         },
@@ -8033,6 +8144,72 @@
                     ],
                     "size": 387196,
                     "date_published": "2025-02-09T14:26:09.890Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NcKQPvd5HQneyraR",
+            "pakku_links": [
+                "w5G2EmycbcFrsM0g"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "man-of-many-planes",
+                "modrinth": "man-of-many-planes"
+            },
+            "name": {
+                "curseforge": "Man of Many Planes",
+                "modrinth": "Man of Many Planes"
+            },
+            "id": {
+                "curseforge": "984493",
+                "modrinth": "9qdTHi0q"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "man_of_many_planes-0.2.0+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5713/356/man_of_many_planes-0.2.0+1.20.1-forge.jar",
+                    "id": "5713356",
+                    "parent_id": "984493",
+                    "hashes": {
+                        "sha1": "0037367a8af0d55a1b7f4c43dfc94cbdaca281db",
+                        "md5": "513ceaf49ede4812691e6e80fb4cbdee"
+                    },
+                    "required_dependencies": [
+                        "666014"
+                    ],
+                    "size": 309137,
+                    "date_published": "2024-09-11T12:05:28.360Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "man_of_many_planes-0.2.0+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/9qdTHi0q/versions/uZNB5Zrk/man_of_many_planes-0.2.0+1.20.1-forge.jar",
+                    "id": "uZNB5Zrk",
+                    "parent_id": "9qdTHi0q",
+                    "hashes": {
+                        "sha512": "82d78136ea735447b2a8ed929e26776b508b973b1c9200dffb3cc7de76b9e138b6563180fa906c46d9fa726aa1012e139f03e7fd008815b20b1066ae484d149c",
+                        "sha1": "0037367a8af0d55a1b7f4c43dfc94cbdaca281db"
+                    },
+                    "required_dependencies": [],
+                    "size": 309137,
+                    "date_published": "2024-09-11T12:05:29.630931Z"
                 }
             ]
         },

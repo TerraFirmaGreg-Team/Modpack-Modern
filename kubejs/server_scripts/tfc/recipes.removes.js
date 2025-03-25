@@ -152,5 +152,4 @@ function removeTFCRecipes(event) {
 	event.remove({ id: `tfc:anvil/steel_pump` })
 	event.remove({ id: `tfc:crafting/steel_pump` })
 	event.remove({ id: `tfc:crafting/crankshaft` })
-
 }

@@ -1,4 +1,4 @@
-﻿// priority: 0
+// priority: 0
 
 function removeGTCEURecipes(event) {
 
@@ -508,5 +508,49 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/purpur_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
+  
 	event.remove({ id: 'gtceu:shaped_fluid_container/brick_from_water' })
+
+	// Misc vanilla stuff
+	event.remove({ id: 'gtceu:shaped/observer' })
+	event.remove({ id: 'gtceu:shaped/observer_certus' })
+	event.remove({ id: 'gtceu:shaped/observer_quartzite' })
+	event.remove({ id: 'gtceu:shaped/piston_iron' })
+	event.remove({ id: 'gtceu:shaped/comparator' })
+	event.remove({ id: 'gtceu:shaped/repeater' })
+	event.remove({ id: 'gtceu:shaped/crossbow' })
+	event.remove({ id: 'gtceu:shaped/spyglass' })
+	event.remove({ id: 'gtceu:shaped/lead' })
+	event.remove({ id: 'gtceu:shaped/target' })
+	event.remove({ id: 'gtceu:shaped/lectern' })
+	event.remove({ id: 'gtceu:shaped/item_frame' })
+	event.remove({ id: 'gtceu:shaped/clock' })
+	event.remove({ id: 'gtceu:shaped/loom' })
+	event.remove({ id: 'gtceu:shaped/scaffolding' })
+	event.remove({ id: 'gtceu:shaped/bow' })
+	event.remove({ id: 'gtceu:shaped/leather_horse_armor' })
+	event.remove({ id: 'gtceu:shaped/bowl' })
+	event.remove({ id: 'gtceu:shaped/flower_pot' })
+	event.remove({ id: 'gtceu:shaped/jack_o_lantern' })
+	event.remove({ id: 'gtceu:shaped/armor_stand' })
+	event.remove({ id: 'gtceu:shaped/white_bed' })
+	event.remove({ id: 'gtceu:shaped/light_gray_bed' })
+	event.remove({ id: 'gtceu:shaped/gray_bed' })
+	event.remove({ id: 'gtceu:shaped/black_bed' })
+	event.remove({ id: 'gtceu:shaped/brown_bed' })
+	event.remove({ id: 'gtceu:shaped/red_bed' })
+	event.remove({ id: 'gtceu:shaped/orange_bed' })
+	event.remove({ id: 'gtceu:shaped/yellow_bed' })
+	event.remove({ id: 'gtceu:shaped/lime_bed' })
+	event.remove({ id: 'gtceu:shaped/green_bed' })
+	event.remove({ id: 'gtceu:shaped/cyan_bed' })
+	event.remove({ id: 'gtceu:shaped/light_blue_bed' })
+	event.remove({ id: 'gtceu:shaped/blue_bed' })
+	event.remove({ id: 'gtceu:shaped/purple_bed' })
+	event.remove({ id: 'gtceu:shaped/magenta_bed' })
+	event.remove({ id: 'gtceu:shaped/pink_bed' })
+	event.remove({ id: 'gtceu:assembler/bell' })
+	event.remove({ id: 'gtceu:assembler/armor_stand' })
+	event.remove({ id: 'gtceu:assembler/piston_stainless_steel' })
+
 }

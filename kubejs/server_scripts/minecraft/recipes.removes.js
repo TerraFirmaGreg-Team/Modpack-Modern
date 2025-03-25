@@ -1664,7 +1664,8 @@ function removeMinecraftRecipes(event) {
 	//#endregion
 
 	//#region Выход: Резные книжные полки
-
+	
+	event.remove({ id: 'minecraft:book' })
 	event.remove({ id: 'minecraft:chiseled_bookshelf' })
 
 	//#endregion
@@ -1893,10 +1894,16 @@ function removeMinecraftRecipes(event) {
 
 	//#endregion
 
+	// #region Grindstone
+
+	event.remove({ id: 'minecraft:grindstone' })
+
+	// #endregion
+
 	//#region Выход: Железные прутья
 
 	event.remove({ id: 'gtceu:shaped/iron_bars' })
-	event.remove({ id: 'gtceu:assembler/iron_nars' })
+	event.remove({ id: 'gtceu:assembler/iron_bars' })
 
 	//#endregion
 

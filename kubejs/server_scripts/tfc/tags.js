@@ -196,11 +196,6 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:corals', 'tfc:coral/fire_dead_coral')
     event.add('tfc:corals', 'tfc:coral/horn_dead_coral')
 
-    // Cloth
-    event.add('tfg:cloth', 'tfc:burlap_cloth')
-    event.add('tfg:cloth', 'tfc:wool_cloth')
-    event.add('tfg:cloth', "tfc:silk_cloth")
-
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
         global.TFC_ROCK_SLAB_BLOCK_TYPES.forEach(slabType => {
@@ -443,43 +438,7 @@ const registerTFCFluidTags = (event) => {
 const registerTFCPlacedFeatures = (event) => {
     
     // Удаление
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_copper')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_malachite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_tetrahedrite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_malachite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_tetrahedrite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/rich_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/fake_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_silver')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_native_silver')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_cassiterite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_bismuthinite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_bismuthinite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_sphalerite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_sphalerite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_hematite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_magnetite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_limonite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_garnierite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/gabbro_garnierite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/graphite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/lignite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/bituminous_coal')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/sulfur')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/cryolite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/cinnabar')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/saltpeter')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/sylvite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/borax')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/gypsum')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/halite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/lapis_lazuli')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/diamond')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/emerald')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/amethyst')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/opal')
-    event.remove('tfc:in_biome/veins', 'tfc:geode')
+    event.removeAll('tfc:in_biome/veins')
 
     // Добавление
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')
@@ -533,4 +492,5 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/geode')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
+    event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
 }
