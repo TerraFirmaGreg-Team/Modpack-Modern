@@ -10,6 +10,7 @@ const registerCreatedecoRecipes = (event) => {
         'createdeco:industrial_iron_sheet': 'gtceu:steel_plate',
         'create:brass_sheet' : 'gtceu:brass_plate',
         'minecraft:torch' : 'minecraft:glowstone_dust',
+        'minecraft:moss_block' : 'tfc:plant/moss',
         'create:brass_nugget' : 'gtceu:brass_nugget',
         'create:andesite_alloy' : 'gtceu:wrought_iron_ingot',
         'createdeco:andesite_sheet' : 'gtceu:wrought_iron_plate',
@@ -28,13 +29,6 @@ const registerCreatedecoRecipes = (event) => {
 //#endregion
 
 //#region Recipe Removal
-    const barRemove = ['andesite', 'brass', 'iron', 'copper', 'industrial_iron', 'zinc'];
-
-    barRemove.forEach(barRemove => {
-        event.remove({id: `createdeco:${barRemove}_bars`})
-        event.remove({id: `createdeco:${barRemove}_bars_overlay`})
-    });
-
     event.remove({output: 'createdeco:zinc_sheet'})
     event.remove({output: 'createdeco:industrial_iron_sheet'})
     event.remove({output: 'createdeco:industrial_iron_nugget'})

@@ -3675,6 +3675,42 @@
             ]
         },
         {
+            "pakku_id": "6U8PYa5cwgWTAovS",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "domum-ornamentum"
+            },
+            "name": {
+                "curseforge": "Domum Ornamentum"
+            },
+            "id": {
+                "curseforge": "527361"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "domum_ornamentum-1.20.1-1.0.285-snapshot-universal.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6335/390/domum_ornamentum-1.20.1-1.0.285-snapshot-universal.jar",
+                    "id": "6335390",
+                    "parent_id": "527361",
+                    "hashes": {
+                        "sha1": "c7ac72b2e4fb5309e3cd0988b610c2f3016b9cb9",
+                        "md5": "65cda7180bfc67f9a2bf9ee6965bf3e7"
+                    },
+                    "required_dependencies": [],
+                    "size": 1096466,
+                    "date_published": "2025-03-23T13:32:07.977Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "nZjctGN2oruEuDuc",
             "type": "MOD",
             "side": "CLIENT",
@@ -10212,6 +10248,79 @@
                     "required_dependencies": [],
                     "size": 1782275,
                     "date_published": "2023-12-09T21:19:49.103Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "d0krlaqQ5KNCy7kc",
+            "pakku_links": [
+                "p2gtFoMFQckm3agI",
+                "F6H99cZ4H6jZRpEK"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "roads-and-roofs-tfc",
+                "modrinth": "roads-and-roofs-tfc"
+            },
+            "name": {
+                "curseforge": "Roads and Roofs TFC",
+                "modrinth": "Roads and Roofs TFC"
+            },
+            "id": {
+                "curseforge": "1048212",
+                "modrinth": "ca9X1Phr"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rnr-0.2.1-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5852/507/rnr-0.2.1-1.20.1.jar",
+                    "id": "5852507",
+                    "parent_id": "1048212",
+                    "hashes": {
+                        "sha1": "046e086b2d4861fbc74bbeb18031102d09622197",
+                        "md5": "451fe8a1c496f44d20d73bfb4cb51a57"
+                    },
+                    "required_dependencies": [
+                        "306770",
+                        "302973"
+                    ],
+                    "size": 3557362,
+                    "date_published": "2024-10-27T23:10:58.567Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "rnr-0.2.1-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ca9X1Phr/versions/msv0XMkD/rnr-0.2.1-1.20.1.jar",
+                    "id": "msv0XMkD",
+                    "parent_id": "ca9X1Phr",
+                    "hashes": {
+                        "sha512": "e0f7b50c0da47f449fe03427859a1a33d0b8bef59a676b7ac88f518c99a0a6f02b255b576716c0d5d3a7810bd48e8cc9d74d4f9ed8e519485949c6e2ff8e469a",
+                        "sha1": "046e086b2d4861fbc74bbeb18031102d09622197"
+                    },
+                    "required_dependencies": [
+                        "nU0bVIaL",
+                        "JaCEZUhg"
+                    ],
+                    "size": 3557362,
+                    "date_published": "2024-10-27T23:13:57.176874Z"
                 }
             ]
         },
