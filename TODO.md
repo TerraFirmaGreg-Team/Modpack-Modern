@@ -1,22 +1,22 @@
-# TO-DO LIST
+﻿# TO-DO LIST
 
 ## Gameplay
-- Quest overhaul
+- ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
-	- Is there a way to use pack.json or something to just hide pages entirely?
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
 - Early game create changes? not sure if 0.9 or post-0.9
-- Any recipe that wants beeswax? make it also allow paraffin wax or whatever that new one is called. Helpful so people don't get as screwed by bee RNG
+- Any recipe that wants beeswax? make it also allow paraffin wax or whatever that new one is called
+	- Is there any other kind of primitive wax that could be added? since some people keep getting screwed by bee RNG
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
 - Recipes for advanced peripherals and computercraft
 	- half of computercraft seems to have vanished for some reason?
-- Add recipes for chalk (nebby finished this)
+- ✔ Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
-- Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
+- ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
 - Move over the create stone recipes from the space branch
 
 ## Technical
@@ -30,7 +30,7 @@
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
 - Add entity zoning supervisor and see if it lets us put tfc animals in the nether
-- A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code
+- ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
 
 ## Post-0.9
