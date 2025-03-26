@@ -6,7 +6,7 @@
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
-- Early game create changes? not sure if 0.9 or post-0.9
+- Early game create changes
 - Any recipe that wants beeswax? make it also allow paraffin wax or whatever that new one is called
 	- Is there any other kind of primitive wax that could be added? since some people keep getting screwed by bee RNG
 
@@ -17,7 +17,6 @@
 - ✔ Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
-- Move over the create stone recipes from the space branch
 
 ## Technical
 - GT + TFC food expiration compat
