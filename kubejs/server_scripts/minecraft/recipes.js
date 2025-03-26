@@ -187,11 +187,17 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Сахар
 
-	event.recipes.gtceu.centrifuge('sugar')
+	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
 		.inputFluids(Fluid.of('minecraft:water', 600))
 		.itemOutputs('minecraft:sugar')
 		.duration(800)
+		.EUt(6)
+
+	event.recipes.gtceu.centrifuge('sugar_from_honey')
+		.itemInputs('firmalife:raw_honey')
+		.itemOutputs('minecraft:sugar')
+		.duration(400)
 		.EUt(6)
 
 	//#endregion
@@ -213,19 +219,6 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('tfc:jack_o_lantern')
 		.duration(100)
 		.EUt(4)
-
-	//#endregion
-
-	//#region Выход: Точильный камень
-
-	event.shaped('minecraft:grindstone', [
-		'ABA',
-		'C C'
-	], {
-		A: '#minecraft:planks',
-		B: '#forge:rods/wooden',
-		C: '#tfg:rock_slabs'
-	}).id('minecraft:grindstone')
 
 	//#endregion
 

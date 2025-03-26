@@ -1371,4 +1371,6 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'minecraft:iron_bars', '#tfg:metal_bars')
 	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'gtceu:wood_plate', '#tfc:lumber')
 
+	event.replaceInput({mod: 'gtceu'}, 'minecraft:sugar', '#tfg:sugars')
+
 }

@@ -15,6 +15,59 @@ const registerTFGItemTags = (event) => {
     event.add('forge:wax', 'firmalife:beeswax')
 
 	// #endregion
+
+	// #region Medicines
+
+	event.add('tfg:antipoison_ingredients', 'tfc:plant/blood_lily')
+	event.add('tfg:antipoison_ingredients', 'tfc:plant/pistia')
+	event.add('tfg:antipoison_ingredients', 'tfc:powder/bismuthinite')
+	event.add('tfg:antipoison_ingredients', 'gtceu:mica_dust')
+	event.add('tfg:antipoison_ingredients', 'gtceu:fullers_earth_dust')
+
+	event.add('tfg:poison_ingredients', 'tfc:plant/butterfly_milkweed')
+	event.add('tfg:poison_ingredients', 'tfc:plant/grape_hyacinth')
+	event.add('tfg:poison_ingredients', 'tfc:plant/lily_of_the_valley')
+	event.add('tfg:poison_ingredients', 'tfc:plant/pulsatilla')
+	event.add('tfg:poison_ingredients', 'minecraft:red_mushroom')
+
+	event.add('tfg:regeneration_ingredients', 'tfc:plant/lilac')
+	event.add('tfg:regeneration_ingredients', 'tfc:plant/field_horsetail')
+	event.add('tfg:regeneration_ingredients', 'tfc:plant/licorice_fern')
+	event.add('tfg:regeneration_ingredients', 'tfc:plant/sacred_datura')
+
+	event.add('tfg:speed_ingredients', 'tfc:plant/labrador_tea')
+	event.add('tfg:speed_ingredients', 'firmalife:raw_honey')
+	
+	event.add('tfg:slowness_ingredients', 'tfc:plant/marigold')
+
+	event.add('tfg:weakness_ingredients', 'tfc:plant/laminaria')
+	
+	event.add('tfg:haste_ingredients', 'minecraft:sugar')
+	event.add('tfg:haste_ingredients', 'afc:birch_sugar')
+	event.add('tfg:haste_ingredients', 'afc:maple_sugar')
+
+	event.add('tfg:water_breathing_ingredients', 'tfc:powder/saltpeter')
+	event.add('tfg:water_breathing_ingredients', 'tfc:powder/charcoal')
+
+	event.add('tfg:night_vision_ingredients', 'tfc:food/carrot')
+	
+	event.add('tfg:invisibility_ingredients', 'tfc:plant/calendula')
+
+	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/cattail')
+	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/meads_milkweed')
+	event.add('tfg:fire_resistance_ingredients', 'firmalife:plant/bay_laurel')
+
+	event.add('tfg:resistance_ingredients', 'tfc:plant/hibiscus')
+	event.add('tfg:resistance_ingredients', 'gtceu:calcium_dust')
+
+	event.add('tfg:instant_health_ingredients', 'tfc:plant/foxglove')
+	event.add('tfg:instant_health_ingredients', 'tfc:plant/artists_conk')
+
+	event.add('tfg:absorption_ingredients', 'tfc:plant/poppy')
+	
+	event.add('tfg:luck_ingredients', 'tfc:plant/goldenrod')
+	event.add('tfg:luck_ingredients', 'tfc:plant/heather')
+	// #endregion
 }
 
 const registerTFGBlockTags = (event) => {
