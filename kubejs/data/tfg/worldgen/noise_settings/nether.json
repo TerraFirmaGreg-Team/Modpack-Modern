@@ -305,7 +305,7 @@
 								"if_true": {
 									"type": "minecraft:noise_threshold",
 									"noise": "minecraft:iceberg_pillar",
-									"min_threshold": 0.1,
+									"min_threshold": 0.18,
 									"max_threshold": 0.25
 								},
 								"then_run": {
