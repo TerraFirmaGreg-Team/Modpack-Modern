@@ -1,8 +1,6 @@
 // priority: 0
 
 const registerTFGItems = (event) => {
-    console.log("StartupEvents.registry('item')", Object.entries(event))
-
     // #region Paper making
     event.create('tfg:hardwood_strip')
         .translationKey('item.tfg.hardwood_strip')
