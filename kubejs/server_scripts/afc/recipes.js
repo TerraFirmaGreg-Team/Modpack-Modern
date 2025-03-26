@@ -3,6 +3,9 @@
  * @param {Internal.RecipesEventJS} event 
  */
 const registerAFCRecipes = (event) =>{
+
+    event.remove({ input: 'afc:rubber_bar' })
+    event.remove({ output: 'afc:rubber_bar' })
     
     global.AFC_WOOD_TYPES.forEach(wood => {
         event.remove({ id: `afc:crafting/wood/${wood}_axle` })
