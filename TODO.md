@@ -7,6 +7,7 @@
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
 - Early game create changes
+	- change blast furnace to require coke, make anthracite turn into multiple coke, also make anthracite better? it's pretty bad rn
 - Generate bismuth item pipes similar to tin, bis bronze fluid pipes similar to bronze
 
 ## Mods
