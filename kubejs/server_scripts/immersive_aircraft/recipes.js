@@ -2,6 +2,8 @@
 
 function registerImmersiveAircraftRecipes(event) {
 
+	event.remove({ mod: 'immersive_aircraft' })
+
 	event.shaped('immersive_aircraft:engine', [
 		'DAE',
 		'CBC'

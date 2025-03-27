@@ -10,7 +10,6 @@ const registerTFGBlocks = (event) => {
 			item.modelJson({ parent: 'minecraft:block/end_portal_frame' })
 		})
 		
-	const $ClusterBlock = Java.loadClass('net.minecraft.world.level.block.AmethystClusterBlock')
 	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 

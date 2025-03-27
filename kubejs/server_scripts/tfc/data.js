@@ -168,6 +168,15 @@ const registerTFCItemSize = (event) => {
     event.itemSize('sophisticatedbackpacks:gold_backpack', 'very_large', 'very_heavy', 'gold_backpack_size')
     event.itemSize('sophisticatedbackpacks:diamond_backpack', 'very_large', 'very_heavy', 'diamond_backpack_size')
     event.itemSize('sophisticatedbackpacks:netherite_backpack', 'very_large', 'very_heavy', 'netherite_backpack_size')
+
+    event.itemSize('man_of_many_planes:scarlet_biplane', 'huge', 'very_heavy')
+    event.itemSize('man_of_many_planes:economy_plane', 'huge', 'very_heavy')
+    event.itemSize('immersive_aircraft:airship', 'huge', 'very_heavy')
+    event.itemSize('immersive_aircraft:cargo_airship', 'huge', 'very_heavy')
+    event.itemSize('immersive_aircraft:warship', 'huge', 'very_heavy')
+    event.itemSize('immersive_aircraft:biplane', 'huge', 'very_heavy')
+    event.itemSize('immersive_aircraft:gyrodyne', 'huge', 'very_heavy')
+    event.itemSize('immersive_aircraft:quadrocopter', 'very_large', 'very_heavy')
 }
 
 const registerTFCFoodData = (event) => {

@@ -90,6 +90,10 @@ const registerGTCEUItemTags = (event) => {
 	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_normal_restrictive_item_pipe')
 	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_large_restrictive_item_pipe')
 	event.add('minecraft:piglin_loved', 'gtceu:rose_gold_huge_restrictive_item_pipe')
+
+	event.add('tfg:sugars', 'minecraft:sugar')
+	event.add('tfg:sugars', 'afc:birch_sugar')
+	event.add('tfg:sugars', 'afc:maple_sugar')
 }
 
 const registerGTCEUBlockTags = (event) => {

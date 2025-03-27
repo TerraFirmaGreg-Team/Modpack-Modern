@@ -1466,4 +1466,111 @@ const registerCreateRecipes = (event) => {
 	})
 
 	// #endregion
+
+	//#region Decoration blocks
+
+	event.smelting('1x create:cut_diorite', '1x tfc:rock/raw/diorite')
+		.id('tfg:smelting/cut_diorite')
+	event.smelting('1x create:cut_granite', '1x tfc:rock/raw/chert')
+		.id('tfg:smelting/red_granite')
+	event.smelting('1x create:cut_andesite', '1x tfc:rock/raw/andesite')
+		.id('tfg:smelting/cut_andesite')
+	event.smelting('1x create:cut_limestone', '1x tfc:rock/raw/limestone')
+		.id('tfg:smelting/cut_limestone')
+	event.smelting('1x create:cut_deepslate', '1x minecraft:deepslate')
+		.id('tfg:smelting/cut_deepslate')
+	event.smelting('1x create:cut_dripstone', '1x minecraft:dripstone_block')
+		.id('tfg:smelting/cut_dripstone')
+	//event.smelting('1x create:cut_asurine', '1x create:asurine')
+	//	.id('tfg:smelting/asurine')
+
+	const DECO_BLOCKS = [
+		// tfc rocks
+		"diorite", "granite", "andesite", "limestone",
+		// not tfc but realistic
+		/*"tuff",*/ "deepslate", "dripstone", /*"calcite",*/
+		// made up
+		//"veridium", "scorchia", "scoria", "ochrum", "crimsite", "asurine",
+	]
+
+	DECO_BLOCKS.forEach(block => {
+
+		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:polished_cut_${block}`, [
+			'AB'
+		], {
+			A: `create:cut_${block}`,
+			B: '#tfc:chisels'
+		})).id(`create:shaped/chisel_polished_cut_${block}`)
+
+		event.recipes.gtceu.laser_engraver(`engrave_polished_cut_${block}`)
+			.itemInputs(`create:cut_${block}`)
+			.notConsumable('gtceu:glass_lens')
+			.itemOutputs(`create:polished_cut_${block}`)
+			.duration(32)
+			.EUt(100)
+			.circuit(1)
+
+		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:cut_${block}_bricks`, [
+			'A',
+			'B'
+		], {
+			A: `create:cut_${block}`,
+			B: '#tfc:chisels'
+		})).id(`create:shaped/chisel_cut_${block}_bricks`)
+
+		event.recipes.gtceu.laser_engraver(`engrave_cut_${block}_bricks`)
+			.itemInputs(`create:cut_${block}`)
+			.notConsumable('gtceu:glass_lens')
+			.itemOutputs(`create:cut_${block}_bricks`)
+			.duration(32)
+			.EUt(100)
+			.circuit(2)
+
+		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:small_${block}_bricks`, [
+			'A ',
+			' B'
+		], {
+			A: `create:cut_${block}`,
+			B: '#tfc:chisels'
+		})).id(`create:shaped/chisel_small_${block}_bricks`)
+
+		event.recipes.gtceu.laser_engraver(`engrave_small_${block}_bricks`)
+			.itemInputs(`create:cut_${block}`)
+			.notConsumable('gtceu:glass_lens')
+			.itemOutputs(`create:small_${block}_bricks`)
+			.duration(32)
+			.EUt(100)
+			.circuit(3)
+
+		generateCutterRecipe(event, `create:cut_${block}`, 0, [`create:cut_${block}_stairs`], 100, 8, `cut_${block}_to_stairs`)
+		generateCutterRecipe(event, `create:cut_${block}`, 1, [`2x create:cut_${block}_slab`], 100, 8, `cut_${block}_to_slabs`)
+		generateCutterRecipe(event, `create:cut_${block}`, 2, [`create:cut_${block}_wall`], 100, 8, `cut_${block}_to_wall`)
+
+		generateCutterRecipe(event, `create:polished_cut_${block}`, 0, [`create:polished_cut_${block}_stairs`], 100, 8, `polished_cut_${block}_to_stairs`)
+		generateCutterRecipe(event, `create:polished_cut_${block}`, 1, [`2x create:polished_cut_${block}_slab`], 100, 8, `polished_cut_${block}_to_slabs`)
+		generateCutterRecipe(event, `create:polished_cut_${block}`, 2, [`create:polished_cut_${block}_wall`], 100, 8, `polished_cut_${block}_to_wall`)
+
+		generateCutterRecipe(event, `create:cut_${block}_bricks`, 0, [`create:cut_${block}_brick_stairs`], 100, 8, `cut_${block}_bricks_to_stairs`)
+		generateCutterRecipe(event, `create:cut_${block}_bricks`, 1, [`2x create:cut_${block}_brick_slab`], 100, 8, `cut_${block}_bricks_to_slabs`)
+		generateCutterRecipe(event, `create:cut_${block}_bricks`, 2, [`create:cut_${block}_brick_wall`], 100, 8, `cut_${block}_bricks_to_wall`)
+
+		generateCutterRecipe(event, `create:small_${block}_bricks`, 0, [`create:small_${block}_brick_stairs`], 100, 8, `small_${block}_bricks_to_stairs`)
+		generateCutterRecipe(event, `create:small_${block}_bricks`, 1, [`2x create:small_${block}_brick_slab`], 100, 8, `small_${block}_bricks_to_slabs`)
+		generateCutterRecipe(event, `create:small_${block}_bricks`, 2, [`create:small_${block}_brick_wall`], 100, 8, `small_${block}_bricks_to_wall`)
+
+		event.shaped(`2x create:layered_${block}`, [
+			'AA'
+		], {
+			A: `create:cut_${block}`
+		})
+
+		event.shaped(`2x create:${block}_pillar`, [
+			'A',
+			'A'
+		], {
+			A: `create:cut_${block}`
+		})
+	})
+
+	//#endregion
 }

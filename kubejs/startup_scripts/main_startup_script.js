@@ -28,6 +28,7 @@ BlockEvents.modification(event => {
  */
 ItemEvents.modification(event => {
     registerBeneathItemModifications(event)
+    registerMinecraftItemModifications(event)
 })
 
 /**

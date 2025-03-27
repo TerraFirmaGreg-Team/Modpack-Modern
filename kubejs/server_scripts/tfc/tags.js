@@ -399,11 +399,6 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_tool_head_mold', 'gtceu:bronze')
 
     //
-    event.add('tfc:usable_in_pot', 'tfg:latex')
-    event.add('tfc:usable_in_barrel', 'tfg:latex')
-    event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
-
-    //
     event.add('tfc:usable_in_barrel', 'gtceu:creosote')
     event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')

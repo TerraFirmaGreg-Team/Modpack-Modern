@@ -5,7 +5,7 @@
 **/*.jar
 **/*.mrpack
 **/*.code-workspace
-**/*.zip
+# **/*.zip
 
 # Pakku
 build/
