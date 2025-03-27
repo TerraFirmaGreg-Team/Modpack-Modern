@@ -107,5 +107,8 @@ const registerTFGItems = (event) => {
     //#region Wax
     event.create(`tfg:paraffin_wax`)
         .translationKey(`item.tfg.paraffin_wax`)
+
+    event.create('tfg:conifer_rosin')
+        .translationKey('item.tfg.conifer_rosin')
     //#endregion
 }

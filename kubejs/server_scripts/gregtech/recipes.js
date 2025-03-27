@@ -103,22 +103,52 @@ const registerGTCEURecipes = (event) => {
 	//#region Выход: Сырая резиновая пыль
 
 	// Из бревна капока
-	event.recipes.gtceu.extractor('raw_rubber_from_log')
+	event.recipes.gtceu.extractor('raw_rubber_from_kapok_log')
 		.itemInputs('#tfc:kapok_logs')
 		.itemOutputs('gtceu:raw_rubber_dust')
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.extractor('raw_rubber_from_rubber_fig_log')
+		.itemInputs('#afc:rubber_fig_logs')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
 	// Из саженца капока
-	event.recipes.gtceu.extractor('raw_rubber_from_sapling')
+	event.recipes.gtceu.extractor('raw_rubber_from_kapok_sapling')
 		.itemInputs('tfc:wood/sapling/kapok')
 		.itemOutputs('gtceu:raw_rubber_dust')
 		.duration(300)
 		.EUt(2)
 
+	event.recipes.gtceu.extractor('raw_rubber_from_red_silk_cotton_sapling')
+		.itemInputs('afc:wood/sapling/red_silk_cotton')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('raw_rubber_from_rubber_fig_sapling')
+		.itemInputs('afc:wood/sapling/rubber_fig')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
 	// Из листвы капока
-	event.recipes.gtceu.extractor('raw_rubber_from_leaves')
+	event.recipes.gtceu.extractor('raw_rubber_from_kapok_leaves')
 		.itemInputs('16x tfc:wood/leaves/kapok')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('raw_rubber_from_red_silk_cotton_leaves')
+		.itemInputs('16x afc:wood/leaves/red_silk_cotton')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('raw_rubber_from_rubber_fig_leaves')
+		.itemInputs('16x afc:wood/leaves/rubber_fig')
 		.itemOutputs('gtceu:raw_rubber_dust')
 		.duration(300)
 		.EUt(2)
@@ -139,13 +169,27 @@ const registerGTCEURecipes = (event) => {
 	//#region Выход: Капля резины
 
 	// Из латекса
-	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 5000, 300)
+	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
-		.id('tfg:pot/sticky_resin')
+		.id('tfg:pot/sticky_resin_from_latex')
+
+	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
+		.itemOutput('gtceu:sticky_resin')
+		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
 	// Из бревна капока
-	event.recipes.gtceu.centrifuge('rubber_log_separation')
+	event.recipes.gtceu.centrifuge('kapok_log_separation')
 		.itemInputs('#tfc:kapok_logs')
+		.chancedOutput('gtceu:sticky_resin', 5000, 1200)
+		.chancedOutput('gtceu:plant_ball', 3750, 900)
+		.chancedOutput('gtceu:carbon_dust', 2500, 600)
+		.chancedOutput('gtceu:wood_dust', 2500, 700)
+		.outputFluids(Fluid.of('gtceu:methane', 60))
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.centrifuge('rubber_fig_log_separation')
+		.itemInputs('#afc:rubber_fig_logs')
 		.chancedOutput('gtceu:sticky_resin', 5000, 1200)
 		.chancedOutput('gtceu:plant_ball', 3750, 900)
 		.chancedOutput('gtceu:carbon_dust', 2500, 600)
@@ -1315,24 +1359,28 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.tfc.barrel_sealed(2000)
 		.outputItem('tfg:prepared_leather_gloves')
 		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
-		.id('tfg:prepared_leather_gloves_sealed_barrel')
+		.id('tfg:sealed_barrel/prepared_leather_gloves')
 
 	event.recipes.firmalife.vat()
 		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 100))
 		.outputFluid(Fluid.of('tfg:vulcanized_latex', 100))
 		.length(300)
 		.temperature(300)
-		.id('tfg:vulcanized_latex_vat')
+		.id('tfg:vat/vulcanized_latex')
+
+	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 100), 1200, 300)
+		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 100))
+		.id('tfg:pot/vulcanized_latex')
 
 	event.recipes.firmalife.vat()
 		.outputItem('tfg:latex_soaked_gloves')
 		.inputs('tfg:prepared_leather_gloves', Fluid.of('tfg:vulcanized_latex', 1000))
 		.length(300)
 		.temperature(200)
-		.id('tfg:latex_soaked_gloves_vat')
+		.id('tfg:vat/latex_soaked_gloves')
 
 	event.recipes.firmalife.oven('tfg:latex_soaked_gloves', 120, 1200, 'gtceu:rubber_gloves')
-		.id('tfg:rubber_gloves_oven')
+		.id('tfg:oven/rubber_gloves')
 
 	event.remove({ id: 'gtceu:shaped/rubber_gloves' })
 

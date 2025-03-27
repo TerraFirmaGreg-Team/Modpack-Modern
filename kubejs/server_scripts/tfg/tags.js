@@ -13,6 +13,7 @@ const registerTFGItemTags = (event) => {
 	
     event.add('forge:wax', 'tfg:paraffin_wax')
     event.add('forge:wax', 'firmalife:beeswax')
+	event.add('forge:wax', 'tfg:conifer_rosin')
 
 	// #endregion
 
@@ -28,6 +29,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:poison_ingredients', 'tfc:plant/grape_hyacinth')
 	event.add('tfg:poison_ingredients', 'tfc:plant/lily_of_the_valley')
 	event.add('tfg:poison_ingredients', 'tfc:plant/pulsatilla')
+	event.add('tfg:poison_ingredients', 'firmalife:food/nightshade_berry')
 	event.add('tfg:poison_ingredients', 'minecraft:red_mushroom')
 
 	event.add('tfg:regeneration_ingredients', 'tfc:plant/lilac')
@@ -91,6 +93,21 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 
 	// #endregion
+}
+
+const registerTFGFluidTags = (event) => {
+	
+    event.add('tfc:usable_in_pot', 'tfg:latex')
+    event.add('tfc:usable_in_barrel', 'tfg:latex')
+    event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
+	
+    event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
+    event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
+    event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
+
+    event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
+    event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
+    event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
 }
 
 

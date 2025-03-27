@@ -102,6 +102,10 @@ const registerTFCRecipes = (event) => {
 		generateGreenHouseRecipe(event, `tfc:wood/sapling/${wood}`, 16000, `32x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
 	})
 
+	global.AFC_SAPLINGS.forEach(x => {
+		generateGreenHouseRecipe(event, `afc:wood/sapling/${x.sapling}`, 16000, `32x ${x.log}`, `tfg:greenhouse/${x.sapling}`)
+	})
+
 	// Семена фруктов
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
 		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
