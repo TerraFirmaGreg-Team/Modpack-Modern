@@ -22,6 +22,7 @@
 - Finish porting everything else in tfg-core that can be ported
 - Fix up the ores field guide generator tool
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
+- Add deepslate blobs to the bottom of the overworld to make people suspicious?
 
 ## Beneath
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
