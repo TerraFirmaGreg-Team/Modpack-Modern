@@ -4,10 +4,10 @@
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
-	- Update AFC pages for raw rubber, add entries for conifer pitch/rosin
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
 - Early game create changes
+- Generate bismuth item pipes similar to tin, bis bronze fluid pipes similar to bronze
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
