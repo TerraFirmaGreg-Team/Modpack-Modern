@@ -4,11 +4,10 @@
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
+	- Update AFC pages for raw rubber, add entries for conifer pitch/rosin
 - Add insulation for GT armors and diving suits, increase durability of existing clothes
 - Make our favourite ores hazardous again :)
 - Early game create changes
-- Any recipe that wants beeswax? make it also allow paraffin wax or whatever that new one is called
-	- Is there any other kind of primitive wax that could be added? since some people keep getting screwed by bee RNG
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
@@ -23,7 +22,6 @@
 - Finish porting everything else in tfg-core that can be ported
 - Fix up the ores field guide generator tool
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
-- Add sapling item tag to AFC saplings (they only have the block tag), make greenhouse recipes for them
 
 ## Beneath
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
