@@ -17,6 +17,7 @@
 - ✔ Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
+- Add builders wands
 
 ## Technical
 - GT + TFC food expiration compat
