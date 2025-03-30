@@ -123,13 +123,16 @@ const registerTFCHeats = (event) => {
 }
 
 const registerTFCFuels = (event) => {
-    event.fuel('minecraft:coal', 1415, 2200, 1.0)
     event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
+    event.fuel('gtceu:coke_dust', 1415, 1200, 0.95)
+    
+    event.fuel('beneath:cursecoal', 1540, 2200, 1.0)
 
+    event.fuel('minecraft:coal', 1415, 2200, 1.0)
     event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
     event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
     event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
-    event.fuel('gtceu:coal_dust', 1415, 1200, 0.95)
+    event.fuel('gtceu:coal_dust', 1415, 600, 0.95)
 }
 
 const registerTFCLampFuels = (event) => {
