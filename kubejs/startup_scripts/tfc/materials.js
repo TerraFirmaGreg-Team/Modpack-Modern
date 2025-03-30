@@ -123,4 +123,5 @@ const registerTFCMaterials = (event) => {
     GTMaterials.Trona.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_pyrite'))
     GTMaterials.Zeolite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_copper'))
     GTMaterials.Electrotine.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_garnierite'))
+    GTMaterials.Bauxite.setMaterialIconSet(GTMaterialIconSet.getByName('tfc_borax'))
 }
