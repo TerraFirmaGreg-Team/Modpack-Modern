@@ -7,7 +7,7 @@
 			"type": "minecraft:multi_noise",
 			"biomes": [
 				{
-					"biome": "tfg:nether/lush_hollow",
+					"biome": "tfg:nether/decaying_caverns",
 					"parameters": {
 						"continentalness": [ 0.3, 1 ],
 						"depth": [ -0.5, 0 ],
@@ -19,7 +19,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/ash_forest",
+					"biome": "tfg:nether/lava_floes",
 					"parameters": {
 						"continentalness": [ 0.3, 1 ],
 						"depth": [ 0, 1 ],
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/lush_hollow",
+					"biome": "tfg:nether/decaying_caverns",
 					"parameters": {
 						"continentalness": [ 0.3, 1 ],
 						"depth": [ -0.5, 0 ],
@@ -67,7 +67,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/ash_forest",
+					"biome": "tfg:nether/lava_floes",
 					"parameters": {
 						"continentalness": [ 0.3, 1 ],
 						"depth": [ 0, 1 ],
@@ -106,7 +106,7 @@
 
 
 				{
-					"biome": "tfg:nether/decaying_caverns",
+					"biome": "tfg:nether/lush_hollow",
 					"parameters": {
 						"continentalness": [ -0.3, 0.3 ],
 						"depth": [ -0.5, 0 ],
@@ -118,7 +118,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/lava_floes",
+					"biome": "tfg:nether/ash_forest",
 					"parameters": {
 						"continentalness": [ -0.3, 0.3 ],
 						"depth": [ 0, 1 ],
@@ -130,7 +130,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/decaying_caverns",
+					"biome": "tfg:nether/lush_hollow",
 					"parameters": {
 						"continentalness": [ -0.3, 0.3 ],
 						"depth": [ -0.5, 0 ],
@@ -166,7 +166,7 @@
 					}
 				},
 				{
-					"biome": "tfg:nether/lava_floes",
+					"biome": "tfg:nether/ash_forest",
 					"parameters": {
 						"continentalness": [ -0.3, 0.3 ],
 						"depth": [ 0, 1 ],
@@ -201,7 +201,6 @@
 						"weirdness": [ -1, -0.85 ]
 					}
 				},
-
 
 
 				{
