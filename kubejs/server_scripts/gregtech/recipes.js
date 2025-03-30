@@ -1354,6 +1354,26 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	// #region Treated Wood
+
+	event.shaped('2x gtceu:treated_wood_door', [
+		'AA ',
+		'AA ',
+		'AA '
+	], {
+		A: 'gtceu:treated_wood_plate'
+	}).id('tfg:shaped/treated_door')
+
+	event.shaped('3x gtceu:treated_wood_trapdoor', [
+		'AAA',
+		'AAA',
+		'   '
+	], {
+		A: 'gtceu:treated_wood_plate'
+	}).id('tfg:shaped/treated_trapdoor')
+
+	// #endregion
+
 	// #region Primitive protection
 
 	event.recipes.tfc.barrel_sealed(2000)
