@@ -1259,11 +1259,24 @@ const registerGTCEURecipes = (event) => {
 	// #endregion
 
 	// #region Rich coal processing
+	
+	event.recipes.gtceu.coke_oven("tfg:poor_coal_to_coke")
+		.itemInputs('gtceu:poor_raw_coal')
+		.itemOutputs('1x gtceu:coke_gem')
+		.outputFluids(Fluid.of('gtceu:creosote', 500))
+		.duration(900)
+
+	event.recipes.gtceu.coke_oven("tfg:coal_to_coke")
+		.itemInputs('gtceu:raw_coal')
+		.itemOutputs('2x gtceu:coke_gem')
+		.outputFluids(Fluid.of('gtceu:creosote', 1000))
+		.duration(900)
+
 	event.recipes.gtceu.coke_oven("tfg:rich_coal_to_coke")
 		.itemInputs('gtceu:rich_raw_coal')
 		.itemOutputs('4x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 2000))
-		.duration(3240)
+		.duration(900)
 
 	event.recipes.gtceu.pyrolyse_oven("tfg:rich_coal_to_tar")
 		.itemInputs('3x gtceu:rich_raw_coal')
