@@ -9,6 +9,7 @@
 - Early game create changes
 	- change blast furnace to require coke, make anthracite turn into multiple coke, also make anthracite better? it's pretty bad rn
 - Generate bismuth item pipes similar to tin, bis bronze fluid pipes similar to bronze
+- buff the electric greenhouse
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
@@ -17,6 +18,7 @@
 - ✔ Add recipes for chalk (nebby finished this)
 - Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
+- Add builders wands
 
 ## Technical
 - GT + TFC food expiration compat
