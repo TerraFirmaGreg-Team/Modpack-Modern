@@ -12,7 +12,7 @@ function registerDiggerHelmetRecipes(event) {
 		A: '#minecraft:candles',
 		B: '#forge:rings',
 		C: 'minecraft:leather_helmet',
-		D: '#forge:rods',
+		D: '#forge:rods/tin',
 		E: 'minecraft:glowstone_dust'
 	})
 	.id('tfg:shaped/digger_helmet')
