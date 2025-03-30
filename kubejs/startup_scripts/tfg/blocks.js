@@ -109,6 +109,9 @@ const registerTFGBlocks = (event) => {
 		.woodSoundType()
 		.property(BlockProperties.AXIS)
 		.tagBoth('minecraft:mineable/axe')
+		.tagBoth('tfc:logs_that_log')
+		.tagBoth('afc:logs_that_log')
+		.tagBoth('minecraft:logs')
 		.mapColor('black')
 
 	// #endregion
