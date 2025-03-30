@@ -28,7 +28,6 @@
 ## Beneath
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
-- Add entity zoning supervisor and see if it lets us put tfc animals in the nether
 - ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
 - Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
 
