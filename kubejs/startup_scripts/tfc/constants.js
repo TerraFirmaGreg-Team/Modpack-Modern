@@ -383,7 +383,6 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:ore/cryolite', 
     'tfc:ore/saltpeter', 
     'tfc:ore/borax', 
-    'tfc:ore/sylvite',
     'tfc:ore/bituminous_coal',
     'tfc:ore/lignite',
     'tfc:ore/halite',
@@ -964,6 +963,7 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: 'gtceu:raw_graphite', output: 'gtceu:graphite_dust', name: 'raw_graphite_to_dust' },
     { input: 'gtceu:poor_raw_graphite', output: '5x gtceu:tiny_graphite_dust', name: 'poor_raw_graphite_to_dust' },
     { input: 'gtceu:rich_raw_graphite', output: '2x gtceu:graphite_dust', name: 'rich_graphite_to_dust' },
+    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' }
 ];
 
 global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS = [
