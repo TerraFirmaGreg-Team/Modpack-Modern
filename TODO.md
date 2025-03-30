@@ -8,7 +8,6 @@
 - Make our favourite ores hazardous again :)
 - Early game create changes
 	- change blast furnace to require coke, make anthracite turn into multiple coke, also make anthracite better? it's pretty bad rn
-- Generate bismuth item pipes similar to tin, bis bronze fluid pipes similar to bronze
 
 ## Mods
 - Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it

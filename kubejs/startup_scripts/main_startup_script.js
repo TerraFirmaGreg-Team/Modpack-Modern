@@ -64,9 +64,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     registerAE2Materials(event)
     registerTFCMaterials(event)
     registerGTCEuMaterials(event)
-  
     registerTFGMaterials(event)
-    registerGTCEuMaterials(event)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
