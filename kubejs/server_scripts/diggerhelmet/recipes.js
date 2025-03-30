@@ -7,7 +7,7 @@ function registerDiggerHelmetRecipes(event) {
 	event.shaped('diggerhelmet:digger_helmet', [
 		' E ',
 		'BA ',
-		'DBD'
+		'DCD'
 	], {
 		A: '#minecraft:candles',
 		B: '#forge:rings',
@@ -15,5 +15,5 @@ function registerDiggerHelmetRecipes(event) {
 		D: '#forge:rods',
 		E: 'minecraft:glowstone_dust'
 	})
-	.id('tfg:shaped/digger_helmet_from_candle')
+	.id('tfg:shaped/digger_helmet')
 }
