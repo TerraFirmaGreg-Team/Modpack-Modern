@@ -34,6 +34,7 @@
 - Check create 6 compatibility
 	- Vintage improvements: no, but there's a fork which is
 	- Framed blocks: yes
+	- Greate: yes
 
 ## Space
 - Put carve tags onto your rock types so they get carved correctly
