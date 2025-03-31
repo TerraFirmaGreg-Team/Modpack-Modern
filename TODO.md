@@ -4,13 +4,12 @@
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
-- Add insulation for GT armors and diving suits, increase durability of existing clothes
+- Add increase durability of existing clothes
 - Make our favourite ores hazardous again :)
 - Early game create changes
-	- change blast furnace to require coke, make anthracite turn into multiple coke, also make anthracite better? it's pretty bad rn
 
 ## Mods
-- Aleki roofs needs to be hidden, it only shows vanilla woods - can't remove it because the ships depends on it
+- Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove it because the ships depends on it
 - Recipes for advanced peripherals and computercraft
 	- half of computercraft seems to have vanished for some reason?
 - ✔ Add recipes for chalk (nebby finished this)
