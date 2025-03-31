@@ -151,13 +151,13 @@
 				"type": "minecraft:silverfish",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 75
+				"weight": 50
 			},
 			{
 				"type": "endermanoverhaul:scarab",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 100
+				"weight": 75
 			},
 			{
 				"type": "endermanoverhaul:cave_enderman",
