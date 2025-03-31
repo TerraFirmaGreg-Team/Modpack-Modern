@@ -48,8 +48,8 @@ ItemEvents.tooltip(event => {
 	})
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -2')),
-		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
+		text.add(2, text.of('§7Insulation: +9'))
+		text.add(3, text.of('Wear the full set to be §eHeatproof§r.'))
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:avanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -0.5')),
