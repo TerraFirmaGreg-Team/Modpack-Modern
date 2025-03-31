@@ -4,9 +4,8 @@
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
-- Add increase durability of existing clothes
-- Make our favourite ores hazardous again :)
 - Early game create changes
+	- Greate mod
 
 ## Mods
 - Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove it because the ships depends on it
