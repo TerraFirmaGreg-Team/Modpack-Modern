@@ -6,6 +6,8 @@
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 - Early game create changes
 	- Greate mod
+	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
+	- Check LBB efficiency of creosote, think about removing lava
 
 ## Mods
 - Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove it because the ships depends on it
@@ -18,7 +20,6 @@
 
 ## Technical
 - GT + TFC food expiration compat
-- Finish porting everything else in tfg-core that can be ported
 - Fix up the ores field guide generator tool
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - Add deepslate blobs to the bottom of the overworld to make people suspicious?
