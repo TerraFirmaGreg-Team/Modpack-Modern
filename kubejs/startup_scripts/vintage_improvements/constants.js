@@ -17,7 +17,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:copper_sulfate',
 	'vintageimprovements:vanadium_nugget',
 	'vintageimprovements:vanadium_ingot',
-	'vintageimprovements:block',
+	'vintageimprovements:vanadium_block',
 	
 	'vintageimprovements:aluminum_sheet',
 	'vintageimprovements:bronze_sheet',
