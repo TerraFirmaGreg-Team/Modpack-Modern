@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -128,16 +128,8 @@
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/small_olivine_bud",
-					"weight": 15
-				},
-				{
-					"block": "tfg:buds/medium_olivine_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/large_olivine_bud",
-					"weight": 5
+					"block": "gtceu:olivine_bud_indicator",
+					"weight": 25
 				}
 			]
 		}

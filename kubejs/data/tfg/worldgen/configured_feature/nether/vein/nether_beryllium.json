@@ -18,7 +18,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -114,16 +114,8 @@
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/small_emerald_bud",
-					"weight": 35
-				},
-				{
-					"block": "tfg:buds/medium_emerald_bud",
-					"weight": 25
-				},
-				{
-					"block": "tfg:buds/large_emerald_bud",
-					"weight": 15
+					"block": "gtceu:emerald_bud_indicator",
+					"weight": 50
 				}
 			]
 		}

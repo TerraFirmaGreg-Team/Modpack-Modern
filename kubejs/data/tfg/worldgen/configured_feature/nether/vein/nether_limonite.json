@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -117,15 +117,19 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_hematite",
-					"weight": 30
+					"weight": 15
 				},
 				{
 					"block": "tfc:ore/small_limonite",
-					"weight": 30
+					"weight": 15
 				},
 				{
 					"block": "tfc:ore/small_malachite",
-					"weight": 40
+					"weight": 20
+				},
+				{
+					"block": "gtceu:goethite_indicator",
+					"weight": 50
 				}
 			]
 		}

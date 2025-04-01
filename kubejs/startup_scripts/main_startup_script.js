@@ -26,7 +26,8 @@ BlockEvents.modification(event => {
  * Событие изменения предметов.
  */
 ItemEvents.modification(event => {
-    //
+    registerBeneathItemModifications(event)
+    registerMinecraftItemModifications(event)
 })
 
 /**
@@ -62,8 +63,12 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     registerAE2Materials(event)
     registerTFCMaterials(event)
-    registerTFGMaterials(event)
     registerGTCEuMaterials(event)
+    registerTFGMaterials(event)
+})
+
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    registerTFCIconSets(event)
 })
 
 /**
@@ -73,29 +78,10 @@ GTCEuStartupEvents.materialModification(event => {
     registerGTCEuMaterialModification(event)
 })
 
-StartupEvents.postInit(event => {
-})
 
-
-/**
- * Событие регистрации иконок тэг префиксов.
-*/
-GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-    //
-})
-
-/**
- * Событие регистрации типов иконок тэг префиксов.
-*/
-GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
-    registerGTCEuMaterialIconTypes(event)
-})
-
-
-
-/**
- * Событие регистрации информации о составе предмета.
- */
-// TFGStartupEvents.materialInfo(event => {
-//     registerGTCEuMaterialInfo(event)
-// })
+//GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
+//    event.create('ad_astra:earth_orbit')
+//        .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())
+//        .tier(0)
+//        .overrideName('Earth Orbit')
+//})

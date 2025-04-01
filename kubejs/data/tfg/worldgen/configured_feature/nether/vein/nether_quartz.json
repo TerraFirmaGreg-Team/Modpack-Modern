@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -158,31 +158,15 @@
 			"blocks": [
 				{
 					"block": "gtceu:barite_indicator",
-					"weight": 20
+					"weight": 25
 				},
 				{
-					"block": "tfg:buds/small_nether_quartz_bud",
-					"weight": 35
+					"block": "gtceu:nether_quartz_bud_indicator",
+					"weight": 65
 				},
 				{
-					"block": "tfg:buds/medium_nether_quartz_bud",
-					"weight": 20
-				},
-				{
-					"block": "tfg:buds/large_nether_quartz_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/small_quartzite_bud",
+					"block": "gtceu:quartzite_bud_indicator",
 					"weight": 30
-				},
-				{
-					"block": "tfg:buds/medium_quartzite_bud",
-					"weight": 15
-				},
-				{
-					"block": "tfg:buds/large_quartzite_bud",
-					"weight": 10
 				}
 			]
 		}

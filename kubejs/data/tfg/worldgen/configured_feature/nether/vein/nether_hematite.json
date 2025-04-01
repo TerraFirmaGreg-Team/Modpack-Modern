@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -133,27 +133,23 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_hematite",
-					"weight": 40
+					"weight": 35
 				},
 				{
 					"block": "tfc:ore/small_limonite",
-					"weight": 40
+					"weight": 15
 				},
 				{
 					"block": "tfc:ore/small_native_gold",
-					"weight": 20
-				},
-				{
-					"block": "tfg:buds/small_ruby_bud",
-					"weight": 7
-				},
-				{
-					"block": "tfg:buds/medium_ruby_bud",
 					"weight": 5
 				},
 				{
-					"block": "tfg:buds/large_ruby_bud",
-					"weight": 3
+					"block": "gtceu:ruby_bud_indicator",
+					"weight": 20
+				},
+				{
+					"block": "gtceu:goethite_indicator",
+					"weight": 25
 				}
 			]
 		}

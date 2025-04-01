@@ -65,13 +65,25 @@
 		],
 		"indicator": {
 			"rarity": 12,
-			"depth": 60,
+			"depth": 70,
 			"underground_rarity": 40,
 			"underground_count": 200,
 			"blocks": [
 				{
 					"block": "tfc:ore/small_garnierite",
-					"weight": 100
+					"weight": 55
+				},
+				{
+					"block": "gtceu:cobaltite_indicator",
+					"weight": 20
+				},
+				{
+					"block": "gtceu:pentlandite_indicator",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:cobalt_indicator",
+					"weight": 15
 				}
 			]
 		}

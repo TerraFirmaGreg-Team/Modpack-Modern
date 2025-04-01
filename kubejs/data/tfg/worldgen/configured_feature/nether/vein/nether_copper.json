@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -24,7 +24,7 @@
 						"weight": 20
 					},
 					{
-						"block": "gtceu:deepslate_iron_ore",
+						"block": "gtceu:deepslate_hematite_ore",
 						"weight": 5
 					},
 					{
@@ -48,7 +48,7 @@
 						"weight": 20
 					},
 					{
-						"block": "gtceu:pyroxenite_iron_ore",
+						"block": "gtceu:pyroxenite_hematite_ore",
 						"weight": 5
 					},
 					{
@@ -72,7 +72,7 @@
 						"weight": 20
 					},
 					{
-						"block": "gtceu:basalt_iron_ore",
+						"block": "gtceu:basalt_hematite_ore",
 						"weight": 5
 					},
 					{
@@ -96,7 +96,7 @@
 						"weight": 20
 					},
 					{
-						"block": "gtceu:dripstone_iron_ore",
+						"block": "gtceu:dripstone_hematite_ore",
 						"weight": 5
 					},
 					{
@@ -117,8 +117,20 @@
 			"underground_count": 150,
 			"blocks": [
 				{
+					"block": "gtceu:chalcopyrite_indicator",
+					"weight": 20
+				},
+				{
+					"block": "tfc:ore/small_hematite",
+					"weight": 5
+				},
+				{
+					"block": "gtceu:pyrite_indicator",
+					"weight": 10
+				},
+				{
 					"block": "tfc:ore/small_native_copper",
-					"weight": 100
+					"weight": 65
 				}
 			]
 		}

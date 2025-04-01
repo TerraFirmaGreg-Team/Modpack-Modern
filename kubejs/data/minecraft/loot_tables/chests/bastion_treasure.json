@@ -3,7 +3,7 @@
 	"pools": [
 		{
 			"name": "loot_pool",
-			"rolls": 3,
+			"rolls": 2,
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -26,12 +26,8 @@
 					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -41,12 +37,8 @@
 					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:mending": 1,
-								"minecraft:efficiency": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -56,13 +48,8 @@
 					"weight": 5,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:sweeping": 3,
-								"minecraft:smite": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -72,13 +59,8 @@
 					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:fire_aspect": 2,
-								"minecraft:sharpness": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -88,13 +70,8 @@
 					"weight": 5,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:knockback": 2,
-								"minecraft:sharpness": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -104,12 +81,8 @@
 					"weight": 5,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 2,
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -119,12 +92,8 @@
 					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -134,12 +103,8 @@
 					"weight": 5,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 2,
-								"minecraft:efficiency": 1
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -149,13 +114,8 @@
 					"weight": 10,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 3,
-								"minecraft:smite": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -165,12 +125,8 @@
 					"weight": 15,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -180,12 +136,8 @@
 					"weight": 15,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:efficiency": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -195,11 +147,8 @@
 					"weight": 15,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -209,11 +158,8 @@
 					"weight": 15,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -223,11 +169,8 @@
 					"weight": 15,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				},
@@ -237,13 +180,8 @@
 					"weight": 5,
 					"functions": [
 						{
-							"function": "minecraft:set_enchantments",
-							"enchantments": {
-								"minecraft:unbreaking": 3,
-								"minecraft:quick_charge": 3,
-								"minecraft:piercing": 2
-							},
-							"add": false
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4}"
 						}
 					]
 				}
@@ -251,76 +189,10 @@
 		},
 		{
 			"name": "loot_pool",
-			"rolls": 2,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "tfc:metal/ingot/pig_iron",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 5,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 9,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:rose_gold_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 7,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:silver_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 7,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 1
-				}
-			]
-		},
-		{
-			"name": "loot_pool",
 			"rolls": {
 				"type": "minecraft:uniform",
-				"min": 6,
-				"max": 8
+				"min": 8,
+				"max": 12
 			},
 			"entries": [
 				{

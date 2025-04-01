@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -119,11 +119,15 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_tetrahedrite",
-					"weight": 70
+					"weight": 50
 				},
 				{
 					"block": "tfc:ore/small_native_copper",
 					"weight": 30
+				},
+				{
+					"block": "gtceu:stibnite_indicator",
+					"weight": 20
 				}
 			]
 		}

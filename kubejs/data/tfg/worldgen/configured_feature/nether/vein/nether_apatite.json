@@ -62,16 +62,8 @@
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/small_apatite_bud",
-					"weight": 30
-				},
-				{
-					"block": "tfg:buds/medium_apatite_bud",
-					"weight": 20
-				},
-				{
-					"block": "tfg:buds/large_apatite_bud",
-					"weight": 10
+					"block": "gtceu:apatite_bud_indicator",
+					"weight": 50
 				}
 			]
 		}

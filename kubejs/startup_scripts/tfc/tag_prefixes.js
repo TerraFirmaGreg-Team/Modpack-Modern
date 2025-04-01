@@ -1,18 +1,18 @@
 // priority: 0
 
 const registerTFCTagPrefixes = (event) => {
-    const $TagKeyClazz = Java.loadClass('net.minecraft.tags.TagKey')
-    const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
-    const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+    //const $TagKeyClazz = Java.loadClass('net.minecraft.tags.TagKey')
+    //const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
+    //const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 
     // const $BlockBehavior = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour')
     // const $MapColor = Java.loadClass('net.minecraft.world.level.material.MapColor')
 
-    const createItemTag = (path) => {
-        return $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
-    }
+    //const createItemTag = (path) => {
+    //    return $TagKeyClazz.create($ForgeRegistries.BLOCKS.getRegistryKey(), new $ResourceLocation(path))
+    //}
 
-    TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
+    //TagPrefix.ORES.remove(TagPrefix.rawOreBlock);
 
     TagPrefix.ORES.remove(TagPrefix.ore)
     TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
@@ -24,6 +24,7 @@ const registerTFCTagPrefixes = (event) => {
     TagPrefix.ORES.remove(TagPrefix.oreGravel)
     TagPrefix.ORES.remove(TagPrefix.oreEndstone)
     TagPrefix.ORES.remove(TagPrefix.oreNetherrack)
+    TagPrefix.ORES.remove(TagPrefix.oreBlackstone)
 
     TagPrefix.ORES.remove(TagPrefix.oreBasalt)
     TagPrefix.ORES.remove(TagPrefix.oreAndesite)
@@ -42,7 +43,6 @@ const registerTFCTagPrefixes = (event) => {
             .baseModelLocation(`tfc:block/rock/raw/${stoneTypeName}`)
             .unificationEnabled(true)
             .materialSupplier(() => material)
-
             .materialIconType(GTMaterialIconType.ore)
             .generationCondition(ItemGenerationCondition.hasOreProperty)
             

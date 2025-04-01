@@ -14,7 +14,4 @@ const registerAE2TagPrefixes = (event) => {
 	TagPrefix.gem.setIgnored(GTMaterials.CertusQuartz, $AE_ITEMS.CERTUS_QUARTZ_CRYSTAL);
 
 	TagPrefix.dust.setIgnored(GTMaterials.EnderPearl, $AE_ITEMS.ENDER_DUST);
-
-	// TODO: make fluid solidifier/extractor recipes for fluix block
-	//TagPrefix.block.modifyMaterialAmount(Fluix, 4);
 }

@@ -12,8 +12,6 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:stack_upgrade_tier_2',
     'sophisticatedbackpacks:stack_upgrade_tier_3',
     'sophisticatedbackpacks:stack_upgrade_tier_4',
-    'sophisticatedbackpacks:tank_upgrade',
-    'sophisticatedbackpacks:battery_upgrade',
     'sophisticatedbackpacks:pump_upgrade',
     'sophisticatedbackpacks:advanced_pump_upgrade',
     'sophisticatedbackpacks:xp_pump_upgrade',
@@ -22,7 +20,8 @@ global.SOPHISTICATED_BACKPACKS_DISABLED_ITEMS = [
     'sophisticatedbackpacks:advanced_feeding_upgrade',
     'sophisticatedbackpacks:feeding_upgrade',
     'sophisticatedbackpacks:anvil_upgrade',
-    'sophisticatedbackpacks:stack_upgrade_starter_tier',
-    'sophisticatedbackpacks:copper_backpack'
+    'sophisticatedbackpacks:copper_backpack',
+    'sophisticatedbackpacks:infinity_upgrade',
+    'sophisticatedbackpacks:survival_infinity_upgrade'
 ];
 

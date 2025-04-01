@@ -1,27 +1,16 @@
 // priority: 0
 
 const generateMixerRecipe = (event, input, fluid_input, output, circuit, fluid_output, duration, EUt, rpm, id) => {
-    const recipe1 = event.recipes.gtceu.mixer(id)             
+    const recipe = event.recipes.gtceu.mixer(id)             
         .itemInputs(input)
         .inputFluids(fluid_input)
         .itemOutputs(output)
         .outputFluids(fluid_output)
         .duration(duration)
         .EUt(EUt)
-
-        //FIXME: GTCEU Create Mixer got removed and added by a 3rd party addon, KJS supported is borked
-    /*const recipe2 = event.recipes.gtceu.create_mixer(id)             
-        .itemInputs(input)
-        .inputFluids(fluid_input)
-        .itemOutputs(output)
-        .outputFluids(fluid_output)
-        .duration(duration)
-        .EUt(EUt)
-        .rpm(rpm)*/
 
     if (circuit != null) {
-        recipe1.circuit(circuit)
-        //recipe2.circuit(circuit)
+        recipe.circuit(circuit)
     }
 }
 
@@ -72,8 +61,8 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
         .itemOutputs(output)
         .chancedOutput(input, 7500, 0)
         .chancedOutput(input, 5000, 0)
-        .duration(64000)
-        .EUt(128)
+        .duration(36000) // 30 mins
+        .EUt(72)
 
     // С удобрением
     event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -84,6 +73,15 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
         .itemOutputs(output)
         .chancedOutput(input, 8500, 0)
         .chancedOutput(input, 6000, 0)
-        .duration(16000)
-        .EUt(256)
+        .duration(12000) // 10 mins
+        .EUt(196)
+}
+
+const getFillingNBT = (material, amount) => {
+	return {
+		tank: {
+			FluidName: Fluid.of(material.getFluid()).getId(),
+			Amount: amount
+		}
+	}
 }

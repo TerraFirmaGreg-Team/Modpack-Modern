@@ -414,7 +414,6 @@
   "read_by_default": true,
   "extra_recipe_mappings": {
     "tag:tfc:glass_batches": 1,
-    "tag:c:glass_panes": 2,
-    "tag:c:glass_blocks": 4
+    "tag:forge:glass": 2
   }
 }

@@ -94,11 +94,11 @@ TFCEvents.registerClimateModel(event => {
 	event.registerClimateModel('tfg:nether_climate', model => {
 
 		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
-			return lerp(80, 15, pos.y / 128);
+			return lerp(100, 25, pos.y / 128);
 		})
 
 		model.setAverageTemperatureCalculation((level, pos) => {
-			return lerp(80, 15, pos.y / 128);
+			return lerp(100, 25, pos.y / 128);
 		})
 
 		model.setAverageRainfallCalculation((level, pos) => {

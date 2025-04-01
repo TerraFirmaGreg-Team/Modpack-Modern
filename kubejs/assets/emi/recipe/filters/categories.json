@@ -10,6 +10,9 @@
             "category": "minecraft:stonecutting"
         },
         {
+            "category": "minecraft:blasting"
+        },
+        {
             "category": "emi:anvil_repairing"
         },
         {
@@ -34,7 +37,16 @@
             "category": "emi:fuel"
         },
         {
+            "category": "emi:grinding"
+        },
+        {
             "category": "gtceu:ore_vein_diagram"
+        },
+        {
+            "category": "create:automatic_shaped"
+        },
+        {
+            "category": "create:automatic_shapeless"
         },
         {
             "id": "/emi:/crafting/repairing/[^*]+/"

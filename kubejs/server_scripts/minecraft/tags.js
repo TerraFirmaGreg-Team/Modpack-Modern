@@ -14,6 +14,9 @@ const registerMinecraftItemTags = (event) => {
         event.add('c:hidden_from_recipe_viewers', item)
     })
 
+    // Hide potions
+    event.add('c:hidden_from_recipe_viewers', /minecraft.*potion.*/)
+
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
 
@@ -46,6 +49,9 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
+
+    event.add('tfc:rock/raw', 'minecraft:blackstone')
+    event.add('tfc:rock/raw', 'minecraft:dripstone_block')
 }
 
 const registerMinecraftBlockTags = (event) => {
@@ -64,6 +70,7 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('tfc:rock/raw', 'minecraft:dripstone_block')
+    event.add('forge:cobblestone/normal', 'minecraft:cobbled_deepslate')
     event.add('minecraft:lush_ground_replaceable', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:blackstone')
     event.add('beneath:nether_bush_plantable_on', 'minecraft:deepslate')
@@ -90,7 +97,6 @@ const registerMinecraftBlockTags = (event) => {
     event.add('forge:stone', 'minecraft:blackstone')
 
     event.add('tfc:can_landslide', 'minecraft:cobbled_deepslate')
-    event.add('tfc:can_landslide', 'minecraft:soul_soil')
 
     event.add('tfc:breaks_when_isolated', 'minecraft:deepslate')
     event.add('tfc:breaks_when_isolated', 'minecraft:blackstone')

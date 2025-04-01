@@ -127,7 +127,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "tfg:deepslate_brick",
+					"name": "tfg:brick/deepslate",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

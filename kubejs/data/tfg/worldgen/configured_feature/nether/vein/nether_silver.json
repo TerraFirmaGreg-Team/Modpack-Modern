@@ -19,11 +19,11 @@
 					},
 					{
 						"block": "gtceu:granite_silver_ore",
-						"weight": 15
+						"weight": 35
 					},
 					{
 						"block": "gtceu:granite_lead_ore",
-						"weight": 55
+						"weight": 35
 					}
 				]
 			},
@@ -38,11 +38,11 @@
 					},
 					{
 						"block": "gtceu:gneiss_silver_ore",
-						"weight": 15
+						"weight": 35
 					},
 					{
 						"block": "gtceu:gneiss_lead_ore",
-						"weight": 55
+						"weight": 35
 					}
 				]
 			},
@@ -58,11 +58,11 @@
 					},
 					{
 						"block": "gtceu:pyroxenite_silver_ore",
-						"weight": 15
+						"weight": 35
 					},
 					{
 						"block": "gtceu:pyroxenite_lead_ore",
-						"weight": 55
+						"weight": 35
 					}
 				]
 			}
@@ -75,7 +75,15 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_native_silver",
-					"weight": 100
+					"weight": 50
+				},
+				{
+					"block": "gtceu:galena_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:lead_indicator",
+					"weight": 25
 				}
 			]
 		}

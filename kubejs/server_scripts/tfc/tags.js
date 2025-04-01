@@ -48,6 +48,10 @@ const registerTFCItemTags = (event) => {
     event.add('minecraft:fishes', 'tfc:food/rainbow_trout')
     event.add('minecraft:fishes', 'tfc:food/smallmouth_bass')
 
+    // Make eggs not useless
+    event.add('tfc:foods/usable_in_salad', 'tfc:food/cooked_egg')
+    event.add('tfc:foods/usable_in_salad', 'tfc:food/boiled_egg')
+
     // Чтобы жарились бревна из TFC в пиролиз. печке
     // Почему нельзя просто добавить тег в тег? (допустим minecraft:logs), потому что из-за этого ломаются все рецепты minecraft:logs, магия...
     global.TFC_WOOD_TYPES.forEach(woodType => {
@@ -57,26 +61,22 @@ const registerTFCItemTags = (event) => {
     // Allows TFC stick bundles to be burned in the coke/pyrolyse ovens
     event.add("minecraft:logs_that_burn", "tfc:stick_bundle");
 
-    // Определеяет какое оружие может появиться у зомбя/скелета в руках
-    // Мечи
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_sword')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_sword')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_sword')
-    // Топоры
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_axe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_axe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_axe')
-    // Косы
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bismuth_bronze_scythe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:bronze_scythe')
-    event.add('tfc:mob_mainhand_weapons', 'gtceu:black_bronze_scythe')
+    // Remove sulfur dust overlap
+    event.remove('forge:dusts/sulfur', 'tfc:powder/sulfur');
 
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')
+    event.add('tfc:forge_fuel', 'beneath:cursecoal')
     event.add('tfc:forge_fuel', 'gtceu:coke_gem')
     event.add('tfc:forge_fuel', 'gtceu:rich_raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:poor_raw_coal')
+    event.add('tfc:forge_fuel', 'gtceu:coal_dust')
+
+    // Change blast furnace to use coke
+    event.remove('tfc:blast_furnace_fuel', 'minecraft:charcoal')
+    event.add('tfc:blast_furnace_fuel', 'gtceu:coke_gem')
+    event.add('tfc:blast_furnace_fuel', 'beneath:cursecoal')
 
     // Тэги для сундуков, чтобы отличать их виды
     global.TFC_WOOD_TYPES.forEach(woodType => {
@@ -366,15 +366,10 @@ const registerTFCFluidTags = (event) => {
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/red_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/blue_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/cast_iron')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/pig_iron')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_black_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_red_steel')
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/high_carbon_blue_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/weak_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/weak_red_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/weak_blue_steel')
-    event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/unknown')
 
     // Добавление GTCEu металлов в форму слитков
     event.add('tfc:usable_in_ingot_mold', 'gtceu:bismuth')
@@ -396,15 +391,6 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_ingot_mold', 'gtceu:black_steel')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:blue_steel')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:pig_iron')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_black_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:high_carbon_blue_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_red_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:weak_blue_steel')
-    event.add('tfc:usable_in_ingot_mold', 'tfg:unknown')
 
     event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
     event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
@@ -419,11 +405,6 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_tool_head_mold', 'gtceu:bismuth_bronze')
     event.add('tfc:usable_in_tool_head_mold', 'gtceu:black_bronze')
     event.add('tfc:usable_in_tool_head_mold', 'gtceu:bronze')
-
-    //
-    event.add('tfc:usable_in_pot', 'tfg:latex')
-    event.add('tfc:usable_in_barrel', 'tfg:latex')
-    event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
 
     //
     event.add('tfc:usable_in_barrel', 'gtceu:creosote')
@@ -451,57 +432,16 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/red_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/blue_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/cast_iron')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/pig_iron')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_black_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_red_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_red_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/weak_blue_steel')
-    event.add('c:hidden_from_recipe_viewers', 'tfc:metal/unknown')
 }
 
 const registerTFCPlacedFeatures = (event) => {
     
     // Удаление
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_copper')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_malachite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_tetrahedrite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_malachite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_tetrahedrite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/rich_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/fake_native_gold')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_native_silver')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_native_silver')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_cassiterite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_bismuthinite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_bismuthinite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_sphalerite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_sphalerite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_hematite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_magnetite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/surface_limonite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/normal_garnierite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/gabbro_garnierite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/graphite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/lignite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/bituminous_coal')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/sulfur')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/cryolite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/cinnabar')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/saltpeter')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/sylvite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/borax')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/gypsum')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/halite')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/lapis_lazuli')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/diamond')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/emerald')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/amethyst')
-    event.remove('tfc:in_biome/veins', 'tfc:vein/opal')
-    event.remove('tfc:in_biome/veins', 'tfc:geode')
+    event.removeAll('tfc:in_biome/veins')
 
     // Добавление
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')
@@ -555,4 +495,5 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/geode')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
+    event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
 }

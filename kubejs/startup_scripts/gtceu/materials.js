@@ -1,13 +1,16 @@
 const registerGTCEuMaterials = (event) => {
+
 }
 
 const registerGTCEuMaterialModification = (event) => {
 
-	
-	const $TFG_PROPERTY_KEYS = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
+	//const TFGPropertyKey = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
-	
+	const $ITEM_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ItemPipeProperties')
+	const $FLUID_PIPE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
+	const $HAZARD_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.HazardProperty')
+
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
@@ -69,67 +72,55 @@ const registerGTCEuMaterialModification = (event) => {
 		GTToolType.CROWBAR,
 	]
 
-
-	const Bismuthinite = GTCEuAPI.materialManager.getMaterial('tfg:bismuthinite')
-	const Limonite = GTCEuAPI.materialManager.getMaterial('tfg:limonite')
-
 	/* TFC Проперти для материалов */
-	GTMaterials.Copper.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 1080, 1));
-	GTMaterials.BismuthBronze.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(591, 788, 985, 2));
-	GTMaterials.Bronze.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(570, 760, 950, 2));
-	GTMaterials.BlackBronze.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(642, 856, 1070, 2));
-	GTMaterials.WroughtIron.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3));
-	GTMaterials.Steel.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 4));
-	GTMaterials.BlackSteel.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(891, 1188, 1485, 5));
-	GTMaterials.BlueSteel.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 6));
-	GTMaterials.RedSteel.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 6));
 
-	GTMaterials.Gold.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(636, 848, 1060, 1));
-	GTMaterials.Bismuth.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(162, 216, 270, 1));
-	GTMaterials.Brass.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(558, 744, 930, 2));
-	GTMaterials.Nickel.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(872, 1162, 1453, 1));
-	GTMaterials.RoseGold.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(576, 768, 960, 1));
-	GTMaterials.Silver.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(577, 769, 961, 1));
-	GTMaterials.Tin.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 230, 1));
-	GTMaterials.Zinc.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(252, 336, 420, 1));
-	GTMaterials.SterlingSilver.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(570, 760, 950, 1));
-	GTMaterials.Iron.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, 3));
+	// TFC_PROPERTY = (forging temp, welding temp, melt temp, material, tier, percent of material)
 
-	GTMaterials.Hematite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.YellowLimonite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.Magnetite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.Pyrite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
-	GTMaterials.Goethite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 85));
-	GTMaterials.Malachite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
-	GTMaterials.Tetrahedrite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
-	GTMaterials.Chalcopyrite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
-	GTMaterials.Cassiterite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 230, GTMaterials.Tin, 1, 200));
-	GTMaterials.CassiteriteSand.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 230, GTMaterials.Tin, 1, 150));
-	GTMaterials.Sphalerite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 420, GTMaterials.Zinc, 1, 90));
-	GTMaterials.Garnierite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1453, GTMaterials.Nickel, 1, 90));
+	GTMaterials.Copper.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 1080, 1));
+	GTMaterials.BismuthBronze.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(591, 788, 985, 2));
+	GTMaterials.Bronze.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 760, 950, 2));
+	GTMaterials.BlackBronze.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(642, 856, 1070, 2));
+	GTMaterials.WroughtIron.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3));
+	GTMaterials.Steel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 4));
+	GTMaterials.BlackSteel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(891, 1188, 1485, 5));
+	GTMaterials.BlueSteel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 6));
+	GTMaterials.RedSteel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 6));
 
-	GTMaterials.Redstone.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 460, 1));
-	GTMaterials.RedAlloy.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
-	GTMaterials.TinAlloy.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
+	GTMaterials.Gold.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(636, 848, 1060, 1));
+	GTMaterials.Bismuth.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(162, 216, 270, 1));
+	GTMaterials.Brass.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(558, 744, 930, 2));
+	GTMaterials.Nickel.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(872, 1162, 1453, 1));
+	GTMaterials.RoseGold.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(576, 768, 960, 1));
+	GTMaterials.Silver.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(577, 769, 961, 1));
+	GTMaterials.Tin.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 230, 1));
+	GTMaterials.Zinc.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(252, 336, 420, 1));
+	GTMaterials.SterlingSilver.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 760, 950, 1));
+	GTMaterials.Iron.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, 3));
 
-	Bismuthinite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(162, 216, 270, GTMaterials.Bismuth, 1));
-	Limonite.setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.Hematite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.YellowLimonite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.Magnetite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.Pyrite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.Goethite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, GTMaterials.Iron, 3, 90));
+	GTMaterials.Malachite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
+	GTMaterials.Tetrahedrite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
+	GTMaterials.Chalcopyrite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 85));
+	GTMaterials.Chalcocite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 95));
+	GTMaterials.Bornite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1080, GTMaterials.Copper, 1, 90));
+	GTMaterials.Cassiterite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(648, 864, 230, GTMaterials.Tin, 1, 100));
+	GTMaterials.CassiteriteSand.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 230, GTMaterials.Tin, 1, 85));
+	GTMaterials.Sphalerite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 420, GTMaterials.Zinc, 1, 90));
+	GTMaterials.Garnierite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1453, GTMaterials.Nickel, 1, 100));
+	GTMaterials.Pentlandite.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(138, 184, 1453, GTMaterials.Nickel, 1, 85));
 
-	GTCEuAPI.materialManager.getMaterial('tfg:pig_iron').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(921, 1228, 1535, 3));
-	GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 3));
-	GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_black_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 5));
-	GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_red_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 5));
-	GTCEuAPI.materialManager.getMaterial('tfg:high_carbon_blue_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 5));
-	GTCEuAPI.materialManager.getMaterial('tfg:weak_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 4));
-	GTCEuAPI.materialManager.getMaterial('tfg:weak_blue_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 5));
-	GTCEuAPI.materialManager.getMaterial('tfg:weak_red_steel').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(924, 1232, 1540, 5));
-	GTCEuAPI.materialManager.getMaterial('tfg:unknown').setProperty($TFG_PROPERTY_KEYS.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 400, 1));
 
+	GTMaterials.Redstone.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(240, 320, 460, 1));
+	GTMaterials.RedAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(570, 650, 740, 2));
+	GTMaterials.TinAlloy.setProperty(TFGPropertyKey.TFC_PROPERTY, new $TFC_PROPERTY(1000, 1100, 1250, 3));
 
 	GTMaterials.Gold.addFlags(GENERATE_BELL);
 	GTMaterials.Brass.addFlags(GENERATE_BELL);
 	GTMaterials.Bronze.addFlags(GENERATE_BELL);
-
 
 	//
 	//
@@ -156,11 +147,11 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BlueSteel.addFlags(GENERATE_DOUBLE_INGOTS, HAS_TFC_TOOL, HAS_TFC_ARMOR, HAS_TFC_UTILITY);
 	//
 	//        /* Имеют маленькие куски руды TFC */
-	Bismuthinite.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.Bismuth.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Cassiterite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Garnierite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Hematite.addFlags(HAS_SMALL_TFC_ORE);
-	Limonite.addFlags(HAS_SMALL_TFC_ORE);
+	GTMaterials.YellowLimonite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Magnetite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Malachite.addFlags(HAS_SMALL_TFC_ORE);
 	GTMaterials.Sphalerite.addFlags(HAS_SMALL_TFC_ORE);
@@ -184,18 +175,17 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.EXT2_METAL.forEach(tag => GTMaterials.Bismuth.addFlags(tag))
 
 	GTMaterials.Borax.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	GTMaterials.Titanium.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
-	//
+	
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
-	//
+	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.BlueSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
-	//
-	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME);
+	
+	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_SMALL_GEAR);
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
@@ -222,6 +212,40 @@ const registerGTCEuMaterialModification = (event) => {
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
 
+	// Add bismuth item pipe - same stats as tin
+	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(4096, 0.5));
+	// Add bis bronze fluid pipe - same stats as bronze
+	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+
+	// Add some hazards back
+	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
+	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
+	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
+	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CARCINOGEN, 1, false));
+
+	// Color Adjustments
+	GTMaterials.BismuthBronze.setMaterialARGB(0x8CDCB6)
+	GTMaterials.BlackBronze.setMaterialARGB(0xB681CE)
+	GTMaterials.RedSteel.setMaterialARGB(0xc8575d)
+	GTMaterials.RedSteel.setMaterialSecondaryARGB(0x560307)
+	GTMaterials.BlueSteel.setMaterialARGB(0x7a87b7)
+	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x283467)
+
+	GTMaterials.Iron.setMaterialARGB(0x503d32)
+	GTMaterials.Iron.setMaterialSecondaryARGB(0x131212)
+	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)
+	GTMaterials.IronMagnetic.setMaterialSecondaryARGB(0x131212)
+	GTMaterials.Zinc.setMaterialARGB(0xd6ffdc)
+	GTMaterials.Zinc.setMaterialSecondaryARGB(0x213b3f)
+	GTMaterials.Graphite.setMaterialARGB(0x889BA8)
+	GTMaterials.Graphite.setMaterialSecondaryARGB(0x30383E)
+	GTMaterials.Amethyst.setMaterialARGB(0xCC9EF0)
+	GTMaterials.Amethyst.setMaterialSecondaryARGB(0x6F4AB3)
+	GTMaterials.Cobalt.setMaterialARGB(0xC9E4FB)
+	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
+	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
+	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
 	{
 		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);

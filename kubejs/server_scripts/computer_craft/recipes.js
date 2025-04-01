@@ -189,6 +189,7 @@ const registerComputerCraftRecipes = (event) => {
             .itemInputs('ae2:blank_pattern')
             .inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 288))
             .itemOutputs(Item.of('computercraft:disk', global.COMPUTER_CRAFT_DISCS[i]))
+            .category(GTRecipeCategories.CHEM_DYES)
             .duration(20)
             .EUt(7)
     }

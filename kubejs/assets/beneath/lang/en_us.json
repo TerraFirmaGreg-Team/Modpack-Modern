@@ -10,14 +10,10 @@
 	"block.beneath.ore.nether_cursecoal.prospected": "Anthracite",
 	"block.beneath.cursecoal_pile": "Anthracite Pile",
 
+	"block.beneath.ore.blackstone_sylvite": "Sylvite Ore",
+
 	"block.beneath.crackrack": "Keratophyre",
 	"item.beneath.crackrack_rock": "Keratophyre Rock",
 
-	"block.beneath.soul_farmland": "Undersoil Farmland",
-	"beneath.nutrient.decay": "Heat: §e%s%%",
-	"beneath.nutrient.death": "Deflagration: §7%s%%",
-	"beneath.nutrient.destruction": "Niter: §6%s%%",
-	"beneath.nutrient.flame": "Sulfic: §c%s%%",
-	"beneath.nutrient.sorrow": "Pep: §9%s%%",
-	"item.beneath.agonizing_fertilizer": "Undersoil Fertilizer"
+	"block.beneath.soul_clay": "Muddy Clay"
 }

@@ -112,11 +112,11 @@ const registerRailWaysRecipes = (event) => {
         B: '#forge:tools/hammers',
         C: '#forge:tools/files',
         D: 'create:precision_mechanism',
-        E: 'ae2:wireless_access_point'
+        E: 'gtceu:lv_sensor'
     }).id('tfg:railways/shaped/remote_lens')
 
     event.recipes.gtceu.assembler('tfg:railways/remote_lens')             
-        .itemInputs('#forge:plates/brass', 'create:precision_mechanism', 'ae2:wireless_access_point')
+        .itemInputs('#forge:plates/brass', 'create:precision_mechanism', 'gtceu:lv_sensor')
         .circuit(3)
         .itemOutputs('railways:remote_lens')
         .duration(200)

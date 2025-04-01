@@ -12,7 +12,7 @@
 				"replace": [
 					"minecraft:deepslate",
 					"tfc:mud/silty_loam",
-					"minecraft:soul_soil",
+					"beneath:soul_clay",
 					"tfc:dirt/loam",
 					"tfc:mud/loam",
 					"tfc:peat",
@@ -96,40 +96,16 @@
 					"weight": 15
 				},
 				{
-					"block": "tfg:buds/small_lazurite_bud",
-					"weight": 30
+					"block": "gtceu:lazurite_bud_indicator",
+					"weight": 35
 				},
 				{
-					"block": "tfg:buds/medium_lazurite_bud",
-					"weight": 20
+					"block": "gtceu:sodalite_bud_indicator",
+					"weight": 25
 				},
 				{
-					"block": "tfg:buds/large_lazurite_bud",
-					"weight": 10
-				},
-				{
-					"block": "tfg:buds/small_sodalite_bud",
-					"weight": 20
-				},
-				{
-					"block": "tfg:buds/medium_sodalite_bud",
-					"weight": 12
-				},
-				{
-					"block": "tfg:buds/large_sodalite_bud",
-					"weight": 8
-				},
-				{
-					"block": "tfg:buds/small_lapis_bud",
-					"weight": 20
-				},
-				{
-					"block": "tfg:buds/medium_lapis_bud",
-					"weight": 12
-				},
-				{
-					"block": "tfg:buds/large_lapis_bud",
-					"weight": 8
+					"block": "gtceu:lapis_bud_indicator",
+					"weight": 25
 				}
 			]
 		}

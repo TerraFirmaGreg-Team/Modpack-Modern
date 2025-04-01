@@ -15,8 +15,10 @@ ServerEvents.tags('item', event => {
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
+    registerDiggerHelmetItemTags(event)
     registerEndermanOverhaulItemTags(event)
     registerEveryCompatItemTags(event)
+    registerExposureItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
@@ -31,8 +33,9 @@ ServerEvents.tags('item', event => {
     registerSophisticatedBackpacksItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
+    registerTFCTextileItemTags(event)
     registerTFGItemTags(event)
-    registerExposureItemTags(event)
+    registerVintageImprovementsItemTags(event)
 })
 
 /**
@@ -62,6 +65,7 @@ ServerEvents.tags('block', event => {
     registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
     registerTFGBlockTags(event)
+    registerVintageImprovementsBlockTags(event)
 })
 
 /**
@@ -71,8 +75,11 @@ ServerEvents.tags('fluid', event => {
     registerAFCFluidTags(event)
     registerCreateFluidTags(event)
     registerCreateAdditionsFluidTags(event)
+    registerGTCEUFluidTags(event)
     registerFirmaLifeFluidTags(event)
     registerTFCFluidTags(event)
+    registerTFGFluidTags(event)
+    registerVintageImprovementsFluidTags(event)
 })
 
 /**
@@ -146,6 +153,7 @@ ServerEvents.recipes(event => {
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
     registerCreateConnectedRecipes(event)
+    registerDiggerHelmetRecipes(event)
     registerEveryCompatRecipes(event)
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
@@ -157,6 +165,7 @@ ServerEvents.recipes(event => {
     registerGTCEURecipes(event)
     registerHandGliderRecipes(event)
     registerHotOrNotRecipes(event)
+    registerImmersiveAircraftRecipes(event)
     registerMegaCellsRecipes(event)
     registerMERequesterRecipes(event)
     registerMinecraftRecipes(event)

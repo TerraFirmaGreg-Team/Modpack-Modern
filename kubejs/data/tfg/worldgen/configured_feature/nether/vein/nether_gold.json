@@ -156,15 +156,19 @@
 			"blocks": [
 				{
 					"block": "tfc:ore/small_limonite",
-					"weight": 25
+					"weight": 5
 				},
 				{
 					"block": "tfc:ore/small_hematite",
-					"weight": 25
+					"weight": 15
 				},
 				{
 					"block": "tfc:ore/small_native_gold",
-					"weight": 50
+					"weight": 75
+				},
+				{
+					"block": "gtceu:goethite_indicator",
+					"weight": 5
 				}
 			]
 		}

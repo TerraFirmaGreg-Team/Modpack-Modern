@@ -5,7 +5,7 @@
 **/*.jar
 **/*.mrpack
 **/*.code-workspace
-**/*.zip
+# **/*.zip
 
 # Pakku
 build/
@@ -28,7 +28,6 @@ config/customloadingscreen_timings.nbt
 config/simplelogin.cfg
 config/fml.toml
 config/forge-client.toml
-config/xaerominimap_entities.json
 # config/xaerominimap.txt
 # config/xaeroworldmap.txt
 config/fancymenu/menu_identifiers.db
@@ -100,6 +99,7 @@ optionsof.txt
 optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
+gtceu/prospection_cache/
 
 # Server data
 .pakku/server-overrides/libraries

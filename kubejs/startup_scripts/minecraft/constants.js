@@ -89,6 +89,9 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_stone_brick_slab', 
     'minecraft:end_stone_brick_wall',
 
+    // Dripstone
+    'minecraft:pointed_dripstone',
+
     // Сланец
     'minecraft:reinforced_deepslate',
 
@@ -425,7 +428,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     // Броня
     "minecraft:netherite_helmet",
     "minecraft:netherite_chestplate",
-    "minecraft:netherite_leggings",
     "minecraft:netherite_boots",
     "minecraft:golden_helmet",
     "minecraft:golden_chestplate",
@@ -654,7 +656,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:end_portal_frame', 
     'minecraft:mushroom_stew', 
     'minecraft:structure_void',
-    'minecraft:lectern', 
     'minecraft:sea_pickle',
     'minecraft:apple',
     'minecraft:soul_torch', 
@@ -666,12 +667,16 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:furnace_minecart',
     'minecraft:amethyst_cluster',
     'minecraft:rabbit_hide',
+    'minecraft:raw_iron',
     'minecraft:raw_iron_block', 
+    'minecraft:raw_gold',
     'minecraft:raw_gold_block', 
     'minecraft:raw_copper_block',
     'minecraft:compass',
     'minecraft:iron_bars',
     'minecraft:honeycomb',
+    'minecraft:tipped_arrow',
+    'minecraft:grindstone',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада
@@ -724,6 +729,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_nylium', 
     'minecraft:warped_nylium', 
     'minecraft:soul_sand', 
+    'minecraft:soul_soil', 
+    'minecraft:crying_obsidian', 
     'minecraft:nether_wart_block', 
     'minecraft:warped_wart_block', 
     'minecraft:crimson_fungus', 
