@@ -66,15 +66,17 @@ const registerTFCItemTags = (event) => {
 
     // Тэги для возможности использования разных углей в кузне
     event.add('tfc:forge_fuel', 'minecraft:coal')
+    event.add('tfc:forge_fuel', 'beneath:cursecoal')
     event.add('tfc:forge_fuel', 'gtceu:coke_gem')
     event.add('tfc:forge_fuel', 'gtceu:rich_raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:poor_raw_coal')
+    event.add('tfc:forge_fuel', 'gtceu:coal_dust')
 
-    // Piglin
-    event.add('minecraft:piglin_loved', 'tfc:ore/poor_native_gold')
-    event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
-    event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
+    // Change blast furnace to use coke
+    event.remove('tfc:blast_furnace_fuel', 'minecraft:charcoal')
+    event.add('tfc:blast_furnace_fuel', 'gtceu:coke_gem')
+    event.add('tfc:blast_furnace_fuel', 'beneath:cursecoal')
 
     // Тэги для сундуков, чтобы отличать их виды
     global.TFC_WOOD_TYPES.forEach(woodType => {

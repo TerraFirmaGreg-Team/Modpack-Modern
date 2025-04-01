@@ -61,8 +61,8 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
         .itemOutputs(output)
         .chancedOutput(input, 7500, 0)
         .chancedOutput(input, 5000, 0)
-        .duration(64000)
-        .EUt(128)
+        .duration(36000) // 30 mins
+        .EUt(72)
 
     // С удобрением
     event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -73,8 +73,8 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
         .itemOutputs(output)
         .chancedOutput(input, 8500, 0)
         .chancedOutput(input, 6000, 0)
-        .duration(16000)
-        .EUt(256)
+        .duration(12000) // 10 mins
+        .EUt(196)
 }
 
 const getFillingNBT = (material, amount) => {

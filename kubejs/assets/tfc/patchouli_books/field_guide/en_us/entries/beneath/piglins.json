@@ -6,7 +6,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "Piglin Bartering",
-			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla.$(br)They accept anything that contains at least one ingot's worth of $(item)Gold$().$(br2)See the $(thing)#minecraft:piglin_loved$() tag for specifics."
+			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$()."
 		},
 		{
 			"type": "patchouli:entity",

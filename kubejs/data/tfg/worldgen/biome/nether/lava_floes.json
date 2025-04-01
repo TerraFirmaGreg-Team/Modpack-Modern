@@ -117,18 +117,12 @@
 				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:magma_cube",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:spider",
-				"maxCount": 5,
-				"minCount": 3,
 				"weight": 100
 			},
 			{
@@ -147,7 +141,7 @@
 				"type": "minecraft:skeleton",
 				"maxCount": 4,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "minecraft:wither_skeleton",

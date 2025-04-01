@@ -33,9 +33,6 @@ const registerCreateItemTags = (event) => {
 
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
-	
-    event.add('minecraft:piglin_loved', 'create:wrench')
-    event.add('minecraft:piglin_loved', 'create:precision_mechanism')
 }
 
 const registerCreateBlockTags = (event) => {

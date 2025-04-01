@@ -99,11 +99,11 @@ const registerTFCRecipes = (event) => {
 
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `tfc:wood/sapling/${wood}`, 16000, `32x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
+		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, 16000, `64x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `afc:wood/sapling/${x.sapling}`, 16000, `32x ${x.log}`, `tfg:greenhouse/${x.sapling}`)
+		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, 16000, `64x ${x.log}`, `tfg:greenhouse/${x.sapling}`)
 	})
 
 	// Семена фруктов
@@ -150,6 +150,20 @@ const registerTFCRecipes = (event) => {
 		A: '#forge:double_plates/wrought_iron',
 		B: 'tfc:crucible'
 	}).id('tfc:crafting/blast_furnace')
+
+	event.recipes.gtceu.macerator('recycle_tfc_blast_furnace')
+		.itemInputs('tfc:blast_furnace')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 16))
+		.duration(GTMaterials.WroughtIron.getMass() * 16)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	event.recipes.gtceu.arc_furnace('recycle_tfc_blast_furnace')
+		.itemInputs('tfc:blast_furnace')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 16))
+		.duration(GTMaterials.WroughtIron.getMass() * 16)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	// Тыква -> Кусочки тыквы
 	event.recipes.minecraft.crafting_shaped('5x tfc:food/pumpkin_chunks', [

@@ -119,13 +119,13 @@
 				"type": "minecraft:piglin",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:magma_cube",
@@ -134,16 +134,10 @@
 				"weight": 50
 			},
 			{
-				"type": "minecraft:spider",
-				"maxCount": 5,
-				"minCount": 3,
-				"weight": 100
-			},
-			{
 				"type": "minecraft:silverfish",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "kaolinclayze:golem_2",
@@ -155,7 +149,7 @@
 				"type": "minecraft:skeleton",
 				"maxCount": 4,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "minecraft:wither_skeleton",

@@ -31,8 +31,8 @@
         "teleporttype": "AIR",
         "teleport_to_y": 125
       },
-      "belowy": -60,
-      "slowfallticks": 400
+      "belowy": -58,
+      "slowfallticks": 1200
     },
     {
       "from": "minecraft:the_nether",
@@ -48,7 +48,7 @@
       "to": "minecraft:overworld",
       "teleporttype": {
         "teleporttype": "CAVE",
-        "teleport_to_y": -60
+        "teleport_to_y": -58
       },
       "abovey": 118
     },

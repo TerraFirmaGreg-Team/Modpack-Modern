@@ -100,7 +100,7 @@
 				"type": "minecraft:zombified_piglin",
 				"maxCount": 3,
 				"minCount": 2,
-				"weight": 100
+				"weight": 50
 			},
 			{
 				"type": "minecraft:magma_cube",
@@ -118,7 +118,13 @@
 				"type": "minecraft:skeleton",
 				"maxCount": 4,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
+			},
+			{
+				"type": "minecraft:wither_skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
 			},
 			{
 				"type": "minecraft:enderman",

@@ -2565,6 +2565,69 @@
             ]
         },
         {
+            "pakku_id": "jZDVmvrMLZqxgLSx",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "construction-wand",
+                "modrinth": "construction-wand"
+            },
+            "name": {
+                "curseforge": "Construction Wand",
+                "modrinth": "Construction Wand"
+            },
+            "id": {
+                "curseforge": "399558",
+                "modrinth": "bV2crgLh"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "constructionwand-1.20.1-2.11.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4684/54/constructionwand-1.20.1-2.11.jar",
+                    "id": "4684054",
+                    "parent_id": "399558",
+                    "hashes": {
+                        "sha1": "80bd5223cd8984dc1038cb9f2d1cb6b97f31998a",
+                        "md5": "e17b0f6b4fa378d6750a9030a5aca9e0"
+                    },
+                    "required_dependencies": [],
+                    "size": 210312,
+                    "date_published": "2023-08-05T20:02:14.447Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "constructionwand-1.20.1-2.11.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/bV2crgLh/versions/XCgKj8gL/constructionwand-1.20.1-2.11.jar",
+                    "id": "XCgKj8gL",
+                    "parent_id": "bV2crgLh",
+                    "hashes": {
+                        "sha512": "a029f801dbcfacd230650fd018f7424535454fb2062d796cbe9cd622a9fe4ae80cb0d7883faa2775c27ed73a21dffbadb44ddc32ce1293ec098654393e7b1c95",
+                        "sha1": "80bd5223cd8984dc1038cb9f2d1cb6b97f31998a"
+                    },
+                    "required_dependencies": [],
+                    "size": 210312,
+                    "date_published": "2023-08-05T20:03:02.535254Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "GzdI0oHwJrRp9mrA",
             "pakku_links": [
                 "yTR90RtnmEyMuFnr"
@@ -3064,6 +3127,73 @@
             ]
         },
         {
+            "pakku_id": "n7LrUbnh6aMeSSCg",
+            "pakku_links": [
+                "JJEMwzpSHmXvtGNL"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "create-horse-power",
+                "modrinth": "create-horse-power"
+            },
+            "name": {
+                "curseforge": "Create Horse Power",
+                "modrinth": "Create Horse Power"
+            },
+            "id": {
+                "curseforge": "1121632",
+                "modrinth": "9Qm19XSM"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createhorsepower-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5812/109/createhorsepower-1.0.0.jar",
+                    "id": "5812109",
+                    "parent_id": "1121632",
+                    "hashes": {
+                        "sha1": "b7818918171af3f32a499cd2d0091ae4dfd2bcca",
+                        "md5": "c7928a5531f4fe262d0432da1a0a5e7e"
+                    },
+                    "required_dependencies": [],
+                    "size": 251254,
+                    "date_published": "2024-10-14T18:12:31.577Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "createhorsepower-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/9Qm19XSM/versions/QQH0lIPQ/createhorsepower-1.0.0.jar",
+                    "id": "QQH0lIPQ",
+                    "parent_id": "9Qm19XSM",
+                    "hashes": {
+                        "sha512": "80651b1f8277f8b669ffb2c89ed03b6d280ee67133169032a7759ab1dfd45f7a12e9a8404560c5dae744b5892d9de4217331b8537853796a2855ca7394851495",
+                        "sha1": "b7818918171af3f32a499cd2d0091ae4dfd2bcca"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 251254,
+                    "date_published": "2024-09-08T03:21:44.259408Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "nETOAiekqVCbz6uw",
             "type": "MOD",
             "side": "BOTH",
@@ -3196,6 +3326,76 @@
                     ],
                     "size": 9096035,
                     "date_published": "2024-05-09T22:45:15.623Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "1rGcA3uYMV51UBLS",
+            "pakku_links": [
+                "JJEMwzpSHmXvtGNL"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "create-vintage-improvements",
+                "modrinth": "create-vintage-improvements"
+            },
+            "name": {
+                "curseforge": "Create: Vintage Improvements",
+                "modrinth": "Create: Vintage Improvements"
+            },
+            "id": {
+                "curseforge": "946579",
+                "modrinth": "S27aYArf"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vintageimprovements-1.20.1-0.2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5661/407/vintageimprovements-1.20.1-0.2.0.3.jar",
+                    "id": "5661407",
+                    "parent_id": "946579",
+                    "hashes": {
+                        "sha1": "7a0f9807a148ae1a433149ef88c5c6dd4ed93d5a",
+                        "md5": "19cc1e567129ac86a438a637589b0d68"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 1382006,
+                    "date_published": "2024-08-25T08:36:45.260Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "vintageimprovements-1.20.1-0.2.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/S27aYArf/versions/a7TBDYtd/vintageimprovements-1.20.1-0.2.0.3.jar",
+                    "id": "a7TBDYtd",
+                    "parent_id": "S27aYArf",
+                    "hashes": {
+                        "sha512": "0fbba07b81eaa1ec752135909520732aef3f9207aefa7d1c8c3c4f7cb3f53875f6acf607d1a106dec8a7dc413c3c91442a100839aec6b08ca1f54b7f6e018a80",
+                        "sha1": "7a0f9807a148ae1a433149ef88c5c6dd4ed93d5a"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 1382006,
+                    "date_published": "2024-08-25T08:38:24.609727Z"
                 }
             ]
         },
@@ -3585,7 +3785,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "diggerhelmet-1.20.1-1.0.0.15.jar",
+                    "file_name": "diggerhelmet-1.20.1-1.0.0.16.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3594,18 +3794,19 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8Aatj9Zy/versions/SqKewtyi/diggerhelmet-1.20.1-1.0.0.15.jar",
-                    "id": "SqKewtyi",
+                    "url": "https://cdn.modrinth.com/data/8Aatj9Zy/versions/5rweNw1h/diggerhelmet-1.20.1-1.0.0.16.jar",
+                    "id": "5rweNw1h",
                     "parent_id": "8Aatj9Zy",
                     "hashes": {
-                        "sha512": "f4d4c5b4bfcad60fb39f011f46c951a3a8a730c9f84d779b10a57622bcfae285180ed924900222b452d9f0c68874cfa00eecf53334ab0394b451ddb4ce8ce307",
-                        "sha1": "c42d40a023b0fcfbd9f3751f1ea31757ae65bb7b"
+                        "sha512": "c0e63e74fb7154a0fbad9244cf8a6f69b5f57f1157e5c0824864e11f9652391ee4825d8f6000baf8a65f8b0b0be69b64596797a42f897f165dd2a16c8718b2ec",
+                        "sha1": "674235b35ed08dc16906603043c010f3a2a9485d"
                     },
                     "required_dependencies": [
+                        "vvuO3ImH",
                         "8BmcQJ2H"
                     ],
-                    "size": 87578,
-                    "date_published": "2024-10-04T05:05:23.621223Z"
+                    "size": 109514,
+                    "date_published": "2025-03-31T05:56:20.625415Z"
                 }
             ]
         },
@@ -5459,16 +5660,42 @@
         {
             "pakku_id": "wpE1XCxxzA05zZuT",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
-                "curseforge": "free-cam"
+                "curseforge": "free-cam",
+                "modrinth": "freecam"
             },
             "name": {
-                "curseforge": "Freecam"
+                "curseforge": "Freecam",
+                "modrinth": "Freecam"
             },
             "id": {
-                "curseforge": "557076"
+                "curseforge": "557076",
+                "modrinth": "XeEZ3fK2"
             },
             "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "freecam-forge-1.2.1+1.20.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XeEZ3fK2/versions/bvoDmWip/freecam-forge-1.2.1+1.20.jar",
+                    "id": "bvoDmWip",
+                    "parent_id": "XeEZ3fK2",
+                    "hashes": {
+                        "sha512": "14d5194c02d6281094efdc857e608b412cdb84ffbf94a06401c8509daa74914273e18224f05d9fe9bcea23fa70d5350c6edaf8bf657e58787f08a4553169c0d2",
+                        "sha1": "e4224b56750a1fe3956ae73a65f4470be3e0df3b"
+                    },
+                    "required_dependencies": [],
+                    "size": 75389,
+                    "date_published": "2025-03-26T09:22:51.179523Z"
+                },
                 {
                     "type": "curseforge",
                     "file_name": "freecam-forge-1.2.1+1.20.jar",
