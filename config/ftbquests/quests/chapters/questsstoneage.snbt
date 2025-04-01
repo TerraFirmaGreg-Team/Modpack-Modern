@@ -1767,7 +1767,7 @@
 			subtitle: "{quests.stone_age.temperature.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
-				icon: "minecraft:grass_block"
+				icon: "gtceu:overworld_marker"
 				id: "0734DEADAB513E43"
 				title: "{quests.stone_age.temperature.task}"
 				type: "dimension"

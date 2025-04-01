@@ -3318,7 +3318,7 @@
 				}
 			]
 			x: -6.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3B3A0FEEB59F597C"]
@@ -3333,7 +3333,9 @@
 		}
 		{
 			dependencies: ["3B3A0FEEB59F597C"]
+			description: ["{quests.tfg_tips.chalk.desc}"]
 			id: "63508402A5BF5169"
+			subtitle: "{quests.tfg_tips.chalk.subtitle}"
 			tasks: [
 				{
 					id: "2AA5B777EBBCF583"
@@ -3405,6 +3407,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.tfg_tips.chalk.title}"
 			x: -4.0d
 			y: 5.5d
 		}
