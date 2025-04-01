@@ -1,41 +1,44 @@
 ﻿# 0.9
-## Gameplay
+## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
 	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
+
+## Mods & Recipes
+- ✔ Add recipes for chalk (nebby finished this)
+- ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
+- ⏳ Add recipes for builders wands (being worked on by tomtomtom)
+- Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove the mod because firmaciv depends on it
+	- (or just hide them all)
+- Recipes for advanced peripherals and computercraft
+	- Most of computercraft seems to have vanished for some reason?
 - Early game create changes
 	- Greate mod
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 
-## Mods
-- ✔ Add recipes for chalk (nebby finished this)
-- ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
-- ⏳ Add recipes for builders wands (being worked on by tomtomtom)
-- Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove it because the ships depends on it
-- Recipes for advanced peripherals and computercraft
-	- Most of computercraft seems to have vanished for some reason?
-- Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
-
+## Worldgen
+- ⏳ Redeix is working on some overworld structures
+- Add some blobs of nether rock to the bottom of the overworld
+- Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
+	- Retexture the vanilla lantern, add loot table for it
+- ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
+  
 ## Technical
+- ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
 - Fix up the ores field guide generator tool
+- Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
-- Add deepslate blobs to the bottom of the overworld to make people suspicious?
-
-## Beneath
-- ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
-- Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
-	- Retexture the vanilla lantern, add loot table for it
-- ❓ Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
 
 # Post-0.9
 - Create 6
-- Check create 6 compatibility
-	- Vintage improvements: no, but there's a fork which is
-	- Framed blocks: yes
-	- Greate: yes
+	- Check create 6 compatibility
+		- Vintage improvements: no, but there's a fork which is
+		- Framed blocks: yes
+		- Greate: yes
+- Add building gadgets
 
 ## Space
 - Put carve tags onto your rock types so they get carved correctly
