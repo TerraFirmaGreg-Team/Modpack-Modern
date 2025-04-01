@@ -1,8 +1,12 @@
 Key: 
 ✔ - done, waiting for submit
+
 ⏳ - being worked on
+
 ❓ - optional/needs discussion
+
 Anything else - available!
+
 
 # 0.9
 ## Field Guide & Quests
