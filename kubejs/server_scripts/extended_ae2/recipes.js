@@ -339,7 +339,7 @@ const registerExtendedAE2Recipes = (event) => {
         .itemInputs(
             'ae2:blank_pattern',
             'ae2:logic_processor')
-        .inputFluids(Fluid.of('gtceu:green_dye', 144))
+        .inputFluids(Fluid.of('tfc:green_dye', 144))
         .itemOutputs('expatternprovider:pattern_modifier')
         .duration(100)
         .EUt(480)

@@ -1253,31 +1253,15 @@ const registerCreateRecipes = (event) => {
 	//#region Покраска ручек от люка
 
 	event.recipes.tfc.barrel_sealed(1000)
-		.inputs('#tfg:colored_valve_handles', Fluid.of(`tfc:lye`, 25))
+		.inputs('#tfg:colored_valve_handles', Fluid.of(`tfc:lye`, 144))
 		.outputItem(`create:copper_valve_handle`)
 		.id(`barrel/create/valve_handle_decolor`)
 
-	event.recipes.gtceu.chemical_bath(`create/valve_handle_decolor`)
-		.itemInputs('#tfg:colored_valve_handles')
-		.inputFluids(Fluid.of(`gtceu:chlorine`, 72))
-		.itemOutputs('create:copper_valve_handle')
-		.duration(150)
-		.EUt(4)
-		.category(GTRecipeCategories.CHEM_DYES)
-
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.recipes.tfc.barrel_sealed(1000)
-			.inputs('create:copper_valve_handle', Fluid.of(`tfc:${dye}_dye`, 25))
+			.inputs('create:copper_valve_handle', Fluid.of(`tfc:${dye}_dye`, 144))
 			.outputItem(`create:${dye}_valve_handle`)
 			.id(`barrel/create/${dye}_valve_handle`)
-
-		event.recipes.gtceu.chemical_bath(`create/${dye}_valve_handle`)
-			.itemInputs('create:copper_valve_handle')
-			.inputFluids(Fluid.of(`gtceu:${dye}_dye`, 144))
-			.itemOutputs(`create:${dye}_valve_handle`)
-			.duration(300)
-			.EUt(4)
-			.category(GTRecipeCategories.CHEM_DYES)
 	})
 
 	//#endregion
@@ -1289,19 +1273,18 @@ const registerCreateRecipes = (event) => {
 			event.remove({ id: `create:create.toolbox.color.block.create.${dye}_toolbox` })
 
 			event.recipes.tfc.barrel_sealed(1000)
-				.inputs('create:brown_toolbox', Fluid.of(`tfc:${dye}_dye`, 50))
+				.inputs('create:brown_toolbox', Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`create:${dye}_toolbox`)
 				.id(`barrel/create/${dye}_toolbox`)
 
 			event.recipes.gtceu.chemical_bath(`create/${dye}_toolbox`)
 				.itemInputs('create:brown_toolbox')
-				.inputFluids(Fluid.of(`gtceu:${dye}_dye`, 96))
+				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
 				.itemOutputs(`create:${dye}_toolbox`)
 				.duration(200)
 				.EUt(4)
 				.category(GTRecipeCategories.CHEM_DYES)
 		}
-
 	})
 
 	//#endregion
@@ -1309,33 +1292,17 @@ const registerCreateRecipes = (event) => {
 	//#region Покраска сидушек
 
 	event.recipes.tfc.barrel_sealed(1000)
-		.inputs('#tfg:colored_seats', Fluid.of(`tfc:lye`, 25))
+		.inputs('#tfg:colored_seats', Fluid.of(`tfc:lye`, 288))
 		.outputItem(`create:white_seat`)
 		.id(`barrel/create/seat_decolor`)
-
-	event.recipes.gtceu.chemical_bath(`create/seat_decolor`)
-		.itemInputs('#tfg:colored_seats')
-		.inputFluids(Fluid.of(`gtceu:chlorine`, 72))
-		.itemOutputs('create:white_seat')
-		.duration(200)
-		.EUt(4)
-		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		if (dye != "white") {
 
 			event.recipes.tfc.barrel_sealed(1000)
-				.inputs(`create:white_seat`, Fluid.of(`tfc:${dye}_dye`, 50))
+				.inputs(`create:white_seat`, Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`create:${dye}_seat`)
 				.id(`barrel/create/${dye}_seat`)
-
-			event.recipes.gtceu.chemical_bath(`create/${dye}_seat`)
-				.itemInputs(`create:white_seat`)
-				.inputFluids(Fluid.of(`gtceu:${dye}_dye`, 144))
-				.itemOutputs(`create:${dye}_seat`)
-				.duration(300)
-				.EUt(4)
-				.category(GTRecipeCategories.CHEM_DYES)
 		}
 	})
 

@@ -59,8 +59,8 @@ const registerAFCBlockTags = (event) => {
 	event.add("afc:tappable_logs", "tfc:wood/log/aspen")
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_white_cedar")
 	event.add("afc:tappable_logs", "tfc:wood/log/white_cedar")
-	event.add("afc:tappable_logs", "tfc:wood/log/douglas_fir")
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_douglas_fir")
+	event.add("afc:tappable_logs", "tfc:wood/log/douglas_fir")
 	event.add("afc:tappable_logs", "tfc:wood/log/ancient_spruce")
 	event.add("afc:tappable_logs", "tfc:wood/log/spruce")
 
@@ -70,6 +70,11 @@ const registerAFCBlockTags = (event) => {
 
     event.add("tfg:syrup_logs", "#tfc:maple_logs")
     event.add("tfg:syrup_logs", "#tfc:birch_logs")
+
+	event.add("tfg:rosin_logs", "#tfc:aspen_logs")
+	event.add("tfg:rosin_logs", "#tfc:spruce_logs")
+	event.add("tfg:rosin_logs", "#tfc:white_cedar_logs")
+	event.add("tfg:rosin_logs", "#tfc:douglas_fir_logs")
 }
 
 /**

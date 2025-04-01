@@ -726,7 +726,8 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#endregion 
 
-	// Sticky Resin by Vat
+	//#region Sticky Resin by Vat
+
 	event.recipes.firmalife.vat()
 		.inputs('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000))
 		.outputItem('gtceu:sticky_resin')
@@ -736,4 +737,20 @@ const registerFirmaLifeRecipes = (event) => {
 		.inputs('tfc:powder/sulfur', Fluid.of('tfg:conifer_pitch', 1000))
 		.outputItem('gtceu:sticky_resin')
 		.id('tfg:vat/conifer_pitch_to_sticky_resin');
+
+	//#endregion
+
+	//#region Replace existing dyes
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+
+		event.recipes.firmalife.vat()
+			.inputs(`#forge:dyes/${dye}`, Fluid.of('tfc:salt_water', 250))
+			.outputFluid(Fluid.of(`tfc:${dye}_dye`, 144))
+			.length(2000)
+			.temperature(600)
+			.id(`firmalife:vat/${dye}_dye`)
+	})
+
+	//#endregion
 }

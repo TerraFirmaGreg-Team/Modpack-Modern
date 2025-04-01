@@ -16,7 +16,7 @@ const registerTFCRecipes = (event) => {
 	registerTFCKnappingRecipes(event)
 	registerTFCMachineRecipes(event)
 	registerTFCAlabasterRecipes(event)
-
+	registerTFCDyeRecipes(event)
 
 	//#region Рецепты порошков
 

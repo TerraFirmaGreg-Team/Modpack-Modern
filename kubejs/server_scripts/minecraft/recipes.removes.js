@@ -2067,6 +2067,18 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:alloy_smelter/form_nether_brick' })
 
 	//#endregion
+	
+	//#region Выход: Свечи
+
+	event.remove({ id: `minecraft:candle` })
+
+	//#endregion
+
+	//#region Выход: Арбалет
+
+	event.remove({ id: 'minecraft:crossbow' })
+
+	//#endregion
 
 	//#region Выход: Незер бревна
 

@@ -612,73 +612,10 @@ const registerMinecraftRecipes = (event) => {
 		.duration(100)
 		.EUt(4)
 
-	
+
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		event.remove({ id: `minecraft:dye_${dye}_wool` })
 	})
-
-	//#endregion
-
-	//#region Выход: Свечи
-
-	event.remove({ id: `minecraft:candle` })
-
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		event.remove({ id: `minecraft:${dye}_candle` })
-	})
-
-	//#endregion
-
-	//#region Выход: Ковры
-	
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		
-		event.remove({ id: `minecraft:dye_${dye}_carpet` })
-
-		event.shapeless(`2x minecraft:${dye}_carpet`, [
-			'#tfc:saws',
-			`minecraft:${dye}_wool`
-		]).id(`minecraft:${dye}_carpet`)
-
-		if (dye != 'white') {
-			event.recipes.gtceu.chemical_bath(`tfg:${dye}_carpet`)             
-				.itemInputs(`minecraft:white_carpet`)
-				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))
-				.itemOutputs(`minecraft:${dye}_carpet`)
-				.duration(300)
-				.EUt(4)
-		}
-	})
-
-	//#endregion
-
-	//#region Выход: Кровати
-
-	event.recipes.gtceu.chemical_bath(`bed_decolor`)             
-		.itemInputs('#tfc:colored_bed')
-		.inputFluids(Fluid.of(`gtceu:chlorine`, 72))
-		.itemOutputs(`minecraft:white_bed`)
-		.duration(300)
-		.EUt(4)
-
-	global.MINECRAFT_DYE_NAMES.forEach(dye => {
-		event.remove({ id: `minecraft:${dye}_bed` })
-		event.remove({ id: `minecraft:dye_${dye}_bed` })
-
-		if (dye != "white")
-			event.recipes.gtceu.chemical_bath(`${dye}_bed`)             
-				.itemInputs(`minecraft:white_bed`)
-				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 216))
-				.itemOutputs(`minecraft:${dye}_bed`)
-				.duration(300)
-				.EUt(4)
-	})
-
-	//#endregion
-
-	//#region Выход: Арбалет
-
-	event.remove({ id: 'minecraft:crossbow' })
 
 	//#endregion
 
@@ -868,7 +805,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shaped('minecraft:netherite_leggings', [
 		'ABA',
-		'CDC' 
+		'CDC'
 	], {
 		A: '#forge:screws/blue_steel',
 		B: 'tfc:metal/greaves/blue_steel',

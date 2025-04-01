@@ -558,11 +558,13 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_iron' })
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:shaped/treated_door' })
+	event.remove({ id: 'gtceu:shaped/barrel' })
 	event.remove({ id: 'gtceu:assembler/bell' })
 	event.remove({ id: 'gtceu:assembler/armor_stand' })
 	event.remove({ id: 'gtceu:assembler/piston_stainless_steel' })
 	event.remove({ id: 'gtceu:assembler/treated_trapdoor_iron' })
 	event.remove({ id: 'gtceu:assembler/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:assembler/treated_door' })
+	event.remove({ id: 'gtceu:assembler/barrel' })
 
 }
