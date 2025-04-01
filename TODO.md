@@ -1,8 +1,13 @@
-﻿# 0.9
+Key: 
+✔ - done, waiting for submit
+⏳ - being worked on
+❓ - optional/needs discussion
+Anything else - available!
+
+# 0.9
 ## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
-- Field guide
-	- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
+- Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 
 ## Mods & Recipes
 - ✔ Add recipes for chalk (nebby finished this)
@@ -13,7 +18,7 @@
 - Recipes for advanced peripherals and computercraft
 	- Most of computercraft seems to have vanished for some reason?
 - Early game create changes
-	- Greate mod
+	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 
@@ -25,7 +30,7 @@
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
-- ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
+- ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
 - Fix up the ores field guide generator tool
