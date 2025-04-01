@@ -224,6 +224,12 @@ const registerTFCItemTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+    //Stone javelins
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/igneous_extrusive')
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/igneous_intrusive')
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/metamorphic')
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/sedimentary')
 }
 
 const registerTFCBlockTags = (event) => {

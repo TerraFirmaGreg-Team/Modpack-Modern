@@ -1154,7 +1154,7 @@ const registerCreateRecipes = (event) => {
 
         event.recipes.gtceu.chemical_bath(`create/${dye}_valve_handle`)             
             .itemInputs('create:copper_valve_handle')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 144))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 144))
             .itemOutputs(`create:${dye}_valve_handle`)
             .duration(300)
             .EUt(4)
@@ -1175,7 +1175,7 @@ const registerCreateRecipes = (event) => {
     
             event.recipes.gtceu.chemical_bath(`create/${dye}_toolbox`)             
                 .itemInputs('create:brown_toolbox')
-                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 96))
+                .inputFluids(Fluid.of(`tfc:${dye}_dye`, 96))
                 .itemOutputs(`create:${dye}_toolbox`)
                 .duration(200)
                 .EUt(4)
@@ -1209,7 +1209,7 @@ const registerCreateRecipes = (event) => {
 
             event.recipes.gtceu.chemical_bath(`create/${dye}_seat`)             
                 .itemInputs(`create:white_seat`)
-                .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 144))
+                .inputFluids(Fluid.of(`tfc:${dye}_dye`, 144))
                 .itemOutputs(`create:${dye}_seat`)
                 .duration(300)
                 .EUt(4)

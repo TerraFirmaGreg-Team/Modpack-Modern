@@ -187,7 +187,7 @@ const registerComputerCraftRecipes = (event) => {
     for (let i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath('computercraft:disk' + `${global.MINECRAFT_DYE_NAMES[i]}`)
             .itemInputs('ae2:blank_pattern')
-            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 288))
+            .inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 288))
             .itemOutputs(Item.of('computercraft:disk', global.COMPUTER_CRAFT_DISCS[i]))
             .duration(20)
             .EUt(7)

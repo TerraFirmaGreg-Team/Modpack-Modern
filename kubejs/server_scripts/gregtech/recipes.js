@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerGTCEURecipes = (event) => {
     const makeToolRecipe = (toolType, headTagPrefix, extruderMold, cirucitMeta, material) => {
         const toolItem = ToolHelper.get(toolType, material)
@@ -2303,4 +2307,8 @@ const registerGTCEURecipes = (event) => {
         })
     })
     // #endregion
+    /*global.MINECRAFT_DYE_NAMES.forEach(dyeName =>)
+    {
+        event.replaceInput({type: "gtceu:chemical_bath"}, "gtceu:red_dye", "tfc:red_dye");
+    }*/
 }

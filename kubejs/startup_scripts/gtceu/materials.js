@@ -3,11 +3,15 @@ const registerGTCEuMaterials = (event) => {
 
 const registerGTCEuMaterialModification = (event) => {
 
+	
 	const $TFG_PROPERTY_KEYS = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.TFGPropertyKeys')
 	const $TFC_PROPERTY = Java.loadClass('su.terrafirmagreg.core.compat.gtceu.properties.TFCProperty')
 	const $ORE_PROPERTY = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty')
-
+	
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
+
+	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+	const $TFCFluids = Java.loadClass('net.dries007.tfc.common.fluids.TFCFluids')
 
 	const {
 		HAS_TFC_TOOL,
@@ -217,4 +221,11 @@ const registerGTCEuMaterialModification = (event) => {
 
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
+
+	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
+	{
+		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		var property = material.getProperty(PropertyKey.FLUID);
+		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
+	});
 }

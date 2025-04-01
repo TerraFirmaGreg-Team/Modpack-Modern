@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerTFCRecipes = (event) => {
     //return; TODO тут баг
     //#region Металлы
@@ -2668,14 +2672,14 @@ const registerTFCRecipes = (event) => {
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.recipes.gtceu.chemical_bath(`${dye}_unfired_vessel`)             
             .itemInputs('tfc:ceramic/unfired_vessel')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 36))
             .itemOutputs(`tfc:ceramic/${dye}_unfired_vessel`)
             .duration(150)
             .EUt(4)
 
         event.recipes.gtceu.chemical_bath(`${dye}_vessel`)             
             .itemInputs('tfc:ceramic/vessel')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 36))
             .itemOutputs(`tfc:ceramic/${dye}_glazed_vessel`)
             .duration(150)
             .EUt(4)
@@ -2702,14 +2706,14 @@ const registerTFCRecipes = (event) => {
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         event.recipes.gtceu.chemical_bath(`${dye}_large_unfired_vessel`)             
             .itemInputs('tfc:ceramic/unfired_large_vessel')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))
             .itemOutputs(`tfc:ceramic/unfired_large_vessel/${dye}`)
             .duration(150)
             .EUt(4)
 
         event.recipes.gtceu.chemical_bath(`${dye}_large_vessel`)             
             .itemInputs('tfc:ceramic/large_vessel')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))
             .itemOutputs(`tfc:ceramic/large_vessel/${dye}`)
             .duration(150)
             .EUt(4)
@@ -3516,7 +3520,7 @@ const registerTFCRecipes = (event) => {
         
         event.recipes.gtceu.chemical_bath(`tfg:tfc/${dye}_candle`)             
             .itemInputs('tfc:candle')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 36))
             .itemOutputs(`tfc:candle/${dye}`)
             .duration(300)
             .EUt(4)
@@ -3554,7 +3558,7 @@ const registerTFCRecipes = (event) => {
     for (let i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath(`tfg:tfc/alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)             
             .itemInputs('tfc:alabaster/bricks')
-            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+            .inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
             .itemOutputs(`tfc:alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
             .duration(20)
             .EUt(7)
@@ -3592,7 +3596,7 @@ const registerTFCRecipes = (event) => {
     for (let i = 0; i < 16; i++) {
     event.recipes.gtceu.chemical_bath(`tfg:tfc/alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)             
         .itemInputs('tfc:alabaster/raw')
-        .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+        .inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
         .itemOutputs(`tfc:alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)
         .duration(20)
         .EUt(7)
@@ -3608,4 +3612,30 @@ const registerTFCRecipes = (event) => {
 
     //Lye in mixer
     generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+
+    //Nerf water dyes in TFC to encourage GT liquid dye recipe. 100mb of salt water + black dye == 100mb of dye
+    global.MINECRAFT_DYE_NAMES.forEach(dyeName =>
+    {
+        event.remove(`firmalife:vat/${dyeName}_dye`);
+        event.remove(`tfc:pot/${dyeName}_dye`);
+        
+        event.recipes.firmalife.vat()
+            .inputFluid(Fluid.of("tfc:salt_water", 100))
+            .inputItem(`minecraft:${dyeName}_dye`)
+            .outputFluid(Fluid.of(`tfc:${dyeName}_dye`, 100))
+            .id(`firmalife:vat/${dyeName}_dye`)
+            
+        let inputArray = new Array(0);
+        for(let i = 1; i < 6; i++)
+        {
+            inputArray.length = 0;
+            for(let j = 1; j < i + 1; j++)
+            {
+                inputArray.push(`minecraft:${dyeName}_dye`);
+            }
+            event.recipes.tfc.pot(inputArray, Fluid.of('tfc:salt_water', 100 * i), 600, 2000)
+                .fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 100 * i))
+                .id(`tfc:pot/${i}x_${dyeName}_dye`)
+        }
+    });
 }

@@ -1,4 +1,7 @@
-
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerTFGRecipes = (event) => {
 
 	//#region Paper from wood
