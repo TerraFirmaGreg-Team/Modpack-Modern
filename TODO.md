@@ -1,5 +1,4 @@
-﻿# TO-DO LIST
-
+﻿# 0.9
 ## Gameplay
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Field guide
@@ -10,13 +9,13 @@
 	- Check LBB efficiency of creosote, think about removing lava
 
 ## Mods
-- Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove it because the ships depends on it
-- Recipes for advanced peripherals and computercraft
-	- half of computercraft seems to have vanished for some reason?
 - ✔ Add recipes for chalk (nebby finished this)
-- Add the one with trans-dimensional logistics? See how difficult it is to make a second "cannon" so we can have one reskin for the nether and one reskin for space
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
 - ⏳ Add recipes for builders wands (being worked on by tomtomtom)
+- Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove it because the ships depends on it
+- Recipes for advanced peripherals and computercraft
+	- Most of computercraft seems to have vanished for some reason?
+- Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 
 ## Technical
 - GT + TFC food expiration compat
@@ -26,12 +25,12 @@
 - Add deepslate blobs to the bottom of the overworld to make people suspicious?
 
 ## Beneath
+- ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
-- ⏳ A cold water drinkable fluid (for your flask) that lowers your internal temp? Will need java code (being worked on by jojo)
-- Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
+- ❓ Make an "abandoned camp" structure? Put skeleton photo and spyglass in its loot table?
 
-## Post-0.9
+# Post-0.9
 - Create 6
 - Check create 6 compatibility
 	- Vintage improvements: no, but there's a fork which is
@@ -47,6 +46,7 @@
 - Caelum TFC mod? makes the sky look more interesting which is thematic, is it compatible with ad astra?
 - Waypoints but retextured, is there a way to make it require "payment" like through a bucket of rocket fuel?
 - Configure forgiving world to work with orbits
+- Add the mod with trans-dimensional logistics?
 
 ### Mars
 - Merge the cold + temperate biomes on mars and instead spread out the different forest tiers
