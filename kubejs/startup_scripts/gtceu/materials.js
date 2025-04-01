@@ -13,6 +13,9 @@ const registerGTCEuMaterialModification = (event) => {
 
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
+	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+	const $TFCFluids = Java.loadClass('net.dries007.tfc.common.fluids.TFCFluids')
+
 	const {
 		HAS_TFC_TOOL,
 		HAS_TFC_ARMOR,
@@ -242,4 +245,11 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
 	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	
+	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
+	{
+		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		var property = material.getProperty(PropertyKey.FLUID);
+		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
+	});
 }

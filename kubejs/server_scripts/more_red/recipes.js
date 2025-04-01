@@ -263,7 +263,7 @@ const registerMoreRedRecipes = (event) => {
         
         event.recipes.gtceu.chemical_bath(`tfg:morered/${dye}_wire`)             
             .itemInputs('morered:red_alloy_wire')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))
             .itemOutputs(`morered:${dye}_network_cable`)
             .duration(300)
             .EUt(4)
