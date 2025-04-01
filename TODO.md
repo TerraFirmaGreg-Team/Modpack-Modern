@@ -10,7 +10,6 @@ Key:
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 
 ## Mods & Recipes
-- ✔ Add recipes for chalk (nebby finished this)
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
 - ⏳ Add recipes for builders wands (being worked on by tomtomtom)
 - Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove the mod because firmaciv depends on it
