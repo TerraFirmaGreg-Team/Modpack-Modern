@@ -1,12 +1,12 @@
 {
 	"__comment__": "This file was automatically created by mcresources",
-	"name": "Введение",
+	"name": "Introduction",
 	"category": "tfc:getting_started",
 	"icon": "tfc:rock/loose/granite",
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "В TerraFirmaCraft первые предметы, которые вы можете получить - это палки, ветки и рассыпанные камни. Их можно найти почти в любом климате, разбросанные по земле. $(item)$(k:key.use)$() или разбейте их, чтобы подобрать."
+			"text": "In TerraFirmaCraft, the first things you can obtain are sticks, twigs, and loose rocks. They can be found in almost every climate, lying scattered on the ground. $(item)$(k:key.use)$() or break these to pick them up."
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -36,25 +36,25 @@
 					"5": "tfc:wood/twig/ash"
 				}
 			},
-			"name": "Пример",
-			"text": "Несколько обычных палок и камней.",
+			"name": "Example",
+			"text": "A smattering of common sticks and stones.",
 			"enable_visualize": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Помимо сбора палок и веток на земле, палки также можно получить, разбивая листву кулаком. Как только у вас будет достаточно камней и палок, вы готовы начать $(thing)высекание$(). Высекание - это процесс, при котором два камня сталкиваются вместе, чтобы сформировать определённую форму. Чтобы начать высекание, сначала возьмите как минимум два камня в руку, затем щелкните правой кнопкой мыши в воздухе, что откроет $(thing)интерфейс высекания$()."
+			"text": "In addition to gathering sticks and twigs on the ground, sticks can also be obtained by breaking leaves with your fist. Once you have a number of rocks and sticks, you are ready to start $(thing)Knapping$(). Knapping is a process where two rocks are hit together, to form a particular shape. In order to knap, first hold at least two rocks in your hand, then right click in the air, which will open up the $(thing)Knapping Interface$()."
 		},
 		{
 			"type": "patchouli:image",
 			"images": [
 				"tfc:textures/gui/book/gui/rock_knapping.png"
 			],
-			"text": "Интерфейс высекания.",
+			"text": "The Knapping Interface.",
 			"border": false
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Чтобы сделать определённый предмет, вы хотите убрать квадраты, пока не сформируете желаемый узор. Например, создайте лезвие ножа, соответствуя рецепту, показанному справа.$(br2)Как и в рецептах крафта, расположение желаемого узора не имеет значения для результата, и некоторые рецепты имеют несколько вариантов, которые действительны."
+			"text": "In order to knap a particular item, you want to remove squares until you form the desired pattern. For example, create a knife blade by matching the recipe shown to the right.$(br2)Like crafting recipes, the location of the desired pattern doesn't matter for the output, and some recipes have multiple variants that are valid."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -65,26 +65,26 @@
 				"tfg:rock_knapping/stone_knife_head_2",
 				"tfg:rock_knapping/stone_knife_head_3"
 			],
-			"text": "Лезвие ножа, изготовленное из нескольких разных типов камней."
+			"text": "A knife blade, crafted from several different rock types."
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/stone/knife_sedimentary",
-			"text": "Все головки каменных инструментов можно собрать с палкой или веткой, чтобы собрать их в инструмент.$(br2)Каменный нож можно использовать для сбора $(thing)Соломы$(), разбивая растения."
+			"text": "All stone tool heads can be crafted with a stick or twig to assemble them into a tool.$(br2)The stone knife can be used to harvest $(thing)Straw$() by breaking plants."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_axe_head"
 			],
-			"text": "$(thing)Топоры$() можно использовать для срубания целых деревьев, включая бревна и листву. Однако саженцы и палки можно получить только в случае индивидуального разбивания листвы."
+			"text": "$(thing)Axes$() can be used to cut down entire trees, logs and leaves included. However, saplings and sticks will only be obtained if leaves were broken individually."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_shovel_head"
 			],
-			"text": "$(thing)Лопаты$() можно использовать для копания блоков типа почвы. Их также можно использовать для создания $(thing)Троп$() путём $(item)использования$() их на $(thing)Земле$() или $(thing)Траве$()."
+			"text": "$(thing)Shovels$() can be used to dig soil type blocks. They can also be used to create $(thing)Paths$() by $(item)using$() them on $(thing)Dirt$() or $(thing)Grass$()."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -93,14 +93,14 @@
 				"tfg:rock_knapping/stone_hoe_head_1",
 				"tfg:rock_knapping/stone_hoe_head_2"
 			],
-			"text": "$(thing)Мотыги$() - полезные инструменты для $(l:mechanics/crops)Фермерства$(), но их также можно использовать для срезания листвы и другого растительного материала."
+			"text": "$(thing)Hoes$() are useful tools for $(l:mechanics/crops)Farming$(), but they can also be used to cut down leaves and other plant matter."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
 			"recipes": [
 				"tfg:rock_knapping/stone_hammer_head"
 			],
-			"text": "$(thing)Молоты$() можно использовать как $(l:mechanics/damage_types)Дробящее$() оружие, но они более важные инструменты, используемые для $(l:getting_started/primitive_anvils)Ковки$()."
+			"text": "$(thing)Hammers$() can be used as $(l:mechanics/damage_types)Crushing$() weapons, but are more important tools used for $(l:getting_started/primitive_anvils)Forging$()."
 		},
 		{
 			"type": "tfc:rock_knapping_recipe",
@@ -110,7 +110,7 @@
 				"tfc:rock_knapping/javelin_head_igneous_extrusive",
 				"tfc:rock_knapping/javelin_head_igneous_intrusive"
 			],
-			"text": "Наконец, $(thing)Дротик$() можно использовать как примитивное оружие, способное бросаться в цели или использоваться как $(l:mechanics/damage_types)Пронзающее$() оружие."
+			"text": "Finally, a $(thing)Javelin$() can be used as a primitive weapon, capable of being thrown at targets, or used as a $(l:mechanics/damage_types)Piercing$() weapon."
 		}
 	],
 	"read_by_default": true,

@@ -1,4 +1,4 @@
-﻿// priority: 0
+// priority: 0
 
 function removeGTCEURecipes(event) {
 
@@ -186,6 +186,12 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:extractor/fish_oil_from_salmon' })
 	event.remove({ id: 'gtceu:extractor/fish_oil_from_pufferfish' })
 	event.remove({ id: 'gtceu:extractor/fish_oil_from_cod' })
+
+	// #endregion
+
+	// #region Wrought Iron Nugget
+
+	event.remove({ output: 'gtceu:wrought_iron_nugget', type: 'minecraft:smelting' })
 
 	// #endregion
 
