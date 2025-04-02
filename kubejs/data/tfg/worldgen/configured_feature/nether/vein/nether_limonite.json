@@ -34,6 +34,22 @@
 					{
 						"block": "gtceu:deepslate_malachite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -58,6 +74,22 @@
 					{
 						"block": "gtceu:pyroxenite_malachite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -82,6 +114,22 @@
 					{
 						"block": "gtceu:basalt_malachite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -105,6 +153,22 @@
 					{
 						"block": "gtceu:dripstone_malachite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
 					}
 				]
 			}
@@ -125,11 +189,15 @@
 				},
 				{
 					"block": "tfc:ore/small_malachite",
-					"weight": 20
+					"weight": 10
 				},
 				{
 					"block": "gtceu:goethite_indicator",
 					"weight": 50
+				},
+				{
+					"block": "gtceu:malachite_bud_indicator",
+					"weight": 10
 				}
 			]
 		}

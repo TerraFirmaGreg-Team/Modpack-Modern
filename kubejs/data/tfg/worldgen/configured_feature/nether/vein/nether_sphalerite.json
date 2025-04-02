@@ -30,6 +30,18 @@
 					{
 						"block": "gtceu:deepslate_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -50,6 +62,18 @@
 					{
 						"block": "gtceu:basalt_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -70,6 +94,18 @@
 					{
 						"block": "gtceu:pyroxenite_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -89,6 +125,18 @@
 					{
 						"block": "gtceu:dripstone_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			}

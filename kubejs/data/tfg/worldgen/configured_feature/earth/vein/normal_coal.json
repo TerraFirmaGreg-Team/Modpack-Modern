@@ -16,6 +16,10 @@
 					{
 						"block": "gtceu:shale_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			},
@@ -27,6 +31,10 @@
 					{
 						"block": "gtceu:claystone_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			},
@@ -38,6 +46,10 @@
 					{
 						"block": "gtceu:limestone_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			},
@@ -49,6 +61,10 @@
 					{
 						"block": "gtceu:conglomerate_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			},
@@ -60,6 +76,10 @@
 					{
 						"block": "gtceu:dolomite_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			},
@@ -71,6 +91,10 @@
 					{
 						"block": "gtceu:chert_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			},
@@ -82,6 +106,10 @@
 					{
 						"block": "gtceu:chalk_coal_ore",
 						"weight": 100
+					},
+					{
+						"block": "gtceu:raw_coal_block",
+						"weight": 1
 					}
 				]
 			}

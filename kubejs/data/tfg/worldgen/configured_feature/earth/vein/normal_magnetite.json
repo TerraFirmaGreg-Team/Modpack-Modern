@@ -28,6 +28,10 @@
 					{
 						"block": "gtceu:shale_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -51,6 +55,10 @@
 					{
 						"block": "gtceu:claystone_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -74,6 +82,10 @@
 					{
 						"block": "gtceu:limestone_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -97,6 +109,10 @@
 					{
 						"block": "gtceu:conglomerate_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -120,6 +136,10 @@
 					{
 						"block": "gtceu:dolomite_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -143,6 +163,10 @@
 					{
 						"block": "gtceu:chert_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -166,6 +190,10 @@
 					{
 						"block": "gtceu:chalk_chromite_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_magnetite_block",
+						"weight": 1
 					}
 				]
 			}

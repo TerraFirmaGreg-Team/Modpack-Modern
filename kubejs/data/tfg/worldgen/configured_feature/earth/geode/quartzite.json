@@ -5,7 +5,7 @@
 			"alternate_inner_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:pyrite_ore_block"
+					"Name": "gtceu:raw_quartzite_block"
 				}
 			},
 			"cannot_replace": "#minecraft:features_cannot_replace",
@@ -18,12 +18,18 @@
 			"inner_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:quartzite_pyrite_ore"
+					"Name": "gtceu:quartzite_quartzite_ore"
 				}
 			},
 			"inner_placements": [
 				{
-					"Name": "gtceu:pyrite_indicator",
+					"Name": "gtceu:quartzite_bud_indicator",
+					"Properties": {
+						"waterlogged": "false"
+					}
+				},
+				{
+					"Name": "gtceu:quartzite_indicator",
 					"Properties": {
 						"waterlogged": "false"
 					}
@@ -39,7 +45,7 @@
 			"outer_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "tfc:rock/hardened/dacite"
+					"Name": "tfc:rock/hardened/dolomite"
 				}
 			}
 		},
@@ -80,7 +86,7 @@
 				"min_inclusive": 1
 			}
 		},
-		"use_alternate_layer0_chance": 0.083,
+		"use_alternate_layer0_chance": 0.2,
 		"use_potential_placements_chance": 0.35
 	}
 }

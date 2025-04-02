@@ -1,16 +1,16 @@
 {
 	"type": "tfc:pipe_vein",
 	"config": {
-		"rarity": 80,
-		"density": 0.9,
+		"rarity": 40,
+		"density": 0.8,
 		"min_y": -64,
 		"max_y": -48,
 		"random_name": "nether_hint_vein",
-		"min_skew": 15,
-		"max_skew": 45,
-		"min_slant": 15,
-		"max_slant": 45,
-		"sign": 0,
+		"min_skew": 6,
+		"max_skew": 18,
+		"min_slant": 0,
+		"max_slant": 4,
+		"sign": 0.3,
 		"height": 30,
 		"radius": 5,
 		"blocks": [
@@ -40,23 +40,19 @@
 				"with": [
 					{
 						"block": "minecraft:deepslate",
-						"weight": 70
+						"weight": 60
 					},
 					{
 						"block": "minecraft:blackstone",
-						"weight": 20
+						"weight": 30
 					},
 					{
 						"block": "gtceu:deepslate_nether_quartz_ore",
-						"weight": 10
+						"weight": 5
 					},
 					{
 						"block": "minecraft:glowstone",
 						"weight": 10
-					},
-					{
-						"block": "minecraft:air",
-						"weight": 20
 					}
 				]
 			}
@@ -65,11 +61,11 @@
 			"rarity": 15,
 			"depth": 1,
 			"underground_rarity": 40,
-			"underground_count": 200,
+			"underground_count": 400,
 			"blocks": [
 				{
 					"block": "tfg:loose/deepslate",
-					"weight": 70
+					"weight": 60
 				},
 				{
 					"block": "beneath:blackstone_pebble",

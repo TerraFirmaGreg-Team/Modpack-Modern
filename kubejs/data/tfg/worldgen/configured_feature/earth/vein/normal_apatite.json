@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:granite_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +47,10 @@
 					{
 						"block": "gtceu:diorite_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -62,6 +70,10 @@
 					{
 						"block": "gtceu:gabbro_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -81,6 +93,10 @@
 					{
 						"block": "gtceu:quartzite_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -100,6 +116,10 @@
 					{
 						"block": "gtceu:slate_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -119,6 +139,10 @@
 					{
 						"block": "gtceu:phyllite_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -138,6 +162,10 @@
 					{
 						"block": "gtceu:schist_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -157,6 +185,10 @@
 					{
 						"block": "gtceu:gneiss_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -176,6 +208,10 @@
 					{
 						"block": "gtceu:marble_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 1
 					}
 				]
 			}

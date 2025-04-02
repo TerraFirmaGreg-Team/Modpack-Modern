@@ -24,6 +24,18 @@
 					{
 						"block": "gtceu:granite_cinnabar_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_redstone_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_ruby_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cinnabar_block",
+						"weight": 1
 					}
 				]
 			},
@@ -44,6 +56,18 @@
 					{
 						"block": "gtceu:pyroxenite_cinnabar_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_redstone_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_ruby_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cinnabar_block",
+						"weight": 1
 					}
 				]
 			}

@@ -30,6 +30,14 @@
 					{
 						"block": "gtceu:gabbro_coal_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_graphite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_diamond_block",
+						"weight": 1
 					}
 				]
 			},
@@ -49,6 +57,14 @@
 					{
 						"block": "gtceu:gneiss_coal_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_graphite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_diamond_block",
+						"weight": 1
 					}
 				]
 			},
@@ -68,6 +84,14 @@
 					{
 						"block": "gtceu:diorite_coal_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_graphite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_diamond_block",
+						"weight": 1
 					}
 				]
 			},
@@ -87,6 +111,14 @@
 					{
 						"block": "gtceu:schist_coal_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_graphite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_diamond_block",
+						"weight": 1
 					}
 				]
 			},
@@ -106,6 +138,14 @@
 					{
 						"block": "gtceu:granite_coal_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_graphite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_diamond_block",
+						"weight": 1
 					}
 				]
 			},
@@ -126,6 +166,14 @@
 					{
 						"block": "gtceu:pyroxenite_coal_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_graphite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_diamond_block",
+						"weight": 1
 					}
 				]
 			}

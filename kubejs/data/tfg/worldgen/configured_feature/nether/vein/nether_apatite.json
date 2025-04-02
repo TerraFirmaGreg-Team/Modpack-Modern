@@ -24,6 +24,14 @@
 					{
 						"block": "gtceu:schist_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_tricalcium_phosphate_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +51,14 @@
 					{
 						"block": "gtceu:gneiss_pyrochlore_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_tricalcium_phosphate_block",
+						"weight": 1
 					}
 				]
 			}

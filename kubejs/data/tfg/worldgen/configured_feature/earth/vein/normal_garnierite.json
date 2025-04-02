@@ -32,6 +32,10 @@
 					{
 						"block": "gtceu:gabbro_cobalt_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -59,6 +63,10 @@
 					{
 						"block": "gtceu:diorite_cobalt_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
 					}
 				]
 			}

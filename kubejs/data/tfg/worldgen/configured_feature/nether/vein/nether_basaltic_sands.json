@@ -29,6 +29,18 @@
 					{
 						"block": "gtceu:granite_gypsum_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_basaltic_mineral_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_granitic_mineral_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_fullers_earth_block",
+						"weight": 1
 					}
 				]
 			},
@@ -53,6 +65,18 @@
 					{
 						"block": "gtceu:basalt_gypsum_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_basaltic_mineral_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_granitic_mineral_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_fullers_earth_block",
+						"weight": 1
 					}
 				]
 			}

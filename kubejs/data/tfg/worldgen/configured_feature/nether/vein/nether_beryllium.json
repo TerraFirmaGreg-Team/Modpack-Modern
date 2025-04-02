@@ -36,6 +36,14 @@
 					{
 						"block": "gtceu:deepslate_thorium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_beryllium_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_emerald_block",
+						"weight": 2
 					}
 				]
 			},
@@ -56,6 +64,14 @@
 					{
 						"block": "gtceu:pyroxenite_thorium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_beryllium_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_emerald_block",
+						"weight": 2
 					}
 				]
 			},
@@ -76,6 +92,14 @@
 					{
 						"block": "gtceu:basalt_thorium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_beryllium_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_emerald_block",
+						"weight": 2
 					}
 				]
 			},
@@ -95,6 +119,14 @@
 					{
 						"block": "gtceu:dripstone_thorium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_beryllium_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_emerald_block",
+						"weight": 2
 					}
 				]
 			}

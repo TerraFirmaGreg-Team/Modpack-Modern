@@ -28,6 +28,14 @@
 					{
 						"block": "gtceu:gneiss_powellite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_wulfenite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_molybdenite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -51,6 +59,14 @@
 					{
 						"block": "gtceu:schist_powellite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_wulfenite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_molybdenite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -74,6 +90,14 @@
 					{
 						"block": "gtceu:granite_powellite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_wulfenite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_molybdenite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -97,6 +121,14 @@
 					{
 						"block": "gtceu:diorite_powellite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_wulfenite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_molybdenite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -120,6 +152,14 @@
 					{
 						"block": "gtceu:gabbro_powellite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_wulfenite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_molybdenite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -144,6 +184,14 @@
 					{
 						"block": "gtceu:pyroxenite_powellite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_wulfenite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_molybdenite_block",
+						"weight": 1
 					}
 				]
 			}

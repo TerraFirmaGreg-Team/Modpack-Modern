@@ -32,6 +32,18 @@
 					{
 						"block": "gtceu:gabbro_cobalt_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cobaltite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pentlandite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -59,6 +71,18 @@
 					{
 						"block": "gtceu:diorite_cobalt_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cobaltite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pentlandite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -87,6 +111,18 @@
 					{
 						"block": "gtceu:pyroxenite_cobalt_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cobaltite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pentlandite_block",
+						"weight": 1
 					}
 				]
 			}

@@ -28,6 +28,10 @@
 					{
 						"block": "gtceu:marble_malachite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -51,6 +55,10 @@
 					{
 						"block": "gtceu:limestone_malachite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
 					}
 				]
 			}

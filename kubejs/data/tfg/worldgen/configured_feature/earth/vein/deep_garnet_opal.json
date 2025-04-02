@@ -29,6 +29,18 @@
 					{
 						"block": "gtceu:rhyolite_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -52,6 +64,18 @@
 					{
 						"block": "gtceu:basalt_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -75,6 +99,18 @@
 					{
 						"block": "gtceu:andesite_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -98,6 +134,18 @@
 					{
 						"block": "gtceu:dacite_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -121,6 +169,18 @@
 					{
 						"block": "gtceu:granite_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -144,6 +204,18 @@
 					{
 						"block": "gtceu:diorite_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -167,6 +239,18 @@
 					{
 						"block": "gtceu:gabbro_opal_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
 					}
 				]
 			}

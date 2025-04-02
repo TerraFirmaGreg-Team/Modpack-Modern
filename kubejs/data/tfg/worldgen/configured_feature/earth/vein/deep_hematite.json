@@ -32,6 +32,18 @@
 					{
 						"block": "gtceu:rhyolite_ruby_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_ruby_block",
+						"weight": 1
 					}
 				]
 			},
@@ -59,6 +71,18 @@
 					{
 						"block": "gtceu:basalt_ruby_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_ruby_block",
+						"weight": 1
 					}
 				]
 			},
@@ -86,6 +110,18 @@
 					{
 						"block": "gtceu:andesite_ruby_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_ruby_block",
+						"weight": 1
 					}
 				]
 			},
@@ -113,6 +149,18 @@
 					{
 						"block": "gtceu:dacite_ruby_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_ruby_block",
+						"weight": 1
 					}
 				]
 			}

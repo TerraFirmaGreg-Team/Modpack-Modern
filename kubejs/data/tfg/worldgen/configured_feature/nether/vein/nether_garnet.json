@@ -22,7 +22,7 @@
 				"with": [
 					{
 						"block": "gtceu:deepslate_red_garnet_ore",
-						"weight": 5
+						"weight": 10
 					},
 					{
 						"block": "gtceu:deepslate_yellow_garnet_ore",
@@ -35,6 +35,22 @@
 					{
 						"block": "gtceu:deepslate_opal_ore",
 						"weight": 40
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_red_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -59,6 +75,22 @@
 					{
 						"block": "gtceu:pyroxenite_opal_ore",
 						"weight": 40
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_red_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -83,6 +115,22 @@
 					{
 						"block": "gtceu:basalt_opal_ore",
 						"weight": 40
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_red_garnet_block",
+						"weight": 1
 					}
 				]
 			},
@@ -106,6 +154,22 @@
 					{
 						"block": "gtceu:dripstone_opal_ore",
 						"weight": 40
+					},
+					{
+						"block": "gtceu:raw_amethyst_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_opal_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_yellow_garnet_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_red_garnet_block",
+						"weight": 1
 					}
 				]
 			}

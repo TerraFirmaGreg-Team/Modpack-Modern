@@ -28,6 +28,14 @@
 					{
 						"block": "gtceu:gabbro_gold_ore",
 						"weight": 75
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 2
 					}
 				]
 			},
@@ -51,6 +59,14 @@
 					{
 						"block": "gtceu:diorite_gold_ore",
 						"weight": 75
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 2
 					}
 				]
 			},
@@ -74,6 +90,14 @@
 					{
 						"block": "gtceu:gneiss_gold_ore",
 						"weight": 75
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 2
 					}
 				]
 			},
@@ -97,6 +121,14 @@
 					{
 						"block": "gtceu:granite_gold_ore",
 						"weight": 75
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 2
 					}
 				]
 			},
@@ -120,6 +152,14 @@
 					{
 						"block": "gtceu:schist_gold_ore",
 						"weight": 75
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 2
 					}
 				]
 			},
@@ -144,6 +184,14 @@
 					{
 						"block": "gtceu:pyroxenite_gold_ore",
 						"weight": 75
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 2
 					}
 				]
 			}

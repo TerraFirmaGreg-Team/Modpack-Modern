@@ -251,9 +251,6 @@ const registerTFCBlockTags = (event) => {
         })
     })
 
-    // Отключение ломания блоков установленных на полу
-    event.add('tfcdesirepaths:trample_blacklist', 'tfc:placed_item')
-
     // Возможность обрушения полу-блоков
     event.add('tfc:can_collapse', '#tfg:rock_slabs')
     event.add('tfc:can_start_collapse', '#tfg:rock_slabs')
@@ -493,8 +490,15 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_sphalerite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_tetrahedrite')
 
-    // TODO: other geodes, nether hint vein
     event.add('tfc:in_biome/veins', 'tfg:earth/geode/amethyst')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/barite')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/calcite')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/gypsum')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/opal')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/pyrite')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/quartzite')
+
+    event.add('tfc:in_biome/veins', 'tfg:earth/nether_hint_vein')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
     event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
