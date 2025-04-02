@@ -1,0 +1,69 @@
+{
+    "planet_names":
+    {
+        "earth": "Earth",
+        "moon": "Moon",
+        "mars": "Mars",
+        "venus": "Venus"
+    },
+
+    "keywords": {
+		"Rarity": "Редкость",
+		"Density": "Плотность",
+		"Type": "Вид",
+		"Y": "Y-уровень",
+		"Size": "Размер",
+		"Height": "Высота",
+		"Radius": "Радиус",
+		"Stone types": "Виды камней",
+		"Indicator": "Индикатор",
+		"Percentage": "Процент руды",
+		"Source of": "Хромит",
+		"Melts into": "Плавится в",
+		"Smelts into": "Плавится в",
+		"Used for": "Используется для",
+		"Formula": "Формула",
+		"Hazardous": "Ядовит",
+		"Yes": "Да",
+		"&" : "&",
+		"Vein Index": "Vein Index",
+		"Ore Index": "Ore Index",
+		"normal": "Normal",
+		"deep": "Deep",
+		"surface": "Surface"
+	},
+    
+	"veins": {
+		"cluster": "кластерная жила",
+		"pipe": "трубчатая жила",
+		"disc": "дискообразная жила"
+	},
+
+	"rocks": {
+		"quartzite": "Кварцит",
+		"slate": "Шиферный сланец",
+		"phyllite": "Филлит",
+		"schist": "Аспидный сланец",
+		"gneiss": "Гнейс",
+		"marble": "Мрамор",
+		"shale": "Сланец",
+		"claystone": "Аргиллит",
+		"limestone": "Известняк",
+		"conglomerate": "Конгломерат",
+		"dolomite": "Доломит",
+		"chert": "Кремнистый сланец",
+		"chalk": "Мел",
+		"gabbro": "Габбро",
+		"rhyolite": "Риолит",
+		"basalt": "Базальт",
+		"andesite": "Андезит",
+		"dacite": "Дацит",
+		"granite": "Гранит",
+		"diorite": "Диорит",
+		"anorthosite": "Анортит",
+		"basanite": "Дунит"
+	},
+
+    "ore_index_format": "This is a $(thing)list$() of every $(item)Ore$() in the celestial body $(thing){0}(), sorted alphabetically and then by richest to poorest vein type.",
+	"vein_index_format": "This is the $(thing)Vein Index$() for the celestial body $(thing){0}$(). Each Vein has details regarding its rarity, density, vein type, height found, sizes, what stones it spawns on, and more."
+}
