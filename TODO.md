@@ -36,7 +36,8 @@ Key:
 - Fix up the ores field guide generator tool
 - Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
-- Remove cast to wrought iron nugget recipe, add "steam bloomery" multiblock, put it in quests 
+- Add "steam bloomery" multiblock, put it in quests 
+- Do the ash pile block properly
 
 # Post-0.9
 - Create 6
