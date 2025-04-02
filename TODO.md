@@ -20,7 +20,8 @@ Key:
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
- - Change framed button, pressure plates etc recipes to match other "normal" ones
+- Change framed button, pressure plates etc recipes to match other "normal" ones
+- add "TFC Weld Button"?
 
 ## Worldgen
 - ⏳ Add + test out those new geodes + nether hint vein (being worked on by pyritie)
@@ -38,7 +39,7 @@ Key:
 - Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - Add "steam bloomery" multiblock, put it in quests 
-- Do the ash pile block properly
+- Do the ash pile block properly (they still float if you mine the block underneath them)
 
 # Post-0.9
 - Create 6
