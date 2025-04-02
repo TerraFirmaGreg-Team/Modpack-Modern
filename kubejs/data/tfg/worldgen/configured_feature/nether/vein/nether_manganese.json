@@ -34,6 +34,18 @@
 					{
 						"block": "gtceu:deepslate_tantalite_ore",
 						"weight": 10
+					},
+					{
+						"block": "gtceu:raw_grossular_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_spessartine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrolusite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -58,6 +70,18 @@
 					{
 						"block": "gtceu:basalt_tantalite_ore",
 						"weight": 10
+					},
+					{
+						"block": "gtceu:raw_grossular_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_spessartine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrolusite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -82,6 +106,18 @@
 					{
 						"block": "gtceu:pyroxenite_tantalite_ore",
 						"weight": 10
+					},
+					{
+						"block": "gtceu:raw_grossular_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_spessartine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrolusite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -105,6 +141,18 @@
 					{
 						"block": "gtceu:dripstone_tantalite_ore",
 						"weight": 10
+					},
+					{
+						"block": "gtceu:raw_grossular_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_spessartine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrolusite_block",
+						"weight": 1
 					}
 				]
 			}

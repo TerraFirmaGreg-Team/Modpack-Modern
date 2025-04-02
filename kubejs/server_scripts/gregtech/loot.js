@@ -2,83 +2,77 @@
 
 const registerGTCEULoots = (event) => {
 
-	// #region Indicator Buds
-
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
-		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)) {
+		if (material.hasProperty(PropertyKey.ORE)) {
 
-			let normalDrop = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
-			let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
+			// Indicator buds
+			if (material.hasProperty(PropertyKey.GEM)) {
+				let normalDrop = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
+				let sawDrop = ChemicalHelper.get(TagPrefix.gem, material, 1)
 
-			let bud = `gtceu:${material.getName()}_bud_indicator`;
+				let bud = `gtceu:${material.getName()}_bud_indicator`;
 
-			event.addBlockLootModifier(bud)
-				.matchMainHand("tfc:gem_saw")
-				.addLoot(sawDrop);
+				event.addBlockLootModifier(bud)
+					.matchMainHand("tfc:gem_saw")
+					.addLoot(sawDrop);
 
-			event.addBlockLootModifier(bud)
-				.not(n => n.matchMainHand("tfc:gem_saw"))
-				.addLoot(normalDrop);
-		}
-	})
+				event.addBlockLootModifier(bud)
+					.not(n => n.matchMainHand("tfc:gem_saw"))
+					.addLoot(normalDrop);
+			}
+			
+			let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
+			let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
+			let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
 
-	// #endregion
+			// Raw ore blocks
+			let rawOreBlock = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
+			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron)
+				rawOreBlock = "minecraft" + rawOreBlock;
+			else
+				rawOreBlock = "gtceu" + rawOreBlock;
 
-	// #region Ores
+			event.addBlockLootModifier(rawOreBlock)
+				.matchMainHand(Ingredient.of('#forge:tools/pickaxes'))
+				.addWeightedLoot([4,6],
+				[
+					richRawOre.withChance(0.2),
+					normalRawOre.withChance(0.6),
+					poorRawOre.withChance(0.2)
+				]);
 
-	global.ORE_BEARING_STONES.forEach(stoneType => {
-		GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-			if (material.hasProperty(PropertyKey.ORE)) {
+			// Stone ores
+			global.ORE_BEARING_STONES.forEach(stoneType => {
 
 				let stoneTypeMaterial = TFGHelpers.getMaterial(stoneType)
-				let stoneTypeDust = null
 
-				let richRawOre = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
-				let normalRawOre = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
-				let poorRawOre = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
+				// Material doesn't work here because of reasons
+				if (stoneTypeMaterial == null) {
+					if (stoneType == "pyroxenite")
+						stoneTypeMaterial = GTMaterials.Blackstone;
+					else if (stoneType == "deepslate")
+						stoneTypeMaterial = GTMaterials.Deepslate;
+				}
 
-				//let crushedOre = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
 
-				let blockName = `gtceu:${stoneType}_${material.getName()}_ore`
+				if (stoneTypeDust == null)
+					console.log(`dust type is null: ${stoneTypeDust}`)
 
-				let modifier = event.addBlockLootModifier(blockName)
+				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(ItemFilter.ALWAYS_TRUE)
-
-				if (!richRawOre.isEmpty() && !normalRawOre.isEmpty() && !poorRawOre.isEmpty()) {
-
-					modifier.addWeightedLoot([
+					.matchMainHand(Ingredient.of('#forge:tools/pickaxes'))
+					.addWeightedLoot([
 						richRawOre.withChance(0.2),
 						normalRawOre.withChance(0.6),
 						poorRawOre.withChance(0.2)
-					]);
-				}
-
-				if (stoneTypeMaterial != null) {
-					stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
-				
-					if (!stoneTypeDust.isEmpty()) {
-
-						modifier.addLoot(
-							LootEntry.of(stoneTypeDust).when((c) => c.randomChance(0.25))
-						)
-					}
-				}
-
-				//if (!crushedOre.isEmpty()) {
-
-				//	event.addBlockLootModifier(blockName)
-				//		//.removeLoot(ItemFilter.ALWAYS_TRUE)
-				//		.matchMainHand(Ingredient.of('#forge:tools/hammers'))
-				//		.addLoot(Item.of(crushedOre))
-				//		//.addWeightedLoot([
-				//		//	crushedOre.withChance(0.8),
-				//		//	crushedOre.withCount(2).withChance(0.2)
-				//		//])
-				//}
-			}
-		})
+					])
+					.addLoot(
+						LootEntry.of(stoneTypeDust).when((c) => c.randomChance(0.25))
+					)
+			})
+		}
 	})
-
-	// #endregion
 }
+

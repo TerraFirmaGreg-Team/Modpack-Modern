@@ -34,6 +34,18 @@
 					{
 						"block": "gtceu:deepslate_copper_ore",
 						"weight": 65
+					},
+					{
+						"block": "gtceu:raw_chalcopyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 2
 					}
 				]
 			},
@@ -58,6 +70,18 @@
 					{
 						"block": "gtceu:pyroxenite_copper_ore",
 						"weight": 65
+					},
+					{
+						"block": "gtceu:raw_chalcopyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 2
 					}
 				]
 			},
@@ -82,10 +106,21 @@
 					{
 						"block": "gtceu:basalt_copper_ore",
 						"weight": 65
+					},
+					{
+						"block": "gtceu:raw_chalcopyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 2
 					}
 				]
 			},
-
 			{
 				"replace": [
 					"minecraft:dripstone_block"
@@ -106,6 +141,18 @@
 					{
 						"block": "gtceu:dripstone_copper_ore",
 						"weight": 65
+					},
+					{
+						"block": "gtceu:raw_chalcopyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 2
 					}
 				]
 			}

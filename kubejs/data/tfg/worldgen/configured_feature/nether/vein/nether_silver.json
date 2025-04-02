@@ -24,6 +24,18 @@
 					{
 						"block": "gtceu:granite_lead_ore",
 						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_galena_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_silver_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +55,18 @@
 					{
 						"block": "gtceu:gneiss_lead_ore",
 						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_galena_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_silver_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
 					}
 				]
 			},
@@ -63,6 +87,18 @@
 					{
 						"block": "gtceu:pyroxenite_lead_ore",
 						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_galena_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_silver_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
 					}
 				]
 			}

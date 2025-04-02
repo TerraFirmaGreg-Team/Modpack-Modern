@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:rhyolite_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +47,10 @@
 					{
 						"block": "gtceu:basalt_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -62,6 +70,10 @@
 					{
 						"block": "gtceu:andesite_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -81,6 +93,10 @@
 					{
 						"block": "gtceu:dacite_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -100,6 +116,10 @@
 					{
 						"block": "gtceu:quartzite_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -119,6 +139,10 @@
 					{
 						"block": "gtceu:slate_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -138,6 +162,10 @@
 					{
 						"block": "gtceu:phyllite_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -157,6 +185,10 @@
 					{
 						"block": "gtceu:schist_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -176,6 +208,10 @@
 					{
 						"block": "gtceu:gneiss_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -195,6 +231,10 @@
 					{
 						"block": "gtceu:marble_pyrite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
 					}
 				]
 			}

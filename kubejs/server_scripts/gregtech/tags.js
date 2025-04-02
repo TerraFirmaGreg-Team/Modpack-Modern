@@ -56,7 +56,7 @@ const registerGTCEUItemTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'gtceu:sus_record')
     global.MINECRAFT_DYE_NAMES.forEach(dyeName =>
     {
-        event.remove('ae2:p2p_attunements/fluid_p2p_tunnel', `tfc:${dyeName}_dye_bucket`)
+        event.remove('ae2:p2p_attunements/fluid_p2p_tunnel', `gtceu:${dyeName}_dye_bucket`)
     })
 }
 
@@ -91,6 +91,19 @@ const registerGTCEUBlockTags = (event) => {
 
 				event.add('minecraft:mineable/pickaxe', bud)
 			}
+
+			// I LOVE KUBEJS I LOVE KUBEJS I LOVE KUBEJS
+			let str = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
+			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron)
+				str = "minecraft" + str;
+			else
+				str = "gtceu" + str;
+
+			event.add('tfc:can_collapse', str);
+			event.add('tfc:can_start_collapse', str);
+			event.add('tfc:can_trigger_collapse', str);
+			// Hide these from JEI
+			event.add('c:hidden_from_recipe_viewers', str);
 		}
 	})
 }

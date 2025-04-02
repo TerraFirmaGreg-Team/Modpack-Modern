@@ -32,6 +32,10 @@
 					{
 						"block": "gtceu:shale_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -59,6 +63,10 @@
 					{
 						"block": "gtceu:claystone_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -86,6 +94,10 @@
 					{
 						"block": "gtceu:limestone_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -113,6 +125,10 @@
 					{
 						"block": "gtceu:conglomerate_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -140,6 +156,10 @@
 					{
 						"block": "gtceu:dolomite_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -167,6 +187,10 @@
 					{
 						"block": "gtceu:chert_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -194,6 +218,10 @@
 					{
 						"block": "gtceu:chalk_sapphire_ore",
 						"weight": 5
+					},
+					{
+						"block": "gtceu:raw_chromite_block",
+						"weight": 1
 					}
 				]
 			}

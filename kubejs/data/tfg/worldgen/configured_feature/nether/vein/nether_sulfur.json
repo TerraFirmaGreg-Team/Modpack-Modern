@@ -24,6 +24,18 @@
 					{
 						"block": "gtceu:diorite_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -44,6 +56,18 @@
 					{
 						"block": "gtceu:basalt_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -64,6 +88,18 @@
 					{
 						"block": "gtceu:pyroxenite_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -83,6 +119,18 @@
 					{
 						"block": "gtceu:schist_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_sphalerite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrite_block",
+						"weight": 1
 					}
 				]
 			}
