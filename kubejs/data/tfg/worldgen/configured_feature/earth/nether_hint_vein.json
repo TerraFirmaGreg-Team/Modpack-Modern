@@ -1,0 +1,85 @@
+{
+	"type": "tfc:pipe_vein",
+	"config": {
+		"rarity": 80,
+		"density": 0.9,
+		"min_y": -64,
+		"max_y": -48,
+		"random_name": "nether_hint_vein",
+		"min_skew": 15,
+		"max_skew": 45,
+		"min_slant": 15,
+		"max_slant": 45,
+		"sign": 0,
+		"height": 30,
+		"radius": 5,
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/rhyolite",
+					"tfc:rock/raw/andesite",
+					"tfc:rock/raw/dacite",
+					"tfc:rock/raw/basalt",
+					"tfc:rock/raw/schist",
+					"tfc:rock/raw/gneiss",
+					"tfc:rock/raw/gabbro",
+					"tfc:rock/raw/granite",
+					"tfc:rock/raw/diorite",
+					"tfc:rock/raw/quartzite",
+					"tfc:rock/raw/slate",
+					"tfc:rock/raw/phyllite",
+					"tfc:rock/raw/marble",
+					"tfc:rock/raw/shale",
+					"tfc:rock/raw/claystone",
+					"tfc:rock/raw/limestone",
+					"tfc:rock/raw/conglomerate",
+					"tfc:rock/raw/dolomite",
+					"tfc:rock/raw/chert",
+					"tfc:rock/raw/chalk"
+				],
+				"with": [
+					{
+						"block": "minecraft:deepslate",
+						"weight": 70
+					},
+					{
+						"block": "minecraft:blackstone",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:deepslate_nether_quartz_ore",
+						"weight": 10
+					},
+					{
+						"block": "minecraft:glowstone",
+						"weight": 10
+					},
+					{
+						"block": "minecraft:air",
+						"weight": 20
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "tfg:loose/deepslate",
+					"weight": 70
+				},
+				{
+					"block": "beneath:blackstone_pebble",
+					"weight": 20
+				},
+				{
+					"block": "gtceu:nether_quartz_bud_indicator",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

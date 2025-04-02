@@ -23,9 +23,8 @@ Key:
  - Change framed button, pressure plates etc recipes to match other "normal" ones
 
 ## Worldgen
-- ⏳ Add + test out those new geodes (being worked on by pyritie)
+- ⏳ Add + test out those new geodes + nether hint vein (being worked on by pyritie)
 - ⏳ Redeix is working on some overworld structures
-- Add some blobs of nether rock to the bottom of the overworld
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
