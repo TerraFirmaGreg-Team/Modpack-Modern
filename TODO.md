@@ -24,8 +24,6 @@ Key:
 - add "TFC Weld Button"?
 
 ## Worldgen
-- ⏳ Add + test out those new geodes + nether hint vein (being worked on by pyritie)
-	- can we use chalk symbols as indicators? there's a cross and a pickaxe mark...
 - ⏳ Redeix is working on some overworld structures
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
 	- Retexture the vanilla lantern, add loot table for it
