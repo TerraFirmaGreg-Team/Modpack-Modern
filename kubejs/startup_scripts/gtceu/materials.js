@@ -14,7 +14,6 @@ const registerGTCEuMaterialModification = (event) => {
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
 	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
-	const $TFCFluids = Java.loadClass('net.dries007.tfc.common.fluids.TFCFluids')
 
 	const {
 		HAS_TFC_TOOL,
