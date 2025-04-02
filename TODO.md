@@ -20,6 +20,7 @@ Key:
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
+ - Change framed button, pressure plates etc recipes to match other "normal" ones
 
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures
