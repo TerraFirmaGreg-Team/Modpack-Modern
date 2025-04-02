@@ -1,0 +1,27 @@
+{
+	"feature": "tfg:earth/geode/barite",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 500
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "uniform",
+				"min_inclusive": {
+					"absolute": -48
+				},
+				"max_inclusive": {
+					"absolute": 32
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

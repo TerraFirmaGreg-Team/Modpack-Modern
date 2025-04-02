@@ -492,7 +492,9 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_copper')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_sphalerite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_tetrahedrite')
-    event.add('tfc:in_biome/veins', 'tfg:earth/amethyst_geode')
+
+    // TODO: other geodes
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/amethyst')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
     event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
