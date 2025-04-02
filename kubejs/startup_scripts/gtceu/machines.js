@@ -1,5 +1,5 @@
 // priority: 0
-
+//#region Greenhouse
 const registerGTCEuMachines = (event) => {
 	event.create('greenhouse', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
@@ -30,7 +30,8 @@ const registerGTCEuMachines = (event) => {
 			.build()
 		)
 		.workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor', false)
-
+//#endregion
+//#region Nether Dome
 	event.create('nether_dome', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('nether_dome')
@@ -103,7 +104,8 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/casings/solid/machine_casing_inert_ptfe",
 			"gtceu:block/machines/gas_collector", false
 		)
-
+//#endregion
+//#region End Dome
 	event.create('end_dome', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('end_dome')
@@ -189,4 +191,84 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/casings/solid/machine_casing_stable_titanium",
 			"gtceu:block/machines/gas_collector", false
 		)
+//#endregion
+//#region Steam Bloomery
+
+const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
+
+	event.create('steam_bloomery', 'multiblock')
+		.machine((holder) => new $SteamMulti(holder, 8))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('steam_bloomery')
+		.recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
+		.appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle(" F ", " C ", " E ", " E ", " E ")
+			.aisle("FCF", "C#C", "E#E", "E#E", "E#E")
+			.aisle(" F ", "CXC", " E ", " E ", " E ")
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blocks('tfc:rock/bricks/granite')
+				.or(Predicates.blocks('tfc:rock/bricks/basalt'))
+				.or(Predicates.blocks('tfc:rock/bricks/andesite'))
+				.or(Predicates.blocks('tfc:rock/bricks/dacite'))
+				.or(Predicates.blocks('tfc:rock/bricks/gabbro'))
+				.or(Predicates.blocks('tfc:rock/bricks/quartzite'))
+				.or(Predicates.blocks('tfc:rock/bricks/slate'))
+				.or(Predicates.blocks('tfc:rock/bricks/phyllite'))
+				.or(Predicates.blocks('tfc:rock/bricks/schist'))
+				.or(Predicates.blocks('tfc:rock/bricks/chert'))
+				.or(Predicates.blocks('tfc:rock/bricks/dolomite'))
+				.or(Predicates.blocks('tfc:rock/bricks/conglomerate'))
+				.or(Predicates.blocks('tfc:rock/bricks/limestone'))
+				.or(Predicates.blocks('tfc:rock/bricks/shale'))
+				.or(Predicates.blocks('tfc:rock/bricks/diorite'))
+				.or(Predicates.blocks('tfc:rock/bricks/claystone'))
+				.or(Predicates.blocks('tfc:rock/bricks/rhyolite'))
+				.or(Predicates.blocks('tfc:rock/bricks/chalk')))
+			.where('F', Predicates.blocks(GTBlocks.FIREBOX_BRONZE.get())
+				.or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1)))
+			.where('J', Predicates.blocks(GTBlocks.CASING_BRONZE_BRICKS.get()))
+			.where('E', Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setExactLimit(1)
+				.or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setExactLimit(1))
+				.or(Predicates.blocks('tfc:rock/bricks/granite'))
+				.or(Predicates.blocks('tfc:rock/bricks/basalt'))
+				.or(Predicates.blocks('tfc:rock/bricks/andesite'))
+				.or(Predicates.blocks('tfc:rock/bricks/dacite'))
+				.or(Predicates.blocks('tfc:rock/bricks/gabbro'))
+				.or(Predicates.blocks('tfc:rock/bricks/quartzite'))
+				.or(Predicates.blocks('tfc:rock/bricks/slate'))
+				.or(Predicates.blocks('tfc:rock/bricks/phyllite'))
+				.or(Predicates.blocks('tfc:rock/bricks/schist'))
+				.or(Predicates.blocks('tfc:rock/bricks/chert'))
+				.or(Predicates.blocks('tfc:rock/bricks/dolomite'))
+				.or(Predicates.blocks('tfc:rock/bricks/conglomerate'))
+				.or(Predicates.blocks('tfc:rock/bricks/limestone'))
+				.or(Predicates.blocks('tfc:rock/bricks/shale'))
+				.or(Predicates.blocks('tfc:rock/bricks/diorite'))
+				.or(Predicates.blocks('tfc:rock/bricks/claystone'))
+				.or(Predicates.blocks('tfc:rock/bricks/rhyolite'))
+				.or(Predicates.blocks('tfc:rock/bricks/chalk')))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.shapeInfo(controller => MultiblockShapeInfo.builder()
+			.aisle(" F ", " C ", " C ", " C ", " C ")
+			.aisle("FCF", "C#C", "C#C", "C#C", "C#C")
+			.aisle(" i ", "CXC", " O ", " I ", " C ")
+			.where('X', controller, Direction.SOUTH)
+			.where('C', Block.getBlock('tfc:rock/bricks/basalt'))
+			.where('F', GTBlocks.FIREBOX_BRONZE.get())
+			.where('i', GTMachines.STEAM_HATCH, Direction.SOUTH)
+			.where('O', GTMachines.STEAM_EXPORT_BUS, Direction.SOUTH)
+			.where('I', GTMachines.STEAM_IMPORT_BUS, Direction.SOUTH)
+			.build()
+		)
+
+		.workableCasingRenderer(
+			"gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
+			"kubejs:block/multiblock/primitive_blast_furnace", false
+		)
+//#endregion
+
 }
