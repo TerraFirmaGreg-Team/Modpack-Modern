@@ -40,6 +40,7 @@ Key:
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - Add "steam bloomery" multiblock, put it in quests 
 - Do the ash pile block properly (they still float if you mine the block underneath them)
+- Add proper loot tables for ores and new stone types for when they're broken with a hammer
 
 # Post-0.9
 - Create 6
