@@ -34,7 +34,7 @@ const registerGTCEULoots = (event) => {
 				rawOreBlock = "gtceu" + rawOreBlock;
 
 			event.addBlockLootModifier(rawOreBlock)
-				.matchMainHand(Ingredient.of('#forge:tools/pickaxes'))
+				.removeLoot(ItemFilter.ALWAYS_TRUE)
 				.addWeightedLoot([4,6],
 				[
 					richRawOre.withChance(0.2),
@@ -62,7 +62,6 @@ const registerGTCEULoots = (event) => {
 
 				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(ItemFilter.ALWAYS_TRUE)
-					.matchMainHand(Ingredient.of('#forge:tools/pickaxes'))
 					.addWeightedLoot([
 						richRawOre.withChance(0.2),
 						normalRawOre.withChance(0.6),
