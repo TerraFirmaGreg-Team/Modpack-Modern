@@ -74,6 +74,8 @@ const registerTFGItemTags = (event) => {
 
 const registerTFGBlockTags = (event) => {
 
+	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
+
 	// #region Nether blocks
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
