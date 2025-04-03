@@ -9788,28 +9788,6 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "particular-1.20.1-Forge-1.0.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6305/876/particular-1.20.1-Forge-1.0.1.jar",
-                    "id": "6305876",
-                    "parent_id": "1219053",
-                    "hashes": {
-                        "sha1": "da1e4e0bb089f1c65b1b393c6d76a3f9a0abf19a",
-                        "md5": "924e0b88b11c8c48bfb29701afc6e1c9"
-                    },
-                    "required_dependencies": [],
-                    "size": 400762,
-                    "date_published": "2025-03-15T06:41:52.307Z"
-                },
-                {
                     "type": "modrinth",
                     "file_name": "particular-1.20.1-Forge-1.0.1.jar",
                     "mc_versions": [
@@ -9829,6 +9807,28 @@
                     "required_dependencies": [],
                     "size": 400762,
                     "date_published": "2025-03-19T09:57:15.687959Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "particular-1.20.1-Forge-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6367/840/particular-1.20.1-Forge-1.1.0.jar",
+                    "id": "6367840",
+                    "parent_id": "1219053",
+                    "hashes": {
+                        "sha1": "d21190503068a41b3fe380dac136aee6c2b418f5",
+                        "md5": "eb093a12e20471cf3aa61f5cae59dfde"
+                    },
+                    "required_dependencies": [],
+                    "size": 401961,
+                    "date_published": "2025-03-30T18:26:07.623Z"
                 }
             ]
         },
@@ -12124,6 +12124,74 @@
                     "required_dependencies": [],
                     "size": 939048,
                     "date_published": "2025-03-05T06:32:45.680Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NxCxarl6bfWK2iHq",
+            "pakku_links": [
+                "F6H99cZ4H6jZRpEK"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tfc-weld-button",
+                "modrinth": "tfc-weld-button"
+            },
+            "name": {
+                "curseforge": "TFC Weld Button",
+                "modrinth": "TFC Weld Button"
+            },
+            "id": {
+                "curseforge": "1093683",
+                "modrinth": "K9CZ9PGx"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TFCWeldButton-1.20.1-1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5949/292/TFCWeldButton-1.20.1-1.1.jar",
+                    "id": "5949292",
+                    "parent_id": "1093683",
+                    "hashes": {
+                        "sha1": "dda1ccb3f998e85de186c84162bf437f2e800031",
+                        "md5": "d341471a87dafd87de25010d2dbe32e9"
+                    },
+                    "required_dependencies": [],
+                    "size": 12642,
+                    "date_published": "2024-11-30T06:12:27.997Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TFCWeldButton-1.20.1-1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/K9CZ9PGx/versions/dtoFhsbX/TFCWeldButton-1.20.1-1.1.jar",
+                    "id": "dtoFhsbX",
+                    "parent_id": "K9CZ9PGx",
+                    "hashes": {
+                        "sha512": "f10676722090db19f4af693949ad0891d26b5c4d2189fdb6536958875a57ea2cbb150634d68debc62ec407c32a8ce58a736f00ecfea03db5152d69cce25fe67d",
+                        "sha1": "dda1ccb3f998e85de186c84162bf437f2e800031"
+                    },
+                    "required_dependencies": [
+                        "JaCEZUhg"
+                    ],
+                    "size": 12642,
+                    "date_published": "2024-11-30T06:12:46.284611Z"
                 }
             ]
         },
