@@ -24,8 +24,6 @@ Key:
 
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures
-- Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
-	- Retexture the vanilla lantern
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
