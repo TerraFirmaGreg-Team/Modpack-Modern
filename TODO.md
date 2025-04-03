@@ -21,7 +21,6 @@ Key:
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 - Change framed button, pressure plates etc recipes to match other "normal" ones
-- add "TFC Weld Button"?
 - remove anthractite burpflower recipe, add froglight burpflower recipe instead?
 
 ## Worldgen
