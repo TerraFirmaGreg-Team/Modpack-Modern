@@ -1,0 +1,16 @@
+﻿{
+	"id": "diorite",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Diorite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Диорит"
+		}
+	],
+	"replaceable_blocks": [
+		"tfc:rock/raw/diorite"
+	]
+}

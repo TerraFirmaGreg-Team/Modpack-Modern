@@ -1,0 +1,23 @@
+﻿{
+	"id": "deepslate",
+	"NOTE_TO_NEBBY": "This is an example of a stone type that has multiple replaceable blocks",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Migmatite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "___"
+		}
+	],
+	"replaceable_blocks": [
+		"minecraft:deepslate",
+		"tfc:mud/silty_loam",
+		"beneath:soul_clay",
+		"tfc:dirt/loam",
+		"tfc:mud/loam",
+		"tfc:peat",
+		"tfc:dirt/silty_loam"
+	]
+}
