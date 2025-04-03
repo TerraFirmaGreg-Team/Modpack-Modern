@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OresToFieldGuide
+namespace Common
 {
     /// <summary>
     /// A Disposable class used to temporarily set the console's foreground color, once the class is out of scope and disposed, the console's foreground color is set back to its original color.

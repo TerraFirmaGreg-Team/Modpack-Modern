@@ -5,7 +5,7 @@
 //Uncomment this to make the program overwrite all the files within .minecraf/kubejs/assets/../tfg_ores/
 #define OVERWRITE_FILES
 
-// See https://aka.ms/new-console-template for more information
+using Common;
 using System.Collections.Generic;
 using System.Text;
 
