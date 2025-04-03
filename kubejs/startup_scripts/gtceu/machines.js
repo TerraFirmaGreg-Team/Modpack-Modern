@@ -227,7 +227,6 @@ const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multibl
 				.or(Predicates.blocks('tfc:rock/bricks/chalk')))
 			.where('F', Predicates.blocks(GTBlocks.FIREBOX_BRONZE.get())
 				.or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1)))
-			.where('J', Predicates.blocks(GTBlocks.CASING_BRONZE_BRICKS.get()))
 			.where('E', Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setExactLimit(1)
 				.or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setExactLimit(1))
 				.or(Predicates.blocks('tfc:rock/bricks/granite'))
