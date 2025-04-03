@@ -26,7 +26,7 @@ Key:
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures
 - Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
-	- Retexture the vanilla lantern, add loot table for it
+	- Retexture the vanilla lantern
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
@@ -37,7 +37,6 @@ Key:
 - Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - Do the ash pile block properly (they still float if you mine the block underneath them)
-- Add proper loot tables for ores and new stone types for when they're broken with a hammer
 - ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 
 # Post-0.9

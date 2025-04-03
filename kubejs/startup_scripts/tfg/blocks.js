@@ -25,6 +25,7 @@ const registerTFGBlocks = (event) => {
 		.tagBlock('tfc:can_carve')
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
+		.tagBlock('minecraft:mineable/pickaxe')
 		.mapColor('terracotta_grey')
 		.fullBlock(true)
 		.opaque(true)
@@ -39,6 +40,7 @@ const registerTFGBlocks = (event) => {
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
 		.mapColor('terracotta_grey')
+		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
 
@@ -53,6 +55,7 @@ const registerTFGBlocks = (event) => {
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
 		.mapColor('terracotta')
+		.tagBlock('minecraft:mineable/pickaxe')
 		.fullBlock(true)
 		.opaque(true)
 
