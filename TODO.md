@@ -22,6 +22,7 @@ Key:
 	- Check LBB efficiency of creosote, think about removing lava
 - Change framed button, pressure plates etc recipes to match other "normal" ones
 - add "TFC Weld Button"?
+- Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures

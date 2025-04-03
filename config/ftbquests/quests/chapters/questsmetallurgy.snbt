@@ -48,6 +48,12 @@
 			x: 7.0d
 			y: -30.0d
 		}
+		{
+			id: "227B6C88FFE99435"
+			linked_quest: "4EBABACAB444244D"
+			x: 24.5d
+			y: -26.0d
+		}
 	]
 	quests: [
 		{
@@ -67,7 +73,7 @@
 			y: -22.0d
 		}
 		{
-			dependencies: ["29D53D587AD1B0E6"]
+			dependencies: ["56CA2EB7812529C5"]
 			description: ["{quests.metal_age.redblu_buckets.desc}"]
 			id: "003EB186944BD36E"
 			size: 1.0d
@@ -105,29 +111,6 @@
 			title: "{quests.metal_age.redblu_buckets.title}"
 			x: 26.0d
 			y: -24.5d
-		}
-		{
-			dependencies: ["5792DDAA82895E67"]
-			description: ["{quests.metal_age.redblu_anvil.desc}"]
-			id: "29D53D587AD1B0E6"
-			shape: "octagon"
-			size: 2.0d
-			subtitle: "{quests.metal_age.redblu_anvil.subtitle}"
-			tasks: [{
-				id: "7B53866C1D6433B4"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:red_or_blue_anvil)"
-					}
-				}
-				title: "{quests.tasktype.item.any} #tfc:red_or_blue_anvil"
-				type: "item"
-			}]
-			title: "{quests.metal_age.redblu_anvil.title}"
-			x: 26.0d
-			y: -26.0d
 		}
 		{
 			dependencies: ["04DE7C58F20B535A"]
@@ -848,6 +831,43 @@
 			title: "{quests.metal_age.auto_coke_oven.title}"
 			x: 9.0d
 			y: -38.0d
+		}
+		{
+			dependencies: ["56CA2EB7812529C5"]
+			description: ["{quests.metal_age.red_steel_flask.desc}"]
+			id: "30D49878F3CEB08A"
+			subtitle: "{quests.metal_age.red_steel_flask.subtitle}"
+			tasks: [{
+				id: "7394672B4D19B0B2"
+				item: "waterflasks:red_steel_flask"
+				type: "item"
+			}]
+			title: "{quests.metal_age.red_steel_flask.title}"
+			x: 27.5d
+			y: -26.0d
+		}
+		{
+			dependencies: ["5792DDAA82895E67"]
+			description: ["{quests.metal_age.redblu_anvil.desc}"]
+			id: "56CA2EB7812529C5"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.redblu_anvil.subtitle}"
+			tasks: [{
+				id: "20BCD64D8D893582"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:red_or_blue_anvil)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:red_or_blue_anvil"
+				type: "item"
+			}]
+			title: "{quests.metal_age.redblu_anvil.title}"
+			x: 26.0d
+			y: -26.0d
 		}
 	]
 	subtitle: ["{quests.metallurgy_age.subtitle}"]
