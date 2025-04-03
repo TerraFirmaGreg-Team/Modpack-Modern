@@ -1,10 +1,10 @@
 {
   "disableCrouchMining": false,
   "disableExtraToolDamage": false,
-  "disableExtraFoodExhaustion": false,
+  "disableExtraFoodExhaustion": true,
   "treeLifetimeLength": 4.0,
   "dynamicMiningSpeed": {
-    "disable": false,
+    "disable": true,
     "speedMultiplication": 0.5,
     "maxSpeedMultiplication": 16.0
   },
