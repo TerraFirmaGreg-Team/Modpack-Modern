@@ -16,11 +16,7 @@
 			"type": "patchouli:text",
 			"anchor": "entering",
 			"title": "Entering the Beneath",
-			"text": "To travel Beneath, simply stand on overworld bedrock for a little while.$(br)To return, stand directly below the ceiling bedrock in the same fashion."
-		},
-		{
-			"type": "patchouli:text",
-			"text": "It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+			"text": "To travel Beneath, simply stand on overworld bedrock for a little while.$(br)To return, stand directly below the ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
 		}
 	],
 	"read_by_default": true

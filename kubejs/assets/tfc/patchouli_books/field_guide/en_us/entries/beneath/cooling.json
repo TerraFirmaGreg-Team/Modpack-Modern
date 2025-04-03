@@ -5,7 +5,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "The Beneath is hot! The temperature is already 15C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$() and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
+			"text": "The Beneath is hot! The temperature starts at 15C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$() and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
 		},
 		{
 			"type": "patchouli:spotlight",
