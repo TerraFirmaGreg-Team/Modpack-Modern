@@ -1,5 +1,7 @@
 // priority: 0
+
 //#region Greenhouse
+
 const registerGTCEuMachines = (event) => {
 	event.create('greenhouse', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
@@ -30,8 +32,11 @@ const registerGTCEuMachines = (event) => {
 			.build()
 		)
 		.workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor', false)
-//#endregion
-//#region Nether Dome
+
+	//#endregion
+
+	//#region Nether Dome
+
 	event.create('nether_dome', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('nether_dome')
@@ -104,8 +109,11 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/casings/solid/machine_casing_inert_ptfe",
 			"gtceu:block/machines/gas_collector", false
 		)
-//#endregion
-//#region End Dome
+
+	//#endregion
+
+	//#region End Dome
+
 	event.create('end_dome', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
 		.recipeType('end_dome')
@@ -191,10 +199,12 @@ const registerGTCEuMachines = (event) => {
 			"gtceu:block/casings/solid/machine_casing_stable_titanium",
 			"gtceu:block/machines/gas_collector", false
 		)
-//#endregion
-//#region Steam Bloomery
 
-const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
+	//#endregion
+
+	//#region Steam Bloomery
+
+	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 
 	event.create('steam_bloomery', 'multiblock')
 		.machine((holder) => new $SteamMulti(holder, 8))
@@ -263,11 +273,10 @@ const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multibl
 			.where('I', GTMachines.STEAM_IMPORT_BUS, Direction.SOUTH)
 			.build()
 		)
-
 		.workableCasingRenderer(
 			"gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
-			"kubejs:block/multiblock/primitive_blast_furnace", false
+			"tfg:block/steam_bloomery", false
 		)
-//#endregion
+	//#endregion
 
 }
