@@ -34,7 +34,6 @@ Key:
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - ⏳ Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
-- Do the ash pile block properly (they still float if you mine the block underneath them)
 - ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 
 # Post-0.9
