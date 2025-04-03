@@ -122,8 +122,8 @@ function registerTFGPapermakingRecipes(event) {
 		result: {
 			item: 'tfg:soaked_unrefined_paper'
 		},
-		input_texture: 'tfg:blocks/thermochemically_treated_hardwood_dust',
-		output_texture: 'tfg:blocks/soaked_unrefined_paper',
+		input_texture: 'tfg:block/thermochemically_treated_hardwood_dust',
+		output_texture: 'tfg:block/soaked_unrefined_paper',
 		sound: 'minecraft:entity.slime.squish'
 	}).id('tfg:stomping/soaked_unrefined_paper')
 
