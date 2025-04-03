@@ -77,14 +77,7 @@
 		}
 	},
 	"spawners": {
-		"water_ambient": [
-			{
-				"type": "tfc:isopod",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 10
-			}
-		],
+		"water_ambient": [],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
@@ -106,12 +99,6 @@
 				"type": "minecraft:frog",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "beneath:red_elk",
-				"maxCount": 8,
-				"minCount": 4,
 				"weight": 100
 			}
 		],
