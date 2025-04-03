@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace OresToFieldGuide
+namespace Common
 {
     public static class ConsoleLogHelper
     {

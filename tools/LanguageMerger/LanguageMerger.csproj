@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LanguageFiles\beneath\en_us\" />
+    <Folder Include="LanguageFiles\create\en_us\" />
+    <Folder Include="LanguageFiles\endermanoverhaul\en_us\" />
+    <Folder Include="LanguageFiles\firmalife\en_us\" />
+    <Folder Include="LanguageFiles\gtceu\en_us\" />
+    <Folder Include="LanguageFiles\minecraft\en_us\" />
+    <Folder Include="LanguageFiles\railways\en_us\" />
+    <Folder Include="LanguageFiles\sophisticatedbackpacks\en_us\" />
+    <Folder Include="LanguageFiles\tfc\en_us\" />
+    <Folder Include="LanguageFiles\tfg\en_us\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
+</Project>
