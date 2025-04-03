@@ -23,5 +23,12 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.FIRE)
-}
 
+	event.create('steam_bloomery')
+		.category('steam_bloomery')
+		.setEUIO('in')
+		.setMaxIOSize(2, 1, 0, 0)
+		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+		.setSound(GTSoundEntries.FIRE)
+}
