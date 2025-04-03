@@ -29,6 +29,6 @@ const registerGTCEuRecipeTypes = (event) => {
 		.setEUIO('in')
 		.setMaxIOSize(2, 1, 0, 0)
 		.setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-		.setProgressBar(GuiTextures.PROGRESS_BAR_COKE_OVEN, FillDirection.LEFT_TO_RIGHT)
+		.setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS_STEAM, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.FIRE)
 }
