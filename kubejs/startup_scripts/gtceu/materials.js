@@ -13,6 +13,8 @@ const registerGTCEuMaterialModification = (event) => {
 
 	const $MATERIAL_FLAGS = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.info.MaterialFlags')
 
+	const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+
 	const {
 		HAS_TFC_TOOL,
 		HAS_TFC_ARMOR,
@@ -209,10 +211,14 @@ const registerGTCEuMaterialModification = (event) => {
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
 
-	// Add bismuth item pipe - same stats as tin
+	// Bismuth item pipe - same stats as tin
 	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(4096, 0.5));
-	// Add bis bronze fluid pipe - same stats as bronze
+	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
+	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
+	GTMaterials.RedSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(370, 75, true, false, true, false));
+	// Blue steel fluid pipe - same flow rate as aluminium, same temp tolerance as tungsten
+	GTMaterials.BlueSteel.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(4618, 75, true, false, false, false));
 
 	// Add some hazards back
 	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
@@ -242,4 +248,11 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
 	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	
+	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
+	{
+		var material = GTCEuAPI.materialManager.getMaterial(`gtceu:${colorName}_dye`);
+		var property = material.getProperty(PropertyKey.FLUID);
+		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
+	});
 }

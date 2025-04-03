@@ -9,6 +9,7 @@ ServerEvents.tags('item', event => {
     registerAlekishipsItemTags(event)
     registerAsticorCartsItemTags(event)
     registerBeneathItemTags(event)
+    registerChalkItemTags(event);
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
@@ -18,6 +19,7 @@ ServerEvents.tags('item', event => {
     registerDiggerHelmetItemTags(event)
     registerEndermanOverhaulItemTags(event)
     registerEveryCompatItemTags(event)
+    registerExposureItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
@@ -109,6 +111,7 @@ ServerEvents.highPriorityData(event => {
  */
 TFCEvents.data(event => {
     registerTFCDataForArborFirmaCraft(event)
+    registerTFCDataForChalk(event);
     registerTFCDataForGTCEU(event)
     registerTFCDataForTFC(event)
     registerTFCDataForTFCBetterBF(event)
@@ -144,8 +147,11 @@ ServerEvents.recipes(event => {
     registerAE2NetworkAnalyzerRecipes(event)
     registerAE2WTLibRecipes(event)
     registerBeneathRecipes(event)
+    registerChalkRecipes(event);
     registerChiselAndBitsRecipes(event)
+    registerComfortsRecipes(event);
     registerComputerCraftRecipes(event)
+    registerColdsgrapplerRecipes(event);
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
     registerCreateConnectedRecipes(event)

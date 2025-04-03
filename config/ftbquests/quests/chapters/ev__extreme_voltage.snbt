@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ev__extreme_voltage"
-	group: ""
+	group: "21D975CEBDE06BA9"
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
-	order_index: 8
+	order_index: 0
 	quest_links: [
 		{
 			id: "2E99A771FCA40E15"

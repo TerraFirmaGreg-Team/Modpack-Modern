@@ -29,6 +29,14 @@
 					{
 						"block": "gtceu:rhyolite_green_sapphire_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_almandine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrope_block",
+						"weight": 1
 					}
 				]
 			},
@@ -52,6 +60,14 @@
 					{
 						"block": "gtceu:basalt_green_sapphire_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_almandine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrope_block",
+						"weight": 1
 					}
 				]
 			},
@@ -75,6 +91,14 @@
 					{
 						"block": "gtceu:andesite_green_sapphire_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_almandine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrope_block",
+						"weight": 1
 					}
 				]
 			},
@@ -98,6 +122,14 @@
 					{
 						"block": "gtceu:dacite_green_sapphire_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_almandine_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pyrope_block",
+						"weight": 1
 					}
 				]
 			}

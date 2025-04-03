@@ -34,6 +34,18 @@
 					{
 						"block": "gtceu:deepslate_palladium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bornite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cooperite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_platinum_block",
+						"weight": 1
 					}
 				]
 			},
@@ -58,6 +70,18 @@
 					{
 						"block": "gtceu:pyroxenite_palladium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bornite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cooperite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_platinum_block",
+						"weight": 1
 					}
 				]
 			},
@@ -82,6 +106,18 @@
 					{
 						"block": "gtceu:basalt_palladium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bornite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cooperite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_platinum_block",
+						"weight": 1
 					}
 				]
 			},
@@ -105,6 +141,18 @@
 					{
 						"block": "gtceu:dripstone_palladium_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bornite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cooperite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_platinum_block",
+						"weight": 1
 					}
 				]
 			}

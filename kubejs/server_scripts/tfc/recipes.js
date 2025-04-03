@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerTFCRecipes = (event) => {
 
 	removeTFCRecipes(event)
@@ -12,7 +16,7 @@ const registerTFCRecipes = (event) => {
 	registerTFCKnappingRecipes(event)
 	registerTFCMachineRecipes(event)
 	registerTFCAlabasterRecipes(event)
-
+	registerTFCDyeRecipes(event)
 
 	//#region Рецепты порошков
 

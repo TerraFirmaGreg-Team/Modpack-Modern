@@ -29,6 +29,14 @@
 					{
 						"block": "gtceu:shale_borax_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_salt_block",
+						"weight": 1
 					}
 				]
 			},
@@ -52,6 +60,14 @@
 					{
 						"block": "gtceu:claystone_borax_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_salt_block",
+						"weight": 1
 					}
 				]
 			},
@@ -75,6 +91,14 @@
 					{
 						"block": "gtceu:limestone_borax_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_rock_salt_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_salt_block",
+						"weight": 1
 					}
 				]
 			}

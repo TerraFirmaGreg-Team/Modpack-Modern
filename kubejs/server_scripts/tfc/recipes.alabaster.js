@@ -30,7 +30,7 @@ function registerTFCAlabasterRecipes(event) {
 	for (let i = 0; i < 16; i++) {
 		event.recipes.gtceu.chemical_bath(`tfg:tfc/alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
 			.itemInputs('tfc:alabaster/bricks')
-			.inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
 			.itemOutputs(`tfc:alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
 			.duration(20)
 			.EUt(7)
@@ -68,10 +68,26 @@ function registerTFCAlabasterRecipes(event) {
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	for (let i = 0; i < 16; i++) {
-		event.recipes.gtceu.chemical_bath(`tfg:tfc/alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)
+		event.recipes.gtceu.chemical_bath(`tfg:alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)
 			.itemInputs('tfc:alabaster/raw')
-			.inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 72))
+			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 36))
 			.itemOutputs(`tfc:alabaster/raw/${global.MINECRAFT_DYE_NAMES[i]}`)
+			.duration(20)
+			.EUt(7)
+			.category(GTRecipeCategories.CHEM_DYES)
+
+		event.recipes.gtceu.chemical_bath(`tfg:alabaster/polished/${global.MINECRAFT_DYE_NAMES[i]}`)
+			.itemInputs('tfc:alabaster/polished')
+			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 36))
+			.itemOutputs(`tfc:alabaster/polished/${global.MINECRAFT_DYE_NAMES[i]}`)
+			.duration(20)
+			.EUt(7)
+			.category(GTRecipeCategories.CHEM_DYES)
+
+		event.recipes.gtceu.chemical_bath(`tfg:alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
+			.itemInputs('tfc:alabaster/bricks')
+			.inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 36))
+			.itemOutputs(`tfc:alabaster/bricks/${global.MINECRAFT_DYE_NAMES[i]}`)
 			.duration(20)
 			.EUt(7)
 			.category(GTRecipeCategories.CHEM_DYES)

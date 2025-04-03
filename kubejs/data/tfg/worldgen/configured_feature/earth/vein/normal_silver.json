@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:granite_lead_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +47,10 @@
 					{
 						"block": "gtceu:gneiss_lead_ore",
 						"weight": 55
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
 					}
 				]
 			}

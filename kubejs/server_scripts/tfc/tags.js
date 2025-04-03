@@ -224,6 +224,12 @@ const registerTFCItemTags = (event) => {
 
     // Удаление тегов у руд
     event.removeAllTagsFrom("/tfc:ore/[^*]+/[^*]+/")
+
+    //Stone javelins
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/igneous_extrusive')
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/igneous_intrusive')
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/metamorphic')
+    event.add('tfc:stone_javelins', 'tfc:stone/javelin/sedimentary')
 }
 
 const registerTFCBlockTags = (event) => {
@@ -244,9 +250,6 @@ const registerTFCBlockTags = (event) => {
             event.add(`tfg:brick_walls`, `tfc:rock/${slabType}/${stoneTypeName}_wall`)
         })
     })
-
-    // Отключение ломания блоков установленных на полу
-    event.add('tfcdesirepaths:trample_blacklist', 'tfc:placed_item')
 
     // Возможность обрушения полу-блоков
     event.add('tfc:can_collapse', '#tfg:rock_slabs')
@@ -486,7 +489,16 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_copper')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_sphalerite')
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_tetrahedrite')
-    event.add('tfc:in_biome/veins', 'tfg:earth/geode')
+
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/amethyst')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/barite')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/calcite')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/gypsum')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/opal')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/pyrite')
+    event.add('tfc:in_biome/veins', 'tfg:earth/geode/quartzite')
+
+    event.add('tfc:in_biome/veins', 'tfg:earth/nether_hint_vein')
 
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
     event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')

@@ -30,6 +30,14 @@
 					{
 						"block": "gtceu:deepslate_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 2
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 1
 					}
 				]
 			},
@@ -49,6 +57,14 @@
 					{
 						"block": "gtceu:dripstone_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 2
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 1
 					}
 				]
 			},
@@ -68,6 +84,14 @@
 					{
 						"block": "gtceu:schist_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 2
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 1
 					}
 				]
 			},
@@ -87,6 +111,14 @@
 					{
 						"block": "gtceu:gneiss_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 2
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 1
 					}
 				]
 			},
@@ -107,6 +139,14 @@
 					{
 						"block": "gtceu:pyroxenite_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 2
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"weight": 1
 					}
 				]
 			}

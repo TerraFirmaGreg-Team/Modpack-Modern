@@ -17,7 +17,7 @@ const registerBeneathBlockTags = (event) => {
 
 	event.remove('beneath:sparks_on_sulfur')
 
-	// Beneath makes these collapse for some reason?
+	event.add('beneath:blackstone_decor', 'minecraft:blackstone');
 	event.remove('beneath:blackstone')
 }
 

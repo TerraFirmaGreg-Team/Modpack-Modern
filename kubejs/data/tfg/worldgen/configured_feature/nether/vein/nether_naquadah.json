@@ -21,6 +21,14 @@
 					{
 						"block": "gtceu:pyroxenite_plutonium_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_naquadah_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_plutonium_block",
+						"weight": 1
 					}
 				]
 			},
@@ -37,6 +45,14 @@
 					{
 						"block": "gtceu:basalt_plutonium_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_naquadah_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_plutonium_block",
+						"weight": 1
 					}
 				]
 			}

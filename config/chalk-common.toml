@@ -23,11 +23,11 @@ ShouldGenerateInChests = true
 	CrossEnabled = true
 	CrossUnlockAdvancement = ""
 	PickaxeEnabled = true
-	PickaxeUnlockAdvancement = "minecraft:story/iron_tools"
+	PickaxeUnlockAdvancement = ""
 	SkullEnabled = true
-	SkullUnlockAdvancement = "chalk:adventure/get_skeleton_skull"
+	SkullUnlockAdvancement = ""
 	HeartEnabled = true
-	HeartUnlockAdvancement = "minecraft:husbandry/tame_an_animal"
+	HeartUnlockAdvancement = ""
 	HouseEnabled = true
-	HouseUnlockAdvancement = "chalk:adventure/sleep_three_times_in_one_place"
+	HouseUnlockAdvancement = ""
 

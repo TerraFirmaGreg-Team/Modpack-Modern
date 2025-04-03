@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:granite_cinnabar_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_redstone_block",
+						"weight": 1
 					}
 				]
 			}

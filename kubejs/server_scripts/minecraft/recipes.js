@@ -612,6 +612,11 @@ const registerMinecraftRecipes = (event) => {
 		.duration(100)
 		.EUt(4)
 
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.remove({ id: `minecraft:dye_${dye}_wool` })
+	})
+
 	//#endregion
 
 	//#region Выход: Лук
@@ -800,7 +805,7 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shaped('minecraft:netherite_leggings', [
 		'ABA',
-		'CDC' 
+		'CDC'
 	], {
 		A: '#forge:screws/blue_steel',
 		B: 'tfc:metal/greaves/blue_steel',

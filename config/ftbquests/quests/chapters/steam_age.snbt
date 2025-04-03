@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "steam_age"
-	group: ""
+	group: "74A4CF77167DFFCE"
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
 	order_index: 1
@@ -460,7 +460,7 @@
 				""
 				"Last but not least, it makes &aPlates&r at a better ratio: &6three Ingots for two Plates&r. A worthwhile investment!"
 				""
-				"You know what? &aBonus&r! We'll give you the &8Anvil&r back if you craft the Forge Hammer. This is a gentle reminder that you can repair GregTech tools in an Anvil."
+				"On top of all that, the Forge Hammer lets you work in-between ingots such as Raw Blooms into Wrought Iron, or Pig Iron into Steel! keep in mind that this takes a while tho."
 			]
 			id: "1931FC6DEAC29646"
 			shape: "square"
@@ -544,7 +544,16 @@
 				""
 				"&6This quest unlocks a new tutorial on rudimentary Ore Processing in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
 			]
-			icon: "gtceu:crushed_gold_ore"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:crushed_gold_ore"
+			}
 			id: "7813F183681E0342"
 			shape: "circle"
 			size: 1.0d

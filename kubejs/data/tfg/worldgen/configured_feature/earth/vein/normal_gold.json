@@ -29,6 +29,10 @@
 					{
 						"block": "gtceu:rhyolite_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			},
@@ -52,6 +56,10 @@
 					{
 						"block": "gtceu:basalt_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			},
@@ -75,6 +83,10 @@
 					{
 						"block": "gtceu:andesite_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			},
@@ -98,6 +110,10 @@
 					{
 						"block": "gtceu:dacite_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			},
@@ -121,6 +137,10 @@
 					{
 						"block": "gtceu:granite_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			},
@@ -144,6 +164,10 @@
 					{
 						"block": "gtceu:diorite_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			},
@@ -167,6 +191,10 @@
 					{
 						"block": "gtceu:gabbro_gold_ore",
 						"weight": 55
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"weight": 1
 					}
 				]
 			}

@@ -86,3 +86,8 @@ GTCEuStartupEvents.materialModification(event => {
 //        .tier(0)
 //        .overrideName('Earth Orbit')
 //})
+
+
+Platform.mods.kaolinclayze.name = "Primitive Creatures";
+Platform.mods.tfg.name = "TerraFirmaGreg";
+Platform.mods.kubejs.name = "TerraFirmaGreg";

@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:shale_barite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +47,10 @@
 					{
 						"block": "gtceu:quartzite_barite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -62,6 +70,10 @@
 					{
 						"block": "gtceu:schist_barite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -81,6 +93,10 @@
 					{
 						"block": "gtceu:gneiss_barite_ore",
 						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
 					}
 				]
 			}

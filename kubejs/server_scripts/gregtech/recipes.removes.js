@@ -189,6 +189,12 @@ function removeGTCEURecipes(event) {
 
 	// #endregion
 
+	// #region Wrought Iron Nugget
+
+	event.remove({ output: 'gtceu:wrought_iron_nugget', type: 'minecraft:smelting' })
+
+	// #endregion
+
 	// #region Seed Oil
 
 	event.remove({ id: 'gtceu:extractor/seed_oil_from_tag_seeds' })
@@ -554,11 +560,13 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_iron' })
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:shaped/treated_door' })
+	event.remove({ id: 'gtceu:shaped/barrel' })
 	event.remove({ id: 'gtceu:assembler/bell' })
 	event.remove({ id: 'gtceu:assembler/armor_stand' })
 	event.remove({ id: 'gtceu:assembler/piston_stainless_steel' })
 	event.remove({ id: 'gtceu:assembler/treated_trapdoor_iron' })
 	event.remove({ id: 'gtceu:assembler/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:assembler/treated_door' })
+	event.remove({ id: 'gtceu:assembler/barrel' })
 
 }

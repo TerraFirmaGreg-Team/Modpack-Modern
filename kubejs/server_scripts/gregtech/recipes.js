@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerGTCEURecipes = (event) => {
 	
 	registerGTCEUMetalRecipes(event)

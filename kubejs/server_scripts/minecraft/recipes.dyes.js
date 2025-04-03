@@ -19,7 +19,7 @@ function registerMinecraftDyeRecipes(event) {
 		if (dye != 'white') {
 			event.recipes.gtceu.chemical_bath(`tfg:${dye}_carpet`)
 				.itemInputs(`minecraft:white_carpet`)
-				.inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))
 				.itemOutputs(`minecraft:${dye}_carpet`)
 				.duration(300)
 				.EUt(4)
@@ -27,7 +27,7 @@ function registerMinecraftDyeRecipes(event) {
 
 			event.recipes.gtceu.chemical_bath(`${dye}_bed`)
 					.itemInputs(`minecraft:white_bed`)
-					.inputFluids(Fluid.of(`gtceu:${dye}_dye`, 216))
+					.inputFluids(Fluid.of(`tfc:${dye}_dye`, 216))
 					.itemOutputs(`minecraft:${dye}_bed`)
 					.duration(300)
 					.EUt(4)

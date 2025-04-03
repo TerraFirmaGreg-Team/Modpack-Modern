@@ -4,4 +4,6 @@ const registerCreateConnectedItemTags = (event) => {
     event.add("c:hidden_from_recipe_viewers", "create_connected:cherry_window_pane")
     event.removeAllTagsFrom("create_connected:bamboo_window_pane")
     event.add("c:hidden_from_recipe_viewers", "create_connected:bamboo_window_pane")
+    
+    event.remove('minecraft:creeper_drop_music_discs', ['create_connected:music_disc_elevator', 'create_connected:music_disc_interlude'])
 }

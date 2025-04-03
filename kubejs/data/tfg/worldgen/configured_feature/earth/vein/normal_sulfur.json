@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:rhyolite_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +47,10 @@
 					{
 						"block": "gtceu:basalt_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
 					}
 				]
 			},
@@ -62,6 +70,10 @@
 					{
 						"block": "gtceu:andesite_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
 					}
 				]
 			},
@@ -81,6 +93,10 @@
 					{
 						"block": "gtceu:dacite_sphalerite_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_sulfur_block",
+						"weight": 1
 					}
 				]
 			}

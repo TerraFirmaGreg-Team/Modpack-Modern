@@ -34,6 +34,18 @@
 					{
 						"block": "gtceu:deepslate_glauconite_sand_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
 					}
 				]
 			},
@@ -58,6 +70,18 @@
 					{
 						"block": "gtceu:basalt_glauconite_sand_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
 					}
 				]
 			},
@@ -82,6 +106,18 @@
 					{
 						"block": "gtceu:pyroxenite_glauconite_sand_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
 					}
 				]
 			},
@@ -105,6 +141,18 @@
 					{
 						"block": "gtceu:dripstone_glauconite_sand_ore",
 						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
 					}
 				]
 			}

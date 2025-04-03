@@ -24,6 +24,10 @@
 					{
 						"block": "gtceu:quartzite_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -43,6 +47,10 @@
 					{
 						"block": "gtceu:slate_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -62,6 +70,10 @@
 					{
 						"block": "gtceu:phyllite_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -81,6 +93,10 @@
 					{
 						"block": "gtceu:schist_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -100,6 +116,10 @@
 					{
 						"block": "gtceu:gneiss_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 1
 					}
 				]
 			},
@@ -119,6 +139,10 @@
 					{
 						"block": "gtceu:marble_stibnite_ore",
 						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_tetrahedrite_block",
+						"weight": 1
 					}
 				]
 			}
