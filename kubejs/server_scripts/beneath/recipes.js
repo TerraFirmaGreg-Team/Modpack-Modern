@@ -10,7 +10,16 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/blackstone_bricks_from_soot' })
 	event.remove({ id: 'beneath:crafting/blackstone_from_soot' })
 	event.remove({ id: 'beneath:crafting/hellbricks' })
-
+	
+	event.shaped('beneath:unposter', [
+		'ABA',
+		'AAA',
+		'CCC'
+	], {
+		A: '#tfc:lumber',
+		B: 'tfc:composter',
+		C: '#tfc:mud'
+	}).id('beneath:crafting/unposter')
 
 	event.shapeless('beneath:hellbricks', [
 		'#forge:stone_bricks',

@@ -21,7 +21,6 @@ Key:
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 - Change framed button, pressure plates etc recipes to match other "normal" ones
-- add "TFC Weld Button"?
 - Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
 ## Worldgen
@@ -31,11 +30,10 @@ Key:
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
-- ⏳ Add "steam bloomery" multiblock, put it in quests (being worked on by tomtomtom)
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
-- Fix up the ores field guide generator tool
-- Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
+- ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
+- ⏳ Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - Do the ash pile block properly (they still float if you mine the block underneath them)
 - ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use

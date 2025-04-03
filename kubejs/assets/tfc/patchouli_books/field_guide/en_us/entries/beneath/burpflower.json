@@ -9,7 +9,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Soon, if there is sulfur, the burpflower will charge, and have a yellow sulfuric flower. It then soon will make a burping sound and expel sulfuric smoke.$(br2)$(item)Pyroxenite Bricks$() can be changed into $(thing)Hellbricks$().$(br)$(item)Charcoal piles$() can be transformed into $(l:beneath/ores_and_minerals#cursecoal)Cursecoal Piles$()."
+			"text": "Soon, if there is sulfur, the burpflower will charge, and have a yellow sulfuric flower. It then soon will make a burping sound and expel sulfuric smoke.$(br2)$(item)Shroomlights$() can be changed into a random $(thing)Froglight$()."
 		}
 	],
 	"read_by_default": true
