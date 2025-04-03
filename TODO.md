@@ -30,7 +30,6 @@ Key:
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
-- ⏳ Add "steam bloomery" multiblock, put it in quests (being worked on by tomtomtom)
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
 - Fix up the ores field guide generator tool
