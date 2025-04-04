@@ -35,10 +35,10 @@ def replace_blocks(structures):
 				block['Name'] = StringTag('tfc:wood/chest/mangrove')
 				dirty = True
 			if name == 'minecraft:basalt':
-				block['Name'] = StringTag('minecraft:deepslate')
+				block['Name'] = StringTag('minecraft:deepslate_bricks')
 				dirty = True
 			elif name == 'minecraft:polished_basalt':
-				block['Name'] = StringTag('minecraft:gilded_blackstone')
+				block['Name'] = StringTag('minecraft:polished_deepslate')
 				dirty = True
 			elif name == 'minecraft:chain':
 				block['Name'] = StringTag('tfc:metal/chain/black_bronze')

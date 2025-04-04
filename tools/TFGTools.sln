@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageMerger", "LanguageM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{76EEF325-3580-4A2E-AF4F-1C1D4CE1D6AF}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "mcresources", "mcresources\mcresources.pyproj", "{4458F3D7-A40C-4D91-AFB7-8EBA4469A6E5}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python", "Python\Python.pyproj", "{A546744E-4792-47E1-9F46-14A969946CC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,8 +35,8 @@ Global
 		{76EEF325-3580-4A2E-AF4F-1C1D4CE1D6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76EEF325-3580-4A2E-AF4F-1C1D4CE1D6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76EEF325-3580-4A2E-AF4F-1C1D4CE1D6AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4458F3D7-A40C-4D91-AFB7-8EBA4469A6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4458F3D7-A40C-4D91-AFB7-8EBA4469A6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A546744E-4792-47E1-9F46-14A969946CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A546744E-4792-47E1-9F46-14A969946CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4458f3d7-a40c-4d91-afb7-8eba4469a6e5</ProjectGuid>
+    <ProjectGuid>{a546744e-4792-47e1-9f46-14a969946cc1}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>bastions.py</StartupFile>
     <SearchPath>
