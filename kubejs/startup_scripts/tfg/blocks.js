@@ -13,6 +13,14 @@ const registerTFGBlocks = (event) => {
 	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 
+	// #region Deprecated tree tap
+
+	// Make a new block here so people can craft it into the new one
+	event.create('treetap:tap')
+		.requiresTool(false)
+
+	// #endregion
+
 	// #region Nether blocks
 
 	event.create('tfg:rock/hardened_deepslate')

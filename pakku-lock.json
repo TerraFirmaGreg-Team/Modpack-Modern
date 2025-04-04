@@ -12550,43 +12550,6 @@
             ]
         },
         {
-            "pakku_id": "Wh1WnzvveCM8mSYi",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "treetap"
-            },
-            "name": {
-                "curseforge": "Tree Tap"
-            },
-            "id": {
-                "curseforge": "927874"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "treetap-1.20.1-0.4.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5589/123/treetap-1.20.1-0.4.0.jar",
-                    "id": "5589123",
-                    "parent_id": "927874",
-                    "hashes": {
-                        "sha1": "0e2ead728a199b538b6f3ba5933f1c2be5be16ef",
-                        "md5": "88e6337e2b84a1c511a10e4595525d7e"
-                    },
-                    "required_dependencies": [],
-                    "size": 87961,
-                    "date_published": "2024-08-02T09:50:27.947Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "9zaNozpa8FNeuaQM",
             "type": "MOD",
             "slug": {
