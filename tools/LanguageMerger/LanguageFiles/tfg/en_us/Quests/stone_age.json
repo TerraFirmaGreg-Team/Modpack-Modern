@@ -1,0 +1,94 @@
+{
+    "quests.stone_age": "Stone Age",
+    "quests.stone_age.subtitle": "Humble Beginnings",
+    
+    "quests.stone_age.foods.title": "Hungry?",
+    "quests.stone_age.foods.subtitle": "Where's my easy food?",
+    "quests.stone_age.foods.desc": "In TerraFirmaGreg, the world is a harsh place filled with strife for your survival, one of the most important aspects of survival is being able to obtain Food. Most food yield little nutritional value while others can be deadly if not cooked.\n\nBegin by obtaining any form of nourishment.",
+
+    "quests.stone_age.nutrition.title": "Mechanic: Nutrition",
+    "quests.stone_age.nutrition.subtitle": "What do you mean I can't just eat steak?",
+    "quests.stone_age.nutrition.desc": "Each basic food in TerraFirmaGreg contains a nutritional value, these nutrients are split into 5 different categories: &lGrain&r, &lFruits&r, &lVegetables&r, &lProtein&r and &lDairy&r.\n\nWhile you could eat only one kind of raw nutrient such as Protein, your overall health will be diminished, keeping a balanced diet allows you to have higher max health. Look at the field guide's section on \"Food and Water\" for more information.",
+
+    "quests.stone_age.cook_meat.title": "Basic Cooking",
+    "quests.stone_age.cook_meat.subtitle": "You don't want to die from eating raw meat, do you?",
+    "quests.stone_age.cook_meat.desc": "Cooking raw meat is an important step for getting protein, not only will it increase the overall shelf life of the meat, but it'll unlock even more nutrients for your demanding body.\n\nThe simplest way to cook meat is by using a Campfire, look at the quest below this one to learn how to make your first campfire.",
+
+    "quests.stone_age.soup_time.title": "Soups",
+    "quests.stone_age.soup_time.subtitle": "Which store where you in?",
+    "quests.stone_age.soup_time.desc": "By utilizing some Clay, shaping a pot and some bowls, you'll be able to create soups!\n\nSoups are one of the first and easiest ways to create more complex meals, a meal unlike simple food items are more nourishing and filling. You'll need at the very least some Clay to create your pot.",
+
+    "quests.stone_age.meals.title": "Meals",
+    "quests.stone_age.meals.subtitle": "GET IN MAH BELLEH!",
+    "quests.stone_age.meals.desc": "These are just some of the basic meals you can create, Pizzas are one of the best as it can contain every type of nutrient, Salads and Sandwiches are generalized but jam sandwiches are great as you can use Jam in them, which are fruits.",
+    "quests.stone_age.meals.tasks.1": "Any regular Sandwich",
+    "quests.stone_age.meals.tasks.2": "Any regular Jam Sandwich",
+
+    "quests.stone_age.garlic_bread.title": "Garlic Bread...?",
+    "quests.stone_age.garlic_bread.subtitle": "Are you fending off a vampire or something?",
+    "quests.stone_age.garlic_bread.desc": "ProTip: The quest task accepts ANY garlic bread, it doesnt need to be fresh.",
+    "quests.stone_age.garlic_bread.task": "1024 slices of Garlic Bread",
+
+    "quests.stone_age.find_potable_water.title": "Thirsty?",
+    "quests.stone_age.find_potable_water.subtitle": "Remember to drink water!",
+    "quests.stone_age.find_potable_water.desc": "A new mechanic is Thirst, you'll experience thirst as you exist in the world and it'll degrade over time. You can and WILL die of dehydration if you dont keep your thirst meter filled! The easiest way to have a drink is by drinking from natural ponds in the wild.\n\nCareful! Do not under any circumstances drink salt water! you WILL experience increased thirst and will most likely die.",
+    "quests.stone_age.find_potable_water.task": "A pond of fresh Water (not Salty or from a Hot Spring)",
+
+    "quests.stone_age.hydration.title": "Mechanic: Hydration",
+    "quests.stone_age.hydration.subtitle": "Yet another bar to keep full...",
+    "quests.stone_age.hydration.desc": "Water can be a very important resource, it's recommended that you set camp nearby a fresh lake or river so you have an easy access to the stuff. Other items can reduce your thirst levels such as certain types of food or bevrages.\n\nSometimes if you decide to explore you'll very likely go ways without nearby water, thankfully, there are ways to store water in different compartments for easy access. Each compartment stores different amount of Milibuckets of the liquid you choose to store, and drinking consumes at least 100mb",
+
+    "quests.stone_age.leather_flask.title": "Leather Flask",
+    "quests.stone_age.leather_flask.subtitle": "Old Faithful",
+    "quests.stone_age.leather_flask.desc": "A Leather Flask is probably the second easiest portable water solution right after a Ceramic Jug, it can contain 500mb of water, which equates to 5 drinks of water.\n\nThe leather flask takes damage as it's used, but it can be repaired if you have leather at hand. When the flask breaks it does not get destroyed, rather it becomes a Broken Leather Flask.",
+
+    "quests.stone_age.iron_flask.title": "Iron Flask",
+    "quests.stone_age.iron_flask.subtitle": "Now this will be useful for a long while",
+    "quests.stone_age.iron_flask.desc": "The Iron Flask is an upgrade to the Leather Flask, it can still be damaged but it can contain 2B of water, which equates to 20 drinks.",
+
+    "quests.stone_age.water_bucket.title": "Water Bucket",
+    "quests.stone_age.water_bucket.subtitle": "Not as easy as you think",
+    "quests.stone_age.water_bucket.desc": "Probably the best way to drink water wherever you go, but the most cumbersome.\n\nWater Buckets can store an indefinite amount of water, and as such you can drink as much water from it as you want.\n\nFormat Error: Wooden Buckets cannot be used to drink water, while you can store an entire bucket's worth of water in them, trying to place it in the world will create a very small puddle.",
+
+    "quests.stone_age.glass_bottles.title": "Glass Bottles",
+    "quests.stone_age.glass_bottles.subtitle": "Not as cool as a leather flask",
+    "quests.stone_age.glass_bottles.desc": "Glass bottles are just as good as Leather Flasks, containing 500mb of water. However, you do require a Glassworking station to be able to create the glass bottles in the first place, which you may not be able to get until you dip your toes in metalworking.",
+    
+    "quests.stone_age.water_jug.title": "Water Ceramic Jug",
+    "quests.stone_age.water_jug.subtitle": "Relatively easy water",
+    "quests.stone_age.water_jug.desc": "A Ceramic Jug is the simplest form of holding liquids you can drink to satiate your thirst, however, it can only contain 100mb of water, so you'll need to refill it once you drink it.\n\nKeep in mind that the Jug has a random chance to break when you drink from it!",
+
+    "quests.stone_age.temperature.title": "Weather",
+    "quests.stone_age.temperature.subtitle": "The weather for today? pain.",
+    "quests.stone_age.temperature.desc": "The world of TerraFirmaGreg contains Seasons unlike regular minecraft, these Seasons not only means that certain crops, trees and bushes can only be grown when the conditions are right, but it means as well that Body Temperature is something you need to control and keep at a steady level.",
+    "quests.stone_age.temperature.task": "Exist",
+
+    "quests.stone_age.insulation.title": "Mechanic: Body Temperature",
+    "quests.stone_age.insulation.subtitle": "Careful with Hypo and Hyper thermia.",
+    "quests.stone_age.insulation.desc": "Existing in the world and doing specific things will change your body temperature, you need to make sure your temperature stays in a very precise level, not too cold, or not too hot. Your body temperature shouldn't be lower than the freezing point of water and not higher than the average temperature of the human body.\n\nThere are ways you can reduce the effect of temperature and keep your body temp at a stable level, probably the best method is by using &lClothes&r",
+
+    "quests.stone_age.clothes.title": "Clothes",
+    "quests.stone_age.clothes.subtitle": "Fancy!",
+    "quests.stone_age.clothes.desc": "Wearing clothes can improve your temperature situation considerably, Warm clothes such as Wool or Leather Insulated are great for cold environments, while Silk or Burlap are great for warm environments.",
+
+    "quests.stone_age.find_rock.title": "Find some Rocks",
+    "quests.stone_age.find_rock.subtitle": "ROCK AND STONE!",
+    "quests.stone_age.find_rock.desc": "As you enter the world, the first thing you'll encounter is a completely changed world. You can no longer break trees with your fists, fret not, for there are ways to begin your journey.\n\nThe main items at the start are sticks and rocks, lets begin by collecting at the very least 4 rocks. You can collect rocks by interacting with them.",
+    
+    "quests.stone_age.rock_knapping.title": "Knapping",
+    "quests.stone_age.rock_knapping.subtitle": "Just like the olden days of the Paleolithic",
+    "quests.stone_age.rock_knapping.desc": "Certain items can be \"Knapped\", knapping is the process of shaping a basic material into a usable form. Rock Knapping in this case requires at the very least 2, with two rocks in your hand if you Interact you'll open the Knapping interface. You can then \"chip off\" one of your rocks to attempt to create a stone tool head. All the recipes can be found in EMI.\n\nThe two important tools for the beginning of your journey are a Stone Knife and a Stone Axe, try making these heads.",
+
+    "quests.stone_age.find_stick.title": "Find some Sticks",
+    "quests.stone_age.find_stick.subtitle": "You gotta handle that tool somehow",
+    "quests.stone_age.find_stick.desc": "The second most abundant item are sticks, sticks can be found right below trees in the Overworld, these sticks are extremely useful since you can use them to create tools, torches, firestarters and more.\n\nProtip: To avoid having your inventory get clogged with different tree sticks, you can craft them into regular sticks to pile them up, the sticks can then be bundled into a Bunch, and the Bunch into a Bundle.",
+
+    "quests.stone_age.first_stone_tools.title": "Your first tools",
+    "quests.stone_age.first_stone_tools.subtitle": "Now you're a smart monkey",
+    "quests.stone_age.first_stone_tools.desc": "By Knapping your rocks into usable shapes, you can then combine them with a Stick to create your very first basic tools. At the very least you'll require a Knife and an Axe. You've officially entered into the Stone Age!",
+
+    "quests.stone_age.stone_tools.title": "Stone Tools",
+    "quests.stone_age.stone_tools.subtitle": ""
+
+    "quests.stone_age.clay.title": "Clay"
+}

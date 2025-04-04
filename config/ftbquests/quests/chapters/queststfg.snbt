@@ -73,7 +73,7 @@
 		}
 		{
 			dependencies: ["427814F6E9386772"]
-			description: ["{quests.tfg.field_guide.desc} | {quests.3D7B0F3134C30364.d1}"]
+			description: ["{quests.tfg.field_guide.desc}"]
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -88,7 +88,7 @@
 				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
-			title: "{quests.tfg.field_guide.title} | {quests.3D7B0F3134C30364.t}"
+			title: "{quests.tfg.field_guide.title}"
 			x: 0.0d
 			y: 3.5d
 		}

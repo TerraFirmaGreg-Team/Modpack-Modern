@@ -32,7 +32,7 @@
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_rock.subtitle}"
 			tasks: [{
-				count: 2L
+				count: 4L
 				id: "6EC31A845E58B399"
 				item: {
 					Count: 1
@@ -50,16 +50,16 @@
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
-			description: ["{quests.stone_age.find_potable_water.desc} | {quests.63E6C5684E12828C.d1}"]
+			description: ["{quests.stone_age.find_potable_water.desc}"]
 			id: "1D40CAE675C4BB91"
 			size: 1.0d
-			subtitle: "{quests.stone_age.find_potable_water.subtitle} | {quests.63E6C5684E12828C.st}"
+			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
 			tasks: [{
 				icon: "minecraft:water_bucket"
 				id: "73E3594A5481E63F"
 				observe_type: 0
 				timer: 0L
-				title: "{quests.tasktypes.observe} | {quests.63E6C5684E12828C.t1}"
+				title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
 				to_observe: "minecraft:water"
 				type: "observation"
 			}]
@@ -75,6 +75,7 @@
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_stick.subtitle}"
 			tasks: [{
+				count: 2L
 				id: "0D15681D9A617758"
 				item: {
 					Count: 1
@@ -265,7 +266,7 @@
 				"13BC619900C60011"
 				"3CA3B76D09F03ED6"
 			]
-			dependency_requirement: "all_started"
+			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.first_saw.desc}"]
 			id: "76B145EFF9B5DB67"
 			min_required_dependencies: 2
@@ -420,7 +421,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.leather_flask.title}"
-			x: 2.0d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -446,8 +447,8 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.iron_flask.title}"
-			x: 4.5d
-			y: 8.5d
+			x: 2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -476,8 +477,8 @@
 				}
 			]
 			title: "{quests.stone_age.find_clay.title}"
-			x: 14.5d
-			y: 4.0d
+			x: 18.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["021921B4D2044B3B"]
@@ -490,7 +491,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.clay.title}"
-			x: 14.5d
+			x: 17.0d
 			y: 6.0d
 		}
 		{
@@ -921,9 +922,9 @@
 		}
 		{
 			dependencies: ["78E3BF0BEB48635B"]
-			description: ["{quests.stone_age.first_stone_heads.desc}"]
+			description: ["{quests.stone_age.rock_knapping.desc}"]
 			id: "4333D5794A37CF2D"
-			subtitle: "{quests.stone_age.first_stone_heads.subtitle}"
+			subtitle: "{quests.stone_age.rock_knapping.subtitle}"
 			tasks: [
 				{
 					id: "7F838F64A76D8DE9"
@@ -936,7 +937,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.stone_age.first_stone_heads.title}"
+			title: "{quests.stone_age.rock_knapping.title}"
 			x: 9.0d
 			y: 0.0d
 		}
@@ -1320,7 +1321,7 @@
 				}
 			]
 			title: "{quests.stone_age.clay_products.title}"
-			x: 13.0d
+			x: 14.5d
 			y: 4.0d
 		}
 		{
@@ -1484,7 +1485,7 @@
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
-			description: ["{quests.stone_age.food_desc}"]
+			description: ["{quests.stone_age.foods.desc}"]
 			id: "0FB8FD84B13F10C6"
 			subtitle: "{quests.stone_age.foods.subtitle}"
 			tasks: [{
@@ -1545,8 +1546,9 @@
 			dependencies: [
 				"5301A38F7EA81140"
 				"0301508D93520519"
+				"3687ACAD307EE7EF"
 			]
-			description: ["{quests.stone_age.soup_time.desc}"]
+			description: ["{quests.stone_age.soup_time.desc} "]
 			id: "25FDB2A4C3C58566"
 			subtitle: "{quests.stone_age.soup_time.subtitle}"
 			tasks: [
@@ -1584,7 +1586,7 @@
 				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
-			title: "{quests.stone_age.nutrition_title}"
+			title: "{quests.stone_age.nutrition.title}"
 			x: 9.5d
 			y: -5.0d
 		}
@@ -1643,7 +1645,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:food/barley_bread_sandwich)item(tfc:food/maize_bread_sandwich)item(tfc:food/oat_bread_sandwich)item(tfc:food/rye_bread_sandwich)item(tfc:food/rice_bread_sandwich)item(tfc:food/wheat_bread_sandwich))"
 						}
 					}
-					title: "{quests.stone_age.meals.tasks.sandwiches}"
+					title: "{quests.stone_age.meals.tasks.1}"
 					type: "item"
 				}
 				{
@@ -1655,12 +1657,12 @@
 							"ftbfiltersystem:filter": "or(item(tfc:food/barley_bread_jam_sandwich)item(tfc:food/maize_bread_jam_sandwich)item(tfc:food/oat_bread_jam_sandwich)item(tfc:food/rye_bread_jam_sandwich)item(tfc:food/rice_bread_jam_sandwich)item(tfc:food/wheat_bread_jam_sandwich))"
 						}
 					}
-					title: "{quests.stone_age.meals.tasks.jam_sandwiches}"
+					title: "{quests.stone_age.meals.tasks.2}"
 					type: "item"
 				}
 			]
 			title: "{quests.stone_age.meals.title}"
-			x: 19.5d
+			x: 18.5d
 			y: -3.5d
 		}
 		{
@@ -1735,7 +1737,7 @@
 				type: "item"
 			}]
 			title: "{quests.stone_age.leather.title}"
-			x: 2.0d
+			x: 1.5d
 			y: 12.0d
 		}
 		{
@@ -1850,7 +1852,6 @@
 			dependencies: [
 				"4521BB8892B386AF"
 				"04E900CFE39D6A6C"
-				"2897146D3163F90D"
 			]
 			dependency_requirement: "all_started"
 			description: ["{quests.stone_age.clothes.desc}"]
@@ -1866,7 +1867,7 @@
 							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_hat)item(tfcambiental:wool_sweater)item(tfcambiental:wool_pants)item(tfcambiental:wool_boots)item(tfcambiental:insulated_leather_hat)item(tfcambiental:insulated_leather_tunic)item(tfcambiental:insulated_leather_pants)item(tfcambiental:insulated_leather_boots))"
 						}
 					}
-					title: "{quests.stone_age.clothes.tasks.for_cold}"
+					title: "{quests.stone_age.clothes.tasks.1}"
 					type: "item"
 				}
 				{
@@ -1878,7 +1879,7 @@
 							"ftbfiltersystem:filter": "or(item(tfcambiental:silk_cowl)item(tfcambiental:silk_shirt)item(tfcambiental:silk_pants)item(tfcambiental:silk_shoes)item(tfcambiental:burlap_cowl)item(tfcambiental:burlap_shirt)item(tfcambiental:burlap_pants)item(tfcambiental:burlap_shoes))"
 						}
 					}
-					title: "{quests.stone_age.clothes.tasks.for_hot"
+					title: "{quests.stone_age.clothes.tasks.2}"
 					type: "item"
 				}
 			]
@@ -1928,36 +1929,38 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["3D7B0F3134C30364"]
-			description: ["{quests.stone_age.material_for_clothes.desc}"]
-			hide_dependency_lines: true
-			id: "2897146D3163F90D"
-			progression_mode: "flexible"
-			subtitle: "{quests.stone_age.material_for_clothes.subtitle}}"
-			tasks: [
-				{
-					id: "403201EB41B617AE"
-					item: "tfc:silk_cloth"
-					type: "item"
+			dependencies: ["1562419608EB333D"]
+			description: ["{quests.stone_age.glass_bottles.desc}"]
+			id: "4F7B5C34B7CD27F2"
+			subtitle: "{quests.stone_age.glass_bottles.subtitle}"
+			tasks: [{
+				id: "07146369A0BF82E7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_bottles)"
+					}
 				}
-				{
-					id: "03F00B2771E29CFE"
-					item: "tfc:wool_cloth"
-					type: "item"
-				}
-				{
-					id: "39393C4B76174DFC"
-					item: "tfc:burlap_cloth"
-					type: "item"
-				}
-				{
-					id: "5D8FDC1A41984A42"
-					item: "tfc:wool_yarn"
-					type: "item"
-				}
-			]
-			title: "{quests.stone_age.material_for_clothes.title}"
-			x: -4.0d
+				title: "{quests.tasktype.item.any} #tfc:glass_bottles"
+				type: "item"
+			}]
+			title: "{quests.stone_age.glass_bottles.title}"
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1562419608EB333D"]
+			description: ["{quests.stone_age.water_bucket.desc}"]
+			id: "1F9321F1743A0B79"
+			subtitle: "{quests.stone_age.water_bucket.subtitle}"
+			tasks: [{
+				id: "17FFB1D3212BECEA"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "{quests.stone_age.water_bucket.title}"
+			x: 4.5d
 			y: 9.0d
 		}
 	]
