@@ -46,6 +46,17 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:uranium_sheet',
 	'vintageimprovements:signalum_sheet',
 	'vintageimprovements:refined_radiance_sheet',
+	'vintageimprovements:fiery_sheet',
+	'vintageimprovements:ironwood_sheet',
+	'vintageimprovements:knightmetal_sheet',
+	'vintageimprovements:queens_slime_sheet',
+	'vintageimprovements:slimesteel_sheet',
+	'vintageimprovements:vanadium_sheet',
+	'vintageimprovements:netherite_sheet',
+	'vintageimprovements:nethersteel_sheet',
+	'vintageimprovements:andesite_sheet',
+	'vintageimprovements:zinc_sheet',
+	'vintageimprovements:shadow_steel_sheet',
 
 	'vintageimprovements:aluminum_rod',
 	'vintageimprovements:amethyst_bronze_rod',
@@ -74,7 +85,16 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:steel_rod',
 	'vintageimprovements:tin_rod',
 	'vintageimprovements:uranium_rod',
-	'vintageimprovements:refined_radiance_rod'
+	'vintageimprovements:refined_radiance_rod',
+	'vintageimprovements:ironwood_rod',
+	'vintageimprovements:knightmetal_rod',
+	'vintageimprovements:queens_slime_rod',
+	'vintageimprovements:slimesteel_rod',
+	'vintageimprovements:vanadium_rod',
+	'vintageimprovements:netherite_rod',
+	'vintageimprovements:nethersteel_rod',
+	'vintageimprovements:andesite_rod',
+	'vintageimprovements:shadow_steel_rod'
 ]
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [
