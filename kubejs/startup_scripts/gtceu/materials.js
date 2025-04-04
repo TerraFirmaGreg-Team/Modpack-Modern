@@ -248,6 +248,18 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
 	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
+	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
+	GTMaterials.Brass.setMaterialSecondaryARGB(0x5F2E24)
+	GTMaterials.Aluminium.setMaterialARGB(0xb6e5ff)
+	GTMaterials.Aluminium.setMaterialSecondaryARGB(0x7ca29b)
+	GTMaterials.Titanium.setMaterialARGB(0xe8b1fa)
+	GTMaterials.Titanium.setMaterialSecondaryARGB(0xd8d5d9)
+	GTMaterials.TungstenSteel.setMaterialARGB(0xadb8df)
+	GTMaterials.TungstenSteel.setMaterialSecondaryARGB(0x03192f)
+	GTMaterials.RoseGold.setMaterialARGB(0xFCE4D8)
+	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xAB675A)
+
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
 	{

@@ -23,7 +23,7 @@
 		hideRods = true
 		#.
 		#Hides all Sheets from creative tab & JEI (you still can craft it)
-		hideSheets = true
+		hideSheets = false
 		#.
 		#Hides all Wires from creative tab & JEI (you still can craft it)
 		hideWires = true
