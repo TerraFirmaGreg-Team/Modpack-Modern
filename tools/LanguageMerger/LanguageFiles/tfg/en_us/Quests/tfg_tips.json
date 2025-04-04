@@ -272,6 +272,322 @@
     "quests.tfg_tips.DIGGY_DIGGY_HOLE.title": "I AM A DWARF AND I'M DIGGING A HOLE",
     "quests.tfg_tips.DIGGY_DIGGY_HOLE.subtitle": "DIGGY DIGGY HOLE, DIGGY DIGGY HOLE!",
     "quests.tfg_tips.DIGGY_DIGGY_HOLE.desc": "Congratulations for unlocking this hidden, awesome quest. May your mines never collapse and you find great loot underground.",
-    "quests.tfg_tips.DIGGY_DIGGY_HOLE.task": "A Diggy Diggy Hole Disc."
+    "quests.tfg_tips.DIGGY_DIGGY_HOLE.task": "A Diggy Diggy Hole Disc.",
+
+    "quests.tfg_tips.camera.title": "Exposure: Capture your Memories",
+    "quests.tfg_tips.camera.subtitle": "Take pictures of your world",
+    "quests.tfg_tips.camera.desc": "Exposure is a mod that adds realistic picture processing into the game, start by creating your camera, film rolls, and then develop your pictures. It has complex systems such as color correction, filters and more.",
+
+    "quests.tfg_tips.selfie.title": "Selfies",
+    "quests.tfg_tips.selfie.subtitle": "Influencer moment",
+    "quests.tfg_tips.selfie.desc": "With your camera open, you can press F5 to enable Selfie mode, which as the name suggests, allows you to take Selfies.",
+
+    "quests.tfg_tips.camera_attachments.title": "Camera Attachments",
+    "quests.tfg_tips.camera_attachments.subtitle": "Improve your Camera",
+    "quests.tfg_tips.camera_attachments.desc": "By interacting with the camera while sneaking, you'll open the camera GUI. Which not only allows you to place your desired film roll, it allows you to attach things to your camera, enabling new functionalities.\n\n&oRedstone Lamp&r: The Redstone Lamp works as a Flash, which can be used to illuminate dark environments.\n&oSpyglass&r: The Spyglass enables zooming, letting you take pictures of objects far away.",
+    "quests.tfg_tips.camera_attachments.task": "A Redstone Lamp or a Spyglass",
+
+    "quests.tfg_tips.filters.title": "Color Filters",
+    "quests.tfg_tips.filters.subtitle": "Changing the look of your photos.",
+    "quests.tfg_tips.filters.desc": "Utilizing a glass pane, you can apply a filter to a picture, simply open your camera GUI and assign it to the camera filter slot. With filters you can change the overall color composition of your pictures. You can make a picture look extra cold by applying a Cyan or Light Blue filter to it.",
+    "quests.tfg_tips.filter.task": "Any Glass Pane",
+
+    "quests.tfg_tips.interplanar_projector.title": "Interplanar Projector",
+    "quests.tfg_tips.interplanar_projector.subtitle": "This doesn't look realistic...?",
+    "quests.tfg_tips.interplanar_projector.desc": "The Interplanar Projector is a special filter that allows you to take pictures of things &lOutside&r of the minecraft world, namely pictures in the Internet or pictures on your Hard Drive.\n\nYou can rename the lens in a Scribing Table that points either to an image in your Hard Drive or an image in the web, placing the lens on your camera and taking a picture should result int a picture of the specified image.",
+
+    "quests.tfg_tips.film_rolls.title": "Film Rolls",
+    "quests.tfg_tips.film_rolls.subtitle": "Its not Digital",
+    "quests.tfg_tips.film_rolls.desc": "To begin taking pictures you'll need to craft a film roll, there are two types, Black and White Film and Colored Film. As their names suggest, one will take Black and White pictures and the other will take Colored pictures.",
+
+    "quests.tfg_tips.developing_film.title": "Developing Films",
+    "quests.tfg_tips.developing_film.subtitle": "Pretend you're a Printer.",
+    "quests.tfg_tips.developing_film.desc": "Once you've taken your pictures you can begin development by soaking the films in water. Afterwards, you'll need to craft a &oLightroom&r.\n\nThe Lightroom is used to develop film, You will need a strong light source above the block, and dyes. Namely Cyan, Magenta, Yellow and Black, as pictures are taken in the CYMK color spectrum. Black and White film will only need black dye while colored film will need CYMK.\n\nIf you fancy for some more interesting development, you can work with Chromatic Process...",
+
+    "quests.tfg_tips.photo.title": "Your first Photo",
+    "quests.tfg_tips.photo.subtitle": "Congratulations!",
+    "quests.tfg_tips.photo.desc": "With a photo you can do multiple things with it, you can Copy the photo by utilizing a blank sheet of paper, and the required dyes used to develop the original picture (Black for Black and White, CYMK for Colored Pictures).\nYou can also &lstack&r pictures to keep them neatly organized in your inventory, check JEI to know how to.\nYou can also artifically \"age\" a picture by applying brown dye to it, making it look old.",
+
+    "quests.tfg_tips.photo_album.title": "Photo Album",
+    "quests.tfg_tips.photo_album.subtitle": "Turns out memories are forever...",
+    "quests.tfg_tips.photo_album.desc": "If you want a place to store photos indefinetly, you can create a Photo Album. Not only can it be used to neatly store your pictures, you can also write small descriptions for them! Such as place where you took them, notes, and more.",
+
+    "quests.tfg_tips.photo_frame.title": "Photo Frame",
+    "quests.tfg_tips.photo_frame.subtitle": "For the astonishing pictures.",
+    "quests.tfg_tips.photo_frame.desc": "A photo frame can be used to display pictures, unlike Item Frames, Photo Frames can be 1x1, 2x2 or 3x3 in size, allowing you to display particularly beautiful photos in your base.",
+    //#endregion
+
+    //#region ArborFirmaCraft
+    "quests.tfg_tips.arborfirmacraft.title": "ArborFirmaCraft",
+    "quests.tfg_tips.arborfirmacraft.subtitle": "Harvesting the Life-blood of Trees",
+    "quests.tfg_tips.arborfirmacraft.desc": "ArborFirmaCraft is a mod that adds multiple new trees, some are Variants of existing TFC trees, such as Ancient Kapok, while others are completely new, such as Baobab and Hevea. Some of the colors of the trees may remind you of vanilla tree colors, such as Baobab.\n\nThis part will go all over Tree Tapping.\nAs a bonus, all ArborFirmaCraft woods are compatible with FirmaLife, and FirmaCiv.",
+
+    "quests.tfg_tips.treetap.title": "Treetap",
+    "quests.tfg_tips.treetap.subtitle": "Now with less jank!",
+    "quests.tfg_tips.treetap.desc": "To begin tapping trees, you'll need to craft a Tree Tap, you'll need to at least know how to work Copper Ingots into these taps.\n\nFor returning players, you may recall the existence of the old \"Tap\" item from the \"Treetap\" mod, this item has been removed and no longer does anything, however, you can convert it &lfor free&r into an ArborFirmaCraft Tree Tap!\n\nThe process of tapping requires finding a tree, there's a dedicated &oTapping Index&r in the Field Guide's section on ArborFirmaCraft that'll tell you how to find the trees. There's also the \"Tapping Trees\" entry, which can be used to learn how to actually tap the trees.",
+
+    "quests.tfg_tips.find_rosin_tree.title": "Rosin Trees",
+    "quests.tfg_tips.find_rosin_tree.subtitle": "It's going to be chilly...",
+    "quests.tfg_tips.find_rosin_tree.desc": "Rosin Trees can be found in cold areas of the world that receive moderate to large amounts of rainfall. It can be tapped to obtain Pitch. Pitch can be used to create both Sticky Resin and Conifer Rosin\n\nTo complete this quest, you need to look at a block that has the tag \"#tfg:rosin_logs\", you can use JEI to learn which blocks have this tag.",
+
+    "quests.tfg_tips.find_latex_tree.title": "Latex Trees",
+    "quests.tfg_tips.find_latex_tree.subtitle": "Seek for the Tropics",
+    "quests.tfg_tips.find_latex_tree.desc": "Latex Trees can be found in temperate areas of the world that receive large amounts of rainfall. It can be tapped to obtain Latex. Latex can be used to create both Sticky Resin, and Vulcanized Latex. Vulcanized Latex is used in the creation of Rubber Gloves, which protect you from poisonous materials on contact.\n\nTo complete this quest, you need to look at a block that has the tag \"#tfg:latex_logs\", you can use JEI to learn which blocks have this tag.",
+    
+    "quests.tfg_tips.find_syrup_tree.title": "Syrup Trees",
+    "quests.tfg_tips.find_syrup_tree.subtitle": "Diabetes is Skyrocketing",
+    "quests.tfg_tips.find_syrup_tree.desc": "Syrup Trees can be found in moderate climates of the world that receive moderate amounts of rainfall. It can be tapped to obtain Syrup. Syrup can be used to create Tree Sugars, which works for sweetning food among other uses.To complete this quest, you need to look at a block that has the tag \"#tfg:latex_logs\", you can use JEI to learn which blocks have this tag.",
+
+    "quests.tfg_tips.create_conifer_rosin.title": "Conifer Rosin",
+    "quests.tfg_tips.create_conifer_rosin.subtitle": "No, it's not Resin",
+    "quests.tfg_tips.create_conifer_rosin.desc": "Conifer Rosin can be utilized as a Wax, letting you create Candles and other items.\n\nTo create the Conifer Rosin, you need to boil Confier Pitch in a vat mixed with Charcoal Powder.",
+
+    "quests.tfg_tips.create_sticky_resin.title": "Sticky Resin",
+    "quests.tfg_tips.create_sticky_resin.subtitle": "No, it's not Rosin",
+    "quests.tfg_tips.create_sticky_resin.desc": "Sticky Resin can be utilized to make things sticky, not only that, its key in the production of Raw Rubber Pulp and Rubber Ingots, which you'll need if you want to advance to the Low Voltage Age.\n\nTo create the Sticky Resin you need to boil either Latex or Conifer Pitch in a vat mixed with Sulfur Powder",
+    
+    "quests.tfg_tips.create_tree_sugar.title": "Tree Sugar",
+    "quests.tfg_tips.create_tree_sugar.subtitle": "Sweet!",
+    "quests.tfg_tips.create_tree_sugar.desc": "Tree Sugar is a Sugar substitute, as such, it's mostly used to make things sweet.\n\nTo create the Tree Sugar, you'll need to boil your tree's Sap to get Concentrated Sap, then boil the Concentrated Sap to get Syrup, finally, use a Workbench to turn a bucket of syrup into tree sugar. Keep in mind that all the boiling processes require a stick in the vat or pot.",
+    "quests.tfg_tips.create_tree_sugar.task": "Maple or Birch Sugar",
+
+    "quests.tfg_tips.create_rubber_ingot.title": "Rubber Ingot",
+    "quests.tfg_tips.create_rubber_ingot.subtitle": "Insulate them cables",
+    "quests.tfg_tips.create_rubber_ingot.desc": "Utilizing some machinery from GregTech, you can extract Raw Rubber Pulp from both Latex Producing Trees and Sticky Resin. You can then place 3 raw rubber pulp with a bit of Sulfur Dust to create Rubber Ingots. Rubber Ingots are perfect for insulating cables and are very much necesary to advance in the tech tree.",
+    //#endregion
+
+    //#region FirmaCiv
+    "quests.tfg_tips.firmaciv.title": "FirmaCiv",
+    "quests.tfg_tips.firmaciv.subtitle": "Sail across the seas, with style.",
+    "quests.tfg_tips.firmaciv.desc": "FirmaCiv is a mod all about boats and traversing large bodies of water. It can also be used for creating tools that help you position yourself in the world.",
+    
+    "quests.tfg_tips.firmaciv_info.title": "Voyage Gadgets",
+    "quests.tfg_tips.firmaciv_info.subtitle": "In case you care for realism",
+    "quests.tfg_tips.firmaciv_info.desc": "FirmaCiv comes with 4 different gadgets, each giving you important information about the position you are in the world.\n&lSextant&r: The Sextant is used to measure your latitude in the world.\n&lNavigator's Timepiece&r: The Navigator's Timepiece is used to measure your longitude in the world.\n&lBarometer&r: The Barometer is used to learn your Altitude, relative to the sea's level\n&lCompass&r: The Compass has a declination towards true north, and can be used to orient yourself.",
+
+    "quests.tfg_tips.warfare.title": "Sea Warfare",
+    "quests.tfg_tips.warfare.subtitle": "FIRE ALL CANNONS!",
+    "quests.tfg_tips.warfare.desc": "You can craft both a Cannon and a Cannonball, in case you want to blow something to smithereens.\nTo fire a cannon, you'll need to load it with some Gunpowder, Unrefined Paper and place your Cannonball, afterwards, light the wick with a Flint and Steel",
+
+    "quests.tfg_tips.kayak_beginning.title": "Boat 1: Kayak",
+    "quests.tfg_tips.kayak_beginning.subtitle": "The only portable boat",
+    "quests.tfg_tips.kayak_beginning.desc": "The kayak is a relatively simple boat to craft, while only one passenger can fit in it it makes up for it by being the only boat you can carry around with you.",
+
+    "quests.tfg_tips.kayak_materials.title": "Materials for a Kayak",
+    "quests.tfg_tips.kayak_materials.subtitle": "Get yourself that Kayak.",
+    "quests.tfg_tips.kayak_materials.desc": "The Kayak is probably the second most simple boat you can craft, you'll require some form of string, some lumber, and Large Waterproof Hides. The Waterproof Hides can be obtained utilizing Waxes.",
+
+    "quests.tfg_tips.create_kayak.title": "Create the Kayak",
+    "quests.tfg_tips.create_kayak.subtitle": "Happy Kayak-ing!",
+    "quests.tfg_tips.create_kayak.desc": "With the Kayak in hand, traversing small bodies of water should be relatively easy, make sure you create a paddle so you can go faster!",
+    
+    "quests.tfg_tips.entity_boats.title": "Entity Boats",
+    "quests.tfg_tips.entity_boats.subtitle": "I can't carry these with me?",
+    "quests.tfg_tips.entity_boats.desc": "Entity type boats are unique compared to the Kayak, while the Kayak can be carried around as an item, Entity Type Boats such as Rowboats, Canoes and Sloops cannot be carried around as an Item. However, they have other upsides such as being able to fit multiple people, and also fit \"Compartments\", such as Chests, Barrels and Others.\nTo avoid your boat from drifting away into the horizon, you can leash them with a Lead, might be worth spending some time creating a Dock of sorts for your boats.\n\nWorth mentioning, most boats can receive damage if you traverse over harsh obstacles such as Corals, you can repair your boat by utilizing wood of the same type as your boat.",
+
+    "quests.tfg_tips.beneathxfirmaciv.title": "Disclaimer regarding Beneath and Firmaciv",
+    "quests.tfg_tips.beneathxfirmaciv.subtitle": "Read this, otherwise you may regret it",
+    "quests.tfg_tips.beneathxfirmaciv.desc": "While you can create Firmaciv Entity Boats out of Crimson and Warped stems, boats made out of these fireproof logs &oARE NOT&r resistant to lava! If you try to traverse a lava lake with these you &oWILL&r sink and die a horrible death!",
+
+    "quests.tfg_tips.canoe_beginning.title": "Boat 2: Canoe",
+    "quests.tfg_tips.canoe_beginning.subtitle": "Primitive",
+    "quests.tfg_tips.canoe_beginning.desc": "The Canoe is a type of boat that can fit one passenger or compartment. It's made out of soft wood and can be created relatively easily at the cost of some basic tools and time.",
+
+    "quests.tfg_tips.canoe_materials.title": "Materials for a Canoe",
+    "quests.tfg_tips.canoe_materials.subtitle": "It doesnt get simpler than this",
+    "quests.tfg_tips.canoe_materials.desc": "You'll need to find some sort of Softwood, the Field Guide contains information on which trees qualify as Softwood, alongside the process for actually creating the Canoe.",
+    "quests.tfg_tips.canoe_materials.task": "Some sort of Fire Starter",
+
+    "quests.tfg_tips.create_canoe.title": "Create the Canoe",
+    "quests.tfg_tips.create_canoe.subtitle": "Happy Canoe-ing!",
+    "quests.tfg_tips.create_canoe.desc": "With the Canoe, traversing medium sized bodies of water should be relatively easy, make sure you create a paddle so you can go faster!\n\nTo complete the first task of this quest, you need to look at any finished Canoe.",
+
+    "quests.tfg_tips.rowboat_beginning.title": "Boat 3: Rowboat",
+    "quests.tfg_tips.rowboat_beginning.subtitle": "Already using Wrought Iron huh?",
+    "quests.tfg_tips.rowboat_beginning.desc": "The Rowboat is a type of boat that can fit up to four compartments, or 2 passengers and 2 compartments. It's made out of hard wood and requires at the very least mastery over Wrought Iron.",
+    
+    "quests.tfg_tips.rowboat_materials.title": "Materials for a Rowboat",
+    "quests.tfg_tips.rowboat_materials.subtitle": "Get ready for some work now.",
+    "quests.tfg_tips.rowboat_materials.desc": "You'll need to find some sort of Hardwood, the Field Guide contains information on which trees qualify as Hardwood, alongside the process for actually creating the Rowboat.\n\nKeep in mind that, while the first task accepts any form of hardwood planks, you need to make sure they're all the same type! Trying to create a Rowboat with mixed wood types will not work!",
+
+    "quests.tfg_tips.create_rowboat.title": "Create the Rowboat",
+    "quests.tfg_tips.create_rowboat.subtitle": "Happy Rowboat-ing!",
+    "quests.tfg_tips.create_rowboat.desc": "With the Rowboat, traversing medium to large sized bodies of water should be relatively easy, make sure you create two oars so you can go faster!\nYou can also dye your rowboat's color with a dye of your choice!\n\nTo complete the first task of this quest, you need to look at any finished Rowboat.",
+    
+    "quests.tfg_tips.sloop_beginning.title": "Boat 4: Sloop",
+    "quests.tfg_tips.sloop_beginning.subtitle": "Looking for a Challenge?",
+    "quests.tfg_tips.sloop_beginning.desc": "The Sloop is a type of boat, it's in fact the biggest and most expensive boat. It can fit up to 2 passengers, although players can walk around the sloop as well. not only that, it can fit up to 12 compartments! and it's the only boat that can accept Cannons as Compartments! It's made out of hard wood and requires at the very least mastery over Steel.",
+    
+    "quests.tfg_tips.sloop_under_construction_materials.title": "Materials for a Sloop; Pt 1",
+    "quests.tfg_tips.sloop_under_construction_materials.subtitle": "There are parts now?",
+    "quests.tfg_tips.sloop_under_construction_materials.desc": "Unlike Rowboats and Canoes, Sloops require two distinct construction phases, you'll first create a \"Sloop Under Construction\", which then you'll finish into a proper sloop.\nYou'll need to find some sort of Hardwood, the Field Guide contains information on which trees qualify as Hardwood, alongside the process for actually creating the Sloop Under Construction.\n\nKeep in mind that, while the fourth task accepts any form of hardwood planks, you need to make sure they're all the same type! Trying to create a Rowboat with mixed wood types will not work!",
+    
+    "quests.tfg_tips.sloop_materials.title": "Materials for a Sloop; Pt 2",
+    "quests.tfg_tips.sloop_materials.subtitle": "Don't worry, there's only two parts.",
+    "quests.tfg_tips.sloop_materials.desc": "With the Sloop under Construction finished, you can recollect these other materials to finish the process of creating your Sloop. Check the Field guide if you need more guidance.\n\nKeep in mind that, while the first, second and third task accepts any form of hardwood planks, logs and lumber; you need to make sure they're all the same type! Trying to create a Rowboat with mixed wood types will not work!",
+    
+    "quests.tfg_tips.create_sloop.title": "Create the Sloop",
+    "quests.tfg_tips.create_sloop.subtitle": "Where's the wind waker when you need it?",
+    "quests.tfg_tips.create_sloop.desc": "With the Sloop, traversing large sized bodies of water should be relatively easy. To make sure you dont end up at the mercy of the wind you can lower your Anchor to stop in place.\nYou can also dye your rowboat's color with a dye of your choice!\n\nTo complete the task of this quest, you need to look at any finished Sloop.",
+    //#endregion
+
+    //#region Firmalife
+    "quests.tfg_tips.firmalife.title": "Firmalife",
+    "quests.tfg_tips.firmalife.subtitle": "Thrive in TerraFirmaCraft",
+    "quests.tfg_tips.firmalife.desc": "Firmalife is a mod all about making your experience in TerraFirmaCraft more enjoyable, containing things such as decorations, preservation, new foods, bees and a plethora of useful gadgets.",
+
+    "quests.tfg_tips.greenhouse.title": "Greenhouse",
+    "quests.tfg_tips.greenhouse.subtitle": "Grow your crops 24/7!",
+    "quests.tfg_tips.greenhouse.desc": "The Greenhouse is a complex multiblock structure that can be utilized to grow crops all year round. You can check out it's entry in the Field Guide for more information!",
+
+    "quests.tfg_tips.beekeeping.title": "Beekeeping",
+    "quests.tfg_tips.beekeeping.subtitle": "They're so small now...",
+    "quests.tfg_tips.beekeeping.desc": "Beekeeping can be used for a plethora of things, not only can bees polinate nearby crops, you'll be able to also obtain Wax and Honey",
+
+    "quests.tfg_tips.beehive.title": "Beehive",
+    "quests.tfg_tips.beehive.subtitle": "Time for some rng...",
+    "quests.tfg_tips.beehive.desc": "To begin your journey as a beekeeper, you'll need both a Beehive and a Beehive Frame.\nUnlike in regular minecraft, Bees do not spawn naturally, and bees can only spawn from beehives with frames populated by queens. The chance for a queen to populate your frame is tied to RNG, but you can increase your odds by placing flowers around the hive.\n\nOnce your frames is populated, it'll begin spawning bees which will pollinate surrounding crops and produce honey.\n\nQueen Bees have &lGenes&r, these Genes can be used to improve your bees over the course of days, if a hive contains at least 2 queens and an empty frame, a new queen will eventually populate the empty frame. More information regarding genes can be read at the Field Guide.",
+
+    "quests.tfg_tips.not_the_bees.title": "Beekeeper Armor",
+    "quests.tfg_tips.not_the_bees.subtitle": "NOT THE BEES!",
+    "quests.tfg_tips.not_the_bees.desc": "The bees aren't so friendly and don't like it when people harvest their precious honey. There are three ways to harvest honey and wax from beehives.\n\n&lNight Time&r: Bees sleep during the night, which means you can harvest honey from them without suffering from a swarm.\n&lCampfire&r: Utilizing a campfire below the hive and lighting it on fire, the bees will be smoked, incapacitating them from attacking you.\n&lBeekeeper Armor&r: Probably the best option, you can also craft Beekeeper Armor, as long as you have all four pieces equiped, Bees will not be able to attack you.",
+    "quests.tfg_tips.not_the_bees.task": "I'll use either the Campfire or wait for Nightfall.",
+
+    "quests.tfg_tips.honey.title": "Honey",
+    "quests.tfg_tips.honey.subtitle": "Oh bother...",
+    "quests.tfg_tips.honey.desc": "With an Empty Jar, you can right click a hive filled with honey to obtain a Honey Jar. Honey is an excelent natural sweetner.",
+
+    "quests.tfg_tips.beeswax.title": "Beeswax",
+    "quests.tfg_tips.beeswax.subtitle": "A worthy sacrifice",
+    "quests.tfg_tips.beeswax.desc": "If you right click a Beehive Frame that has a Queen Bee, the Queen Bee will be sacrificed and in exchange you'll obtain one Beeswax.\n\nProtip: You can sacrifice Queens that have bad or lower genetic traits to encourage better traits over time.",
+
+    "quests.tfg_tips.candles.title": "Candles",
+    "quests.tfg_tips.candles.subtitle": "Cozy...",
+    "quests.tfg_tips.candles.desc": "While all candles can be created with Paraffin Wax or Rosin, Creating candles with Beeswax is probably the easiest method if you get lucky with bee RNG.\nCandles are good light source when compared to Torches, unlike Torches, Candles will stay lit for 1 month and 2 days.",
+
+    "quests.tfg_tips.oven.title": "Oven",
+    "quests.tfg_tips.oven.subtitle": "Caution, it's hot.",
+    "quests.tfg_tips.oven.desc": "The Oven is a multipurpose block that can be used to easily heat and cook items. The bottom oven accepts logs as fuel, the top oven can be used to cook food, while the chimney is necesary to vent out the smoke that rises from the logs. And the Peel is used for peeling off items from the Top Oven\n\nMore information on how to craft an oven can be found in the Field Guide.",
+
+    "quests.tfg_tips.oven_appliances.title": "Oven Appliances",
+    "quests.tfg_tips.oven_appliances.subtitle": "Get more out of your Ovens",
+    "quests.tfg_tips.oven_appliances.desc": "Oven appliances are blocks that can be placed on top of Bottom Ovens and recieve their heat from them. There are a couple that can be used that arent listed as tasks here:\n\n&lWrought Iron Grill&r: Allows you to grill food, food grilled in this receives a preservation bonus.\n&lVat&r: The Vat is a special block that can process Pot recipes in bulk\n&lJarring Station&r: If placed next to a vat, it can be used to fill jars in bulk with Jams.\n&lPot&r: You can also use Pots if you need to cook soups.",
+    
+    "quests.tfg_tips.oven_finish.title": "Oven Finishes",
+    "quests.tfg_tips.oven_finish.subtitle": "Fancy",
+    "quests.tfg_tips.oven_finish.desc": "In case the look of Clay Bricks dont suit you, you can apply Finishes to your Top, Bottom and Chimney blocks. These will change the look of your block.",
+    "quests.tfg_tips.oven_finish.task": "Any Oven Finish",
+
+    "quests.tfg_tips.oven_utils.title": "Oven Utilities",
+    "quests.tfg_tips.oven_utils.subtitle": "You may want these.",
+    "quests.tfg_tips.oven_utils.desc": "The Ashtray is a block that's placed below a Bottom Oven. When fuel is consumed, there's a small chance for Wood Ash to be collected by the Ash Tray. Ash is extracted when you interact with the tray and placed when you attack the tray.\n\nThe Oven Hopper inputs logs into any Bottom Oven that it is facing. It can be automatically filled via automation from other mods as well.",
+
+    "quests.tfg_tips.jam.title": "Jam",
+    "quests.tfg_tips.jam.subtitle": "Not Jelly",
+    "quests.tfg_tips.jam.desc": "Jams are an excellent form of preserving fruits, a sealed jar of jam can last up to two years without being opened.\n\nTo properly bottle the jam you'll require a Jar with Lid. The lid itself is crafted out metal, with different metals yielding bigger amounts of lids. To open a Sealed Jar of Jam, interact with the Sealed Jar while sneaking, there's a chance that a dirty lid will appear alongside your opened jar of jam. The dirty lid can be then washed by soaking it in a barrel filled with water.",
+
+    "quests.tfg_tips.preservation.title": "The Preservation Tree",
+    "quests.tfg_tips.preservation.subtitle": "Making food last longer",
+    "quests.tfg_tips.preservation.desc": "As you may have already known, Food can &orot&r over time, and rotten food is not fit for consumption. Being able to thrive in TerraFirmaGreg will imply having to find ways to stretch the shelflife of food as far as possible.\n\nThe tree above this quest goes into details on how to preserve the main 5 types of raw nutrients in TerraFirmaCraft. Note that while some icons may show rotten food, this is purely a cosmetic issue.\n\nWorth mentioning, all preservation modifiers &lstack&r on top of each other.",
+
+    "quests.tfg_tips.brine_something.title": "General Preservation: Brining",
+    "quests.tfg_tips.brine_something.subtitle": "General Preservation N°2",
+    "quests.tfg_tips.brine_something.desc": "Brining either raw meat, a vegetable or a fruit can increase it's shelflife.",
+    "quests.tfg_tips.brine_something.tasks.1": "Meat, vegetable or fruit that has been brined.",
+    "quests.tfg_tips.brine_something.tasks.2": "A Bucket of Brine",
+
+    "quests.tfg_tips.pickle_something.title": "General Preservation: Pickling",
+    "quests.tfg_tips.pickle_something.subtitle": "General Preservation N°3",
+    "quests.tfg_tips.pickle_something.desc": "Pickling either raw meat, a vegetable or a fruit can increase it's shelflife. Once an item is pickled it can be left in a barrel filled with Vinegar, which gives it the \"Pickled\" preservation as long as the barrel is closed.",
+    "quests.tfg_tips.pickle_something.tasks.1": "A Bucket of Vinegar",
+    "quests.tfg_tips.pickle_something.tasks.2": "Meat, vegetable or fruit that has been pickled.",
+
+    "quests.tfg_tips.get_milk.title": "Milk Preservation",
+    "quests.tfg_tips.get_milk.subtitle": "Got milk?",
+    "quests.tfg_tips.get_milk.desc": "Milk can be obtained from at least 3 different animals, Cows, Goats and Yaks.\nWhile milk can be drank as is, it can also be processed into delicious cheese.\n\nTo complete this quest, get any bucket type filled with the milk of your choosing.",
+    "quests.tfg_tips.get_milk.task": "Any Bucket of Milk",
+
+    "quests.tfg_tips.create_cheese.title": "Milk Preservation: Cheese",
+    "quests.tfg_tips.create_cheese.subtitle": "Cheesy",
+    "quests.tfg_tips.create_cheese.desc": "Milk can be processed into Cheese Wheels, Cheese Wheels can then be placed and cut with a knife to obtain cheese slices.\n\nInformation on how to create cheeses can be found in the Field Guide",
+    
+    "quests.tfg_tips.cheese_aging.title": "Milk Preservation: Cheese Aging",
+    "quests.tfg_tips.cheese_aging.subtitle": "Stinky",
+    "quests.tfg_tips.cheese_aging.desc": "If you have a cellar, you can place down the Cheese Weel to age, aging takes time but dramatically increases the shelflife of the Cheese. Do not break the cheese with your hands, otherwise all the aging will be lost!",
+
+    "quests.tfg_tips.smoke_cheese.title": "Milk Preservation: Smoke the Cheese",
+    "quests.tfg_tips.smoke_cheese.subtitle": "Improved flavour profile",
+    "quests.tfg_tips.smoke_cheese.desc": "You can hang a slice of cheese in a string that's over a lit Campfire to smoke it.",
+    "quests.tfg_tips.smoke_cheese.task": "A slice of Smoked Cheese",
+
+    "quests.tfg_tips.get_meat.title": "Meat Preservation",
+    "quests.tfg_tips.get_meat.subtitle": "Don't beat it.",
+    "quests.tfg_tips.get_meat.desc": "Most animals drop meat which is an excellent source of protein, although it's shelf-life is short when left raw.\n\nMeats can be pickled and brined, altho these steps must happen &obefore&r they're cooked.",
+
+    "quests.tfg_tips.salt_meat.title": "Meat Preservation: Salt",
+    "quests.tfg_tips.salt_meat.subtitle": "Not quite a jerky",
+    "quests.tfg_tips.salt_meat.desc": "Salting meat is a quick and relatively easy way to preserve it, Salt licks can be found in forests, alternatively, you can boil Salt Water to obtain salt if you live near an Ocean.",
+    "quests.tfg_tips.salt_meat.task": "A hunk of Salted Meat",
+    
+    "quests.tfg_tips.smoke_meat.title": "Meat Preservation: Smoking",
+    "quests.tfg_tips.smoke_meat.subtitle": "Smokey",
+    "quests.tfg_tips.smoke_meat.desc": "You can hang a slice of raw meat in a string that's over a lit Campfire to smoke it. Keep in mind that the meat MUST be salted first.",
+    "quests.tfg_tips.smoke_meat.task": "A hunk of Smoked Meat",
+
+    "quests.tfg_tips.cook_meat.title": "Meat Preservation: Cooking",
+    "quests.tfg_tips.cook_meat.subtitle": "Pretty obvious in hindsight.",
+    "quests.tfg_tips.cook_meat.desc": "The easiest way to preserve meat is by cooking it. You should cook it either utilizing a Wrought Iron Grill or a Top Oven, trying to cook the meat in things like a Forge or Furnaces will give it bad preservation modifiers, lowering their shelflife instead!",
+    "quests.tfg_tips.cook_meat.tasks.1": "A hunk of either Grilled or Oven Baked Cooked Meat.",
+    "quests.tfg_tips.cook_meat.tasks.2": "A Wrought Iron Grill or a Top Oven",
+
+    "quests.tfg_tips.get_veggie.title": "Vegetable Preservation",
+    "quests.tfg_tips.get_veggie.subtitle": "They're good for you",
+    "quests.tfg_tips.get_veggie.desc": "Vegetables are mostly found in the wild or grown locally in farms. They can only be Brined and Pickled.",
+
+    "quests.tfg_tips.get_fruit.title": "Fruit Preservation",
+    "quests.tfg_tips.get_fruit.subtitle": "Tasty!",
+    "quests.tfg_tips.get_fruit.desc": "Fruits are mostly found in the wild, grown locally or harvested from Trees and Bushes. Unlike Vegetables, Fruits have their own preservation modifier, drying.",
+    
+    "quests.tfg_tips.dry_fruit.title": "Fruit Preservation: Drying",
+    "quests.tfg_tips.dry_fruit.subtitle": "Water content basically zero",
+    "quests.tfg_tips.dry_fruit.desc": "Utilizing a Drying mat you can dry fuits, increasing their shelflife. You can also utilize a Solar Drier, which dries the fruit considerably faster.",
+    "quests.tfg_tips.dry_fruit.task.1": "A piece of Fruit that has been Dried",
+    "quests.tfg_tips.dry_fruit.task.2": "A Drying Mat or a Solar Drier",
+
+    "quests.tfg_tips.get_grain.title": "Grain Preservation",
+    "quests.tfg_tips.get_grain.subtitle": "Carbohydrates",
+    "quests.tfg_tips.get_grain.desc": "Grains are relativley abundant and easy to grow locally. While the regular raw grain may not last long there are easy ways on increasing its shelflife dramatically.",
+    "quests.tfg_tips.get_grain.task": "Any Grain",
+
+    "quests.tfg_tips.process_grain.title": "Grain Preservation: Knife Processing",
+    "quests.tfg_tips.process_grain.subtitle": "That was easy.",
+    "quests.tfg_tips.process_grain.desc": "By combining a Grain with a Knife in a Workbench, you'll get both Thatch and the loose pieces of the grain, these loose pieces can last up to a year.",
+
+    "quests.tfg_tips.passive_preservation.title": "Passive Preservation",
+    "quests.tfg_tips.passive_preservation.subtitle": "When modifiers aren't enough",
+    "quests.tfg_tips.passive_preservation.desc": "There are different ways to further preserve your food, above are three very good choices.",
+
+    "quests.tfg_tips.vessel_preservation.title": "General Preservation: Large Vessels",
+    "quests.tfg_tips.vessel_preservation.subtitle": "Better than just glorified backpacks.",
+    "quests.tfg_tips.vessel_preservation.desc": "Placing food in a Vessel then sealing it gives it the \"Sealed\" preservation modifier, increasing it's shelflife.",
+    
+    "quests.tfg_tips.cellar.title": "Cellar",
+    "quests.tfg_tips.cellar.subtitle": "Its not a basement",
+    "quests.tfg_tips.cellar.desc": "The cellar is a multiblock structure that can be used to preserve a myriad of items, utilizing food shelves and hanging racks. You can also age cheeses in here.",
+    "quests.tfg_tips.cellar.task": "Any form of sealed entry.",
+
+    "quests.tfg_tips.refrigerator.title": "Refrigerator",
+    "quests.tfg_tips.refrigerator.subtitle": "This thing may be overpowered",
+    "quests.tfg_tips.refrigerator.desc": "If you've advanced up to the Low Voltage Age, you can create a refrigerator, it consumes power in exchange for GREATLY improving the shelflife of food inside of it.",
+
+    "quests.tfg_tips.cellar_blocks.title": "Cellar Blocks",
+    "quests.tfg_tips.cellar_blocks.subtitle": "Stuff to put your food in",
+    "quests.tfg_tips.cellar_blocks.desc": "Food Shelves can be used to store virtually any kind of food, while Hangers can be used to store Meats and Garlic. Food items in these blocks recieve a relatively powerful preservation modifier that's better than vessels.",
+    //#endregion
+
+    //#region Beneath
+    "quests.tfg_tips.beneath.title": "The Beneath",
+    "quests.tfg_tips.beneath.subtitle": "What's this \"Nether\" you speak of?",
+    "quests.tfg_tips.beneath.desc": "Deep, DEEP underground, past the bedrock, you'll find The Beneath, a complex network of caves filled with dangers and relatively strange flora and fauna. While the beneath is completely optional, it contains a lot of things that could be considered Quality of Life improvements."
     //#endregion
 }

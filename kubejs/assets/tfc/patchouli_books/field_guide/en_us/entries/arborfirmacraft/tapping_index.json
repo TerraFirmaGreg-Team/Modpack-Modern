@@ -89,12 +89,12 @@
 			"title": "Aspen",
 			"item": "tfc:wood/log/aspen,tfc:wood/wood/aspen,tfc:wood/leaves/aspen,tfc:wood/sapling/aspen",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): -1.1°C$(br)$(thing)Minimum Rainfall$(): 350(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): -1.1°C$(br)$(thing)Minimum Rainfall$(): 350$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [ "tfg:textures/gui/field_guide/tapping_index/aspen_tree.png" ],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rotin",
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
 		},
 		{
@@ -103,12 +103,12 @@
 			"title": "Spruce",
 			"item": "tfc:wood/log/spruce,tfc:wood/wood/spruce,tfc:wood/leaves/spruce,tfc:wood/sapling/spruce",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -17.5°C$(br)$(thing)Maximum Temperature$(): -6.6°C$(br)$(thing)Minimum Rainfall$(): 220(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -17.5°C$(br)$(thing)Maximum Temperature$(): -6.6°C$(br)$(thing)Minimum Rainfall$(): 220$(br)$(thing)Maximum Rainfall$(): 470$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -10°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 4mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [ "tfg:textures/gui/field_guide/tapping_index/spruce_tree.png" ],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rotin",
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
 		},
 		{
@@ -117,12 +117,12 @@
 			"title": "White Cedar",
 			"item": "tfc:wood/log/white_cedar,tfc:wood/wood/white_cedar,tfc:wood/leaves/white_cedar,tfc:wood/sapling/white_cedar",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 0.7°C$(br)$(thing)Minimum Rainfall$(): 100(br)$(thing)Maximum Rainfall$(): 285$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 0.7°C$(br)$(thing)Minimum Rainfall$(): 100$(br)$(thing)Maximum Rainfall$(): 285$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 3mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [ "tfg:textures/gui/field_guide/tapping_index/white_cedar_tree.png" ],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rotin",
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
 		},
 		{
@@ -131,12 +131,12 @@
 			"title": "Douglas Fir",
 			"item": "tfc:wood/log/douglas_fir,tfc:wood/wood/douglas_fir,tfc:wood/leaves/douglas_fir,tfc:wood/sapling/douglas_fir",
 			"link_recipe": false,
-			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 305(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
+			"text": "$(bold)Climate Data$()$(br)$(thing)Minimum Temperature$(): -15.7°C$(br)$(thing)Maximum Temperature$(): 6.1°C$(br)$(thing)Minimum Rainfall$(): 305$(br)$(thing)Maximum Rainfall$(): 500$(br2)$(bold)Tapping Data$()$(br)$(thing)Min Temp for Production$(): -8°C$(br)$(thing)Max Temp for Production$(): N/A$(br)$(thing)Spring Exclusive$(): No$(br)$(thing)Flow Rate$(): 2mb"
 		},
 		{
 			"type": "patchouli:image",
 			"images": [ "tfg:textures/gui/field_guide/tapping_index/douglas_fir_tree.png" ],
-			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rotin",
+			"text": "$(thing)Produces$(): Conifer Pitch$(br)$(thing)Processes Into$(): Sticky Resin & Conifer Rosin",
 			"border": true
 		}
 	]
