@@ -185,7 +185,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 	
-	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_SMALL_GEAR);
+	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
