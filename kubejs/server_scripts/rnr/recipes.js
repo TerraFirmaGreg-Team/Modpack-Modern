@@ -38,6 +38,16 @@ const registerRnrRecipes = (event) => {
 		    .duration(20)
 		    .EUt(10)
     });
+
+	event.smelting(
+		'1x rnr:terracotta_roof_tile',
+		'rnr:unfired_terracotta_roof_tile'
+	).id('rnr:smelting/unfired_terracotta_roof_tile')
+
+	event.smelting(
+		'1x rnr:ceramic_roof_tile',
+		'rnr:unfired_roof_tile'
+	).id('rnr:smelting/unfired_roof_tile')
 //#endregion
 
 //#region Mattock Mold
