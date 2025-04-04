@@ -208,9 +208,7 @@ global.CREATE_DISABLED_ITEMS = [
     'create:warped_window_pane', 
 
     // Blocks
-    'create:zinc_block', 
     'create:andesite_alloy_block', 
-    'create:brass_block', 
     'create:industrial_iron_block', 
     'create:experience_block',
     'create:rose_quartz_block', 
