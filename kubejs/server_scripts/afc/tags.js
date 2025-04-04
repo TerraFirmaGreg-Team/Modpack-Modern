@@ -40,6 +40,20 @@ const registerAFCItemTags = (event) => {
 	global.AFC_SAPLINGS.forEach(x => {
 		event.add('minecraft:saplings', `afc:wood/sapling/${x.sapling}`)
 	})
+
+	event.add("tfg:latex_logs", "#tfc:kapok_logs")
+    event.add("tfg:latex_logs", "#afc:hevea_logs")
+    event.add("tfg:latex_logs", "#afc:rubber_fig_logs")
+
+    event.add("tfg:rubber_saplings", "tfc:wood/sapling/kapok")
+	event.add("tfg:rubber_saplings", "afc:wood/sapling/red_silk_cotton")
+    event.add("tfg:rubber_saplings", "afc:wood/sapling/hevea")
+    event.add("tfg:rubber_saplings", "afc:wood/sapling/rubber_fig")
+
+    event.add("tfg:rubber_leaves", "tfc:wood/leaves/kapok")
+	event.add("tfg:rubber_leaves", "afc:wood/leaves/red_silk_cotton")
+    event.add("tfg:rubber_leaves", "afc:wood/leaves/hevea")
+    event.add("tfg:rubber_leaves", "afc:wood/leaves/rubber_fig")
 }
 
 

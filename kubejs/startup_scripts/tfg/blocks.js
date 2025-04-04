@@ -13,6 +13,14 @@ const registerTFGBlocks = (event) => {
 	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 
+	// #region Deprecated tree tap
+
+	// Make a new block here so people can craft it into the new one
+	event.create('treetap:tap')
+		.requiresTool(false)
+
+	// #endregion
+
 	// #region Nether blocks
 
 	event.create('tfg:rock/hardened_deepslate')
@@ -95,18 +103,6 @@ const registerTFGBlocks = (event) => {
 	event.createCustom('tfg:mushroom_roots', () => new $SproutsBlock($Properties.copy($Blocks.WARPED_ROOTS)))
 	event.createCustom('tfg:mushroom_sprouts', () => new $SproutsBlock($Properties.copy($Blocks.NETHER_SPROUTS)))
 	
-	event.create('tfg:ash_pile')
-		.box(0, 0, 0, 16, 2, 16, true)
-		.fullBlock(false)
-		.noCollision()
-		.property(BlockProperties.LAYERS)
-		.sandSoundType()
-		.tagBoth('minecraft:mineable/shovel')
-		.tagBoth('tfc:can_collapse')
-		.hardness(0.5)
-		.mapColor('grey')
-		.speedFactor(0.7)
-
 	event.create('tfg:charred_log')
 		.fullBlock(true)
 		.woodSoundType()

@@ -48,11 +48,11 @@
 		"#tfg:nether_underground_decoration",
 		[],
 		[
-			"tfg:nether/surface/mangrove_tree",
 			"beneath:blackstone_boulders",
 			"tfg:nether/surface/loose_deepslate",
 			"tfg:nether/surface/philodendron",
 			"tfg:nether/surface/moss_patch_small",
+			"tfg:nether/surface/mangrove_tree",
 			"tfg:nether/terrain/lush_caves_ceiling",
 			"tfg:nether/terrain/lush_caves_clay",
 			"tfg:nether/terrain/lush_caves_vegetation",
@@ -80,15 +80,9 @@
 			"charge": 1.0
 		}
 	},
+	"creature_spawn_probability": 0.1,
 	"spawners": {
-		"water_ambient": [
-			{
-				"type": "tfc:isopod",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 10
-			}
-		],
+		"water_ambient": [],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
@@ -114,7 +108,7 @@
 			},
 			{
 				"type": "beneath:red_elk",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
 			}

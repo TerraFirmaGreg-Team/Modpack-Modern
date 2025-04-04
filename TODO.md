@@ -25,17 +25,15 @@ Key:
 
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures
-- Try out the python script to redo bastions? Would be a lot easier than doing them all manually again
-	- Retexture the vanilla lantern
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
+- Fix firmaciv ships to use the gt bolt
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - ⏳ Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
-- Do the ash pile block properly (they still float if you mine the block underneath them)
 - ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 
 # Post-0.9
