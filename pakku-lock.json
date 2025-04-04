@@ -2417,30 +2417,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Waves-1.20.1-1.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6323/244/Waves-1.20.1-1.5.jar",
-                    "id": "6323244",
-                    "parent_id": "1155936",
-                    "hashes": {
-                        "sha1": "45235c9cce5ec93078329392b61c260e22f8f602",
-                        "md5": "95c9882dee5566b9b9bc0712968468b0"
-                    },
-                    "required_dependencies": [],
-                    "size": 1276552,
-                    "date_published": "2025-03-19T19:57:25.297Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Waves-1.20.1-1.5.jar",
+                    "file_name": "Waves-1.20.1-1.5.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2449,16 +2427,38 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2ygdYUcf/versions/ebiVt4Wp/Waves-1.20.1-1.5.jar",
-                    "id": "ebiVt4Wp",
+                    "url": "https://cdn.modrinth.com/data/2ygdYUcf/versions/X5VAOq7P/Waves-1.20.1-1.5.1.jar",
+                    "id": "X5VAOq7P",
                     "parent_id": "2ygdYUcf",
                     "hashes": {
-                        "sha512": "8d6695fd35ffc449820bf567953fb79c321a5e1dde8ec63c0504b7c269a061e5e2e133d0a274bafa2ac18367ba3734af877e601acc42e39b256a002b7976af43",
-                        "sha1": "45235c9cce5ec93078329392b61c260e22f8f602"
+                        "sha512": "6eac3cee76b7543ff0d565752ab2272db36d8f4af6646b3c4434955e8527aec5b509aac79dd218227c2b739e390b3c9432fa0690eb2ccb88202fe0ae0d25fd56",
+                        "sha1": "dbbc8dfa855b3af469a48eb55687eb7363246263"
                     },
                     "required_dependencies": [],
-                    "size": 1276552,
-                    "date_published": "2025-03-19T19:59:20.872104Z"
+                    "size": 1278005,
+                    "date_published": "2025-03-27T02:37:13.337751Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Waves-1.20.1-1.5.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6353/969/Waves-1.20.1-1.5.1.jar",
+                    "id": "6353969",
+                    "parent_id": "1155936",
+                    "hashes": {
+                        "sha1": "dbbc8dfa855b3af469a48eb55687eb7363246263",
+                        "md5": "3ac9423d4430c0d616274e7a1ddf47fc"
+                    },
+                    "required_dependencies": [],
+                    "size": 1278005,
+                    "date_published": "2025-03-27T02:35:35.863Z"
                 }
             ]
         },
@@ -5939,6 +5939,31 @@
                     "required_dependencies": [],
                     "size": 60550,
                     "date_published": "2024-04-01T10:39:19.537Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "j6fA0JbUIMVAq3q2",
+            "type": "MOD",
+            "slug": {
+                "github": "GreateBeyondTheHorizon/Greate"
+            },
+            "name": {
+                "github": "Greate"
+            },
+            "id": {
+                "github": "673422318"
+            },
+            "files": [
+                {
+                    "type": "github",
+                    "file_name": "greate-0.0.38.jar",
+                    "release_type": "release",
+                    "url": "https://github.com/GreateBeyondTheHorizon/Greate/releases/download/0.0.38/greate-0.0.38.jar",
+                    "id": "227638684",
+                    "parent_id": "673422318",
+                    "size": 1514248,
+                    "date_published": "2025-02-09T16:31:16Z"
                 }
             ]
         },
