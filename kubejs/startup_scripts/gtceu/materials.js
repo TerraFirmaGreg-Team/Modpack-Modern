@@ -35,6 +35,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_ROTOR,
 		GENERATE_SPRING,
 		GENERATE_SMALL_GEAR,
+		GENERATE_GEAR,
 		GENERATE_FRAME,
 		GENERATE_PLATE
 	} = $MATERIAL_FLAGS
@@ -164,8 +165,6 @@ const registerGTCEuMaterialModification = (event) => {
 	//        /* Имеют двойные слитки */
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
-
-	GTMaterials.TitaniumTungstenCarbide.addFlags(GENERATE_ROD);
 	//
 	//        /* Другое */
 
@@ -177,6 +176,8 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
+
+	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);

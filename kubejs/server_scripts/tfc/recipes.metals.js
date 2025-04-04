@@ -267,6 +267,14 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.anvil('tfc:metal/ingot/blue_steel', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
 		.id('tfc:anvil/blue_steel_ingot')
 
+	// Bronze Gears
+	event.recipes.tfc.anvil('gtceu:bronze_gear', '#forge:double_plates/bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
+		.id('tfc:anvil/bronze_gear')
+	event.recipes.tfc.anvil('gtceu:black_bronze_gear', '#forge:double_plates/black_bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
+		.id('tfc:anvil/black_bronze_gear')
+	event.recipes.tfc.anvil('gtceu:bismuth_bronze_gear', '#forge:double_plates/bismuth_bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
+		.id('tfc:anvil/bismuth_bronze_gear')
+
 	// Cast iron -> Raw Iron Bloom
 	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
 		.id('tfc:bloomery/raw_iron_bloom')
@@ -274,26 +282,6 @@ function registerTFCMetalsRecipes(event) {
 	// Cast Iron -> Pig Iron
 	event.recipes.tfc.blast_furnace(Fluid.of('tfc:metal/pig_iron', 1), '#tfc:flux', Fluid.of('gtceu:iron', 1))
 		.id('tfc:blast_furnace/pig_iron')
-
-	//#endregion
-
-	//#region metal bars
-
-	const METAL_BARS = [
-		"copper",
-		"bronze",
-		"black_bronze",
-		"bismuth_bronze",
-		"wrought_iron",
-		"steel",
-		"black_steel",
-		"red_steel",
-		"blue_steel"
-	];
-
-	METAL_BARS.forEach(metal => {
-		generateCutterRecipe(event, `gtceu:${metal}_plate`, 9, `8x tfc:metal/bars/${metal}`, 100, 16, `${metal}_plate_to_bars`)
-	});
 
 	//#endregion
 }
