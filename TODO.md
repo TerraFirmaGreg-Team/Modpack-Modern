@@ -20,6 +20,7 @@ Key:
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
+- Change aircraft recipes to need mech crafter
 
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures
@@ -28,7 +29,7 @@ Key:
 ## Technical
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
-- Fix firmaciv ships to use the gt bolt
+- Akistor carts mixin is commented out
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - ⏳ Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
