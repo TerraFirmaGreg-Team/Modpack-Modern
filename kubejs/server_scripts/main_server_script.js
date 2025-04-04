@@ -151,6 +151,7 @@ ServerEvents.recipes(event => {
     registerChiselAndBitsRecipes(event)
     registerComfortsRecipes(event);
     registerComputerCraftRecipes(event)
+    registerConstructionwandRecipes(event)
     registerColdsgrapplerRecipes(event);
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
