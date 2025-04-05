@@ -27,7 +27,7 @@ Key:
 		- ⏳ Greate
 			- ✔ Recipes to craft the things
 			- ⏳ Recipes that the machines do (need to do ore washer and quern recipes)
-			- Recycling recipes
+			- ✔ Recycling recipes
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava

@@ -3,6 +3,11 @@
 function registerGreateRecipes(event) {
 
 	removeGreateRecipes(event);
+	registerGreateRecyclingRecipes(event);
+
+	event.replaceInput({ input: 'create:cogwheel'}, 'create:cogwheel', '#tfg:small_cogwheels')
+	event.replaceInput({ input: 'create:large_cogwheel'}, 'create:large_cogwheel', '#tfg:large_cogwheels')
+	event.replaceInput({ input: 'create:shaft'}, 'create:shaft', '#tfg:shafts')
 
 	// #region Shafts
 

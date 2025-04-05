@@ -12,7 +12,7 @@ const registerCreateAdditionsRecipes = (event) => {
         'DED' 
     ], {
         A: '#forge:plates/wrought_iron',
-        B: 'create:shaft',
+        B: 'greate:steel_shaft',
         C: '#forge:gears/wrought_iron',
         D: '#forge:rings/wrought_iron',
         E: 'create:andesite_casing',
