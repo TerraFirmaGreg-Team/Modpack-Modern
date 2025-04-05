@@ -12,7 +12,7 @@ const registerTFCBetterBFRecipes = (event) =>
 
     event.recipes.tfc.heating('tfcbetterbf:insulated_fire_bricks', 1535)
         .resultFluid(Fluid.of('gtceu:iron', 432))
-        .id(`tfcbetterbf:heating/insulation`)
+        .id(`tfcbetterbf:heating/insulated_fire_bricks`)
 
     event.recipes.gtceu.macerator('tfcbetterbf:insulated_fire_bricks')
 		.itemInputs('tfcbetterbf:insulated_fire_bricks')
