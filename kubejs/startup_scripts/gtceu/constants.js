@@ -87,7 +87,9 @@ global.GTCEU_DISABLED_ITEMS = [
 global.GTCEU_HIDED_ITEMS = [
     'gtceu:netherrack_dust', 
     'gtceu:small_netherrack_dust', 
-    'gtceu:tiny_netherrack_dust'
+    'gtceu:tiny_netherrack_dust',
+    
+    'gtceu:sus_record'
 ];
 
 global.GTCEU_ARMORS = [

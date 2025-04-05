@@ -53,7 +53,6 @@ const registerGTCEUItemTags = (event) => {
 	event.add('tfg:sugars', 'afc:birch_sugar')
 	event.add('tfg:sugars', 'afc:maple_sugar')
     
-    event.add('c:hidden_from_recipe_viewers', 'gtceu:sus_record')
     global.MINECRAFT_DYE_NAMES.forEach(dyeName =>
     {
         event.remove('ae2:p2p_attunements/fluid_p2p_tunnel', `gtceu:${dyeName}_dye_bucket`)
