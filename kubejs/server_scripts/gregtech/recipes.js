@@ -714,13 +714,23 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/plank_to_wooden_shape')
 
 	// Деревянная шестерня
-	event.shaped('gtceu:wood_gear', [
+	event.shaped('gtceu:small_wood_gear', [
 		'AB ',
 		'BCB',
 		' B '
 	], {
 		A: '#forge:tools/saws',
 		B: '#forge:rods/wooden',
+		C: 'tfc:glue'
+	}).id('gtceu:shaped/small_gear_wood')
+
+	event.shaped('gtceu:wood_gear', [
+		'AB ',
+		'BCB',
+		' B '
+	], {
+		A: '#forge:tools/saws',
+		B: '#minecraft:planks',
 		C: 'tfc:glue'
 	}).id('gtceu:shaped/gear_wood')
 

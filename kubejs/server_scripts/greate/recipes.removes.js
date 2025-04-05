@@ -8,7 +8,8 @@ function removeGreateRecipes(event) {
 	})
 
 	event.remove({ mod: 'greate', input: 'create:andesite_alloy' });
-
+	
+	event.remove({ id: 'greate:shapeless/large_andesite_alloy_cogwheel_from_little' })
 	event.remove({ id: 'greate:shapeless/large_steel_cogwheel_from_little' })
 	event.remove({ id: 'greate:shapeless/large_aluminium_cogwheel_from_little' })
 	event.remove({ id: 'greate:shapeless/large_stainless_steel_cogwheel_from_little' })

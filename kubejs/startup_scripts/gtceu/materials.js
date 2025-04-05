@@ -177,6 +177,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
 
+	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);

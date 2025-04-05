@@ -48,9 +48,10 @@ function registerGreateRecipes(event) {
 
 	// #region Cogs
 
-	event.replaceInput({ id: 'greate:shapeless/andesite_alloy_cogwheel' }, 'gtceu:wood_plate', 'gtceu:wood_gear')
-	event.replaceInput({ id: 'greate:shapeless/large_andesite_alloy_cogwheel' }, 'gtceu:wood_plate', 'gtceu:wood_gear')
-	event.replaceInput({ id: 'greate:shapeless/large_andesite_alloy_cogwheel_from_little' }, 'gtceu:wood_plate', 'gtceu:wood_gear')
+	event.shapeless('greate:andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:small_gears/wood', '#forge:tools/hammers'])
+		.id('greate:shapeless/andesite_alloy_cogwheel')
+	event.shapeless('greate:large_andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:gears/wood', '#forge:tools/hammers'])
+		.id('greate:shapeless/large_andesite_alloy_cogwheel');
 
 	// TODO: recycling recipes for these?
 	event.shapeless('greate:steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron', '#forge:tools/wrenches'])
