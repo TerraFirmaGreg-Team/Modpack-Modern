@@ -24,9 +24,9 @@ Key:
 			- Recipes to craft the things
 			- Recipes that the machines do
 			- Recycling recipes
-		- ⏳ Greate
+		- ✔ Greate
 			- ✔ Recipes to craft the things
-			- ⏳ Recipes that the machines do (need to do ore washer and quern recipes)
+			- ✔ Recipes that the machines do
 			- ✔ Recycling recipes
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
@@ -52,7 +52,9 @@ Key:
 		- Vintage improvements: no, but there's a fork which is
 		- Framed blocks: yes
 		- Greate: yes
+	- Change greate's config to allow assemblers to make cables again
 - Add building gadgets
+- Use mech press whenever Greate updates to let us do our own recipes for it
 
 ## Space
 - Put carve tags onto your rock types so they get carved correctly
