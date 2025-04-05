@@ -267,13 +267,28 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.anvil('tfc:metal/ingot/blue_steel', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
 		.id('tfc:anvil/blue_steel_ingot')
 
-	// Bronze Gears
+	// Gears
 	event.recipes.tfc.anvil('gtceu:bronze_gear', '#forge:double_plates/bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
 		.id('tfc:anvil/bronze_gear')
 	event.recipes.tfc.anvil('gtceu:black_bronze_gear', '#forge:double_plates/black_bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
 		.id('tfc:anvil/black_bronze_gear')
 	event.recipes.tfc.anvil('gtceu:bismuth_bronze_gear', '#forge:double_plates/bismuth_bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
 		.id('tfc:anvil/bismuth_bronze_gear')
+	event.recipes.tfc.anvil('gtceu:wrought_iron_gear', '#forge:double_plates/wrought_iron', ['punch_last', 'shrink_any', 'draw_any']).tier(3)
+		.id('tfc:anvil/wrought_iron_gear')
+	event.recipes.tfc.anvil('gtceu:steel_gear', '#forge:double_plates/steel', ['punch_last', 'shrink_any', 'draw_any']).tier(4)
+		.id('tfc:anvil/steel_gear')
+	event.recipes.tfc.anvil('gtceu:black_steel_gear', '#forge:double_plates/black_steel', ['punch_last', 'shrink_any', 'draw_any']).tier(5)
+		.id('tfc:anvil/black_steel_gear')
+	event.recipes.tfc.anvil('gtceu:red_steel_gear', '#forge:double_plates/red_steel', ['punch_last', 'shrink_any', 'draw_any']).tier(6)
+		.id('tfc:anvil/red_steel_gear')
+	event.recipes.tfc.anvil('gtceu:blue_steel_gear', '#forge:double_plates/blue_steel', ['punch_last', 'shrink_any', 'draw_any']).tier(6)
+		.id('tfc:anvil/blue_steel_gear')
+		
+	event.recipes.tfc.anvil('gtceu:small_wrought_iron_gear', '#forge:ingots/wrought_iron', ['shrink_last', 'shrink_second_last', 'upset_third_last']).tier(3)
+		.id('tfc:anvil/small_wrought_iron_gear')
+	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['shrink_last', 'shrink_second_last', 'upset_third_last']).tier(4)
+		.id('tfc:anvil/small_steel_gear')
 
 	// Cast iron -> Raw Iron Bloom
 	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
