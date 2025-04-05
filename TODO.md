@@ -19,15 +19,16 @@ Key:
 	- Most of computercraft seems to have vanished for some reason?
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
-		- Create Horse Power still needs configs
+		- ⏳ Create Horse Power still needs configs
 		- Vintage Improvements:
 			- Recipes to craft the things
 			- Recipes that the machines do
 			- Recycling recipes
-		- Greate
+		- ⏳ Greate
 			- ✔ Recipes to craft the things
 			- ⏳ Recipes that the machines do (need to do ore washer and quern recipes)
 			- Recycling recipes
+	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 - Change aircraft recipes to need mech crafter

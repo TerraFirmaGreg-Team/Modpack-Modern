@@ -5,24 +5,18 @@ const registerCreateRecipes = (event) => {
 	// Удаление рецептов мода create 
 	event.remove({
 		not: [
-			{ id: 'create:crafting/kinetics/gearboxfrom_conversion' },
-			{ id: 'create:crafting/kinetics/gearbox' },
 			{ id: 'create:crafting/kinetics/clutch' },
 			{ id: 'create:crafting/kinetics/gearshift' },
 			{ id: 'create:crafting/kinetics/adjustable_chain_gearshift' },
 			{ id: 'create:crafting/kinetics/water_wheel' },
 			{ id: 'create:crafting/kinetics/large_water_wheel' },
-			{ id: 'create:crafting/kinetics/encased_fan' },
 			{ id: 'create:crafting/kinetics/turntable' },
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
-			{ id: 'create:crafting/kinetics/millstone' },
-			{ id: 'create:crafting/kinetics/mechanical_mixer' },
 			{ id: 'create:crafting/kinetics/weighted_ejector' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
 			{ id: 'create:crafting/kinetics/speedometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/stressometerfrom_conversion' },
-			{ id: 'create:crafting/kinetics/mechanical_pump' },
 			{ id: 'create:crafting/kinetics/smart_fluid_pipe' },
 			{ id: 'create:crafting/kinetics/portable_fluid_interface' },
 			{ id: 'create:crafting/kinetics/mechanical_piston' },
@@ -53,7 +47,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/powered_latch' },
 			{ id: 'create:crafting/logistics/powered_toggle_latch' },
 			{ id: 'create:crafting/kinetics/crafter_slot_cover' },
-			{ id: 'create:crafting/kinetics/vertical_gearboxfrom_conversion' },
 			{ id: 'create:crafting/kinetics/goggles' },
 			{ id: 'create:crafting/kinetics/wrench' },
 			{ id: 'create:crafting/kinetics/contraption_controls' },
@@ -89,9 +82,11 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:compat/ae2/mixing/fluix_crystal' },
 			{ id: 'create:sequenced_assembly/precision_mechanism' },
 			{ id: 'create:crafting/logistics/content_observer' },
-			{ id: 'create:milling/bone' },
 		], mod: 'create'
 	})
+
+	// Disable bulk blasting
+	event.remove({ type: 'create:fan_blasting' })
 
 	// Train Station
 	event.shapeless('2x create:track_station', [
@@ -126,47 +121,13 @@ const registerCreateRecipes = (event) => {
 		B: '#tfg:rock_walls'
 	}).id('tfg:create/shaped/schematic_table')
 
-	// Вал
-	event.shaped('8x create:shaft', [
-		'A ',
-		'AB'
-	], {
-		A: '#forge:ingots/wrought_iron',
-		B: '#forge:tools/files'
-	}).id('tfg:create/shaped/shaft')
-
-	event.recipes.gtceu.assembler('create/shaft')
-		.itemInputs('#forge:ingots/wrought_iron')
-		.itemOutputs('6x create:shaft')
-		.duration(75)
-		.EUt(2)
-
-	// Малая шестерня
-	event.shaped('create:cogwheel', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: 'gtceu:treated_wood_plate',
-		B: 'create:shaft'
-	}).id('tfg:create/shapeless/cogwheel')
-
-	// Большая шестерня
-	event.shaped('create:large_cogwheel', [
-		' A ',
-		'ABA',
-		' A '
-	], {
-		A: 'gtceu:treated_wood_plate',
-		B: 'create:cogwheel'
-	}).id('tfg:create/shaped/large_cogwheel')
-
 	// Внутриблочный двигатель цепи
 	event.shapeless('create:encased_chain_drive', [
 		'create:andesite_casing',
-		'#forge:plates/wrought_iron',
-		'#forge:plates/wrought_iron',
-		'#forge:plates/wrought_iron'
+		'#tfg:metal_chains',
+		'#tfg:metal_chains',
+		'#tfg:metal_chains',
+		'#tfg:metal_chains'
 	]).id('tfg:create/shapeless/encased_chain_drive')
 
 	// Механический пресс
@@ -199,30 +160,6 @@ const registerCreateRecipes = (event) => {
 		A: '#tfc:lumber',
 		B: '#forge:rods/wrought_iron'
 	}).id('tfg:create/shaped/hand_crank')
-
-	// Колесо для дробления
-	event.recipes.createMechanicalCrafting('2x create:crushing_wheel', [
-		' AAA ',
-		'AABAA',
-		'ABCBA',
-		'AABAA',
-		' AAA '
-	], {
-		A: '#forge:plates/wrought_iron',
-		B: '#minecraft:planks',
-		C: '#tfc:rock/hardened'
-	}).id('tfg:create/mechanical_crafting/crushing_wheel')
-
-	// Железный веник
-	event.shaped('create:whisk', [
-		'ABA',
-		'ACA',
-		'AAA'
-	], {
-		A: '#forge:rods/wrought_iron',
-		B: '#forge:rods/long/wrought_iron',
-		C: '#forge:rings/wrought_iron'
-	}).id('tfg:create/shaped/whisk')
 
 	// Емкость для миксера
 	event.shaped('create:basin', [
@@ -344,11 +281,13 @@ const registerCreateRecipes = (event) => {
 
 	// Жидкостный наполнитель
 	event.shaped('create:spout', [
-		'B',
-		'A'
+		'CBD',
+		' A '
 	], {
 		A: '#forge:foils/rubber',
-		B: 'create:copper_casing'
+		B: 'create:fluid_tank',
+		C: '#forge:tools/wrenches',
+		D: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/spout')
 
 	// Паровой двигатель
@@ -514,18 +453,6 @@ const registerCreateRecipes = (event) => {
 		C: 'create:cogwheel',
 		D: 'create:andesite_casing'
 	}).id('tfg:create/shaped/mechanical_drill')
-
-	// Механическая пила
-	event.shaped('create:mechanical_saw', [
-		'ABA',
-		'BCB',
-		'ADA'
-	], {
-		A: '#forge:plates/wrought_iron',
-		B: '#forge:buzz_saw_heads',
-		C: 'create:cogwheel',
-		D: 'create:andesite_casing'
-	}).id('tfg:create/shaped/mechanical_saw')
 
 	// Редстоуновый контакт
 	event.shaped('2x create:redstone_contact', [
@@ -1226,29 +1153,6 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:sticky_mechanical_piston')
 		.duration(100)
 		.EUt(4)
-
-	// Ремень
-	event.recipes.tfc.knapping('create:belt_connector', 'tfc:leather', [
-		" XXX ",
-		" XXX ",
-		" XXX ",
-		" XXX ",
-		" XXX ",
-	]).ingredient('#tfc:leather_knapping').id('tfg:create/knapping/belt_connector')
-
-	event.recipes.gtceu.assembler('tfg:create/belt_connector')
-		.itemInputs('#forge:leather')
-		.circuit(2)
-		.itemOutputs('create:belt_connector')
-		.duration(25)
-		.EUt(16)
-
-	event.shaped('create:belt_connector', [
-		'AAA',
-		'AAA'
-	], {
-		A: '#forge:foils/rubber'
-	}).id('tfg:create/shaped/belt_connector')
 
 	//#region Покраска ручек от люка
 
