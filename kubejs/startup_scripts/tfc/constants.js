@@ -95,9 +95,6 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/double_ingot/sterling_silver",
     "tfc:metal/double_ingot/wrought_iron",
     "tfc:metal/double_ingot/steel",
-    "tfc:metal/double_ingot/black_steel",
-    "tfc:metal/double_ingot/red_steel",
-    "tfc:metal/double_ingot/blue_steel",
     "tfc:metal/double_ingot/brass",
     "tfc:metal/double_ingot/nickel",
     "tfc:metal/double_ingot/silver",
@@ -958,10 +955,8 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: '#forge:dusts/borax', output: '4x tfc:powder/flux', name: 'flux_powder' },
     { input: '#forge:dusts/soda_ash', output: '4x tfc:powder/soda_ash', name: 'soda_ash' },
     { input: 'gtceu:charcoal_dust', output: '2x tfc:powder/charcoal', name: 'charcoal' },
-    { input: 'gtceu:raw_graphite', output: 'gtceu:graphite_dust', name: 'raw_graphite_to_dust' },
-    { input: 'gtceu:poor_raw_graphite', output: '5x gtceu:tiny_graphite_dust', name: 'poor_raw_graphite_to_dust' },
-    { input: 'gtceu:rich_raw_graphite', output: '2x gtceu:graphite_dust', name: 'rich_graphite_to_dust' },
-    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' }
+    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' },
+    { input: 'firmalife:ore/small_chromite', output: 'gtceu:small_chromite_dust', name: 'chromite' }
 ];
 
 global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS = [

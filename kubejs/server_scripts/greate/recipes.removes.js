@@ -15,6 +15,8 @@ function removeGreateRecipes(event) {
 	event.remove({ id: 'greate:shapeless/large_stainless_steel_cogwheel_from_little' })
 	event.remove({ id: 'greate:shapeless/large_titanium_cogwheel_from_little' })
 
+	event.remove({ id: 'greate:splashing/dough' })
+
 	event.remove({ mod: 'greate', type: 'create:deploying' });
 	event.remove({ mod: 'greate', type: 'create:sequenced_assembly' });
 }
