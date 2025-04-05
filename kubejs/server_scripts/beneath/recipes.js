@@ -12,6 +12,7 @@ const registerBeneathRecipes = (event) => {
 	event.remove({ id: 'beneath:crafting/blackstone_plate' })
 	event.remove({ id: 'beneath:crafting/blackstone_button' })
 	event.remove({ id: 'beneath:crafting/hellbricks' })
+	event.remove({ id: 'beneath:quern/slime' })
 	
 	event.shaped('beneath:unposter', [
 		'ABA',

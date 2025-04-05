@@ -580,7 +580,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:gold_plate",
+					"name": "create:golden_sheet",
 					"functions": [
 						{
 							"function": "minecraft:set_count",

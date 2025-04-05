@@ -517,6 +517,10 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
 
+	// Gears
+	event.remove({ id: 'gtceu:extruder/extrude_wood_ingot_to_small_gear' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_wood_ingot_to_small_gear' })
+
 	// Misc vanilla stuff
 	event.remove({ id: 'gtceu:shaped/observer' })
 	event.remove({ id: 'gtceu:shaped/observer_certus' })

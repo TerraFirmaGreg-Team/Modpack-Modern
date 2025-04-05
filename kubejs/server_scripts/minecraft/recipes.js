@@ -557,12 +557,12 @@ const registerMinecraftRecipes = (event) => {
 		'ABA',
 		'AAA'
 	], {
-		A: '#forge:plates/iron',
+		A: '#forge:plates/cast_iron',
 		B: '#tfc:hammers'
 	}).id('gtceu:shaped/cauldron')
 
 	event.recipes.gtceu.assembler('cauldron')
-		.itemInputs('7x #forge:plates/iron')
+		.itemInputs('7x #forge:plates/cast_iron')
 		.circuit(10)
 		.itemOutputs('minecraft:cauldron')
 		.duration(700)

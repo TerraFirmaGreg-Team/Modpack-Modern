@@ -17,14 +17,26 @@ Key:
 ## Mods & Recipes
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
 - ⏳ Add recipes for builders wands (being worked on by tomtomtom)
+- Add recipe for Measurements
 - Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove the mod because firmaciv depends on it
 	- (or just hide them all)
 - Recipes for advanced peripherals and computercraft
 	- Most of computercraft seems to have vanished for some reason?
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
+		- ⏳ Create Horse Power still needs configs
+		- Vintage Improvements:
+			- Recipes to craft the things
+			- Recipes that the machines do
+			- Recycling recipes
+		- ⏳ Greate
+			- ✔ Recipes to craft the things
+			- ⏳ Recipes that the machines do (need to do ore washer and quern recipes)
+			- Recycling recipes
+	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
+- Change aircraft recipes to need mech crafter
 - Change framed button, pressure plates etc recipes to match other "normal" ones
 - Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
@@ -35,7 +47,7 @@ Key:
 ## Technical
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
-- Fix firmaciv ships to use the gt bolt
+- Akistor carts mixin is commented out
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - ⏳ Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions

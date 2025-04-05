@@ -46,7 +46,16 @@
             "category": "create:automatic_shaped"
         },
         {
+            "category": "greate:automatic_shaped"
+        },
+        {
             "category": "create:automatic_shapeless"
+        },
+        {
+            "category": "greate:automatic_shapeless"
+        },
+        {
+            "category": "greate:automatic_brewing"
         },
         {
             "id": "/emi:/crafting/repairing/[^*]+/"

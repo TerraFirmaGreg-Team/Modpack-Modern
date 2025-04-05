@@ -15,20 +15,8 @@ global.CREATE_DISABLED_ITEMS = [
     // Raw Block Ores
     'create:raw_zinc_block', 
     
-    // Nuggets
-    'create:copper_nugget',
-    'create:zinc_nugget', 
-    'create:brass_nugget', 
-    
     // Sheets
-    'create:copper_sheet', 
-    'create:brass_sheet', 
     'create:iron_sheet', 
-    'create:golden_sheet', 
-    
-    // Ingot
-    'create:zinc_ingot', 
-    'create:brass_ingot',
 
     // Flour
     'create:wheat_flour',
@@ -220,9 +208,7 @@ global.CREATE_DISABLED_ITEMS = [
     'create:warped_window_pane', 
 
     // Blocks
-    'create:zinc_block', 
     'create:andesite_alloy_block', 
-    'create:brass_block', 
     'create:industrial_iron_block', 
     'create:experience_block',
     'create:rose_quartz_block', 

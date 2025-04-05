@@ -674,6 +674,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honeycomb',
     'minecraft:tipped_arrow',
     'minecraft:grindstone',
+    'minecraft:fermented_spider_eye',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада

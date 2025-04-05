@@ -2140,7 +2140,7 @@
 							ticks: 0L
 						}
 					}
-					id: "gtceu:black_steel_ingot"
+					id: "tfc:metal/ingot/black_steel"
 				}
 				type: "item"
 			}]
@@ -2203,7 +2203,7 @@
 							ticks: 0L
 						}
 					}
-					id: "gtceu:black_steel_double_ingot"
+					id: "tfc:metal/double_ingot/black_steel"
 				}
 				type: "item"
 			}]
@@ -3271,7 +3271,7 @@
 							ticks: 0L
 						}
 					}
-					id: "gtceu:red_steel_ingot"
+					id: "tfc:metal/ingot/red_steel"
 				}
 				type: "item"
 			}]
@@ -3291,7 +3291,7 @@
 							ticks: 0L
 						}
 					}
-					id: "gtceu:blue_steel_ingot"
+					id: "tfc:metal/ingot/blue_steel"
 				}
 				type: "item"
 			}]
@@ -3312,7 +3312,7 @@
 							ticks: 0L
 						}
 					}
-					id: "gtceu:red_steel_double_ingot"
+					id: "tfc:metal/double_ingot/red_steel"
 				}
 				type: "item"
 			}]
@@ -3333,7 +3333,7 @@
 							ticks: 0L
 						}
 					}
-					id: "gtceu:blue_steel_double_ingot"
+					id: "tfc:metal/double_ingot/blue_steel"
 				}
 				type: "item"
 			}]

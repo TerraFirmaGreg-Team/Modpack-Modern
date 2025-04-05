@@ -95,12 +95,12 @@ function registerGTCEUMetalRecipes(event) {
 		if (usableItem.isEmpty()) return
 
 		event.shaped(toolItem, [
-			' A ',
-			'BAB',
-			'BBB'
+			'CA ',
+			' B '
 		], {
 			A: usableItem,
 			B: '#tfc:rock/raw',
+			C: '#tfc:chisels'
 		}).id(`gtceu:shaped/mortar_${material.getName()}`)
 	}
 
@@ -406,6 +406,7 @@ function registerGTCEUMetalRecipes(event) {
 		const trapdoorStack = ChemicalHelper.get(TFGTagPrefix.trapdoor, material, 1)
 		const chainStack = ChemicalHelper.get(TFGTagPrefix.chain, material, 1)
 		const bellStack = ChemicalHelper.get(TFGTagPrefix.bell, material, 1)
+		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 8)
 
 		if (toolProperty != null) {
 			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', 1, material)
@@ -703,6 +704,13 @@ function registerGTCEUMetalRecipes(event) {
 				.itemOutputs(bellStack)
 				.duration(material.getMass() * 5)
 				.EUt(GTValues.VA[GTValues.ULV])
+		}
+
+		if (barsStack != null) {
+			
+			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
+
+			generateCutterRecipe(event, plateStack, 9, barsStack, 100, 16, `${material.getName()}_plate_to_bars`)
 		}
 
 		// Indicators

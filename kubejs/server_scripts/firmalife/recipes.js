@@ -147,7 +147,7 @@ const registerFirmaLifeRecipes = (event) => {
 			' D '
 		], {
 		A: 'firmalife:copper_pipe',
-		B: 'gtceu:bronze_plate',
+		B: '#forge:plates/bronze',
 		C: '#tfc:barrels',
 		D: 'create:mechanical_pump'
 	}).id('tfg:shaped/pumping_station')
@@ -159,7 +159,7 @@ const registerFirmaLifeRecipes = (event) => {
 			' D '
 		], {
 		A: 'firmalife:copper_pipe',
-		B: 'gtceu:black_bronze_plate',
+		B: '#forge:plates/black_bronze',
 		C: '#tfc:barrels',
 		D: 'create:mechanical_pump'
 	}).id('tfg:shaped/pumping_station2')
@@ -171,20 +171,20 @@ const registerFirmaLifeRecipes = (event) => {
 			' D '
 		], {
 		A: 'firmalife:copper_pipe',
-		B: 'gtceu:bismuth_bronze_plate',
+		B: '#forge:plates/bismuth_bronze',
 		C: '#tfc:barrels',
 		D: 'create:mechanical_pump'
 	}).id('tfg:shaped/pumping_station3')
 
 	event.recipes.gtceu.bender('tfg:firmalife/copper_pipe')
-		.itemInputs('gtceu:copper_plate')
+		.itemInputs('#forge:plates/copper')
 		.itemOutputs('8x firmalife:copper_pipe')
 		.circuit(3)
 		.duration(40)
 		.EUt(8)
 
 	event.recipes.gtceu.bender('tfg:firmalife/sprinkler')
-		.itemInputs('gtceu:copper_plate')
+		.itemInputs('#forge:plates/copper')
 		.itemOutputs('firmalife:sprinkler')
 		.circuit(4)
 		.duration(60)

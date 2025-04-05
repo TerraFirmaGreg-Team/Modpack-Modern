@@ -202,24 +202,28 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_seeds')
 		.itemInputs('#tfc:seeds')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_food')
 		.itemInputs('#tfc:foods')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_corals')
 		.itemInputs('#tfc:corals')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
@@ -710,13 +714,24 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/plank_to_wooden_shape')
 
 	// Деревянная шестерня
-	event.shaped('gtceu:wood_gear', [
-		' A ',
-		'ABA',
-		' A '
+	event.shaped('gtceu:small_wood_gear', [
+		'AB ',
+		'BCB',
+		' B '
 	], {
-		A: '#tfc:can_be_lit_on_torch',
-		B: '#forge:tools/wrenches'
+		A: '#forge:tools/saws',
+		B: '#forge:rods/wooden',
+		C: 'tfc:glue'
+	}).id('gtceu:shaped/small_gear_wood')
+
+	event.shaped('gtceu:wood_gear', [
+		'AB ',
+		'BCB',
+		' B '
+	], {
+		A: '#forge:tools/saws',
+		B: '#minecraft:planks',
+		C: 'tfc:glue'
 	}).id('gtceu:shaped/gear_wood')
 
 	// Контроллер теплицы
@@ -871,21 +886,21 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.arc_furnace('tfg:black_steel_dust_to_ingot')
 		.itemInputs('gtceu:black_steel_dust')
-		.itemOutputs('gtceu:black_steel_ingot')
+		.itemOutputs('tfc:metal/ingot/black_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(500)
 		.EUt(24)
 
 	event.recipes.gtceu.arc_furnace('tfg:red_steel_dust_to_ingot')
 		.itemInputs('gtceu:red_steel_dust')
-		.itemOutputs('gtceu:red_steel_ingot')
+		.itemOutputs('tfc:metal/ingot/red_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(700)
 		.EUt(32)
 
 	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
 		.itemInputs('gtceu:blue_steel_dust')
-		.itemOutputs('gtceu:blue_steel_ingot')
+		.itemOutputs('tfc:metal/ingot/blue_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(700)
 		.EUt(32)
@@ -1419,5 +1434,12 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'gtceu:wood_plate', '#tfc:lumber')
 
 	event.replaceInput({mod: 'gtceu'}, 'minecraft:sugar', '#tfg:sugars')
+
+	event.recipes.gtceu.fluid_solidifier('tfg:solidify_glue')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.notConsumable('gtceu:ball_casting_mold')
+		.itemOutputs('tfc:glue')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 }

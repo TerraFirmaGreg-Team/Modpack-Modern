@@ -1,0 +1,399 @@
+#.
+#Multiplier used for calculating how many ticks should initially be removed in fan processing recipes, based on how fast the fan is spinning.
+#Range: 0.0 ~ 3.4028234663852886E38
+fanSpeedMultiplier = 0.75
+
+#.
+#Parameters and abilities of Greate's kinetic mechanisms
+[kinetics]
+
+	#.
+	#.
+	#Fine tune settings related to belts
+	[kinetics.belts]
+
+		#.
+		#.
+		#Rubber Belt Settings
+		[kinetics.belts.rubber]
+			#.
+			#Maximum length in blocks of rubber mechanical belts
+			#Range: > 5
+			rubberMaxBeltLength = 20
+
+		#.
+		#Silicone Rubber Belt Settings
+		[kinetics.belts.silicone]
+			#.
+			#Maximum length in blocks of silicone mechanical belts
+			#Range: > 5
+			siliconeMaxBeltLength = 20
+
+		#.
+		#Polyethylene Belt Settings
+		[kinetics.belts.polyethylene]
+			#.
+			#Maximum length in blocks of polyethylene mechanical belts
+			#Range: > 5
+			polyethyleneMaxBeltLength = 20
+
+		#.
+		#Polytetrafluoroethylene Belt Settings
+		[kinetics.belts.polytetrafluoroethylene]
+			#.
+			#Maximum length in blocks of polytetrafluoroethylene mechanical belts
+			#Range: > 5
+			polytetrafluoroethyleneMaxBeltLength = 20
+
+		#.
+		#Polybenzimidazole Belt Settings
+		[kinetics.belts.polybenzimidazole]
+			#.
+			#Maximum length in blocks of polybenzimidazole mechanical belts
+			#Range: > 5
+			polybenzimidazoleMaxBeltLength = 20
+
+	[kinetics.stressValues]
+
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v1]
+
+			#.
+			#.[in Stress Units]Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives
+			[kinetics.stressValues.v1.impact]
+
+				[kinetics.stressValues.v1.impact.andesite_alloy]
+					andesite_alloy_shaft = 0.0
+					andesite_encased_andesite_alloy_shaft = 0.0
+					brass_encased_andesite_alloy_shaft = 0.0
+					andesite_alloy_cogwheel = 0.0
+					large_andesite_alloy_cogwheel = 0.0
+					andesite_encased_andesite_alloy_cogwheel = 0.0
+					andesite_encased_large_andesite_alloy_cogwheel = 0.0
+					brass_encased_andesite_alloy_cogwheel = 0.0
+					brass_encased_large_andesite_alloy_cogwheel = 0.0
+					andesite_alloy_crushing_wheel = 0.5
+					andesite_alloy_encased_fan = 0.5
+					andesite_alloy_gearbox = 0.0
+					andesite_alloy_mechanical_press = 1.0
+					andesite_alloy_mechanical_mixer = 0.5
+					andesite_alloy_millstone = 0.5
+					andesite_alloy_mechanical_saw = 1.0
+					andesite_alloy_mechanical_pump = 0.5
+
+				[kinetics.stressValues.v1.impact.steel]
+					steel_shaft = 0.0
+					andesite_encased_steel_shaft = 0.0
+					brass_encased_steel_shaft = 0.0
+					steel_cogwheel = 0.0
+					large_steel_cogwheel = 0.0
+					andesite_encased_steel_cogwheel = 0.0
+					andesite_encased_large_steel_cogwheel = 0.0
+					brass_encased_steel_cogwheel = 0.0
+					brass_encased_large_steel_cogwheel = 0.0
+					steel_crushing_wheel = 1.0
+					steel_encased_fan = 1.0
+					steel_gearbox = 0.0
+					steel_mechanical_press = 2.0
+					steel_mechanical_mixer = 1.0
+					steel_millstone = 1.0
+					steel_mechanical_saw = 2.0
+					steel_mechanical_pump = 1.0
+
+				[kinetics.stressValues.v1.impact.aluminium]
+					aluminium_shaft = 0.0
+					andesite_encased_aluminium_shaft = 0.0
+					brass_encased_aluminium_shaft = 0.0
+					aluminium_cogwheel = 0.0
+					large_aluminium_cogwheel = 0.0
+					andesite_encased_aluminium_cogwheel = 0.0
+					andesite_encased_large_aluminium_cogwheel = 0.0
+					brass_encased_aluminium_cogwheel = 0.0
+					brass_encased_large_aluminium_cogwheel = 0.0
+					aluminium_crushing_wheel = 1.5
+					aluminium_encased_fan = 1.5
+					aluminium_gearbox = 0.0
+					aluminium_mechanical_press = 3.0
+					aluminium_mechanical_mixer = 1.5
+					aluminium_millstone = 1.5
+					aluminium_mechanical_saw = 3.0
+					aluminium_mechanical_pump = 1.5
+
+				[kinetics.stressValues.v1.impact.stainless_steel]
+					stainless_steel_shaft = 0.0
+					andesite_encased_stainless_steel_shaft = 0.0
+					brass_encased_stainless_steel_shaft = 0.0
+					stainless_steel_cogwheel = 0.0
+					large_stainless_steel_cogwheel = 0.0
+					andesite_encased_stainless_steel_cogwheel = 0.0
+					andesite_encased_large_stainless_steel_cogwheel = 0.0
+					brass_encased_stainless_steel_cogwheel = 0.0
+					brass_encased_large_stainless_steel_cogwheel = 0.0
+					stainless_steel_crushing_wheel = 2.0
+					stainless_steel_encased_fan = 2.0
+					stainless_steel_gearbox = 0.0
+					stainless_steel_mechanical_press = 4.0
+					stainless_steel_mechanical_mixer = 2.0
+					stainless_steel_millstone = 2.0
+					stainless_steel_mechanical_saw = 4.0
+					stainless_steel_mechanical_pump = 2.0
+
+				[kinetics.stressValues.v1.impact.titanium]
+					titanium_shaft = 0.0
+					andesite_encased_titanium_shaft = 0.0
+					brass_encased_titanium_shaft = 0.0
+					titanium_cogwheel = 0.0
+					large_titanium_cogwheel = 0.0
+					andesite_encased_titanium_cogwheel = 0.0
+					andesite_encased_large_titanium_cogwheel = 0.0
+					brass_encased_titanium_cogwheel = 0.0
+					brass_encased_large_titanium_cogwheel = 0.0
+					titanium_crushing_wheel = 2.5
+					titanium_encased_fan = 2.5
+					titanium_gearbox = 0.0
+					titanium_mechanical_press = 5.0
+					titanium_mechanical_mixer = 2.5
+					titanium_millstone = 2.5
+					titanium_mechanical_saw = 5.0
+					titanium_mechanical_pump = 2.5
+
+				[kinetics.stressValues.v1.impact.tungsten_steel]
+					tungsten_steel_shaft = 0.0
+					andesite_encased_tungsten_steel_shaft = 0.0
+					brass_encased_tungsten_steel_shaft = 0.0
+					tungsten_steel_cogwheel = 0.0
+					large_tungsten_steel_cogwheel = 0.0
+					andesite_encased_tungsten_steel_cogwheel = 0.0
+					andesite_encased_large_tungsten_steel_cogwheel = 0.0
+					brass_encased_tungsten_steel_cogwheel = 0.0
+					brass_encased_large_tungsten_steel_cogwheel = 0.0
+					tungsten_steel_crushing_wheel = 3.0
+					tungsten_steel_encased_fan = 3.0
+					tungsten_steel_gearbox = 0.0
+					tungsten_steel_mechanical_press = 6.0
+					tungsten_steel_mechanical_mixer = 3.0
+					tungsten_steel_millstone = 3.0
+					tungsten_steel_mechanical_saw = 6.0
+					tungsten_steel_mechanical_pump = 3.0
+
+				[kinetics.stressValues.v1.impact.rhodium_plated_palladium]
+					rhodium_plated_palladium_shaft = 0.0
+					andesite_encased_rhodium_plated_palladium_shaft = 0.0
+					brass_encased_rhodium_plated_palladium_shaft = 0.0
+					rhodium_plated_palladium_cogwheel = 0.0
+					large_rhodium_plated_palladium_cogwheel = 0.0
+					andesite_encased_rhodium_plated_palladium_cogwheel = 0.0
+					andesite_encased_large_rhodium_plated_palladium_cogwheel = 0.0
+					brass_encased_rhodium_plated_palladium_cogwheel = 0.0
+					brass_encased_large_rhodium_plated_palladium_cogwheel = 0.0
+					rhodium_plated_palladium_crushing_wheel = 3.5
+					rhodium_plated_palladium_encased_fan = 3.5
+					rhodium_plated_palladium_gearbox = 0.0
+					rhodium_plated_palladium_mechanical_press = 7.0
+					rhodium_plated_palladium_mechanical_mixer = 3.5
+					rhodium_plated_palladium_millstone = 3.5
+					rhodium_plated_palladium_mechanical_saw = 7.0
+					rhodium_plated_palladium_mechanical_pump = 3.5
+
+				[kinetics.stressValues.v1.impact.naquadah_alloy]
+					naquadah_alloy_shaft = 0.0
+					andesite_encased_naquadah_alloy_shaft = 0.0
+					brass_encased_naquadah_alloy_shaft = 0.0
+					naquadah_alloy_cogwheel = 0.0
+					large_naquadah_alloy_cogwheel = 0.0
+					andesite_encased_naquadah_alloy_cogwheel = 0.0
+					andesite_encased_large_naquadah_alloy_cogwheel = 0.0
+					brass_encased_naquadah_alloy_cogwheel = 0.0
+					brass_encased_large_naquadah_alloy_cogwheel = 0.0
+					naquadah_alloy_crushing_wheel = 4.0
+					naquadah_alloy_encased_fan = 4.0
+					naquadah_alloy_gearbox = 0.0
+					naquadah_alloy_mechanical_press = 8.0
+					naquadah_alloy_mechanical_mixer = 4.0
+					naquadah_alloy_millstone = 4.0
+					naquadah_alloy_mechanical_saw = 8.0
+					naquadah_alloy_mechanical_pump = 4.0
+
+				[kinetics.stressValues.v1.impact.darmstadtium]
+					darmstadtium_shaft = 0.0
+					andesite_encased_darmstadtium_shaft = 0.0
+					brass_encased_darmstadtium_shaft = 0.0
+					darmstadtium_cogwheel = 0.0
+					large_darmstadtium_cogwheel = 0.0
+					andesite_encased_darmstadtium_cogwheel = 0.0
+					andesite_encased_large_darmstadtium_cogwheel = 0.0
+					brass_encased_darmstadtium_cogwheel = 0.0
+					brass_encased_large_darmstadtium_cogwheel = 0.0
+					darmstadtium_crushing_wheel = 4.5
+					darmstadtium_encased_fan = 4.5
+					darmstadtium_gearbox = 0.0
+					darmstadtium_mechanical_press = 9.0
+					darmstadtium_mechanical_mixer = 4.5
+					darmstadtium_millstone = 4.5
+					darmstadtium_mechanical_saw = 9.0
+					darmstadtium_mechanical_pump = 4.5
+
+				[kinetics.stressValues.v1.impact.neutronium]
+					neutronium_shaft = 0.0
+					andesite_encased_neutronium_shaft = 0.0
+					brass_encased_neutronium_shaft = 0.0
+					neutronium_cogwheel = 0.0
+					large_neutronium_cogwheel = 0.0
+					andesite_encased_neutronium_cogwheel = 0.0
+					andesite_encased_large_neutronium_cogwheel = 0.0
+					brass_encased_neutronium_cogwheel = 0.0
+					brass_encased_large_neutronium_cogwheel = 0.0
+					neutronium_crushing_wheel = 5.0
+					neutronium_encased_fan = 5.6
+					neutronium_gearbox = 0.0
+					neutronium_mechanical_press = 10.0
+					neutronium_mechanical_mixer = 5.0
+					neutronium_millstone = 5.0
+					neutronium_mechanical_saw = 10.0
+					neutronium_mechanical_pump = 5.0
+
+				[kinetics.stressValues.v1.impact."gtceu:rubber"]
+					rubber_belt_andesite_alloy = 0.0
+					rubber_belt_steel = 0.0
+
+				[kinetics.stressValues.v1.impact."gtceu:silicone_rubber"]
+					silicone_rubber_belt_aluminium = 0.0
+					silicone_rubber_belt_stainless_steel = 0.0
+
+				[kinetics.stressValues.v1.impact."gtceu:polyethylene"]
+					polyethylene_belt_titanium = 0.0
+					polyethylene_belt_tungsten_steel = 0.0
+
+				[kinetics.stressValues.v1.impact."gtceu:polytetrafluoroethylene"]
+					polytetrafluoroethylene_belt_rhodium_plated_palladium = 0.0
+					polytetrafluoroethylene_belt_naquadah_alloy = 0.0
+
+				[kinetics.stressValues.v1.impact."gtceu:polybenzimidazole"]
+					polybenzimidazole_belt_darmstadtium = 0.0
+					polybenzimidazole_belt_neutronium = 0.0
+
+			#.
+			#Fine tune settings related to tiers
+			[kinetics.stressValues.v1.maxCapacity]
+
+				#.
+				#.
+				#Settings related to andesite tier machines
+				[kinetics.stressValues.v1.maxCapacity.andesite]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					andesiteMaxCapacity = 8
+
+				#.
+				#Settings related to steel tier machines
+				[kinetics.stressValues.v1.maxCapacity.steel]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					steelMaxCapacity = 32
+
+				#.
+				#Settings related to aluminium tier machines
+				[kinetics.stressValues.v1.maxCapacity.aluminium]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					aluminiumMaxCapacity = 128
+
+				#.
+				#Settings related to stainless steel tier machines
+				[kinetics.stressValues.v1.maxCapacity.stainlessSteel]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					stainlessSteelMaxCapacity = 512
+
+				#.
+				#Settings related to titanium tier machines
+				[kinetics.stressValues.v1.maxCapacity.titanium]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					titaniumMaxCapacity = 2048
+
+				#.
+				#Settings related to tungstensteel tier machines
+				[kinetics.stressValues.v1.maxCapacity.tungstensteel]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					tungstensteelMaxCapacity = 8192
+
+				#.
+				#Settings related to palladium tier machines
+				[kinetics.stressValues.v1.maxCapacity.palladium]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					palladiumMaxCapacity = 32768
+
+				#.
+				#Settings related to naquadah tier machines
+				[kinetics.stressValues.v1.maxCapacity.naquadah]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					naquadahMaxCapacity = 131072
+
+				#.
+				#Settings related to darmstadtium tier machines
+				[kinetics.stressValues.v1.maxCapacity.darmstadtium]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					darmstadtiumMaxCapacity = 524288
+
+				#.
+				#Settings related to neutronium tier machines
+				[kinetics.stressValues.v1.maxCapacity.neutronium]
+					#.
+					#Configure the max stress a kinetic block of this tier can support.
+					#Range: > -2147483648
+					neutroniumMaxCapacity = 2097152
+
+	#.
+	#Fine tune settings related to pumps
+	[kinetics.pumps]
+
+		#.
+		#.
+		#Configure the individual pressure of pumps. Note that pressure is multiplied by the speed of the pump
+		[kinetics.pumps.pressure]
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			andesitePressure = 4.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			steelPressure = 16.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			aluminiumPressure = 64.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			stainlessSteelPressure = 256.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			titaniumPressure = 1028.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			tungstensteelPressure = 4096.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			palladiumPressure = 16384.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			naquadahPressure = 65536.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			darmstadtiumPressure = 262144.0
+			#.
+			#Range: 0.0 ~ 3.4028234663852886E38
+			neutroniumPressure = 1048576.0
+

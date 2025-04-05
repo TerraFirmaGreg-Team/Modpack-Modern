@@ -1057,8 +1057,10 @@ function registerTFCMaterialsRecipes(event) {
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 				.id(`tfc:heating/metal/${material.getName()}_trapdoor`)
 
+			let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
+
 			// Люк
-			event.recipes.tfc.anvil(`tfc:metal/trapdoor/${material.getName()}`, `gtceu:${material.getName()}_plate`, ['bend_last', 'draw_second_last', 'draw_third_last'])
+			event.recipes.tfc.anvil(`tfc:metal/trapdoor/${material.getName()}`, plateItem, ['bend_last', 'draw_second_last', 'draw_third_last'])
 				.tier(tfcProperty.getTier())
 				.id(`tfc:anvil/${material.getName()}_trapdoor`)
 
@@ -1068,12 +1070,12 @@ function registerTFCMaterialsRecipes(event) {
 				.id(`tfc:heating/metal/${material.getName()}_bars`)
 
 			// 8x Решетка
-			event.recipes.tfc.anvil(`8x tfc:metal/bars/${material.getName()}`, `gtceu:${material.getName()}_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`8x tfc:metal/bars/${material.getName()}`, plateItem, ['upset_last', 'punch_second_last', 'punch_third_last'])
 				.tier(tfcProperty.getTier())
 				.id(`tfc:anvil/${material.getName()}_bars`)
 
 			// 16x Решетка
-			event.recipes.tfc.anvil(`16x tfc:metal/bars/${material.getName()}`, `gtceu:double_${material.getName()}_plate`, ['upset_last', 'punch_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`16x tfc:metal/bars/${material.getName()}`, ChemicalHelper.get(TagPrefix.plateDouble, material, 1), ['upset_last', 'punch_second_last', 'punch_third_last'])
 				.tier(tfcProperty.getTier())
 				.id(`tfc:anvil/${material.getName()}_bars_double`)
 
