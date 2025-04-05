@@ -513,18 +513,18 @@
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
-			description: ["quests.low_voltage.lv_age_progression.desc"]
+			description: ["{quests.low_voltage.lv_age_progression.desc}"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "648BCF486E16CCB2"
 			shape: "circle"
 			size: 1.5d
-			subtitle: "quests.low_voltage.lv_age_progression.subtitle"
+			subtitle: "{quests.low_voltage.lv_age_progression.subtitle}"
 			tasks: [{
 				id: "07CE2766ECA4B0D8"
 				title: "quests.low_voltage.lv_age_progression.task"
 				type: "checkmark"
 			}]
-			title: "quests.low_voltage.lv_age_progression.title"
+			title: "{quests.low_voltage.lv_age_progression.title}"
 			x: 0.0d
 			y: 4.5d
 		}

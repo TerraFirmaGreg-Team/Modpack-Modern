@@ -69,5 +69,5 @@ const registerEtchedRecipes = (event) => {
     event.shapeless('minecraft:music_disc_5', ['etched:blank_music_disc', 'minecraft:deepslate'])
     event.shapeless('create_connected:music_disc_elevator', ['etched:blank_music_disc', 'create:elevator_pulley'])
     //dear god why
-    event.shapeless('gtceu:sus_record', ['etched:blank_music_disc', '#tfc:knives', 'tfc:food/green_bean'])
+    event.shapeless('gtceu:sus_record', ['etched:blank_music_disc', '#tfc:knives', 'tfc:food/green_bean']).id('tfg:sus_record');
 }
