@@ -228,6 +228,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(128)
 		.EUt(3)
 
+	event.recipes.gtceu.brewery('biomass_from_spider_eyes')
+		.itemInputs('minecraft:spider_eye')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
 	//#endregion
 
 	//#region Выход: Рыбье масло

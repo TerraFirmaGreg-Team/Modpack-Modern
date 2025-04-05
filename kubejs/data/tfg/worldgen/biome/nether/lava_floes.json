@@ -144,6 +144,12 @@
 				"weight": 20
 			},
 			{
+				"type": "minecraft:phantom",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
 				"type": "minecraft:wither_skeleton",
 				"maxCount": 1,
 				"minCount": 1,

@@ -165,7 +165,7 @@
 			{
 				"type": "minecraft:spider",
 				"maxCount": 4,
-				"minCount": 4,
+				"minCount": 2,
 				"weight": 50
 			},
 			{
@@ -175,6 +175,12 @@
 				"weight": 100
 			},
 			{
+				"type": "minecraft:phantom",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 2,
 				"minCount": 1,
@@ -182,7 +188,7 @@
 			},
 			{
 				"type": "endermanoverhaul:mushroom_fields_enderman",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 100
 			}
