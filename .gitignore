@@ -115,5 +115,5 @@ gtceu/prospection_cache/
 /tools/OresToFieldGuide/obj/*
 /tools/MarsBiomes/bin/*
 /tools/MarsBiomes/obj/*
-/tools/OUTPUT/*
+**/OUTPUT/
 .vs/

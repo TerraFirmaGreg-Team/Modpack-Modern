@@ -117,16 +117,23 @@ namespace LanguageMerger
         public async Task<bool> Run()
         {
             ConsoleLogHelper.WriteLine("Language Merger Program has Started!", LogLevel.Message);
+
+            ConsoleLogHelper.WriteLine("Generating Mod Locales", LogLevel.Message);
             await GenerateModLocales();
-
+            ConsoleLogHelper.WriteLine("Creating Output Directories", LogLevel.Message);
             await CreateOutputDirectories();
+            ConsoleLogHelper.WriteLine("Deserializing JSON Files", LogLevel.Message);
             await DeserializeJSONFiles();
+            ConsoleLogHelper.WriteLine("Merging Deserialized JSON Files", LogLevel.Message);
             await MergeLanguageDictionaries();
-
+            ConsoleLogHelper.WriteLine("Writing Files", LogLevel.Message);
             await WriteFiles();
 
             if (_arguments.shouldOverwriteFiles)
+            {
+                ConsoleLogHelper.WriteLine("Overwriting Files", LogLevel.Message);
                 await MoveFilesToKJSAssetsFolder();
+            }
 
             return true;
         }
@@ -139,11 +146,14 @@ namespace LanguageMerger
                 ModLocale locale = new ModLocale(modDirectory.Name);
                 var localeFolders = modDirectory.EnumerateDirectories().ToArray();
 
+                int jsonFileCount = 0;
                 foreach(var localeFolder in localeFolders)
                 {
                     var languageFiles = localeFolder.EnumerateFiles("*.json", SearchOption.AllDirectories).ToList();
+                    jsonFileCount = languageFiles.Count;
                     locale.localeToFiles.Add(localeFolder.Name, languageFiles.ToArray());
                 }
+                ConsoleLogHelper.WriteLine($"Created Mod Locale for {modDirectory}, found {jsonFileCount} json files", LogLevel.Info);
                 _modLocales.Add(locale);
             }
             return Task.CompletedTask;
@@ -154,6 +164,7 @@ namespace LanguageMerger
             List<Task> tasks = new List<Task>();
             foreach (ModLocale modLocale in _modLocales)
             {
+                ConsoleLogHelper.WriteLine($"Deserializing JSON files for {modLocale.modID}", LogLevel.Info);
                 tasks.Add(modLocale.DeserializeDictionaries());
             }
             await Task.WhenAll(tasks);
@@ -164,6 +175,7 @@ namespace LanguageMerger
             List<Task> tasks = new List<Task>();
             foreach(ModLocale locale in _modLocales)
             {
+                ConsoleLogHelper.WriteLine($"Merging JSON for {locale.modID}", LogLevel.Info);
                 tasks.Add(locale.MergeDeserializedDictionaries());
             }
             await Task.WhenAll(tasks);
@@ -189,6 +201,7 @@ namespace LanguageMerger
             List<Task> tasks = new List<Task>();
             foreach(ModLocale locale in _modLocales)
             {
+                ConsoleLogHelper.WriteLine($"Writing merged JSON for {locale.modID}'s Locales:\n{string.Join('\n', locale.localeToFiles.Keys)}", LogLevel.Info);
                 tasks.Add(locale.WriteFiles(_arguments.shouldPrettyPrint));
             }
             await Task.WhenAll(tasks);
@@ -199,6 +212,7 @@ namespace LanguageMerger
             List<Task> tasks = new List<Task>();
             foreach(ModLocale locale in _modLocales)
             {
+                ConsoleLogHelper.WriteLine($"Moving merged JSON Files for {locale.modID} to the kjs assets folder.", LogLevel.Info);
                 tasks.Add(locale.MoveFilesToKJSAssetsFolder(_arguments.kjsAssetsFolder));
             }
             await Task.WhenAll(tasks);

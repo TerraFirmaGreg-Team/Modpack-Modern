@@ -30,14 +30,15 @@ For example, the files under ``LanguageFiles/tfc/en_us`` are the localization ov
 
 ## Running the Merger
 
-* To run the merger, go to ``minecraft/tools`` and run the LanguageMerger shortcut.
+* To run the merger, go to ``minecraft/tools/LanguageMerger/Executables`` and run the LanguageMerger shortcut.
+* If you're running a Windows machine, open the win-x64 folder and run "LanguageMerger.exe"
+* If you're running a Linux or Mac, open the respective folder for your operating system, open the Console there and type the following command
 
-## FAQ:
+    ```
+    chmod +x LanguageMerger
+    ./LanguageMerger
+    ```
 
-### Q: I dont have a Windows Machine
-A: Assuming you have DotNet installed, you can use the dotnet command to execute the main .dll that contains the LanguageMerger.
+## I have Questions
 
-Open your Terminal and type the command ``dotnet LanguageMerger/bin/Debug/net8.0/LanguageMerger.dll``
-
-### Q: I have other questions
-A: You can ask in the TerraFirmaGreg discord server's forum post related to the [1.20 Modpack Contribution Megathread](https://discord.com/channels/400913133620822016/1331744604701069393). Ask there or ping @nebby1999
+You can ask in the TerraFirmaGreg discord server's forum post related to the [1.20 Modpack Contribution Megathread](https://discord.com/channels/400913133620822016/1331744604701069393). Ask there or ping @nebby1999 (the creator of the LanguageMerger)
