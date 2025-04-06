@@ -270,6 +270,17 @@ function registerTFGMoldRecipes(event) {
 			S: 'gtceu:empty_mold',
 			h: '#forge:tools/hammers',
 		}))
+	
+    event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('tfg:mattock_head_extruder_mold', [
+			'  h',
+			'fS ',
+			'   '
+		], {
+			S: 'gtceu:empty_mold',
+			f: '#forge:tools/files',
+			h: '#forge:tools/hammers'
+		}))
 
 
 	let steelIngots = ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4);

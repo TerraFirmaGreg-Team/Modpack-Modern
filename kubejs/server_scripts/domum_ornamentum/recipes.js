@@ -65,7 +65,7 @@ const registerDomumOrnamentumRecipes = (event) => {
          ], 
          {
              B: 'domum_ornamentum:cobblestone_extra',
-             A: 'tfc:plant/moss',
+             A: '#tfc:moss',
          }).id('domum_ornamentum:mossy_cobblestone_extra');
 
          event.shaped(Item.of('domum_ornamentum:wheat_extra', 5),

@@ -2,8 +2,23 @@
 
 function registerTFGMiscellaneousRecipes(event) {
 
+	//tfc:moss
+	event.replaceInput({}, 'minecraft:vine', '#tfc:moss')
+
 	//forge:wax
 	event.replaceInput({}, 'firmalife:beeswax', '#forge:wax')
+
+	//Moss
+	event.shapeless('1x minecraft:moss_block', [
+		'#tfc:dirt',
+		'#tfc:moss'
+	]).id(`tfg:shapeless/moss_block`)
+
+	event.shaped('6x minecraft:moss_carpet', [
+		'AA'
+		],{
+		A: 'minecraft:moss_block'
+		}).id(`tfg:shaped/moss_carpet`)
 
 	//paraffin
 	event.recipes.gtceu.chemical_reactor('tfg:paraffin_wax_from_lubricant')

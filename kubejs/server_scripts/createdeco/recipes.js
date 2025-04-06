@@ -10,7 +10,7 @@ const registerCreatedecoRecipes = (event) => {
         'createdeco:industrial_iron_sheet': 'gtceu:steel_plate',
         'create:brass_sheet' : 'gtceu:brass_plate',
         'minecraft:torch' : 'minecraft:glowstone_dust',
-        'minecraft:moss_block' : 'tfc:plant/moss',
+        'minecraft:vine' : '#tfc:moss',
         'create:brass_nugget' : 'gtceu:brass_nugget',
         'create:andesite_alloy' : 'gtceu:wrought_iron_ingot',
         'createdeco:andesite_sheet' : 'gtceu:wrought_iron_plate',
@@ -46,7 +46,6 @@ const registerCreatedecoRecipes = (event) => {
     });
 
     function lampRecipe(output, lampType, lampColor) {
-        console.log(`Creating recipe for: ${output} (Type: ${lampType}, Color: ${lampColor})`);
 
         const replacementLampType = lampType;
         if(lampType == 'industrial_iron') {
@@ -87,7 +86,6 @@ const registerCreatedecoRecipes = (event) => {
             ingredients.P = 'gtceu:steel_plate';
         }
 
-        console.log(`Ingredients for ${output}:`, ingredients);
     
         // Create the shaped recipe
 
@@ -96,7 +94,6 @@ const registerCreatedecoRecipes = (event) => {
             'DTX',
             'XP '
         ], ingredients);
-        console.log(`Recipe successfully created for: ${output}`);
     }
 
     // Loop through each lamp type and color to create the recipes

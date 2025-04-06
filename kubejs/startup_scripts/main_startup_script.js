@@ -6,7 +6,6 @@
 StartupEvents.registry('item', event => {
     registerGTCEuItems(event)
     registerTFGItems(event)
-    registerRnrItems(event)
 })
 
 /**
