@@ -11,9 +11,11 @@ const registerComfortsRecipes = (event) => {
 
 	//sleeping bag
 	event.recipes.minecraft.crafting_shaped("comforts:sleeping_bag_white", [
-		"AAA"
+		"AAA",
+		"B  "
 	], {
-		A: "#tfc:high_quality_cloth"
+		A: "#tfc:high_quality_cloth",
+		B: 'tfc:bone_needle'
 	});
 
 	event.recipes.minecraft.crafting_shaped("comforts:hammock_white", [
