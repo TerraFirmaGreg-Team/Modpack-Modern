@@ -58,6 +58,7 @@ public class MainClass
         Console.ReadKey();
     }
 
+
     private static bool TryGetProgramArguments(out ProgramArguments programArguments)
     {
         programArguments = new ProgramArguments();
