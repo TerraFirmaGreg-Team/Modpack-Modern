@@ -13,19 +13,36 @@ namespace Common
 
         public static DirectoryInfo GetMinecraftDirectory(string workingDir)
         {
-            var mcIndex = workingDir.LastIndexOf(MINECRAFT);
-            if (mcIndex != -1)
+            var directoryInfo = new DirectoryInfo(workingDir);
+
+            DirectoryInfo? result = null;
+            while(directoryInfo.Exists)
             {
-                return new DirectoryInfo(workingDir.Substring(0, mcIndex + MINECRAFT.Length));
+                var parent = directoryInfo.Parent;
+                var fileInfos = parent.GetFiles("*.json");
+                foreach(var fInfo in fileInfos)
+                {
+                    if(fInfo.Name == "pakku.json")
+                    {
+                        result = parent;
+                    }
+                }
+
+                if(result != null)
+                {
+                    break;
+                }
+                else
+                {
+                    directoryInfo = parent;
+                }
             }
 
-            var repoIndex = workingDir.LastIndexOf(REPONAME);
-            if (repoIndex != -1)
+            if(result == null)
             {
-                return new DirectoryInfo(workingDir.Substring(0, repoIndex + REPONAME.Length));
+                throw new DirectoryNotFoundException("Failed to find the \"minecraft\" directory. The pakku.json file was not found.");
             }
-
-            throw new DirectoryNotFoundException($"The \".{MINECRAFT}\" or \"{REPONAME}\" folder was not found.");
+            return result;
         }
     }
 }
