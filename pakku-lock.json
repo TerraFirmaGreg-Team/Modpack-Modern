@@ -2400,7 +2400,7 @@
             ]
         },
         {
-            "pakku_id": "GhaXYYvk5SvrEfRy",
+            "pakku_id": "rzlZhaTwcdqwHAxG",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -2416,28 +2416,6 @@
                 "modrinth": "2ygdYUcf"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "Waves-1.20.1-1.5.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2ygdYUcf/versions/X5VAOq7P/Waves-1.20.1-1.5.1.jar",
-                    "id": "X5VAOq7P",
-                    "parent_id": "2ygdYUcf",
-                    "hashes": {
-                        "sha512": "6eac3cee76b7543ff0d565752ab2272db36d8f4af6646b3c4434955e8527aec5b509aac79dd218227c2b739e390b3c9432fa0690eb2ccb88202fe0ae0d25fd56",
-                        "sha1": "dbbc8dfa855b3af469a48eb55687eb7363246263"
-                    },
-                    "required_dependencies": [],
-                    "size": 1278005,
-                    "date_published": "2025-03-27T02:37:13.337751Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "Waves-1.20.1-1.5.1.jar",
@@ -2459,6 +2437,28 @@
                     "required_dependencies": [],
                     "size": 1278005,
                     "date_published": "2025-03-27T02:35:35.863Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Waves-1.20.1-1.5.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/2ygdYUcf/versions/X5VAOq7P/Waves-1.20.1-1.5.1.jar",
+                    "id": "X5VAOq7P",
+                    "parent_id": "2ygdYUcf",
+                    "hashes": {
+                        "sha512": "6eac3cee76b7543ff0d565752ab2272db36d8f4af6646b3c4434955e8527aec5b509aac79dd218227c2b739e390b3c9432fa0690eb2ccb88202fe0ae0d25fd56",
+                        "sha1": "dbbc8dfa855b3af469a48eb55687eb7363246263"
+                    },
+                    "required_dependencies": [],
+                    "size": 1278005,
+                    "date_published": "2025-03-27T02:37:13.337751Z"
                 }
             ]
         },
@@ -3876,7 +3876,7 @@
             ]
         },
         {
-            "pakku_id": "6U8PYa5cwgWTAovS",
+            "pakku_id": "ws9PkrwZV82vo1QC",
             "type": "MOD",
             "slug": {
                 "curseforge": "domum-ornamentum"
@@ -3895,6 +3895,7 @@
                         "1.20.1"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "beta",
@@ -5357,48 +5358,6 @@
                     ],
                     "size": 20474579,
                     "date_published": "2024-05-05T04:13:42.693Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "kaQlC0Km3bqIKstE",
-            "pakku_links": [
-                "7G8CAYj7aYbcj9DY"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "firmacivplus"
-            },
-            "name": {
-                "modrinth": "FirmaCivPlus"
-            },
-            "id": {
-                "modrinth": "h1WsEaNH"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "firmacivplus-1.0.0-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/h1WsEaNH/versions/YGsrlUXs/firmacivplus-1.0.0-1.20.1.jar",
-                    "id": "YGsrlUXs",
-                    "parent_id": "h1WsEaNH",
-                    "hashes": {
-                        "sha512": "903faad27e53240af384ab78178bdc7cd772556d72da755cf6d1fcd6a0588b2e47d185fe5deb9dc60f03d500d13d5e4e175e6b09c2309b0fae56dd84ea95e7c6",
-                        "sha1": "9bdb54e464ca7ad507242d9f2d12c1b8c0761625"
-                    },
-                    "required_dependencies": [
-                        "6o49a8Vz"
-                    ],
-                    "size": 7027607,
-                    "date_published": "2025-03-09T20:59:03.534218Z"
                 }
             ]
         },
@@ -10723,7 +10682,7 @@
             ]
         },
         {
-            "pakku_id": "d0krlaqQ5KNCy7kc",
+            "pakku_id": "0S1ClgnxBj34qrW2",
             "pakku_links": [
                 "p2gtFoMFQckm3agI",
                 "F6H99cZ4H6jZRpEK"
