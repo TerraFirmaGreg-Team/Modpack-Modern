@@ -746,7 +746,7 @@ const registerMinecraftRecipes = (event) => {
 		'A  '
 	], {
 		A: '#forge:string',
-		B: '#forge:rings/wrought_iron'
+		B: '#forge:rings'
 	}).id('minecraft:lead')
 
 	//#endregion
