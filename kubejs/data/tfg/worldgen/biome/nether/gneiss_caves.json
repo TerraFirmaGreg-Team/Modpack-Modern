@@ -156,6 +156,12 @@
 				"weight": 50
 			},
 			{
+				"type": "minecraft:phantom",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 2,
 				"minCount": 1,

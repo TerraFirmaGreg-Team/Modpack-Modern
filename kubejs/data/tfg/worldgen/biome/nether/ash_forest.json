@@ -141,13 +141,19 @@
 			},
 			{
 				"type": "kaolinclayze:golem_2",
-				"maxCount": 4,
+				"maxCount": 3,
 				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:skeleton",
-				"maxCount": 4,
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "minecraft:phantom",
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 20
 			},

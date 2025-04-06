@@ -5,69 +5,7 @@
  * у которых должны быть удалены тэги и они должны быть скрыты в REI.
  */
 global.TFC_DISABLED_ITEMS = [
-    // Blocks
-    'tfc:metal/block/bismuth', 
-    'tfc:metal/block/bismuth_bronze', 
-    'tfc:metal/block/black_bronze', 
-    'tfc:metal/block/bronze', 
-    'tfc:metal/block/brass', 
-    'tfc:metal/block/copper', 
-    'tfc:metal/block/gold', 
-    'tfc:metal/block/nickel', 
-    'tfc:metal/block/rose_gold', 
-    'tfc:metal/block/silver', 
-    'tfc:metal/block/tin', 
-    'tfc:metal/block/zinc', 
-    'tfc:metal/block/sterling_silver', 
-    'tfc:metal/block/wrought_iron', 
-    'tfc:metal/block/cast_iron', 
-    'tfc:metal/block/steel', 
-    'tfc:metal/block/black_steel', 
-    'tfc:metal/block/blue_steel', 
-    'tfc:metal/block/red_steel',
-
-    // Stairs
-    'tfc:metal/block/bismuth_stairs', 
-    'tfc:metal/block/bismuth_bronze_stairs', 
-    'tfc:metal/block/black_bronze_stairs', 
-    'tfc:metal/block/bronze_stairs', 
-    'tfc:metal/block/brass_stairs', 
-    'tfc:metal/block/copper_stairs', 
-    'tfc:metal/block/gold_stairs', 
-    'tfc:metal/block/nickel_stairs', 
-    'tfc:metal/block/rose_gold_stairs', 
-    'tfc:metal/block/silver_stairs', 
-    'tfc:metal/block/tin_stairs', 
-    'tfc:metal/block/zinc_stairs', 
-    'tfc:metal/block/sterling_silver_stairs', 
-    'tfc:metal/block/wrought_iron_stairs', 
-    'tfc:metal/block/cast_iron_stairs', 
-    'tfc:metal/block/steel_stairs', 
-    'tfc:metal/block/black_steel_stairs', 
-    'tfc:metal/block/blue_steel_stairs', 
-    'tfc:metal/block/red_steel_stairs',
-
-    // Slabs
-    'tfc:metal/block/bismuth_slab', 
-    'tfc:metal/block/bismuth_bronze_slab', 
-    'tfc:metal/block/black_bronze_slab', 
-    'tfc:metal/block/bronze_slab', 
-    'tfc:metal/block/brass_slab', 
-    'tfc:metal/block/copper_slab', 
-    'tfc:metal/block/gold_slab', 
-    'tfc:metal/block/nickel_slab', 
-    'tfc:metal/block/rose_gold_slab', 
-    'tfc:metal/block/silver_slab', 
-    'tfc:metal/block/tin_slab', 
-    'tfc:metal/block/zinc_slab', 
-    'tfc:metal/block/sterling_silver_slab', 
-    'tfc:metal/block/wrought_iron_slab', 
-    'tfc:metal/block/cast_iron_slab', 
-    'tfc:metal/block/steel_slab', 
-    'tfc:metal/block/black_steel_slab', 
-    'tfc:metal/block/blue_steel_slab', 
-    'tfc:metal/block/red_steel_slab',
-
+   
     // Ingots
     "tfc:metal/ingot/bismuth",
     "tfc:metal/ingot/bismuth_bronze",
@@ -95,15 +33,11 @@ global.TFC_DISABLED_ITEMS = [
     "tfc:metal/double_ingot/sterling_silver",
     "tfc:metal/double_ingot/wrought_iron",
     "tfc:metal/double_ingot/steel",
-    "tfc:metal/double_ingot/black_steel",
-    "tfc:metal/double_ingot/red_steel",
-    "tfc:metal/double_ingot/blue_steel",
     "tfc:metal/double_ingot/brass",
     "tfc:metal/double_ingot/nickel",
     "tfc:metal/double_ingot/silver",
     "tfc:metal/double_ingot/tin",
     "tfc:metal/double_ingot/zinc",
-    "tfc:metal/double_ingot/cast_iron",
     "tfc:metal/double_ingot/copper",
     "tfc:metal/double_ingot/gold",
     
@@ -958,10 +892,8 @@ global.TFC_QUERN_POWDER_RECIPE_COMPONENTS = [
     { input: '#forge:dusts/borax', output: '4x tfc:powder/flux', name: 'flux_powder' },
     { input: '#forge:dusts/soda_ash', output: '4x tfc:powder/soda_ash', name: 'soda_ash' },
     { input: 'gtceu:charcoal_dust', output: '2x tfc:powder/charcoal', name: 'charcoal' },
-    { input: 'gtceu:raw_graphite', output: 'gtceu:graphite_dust', name: 'raw_graphite_to_dust' },
-    { input: 'gtceu:poor_raw_graphite', output: '5x gtceu:tiny_graphite_dust', name: 'poor_raw_graphite_to_dust' },
-    { input: 'gtceu:rich_raw_graphite', output: '2x gtceu:graphite_dust', name: 'rich_graphite_to_dust' },
-    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' }
+    { input: 'tfc:ore/sylvite', output: '4x tfc:powder/sylvite', name: 'sylvite' },
+    { input: 'firmalife:ore/small_chromite', output: 'gtceu:small_chromite_dust', name: 'chromite' }
 ];
 
 global.TFC_QUERN_GRAIN_RECIPE_COMPONENTS = [

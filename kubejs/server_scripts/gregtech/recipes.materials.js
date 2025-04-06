@@ -114,19 +114,21 @@ function registerGTCEUMetalRecipes(event) {
 		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
 			const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
-			let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
+			//let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
 			let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
 			if (!plateStack.isEmpty()) {
 
+				// TODO: revisit this when Greate lets us make our own recipes
+
 				// Слиток -> Стержень
-				event.recipes.createSequencedAssembly([plateStack.withChance(4), smallDustStack], ingotStack, [
-					event.recipes.createPressing(ingotStack, ingotStack)
-				])
-					.transitionalItem(ingotStack)
-					.loops(1)
-					.id(`tfg:pressing/${material.getName()}_plate`);
+				//event.recipes.createSequencedAssembly([plateStack.withChance(4), smallDustStack], ingotStack, [
+				//	event.recipes.createPressing(ingotStack, ingotStack)
+				//])
+				//	.transitionalItem(ingotStack)
+				//	.loops(1)
+				//	.id(`tfg:pressing/${material.getName()}_plate`);
 
 				if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
 
@@ -262,136 +264,116 @@ function registerGTCEUMetalRecipes(event) {
 	}
 
 	const processPoorRawOre = (tagPrefix, material) => {
-		const poorOreItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (poorOreItem.isEmpty()) return
-
+		const poorOreItem = ChemicalHelper.get(tagPrefix, material, 2)
 		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
-		if (crushedOreItem.isEmpty()) return
 
-		// Бедная сырая руда -> Дробленная руда (75%)
-		event.recipes.createCrushing([crushedOreItem.withChance(0.75)], poorOreItem)
-			.processingTime(200)
-			.id(`tfg:crushing/${material.getName()}_crushed_ore_from_poor_raw_ore`)
+		if (poorOreItem != null && crushedOreItem != null) {
+			event.recipes.tfc.quern(crushedOreItem, poorOreItem)
+				.id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
+		}
 	}
 
 	const processNormalRawOre = (tagPrefix, material) => {
 		const normalOreItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (normalOreItem.isEmpty()) return
-
 		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
-		if (crushedOreItem.isEmpty()) return
 
-		// Нормальная сырая руда -> Дробленная руда + Дробленная руда (20%)
-		event.recipes.createCrushing([crushedOreItem, crushedOreItem.withChance(0.2)], normalOreItem)
-			.processingTime(200)
-			.id(`tfg:crushing/${material.getName()}_crushed_ore_from_normal_raw_ore`)
+		if (normalOreItem != null && crushedOreItem != null) {
+			event.recipes.tfc.quern(crushedOreItem, normalOreItem)
+				.id(`tfg:quern/${material.getName()}_crushed_ore_from_normal_raw_ore`)
+		}
 	}
 
 	const processRichRawOre = (tagPrefix, material) => {
 		const richOreItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (richOreItem.isEmpty()) return
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 2)
 
-		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
-		if (crushedOreItem.isEmpty()) return
-
-		// Богатая сырая руда -> Дробленная руда + Дробленная руда (20%)
-		event.recipes.createCrushing([crushedOreItem, crushedOreItem, crushedOreItem.withChance(0.2)], richOreItem)
-			.processingTime(200)
-			.id(`tfg:crushing/${material.getName()}_crushed_ore_from_rich_raw_ore`)
+		if (richOreItem != null && crushedOreItem != null) {
+			event.recipes.createCrushing(crushedOreItem, richOreItem)
+				.id(`tfg:quern/${material.getName()}_crushed_ore_from_rich_raw_ore`)
+		}
 	}
 
-	const processCrushedDust = (tagPrefix, material) => {
-		const crushedDustItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (crushedDustItem.isEmpty()) return
+	const processCrushedOre = (tagPrefix, material) => {
+		const crushedOreItem = ChemicalHelper.get(tagPrefix, material, 1)
+		const pureOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
 
-		const pureDustItem = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
-		if (pureDustItem.isEmpty()) return
+		if (crushedOreItem != null && pureOreItem != null) {
+			
+			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
+			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
-		// Дробленная руда -> Очищенная руда (90%)
-		event.recipes.createSplashing(pureDustItem, crushedDustItem)
-			.id(`tfg:splashing/${material.getName()}_purified_ore`)
-
-		// Дробленная руда -> Очищенная руда
-		event.custom({
-			type: "ae2:transform",
-			circumstance: {
-				type: "fluid",
-				tag: "tfc:water"
-			},
-			ingredients: [
-				crushedDustItem.toJson()
-			],
-			result: pureDustItem.toJson()
-		}).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
+			event.recipes.greate.splashing([pureOreItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], crushedOreItem)
+				.processingTime(100)
+				.id(`tfg:splashing/${material.getName()}_purified_ore`)
+			
+			// Дробленная руда -> Очищенная руда
+			event.custom({
+				type: "ae2:transform",
+				circumstance: {
+					type: "fluid",
+					tag: "tfc:water"
+				},
+				ingredients: [
+					crushedOreItem.toJson()
+				],
+				result: pureOreItem.toJson()
+			}).id(`tfg:ae_transform/${material.getName()}_purified_ore`)
+		}
 	}
 
 	const processImpureDust = (tagPrefix, material) => {
 		const impureDustItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (impureDustItem.isEmpty()) return
-
 		const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
-		if (dustItem.isEmpty()) return
 
-		// Грязная пыль -> Пыль (90%)
-		event.recipes.createSplashing(dustItem, impureDustItem)
-			.id(`tfg:splashing/${material.getName()}_dust_from_impure`)
+		if (impureDustItem != null && dustItem != null) {
+			
+			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
+			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
-		// Грязная пыль -> Пыль
-		event.custom({
-			type: "ae2:transform",
-			circumstance: {
-				type: "fluid",
-				tag: "tfc:water"
-			},
-			ingredients: [
-				impureDustItem.toJson()
-			],
-			result: dustItem.toJson()
-		}).id(`tfg:ae_transform/${material.getName()}_dust_from_impure`)
+			event.recipes.greate.splashing([dustItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], impureDustItem)
+				.processingTime(100)
+				.id(`tfg:splashing/${material.getName()}_dust_from_impure`)
+
+			// Грязная пыль -> Пыль
+			event.custom({
+				type: "ae2:transform",
+				circumstance: {
+					type: "fluid",
+					tag: "tfc:water"
+				},
+				ingredients: [
+					impureDustItem.toJson()
+				],
+				result: dustItem.toJson()
+			}).id(`tfg:ae_transform/${material.getName()}_dust_from_impure`)
+		}
 	}
 
 	const processPureDust = (tagPrefix, material) => {
 		const pureDust = ChemicalHelper.get(tagPrefix, material, 1)
-		if (pureDust.isEmpty()) return
-
 		const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
-		if (dustItem.isEmpty()) return
 
-		// Очищенная пыль -> Пыль (90%)
-		event.recipes.createSplashing(dustItem, pureDust)
-			.id(`tfg:splashing/${material.getName()}_dust_from_pure`)
+		if (pureDust != null && dustItem != null) {
 
-		// Очищенная пыль -> Пыль
-		event.custom({
-			type: "ae2:transform",
-			circumstance: {
-				type: "fluid",
-				tag: "tfc:water"
-			},
-			ingredients: [
-				pureDust.toJson()
-			],
-			result: dustItem.toJson()
-		}).id(`tfg:ae_transform/${material.getName()}_dust_from_pure`)
-	}
+			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
+			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
-	const processDust = (tagPrefix, material) => {
-		const dustItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (dustItem.isEmpty()) return
+			event.recipes.greate.splashing([dustItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], pureDust)
+				.processingTime(100)
+				.id(`tfg:splashing/${material.getName()}_dust_from_pure`)
 
-		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		const gemItem = ChemicalHelper.get(TagPrefix.gem, material, 1)
-
-		if (!ingotItem.isEmpty()) {
-			event.recipes.createCrushing(dustItem, ingotItem)
-				.processingTime(250)
-				.id(`tfg:crushing/${material.getName()}_dust`)
-		}
-
-		if (!gemItem.isEmpty()) {
-			event.recipes.createMilling(dustItem, gemItem)
-				.processingTime(200)
-				.id(`tfg:milling/${material.getName()}_dust`)
+			// Очищенная пыль -> Пыль
+			event.custom({
+				type: "ae2:transform",
+				circumstance: {
+					type: "fluid",
+					tag: "tfc:water"
+				},
+				ingredients: [
+					pureDust.toJson()
+				],
+				result: dustItem.toJson()
+			}).id(`tfg:ae_transform/${material.getName()}_dust_from_pure`)
 		}
 	}
 
@@ -448,10 +430,9 @@ function registerGTCEUMetalRecipes(event) {
 			processNormalRawOre(TagPrefix.rawOre, material)
 			processRichRawOre(TFGTagPrefix.richRawOre, material)
 
-			processCrushedDust(TagPrefix.crushed, material)
+			processCrushedOre(TagPrefix.crushed, material)
 			processImpureDust(TagPrefix.dustImpure, material)
 			processPureDust(TagPrefix.dustPure, material)
-			processDust(TagPrefix.dust, material)
 
 			if (gemProperty != null) {
 				let gem = ChemicalHelper.get(TagPrefix.gem, material, 1);

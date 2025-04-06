@@ -130,18 +130,18 @@ function registerTFCStoneRecipes(event) {
 		// Сырой камень -> Гладкий
 		event.recipes.gtceu.laser_engraver(`raw_${stone}_to_smooth`)
 			.itemInputs(`tfc:rock/raw/${stone}`)
-			.notConsumable('gtceu:glass_lens')
+			.notConsumable('tfc:lens')
 			.itemOutputs(`tfc:rock/smooth/${stone}`)
 			.duration(32)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		// Укрепленный сырой камень -> Гладкий
 		event.recipes.gtceu.laser_engraver(`hardened_${stone}_to_smooth`)
 			.itemInputs(`tfc:rock/hardened/${stone}`)
-			.notConsumable('gtceu:glass_lens')
+			.notConsumable('tfc:lens')
 			.itemOutputs(`tfc:rock/smooth/${stone}`)
 			.duration(32)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		// Булыжник -> Ступени
 		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_stairs` })
@@ -316,10 +316,10 @@ function registerTFCStoneRecipes(event) {
 		// Блок кирпичей -> Резной кирпич
 		event.recipes.gtceu.laser_engraver(`chiseled_${stone}`)
 			.itemInputs(`tfc:rock/bricks/${stone}`)
-			.notConsumable('gtceu:glass_lens')
+			.notConsumable('tfc:lens')
 			.itemOutputs(`tfc:rock/chiseled/${stone}`)
 			.duration(32)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 
 		//#endregion
 

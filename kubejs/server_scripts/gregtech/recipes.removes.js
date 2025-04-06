@@ -2,6 +2,11 @@
 
 function removeGTCEURecipes(event) {
 
+	global.GTCEU_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
 	//#region Выход: Крошечная кучка камня
 
 	event.remove({ id: 'gtceu:macerator/macerate_stone_button' })

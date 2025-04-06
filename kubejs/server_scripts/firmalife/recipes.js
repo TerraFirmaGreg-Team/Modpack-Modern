@@ -38,6 +38,14 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/ore/normal_chromite' })
 	event.remove({ id: 'firmalife:heating/ore/rich_chromite' })
 
+	// Plated blocks
+	event.remove({ id: 'firmalife:crafting/crafting/metal/block/chromium' })
+	event.remove({ id: 'firmalife:crafting/metal/block/chromium_slab' })
+	event.remove({ id: 'firmalife:crafting/metal/block/chromium_stairs' })
+	event.remove({ id: 'firmalife:heating/metal/chromium_block' })
+	event.remove({ id: 'firmalife:heating/metal/chromium_block_slab' })
+	event.remove({ id: 'firmalife:heating/metal/chromium_block_stairs' })
+
 	// - Stainless Steel
 
 	// Ingot 
@@ -63,6 +71,14 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Jar lid
 	event.remove({ id: 'firmalife:heating/metal/stainless_steel_jar_lid' })
+
+	// Plated Blocks
+	event.remove({ id: 'firmalife:crafting/crafting/metal/block/stainless_steel' })
+	event.remove({ id: 'firmalife:crafting/metal/block/stainless_steel_slab' })
+	event.remove({ id: 'firmalife:crafting/metal/block/stainless_steel_stairs' })
+	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block' })
+	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_slab' })
+	event.remove({ id: 'firmalife:heating/metal/stainless_steel_block_stairs' })
 
 	//#endregion
 
@@ -753,4 +769,11 @@ const registerFirmaLifeRecipes = (event) => {
 	})
 
 	//#endregion
+
+	//#region Plated blocks
+
+	generatePlatedBlockRecipe(event, GTMaterials.Chromium);
+	generatePlatedBlockRecipe(event, GTMaterials.StainlessSteel);
+
+	// #endregion
 }

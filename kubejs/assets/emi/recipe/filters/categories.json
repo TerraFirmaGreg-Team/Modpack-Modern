@@ -25,6 +25,9 @@
             "category": "create:mystery_conversion"
         },
         {
+            "category": "create:fan_blasting"
+        },
+        {
             "category": "jumbofurnace:jumbo_furnace_upgrade"
         },
         {
@@ -56,6 +59,9 @@
         },
         {
             "category": "greate:automatic_brewing"
+        },
+        {
+            "category": "greate:pressing"
         },
         {
             "id": "/emi:/crafting/repairing/[^*]+/"

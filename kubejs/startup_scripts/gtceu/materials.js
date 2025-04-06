@@ -125,6 +125,7 @@ const registerGTCEuMaterialModification = (event) => {
 	//
 	//
 	//        /* Имеют двойные слитки */
+	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
@@ -178,6 +179,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
@@ -252,7 +254,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
 	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
 	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
-	GTMaterials.Brass.setMaterialSecondaryARGB(0x5F2E24)
+	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)
 	GTMaterials.Aluminium.setMaterialARGB(0xb6e5ff)
 	GTMaterials.Aluminium.setMaterialSecondaryARGB(0x7ca29b)
 	GTMaterials.Titanium.setMaterialARGB(0xe8b1fa)
