@@ -8,6 +8,11 @@ Key:
 ## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
+- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
+- Move the Hang glider quests to General Transportation, replace their position with the mining helmet.
+- Finish quest spoke: The Beneath
+- Finish quest spoke: GregTech
+
 
 ## Mods & Recipes
 - ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
@@ -32,6 +37,8 @@ Key:
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 - Change aircraft recipes to need mech crafter
+- Change framed button, pressure plates etc recipes to match other "normal" ones
+- Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
 ## Worldgen
 - ⏳ Redeix is working on some overworld structures
