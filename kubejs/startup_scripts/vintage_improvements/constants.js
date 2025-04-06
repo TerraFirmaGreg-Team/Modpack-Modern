@@ -15,6 +15,8 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:sulfur_block',
 	'vintageimprovements:sulfuric_acid_bucket',
 	'vintageimprovements:copper_sulfate',
+	'vintageimprovements:incomplete_redstone_module',
+	'vintageimprovements:incomplete_recipe_card',
 	
 	'vintageimprovements:bronze_sheet',
 	'vintageimprovements:amethyst_bronze_sheet',

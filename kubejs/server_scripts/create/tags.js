@@ -7,6 +7,8 @@ const registerCreateItemTags = (event) => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
+	// Is this Greate's fault?
+	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
 
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {

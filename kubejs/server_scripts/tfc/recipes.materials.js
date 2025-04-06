@@ -260,6 +260,8 @@ function registerTFCMaterialsRecipes(event) {
 						//#endregion
 					}
 
+					// Plated Blocks - applies for everything with a double ingot
+					generatePlatedBlockRecipe(event, material);
 				}
 
 				// Tools (From Double Ingots)

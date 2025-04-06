@@ -125,6 +125,7 @@ const registerGTCEuMaterialModification = (event) => {
 	//
 	//
 	//        /* Имеют двойные слитки */
+	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);

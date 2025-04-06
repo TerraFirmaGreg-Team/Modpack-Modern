@@ -5,7 +5,7 @@
  * @param {Internal.RecipesEventJS} event 
  */
 const registerGTCEURecipes = (event) => {
-	
+
 	registerGTCEUMetalRecipes(event)
 
 	removeGTCEURecipes(event)
@@ -127,7 +127,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
-	event.replaceOutput({id: 'gtceu:centrifuge/sticky_resin_separation'}, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
+	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
 
 	//#endregion
 
@@ -594,7 +594,7 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	// High Pressure Steam Miner
-	event.replaceInput({id: 'gtceu:shaped/steam_miner_steel' },
+	event.replaceInput({ id: 'gtceu:shaped/steam_miner_steel' },
 		'gtceu:lp_steam_miner', 'gtceu:steel_brick_casing')
 
 	//#region Выход: Стальные машины
@@ -1247,7 +1247,7 @@ const registerGTCEURecipes = (event) => {
 	// #endregion
 
 	// #region Rich coal processing
-	
+
 	event.recipes.gtceu.coke_oven("tfg:poor_coal_to_coke")
 		.itemInputs('gtceu:poor_raw_coal')
 		.itemOutputs('1x gtceu:coke_gem')
@@ -1435,12 +1435,12 @@ const registerGTCEURecipes = (event) => {
 
 	// #endregion
 
-	event.replaceInput({id: 'gtceu:shaped/nightvision_goggles'}, 'gtceu:glass_lens', 'tfc:lens')
-	
-	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'minecraft:iron_bars', '#tfg:metal_bars')
-	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'gtceu:wood_plate', '#tfc:lumber')
+	event.replaceInput({ id: 'gtceu:shaped/nightvision_goggles' }, 'gtceu:glass_lens', 'tfc:lens')
 
-	event.replaceInput({mod: 'gtceu'}, 'minecraft:sugar', '#tfg:sugars')
+	event.replaceInput({ id: 'gtceu:shaped/note_block' }, 'minecraft:iron_bars', '#tfg:metal_bars')
+	event.replaceInput({ id: 'gtceu:shaped/note_block' }, 'gtceu:wood_plate', '#tfc:lumber')
+
+	event.replaceInput({ mod: 'gtceu' }, 'minecraft:sugar', '#tfg:sugars')
 
 	event.recipes.gtceu.fluid_solidifier('tfg:solidify_glue')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
@@ -1448,5 +1448,7 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('tfc:glue')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
 
 }

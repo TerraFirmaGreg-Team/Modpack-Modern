@@ -19,7 +19,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/stressometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/smart_fluid_pipe' },
 			{ id: 'create:crafting/kinetics/portable_fluid_interface' },
-			{ id: 'create:crafting/kinetics/mechanical_piston' },
 			{ id: 'create:crafting/kinetics/gantry_carriage' },
 			{ id: 'create:crafting/kinetics/windmill_bearing' },
 			{ id: 'create:crafting/kinetics/mechanical_bearing' },
@@ -126,17 +125,6 @@ const registerCreateRecipes = (event) => {
 		'#tfg:metal_chains'
 	]).id('tfg:create/shapeless/encased_chain_drive')
 
-	// Механический пресс
-	event.shaped('create:mechanical_press', [
-		'A',
-		'B',
-		'C'
-	], {
-		A: 'greate:steel_shaft',
-		B: 'create:andesite_casing',
-		C: '#forge:storage_blocks/wrought_iron',
-	}).id('tfg:create/shaped/mechanical_press')
-
 	// Сопло
 	event.shaped('create:nozzle', [
 		'ABA',
@@ -162,12 +150,12 @@ const registerCreateRecipes = (event) => {
 		'ABA',
 		'AAA'
 	], {
-		A: '#forge:plates/wrought_iron',
+		A: '#forge:plates/iron',
 		B: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/basin')
 
 	event.recipes.gtceu.assembler('tfg:create/basin')
-		.itemInputs('5x #forge:plates/wrought_iron')
+		.itemInputs('5x #forge:plates/iron')
 		.circuit(3)
 		.itemOutputs('create:basin')
 		.duration(200)
@@ -1114,6 +1102,16 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/mechanical_crafting/potato_cannon')
 
 	// Липкий механический поршень
+	event.shaped('create:mechanical_piston', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: 'minecraft:piston',
+		B: 'create:andesite_casing',
+		C: '#tfg:shafts'
+	}).id('tfg:create/shaped/mechanical_piston')
+
 	event.shaped('create:sticky_mechanical_piston', [
 		'A',
 		'B',
@@ -1382,10 +1380,10 @@ const registerCreateRecipes = (event) => {
 
 		event.recipes.gtceu.laser_engraver(`engrave_polished_cut_${block}`)
 			.itemInputs(`create:cut_${block}`)
-			.notConsumable('gtceu:glass_lens')
+			.notConsumable('tfc:lens')
 			.itemOutputs(`create:polished_cut_${block}`)
 			.duration(32)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 			.circuit(1)
 
 		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:cut_${block}_bricks`, [
@@ -1398,10 +1396,10 @@ const registerCreateRecipes = (event) => {
 
 		event.recipes.gtceu.laser_engraver(`engrave_cut_${block}_bricks`)
 			.itemInputs(`create:cut_${block}`)
-			.notConsumable('gtceu:glass_lens')
+			.notConsumable('tfc:lens')
 			.itemOutputs(`create:cut_${block}_bricks`)
 			.duration(32)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 			.circuit(2)
 
 		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:small_${block}_bricks`, [
@@ -1414,10 +1412,10 @@ const registerCreateRecipes = (event) => {
 
 		event.recipes.gtceu.laser_engraver(`engrave_small_${block}_bricks`)
 			.itemInputs(`create:cut_${block}`)
-			.notConsumable('gtceu:glass_lens')
+			.notConsumable('tfc:lens')
 			.itemOutputs(`create:small_${block}_bricks`)
 			.duration(32)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 			.circuit(3)
 
 		generateCutterRecipe(event, `create:cut_${block}`, 0, [`create:cut_${block}_stairs`], 100, 8, `cut_${block}_to_stairs`)

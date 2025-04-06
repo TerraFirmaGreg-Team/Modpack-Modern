@@ -184,5 +184,6 @@ ServerEvents.recipes(event => {
     registerTFCGroomingStationRecipes(event)
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
+    registerVintageImprovementsRecipes(event)
     registerWaterFlasksRecipes(event)
 })
