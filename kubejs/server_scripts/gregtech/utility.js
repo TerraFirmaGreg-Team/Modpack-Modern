@@ -87,8 +87,6 @@ const getFillingNBT = (material, amount) => {
 }
 
 function generatePlatedBlockRecipe(event, material) {
-	console.log(`MATERIAL: ${material}`)
-
 	let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 	
 	let platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
