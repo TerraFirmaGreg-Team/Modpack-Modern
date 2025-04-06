@@ -192,7 +192,7 @@ global.CREATE_DISABLED_ITEMS = [
     'create:limestone',
 
     // Shit Glass
-	'create:crimson_window', 
+	  'create:crimson_window', 
     'create:warped_window', 
     'create:oak_window', 
     'create:spruce_window', 
@@ -204,7 +204,7 @@ global.CREATE_DISABLED_ITEMS = [
     'create:birch_window_pane', 
     'create:jungle_window_pane', 
     'create:acacia_window_pane', 
-	'create:crimson_window_pane',
+	  'create:crimson_window_pane',
     'create:warped_window_pane', 
 
     // Blocks

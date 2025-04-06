@@ -50,6 +50,21 @@ function registerTFCDirtRecipes(event) {
 
 	//#endregion
 
+	//AE Transform Mud
+	global.TFC_MUD_TYPES.forEach(mud => {
+		event.custom({
+			type: "ae2:transform",
+			circumstance: {
+				type: "fluid",
+				tag: "tfc:water"
+			},
+			ingredients: [
+				{item: `tfc:dirt/${mud}`}],
+			result: {item: `tfc:mud/${mud}`}
+		}).id(`tfg:ae_transform/${mud}_to_mud`)
+	})
+
+
 	//#region Грязь кирпичи
 
 	global.TFC_MUD_TYPES.forEach(mud => {

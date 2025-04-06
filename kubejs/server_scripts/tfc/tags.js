@@ -230,6 +230,12 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:stone_javelins', 'tfc:stone/javelin/igneous_intrusive')
     event.add('tfc:stone_javelins', 'tfc:stone/javelin/metamorphic')
     event.add('tfc:stone_javelins', 'tfc:stone/javelin/sedimentary')
+
+    //Moss
+    event.add('tfc:moss', 'tfc:plant/moss')
+    event.add('tfc:moss', 'tfc:plant/spanish_moss')
+    event.add('tfc:moss', 'tfc:plant/reindeer_lichen')
+    event.add('tfc:moss', 'tfc:plant/cobblestone_lichen')
 }
 
 const registerTFCBlockTags = (event) => {

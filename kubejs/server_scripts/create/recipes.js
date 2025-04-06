@@ -754,7 +754,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:tools/hammers',
 		B: '#forge:nuggets/brass',
 		C: '#forge:plates/brass',
-		D: '#forge:tools/file'
+		D: '#forge:tools/files'
 	}).id('tfg:create/shaped/brass_hand')
 
 	event.recipes.gtceu.assembler('tfg:create/brass_hand')

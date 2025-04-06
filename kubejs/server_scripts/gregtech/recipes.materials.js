@@ -411,6 +411,7 @@ function registerGTCEUMetalRecipes(event) {
 			processToolHead(TFGTagPrefix.toolHeadJavelin, 'tfg:javelin_head_extruder_mold', 15, material)
 			processToolHead(TFGTagPrefix.toolHeadChisel, 'tfg:chisel_head_extruder_mold', 16, material)
 			processToolHead(TFGTagPrefix.toolHeadMace, 'tfg:mace_head_extruder_mold', 17, material)
+			processToolHead(TFGTagPrefix.toolHeadMattock, 'tfg:mattock_head_extruder_mold', 18, material)
 		}
 
 		if (ingotProperty != null) {

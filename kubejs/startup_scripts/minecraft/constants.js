@@ -505,7 +505,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:suspicious_gravel',
     'minecraft:stonecutter',
     'minecraft:gravel',
-    'minecraft:moss_carpet',
     'minecraft:large_fern', 
     'minecraft:tall_grass', 
     'minecraft:sculk_vein', 

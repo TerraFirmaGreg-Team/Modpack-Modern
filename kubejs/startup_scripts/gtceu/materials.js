@@ -25,7 +25,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_DOUBLE_INGOTS,
 		GENERATE_FIRMALIFE_GREENHOUSE_BLOCKS,
 		HAS_SMALL_TFC_ORE,
-		HAS_SMALL_NATIVE_TFC_ORE
+		HAS_SMALL_NATIVE_TFC_ORE,
 	} = TFGMaterialFlags
 
 	const {

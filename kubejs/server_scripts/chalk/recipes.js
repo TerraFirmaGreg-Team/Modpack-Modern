@@ -42,5 +42,10 @@ const registerChalkRecipes = (evt) => {
 		evt.recipes.tfc.heating(`tfg:wet_${dyeName}_chalk`, 700)
 			.resultItem(`chalk:${dyeName}_chalk`)
 			.id(`chalk:heating/${dyeName}_chalk`)
+			
+		evt.smelting(
+			`chalk:${dyeName}_chalk`,
+			`tfg:wet_${dyeName}_chalk`
+		).id(`chalk:smelting/${dyeName}_chalk`)
 	})
 }

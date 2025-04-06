@@ -474,6 +474,8 @@ global.TFC_DISABLED_ITEMS = [
 
     // Windmill Blades
     "tfc:windmill_blade",
+    "tfc:rustic_windmill_blade",
+    "tfc:lattice_windmill_blade",
     "tfc:orange_windmill_blade",
     "tfc:magenta_windmill_blade",
     "tfc:light_blue_windmill_blade",
