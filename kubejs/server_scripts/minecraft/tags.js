@@ -56,6 +56,8 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('forge:cloth', 'minecraft:phantom_membrane')
     event.add('tfc:sewing_dark_cloth', 'minecraft:phantom_membrane')
+
+    event.remove('forge:gems', 'minecraft:charcoal')
 }
 
 const registerMinecraftBlockTags = (event) => {

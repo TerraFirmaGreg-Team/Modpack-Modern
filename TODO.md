@@ -38,11 +38,10 @@ Key:
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 - Change aircraft recipes to need mech crafter
-- Change framed button, pressure plates etc recipes to match other "normal" ones
 - Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
 ## Worldgen
-- ⏳ Redeix is working on some overworld structures
+- ✔ Redeix is working on some overworld structures
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical

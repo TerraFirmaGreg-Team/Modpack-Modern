@@ -11,41 +11,46 @@ function registerConstructionwandRecipes(event) {
 
     //new recipes
     event.shaped('1x constructionwand:stone_wand', [
-        '  B',
-        ' A ',
+        '  C',
+        ' B ',
         'A  '  
     ], {
-        A: '#forge:rods',
-        B: '#forge:ingots/copper'
+        A: '#forge:rods/wooden',
+        B: '#forge:ingots/copper',
+        C: '#forge:chipped_gems'
     }).id('constructionwand:shaped/stone_wand')
 
     event.shaped('1x constructionwand:iron_wand', [
-        '  B',
-        ' A ',
+        '  C',
+        ' B ',
         'A  '  
     ], {
-        A: '#forge:rods',
-        B: '#forge:ingots/wrought_iron'
+        A: '#forge:rods/wooden',
+        B: '#forge:ingots/wrought_iron',
+        C: '#forge:gems'
     }).id('constructionwand:shaped/iron_wand')
 
     event.shaped('1x constructionwand:diamond_wand', [
-        '  B',
-        ' A ',
+        ' DC',
+        ' B ',
         'A  '  
     ], {
         A: '#forge:rods/treated_wood',
-        B: '#forge:double_plates/blue_steel'
+        B: '#forge:double_ingots/blue_steel',
+        C: '#forge:exquisite_gems',
+        D: 'ae2:ender_dust'
     }).id('constructionwand:shaped/diamond_wand')
 
     event.shaped('1x constructionwand:infinity_wand', [
-        '  B',
+        ' EB',
         ' C ',
         'AD '  
     ], {
         A: '#forge:rods/polytetrafluoroethylene',
         C: '#forge:rods/long/aluminium',
         B: '#forge:double_plates/titanium',
-        D: '#gtceu:circuits/iv'
+        D: '#gtceu:circuits/iv',
+        E: 'minecraft:nether_star',
     }).id('constructionwand:shaped/infinity_wand')
 
     event.shaped('1x constructionwand:core_angel', [
