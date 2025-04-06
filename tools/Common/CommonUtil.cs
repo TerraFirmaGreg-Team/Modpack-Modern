@@ -8,25 +8,24 @@ namespace Common
 {
     public static class CommonUtil
     {
-        #region Constants
         public const string MINECRAFT = "minecraft";
-        #endregion
+        public const string REPONAME = "Modpack-Modern";
 
         public static DirectoryInfo GetMinecraftDirectory(string workingDir)
         {
-            var parent = Directory.GetParent(workingDir);
-
-            //search upwards recursively until the folder we're in has "minecraft" as it's parent, very likely "parent" will end up being the Tools folder in this scenario.
-            while (parent != null && parent.Name != MINECRAFT)
+            var mcIndex = workingDir.LastIndexOf(MINECRAFT);
+            if (mcIndex != -1)
             {
-                parent = Directory.GetParent(parent.FullName);
+                return new DirectoryInfo(workingDir.Substring(0, mcIndex + MINECRAFT.Length));
             }
 
-            if (parent != null && parent.Name == MINECRAFT)
+            var repoIndex = workingDir.LastIndexOf(REPONAME);
+            if (repoIndex != -1)
             {
-                return parent;
+                return new DirectoryInfo(workingDir.Substring(0, repoIndex + REPONAME.Length));
             }
-            throw new DirectoryNotFoundException($"The \".{MINECRAFT}\" folder was not found.");
+
+            throw new DirectoryNotFoundException($"The \".{MINECRAFT}\" or \"{REPONAME}\" folder was not found.");
         }
     }
 }

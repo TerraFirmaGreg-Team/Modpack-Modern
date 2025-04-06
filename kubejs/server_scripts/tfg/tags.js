@@ -84,6 +84,8 @@ const registerTFGItemTags = (event) => {
 
 const registerTFGBlockTags = (event) => {
 
+	event.add('minecraft:mineable/shovel', 'tfg:ash_pile')
+
 	// #region Nether blocks
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_deepslate')
@@ -92,15 +94,18 @@ const registerTFGBlockTags = (event) => {
 	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_deepslate')
 	event.add('tfc:grass_plantable_on', 'tfg:rock/hardened_deepslate')
 	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_deepslate')
+	event.add('tfc:rock/hardened', 'tfg:rock/hardened_deepslate')
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_blackstone')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_blackstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_blackstone')
 	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_blackstone')
 	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_blackstone')
+	event.add('tfc:rock/hardened', 'tfg:rock/hardened_blackstone')
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
+	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
 
 	// #endregion
 }

@@ -280,8 +280,8 @@ const registerTFCBlockTags = (event) => {
     event.add('tfc:monster_spawns_on', '#forge:ores')
     event.add('tfc:prospectable', '#forge:ores')
 
-    event.add('tfc:glass_basin_blocks', 'gtceu:brass_block')
-    event.add('tfc:glass_pouring_table', 'gtceu:brass_block')
+    event.add('tfc:glass_basin_blocks', 'create:brass_block')
+    event.add('tfc:glass_pouring_table', 'create:brass_block')
 
     event.add('tfc:glass_basin_blocks', 'tfc:red_kaolin_clay')
     event.add('tfc:glass_pouring_table', 'tfc:red_kaolin_clay')

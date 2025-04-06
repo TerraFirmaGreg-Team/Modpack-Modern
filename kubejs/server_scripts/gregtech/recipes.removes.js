@@ -2,6 +2,11 @@
 
 function removeGTCEURecipes(event) {
 
+	global.GTCEU_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
 	//#region Выход: Крошечная кучка камня
 
 	event.remove({ id: 'gtceu:macerator/macerate_stone_button' })
@@ -503,8 +508,10 @@ function removeGTCEURecipes(event) {
 	// Clay from mud
 	event.remove({ id: 'gtceu:compressor/mud_to_clay' })
 
-	// TODO: Удалить после фикса GTCEu
+	// Rubber extraction
 	event.remove({ id: 'gtceu:extractor/extract_raw_rubber_dust' })
+	event.remove({ id: 'gtceu:extractor/raw_rubber_from_resin' })
+	event.remove({ id: 'gtceu:extractor/raw_rubber_from_slime' })
 
 	// Mortar
 	event.remove({ id: 'gtceu:shaped/gem_to_dust_coal_chipped_gem' })
@@ -516,6 +523,10 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
   
 	event.remove({ id: 'gtceu:shaped_fluid_container/brick_from_water' })
+
+	// Gears
+	event.remove({ id: 'gtceu:extruder/extrude_wood_ingot_to_small_gear' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_wood_ingot_to_small_gear' })
 
 	// Misc vanilla stuff
 	event.remove({ id: 'gtceu:shaped/observer' })
@@ -561,6 +572,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:shaped/treated_door' })
 	event.remove({ id: 'gtceu:shaped/barrel' })
+	event.remove({ id: 'gtceu:shaped/book' })
 	event.remove({ id: 'gtceu:assembler/bell' })
 	event.remove({ id: 'gtceu:assembler/armor_stand' })
 	event.remove({ id: 'gtceu:assembler/piston_stainless_steel' })

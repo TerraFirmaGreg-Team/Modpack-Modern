@@ -6,27 +6,243 @@
 	icon: "gtceu:steam_bucket"
 	id: "784A885090386609"
 	order_index: 2
-	quest_links: [ ]
-	quests: [{
-		description: [
-			"something like"
-			"1) any hp steam boiler"
-			"2) a branch for macerator and compressor to make cogs"
-			"3) a branch with forge hammer and then mech press for cheaper plates. Also rolling mill"
-			"4) tree tapping for latex, then resin, then circuit boards"
-			"5) maybe an optional quest telling people about your blast furnace automation guide"
-			"6) a branch for glassblowing to eventually make tubes"
-			"6) then at the very end, deployer and the vacuum tube "
-		]
-		id: "188A3B7ABDCB2847"
-		tasks: [{
-			id: "0DE8AF823A6A8DF1"
-			title: "PYRITIE IDEA"
-			type: "custom"
-		}]
-		x: -8.0d
-		y: 0.5d
-	}]
+	quest_links: [
+		{
+			id: "62E10FCCD3CFFB25"
+			linked_quest: "26F07C926959FACF"
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			id: "1CE57ADA90D9E3A9"
+			linked_quest: "3C173357029AB649"
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			id: "36E0479110D898C9"
+			linked_quest: "20C2CE92459BE14A"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "7DD1C30EAA570D47"
+			linked_quest: "174DA15847665CF8"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			id: "76EE88E701134FA5"
+			linked_quest: "04DE7C58F20B535A"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			id: "5BCB495C7D9E1024"
+			linked_quest: "0C9B7745D812555A"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			id: "77F8E82E8E3274BF"
+			linked_quest: "52DAF93E2F3D688A"
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			id: "49B22B972E3C3780"
+			linked_quest: "2C7368B3F573B284"
+			x: -12.0d
+			y: 0.5d
+		}
+	]
+	quests: [
+		{
+			description: [
+				"something like"
+				"1) any hp steam boiler"
+				"2) a branch for macerator and compressor to make cogs"
+				"3) a branch with forge hammer and then mech press for cheaper plates. Also rolling mill"
+				"4) tree tapping for latex, then resin, then circuit boards"
+				"5) maybe an optional quest telling people about your blast furnace automation guide"
+				"6) a branch for glassblowing to eventually make tubes"
+				"6) then at the very end, deployer and the vacuum tube "
+			]
+			id: "188A3B7ABDCB2847"
+			tasks: [{
+				id: "0DE8AF823A6A8DF1"
+				title: "PYRITIE IDEA"
+				type: "custom"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["26F07C926959FACF"]
+			id: "48C1E980F7D64317"
+			tasks: [{
+				id: "486DE7D228F3589B"
+				item: "greate:andesite_alloy_millstone"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["26F07C926959FACF"]
+			id: "1059288C22CB56BB"
+			tasks: [{
+				id: "1F3EE2CB3B8875EC"
+				item: "createhorsepower:horse_crank"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["26F07C926959FACF"]
+			id: "611EB6284CA7119C"
+			tasks: [{
+				id: "340B4B4665295100"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["26F07C926959FACF"]
+			id: "7B045998769930F0"
+			tasks: [
+				{
+					id: "53E8B404D5233367"
+					item: "greate:andesite_alloy_cogwheel"
+					type: "item"
+				}
+				{
+					id: "54B5DC1982F4D816"
+					item: "greate:large_andesite_alloy_cogwheel"
+					type: "item"
+				}
+				{
+					id: "59AD69460AE89682"
+					item: "greate:andesite_alloy_shaft"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["20C2CE92459BE14A"]
+			id: "61DDB00751D1E7CB"
+			tasks: [
+				{
+					id: "1D82D22878EE6D21"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "1A20DE855DEB137C"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["20C2CE92459BE14A"]
+			id: "617E0AFB7BA3D7A8"
+			tasks: [
+				{
+					id: "26EA0D8EDFCF3727"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3095A44065C9F130"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["20C2CE92459BE14A"]
+			id: "7F14D2A34F480ACA"
+			tasks: [{
+				id: "1554B18D816C3549"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C9B7745D812555A"]
+			id: "616E28977F3216D9"
+			tasks: [{
+				id: "32279C21D7553637"
+				item: { Count: 32, id: "greate:steel_encased_fan" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C9B7745D812555A"]
+			id: "3FFC8875179A97A3"
+			tasks: [{
+				id: "794FF0F86B1AA779"
+				item: "greate:steel_crushing_wheel"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0C9B7745D812555A"]
+			id: "51CBF7378FFAD514"
+			tasks: [{
+				id: "1E7DD1C4FCCFD937"
+				item: "greate:steel_mechanical_pump"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2C7368B3F573B284"]
+			id: "46FA9DD4755A5548"
+			tasks: [{
+				id: "07FFA9C76EE39D36"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:hp_steam_solid_boiler)item(gtceu:hp_steam_liquid_boiler)item(gtceu:hp_steam_solar_boiler))"
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2C7368B3F573B284"]
+			id: "183D47F04CAEBFA7"
+			tasks: [{
+				id: "704B7094BE2FB3E1"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.5d
+		}
+	]
 	subtitle: ["{quests.steam_age.subtitle}"]
 	title: "{quests.steam_age}"
 }

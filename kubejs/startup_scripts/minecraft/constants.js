@@ -673,6 +673,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honeycomb',
     'minecraft:tipped_arrow',
     'minecraft:grindstone',
+    'minecraft:fermented_spider_eye',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада
@@ -689,6 +690,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_trapdoor', 
     'minecraft:crimson_pressure_plate', 
     'minecraft:crimson_button',
+    'minecraft:crimson_sign',
+    'minecraft:crimson_hanging_sign',
 
     // Варпед незер дерево
     // TODO: Разблокировать после добавления ада
@@ -705,6 +708,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:warped_trapdoor', 
     'minecraft:warped_pressure_plate', 
     'minecraft:warped_button',
+    'minecraft:warped_sign',
+    'minecraft:warped_hanging_sign',
 
     // Куча незер блоков
     //'minecraft:netherrack', 

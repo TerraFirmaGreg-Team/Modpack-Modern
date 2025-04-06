@@ -5,7 +5,7 @@
  * @param {Internal.RecipesEventJS} event 
  */
 const registerGTCEURecipes = (event) => {
-	
+
 	registerGTCEUMetalRecipes(event)
 
 	removeGTCEURecipes(event)
@@ -107,55 +107,27 @@ const registerGTCEURecipes = (event) => {
 	//#region Выход: Сырая резиновая пыль
 
 	// Из бревна капока
-	event.recipes.gtceu.extractor('raw_rubber_from_kapok_log')
-		.itemInputs('#tfc:kapok_logs')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	event.recipes.gtceu.extractor('raw_rubber_from_rubber_fig_log')
-		.itemInputs('#afc:rubber_fig_logs')
+	event.recipes.gtceu.extractor('raw_rubber_from_log')
+		.itemInputs('#tfg:latex_logs')
 		.itemOutputs('gtceu:raw_rubber_dust')
 		.duration(300)
 		.EUt(2)
 
 	// Из саженца капока
-	event.recipes.gtceu.extractor('raw_rubber_from_kapok_sapling')
-		.itemInputs('tfc:wood/sapling/kapok')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	event.recipes.gtceu.extractor('raw_rubber_from_red_silk_cotton_sapling')
-		.itemInputs('afc:wood/sapling/red_silk_cotton')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	event.recipes.gtceu.extractor('raw_rubber_from_rubber_fig_sapling')
-		.itemInputs('afc:wood/sapling/rubber_fig')
+	event.recipes.gtceu.extractor('raw_rubber_from_sapling')
+		.itemInputs('1x #tfg:rubber_saplings')
 		.itemOutputs('gtceu:raw_rubber_dust')
 		.duration(300)
 		.EUt(2)
 
 	// Из листвы капока
-	event.recipes.gtceu.extractor('raw_rubber_from_kapok_leaves')
-		.itemInputs('16x tfc:wood/leaves/kapok')
+	event.recipes.gtceu.extractor('raw_rubber_from_leaves')
+		.itemInputs('16x #tfg:rubber_leaves')
 		.itemOutputs('gtceu:raw_rubber_dust')
 		.duration(300)
 		.EUt(2)
 
-	event.recipes.gtceu.extractor('raw_rubber_from_red_silk_cotton_leaves')
-		.itemInputs('16x afc:wood/leaves/red_silk_cotton')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	event.recipes.gtceu.extractor('raw_rubber_from_rubber_fig_leaves')
-		.itemInputs('16x afc:wood/leaves/rubber_fig')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
+	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
 
 	//#endregion
 
@@ -182,21 +154,11 @@ const registerGTCEURecipes = (event) => {
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
 	// Из бревна капока
-	event.recipes.gtceu.centrifuge('kapok_log_separation')
-		.itemInputs('#tfc:kapok_logs')
-		.chancedOutput('gtceu:sticky_resin', 5000, 1200)
+	event.recipes.gtceu.centrifuge('rubber_log_separation')
+		.itemInputs('#tfg:latex_logs')
+		.chancedOutput('gtceu:raw_rubber_dust', 5000, 1200)
 		.chancedOutput('gtceu:plant_ball', 3750, 900)
-		.chancedOutput('gtceu:carbon_dust', 2500, 600)
-		.chancedOutput('gtceu:wood_dust', 2500, 700)
-		.outputFluids(Fluid.of('gtceu:methane', 60))
-		.duration(200)
-		.EUt(20)
-
-	event.recipes.gtceu.centrifuge('rubber_fig_log_separation')
-		.itemInputs('#afc:rubber_fig_logs')
-		.chancedOutput('gtceu:sticky_resin', 5000, 1200)
-		.chancedOutput('gtceu:plant_ball', 3750, 900)
-		.chancedOutput('gtceu:carbon_dust', 2500, 600)
+		.chancedOutput('gtceu:sticky_resin', 2500, 600)
 		.chancedOutput('gtceu:wood_dust', 2500, 700)
 		.outputFluids(Fluid.of('gtceu:methane', 60))
 		.duration(200)
@@ -240,24 +202,35 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_seeds')
 		.itemInputs('#tfc:seeds')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_food')
 		.itemInputs('#tfc:foods')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_plants')
 		.itemInputs('#tfc:plants')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
 
 	event.recipes.gtceu.brewery('biomass_from_tfc_corals')
 		.itemInputs('#tfc:corals')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_spider_eyes')
+		.itemInputs('minecraft:spider_eye')
+		.inputFluids(Fluid.of('minecraft:water', 20))
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(128)
 		.EUt(3)
@@ -621,7 +594,7 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	// High Pressure Steam Miner
-	event.replaceInput({id: 'gtceu:shaped/steam_miner_steel' },
+	event.replaceInput({ id: 'gtceu:shaped/steam_miner_steel' },
 		'gtceu:lp_steam_miner', 'gtceu:steel_brick_casing')
 
 	//#region Выход: Стальные машины
@@ -748,13 +721,24 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/plank_to_wooden_shape')
 
 	// Деревянная шестерня
-	event.shaped('gtceu:wood_gear', [
-		' A ',
-		'ABA',
-		' A '
+	event.shaped('gtceu:small_wood_gear', [
+		'AB ',
+		'BCB',
+		' B '
 	], {
-		A: '#tfc:can_be_lit_on_torch',
-		B: '#forge:tools/wrenches'
+		A: '#forge:tools/saws',
+		B: '#forge:rods/wooden',
+		C: 'tfc:glue'
+	}).id('gtceu:shaped/small_gear_wood')
+
+	event.shaped('gtceu:wood_gear', [
+		'AB ',
+		'BCB',
+		' B '
+	], {
+		A: '#forge:tools/saws',
+		B: '#minecraft:planks',
+		C: 'tfc:glue'
 	}).id('gtceu:shaped/gear_wood')
 
 	// Контроллер теплицы
@@ -909,21 +893,21 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.arc_furnace('tfg:black_steel_dust_to_ingot')
 		.itemInputs('gtceu:black_steel_dust')
-		.itemOutputs('gtceu:black_steel_ingot')
+		.itemOutputs('tfc:metal/ingot/black_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(500)
 		.EUt(24)
 
 	event.recipes.gtceu.arc_furnace('tfg:red_steel_dust_to_ingot')
 		.itemInputs('gtceu:red_steel_dust')
-		.itemOutputs('gtceu:red_steel_ingot')
+		.itemOutputs('tfc:metal/ingot/red_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(700)
 		.EUt(32)
 
 	event.recipes.gtceu.arc_furnace('tfg:blue_steel_dust_to_ingot')
 		.itemInputs('gtceu:blue_steel_dust')
-		.itemOutputs('gtceu:blue_steel_ingot')
+		.itemOutputs('tfc:metal/ingot/blue_steel')
 		.inputFluids(Fluid.of('gtceu:oxygen', 72))
 		.duration(700)
 		.EUt(32)
@@ -1263,7 +1247,7 @@ const registerGTCEURecipes = (event) => {
 	// #endregion
 
 	// #region Rich coal processing
-	
+
 	event.recipes.gtceu.coke_oven("tfg:poor_coal_to_coke")
 		.itemInputs('gtceu:poor_raw_coal')
 		.itemOutputs('1x gtceu:coke_gem')
@@ -1451,11 +1435,20 @@ const registerGTCEURecipes = (event) => {
 
 	// #endregion
 
-	event.replaceInput({id: 'gtceu:shaped/nightvision_goggles'}, 'gtceu:glass_lens', 'tfc:lens')
-	
-	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'minecraft:iron_bars', '#tfg:metal_bars')
-	event.replaceInput({id: 'gtceu:shaped/note_block'}, 'gtceu:wood_plate', '#tfc:lumber')
+	event.replaceInput({ id: 'gtceu:shaped/nightvision_goggles' }, 'gtceu:glass_lens', 'tfc:lens')
 
-	event.replaceInput({mod: 'gtceu'}, 'minecraft:sugar', '#tfg:sugars')
+	event.replaceInput({ id: 'gtceu:shaped/note_block' }, 'minecraft:iron_bars', '#tfg:metal_bars')
+	event.replaceInput({ id: 'gtceu:shaped/note_block' }, 'gtceu:wood_plate', '#tfc:lumber')
+
+	event.replaceInput({ mod: 'gtceu' }, 'minecraft:sugar', '#tfg:sugars')
+
+	event.recipes.gtceu.fluid_solidifier('tfg:solidify_glue')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.notConsumable('gtceu:ball_casting_mold')
+		.itemOutputs('tfc:glue')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
 
 }

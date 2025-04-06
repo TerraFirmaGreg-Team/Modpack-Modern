@@ -49,9 +49,13 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
-
+    
+    event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('tfc:rock/raw', 'minecraft:dripstone_block')
+
+    event.add('forge:cloth', 'minecraft:phantom_membrane')
+    event.add('tfc:sewing_dark_cloth', 'minecraft:phantom_membrane')
 }
 
 const registerMinecraftBlockTags = (event) => {

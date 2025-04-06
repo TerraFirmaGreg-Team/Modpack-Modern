@@ -1,0 +1,16 @@
+﻿{
+	"id": "gabbro",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Gabbro"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Габбро"
+		}
+	],
+	"replaceable_blocks": [
+		"tfc:rock/raw/gabbro"
+	]
+}

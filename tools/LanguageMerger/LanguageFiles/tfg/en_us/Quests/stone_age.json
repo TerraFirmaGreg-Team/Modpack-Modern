@@ -1,0 +1,213 @@
+{
+    "quests.stone_age": "Stone Age",
+    "quests.stone_age.subtitle": "Humble Beginnings",
+    
+    "quests.stone_age.foods.title": "Hungry?",
+    "quests.stone_age.foods.subtitle": "Where's my easy food?",
+    "quests.stone_age.foods.desc": "In TerraFirmaGreg, the world is a harsh place filled with strife for your survival, one of the most important aspects of survival is being able to obtain Food. Most food yield little nutritional value while others can be deadly if not cooked.\n\nBegin by obtaining any form of nourishment.",
+
+    "quests.stone_age.nutrition.title": "Mechanic: Nutrition",
+    "quests.stone_age.nutrition.subtitle": "What do you mean I can't just eat steak?",
+    "quests.stone_age.nutrition.desc": "Each basic food in TerraFirmaGreg contains a nutritional value, these nutrients are split into 5 different categories: &lGrain&r, &lFruits&r, &lVegetables&r, &lProtein&r and &lDairy&r.\n\nWhile you could eat only one kind of raw nutrient such as Protein, your overall health will be diminished, keeping a balanced diet allows you to have higher max health. Look at the field guide's section on \"Food and Water\" for more information.",
+
+    "quests.stone_age.cook_meat.title": "Basic Cooking",
+    "quests.stone_age.cook_meat.subtitle": "You don't want to die from eating raw meat, do you?",
+    "quests.stone_age.cook_meat.desc": "Cooking raw meat is an important step for getting protein, not only will it increase the overall shelf life of the meat, but it'll unlock even more nutrients for your demanding body.\n\nThe simplest way to cook meat is by using a Campfire, look at the quest below this one to learn how to make your first campfire.",
+
+    "quests.stone_age.soup_time.title": "Soups",
+    "quests.stone_age.soup_time.subtitle": "Which store where you in?",
+    "quests.stone_age.soup_time.desc": "By utilizing some Clay, shaping a pot and some bowls, you'll be able to create soups!\n\nSoups are one of the first and easiest ways to create more complex meals, a meal unlike simple food items are more nourishing and filling. You'll need at the very least some Clay to create your pot.",
+
+    "quests.stone_age.meals.title": "Meals",
+    "quests.stone_age.meals.subtitle": "GET IN MAH BELLEH!",
+    "quests.stone_age.meals.desc": "These are just some of the basic meals you can create, Pizzas are one of the best as it can contain every type of nutrient, Salads and Sandwiches are generalized but jam sandwiches are great as you can use Jam in them, which are fruits.",
+    "quests.stone_age.meals.tasks.1": "Any regular Sandwich",
+    "quests.stone_age.meals.tasks.2": "Any regular Jam Sandwich",
+
+    "quests.stone_age.garlic_bread.title": "Garlic Bread...?",
+    "quests.stone_age.garlic_bread.subtitle": "Are you fending off a vampire or something?",
+    "quests.stone_age.garlic_bread.desc": "ProTip: The quest task accepts ANY garlic bread, it doesnt need to be fresh.",
+    "quests.stone_age.garlic_bread.task": "1024 slices of Garlic Bread",
+
+    "quests.stone_age.find_potable_water.title": "Thirsty?",
+    "quests.stone_age.find_potable_water.subtitle": "Remember to drink water!",
+    "quests.stone_age.find_potable_water.desc": "A new mechanic is Thirst, you'll experience thirst as you exist in the world and it'll degrade over time. You can and WILL die of dehydration if you dont keep your thirst meter filled! The easiest way to have a drink is by drinking from natural ponds in the wild.\n\nCareful! Do not under any circumstances drink salt water! you WILL experience increased thirst and will most likely die.",
+    "quests.stone_age.find_potable_water.task": "A pond of fresh Water (not Salty or from a Hot Spring)",
+
+    "quests.stone_age.hydration.title": "Mechanic: Hydration",
+    "quests.stone_age.hydration.subtitle": "Yet another bar to keep full...",
+    "quests.stone_age.hydration.desc": "Water can be a very important resource, it's recommended that you set camp nearby a fresh lake or river so you have an easy access to the stuff. Other items can reduce your thirst levels such as certain types of food or bevrages.\n\nSometimes if you decide to explore you'll very likely go ways without nearby water, thankfully, there are ways to store water in different compartments for easy access. Each compartment stores different amount of Milibuckets of the liquid you choose to store, and drinking consumes at least 100mb",
+
+    "quests.stone_age.leather_flask.title": "Leather Flask",
+    "quests.stone_age.leather_flask.subtitle": "Old Faithful",
+    "quests.stone_age.leather_flask.desc": "A Leather Flask is probably the second easiest portable water solution right after a Ceramic Jug, it can contain 500mb of water, which equates to 5 drinks of water.\n\nThe leather flask takes damage as it's used, but it can be repaired if you have leather at hand. When the flask breaks it does not get destroyed, rather it becomes a Broken Leather Flask.",
+
+    "quests.stone_age.iron_flask.title": "Iron Flask",
+    "quests.stone_age.iron_flask.subtitle": "Now this will be useful for a long while",
+    "quests.stone_age.iron_flask.desc": "The Iron Flask is an upgrade to the Leather Flask, it can still be damaged but it can contain 2B of water, which equates to 20 drinks.",
+
+    "quests.stone_age.water_bucket.title": "Water Bucket",
+    "quests.stone_age.water_bucket.subtitle": "Not as easy as you think",
+    "quests.stone_age.water_bucket.desc": "Probably the best way to drink water wherever you go, but the most cumbersome.\n\nWater Buckets can store an indefinite amount of water, and as such you can drink as much water from it as you want.\n\nFormat Error: Wooden Buckets cannot be used to drink water, while you can store an entire bucket's worth of water in them, trying to place it in the world will create a very small puddle.",
+
+    "quests.stone_age.glass_bottles.title": "Glass Bottles",
+    "quests.stone_age.glass_bottles.subtitle": "Not as cool as a leather flask",
+    "quests.stone_age.glass_bottles.desc": "Glass bottles are just as good as Leather Flasks, containing 500mb of water. However, you do require a Glassworking station to be able to create the glass bottles in the first place, which you may not be able to get until you dip your toes in metalworking.",
+    
+    "quests.stone_age.water_jug.title": "Water Ceramic Jug",
+    "quests.stone_age.water_jug.subtitle": "Relatively easy water",
+    "quests.stone_age.water_jug.desc": "A Ceramic Jug is the simplest form of holding liquids you can drink to satiate your thirst, however, it can only contain 100mb of water, so you'll need to refill it once you drink it.\n\nKeep in mind that the Jug has a random chance to break when you drink from it!",
+
+    "quests.stone_age.temperature.title": "Weather",
+    "quests.stone_age.temperature.subtitle": "The weather for today? pain.",
+    "quests.stone_age.temperature.desc": "The world of TerraFirmaGreg contains Seasons unlike regular minecraft, these Seasons not only means that certain crops, trees and bushes can only be grown when the conditions are right, but it means as well that Body Temperature is something you need to control and keep at a steady level.",
+    "quests.stone_age.temperature.task": "Exist",
+
+    "quests.stone_age.insulation.title": "Mechanic: Body Temperature",
+    "quests.stone_age.insulation.subtitle": "Careful with Hypo and Hyper thermia.",
+    "quests.stone_age.insulation.desc": "Existing in the world and doing specific things will change your body temperature, you need to make sure your temperature stays in a very precise level, not too cold, or not too hot. Your body temperature shouldn't be lower than the freezing point of water and not higher than the average temperature of the human body.\n\nThere are ways you can reduce the effect of temperature and keep your body temp at a stable level, probably the best method is by using &lClothes&r",
+
+    "quests.stone_age.clothes.title": "Clothes",
+    "quests.stone_age.clothes.subtitle": "Fancy!",
+    "quests.stone_age.clothes.desc": "Wearing clothes can improve your temperature situation considerably, Warm clothes such as Wool or Leather Insulated are great for cold environments, while Silk or Burlap are great for warm environments.",
+
+    "quests.stone_age.find_rock.title": "Find some Rocks",
+    "quests.stone_age.find_rock.subtitle": "ROCK AND STONE!",
+    "quests.stone_age.find_rock.desc": "As you enter the world, the first thing you'll encounter is a completely changed world. You can no longer break trees with your fists, fret not, for there are ways to begin your journey.\n\nThe main items at the start are sticks and rocks, lets begin by collecting at the very least 4 rocks. You can collect rocks by interacting with them.",
+    
+    "quests.stone_age.rock_knapping.title": "Knapping",
+    "quests.stone_age.rock_knapping.subtitle": "Just like the olden days of the Paleolithic",
+    "quests.stone_age.rock_knapping.desc": "Certain items can be \"Knapped\", knapping is the process of shaping a basic material into a usable form. Rock Knapping in this case requires at the very least 2, with two rocks in your hand if you Interact you'll open the Knapping interface. You can then \"chip off\" one of your rocks to attempt to create a stone tool head. All the recipes can be found in EMI.\n\nThe two important tools for the beginning of your journey are a Stone Knife and a Stone Axe, try making these heads.",
+
+    "quests.stone_age.find_stick.title": "Find some Sticks",
+    "quests.stone_age.find_stick.subtitle": "You gotta handle that tool somehow",
+    "quests.stone_age.find_stick.desc": "The second most abundant item are sticks, sticks can be found right below trees in the Overworld, these sticks are extremely useful since you can use them to create tools, torches, firestarters and more.\n\nProtip: To avoid having your inventory get clogged with different tree sticks, you can craft them into regular sticks to pile them up, the sticks can then be bundled into a Bunch, and the Bunch into a Bundle.",
+
+    "quests.stone_age.first_stone_tools.title": "Your first tools",
+    "quests.stone_age.first_stone_tools.subtitle": "Now you're a smart monkey",
+    "quests.stone_age.first_stone_tools.desc": "By Knapping your rocks into usable shapes, you can then combine them with a Stick to create your very first basic tools. At the very least you'll require a Knife and an Axe. You've officially entered into the Stone Age!\n\nStone is going to be useful for a while, but eventually you'll need to start to create tools made out of metals such as Copper, the following two quests help you recollect the items you'll need.",
+
+    "quests.stone_age.stone_tools.title": "Stone Tools",
+    "quests.stone_age.stone_tools.subtitle": "Turns out hitting stones together is quite useful.",
+    "quests.stone_age.stone_tools.desc": "While stone is a relatively simple and primitive material, the stone tools will be used for the majority of your first days until you learn how to work with metals. Some important tools include the Javelin, which can be used to hunt relatively small game, and the Hoe, which allows you to farm.",
+
+    "quests.stone_age.gather_straw.title": "Gather Straw",
+    "quests.stone_age.gather_straw.subtitle": "You can also use a Hoe if you want",
+    "quests.stone_Age.gather_straw.desc": "Most grasses you find in the overworld when cut with a Knife or a Hoe will drop Straw, Straw has a number of uses in certain crafting recipes, but we'll want at least 8 so we can create a Pit Kiln.\n\nStraw can also be used to create Thatch, which can be used as a relatively simple building block with no collission.",
+
+    "quests.stone_age.gather_logs.title": "Gather Logs",
+    "quests.stone_age.gather_logs.subtitle": "Timber!",
+    "quests.stone_age.gather_logs.desc": "Utilizing your Stone Axe you'll be able to cut down trees, cutting the base of a tree causes the entire tree to fall down. resulting in sticks and saplings.\n\nGather at the very least 10, 8 of these will be used in a Pit Kiln while the other two will be used in a Fire Pit",
+
+    "quests.stone_age.firepit.title": "Fire Pit",
+    "quests.stone_age.firepit.subtitle": "Night time is coming",
+    "quests.stone_age.firepit.desc.1": "Now that you have some logs its time to build your first Fire Pit, while monsters do not spawn in the overworld at night, the nights are &lvery, very&r dark.\nYou'll need to create a Firestarter, a tool that allows for relatively simple creation of fire.",
+    "quests.stone_age.firepit.desc.2": "To create your Fire Pit, toss at the very least one Log and up to 3 sticks into a block, then using the Firestarter, light the items on fire.\n\nThe Firepit can be used not only as a light source, but for cooking raw meat as well. You can keep your pit lit by interacting with it and adding logs to the UI. If the fire dies out, simply add more logs and light it again with your Firestarter",
+
+    "quests.stone_age.find_clay.title": "Clay Sources",
+    "quests.stone_age.find_clay.subtitle": "You'll need a lot of these",
+    "quests.stone_age.find_clay.desc": "Clay is an absolutely useful item, just like Rocks, Clay can be Knapped into different shapes and then fired in a Pit Kiln, by firing the clay in the Kiln you'll get Ceramic, which has a lot of different utilities. Stone Tools and Clay Ceramics will be the back-bone of your survival until you learn how to work with Metals.\n\nClay is found as Clay Blocks, these are scattered around the ground and are usually covered by grass. However, certain types of plants, known as \"Clay Indicators\" grow exclusively on clay. If you find a Clay Indicator it means below that plant there's some Clay to be Harvested.",
+    
+    "quests.stone_age.clay.title": "Clay",
+    "quests.stone_age.clay.subtitle": "Its Clay!",
+    "quests.stone_age.clay.desc": "Gather at the very least 25 pieces of Clay, you'll need to knap at the very least 5 different items, which are located in the dependent quests that are not optional. Once you knap the clay put them in a Pit Kiln to bake the clay into Ceramic.",
+
+    "quests.stone_age.pit_kiln.title": "Pit Kiln",
+    "quests.stone_age.pit_kiln.subtitle": "Things are heating up now.",
+    "quests.stone_age.pit_kiln.desc": "The Pit Kiln is an early game method of heating items up. We'll use it to both Fire our clay items, and most importantly, melt very basic ores and create our first metallic tool, a Saw.\n\nTo create a pit kiln you'll need Eight pieces of Straw, Eight Logs, an item to Fire and a Firestarter. Check the Field Guide's Pit Kilns section on how to create it.",
+
+    "quests.stone_age.clay_products.title": "Clay Products",
+    "quests.stone_age.clay_products.subtitle": "I told you Clay was versatile.",
+    "quests.stone_age.clay_products.desc": "These are all the products you can make out of Clay and Firing them in a Pit. The Molds are used for metal working while the other entries have relatively niche uses. Think you can knap them all?",
+
+    "quests.stone_age.make_jug.title": "Ceramic Jug",
+    "quests.stone_age.make_jug.subtitle": "Early Game fluid Container",
+    "quests.stone_age.make_jug.desc": "A Jug is a relatively simple to create fluid Container, while you can utilize something like a Wooden Bucket to move around buckets of fluids, the Ceramic Jug can be filled with fluids and drank.",
+
+    "quests.stone_age.make_saw_mold.title": "Saw Mold",
+    "quests.stone_age.make_saw_mold.subtitle": "Time for some basic Metalworking",
+    "quests.stone_age.make_saw_mold.desc": "The first mold you should make out of Clay is the Saw Mold. With it and some very small amount of metal you can create a Saw. The Saw is an important tool, as it's required to create &lLumber&r, and with it, you'll be able to create your first &l&oWorkbench.&r",
+
+    "quests.stone_age.make_vessel.title": "Vessel",
+    "quests.stone_age.make_vessel.subtitle": "Useful small jars.",
+    "quests.stone_age.make_vessel.desc": "The Vessel can be used to store items in it. More importantly, it's your first tool to begin working with Metals.\n\nBy interacting with the Vessel, you will open up it's interface, which you can place metals inside of it. After closing the Vessel and hovering over it, it'll tell you the Composition of the metals you're going to mix in the Vessel. Placing the Vessel in a Pit Kiln and heating it up that way allows you to &lmelt&r the metal inside, allowing you to work with it.\n\nIf you're feeling adventurous, you can mix different metal types to create Alloys. Alloys require specific percentage mixtures of metals. While you could work with Copper immediatly, you could make your very first metal tools with Bronze instead.",
+
+    "quests.stone_age.native_ores.title": "Pebbles with ore?",
+    "quests.stone_age.native_ores.subtitle": "Your first metal is already available if you look for it.",
+    "quests.stone_age.native_ores.desc.1": "Sometimes while picking up Rocks you may have noticed some rocks with funny colors and shapes, these are Native Ores. Native Ores are the easiest way to find your first few milibuckets of a metal. Each piece of native ore smelts into 16mb (the equivalent of a Nugget) of the specified metal, as a result, picking up 9 native ores means you have the essence of an Ingot of the metal in your hands!",
+    "quests.stone_age.native_ores.desc.2": "ProTip: These Native Ores are \"Indicators\", Indicators means that below the ground there is a big, LARGE vein with ore similar in material to the indicator. You don't have a pickaxe yet, so take note of the place where you found the Ore! It'll be very useful later on.",
+
+    "quests.stone_age.first_saw.title": "Metallic Saw",
+    "quests.stone_age.first_saw.subtitle": "Time for your first metal tool",
+    "quests.stone_age.first_saw.desc.1": "To begin making your Saw, add at the very a total of 144mb your desired metal to a Vessel. Afterwards, place the Vessel in a Pit Kiln and light it on fire.\n\nOnce the Pit Kiln burns out, pick up your vessel again, Interacting with the vessel while it has molten metal in it will open the Pouring interface. Simply place the Saw Mold in the Pouring Interface's slot and watch it fill with your very first Saw Head. Afterwards, combine your Saw Head with a Stick and you'll create your very first Saw.",
+    "quests.stone_age.first_saw.desc.2": "While the easiest metal to work with is Copper, you can try your hand at the process of Alloying. This quest's tasks will accept either an item made out of Copper, or a Bronze Alloy.\n\n&lBismuth Bronze&r: A type of Bronze made out of an alloy of Copper, Bismuth and Zinc, while the tools made out of it are not the greatest, it makes up for it in Availability with its secondary components.\n&lBronze&r: Your regular, run of the mill Bronze, made out of Copper and Tin. It's the average bronze, better than Bismuth Bronze but not as great as the next one.\n&lBlack Bronze&r: The best Bronze in the early game, tools made out of it have better stats than the previous two bronzes, but it's considerably more expensive, requiring Copper, Gold and Silver.",
+    "quests.stone_age.first_saw.tasks.1": "A Copper or Bronze Saw Head.",
+    "quests.stone_age.first_saw.tasks.2": "A Copper or Bronze Saw.",
+
+    "quests.stone_age.craft_lumber.title": "Time for the Workbench",
+    "quests.stone_age.craft_lumber.subtitle": "3x3 crafting is at your grasp.",
+    "quests.stone_age.craft_lumber.desc": "Utilizing a Saw you can put it with a Log in your inventory's crafting grid to create Lumber. 4 Lumber can then be placed in a 4x4 grid to create Planks...\n\nOnce you get 4 planks, its time to make your very first Workbench.",
+
+    "quests.stone_age.workbench.title": "Workbench",
+    "quests.stone_age.workbench.subtitle": "At Long Last",
+    "quests.stone_age.workbench.desc": "Congratulations! with your Workbench you've officially entered the Peak of the Primitive Stone Age. With it you'll be able to craft a multitude of new things utilizing the items you've gathered so far.\n\nBut these are only baby steps, now comes your main goal of the Primtive Age. Developing proper Metalworking by creating the Copper Anvil.\nSidenote: While you could gather enough materials to make 14 ingots of bronze, you NEED at the very least a Copper Anvil to weld the Bronze Ingots together! Don't waste your time, don't skip the Copper Anvil.",
+
+    "quests.stone_age.inventory.title": "Early Inventory Management",
+    "quests.stone_age.inventory.subtitle": "Time to stop carrying all your junk in vessels.",
+    "quests.stone_age.inventory.desc": "In the Early Game you have 3 simple storage solutions.\n\n&lChest&r: Chests in TerraFirmaGreg, while easy to craft, are relatively nerfed compared to Vanilla Chests, containing only 18 Slots. a Double Chest contains 36 Slots.\n&lCrate&r: GregTech Crates are the equivalent of Vanilla barrels, having 27 slots. Not only that, Crates can be upgraded with different metals, increasing their slot count.\n&lSupply Cart&r: A Supply Cart unlike the other two options is an Entity, but it can store the same amount as a regular Double Chest, a total of 54 Slots.",
+
+    "quests.stone_age.barrels.title": "Barrels",
+    "quests.stone_age.barrels.subtitle": "Stephano?",
+    "quests.stone_age.barrels.desc": "Barrels unlike their vanilla counterparts, are used as Liquid Storage. Barrels are capable of storing a total of 10 Buckets of fluid, allowing for relatively simple storage of fluids.\n\nBarrels also have recipes, which we can utilize to create stuff such as Leather, Glue, Mortar and more.",
+
+    "quests.stone_age.leather.title": "Leather",
+    "quests.stone_age.leather.subtitle": "You can't just kill a Cow and make stuff with its hide yknow?",
+    "quests.stone_age.leather.desc": "Wild Game instead of dropping leather they'll drop either Hide. Hide cannot be used as leather directly and instead must be worked and processed into it.\n\nLeather, just like Clay and Stone, can be Knapped. Knapping leather allows you to create things such as Leather Armor, Leather Flasks, etc.\nIf you dont want to kill animals for their leather, and live in a tropical area, you can work Pineapple into Pineapple Leather instead, which is a Leather Substitute.",
+
+    "quests.stone_age.leather_armor.title": "Leather Armor",
+    "quests.stone_age.leather_armor.subtitle": "Very basic protection",
+    "quests.stone_age.leather_armor.desc": "Leather Armor, just like its minecraft counterpart, is used as a very basic set of armor. It may not do much, but it'll protect you somewhat from the elements and provides OK resistances to Slashing damage.",
+
+    "quests.stone_age.mining_prep.title": "Mining Preparations",
+    "quests.stone_age.mining_prep.subtitle": "Hope you marked that native copper deposit site!",
+    "quests.stone_age.mining_prep.desc.1": "Advancing in the tech tree will require a lot of metal, in fact potentially a Ludicrous amount of metal. Native ore deposits wont cut it, so you'll have to dig down and begin mining.\nAssuming you &odid&r mark the place where you found your native copper, go to the site and find the center of the \"blob\" of copper. Once you start digging down you'll eventually stumble upon the Vein. Information about what you're crafting for this quest can be found in the next page.",
+    "quests.stone_age.mining_prep.desc.2": "&lProspector's Pick&r: (Propick for short) is a tool that can be used to Prospect for ores nearby. Low quality Propicks tend to have a range of failure while higher quality propicks have better results.\n&lPickaxe&r: Pretty obvious what this does, you'll need a way to break the blocks towards the Vein, and harvest the Vein as well.\n&lSupports Beams and Planks&r: Caves in TerraFirmaGreg are INCREDIBLY dangerous, not only do monsters spawn in them, carelessly digging around can cause a collapse! The quest above this one goes over how to mitigate dangers while mining.\n\nNow go, and dig your hole. diggy diggy hole!",
+
+    "quests.stone_age.hazards.title": "Mining Hazards",
+    "quests.stone_age.hazards.subtitle": "Thought the Overworld was difficult? Think again.",
+    "quests.stone_age.hazards.desc.1": "There are two types of Hazards while mining that you need to be careful about, Cave Ins and Chemical Hazards. A Cave In can occur when raw stone blocks or ores are left Unsupported. Looking at a block can tell you its status for Cave Ins.",
+    "quests.stone_age.hazards.desc.2": "A Supported Block won't trigger collapses while an Unsupported block has a chance to trigger a collapse, however, when a collapse begins, even previously supported blocks can fall and collapse.\n\nA way to avoid collapses is by using Support Beams, the image below showcases ways on how to use support beams to support your mining operations.",
+    "quests.stone_age.hazards.desc.3": "The second kind of Hazard are Chemical Hazards. Some minerals such as Lead and Asbestos are poisonous and detrimental to your well being, coming in contact with these can cause serious illnesses that will quickly kill you.\n\nTo avoid a gruesome death from chemicals, you can craft basic PPE equipment. The Rubber Gloves will protect your from Contact Poison while the Face Mask protects you from Inhalation Poisons.\n\nMore information regarding collapse mechanics and chemical hazards can be found in the field guide.",
+
+    "quests.stone_age.copper_for_anvil.title": "Copper for the Anvil",
+    "quests.stone_age.copper_for_anvil.subtitle": "You better get used to getting 14 ingots of something.",
+    "quests.stone_age.copper_for_anvil.desc": "Anvils take a total of 14 Ingots, these 14 Ingots are welded into 7 Double Ingots, which are then used to create the Anvil itself\n\nYou might want to start mining at this point, gathering 126 pieces of native copper is difficult.",
+
+    "quests.stone_age.get_raw_rock.title": "Raw Rock",
+    "quests.stone_age.get_raw_rock.subtitle": "No, it isnt just \"Stone\"",
+    "quests.stone_age.get_raw_rock.desc": "To create your Copper Anvil you'll need both a basic Stone Anvil and a Forge, both of these require you to obtain Raw Rock, altho the Stone Anvil requires either Extrusive or Intrusive Igneous Rock.\n\nTo obtain Raw Rock you can carefully break the blocks &lsupporting&r the Raw Rock you want to mine. Once all 6 sides of the Raw Rock is exposed to air, it'll break into it's Item form.",
+
+    "quests.stone_age.create_forge.title": "The Forge",
+    "quests.stone_age.create_forge.subtitle": "The Fabric doesnt exist by the way.",
+    "quests.stone_age.create_forge.desc": "The Forge is a state of the art crafting station used to Heat materials to high temperatures. The time it takes to heat things in the forge is considerably quicker than the Pit Kiln.\n\nTo make the forge you'll require at the very least 7 charcoal, and 5 Rock like Blocks, Raw Rock and Cobble is the easiest, altho you can also utilize Stone Bricks as well.\nThe Forge does not use Logs, instead it uses Charcoal, Coal or Coke. Charcoal is probably the easiest for you, there's a quest in TFG Tips explaining how to get Charcoal in the early game.\n\nYou may want to check the field guide for a guide on how to create and use the forge.",
+
+    "quests.stone_age.rock_anvil.title": "Rock Anvil",
+    "quests.stone_age.rock_anvil.subtitle": "This won't last long",
+    "quests.stone_age.rock_anvil.desc": "Anvils are the basis of early game metal working, to create a proper Metal anvil you'll need to Weld Ingots using the previous tier of Anvil. Since Copper is the first tier, you can use a Rock Anvil to weld them. You'll need a basic hammer to create the Rock Anvil, simply put either an Igneous or Extrusive Raw Rock, and interact with the rock while holding the Hammer.",
+
+    "quests.stone_age.quern.title": "Quern and Handstone",
+    "quests.stone_age.quern.subtitle": "Early game ore processing",
+    "quests.stone_age.quern.desc": "The Quern and Handstone is simply put two big rocks grinding against each other to break down materials. The bottom piece is called a Quern while the top piece is called a Handstone. The Quern can be used to grind down raw ores into crushed ores, yielding slightly higher mb count when smelted.\n\nWe'll use the Quern to create Flux.",
+
+    "quests.stone_age.flux.title": "Fluxstones",
+    "quests.stone_age.flux.subtitle": "Basically metallurgy powder",
+    "quests.stone_age.flux.desc": "Flux is an item that has it's main uses in Metal Working, specifically it's used to Weld things together. Althought it has a number of other uses as well.\nCertain types of Rocks such as Chalk, Limestone and Marble can be crushed down to make Flux.",
+
+    "quests.stone_age.weld_copper_ingots.title": "Welding Copper",
+    "quests.stone_age.weld_copper_ingots.subtitle": "So close to the Copper Anvil",
+    "quests.stone_age.weld_copper_ingots.desc": "Light up your Forge and place at least 2 Copper Ingots will slowly heat up, eventually at a specific temperature color (marked by a tooltip) the ingot will have the \"Can Work\" tooltip, you'll want to keep heating it until before it's melting point, this will give it the tooltip \"Can Weld\", the ingot is now ready to be welded.\n\nQuickly grab the two ingots while holding in your hand something to avoid burning yourself (like a pair of Tongs) and place them in the Rock Anvil's interface with a little bit of flux, finally, interact with the anvil while sneaking and holding a hammer to Weld the Ingots.\n\nCongratulations! you have a Double Ingot, do that 6 more times.",
+
+    "quests.metal_age.copper_anvil.title": "T1 Anvil: Copper",
+    "quests.metal_age.copper_anvil.subtitle": "It all has been building up to this.",
+    "quests.metal_age.copper_anvil.desc": "Congratulations! you've officially finished the Stone Age and entered the Metallurgy Age! With the Copper Anvil now all thats left is climbing up the Anvil Tiers, each time you unlock a new Tier new goodies will be available that'll make your life progressively easier. Now go, become a master smith, and advance thu the Metallurgy Age!"
+}

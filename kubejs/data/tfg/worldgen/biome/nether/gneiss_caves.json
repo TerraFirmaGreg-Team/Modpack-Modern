@@ -80,14 +80,7 @@
 		}
 	},
 	"spawners": {
-		"water_ambient": [
-			{
-				"type": "tfc:isopod",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 10
-			}
-		],
+		"water_ambient": [],
 		"ambient": [
 			{
 				"type": "minecraft:bat",
@@ -161,6 +154,12 @@
 				"maxCount": 3,
 				"minCount": 2,
 				"weight": 50
+			},
+			{
+				"type": "minecraft:phantom",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			},
 			{
 				"type": "minecraft:enderman",

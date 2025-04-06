@@ -15,9 +15,15 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"title": "Travertine",
+			"item": { "tag": "forge:ores_in_ground/dripstone" },
+			"text": "In wetter areas, you may find $(thing)Travertine$(). It is a sedimentary rock that can contain the same kind of ores as Migmatite."
+		},
+		{
+			"type": "patchouli:spotlight",
 			"title": "Pyroxenite",
 			"item": { "tag": "forge:ores_in_ground/pyroxenite" },
-			"text": "Around the level of the lava oceans, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
+			"text": "Around the deepest level of the Beneath, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
 		},
 		{
 			"type": "patchouli:multiblock",
@@ -36,7 +42,7 @@
 				}
 			},
 			"name": "Anthracite",
-			"text": "Anthracite is a powerful $(l:beneath/hellforge)fuel$(). It replaces Migmatite in the upper half of the Beneath.",
+			"text": "Anthracite is a powerful $(l:beneath/hellforge)fuel$(). It can be found in Migmatite in the upper half of the Beneath.",
 			"enable_visualize": false
 		},
 		{
@@ -56,7 +62,7 @@
 				}
 			},
 			"name": "Sylvite",
-			"text": "Sylvite is an Overworld fertiliser that can be found replacing Pyroxenite in the lower half of the Beneath.",
+			"text": "Sylvite is a fertiliser that can be found in Pyroxenite in the lower half of the Beneath.",
 			"enable_visualize": false
 		}
 	],

@@ -73,9 +73,9 @@ function registerTFGRockRecipes(event) {
 		event.recipes.gtceu.laser_engraver(`${x.raw}_to_${x.polished}`.replace(/:/g, '_'))
 			.itemInputs(x.raw)
 			.itemOutputs(x.polished)
-			.notConsumable('#forge:lenses/white')
+			.notConsumable('tfc:lens')
 			.duration(30)
-			.EUt(100)
+			.EUt(GTValues.VA[GTValues.ULV])
 	})
 
 	// cracked bricks

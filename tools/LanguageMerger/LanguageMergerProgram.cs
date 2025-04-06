@@ -100,7 +100,7 @@ namespace LanguageMerger
 
                 foreach (var file in _modLocaleOutputFolder.EnumerateFiles("*.json"))
                 {
-                    file.CopyTo(Path.Combine(langDirectory.FullName, file.Name));
+                    file.CopyTo(Path.Combine(langDirectory.FullName, file.Name), true);
                 }
                 return Task.CompletedTask;
             }

@@ -80,7 +80,17 @@ const registerGTCEULoots = (event) => {
 			.addLoot(STONE_TYPES_TO_COBBLE[stoneType]);
 	})
 
-	// Go through all materials (TODO: this causes a race condition sometimes?)
+	if (TFGHelpers.isMaterialRegistrationFinished) {
+		registerGTCEUMaterialLoots(event);
+	}
+	else {
+		console.log("!!!!!!!! MATERIALS NOT DONE YET !!!!!!!!!")
+	}
+}
+
+function registerGTCEUMaterialLoots(event) {
+
+	// Go through all materials
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
 		if (material.hasProperty(PropertyKey.ORE)) {

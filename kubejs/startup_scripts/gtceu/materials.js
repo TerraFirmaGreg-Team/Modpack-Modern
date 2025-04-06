@@ -35,6 +35,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_ROTOR,
 		GENERATE_SPRING,
 		GENERATE_SMALL_GEAR,
+		GENERATE_GEAR,
 		GENERATE_FRAME,
 		GENERATE_PLATE
 	} = $MATERIAL_FLAGS
@@ -124,6 +125,7 @@ const registerGTCEuMaterialModification = (event) => {
 	//
 	//
 	//        /* Имеют двойные слитки */
+	GTMaterials.Iron.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Gold.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Bismuth.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.Brass.addFlags(GENERATE_DOUBLE_INGOTS);
@@ -164,8 +166,6 @@ const registerGTCEuMaterialModification = (event) => {
 	//        /* Имеют двойные слитки */
 	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
-
-	GTMaterials.TitaniumTungstenCarbide.addFlags(GENERATE_ROD);
 	//
 	//        /* Другое */
 
@@ -177,6 +177,13 @@ const registerGTCEuMaterialModification = (event) => {
 	
 	GTMaterials.CertusQuartz.addFlags(GENERATE_ROD);
 	GTMaterials.NetherQuartz.addFlags(GENERATE_ROD);
+
+	GTMaterials.BlackBronze.addFlags(GENERATE_FRAME);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_FRAME);
+
+	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
@@ -184,7 +191,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RedSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW);
 	GTMaterials.WroughtIron.addFlags(GENERATE_ROTOR, GENERATE_SPRING, GENERATE_SMALL_GEAR);
 	
-	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW, GENERATE_FRAME, GENERATE_SMALL_GEAR);
+	GTMaterials.Copper.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
@@ -248,6 +255,18 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
 	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
+	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
+	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)
+	GTMaterials.Aluminium.setMaterialARGB(0xb6e5ff)
+	GTMaterials.Aluminium.setMaterialSecondaryARGB(0x7ca29b)
+	GTMaterials.Titanium.setMaterialARGB(0xe8b1fa)
+	GTMaterials.Titanium.setMaterialSecondaryARGB(0xd8d5d9)
+	GTMaterials.TungstenSteel.setMaterialARGB(0xadb8df)
+	GTMaterials.TungstenSteel.setMaterialSecondaryARGB(0x03192f)
+	GTMaterials.RoseGold.setMaterialARGB(0xFCE4D8)
+	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xAB675A)
+
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
 	{
