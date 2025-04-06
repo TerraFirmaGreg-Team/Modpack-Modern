@@ -269,7 +269,7 @@ const registerAE2Recipes = (event) => {
 		'CDC',
 	], {
 		A: 'ae2:calculation_processor',
-		B: '#forge:plates/iron',
+		B: '#forge:plates/wrought_iron',
 		C: '#forge:plates/gold',
 		D: '#forge:plates/red_alloy',
 	}).id('tfg:crafting/memory_card')
@@ -1063,7 +1063,7 @@ const registerAE2Recipes = (event) => {
 	// Import Bus
 	event.recipes.gtceu.assembler('ae2:import_bus')
 		.itemInputs(
-			'#forge:plates/iron',
+			'#forge:plates/wrought_iron',
 			'ae2:annihilation_core',
 			'2x gtceu:mv_robot_arm',
 			'#ae2:glass_cable')
@@ -1076,7 +1076,7 @@ const registerAE2Recipes = (event) => {
 	// Export Bus
 	event.recipes.gtceu.assembler('ae2:export_bus')
 		.itemInputs(
-			'#forge:plates/iron',
+			'#forge:plates/wrought_iron',
 			'ae2:formation_core',
 			'2x gtceu:mv_robot_arm',
 			'#ae2:glass_cable')
@@ -1638,7 +1638,7 @@ const registerAE2Recipes = (event) => {
 
 	// Inscriber Silicon Press
 	event.recipes.gtceu.laser_engraver('ae2:silicon_press_iron')
-		.itemInputs('#forge:plates/iron')
+		.itemInputs('#forge:plates/cast_iron')
 		.notConsumable('#forge:lenses/white')
 		.itemOutputs('ae2:silicon_press')
 		.duration(12000)
@@ -1653,7 +1653,7 @@ const registerAE2Recipes = (event) => {
 
 	// Inscriber logic Press
 	event.recipes.gtceu.laser_engraver('ae2:logic_processor_press_iron')
-		.itemInputs('#forge:plates/iron')
+		.itemInputs('#forge:plates/cast_iron')
 		.notConsumable('#forge:lenses/green')
 		.itemOutputs('ae2:logic_processor_press')
 		.duration(12000)
@@ -1668,7 +1668,7 @@ const registerAE2Recipes = (event) => {
 
 	// Inscriber engineering Press
 	event.recipes.gtceu.laser_engraver('ae2:engineering_press_iron')
-		.itemInputs('#forge:plates/iron')
+		.itemInputs('#forge:plates/cast_iron')
 		.notConsumable('#forge:lenses/light_blue')
 		.itemOutputs('ae2:engineering_processor_press')
 		.duration(12000)
@@ -1683,7 +1683,7 @@ const registerAE2Recipes = (event) => {
 
 	// Inscriber calculation Press
 	event.recipes.gtceu.laser_engraver('ae2:calculation_press_iron')
-		.itemInputs('#forge:plates/iron')
+		.itemInputs('#forge:plates/cast_iron')
 		.notConsumable('#forge:lenses/blue')
 		.itemOutputs('ae2:calculation_processor_press')
 		.duration(12000)

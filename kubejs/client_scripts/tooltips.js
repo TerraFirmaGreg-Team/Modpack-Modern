@@ -1,4 +1,5 @@
-ItemEvents.tooltip(event => {
+const registerTooltips = (event) =>
+{
 	event.addAdvanced(['tfc:red_kaolin_clay', 'tfc:pink_kaolin_clay', 'tfc:white_kaolin_clay', 'gtceu:brass_block'], (item, advanced, text) => {
 		text.add(1, [text.of('Used in glassblowing as a replacement for Brass Plated Blocks')])
 	})
@@ -61,4 +62,4 @@ ItemEvents.tooltip(event => {
 		text.add(2, text.of('§7Insulation: +10'))
 		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
 	})
-})
+}

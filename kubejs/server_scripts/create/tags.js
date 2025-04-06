@@ -7,6 +7,8 @@ const registerCreateItemTags = (event) => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
+	// Is this Greate's fault?
+	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
 
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
@@ -48,6 +50,9 @@ const registerCreateBlockTags = (event) => {
 
 		if (dye != 'white') event.add('tfg:colored_seats', `create:${dye}_seat`)
 	})
+
+	// Disable bulk blasting
+	event.removeAll('create:fan_processing_catalysts/blasting')
 }
 
 
@@ -60,4 +65,7 @@ const registerCreateFluidTags = (event) => {
 	// Добавляем тег для скрытия в EMI
 	event.add('c:hidden_from_recipe_viewers', 'create:chocolate')
 	event.add('c:hidden_from_recipe_viewers', 'create:honey')
+
+	// Disable bulk blasting
+	event.removeAll('create:fan_processing_catalysts/blasting')
 }

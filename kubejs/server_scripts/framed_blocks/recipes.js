@@ -138,7 +138,7 @@ const registerFramedBlocksRecipes = (event) => {
 		'AA',
 		'BB'
 	], {
-		A: '#forge:plates/iron',
+		A: '#forge:plates/wrought_iron',
 		B: 'framedblocks:framed_cube'
 	}).id('framedblocks:framed_iron_pressure_plate')
 
@@ -495,7 +495,7 @@ const registerFramedBlocksRecipes = (event) => {
 	).id('framedblocks:framed_stone_button')
 
 	event.custom({
-		type: "framedblocks:framed_button",
+		type: "framedblocks:frame",
 		additives: [
 			{
 				"count": 1,

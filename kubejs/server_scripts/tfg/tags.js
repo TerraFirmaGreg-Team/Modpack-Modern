@@ -1,4 +1,14 @@
 const registerTFGItemTags = (event) => {
+	//Decorative Vases
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
+		event.add('tfg:decorative_vases/generated', `tfg:decorative_vase/generated/${color}`)
+		event.add('tfg:decorative_vases', `tfg:decorative_vase/${color}`)
+		event.add('tfg:decorative_vases/unfired', `tfg:decorative_vase/unfired/${color}`)
+	})
+	event.add('tfg:decorative_vases', 'tfg:decorative_vase')
+	event.add('tfg:decorative_vases/unfired', 'tfg:decorative_vase/unfired')
+
 	// #region Paper from wood
 
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
@@ -84,15 +94,18 @@ const registerTFGBlockTags = (event) => {
 	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_deepslate')
 	event.add('tfc:grass_plantable_on', 'tfg:rock/hardened_deepslate')
 	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_deepslate')
+	event.add('tfc:rock/hardened', 'tfg:rock/hardened_deepslate')
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_blackstone')
 	event.add('minecraft:moss_replaceable', 'tfg:rock/hardened_blackstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_blackstone')
 	event.add('beneath:nether_bush_plantable_on', 'tfg:rock/hardened_blackstone')
 	event.add('tfc:creeping_plantable_on', 'tfg:rock/hardened_blackstone')
+	event.add('tfc:rock/hardened', 'tfg:rock/hardened_blackstone')
 
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
+	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
 
 	// #endregion
 }
@@ -114,6 +127,19 @@ const registerTFGFluidTags = (event) => {
 
 
 const registerTFGBiomeTags = (event) => {
+
+	//#region TFG Structure Biomes
+	event.add('tfg:has_structure/plains_temperate_0', 'tfc:plains')
+	event.add('tfg:has_structure/plains_temperate_0', 'tfc:highlands')
+
+	event.add('tfg:has_structure/aqueduct', 'tfc:plains')
+	event.add('tfg:has_structure/aqueduct', 'tfc:highlands')
+	event.add('tfg:has_structure/aqueduct', 'tfc:lowlands')
+	event.add('tfg:has_structure/aqueduct', 'tfc:badlands')
+
+	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_oceanic_mountains')
+	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_mountains')
+	//#endregion
 
 	// #region Nether biomes
 

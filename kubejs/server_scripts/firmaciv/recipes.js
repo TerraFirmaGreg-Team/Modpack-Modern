@@ -39,8 +39,8 @@ const registerFirmaCivRecipes = (event) => {
 
     event.replaceOutput( // This problem would come each time there's a double-plate recipe in an anvil. Dunno how to fix it other than that.
         'gtceu:arc_furnace/arc_unfinished_nav_clock',
-        'gtceu:brass_ingot',
-        '2x gtceu:brass_ingot')     
+        'create:brass_ingot',
+        '2x create:brass_ingot')     
     
     event.replaceOutput(
         'gtceu:macerator/macerate_unfinished_nav_clock',

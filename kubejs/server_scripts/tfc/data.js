@@ -120,6 +120,11 @@ const registerTFCHeats = (event) => {
 
     // Misc
     event.itemHeat('tfg:latex_soaked_gloves', 1.0, null, null)
+
+    global.MINECRAFT_DYE_NAMES.forEach (color => {
+        event.itemHeat(`tfg:decorative_vase/unfired/${color}`, 1.0, null, null)
+    })
+    event.itemHeat('tfg:decorative_vase/unfired', 1.0, null, null)
 }
 
 const registerTFCFuels = (event) => {
@@ -171,6 +176,13 @@ const registerTFCItemSize = (event) => {
     event.itemSize('sophisticatedbackpacks:gold_backpack', 'very_large', 'very_heavy', 'gold_backpack_size')
     event.itemSize('sophisticatedbackpacks:diamond_backpack', 'very_large', 'very_heavy', 'diamond_backpack_size')
     event.itemSize('sophisticatedbackpacks:netherite_backpack', 'very_large', 'very_heavy', 'netherite_backpack_size')
+
+    global.MINECRAFT_DYE_NAMES.forEach (color => {
+        event.itemSize(`tfg:decorative_vase/${color}`, 'normal', 'medium', `decorative_vase/${color}`)
+        event.itemSize(`tfg:decorative_vase/unfired/${color}`, 'normal', 'medium', `decorative_vase/unfired/${color}`)
+    })
+    event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
+    event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
 
     event.itemSize('man_of_many_planes:scarlet_biplane', 'huge', 'very_heavy')
     event.itemSize('man_of_many_planes:economy_plane', 'huge', 'very_heavy')

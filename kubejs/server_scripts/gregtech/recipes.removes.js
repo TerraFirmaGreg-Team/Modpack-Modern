@@ -2,6 +2,11 @@
 
 function removeGTCEURecipes(event) {
 
+	global.GTCEU_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
 	//#region Выход: Крошечная кучка камня
 
 	event.remove({ id: 'gtceu:macerator/macerate_stone_button' })
@@ -516,6 +521,12 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/purpur_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/red_sandstone_polished_hammer' })
 	event.remove({ id: 'gtceu:shaped/nether_bricks_polished_hammer' })
+  
+	event.remove({ id: 'gtceu:shaped_fluid_container/brick_from_water' })
+
+	// Gears
+	event.remove({ id: 'gtceu:extruder/extrude_wood_ingot_to_small_gear' })
+	event.remove({ id: 'gtceu:alloy_smelter/alloy_smelt_wood_ingot_to_small_gear' })
 
 	// Misc vanilla stuff
 	event.remove({ id: 'gtceu:shaped/observer' })

@@ -665,10 +665,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"257DB4B39B2A928E"
-				"5B2696206205CB2E"
-			]
+			dependencies: ["5B2696206205CB2E"]
 			id: "70432F650591353C"
 			shape: "rsquare"
 			size: 0.66d

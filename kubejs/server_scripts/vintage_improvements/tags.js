@@ -10,7 +10,8 @@ function registerVintageImprovementsItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', '#vintageimprovements:springs')
 	event.add('c:hidden_from_recipe_viewers', '#vintageimprovements:small_springs')
 	event.add('c:hidden_from_recipe_viewers', '#forge:wires')
-
+	
+	event.add('vintageimprovements:custom_hammering_blocks', '#tfc:anvils')
 }
 
 
@@ -20,6 +21,8 @@ function registerVintageImprovementsBlockTags(event) {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
+
+	event.add('vintageimprovements:custom_hammering_blocks', '#tfc:anvils')
 }
 
 

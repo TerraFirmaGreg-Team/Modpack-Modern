@@ -7,6 +7,8 @@ const registerFirmaCivItemTags = (event) => {
         event.removeAllTagsFrom(item)
         event.add('c:hidden_from_recipe_viewers', item)
     })
+
+    event.add(`forge:rope`, `firmaciv:rope_coil`)
 }
 
 const registerFirmaCivBlockTags = (event) => {

@@ -505,7 +505,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:suspicious_gravel',
     'minecraft:stonecutter',
     'minecraft:gravel',
-    'minecraft:moss_carpet',
     'minecraft:large_fern', 
     'minecraft:tall_grass', 
     'minecraft:sculk_vein', 
@@ -674,6 +673,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honeycomb',
     'minecraft:tipped_arrow',
     'minecraft:grindstone',
+    'minecraft:fermented_spider_eye',
 
     // Кримзон незер дерево
     // TODO: Разблокировать после добавления ада

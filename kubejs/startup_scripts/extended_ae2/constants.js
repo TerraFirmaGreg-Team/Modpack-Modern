@@ -10,10 +10,14 @@ global.EXTENDED_AE2_DISABLED_ITEMS = [
     'expatternprovider:ex_inscriber',
     'expatternprovider:crystal_fixer',
 
-    //в будущем будет крафт
-    /*
     'expatternprovider:ex_charger',
     'expatternprovider:caner',
+    'expatternprovider:circuit_cutter',
+    'expatternprovider:silicon_block',
+
+
+    //в будущем будет крафт
+    /*
     'expatternprovider:ex_io_port',
     'expatternprovider:wireless_tool',
     'expatternprovider:wireless_connect',

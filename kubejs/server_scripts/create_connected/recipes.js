@@ -1,27 +1,31 @@
 // priority: 0
 
 const registerCreateConnectedRecipes = (event) => {
+
+    // Remove Fluid Vessel Crafting
+    event.remove({id: 'create_connected:crafting/kinetics/fluid_vessel'})
+    
     // Centrifugal Clutch
     event.shapeless('create_connected:centrifugal_clutch', [
         'create:andesite_casing',
         '#forge:plates/wrought_iron',
         'create:speedometer',
-        'create:shaft',
+        '#tfg:shafts',
     ]).id('create_connected:crafting/kinetics/centrifugal_clutch')
 
     // Freewheel Clutch'
     event.shapeless('create_connected:freewheel_clutch', [
         'create:andesite_casing',
         '#forge:plates/wrought_iron',
-        'create:shaft',
-        'create:cogwheel',
+        '#tfg:shafts',
+        '#tfg:small_cogwheels',
     ]).id('create_connected:crafting/kinetics/freewheel_clutch')
 
     // Overstress Clutch
     event.shapeless('create_connected:overstress_clutch', [
         'create:andesite_casing',
         '#forge:plates/wrought_iron',
-        'create:shaft',
+        '#tfg:shafts',
         'create:electron_tube',
     ]).id('create_connected:crafting/kinetics/overstress_clutch')
 

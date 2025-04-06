@@ -49,8 +49,6 @@ function registerTFGMedicineRecipes(event) {
 		.duration(200)
 		.EUt(21)
 
-	// TODO: mixing bowl recipes? https://notenoughmail.github.io/kubejs_tfc/1.20.1/recipes/#firmalife-mixing-bowl
-
 	//#endregion
 
 	//#region Poison
