@@ -75,41 +75,41 @@ function registerVintageImprovementsRecipes(event) {
 	}).id('tfg:vi/shaped/curving_press')
 
 	event.shaped('vintageimprovements:helve_hammer', [
-		'F E',
-		'BBA',
+		'F A',
+		'BBE',
 		'C D'
 	], {
-		A: 'tfc:metal/block/bronze',
-		B: '#minecraft:logs',
+		A: '#forge:frames/bronze',
+		B: '#tfg:hardwood',
 		C: '#forge:double_ingots/iron',
 		D: 'greate:andesite_alloy_cogwheel',
-		E: '#forge:tools/saws',
+		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer_bronze')
 
 	event.shaped('vintageimprovements:helve_hammer', [
-		'F E',
-		'BBA',
+		'F A',
+		'BBE',
 		'C D'
 	], {
-		A: 'tfc:metal/block/black_bronze',
-		B: '#minecraft:logs',
+		A: '#forge:frames/black_bronze',
+		B: '#tfg:hardwood',
 		C: '#forge:double_ingots/iron',
 		D: 'greate:andesite_alloy_cogwheel',
-		E: '#forge:tools/saws',
+		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer_black_bronze')
 
 	event.shaped('vintageimprovements:helve_hammer', [
-		'F E',
-		'BBA',
+		'F A',
+		'BBE',
 		'C D'
 	], {
-		A: 'tfc:metal/block/bismuth_bronze',
-		B: '#minecraft:logs',
+		A: '#forge:frames/bismuth_bronze',
+		B: '#tfg:hardwood',
 		C: '#forge:double_ingots/iron',
 		D: 'greate:andesite_alloy_cogwheel',
-		E: '#forge:tools/saws',
+		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
 	}).id('tfg:vi/shaped/helve_hammer_bismuth_bronze')
 
@@ -179,4 +179,86 @@ function registerVintageImprovementsRecipes(event) {
 	})
 
 	// #endregion
+
+	//#region Hammer
+
+	// Tier 1
+	let HAMMERING_MATERIALS = [
+		{ material: GTMaterials.Copper, blows: 10 },
+		{ material: GTMaterials.Zinc, blows: 10 },
+		{ material: GTMaterials.Nickel, blows: 10 },
+		{ material: GTMaterials.Gold, blows: 10 },
+		{ material: GTMaterials.Bismuth, blows: 10 },
+		{ material: GTMaterials.RoseGold, blows: 10 },
+		{ material: GTMaterials.SterlingSilver, blows: 10 }
+	]
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'copper');
+		x.blows--;
+	})
+
+	// Tier 2
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Bronze, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BlackBronze, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BismuthBronze, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Brass, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.RedAlloy, blows: 10 })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'bronze');
+		generateHammeringRecipe(event, x.material, x.blows, 'black_bronze');
+		generateHammeringRecipe(event, x.material, x.blows, 'bismuth_bronze');
+		x.blows--;
+	})
+
+	// Tier 3
+	HAMMERING_MATERIALS.push({ material: GTMaterials.TinAlloy, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Iron, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.WroughtIron, blows: 10 })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'wrought_iron');
+		x.blows--;
+	})
+
+	// Tier 4
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Steel, blows: 10 })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'steel');
+		x.blows--;
+	})
+
+	// Tier 5
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BlackSteel, blows: 10 })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'black_steel');
+		x.blows--;
+	})
+
+	// Tier 6
+	HAMMERING_MATERIALS.push({ material: GTMaterials.RedSteel, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BlueSteel, blows: 10 })
+
+	HAMMERING_MATERIALS.forEach(x => {
+		generateHammeringRecipe(event, x.material, x.blows, 'red_steel');
+		generateHammeringRecipe(event, x.material, x.blows, 'blue_steel');
+		x.blows--;
+	})
+
+	// #endregion
+}
+
+function generateHammeringRecipe(event, material, blows, anvil) {
+
+	event.custom({
+		type: 'vintageimprovements:hammering',
+		hammerBlows: blows,
+		ingredients: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
+		results: [ChemicalHelper.get(TagPrefix.plate, material, 1)],
+		anvilBlock: `tfc:metal/anvil/${anvil}`
+	}).id(`tfg:vi/hammer/${material.getName()}_plate_on_${anvil}_anvil`)
+
 }
