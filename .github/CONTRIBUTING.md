@@ -35,11 +35,17 @@ You can do that using **terminal**, **cmd** or the **GitHub Desktop** app.
 
 ### 5
 
+If you've installed Pakku utilizing Scoop/Brew:
 - Open your _terminal_ and run:
     ```
     pakku fetch
     ```
 
+Otherwise, if you downloaded the raw .jar
+- Open your _terminal_ and run:
+    ```
+    java -jar pakku.jar fetch
+    ```
 <!-- Links: -->
 [PrismLauncher]: https://prismlauncher.org/
 [Visual Studio Code]: https://code.visualstudio.com/

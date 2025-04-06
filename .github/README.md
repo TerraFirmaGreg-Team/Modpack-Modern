@@ -49,6 +49,7 @@ and others, also all these mods have addons to diversify the gameplay even more!
 
 For the set-up guide, please feel free to head to the [CONTRIBUTING.md](CONTRIBUTING.md).
 
+If you're looking for Localizing the modpack to a Language, please feel free to head to the [LOCALIZATION CONTRIBUTING.md](LOCALIZATION_CONTRIBUTING.md)
 ![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
 
 

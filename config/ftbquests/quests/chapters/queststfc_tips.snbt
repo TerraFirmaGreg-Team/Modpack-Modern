@@ -2359,7 +2359,10 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["037CDA933FBE2CBE"]
+			dependencies: [
+				"037CDA933FBE2CBE"
+				"6302B4F5F57FDCED"
+			]
 			description: ["{quests.tfg_tips.creosote.desc}"]
 			id: "72C1E430FF6D2DD8"
 			subtitle: "{quests.tfg_tips.creosote.subtitle}"

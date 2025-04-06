@@ -429,7 +429,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1562419608EB333D"]
+			dependencies: [
+				"1562419608EB333D"
+				"174DA15847665CF8"
+			]
 			description: ["{quests.stone_age.iron_flask.desc}"]
 			id: "11C45DBB20ED7647"
 			subtitle: "{quests.stone_age.iron_flask.subtitle}"
@@ -2017,6 +2020,6 @@
 			y: 9.0d
 		}
 	]
-	subtitle: ["{quests.stoneage.subtitle}"]
+	subtitle: ["{quests.stone_age.subtitle}"]
 	title: "{quests.stone_age}"
 }
