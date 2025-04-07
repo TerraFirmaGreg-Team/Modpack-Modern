@@ -753,6 +753,15 @@ const registerMinecraftRecipes = (event) => {
 		B: '#forge:rings'
 	}).id('minecraft:lead')
 
+	event.shaped('minecraft:lead', [
+		' AA',
+		' BA',
+		'A  '
+	], {
+		A: 'tfc:jute_fiber',
+		B: '#forge:rings'
+	}).id('tfc:crafting/lead')
+
 	//#endregion
 
 	//#region Выход: Кирпич
