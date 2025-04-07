@@ -779,7 +779,21 @@ const registerMinecraftRecipes = (event) => {
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of the Gods\",\"italic\":true}'}}"))
 		.duration(1600)
-		.EUt(120)
+		.EUt(120)	
+
+	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
+		.duration(224)
+		.EUt(420)
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
+		.duration(160)
+		.EUt(420)
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
 

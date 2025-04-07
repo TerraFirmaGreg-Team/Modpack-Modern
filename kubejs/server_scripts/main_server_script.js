@@ -6,6 +6,7 @@
 ServerEvents.tags('item', event => {
     registerAE2ItemTags(event)
     registerAFCItemTags(event)
+    registerAlekiroofsItemTags(event)
     registerAlekishipsItemTags(event)
     registerAsticorCartsItemTags(event)
     registerBeneathItemTags(event)
@@ -177,6 +178,7 @@ ServerEvents.recipes(event => {
     registerHandGliderRecipes(event)
     registerHotOrNotRecipes(event)
     registerImmersiveAircraftRecipes(event)
+    registerMeasurementsRecipes(event)
     registerMegaCellsRecipes(event)
     registerMERequesterRecipes(event)
     registerMinecraftRecipes(event)
