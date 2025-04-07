@@ -9851,7 +9851,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "particular-1.20.1-Forge-1.0.1.jar",
+                    "file_name": "particular-1.20.1-Forge-1.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9859,20 +9859,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pYFUU6cq/versions/8Uu0KZZR/particular-1.20.1-Forge-1.0.1.jar",
-                    "id": "8Uu0KZZR",
+                    "url": "https://cdn.modrinth.com/data/pYFUU6cq/versions/ZP94L2Nm/particular-1.20.1-Forge-1.2.0.jar",
+                    "id": "ZP94L2Nm",
                     "parent_id": "pYFUU6cq",
                     "hashes": {
-                        "sha512": "ebb3f53c1cdc0ab9903cea41a30ff68b8bec7e4a82b0dd6dee6c995d3cc599307836f40c2232522e81343873f00f48e8f7d5d5a48ae32a44fb2308ebb109d462",
-                        "sha1": "da1e4e0bb089f1c65b1b393c6d76a3f9a0abf19a"
+                        "sha512": "bf3c9a8e615216177511d2e656f1260c881db3dc2cc3f0f14ac993747e5d90e17092e74ad24a90176291510c6af84e01fc44763c5b30719428954b40b2d7d121",
+                        "sha1": "fa2140c8231137222aad8c69e5276f65ee7b81f2"
                     },
                     "required_dependencies": [],
-                    "size": 400762,
-                    "date_published": "2025-03-19T09:57:15.687959Z"
+                    "size": 413624,
+                    "date_published": "2025-04-04T18:27:56.564062Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "particular-1.20.1-Forge-1.1.0.jar",
+                    "file_name": "particular-1.20.1-Forge-1.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9881,16 +9881,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6367/840/particular-1.20.1-Forge-1.1.0.jar",
-                    "id": "6367840",
+                    "url": "https://edge.forgecdn.net/files/6384/680/particular-1.20.1-Forge-1.2.0.jar",
+                    "id": "6384680",
                     "parent_id": "1219053",
                     "hashes": {
-                        "sha1": "d21190503068a41b3fe380dac136aee6c2b418f5",
-                        "md5": "eb093a12e20471cf3aa61f5cae59dfde"
+                        "sha1": "fa2140c8231137222aad8c69e5276f65ee7b81f2",
+                        "md5": "e8130db1cc9236c1d98ba967120f3c7d"
                     },
                     "required_dependencies": [],
-                    "size": 401961,
-                    "date_published": "2025-03-30T18:26:07.623Z"
+                    "size": 413624,
+                    "date_published": "2025-04-04T17:06:23.443Z"
                 }
             ]
         },
