@@ -10,21 +10,21 @@
 		{
 			id: "62E10FCCD3CFFB25"
 			linked_quest: "26F07C926959FACF"
-			x: -18.0d
-			y: -5.5d
+			x: -22.0d
+			y: -5.0d
 		}
 		{
 			id: "1CE57ADA90D9E3A9"
 			linked_quest: "3C173357029AB649"
 			shape: "octagon"
 			size: 2.0d
-			x: -18.0d
+			x: -22.0d
 			y: -7.5d
 		}
 		{
 			id: "36E0479110D898C9"
 			linked_quest: "20C2CE92459BE14A"
-			x: -10.0d
+			x: -14.0d
 			y: -5.0d
 		}
 		{
@@ -32,14 +32,14 @@
 			linked_quest: "04DE7C58F20B535A"
 			shape: "octagon"
 			size: 2.0d
-			x: -3.0d
+			x: -5.5d
 			y: -7.5d
 		}
 		{
 			id: "5BCB495C7D9E1024"
 			linked_quest: "0C9B7745D812555A"
-			x: -3.0d
-			y: -5.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "77F8E82E8E3274BF"
@@ -58,7 +58,7 @@
 		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
-			x: -21.5d
+			x: -27.5d
 			y: -5.5d
 		}
 		{
@@ -66,7 +66,7 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "octagon"
 			size: 2.0d
-			x: -21.5d
+			x: -27.5d
 			y: -7.5d
 		}
 		{
@@ -74,13 +74,13 @@
 			linked_quest: "174DA15847665CF8"
 			shape: "octagon"
 			size: 2.0d
-			x: -10.0d
+			x: -14.0d
 			y: -7.5d
 		}
 		{
 			id: "230D93B2609B10A6"
 			linked_quest: "6784D187505C19C5"
-			x: -14.0d
+			x: -16.5d
 			y: -7.0d
 		}
 		{
@@ -126,8 +126,8 @@
 				item: "greate:andesite_alloy_millstone"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -3.5d
+			x: -20.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["26F07C926959FACF"]
@@ -137,8 +137,8 @@
 				item: "createhorsepower:horse_crank"
 				type: "item"
 			}]
-			x: -19.5d
-			y: -3.5d
+			x: -24.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7B045998769930F0"]
@@ -148,8 +148,8 @@
 				item: "vintageimprovements:helve_hammer"
 				type: "item"
 			}]
-			x: -18.0d
-			y: 0.0d
+			x: -22.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["26F07C926959FACF"]
@@ -171,8 +171,8 @@
 					type: "item"
 				}
 			]
-			x: -18.0d
-			y: -2.0d
+			x: -22.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["20C2CE92459BE14A"]
@@ -189,7 +189,7 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
+			x: -12.0d
 			y: -6.0d
 		}
 		{
@@ -208,7 +208,7 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
+			x: -12.0d
 			y: -4.0d
 		}
 		{
@@ -219,7 +219,7 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -14.0d
 			y: -2.5d
 		}
 		{
@@ -230,8 +230,8 @@
 				item: { Count: 32, id: "greate:steel_encased_fan" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -1.5d
+			x: -5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["09D913288896A67A"]
@@ -241,8 +241,8 @@
 				item: "greate:steel_mechanical_pump"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2C7368B3F573B284"]
@@ -281,7 +281,7 @@
 				item: "greate:andesite_alloy_mechanical_saw"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -15.0d
 			y: -0.5d
 		}
 		{
@@ -292,7 +292,7 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -13.0d
 			y: -0.5d
 		}
 		{
@@ -310,7 +310,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -16.5d
 			y: -5.0d
 		}
 		{
@@ -321,8 +321,8 @@
 				item: "tfcchannelcasting:mold_table"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0C9B7745D812555A"]
@@ -345,8 +345,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: -3.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["09D913288896A67A"]
@@ -356,8 +356,8 @@
 				item: "greate:steel_millstone"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -1.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5E4FC017E09ACF44"]
@@ -367,19 +367,22 @@
 				item: "greate:steel_crushing_wheel"
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.5d
+			x: -9.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["616E28977F3216D9"]
+			dependencies: [
+				"616E28977F3216D9"
+				"5E4FC017E09ACF44"
+			]
 			description: ["TODO: text about how now you can totally automate your ore washing"]
 			id: "5BAFF2BAE1E4EE2C"
 			tasks: [{
 				id: "76B30A22ADD537D6"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: -7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
@@ -578,7 +581,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: -14.0d
+			x: -16.5d
 			y: -3.0d
 		}
 		{
@@ -738,7 +741,7 @@
 				item: "minecraft:paper"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.5d
 			y: 9.5d
 		}
 		{
@@ -998,6 +1001,103 @@
 			}]
 			x: -7.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["51CBF7378FFAD514"]
+			description: [
+				"&bFluid Pipes&r will transport &7Steam&r between machines for you."
+				""
+				"Each Pipe has a certain throughput in mB/t, and a &6Temperature Limit&r. This is relevant right now, as Steam will burn Wooden Pipes. Some pipes have &bspecial&r attributes you don't need to worry about for now."
+				""
+				"Each material has several sizes for Pipes. The bigger the Pipe, the &ahigher&r the throughput, but the more &dexpensive&r the craft. For example, a normal &6Bronze Fluid Pipe&r transfers 120 mB/t. (It also has a 1,200 mB internal buffer!)"
+				""
+				"Get either a Small or Normal &6Bronze Fluid Pipe&r to complete this quest. Both are used in crafting."
+				"{@pagebreak}"
+				"&aReminder:&r 1 second = 20 ticks... assuming the server isn't lagging."
+				""
+				"&dNote:&r GT6-style Pipes are enabled. It means that placing Pipes connects them only to the block they were placed against. To open more connections, use your Wrench on the pipe."
+				""
+				"You can also shift-right click with your Wrench to disable input from a side. This can help counteract sloshing (liquids travelling in an undesired direction)."
+			]
+			icon: "gtceu:bronze_normal_fluid_pipe"
+			id: "0109231F33296868"
+			size: 1.0d
+			subtitle: "Liquids, gases... we don't discriminate"
+			tasks: [{
+				id: "59512A7A04D517E6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_small_fluid_pipe))"
+					}
+				}
+				title: "Any Bronze Pipe"
+				type: "item"
+			}]
+			title: "Fluid Pipes"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["51CBF7378FFAD514"]
+			description: [
+				"&6GregTech&r can quickly get &4overwhelming&r with the plethora of fluids it introduces, so you may be looking for a way to store them. "
+				""
+				"Introducing... &aDrums&r! They have large internal buffers, and any &aDrum&r can be broken and picked up and will &dkeep the fluid&r inside."
+				"{@pagebreak}"
+				"&l&4[ NOT YET IMPLEMENTED ]"
+				""
+				"Additionally, &binternal tanks&r from machines will interact with items containing fluid. This is great for manual crafting - this means you can use fluid drums instead of multiple buckets in crafting. To &5void fluid&r contained in a Drum, place it alone in any crafting grid."
+				""
+				"&o&7Pssst:&r &oA right-click with a Screwdriver allows a Drum to drain its content into another container placed under it. This is great if you want to keep your Liquid Boilers fueled for longer."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o These drums are actually ported from GregTech 6."
+			]
+			id: "499D24AFADC25AA9"
+			size: 1.0d
+			subtitle: "Just kidding, tanks for fluids"
+			tasks: [{
+				id: "0DBD9730661C8EC3"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			title: "Armoured Tanks"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["49896161B31DB7B4"]
+			description: [
+				"&dPotin Fluid Pipes&r have a &avery high throughput&r for the material tier and cost. You may want to look into making some of these to aid with fluid logistics."
+				""
+				"To get &dPotin&r, you should start by crafting its &eDust&r form."
+				""
+				"This quest calls for either the small or normal pipe. Get either size to complete it."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o &dPotin Fluid Pipes&r were originally created in &9GT++&r, and were a huge power spike for players in a little pack called &4GT:NH&r. We wanted to spread some of that joy."
+				""
+				"In the real world, &dPotin&r is an alloy used in coins, not pipes. GTCEu just gets more unrealistic by the day..."
+			]
+			icon: "gtceu:potin_normal_fluid_pipe"
+			id: "6B6FEF3DC6299CD9"
+			size: 1.0d
+			subtitle: "...I'm going into battle, and I need only your finest Potin."
+			tasks: [{
+				id: "3FC7579C544460B1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:potin_tiny_fluid_pipe)item(gtceu:potin_small_fluid_pipe)item(gtceu:potin_normal_fluid_pipe)item(gtceu:potin_large_fluid_pipe)item(gtceu:potin_huge_fluid_pipe)item(gtceu:potin_huge_fluid_pipe)item(gtceu:potin_quadruple_fluid_pipe)item(gtceu:potin_nonuple_fluid_pipe))"
+					}
+				}
+				title: "Any Potin Pipe"
+				type: "item"
+			}]
+			title: "Potin Seller..."
+			x: -5.5d
+			y: 13.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
