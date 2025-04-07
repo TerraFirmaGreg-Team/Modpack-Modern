@@ -212,13 +212,13 @@ function registerGreateRecipes(event) {
 	event.shaped('greate:andesite_alloy_mechanical_saw', [
 		'ABA',
 		'CDC',
-		'EFE'
+		'EF '
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: 'gtceu:wrought_iron_buzz_saw_blade',
 		C: 'greate:andesite_alloy_cogwheel',
 		D: 'create:andesite_casing',
-		E: '#forge:plates/wrought_iron',
+		E: '#forge:tools/wrenches',
 		F: 'greate:andesite_alloy_shaft'
 	}).id('greate:shaped/andesite_alloy_mechanical_saw')
 
@@ -227,10 +227,10 @@ function registerGreateRecipes(event) {
 		'CDC',
 		'FE '
 	], {
-		A: '#gtceu:circuits/lv',
+		A: '#gtceu:circuits/ulv',
 		B: 'gtceu:cobalt_brass_buzz_saw_blade',
-		C: 'gtceu:lv_electric_motor',
-		D: 'gtceu:lv_machine_casing',
+		C: 'greate:steel_cogwheel',
+		D: 'gtceu:ulv_machine_casing',
 		E: 'greate:steel_shaft',
 		F: '#forge:tools/wrenches'
 	}).id('greate:shaped/steel_mechanical_saw')

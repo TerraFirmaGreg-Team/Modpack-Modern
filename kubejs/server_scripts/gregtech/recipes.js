@@ -1507,4 +1507,11 @@ const registerGTCEURecipes = (event) => {
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
 		.id('tfg:shapeless/red_alloy_single_cable')
 
+	event.recipes.createSequencedAssembly([
+		'gtceu:ulv_voltage_coil',
+	], 'gtceu:magnetic_iron_rod', [
+		event.recipes.createDeploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', '#forge:fine_wires/lead'])
+	]).transitionalItem('gtceu:magnetic_iron_rod').loops(32).id('tfg:sequenced_assembly/ulv_voltage_coil')
+
+
 }

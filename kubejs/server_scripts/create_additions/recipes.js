@@ -68,4 +68,28 @@ const registerCreateAdditionsRecipes = (event) => {
 		.itemOutputs('4x createaddition:barbed_wire')
 		.duration(200)
 		.EUt(20)
+
+	event.shaped('createaddition:electric_motor', [
+		'CCC',
+		'BDA',
+		'CCC'
+	], {
+		A: 'gtceu:ulv_voltage_coil',
+		B: 'create:rotation_speed_controller',
+		C: 'gtceu:tin_single_cable',
+		D: 'gtceu:lv_electric_motor',
+	}).id('tfg:electric_motor_mv')
+
+	event.shaped('createaddition:alternator', [
+		'ACA',
+		'FDB',
+		'ECE'
+	], {
+		A: '#gtceu:resistors',
+		B: '#gtceu:circuits/lv',
+		C: 'gtceu:ulv_voltage_coil',
+		D: 'gtceu:lv_machine_casing',
+		E: 'gtceu:tin_single_cable',
+		F: 'greate:steel_shaft'
+	}).id('tfg:alternator_mv')
 }

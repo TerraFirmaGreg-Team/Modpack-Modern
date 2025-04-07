@@ -206,7 +206,9 @@ function registerGreateRecyclingRecipes(event) {
 
 	event.recipes.gtceu.macerator('greate:steel_encased_fan')
 		.itemInputs('greate:steel_encased_fan')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 12))
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 8),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 4))
 		.duration(GTMaterials.Steel.getMass() * 12)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -304,7 +306,7 @@ function registerGreateRecyclingRecipes(event) {
 	event.recipes.gtceu.macerator('greate:steel_mechanical_saw')
 		.itemInputs('greate:steel_mechanical_saw')
 		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 8),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 8),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.CobaltBrass, 4),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Copper, 4))
 		.duration(GTMaterials.CobaltBrass.getMass() * 16)
@@ -314,7 +316,7 @@ function registerGreateRecyclingRecipes(event) {
 	event.recipes.gtceu.arc_furnace('greate:steel_mechanical_saw')
 		.itemInputs('greate:steel_mechanical_saw')
 		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 8),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 8),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.CobaltBrass, 4),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.AnnealedCopper, 4))
 		.duration(GTMaterials.CobaltBrass.getMass() * 16)

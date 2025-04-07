@@ -23,11 +23,10 @@ Key:
 		- ⏳ Vintage Improvements:
 			- ✔ Recipes to craft the things
 			- ⏳ Recipes that the machines do
-			- Recycling recipes
 			- ✔ Adjust where the ingot is rendered on the helve hammer
 		- ✔ Greate
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
-	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
+	- Adjust costs of additions' alternator/motor to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
 - ⏳ Change aircraft recipes to need mech crafter (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
