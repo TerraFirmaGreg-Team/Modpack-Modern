@@ -5,40 +5,24 @@ const registerCreateRecipes = (event) => {
 	// Удаление рецептов мода create 
 	event.remove({
 		not: [
-			{ id: 'create:crafting/kinetics/clutch' },
-			{ id: 'create:crafting/kinetics/gearshift' },
 			{ id: 'create:crafting/kinetics/adjustable_chain_gearshift' },
-			{ id: 'create:crafting/kinetics/water_wheel' },
-			{ id: 'create:crafting/kinetics/large_water_wheel' },
-			{ id: 'create:crafting/kinetics/turntable' },
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
-			{ id: 'create:crafting/kinetics/weighted_ejector' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
 			{ id: 'create:crafting/kinetics/speedometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/stressometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/smart_fluid_pipe' },
 			{ id: 'create:crafting/kinetics/portable_fluid_interface' },
-			{ id: 'create:crafting/kinetics/gantry_carriage' },
-			{ id: 'create:crafting/kinetics/windmill_bearing' },
-			{ id: 'create:crafting/kinetics/mechanical_bearing' },
 			{ id: 'create:crafting/kinetics/clockwork_bearing' },
 			{ id: 'create:crafting/kinetics/linear_chassisfrom_conversion' },
 			{ id: 'create:crafting/kinetics/secondary_linear_chassisfrom_conversion' },
-			{ id: 'create:crafting/kinetics/contraption_controls' },
-			{ id: 'create:crafting/kinetics/deployer' },
 			{ id: 'create:crafting/kinetics/portable_storage_interface' },
-			{ id: 'create:crafting/kinetics/mechanical_roller' },
-			{ id: 'create:crafting/kinetics/sequenced_gearshift' },
-			{ id: 'create:crafting/kinetics/rotation_speed_controller' },
 			{ id: 'create:crafting/kinetics/track_signal' },
 			{ id: 'create:crafting/kinetics/track_observer' },
 			{ id: 'create:crafting/kinetics/controls' },
 			{ id: 'create:crafting/logistics/content_observer' },
 			{ id: 'create:crafting/logistics/stockpile_switch' },
-			{ id: 'create:crafting/logistics/display_link' },
 			{ id: 'create:crafting/kinetics/nixie_tube' },
-			{ id: 'create:crafting/logistics/redstone_link' },
 			{ id: 'create:crafting/kinetics/analog_lever' },
 			{ id: 'create:crafting/kinetics/placard' },
 			{ id: 'create:crafting/logistics/pulse_repeater' },
@@ -46,39 +30,18 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/logistics/powered_latch' },
 			{ id: 'create:crafting/logistics/powered_toggle_latch' },
 			{ id: 'create:crafting/kinetics/crafter_slot_cover' },
-			{ id: 'create:crafting/kinetics/goggles' },
-			{ id: 'create:crafting/kinetics/wrench' },
-			{ id: 'create:crafting/kinetics/contraption_controls' },
 			{ id: 'create:crafting/appliances/linked_controller' },
 			{ id: 'create:crafting/appliances/filter_clear' },
 			{ id: 'create:crafting/appliances/attribute_filter_clear' },
 			{ id: 'create:crafting/appliances/schedule_clear' },
 			{ id: 'create:crafting/schematics/empty_schematic' },
 			{ id: 'create:crafting/schematics/schematic_and_quill' },
-			{ id: 'create:crafting/curiosities/brown_toolbox' },
 			{ id: 'create:crafting/appliances/clipboard_clear' },
 			{ id: 'create:crafting/kinetics/andesite_door' },
 			{ id: 'create:crafting/kinetics/brass_door' },
 			{ id: 'create:crafting/kinetics/copper_door' },
 			{ id: 'create:crafting/kinetics/train_door' },
 			{ id: 'create:crafting/kinetics/train_trapdoor' },
-			{ id: 'create:crafting/kinetics/white_seat' },
-			{ id: 'create:crafting/kinetics/orange_seat' },
-			{ id: 'create:crafting/kinetics/magenta_seat' },
-			{ id: 'create:crafting/kinetics/light_blue_seat' },
-			{ id: 'create:crafting/kinetics/yellow_seat' },
-			{ id: 'create:crafting/kinetics/lime_seat' },
-			{ id: 'create:crafting/kinetics/pink_seat' },
-			{ id: 'create:crafting/kinetics/gray_seat' },
-			{ id: 'create:crafting/kinetics/light_gray_seat' },
-			{ id: 'create:crafting/kinetics/cyan_seat' },
-			{ id: 'create:crafting/kinetics/purple_seat' },
-			{ id: 'create:crafting/kinetics/blue_seat' },
-			{ id: 'create:crafting/kinetics/brown_seat' },
-			{ id: 'create:crafting/kinetics/green_seat' },
-			{ id: 'create:crafting/kinetics/red_seat' },
-			{ id: 'create:crafting/kinetics/black_seat' },
-			{ id: 'create:compat/ae2/mixing/fluix_crystal' },
 			{ id: 'create:crafting/logistics/content_observer' },
 		], mod: 'create'
 	})
@@ -109,11 +72,12 @@ const registerCreateRecipes = (event) => {
 	// Стол для схематик
 	event.shaped('create:schematic_table', [
 		'AAA',
-		' B ',
+		'CB ',
 		' B '
 	], {
 		A: '#minecraft:wooden_slabs',
-		B: '#tfg:rock_walls'
+		B: '#tfg:rock_walls',
+		C: '#forge:tools/saws'
 	}).id('tfg:create/shaped/schematic_table')
 
 	// Внутриблочный двигатель цепи
@@ -128,8 +92,7 @@ const registerCreateRecipes = (event) => {
 	// Сопло
 	event.shaped('create:nozzle', [
 		'ABA',
-		'ACA',
-		'BBB'
+		'ACA'
 	], {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:plates/wrought_iron',
@@ -185,9 +148,9 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	// Металлический держатель
-	event.shaped('4x create:metal_bracket', [
+	event.shaped('2x create:metal_bracket', [
 		'AAA',
-		'BBB'
+		' B '
 	], {
 		A: '#forge:nuggets/wrought_iron',
 		B: '#forge:plates/wrought_iron'
@@ -234,24 +197,28 @@ const registerCreateRecipes = (event) => {
 
 	// Жидкостный резервуар
 	event.shaped('create:fluid_tank', [
-		'ABA',
+		'ADA',
 		'BCB',
-		'ABA'
+		'AEA'
 	], {
 		A: '#forge:screws/copper',
 		B: '#forge:plates/copper',
-		C: '#forge:glass_panes'
+		C: '#forge:glass_panes',
+		D: '#forge:tools/screwdrivers',
+		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/fluid_tank')
 
 	// Шкив для шланга
 	event.shaped('create:hose_pulley', [
-		'A',
-		'B',
-		'C'
+		'DAE',
+		' B ',
+		' C '
 	], {
 		A: 'create:copper_casing',
 		B: '#forge:foils/rubber',
-		C: '#forge:plates/copper'
+		C: '#forge:plates/copper',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/hose_pulley')
 
 	// Слив из предметов
@@ -282,15 +249,15 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
-		C: '#forge:rods/wrought_iron',
-		D: '#forge:gears/wrought_iron',
+		C: '#forge:rods/red_steel',
+		D: '#forge:gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
 		G: '#forge:tools/screwdrivers',
 	}).id('tfg:create/shaped/steam_engine')
 
 	event.recipes.gtceu.assembler('tfg:create/steam_engine')
-		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/wrought_iron', '#forge:gears/wrought_iron', '#forge:storage_blocks/copper')
+		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:gears/steel', '#forge:storage_blocks/copper')
 		.circuit(3)
 		.itemOutputs('create:steam_engine')
 		.duration(200)
@@ -352,34 +319,41 @@ const registerCreateRecipes = (event) => {
 
 	// Канатный шкиф
 	event.shaped('create:rope_pulley', [
-		'A',
-		'B',
-		'C'
+		'EA ',
+		'DBD',
+		' C '
 	], {
 		A: 'create:andesite_casing',
 		B: 'firmaciv:rope_coil',
-		C: '#forge:plates'
+		C: '#forge:plates',
+		D: '#tfg:small_cogwheels',
+		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/rope_pulley')
 
 	// Шкиф подъемника
 	event.shaped('create:elevator_pulley', [
-		'A',
-		'B',
-		'C'
+		'EAF',
+		'DBD',
+		' C '
 	], {
 		A: 'create:brass_casing',
 		B: 'firmaciv:rope_coil',
-		C: '#forge:plates'
+		C: '#forge:plates',
+		D: '#tfg:small_cogwheels',
+		E: '#forge:tools/wrenches',
+		F: 'create:electron_tube'
 	}).id('tfg:create/shaped/elevator_pulley')
 
 	// Сборщик вагонеток
 	event.shaped('create:cart_assembler', [
+		' D ',
 		'ABA',
 		'C C'
 	], {
 		A: '#forge:plates/steel',
 		B: 'gtceu:red_alloy_single_wire',
-		C: '#minecraft:logs'
+		C: '#minecraft:logs',
+		D: '#forge:wrenches'
 	}).id('tfg:create/shaped/cart_assembler')
 
 	// Контроллер рельсы
@@ -441,6 +415,20 @@ const registerCreateRecipes = (event) => {
 		G: '#forge:screws/wrought_iron'
 	}).id('tfg:create/shaped/mechanical_drill')
 
+	event.shaped('create:mechanical_roller', [
+		'GBG',
+		'ADA',
+		'EHF'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: 'tfc:metal/block/steel',
+		D: 'create:andesite_casing',
+		E: '#forge:tools/hammers',
+		F: '#forge:tools/wrenches',
+		G: '#forge:screws/wrought_iron',
+		H: 'greate:steel_cogwheel'
+	}).id('tfg:create/shaped/mechanical_roller')
+
 	// Редстоуновый контакт
 	event.shaped('2x create:redstone_contact', [
 		'DCE',
@@ -463,19 +451,20 @@ const registerCreateRecipes = (event) => {
 
 	// Механический собиратель
 	event.shaped('create:mechanical_harvester', [
-		'ABA',
-		'ABA',
-		'CDE'
+		'CDE',
+		'BFB',
+		'AAA'
 	], {
-		A: '#forge:shovel_heads',
+		A: '#forge:shovel_heads/steel',
 		B: '#forge:plates/wrought_iron',
 		C: '#forge:tools/hammers',
 		D: 'create:andesite_casing',
-		E: '#forge:tools/wrenches'
+		E: '#forge:tools/wrenches',
+		F: 'greate:steel_cogwheel'
 	}).id('tfg:create/shaped/mechanical_harvester')
 
 	event.recipes.gtceu.assembler('tfg:create/mechanical_harvester')
-		.itemInputs('4x #forge:shovel_heads', '2x #forge:plates/wrought_iron', 'create:andesite_casing')
+		.itemInputs('3x #forge:shovel_heads/steel', '2x #forge:plates/wrought_iron', 'greate:steel_cogwheel', 'create:andesite_casing')
 		.circuit(3)
 		.itemOutputs('create:mechanical_harvester')
 		.duration(200)
@@ -483,19 +472,20 @@ const registerCreateRecipes = (event) => {
 
 	// Механический плуг
 	event.shaped('create:mechanical_plough', [
-		'ABA',
-		'ABA',
-		'CDE'
+		'CDE',
+		'BFB',
+		'AAA'
 	], {
-		A: '#forge:hoe_heads',
+		A: '#forge:hoe_heads/steel',
 		B: '#forge:plates/wrought_iron',
 		C: '#forge:tools/hammers',
 		D: 'create:andesite_casing',
-		E: '#forge:tools/wrenches'
+		E: '#forge:tools/wrenches',
+		F: 'greate:steel_cogwheel'
 	}).id('tfg:create/shaped/mechanical_plough')
 
 	event.recipes.gtceu.assembler('tfg:create/mechanical_plough')
-		.itemInputs('4x #forge:hoe_heads', '2x #forge:plates/wrought_iron', 'create:andesite_casing')
+		.itemInputs('3x #forge:hoe_heads', '2x #forge:plates/wrought_iron', 'greate:steel_cogwheel', 'create:andesite_casing')
 		.circuit(4)
 		.itemOutputs('create:mechanical_plough')
 		.duration(200)
@@ -568,14 +558,16 @@ const registerCreateRecipes = (event) => {
 		.EUt(4)
 
 	// Механический крафтер
-	event.shaped('2x create:mechanical_crafter', [
-		'A',
-		'B',
-		'C'
+	event.shaped('create:mechanical_crafter', [
+		' A ',
+		'DCE',
+		' F '
 	], {
 		A: 'create:electron_tube',
-		B: 'create:brass_casing',
-		C: '#tfc:workbenches'
+		C: '#tfc:workbenches',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/hammers',
+		F: '#forge:small_gears/brass'
 	}).id('tfg:create/shaped/mechanical_crafter')
 
 	// Маховик
@@ -591,7 +583,7 @@ const registerCreateRecipes = (event) => {
 
 	// Механическая рука
 	event.shaped('create:mechanical_arm', [
-		'AAB',
+		'AHB',
 		'AGE',
 		'CDF'
 	], {
@@ -601,11 +593,12 @@ const registerCreateRecipes = (event) => {
 		D: 'create:brass_casing',
 		E: '#forge:tools/hammers',
 		F: '#forge:tools/wrenches',
-		G: '#forge:screws/wrought_iron'
+		G: '#forge:screws/wrought_iron',
+		H: 'create:electron_tube'
 	}).id('tfg:create/shaped/mechanical_arm')
 
 	event.recipes.gtceu.assembler('tfg:create/mechanical_arm')
-		.itemInputs('3x #forge:plates/brass', '#forge:rods/wrought_iron', 'create:precision_mechanism', 'create:brass_casing', '#forge:screws/wrought_iron')
+		.itemInputs('2x #forge:plates/brass', '#forge:rods/wrought_iron', 'create:precision_mechanism', 'create:brass_casing', '#forge:screws/wrought_iron', 'create:electron_tube')
 		.circuit(3)
 		.itemOutputs('create:mechanical_arm')
 		.duration(200)
@@ -638,112 +631,103 @@ const registerCreateRecipes = (event) => {
 
 	// Умный раздатчик/приемник из железа
 	event.shaped('2x create:andesite_funnel', [
-		'AAA',
-		'ABA',
-		'ABA'
+		'AAD',
+		'BBC'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:foils/rubber'
+		B: '#forge:foils/rubber',
+		C: '#forge:tools/wrenches',
+		D: '#forge:tools/knives'
 	}).id('tfg:create/shaped/andesite_funnel')
 
 	event.shaped('2x create:andesite_funnel', [
-		'AAA',
-		'ABA',
-		'ABA'
+		'AAD',
+		'BBC'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:leather'
+		B: '#forge:leather',
+		C: '#forge:tools/wrenches',
+		D: '#forge:tools/knives'
 	}).id('tfg:create/shaped/andesite_funnel_leather')
 
 	// Умный раздатчик/приемник из латуни
 	event.shaped('2x create:brass_funnel', [
-		'AAA',
-		'ABA',
-		'ABA'
+		'AAD',
+		'BBC'
 	], {
 		A: '#forge:plates/brass',
-		B: '#forge:foils/rubber'
+		B: '#forge:foils/rubber',
+		C: '#forge:tools/wrenches',
+		D: '#forge:tools/knives'
 	}).id('tfg:create/shaped/brass_funnel')
 
 	event.shaped('2x create:brass_funnel', [
-		'AAA',
-		'ABA',
-		'ABA'
+		'AAD',
+		'BBC'
 	], {
 		A: '#forge:plates/brass',
-		B: '#forge:leather'
+		B: '#forge:leather',
+		C: '#forge:tools/wrenches',
+		D: '#forge:tools/knives'
 	}).id('tfg:create/shaped/brass_funnel_leather')
 
 	// Тунель из железа
 	event.shaped('create:andesite_tunnel', [
-		'C ',
+		'CD',
 		'AA',
 		'BB'
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:foils/rubber',
-		C: 'create:electron_tube'
+		C: 'create:electron_tube',
+		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/andesite_tunnel')
 
 	event.shaped('create:andesite_tunnel', [
-		'C ',
+		'CD',
 		'AA',
 		'BB'
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:leather',
-		C: 'create:electron_tube'
+		C: 'create:electron_tube',
+		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/andesite_tunnel_leather')
 
 	// Тунель из латуни
 	event.shaped('create:brass_tunnel', [
-		'C ',
+		'CD',
 		'AA',
 		'BB'
 	], {
 		A: '#forge:plates/brass',
 		B: '#forge:foils/rubber',
-		C: 'create:electron_tube'
+		C: 'create:electron_tube',
+		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/brass_tunnel')
 
 	event.shaped('create:brass_tunnel', [
-		'C ',
+		'CD',
 		'AA',
 		'BB'
 	], {
 		A: '#forge:plates/brass',
 		B: '#forge:leather',
-		C: 'create:electron_tube'
+		C: 'create:electron_tube',
+		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/brass_tunnel_leather')
 
 	// Дисплей столешница (чзх)
 	event.shaped('create:display_board', [
-		' A ',
+		'DA ',
 		'BCB',
 		' A '
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:rings/wrought_iron',
-		C: '#forge:small_gears'
+		C: '#forge:small_gears',
+		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/display_board')
-
-	// Пропеллер
-	event.shaped('create:propeller', [
-		'AB ',
-		'BCB',
-		' BA'
-	], {
-		A: '#forge:tools/hammers',
-		B: '#forge:plates/wrought_iron',
-		C: '#forge:rotors'
-	}).id('tfg:create/shaped/propeller')
-
-	event.recipes.gtceu.assembler('tfg:create/propeller')
-		.itemInputs('4x #forge:plates/wrought_iron', '#forge:rotors')
-		.circuit(3)
-		.itemOutputs('create:propeller')
-		.duration(200)
-		.EUt(20)
 
 	// Латунная рука
 	event.shaped('create:brass_hand', [
@@ -752,8 +736,8 @@ const registerCreateRecipes = (event) => {
 		' C '
 	], {
 		A: '#forge:tools/hammers',
-		B: '#forge:nuggets/brass',
-		C: '#forge:plates/brass',
+		B: '#forge:ingots/brass',
+		C: '#forge:nuggets/brass',
 		D: '#forge:tools/files'
 	}).id('tfg:create/shaped/brass_hand')
 
@@ -765,38 +749,53 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	// Электронная трубка
-	event.shaped('2x create:electron_tube', [
-		' A ',
+	event.shaped('1x create:electron_tube', [
+		'FAG',
 		'BCB',
 		'DED'
 	], {
 		A: 'gtceu:glass_tube',
-		B: '#gtceu:resistors',
-		C: 'gtceu:resin_circuit_board',
+		B: '#forge:bolts/steel',
+		C: '#forge:plates/wood',
 		D: 'gtceu:red_alloy_single_wire',
-		E: '#forge:plates/wrought_iron'
+		E: '#forge:plates/wrought_iron',
+		F: '#forge:tools/screwdrivers',
+		G: '#forge:tools/wire_cutters'
 	}).id('tfg:create/shaped/electron_tube')
 
+	event.recipes.createSequencedAssembly([
+		'2x create:electron_tube',
+	], '#forge:plates/wood', [
+		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:red_alloy_single_wire']),
+		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:red_alloy_single_wire']),
+		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:glass_tube']),
+	]).transitionalItem('tfg:unfinished_electron_tube').loops(1).id('tfg:create/sequenced_assembly/electron_tube')
+
+	event.recipes.gtceu.assembler('create:electron_tube')
+		.itemInputs('#forge:plates/wood', 'gtceu:glass_tube', '2x gtceu:red_alloy_single_wire')
+		.itemOutputs('2x create:electron_tube')
+		.duration(50)
+		.EUt(7)
+
 	event.shaped('4x create:electron_tube', [
-		' A ',
-		'BCB',
-		'DED'
+		'FAG',
+		'DCD'
 	], {
 		A: 'gtceu:glass_tube',
-		B: '#gtceu:resistors',
 		C: 'gtceu:plastic_circuit_board',
 		D: 'gtceu:red_alloy_single_wire',
-		E: '#forge:plates/wrought_iron'
+		F: '#forge:tools/screwdrivers',
+		G: '#forge:tools/wire_cutters'
 	}).id('tfg:create/shaped/electron_tube2')
 
-	event.shaped('6x create:electron_tube', [
+	event.shaped('4x create:electron_tube', [
 		' A ',
 		' B ',
 		' C '
 	], {
-		A: 'gtceu:glass_tube',
+		A: '#forge:tools/screwdrivers',
 		B: 'gtceu:nand_chip',
-		C: '#forge:plates/wrought_iron'
+		C: 'gtceu:plastic_circuit_board'
 	}).id('tfg:create/shaped/electron_tube3')
 
 	// Тюбик с клеем
@@ -808,6 +807,20 @@ const registerCreateRecipes = (event) => {
 		B: 'tfc:glue',
 		C: '#forge:nuggets/wrought_iron'
 	}).id('tfg:create/shaped/super_glue')
+
+	// Deployer
+	event.shaped('create:deployer', [
+		' A ',
+		'DBF',
+		' CE'
+	], {
+		A: '#tfg:small_cogwheels',
+		B: 'create:andesite_casing',
+		C: 'create:brass_hand',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/screwdrivers',
+		F: 'create:electron_tube'
+	}).id('tfg:create/shaped/deployer')
 
 	// Соединятор вагонеток
 	event.shapeless('create:minecart_coupling', [
@@ -1217,7 +1230,7 @@ const registerCreateRecipes = (event) => {
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', '#forge:small_springs/gold']),
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', '#forge:small_gears/brass']),
 		event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', '#forge:bolts/wrought_iron']),
-	]).transitionalItem('create:incomplete_precision_mechanism').loops(5).id('tfg:create/sequenced_assembly/precision_mechanism')
+	]).transitionalItem('create:incomplete_precision_mechanism').loops(3).id('tfg:create/sequenced_assembly/precision_mechanism')
 
 	event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
 		.itemInputs('#forge:plates/gold', '3x #forge:small_springs/gold', '3x #forge:small_gears/brass', '3x #forge:bolts/wrought_iron')
@@ -1226,6 +1239,45 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	//#endregion
+
+	// #region Water Wheels
+
+	event.shaped('create:water_wheel', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'gtceu:treated_wood_planks',
+		B: '#tfg:shafts'
+	}).id('create:shaped/water_wheel')
+
+	event.shaped('create:large_water_wheel', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'gtceu:treated_wood_planks',
+		B: 'create:water_wheel'
+	}).id('create:shaped/large_water_wheel')
+
+	// #endregion
+
+	// #region Windmill Bearing
+
+	event.shaped('create:windmill_bearing', [
+		'FA ',
+		'DBE',
+		' C '
+	], {
+		A: '#minecraft:wooden_slabs',
+		B: 'create:andesite_casing',
+		C: '#tfg:small_cogwheels',
+		D: '#forge:small_gears/brass',
+		E: '#forge:tools/hammers',
+		F: 'tfc:glue'
+	}).id('create:shaped/windmill_bearing')
+
+	// #endregion
 
 	//#region Blaze burner
 
@@ -1386,6 +1438,15 @@ const registerCreateRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.ULV])
 			.circuit(1)
 
+		event.custom({
+			type: 'vintageimprovements:laser_cutting',
+			ingredients: [{ item: `create:cut_${block}` }],
+			results: [{item: `create:polished_cut_${block}` }],
+			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
+			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+
+		}).id(`tfg:vi/laser/create/polished_cut_${block}`)
+
 		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:cut_${block}_bricks`, [
 			'A',
 			'B'
@@ -1402,6 +1463,14 @@ const registerCreateRecipes = (event) => {
 			.EUt(GTValues.VA[GTValues.ULV])
 			.circuit(2)
 
+		event.custom({
+			type: 'vintageimprovements:laser_cutting',
+			ingredients: [{ item: `create:polished_cut_${block}` }],
+			results: [{item: `create:cut_${block}_bricks` }],
+			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
+			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		}).id(`tfg:vi/laser/create/cut_${block}_bricks`)
+
 		event.recipes.tfc.damage_inputs_shaped_crafting(event.recipes.minecraft.crafting_shaped(`create:small_${block}_bricks`, [
 			'A ',
 			' B'
@@ -1417,6 +1486,15 @@ const registerCreateRecipes = (event) => {
 			.duration(32)
 			.EUt(GTValues.VA[GTValues.ULV])
 			.circuit(3)
+			
+		event.custom({
+			type: 'vintageimprovements:laser_cutting',
+			ingredients: [{ item: `create:cut_${block}_bricks` }],
+			results: [{item: `create:small_${block}_bricks` }],
+			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
+			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		}).id(`tfg:vi/laser/create/small_${block}_bricks`)
+
 
 		generateCutterRecipe(event, `create:cut_${block}`, 0, [`create:cut_${block}_stairs`], 100, 8, `cut_${block}_to_stairs`)
 		generateCutterRecipe(event, `create:cut_${block}`, 1, [`2x create:cut_${block}_slab`], 100, 8, `cut_${block}_to_slabs`)
@@ -1449,4 +1527,196 @@ const registerCreateRecipes = (event) => {
 	})
 
 	//#endregion
+	
+	event.shaped('create:white_seat', [
+		'DA ',
+		'CBC'
+	], {
+		A: '#tfc:high_quality_cloth',
+		B: '#minecraft:wooden_slabs',
+		C: '#forge:screws',
+		D: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/white_seat')
+
+	event.shaped('create:brown_toolbox', [
+		'CEC',
+		'BAB',
+		'DAD'
+	], {
+		A: '#forge:chests/wooden',
+		B: '#forge:plates/brass',
+		C: '#forge:nuggets/brass',
+		D: '#forge:screws',
+		E: '#forge:tools/screwdrivers'
+	}).id('tfg:create/shaped/brown_toolbox')
+
+	event.shaped('create:contraption_controls', [
+		'EAF',
+		'DBD',
+		' C '
+	], {
+		A: '#minecraft:buttons',
+		B: 'create:andesite_casing',
+		C: 'create:electron_tube',
+		D: '#forge:plates/wrought_iron',
+		E: '#forge:tools/hammers',
+		F: '#forge:tools/wrenches'
+	}).id('tfg:create/shaped/contraption_controls')
+
+	event.shaped('create:wrench', [
+		'FBB',
+		'CAD',
+		'AE '
+	], {
+		A: '#forge:rods/treated_wood',
+		B: '#forge:plates/brass',
+		C: '#forge:small_gears/wood',
+		D: '#forge:screws',
+		E: '#forge:tools/screwdrivers',
+		F: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/wrench')
+
+	event.shaped('create:goggles', [
+		'DBD',
+		'AEA',
+		'C C'
+	], {
+		A: '#forge:rings/gold',
+		B: 'minecraft:leather',
+		C: 'tfc:lens',
+		D: '#forge:screws',
+		E: '#forge:tools/screwdrivers'
+	}).id('tfg:create/shaped/goggles')
+
+	event.shaped('create:analog_lever', [
+		'CA',
+		'DB'
+	], {
+		A: 'minecraft:lever',
+		B: 'create:andesite_casing',
+		C: '#forge:tools/wrenches',
+		D: 'minecraft:redstone'
+	}).id('tfg:create/shaped/analog_lever')
+
+	event.shaped('create:redstone_link', [
+		'FCB',
+		'DAD',
+		' E '
+	], {
+		A: 'create:brass_casing',
+		B: 'minecraft:redstone_torch',
+		C: '#forge:small_springs',
+		D: '#forge:plates/wrought_iron',
+		E: '#forge:tools/wrenches',
+		F: '#forge:tools/screwdrivers'
+	}).id('tfg:create/shaped/redstone_link')
+
+	event.shaped('create:display_link', [
+		'FED',
+		'BAB',
+		'EC '
+	], {
+		A: 'create:brass_casing',
+		B: '#forge:springs/copper',
+		C: '#forge:plates/brass',
+		D: 'gtceu:glass_tube',
+		E: '#forge:screws',
+		F: '#forge:tools/wrenches'
+	}).id('tfg:create/shaped/display_link')
+
+	event.shaped('create:rotation_speed_controller', [
+		'ECE',
+		'BAB',
+		'DFG'
+	], {
+		A: 'create:brass_casing',
+		B: '#forge:small_gears/brass',
+		C: '#forge:gears/wrought_iron',
+		D: '#forge:tools/wrenches',
+		E: '#forge:small_springs/gold',
+		F: '#forge:plates/black_steel',
+		G: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/rotation_speed_controller')
+
+	event.shaped('create:sequenced_gearshift', [
+		'DBE',
+		'CAC',
+		'   '
+	], {
+		A: 'create:brass_casing',
+		B: 'create:electron_tube',
+		C: '#tfg:small_cogwheels',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/sequenced_gearshift')
+
+	event.shaped('create:mechanical_bearing', [
+		'CBE',
+		' A ',
+		' D '
+	], {
+		A: 'create:andesite_casing',
+		B: '#minecraft:plates/wrought_iron',
+		C: 'tfc:glue',
+		D: '#tfg:cogwheels',
+		E: '#forge:tools/wrenches'
+	}).id('tfg:create/shaped/mechanical_bearing')
+
+	event.shaped('create:gantry_carriage', [
+		'DCE',
+		' A ',
+		' B '
+	], {
+		A: 'create:andesite_casing',
+		B: '#tfg:small_cogwheels',
+		C: '#minecraft:wooden_slabs',
+		D: 'tfc:glue',
+		E: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/gantry_carriage')
+
+	event.shaped('create:weighted_ejector', [
+		' B ',
+		' CE',
+		'DA '
+	], {
+		A: 'create:andesite_casing',
+		B: '#forge:plates/wrought_iron',
+		C: '#forge:springs/wrought_iron',
+		D: '#tfg:small_cogwheels',
+		E: '#forge:tools/wrenches'
+	}).id('tfg:create/shaped/weighted_ejector')
+
+	event.shaped('create:turntable', [
+		'DA ',
+		'CBC'
+	], {
+		A: '#create:seats',
+		B: '#minecraft:wooden_slabs',
+		C: '#forge:screws',
+		D: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/turntable')
+
+	event.shaped('create:gearshift', [
+		' C ',
+		'DAE',
+		' B '
+	], {
+		A: 'create:andesite_casing',
+		B: '#tfg:small_cogwheels',
+		C: 'minecraft:redstone',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/gearshift')
+
+	event.shaped('create:clutch', [
+		' C ',
+		'DAE',
+		' B '
+	], {
+		A: 'create:andesite_casing',
+		B: '#tfg:shafts',
+		C: 'minecraft:redstone',
+		D: '#forge:tools/wrenches',
+		E: '#forge:tools/hammers'
+	}).id('tfg:create/shaped/clutch')
 }

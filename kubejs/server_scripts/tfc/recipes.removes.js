@@ -54,18 +54,6 @@ function removeTFCRecipes(event) {
 	// Стержень
 	event.remove({ id: `tfc:heating/metal/cast_iron_rod` })
 
-	// Блок
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block` })
-
-	// Ступенька
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron_stairs` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block_stairs` })
-
-	// Полублок
-	event.remove({ id: `tfc:crafting/metal/block/cast_iron_slab` })
-	event.remove({ id: `tfc:heating/metal/cast_iron_block_slab` })
-
 	//#endregion
 
 
@@ -150,6 +138,7 @@ function removeTFCRecipes(event) {
 	// Другое
 	event.remove({ id: `tfc:crafting/trip_hammer` })
 	event.remove({ id: `tfc:anvil/steel_pump` })
+	event.remove({ id: `tfc:anvil/brass_mechanisms` })
 	event.remove({ id: `tfc:crafting/steel_pump` })
 	event.remove({ id: `tfc:crafting/crankshaft` })
 

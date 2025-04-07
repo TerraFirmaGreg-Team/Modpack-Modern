@@ -73,7 +73,7 @@ const registerTFCMaterials = (event) => {
 
     GTMaterials.NetherQuartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
     GTMaterials.RedAlloy.setMaterialIconSet(GTMaterialIconSet.SHINY)
-    GTMaterials.TinAlloy.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
+    GTMaterials.TinAlloy.setMaterialIconSet(GTMaterialIconSet.SHINY)
     GTMaterials.BismuthBronze.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
     GTMaterials.Nickel.setMaterialIconSet(GTMaterialIconSet.BRIGHT)
     GTMaterials.BlackBronze.setMaterialIconSet(GTMaterialIconSet.SHINY)

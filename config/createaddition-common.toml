@@ -43,7 +43,7 @@
 [rolling_mill]
 	#Rolling Mill duration in ticks.
 	#Range: > 0
-	rolling_mill_processing_duration = 120
+	rolling_mill_processing_duration = 1000
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
 	rolling_mill_stress = 8

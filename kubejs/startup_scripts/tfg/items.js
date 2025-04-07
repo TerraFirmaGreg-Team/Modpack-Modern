@@ -1,10 +1,16 @@
 // priority: 0
 
 const registerTFGItems = (event) => {
+
+    // #region Electronics
+
+    event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
+    event.create('tfg:unfinished_vacuum_tube', 'create:sequenced_assembly')
+    event.create('tfg:unfinished_basic_electronic_circuit', 'create:sequenced_assembly')
+
+    // #endregion
     
     const $DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor')
-
-    console.log("StartupEvents.registry('item')", Object.entries(event))
 
     // #region Paper making
     event.create('tfg:hardwood_strip')
@@ -132,5 +138,16 @@ const registerTFGItems = (event) => {
 
     event.create('tfg:conifer_rosin')
         .translationKey('item.tfg.conifer_rosin')
+    //#endregion
+
+    //#region Immersive Aircraft Impl
+    event.create('tfg:scaffolding_frame')
+        .translationKey('item.tfg.scaffolding_frame')
+
+    event.create('tfg:airship_hull')
+        .translationKey('item.tfg.airship_hull')
+
+    event.create('tfg:airship_balloon')
+        .translationKey('item.tfg.airship_balloon')
     //#endregion
 }

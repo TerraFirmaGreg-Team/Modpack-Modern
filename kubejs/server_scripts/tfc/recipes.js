@@ -227,4 +227,8 @@ const registerTFCRecipes = (event) => {
 
 	//Lye in mixer
 	generateMixerRecipe(event, 'tfc:powder/wood_ash', Fluid.of('minecraft:water', 200), [], null, Fluid.of('tfc:lye', 200), 100, 2, 64, 'lye_in_mixer')
+
+	// Brass Mechanism
+	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')
+	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')
 }

@@ -114,21 +114,17 @@ function registerGTCEUMetalRecipes(event) {
 		{
 			const plateStack = ChemicalHelper.get(TagPrefix.plate, material, 1)
 			const blockStack = ChemicalHelper.get(TagPrefix.block, material, 1)
-			//let smallDustStack = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
 
 			let matAmount = TagPrefix.block.getMaterialAmount(material) / GTValues.M;
 
 			if (!plateStack.isEmpty()) {
 
-				// TODO: revisit this when Greate lets us make our own recipes
-
-				// Слиток -> Стержень
-				//event.recipes.createSequencedAssembly([plateStack.withChance(4), smallDustStack], ingotStack, [
-				//	event.recipes.createPressing(ingotStack, ingotStack)
-				//])
-				//	.transitionalItem(ingotStack)
-				//	.loops(1)
-				//	.id(`tfg:pressing/${material.getName()}_plate`);
+				event.custom({
+					type: "createaddition:rolling",
+					input: ingotStack,
+					result: plateStack,
+					//processingTime: material.getMass() // TODO - controlled by a global config argh
+				}).id(`tfg:rolling/${material.getName()}_plate`)
 
 				if (!blockStack.isEmpty() && GTMaterials.Stone != material) {
 
@@ -170,22 +166,19 @@ function registerGTCEUMetalRecipes(event) {
 		event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_block` })
 	}
 
-	const processRod = (tagPrefix, material) => {
-		const rodItem = ChemicalHelper.get(tagPrefix, material, 1)
-		if (rodItem.isEmpty()) return
+	const processFoil = (tagPrefix, material) => {
 
-		const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-		if (ingotItem.isEmpty()) return
+		const foilItem = ChemicalHelper.get(tagPrefix, material, 1)
+		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
-		if (!material.hasFlag(MaterialFlags.GENERATE_ROD) || material == GTMaterials.Wood) return
-		if (ingotItem.isEmpty() || rodItem.isEmpty()) return
-
-		// Прокатка стержней
-		event.custom({
-			type: "createaddition:rolling",
-			input: ingotItem.toJson(),
-			result: rodItem.toJson()
-		}).id(`tfg:rolling/${material.getName()}_rod`)
+		if (plateItem != null && foilItem != null) {
+			event.custom({
+				type: "createaddition:rolling",
+				input: plateItem,
+				result: foilItem,
+				//processingTime: material.getMass() // TODO
+			}).id(`tfg:rolling/${material.getName()}_foil`)
+		}
 	}
 
 	const processRodLong = (tagPrefix, material) => {
@@ -288,7 +281,7 @@ function registerGTCEUMetalRecipes(event) {
 		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 2)
 
 		if (richOreItem != null && crushedOreItem != null) {
-			event.recipes.createCrushing(crushedOreItem, richOreItem)
+			event.recipes.tfc.quern(crushedOreItem, richOreItem)
 				.id(`tfg:quern/${material.getName()}_crushed_ore_from_rich_raw_ore`)
 		}
 	}
@@ -303,7 +296,6 @@ function registerGTCEUMetalRecipes(event) {
 			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
 			event.recipes.greate.splashing([pureOreItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], crushedOreItem)
-				.processingTime(100)
 				.id(`tfg:splashing/${material.getName()}_purified_ore`)
 			
 			// Дробленная руда -> Очищенная руда
@@ -331,7 +323,6 @@ function registerGTCEUMetalRecipes(event) {
 			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
 			event.recipes.greate.splashing([dustItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], impureDustItem)
-				.processingTime(100)
 				.id(`tfg:splashing/${material.getName()}_dust_from_impure`)
 
 			// Грязная пыль -> Пыль
@@ -359,7 +350,6 @@ function registerGTCEUMetalRecipes(event) {
 			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
 			event.recipes.greate.splashing([dustItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], pureDust)
-				.processingTime(100)
 				.id(`tfg:splashing/${material.getName()}_dust_from_pure`)
 
 			// Очищенная пыль -> Пыль
@@ -419,7 +409,7 @@ function registerGTCEUMetalRecipes(event) {
 			processPlate(TagPrefix.plate, material)
 			processPlateDouble(TagPrefix.plateDouble, material)
 			processBlock(TagPrefix.block, material)
-			processRod(TagPrefix.rod, material)
+			processFoil(TagPrefix.foil, material)
 			processRodLong(TagPrefix.rodLong, material)
 			processIngotDouble(TFGTagPrefix.ingotDouble, material)
 		}
