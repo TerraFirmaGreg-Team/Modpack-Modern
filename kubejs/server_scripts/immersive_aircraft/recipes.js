@@ -153,6 +153,42 @@ function registerImmersiveAircraftRecipes(event) {
 		H: 'create:steam_engine'
 	}).id('tfg:man_of_many_planes/mechanical_crafter/economy_plane');
 
+	event.recipes.create.mechanical_crafting('immersive_aircraft:biplane',[
+		'   A   ',
+		'BBBCBBB',
+		'  BDB  ',
+		'  BBB  ',
+		'   B   ',
+		'   E   ',
+		'  BEB  ',
+		'   B   '
+	],{
+		A: 'immersive_aircraft:enhanced_propeller',
+		B: 'immersive_aircraft:hull',
+		C: 'immersive_aircraft:steel_boiler',
+		D: 'man_of_many_planes:economy_plane',
+		E: '#minecraft:logs'
+	}).id('tfg:immersive_aircraft/mechanical_crafter/biplane')
+
+	event.recipes.create.mechanical_crafting('man_of_many_planes:scarlet_biplane',[
+		'    A    ',
+		'    B    ',
+		'CCCDEDCCC',
+		' F DDD F ',
+		' CCDGDCC ',
+		'    H    ',
+		'   CHC   ',
+		'    C    '
+	],{
+		A: 'immersive_aircraft:enhanced_propeller',
+		B: 'immersive_aircraft:nether_engine',
+		C: 'immersive_aircraft:hull',
+		D: 'gtceu:red_steel_plate',
+		E: 'immersive_aircraft:biplane',
+		F: 'gtceu:black_steel_rod',
+		G: '#create:seats',
+		H: 'tfc:metal/ingot/red_steel'
+	}).id('tfg:man_of_many_planes/mechanical_crafter/scarlet_biplane')
 
 //#endregion
 
