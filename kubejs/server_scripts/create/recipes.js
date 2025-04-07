@@ -756,7 +756,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'gtceu:glass_tube',
 		B: '#forge:bolts/steel',
-		C: '#forge:plates/wood',
+		C: 'gtceu:treated_wood_plate',
 		D: 'gtceu:red_alloy_single_wire',
 		E: '#forge:plates/wrought_iron',
 		F: '#forge:tools/screwdrivers',
@@ -765,14 +765,15 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.createSequencedAssembly([
 		'2x create:electron_tube',
-	], '#forge:plates/wood', [
+	], 'gtceu:treated_wood_plate', [
+		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', '#forge:plates/wrought_iron']),
 		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:red_alloy_single_wire']),
 		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:red_alloy_single_wire']),
 		event.recipes.createDeploying('tfg:unfinished_electron_tube', ['tfg:unfinished_electron_tube', 'gtceu:glass_tube']),
 	]).transitionalItem('tfg:unfinished_electron_tube').loops(1).id('tfg:create/sequenced_assembly/electron_tube')
 
 	event.recipes.gtceu.assembler('create:electron_tube')
-		.itemInputs('#forge:plates/wood', 'gtceu:glass_tube', '2x gtceu:red_alloy_single_wire')
+		.itemInputs('#forge:plates/wrought_iron', 'gtceu:glass_tube', '2x gtceu:red_alloy_single_wire')
 		.itemOutputs('2x create:electron_tube')
 		.duration(50)
 		.EUt(7)
@@ -788,6 +789,12 @@ const registerCreateRecipes = (event) => {
 		G: '#forge:tools/wire_cutters'
 	}).id('tfg:create/shaped/electron_tube2')
 
+	event.recipes.gtceu.assembler('create:electron_tube2')
+		.itemInputs('gtceu:plastic_circuit_board', 'gtceu:glass_tube', '2x gtceu:red_alloy_single_wire')
+		.itemOutputs('4x create:electron_tube')
+		.duration(50)
+		.EUt(7)
+
 	event.shaped('4x create:electron_tube', [
 		' A ',
 		' B ',
@@ -797,6 +804,12 @@ const registerCreateRecipes = (event) => {
 		B: 'gtceu:nand_chip',
 		C: 'gtceu:plastic_circuit_board'
 	}).id('tfg:create/shaped/electron_tube3')
+
+	event.recipes.gtceu.assembler('create:electron_tube3')
+		.itemInputs('gtceu:plastic_circuit_board', 'gtceu:nand_chip')
+		.itemOutputs('4x create:electron_tube')
+		.duration(50)
+		.EUt(7)
 
 	// Тюбик с клеем
 	event.shaped('create:super_glue', [
