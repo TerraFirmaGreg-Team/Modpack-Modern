@@ -505,37 +505,21 @@ function registerGreateRecyclingRecipes(event) {
 
 	// #region Mechanical Mixer
 
-	event.recipes.gtceu.macerator('greate:andesite_alloy_mechanical_mixer')
-		.itemInputs('greate:andesite_alloy_mechanical_mixer')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 8),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BlackSteel, 2),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 4))
-		.duration(GTMaterials.WroughtIron.getMass() * 14)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
-	event.recipes.gtceu.arc_furnace('greate:andesite_alloy_mechanical_mixer')
-		.itemInputs('greate:andesite_alloy_mechanical_mixer')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 8),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlackSteel, 2),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
-		.duration(GTMaterials.WroughtIron.getMass() * 14)
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-		.EUt(GTValues.VA[GTValues.LV])
-
 	event.recipes.gtceu.macerator('greate:steel_mechanical_mixer')
 		.itemInputs('greate:steel_mechanical_mixer')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 12))
-		.duration(GTMaterials.Steel.getMass() * 12)
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 8),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 4))
+		.duration(GTMaterials.WroughtIron.getMass() * 12)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.arc_furnace('greate:steel_mechanical_mixer')
 		.itemInputs('greate:steel_mechanical_mixer')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 12))
-		.duration(GTMaterials.Steel.getMass() * 12)
+		.itemOutputs(
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 8),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 4))
+		.duration(GTMaterials.WroughtIron.getMass() * 12)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 

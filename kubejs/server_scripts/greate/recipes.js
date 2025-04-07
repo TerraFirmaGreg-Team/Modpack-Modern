@@ -319,7 +319,7 @@ function registerGreateRecipes(event) {
 
 	// #region Mixer
 
-	event.shaped('greate:andesite_alloy_mechanical_mixer', [
+	event.shaped('greate:steel_mechanical_mixer', [
 		'ABA',
 		'DCD',
 		'FEG'
@@ -331,7 +331,7 @@ function registerGreateRecipes(event) {
 		E: 'gtceu:steel_whisk',
 		F: '#forge:tools/wrenches',
 		G: '#forge:tools/hammers'
-	}).id('greate:shaped/andesite_alloy_mechanical_mixer')
+	}).id('greate:shaped/steel_mechanical_mixer')
 
 	// #endregion
 
