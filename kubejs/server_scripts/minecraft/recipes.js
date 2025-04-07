@@ -855,9 +855,16 @@ const registerMinecraftRecipes = (event) => {
 	}).id('tfg:minecraft/shaped/scaffolding')
 
 	event.recipes.gtceu.assembler('tfg:minecraft/assembler/scaffolding')
-	.itemInputs('6x gtceu:long_wood_rod', 'tfg:scaffolding_frame')
-	.itemOutputs('32x minecraft:scaffolding')
-	.duration(100)
-	.EUt(4)
+		.itemInputs('6x gtceu:long_wood_rod', 'tfg:scaffolding_frame')
+		.itemOutputs('32x minecraft:scaffolding')
+		.duration(100)
+		.EUt(4)
 	//#endregion
+
+	// #region HUH???
+
+	event.shapeless('minecraft:redstone_torch', ['#forge:rods/wooden', 'minecraft:redstone'])
+		.id('tfg:shapeless/redstone_torch')
+
+	// #endregion
 }

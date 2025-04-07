@@ -249,7 +249,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
-		C: '#forge:rods/black_steel',
+		C: '#forge:rods/red_steel',
 		D: '#forge:gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
