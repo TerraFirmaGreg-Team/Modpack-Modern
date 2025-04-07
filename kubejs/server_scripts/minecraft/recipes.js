@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS} event 
+ */
 const registerMinecraftRecipes = (event) => {
 
 	removeMinecraftRecipes(event)
@@ -813,5 +817,24 @@ const registerMinecraftRecipes = (event) => {
 		D: 'beneath:cursed_hide'
 	}).id('tfg:minecraft/shaped/netherite_leggings')
 
+	//#endregion
+
+	//#region Scaffoldings
+	event.remove({output: 'minecraft:scaffolding'})
+
+	event.shaped('32x minecraft:scaffolding',[
+		'ABA',
+		'A A',
+		'A A'
+	],{
+		A: 'gtceu:long_wood_rod',
+		B: 'tfg:scaffolding_frame'
+	}).id('tfg:minecraft/shaped/scaffolding')
+
+	event.recipes.gtceu.assembler('tfg:minecraft/assembler/scaffolding')
+	.itemInputs('6x gtceu:long_wood_rod', 'tfg:scaffolding_frame')
+	.itemOutputs('32x minecraft:scaffolding')
+	.duration(100)
+	.EUt(4)
 	//#endregion
 }

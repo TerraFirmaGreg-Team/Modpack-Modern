@@ -133,4 +133,15 @@ const registerTFGItems = (event) => {
     event.create('tfg:conifer_rosin')
         .translationKey('item.tfg.conifer_rosin')
     //#endregion
+
+    //#region Immersive Aircraft Impl
+    event.create('tfg:scaffolding_frame')
+        .translationKey('item.tfg.scaffolding_frame')
+
+    event.create('tfg:airship_hull')
+        .translationKey('item.tfg.airship_hull')
+
+    event.create('tfg:airship_balloon')
+        .translationKey('item.tfg.airship_balloon')
+    //#endregion
 }
