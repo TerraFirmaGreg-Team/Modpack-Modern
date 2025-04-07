@@ -668,7 +668,7 @@ const registerMinecraftRecipes = (event) => {
 		A: '#forge:stone',
 		B: 'minecraft:bow',
 		C: 'minecraft:redstone',
-		D: 'tfc:brass_mechanisms'
+		D: '#forge:small_gears/brass'
 	}).id('gtceu:shaped/dispenser')
 
 	//#endregion
@@ -689,7 +689,7 @@ const registerMinecraftRecipes = (event) => {
 	], {
 		A: '#forge:stone',
 		C: 'minecraft:redstone',
-		D: 'tfc:brass_mechanisms'
+		D: '#forge:small_gears/brass'
 	}).id('gtceu:shaped/dropper')
 
 	//#endregion

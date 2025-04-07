@@ -15,9 +15,8 @@ Key:
 
 
 ## Mods & Recipes
-- ✔ Move over the create deco and locometal recipes from 0.7.19 PRs, update the lights to use glowstone dust? (done by redeix)
-- ⏳ Add recipes for builders wands (being worked on by tomtomtom)
 - Add recipe for Measurements
+- ⏳ Add building gadgets (being worked on by redeix)
 - Aleki roofs needs recipes and names changed to use tfc/afc woods - can't remove the mod because firmaciv depends on it
 	- (or just hide them all)
 - Recipes for advanced peripherals and computercraft
@@ -29,15 +28,12 @@ Key:
 			- ✔ Recipes to craft the things
 			- ⏳ Recipes that the machines do
 			- Recycling recipes
-			- Adjust where the ingot is rendered on the helve hammer
+			- ✔ Adjust where the ingot is rendered on the helve hammer
 		- ✔ Greate
-			- ✔ Recipes to craft the things
-			- ✔ Recipes that the machines do
-			- ✔ Recycling recipes
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Add recipes for create additions' alternator/motor, adjust costs to match greate's SU
 	- Check LBB efficiency of creosote, think about removing lava
-- Change aircraft recipes to need mech crafter
+- ⏳ Change aircraft recipes to need mech crafter (being worked on by nebby)
 - Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
 ## Worldgen
@@ -49,7 +45,6 @@ Key:
 	- check if the forge capabilities mixin solves this
 - Akistor carts mixin is commented out
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
-- ⏳ Make Particular work with tfc's waters (spring water, sea water, river water) - https://github.com/Leclowndu93150/Particular/issues/6
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 
@@ -60,7 +55,6 @@ Key:
 		- Framed blocks: yes
 		- Greate: yes
 	- Change greate's config to allow assemblers to make cables again
-- Add building gadgets
 - Use mech press whenever Greate updates to let us do our own recipes for it
 
 ## Space

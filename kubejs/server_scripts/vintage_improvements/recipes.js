@@ -69,7 +69,7 @@ function registerVintageImprovementsRecipes(event) {
 		B: 'greate:steel_shaft',
 		C: '#forge:plates/black_steel',
 		D: '#gtceu:circuits/ulv',
-		E: '#forge:storage_blocks/steel',
+		E: 'gtceu:empty_mold',
 		F: '#forge:springs/wrought_iron',
 		G: 'create:precision_mechanism'
 	}).id('tfg:vi/shaped/curving_press')
@@ -133,7 +133,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: 'gtceu:ulv_machine_hull',
 		B: 'create:precision_mechanism',
-		C: 'gtceu:lv_emitter',
+		C: 'tfc:lens',
 		D: 'gtceu:red_alloy_single_wire',
 		E: 'minecraft:piston',
 		F: '#gtceu:circuits/ulv'
@@ -182,15 +182,22 @@ function registerVintageImprovementsRecipes(event) {
 
 	//#region Hammer
 
+	const STARTING_BLOWS = 6;
+
 	// Tier 1
 	let HAMMERING_MATERIALS = [
-		{ material: GTMaterials.Copper, blows: 10 },
-		{ material: GTMaterials.Zinc, blows: 10 },
-		{ material: GTMaterials.Nickel, blows: 10 },
-		{ material: GTMaterials.Gold, blows: 10 },
-		{ material: GTMaterials.Bismuth, blows: 10 },
-		{ material: GTMaterials.RoseGold, blows: 10 },
-		{ material: GTMaterials.SterlingSilver, blows: 10 }
+		{ material: GTMaterials.Copper, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Zinc, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Nickel, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Gold, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Bismuth, blows: STARTING_BLOWS },
+		{ material: GTMaterials.RoseGold, blows: STARTING_BLOWS },
+		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS }
+	]
+
+	let HAMMERING_ITEMS = [
+		{ input: 'tfc:raw_iron_bloom', output: 'tfc:refined_iron_bloom', blows: STARTING_BLOWS },
+		{ input: 'tfc:refined_iron_bloom', output: 'gtceu:wrought_iron_ingot', blows: STARTING_BLOWS }
 	]
 
 	HAMMERING_MATERIALS.forEach(x => {
@@ -199,11 +206,11 @@ function registerVintageImprovementsRecipes(event) {
 	})
 
 	// Tier 2
-	HAMMERING_MATERIALS.push({ material: GTMaterials.Bronze, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.BlackBronze, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.BismuthBronze, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.Brass, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.RedAlloy, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Bronze, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BlackBronze, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BismuthBronze, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Brass, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.RedAlloy, blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'bronze');
@@ -211,48 +218,231 @@ function registerVintageImprovementsRecipes(event) {
 		generateHammeringRecipe(event, x.material, x.blows, 'bismuth_bronze');
 		x.blows--;
 	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'bronze');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'black_bronze');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'bismuth_bronze');
+		x.blows--;
+	})
 
 	// Tier 3
-	HAMMERING_MATERIALS.push({ material: GTMaterials.TinAlloy, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.Iron, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.WroughtIron, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.TinAlloy, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Iron, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.WroughtIron, blows: STARTING_BLOWS })
+	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/pig_iron', output: 'tfc:metal/ingot/high_carbon_steel', blows: STARTING_BLOWS })
+	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_steel', output: 'gtceu:steel_ingot', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'wrought_iron');
 		x.blows--;
 	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'wrought_iron');
+		x.blows--;
+	})
 
 	// Tier 4
-	HAMMERING_MATERIALS.push({ material: GTMaterials.Steel, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.Steel, blows: STARTING_BLOWS })
+	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_black_steel', output: 'tfc:metal/ingot/black_steel', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'steel');
 		x.blows--;
 	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'steel');
+		x.blows--;
+	})
 
 	// Tier 5
-	HAMMERING_MATERIALS.push({ material: GTMaterials.BlackSteel, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BlackSteel, blows: STARTING_BLOWS })
+	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_red_steel', output: 'tfc:metal/ingot/red_steel', blows: STARTING_BLOWS })
+	HAMMERING_ITEMS.push({ input: 'tfc:metal/ingot/high_carbon_blue_steel', output: 'tfc:metal/ingot/blue_steel', blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'black_steel');
 		x.blows--;
 	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'black_steel');
+		x.blows--;
+	})
 
 	// Tier 6
-	HAMMERING_MATERIALS.push({ material: GTMaterials.RedSteel, blows: 10 })
-	HAMMERING_MATERIALS.push({ material: GTMaterials.BlueSteel, blows: 10 })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.RedSteel, blows: STARTING_BLOWS })
+	HAMMERING_MATERIALS.push({ material: GTMaterials.BlueSteel, blows: STARTING_BLOWS })
 
 	HAMMERING_MATERIALS.forEach(x => {
 		generateHammeringRecipe(event, x.material, x.blows, 'red_steel');
 		generateHammeringRecipe(event, x.material, x.blows, 'blue_steel');
 		x.blows--;
 	})
+	HAMMERING_ITEMS.forEach(x => {
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'red_steel');
+		generateHammeringRecipeFromItem(event, x.input, x.output, x.blows, 'blue_steel');
+		x.blows--;
+	})
+	// #endregion
+
+	const ULV_DURATION_MULTIPLIER = 2;
+
+	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+
+		// #region Coiling
+
+		const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1);
+		const smallSpringItem = ChemicalHelper.get(TagPrefix.springSmall, material, 1)
+
+		if (rodItem != null && smallSpringItem != null) {
+			event.custom({
+				type: 'vintageimprovements:coiling',
+				ingredients: [rodItem],
+				results: [smallSpringItem],
+				processingTime: 200 * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/coiling/${material.getName()}_small_spring`)
+		}
+
+		const longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1);
+		const springItem = ChemicalHelper.get(TagPrefix.spring, material, 1)
+
+		if (longRodItem != null && springItem != null) {
+			event.custom({
+				type: 'vintageimprovements:coiling',
+				ingredients: [longRodItem],
+				results: [springItem],
+				processingTime: 200 * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/coiling/${material.getName()}_spring`)
+		}
+
+		// #endregion
+
+		// #region Vibrating
+
+		if (material.hasProperty(PropertyKey.ORE) && material.hasProperty(PropertyKey.GEM)) {
+
+			let highYield = material.hasFlag(MaterialFlags.HIGH_SIFTER_OUTPUT)
+
+			// aaaaargh I hate these custom type recipes
+			let gem = `gtceu:${material.getName()}_gem`;
+			if (material == GTMaterials.Coal)
+				gem = 'minecraft:coal'
+			else if (material == GTMaterials.Diamond)
+				gem = 'minecraft:diamond'
+			else if (material == GTMaterials.Emerald)
+				gem = 'minecraft:emerald'
+			else if (material == GTMaterials.Lapis)
+				gem = 'minecraft:lapis_lazuli'
+			else if (material == GTMaterials.NetherQuartz)
+				gem = 'minecraft:quartz'
+			else if (material == GTMaterials.Amethyst)
+				gem = 'minecraft:amethyst_shard'
+			else if (material == GTMaterials.CertusQuartz)
+				gem = 'ae2:certus_quartz_crystal'
+
+			event.custom({
+				type: 'vintageimprovements:vibrating',
+				ingredients: [{ item: `gtceu:purified_${material.getName()}_ore` }],
+				results: [
+					{ item: `gtceu:exquisite_${material.getName()}_gem`, chance: highYield ? 0.05 : 0.03 },
+					{ item: `gtceu:flawless_${material.getName()}_gem`, chance: highYield ? 0.15 : 0.10 },
+					{ item: gem, chance: highYield ? 0.50 : 0.35 },
+					{ item: `gtceu:pure_${material.getName()}_dust`, chance: highYield ? 0.25 : 0.50 },
+					{ item: `gtceu:flawed_${material.getName()}_gem`, chance: highYield ? 0.20 : 0.25 },
+					{ item: `gtceu:chipped_${material.getName()}_gem`, chance: highYield ? 0.30 : 0.35 }
+				],
+				processingTime: 400 * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/vibrating/${material.getName()}`)
+		}
+
+		// #endregion
+
+		// #region Lathe
+
+		if (rodItem != null) {
+			let latheInput = material.hasProperty(PropertyKey.GEM)
+				? ChemicalHelper.get(TagPrefix.gem, material, 1)
+				: ChemicalHelper.get(TagPrefix.ingot, material, 1)
+
+			if (latheInput != null) {
+				event.custom({
+					type: 'vintageimprovements:turning',
+					ingredients: [latheInput],
+					results: [ChemicalHelper.get(TagPrefix.rod, material, 2)],
+					processingTime: material.getMass() * 2 * ULV_DURATION_MULTIPLIER
+				}).id(`tfg:vi/lathe/${material.getName()}_to_rod`)
+			}
+		}
+
+		let boltItem = ChemicalHelper.get(TagPrefix.bolt, material, 1)
+		let screwItem = ChemicalHelper.get(TagPrefix.screw, material, 1)
+
+		if (boltItem != null && screwItem != null) {
+			event.custom({
+				type: 'vintageimprovements:turning',
+				ingredients: [boltItem],
+				results: [screwItem],
+				processingTime: Math.max(1, material.getMass() / 8) * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
+		}
+
+		// #endregion
+	})
+
+	// #region Vibrating
+
+	event.custom({
+		type: 'vintageimprovements:vibrating',
+		ingredients: [{ tag: 'tfc:rock/gravel' }],
+		results: [
+			{ item: 'minecraft:flint' },
+			{ item: 'minecraft:flint', chance: 0.9 },
+			{ item: 'minecraft:flint', chance: 0.8 },
+			{ item: 'minecraft:flint', chance: 0.6 },
+			{ item: 'minecraft:flint', chance: 0.33 },
+			{ item: 'minecraft:flint', chance: 0.25 }
+		],
+		processingTime: 100 * ULV_DURATION_MULTIPLIER
+	}).id(`tfg:vi/vibrating/gravel`)
+
+	// #endregion
+
+	// #region Lathe
+
+	event.custom({
+		type: 'vintageimprovements:turning',
+		ingredients: [{tag: 'forge:glass' }],
+		results: [{item: 'tfc:lens' }],
+		processingTime: 200
+	}).id(`tfg:vi/lathe/lens`)
+
+	// #endregion
+
+	// #region Centrifuge
+
+	event.custom({ 
+		type: 'vintageimprovements:centrifugation',
+		ingredients: [{ item: 'tfc:glue' }], 
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		processingTime: 100
+	}).id('tfg:vi/centrifuge/glue')
+
+	// #endregion
+
+	// #region Vacuum
+
+	// TODO: Remove me when we upgrade Greate and can just slap rubber onto wires again
+	event.custom({ 
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'gtceu:rubber_dust' }], 
+		results: [{ fluid: 'gtceu:rubber', amount: 144 }],
+		heatRequirement: "heated",
+		processingTime: 100
+	}).id('tfg:vi/vacuum/rubber')
 
 	// #endregion
 }
 
 function generateHammeringRecipe(event, material, blows, anvil) {
-
 	event.custom({
 		type: 'vintageimprovements:hammering',
 		hammerBlows: blows,
@@ -260,5 +450,14 @@ function generateHammeringRecipe(event, material, blows, anvil) {
 		results: [ChemicalHelper.get(TagPrefix.plate, material, 1)],
 		anvilBlock: `tfc:metal/anvil/${anvil}`
 	}).id(`tfg:vi/hammer/${material.getName()}_plate_on_${anvil}_anvil`)
+}
 
+function generateHammeringRecipeFromItem(event, input, output, blows, anvil) {
+	event.custom({
+		type: 'vintageimprovements:hammering',
+		hammerBlows: blows,
+		ingredients: [{ item: input }],
+		results: [{ item: output }],
+		anvilBlock: `tfc:metal/anvil/${anvil}`
+	}).id(`tfg:vi/hammer/${input.replace(/[#:]/g, '_')}_on_${anvil}_anvil`)
 }

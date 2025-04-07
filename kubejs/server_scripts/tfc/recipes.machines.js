@@ -360,13 +360,6 @@ function registerTFCMachineRecipes(event) {
 		.duration(800)
 		.EUt(8)
 
-	// Brass Mechanism
-	event.recipes.gtceu.assembler('tfg:tfc/brass_mechanism')
-		.itemInputs('#forge:plates/brass')
-		.circuit(10)
-		.itemOutputs('2x tfc:brass_mechanisms')
-		.duration(100)
-		.EUt(4)
 
 	// 1x Small SheepSkin -> 1x Wool
 	event.recipes.gtceu.assembler('tfg:tfc/wool_1')

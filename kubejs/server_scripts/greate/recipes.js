@@ -317,6 +317,24 @@ function registerGreateRecipes(event) {
 
 	// #endregion
 
+	// #region Mixer
+
+	event.shaped('greate:andesite_alloy_mechanical_mixer', [
+		'ABA',
+		'DCD',
+		'FEG'
+	], {
+		A: '#gtceu:circuits/ulv',
+		B: 'greate:steel_shaft',
+		C: 'gtceu:ulv_machine_casing',
+		D: '#forge:plates/black_steel',
+		E: 'gtceu:steel_whisk',
+		F: '#forge:tools/wrenches',
+		G: '#forge:tools/hammers'
+	}).id('gtceu:shaped/andesite_alloy_mechanical_mixer')
+
+	// #endregion
+
 	// #region Whisks
 
 	event.shaped('gtceu:steel_whisk', [

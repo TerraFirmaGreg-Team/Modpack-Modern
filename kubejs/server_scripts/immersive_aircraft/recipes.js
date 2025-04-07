@@ -36,7 +36,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: '#forge:plates/steel',
 		B: '#forge:rods/steel',
 		C: '#forge:plates/rubber',
-		D: 'tfc:brass_mechanisms',
+		D: '#forge:small_gears/brass',
 		E: '#forge:tools/wrenches',
 		F: '#forge:tools/screwdrivers'
 	}).id('iatfg:improved_landing_gear_r')

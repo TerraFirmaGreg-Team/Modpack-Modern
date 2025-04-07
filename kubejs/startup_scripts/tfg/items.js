@@ -1,10 +1,16 @@
 // priority: 0
 
 const registerTFGItems = (event) => {
+
+    // #region Electronics
+
+    event.create('tfg:unfinished_electron_tube', 'create:sequenced_assembly')
+    event.create('tfg:unfinished_vacuum_tube', 'create:sequenced_assembly')
+    event.create('tfg:unfinished_basic_electronic_circuit', 'create:sequenced_assembly')
+
+    // #endregion
     
     const $DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor')
-
-    console.log("StartupEvents.registry('item')", Object.entries(event))
 
     // #region Paper making
     event.create('tfg:hardwood_strip')
