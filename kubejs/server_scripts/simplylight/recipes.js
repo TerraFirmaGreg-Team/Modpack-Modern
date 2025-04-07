@@ -20,6 +20,9 @@ const registerSimplylightRecipes = (event) => {
 
     // new recipes
     global.MINECRAFT_DYE_NAMES.forEach(color => {
+
+        //exeption for white lamps because who needs consistency?
+        if (color != 'white') {
 		event.recipes.gtceu.chemical_bath(`simplylight:chemical_bath/dyeing/illuminant_${color}_block_on`)
 			.itemInputs('#simplylight:any_lamp_on')
 			.inputFluids(Fluid.of(`tfc:${color}_dye`, 25))
@@ -47,20 +50,33 @@ const registerSimplylightRecipes = (event) => {
         	.inputItem(Ingredient.of('#simplylight:any_lamp_off').subtract(`simplylight:illuminant_${color}_block`))
 			.inputFluid(Fluid.of(`tfc:${color}_dye`, 25))
 			.id(`simplylight:barrel/dyeing/illuminant_${color}_block`)
+        }
     })
 
-    event.recipes.gtceu.chemical_bath(`simplylight:chemical_bath/bleaching/illuminant_white_block_on`)
-        .itemInputs('#simplylight:any_lamp_on')
+    event.recipes.tfc.barrel_sealed(1000)
+        .outputItem(`simplylight:illuminant_block_on`)
+        .inputItem(Ingredient.of('#simplylight:any_lamp_on').subtract(`simplylight:illuminant_block_on`))
+        .inputFluid(Fluid.of(`tfc:white_dye`, 25))
+        .id(`simplylight:barrel/dyeing/illuminant_block_on`)
+
+	event.recipes.tfc.barrel_sealed(1000)
+        .outputItem(`simplylight:illuminant_block`)
+        .inputItem(Ingredient.of('#simplylight:any_lamp_off').subtract(`simplylight:illuminant_block`))
+        .inputFluid(Fluid.of(`tfc:white_dye`, 25))
+        .id(`simplylight:barrel/dyeing/illuminant_block`)
+
+    event.recipes.gtceu.chemical_bath(`simplylight:chemical_bath/bleaching/illuminant_block_on`)
+        .itemInputs(Ingredient.of('#simplylight:any_lamp_on').subtract(`simplylight:illuminant_block_on`))
         .inputFluids(Fluid.of('gtceu:chlorine', 72))
-        .itemOutputs('simplylight:illuminant_white_block_on')
+        .itemOutputs('simplylight:illuminant_block_on')
         .duration(80)
         .EUt(20)
         .category(GTRecipeCategories.CHEM_DYES)
 
-    event.recipes.gtceu.chemical_bath(`simplylight:chemical_bath/bleaching/illuminant_white_block`)
-        .itemInputs('#simplylight:any_lamp_on')
+    event.recipes.gtceu.chemical_bath(`simplylight:chemical_bath/bleaching/illuminant_block`)
+        .itemInputs(Ingredient.of('#simplylight:any_lamp_off').subtract(`simplylight:illuminant_block`))
         .inputFluids(Fluid.of('gtceu:chlorine', 72))
-        .itemOutputs('simplylight:illuminant_white_block')
+        .itemOutputs('simplylight:illuminant_block')
         .duration(80)
         .EUt(20)
         .category(GTRecipeCategories.CHEM_DYES)
