@@ -772,18 +772,32 @@ const registerMinecraftRecipes = (event) => {
 
 	// Ну и херь я придумал
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
-		.itemInputs('6x #forge:plates/polyvinyl_butyral', '2x #forge:rings/titanium', '2x #forge:rods/titanium', '4x #forge:single_cables/aluminium')
-		.circuit(32)
-		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of Gods\",\"italic\":true}'}}"))
+		.itemInputs('16x #forge:foils/polycaprolactam','16x #forge:foils/aluminium','8x minecraft:phantom_membrane', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
+		.circuit(4)
+		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of the Gods\",\"italic\":true}'}}"))
 		.duration(1600)
-		.EUt(666)
+		.EUt(420)
 
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')
-		.itemInputs('6x #forge:plates/polyvinyl_butyral', Item.of('minecraft:elytra', '{Damage:431}').strongNBT())
-		.circuit(32)
-		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of Gods\",\"italic\":true}'}}"))
+		.itemInputs('6x #forge:foils/polycaprolactam', Item.of('minecraft:elytra', '{Damage:2045}').strongNBT())
+		.circuit(4)
+		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of the Gods\",\"italic\":true}'}}"))
 		.duration(1600)
-		.EUt(120)
+		.EUt(120)	
+
+	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
 

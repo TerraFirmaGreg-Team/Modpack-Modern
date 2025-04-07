@@ -20,7 +20,7 @@ function registerTFCDyeRecipes(event) {
 
 		event.recipes.gtceu.chemical_bath(`tfg:tfc/${dye}_candle`)
 			.itemInputs('tfc:candle')
-			.inputFluids(Fluid.of(`gtceu:${dye}_dye`, 36))
+			.inputFluids(Fluid.of(`tfc:${dye}_dye`, 36))
 			.itemOutputs(`tfc:candle/${dye}`)
 			.duration(300)
 			.EUt(4)

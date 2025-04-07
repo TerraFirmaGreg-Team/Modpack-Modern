@@ -1733,6 +1733,43 @@
             ]
         },
         {
+            "pakku_id": "hAYZJm96tcU47i8e",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "building-gadgets"
+            },
+            "name": {
+                "curseforge": "Building Gadgets"
+            },
+            "id": {
+                "curseforge": "298187"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "buildinggadgets2-1.0.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5144/161/buildinggadgets2-1.0.7.jar",
+                    "id": "5144161",
+                    "parent_id": "298187",
+                    "hashes": {
+                        "sha1": "466c8cf2a45d878a224a77525b254b044aba3bd2",
+                        "md5": "38d1f75c246c6abe558ac07a2fa58947"
+                    },
+                    "required_dependencies": [],
+                    "size": 3832269,
+                    "date_published": "2024-02-28T20:35:19.910Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "EcBglfhqCOZSw5D9",
             "type": "MOD",
             "side": "BOTH",

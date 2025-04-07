@@ -551,6 +551,7 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:hand_wheel_base', 
     'tfc:hand_wheel',
     'tfc:blank_disc',
+    'tfc:sandpaper',
     'tfc:brass_mechanisms'
 ];
 
