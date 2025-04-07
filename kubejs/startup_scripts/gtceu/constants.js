@@ -36,7 +36,6 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:firebricks',
     'gtceu:wood_drum',
     'gtceu:primitive_blast_furnace',
-    'gtceu:hp_steam_miner',
     
     'gtceu:wood_screwdriver_tip',
     'gtceu:wood_wrench_tip',

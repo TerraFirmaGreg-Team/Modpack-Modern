@@ -598,92 +598,152 @@ const registerGTCEURecipes = (event) => {
 		'gtceu:lp_steam_miner', 'gtceu:steel_brick_casing')
 
 	//#region Выход: Стальные машины
+	
+	// HP Steam Boilers
+	event.shaped('gtceu:hp_steam_solid_boiler', [
+		'AEA',
+		'ADA',
+		'BCB'
+	], {
+		A: '#forge:plates/steel',
+		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		C: 'gtceu:steel_brick_casing',
+		D: 'tfc:crucible',
+		E: '#forge:rods/black_steel'
+	}).id('gtceu:shaped/steam_boiler_coal_steel')
+
+	event.shaped('gtceu:hp_steam_liquid_boiler', [
+		'AEA',
+		'ADA',
+		'BCB'
+	], {
+		A: '#forge:plates/steel',
+		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		C: 'gtceu:steel_brick_casing',
+		D: '#forge:glass',
+		E: '#forge:rods/black_steel'
+	}).id('gtceu:shaped/steam_boiler_lava_steel')
+
+	event.shaped('gtceu:hp_steam_solar_boiler', [
+		'AAA',
+		'BCB',
+		'EDE'
+	], {
+		A: '#forge:glass_panes',
+		B: '#forge:double_plates/silver',
+		C: '#forge:rods/black_steel',
+		D: 'gtceu:steel_brick_casing',
+		E: 'gtceu:tin_alloy_small_fluid_pipe',
+	}).id('gtceu:shaped/steam_boiler_solar_steel')
 
 	// Экстрактор
 	event.shaped('gtceu:hp_steam_extractor', [
 		'BEB',
 		'CAC',
-		'DBD'
+		'DFD'
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: 'gtceu:tin_alloy_small_fluid_pipe',
 		C: '#forge:plates/steel',
 		D: '#forge:plates/wrought_iron',
-		E: '#forge:glass_panes'
+		E: '#forge:glass_panes',
+		F: '#forge:rings/black_steel'
 	}).id('gtceu:shaped/steam_extractor_steel')
 
 	// Дробитель
 	event.shaped('gtceu:hp_steam_macerator', [
-		'CCC',
-		'BAB',
-		'DDD'
+		'BFB',
+		'CAC',
+		'DED'
 	], {
 		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		B: '#forge:small_gears/wrought_iron',
 		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron'
+		D: '#forge:rods/black_steel',
+		E: 'gtceu:tin_alloy_small_fluid_pipe',
+		F: '#forge:chipped_gems/diamond'
 	}).id('gtceu:shaped/steam_macerator_steel')
 
 	// Компрессор
 	event.shaped('gtceu:hp_steam_compressor', [
 		'BCB',
-		'DAD',
-		'BBB'
-	], {
-		A: 'gtceu:steel_brick_casing',
-		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron'
-	}).id('gtceu:shaped/steam_compressor_steel')
-
-	// Молот
-	event.shaped('gtceu:hp_steam_forge_hammer', [
-		'DED',
-		'BAB',
-		'CCC'
+		'EAE',
+		'DFD'
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: 'gtceu:tin_alloy_small_fluid_pipe',
 		C: '#forge:plates/steel',
 		D: '#forge:plates/wrought_iron',
-		E: '#forge:double_ingots/steel'
+		E: 'minecraft:piston',
+		F: '#forge:rods/black_steel'
+	}).id('gtceu:shaped/steam_compressor_steel')
+
+	// Молот
+	event.shaped('gtceu:hp_steam_forge_hammer', [
+		'DFD',
+		'BEB',
+		'CAC'
+	], {
+		A: 'gtceu:steel_brick_casing',
+		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		C: '#forge:plates/steel',
+		D: '#forge:plates/wrought_iron',
+		E: '#forge:ingots/black_steel',
+		F: 'minecraft:piston'
 	}).id('gtceu:shaped/steam_hammer_steel')
 
 	// Печь
 	event.shaped('gtceu:hp_steam_furnace', [
 		'BCB',
 		'DAD',
-		'BCB'
+		'FFF'
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: 'gtceu:tin_alloy_small_fluid_pipe',
 		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron'
+		D: '#forge:plates/wrought_iron',
+		F: '#forge:rods/black_steel'
 	}).id('gtceu:shaped/steam_furnace_steel')
 
 	// Сплавщик
 	event.shaped('gtceu:hp_steam_alloy_smelter', [
-		'DCD',
+		'FCF',
 		'DAD',
-		'DBD'
+		'CBC'
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: 'gtceu:tin_alloy_small_fluid_pipe',
 		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron'
+		D: '#forge:plates/wrought_iron',
+		F: '#forge:rods/black_steel'
 	}).id('gtceu:shaped/steam_alloy_smelter_steel')
 
 	// Блоко-ломатель
 	event.shaped('gtceu:hp_steam_rock_crusher', [
-		'DCD',
+		'ECE',
 		'BAB',
 		'DDD'
 	], {
 		A: 'gtceu:steel_brick_casing',
 		B: 'gtceu:tin_alloy_small_fluid_pipe',
-		C: '#forge:plates/steel',
-		D: '#forge:plates/wrought_iron'
+		C: '#forge:drill_heads',
+		D: '#forge:rods/wrought_iron',
+		E: '#forge:screws/wrought_iron'
 	}).id('gtceu:shaped/steam_rock_breaker_steel')
+
+	// Miner
+	event.shaped('gtceu:hp_steam_miner', [
+		'EFE',
+		'BAB',
+		'DCD'
+	], {
+		A: 'gtceu:steel_brick_casing',
+		B: 'gtceu:tin_alloy_small_fluid_pipe',
+		C: '#forge:drill_heads',
+		D: '#forge:rods/steel',
+		E: '#forge:plates/wrought_iron',
+		F: '#gtceu:circuits/ulv'
+	}).id('gtceu:shaped/steam_miner_steel')
 
 	//#endregion
 
@@ -775,21 +835,6 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('gtceu:fireclay_dust')
 		.duration(15)
 		.EUt(2)
-
-	// Steel Steam Boiler
-	event.shaped('gtceu:hp_steam_solid_boiler', [
-		'AAA',
-		'ACA',
-		'BDB'
-	], {
-		A: '#forge:plates/steel',
-		B: 'minecraft:bricks',
-		C: '#forge:tools/wrenches',
-		D: 'tfc:crucible'
-	}).id('gtceu:shaped/steam_boiler_coal_steel')
-
-	event.replaceInput({ id: 'gtceu:shaped/steam_boiler_solar_steel' },
-		'gtceu:steel_small_fluid_pipe', 'gtceu:tin_alloy_small_fluid_pipe')
 
 	// Multi-Smelter
 	event.shaped('gtceu:multi_smelter', [
@@ -1458,5 +1503,8 @@ const registerGTCEURecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
+
+	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
+		.id('tfg:shapeless/red_alloy_single_cable')
 
 }

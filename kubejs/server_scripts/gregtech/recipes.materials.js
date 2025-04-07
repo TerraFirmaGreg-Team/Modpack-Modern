@@ -168,7 +168,7 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processFoil = (tagPrefix, material) => {
 
-		const foilItem = ChemicalHelper.get(tagPrefix, material, 1)
+		const foilItem = ChemicalHelper.get(tagPrefix, material, 4)
 		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
 		if (plateItem != null && foilItem != null) {
@@ -176,7 +176,8 @@ function registerGTCEUMetalRecipes(event) {
 				type: "createaddition:rolling",
 				input: plateItem,
 				result: foilItem,
-				//processingTime: material.getMass() // TODO
+				// TODO - processing time is controlled by a global config instead of setting it per-recipe...
+				//processingTime: material.getMass()
 			}).id(`tfg:rolling/${material.getName()}_foil`)
 		}
 	}

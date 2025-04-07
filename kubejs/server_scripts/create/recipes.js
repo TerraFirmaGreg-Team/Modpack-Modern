@@ -249,7 +249,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
-		C: '#forge:rods/red_steel',
+		C: '#forge:rods/black_steel',
 		D: '#forge:gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
@@ -403,16 +403,17 @@ const registerCreateRecipes = (event) => {
 	// Механическая бурилка
 	event.shaped('create:mechanical_drill', [
 		'EBF',
-		'GCG',
+		'HCG',
 		'ADA'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: '#forge:drill_heads/steel',
+		B: '#forge:drill_heads',
 		C: 'greate:steel_cogwheel',
 		D: 'create:andesite_casing',
 		E: '#forge:tools/hammers',
 		F: '#forge:tools/wrenches',
-		G: '#forge:screws/wrought_iron'
+		G: '#forge:screws/wrought_iron',
+		H: '#gtceu:circuits/ulv'
 	}).id('tfg:create/shaped/mechanical_drill')
 
 	event.shaped('create:mechanical_roller', [

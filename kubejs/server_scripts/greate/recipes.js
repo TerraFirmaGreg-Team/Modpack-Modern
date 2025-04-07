@@ -12,6 +12,14 @@ function registerGreateRecipes(event) {
 
 	// #region Shafts
 
+	event.shaped('4x greate:andesite_alloy_shaft', [
+		'A ',
+		' B'
+	], {
+		A: '#forge:tools/saws',
+		B: '#forge:plates/black_bronze'
+	}).id('greate:shaped/andesite_alloy_shaft_black_bronze')
+
 	event.shaped('6x greate:andesite_alloy_shaft', [
 		'A ',
 		' B'
@@ -35,14 +43,6 @@ function registerGreateRecipes(event) {
 		A: '#forge:tools/saws',
 		B: '#forge:plates/bismuth_bronze'
 	}).id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
-
-	event.shaped('4x greate:andesite_alloy_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/black_bronze'
-	}).id('greate:shaped/andesite_alloy_shaft_black_bronze')
 
 	generateCutterRecipe(event, '#forge:plates/wrought_iron', 4, '6x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft')
 	generateCutterRecipe(event, '#forge:plates/steel', 4, '6x greate:steel_shaft', 100, GTValues.VA[GTValues.LV], 'steel_shaft')
@@ -197,7 +197,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: 'greate:steel_shaft',
 		B: '#gtceu:circuits/ulv',
-		C: 'gtceu:lv_machine_casing',
+		C: 'gtceu:ulv_machine_hull',
 		D: '#forge:tools/wrenches',
 		E: 'gtceu:steel_rotor',
 		F: '#forge:tools/hammers'
@@ -331,7 +331,7 @@ function registerGreateRecipes(event) {
 		E: 'gtceu:steel_whisk',
 		F: '#forge:tools/wrenches',
 		G: '#forge:tools/hammers'
-	}).id('gtceu:shaped/andesite_alloy_mechanical_mixer')
+	}).id('greate:shaped/andesite_alloy_mechanical_mixer')
 
 	// #endregion
 

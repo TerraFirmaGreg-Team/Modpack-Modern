@@ -40,7 +40,7 @@ function registerVintageImprovementsRecipes(event) {
 		A: 'gtceu:ulv_machine_hull',
 		B: '#forge:springs/wrought_iron',
 		C: '#forge:plates/black_steel',
-		D: 'create:electron_tube',
+		D: '#gtceu:circuits/ulv',
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/shaped/vibrating_table')
 
@@ -284,34 +284,47 @@ function registerVintageImprovementsRecipes(event) {
 	})
 	// #endregion
 
-	const ULV_DURATION_MULTIPLIER = 2;
+	const ULV_DURATION_MULTIPLIER = 4;
 
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
 		// #region Coiling
 
-		const rodItem = ChemicalHelper.get(TagPrefix.rod, material, 1);
-		const smallSpringItem = ChemicalHelper.get(TagPrefix.springSmall, material, 1)
-
-		if (rodItem != null && smallSpringItem != null) {
+		if (material.hasFlag(MaterialFlags.GENERATE_ROD) && material.hasFlag(MaterialFlags.GENERATE_SPRING_SMALL)) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
-				ingredients: [rodItem],
-				results: [smallSpringItem],
-				processingTime: 200 * ULV_DURATION_MULTIPLIER
+				ingredients: [ChemicalHelper.get(TagPrefix.rod, material, 1)],
+				results: [ChemicalHelper.get(TagPrefix.springSmall, material, 1)],
+				processingTime: (material.getMass() / 2) * ULV_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_small_spring`)
 		}
 
-		const longRodItem = ChemicalHelper.get(TagPrefix.rodLong, material, 1);
-		const springItem = ChemicalHelper.get(TagPrefix.spring, material, 1)
-
-		if (longRodItem != null && springItem != null) {
+		if (material.hasFlag(MaterialFlags.GENERATE_LONG_ROD) && material.hasFlag(MaterialFlags.GENERATE_SPRING)) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
-				ingredients: [longRodItem],
-				results: [springItem],
-				processingTime: 200 * ULV_DURATION_MULTIPLIER
+				ingredients: [ChemicalHelper.get(TagPrefix.rodLong, material, 1)],
+				results: [ChemicalHelper.get(TagPrefix.spring, material, 1)],
+				processingTime: material.getMass() * ULV_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_spring`)
+		}
+
+		const singleWire = ChemicalHelper.get(TagPrefix.wireGtSingle, material, 2)
+		if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && singleWire != null) {
+			event.custom({
+				type: 'vintageimprovements:coiling',
+				ingredients: [ChemicalHelper.get(TagPrefix.plate, material, 1)],
+				results: [singleWire],
+				processingTime: material.getMass() * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/coiling/${material.getName()}_single_wire`)
+		}
+
+		if (material.hasFlag(MaterialFlags.GENERATE_FINE_WIRE) && singleWire != null) {
+			event.custom({
+				type: 'vintageimprovements:coiling',
+				ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
+				results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
+				processingTime: material.getMass() * 3 * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
 		}
 
 		// #endregion
@@ -358,7 +371,7 @@ function registerVintageImprovementsRecipes(event) {
 
 		// #region Lathe
 
-		if (rodItem != null) {
+		if (material.hasFlag(MaterialFlags.GENERATE_ROD)) {
 			let latheInput = material.hasProperty(PropertyKey.GEM)
 				? ChemicalHelper.get(TagPrefix.gem, material, 1)
 				: ChemicalHelper.get(TagPrefix.ingot, material, 1)
@@ -373,20 +386,18 @@ function registerVintageImprovementsRecipes(event) {
 			}
 		}
 
-		let boltItem = ChemicalHelper.get(TagPrefix.bolt, material, 1)
-		let screwItem = ChemicalHelper.get(TagPrefix.screw, material, 1)
-
-		if (boltItem != null && screwItem != null) {
+		if (material.hasFlag(MaterialFlags.GENERATE_BOLT_SCREW)) {
 			event.custom({
 				type: 'vintageimprovements:turning',
-				ingredients: [boltItem],
-				results: [screwItem],
+				ingredients: [ChemicalHelper.get(TagPrefix.bolt, material, 1)],
+				results: [ChemicalHelper.get(TagPrefix.screw, material, 1)],
 				processingTime: Math.max(1, material.getMass() / 8) * ULV_DURATION_MULTIPLIER
 			}).id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
 		}
 
 		// #endregion
 	})
+
 
 	// #region Vibrating
 
@@ -410,8 +421,8 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:turning',
-		ingredients: [{tag: 'forge:glass' }],
-		results: [{item: 'tfc:lens' }],
+		ingredients: [{ tag: 'forge:glass' }],
+		results: [{ item: 'tfc:lens' }],
 		processingTime: 200
 	}).id(`tfg:vi/lathe/lens`)
 
@@ -424,17 +435,17 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Vacuum
 
-	event.custom({ 
+	event.custom({
 		type: 'vintageimprovements:vacuumizing',
-		ingredients: [{ item: 'tfc:glue' }], 
+		ingredients: [{ item: 'tfc:glue' }],
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
 		processingTime: 100
 	}).id('tfg:vi/vacuumizing/glue')
 
 	// TODO: Remove me when we upgrade Greate and can just slap rubber onto wires again
-	event.custom({ 
+	event.custom({
 		type: 'vintageimprovements:vacuumizing',
-		ingredients: [{ item: 'gtceu:rubber_dust' }], 
+		ingredients: [{ item: 'gtceu:rubber_dust' }],
 		results: [{ fluid: 'gtceu:rubber', amount: 144 }],
 		heatRequirement: "heated",
 		processingTime: 100
