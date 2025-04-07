@@ -419,16 +419,17 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Centrifuge
 
-	event.custom({ 
-		type: 'vintageimprovements:centrifugation',
-		ingredients: [{ item: 'tfc:glue' }], 
-		results: [{ fluid: 'gtceu:glue', amount: 50 }],
-		processingTime: 100
-	}).id('tfg:vi/centrifuge/glue')
 
 	// #endregion
 
 	// #region Vacuum
+
+	event.custom({ 
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfc:glue' }], 
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		processingTime: 100
+	}).id('tfg:vi/vacuumizing/glue')
 
 	// TODO: Remove me when we upgrade Greate and can just slap rubber onto wires again
 	event.custom({ 
