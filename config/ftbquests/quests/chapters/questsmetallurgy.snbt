@@ -49,76 +49,10 @@
 			y: -20.0d
 		}
 		{
-			id: "6835CA7CF232A3AB"
-			linked_quest: "48C1E980F7D64317"
-			x: 2.5d
-			y: -35.5d
-		}
-		{
-			id: "73777A23850AFA71"
-			linked_quest: "1059288C22CB56BB"
-			x: 3.5d
-			y: -34.5d
-		}
-		{
-			id: "4FA1A6DDD244B8A1"
-			linked_quest: "7B045998769930F0"
-			x: 0.5d
-			y: -34.5d
-		}
-		{
-			id: "36BA25E129F049E7"
-			linked_quest: "611EB6284CA7119C"
-			x: 1.5d
-			y: -35.5d
-		}
-		{
-			id: "03BAD2FB03C7CE7A"
-			linked_quest: "61DDB00751D1E7CB"
-			x: 8.0d
-			y: -27.0d
-		}
-		{
-			id: "2753465171D1D495"
-			linked_quest: "617E0AFB7BA3D7A8"
-			x: 10.0d
-			y: -27.0d
-		}
-		{
-			id: "526A88A99A7BB048"
-			linked_quest: "7F14D2A34F480ACA"
-			x: 9.0d
-			y: -26.5d
-		}
-		{
 			id: "19CF6D922179DFF9"
 			linked_quest: "11C45DBB20ED7647"
 			x: 9.0d
 			y: -34.0d
-		}
-		{
-			id: "44C0245037DF498A"
-			linked_quest: "51CBF7378FFAD514"
-			x: 26.0d
-			y: -35.0d
-		}
-		{
-			id: "4D62A54F1246B9C5"
-			linked_quest: "3FFC8875179A97A3"
-			x: 27.0d
-			y: -34.5d
-		}
-		{
-			id: "4C0FA9AA7D8FE83A"
-			linked_quest: "46FA9DD4755A5548"
-			x: 28.0d
-			y: -29.0d
-		}
-		{
-			id: "442A25851D931C6D"
-			linked_quest: "183D47F04CAEBFA7"
-			x: 28.0d
-			y: -27.0d
 		}
 	]
 	quests: [
@@ -853,7 +787,11 @@
 			y: -30.0d
 		}
 		{
-			dependencies: ["6302B4F5F57FDCED"]
+			dependencies: [
+				"6302B4F5F57FDCED"
+				"05CC8C5E63CD1DB8"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.metal_age.auto_coke_oven.desc}"
 				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
@@ -1033,17 +971,6 @@
 			title: "{quests.metal_age.steel_goodies.title}"
 			x: 26.0d
 			y: -34.0d
-		}
-		{
-			dependencies: ["0C9B7745D812555A"]
-			id: "06EEFD1173C62174"
-			tasks: [{
-				id: "4B25C1EF1B40E220"
-				item: { Count: 32, id: "greate:steel_encased_fan" }
-				type: "item"
-			}]
-			x: 25.0d
-			y: -34.5d
 		}
 		{
 			dependencies: ["52DAF93E2F3D688A"]

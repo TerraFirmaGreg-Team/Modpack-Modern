@@ -10,73 +10,114 @@
 		{
 			id: "62E10FCCD3CFFB25"
 			linked_quest: "26F07C926959FACF"
-			x: -8.0d
-			y: -3.5d
+			x: -18.0d
+			y: -5.5d
 		}
 		{
 			id: "1CE57ADA90D9E3A9"
 			linked_quest: "3C173357029AB649"
-			x: -8.0d
-			y: -2.5d
+			shape: "octagon"
+			size: 2.0d
+			x: -18.0d
+			y: -7.5d
 		}
 		{
 			id: "36E0479110D898C9"
 			linked_quest: "20C2CE92459BE14A"
-			x: -2.0d
-			y: 0.5d
-		}
-		{
-			id: "7DD1C30EAA570D47"
-			linked_quest: "174DA15847665CF8"
-			x: -3.0d
-			y: 0.5d
+			x: -10.0d
+			y: -5.0d
 		}
 		{
 			id: "76EE88E701134FA5"
 			linked_quest: "04DE7C58F20B535A"
-			x: -8.0d
-			y: 2.0d
+			shape: "octagon"
+			size: 2.0d
+			x: -3.0d
+			y: -7.5d
 		}
 		{
 			id: "5BCB495C7D9E1024"
 			linked_quest: "0C9B7745D812555A"
-			x: -8.0d
-			y: 3.0d
+			x: -3.0d
+			y: -5.5d
 		}
 		{
 			id: "77F8E82E8E3274BF"
 			linked_quest: "52DAF93E2F3D688A"
-			x: -11.0d
-			y: 0.5d
+			shape: "gear"
+			size: 3.0d
+			x: -19.5d
+			y: 3.0d
 		}
 		{
 			id: "49B22B972E3C3780"
 			linked_quest: "2C7368B3F573B284"
+			x: -19.5d
+			y: 5.5d
+		}
+		{
+			id: "39027CF4DC307D33"
+			linked_quest: "5E186CD5E83BFDF0"
+			x: -21.5d
+			y: -5.5d
+		}
+		{
+			id: "60A46EA602BC1207"
+			linked_quest: "48A8E3210B2BAE1C"
+			shape: "octagon"
+			size: 2.0d
+			x: -21.5d
+			y: -7.5d
+		}
+		{
+			id: "27410A63E0E96594"
+			linked_quest: "174DA15847665CF8"
+			shape: "octagon"
+			size: 2.0d
+			x: -10.0d
+			y: -7.5d
+		}
+		{
+			id: "230D93B2609B10A6"
+			linked_quest: "6784D187505C19C5"
+			x: -14.0d
+			y: -7.0d
+		}
+		{
+			id: "0CE64B9914191C56"
+			linked_quest: "6FFD4990FF07078A"
+			x: -11.0d
+			y: 9.5d
+		}
+		{
+			id: "23A27702FF816291"
+			linked_quest: "6903C72A254A7B08"
+			x: -13.5d
+			y: 7.5d
+		}
+		{
+			id: "00B33DFF6076A2C0"
+			linked_quest: "7EED0084BA59FED1"
+			x: -13.5d
+			y: 5.5d
+		}
+		{
+			id: "1E03E02C0C185B35"
+			linked_quest: "648BCF486E16CCB2"
+			shape: "gear"
+			size: 3.0d
+			x: -10.0d
+			y: 6.0d
+		}
+		{
+			id: "044ADF2296BC1A8F"
+			linked_quest: "6E186F9C57155BFA"
+			shape: "heart"
 			x: -12.0d
-			y: 0.5d
+			y: 3.0d
 		}
 	]
 	quests: [
-		{
-			description: [
-				"something like"
-				"1) any hp steam boiler"
-				"2) a branch for macerator and compressor to make cogs"
-				"3) a branch with forge hammer and then mech press for cheaper plates. Also rolling mill"
-				"4) tree tapping for latex, then resin, then circuit boards"
-				"5) maybe an optional quest telling people about your blast furnace automation guide"
-				"6) a branch for glassblowing to eventually make tubes"
-				"6) then at the very end, deployer and the vacuum tube "
-			]
-			id: "188A3B7ABDCB2847"
-			tasks: [{
-				id: "0DE8AF823A6A8DF1"
-				title: "PYRITIE IDEA"
-				type: "custom"
-			}]
-			x: -8.0d
-			y: 0.5d
-		}
 		{
 			dependencies: ["26F07C926959FACF"]
 			id: "48C1E980F7D64317"
@@ -85,7 +126,7 @@
 				item: "greate:andesite_alloy_millstone"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -16.5d
 			y: -3.5d
 		}
 		{
@@ -96,19 +137,19 @@
 				item: "createhorsepower:horse_crank"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -4.5d
+			x: -19.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["26F07C926959FACF"]
+			dependencies: ["7B045998769930F0"]
 			id: "611EB6284CA7119C"
 			tasks: [{
 				id: "340B4B4665295100"
 				item: "vintageimprovements:helve_hammer"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -4.5d
+			x: -18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["26F07C926959FACF"]
@@ -130,8 +171,8 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
-			y: -3.5d
+			x: -18.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["20C2CE92459BE14A"]
@@ -148,8 +189,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -0.5d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["20C2CE92459BE14A"]
@@ -167,8 +208,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 1.5d
+			x: -8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["20C2CE92459BE14A"]
@@ -178,41 +219,30 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: -10.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["0C9B7745D812555A"]
+			dependencies: ["09D913288896A67A"]
 			id: "616E28977F3216D9"
 			tasks: [{
 				id: "32279C21D7553637"
 				item: { Count: 32, id: "greate:steel_encased_fan" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 3.0d
+			x: -1.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["0C9B7745D812555A"]
-			id: "3FFC8875179A97A3"
-			tasks: [{
-				id: "794FF0F86B1AA779"
-				item: "greate:steel_crushing_wheel"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0C9B7745D812555A"]
+			dependencies: ["09D913288896A67A"]
 			id: "51CBF7378FFAD514"
 			tasks: [{
 				id: "1E7DD1C4FCCFD937"
 				item: "greate:steel_mechanical_pump"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 4.0d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2C7368B3F573B284"]
@@ -228,19 +258,746 @@
 				}
 				type: "item"
 			}]
-			x: -12.0d
-			y: -0.5d
+			x: -19.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["2C7368B3F573B284"]
+			dependencies: ["56CA2EB7812529C5"]
 			id: "183D47F04CAEBFA7"
+			size: 1.0d
 			tasks: [{
 				id: "704B7094BE2FB3E1"
 				item: "create:steam_engine"
 				type: "item"
 			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F14D2A34F480ACA"]
+			id: "069825FBCFB0FB9C"
+			tasks: [{
+				id: "5005121E0361DBD2"
+				item: "greate:andesite_alloy_mechanical_saw"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F14D2A34F480ACA"]
+			id: "76871B4CEEEC70B8"
+			tasks: [{
+				id: "34092F5FBDFB9761"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["20C2CE92459BE14A"]
+			id: "05CC8C5E63CD1DB8"
+			tasks: [
+				{
+					id: "7CB1E90EAF7861FB"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "66E04B6A41557709"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
 			x: -12.0d
-			y: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["51CBF7378FFAD514"]
+			id: "66DBF1C68493A406"
+			tasks: [{
+				id: "7258D0D474B6F26E"
+				item: "tfcchannelcasting:mold_table"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C9B7745D812555A"]
+			dependency_requirement: "one_completed"
+			id: "09D913288896A67A"
+			tasks: [
+				{
+					id: "23DE370285589CB4"
+					item: "greate:steel_shaft"
+					type: "item"
+				}
+				{
+					id: "4FDD99090C920E21"
+					item: "greate:steel_cogwheel"
+					type: "item"
+				}
+				{
+					id: "5569D0030FB45C5D"
+					item: "greate:large_steel_cogwheel"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["09D913288896A67A"]
+			id: "5E4FC017E09ACF44"
+			tasks: [{
+				id: "3E3D4CD3283461DE"
+				item: "greate:steel_millstone"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E4FC017E09ACF44"]
+			id: "4F3D0D746D26B59F"
+			tasks: [{
+				id: "7EDCBC04DAEA477C"
+				item: "greate:steel_crushing_wheel"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["616E28977F3216D9"]
+			description: ["TODO: text about how now you can totally automate your ore washing"]
+			id: "5BAFF2BAE1E4EE2C"
+			tasks: [{
+				id: "76B30A22ADD537D6"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DB7AB5349218605"]
+			id: "246D2C5989E3E907"
+			tasks: [
+				{
+					id: "7CF3C09E3907B1C0"
+					item: "gtceu:treated_wood_planks"
+					type: "item"
+				}
+				{
+					id: "72112F5EC062766C"
+					item: "gtceu:treated_wood_dust"
+					type: "item"
+				}
+				{
+					id: "0D95727196D033B5"
+					item: "gtceu:treated_wood_plate"
+					type: "item"
+				}
+			]
+			x: -19.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"246D2C5989E3E907"
+				"233B414B4F189140"
+				"781C6AD30194CB45"
+			]
+			id: "033E74BC588E7EAD"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "471CCF5193150865"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			dependency_requirement: "one_completed"
+			id: "65066C9D630B7FFA"
+			tasks: [
+				{
+					id: "068F7BD3AA0EF8E7"
+					item: "gtceu:hp_steam_miner"
+					type: "item"
+				}
+				{
+					id: "5ADC94CEBC196702"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+			]
+			x: -13.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"22E604DB7E7E87FB"
+				"09E12A399EE0A628"
+				"1912758422EEB006"
+			]
+			dependency_requirement: "one_completed"
+			id: "233B414B4F189140"
+			tasks: [{
+				id: "004AF02E40B60ECF"
+				item: "gtceu:glass_tube"
+				type: "item"
+			}]
+			x: -25.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["033E74BC588E7EAD"]
+			id: "6AA07588374B59AB"
+			tasks: [
+				{
+					id: "717CF950E5000569"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "38F9301A818347F7"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					id: "5BA40468AA3A44DF"
+					item: "vintageimprovements:vacuum_chamber"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1912758422EEB006"]
+			description: [
+				"Make the listed molds for future alloy smelting. Be sure to make &aMolds&r - don't make &cExtruder Shapes&r, as they're used in a different machine."
+				""
+				"The reward for this quest will alleviate &da lot of pain&r when it comes to crafting &bGears&r."
+			]
+			icon: "gtceu:ball_casting_mold"
+			id: "09E12A399EE0A628"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Reduce the amount of malding by molding"
+			tasks: [
+				{
+					id: "02A8B23277FFD95E"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "57B2773550AA7D37"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+				{
+					id: "49DFD9DE08F61DCB"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Molding"
+			x: -25.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["033E74BC588E7EAD"]
+			id: "5917B0D4708BF534"
+			tasks: [{
+				id: "084E6F06E79A3B0F"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["52DAF93E2F3D688A"]
+			id: "0805CCABC8E7F6CF"
+			shape: "heart"
+			size: 2.0d
+			tasks: [{
+				id: "72D748120CACABE2"
+				item: "gtceu:steam_bloomery"
+				type: "item"
+			}]
+			x: -23.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["05CC8C5E63CD1DB8"]
+			description: [
+				"&3Item Pipes&r are a simple yet effective way to move items around &dinstantly&r, but with throughput limitations."
+				""
+				"Higher tier pipes provide ridiculously large throughput - a rare sight in modded Minecraft!"
+				""
+				"Item Pipes &9do not pull&r, but they will push any item inserted into them to other connected inventories, prioritizing &9the closest inventory&r first."
+				"{@pagebreak}"
+				"The priority mechanics are &osomewhat complicated&r, so skip ahead if you aren't interested:"
+				""
+				"A &eDestination&r will have a &dRouting Value&r calculated, which is the sum of all \"Routing Values\" of the individual Pipes to that Destination. Whichever Destination has the &clowest &dRouting Value&r will be the one selected for Insertion."
+				""
+				"&3Restrictive Pipes&r typically have the lowest Priority for insertion due to their higher Routing Value."
+				"{@pagebreak}"
+				"Right now, you can use them in combination with &6Hoppers&r, but you will also be able to use them with Conveyor Modules, Output Buses, and machine Auto-Outputs all in the LV age."
+				""
+				"&9Note:&r GT6-style Pipes are &denabled&r. It means that placing Pipes connect them only to the block they were placed against. To open more connections, use your &5Wrench&r on the grid."
+				""
+				"Get &eany&r of the suggested Item Pipes to complete this quest."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Oooooh, YEAH! Item Pipes were in GregTech 5, and for whatever reason they weren't kept for GTCE, so you had to use other mods to transport items. Who does that!? Jokes aside, we hope you enjoy Item Pipes being back in GregTech!"
+			]
+			icon: "gtceu:tin_small_item_pipe"
+			id: "08672B3000450F14"
+			size: 1.0d
+			tasks: [{
+				id: "3122D989BAB787F4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Any item pipe\"}"
+						}
+						"ftbfiltersystem:filter": "or(item_tag(forge:small_item_pipes)item_tag(forge:normal_item_pipes)item_tag(forge:large_item_pipes)item_tag(forge:huge_item_pipes))"
+					}
+				}
+				title: "Any Item Pipes"
+				type: "item"
+			}]
+			title: "Item Pipes"
+			x: -14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6FFD4990FF07078A"
+				"3E175E20C91F168B"
+			]
+			description: [
+				"Macerate Wood into Wood Pulp, then compress it into Wood Plates. Combine it with Resin to make an empty board."
+				""
+				"Stick in some expensive Copper Wires (these'll get cheaper in &7LV&r) and you've got the base for your first &aCircuit&r."
+				""
+				"Almost there!"
+			]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "43D0B4F2ACB9931B"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The circuit-er part of circuits..."
+			tasks: [
+				{
+					id: "5B065B6F73BB2CCE"
+					item: "gtceu:wood_plate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B8B038789480789"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Electronics #2: Circuit Boards"
+			x: -13.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: ["The Steam Compressor unlocks some tantalising new recipes that will help you to progress towards Steel."]
+			id: "7DB7AB5349218605"
+			size: 1.0d
+			subtitle: "The Steam Compressor compresses..."
+			tasks: [{
+				id: "422B0536DAAF3DD4"
+				item: "gtceu:hp_steam_compressor"
+				type: "item"
+			}]
+			title: "Steam Compressor"
+			x: -19.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: [
+				"The &bAlloy Smelter&r is used for, well, alloys. You'll want it for the efficient &6Bronze&r recipe, and for &4Red Alloy&r in the near future."
+				""
+				"Out of all the &6Steam Age&r machines, this is the most steam-hungry. If you ever find yourself running out of steam, give your machine a &alove-tap&r with &dany Soft Mallet&r to momentarily pause it."
+			]
+			id: "1912758422EEB006"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Alloy Smelter makes alloys..."
+			tasks: [{
+				id: "47ABB2F2EB140120"
+				item: "gtceu:hp_steam_alloy_smelter"
+				type: "item"
+			}]
+			title: "Steam Alloy Smelter"
+			x: -22.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: [
+				"With the creation of this machine, many recipes that once required you to use a hammer can instead be made here!"
+				""
+				"It can process &bCobblestone into Gravel&r, and &dGravel into Sand&r - and it's zippy at that to boot."
+				""
+				"Last but not least, it makes &aPlates&r at a better ratio: &6three Ingots for two Plates&r. A worthwhile investment!"
+				""
+				"On top of all that, the Forge Hammer lets you work in-between ingots such as Raw Blooms into Wrought Iron, or Pig Iron into Steel! keep in mind that this takes a while tho."
+			]
+			id: "59F7F7A8C76DE31C"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Forge Hammer hammers..."
+			tasks: [{
+				id: "18FFF2B9BC20C28B"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			title: "Steam Forge Hammer"
+			x: -22.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"6AA07588374B59AB"
+				"6FFD4990FF07078A"
+			]
+			description: [
+				"Crafting Vacuum Tubes might make you question your existence. Sorry about that."
+				""
+				"This is mostly due to the fact that Wires and Rods are (sadly) very expensive right now, but they'll get cheaper in &7LV&r."
+				""
+				"Vacuum Tubes are also technically your first Ultra Low Voltage (&8ULV&r) Circuit! Congratulations! You won't find very much use for these by themselves, though."
+			]
+			id: "2C35D4E01AEC02AA"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "The harder component for circuits"
+			tasks: [{
+				id: "71433924A1ACEDA1"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			title: "Electronics #3: Vacuum Tubes"
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7DB7AB5349218605"]
+			id: "3E175E20C91F168B"
+			tasks: [{
+				id: "339B48BCF11A29E0"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			description: [
+				"Not many items are made in the &3Extractor&r during the &6Steam Age&r, but it's used to make &9Rubber&r, which you'll need after Steel."
+				""
+				"You can also process Dirt in the Extractor for &aBones&r, which makes getting &aBone Meal&r a lot easier for Peaceful players."
+			]
+			id: "1DF4DBE41BB0B6FD"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The Steam Extractor extracts..."
+			tasks: [{
+				id: "5C84856667925F76"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			title: "Steam Extractor"
+			x: -16.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4CD3F04793CE47A2"]
+			id: "0EC73D1964E67E99"
+			tasks: [{
+				id: "233A5026EDB2C861"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"6FFD4990FF07078A"
+				"0EC73D1964E67E99"
+			]
+			description: [
+				"Resistors are components that will be used to make your first Circuit."
+				""
+				"It wouldn't be unwise to prioritise the recipes that use &aFine Wires&r, as they'll save you more materials in the long run."
+				""
+				"Wires may be expensive right now, but they'll get a lot cheaper in &7LV&r."
+			]
+			id: "69BDD31A69062B6C"
+			shape: "square"
+			size: 1.0d
+			subtitle: "The easier component for circuits"
+			tasks: [{
+				id: "4E6D1A59F2BAE607"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			title: "Electronics #1: Resistors"
+			x: -7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "072F6E48A1C5ECE9"
+			tasks: [{
+				id: "07B7D41ACDCD1DEA"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "49896161B31DB7B4"
+			tasks: [{
+				id: "42F060A386ADF999"
+				item: "greate:steel_mechanical_mixer"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "6A92E8396DE40577"
+			tasks: [{
+				id: "269D79581AC1E0D6"
+				item: "vintageimprovements:lathe"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "19A1D52A7F550478"
+			tasks: [{
+				id: "69668479444FF064"
+				item: "vintageimprovements:centrifuge"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "1E8CC993E0251828"
+			tasks: [{
+				id: "3035C0B44A0E1854"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "4C22BE513927247B"
+			tasks: [{
+				id: "621AA4E967D54305"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "0078B9234C554C6E"
+			tasks: [{
+				id: "40E3951B8862B9A4"
+				item: "greate:steel_mechanical_saw"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2C35D4E01AEC02AA"]
+			id: "6ABACC7B9967851D"
+			tasks: [{
+				id: "2AE28D5C5FC74A56"
+				item: "vintageimprovements:curving_press"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			id: "799288FB7A4DCA11"
+			tasks: [{
+				id: "3F510CDD8E437540"
+				item: "gtceu:hp_steam_furnace"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["799288FB7A4DCA11"]
+			description: [
+				"&o...or little brother. Don't let him know!&r"
+				""
+				"The &3Steam Oven&r is a great multiblock option if you need &6effortlessly smelt large quantities of items.&r No more lines of furnaces that you have to manually empty and refuel!"
+				""
+				"It effectively behaves as a parallel furnace, smelting up to 8 items at a time for a low cost of Steam."
+				"{@pagebreak}"
+				""
+				"&l&3Lore:&r&o This Multiblock - despite being very similar to its brother, the Steam Grinder - isn't ported from a GregTech version or addon. Its actual progenitor is the Steam Oven from Railcraft, which dates back to 1.4.7!"
+			]
+			icon: "gtceu:steam_oven"
+			id: "3E6DE0B94490FCEC"
+			shape: "heart"
+			size: 1.0d
+			subtitle: "The Steam Grinder's big brother"
+			tasks: [
+				{
+					id: "1675EA4117A36C72"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+				{
+					id: "4EE63FDD07EC0467"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "0C9D5C87DEC212D2"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "60828361A38F4E1E"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "10EC49FF899232F6"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "27DDD13BE482E8A3"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+			]
+			title: "Steam Oven"
+			x: -16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			id: "2491CB5921B66446"
+			tasks: [{
+				id: "5CA302572EF6D4E1"
+				item: "gtceu:hp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: -22.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1912758422EEB006"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&4Red Alloy&r is an alloy of Copper and Redstone, prized in the GregTech universe for its conductivity."
+				""
+				"You will need some for &9Electronic Circuits&r."
+				""
+				"&l&3Lore:&r&o This material originally comes from RedPower - what a throwback!"
+			]
+			id: "781C6AD30194CB45"
+			shape: "square"
+			size: 1.0d
+			subtitle: "A completely fictional alloy"
+			tasks: [
+				{
+					id: "4D1E98E699F1E724"
+					item: "gtceu:red_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "41331A38F9664605"
+					item: "gtceu:red_alloy_single_wire"
+					type: "item"
+				}
+				{
+					id: "747DB1DB09BA185B"
+					item: "gtceu:red_alloy_single_cable"
+					type: "item"
+				}
+			]
+			title: "Red Alloy"
+			x: -22.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"183D47F04CAEBFA7"
+				"648BCF486E16CCB2"
+			]
+			id: "0E57FC7FBFF1CFEB"
+			shape: "heart"
+			tasks: [{
+				id: "2A48D5B33BB7C9FE"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: [
+				"TODO:"
+				"What next?"
+				"If you rushed straight here, we suggest machines like the LV bender, wiremill, or mixer first."
+				"Otherwise if you made the ULV machines below, we suggest the assembler, arc furnace, or polarizer."
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "0DAE3D612E70F462"
+			shape: "heart"
+			tasks: [{
+				id: "759B03FB27B79731"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
