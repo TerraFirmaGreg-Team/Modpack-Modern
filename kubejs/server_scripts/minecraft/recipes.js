@@ -789,14 +789,14 @@ const registerMinecraftRecipes = (event) => {
 		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
 		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
 		.duration(224)
-		.EUt(420)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
 		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
 		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
-		.duration(160)
-		.EUt(420)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.ULV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
