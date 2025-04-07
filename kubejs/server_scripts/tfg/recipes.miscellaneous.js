@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {Internal.RecipesEventJS_} event 
+ */
 function registerTFGMiscellaneousRecipes(event) {
 
 	//tfc:moss
@@ -121,4 +125,55 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(300)
 		.EUt(30)
 
+	//Scaffolding Frame
+	event.shaped('tfg:scaffolding_frame', 
+	[
+		'AAA',
+		'ABA',
+		'AAA'
+	],
+	{
+		A: 'minecraft:stick',
+		B: '#forge:cloth'
+	}).id('tfg:shaped/scaffolding_frame');
+
+	event.recipes.gtceu.assembler('tfg:assembler/scaffolding_frame')
+		.itemInputs('8x minecraft:stick', '#forge:cloth')
+		.itemOutputs('tfg:scaffolding_frame')
+		.duration(10)
+		.EUt(2);
+
+	//Airship Hull
+	event.shaped('tfg:airship_hull',[
+		'A B',
+		'C C',
+		'CCC'
+	],{
+		A: '#forge:tools/screwdrivers',
+		B: '#forge:tools/hammers',
+		C: 'immersive_aircraft:hull'
+	}).id('tfg:shaped/airship_hull');
+	event.recipes.gtceu.assembler('tfg:assembler/airship_hull')
+		.itemInputs('5x immersive_aircraft:hull')
+		.itemOutputs('tfg:airship_hull')
+		.duration(40)
+		.circuit(1)
+		.EUt(10);
+
+	//Airship Balloon
+	event.shaped('tfg:airship_balloon',[
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:string',
+		B: 'immersive_aircraft:sail',
+		C: 'tfc:bone_needle'
+	}).id('tfg:shaped/airship_balloon')
+	event.recipes.gtceu.assembler('tfg:assembler/airship_balloon')
+		.itemInputs('4x immersive_aircraft:sail', '4x #forge:string')
+		.itemOutputs('tfg:airship_balloon')
+		.duration(40)
+		.circuit(1)
+		.EUt(10)
 }

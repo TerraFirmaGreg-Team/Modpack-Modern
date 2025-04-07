@@ -356,7 +356,7 @@
     "quests.tfg_tips.create_rubber_ingot.desc": "Utilizing some machinery from GregTech, you can extract Raw Rubber Pulp from both Latex Producing Trees and Sticky Resin. You can then place 3 raw rubber pulp with a bit of Sulfur Dust to create Rubber Ingots. Rubber Ingots are perfect for insulating cables and are very much necesary to advance in the tech tree.",
     //#endregion
 
-    //#region FirmaCiv
+    //#region Transportation
     "quests.tfg_tips.firmaciv.title": "FirmaCiv",
     "quests.tfg_tips.firmaciv.subtitle": "Sail across the seas, with style.",
     "quests.tfg_tips.firmaciv.desc": "FirmaCiv is a mod all about boats and traversing large bodies of water. It can also be used for creating tools that help you position yourself in the world.",
@@ -588,6 +588,40 @@
     //#region Beneath
     "quests.tfg_tips.beneath.title": "The Beneath",
     "quests.tfg_tips.beneath.subtitle": "What's this \"Nether\" you speak of?",
-    "quests.tfg_tips.beneath.desc": "Deep, DEEP underground, past the bedrock, you'll find The Beneath, a complex network of caves filled with dangers and relatively strange flora and fauna. While the beneath is completely optional, it contains a lot of things that could be considered Quality of Life improvements."
+    "quests.tfg_tips.beneath.desc": "Deep, DEEP underground, past the bedrock, you'll find The Beneath, a complex network of caves filled with dangers and relatively strange flora and fauna. While the beneath is completely optional, it contains a lot of things that could be considered Quality of Life improvements.",
+    
+    "quests.tfg_tips.beneath_prep.title": "Preparations",
+    "quests.tfg_tips.beneath_prep.subtitle": "The Beneath is Hostile, better be prepared",
+    "quests.tfg_tips.beneath_prep.desc": "The Beneath is a very, VERY hostile environment, due to it being very deep underground the average temperature is always above 15°C, going higher as you go deeper. Not to mention the amount of hostile creatures overall.\nThe quests below this one provide basic preparations for your adventure.",
+
+    "quests.tfg_tips.beneath_temp_management.title": "Temperature Management: Active",
+    "quests.tfg_tips.beneath_temp_management.subtitle": "Things to cool off quickly",
+    "quests.tfg_tips.beneath_temp_management.desc": "In the beneath, while the temperature is relatively high, its not high enough to immediatly evaporate nearby sources of Water. As such, you should bring some Water to cool off on demand, or some Ice.\n\nYou can harvest Ice using a regular Saw.",
+
+    "quests.tfg_tips.beneath_clothes.title": "Temperature Management: Passive",
+    "quests.tfg_tips.beneath_clothes.subtitle": "Things to passively cool off",
+    "quests.tfg_tips.beneath_clothes.desc": "Clothes can also play an important role to cool off. The easiest cloth type to craft before going to the Beneath are Burlap Clothes.\n\nSilk Clothes require String, which can be found inside a Beneath Biome called the Webbed Lair.\n\nThere is a better alternative if you have access to Blue Steel however.",
+
+    "quests.tfg_tips.blue_steel_diving.title": "Blue Steel Diving Gear",
+    "quests.tfg_tips.blue_steel_diving.subtitle": "Perfect for taking a warm bath in a Lava Lake",
+    "quests.tfg_tips.blue_steel_diving.desc": "The Blue Steel Diving Gear is a special set of armor that makes you completely impervious to Lava while you're wearing it. The reduced Warmth but high Insulations means you'll be able to keep a very stable core temperature while in the Beneath.",
+
+    "quests.tfg_tips.juicer.title": "Juicer",
+    "quests.tfg_tips.juicer.subtitle": "Hydration on a Pinch",
+    "quests.tfg_tips.juicer.desc": "The Juicer is a special item that can extract the latent humidity of Fruits and Mushrooms into drinkable water.\n\nWater is only common in the upper layers of the beneath, as you go lower, it'll be increasingly scarce. However, mushrooms are very common in the Beneath, so you can juice them in the Juicer to get some drinkable Water.",
+    
+    "quests.tfg_tips.how_to_go_beneath.title": "How to go to The Beneath",
+    "quests.tfg_tips.how_to_go_beneath.subtitle": "No Obsidian Required",
+    "quests.tfg_tips.how_to_go_beneath.desc": "The Beneath is located deep, deep underground. Past the overworld's layer of Bedrock.\n\nTo reach the Beneath, you'll have to stand on the Overworld's bedrock for a couple of seconds, Dimensional Forces will bring you to the Beneath.",
+    "quests.tfg_tips.how_to_go_beneath.task.1": "Reach and Stand on top of Bedrock",
+    "quests.tfg_tips.how_to_go_beneath.task.2": "Visit the Beneath",
+
+    "quests.tfg_tips.reach_the_beneath.title": "Welcome, to The Depths",
+    "quests.tfg_tips.reach_the_beneath.subtitle": "Otherwise known as The Beneath",
+    "quests.tfg_tips.reach_the_beneath.desc": "As soon as you reach The Beneath, you should mark your Point of Entry. Traveling in the Beneath is no faster than traveling in the Overworld. So marking your entry position can be used to quickly go back where you came from.",
+
+    "quests.tfg_tips.fuck_go_back.title": "How to escape The Beneath",
+    "quests.tfg_tips.fuck_go_back.subtitle": "Mom come pick me up, I'm scared.",
+    "quests.tfg_tips.fuck_go_back.desc": "To escape The Beneath, you need to reach the upper levels of the cave system, near it's ceiling of Bedrock. Staying still for a couple of seconds near the roof will transport you back to the Bedrock layer of the Overworld."
     //#endregion
 }

@@ -26,7 +26,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["173F6FA60A5B280B"]
+			dependencies: ["60497014785301EB"]
 			description: ["{quests.tfg_tips.firmaciv.desc}"]
 			icon: {
 				Count: 1
@@ -40,7 +40,7 @@
 			}
 			id: "2B84F34BFA37C828"
 			shape: "octagon"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{quests.tfg_tips.firmaciv.subtitle}"
 			tasks: [{
 				id: "41793C99EC45695A"
@@ -48,7 +48,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.firmaciv.title}"
-			x: -4.0d
+			x: -8.0d
 			y: -4.0d
 		}
 		{
@@ -258,7 +258,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.canoe_beginning.title}"
-			x: -4.0d
+			x: -8.0d
 			y: -8.0d
 		}
 		{
@@ -272,7 +272,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.kayak_beginning.title}"
-			x: -6.0d
+			x: -10.0d
 			y: -2.5d
 		}
 		{
@@ -286,7 +286,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.rowboat_beginning.title}"
-			x: -5.5d
+			x: -9.5d
 			y: -8.0d
 		}
 		{
@@ -313,7 +313,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.create_rowboat.title}"
-			x: -8.0d
+			x: -12.0d
 			y: -8.0d
 		}
 		{
@@ -333,7 +333,7 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.create_sloop.title}"
-			x: -10.0d
+			x: -14.0d
 			y: -12.0d
 		}
 		{
@@ -408,7 +408,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.rowboat_materials.title}"
-			x: -6.5d
+			x: -10.5d
 			y: -8.0d
 		}
 		{
@@ -422,7 +422,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.sloop_beginning.title}"
-			x: -8.0d
+			x: -12.0d
 			y: -6.0d
 		}
 		{
@@ -448,7 +448,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.create_canoe.title}"
-			x: -6.0d
+			x: -10.0d
 			y: -10.0d
 		}
 		{
@@ -511,7 +511,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.canoe_materials.title}"
-			x: -4.0d
+			x: -8.0d
 			y: -10.0d
 		}
 		{
@@ -554,7 +554,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.kayak_materials.title}"
-			x: -8.0d
+			x: -12.0d
 			y: -2.5d
 		}
 		{
@@ -576,7 +576,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.create_kayak.title}"
-			x: -8.0d
+			x: -12.0d
 			y: -4.0d
 		}
 		{
@@ -590,7 +590,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.entity_boats.title}"
-			x: -4.0d
+			x: -8.0d
 			y: -6.0d
 		}
 		{
@@ -650,7 +650,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.firmaciv_info.title}"
-			x: -6.0d
+			x: -10.0d
 			y: -4.0d
 		}
 		{
@@ -719,7 +719,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.sloop_under_construction_materials.title}"
-			x: -10.0d
+			x: -14.0d
 			y: -6.0d
 		}
 		{
@@ -799,7 +799,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.sloop_materials.title}"
-			x: -10.0d
+			x: -14.0d
 			y: -8.0d
 		}
 		{
@@ -829,7 +829,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.warfare.title}"
-			x: -6.0d
+			x: -10.0d
 			y: -5.0d
 		}
 		{
@@ -1282,7 +1282,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.refrigerator.title}"
-			x: 6.0d
+			x: 8.0d
 			y: -17.0d
 		}
 		{
@@ -1297,7 +1297,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beekeeping.title}"
-			x: -2.0d
+			x: 0.0d
 			y: -7.5d
 		}
 		{
@@ -1357,7 +1357,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.not_the_bees.title}"
-			x: -2.0d
+			x: 0.0d
 			y: -11.5d
 		}
 		{
@@ -1385,7 +1385,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.beehive.title}"
-			x: -2.0d
+			x: 0.0d
 			y: -9.5d
 		}
 		{
@@ -1414,7 +1414,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.beeswax.title}"
-			x: -0.5d
+			x: 1.5d
 			y: -13.5d
 		}
 		{
@@ -1429,7 +1429,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.honey.title}"
-			x: -3.5d
+			x: 0.0d
 			y: -13.5d
 		}
 		{
@@ -1464,7 +1464,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.cellar.title}"
-			x: 1.5d
+			x: 3.5d
 			y: -17.0d
 		}
 		{
@@ -1485,7 +1485,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.cellar_blocks.title}"
-			x: 1.5d
+			x: 3.5d
 			y: -20.0d
 		}
 		{
@@ -1517,7 +1517,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.oven.title}"
-			x: 0.0d
+			x: 2.0d
 			y: -7.5d
 		}
 		{
@@ -1547,7 +1547,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.oven_appliances.title}"
-			x: -1.0d
+			x: 1.0d
 			y: -8.5d
 		}
 		{
@@ -1568,7 +1568,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.oven_utils.title}"
-			x: 1.0d
+			x: 3.0d
 			y: -8.5d
 		}
 		{
@@ -1589,7 +1589,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.oven_finish.title}"
-			x: 0.0d
+			x: 2.0d
 			y: -8.5d
 		}
 		{
@@ -1617,7 +1617,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.jam.title}"
-			x: -1.0d
+			x: 1.0d
 			y: -9.5d
 		}
 		{
@@ -1631,7 +1631,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.preservation.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -7.5d
 		}
 		{
@@ -1651,7 +1651,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.passive_preservation.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -15.5d
 		}
 		{
@@ -1672,7 +1672,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_milk.title}"
-			x: 2.0d
+			x: 4.0d
 			y: -8.5d
 		}
 		{
@@ -1693,7 +1693,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_meat.title}"
-			x: 3.0d
+			x: 5.0d
 			y: -8.5d
 		}
 		{
@@ -1714,7 +1714,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_fruit.title}"
-			x: 5.0d
+			x: 7.0d
 			y: -8.5d
 		}
 		{
@@ -1735,7 +1735,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_grain.title}"
-			x: 6.0d
+			x: 8.0d
 			y: -8.5d
 		}
 		{
@@ -1756,7 +1756,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_veggie.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -8.5d
 		}
 		{
@@ -1791,7 +1791,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.process_grain.title}"
-			x: 6.0d
+			x: 8.0d
 			y: -12.5d
 		}
 		{
@@ -1854,7 +1854,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.brine_something.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -9.5d
 		}
 		{
@@ -1918,7 +1918,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.pickle_something.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -12.5d
 		}
 		{
@@ -1963,7 +1963,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.dry_fruit.title}"
-			x: 5.0d
+			x: 7.0d
 			y: -11.0d
 		}
 		{
@@ -2005,7 +2005,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.salt_meat.title}"
-			x: 3.0d
+			x: 5.0d
 			y: -10.5d
 		}
 		{
@@ -2054,7 +2054,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.smoke_meat.title}"
-			x: 3.0d
+			x: 5.0d
 			y: -11.5d
 		}
 		{
@@ -2094,7 +2094,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.cook_meat.title}"
-			x: 3.0d
+			x: 5.0d
 			y: -13.5d
 		}
 		{
@@ -2115,7 +2115,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_cheese.title}"
-			x: 2.0d
+			x: 4.0d
 			y: -11.0d
 		}
 		{
@@ -2133,7 +2133,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.cheese_aging.title}"
-			x: 1.0d
+			x: 3.0d
 			y: -11.0d
 		}
 		{
@@ -2174,7 +2174,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.smoke_cheese.title}"
-			x: 2.0d
+			x: 4.0d
 			y: -13.5d
 		}
 		{
@@ -2188,7 +2188,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.greenhouse.title}"
-			x: -2.0d
+			x: 2.0d
 			y: -6.0d
 		}
 		{
@@ -2677,8 +2677,8 @@
 		}
 		{
 			dependencies: [
-				"3B3A0FEEB59F597C"
 				"174DA15847665CF8"
+				"60497014785301EB"
 			]
 			description: ["{quests.tfg_tips.glider.desc}"]
 			id: "7EE13BE102F323F3"
@@ -2696,7 +2696,7 @@
 			}]
 			title: "{quests.tfg_tips.glider.title}"
 			x: -4.0d
-			y: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7EE13BE102F323F3"]
@@ -2719,7 +2719,7 @@
 			}]
 			title: "{quests.tfg_tips.reinforced_glider.title}"
 			x: -4.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -3299,8 +3299,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.candles.title}"
-			x: -2.0d
-			y: -14.5d
+			x: 1.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3500,7 +3500,7 @@
 			]
 			title: "{quests.tfg_tips.chalk.title}"
 			x: -4.0d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -3665,7 +3665,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneathxfirmaciv.title}"
-			x: -6.0d
+			x: -10.0d
 			y: -7.0d
 		}
 		{
@@ -3686,8 +3686,319 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.vessel_preservation.title}"
-			x: 4.0d
+			x: 6.0d
 			y: -16.5d
+		}
+		{
+			dependencies: ["173F6FA60A5B280B"]
+			description: ["{quests.tfg_tips.transportation.desc}"]
+			id: "60497014785301EB"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.transportation.subtitle}"
+			tasks: [{
+				id: "77CB0D07BAE01103"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.transportation.title}"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3B3A0FEEB59F597C"]
+			id: "4425519187BF28FE"
+			tasks: [{
+				id: "6010870D09DAD473"
+				item: {
+					Count: 1
+					id: "diggerhelmet:digger_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60497014785301EB"]
+			description: ["{quests.tfg_tips.immersive_aircraft.desc}"]
+			icon: "immersive_aircraft:quadrocopter"
+			id: "62FD3E7A836D2E0A"
+			subtitle: "{quests.tfg_tips.immersive_aircraft.subtitle}"
+			tasks: [{
+				id: "5A1E6B47737C6071"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.immersive_aircraft.title}"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["62FD3E7A836D2E0A"]
+			id: "5D7E9840A5A7AD7E"
+			tasks: [{
+				id: "0746EC334B8F1C74"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5D7E9840A5A7AD7E"]
+			id: "79767F5D33BCA30E"
+			tasks: [{
+				id: "6A5B1A379C09AF7C"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["62FD3E7A836D2E0A"]
+			id: "598BD589D3C3057A"
+			tasks: [{
+				id: "1CD23602092BE7B4"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["598BD589D3C3057A"]
+			id: "6E5195824D12ED1F"
+			tasks: [{
+				id: "68F9CFD1ED872C19"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6E5195824D12ED1F"]
+			id: "0D89D46C99B96861"
+			tasks: [{
+				id: "53693DEF78884347"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["62FD3E7A836D2E0A"]
+			id: "037E11CB318CADAC"
+			tasks: [{
+				id: "1AAC1601977A030D"
+				item: "man_of_many_planes:economy_plane"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["037E11CB318CADAC"]
+			id: "6E4754288899732B"
+			tasks: [{
+				id: "46F8A8E1721833E5"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6E4754288899732B"]
+			id: "7B5AD6AD5E99449C"
+			tasks: [{
+				id: "3E274FFB71007307"
+				item: "man_of_many_planes:scarlet_biplane"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4A8910950F638BB5"]
+			description: ["{quests.tfg_tips.how_to_go_beneath.desc}"]
+			id: "5E2E37673AD87A4B"
+			size: 1.0d
+			subtitle: "{quests.tfg_tips.how_to_go_beneath.subtitle}"
+			tasks: [{
+				icon: "minecraft:bedrock"
+				id: "1FAD65A53A1C803B"
+				observe_type: 0
+				timer: 0L
+				title: "{quests.tfg_tips.how_to_go_beneath.task.1}"
+				to_observe: "minecraft:bedrock"
+				type: "observation"
+			}]
+			title: "{quests.tfg_tips.how_to_go_beneath.title}"
+			x: 12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4AA0EBFBA5D8788C"]
+			description: ["{quests.tfg_tips.beneath_prep.desc}"]
+			id: "4A8910950F638BB5"
+			subtitle: "{quests.tfg_tips.beneath_prep.subtitle}"
+			tasks: [{
+				id: "2E029DE0398319F2"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.beneath_prep.title}"
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4A8910950F638BB5"]
+			description: ["{quests.tfg_tips.beneath_temp_management.desc}"]
+			id: "39C21134FD02F94B"
+			subtitle: "{quests.tfg_tips.beneath_temp_management.subtitle}"
+			tasks: [
+				{
+					id: "3F86ED6ABA16279B"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "75FC7712CD89CAD7"
+					item: "minecraft:ice"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.beneath_temp_management.title}"
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["098739E441CF565D"]
+			description: ["{quests.tfg_tips.blue_steel_diving.desc}"]
+			id: "7470780421C6E417"
+			subtitle: "{quests.tfg_tips.blue_steel_diving.subtitle}"
+			tasks: [
+				{
+					id: "2A0B476C50A50FF2"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B10A6E3843BCF49"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4819686135528067"
+					item: {
+						Count: 1
+						id: "create:netherite_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F93E61714F1EC96"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.blue_steel_diving.title}"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4A8910950F638BB5"]
+			description: ["{quests.tfg_tips.beneath_clothes.desc}"]
+			icon: {
+				Count: 1
+				id: "tfcambiental:silk_shirt"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "098739E441CF565D"
+			subtitle: "{quests.tfg_tips.beneath_clothes.subtitle}"
+			tasks: [{
+				id: "70EF47E8FD504806"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.beneath_clothes.title}"
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4A8910950F638BB5"]
+			description: ["{quests.tfg_tips.juicer.desc}"]
+			id: "3D845616A2F7083F"
+			subtitle: "{quests.tfg_tips.juicer.subtitle}"
+			tasks: [{
+				id: "37D2748F141A8E25"
+				item: "beneath:juicer"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.juicer.title}"
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["70DA01DFDAE54224"]
+			description: ["{quests.tfg_tips.fuck_go_back.desc}"]
+			id: "4FD6D93811DADCE4"
+			subtitle: "{quests.tfg_tips.fuck_go_back.subtitle}"
+			tasks: [{
+				id: "6D482B9189A97E0F"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.fuck_go_back.title}"
+			x: 13.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5E2E37673AD87A4B"]
+			description: ["{quests.tfg_tips.reach_the_beneath.desc}"]
+			id: "70DA01DFDAE54224"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.reach_the_beneath.subtitle}"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "minecraft:netherrack"
+				id: "253320A57FAE6D0A"
+				title: "{quests.tfg_tips.reach_the_beneath.task}"
+				type: "dimension"
+			}]
+			title: "{quests.tfg_tips.reach_the_beneath.title}"
+			x: 13.5d
+			y: -7.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

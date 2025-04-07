@@ -5,6 +5,32 @@
 	group: "3C4612A920658A7E"
 	icon: "tfc:rock/loose/granite"
 	id: "66469D508CDD9C7E"
+	images: [
+		{
+			height: 1.0d
+			image: "tfc:item/grass_block_top"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/blue_ice"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 10.5d
+		}
+	]
 	order_index: 0
 	quest_links: [
 		{
@@ -258,7 +284,7 @@
 			}]
 			title: "{quests.stone_age.workbench.title}"
 			x: 11.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -303,7 +329,7 @@
 			]
 			title: "{quests.stone_age.first_saw.title}"
 			x: 11.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["76B145EFF9B5DB67"]
@@ -340,7 +366,7 @@
 			]
 			title: "{quests.stone_age.craft_lumber.title}"
 			x: 11.0d
-			y: 9.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -684,7 +710,7 @@
 			]
 			title: "{quests.stone_age.native_ores.title}"
 			x: 14.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -749,7 +775,7 @@
 			}]
 			title: "{quests.metal_age.copper_anvil.title}"
 			x: 26.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -792,7 +818,7 @@
 			]
 			title: "{quests.stone_age.weld_copper_ingots.title}"
 			x: 21.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5E186CD5E83BFDF0"]
@@ -831,7 +857,7 @@
 			]
 			title: "{quests.stone_age.flux.title}"
 			x: 22.5d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -859,7 +885,7 @@
 			}]
 			title: "{quests.stone_age.copper_for_anvil.title}"
 			x: 17.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
@@ -891,7 +917,7 @@
 			]
 			title: "{quests.stone_age.rock_anvil.title}"
 			x: 21.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1369,7 +1395,7 @@
 			}]
 			title: "{quests.stone_age.create_forge.title}"
 			x: 19.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["451AAAE0C17DB730"]
@@ -1395,7 +1421,7 @@
 			}]
 			title: "{quests.stone_age.get_raw_rock.title}"
 			x: 21.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["193F214E9F154980"]
@@ -1422,7 +1448,7 @@
 			]
 			title: "{quests.stone_age.quern.title}"
 			x: 22.5d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
@@ -1487,7 +1513,7 @@
 			]
 			title: "{quests.stone_age.mining_prep.title}"
 			x: 17.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["451AAAE0C17DB730"]
@@ -1530,7 +1556,7 @@
 			]
 			title: "{quests.stone_age.hazards.title}"
 			x: 17.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -1752,7 +1778,7 @@
 			]
 			title: "{quests.stone_age.inventory.title}"
 			x: 11.0d
-			y: 14.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["4C444814F1C7B600"]
@@ -1773,7 +1799,7 @@
 			}]
 			title: "{quests.stone_age.barrels.title}"
 			x: 6.5d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["3E8833E7CE591E6F"]
@@ -1794,7 +1820,7 @@
 			}]
 			title: "{quests.stone_age.leather.title}"
 			x: 1.5d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1D40CAE675C4BB91"]
@@ -1838,7 +1864,7 @@
 			dependencies: ["38839D3E049215CE"]
 			description: ["{quests.stone_age.insulation.desc}"]
 			id: "4521BB8892B386AF"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "{quests.stone_age.insulation.subtitle}"
 			tasks: [{
 				id: "139FA72AB6F06E57"
@@ -1846,8 +1872,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.insulation.title}"
-			x: -1.5d
-			y: 6.0d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["560B17BFBE8D477D"]
@@ -1901,47 +1927,8 @@
 				}
 			]
 			title: "{quests.stone_age.leather_armor.title}"
-			x: -1.5d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"4521BB8892B386AF"
-				"04E900CFE39D6A6C"
-			]
-			dependency_requirement: "all_started"
-			description: ["{quests.stone_age.clothes.desc}"]
-			id: "590F3CBAB5F79DEE"
-			subtitle: "{quests.stone_age.clothes.subtitle}"
-			tasks: [
-				{
-					id: "780E763F13FE6919"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfcambiental:wool_hat)item(tfcambiental:wool_sweater)item(tfcambiental:wool_pants)item(tfcambiental:wool_boots)item(tfcambiental:insulated_leather_hat)item(tfcambiental:insulated_leather_tunic)item(tfcambiental:insulated_leather_pants)item(tfcambiental:insulated_leather_boots))"
-						}
-					}
-					title: "{quests.stone_age.clothes.tasks.1}"
-					type: "item"
-				}
-				{
-					id: "5E4C57A75A2E69F5"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(tfcambiental:silk_cowl)item(tfcambiental:silk_shirt)item(tfcambiental:silk_pants)item(tfcambiental:silk_shoes)item(tfcambiental:burlap_cowl)item(tfcambiental:burlap_shirt)item(tfcambiental:burlap_pants)item(tfcambiental:burlap_shoes))"
-						}
-					}
-					title: "{quests.stone_age.clothes.tasks.2}"
-					type: "item"
-				}
-			]
-			title: "{quests.stone_age.clothes.title}"
-			x: -1.5d
-			y: 9.0d
+			x: -4.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["25FDB2A4C3C58566"]
@@ -2018,6 +2005,229 @@
 			title: "{quests.stone_age.water_bucket.title}"
 			x: 4.5d
 			y: 9.0d
+		}
+		{
+			dependencies: [
+				"04E900CFE39D6A6C"
+				"4521BB8892B386AF"
+			]
+			description: ["{quests.stone_age.insulated_leather_clothes.desc}"]
+			id: "6D6270D9B2F1EC01"
+			subtitle: "{quests.stone_age.insulated_leather_clothes.subtitle}"
+			tasks: [
+				{
+					id: "51F42F6E5C749DDE"
+					item: {
+						Count: 1
+						id: "tfcambiental:insulated_leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0CD117782C921573"
+					item: {
+						Count: 1
+						id: "tfcambiental:insulated_leather_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49F3774322D501FA"
+					item: {
+						Count: 1
+						id: "tfcambiental:insulated_leather_tunic"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C5A5003287BFE5F"
+					item: {
+						Count: 1
+						id: "tfcambiental:insulated_leather_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.stone_age.insulated_leather_clothes.title}"
+			x: -4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4521BB8892B386AF"]
+			description: ["{quests.stone_age.wool_clothes.desc}"]
+			id: "1E9033DF269C80DC"
+			subtitle: "{quests.stone_age.wool_clothes.subtitle}"
+			tasks: [
+				{
+					id: "3D3B801BD59C5C58"
+					item: {
+						Count: 1
+						id: "tfcambiental:wool_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5DCC89E1CCE3B1AA"
+					item: {
+						Count: 1
+						id: "tfcambiental:wool_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6179B367FF1C4FBC"
+					item: {
+						Count: 1
+						id: "tfcambiental:wool_sweater"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "398DD59822B91BF7"
+					item: {
+						Count: 1
+						id: "tfcambiental:wool_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.stone_age.wool_clothes.title}"
+			x: -5.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4521BB8892B386AF"]
+			description: ["{quests.stone_age.burlap_clothes.desc}"]
+			id: "1602438D9FCADA5E"
+			subtitle: "{quests.stone_age.burlap_clothes.subtitle}"
+			tasks: [
+				{
+					id: "578606AB58CCB2D8"
+					item: {
+						Count: 1
+						id: "tfcambiental:burlap_shoes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "652C26BED5BE0ECE"
+					item: {
+						Count: 1
+						id: "tfcambiental:burlap_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5215F2EAAE94C65D"
+					item: {
+						Count: 1
+						id: "tfcambiental:burlap_shirt"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "066C17ADD5E122F9"
+					item: {
+						Count: 1
+						id: "tfcambiental:burlap_cowl"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.stone_age.burlap_clothes.title}"
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4521BB8892B386AF"]
+			description: ["{quests.stone_age.silk_clothes.desc}"]
+			id: "37108D618CF60730"
+			subtitle: "{quests.stone_age.silk_clothes.subtitle}"
+			tasks: [
+				{
+					id: "14755E375DF9CFE8"
+					item: {
+						Count: 1
+						id: "tfcambiental:silk_shoes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EE94A168421AF71"
+					item: {
+						Count: 1
+						id: "tfcambiental:silk_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A66FF7B455E781F"
+					item: {
+						Count: 1
+						id: "tfcambiental:silk_shirt"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4738C7E29F42C181"
+					item: {
+						Count: 1
+						id: "tfcambiental:silk_cowl"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.stone_age.silk_clothes.title}"
+			x: -1.0d
+			y: 10.5d
 		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]
