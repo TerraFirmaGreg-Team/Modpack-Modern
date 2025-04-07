@@ -258,10 +258,14 @@ function registerTFCMaterialsRecipes(event) {
 							.id(`tfc:heating/metal/${material.getName()}_fishing_rod`)
 
 						//#endregion
+
+
 					}
 
-					// Plated Blocks - applies for everything with a double ingot
-					generatePlatedBlockRecipe(event, material);
+					// Plated Blocks - applies for everything with a double ingot (except tin/red alloy)
+					if (material != GTMaterials.TinAlloy && material != GTMaterials.RedAlloy) {
+						generatePlatedBlockRecipe(event, material);
+					}
 				}
 
 				// Tools (From Double Ingots)
@@ -1246,11 +1250,6 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.heating(richRawOre, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(48, tfcProperty.getPercentOfMaterial())))
 					.id(`tfg:heating/rich_raw/${material.getName()}`)
-
-				let ingotItems = ChemicalHelper.get(TagPrefix.ingot, outputMaterial, 2)
-				if (!ingotItems.isEmpty()) {
-					event.smelting(ingotItems, richRawOre)
-				}
 			}
 
 			// Декрафт нормального куска руды
@@ -1260,11 +1259,6 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.heating(normalRawOre, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(36, tfcProperty.getPercentOfMaterial())))
 					.id(`tfg:heating/raw/${material.getName()}`)
-
-				let ingotItem = ChemicalHelper.get(TagPrefix.ingot, outputMaterial, 1)
-				if (!ingotItem.isEmpty()) {
-					event.smelting(ingotItem, normalRawOre)
-				}
 			}
 
 			// Декрафт бедного куска руды
@@ -1273,11 +1267,6 @@ function registerTFCMaterialsRecipes(event) {
 				event.recipes.tfc.heating(poorRawOre, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), global.calcAmountOfMetal(24, tfcProperty.getPercentOfMaterial())))
 					.id(`tfg:heating/poor_raw/${material.getName()}`)
-
-				let nuggetItem = ChemicalHelper.get(TagPrefix.nugget, outputMaterial, 5)
-				if (!nuggetItem.isEmpty()) {
-					event.smelting(nuggetItem, poorRawOre)
-				}
 			}
 		}
 
