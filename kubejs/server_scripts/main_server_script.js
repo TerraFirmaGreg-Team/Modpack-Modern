@@ -150,6 +150,7 @@ ServerEvents.recipes(event => {
     registerAE2NetworkAnalyzerRecipes(event)
     registerAE2WTLibRecipes(event)
     registerBeneathRecipes(event)
+    registerBuildingGadgetsRecipes(event)
     registerChalkRecipes(event);
     registerChiselAndBitsRecipes(event)
     registerComfortsRecipes(event);

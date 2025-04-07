@@ -16,4 +16,8 @@ function registerMinecraftItemModifications(event) {
 			food.saturation(1)
 		}
 	})
+
+	event.modify('minecraft:elytra', item => {
+		item.maxDamage = 2046
+	})
 }
