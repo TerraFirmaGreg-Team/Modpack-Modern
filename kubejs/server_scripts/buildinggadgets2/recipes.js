@@ -19,14 +19,14 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemInputs('1x buildinggadgets2:gadget_building')
 		.itemOutputs('10x gtceu:titanium_ingot', '1x gtceu:lapotron_gem')
 		.duration(224)
-		.EUt(2000)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_building')
 		.itemInputs('1x buildinggadgets2:gadget_building')
 		.itemOutputs('10x gtceu:titanium_dust', '15x gtceu:lapotron_dust')
-		.duration(160)
-		.EUt(2000)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	// Exchanging Gadget
@@ -41,14 +41,14 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemInputs('1x buildinggadgets2:gadget_exchanging')
 		.itemOutputs('10x gtceu:titanium_ingot', '1x gtceu:lapotron_gem')
 		.duration(224)
-		.EUt(2000)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_exchanging')
 		.itemInputs('1x buildinggadgets2:gadget_exchanging')
 		.itemOutputs('10x gtceu:titanium_dust', '15x gtceu:lapotron_dust')
-		.duration(160)
-		.EUt(2000)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	// Copy Paste Gadget
@@ -63,14 +63,14 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemInputs('1x buildinggadgets2:gadget_copy_paste')
 		.itemOutputs('10x gtceu:tungsten_steel_ingot', '1x gtceu:lapotron_gem')
 		.duration(224)
-		.EUt(8100)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_copy_paste')
 		.itemInputs('1x buildinggadgets2:gadget_copy_paste')
 		.itemOutputs('10x gtceu:tungsten_steel_dust', '15x gtceu:lapotron_dust')
-		.duration(160)
-		.EUt(8100)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	// Dustruction Gadget
@@ -85,14 +85,14 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemInputs('1x buildinggadgets2:gadget_destruction')
 		.itemOutputs('10x gtceu:titanium_ingot', '1x gtceu:energy_crystal')
 		.duration(224)
-		.EUt(2000)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_destruction')
 		.itemInputs('1x buildinggadgets2:gadget_destruction')
 		.itemOutputs('10x gtceu:titanium_dust', '9x gtceu:energium_dust')
-		.duration(160)
-		.EUt(2000)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	// Cut Paste Gadget
@@ -107,14 +107,14 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemInputs('1x buildinggadgets2:gadget_cut_paste')
 		.itemOutputs('10x gtceu:tungsten_steel_ingot', '1x gtceu:energy_crystal')
 		.duration(224)
-		.EUt(8100)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/gadget_cut_paste')
 		.itemInputs('1x buildinggadgets2:gadget_cut_paste')
 		.itemOutputs('10x gtceu:tungsten_steel_dust', '9x gtceu:energium_dust')
-		.duration(160)
-		.EUt(8100)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	// Template Manager
@@ -129,13 +129,13 @@ const registerBuildingGadgetsRecipes = (event) => {
 		.itemInputs('1x buildinggadgets2:template_manager')
 		.itemOutputs('10x gtceu:tungsten_steel_ingot')
 		.duration(224)
-		.EUt(8100)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 
 	event.recipes.gtceu.macerator('buildinggadgets2:macerator/recycling/template_manager')
 		.itemInputs('1x buildinggadgets2:template_manager')
 		.itemOutputs('10x gtceu:tungsten_steel_dust')
-		.duration(160)
-		.EUt(8100)
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 }
