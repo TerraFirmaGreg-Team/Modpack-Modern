@@ -5417,7 +5417,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Firmalife-1.20.1-2.1.16.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.17.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5426,22 +5426,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/AL5ILy6Z/Firmalife-1.20.1-2.1.16.jar",
-                    "id": "AL5ILy6Z",
+                    "url": "https://cdn.modrinth.com/data/5bKeBHw2/versions/gJiot3h6/Firmalife-1.20.1-2.1.17.jar",
+                    "id": "gJiot3h6",
                     "parent_id": "5bKeBHw2",
                     "hashes": {
-                        "sha512": "8ff91547449413b050f0c0bcffa39695d6ef1d7235845c1ac76cf647efe4ffc6f7c8611252db16ee9a1ec870e38d83779fb084345773832c521b7c61b674f994",
-                        "sha1": "4317448e56140c059dbc7ed07dd0cd1d4219e443"
+                        "sha512": "1993b13c8119d635b208c8b9a938860439f161829b678773a663c3c2017bdfbe32ab9bc196833258251419d456a1bf008e376ea7fc7ea5d417784cbed6040ea0",
+                        "sha1": "9f25104803df71aac481885d20282d46dd624a01"
                     },
                     "required_dependencies": [
                         "JaCEZUhg"
                     ],
-                    "size": 4529337,
-                    "date_published": "2025-02-28T23:05:43.203756Z"
+                    "size": 4532304,
+                    "date_published": "2025-04-03T02:22:20.561569Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.16.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.17.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5450,18 +5450,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6249/92/Firmalife-1.20.1-2.1.16.jar",
-                    "id": "6249092",
+                    "url": "https://edge.forgecdn.net/files/6379/742/Firmalife-1.20.1-2.1.17.jar",
+                    "id": "6379742",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "4317448e56140c059dbc7ed07dd0cd1d4219e443",
-                        "md5": "98c7f817b8018efad43ad2f3ca604537"
+                        "sha1": "9f25104803df71aac481885d20282d46dd624a01",
+                        "md5": "a954970500b6b78adf392e696d1e4c47"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 4529337,
-                    "date_published": "2025-02-28T23:05:39.297Z"
+                    "size": 4532304,
+                    "date_published": "2025-04-03T02:22:17.440Z"
                 }
             ]
         },
