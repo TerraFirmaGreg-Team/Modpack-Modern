@@ -15,7 +15,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		B: 'greate:steel_shaft',
 		C: '#forge:gears/black_steel',
 		D: '#gtceu:circuits/ulv',
-		E: 'gtceu:ulv_machine_casing'
+		E: 'gtceu:ulv_machine_hull'
 	}).id('tfg:create_additions/shaped/rolling_mill')
 
 	// Цифровой адаптер

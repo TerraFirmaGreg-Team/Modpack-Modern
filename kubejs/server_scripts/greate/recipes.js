@@ -326,7 +326,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#gtceu:circuits/ulv',
 		B: 'greate:steel_shaft',
-		C: 'gtceu:ulv_machine_casing',
+		C: 'gtceu:ulv_machine_hull',
 		D: '#forge:plates/black_steel',
 		E: 'gtceu:steel_whisk',
 		F: '#forge:tools/wrenches',

@@ -11,7 +11,7 @@ function registerVintageImprovementsRecipes(event) {
 		'CAF',
 		'EBE'
 	], {
-		A: 'gtceu:ulv_machine_casing',
+		A: 'gtceu:ulv_machine_hull',
 		B: 'greate:steel_cogwheel',
 		C: '#forge:rods/steel',
 		D: '#forge:double_ingots/black_steel',
@@ -24,7 +24,7 @@ function registerVintageImprovementsRecipes(event) {
 		'DAD',
 		'FCF'
 	], {
-		A: 'gtceu:ulv_machine_casing',
+		A: 'gtceu:ulv_machine_hull',
 		B: 'greate:steel_mechanical_pump',
 		C: 'create:mechanical_piston',
 		D: '#forge:springs/wrought_iron',
@@ -37,7 +37,7 @@ function registerVintageImprovementsRecipes(event) {
 		'DAD',
 		'BEB'
 	], {
-		A: 'gtceu:ulv_machine_casing',
+		A: 'gtceu:ulv_machine_hull',
 		B: '#forge:springs/wrought_iron',
 		C: '#forge:plates/black_steel',
 		D: 'create:electron_tube',
@@ -55,7 +55,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#minecraft:logs',
 		B: '#forge:rods/long/black_steel',
-		C: 'gtceu:ulv_machine_casing',
+		C: 'gtceu:ulv_machine_hull',
 		D: '#gtceu:circuits/ulv',
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/mechanical_crafting/centrifuge')
@@ -65,7 +65,7 @@ function registerVintageImprovementsRecipes(event) {
 		'FAF',
 		'GEC'
 	], {
-		A: 'gtceu:ulv_machine_casing',
+		A: 'gtceu:ulv_machine_hull',
 		B: 'greate:steel_shaft',
 		C: '#forge:plates/black_steel',
 		D: '#gtceu:circuits/ulv',
@@ -118,7 +118,7 @@ function registerVintageImprovementsRecipes(event) {
 		'AB CG',
 		'EEEFE'
 	], {
-		A: 'gtceu:ulv_machine_casing',
+		A: 'gtceu:ulv_machine_hull',
 		B: 'minecraft:piston',
 		C: 'minecraft:diamond',
 		E: '#forge:rods/black_steel',
