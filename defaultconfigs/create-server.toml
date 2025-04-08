@@ -21,10 +21,10 @@
 	bulkCutting = false
 	#.
 	#Allow supported potions to be brewed by a Mechanical Mixer + Basin.
-	allowBrewingInMixer = true
+	allowBrewingInMixer = false
 	#.
 	#Allow any shapeless crafting recipes to be processed by a Mechanical Mixer + Basin.
-	allowShapelessInMixer = true
+	allowShapelessInMixer = false
 	#.
 	#Allow any single-ingredient 2x2 or 3x3 crafting recipes to be processed by a Mechanical Press + Basin.
 	allowShapedSquareInPress = true
@@ -53,10 +53,10 @@
 	lightSourceCountForRefinedRadiance = 10
 	#.
 	#Allow the standard in-world Refined Radiance recipes.
-	enableRefinedRadianceRecipe = true
+	enableRefinedRadianceRecipe = false
 	#.
 	#Allow the standard in-world Shadow Steel recipe.
-	enableShadowSteelRecipe = true
+	enableShadowSteelRecipe = false
 
 #.
 #Parameters and abilities of Create's kinetic mechanisms
@@ -310,7 +310,7 @@
 	#[in Buckets]
 	#The amount of liquid a tank can hold per block.
 	#Range: > 1
-	fluidTankCapacity = 8
+	fluidTankCapacity = 16
 	#.
 	#[in Blocks]
 	#The maximum height a fluid tank can reach.
@@ -331,7 +331,7 @@
 	#[-1 to disable this behaviour]
 	#The minimum amount of fluid blocks the hose pulley needs to find before deeming it an infinite source.
 	#Range: > -1
-	hosePulleyBlockThreshold = 0
+	hosePulleyBlockThreshold = 2000
 	#.
 	#Whether hose pulleys should continue filling up above-threshold sources.
 	fillInfinite = false
@@ -439,7 +439,7 @@
 	#.
 	#The Maximum volume of Air that can be stored in a backtank = Seconds of underwater breathing
 	#Range: > 1
-	airInBacktank = 900
+	airInBacktank = 1500
 	#.
 	#The volume of Air added by each level of the backtanks Capacity Enchantment
 	#Range: > 1
@@ -475,7 +475,7 @@
 	#.
 	#Relative speed of a manually controlled Train compared to a Scheduled one.
 	#Range: 0.0 ~ 3.4028234663852886E38
-	manualTrainSpeedModifier = 0.75
+	manualTrainSpeedModifier = 1
 
 	#.
 	#Standard Trains
