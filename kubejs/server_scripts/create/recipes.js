@@ -500,8 +500,8 @@ const registerCreateRecipes = (event) => {
 		'ABA'
 	], {
 		A: '#forge:screws/wrought_iron',
-		B: '#tfc:lumber',
-		C: ''
+		B: 'gtceu:treated_wood_rod',
+		C: 'gtceu:treated_wood_frame'
 	}).id('tfg:create/shaped/sail_frame')
 
 	event.shaped('8x create:white_sail', [
@@ -1283,7 +1283,7 @@ const registerCreateRecipes = (event) => {
 		'DBE',
 		' C '
 	], {
-		A: '#minecraft:wooden_slabs',
+		A: 'gtceu:treated_wood_slab',
 		B: 'create:andesite_casing',
 		C: '#tfg:small_cogwheels',
 		D: '#forge:small_gears/brass',
