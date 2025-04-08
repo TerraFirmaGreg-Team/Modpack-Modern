@@ -405,7 +405,7 @@
 				}
 			]
 			x: -19.5d
-			y: 11.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -422,7 +422,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: 14.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -441,7 +441,7 @@
 				}
 			]
 			x: -13.0d
-			y: 13.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -457,7 +457,7 @@
 				type: "item"
 			}]
 			x: -25.0d
-			y: 14.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["033E74BC588E7EAD"]
@@ -524,7 +524,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: 16.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["52DAF93E2F3D688A"]
@@ -799,19 +799,22 @@
 				item: "vintageimprovements:lathe"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.5d
 			y: 15.0d
 		}
 		{
-			dependencies: ["2C35D4E01AEC02AA"]
+			dependencies: [
+				"033E74BC588E7EAD"
+				"5917B0D4708BF534"
+			]
 			id: "19A1D52A7F550478"
 			tasks: [{
 				id: "69668479444FF064"
 				item: "vintageimprovements:centrifuge"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 15.0d
+			x: -16.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
@@ -821,7 +824,7 @@
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -10.5d
 			y: 15.0d
 		}
 		{
@@ -843,7 +846,7 @@
 				item: "greate:steel_mechanical_saw"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -8.5d
 			y: 15.0d
 		}
 		{
@@ -854,7 +857,7 @@
 				item: "vintageimprovements:curving_press"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -11.5d
 			y: 15.0d
 		}
 		{
@@ -967,7 +970,7 @@
 			]
 			title: "Red Alloy"
 			x: -22.5d
-			y: 11.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [

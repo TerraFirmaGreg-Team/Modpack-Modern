@@ -55,8 +55,8 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#minecraft:logs',
 		B: '#forge:rods/long/black_steel',
-		C: 'gtceu:ulv_machine_hull',
-		D: '#gtceu:circuits/ulv',
+		C: 'create:andesite_casing',
+		D: 'create:electron_tube',
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/mechanical_crafting/centrifuge')
 
@@ -430,6 +430,51 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Centrifuge
 
+	// Copied from https://github.com/ThePansmith/Monifactory/blob/15c109298104e0c0b5083b266264bd6c158c6154/kubejs/server_scripts/mods/optionalCompats/create.js#L251
+	event.forEachRecipe([{ type: 'gtceu:centrifuge' }],
+		recipe => {
+			let r = JSON.parse(recipe.json)
+
+			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
+			if (!(EUt <= 8)) { return }
+
+			let inputs = [];
+			if (r.inputs.item) {
+				r.inputs.item.forEach(i => {
+					let ins = i.content.ingredient;
+
+					if (i.content.count)
+						ins.count = i.content.count;
+
+					inputs.push(ins)
+				})
+			}
+			else return;
+
+			let outputs = [];
+			if (r.outputs.item) {
+				r.outputs.item.forEach(i => {
+					let out = i.content.ingredient;
+
+					if (i.content.count)
+						out.count = i.content.count;
+					
+					if (i.chance != 0 && i.chance != 10000)
+						out.chance = i.chance / 10000;
+
+					outputs.push(out)
+				})
+			}
+			else return;
+
+			event.custom({
+				type: 'vintageimprovements:centrifugation',
+				ingredients: inputs,
+				results: outputs,
+				processingTime: r.duration * ULV_DURATION_MULTIPLIER
+			}).id(`tfg:vi/centrifuge/${recipe.getId().split(':')[1]}`)
+		}
+	)
 
 	// #endregion
 
