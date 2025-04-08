@@ -127,6 +127,7 @@ function registerGTCEUMaterialLoots(event) {
 				.or((or) => {
 					or.matchMainHand('#minecraft:pickaxes')
 					  .matchMainHand('#forge:tools/hammers')
+					  .matchMainHand('#forge:tools/mining_hammers')
 				})
 				.addWeightedLoot([4, 6],
 					[
@@ -153,7 +154,10 @@ function registerGTCEUMaterialLoots(event) {
 				// break with pickaxe
 				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(ItemFilter.ALWAYS_TRUE)
-					.matchMainHand('#minecraft:pickaxes')
+					.or((or) => {
+						or.matchMainHand('#minecraft:pickaxes')
+						  .matchMainHand('#forge:tools/mining_hammers')
+					})
 					.addWeightedLoot([
 						richRawOre.withChance(0.2),
 						normalRawOre.withChance(0.6),
