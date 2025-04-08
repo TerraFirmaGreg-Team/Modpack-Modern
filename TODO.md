@@ -30,6 +30,8 @@ Key:
 	- Check LBB efficiency of creosote
 - ✔ Immersive aircraft (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
+- Something about milk curdling having circuit number conflicts?
+- Change steam bloomery multi to use tags
 
 ## Worldgen
 - ✔ Redeix is working on some overworld structures
