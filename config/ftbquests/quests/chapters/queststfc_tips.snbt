@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "queststfc_tips"
-	group: ""
+	group: "19428C6E7A36D463"
 	icon: "minecraft:apple"
 	id: "5D74D1A68158F29E"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -1069,11 +1069,14 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.treetap.title}"
-			x: -8.0d
+			x: -11.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1DF4DBE41BB0B6FD"]
+			dependencies: [
+				"1DF4DBE41BB0B6FD"
+				"4891E995D3EC2BD1"
+			]
 			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
 			id: "6903C72A254A7B08"
 			shape: "gear"
@@ -1085,7 +1088,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_rubber_ingot.title}"
-			x: -14.0d
+			x: -17.0d
 			y: 0.0d
 		}
 		{
@@ -1103,8 +1106,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_sticky_resin.title}"
-			x: -11.0d
-			y: 0.0d
+			x: -14.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["128483FFDC8277A0"]
@@ -1112,16 +1115,19 @@
 			id: "4891E995D3EC2BD1"
 			subtitle: "{quests.tfg_tips.find_latex_tree.subtitle}"
 			tasks: [{
-				icon: "tfc:wood/log/kapok"
-				id: "11F4A00C3F94AD2A"
-				observe_type: 1
-				timer: 0L
-				title: "{quests.tasktype.lookat} #tfg:latex_logs"
-				to_observe: "#tfg:latex_logs"
-				type: "observation"
+				id: "556FB5B3318D32D2"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfg:latex_logs)"
+					}
+				}
+				title: "Any #tfg:latex_logs"
+				type: "item"
 			}]
 			title: "{quests.tfg_tips.find_latex_tree.title}"
-			x: -9.5d
+			x: -12.5d
 			y: 0.0d
 		}
 		{
@@ -1139,7 +1145,7 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_syrup_tree.title}"
-			x: -9.5d
+			x: -12.5d
 			y: 1.0d
 		}
 		{
@@ -1161,7 +1167,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_tree_sugar.title}"
-			x: -11.0d
+			x: -14.0d
 			y: 1.0d
 		}
 		{
@@ -1288,7 +1294,7 @@
 		{
 			dependencies: ["2EFB241490502DB3"]
 			description: ["{quests.tfg_tips.beekeeping.desc}"]
-			icon: "minecraft:honeycomb_block"
+			icon: "firmalife:beeswax"
 			id: "1071B804483BB882"
 			subtitle: "{quests.tfg_tips.beekeeping.subtitle}"
 			tasks: [{
@@ -2194,7 +2200,16 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.glassblowing.desc}"]
-			icon: "tfc:white_kaolin_clay"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/block/brass"
+			}
 			id: "22E604DB7E7E87FB"
 			subtitle: "{quests.tfg_tips.glassblowing.subtitle}"
 			tasks: [
@@ -2211,16 +2226,25 @@
 					type: "item"
 				}
 				{
-					count: 9L
-					id: "7FA4E6B37E8C5F89"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/block/brass"
+					}
+					id: "6E7AA28CDBC41C74"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "or(item(tfc:white_kaolin_clay)item(tfc:pink_kaolin_clay)item(tfc:red_kaolin_clay))"
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_basin_blocks)"
 						}
 					}
-					title: "{quests.tfg_tips.glassblowing.task.1}"
+					title: "Any #tfc:glass_basin_blocks"
 					type: "item"
 				}
 			]
@@ -3636,7 +3660,7 @@
 				type: "observation"
 			}]
 			title: "{quests.tfg_tips.find_rosin_tree.title}"
-			x: -9.5d
+			x: -12.5d
 			y: -1.0d
 		}
 		{
@@ -3650,8 +3674,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.create_conifer_rosin.title}"
-			x: -11.0d
-			y: -1.0d
+			x: -14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["59F36AD7A3E81B45"]

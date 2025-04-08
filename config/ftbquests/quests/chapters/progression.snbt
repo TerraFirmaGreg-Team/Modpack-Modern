@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "progression"
-	group: ""
+	group: "19428C6E7A36D463"
 	icon: {
 		Count: 1
 		id: "gtceu:lapotronic_energy_orb"
@@ -12,16 +12,8 @@
 		}
 	}
 	id: "28EBC0FF82EFD94B"
-	order_index: 4
+	order_index: 3
 	quest_links: [
-		{
-			id: "2BB2FC2D9D2F2E57"
-			linked_quest: "4B979482EF026BFF"
-			shape: "rsquare"
-			size: 0.75d
-			x: 0.0d
-			y: 0.0d
-		}
 		{
 			id: "77A0335E38D755CA"
 			linked_quest: "0DBC148D92A9F69F"
@@ -85,14 +77,6 @@
 			size: 0.8d
 			x: 2.0d
 			y: 3.0d
-		}
-		{
-			id: "5572AB3517FCEE5F"
-			linked_quest: "3CF550B81716B8B9"
-			shape: "rsquare"
-			size: 0.8d
-			x: 0.0d
-			y: -1.0d
 		}
 		{
 			id: "2B8FBCD290196265"
@@ -329,11 +313,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"3CF550B81716B8B9"
-				"0DBC148D92A9F69F"
-				"4B979482EF026BFF"
-			]
+			dependencies: ["0DBC148D92A9F69F"]
 			description: [
 				"Early game Circuits are hand craftable."
 				""
@@ -483,10 +463,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"3CF550B81716B8B9"
-				"15EC934CE8F4DC86"
-			]
+			dependencies: ["15EC934CE8F4DC86"]
 			description: ["On this line you can see the Steam, or &8&8ULV&r, equivalents."]
 			hide_dependency_lines: true
 			icon: "gtceu:ulv_machine_hull"
@@ -499,7 +476,6 @@
 		{
 			dependencies: [
 				"5C17BF90DA2AAEEE"
-				"4B979482EF026BFF"
 				"5E76D4C24026157D"
 			]
 			description: [

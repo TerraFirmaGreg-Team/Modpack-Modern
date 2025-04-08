@@ -11,7 +11,6 @@ Key:
 	- Move the Hang glider quests to General Transportation, replace their position with the mining helmet.
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
-	- Add tfc-textile to clothing section - primitive insulation is good for really early, and predator animal furs are worth a mention
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 
 
@@ -31,7 +30,6 @@ Key:
 - ✔ Immersive aircraft (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
-- Change steam bloomery multi to use tags
 
 ## Worldgen
 - ✔ Redeix is working on some overworld structures

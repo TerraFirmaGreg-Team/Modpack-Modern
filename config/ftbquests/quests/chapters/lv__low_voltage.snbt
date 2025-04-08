@@ -149,7 +149,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["4B979482EF026BFF"]
 			description: ["quests.low_voltage.lv_battery_preparation.desc"]
 			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
@@ -316,7 +315,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4B979482EF026BFF"]
 			description: [
 				"quests.low_voltage.lbb.desc.1"
 				"{@pagebreak}"
@@ -953,7 +951,6 @@
 			dependencies: [
 				"3647B1B964A15E4E"
 				"7BE7DE4C0109D788"
-				"4B979482EF026BFF"
 			]
 			description: ["quests.low_voltage.1_mv_circuit.desc"]
 			id: "0DBC148D92A9F69F"
@@ -1172,7 +1169,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["4B979482EF026BFF"]
 			description: [
 				"quests.low_voltage.lv_machine_hull.desc.1"
 				"{@pagebreak}"

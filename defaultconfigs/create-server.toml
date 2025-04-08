@@ -439,7 +439,7 @@
 	#.
 	#The Maximum volume of Air that can be stored in a backtank = Seconds of underwater breathing
 	#Range: > 1
-	airInBacktank = 1500
+	airInBacktank = 1200
 	#.
 	#The volume of Air added by each level of the backtanks Capacity Enchantment
 	#Range: > 1

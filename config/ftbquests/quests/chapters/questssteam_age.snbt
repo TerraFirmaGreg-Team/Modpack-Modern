@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "questssteam_age"
 	group: "3C4612A920658A7E"
-	icon: "gtceu:steam_bucket"
+	icon: "gtceu:steel_gear"
 	id: "784A885090386609"
 	order_index: 2
 	quest_links: [
@@ -1095,6 +1095,36 @@
 			title: "Potin Seller..."
 			x: -5.5d
 			y: 13.0d
+		}
+		{
+			dependencies: ["26F07C926959FACF"]
+			id: "2F81902C6B1D4902"
+			tasks: [
+				{
+					id: "272B2620E00219B5"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "12C909F6EB4BB615"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "Engineer's tools"
+			x: -24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AA07588374B59AB"]
+			id: "02854A3E8A5D5043"
+			tasks: [{
+				id: "7D63DDE72E9AC188"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 14.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

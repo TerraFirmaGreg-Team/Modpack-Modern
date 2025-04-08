@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "queststfg"
-	group: ""
+	group: "19428C6E7A36D463"
 	icon: "tfg:terra_firma_greg"
 	id: "5DD2C08324B24805"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -36,10 +36,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"76EF4D00586A8B74"
-				"427814F6E9386772"
-			]
+			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.create_team.desc}"]
 			icon: "minecraft:cake"
 			id: "6D43C29AC049341D"
@@ -54,10 +51,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"76EF4D00586A8B74"
-				"427814F6E9386772"
-			]
+			dependencies: ["427814F6E9386772"]
 			description: ["{quests.tfg.capture_territory.desc}"]
 			icon: "createaddition:chocolate_cake"
 			id: "0B42D4AE2AC67F93"
