@@ -16,7 +16,6 @@ Key:
 
 ## Mods & Recipes
 - Recipes for advanced peripherals and computercraft
-	- Most of computercraft seems to have vanished for some reason?
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 		- ⏳ Create Horse Power still needs configs
@@ -27,8 +26,8 @@ Key:
 		- ✔ Greate
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Adjust costs of additions' alternator/motor to match greate's SU
-	- Check LBB efficiency of creosote, think about removing lava
-- ⏳ Change aircraft recipes to need mech crafter (being worked on by nebby)
+	- Check LBB efficiency of creosote
+- ✔ Immersive aircraft (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 
 ## Worldgen
