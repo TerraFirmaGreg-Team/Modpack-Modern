@@ -370,9 +370,34 @@
     "quests.tfg_tips.immersive_aircraft.subtitle": "Fly across the skies, with style.",
     "quests.tfg_tips.immersive_aircraft.desc": "Immersive Aircraft is a mod all about Aircrafts such as Biplanes and traversing large amounts of blocks via the Sky.",
 
-    "quests.tfg_tips.aircraft_upgrade.title": "Aircraft Upgrades",
-    "quests.tfg_tips.aircraft_upgrade.subtitle": "Pimp up my ride",
-    "quests.tfg_tips.aircraft_upgrades.desc": "Immersive Aircraft comes with Aircraft Upgrades, which you can install in your Aircrafts to improve their stats, such as velocity, takeoff speed, fuel consumption, etc.",
+    "quests.tfg_tips.aircraft_upgrades.title": "Aircraft Upgrades",
+    "quests.tfg_tips.aircraft_upgrades.subtitle": "Pimp up my ride",
+    "quests.tfg_tips.aircraft_upgrades.desc": "Immersive Aircraft comes with Aircraft Upgrades, which you can install in your Aircrafts to improve their stats, such as velocity, takeoff speed, fuel consumption, etc. There are two types of Upgrades, regular and Tiered.\n\nThese are the regular upgrades, think you can get them all?",
+
+    "quests.tfg_tips.steam_upgrades.title": "Aircraft Upgrades: Steam",
+    "quests.tfg_tips.steam_upgrade.subtitle": "Immersive Aircraft meets GregTech Tiering!",
+    "quests.tfg_tips.steam_upgrade.desc": "The second kind of Aircraft Upgrades are the Tiered Upgrades, these are made to match Gregtech's tiering system, going from Steam up to Extreme Voltage.\n\nSteam upgrades are the easiest to craft, and the earliest option, requiring at the very least knowledge of Black Steel.\n\nSteam-powered Aircraft Engines are used in the creation of some more sophisticated Aircrafts such as the Biplane and the Warship",
+    "quests.tfg_tips.steam_upgrade.task": "Any Steam Tier Aircraft Upgrade",
+
+    "quests.tfg_tips.lv_upgrades.title": "Aircraft Upgrades: LV",
+    "quests.tfg_tips.lv_upgrades.subtitle": "Red and Blue, certainly not clashing.",
+    "quests.tfg_tips.lv_upgrades.desc": "Low Voltage upgrades are slightly better than their Steam Counterparts, they require at the very least Red and Blue Steel. The Engine itself requires actual LV components, such as the Pistons and the Pump.\n\nYou can recycle the old upgrades using Crushing Wheels, returning some of your spent materials.",
+    "quests.tfg_tips.lv_upgrades.task": "Any Low Voltage Tier Aircraft Upgrade",
+
+    "quests.tfg_tips.mv_upgrades.title": "Aircraft Upgrades: MV",
+    "quests.tfg_tips.mv_upgrades.subtitle": "Halfway there",
+    "quests.tfg_tips.mv_upgrades.desc": "Medium Voltage upgrades are the mid-point of Aircraft Upgrades, they require Aluminium as their main ingredient.\n\nThe Aluminium rotor are used in most Tier 2 Aircrafts, such as the Gyrodyne, Warship and the Scarlet Biplane, while the Medium Voltage Engine is used in the Scarlet Biplane.",
+    "quests.tfg_tips.mv_upgrades.task": "Any Medium Voltage Tier Aircraft Upgrade",
+
+    "quests.tfg_tips.hv_upgrades.title": "Aircraft Upgrades: HV",
+    "quests.tfg_tips.hv_upgrades.subtitle": "Almost there",
+    "quests.tfg_tips.hv_upgrades.desc": "High Voltage upgrades are the penultimate point of Aircraft Upgrades, they require Stainless Steel as their main ingredient.",
+    "quests.tfg_tips.hv_upgrades.task": "Any High Voltage Tier Aircraft Upgrade",
+    
+    "quests.tfg_tips.ev_upgrades.title": "Aircraft Upgrades: EV",
+    "quests.tfg_tips.ev_upgrades.subtitle": "Are these components even legal?",
+    "quests.tfg_tips.ev_upgrades.desc": "The Extreme Voltage upgrades are the last type of Aircraft Upgrades, they require Titanium as their main ingredient.",
+    "quests.tfg_tips.ev_upgrades.task": "Any Extreme Voltage Tier Aircraft Upgrade"
 
     "quests.tfg_tips.aircraft_weapons.title": "Aircraft Weapons",
     "quests.tfg_tips.aircraft_weapons.subtitle": "For the great WAAAGH, of course",

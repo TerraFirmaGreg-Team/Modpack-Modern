@@ -80,6 +80,12 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:luck_ingredients', 'tfc:plant/goldenrod')
 	event.add('tfg:luck_ingredients', 'tfc:plant/heather')
 	// #endregion
+
+	//region Airplane Upgrades
+	global.AIRCRAFT_UPGRADES.forEach(value =>
+	{
+		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
+	})
 }
 
 const registerTFGBlockTags = (event) => {
