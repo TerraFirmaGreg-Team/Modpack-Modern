@@ -1,5 +1,9 @@
 // priority: 0
 
+/**
+ * 
+ * @param {TagEvent.Item} event 
+ */
 const registerTFCItemTags = (event) => {
     // Теги для соответствия инструментов TFC и GT
     
@@ -236,6 +240,11 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:moss', 'tfc:plant/spanish_moss')
     event.add('tfc:moss', 'tfc:plant/reindeer_lichen')
     event.add('tfc:moss', 'tfc:plant/cobblestone_lichen')
+
+    //Cloth
+    event.add('forge:cloth', 'tfc:burlap_cloth')
+    event.add('forge:cloth', 'tfc:wool_cloth')
+    event.add('forge:cloth', 'tfc:silk_cloth')
 }
 
 const registerTFCBlockTags = (event) => {

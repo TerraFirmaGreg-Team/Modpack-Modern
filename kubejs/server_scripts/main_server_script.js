@@ -117,6 +117,7 @@ TFCEvents.data(event => {
     registerTFCDataForArborFirmaCraft(event)
     registerTFCDataForChalk(event);
     registerTFCDataForGTCEU(event)
+    registerTFCDataForImmersiveAircraft(event);
     registerTFCDataForTFC(event)
     registerTFCDataForTFCBetterBF(event)
     registerTFCDataForWaterFlasks(event)

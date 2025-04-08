@@ -172,6 +172,10 @@
     "quests.stone_age.inventory.subtitle": "Time to stop carrying all your junk in vessels.",
     "quests.stone_age.inventory.desc": "In the Early Game you have 3 simple storage solutions.\n\n&lChest&r: Chests in TerraFirmaGreg, while easy to craft, are relatively nerfed compared to Vanilla Chests, containing only 18 Slots. a Double Chest contains 36 Slots.\n&lCrate&r: GregTech Crates are the equivalent of Vanilla barrels, having 27 slots. Not only that, Crates can be upgraded with different metals, increasing their slot count.\n&lSupply Cart&r: A Supply Cart unlike the other two options is an Entity, but it can store the same amount as a regular Double Chest, a total of 54 Slots.",
 
+    "quests.stone_age.portable_storage.title": "Portable Storage?",
+    "quests.stone_age.portable_storage.subtitle": "Because getting your inventory filled with junk sucks",
+    "quests.stone_age.portable_storage.desc": "In the TerraFirmaGreg Tips questline, there's a spoke that goes over methods for handling Portable Storage. Portable Storage is, as the name suggests, storage solutions you can carry with you as you travel the world. In case you struggle finding the quests, they're the ones that cover the rightmost spoke in the gear.",
+    
     "quests.stone_age.barrels.title": "Barrels",
     "quests.stone_age.barrels.subtitle": "Stephano?",
     "quests.stone_age.barrels.desc": "Barrels unlike their vanilla counterparts, are used as Liquid Storage. Barrels are capable of storing a total of 10 Buckets of fluid, allowing for relatively simple storage of fluids.\n\nBarrels also have recipes, which we can utilize to create stuff such as Leather, Glue, Mortar and more.",
@@ -193,7 +197,6 @@
     "quests.stone_age.hazards.subtitle": "Thought the Overworld was difficult? Think again.",
     "quests.stone_age.hazards.desc.1": "There are two types of Hazards while mining that you need to be careful about, Cave Ins and Chemical Hazards. A Cave In can occur when raw stone blocks or ores are left Unsupported. Looking at a block can tell you its status for Cave Ins.",
     "quests.stone_age.hazards.desc.2": "A Supported Block won't trigger collapses while an Unsupported block has a chance to trigger a collapse, however, when a collapse begins, even previously supported blocks can fall and collapse.\n\nA way to avoid collapses is by using Support Beams, the image below showcases ways on how to use support beams to support your mining operations.",
-    "quests.stone_age.hazards.desc.3": "The second kind of Hazard are Chemical Hazards. Some minerals such as Lead and Asbestos are poisonous and detrimental to your well being, coming in contact with these can cause serious illnesses that will quickly kill you.\n\nTo avoid a gruesome death from chemicals, you can craft basic PPE equipment. The Rubber Gloves will protect your from Contact Poison while the Face Mask protects you from Inhalation Poisons.\n\nMore information regarding collapse mechanics and chemical hazards can be found in the field guide.",
 
     "quests.stone_age.copper_for_anvil.title": "Copper for the Anvil",
     "quests.stone_age.copper_for_anvil.subtitle": "You better get used to getting 14 ingots of something.",
@@ -214,6 +217,18 @@
     "quests.stone_age.quern.title": "Quern and Handstone",
     "quests.stone_age.quern.subtitle": "Early game ore processing",
     "quests.stone_age.quern.desc": "The Quern and Handstone is simply put two big rocks grinding against each other to break down materials. The bottom piece is called a Quern while the top piece is called a Handstone. The Quern can be used to grind down raw ores into crushed ores, yielding slightly higher mb count when smelted.\n\nWe'll use the Quern to create Flux.",
+
+    "quests.stone_age.crush_ore.title": "Early Ore Processing.",
+    "quests.stone_age.crush_ore.subtitle": "Getting more from your ores.",
+    "quests.stone_age.crush_ore.desc": "Unlocking the Quern enables the process of well, processing your ores.\n\nOre Processing is a large, complex tree that GregTech has which is used for getting more resources from Raw Ores, instead of just placing a Raw Ore in a macerator to get double ores, you'll need to slowly inch your way thru it's Ore Processing tree to get the most of your ores.\n\nWe can begin by crushing Raw Ore to get Crushed Ores, slightly increasing their mb yield.",
+
+    "quests.stone_age.crush_crushed_ore.title": "Impure Dusts",
+    "quests.stone_age.crush_crushed_ore.subtitle": "Quern it, again.",
+    "quests.stone_age.crush_crushed_ore.desc": "Crushing a Crushed Ore yields Impure Dust, further increasing it's mb yield.\n\nAs you advance in the Tech Tree, better methods for processing your ores will be unlocked.",
+
+    "quests.stone_age.clean_dust.title": "Clean Dusts",
+    "quests.stone_age.clean_dust.subtitle": "Wash that dirty dust",
+    "quests.stone_age.clean_dust.desc": "Dropping Impure Dusts in some Water will clean them, yielding regular dust, which as you may guess, further increases their mb yield.",
 
     "quests.stone_age.flux.title": "Fluxstones",
     "quests.stone_age.flux.subtitle": "Basically metallurgy powder",

@@ -589,11 +589,43 @@
 			icon: "gtceu:almandine_indicator"
 			id: "234B68E86F72C29E"
 			subtitle: "{quests.metal_age.mining.subtitle}"
-			tasks: [{
-				id: "6BB5900B1E695C61"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6BB5900B1E695C61"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+				{
+					id: "42657F198063D88B"
+					item: {
+						Count: 1
+						id: "gtceu:duranium_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+								TorchPlacing: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 5
+								MaxDamage: 147455
+								ToolSpeed: 9.6f
+							}
+							HideFlags: 2
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.metal_age.mining.title}"
 			x: 5.0d
 			y: -30.0d
@@ -765,7 +797,12 @@
 		}
 		{
 			dependencies: ["174DA15847665CF8"]
-			description: ["{quests.metal_age.coke_oven.desc}"]
+			description: [
+				"{quests.metal_age.coke_oven.desc.1}"
+				"{@pagebreak}"
+				"{quests.metal_age.coke_oven.desc.2}"
+				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
+			]
 			id: "6302B4F5F57FDCED"
 			size: 2.0d
 			subtitle: "{quests.metal_age.coke_oven.subtitle}"
@@ -776,36 +813,18 @@
 					type: "item"
 				}
 				{
-					count: 26L
 					id: "3199FD23671C2DCF"
 					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					id: "07F45B83B26B6994"
+					item: "gtceu:coke_oven_hatch"
 					type: "item"
 				}
 			]
 			title: "{quests.metal_age.coke_oven.title}"
 			x: 9.0d
-			y: -30.0d
-		}
-		{
-			dependencies: [
-				"6302B4F5F57FDCED"
-				"05CC8C5E63CD1DB8"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{quests.metal_age.auto_coke_oven.desc}"
-				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
-			]
-			id: "6784D187505C19C5"
-			optional: true
-			subtitle: "{quests.metal_age.auto_coke_oven.subtitle}"
-			tasks: [{
-				id: "11FE03983908EB3A"
-				item: "gtceu:coke_oven_hatch"
-				type: "item"
-			}]
-			title: "{quests.metal_age.auto_coke_oven.title}"
-			x: 7.5d
 			y: -30.0d
 		}
 		{

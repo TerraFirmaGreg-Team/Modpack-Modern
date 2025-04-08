@@ -1522,38 +1522,17 @@
 				"{@pagebreak}"
 				"{quests.stone_age.hazards.desc.2}"
 				"{image:tfg:textures/quests/supported_mine.png width:100 height:100 align:center}"
-				"{@pagebreak}"
-				"{quests.stone_age.hazards.desc.3}"
 			]
 			icon: "gtceu:generic_hazard_sign_block"
 			id: "618090A6D0D3B2F1"
 			shape: "diamond"
 			size: 1.0d
 			subtitle: "{quests.stone_age.hazards.subtitle}"
-			tasks: [
-				{
-					id: "159EE9FAE67FD925"
-					item: {
-						Count: 1
-						id: "gtceu:rubber_gloves"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "3BFBC72311B63A5A"
-					item: {
-						Count: 1
-						id: "gtceu:face_mask"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "69047E156509ABBF"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
 			title: "{quests.stone_age.hazards.title}"
 			x: 17.0d
 			y: 10.5d
@@ -1777,7 +1756,7 @@
 				}
 			]
 			title: "{quests.stone_age.inventory.title}"
-			x: 11.0d
+			x: 8.5d
 			y: 16.0d
 		}
 		{
@@ -2228,6 +2207,83 @@
 			title: "{quests.stone_age.silk_clothes.title}"
 			x: -1.0d
 			y: 10.5d
+		}
+		{
+			dependencies: ["5E186CD5E83BFDF0"]
+			description: ["{quests.stone_age.crush_ore.desc}"]
+			id: "2621BF784BEB7033"
+			subtitle: "{quests.stone_age.crush_ore.subtitle}"
+			tasks: [{
+				id: "41E832316CBD7359"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:crushed_ores)"
+					}
+				}
+				title: "Any #forge:crushed_ores"
+				type: "item"
+			}]
+			title: "{quests.stone_age.crush_ore.title}"
+			x: 24.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2621BF784BEB7033"]
+			description: ["{quests.stone_age.crush_crushed_ore.desc}"]
+			id: "050444CE0EA04FDF"
+			subtitle: "{quests.stone_age.crush_crushed_ore.subtitle}"
+			tasks: [{
+				id: "3138448022A39769"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:impure_dusts)"
+					}
+				}
+				title: "Any #forge:impure_dusts"
+				type: "item"
+			}]
+			title: "{quests.stone_age.crush_crushed_ore.title}"
+			x: 24.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["050444CE0EA04FDF"]
+			description: ["{quests.stone_age.clean_dust.desc}"]
+			id: "3462FD6E24F9BE0B"
+			subtitle: "{quests.stone_age.clean_dust.subtitle}"
+			tasks: [{
+				id: "44AAEAEEF1A3C9D3"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:dusts)"
+					}
+				}
+				title: "Any #forge:dusts"
+				type: "item"
+			}]
+			title: "{quests.stone_age.clean_dust.title}"
+			x: 24.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4C444814F1C7B600"]
+			description: ["{quests.stone_age.portable_storage.desc}"]
+			id: "59B30B2C92285D2D"
+			subtitle: "{quests.stone_age.portable_storage.subtitle}"
+			tasks: [{
+				id: "77863C6CD510E601"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.stone_age.portable_storage.title}"
+			x: 13.5d
+			y: 16.0d
 		}
 	]
 	subtitle: ["{quests.stone_age.subtitle}"]

@@ -208,14 +208,11 @@
     "quests.tfg_tips.misc.subtitle": "Even more tips!",
     "quests.tfg_tips.misc.desc": "These are miscellaneous tips, they dont fit in the other categories but still useful to know about.",
 
-    "quests.tfg_tips.glider.title": "Hang Glider",
-    "quests.tfg_tips.glider.subtitle": "This is not Breath of the Wild",
-    "quests.tfg_tips.glider.desc": "A Hang Glider can be crafted and used to glide along the air, you cannot gain altitude with this but it can be useful to traverse long distances if you jump from high altitudes.",
-
-    "quests.tfg_tips.reinforced_glider.title": "Reinforced Glider",
-    "quests.tfg_tips.reinforced_glider.subtitle": "Elytra well spent...?",
-    "quests.tfg_tips.reinforced_glider.desc": "If you combine an Elytra with a Hang Glider, you'll obtain a Reinforced Glider. The Reinforced Glider is very similar to the regular Glider, the only difference is that you'll have a higher velocity ceiling.",
-
+    "quests.tfg_tips.digger_helmet.title": "Digger Helmet",
+    "quests.tfg_tips.digger_helmet.subtitle": "For those days where you mine all day long",
+    "quests.tfg_tips.digger_helmet.desc.1": "The Digger Helmet is well, a Helmet you can wear that will automatically light up your surroundings. It'll require a bit of Glowstone to craft however, maybe you can reach to The Beneath for some easy glowstone...",
+    "quests.tfg_tips.digger_helmet.desc.2": "Worth mentioning, the Digger Helmet itself works thanks to a specific setting of Sodium Dynamic Lights, you'll have to toggle on \"Dynamic Entity Lighting\" for the Digger Helmet to work properly",
+    
     "quests.tfg_tips.grappler.title": "Grapplers",
     "quests.tfg_tips.grappler.subtitle": "Easier cave exploration!",
     "quests.tfg_tips.grappler.desc": "By combining a Javelin, some Rope and a Torch, you can create a Grappler.\n\nThrow the grapplier in the air towards a ceiling, if it hits, a grappling rope will unravel from the place of contact. You can climb this rope as if it where a ladder.",
@@ -357,6 +354,62 @@
     //#endregion
 
     //#region Transportation
+    "quests.tfg_tips.transportation.title": "Transportation",
+    "quests.tfg_tips.transportation.subtitle": "For traveling this vast world",
+    "quests.tfg_tips.transportation.desc": "The world is a very big place, you might end up needing to travel far into the distances to find specific items for your survival. The mods in this spoke help out with just that.",
+
+    "quests.tfg_tips.glider.title": "Hang Glider",
+    "quests.tfg_tips.glider.subtitle": "This is not Breath of the Wild",
+    "quests.tfg_tips.glider.desc": "A Hang Glider can be crafted and used to glide along the air, you cannot gain altitude with this but it can be useful to traverse long distances if you jump from high altitudes.",
+
+    "quests.tfg_tips.reinforced_glider.title": "Reinforced Glider",
+    "quests.tfg_tips.reinforced_glider.subtitle": "Elytra well spent...?",
+    "quests.tfg_tips.reinforced_glider.desc": "If you combine an Elytra with a Hang Glider, you'll obtain a Reinforced Glider. The Reinforced Glider is very similar to the regular Glider, the only difference is that you'll have a higher velocity ceiling.",
+
+    "quests.tfg_tips.immersive_aircraft.title": "Immersive Aircraft",
+    "quests.tfg_tips.immersive_aircraft.subtitle": "Fly across the skies, with style.",
+    "quests.tfg_tips.immersive_aircraft.desc": "Immersive Aircraft is a mod all about Aircrafts such as Biplanes and traversing large amounts of blocks via the Sky.",
+
+    "quests.tfg_tips.aircraft_upgrade.title": "Aircraft Upgrades",
+    "quests.tfg_tips.aircraft_upgrade.subtitle": "Pimp up my ride",
+    "quests.tfg_tips.aircraft_upgrades.desc": "Immersive Aircraft comes with Aircraft Upgrades, which you can install in your Aircrafts to improve their stats, such as velocity, takeoff speed, fuel consumption, etc.",
+
+    "quests.tfg_tips.aircraft_weapons.title": "Aircraft Weapons",
+    "quests.tfg_tips.aircraft_weapons.subtitle": "For the great WAAAGH, of course",
+    "quests.tfg_tips.aircraft_weapons.desc": "In case you want to kill something very menacing, or just conquer your enemies, you can create Weapons which can be used for destroying or maiming mobs.\n\nEach weapon can be fired by using the Interact button while riding the Airplane, most of them (except for the Telescope) consume some sort of Ammo.",
+
+    "quests.tfg_tips.airship.title": "Airship",
+    "quests.tfg_tips.airship.subtitle": "Baby's first Airship",
+    "quests.tfg_tips.airship.desc": "The Airship is an Aircraft that's relatively decent for travelling, it's main purpose however is to carry items around.\nThe Airship has a total of 16 Inventory Slots,1 Weapon Slot, and 3 Upgrade Slots.",
+
+    "quests.tfg_tips.cargo_airship.title": "Cargo Airship",
+    "quests.tfg_tips.cargo_airship.subtitle": "When you need to carry your entire base into the distance",
+    "quests.tfg_tips.cargo_airship.desc": "Attach some extra engines, rotors and 2 wooden crates and you'll upgrade your Airship into a Cargo Airship.\n\nThe Cargo Airship is more fuel hungry than its lesser counterpart.\n The Cargo Airship has a total of 80 Inventory Slots, and 4 Upgrade Slots.",
+
+    "quests.tfg_tips.waghship.title": "Warship",
+    "quests.tfg_tips.waghship.subtitle": "Otherwise known as a WAAAAGH-Ship",
+    "quests.tfg_tips.waghship.desc": "The Warship is the last upgrade to the Airship, it contains a total of 66 Item Slots, 6 Upgrade Slots and 2 Weapon Slots.",
+
+    "quests.tfg_tips.quadrocopter.title": "Quadrocopter",
+    "quests.tfg_tips.quadrocopter.subtitle": "Not a Quadcopter",
+    "quests.tfg_tips.quadrocopter.desc": "The Quadrocopter is a very basic Hovercraft, it contains 6 Item Slots, a single Upgrade Slot and a single Weapon Slot.\n\nIt excels in simple controls and being able to use it for building.",
+
+    "quests.tfg_tips.gyrodyne": "Gyrodyne",
+    "quests.tfg_tips.gyrodyne.subtitle": "Muscle powered copter",
+    "quests.tfg_tips.gyrodyne.desc": "The Gyrodyne is a unique Aircraft, instead of consuming fuel, it's powered exclusively by muscle. As such, it consumes your Hunger.\n\nIt contains 18 Inventory Slots, 3 Upgrade Slots and 1 Weapon Slot",
+
+    "quests.tfg_tips.economy_plane.title": "Economy Plane",
+    "quests.tfg_tips.economy_plane.subtitle": "Your first Plane... Not that great tho.",
+    "quests.tfg_tips.economy_plane.desc": "The Economy Plane is your very basic Plane. It's controlled utilizing Pitch and Yaw instead of Airships or Hovercrafts/Copters.\n\nIt has 4 Inventory Slots, and 4 Upgrade Slots.\nWhile slow, the Economy Plane, just like the Airship, can be Upgraded into better planes.",
+
+    "quests.tfg_tips.biplane.title": "Biplane",
+    "quests.tfg_tips.biplane.subtitle": "How come this is smaller than the Economy Plane?",
+    "quests.tfg_tips.biplane.desc": "The Biplane is a direct upgrade to the Economy Plane, crafted utilizing Hulls, Steam Boilers and an Enhanced Propeller.\n\nIt contians 16 Inventory Slots, 4 Upgrade Slots and 1 Weapon Slot. Unlike the Economy Plane, the Biplane can be Boosted utilizing Rockets.",
+
+    "quests.tfg_tips.scarlet_biplane.title": "Scarlet Biplane",
+    "quests.tfg_tips.scarlet_biplane.subtitle": "What a sight to behold",
+    "quests.tfg_tips.scarlet_biplane.desc": "The Scarlet Biplane is the final upgrade for Planes, Requiring HV components.\n\nIt contains 27 Inventory Slots, 4 Upgrade Slots, 2 Weapon Slots, and also a Booster Slot, just like the regular Biplane.\n\nWhile expensive, the Scarlet Biplane makes up for it with increased durability, increased max speed, and overall swag.",
+
     "quests.tfg_tips.firmaciv.title": "FirmaCiv",
     "quests.tfg_tips.firmaciv.subtitle": "Sail across the seas, with style.",
     "quests.tfg_tips.firmaciv.desc": "FirmaCiv is a mod all about boats and traversing large bodies of water. It can also be used for creating tools that help you position yourself in the world.",

@@ -24,7 +24,7 @@
 
     "quests.metal_age.mining.title": "Mining in the Metallurgy Age",
     "quests.metal_age.mining.subtitle": "You need to channel your inner Dwarf for the Metallurgy Age.",
-    "quests.metal_age.mining.desc": "During the Metallurgy Age you will consume a &llot&r of metal to create the Anvils, and in general progressing in the mod pack, while you maybe &ocould've&r obtain enough metal utilizing only Panning and Native Ores, you will definetly need to mine most of it.",
+    "quests.metal_age.mining.desc": "During the Metallurgy Age you will consume a &llot&r of metal to create the Anvils, and in general progressing in the mod pack, while you maybe &ocould've&r obtain enough metal utilizing only Panning and Native Ores, you will definetly need to mine most of it.\n\nIf you need to clear large amounts of blocks you can utilize a Mining Hammer! It can mine blocks in a 3x3x1 area, which makes the creation of mining shafts considerably easier.",
 
     "quests.metal_age.weld_wrought_iron_ingots.title": "Welding Wrought Iron",
     "quests.metal_age.weld_wrought_iron_ingots.subtitle": "It'll always be at least 14 ingots.",
@@ -40,12 +40,9 @@
 
     "quests.metal_age.coke_oven.title": "Coke Oven",
     "quests.metal_age.coke_oven.subtitle": "Stop makin those Charcoal Piles",
-    "quests.metal_age.coke_oven.desc": "The Coke Oven is a Multiblock structure that allows you to create Charcoal using the power of time. Every 45 seconds the Coke Oven will consume 1 Log and create 1 Charcoal, but more importantly, 250mb of Creosote, which is an important oil used in the Industrial Age.\n\nThe Coke Oven consists of basically a 3x3 hollow cube, the bottom layer is filled with Coke Oven Bricks, the center layer is a donut shape of Coke Oven Bricks and the top layer is filled with Coke Oven Bricks.\nYou can place the actual Coke Oven in the middle layer to complete the build of the Coke Oven.",
-
-    "quests.metal_age.auto_coke_oven.title": "Automatic Coke Oven",
-    "quests.metal_age.auto_coke_oven.subtitle": "Feed it wood and let it do it's thing.",
-    "quests.metal_age.auto_coke_oven.desc": "Coke Ovens can be automated using a Coke Oven Hatch. the Hatch is placed on the sides of the Oven and work as both Inputs and Outputs for both Items and Liquids.\n\nYou can easily create a simple one way coke oven by utilizing a Crate for item Input and Output, and using a Bronze Drum to collect the Creosote. Use a Crate to store the Logs, unlike chests, Crates can handle large items without issues.",
-
+    "quests.metal_age.coke_oven.desc.1": "The Coke Oven is a Multiblock structure that allows you to create Charcoal and more powerful fuels using the power of time. Utilizing Wood, every 45 seconds the Coke Oven will consume 1 Log and create 1 Charcoal, but more importantly, 250mb of Creosote, which is an important oil used in the Industrial Age.\n\nIf you craft the Coke Oven block and press the JEI Usages key on it (defaults to \"U\"), you'll find the Tab called \"Multiblock Info\", you can use this tab to learn how to build the Coke Oven in the world.\n\nYou can also just place the Controller block in the world, and interact with it while sneaking to create a Hologram of blocks missing.",
+    "quests.metal_age.coke_oven.desc.2": "Coke Ovens can be automated using a Coke Oven Hatch. The Hatch is placed on the sides of the Oven and work as both Inputs and Outputs for both Items and Liquids.\n\nYou can easly create a simple, one way Coke Oven by utilizing a Crate for the item Input, another Crate for the item Output, and using a Bronze Drum to collect the Creosote. Unlike Chests, Crates are able to store large objects such as Logs. You can use a Wrench to force the Item Pipe to be one directional as well.",
+    
     "quests.metal_age.wrought_iron_goodies.title": "Wrought Iron level Mechanical Power",
     "quests.metal_age.wrought_iron_goodies.subtitle": "What's this \"Andesite Alloy\" you speak of?",
     "quests.metal_age.wrought_iron_goodies.desc": "With Wrought Iron you've unlocked access to the Metal Casing, Metal Casings are used for a bulk of recipes for Create, unlocking things such as Gearboxes.\n\nUtilizing Creosote you can create Treated Wood Planks, which are used in the creation of Waterwheels and Windmills, which are good sources of mechanical power.",
@@ -99,7 +96,7 @@
     
     "quests.metal_age.fully_stacked_blast_furnace.title": "Fully Stacked Blast Furnace",
     "quests.metal_age.fully_stacked_blast_furnace.subtitle": "The completed Blast Furnace",
-    "quests.metal_age.fully_stacked_blast_furnace.desc": "The completed Blast Furnace can melt and create a lot of Steel. You should seek to complete it as you'll need a lot of steel for the future.",
+    "quests.metal_age.fully_stacked_blast_furnace.desc": "The completed Blast Furnace can melt and create a lot of Steel. You should seek to complete it as you'll need a lot of steel for the future.\n\nIt is worth mentioning that in the future, you'll be able to produce both Brick Dust and Clay Dust, mixing these dusts together can be used as a cheap method of creating more Fire Bricks.",
 
     "quests.metal_age.blast_furnace_fuel.title": "Fuel for the Blast Furnace",
     "quests.metal_age.blast_furnace_fuel.subtitle": "Hope you followed the tips in the previous quests...",

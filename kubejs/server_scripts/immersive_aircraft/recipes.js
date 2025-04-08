@@ -6,6 +6,8 @@
  */
 function registerImmersiveAircraftRecipes(event) {
 
+	event.remove({mod: 'immersive_aircraft'});
+	
 	event.shaped('immersive_aircraft:hull',[
 		'AAA',
 		'BCB',
@@ -15,12 +17,6 @@ function registerImmersiveAircraftRecipes(event) {
 		B: 'gtceu:wrought_iron_plate',
 		C: 'tfc:glue',
 	}).id('tfg:immersive_aircraft/shaped/hull');
-	event.recipes.gtceu.assembler('tfg:immersive_aircraft/assembler/hull')
-	.itemInputs('6x #minecraft:planks', '2x gtceu:wrought_iron_plate', 'tfc:glue')
-	.itemOutputs('immersive_aircraft:hull')
-	.circuit(1)
-	.duration(200)
-	.EUt(1);
 
 	event.shaped('immersive_aircraft:engine',[
 		'ABC',
@@ -32,12 +28,6 @@ function registerImmersiveAircraftRecipes(event) {
 		D: '#tfg:metal_bars',
 		E: 'create:andesite_casing'
 	}).id('tfg:immersive_aircraft/shaped/engine');
-	event.recipes.gtceu.assembler('tfg:immersive_aircraft/assembler/engine')
-	.itemInputs('gtceu:tin_alloy_small_fluid_pipe', '2x #tfg:metal_bars', 'create:andesite_casing')
-	.itemOutputs('immersive_aircraft:engine')
-	.circuit(1)
-	.duration(200)
-	.EUt(1);
 
 	event.shaped('immersive_aircraft:sail',[
 		'ABA',
@@ -48,13 +38,153 @@ function registerImmersiveAircraftRecipes(event) {
 		B: '#forge:cloth',
 		C: '#minecraft:trapdoors'
 	}).id('tfg:immersive_aircraft/shaped/sail');
-	event.recipes.gtceu.assembler('tfg:immersive_aircraft/assembler/sail')
-	.itemInputs('4x gtceu:wrought_iron_screw', '4x #minecraft:trapdoors', '#forge:cloth')
-	.itemOutputs('immersive_aircraft:sail')
-	.circuit(1)
-	.duration(200)
-	.EUt(1);
 
+	event.shaped('immersive_aircraft:rotary_cannon',[
+		'ABA',
+		'ACA',
+		' D '
+	],{
+		A: 'create:copper_sheet',
+		B: 'minecraft:dispenser',
+		C: 'gtceu:wrought_iron_gear',
+		D: 'tfc:powderkeg'
+	}).id('tfg:immersive_aircraft/shaped/rotary_cannon');
+
+	event.shaped('immersive_aircraft:heavy_crossbow',[
+		'ABA',
+		'CDC',
+		' A '
+	],{
+		A: '#minecraft:logs',
+		B: 'gtceu:long_steel_rod',
+		C: '#tfg:metal_chains',
+		D: 'minecraft:crossbow'
+	}).id('tfg:immersive_aircraft/shaped/heavy_crossbow');
+
+	event.shaped('immersive_aircraft:telescope',[
+		'ABC',
+		' D ',
+		' E '
+	], {
+		A: 'gtceu:small_brass_gear',
+		B: 'minecraft:spyglass',
+		C: '#forge:glass/colorless',
+		D: 'gtceu:copper_rod',
+		E: 'gtceu:wrought_iron_plate'
+	}).id('tfg:immersive_aircraft/shaped/telescope');
+
+	event.shaped('immersive_aircraft:bomb_bay',[
+		'AAA',
+		'ABA',
+		'ACA'
+	],{
+		A: 'gtceu:steel_plate',
+		B: 'tfc:powderkeg',
+		C: 'minecraft:dispenser'
+	}).id('tfg:immersive_aircraft/shaped/bomb_bay');
+
+	event.shaped('immersive_aircraft:enhanced_propeller',[
+		' A ',
+		'ABA',
+		' A '
+	],{
+		A: 'vintageimprovements:aluminum_sheet',
+		B: '#forge:rotors'
+	}).id('tfg:immersive_aircraft/shaped/enhanced_propeller');
+
+	event.shaped('immersive_aircraft:eco_engine',[
+		'ABC',
+		'BDB',
+		'EEE'
+	],{
+		A: '#forge:tools/hammers',
+		B: 'gtceu:double_rose_gold_plate',
+		C: '#forge:tools/screwdrivers',
+		D: 'immersive_aircraft:engine',
+		E: 'gtceu:double_sterling_silver_plate'
+	}).id('tfg:immersive_aircraft/shaped/eco_engine');
+
+	event.shaped('immersive_aircraft:steel_boiler',[
+		'ABA',
+		'ACA',
+		'DAD'
+	],{
+		A: 'gtceu:steel_plate',
+		B: 'gtceu:black_steel_rod',
+		C: 'immersive_aircraft:engine',
+		D: 'gtceu:tin_alloy_small_fluid_pipe'
+	}).id('tfg:immersive_aircraft/shaped/steel_boiler');
+
+	event.shaped('immersive_aircraft:nether_engine',[
+		'AAA',
+		'BCB',
+		'BDB'
+	],{
+		A: 'gtceu:nether_quartz_plate',
+		B: 'gtceu:mv_electric_piston',
+		C: 'immersive_aircraft:engine',
+		D: 'gtceu:blaze_bucket'
+	}).id('tfg:immersive_aircraft/shaped/nether_engine')
+
+	event.shaped('immersive_aircraft:industrial_gears',[
+		'ABA',
+		'CAB',
+		'ACA'
+	],{
+		A: 'gtceu:small_brass_gear',
+		B: 'gtceu:double_wrought_iron_plate',
+		C: 'gtceu:double_copper_plate'
+	}).id('tfg:immersive_aircraft/shaped/industrial_gears');
+
+	event.shaped('immersive_aircraft:sturdy_pipes',[
+		'EDA',
+		'BAC',
+		'AD '
+	],{
+		A: '#forge:small_fluid_pipes',
+		B: 'gtceu:blue_steel_plate',
+		C: 'gtceu:red_steel_plate',
+		D: 'gtceu:black_steel_screw',
+		E: '#forge:tools/screwdrivers',
+	}).id('tfg:immersive_aircraft/shaped/sturdy_pipes')
+
+	event.shaped('immersive_aircraft:gyroscope',[
+		'ABC',
+		'DED',
+		'FDG'
+	],{
+		A: '#forge:tools/wrenches',
+		B: 'minecraft:comparator',
+		C: 'ae2:quartz_glass',
+		D: 'gtceu:small_brass_gear',
+		E: 'firmaciv:firmaciv_compass',
+		F: 'gtceu:aluminium_screw',
+		G: '#forge:tools/screwdrivers'
+	}).id('tfg:immersive_aircraft/shaped/gyroscope')
+
+	event.shaped('immersive_aircraft:hull_reinforcement',[
+		'AB ',
+		'BCB',
+		' BD'
+	],{
+		A: '#forge:tools/hammers',
+		B: 'gtceu:steel_plate',
+		C: 'immersive_aircraft:hull',
+		D: '#forge:tools/wrench'
+	}).id('tfg:immersive_aircraft/shaped/hull_reinforcement');
+
+	event.shaped('immersive_aircraft:improved_landing_gear',[
+		'ABC',
+		'DEB',
+		'DDF'
+	],{
+		A: '#forge:tools/wrenches',
+		B: 'gtceu:wrought_iron_plate',
+		C: 'gtceu:steel_rod',
+		D: 'gtceu:rubber_plate',
+		E: 'gtceu:small_brass_gear',
+		F: '#forge:tools/screwdrivers'
+	}).id('tfg:immersive_aircraft/shaped/improved_landing_gear')
 //#region Aircrafts
 
 	event.shaped('immersive_aircraft:quadrocopter',[
@@ -191,44 +321,4 @@ function registerImmersiveAircraftRecipes(event) {
 	}).id('tfg:man_of_many_planes/mechanical_crafter/scarlet_biplane')
 
 //#endregion
-
-	event.remove({ mod: 'immersive_aircraft' })
-
-	event.shaped('immersive_aircraft:engine', [
-		'DAE',
-		'CBC'
-	], {
-		A: 'gtceu:tin_alloy_small_fluid_pipe',
-		B: 'gtceu:steel_brick_casing',
-		C: '#tfg:metal_bars',
-		D: '#forge:tools/hammers',
-		E: '#forge:tools/wrenches'
-	})
-	.id('iatfg:engine_r')
-
-	event.replaceInput({ id: 'iatfg:sail_r' }, 'framedblocks:framed_trapdoor', '#minecraft:trapdoors')
-
-	event.replaceInput({ id: 'iatfg:airship_r' }, 'create:propeller', '#forge:rotors')
-	event.replaceInput({ id: 'iatfg:airship_r' }, 'immersive_aircraft:hull_reinforcement', 'immersive_aircraft:hull')
-
-	event.replaceInput({ id: 'iatfg:cargo_airship_r' }, 'create:propeller', '#forge:rotors')
-
-	event.replaceInput({ id: 'iatfg:quadrocopter_r' }, 'create:propeller', '#forge:rotors')
-
-	event.replaceInput({ id: 'iatfg:enhanced_propeller_r' }, 'create:propeller', '#forge:rotors')
-
-	event.replaceInput({ id: 'immersive_aircraft:gyroscope' }, 'minecraft:compass', 'firmaciv:firmaciv_compass')
-
-	event.shaped('immersive_aircraft:improved_landing_gear', [
-		'EAB',
-		'CDA',
-		'CCF'
-	], {
-		A: '#forge:plates/steel',
-		B: '#forge:rods/steel',
-		C: '#forge:plates/rubber',
-		D: '#forge:small_gears/brass',
-		E: '#forge:tools/wrenches',
-		F: '#forge:tools/screwdrivers'
-	}).id('iatfg:improved_landing_gear_r')
 }

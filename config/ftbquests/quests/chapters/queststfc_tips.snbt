@@ -3707,7 +3707,15 @@
 		}
 		{
 			dependencies: ["3B3A0FEEB59F597C"]
+			description: [
+				"{quests.tfg_tips.digger_helmet.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.digger_helmet.desc.2}"
+				""
+				"{image:tfg:textures/quests/mining_helmet_option.png width:1000 height:135 align:center fit:true}"
+			]
 			id: "4425519187BF28FE"
+			subtitle: "{quests.tfg_tips.digger_helmet.subtitle}"
 			tasks: [{
 				id: "6010870D09DAD473"
 				item: {
@@ -3719,6 +3727,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.digger_helmet.title}"
 			x: -4.0d
 			y: 2.0d
 		}
@@ -3739,89 +3748,113 @@
 		}
 		{
 			dependencies: ["62FD3E7A836D2E0A"]
+			description: ["{quests.tfg_tips.quadrocopter.desc}"]
 			id: "5D7E9840A5A7AD7E"
+			subtitle: "{quests.tfg_tips.quadrocopter.subtitle}"
 			tasks: [{
 				id: "0746EC334B8F1C74"
 				item: "immersive_aircraft:quadrocopter"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.quadrocopter.title}"
 			x: -4.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["5D7E9840A5A7AD7E"]
+			description: ["{quests.tfg_tips.gyrodyne.desc}"]
 			id: "79767F5D33BCA30E"
+			subtitle: "{quests.tfg_tips.gyrodyne.subtitle}"
 			tasks: [{
 				id: "6A5B1A379C09AF7C"
 				item: "immersive_aircraft:gyrodyne"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.gyrodyne.title}"
 			x: -4.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["62FD3E7A836D2E0A"]
+			description: ["{quests.tfg_tips.airship.desc}"]
 			id: "598BD589D3C3057A"
+			subtitle: "{quests.tfg_tips.airship.subtitle}"
 			tasks: [{
 				id: "1CD23602092BE7B4"
 				item: "immersive_aircraft:airship"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.airship.title}"
 			x: -5.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["598BD589D3C3057A"]
+			description: ["{quests.tfg_tips.cargo_airship.desc}"]
 			id: "6E5195824D12ED1F"
+			subtitle: "{quests.tfg_tips.cargo_airship.subtitle}"
 			tasks: [{
 				id: "68F9CFD1ED872C19"
 				item: "immersive_aircraft:cargo_airship"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.cargo_airship.title}"
 			x: -5.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["6E5195824D12ED1F"]
+			description: ["{quests.tfg_tips.waghship.desc}"]
 			id: "0D89D46C99B96861"
+			subtitle: "{quests.tfg_tips.waghship.subtitle}"
 			tasks: [{
 				id: "53693DEF78884347"
 				item: "immersive_aircraft:warship"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.waghship.title}"
 			x: -5.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["62FD3E7A836D2E0A"]
+			description: ["{quests.tfg_tips.economy_plane.desc}"]
 			id: "037E11CB318CADAC"
+			subtitle: "{quests.tfg_tips.economy_plane.subtitle}"
 			tasks: [{
 				id: "1AAC1601977A030D"
 				item: "man_of_many_planes:economy_plane"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.economy_plane.title}"
 			x: -3.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["037E11CB318CADAC"]
+			description: ["{quests.tfg_tips.biplane.desc}"]
 			id: "6E4754288899732B"
+			subtitle: "{quests.tfg_tips.biplane.subtitle}"
 			tasks: [{
 				id: "46F8A8E1721833E5"
 				item: "immersive_aircraft:biplane"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.biplane.title}"
 			x: -3.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["6E4754288899732B"]
+			description: ["{quests.tfg_tips.scarlet_biplane.desc}"]
 			id: "7B5AD6AD5E99449C"
+			subtitle: "{quests.tfg_tips.scarlet_biplane.subtitle}"
 			tasks: [{
 				id: "3E274FFB71007307"
 				item: "man_of_many_planes:scarlet_biplane"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.scarlet_biplane.title}"
 			x: -3.0d
 			y: -12.0d
 		}
@@ -3999,6 +4032,97 @@
 			title: "{quests.tfg_tips.reach_the_beneath.title}"
 			x: 13.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["62FD3E7A836D2E0A"]
+			description: ["{quests.tfg_tips.aircraft_upgrades.desc}"]
+			id: "785BED393088C8FC"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.aircraft_upgrades.subtitle}"
+			tasks: [
+				{
+					id: "6F43DB7860239B24"
+					item: "immersive_aircraft:hull_reinforcement"
+					type: "item"
+				}
+				{
+					id: "7FB86D1C3858EA4F"
+					item: "immersive_aircraft:improved_landing_gear"
+					type: "item"
+				}
+				{
+					id: "6DF2BE113934991F"
+					item: "immersive_aircraft:gyroscope"
+					type: "item"
+				}
+				{
+					id: "3825ED5E282B43EB"
+					item: "immersive_aircraft:sturdy_pipes"
+					type: "item"
+				}
+				{
+					id: "3DDFDDBC012E7A60"
+					item: "immersive_aircraft:industrial_gears"
+					type: "item"
+				}
+				{
+					id: "6CAA23B0822B4932"
+					item: "immersive_aircraft:steel_boiler"
+					type: "item"
+				}
+				{
+					id: "6771A3EDBA66194E"
+					item: "immersive_aircraft:nether_engine"
+					type: "item"
+				}
+				{
+					id: "58C9E47E9F8301E6"
+					item: "immersive_aircraft:eco_engine"
+					type: "item"
+				}
+				{
+					id: "7438E10643FE3104"
+					item: "immersive_aircraft:enhanced_propeller"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.aircraft_upgrades.title}"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["62FD3E7A836D2E0A"]
+			description: ["{quests.tfg_tips.aircraft_weapons.desc}"]
+			id: "34E3478B77A0C2A0"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.aircraft_weapons.subtitle}"
+			tasks: [
+				{
+					id: "5DB05CFA7AFF2627"
+					item: "immersive_aircraft:rotary_cannon"
+					type: "item"
+				}
+				{
+					id: "53D154EA5969DBCA"
+					item: "immersive_aircraft:telescope"
+					type: "item"
+				}
+				{
+					id: "1551101D10E08568"
+					item: "immersive_aircraft:heavy_crossbow"
+					type: "item"
+				}
+				{
+					id: "3C31C677394E4844"
+					item: "immersive_aircraft:bomb_bay"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.aircraft_weapons.title}"
+			x: -3.0d
+			y: -6.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
