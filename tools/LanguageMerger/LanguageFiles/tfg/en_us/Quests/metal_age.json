@@ -23,7 +23,7 @@
     "quests.metal_age.bloomery.desc": "The Bloomery is a Multiblock from TerraFirmaCraft that allows you to create Wrought Iron. Melting regular Iron produces Cast Iron, which while it has it's uses, its nowhere near as strong or durable as Wrought Iron, which is made in the Bloomery utilizing Iron and Charcoal\n\nYou'll probably need a lot more Bronze than youre expecting to consume for creating the Bloomery, you should definetly begin taking mining seriously at this point.\n\nThe Field Guide contains an entry on how the Bloomery works.",
 
     "quests.metal_age.mining.title": "Mining in the Metallurgy Age",
-    "quests.metal_age.mining.subtitle": "You need to channel your inner Dwarf for the Metallurgy Age.",
+    "quests.metal_age.mining.subtitle": "ROCK AND STONE!",
     "quests.metal_age.mining.desc": "During the Metallurgy Age you will consume a &llot&r of metal to create the Anvils, and in general progressing in the mod pack, while you maybe &ocould've&r obtain enough metal utilizing only Panning and Native Ores, you will definetly need to mine most of it.\n\nIf you need to clear large amounts of blocks you can utilize a Mining Hammer! It can mine blocks in a 3x3x1 area, which makes the creation of mining shafts considerably easier.",
 
     "quests.metal_age.weld_wrought_iron_ingots.title": "Welding Wrought Iron",
@@ -33,7 +33,7 @@
     "quests.metal_age.bellows.title": "Bellows",
     "quests.metal_age.bellows.subtitle": "Higher temperatures can be reached, at a small price.",
     "quests.metal_age.bellows.desc": "The Bellows is a block that basically feeds fires or fuel consuming blocks that are either in front or one block down from the front. This allows the heat produced by the fuel inside to reach higher levels than their usual burning temperature, at the cost of fuel duration.\n\nThe Bellows is basically mandatory for working with Wrought Iron unless you have Coke or Coal.",
-    
+
     "quests.metal_age.wrought_iron_anvil.title": "T3 Anvil: Wrought Iron",
     "quests.metal_age.wrought_iron_anvil.subtitle": "Waterwheels, Windmills and more Greate",
     "quests.metal_age.wrought_iron_anvil.desc": "With the Wrought Iron Anvil you'll be able to work Wrought Iron Ingots into different items such as Sheets, Tool heads, etc.\n\nUnlocking access to Wrought Iron Anvil enables new quests in the Industrial Age, related to better stress sources and some basic Greate machinery.\n\nThe next anvil is going to be probably the hardest one, considered overall your Rite of Passage.",
@@ -42,7 +42,7 @@
     "quests.metal_age.coke_oven.subtitle": "Stop makin those Charcoal Piles",
     "quests.metal_age.coke_oven.desc.1": "The Coke Oven is a Multiblock structure that allows you to create Charcoal and more powerful fuels using the power of time. Utilizing Wood, every 45 seconds the Coke Oven will consume 1 Log and create 1 Charcoal, but more importantly, 250mb of Creosote, which is an important oil used in the Industrial Age.\n\nIf you craft the Coke Oven block and press the JEI Usages key on it (defaults to \"U\"), you'll find the Tab called \"Multiblock Info\", you can use this tab to learn how to build the Coke Oven in the world.\n\nYou can also just place the Controller block in the world, and interact with it while sneaking to create a Hologram of blocks missing.",
     "quests.metal_age.coke_oven.desc.2": "Coke Ovens can be automated using a Coke Oven Hatch. The Hatch is placed on the sides of the Oven and work as both Inputs and Outputs for both Items and Liquids.\n\nYou can easly create a simple, one way Coke Oven by utilizing a Crate for the item Input, another Crate for the item Output, and using a Bronze Drum to collect the Creosote. Unlike Chests, Crates are able to store large objects such as Logs. You can use a Wrench to force the Item Pipe to be one directional as well.",
-    
+
     "quests.metal_age.wrought_iron_goodies.title": "Wrought Iron level Mechanical Power",
     "quests.metal_age.wrought_iron_goodies.subtitle": "What's this \"Andesite Alloy\" you speak of?",
     "quests.metal_age.wrought_iron_goodies.desc": "With Wrought Iron you've unlocked access to the Metal Casing, Metal Casings are used for a bulk of recipes for Create, unlocking things such as Gearboxes.\n\nUtilizing Creosote you can create Treated Wood Planks, which are used in the creation of Waterwheels and Windmills, which are good sources of mechanical power.",
@@ -72,7 +72,7 @@
     "quests.metal_age.kaolin_clay.title": "Kaolin Clay",
     "quests.metal_age.kaolin_clay.subtitle": "Everyone has to go thru the Kaolin Trek",
     "quests.metal_age.kaolin_clay.desc": "Once you find Kaolin Clay, you should bring as much as humanly possible, If you brought a Backpack you could bring a mixture of Kaolin Clay, Kaolin Clay Blocks and Kaolinite Powder, which is made by heating up the Clay.\n\nBring as much as you can, Once you craft the Crucible and the Blast Furnace you won't need too much Kaolin, but it's still a good idea to bring a lot of it to avoid another adventure.",
- 
+
     "quests.metal_age.graphite.title": "Graphite",
     "quests.metal_age.graphite.subtitle": "Pencils do not exist",
     "quests.metal_age.graphite.desc": "Once you find Graphite you should bring as much as you can, Graphite Veins are also rich in Coal and Diamonds, which are useful materials to have at home. Coal in particularly is very useful as it can be turned into Coke, and Coke or Anthracine is required for making Steel. Careful mining of the Graphite should be done, since it's veins are mostly vertical you can easily end up dying from a Cave In.",
@@ -93,7 +93,7 @@
     "quests.metal_age.fire_bricks.title": "Fire Bricks",
     "quests.metal_age.fire_bricks.subtitle": "For the Blast Furnace",
     "quests.metal_age.fire_bricks.desc": "Fire Bricks are used in the construction of the Blast Furnace, you need at the very least 4 Bricks to make the furnace.\n\nThe Bricks will require insulation to make sure the process of making steel is effective, you can either place 3 Wrought Iron Sheets around the Fire Bricks, or use Blast Furnace Insulation",
-    
+
     "quests.metal_age.fully_stacked_blast_furnace.title": "Fully Stacked Blast Furnace",
     "quests.metal_age.fully_stacked_blast_furnace.subtitle": "The completed Blast Furnace",
     "quests.metal_age.fully_stacked_blast_furnace.desc": "The completed Blast Furnace can melt and create a lot of Steel. You should seek to complete it as you'll need a lot of steel for the future.\n\nIt is worth mentioning that in the future, you'll be able to produce both Brick Dust and Clay Dust, mixing these dusts together can be used as a cheap method of creating more Fire Bricks.",
@@ -113,15 +113,15 @@
     "quests.metal_age.steel_anvil.title": "T4 Anvil: Steel",
     "quests.metal_age.steel_anvil.subtitle": "Encased Fans, Crushing Wheels, Mechanical Pumps and More",
     "quests.metal_age.steel_anvil.desc": "With the Steel Anvil you'll be able to work Steel Ingots into different items.\n\nUnlocking access to the Steel Anvil enables new quests in the Industrial Age, related to new processing machinery, and the Mechanical Pump.\n\nThe next anvil will unlock the very beginnings of GregTech's Steam Machinery.",
-    
+
     "quests.metal_age.steel_goodies.title": "Steel level Mechanical Power",
     "quests.metal_age.steel_goodies.subtitle": "Blow, Crush and Pipe",
     "quests.metal_age.steel_goodies.desc": "Steel unlocks a lot more of Greate's mechanical blocks, such as the Mechanical Fan, which is used for washing items in water, the Crushing Wheel, which is even faster and more efficient than the Millstone, and the Mechanical Pump\n\nThe Mechanical Pump is especially useful, as with some smarts, you can easily automate the Blast Furnace.",
-    
+
     "quests.metal_age.weak_steel.title": "Weak Steel Ingredients",
     "quests.metal_age.weak_steel.subtitle": "Hope you like Alloying",
-    "quests.metal_age.weak_steel.desc": "Weak Steel is one part of the necesary metals to create Black Steel, it's made by utilizing 2 parts Steel, 1 part Nickel and 1 part Black Bronze.\n\nYou can check the liquid weak steel's recipe for  more precise alloying percentage rates.", 
-    
+    "quests.metal_age.weak_steel.desc": "Weak Steel is one part of the necesary metals to create Black Steel, it's made by utilizing 2 parts Steel, 1 part Nickel and 1 part Black Bronze.\n\nYou can check the liquid weak steel's recipe for  more precise alloying percentage rates.",
+
     "quests.metal_age.highcarb_black_steel.title": "Black Steel Ingredients",
     "quests.metal_age.highcarb_black_steel.subtitle": "Conservation of Matter does not apply",
     "quests.metal_age.highcarb_black_steel.desc": "The last two anvils are made out of complex Alloys that will require a lot of metal to be created. Black Steel first starts as High Carbon Black Steel, which is made by welding Weak Steel and Pig Iron. It the needs to be worked on the Anvil to turn it into Black Steel",

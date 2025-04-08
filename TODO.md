@@ -11,6 +11,7 @@ Key:
 	- Move the Hang glider quests to General Transportation, replace their position with the mining helmet.
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
+	- Add tfc-textile to clothing section - primitive insulation is good for really early, and predator animal furs are worth a mention
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 
 
