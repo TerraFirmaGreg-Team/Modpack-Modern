@@ -3937,9 +3937,11 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["098739E441CF565D"]
+			dependencies: ["70DA01DFDAE54224"]
 			description: ["{quests.tfg_tips.blue_steel_diving.desc}"]
 			id: "7470780421C6E417"
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "{quests.tfg_tips.blue_steel_diving.subtitle}"
 			tasks: [
 				{
@@ -3988,8 +3990,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.blue_steel_diving.title}"
-			x: 8.0d
-			y: -3.5d
+			x: 16.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -4147,6 +4149,29 @@
 			title: "{quests.tfg_tips.aircraft_weapons.title}"
 			x: -3.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["70DA01DFDAE54224"]
+			description: ["{quests.tfg_tips.piglin_bartering.desc}"]
+			id: "3D5C898F953FECFC"
+			subtitle: "{quests.tfg_tips.piglin_bartering.subtitle}"
+			tasks: [{
+				id: "21E2724723ABB4A5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "minecraft:gold_ingot"
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.piglin_bartering.title}"
+			x: 13.5d
+			y: -8.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
