@@ -19,10 +19,7 @@ Key:
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 		- ⏳ Create Horse Power still needs configs
-		- ⏳ Vintage Improvements:
-			- ✔ Recipes to craft the things
-			- ⏳ Recipes that the machines do
-			- ✔ Adjust where the ingot is rendered on the helve hammer
+		- ✔ Vintage Improvements
 		- ✔ Greate
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Adjust costs of additions' alternator/motor to match greate's SU
