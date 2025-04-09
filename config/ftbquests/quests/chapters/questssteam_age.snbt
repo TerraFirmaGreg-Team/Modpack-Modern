@@ -435,7 +435,7 @@
 				}
 			]
 			x: -13.0d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -465,11 +465,6 @@
 				{
 					id: "38F9301A818347F7"
 					item: "create:depot"
-					type: "item"
-				}
-				{
-					id: "5BA40468AA3A44DF"
-					item: "vintageimprovements:vacuum_chamber"
 					type: "item"
 				}
 			]
@@ -673,7 +668,7 @@
 		}
 		{
 			dependencies: [
-				"6AA07588374B59AB"
+				"5F3063C539C9CBBF"
 				"6FFD4990FF07078A"
 			]
 			description: [
@@ -1125,6 +1120,17 @@
 			}]
 			x: -16.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["6AA07588374B59AB"]
+			id: "5F3063C539C9CBBF"
+			tasks: [{
+				id: "5BAA167FA59D5C32"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 12.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]
