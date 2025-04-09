@@ -27,12 +27,14 @@
 		{
 			id: "292F0E5F9768917A"
 			linked_quest: "5301A38F7EA81140"
+			shape: "diamond"
 			x: 14.0d
 			y: -36.0d
 		}
 		{
 			id: "0F7AB259776E037A"
 			linked_quest: "5E186CD5E83BFDF0"
+			shape: "diamond"
 			x: 14.0d
 			y: -28.5d
 		}
@@ -392,10 +394,7 @@
 			y: -34.0d
 		}
 		{
-			dependencies: [
-				"5996A3A0D475B8A6"
-				"1931FC6DEAC29646"
-			]
+			dependencies: ["5996A3A0D475B8A6"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.weld_steel_ingots.desc}"]
 			id: "4310B619B57276ED"
@@ -647,6 +646,7 @@
 				}
 				{
 					entity: "kaolinclayze:tfc"
+					icon: "kaolinclayze:tfc_spawn_egg"
 					id: "710B94F88C7078C9"
 					type: "kill"
 					value: 1L
@@ -665,6 +665,7 @@
 		}
 		{
 			dependencies: ["2C76EE197C14B0DC"]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.fire_bricks.desc}"]
 			id: "7CD2922D9F6FA6C5"
 			shape: "octagon"
@@ -750,6 +751,7 @@
 				"7CD2922D9F6FA6C5"
 				"5996A3A0D475B8A6"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.fully_stacked_blast_furnace.desc}"]
 			id: "0DF072EF25B2628D"
 			optional: true
@@ -927,6 +929,7 @@
 				}
 				{
 					entity: "kaolinclayze:golem_2"
+					icon: "kaolinclayze:golem_2_spawn_egg"
 					id: "0981F64F296CDDC5"
 					type: "kill"
 					value: 1L
@@ -939,6 +942,7 @@
 		{
 			dependencies: ["5A936E9BCF30AA3D"]
 			description: ["{quests.metal_age.overworld_kaolin.desc}"]
+			icon: "tfc:wood/sapling/kapok"
 			id: "68B7D07D57A103BE"
 			subtitle: "{quests.metal_age.overworld_kaolin.subtitle}"
 			tasks: [{
@@ -1316,6 +1320,50 @@
 			title: "{quests.metal_age.highcarb_blu_steel.title}"
 			x: 27.0d
 			y: -22.5d
+		}
+		{
+			dependencies: ["3C173357029AB649"]
+			description: ["{quests.metal_age.copper_diving.desc}"]
+			id: "70FE6706B43FC5FC"
+			subtitle: "{quests.metal_age.copper_diving.subtitle}"
+			tasks: [
+				{
+					id: "63FC28D0F3FCDE11"
+					item: {
+						Count: 1
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "039434E2FD245F63"
+					item: {
+						Count: 1
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58440049BDA56F74"
+					item: {
+						Count: 1
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.copper_diving.title}"
+			x: 0.0d
+			y: -34.0d
 		}
 	]
 	subtitle: ["{quests.metal_age.subtitle}"]

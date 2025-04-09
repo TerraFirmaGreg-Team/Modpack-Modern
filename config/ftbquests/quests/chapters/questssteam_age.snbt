@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "questssteam_age"
 	group: "3C4612A920658A7E"
-	icon: "gtceu:steam_bucket"
+	icon: "gtceu:steel_gear"
 	id: "784A885090386609"
 	order_index: 2
 	quest_links: [
@@ -80,6 +80,7 @@
 		{
 			id: "0CE64B9914191C56"
 			linked_quest: "6FFD4990FF07078A"
+			shape: "diamond"
 			x: -11.0d
 			y: 9.5d
 		}
@@ -258,6 +259,7 @@
 		{
 			dependencies: ["56CA2EB7812529C5"]
 			id: "183D47F04CAEBFA7"
+			optional: true
 			size: 1.0d
 			tasks: [{
 				id: "704B7094BE2FB3E1"
@@ -435,7 +437,7 @@
 				}
 			]
 			x: -13.0d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -467,11 +469,6 @@
 					item: "create:depot"
 					type: "item"
 				}
-				{
-					id: "5BA40468AA3A44DF"
-					item: "vintageimprovements:vacuum_chamber"
-					type: "item"
-				}
 			]
 			x: -16.5d
 			y: 12.0d
@@ -485,7 +482,8 @@
 			]
 			icon: "gtceu:ball_casting_mold"
 			id: "09E12A399EE0A628"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "Reduce the amount of malding by molding"
 			tasks: [
@@ -521,9 +519,9 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["52DAF93E2F3D688A"]
+			dependencies: ["46FA9DD4755A5548"]
 			id: "0805CCABC8E7F6CF"
-			shape: "heart"
+			shape: "octagon"
 			size: 2.0d
 			tasks: [{
 				id: "72D748120CACABE2"
@@ -673,7 +671,7 @@
 		}
 		{
 			dependencies: [
-				"6AA07588374B59AB"
+				"5F3063C539C9CBBF"
 				"6FFD4990FF07078A"
 			]
 			description: [
@@ -730,6 +728,7 @@
 		{
 			dependencies: ["4CD3F04793CE47A2"]
 			id: "0EC73D1964E67E99"
+			shape: "diamond"
 			tasks: [{
 				id: "233A5026EDB2C861"
 				item: "minecraft:paper"
@@ -788,6 +787,7 @@
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			id: "6A92E8396DE40577"
+			optional: true
 			tasks: [{
 				id: "269D79581AC1E0D6"
 				item: "vintageimprovements:lathe"
@@ -813,6 +813,7 @@
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			id: "1E8CC993E0251828"
+			optional: true
 			tasks: [{
 				id: "3035C0B44A0E1854"
 				item: "vintageimprovements:vibrating_table"
@@ -835,6 +836,7 @@
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			id: "0078B9234C554C6E"
+			optional: true
 			tasks: [{
 				id: "40E3951B8862B9A4"
 				item: "greate:steel_mechanical_saw"
@@ -846,6 +848,7 @@
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			id: "6ABACC7B9967851D"
+			optional: true
 			tasks: [{
 				id: "2AE28D5C5FC74A56"
 				item: "vintageimprovements:curving_press"
@@ -879,6 +882,7 @@
 			]
 			icon: "gtceu:steam_oven"
 			id: "3E6DE0B94490FCEC"
+			optional: true
 			shape: "heart"
 			size: 1.0d
 			subtitle: "The Steam Grinder's big brother"
@@ -972,6 +976,7 @@
 				"648BCF486E16CCB2"
 			]
 			id: "0E57FC7FBFF1CFEB"
+			optional: true
 			shape: "heart"
 			tasks: [{
 				id: "2A48D5B33BB7C9FE"
@@ -991,7 +996,7 @@
 			]
 			icon: "gtceu:lv_machine_hull"
 			id: "0DAE3D612E70F462"
-			shape: "heart"
+			shape: "diamond"
 			tasks: [{
 				id: "759B03FB27B79731"
 				type: "checkmark"
@@ -1078,6 +1083,8 @@
 			]
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "6B6FEF3DC6299CD9"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "...I'm going into battle, and I need only your finest Potin."
 			tasks: [{
@@ -1095,6 +1102,47 @@
 			title: "Potin Seller..."
 			x: -5.5d
 			y: 13.0d
+		}
+		{
+			dependencies: ["26F07C926959FACF"]
+			id: "2F81902C6B1D4902"
+			tasks: [
+				{
+					id: "272B2620E00219B5"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "12C909F6EB4BB615"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "Engineer's tools"
+			x: -24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6AA07588374B59AB"]
+			id: "02854A3E8A5D5043"
+			tasks: [{
+				id: "7D63DDE72E9AC188"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["6AA07588374B59AB"]
+			id: "5F3063C539C9CBBF"
+			tasks: [{
+				id: "5BAA167FA59D5C32"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 12.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

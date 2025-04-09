@@ -20,9 +20,9 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.shaped('6x minecraft:moss_carpet', [
 		'AA'
-		],{
+	], {
 		A: 'minecraft:moss_block'
-		}).id(`tfg:shaped/moss_carpet`)
+	}).id(`tfg:shaped/moss_carpet`)
 
 	//paraffin
 	event.recipes.gtceu.chemical_reactor('tfg:paraffin_wax_from_lubricant')
@@ -38,7 +38,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputs('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000))
 		.outputItem('tfg:conifer_rosin')
 		.id('tfg:vat/conifer_pitch_to_rosin');
-		
+
 	event.recipes.tfc.pot('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000), 5000, 300)
 		.itemOutput('tfg:conifer_rosin')
 		.id('tfg:pot/conifer_pitch_to_rosin')
@@ -52,14 +52,14 @@ function registerTFGMiscellaneousRecipes(event) {
 			.duration(80)
 			.EUt(20)
 			.category(GTRecipeCategories.CHEM_DYES)
-		
-    	event.recipes.tfc.heating(`tfg:decorative_vase/unfired/${color}`, 1399)
-        	.resultItem(`tfg:decorative_vase/${color}`)
+
+		event.recipes.tfc.heating(`tfg:decorative_vase/unfired/${color}`, 1399)
+			.resultItem(`tfg:decorative_vase/${color}`)
 			.id(`tfg:heating/decorative_vase/unfired/${color}`)
 
 		event.recipes.tfc.barrel_sealed(1000)
-        	.outputItem(`tfg:decorative_vase/unfired/${color}`)
-        	.inputItem(Ingredient.of('#tfg:decorative_vases/unfired').subtract(`tfg:decorative_vase/unfired/${color}`))
+			.outputItem(`tfg:decorative_vase/unfired/${color}`)
+			.inputItem(Ingredient.of('#tfg:decorative_vases/unfired').subtract(`tfg:decorative_vase/unfired/${color}`))
 			.inputFluid(Fluid.of(`tfc:${color}_dye`, 25))
 			.id(`tfg:barrel/dyeing/decorative_vase/${color}`)
 
@@ -81,23 +81,23 @@ function registerTFGMiscellaneousRecipes(event) {
 		'1x tfg:decorative_vase',
 		'tfg:decorative_vase/unfired'
 	).id('tfg:smelting/decorative_vase')
-		
+
 	event.recipes.tfc.heating('tfg:decorative_vase/unfired', 1399)
 		.resultItem('tfg:decorative_vase')
 		.id('tfg:heating/decorative_vase/unfired')
 
 	event.recipes.tfc.knapping(
-        'tfg:decorative_vase/unfired',
-        'tfc:clay',
-        [
-            ' X X ',
-            'XX XX',
-            'X   X',
-            'X   X',
-            'XXXXX'
-        ]
-    ).outsideSlotRequired(false)
-	.id('tfg:knapping/decorative_vase/unfired')
+		'tfg:decorative_vase/unfired',
+		'tfc:clay',
+		[
+			' X X ',
+			'XX XX',
+			'X   X',
+			'X   X',
+			'XXXXX'
+		]
+	).outsideSlotRequired(false)
+		.id('tfg:knapping/decorative_vase/unfired')
 
 
 	// lactose & curd
@@ -126,29 +126,29 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(30)
 
 	//Scaffolding Frame
-	event.shaped('tfg:scaffolding_frame', 
-	[
-		'AAA',
-		'ABA',
-		'AAA'
-	],
-	{
-		A: 'minecraft:stick',
-		B: '#forge:cloth'
-	}).id('tfg:shaped/scaffolding_frame');
+	event.shaped('tfg:scaffolding_frame',
+		[
+			'AAA',
+			'ABA',
+			'AAA'
+		],
+		{
+			A: '#forge:rods/wood',
+			B: '#forge:cloth'
+		}).id('tfg:shaped/scaffolding_frame');
 
 	event.recipes.gtceu.assembler('tfg:assembler/scaffolding_frame')
-		.itemInputs('8x minecraft:stick', '#forge:cloth')
+		.itemInputs('8x #forge:rods/wood', '#forge:cloth')
 		.itemOutputs('tfg:scaffolding_frame')
 		.duration(10)
 		.EUt(2);
 
 	//Airship Hull
-	event.shaped('tfg:airship_hull',[
+	event.shaped('tfg:airship_hull', [
 		'A B',
 		'C C',
 		'CCC'
-	],{
+	], {
 		A: '#forge:tools/screwdrivers',
 		B: '#forge:tools/hammers',
 		C: 'immersive_aircraft:hull'
@@ -161,7 +161,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(10);
 
 	//Airship Balloon
-	event.shaped('tfg:airship_balloon',[
+	event.shaped('tfg:airship_balloon', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -176,4 +176,17 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(40)
 		.circuit(1)
 		.EUt(10)
+
+	// Steam bloomery
+	event.shaped('gtceu:steam_bloomery', [
+		'CEC',
+		'DAD',
+		'CBC'
+	], {
+		A: 'tfc:bloomery',
+		B: '#forge:frames/bronze',
+		C: '#forge:rods/black_steel',
+		D: '#forge:screws/wrought_iron',
+		E: '#forge:tools/wrenches'
+	})
 }

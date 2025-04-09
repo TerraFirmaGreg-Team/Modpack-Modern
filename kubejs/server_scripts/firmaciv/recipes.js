@@ -120,4 +120,15 @@ const registerFirmaCivRecipes = (event) => {
         .resultFluid(Fluid.of('gtceu:iron', 1872))
         .id(`firmaciv:heating/cannon`)
     //#endregion
+
+    // #region More rope
+    event.shaped('firmaciv:rope_coil', [
+        'A ',
+        'AB',
+        'A '
+    ], {
+        A: '#forge:cloth',
+        B: '#forge:wax'
+    }).id('tfg:firmaciv/rope_coil_from_cloth')
+    // #endregion
 }

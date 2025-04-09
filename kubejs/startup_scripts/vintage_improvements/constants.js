@@ -1,5 +1,9 @@
 // priority: 0
 
+
+global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER = 4;
+
+
 global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 
 	'vintageimprovements:belt_grinder',

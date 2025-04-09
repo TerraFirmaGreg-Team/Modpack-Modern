@@ -88,7 +88,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		A: '#gtceu:resistors',
 		B: '#gtceu:circuits/lv',
 		C: 'gtceu:ulv_voltage_coil',
-		D: 'gtceu:lv_machine_casing',
+		D: 'gtceu:lv_machine_hull',
 		E: 'gtceu:tin_single_cable',
 		F: 'greate:steel_shaft'
 	}).id('tfg:alternator_mv')

@@ -11,7 +11,6 @@ Key:
 	- Move the Hang glider quests to General Transportation, replace their position with the mining helmet.
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
-	- Add tfc-textile to clothing section - primitive insulation is good for really early, and predator animal furs are worth a mention
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 
 
@@ -20,16 +19,14 @@ Key:
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 		- ⏳ Create Horse Power still needs configs
-		- ⏳ Vintage Improvements:
-			- ✔ Recipes to craft the things
-			- ⏳ Recipes that the machines do
-			- ✔ Adjust where the ingot is rendered on the helve hammer
+		- ✔ Vintage Improvements
 		- ✔ Greate
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Adjust costs of additions' alternator/motor to match greate's SU
 	- Check LBB efficiency of creosote
 - ✔ Immersive aircraft (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
+- Something about milk curdling having circuit number conflicts?
 
 ## Worldgen
 - ✔ Redeix is working on some overworld structures

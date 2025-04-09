@@ -21,7 +21,7 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.shaped('vintageimprovements:vacuum_chamber', [
 		'EBE',
-		'DAD',
+		'DAG',
 		'FCF'
 	], {
 		A: 'gtceu:ulv_machine_hull',
@@ -29,7 +29,8 @@ function registerVintageImprovementsRecipes(event) {
 		C: 'create:mechanical_piston',
 		D: '#forge:springs/wrought_iron',
 		E: 'create:electron_tube',
-		F: '#forge:plates/black_steel'
+		F: '#forge:plates/black_steel',
+		G: 'create:precision_mechanism'
 	}).id('tfg:vi/shaped/vacuum_chamber')
 
 	event.shaped('vintageimprovements:vibrating_table', [
@@ -63,16 +64,19 @@ function registerVintageImprovementsRecipes(event) {
 	event.shaped('vintageimprovements:curving_press', [
 		'DBD',
 		'FAF',
-		'GEC'
+		'CEC'
 	], {
 		A: 'gtceu:ulv_machine_hull',
 		B: 'greate:steel_shaft',
-		C: '#forge:plates/black_steel',
+		C: '#forge:rods/steel',
 		D: '#gtceu:circuits/ulv',
-		E: 'gtceu:empty_mold',
+		E: '#forge:plates/black_steel',
 		F: '#forge:springs/wrought_iron',
 		G: 'create:precision_mechanism'
 	}).id('tfg:vi/shaped/curving_press')
+
+	event.shapeless('vintageimprovements:curving_press', ['create:mechanical_press', '#forge:tools/files'])
+		.id('tfg:shapeless/mech_press_converting')
 
 	event.shaped('vintageimprovements:helve_hammer', [
 		'F A',
@@ -284,7 +288,6 @@ function registerVintageImprovementsRecipes(event) {
 	})
 	// #endregion
 
-	const ULV_DURATION_MULTIPLIER = 4;
 
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
@@ -295,7 +298,7 @@ function registerVintageImprovementsRecipes(event) {
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.rod, material, 1)],
 				results: [ChemicalHelper.get(TagPrefix.springSmall, material, 1)],
-				processingTime: (material.getMass() / 2) * ULV_DURATION_MULTIPLIER
+				processingTime: (material.getMass() / 2) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_small_spring`)
 		}
 
@@ -304,7 +307,7 @@ function registerVintageImprovementsRecipes(event) {
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.rodLong, material, 1)],
 				results: [ChemicalHelper.get(TagPrefix.spring, material, 1)],
-				processingTime: material.getMass() * ULV_DURATION_MULTIPLIER
+				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_spring`)
 		}
 
@@ -314,7 +317,7 @@ function registerVintageImprovementsRecipes(event) {
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.plate, material, 1)],
 				results: [singleWire],
-				processingTime: material.getMass() * ULV_DURATION_MULTIPLIER
+				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_single_wire`)
 		}
 
@@ -323,7 +326,7 @@ function registerVintageImprovementsRecipes(event) {
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.wireGtSingle, material, 1)],
 				results: [ChemicalHelper.get(TagPrefix.wireFine, material, 4)],
-				processingTime: material.getMass() * 3 * ULV_DURATION_MULTIPLIER
+				processingTime: material.getMass() * 3 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_fine_wire`)
 		}
 
@@ -363,7 +366,7 @@ function registerVintageImprovementsRecipes(event) {
 					{ item: `gtceu:flawed_${material.getName()}_gem`, chance: highYield ? 0.20 : 0.25 },
 					{ item: `gtceu:chipped_${material.getName()}_gem`, chance: highYield ? 0.30 : 0.35 }
 				],
-				processingTime: 400 * ULV_DURATION_MULTIPLIER
+				processingTime: 400 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 
@@ -381,7 +384,7 @@ function registerVintageImprovementsRecipes(event) {
 					type: 'vintageimprovements:turning',
 					ingredients: [latheInput],
 					results: [ChemicalHelper.get(TagPrefix.rod, material, 2)],
-					processingTime: material.getMass() * 2 * ULV_DURATION_MULTIPLIER
+					processingTime: material.getMass() * 2 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/lathe/${material.getName()}_to_rod`)
 			}
 		}
@@ -391,8 +394,34 @@ function registerVintageImprovementsRecipes(event) {
 				type: 'vintageimprovements:turning',
 				ingredients: [ChemicalHelper.get(TagPrefix.bolt, material, 1)],
 				results: [ChemicalHelper.get(TagPrefix.screw, material, 1)],
-				processingTime: Math.max(1, material.getMass() / 8) * ULV_DURATION_MULTIPLIER
+				processingTime: Math.max(1, material.getMass() / 8) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/lathe/${material.getName()}_bolt_to_screw`)
+		}
+
+		// #endregion
+
+		// #region Pressurizing
+
+		if (material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) {
+			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1);
+
+			event.custom({
+				type: 'vintageimprovements:pressurizing',
+				ingredients: [ingotItem, ingotItem, { item: 'tfc:powder/flux' }],
+				"heatRequirement": "heated",
+				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
+				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
+			
+			const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
+
+			event.custom({
+				type: 'vintageimprovements:pressurizing',
+				ingredients: [plateItem, plateItem, { item: 'tfc:powder/flux' }],
+				"heatRequirement": "heated",
+				results: [ChemicalHelper.get(TagPrefix.plateDouble, material, 1)],
+				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
 		}
 
 		// #endregion
@@ -412,7 +441,7 @@ function registerVintageImprovementsRecipes(event) {
 			{ item: 'minecraft:flint', chance: 0.33 },
 			{ item: 'minecraft:flint', chance: 0.25 }
 		],
-		processingTime: 100 * ULV_DURATION_MULTIPLIER
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/vibrating/gravel`)
 
 	// #endregion
@@ -428,6 +457,34 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #endregion
 
+	// #region Curving Press
+
+	event.forEachRecipe([{ type: 'gtceu:extruder' }],
+		recipe => {
+			let r = JSON.parse(recipe.json)
+
+			// LV recipes only
+			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
+			if (!(EUt <= 32)) { return }
+
+			let input = r.inputs.item[0].content.ingredient;
+			input.count = r.inputs.item[0].content.count;
+
+			let output = r.outputs.item[0].content.ingredient;
+			output.count = r.outputs.item[0].content.count;
+
+			event.custom({
+				type: 'vintageimprovements:curving',
+				ingredients: [ input ],
+				itemAsHead: r.inputs.item[1].content.ingredient.item,
+				results: [ output ],
+				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+			}).id(`tfg:vi/curving/${recipe.getId().split(':')[1]}`)
+		}
+	)
+
+	// #endregion
+
 	// #region Centrifuge
 
 	// Copied from https://github.com/ThePansmith/Monifactory/blob/15c109298104e0c0b5083b266264bd6c158c6154/kubejs/server_scripts/mods/optionalCompats/create.js#L251
@@ -435,6 +492,7 @@ function registerVintageImprovementsRecipes(event) {
 		recipe => {
 			let r = JSON.parse(recipe.json)
 
+			// ULV recipes only
 			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
 			if (!(EUt <= 8)) { return }
 
@@ -471,7 +529,7 @@ function registerVintageImprovementsRecipes(event) {
 				type: 'vintageimprovements:centrifugation',
 				ingredients: inputs,
 				results: outputs,
-				processingTime: r.duration * ULV_DURATION_MULTIPLIER
+				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/centrifuge/${recipe.getId().split(':')[1]}`)
 		}
 	)

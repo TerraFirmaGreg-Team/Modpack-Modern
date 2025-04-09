@@ -7,7 +7,10 @@ const registerCreateItemTags = (event) => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
+
 	// Is this Greate's fault?
+	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
+	event.remove('c:hidden_from_recipe_viewers', 'create:brass_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
 
 	// Тэги для ручек и сидушек

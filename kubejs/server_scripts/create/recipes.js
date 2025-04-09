@@ -325,7 +325,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:andesite_casing',
 		B: 'firmaciv:rope_coil',
-		C: '#forge:plates',
+		C: '#forge:plates/wrought_iron',
 		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/rope_pulley')
@@ -338,7 +338,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:brass_casing',
 		B: 'firmaciv:rope_coil',
-		C: '#forge:plates',
+		C: '#forge:plates/steel',
 		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches',
 		F: 'create:electron_tube'
@@ -653,45 +653,47 @@ const registerCreateRecipes = (event) => {
 
 	// Умный раздатчик/приемник из латуни
 	event.shaped('2x create:brass_funnel', [
+		' E ',
 		'AAD',
 		'BBC'
 	], {
 		A: '#forge:plates/brass',
 		B: '#forge:foils/rubber',
 		C: '#forge:tools/wrenches',
-		D: '#forge:tools/knives'
+		D: '#forge:tools/knives',
+		E: 'create:electron_tubes'
 	}).id('tfg:create/shaped/brass_funnel')
 
 	event.shaped('2x create:brass_funnel', [
+		' E ',
 		'AAD',
 		'BBC'
 	], {
 		A: '#forge:plates/brass',
 		B: '#forge:leather',
 		C: '#forge:tools/wrenches',
-		D: '#forge:tools/knives'
+		D: '#forge:tools/knives',
+		E: 'create:electron_tubes'
 	}).id('tfg:create/shaped/brass_funnel_leather')
 
 	// Тунель из железа
 	event.shaped('create:andesite_tunnel', [
-		'CD',
+		' D',
 		'AA',
 		'BB'
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:foils/rubber',
-		C: 'create:electron_tube',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/andesite_tunnel')
 
 	event.shaped('create:andesite_tunnel', [
-		'CD',
+		' D',
 		'AA',
 		'BB'
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:leather',
-		C: 'create:electron_tube',
 		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/andesite_tunnel_leather')
 
@@ -865,7 +867,7 @@ const registerCreateRecipes = (event) => {
 		'CDC',
 		'EFE'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: '#forge:screws/copper',
 		B: 'greate:andesite_alloy_shaft',
 		C: '#forge:plates/copper',
 		D: 'tfc:bellows',
@@ -889,7 +891,7 @@ const registerCreateRecipes = (event) => {
 		'ABA',
 		'CDC'
 	], {
-		A: '#forge:screws/wrought_iron',
+		A: '#forge:screws/copper',
 		B: 'tfc:metal/boots/copper',
 		C: '#forge:ingots/iron',
 		D: 'firmaciv:large_waterproof_hide'

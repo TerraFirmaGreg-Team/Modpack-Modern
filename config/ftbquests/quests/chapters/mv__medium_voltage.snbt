@@ -1706,7 +1706,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1FFD2242B94A7378"]
 			dependency_requirement: "one_started"
 			description: [
 				"Regular &o&dGregTech&r Fluid Pipes can only transport one fluid type at a time."
