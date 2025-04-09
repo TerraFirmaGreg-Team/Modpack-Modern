@@ -27,6 +27,7 @@ Key:
 - ✔ Immersive aircraft (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
+- Add that mod that disables xp
 
 ## Worldgen
 - ✔ Redeix is working on some overworld structures
@@ -35,7 +36,7 @@ Key:
 ## Technical
 - GT + TFC food expiration compat
 	- check if the forge capabilities mixin solves this
-- Akistor carts mixin is commented out
+- Akistor carts mixin is commented out, for the plows
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
 - ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
