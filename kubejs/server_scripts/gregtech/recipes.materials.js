@@ -39,6 +39,26 @@ function registerGTCEUMetalRecipes(event) {
 				.duration(material.getMass() * 6)
 				.EUt(GTValues.VA[GTValues.LV])
 
+			if (headTagPrefix.materialAmount() / GTValues.M == 1) {
+				event.custom({
+					type: 'vintageimprovements:curving',
+					ingredients: [ingotItem],
+					itemAsHead: extruderMold,
+					results: [toolHeadItem],
+					processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
+			}
+			else {
+				event.custom({
+					type: 'vintageimprovements:curving',
+					// have to do [item, item] instead of [item x2]
+					ingredients: [ingotItem, ingotItem],
+					itemAsHead: extruderMold,
+					results: [toolHeadItem],
+					processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				}).id(`tfg:vi/curving/${material.getName()}_ingot_to_${new String(headTagPrefix.name).toLowerCase()}_head`)
+			}
+
 			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_${new String(headTagPrefix.name).toLowerCase()}_head`)
 				.itemInputs(toolHeadItem)
 				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1))
