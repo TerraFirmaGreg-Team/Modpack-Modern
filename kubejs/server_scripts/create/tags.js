@@ -12,6 +12,11 @@ const registerCreateItemTags = (event) => {
 	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:brass_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
+	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_copper')
+	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_zinc')
+	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_tin')
+	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_silver')
+	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_lead')
 
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {

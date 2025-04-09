@@ -661,7 +661,7 @@ const registerGTCEURecipes = (event) => {
 		C: '#forge:plates/steel',
 		D: '#forge:rods/black_steel',
 		E: 'gtceu:tin_alloy_small_fluid_pipe',
-		F: '#forge:raw_ores/diamond'
+		F: '#forge:raw_materials/diamond'
 	}).id('gtceu:shaped/steam_macerator_steel')
 
 	// Компрессор
