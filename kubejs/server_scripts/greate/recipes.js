@@ -121,7 +121,7 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/andesite_alloy_millstone3')
 
 	event.shaped('greate:steel_millstone', [
-		' B ',
+		'FBF',
 		'DCE',
 		'AAA'
 	], {
@@ -129,7 +129,8 @@ function registerGreateRecipes(event) {
 		B: 'gtceu:treated_wood_slab',
 		C: '#forge:gears/steel',
 		D: '#forge:tools/hammers',
-		E: '#forge:tools/wrenches'
+		E: '#forge:tools/wrenches',
+		F: '#forge:dusts/diamond'
 	}).id('greate:shaped/steel_millstone')
 
 	// #endregion
