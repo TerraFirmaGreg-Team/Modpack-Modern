@@ -13,7 +13,6 @@ Key:
 	- Finish quest spoke: GregTech
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 
-
 ## Mods & Recipes
 - ⏳ Recipes for advanced peripherals and computercraft
 - Early game create changes
@@ -24,13 +23,12 @@ Key:
 	- Check/configure SU usage of everything else create related so it lines up with Greate's
 	- Adjust costs of additions' alternator/motor to match greate's SU
 	- Check LBB efficiency of creosote
-- ✔ Immersive aircraft (being worked on by nebby)
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
 - Add that mod that disables xp
+- where the fuck did the iron door recipe go
 
 ## Worldgen
-- ✔ Redeix is working on some overworld structures
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
