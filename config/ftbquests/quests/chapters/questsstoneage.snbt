@@ -53,7 +53,12 @@
 	quests: [
 		{
 			dependencies: ["3D7B0F3134C30364"]
-			description: ["{quests.stone_age.find_rock.desc}"]
+			description: [
+				"{quests.stone_age.find_rock.desc}"
+				"{@pagebreak}"
+				""
+				"{image:tfc:textures/gui/book/gui/rock_knapping.png width:100 height:100 align:center fit:true}"
+			]
 			id: "78E3BF0BEB48635B"
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_rock.subtitle}"
@@ -302,32 +307,18 @@
 			id: "76B145EFF9B5DB67"
 			min_required_dependencies: 2
 			subtitle: "{quests.stone_age.first_saw.subtitle}"
-			tasks: [
-				{
-					id: "025AB5FDFA6CFADE"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:copper_saw_head)item(gtceu:bismuth_bronze_saw_head)item(gtceu:bronze_saw_head)item(gtceu:black_bronze_saw_head))"
-						}
+			tasks: [{
+				id: "552927025A57B775"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:copper_saw)item(gtceu:bismuth_bronze_saw)item(gtceu:bronze_saw)item(gtceu:black_bronze_saw))"
 					}
-					title: "{quests.stone_age.first_saw.tasks.1}"
-					type: "item"
 				}
-				{
-					id: "552927025A57B775"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item(gtceu:copper_saw)item(gtceu:bismuth_bronze_saw)item(gtceu:bronze_saw)item(gtceu:black_bronze_saw))"
-						}
-					}
-					title: "{quests.stone_age.first_saw.tasks.2}"
-					type: "item"
-				}
-			]
+				title: "{quests.stone_age.first_saw.tasks.2}"
+				type: "item"
+			}]
 			title: "{quests.stone_age.first_saw.title}"
 			x: 11.0d
 			y: 8.5d
@@ -400,7 +391,21 @@
 				"2108338E1693768B"
 				"015E7A116CCD3191"
 			]
-			description: ["{quests.stone_age.pit_kiln.desc}"]
+			description: [
+				"{quests.stone_age.pit_kiln.desc}"
+				"{@pagebreak}"
+				""
+				"{image:tfc:textures/gui/book/tutorial/pit_kiln_2.png width:100 height:100 align:center}"
+				"{@pagebreak}"
+				""
+				"{image:tfc:textures/gui/book/tutorial/pit_kiln_3.png width:100 height:100 align:center}"
+				"{@pagebreak}"
+				""
+				"{image:tfc:textures/gui/book/tutorial/pit_kiln_4.png width:100 height:100 align:center}"
+				"{@pagebreak}"
+				""
+				"{image:tfc:textures/gui/book/tutorial/pit_kiln_5.png width:100 height:100 align:center}"
+			]
 			id: "3630ED3B85753BB2"
 			size: 2.0d
 			subtitle: "{quests.stone_age.pit_kiln.subtitle}"
@@ -1035,32 +1040,18 @@
 			description: ["{quests.stone_age.make_vessel.desc}"]
 			id: "13BC619900C60011"
 			subtitle: "{quests.stone_age.make_vessel.subtitle}"
-			tasks: [
-				{
-					id: "213723450D53ADC4"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:unfired_vessels)"
-						}
+			tasks: [{
+				id: "3D22B852717C116B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:vessels)"
 					}
-					title: "{quests.tasktype.item.any} #tfc:unfired_vessels"
-					type: "item"
 				}
-				{
-					id: "3D22B852717C116B"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:vessels)"
-						}
-					}
-					title: "{quests.tasktype.item.any} #tfc:vessels"
-					type: "item"
-				}
-			]
+				title: "{quests.tasktype.item.any} #tfc:vessels"
+				type: "item"
+			}]
 			title: "{quests.stone_age.make_vessel.title}"
 			x: 12.5d
 			y: 6.0d
@@ -1073,36 +1064,20 @@
 			description: ["{quests.stone_age.make_saw_mold.desc}"]
 			id: "3CA3B76D09F03ED6"
 			subtitle: "{quests.stone_age.make_saw_mold.subtitle}"
-			tasks: [
-				{
-					id: "5801C01836A543B5"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			tasks: [{
+				id: "0619DDD319F0F2E4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:ceramic/unfired_saw_blade_mold"
 					}
-					type: "item"
+					id: "tfc:ceramic/saw_blade_mold"
 				}
-				{
-					id: "0619DDD319F0F2E4"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/saw_blade_mold"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "{quests.stone_age.make_saw_mold.title}"
 			x: 11.0d
 			y: 6.0d
@@ -1115,27 +1090,11 @@
 			description: ["{quests.stone_age.make_jug.desc}"]
 			id: "718CDC407CDE32E1"
 			subtitle: "{quests.stone_age.make_jug.subtitle}"
-			tasks: [
-				{
-					id: "5C0D168E0E85C6E5"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/unfired_jug"
-					}
-					type: "item"
-				}
-				{
-					id: "3106F057BE27C2D5"
-					item: "tfc:ceramic/jug"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3106F057BE27C2D5"
+				item: "tfc:ceramic/jug"
+				type: "item"
+			}]
 			title: "{quests.stone_age.make_jug.title}"
 			x: 9.5d
 			y: 6.0d
@@ -2323,6 +2282,7 @@
 			dependencies: ["4521BB8892B386AF"]
 			description: ["{quests.stone_age.primitive_insulation.desc}"]
 			id: "2508A373A5A5C932"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.stone_age.primitive_insulation.subtitle}"
 			tasks: [
@@ -2379,6 +2339,7 @@
 			dependencies: ["4521BB8892B386AF"]
 			description: ["{quests.stone_age.furs.desc}"]
 			id: "615A5EBBA87D37CF"
+			optional: true
 			shape: "heart"
 			subtitle: "{quests.stone_age.furs.subtitle}"
 			tasks: [{
