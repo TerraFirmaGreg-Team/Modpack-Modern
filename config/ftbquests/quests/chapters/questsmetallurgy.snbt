@@ -464,20 +464,10 @@
 			id: "53E1383F12EC6765"
 			optional: true
 			subtitle: "{quests.metal_age.overworld_graphite.subtitle}"
-			tasks: [
-				{
-					biome: "tfc:ocean"
-					icon: "minecraft:sand"
-					id: "4012F0C64B38E134"
-					title: "{quests.tasktype.travelto} tfc:ocean"
-					type: "biome"
-				}
-				{
-					id: "0960B9F960BFFFDE"
-					item: "tfc:rock/raw/gabbro"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "25A552657AFA7BC2"
+				type: "checkmark"
+			}]
 			title: "{quests.metal_age.overworld_graphite.title}"
 			x: 11.5d
 			y: -30.5d
