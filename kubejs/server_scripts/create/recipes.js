@@ -325,7 +325,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:andesite_casing',
 		B: 'firmaciv:rope_coil',
-		C: '#forge:plates',
+		C: '#forge:plates/wrought_iron',
 		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/rope_pulley')
@@ -338,7 +338,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:brass_casing',
 		B: 'firmaciv:rope_coil',
-		C: '#forge:plates',
+		C: '#forge:plates/steel',
 		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches',
 		F: 'create:electron_tube'
