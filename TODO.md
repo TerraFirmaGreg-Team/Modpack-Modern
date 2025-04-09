@@ -27,6 +27,7 @@ Key:
 - Something about milk curdling having circuit number conflicts?
 - Add that mod that disables xp
 - where the fuck did the iron door recipe go
+- change cutter recipes to not require a circuit because the mech saw really doesn't like them, also increase the curving press' item size (so we can get rid of so much warning spam in the logs)
 
 ## Worldgen
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
