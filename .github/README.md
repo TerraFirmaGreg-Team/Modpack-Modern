@@ -19,7 +19,7 @@
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Request Features</a>
     ·
-    <a href="https://github.com/orgs/TerraFirmaGreg-Team/projects/10">Roadmap</a>
+    <a href="https://github.com/Pyritie/Modpack-Modern/blob/0.9/TODO.md">Roadmap</a>
   </p>
 </div>
 <br/>
@@ -40,7 +40,6 @@ Also in the modpack there are other interesting mods that will allow you to pass
 - [GregTech Modern]
 - [Applied Energistics]
 - [Create]
-- [Gregicality Rocketry]
 
 
 and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
@@ -58,4 +57,3 @@ If you're looking for Localizing the modpack to a Language, please feel free to 
 [GregTech Modern]: https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern
 [Applied Energistics]: https://www.curseforge.com/minecraft/mc-mods/ae2
 [Create]: https://www.curseforge.com/minecraft/mc-mods/create
-[Gregicality Rocketry]: https://www.curseforge.com/minecraft/mc-mods/gcyr

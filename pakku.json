@@ -6,7 +6,8 @@
     "overrides": [
         "config",
         "defaultconfigs",
-        "kubejs"
+        "kubejs",
+        "!kubejs/probe/**"
     ],
     "server_overrides": [
         "forge-auto-install.txt",
