@@ -70,7 +70,7 @@
     "quests.stone_age.primitive_insulation.title": "Primitive Insulation",
     "quests.stone_age.primitive_insulation.subtitle": "Caveman Chic",
     "quests.stone_age.primitive_insulation.desc": "Naked and freezing? This is the easiest clothing you can craft, and though it has very low durability, it should last until you get something better.",
-    
+
     "quests.stone_age.furs.title": "Predator Hides",
     "quests.stone_age.furs.subtitle": "Hardcore Fursuiting",
     "quests.stone_age.furs.desc": "Large predatory animals drop their furs instead of normal hides, which you can either craft into insulating clothing, or scrape to get a normal hide to then turn into leather as normal.",
@@ -134,7 +134,7 @@
 
     "quests.stone_age.clay.title": "Clay",
     "quests.stone_age.clay.subtitle": "It's Clay!",
-    "quests.stone_age.clay.desc": "Gather at least 25 pieces of Clay. You'll need to make at least 5 different items to progress (see the next quests). Once you mold the clay, put them in a Pit Kiln to bake the clay into Ceramic.",
+    "quests.stone_age.clay.desc": "Gather at least 25 pieces of Clay. You'll need to make at least 5 different items to progress (see the next quests). Once you mold the clay, put them in a Pit Kiln to bake the clay into Ceramic. You can mold clay the same way to knap stone, though it takes 5 clay per item and the clay won't be lost if you misclick.",
 
     "quests.stone_age.pit_kiln.title": "Pit Kiln",
     "quests.stone_age.pit_kiln.subtitle": "Things are heating up now",
@@ -158,13 +158,13 @@
 
     "quests.stone_age.native_ores.title": "Pebbles with ore?",
     "quests.stone_age.native_ores.subtitle": "Your first metal is already available if you look for it.",
-    "quests.stone_age.native_ores.desc.1": "Ore veins generate differently than what you might be used to - you can't just wander into a random cave, instead you'll need to find \"Indicators\" on the surface. These can look like small rocks, dust piles, or even small crystal buds. Each one is worth about as much as a nugget, so collect as many as you can, but make sure you make a note of where you found them!",
-    "quests.stone_age.native_ores.desc.2": "Why are they called Indicators? This means that directly below, there is a big, HUGE vein with the same ore that you found on the surface. You don't have a pickaxe yet, so take note of the place where you found the Ore! It'll be very useful later on.",
+    "quests.stone_age.native_ores.desc.1": "Ore veins generate differently than what you might be used to - you can't just wander into a random cave, instead you'll need to find \"Indicators\" on the surface. These can look like small rocks, dust piles, or even small crystal buds.\n\nCan't find anything that melts into Copper? Try looking for a another stone type -- different ores spawn in different rock types. Check the TFG Ores category of your Field Guide for a full list.",
+    "quests.stone_age.native_ores.desc.2": "Why are they called Indicators? This means that directly below, there is a big, HUGE vein with the same ore that you found on the surface. You don't have a pickaxe yet, so take note of the place where you found the Ore! It'll be very useful later on.\n\nEach one is worth about as much as a nugget, so collect as many as you can, but make sure you make a note of where you found them!",
 
     "quests.stone_age.first_saw.title": "Metallic Saw",
     "quests.stone_age.first_saw.subtitle": "Time for your first metal tool",
     "quests.stone_age.first_saw.desc.1": "To begin making your Saw, add at least 144mb of ore of your desired metal to a Vessel. Afterwards, place the Vessel in a Pit Kiln and light it on fire.\n\nOnce the Pit Kiln burns out, quickly pick up your vessel while it's still hot, and interact with it to open the Pouring interface. Simply place the Saw Mold in the Pouring Interface's slot and watch it fill with your very first Saw Head. Afterwards, combine your Saw Head with a Stick and you'll create your Saw!",
-    "quests.stone_age.first_saw.desc.2": "While the easiest metal to work with is Copper, you can try your hand at the process of Alloying. This quest's tasks will accept either an item made out of Copper, or a Bronze Alloy.\n\n&lBismuth Bronze&r: Copper, Bismuth and Zinc. The weakest of the bronzes, but can be the easiest to make.\n\n&lBronze&r: Copper and Tin. It's the most average of the bronzes.\n\n&lBlack Bronze&r: Copper, Gold, and Silver: The best Bronze in the early game, but it's considerably more expensive.",
+    "quests.stone_age.first_saw.desc.2": "While the easiest metal to work with is Copper, you can try your hand at the process of alloying. This quest's tasks will accept either an item made out of Copper, or a Bronze Alloy.\n\n&lBismuth Bronze&r: Copper, Bismuth and Zinc. The weakest of the bronzes, but can be the easiest to make.\n\n&lBronze&r: Copper and Tin. It's the most average of the bronzes.\n\n&lBlack Bronze&r: Copper, Gold, and Silver: The best bronze in the early game, but it's considerably more expensive.",
     "quests.stone_age.first_saw.tasks.1": "A Copper or Bronze Saw Head.",
     "quests.stone_age.first_saw.tasks.2": "A Copper or Bronze Saw.",
 
@@ -189,64 +189,64 @@
     "quests.stone_age.barrels.desc": "Unlike their vanilla counterparts, Barrels here are used as Liquid Storage. Barrels are capable of storing a total of 10 Buckets of fluid, allowing for relatively simple storage of fluids.\n\nYou can also combine these fluids with other items, to create things like Leather, Glue, Mortar and more.",
 
     "quests.stone_age.leather.title": "Leather",
-    "quests.stone_age.leather.subtitle": "You can't just kill a Cow and make stuff with its hide yknow?",
-    "quests.stone_age.leather.desc": "Wild Game instead of dropping leather they'll drop either Hide. Hide cannot be used as leather directly and instead must be worked and processed into it.\n\nLeather, just like Clay and Stone, can be Knapped. Knapping leather allows you to create things such as Leather Armor, Leather Flasks, etc.\nIf you dont want to kill animals for their leather, and live in a tropical area, you can work Pineapple into Pineapple Leather instead, which is a Leather Substitute.",
+    "quests.stone_age.leather.subtitle": "Because of course everything has to be more complicated",
+    "quests.stone_age.leather.desc": "When killed, wild animals will drop raw hides. Hide cannot be used as leather directly and instead must be worked and processed first.\n\nLeather, just like Clay and Stone, can be Knapped. Knapping leather allows you to create things such as Leather Armor, Flasks, and so on.\nIf you dont want to kill animals for their leather, and live in a tropical area, you can work Pineapple into Pineapple Leather instead, which is a Leather Substitute.",
 
     "quests.stone_age.leather_armor.title": "Leather Armor",
     "quests.stone_age.leather_armor.subtitle": "Very basic protection",
     "quests.stone_age.leather_armor.desc": "Leather Armor, just like its minecraft counterpart, is used as a very basic set of armor. It may not do much, but it'll protect you somewhat from the elements and provides OK resistances to Slashing damage.",
 
     "quests.stone_age.mining_prep.title": "Mining Preparations",
-    "quests.stone_age.mining_prep.subtitle": "Hope you marked that native copper deposit site!",
-    "quests.stone_age.mining_prep.desc.1": "Advancing in the tech tree will require a lot of metal, in fact potentially a Ludicrous amount of metal. Native ore deposits wont cut it, so you'll have to dig down and begin mining.\nAssuming you &odid&r mark the place where you found your native copper, go to the site and find the center of the \"blob\" of copper. Once you start digging down you'll eventually stumble upon the Vein. Information about what you're crafting for this quest can be found in the next page.",
-    "quests.stone_age.mining_prep.desc.2": "&lProspector's Pick&r: (Propick for short) is a tool that can be used to Prospect for ores nearby. Low quality Propicks tend to have a range of failure while higher quality propicks have better results.\n&lPickaxe&r: Pretty obvious what this does, you'll need a way to break the blocks towards the Vein, and harvest the Vein as well.\n&lSupports Beams and Planks&r: Caves in TerraFirmaGreg are INCREDIBLY dangerous, not only do monsters spawn in them, carelessly digging around can cause a collapse! The quest above this one goes over how to mitigate dangers while mining.\n\nNow go, and dig your hole. diggy diggy hole!",
+    "quests.stone_age.mining_prep.subtitle": "Hope you remember where you found those ore indicators!",
+    "quests.stone_age.mining_prep.desc.1": "Progressing beyond the stone age will require a lot of metal, and just picking up small ores on the surface won't be enough. You'll have to dig down and begin mining.\nAssuming you &odid&r mark the place where you found your copper, find the rough middle of where the indicators were and start digging! It might be pretty deep, but you'll eventually strike it rich. The next page has some equipment you'll want to bring along for your first mining trip!",
+    "quests.stone_age.mining_prep.desc.2": "&lPickaxe&r: Pretty obvious what this does, you'll need a way to break the stone and harvest the ore. Hammers will not work!\n\n&lLadders and Torches&r:You'll need some way to climb back up out of the hole and see what you're doing!\n\n&lSupport Beams and Planks&r: Mining in TFG is much more dangerous - not only do monsters spawn underground, but carelessly digging around can cause a cave-in! The quest above this one goes over how to mitigate dangers while mining.\n\nNow go and dig your hole, diggy diggy hole!",
 
     "quests.stone_age.hazards.title": "Mining Hazards",
-    "quests.stone_age.hazards.subtitle": "Thought the Overworld was difficult? Think again.",
-    "quests.stone_age.hazards.desc.1": "There are two types of Hazards while mining that you need to be careful about, Cave Ins and Chemical Hazards. A Cave In can occur when raw stone blocks or ores are left Unsupported. Looking at a block can tell you its status for Cave Ins.",
-    "quests.stone_age.hazards.desc.2": "A Supported Block won't trigger collapses while an Unsupported block has a chance to trigger a collapse, however, when a collapse begins, even previously supported blocks can fall and collapse.\n\nA way to avoid collapses is by using Support Beams, the image below showcases ways on how to use support beams to support your mining operations.",
+    "quests.stone_age.hazards.subtitle": "Thought the surface was difficult? Think again.",
+    "quests.stone_age.hazards.desc.1": "Besides the monsters, the biggest challenge when mining is dealing with cave-ins. If a Raw stone or ore block has air below it, it's considered 'unsupported' and has a chance to start a cave-in every time a nearby block is mined. Cave roofs are covered with Hardened stone, which won't cause a collapse. To mitigate this, the safest thing you can do is just mine the floor, but if you want to safely mine anything else you'll have to learn how to use support beams! These are crafted with logs and a saw.",
+    "quests.stone_age.hazards.desc.2": "The Field Guide has more details and diagrams about how exactly support beams work, but the short version is you'll want to place them down like this within four blocks of each other. Only the top vertical beams will actually support anything, and they have a small radius.",
 
     "quests.stone_age.copper_for_anvil.title": "Copper for the Anvil",
     "quests.stone_age.copper_for_anvil.subtitle": "You better get used to getting 14 ingots of something.",
-    "quests.stone_age.copper_for_anvil.desc": "Anvils take a total of 14 Ingots, these 14 Ingots are welded into 7 Double Ingots, which are then used to create the Anvil itself\n\nYou might want to start mining at this point, gathering 126 pieces of native copper is difficult.",
+    "quests.stone_age.copper_for_anvil.desc": "Anvils aren't cheap! Each anvil will require 14 ingots, which are then welded into 7 double ingots.\n\nYou might want to start mining at this point if you haven't already, gathering 126 pieces of small copper is difficult.",
 
     "quests.stone_age.get_raw_rock.title": "Raw Rock",
-    "quests.stone_age.get_raw_rock.subtitle": "No, it isnt just \"Stone\"",
-    "quests.stone_age.get_raw_rock.desc": "To create your Copper Anvil you'll need both a basic Stone Anvil and a Forge, both of these require you to obtain Raw Rock, altho the Stone Anvil requires either Extrusive or Intrusive Igneous Rock.\n\nTo obtain Raw Rock you can carefully break the blocks &lsupporting&r the Raw Rock you want to mine. Once all 6 sides of the Raw Rock is exposed to air, it'll break into it's Item form.",
+    "quests.stone_age.get_raw_rock.subtitle": "No, it isn't just \"Stone\"",
+    "quests.stone_age.get_raw_rock.desc": "To create your Copper Anvil you'll need both a basic Stone Anvil and a Charcoal Forge. To make a Stone Anvil, you will need a block of Raw Igneous rock.\n\nTo obtain Raw Rock you can carefully break the blocks &laround&r the Raw Rock you want to mine. Once all 6 sides of the Raw Rock are exposed to air, it'll pop off into its Item form. Lastly, right-click a block of raw igneous rock to turn it into your Stone Anvil.",
 
     "quests.stone_age.create_forge.title": "The Forge",
     "quests.stone_age.create_forge.subtitle": "The Fabric doesnt exist by the way.",
-    "quests.stone_age.create_forge.desc": "The Forge is a state of the art crafting station used to Heat materials to high temperatures. The time it takes to heat things in the forge is considerably quicker than the Pit Kiln.\n\nTo make the forge you'll require at the very least 7 charcoal, and 5 Rock like Blocks, Raw Rock and Cobble is the easiest, altho you can also utilize Stone Bricks as well.\nThe Forge does not use Logs, instead it uses Charcoal, Coal or Coke. Charcoal is probably the easiest for you, there's a quest in TFG Tips explaining how to get Charcoal in the early game.\n\nYou may want to check the field guide for a guide on how to create and use the forge.",
+    "quests.stone_age.create_forge.desc": "The Forge is a state-of-the-art crafting station used to heat materials to high temperatures. The time it takes to heat things in the forge is considerably faster than the Pit Kiln, and is much easier to control too.\n\nTo make the forge you'll require at least 7 charcoal, and 5 rock-like blocks, such as raw rock or cobblestone.\nThe Forge does not use Logs, instead it uses Charcoal, Coal or Coke.\n\nCheck the field guide for walkthroughs on how to make a Charcoal Pit and a Charcoal Forge.",
 
     "quests.stone_age.rock_anvil.title": "Rock Anvil",
     "quests.stone_age.rock_anvil.subtitle": "This won't last long",
-    "quests.stone_age.rock_anvil.desc": "Anvils are the basis of early game metal working, to create a proper Metal anvil you'll need to Weld Ingots using the previous tier of Anvil. Since Copper is the first tier, you can use a Rock Anvil to weld them. You'll need a basic hammer to create the Rock Anvil, simply put either an Igneous or Extrusive Raw Rock, and interact with the rock while holding the Hammer.",
+    "quests.stone_age.rock_anvil.desc": "Anvils are the foundation of all early game metal working. To create a proper metal anvil, you'll need to weld ingots using the previous tier of Anvil. Since Copper is the first tier, you have to use a Rock Anvil to weld them. You can create a Stone Anvil by right-clicking a block of raw igneous rock with a hammer. Welding ingots is the only thing it can do, unfortunately - you'll need the metal's proper anvil to shape them into anything else.",
 
     "quests.stone_age.quern.title": "Quern and Handstone",
-    "quests.stone_age.quern.subtitle": "Early game ore processing",
-    "quests.stone_age.quern.desc": "The Quern and Handstone is simply put two big rocks grinding against each other to break down materials. The bottom piece is called a Quern while the top piece is called a Handstone. The Quern can be used to grind down raw ores into crushed ores, yielding slightly higher mb count when smelted.\n\nWe'll use the Quern to create Flux.",
+    "quests.stone_age.quern.subtitle": "Your first step into ore processing",
+    "quests.stone_age.quern.desc": "The Quern and Handstone are two big rocks grinding against each other to break down materials. The bottom piece is called a Quern while the top piece is called a Handstone. The Quern can be used to grind down your raw ores into crushed ores, yielding slightly higher mB count when smelted.\n\nYou can also use the Quern to create other powders like Flux, Flour, and Bone Meal.",
 
-    "quests.stone_age.crush_ore.title": "Early Ore Processing.",
-    "quests.stone_age.crush_ore.subtitle": "Getting more from your ores.",
-    "quests.stone_age.crush_ore.desc": "Unlocking the Quern enables the process of well, processing your ores.\n\nOre Processing is a large, complex tree that GregTech has which is used for getting more resources from Raw Ores, instead of just placing a Raw Ore in a macerator to get double ores, you'll need to slowly inch your way thru it's Ore Processing tree to get the most of your ores.\n\nWe can begin by crushing Raw Ore to get Crushed Ores, slightly increasing their mb yield.",
+    "quests.stone_age.crush_ore.title": "Early Ore Processing - Part 1",
+    "quests.stone_age.crush_ore.subtitle": "Getting more from your ores",
+    "quests.stone_age.crush_ore.desc": "The Quern is only the first step into processing your ores! Proper ore processing is a large, complex beast that you'll learn more about as you progress, and can be used to extract much more usable metal and other byproducts per each ore you mine. To start with though, we'll turn those raw ores you mined into Crushed Ore by putting it through the Quern. Just this first step is enough to increase the amount of mB your ore will melt into.",
 
-    "quests.stone_age.crush_crushed_ore.title": "Impure Dusts",
-    "quests.stone_age.crush_crushed_ore.subtitle": "Quern it, again.",
-    "quests.stone_age.crush_crushed_ore.desc": "Crushing a Crushed Ore yields Impure Dust, further increasing it's mb yield.\n\nAs you advance in the Tech Tree, better methods for processing your ores will be unlocked.",
+    "quests.stone_age.crush_crushed_ore.title": "Early Ore Processing - Part 2",
+    "quests.stone_age.crush_crushed_ore.subtitle": "Quern it, again",
+    "quests.stone_age.crush_crushed_ore.desc": "Crushing a Crushed Ore again yields Impure Dust, further increasing it's mB yield.\n\nThis may be slow and tedious for now, but you'll soon unlock ways to do this faster and automatically!",
 
-    "quests.stone_age.clean_dust.title": "Clean Dusts",
+    "quests.stone_age.clean_dust.title": "Early Ore Processing - Part 3",
     "quests.stone_age.clean_dust.subtitle": "Wash that dirty dust",
-    "quests.stone_age.clean_dust.desc": "Dropping Impure Dusts in some Water will clean them, yielding regular dust, which as you may guess, further increases their mb yield.",
+    "quests.stone_age.clean_dust.desc": "Finally, dropping Impure Dusts in some water and leaving them for a few seconds will wash them, yielding dust, which is your ore's final form. It might even be worth as much as a full ingot now!",
 
     "quests.stone_age.flux.title": "Fluxstones",
-    "quests.stone_age.flux.subtitle": "Basically metallurgy powder",
-    "quests.stone_age.flux.desc": "Flux is an item that has it's main uses in Metal Working, specifically it's used to Weld things together. Althought it has a number of other uses as well.\nCertain types of Rocks such as Chalk, Limestone and Marble can be crushed down to make Flux.",
+    "quests.stone_age.flux.subtitle": "It's basically metal glue",
+    "quests.stone_age.flux.desc": "Flux is an item that is primarily used in metal working to weld things together, though it has some other uses too.\nCertain types of Rocks such as Chalk, Limestone and Marble can be crushed down to make Flux, as well as the shells of various ocean animals.",
 
     "quests.stone_age.weld_copper_ingots.title": "Welding Copper",
     "quests.stone_age.weld_copper_ingots.subtitle": "So close to the Copper Anvil",
-    "quests.stone_age.weld_copper_ingots.desc": "Light up your Forge and place at least 2 Copper Ingots will slowly heat up, eventually at a specific temperature color (marked by a tooltip) the ingot will have the \"Can Work\" tooltip, you'll want to keep heating it until before it's melting point, this will give it the tooltip \"Can Weld\", the ingot is now ready to be welded.\n\nQuickly grab the two ingots while holding in your hand something to avoid burning yourself (like a pair of Tongs) and place them in the Rock Anvil's interface with a little bit of flux, finally, interact with the anvil while sneaking and holding a hammer to Weld the Ingots.\n\nCongratulations! you have a Double Ingot, do that 6 more times.",
+    "quests.stone_age.weld_copper_ingots.desc": "Light up your Forge and give it at least 2 Copper Ingots. Keep an eye on their tooltip as they heat up - once they get hot, it'll show \"Can Work\", but we need to wait until they get to \"Can Weld\", which is just before their melting point.\n\nOnce they reach it, quickly pull them out of the forge (while holding some wooden tongs in your off-hand!) and into the Rock Anvil's interface, along with a little bit of flux. Lastly, right-click the anvil while sneaking to weld the two ingots together while they're still hot. You can use water or snow to cool down your new double ingot faster.",
 
     "quests.metal_age.copper_anvil.title": "T1 Anvil: Copper",
-    "quests.metal_age.copper_anvil.subtitle": "It all has been building up to this.",
-    "quests.metal_age.copper_anvil.desc": "Congratulations! you've officially finished the Stone Age and entered the Metallurgy Age! With the Copper Anvil now all thats left is climbing up the Anvil Tiers, each time you unlock a new Tier new goodies will be available that'll make your life progressively easier. Now go, become a master smith, and advance thu the Metallurgy Age!"
+    "quests.metal_age.copper_anvil.subtitle": "It's all been building up to this!",
+    "quests.metal_age.copper_anvil.desc": "Congratulations! You've officially finished the Stone Age and entered the Metallurgy Age! With your Copper Anvil, the next step is to climb up the Anvil Tiers, and each time you unlock a new Tier, new tools and possibilities will be available to make your life progressively easier. Now go and become a master smith!"
 }

@@ -15,7 +15,7 @@ Key:
 
 
 ## Mods & Recipes
-- Recipes for advanced peripherals and computercraft
+- ⏳ Recipes for advanced peripherals and computercraft
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 		- ⏳ Create Horse Power still needs configs
