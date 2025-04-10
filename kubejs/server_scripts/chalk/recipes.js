@@ -30,10 +30,9 @@ const registerChalkRecipes = (evt) => {
 		evt.recipes.create.mixing(`chalk:${dyeName}_chalk`, createIngredients)
 			.heated()
 			.id(`chalk:create_mixer/${dyeName}_chalk_from_dust`);
-	})
+	
 
-	//Unfired chalk sticks need to be placed in a barrel full of dye to colorize. Then heated until cured.
-	global.MINECRAFT_DYE_NAMES.forEach(dyeName => {
+		//Unfired chalk sticks need to be placed in a barrel full of dye to colorize. Then heated until cured.
 		evt.recipes.tfc.barrel_sealed(20 * 50)
 			.inputs(`tfg:unfired_chalk`, TFC.fluidStackIngredient(`tfc:${dyeName}_dye`, 36))
 			.outputItem(`tfg:wet_${dyeName}_chalk`)
