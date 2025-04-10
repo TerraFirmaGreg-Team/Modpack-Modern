@@ -47,6 +47,8 @@ Key:
 		- Greate: yes
 	- Change greate's config to allow assemblers to make cables again
 - Use mech press whenever Greate updates to let us do our own recipes for it
+- Buff duration of the 5-day foods like sandwiches
+- Add recipe for the infinite water cover
 
 ## Space
 - Put carve tags onto your rock types so they get carved correctly
