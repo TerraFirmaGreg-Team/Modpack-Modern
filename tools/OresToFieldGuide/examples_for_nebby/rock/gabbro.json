@@ -1,5 +1,6 @@
 ﻿{
 	"id": "gabbro",
+	"pattern": "gtceu:gabbro_{0}_ore",
 	"translations": [
 		{
 			"lang": "en_us",
@@ -8,6 +9,10 @@
 		{
 			"lang": "ru_ru",
 			"text": "Габбро"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Габро"
 		}
 	],
 	"replaceable_blocks": [
