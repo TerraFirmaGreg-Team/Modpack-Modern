@@ -46,8 +46,20 @@ Otherwise, if you downloaded the raw .jar
     ```
     java -jar pakku.jar fetch
     ```
+
+# Q&A
+
+### Q: How can I get intellisense in my project?
+Intellisense in the project is done via KubeJS's ProbeJS.
+
+Open the game and open any world, then run ``/probejs dump``. After the dump completes you can open the ``minecraft`` folder with VisualStudio code.
+
+### Q: The project doesnt boot!
+In case youre running on Bleeding Edge, make sure you have latest version of TFG-Core installed. Said version can be found in the [EN - 1.20 Modpack Contribution Megathread](ContributionMegathread) on Discord.
+
 <!-- Links: -->
 [PrismLauncher]: https://prismlauncher.org/
 [Visual Studio Code]: https://code.visualstudio.com/
 [Git]: https://git-scm.com/
 [Pakku]: https://github.com/juraj-hrivnak/Pakku
+[ContributionMegathread]: https://discord.com/channels/400913133620822016/1331744604701069393

@@ -5,6 +5,11 @@ Key:
 - Anything else - available!
 
 # 0.9
+
+## HIGH PRIORITY:
+- Figure out what to do with Colds Grappler
+	- Colds Grappler causes the modpack's Modrinth export to be broken because the mod cannot be redistributed.
+	- Either try to contact the creator to add his mod in modrinth, or replace it with another mod.
 ## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
