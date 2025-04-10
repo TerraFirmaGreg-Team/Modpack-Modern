@@ -1,0 +1,21 @@
+﻿{
+	"id": "chalk",
+	"pattern": "gtceu:chalk_{0}_ore",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Chalk"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Мел"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Крейда"
+		}
+	],
+	"replaceable_blocks": [
+		"tfc:rock/raw/chalk"
+	]
+}

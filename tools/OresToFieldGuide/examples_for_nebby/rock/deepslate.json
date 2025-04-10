@@ -1,6 +1,5 @@
 ﻿{
 	"id": "deepslate",
-	"NOTE_TO_NEBBY1": "This is here because blackstone has a pattern of gtceu:pyroxenite_{0}_ore, to work around a GT bug",
 	"pattern": "gtceu:deepslate_{0}_ore",
 	"translations": [
 		{
@@ -9,10 +8,13 @@
 		},
 		{
 			"lang": "ru_ru",
-			"text": "___"
+			"text": "Мигматит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Мігматит"
 		}
 	],
-	"NOTE_TO_NEBBY2": "This is an example of a stone type that has multiple replaceable blocks",
 	"replaceable_blocks": [
 		"minecraft:deepslate",
 		"tfc:mud/silty_loam",

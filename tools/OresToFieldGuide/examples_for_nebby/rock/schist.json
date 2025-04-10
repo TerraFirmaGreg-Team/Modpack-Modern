@@ -1,0 +1,21 @@
+﻿{
+	"id": "schist",
+	"pattern": "gtceu:schist_{0}_ore",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Schist"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Аспидный сланец"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Аспідний сланець"
+		}
+	],
+	"replaceable_blocks": [
+		"tfc:rock/raw/schist"
+	]
+}

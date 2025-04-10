@@ -1,0 +1,22 @@
+﻿{
+	"id": "basalt",
+	"pattern": "gtceu:basalt_{0}_ore",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Basalt"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Базальт"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Базальт"
+		}
+	],
+	"replaceable_blocks": [
+		"minecraft:basalt",
+		"tfc:rock/raw/basalt"
+	]
+}

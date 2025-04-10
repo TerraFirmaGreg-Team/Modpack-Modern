@@ -158,7 +158,6 @@ ServerEvents.recipes(event => {
     registerComfortsRecipes(event);
     registerComputerCraftRecipes(event)
     registerConstructionwandRecipes(event)
-    registerColdsgrapplerRecipes(event);
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
     registerCreateConnectedRecipes(event)

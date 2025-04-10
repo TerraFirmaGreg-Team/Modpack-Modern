@@ -3399,41 +3399,6 @@
 		}
 		{
 			dependencies: ["3B3A0FEEB59F597C"]
-			description: ["{quests.tfg_tips.grappler.desc}"]
-			id: "1768B6EDDAAC431D"
-			subtitle: "{quests.tfg_tips.grappler.subtitle}"
-			tasks: [{
-				id: "34C81B874E8B02AE"
-				item: "coldsgrappler:grappler_item"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.grappler.title}"
-			x: -5.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["1768B6EDDAAC431D"]
-			description: ["{quests.tfg_tips.grappler_ropes.desc}"]
-			id: "4FEC71C933B63639"
-			subtitle: "{quests.tfg_tips.grappler_ropes.subtitle}"
-			tasks: [
-				{
-					id: "5A207C9FE1109565"
-					item: "coldsgrappler:extra_rope_item"
-					type: "item"
-				}
-				{
-					id: "5E608FAB38045124"
-					item: "coldsgrappler:rope_light_item"
-					type: "item"
-				}
-			]
-			title: "{quests.tfg_tips.grappler_ropes.title}"
-			x: -6.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3B3A0FEEB59F597C"]
 			description: ["{quests.tfg_tips.tape_measure.desc}"]
 			id: "60D7605B4286C007"
 			subtitle: "{quests.tfg_tips.tape_measure.subtitle}"
@@ -4210,25 +4175,6 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["47409DED94FCC2BC"]
-			description: ["{quests.tfg_tips.ev_upgrades.desc}"]
-			id: "11C3A1047CE5AA4C"
-			subtitle: "{quests.tfg_tips.ev_upgrades.subtitle}"
-			tasks: [{
-				id: "518B5172D0AF20C9"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(tfg:ev_aircraft_engine)item(tfg:titanium_plated_airplane_propeller)item(tfg:titanium_landing_gear)item(tfg:titanium_hull_reinforcement))"
-					}
-				}
-				title: "{quests.tfg_tips.ev_upgrades.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.ev_upgrades.title}"
-			x: -6.0d
-			y: -14.0d
 			dependencies: ["70DA01DFDAE54224"]
 			description: ["{quests.tfg_tips.piglin_bartering.desc}"]
 			id: "3D5C898F953FECFC"

@@ -1,0 +1,21 @@
+﻿{
+	"id": "granite",
+	"pattern": "gtceu:granite_{0}_ore",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Granite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Гранит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Граніт"
+		}
+	],
+	"replaceable_blocks": [
+		"tfc:rock/raw/granite"
+	]
+}
