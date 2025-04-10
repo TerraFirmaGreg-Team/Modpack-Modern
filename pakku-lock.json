@@ -2512,43 +2512,6 @@
             ]
         },
         {
-            "pakku_id": "HYYfSZX8PMLGcoJh",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "colds-grappler-forge"
-            },
-            "name": {
-                "curseforge": "Colds: Grappler & Ropes (Forge)"
-            },
-            "id": {
-                "curseforge": "446264"
-            },
-            "redistributable": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ColdGrapplerAndRopes(Forge1.20.1)vs1.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4781/324/ColdGrapplerAndRopes(Forge1.20.1)vs1.0.0.jar",
-                    "id": "4781324",
-                    "parent_id": "446264",
-                    "hashes": {
-                        "sha1": "c62c8c023998499050b6c2b36f9de5794a71ae1e",
-                        "md5": "04462374ec38e5a2c4da45d2e3a19c2a"
-                    },
-                    "required_dependencies": [],
-                    "size": 37337,
-                    "date_published": "2023-10-04T00:40:49.143Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "yFtvK1mV3huC6kIT",
             "type": "MOD",
             "side": "BOTH",
@@ -6088,6 +6051,42 @@
                     "required_dependencies": [],
                     "size": 60550,
                     "date_published": "2024-04-01T10:39:19.537Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "g9pF49NG9dTJ3SkT",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "grappling-hook-mod-reforged"
+            },
+            "name": {
+                "curseforge": "Grappling Hook - Reforged"
+            },
+            "id": {
+                "curseforge": "1166811"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "grappling_hook_mod-1.20.1-1.20.1-v13.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6028/357/grappling_hook_mod-1.20.1-1.20.1-v13.jar",
+                    "id": "6028357",
+                    "parent_id": "1166811",
+                    "hashes": {
+                        "sha1": "dfb72e1482b432fa98afc97539a0daeb5f7d14e2",
+                        "md5": "82c433ef162dbc72c2aa0379bf594f49"
+                    },
+                    "required_dependencies": [],
+                    "size": 543872,
+                    "date_published": "2024-12-27T20:54:54.927Z"
                 }
             ]
         },
