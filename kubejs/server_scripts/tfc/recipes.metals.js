@@ -303,4 +303,33 @@ function registerTFCMetalsRecipes(event) {
 		.id('tfc:blast_furnace/pig_iron')
 
 	//#endregion
+
+	//#region Gravel Deposit Washing
+	const deposit_ores = [
+		'native_gold',
+		'native_copper',
+		'native_silver',
+		'cassiterite'
+	];
+
+	global.TFC_STONE_TYPES.forEach(stone => {
+        deposit_ores.forEach(ore => {
+		
+		event.recipes.gtceu.ore_washer(`tfc:ore_washer/water/deposit/${ore}/${stone}`)
+			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
+			.inputFluids(Fluid.of('minecraft:water', 100))
+			.circuit(4)
+			.itemOutputs(`1x tfc:ore/normal_${ore}`)
+			.duration(400)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.ore_washer(`tfc:ore_washer/distilled_water/deposit/${ore}/${stone}`)
+			.itemInputs(`1x tfc:deposit/${ore}/${stone}`)
+			.inputFluids(Fluid.of('gtceu:distilled_water', 50))
+			.circuit(4)
+			.itemOutputs(`1x tfc:ore/normal_${ore}`)
+			.duration(200)
+			.EUt(GTValues.VA[GTValues.LV])
+	})})
+	//#endregion
 }
