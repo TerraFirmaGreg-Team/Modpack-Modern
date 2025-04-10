@@ -10,6 +10,7 @@ Key:
 - Figure out what to do with Colds Grappler
 	- Colds Grappler causes the modpack's Modrinth export to be broken because the mod cannot be redistributed.
 	- Either try to contact the creator to add his mod in modrinth, or replace it with another mod.
+   
 ## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
@@ -17,6 +18,7 @@ Key:
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
+- Figure out how to link ftb quests to the field guide entries
 
 ## Mods & Recipes
 - ⏳ Recipes for advanced peripherals and computercraft
