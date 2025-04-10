@@ -10,6 +10,7 @@ Key:
 - Figure out what to do with Colds Grappler
 	- Colds Grappler causes the modpack's Modrinth export to be broken because the mod cannot be redistributed.
 	- Either try to contact the creator to add his mod in modrinth, or replace it with another mod.
+
 ## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
@@ -17,6 +18,7 @@ Key:
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
+- Figure out how to link ftb quests to the field guide entries
 
 ## Mods & Recipes
 - ⏳ Recipes for advanced peripherals and computercraft
@@ -30,9 +32,10 @@ Key:
 	- Check LBB efficiency of creosote
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
-- Add that mod that disables xp
-- where the fuck did the iron door recipe go
-- change cutter recipes to not require a circuit because the mech saw really doesn't like them, also increase the curving press' item size (so we can get rid of so much warning spam in the logs)
+- ❓ Packer recipes to turn cobble into loose rocks
+- ❓ Add that mod that disables xp
+- Where the fuck did the iron door recipe go
+- Change cutter recipes to not require a circuit because the mech saw really doesn't like them (maybe use stonecutter recipes instead?), also increase the curving press' item size (so we can get rid of so much warning spam in the logs)
 
 ## Worldgen
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
