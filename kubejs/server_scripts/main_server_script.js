@@ -4,6 +4,7 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
+    registerAdvancedPeripheralsItemTags(event)
     registerAE2ItemTags(event)
     registerAFCItemTags(event)
     registerAlekiroofsItemTags(event)
@@ -144,6 +145,8 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+    registerAdvancedPeripheralsRecipes(event)
+    registerAdvancedPeripheralsRecyclingRecipes(event)
     registerAlekishipsRecipes(event)
     registerAE2Recipes(event)
     registerAFCRecipes(event)
@@ -157,6 +160,9 @@ ServerEvents.recipes(event => {
     registerChiselAndBitsRecipes(event)
     registerComfortsRecipes(event);
     registerComputerCraftRecipes(event)
+    registerComputerCraftRecyclingRecipes(event)
+    registerCccBridgeRecipes(event)
+    registerCccBridgeRecyclingRecipes(event)
     registerConstructionwandRecipes(event)
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
