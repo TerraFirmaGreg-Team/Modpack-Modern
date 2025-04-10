@@ -76,11 +76,24 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:forge_fuel', 'gtceu:raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:poor_raw_coal')
     event.add('tfc:forge_fuel', 'gtceu:coal_dust')
+    event.add('tfc:forge_fuel', 'gtceu:charcoal_dust')
 
     // Change blast furnace to use coke
+    event.remove('tfc:blast_furnace_fuel', 'minecraft:coal')
     event.remove('tfc:blast_furnace_fuel', 'minecraft:charcoal')
     event.add('tfc:blast_furnace_fuel', 'gtceu:coke_gem')
     event.add('tfc:blast_furnace_fuel', 'beneath:cursecoal')
+
+    // Create a tag for Steam Bloomery
+
+    event.add('tfc:steam_bloomery_basic_fuels', 'minecraft:coal')
+    event.add('tfc:steam_bloomery_basic_fuels', 'minecraft:charcoal')
+    event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:rich_raw_coal')
+    event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:rich_raw_coal')
+    event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:raw_coal')
+    event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:poor_raw_coal')
+    event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:coal_dust')
+    event.add('tfc:steam_bloomery_basic_fuels', 'gtceu:charcoal_dust')
 
     // Тэги для сундуков, чтобы отличать их виды
     global.TFC_WOOD_TYPES.forEach(woodType => {
