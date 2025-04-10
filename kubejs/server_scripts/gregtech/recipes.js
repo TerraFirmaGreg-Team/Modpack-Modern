@@ -1302,7 +1302,7 @@ const registerGTCEURecipes = (event) => {
 	// #region Rich coal processing
 
 	event.recipes.gtceu.coke_oven("tfg:poor_coal_to_coke")
-		.itemInputs('gtceu:poor_raw_coal')
+		.itemInputs('2x gtceu:poor_raw_coal')
 		.itemOutputs('1x gtceu:coke_gem')
 		.outputFluids(Fluid.of('gtceu:creosote', 500))
 		.duration(900)
@@ -1514,5 +1514,42 @@ const registerGTCEURecipes = (event) => {
 		event.recipes.createDeploying('gtceu:magnetic_iron_rod', ['gtceu:magnetic_iron_rod', '#forge:fine_wires/lead'])
 	]).transitionalItem('gtceu:magnetic_iron_rod').loops(32).id('tfg:sequenced_assembly/ulv_voltage_coil')
 
+	//#endregion
 
+	//#region Steam Bloomery
+
+	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coal')
+	.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
+	.itemOutputs('#tfc:steam_bloomery_basic_fuels')
+	.duration(2400)
+	.EUt(GTValues.VEX[GTValues.ULV])
+
+	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coalcoke')
+	.itemInputs('2x #forge:ingots/iron', '#tfc:blast_furnace_fuel')
+	.itemOutputs('2x tfc:raw_iron_bloom')
+	.duration(2400)
+	.EUt(GTValues.VEX[GTValues.ULV])
+
+	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+
+		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
+		if (tfcProperty == null)
+			return;
+		
+		if (tfcProperty.getOutputMaterial() == GTMaterials.Iron) {
+			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coal_${material.getName()}`)
+				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
+				.itemOutputs('tfc:raw_iron_bloom')
+				.duration(2400)
+				.EUt(GTValues.VEX[GTValues.ULV])
+				
+			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coalcoke_${material.getName()}`)
+				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 2), '#tfc:blast_furnace_fuel')
+				.itemOutputs('2x tfc:raw_iron_bloom')
+				.duration(2400)
+				.EUt(GTValues.VEX[GTValues.ULV])
+		}
+	})
+	
+	//#endregion
 }
