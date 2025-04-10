@@ -1516,27 +1516,19 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-	// Steam Bloomery
+	//#region Steam Bloomery
 
-			//#region Steam Bloomery
-		
-			event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coal')
-			.itemInputs(
-				'minecraft:iron_ingot',
-				'#tfc:steam_bloomery_basic_fuels')
-			.itemOutputs('#tfc:steam_bloomery_basic_fuels')
-			.duration(2400)
-			.EUt(GTValues.VEX[GTValues.ULV])
-		
-			event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_nethercoal')
-			.itemInputs(
-				'2x minecraft:iron_ingot',
-				'#tfc:blast_furnace_fuel')
-			.itemOutputs('2x tfc:raw_iron_bloom')
-			.duration(2400)
-			.EUt(GTValues.VEX[GTValues.ULV])
+	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coal')
+	.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
+	.itemOutputs('#tfc:steam_bloomery_basic_fuels')
+	.duration(2400)
+	.EUt(GTValues.VEX[GTValues.ULV])
 
-	// Dust
+	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coalcoke')
+	.itemInputs('2x #forge:ingots/iron', '#tfc:blast_furnace_fuel')
+	.itemOutputs('2x tfc:raw_iron_bloom')
+	.duration(2400)
+	.EUt(GTValues.VEX[GTValues.ULV])
 
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
@@ -1558,15 +1550,6 @@ const registerGTCEURecipes = (event) => {
 				.EUt(GTValues.VEX[GTValues.ULV])
 		}
 	})
-
-	// Ingot
-
-
-		
-
-
-	// Ores
-
-
+	
 	//#endregion
 }
