@@ -14,8 +14,6 @@ public class MainClass
     public const string LANGUAGE_FILES = "LanguageFiles";
     public const string MINECRAFT = "minecraft";
     public const string TOOLS = "tools";
-    public const string KUBEJS = "kubejs";
-    public const string ASSETS = "assets";
     #endregion
 
     public static void Main(string[] args)
@@ -65,7 +63,7 @@ public class MainClass
         try
         {
             programArguments.minecraftDirectory = CommonUtil.GetMinecraftDirectory(Directory.GetCurrentDirectory());
-            programArguments.kjsAssetsFolder = GetKJSAssetsFolder(programArguments.minecraftDirectory);
+            programArguments.kjsAssetsFolder = CommonUtil.GetKJSAssetsFolder(programArguments.minecraftDirectory);
             programArguments.languageFilesFolder = GetLanguageFilesFolder(programArguments.minecraftDirectory);
             programArguments.shouldOverwriteFiles = GetShouldOverwriteFiles();
             programArguments.shouldPrettyPrint = GetShouldPrettyPrint();
@@ -76,16 +74,6 @@ public class MainClass
             return false;
         }
         return true;
-    }
-
-    private static DirectoryInfo GetKJSAssetsFolder(DirectoryInfo dotMinecraftFolder)
-    {
-        string kjsAssetsFolder = Path.Combine(dotMinecraftFolder.FullName, KUBEJS, ASSETS);
-        if(!Directory.Exists(kjsAssetsFolder))
-        {
-            throw new DirectoryNotFoundException($"The \"{ASSETS}\" folder was not found in {kjsAssetsFolder}");
-        }
-        return new DirectoryInfo(kjsAssetsFolder);
     }
 
     private static DirectoryInfo GetLanguageFilesFolder(DirectoryInfo dotMinecraftFolder)

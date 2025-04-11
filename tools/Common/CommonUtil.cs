@@ -10,8 +10,10 @@ namespace Common
     {
         public const string MINECRAFT = "minecraft";
         public const string REPONAME = "Modpack-Modern";
+		public const string KUBEJS = "kubejs";
+		public const string ASSETS = "assets";
 
-        public static DirectoryInfo GetMinecraftDirectory(string workingDir)
+		public static DirectoryInfo GetMinecraftDirectory(string workingDir)
         {
             var directoryInfo = new DirectoryInfo(workingDir);
 
@@ -44,5 +46,15 @@ namespace Common
             }
             return result;
         }
-    }
+
+		public static DirectoryInfo GetKJSAssetsFolder(DirectoryInfo dotMinecraftFolder)
+		{
+			string kjsAssetsFolder = Path.Combine(dotMinecraftFolder.FullName, KUBEJS, ASSETS);
+			if (!Directory.Exists(kjsAssetsFolder))
+			{
+				throw new DirectoryNotFoundException($"The \"{ASSETS}\" folder was not found in {kjsAssetsFolder}");
+			}
+			return new DirectoryInfo(kjsAssetsFolder);
+		}
+	}
 }
