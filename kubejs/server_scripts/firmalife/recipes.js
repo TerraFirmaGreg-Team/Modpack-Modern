@@ -789,9 +789,9 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(20)
 		.EUt(7)
 
-	event.recipes.gtceu.forge_hammer('firmalife:soybean_paste')
-		.itemInputs('firmalife:food/red_grapes')
-		.itemOutputs('firmalife:food/smashed_red_grapes')
+	event.recipes.gtceu.forge_hammer('firmalife:white_grapes')
+		.itemInputs('firmalife:food/white_grapes')
+		.itemOutputs('firmalife:food/smashed_white_grapes')
 		.duration(20)
 		.EUt(7)
 }
