@@ -300,9 +300,6 @@ function registerTFCMachineRecipes(event) {
 		.duration(60)
 		.EUt(2)
 
-	event.recipes.createMilling('2x tfc:olive_paste', 'tfc:food/olive')
-		.id(`tfg:milling/tfc/olive_paste`)
-
 	event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
 		.inputFluids(Fluid.of('water', 200))
 		.itemInputs('2x tfc:olive_paste')

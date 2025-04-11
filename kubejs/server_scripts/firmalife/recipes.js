@@ -421,10 +421,7 @@ const registerFirmaLifeRecipes = (event) => {
 			.itemInputs(element.input)
 			.itemOutputs(element.output)
 			.duration(200)
-			.EUt(16)
-
-		event.recipes.createMilling(element.output, element.input)
-			.id(`tfg:milling/${element.name}`)
+			.EUt(2)
 	})
 
 	//#endregion
@@ -551,9 +548,6 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('4x firmalife:food/cocoa_powder')
 		.duration(100)
 		.EUt(2)
-
-	event.recipes.createMilling('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
-		.id('firmalife:milling/food/cocoa_dust')
 
 	event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
 		.id(`tfg:quern/cocoa_powder`)
