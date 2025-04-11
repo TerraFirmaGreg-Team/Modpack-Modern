@@ -186,8 +186,8 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:smelting/kaolinite_clay')
 
 	// Fire Brick
-	event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
-		.id('tfg:smelting/fireclay_brick')
+	//event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
+	//	.id('tfg:smelting/fireclay_brick')
 
 	// Выпаривание соли
 	event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)
