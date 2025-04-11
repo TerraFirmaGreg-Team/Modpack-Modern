@@ -213,13 +213,14 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:hose_pulley', [
 		'DAE',
 		' B ',
-		' C '
+		'CFC'
 	], {
 		A: 'create:copper_casing',
 		B: '#forge:foils/rubber',
 		C: '#forge:plates/copper',
 		D: '#forge:tools/wrenches',
-		E: '#forge:tools/hammers'
+		E: '#forge:tools/hammers',
+		F: 'minecraft:bucket'
 	}).id('tfg:create/shaped/hose_pulley')
 
 	// Слив из предметов
