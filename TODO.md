@@ -6,11 +6,6 @@ Key:
 
 # 0.9
 
-## HIGH PRIORITY:
-- Figure out what to do with Colds Grappler
-	- Colds Grappler causes the modpack's Modrinth export to be broken because the mod cannot be redistributed.
-	- Either try to contact the creator to add his mod in modrinth, or replace it with another mod.
-
 ## Field Guide & Quests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
@@ -21,6 +16,7 @@ Key:
 - Figure out how to link ftb quests to the field guide entries
 
 ## Mods & Recipes
+- ⏳ Replace colds grappler with that new grappling mod that nebby found
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 		- ⏳ Create Horse Power still needs configs
@@ -38,8 +34,7 @@ Key:
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
   
 ## Technical
-- GT + TFC food expiration compat
-	- check if the forge capabilities mixin solves this
+- ❓ GT + TFC food expiration compat
 - Akistor carts mixin is commented out, for the plows
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
