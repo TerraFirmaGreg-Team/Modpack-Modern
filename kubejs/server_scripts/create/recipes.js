@@ -1421,7 +1421,7 @@ const registerCreateRecipes = (event) => {
 		{ base: 'tfc:rock/raw/andesite', cut: 'create:cut_andesite', vanilla: 'minecraft:andesite' },
 		{ base: 'tfc:rock/raw/limestone', cut: 'create:cut_limestone' },
 		{ base: 'minecraft:deepslate', cut: 'create:cut_deepslate' },
-		{ base: 'minecraft:dripstone', cut: 'create:cut_dripstone' },
+		{ base: 'minecraft:dripstone_block', cut: 'create:cut_dripstone' },
 		{ base: 'minecraft:calcite', cut: 'create:cut_calcite' }
 	]
 

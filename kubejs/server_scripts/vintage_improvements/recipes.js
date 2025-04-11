@@ -71,8 +71,7 @@ function registerVintageImprovementsRecipes(event) {
 		C: '#forge:rods/steel',
 		D: '#gtceu:circuits/ulv',
 		E: '#forge:plates/black_steel',
-		F: '#forge:springs/wrought_iron',
-		G: 'create:precision_mechanism'
+		F: '#forge:springs/wrought_iron'
 	}).id('tfg:vi/shaped/curving_press')
 
 	event.shapeless('vintageimprovements:curving_press', ['create:mechanical_press', '#forge:tools/files'])
@@ -466,6 +465,8 @@ function registerVintageImprovementsRecipes(event) {
 			// LV recipes only
 			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
 			if (!(EUt <= 32)) { return }
+			// Skip this one
+			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
