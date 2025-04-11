@@ -573,6 +573,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/treated_door' })
 	event.remove({ id: 'gtceu:shaped/barrel' })
 	event.remove({ id: 'gtceu:shaped/book' })
+	event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
 	event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' })
 
 	event.remove({ id: 'gtceu:assembler/bell' })
