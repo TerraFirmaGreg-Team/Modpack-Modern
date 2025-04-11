@@ -61,13 +61,9 @@ function registerTFCSandRecipes(event) {
 		event.stonecutting(`tfc:smooth_sandstone/${sandColor}`, `tfc:raw_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/raw_sandstone_${sandColor}_to_smooth_sandstone`)
 
-		generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 3, `tfc:smooth_sandstone/${sandColor}`, 100, 8, `raw_sandstone_${sandColor}_to_smooth_sandstone`)
-
 		// Песчанник -> Обрезанный песчанник
 		event.stonecutting(`tfc:cut_sandstone/${sandColor}`, `tfc:raw_sandstone/${sandColor}`)
 			.id(`raw_sandstone_${sandColor}_to_cut_sandstone`)
-
-		generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 4, `tfc:cut_sandstone/${sandColor}`, 100, 8, `cut_sandstone_${sandColor}_to_smooth_sandstone`)
 
 		// Песчанник -> Ступень
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_raw_stairs` })
@@ -75,15 +71,11 @@ function registerTFCSandRecipes(event) {
 		event.stonecutting(`tfc:raw_sandstone/${sandColor}_stairs`, `tfc:raw_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_sandstone_to_stairs`)
 
-		generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 0, `tfc:raw_sandstone/${sandColor}_stairs`, 100, 8, `${sandColor}_sandstone_to_stairs`)
-
 		// Песчанник -> Плита
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_raw_slab` })
 
 		event.stonecutting(`2x tfc:raw_sandstone/${sandColor}_slab`, `tfc:raw_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_sandstone_to_slabs`)
-
-		generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 1, `2x tfc:raw_sandstone/${sandColor}_slab`, 100, 8, `${sandColor}_sandstone_to_slab`)
 
 		// Песчанник -> Стена
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_raw_wall` })
@@ -91,15 +83,11 @@ function registerTFCSandRecipes(event) {
 		event.stonecutting(`tfc:raw_sandstone/${sandColor}_wall`, `tfc:raw_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_sandstone_to_wall`)
 
-		generateCutterRecipe(event, `tfc:raw_sandstone/${sandColor}`, 2, `tfc:raw_sandstone/${sandColor}_wall`, 100, 8, `${sandColor}_sandstone_to_wall`)
-
 		// Гладкий песчанник -> Ступень
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_smooth_stairs` })
 
 		event.stonecutting(`tfc:smooth_sandstone/${sandColor}_stairs`, `tfc:smooth_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_smooth_sandstone_to_stairs`)
-
-		generateCutterRecipe(event, `tfc:smooth_sandstone/${sandColor}`, 0, `tfc:smooth_sandstone/${sandColor}_stairs`, 100, 8, `${sandColor}_smooth_sandstone_to_stairs`)
 
 		// Гладкий песчанник -> Плита
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_smooth_slab` })
@@ -107,15 +95,11 @@ function registerTFCSandRecipes(event) {
 		event.stonecutting(`2x tfc:smooth_sandstone/${sandColor}_slab`, `tfc:smooth_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_smooth_sandstone_to_slab`)
 
-		generateCutterRecipe(event, `tfc:smooth_sandstone/${sandColor}`, 1, `2x tfc:smooth_sandstone/${sandColor}_slab`, 100, 8, `${sandColor}_smooth_sandstone_to_slab`)
-
 		// Гладкий песчанник -> Стена
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_smooth_wall` })
 
 		event.stonecutting(`tfc:smooth_sandstone/${sandColor}_wall`, `tfc:smooth_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_smooth_sandstone_to_wall`)
-
-		generateCutterRecipe(event, `tfc:smooth_sandstone/${sandColor}`, 2, `tfc:smooth_sandstone/${sandColor}_wall`, 100, 8, `${sandColor}_smooth_sandstone_to_wall`)
 
 		// Обрезанный песчанник -> Ступень
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_cut_stairs` })
@@ -123,15 +107,11 @@ function registerTFCSandRecipes(event) {
 		event.stonecutting(`tfc:cut_sandstone/${sandColor}_stairs`, `tfc:cut_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_stairs`)
 
-		generateCutterRecipe(event, `tfc:cut_sandstone/${sandColor}`, 0, `tfc:cut_sandstone/${sandColor}_stairs`, 100, 8, `${sandColor}_cut_sandstone_to_stairs`)
-
 		// Обрезанный песчанник -> Плита
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_cut_slab` })
 
 		event.stonecutting(`2x tfc:cut_sandstone/${sandColor}_slab`, `tfc:cut_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_slab`)
-
-		generateCutterRecipe(event, `tfc:cut_sandstone/${sandColor}`, 1, `2x tfc:cut_sandstone/${sandColor}_slab`, 100, 8, `${sandColor}_cut_sandstone_to_slab`)
 
 		// Обрезанный песчанник -> Стена
 		event.remove({ id: `tfc:crafting/sandstone/${sandColor}_cut_wall` })
@@ -139,7 +119,6 @@ function registerTFCSandRecipes(event) {
 		event.stonecutting(`tfc:cut_sandstone/${sandColor}_wall`, `tfc:cut_sandstone/${sandColor}`)
 			.id(`tfg:stonecutting/${sandColor}_cut_sandstone_to_wall`)
 
-		generateCutterRecipe(event, `tfc:cut_sandstone/${sandColor}`, 2, `tfc:cut_sandstone/${sandColor}_wall`, 100, 8, `${sandColor}_cut_sandstone_to_wall`)
 	})
 
 	// Коричневый гравий -> Песок

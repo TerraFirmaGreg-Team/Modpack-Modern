@@ -43,6 +43,10 @@ const registerCreateItemTags = (event) => {
 
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
+
+	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
+	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
+	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
 }
 
 const registerCreateBlockTags = (event) => {

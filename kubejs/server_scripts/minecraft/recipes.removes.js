@@ -464,21 +464,18 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Сланцевый булыжник ступень
 
 	event.remove({ id: 'minecraft:cobbled_deepslate_stairs' })
-	event.remove({ id: 'minecraft:cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
 
 	//#region Выход: Сланцевый булыжник плита
 
 	event.remove({ id: 'minecraft:cobbled_deepslate_slab' })
-	event.remove({ id: 'minecraft:cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
 
 	//#region Выход: Сланцевый булыжник стена
 
 	event.remove({ id: 'minecraft:cobbled_deepslate_wall' })
-	event.remove({ id: 'minecraft:cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
 
@@ -486,7 +483,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:deepslate_tiles' })
 	event.remove({ id: 'minecraft:deepslate_tiles_from_polished_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_tiles_from_deepslate_bricks_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tiles_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
@@ -495,7 +491,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:deepslate_tile_stairs' })
 	event.remove({ id: 'minecraft:deepslate_tile_stairs_from_polished_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_tile_stairs_from_deepslate_tiles_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tile_stairs_from_deepslate_bricks_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tile_stairs_from_cobbled_deepslate_stonecutting' })
 
@@ -505,7 +500,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:deepslate_tile_slab' })
 	event.remove({ id: 'minecraft:deepslate_tile_slab_from_polished_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_tile_slab_from_deepslate_tiles_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tile_slab_from_deepslate_bricks_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tile_slab_from_cobbled_deepslate_stonecutting' })
 
@@ -516,7 +510,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:deepslate_tile_wall' })
 	event.remove({ id: 'minecraft:deepslate_tile_wall_from_polished_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_tile_wall_from_deepslate_tiles_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tile_wall_from_deepslate_bricks_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_tile_wall_from_cobbled_deepslate_stonecutting' })
 
@@ -536,7 +529,6 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:deepslate_brick_stairs' })
 	event.remove({ id: 'minecraft:deepslate_brick_stairs_from_polished_deepslate_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_brick_stairs_from_cobbled_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_brick_stairs_from_deepslate_bricks_stonecutting' })
 
 	//#endregion
 
@@ -545,7 +537,6 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:deepslate_brick_slab' })
 	event.remove({ id: 'minecraft:deepslate_brick_slab_from_polished_deepslate_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_brick_slab_from_cobbled_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_brick_slab_from_deepslate_bricks_stonecutting' })
 
 	//#endregion
 
@@ -554,7 +545,6 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:deepslate_brick_wall' })
 	event.remove({ id: 'minecraft:deepslate_brick_wall_from_polished_deepslate_stonecutting' })
 	event.remove({ id: 'minecraft:deepslate_brick_wall_from_cobbled_deepslate_stonecutting' })
-	event.remove({ id: 'minecraft:deepslate_brick_wall_from_deepslate_bricks_stonecutting' })
 
 	//#endregion
 
@@ -568,7 +558,6 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Полированный сланец ступень
 
 	event.remove({ id: 'minecraft:polished_deepslate_stairs' })
-	event.remove({ id: 'minecraft:polished_deepslate_stairs_from_polished_deepslate_stonecutting' })
 	event.remove({ id: 'minecraft:polished_deepslate_stairs_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
@@ -576,7 +565,6 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Полированный сланец плита
 
 	event.remove({ id: 'minecraft:polished_deepslate_slab' })
-	event.remove({ id: 'minecraft:polished_deepslate_slab_from_polished_deepslate_stonecutting' })
 	event.remove({ id: 'minecraft:polished_deepslate_slab_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
@@ -584,7 +572,6 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Полированный сланец стена
 
 	event.remove({ id: 'minecraft:polished_deepslate_wall' })
-	event.remove({ id: 'minecraft:polished_deepslate_wall_from_polished_deepslate_stonecutting' })
 	event.remove({ id: 'minecraft:polished_deepslate_wall_from_cobbled_deepslate_stonecutting' })
 
 	//#endregion
@@ -1070,21 +1057,18 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Ступень из черного камня
 
 	event.remove({ id: 'minecraft:blackstone_stairs' })
-	event.remove({ id: 'minecraft:blackstone_stairs_from_blackstone_stonecutting' })
 
 	//#endregion
 
 	//#region Выход: Полублок из черного камня
 
 	event.remove({ id: 'minecraft:blackstone_slab' })
-	event.remove({ id: 'minecraft:blackstone_slab_from_blackstone_stonecutting' })
 
 	//#endregion
 
 	//#region Выход: Стена из черного камня
 
 	event.remove({ id: 'minecraft:blackstone_wall' })
-	event.remove({ id: 'minecraft:blackstone_wall_from_blackstone_stonecutting' })
 
 	//#endregion
 
@@ -1107,14 +1091,12 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:polished_blackstone_stairs' })
 	event.remove({ id: 'minecraft:polished_blackstone_stairs_from_blackstone_stonecutting' })
-	event.remove({ id: 'minecraft:polished_blackstone_stairs_from_polished_blackstone_stonecutting' })
 
 	//#endregion
 
 	//#region Выход: Полублоки из гладкого черного камня
 
 	event.remove({ id: 'minecraft:polished_blackstone_slab' })
-	event.remove({ id: 'minecraft:polished_blackstone_slab_from_polished_blackstone_stonecutting' })
 	event.remove({ id: 'minecraft:polished_blackstone_slab_from_blackstone_stonecutting' })
 
 	//#endregion
@@ -1122,7 +1104,6 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Стена из гладкого черного камня
 
 	event.remove({ id: 'minecraft:polished_blackstone_wall' })
-	event.remove({ id: 'minecraft:polished_blackstone_wall_from_polished_blackstone_stonecutting' })
 	event.remove({ id: 'minecraft:polished_blackstone_wall_from_blackstone_stonecutting' })
 
 	//#endregion
@@ -1131,7 +1112,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:polished_blackstone_bricks' })
 	event.remove({ id: 'minecraft:polished_blackstone_bricks_from_blackstone_stonecutting' })
-	event.remove({ id: 'minecraft:polished_blackstone_bricks_from_polished_blackstone_stonecutting' })
 
 	//#endregion
 
@@ -1146,7 +1126,6 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:polished_blackstone_brick_stairs' })
 	event.remove({ id: 'minecraft:polished_blackstone_brick_stairs_from_blackstone_stonecutting' })
 	event.remove({ id: 'minecraft:polished_blackstone_brick_stairs_from_polished_blackstone_stonecutting' })
-	event.remove({ id: 'minecraft:polished_blackstone_brick_stairs_from_polished_blackstone_bricks_stonecutting' })
 
 	//#endregion
 
@@ -1155,7 +1134,6 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:polished_blackstone_brick_slab' })
 	event.remove({ id: 'minecraft:polished_blackstone_brick_slab_from_blackstone_stonecutting' })
 	event.remove({ id: 'minecraft:polished_blackstone_brick_slab_from_polished_blackstone_stonecutting' })
-	event.remove({ id: 'minecraft:polished_blackstone_brick_slab_from_polished_blackstone_bricks_stonecutting' })
 
 	//#endregion
 
@@ -1163,7 +1141,6 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:polished_blackstone_brick_wall' })
 	event.remove({ id: 'minecraft:polished_blackstone_brick_wall_from_polished_blackstone_stonecutting' })
-	event.remove({ id: 'minecraft:polished_blackstone_brick_wall_from_polished_blackstone_bricks_stonecutting' })
 	event.remove({ id: 'minecraft:polished_blackstone_brick_wall_from_blackstone_stonecutting' })
 
 	//#endregion
@@ -1191,44 +1168,21 @@ function removeMinecraftRecipes(event) {
 	
 	event.remove({ id: 'minecraft:cut_copper_stairs' })
 	event.remove({ id: 'minecraft:cut_copper_stairs_from_copper_block_stonecutting' })
-	event.remove({ id: 'minecraft:cut_copper_stairs_from_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:cut_copper_slab' })
 	event.remove({ id: 'minecraft:cut_copper_slab_from_copper_block_stonecutting' })
-	event.remove({ id: 'minecraft:cut_copper_slab_from_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:exposed_cut_copper' })
-	event.remove({ id: 'minecraft:exposed_cut_copper_from_exposed_copper_stonecutting' })
-	
 	event.remove({ id: 'minecraft:exposed_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:exposed_cut_copper_stairs_from_exposed_copper_stonecutting' })
-	event.remove({ id: 'minecraft:exposed_cut_copper_stairs_from_exposed_cut_copper_stonecutting' })
-	
 	event.remove({ id: 'minecraft:exposed_cut_copper_slab' })
-	event.remove({ id: 'minecraft:exposed_cut_copper_slab_from_exposed_copper_stonecutting' })
-	event.remove({ id: 'minecraft:exposed_cut_copper_slab_from_exposed_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:weathered_cut_copper' })
-	event.remove({ id: 'minecraft:weathered_cut_copper_from_weathered_copper_stonecutting' })
-	
 	event.remove({ id: 'minecraft:weathered_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:weathered_cut_copper_stairs_from_weathered_copper_stonecutting' })
-	event.remove({ id: 'minecraft:weathered_cut_copper_stairs_from_weathered_cut_copper_stonecutting' })
-	
 	event.remove({ id: 'minecraft:weathered_cut_copper_slab' })
-	event.remove({ id: 'minecraft:weathered_cut_copper_slab_from_weathered_copper_stonecutting' })
-	event.remove({ id: 'minecraft:weathered_cut_copper_slab_from_weathered_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:oxidized_cut_copper' })
-	event.remove({ id: 'minecraft:oxidized_cut_copper_from_oxidized_copper_stonecutting' })
-	
 	event.remove({ id: 'minecraft:oxidized_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:oxidized_cut_copper_stairs_from_oxidized_copper_stonecutting' })
-	event.remove({ id: 'minecraft:oxidized_cut_copper_stairs_from_oxidized_cut_copper_stonecutting' })
-	
 	event.remove({ id: 'minecraft:oxidized_cut_copper_slab' })
-	event.remove({ id: 'minecraft:oxidized_cut_copper_slab_from_oxidized_copper_stonecutting' })
-	event.remove({ id: 'minecraft:oxidized_cut_copper_slab_from_oxidized_cut_copper_stonecutting' })
 
 	//#endregion
 
@@ -1238,65 +1192,45 @@ function removeMinecraftRecipes(event) {
 
 	event.remove({ id: 'minecraft:waxed_cut_copper_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_cut_copper' })
-	event.remove({ id: 'minecraft:waxed_cut_copper_from_waxed_copper_block_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_cut_copper_stairs_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:waxed_cut_copper_stairs_from_waxed_copper_block_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_cut_copper_stairs_from_waxed_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_cut_copper_slab_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_cut_copper_slab' })
-	event.remove({ id: 'minecraft:waxed_cut_copper_slab_from_waxed_copper_block_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_cut_copper_slab_from_waxed_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_exposed_copper_from_honeycomb' })
 	
 	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_exposed_cut_copper' })
-	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_from_waxed_exposed_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_stairs_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_stairs_from_waxed_exposed_copper_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_stairs_from_waxed_exposed_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_slab_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_slab' })
-	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_slab_from_waxed_exposed_copper_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_exposed_cut_copper_slab_from_waxed_exposed_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_weathered_copper_from_honeycomb' })
 	
 	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_weathered_cut_copper' })
-	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_from_waxed_weathered_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_stairs_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_stairs_from_waxed_weathered_copper_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_stairs_from_waxed_weathered_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_slab_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_slab' })
-	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_slab_from_waxed_weathered_copper_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_weathered_cut_copper_slab_from_waxed_weathered_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_oxidized_copper_from_honeycomb' })
 	
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper' })
-	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_from_waxed_oxidized_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_stairs_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_stairs' })
-	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_copper_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_stairs_from_waxed_oxidized_cut_copper_stonecutting' })
 	
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_slab_from_honeycomb' })
 	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_slab' })
-	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_slab_from_waxed_oxidized_copper_stonecutting' })
-	event.remove({ id: 'minecraft:waxed_oxidized_cut_copper_slab_from_waxed_oxidized_cut_copper_stonecutting' })
 
 	//#endregion
 	

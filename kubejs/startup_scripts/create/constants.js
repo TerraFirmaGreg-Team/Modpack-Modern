@@ -168,31 +168,9 @@ global.CREATE_DISABLED_ITEMS = [
     'create:layered_tuff', 
     'create:tuff_pillar',
 
-    // Calcite
-    'create:cut_calcite', 
-    'create:cut_calcite_stairs', 
-    'create:cut_calcite_slab', 
-    'create:cut_calcite_wall', 
-    'create:polished_cut_calcite', 
-    'create:polished_cut_calcite_stairs', 
-    'create:polished_cut_calcite_slab', 
-    'create:polished_cut_calcite_wall', 
-    'create:cut_calcite_bricks', 
-    'create:cut_calcite_brick_stairs', 
-    'create:cut_calcite_brick_slab', 
-    'create:cut_calcite_brick_wall', 
-    'create:small_calcite_bricks', 
-    'create:small_calcite_brick_stairs', 
-    'create:small_calcite_brick_slab', 
-    'create:small_calcite_brick_wall', 
-    'create:layered_calcite', 
-    'create:calcite_pillar',
-
-    // Limestone
-    'create:limestone',
 
     // Shit Glass
-	  'create:crimson_window', 
+    'create:crimson_window', 
     'create:warped_window', 
     'create:oak_window', 
     'create:spruce_window', 
@@ -204,7 +182,7 @@ global.CREATE_DISABLED_ITEMS = [
     'create:birch_window_pane', 
     'create:jungle_window_pane', 
     'create:acacia_window_pane', 
-	  'create:crimson_window_pane',
+    'create:crimson_window_pane',
     'create:warped_window_pane', 
 
     // Blocks

@@ -106,23 +106,17 @@ function registerTFCDirtRecipes(event) {
 		event.stonecutting(`tfc:mud_bricks/${mud}_stairs`, `tfc:mud_bricks/${mud}`)
 			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_stairs`)
 
-		generateCutterRecipe(event, `tfc:mud_bricks/${mud}`, 0, `tfc:mud_bricks/${mud}_stairs`, 100, 8, `${mud}_mud_bricks_to_stairs`)
-
 		// Блок кирпичей -> Плиты
 		event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_slab` })
 
 		event.stonecutting(`2x tfc:mud_bricks/${mud}_slab`, `tfc:mud_bricks/${mud}`)
 			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_slab`)
 
-		generateCutterRecipe(event, `tfc:mud_bricks/${mud}`, 1, `2x tfc:mud_bricks/${mud}_slab`, 100, 8, `${mud}_mud_bricks_to_slab`)
-
 		// Блок кирпичей -> Стена
 		event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_wall` })
 
 		event.stonecutting(`tfc:mud_bricks/${mud}_wall`, `tfc:mud_bricks/${mud}`)
 			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_wall`)
-
-		generateCutterRecipe(event, `tfc:mud_bricks/${mud}`, 2, `tfc:mud_bricks/${mud}_wall`, 100, 8, `${mud}_mud_bricks_to_wall`)
 
 	})
 

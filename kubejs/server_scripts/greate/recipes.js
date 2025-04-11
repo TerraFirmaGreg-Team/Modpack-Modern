@@ -44,11 +44,11 @@ function registerGreateRecipes(event) {
 		B: '#forge:plates/bismuth_bronze'
 	}).id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
 
-	generateCutterRecipe(event, '#forge:plates/wrought_iron', 4, '6x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft')
-	generateCutterRecipe(event, '#forge:plates/steel', 4, '6x greate:steel_shaft', 100, GTValues.VA[GTValues.LV], 'steel_shaft')
-	generateCutterRecipe(event, '#forge:plates/aluminium', 4, '6x greate:aluminium_shaft', 100, GTValues.VA[GTValues.MV], 'aluminium_shaft')
-	generateCutterRecipe(event, '#forge:plates/stainless_steel', 4, '6x greate:stainless_steel_shaft', 100, GTValues.VA[GTValues.HV], 'stainless_steel_shaft')
-	generateCutterRecipe(event, '#forge:plates/titanium', 4, '6x greate:titanium_shaft', 100, GTValues.VA[GTValues.EV], 'titanium_shaft')
+	generateCutterRecipe(event, '#forge:plates/wrought_iron', '6x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft')
+	generateCutterRecipe(event, '#forge:plates/steel', '6x greate:steel_shaft', 100, GTValues.VA[GTValues.LV], 'steel_shaft')
+	generateCutterRecipe(event, '#forge:plates/aluminium', '6x greate:aluminium_shaft', 100, GTValues.VA[GTValues.MV], 'aluminium_shaft')
+	generateCutterRecipe(event, '#forge:plates/stainless_steel', '6x greate:stainless_steel_shaft', 100, GTValues.VA[GTValues.HV], 'stainless_steel_shaft')
+	generateCutterRecipe(event, '#forge:plates/titanium', '6x greate:titanium_shaft', 100, GTValues.VA[GTValues.EV], 'titanium_shaft')
 
 	// #endregion
 

@@ -24,17 +24,17 @@ const registerAFCRecipes = (event) => {
 		event.remove({ id: `afc:crafting/wood/${wood}_water_wheel` })
 
 		// Бревна -> Пиломатериалы
-		generateCutterRecipe(event, `#afc:${wood}_logs`, 1, `16x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+		generateCutterRecipe(event, `#afc:${wood}_logs`, `16x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
 
 		// Доски -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}`, null, `4x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}`, `4x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
 
 		// Ступень -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_stairs`, null, `3x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}_stairs`, `3x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
 
 
 		// Плита -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_slab`, null, `2x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}_slab`, `2x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
 
 		// ? -> Деревянная нажимная пластина
 		event.shaped(`afc:wood/planks/${wood}_pressure_plate`, [
@@ -59,7 +59,7 @@ const registerAFCRecipes = (event) => {
 		// ? -> Деревянная кнопка
 		event.remove({ id: `afc:crafting/wood/${wood}_button` })
 
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, null, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}_pressure_plate`, `6x afc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
 	})
 
 	// #endregion

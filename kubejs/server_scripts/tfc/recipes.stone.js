@@ -32,21 +32,6 @@ function registerTFCStoneRecipes(event) {
 			.duration(10)
 			.EUt(16)
 
-		// Сырой камень -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_raw_stairs` })
-
-		generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 0, [`tfc:rock/raw/${stone}_stairs`, stoneDust], 100, 8, `${stone}_raw_to_stairs`)
-
-		// Сырой камень -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_raw_slab` })
-
-		generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 1, [`2x tfc:rock/raw/${stone}_slab`, stoneDust], 100, 8, `${stone}_raw_to_slab`)
-
-		// Сырой камень -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_raw_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/raw/${stone}`, 2, [`tfc:rock/raw/${stone}_wall`, stoneDust], 100, 8, `${stone}_raw_to_wall`)
-
 		// ? -> Сырая нажимная пластина
 		event.shaped(`tfc:rock/pressure_plate/${stone}`, [
 			'ABA',
@@ -70,9 +55,82 @@ function registerTFCStoneRecipes(event) {
 		// ? -> Сырая кнопка
 		event.remove({ id: `tfc:crafting/rock/${stone}_button` })
 
-		generateCutterRecipe(event, `tfc:rock/pressure_plate/${stone}`, 0, `6x tfc:rock/button/${stone}`, 50, 2, `${stone}_raw_button`)
+		generateCutterRecipe(event, `tfc:rock/pressure_plate/${stone}`, `6x tfc:rock/button/${stone}`, 50, 2, `${stone}_raw_button`)
 
 		//#endregion
+		
+		// #region Stonecutting
+
+		// Сырой камень -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_raw_stairs` })
+
+		// Сырой камень -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_raw_slab` })
+
+		// Сырой камень -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_raw_wall` })
+
+		// Булыжник -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_stairs` })
+
+		// Булыжник -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_slab` })
+
+		// Булыжник -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_wall` })
+
+		// Булыжник -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_stairs` })
+
+		// Булыжник -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_slab` })
+
+		// Булыжник -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_wall` })
+
+		// Блок кирпичей -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_stairs` })
+
+		// Блок кирпичей -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_slab` })
+
+		// Блок кирпичей -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_wall` })
+
+		// Потрескавшийся кирпич -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_stairs` })
+
+		// Потрескавшийся кирпич -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_slab` })
+
+		// Потрескавшийся кирпич -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_wall` })
+
+		// Замшелый булыжник -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_stairs` })
+
+		//Замшелый булыжник -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_slab` })
+
+		// Замшелый булыжник -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_wall` })
+
+		// Замшелый булыжник -> Ступени
+		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_stairs` })
+
+		//Замшелый булыжник -> Плиты
+		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_slab` })
+
+		// Замшелый булыжник -> Стена
+		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_wall` })
+
+		// Укрепленный сырой камень -> Гладкий
+		event.stonecutting(`tfc:rock/smooth/${stone}`, `tfc:rock/hardened/${stone}`).id(`hardened_${stone}_to_smooth`)
+
+		// Блок кирпичей -> Резной кирпич
+		event.stonecutting(`tfc:rock/chiseled/${stone}`, `tfc:rock/bricks/${stone}`).id(`chiseled_${stone}`)
+
+		// #endregion
 
 		//#region Булыжник
 
@@ -108,77 +166,11 @@ function registerTFCStoneRecipes(event) {
 			.duration(50)
 			.EUt(2)
 
-		// Булыжник -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_stairs` })
+		// #endregion
 
-		generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 0, [`tfc:rock/cobble/${stone}_stairs`, stoneDust], 100, 8, `${stone}_cobble_to_stairs`)
 
-		// Булыжник -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_slab` })
+		//#region Кирпич -> Блок кирпичей
 
-		generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 1, [`2x tfc:rock/cobble/${stone}_slab`, stoneDust], 100, 8, `${stone}_cobble_to_slab`)
-
-		// Булыжник -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_cobble_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/cobble/${stone}`, 2, [`tfc:rock/cobble/${stone}_wall`, stoneDust], 100, 8, `${stone}_cobble_to_wall`)
-
-		//#endregion
-
-		//#region Гладкий
-
-		// Сырой камень -> Гладкий
-		event.recipes.gtceu.laser_engraver(`raw_${stone}_to_smooth`)
-			.itemInputs(`tfc:rock/raw/${stone}`)
-			.notConsumable('tfc:lens')
-			.itemOutputs(`tfc:rock/smooth/${stone}`)
-			.duration(32)
-			.EUt(GTValues.VA[GTValues.ULV])
-			
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: `tfc:rock/raw/${stone}` }],
-			results: [{item: `tfc:rock/smooth/${stone}` }],
-			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/tfc/raw_to_smooth_${stone}`)
-
-		// Укрепленный сырой камень -> Гладкий
-		event.recipes.gtceu.laser_engraver(`hardened_${stone}_to_smooth`)
-			.itemInputs(`tfc:rock/hardened/${stone}`)
-			.notConsumable('tfc:lens')
-			.itemOutputs(`tfc:rock/smooth/${stone}`)
-			.duration(32)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: `tfc:rock/hardened/${stone}` }],
-			results: [{item: `tfc:rock/smooth/${stone}` }],
-			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/tfc/hardened_to_smooth_${stone}`)
-
-		// Булыжник -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_stairs` })
-
-		generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 0, [`tfc:rock/smooth/${stone}_stairs`, stoneDust], 100, 8, `${stone}_smooth_to_stairs`)
-
-		// Булыжник -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_slab` })
-
-		generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 1, [`2x tfc:rock/smooth/${stone}_slab`, stoneDust], 100, 8, `${stone}_smooth_to_slab`)
-
-		// Булыжник -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_smooth_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/smooth/${stone}`, 2, [`tfc:rock/smooth/${stone}_wall`, stoneDust], 100, 8, `${stone}_smooth_to_wall`)
-
-		//#endregion
-
-		//#region Кирпич
-
-		// Кирпич -> Блок кирпичей
 		event.recipes.gtceu.assembler(`bricks_${stone}`)
 			.itemInputs(`5x tfc:brick/${stone}`)
 			.circuit(0)
@@ -187,46 +179,15 @@ function registerTFCStoneRecipes(event) {
 			.duration(50)
 			.EUt(2)
 
-		// Блок кирпичей -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_stairs` })
-
-		generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 0, [`tfc:rock/bricks/${stone}_stairs`, stoneDust], 100, 8, `${stone}_bricks_to_stairs`)
-
-		// Блок кирпичей -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_slab` })
-
-		generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 1, [`2x tfc:rock/bricks/${stone}_slab`, stoneDust], 100, 8, `${stone}_bricks_to_slab`)
-
-		// Блок кирпичей -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_bricks_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/bricks/${stone}`, 2, [`tfc:rock/bricks/${stone}_wall`, stoneDust], 100, 8, `${stone}_bricks_to_wall`)
-
 		//#endregion
 
-		//#region Потрескавшийся кирпич
+		//#region Кирпич -> Потрескавшийся кирпич
 
-		// Кирпич -> Потрескавшийся кирпич
 		event.recipes.gtceu.forge_hammer(`cracked_bricks_${stone}`)
 			.itemInputs(`tfc:rock/bricks/${stone}`)
 			.itemOutputs(`tfc:rock/cracked_bricks/${stone}`)
 			.duration(25)
 			.EUt(8)
-
-		// Потрескавшийся кирпич -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_stairs` })
-
-		generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 0, [`tfc:rock/cracked_bricks/${stone}_stairs`, stoneDust], 100, 8, `${stone}_cracked_bricks_to_stairs`)
-
-		// Потрескавшийся кирпич -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_slab` })
-
-		generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 1, [`2x tfc:rock/cracked_bricks/${stone}_slab`, stoneDust], 100, 8, `${stone}_cracked_bricks_to_slab`)
-
-		// Потрескавшийся кирпич -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_cracked_bricks_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/cracked_bricks/${stone}`, 2, [`tfc:rock/cracked_bricks/${stone}_wall`, stoneDust], 100, 8, `${stone}_cracked_bricks_to_wall`)
 
 		//#endregion
 
@@ -258,26 +219,10 @@ function registerTFCStoneRecipes(event) {
 			.duration(50)
 			.EUt(2)
 
-		// Замшелый булыжник -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_stairs` })
-
-		generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 0, [`tfc:rock/mossy_cobble/${stone}_stairs`, stoneDust], 100, 8, `${stone}_mossy_cobble_to_stairs`)
-
-		//Замшелый булыжник -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_slab` })
-
-		generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 1, [`2x tfc:rock/mossy_cobble/${stone}_slab`, stoneDust], 100, 8, `${stone}_mossy_cobble_to_slab`)
-
-		// Замшелый булыжник -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_cobble_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/mossy_cobble/${stone}`, 2, [`tfc:rock/mossy_cobble/${stone}_wall`, stoneDust], 100, 8, `${stone}_mossy_cobble_to_wall`)
-
 		//#endregion
 
-		//#region Замшелый кирпич
+		//#region Блок кирпичей -> Замшелый кирпич
 
-		// Блок кирпичей -> Замшелый кирпич
 		event.recipes.gtceu.assembler(`mossy_bricks_${stone}`)
 			.itemInputs(`tfc:rock/bricks/${stone}`, '#tfc:compost_greens_low')
 			.circuit(0)
@@ -285,21 +230,6 @@ function registerTFCStoneRecipes(event) {
 			.itemOutputs(`tfc:rock/mossy_bricks/${stone}`)
 			.duration(50)
 			.EUt(2)
-
-		// Замшелый булыжник -> Ступени
-		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_stairs` })
-
-		generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 0, [`tfc:rock/mossy_bricks/${stone}_stairs`, stoneDust], 100, 8, `${stone}_mossy_bricks_to_stairs`)
-
-		//Замшелый булыжник -> Плиты
-		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_slab` })
-
-		generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 1, [`2x tfc:rock/mossy_bricks/${stone}_slab`, stoneDust], 100, 8, `${stone}_mossy_bricks_to_slab`)
-
-		// Замшелый булыжник -> Стена
-		event.remove({ id: `tfc:crafting/rock/${stone}_mossy_bricks_wall` })
-
-		generateCutterRecipe(event, `tfc:rock/mossy_bricks/${stone}`, 2, [`tfc:rock/mossy_bricks/${stone}_wall`, stoneDust], 100, 8, `${stone}_mossy_bricks_to_wall`)
 
 		//#endregion
 
@@ -324,26 +254,6 @@ function registerTFCStoneRecipes(event) {
 			.itemOutputs(`tfc:rock/aqueduct/${stone}`)
 			.duration(50)
 			.EUt(2)
-
-		//#endregion
-
-		//#region Резной кирпич
-
-		// Блок кирпичей -> Резной кирпич
-		event.recipes.gtceu.laser_engraver(`chiseled_${stone}`)
-			.itemInputs(`tfc:rock/bricks/${stone}`)
-			.notConsumable('tfc:lens')
-			.itemOutputs(`tfc:rock/chiseled/${stone}`)
-			.duration(32)
-			.EUt(GTValues.VA[GTValues.ULV])
-
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: `tfc:rock/bricks/${stone}` }],
-			results: [{item: `tfc:rock/chiseled/${stone}` }],
-			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/tfc/bricks_to_chiseled_${stone}`)
 
 		//#endregion
 

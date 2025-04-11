@@ -12,17 +12,17 @@ function registerTFCWoodRecipes(event) {
 		event.remove({ id: `tfc:crafting/wood/${wood}_water_wheel` })
 
 		// Бревна -> Пиломатериалы
-		generateCutterRecipe(event, `#tfc:${wood}_logs`, 1, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+		generateCutterRecipe(event, `#tfc:${wood}_logs`, `16x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
 
 		// Доски -> Пиломатериалы
-		generateCutterRecipe(event, `tfc:wood/planks/${wood}`, null, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
+		generateCutterRecipe(event, `tfc:wood/planks/${wood}`, `4x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
 
 		// Ступень -> Пиломатериалы
-		generateCutterRecipe(event, `tfc:wood/planks/${wood}_stairs`, null, `3x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
+		generateCutterRecipe(event, `tfc:wood/planks/${wood}_stairs`, `3x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
 
 
 		// Плита -> Пиломатериалы
-		generateCutterRecipe(event, `tfc:wood/planks/${wood}_slab`, null, `2x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
+		generateCutterRecipe(event, `tfc:wood/planks/${wood}_slab`, `2x tfc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
 
 		// ? -> Деревянная нажимная пластина
 		event.shaped(`tfc:wood/planks/${wood}_pressure_plate`, [
@@ -47,7 +47,7 @@ function registerTFCWoodRecipes(event) {
 		// ? -> Деревянная кнопка
 		event.remove({ id: `tfc:crafting/wood/${wood}_button` })
 
-		generateCutterRecipe(event, `tfc:wood/planks/${wood}_pressure_plate`, null, `6x tfc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
+		generateCutterRecipe(event, `tfc:wood/planks/${wood}_pressure_plate`, `6x tfc:wood/planks/${wood}_button`, 50, 2, `${wood}_button`)
 
 	})
 }

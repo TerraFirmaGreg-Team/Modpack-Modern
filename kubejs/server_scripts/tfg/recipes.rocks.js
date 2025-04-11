@@ -68,8 +68,6 @@ function registerTFGRockRecipes(event) {
 			x.polished, [x.raw, '#tfc:chisels']
 		))
 
-		event.recipes.tfc.chisel(x.polished, x.raw, 'smooth')
-
 		event.recipes.gtceu.laser_engraver(`${x.raw}_to_${x.polished}`.replace(/:/g, '_'))
 			.itemInputs(x.raw)
 			.itemOutputs(x.polished)
@@ -182,7 +180,7 @@ function registerTFGRockRecipes(event) {
 	CUTTER.forEach(x => {
 		if ("stair" in x) {
 			event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
-			generateCutterRecipe(event, x.raw, 0, [x.stair, x.dust], 100, 8, `${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
+			//event.stonecutting(x.stair, x.raw).id(`${x.raw}_to_${x.stair}`.replace(/:/g, '_'))
 
 			event.recipes.gtceu.macerator(`macerate_${x.stair}`.replace(/:/g, '_'))
 				.itemInputs(x.stair)
@@ -197,7 +195,7 @@ function registerTFGRockRecipes(event) {
 		}
 		if ("slab" in x) {
 			event.recipes.tfc.chisel(x.slab, x.raw, 'slab')
-			generateCutterRecipe(event, x.raw, 1, [`2x ${x.slab}`, x.dust], 100, 8, `${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
+			//event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
 
 			event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))
 				.itemInputs(`2x ${x.slab}`)
@@ -211,7 +209,8 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if ("wall" in x) {
-			generateCutterRecipe(event, x.raw, 2, [x.wall, x.dust], 100, 8, `${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
+			event.recipes.tfc.chisel(x.slab, x.raw, 'smooth')
+			//event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
 
 			event.recipes.gtceu.macerator(`macerate_${x.wall}`.replace(/:/g, '_'))
 				.itemInputs(x.wall)

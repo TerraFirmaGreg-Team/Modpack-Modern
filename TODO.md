@@ -21,7 +21,6 @@ Key:
 - Figure out how to link ftb quests to the field guide entries
 
 ## Mods & Recipes
-- ⏳ Recipes for advanced peripherals and computercraft
 - Early game create changes
 	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
 		- ⏳ Create Horse Power still needs configs
@@ -32,10 +31,8 @@ Key:
 	- Check LBB efficiency of creosote
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
-- ❓ Packer recipes to turn cobble into loose rocks
 - ❓ Add that mod that disables xp
-- Where the fuck did the iron door recipe go
-- Change cutter recipes to not require a circuit because the mech saw really doesn't like them (maybe use stonecutter recipes instead?), also increase the curving press' item size (so we can get rid of so much warning spam in the logs)
+- Increase the curving press' item size (so we can get rid of so much warning spam in the logs)
 
 ## Worldgen
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
@@ -58,6 +55,7 @@ Key:
 - Use mech press whenever Greate updates to let us do our own recipes for it
 - Buff duration of the 5-day foods like sandwiches
 - Add recipe for the infinite water cover
+- Packer recipes to turn cobble into loose rocks
 
 ## Space
 - Put carve tags onto your rock types so they get carved correctly

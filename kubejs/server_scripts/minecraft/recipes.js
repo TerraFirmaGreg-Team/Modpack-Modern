@@ -100,42 +100,10 @@ const registerMinecraftRecipes = (event) => {
 				.itemOutputs(element.slabs)
 				.duration(50)
 				.EUt(4)
-
 		}
 
 		// Обрезанный блок
-
-		event.stonecutting(element.cutted, element.block)
-			.id(`tfg:stonecutting/cutted_${element.name}`)
-
-		generateCutterRecipe(event, element.block, 4, element.cutted, 100, 8, `cutted_${element.name}`)
-
-		// Not working, because JS is shit!
-		// event.recipes.tfc.chisel(element.cutted,  element.block, 'smooth')
-		//     .id(`tfg:chisel/cutted_${element.name}`)
-
-		// Ступени
-
-		event.stonecutting(element.stairs, element.cutted)
-			.id(`tfg:stonecutting/stairs_${element.name}`)
-
-		generateCutterRecipe(event, element.cutted, 0, [element.stairs, 'gtceu:small_copper_dust'], 100, 8, `stairs_${element.name}`)
-
-		// Not working, because JS is shit!
-		// event.recipes.tfc.chisel(element.stair,  element.cutted, 'stair')
-		//     .id(`tfg:chisel/stair_${element.name}`)
-
-		// Полублоки
-
-		event.stonecutting(element.slabs, element.cutted)
-			.id(`tfg:stonecutting/slabs_${element.name}`)
-
-		generateCutterRecipe(event, element.cutted, 1, [element.slabs, '2x gtceu:small_copper_dust'], 100, 8, `slabs_${element.name}`)
-
-		// Not working, because JS is shit!
-		// event.recipes.tfc.chisel(element.slab,  element.cutted, 'slab')
-		//     .id(`tfg:chisel/slab_${element.name}`)
-
+		event.shapeless('4x ' + element.cutted, [element.block, '#tfc:chisels']).id(`tfg:shapeless/cutted_${element.name}`)
 	}
 
 	//#endregion
@@ -781,7 +749,7 @@ const registerMinecraftRecipes = (event) => {
 
 	// Ну и херь я придумал
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
-		.itemInputs('16x #forge:foils/polycaprolactam','16x #forge:foils/aluminium','8x minecraft:phantom_membrane', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
+		.itemInputs('16x #forge:foils/polycaprolactam', '16x #forge:foils/aluminium', '8x minecraft:phantom_membrane', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of the Gods\",\"italic\":true}'}}"))
 		.duration(1600)
@@ -792,7 +760,7 @@ const registerMinecraftRecipes = (event) => {
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0,display:{Name:'{\"text\":\"Wings of the Gods\",\"italic\":true}'}}"))
 		.duration(1600)
-		.EUt(120)	
+		.EUt(120)
 
 	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
 		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
@@ -843,13 +811,13 @@ const registerMinecraftRecipes = (event) => {
 	//#endregion
 
 	//#region Scaffoldings
-	event.remove({output: 'minecraft:scaffolding'})
+	event.remove({ output: 'minecraft:scaffolding' })
 
-	event.shaped('32x minecraft:scaffolding',[
+	event.shaped('32x minecraft:scaffolding', [
 		'ABA',
 		'A A',
 		'A A'
-	],{
+	], {
 		A: 'gtceu:long_wood_rod',
 		B: 'tfg:scaffolding_frame'
 	}).id('tfg:minecraft/shaped/scaffolding')
@@ -865,6 +833,21 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shapeless('minecraft:redstone_torch', ['#forge:rods/wooden', 'minecraft:redstone'])
 		.id('tfg:shapeless/redstone_torch')
+
+	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
+
+	// #endregion
+
+	// #region Calcite
+
+	event.shapeless('1x minecraft:calcite', ['#forge:poor_raw_materials/calcite', '#tfc:chisels'])
+		.id('tfg:shapeless/calcite_from_poor_raw')
+
+	event.shapeless('2x minecraft:calcite', ['#forge:raw_materials/calcite', '#tfc:chisels'])
+		.id('tfg:shapeless/calcite_from_raw')
+
+	event.shapeless('4x minecraft:calcite', ['#forge:rich_raw_materials/calcite', '#tfc:chisels'])
+		.id('tfg:shapeless/calcite_from_rich_raw')
 
 	// #endregion
 }

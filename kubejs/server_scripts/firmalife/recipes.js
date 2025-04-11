@@ -394,7 +394,7 @@ const registerFirmaLifeRecipes = (event) => {
 		B: 'gtceu:tempered_glass'
 	}).id('tfg:shaped/reinforced_glass')
 
-	generateCutterRecipe(event, '3x gtceu:tempered_glass', null, '8x firmalife:reinforced_glass', 100, 7, 'reinforced_glass')
+	generateCutterRecipe(event, '3x gtceu:tempered_glass', '8x firmalife:reinforced_glass', 100, 7, 'reinforced_glass')
 
 	//#endregion
 
@@ -776,4 +776,22 @@ const registerFirmaLifeRecipes = (event) => {
 	generatePlatedBlockRecipe(event, GTMaterials.StainlessSteel);
 
 	// #endregion
+
+	event.recipes.gtceu.forge_hammer('firmalife:soybean_paste')
+		.itemInputs('firmalife:food/dehydrated_soybeans')
+		.itemOutputs('firmalife:food/soybean_paste')
+		.duration(20)
+		.EUt(7)
+
+	event.recipes.gtceu.forge_hammer('firmalife:red_grapes')
+		.itemInputs('firmalife:food/red_grapes')
+		.itemOutputs('firmalife:food/smashed_red_grapes')
+		.duration(20)
+		.EUt(7)
+
+	event.recipes.gtceu.forge_hammer('firmalife:soybean_paste')
+		.itemInputs('firmalife:food/red_grapes')
+		.itemOutputs('firmalife:food/smashed_red_grapes')
+		.duration(20)
+		.EUt(7)
 }

@@ -36,6 +36,23 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ output: 'createdeco:industrial_iron_sheet' })
 	event.remove({ output: 'createdeco:industrial_iron_nugget' })
 	event.remove({ output: 'createdeco:industrial_iron_ingot' })
+	event.remove({ id: 'createdeco:andesite_bars_overlay' })
+	event.remove({ id: 'createdeco:andesite_bars' })
+	event.remove({ id: 'createdeco:brass_bars_overlay' })
+	event.remove({ id: 'createdeco:brass_bars' })
+	event.remove({ id: 'createdeco:iron_bars_overlay' })
+	event.remove({ id: 'createdeco:copper_bars_overlay' })
+	event.remove({ id: 'createdeco:copper_bars' })
+	event.remove({ id: 'createdeco:industrial_iron_bars_overlay' })
+	event.remove({ id: 'createdeco:industrial_iron_bars' })
+	event.remove({ id: 'createdeco:zinc_bars_overlay' })
+	event.remove({ id: 'createdeco:zinc_bars' })
+	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
+	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
+	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/wrought_iron' })
+	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/copper' })
+	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/steel' })
+	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/zinc' })
 	//#endregion
 
 	//#region Lamp Recipes
@@ -140,6 +157,46 @@ const registerCreatedecoRecipes = (event) => {
 		event.replaceInput({ mod: "createdeco" }, `minecraft:${color}_dye`, `#forge:dyes/${color}`);
 	});
 	//#endregion
+
+	// #region Bars
+
+	const metalThings = [
+		{ metal: 'andesite', material: 'tin_alloy', tier: 3 },
+		{ metal: 'brass', material: 'brass', tier: 2 },
+		{ metal: 'iron', material: 'wrought_iron', tier: 3 },
+		{ metal: 'copper', material: 'copper', tier: 1 },
+		{ metal: 'industrial_iron', material: 'steel', tier: 4 },
+		{ metal: 'zinc', material: 'zinc', tier: 1 }
+	];
+
+	metalThings.forEach(bar => {
+		event.remove({ id: `createdeco:${bar.metal}_trapdoor` })
+		event.remove({ id: `createdeco:${bar.metal}_door` })
+
+		if (bar.metal != 'iron') {
+			event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars`, `#forge:plates/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
+				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars`)
+
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
+				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_door`)
+
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_trapdoor`, `#forge:plates/${bar.material}`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_trapdoor`)
+
+			event.stonecutting(`4x createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`)
+				.id(`createdeco:stonecutting/${bar.metal}_trapdoor`)
+
+			event.stonecutting(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`)
+				.id(`createdeco:stonecutting/${bar.metal}_door`)
+		}
+
+		event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars_overlay`, `#forge:plates/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
+			.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars_overlay`)
+
+	})
+
+
+	// #endregion
 
 	//#region Coins
 

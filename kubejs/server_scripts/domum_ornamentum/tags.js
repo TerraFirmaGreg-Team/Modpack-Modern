@@ -166,5 +166,27 @@ const registerDomumOrnamentumBlockTags = (event) => {
 		event.add('domum_ornamentum:trapdoors_materials', `${material}`)
 		event.add('domum_ornamentum:framed_light_center', `${material}`)
 	});
+
+	// Gregtech storage blocks don't work here
+	event.remove('domum_ornamentum:all_brick_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:bricks', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:doors_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:fancy_doors_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:fancy_trapdoors_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:fancy_gate_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:fence_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:paper_wall_center', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:paper_wall_frame', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:pillar_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:post_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:shingles_cover', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:shingles_roof', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:shingles_support', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:slab_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:stairs_material', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:timber_frames_center', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:timber_frames_frame', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:trapdoors_materials', '#forge:storage_blocks')
+	event.remove('domum_ornamentum:framed_light_center', '#forge:storage_blocks')
 	//#endregion
 };
