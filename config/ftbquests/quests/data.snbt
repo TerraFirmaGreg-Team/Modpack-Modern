@@ -6,6 +6,7 @@
 	default_reward_team: false
 	detection_delay: 20
 	disable_gui: false
+	drop_book_on_death: false
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
