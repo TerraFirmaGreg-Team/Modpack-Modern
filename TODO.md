@@ -28,7 +28,6 @@ Key:
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
 - ❓ Add that mod that disables xp
-- Increase the curving press' item size (so we can get rid of so much warning spam in the logs)
 
 ## Worldgen
 - ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
