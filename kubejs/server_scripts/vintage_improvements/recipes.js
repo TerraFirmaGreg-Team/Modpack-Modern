@@ -365,7 +365,7 @@ function registerVintageImprovementsRecipes(event) {
 					{ item: `gtceu:flawed_${material.getName()}_gem`, chance: highYield ? 0.20 : 0.25 },
 					{ item: `gtceu:chipped_${material.getName()}_gem`, chance: highYield ? 0.30 : 0.35 }
 				],
-				processingTime: 400 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+				processingTime: 200 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/vibrating/${material.getName()}`)
 		}
 
@@ -451,7 +451,7 @@ function registerVintageImprovementsRecipes(event) {
 		type: 'vintageimprovements:turning',
 		ingredients: [{ tag: 'forge:glass' }],
 		results: [{ item: 'tfc:lens' }],
-		processingTime: 200
+		processingTime: 100
 	}).id(`tfg:vi/lathe/lens`)
 
 	// #endregion
