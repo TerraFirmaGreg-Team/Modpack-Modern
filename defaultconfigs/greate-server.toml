@@ -78,7 +78,7 @@ fanSpeedMultiplier = 0.75
 					andesite_alloy_gearbox = 0.0
 					andesite_alloy_mechanical_press = 1.0
 					andesite_alloy_mechanical_mixer = 0.5
-					andesite_alloy_millstone = 0.5
+					andesite_alloy_millstone = 0.25
 					andesite_alloy_mechanical_saw = 0.5
 					andesite_alloy_mechanical_pump = 0.5
 
@@ -97,7 +97,7 @@ fanSpeedMultiplier = 0.75
 					steel_gearbox = 0.0
 					steel_mechanical_press = 2.0
 					steel_mechanical_mixer = 1.0
-					steel_millstone = 1.0
+					steel_millstone = 0.5
 					steel_mechanical_saw = 1.0
 					steel_mechanical_pump = 1.0
 
@@ -116,7 +116,7 @@ fanSpeedMultiplier = 0.75
 					aluminium_gearbox = 0.0
 					aluminium_mechanical_press = 3.0
 					aluminium_mechanical_mixer = 1.5
-					aluminium_millstone = 1.5
+					aluminium_millstone = 1.0
 					aluminium_mechanical_saw = 1.5
 					aluminium_mechanical_pump = 1.5
 
@@ -135,7 +135,7 @@ fanSpeedMultiplier = 0.75
 					stainless_steel_gearbox = 0.0
 					stainless_steel_mechanical_press = 4.0
 					stainless_steel_mechanical_mixer = 2.0
-					stainless_steel_millstone = 2.0
+					stainless_steel_millstone = 1.5
 					stainless_steel_mechanical_saw = 2.0
 					stainless_steel_mechanical_pump = 2.0
 
@@ -154,7 +154,7 @@ fanSpeedMultiplier = 0.75
 					titanium_gearbox = 0.0
 					titanium_mechanical_press = 5.0
 					titanium_mechanical_mixer = 2.5
-					titanium_millstone = 2.5
+					titanium_millstone = 2.0
 					titanium_mechanical_saw = 2.5
 					titanium_mechanical_pump = 2.5
 
@@ -173,7 +173,7 @@ fanSpeedMultiplier = 0.75
 					tungsten_steel_gearbox = 0.0
 					tungsten_steel_mechanical_press = 6.0
 					tungsten_steel_mechanical_mixer = 3.0
-					tungsten_steel_millstone = 3.0
+					tungsten_steel_millstone = 2.5
 					tungsten_steel_mechanical_saw = 3.0
 					tungsten_steel_mechanical_pump = 3.0
 
@@ -192,7 +192,7 @@ fanSpeedMultiplier = 0.75
 					rhodium_plated_palladium_gearbox = 0.0
 					rhodium_plated_palladium_mechanical_press = 7.0
 					rhodium_plated_palladium_mechanical_mixer = 3.5
-					rhodium_plated_palladium_millstone = 3.5
+					rhodium_plated_palladium_millstone = 3.0
 					rhodium_plated_palladium_mechanical_saw = 3.5
 					rhodium_plated_palladium_mechanical_pump = 3.5
 
@@ -211,7 +211,7 @@ fanSpeedMultiplier = 0.75
 					naquadah_alloy_gearbox = 0.0
 					naquadah_alloy_mechanical_press = 8.0
 					naquadah_alloy_mechanical_mixer = 4.0
-					naquadah_alloy_millstone = 4.0
+					naquadah_alloy_millstone = 4.5
 					naquadah_alloy_mechanical_saw = 4.0
 					naquadah_alloy_mechanical_pump = 4.0
 
@@ -230,7 +230,7 @@ fanSpeedMultiplier = 0.75
 					darmstadtium_gearbox = 0.0
 					darmstadtium_mechanical_press = 9.0
 					darmstadtium_mechanical_mixer = 4.5
-					darmstadtium_millstone = 4.5
+					darmstadtium_millstone = 5.0
 					darmstadtium_mechanical_saw = 4.5
 					darmstadtium_mechanical_pump = 4.5
 
@@ -249,7 +249,7 @@ fanSpeedMultiplier = 0.75
 					neutronium_gearbox = 0.0
 					neutronium_mechanical_press = 10.0
 					neutronium_mechanical_mixer = 5.0
-					neutronium_millstone = 5.0
+					neutronium_millstone = 5.5
 					neutronium_mechanical_saw = 5.0
 					neutronium_mechanical_pump = 5.0
 
