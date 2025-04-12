@@ -46,6 +46,15 @@ const registerCreateItemTags = (event) => {
 
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
 
+	event.add('create:non_movable', 'gtceu:wood_crate')
+	event.add('create:non_movable', 'gtceu:bronze_crate')
+	event.add('create:non_movable', 'gtceu:steel_crate')
+	event.add('create:non_movable', 'gtceu:aluminium_crate')
+	event.add('create:non_movable', 'gtceu:stainless_steel_crate')
+	event.add('create:non_movable', 'gtceu:titanium_crate')
+	event.add('create:non_movable', 'gtceu:tungsten_steel_crate')
+	event.add('create:non_movable', '#create:toolboxes')
+
 	event.remove('create:stone_types/deepslate', 'minecraft:deepslate')
 	event.remove('create:stone_types/dripstone', 'minecraft:dripstone_block')
 	event.remove('create:stone_types/blackstone', 'minecraft:blackstone')
