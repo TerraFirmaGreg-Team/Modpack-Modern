@@ -82,10 +82,10 @@
 			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
 			[kinetics.stressValues.v2.impact]
 				laser = 0.25
-				belt_grinder = 1.0
+				belt_grinder = 0.5
 				vacuum_chamber = 0.5
-				lathe = 0.5
-				lathe_moving = 0.5
+				lathe = 0.25
+				lathe_moving = 0.25
 				vibrating_table = 0.5
 				helve_kinetic = 0.5
 				curving_press = 0.5
