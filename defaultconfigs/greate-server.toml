@@ -27,7 +27,7 @@ fanSpeedMultiplier = 0.75
 			#.
 			#Maximum length in blocks of silicone mechanical belts
 			#Range: > 5
-			siliconeMaxBeltLength = 20
+			siliconeMaxBeltLength = 25
 
 		#.
 		#Polyethylene Belt Settings
@@ -35,7 +35,7 @@ fanSpeedMultiplier = 0.75
 			#.
 			#Maximum length in blocks of polyethylene mechanical belts
 			#Range: > 5
-			polyethyleneMaxBeltLength = 20
+			polyethyleneMaxBeltLength = 30
 
 		#.
 		#Polytetrafluoroethylene Belt Settings
@@ -43,7 +43,7 @@ fanSpeedMultiplier = 0.75
 			#.
 			#Maximum length in blocks of polytetrafluoroethylene mechanical belts
 			#Range: > 5
-			polytetrafluoroethyleneMaxBeltLength = 20
+			polytetrafluoroethyleneMaxBeltLength = 35
 
 		#.
 		#Polybenzimidazole Belt Settings
@@ -51,7 +51,7 @@ fanSpeedMultiplier = 0.75
 			#.
 			#Maximum length in blocks of polybenzimidazole mechanical belts
 			#Range: > 5
-			polybenzimidazoleMaxBeltLength = 20
+			polybenzimidazoleMaxBeltLength = 40
 
 	[kinetics.stressValues]
 
@@ -79,7 +79,7 @@ fanSpeedMultiplier = 0.75
 					andesite_alloy_mechanical_press = 1.0
 					andesite_alloy_mechanical_mixer = 0.5
 					andesite_alloy_millstone = 0.5
-					andesite_alloy_mechanical_saw = 1.0
+					andesite_alloy_mechanical_saw = 0.5
 					andesite_alloy_mechanical_pump = 0.5
 
 				[kinetics.stressValues.v1.impact.steel]
@@ -98,7 +98,7 @@ fanSpeedMultiplier = 0.75
 					steel_mechanical_press = 2.0
 					steel_mechanical_mixer = 1.0
 					steel_millstone = 1.0
-					steel_mechanical_saw = 2.0
+					steel_mechanical_saw = 1.0
 					steel_mechanical_pump = 1.0
 
 				[kinetics.stressValues.v1.impact.aluminium]
@@ -117,7 +117,7 @@ fanSpeedMultiplier = 0.75
 					aluminium_mechanical_press = 3.0
 					aluminium_mechanical_mixer = 1.5
 					aluminium_millstone = 1.5
-					aluminium_mechanical_saw = 3.0
+					aluminium_mechanical_saw = 1.5
 					aluminium_mechanical_pump = 1.5
 
 				[kinetics.stressValues.v1.impact.stainless_steel]
@@ -136,7 +136,7 @@ fanSpeedMultiplier = 0.75
 					stainless_steel_mechanical_press = 4.0
 					stainless_steel_mechanical_mixer = 2.0
 					stainless_steel_millstone = 2.0
-					stainless_steel_mechanical_saw = 4.0
+					stainless_steel_mechanical_saw = 2.0
 					stainless_steel_mechanical_pump = 2.0
 
 				[kinetics.stressValues.v1.impact.titanium]
@@ -155,7 +155,7 @@ fanSpeedMultiplier = 0.75
 					titanium_mechanical_press = 5.0
 					titanium_mechanical_mixer = 2.5
 					titanium_millstone = 2.5
-					titanium_mechanical_saw = 5.0
+					titanium_mechanical_saw = 2.5
 					titanium_mechanical_pump = 2.5
 
 				[kinetics.stressValues.v1.impact.tungsten_steel]
@@ -174,7 +174,7 @@ fanSpeedMultiplier = 0.75
 					tungsten_steel_mechanical_press = 6.0
 					tungsten_steel_mechanical_mixer = 3.0
 					tungsten_steel_millstone = 3.0
-					tungsten_steel_mechanical_saw = 6.0
+					tungsten_steel_mechanical_saw = 3.0
 					tungsten_steel_mechanical_pump = 3.0
 
 				[kinetics.stressValues.v1.impact.rhodium_plated_palladium]
@@ -193,7 +193,7 @@ fanSpeedMultiplier = 0.75
 					rhodium_plated_palladium_mechanical_press = 7.0
 					rhodium_plated_palladium_mechanical_mixer = 3.5
 					rhodium_plated_palladium_millstone = 3.5
-					rhodium_plated_palladium_mechanical_saw = 7.0
+					rhodium_plated_palladium_mechanical_saw = 3.5
 					rhodium_plated_palladium_mechanical_pump = 3.5
 
 				[kinetics.stressValues.v1.impact.naquadah_alloy]
@@ -212,7 +212,7 @@ fanSpeedMultiplier = 0.75
 					naquadah_alloy_mechanical_press = 8.0
 					naquadah_alloy_mechanical_mixer = 4.0
 					naquadah_alloy_millstone = 4.0
-					naquadah_alloy_mechanical_saw = 8.0
+					naquadah_alloy_mechanical_saw = 4.0
 					naquadah_alloy_mechanical_pump = 4.0
 
 				[kinetics.stressValues.v1.impact.darmstadtium]
@@ -231,7 +231,7 @@ fanSpeedMultiplier = 0.75
 					darmstadtium_mechanical_press = 9.0
 					darmstadtium_mechanical_mixer = 4.5
 					darmstadtium_millstone = 4.5
-					darmstadtium_mechanical_saw = 9.0
+					darmstadtium_mechanical_saw = 4.5
 					darmstadtium_mechanical_pump = 4.5
 
 				[kinetics.stressValues.v1.impact.neutronium]
@@ -250,7 +250,7 @@ fanSpeedMultiplier = 0.75
 					neutronium_mechanical_press = 10.0
 					neutronium_mechanical_mixer = 5.0
 					neutronium_millstone = 5.0
-					neutronium_mechanical_saw = 10.0
+					neutronium_mechanical_saw = 5.0
 					neutronium_mechanical_pump = 5.0
 
 				[kinetics.stressValues.v1.impact."gtceu:rubber"]
@@ -284,7 +284,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					andesiteMaxCapacity = 8
+					andesiteMaxCapacity = 16
 
 				#.
 				#Settings related to steel tier machines
@@ -292,7 +292,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					steelMaxCapacity = 32
+					steelMaxCapacity = 64
 
 				#.
 				#Settings related to aluminium tier machines
@@ -300,7 +300,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					aluminiumMaxCapacity = 128
+					aluminiumMaxCapacity = 256
 
 				#.
 				#Settings related to stainless steel tier machines
@@ -308,7 +308,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					stainlessSteelMaxCapacity = 512
+					stainlessSteelMaxCapacity = 1024
 
 				#.
 				#Settings related to titanium tier machines
@@ -316,7 +316,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					titaniumMaxCapacity = 2048
+					titaniumMaxCapacity = 4096
 
 				#.
 				#Settings related to tungstensteel tier machines
@@ -324,7 +324,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					tungstensteelMaxCapacity = 8192
+					tungstensteelMaxCapacity = 16384
 
 				#.
 				#Settings related to palladium tier machines
@@ -332,7 +332,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					palladiumMaxCapacity = 32768
+					palladiumMaxCapacity = 65536
 
 				#.
 				#Settings related to naquadah tier machines
@@ -340,7 +340,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					naquadahMaxCapacity = 131072
+					naquadahMaxCapacity = 262144
 
 				#.
 				#Settings related to darmstadtium tier machines
@@ -348,7 +348,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					darmstadtiumMaxCapacity = 524288
+					darmstadtiumMaxCapacity = 1048576
 
 				#.
 				#Settings related to neutronium tier machines

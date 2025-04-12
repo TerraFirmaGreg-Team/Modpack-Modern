@@ -103,6 +103,7 @@
 				"quests.low_voltage.lv_steam_turbine.desc.2"
 			]
 			id: "6E186F9C57155BFA"
+			optional: true
 			size: 1.0d
 			subtitle: "quests.low_voltage.lv_steam_turbine.subtitle"
 			tasks: [{
@@ -513,12 +514,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"69BDD31A69062B6C"
-				"43D0B4F2ACB9931B"
-				"6903C72A254A7B08"
-				"2C35D4E01AEC02AA"
-			]
 			description: ["{quests.low_voltage.lv_age_progression.desc}"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "648BCF486E16CCB2"
