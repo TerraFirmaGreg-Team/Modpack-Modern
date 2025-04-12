@@ -12,6 +12,7 @@ const registerCreateItemTags = (event) => {
 	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:brass_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
+	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_gold')
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_copper')
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_zinc')
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_tin')
@@ -43,6 +44,7 @@ const registerCreateItemTags = (event) => {
 
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
+	event.add('create:blaze_burner_fuel/special', "gtceu:coke_gem")
 
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
 
