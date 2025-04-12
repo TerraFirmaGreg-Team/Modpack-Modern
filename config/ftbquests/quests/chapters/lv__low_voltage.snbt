@@ -34,13 +34,13 @@
 			id: "3DE7A2B91CFF48F6"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "{quests.lv_low_voltage.lv_robot_arm.subtitle}"
+			subtitle: "{quests.low_voltage.lv_robot_arm.subtitle}"
 			tasks: [{
 				id: "7D7A9CBE1E368E53"
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			title: "{quests.lv_low_voltage.lv_robot_arm.title}"
+			title: "{quests.low_voltage.lv_robot_arm.title}"
 			x: 3.0d
 			y: -2.0d
 		}
