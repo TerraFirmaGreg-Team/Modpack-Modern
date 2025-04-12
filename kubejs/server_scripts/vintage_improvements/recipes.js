@@ -311,10 +311,10 @@ function registerVintageImprovementsRecipes(event) {
 		}
 
 		const singleWire = ChemicalHelper.get(TagPrefix.wireGtSingle, material, 2)
-		if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && singleWire != null) {
+		if (singleWire != null) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
-				ingredients: [ChemicalHelper.get(TagPrefix.plate, material, 1)],
+				ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
 				results: [singleWire],
 				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_single_wire`)
