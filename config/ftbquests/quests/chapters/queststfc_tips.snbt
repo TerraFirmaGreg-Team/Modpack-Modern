@@ -2819,8 +2819,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.blank_disc.title}"
-			x: -8.0d
-			y: 6.0d
+			x: -5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6197774254321BEC"]
@@ -2840,8 +2840,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.dye_discs.title}"
-			x: -9.5d
-			y: 5.0d
+			x: -6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6197774254321BEC"]
@@ -2859,8 +2859,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.amogus.title}"
-			x: -9.5d
-			y: 6.0d
+			x: -6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6197774254321BEC"]
@@ -2879,8 +2879,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.special_discs.title}"
-			x: -9.5d
-			y: 7.0d
+			x: -6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -2991,8 +2991,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.disc_collector.title}"
-			x: -10.5d
-			y: 6.0d
+			x: -7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6197774254321BEC"]
@@ -3024,8 +3024,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.label_album.title}"
-			x: -8.0d
-			y: 7.0d
+			x: -5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["08C37B4ED7DB918B"]
@@ -3045,8 +3045,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.etching_disc.title}"
-			x: -8.0d
-			y: 8.0d
+			x: -5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7560DC5AA338F0CD"]
@@ -3066,8 +3066,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.disc_players.title}"
-			x: -9.0d
-			y: 8.0d
+			x: -6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6197774254321BEC"]
@@ -3080,8 +3080,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.radio.title}"
-			x: -8.0d
-			y: 5.0d
+			x: -5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7560DC5AA338F0CD"]
@@ -3112,8 +3112,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.DIGGY_DIGGY_HOLE.title}"
-			x: -8.0d
-			y: 9.0d
+			x: -5.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -3129,8 +3129,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera.title}"
-			x: -11.5d
-			y: 4.0d
+			x: -8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3150,8 +3150,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.film_rolls.title}"
-			x: -11.5d
-			y: 5.0d
+			x: -8.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5D4EBB3347A69A42"]
@@ -3181,8 +3181,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.developing_film.title}"
-			x: -11.5d
-			y: 6.0d
+			x: -8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3198,8 +3198,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.selfie.title}"
-			x: -11.5d
-			y: 3.0d
+			x: -7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["399A7716D4A2AAC6"]
@@ -3212,8 +3212,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.photo.title}"
-			x: -11.5d
-			y: 7.0d
+			x: -8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3811F97636DBC518"]
@@ -3226,8 +3226,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.photo_album.title}"
-			x: -12.0d
-			y: 8.0d
+			x: -9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3811F97636DBC518"]
@@ -3240,8 +3240,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.photo_frame.title}"
-			x: -11.0d
-			y: 8.0d
+			x: -8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3261,8 +3261,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: -12.5d
-			y: 3.5d
+			x: -9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3282,8 +3282,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.filters.title}"
-			x: -12.5d
-			y: 4.5d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4E2C1CAD883EB032"]
@@ -3302,8 +3302,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -13.5d
-			y: 4.5d
+			x: -10.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -3408,8 +3408,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.tape_measure.title}"
-			x: -8.0d
-			y: 3.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3B3A0FEEB59F597C"]
@@ -4196,6 +4196,314 @@
 			title: "{quests.tfg_tips.piglin_bartering.title}"
 			x: 13.5d
 			y: -8.5d
+		}
+		{
+			dependencies: ["3B3A0FEEB59F597C"]
+			description: ["{quests.tfg_tips.grappling_hook.desc}"]
+			id: "7A200766AAC1EE19"
+			subtitle: "{quests.tfg_tips.grappling_hook.subtitle}"
+			tasks: [{
+				id: "1DD6337895FBD102"
+				item: {
+					Count: 1
+					id: "grapplemod:grapplinghook"
+					tag: {
+						Damage: 0
+						custom: {
+							angle: 20.0d
+							attract: 0b
+							attractradius: 3.0d
+							crc32: 2252267022L
+							detachonkeyrelease: 0b
+							doublehook: 0b
+							enderstaff: 0b
+							hookgravity: 1.0d
+							maxlen: 30.0d
+							motor: 0b
+							motoracceleration: 0.2d
+							motordampener: 0b
+							motormaxspeed: 4.0d
+							motorwhencrouching: 0b
+							motorwhennotcrouching: 1b
+							oneropepull: 0b
+							phaserope: 0b
+							playermovementmult: 1.0d
+							pullbackwards: 1b
+							reelin: 1b
+							repel: 0b
+							repelforce: 1.0d
+							rocket: 0b
+							rocket_active_time: 0.5d
+							rocket_force: 1.0d
+							rocket_refuel_ratio: 15.0d
+							rocket_vertical_angle: 0.0d
+							smartdoublemotor: 1b
+							smartmotor: 0b
+							sneakingangle: 10.0d
+							sneakingverticalthrowangle: 0.0d
+							sticky: 0b
+							throwspeed: 2.0d
+							verticalthrowangle: 0.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grappling_hook.title}"
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A200766AAC1EE19"]
+			description: ["{quests.tfg_tips.grapple_repair.desc}"]
+			id: "1F93C858F1D02F7C"
+			subtitle: "{quests.tfg_tips.grapple_repair.subtitle}"
+			tasks: [{
+				id: "1269BD886B07619D"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.grapple_repair.title}"
+			x: -14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_upgrade_length.desc}"]
+			id: "105FD1655EEB1921"
+			subtitle: "{quests.tfg_tips.grapple_upgrade_length.subtitle}"
+			tasks: [
+				{
+					id: "6BC5AB4D7A479799"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/knives)"
+						}
+					}
+					title: "Any #forge:tools/knives"
+					type: "item"
+				}
+				{
+					id: "5557AB6B28C6C32F"
+					item: "firmaciv:rope_coil"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.grapple_upgrade_length.title}"
+			x: -16.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			id: "212E5863D8D919E1"
+			subtitle: "{quests.tfg_tips.grapple_motor.subtitle}"
+			tasks: [{
+				id: "7734D5D897479316"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:electric_motors)"
+					}
+				}
+				title: "Any #gtceu:electric_motors"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_motor.title}"
+			x: -16.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1F93C858F1D02F7C"]
+			description: ["{quests.tfg_tips.grapple_upgrade_length.desc}"]
+			id: "6C64C20FF5DF972A"
+			subtitle: "{quests.tfg_tips.grapple_upgrades.subtitle}"
+			tasks: [{
+				id: "18046502A04BADA8"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.tfg_tips.grapple_upgrades.title}"
+			x: -14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["212E5863D8D919E1"]
+			description: ["{quests.tfg_tips.grapple_smart_motor.desc}"]
+			id: "396802012C8CA565"
+			subtitle: "{quests.tfg_tips.grapple_smart_motor.subtitle}"
+			tasks: [{
+				id: "5BFFEDB3DA7BFC12"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_smart_motor.title}"
+			x: -17.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_sticky.desc}"]
+			id: "48DF832E8367EC92"
+			subtitle: "{quests.tfg_tips.grapple_sticky.subtitle}"
+			tasks: [{
+				id: "33D1808773272B67"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_sticky.title}"
+			x: -14.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_gravity_50.desc}"]
+			id: "7CA1496B662BFD3A"
+			subtitle: "{quests.tfg_tips.grapple_gravity_50.subtitle}"
+			tasks: [{
+				id: "6E09C6EBEDC32D29"
+				item: "gtceu:helium_bucket"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_gravity_50.title}"
+			x: -12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7CA1496B662BFD3A"]
+			description: ["{quests.tfg_tips.grapple_gravity_0.desc}"]
+			id: "1545D7AF21997CFE"
+			subtitle: "{quests.tfg_tips.grapple_gravity_0.subtitle}"
+			tasks: [{
+				id: "27248376D7D18900"
+				item: "gtceu:gravitation_engine_unit"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_gravity_0.title}"
+			x: -11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_tweaks.desc}"]
+			id: "1AE8FCB4436EC0A5"
+			subtitle: "{quests.tfg_tips.grapple_tweaks.subtitle}"
+			tasks: [
+				{
+					id: "611A9AAF15FAF6E3"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wrenches)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #forge:tools/wrenches"
+					type: "item"
+				}
+				{
+					id: "3C7E6E92CACFE1E6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/screwdrivers)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #forge:tools/screwdrivers"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.grapple_tweaks.title}"
+			x: -12.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_field.desc}"]
+			id: "3FECBEE0651EBA9A"
+			subtitle: "{quests.tfg_tips.grapple_field.subtitle}"
+			tasks: [{
+				id: "4116FB514C1D654D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:field_generators)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #gtceu:field_generators"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_field.title}"
+			x: -16.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_magnet.desc}"]
+			id: "0B0FC2CE8AB4649C"
+			subtitle: "{quests.tfg_tips.grapple_magnet.subtitle}"
+			tasks: [{
+				id: "1E7CFFA4C5A8D96E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:magnetic_iron_ingot)item(gtceu:magnetic_steel_ingot)item(gtceu:magnetic_neodymium_ingot)item(gtceu:magnetic_samarium_ingot))"
+					}
+				}
+				title: "{quests.tfg_tips.grapple_magnet.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_magnet.title}"
+			x: -15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_throw_speed.desc}"]
+			id: "008B6E08B11694FF"
+			subtitle: "{quests.tfg_tips.grapple_throw_speed.subtitle}"
+			tasks: [{
+				id: "42A65BEC1D0870D5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(gtceu:electric_pistons)"
+					}
+				}
+				title: "Any #gtceu:electric_pistons"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_throw_speed.title}"
+			x: -13.5d
+			y: 7.5d
+		}
+		{
+			description: ["{quests.tfg_tips.grapple_double.desc}"]
+			id: "62EA0912A9752840"
+			subtitle: "{quests.tfg_tips.grapple_double.subtitle}"
+			tasks: [{
+				id: "1791828087A3B592"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:black_steel_pickaxe_head"
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.grapple_double.title}"
+			x: -13.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

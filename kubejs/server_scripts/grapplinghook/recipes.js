@@ -6,19 +6,19 @@
  *      Damage:0, //The damage of the item, duh
  *      custom:
  *      {
- *          angle:20.0d,
- *          attract:0b,
- *          attractradius:3.0d,
+ *          angle:5.0d, //Used for the double hook, defaults to 5, can be increased or decreased using a Screwdriver
+ *          attract:0b, //Wether the magnet upgrade is equiped
+ *          attractradius:3.0d, //Strength of the magnet upgrade, tiered with GT's magnetic metallic ingots
  *          crc32:2252267022L, //This fucking piece of shit is a Checksum, it needs to be calculated based off the boolean and double params.
  *          detachonkeyrelease:0b,
- *          doublehook:0b,
+ *          doublehook:0b, //Wether we have a double hook, enabled by adding a black steel pickaxe head
  *          enderstaff:0b,
- *          hookgravity:1.0d,
- *          maxlen:200.0d, //The maximum length of the rope, this can be increased with Jute Rope
- *          motor:0b, //Wether the grappling hook has a motor. This can only be enabled using an LV motor
- *          motoracceleration:0.2d,
+ *          hookgravity:1.0d, //The actual hook's gravity, can be set to 0.5 using a Helium Bucket, or to 0 using a Gravitation Engine Module
+ *          maxlen:200.0d, //The maximum length of the rope, this can be increased with Jute Rope, and decreased using a knife
+ *          motor:0b, //Wether the grappling hook has a motor.
+ *          motoracceleration:0.2d, //The acceleration of the motor, tiered with GT's electric motors
  *          motordampener:0b,
- *          motormaxspeed:4.0d,
+ *          motormaxspeed:4.0d, //The max speed of the motor, tiered with GT's electric motors
  *          motorwhencrouching:0b,
  *          motorwhennotcrouching:1b,
  *          oneropepull:0b,
@@ -26,20 +26,20 @@
  *          playermovementmult:1.0d,
  *          pullbackwards:1b,
  *          reelin:1b,
- *          repel:0b,
- *          repelforce:1.0d,
+ *          repel:0b, //Wether the Force Field upgrade is enabled
+ *          repelforce:1.0d, //Strength of the Force Field upgrade, tiered with GT's Field Generators
  *          rocket:0b,
  *          rocket_active_time:0.5d,
  *          rocket_force:1.0d,
  *          rocket_refuel_ratio:15.0d,
  *          rocket_vertical_angle:0.0d,
- *          smartdoublemotor:1b,
- *          smartmotor:0b,
- *          sneakingangle:10.0d,
- *          sneakingverticalthrowangle:0.0d,
- *          sticky:0b,
- *          throwspeed:2.0d, //The speed we use to throw the grappling hook
- *          verticalthrowangle:0.0d
+ *          smartdoublemotor:1b, //Wether we have the smart motor enabled, this is enabled utilizing a basic electronic circuit
+ *          smartmotor:0b,//Wether we have the smart motor enabled, this is enabled utilizing a basic electronic circuit
+ *          sneakingangle:10.0d, //Used for the double hook while sneaking, Is always equal to angle / 2.
+ *          sneakingverticalthrowangle:0.0d, //Vertical throwing angle while sneaking, Is always equal to verticalthrowingangle / 2
+ *          sticky:0b, //Wether the rope is sticky, enabled using sticky resin
+ *          throwspeed:2.0d, //The speed we use to throw the grappling hook, tiered with GT's pistons
+ *          verticalthrowangle:0.0d //The angle at whicih we throw the hook vertically.
  *      }
  * }
  */
@@ -54,6 +54,8 @@ function registerGrapplingHookRecipes(event)
     const ADDITIVE_UPGRADES_MINMAX = 
     {
         maxLen: { nbt: "maxlen", maxValue: 200, minValue: 20},
+        verticalThrowAngle: { nbt: "verticalthrowangle", maxValue: 90, minValue: 0},
+        angle: { nbt: "angle", maxValue: 90, minValue: 5}
     }
 
     let motorUpgrades =
@@ -192,8 +194,9 @@ function registerGrapplingHookRecipes(event)
     /**
      * Helper method for creating an upgrade recipe utilizing the GrappleCustomization class. The method itself returns the REcipeBuilder so you can modify it further
      * @param {InputItem_[]} upgradeItems The items required to craft this upgrade
-     * @param {(grappleCustomization: Internal.GrappleCustomization, orig: Internal.ItemStack, result: Internal.ItemStack) => Internal.ItemStack} grappleCustomizationCallback A function that's used to modify the GrapplingHook's NBT data. It must return the actual result of the crafting recipe, which can be resultGrapplingHook. If null is returned from this function then the result is Air, making it impossible to actually apply the upgrade.
-     * @returns {Internal.RecipeJS} The Recipe Builder
+     * @param {(grappleCustomization: Internal.GrappleCustomization, orig: Internal.ItemStack, result: Internal.ItemStack) => Internal.ItemStack} grappleCustomizationCallback A function that's used to modify the GrapplingHook's NBT data. It must return the actual result of the crafting recipe, which can be result. If null is returned from this function then the result is Air, making it impossible to actually apply the upgrade.
+     * @param {string} localizationToken A token to display as the item's name, only used in JEI to tell the end user what the upgrade does
+     * @returns {Special.Recipes.ShapelessKubejs} The Recipe Builder
      */
     function shapelessUpgradeRecipe(upgradeItems, grappleCustomizationCallback, localizationToken)
     {
@@ -216,7 +219,56 @@ function registerGrapplingHookRecipes(event)
             
             result.nbt.put("custom", customization.writeNBT());
             result.nbt.put("Damage", orig.nbt.getInt("Damage"));
-            result.resetHoverName();
+
+            if(orig.hasCustomHoverName())
+            {
+                result.setHoverName(orig.hoverName);
+            }
+            else
+            {
+                result.resetHoverName();
+            }
+            return result;
+        })
+        return recipeBuilder;
+    }
+
+    /**
+     * Helper method for creating an Shaped Upgrade Recipe utilizing the Grapple Customization class. The method itself returns the RecipeBuilder so you can modify it further.
+     * @param {InputItem_[]} pattern The Pattern for the shaped recipe.
+     * @param {{[key in string]: InputItem_}} keyMap The key map, a "grapplemod:grapplinghook" MUST be present
+     * @param {(grappleCustomization: Internal.GrappleCustomization, orig: Internal.ItemStack, result: Internal.ItemStack) => Internal.ItemStack} grappleCustomizationCallback A function that's used to modify the GrapplingHook's NBT data. It must return the actual result of the crafting recipe, which can be result. If null is returned from this function then the result is Air, making it impossible to actually apply the upgrade.
+     * @param {string} localizationToken A token to display as the item's name, only used in JEI to tell the end user what the upgrade does
+     * @returns {Special.Recipes.ShapedKubejs} The Recipe Builder
+     */
+    function shapedUpgradeRecipe(pattern, keyMap, grappleCustomizationCallback, localizationToken)
+    {
+        let recipeBuilder = event.recipes.kubejs.shaped(Item.of('grapplemod:grapplinghook').withName(Text.translate(localizationToken)), pattern, keyMap)
+        recipeBuilder.modifyResult((grid, result) =>
+        {
+            let fallbackItem = Item.of('minecraft:air');
+            let orig = grid.find(Ingredient.of("grapplemod:grapplinghook"));
+
+            let customization = new $GrappleCustomization();
+            customization.loadNBT(orig.nbt.getCompound("custom"));
+
+            result = grappleCustomizationCallback(customization, orig, result);
+            if(result == null)
+            {
+                result = fallbackItem;
+                return result;
+            }
+
+            result.nbt.put("custom", customization.writeNBT());
+            result.nbt.put("Damage", orig.nbt.getInt("Damage"));
+            if(orig.hasCustomHoverName())
+            {
+                result.setHoverName(orig.hoverName);
+            }
+            else
+            {
+                result.resetHoverName();
+            }
             return result;
         })
         return recipeBuilder;
@@ -236,13 +288,41 @@ function registerGrapplingHookRecipes(event)
         result.nbt.putInt("Damage", 0);
         result.nbt.put("custom", grappleCustomization.writeNBT());
         return result;
-    }).id('tfg:grapplemod/shapeless/grapplinghook')
+    }).id('tfg:grapplemod/shapeless/grapplinghook');
+
+    //Repair
+    event.recipes.kubejs.shapeless(Item.of('grapplemod:grapplinghook').withName(Text.translate("tfg.grapplemod.repair")), ['grapplemod:grapplinghook', 'gtceu:wrought_iron_dust'])
+        .modifyResult((craftingGrid, result) =>
+    {
+        let fallbackItem = Item.of("minecraft:air");
+        let orig = grid.find(Ingredient.of('grapplemod:grapplinghook'));
+
+        let customization = new $GrappleCustomization();
+        customization.loadNBT(orig.nbt.getCompund("custom"));
+
+        result.nbt.put("custom", customization.writeNBT());
+
+        let damage = result.nbt.getInt("Damage");
+        let maxDamage = result.maxDamage;
+        let restoredDamage = maxDamage / 3;
+        result.nbt.setInt("Damage", Math.max(0, damage - restoredDamage));
+
+        if(orig.hasCustomHoverName())
+        {
+            result.setHoverName(orig.hoverName);
+        }
+        else
+        {
+            result.resetHoverName();
+        }
+        return result;
+    }).id('tfg:grapplemod/shapeless/repair');
 
     //Upgrade: Max Length
     shapelessUpgradeRecipe(['firmaciv:rope_coil'], (customization, orig, result) =>
     {
         let maxLen = customization.maxlen;
-        if(maxLen >= 200)
+        if(maxLen >= ADDITIVE_UPGRADES_MINMAX.maxLen.maxValue)
             return null;
 
         maxLen = Math.min(ADDITIVE_UPGRADES_MINMAX.maxLen.maxValue, maxLen + 20);
@@ -252,7 +332,7 @@ function registerGrapplingHookRecipes(event)
     shapelessUpgradeRecipe(['#forge:tools/knives'], (customization, orig, result) =>
     {
         let maxLen = customization.maxlen;
-        if(maxLen <= 20)
+        if(maxLen <= ADDITIVE_UPGRADES_MINMAX.maxLen.minValue)
         {
             return null;
         }
@@ -313,8 +393,6 @@ function registerGrapplingHookRecipes(event)
     //Enable Smart Motor
     shapelessUpgradeRecipe(['gtceu:basic_electronic_circuit'], (customization, orig, result) =>
     {
-
-
         if(!customization.motor)
         {
             return null;
@@ -379,9 +457,9 @@ function registerGrapplingHookRecipes(event)
     {
         //Add Forcefield
         shapelessUpgradeRecipe([`gtceu:${forcefieldUpgradeType.electricTier}_field_generator`], (customization, orig, result) =>
-            {
+        {
             if(customization.repel)
-                {
+            {
                 return null;
             }
 
@@ -541,6 +619,8 @@ function registerGrapplingHookRecipes(event)
         }
 
         customization.doublehook = true;
+        customization.angle = 5;
+        customization.sneakingangle = 2.5;
         return result;
     }, 'tfg.grapplemod.upgrades.doublehook').id('tfg:grapplemod/upgrades/doublehook')
 
@@ -553,9 +633,93 @@ function registerGrapplingHookRecipes(event)
         }
 
         customization.doublehook = false;
+        customization.angle = 5;
+        customization.sneakingangle = 2.5;
         return result;
     }, 'tfg.grapplemod.downgrades.doublehook')
         .replaceIngredient('grapplemod:grapplinghook', 'gtceu:black_steel_pickaxe_head')
         .keepIngredient('gtceu:black_steel_pickaxe_head')
         .id('tfg:grapplemod/downgrades/doublehook')
+
+    // Increase Vertical Throw Angle
+    shapedUpgradeRecipe([
+        'A',
+        'B'
+    ],{
+        A: '#forge:tools/wrenches',
+        B: 'grapplemod:grapplinghook'
+    }, (customization, orig, result) =>
+    {
+        if(customization.verticalthrowangle >= ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.maxValue)
+        {
+            return null;
+        }
+
+        customization.verticalthrowangle = Math.min(ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.maxValue, customization.verticalthrowangle + 5);
+        customization.sneakingverticalthrowangle = customization.verticalthrowangle / 2;
+        return result;
+    }, 'tfg.grapplemod.upgrades.vertical_throwing_angle').id('tfg:grapplemod/upgrades/vertical_throwing_angle');
+    //Decrease Vertical Throw Angle
+    shapedUpgradeRecipe([
+        'A',
+        'B'
+    ],{
+        A: 'grapplemod:grapplinghook',
+        B: '#forge:tools/wrenches',
+    }, (customization, orig, result) =>
+    {
+        if(customization.verticalthrowangle <= ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.minValue)
+        {
+            return null;
+        }
+
+        customization.verticalthrowangle = Math.max(ADDITIVE_UPGRADES_MINMAX.verticalThrowAngle.minValue, customization.verticalthrowangle - 5);
+        customization.sneakingverticalthrowangle = customization.verticalthrowangle / 2;
+        return result;
+    }, 'tfg.grapplemod.downgrades.vertical_throwing_angle').id('tfg:grapplemod/downgrades/vertical_throwing_angle')
+
+    // Increase Horizontal Throw Angle
+    shapedUpgradeRecipe([
+        'AB',
+    ],{
+        A: 'grapplemod:grapplinghook',
+        B: '#forge:tools/screwdrivers'
+    }, (customization, orig, result) =>
+    {
+        if(!customization.doublehook)
+        {
+            return null;
+        }
+
+        if(customization.angle >= ADDITIVE_UPGRADES_MINMAX.angle.maxValue)
+        {
+            return null;
+        }
+
+        customization.angle = Math.min(ADDITIVE_UPGRADES_MINMAX.angle.maxValue, customization.angle + 5);
+        customization.sneakingangle = customization.angle / 2;
+        return result;
+    }, 'tfg.grapplemod.upgrades.angle').kjsMirror(false).id('tfg:grapplemod/upgrades/angle');
+    //Decrease Horizontal Throw Angle
+    shapedUpgradeRecipe([
+        'AB',
+    ],{
+        A: '#forge:tools/screwdrivers',
+        B: 'grapplemod:grapplinghook',
+    }, (customization, orig, result) =>
+    {
+        if(!customization.doublehook)
+        {
+            return null;
+        }
+
+        if(customization.angle <= ADDITIVE_UPGRADES_MINMAX.angle.minValue)
+        {
+            return null;
+        }
+
+        customization.angle = Math.max(ADDITIVE_UPGRADES_MINMAX.angle.minValue, customization.angle - 5);
+        customization.sneakingangle = customization.angle / 2;
+        return result;
+    }, 'tfg.grapplemod.downgrades.angle').kjsMirror(false).id('tfg:grapplemod/downgrades/angle')
 }
