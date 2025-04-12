@@ -31,7 +31,7 @@ const registerTooltips = (event) =>
 		text.add(1, [text.of("§4Obsolete§f: Replaced by the AFC TreeTap, you can craft it from this one by placing this in a crafting table!")])
 	})
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
-		text.add(1, text.of('§cSuperheat§r with Flawless and Exquisite coal gems.'))
+		text.add(1, text.of('§cSuperheat§r with Coke, or Flawless and Exquisite coal gems.'))
 	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
 		text.add(1, text.of('Artificial enviroment to simulate the Nether.')),
