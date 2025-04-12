@@ -383,7 +383,7 @@ function registerVintageImprovementsRecipes(event) {
 					type: 'vintageimprovements:turning',
 					ingredients: [latheInput],
 					results: [ChemicalHelper.get(TagPrefix.rod, material, 2)],
-					processingTime: material.getMass() * 2 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+					processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 				}).id(`tfg:vi/lathe/${material.getName()}_to_rod`)
 			}
 		}
