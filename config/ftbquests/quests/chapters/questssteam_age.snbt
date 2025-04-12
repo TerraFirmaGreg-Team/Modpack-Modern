@@ -199,13 +199,19 @@
 			dependencies: ["033E74BC588E7EAD"]
 			hide_dependent_lines: true
 			id: "183D47F04CAEBFA7"
-			optional: true
 			size: 1.5d
-			tasks: [{
-				id: "704B7094BE2FB3E1"
-				item: "create:steam_engine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "704B7094BE2FB3E1"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "4655500474F4236C"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
 			x: -16.5d
 			y: 14.5d
 		}
@@ -974,18 +980,25 @@
 			id: "0109231F33296868"
 			size: 1.0d
 			subtitle: "Liquids, gases... we don't discriminate"
-			tasks: [{
-				id: "59512A7A04D517E6"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_small_fluid_pipe))"
+			tasks: [
+				{
+					id: "59512A7A04D517E6"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:bronze_tiny_fluid_pipe)item(gtceu:bronze_quadruple_fluid_pipe)item(gtceu:bronze_nonuple_fluid_pipe)item(gtceu:bronze_huge_fluid_pipe)item(gtceu:bronze_large_fluid_pipe)item(gtceu:bronze_normal_fluid_pipe)item(gtceu:bronze_small_fluid_pipe))"
+						}
 					}
+					title: "Any Bronze Pipe"
+					type: "item"
 				}
-				title: "Any Bronze Pipe"
-				type: "item"
-			}]
+				{
+					id: "143EA7ABC19B6AFC"
+					item: "gtceu:wood_normal_fluid_pipe"
+					type: "item"
+				}
+			]
 			title: "Fluid Pipes"
 			x: -2.5d
 			y: -5.0d
