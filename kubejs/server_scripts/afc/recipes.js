@@ -6,10 +6,14 @@ const registerAFCRecipes = (event) => {
 
 	// #region Removes
 
+	global.AFC_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
+	event.remove({ id: "afc:pot/rubber" })
 	event.remove({ id: "afc:tree_tapping/hevea_latex" })
 	event.remove({ id: "afc:tree_tapping/rubber_fig_latex" })
-	event.remove({ input: 'afc:rubber_bar' })
-	event.remove({ output: 'afc:rubber_bar' })
 
 	// #endregion
 
