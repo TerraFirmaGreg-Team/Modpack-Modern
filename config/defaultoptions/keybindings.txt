@@ -13,7 +13,7 @@ key_key.chat:key.keyboard.t:NONE
 key_key.playerlist:key.keyboard.tab:NONE
 key_key.pickItem:key.mouse.middle:NONE
 key_key.command:key.keyboard.slash:NONE
-key_key.socialInteractions:key.keyboard.p:NONE
+key_key.socialInteractions:key.keyboard.unknown:NONE
 key_key.screenshot:key.keyboard.f2:NONE
 key_key.togglePerspective:key.keyboard.f5:NONE
 key_key.smoothCamera:key.keyboard.unknown:NONE
@@ -45,7 +45,7 @@ key_gui.xaero_quick_confirm:key.keyboard.right.shift:NONE
 key_placebo.toggleTrails:key.keyboard.unknown:NONE
 key_placebo.toggleWings:key.keyboard.unknown:NONE
 key_key.modernfix.config:key.keyboard.unknown:NONE
-key_key.heracles.open_quests:key.keyboard.unknown:NONE
+key_key.heracles.open_quests:key.keyboard.p:NONE
 key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b:NONE
 key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.c:NONE
 key_keybind.sophisticatedbackpacks.tool_swap:key.keyboard.unknown:NONE
