@@ -251,7 +251,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
-		C: '#forge:rods/red_steel',
+		C: '#forge:rods/black_steel',
 		D: '#forge:gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
@@ -1304,9 +1304,9 @@ const registerCreateRecipes = (event) => {
 		'BAB',
 		'CCC'
 	], {
-		A: 'minecraft:coal_block',
-		B: 'tfc:metal/bars/blue_steel',
-		C: 'gtceu:blue_steel_plate',
+		A: '#forge:storage_blocks/coke',
+		B: '#forge:rods/black_steel',
+		C: '#forge:plates/black_steel',
 	}).id('tfg:create/shaped/blaze_burner')
 
 	//#endregion
