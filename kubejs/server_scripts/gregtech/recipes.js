@@ -887,7 +887,7 @@ const registerGTCEURecipes = (event) => {
 		event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', 'gtceu:copper_single_wire']),
 		event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', 'gtceu:copper_single_wire']),
 		event.recipes.createDeploying('tfg:unfinished_vacuum_tube', ['tfg:unfinished_vacuum_tube', 'gtceu:glass_tube']),
-		event.custom({ type: 'vintageimprovements:vacuumizing', ingredients: [{ item: 'tfg:unfinished_vacuum_tube' }], results: [{ item: 'tfg:unfinished_vacuum_tube' }], processingTime: 400 })
+		event.custom({ type: 'vintageimprovements:vacuumizing', ingredients: [{ item: 'tfg:unfinished_vacuum_tube' }], results: [{ item: 'tfg:unfinished_vacuum_tube' }], processingTime: 80 })
 	]).transitionalItem('tfg:unfinished_vacuum_tube').loops(1).id('tfg:gtceu/sequenced_assembly/vacuum_tube')
 
 	//#endregion
@@ -1495,6 +1495,7 @@ const registerGTCEURecipes = (event) => {
 	event.replaceInput({ id: 'gtceu:shaped/note_block' }, 'gtceu:wood_plate', '#tfc:lumber')
 
 	event.replaceInput({ mod: 'gtceu' }, 'minecraft:sugar', '#tfg:sugars')
+	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
 
 	event.recipes.gtceu.fluid_solidifier('tfg:solidify_glue')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
@@ -1503,10 +1504,6 @@ const registerGTCEURecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
-	event.replaceInput({ mod: 'gtceu' }, 'minecraft:string', '#forge:string')
-
-	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
-		.id('tfg:shapeless/red_alloy_single_cable')
 
 	event.recipes.createSequencedAssembly([
 		'gtceu:ulv_voltage_coil',
@@ -1552,4 +1549,36 @@ const registerGTCEURecipes = (event) => {
 	})
 	
 	//#endregion
+
+	
+	// TODO: Greate again...
+	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
+		.id('tfg:shapeless/red_alloy_single_cable')
+
+	event.shapeless('gtceu:tin_single_cable', ['gtceu:tin_single_wire', '#forge:plates/rubber'])
+		.id('tfg:shapeless/tin_single_cable')
+	event.shapeless('gtceu:tin_double_cable', ['gtceu:tin_double_wire', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/tin_double_cable')
+	event.shapeless('gtceu:tin_quadruple_cable', ['gtceu:tin_quadruple_wire', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/tin_quadruple_cable')
+	event.shapeless('gtceu:tin_octal_cable', ['gtceu:tin_octal_wire', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/tin_octal_cable')
+
+	event.shapeless('gtceu:cobalt_single_cable', ['gtceu:cobalt_single_wire', '#forge:plates/rubber'])
+		.id('tfg:shapeless/cobalt_single_cable')
+	event.shapeless('gtceu:cobalt_double_cable', ['gtceu:cobalt_double_wire', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/cobalt_double_cable')
+	event.shapeless('gtceu:cobalt_quadruple_cable', ['gtceu:cobalt_quadruple_wire', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/cobalt_quadruple_cable')
+	event.shapeless('gtceu:cobalt_octal_cable', ['gtceu:cobalt_octal_wire', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/cobalt_octal_cable')
+
+	event.shapeless('gtceu:nickel_single_cable', ['gtceu:nickel_single_wire', '#forge:plates/rubber'])
+		.id('tfg:shapeless/nickel_single_cable')
+	event.shapeless('gtceu:nickel_double_cable', ['gtceu:nickel_double_wire', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/nickel_double_cable')
+	event.shapeless('gtceu:nickel_quadruple_cable', ['gtceu:nickel_quadruple_wire', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/nickel_quadruple_cable')
+	event.shapeless('gtceu:nickel_octal_cable', ['gtceu:nickel_octal_wire', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber', '#forge:plates/rubber'])
+		.id('tfg:shapeless/nickel_octal_cable')
 }

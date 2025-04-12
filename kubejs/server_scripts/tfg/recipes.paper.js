@@ -87,13 +87,11 @@ function registerTFGPapermakingRecipes(event) {
 		.id('tfg:barrel/soak_hardwood_strip')
 
 	//Create Hardwood Dust using Quern and Millstone/Crushing Wheels
-	event.recipes.createMilling(['3x gtceu:small_hardwood_dust', Item.of('gtceu:small_hardwood_dust').withChance(0.5)], 'tfg:soaked_hardwood_strip')
-		.processingTime(100)
-		.id('tfg:mill/mill_soaked_hardwood_strip')
 	event.recipes.gtceu.macerator('tfg:macerator/macerate_hardwood_strips')
-		.itemInputs('#tfg:hardwood_strips')
-		.itemOutputs('gtceu:hardwood_dust')
-		.duration(50)
+		.itemInputs('tfg:soaked_hardwood_strip')
+		.itemOutputs('3x gtceu:small_hardwood_dust')
+		.chancedOutput('gtceu:small_hardwood_dust', 5000, 5000)
+		.duration(100)
 		.EUt(2)
 	event.recipes.tfc.quern('2x gtceu:small_hardwood_dust', 'tfg:soaked_hardwood_strip')
 		.id('tfg:quern/soaked_hardwood_strip')

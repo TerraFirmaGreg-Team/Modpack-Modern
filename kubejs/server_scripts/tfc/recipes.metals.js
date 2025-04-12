@@ -98,21 +98,21 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')
 		.itemInputs('tfc:metal/ingot/pig_iron')
 		.itemOutputs('tfc:metal/ingot/high_carbon_steel')
-		.duration(1000)
+		.duration(700)
 		.EUt(4)
 
 	// Высокоуглеродная сталь -> Cталь
 	event.recipes.gtceu.forge_hammer('tfg/steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_steel')
 		.itemOutputs('gtceu:steel_ingot')
-		.duration(1000)
+		.duration(700)
 		.EUt(4)
 
 	// Высокоуглеродная черная сталь -> черная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/black_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_black_steel')
 		.itemOutputs('tfc:metal/ingot/black_steel')
-		.duration(1000)
+		.duration(900)
 		.EUt(4)
 
 	// Высокоуглеродная синяя сталь -> синяя сталь 
@@ -132,22 +132,22 @@ function registerTFCMetalsRecipes(event) {
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')
 		.itemInputs('tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron')
-		.itemOutputs('tfc:metal/ingot/high_carbon_black_steel')
-		.duration(1600)
+		.itemOutputs('2x tfc:metal/ingot/high_carbon_black_steel')
+		.duration(1000)
 		.EUt(4)
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')
 		.itemInputs('tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel')
-		.itemOutputs('tfc:metal/ingot/high_carbon_blue_steel')
-		.duration(1600)
+		.itemOutputs('2x tfc:metal/ingot/high_carbon_blue_steel')
+		.duration(1000)
 		.EUt(4)
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')
 		.itemInputs('tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel')
-		.itemOutputs('tfc:metal/ingot/high_carbon_red_steel')
-		.duration(1600)
+		.itemOutputs('2x tfc:metal/ingot/high_carbon_red_steel')
+		.duration(1000)
 		.EUt(4)
 
 	const TFC_INTERMEDIATE_METALS =

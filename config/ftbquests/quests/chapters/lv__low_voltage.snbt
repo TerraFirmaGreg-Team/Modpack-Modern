@@ -10,85 +10,85 @@
 	quests: [
 		{
 			dependencies: ["2F7617C0C4B330DE"]
-			description: ["quests.low_voltage.lv_fluid_regulator.desc"]
+			description: ["{quests.low_voltage.lv_fluid_regulator.desc}"]
 			id: "47D4545452F05E37"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_fluid_regulator.subtitle"
+			subtitle: "{quests.low_voltage.lv_fluid_regulator.subtitle}"
 			tasks: [{
 				id: "5E8D784C83A4F672"
 				item: "gtceu:lv_fluid_regulator"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_fluid_regulator.title"
+			title: "{quests.low_voltage.lv_fluid_regulator.title}"
 			x: 3.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["38993B4697B0E16C"]
 			description: [
-				"quests.low_voltage.lv_robot_arm.desc.1"
+				"{quests.low_voltage.lv_robot_arm.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_robot_arm.desc.2"
+				"{quests.low_voltage.lv_robot_arm.desc.2}"
 			]
 			id: "3DE7A2B91CFF48F6"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.lv_low_voltage.lv_robot_arm.subtitle"
+			subtitle: "{quests.low_voltage.lv_robot_arm.subtitle}"
 			tasks: [{
 				id: "7D7A9CBE1E368E53"
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			title: "quests.lv_low_voltage.lv_robot_arm.title"
+			title: "{quests.low_voltage.lv_robot_arm.title}"
 			x: 3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
-			description: ["quests.low_voltage.lv_conveyor.desc"]
+			description: ["{quests.low_voltage.lv_conveyor.desc}"]
 			id: "288CE4AA4C5AA8BF"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_conveyor.subtitle"
+			subtitle: "{quests.low_voltage.lv_conveyor.subtitle}"
 			tasks: [{
 				id: "064169E7E2772387"
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_conveyor.title"
+			title: "{quests.low_voltage.lv_conveyor.title}"
 			x: 1.5d
 			y: -0.75d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
-			description: ["quests.low_voltage.lv_pump.desc"]
+			description: ["{quests.low_voltage.lv_pump.desc}"]
 			id: "2F7617C0C4B330DE"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_pump.subtitle"
+			subtitle: "{quests.low_voltage.lv_pump.subtitle}"
 			tasks: [{
 				id: "7A37B370D2D40E6A"
 				item: "gtceu:lv_electric_pump"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_pump.title"
+			title: "{quests.low_voltage.lv_pump.title}"
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
-			description: ["quests.low_voltage.lv_piston.desc"]
+			description: ["{quests.low_voltage.lv_piston.desc}"]
 			id: "38993B4697B0E16C"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_piston.subtitle"
+			subtitle: "{quests.low_voltage.lv_piston.subtitle}"
 			tasks: [{
 				id: "70FEF63FB9A58B02"
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_piston.title"
+			title: "{quests.low_voltage.lv_piston.title}"
 			x: 1.5d
 			y: -2.0d
 		}
@@ -98,63 +98,64 @@
 				"648BCF486E16CCB2"
 			]
 			description: [
-				"quests.low_voltage.lv_steam_turbine.desc.1"
+				"{quests.low_voltage.lv_steam_turbine.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_steam_turbine.desc.2"
+				"{quests.low_voltage.lv_steam_turbine.desc.2}"
 			]
 			id: "6E186F9C57155BFA"
+			optional: true
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_steam_turbine.subtitle"
+			subtitle: "{quests.low_voltage.lv_steam_turbine.subtitle}"
 			tasks: [{
 				id: "155BC745245BCBAF"
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_steam_turbine.title"
+			title: "{quests.low_voltage.lv_steam_turbine.title}"
 			x: -3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
-			description: ["quests.low_voltage.lv_amp_explanation.desc"]
+			description: ["{quests.low_voltage.lv_amp_explanation.desc}"]
 			id: "7B0FF43022F6C2EC"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "quests.low_voltage.lv_amp_explanation.subtitle"
+			subtitle: "{quests.low_voltage.lv_amp_explanation.subtitle}"
 			tasks: [{
 				count: 4L
 				id: "1C81FD3C54CC2274"
 				item: "gtceu:tin_quadruple_cable"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_amp_explanation.title"
+			title: "{quests.low_voltage.lv_amp_explanation.title}"
 			x: 4.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["45B71324028F6E68"]
-			description: ["quests.low_voltage.aluminium_ingot.desc"]
+			description: ["{quests.low_voltage.aluminium_ingot.desc}"]
 			hide_dependency_lines: false
 			id: "7567E885B7166603"
 			shape: "gear"
 			size: 4.0d
-			subtitle: "quests.low_voltage.aluminium_ingot.subtitle"
+			subtitle: "{quests.low_voltage.aluminium_ingot.subtitle}"
 			tasks: [{
 				id: "161B5813936E5E42"
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			title: "quests.low_voltage.aluminium_ingot.title"
+			title: "{quests.low_voltage.aluminium_ingot.title}"
 			x: -9.0d
 			y: 11.5d
 		}
 		{
-			description: ["quests.low_voltage.lv_battery_preparation.desc"]
+			description: ["{quests.low_voltage.lv_battery_preparation.desc}"]
 			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_battery_preparation.subtitle"
+			subtitle: "{quests.low_voltage.lv_battery_preparation.subtitle}"
 			tasks: [
 				{
 					id: "7B4585B39907E2EA"
@@ -168,7 +169,7 @@
 					type: "item"
 				}
 			]
-			title: "quests.low_voltage.lv_battery_preparation.title"
+			title: "{quests.low_voltage.lv_battery_preparation.title}"
 			x: 7.5d
 			y: 2.5d
 		}
@@ -202,21 +203,21 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"quests.low_voltage.cover_behaviour.desc.1"
+				"{quests.low_voltage.cover_behaviour.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.cover_behaviour.desc.2"
+				"{quests.low_voltage.cover_behaviour.desc.2}"
 			]
 			icon: "gtceu:crafting_table_cover"
 			id: "1C767009F505A813"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.cover_behaviour.subtitle"
+			subtitle: "{quests.low_voltage.cover_behaviour.subtitle}"
 			tasks: [{
 				id: "7C7A8A26D3FF0E96"
-				title: "quests.low_voltage.cover_behaviour.task"
+				title: "{quests.low_voltage.cover_behaviour.task}"
 				type: "checkmark"
 			}]
-			title: "quests.low_voltage.cover_behaviour.title"
+			title: "{quests.low_voltage.cover_behaviour.title}"
 			x: 3.0d
 			y: -0.75d
 		}
@@ -228,158 +229,158 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"quests.low_voltage.machine_auto_output_behaviour.desc.1"
+				"{quests.low_voltage.machine_auto_output_behaviour.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.machine_auto_output_behaviour.desc.2"
+				"{quests.low_voltage.machine_auto_output_behaviour.desc.2}"
 			]
 			icon: "minecraft:hopper"
 			id: "64E1E87B8AF72968"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.machine_auto_output_behaviour.subtitle"
+			subtitle: "{quests.low_voltage.machine_auto_output_behaviour.subtitle}"
 			tasks: [{
 				id: "6A4DFF7493955B8D"
-				title: "quests.low_voltage.machine_auto_output_behaviour.task"
+				title: "{quests.low_voltage.machine_auto_output_behaviour.task}"
 				type: "checkmark"
 			}]
-			title: "quests.low_voltage.machine_auto_output_behaviour.title"
+			title: "{quests.low_voltage.machine_auto_output_behaviour.title}"
 			x: -4.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"quests.low_voltage.lv_wiremill.desc.1"
+				"{quests.low_voltage.lv_wiremill.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_wiremill.desc.2"
+				"{quests.low_voltage.lv_wiremill.desc.2}"
 			]
 			id: "32EA7E81885C8E87"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_wiremill.subtitle"
+			subtitle: "{quests.low_voltage.lv_wiremill.subtitle}"
 			tasks: [{
 				id: "2B5BF6F3ED693B9E"
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_wiremill.title"
+			title: "{quests.low_voltage.lv_wiremill.title}"
 			x: -3.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
-			description: ["quests.low_voltage.lv_bender.desc"]
+			description: ["{quests.low_voltage.lv_bender.desc}"]
 			id: "10ECB471A77F5136"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_bender.subtitle"
+			subtitle: "{quests.low_voltage.lv_bender.subtitle}"
 			tasks: [{
 				id: "3AC3A8728EE60E4C"
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_bender.title"
+			title: "{quests.low_voltage.lv_bender.title}"
 			x: -3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"quests.low_voltage.lv_lathe.desc.1"
+				"{quests.low_voltage.lv_lathe.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_lathe.desc.2"
+				"{quests.low_voltage.lv_lathe.desc.2}"
 			]
 			id: "07E7678095258EDB"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_lathe.subtitle"
+			subtitle: "{quests.low_voltage.lv_lathe.subtitle}"
 			tasks: [{
 				id: "6781D0241D0564A5"
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_lathe.title"
+			title: "{quests.low_voltage.lv_lathe.title}"
 			x: -3.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
-			description: ["quests.low_voltage.lv_polariser.desc"]
+			description: ["{quests.low_voltage.lv_polariser.desc}"]
 			id: "29379C91D6E00436"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_polariser.subtitle"
+			subtitle: "{quests.low_voltage.lv_polariser.subtitle}"
 			tasks: [{
 				id: "5EC42A72DEC6F9FC"
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_polariser.title"
+			title: "{quests.low_voltage.lv_polariser.title}"
 			x: 2.0d
 			y: -4.0d
 		}
 		{
 			description: [
-				"quests.low_voltage.lbb.desc.1"
+				"{quests.low_voltage.lbb.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lbb.desc.2"
+				"{quests.low_voltage.lbb.desc.2}"
 				"{@pagebreak}"
-				"quests.low_voltage.lbb.desc.3"
+				"{quests.low_voltage.lbb.desc.3"
 			]
 			id: "33263404ED38C6D2"
 			shape: "square"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lbb.subtitle"
+			subtitle: "{quests.low_voltage.lbb.subtitle}"
 			tasks: [{
 				id: "560D4D0D6BECE006"
 				item: "gtceu:bronze_large_boiler"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lbb.title"
+			title: "{quests.low_voltage.lbb.title}"
 			x: -4.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
 			description: [
-				"quests.low_voltage.lv_superconductor.desc.1"
+				"{quests.low_voltage.lv_superconductor.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_superconductor.desc.2"
+				"{quests.low_voltage.lv_superconductor.desc.2}"
 			]
 			id: "46AD7A6F3B6775F5"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_superconductor.subtitle"
+			subtitle: "{quests.low_voltage.lv_superconductor.subtitle}"
 			tasks: [{
 				id: "4477AB06651827D6"
 				item: "gtceu:manganese_phosphide_single_wire"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_superconductor.title"
+			title: "{quests.low_voltage.lv_superconductor.title}"
 			x: -11.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"quests.low_voltage.lv_chemical_bath.desc.1"
+				"{quests.low_voltage.lv_chemical_bath.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_chemical_bath.desc.2"
+				"{quests.low_voltage.lv_chemical_bath.desc.2}"
 			]
 			id: "330BDB559A7BAB35"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_chemical_bath.subtitle"
+			subtitle: "{quests.low_voltage.lv_chemical_bath.subtitle}"
 			tasks: [{
 				id: "526A5FF9B5DBB129"
 				item: "gtceu:lv_chemical_bath"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_chemical_bath.title"
+			title: "{quests.low_voltage.lv_chemical_bath.title}"
 			x: 6.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["64E1E87B8AF72968"]
 			description: [
-				"quests.low_voltage.programmed_circuits.desc.1"
+				"{quests.low_voltage.programmed_circuits.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.programmed_circuits.desc.2"
+				"{quests.low_voltage.programmed_circuits.desc.2}"
 			]
 			icon: {
 				Count: 1
@@ -391,28 +392,28 @@
 			id: "59F0060B55307311"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.programmed_circuits.subtitle"
+			subtitle: "{quests.low_voltage.programmed_circuits.subtitle}"
 			tasks: [{
 				id: "7C04F3247B0C0BCB"
-				title: "quests.low_voltage.programmed_circuits.task"
+				title: "{quests.low_voltage.programmed_circuits.task}"
 				type: "checkmark"
 			}]
-			title: "quests.low_voltage.programmed_circuits.title"
+			title: "{quests.low_voltage.programmed_circuits.title}"
 			x: -5.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
-			description: ["quests.low_voltage.lv_canner.desc"]
+			description: ["{quests.low_voltage.lv_canner.desc}"]
 			id: "37307A46E70011D3"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_canner.subtitle"
+			subtitle: "{quests.low_voltage.lv_canner.subtitle}"
 			tasks: [{
 				id: "5521E4E26119E152"
 				item: "gtceu:lv_canner"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_canner.title"
+			title: "{quests.low_voltage.lv_canner.title}"
 			x: 4.5d
 			y: 2.5d
 		}
@@ -421,10 +422,10 @@
 				"37307A46E70011D3"
 				"6D9D54FAB21EC086"
 			]
-			description: ["quests.low_voltage.lv_battery.desc"]
+			description: ["{quests.low_voltage.lv_battery.desc}"]
 			id: "3E6DC423FE4A99F7"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_battery.subtitle"
+			subtitle: "{quests.low_voltage.lv_battery.subtitle}"
 			tasks: [{
 				icon: "gtceu:lv_sodium_battery"
 				id: "47D0D12A26963702"
@@ -438,24 +439,24 @@
 						"ftbfiltersystem:filter": "or(item_tag(gtceu:batteries/lv))"
 					}
 				}
-				title: "quests.low_voltage.lv_battery.task"
+				title: "{quests.low_voltage.lv_battery.task}"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_battery.title"
+			title: "{quests.low_voltage.lv_battery.title}"
 			x: 6.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: [
-				"quests.low_voltage.lv_battery_buffer_4x.desc.1"
+				"{quests.low_voltage.lv_battery_buffer_4x.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_battery_buffer_4x.desc.2"
+				"{quests.low_voltage.lv_battery_buffer_4x.desc.2}"
 			]
 			icon: "gtceu:lv_battery_buffer_4x"
 			id: "6431381FBE07D6EF"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_battery_buffer_4x.subtitle"
+			subtitle: "{quests.low_voltage.lv_battery_buffer_4x.subtitle}"
 			tasks: [{
 				id: "3241F5B06FB7258A"
 				item: {
@@ -468,57 +469,51 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:lv_battery_buffer_4x)item(gtceu:lv_battery_buffer_8x)item(gtceu:lv_battery_buffer_16x))"
 					}
 				}
-				title: "quests.low_voltage.lv_battery_buffer_4x.task"
+				title: "{quests.low_voltage.lv_battery_buffer_4x.task}"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_battery_buffer_4x.title"
+			title: "{quests.low_voltage.lv_battery_buffer_4x.title}"
 			x: 6.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["1646BF9194100E57"]
 			description: [
-				"quests.low_voltage.lv_ebf.desc.1"
+				"{quests.low_voltage.lv_ebf.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_ebf.desc.2"
+				"{quests.low_voltage.lv_ebf.desc.2}"
 			]
 			id: "1E9BE8D3F8A602DC"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "quests.low_voltage.lv_ebf.subtitle"
+			subtitle: "{quests.low_voltage.lv_ebf.subtitle}"
 			tasks: [{
 				id: "10F6305A7E5D186D"
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_ebf.title"
+			title: "{quests.low_voltage.lv_ebf.title}"
 			x: -9.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
-			description: ["quests.low_voltage.other_machines.desc"]
+			description: ["{quests.low_voltage.other_machines.desc}"]
 			icon: "gtceu:crushed_sulfur_ore"
 			id: "701BCADAE5CF6CA5"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "quests.low_voltage.other_machines.subtitle"
+			subtitle: "{quests.low_voltage.other_machines.subtitle}"
 			tasks: [{
 				id: "3A7506F2C9145157"
-				title: "quests.low_voltage.other_machines.task"
+				title: "{quests.low_voltage.other_machines.task}"
 				type: "checkmark"
 			}]
-			title: "quests.low_voltage.other_machines.title"
+			title: "{quests.low_voltage.other_machines.title}"
 			x: 6.0d
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"69BDD31A69062B6C"
-				"43D0B4F2ACB9931B"
-				"6903C72A254A7B08"
-				"2C35D4E01AEC02AA"
-			]
 			description: ["{quests.low_voltage.lv_age_progression.desc}"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "648BCF486E16CCB2"
@@ -540,38 +535,38 @@
 				"5B2696206205CB2E"
 			]
 			dependency_requirement: "one_completed"
-			description: ["quests.low_voltage.lv_fluid_solidifier.desc"]
+			description: ["{quests.low_voltage.lv_fluid_solidifier.desc}"]
 			id: "581CDF545E1EA1FD"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_fluid_solidifier.subtitle"
+			subtitle: "{quests.low_voltage.lv_fluid_solidifier.subtitle}"
 			tasks: [{
 				id: "20B1CA4DB2750E84"
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_fluid_solidifier.title"
+			title: "{quests.low_voltage.lv_fluid_solidifier.title}"
 			x: -6.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
-			description: ["quests.low_voltage.lv_ore_prospector.desc"]
+			description: ["{quests.low_voltage.lv_ore_prospector.desc}"]
 			id: "2E36E5755B2F551C"
 			shape: "heart"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_ore_prospector.subtitle"
+			subtitle: "{quests.low_voltage.lv_ore_prospector.subtitle}"
 			tasks: [{
 				id: "1AC97E61EF4958C8"
 				item: "gtceu:prospector.lv"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_ore_prospector.title"
+			title: "{quests.low_voltage.lv_ore_prospector.title}"
 			x: 6.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["5B2696206205CB2E"]
-			description: ["quests.low_voltage.cupronickel_coil.desc"]
+			description: ["{quests.low_voltage.cupronickel_coil.desc}"]
 			icon: {
 				Count: 1
 				id: "gtceu:cupronickel_coil_block"
@@ -581,44 +576,44 @@
 			}
 			id: "1646BF9194100E57"
 			size: 1.0d
-			subtitle: "quests.low_voltage.cupronickel_coil.subtitle"
+			subtitle: "{quests.low_voltage.cupronickel_coil.subtitle}"
 			tasks: [{
 				count: 16L
 				id: "4F19FBED1E1766AC"
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			title: "quests.low_voltage.cupronickel_coil.title"
+			title: "{quests.low_voltage.cupronickel_coil.title}"
 			x: -6.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["3A8D7FC6F316C38C"]
-			description: ["quests.low_voltage.lv_gas_collector.desc"]
+			description: ["{quests.low_voltage.lv_gas_collector.desc}"]
 			id: "15928F50AE80A5CF"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_gas_collector.subtitle"
+			subtitle: "{quests.low_voltage.lv_gas_collector.subtitle}"
 			tasks: [{
 				id: "5710E0C2A7441809"
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_gas_collector.title"
+			title: "{quests.low_voltage.lv_gas_collector.title}"
 			x: -4.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"quests.low_voltage.lv_chemical_reactor.desc.1"
+				"{quests.low_voltage.lv_chemical_reactor.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_chemical_reactor.desc.2"
+				"{quests.low_voltage.lv_chemical_reactor.desc.2}"
 			]
 			icon: "gtceu:lv_chemical_reactor"
 			id: "3D98819A799D2E64"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_chemical_reactor.subtitle"
+			subtitle: "{quests.low_voltage.lv_chemical_reactor.subtitle}"
 			tasks: [
 				{
 					id: "108424445D0F748A"
@@ -631,40 +626,40 @@
 					type: "item"
 				}
 			]
-			title: "quests.low_voltage.lv_chemical_reactor.title"
+			title: "{quests.low_voltage.lv_chemical_reactor.title}"
 			x: -6.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["10ECB471A77F5136"]
 			description: [
-				"quests.low_voltage.universal_cell.desc.1"
+				"{quests.low_voltage.universal_cell.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.universal_cell.desc.2"
+				"{quests.low_voltage.universal_cell.desc.2}"
 			]
 			icon: "gtceu:fluid_cell"
 			id: "292938760AB9A12B"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.universal_cell.subtitle"
+			subtitle: "{quests.low_voltage.universal_cell.subtitle}"
 			tasks: [{
 				id: "012C90A73EC79E11"
 				item: "gtceu:universal_fluid_cell"
 				type: "item"
 			}]
-			title: "quests.low_voltage.universal_cell.title"
+			title: "{quests.low_voltage.universal_cell.title}"
 			x: -3.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["581CDF545E1EA1FD"]
-			description: ["quests.low_voltage.mold_rotor.desc"]
+			description: ["{quests.low_voltage.mold_rotor.desc}"]
 			icon: "gtceu:rotor_casting_mold"
 			id: "115C4226F6473F0C"
 			optional: true
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.mold_rotor.subtitle"
+			subtitle: "{quests.low_voltage.mold_rotor.subtitle}"
 			tasks: [
 				{
 					id: "4A68C6BC78CB07E2"
@@ -677,234 +672,234 @@
 					type: "item"
 				}
 			]
-			title: "quests.low_voltage.mold_rotor.title"
+			title: "{quests.low_voltage.mold_rotor.title}"
 			x: -7.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["5B891BA4897FD73C"]
-			description: ["quests.low_voltage.soldering_alloy.desc"]
+			description: ["{quests.low_voltage.soldering_alloy.desc}"]
 			icon: "gtceu:soldering_alloy_ingot"
 			id: "713C8D6A20BF3A0E"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.soldering_alloy.subtitle"
+			subtitle: "{quests.low_voltage.soldering_alloy.subtitle}"
 			tasks: [{
 				id: "67F9F84D66E32728"
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			title: "quests.low_voltage.soldering_alloy.title"
+			title: "{quests.low_voltage.soldering_alloy.title}"
 			x: 4.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"quests.low_voltage.lv_electroliser.desc.1"
+				"{quests.low_voltage.lv_electroliser.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_electroliser.desc.2"
+				"{quests.low_voltage.lv_electroliser.desc.2}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_electroliser.desc.3"
+				"{quests.low_voltage.lv_electroliser.desc.3"
 			]
 			id: "32B08E6F414A00C0"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_electroliser.subtitle"
+			subtitle: "{quests.low_voltage.lv_electroliser.subtitle}"
 			tasks: [{
 				id: "536874A8C35E1C86"
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_electroliser.title"
+			title: "{quests.low_voltage.lv_electroliser.title}"
 			x: 7.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["5263F866638D875C"]
-			description: ["quests.low_voltage.lv_cutter.desc"]
+			description: ["{quests.low_voltage.lv_cutter.desc}"]
 			id: "3A8D7FC6F316C38C"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_cutter.subtitle"
+			subtitle: "{quests.low_voltage.lv_cutter.subtitle}"
 			tasks: [{
 				id: "662DB818821C4EAE"
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_cutter.title"
+			title: "{quests.low_voltage.lv_cutter.title}"
 			x: -4.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"quests.low_voltage.lv_centrifuge.desc.1"
+				"{quests.low_voltage.lv_centrifuge.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_centrifuge.desc.2"
+				"{quests.low_voltage.lv_centrifuge.desc.2}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_centrifuge.desc.3"
+				"{quests.low_voltage.lv_centrifuge.desc.3"
 			]
 			id: "5263F866638D875C"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "quests.low_voltage.lv_centrifuge.subtitle"
+			subtitle: "{quests.low_voltage.lv_centrifuge.subtitle}"
 			tasks: [{
 				id: "20EDB55B8D5CDAD6"
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_centrifuge.title"
+			title: "{quests.low_voltage.lv_centrifuge.title}"
 			x: -4.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["37307A46E70011D3"]
-			description: ["quests.low_voltage.lv_sprayer.desc"]
+			description: ["{quests.low_voltage.lv_sprayer.desc}"]
 			id: "5AD9884E7BFB2510"
 			shape: "heart"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_sprayer.subtitle"
+			subtitle: "{quests.low_voltage.lv_sprayer.subtitle}"
 			tasks: [{
 				id: "28CFFA0F7A33E02F"
 				item: "gtceu:empty_spray_can"
 				match_nbt: false
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_sprayer.title"
+			title: "{quests.low_voltage.lv_sprayer.title}"
 			x: 4.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"quests.low_voltage.lv_assembler.desc.1"
+				"{quests.low_voltage.lv_assembler.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_assembler.desc.2"
+				"{quests.low_voltage.lv_assembler.desc.2}"
 			]
 			id: "63CD0236B337EAAD"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "quests.low_voltage.lv_assembler.subtitle"
+			subtitle: "{quests.low_voltage.lv_assembler.subtitle}"
 			tasks: [{
 				id: "6B5537B80EB05B30"
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_assembler.title"
+			title: "{quests.low_voltage.lv_assembler.title}"
 			x: 0.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"quests.low_voltage.lv_extractor.desc.1"
+				"{quests.low_voltage.lv_extractor.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_extractor.desc.2"
+				"{quests.low_voltage.lv_extractor.desc.2}"
 			]
 			id: "5B2696206205CB2E"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "quests.low_voltage.lv_extractor.subtitle"
+			subtitle: "{quests.low_voltage.lv_extractor.subtitle}"
 			tasks: [{
 				id: "5CD363C839475426"
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_extractor.title"
+			title: "{quests.low_voltage.lv_extractor.title}"
 			x: -4.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["0DBC148D92A9F69F"]
 			description: [
-				"quests.low_voltage.lv_circuit_assembler.desc.1"
+				"{quests.low_voltage.lv_circuit_assembler.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_circuit_assembler.desc.2"
+				"{quests.low_voltage.lv_circuit_assembler.desc.2}"
 			]
 			id: "199361B5FEC959EA"
 			shape: "gear"
 			size: 4.0d
-			subtitle: "quests.low_voltage.lv_circuit_assembler.subtitle"
+			subtitle: "{quests.low_voltage.lv_circuit_assembler.subtitle}"
 			tasks: [{
 				id: "6287E8A7C254ECA7"
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_circuit_assembler.title"
+			title: "{quests.low_voltage.lv_circuit_assembler.title}"
 			x: 0.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["1A77CA35F054F988"]
 			description: [
-				"quests.low_voltage.lv_arc_furnace.desc.1"
+				"{quests.low_voltage.lv_arc_furnace.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_arc_furnace.desc.2"
+				"{quests.low_voltage.lv_arc_furnace.desc.2}"
 			]
 			id: "63256ED95F17B242"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "quests.low_voltage.lv_arc_furnace.subtitle"
+			subtitle: "{quests.low_voltage.lv_arc_furnace.subtitle}"
 			tasks: [{
 				id: "2374C06C5E1EFC24"
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_arc_furnace.title"
+			title: "{quests.low_voltage.lv_arc_furnace.title}"
 			x: -5.0d
 			y: 13.0d
 		}
 		{
 			dependencies: ["15928F50AE80A5CF"]
 			description: [
-				"quests.low_voltage.lv_oxygen.desc.1"
+				"{quests.low_voltage.lv_oxygen.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_oxygen.desc.2"
+				"{quests.low_voltage.lv_oxygen.desc.2}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_oxygen.desc.3"
+				"{quests.low_voltage.lv_oxygen.desc.3"
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "1A77CA35F054F988"
 			shape: "rsquare"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_oxygen.subtitle"
+			subtitle: "{quests.low_voltage.lv_oxygen.subtitle}"
 			tasks: [{
 				id: "4299C881ED57472D"
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_oxygen.title"
+			title: "{quests.low_voltage.lv_oxygen.title}"
 			x: -5.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["5263F866638D875C"]
-			description: ["quests.low_voltage.lv_glue.desc"]
+			description: ["{quests.low_voltage.lv_glue.desc}"]
 			icon: "gtceu:glue_bucket"
 			id: "0EAC071414AEC07E"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_glue.subtitle"
+			subtitle: "{quests.low_voltage.lv_glue.subtitle}"
 			tasks: [{
 				id: "204FF37CA2846468"
 				item: "gtceu:glue_bucket"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_glue.title"
+			title: "{quests.low_voltage.lv_glue.title}"
 			x: -2.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["5B891BA4897FD73C"]
-			description: ["quests.low_voltage.gallium_arsenide.desc"]
+			description: ["{quests.low_voltage.gallium_arsenide.desc}"]
 			id: "4073577B7EF9B593"
 			size: 1.0d
-			subtitle: "quests.low_voltage.gallium_arsenide.subtitle"
+			subtitle: "{quests.low_voltage.gallium_arsenide.subtitle}"
 			tasks: [{
 				id: "0FDC60275B1959C3"
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			title: "quests.low_voltage.gallium_arsenide.title"
+			title: "{quests.low_voltage.gallium_arsenide.title}"
 			x: 2.0d
 			y: 9.0d
 		}
@@ -914,13 +909,13 @@
 				"0EAC071414AEC07E"
 			]
 			description: [
-				"quests.low_voltage.t2_circuit_board.desc.1"
+				"{quests.low_voltage.t2_circuit_board.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.t2_circuit_board.desc.2"
+				"{quests.low_voltage.t2_circuit_board.desc.2}"
 			]
 			id: "3647B1B964A15E4E"
 			size: 1.0d
-			subtitle: "quests.low_voltage.t2_circuit_board.subtitle"
+			subtitle: "{quests.low_voltage.t2_circuit_board.subtitle}"
 			tasks: [{
 				id: "2DE7B75F25A4AB9E"
 				item: "gtceu:phenolic_printed_circuit_board"
@@ -934,16 +929,16 @@
 				"63CD0236B337EAAD"
 				"4073577B7EF9B593"
 			]
-			description: ["quests.low_voltage.lv_diode.desc"]
+			description: ["{quests.low_voltage.lv_diode.desc}"]
 			id: "7BE7DE4C0109D788"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_diode.subtitle"
+			subtitle: "{quests.low_voltage.lv_diode.subtitle}"
 			tasks: [{
 				id: "0FE8CA1C2D212378"
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_diode.title"
+			title: "{quests.low_voltage.lv_diode.title}"
 			x: 0.5d
 			y: 9.0d
 		}
@@ -952,43 +947,43 @@
 				"3647B1B964A15E4E"
 				"7BE7DE4C0109D788"
 			]
-			description: ["quests.low_voltage.1_mv_circuit.desc"]
+			description: ["{quests.low_voltage.1_mv_circuit.desc}"]
 			id: "0DBC148D92A9F69F"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "quests.low_voltage.1_mv_circuit.subtitle"
+			subtitle: "{quests.low_voltage.1_mv_circuit.subtitle}"
 			tasks: [{
 				id: "70313E1917121E14"
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			title: "quests.low_voltage.1_mv_circuit.title"
+			title: "{quests.low_voltage.1_mv_circuit.title}"
 			x: 0.0d
 			y: 10.799999999999999d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
-			description: ["quests.low_voltage.aluminium_dust.desc"]
+			description: ["{quests.low_voltage.aluminium_dust.desc}"]
 			id: "45B71324028F6E68"
 			size: 1.0d
-			subtitle: "quests.low_voltage.aluminium_dust.subtitle"
+			subtitle: "{quests.low_voltage.aluminium_dust.subtitle}"
 			tasks: [{
 				id: "144F4F8EF61BEEA5"
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			title: "quests.low_voltage.aluminium_dust.title"
+			title: "{quests.low_voltage.aluminium_dust.title}"
 			x: -9.0d
 			y: 8.625d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
-			description: ["quests.low_voltage.multiblock_tech.desc"]
+			description: ["{quests.low_voltage.multiblock_tech.desc}"]
 			hide_text_until_complete: false
 			icon: "gtceu:heatproof_machine_casing"
 			id: "2FC7B1E867E4194E"
 			size: 1.0d
-			subtitle: "quests.low_voltage.multiblock_tech.subtitle"
+			subtitle: "{quests.low_voltage.multiblock_tech.subtitle}"
 			tasks: [
 				{
 					id: "1B5378C55DC4AE73"
@@ -999,7 +994,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:ulv_input_bus)item(gtceu:lv_input_bus))"
 						}
 					}
-					title: "quests.low_voltage.multiblock_tech.task.1"
+					title: "{quests.low_voltage.multiblock_tech.task.1"
 					type: "item"
 				}
 				{
@@ -1011,7 +1006,7 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:ulv_output_bus)item(gtceu:lv_output_bus))"
 						}
 					}
-					title: "quests.low_voltage.multiblock_tech.task.2"
+					title: "{quests.low_voltage.multiblock_tech.task.2"
 					type: "item"
 				}
 				{
@@ -1039,27 +1034,27 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:ulv_input_hatch)item(gtceu:lv_input_hatch))"
 						}
 					}
-					title: "quests.low_voltage.multiblock_tech.task.3"
+					title: "{quests.low_voltage.multiblock_tech.task.3}"
 					type: "item"
 				}
 			]
-			title: "quests.low_voltage.multiblock_tech.title"
+			title: "{quests.low_voltage.multiblock_tech.title}"
 			x: -9.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
 			description: [
-				"quests.low_voltage.lv_rock_crusher.desc.1"
+				"{quests.low_voltage.lv_rock_crusher.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_rock_crusher.desc.2"
+				"{quests.low_voltage.lv_rock_crusher.desc.2}"
 			]
 			icon: "gtceu:lv_rock_crusher"
 			id: "1F2359106FC95603"
 			optional: true
 			shape: "heart"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_rock_crusher.subtitle"
+			subtitle: "{quests.low_voltage.lv_rock_crusher.subtitle}"
 			tasks: [{
 				id: "37396BE76A4F64C5"
 				item: {
@@ -1072,22 +1067,22 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:lv_rock_crusher)item(gtceu:mv_rock_crusher)item(gtceu:hv_rock_crusher)item(gtceu:ev_rock_crusher)item(gtceu:iv_rock_crusher)item(gtceu:luv_rock_crusher)item(gtceu:zpm_rock_crusher)item(gtceu:uv_rock_crusher))"
 					}
 				}
-				title: "quests.low_voltage.lv_rock_crusher.task"
+				title: "{quests.low_voltage.lv_rock_crusher.task}"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_rock_crusher.title"
+			title: "{quests.low_voltage.lv_rock_crusher.title}"
 			x: -2.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
-			description: ["quests.low_voltage.lv_turbo_charge.desc"]
+			description: ["{quests.low_voltage.lv_turbo_charge.desc}"]
 			icon: "gtceu:lv_charger_4x"
 			id: "2DB259568F347C0E"
 			optional: true
 			shape: "heart"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_turbo_charge.subtitle"
+			subtitle: "{quests.low_voltage.lv_turbo_charge.subtitle}"
 			tasks: [{
 				id: "11A5ECE835D2037C"
 				item: {
@@ -1100,22 +1095,22 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:ulv_charger_4x)item(gtceu:lv_charger_4x)item(gtceu:mv_charger_4x)item(gtceu:hv_charger_4x)item(gtceu:ev_charger_4x)item(gtceu:iv_charger_4x)item(gtceu:luv_charger_4x)item(gtceu:zpm_charger_4x)item(gtceu:uv_charger_4x)item(gtceu:uhv_charger_4x))"
 					}
 				}
-				title: "quests.low_voltage.lv_turbo_charge.task"
+				title: "{quests.low_voltage.lv_turbo_charge.task}"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_turbo_charge.title"
+			title: "{quests.low_voltage.lv_turbo_charge.title}"
 			x: 2.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
-			description: ["quests.low_voltage.lv_fisher.desc"]
+			description: ["{quests.low_voltage.lv_fisher.desc}"]
 			icon: "gtceu:lv_fisher"
 			id: "3B26CA44EA955B07"
 			optional: true
 			shape: "heart"
 			size: 1.0d
-			subtitle: "quests.low_voltage.lv_fisher.subtitle"
+			subtitle: "{quests.low_voltage.lv_fisher.subtitle}"
 			tasks: [{
 				id: "54B46E0C5903092F"
 				item: {
@@ -1128,10 +1123,10 @@
 						"ftbfiltersystem:filter": "or(item(gtceu:lv_fisher)item(gtceu:mv_fisher)item(gtceu:hv_fisher)item(gtceu:ev_fisher))"
 					}
 				}
-				title: "quests.low_voltage.lv_fisher.task"
+				title: "{quests.low_voltage.lv_fisher.task}"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_fisher.title"
+			title: "{quests.low_voltage.lv_fisher.title}"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -1154,51 +1149,51 @@
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
-			description: ["quests.low_voltage.lv_mixer.desc"]
+			description: ["{quests.low_voltage.lv_mixer.desc}"]
 			id: "5B891BA4897FD73C"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "quests.low_voltage.lv_mixer.subtitle"
+			subtitle: "{quests.low_voltage.lv_mixer.subtitle}"
 			tasks: [{
 				id: "27715DF608CBAE08"
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_mixer.title"
+			title: "{quests.low_voltage.lv_mixer.title}"
 			x: 4.0d
 			y: 7.0d
 		}
 		{
 			description: [
-				"quests.low_voltage.lv_machine_hull.desc.1"
+				"{quests.low_voltage.lv_machine_hull.desc.1}"
 				"{@pagebreak}"
-				"quests.low_voltage.lv_machine_hull.desc.2"
+				"{quests.low_voltage.lv_machine_hull.desc.2}"
 			]
 			id: "22510C5F2386B453"
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "quests.low_voltage.lv_machine_hull.subtitle"
+			subtitle: "{quests.low_voltage.lv_machine_hull.subtitle}"
 			tasks: [{
 				id: "499CACFF0350B3CA"
 				item: "gtceu:lv_machine_hull"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_machine_hull.title"
+			title: "{quests.low_voltage.lv_machine_hull.title}"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["15928F50AE80A5CF"]
-			description: ["quests.low_voltage.lv_nitrogen.desc"]
+			description: ["{quests.low_voltage.lv_nitrogen.desc}"]
 			id: "39F6BCF4B8DFC7D4"
 			shape: "rsquare"
-			subtitle: "quests.low_voltage.lv_nitrogen.subtitle"
+			subtitle: "{quests.low_voltage.lv_nitrogen.subtitle}"
 			tasks: [{
 				id: "416409C6A68F8DCA"
 				item: "gtceu:nitrogen_bucket"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_nitrogen.title"
+			title: "{quests.low_voltage.lv_nitrogen.title}"
 			x: -3.0d
 			y: 11.5d
 		}
@@ -1207,29 +1202,29 @@
 				"22510C5F2386B453"
 				"6903C72A254A7B08"
 			]
-			description: ["quests.low_voltage.lv_motor.desc"]
+			description: ["{quests.low_voltage.lv_motor.desc}"]
 			icon: "gtceu:lv_electric_motor"
 			id: "7EED0084BA59FED1"
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "quests.low_voltage.lv_motor.subtitle"
+			subtitle: "{quests.low_voltage.lv_motor.subtitle}"
 			tasks: [{
 				icon: "gtceu:lv_electric_motor"
 				id: "75C56AF9E28F17C2"
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			title: "quests.low_voltage.lv_motor.title"
+			title: "{quests.low_voltage.lv_motor.title}"
 			x: 0.0d
 			y: -0.75d
 		}
 		{
 			dependencies: ["581CDF545E1EA1FD"]
-			description: ["quests.low_voltage.mold_plate.desc"]
+			description: ["{quests.low_voltage.mold_plate.desc}"]
 			icon: "gtceu:plate_casting_mold"
 			id: "3526779F1E3E2DB5"
 			shape: "rsquare"
-			subtitle: "quests.low_voltage.mold_plate.subtitle"
+			subtitle: "{quests.low_voltage.mold_plate.subtitle}"
 			tasks: [
 				{
 					id: "27B2C629237EFB4E"
@@ -1242,7 +1237,7 @@
 					type: "item"
 				}
 			]
-			title: "quests.low_voltage.mold_plate.title"
+			title: "{quests.low_voltage.mold_plate.title}"
 			x: -6.5d
 			y: 5.5d
 		}
@@ -1263,6 +1258,6 @@
 			y: 1.0d
 		}
 	]
-	subtitle: ["quests.low_voltage.subtitle"]
-	title: "quests.low_voltage"
+	subtitle: ["{quests.low_voltage.subtitle}"]
+	title: "{quests.low_voltage}"
 }

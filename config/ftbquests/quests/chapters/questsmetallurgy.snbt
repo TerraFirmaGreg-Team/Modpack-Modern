@@ -21,8 +21,8 @@
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "gear"
 			size: 4.0d
-			x: -4.5d
-			y: -32.0d
+			x: 2.0d
+			y: -26.0d
 		}
 		{
 			id: "292F0E5F9768917A"
@@ -47,8 +47,8 @@
 		{
 			id: "227B6C88FFE99435"
 			linked_quest: "4EBABACAB444244D"
-			x: 24.5d
-			y: -20.0d
+			x: 15.0d
+			y: -23.0d
 		}
 		{
 			id: "19CF6D922179DFF9"
@@ -71,8 +71,8 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.this_is_a_bucket.title}"
-			x: 26.0d
-			y: -16.5d
+			x: 12.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["56CA2EB7812529C5"]
@@ -111,8 +111,8 @@
 				}
 			]
 			title: "{quests.metal_age.redblu_buckets.title}"
-			x: 26.0d
-			y: -19.0d
+			x: 15.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["7E0239E9CC73F09F"]
@@ -137,7 +137,7 @@
 			}]
 			title: "{quests.metal_age.black_steel_anvil.title}"
 			x: 26.0d
-			y: -28.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["4310B619B57276ED"]
@@ -231,8 +231,8 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.weld_bronze_ingots.title}"
-			x: -1.0d
-			y: -32.0d
+			x: 2.0d
+			y: -29.5d
 		}
 		{
 			dependencies: [
@@ -553,10 +553,7 @@
 			y: -30.0d
 		}
 		{
-			dependencies: [
-				"3C173357029AB649"
-				"48A8E3210B2BAE1C"
-			]
+			dependencies: ["48A8E3210B2BAE1C"]
 			description: ["{quests.metal_age.anvil_recycling.desc}"]
 			icon: "tfc:firepit"
 			id: "3B2550394C94CEC9"
@@ -568,8 +565,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.anvil_recycling.title}"
-			x: 2.0d
-			y: -30.0d
+			x: 0.0d
+			y: -29.5d
 		}
 		{
 			dependencies: ["48A8E3210B2BAE1C"]
@@ -784,8 +781,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.red_blu.title}"
-			x: 26.0d
-			y: -26.0d
+			x: 22.5d
+			y: -24.5d
 		}
 		{
 			dependencies: ["174DA15847665CF8"]
@@ -793,6 +790,8 @@
 				"{quests.metal_age.coke_oven.desc.1}"
 				"{@pagebreak}"
 				"{quests.metal_age.coke_oven.desc.2}"
+				"{@pagebreak}"
+				""
 				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
 			]
 			id: "6302B4F5F57FDCED"
@@ -830,8 +829,8 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.red_steel_flask.title}"
-			x: 24.5d
-			y: -21.0d
+			x: 15.0d
+			y: -26.0d
 		}
 		{
 			dependencies: [
@@ -856,8 +855,8 @@
 				type: "item"
 			}]
 			title: "{quests.metal_age.redblu_anvil.title}"
-			x: 26.0d
-			y: -20.5d
+			x: 17.0d
+			y: -24.5d
 		}
 		{
 			dependencies: ["3C173357029AB649"]
@@ -932,7 +931,6 @@
 		{
 			dependencies: ["5A936E9BCF30AA3D"]
 			description: ["{quests.metal_age.overworld_kaolin.desc}"]
-			icon: "tfc:wood/sapling/kapok"
 			id: "68B7D07D57A103BE"
 			subtitle: "{quests.metal_age.overworld_kaolin.subtitle}"
 			tasks: [{
@@ -945,11 +943,7 @@
 			y: -33.5d
 		}
 		{
-			dependencies: [
-				"061116CF508D54F6"
-				"2DB82986FE176CD7"
-				"6302B4F5F57FDCED"
-			]
+			dependencies: ["6302B4F5F57FDCED"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.blast_furance_fuel.desc}"]
 			hide_dependency_lines: true
@@ -982,8 +976,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.steel_goodies.title}"
-			x: 26.0d
-			y: -34.0d
+			x: 28.0d
+			y: -30.0d
 		}
 		{
 			dependencies: ["52DAF93E2F3D688A"]
@@ -996,8 +990,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.black_steel_goodies.title}"
-			x: 28.0d
-			y: -28.0d
+			x: 24.0d
+			y: -26.0d
 		}
 		{
 			dependencies: [
@@ -1131,8 +1125,8 @@
 				}
 			]
 			title: "{quests.metal_age.highcarb_red_steel.title}"
-			x: 25.0d
-			y: -22.5d
+			x: 19.0d
+			y: -25.5d
 		}
 		{
 			dependencies: ["5792DDAA82895E67"]
@@ -1200,8 +1194,8 @@
 				}
 			]
 			title: "{quests.metal_age.weak_red_steel.title}"
-			x: 25.0d
-			y: -24.5d
+			x: 20.5d
+			y: -25.5d
 		}
 		{
 			dependencies: ["5792DDAA82895E67"]
@@ -1269,8 +1263,8 @@
 				}
 			]
 			title: "{quests.metal_age.weak_blu_steel.title}"
-			x: 27.0d
-			y: -24.5d
+			x: 20.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["64F8A358EC3FEF45"]
@@ -1308,8 +1302,8 @@
 				}
 			]
 			title: "{quests.metal_age.highcarb_blu_steel.title}"
-			x: 27.0d
-			y: -22.5d
+			x: 19.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["3C173357029AB649"]

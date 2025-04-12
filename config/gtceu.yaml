@@ -137,6 +137,10 @@ worldgen:
     # Default: false
     infiniteBedrockOresFluids: false
 
+    # Generate ores indicators above ore veins
+    # Default: true
+    oreIndicators: false
+
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
     # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
@@ -226,13 +230,17 @@ machines:
   # Whether the machine's circuit slot need to be inserted a real circuit.
   ghostCircuit: true
 
-  # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
+  # Whether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
   # Default: false
   doBedrockOres: true
 
   # What Kind of material should the bedrock ore miner output?
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
+
+  # The base amount of ticks per block for electric singleblock ore miners
+  # Default: 320
+  minerSpeed: 320
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false

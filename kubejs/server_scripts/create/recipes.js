@@ -213,13 +213,14 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:hose_pulley', [
 		'DAE',
 		' B ',
-		' C '
+		'CFC'
 	], {
 		A: 'create:copper_casing',
 		B: '#forge:foils/rubber',
 		C: '#forge:plates/copper',
 		D: '#forge:tools/wrenches',
-		E: '#forge:tools/hammers'
+		E: '#forge:tools/hammers',
+		F: 'minecraft:bucket'
 	}).id('tfg:create/shaped/hose_pulley')
 
 	// Слив из предметов
@@ -250,7 +251,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
-		C: '#forge:rods/red_steel',
+		C: '#forge:rods/black_steel',
 		D: '#forge:gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
@@ -1303,9 +1304,9 @@ const registerCreateRecipes = (event) => {
 		'BAB',
 		'CCC'
 	], {
-		A: 'minecraft:coal_block',
-		B: 'tfc:metal/bars/blue_steel',
-		C: 'gtceu:blue_steel_plate',
+		A: '#forge:storage_blocks/coke',
+		B: '#forge:rods/black_steel',
+		C: '#forge:plates/black_steel',
 	}).id('tfg:create/shaped/blaze_burner')
 
 	//#endregion
@@ -1421,7 +1422,7 @@ const registerCreateRecipes = (event) => {
 		{ base: 'tfc:rock/raw/andesite', cut: 'create:cut_andesite', vanilla: 'minecraft:andesite' },
 		{ base: 'tfc:rock/raw/limestone', cut: 'create:cut_limestone' },
 		{ base: 'minecraft:deepslate', cut: 'create:cut_deepslate' },
-		{ base: 'minecraft:dripstone', cut: 'create:cut_dripstone' },
+		{ base: 'minecraft:dripstone_block', cut: 'create:cut_dripstone' },
 		{ base: 'minecraft:calcite', cut: 'create:cut_calcite' }
 	]
 

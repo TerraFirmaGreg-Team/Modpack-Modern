@@ -6,40 +6,29 @@ Key:
 
 # 0.9
 
-## Field Guide & Quests
+## Required for playtests
+- ✔ Create rebalancing
+- ⏳ Grappling hook
+
+## Can do during playtests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
 	- Move the Hang glider quests to General Transportation, replace their position with the mining helmet.
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
+- ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
 - Fix other field guide pages that are referring to missing recipes (they're listed in the log)
 - Figure out how to link ftb quests to the field guide entries
-
-## Mods & Recipes
-- ⏳ Replace colds grappler with that new grappling mod that nebby found
-- Early game create changes
-	- ⏳ Add/integrate Create Horse Power, Create Vintage Improvements, Greate mods (being worked on by pyritie)
-		- ⏳ Create Horse Power still needs configs
-		- ✔ Vintage Improvements
-		- ✔ Greate
-	- Check/configure SU usage of everything else create related so it lines up with Greate's
-	- Adjust costs of additions' alternator/motor to match greate's SU
-	- Check LBB efficiency of creosote
-- ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
 - Something about milk curdling having circuit number conflicts?
-- ❓ Add that mod that disables xp
-- Increase the curving press' item size (so we can get rid of so much warning spam in the logs)
-
-## Worldgen
-- ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
-  
-## Technical
-- ❓ GT + TFC food expiration compat
 - Akistor carts mixin is commented out, for the plows
-- ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
-- Add that create movable blacklist tag to greg crates, see if it stops people being able to put them on contraptions
-- ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 
+## Nice-to-haves
+- ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
+- ❓ Add that mod that disables xp
+- ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
+- ❓ GT + TFC food expiration compat
+- ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
+  
 # Post-0.9
 - Create 6
 	- Check create 6 compatibility

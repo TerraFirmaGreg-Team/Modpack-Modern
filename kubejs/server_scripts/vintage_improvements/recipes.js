@@ -71,8 +71,7 @@ function registerVintageImprovementsRecipes(event) {
 		C: '#forge:rods/steel',
 		D: '#gtceu:circuits/ulv',
 		E: '#forge:plates/black_steel',
-		F: '#forge:springs/wrought_iron',
-		G: 'create:precision_mechanism'
+		F: '#forge:springs/wrought_iron'
 	}).id('tfg:vi/shaped/curving_press')
 
 	event.shapeless('vintageimprovements:curving_press', ['create:mechanical_press', '#forge:tools/files'])
@@ -312,10 +311,10 @@ function registerVintageImprovementsRecipes(event) {
 		}
 
 		const singleWire = ChemicalHelper.get(TagPrefix.wireGtSingle, material, 2)
-		if (material.hasFlag(MaterialFlags.GENERATE_PLATE) && singleWire != null) {
+		if (singleWire != null) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
-				ingredients: [ChemicalHelper.get(TagPrefix.plate, material, 1)],
+				ingredients: [ChemicalHelper.get(TagPrefix.ingot, material, 1)],
 				results: [singleWire],
 				processingTime: material.getMass() * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_single_wire`)
@@ -466,6 +465,8 @@ function registerVintageImprovementsRecipes(event) {
 			// LV recipes only
 			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
 			if (!(EUt <= 32)) { return }
+			// Skip this one
+			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
@@ -542,6 +543,7 @@ function registerVintageImprovementsRecipes(event) {
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'tfc:glue' }],
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
 		processingTime: 100
 	}).id('tfg:vi/vacuumizing/glue')
 

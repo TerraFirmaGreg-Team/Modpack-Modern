@@ -78,7 +78,7 @@ key_key.astikorcarts.desc:key.keyboard.r:NONE
 key_key.curios.open.desc:key.keyboard.unknown:NONE
 key_create.keyinfo.toolmenu:key.keyboard.left.alt:NONE
 key_create.keyinfo.toolbelt:key.keyboard.left.alt:NONE
-key_key.toolbelt.slot:NONE
+key_key.toolbelt.slot:key.keyboard.unknown:NONE
 key_gui.xaero_switch_waypoint_set:key.keyboard.unknown:NONE
 key_gui.xaero_instant_waypoint:key.keyboard.unknown:NONE
 key_gui.xaero_toggle_slime:key.keyboard.unknown:NONE

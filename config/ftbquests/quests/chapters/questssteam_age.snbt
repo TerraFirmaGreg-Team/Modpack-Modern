@@ -8,74 +8,10 @@
 	order_index: 2
 	quest_links: [
 		{
-			id: "62E10FCCD3CFFB25"
-			linked_quest: "26F07C926959FACF"
-			x: -22.0d
-			y: -5.0d
-		}
-		{
-			id: "1CE57ADA90D9E3A9"
-			linked_quest: "3C173357029AB649"
-			shape: "octagon"
-			size: 2.0d
-			x: -22.0d
-			y: -7.5d
-		}
-		{
-			id: "36E0479110D898C9"
-			linked_quest: "20C2CE92459BE14A"
-			x: -14.0d
-			y: -5.0d
-		}
-		{
-			id: "76EE88E701134FA5"
-			linked_quest: "04DE7C58F20B535A"
-			shape: "octagon"
-			size: 2.0d
-			x: -5.5d
-			y: -7.5d
-		}
-		{
-			id: "5BCB495C7D9E1024"
-			linked_quest: "0C9B7745D812555A"
-			x: -5.5d
-			y: -5.0d
-		}
-		{
-			id: "77F8E82E8E3274BF"
-			linked_quest: "52DAF93E2F3D688A"
-			shape: "gear"
-			size: 3.0d
-			x: -19.5d
-			y: 3.0d
-		}
-		{
-			id: "49B22B972E3C3780"
-			linked_quest: "2C7368B3F573B284"
-			x: -19.5d
-			y: 5.5d
-		}
-		{
 			id: "39027CF4DC307D33"
 			linked_quest: "5E186CD5E83BFDF0"
 			x: -27.5d
-			y: -5.5d
-		}
-		{
-			id: "60A46EA602BC1207"
-			linked_quest: "48A8E3210B2BAE1C"
-			shape: "octagon"
-			size: 2.0d
-			x: -27.5d
-			y: -7.5d
-		}
-		{
-			id: "27410A63E0E96594"
-			linked_quest: "174DA15847665CF8"
-			shape: "octagon"
-			size: 2.0d
-			x: -14.0d
-			y: -7.5d
+			y: -3.0d
 		}
 		{
 			id: "0CE64B9914191C56"
@@ -97,57 +33,59 @@
 			y: 5.5d
 		}
 		{
-			id: "1E03E02C0C185B35"
-			linked_quest: "648BCF486E16CCB2"
-			shape: "gear"
-			size: 3.0d
-			x: -10.0d
-			y: 6.0d
-		}
-		{
 			id: "044ADF2296BC1A8F"
 			linked_quest: "6E186F9C57155BFA"
-			shape: "heart"
-			x: -12.0d
-			y: 3.0d
+			shape: "square"
+			size: 1.5d
+			x: -13.5d
+			y: 3.5d
+		}
+		{
+			id: "1F1E7097C015BE33"
+			linked_quest: "48A8E3210B2BAE1C"
+			shape: "octagon"
+			size: 2.0d
+			x: -27.5d
+			y: -5.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["26F07C926959FACF"]
+			dependencies: ["6F1BC99BE641B671"]
 			id: "48C1E980F7D64317"
 			tasks: [{
 				id: "486DE7D228F3589B"
 				item: "greate:andesite_alloy_millstone"
 				type: "item"
 			}]
-			x: -20.0d
+			x: -18.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["26F07C926959FACF"]
+			dependencies: ["6F1BC99BE641B671"]
 			id: "1059288C22CB56BB"
 			tasks: [{
 				id: "1F3EE2CB3B8875EC"
 				item: "createhorsepower:horse_crank"
 				type: "item"
 			}]
-			x: -24.0d
+			x: -22.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["7B045998769930F0"]
 			id: "611EB6284CA7119C"
+			size: 1.5d
 			tasks: [{
 				id: "340B4B4665295100"
 				item: "vintageimprovements:helve_hammer"
 				type: "item"
 			}]
-			x: -22.0d
+			x: -20.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["26F07C926959FACF"]
+			dependencies: ["6F1BC99BE641B671"]
 			id: "7B045998769930F0"
 			tasks: [
 				{
@@ -166,11 +104,11 @@
 					type: "item"
 				}
 			]
-			x: -22.0d
+			x: -20.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["20C2CE92459BE14A"]
+			dependencies: ["6E8CEE02CB5B678B"]
 			id: "61DDB00751D1E7CB"
 			tasks: [
 				{
@@ -184,11 +122,11 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -10.0d
 			y: -6.0d
 		}
 		{
-			dependencies: ["20C2CE92459BE14A"]
+			dependencies: ["6E8CEE02CB5B678B"]
 			id: "617E0AFB7BA3D7A8"
 			tasks: [
 				{
@@ -203,18 +141,18 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -10.0d
 			y: -4.0d
 		}
 		{
-			dependencies: ["20C2CE92459BE14A"]
+			dependencies: ["6E8CEE02CB5B678B"]
 			id: "7F14D2A34F480ACA"
 			tasks: [{
 				id: "1554B18D816C3549"
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -14.0d
+			x: -12.0d
 			y: -2.5d
 		}
 		{
@@ -225,7 +163,7 @@
 				item: { Count: 32, id: "greate:steel_encased_fan" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -1.0d
 		}
 		{
@@ -236,12 +174,13 @@
 				item: "greate:steel_mechanical_pump"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["2C7368B3F573B284"]
+			dependencies: ["209958FE2EEA5D72"]
 			id: "46FA9DD4755A5548"
+			size: 1.5d
 			tasks: [{
 				id: "07FFA9C76EE39D36"
 				item: {
@@ -257,17 +196,18 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["56CA2EB7812529C5"]
+			dependencies: ["033E74BC588E7EAD"]
+			hide_dependent_lines: true
 			id: "183D47F04CAEBFA7"
 			optional: true
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "704B7094BE2FB3E1"
 				item: "create:steam_engine"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 3.0d
+			x: -16.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7F14D2A34F480ACA"]
@@ -277,7 +217,7 @@
 				item: "greate:andesite_alloy_mechanical_saw"
 				type: "item"
 			}]
-			x: -15.0d
+			x: -13.0d
 			y: -0.5d
 		}
 		{
@@ -288,11 +228,11 @@
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
-			x: -13.0d
+			x: -11.0d
 			y: -0.5d
 		}
 		{
-			dependencies: ["20C2CE92459BE14A"]
+			dependencies: ["6E8CEE02CB5B678B"]
 			id: "05CC8C5E63CD1DB8"
 			tasks: [
 				{
@@ -306,7 +246,7 @@
 					type: "item"
 				}
 			]
-			x: -16.5d
+			x: -14.5d
 			y: -5.0d
 		}
 		{
@@ -317,11 +257,11 @@
 				item: "tfcchannelcasting:mold_table"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["0C9B7745D812555A"]
+			dependencies: ["32046292AA5B0E30"]
 			dependency_requirement: "one_completed"
 			id: "09D913288896A67A"
 			tasks: [
@@ -341,7 +281,7 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
+			x: -4.5d
 			y: -3.0d
 		}
 		{
@@ -352,19 +292,20 @@
 				item: "greate:steel_millstone"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["5E4FC017E09ACF44"]
+			dependencies: ["5917B0D4708BF534"]
 			id: "4F3D0D746D26B59F"
+			optional: true
 			tasks: [{
 				id: "7EDCBC04DAEA477C"
 				item: "greate:steel_crushing_wheel"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -1.0d
+			x: -19.5d
+			y: 18.0d
 		}
 		{
 			dependencies: [
@@ -377,7 +318,7 @@
 				id: "76B30A22ADD537D6"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -6.5d
 			y: -1.0d
 		}
 		{
@@ -436,7 +377,7 @@
 					type: "item"
 				}
 			]
-			x: -13.0d
+			x: -7.0d
 			y: 14.0d
 		}
 		{
@@ -510,6 +451,7 @@
 		{
 			dependencies: ["033E74BC588E7EAD"]
 			id: "5917B0D4708BF534"
+			optional: true
 			tasks: [{
 				id: "084E6F06E79A3B0F"
 				item: "create:mechanical_crafter"
@@ -573,7 +515,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: -16.5d
+			x: -14.5d
 			y: -3.0d
 		}
 		{
@@ -654,7 +596,7 @@
 				""
 				"Last but not least, it makes &aPlates&r at a better ratio: &6three Ingots for two Plates&r. A worthwhile investment!"
 				""
-				"On top of all that, the Forge Hammer lets you work in-between ingots such as Raw Blooms into Wrought Iron, or Pig Iron into Steel! keep in mind that this takes a while tho."
+				"On top of all that, the Forge Hammer lets you (slowly) work in-between ingots such as Raw Blooms into Wrought Iron, or Pig Iron into Steel!"
 			]
 			id: "59F7F7A8C76DE31C"
 			shape: "square"
@@ -667,7 +609,7 @@
 			}]
 			title: "Steam Forge Hammer"
 			x: -22.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -726,22 +668,11 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["4CD3F04793CE47A2"]
-			id: "0EC73D1964E67E99"
-			shape: "diamond"
-			tasks: [{
-				id: "233A5026EDB2C861"
-				item: "minecraft:paper"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 9.5d
-		}
-		{
 			dependencies: [
 				"6FFD4990FF07078A"
-				"0EC73D1964E67E99"
+				"16CF5A9012EF4B27"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Resistors are components that will be used to make your first Circuit."
 				""
@@ -802,12 +733,13 @@
 				"5917B0D4708BF534"
 			]
 			id: "19A1D52A7F550478"
+			optional: true
 			tasks: [{
 				id: "69668479444FF064"
 				item: "vintageimprovements:centrifuge"
 				type: "item"
 			}]
-			x: -16.5d
+			x: -18.0d
 			y: 17.0d
 		}
 		{
@@ -922,7 +854,7 @@
 			]
 			title: "Steam Oven"
 			x: -16.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -933,7 +865,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1912758422EEB006"]
@@ -973,21 +905,38 @@
 		{
 			dependencies: [
 				"183D47F04CAEBFA7"
-				"648BCF486E16CCB2"
+				"3D8174C64DDC268B"
+			]
+			description: [
+				"{quests.steam_age.alternator.desc}"
+				"{@pagebreak}"
+				""
+				"{image:tfg:textures/quests/alternator_multiblock.png width:100 height:100 align:center}"
 			]
 			id: "0E57FC7FBFF1CFEB"
 			optional: true
-			shape: "heart"
-			tasks: [{
-				id: "2A48D5B33BB7C9FE"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
+			shape: "square"
+			size: 1.5d
+			subtitle: "{quests.steam_age.alternator.subtitle}"
+			tasks: [
+				{
+					id: "2A48D5B33BB7C9FE"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "0115F13A8C4E6872"
+					item: "gtceu:lv_4a_energy_converter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.steam_age.alternator.title}"
 			x: -10.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["3D8174C64DDC268B"]
 			description: [
 				"TODO:"
 				"What next?"
@@ -1038,7 +987,7 @@
 				type: "item"
 			}]
 			title: "Fluid Pipes"
-			x: -3.5d
+			x: -2.5d
 			y: -5.0d
 		}
 		{
@@ -1065,7 +1014,7 @@
 				type: "item"
 			}]
 			title: "Armoured Tanks"
-			x: -1.5d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -1104,7 +1053,7 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["26F07C926959FACF"]
+			dependencies: ["6F1BC99BE641B671"]
 			id: "2F81902C6B1D4902"
 			tasks: [
 				{
@@ -1119,19 +1068,32 @@
 				}
 			]
 			title: "Engineer's tools"
-			x: -24.0d
+			x: -18.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["6AA07588374B59AB"]
+			dependencies: ["033E74BC588E7EAD"]
 			id: "02854A3E8A5D5043"
-			tasks: [{
-				id: "7D63DDE72E9AC188"
-				item: "create:track_station"
-				type: "item"
-			}]
-			x: -16.5d
-			y: 14.5d
+			optional: true
+			tasks: [
+				{
+					id: "7D63DDE72E9AC188"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "48F6ED366BE64A71"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "1BC698B7C0124CA0"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			x: -21.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6AA07588374B59AB"]
@@ -1143,6 +1105,292 @@
 			}]
 			x: -13.5d
 			y: 12.0d
+		}
+		{
+			description: ["{quests.metal_age.black_steel_goodies.desc}"]
+			id: "209958FE2EEA5D72"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.metal_age.black_steel_goodies.subtitle}"
+			tasks: [{
+				id: "066CDB0C97CF74EF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.black_steel_goodies.title}"
+			x: -19.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1059288C22CB56BB"]
+			dependency_requirement: "one_completed"
+			id: "6356072A435EFE81"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "4F3DE27E5A72D7BD"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:dirt)"
+						}
+					}
+					title: "Any #tfc:dirt"
+					type: "item"
+				}
+				{
+					id: "2A6A80CC908180C5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:grass)"
+						}
+					}
+					title: "Any #tfc:grass"
+					type: "item"
+				}
+				{
+					id: "6FC5642F6B0583CC"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:rock/gravel)"
+						}
+					}
+					title: "Any #tfc:rock/gravel"
+					type: "item"
+				}
+			]
+			x: -23.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1059288C22CB56BB"]
+			dependency_requirement: "one_completed"
+			id: "494E81202B0F36A7"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0E4FF871FD6313B1"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:paths)"
+						}
+					}
+					title: "Any #tfc:paths"
+					type: "item"
+				}
+				{
+					id: "6A622E2BBF4548CC"
+					item: "rnr:rock/gravel_road/granite"
+					type: "item"
+				}
+				{
+					id: "492FE2CBAE9834B4"
+					item: "rnr:rock/macadam_road/granite"
+					type: "item"
+				}
+			]
+			x: -24.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1059288C22CB56BB"]
+			dependency_requirement: "one_completed"
+			id: "52A82511A64B0A5B"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "17BE9908916FD48D"
+					item: "rnr:rock/sett_road/granite"
+					type: "item"
+				}
+				{
+					id: "276FE934DBA46B50"
+					item: "rnr:rock/cobbled_road/granite"
+					type: "item"
+				}
+				{
+					id: "3ED818D7E317850A"
+					item: "rnr:rock/flagstones/granite"
+					type: "item"
+				}
+				{
+					id: "781B70D87BB8051D"
+					item: "rnr:pink_sandstone_flagstones"
+					type: "item"
+				}
+			]
+			x: -23.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"69BDD31A69062B6C"
+				"43D0B4F2ACB9931B"
+				"6903C72A254A7B08"
+				"2C35D4E01AEC02AA"
+			]
+			description: ["{quests.low_voltage.lv_age_progression.desc}"]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "3D8174C64DDC268B"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.low_voltage.lv_age_progression.subtitle}"
+			tasks: [{
+				id: "59CF003A962651B0"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.lv_age_progression.title}"
+			x: -10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4CD3F04793CE47A2"]
+			disable_toast: true
+			id: "16CF5A9012EF4B27"
+			shape: "diamond"
+			tasks: [{
+				id: "1567AABEC83A6346"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			description: ["{quests.metal_age.bronze_goodies.desc}"]
+			disable_toast: true
+			id: "6F1BC99BE641B671"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.bronze_goodies.subtitle}"
+			tasks: [{
+				id: "5B891E7A5DB66813"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
+					}
+				}
+				title: "Any #tfc:bronze_anvils"
+				type: "item"
+			}]
+			title: "{quests.metal_age.bronze_goodies.title}"
+			x: -20.0d
+			y: -5.0d
+		}
+		{
+			description: ["{quests.metal_age.wrought_iron_goodies.desc}"]
+			id: "6E8CEE02CB5B678B"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.wrought_iron_goodies.subtitle}"
+			tasks: [{
+				id: "14980AA2D20804BA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/wrought_iron"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.wrought_iron_goodies.title}"
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			description: ["{quests.metal_age.steel_goodies.desc}"]
+			id: "32046292AA5B0E30"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.steel_goodies.subtitle}"
+			tasks: [{
+				id: "6D4629A2C1063653"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/steel"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.steel_goodies.title}"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["46FA9DD4755A5548"]
+			id: "6CF7DCC996BACBFA"
+			tasks: [{
+				id: "19146D7510558652"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			x: -22.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6CF7DCC996BACBFA"]
+			id: "0CC370A6FC56935B"
+			optional: true
+			shape: "heart"
+			tasks: [{
+				id: "1CD61C4F273665DE"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: -25.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3E175E20C91F168B"]
+			dependency_requirement: "one_completed"
+			id: "03CCE899894A3364"
+			optional: true
+			shape: "heart"
+			tasks: [
+				{
+					id: "2F56DA36512D2363"
+					item: "create:clipboard"
+					type: "item"
+				}
+				{
+					id: "6A41DD1F9FFD1781"
+					item: "create:crafting_blueprint"
+					type: "item"
+				}
+			]
+			x: -16.5d
+			y: 10.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

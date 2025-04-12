@@ -30,9 +30,6 @@ const registerTFCRecipes = (event) => {
 
 		event.recipes.tfc.quern(element.output, element.input)
 			.id(`tfg:quern/${element.name}`)
-
-		event.recipes.createMilling(element.output, element.input)
-			.id(`tfg:milling/${element.name}`)
 	})
 
 	//#endregion
@@ -46,13 +43,10 @@ const registerTFCRecipes = (event) => {
 			.itemOutputs(element.output)
 			.chancedOutput('tfc:straw', 7000, 500)
 			.duration(200)
-			.EUt(16)
+			.EUt(2)
 
 		event.recipes.tfc.quern(element.output, element.input)
 			.id(`tfg:quern/${element.name}`)
-
-		event.recipes.createMilling(element.output, element.input)
-			.id(`tfg:milling/${element.name}`)
 	})
 
 	//#endregion
@@ -64,10 +58,7 @@ const registerTFCRecipes = (event) => {
 			.itemInputs(element.input)
 			.itemOutputs(element.output)
 			.duration(200)
-			.EUt(16)
-
-		event.recipes.createMilling(element.output, element.input)
-			.id(`tfg:milling/${element.name}`)
+			.EUt(2)
 	})
 
 	//#endregion
@@ -186,8 +177,8 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:smelting/kaolinite_clay')
 
 	// Fire Brick
-	event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
-		.id('tfg:smelting/fireclay_brick')
+	//event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
+	//	.id('tfg:smelting/fireclay_brick')
 
 	// Выпаривание соли
 	event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)

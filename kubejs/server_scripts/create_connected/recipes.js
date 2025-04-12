@@ -63,7 +63,7 @@ const registerCreateConnectedRecipes = (event) => {
 
 	// Shear Pin
 	event.recipes.gtceu.cutter('tfg:create_connected/shear_pin')
-		.itemInputs('create:shaft')
+		.itemInputs('#tfg:shafts')
 		.itemOutputs('create_connected:shear_pin')
 		.duration(96)
 		.EUt(8)
