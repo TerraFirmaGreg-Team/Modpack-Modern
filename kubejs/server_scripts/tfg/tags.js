@@ -86,6 +86,58 @@ const registerTFGItemTags = (event) => {
 	{
 		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
 	})
+
+	// #region 0.7.19 -> 0.9 conversion
+
+	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:zinc_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:brass_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:vanadium_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:black_steel_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:red_steel_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:blue_steel_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:iron_double_ingot')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:black_steel_double_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:red_steel_double_ingot')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:blue_steel_double_ingot')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:zinc_nugget')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:brass_nugget')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:copper_nugget')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:vanadium_nugget')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:copper_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:brass_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:gold_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:iron_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:cobalt_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rose_gold_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:aluminium_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:invar_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:lead_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:nickel_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:osmium_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:palladium_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:platinum_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rhodium_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:silver_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:vanadium_plate')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:zinc_plate')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:vanadium_block')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:zinc_block')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:brass_block')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:gold_purified_ore')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:copper_purified_ore')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:zinc_purified_ore')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:silver_purified_ore')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:tin_purified_ore')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:lead_purified_ore')
+
+	//#endregion
 }
 
 const registerTFGBlockTags = (event) => {

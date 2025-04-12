@@ -195,4 +195,55 @@ const registerTFGItems = (event) => {
     event.create('tfg:titanium_hull_reinforcement')
         .translationKey('item.tfg.titanium_hull_reinforcement')
     //#endregion
+
+    // #region 0.7.19 -> 0.9 compat
+
+    event.create('gtceu:zinc_ingot')
+    event.create('gtceu:brass_ingot')
+    event.create('gtceu:vanadium_ingot')
+    event.create('gtceu:black_steel_ingot')
+    event.create('gtceu:red_steel_ingot')
+    event.create('gtceu:blue_steel_ingot')
+    event.create('gtceu:iron_double_ingot')
+
+    event.create('gtceu:black_steel_double_ingot')
+    event.create('gtceu:red_steel_double_ingot')
+    event.create('gtceu:blue_steel_double_ingot')
+
+    event.create('gtceu:zinc_nugget')
+    event.create('gtceu:brass_nugget')
+    event.create('gtceu:copper_nugget')
+    event.create('gtceu:vanadium_nugget')
+
+    event.create('gtceu:copper_plate')
+    event.create('gtceu:brass_plate')
+    event.create('gtceu:gold_plate')
+    event.create('gtceu:iron_plate')
+    event.create('gtceu:cobalt_plate')
+    event.create('gtceu:rose_gold_plate')
+    event.create('gtceu:aluminium_plate')
+    event.create('gtceu:invar_plate')
+    event.create('gtceu:lead_plate')
+    event.create('gtceu:nickel_plate')
+    event.create('gtceu:osmium_plate')
+    event.create('gtceu:palladium_plate')
+    event.create('gtceu:platinum_plate')
+    event.create('gtceu:rhodium_plate')
+    event.create('gtceu:silver_plate')
+    event.create('gtceu:vanadium_plate')
+    event.create('gtceu:zinc_plate')
+
+    event.create('gtceu:vanadium_block')
+    event.create('gtceu:zinc_block')
+    event.create('gtceu:brass_block')
+
+    event.create('gtceu:gold_purified_ore')
+    event.create('gtceu:copper_purified_ore')
+    event.create('gtceu:zinc_purified_ore')
+    event.create('gtceu:silver_purified_ore')
+    event.create('gtceu:tin_purified_ore')
+    event.create('gtceu:lead_purified_ore')
+
+
+    // #endregion
 }

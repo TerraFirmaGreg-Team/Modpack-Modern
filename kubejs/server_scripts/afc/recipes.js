@@ -68,8 +68,6 @@ const registerAFCRecipes = (event) => {
 
 	// #endregion
 
-	event.shapeless("afc:tree_tap", "treetap:tap")
-
 	event.recipes.tfc.anvil('afc:tree_tap', '#forge:ingots/copper', ["hit_last", "upset_second_last", "upset_third_last"])
 		.tier(1)
 		.bonus(false)
