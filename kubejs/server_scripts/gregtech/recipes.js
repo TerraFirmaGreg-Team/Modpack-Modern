@@ -1488,9 +1488,6 @@ const registerGTCEURecipes = (event) => {
 
 	// #endregion
 
-	event.recipes.firmalife.oven('tfg:latex_soaked_gloves', 120, 1200, 'gtceu:rubber_gloves')
-		.id('tfg:oven/rubber_gloves')
-
 	event.replaceInput({ id: 'gtceu:shaped/nightvision_goggles' }, 'gtceu:glass_lens', 'tfc:lens')
 	event.replaceInput({ id: 'gtceu:shaped/nightvision_goggles' }, 'gtceu:lv_sodium_battery', '#gtceu:batteries/lv')
 
