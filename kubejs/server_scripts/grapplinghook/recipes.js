@@ -294,28 +294,40 @@ function registerGrapplingHookRecipes(event)
     event.recipes.kubejs.shapeless(Item.of('grapplemod:grapplinghook').withName(Text.translate("tfg.grapplemod.repair")), ['grapplemod:grapplinghook', 'gtceu:wrought_iron_dust'])
         .modifyResult((craftingGrid, result) =>
     {
-        let fallbackItem = Item.of("minecraft:air");
-        let orig = grid.find(Ingredient.of('grapplemod:grapplinghook'));
-
-        let customization = new $GrappleCustomization();
-        customization.loadNBT(orig.nbt.getCompund("custom"));
-
-        result.nbt.put("custom", customization.writeNBT());
-
-        let damage = result.nbt.getInt("Damage");
-        let maxDamage = result.maxDamage;
-        let restoredDamage = maxDamage / 3;
-        result.nbt.setInt("Damage", Math.max(0, damage - restoredDamage));
-
-        if(orig.hasCustomHoverName())
+        try
         {
-            result.setHoverName(orig.hoverName);
+            let fallbackItem = Item.of("minecraft:air");
+            let orig = craftingGrid.find(Ingredient.of('grapplemod:grapplinghook'));
+            let damage = orig.nbt.getInt("Damage");
+    
+            if(damage <= 0)
+            {
+                return fallbackItem;
+            }
+            let maxDamage = result.maxDamage;
+            let restoredDamage = maxDamage / 3;
+            result.nbt.putInt("Damage", Math.max(0, damage - restoredDamage));
+            
+            let customization = new $GrappleCustomization();
+            customization.loadNBT(orig.nbt.getCompound("custom"));
+            
+            result.nbt.put("custom", customization.writeNBT());
+            
+    
+            if(orig.hasCustomHoverName())
+            {
+                result.setHoverName(orig.hoverName);
+            }
+            else
+            {
+                result.resetHoverName();
+            }
+            return result;
         }
-        else
+        catch (exception)
         {
-            result.resetHoverName();
+            console.log(exception);
         }
-        return result;
     }).id('tfg:grapplemod/shapeless/repair');
 
     //Upgrade: Max Length

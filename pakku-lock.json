@@ -12271,45 +12271,18 @@
             ]
         },
         {
-            "pakku_id": "jo3K9IPap32RKmxd",
+            "pakku_id": "oaoeEdbSj5ORArf6",
             "type": "MOD",
-            "side": "BOTH",
             "slug": {
-                "curseforge": "water-flasks",
-                "modrinth": "water-flasks"
+                "curseforge": "water-flasks"
             },
             "name": {
-                "curseforge": "TFC Water Flasks",
-                "modrinth": "Water Flasks"
+                "curseforge": "TFC Water Flasks"
             },
             "id": {
-                "curseforge": "354353",
-                "modrinth": "ONgsGaM9"
+                "curseforge": "354353"
             },
             "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "waterflasks-3.0.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ONgsGaM9/versions/i7FOulRq/waterflasks-3.0.6.jar",
-                    "id": "i7FOulRq",
-                    "parent_id": "ONgsGaM9",
-                    "hashes": {
-                        "sha512": "d0e1b1646d374741c9abdf7de41c615b85e8c7d18fbb37bed46c6ddf5802ca2d52a96c999b54ac82eac77e40571b23a3dce1985973b8bfb858981fe13ef6bb3d",
-                        "sha1": "bcb5863e29d5faedcffde83f6d5ca02486b264a4"
-                    },
-                    "required_dependencies": [
-                        "JaCEZUhg"
-                    ],
-                    "size": 933206,
-                    "date_published": "2025-01-19T23:31:12.024095Z"
-                },
                 {
                     "type": "curseforge",
                     "file_name": "waterflasks-3.0.7.jar",
