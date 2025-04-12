@@ -543,6 +543,7 @@ function registerVintageImprovementsRecipes(event) {
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'tfc:glue' }],
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
 		processingTime: 100
 	}).id('tfg:vi/vacuumizing/glue')
 
