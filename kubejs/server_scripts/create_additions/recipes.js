@@ -78,7 +78,7 @@ const registerCreateAdditionsRecipes = (event) => {
 		B: 'create:rotation_speed_controller',
 		C: 'gtceu:tin_single_cable',
 		D: 'gtceu:lv_electric_motor',
-	}).id('tfg:electric_motor_mv')
+	}).id('tfg:createadditions/shaped/electric_motor')
 
 	event.shaped('createaddition:alternator', [
 		'ACA',
@@ -91,5 +91,5 @@ const registerCreateAdditionsRecipes = (event) => {
 		D: 'gtceu:lv_machine_hull',
 		E: 'gtceu:tin_single_cable',
 		F: 'greate:steel_shaft'
-	}).id('tfg:alternator_mv')
+	}).id('tfg:createadditions/shaped/alternator')
 }
