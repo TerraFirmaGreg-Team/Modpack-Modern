@@ -179,6 +179,7 @@ ServerEvents.recipes(event => {
     registerFirmaLifeRecipes(event)
     registerFramedBlocksRecipes(event)
     registerFTBQuestsRecipes(event)
+    registerGrapplingHookRecipes(event);
     registerGreateRecipes(event)
     registerGTCEURecipes(event)
     registerHandGliderRecipes(event)

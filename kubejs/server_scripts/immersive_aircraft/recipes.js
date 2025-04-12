@@ -95,6 +95,7 @@ function registerImmersiveAircraftRecipes(event) {
 	}
 	//#endregion
 
+	event.remove({mod: 'man_of_many_planes'});
 	event.remove({mod: 'immersive_aircraft'});
 	
 	event.shaped('immersive_aircraft:hull',[

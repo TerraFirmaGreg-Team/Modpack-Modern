@@ -46,5 +46,19 @@
   "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_yellow_block": "Dyeing",
   "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_orange_block": "Dyeing",
   "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_red_block": "Dyeing",
-  "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_brown_block": "Dyeing"
+  "tfc.recipe.barrel.simplylight.barrel.dyeing.illuminant_brown_block": "Dyeing",
+
+  "tfg.grapplemod.upgrades.maxlen": "Increases Max Length by 20, up to 200.",
+  "tfg.grapplemod.downgrades.maxlen": "Decreases Max Length by 20, down to 20. (Jute Rope is Returned).",
+  "tfg.grapplemod.upgrades.motor.lv": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1\n§lMotorAcceleration$r set to 0.125",
+  "tfg.grapplemod.upgrades.motor.mv": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1.14\n§lMotorAcceleration$r set to 0.25",
+  "tfg.grapplemod.upgrades.motor.hv": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1.28\n§lMotorAcceleration$r set to 0.375",
+  "tfg.grapplemod.upgrades.motor.ev": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1.42\n§lMotorAcceleration$r set to 0.5",
+  "tfg.grapplemod.upgrades.motor.iv": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1.56\n§lMotorAcceleration$r set to 0.625",
+  "tfg.grapplemod.upgrades.motor.luv": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1.7\n§lMotorAcceleration$r set to 0.75",
+  "tfg.grapplemod.upgrades.motor.zpm": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 1.84\n§lMotorAcceleration$r set to 0.875",
+  "tfg.grapplemod.upgrades.motor.uv": "Enables the Motor Upgrade, automatically reeling you in.\n§lMotorMaxSpeed§r set to 2\n§lMotorAcceleration$r set to 1",
+  "tfg.grapplemod.downgrades.motor": "Disables the Motor Upgrade, returning the original motor.\nOnly works if you use the same type of motor as before.",
+  "tfg.grapplemod.upgrades.smart_motor": "Enables the Smart Motor Upgrade, requires a Motor to be installed.",
+  "tfg.grapplemod.downgrades.smart_motor": "Disables the Smart Motor Upgrade, can be removed with the Motor already uninstalled. Returns the Basic Electronic Circuit"
 }
