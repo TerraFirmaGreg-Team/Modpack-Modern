@@ -83,41 +83,47 @@ function registerGreateRecipes(event) {
 
 	// #region Millstones
 
-	event.shaped('greate:andesite_alloy_millstone', [
-		' B ',
-		'DCE',
-		' A '
-	], {
-		A: 'tfc:quern',
-		B: 'tfc:handstone',
-		C: '#forge:gears/bronze',
-		D: '#forge:tools/hammers',
-		E: '#tfc:chisels'
-	}).id('greate:shaped/andesite_alloy_millstone')
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('greate:andesite_alloy_millstone', [
+			' B ',
+			'DCE',
+			' A '
+		], {
+			A: 'tfc:quern',
+			B: 'tfc:handstone',
+			C: '#forge:gears/bronze',
+			D: '#forge:tools/hammers',
+			E: '#tfc:chisels'
+		})
+	).id('greate:shaped/andesite_alloy_millstone')
 
-	event.shaped('greate:andesite_alloy_millstone', [
-		' B ',
-		'DCE',
-		' A '
-	], {
-		A: 'tfc:quern',
-		B: 'tfc:handstone',
-		C: '#forge:gears/bismuth_bronze',
-		D: '#forge:tools/hammers',
-		E: '#tfc:chisels'
-	}).id('greate:shaped/andesite_alloy_millstone2')
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('greate:andesite_alloy_millstone', [
+			' B ',
+			'DCE',
+			' A '
+		], {
+			A: 'tfc:quern',
+			B: 'tfc:handstone',
+			C: '#forge:gears/bismuth_bronze',
+			D: '#forge:tools/hammers',
+			E: '#tfc:chisels'
+		})
+	).id('greate:shaped/andesite_alloy_millstone2')
 
-	event.shaped('greate:andesite_alloy_millstone', [
-		' B ',
-		'DCE',
-		' A '
-	], {
-		A: 'tfc:quern',
-		B: 'tfc:handstone',
-		C: '#forge:gears/black_bronze',
-		D: '#forge:tools/hammers',
-		E: '#tfc:chisels'
-	}).id('greate:shaped/andesite_alloy_millstone3')
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('greate:andesite_alloy_millstone', [
+			' B ',
+			'DCE',
+			' A '
+		], {
+			A: 'tfc:quern',
+			B: 'tfc:handstone',
+			C: '#forge:gears/black_bronze',
+			D: '#forge:tools/hammers',
+			E: '#tfc:chisels'
+		})
+	).id('greate:shaped/andesite_alloy_millstone3')
 
 	event.shaped('greate:steel_millstone', [
 		'FBF',

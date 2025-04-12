@@ -103,7 +103,9 @@ const registerMinecraftRecipes = (event) => {
 		}
 
 		// Обрезанный блок
-		event.shapeless('4x ' + element.cutted, [element.block, '#tfc:chisels']).id(`tfg:shapeless/cutted_${element.name}`)
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless('4x ' + element.cutted, [element.block, '#tfc:chisels'])
+		).id(`tfg:shapeless/cutted_${element.name}`)
 	}
 
 	//#endregion
@@ -847,14 +849,17 @@ const registerMinecraftRecipes = (event) => {
 
 	// #region Calcite
 
-	event.shapeless('1x minecraft:calcite', ['#forge:poor_raw_materials/calcite', '#tfc:chisels'])
-		.id('tfg:shapeless/calcite_from_poor_raw')
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('1x minecraft:calcite', ['#forge:poor_raw_materials/calcite', '#tfc:chisels'])
+	).id('tfg:shapeless/calcite_from_poor_raw')
 
-	event.shapeless('2x minecraft:calcite', ['#forge:raw_materials/calcite', '#tfc:chisels'])
-		.id('tfg:shapeless/calcite_from_raw')
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('2x minecraft:calcite', ['#forge:raw_materials/calcite', '#tfc:chisels'])
+	).id('tfg:shapeless/calcite_from_raw')
 
-	event.shapeless('4x minecraft:calcite', ['#forge:rich_raw_materials/calcite', '#tfc:chisels'])
-		.id('tfg:shapeless/calcite_from_rich_raw')
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x minecraft:calcite', ['#forge:rich_raw_materials/calcite', '#tfc:chisels'])
+	).id('tfg:shapeless/calcite_from_rich_raw')
 
 	// #endregion
 }
