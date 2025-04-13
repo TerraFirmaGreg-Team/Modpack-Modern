@@ -113,7 +113,8 @@ If you did not clone the repository in Step 1, follow these steps:
   ```
   This command creates a minecraft folder inside TerraFirmaGreg-Modern and downloads the repository files there.
 
-> [!TIP] > This approach allows you to work with the main version of the repository for local testing and development.
+> [!TIP] 
+> This approach allows you to work with the main version of the repository for local testing and development.
 
 #### Step 5: Synchronizing Dependencies via Pakku
 1. Open **terminal** or **cmd** in the root directory of the `TerraFirmaGreg-Modern/minecraft` folder.
@@ -207,7 +208,7 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Fill in the title and description of the Pull Request, mention which problems this PR solves, and if possible, provide links to corresponding Issues.
   - Send the request by clicking Create Pull Request.
 
-> [!TIP]
+> [!TIP]  
 > If you have questions about formatting a Pull Request or are unsure with which branch to merge, refer to the project documentation or contact the team via [Discord].
 
 #### Step 7: Processing and Merging Pull Request
