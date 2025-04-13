@@ -380,6 +380,7 @@
 				"718CDC407CDE32E1"
 				"1562419608EB333D"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.water_jug.desc}"]
 			id: "7D828280098F6BEE"
 			subtitle: "{quests.stone_age.water_jug.subtitle}"
@@ -1687,11 +1688,22 @@
 			id: "1562419608EB333D"
 			size: 1.5d
 			subtitle: "{quests.stone_age.hydration.subtitle}"
-			tasks: [{
-				id: "01CB74D1BA1BC018"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "01CB74D1BA1BC018"
+					optional_task: true
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+				{
+					dimension: "minecraft:overworld"
+					icon: "gtceu:overworld_marker"
+					id: "338ADFE16BF9856B"
+					optional_task: true
+					title: "{quests.stone_age.temperature.task}"
+					type: "dimension"
+				}
+			]
 			title: "{quests.stone_age.hydration.title}"
 			x: 4.5d
 			y: 6.0d
@@ -1812,7 +1824,6 @@
 				}
 				match_nbt: false
 				only_from_crafting: false
-				optional_task: true
 				title: "{quests.stone_age.garlic_bread.task}"
 				type: "item"
 				weak_nbt_match: true

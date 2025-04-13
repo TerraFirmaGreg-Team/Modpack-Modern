@@ -2298,49 +2298,18 @@
 			description: ["{quests.tfg_tips.glassblowing_tools.desc}"]
 			id: "2D959136A5FC5F46"
 			subtitle: "{quests.tfg_tips.glassblowing_tools.subtitle}"
-			tasks: [
-				{
-					id: "5892192552832DEA"
-					item: "tfc:paddle"
-					type: "item"
-				}
-				{
-					id: "1F8678327A8FADC3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:gem_saw"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "5892192552832DEA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glassworking_tools)"
 					}
-					type: "item"
 				}
-				{
-					id: "494608A0E498901F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:jacks"
-					}
-					type: "item"
-				}
-				{
-					id: "44C4CBA164BE8812"
-					item: "tfc:wool_cloth"
-					type: "item"
-				}
-			]
+				title: "Any #tfc:glassworking_tools"
+				type: "item"
+			}]
 			title: "{quests.tfg_tips.glassblowing_tools.title}"
 			x: -3.0d
 			y: 9.5d

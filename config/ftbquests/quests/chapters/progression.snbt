@@ -322,6 +322,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:bronze_machine_casing"
 			id: "4252B1AF36FFB4F6"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "Hand crafted and artisanal"
 			title: "Craftable in &6Steam Age&r and &7LV&r"
@@ -344,6 +345,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:mv_machine_hull"
 			id: "5E4FBB2287D9E635"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "Integrated Dynamics"
 			title: "Craftable in &bMV&r"
@@ -367,6 +369,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:hv_machine_hull"
 			id: "1D717E742E50A6BD"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "Micro Miners"
 			title: "Craftable in &bMV&r and &6HV&r"
@@ -393,6 +396,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:ev_machine_hull"
 			id: "29C2A82490261F1C"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "Nano Age"
 			title: "Craftable in &5EV&r"
@@ -414,6 +418,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_hull"
 			id: "66A23AC2EE9BC4AE"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "GregTech gets Quantum"
 			title: "Craftable in &1IV&r"
@@ -435,6 +440,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_hull"
 			id: "6906121936A688C0"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "Crystallisation"
 			title: "Craftable in &dLuV&r"
@@ -456,6 +462,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_hull"
 			id: "629E023752317A31"
+			progression_mode: "linear"
 			size: 0.85d
 			subtitle: "Soft and Wetware"
 			title: "Craftable in &cZPM&r"
@@ -468,6 +475,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:ulv_machine_hull"
 			id: "1C1976238A2FBEE0"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&8ULV&r Circuits"
 			x: -1.0d
@@ -490,6 +498,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:lv_machine_casing"
 			id: "7707E5B061A7FFF7"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&7LV&r Circuits"
 			x: -1.0d
@@ -509,6 +518,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:mv_machine_casing"
 			id: "45CA8DCA8226945A"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&bMV&r Circuits"
 			x: -1.0d
@@ -528,6 +538,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:hv_machine_casing"
 			id: "54CF2016ED44CC45"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&6HV&r Circuits"
 			x: -1.0d
@@ -547,6 +558,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:ev_machine_casing"
 			id: "2A9ECD745E15A5D8"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&5EV&r Circuits"
 			x: -1.0d
@@ -567,6 +579,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_casing"
 			id: "5B0AC445672E14B6"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&1IV&r Circuits"
 			x: -1.0d
@@ -591,6 +604,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_casing"
 			id: "140E91C53C30C096"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&dLuV&r Circuits"
 			x: -1.0d
@@ -606,6 +620,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_casing"
 			id: "2E00E10D4E92F64D"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&cZPM&r Circuits"
 			x: -1.0d
@@ -620,6 +635,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:uv_machine_casing"
 			id: "35EFFA6C85EFCA58"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&3UV&r Circuits"
 			x: -1.0d
@@ -635,6 +651,7 @@
 			hide_dependency_lines: true
 			icon: "gtceu:uhv_machine_casing"
 			id: "177ADFFD33DDA624"
+			progression_mode: "linear"
 			size: 0.85d
 			title: "&4UHV&r Circuits"
 			x: -1.0d

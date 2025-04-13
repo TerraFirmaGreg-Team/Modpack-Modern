@@ -185,11 +185,26 @@
 			shape: "rsquare"
 			size: 1.0d
 			subtitle: "Earlygame buffering"
-			tasks: [{
-				id: "6FE87ED832BF40D1"
-				item: "gtceu:steel_crate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "01E9DFA1051FAE69"
+					item: "gtceu:wood_crate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "140F61650CC7A155"
+					item: "gtceu:bronze_crate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "164E9B8980EBB840"
+					item: "gtceu:steel_crate"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "GregTech Storage"
 			x: -4.5d
 			y: -4.0d
@@ -877,8 +892,14 @@
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_oxygen.subtitle}"
 			tasks: [{
-				id: "4299C881ED57472D"
-				item: "gtceu:oxygen_bucket"
+				id: "6239439140B6B39B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:oxygen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:oxygen\"}})item(gtceu:oxygen_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_oxygen.title}"
@@ -893,8 +914,14 @@
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_glue.subtitle}"
 			tasks: [{
-				id: "204FF37CA2846468"
-				item: "gtceu:glue_bucket"
+				id: "062DC32EE976C58B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:glue\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:glue\"}})item(gtceu:glue_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_glue.title}"
@@ -1207,8 +1234,14 @@
 			shape: "rsquare"
 			subtitle: "{quests.low_voltage.lv_nitrogen.subtitle}"
 			tasks: [{
-				id: "416409C6A68F8DCA"
-				item: "gtceu:nitrogen_bucket"
+				id: "332632EB70DC54EB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:nitrogen\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:nitrogen\"}})item(gtceu:nitrogen_bucket))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_nitrogen.title}"
