@@ -486,6 +486,6 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 [Visual Studio Code]: https://code.visualstudio.com
 [Git]: https://git-scm.com
 [GitHub Desktop]: https://desktop.github.com/download
-[Pakku]: https://github.com/juraj-hrivnak/Pakku
+[Pakku]: https://juraj-hrivnak.github.io/Pakku/home.html
 [ProbeJs]: https://marketplace.visualstudio.com/items/?itemName=Prunoideae.probejs
 [Discord]: https://discord.gg/AEaCzCTUwQ
