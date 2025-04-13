@@ -207,7 +207,7 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Fill in the title and description of the Pull Request, mention which problems this PR solves, and if possible, provide links to corresponding Issues.
   - Send the request by clicking Create Pull Request.
 
-> **[!TIP]**
+> [!TIP]
 > If you have questions about formatting a Pull Request or are unsure with which branch to merge, refer to the project documentation or contact the team via [Discord].
 
 #### Step 7: Processing and Merging Pull Request
@@ -336,7 +336,8 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   ```
   Эта команда создаст папку minecraft внутри TerraFirmaGreg-Modern и скачает туда файлы из репозитория.
 
-> [!TIP] > Такой подход позволяет работать с основной версией репозитория для тестирования и разработки локально.
+> [!TIP] 
+> Такой подход позволяет работать с основной версией репозитория для тестирования и разработки локально.
 
 #### Шаг 5: Синхронизация зависимостей через Pakku
 1. Откройте **terminal** или **cmd** в корневой директории папки **`TerraFirmaGreg-Modern/minecraft`**.
@@ -430,7 +431,7 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Заполните заголовок и описание Pull Request, упомяните, какие проблемы решает данный PR, и, если возможно, укажите ссылки на соответствующие Issues.
   - Отправьте запрос, нажав Create Pull Request.
 
-> **[!TIP]**
+> [!TIP]
 > Если у вас возникнут вопросы по оформлению Pull Request или вы не уверены, с какой веткой проводить слияние, обратитесь к документации проекта или свяжитесь с командой через [Discord].
 
 #### Шаг 7: Обработка и вливание Pull Request
