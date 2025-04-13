@@ -246,7 +246,7 @@
 	"quests.steam_age.rolling_mill.title": "Rolling Mill",
 	"quests.steam_age.rolling_mill.subtitle": "ULV Bender",
 	"quests.steam_age.rolling_mill.desc.1": "Of all the ULV machines you could make, the &3Rolling Mill&r is one of the best, for the simple reason that it makes single plates out of single ingots. It can also make thin sheets cheaper than by hand, as a bonus!",
-	"quests.steam_age.rolling_mill.desc.2": "&l&3Lore:&o&r This machine existed in older versions of TFG, but it made rods instead of plates, and your best plate-making option before the LV bender had a 20% chance of failure!",
+	"quests.steam_age.rolling_mill.desc.2": "&l&3Lore:&r&o This machine existed in older versions of TFG, but it made rods instead of plates, and your best plate-making option before the LV bender had a 20% chance of failure!",
 
 	"quests.steam_age.steel_mixer.title": "Steel Mechanical Mixer",
 	"quests.steam_age.steel_mixer.subtitle": "ULV Mixer",
@@ -277,5 +277,5 @@
 	"quests.steam_age.alternator.title": "Alternators",
 	"quests.steam_age.alternator.subtitle": "Turning stress into power",
 	"quests.steam_age.alternator.desc.1": "If you've got a big steam age set up, you probably don't want to immediately scrap it all just to go back to some boilers and LV Steam Turbines. Instead, the &3Alternator&r will convert the SU from your steam engines into electricity. Each steam engine + alternator should give you 1A of LV! Unfortunately, alternators convert stress into a different electricity system than the one GregTech uses, so you'll need an Energy Converter to turn it into usable LV energy.",
-	"quests.steam_age.alternator.desc.2": "An example of a steam engine producing 8 amps of LV!"
+	"quests.steam_age.alternator.desc.2": "An example of a steam engine producing 8 amps of LV!\n"
 }
