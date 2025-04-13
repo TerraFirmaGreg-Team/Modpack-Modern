@@ -124,9 +124,9 @@ function registerGreateRecyclingRecipes(event) {
 		.itemInputs('greate:steel_crushing_wheel')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 18),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.CobaltBrass, 8),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.TinAlloy, 8),
 			ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Steel, 1))
-		.duration(GTMaterials.CobaltBrass.getMass() * 26)
+		.duration(GTMaterials.TinAlloy.getMass() * 26)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -134,9 +134,9 @@ function registerGreateRecyclingRecipes(event) {
 		.itemInputs('greate:steel_crushing_wheel')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 18),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.CobaltBrass, 8),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.TinAlloy, 8),
 			ChemicalHelper.get(TagPrefix.nugget, GTMaterials.Steel, 1))
-		.duration(GTMaterials.CobaltBrass.getMass() * 26)
+		.duration(GTMaterials.TinAlloy.getMass() * 26)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 

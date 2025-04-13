@@ -149,7 +149,7 @@ function registerGreateRecipes(event) {
 		'AABAA',
 		' AAA '
 	], {
-		A: '#forge:plates/cobalt_brass',
+		A: '#forge:plates/tin_alloy',
 		B: '#forge:storage_blocks/wrought_iron',
 		C: 'greate:steel_shaft',
 	}).id('greate:mechanical_crafting/steel_crushing_wheel')
