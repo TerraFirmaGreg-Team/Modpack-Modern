@@ -1510,6 +1510,14 @@ const registerGTCEURecipes = (event) => {
 	
 	//#endregion
 
+	event.shaped('4x minecraft:ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/wooden'
+	}).id('gtceu:shaped/ladder')
+
 	
 	// TODO: Greate again...
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
