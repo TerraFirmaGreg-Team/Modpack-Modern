@@ -206,17 +206,17 @@ function registerGreateRecyclingRecipes(event) {
 
 	event.recipes.gtceu.macerator('greate:steel_encased_fan')
 		.itemInputs('greate:steel_encased_fan')
-		.itemOutputs(
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 8),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 4))
-		.duration(GTMaterials.Steel.getMass() * 12)
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 5),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.WroughtIron, 2))
+		.duration(GTMaterials.Steel.getMass() * 7)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.arc_furnace('greate:steel_encased_fan')
 		.itemInputs('greate:steel_encased_fan')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 12))
-		.duration(GTMaterials.Steel.getMass() * 12)
+		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 5),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.WroughtIron, 2))
+		.duration(GTMaterials.Steel.getMass() * 7)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 

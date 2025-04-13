@@ -1517,7 +1517,7 @@ const registerGTCEURecipes = (event) => {
 
 	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coal')
 	.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
-	.itemOutputs('#tfc:steam_bloomery_basic_fuels')
+	.itemOutputs('tfc:raw_iron_bloom')
 	.duration(2400)
 	.EUt(GTValues.VEX[GTValues.ULV])
 

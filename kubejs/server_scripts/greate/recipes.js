@@ -194,16 +194,14 @@ function registerGreateRecipes(event) {
 
 	// #region Encased Fan
 
-	// TODO: set up ore washing recipes
-
 	event.shaped('greate:steel_encased_fan', [
 		' A ',
 		'BCB',
 		'DEF'
 	], {
 		A: 'greate:steel_shaft',
-		B: '#gtceu:circuits/ulv',
-		C: 'gtceu:ulv_machine_hull',
+		B: '#forge:small_gears/wrought_iron',
+		C: 'create:andesite_casing',
 		D: '#forge:tools/wrenches',
 		E: 'gtceu:steel_rotor',
 		F: '#forge:tools/hammers'

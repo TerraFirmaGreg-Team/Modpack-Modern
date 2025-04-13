@@ -21,6 +21,7 @@ Key:
 - Figure out how to link ftb quests to the field guide entries
 - Something about milk curdling having circuit number conflicts?
 - Akistor carts mixin is commented out, for the plows
+- Put gleamflowers low down in the overworld? Maybe sprinkle some mushrooms around too?
 
 ## Nice-to-haves
 - ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank

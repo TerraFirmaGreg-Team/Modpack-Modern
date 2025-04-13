@@ -2267,6 +2267,7 @@
 		{
 			dependencies: ["4C444814F1C7B600"]
 			description: ["{quests.stone_age.portable_storage.desc}"]
+			icon: "sophisticatedbackpacks:backpack"
 			id: "59B30B2C92285D2D"
 			subtitle: "{quests.stone_age.portable_storage.subtitle}"
 			tasks: [{

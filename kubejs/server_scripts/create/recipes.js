@@ -615,13 +615,13 @@ const registerCreateRecipes = (event) => {
 
 	// Сейф
 	event.shaped('create:item_vault', [
-		'CBC',
-		'AAA',
-		'CDC'
+		' B ',
+		'CAC',
+		' D '
 	], {
 		A: '#forge:chests/wooden',
 		B: '#forge:sheets/wrought_iron',
-		C: '#forge:screws/steel',
+		C: '#forge:screws/wrought_iron',
 		D: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/item_vault')
 
@@ -823,7 +823,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: 'tfc:glue',
-		C: '#forge:nuggets/wrought_iron'
+		C: '#forge:rings/wrought_iron'
 	}).id('tfg:create/shaped/super_glue')
 
 	// Deployer
