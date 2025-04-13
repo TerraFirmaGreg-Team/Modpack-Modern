@@ -2573,7 +2573,11 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["4D11F11CE0E9F379"]
+			dependencies: [
+				"4D11F11CE0E9F379"
+				"150B7C5CD152E1BA"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.loom.desc}"]
 			id: "1766C916084261AA"
 			subtitle: "{quests.tfg_tips.loom.subtitle}"

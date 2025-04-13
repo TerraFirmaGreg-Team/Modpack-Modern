@@ -747,11 +747,28 @@
 		{
 			dependencies: ["52DAF93E2F3D688A"]
 			description: ["{quests.metal_age.red_blu.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfchotornot:tongs/red_steel"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "5792DDAA82895E67"
 			subtitle: "{quests.metal_age.red_blu.subtitle}"
 			tasks: [{
-				id: "2EDDDEF8286A0150"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "720D64916D1E3892"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.metal_age.red_blu.title}"
 			x: 24.0d
@@ -964,7 +981,8 @@
 			description: ["{quests.metal_age.black_steel_goodies.desc}"]
 			icon: "gtceu:hp_steam_solid_boiler"
 			id: "2C7368B3F573B284"
-			size: 1.5d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "{quests.metal_age.black_steel_goodies.subtitle}"
 			tasks: [{
 				id: "0CF65A33917DB2B4"
