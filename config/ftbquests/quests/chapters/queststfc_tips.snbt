@@ -3302,8 +3302,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -10.5d
-			y: 5.5d
+			x: -9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -4256,6 +4256,7 @@
 		{
 			dependencies: ["7A200766AAC1EE19"]
 			description: ["{quests.tfg_tips.grapple_repair.desc}"]
+			icon: "createdeco:decal_warning"
 			id: "1F93C858F1D02F7C"
 			subtitle: "{quests.tfg_tips.grapple_repair.subtitle}"
 			tasks: [{
@@ -4264,7 +4265,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.grapple_repair.title}"
-			x: -14.5d
+			x: -15.0d
 			y: 3.5d
 		}
 		{
@@ -4292,7 +4293,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.grapple_upgrade_length.title}"
-			x: -16.5d
+			x: -17.0d
 			y: 4.5d
 		}
 		{
@@ -4312,7 +4313,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_motor.title}"
-			x: -16.5d
+			x: -17.0d
 			y: 5.5d
 		}
 		{
@@ -4326,7 +4327,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.grapple_upgrades.title}"
-			x: -14.5d
+			x: -15.0d
 			y: 4.5d
 		}
 		{
@@ -4340,7 +4341,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_smart_motor.title}"
-			x: -17.5d
+			x: -18.0d
 			y: 5.5d
 		}
 		{
@@ -4354,7 +4355,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_sticky.title}"
-			x: -14.5d
+			x: -15.0d
 			y: 8.0d
 		}
 		{
@@ -4368,7 +4369,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_gravity_50.title}"
-			x: -12.5d
+			x: -13.0d
 			y: 5.5d
 		}
 		{
@@ -4382,7 +4383,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_gravity_0.title}"
-			x: -11.5d
+			x: -12.0d
 			y: 5.5d
 		}
 		{
@@ -4417,7 +4418,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.grapple_tweaks.title}"
-			x: -12.5d
+			x: -13.0d
 			y: 4.5d
 		}
 		{
@@ -4438,7 +4439,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_field.title}"
-			x: -16.0d
+			x: -16.5d
 			y: 6.5d
 		}
 		{
@@ -4459,7 +4460,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_magnet.title}"
-			x: -15.5d
+			x: -16.0d
 			y: 7.5d
 		}
 		{
@@ -4480,7 +4481,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_throw_speed.title}"
-			x: -13.5d
+			x: -14.0d
 			y: 7.5d
 		}
 		{
@@ -4502,7 +4503,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.grapple_double.title}"
-			x: -13.0d
+			x: -13.5d
 			y: 6.5d
 		}
 	]

@@ -536,7 +536,6 @@
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
-			dependency_requirement: "one_completed"
 			description: [
 				"{quests.stone_age.native_ores.desc.1}"
 				"{@pagebreak}"
@@ -546,176 +545,18 @@
 			id: "669F84C6A2A64145"
 			shape: "diamond"
 			subtitle: "{quests.stone_age.native_ores.subtitle}"
-			tasks: [
-				{
-					id: "0B70FD35D2C27E4C"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_native_copper"
+			tasks: [{
+				id: "0B70FD35D2C27E4C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:small_ore_pieces)"
 					}
-					type: "item"
 				}
-				{
-					id: "48F402273D359291"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_native_gold"
-					}
-					type: "item"
-				}
-				{
-					id: "08D50847C947A8CC"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_hematite"
-					}
-					type: "item"
-				}
-				{
-					id: "6E9752F9C187543B"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_native_silver"
-					}
-					type: "item"
-				}
-				{
-					id: "664BDB77086C8002"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_cassiterite"
-					}
-					type: "item"
-				}
-				{
-					id: "4442703F7DBE7A49"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_bismuthinite"
-					}
-					type: "item"
-				}
-				{
-					id: "2B135DFA6BB1D991"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_garnierite"
-					}
-					type: "item"
-				}
-				{
-					id: "2A03CF074CCB7C74"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_malachite"
-					}
-					type: "item"
-				}
-				{
-					id: "050DE948DC8776C0"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_magnetite"
-					}
-					type: "item"
-				}
-				{
-					id: "7C00A6383E5F46B1"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_limonite"
-					}
-					type: "item"
-				}
-				{
-					id: "3EA41557303DE208"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_sphalerite"
-					}
-					type: "item"
-				}
-				{
-					id: "567548ED258FD9EB"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ore/small_tetrahedrite"
-					}
-					type: "item"
-				}
-			]
+				title: "Any #tfc:small_ore_pieces"
+				type: "item"
+			}]
 			title: "{quests.stone_age.native_ores.title}"
 			x: 14.0d
 			y: 8.5d
@@ -861,7 +702,6 @@
 					type: "item"
 				}
 				{
-					count: 7L
 					id: "655B1B05EE4BABF7"
 					item: {
 						Count: 1
@@ -1460,6 +1300,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:propicks)"
 						}
 					}
+					optional_task: true
 					title: "{quests.tasktype.item.any} #tfc:propicks"
 					type: "item"
 				}
@@ -1498,6 +1339,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
 						}
 					}
+					optional_task: true
 					title: "{quests.tasktype.item.any} #minecraft:planks"
 					type: "item"
 				}

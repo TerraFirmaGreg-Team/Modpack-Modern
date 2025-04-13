@@ -1367,7 +1367,7 @@ const registerCreateRecipes = (event) => {
 			.itemInputs(`3x create:${x}`)
 			.itemOutputs(`8x create:${x}_pane`)
 			.duration(40)
-			.EUt(20)
+			.EUt(7)
 	})
 
 	const CREATE_OTHER_GLASS_WINDOWS =
@@ -1398,7 +1398,7 @@ const registerCreateRecipes = (event) => {
 			.itemInputs(`3x create:${x[0]}_window`)
 			.itemOutputs(`8x create:${x[0]}_window_pane`)
 			.duration(40)
-			.EUt(20)
+			.EUt(7)
 	})
 
 	//Allow automatic scraping by using sequenced assembly

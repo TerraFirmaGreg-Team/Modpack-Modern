@@ -12,7 +12,7 @@
 
 	"quests.steam_age.basic_millstone.title": "Automatic Ore Processing",
 	"quests.steam_age.basic_millstone.subtitle": "No more querning",
-	"quests.steam_age.basic_millstone.desc": "The &3Millstone&r is an automatic version of the Quern. You can throw whatever you'd like into the top, and then right-click to take your crushed items back out. It's pretty slow if you connect it directly to your Horse Crank, but you can use gear ratios to increase its speed.\n\nYou will only receive the output in the first slot. The other slots are part of a GregTech mechanic that won't be relevant until much later (HV).",
+	"quests.steam_age.basic_millstone.desc": "The &3Millstone&r is an automatic version of the Quern. You can throw whatever you'd like into the top, and then right-click to take your crushed items back out. It's pretty slow if you connect it directly to your Horse Crank, but you can use gear ratios to increase its speed.\n\nYou will only receive the output in the first slot. The other slots are part of a GregTech mechanic that won't be relevant until much later (&6HV&r).",
 
 	"quests.steam_age.horse_crank.title": "Your First Power Source",
 	"quests.steam_age.horse_crank.subtitle": "Make your livestock pay rent",
@@ -76,12 +76,12 @@
 
 	"quests.steam_age.steel_millstone.title": "Steel Millstone",
 	"quests.steam_age.steel_millstone.subtitle": "A worthwhile upgrade",
-	"quests.steam_age.steel_millstone.desc": "With a much higher kinetic capacity, the steel millstone is a worthwhile upgrade over your basic one, letting you spin it much faster for quicker crushing. A worthwhile upgrade for all the different new ores you'll be getting soon! Again though, it only outputs items in the first slot in JEI.",
+	"quests.steam_age.steel_millstone.desc": "With a much higher kinetic capacity, the steel millstone is a worthwhile upgrade over your basic one, letting you spin it much faster for quicker crushing. A good upgrade for all the different new ores you'll be getting soon!\n\nAgain though, it only outputs items in the first slot in JEI.",
 
 	"quests.steam_age.steel_pump.title": "Fluid Handling",
 	"quests.steam_age.steel_pump.subtitle": "Delicious pipe spaghetti",
 	"quests.steam_age.steel_pump.desc.1": "With the Steel Age, now you can automate fluids as well as items! The &3Mechanical Pump&r can pull fluids out of pretty much anything, including barrels, crucibles, and even source blocks. You can use it with either Create's or GregTech's fluid pipes, though each behaves a little differently.",
-	"quests.steam_age.steel_pump.desc.2": "Create's pipes have no internal fluid capacity, instead transporting fluids directly from source to destination. You can right-click them with a Copper Casing to \"lock\" any connections in place, and right-clicking them with a wrench will open a little window that prevents intersections, so you can run multiple pipes next to each other. Create's pipes also require a mechanical pump to use, and each pump only has a range of 16 blocks, but one pump can pull fluids from multiple sources at once.",
+	"quests.steam_age.steel_pump.desc.2": "Create's pipes have no internal fluid capacity, instead transporting fluids directly from source to destination. You can right-click them with a Copper Casing to \"lock\" any connections in place, and right-clicking them with a wrench will open a little window that prevents intersections, so you can run multiple pipes next to each other. Create's pipes also require a mechanical pump to use, and each pump only has a range of 16 blocks, but one pump can pull fluids from multiple sources at once.\nThey also have no temperature limit!",
 	"quests.steam_age.steel_pump.desc.3": "On the other hand, GregTech's pipes do have their own internal fluid capacity and don't require a pump once fluid is inside them. Like item pipes, their connections can also be fully controlled by sneak right-clicking them with an empty off-hand, and we recommend doing so on all your pipes otherwise the fluid sloshes around.\n\nAre your mechanical pumps and GregTech pipes not connecting? Flip the pump twice (right-click with a wrench) and that should get them working together.",
 
 	"quests.steam_age.mold_table.title": "Blast Furnace Automation",
@@ -96,19 +96,19 @@
 
 	"quests.steam_age.fluid_drums.title": "Efficient Fluid Storage",
 	"quests.steam_age.fluid_drums.subtitle": "I don't think a wooden barrel can hold molten steel",
-	"quests.steam_age.fluid_drums.desc.1": "&6TFG&r can quickly get &4overwhelming&r with the plethora of fluids it introduces, so you may be looking for a way to store them.\n\nIntroducing... &aDrums&r! They have large internal buffers, and any &aDrum&r can be broken and picked up and will &dkeep the fluid&r inside.&oA right-click with a Screwdriver allows a Drum to drain its content into another container placed below it.",
+	"quests.steam_age.fluid_drums.desc.1": "&6TFG&r can quickly get &4overwhelming&r with the plethora of fluids it introduces, so you may be looking for a way to store them.\n\nIntroducing... &aDrums&r! They have large internal buffers, and any &aDrum&r can be broken and picked up and will &dkeep the fluid&r inside. A right-click with a Screwdriver allows a Drum to drain its content into another container placed below it.",
 	"quests.steam_age.fluid_drums.desc.2": "&l&3Lore:&r&o These drums are actually ported from GregTech 6.",
 
 
 	"quests.steam_age.boilers.title": "Steam Boilers",
 	"quests.steam_age.boilers.subtitle": "Portable Steamroom",
-	"quests.steam_age.boilers.desc.1": "Steam machines need to be powered! You have three options to generate steam: the &3Solid&r boiler accepts solid fuels like coal and charcoal, the &3Liquid&r boiler accepts liquids like creosote and lava, and the &3Solar&r boiler requires no fuel but only works during the day. The choice is yours, but we recommend the liquid one if you're unsure.",
+	"quests.steam_age.boilers.desc.1": "Steam machines need to be powered! You have three options to generate steam: the &3Solid&r boiler accepts solid fuels like coal and charcoal, the &3Liquid&r boiler accepts liquids like creosote and lava, and the &3Solar&r boiler requires no fuel but only works during the day. The choice is yours, but we recommend the liquid one if you're unsure.\n\nSteam machines all have a vent which needs to stay unblocked in order for them to work properly.",
 	"quests.steam_age.boilers.desc.2": "&aWarning:&r Boilers will &bexplode&r if you attempt to put water into them while they are dry and hot. It's best to always have water being pumped into them, but you can always break and place the block to reset its temperature.",
 	"quests.steam_age.boilers.tasks": "Any High Pressure Steam Boiler",
 
 	"quests.steam_age.steam_bloomery.title": "Steam Bloomery",
-	"quests.steam_age.steam_bloomery.subtitle": "Automate everything!",
-	"quests.steam_age.steam_bloomery.desc": "You're always going to need a lot of Wrought Iron, so why not automate your Bloomery? The Steam Bloomery is a new multiblock that'll automate your old TFC bloomery, and do it faster too! Like with the Coke Oven, you can press the JEI 'Uses' key (defaults to \"U\") to show the multiblock preview tab. Click on individual blocks to see what's valid in each location.",
+	"quests.steam_age.steam_bloomery.subtitle": "The Bloomery's uncle",
+	"quests.steam_age.steam_bloomery.desc": "You're always going to need a lot of Wrought Iron, so why not automate your Bloomery? The next closest way to automate wrought iron is way off in LV. The Steam Bloomery is a new multiblock that'll automate your old TFC bloomery, and do it faster too! Like with the Coke Oven, you can press the JEI 'Uses' key (defaults to \"U\") to show the multiblock preview tab. Click on individual blocks to see what's valid in each location.",
 
 	"quests.steam_age.steam_furnace.title": "Steam Furnace",
 	"quests.steam_age.steam_furnace.subtitle": "The Steam Furnace furnaces...",
@@ -121,7 +121,7 @@
 
 	"quests.steam_age.steam_macerator.title": "Steam Macerator",
 	"quests.steam_age.steam_macerator.subtitle": "The Steam Macerator macerates...",
-	"quests.steam_age.steam_macerator.desc": "This machine does exactly the same thing as the Millstone, so if you already have one of those, there's not much point to building this. Still, one or the other is required for progression at this point. No, this machine doesn't output any of the extra JEI items either. You'll have to wait until HV for that.",
+	"quests.steam_age.steam_macerator.desc": "This machine does exactly the same thing as the Millstone, so if you already have one of those, there's not much point to building this. Still, one or the other is required for progression at this point. No, this machine doesn't output any of the extra output slots either. You'll have to wait until &6HV&r for that.",
 
 	"quests.steam_age.steam_grinder.title": "Steam Grinder",
 	"quests.steam_age.steam_grinder.subtitle": "The Steam Macerator's little sister",
@@ -137,7 +137,7 @@
 
 	"quests.steam_age.alloy_smelter.title": "Steam Alloy Smelter",
 	"quests.steam_age.alloy_smelter.subtitle": "The Alloy Smelter makes alloys...",
-	"quests.steam_age.alloy_smelter.desc": "The &bAlloy Smelter&r is used for, well, alloys. You'll want it for the efficient &6Bronze&r recipe, and for &4Red Alloy&r in the near future.\n\nOut of all the &6Steam Age&r machines, this is the most steam-hungry. If you ever find yourself running out of steam, give your machine a &alove-tap&r with &dany Soft Mallet&r to momentarily pause it.",
+	"quests.steam_age.alloy_smelter.desc": "The &bAlloy Smelter&r is used for, well, alloys. You'll want it for the efficient &6Bronze&r recipe, and for &4Red Alloy&r in the near future.\n\nIt can also weld High Carbon ingots together at a much more efficient rate!\n\nOut of all the &6Steam Age&r machines, this is the most steam-hungry. If you ever find yourself running out of steam, give your machine a &alove-tap&r with &dany Soft Mallet&r to momentarily pause it.",
 
 	"quests.steam_age.compressor.title": "Steam Compressor",
 	"quests.steam_age.compressor.subtitle": "The Steam Compressor compresses...",
@@ -161,67 +161,121 @@
 
 	"quests.steam_age.treated_planks.title": "Treated Planks",
 	"quests.steam_age.treated_planks.subtitle": "Also known as Treated Plywood",
-	"quests.steam_age.treated_planks.desc": "Hope you've been saving up your creosote, because making these pulped and compressed planks is another use for it.",
+	"quests.steam_age.treated_planks.desc": "Hope you've been saving up your creosote, because making these pulped and compressed planks is another use for it.\n\n&l&3Lore:&r&o In earlier versions of TerraFirmaGreg, this was the point when you could actually start Create!",
 
 	"quests.steam_age.electron_tube.title": "Electron Tube",
-	"quests.steam_age.electron_tube.subtitle": "",
-	"quests.steam_age.electron_tube.desc": "",
+	"quests.steam_age.electron_tube.subtitle": "Ultra Ultra Low Voltage...?",
+	"quests.steam_age.electron_tube.desc": "These may be initally very painful to craft, but you should use your first few on setting up a line of Deployers, to make crafting them significantly cheaper.\n\nBesides Deployers, these are also used for a wide variety of advanced Create machines!",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.rotation_speed_controller.title": "Rotation Speed Controller",
+	"quests.steam_age.rotation_speed_controller.subtitle": "No more manual gear ratios!",
+	"quests.steam_age.rotation_speed_controller.desc": "The &3Rotation Speed Controller&r can simplify all of your cogwheel spaghetti into a single block, letting you adjust RPM in a simple, compact way. These will be useful later when you have more machines to balance your stress units between!",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.mech_crafter.title": "Mechanical Crafter",
+	"quests.steam_age.mech_crafter.subtitle": "For those extra large crafting recipes",
+	"quests.steam_age.mech_crafter.desc": "Don't worry, these are entirely optional, but they are used for a couple one-time crafts that you may find very useful, outside of the two listed here.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.crushing_wheel.title": "Crushing Wheels",
+	"quests.steam_age.crushing_wheel.subtitle": "The Millstone's cousin's wife's boyfriend",
+	"quests.steam_age.crushing_wheel.desc": "These do exactly the same thing as the other crushing-related machines earlier in the chapter, but faster and in bulk. They're pretty equivalent to the Steam Grinder.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.centrifuge.title": "Mechanical Centrifuge",
+	"quests.steam_age.centrifuge.subtitle": "A World Revolving",
+	"quests.steam_age.centrifuge.desc": "Ore processing will always be an important part of this modpack, and this machine is another (optional) part of that. By following a different route of ore processing steps (check the Ore Processing Diagram tab in JEI), you can use this centrifuge to get some bonus byproducts out of your ores! The next upgrade to your ores won't be until the LV Thermal Centrifuge, so whether or not this is a worthwhile investment is up to you.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.steam_engine.title": "Steam Engine",
+	"quests.steam_age.steam_engine.subtitle": "Time for some real steam power",
+	"quests.steam_age.steam_engine.desc": "Water wheels and windmills not cutting it any more? It wouldn't be a steam age without a proper steam engine! Each steam engine can output a whole 512 SU, giving you much more power to play with.\n\nBlaze Burners can be crafted without leaving your house, and you can use a Mechanical Arm to automatically feed them solid fuel, or liquid fuel in a bucket. Coal Gems and Coke can also be used to superheat them.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.deployers.title": "Deployers",
+	"quests.steam_age.deployers.subtitle": "Primitive Assembly Line",
+	"quests.steam_age.deployers.desc": "While you could use a single deployer for the rest your time in this chapter, we &3really&r don't recommend it. Setting up a line of deployers along a belt will save heaps of time and sanity, and it's not like you'll be wasting materials either, because you can always reuse them to upgrade your tree farm later.\n\nThese will also make electron tubes significantly cheaper!",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.trains.title": "Trains",
+	"quests.steam_age.trains.subtitle": "Waypoints wishes it was as cool as these",
+	"quests.steam_age.trains.desc": "Trains are a fantastic option when it comes to any sort of long distance transportation, whether that's players, items, or fluids! They can also safely travel through unloaded chunks. There won't be any sort of player teleportation for a very long time, so if you'd like to set up a continent-spanning rail network, you don't have to worry about it getting outdated.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.wood_plank.title": "Wood Planks",
+	"quests.steam_age.wood_plank.subtitle": "Untreated Plywood...?",
+	"quests.steam_age.wood_plank.desc": "These are the same as the Treated Planks adjacent to this quest, except you can use any wood instead of having to dunk them in creosote first.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.organization.title": "Staying Organized",
+	"quests.steam_age.organization.subtitle": "You're already in the first circle of microcrafting hell",
+	"quests.steam_age.organization.desc": "Struggling to keep up with all the recipes and items you need? Here's a couple options which may help:\n\n&3Clipboard&r: This handy item is a portable to-do list, letting you check off items as you like.\n\n&3Crafting Blueprint&r: Keeps track of frequent recipes, letting you craft batches without having to find the recipe in JEI.\n\n&3JEI's Bookmarks&r: You can press the \"Add/Remove Bookmark\" key (default \"A\") when hovering over an item in JEI to bookmark it. You can also bookmark whole recipes by pressing this key on the output!",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.resin_boards.title": "Resin-Coated Boards",
+	"quests.steam_age.resin_boards.subtitle": "I guess you could say we're... bored of LaTeX?",
+	"quests.steam_age.resin_boards.desc": "Did you know you can automate latex production through mechanical pumps? Now you do!",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.circuit_boards.title": "Electronics #2: Circuit Boards",
+	"quests.steam_age.circuit_boards.subtitle": "The easier component for circuits",
+	"quests.steam_age.circuit_boards.desc": "Combine those Resin Circuit Boards with some Copper Wires and you've got the base for your first &aCircuit&r!",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.vacuum_chamber.title": "Vacuum Chamber",
+	"quests.steam_age.vacuum_chamber.subtitle": "Putting the Vacuum in Vacuum Tubes",
+	"quests.steam_age.vacuum_chamber.desc": "This machine is the final step in making your first Vacuum Tubes. Place it above a Basin and give it some power, and make sure the machine is set to Vacuumizing mode.\n\nAs a bonus, this machine can also weld ingots and plates for you, and liquefy glue and rubber, while being heated by either a Charcoal Forge or a Blaze Burner.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": "",
+	"quests.steam_age.vacuum_tubes.title": "Electronics #3: Vacuum Tubes",
+	"quests.steam_age.vacuum_tubes.subtitle": "The harder component for circuits",
+	"quests.steam_age.vacuum_tubes.desc": "Crafting Vacuum Tubes might make you question your existence. They're very expensive right now, but they'll get cheaper in a moment - that's the general GregTech philosophy!\n\nVacuum Tubes are also technically your first Ultra Low Voltage (&8ULV&r) Circuit! Congratulations! From here you can either jump right into crafting LV Circuits, or spend some more time in Steam Age, making some other machines out of the Vacuum Tubes you just crafted.",
 
-	"quests.steam_age..title": "",
-	"quests.steam_age..subtitle": "",
-	"quests.steam_age..desc": ""
+	"quests.steam_age.resistors.title": "Electronics #1: Resistors",
+	"quests.steam_age.resistors.subtitle": "The more... resistant... component for circuits",
+	"quests.steam_age.resistors.desc": "Resistors are components that will be used to make your first Circuit.\n\nIt wouldn't be unwise to prioritise the recipes that use &aFine Wires&r, as they'll save you more materials in the long run.\n\nWires may be expensive right now, but they'll get a lot cheaper if you make the &3Coiling Machine&r down below or the &3Wiremill&r in &7LV&r.",
 
+	"quests.steam_age.coiling_machine.title": "Coiling Machine",
+	"quests.steam_age.coiling_machine.subtitle": "ULV Wiremill",
+	"quests.steam_age.coiling_machine.desc": "The &3Coiling Machine&r is similar to a LV Wiremill, though it lacks the option to directly output different wire sizes. Still, this is a very worthwhile invesment to make your wires significantly cheaper.\n\nThis machine can also make cheaper springs, too!",
 
+	"quests.steam_age.curving_press.title": "Curving Press",
+	"quests.steam_age.curving_press.subtitle": "ULV Extruder",
+	"quests.steam_age.curving_press.desc": "The &3Curving Press&r can do all the same recipes as an LV Extruder. Unfortunately, neither can do very much, as the extruder is only useful once you get to MV. Still, if you find yourself wanting to craft a lot of tool heads in bulk, this machine can do it for you.",
+
+	"quests.steam_age.vibrating_table.title": "Vibrating Table",
+	"quests.steam_age.vibrating_table.subtitle": "ULV Sifter",
+	"quests.steam_age.vibrating_table.desc": "The &3Vibrating Table&r can process gem ores (including coal) in a different way, yielding much more output than anything else you have access to right now. As a bonus, it can also process any gravel ore deposits you may still have. No more sluicing!",
+
+	"quests.steam_age.lathe.title": "Lathe",
+	"quests.steam_age.lathe.subtitle": "ULV... Lathe",
+	"quests.steam_age.lathe.desc": "The &3Lathe&r can automatically turn a single ingot into two rods, and single bolts into screws. If you're making a lot of those, and you will be, this machine will be a good investment.",
+
+	"quests.steam_age.steel_saw.title": "Steel Mechanical Saw",
+	"quests.steam_age.steel_saw.subtitle": "ULV Cutter",
+	"quests.steam_age.steel_saw.desc": "It's an upgrade to your Basic Mechanical Saw that can also process some metal recipes, like turning rods into four bolts, and cutting blocks into plates. These recipes will all require a fluid to work, but you only have access to water at the moment.",
+
+	"quests.steam_age.rolling_mill.title": "Rolling Mill",
+	"quests.steam_age.rolling_mill.subtitle": "ULV Bender",
+	"quests.steam_age.rolling_mill.desc.1": "Of all the ULV machines you could make, the &3Rolling Mill&r is one of the best, for the simple reason that it makes single plates out of single ingots. It can also make thin sheets cheaper than by hand, as a bonus!",
+	"quests.steam_age.rolling_mill.desc.2": "&l&3Lore:&o&r This machine existed in older versions of TFG, but it made rods instead of plates, and your best plate-making option before the LV bender had a 20% chance of failure!",
+
+	"quests.steam_age.steel_mixer.title": "Steel Mechanical Mixer",
+	"quests.steam_age.steel_mixer.subtitle": "ULV Mixer",
+	"quests.steam_age.steel_mixer.desc": "The &3Steel Mechanical Mixer&r is the other best ULV machine you can make -- it can mix together your colored steel dusts at a much more efficient rate than the Crucible! It can do a large number of other recipes too, including some that involve gases... don't think about it too much.\n\nYou can use either a Charcoal Forge or a Blaze Burner for the recipes that require heating, and a Mechanical Arm can automatically refuel either.",
+
+	"quests.steam_age.potin.title": "Potin Seller...",
+	"quests.steam_age.potin.subtitle": "...I'm going into battle, and I need only your finest Potin.",
+	"quests.steam_age.potin.desc.1": "&dPotin Fluid Pipes&r have a &avery high throughput&r for the material tier and cost. You may want to look into making some of these to aid with fluid logistics.\n\nTo get &dPotin&r, you should start by crafting its &eDust&r form.\n\nThis quest calls for either the small or normal pipe. Get either size to complete it.",
+	"quests.steam_age.potin.desc.2": "&l&3Lore:&r&o &dPotin Fluid Pipes&r were originally created in &9GT++&r, and were a huge power spike for players in a little pack called &4GT:NH&r. We wanted to spread some of that joy.\n\nIn the real world, &dPotin&r is an alloy used in coins, not pipes. GTCEu just gets more unrealistic by the day...",
+
+	"quests.steam_age.miner.title": "Automatic Mining",
+	"quests.steam_age.miner.subtitle": "The end of the cave-in age",
+	"quests.steam_age.miner.desc.1": "You now have access to two options to automatically mine your ores! Both of these are very slow, though, so it's a good idea to set them up, chunkload them, then go do something else instead of sitting and waiting.\n\nThe Mechanical Drill will require a contraption to dig down, breaking all stone along the way. You can also attach it to the front of a train or minecart to dig tunnels if you'd like.",
+	"quests.steam_age.miner.desc.2": "The Steam Miner, on the other hand, only breaks ore blocks and replaces them with cobblestone, leaving the rest of the ground intact. It can mine ores in a (small) radius, meaning it has to be moved less often than the mechanical one, but it's also a lot slower.",
+
+	"quests.steam_age.paper.title": "Paper",
+	"quests.steam_age.paper.subtitle": "Not from sugarcane",
+	"quests.steam_age.paper.desc": "If you haven't made any yet, there's three different ways to get paper without electricity.\n\n1) Craft vellum out of a hide, pumice, and an egg.\n\n2) Weave together papyrus.\n\n3) Craft it out of hardwood through a lengthy process.\n\nYou can later turn wood pulp directly into paper with an LV Chemical Bath.",
+
+	"quests.steam_age.lv_circuit.title": "Your first circuit!",
+	"quests.steam_age.lv_circuit.subtitle": "The dawn of a new age",
+	"quests.steam_age.lv_circuit.desc": "The recipe for these may look intimidating at first, but if you've spent an appropriate amount of time in the Steam Age, everything should be easily automatable. You'll be making a lot of these for a while, but your next few electic machines will help make them even cheaper until you get your hands on a Circuit Assembler late into LV.",
+
+	"quests.steam_age.what_next.title": "What Next?",
+	"quests.steam_age.what_next.subtitle": "Y'know, besides \"more GregTech\"",
+	"quests.steam_age.what_next.desc": "If you rushed straight here, we suggest machines like the LV Bender, Wiremill, or Mixer first.\nOtherwise, if you made the ULV machines below, we suggest the Assembler, Arc Furnace, Chemical Reactor, or Polarizer.",
+
+	"quests.steam_age.alternator.title": "Alternators",
+	"quests.steam_age.alternator.subtitle": "Turning stress into power",
+	"quests.steam_age.alternator.desc.1": "If you've got a big steam age set up, you probably don't want to immediately scrap it all just to go back to some boilers and LV Steam Turbines. Instead, the &3Alternator&r will convert the SU from your steam engines into electricity. Each steam engine + alternator should give you 1A of LV! Unfortunately, alternators convert stress into a different electricity system than the one GregTech uses, so you'll need an Energy Converter to turn it into usable LV energy.",
+	"quests.steam_age.alternator.desc.2": "An example of a steam engine producing 8 amps of LV!"
 }

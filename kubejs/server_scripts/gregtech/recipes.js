@@ -104,33 +104,6 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Сырая резиновая пыль
-
-	// Из бревна капока
-	event.recipes.gtceu.extractor('raw_rubber_from_log')
-		.itemInputs('#tfg:latex_logs')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	// Из саженца капока
-	event.recipes.gtceu.extractor('raw_rubber_from_sapling')
-		.itemInputs('1x #tfg:rubber_saplings')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	// Из листвы капока
-	event.recipes.gtceu.extractor('raw_rubber_from_leaves')
-		.itemInputs('16x #tfg:rubber_leaves')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
-
-	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
-
-	//#endregion
-
 	//#region Выход: Пропитанные доски
 
 	event.remove({ id: 'gtceu:shaped/treated_wood_planks' })
@@ -152,19 +125,6 @@ const registerGTCEURecipes = (event) => {
 	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
-
-	// Из бревна капока
-	event.recipes.gtceu.centrifuge('rubber_log_separation')
-		.itemInputs('#tfg:latex_logs')
-		.chancedOutput('gtceu:raw_rubber_dust', 5000, 1200)
-		.chancedOutput('gtceu:plant_ball', 3750, 900)
-		.chancedOutput('gtceu:sticky_resin', 2500, 600)
-		.chancedOutput('gtceu:wood_dust', 2500, 700)
-		.outputFluids(Fluid.of('gtceu:methane', 60))
-		.duration(200)
-		.EUt(20)
-
-	//#endregion
 
 	//#region Выход: Растительный шарик
 

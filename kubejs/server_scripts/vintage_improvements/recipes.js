@@ -57,7 +57,7 @@ function registerVintageImprovementsRecipes(event) {
 		A: '#forge:plates/treated_wood',
 		B: '#forge:rods/long/black_steel',
 		C: 'create:andesite_casing',
-		D: 'create:electron_tube',
+		D: '#forge:frames/treated_wood',
 		E: 'greate:steel_cogwheel'
 	}).id('tfg:vi/mechanical_crafting/centrifuge')
 
@@ -443,6 +443,36 @@ function registerVintageImprovementsRecipes(event) {
 		],
 		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 	}).id(`tfg:vi/vibrating/gravel`)
+
+	global.TFC_STONE_TYPES.forEach(stone => {
+		event.custom({
+			type: 'vintageimprovements:vibrating',
+			ingredients: [{ item: `tfc:deposit/native_gold/${stone}` }],
+			results: [ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Gold, 1)],
+			processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+		}).id(`tfg:vi/vibrating/deposits/${stone}_gold`)
+
+		event.custom({
+			type: 'vintageimprovements:vibrating',
+			ingredients: [{ item: `tfc:deposit/native_copper/${stone}` }],
+			results: [ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Copper, 1)],
+			processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+		}).id(`tfg:vi/vibrating/deposits/${stone}_copper`)
+
+		event.custom({
+			type: 'vintageimprovements:vibrating',
+			ingredients: [{ item: `tfc:deposit/native_silver/${stone}` }],
+			results: [ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Silver, 1)],
+			processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+		}).id(`tfg:vi/vibrating/deposits/${stone}_silver`)
+
+		event.custom({
+			type: 'vintageimprovements:vibrating',
+			ingredients: [{ item: `tfc:deposit/cassiterite/${stone}` }],
+			results: [ChemicalHelper.get(TagPrefix.rawOre, GTMaterials.Cassiterite, 1)],
+			processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+		}).id(`tfg:vi/vibrating/deposits/${stone}_cassiterite`)
+	})
 
 	// #endregion
 

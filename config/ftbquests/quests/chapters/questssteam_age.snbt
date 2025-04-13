@@ -17,7 +17,7 @@
 			id: "0CE64B9914191C56"
 			linked_quest: "6FFD4990FF07078A"
 			shape: "diamond"
-			x: -11.0d
+			x: -11.5d
 			y: 9.5d
 		}
 		{
@@ -52,9 +52,9 @@
 	quests: [
 		{
 			dependencies: ["6F1BC99BE641B671"]
-			description: ["{quests.steam_age.basic_millstone.title}"]
+			description: ["{quests.steam_age.basic_millstone.desc}"]
 			id: "48C1E980F7D64317"
-			subtitle: "{quests.steam_age.basic_millstone.title}"
+			subtitle: "{quests.steam_age.basic_millstone.subtitle}"
 			tasks: [{
 				id: "486DE7D228F3589B"
 				item: "greate:andesite_alloy_millstone"
@@ -245,9 +245,11 @@
 		}
 		{
 			dependencies: ["033E74BC588E7EAD"]
+			description: ["{quests.steam_age.steam_engine.desc}"]
 			hide_dependent_lines: true
 			id: "183D47F04CAEBFA7"
 			size: 1.5d
+			subtitle: "{quests.steam_age.steam_engine.subtitle}"
 			tasks: [
 				{
 					id: "704B7094BE2FB3E1"
@@ -260,6 +262,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.steam_age.steam_engine.title}"
 			x: -16.5d
 			y: 14.5d
 		}
@@ -381,13 +384,17 @@
 		}
 		{
 			dependencies: ["5917B0D4708BF534"]
+			description: ["{quests.steam_age.crushing_wheel.desc}"]
 			id: "4F3D0D746D26B59F"
 			optional: true
+			subtitle: "{quests.steam_age.crushing_wheel.subtitle}"
 			tasks: [{
+				count: 2L
 				id: "7EDCBC04DAEA477C"
 				item: "greate:steel_crushing_wheel"
 				type: "item"
 			}]
+			title: "{quests.steam_age.crushing_wheel.title}"
 			x: -19.5d
 			y: 18.0d
 		}
@@ -440,7 +447,14 @@
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
 			dependency_requirement: "one_completed"
+			description: [
+				"{quests.steam_age.miner.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.miner.desc.2}"
+			]
 			id: "65066C9D630B7FFA"
+			optional: true
+			subtitle: "{quests.steam_age.miner.subtitle}"
 			tasks: [
 				{
 					id: "068F7BD3AA0EF8E7"
@@ -453,6 +467,7 @@
 					type: "item"
 				}
 			]
+			title: "{quests.steam_age.miner.title}"
 			x: -7.0d
 			y: 14.0d
 		}
@@ -477,7 +492,9 @@
 		}
 		{
 			dependencies: ["033E74BC588E7EAD"]
+			description: ["{quests.steam_age.deployers.desc}"]
 			id: "6AA07588374B59AB"
+			subtitle: "{quests.steam_age.deployers.subtitle}"
 			tasks: [
 				{
 					id: "717CF950E5000569"
@@ -487,9 +504,17 @@
 				{
 					id: "38F9301A818347F7"
 					item: "create:depot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "66D11CA9FCD6933A"
+					item: "greate:rubber_belt_connector"
+					optional_task: true
 					type: "item"
 				}
 			]
+			title: "{quests.steam_age.deployers.title}"
 			x: -16.5d
 			y: 12.0d
 		}
@@ -520,13 +545,16 @@
 		}
 		{
 			dependencies: ["033E74BC588E7EAD"]
+			description: ["{quests.steam_age.mech_crafter.desc}"]
 			id: "5917B0D4708BF534"
 			optional: true
+			subtitle: "{quests.steam_age.mech_crafter.subtitle}"
 			tasks: [{
 				id: "084E6F06E79A3B0F"
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
+			title: "{quests.steam_age.mech_crafter.title}"
 			x: -19.5d
 			y: 17.0d
 		}
@@ -606,36 +634,22 @@
 		{
 			dependencies: [
 				"6FFD4990FF07078A"
-				"3E175E20C91F168B"
+				"05BE9FE74E4F1AE9"
 			]
-			description: [
-				"Macerate Wood into Wood Pulp, then compress it into Wood Plates. Combine it with Resin to make an empty board."
-				""
-				"Stick in some expensive Copper Wires (these'll get cheaper in &7LV&r) and you've got the base for your first &aCircuit&r."
-				""
-				"Almost there!"
-			]
+			description: ["{quests.steam_age.circuit_boards.desc}"]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "43D0B4F2ACB9931B"
 			shape: "square"
 			size: 1.0d
-			subtitle: "The circuit-er part of circuits..."
-			tasks: [
-				{
-					id: "5B065B6F73BB2CCE"
-					item: "gtceu:wood_plate"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2B8B038789480789"
-					item: "gtceu:resin_printed_circuit_board"
-					type: "item"
-				}
-			]
-			title: "Electronics #2: Circuit Boards"
-			x: -13.5d
-			y: 9.5d
+			subtitle: "{quests.steam_age.circuit_boards.subtitle}"
+			tasks: [{
+				id: "2B8B038789480789"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			title: "{quests.steam_age.circuit_boards.title}"
+			x: -11.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["46FA9DD4755A5548"]
@@ -687,36 +701,33 @@
 		{
 			dependencies: [
 				"5F3063C539C9CBBF"
-				"6FFD4990FF07078A"
+				"05BE9FE74E4F1AE9"
 			]
-			description: [
-				"Crafting Vacuum Tubes might make you question your existence. Sorry about that."
-				""
-				"This is mostly due to the fact that Wires and Rods are (sadly) very expensive right now, but they'll get cheaper in &7LV&r."
-				""
-				"Vacuum Tubes are also technically your first Ultra Low Voltage (&8ULV&r) Circuit! Congratulations! You won't find very much use for these by themselves, though."
-			]
+			description: ["{quests.steam_age.vacuum_tubes.desc}"]
 			id: "2C35D4E01AEC02AA"
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "The harder component for circuits"
+			subtitle: "{quests.steam_age.vacuum_tubes.subtitle}"
 			tasks: [{
 				id: "71433924A1ACEDA1"
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			title: "Electronics #3: Vacuum Tubes"
+			title: "{quests.steam_age.vacuum_tubes.title}"
 			x: -10.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["7DB7AB5349218605"]
+			description: ["{quests.steam_age.wood_plank.desc}"]
 			id: "3E175E20C91F168B"
+			subtitle: "{quests.steam_age.wood_plank.subtitle}"
 			tasks: [{
 				id: "339B48BCF11A29E0"
 				item: "gtceu:wood_plate"
 				type: "item"
 			}]
+			title: "{quests.steam_age.wood_plank.title}"
 			x: -16.5d
 			y: 9.5d
 		}
@@ -742,58 +753,64 @@
 				"16CF5A9012EF4B27"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"Resistors are components that will be used to make your first Circuit."
-				""
-				"It wouldn't be unwise to prioritise the recipes that use &aFine Wires&r, as they'll save you more materials in the long run."
-				""
-				"Wires may be expensive right now, but they'll get a lot cheaper in &7LV&r."
-			]
+			description: ["{quests.steam_age.resistors.desc}"]
 			id: "69BDD31A69062B6C"
 			shape: "square"
 			size: 1.0d
-			subtitle: "The easier component for circuits"
+			subtitle: "{quests.steam_age.resistors.subtitle}"
 			tasks: [{
 				id: "4E6D1A59F2BAE607"
 				item: "gtceu:resistor"
 				type: "item"
 			}]
-			title: "Electronics #1: Resistors"
+			title: "{quests.steam_age.resistors.title}"
 			x: -7.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.coiling_machine.desc}"]
 			id: "072F6E48A1C5ECE9"
+			optional: true
+			subtitle: "{quests.steam_age.coiling_machine.subtitle}"
 			tasks: [{
 				id: "07B7D41ACDCD1DEA"
 				item: "vintageimprovements:spring_coiling_machine"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 11.0d
+			title: "{quests.steam_age.coiling_machine.title}"
+			x: -12.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.steel_mixer.desc}"]
 			id: "49896161B31DB7B4"
+			optional: true
+			size: 1.25d
+			subtitle: "{quests.steam_age.steel_mixer.subtitle}"
 			tasks: [{
 				id: "42F060A386ADF999"
 				item: "greate:steel_mechanical_mixer"
 				type: "item"
 			}]
+			title: "{quests.steam_age.steel_mixer.title}"
 			x: -7.0d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.lathe.desc}"]
 			id: "6A92E8396DE40577"
 			optional: true
+			subtitle: "{quests.steam_age.lathe.subtitle}"
 			tasks: [{
 				id: "269D79581AC1E0D6"
 				item: "vintageimprovements:lathe"
 				type: "item"
 			}]
-			x: -9.5d
+			title: "{quests.steam_age.lathe.title}"
+			x: -8.0d
 			y: 15.0d
 		}
 		{
@@ -801,61 +818,82 @@
 				"033E74BC588E7EAD"
 				"5917B0D4708BF534"
 			]
+			description: ["{quests.steam_age.centrifuge.desc}"]
 			id: "19A1D52A7F550478"
 			optional: true
+			subtitle: "{quests.steam_age.centrifuge.subtitle}"
 			tasks: [{
 				id: "69668479444FF064"
 				item: "vintageimprovements:centrifuge"
 				type: "item"
 			}]
+			title: "{quests.steam_age.centrifuge.title}"
 			x: -18.0d
 			y: 17.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.vibrating_table.desc}"]
 			id: "1E8CC993E0251828"
 			optional: true
+			subtitle: "{quests.steam_age.vibrating_table.subtitle}"
 			tasks: [{
 				id: "3035C0B44A0E1854"
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			x: -10.5d
+			title: "{quests.steam_age.vibrating_table.title}"
+			x: -10.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: [
+				"{quests.steam_age.rolling_mill.desc.1}"
+				"{@pagebreak}"
+				"{quests.steam_age.rolling_mill.desc.2}"
+			]
 			id: "4C22BE513927247B"
+			optional: true
+			size: 1.25d
+			subtitle: "{quests.steam_age.rolling_mill.subtitle}"
 			tasks: [{
 				id: "621AA4E967D54305"
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
+			title: "{quests.steam_age.rolling_mill.title}"
 			x: -7.0d
-			y: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.steel_saw.desc}"]
 			id: "0078B9234C554C6E"
 			optional: true
+			subtitle: "{quests.steam_age.steel_saw.subtitle}"
 			tasks: [{
 				id: "40E3951B8862B9A4"
 				item: "greate:steel_mechanical_saw"
 				type: "item"
 			}]
-			x: -8.5d
+			title: "{quests.steam_age.steel_saw.title}"
+			x: -9.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["2C35D4E01AEC02AA"]
+			description: ["{quests.steam_age.curving_press.desc}"]
 			id: "6ABACC7B9967851D"
 			optional: true
+			subtitle: "{quests.steam_age.curving_press.subtitle}"
 			tasks: [{
 				id: "2AE28D5C5FC74A56"
 				item: "vintageimprovements:curving_press"
 				type: "item"
 			}]
-			x: -11.5d
+			title: "{quests.steam_age.curving_press.title}"
+			x: -11.0d
 			y: 15.0d
 		}
 		{
@@ -986,9 +1024,9 @@
 				"3D8174C64DDC268B"
 			]
 			description: [
-				"{quests.steam_age.alternator.desc}"
+				"{quests.steam_age.alternator.desc.1}"
 				"{@pagebreak}"
-				""
+				"{quests.steam_age.alternator.desc.2}"
 				"{image:tfg:textures/quests/alternator_multiblock.png width:100 height:100 align:center}"
 			]
 			id: "0E57FC7FBFF1CFEB"
@@ -1015,19 +1053,16 @@
 		}
 		{
 			dependencies: ["3D8174C64DDC268B"]
-			description: [
-				"TODO:"
-				"What next?"
-				"If you rushed straight here, we suggest machines like the LV bender, wiremill, or mixer first."
-				"Otherwise if you made the ULV machines below, we suggest the assembler, arc furnace, or polarizer."
-			]
+			description: ["{quests.steam_age.what_next.desc}"]
 			icon: "gtceu:lv_machine_hull"
 			id: "0DAE3D612E70F462"
 			shape: "diamond"
+			subtitle: "{quests.steam_age.what_next.subtitle}"
 			tasks: [{
 				id: "759B03FB27B79731"
 				type: "checkmark"
 			}]
+			title: "{quests.steam_age.what_next.title}"
 			x: -7.0d
 			y: 6.0d
 		}
@@ -1087,22 +1122,16 @@
 		{
 			dependencies: ["49896161B31DB7B4"]
 			description: [
-				"&dPotin Fluid Pipes&r have a &avery high throughput&r for the material tier and cost. You may want to look into making some of these to aid with fluid logistics."
-				""
-				"To get &dPotin&r, you should start by crafting its &eDust&r form."
-				""
-				"This quest calls for either the small or normal pipe. Get either size to complete it."
+				"{quests.steam_age.potin.desc.1}"
 				"{@pagebreak}"
-				"&l&3Lore:&r&o &dPotin Fluid Pipes&r were originally created in &9GT++&r, and were a huge power spike for players in a little pack called &4GT:NH&r. We wanted to spread some of that joy."
-				""
-				"In the real world, &dPotin&r is an alloy used in coins, not pipes. GTCEu just gets more unrealistic by the day..."
+				"{quests.steam_age.potin.desc.2}"
 			]
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "6B6FEF3DC6299CD9"
 			optional: true
 			shape: "heart"
 			size: 1.0d
-			subtitle: "...I'm going into battle, and I need only your finest Potin."
+			subtitle: "{quests.steam_age.potin.subtitle}"
 			tasks: [{
 				id: "3FC7579C544460B1"
 				item: {
@@ -1115,15 +1144,15 @@
 				title: "Any Potin Pipe"
 				type: "item"
 			}]
-			title: "Potin Seller..."
+			title: "{quests.steam_age.potin.title}"
 			x: -5.5d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
-			description: ["{quests.steam_age.create_tools.title}"]
+			description: ["{quests.steam_age.create_tools.desc}"]
 			id: "2F81902C6B1D4902"
-			subtitle: "{quests.steam_age.create_tools.title}"
+			subtitle: "{quests.steam_age.create_tools.subtitle}"
 			tasks: [
 				{
 					id: "272B2620E00219B5"
@@ -1149,10 +1178,12 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["033E74BC588E7EAD"]
+			dependencies: ["6AA07588374B59AB"]
+			description: ["{quests.steam_age.trains.desc}"]
 			id: "02854A3E8A5D5043"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.steam_age.trains.subtitle}"
 			tasks: [
 				{
 					id: "7D63DDE72E9AC188"
@@ -1170,17 +1201,21 @@
 					type: "item"
 				}
 			]
-			x: -21.0d
-			y: 17.0d
+			title: "{quests.steam_age.trains.title}"
+			x: -16.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6AA07588374B59AB"]
+			description: ["{quests.steam_age.vacuum_chamber.desc}"]
 			id: "5F3063C539C9CBBF"
+			subtitle: "{quests.steam_age.vacuum_chamber.subtitle}"
 			tasks: [{
 				id: "5BAA167FA59D5C32"
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
+			title: "{quests.steam_age.vacuum_chamber.title}"
 			x: -13.5d
 			y: 12.0d
 		}
@@ -1349,31 +1384,34 @@
 				"6903C72A254A7B08"
 				"2C35D4E01AEC02AA"
 			]
-			description: ["{quests.low_voltage.lv_age_progression.desc}"]
+			description: ["{quests.steam_age.lv_circuit.desc}"]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "3D8174C64DDC268B"
 			shape: "gear"
 			size: 3.0d
-			subtitle: "{quests.low_voltage.lv_age_progression.subtitle}"
+			subtitle: "{quests.steam_age.lv_circuit.subtitle}"
 			tasks: [{
 				id: "59CF003A962651B0"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			title: "{quests.low_voltage.lv_age_progression.title}"
+			title: "{quests.steam_age.lv_circuit.title}"
 			x: -10.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["4CD3F04793CE47A2"]
+			description: ["{quests.steam_age.paper.desc}"]
 			disable_toast: true
 			id: "16CF5A9012EF4B27"
 			shape: "diamond"
+			subtitle: "{quests.steam_age.paper.subtitle}"
 			tasks: [{
 				id: "1567AABEC83A6346"
 				item: "minecraft:paper"
 				type: "item"
 			}]
+			title: "{quests.steam_age.paper.title}"
 			x: -5.5d
 			y: 9.5d
 		}
@@ -1486,9 +1524,12 @@
 		{
 			dependencies: ["3E175E20C91F168B"]
 			dependency_requirement: "one_completed"
+			description: ["{quests.steam_age.organization.desc}"]
+			icon: "create:clipboard"
 			id: "03CCE899894A3364"
 			optional: true
 			shape: "heart"
+			subtitle: "{quests.steam_age.organization.subtitle}"
 			tasks: [
 				{
 					id: "2F56DA36512D2363"
@@ -1498,11 +1539,45 @@
 				{
 					id: "6A41DD1F9FFD1781"
 					item: "create:crafting_blueprint"
+					optional_task: true
 					type: "item"
 				}
 			]
+			title: "{quests.steam_age.organization.title}"
 			x: -16.5d
 			y: 10.5d
+		}
+		{
+			dependencies: ["033E74BC588E7EAD"]
+			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
+			id: "414835BADD34513F"
+			optional: true
+			subtitle: "{quests.steam_age.rotation_speed_controller.subtitle}"
+			tasks: [{
+				id: "74770DF964D26059"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "{quests.steam_age.rotation_speed_controller.title}"
+			x: -21.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"6FFD4990FF07078A"
+				"3E175E20C91F168B"
+			]
+			description: ["{quests.steam_age.resin_boards.desc}"]
+			id: "05BE9FE74E4F1AE9"
+			subtitle: "{quests.steam_age.resin_boards.subtitle}"
+			tasks: [{
+				id: "1367C83F3529D5EA"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			title: "{quests.steam_age.resin_boards.title}"
+			x: -13.5d
+			y: 9.5d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

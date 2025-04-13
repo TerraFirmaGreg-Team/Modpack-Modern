@@ -74,7 +74,7 @@ const registerFirmaCivRecipes = (event) => {
 
 	//#region Compass
 	event.recipes.gtceu.assembler('tfg:firmaciv/compass')
-		.itemInputs('minecraft:redstone', '#forge:bolts/magnetic_iron', '#forge:glass_panes')
+		.itemInputs('#forge:plates/wrought_iron', '#forge:bolts/magnetic_iron', '#forge:glass_panes')
 		.circuit(21)
 		.itemOutputs('firmaciv:firmaciv_compass')
 		.duration(100)
