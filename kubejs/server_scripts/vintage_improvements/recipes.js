@@ -54,7 +54,7 @@ function registerVintageImprovementsRecipes(event) {
 		'   B   ',
 		'   A   '
 	], {
-		A: '#minecraft:logs',
+		A: '#forge:plates/treated_wood',
 		B: '#forge:rods/long/black_steel',
 		C: 'create:andesite_casing',
 		D: 'create:electron_tube',
@@ -117,13 +117,14 @@ function registerVintageImprovementsRecipes(event) {
 	}).id('tfg:vi/shaped/helve_hammer_bismuth_bronze')
 
 	event.recipes.create.mechanical_crafting('vintageimprovements:lathe', [
-		'EEEFE',
+		'DEEFE',
 		'AB CG',
-		'EEEFE'
+		'DEEFE'
 	], {
 		A: 'gtceu:ulv_machine_hull',
 		B: 'minecraft:piston',
 		C: 'minecraft:diamond',
+		D: '#forge:plates/treated_wood',
 		E: '#forge:rods/black_steel',
 		F: '#gtceu:circuits/ulv',
 		G: 'create:precision_mechanism'
