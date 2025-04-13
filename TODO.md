@@ -8,8 +8,6 @@ Key:
 
 ## Can do during playtests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
-	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
-	- Move the Hang glider quests to General Transportation, replace their position with the mining helmet.
 	- Finish quest spoke: The Beneath
 	- Finish quest spoke: GregTech
 - ⏳ Fix up the ores field guide generator tool (being worked on by nebby)
