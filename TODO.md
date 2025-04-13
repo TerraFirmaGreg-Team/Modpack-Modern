@@ -6,10 +6,6 @@ Key:
 
 # 0.9
 
-## Required for playtests
-- ✔ Create rebalancing
-- ⏳ Grappling hook
-
 ## Can do during playtests
 - ⏳ Quest overhaul (being worked on by nebby and tomtomtom)
 	- Change the FirmaCiv spoke to General Transportation, add Immersive Aircraft onto it
@@ -22,13 +18,6 @@ Key:
 - Something about milk curdling having circuit number conflicts?
 - Akistor carts mixin is commented out, for the plows
 - Put gleamflowers low down in the overworld? Maybe sprinkle some mushrooms around too?
-
-## Nice-to-haves
-- ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
-- ❓ Add that mod that disables xp
-- ❓ Make an "abandoned camp" structure to put in the upper areas of the nether? Put skeleton photo and spyglass in its loot table?
-- ❓ GT + TFC food expiration compat
-- ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
   
 # Post-0.9
 - Create 6
@@ -41,6 +30,13 @@ Key:
 - Buff duration of the 5-day foods like sandwiches
 - Add recipe for the infinite water cover
 - Packer recipes to turn cobble into loose rocks
+
+## Ideas for whenever
+- ❓ Give "Aged Corn Whiskey" and "Aged Rye Whisky" status effects when drank
+- ❓ Add that mod that disables xp
+- ❓ Overworld/upper nether structure with skeleton photo and spyglass in its loot table?
+- ❓ GT + TFC food expiration compat
+- ❓ Drinking cold water from your flask lowers your internal temp? Will need java code, gt comes with a 'liquid ice' fluid we could use
 
 ## Space
 - Put carve tags onto your rock types so they get carved correctly
