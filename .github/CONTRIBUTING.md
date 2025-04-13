@@ -83,7 +83,7 @@
 3. Select Minecraft version **`1.20.1`** and Forge version **`47.2.6`** — these versions are necessary for the modpack to work correctly.
 
 > [!TIP]  
-> ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/new_instances.png?raw=true){: style="width:1000px"}
+> ![Interface for creating a new instance in PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/new_instances.png?raw=true)
 
 #### Step 3: Cleaning the Project Folder
 1. Locate the instance folder in the PrismLauncher directory at **`TerraFirmaGreg-Modern/minecraft`**.
@@ -306,7 +306,7 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 3. Выберите версию Minecraft **`1.20.1`** и версию **`Forge 47.2.6`** — именно эти версии необходимы для корректной работы модпака.
 
 > [!TIP]  
-> ![Интерфейс для создания новой инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/new_instances.png?raw=true){: style="width:1000px"}
+> ![Интерфейс для создания новой инстанции в PrismLauncher](https://github.com/TerraFirmaGreg-Team/.github/blob/main/guide/new_instances.png?raw=true)
 
 #### Шаг 3: Очистка папки проекта
 1. Найдите папку инстанции в директории PrismLauncher по пути **`TerraFirmaGreg-Modern/minecraft`**.
