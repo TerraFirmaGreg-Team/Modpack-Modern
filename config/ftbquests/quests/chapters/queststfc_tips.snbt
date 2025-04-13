@@ -17,9 +17,11 @@
 			size: 4.0d
 			subtitle: "{quests.tfg_tips.begining.subtitle}"
 			tasks: [{
-				id: "49AF77DD58336B13"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "311C92269A4614B2"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.begining.title}"
 			x: 0.0d
@@ -54,15 +56,18 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.firmalife.desc}"]
+			disable_toast: true
 			icon: "firmalife:cheddar_wheel"
 			id: "2EFB241490502DB3"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.firmalife.subtitle}"
 			tasks: [{
-				id: "63F089B751C17F07"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "1E9496836B0F9820"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.firmalife.title}"
 			x: 0.0d
@@ -71,15 +76,18 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.arborfirmacraft.desc}"]
+			disable_toast: true
 			icon: "afc:wood/sapling/weeping_maple"
 			id: "1469936B5DE3AC28"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.arborfirmacraft.subtitle}"
 			tasks: [{
-				id: "4152EF8018F920C8"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "4D9F022754E3EF47"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.arborfirmacraft.title}"
 			x: -6.0d
@@ -96,15 +104,18 @@
 				"* Creation of Hellforge"
 				"* Juicer"
 			]
+			disable_toast: true
 			icon: "minecraft:netherrack"
 			id: "4AA0EBFBA5D8788C"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.beneath.subtitle}"
 			tasks: [{
-				id: "1D8199667D2E6333"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "1DE1652223725760"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.beneath.title}"
 			x: 4.0d
@@ -113,15 +124,18 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.portable_storage.desc}"]
+			disable_toast: true
 			icon: "sophisticatedbackpacks:backpack"
 			id: "7FA5B6354A49C396"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.portable_storage.subtitle}"
 			tasks: [{
-				id: "100E5C3E945EE368"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "0077AE7A70A4314E"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.portable_storage.title}"
 			x: 6.0d
@@ -154,15 +168,27 @@
 			subtitle: "{quests.tfg_tips.backpack_materials.subtitle}"
 			tasks: [
 				{
-					count: 3L
 					id: "3D54644D50E1904E"
-					item: { Count: 3, id: "tfc:wool_yarn" }
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:string)"
+						}
+					}
+					title: "Any #forge:string"
 					type: "item"
 				}
 				{
-					count: 4L
 					id: "40410856739CAF06"
-					item: { Count: 4, id: "minecraft:leather" }
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:leather)"
+						}
+					}
+					title: "Any #forge:leather"
 					type: "item"
 				}
 				{
@@ -190,15 +216,18 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.gt.desc}"]
+			disable_toast: true
 			icon: "gtceu:gregification_hazard_sign_block"
 			id: "02FDECC931B5E8EF"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.gt.subtitle}"
 			tasks: [{
-				id: "7DB404B6625A0BF9"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "1CF4DE167763A6E5"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.gt.title}"
 			x: 4.0d
@@ -207,6 +236,7 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.terrafirmacraft.desc}"]
+			disable_toast: true
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -222,9 +252,11 @@
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.terrafirmacraft.subtitle}"
 			tasks: [{
-				id: "67D1D225B60B7404"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "6AEF1E1ABE3E8163"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.terrafirmacraft.title}"
 			x: 0.0d
@@ -233,15 +265,18 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.misc.desc}"]
+			disable_toast: true
 			icon: "minecraft:grass_block"
 			id: "3B3A0FEEB59F597C"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.misc.subtitle}"
 			tasks: [{
-				id: "6935F626C7CD983D"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "7E11DEE2A7B9915E"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.misc.title}"
 			x: -4.0d
@@ -454,8 +489,9 @@
 		{
 			dependencies: [
 				"30CEFFD95E39CB00"
-				"76B145EFF9B5DB67"
+				"59F36AD7A3E81B45"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.canoe_materials.desc}"]
 			id: "32C854110D49A77D"
 			subtitle: "{quests.tfg_tips.canoe_materials.subtitle}"
@@ -656,8 +692,9 @@
 		{
 			dependencies: [
 				"4ED4FF2581241118"
-				"5996A3A0D475B8A6"
+				"59F36AD7A3E81B45"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.sloop_under_construction_materials.desc}"]
 			id: "2746958D3D4A0885"
 			subtitle: "{quests.tfg_tips.sloop_under_construction_materials.subtitle}"
@@ -1277,7 +1314,11 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["13F7066858E923FF"]
+			dependencies: [
+				"13F7066858E923FF"
+				"648BCF486E16CCB2"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.refrigerator.desc}"]
 			id: "58EC77A796979E68"
 			size: 2.0d
@@ -2482,15 +2523,24 @@
 			]
 			id: "7B2068B200631D5C"
 			subtitle: "{quests.tfg_tips.charcoal_pile.subtitle}"
-			tasks: [{
-				icon: "minecraft:charcoal"
-				id: "6AE2426E2C6CD97C"
-				observe_type: 0
-				timer: 0L
-				title: "{quests.tasktype.lookat} tfc:burning_log_pile"
-				to_observe: "tfc:burning_log_pile"
-				type: "observation"
-			}]
+			tasks: [
+				{
+					icon: "minecraft:charcoal"
+					id: "6AE2426E2C6CD97C"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "{quests.tasktype.lookat} tfc:burning_log_pile"
+					to_observe: "tfc:burning_log_pile"
+					type: "observation"
+				}
+				{
+					id: "0AC71AAF8629E67F"
+					item: "minecraft:charcoal"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{quests.tfg_tips.charcoal_pile.title}"
 			x: -1.5d
 			y: 8.5d
@@ -2768,7 +2818,7 @@
 			]
 			title: "{quests.tfg_tips.toolbelt.title}"
 			x: 8.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4433748B4DA986B0"]
@@ -2806,7 +2856,7 @@
 			}]
 			title: "{quests.tfg_tips.maxed_out_toolbelt.title}"
 			x: 9.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3B3A0FEEB59F597C"]
@@ -3080,8 +3130,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.radio.title}"
-			x: -5.0d
-			y: 6.0d
+			x: -4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7560DC5AA338F0CD"]
@@ -3116,10 +3166,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"3B3A0FEEB59F597C"
-				"174DA15847665CF8"
-			]
+			dependencies: ["3B3A0FEEB59F597C"]
 			description: ["{quests.tfg_tips.camera.desc}"]
 			id: "275C8EA942AB49DD"
 			subtitle: "{quests.tfg_tips.camera.subtitle}"
@@ -3488,8 +3535,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.chalk.title}"
-			x: -4.0d
-			y: 6.0d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -3645,7 +3692,7 @@
 		{
 			dependencies: ["59F36AD7A3E81B45"]
 			description: ["{quests.tfg_tips.beneathxfirmaciv.desc}"]
-			icon: "minecraft:netherrack"
+			icon: "createdeco:decal_fire"
 			id: "252EB7FA56D1F88E"
 			subtitle: "{quests.tfg_tips.beneathxfirmaciv.subtitle}"
 			tasks: [{
@@ -3654,7 +3701,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneathxfirmaciv.title}"
-			x: -10.0d
+			x: -10.5d
 			y: -7.0d
 		}
 		{
@@ -3681,14 +3728,17 @@
 		{
 			dependencies: ["173F6FA60A5B280B"]
 			description: ["{quests.tfg_tips.transportation.desc}"]
+			disable_toast: true
 			id: "60497014785301EB"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.transportation.subtitle}"
 			tasks: [{
-				id: "77CB0D07BAE01103"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "2DDB6C944649BEDF"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg_tips.transportation.title}"
 			x: -4.0d
@@ -3848,7 +3898,7 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["4A8910950F638BB5"]
+			dependencies: ["4AA0EBFBA5D8788C"]
 			description: ["{quests.tfg_tips.how_to_go_beneath.desc}"]
 			id: "5E2E37673AD87A4B"
 			size: 1.0d
@@ -3878,7 +3928,7 @@
 			}]
 			title: "{quests.tfg_tips.beneath_prep.title}"
 			x: 8.0d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -3898,8 +3948,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.beneath_temp_management.title}"
-			x: 7.0d
-			y: -4.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -3976,8 +4026,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneath_clothes.title}"
-			x: 8.0d
-			y: -4.5d
+			x: 9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -3991,7 +4041,7 @@
 			}]
 			title: "{quests.tfg_tips.juicer.title}"
 			x: 9.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -4485,6 +4535,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["6C64C20FF5DF972A"]
 			description: ["{quests.tfg_tips.grapple_double.desc}"]
 			id: "62EA0912A9752840"
 			subtitle: "{quests.tfg_tips.grapple_double.subtitle}"

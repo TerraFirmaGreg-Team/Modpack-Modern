@@ -74,7 +74,6 @@ const registerTFGBlocks = (event) => {
 	event.create('treetap:tap')
 		.requiresTool(false)
 		.textureAll('tfg:item/deprecated')
-		.translationKey("item.tfg.deprecated")
 
 	// #endregion
 

@@ -42,6 +42,7 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			id: "40D0029A2097C68F"
 			linked_quest: "3D7B0F3134C30364"
 			shape: "octagon"
@@ -82,18 +83,32 @@
 		{
 			dependencies: ["3D7B0F3134C30364"]
 			description: ["{quests.stone_age.find_potable_water.desc}"]
+			icon: "createdeco:decal_fluid"
 			id: "1D40CAE675C4BB91"
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
-			tasks: [{
-				icon: "minecraft:water_bucket"
-				id: "73E3594A5481E63F"
-				observe_type: 0
-				timer: 0L
-				title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
-				to_observe: "minecraft:water"
-				type: "observation"
-			}]
+			tasks: [
+				{
+					icon: "minecraft:water_bucket"
+					id: "73E3594A5481E63F"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
+					to_observe: "minecraft:water"
+					type: "observation"
+				}
+				{
+					icon: "tfc:bucket/salt_water"
+					id: "6BAC640E238683BD"
+					observe_type: 0
+					optional_task: true
+					timer: 0L
+					title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
+					to_observe: "tfc:river_water"
+					type: "observation"
+				}
+			]
 			title: "{quests.stone_age.find_potable_water.title}"
 			x: 4.5d
 			y: 3.0d
@@ -525,7 +540,7 @@
 			id: "3687ACAD307EE7EF"
 			subtitle: "{quests.stone_age.clay.subtitle}"
 			tasks: [{
-				count: 25L
+				count: 5L
 				id: "4FCD61B48E983629"
 				item: "minecraft:clay_ball"
 				type: "item"
@@ -633,6 +648,7 @@
 				"706A1824B1487385"
 				"4D1CD95482EE2CDD"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.weld_copper_ingots.desc}"]
 			id: "45A09AD0043FF92B"
 			subtitle: "{quests.stone_age.weld_copper_ingots.subtitle}"
@@ -674,6 +690,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfchotornot:insulating)"
 						}
 					}
+					optional_task: true
 					title: "Any #tfchotornot:insulating"
 					type: "item"
 				}
@@ -731,7 +748,6 @@
 			id: "6EEBBF78AFA3F42A"
 			subtitle: "{quests.stone_age.copper_for_anvil.subtitle}"
 			tasks: [{
-				count: 14L
 				id: "302196CB1816F316"
 				item: {
 					Count: 1
@@ -1229,7 +1245,6 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["451AAAE0C17DB730"]
 			description: [
 				"{quests.stone_age.get_raw_rock.desc}"
 				"{image:tfg:textures/quests/raw_rock.png width:100 height:100 align:center}"
@@ -1288,6 +1303,29 @@
 				"{@pagebreak}"
 				"{quests.stone_age.mining_prep.desc.2}"
 			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:copper_pickaxe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 791
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "451AAAE0C17DB730"
 			subtitle: "{quests.stone_age.mining_prep.subtitle}"
 			tasks: [
@@ -1317,7 +1355,7 @@
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "4E457945449F3230"
 					item: {
 						Count: 1
@@ -1330,7 +1368,7 @@
 					type: "item"
 				}
 				{
-					count: 32L
+					count: 16L
 					id: "3C41311574D24CBC"
 					item: {
 						Count: 1
@@ -1356,7 +1394,7 @@
 				"{quests.stone_age.hazards.desc.2}"
 				"{image:tfg:textures/quests/supported_mine.png width:100 height:100 align:center}"
 			]
-			icon: "gtceu:generic_hazard_sign_block"
+			icon: "createdeco:decal_warning"
 			id: "618090A6D0D3B2F1"
 			shape: "diamond"
 			size: 1.0d
@@ -1661,14 +1699,12 @@
 		{
 			dependencies: ["3D7B0F3134C30364"]
 			description: ["{quests.stone_age.temperature.desc}"]
+			icon: "minecraft:sunflower"
 			id: "38839D3E049215CE"
 			subtitle: "{quests.stone_age.temperature.subtitle}"
 			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "0734DEADAB513E43"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
+				id: "5EF087A092F21202"
+				type: "checkmark"
 			}]
 			title: "{quests.stone_age.temperature.title}"
 			x: 1.0d
