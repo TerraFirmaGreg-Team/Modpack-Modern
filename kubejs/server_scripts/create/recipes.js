@@ -1568,10 +1568,10 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:brass_casing',
 		B: '#forge:small_gears/brass',
-		C: '#forge:gears/wrought_iron',
+		C: 'create:electron_tube',
 		D: '#forge:tools/wrenches',
 		E: '#forge:small_springs/gold',
-		F: '#forge:plates/black_steel',
+		F: '#tfg:shafts',
 		G: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/rotation_speed_controller')
 
