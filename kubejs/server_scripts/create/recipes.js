@@ -1519,7 +1519,7 @@ const registerCreateRecipes = (event) => {
 		'C C'
 	], {
 		A: '#forge:rings/gold',
-		B: 'minecraft:leather',
+		B: '#forge:leather',
 		C: 'tfc:lens',
 		D: '#forge:screws',
 		E: '#forge:tools/screwdrivers'

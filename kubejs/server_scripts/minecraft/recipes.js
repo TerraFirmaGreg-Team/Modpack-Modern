@@ -252,7 +252,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Книга
 
 	event.shapeless('minecraft:book', [
-		'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
+		'minecraft:paper', 'minecraft:paper', 'minecraft:paper', '#forge:leather'
 	]).id('minecraft:book')
 
 	//#endregion
@@ -323,7 +323,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Рамка
 
 	event.recipes.gtceu.assembler('item_frame')
-		.itemInputs('8x #tfc:lumber', 'minecraft:leather')
+		.itemInputs('8x #tfc:lumber', '#forge:leather')
 		.itemOutputs('8x minecraft:item_frame')
 		.duration(100)
 		.EUt(4)

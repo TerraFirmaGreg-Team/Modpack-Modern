@@ -303,7 +303,7 @@ function registerGreateRecipes(event) {
 		'AAA',
 		'BDC'
 	], {
-		A: 'minecraft:leather',
+		A: '#forge:leather',
 		B: '#forge:tools/knives',
 		C: '#tfc:sewing_needles',
 		D: '#forge:string'
