@@ -5,7 +5,7 @@
 **/*.jar
 **/*.mrpack
 **/*.code-workspace
-**/*.zip
+# **/*.zip
 
 # Pakku
 build/
@@ -28,7 +28,6 @@ config/customloadingscreen_timings.nbt
 config/simplelogin.cfg
 config/fml.toml
 config/forge-client.toml
-config/xaerominimap_entities.json
 # config/xaerominimap.txt
 # config/xaeroworldmap.txt
 config/fancymenu/menu_identifiers.db
@@ -47,6 +46,7 @@ config/stellarcore_stitcher_cache_vanilla.dat
 !bansoukou/**.zip
 
 .vscode/
+.vs/
 .idea/
 .bobby/
 .mixin.out/
@@ -99,6 +99,7 @@ optionsof.txt
 optionsshaders.txt
 OpenComputersMod-*
 hei_bookmarks.ini
+gtceu/prospection_cache/
 
 # Server data
 .pakku/server-overrides/libraries
@@ -108,3 +109,9 @@ hei_bookmarks.ini
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
+
+#Tools
+/tools/*/bin/*
+/tools/*/obj/*
+**/OUTPUT/
+.vs/
