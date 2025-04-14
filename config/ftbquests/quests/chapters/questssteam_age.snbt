@@ -140,6 +140,7 @@
 				{
 					id: "1A20DE855DEB137C"
 					item: "create:large_water_wheel"
+					optional_task: true
 					type: "item"
 				}
 			]
