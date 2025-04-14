@@ -106,8 +106,24 @@ const registerCreateRecipes = (event) => {
 		'  B'
 	], {
 		A: '#tfc:lumber',
-		B: '#forge:rods/wrought_iron'
-	}).id('tfg:create/shaped/hand_crank')
+		B: '#forge:rods/bismuth_bronze'
+	}).id('tfg:create/shaped/hand_crank_bismuth_bronze')
+
+	event.shaped('create:hand_crank', [
+		'AAA',
+		'  B'
+	], {
+		A: '#tfc:lumber',
+		B: '#forge:rods/bronze'
+	}).id('tfg:create/shaped/hand_crank_bronze')
+
+	event.shaped('create:hand_crank', [
+		'AAA',
+		'  B'
+	], {
+		A: '#tfc:lumber',
+		B: '#forge:rods/black_bronze'
+	}).id('tfg:create/shaped/hand_crank_black_bronze')
 
 	// Емкость для миксера
 	event.shaped('create:basin', [
@@ -185,12 +201,12 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:plates/copper',
 		B: '#forge:tools/hammers',
-		C: '#forge:gears/wrought_iron',
+		C: '#forge:small_gears/wrought_iron',
 		D: '#forge:tools/files'
 	}).id('tfg:create/shaped/copper_valve_handle')
 
 	event.recipes.gtceu.assembler('tfg:create/copper_valve_handle')
-		.itemInputs('4x #forge:plates/copper', '#forge:gears/wrought_iron')
+		.itemInputs('4x #forge:plates/copper', '#forge:small_gears/wrought_iron')
 		.circuit(6)
 		.itemOutputs('create:copper_valve_handle')
 		.duration(200)
@@ -424,12 +440,12 @@ const registerCreateRecipes = (event) => {
 		'EHF'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: 'tfc:metal/block/steel',
+		B: 'tfc:metal/block/wrought_iron',
 		D: 'create:andesite_casing',
 		E: '#forge:tools/hammers',
 		F: '#forge:tools/wrenches',
-		G: '#forge:screws/wrought_iron',
-		H: 'greate:steel_cogwheel'
+		G: '#forge:bolts/wrought_iron',
+		H: '#tfg:small_cogwheels'
 	}).id('tfg:create/shaped/mechanical_roller')
 
 	// Редстоуновый контакт
@@ -458,16 +474,16 @@ const registerCreateRecipes = (event) => {
 		'BFB',
 		'AAA'
 	], {
-		A: '#forge:shovel_heads/steel',
+		A: '#forge:shovel_heads/wrought_iron',
 		B: '#forge:plates/wrought_iron',
 		C: '#forge:tools/hammers',
 		D: 'create:andesite_casing',
 		E: '#forge:tools/wrenches',
-		F: 'greate:steel_cogwheel'
+		F: '#tfg:small_cogwheels'
 	}).id('tfg:create/shaped/mechanical_harvester')
 
 	event.recipes.gtceu.assembler('tfg:create/mechanical_harvester')
-		.itemInputs('3x #forge:shovel_heads/steel', '2x #forge:plates/wrought_iron', 'greate:steel_cogwheel', 'create:andesite_casing')
+		.itemInputs('3x #forge:shovel_heads', '2x #forge:plates/wrought_iron', '#tfg:small_cogwheels', 'create:andesite_casing')
 		.circuit(3)
 		.itemOutputs('create:mechanical_harvester')
 		.duration(200)
@@ -479,16 +495,16 @@ const registerCreateRecipes = (event) => {
 		'BFB',
 		'AAA'
 	], {
-		A: '#forge:hoe_heads/steel',
+		A: '#forge:hoe_heads/wrought_iron',
 		B: '#forge:plates/wrought_iron',
 		C: '#forge:tools/hammers',
 		D: 'create:andesite_casing',
 		E: '#forge:tools/wrenches',
-		F: 'greate:steel_cogwheel'
+		F: '#tfg:small_cogwheels'
 	}).id('tfg:create/shaped/mechanical_plough')
 
 	event.recipes.gtceu.assembler('tfg:create/mechanical_plough')
-		.itemInputs('3x #forge:hoe_heads', '2x #forge:plates/wrought_iron', 'greate:steel_cogwheel', 'create:andesite_casing')
+		.itemInputs('3x #forge:hoe_heads', '2x #forge:plates/wrought_iron', '#tfg:small_cogwheels', 'create:andesite_casing')
 		.circuit(4)
 		.itemOutputs('create:mechanical_plough')
 		.duration(200)
@@ -550,11 +566,11 @@ const registerCreateRecipes = (event) => {
 		.EUt(4)
 
 	// Корпус поезда
-	event.recipes.createItemApplication(['create:railway_casing'], ['create:brass_casing', '#forge:plates/steel'])
+	event.recipes.createItemApplication(['create:railway_casing'], ['create:brass_casing', '#forge:plates/black_steel'])
 		.id('tfg:create/item_application/railway_casing')
 
 	event.recipes.gtceu.assembler('tfg:create/railway_casing')
-		.itemInputs('create:brass_casing', '#forge:plates/steel')
+		.itemInputs('create:brass_casing', '#forge:plates/black_steel')
 		.circuit(10)
 		.itemOutputs('create:railway_casing')
 		.duration(50)
@@ -1036,7 +1052,7 @@ const registerCreateRecipes = (event) => {
 		'AAA',
 		'A A'
 	], {
-		A: '#forge:rods/wrought_iron'
+		A: '#forge:rods/tin_alloy'
 	}).id('tfg:create/shaped/andesite_ladder')
 
 	// Лестница из латуни
@@ -1062,7 +1078,7 @@ const registerCreateRecipes = (event) => {
 		'AAA',
 		'A A'
 	], {
-		A: '#forge:rods/wrought_iron'
+		A: '#forge:rods/tin_alloy'
 	}).id('tfg:create/shaped/andesite_scaffolding')
 
 	// Леса из латуни
@@ -1541,7 +1557,7 @@ const registerCreateRecipes = (event) => {
 		' E '
 	], {
 		A: 'create:brass_casing',
-		B: 'minecraft:redstone_torch',
+		B: '#gtceu:circuits/ulv',
 		C: '#forge:small_springs',
 		D: '#forge:plates/wrought_iron',
 		E: '#forge:tools/wrenches',
@@ -1556,7 +1572,7 @@ const registerCreateRecipes = (event) => {
 		A: 'create:brass_casing',
 		B: '#forge:springs/copper',
 		C: '#forge:plates/brass',
-		D: 'gtceu:glass_tube',
+		D: 'create:electron_tube',
 		E: '#forge:screws',
 		F: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/display_link')
