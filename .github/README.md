@@ -51,8 +51,6 @@ Many of these mods come with extra add-ons that further diversify your experienc
 
 Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
 
-If you're looking for Localizing the modpack to a Language, please feel free to head to the [LOCALIZATION CONTRIBUTING.md](LOCALIZATION_CONTRIBUTING.md)
-
 ---
 
 ![Image Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
