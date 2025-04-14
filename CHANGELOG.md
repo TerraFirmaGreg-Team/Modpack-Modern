@@ -1,5 +1,8 @@
 # Changelog
 
+## [Unreleased]
+### Changes
+
 ## [0.7.19] - 25.01.2025
 ### Changes
 - Added budding crystals for the other gemstone ores (Pyritie).
