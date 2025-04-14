@@ -9,8 +9,10 @@ const registerTFCDataForTFC = (event) => {
     registerTFCKnappingTypes(event)
     registerTFCItemSize(event)
     registerTFCFoodData(event)
+    registerTFCSupportData(event)
 }
 
+//#region registerTFCMetals
 const registerTFCMetals = (event) => {
     event.metal('gtceu:copper', 1080, 0.00857, '#forge:ingots/copper', '#forge:double_ingots/copper', '#forge:plates/copper', 1, 'tfc:copper')
     event.metal('gtceu:bismuth_bronze', 985, 0.00857, '#forge:ingots/bismuth_bronze', '#forge:double_ingots/bismuth_bronze', '#forge:plates/bismuth_bronze', 2, 'tfc:bismuth_bronze')
@@ -37,7 +39,9 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
     event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
+//#endregion
 
+//#region registerTFCHeats
 const registerTFCHeats = (event) => {
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty, heatCapacity) {
@@ -126,7 +130,9 @@ const registerTFCHeats = (event) => {
     })
     event.itemHeat('tfg:decorative_vase/unfired', 1.0, null, null)
 }
+//#endregion
 
+//#region registerTFCFuels
 const registerTFCFuels = (event) => {
     event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
     event.fuel('gtceu:coke_dust', 1415, 1200, 0.95)
@@ -139,12 +145,16 @@ const registerTFCFuels = (event) => {
     event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
     event.fuel('gtceu:coal_dust', 1415, 600, 0.95)
 }
+//#endregion
 
+//#region registerTFCLampFuels
 const registerTFCLampFuels = (event) => {
     event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
     event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
+//#endregion
 
+//#region registerTFCFertilizers
 const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:fertilizer', 0.15, 0.15, 0.15)
 
@@ -163,13 +173,17 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:tiny_bone_dust', null, 0.01, null)
     event.fertilizer('gtceu:small_bone_dust', null, 0.025, null)
 }
+//#endregion
 
+//#region registerTFCKnappingTypes
 const registerTFCKnappingTypes = (event) => {
     // event.knappingType('gtceu:rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:rubber_plate', 'tfg:rubber')
     // event.knappingType('gtceu:styrene_butadiene_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:styrene_butadiene_rubber_plate', 'tfg:styrene_butadiene_rubber_plate')
     // event.knappingType('gtceu:silicone_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:silicone_rubber_plate', 'tfg:silicone_rubber_plate')
 }
+//#endregion
 
+//#region registerTFCItemSize
 const registerTFCItemSize = (event) => {
     event.itemSize('sophisticatedbackpacks:backpack', 'very_large', 'very_heavy', 'backpack_size')
     event.itemSize('sophisticatedbackpacks:iron_backpack', 'very_large', 'very_heavy', 'iron_backpack_size')
@@ -193,7 +207,9 @@ const registerTFCItemSize = (event) => {
     event.itemSize('immersive_aircraft:gyrodyne', 'huge', 'very_heavy')
     event.itemSize('immersive_aircraft:quadrocopter', 'very_large', 'very_heavy')
 }
+//#endregion
 
+//#region registerTFCFoodData
 const registerTFCFoodData = (event) => {
     event.foodItem('minecraft:golden_apple', food => {
         food.hunger(2)
@@ -241,3 +257,24 @@ const registerTFCFoodData = (event) => {
         food.dairy(0.5)
     })
 }
+//#endregion 
+
+//#region registerTFCSupportData
+//up, down, horizontal
+const registerTFCSupportData = (event) => {
+    event.support('tfg:light_concrete_support', 4, 4, 8, 'light_concrete_support')
+    event.support('tfg:dark_concrete_support', 4, 4, 8, 'dark_concrete_support')
+    event.support('tfg:reinforced_light_concrete_support', 6, 6, 16, 'reinforced_light_concrete_support')
+    event.support('tfg:reinforced_dark_concrete_support', 6, 6, 16, 'reinforced_dark_concrete_support')
+    event.support('tfg:rebar_support', 4, 4, 8, 'rebar_support')
+    event.support('tfg:steel_support', 6, 6, 16, 'steel_support')
+
+	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
+	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
+
+	stone_types.forEach(stone => {
+
+        event.support(`tfg:${stone}_support`, 2, 2, 4, `${stone}_support`)
+    })
+}
+//#endregion
