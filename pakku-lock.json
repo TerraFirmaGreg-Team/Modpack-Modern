@@ -6664,7 +6664,7 @@
             ]
         },
         {
-            "pakku_id": "XmA9kaNL0SN6voqF",
+            "pakku_id": "KrMagbELcCin0ry1",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -6682,7 +6682,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "invtweaks-1.20.1-1.2.0.jar",
+                    "file_name": "invtweaks-1.20.1-1.1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6691,20 +6691,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5939/627/invtweaks-1.20.1-1.2.0.jar",
-                    "id": "5939627",
+                    "url": "https://edge.forgecdn.net/files/5315/928/invtweaks-1.20.1-1.1.0.jar",
+                    "id": "5315928",
                     "parent_id": "976858",
                     "hashes": {
-                        "sha1": "d0a419f3b026b4949ed178119befbcf734deb6eb",
-                        "md5": "e1888186be0600089055dd9b872cea57"
+                        "sha1": "1550d40fd570ae88839382ea888dba9b5c3bd29c",
+                        "md5": "2fbce23647ee005dbc694a2296af83f2"
                     },
                     "required_dependencies": [],
-                    "size": 74689,
-                    "date_published": "2024-11-26T18:52:29.943Z"
+                    "size": 74491,
+                    "date_published": "2024-05-04T18:03:07.010Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "invtweaks-1.20.1-1.2.0.jar",
+                    "file_name": "invtweaks-1.20.1-1.1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6713,16 +6713,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/uqnMI1kq/versions/eyPkQyNd/invtweaks-1.20.1-1.2.0.jar",
-                    "id": "eyPkQyNd",
+                    "url": "https://cdn.modrinth.com/data/uqnMI1kq/versions/noMmNlEf/invtweaks-1.20.1-1.1.0.jar",
+                    "id": "noMmNlEf",
                     "parent_id": "uqnMI1kq",
                     "hashes": {
-                        "sha512": "da66e64b3bca754076fec4a0d1e70d4a17c57ba3586ff38842d8ecff0ba4353f3a626ef24117f2fb3c41b5b87bec9dab9cbd6646d144b486e30eac94581f90bf",
-                        "sha1": "d0a419f3b026b4949ed178119befbcf734deb6eb"
+                        "sha512": "3303d72462d4f863625914100cbbc050e3c88a23203b1010d194524518145ad859a9a30e714326a1866ad129860bc4e28a658a77069e595aa40f1507051f4dd5",
+                        "sha1": "1550d40fd570ae88839382ea888dba9b5c3bd29c"
                     },
                     "required_dependencies": [],
-                    "size": 74689,
-                    "date_published": "2024-11-26T18:52:57.351918Z"
+                    "size": 74491,
+                    "date_published": "2024-05-04T18:03:08.340558Z"
                 }
             ]
         },
