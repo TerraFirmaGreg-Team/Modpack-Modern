@@ -3,10 +3,8 @@
 ## [Unreleased]
 ### Warning for upgrading your world
 This is a major update that changes many things! It is safest to create a new instance and copy your world across, instead of trying to update your world in-place. Check that everything works before permanently changing over to the new version!
-
 - GregTech has removed its kinetic machines, so they will disappear when upgrading. Please recycle your machines first!
 - Several ores and ingots have changed. After upgrading, they will have a "REPLACE ME" texture. Put them in a crafting grid to change to the new version.
-
 ### Changes
 - Latest version of GregTech! Comes with new textures and a few new features, many bug fixes and much more stability.
 - Early game overhaul! You start getting into some automation much earlier and gradually unlock more as you progress, instead of having it all dumped on you after steel.
