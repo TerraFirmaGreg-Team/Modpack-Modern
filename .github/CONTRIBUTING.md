@@ -130,7 +130,8 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 
 **Branch Designation**
   - **`main`:**
-    - This branch contains the stable, tested, and released version of the project. It should only contain changes that have passed the full review cycle.
+    - This branch contains the stable, tested, and released version of the project. 
+    - It should only contain changes that have passed the full review cycle.
     - Changes can be accepted by members of the [Dev-Modern] team; at least one approval is required.
 
   - **`dev`:**
@@ -357,7 +358,8 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
 
 **Назначение веток**
   - **`main`:**
-    - Эта ветка содержит стабильную, протестированную и релизную версию проекта. В ней должны находиться только изменения, прошедшие полный цикл проверки. 
+    - Эта ветка содержит стабильную, протестированную и релизную версию проекта. 
+    - В ней должны находиться только изменения, прошедшие полный цикл проверки. 
     - Принимать изменения могут участники команды [Dev-Modern], требуется одобрение хотя бы одного.
 
   - **`dev`:**
