@@ -254,6 +254,9 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Always test the integration of your changes with the main project.
   - Before sending a Pull Request, it is important to ensure that your changes do not disrupt the modpack's operation and comply with [internal code of conduct](CODE_OF_CONDUCT.md).
 
+- #### Localization: 
+  - If you're looking for Localizing the modpack to a Language, please feel free to head to the [Tools-Modern]
+
 ---
 
 ## Russian Version
@@ -478,12 +481,16 @@ There are two approaches to creating a Pull Request: via terminal and via GitHub
   - Всегда тестируйте интеграцию ваших изменений с основным проектом. 
   - Перед отправкой Pull Request важно убедиться, что ваши изменения не нарушают работу модпака и соответствуют [внутренним соглашениям по коду](CODE_OF_CONDUCT.md).
 
+- #### Локализация: 
+  - Если вы ищете локализацию Modpack на языке, пожалуйста, не стесняйтесь перейти к [Tools-Modern]
+
 ---
 
 <!-- Links: -->
 [TerraFirmaGreg-Modern]: https://github.com/TerraFirmaGreg-Team/Modpack-Modern
 [Dev-Modern]: https://github.com/orgs/TerraFirmaGreg-Team/teams/dev-modern
 [Contributor-Modern]: https://github.com/orgs/TerraFirmaGreg-Team/teams/contributor-modern
+[Tools-Modern]: https://github.com/TerraFirmaGreg-Team/Tools-Modern
 [PrismLauncher]: https://prismlauncher.org
 [Visual Studio Code]: https://code.visualstudio.com
 [Git]: https://git-scm.com

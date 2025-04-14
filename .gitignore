@@ -5,7 +5,7 @@
 **/*.jar
 **/*.mrpack
 **/*.code-workspace
-# **/*.zip
+**/*.zip
 
 # Pakku
 build/
@@ -109,9 +109,3 @@ gtceu/prospection_cache/
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
-
-#Tools
-/tools/*/bin/*
-/tools/*/obj/*
-**/OUTPUT/
-.vs/
