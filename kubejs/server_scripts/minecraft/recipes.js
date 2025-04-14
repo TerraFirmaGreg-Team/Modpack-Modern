@@ -547,13 +547,12 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Воронка
 
 	event.shaped('minecraft:hopper', [
+		'A A',
 		'ABA',
-		'ACA',
 		'DAE'
 	], {
 		A: '#forge:plates/wrought_iron',
 		B: '#forge:chests/wooden',
-		C: '#forge:gears/wrought_iron',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/hammers',
 	}).id('gtceu:shaped/hopper')
