@@ -112,7 +112,6 @@
 				{
 					id: "54B5DC1982F4D816"
 					item: "greate:large_andesite_alloy_cogwheel"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -127,7 +126,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["6E8CEE02CB5B678B"]
+			dependencies: ["0D0D461AE3A3F7BF"]
 			description: ["{quests.steam_age.water_wheel.desc}"]
 			id: "61DDB00751D1E7CB"
 			subtitle: "{quests.steam_age.water_wheel.subtitle}"
@@ -145,11 +144,11 @@
 				}
 			]
 			title: "{quests.steam_age.water_wheel.title}"
-			x: -10.0d
-			y: -6.0d
+			x: -14.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6E8CEE02CB5B678B"]
+			dependencies: ["0D0D461AE3A3F7BF"]
 			description: ["{quests.steam_age.windmill.desc}"]
 			id: "617E0AFB7BA3D7A8"
 			subtitle: "{quests.steam_age.windmill.subtitle}"
@@ -167,13 +166,14 @@
 				}
 			]
 			title: "{quests.steam_age.windmill.title}"
-			x: -10.0d
-			y: -4.0d
+			x: -14.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6E8CEE02CB5B678B"]
 			description: ["{quests.steam_age.metal_casing.desc}"]
 			id: "7F14D2A34F480ACA"
+			size: 1.5d
 			subtitle: "{quests.steam_age.metal_casing.subtitle}"
 			tasks: [{
 				id: "1554B18D816C3549"
@@ -181,8 +181,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.metal_casing.title}"
-			x: -12.0d
-			y: -2.5d
+			x: -9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["09D913288896A67A"]
@@ -278,8 +278,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mechanical_saw.title}"
-			x: -13.0d
-			y: -0.5d
+			x: -9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F14D2A34F480ACA"]
@@ -292,8 +292,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.mechanical_harvester.title}"
-			x: -11.0d
-			y: -0.5d
+			x: -9.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6E8CEE02CB5B678B"]
@@ -320,8 +320,8 @@
 				}
 			]
 			title: "{quests.steam_age.chute.title}"
-			x: -14.5d
-			y: -5.0d
+			x: -12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["51CBF7378FFAD514"]
@@ -346,6 +346,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.steel_greate.desc}"]
 			id: "09D913288896A67A"
+			size: 1.5d
 			subtitle: "{quests.steam_age.steel_greate.subtitle}"
 			tasks: [
 				{
@@ -629,8 +630,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.item_pipes.title}"
-			x: -14.5d
-			y: -3.0d
+			x: -12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1094,6 +1095,7 @@
 				{
 					id: "143EA7ABC19B6AFC"
 					item: "gtceu:wood_normal_fluid_pipe"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1108,12 +1110,19 @@
 				"{@pagebreak}"
 				"{quests.steam_age.fluid_drums.desc.2}"
 			]
+			icon: "gtceu:bronze_drum"
 			id: "499D24AFADC25AA9"
 			size: 1.0d
 			subtitle: "{quests.steam_age.fluid_drums.subtitle}"
 			tasks: [{
-				id: "0DBD9730661C8EC3"
-				item: "gtceu:bronze_drum"
+				id: "73A31AC2888A851E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_drum)item(gtceu:steel_drum)item(gtceu:aluminium_drum)item(gtceu:stainless_steel_drum)item(gtceu:gold_drum)item(gtceu:titanium_drum)item(gtceu:tungsten_steel_drum))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{quests.steam_age.fluid_drums.title}"
@@ -1254,6 +1263,7 @@
 			subtitle: "{quests.steam_age.poor_paths.subtitle}"
 			tasks: [
 				{
+					disable_toast: true
 					id: "4F3DE27E5A72D7BD"
 					item: {
 						Count: 1
@@ -1262,10 +1272,12 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:dirt)"
 						}
 					}
+					optional_task: true
 					title: "Any #tfc:dirt"
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2A6A80CC908180C5"
 					item: {
 						Count: 1
@@ -1277,6 +1289,10 @@
 					optional_task: true
 					title: "Any #tfc:grass"
 					type: "item"
+				}
+				{
+					id: "63E8E70536A0E327"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.steam_age.poor_paths.title}"
@@ -1306,6 +1322,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5F38585D28010C6C"
 					item: {
 						Count: 1
@@ -1323,6 +1340,10 @@
 					item: "rnr:hoggin"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "4CBEBCFBCB80C624"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.steam_age.normal_paths.title}"
@@ -1372,6 +1393,10 @@
 					item: "rnr:rock/macadam_road/granite"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "5782F5692D6AF00A"
+					type: "checkmark"
 				}
 			]
 			title: "{quests.steam_age.good_paths.title}"
@@ -1579,6 +1604,40 @@
 			title: "{quests.steam_age.resin_boards.title}"
 			x: -13.5d
 			y: 9.5d
+		}
+		{
+			dependencies: ["6E8CEE02CB5B678B"]
+			description: [
+				"{quests.metal_age.coke_oven.desc.1}"
+				"{@pagebreak}"
+				"{quests.metal_age.coke_oven.desc.2}"
+				"{@pagebreak}"
+				""
+				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
+			]
+			id: "0D0D461AE3A3F7BF"
+			size: 1.5d
+			subtitle: "{quests.metal_age.coke_oven.subtitle}"
+			tasks: [
+				{
+					id: "1D22CEA76A676434"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					id: "7C2595BA70CBB39E"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					id: "11981B2183C67CE0"
+					item: "gtceu:coke_oven_hatch"
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.coke_oven.title}"
+			x: -14.5d
+			y: -5.0d
 		}
 	]
 	subtitle: ["{quests.steam_age.subtitle}"]

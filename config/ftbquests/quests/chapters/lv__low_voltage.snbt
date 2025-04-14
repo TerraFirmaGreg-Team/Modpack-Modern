@@ -181,30 +181,22 @@
 				""
 				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
 			]
+			icon: "gtceu:bronze_crate"
 			id: "7CCC1BDDE0C67F16"
 			shape: "rsquare"
 			size: 1.0d
 			subtitle: "Earlygame buffering"
-			tasks: [
-				{
-					id: "01E9DFA1051FAE69"
-					item: "gtceu:wood_crate"
-					optional_task: true
-					type: "item"
+			tasks: [{
+				id: "78E120F8EDE2BD3F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
+					}
 				}
-				{
-					id: "140F61650CC7A155"
-					item: "gtceu:bronze_crate"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "164E9B8980EBB840"
-					item: "gtceu:steel_crate"
-					optional_task: true
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "GregTech Storage"
 			x: -4.5d
 			y: -4.0d

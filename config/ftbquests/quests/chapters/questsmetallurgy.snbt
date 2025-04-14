@@ -775,40 +775,6 @@
 			y: -24.5d
 		}
 		{
-			dependencies: ["174DA15847665CF8"]
-			description: [
-				"{quests.metal_age.coke_oven.desc.1}"
-				"{@pagebreak}"
-				"{quests.metal_age.coke_oven.desc.2}"
-				"{@pagebreak}"
-				""
-				"{image:tfg:textures/quests/auto_coke.png width:100 height:100 align:center}"
-			]
-			id: "6302B4F5F57FDCED"
-			size: 2.0d
-			subtitle: "{quests.metal_age.coke_oven.subtitle}"
-			tasks: [
-				{
-					id: "7AAC257D7B459CD3"
-					item: "gtceu:coke_oven"
-					type: "item"
-				}
-				{
-					id: "3199FD23671C2DCF"
-					item: "gtceu:coke_oven_bricks"
-					type: "item"
-				}
-				{
-					id: "07F45B83B26B6994"
-					item: "gtceu:coke_oven_hatch"
-					type: "item"
-				}
-			]
-			title: "{quests.metal_age.coke_oven.title}"
-			x: 9.0d
-			y: -30.0d
-		}
-		{
 			dependencies: ["56CA2EB7812529C5"]
 			description: ["{quests.metal_age.red_steel_flask.desc}"]
 			id: "30D49878F3CEB08A"
@@ -875,7 +841,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.metal_age.wrought_iron_goodies.title}"
-			x: 11.0d
+			x: 9.0d
 			y: -30.0d
 		}
 		{
@@ -936,7 +902,6 @@
 		}
 		{
 			dependencies: [
-				"6302B4F5F57FDCED"
 				"2DB82986FE176CD7"
 				"061116CF508D54F6"
 			]

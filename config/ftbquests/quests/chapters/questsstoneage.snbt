@@ -87,31 +87,18 @@
 			id: "1D40CAE675C4BB91"
 			size: 1.0d
 			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
-			tasks: [
-				{
-					icon: "minecraft:water_bucket"
-					id: "73E3594A5481E63F"
-					observe_type: 0
-					optional_task: true
-					timer: 0L
-					title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
-					to_observe: "minecraft:water"
-					type: "observation"
-				}
-				{
-					icon: "tfc:bucket/salt_water"
-					id: "6BAC640E238683BD"
-					observe_type: 0
-					optional_task: true
-					timer: 0L
-					title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
-					to_observe: "tfc:river_water"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				icon: "minecraft:water_bucket"
+				id: "73E3594A5481E63F"
+				observe_type: 0
+				timer: 0L
+				title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
+				to_observe: "minecraft:water"
+				type: "observation"
+			}]
 			title: "{quests.stone_age.find_potable_water.title}"
 			x: 4.5d
-			y: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -378,7 +365,7 @@
 		{
 			dependencies: [
 				"718CDC407CDE32E1"
-				"1562419608EB333D"
+				"1D40CAE675C4BB91"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.stone_age.water_jug.desc}"]
@@ -456,7 +443,7 @@
 		{
 			dependencies: [
 				"560B17BFBE8D477D"
-				"1562419608EB333D"
+				"1D40CAE675C4BB91"
 			]
 			description: ["{quests.stone_age.leather_flask.desc}"]
 			id: "62BD1E75FD629161"
@@ -1433,7 +1420,7 @@
 		{
 			dependencies: [
 				"5301A38F7EA81140"
-				"749B3C8698D34E91"
+				"0FB8FD84B13F10C6"
 			]
 			description: ["{quests.stone_age.cook_meat.desc}"]
 			id: "0301508D93520519"
@@ -1508,12 +1495,11 @@
 			size: 1.5d
 			subtitle: "{quests.stone_age.nutrition.subtitle}"
 			tasks: [{
-				id: "37922BAC8F69F8D3"
-				title: "{quests.tasktype.checkmark}"
+				id: "608D20D7FD572637"
 				type: "checkmark"
 			}]
 			title: "{quests.stone_age.nutrition.title}"
-			x: 9.5d
+			x: 3.0d
 			y: -5.0d
 		}
 		{
@@ -1688,25 +1674,15 @@
 			id: "1562419608EB333D"
 			size: 1.5d
 			subtitle: "{quests.stone_age.hydration.subtitle}"
-			tasks: [
-				{
-					id: "01CB74D1BA1BC018"
-					optional_task: true
-					title: "{quests.tasktype.checkmark}"
-					type: "checkmark"
-				}
-				{
-					dimension: "minecraft:overworld"
-					icon: "gtceu:overworld_marker"
-					id: "338ADFE16BF9856B"
-					optional_task: true
-					title: "{quests.stone_age.temperature.task}"
-					type: "dimension"
-				}
-			]
+			tasks: [{
+				id: "01CB74D1BA1BC018"
+				optional_task: true
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
 			title: "{quests.stone_age.hydration.title}"
-			x: 4.5d
-			y: 6.0d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3D7B0F3134C30364"]
@@ -1833,7 +1809,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["1562419608EB333D"]
+			dependencies: ["1D40CAE675C4BB91"]
 			description: ["{quests.stone_age.glass_bottles.desc}"]
 			id: "4F7B5C34B7CD27F2"
 			subtitle: "{quests.stone_age.glass_bottles.subtitle}"
@@ -1854,7 +1830,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["1562419608EB333D"]
+			dependencies: ["1D40CAE675C4BB91"]
 			description: ["{quests.stone_age.water_bucket.desc}"]
 			id: "1F9321F1743A0B79"
 			subtitle: "{quests.stone_age.water_bucket.subtitle}"
