@@ -78,7 +78,7 @@ function registerTFGPapermakingRecipes(event) {
 	//Craft hardwood strips
 	event.recipes.tfc.damage_inputs_shapeless_crafting(event.shapeless('4x tfg:hardwood_strip', ['#minecraft:axes', '#tfg:stripped_hardwood']))
 		.id('tfg:crafting/strip_hardwood')
-	generateCutterRecipe(event, `#tfg:stripped_hardwood`, `8x tfg:hardwood_strip`, 200, 6, 'cutter/strip_hardwood')
+	generateCutterRecipe(event, `#tfg:stripped_hardwood`, `8x tfg:hardwood_strip`, 50, 6, 'cutter/strip_hardwood')
 
 	//Soak hardwood strips
 	event.recipes.tfc.barrel_sealed('12000')

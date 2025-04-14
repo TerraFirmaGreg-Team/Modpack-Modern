@@ -107,7 +107,7 @@ const registerFirmaLifeRecipes = (event) => {
 		'BAB'
 	], {
 		A: '#forge:plates/wrought_iron',
-		B: 'firmalife:beeswax'
+		B: '#forge:wax'
 	}).id('firmalife:crafting/vat')
 
 	// Jar Lid

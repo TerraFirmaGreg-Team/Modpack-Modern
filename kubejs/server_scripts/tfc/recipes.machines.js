@@ -7,7 +7,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:unrefined_paper')
 		.itemOutputs('minecraft:paper')
 		.duration(100)
-		.EUt(16)
+		.EUt(7)
 
 	// Limewater
 	event.recipes.gtceu.mixer('tfg:limewater_from_lime')
@@ -59,19 +59,19 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:small_soaked_hide')
 		.itemOutputs('tfc:small_scraped_hide')
 		.duration(100)
-		.EUt(16)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:medium_scraped_hide')
 		.itemInputs('tfc:medium_soaked_hide')
 		.itemOutputs('tfc:medium_scraped_hide')
 		.duration(100)
-		.EUt(16)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:large_scraped_hide')
 		.itemInputs('tfc:large_soaked_hide')
 		.itemOutputs('tfc:large_scraped_hide')
 		.duration(100)
-		.EUt(16)
+		.EUt(7)
 
 	// Prepared hides
 	event.recipes.gtceu.chemical_bath('tfg:small_prepared_hide')
@@ -242,37 +242,37 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('firmalife:gouda_wheel')
 		.itemOutputs('4x firmalife:food/gouda')
 		.duration(40)
-		.EUt(28)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:cutter/shosha')
 		.itemInputs('firmalife:shosha_wheel')
 		.itemOutputs('4x firmalife:food/shosha')
 		.duration(40)
-		.EUt(28)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:cutter/feta')
 		.itemInputs('firmalife:feta_wheel')
 		.itemOutputs('4x firmalife:food/feta')
 		.duration(40)
-		.EUt(28)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:cutter/cheddar')
 		.itemInputs('firmalife:cheddar_wheel')
 		.itemOutputs('4x firmalife:food/cheddar')
 		.duration(40)
-		.EUt(28)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:cutter/chevre')
 		.itemInputs('firmalife:chevre_wheel')
 		.itemOutputs('4x firmalife:food/chevre')
 		.duration(40)
-		.EUt(28)
+		.EUt(7)
 
 	event.recipes.gtceu.cutter('tfg:cutter/rajya_metok')
 		.itemInputs('firmalife:rajya_metok_wheel')
 		.itemOutputs('4x firmalife:food/rajya_metok')
 		.duration(40)
-		.EUt(28)
+		.EUt(7)
 
 	// Misc
 	global.TFC_MILKS.forEach(milk => {

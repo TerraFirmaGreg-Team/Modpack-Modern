@@ -45,6 +45,11 @@ const registerAFCItemTags = (event) => {
     event.add("tfg:latex_logs", "#afc:hevea_logs")
     event.add("tfg:latex_logs", "#afc:rubber_fig_logs")
 
+	event.add("tfg:rosin_logs", "#tfc:aspen_logs")
+	event.add("tfg:rosin_logs", "#tfc:spruce_logs")
+	event.add("tfg:rosin_logs", "#tfc:white_cedar_logs")
+	event.add("tfg:rosin_logs", "#tfc:douglas_fir_logs")
+
     event.add("tfg:rubber_saplings", "tfc:wood/sapling/kapok")
 	event.add("tfg:rubber_saplings", "afc:wood/sapling/red_silk_cotton")
     event.add("tfg:rubber_saplings", "afc:wood/sapling/hevea")

@@ -19,14 +19,14 @@
 
     "quests.low_voltage.lv_steam_turbine.title": "Electricity Generation",
     "quests.low_voltage.lv_steam_turbine.subtitle": "You must construct more turbines",
-    "quests.low_voltage.lv_steam_turbine.desc.1": "The &3Steam Turbine&r is the only Generator you can realistically use in &7LV&r. &2Later, you'll unlock more interesting Power options&r, such as natural gases or petrols.\n\nWhen provided Steam, the turbine will output EU at a ratio of &d2 Steam = 1 EU&r.\n\n&6This quest unlocks two new tutorials on Electricity and Cables in the &lTips and Tricks&r&6 tab - check them out to learn more!&r",
+    "quests.low_voltage.lv_steam_turbine.desc.1": "The &3Steam Turbine&r is one of the only generators you can realistically use in &7LV&r. &2Later, you'll unlock more interesting Power options&r, such as natural gases or petrols.\n\nWhen provided Steam, the turbine will output EU at a ratio of &d2 Steam = 1 EU&r.\n\n&6This quest unlocks two new tutorials on Electricity and Cables in the &lTips and Tricks&r&6 tab - check them out to learn more!&r",
     "quests.low_voltage.lv_steam_turbine.desc.2": "If you're using a single &3Steam Turbine&r, you only need &a1x Tin Cables&r. On the other hand, if you upgrade to &32 Steam Turbines&r, you should use &a2x Tin Cables&r - else they may end up &cburning&r.\n\nThis is because of the &9Amperage&r mechanic... but that will be explained later so you can enjoy playing. Don't worry!",
   
     "quests.low_voltage.lbb.title": "Large Bronze Boiler",
     "quests.low_voltage.lbb.subtitle": "Boom, boom, boom, boom",
     "quests.low_voltage.lbb.desc.1": "&oThe &3Large Boiler&r is an &6optional&r big-boy variant of the Small Boilers. It runs off solid or liquid fuel.\n\nIf you want Steam-based power production, this will be your first port-of-call. Other power options are listed in the &bMV&r chapter.\n\n&cImportant:&r This Boiler &lCAN&r also &cexplode&r similarly to the regular Boilers! Usually, the explosion can be rather devastating...",
     "quests.low_voltage.lbb.desc.2": "&cWater supply is &lcrucial&r&r. Dedicate a system only for it.\n\nOnce fully heated up, the &3LBB&r produces 800 Steam per tick, which is &d400EU/t&r after conversion, or 12.5 Basic Steam Turbines. Such (relatively!) immense power comes at the cost of &la lot&r of burnable fuel. In TerraFirmaGreg we advise &8Creosote&r or &cLava&r. You can use Create to bring that if needed...",
-    "quests.low_voltage.lbb.desc.3": "&5&lWith this in consideration&r, the GUI lets you &9throttle&r the Boiler down to 25% power for 200 Steam per tick. That's &d100EU/t&r, or slightly above 3 Basic Steam Turbines.\n\n&9Note:&r An in-depth tutorial about Multiblocks is given after you get the &3Electric Blast Furnace&r. We recommend you aim for that first.",
+    "quests.low_voltage.lbb.desc.3": "&5With this in consideration&r, the GUI lets you &9throttle&r the Boiler down to 25% power for 200 Steam per tick. That's &d100EU/t&r, or slightly above 3 Basic Steam Turbines.\n\n&9Note:&r An in-depth tutorial about Multiblocks is given after you get the &3Electric Blast Furnace&r. We recommend you aim for that first.",
 
     "quests.low_voltage.lv_polariser.title": "Basic Polariser",
     "quests.low_voltage.lv_polariser.subtitle": "The Polarizer polarizes!",
@@ -155,7 +155,7 @@
 
     "quests.low_voltage.other_machines.title": "There is other machines",
     "quests.low_voltage.other_machines.subtitle": "You can't escape Greg...",
-    "quests.low_voltage.other_machines.desc": "We won't go over the &dfull scale of regular Ore Processing&r. Why regular? Some ores require special treatment, but that's a topic for much later. Oh no, we're already getting carried away! This quest &6opens a new category&r in which you will get to learn more. Anyway before reaching HV we advise against ore processing, you &6won't get by-product from the Macerator&r.\n\nThough some machines like the &bChemical Bath&r or the &bElectrolyser&r could find some use for your.\n\n&cNote:&r Don't get too preoccupied with Ore Processing! It's very slow at this point, and somewhat power hungry. Around 90% of ores are not important enough to warrant going out of your way to obtain their byproducts. That's a legitimate stat, by the way.",
+    "quests.low_voltage.other_machines.desc": "We won't go over the &dfull scale of regular Ore Processing&r. Why regular? Some ores require special treatment, but that's a topic for much later. Oh no, we're already getting carried away!\n\nSome machines like the &bChemical Bath&r or the &bElectrolyser&r could be useful.\n\n&cNote:&r Don't get too preoccupied with Ore Processing! It's very slow at this point, and somewhat power hungry. Around 90% of ores are not important enough to warrant going out of your way to obtain their byproducts. That's a legitimate stat, by the way.",
     "quests.low_voltage.other_machines.task": "I agree to lose my sanity",
 
     "quests.low_voltage.lv_chemical_bath.title": "Basic Chemical Bath",

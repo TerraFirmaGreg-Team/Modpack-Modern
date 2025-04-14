@@ -231,14 +231,14 @@ const registerTFCFoodData = (event) => {
     })
     
     event.foodItem('minecraft:chorus_fruit', food => {
-        food.hunger(1)
+        food.hunger(1.5)
         food.fruit(1)
         food.water(5)
     })
 
 
     event.foodItem('minecraft:red_mushroom', food => {
-        food.hunger(1)
+        food.hunger(1.5)
         food.vegetables(1)
         food.water(5)
         food.decayModifier(2)

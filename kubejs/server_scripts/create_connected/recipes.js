@@ -31,13 +31,13 @@ const registerCreateConnectedRecipes = (event) => {
 
 	// Item Silo
 	event.shaped('create_connected:item_silo', [
-		'CAC',
+		' C ',
 		'BAD',
-		'CAC'
+		' C '
 	], {
 		A: '#forge:chests/wooden',
 		B: '#forge:sheets/wrought_iron',
-		C: '#forge:screws/steel',
+		C: '#forge:screws/wrought_iron',
 		D: '#forge:tools/screwdrivers'
 	}).id('create_connected:crafting/kinetics/item_silo')
 

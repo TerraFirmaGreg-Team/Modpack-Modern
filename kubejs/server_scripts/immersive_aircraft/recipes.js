@@ -17,7 +17,8 @@ function registerImmersiveAircraftRecipes(event) {
 	{
 		event.recipes.gtceu.macerator(id)
 			.itemInputs(args.input)
-			.itemOutputs(args.outputsMacerator)
+			// macerator only has 6 output slots
+			.itemOutputs(args.outputsMacerator.slice(0, 6))
 			.duration(args.duration)
 			.category(GTRecipeCategories.MACERATOR_RECYCLING)
 			.EUt(GTValues.VA[GTValues.ULV]);

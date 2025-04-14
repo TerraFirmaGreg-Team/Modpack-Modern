@@ -87,9 +87,9 @@ const registerTFGBlocks = (event) => {
 
 	// #region Deprecated tree tap
 
-	// Make a new block here so people can craft it into the new one
 	event.create('treetap:tap')
 		.requiresTool(false)
+		.textureAll('tfg:item/deprecated')
 
 	// #endregion
 
@@ -155,6 +155,7 @@ const registerTFGBlocks = (event) => {
 		.itemTexture('tfg:item/loose/deepslate')
 		.rockTypeModel('metamorphic')
 		.soundType('deepslate')
+		.translationKey("block.tfg.loose.deepslate")
 		.tagBlock('tfc:loose_rocks')
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
@@ -164,6 +165,7 @@ const registerTFGBlocks = (event) => {
 		.itemTexture('tfg:item/loose/dripstone')
 		.rockTypeModel('sedimentary')
 		.soundType('dripstone_block')
+		.translationKey("block.tfg.loose.dripstone")
 		.tagBlock('tfc:loose_rocks')
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')

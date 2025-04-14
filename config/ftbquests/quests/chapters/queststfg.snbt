@@ -12,24 +12,35 @@
 			description: ["{quests.tfg.welcome.desc}"]
 			icon: "tfg:terra_firma_greg"
 			id: "427814F6E9386772"
-			rewards: [{
-				id: "49E401323B66BD59"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "tfc:field_guide"
+			rewards: [
+				{
+					auto: "no_toast"
+					id: "49E401323B66BD59"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "tfc:field_guide"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					auto: "no_toast"
+					id: "3681660250209F02"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "{quests.tfg.welcome.subtitle}"
 			tasks: [{
-				id: "4BDD4127FC81B680"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "1D8C7D630DFA8A0D"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg.welcome.title}"
 			x: 0.0d
@@ -78,9 +89,11 @@
 			id: "3D7B0F3134C30364"
 			subtitle: "{quests.tfg.field_guide.subtitle}"
 			tasks: [{
-				id: "6EB0915B34A4054C"
-				title: "{quests.tasktype.checkmark}"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "4433F67AD2E0F1D4"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
 			}]
 			title: "{quests.tfg.field_guide.title}"
 			x: 0.0d
