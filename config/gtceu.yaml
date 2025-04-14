@@ -10,20 +10,20 @@ recipes:
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
-  harderRods: true
+  harderRods: false
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: false
+  harderBrickRecipes: true
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: false
+  nerfWoodCrafting: true
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: false
+  hardWoodRecipes: true
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -31,16 +31,16 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: false
+  hardRedstoneRecipes: true
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: false
+  hardToolArmorRecipes: true
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: false
+  hardMiscRecipes: true
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
-  hardAdvancedIronRecipes: false
+  hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
@@ -81,8 +81,16 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether to nerf machine controller recipes.
+  # Default: false
+  hardMultiRecipes: false
+
+  # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
+  # Default: true
+  enchantedTools: true
+
 worldgen:
-  # Rubber Tree spawn chance (% per chunk)
+  # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
   rubberTreeSpawnChance: 0.0
 
@@ -129,6 +137,10 @@ worldgen:
     # Default: false
     infiniteBedrockOresFluids: false
 
+    # Generate ores indicators above ore veins
+    # Default: true
+    oreIndicators: false
+
     # Sets the maximum number of chunks that may be cached for ore vein generation.
     # Higher values may improve world generation performance, but at the cost of more RAM usage.
     # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
@@ -153,7 +165,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  doTerrainExplosion: true
+  shouldWeatherOrTerrainExplosion: true
 
   # Energy use multiplier for electric items.
   # Default: 100
@@ -171,10 +183,6 @@ machines:
   # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
   # Default: false
   harmlessActiveTransformers: false
-
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.0
 
   # Whether to play machine sounds while machines are active.
   # Default: true
@@ -195,7 +203,7 @@ machines:
 
   # Block to replace mined ores with in the miner and multiblock miner.
   # Default: minecraft:cobblestone
-  replaceMinedBlocksWith: tfc:rock/cobble/rhyolite
+  replaceMinedBlocksWith: tfc:rock/hardened/rhyolite
 
   # Whether to enable Assembly Line research for recipes.
   # Default: true
@@ -222,7 +230,7 @@ machines:
   # Whether the machine's circuit slot need to be inserted a real circuit.
   ghostCircuit: true
 
-  # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
+  # Whether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
   # Default: false
   doBedrockOres: true
 
@@ -230,10 +238,9 @@ machines:
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
 
-  # WARNING: THIS IS NO LONGER SUPPORTED AND WILL BE REMOVED!
-  # This option only exists to provide backwards compatibility until the Processing Array will be removed in 1.3.0
-  # Default: false
-  doProcessingArray: false
+  # The base amount of ticks per block for electric singleblock ore miners
+  # Default: 320
+  minerSpeed: 320
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
@@ -247,12 +254,101 @@ machines:
   # Default: 50
   ldFluidPipeMinDistance: 50
 
+  # Whether ONLY owners can open a machine gui
+  # Default: false
+  onlyOwnerGUI: false
+
+  # Whether ONLY owners can break a machine
+  # Default: false
+  onlyOwnerBreak: false
+
+  # Minimum op level to bypass the ownership checks
+  # Default: 2
+  ownerOPBypass: 2
+
   # If High Tier (>UV-tier) GT content should be registered.
   # Items and Machines enabled with this config will have missing recipes by default.
   # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
   # Other mods can override this to true, regardless of the config file.
   # Default: false
   highTierContent: false
+
+  # Whether the Assembly Line should require the item inputs to be in order.
+  # Default: true
+  orderedAssemblyLineItems: true
+
+  # Whether the Assembly Line should require the fluid inputs to be in order.
+  # (Requires Ordered Assembly Line Item Inputs to be enabled.)
+  # Default: false
+  orderedAssemblyLineFluids: false
+
+  # Default maximum parallel of steam multiblocks
+  # Default: 8
+  steamMultiParallelAmount: 8
+
+  # Small Steam Boiler Options
+  smallBoilers:
+    # The amount of steam a Steam Solid Boiler produces per second at max temperature.
+    # Default: 120
+    solidBoilerBaseOutput: 120
+
+    # The amount of steam a High Pressure Steam Solid Boiler produces per second at max temperature.
+    # Default: 300
+    hpSolidBoilerBaseOutput: 300
+
+    # The amount of steam a Steam Liquid Boiler produces per second at max temperature.
+    # Default: 240
+    liquidBoilerBaseOutput: 240
+
+    # The amount of steam a High Pressure Steam Liquid Boiler produces per second at max temperature.
+    # Default: 600
+    hpLiquidBoilerBaseOutput: 600
+
+    # The amount of steam a Steam Solar Boiler produces per second at max temperature.
+    # Default: 120
+    solarBoilerBaseOutput: 120
+
+    # The amount of steam a High Pressure Steam Solar Boiler produces per second at max temperature.
+    # Default: 360
+    hpSolarBoilerBaseOutput: 360
+
+  # Large Steam Boiler Options
+  largeBoilers:
+    # The conversion rate between water and steam in Large Boilers.
+    # Default: 160
+    steamPerWater: 160
+
+    # The max temperature of the Large Bronze Boiler.
+    # Default: 800
+    bronzeBoilerMaxTemperature: 800
+
+    # The heat speed of the Large Bronze Boiler.
+    # Default: 1
+    bronzeBoilerHeatSpeed: 1
+
+    # The max temperature of the Large Steel Boiler.
+    # Default: 1800
+    steelBoilerMaxTemperature: 1800
+
+    # The heat speed of the Large Steel Boiler.
+    # Default: 1
+    steelBoilerHeatSpeed: 1
+
+    # The max temperature of the Large Titanium Boiler.
+    # Default: 3200
+    titaniumBoilerMaxTemperature: 3200
+
+    # The heat speed of the Large Titanium Boiler.
+    # Default: 1
+    titaniumBoilerHeatSpeed: 1
+
+    # The max temperature of the Large Tungstensteel Boiler.
+    # Default: 6400
+    tungstensteelBoilerMaxTemperature: 6400
+
+    # The heat speed of the Large Tungstensteel Boiler.
+    # Default: 2
+    tungstensteelBoilerHeatSpeed: 2
 
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
@@ -273,12 +369,12 @@ client:
   defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
-  # 16777215 (#FFFFFF) is no coloring (like GTCE).
-  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5 (default).
+  # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
+  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5.
   defaultUIColor: #FFFFFF
 
   # Use VBO cache for multiblock preview.
-  # Disable it if you have issues with rendering multiblocks.
+  # Disable if you have issues with rendering multiblocks.
   # Default: true
   useVBO: true
 
@@ -307,6 +403,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -317,55 +418,195 @@ tools:
   # Default: 16
   sprayCanChainLength: 16
 
+  # Delay in ticks between each log being broken when tree felling
+  # Default: 2
+  treeFellingDelay: 2
+
+  # NanoSaber Options
+  nanoSaber:
+    # The additional damage added when the NanoSaber is powered.
+    # Default: 20.0
+    nanoSaberDamageBoost: 20.0
+
+    # The base damage of the NanoSaber.
+    # Default: 5.0
+    nanoSaberBaseDamage: 5.0
+
+    # Should Zombies spawn with charged, active NanoSabers on hard difficulty?
+    # Default: true
+    zombieSpawnWithSabers: false
+
+    # The EU/t consumption of the NanoSaber.
+    # Default: 64
+    energyConsumption: 64
+
+  # NightVision Goggles Voltage Tier. Default: 1 (LV)
+  voltageTierNightVision: 1
+
+  # NanoSuit Voltage Tier. Default: 3 (HV)
+  voltageTierNanoSuit: 3
+
+  # Advanced NanoSuit Chestplate Voltage Tier.
+  # Default: 3 (HV)
+  voltageTierAdvNanoSuit: 3
+
+  # QuarkTech Suit Voltage Tier.
+  # Default: 5 (IV)
+  voltageTierQuarkTech: 5
+
+  # Advanced QuarkTech Suit Chestplate Voltage Tier.
+  # Default: 5 (LuV)
+  voltageTierAdvQuarkTech: 6
+
+  # Electric Impeller Jetpack Voltage Tier.
+  # Default: 2 (MV)
+  voltageTierImpeller: 2
+
+  # Advanced Electric Jetpack Voltage Tier.
+  # Default: 3 (HV)
+  voltageTierAdvImpeller: 3
+
 # Config options for Game Mechanics
 gameplay:
   # Enable hazardous materials
   # Default: true
   hazardsEnabled: true
 
+  # Whether hazards are applied to all valid items, or just GT's.
+  # true = all, false = GT only.
+  # Default: true
+  universalHazards: true
+
+  # Whether environmental hazards like pollution or radiation are active
+  # Default: true
+  environmentalHazards: true
+
+  # How much environmental hazards decay per chunk, per tick.
+  # Default: 0.001
+  environmentalHazardDecayRate: 0.001
+
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
   energy:
-    # Enable Native GTEU to Platform native Energy (RF and alike) on GT Cables and Wires.
+    # Enable Native GTEU to Forge Energy (RF and alike) on GT Cables and Wires.
     # This does not enable nor disable Converters.
     # Default: true
-    nativeEUToPlatformNative: true
+    nativeEUToFE: true
 
-    # Enable GTEU to Platform native (and vice versa) Converters.
+    # Enable GTEU to FE (and vice versa) Converters.
     # Default: false
-    enablePlatformConverters: true
+    enableFEConverters: true
 
-    # Platform native Energy to GTEU ratio for converting FE to EU.
+    # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
-    # Default: 4 FE/Energy == 1 EU
-    platformToEuRatio: 4
+    # Default: 4 FE == 1 EU
+    feToEuRatio: 4
 
-    # GTEU to Platform native Energy ratio for converting EU to FE.
+    # GTEU to Forge Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
-    # Default: 4 FE/Energy == 1 EU
-    euToPlatformRatio: 4
+    # Default: 4 FE == 1 EU
+    euToFeRatio: 4
+
+  # Config options regarding GTCEu compatibility with AE2
+  ae2:
+    # The interval between ME Hatch/Bus interact ME network.
+    # It may cause lag if the interval is too small.
+    # Default: 2 sec
+    updateIntervals: 40
+
+    # The energy consumption of ME Hatch/Bus.
+    # Default: 1.0AE/t
+    meHatchEnergyUsage: 1.0
+
+  # Config options regarding GTCEu compatibility with minimap mods
+  minimap:
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    toggle:
+      # FTB Chunks integration enabled
+      ftbChunksIntegration: false
+
+      # Journey Map integration enabled
+      journeyMapIntegration: false
+
+      # Xaerox's map integration enabled
+      xaerosMapIntegration: false
+
+    # The radius, in blocks, that picking up a surface rock will search for veins in.
+    # -1 to disable.
+    # Default: 24
+    surfaceRockProspectRange: -1
+
+    # The radius, in blocks, that clicking an ore block will search for veins in.
+    # -1 to disable
+    # Default: 24
+    oreBlockProspectRange: 24
+
+    # The map scale at which displayed ores will stop scaling.
+    oreScaleStop: 1.0
+
+    # The size, in pixels, of ore icons on the map
+    oreIconSize: 32
+
+    # The string prepending ore names in the ore vein tooltip
+    oreNamePrefix: -
+
+    # The color to draw a box around the ore icon with.
+    # Accepts either an ARGB hex color prefixed with # or the string 'material' to use the ore's material color
+    borderColor: #00000000
+
+    # Which part of the screen to anchor buttons to
+    # Default: "BOTTOM_LEFT"
+    buttonAnchor: BOTTOM_LEFT
+
+    # Which direction the buttons will go
+    # Default: "HORIZONTAL"
+    direction: HORIZONTAL
+
+    # How horizontally far away from the anchor to place the buttons
+    # Default: 20
+    xOffset: 20
+
+    # How vertically far away from the anchor to place the buttons
+    # Default: 0
+    yOffset: 0
+
+    # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
+    # Default: true
+    rightToolbar: true
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
-  hideFacadesInJEI: true
+  hideFacadesInRecipeViewer: true
 
   # Whether to hide filled cells in JEI and creative search menu.
   # Default: true
-  hideFilledCellsInJEI: true
+  hideFilledCellsInRecipeViewer: true
+
+  # Whether to hide the ore processing diagrams in JEI
+  # Default: false
+  hideOreProcessingDiagrams: false
 
   # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
   # Default: true
   removeSmeltingForEBFMetals: true
 
+  # Whether dimension markers should show the dimension tier value.
+  # Default: false
+  showDimensionTier: true
+
 dev:
-  # Debug general events? (will print placed veins to server's debug.log)
+  # Debug general events? (will print recipe conficts etc. to server's debug.log)
   # Default: false
   debug: false
 
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
   debugWorldgen: false
+
+  # Generate ores in superflat worlds?
+  # Default: false
+  doSuperflatOres: false
 
   # Dump all registered GT recipes?
   # Default: false

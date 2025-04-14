@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "tfg:aqueduct/aqueduct",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "salt": 264226226,
+      "spacing": 64,
+      "separation": 60,
+      "type": "minecraft:random_spread"
+    }
+  }

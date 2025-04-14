@@ -20,7 +20,7 @@
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Request Features</a>
     ·
-    <a href="https://github.com/orgs/TerraFirmaGreg-Team/projects/10">Roadmap</a>
+    <a href="https://github.com/Pyritie/Modpack-Modern/blob/0.9/TODO.md">Roadmap</a>
   </p>
 </div>
 
@@ -41,7 +41,6 @@ In addition to these core mods, TerraFirmaGreg-Modern includes several other com
 
 - **[Applied Energistics]** – Cutting-edge storage and automation systems.
 - **[Create]** – Innovative machinery and kinetic contraptions.
-- **[Gregicality Rocketry]** – Enhances GregTech with advanced rockets and space exploration features.
 
 Many of these mods come with extra add-ons that further diversify your experience, and the modpack also integrates quests to help you navigate its complex world.
 
@@ -51,7 +50,8 @@ Many of these mods come with extra add-ons that further diversify your experienc
 
 Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
 
----
+If you're looking for Localizing the modpack to a Language, please feel free to head to the [LOCALIZATION CONTRIBUTING.md](LOCALIZATION_CONTRIBUTING.md)
+![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
 
 ![Image Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
 
@@ -60,4 +60,3 @@ Interested in contributing? For detailed setup instructions, coding standards, a
 [GregTech Modern]: https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern
 [Applied Energistics]: https://www.curseforge.com/minecraft/mc-mods/ae2
 [Create]: https://www.curseforge.com/minecraft/mc-mods/create
-[Gregicality Rocketry]: https://www.curseforge.com/minecraft/mc-mods/gcyr

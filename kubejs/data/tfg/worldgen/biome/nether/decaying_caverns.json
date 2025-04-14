@@ -1,0 +1,207 @@
+{
+	"carvers": {
+		"air": "minecraft:nether_cave"
+	},
+	"downfall": 0.5,
+	"effects": {
+		"additions_sound": {
+			"sound": "minecraft:ambient.warped_forest.additions",
+			"tick_chance": 0.0111
+		},
+		"ambient_sound": "minecraft:ambient.warped_forest.loop",
+		"fog_color": 7369031,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.overworld.swamp"
+		},
+		"sky_color": 7369031,
+		"water_color": 6388580,
+		"water_fog_color": 2302743,
+		"foliage_color": 7171928,
+		"particle": {
+			"options": {
+				"type": "minecraft:mycelium"
+			},
+			"probability": 0.1
+		}
+	},
+	"features": [
+		[],
+		[
+			"tfg:nether/terrain/lava_lake",
+			"tfg:nether/terrain/spring_water_lake"
+		],
+		[
+			"minecraft:basalt_pillar",
+			"tfg:earth/geode/amethyst"
+		],
+		[],
+		[
+			"tfg:nether/terrain/glowstone_ceiling"
+		],
+		[],
+		"#tfg:nether_veins",
+		"#tfg:nether_underground_decoration",
+		[
+			"tfg:nether/terrain/spring_lava"
+		],
+		[
+			"beneath:blackstone_boulders",
+			"beneath:blackstone_pebble_patch",
+			"tfg:nether/surface/loose_deepslate",
+			"tfg:nether/surface/big_mushrooms",
+			"tfg:nether/surface/moss_patch_big",
+			"tfg:nether/surface/glow_mushroom",
+			"tfg:nether/surface/humus_patch",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/surface/mushroom_sprouts",
+			"tfg:nether/terrain/mud_pool",
+			"tfg:nether/surface/green_algae_patch",
+			"tfg:nether/surface/small_mushrooms",
+			"tfg:nether/terrain/liana_ceiling",
+			"minecraft:spore_blossom",
+			"beneath:burpflower_patch",
+			"beneath:gleamflower_patch",
+			"beneath:sulfur_patch",
+			"tfg:nether/surface/pumice_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/guano_patch",
+			"tfg:nether/surface/stick_patch",
+			"tfg:glow_lichen"
+		],
+		[
+			"beneath:glowstone_spikes",
+			"tfg:nether/spikes/deepslate_spikes",
+			"tfg:nether/spikes/blackstone_spikes",
+			"tfg:nether/hardening"
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {
+		"tfc:octopoteuthis": {
+			"energy_budget": 0.12,
+			"charge": 1.0
+		}
+	},
+	"spawners": {
+		"water_ambient": [],
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			}
+		],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "minecraft:frog",
+				"maxCount": 5,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "minecraft:piglin",
+				"maxCount": 4,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:zombified_piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:zombie",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 95
+			},
+			{
+				"type": "minecraft:drowned",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 95
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:silverfish",
+				"maxCount": 5,
+				"minCount": 3,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:spider",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:phantom",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:mushroom_fields_enderman",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [
+			{
+				"type": "tfc:octopoteuthis",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
+		"water_creature": []
+	},
+	"temperature": 0.8
+}

@@ -1,0 +1,24 @@
+﻿{
+	"id": "cobalt",
+	"formula": "Co",
+	"hazardous": false,
+	"ore_block": "gtceu:raw_cobalt_block",
+	"indicator": "gtceu:cobalt_indicator",
+	"translations": [
+		{
+			"lang": "en_us",
+			"name": "Cobalt",
+			"info": "Smelts into: Cobalt"
+		},
+		{
+			"lang": "ru_ru",
+			"name": "Кобальт",
+			"info": "Плавится в: Кобальт"
+		},
+		{
+			"lang": "uk_ua",
+			"name": "Кобальт",
+			"info": "Розплавляється в: Кобальт"
+		}
+	]
+}

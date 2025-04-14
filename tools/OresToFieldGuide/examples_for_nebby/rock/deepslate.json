@@ -1,0 +1,27 @@
+﻿{
+	"id": "deepslate",
+	"pattern": "gtceu:deepslate_{0}_ore",
+	"translations": [
+		{
+			"lang": "en_us",
+			"text": "Migmatite"
+		},
+		{
+			"lang": "ru_ru",
+			"text": "Мигматит"
+		},
+		{
+			"lang": "uk_ua",
+			"text": "Мігматит"
+		}
+	],
+	"replaceable_blocks": [
+		"minecraft:deepslate",
+		"tfc:mud/silty_loam",
+		"beneath:soul_clay",
+		"tfc:dirt/loam",
+		"tfc:mud/loam",
+		"tfc:peat",
+		"tfc:dirt/silty_loam"
+	]
+}

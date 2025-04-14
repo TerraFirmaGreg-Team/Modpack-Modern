@@ -57,6 +57,12 @@
 		chatBoxMaxRange = -1
 		#If true, the chat box is able to send messages to other dimensions than its own
 		chatBoxMultiDimensional = true
+		#If true, the chat box cannot use 'run_command' action
+		chatBoxPreventRunCommand = false
+		#If true, the chat box will wrap and execute 'run_command' or 'suggest_command' action with zero permission, in order to prevent operators accidently run dangerous commands.
+		chatBoxWrapCommand = true
+		#These commands below will not be able to send by 'run_command' or 'suggest_command' action. It will match as prefix if starts with '/', other wise use regex pattern
+		chatBoxBannedCommands = ["/execute", "/op", "/deop", "/gamemode", "/gamerule", "/stop", "/give", "/fill", "/setblock", "/summon", "/whitelist", "^/ban-(?:ip)?\\s*", "^/pardon-(?:ip)?\\s*", "^/save-(?:on|off)\\s*"]
 
 	[Peripherals.ME_Bridge]
 		#Enable the Me Bridge or not.
@@ -103,6 +109,12 @@
 	[Peripherals.Compass_Turtle]
 		#Enable the compass turtle or not.
 		enableCompassTurtle = true
+		#The maximum distance the compass can locate accurately with in each axis.
+		#Range: 0 ~ 8
+		compassAccurePlaceRadius = 3
+		#The free distance the compass can locate accurately with in each axis.
+		#Range: 0 ~ 4
+		compassAccurePlaceFreeRadius = 1
 
 	[Peripherals.Powered_Peripherals]
 		#Enable RF storage for peripherals, that could use it
@@ -158,4 +170,8 @@
 		scanEntitiesExtraBlockCost = 0.17
 		#Range: > 1000
 		chatMessageCooldown = 1000
+		#Range: > 1000
+		accurePlaceCooldown = 1000
+		#Range: > 0
+		accurePlaceCost = 1
 

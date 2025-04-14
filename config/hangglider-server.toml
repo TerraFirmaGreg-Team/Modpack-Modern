@@ -33,25 +33,25 @@
 	overall_wind_power = 0.75
 	#The amount of blocks to move forwards (per-tick) while gliding fast (pressing 'Shift').
 	#Range: 0.0 ~ 100.0
-	fast_forward_movement = 0.08
+	fast_forward_movement = 0.10
 	#The amount of blocks a player falls (per-tick) while gliding normally.
 	#Range: 0.0 ~ 100.0
-	normal_fall_movement = 0.55
+	normal_fall_movement = 0.35
 	#Enables durability usage of the hang glider when gliding.
 	consume_durability = true
 	#The timeframe for durability usage, in ticks. Recall that there are 20 ticks in a second, so a value of 20 would damage the item about once a second.
 	#Default is 1 damage about every 10 seconds of flight, so with a durability of 618 means about 15 minutes of flight time with an undamaged glider.
 	#Range: 1 ~ 10000
-	durability_use_interval = 200
+	durability_use_interval = 1000
 	#The rate at which air resistance hinders your movement. 1 is no resistance, 0.5 is 1/2 as fast each tick.
 	#Range: 0.0 ~ 1.0
 	air_resistance = 0.99
 	#The amount of blocks to move forwards (per-tick) while gliding normally.
 	#Range: 0.0 ~ 100.0
-	normal_forward_movement = 0.04
+	normal_forward_movement = 0.05
 	#The amount of blocks to fall (per-tick) while gliding fast (pressing 'Shift').
 	#Range: 0.0 ~ 100.0
-	fast_fall_movement = 0.675
+	fast_fall_movement = 0.475
 
 [hang_glider]
 	#A quality-of-life option to quickly change the overall power of the wind effect for this glider. Default is an overall relatively weak wind, with moderate gusts that occur semi-commonly.

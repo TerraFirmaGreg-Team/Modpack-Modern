@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "tfc:rock/hardened/diorite",
+		"spike": "tfc:rock/spike/diorite",
+		"anchor_blocks": "minecraft:base_stone_nether"
+	}
+}
