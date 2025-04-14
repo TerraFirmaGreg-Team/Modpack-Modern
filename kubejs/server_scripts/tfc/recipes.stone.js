@@ -57,6 +57,19 @@ function registerTFCStoneRecipes(event) {
 
 		generateCutterRecipe(event, `tfc:rock/pressure_plate/${stone}`, `6x tfc:rock/button/${stone}`, 50, 2, `${stone}_raw_button`)
 
+		// Gravel Crafting
+		event.shapeless(`1x tfc:rock/gravel/${stone}`, [
+			`4x tfc:rock/loose/${stone}`
+		]).id(`tfc:shapeless/loose_${stone}_to_gravel`)
+
+		event.shapeless(`1x tfc:rock/gravel/${stone}`, [
+			`4x tfc:rock/mossy_loose/${stone}`
+		]).id(`tfc:shapeless/mossy_loose_${stone}_to_gravel`)
+
+		event.shapeless(`16x tfc:rock/loose/${stone}`, [
+			`4x tfc:rock/gravel/${stone}`
+		]).id(`tfc:shapeless/gravel_to_loose_${stone}`)
+
 		//#endregion
 		
 		// #region Stonecutting

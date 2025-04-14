@@ -59,4 +59,31 @@ const registerTooltips = (event) =>
 		text.add(2, text.of('§7Insulation: +10'))
 		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
 	})
+
+	//supports
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.addAdvanced([`tfc:wood/support/${wood}`], (item, advanced, text) => {
+			text.add(1, text.of('9 x 5 x 9'))
+		})
+	})
+	global.AFC_WOOD_TYPES.forEach(wood => {
+		event.addAdvanced([`tfc:wood/support/${wood}`], (item, advanced, text) => {
+			text.add(1, text.of('9 x 5 x 9'))
+		})
+	})
+	event.addAdvanced(['tfg:light_concrete_support', 'tfg:dark_concrete_support', 'tfg:rebar_support'], (item, advanced, text) => {
+		text.add(1, text.of('17 x 9 x 17'))
+	})
+	event.addAdvanced(['tfg:reinforced_light_concrete_support', 'tfg:reinforced_dark_concrete_support', 'tfg:steel_support'], (item, advanced, text) => {
+		text.add(1, text.of('33 x 13 x 33'))
+	})
+	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
+	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
+
+	stone_types.forEach(stone => {
+
+		event.addAdvanced([`tfg:${stone}_support`], (item, advanced, text) => {
+			text.add(1, text.of('9 x 5 x 9'))
+		})
+	})
 }
