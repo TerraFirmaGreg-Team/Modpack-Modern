@@ -1,0 +1,131 @@
+
+[embeddiumextras]
+
+	[embeddiumextras.general]
+		#Set Fullscreen mode
+		#Borderless let you change between screens more faster and move your mouse across monitors
+		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
+		fullscreen = "WINDOWED"
+		#Configure FPS Display mode
+		#Complete mode gives you min FPS count and average count
+		#Allowed Values: OFF, SIMPLE, ADVANCED
+		fpsDisplay = "ADVANCED"
+		#Configure FPS Display gravity
+		#Places counter on specified corner of your screen
+		#Allowed Values: LEFT, CENTER, RIGHT
+		fpsDisplayGravity = "LEFT"
+		#Shows GPU and memory usage onto FPS display
+		#Allowed Values: OFF, ON, GPU, RAM
+		fpsDisplaySystem = "OFF"
+		#Configure FPS Display margin
+		#Give some space between corner and text
+		#Range: 0 ~ 48
+		fpsDisplayMargin = 12
+		#Toggle FPS Display shadow
+		#In case sometimes you can't see the text
+		fpsDisplayShadow = false
+
+	[embeddiumextras.quality]
+		#Toggle fog feature
+		#Fog was a vanilla feature, toggling off may increases performance
+		fog = true
+		#Raise clouds
+		#Modify clouds height perfect for a adaptative world experience
+		#Range: 0 ~ 512
+		cloudsHeight = 192
+		#Chunks fade in speed
+		#This option doesn't affect performance, just changes speed
+		#Allowed Values: OFF, FAST, SLOW
+		chunkFadeSpeed = "SLOW"
+
+		[embeddiumextras.quality.darkness]
+			#Configure Darkness Mode
+			#Each config changes what is considered 'true darkness'
+			#Allowed Values: PITCH_BLACK, TOTAL_DARKNESS, DARK, DIM, OFF
+			mode = "OFF"
+			#Toggle Darkness on Overworld dimension
+			enableOnOverworld = true
+			#Toggle Darkness on Nether dimension
+			enableOnNether = false
+			#Configure fog brightness on nether when darkness is enabled
+			#Range: 0.0 ~ 1.0
+			netherFogBright = 0.5
+			#Toggle Darkness on End dimension
+			enableOnEnd = false
+			#Configure fog brightness on nether when darkness is enabled
+			#Range: 0.0 ~ 1.0
+			endFogBright = 0.5
+			#Toggle Darkness default mode for modded dimensions
+			valueByDefault = false
+			#List of all dimensions to use True Darkness
+			#This option overrides 'valueByDefault' state
+			dimensionWhitelist = []
+			#Toggle darkness when dimension has no SkyLight
+			enableOnNoSkyLight = false
+			#Disables all bright sources of darkness like moon or fog
+			#Only affects darkness effect
+			enableBlockLightOnly = false
+			#Toggles if moon phases affects darkness in the overworld
+			affectedByMoonPhase = true
+			#Configure max moon brightness level with darkness
+			#Range: 0.0 ~ 1.0
+			fullMoonBright = 0.25
+			#Configure min moon brightness level with darkness
+			#Range: 0.0 ~ 1.0
+			newMoonBright = 0.0
+
+	[embeddiumextras.performance]
+		#Toggles JREI item rendering until searching
+		#Increases performance a little bit and cleans your screen when you don't want to use it
+		hideJREI = false
+		#Toggles Minecraft Fonts shadows
+		#Depending of the case may increase performance
+		#Gives a flat style text
+		fontShadows = true
+
+		[embeddiumextras.performance.distanceCulling]
+
+			[embeddiumextras.performance.distanceCulling.tileEntities]
+				#Toggles distance culling for Block Entities
+				#Maybe you use another mod for that :(
+				enable = true
+				#Configure horizontal max distance before cull Block entities
+				#Value is squared, default was 64^2 (or 64x64)
+				#Range: > 0
+				cullingMaxDistanceX = 4096
+				#Configure vertical max distance before cull Block entities
+				#Value is raw
+				#Range: 0 ~ 512
+				cullingMaxDistanceY = 32
+				#List of all Block Entities to be ignored by distance culling
+				#Uses ResourceLocation to identify it
+				#Example 1: "minecraft:chest" - Ignores chests only
+				#Example 2: "ae2:*" - ignores all Block entities from Applied Energetics 2
+				whitelist = ["waterframes:*"]
+
+			[embeddiumextras.performance.distanceCulling.entities]
+				#Toggles distance culling for entities
+				#Maybe you use another mod for that :(
+				enable = true
+				#Configure horizontal max distance before cull entities
+				#Value is squared, default was 64^2 (or 64x64)
+				#Range: > 0
+				cullingMaxDistanceX = 4096
+				#Configure vertical max distance before cull entities
+				#Value is raw
+				#Range: 0 ~ 512
+				cullingMaxDistanceY = 32
+				#List of all Entities to be ignored by distance culling
+				#Uses ResourceLocation to identify it
+				#Example 1: "minecraft:bat" - Ignores bats only
+				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
+				whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*"]
+
+	[embeddiumextras.others]
+		#Configure if borderless fullscreen option should be attached to F11 or replace vanilla fullscreen
+		#Allowed Values: ATTACH, REPLACE, OFF
+		borderlessAttachModeOnF11 = "OFF"
+		#Toggles fast language reload
+		#Embeddedt points it maybe cause troubles to JEI, so ¿why not add it as a toggleable option?
+		fastLanguageReload = true
+

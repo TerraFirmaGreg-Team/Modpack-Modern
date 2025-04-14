@@ -33,7 +33,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Автоматизація",
-			"item": "create:mechanical_pump",
+			"item": "greate:steel_mechanical_pump",
 			"text": "Вам знадобиться багато $(item)Сталі$() для епох $(thing)Пари$() та $(thing)LV$(). Багато сталі. До$(thing)Електричної Доменної печі$() ще далеко, тож, можливо, варто подумати про оптимізацію виробництва сталі."
 		},
 		{

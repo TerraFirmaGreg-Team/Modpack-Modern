@@ -1,0 +1,324 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 270,
+		"density": 0.35,
+		"min_y": 24,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_garnet_tin",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"beneath:soul_clay",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:deepslate_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:pyroxenite_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:pyroxenite_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:pyroxenite_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dripstone_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:granite_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:granite_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:granite_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:diorite_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:gabbro_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/schist"
+				],
+				"with": [
+					{
+						"block": "gtceu:schist_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:schist_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:schist_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:schist_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gneiss"
+				],
+				"with": [
+					{
+						"block": "gtceu:gneiss_cassiterite_sand_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:gneiss_garnet_sand_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gneiss_asbestos_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gneiss_diatomite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_cassiterite_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_garnet_sand_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_asbestos_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_cassiterite",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:garnet_sand_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:asbestos_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:diatomite_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}

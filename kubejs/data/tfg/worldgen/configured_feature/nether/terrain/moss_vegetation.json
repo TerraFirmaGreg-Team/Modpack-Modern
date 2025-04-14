@@ -1,0 +1,52 @@
+{
+	"type": "minecraft:simple_block",
+	"config": {
+		"to_place": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"data": {
+						"Name": "tfc:plant/moss"
+					},
+					"weight": 30
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/lady_fern"
+					},
+					"weight": 20
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/king_fern"
+					},
+					"weight": 5
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/ostrich_fern"
+					},
+					"weight": 25
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/sword_fern"
+					},
+					"weight": 20
+				},
+				{
+					"data": {
+						"Name": "minecraft:fern"
+					},
+					"weight": 20
+				},
+				{
+					"data": {
+						"Name": "minecraft:large_fern"
+					},
+					"weight": 20
+				}
+			]
+		}
+	}
+}

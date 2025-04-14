@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"axis=y": {
+			"model": "tfg:block/charred_log"
+		},
+		"axis=z": {
+			"model": "tfg:block/charred_log",
+			"x": 90
+		},
+		"axis=x": {
+			"model": "tfg:block/charred_log",
+			"x": 90,
+			"y": 90
+		}
+	}
+}

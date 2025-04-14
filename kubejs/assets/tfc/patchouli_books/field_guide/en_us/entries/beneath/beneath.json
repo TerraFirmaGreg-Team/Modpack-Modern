@@ -1,0 +1,23 @@
+{
+	"name": "What is the Beneath?",
+	"category": "tfc:beneath",
+	"icon": "minecraft:deepslate",
+	"priority": true,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The $(thing)Beneath$() is a network of very deep caves, directly below the Overworld.$(br)This dimension is balanced around mid to late $(thing)Primitive Age$(). It's more dangerous than the surface, so we recommend a full set of bronze armor and a metal shield as a minimum, as well as plenty of food, water, and other tools."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "It differs from the usual Nether experience in a few ways:$(li)You enter it $(l:beneath/beneath#entering)differently$()$(li)Water doesn't instantly evaporate$(li)A bed works like normal$(li)Traveling Beneath is no faster than in the Overworld$(br2)In return, you can find resources like $(thing)Kaolin Clay$(), $(thing)Graphite$(), richer and more exposed $(thing)ore veins$(), as well as other treasures."
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "entering",
+			"title": "Entering the Beneath",
+			"text": "To travel Beneath, simply stand on overworld bedrock for a little while.$(br)To return, stand directly below the ceiling bedrock in the same fashion.$(br2)It's a good idea to $(thing)make a note$() of where you entered, so you can return to the same place in the overworld whenever you're ready to leave."
+		}
+	],
+	"read_by_default": true
+}

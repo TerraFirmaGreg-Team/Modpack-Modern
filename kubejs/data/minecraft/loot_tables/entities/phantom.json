@@ -1,0 +1,59 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:looting_enchant"
+						}
+					],
+					"name": "minecraft:bone"
+				}, 
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 1.0,
+								"min": 0.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:looting_enchant"
+						}
+					],
+					"name": "minecraft:phantom_membrane"
+				}
+			]
+		}
+	]
+}

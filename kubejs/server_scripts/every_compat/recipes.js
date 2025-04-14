@@ -17,6 +17,6 @@ const registerEveryCompatRecipes = (event) => {
 			.itemInputs(`3x everycomp:c/tfc/${wood}_window`)
 			.itemOutputs(`8x everycomp:c/tfc/${wood}_window_pane`)
 			.duration(40)
-			.EUt(20)
+			.EUt(7)
 	})
 }

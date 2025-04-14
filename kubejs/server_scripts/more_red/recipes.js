@@ -257,15 +257,17 @@ const registerMoreRedRecipes = (event) => {
         .itemOutputs('morered:red_alloy_wire')
         .duration(300)
         .EUt(4)
+        .category(GTRecipeCategories.CHEM_DYES)
 
     global.MINECRAFT_DYE_NAMES.forEach(dye => {
         
         event.recipes.gtceu.chemical_bath(`tfg:morered/${dye}_wire`)             
             .itemInputs('morered:red_alloy_wire')
-            .inputFluids(Fluid.of(`gtceu:${dye}_dye`, 72))
+            .inputFluids(Fluid.of(`tfc:${dye}_dye`, 72))
             .itemOutputs(`morered:${dye}_network_cable`)
             .duration(300)
             .EUt(4)
+            .category(GTRecipeCategories.CHEM_DYES)
 
     })
 

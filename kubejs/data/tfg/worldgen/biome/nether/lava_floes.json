@@ -1,0 +1,176 @@
+{
+	"carvers": {
+		"air": []
+	},
+	"downfall": 0.5,
+	"effects": {
+		"additions_sound": {
+			"sound": "minecraft:ambient.basalt_deltas.additions",
+			"tick_chance": 0.0111
+		},
+		"ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+		"fog_color": 5450003,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2,
+			"sound": "minecraft:ambient.basalt_deltas.mood",
+			"tick_delay": 6000
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.nether.basalt_deltas"
+		},
+		"particle": {
+			"options": {
+				"type": "minecraft:white_ash"
+			},
+			"probability": 0.1
+		},
+		"sky_color": 5450003,
+		"water_color": 4159204,
+		"water_fog_color": 329011
+	},
+	"features": [
+		[],
+		[
+			"tfg:nether/terrain/lava_lake",
+			"tfg:nether/terrain/spring_water_lake"
+		],
+		[
+			"minecraft:basalt_pillar",
+			"tfg:earth/geode/amethyst"
+		],
+		[],
+		[
+			"tfg:nether/terrain/glowstone_ceiling",
+			"tfg:nether/terrain/rarer_delta"
+		],
+		[],
+		"#tfg:nether_veins",
+		"#tfg:nether_underground_decoration",
+		[
+			"tfg:nether/terrain/spring_lava"
+		],
+		[
+			"minecraft:spring_delta",
+			"minecraft:spring_closed_double",
+			"beneath:blackstone_boulders",
+			"beneath:blackstone_pebble_patch",
+			"tfg:nether/surface/loose_basalt",
+			"tfg:nether/surface/bone_patch",
+			"tfg:nether/surface/rotten_flesh_patch",
+			"tfg:nether/surface/dead_bush_patch",
+			"tfg:nether/surface/ash_pile_small",
+			"tfg:nether/surface/charcoal_pile",
+			"beneath:burpflower_patch",
+			"beneath:sulfur_patch",
+			"tfg:nether/surface/pumice_patch",
+			"tfg:nether/surface/beneath_mushrooms",
+			"tfg:nether/surface/guano_patch",
+			"tfg:nether/surface/stick_patch",
+			"tfg:glow_lichen"
+		],
+		[
+			"beneath:glowstone_spikes",
+			"tfg:nether/spikes/blackstone_spikes",
+			"tfg:nether/hardening"
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": {},
+	"spawners": {
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			}
+		],
+		"axolotls": [
+			{
+				"type": "minecraft:axolotl",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 10
+			}
+		],
+		"creature": [
+			{
+				"type": "beneath:red_elk",
+				"maxCount": 8,
+				"minCount": 4,
+				"weight": 100
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "minecraft:piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:zombified_piglin",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 50
+			},
+			{
+				"type": "minecraft:magma_cube",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:silverfish",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 20
+			},
+			{
+				"type": "kaolinclayze:golem_2",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "minecraft:phantom",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "minecraft:wither_skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "endermanoverhaul:dark_oak_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
+		"underground_water_creature": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 2
+}
