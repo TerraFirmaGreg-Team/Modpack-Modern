@@ -1,0 +1,103 @@
+
+#Particular Mod Configuration
+[general]
+
+	#Enable/Disable Effects
+	[general.enabledEffects]
+		#Enable water splash particles
+		waterSplash = true
+		#Enable cascade particles
+		cascades = true
+		#Enable waterfall spray particles
+		waterfallSpray = true
+		#Enable firefly particles
+		fireflies = false
+		#Enable falling leaves particles
+		fallingLeaves = false
+		#Enable cave dust particles
+		caveDust = true
+		#Enable chest bubbles
+		chestBubbles = false
+		#Enable soul sand bubbles
+		soulSandBubbles = false
+		#Enable barrel bubbles
+		barrelBubbles = false
+		#Enable popping bubbles
+		poppingBubbles = false
+		#Enable rain ripples
+		rainRipples = true
+		#Enable water drip ripples
+		waterDripRipples = true
+		#Enable cake eating particles
+		cakeEatingParticles = true
+		#Enable emissive lava drips
+		emissiveLavaDrips = true
+
+	#Advanced Particle Settings
+	[general.advancedSettings]
+
+		[general.advancedSettings.fireflySettings]
+			#Time when fireflies start spawning
+			#Range: 0 ~ 23999
+			startTime = 12000
+			#Time when fireflies stop spawning
+			#Range: 0 ~ 23999
+			endTime = 23000
+			#Minimum temperature for fireflies to spawn
+			#Range: 0.0 ~ 2.0
+			minTemp = 0.5
+			#Maximum temperature for fireflies to spawn
+			#Range: 0.0 ~ 2.0
+			maxTemp = 0.9900000095367432
+			#Whether fireflies can spawn in rain
+			canSpawnInRain = false
+
+			[general.advancedSettings.fireflySettings.frequencyModifiers]
+				#Daily random factors for firefly spawning
+				dailyRandom = [0.0, 0.0, 0.0, 0.33, 0.66, 1.0]
+				#Frequency modifier for grass
+				#Range: 0.0 ~ 1.0
+				grass = 0.16666666666666666
+				#Frequency modifier for tall grass
+				#Range: 0.0 ~ 1.0
+				tallGrass = 0.08333333333333333
+				#Frequency modifier for flowers
+				#Range: 0.0 ~ 1.0
+				flowers = 1.0
+				#Frequency modifier for tall flowers
+				#Range: 0.0 ~ 1.0
+				tallFlowers = 0.5
+
+		[general.advancedSettings.fallingLeavesSettings]
+			#Chance of spawning falling leaves (higher = less frequent)
+			#Range: > 1
+			spawnChance = 60
+			#Whether falling leaves create ripples when landing on water
+			spawnRipples = true
+			#Whether falling leaves lay flat on the ground
+			layFlatOnGround = true
+			#Whether falling leaves lay at right angles
+			layFlatRightAngles = false
+
+		[general.advancedSettings.caveDustSettings]
+			#Chance of spawning cave dust (higher = less frequent)
+			#Range: > 1
+			spawnChance = 700
+			#Base maximum age of cave dust particles
+			#Range: > 1
+			baseMaxAge = 200
+			#Color of cave dust particles (RGB hex)
+			#Range: 0 ~ 16777215
+			color = 8421504
+			#Duration of fade effect for cave dust particles
+			#Range: > 0
+			fadeDuration = 20
+			#Maximum acceleration of cave dust particles
+			#Range: 0.0 ~ 1.0
+			maxAcceleration = 0.029999999329447746
+			#Chance of changing acceleration for cave dust particles
+			#Range: > 1
+			accelChangeChance = 180
+			#Biomes where cave dust won't spawn
+			excludeBiomes = ["minecraft:lush_caves", "minecraft:dripstone_caves", "minecraft:deep_dark"]
+

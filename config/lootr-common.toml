@@ -1,0 +1,85 @@
+#determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
+randomise_seed = true
+#the maximum age for containers; entries above this age will be discarded [default: 60 * 20 * 15, fifteen minutes] [note: the value 6000 will be corrected to 18000. if you wish to use 6000, please use 6001 or 5999.]
+#Range: > 0
+max_age = 18000
+#if true, no chests will be converted
+disable = false
+#whether or not mineshaft chest minecarts should be converted to standard loot chests
+convert_mineshafts = true
+#whether or not the Elytra item frame should be converted into a standard loot chest with a guaranteed elytra
+convert_elytras = true
+#whether or not the entire forge:chests/wooden tag should be added to the conversion list for structures (if they are backed by RandomizableContainerBlockEntity)
+convert_wooden_chests = true
+#whether or not the entire forge:chests/trapped tag should be added to the conversion list for structures (if they are backed by RandomizableContainerBlockEntity
+convert_trapped_chests = true
+#lootr will automatically log all unresolved tables (i.e., for containers that have a loot table associated with them but, for whatever reason, the lookup for this table returns empty). setting this option to true additionally informs players when they open containers.
+report_unresolved_tables = false
+#a list of additional chests that should be converted (in the format of ["modid:name", "modid:other_name"], must be a tile entity instance of RandomizableContainerBlockEntity)
+additional_chests = []
+#a list of additional trapped chests that should be converted (in the format of ["modid:name", "modid:other_name"], must be a tile entity instance of RandomizableContainerBlockEntity)
+additional_trapped_chests = []
+#list of dimensions (to the exclusion of all others) that loot chest should be replaced in (default: blank, allowing all dimensions, e.g., ["minecraft:overworld", "minecraft:the_end"])
+dimension_whitelist = []
+#list of dimensions that loot chests should not be replaced in (default: blank, allowing all dimensions, format e.g., ["minecraft:overworld", "minecraft:the_end"])
+dimension_blacklist = []
+#list of dimensions by modid that loot chests should not be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_blacklist = []
+#list of dimensions by modid that loot chest should be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_whitelist = []
+#list of loot tables which shouldn't be converted (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
+loot_table_blacklist = []
+#list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])
+loot_modid_blacklist = []
+#prevent the destruction of Lootr chests except while sneaking in creative mode
+disable_break = false
+#allow the destruction of Lootr chests regardless. overrides `disable_break`
+enable_break = false
+#disregard chests and chunks that are outside of the world border; enable this option if you are using a world border and are suffering consistent TPS issues; if you change the world border, you will need to restart your client
+check_world_border = false
+#allows fake players to destroy Lootr chests without having to sneak, overrides the `disable_break` option for fake players
+enable_fake_player_break = false
+#when true, comparators on Lootr containers will give an output of 1; when false, they will give an output of 0
+power_comparators = true
+#when true, custom inventories will act like trapped chests when opened
+trapped_custom = false
+#lootr chests cannot be destroyed by creeper or TNT explosions
+blast_resistant = false
+#lootr chests cannot be destroyed by any explosion
+blast_immune = false
+#prevent notifications of decaying or refreshed chests
+disable_notifications = false
+#maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
+#Range: > -1
+notification_delay = 600
+#disables styling of breaking, decaying and refreshing messages sent to players
+disable_message_styles = false
+#how long (in ticks) a decaying loot containers should take to decay (default 5 minutes = 5 * 60 * 20)
+#Range: > 0
+decay_value = 6000
+#list of loot tables which will decay (default blank, meaning no chests decay, in the format of (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
+decay_loot_tables = []
+#list of mod IDs whose loot tables will decay (default blank, meaning no chests decay, in the format ["modid", "othermodid"])
+decay_modids = []
+#list of dimensions where loot chests should automatically decay (default: blank, e.g., ["minecraft:the_nether", "minecraft:the_end"])
+decay_dimensions = []
+#list of structures in which loot chests should automatically decay (in the format of ["modid:structure_name", "modid:other_structure_name"])
+decay_structures = []
+#overriding decay_loot_tables, decay_modids and decay_dimensions: all chests will decay after being opened for the first time
+decay_all = false
+#how long (in ticks) a refreshing loot containers should take to refresh their contents (default 20 minutes = 20 * 60 * 20)
+#Range: > 0
+refresh_value = 24000
+#list of loot tables which will refresh (default blank, meaning no chests refresh, in the format of ["modid:loot_table", "othermodid:loot_table"])
+refresh_loot_tables = []
+#list of mod IDs whose loot tables will refresh (default blank, meaning no chests refresh, in the format of ["modid", "othermodid"])
+refresh_modids = []
+#list of dimensions where loot chests should automatically refresh (default: blank, e.g., ["minecraft:overworld", "othermod:otherdimension"])
+refresh_dimensions = []
+#list of structures in which loot chests should automatically refresh (in the format of ["modid:structure_name", "othermodid:other_structure_name"])
+refresh_structures = []
+#overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being opened for the first time
+refresh_all = false
+
