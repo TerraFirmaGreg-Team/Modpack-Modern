@@ -12,7 +12,7 @@ const registerTFGBlocks = (event) => {
 	
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.create(`tfg:decorative_vase/generated/${color}`, 'cardinal')
-			.model(`tfg:block/decorative_vase/vase_${color}`)
+			.model(`tfg:block/decorative_vase/loot_vase_${color}`)
 			.soundType('decorated_pot')
 			.hardness(0.7)
 			.tagBlock('minecraft:mineable/pickaxe')
@@ -32,6 +32,14 @@ const registerTFGBlocks = (event) => {
 			.fullBlock(false)
 			.opaque(false)
 			.renderType('cutout')
+			.blockEntity(be => {
+				be.attach('tfc:inventory', {
+					width: 9,
+					height: 1,
+					size: size => size.isSmallerThan('large')
+				})
+				be.rightClickOpensInventory()
+        })
 
 		event.create(`tfg:decorative_vase/unfired/${color}`, 'cardinal')
 			.model(`tfg:block/decorative_vase/vase_unfired_${color}`)
@@ -54,6 +62,14 @@ const registerTFGBlocks = (event) => {
 		.fullBlock(false)
 		.opaque(false)
 		.renderType('cutout')
+		.blockEntity(be => {
+			be.attach('tfc:inventory', {
+				width: 9,
+				height: 1,
+				size: size => size.isSmallerThan('large')
+			})
+			be.rightClickOpensInventory()
+        })
 
 	event.create('tfg:decorative_vase/unfired', 'cardinal')
 		.model('tfg:block/decorative_vase/vase_unfired')
@@ -171,4 +187,141 @@ const registerTFGBlocks = (event) => {
 
 	// #endregion
 	
+	//#region Custom Supports
+    event.create('tfg:light_concrete_support', 'tfc:support')
+		.textureAll('tfg:block/support/light_concrete_support')
+		.horizontal(horizontal => {
+			horizontal.textureAll('tfg:block/support/light_concrete_support')
+			horizontal.soundType('stone')
+			horizontal.hardness(5)
+			horizontal.resistance(16)
+			horizontal.mapColor('color_light_gray')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+		})
+		.soundType('stone')
+		.hardness(5)
+		.resistance(16)
+		.mapColor('color_light_gray')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+
+    event.create('tfg:dark_concrete_support', 'tfc:support')
+		.textureAll('tfg:block/support/dark_concrete_support')
+		.horizontal(horizontal => {
+			horizontal.textureAll('tfg:block/support/dark_concrete_support')
+			horizontal.soundType('stone')
+			horizontal.hardness(5)
+			horizontal.resistance(16)
+			horizontal.mapColor('color_gray')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+		})
+		.soundType('stone')
+		.hardness(5)
+		.resistance(16)
+		.mapColor('color_gray')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+
+    event.create('tfg:reinforced_light_concrete_support', 'tfc:support')
+		.textureAll('tfg:block/support/reinforced_light_concrete_support')
+		.horizontal(horizontal => {
+			horizontal.textureAll('tfg:block/support/reinforced_light_concrete_support')
+			horizontal.soundType('stone')
+			horizontal.hardness(5)
+			horizontal.resistance(64)
+			horizontal.mapColor('color_light_gray')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+		})
+		.soundType('stone')
+		.hardness(5)
+		.resistance(64)
+		.mapColor('color_light_gray')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+
+    event.create('tfg:reinforced_dark_concrete_support', 'tfc:support')
+		.textureAll('tfg:block/support/reinforced_dark_concrete_support')
+		.horizontal(horizontal => {
+			horizontal.textureAll('tfg:block/support/reinforced_dark_concrete_support')
+			horizontal.soundType('stone')
+			horizontal.hardness(5)
+			horizontal.resistance(64)
+			horizontal.mapColor('color_gray')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+		})
+		.soundType('stone')
+		.hardness(5)
+		.resistance(64)
+		.mapColor('color_gray')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+
+    event.create('tfg:rebar_support', 'tfc:support')
+		.textureAll('tfg:block/support/rebar_support')
+		.horizontal(horizontal => {
+			horizontal.textureAll('tfg:block/support/rebar_support')
+			horizontal.soundType('chain')
+			horizontal.hardness(3)
+			horizontal.resistance(16)
+			horizontal.mapColor('color_orange')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+			horizontal.renderType('cutout')
+			horizontal.opaque(false)
+		})
+		.soundType('chain')
+		.hardness(3)
+		.resistance(16)
+		.mapColor('color_orange')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+		.renderType('cutout')
+		.opaque(false)
+
+    event.create('tfg:steel_support', 'tfc:support')
+		.textureAll('tfg:block/support/steel_support')
+		.horizontal(horizontal => {
+			horizontal.textureAll('tfg:block/support/steel_support')
+			horizontal.soundType('metal')
+			horizontal.hardness(5)
+			horizontal.resistance(64)
+			horizontal.mapColor('color_gray')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+		})
+		.soundType('metal')
+		.hardness(5)
+		.resistance(64)
+		.mapColor('color_gray')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+
+	
+	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
+	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
+
+	stone_types.forEach(stone => {
+		event.create(`tfg:${stone}_support`, 'tfc:support')
+		.textureAll(`tfg:block/support/${stone}_support`)
+		.horizontal(horizontal => {
+			horizontal.textureAll(`tfg:block/support/${stone}_support`)
+			horizontal.soundType('stone')
+			horizontal.hardness(5)
+			horizontal.resistance(8)
+			horizontal.mapColor('color_gray')
+			horizontal.tagBlock('minecraft:mineable/pickaxe')
+			horizontal.requiresTool(true)
+		})
+		.soundType('stone')
+		.hardness(5)
+		.resistance(8)
+		.mapColor('color_gray')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.requiresTool(true)
+	})
+	//#endregion
 }

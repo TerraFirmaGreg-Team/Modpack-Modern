@@ -100,3 +100,18 @@ salvo_event.forEach(salvo_event => {
         player.runCommandSilent(`effect give ${username} minecraft:instant_health 1 1 true`)
         server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
     });
+
+// Vase Sounds
+    global.MINECRAFT_DYE_NAMES.forEach(color => {
+        BlockEvents.rightClicked(event => {
+            const {block,server,player,player:{x,y,z,username}} = event
+            if (block.id != `tfg:decorative_vase/${color}`) {return}{
+            server.runCommandSilent(`playsound tfc:block.quern.drag block ${username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
+        }})
+    });
+
+    BlockEvents.rightClicked(event => {
+        const {block,server,player,player:{x,y,z,username}} = event
+        if (block.id != 'tfg:decorative_vase') {return}{
+        server.runCommandSilent(`playsound tfc:block.quern.drag block ${username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
+    }});
