@@ -244,6 +244,51 @@ const registerTFGItems = (event) => {
     event.create('gtceu:tin_purified_ore').texture('tfg:item/deprecated')
     event.create('gtceu:lead_purified_ore').texture('tfg:item/deprecated')
 
+    event.create('gtceu:rich_raw_copper').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_copper').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_gold').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_gold').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_tetrahedrite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_tetrahedrite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_tetrahedrite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_malachite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_malachite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_malachite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_hematite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_hematite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_hematite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_cassiterite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_cassiterite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_cassiterite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_bismuth').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_bismuth').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_bismuth').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_magnetite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_magnetite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_magnetite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_yellow_limonite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_yellow_limonite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_yellow_limonite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_garnierite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_garnierite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_garnierite').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_silver').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_silver').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_silver').texture('tfg:item/deprecated')
+
+    event.create('gtceu:rich_raw_sphalerite').texture('tfg:item/deprecated')
+    event.create('gtceu:raw_sphalerite').texture('tfg:item/deprecated')
+    event.create('gtceu:poor_raw_sphalerite').texture('tfg:item/deprecated')
 
     // #endregion
 }

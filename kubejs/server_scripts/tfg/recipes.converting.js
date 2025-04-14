@@ -71,4 +71,53 @@ function registerTFGConvertingRecipes(event) {
 	event.shapeless('create:crushed_raw_silver', 'gtceu:silver_purified_ore')
 	event.shapeless('create:crushed_raw_tin', 'gtceu:tin_purified_ore')
 	event.shapeless('create:crushed_raw_lead', 'gtceu:lead_purified_ore')
+
+
+	event.shapeless('gtceu:rich_raw_copper', 'tfc:ore/rich_native_copper')
+	event.shapeless('minecraft:raw_copper', 'tfc:ore/normal_native_copper')
+	event.shapeless('gtceu:poor_raw_copper', 'tfc:ore/poor_native_copper')
+
+	event.shapeless('gtceu:rich_raw_gold', 'tfc:ore/rich_native_gold')
+	event.shapeless('minecraft:raw_gold', 'tfc:ore/normal_native_gold')
+	event.shapeless('gtceu:poor_raw_gold', 'tfc:ore/poor_native_gold')
+
+	event.shapeless('gtceu:rich_raw_tetrahedrite', 'tfc:ore/rich_tetrahedrite')
+	event.shapeless('gtceu:raw_tetrahedrite', 'tfc:ore/normal_tetrahedrite')
+	event.shapeless('gtceu:poor_raw_tetrahedrite', 'tfc:ore/poor_tetrahedrite')
+
+	event.shapeless('gtceu:rich_raw_malachite', 'tfc:ore/rich_malachite')
+	event.shapeless('gtceu:raw_malachite', 'tfc:ore/normal_malachite')
+	event.shapeless('gtceu:poor_raw_malachite', 'tfc:ore/poor_malachite')
+
+	event.shapeless('gtceu:rich_raw_hematite', 'tfc:ore/rich_hematite')
+	event.shapeless('gtceu:raw_hematite', 'tfc:ore/normal_hematite')
+	event.shapeless('gtceu:poor_raw_hematite', 'tfc:ore/poor_hematite')
+
+	event.shapeless('gtceu:rich_raw_cassiterite', 'tfc:ore/rich_cassiterite')
+	event.shapeless('gtceu:raw_cassiterite', 'tfc:ore/normal_cassiterite')
+	event.shapeless('gtceu:poor_raw_cassiterite', 'tfc:ore/poor_cassiterite')
+
+	event.shapeless('gtceu:rich_raw_bismuth', 'tfc:ore/rich_bismuthinite')
+	event.shapeless('gtceu:raw_bismuth', 'tfc:ore/normal_bismuthinite')
+	event.shapeless('gtceu:poor_raw_bismuth', 'tfc:ore/poor_bismuthinite')
+
+	event.shapeless('gtceu:rich_raw_magnetite', 'tfc:ore/rich_magnetite')
+	event.shapeless('gtceu:raw_magnetite', 'tfc:ore/normal_magnetite')
+	event.shapeless('gtceu:poor_raw_magnetite', 'tfc:ore/poor_magnetite')
+
+	event.shapeless('gtceu:rich_raw_yellow_limonite', 'tfc:ore/rich_limonite')
+	event.shapeless('gtceu:raw_yellow_limonite', 'tfc:ore/normal_limonite')
+	event.shapeless('gtceu:poor_raw_yellow_limonite', 'tfc:ore/poor_limonite')
+
+	event.shapeless('gtceu:rich_raw_garnierite', 'tfc:ore/rich_garnierite')
+	event.shapeless('gtceu:raw_garnierite', 'tfc:ore/normal_garnierite')
+	event.shapeless('gtceu:poor_raw_garnierite', 'tfc:ore/poor_garnierite')
+
+	event.shapeless('gtceu:rich_raw_silver', 'tfc:ore/rich_native_silver')
+	event.shapeless('gtceu:raw_silver', 'tfc:ore/normal_native_silver')
+	event.shapeless('gtceu:poor_raw_silver', 'tfc:ore/poor_native_silver')
+
+	event.shapeless('gtceu:rich_raw_sphalerite', 'tfc:ore/rich_sphalerite')
+	event.shapeless('gtceu:raw_sphalerite', 'tfc:ore/normal_sphalerite')
+	event.shapeless('gtceu:poor_raw_sphalerite', 'tfc:ore/poor_sphalerite')
 }
