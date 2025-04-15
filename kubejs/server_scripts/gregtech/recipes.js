@@ -258,6 +258,49 @@ const registerGTCEURecipes = (event) => {
 		'concrete_from_calcite'
 	)
 
+	//GT light/dark concrete recipe fix
+
+	event.remove({ id: 'gtceu:fluid_solidifier/solidify_concrete_block' })
+	event.remove({ id: 'gtceu:chemical_bath/light_to_dark_concrete' })
+
+	event.recipes.gtceu.fluid_solidifier('gtceu:fluid_solidifier/solidify_light_concrete')
+		.inputFluids(Fluid.of('gtceu:concrete', 144))
+		.notConsumable('1x gtceu:block_casting_mold')
+		.itemOutputs('1x gtceu:light_concrete')
+		.duration(98)
+		.EUt(7)
+
+	event.recipes.gtceu.chemical_bath('gtceu:chemical_bath/dark_concrete')
+		.inputFluids(Fluid.of('tfc:black_dye', 18))
+		.itemInputs('1x gtceu:light_concrete')
+		.itemOutputs('1x gtceu:dark_concrete')
+		.duration(20)
+		.EUt(7)
+
+	event.recipes.gtceu.extractor('gtceu:extractor/extract_light_concrete')
+		.itemInputs('1x gtceu:light_concrete')
+		.outputFluids(Fluid.of('gtceu:concrete', 144))
+		.duration(98)
+		.EUt(30)
+
+	event.stonecutting('gtceu:light_concrete_bricks', 'gtceu:light_concrete').id('tfg:stonecutting/light_concrete_bricks')
+	event.stonecutting('gtceu:chiseled_light_concrete', 'gtceu:light_concrete').id('tfg:stonecutting/chiseled_light_concrete')
+	event.stonecutting('gtceu:light_concrete_tile', 'gtceu:light_concrete').id('tfg:stonecutting/light_concrete_tile')
+	event.stonecutting('gtceu:light_concrete_small_tile', 'gtceu:light_concrete').id('tfg:stonecutting/light_concrete_small_tile')
+	event.stonecutting('gtceu:light_concrete_windmill_a', 'gtceu:light_concrete').id('tfg:stonecutting/light_concrete_windmill_a')
+	event.stonecutting('gtceu:light_concrete_windmill_b', 'gtceu:light_concrete').id('tfg:stonecutting/light_concrete_windmill_b')
+	event.stonecutting('gtceu:small_light_concrete_bricks', 'gtceu:light_concrete').id('tfg:stonecutting/small_light_concrete_bricks')
+	event.stonecutting('gtceu:square_light_concrete_bricks', 'gtceu:light_concrete').id('tfg:stonecutting/square_light_concrete_bricks')
+
+	event.stonecutting('gtceu:dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_bricks')
+	event.stonecutting('gtceu:chiseled_dark_concrete', 'gtceu:dark_concrete').id('tfg:stonecutting/chiseled_dark_concrete')
+	event.stonecutting('gtceu:dark_concrete_tile', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_tile')
+	event.stonecutting('gtceu:dark_concrete_small_tile', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_small_tile')
+	event.stonecutting('gtceu:dark_concrete_windmill_a', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_windmill_a')
+	event.stonecutting('gtceu:dark_concrete_windmill_b', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_windmill_b')
+	event.stonecutting('gtceu:small_dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/small_dark_concrete_bricks')
+	event.stonecutting('gtceu:square_dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/square_dark_concrete_bricks')
+
 	//#endregion
 
 	//#region Выход: Бурильная жидкость
@@ -558,7 +601,7 @@ const registerGTCEURecipes = (event) => {
 		'gtceu:lp_steam_miner', 'gtceu:steel_brick_casing')
 
 	//#region Выход: Стальные машины
-	
+
 	// HP Steam Boilers
 	event.shaped('gtceu:hp_steam_solid_boiler', [
 		'AEA',
@@ -1476,30 +1519,30 @@ const registerGTCEURecipes = (event) => {
 	//#region Steam Bloomery
 
 	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coal')
-	.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
-	.itemOutputs('tfc:raw_iron_bloom')
-	.duration(2400)
-	.EUt(GTValues.VEX[GTValues.ULV])
+		.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
+		.itemOutputs('tfc:raw_iron_bloom')
+		.duration(2400)
+		.EUt(GTValues.VEX[GTValues.ULV])
 
 	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coalcoke')
-	.itemInputs('2x #forge:ingots/iron', '#tfc:blast_furnace_fuel')
-	.itemOutputs('2x tfc:raw_iron_bloom')
-	.duration(2400)
-	.EUt(GTValues.VEX[GTValues.ULV])
+		.itemInputs('2x #forge:ingots/iron', '#tfc:blast_furnace_fuel')
+		.itemOutputs('2x tfc:raw_iron_bloom')
+		.duration(2400)
+		.EUt(GTValues.VEX[GTValues.ULV])
 
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
 		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 		if (tfcProperty == null)
 			return;
-		
+
 		if (tfcProperty.getOutputMaterial() == GTMaterials.Iron) {
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coal_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
 				.itemOutputs('tfc:raw_iron_bloom')
 				.duration(2400)
 				.EUt(GTValues.VEX[GTValues.ULV])
-				
+
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coalcoke_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 2), '#tfc:blast_furnace_fuel')
 				.itemOutputs('2x tfc:raw_iron_bloom')
@@ -1507,7 +1550,7 @@ const registerGTCEURecipes = (event) => {
 				.EUt(GTValues.VEX[GTValues.ULV])
 		}
 	})
-	
+
 	//#endregion
 
 	event.shaped('4x minecraft:ladder', [
@@ -1518,7 +1561,7 @@ const registerGTCEURecipes = (event) => {
 		A: '#forge:rods/wooden'
 	}).id('gtceu:shaped/ladder')
 
-	
+
 	// TODO: Greate again...
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
 		.id('tfg:shapeless/red_alloy_single_cable')
