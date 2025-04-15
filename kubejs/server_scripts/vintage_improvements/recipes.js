@@ -562,9 +562,12 @@ function registerVintageImprovementsRecipes(event) {
 				ingredients: inputs,
 				results: outputs,
 				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/centrifuge/${recipe.getId().split(':')[1]}`)
+			}).id(`tfg:vi/${recipe.getId().split(':')[1]}`)
 		}
 	)
+
+	// Fix weird inconsistency
+	event.replaceOutput({ id: 'tfg:vi/centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
 
 	// #endregion
 
