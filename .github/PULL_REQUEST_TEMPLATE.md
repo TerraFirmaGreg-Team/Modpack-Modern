@@ -16,4 +16,6 @@ _This section is for screenshots to demonstrate any GUI or rendering changes, or
 ## Potential Compatibility Issues
 _This section is for defining possible compatibility issues._
 
+**Enter your Discord nickname, if your PR is successfully accepted, you will be given the Contributor role**
+
 **Please fill in as much useful information as possible. Also, please remove all unused sections, including this and the other explanations.**

@@ -5,8 +5,6 @@
   "hud_batching": false,
   "fast_text_lookup": true,
   "fast_buffer_upload": true,
-  "fast_buffer_upload_size_mb": 256,
-  "fast_buffer_upload_explicit_flush": true,
   "COSMETIC_INFO": "----- Cosmetic only config values below (Does not optimize anything) -----",
   "dont_add_info_into_debug_hud": false,
   "EXPERIMENTAL_INFO": "----- Experimental config values below (Rendering glitches may occur) -----",

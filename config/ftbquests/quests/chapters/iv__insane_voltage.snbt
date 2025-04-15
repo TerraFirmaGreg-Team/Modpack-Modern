@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iv__insane_voltage"
-	group: ""
+	group: "21D975CEBDE06BA9"
 	icon: "gtceu:iv_electric_motor"
 	id: "32EF20533F323E02"
-	order_index: 9
+	order_index: 1
 	quest_links: [{
 		id: "050247AED8C803F9"
 		linked_quest: "30A6EDDF25A5E5F8"

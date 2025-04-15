@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "luv__ludicrous_voltage"
-	group: ""
+	group: "21D975CEBDE06BA9"
 	icon: "gtceu:luv_electric_motor"
 	id: "262A03F6F4EC713C"
-	order_index: 10
+	order_index: 2
 	quest_links: [
 		{
 			id: "7F8B55C8510200AF"
@@ -613,7 +613,7 @@
 				""
 				"&l&3Lore:&r&o There may be a rebalance for these in the future. See the Multiblock Miner quest for details."
 			]
-			hide: true
+			hide_until_deps_visible: true
 			id: "1BE779AF4487E3EB"
 			shape: "rsquare"
 			size: 0.66d
