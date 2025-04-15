@@ -1,0 +1,205 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 240,
+		"density": 0.45,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 37,
+		"random_name": "nether_limonite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"beneath:soul_clay",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:deepslate_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:deepslate_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:deepslate_malachite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:pyroxenite_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:pyroxenite_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:pyroxenite_malachite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basalt_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:basalt_malachite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_goethite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:dripstone_yellow_limonite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dripstone_hematite_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:dripstone_malachite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:raw_yellow_limonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_goethite_block",
+						"weight": 3
+					},
+					{
+						"block": "gtceu:raw_malachite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_hematite_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_hematite",
+					"weight": 15
+				},
+				{
+					"block": "tfc:ore/small_limonite",
+					"weight": 15
+				},
+				{
+					"block": "tfc:ore/small_malachite",
+					"weight": 10
+				},
+				{
+					"block": "gtceu:goethite_indicator",
+					"weight": 50
+				},
+				{
+					"block": "gtceu:malachite_bud_indicator",
+					"weight": 10
+				}
+			]
+		}
+	}
+}

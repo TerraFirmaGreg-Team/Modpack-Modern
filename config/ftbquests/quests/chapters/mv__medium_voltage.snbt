@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	filename: "mv__medium_voltage"
-	group: ""
+	group: "44D0F3E5067B5AB8"
 	icon: "gtceu:mv_electric_motor"
 	id: "43E779CEEB25D55B"
-	order_index: 4
+	order_index: 1
 	quest_links: [{
 		id: "6FCAD016C795DE93"
 		linked_quest: "7567E885B7166603"
@@ -1185,7 +1185,6 @@
 		{
 			dependencies: [
 				"5263F866638D875C"
-				"257DB4B39B2A928E"
 				"3D98819A799D2E64"
 			]
 			description: [
@@ -1707,7 +1706,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1FFD2242B94A7378"]
 			dependency_requirement: "one_started"
 			description: [
 				"Regular &o&dGregTech&r Fluid Pipes can only transport one fluid type at a time."

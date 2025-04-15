@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:random_boolean_selector",
+	"config": {
+		"feature_false": {
+			"feature": "tfg:nether/surface/big_red_mushroom",
+			"placement": []
+		},
+		"feature_true": {
+			"feature": "tfg:nether/surface/big_brown_mushroom",
+			"placement": []
+		}
+	}
+}

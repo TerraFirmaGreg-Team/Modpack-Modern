@@ -14,3 +14,10 @@ whitelist = ["expatternprovider:ex_interface_part", "expatternprovider:ex_patter
 #Disable Extended Inscriber's item render, it only works in client side.
 disableItemRender = false
 
+[device]
+	#Size multiplier of oversize interface
+	#Range: 2 ~ 4096
+	oversize_interface_multiplier = 16
+	#Set multiplier for specific AEKeyType in oversize interface
+	custom_oversize_interface_multiplier = ["appbot:mana 2", "appflux:flux 4"]
+

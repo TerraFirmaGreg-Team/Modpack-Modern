@@ -1,0 +1,31 @@
+{
+	"feature": "tfg:nether/surface/bone_patch",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 10
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 120
+				},
+				"min_inclusive": {
+					"above_bottom": 32
+				}
+			}
+		},
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 1
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

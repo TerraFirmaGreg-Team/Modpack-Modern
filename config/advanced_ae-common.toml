@@ -1,0 +1,68 @@
+
+["quantum computer"]
+	#Define the maximum dimensions of the Quantum Computer Multiblock.
+	#Range: 5 ~ 12
+	quantumComputerMaxSize = 7
+	#Define the maximum amount of multi threaders per Quantum Computer Multiblock.
+	#Range: 4 ~ 16
+	quantumComputerAcceleratorThreads = 8
+	#Define the maximum amount of multi threaders per Quantum Computer Multiblock.
+	#Range: 1 ~ 2
+	quantumComputerMaxMultiThreaders = 1
+	#Define the maximum amount of Data Entanglers per Quantum Computer Multiblock.
+	#Range: 1 ~ 2
+	quantumComputermaxDataEntanglers = 1
+	#Define the multiplication factor of the multi threaders.
+	#Range: 2 ~ 8
+	quantumComputerMultiThreaderMultiplication = 4
+	#Define the multiplication factor of the data entanglers.
+	#Range: 2 ~ 8
+	quantumComputerDataEntanglerMultiplication = 4
+
+["quantum armor"]
+	#Define the maximum walk speed increase. Values are divided by 10 before use.
+	#Range: 10 ~ 100
+	quantumArmorMaxWalkSpeed = 60
+	#Define the maximum sprint speed increase. Values are divided by 10 before use.
+	#Range: 10 ~ 150
+	quantumArmorMaxSprintSpeed = 80
+	#Define the maximum increase in step height.
+	#Range: 1 ~ 5
+	quantumArmorMaxStepHeight = 3
+	#Define the maximum increase in jump height.
+	#Range: 1 ~ 5
+	quantumArmorMaxJumpHeight = 3
+	#Define the maximum swim speed increase. Values are divided by 10 before use.
+	#Range: 10 ~ 150
+	quantumArmorSwimSpeedBoost = 80
+	#Define the HP increased of the HP Buffer card.
+	#Range: 5 ~ 50
+	quantumArmorHpBuffer = 20
+	#Define the maximum speed boost of the Flight Card.
+	#Range: 1 ~ 15
+	quantumArmorMaxFlightSpeed = 10
+	#Define the evasion % chance of the evasion card.
+	#Range: 0 ~ 100
+	quantumArmorEvasionChance = 30
+	#Define the max range of the magnet card.
+	#Range: 5 ~ 15
+	quantumArmorMagnetRange = 12
+	#Define the Attack Damage boost of the Strength Card.
+	#Range: 5 ~ 50
+	quantumArmorStrengthBoost = 10
+	#Define the Attack Speed Damage boost of the Attack Speed Card.
+	#Range: 1 ~ 10
+	quantumArmorAttackSpeedBoost = 5
+	#Define the luck boost of the Luck Card.
+	#Range: 1 ~ 5
+	quantumArmorLuckBoost = 2
+	#Define the max additional reach of the Reach Card.
+	#Range: 1 ~ 8
+	quantumArmorMaxReachBoost = 5
+	#Define the amount of hearts regenerated per tick with the Regeneration Card. Value will be divided by 10 before use.
+	#Range: 1 ~ 20
+	quantumArmorRenegerationPerTick = 10
+	#Define the maximum percentage of incoming damage absorbed by the Quantum Armor. This value is still limited by the energy buffer in the equipment.
+	#Range: 5 ~ 100
+	quantumArmorPercentageDamageAbsorption = 30
+

@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:dripstone_block",
+							"conditions": [
+								{
+									"condition": "tfc:is_isolated"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "tfg:loose/dripstone",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 4,
+										"type": "minecraft:uniform"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
+}

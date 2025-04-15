@@ -1,0 +1,46 @@
+
+[Freecam]
+	#The type of flight used by freecam.
+	#Allowed Values: CREATIVE, DEFAULT
+	"Flight Mode" = "DEFAULT"
+	#The horizontal speed of freecam.
+	#Range: 0.0 ~ 10.0
+	"Horizontal Speed" = 1.0
+	#The vertical speed of freecam.
+	#Range: 0.0 ~ 10.0
+	"Vertical Speed" = 1.0
+	#Allows travelling through transparent blocks in freecam.
+	"Ignore Transparent Blocks" = true
+	#Allows travelling through doors/trapdoors/gates in freecam.
+	"Ignore Openable Blocks" = true
+	#Allows travelling through all blocks in freecam.
+	"Ignore All Collision" = true
+	#Whether 'Initial Perspective' should check for collision, even when using 'Ignore All Collision'.
+	"Always Check Initial Collision" = false
+	#The initial perspective of the camera.
+	#Allowed Values: FIRST_PERSON, THIRD_PERSON, THIRD_PERSON_MIRROR, INSIDE
+	"Initial Perspective" = "INSIDE"
+	#Shows your player in its original position.
+	"Show Player" = true
+	#Whether you can see your hand in freecam.
+	"Show Hand" = false
+	#Increases brightness while in freecam.
+	"Full Brightness" = false
+	#Whether you see a fog overlay underwater, in lava, or powdered snow.
+	"Show Submersion Fog" = false
+	#Disables freecam when damage is received.
+	"Disable on Damage" = true
+	#Prevents player movement while freecam is active.
+	#WARNING: Multiplayer usage not advised.
+	"Freeze Player" = false
+	#Whether you can interact with blocks/entities in freecam.
+	#WARNING: Multiplayer usage not advised.
+	"Allow Interaction" = false
+	#The source of block/entity interactions.
+	#Allowed Values: CAMERA, PLAYER
+	"Interaction Mode" = "CAMERA"
+	#Notifies you when entering/exiting freecam.
+	"Freecam Notifications" = true
+	#Notifies you when entering/exiting tripod cameras.
+	"Tripod Notifications" = true
+

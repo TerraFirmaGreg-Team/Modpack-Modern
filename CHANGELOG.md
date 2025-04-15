@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased]
+### Warning for upgrading your world
+- This is a major update that changes many things! 
+- It is safest to create a new instance and copy your world across, instead of trying to update your world in-place. 
+- Check that everything works before permanently changing over to the new version!
+- GregTech has removed its kinetic machines, so they will disappear when upgrading. Please recycle your machines first!
+- Several ores and ingots have changed. After upgrading, they will have a "REPLACE ME" texture. Put them in a crafting grid to change to the new version.
+### Changes
+- Latest version of GregTech! Comes with new textures and a few new features, many bug fixes and much more stability.
+- Early game overhaul! You start getting into some automation much earlier and gradually unlock more as you progress, instead of having it all dumped on you after steel.
+- New dimension! The Beneath, basically a TFG-ified version of the nether. Stand on overworld bedrock for a bit to start exploring!
+- Quest rewrite! The first few quest chapters have been totally remade from the ground up to be more readable, have fewer breaking dependencies, and reflect actual progression. Most of the optional but useful content has been put into its own dedicated section.
+- The minimum amount of lava source blocks to be considered infinite has been increased from 1 to 2000. There's many lava lakes underground, and trains are more accessible.
+- Many other bug fixes, too many to list!
+
+
 ## [0.7.19] - 25.01.2025
 ### Changes
 - Added budding crystals for the other gemstone ores (Pyritie).
