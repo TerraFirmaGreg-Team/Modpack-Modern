@@ -7,8 +7,6 @@
     "tinyTntBlockDamage": true,
     "channels_comment": "Changes the channel capacity that cables provide in AE2.",
     "channels": "default",
-    "pathfindingStepsPerTick_comment": "The number of pathfinding steps that are taken per tick and per grid that is booting. Lower numbers will mean booting takes longer, but less work is done per tick.",
-    "pathfindingStepsPerTick": 4,
     "spatialAnchorEnableRandomTicks_comment": "Whether Spatial Anchors should force random chunk ticks and entity spawning.",
     "spatialAnchorEnableRandomTicks": true
   },
@@ -76,7 +74,11 @@
     "GridEnergyStoragePerNode_comment": "How much energy can the internal grid buffer storage per node attached to the grid.",
     "GridEnergyStoragePerNode": 25.0,
     "CrystalResonanceGeneratorRate_comment": "How much energy a crystal resonance generator generates per tick.",
-    "CrystalResonanceGeneratorRate": 20.0
+    "CrystalResonanceGeneratorRate": 20.0,
+    "p2pTunnelEnergyTax_comment": "The cost to transport energy through an energy P2P tunnel expressed as a factor of the transported energy.",
+    "p2pTunnelEnergyTax": 0.025,
+    "p2pTunnelTransportTax_comment": "The cost to transport items/fluids/etc. through P2P tunnels, expressed in AE energy per equivalent I/O bus operation for the transported object type (i.e. items\u003dper 1 item, fluids\u003dper 125mb).",
+    "p2pTunnelTransportTax": 0.025
   },
   "Condenser": {
     "MatterBalls": 256,

@@ -1,0 +1,23 @@
+{
+	"name": "Unique Blocks",
+	"category": "tfc:beneath",
+	"icon": "beneath:blackstone_aqueduct",
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_aqueduct",
+			"text": "The Pyroxenite Aqueduct allows lava to be conducted at any distance."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:shapeless/hellbricks_from_soot",
+			"text": "Hellbricks are a building block that are also used for the Hellforge."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/blackstone_brick",
+			"text": "Migmatite and Pyroxenite bricks are made like regular bricks, and that includes needing to create the brick item."
+		}
+	],
+	"read_by_default": true
+}

@@ -1,0 +1,19 @@
+
+#Client settings
+[client]
+	#Set line color. [Default: YELLOW]
+	#Allowed Values: RANDOM, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+	lineColor = "YELLOW"
+	#Set text color. [Default: YELLOW]
+	#Allowed Values: RANDOM, XYZRGB, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+	textColor = "YELLOW"
+	#Set text size [Default: 0.02]
+	#Range: 0.01 ~ 0.1
+	textSize = 0.02
+	#Set line width (thickness). [Default: 2]
+	#Range: 1.0 ~ 16.0
+	lineWidth = 2.0
+	#Set line width when further away (thickness). [Default: 2]
+	#Range: 1 ~ 16
+	lineWidthMax = 2
+

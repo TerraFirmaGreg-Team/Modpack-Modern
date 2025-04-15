@@ -1,0 +1,51 @@
+{
+	"replace": true,
+	"values": [
+		"gtceu:copper_axe",
+		"gtceu:copper_sword",
+		"gtceu:copper_knife",
+		"gtceu:copper_wrench",
+		"gtceu:copper_crowbar",
+		"tfc:metal/javelin/copper",
+		"tfc:metal/mace/copper",
+
+		"gtceu:bronze_axe",
+		"gtceu:bronze_sword",
+		"gtceu:bronze_knife",
+		"gtceu:bronze_wrench",
+		"gtceu:bronze_crowbar",
+		"tfc:metal/javelin/bronze",
+		"tfc:metal/mace/bronze",
+
+		"gtceu:black_bronze_axe",
+		"gtceu:black_bronze_sword",
+		"gtceu:black_bronze_knife",
+		"gtceu:black_bronze_wrench",
+		"gtceu:black_bronze_crowbar",
+		"tfc:metal/javelin/black_bronze",
+		"tfc:metal/mace/black_bronze",
+
+		"gtceu:bismuth_bronze_axe",
+		"gtceu:bismuth_bronze_sword",
+		"gtceu:bismuth_bronze_knife",
+		"gtceu:bismuth_bronze_wrench",
+		"gtceu:bismuth_bronze_crowbar",
+		"tfc:metal/javelin/bismuth_bronze",
+		"tfc:metal/mace/bismuth_bronze",
+
+		"gtceu:wrought_iron_axe",
+		"gtceu:wrought_iron_sword",
+		"gtceu:wrought_iron_knife",
+		"gtceu:wrought_iron_wrench",
+		"gtceu:wrought_iron_crowbar",
+		"tfc:metal/javelin/wrought_iron",
+		"tfc:metal/mace/wrought_iron",
+
+		"gtceu:stone_axe",
+		"gtceu:stone_knife",
+		"tfc:stone/javelin/sedimentary",
+		"tfc:stone/javelin/metamorphic",
+		"tfc:stone/javelin/igneous_extrusive",
+		"tfc:stone/javelin/igneous_intrusive"
+	]
+}
