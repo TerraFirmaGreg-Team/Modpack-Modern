@@ -66,7 +66,7 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-    event.recipes.gtceu.centrifuge('beets_to_sugar')
+    event.recipes.gtceu.centrifuge('tfg:beets_to_sugar')
         .itemInputs('5x tfc:food/beet')
         .inputFluids(Fluid.of('tfc:salt_water', 1000))
         .itemOutputs('3x minecraft:sugar', '3x gtceu:plant_ball', '1x #forge:dusts/salt')
