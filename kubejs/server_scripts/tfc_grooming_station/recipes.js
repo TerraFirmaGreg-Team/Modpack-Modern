@@ -14,7 +14,6 @@ const registerTFCGroomingStationRecipes = (event) => {
     ]
 
     materials.forEach(material => {
-        console.log(material)
         event.shaped(`tfcgroomer:${material}_grooming_station`, [
             'ABA', 
             'AAA',

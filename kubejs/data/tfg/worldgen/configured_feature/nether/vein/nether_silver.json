@@ -1,0 +1,127 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 160,
+		"density": 0.5,
+		"min_y": 24,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_silver",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_galena_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:granite_silver_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:granite_lead_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_galena_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_silver_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gneiss"
+				],
+				"with": [
+					{
+						"block": "gtceu:gneiss_galena_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gneiss_silver_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:gneiss_lead_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_galena_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_silver_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_galena_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:pyroxenite_silver_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:pyroxenite_lead_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:raw_galena_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_silver_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_lead_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_native_silver",
+					"weight": 50
+				},
+				{
+					"block": "gtceu:galena_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:lead_indicator",
+					"weight": 25
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"type": "minecraft:tree",
+	"config": {
+		"decorators": [],
+		"dirt_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfc:dirt/silt"
+			}
+		},
+		"foliage_placer": {
+			"type": "minecraft:random_spread_foliage_placer",
+			"foliage_height": 2,
+			"leaf_placement_attempts": 70,
+			"offset": 0,
+			"radius": 3
+		},
+		"foliage_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfc:wood/leaves/mangrove",
+				"Properties": {
+					"distance": "7",
+					"persistent": "false",
+					"waterlogged": "false"
+				}
+			}
+		},
+		"force_dirt": false,
+		"ignore_vines": true,
+		"minimum_size": {
+			"type": "minecraft:two_layers_feature_size",
+			"limit": 2,
+			"lower_size": 0,
+			"upper_size": 2
+		},
+		"root_placer": {
+			"type": "minecraft:mangrove_root_placer",
+			"above_root_placement": {
+				"above_root_placement_chance": 0.3,
+				"above_root_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "minecraft:moss_carpet"
+					}
+				}
+			},
+			"mangrove_root_placement": {
+				"can_grow_through": "#minecraft:moss_replaceable",
+				"max_root_length": 15,
+				"max_root_width": 8,
+				"muddy_roots_in": [
+					"minecraft:clay",
+					"minecraft:moss_block",
+					"minecraft:deepslate",
+					"tfg:rock/hardened_deepslate"
+				],
+				"muddy_roots_provider": {
+					"type": "minecraft:simple_state_provider",
+					"state": {
+						"Name": "tfc:muddy_roots/silt",
+						"Properties": {
+							"axis": "y"
+						}
+					}
+				},
+				"random_skew_chance": 0.2
+			},
+			"root_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:mangrove_roots",
+					"Properties": {
+						"waterlogged": "false"
+					}
+				}
+			},
+			"trunk_offset_y": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 3,
+					"min_inclusive": 1
+				}
+			}
+		},
+		"trunk_placer": {
+			"type": "minecraft:upwards_branching_trunk_placer",
+			"base_height": 2,
+			"can_grow_through": "#minecraft:mangrove_logs_can_grow_through",
+			"extra_branch_length": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 2,
+					"min_inclusive": 0
+				}
+			},
+			"extra_branch_steps": {
+				"type": "minecraft:uniform",
+				"value": {
+					"max_inclusive": 5,
+					"min_inclusive": 2
+				}
+			},
+			"height_rand_a": 2,
+			"height_rand_b": 5,
+			"place_branch_per_log_probability": 0.5
+		},
+		"trunk_provider": {
+			"type": "minecraft:simple_state_provider",
+			"state": {
+				"Name": "tfc:wood/wood/mangrove",
+				"Properties": {
+					"axis": "y"
+				}
+			}
+		}
+	}
+}

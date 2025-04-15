@@ -1,0 +1,49 @@
+{
+	"name": "Temperature Management",
+	"category": "tfc:beneath",
+	"icon": "minecraft:ice",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The Beneath is hot! The temperature starts at 15C at the very top, and only gets hotter as you descend.$(br2)$(item)Burlap$() and $(item)Silk$() clothing will help, but here are some other ways to stay cool!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:water_bucket",
+			"title": "Water",
+			"text": "Water can be found all over the upper levels of the Beneath. Taking a quick dip can cool you off fast!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Ice",
+			"item": "minecraft:packed_ice",
+			"text": "Bring along some $(thing)Ice$()! Standing near it will lower the ambient temperature. Ice can be harvested on the surface using a $(item)Saw$(), and $(thing)Packed$() and $(thing)Blue$() ice won't melt."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Blue Steel Equipment",
+			"item": "create:netherite_diving_helmet,create:netherite_backtank,minecraft:netherite_leggings,create:netherite_diving_boots",
+			"text": "Looking for something more permanent? The $(thing)Blue Steel Diving Set$() will keep your temperature capped at 28C, and lets you swim in lava too!$(br2)$(item)Lavaproof Hides$() can be obtained from the native $(thing)Red Elk$() or looted from Bastions."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_helmet",
+			"recipe2": "tfg:create/shaped/netherite_diving_helmet_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_backtank",
+			"recipe2": "tfg:create/shaped/netherite_backtank_upgrade"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:minecraft/shaped/netherite_leggings"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:create/shaped/netherite_diving_boots",
+			"recipe2": "tfg:create/shaped/netherite_diving_boots_upgrade"
+		}
+	],
+	"read_by_default": true
+}

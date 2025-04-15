@@ -1,0 +1,155 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 160,
+		"density": 0.5,
+		"min_y": 16,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_garnierite",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_garnierite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_nickel_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:gabbro_cobaltite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:gabbro_pentlandite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:gabbro_cobalt_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cobaltite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pentlandite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_garnierite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:diorite_nickel_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:diorite_cobaltite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:diorite_pentlandite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:diorite_cobalt_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cobaltite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pentlandite_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_garnierite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:pyroxenite_nickel_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:pyroxenite_cobaltite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:pyroxenite_pentlandite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:pyroxenite_cobalt_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_garnierite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_cobaltite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_pentlandite_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 12,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "tfc:ore/small_garnierite",
+					"weight": 40
+				},
+				{
+					"block": "gtceu:pentlandite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:cobaltite_indicator",
+					"weight": 20
+				},
+				{
+					"block": "gtceu:cobalt_indicator",
+					"weight": 15
+				}
+			]
+		}
+	}
+}
