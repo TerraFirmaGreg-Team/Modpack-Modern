@@ -11,12 +11,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/fire_clay",
-      "text": "Вогнетривку глину виготовляють з $(l:tfg_ores/normal_graphite)графітового$() порошку, перетертий в $(l:mechanics/quern)жорнах$(), а також $(l:tfg_ores/surface_kaolin#powder)каолінітового$() порошку"
+      "text": "Вогнетривку глину виготовляють з порошку $(l:tfg_ores/normal_graphite)графіту$() подрібненого в $(l:mechanics/quern)жорні$(), а також порошку $(l:tfg_ores/surface_kaolin#powder)каолініту$()"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/kaolin_clay",
-      "text": "Каолінітовий порошок виготовляється шляхом нагрівання $(l:tfg_ores/surface_kaolin)Каолінітової глини$(). Однак процес не ідеальний, і лише 20% глини перетвориться на порошок!"
+      "text": "Каолінітовий порошок виготовляють шляхом нагрівання $(l:tfg_ores/surface_kaolin)Каолінітової Глини$(). Однак процес не ідеальний, і лише 20% глини утворює порошок!"
     },
     {
       "type": "tfc:knapping_recipe",
@@ -28,12 +28,12 @@
       "type": "tfc:knapping_recipe",
       "anchor": "fire_bricks",
       "recipe": "tfc:fire_clay_knapping/brick",
-      "text": "The $(l:mechanics/blast_furnace)Доменна Піч$() приймає ізоляцію лише вогнетривкою цеглиною."
+      "text": "The $(l:mechanics/blast_furnace)Доменна Піч$() приймає ізоляцію лише вогнетривкою цеглою."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:fire_clay_knapping/fire_ingot_mold",
-      "text": "$(thing)Вогнетривких Виливків для Злитків$() є сильнішим типом $(l:getting_started/pottery#mold)Виливків для Злитків$() ймовірність зламання якої становить лише 1 до 100, проти 1 до 10 для звичайних виливків для злитків."
+      "text": "$(thing)Вогнетривкі форми для злитків$()- це міцніший тип $(l:getting_started/pottery#mold)Форми для злитків$(), який має лише 1 до 100 шансів зламатися, проти 1 до 10 для звичайної форми для злитків."
     }
   ],
   "read_by_default": true
