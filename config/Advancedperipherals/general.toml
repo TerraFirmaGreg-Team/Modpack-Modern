@@ -11,3 +11,9 @@
 	#Range: > 0
 	initialCooldownSensitiveLevel = 6000
 
+[Unsafe]
+	#By setting this value to true, I understand all operations below are danger to my adventure, and if they caused unexpected behavior in my world, I will not consider it as AP's liability
+	enableUnsafe = false
+	#Ignore turtle peripheral item's NBT when equipping. **YOU WILL LOSE ALL NBT ON THE ITEM**
+	ignoreTurtlePeripheralItemNBT = false
+
