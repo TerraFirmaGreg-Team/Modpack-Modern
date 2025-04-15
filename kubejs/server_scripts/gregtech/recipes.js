@@ -126,7 +126,6 @@ const registerGTCEURecipes = (event) => {
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
-	event.remove({ id: 'tfg:fluid_solidifier/latex_heating' })
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_heating')
 		.duration(24*20)
 		.EUt(30)
