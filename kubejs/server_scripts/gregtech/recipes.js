@@ -139,6 +139,13 @@ const registerGTCEURecipes = (event) => {
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
+	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_heating')
+		.duration(24*20)
+		.EUt(30)
+		.itemInputs('tfc:powder/sulfur')
+		.itemOutputs('gtceu:sticky_resin')
+		.inputFluids(Fluid.of('tfg:latex', 1000))
+
 	//#region Выход: Растительный шарик
 
 	// 8x Ванильная растительность -> Plant Ball (Compressor)
