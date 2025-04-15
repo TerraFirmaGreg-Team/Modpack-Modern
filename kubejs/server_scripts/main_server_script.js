@@ -173,6 +173,7 @@ ServerEvents.recipes(event => {
     registerCreateHorsePowerBlockRecipes(event)
     registerDiggerHelmetRecipes(event)
     registerDomumOrnamentumRecipes(event)
+    registerEndermanOverhaulRecipes(event)
     registerEveryCompatRecipes(event)
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
