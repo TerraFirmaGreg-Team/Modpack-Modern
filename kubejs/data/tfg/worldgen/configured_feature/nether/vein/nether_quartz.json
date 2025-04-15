@@ -1,0 +1,230 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 150,
+		"density": 0.4,
+		"min_y": 0,
+		"max_y": 128,
+		"size": 45,
+		"random_name": "nether_quartz",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"beneath:soul_clay",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:deepslate_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:deepslate_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:pyroxenite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:pyroxenite_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:basalt_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:dripstone_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:dripstone_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/granite"
+				],
+				"with": [
+					{
+						"block": "gtceu:granite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:granite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:granite_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:diorite_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:diorite_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_quartzite_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_nether_quartz_ore",
+						"weight": 65
+					},
+					{
+						"block": "gtceu:gabbro_barite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:raw_quartzite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_nether_quartz_block",
+						"weight": 2
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:barite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:nether_quartz_bud_indicator",
+					"weight": 65
+				},
+				{
+					"block": "gtceu:quartzite_bud_indicator",
+					"weight": 30
+				}
+			]
+		}
+	}
+}

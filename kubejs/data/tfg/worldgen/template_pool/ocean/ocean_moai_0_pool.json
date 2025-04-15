@@ -1,0 +1,60 @@
+{
+    "name": "tfg:ocean/ocean_moai_0_pool",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {	
+        "weight": 2,
+        "element": {
+          "location": "tfg:ocean/ocean_moai_0_0",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 2,
+        "element": {
+          "location": "tfg:ocean/ocean_moai_0_1",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 2,
+        "element": {
+          "location": "tfg:ocean/ocean_moai_0_2",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:ocean/ocean_moai_0_3",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:ocean/ocean_moai_0_4",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:ocean/ocean_moai_0_5",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      }
+    ]
+}

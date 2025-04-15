@@ -1,0 +1,126 @@
+
+#.
+#Packmakers' control panel for internal recipe compat
+[recipes]
+
+	#.
+	#.
+	#Recipes configs
+	[recipes.recipes]
+
+		#.
+		#Grinder settings
+		[recipes.recipes.grinder]
+			#.
+			#Destroy item, when it inserted in grinder with wrong recipe speed. Only for sandpaper recipes.
+			destroyOnWrongGrinderSpeed = false
+			#.
+			#Low speed value for grinder crafts, speedLimits = 1.
+			#Range: 1 ~ 256
+			lowSpeedValue = 16
+			#.
+			#Medium speed value for grinder crafts, speedLimits = 2.
+			#Range: 1 ~ 256
+			mediumSpeedValue = 64
+			#.
+			#Allows sandpaper crafts on belt grinder, when recipes collides belt grinder recipe have priority.
+			allowSandpaperPolishingOnGrinder = true
+			#.
+			#Works only when "allowSandpaperPolishingOnGrinder" is true. Defines speed limits for sandpaper recipes on belt grinder.
+			#Range: 0 ~ 3
+			speedLimitsForSandpaperPolishingRecipes = 1
+
+		#.
+		#Vibrating Table settings
+		[recipes.recipes.vibratingTable]
+			#.
+			#Allows unpacking storage blocks crafts on vibrating table.
+			allowUnpackingOnVibratingTable = false
+			#.
+			#Allows vibrating leaves on vibrating table to get matching drops.
+			allowVibratingLeaves = false
+
+		#.
+		#Curving Press settings
+		[recipes.recipes.curvingPress]
+			#.
+			#Allows automatic recognize recipes for curving press
+			allowAutoCurvingRecipes = false
+			#.
+			#Amount of damage, that curving heads will get after auto recipe
+			#Range: 0 ~ 1000
+			damageHeadAfterAutoCurvingRecipe = 0
+
+		#.
+		#Helve Hammer settings
+		[recipes.recipes.helveHammer]
+			#.
+			#Allows processing templateless recipes for Helve Hammer
+			allowTemplatelessRecipes = true
+			#.
+			#Helve Hammer will damage Anvil after finishing recipe
+			damageAnvilAfterHammeringRecipe = false
+			#.
+			#Chance of Anvil damaging after finishing recipe
+			#Range: 1 ~ 100
+			chanceToDamageAnvilAfterHammeringRecipe = 12
+
+#.
+#Parameters and abilities of Vintage Improvements's kinetic mechanisms
+[kinetics]
+
+	[kinetics.stressValues]
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				laser = 0.25
+				belt_grinder = 0.5
+				vacuum_chamber = 0.5
+				lathe = 0.25
+				lathe_moving = 0.25
+				vibrating_table = 0.5
+				helve_kinetic = 0.5
+				curving_press = 0.5
+				spring_coiling_machine = 0.5
+				centrifuge = 0.5
+
+#.
+#Parameters and abilities of Vintage Improvements's energy mechanisms
+[energy]
+
+	#.
+	#.
+	#Energy configs
+	[energy.energy]
+		#.
+		#Enable if energy machines doesn't consume energy
+		forceEnergy = false
+
+		#.
+		#Laser settings
+		[energy.energy.laser]
+			#.
+			#Laser max input in FE/t (Energy transfer)
+			#Range: > 0
+			laserMaxInput = 10000
+			#.
+			#Laser internal capacity in FE
+			#Range: > 0
+			laserCapacity = 40000
+			#.
+			#Laser charge rate in FE/t
+			#Range: > 0
+			laserChargeRate = 5000
+			#.
+			#Laser charge rate in FE/t for recipes
+			#Range: > 0
+			laserRecipeChargeRate = 2000
+

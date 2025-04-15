@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "minecraft:basalt",
+		"spike": "tfc:rock/spike/basalt",
+		"anchor_blocks": "minecraft:base_stone_nether"
+	}
+}

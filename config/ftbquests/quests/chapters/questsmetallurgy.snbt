@@ -1,0 +1,1320 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "questsmetallurgy"
+	group: "3C4612A920658A7E"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "gtceu:wrought_iron_ingot"
+	}
+	id: "5F560FF28458A555"
+	order_index: 1
+	quest_links: [
+		{
+			id: "763EE3CC2D320738"
+			linked_quest: "48A8E3210B2BAE1C"
+			shape: "gear"
+			size: 4.0d
+			x: 2.0d
+			y: -26.0d
+		}
+		{
+			id: "118AABC6BC02A7AB"
+			linked_quest: "7B2068B200631D5C"
+			x: 5.0d
+			y: -34.0d
+		}
+		{
+			id: "227B6C88FFE99435"
+			linked_quest: "4EBABACAB444244D"
+			x: 16.5d
+			y: -23.0d
+		}
+		{
+			id: "19CF6D922179DFF9"
+			linked_quest: "11C45DBB20ED7647"
+			x: 9.0d
+			y: -34.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["003EB186944BD36E"]
+			description: ["{quests.metal_age.this_is_a_bucket.desc}"]
+			id: "25551B8DB67BE0A9"
+			shape: "gear"
+			size: 4.0d
+			subtitle: "{quests.metal_age.this_is_a_bucket.subtitle}"
+			tasks: [{
+				id: "4AB43F0CB3DCFD4B"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			title: "{quests.metal_age.this_is_a_bucket.title}"
+			x: 13.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["56CA2EB7812529C5"]
+			description: ["{quests.metal_age.redblu_buckets.desc}"]
+			id: "003EB186944BD36E"
+			size: 1.0d
+			subtitle: "{quests.metal_age.redblu_buckets.subtitle}"
+			tasks: [
+				{
+					id: "7218CBCCA313343B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/bucket/red_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "41001037515E3120"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/bucket/blue_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.redblu_buckets.title}"
+			x: 16.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["7E0239E9CC73F09F"]
+			description: ["{quests.metal_age.black_steel_anvil.desc}"]
+			id: "52DAF93E2F3D688A"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.black_steel_anvil.subtitle}"
+			tasks: [{
+				id: "5E7E9401FF7C5402"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/black_steel"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.black_steel_anvil.title}"
+			x: 27.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["4310B619B57276ED"]
+			description: ["{quests.metal_age.steel_anvil.desc}"]
+			id: "04DE7C58F20B535A"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.steel_anvil.subtitle}"
+			tasks: [{
+				id: "338F94FE331E0954"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/steel"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.steel_anvil.title}"
+			x: 27.5d
+			y: -32.0d
+		}
+		{
+			dependencies: ["358571B6E692F198"]
+			description: ["{quests.metal_age.wrought_iron_anvil.desc}"]
+			id: "174DA15847665CF8"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.wrought_iron_anvil.subtitle}"
+			tasks: [{
+				id: "0E566B2921529CFE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/wrought_iron"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.wrought_iron_anvil.title}"
+			x: 9.0d
+			y: -32.0d
+		}
+		{
+			dependencies: ["133DB645B6E0585A"]
+			description: ["{quests.metal_age.bronze_anvil.desc}"]
+			id: "3C173357029AB649"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.bronze_anvil.subtitle}"
+			tasks: [{
+				id: "19778123CAB30DAA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:bronze_anvils)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:bronze_anvils"
+				type: "item"
+			}]
+			title: "{quests.metal_age.bronze_anvil.title}"
+			x: 2.0d
+			y: -32.0d
+		}
+		{
+			dependencies: ["48A8E3210B2BAE1C"]
+			description: ["{quests.metal_age.weld_bronze_ingots.desc}"]
+			id: "133DB645B6E0585A"
+			subtitle: "{quests.metal_age.weld_bronze_ingots.subtitle}"
+			tasks: [{
+				count: 7L
+				id: "497C431206F498A5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:bronze_double_ingot)item(gtceu:black_bronze_double_ingot)item(gtceu:bismuth_bronze_double_ingot))"
+					}
+				}
+				title: "{quests.tasktype.item.any} #forge:double_ingots/bronze"
+				type: "item"
+			}]
+			title: "{quests.metal_age.weld_bronze_ingots.title}"
+			x: 2.0d
+			y: -29.5d
+		}
+		{
+			dependencies: [
+				"3C173357029AB649"
+				"7B2068B200631D5C"
+			]
+			description: ["{quests.metal_age.bloomery.desc}"]
+			id: "0A92F5C4BB6AF972"
+			size: 2.0d
+			subtitle: "{quests.metal_age.bloomery.subtitle}"
+			tasks: [
+				{
+					id: "323A28991DD98C8D"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					id: "15B937178A5E5D8E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:raw_iron_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "38651A52735D8872"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:wrought_iron_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.bloomery.title}"
+			x: 5.0d
+			y: -32.0d
+		}
+		{
+			dependencies: [
+				"12CB3B9ADC586521"
+				"7CD2922D9F6FA6C5"
+				"00B22730B33CB4DB"
+			]
+			description: ["{quests.metal_age.blast_furnace.desc}"]
+			id: "5996A3A0D475B8A6"
+			size: 2.0d
+			subtitle: "{quests.metal_age.blast_furnace.subtitle}"
+			tasks: [
+				{
+					id: "3A2A3286F594F977"
+					item: "tfc:blast_furnace"
+					type: "item"
+				}
+				{
+					id: "0EE45FC2BA2E363E"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:tuyeres)"
+						}
+					}
+					title: "{quests.tasktype.item.any} #tfc:tuyeres"
+					type: "item"
+				}
+				{
+					id: "35F0EFF2E4A514E3"
+					item: "tfc:bellows"
+					type: "item"
+				}
+				{
+					id: "5115EB2096C8E86C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/pig_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "2153FE85D0898117"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.blast_furnace.title}"
+			x: 23.5d
+			y: -32.0d
+		}
+		{
+			dependencies: [
+				"0A92F5C4BB6AF972"
+				"021D3DEEB15A3D17"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.weld_wrought_iron_ingots.desc}"]
+			id: "358571B6E692F198"
+			subtitle: "{quests.metal_age.weld_wrought_iron_ingots.subtitle}"
+			tasks: [{
+				count: 7L
+				id: "05AD17F66DFE3C56"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:wrought_iron_double_ingot"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.weld_wrought_iron_ingots.title}"
+			x: 7.0d
+			y: -32.0d
+		}
+		{
+			dependencies: ["48A8E3210B2BAE1C"]
+			description: ["{quests.metal_age.bellows.desc}"]
+			hide_dependency_lines: true
+			id: "021D3DEEB15A3D17"
+			subtitle: "{quests.metal_age.bellows.subtitle}"
+			tasks: [{
+				id: "588EB07E980386F9"
+				item: "tfc:bellows"
+				type: "item"
+			}]
+			title: "{quests.metal_age.bellows.title}"
+			x: 7.0d
+			y: -34.0d
+		}
+		{
+			dependencies: ["5996A3A0D475B8A6"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.weld_steel_ingots.desc}"]
+			id: "4310B619B57276ED"
+			subtitle: "{quests.metal_age.weld_steel_ingots.subtitle}"
+			tasks: [{
+				count: 7L
+				id: "0EDB1D851E198274"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "gtceu:steel_double_ingot"
+				}
+				type: "item"
+			}]
+			title: "{quests.metal_age.weld_steel_ingots.title}"
+			x: 25.5d
+			y: -32.0d
+		}
+		{
+			dependencies: [
+				"061116CF508D54F6"
+				"68B7D07D57A103BE"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.kaolin_clay.desc}"]
+			id: "72F1C122FC26229C"
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "{quests.metal_age.kaolin_clay.subtitle}"
+			tasks: [
+				{
+					id: "673D38EB62FFD65F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:kaolin_clay"
+					}
+					type: "item"
+				}
+				{
+					icon: "tfc:red_kaolin_clay"
+					id: "576163D694ECF915"
+					observe_type: 1
+					timer: 0L
+					title: "{quests.tasktype.lookat} #tfc:kaolin_clay"
+					to_observe: "#tfc:kaolin_clay"
+					type: "observation"
+				}
+			]
+			title: "{quests.metal_age.kaolin_clay.title}"
+			x: 13.5d
+			y: -36.0d
+		}
+		{
+			dependencies: ["5A936E9BCF30AA3D"]
+			dependency_requirement: "one_started"
+			description: ["{quests.metal_age.overworld_graphite.desc}"]
+			icon: "tfc:ore/graphite/gabbro"
+			id: "53E1383F12EC6765"
+			optional: true
+			subtitle: "{quests.metal_age.overworld_graphite.subtitle}"
+			tasks: [{
+				id: "25A552657AFA7BC2"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.overworld_graphite.title}"
+			x: 13.0d
+			y: -30.5d
+		}
+		{
+			dependencies: [
+				"53E1383F12EC6765"
+				"2DB82986FE176CD7"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.graphite.desc}"]
+			id: "31CE13462759950C"
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "{quests.metal_age.graphite.subtitle}"
+			tasks: [{
+				id: "6B0C9D862BFD27BC"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:raw_graphite)item(gtceu:rich_raw_graphite)item(gtceu:poor_raw_graphite)item(gtceu:graphite_dust)item(gtceu:crushed_graphite_ore))"
+					}
+				}
+				title: "{quests.metal_age.graphite.task}"
+				type: "item"
+			}]
+			title: "{quests.metal_age.graphite.title}"
+			x: 13.5d
+			y: -28.5d
+		}
+		{
+			dependencies: [
+				"5301A38F7EA81140"
+				"5E186CD5E83BFDF0"
+				"72F1C122FC26229C"
+				"31CE13462759950C"
+				"5A936E9BCF30AA3D"
+			]
+			description: ["{quests.metal_age.fire_clay.desc}"]
+			id: "2C76EE197C14B0DC"
+			size: 2.0d
+			subtitle: "{quests.metal_age.fire_clay.subtitle}"
+			tasks: [{
+				count: 5L
+				id: "71DAE9C9C0192316"
+				item: "tfc:fire_clay"
+				type: "item"
+			}]
+			title: "{quests.metal_age.fire_clay.title}"
+			x: 17.5d
+			y: -32.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			description: ["{quests.metal_age.crucible.desc}"]
+			id: "12CB3B9ADC586521"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.crucible.subtitle}"
+			tasks: [
+				{
+					id: "768BF97F77EBFD73"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_crucible"
+					}
+					type: "item"
+				}
+				{
+					id: "5F344E4EF2AD2CE3"
+					item: "tfc:crucible"
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.crucible.title}"
+			x: 20.5d
+			y: -30.0d
+		}
+		{
+			dependencies: ["48A8E3210B2BAE1C"]
+			description: ["{quests.metal_age.anvil_recycling.desc}"]
+			icon: "tfc:firepit"
+			id: "3B2550394C94CEC9"
+			size: 1.0d
+			subtitle: "{quests.metal_age.anvil_recycling.subtitle}"
+			tasks: [{
+				id: "6C6A16120567D008"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.anvil_recycling.title}"
+			x: 0.0d
+			y: -29.5d
+		}
+		{
+			dependencies: ["3C173357029AB649"]
+			description: ["{quests.metal_age.mining.desc}"]
+			icon: "gtceu:almandine_indicator"
+			id: "234B68E86F72C29E"
+			subtitle: "{quests.metal_age.mining.subtitle}"
+			tasks: [
+				{
+					id: "6BB5900B1E695C61"
+					title: "{quests.tasktype.checkmark}"
+					type: "checkmark"
+				}
+				{
+					id: "42657F198063D88B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
+						}
+					}
+					optional_task: true
+					title: "Any #forge:tools/mining_hammers"
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.mining.title}"
+			x: 0.0d
+			y: -32.0d
+		}
+		{
+			dependencies: ["5A936E9BCF30AA3D"]
+			dependency_requirement: "one_started"
+			description: ["{quests.metal_age.beneath_kaolin.desc}"]
+			id: "061116CF508D54F6"
+			optional: true
+			subtitle: "{quests.metal_age.beneath_kaolin.subtitle}"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:netherrack"
+					id: "42372A0532A8AEDC"
+					title: "{quests.metal_age.beneath_kaolin.task}"
+					type: "dimension"
+				}
+				{
+					entity: "kaolinclayze:tfc"
+					icon: "kaolinclayze:tfc_spawn_egg"
+					id: "710B94F88C7078C9"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					biome: "tfg:nether/lush_hollow"
+					icon: "tfc:plant/blood_lily"
+					id: "5261A2540855D957"
+					title: "{quests.tasktype.travelto} tfg:nether/lush_hollow"
+					type: "biome"
+				}
+			]
+			title: "{quests.metal_age.beneath_kaolin.title}"
+			x: 14.0d
+			y: -33.5d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.fire_bricks.desc}"]
+			id: "7CD2922D9F6FA6C5"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.fire_bricks.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "26919640A9BC222C"
+					item: "tfc:fire_bricks"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "42C0B7955F4E1A44"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfcbetterbf:insulation"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.fire_bricks.title}"
+			x: 20.5d
+			y: -34.0d
+		}
+		{
+			dependencies: ["2C76EE197C14B0DC"]
+			description: ["{quests.metal_age.fire_clay_products.desc}"]
+			id: "0DB1BDFB493C5040"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.metal_age.fire_clay_products.subtitle}"
+			tasks: [
+				{
+					id: "50FAEE2106AD2BFE"
+					item: "tfc:crucible"
+					type: "item"
+				}
+				{
+					id: "074B26FF3804A5DE"
+					item: "tfcchannelcasting:mold_table"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "73561E6E6C7EEABA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/fire_ingot_mold"
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7FB54E81CE55D1B7"
+					item: "tfc:ceramic/fire_brick"
+					type: "item"
+				}
+				{
+					id: "740B80F0D5B72950"
+					item: "tfcchannelcasting:channel"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.fire_clay_products.title}"
+			x: 17.5d
+			y: -34.0d
+		}
+		{
+			dependencies: [
+				"7CD2922D9F6FA6C5"
+				"5996A3A0D475B8A6"
+			]
+			description: ["{quests.metal_age.fully_stacked_blast_furnace.desc}"]
+			id: "0DF072EF25B2628D"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.metal_age.fully_stacked_blast_furnace.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "55970B2D0D17C183"
+					item: "tfc:fire_bricks"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "7D122F795DD5ED22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfcbetterbf:insulation"
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.fully_stacked_blast_furnace.title}"
+			x: 23.5d
+			y: -34.0d
+		}
+		{
+			dependencies: ["52DAF93E2F3D688A"]
+			description: ["{quests.metal_age.red_blu.desc}"]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfchotornot:tongs/red_steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5792DDAA82895E67"
+			subtitle: "{quests.metal_age.red_blu.subtitle}"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "gtceu:overworld_marker"
+				id: "720D64916D1E3892"
+				title: "{quests.stone_age.temperature.task}"
+				type: "dimension"
+			}]
+			title: "{quests.metal_age.red_blu.title}"
+			x: 24.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["56CA2EB7812529C5"]
+			description: ["{quests.metal_age.red_steel_flask.desc}"]
+			id: "30D49878F3CEB08A"
+			subtitle: "{quests.metal_age.red_steel_flask.subtitle}"
+			tasks: [{
+				id: "7394672B4D19B0B2"
+				item: "waterflasks:red_steel_flask"
+				type: "item"
+			}]
+			title: "{quests.metal_age.red_steel_flask.title}"
+			x: 16.5d
+			y: -26.0d
+		}
+		{
+			dependencies: [
+				"5088768AAA28FCBA"
+				"6D04BAC5B215F90F"
+			]
+			description: ["{quests.metal_age.redblu_anvil.desc}"]
+			id: "56CA2EB7812529C5"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.metal_age.redblu_anvil.subtitle}"
+			tasks: [{
+				id: "20BCD64D8D893582"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:red_or_blue_anvil)"
+					}
+				}
+				title: "{quests.tasktype.item.any} #tfc:red_or_blue_anvil"
+				type: "item"
+			}]
+			title: "{quests.metal_age.redblu_anvil.title}"
+			x: 18.5d
+			y: -24.5d
+		}
+		{
+			dependencies: ["3C173357029AB649"]
+			description: ["{quests.metal_age.bronze_goodies.desc}"]
+			icon: "greate:andesite_alloy_cogwheel"
+			id: "26F07C926959FACF"
+			subtitle: "{quests.metal_age.bronze_goodies.subtitle}"
+			tasks: [{
+				id: "3AD41F7E9EE1076B"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.bronze_goodies.title}"
+			x: 2.0d
+			y: -34.0d
+		}
+		{
+			dependencies: ["174DA15847665CF8"]
+			description: ["{quests.metal_age.wrought_iron_goodies.desc}"]
+			icon: "create:chute"
+			id: "20C2CE92459BE14A"
+			subtitle: "{quests.metal_age.wrought_iron_goodies.subtitle}"
+			tasks: [{
+				id: "60605AA92B6947D8"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.wrought_iron_goodies.title}"
+			x: 9.0d
+			y: -30.0d
+		}
+		{
+			dependencies: ["174DA15847665CF8"]
+			description: ["{quests.metal_age.fire_clay_ingredients.desc}"]
+			icon: "minecraft:cartography_table"
+			id: "5A936E9BCF30AA3D"
+			subtitle: "{quests.metal_age.fire_clay_ingredients.subtitle}"
+			tasks: [{
+				id: "39CA01175999A291"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.fire_clay_ingredients.title}"
+			x: 13.5d
+			y: -32.0d
+		}
+		{
+			dependencies: ["5A936E9BCF30AA3D"]
+			description: ["{quests.metal_age.beneath_graphite.desc}"]
+			id: "2DB82986FE176CD7"
+			subtitle: "{quests.metal_age.beneath_graphite.subtitle}"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:netherrack"
+					id: "77162ADDC8732968"
+					title: "{quests.metal_age.beneath_graphite.task}"
+					type: "dimension"
+				}
+				{
+					entity: "kaolinclayze:golem_2"
+					icon: "kaolinclayze:golem_2_spawn_egg"
+					id: "0981F64F296CDDC5"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "{quests.metal_age.beneath_graphite.title}"
+			x: 14.0d
+			y: -30.5d
+		}
+		{
+			dependencies: ["5A936E9BCF30AA3D"]
+			description: ["{quests.metal_age.overworld_kaolin.desc}"]
+			icon: "tfc:plant/tree_fern"
+			id: "68B7D07D57A103BE"
+			subtitle: "{quests.metal_age.overworld_kaolin.subtitle}"
+			tasks: [{
+				id: "14DF5B1544AB9BA9"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.overworld_kaolin.title}"
+			x: 13.0d
+			y: -33.5d
+		}
+		{
+			dependencies: [
+				"2DB82986FE176CD7"
+				"061116CF508D54F6"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{quests.metal_age.blast_furance_fuel.desc}"]
+			hide_dependency_lines: true
+			id: "00B22730B33CB4DB"
+			subtitle: "{quests.metal_age.blast_furnace_fuel.subtitle}"
+			tasks: [{
+				id: "5133FF6E770AAB1C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:blast_furnace_fuel)"
+					}
+				}
+				title: "Any #tfc:blast_furnace_fuel"
+				type: "item"
+			}]
+			title: "{quests.metal_age.blast_furnace_fuel.title}"
+			x: 23.5d
+			y: -30.0d
+		}
+		{
+			dependencies: ["04DE7C58F20B535A"]
+			description: ["{quests.metal_age.steel_goodies.desc}"]
+			icon: "greate:steel_mechanical_pump"
+			id: "0C9B7745D812555A"
+			subtitle: "{quests.metal_age.steel_goodies.subtitle}"
+			tasks: [{
+				id: "3EB7C3AE88950E4B"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.steel_goodies.title}"
+			x: 29.5d
+			y: -30.0d
+		}
+		{
+			dependencies: ["52DAF93E2F3D688A"]
+			description: ["{quests.metal_age.black_steel_goodies.desc}"]
+			icon: "gtceu:hp_steam_solid_boiler"
+			id: "2C7368B3F573B284"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.metal_age.black_steel_goodies.subtitle}"
+			tasks: [{
+				id: "0CF65A33917DB2B4"
+				title: "{quests.tasktype.checkmark}"
+				type: "checkmark"
+			}]
+			title: "{quests.metal_age.black_steel_goodies.title}"
+			x: 25.5d
+			y: -22.5d
+		}
+		{
+			dependencies: [
+				"1CE0FF455668C145"
+				"04DE7C58F20B535A"
+			]
+			description: ["{quests.metal_age.highcarb_black_steel.desc}"]
+			id: "7E0239E9CC73F09F"
+			subtitle: "{quests.metal_age.highcarb_black_steel.subtitle}"
+			tasks: [
+				{
+					id: "3FBF024C565CB67E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/pig_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "3D2B14604D281C6C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.highcarb_black_steel.title}"
+			x: 27.5d
+			y: -30.0d
+		}
+		{
+			dependencies: ["5996A3A0D475B8A6"]
+			description: ["{quests.metal_age.weak_steel.desc}"]
+			id: "1CE0FF455668C145"
+			subtitle: "{quests.metal_age.weak_steel.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "3BEC54E69E2BDB05"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:steel_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "531F312BC55FD4E2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:nickel_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "538C8C5AB2F8D282"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:black_bronze_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.weak_steel.title}"
+			x: 25.5d
+			y: -30.0d
+		}
+		{
+			dependencies: ["27FF92982A24BC4E"]
+			description: ["{quests.metal_age.highcarb_red_steel.desc}"]
+			id: "5088768AAA28FCBA"
+			subtitle: "{quests.metal_age.highcarb_red_steel.subtitle}"
+			tasks: [
+				{
+					id: "21F560D36B3B4DCD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_red_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "75019ACF15E50D54"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/black_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.highcarb_red_steel.title}"
+			x: 20.5d
+			y: -25.5d
+		}
+		{
+			dependencies: ["5792DDAA82895E67"]
+			description: ["{quests.metal_age.weak_red_steel.desc}"]
+			id: "27FF92982A24BC4E"
+			subtitle: "{quests.metal_age.weak_red_steel.subtitle}"
+			tasks: [
+				{
+					id: "0843FBE28514A29F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:rose_gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "43C81DD8CF335763"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "create:brass_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5D133B38BBBBB102"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:steel_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3E57E946103AD6C3"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/black_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.weak_red_steel.title}"
+			x: 22.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["5792DDAA82895E67"]
+			description: ["{quests.metal_age.weak_blu_steel.desc}"]
+			id: "64F8A358EC3FEF45"
+			subtitle: "{quests.metal_age.weak_blu_steel.subtitle}"
+			tasks: [
+				{
+					id: "75B02DD1C85701E2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:sterling_silver_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "6C8633B40E4AFA08"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:bismuth_bronze_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4F5FD0F3F99A8FAB"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:steel_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0D755D99AD9C3DA0"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/black_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.weak_blu_steel.title}"
+			x: 22.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["64F8A358EC3FEF45"]
+			description: ["{quests.metal_age.highcarb_blu_steel.desc}"]
+			id: "6D04BAC5B215F90F"
+			subtitle: "{quests.metal_age.highcarb_blu_steel.subtitle}"
+			tasks: [
+				{
+					id: "3E67A3CFA3FE7F32"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/weak_blue_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "4774AFBF9D811C3D"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/black_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.highcarb_blu_steel.title}"
+			x: 20.5d
+			y: -23.5d
+		}
+		{
+			dependencies: ["3C173357029AB649"]
+			description: ["{quests.metal_age.copper_diving.desc}"]
+			id: "70FE6706B43FC5FC"
+			subtitle: "{quests.metal_age.copper_diving.subtitle}"
+			tasks: [
+				{
+					id: "63FC28D0F3FCDE11"
+					item: {
+						Count: 1
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "039434E2FD245F63"
+					item: {
+						Count: 1
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58440049BDA56F74"
+					item: {
+						Count: 1
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.metal_age.copper_diving.title}"
+			x: 0.0d
+			y: -34.0d
+		}
+	]
+	subtitle: ["{quests.metal_age.subtitle}"]
+	title: "{quests.metal_age}"
+}

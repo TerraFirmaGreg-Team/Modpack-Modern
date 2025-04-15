@@ -1,0 +1,34 @@
+{
+	"name": "Piglins",
+	"category": "tfc:beneath",
+	"icon": "minecraft:gold_ingot",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Piglin Bartering",
+			"text": "Like you'd expect, you can trade with $(thing)Piglins$() in the same way you trade with them in vanilla, with $(item)Gold Ingots$()."
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "minecraft:piglin",
+			"scale": 0.9,
+			"name": "Piglin",
+			"text": "You can find Piglins in almost every biome throughout the Beneath."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Trade Results",
+			"text": "$(li)3-9 String$(li)6-12 Sticks$(li)4-8 Charcoal$(li)5-12 Nether Quartz$(li)1-3 Tin Ingots$(li)1-3 Copper Ingots$(li)1-2 Leather$(li)8-12 Pyroxenite Bricks$(li)8-12 Migmatite Bricks"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)6-12 Arrows$(li)4-12 Flux$(li)1-2 Raw Graphite$(li)4-8 Sulfur Powder$(li)2-4 Kaolin Clay$(li)4-8 Mangrove Lumber$(li)2-4 Mangrove Logs$(li)2-4 Cooked Venison$(li)8-16 Glow Berries$(li)2-4 Ghost Peppers$(li)2-4 Glowstone Dust"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Bastions",
+			"text": "Raiding a $(thing)Bastion$() might be very dangerous, but they can also be very rewarding! You can find things like:$(li)Gold, Rose Gold, Pig Iron, Black Bronze, and Silver ingots$(li)Black Bronze weapons, tools, and armor$(li)Kaolin clay and graphite$(li)Permanent light sources$(li)Cloth, leather, seeds, and food$(li)And other treasures!"
+		}
+	],
+	"read_by_default": true
+}

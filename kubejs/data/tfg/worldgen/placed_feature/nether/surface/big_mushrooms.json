@@ -1,0 +1,50 @@
+{
+	"feature": "tfg:nether/surface/big_mushrooms",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 120
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 120
+				},
+				"min_inclusive": {
+					"above_bottom": 38
+				}
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					-1,
+					0
+				],
+				"blocks": [
+					"minecraft:deepslate",
+					"minecraft:blackstone",
+					"beneath:soul_clay",
+					"tfc:dirt/silty_loam",
+					"tfc:dirt/loam",
+					"tfc:mud/silty_loam",
+					"tfc:mud/loam",
+					"tfc:muddy_roots/silty_loam",
+					"tfc:peat",
+					"tfg:rock/hardened_deepslate"
+				]
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

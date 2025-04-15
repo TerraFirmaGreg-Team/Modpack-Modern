@@ -1,0 +1,64 @@
+{
+	"type": "minecraft:simple_block",
+	"config": {
+		"to_place": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"data": {
+						"Name": "tfc:plant/moss"
+					},
+					"weight": 15
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/athyrium_fern"
+					},
+					"weight": 20
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/canna"
+					},
+					"weight": 20
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/lady_fern"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/king_fern"
+					},
+					"weight": 5
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/ostrich_fern"
+					},
+					"weight": 15
+				},
+				{
+					"data": {
+						"Name": "tfc:plant/sword_fern"
+					},
+					"weight": 15
+				},
+				{
+					"data": {
+						"Name": "minecraft:fern"
+					},
+					"weight": 10
+				},
+				{
+					"data": {
+						"Name": "minecraft:large_fern"
+					},
+					"weight": 10
+				}
+			]
+		}
+	}
+}
