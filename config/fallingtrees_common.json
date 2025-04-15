@@ -5,7 +5,7 @@
 	"treeLifetimeLength": 4.0,
 	"dynamicMiningSpeed": {
 		"disable": false,
-		"speedMultiplication": 0.1,
+		"speedMultiplication": 0.05,
 		"maxSpeedMultiplication": 16.0
 	},
 	"trees": {
