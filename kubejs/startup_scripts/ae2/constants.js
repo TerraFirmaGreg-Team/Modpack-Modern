@@ -84,7 +84,8 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:silicon',
     'ae2:sky_dust',
     'ae2:creative_energy_cell',
-    'ae2:tiny_tnt'
+    'ae2:tiny_tnt',
+    'ae2:crystal_resonance_generator'
 ];
 
 // Glass Cable
