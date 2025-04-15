@@ -1,0 +1,21 @@
+{
+	"__comment__": "Changes this back to vanilla, because beneath overrides it",
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gold_block"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		}
+	]
+}
