@@ -66,6 +66,15 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+    event.recipes.gtceu.centrifuge('tfg:beets_to_sugar')
+        .itemInputs('5x tfc:food/beet')
+        .inputFluids(Fluid.of('tfc:salt_water', 1000))
+        .itemOutputs('3x minecraft:sugar', '3x gtceu:plant_ball', '1x #forge:dusts/salt')
+        .outputFluids(Fluid.of('minecraft:water', 1000))
+        .duration(800)
+        .EUt(7)
+        .circuit(3)
+  
 	event.smelting('4x tfc:powder/wood_ash', '1x #minecraft:logs_that_burn').id('tfg:wood_ash')
 
 	//#region Выход: Соленая пыль + Вода
@@ -77,6 +86,7 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(51)
 		.EUt(30)
+		.circuit(1)
 
 	// Декрафт в электролайзере
 	event.recipes.gtceu.electrolyzer('electrolyze_tfc_salt_water')
@@ -85,6 +95,7 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
 		.duration(720)
 		.EUt(30)
+		.circuit(2)
 
 	//#endregion
 
