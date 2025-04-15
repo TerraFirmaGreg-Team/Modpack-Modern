@@ -1,0 +1,60 @@
+{
+    "name": "tfg:aqueduct/aqueduct_connector_pool",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {	
+        "weight": 20,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_connector_0_0",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_connector_1_0",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_connector_2_0",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 10,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_connector_0_1",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_connector_1_1",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_connector_2_1",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      }
+    ]
+}

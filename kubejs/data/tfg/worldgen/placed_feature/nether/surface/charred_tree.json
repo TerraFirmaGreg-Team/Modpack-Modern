@@ -1,0 +1,43 @@
+{
+	"feature": "tfg:nether/surface/charred_tree",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 80
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 100
+				},
+				"min_inclusive": {
+					"above_bottom": 32
+				}
+			}
+		},
+		{
+			"type": "minecraft:block_predicate_filter",
+			"predicate": {
+				"type": "minecraft:matching_blocks",
+				"offset": [
+					0,
+					-1,
+					0
+				],
+				"blocks": [
+					"minecraft:deepslate",
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				]
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

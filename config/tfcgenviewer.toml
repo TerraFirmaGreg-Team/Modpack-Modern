@@ -1,0 +1,24 @@
+#
+# The preview size the preview screen will have when first opened
+# Conversion to km:
+#     (2 ^ (defaultPreviewSize + 5)) * 128 / 1000
+#
+#Range: 0 ~ 6
+defaultPreviewSize = 3
+#
+# If the preview should change to a loading icon when a preview is being generated
+#
+loadingIcon = true
+#
+# If a sound should be played when a preview finishes generating
+#
+dingWhenGenerated = true
+#
+# If the info pane should show a prgress bar while a preview is being generated
+#
+generationProgress = true
+#
+# If errors encountered during preview generation should cancel further generation or simply only be logged
+#
+cancelPreviewOnError = true
+

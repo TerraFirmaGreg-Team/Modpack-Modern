@@ -1,0 +1,27 @@
+{
+	"feature": "tfg:nether/surface/small_mushrooms",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 2
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"max_inclusive": {
+					"absolute": 120
+				},
+				"min_inclusive": {
+					"above_bottom": 36
+				}
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

@@ -1,0 +1,54 @@
+
+#.
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+	#.
+	#If enabled, compat items with not loaded mod still appears in the creative tab
+	forceCompatItemsIntoCreativeTab = false
+	#.
+	#If enabled, Shadow Steel & Refined Radiance items appears in the creative tab
+	legacyMaterialsIntoCreativeTab = false
+
+	#.
+	#Choose items to hide from creative tab & JEI
+	[client.hideItems]
+		#.
+		#Hides all Springs from creative tab & JEI (you still can craft it)
+		hideSprings = true
+		#.
+		#Hides all Small Springs from creative tab & JEI (you still can craft it)
+		hideSmallSprings = true
+		#.
+		#Hides all Rods from creative tab & JEI (you still can craft it)
+		hideRods = true
+		#.
+		#Hides all Sheets from creative tab & JEI (you still can craft it)
+		hideSheets = false
+		#.
+		#Hides all Wires from creative tab & JEI (you still can craft it)
+		hideWires = true
+
+	#.
+	#Position of Create: Vintage Improvements config button in the main menu & pause menu
+	[client.configButton]
+		#.
+		#Choose the menu row that the Vintage Improvements config button appears on in the main menu
+		#Set to 0 to disable the button altogether
+		#Range: 0 ~ 4
+		mainMenuConfigButtonRow = 0
+		#.
+		#Offset the Vintage Improvements config button in the main menu by this many pixels on the X axis
+		#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
+		#Range: > -2147483648
+		mainMenuConfigButtonOffsetX = -4
+		#.
+		#Choose the menu row that the Vintage Improvements config button appears on in the in-game menu
+		#Set to 0 to disable the button altogether
+		#Range: 0 ~ 5
+		ingameMenuConfigButtonRow = 0
+		#.
+		#Offset the Vintage Improvements config button in the in-game menu by this many pixels on the X axis
+		#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
+		#Range: > -2147483648
+		ingameMenuConfigButtonOffsetX = -4
+
