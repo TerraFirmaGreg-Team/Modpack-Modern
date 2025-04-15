@@ -73,3 +73,8 @@ B:debug_overlay_show_system_category = 'true';
 B:debug_overlay_show_advanced_screen_category = 'true';
 B:show_debug_overlay = 'false';
 B:debug_overlay_show_resources_category = 'true';
+
+
+##[tutorial]
+
+B:show_welcome_screen = 'false';

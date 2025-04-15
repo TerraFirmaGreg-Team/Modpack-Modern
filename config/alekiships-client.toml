@@ -1,0 +1,4 @@
+#Change how the rudder behaves on boats that have them
+#Allowed Values: RETURN_TO_CENTER, STAY_IN_PLACE
+tillerControlScheme = "RETURN_TO_CENTER"
+

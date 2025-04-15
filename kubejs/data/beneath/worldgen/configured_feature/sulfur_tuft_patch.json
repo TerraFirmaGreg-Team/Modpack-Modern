@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"tries": 32,
+		"xz_spread": 6,
+		"y_spread": 1,
+		"feature": "beneath:sulfur_tuft"
+	}
+}

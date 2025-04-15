@@ -23,7 +23,7 @@
 		passive: 4000
 	}
 	pause_game: true
-	progression_mode: "linear"
+	progression_mode: "flexible"
 	title: "TerraFirmaGreg"
 	version: 13
 }

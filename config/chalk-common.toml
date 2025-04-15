@@ -1,0 +1,33 @@
+#How many marks you can draw with a single chalk. Default: 64
+#Range: > 0
+ChalkUses = 64
+#How much light glowing mark produces. Default: 5
+#Range: 0 ~ 15
+GlowingMarkLightLevel = 5
+#Controls whether glowing should be enabled in Chalk Box.
+#If disabled - you will not be able to draw glowing marks with chalk box.
+#Default: true
+ChalkBoxGlowingEnabled = true
+#How many glowing uses one glowing item will give.
+#Default: 8
+#Range: 1 ~ 9999
+ChalkBoxGlowingItemUses = 8
+#If enabled, Chalks (and Chalk Boxes) will generate in Dungeons, Abandoned Mineshafts, Planes and Savanna villages, Cartographer houses
+#Default: true
+ShouldGenerateInChests = true
+
+#Enable/disable symbols and location of the advancement that will unlock that symbol. (Empty = always unlocked)
+[Symbols]
+	CheckEnabled = true
+	CheckUnlockAdvancement = ""
+	CrossEnabled = true
+	CrossUnlockAdvancement = ""
+	PickaxeEnabled = true
+	PickaxeUnlockAdvancement = ""
+	SkullEnabled = true
+	SkullUnlockAdvancement = ""
+	HeartEnabled = true
+	HeartUnlockAdvancement = ""
+	HouseEnabled = true
+	HouseUnlockAdvancement = ""
+
