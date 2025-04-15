@@ -164,7 +164,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
 		.inputFluids(Fluid.of('minecraft:water', 600))
-		.itemOutputs('minecraft:sugar')
+		.itemOutputs('minecraft:sugar', 'gtceu:plant_ball')
 		.duration(800)
 		.EUt(6)
 
