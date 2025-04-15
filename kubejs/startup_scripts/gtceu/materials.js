@@ -37,7 +37,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_SMALL_GEAR,
 		GENERATE_GEAR,
 		GENERATE_FRAME,
-		GENERATE_PLATE
+		GENERATE_PLATE,
+		GENERATE_RING
 	} = $MATERIAL_FLAGS
 
 	var metalTooling = [
@@ -182,7 +183,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BismuthBronze.addFlags(GENERATE_FRAME);
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
-	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
