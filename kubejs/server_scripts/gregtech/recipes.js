@@ -66,6 +66,8 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	event.smelting('4x tfc:powder/wood_ash', '1x #minecraft:logs_that_burn').id('tfg:wood_ash')
+
 	//#region Выход: Соленая пыль + Вода
 
 	// Декрафт в центрифуге
