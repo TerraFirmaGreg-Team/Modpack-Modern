@@ -25,6 +25,8 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:wax', 'firmalife:beeswax')
 	event.add('forge:wax', 'tfg:conifer_rosin')
 
+	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
+
 	// #endregion
 
 	// #region Medicines

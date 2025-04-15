@@ -258,6 +258,7 @@ const registerTFCItemTags = (event) => {
     event.add('forge:cloth', 'tfc:burlap_cloth')
     event.add('forge:cloth', 'tfc:wool_cloth')
     event.add('forge:cloth', 'tfc:silk_cloth')
+    event.add('forge:cloth', 'minecraft:phantom_membrane')
 }
 
 const registerTFCBlockTags = (event) => {

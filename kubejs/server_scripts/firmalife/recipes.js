@@ -47,6 +47,7 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/metal/chromium_block_stairs' })
 
 	// - Stainless Steel
+	event.remove({ id: 'firmalife:alloy/stainless_steel' })
 
 	// Ingot 
 	event.remove({ id: 'firmalife:casting/stainless_steel_ingot' })
@@ -67,10 +68,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Rod
 	event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_rod' })
+	event.remove({ id: 'firmalife:heating/stainless_steel_rod' })
 
 	// Jar lid
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_jar_lid' })
+	event.remove({ id: 'firmalife:heating/stainless_steel_jar_lid' })
 
 	// Plated Blocks
 	event.remove({ id: 'firmalife:crafting/crafting/metal/block/stainless_steel' })
@@ -111,12 +112,31 @@ const registerFirmaLifeRecipes = (event) => {
 	}).id('firmalife:crafting/vat')
 
 	// Jar Lid
-	event.recipes.gtceu.assembler(`tfg:firmalife/jar_lid`)
-		.itemInputs('#forge:ingots/tin')
-		.circuit(7)
-		.itemOutputs('16x tfc:jar_lid')
+	event.recipes.gtceu.fluid_solidifier(`tfg:firmalife/jar_lid`)
+		.inputFluids(Fluid.of('gtceu:tin', 9))
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('tfc:jar_lid')
 		.duration(50)
 		.EUt(7)
+
+	event.recipes.gtceu.extractor('tfc:jar_lid_extraction')
+		.itemInputs('tfc:jar_lid')
+		.outputFluids(Fluid.of('gtceu:tin', 9))
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.fluid_solidifier(`firmalife:firmalife/stainless_steel_jar_lid`)
+		.inputFluids(Fluid.of('gtceu:stainless_steel', 9))
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('firmalife:stainless_steel_jar_lid')
+		.duration(50)
+		.EUt(7)
+
+	event.recipes.gtceu.extractor('firmalife:stainless_steel_jar_extraction')
+		.itemInputs('firmalife:stainless_steel_jar_lid')
+		.outputFluids(Fluid.of('gtceu:stainless_steel', 9))
+		.duration(50)
+		.EUt(2)
 
 	// Pineapple Fiber
 	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_fiber`)
