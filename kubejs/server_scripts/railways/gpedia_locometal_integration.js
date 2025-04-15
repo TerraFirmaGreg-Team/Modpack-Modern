@@ -30,6 +30,7 @@ const railwaysLocometalIntegration = (event) => {
 			.itemOutputs(Item.of(`railways:${locometal}`))
 			.duration(20)
 			.EUt(24)
+			.category(GTRecipeCategories.CHEM_DYES)
 	}
 
 	event.recipes.create.item_application(`railways:iron_wrapped_locometal`, [`#railways:palettes/cycle_groups/base`, '#forge:plates/wrought_iron']);
@@ -41,19 +42,22 @@ const railwaysLocometalIntegration = (event) => {
 		.inputFluids(Fluid.of(`gtceu:chlorine`, 18))
 		.itemOutputs(`railways:brass_wrapped_locometal`)
 		.duration(20)
-		.EUt(24);
+		.EUt(24)
+		.category(GTRecipeCategories.CHEM_DYES);
 	event.recipes.gtceu.chemical_bath(`gpedia:undying/copper_wrapped_locometal`)
 		.itemInputs('#railways:palettes/dye_groups/copper_wrapped_slashed')
 		.inputFluids(Fluid.of(`gtceu:chlorine`, 18))
 		.itemOutputs(`railways:copper_wrapped_locometal`)
 		.duration(20)
-		.EUt(24);
+		.EUt(24)
+		.category(GTRecipeCategories.CHEM_DYES);
 	event.recipes.gtceu.chemical_bath(`gpedia:undying/iron_wrapped_locometal`)
 		.itemInputs('#railways:palettes/dye_groups/iron_wrapped_slashed')
 		.inputFluids(Fluid.of(`gtceu:chlorine`, 18))
 		.itemOutputs(`railways:iron_wrapped_locometal`)
 		.duration(20)
 		.EUt(24)
+		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 		for (var locometal in locometalBase) {
@@ -79,18 +83,21 @@ const railwaysLocometalIntegration = (event) => {
 			.inputFluids(Fluid.of(`tfc:${dye}_dye`, 18))
 			.itemOutputs(`railways:${dye}_brass_wrapped_locometal`)
 			.duration(20)
-			.EUt(24);
+			.EUt(24)
+			.category(GTRecipeCategories.CHEM_DYES);
 		event.recipes.gtceu.chemical_bath(`gpedia:copper_locometal_bathing/${dye}`)
 			.itemInputs('#railways:palettes/dye_groups/copper_wrapped_slashed')
 			.inputFluids(Fluid.of(`tfc:${dye}_dye`, 18))
 			.itemOutputs(`railways:${dye}_copper_wrapped_locometal`)
 			.duration(20)
-			.EUt(24);
+			.EUt(24)
+			.category(GTRecipeCategories.CHEM_DYES);
 		event.recipes.gtceu.chemical_bath(`gpedia:locometal_bathing/${dye}`)
 			.itemInputs('#railways:palettes/dye_groups/iron_wrapped_slashed')
 			.inputFluids(Fluid.of(`tfc:${dye}_dye`, 18))
 			.itemOutputs(`railways:${dye}_iron_wrapped_locometal`)
 			.duration(20)
-			.EUt(24);
+			.EUt(24)
+			.category(GTRecipeCategories.CHEM_DYES);
 	})
 }
