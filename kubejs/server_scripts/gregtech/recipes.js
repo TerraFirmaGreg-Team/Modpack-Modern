@@ -913,6 +913,176 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	//#region passthrough hatches
+	event.recipes.shaped('gtceu:lv_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:lv_conveyor_module',
+		B: 'gtceu:small_wrought_iron_gear',
+		C: 'gtceu:lv_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_lv')
+
+	event.recipes.shaped('gtceu:mv_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:mv_conveyor_module',
+		B: 'gtceu:small_bronze_gear',
+		C: 'gtceu:mv_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_mv')
+
+	event.recipes.shaped('gtceu:ev_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:ev_conveyor_module',
+		B: 'gtceu:small_titanium_gear',
+		C: 'gtceu:ev_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_ev')
+
+	event.recipes.shaped('gtceu:iv_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:iv_conveyor_module',
+		B: 'gtceu:small_tungsten_steel_gear',
+		C: 'gtceu:iv_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_iv')
+
+	event.recipes.shaped('gtceu:luv_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:luv_conveyor_module',
+		B: 'gtceu:small_hsss_gear',
+		C: 'gtceu:luv_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_luv')
+
+	event.recipes.shaped('gtceu:zpm_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:zpm_conveyor_module',
+		B: 'gtceu:small_osmiridium_gear',
+		C: 'gtceu:zpm_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_zpm')
+
+	event.recipes.shaped('gtceu:uv_item_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:uv_conveyor_module',
+		B: 'gtceu:small_naquadah_alloy_gear',
+		C: 'gtceu:uv_machine_hull',
+		D: '#tfg:default_chests'
+	}).id('gtceu:shaped/passthrough_hatch_item_uv')
+
+	event.recipes.shaped('gtceu:lv_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:lv_electric_pump',
+		B: 'gtceu:bronze_small_fluid_pipe',
+		C: 'gtceu:lv_machine_hull',
+		D: '#forge:glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_lv')
+
+	event.recipes.shaped('gtceu:mv_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:mv_electric_pump',
+		B: 'gtceu:steel_small_fluid_pipe',
+		C: 'gtceu:mv_machine_hull',
+		D: '#forge:glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_mv')
+
+	event.remove('gtceu:shaped/passthrough_hatch_fluid')
+
+	event.recipes.shaped('gtceu:hv_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:hv_electric_pump',
+		B: 'gtceu:stainless_steel_small_fluid_pipe',
+		C: 'gtceu:hv_machine_hull',
+		D: 'gtceu:tempered_glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_hv')
+
+	event.recipes.shaped('gtceu:ev_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:ev_electric_pump',
+		B: 'gtceu:titanium_small_fluid_pipe',
+		C: 'gtceu:ev_machine_hull',
+		D: 'gtceu:tempered_glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_ev')
+
+	event.recipes.shaped('gtceu:iv_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:iv_electric_pump',
+		B: 'gtceu:tungsten_steel_small_fluid_pipe',
+		C: 'gtceu:iv_machine_hull',
+		D: 'gtceu:laminated_glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_iv')
+
+	event.recipes.shaped('gtceu:luv_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:luv_electric_pump',
+		B: 'gtceu:niobium_titanium_small_fluid_pipe',
+		C: 'gtceu:luv_machine_hull',
+		D: 'gtceu:laminated_glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_luv')
+
+	event.recipes.shaped('gtceu:zpm_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:zpm_electric_pump',
+		B: 'gtceu:polybenzimidazole_small_fluid_pipe',
+		C: 'gtceu:zpm_machine_hull',
+		D: 'gtceu:fusion_glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_zpm')
+
+	event.recipes.shaped('gtceu:uv_fluid_passthrough_hatch', [
+		' A ',
+		'BCB',
+		' D '
+	], {
+		A: 'gtceu:uv_electric_pump',
+		B: 'gtceu:naquadah_small_fluid_pipe',
+		C: 'gtceu:uv_machine_hull',
+		D: 'gtceu:fusion_glass'
+	}).id('gtceu:shaped/passthrough_hatch_fluid_uv')
+
+	//#endregion
+
 	//#region Long Distance Pipelines
 
 	event.remove({ id: 'gtceu:assembler/long_distance_item_pipe' })
