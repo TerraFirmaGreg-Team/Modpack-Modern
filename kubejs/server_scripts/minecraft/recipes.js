@@ -842,6 +842,9 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('minecraft:redstone_torch', ['#forge:rods/wooden', 'minecraft:redstone'])
 		.id('tfg:shapeless/redstone_torch')
 
+	event.shapeless('minecraft:lever', ['#forge:rods/wooden', 'minecraft:redstone', '#forge:cobblestone'])
+		.id('tfg:shapeless/lever')
+
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
 
 	// #endregion
