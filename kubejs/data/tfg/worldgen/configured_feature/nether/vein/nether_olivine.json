@@ -1,0 +1,185 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 250,
+		"density": 0.35,
+		"min_y": 24,
+		"max_y": 128,
+		"size": 31,
+		"random_name": "nether_olivine",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"beneath:soul_clay",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam"
+				],
+				"with": [
+					{
+						"block": "gtceu:deepslate_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:deepslate_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:deepslate_glauconite_sand_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:basalt",
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:basalt_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_glauconite_sand_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:blackstone",
+					"minecraft:magma_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:pyroxenite_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:pyroxenite_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:pyroxenite_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:pyroxenite_glauconite_sand_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"block": "gtceu:dripstone_bentonite_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:dripstone_magnesite_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_olivine_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dripstone_glauconite_sand_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_bentonite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_magnesite_block",
+						"weight": 1
+					},
+					{
+						"block": "gtceu:raw_olivine_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:bentonite_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:magnesite_indicator",
+					"weight": 25
+				},
+				{
+					"block": "gtceu:glauconite_sand_indicator",
+					"weight": 15
+				},
+				{
+					"block": "gtceu:olivine_bud_indicator",
+					"weight": 25
+				}
+			]
+		}
+	}
+}

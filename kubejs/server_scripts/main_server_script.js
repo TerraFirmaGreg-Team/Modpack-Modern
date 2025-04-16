@@ -4,28 +4,43 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
+    registerAdvancedPeripheralsItemTags(event)
     registerAE2ItemTags(event)
+    registerAFCItemTags(event)
+    registerAlekiroofsItemTags(event)
+    registerAlekishipsItemTags(event)
     registerAsticorCartsItemTags(event)
+    registerBeneathItemTags(event)
+    registerChalkItemTags(event);
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
+    registerCreatedecoItemTags(event)
+    registerDiggerHelmetItemTags(event)
+    registerEndermanOverhaulItemTags(event)
     registerEveryCompatItemTags(event)
+    registerExposureItemTags(event)
     registerExtendedAE2ItemTags(event)
     registerFirmaCivItemTags(event)
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
     registerFTBQuestsItemTags(event)
+    registerGreateItemTags(event)
     registerGTCEUItemTags(event)
     registerMegaCellsItemTags(event)
     registerMinecraftItemTags(event)
     registerMoreRedItemTags(event)
     registerHotOrNotItemTags(event)
     registerRailWaysItemTags(event)
+    registerRnrItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
+    registerTFCTextileItemTags(event)
+    registerTFGItemTags(event)
+    registerVintageImprovementsItemTags(event)
 })
 
 /**
@@ -33,16 +48,21 @@ ServerEvents.tags('item', event => {
  */
 ServerEvents.tags('block', event => {
     registerAE2BlockTags(event)
+    registerAFCBlockTags(event)
     registerAsticorCartsBlockTags(event)
+    registerBeneathBlockTags(event)
     registerChiselAndBitsBlockTags(event)
     registerComputerCraftBlockTags(event)
     registerCreateBlockTags(event)
     registerCreateAdditionsBlockTags(event)
+    registerDomumOrnamentumBlockTags(event)
+    registerEndermanOverhaulBlockTags(event)
     registerExtendedAE2BlockTags(event)
     registerFirmaCivBlockTags(event)
     registerFirmaLifeBlockTags(event)
     registerFramedBlocksBlockTags(event)
     registerFTBQuestsBlockTags(event)
+    registerGreateBlockTags(event)
     registerGTCEUBlockTags(event)
     registerMegaCellsBlockTags(event)
     registerMinecraftBlockTags(event)
@@ -51,16 +71,23 @@ ServerEvents.tags('block', event => {
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
     registerTFCBlockTags(event)
+    registerTFGBlockTags(event)
+    registerVintageImprovementsBlockTags(event)
 })
 
 /**
  * Событие регистрации жидкость-тэгов.
  */
 ServerEvents.tags('fluid', event => {
+    registerAFCFluidTags(event)
     registerCreateFluidTags(event)
     registerCreateAdditionsFluidTags(event)
-    registerFirmaLifeBlockTags(event)
+    registerGTCEUFluidTags(event)
+    registerGreateFluidTags(event)
+    registerFirmaLifeFluidTags(event)
     registerTFCFluidTags(event)
+    registerTFGFluidTags(event)
+    registerVintageImprovementsFluidTags(event)
 })
 
 /**
@@ -69,6 +96,11 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.tags('worldgen/placed_feature', event => {
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
+    registerTFGPlacedFeatures(event)
+})
+
+ServerEvents.tags('worldgen/biome', event => {
+    registerTFGBiomeTags(event)
 })
 
 /**
@@ -84,9 +116,12 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
+    registerTFCDataForArborFirmaCraft(event)
+    registerTFCDataForChalk(event);
     registerTFCDataForGTCEU(event)
+    registerTFCDataForImmersiveAircraft(event);
     registerTFCDataForTFC(event)
-    registerTFCDataForTreeTap(event)
+    registerTFCDataForTFCBetterBF(event)
     registerTFCDataForWaterFlasks(event)
 })
 
@@ -96,6 +131,7 @@ TFCEvents.data(event => {
  */
 LootJS.modifiers((event) => {
     registerGTCEULoots(event)
+    registerLootrLoots(event)
 });
 
 /**
@@ -103,7 +139,7 @@ LootJS.modifiers((event) => {
  * Не представляю когда срабатывает, но явно после тегов и датапаков.
  */
 GTCEuServerEvents.oreVeins(event => {
-    // event.removeAll()
+    event.removeAll()
 })
 
 /**
@@ -111,16 +147,33 @@ GTCEuServerEvents.oreVeins(event => {
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+    registerAdvancedPeripheralsRecipes(event)
+    registerAdvancedPeripheralsRecyclingRecipes(event)
+    registerAlekishipsRecipes(event)
     registerAE2Recipes(event)
+    registerAFCRecipes(event)
     registerAsticorCartsRecipes(event)
     registerAE2InsertExportCardRecipes(event)
     registerAE2NetworkAnalyzerRecipes(event)
     registerAE2WTLibRecipes(event)
+    registerBeneathRecipes(event)
+    registerBuildingGadgetsRecipes(event)
+    registerChalkRecipes(event);
     registerChiselAndBitsRecipes(event)
+    registerComfortsRecipes(event);
     registerComputerCraftRecipes(event)
+    registerComputerCraftRecyclingRecipes(event)
+    registerCccBridgeRecipes(event)
+    registerCccBridgeRecyclingRecipes(event)
+    registerConstructionwandRecipes(event)
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
     registerCreateConnectedRecipes(event)
+    registerCreatedecoRecipes(event)
+    registerCreateHorsePowerBlockRecipes(event)
+    registerDiggerHelmetRecipes(event)
+    registerDomumOrnamentumRecipes(event)
+    registerEndermanOverhaulRecipes(event)
     registerEveryCompatRecipes(event)
     registerExtendedAE2Recipes(event)
     registerExposureRecipes(event)
@@ -129,19 +182,28 @@ ServerEvents.recipes(event => {
     registerFirmaLifeRecipes(event)
     registerFramedBlocksRecipes(event)
     registerFTBQuestsRecipes(event)
+    registerGrapplingHookRecipes(event);
+    registerGreateRecipes(event)
     registerGTCEURecipes(event)
     registerHandGliderRecipes(event)
     registerHotOrNotRecipes(event)
+    registerImmersiveAircraftRecipes(event)
+    registerMeasurementsRecipes(event)
     registerMegaCellsRecipes(event)
     registerMERequesterRecipes(event)
     registerMinecraftRecipes(event)
     registerMoreRedRecipes(event)
     registerRailWaysRecipes(event)
+    registerRnrRecipes(event)
     registerSophisticatedBackpacksRecipes(event)
+    registerSimplylightRecipes(event)
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
+    registerTFCBetterBFRecipes(event)
+    registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
+    registerVintageImprovementsRecipes(event)
     registerWaterFlasksRecipes(event)
 })

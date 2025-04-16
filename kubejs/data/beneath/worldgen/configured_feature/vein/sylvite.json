@@ -1,0 +1,24 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 75,
+		"size": 17,
+		"density": 0.6,
+		"min_y": 0,
+		"max_y": 64,
+		"random_name": "sylvite",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:blackstone"
+				],
+				"with": [
+					{
+						"weight": 1,
+						"block": "beneath:ore/blackstone_sylvite"
+					}
+				]
+			}
+		]
+	}
+}

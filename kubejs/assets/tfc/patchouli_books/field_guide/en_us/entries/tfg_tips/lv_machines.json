@@ -17,9 +17,15 @@
 		},
 		{
 			"type": "patchouli:spotlight",
+			"title": "Arc Furnace",
+			"item": "gtceu:lv_arc_furnace",
+			"text": "The $(item)Arc Furnace$() can turn your Colored Steel Dust from the mixer into ingots, Cast Iron directly into $(thing)Wrought Iron$(), Sand into $(thing)Glass$(), and Copper into $(thing)Annealed Copper$(). All of its recipes need $(thing)Oxygen$() though, so it's useless without an $(item)Electrolyzer$() or $(item)Centrifuge$()."
+		},
+		{
+			"type": "patchouli:spotlight",
 			"item": "gtceu:lv_assembler",
 			"title": "Assembler",
-			"text": "The $(item)Assembler$() is a very expensive machine, but can make LV casings just out of 8 steel (though this will likely change in future versions) and cheaper electronic components like $(thing)Vacuum Tubes$() and $(thing)Resistors$()."
+			"text": "The $(item)Assembler$() is a very expensive machine, but can make cheaper electronic components like $(thing)Vacuum Tubes$() and $(thing)Resistors$()."
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -62,12 +68,6 @@
 			"title": "Chemical Bath",
 			"item": "gtceu:lv_chemical_bath",
 			"text": "The $(item)Chemical Bath$() makes cheaper paper. That's about it. And once you have an $(thing)Assembler$() you won't need paper any more anyway.$(br2)It can also automate most of the steps to make $(thing)Leather$() if you're tired of barrels."
-		},
-		{
-			"type": "patchouli:spotlight",
-			"title": "Arc Furnace",
-			"item": "gtceu:lv_arc_furnace",
-			"text": "It's not a good first machine, but the $(item)Arc Furnace$() can turn Cast Iron directly into $(thing)Wrought Iron$(), Sand into $(thing)Glass$(), and Copper into $(thing)Annealed Copper$(). All of its recipes need $(thing)Oxygen$() though, so it's useless without an $(item)Electrolyzer$() or $(item)Centrifuge$()."
 		},
 		{
 			"type": "patchouli:spotlight",

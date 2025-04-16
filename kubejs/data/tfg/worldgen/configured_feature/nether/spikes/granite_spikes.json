@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "tfc:rock/hardened/granite",
+		"spike": "tfc:rock/spike/granite",
+		"anchor_blocks": "minecraft:base_stone_nether"
+	}
+}

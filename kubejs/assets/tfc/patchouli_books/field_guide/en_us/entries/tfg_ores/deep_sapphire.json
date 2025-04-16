@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "Rarity: 280$(br)Density: 0.35$(br)Type: Disc Vein$(br)Y: -64 - 26$(br)Size: 28$(br)Height: 8$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Almandine, Pyrope, Sapphire, Green Sapphire$(br2)If you're looking for $(thing)Aluminium$(), find a $(l:tfg_ores/normal_bauxite)Bauxite$() vein instead.$(br)"
+            "text": "Rarity: 180$(br)Density: 0.35$(br)Type: Disc Vein$(br)Y: -64 - 26$(br)Size: 28$(br)Height: 8$(br2)Stone types: Rhyolite, Basalt, Andesite, Dacite$(br2)Indicator: Almandine, Pyrope, Sapphire, Green Sapphire$(br2)If you're looking for $(thing)Aluminium$(), find a $(l:tfg_ores/normal_bauxite)Bauxite$() vein instead.$(br)"
         },
 		{
 			"type": "patchouli:multiblock",

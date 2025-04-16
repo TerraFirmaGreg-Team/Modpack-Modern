@@ -1,16 +1,19 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.7.18",
+    "version": "0.7.19",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
         "config",
         "defaultconfigs",
-        "kubejs"
+        "kubejs",
+        "!kubejs/probe/**"
     ],
     "server_overrides": [
         "forge-auto-install.txt",
+        "generate_auto_installation_file.bat",
         "minecraft_server.jar",
+        "server.properties",
         "server_starter.conf",
         "server-icon.png",
         "start_server.bat"
@@ -185,6 +188,24 @@
             "side": "CLIENT"
         },
         "dynamiclights-reforged": {
+            "side": "CLIENT"
+        },
+        "resourceful-config": {
+            "side": "CLIENT"
+        },
+        "resourceful-lib": {
+            "side": "CLIENT"
+        },
+        "enderman-overhaul": {
+            "side": "CLIENT"
+        },
+        "primitive-creatures": {
+            "side": "CLIENT"
+        },
+        "geckolib": {
+            "side": "CLIENT"
+        },
+        "detected-setblock-be-gone": {
             "side": "CLIENT"
         }
     }

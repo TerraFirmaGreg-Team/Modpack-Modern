@@ -1,0 +1,34 @@
+{
+	"type": "tfc:disc_vein",
+	"config": {
+		"rarity": 35,
+		"size": 13,
+		"height": 4,
+		"density": 0.80,
+		"min_y": 48,
+		"max_y": 127,
+		"project": false,
+		"random_name": "cursecoal",
+		"blocks": [
+			{
+				"replace": [
+					"minecraft:deepslate",
+					"tfc:mud/silty_loam",
+					"beneath:soul_clay",
+					"tfc:dirt/loam",
+					"tfc:mud/loam",
+					"tfc:peat",
+					"tfc:dirt/silty_loam",
+					"minecraft:blackstone",
+					"minecraft:dripstone_block"
+				],
+				"with": [
+					{
+						"weight": 1,
+						"block": "beneath:ore/nether_cursecoal"
+					}
+				]
+			}
+		]
+	}
+}
