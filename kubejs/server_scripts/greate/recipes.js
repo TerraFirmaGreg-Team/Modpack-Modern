@@ -44,10 +44,10 @@ function registerGreateRecipes(event) {
 	}).id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
 
 	generateCutterRecipe(event, '#forge:plates/wrought_iron', '6x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft')
-	generateCutterRecipe(event, '#forge:plates/steel', '6x greate:steel_shaft', 100, GTValues.VA[GTValues.LV], 'steel_shaft')
-	generateCutterRecipe(event, '#forge:plates/aluminium', '6x greate:aluminium_shaft', 100, GTValues.VA[GTValues.MV], 'aluminium_shaft')
-	generateCutterRecipe(event, '#forge:plates/stainless_steel', '6x greate:stainless_steel_shaft', 100, GTValues.VA[GTValues.HV], 'stainless_steel_shaft')
-	generateCutterRecipe(event, '#forge:plates/titanium', '6x greate:titanium_shaft', 100, GTValues.VA[GTValues.EV], 'titanium_shaft')
+	generateCutterRecipe(event, '#forge:plates/steel', '6x greate:steel_shaft', 100, GTValues.VA[GTValues.ULV], 'steel_shaft')
+	generateCutterRecipe(event, '#forge:plates/aluminium', '6x greate:aluminium_shaft', 100, GTValues.VA[GTValues.LV], 'aluminium_shaft')
+	generateCutterRecipe(event, '#forge:plates/stainless_steel', '6x greate:stainless_steel_shaft', 100, GTValues.VA[GTValues.MV], 'stainless_steel_shaft')
+	generateCutterRecipe(event, '#forge:plates/titanium', '6x greate:titanium_shaft', 100, GTValues.VA[GTValues.HV], 'titanium_shaft')
 
 	// #endregion
 
@@ -149,7 +149,7 @@ function registerGreateRecipes(event) {
 		'AABAA',
 		' AAA '
 	], {
-		A: '#forge:plates/cobalt_brass',
+		A: '#forge:plates/tin_alloy',
 		B: '#forge:storage_blocks/wrought_iron',
 		C: 'greate:steel_shaft',
 	}).id('greate:mechanical_crafting/steel_crushing_wheel')
@@ -194,16 +194,14 @@ function registerGreateRecipes(event) {
 
 	// #region Encased Fan
 
-	// TODO: set up ore washing recipes
-
 	event.shaped('greate:steel_encased_fan', [
 		' A ',
 		'BCB',
 		'DEF'
 	], {
 		A: 'greate:steel_shaft',
-		B: '#gtceu:circuits/ulv',
-		C: 'gtceu:ulv_machine_hull',
+		B: '#forge:small_gears/wrought_iron',
+		C: 'create:andesite_casing',
 		D: '#forge:tools/wrenches',
 		E: 'gtceu:steel_rotor',
 		F: '#forge:tools/hammers'
@@ -305,7 +303,7 @@ function registerGreateRecipes(event) {
 		'AAA',
 		'BDC'
 	], {
-		A: 'minecraft:leather',
+		A: '#forge:leather',
 		B: '#forge:tools/knives',
 		C: '#tfc:sewing_needles',
 		D: '#forge:string'

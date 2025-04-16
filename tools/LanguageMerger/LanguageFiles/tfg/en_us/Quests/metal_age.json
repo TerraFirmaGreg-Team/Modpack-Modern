@@ -45,11 +45,11 @@
     "quests.metal_age.coke_oven.title": "Coke Oven",
     "quests.metal_age.coke_oven.subtitle": "Finally, No More Charcoal Piles",
     "quests.metal_age.coke_oven.desc.1": "The Coke Oven is your first GregTech multiblock! It allows you to automatically create Charcoal and other powerful combustibles. The Coke Oven will burn one Log into one Charcoal and 250mb of Creosote, which is an important chemical used wood treating.\n\nIf you craft the main Coke Oven block and press the JEI 'Uses' key on it (defaults to \"U\"), you'll find the tab called \"Multiblock Info\", which shows you how to build the Coke Oven in the world.\n\nYou can also just place the Controller block in the world, and interact with it while sneaking to create a Hologram of blocks missing.",
-    "quests.metal_age.coke_oven.desc.2": "Coke Ovens can be fully automated using a Coke Oven Hatch. The Hatch is placed on the sides of the Oven and work as both Inputs and Outputs for both Items and Liquids.\n\nYou can easly create a simple, one way Coke Oven by using a Crate for the input, a Chest for the output, and a Drum or Keg to collect the Creosote. Unlike Chests, Crates are able to store large objects such as Logs. You can sneak and right-click GregTech pipes to make them one-way.",
+    "quests.metal_age.coke_oven.desc.2": "Coke Ovens can be fully automated using a Coke Oven Hatch. The Hatch is placed on the sides of the Oven and work as both Inputs and Outputs for both Items and Liquids.\n\nYou can easly create a simple, one way Coke Oven by using a Crate for the input, a Chest for the output, and a Drum or Keg to collect the Creosote. Unlike Chests, Crates are able to store large objects such as Logs. You can also sneak and right-click GregTech pipes with a wrench to make them one-way.",
 
     "quests.metal_age.wrought_iron_goodies.title": "Wrought Iron level Mechanical Power",
     "quests.metal_age.wrought_iron_goodies.subtitle": "What's this \"Andesite Alloy\" you speak of?",
-    "quests.metal_age.wrought_iron_goodies.desc": "With Wrought Iron you've unlocked access to the Metal Casing, the foundation of many of Create's mechanical blocks such as Gearboxes. Many of the more advanced ones will require Steel, but it's possible to build a fully automatic tree and crop farm at this point.\n\nCreosote is used to create Treated Wood Planks, which can be crafted into Waterwheels and Windmills, a significant improvement over animal power.",
+    "quests.metal_age.wrought_iron_goodies.desc": "With Wrought Iron you've unlocked access to the Metal Casing, the foundation of many of Create's mechanical blocks such as Gearboxes. Some of the more advanced ones will require Steel, but it's possible to build a fully automatic tree and crop farm at this point.\n\nCreosote is used to create Treated Wood Planks, which can be crafted into Waterwheels and Windmills, a significant improvement over animal power.",
 
     "quests.metal_age.fire_clay_ingredients.title": "Fire Clay Ingredients",
     "quests.metal_age.fire_clay_ingredients.subtitle": "The TerraFirmaCraft Rite of Passage.",
@@ -120,7 +120,7 @@
 
     "quests.metal_age.steel_goodies.title": "Steel level Mechanical Power",
     "quests.metal_age.steel_goodies.subtitle": "Blow, Crush and Pipe",
-    "quests.metal_age.steel_goodies.desc": "Steel unlocks a lot more of Greate's mechanical blocks, such as the Mechanical Fan, which is used for washing items in water, the Crushing Wheel, which is even faster and more efficient than the Millstone, and the Mechanical Pump\n\nThe Mechanical Pump is especially useful, as with some smarts, you can easily automate the Blast Furnace.",
+    "quests.metal_age.steel_goodies.desc": "Steel unlocks a new Greate tier, with increased maximum stress capacity! You can now also make things like the Encased Fan, which can automate ore washing, and the Mechanical Pump, which gives you much more access to fluid logistics.\n\nThe Mechanical Pump is especially useful, as with some smarts, you can easily automate the Blast Furnace.",
 
     "quests.metal_age.weak_steel.title": "Weak Steel Ingredients",
     "quests.metal_age.weak_steel.subtitle": "Hope you like Alloying",
@@ -135,11 +135,11 @@
     "quests.metal_age.black_steel_anvil.desc": "With the Black Steel Anvil you'll be able to work Black Steel Ingots into different items.\n\nUnlocking access to the Black Steel Anvil enables new quests in the Industrial Age, related to Steam Power. From both the Steam Engine and the High Pressure Steam Boilers.\n\nOnly one more tier to go.",
 
     "quests.metal_age.black_steel_goodies.title": "Black Steel level Mechanical Power",
-    "quests.metal_age.black_steel_goodies.subtitle": "The Industrial Revolution and it's consequences",
-    "quests.metal_age.black_steel_goodies.desc": "Black Steel unlocks the Steam components of both Greate and GregTech, mainly the Steam Engine and the High Pressure Broilers. With the Broilers you'll be able to produce Steam, and with it, power Steam Machinery such as Forge Hammers, Macerators, Extractors, Alloyers and More.",
+    "quests.metal_age.black_steel_goodies.subtitle": "The Industrial Revolution and its consequences",
+    "quests.metal_age.black_steel_goodies.desc": "With Black Steel comes Steam Power! With GregTech's Boilers, you'll be able to produce Steam, and with it, power Steam Machinery and work your way to proper machines and your first electronics.",
 
     "quests.metal_age.red_blu.title": "Red and Blue Steel",
-    "quests.metal_age.red_blu.subtitle": "Totally not a reference to another game",
+    "quests.metal_age.red_blu.subtitle": "Some of the oldest modded Minecraft fantasy steels",
     "quests.metal_age.red_blu.desc": "The final tier of Anvil, T6, is made by utilizing Red or Blue steel, both are complex alloys of Steel and multiple different metals.\n\nRed and Blue steel are known for their exceptional durability, heat resistance, and overall power. The following anvil creation can be made by either using Blue or Red Steel.",
 
     "quests.metal_age.weak_red_steel.title": "Weak Red Steel Ingredients",

@@ -23,9 +23,9 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:wood_dusts', 'gtceu:wood_dust')
 	event.add('tfg:tiny_wood_dusts', 'gtceu:tiny_wood_dust')
 	event.add('tfg:small_wood_dusts', 'gtceu:small_wood_dust')
-	
-    event.add('forge:wax', 'tfg:paraffin_wax')
-    event.add('forge:wax', 'firmalife:beeswax')
+
+	event.add('forge:wax', 'tfg:paraffin_wax')
+	event.add('forge:wax', 'firmalife:beeswax')
 	event.add('forge:wax', 'tfg:conifer_rosin')
 
 	// #endregion
@@ -52,11 +52,11 @@ const registerTFGItemTags = (event) => {
 
 	event.add('tfg:speed_ingredients', 'tfc:plant/labrador_tea')
 	event.add('tfg:speed_ingredients', 'firmalife:raw_honey')
-	
+
 	event.add('tfg:slowness_ingredients', 'tfc:plant/marigold')
 
 	event.add('tfg:weakness_ingredients', 'tfc:plant/laminaria')
-	
+
 	event.add('tfg:haste_ingredients', 'minecraft:sugar')
 	event.add('tfg:haste_ingredients', 'afc:birch_sugar')
 	event.add('tfg:haste_ingredients', 'afc:maple_sugar')
@@ -65,7 +65,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:water_breathing_ingredients', 'tfc:powder/charcoal')
 
 	event.add('tfg:night_vision_ingredients', 'tfc:food/carrot')
-	
+
 	event.add('tfg:invisibility_ingredients', 'tfc:plant/calendula')
 
 	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/cattail')
@@ -79,14 +79,13 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:instant_health_ingredients', 'tfc:plant/artists_conk')
 
 	event.add('tfg:absorption_ingredients', 'tfc:plant/poppy')
-	
+
 	event.add('tfg:luck_ingredients', 'tfc:plant/goldenrod')
 	event.add('tfg:luck_ingredients', 'tfc:plant/heather')
 	// #endregion
 
 	//region Airplane Upgrades
-	global.AIRCRAFT_UPGRADES.forEach(value =>
-	{
+	global.AIRCRAFT_UPGRADES.forEach(value => {
 		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
 	})
 
@@ -140,6 +139,54 @@ const registerTFGItemTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:tin_purified_ore')
 	event.add('c:hidden_from_recipe_viewers', 'gtceu:lead_purified_ore')
 
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_copper')
+	event.add('c:hidden_from_recipe_viewers', 'minecraft:raw_copper')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_copper')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_gold')
+	event.add('c:hidden_from_recipe_viewers', 'minecraft:raw_gold')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_gold')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_tetrahedrite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_tetrahedrite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_tetrahedrite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_malachite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_malachite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_malachite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_hematite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_hematite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_hematite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_cassiterite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_cassiterite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_cassiterite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_bismuth')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_bismuth')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_bismuth')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_magnetite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_magnetite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_magnetite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_yellow_limonite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_yellow_limonite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_yellow_limonite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_sphalerite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_sphalerite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_sphalerite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_garnierite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_garnierite')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_garnierite')
+
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:rich_raw_silver')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:raw_silver')
+	event.add('c:hidden_from_recipe_viewers', 'gtceu:poor_raw_silver')
+
 	//#endregion
 }
 
@@ -172,18 +219,18 @@ const registerTFGBlockTags = (event) => {
 }
 
 const registerTFGFluidTags = (event) => {
-	
-    event.add('tfc:usable_in_pot', 'tfg:latex')
-    event.add('tfc:usable_in_barrel', 'tfg:latex')
-    event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
-	
-    event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
-    event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
-    event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
 
-    event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
-    event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
-    event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
+	event.add('tfc:usable_in_pot', 'tfg:latex')
+	event.add('tfc:usable_in_barrel', 'tfg:latex')
+	event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
+
+	event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
+	event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
+	event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
+
+	event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
+	event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
+	event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
 }
 
 
@@ -208,24 +255,24 @@ const registerTFGBiomeTags = (event) => {
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lush_hollow')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/lush_hollow')
 	event.add('minecraft:spawns_cold_variant_frogs', 'tfg:nether/lush_hollow')
-	
+
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:allows_surface_slime_spawns', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:spawns_warm_variant_frogs', 'tfg:nether/decaying_caverns')
 	event.add('minecraft:has_closer_water_fog', 'tfg:nether/decaying_caverns')
-	
+
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/basalt_deltas')
-	
+
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/ash_forest')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/ash_forest')
 
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/lava_floes')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/lava_floes')
-	
+
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/webbed_lair')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/webbed_lair')
-	
+
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/bastion_remnant', 'tfg:nether/gneiss_caves')
 	event.add('minecraft:has_structure/nether_fossil', 'tfg:nether/diorite_caves')
@@ -242,7 +289,7 @@ const registerTFGBiomeTags = (event) => {
 
 
 const registerTFGPlacedFeatures = (event) => {
-	
+
 	// #region Nether ores
 
 	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
@@ -267,7 +314,7 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_scheelite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sheldonite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
-	
+
 	// Upper only
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_apatite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_basaltic_sands')

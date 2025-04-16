@@ -74,28 +74,28 @@ const registerMinecraftRecipes = (event) => {
 			let element2 = global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS[i - global.MINECRAFT_COPPER_BLOCKS_RECIPE_COMPONENTS.length / 2]
 
 			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_block_${element.name}`)
-				.itemInputs(element2.block, 'firmalife:beeswax')
+				.itemInputs(element2.block, '#forge:wax')
 				.circuit(1)
 				.itemOutputs(element.block)
 				.duration(50)
 				.EUt(4)
 
 			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_cutted_${element.name}`)
-				.itemInputs(element2.cutted, 'firmalife:beeswax')
+				.itemInputs(element2.cutted, '#forge:wax')
 				.circuit(1)
 				.itemOutputs(element.cutted)
 				.duration(50)
 				.EUt(4)
 
 			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_stairs_${element.name}`)
-				.itemInputs(element2.stairs, 'firmalife:beeswax')
+				.itemInputs(element2.stairs, '#forge:wax')
 				.circuit(1)
 				.itemOutputs(element.stairs)
 				.duration(50)
 				.EUt(4)
 
 			event.recipes.gtceu.assembler(`tfg:minecraft/waxing_slabs_${element.name}`)
-				.itemInputs(element2.slabs, 'firmalife:beeswax')
+				.itemInputs(element2.slabs, '#forge:wax')
 				.circuit(1)
 				.itemOutputs(element.slabs)
 				.duration(50)
@@ -252,7 +252,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Книга
 
 	event.shapeless('minecraft:book', [
-		'minecraft:paper', 'minecraft:paper', 'minecraft:paper', 'minecraft:leather'
+		'minecraft:paper', 'minecraft:paper', 'minecraft:paper', '#forge:leather'
 	]).id('minecraft:book')
 
 	//#endregion
@@ -323,7 +323,7 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Рамка
 
 	event.recipes.gtceu.assembler('item_frame')
-		.itemInputs('8x #tfc:lumber', 'minecraft:leather')
+		.itemInputs('8x #tfc:lumber', '#forge:leather')
 		.itemOutputs('8x minecraft:item_frame')
 		.duration(100)
 		.EUt(4)

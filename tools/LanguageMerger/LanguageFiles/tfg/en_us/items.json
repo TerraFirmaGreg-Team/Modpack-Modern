@@ -25,9 +25,6 @@
     "item.tfg.resistance_salvo": "Resistance Salvo",
     "item.tfg.paraffin_wax": "Paraffin Wax",
     "item.tfg.conifer_rosin": "Conifer Rosin",
-    "item.tfg.loose.deepslate": "Loose Migmatite",
-    "item.tfg.loose.dripstone": "Loose Travertine",
-    "item.tfg.brick.deepslate": "Migmatite Brick",
     "item.tfg.hardwood_strip": "Hardwood Strip",
     "item.tfg.soaked_hardwood_strip": "Soaked Hardwood Strip",
     "item.tfg.prepared_leather_gloves": "Prepared Leather Gloves",
@@ -36,6 +33,8 @@
     "item.tfg.unfired_chalk": "Unfired Chalk Stick",
     "item.tfg.flint_arrow_head": "Flint Arrow Head",
     "item.tfg.fletching": "Fletching",
+
+    "item.tfg.brick.deepslate": "Migmatite Brick",
 
     "item.tfg.terra_firma_greg": "TerraFirmaGreg",
 

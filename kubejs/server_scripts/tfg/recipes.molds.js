@@ -175,37 +175,41 @@ function registerTFGMoldRecipes(event) {
 	event.shaped('tfg:lamp_casting_mold', [
 		'Sh ',
 		'   ',
-		'   '
+		'  m'
 	], {
 		S: 'gtceu:empty_mold',
 		h: '#forge:tools/hammers',
+		m: '#forge:tools/mallets'
 	})
 
 	event.shaped('tfg:trapdoor_casting_mold', [
 		'S h',
 		'   ',
-		'   '
+		'  m'
 	], {
 		S: 'gtceu:empty_mold',
 		h: '#forge:tools/hammers',
+		m: '#forge:tools/mallets'
 	})
 
 	event.shaped('tfg:chain_casting_mold', [
 		'S  ',
 		'h  ',
-		'   '
+		'  m'
 	], {
 		S: 'gtceu:empty_mold',
 		h: '#forge:tools/hammers',
+		m: '#forge:tools/mallets'
 	})
 
 	event.shaped('tfg:bell_casting_mold', [
 		'S  ',
 		' h ',
-		'   '
+		'  m'
 	], {
 		S: 'gtceu:empty_mold',
 		h: '#forge:tools/hammers',
+		m: '#forge:tools/mallets'
 	})
 
 	event.shaped('tfg:mattock_head_extruder_mold', [

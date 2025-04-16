@@ -28,17 +28,17 @@ const registerAFCRecipes = (event) => {
 		event.remove({ id: `afc:crafting/wood/${wood}_water_wheel` })
 
 		// Бревна -> Пиломатериалы
-		generateCutterRecipe(event, `#afc:${wood}_logs`, `16x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_log`)
+		generateCutterRecipe(event, `#afc:${wood}_logs`, `16x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_log`)
 
 		// Доски -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}`, `4x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_planks`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}`, `4x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_planks`)
 
 		// Ступень -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_stairs`, `3x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_stairs`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}_stairs`, `3x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_stairs`)
 
 
 		// Плита -> Пиломатериалы
-		generateCutterRecipe(event, `afc:wood/planks/${wood}_slab`, `2x afc:wood/lumber/${wood}`, 400, 10, `${wood}_lumber_from_slab`)
+		generateCutterRecipe(event, `afc:wood/planks/${wood}_slab`, `2x afc:wood/lumber/${wood}`, 50, 7, `${wood}_lumber_from_slab`)
 
 		// ? -> Деревянная нажимная пластина
 		event.shaped(`afc:wood/planks/${wood}_pressure_plate`, [
@@ -146,4 +146,84 @@ const registerAFCRecipes = (event) => {
 		.resultFluid(Fluid.of('tfg:conifer_pitch', 2))
 		.minTemp(-8)
 		.id("tfg:tree_tapping/ancient_douglas_fir_resin")
+
+	//#region Выход: Сырая резиновая пыль
+
+	// Из бревна капока
+	event.recipes.gtceu.extractor('raw_rubber_from_log')
+		.itemInputs('#tfg:latex_logs')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
+	// Из саженца капока
+	event.recipes.gtceu.extractor('raw_rubber_from_sapling')
+		.itemInputs('1x #tfg:rubber_saplings')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
+	// Из листвы капока
+	event.recipes.gtceu.extractor('raw_rubber_from_leaves')
+		.itemInputs('16x #tfg:rubber_leaves')
+		.itemOutputs('gtceu:raw_rubber_dust')
+		.duration(300)
+		.EUt(2)
+
+	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
+
+	//#endregion
+
+	// Из бревна капока
+	event.recipes.gtceu.centrifuge('rubber_log_separation')
+		.itemInputs('#tfg:latex_logs')
+		.chancedOutput('gtceu:raw_rubber_dust', 5000, 1200)
+		.chancedOutput('gtceu:plant_ball', 3750, 900)
+		.chancedOutput('gtceu:sticky_resin', 2500, 600)
+		.chancedOutput('gtceu:wood_dust', 2500, 700)
+		.outputFluids(Fluid.of('gtceu:methane', 60))
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.centrifuge('conifer_log_separation')
+		.itemInputs('#tfg:rosin_logs')
+		.chancedOutput('tfg:conifer_rosin', 7500, 1200)
+		.chancedOutput('gtceu:plant_ball', 3750, 900)
+		.chancedOutput('gtceu:sticky_resin', 2500, 600)
+		.chancedOutput('gtceu:wood_dust', 2500, 700)
+		.outputFluids(Fluid.of('gtceu:methane', 60))
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.centrifuge('maple_syrup_log_separation')
+		.itemInputs('#tfc:maple_logs')
+		.chancedOutput('afc:maple_sugar', 7500, 1200)
+		.chancedOutput('gtceu:plant_ball', 3750, 900)
+		.chancedOutput('gtceu:wood_dust', 2500, 700)
+		.outputFluids(Fluid.of('gtceu:methane', 60), Fluid.of('afc:maple_syrup', 100))
+		.duration(200)
+		.EUt(20)
+
+	event.recipes.gtceu.centrifuge('birch_syrup_log_separation')
+		.itemInputs('#tfc:birch_logs')
+		.chancedOutput('afc:birch_sugar', 7500, 1200)
+		.chancedOutput('gtceu:plant_ball', 3750, 900)
+		.chancedOutput('gtceu:wood_dust', 2500, 700)
+		.outputFluids(Fluid.of('gtceu:methane', 60), Fluid.of('afc:birch_syrup', 100))
+		.duration(200)
+		.EUt(20)
+
+	//#endregion
+
+	event.recipes.gtceu.fluid_solidifier('maple_syrup')
+		.inputFluids(Fluid.of('afc:maple_syrup', 100))
+		.itemOutputs('afc:maple_sugar')
+		.duration(500)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.fluid_solidifier('birch_syrup')
+		.inputFluids(Fluid.of('afc:birch_syrup', 100))
+		.itemOutputs('afc:birch_sugar')
+		.duration(500)
+		.EUt(GTValues.VA[GTValues.ULV])
 }
