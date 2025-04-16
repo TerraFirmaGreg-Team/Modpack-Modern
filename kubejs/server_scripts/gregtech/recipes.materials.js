@@ -9,16 +9,10 @@ function registerGTCEUMetalRecipes(event) {
 		const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
 		if (toolHeadItem.isEmpty()) return
 
-		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
-			event.shapeless(toolItem, [
-				'#forge:rods/wooden',
-				toolHeadItem
-			]).id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-		}
-		else {
-			event.recipes.tfc.advanced_shapeless_crafting(TFC.itemStackProvider.of(toolItem).copyForgingBonus(), ['#forge:rods/wooden', toolHeadItem])
-				.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-		}
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
+			[toolHeadItem, '#forge:rods/wooden'], toolHeadItem)
+			.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
 
 		processToolHead(headTagPrefix, extruderMold, cirucitMeta, material)
 	}
