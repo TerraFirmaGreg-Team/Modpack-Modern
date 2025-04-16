@@ -183,6 +183,12 @@ const registerTFCRecipes = (event) => {
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.alloy_smelter('tfg:oops_I_smelted_all_my_kaolin')
+		.itemInputs('5x minecraft:clay_ball', 'tfc:powder/kaolinite')
+		.itemOutputs('5x tfc:kaolin_clay')
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.ULV])
+
 	// Выпаривание соли
 	event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)
 		.itemOutput('gtceu:small_salt_dust')
