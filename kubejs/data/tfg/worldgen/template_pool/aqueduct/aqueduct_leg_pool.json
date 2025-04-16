@@ -1,0 +1,42 @@
+{
+    "name": "tfg:aqueduct/aqueduct_leg_pool",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {	
+        "weight": 5,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_leg_0_0",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_leg_0_1",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 1,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_leg_0_2",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      },
+      {	
+        "weight": 3,
+        "element": {
+          "location": "tfg:aqueduct/aqueduct_leg_0_3",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      }
+    ]
+}

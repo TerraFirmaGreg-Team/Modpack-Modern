@@ -1,0 +1,70 @@
+{
+	"name": "Ores and Minerals",
+	"category": "tfc:beneath",
+	"icon": "beneath:ore/normal_nether_gold",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "The ores you can find Beneath are mostly similar to what you can find on the surface, but with a few changes. Consult the $(l:tfg_ores)Ores in TFG$() category for exact details."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Migmatite",
+			"item": { "tag": "forge:ores_in_ground/deepslate" },
+			"text": "The most common rock type found is Migmatite. This deep metamorphic rock contains a wide variety of ores you'd normally find in other rock types on the surface."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Travertine",
+			"item": { "tag": "forge:ores_in_ground/dripstone" },
+			"text": "In wetter areas, you may find $(thing)Travertine$(). It is a sedimentary rock that can contain the same kind of ores as Migmatite."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Pyroxenite",
+			"item": { "tag": "forge:ores_in_ground/pyroxenite" },
+			"text": "Around the deepest level of the Beneath, the different rock types gradually all turn into $(thing)Pyroxenite$(). This ultramafic igneous rock is extremely rich in ores, but this depth also comes with extreme heat, so be prepared!"
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "cursecoal",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:ore/nether_cursecoal"
+				}
+			},
+			"name": "Anthracite",
+			"text": "Anthracite is a powerful $(l:beneath/hellforge)fuel$(). It can be found in Migmatite in the upper half of the Beneath.",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:multiblock",
+			"anchor": "sylvite",
+			"multiblock": {
+				"pattern": [
+					[
+						"X"
+					],
+					[
+						"0"
+					]
+				],
+				"mapping": {
+					"X": "beneath:ore/blackstone_sylvite"
+				}
+			},
+			"name": "Sylvite",
+			"text": "Sylvite is a fertiliser that can be found in Pyroxenite in the lower half of the Beneath.",
+			"enable_visualize": false
+		}
+	],
+	"read_by_default": true
+}

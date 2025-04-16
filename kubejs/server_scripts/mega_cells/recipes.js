@@ -26,7 +26,7 @@ const registerMegaCellsRecipes = (event) => {
 
     // Inscrdiber Silicon Press
     event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press_iron')
-        .itemInputs('#forge:plates/iron', 'ae2:singularity')
+        .itemInputs('#forge:plates/cast_iron', 'ae2:singularity')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
         .duration(6000)

@@ -1,0 +1,20 @@
+
+#Rotation offsets (in degrees) for each mark.
+[SymbolOffsets]
+	#Range: -360 ~ 360
+	CenterRotationOffset = 0
+	#Range: -360 ~ 360
+	ArrowRotationOffset = 0
+	#Range: -360 ~ 360
+	CrossRotationOffset = 45
+	#Range: -360 ~ 360
+	CheckRotationOffset = 45
+	#Range: -360 ~ 360
+	SkullRotationOffset = 0
+	#Range: -360 ~ 360
+	HouseRotationOffset = 0
+	#Range: -360 ~ 360
+	HeartRotationOffset = 0
+	#Range: -360 ~ 360
+	PickaxeRotationOffset = 0
+
