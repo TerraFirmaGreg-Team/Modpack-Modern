@@ -1165,21 +1165,20 @@
 			subtitle: "{quests.steam_age.create_tools.subtitle}"
 			tasks: [
 				{
-					id: "272B2620E00219B5"
+					id: "12C909F6EB4BB615"
+					item: "create:goggles"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7721793B4C0AFD2C"
 					item: {
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wrench)"
+							"ftbfiltersystem:filter": "or(item(gtceu:copper_wrench)item(gtceu:bronze_wrench)item(gtceu:black_bronze_wrench)item(gtceu:bismuth_bronze_wrench)item(gtceu:wrought_iron_wrench)item(gtceu:steel_wrench))"
 						}
 					}
-					title: "Any #forge:tools/wrench"
-					type: "item"
-				}
-				{
-					id: "12C909F6EB4BB615"
-					item: "create:goggles"
-					optional_task: true
 					type: "item"
 				}
 			]

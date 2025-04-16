@@ -1517,16 +1517,14 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/contraption_controls')
 
 	event.shaped('create:wrench', [
-		'FBB',
-		'CAD',
-		'AE '
+		' BB',
+		' C ',
+		'AD '
 	], {
-		A: '#forge:rods/treated_wood',
+		A: '#forge:rods/wooden',
 		B: '#forge:plates/brass',
-		C: '#forge:small_gears/wood',
-		D: '#forge:screws',
-		E: '#forge:tools/screwdrivers',
-		F: '#forge:tools/hammers'
+		C: '#tfg:small_cogwheels',
+		D: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/wrench')
 
 	event.shaped('create:goggles', [
@@ -1534,11 +1532,11 @@ const registerCreateRecipes = (event) => {
 		'AEA',
 		'C C'
 	], {
-		A: '#forge:rings/gold',
+		A: '#forge:rings/brass',
 		B: '#forge:leather',
 		C: 'tfc:lens',
-		D: '#forge:screws',
-		E: '#forge:tools/screwdrivers'
+		D: 'tfc:glue',
+		E: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/goggles')
 
 	event.shaped('create:analog_lever', [

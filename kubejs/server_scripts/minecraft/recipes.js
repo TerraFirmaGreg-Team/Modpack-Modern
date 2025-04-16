@@ -164,7 +164,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
 		.inputFluids(Fluid.of('minecraft:water', 600))
-		.itemOutputs('minecraft:sugar')
+		.itemOutputs('minecraft:sugar', 'gtceu:plant_ball')
 		.duration(800)
 		.EUt(6)
 
@@ -841,6 +841,9 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shapeless('minecraft:redstone_torch', ['#forge:rods/wooden', 'minecraft:redstone'])
 		.id('tfg:shapeless/redstone_torch')
+
+	event.shapeless('minecraft:lever', ['#forge:rods/wooden', 'minecraft:redstone', '#forge:cobblestone'])
+		.id('tfg:shapeless/lever')
 
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
 
