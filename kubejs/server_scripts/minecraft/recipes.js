@@ -252,8 +252,27 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Книга
 
 	event.shapeless('minecraft:book', [
-		'minecraft:paper', 'minecraft:paper', 'minecraft:paper', '#forge:leather'
-	]).id('minecraft:book')
+		'#forge:paper', '#forge:paper', '#forge:paper', '#forge:leather', 'tfc:glue'
+	]).id('minecraft:book_from_glue')
+
+	event.shapeless('minecraft:book', [
+		'#forge:paper', '#forge:paper', '#forge:paper', '#forge:leather', 'gtceu:sticky_resin'
+	]).id('minecraft:book_from_sticky_resin')
+
+	event.recipes.gtceu.assembler('tfg:assembler/book_from_leather')
+		.itemInputs('3x #forge:paper', '#forge:leather')
+		.itemOutputs('minecraft:book')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.EUt(7).duration(30)
+
+	//#endregion
+
+	//#region
+
+	event.recipes.gtceu.assembler('tfg:assembler/name_tag')
+		.itemInputs('5x #forge:string', '#forge:paper')
+		.itemOutputs('minecraft:name_tag')
+		.EUt(7).duration(100)
 
 	//#endregion
 

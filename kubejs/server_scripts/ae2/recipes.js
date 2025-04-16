@@ -191,7 +191,7 @@ const registerAE2Recipes = (event) => {
 	]).id('tfg:crafting/light_detector')
 
 	// Annihilation Core
-	event.shaped('ae2:annihilation_core', [
+	event.shaped('2x ae2:annihilation_core', [
 		'ABA',
 		'BDB',
 		'ABA'
@@ -202,7 +202,7 @@ const registerAE2Recipes = (event) => {
 	}).id('tfg:crafting/annihilation_core')
 
 	// Formation Core
-	event.shaped('ae2:formation_core', [
+	event.shaped('2x ae2:formation_core', [
 		'ABA',
 		'BDB',
 		'ABA'
