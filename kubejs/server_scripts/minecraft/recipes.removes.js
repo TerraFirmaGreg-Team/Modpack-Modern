@@ -911,6 +911,9 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'minecraft:warped_hyphae' })
 	event.remove({ id: 'minecraft:stripped_crimson_hyphae' })
 	event.remove({ id: 'minecraft:crimson_hyphae' })
+
+	event.remove({ id: 'minecraft:arrow' })
+	event.remove({ output: 'minecraft:tipped_arrow' })
 	
 	//#endregion
 

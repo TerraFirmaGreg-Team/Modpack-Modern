@@ -140,6 +140,13 @@ const registerTFGItems = (event) => {
         .translationKey('item.tfg.conifer_rosin')
     //#endregion
 
+    //Arrow Parts
+    event.create('tfg:flint_arrow_head')
+        .translationKey('item.tfg.flint_arrow_head')
+
+    event.create('tfg:fletching')
+        .translationKey('item.tfg.fletching')
+
     //#region Immersive Aircraft Impl
     event.create('tfg:scaffolding_frame')
         .translationKey('item.tfg.scaffolding_frame')
