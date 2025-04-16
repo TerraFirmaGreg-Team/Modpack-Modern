@@ -132,6 +132,7 @@ TFCEvents.data(event => {
 LootJS.modifiers((event) => {
     registerGTCEULoots(event)
     registerLootrLoots(event)
+    registerTFCLoots(event)
 });
 
 /**
