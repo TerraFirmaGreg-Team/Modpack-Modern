@@ -679,7 +679,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:foils/rubber',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/knives',
-		E: 'create:electron_tubes'
+		E: 'create:electron_tube'
 	}).id('tfg:create/shaped/brass_funnel')
 
 	event.shaped('2x create:brass_funnel', [
@@ -691,7 +691,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:leather',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/knives',
-		E: 'create:electron_tubes'
+		E: 'create:electron_tube'
 	}).id('tfg:create/shaped/brass_funnel_leather')
 
 	// Тунель из железа
