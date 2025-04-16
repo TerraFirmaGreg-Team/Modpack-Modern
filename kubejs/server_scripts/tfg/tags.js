@@ -8,6 +8,9 @@ const registerTFGItemTags = (event) => {
 	})
 	event.add('tfg:decorative_vases', 'tfg:decorative_vase')
 	event.add('tfg:decorative_vases/unfired', 'tfg:decorative_vase/unfired')
+	
+	//Knapping
+	event.add('tfc:any_knapping', 'minecraft:flint')
 
 	// #region Paper from wood
 
