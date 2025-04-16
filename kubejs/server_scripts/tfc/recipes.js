@@ -164,7 +164,12 @@ const registerTFCRecipes = (event) => {
 	event.recipes.tfc.advanced_shapeless_crafting(
 		TFC.itemStackProvider.of('5x tfc:food/pumpkin_chunks').copyFood(),
 		[TFC.ingredient.notRotten('tfc:pumpkin'), '#forge:tools/hammers'], 'tfc:pumpkin')
-		.id(`tfc:crafting/pumpkin_chunks`)
+		.id(`tfc:crafting/pumpkin_chunks_hammer`)
+
+	event.recipes.tfc.advanced_shapeless_crafting(
+		TFC.itemStackProvider.of('5x tfc:food/pumpkin_chunks').copyFood(),
+		[TFC.ingredient.notRotten('tfc:pumpkin'), '#tfc:knives'], 'tfc:pumpkin')
+		.id(`tfc:crafting/pumpkin_chunks_knife`)
 
 	// Lime
 	event.smelting('tfc:powder/lime', 'tfc:powder/flux')
