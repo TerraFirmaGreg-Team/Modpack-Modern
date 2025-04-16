@@ -197,15 +197,6 @@ const registerTFCItemSize = (event) => {
     })
     event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
     event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
-
-    event.itemSize('man_of_many_planes:scarlet_biplane', 'huge', 'very_heavy')
-    event.itemSize('man_of_many_planes:economy_plane', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:airship', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:cargo_airship', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:warship', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:biplane', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:gyrodyne', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:quadrocopter', 'very_large', 'very_heavy')
 }
 //#endregion
 
