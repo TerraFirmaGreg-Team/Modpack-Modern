@@ -47,6 +47,44 @@ const registerRailWaysRecipes = (event) => {
 		.duration(200)
 		.EUt(28)
 
+	//#region Couplers and Buffers
+    event.recipes.gtceu.assembler(`tfg:railways/screwlink_coupler`)
+        .itemInputs(`minecraft:tripwire_hook`, `#forge:plates/steel`, '#forge:screws/steel')
+        .circuit(1)
+        .itemOutputs(`railways:screwlink_coupler`)
+        .duration(200)
+        .EUt(28)
+
+    event.recipes.gtceu.assembler(`tfg:railways/copycat_headstock_screwlink_coupler`)
+        .itemInputs(`railways:screwlink_coupler`, `create:copycat_panel`)
+        .circuit(1)
+        .itemOutputs(`railways:copycat_headstock_screwlink_coupler`)
+        .duration(200)
+        .EUt(28)
+
+	 event.recipes.gtceu.assembler(`tfg:railways/buffer`)
+        .itemInputs(`6x #forge:rods/long/steel`, `2x railways:small_buffer`)
+        .circuit(1)
+        .itemOutputs(`railways:buffer`)
+        .duration(200)
+        .EUt(28)
+
+    event.recipes.gtceu.assembler(`tfg:railways/small_buffer`)
+        .itemInputs(`railways:screwlink_coupler`, `#forge:ingots/steel`)
+        .circuit(1)
+        .itemOutputs(`railways:small_buffer`)
+        .duration(200)
+        .EUt(28)
+
+    event.recipes.gtceu.assembler(`tfg:railways/big_buffer`)
+        .itemInputs(`railways:small_buffer`, `#forge:ingots/steel`)
+        .circuit(1)
+        .itemOutputs(`railways:big_buffer`)
+        .duration(200)
+        .EUt(28)
+
+	//#endregion
+
 	// Переключатель пути поезда из андезита
 	event.shaped('railways:track_switch_andesite', [
 		'BAB',

@@ -47,6 +47,8 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:stone_buzz_saw_blade', 
     'gtceu:stone_wrench_tip',
 
+    'gtceu:treated_wood_hanging_sign',
+
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 
     'gtceu:rubber_leaves', 

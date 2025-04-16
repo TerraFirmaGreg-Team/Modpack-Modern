@@ -583,5 +583,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/treated_trapdoor_steel' })
 	event.remove({ id: 'gtceu:assembler/treated_door' })
 	event.remove({ id: 'gtceu:assembler/barrel' })
+	event.remove({ id: 'gtceu:assembler/book_from_leather' })
+	event.remove({ id: 'gtceu:assembler/name_tag' })
 
+	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 }
