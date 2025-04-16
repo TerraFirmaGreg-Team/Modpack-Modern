@@ -791,6 +791,8 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// #endregion
 
+	// #region Smashed food
+
 	event.recipes.gtceu.forge_hammer('firmalife:soybean_paste')
 		.itemInputs('firmalife:food/dehydrated_soybeans')
 		.itemOutputs('firmalife:food/soybean_paste')
@@ -808,4 +810,13 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:food/smashed_white_grapes')
 		.duration(20)
 		.EUt(7)
+
+	// #endregion
+
+	// #region Drying mat alternatives
+
+	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/leafy_kelp' }).id('tfg:shaped/drying_mat_leafy_kelp')
+	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/winged_kelp' }).id('tfg:shaped/drying_mat_winged_kelp')
+
+	// #endregion
 }
