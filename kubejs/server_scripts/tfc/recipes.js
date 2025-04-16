@@ -177,8 +177,11 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:smelting/kaolinite_clay')
 
 	// Fire Brick
-	//event.smelting('tfc:ceramic/fire_brick', 'gtceu:compressed_fireclay')
-	//	.id('tfg:smelting/fireclay_brick')
+	event.recipes.gtceu.alloy_smelter('tfg:cheaper_fire_brick')
+		.itemInputs('#forge:dusts/graphite', 'tfc:kaolin_clay')
+		.itemOutputs('tfc:fire_clay')
+		.duration(600)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Выпаривание соли
 	event.recipes.tfc.pot([], Fluid.of('tfc:salt_water', 625), 300, 100)
