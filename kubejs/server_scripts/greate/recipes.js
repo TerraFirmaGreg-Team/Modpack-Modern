@@ -252,31 +252,33 @@ function registerGreateRecipes(event) {
 		F: '#forge:tools/wrenches'
 	}).id('greate:shaped/aluminium_mechanical_saw')
 
-	event.shaped('greate:stainless_steel_mechanical_saw', [
-		'ABA',
-		'CDC',
-		'FE '
-	], {
-		A: '#gtceu:circuits/hv',
-		B: 'gtceu:red_steel_buzz_saw_blade',
-		C: 'gtceu:hv_electric_motor',
-		D: 'gtceu:hv_machine_casing',
-		E: 'greate:stainless_steel_shaft',
-		F: '#forge:tools/wrenches'
-	}).id('greate:shaped/stainless_steel_mechanical_saw')
+	// Removed while we wait for a fix so recipes don't work without being in a Cleanroom - Important for Wafer
+	
+	// event.shaped('greate:stainless_steel_mechanical_saw', [
+	//	'ABA',
+	//	'CDC',
+	//	'FE '
+	// ], {
+	//	A: '#gtceu:circuits/hv',
+	//	B: 'gtceu:red_steel_buzz_saw_blade',
+	//	C: 'gtceu:hv_electric_motor',
+	//	D: 'gtceu:hv_machine_casing',
+	//	E: 'greate:stainless_steel_shaft',
+	//	F: '#forge:tools/wrenches'
+	// }).id('greate:shaped/stainless_steel_mechanical_saw')
 
-	event.shaped('greate:titanium_mechanical_saw', [
-		'ABA',
-		'CDC',
-		'FE '
-	], {
-		A: '#gtceu:circuits/ev',
-		B: 'gtceu:ultimet_buzz_saw_blade',
-		C: 'gtceu:ev_electric_motor',
-		D: 'gtceu:ev_machine_casing',
-		E: 'greate:titanium_shaft',
-		F: '#forge:tools/wrenches'
-	}).id('greate:shaped/titanium_mechanical_saw')
+	// event.shaped('greate:titanium_mechanical_saw', [
+	//	'ABA',
+	//	'CDC',
+	//	'FE '
+	//], {
+	//	A: '#gtceu:circuits/ev',
+	//	B: 'gtceu:ultimet_buzz_saw_blade',
+	//	C: 'gtceu:ev_electric_motor',
+	//	D: 'gtceu:ev_machine_casing',
+	//	E: 'greate:titanium_shaft',
+	//	F: '#forge:tools/wrenches'
+	//}).id('greate:shaped/titanium_mechanical_saw')
 
 	// #endregion
 

@@ -21,8 +21,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_fluid_regulator.title}"
-			x: 3.0d
-			y: 0.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["38993B4697B0E16C"]
@@ -41,8 +41,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_robot_arm.title}"
-			x: 3.0d
-			y: -2.0d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
@@ -57,8 +57,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_conveyor.title}"
-			x: 1.5d
-			y: -0.75d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
@@ -73,8 +73,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_pump.title}"
-			x: 1.5d
-			y: 0.5d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7EED0084BA59FED1"]
@@ -89,14 +89,11 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_piston.title}"
-			x: 1.5d
-			y: -2.0d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
-			dependencies: [
-				"7EED0084BA59FED1"
-				"648BCF486E16CCB2"
-			]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_steam_turbine.desc.1}"
 				"{@pagebreak}"
@@ -112,15 +109,16 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_steam_turbine.title}"
-			x: 0.0d
-			y: 1.5d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
 			description: ["{quests.low_voltage.lv_amp_explanation.desc}"]
 			id: "7B0FF43022F6C2EC"
+			optional: true
 			shape: "rsquare"
-			size: 0.66d
+			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_amp_explanation.subtitle}"
 			tasks: [{
 				count: 4L
@@ -129,16 +127,16 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_amp_explanation.title}"
-			x: 4.5d
-			y: 3.5d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["45B71324028F6E68"]
 			description: ["{quests.low_voltage.aluminium_ingot.desc}"]
 			hide_dependency_lines: false
 			id: "7567E885B7166603"
-			shape: "gear"
-			size: 4.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "{quests.low_voltage.aluminium_ingot.subtitle}"
 			tasks: [{
 				id: "161B5813936E5E42"
@@ -147,13 +145,19 @@
 			}]
 			title: "{quests.low_voltage.aluminium_ingot.title}"
 			x: -9.0d
-			y: 11.5d
+			y: 9.75d
 		}
 		{
+			dependencies: [
+				"49896161B31DB7B4"
+				"5B891BA4897FD73C"
+				"1912758422EEB006"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.lv_battery_preparation.desc}"]
+			hide_dependency_lines: true
 			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
-			shape: "rsquare"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_battery_preparation.subtitle}"
 			tasks: [
@@ -170,8 +174,8 @@
 				}
 			]
 			title: "{quests.low_voltage.lv_battery_preparation.title}"
-			x: 7.5d
-			y: 2.5d
+			x: 5.5d
+			y: -0.5d
 		}
 		{
 			description: [
@@ -198,8 +202,8 @@
 				type: "item"
 			}]
 			title: "GregTech Storage"
-			x: -4.5d
-			y: -4.0d
+			x: 6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -225,8 +229,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.cover_behaviour.title}"
-			x: 3.0d
-			y: -0.75d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -251,64 +255,88 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.machine_auto_output_behaviour.title}"
-			x: -4.5d
-			y: 0.5d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_wiremill.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_wiremill.desc.2}"
 			]
 			id: "32EA7E81885C8E87"
-			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_wiremill.subtitle}"
 			tasks: [{
-				id: "2B5BF6F3ED693B9E"
-				item: "gtceu:lv_wiremill"
+				id: "24287B2E01AF3841"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Wiremill LV\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_wiremill)item(vintageimprovements:spring_coiling_machine))"
+					}
+				}
+				title: "{quests.low_voltage.lv_wiremill.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_wiremill.title}"
-			x: -3.5d
-			y: -0.5d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_bender.desc}"]
 			id: "10ECB471A77F5136"
-			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_bender.subtitle}"
 			tasks: [{
-				id: "3AC3A8728EE60E4C"
-				item: "gtceu:lv_bender"
+				id: "362A01D38AC915B7"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Bender LV\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_bender)item(createaddition:rolling_mill))"
+					}
+				}
+				title: "{quests.low_voltage.lv_bender.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_bender.title}"
-			x: -3.5d
-			y: 1.5d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_lathe.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_lathe.desc.2}"
 			]
 			id: "07E7678095258EDB"
-			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_lathe.subtitle}"
 			tasks: [{
-				id: "6781D0241D0564A5"
-				item: "gtceu:lv_lathe"
+				id: "66E007873E6F2471"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(vintageimprovements:lathe)item(gtceu:lv_lathe))"
+					}
+				}
+				title: "{quests.low_voltage.lv_lathe.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_lathe.title}"
-			x: -3.5d
-			y: 0.5d
+			x: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -322,8 +350,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_polariser.title}"
-			x: 2.0d
-			y: -4.0d
+			x: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6E186F9C57155BFA"]
@@ -335,6 +363,7 @@
 				"{quests.low_voltage.lbb.desc.3}"
 			]
 			id: "33263404ED38C6D2"
+			optional: true
 			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lbb.subtitle}"
@@ -344,8 +373,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lbb.title}"
-			x: -1.0d
-			y: 1.5d
+			x: 7.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -375,6 +404,7 @@
 				"{quests.low_voltage.lv_chemical_bath.desc.2}"
 			]
 			id: "330BDB559A7BAB35"
+			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_chemical_bath.subtitle}"
 			tasks: [{
@@ -383,8 +413,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_chemical_bath.title}"
-			x: 7.5d
-			y: 4.5d
+			x: 5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["64E1E87B8AF72968"]
@@ -410,11 +440,11 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.programmed_circuits.title}"
-			x: -5.5d
-			y: 0.5d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_canner.desc}"]
 			id: "37307A46E70011D3"
 			size: 1.0d
@@ -425,8 +455,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_canner.title}"
-			x: 4.5d
-			y: 2.5d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -454,8 +484,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_battery.title}"
-			x: 6.0d
-			y: 2.5d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
@@ -484,8 +514,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_battery_buffer_4x.title}"
-			x: 6.0d
-			y: 3.5d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1646BF9194100E57"]
@@ -508,7 +538,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.other_machines.desc}"]
 			icon: "gtceu:crushed_sulfur_ore"
 			id: "701BCADAE5CF6CA5"
@@ -521,8 +551,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.low_voltage.other_machines.title}"
-			x: 6.0d
-			y: 4.5d
+			x: 5.5d
+			y: 7.0d
 		}
 		{
 			description: ["{quests.low_voltage.lv_age_progression.desc}"]
@@ -538,7 +568,7 @@
 			}]
 			title: "{quests.low_voltage.lv_age_progression.title}"
 			x: 0.0d
-			y: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -572,8 +602,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
-			x: 6.0d
-			y: 1.0d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5B2696206205CB2E"]
@@ -599,7 +629,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_gas_collector.desc}"]
 			id: "15928F50AE80A5CF"
 			shape: "rsquare"
@@ -615,7 +645,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_chemical_reactor.desc.1}"
 				"{@pagebreak}"
@@ -659,8 +689,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.universal_cell.title}"
-			x: -4.5d
-			y: 1.5d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["581CDF545E1EA1FD"]
@@ -688,10 +718,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"5B891BA4897FD73C"
-				"49896161B31DB7B4"
-			]
+			dependencies: ["5B891BA4897FD73C"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.soldering_alloy.desc}"]
 			icon: "gtceu:soldering_alloy_ingot"
@@ -715,10 +742,11 @@
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_electroliser.desc.2}"
 				"{@pagebreak}"
-				"{quests.low_voltage.lv_electroliser.desc.3"
+				"{quests.low_voltage.lv_electroliser.desc.3}"
 			]
 			hide_dependent_lines: true
 			id: "32B08E6F414A00C0"
+			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_electroliser.subtitle}"
 			tasks: [{
@@ -727,33 +755,42 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_electroliser.title}"
-			x: 6.0d
-			y: 6.0d
+			x: 6.5d
+			y: 7.0d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_cutter.desc}"]
 			id: "3A8D7FC6F316C38C"
-			optional: true
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_cutter.subtitle}"
 			tasks: [{
-				id: "662DB818821C4EAE"
-				item: "gtceu:lv_cutter"
+				id: "5C48A838AB442329"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"LV Cutter\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_cutter)item(greate:steel_mechanical_saw))"
+					}
+				}
+				title: "{quests.low_voltage.lv_cutter.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_cutter.title}"
-			x: -3.5d
-			y: -1.5d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_centrifuge.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_centrifuge.desc.2}"
 				"{@pagebreak}"
-				"{quests.low_voltage.lv_centrifuge.desc.3"
+				"{quests.low_voltage.lv_centrifuge.desc.3}"
 			]
 			id: "5263F866638D875C"
 			shape: "octagon"
@@ -772,6 +809,7 @@
 			dependencies: ["37307A46E70011D3"]
 			description: ["{quests.low_voltage.lv_sprayer.desc}"]
 			id: "5AD9884E7BFB2510"
+			optional: true
 			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_sprayer.subtitle}"
@@ -782,11 +820,11 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_sprayer.title}"
-			x: 4.5d
-			y: 1.0d
+			x: 4.25d
+			y: -0.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_assembler.desc.1}"
 				"{@pagebreak}"
@@ -806,7 +844,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: [
 				"{quests.low_voltage.lv_extractor.desc.1}"
 				"{@pagebreak}"
@@ -866,17 +904,14 @@
 			y: 11.0d
 		}
 		{
-			dependencies: [
-				"15928F50AE80A5CF"
-				"32B08E6F414A00C0"
-			]
+			dependencies: ["15928F50AE80A5CF"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{quests.low_voltage.lv_oxygen.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_oxygen.desc.2}"
 				"{@pagebreak}"
-				"{quests.low_voltage.lv_oxygen.desc.3"
+				"{quests.low_voltage.lv_oxygen.desc.3}"
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "1A77CA35F054F988"
@@ -921,10 +956,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"5B891BA4897FD73C"
-				"49896161B31DB7B4"
-			]
+			dependencies: ["5B891BA4897FD73C"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.low_voltage.gallium_arsenide.desc}"]
 			id: "4073577B7EF9B593"
@@ -1010,7 +1042,7 @@
 			}]
 			title: "{quests.low_voltage.aluminium_dust.title}"
 			x: -9.0d
-			y: 8.625d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1088,7 +1120,6 @@
 			icon: "gtceu:lv_rock_crusher"
 			id: "1F2359106FC95603"
 			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_rock_crusher.subtitle}"
 			tasks: [{
@@ -1107,8 +1138,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_rock_crusher.title}"
-			x: -2.0d
-			y: -6.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1116,7 +1147,6 @@
 			icon: "gtceu:lv_charger_4x"
 			id: "2DB259568F347C0E"
 			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_turbo_charge.subtitle}"
 			tasks: [{
@@ -1135,8 +1165,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_turbo_charge.title}"
-			x: 2.0d
-			y: -6.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
@@ -1144,7 +1174,6 @@
 			icon: "gtceu:lv_fisher"
 			id: "3B26CA44EA955B07"
 			optional: true
-			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_fisher.subtitle}"
 			tasks: [{
@@ -1163,8 +1192,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_fisher.title}"
-			x: 0.0d
-			y: -6.0d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7CCC1BDDE0C67F16"]
@@ -1180,11 +1209,11 @@
 				type: "item"
 			}]
 			title: "Tape for Crate"
-			x: -3.0d
-			y: -4.0d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_mixer.desc}"]
 			id: "5B891BA4897FD73C"
 			optional: true
@@ -1192,23 +1221,34 @@
 			size: 2.0d
 			subtitle: "{quests.low_voltage.lv_mixer.subtitle}"
 			tasks: [{
-				id: "27715DF608CBAE08"
-				item: "gtceu:lv_mixer"
+				id: "337A6B670842F80A"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"LV Mixer\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(greate:steel_mechanical_mixer)item(gtceu:lv_mixer))"
+					}
+				}
+				title: "{quests.low_voltage.lv_mixer.task}"
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_mixer.title}"
-			x: 4.0d
+			x: 2.0d
 			y: 7.0d
 		}
 		{
+			dependencies: ["12565AB92A2BF976"]
 			description: [
 				"{quests.low_voltage.lv_machine_hull.desc.1}"
 				"{@pagebreak}"
 				"{quests.low_voltage.lv_machine_hull.desc.2}"
 			]
 			id: "22510C5F2386B453"
-			shape: "octagon"
-			size: 1.5d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "{quests.low_voltage.lv_machine_hull.subtitle}"
 			tasks: [{
 				id: "499CACFF0350B3CA"
@@ -1217,7 +1257,7 @@
 			}]
 			title: "{quests.low_voltage.lv_machine_hull.title}"
 			x: 0.0d
-			y: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["15928F50AE80A5CF"]
@@ -1241,10 +1281,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"22510C5F2386B453"
-				"6903C72A254A7B08"
-			]
+			dependencies: ["648BCF486E16CCB2"]
 			description: ["{quests.low_voltage.lv_motor.desc}"]
 			icon: "gtceu:lv_electric_motor"
 			id: "7EED0084BA59FED1"
@@ -1258,8 +1295,8 @@
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_motor.title}"
-			x: 0.0d
-			y: -0.75d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["581CDF545E1EA1FD"]
@@ -1287,6 +1324,7 @@
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			id: "4B4F052F00435AFE"
+			optional: true
 			shape: "heart"
 			tasks: [{
 				id: "00E6EDB1E4C1482F"
@@ -1297,7 +1335,81 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22510C5F2386B453"]
+			description: [
+				"{quests.low_voltage.alternator.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.alternator.desc.2}"
+				""
+				"{image:tfg:textures/quests/alternator_multiblock.png width:100 height:100 align:center}"
+			]
+			id: "2DC24661CAD557B0"
+			optional: true
+			subtitle: "{quests.low_voltage.alternator.subtitle}"
+			tasks: [
+				{
+					id: "5367AD306EAB07E2"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "040F5FC6058411EE"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"LV Converter\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:lv_8a_energy_converter)item(gtceu:lv_16a_energy_converter))"
+						}
+					}
+					title: "{quests.low_voltage.alternator.task}"
+					type: "item"
+				}
+			]
+			title: "{quests.low_voltage.alternator.title}"
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"{quests.low_voltage.mv_hull.desc1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.mv_hull.desc2}"
+			]
+			id: "71A3D034BBA13CF0"
+			shape: "gear"
+			size: 4.0d
+			subtitle: "{quests.low_voltage.mv_hull.subtitle}"
+			tasks: [{
+				id: "371A182195BD9277"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.mv_hull.title}"
+			x: -9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["648BCF486E16CCB2"]
+			description: ["{quests.low_voltage.lv_machine_casing.desc}"]
+			id: "12565AB92A2BF976"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "{quests.low_voltage.lv_machine_casing.subtitle}"
+			tasks: [{
+				id: "7459A24E5EBE148D"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.lv_machine_casing.title}"
+			x: 0.0d
 			y: 1.0d
 		}
 	]
