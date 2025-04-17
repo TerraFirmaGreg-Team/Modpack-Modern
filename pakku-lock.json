@@ -2012,21 +2012,25 @@
             ]
         },
         {
-            "pakku_id": "scaS4vsSneWYIouC",
+            "pakku_id": "M4PNTNZvxOW9zDWV",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "catalogue"
+                "curseforge": "chalk",
+                "modrinth": "chalk-mod"
             },
             "name": {
-                "curseforge": "Catalogue"
+                "curseforge": "Chalk",
+                "modrinth": "Chalk"
             },
             "id": {
-                "curseforge": "459701"
+                "curseforge": "533748",
+                "modrinth": "YWGP4Y1d"
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "catalogue-forge-1.20.1-1.8.0.jar",
+                    "type": "modrinth",
+                    "file_name": "chalk-1.20.1-1.6.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2034,16 +2038,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4766/90/catalogue-forge-1.20.1-1.8.0.jar",
-                    "id": "4766090",
-                    "parent_id": "459701",
+                    "url": "https://cdn.modrinth.com/data/YWGP4Y1d/versions/HA8yrJaB/chalk-1.20.1-1.6.5.jar",
+                    "id": "HA8yrJaB",
+                    "parent_id": "YWGP4Y1d",
                     "hashes": {
-                        "sha1": "b8cc73db430fa6015671492d4332a65a8c2f5cae",
-                        "md5": "524efc6bbcd6da51e86cbf3183587330"
+                        "sha512": "49220d73636378eae9f55d3dbeedaddcc2afa8949dc656d1ea2c64625aeda210bee3d28e7f704d0ec652020173025235a1d6fd0ef94797409c08defac622fe57",
+                        "sha1": "e4dee75dfe5f8ca8ec21f89ff877d3564bd5c9df"
                     },
                     "required_dependencies": [],
-                    "size": 240394,
-                    "date_published": "2023-09-24T02:34:14Z"
+                    "size": 321480,
+                    "date_published": "2024-12-10T13:00:12.908950Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "chalk-1.20.1-1.6.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5979/807/chalk-1.20.1-1.6.5.jar",
+                    "id": "5979807",
+                    "parent_id": "533748",
+                    "hashes": {
+                        "sha1": "e4dee75dfe5f8ca8ec21f89ff877d3564bd5c9df",
+                        "md5": "cd1b8ce2f43d8dd29935778f3575d4f0"
+                    },
+                    "required_dependencies": [],
+                    "size": 321480,
+                    "date_published": "2024-12-10T12:59:38.420Z"
                 }
             ]
         },
@@ -12595,7 +12620,7 @@
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TFG-Core-Modern-0.6.0.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -12603,19 +12628,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/NInE2PwT/TFG-Core-Modern-0.6.0.jar",
-                    "id": "NInE2PwT",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/V5J04AzG/TerraFirmaGreg-Core-Modern-0.6.1.jar",
+                    "id": "V5J04AzG",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "c97104392a379d794737998c890b18ad5d9dc4eca4d93c2e5797d5f5bd655ab64f599565c189862652c493c946ab7e59210ea4343a0a07a428d8cce11c43cf07",
-                        "sha1": "9dbf0f12c3447744a9100e404ffea51b798138f3"
+                        "sha512": "49b5afb2a8b17309d5787a373b765cbbfb266de547bd67a91aa82ee01f14c504601b60e50ec562e1474963ec7060bc11ae246ea8e282f1eb71138f5aa820a0ef",
+                        "sha1": "5c23bc9e7d5948142b1d45ad8fca91e6a9467bf3"
                     },
                     "required_dependencies": [
-                        "JaCEZUhg",
-                        "7tG215v7"
+                        "7tG215v7",
+                        "JaCEZUhg"
                     ],
-                    "size": 325760,
-                    "date_published": "2024-10-28T14:40:13.181873Z"
+                    "size": 241598,
+                    "date_published": "2025-04-15T03:58:27.227420Z"
                 },
                 {
                     "type": "github",
