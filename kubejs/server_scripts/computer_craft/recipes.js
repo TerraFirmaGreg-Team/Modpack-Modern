@@ -2,6 +2,8 @@
 
 const registerComputerCraftRecipes = (event) => {
     
+    registerComputerCraftRecyclingRecipes(event);
+
     // Удаление рецептов мода
     event.remove({ not: [
         { id: 'computercraft:printed_pages' },

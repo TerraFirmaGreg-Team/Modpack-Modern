@@ -84,70 +84,70 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.gtceu.forge_hammer('tfg/refined_bloom')
 		.itemInputs('tfc:raw_iron_bloom')
 		.itemOutputs('tfc:refined_iron_bloom')
-		.duration(1000)
+		.duration(400)
 		.EUt(4)
 
 	// Укрепленная крица -> Слиток кованного железа
 	event.recipes.gtceu.forge_hammer('tfg/wrought_iron_ingot')
 		.itemInputs('tfc:refined_iron_bloom')
 		.itemOutputs('gtceu:wrought_iron_ingot')
-		.duration(1000)
+		.duration(400)
 		.EUt(4)
 
 	// Чугун -> Высокоуглеродная сталь
 	event.recipes.gtceu.forge_hammer('tfg/high_carbon_steel')
 		.itemInputs('tfc:metal/ingot/pig_iron')
 		.itemOutputs('tfc:metal/ingot/high_carbon_steel')
-		.duration(700)
+		.duration(500)
 		.EUt(4)
 
 	// Высокоуглеродная сталь -> Cталь
 	event.recipes.gtceu.forge_hammer('tfg/steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_steel')
 		.itemOutputs('gtceu:steel_ingot')
-		.duration(700)
+		.duration(500)
 		.EUt(4)
 
 	// Высокоуглеродная черная сталь -> черная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/black_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_black_steel')
 		.itemOutputs('tfc:metal/ingot/black_steel')
-		.duration(900)
+		.duration(600)
 		.EUt(4)
 
 	// Высокоуглеродная синяя сталь -> синяя сталь 
 	event.recipes.gtceu.forge_hammer('tfg/blue_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_blue_steel')
 		.itemOutputs('tfc:metal/ingot/blue_steel')
-		.duration(1000)
+		.duration(700)
 		.EUt(4)
 
 	// Высокоуглеродная красная сталь -> красная сталь 
 	event.recipes.gtceu.forge_hammer('tfg/red_steel')
 		.itemInputs('tfc:metal/ingot/high_carbon_red_steel')
 		.itemOutputs('tfc:metal/ingot/red_steel')
-		.duration(1000)
+		.duration(700)
 		.EUt(4)
 
 	// Слабая сталь + Чугун -> Высокоуглеродная черная сталь
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_black_steel')
 		.itemInputs('tfc:metal/ingot/weak_steel', 'tfc:metal/ingot/pig_iron')
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_black_steel')
-		.duration(1000)
+		.duration(600)
 		.EUt(4)
 
 	// Слабая синяя сталь + Черная сталь -> Высокоуглеродная синяя сталь
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_blue_steel')
 		.itemInputs('tfc:metal/ingot/weak_blue_steel', 'tfc:metal/ingot/black_steel')
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_blue_steel')
-		.duration(1000)
+		.duration(700)
 		.EUt(4)
 
 	// Слабая красная сталь + Черная сталь -> Высокоуглеродная красная сталь
 	event.recipes.gtceu.alloy_smelter('tfg/high_carbon_red_steel')
 		.itemInputs('tfc:metal/ingot/weak_red_steel', 'tfc:metal/ingot/black_steel')
 		.itemOutputs('2x tfc:metal/ingot/high_carbon_red_steel')
-		.duration(1000)
+		.duration(700)
 		.EUt(4)
 
 	const TFC_INTERMEDIATE_METALS =
@@ -248,50 +248,67 @@ function registerTFCMetalsRecipes(event) {
 		.id(`tfc:anvil/iron_door`)
 
 	// Bloom -> Wrought Iron Ingot
-	event.recipes.tfc.anvil('gtceu:wrought_iron_ingot', 'tfc:refined_iron_bloom', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(2)
+	event.recipes.tfc.anvil('gtceu:wrought_iron_ingot', 'tfc:refined_iron_bloom', ['hit_last', 'hit_second_last', 'hit_third_last'])
+		.tier(2)
 		.id('tfc:anvil/wrought_iron_from_bloom')
 
 	// High Carbon Steel Ingot -> Steel Ingot
-	event.recipes.tfc.anvil('gtceu:steel_ingot', 'tfc:metal/ingot/high_carbon_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(3)
+	event.recipes.tfc.anvil('gtceu:steel_ingot', 'tfc:metal/ingot/high_carbon_steel', ['hit_last', 'hit_second_last', 'hit_third_last'])
+		.tier(3)
 		.id('tfc:anvil/steel_ingot')
 
 	// High Carbon Black Steel Ingot -> Black Steel Ingot
-	event.recipes.tfc.anvil('tfc:metal/ingot/black_steel', 'tfc:metal/ingot/high_carbon_black_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(4)
+	event.recipes.tfc.anvil('tfc:metal/ingot/black_steel', 'tfc:metal/ingot/high_carbon_black_steel', ['hit_last', 'hit_second_last', 'hit_third_last'])
+		.tier(4)
 		.id('tfc:anvil/black_steel_ingot')
 
 	// High Carbon Red Steel Ingot -> Red Steel Ingot
-	event.recipes.tfc.anvil('tfc:metal/ingot/red_steel', 'tfc:metal/ingot/high_carbon_red_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
+	event.recipes.tfc.anvil('tfc:metal/ingot/red_steel', 'tfc:metal/ingot/high_carbon_red_steel', ['hit_last', 'hit_second_last', 'hit_third_last'])
+		.tier(5)
 		.id('tfc:anvil/red_steel_ingot')
 
 	// High Carbon Blue Steel Ingot -> Blue Steel Ingot
-	event.recipes.tfc.anvil('tfc:metal/ingot/blue_steel', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last']).tier(5)
+	event.recipes.tfc.anvil('tfc:metal/ingot/blue_steel', 'tfc:metal/ingot/high_carbon_blue_steel', ['hit_last', 'hit_second_last', 'hit_third_last'])
+		.tier(5)
 		.id('tfc:anvil/blue_steel_ingot')
 
 	// Gears
-	event.recipes.tfc.anvil('gtceu:bronze_gear', '#forge:double_plates/bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
+	event.recipes.tfc.anvil('gtceu:bronze_gear', '#forge:double_plates/bronze', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(2)
 		.id('tfc:anvil/bronze_gear')
-	event.recipes.tfc.anvil('gtceu:black_bronze_gear', '#forge:double_plates/black_bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
+	event.recipes.tfc.anvil('gtceu:black_bronze_gear', '#forge:double_plates/black_bronze', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(2)
 		.id('tfc:anvil/black_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:bismuth_bronze_gear', '#forge:double_plates/bismuth_bronze', ['punch_last', 'shrink_any', 'draw_any']).tier(2)
+	event.recipes.tfc.anvil('gtceu:bismuth_bronze_gear', '#forge:double_plates/bismuth_bronze', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(2)
 		.id('tfc:anvil/bismuth_bronze_gear')
-	event.recipes.tfc.anvil('gtceu:wrought_iron_gear', '#forge:double_plates/wrought_iron', ['punch_last', 'shrink_any', 'draw_any']).tier(3)
+	event.recipes.tfc.anvil('gtceu:wrought_iron_gear', '#forge:double_plates/wrought_iron', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(3)
 		.id('tfc:anvil/wrought_iron_gear')
-	event.recipes.tfc.anvil('gtceu:steel_gear', '#forge:double_plates/steel', ['punch_last', 'shrink_any', 'draw_any']).tier(4)
+	event.recipes.tfc.anvil('gtceu:steel_gear', '#forge:double_plates/steel', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(4)
 		.id('tfc:anvil/steel_gear')
-	event.recipes.tfc.anvil('gtceu:black_steel_gear', '#forge:double_plates/black_steel', ['punch_last', 'shrink_any', 'draw_any']).tier(5)
+	event.recipes.tfc.anvil('gtceu:black_steel_gear', '#forge:double_plates/black_steel', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(5)
 		.id('tfc:anvil/black_steel_gear')
-	event.recipes.tfc.anvil('gtceu:red_steel_gear', '#forge:double_plates/red_steel', ['punch_last', 'shrink_any', 'draw_any']).tier(6)
+	event.recipes.tfc.anvil('gtceu:red_steel_gear', '#forge:double_plates/red_steel', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(6)
 		.id('tfc:anvil/red_steel_gear')
-	event.recipes.tfc.anvil('gtceu:blue_steel_gear', '#forge:double_plates/blue_steel', ['punch_last', 'shrink_any', 'draw_any']).tier(6)
+	event.recipes.tfc.anvil('gtceu:blue_steel_gear', '#forge:double_plates/blue_steel', ['punch_last', 'shrink_any', 'draw_any'])
+		.tier(6)
 		.id('tfc:anvil/blue_steel_gear')
 		
-	event.recipes.tfc.anvil('gtceu:small_wrought_iron_gear', '#forge:ingots/wrought_iron', ['shrink_last', 'shrink_second_last', 'upset_third_last']).tier(3)
+	event.recipes.tfc.anvil('gtceu:small_wrought_iron_gear', '#forge:ingots/wrought_iron', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(3)
 		.id('tfc:anvil/small_wrought_iron_gear')
-	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['shrink_last', 'shrink_second_last', 'upset_third_last']).tier(4)
+	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(4)
 		.id('tfc:anvil/small_steel_gear')
-	event.recipes.tfc.anvil('gtceu:small_brass_gear', '#forge:ingots/brass', ['shrink_last', 'shrink_second_last', 'upset_third_last']).tier(2)
+	event.recipes.tfc.anvil('gtceu:small_brass_gear', '#forge:ingots/brass', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(2)
 		.id('tfc:anvil/small_brass_gear')
-	event.recipes.tfc.anvil('gtceu:small_bronze_gear', '#forge:ingots/bronze', ['shrink_last', 'shrink_second_last', 'upset_third_last']).tier(2)
+	event.recipes.tfc.anvil('gtceu:small_bronze_gear', '#forge:ingots/bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(2)
 		.id('tfc:anvil/small_bronze_gear')
 
 	// Cast iron -> Raw Iron Bloom

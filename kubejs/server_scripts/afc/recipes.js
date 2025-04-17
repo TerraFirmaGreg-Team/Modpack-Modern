@@ -73,6 +73,13 @@ const registerAFCRecipes = (event) => {
 		.bonus(false)
 		.id('afc:anvil/tree_tap')
 
+	event.recipes.gtceu.assembler('afc:tree_tap')
+		.itemInputs('#forge:ingots/copper')
+		.circuit(3)
+		.itemOutputs('afc:tree_tap')
+		.duration(50)
+		.EUt(7)
+
 	// TreeTap Heating
 	event.recipes.tfc.heating('afc:tree_tap', 1080)
 		.resultFluid(Fluid.of('gtceu:copper', 144))

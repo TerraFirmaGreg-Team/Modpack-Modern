@@ -258,6 +258,13 @@ const registerTFCItemTags = (event) => {
     event.add('forge:cloth', 'tfc:burlap_cloth')
     event.add('forge:cloth', 'tfc:wool_cloth')
     event.add('forge:cloth', 'tfc:silk_cloth')
+    event.add('forge:cloth', 'minecraft:phantom_membrane')
+
+    // Piglin loved
+    event.add('minecraft:piglin_loved', 'tfc:ore/small_native_gold')
+    event.add('minecraft:piglin_loved', 'tfc:ore/poor_native_gold')
+    event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
+    event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
 }
 
 const registerTFCBlockTags = (event) => {
