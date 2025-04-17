@@ -177,6 +177,7 @@ const registerTFCFertilizers = (event) => {
 
 //#region registerTFCKnappingTypes
 const registerTFCKnappingTypes = (event) => {
+    event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
     // event.knappingType('gtceu:rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:rubber_plate', 'tfg:rubber')
     // event.knappingType('gtceu:styrene_butadiene_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:styrene_butadiene_rubber_plate', 'tfg:styrene_butadiene_rubber_plate')
     // event.knappingType('gtceu:silicone_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:silicone_rubber_plate', 'tfg:silicone_rubber_plate')

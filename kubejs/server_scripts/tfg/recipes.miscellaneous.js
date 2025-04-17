@@ -27,11 +27,11 @@ function registerTFGMiscellaneousRecipes(event) {
 	//paraffin
 	event.recipes.gtceu.chemical_reactor('tfg:paraffin_wax_from_lubricant')
 		.circuit(7)
-		.itemOutputs('2x tfg:paraffin_wax')
+		.itemOutputs('6x tfg:paraffin_wax')
 		.outputFluids(Fluid.of('gtceu:oil_light', 25))
 		.inputFluids(Fluid.of('gtceu:lubricant', 250), Fluid.of('gtceu:acetone', 25))
 		.duration(500)
-		.EUt(21)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// Rosin
 	event.recipes.firmalife.vat()
@@ -50,7 +50,7 @@ function registerTFGMiscellaneousRecipes(event) {
 			.inputFluids(Fluid.of(`tfc:${color}_dye`, 25))
 			.itemOutputs(`tfg:decorative_vase/unfired/${color}`)
 			.duration(80)
-			.EUt(20)
+			.EUt(GTValues.VA[GTValues.ULV])
 			.category(GTRecipeCategories.CHEM_DYES)
 
 		event.recipes.tfc.heating(`tfg:decorative_vase/unfired/${color}`, 1399)
@@ -74,7 +74,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.inputFluids(Fluid.of('gtceu:chlorine', 72))
 		.itemOutputs('tfg:decorative_vase/unfired')
 		.duration(80)
-		.EUt(20)
+		.EUt(GTValues.VA[GTValues.ULV])
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	event.smelting(
@@ -107,7 +107,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('1x gtceu:lactose_dust')
 		.outputFluids(Fluid.of('tfc:curdled_milk', 1000))
 		.duration(300)
-		.EUt(30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('lactose_milk_yak')
 		.circuit(1)
@@ -115,7 +115,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('1x gtceu:lactose_dust')
 		.outputFluids(Fluid.of('firmalife:curdled_yak_milk', 1000))
 		.duration(300)
-		.EUt(30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.mixer('lactose_milk_goat')
 		.circuit(1)
@@ -123,7 +123,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('1x gtceu:lactose_dust')
 		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
 		.duration(300)
-		.EUt(30)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame',
@@ -141,7 +141,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemInputs('8x #forge:rods/wood', '#forge:cloth')
 		.itemOutputs('tfg:scaffolding_frame')
 		.duration(10)
-		.EUt(2);
+		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//Airship Hull
 	event.shaped('tfg:airship_hull', [
@@ -158,7 +158,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:airship_hull')
 		.duration(40)
 		.circuit(1)
-		.EUt(10);
+		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//Airship Balloon
 	event.shaped('tfg:airship_balloon', [
@@ -175,7 +175,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemOutputs('tfg:airship_balloon')
 		.duration(40)
 		.circuit(1)
-		.EUt(10)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Steam bloomery
 	event.shaped('gtceu:steam_bloomery', [
@@ -189,4 +189,48 @@ function registerTFGMiscellaneousRecipes(event) {
 		D: '#forge:screws/wrought_iron',
 		E: '#forge:tools/wrenches'
 	})
+
+	// Arrow Parts
+	event.recipes.tfc.knapping(
+		'4x tfg:flint_arrow_head',
+		'tfg:flint',
+		[
+			'  XXX',
+			' XXXX',
+			'XXXXX',
+			' XXX ',
+			'  X  '
+		]
+	).outsideSlotRequired(false)
+		.id('tfg:knapping/flint_arrow_head')
+
+	event.recipes.gtceu.assembler('tfg:assembler/flint_arrow_head')
+		.itemInputs('1x minecraft:flint')
+		.itemOutputs('4x tfg:flint_arrow_head')
+		.duration(20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('4x tfg:fletching', [
+			'minecraft:feather',
+			'#forge:tools/knives'
+		]).id('tfg:shapeless/fletching'))
+
+	event.recipes.gtceu.assembler('tfg:assembler/fletching')
+		.itemInputs('1x minecraft:feather')
+		.itemOutputs('4x tfg:fletching')
+		.duration(20)
+		.circuit(4)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.shaped('4x minecraft:arrow', [
+		' A ',
+		' B ',
+		' C '
+	],{
+		A: 'tfg:flint_arrow_head',
+		B: '#forge:rods/wooden',
+		C: 'tfg:fletching'
+	}).id('tfg:shaped/arrow')
 }

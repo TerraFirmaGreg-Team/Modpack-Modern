@@ -150,7 +150,6 @@ GTCEuServerEvents.oreVeins(event => {
  */
 ServerEvents.recipes(event => {
     registerAdvancedPeripheralsRecipes(event)
-    registerAdvancedPeripheralsRecyclingRecipes(event)
     registerAlekishipsRecipes(event)
     registerAE2Recipes(event)
     registerAFCRecipes(event)
@@ -164,9 +163,7 @@ ServerEvents.recipes(event => {
     registerChiselAndBitsRecipes(event)
     registerComfortsRecipes(event);
     registerComputerCraftRecipes(event)
-    registerComputerCraftRecyclingRecipes(event)
     registerCccBridgeRecipes(event)
-    registerCccBridgeRecyclingRecipes(event)
     registerConstructionwandRecipes(event)
     registerCreateRecipes(event)
     registerCreateAdditionsRecipes(event)
@@ -186,7 +183,7 @@ ServerEvents.recipes(event => {
     registerFTBQuestsRecipes(event)
     registerGrapplingHookRecipes(event);
     registerGreateRecipes(event)
-    registerGTCEURecipes(event)
+    registerGTCEURecipes(event);
     registerHandGliderRecipes(event)
     registerHotOrNotRecipes(event)
     registerImmersiveAircraftRecipes(event)

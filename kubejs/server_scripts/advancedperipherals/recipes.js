@@ -2,6 +2,8 @@
 
 const registerAdvancedPeripheralsRecipes = (event) => {
 
+	registerAdvancedPeripheralsRecyclingRecipes(event);
+
     event.remove({ mod: 'advancedperipherals' });
 
 	//Chat Box
