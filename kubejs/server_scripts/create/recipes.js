@@ -1609,7 +1609,7 @@ const registerCreateRecipes = (event) => {
 		A: 'create:andesite_casing',
 		B: '#minecraft:plates/wrought_iron',
 		C: 'tfc:glue',
-		D: '#tfg:cogwheels',
+		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/mechanical_bearing')
 
