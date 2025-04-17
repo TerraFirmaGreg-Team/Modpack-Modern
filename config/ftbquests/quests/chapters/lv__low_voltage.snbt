@@ -1341,15 +1341,15 @@
 		{
 			dependencies: ["22510C5F2386B453"]
 			description: [
-				"{quests.low_voltage.alternator.desc.1}"
+				"{quests.steam_age.alternator.desc.1}"
 				"{@pagebreak}"
-				"{quests.low_voltage.alternator.desc.2}"
+				"{quests.steam_age.alternator.desc.2}"
 				""
 				"{image:tfg:textures/quests/alternator_multiblock.png width:100 height:100 align:center}"
 			]
 			id: "2DC24661CAD557B0"
 			optional: true
-			subtitle: "{quests.low_voltage.alternator.subtitle}"
+			subtitle: "{quests.steam_age.alternator.subtitle}"
 			tasks: [
 				{
 					id: "5367AD306EAB07E2"
@@ -1368,11 +1368,11 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:lv_8a_energy_converter)item(gtceu:lv_16a_energy_converter))"
 						}
 					}
-					title: "{quests.low_voltage.alternator.task}"
+					title: ""
 					type: "item"
 				}
 			]
-			title: "{quests.low_voltage.alternator.title}"
+			title: "{quests.steam_age.alternator.title}"
 			x: 5.5d
 			y: 5.5d
 		}
