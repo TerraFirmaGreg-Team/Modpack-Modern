@@ -30,9 +30,9 @@
 
 ---
 
-## Survival Modpack As It Should Be
+## Survival Modpack as it Should've Been
 
-**TerraFirmaGreg-Modern** is a Forge modpack that redefines Minecraft survival by introducing realistic challenges alongside advanced technological mechanics. The heart of the modpack is formed by two standout mods:
+**TerraFirmaGreg-Modern** is a Forge modpack that redefines Minecraft survival by introducing realistic challenges alongside advanced technological mechanics. In this modpack, you will be put to the task of taking control of untouched wilderness and turning it to an industrial wonderland. Start from humble beginning picking up rocks, and end while traversing interstellar space (coming soon)! The heart of the modpack is formed by two standout mods:
 
 - **[TerraFirmaCraft]** - Renowned for its immersive survival mechanics and a unique, challenging approach.
 - **[GregTech Modern]** - A pinnacle of technical mods that brings deep, complex machinery and automation into the mix.
@@ -41,9 +41,9 @@ In addition to these core mods, TerraFirmaGreg-Modern includes several other com
 
 - **[Applied Energistics]** – Cutting-edge storage and automation systems.
 - **[Create]** – Innovative machinery and kinetic contraptions.
-- **[Gregicality Rocketry]** – Enhances GregTech with advanced rockets and space exploration features.
+- Several hand-picked TFC and Create addons to provide even more depth.
 
-Many of these mods come with extra add-ons that further diversify your experience, and the modpack also integrates quests to help you navigate its complex world.
+Many other small mods tie everything together, and the modpack also integrates quests to help you navigate its complex world.
 
 ---
 
@@ -60,4 +60,3 @@ Interested in contributing? For detailed setup instructions, coding standards, a
 [GregTech Modern]: https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern
 [Applied Energistics]: https://www.curseforge.com/minecraft/mc-mods/ae2
 [Create]: https://www.curseforge.com/minecraft/mc-mods/create
-[Gregicality Rocketry]: https://www.curseforge.com/minecraft/mc-mods/gcyr
