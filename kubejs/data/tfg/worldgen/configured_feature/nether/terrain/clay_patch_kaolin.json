@@ -17,12 +17,12 @@
 			"feature": "tfg:nether/terrain/clay_patch_kaolin_vegetation",
 			"placement": []
 		},
-		"vertical_range": 2,
+		"vertical_range": 3,
 		"xz_radius": {
 			"type": "minecraft:uniform",
 			"value": {
-				"max_inclusive": 5,
-				"min_inclusive": 3
+				"max_inclusive": 6,
+				"min_inclusive": 4
 			}
 		}
 	}
