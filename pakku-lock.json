@@ -13126,7 +13126,7 @@
             ]
         },
         {
-            "pakku_id": "3mAI0v5307Nirnd5",
+            "pakku_id": "2h0D3pYylEr3vTVs",
             "pakku_links": [
                 "F6H99cZ4H6jZRpEK",
                 "apqasFnXUkYXZUFj"
@@ -13135,47 +13135,44 @@
             "side": "BOTH",
             "slug": {
                 "curseforge": "terrafirmagreg-core",
-                "modrinth": "terrafirmagreg-core",
-                "github": "TerraFirmaGreg-Team/Core-Modern"
+                "modrinth": "terrafirmagreg-core"
             },
             "name": {
                 "curseforge": "TerraFirmaGreg-Core",
-                "modrinth": "TerraFirmaGreg-Core",
-                "github": "Core-Modern"
+                "modrinth": "TerraFirmaGreg-Core"
             },
             "id": {
                 "curseforge": "513402",
-                "modrinth": "lNttW2Xl",
-                "github": "668983056"
+                "modrinth": "lNttW2Xl"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TFG-Core-Modern-0.6.0.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5853/918/TFG-Core-Modern-0.6.0.jar",
-                    "id": "5853918",
+                    "url": "https://edge.forgecdn.net/files/6424/600/TerraFirmaGreg-Core-Modern-0.6.1.jar",
+                    "id": "6424600",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "9dbf0f12c3447744a9100e404ffea51b798138f3",
-                        "md5": "22d927266923bccd7f7a4a06bd96824a"
+                        "sha1": "5c23bc9e7d5948142b1d45ad8fca91e6a9467bf3",
+                        "md5": "61d52e9c8fe1f38b3b327498c9d37128"
                     },
                     "required_dependencies": [
-                        "302973"
+                        "302973",
+                        "890405"
                     ],
-                    "size": 325760,
-                    "date_published": "2024-10-28T14:40:10.317Z"
+                    "size": 241598,
+                    "date_published": "2025-04-15T03:58:23.103Z"
                 },
                 {
                     "type": "modrinth",
-                    "file_name": "TFG-Core-Modern-0.6.0.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -13183,29 +13180,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/NInE2PwT/TFG-Core-Modern-0.6.0.jar",
-                    "id": "NInE2PwT",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/V5J04AzG/TerraFirmaGreg-Core-Modern-0.6.1.jar",
+                    "id": "V5J04AzG",
                     "parent_id": "lNttW2Xl",
                     "hashes": {
-                        "sha512": "c97104392a379d794737998c890b18ad5d9dc4eca4d93c2e5797d5f5bd655ab64f599565c189862652c493c946ab7e59210ea4343a0a07a428d8cce11c43cf07",
-                        "sha1": "9dbf0f12c3447744a9100e404ffea51b798138f3"
+                        "sha512": "49b5afb2a8b17309d5787a373b765cbbfb266de547bd67a91aa82ee01f14c504601b60e50ec562e1474963ec7060bc11ae246ea8e282f1eb71138f5aa820a0ef",
+                        "sha1": "5c23bc9e7d5948142b1d45ad8fca91e6a9467bf3"
                     },
                     "required_dependencies": [
                         "JaCEZUhg",
                         "7tG215v7"
                     ],
-                    "size": 325760,
-                    "date_published": "2024-10-28T14:40:13.181873Z"
-                },
-                {
-                    "type": "github",
-                    "file_name": "TFG-Core-Modern-0.6.0.jar",
-                    "release_type": "release",
-                    "url": "https://github.com/TerraFirmaGreg-Team/Core-Modern/releases/download/0.6.0/TerraFirmaGreg-Core-Modern-0.6.0.jar",
-                    "id": "230462996",
-                    "parent_id": "668983056",
-                    "size": 325760,
-                    "date_published": "2024-10-28T14:40:14Z"
+                    "size": 241598,
+                    "date_published": "2025-04-15T03:58:27.227420Z"
                 }
             ]
         },
