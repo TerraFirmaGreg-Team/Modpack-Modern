@@ -3,6 +3,11 @@
 //#region Greenhouse
 
 const registerGTCEuMachines = (event) => {
+
+	GTMachineUtils.registerCrate(GTMaterials.BismuthBronze, 54, "Bismuth Bronze Crate");
+	GTMachineUtils.registerCrate(GTMaterials.BlackBronze, 54, "Black Bronze Crate");
+	GTMachineUtils.registerDrum(GTMaterials.BismuthBronze, 32000, "Bismuth Bronze Drum");
+	GTMachineUtils.registerDrum(GTMaterials.BlackBronze, 32000, "Black Bronze Drum");
 	
 	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
 	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
