@@ -671,7 +671,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:compass',
     'minecraft:iron_bars',
     'minecraft:honeycomb',
-    'minecraft:tipped_arrow',
     'minecraft:grindstone',
     'minecraft:fermented_spider_eye',
 

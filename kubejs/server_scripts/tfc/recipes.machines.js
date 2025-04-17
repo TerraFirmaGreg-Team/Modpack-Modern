@@ -279,6 +279,7 @@ function registerTFCMachineRecipes(event) {
 		event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milk.id.replace(':', '_')}`)
 			.inputFluids(Fluid.of(milk.id, 1000))
 			.outputFluids(Fluid.of('firmalife:cream'))
+			.circuit(6)
 			.duration(1200)
 			.EUt(24)
 	})

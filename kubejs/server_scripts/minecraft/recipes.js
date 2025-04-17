@@ -227,6 +227,15 @@ const registerMinecraftRecipes = (event) => {
 		.resultItem('minecraft:sponge')
 		.id('tfg:minecraft/heating/sponge')
 
+	event.recipes.gtceu.chemical_reactor('minecraft:gtceu/chemical_reactor/sponge')
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SodiumBisulfate, 1))
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144), Fluid.of('minecraft:water', 250))
+		.itemOutputs('2x minecraft:sponge')
+		.outputFluids(Fluid.of('gtceu:sodium_persulfate', 35))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+
+
 	//#endregion
 
 	//#region Выход: Тонированное стекло

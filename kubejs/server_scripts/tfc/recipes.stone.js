@@ -70,6 +70,21 @@ function registerTFCStoneRecipes(event) {
 			`4x tfc:rock/gravel/${stone}`
 		]).id(`tfc:shapeless/gravel_to_loose_${stone}`)
 
+		// Cobble Unpacking
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_mossy_${stone}_cobble_into_loose`)
+			.itemInputs(`1x tfc:rock/mossy_cobble/${stone}`)
+			.circuit(1)
+			.itemOutputs(`4x tfc:rock/mossy_loose/${stone}`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${stone}_cobble_into_loose`)
+			.itemInputs(`1x tfc:rock/cobble/${stone}`)
+			.circuit(1)
+			.itemOutputs(`4x tfc:rock/loose/${stone}`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
+
 		//#endregion
 		
 		// #region Stonecutting

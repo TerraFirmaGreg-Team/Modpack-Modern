@@ -1,6 +1,8 @@
 // priority: 0
 
 const registerCccBridgeRecipes = (event) => {
+	
+    registerCccBridgeRecyclingRecipes(event);
 
     event.remove({not: [
 		{ id: 'cccbridge:to_target_block' }, 
