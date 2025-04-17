@@ -197,6 +197,9 @@ const registerTFCItemSize = (event) => {
     })
     event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
     event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
+
+    event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
+
 }
 //#endregion
 
