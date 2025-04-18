@@ -347,25 +347,11 @@ jobs:
           path: .pakku/multimc-overrides/${{ needs.info.outputs.project_full_name }}-multimc.zip
           if-no-files-found: error
 
-  prepare-release:
-    name: 📦 Prepare release
-    needs: [info]
-    runs-on: ubuntu-latest
-    if: needs.info.outputs.exists == 'false'
-    steps:
-    - name: Debug if conditions
-      run: |
-        echo "github.env.DEV_ENVIRONMENT: ${{ github.env.DEV_ENVIRONMENT == 'false' }}"
-        echo "needs.info.outputs.exists: ${{ needs.info.outputs.exists }}"
-
-        echo "${{ github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false' }}"
-        echo "${{ env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}"
-
   release-github:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
+    if: needs.info.outputs.exists == 'false'
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -434,7 +420,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false'
+    if: needs.info.outputs.exists == 'false'
     outputs:
       id: ${{ steps.release.outputs.id }}
 
