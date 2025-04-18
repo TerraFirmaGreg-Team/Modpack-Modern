@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RELEASE_TYPE: "release"
+  RELEASE_TYPE: "alpha"
   MINECRAFT_VERSION: "1.20.1"
   RELEASE_ON_GITHUB: "true"
   RELEASE_ON_CURSEFORGE: "true"
@@ -147,7 +147,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ steps.check_tag.outputs.exists }} ]; then
+          if [ ${{ github.env.DEV_ENVIRONMENT == 'true' }} ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
@@ -165,7 +165,7 @@ jobs:
         id: check
         shell: bash
         run: |
-          if [ ${{ steps.check_tag.outputs.exists }} ]; then
+          if [ ${{ github.env.DEV_ENVIRONMENT == 'true' }} ]; then
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
