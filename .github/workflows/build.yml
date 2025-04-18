@@ -16,7 +16,7 @@ env:
   RELEASE_ON_GITHUB: "true"
   RELEASE_ON_CURSEFORGE: "true"
   RELEASE_ON_MODRINTH: "false"
-  DEV_ENVIRONMENT: ${{ github.branch != 'main' }}
+  DEV_ENVIRONMENT: ${{ github.ref != 'main' }}
 
 jobs:    
   info:
