@@ -361,7 +361,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.make_release }}
+    if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
       url: ${{ steps.release.outputs.url }}
 
