@@ -147,7 +147,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ github.env.DEV_ENVIRONMENT }} ]; then
+          if [ ${{ env.DEV_ENVIRONMENT }} || steps.pakku_info.outputs.version ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
@@ -165,7 +165,7 @@ jobs:
         id: check
         shell: bash
         run: |
-          if [ ${{ github.env.DEV_ENVIRONMENT }} || ${{ steps.changelog.outcome }} == 'failure' ]; then
+          if [ ${{ env.DEV_ENVIRONMENT }} || ${{ steps.changelog.outcome }} == 'failure' ]; then
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
@@ -191,6 +191,13 @@ jobs:
             📃 **Release**:  `${{ steps.check.outputs.version }}`
             📃 **Release Type**: `${{ steps.check.outputs.status }}`
             📃 **Game Version**: `${{ steps.pakku_lock_info.outputs.mc_versions }}`
+
+            📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
+            📃 **Tag Exists**: `${{ steps.check_tag.outputs.exists }}`
+            📃 **Release on GitHub**: `${{ env.RELEASE_ON_GITHUB }}`
+            📃 **Release on CurseForge**: `${{ env.RELEASE_ON_CURSEFORGE }}`
+            📃 **Release on Modrinth**: `${{ env.RELEASE_ON_MODRINTH }}`
+            
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
