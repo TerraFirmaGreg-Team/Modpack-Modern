@@ -25,6 +25,7 @@ jobs:
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
+      exists: ${{ steps.check_tag.outputs.exists }}
       release_exists: ${{ steps.check_tag.outputs.exists && github.env.DEV_ENVIRONMENT }}
     
     steps:
@@ -205,6 +206,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
+      - name: Debug
+        shell: bash
+        run: |
+          echo "Debugging..."
+          echo "Project Version: ${{ needs.info.outputs.project_version }}"
+          echo "Project Name: ${{ needs.info.outputs.project_name }}"
+          echo "Project Full Name: ${{ needs.info.outputs.project_full_name }}"
+          echo "Changelog: ${{ needs.info.outputs.changelog }}"
+          echo "Diff: ${{ needs.info.outputs.diff }}"
+          echo "Exists: ${{ needs.info.outputs.exists }}"
+          echo "Release Exists: ${{ needs.info.outputs.release_exists }}"
+          echo "Dev Environment: ${{ env.DEV_ENVIRONMENT }}"
+
       - name: 🔄 Replace strings
         shell: bash
         run: |
@@ -348,7 +362,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.release_exists == 'false'}}
+    if: needs.info.outputs.release_exists == 'false'
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -417,7 +431,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.release_exists == 'false'}}
+    if: needs.info.outputs.release_exists == 'false'
     outputs:
       id: ${{ steps.release.outputs.id }}
 
