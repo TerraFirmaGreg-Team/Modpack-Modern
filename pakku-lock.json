@@ -6452,27 +6452,43 @@
             ]
         },
         {
-            "pakku_id": "j6fA0JbUIMVAq3q2",
+            "pakku_id": "JYHQVYwIGQYRij0G",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "github": "GreateBeyondTheHorizon/Greate"
+                "modrinth": "greate"
             },
             "name": {
-                "github": "Greate"
+                "modrinth": "Greate"
             },
             "id": {
-                "github": "673422318"
+                "modrinth": "8wDcQuht"
             },
             "files": [
                 {
-                    "type": "github",
+                    "type": "modrinth",
                     "file_name": "greate-0.0.38.jar",
-                    "release_type": "release",
-                    "url": "https://github.com/GreateBeyondTheHorizon/Greate/releases/download/0.0.38/greate-0.0.38.jar",
-                    "id": "227638684",
-                    "parent_id": "673422318",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/jfXaHhi2/greate-0.0.38.jar",
+                    "id": "jfXaHhi2",
+                    "parent_id": "8wDcQuht",
+                    "hashes": {
+                        "sha512": "53a5d9985b31660cac20a708ceb13b1855ae5c3f948c9adf242c37fa6f19b9f03b51a3f566696a922039ecad2a7d6afce962f40f1bae181032d972aca0779d44",
+                        "sha1": "4b3cde954b102e5f5c4b940a42220c2979a5eb70"
+                    },
+                    "required_dependencies": [
+                        "7tG215v7",
+                        "LNytGWDc"
+                    ],
                     "size": 1514248,
-                    "date_published": "2025-02-09T16:31:16Z"
+                    "date_published": "2025-02-09T16:31:14.824605Z"
                 }
             ]
         },
