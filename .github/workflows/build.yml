@@ -357,12 +357,12 @@ jobs:
     steps:
     - name: Debug if conditions
       run: |
-        echo "github.env.DEV_ENVIRONMENT: ${{ github.env.DEV_ENVIRONMENT }}"
-        echo "github.env.RELEASE_ON_GITHUB: ${{ github.env.RELEASE_ON_GITHUB }}"
+        echo "github.env.DEV_ENVIRONMENT: ${{ env.DEV_ENVIRONMENT == 'false' }}"
+        echo "github.env.RELEASE_ON_GITHUB: ${{ env.RELEASE_ON_GITHUB }}"
         echo "needs.info.outputs.exists: ${{ needs.info.outputs.exists }}"
 
-        echo "${{ github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false' }}"
-        echo "${{ github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}"
+        echo "${{ env.RELEASE_ON_GITHUB == 'true' && env.DEV_ENVIRONMENT == 'false' }}"
+        echo "${{ env.RELEASE_ON_GITHUB == 'true' && env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}"
 
   release-github:
     name: 🚀 Release to GitHub
