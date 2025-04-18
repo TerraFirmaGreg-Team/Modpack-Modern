@@ -13,9 +13,6 @@ concurrency:
 env:
   RELEASE_TYPE: "alpha"
   MINECRAFT_VERSION: "1.20.1"
-  RELEASE_ON_GITHUB: "true"
-  RELEASE_ON_CURSEFORGE: "true"
-  RELEASE_ON_MODRINTH: "false"
   DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
 
 jobs:    
@@ -28,7 +25,7 @@ jobs:
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
-      exists: ${{ steps.check_tag.outputs.exists }}
+      exists: ${{ steps.check_tag.outputs.exists && env.DEV_ENVIRONMENT }}
     
     steps:
       - name: Checkout
@@ -354,21 +351,21 @@ jobs:
     name: 📦 Prepare release
     needs: [info]
     runs-on: ubuntu-latest
+    if: ${{ needs.info.outputs.exists }}
     steps:
     - name: Debug if conditions
       run: |
         echo "github.env.DEV_ENVIRONMENT: ${{ github.env.DEV_ENVIRONMENT == 'false' }}"
-        echo "github.env.RELEASE_ON_GITHUB: ${{ env.RELEASE_ON_GITHUB }}"
         echo "needs.info.outputs.exists: ${{ needs.info.outputs.exists }}"
 
-        echo "${{ (github.env.RELEASE_ON_GITHUB == 'true') && (github.env.DEV_ENVIRONMENT == 'false') }}"
-        echo "${{ env.RELEASE_ON_GITHUB == 'true' && env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}"
+        echo "${{ github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false' }}"
+        echo "${{ env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}"
 
   release-github:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
+    if: ${{ github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -437,7 +434,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: github.env.RELEASE_ON_CURSEFORGE == 'true' && github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false'
+    if: github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false'
     outputs:
       id: ${{ steps.release.outputs.id }}
 
@@ -487,7 +484,7 @@ jobs:
       name: 🚀 Release to Modrinth
       needs: [info, build-modpack, build-server, release-github]
       runs-on: ubuntu-latest
-      if: ${{ github.env.RELEASE_ON_MODRINTH == 'true' && github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
+      if: false
       outputs:
         id: ${{ steps.release.outputs.id }}
 
