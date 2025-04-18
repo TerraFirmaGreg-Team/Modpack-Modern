@@ -354,7 +354,7 @@ jobs:
     name: 📦 Prepare release
     needs: [info]
     runs-on: ubuntu-latest
-    if: ${{ !(github.env.DEV_ENVIRONMENT) && (github.env.RELEASE_ON_GITHUB) }}
+    if: ${{ (!github.env.DEV_ENVIRONMENT) && (github.env.RELEASE_ON_GITHUB) }}
     steps:
     - name: Debug if conditions
       run: |
