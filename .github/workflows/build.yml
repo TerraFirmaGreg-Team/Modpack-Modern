@@ -13,10 +13,7 @@ concurrency:
 env:
   RELEASE_TYPE: "alpha"
   MINECRAFT_VERSION: "1.20.1"
-  RELEASE_ON_GITHUB: "true"
-  RELEASE_ON_CURSEFORGE: "true"
-  RELEASE_ON_MODRINTH: "false"
-  DEV_ENVIRONMENT: ${{ github.branch != 'main' }}
+  DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
 
 jobs:    
   info:
@@ -28,7 +25,7 @@ jobs:
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
-      exists: ${{ steps.check_tag.outputs.exists }}
+      release_exists: ${{ steps.check_tag.outputs.exists == 'true' && env.DEV_ENVIRONMENT == 'false' }}
     
     steps:
       - name: Checkout
@@ -147,7 +144,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ github.env.DEV_ENVIRONMENT == 'true' }} ]; then
+          if [ ${{ env.DEV_ENVIRONMENT }} || steps.pakku_info.outputs.version ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
@@ -165,11 +162,11 @@ jobs:
         id: check
         shell: bash
         run: |
-          if [ ${{ github.env.DEV_ENVIRONMENT == 'true' }} ]; then
+          if [ ${{ env.DEV_ENVIRONMENT }} || ${{ steps.changelog.outcome }} == 'failure' ]; then
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
-            echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
+            echo "status=${{ env.RELEASE_TYPE }}" >> $GITHUB_OUTPUT
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
           fi
 
@@ -192,6 +189,10 @@ jobs:
             📃 **Release Type**: `${{ steps.check.outputs.status }}`
             📃 **Game Version**: `${{ steps.pakku_lock_info.outputs.mc_versions }}`
 
+            📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
+            📃 **Tag Exists**: `${{ steps.check_tag.outputs.exists }}`
+            
+
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
   
@@ -200,7 +201,6 @@ jobs:
     name: 📦 Build Modpack
     needs: [info]
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -214,7 +214,7 @@ jobs:
           sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Cache pakku
+      - name: 📝 Cache pakku
         uses: actions/cache@v4.2.3
         id: cache
         with:
@@ -255,7 +255,6 @@ jobs:
     name: 📦 Build Server
     needs: [info]
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -269,7 +268,7 @@ jobs:
           sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Cache pakku
+      - name: 📝 Cache pakku
         uses: actions/cache@v4.2.3
         id: cache
         with:
@@ -299,7 +298,6 @@ jobs:
     name: 📦 Build MultiMC
     needs: [info]
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -314,7 +312,7 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
-      - name: Cache pakku
+      - name: 📝 Cache pakku
         uses: actions/cache@v4.2.3
         id: cache
         with:
@@ -350,7 +348,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: github.env.RELEASE_ON_GITHUB && !github.env.DEV_ENVIRONMENT && !needs.info.outputs.exists
+    if: needs.info.outputs.release_exists == 'false'
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -419,7 +417,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: github.env.RELEASE_ON_CURSEFORGE && !github.env.DEV_ENVIRONMENT && !needs.info.outputs.exists
+    if: needs.info.outputs.release_exists == 'false'
     outputs:
       id: ${{ steps.release.outputs.id }}
 
@@ -469,7 +467,7 @@ jobs:
       name: 🚀 Release to Modrinth
       needs: [info, build-modpack, build-server, release-github]
       runs-on: ubuntu-latest
-      if: github.env.RELEASE_ON_MODRINTH && !github.env.DEV_ENVIRONMENT && !needs.info.outputs.exists
+      if: false
       outputs:
         id: ${{ steps.release.outputs.id }}
 
