@@ -164,7 +164,7 @@ jobs:
         shell: bash
         run: |
           if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
-            echo "version=0.9.0" >> $GITHUB_OUTPUT
+            echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.project_version.outputs.value }}" >> $GITHUB_OUTPUT
           fi
@@ -210,7 +210,7 @@ jobs:
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
             📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
-            📃 **Game Version**: `${{ steps.mc_versions.outputs.value }}`
+            📃 **Game Version**: `${{ steps.project_info.outputs.mc_versions }}`
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
