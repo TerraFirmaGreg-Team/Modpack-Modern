@@ -23,7 +23,7 @@ jobs:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.check_changelog.outputs.version }}
+      project_version: ${{ steps.check.outputs.version }}
       project_name: ${{ steps.pakku_info.outputs.name }}
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.pakku_info.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
@@ -162,7 +162,7 @@ jobs:
         continue-on-error: true
 
       - name: 🔍 Check if changelog is empty
-        id: check_changelog
+        id: check
         shell: bash
         run: |
           if [ ${{ steps.check_tag.outputs.exists }} ]; then
@@ -188,8 +188,8 @@ jobs:
         with:
           template: |
             📃 **Name**: ${{ steps.pakku_info.outputs.name }}
-            📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
-            📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
+            📃 **Release**:  `${{ steps.check.outputs.version }}`
+            📃 **Release Type**: `${{ steps.check.outputs.status }}`
             📃 **Game Version**: `${{ steps.pakku_lock_info.outputs.mc_versions }}`
 
             ${{ steps.changelog.outputs.description }}
@@ -207,11 +207,11 @@ jobs:
 
       - name: 🔄 Replace strings
         shell: bash
-        if: github.env.DEV_ENVIRONMENT
         run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Cache pakku
@@ -262,11 +262,11 @@ jobs:
 
       - name: 🔄 Replace strings
         shell: bash
-        if: github.env.DEV_ENVIRONMENT
         run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Cache pakku
@@ -306,11 +306,11 @@ jobs:
 
       - name: 🔄 Replace strings
         shell: bash
-        if: github.env.DEV_ENVIRONMENT
         run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
+          sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
