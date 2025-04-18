@@ -177,6 +177,7 @@ const registerTFCFertilizers = (event) => {
 
 //#region registerTFCKnappingTypes
 const registerTFCKnappingTypes = (event) => {
+    event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
     // event.knappingType('gtceu:rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:rubber_plate', 'tfg:rubber')
     // event.knappingType('gtceu:styrene_butadiene_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:styrene_butadiene_rubber_plate', 'tfg:styrene_butadiene_rubber_plate')
     // event.knappingType('gtceu:silicone_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:silicone_rubber_plate', 'tfg:silicone_rubber_plate')
@@ -198,14 +199,8 @@ const registerTFCItemSize = (event) => {
     event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
     event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
 
-    event.itemSize('man_of_many_planes:scarlet_biplane', 'huge', 'very_heavy')
-    event.itemSize('man_of_many_planes:economy_plane', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:airship', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:cargo_airship', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:warship', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:biplane', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:gyrodyne', 'huge', 'very_heavy')
-    event.itemSize('immersive_aircraft:quadrocopter', 'very_large', 'very_heavy')
+    event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
+
 }
 //#endregion
 

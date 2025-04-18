@@ -679,7 +679,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:foils/rubber',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/knives',
-		E: 'create:electron_tubes'
+		E: 'create:electron_tube'
 	}).id('tfg:create/shaped/brass_funnel')
 
 	event.shaped('2x create:brass_funnel', [
@@ -691,7 +691,7 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:leather',
 		C: '#forge:tools/wrenches',
 		D: '#forge:tools/knives',
-		E: 'create:electron_tubes'
+		E: 'create:electron_tube'
 	}).id('tfg:create/shaped/brass_funnel_leather')
 
 	// Тунель из железа
@@ -1517,16 +1517,14 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/contraption_controls')
 
 	event.shaped('create:wrench', [
-		'FBB',
-		'CAD',
-		'AE '
+		' BB',
+		' C ',
+		'AD '
 	], {
-		A: '#forge:rods/treated_wood',
+		A: '#forge:rods/wooden',
 		B: '#forge:plates/brass',
-		C: '#forge:small_gears/wood',
-		D: '#forge:screws',
-		E: '#forge:tools/screwdrivers',
-		F: '#forge:tools/hammers'
+		C: '#tfg:small_cogwheels',
+		D: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/wrench')
 
 	event.shaped('create:goggles', [
@@ -1534,11 +1532,11 @@ const registerCreateRecipes = (event) => {
 		'AEA',
 		'C C'
 	], {
-		A: '#forge:rings/gold',
+		A: '#forge:rings/brass',
 		B: '#forge:leather',
 		C: 'tfc:lens',
-		D: '#forge:screws',
-		E: '#forge:tools/screwdrivers'
+		D: 'tfc:glue',
+		E: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/goggles')
 
 	event.shaped('create:analog_lever', [
@@ -1611,7 +1609,7 @@ const registerCreateRecipes = (event) => {
 		A: 'create:andesite_casing',
 		B: '#minecraft:plates/wrought_iron',
 		C: 'tfc:glue',
-		D: '#tfg:cogwheels',
+		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/mechanical_bearing')
 

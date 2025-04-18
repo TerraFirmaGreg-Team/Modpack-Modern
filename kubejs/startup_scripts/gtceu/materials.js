@@ -37,7 +37,8 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_SMALL_GEAR,
 		GENERATE_GEAR,
 		GENERATE_FRAME,
-		GENERATE_PLATE
+		GENERATE_PLATE,
+		GENERATE_RING
 	} = $MATERIAL_FLAGS
 
 	var metalTooling = [
@@ -182,7 +183,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BismuthBronze.addFlags(GENERATE_FRAME);
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
-	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
 	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
@@ -237,13 +238,19 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CARCINOGEN, 1, false));
 
 	// Color Adjustments
-	GTMaterials.BismuthBronze.setMaterialARGB(0x8CDCB6)
-	GTMaterials.BlackBronze.setMaterialARGB(0xB681CE)
-	GTMaterials.RedSteel.setMaterialARGB(0xc8575d)
-	GTMaterials.RedSteel.setMaterialSecondaryARGB(0x560307)
-	GTMaterials.BlueSteel.setMaterialARGB(0x7a87b7)
-	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x283467)
-
+	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
+	GTMaterials.BismuthBronze.setMaterialSecondaryARGB(0x203E2A)
+	GTMaterials.BlackBronze.setMaterialARGB(0x9D789D)
+	GTMaterials.BlackBronze.setMaterialSecondaryARGB(0x5B425B)
+	GTMaterials.Steel.setMaterialARGB(0x9AA9AB)
+	GTMaterials.SteelMagnetic.setMaterialARGB(0x9AA9AB)
+	GTMaterials.RedSteel.setMaterialARGB(0xDE7B80)
+	GTMaterials.RedSteel.setMaterialSecondaryARGB(0xE12323)
+	GTMaterials.BlueSteel.setMaterialARGB(0xA0B6EC)
+	GTMaterials.BlueSteel.setMaterialSecondaryARGB(0x2B5CD8)
+	
+	GTMaterials.Bismuth.setMaterialARGB(0x66847E)
+	GTMaterials.Bismuth.setMaterialSecondaryARGB(0x25465B)
 	GTMaterials.Iron.setMaterialARGB(0x503d32)
 	GTMaterials.Iron.setMaterialSecondaryARGB(0x131212)
 	GTMaterials.IronMagnetic.setMaterialARGB(0x503d32)

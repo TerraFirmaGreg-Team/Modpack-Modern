@@ -18,14 +18,14 @@ function registerTFGSupportRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:gtceu/chemical_bath/reinforced_dark_concrete_support')
-		.inputFluids(Fluid.of('minecraft:water', 100))
+		.inputFluids(Fluid.of('tfc:black_dye', 10))
 		.itemOutputs('1x tfg:reinforced_dark_concrete_support')
 		.itemInputs('1x tfg:reinforced_light_concrete_support')
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.chemical_bath('tfg:gtceu/chemical_bath/dark_concrete_support')
-		.inputFluids(Fluid.of('minecraft:water', 100))
+		.inputFluids(Fluid.of('tfc:black_dye', 10))
 		.itemOutputs('1x tfg:dark_concrete_support')
 		.itemInputs('1x tfg:light_concrete_support')
 		.duration(60)

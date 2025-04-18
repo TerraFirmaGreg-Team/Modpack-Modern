@@ -164,7 +164,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.centrifuge('sugar_from_sugarcane')
 		.itemInputs('tfc:food/sugarcane')
 		.inputFluids(Fluid.of('minecraft:water', 600))
-		.itemOutputs('minecraft:sugar')
+		.itemOutputs('minecraft:sugar', 'gtceu:plant_ball')
 		.duration(800)
 		.EUt(6)
 
@@ -227,6 +227,15 @@ const registerMinecraftRecipes = (event) => {
 		.resultItem('minecraft:sponge')
 		.id('tfg:minecraft/heating/sponge')
 
+	event.recipes.gtceu.chemical_reactor('minecraft:gtceu/chemical_reactor/sponge')
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SodiumBisulfate, 1))
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144), Fluid.of('minecraft:water', 250))
+		.itemOutputs('2x minecraft:sponge')
+		.outputFluids(Fluid.of('gtceu:sodium_persulfate', 35))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+
+
 	//#endregion
 
 	//#region Выход: Тонированное стекло
@@ -252,8 +261,27 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Книга
 
 	event.shapeless('minecraft:book', [
-		'minecraft:paper', 'minecraft:paper', 'minecraft:paper', '#forge:leather'
-	]).id('minecraft:book')
+		'#forge:paper', '#forge:paper', '#forge:paper', '#forge:leather', 'tfc:glue'
+	]).id('minecraft:book_from_glue')
+
+	event.shapeless('minecraft:book', [
+		'#forge:paper', '#forge:paper', '#forge:paper', '#forge:leather', 'gtceu:sticky_resin'
+	]).id('minecraft:book_from_sticky_resin')
+
+	event.recipes.gtceu.assembler('tfg:assembler/book_from_leather')
+		.itemInputs('3x #forge:paper', '#forge:leather')
+		.itemOutputs('minecraft:book')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.EUt(7).duration(30)
+
+	//#endregion
+
+	//#region
+
+	event.recipes.gtceu.assembler('tfg:assembler/name_tag')
+		.itemInputs('5x #forge:string', '#forge:paper')
+		.itemOutputs('minecraft:name_tag')
+		.EUt(7).duration(100)
 
 	//#endregion
 
@@ -842,7 +870,18 @@ const registerMinecraftRecipes = (event) => {
 	event.shapeless('minecraft:redstone_torch', ['#forge:rods/wooden', 'minecraft:redstone'])
 		.id('tfg:shapeless/redstone_torch')
 
+	event.shapeless('minecraft:lever', ['#forge:rods/wooden', 'minecraft:redstone', '#forge:cobblestone'])
+		.id('tfg:shapeless/lever')
+
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
+
+	event.shaped('4x minecraft:ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/wooden'
+	}).id('gtceu:shaped/ladder')
 
 	// #endregion
 
@@ -861,4 +900,36 @@ const registerMinecraftRecipes = (event) => {
 	).id('tfg:shapeless/calcite_from_rich_raw')
 
 	// #endregion
+
+	//#region Кожа из кожаных предметов
+	event.recipes.gtceu.macerator('tfg:leather_from_boots')
+		.itemInputs('minecraft:leather_boots')
+		.itemOutputs('minecraft:leather')
+		.EUt(7).duration(80)
+
+	event.recipes.gtceu.macerator('tfg:leather_from_saddle')
+		.itemInputs('minecraft:saddle')
+		.itemOutputs('minecraft:leather')
+		.EUt(7).duration(80)
+
+	event.recipes.gtceu.macerator('tfg:leather_from_horse_armor')
+		.itemInputs('minecraft:leather_horse_armor')
+		.itemOutputs('minecraft:leather')
+		.EUt(7).duration(80)
+
+	event.recipes.gtceu.macerator('tfg:leather_from_helmet')
+		.itemInputs('minecraft:leather_helmet')
+		.itemOutputs('minecraft:leather')
+		.EUt(7).duration(80)
+
+	event.recipes.gtceu.macerator('tfg:leather_from_leggings')
+		.itemInputs('minecraft:leather_leggings')
+		.itemOutputs('minecraft:leather')
+		.EUt(7).duration(80)
+
+	event.recipes.gtceu.macerator('tfg:leather_from_chestplate')
+		.itemInputs('minecraft:leather_chestplate')
+		.itemOutputs('minecraft:leather')
+		.EUt(7).duration(80)
+	//#endregion
 }

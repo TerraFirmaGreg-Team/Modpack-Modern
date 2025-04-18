@@ -70,6 +70,21 @@ function registerTFCStoneRecipes(event) {
 			`4x tfc:rock/gravel/${stone}`
 		]).id(`tfc:shapeless/gravel_to_loose_${stone}`)
 
+		// Cobble Unpacking
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_mossy_${stone}_cobble_into_loose`)
+			.itemInputs(`1x tfc:rock/mossy_cobble/${stone}`)
+			.circuit(1)
+			.itemOutputs(`4x tfc:rock/mossy_loose/${stone}`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.packer(`tfc:gtceu/packer/unpacking_${stone}_cobble_into_loose`)
+			.itemInputs(`1x tfc:rock/cobble/${stone}`)
+			.circuit(1)
+			.itemOutputs(`4x tfc:rock/loose/${stone}`)
+			.duration(20)
+			.EUt(GTValues.VA[GTValues.ULV])
+
 		//#endregion
 		
 		// #region Stonecutting
@@ -186,7 +201,7 @@ function registerTFCStoneRecipes(event) {
 
 		event.recipes.gtceu.assembler(`bricks_${stone}`)
 			.itemInputs(`5x tfc:brick/${stone}`)
-			.circuit(0)
+			.circuit(1)
 			.inputFluids(Fluid.of('gtceu:concrete', 72))
 			.itemOutputs(`4x tfc:rock/bricks/${stone}`)
 			.duration(50)
@@ -262,7 +277,7 @@ function registerTFCStoneRecipes(event) {
 
 		event.recipes.gtceu.assembler(`aqueduct_${stone}`)
 			.itemInputs(`3x tfc:brick/${stone}`)
-			.circuit(1)
+			.circuit(0)
 			.inputFluids(Fluid.of('gtceu:concrete', 16))
 			.itemOutputs(`tfc:rock/aqueduct/${stone}`)
 			.duration(50)

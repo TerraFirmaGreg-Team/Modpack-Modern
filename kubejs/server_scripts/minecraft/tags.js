@@ -54,7 +54,6 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('tfc:rock/raw', 'minecraft:dripstone_block')
 
-    event.add('forge:cloth', 'minecraft:phantom_membrane')
     event.add('tfc:sewing_dark_cloth', 'minecraft:phantom_membrane')
 
     event.remove('forge:gems', 'minecraft:charcoal')

@@ -89,12 +89,10 @@
 			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
 			tasks: [{
 				icon: "minecraft:water_bucket"
-				id: "73E3594A5481E63F"
-				observe_type: 0
-				timer: 0L
-				title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
-				to_observe: "minecraft:water"
-				type: "observation"
+				id: "3601D2311BB1383F"
+				stage: "tfg.stages.quests.drank_fresh_water_with_hand"
+				title: "{quests.stone_age.find_potable_water.task}"
+				type: "gamestage"
 			}]
 			title: "{quests.stone_age.find_potable_water.title}"
 			x: 4.5d

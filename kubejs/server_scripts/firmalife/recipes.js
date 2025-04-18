@@ -47,6 +47,7 @@ const registerFirmaLifeRecipes = (event) => {
 	event.remove({ id: 'firmalife:heating/metal/chromium_block_stairs' })
 
 	// - Stainless Steel
+	event.remove({ id: 'firmalife:alloy/stainless_steel' })
 
 	// Ingot 
 	event.remove({ id: 'firmalife:casting/stainless_steel_ingot' })
@@ -67,10 +68,10 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Rod
 	event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_rod' })
+	event.remove({ id: 'firmalife:heating/stainless_steel_rod' })
 
 	// Jar lid
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_jar_lid' })
+	event.remove({ id: 'firmalife:heating/stainless_steel_jar_lid' })
 
 	// Plated Blocks
 	event.remove({ id: 'firmalife:crafting/crafting/metal/block/stainless_steel' })
@@ -111,12 +112,31 @@ const registerFirmaLifeRecipes = (event) => {
 	}).id('firmalife:crafting/vat')
 
 	// Jar Lid
-	event.recipes.gtceu.assembler(`tfg:firmalife/jar_lid`)
-		.itemInputs('#forge:ingots/tin')
-		.circuit(7)
-		.itemOutputs('16x tfc:jar_lid')
+	event.recipes.gtceu.fluid_solidifier(`tfg:firmalife/jar_lid`)
+		.inputFluids(Fluid.of('gtceu:tin', 9))
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('tfc:jar_lid')
 		.duration(50)
 		.EUt(7)
+
+	event.recipes.gtceu.extractor('tfc:jar_lid_extraction')
+		.itemInputs('tfc:jar_lid')
+		.outputFluids(Fluid.of('gtceu:tin', 9))
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.fluid_solidifier(`firmalife:firmalife/stainless_steel_jar_lid`)
+		.inputFluids(Fluid.of('gtceu:stainless_steel', 9))
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('firmalife:stainless_steel_jar_lid')
+		.duration(50)
+		.EUt(7)
+
+	event.recipes.gtceu.extractor('firmalife:stainless_steel_jar_extraction')
+		.itemInputs('firmalife:stainless_steel_jar_lid')
+		.outputFluids(Fluid.of('gtceu:stainless_steel', 9))
+		.duration(50)
+		.EUt(2)
 
 	// Pineapple Fiber
 	event.recipes.gtceu.assembler(`tfg:firmalife/pineapple_fiber`)
@@ -552,6 +572,9 @@ const registerFirmaLifeRecipes = (event) => {
 	event.recipes.tfc.quern('4x firmalife:food/cocoa_powder', 'gtceu:cocoa_dust')
 		.id(`tfg:quern/cocoa_powder`)
 
+	event.recipes.tfc.quern('gtceu:cocoa_dust', 'firmalife:food/roasted_cocoa_beans')
+		.id('tfg:quern/cocoa_dust');
+
 	// Chocolate Ice Cream
 	event.recipes.gtceu.mixer('firmalife:food/chocolate_ice_cream')
 		.itemInputs('firmalife:food/vanilla_ice_cream')
@@ -771,6 +794,8 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// #endregion
 
+	// #region Smashed food
+
 	event.recipes.gtceu.forge_hammer('firmalife:soybean_paste')
 		.itemInputs('firmalife:food/dehydrated_soybeans')
 		.itemOutputs('firmalife:food/soybean_paste')
@@ -788,4 +813,13 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('firmalife:food/smashed_white_grapes')
 		.duration(20)
 		.EUt(7)
+
+	// #endregion
+
+	// #region Drying mat alternatives
+
+	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/leafy_kelp' }).id('tfg:shaped/drying_mat_leafy_kelp')
+	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/winged_kelp' }).id('tfg:shaped/drying_mat_winged_kelp')
+
+	// #endregion
 }

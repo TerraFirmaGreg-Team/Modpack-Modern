@@ -279,6 +279,7 @@ function registerTFCMachineRecipes(event) {
 		event.recipes.gtceu.fermenter(`tfg:fermenter/cream_from_${milk.id.replace(':', '_')}`)
 			.inputFluids(Fluid.of(milk.id, 1000))
 			.outputFluids(Fluid.of('firmalife:cream'))
+			.circuit(6)
 			.duration(1200)
 			.EUt(24)
 	})
@@ -332,11 +333,30 @@ function registerTFCMachineRecipes(event) {
 		.EUt(2)
 
 	// Empty Jar
-	event.recipes.gtceu.assembler(`tfg:tfc/glass_jar`)
+	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
-		.circuit(2)
+		.notConsumable('gtceu:cylinder_casting_mold')
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
+		.EUt(2)
+
+	event.recipes.gtceu.fluid_solidifier('tfc:jar_solidification')
+		.inputFluids(Fluid.of('gtceu:glass', 144))
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('tfc:empty_jar')
+		.duration(100)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfc:jar_extraction')
+		.itemInputs('#tfc:jars')
+		.outputFluids(Fluid.of('gtceu:glass', 144))
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfc:glass_batch_extraction')
+		.itemInputs('#tfc:glass_batches')
+		.outputFluids(Fluid.of('gtceu:glass', 144))
+		.duration(50)
 		.EUt(2)
 
 	// Wool Yarn

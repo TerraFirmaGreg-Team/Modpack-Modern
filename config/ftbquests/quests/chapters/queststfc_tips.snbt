@@ -2284,6 +2284,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:glass_basin_blocks)"
 						}
 					}
+					optional_task: true
 					title: "Any #tfc:glass_basin_blocks"
 					type: "item"
 				}

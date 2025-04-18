@@ -510,4 +510,33 @@ const registerFramedBlocksRecipes = (event) => {
 		}
 	}).id('framedblocks:framing_saw/framed_stone_button')
 
+	// Lever
+
+	event.shapeless(
+		Item.of('framedblocks:framed_lever', 1),
+		[
+			'framedblocks:framed_cube',
+			'minecraft:redstone',
+			'#forge:rods/wooden',
+		]
+	).id('framedblocks:framed_lever')
+
+	event.custom({
+		type: "framedblocks:frame",
+		additives: [
+			{
+				"count": 1,
+				"ingredient": { tag: "forge:rods/wooden" }
+			},
+			{
+				"count": 1,
+				"ingredient": { item: "minecraft:redstone" }
+			}
+		],
+		material: 6144,
+		result: {
+			item: "framedblocks:framed_lever",
+			count: 4
+		}
+	}).id('framedblocks:framing_saw/framed_lever')
 }
