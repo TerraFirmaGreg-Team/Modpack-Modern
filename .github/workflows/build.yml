@@ -158,8 +158,7 @@ jobs:
         shell: bash
         run: |
           if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
-            echo "version=unreleased" >> $GITHUB_OUTPUT
-
+            echo "version=0.9.0" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.project_version.outputs.value }}" >> $GITHUB_OUTPUT
           fi
@@ -177,7 +176,6 @@ jobs:
         shell: bash
         run: |
           if [ ${{ steps.changelog.outcome }} == 'failure' ]; then
-            echo -e "\033[33mWarning: Changelog is empty. Please update the changelog. Specifying the [Unreleased] version\033[0m"
             echo "version=Unreleased" >> $GITHUB_OUTPUT
             echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
@@ -198,11 +196,13 @@ jobs:
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
+          variables: >-
+            MINECRAFT_VERSION: ${{ steps.minecraft_version.outputs.value }}
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
-            📃 **Release**:  ${{ steps.check_changelog.outputs.version }}
-            📃 **Release Type**: ${{ steps.check_changelog.outputs.status }}
-            📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}
+            📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
+            📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
+            📃 **Game Version**: `$MINECRAFT_VERSION`
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
