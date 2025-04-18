@@ -1,20 +1,29 @@
 # Changelog
 
-## [Unreleased]
+## [Unreleased] - 18.04.2025
 ### Warning for upgrading your world
 - This is a major update that changes many things! 
 - It is safest to create a new instance and copy your world across, instead of trying to update your world in-place. 
 - Check that everything works before permanently changing over to the new version!
 - GregTech has removed its kinetic machines, so they will disappear when upgrading. Please recycle your machines first!
 - Several ores and ingots have changed. After upgrading, they will have a "REPLACE ME" texture. Put them in a crafting grid to change to the new version.
+- Create mechanisms will stop working and will need to be replaced with "Greate" equivalents. This means that if you have any boilers running off of create THEY MAY EXPLODE!
+- Tree tap has been replaced you will need to craft your old taps into the new ones.
+- Gregicality Rocketry has been removed and will be replaced with Ad Astra soon. Please recycle whatever you can and make sure you are in the overworld.
 ### Changes
 - Latest version of GregTech! Comes with new textures and a few new features, many bug fixes and much more stability.
 - Early game overhaul! You start getting into some automation much earlier and gradually unlock more as you progress, instead of having it all dumped on you after steel.
 - New dimension! The Beneath, basically a TFG-ified version of the nether. Stand on overworld bedrock for a bit to start exploring!
 - Quest rewrite! The first few quest chapters have been totally remade from the ground up to be more readable, have fewer breaking dependencies, and reflect actual progression. Most of the optional but useful content has been put into its own dedicated section.
 - The minimum amount of lava source blocks to be considered infinite has been increased from 1 to 2000. There's many lava lakes underground, and trains are more accessible.
-- Many other bug fixes, too many to list!
-
+- Create has changed completely with the addition of "Greate", "VintageImprovements", and "Horse Power".
+- New structures have been added to the overworld. Some with loot!
+- More cave supports have been added. Including stone, concrete, and steel supports. Higher tier supports can hold a larger area of blocks.
+- Medicine had been added and can apply some helpful potion effects or be applied to arrows.
+- Wax alternatives have been added, including paraffin wax and tree rosin.
+- Planes! Snake-free.
+- Many mods have been updated and include new features. Check out the mods list!
+- Many other bug fixes, QoL features, mod integration, and recipes tweaks. too many to list!
 
 ## [0.7.19] - 25.01.2025
 ### Changes

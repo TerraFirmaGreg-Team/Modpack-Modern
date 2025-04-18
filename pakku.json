@@ -190,6 +190,9 @@
         "dynamiclights-reforged": {
             "side": "CLIENT"
         },
+        "rainboows": {
+            "side": "CLIENT"
+        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -214,7 +217,7 @@
         "tfc-hot-or-not": {
             "side": "BOTH"
         },
-        "particular-reforged":{
+        "particular-reforged": {
             "side": "BOTH"
         }
     }
