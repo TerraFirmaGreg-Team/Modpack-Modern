@@ -185,7 +185,7 @@ jobs:
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
           variables: >-
-              if [ ${{ steps.changelog.outputs.error }} == 'true' ]; then
+              if [ ${{ steps.changelog.conclusion }} == 'failure' ]; then
                 STATUS="Unreleased"
               else
                 STATUS="${{ steps.changelog.outputs.status }}"
