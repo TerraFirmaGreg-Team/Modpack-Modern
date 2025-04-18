@@ -125,6 +125,12 @@ jobs:
             echo EOF
           } >> "$GITHUB_OUTPUT"
           echo "✔️ Diff content read to variable"
+
+      - name: 📊 Get Project Info
+        id: project_info
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
         
       - name: 📊 Get Project Name
         id: project_name
@@ -200,7 +206,7 @@ jobs:
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
             📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
-            📃 **Game Version**: `${{ steps.minecraft_version.outputs.value.json }}`
+            📃 **Game Version**: `${{ steps.project_info.outputs.mc_versions }}`
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
