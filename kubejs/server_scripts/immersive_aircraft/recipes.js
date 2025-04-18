@@ -474,7 +474,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:black_steel_plate',
 		C: 'immersive_aircraft:hull',
-		D: '#forge:tools/wrench'
+		D: '#forge:tools/wrenches'
 	}).id('tfg:immersive_aircraft/shaped/hull_reinforcement');
 
 	generateRecyclingRecipe('immersive_aircraft:recycling/hull_reinforcement',
@@ -495,7 +495,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:red_steel_plate',
 		C: 'immersive_aircraft:hull',
-		D: '#forge:tools/wrench',
+		D: '#forge:tools/wrenches',
 		E: 'gtceu:blue_steel_plate',
 		F: 'gtceu:red_alloy_dust'
 	}).id('tfg:shaped/redblu_steel_hull_reinforcement');
@@ -522,7 +522,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: '#forge:tools/hammers',
 		B: 'vintageimprovements:aluminum_sheet',
 		C: 'immersive_aircraft:hull',
-		D: '#forge:tools/wrench'
+		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/aluminium_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/aluminium_hull_reinforcement',
@@ -543,7 +543,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:stainless_steel_plate',
 		C: 'immersive_aircraft:hull',
-		D: '#forge:tools/wrench'
+		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/stainless_steel_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/stainless_steel_hull_reinforcement',
@@ -564,7 +564,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: '#forge:tools/hammers',
 		B: 'gtceu:titanium_plate',
 		C: 'immersive_aircraft:hull',
-		D: '#forge:tools/wrench'
+		D: '#forge:tools/wrenches'
 	}).id('tfg:shaped/titanium_hull_reinforcement');
 
 	generateRecyclingRecipe('tfg:recycling/titanium_hull_reinforcement',
