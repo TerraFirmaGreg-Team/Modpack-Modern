@@ -204,7 +204,7 @@ jobs:
     name: 📦 Build Modpack
     needs: [info]
     runs-on: ubuntu-latest
-
+    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -259,7 +259,7 @@ jobs:
     name: 📦 Build Server
     needs: [info]
     runs-on: ubuntu-latest
-
+    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -303,7 +303,7 @@ jobs:
     name: 📦 Build MultiMC
     needs: [info]
     runs-on: ubuntu-latest
-    
+    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -352,8 +352,9 @@ jobs:
 
   prepare-release:
     name: 📦 Prepare release
-    needs: [info, build-modpack, build-server, build-multimc]
+    needs: [info]
     runs-on: ubuntu-latest
+    if: ${{ env.RELEASE_ON_GITHUB }}
     steps:
     - name: Debug if conditions
       run: |
@@ -368,7 +369,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ (github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false') }}
+    if: ${{ env.RELEASE_ON_GITHUB == 'true' && env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
     outputs:
       url: ${{ steps.release.outputs.url }}
 
