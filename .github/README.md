@@ -32,7 +32,10 @@
 
 ## Survival Modpack as it Should've Been
 
-**TerraFirmaGreg-Modern** is a Forge modpack that redefines Minecraft survival by introducing realistic challenges alongside advanced technological mechanics. In this modpack, you will be put to the task of taking control of untouched wilderness and turning it to an industrial wonderland. Start from humble beginning picking up rocks, and end while traversing interstellar space (coming soon)! The heart of the modpack is formed by two standout mods:
+**TerraFirmaGreg-Modern** is a Forge modpack that redefines Minecraft survival by introducing realistic challenges alongside advanced technological mechanics. 
+In this modpack, you will be put to the task of taking control of untouched wilderness and turning it to an industrial wonderland. 
+Start from humble beginning picking up rocks, and end while traversing interstellar space (coming soon)! 
+The heart of the modpack is formed by two standout mods:
 
 - **[TerraFirmaCraft]** - Renowned for its immersive survival mechanics and a unique, challenging approach.
 - **[GregTech Modern]** - A pinnacle of technical mods that brings deep, complex machinery and automation into the mix.
@@ -41,8 +44,9 @@ In addition to these core mods, TerraFirmaGreg-Modern includes several other com
 
 - **[Applied Energistics]** – Cutting-edge storage and automation systems.
 - **[Create]** – Innovative machinery and kinetic contraptions.
-- Several hand-picked TFC and Create addons to provide even more depth.
 
+
+Several hand-picked TFC and Create addons to provide even more depth.
 Many other small mods tie everything together, and the modpack also integrates quests to help you navigate its complex world.
 
 ---
