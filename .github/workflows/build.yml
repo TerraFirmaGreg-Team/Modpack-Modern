@@ -171,6 +171,16 @@ jobs:
           version: ${{ steps.determine_version.outputs.version }}
         continue-on-error: true
 
+      - name: 🔍 Check if changelog is empty
+        id: check_changelog_status
+        shell: bash
+        run: |
+          if [ ${{ steps.changelog.conclusion }} == 'failure' ]; then
+            echo "status=Unreleased" >> $GITHUB_OUTPUT
+          else
+            echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
+          fi
+
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
@@ -184,16 +194,10 @@ jobs:
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
-          variables: >-
-              if [ ${{ steps.changelog.conclusion }} == 'failure' ]; then
-                STATUS="Unreleased"
-              else
-                STATUS="${{ steps.changelog.outputs.status }}"
-              fi
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**:  ${{ steps.determine_version.outputs.version }}
-            📃 **Release Type**: $STATUS
+            📃 **Release Type**: ${{ steps.check_changelog_status.outputs.status }}
             📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}
 
             ${{ steps.changelog.outputs.description }}
