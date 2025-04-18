@@ -5,7 +5,6 @@ on:
     branches:
       - dev
       - main
-      - feature/auto-dev-environments
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
