@@ -25,7 +25,7 @@ jobs:
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
-      release_exists: ${{ steps.check_tag.outputs.exists == 'true' && env.DEV_ENVIRONMENT == 'false' }}
+      release_exists: ${{ steps.check_tag.outputs.exists == 'true' && github.env.DEV_ENVIRONMENT == 'false' }}
     
     steps:
       - name: Checkout
