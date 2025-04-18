@@ -3,6 +3,9 @@
 ## [Unreleased]
 ### Changes
 
+## [0.9.1] - 18.04.2025
+### Changes
+- Manifest fix.
 
 ## [0.9.0] - 18.04.2025
 ### Warning for upgrading your world
