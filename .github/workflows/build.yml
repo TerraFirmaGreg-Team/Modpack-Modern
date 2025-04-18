@@ -216,13 +216,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Cache pakku
-        uses: actions/cache@v4.1.2
+        uses: actions/cache@v4.2.3
         id: cache
         with:
           path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('pakku-lock.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+          key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
+          restore-keys: pakku-cache-
 
       - name: 📦 Export modpack
         run: |
@@ -272,13 +271,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
       - name: Cache pakku
-        uses: actions/cache@v4.1.2
+        uses: actions/cache@v4.2.3
         id: cache
         with:
           path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('pakku-lock.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+          key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
+          restore-keys: pakku-cache-
 
       - name: 📦 Export modpack
         run: |
@@ -318,13 +316,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
       - name: Cache pakku
-        uses: actions/cache@v4.1.2
+        uses: actions/cache@v4.2.3
         id: cache
         with:
           path: build/.cache
-          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('pakku-lock.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-pakku-cache-
+          key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
+          restore-keys: pakku-cache-
 
       - name: 📦 Export
         run: |
