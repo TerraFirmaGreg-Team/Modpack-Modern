@@ -15,7 +15,6 @@
 - The minimum amount of lava source blocks to be considered infinite has been increased from 1 to 2000. There's many lava lakes underground, and trains are more accessible.
 - Many other bug fixes, too many to list!
 
-
 ## [0.7.19] - 25.01.2025
 ### Changes
 - Added budding crystals for the other gemstone ores (Pyritie).

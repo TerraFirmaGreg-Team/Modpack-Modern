@@ -24,9 +24,9 @@ jobs:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.project_version.outputs.value }}
-      project_name: ${{ steps.project_name.outputs.value }}
-      project_full_name: ${{ steps.project_name.outputs.value }}-${{ steps.project_version.outputs.value }}
+      project_version: ${{ steps.pakku_info.outputs.version }}
+      project_name: ${{ steps.pakku_info.outputs.name }}
+      project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.pakku_info.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check_tag.outputs.exists }}
@@ -126,39 +126,23 @@ jobs:
           } >> "$GITHUB_OUTPUT"
           echo "✔️ Diff content read to variable"
 
-      - name: 📊 Get Project Info
-        id: project_info
-        uses: notiz-dev/github-action-json-property@release
-        with:
-          path: "pakku-lock.json"
-          prop_path: 'mc_versions'
-        
-      - name: 📊 Get Project Name
-        id: project_name
+      - name: 📊 Get Pakku Info
+        id: pakku_info
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku.json"
-          prop_path: "name"
-        
-      - name: 📊 Get Project Version
-        id: project_version
-        uses: ActionsTools/read-json-action@v1.0.5
-        with:
-          file_path: "pakku.json"
-          prop_path: "version"
 
-      - name: 📊 Get Minecraft Version
-        id: minecraft_version
+      - name: 📊 Get Pakku-lock Info
+        id: pakku_lock_info
         uses: ActionsTools/read-json-action@v1.0.5
         with:
           file_path: "pakku-lock.json"
-          prop_path: "mc_versions"
 
       - name: 🔍 Check if tag exists
         uses: mukunku/tag-exists-action@v1.6.0
         id: check_tag
         with:
-          tag: ${{ steps.project_version.outputs.value }}
+          tag: ${{ steps.pakku_info.outputs.version }}
 
       - name: 📝 Determine Version
         id: determine_version
@@ -167,7 +151,7 @@ jobs:
           if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
-            echo "version=${{ steps.project_version.outputs.value }}" >> $GITHUB_OUTPUT
+            echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
           fi
         
       - name: 📄 Changelog Parser
@@ -182,8 +166,8 @@ jobs:
         id: check_changelog
         shell: bash
         run: |
-          if [ ${{ steps.changelog.outcome }} == 'failure' ]; then
-            echo "version=Unreleased" >> $GITHUB_OUTPUT
+          if [ ${{ steps.check_tag.outputs.exists }} == 'failure' ]; then
+            echo "version=unreleased" >> $GITHUB_OUTPUT
             echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
@@ -204,10 +188,10 @@ jobs:
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
           template: |
-            📃 **Name**: ${{ steps.project_name.outputs.value }}
+            📃 **Name**: ${{ steps.pakku_info.outputs.name }}
             📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
             📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
-            📃 **Game Version**: `${{ steps.project_info.outputs.prop }}`
+            📃 **Game Version**: `${{ steps.pakku_lock_info.outputs.mc_versions }}`
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
@@ -231,12 +215,12 @@ jobs:
           VERSION=${{ needs.info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      # - name: Cache pakku
-      #   uses: actions/cache@v4.1.2
-      #   with:
-      #     path: build/.cache
-      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+      - name: Cache pakku
+        uses: actions/cache@v4.1.2
+        id: cache
+        with:
+          path: build/.cache
+          key: ${{ github.ref_name }}-pakku-cache-${{ hashFiles('pakku-lock.json') }}
 
       - name: 📦 Export modpack
         run: |
@@ -285,12 +269,12 @@ jobs:
           VERSION=${{ needs.info.outputs.project_version }}
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      # - name: Cache pakku
-      #   uses: actions/cache@v4.1.2
-      #   with:
-      #     path: build/.cache
-      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+      - name: Cache pakku
+        uses: actions/cache@v4.1.2
+        id: cache
+        with:
+          path: build/.cache
+          key: ${{ github.ref_name }}-pakku-cache-${{ hashFiles('pakku-lock.json') }}
 
       - name: 📦 Export modpack
         run: |
@@ -329,12 +313,12 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
-      # - name: Cache pakku
-      #   uses: actions/cache@v4.1.2
-      #   with:
-      #     path: build/.cache
-      #     key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
-      #     restore-keys: ${{ runner.OS }}-pakku-cache-
+      - name: Cache pakku
+        uses: actions/cache@v4.1.2
+        id: cache
+        with:
+          path: build/.cache
+          key: ${{ github.ref_name }}-pakku-cache-${{ hashFiles('pakku-lock.json') }}
 
       - name: 📦 Export
         run: |
