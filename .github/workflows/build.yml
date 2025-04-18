@@ -23,7 +23,7 @@ jobs:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.pakku_info.outputs.version }}
+      project_version: ${{ steps.check_changelog.outputs.version }}
       project_name: ${{ steps.pakku_info.outputs.name }}
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.pakku_info.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
@@ -166,7 +166,7 @@ jobs:
         shell: bash
         run: |
           if [ ${{ steps.changelog.outcome }} == 'failure' ]; then
-            echo "version=unreleased" >> $GITHUB_OUTPUT
+            echo "version=${{ github.run_number }}" >> $GITHUB_OUTPUT
             echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
