@@ -175,7 +175,7 @@ jobs:
         id: check_changelog_status
         shell: bash
         run: |
-          if [ ${{ steps.changelog.conclusion }} == 'failure' ]; then
+          if [ ${{ steps.changelog.outcome }} == 'failure' ]; then
             echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
             echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
