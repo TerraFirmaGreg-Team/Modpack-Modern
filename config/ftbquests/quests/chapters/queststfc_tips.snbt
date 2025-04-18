@@ -4526,6 +4526,60 @@
 			x: -13.5d
 			y: 6.5d
 		}
+		{
+			description: [
+				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
+				""
+				"These pipes instantly transfer from the input side to the output side."
+				""
+				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
+			]
+			icon: "gtceu:long_distance_item_pipeline_endpoint"
+			id: "22B0E30FF38145E7"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Wondering how to move those ores around?"
+			tasks: [
+				{
+					count: 2L
+					id: "7D5959A062BEE77C"
+					item: "gtceu:long_distance_item_pipeline_endpoint"
+					type: "item"
+				}
+				{
+					id: "30A1D0C682D0FC2E"
+					item: "gtceu:long_distance_item_pipeline"
+					type: "item"
+				}
+			]
+			title: "Long-Distance Items"
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: [
+				"The &aPortable Scanner&r, or &aTricorder&r, is GTCEu's debug tool."
+				""
+				"Using it will show you a block's details, the details of the energy network, its current status and contents, and its impact on performance."
+				""
+				"It'll also display a percentage of fluid remaining in the fluid vein for the &3Fluid Rigs&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This little useful device comes from GregTech 5. It was extremely useful in the early days, because very little information (basically nothing) was given by GUIs or WAILA."
+			]
+			id: "58D40A430654C997"
+			shape: "heart"
+			size: 1.0d
+			subtitle: "For the nosiest GregTech players"
+			tasks: [{
+				id: "1E2E112D32893B8D"
+				item: "gtceu:portable_scanner"
+				type: "item"
+			}]
+			title: "Tricorder"
+			x: 8.5d
+			y: 4.5d
+		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
 	title: "{quests.tfg_tips}"

@@ -7,10 +7,10 @@
 	id: "43E779CEEB25D55B"
 	order_index: 1
 	quest_links: [{
-		id: "6FCAD016C795DE93"
-		linked_quest: "7567E885B7166603"
+		id: "61C8F2CC50A0B142"
+		linked_quest: "71A3D034BBA13CF0"
 		shape: "gear"
-		size: 2.0d
+		size: 3.0d
 		x: 3.0d
 		y: 1.0d
 	}]
@@ -299,8 +299,8 @@
 				id: "3973B757526393F6"
 				type: "choice"
 			}]
-			shape: "gear"
-			size: 4.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "HV is in your grasp"
 			tasks: [{
 				id: "3192FF80FBDC7A28"
@@ -308,8 +308,8 @@
 				type: "item"
 			}]
 			title: "Stainless Steel"
-			x: -2.0d
-			y: 7.0d
+			x: 0.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -667,7 +667,7 @@
 				type: "item"
 			}]
 			title: "Kanthal Coils"
-			x: 1.5d
+			x: 2.0d
 			y: 10.0d
 		}
 		{
@@ -780,7 +780,7 @@
 			}]
 			title: "More LV Circuits"
 			x: 3.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5C17BF90DA2AAEEE"]
@@ -797,7 +797,7 @@
 			}]
 			title: "More MV Circuits"
 			x: 3.0d
-			y: 15.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -861,8 +861,8 @@
 				type: "item"
 			}]
 			title: "Advanced Circuit Assembler"
-			x: 0.0d
-			y: 12.0d
+			x: 1.25d
+			y: 14.0d
 		}
 		{
 			dependencies: ["26394C1290D70AB6"]
@@ -915,7 +915,7 @@
 				type: "item"
 			}]
 			title: "Best LV Circuits"
-			x: -2.0d
+			x: -1.0d
 			y: 12.0d
 		}
 		{
@@ -939,33 +939,8 @@
 				type: "item"
 			}]
 			title: "Best MV Circuits"
-			x: 0.0d
-			y: 15.0d
-		}
-		{
-			dependencies: [
-				"1FCF2C103E25972B"
-				"5063FDFFBE3E4855"
-				"3568BC9742092FC5"
-			]
-			description: [
-				"Your first &5EV&r Circuit gets a unique texture. If you still consider yourself to be in &bMV&r, &ahold off&r on making too many of these, as they won't benefit you right now. We can't stop you from making these if you &djust wanna flex&r on us, though."
-				""
-				"It'll be needed in &6HV&r."
-			]
-			icon: "gtceu:micro_processor_computer"
-			id: "4AFD3073C731A1E4"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Standing out amongst the rest"
-			tasks: [{
-				id: "34EA9B71F8BF607F"
-				item: "gtceu:micro_processor_computer"
-				type: "item"
-			}]
-			title: "First EV Circuits!"
-			x: 0.0d
-			y: 18.0d
+			x: -1.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -979,8 +954,8 @@
 			]
 			icon: "gtceu:micro_processor_assembly"
 			id: "5063FDFFBE3E4855"
-			shape: "square"
-			size: 1.0d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "On that HV grind"
 			tasks: [{
 				id: "2FE33281A44C34F6"
@@ -988,41 +963,8 @@
 				type: "item"
 			}]
 			title: "More HV Circuits"
-			x: 0.0d
+			x: -1.0d
 			y: 16.5d
-		}
-		{
-			dependencies: ["648BCF486E16CCB2"]
-			description: [
-				"&aBlue Alloy&r is an excellent Cable material for &6HV&r power."
-				""
-				"Nothing is preventing you from using it for &bMV&r power too! Make sure that you don't overvolt your machines, though."
-				""
-				"Superconductors for both &bMV&r and &6HV&r are unlocked... later."
-				""
-				"&aElectrotine&r is obtained from the &cNether&r, so don't craft it in the Mixer!"
-				""
-				"Furthermore, &aElectrotine&r can be separated for &dElectrum&r and &dRedstone&r."
-			]
-			icon: "gtceu:blue_alloy_ingot"
-			id: "1FCF2C103E25972B"
-			rewards: [{
-				id: "61F22179773C70D6"
-				item: "gtceu:electrotine_dust"
-				random_bonus: 7
-				type: "item"
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "You're blue now... that's my alloy"
-			tasks: [{
-				id: "15C7369398FAB8DB"
-				item: "gtceu:blue_alloy_ingot"
-				type: "item"
-			}]
-			title: "Blue Alloy"
-			x: -2.0d
-			y: 18.0d
 		}
 		{
 			dependencies: ["10FB27DD3C7BEC2F"]
@@ -1031,7 +973,6 @@
 				""
 				"If you want the cheapest recipe, &aNickel-Zinc Ferrite&r is the way to go."
 			]
-			hide_dependency_lines: true
 			icon: "gtceu:inductor"
 			id: "3DFFA8F91452C62A"
 			shape: "square"
@@ -1043,7 +984,7 @@
 				type: "item"
 			}]
 			title: "Inductors"
-			x: -2.0d
+			x: -5.0d
 			y: 16.5d
 		}
 		{
@@ -1084,6 +1025,7 @@
 			]
 			icon: "gtceu:lv_super_tank"
 			id: "6C53B01A05FFF1DC"
+			optional: true
 			shape: "heart"
 			size: 2.0d
 			subtitle: "Super Tanks are OP!"
@@ -1117,7 +1059,7 @@
 			}]
 			title: "Polyvinyl Chloride"
 			x: -5.0d
-			y: 8.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1189,7 +1131,7 @@
 			]
 			title: "Sodium Persulfate / Iron III Chloride"
 			x: -5.0d
-			y: 15.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -1864,37 +1806,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["63CD0236B337EAAD"]
-			description: [
-				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
-				""
-				"These pipes instantly transfer from the input side to the output side."
-				""
-				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
-			]
-			icon: "gtceu:long_distance_item_pipeline_endpoint"
-			id: "653345427522D728"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Wondering how to move those ores around?"
-			tasks: [
-				{
-					count: 2L
-					id: "0A8CADD371444760"
-					item: "gtceu:long_distance_item_pipeline_endpoint"
-					type: "item"
-				}
-				{
-					id: "66D528959958D445"
-					item: "gtceu:long_distance_item_pipeline"
-					type: "item"
-				}
-			]
-			title: "Long-Distance Items"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
 			description: [
 				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -1985,31 +1896,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["26394C1290D70AB6"]
-			dependency_requirement: "one_completed"
-			description: [
-				"The &aPortable Scanner&r, or &aTricorder&r, is GTCEu's debug tool."
-				""
-				"Using it will show you a block's details, the details of the energy network, its current status and contents, and its impact on performance."
-				""
-				"It'll also display a percentage of fluid remaining in the fluid vein for the &3Fluid Rigs&r."
-				"{@pagebreak}"
-				"&l&3Lore:&r&o This little useful device comes from GregTech 5. It was extremely useful in the early days, because very little information (basically nothing) was given by GUIs or WAILA."
-			]
-			id: "26C43416F9427BB3"
-			shape: "heart"
-			size: 1.0d
-			subtitle: "For the nosiest GregTech players"
-			tasks: [{
-				id: "3E70CB46874DE7C1"
-				item: "gtceu:portable_scanner"
-				type: "item"
-			}]
-			title: "Tricorder"
-			x: 3.0d
-			y: 18.0d
-		}
-		{
 			dependencies: ["0EFEE489906256AA"]
 			description: [
 				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
@@ -2077,13 +1963,8 @@
 					item: "gtceu:diode"
 					type: "item"
 				}
-				{
-					id: "089EEDC0E7ECC588"
-					item: "gtceu:mv_chemical_bath"
-					type: "item"
-				}
 			]
-			x: 0.0d
+			x: 1.0d
 			y: 10.0d
 		}
 		{
@@ -2151,6 +2032,22 @@
 			}]
 			x: 5.5d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"16A6AE5C770DB83A"
+				"10FB27DD3C7BEC2F"
+			]
+			id: "3E25696C98A6F123"
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "23FB958E73846929"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.5d
 		}
 	]
 	subtitle: ["Venture into petrochemistry and refine electronics"]

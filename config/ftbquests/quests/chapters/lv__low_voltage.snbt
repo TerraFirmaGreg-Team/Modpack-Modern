@@ -1368,7 +1368,6 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:lv_8a_energy_converter)item(gtceu:lv_16a_energy_converter))"
 						}
 					}
-					title: ""
 					type: "item"
 				}
 			]
