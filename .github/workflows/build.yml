@@ -159,6 +159,7 @@ jobs:
         run: |
           if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
+
           else
             echo "version=${{ steps.project_version.outputs.value }}" >> $GITHUB_OUTPUT
           fi
@@ -172,12 +173,15 @@ jobs:
         continue-on-error: true
 
       - name: 🔍 Check if changelog is empty
-        id: check_changelog_status
+        id: check_changelog
         shell: bash
         run: |
           if [ ${{ steps.changelog.outcome }} == 'failure' ]; then
+            echo -e "\033[33mWarning: Changelog is empty. Please update the changelog. Specifying the [Unreleased] version\033[0m"
+            echo "version=Unreleased" >> $GITHUB_OUTPUT
             echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
+            echo "version=${{ steps.changelog.outputs.version }}" >> $GITHUB_OUTPUT
             echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
           fi
 
@@ -196,8 +200,8 @@ jobs:
         with:
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
-            📃 **Release**:  ${{ steps.determine_version.outputs.version }}
-            📃 **Release Type**: ${{ steps.check_changelog_status.outputs.status }}
+            📃 **Release**:  ${{ steps.check_changelog.outputs.version }}
+            📃 **Release Type**: ${{ steps.check_changelog.outputs.status }}
             📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}
 
             ${{ steps.changelog.outputs.description }}
