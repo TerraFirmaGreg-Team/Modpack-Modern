@@ -26,7 +26,7 @@ jobs:
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
       exists: ${{ steps.check_tag.outputs.exists }}
-      release_exists: ${{ steps.check_tag.outputs.exists && github.env.DEV_ENVIRONMENT }}
+      release_exists: ${{ steps.check_tag.outputs.exists && env.DEV_ENVIRONMENT }}
     
     steps:
       - name: Checkout
@@ -192,6 +192,7 @@ jobs:
 
             📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
             📃 **Tag Exists**: `${{ steps.check_tag.outputs.exists }}`
+            📃 **A release will be made**: `${{ steps.check_tag.outputs.exists == 'true' && env.DEV_ENVIRONMENT == 'false' }}`
             
 
             ${{ steps.changelog.outputs.description }}
