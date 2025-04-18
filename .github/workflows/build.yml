@@ -207,17 +207,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
 
-      - name: Debug
-        shell: bash
-        run: |
-          echo "Debugging..."
-          echo "Project Version: ${{ needs.info.outputs.project_version }}"
-          echo "Project Name: ${{ needs.info.outputs.project_name }}"
-          echo "Project Full Name: ${{ needs.info.outputs.project_full_name }}"
-          echo "Exists: ${{ needs.info.outputs.exists }}"
-          echo "Release Exists: ${{ needs.info.outputs.make_release }}"
-          echo "Dev Environment: ${{ env.DEV_ENVIRONMENT }}"
-
       - name: 🔄 Replace strings
         shell: bash
         run: |
@@ -431,7 +420,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: false
+    if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
       id: ${{ steps.release.outputs.id }}
 
@@ -529,7 +518,6 @@ jobs:
     name: 📱 Discord Message
     needs: [info, release-curseforge, release-github]
     runs-on: ubuntu-latest
-    if: false
     steps:
       - name: ✂️ Truncate Changelog
         id: truncated
