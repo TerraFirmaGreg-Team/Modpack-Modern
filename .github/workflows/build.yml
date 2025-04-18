@@ -415,6 +415,7 @@ jobs:
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
+          target_commitish: ${{ github.ref_name }}
           body: |
             ${{ needs.info.outputs.changelog }}
             ${{ steps.format_diff.outputs.text }}
@@ -430,7 +431,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.make_release }}
+    if: false
     outputs:
       id: ${{ steps.release.outputs.id }}
 
@@ -528,6 +529,7 @@ jobs:
     name: 📱 Discord Message
     needs: [info, release-curseforge, release-github]
     runs-on: ubuntu-latest
+    if: false
     steps:
       - name: ✂️ Truncate Changelog
         id: truncated
