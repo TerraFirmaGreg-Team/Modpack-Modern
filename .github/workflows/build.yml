@@ -25,7 +25,7 @@ jobs:
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
-      release_exists: ${{ steps.check_tag.outputs.exists == 'true' && env.DEV_ENVIRONMENT == 'false' }}
+      release_exists: ${{ steps.check_tag.outputs.exists && github.env.DEV_ENVIRONMENT }}
     
     steps:
       - name: Checkout
@@ -348,7 +348,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: needs.info.outputs.release_exists == 'false'
+    if: ${{ needs.info.outputs.release_exists == 'false'}}
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -417,7 +417,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: needs.info.outputs.release_exists == 'false'
+    if: ${{ needs.info.outputs.release_exists == 'false'}}
     outputs:
       id: ${{ steps.release.outputs.id }}
 
