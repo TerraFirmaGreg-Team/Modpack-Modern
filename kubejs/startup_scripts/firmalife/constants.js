@@ -12,6 +12,7 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:metal/sheet/chromium', 
     'firmalife:metal/double_sheet/chromium', 
     'firmalife:metal/rod/chromium', 
+    'firmalife:metal/bucket/chromium',
 
     // Stainless Steel
     'firmalife:metal/ingot/stainless_steel', 
@@ -19,6 +20,7 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:metal/sheet/stainless_steel',
     'firmalife:metal/double_sheet/stainless_steel', 
     'firmalife:metal/rod/stainless_steel',
+    'firmalife:metal/bucket/stainless_steel',
     
     // Other
     'firmalife:compost_tumbler'

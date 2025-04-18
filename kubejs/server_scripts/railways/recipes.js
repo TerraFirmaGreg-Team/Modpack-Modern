@@ -5,7 +5,7 @@ const registerRailWaysRecipes = (event) => {
 	// Удаление рецептов мода railways 
 	event.remove({ mod: 'railways' });
 	
-	railwaysLocometalIntegration(event)
+	registerRailwaysLocometalRecipes(event)
 
 	// Семафор
 	event.shaped('railways:semaphore', [

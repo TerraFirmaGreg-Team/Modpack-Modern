@@ -581,7 +581,7 @@ function registerTFCMaterialsRecipes(event) {
 
 				event.recipes.tfc.heating(`rnr:metal/mattock_head/${material.getName()}`, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
-					.id(`tfc:heating/metal/${material.getName()}_mattock_head`)
+					.id(`rnr:heating/metal/${material.getName()}_mattock_head`)
 				//#endregion
 
 				//#region Топор
