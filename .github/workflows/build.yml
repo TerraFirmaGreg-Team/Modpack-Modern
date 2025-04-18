@@ -40,7 +40,6 @@ jobs:
         id: check_pakku_lock
         shell: bash
         run: |
-          echo "${{ github.ref_name }}"
           if [ ! -f pakku-lock.json ]; then
             echo "❌ Could not find pakku-lock.json" && exit 1
           else
@@ -170,7 +169,7 @@ jobs:
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
-            echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
+            echo "status=${{ env.RELEASE_TYPE }}" >> $GITHUB_OUTPUT
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
           fi
 
@@ -215,7 +214,7 @@ jobs:
           sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Cache pakku
+      - name: 📝 Cache pakku
         uses: actions/cache@v4.2.3
         id: cache
         with:
@@ -270,7 +269,7 @@ jobs:
           sed -i -e "s/\"version\": \"[0-9.]*\"/\"version\": \"${VERSION}\"/g" pakku.json
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
-      - name: Cache pakku
+      - name: 📝 Cache pakku
         uses: actions/cache@v4.2.3
         id: cache
         with:
@@ -315,7 +314,7 @@ jobs:
           sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
           sed -i -e "s/DEV/${VERSION}/g" .pakku/multimc-overrides/instance.cfg
 
-      - name: Cache pakku
+      - name: 📝 Cache pakku
         uses: actions/cache@v4.2.3
         id: cache
         with:
@@ -351,7 +350,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: github.env.RELEASE_ON_GITHUB && !github.env.DEV_ENVIRONMENT && !needs.info.outputs.exists
+    if: github.env.RELEASE_ON_GITHUB && !github.env.DEV_ENVIRONMENT && needs.info.outputs.exists != 'true'
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -420,7 +419,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: github.env.RELEASE_ON_CURSEFORGE && !github.env.DEV_ENVIRONMENT && !needs.info.outputs.exists
+    if: github.env.RELEASE_ON_CURSEFORGE && !github.env.DEV_ENVIRONMENT && needs.info.outputs.exists != 'true'
     outputs:
       id: ${{ steps.release.outputs.id }}
 
@@ -470,7 +469,7 @@ jobs:
       name: 🚀 Release to Modrinth
       needs: [info, build-modpack, build-server, release-github]
       runs-on: ubuntu-latest
-      if: github.env.RELEASE_ON_MODRINTH && !github.env.DEV_ENVIRONMENT && !needs.info.outputs.exists
+      if: github.env.RELEASE_ON_MODRINTH && !github.env.DEV_ENVIRONMENT && needs.info.outputs.exists != 'true'
       outputs:
         id: ${{ steps.release.outputs.id }}
 
