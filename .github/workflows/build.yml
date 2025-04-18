@@ -201,7 +201,6 @@ jobs:
     name: 📦 Build Modpack
     needs: [info]
     runs-on: ubuntu-latest
-    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -256,7 +255,6 @@ jobs:
     name: 📦 Build Server
     needs: [info]
     runs-on: ubuntu-latest
-    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
@@ -300,7 +298,6 @@ jobs:
     name: 📦 Build MultiMC
     needs: [info]
     runs-on: ubuntu-latest
-    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
