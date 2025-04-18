@@ -165,6 +165,17 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: '#forge:plates/steel'
     }).id('tfg:sophisticated_backpacks/shaped/upgrade_base')
 
+    event.shaped('sophisticatedbackpacks:upgrade_base', [
+        'ABA',
+        'BCB',
+        'ADA'
+    ], {
+        A: '#forge:string',
+        B: '#forge:rods/long/wrought_iron',
+        C: '#forge:plates/rubber',
+        D: '#forge:plates/steel'
+    }).id('tfg:sophisticated_backpacks/shaped/upgrade_base_rubber')
+
     // Улучшение - подбиратель
     event.shaped('sophisticatedbackpacks:pickup_upgrade', [
         'ABA',

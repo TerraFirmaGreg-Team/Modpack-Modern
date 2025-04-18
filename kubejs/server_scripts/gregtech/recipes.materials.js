@@ -291,7 +291,7 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processNormalRawOre = (tagPrefix, material) => {
 		const normalOreItem = ChemicalHelper.get(tagPrefix, material, 1)
-		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, material.getProperty(PropertyKey.ORE).getOreMultiplier())
 
 		if (normalOreItem != null && crushedOreItem != null) {
 			event.recipes.tfc.quern(crushedOreItem, normalOreItem)
@@ -301,7 +301,7 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processRichRawOre = (tagPrefix, material) => {
 		const richOreItem = ChemicalHelper.get(tagPrefix, material, 1)
-		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 2)
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, material.getProperty(PropertyKey.ORE).getOreMultiplier() * 2)
 
 		if (richOreItem != null && crushedOreItem != null) {
 			event.recipes.tfc.quern(crushedOreItem, richOreItem)
