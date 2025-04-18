@@ -130,7 +130,7 @@ jobs:
         id: project_info
         uses: ActionsTools/read-json-action@v1.0.5
         with:
-          file_path: "pakku.json"
+          file_path: "pakku-lock.json"
         
       - name: 📊 Get Project Name
         id: project_name
@@ -191,7 +191,7 @@ jobs:
 
       - name: Minecraft Version
         id: mc_versions
-        run: echo "${{ steps.minecraft_version.outputs.value[0] }}" >> $GITHUB_OUTPUT
+        run: echo "${{ steps.project_info.outputs.mc_versions.value[0] }}" >> $GITHUB_OUTPUT
 
       - name: 📄 Format diff
         id: format_diff
