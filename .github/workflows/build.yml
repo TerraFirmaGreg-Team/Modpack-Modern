@@ -197,7 +197,7 @@ jobs:
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
           variables: >-
-            MINECRAFT_VERSION: ${{ steps.minecraft_version.outputs.value }}
+            MINECRAFT_VERSION: "${{ steps.minecraft_version.outputs.value }}
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
