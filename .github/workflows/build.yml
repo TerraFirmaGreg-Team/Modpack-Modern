@@ -148,7 +148,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
+          if [ ${{ steps.check_tag.outputs.exists }} = 'true' ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
