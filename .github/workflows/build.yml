@@ -169,18 +169,28 @@ jobs:
         with:
           path: CHANGELOG.md
           version: ${{ steps.determine_version.outputs.version }}
+
+      - name: Format diff
+        id: format_diff
+        if: ${{ steps.read_diff.outputs.diff != '' }}
+        uses: roamingowl/template-output-with-eta@v1.12.0
+        with:
+          template: |
+            ```markdown
+            ${{ steps.read_diff.outputs.diff }}
+            ```
         
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
-            📃 **Release**: ${{ steps.project_version.outputs.value }}
-            📃 **Release Type**: ${{ steps.changelog.outputs.version }}
-            📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
+            📃 **Release**: ${{ steps.changelog.outputs.version }}
+            📃 **Release Type**: ${{ steps.changelog.outputs.status }}
+            📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}
 
             ${{ steps.changelog.outputs.description }}
-            ${{ steps.read_diff.outputs.diff }}
+            ${{ steps.format_diff.outputs.text }}
   
 
   build-modpack:
