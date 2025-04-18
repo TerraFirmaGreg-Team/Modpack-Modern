@@ -456,13 +456,14 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (crushedOreItem != null && pureOreItem != null) {
 			
+			// Bulk washing
 			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
 			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
 
 			event.recipes.greate.splashing([pureOreItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], crushedOreItem)
 				.id(`tfg:splashing/${material.getName()}_purified_ore`)
 			
-			// Дробленная руда -> Очищенная руда
+			// Dropping in water
 			event.custom({
 				type: "ae2:transform",
 				circumstance: {
@@ -483,13 +484,23 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (impureDustItem != null && dustItem != null) {
 			
-			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
-			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
-
-			event.recipes.greate.splashing([dustItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], impureDustItem)
+			// Bulk washing
+			event.recipes.greate.splashing(dustItem, impureDustItem)
 				.id(`tfg:splashing/${material.getName()}_dust_from_impure`)
 
-			// Грязная пыль -> Пыль
+			// Centrifuging
+			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
+			let byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1).toJson()
+			byproductItem.add("chance", 0.111);
+
+			event.custom({
+				type: 'vintageimprovements:centrifugation',
+				ingredients: [impureDustItem],
+				results: [dustItem, byproductItem],
+				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+			}).id(`tfg:vi/centrifuge/${material.getName()}_dust_from_impure`)
+
+			// Dropping in water
 			event.custom({
 				type: "ae2:transform",
 				circumstance: {
@@ -510,13 +521,23 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (pureDust != null && dustItem != null) {
 
-			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(0, material);
-			const byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1)
-
-			event.recipes.greate.splashing([dustItem, TieredOutputItem.of(byproductItem).withChance(0.333), 'gtceu:stone_dust'], pureDust)
+			// Bulk washing
+			event.recipes.greate.splashing(dustItem, pureDust)
 				.id(`tfg:splashing/${material.getName()}_dust_from_pure`)
 
-			// Очищенная пыль -> Пыль
+			// Centrifuging
+			let byproductMaterial = material.getProperty(PropertyKey.ORE).getOreByProduct(1, material);
+			let byproductItem = ChemicalHelper.get(TagPrefix.dust, byproductMaterial, 1).toJson()
+			byproductItem.add("chance", 0.111);
+
+			event.custom({
+				type: 'vintageimprovements:centrifugation',
+				ingredients: [pureDust],
+				results: [dustItem, byproductItem],
+				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+			}).id(`tfg:vi/centrifuge/${material.getName()}_dust_from_pure`)
+
+			// Dropping in water
 			event.custom({
 				type: "ae2:transform",
 				circumstance: {
