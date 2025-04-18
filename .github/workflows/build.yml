@@ -206,7 +206,7 @@ jobs:
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
             📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
-            📃 **Game Version**: `${{ steps.project_info.outputs.mc_versions[0] }}`
+            📃 **Game Version**: `${{ steps.project_info.outputs.mc_versions[1] }}`
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
