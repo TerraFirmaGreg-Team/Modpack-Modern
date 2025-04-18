@@ -169,6 +169,7 @@ jobs:
         with:
           path: CHANGELOG.md
           version: ${{ steps.determine_version.outputs.version }}
+        continue-on-error: true
 
       - name: Format diff
         id: format_diff
@@ -503,7 +504,6 @@ jobs:
             display-name: ${{ needs.info.outputs.project_full_name }}
             server-display-name: ${{ needs.info.outputs.project_full_name }}-serverpack
             release-type: ${{ env.RELEASE_TYPE }}
-
 
   discord-message:
     name: 📱 Discord Message

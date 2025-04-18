@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.0] - 18.04.2025
 ### Warning for upgrading your world
 - This is a major update that changes many things! 
 - It is safest to create a new instance and copy your world across, instead of trying to update your world in-place. 
