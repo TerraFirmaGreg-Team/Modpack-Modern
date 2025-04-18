@@ -186,7 +186,7 @@ jobs:
         with:
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
-            📃 **Release**: ${{ steps.changelog.outputs.version }}
+            📃 **Release**:  ${{ steps.changelog.outputs.error == 'true' ? 'Unreleased' : steps.changelog.outputs.version }}
             📃 **Release Type**: ${{ steps.changelog.outputs.status }}
             📃 **Game Version**: ${{ steps.minecraft_version.outputs.value }}
 
@@ -205,6 +205,7 @@ jobs:
 
       - name: 🔄 Replace strings
         shell: bash
+        if: github.env.DEV_ENVIRONMENT
         run: |
           set +e
 
@@ -258,6 +259,7 @@ jobs:
 
       - name: 🔄 Replace strings
         shell: bash
+        if: github.env.DEV_ENVIRONMENT
         run: |
           set +e
 
@@ -300,6 +302,7 @@ jobs:
 
       - name: 🔄 Replace strings
         shell: bash
+        if: github.env.DEV_ENVIRONMENT
         run: |
           set +e
 
