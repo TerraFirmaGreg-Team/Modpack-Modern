@@ -354,7 +354,7 @@ jobs:
     name: 📦 Prepare release
     needs: [info]
     runs-on: ubuntu-latest
-    if: ${{ env.RELEASE_ON_GITHUB }}
+    if: ${{ !github.env.DEV_ENVIRONMENT }}
     steps:
     - name: Debug if conditions
       run: |
@@ -369,7 +369,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ env.RELEASE_ON_GITHUB == 'true' && env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
+    if: ${{ github.env.RELEASE_ON_GITHUB == 'true' && github.env.DEV_ENVIRONMENT == 'false' && needs.info.outputs.exists == 'false' }}
     outputs:
       url: ${{ steps.release.outputs.url }}
 
