@@ -189,10 +189,6 @@ jobs:
             echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
           fi
 
-      - name: Minecraft Version
-        id: mc_versions
-        run: echo "${{ steps.project_info.outputs.mc_versions }}" >> $GITHUB_OUTPUT
-
       - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
