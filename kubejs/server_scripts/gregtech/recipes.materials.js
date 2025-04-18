@@ -4,10 +4,12 @@ function registerGTCEUMetalRecipes(event) {
 
 	const makeToolRecipe = (toolType, headTagPrefix, extruderMold, cirucitMeta, material) => {
 		const toolItem = ToolHelper.get(toolType, material)
-		if (toolItem.isEmpty()) return
+		if (toolItem.isEmpty())
+			return
 
 		const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
-		if (toolHeadItem.isEmpty()) return
+		if (toolHeadItem.isEmpty()) 
+			return
 
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
@@ -19,10 +21,10 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processToolHead = (headTagPrefix, extruderMold, cirucitMeta, material) => {
 		const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
-		if (toolHeadItem.isEmpty()) return
+		if (toolHeadItem.isEmpty())
+			return
 
 		if (material.hasProperty(PropertyKey.INGOT)) {
-
 			const ingotItem = ChemicalHelper.get(TagPrefix.ingot, material, 1)
 			if (ingotItem.isEmpty()) return
 
@@ -120,8 +122,8 @@ function registerGTCEUMetalRecipes(event) {
 		).id(`gtceu:shaped/mortar_${material.getName()}`)
 	}
 
-	const processIngot = (tagPrefix, material) => {
-		const ingotStack = ChemicalHelper.get(tagPrefix, material, 1)
+	const processIngot = (material) => {
+		const ingotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
 
 		if (material.hasFlag(MaterialFlags.GENERATE_PLATE)
 			&& material != GTMaterials.Wood
@@ -161,30 +163,29 @@ function registerGTCEUMetalRecipes(event) {
 		}
 	}
 
-	const processPlate = (tagPrefix, material) => {
-		const item = ChemicalHelper.get(tagPrefix, material, 1)
+	const processPlate = (material) => {
+		const item = ChemicalHelper.get(TagPrefix.plate, material, 1)
 		if (item.isEmpty()) return
 
 		event.remove({ id: `gtceu:shaped/plate_${material.getName()}` })
 	}
 
-	const processPlateDouble = (tagPrefix, material) => {
-		const item = ChemicalHelper.get(tagPrefix, material, 1)
+	const processPlateDouble = (material) => {
+		const item = ChemicalHelper.get(TagPrefix.plateDouble, material, 1)
 		if (item.isEmpty()) return
 
 		event.remove({ id: `gtceu:shaped/plate_double_${material.getName()}` })
 	}
 
-	const processBlock = (tagPrefix, material) => {
-		const item = ChemicalHelper.get(tagPrefix, material, 1)
+	const processBlock = (material) => {
+		const item = ChemicalHelper.get(TagPrefix.block, material, 1)
 		if (item.isEmpty()) return
 
 		event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_block` })
 	}
 
-	const processFoil = (tagPrefix, material) => {
-
-		const foilItem = ChemicalHelper.get(tagPrefix, material, 4)
+	const processFoil = (material) => {
+		const foilItem = ChemicalHelper.get(TagPrefix.foil, material, 4)
 		const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1)
 
 		if (plateItem != null && foilItem != null) {
@@ -198,17 +199,17 @@ function registerGTCEUMetalRecipes(event) {
 		}
 	}
 
-	const processRodLong = (tagPrefix, material) => {
-		const item = ChemicalHelper.get(tagPrefix, material, 1)
+	const processRodLong = (material) => {
+		const item = ChemicalHelper.get(TagPrefix.rodLong, material, 1)
 		if (item.isEmpty()) return
 
 		event.remove({ id: `gtceu:shaped/stick_long_stick_${material.getName()}` })
 	}
 
-	const processIngotDouble = (tagPrefix, material) => {
+	const processIngotDouble = (material) => {
 		if (!material.hasFlag(TFGMaterialFlags.GENERATE_DOUBLE_INGOTS)) return;
 
-		const doubleIngotStack = ChemicalHelper.get(tagPrefix, material, 1);
+		const doubleIngotStack = ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1);
 
 		if (material.hasProperty(PropertyKey.FLUID)) {
 			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_double_ingot`)
@@ -245,10 +246,10 @@ function registerGTCEUMetalRecipes(event) {
 			.circuit(3)
 	}
 
-	const processSmallOre = (tagPrefix, material) => {
+	const processSmallOre = (material) => {
 		if (!material.hasFlag(TFGMaterialFlags.HAS_SMALL_TFC_ORE)) return;
 
-		const smallOre = ChemicalHelper.get(tagPrefix, material, 1);
+		const smallOre = ChemicalHelper.get(TFGTagPrefix.oreSmall, material, 1);
 		const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_small_ore`)
@@ -259,10 +260,10 @@ function registerGTCEUMetalRecipes(event) {
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
-	const processSmallNativeOre = (tagPrefix, material) => {
+	const processSmallNativeOre = (material) => {
 		if (!material.hasFlag(TFGMaterialFlags.HAS_SMALL_NATIVE_TFC_ORE)) return;
 
-		const smallNativeOre = ChemicalHelper.get(tagPrefix, material, 1);
+		const smallNativeOre = ChemicalHelper.get(TFGTagPrefix.oreSmallNative, material, 1);
 		const smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1);
 
 		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_small_native_ore`)
@@ -273,44 +274,184 @@ function registerGTCEUMetalRecipes(event) {
 			.EUt(GTValues.VA[GTValues.ULV])
 	}
 
-	const processPoorRawOre = (tagPrefix, material) => {
-		const poorOreItem = ChemicalHelper.get(tagPrefix, material, 2)
-		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, Math.max(material.getProperty(PropertyKey.ORE).getOreMultiplier() / 2.0, 1))
-
-		if (poorOreItem != null && crushedOreItem != null) {
-
-			event.recipes.tfc.quern(crushedOreItem, poorOreItem)
-				.id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
-
-			// TODO: Remove when Greate fixes its chanced output bug
-
-			event.shapeless(crushedOreItem, [poorOreItem, '#forge:tools/hammers'])
-				.id(`tfg:greate_workaround_crushed_${material.getName()}`)
-		}
-	}
-
-	const processNormalRawOre = (tagPrefix, material) => {
-		const normalOreItem = ChemicalHelper.get(tagPrefix, material, 1)
+	const processPoorRawOre = (material) => {
+		const poorOreItem = ChemicalHelper.get(TFGTagPrefix.poorRawOre, material, 1)
 		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
 
-		if (normalOreItem != null && crushedOreItem != null) {
-			event.recipes.tfc.quern(crushedOreItem, normalOreItem)
-				.id(`tfg:quern/${material.getName()}_crushed_ore_from_normal_raw_ore`)
+		if (poorOreItem == null || crushedOreItem == null)
+			return;
+
+		const oreProperty = material.getProperty(PropertyKey.ORE)
+		const smeltingMaterial = oreProperty.getDirectSmeltResult() == null ? material : oreProperty.getDirectSmeltResult();
+		const multiplier = oreProperty.getOreMultiplier();
+
+		let ingotItem = null;
+		if (smeltingMaterial.hasProperty(PropertyKey.INGOT))
+			ingotItem = ChemicalHelper.get(TagPrefix.nugget, smeltingMaterial, 5)
+		else if (smeltingMaterial.hasProperty(PropertyKey.GEM))
+			ingotItem = ChemicalHelper.get(TagPrefix.gemFlawed, smeltingMaterial, 1)
+		else
+			ingotItem = ChemicalHelper.get(TagPrefix.dustSmall, smeltingMaterial, 1)
+
+		ingotItem.setCount(ingotItem.getCount() * multiplier)
+		crushedOreItem.setCount(crushedOreItem.getCount() * multiplier)
+
+		// Forge hammer
+		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_poor_raw_${material.getName()}_to_crushed_ore`)
+			.itemInputs(poorOreItem)
+			.category(GTRecipeCategories.ORE_FORGING)
+			.duration(10)
+			.EUt(16)
+
+		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material))
+			hammerRecipe.chancedOutput(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()), 7500, 950)
+		else
+			hammerRecipe.chancedOutput(crushedOreItem, 7500, 950)
+
+		// Macerator
+		let maceratorRecipe = event.recipes.gtceu.macerator(`macerate_poor_raw_${material.getName()}_ore_to_crushed_ore`)
+			.itemInputs(poorOreItem)
+			.category(GTRecipeCategories.ORE_CRUSHING)
+			.duration(400)
+			.EUt(2)
+
+		if (multiplier > 1) {
+			maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(multiplier / 2))
+		}
+		else {
+			// TODO: Change this when Greate fixes its bug
+			//maceratorRecipe.chancedOutput(crushedOreItem, 5000, 750)
+			maceratorRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 1))
+		}
+		maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+
+		// Quern
+		if (multiplier > 1) {
+			event.recipes.tfc.quern(
+				crushedOreItem.copyWithCount(multiplier / 2),
+				poorOreItem
+			).id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
+		}
+		else {
+			event.recipes.tfc.quern(
+				ChemicalHelper.get(TagPrefix.dustSmall, material, 1),
+				poorOreItem
+			).id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
+		}
+
+		// Smelting
+		if (!material.hasProperty(PropertyKey.BLAST)) {
+			event.smelting(ingotItem, poorOreItem).id(`gtceu:smelting/smelt_poor_raw_${material.getName()}_ore_to_ingot`)
 		}
 	}
 
-	const processRichRawOre = (tagPrefix, material) => {
-		const richOreItem = ChemicalHelper.get(tagPrefix, material, 1)
-		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 2)
+	const processNormalRawOre = (material) => {
+		const oreProperty = material.getProperty(PropertyKey.ORE)
+		const multiplier = oreProperty.getOreMultiplier();
+		const normalOreItem = ChemicalHelper.get(TagPrefix.rawOre, material, 1)
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, multiplier)
 
-		if (richOreItem != null && crushedOreItem != null) {
-			event.recipes.tfc.quern(crushedOreItem, richOreItem)
-				.id(`tfg:quern/${material.getName()}_crushed_ore_from_rich_raw_ore`)
+		if (normalOreItem == null || crushedOreItem == null)
+			return;
+
+		const smeltingMaterial = oreProperty.getDirectSmeltResult() == null ? material : oreProperty.getDirectSmeltResult();
+
+		let ingotItem = null;
+		if (smeltingMaterial.hasProperty(PropertyKey.INGOT))
+			ingotItem = ChemicalHelper.get(TagPrefix.ingot, smeltingMaterial, multiplier)
+		else if (smeltingMaterial.hasProperty(PropertyKey.GEM))
+			ingotItem = ChemicalHelper.get(TagPrefix.gem, smeltingMaterial, multiplier)
+		else
+			ingotItem = ChemicalHelper.get(TagPrefix.dust, smeltingMaterial, multiplier)
+
+		// Forge hammer
+		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_raw_${material.getName()}_to_crushed_ore`)
+			.itemInputs(normalOreItem)
+			.category(GTRecipeCategories.ORE_FORGING)
+			.duration(10)
+			.EUt(16)
+
+		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material))
+			hammerRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()))
+		else
+			hammerRecipe.itemOutputs(crushedOreItem)
+
+		// Macerator
+		event.recipes.gtceu.macerator(`macerate_raw_${material.getName()}_ore_to_crushed_ore`)
+			.itemInputs(normalOreItem)
+			.itemOutputs(crushedOreItem)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 500)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 250)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+			.category(GTRecipeCategories.ORE_CRUSHING)
+			.duration(400)
+			.EUt(2)
+
+		// Quern
+		event.recipes.tfc.quern(crushedOreItem, normalOreItem)
+			.id(`tfg:quern/${material.getName()}_crushed_ore_from_normal_raw_ore`)
+		
+		// Smelting
+		if (!material.hasProperty(PropertyKey.BLAST)) {
+			event.smelting(ingotItem, normalOreItem).id(`gtceu:smelting/smelt_raw_${material.getName()}_ore_to_ingot`)
 		}
 	}
 
-	const processCrushedOre = (tagPrefix, material) => {
-		const crushedOreItem = ChemicalHelper.get(tagPrefix, material, 1)
+	const processRichRawOre = (material) => {
+		const oreProperty = material.getProperty(PropertyKey.ORE)
+		const multiplier = oreProperty.getOreMultiplier() * 2;
+		const richOreItem = ChemicalHelper.get(TFGTagPrefix.richRawOre, material, 1)
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, multiplier)
+
+		if (richOreItem == null || crushedOreItem == null)
+			return;
+
+		const smeltingMaterial = oreProperty.getDirectSmeltResult() == null ? material : oreProperty.getDirectSmeltResult();
+
+		let ingotItem = null;
+		if (smeltingMaterial.hasProperty(PropertyKey.INGOT))
+			ingotItem = ChemicalHelper.get(TagPrefix.ingot, smeltingMaterial, multiplier)
+		else if (smeltingMaterial.hasProperty(PropertyKey.GEM))
+			ingotItem = ChemicalHelper.get(TagPrefix.gem, smeltingMaterial, multiplier)
+		else
+			ingotItem = ChemicalHelper.get(TagPrefix.dust, smeltingMaterial, multiplier)
+			
+		// Forge hammer
+		let hammerRecipe = event.recipes.gtceu.forge_hammer(`hammer_rich_raw_${material.getName()}_to_crushed_ore`)
+			.itemInputs(richOreItem)
+			.category(GTRecipeCategories.ORE_FORGING)
+			.duration(10)
+			.EUt(16)
+
+		if (material.hasProperty(PropertyKey.GEM) && !TagPrefix.gem.isIgnored(material))
+			hammerRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.gem, material, crushedOreItem.getCount()))
+		else
+			hammerRecipe.itemOutputs(crushedOreItem)
+
+		// Macerator
+		event.recipes.gtceu.macerator(`macerate_rich_raw_${material.getName()}_ore_to_crushed_ore`)
+			.itemInputs(richOreItem)
+			.itemOutputs(crushedOreItem)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 5000, 750)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
+			.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+			.category(GTRecipeCategories.ORE_CRUSHING)
+			.duration(400)
+			.EUt(2)
+			
+		// Quern
+		event.recipes.tfc.quern(crushedOreItem, richOreItem)
+			.id(`tfg:quern/${material.getName()}_crushed_ore_from_rich_raw_ore`)
+	
+		// Smelting
+		if (!material.hasProperty(PropertyKey.BLAST)) {
+			event.smelting(ingotItem, richOreItem).id(`gtceu:smelting/smelt_rich_raw_${material.getName()}_ore_to_ingot`)
+		}
+	}
+
+	const processCrushedOre = (material) => {
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
 		const pureOreItem = ChemicalHelper.get(TagPrefix.crushedPurified, material, 1)
 
 		if (crushedOreItem != null && pureOreItem != null) {
@@ -336,8 +477,8 @@ function registerGTCEUMetalRecipes(event) {
 		}
 	}
 
-	const processImpureDust = (tagPrefix, material) => {
-		const impureDustItem = ChemicalHelper.get(tagPrefix, material, 1)
+	const processImpureDust = (material) => {
+		const impureDustItem = ChemicalHelper.get(TagPrefix.dustImpure, material, 1)
 		const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
 
 		if (impureDustItem != null && dustItem != null) {
@@ -363,8 +504,8 @@ function registerGTCEUMetalRecipes(event) {
 		}
 	}
 
-	const processPureDust = (tagPrefix, material) => {
-		const pureDust = ChemicalHelper.get(tagPrefix, material, 1)
+	const processPureDust = (material) => {
+		const pureDust = ChemicalHelper.get(TagPrefix.dustPure, material, 1)
 		const dustItem = ChemicalHelper.get(TagPrefix.dust, material, 1)
 
 		if (pureDust != null && dustItem != null) {
@@ -390,18 +531,290 @@ function registerGTCEUMetalRecipes(event) {
 		}
 	}
 
+	const processGems = (material) => {
+		let gem = ChemicalHelper.get(TagPrefix.gem, material, 1);
+		let chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
+		let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
+			`gtceu:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
+			.id(`shapeless/${material.getName()}_bud_indicator`)
+
+		event.shaped(smallDust,
+			[ 'A', 'B' ],
+			{ A: chipped, B: '#forge:tools/mortars'})
+			.id(`shapeless/mortar_chipped_${material.getName()}`)
+	}
+
+	const processAnvil = (material) => {
+		const anvilStack = ChemicalHelper.get(TFGTagPrefix.anvil, material, 1)
+		if (anvilStack == null) 
+			return;
+
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_anvil`)
+			.itemInputs(anvilStack)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 14))
+			.duration(material.getMass() * 32)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_anvil`)
+			.itemInputs(anvilStack)
+			.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
+			.duration(material.getMass() * 32)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_anvil`)
+			.itemInputs(anvilStack)
+			.outputFluids(Fluid.of(material.getFluid(), 14 * 144))
+			.duration(material.getMass() * 32)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_anvil`)
+			.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
+			.notConsumable('gtceu:anvil_casting_mold')
+			.itemOutputs(anvilStack)
+			.duration(material.getMass() * 32)
+			.EUt(GTValues.VA[GTValues.ULV])
+			.category(GTRecipeCategories.INGOT_MOLDING)
+
+		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_anvil`)
+			.inputFluids(Fluid.of(material.getFluid(), 14 * 144))
+			.notConsumable('gtceu:anvil_casting_mold')
+			.itemOutputs(anvilStack)
+			.duration(material.getMass() * 32)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	const processLamp = (material) => {
+		const finishedLampStack = ChemicalHelper.get(TFGTagPrefix.lamp, material, 1)
+		if (finishedLampStack == null) 
+			return;
+
+		const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
+		const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+		const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 4)
+		const unfinishedLampStack = ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1)
+
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_lamp`)
+			.itemInputs(finishedLampStack)
+			.itemOutputs([materialDustStack, glassDustStack])
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_lamp`)
+			.itemInputs(finishedLampStack)
+			.itemOutputs([materialIngotStack, glassDustStack])
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp`)
+			.itemInputs("tfc:lamp_glass", unfinishedLampStack)
+			.itemOutputs(finishedLampStack)
+			.duration(material.getMass() * 7)
+			.circuit(12)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp_from_liquid`)
+			.itemInputs(unfinishedLampStack)
+			.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 576))
+			.itemOutputs(finishedLampStack)
+			.duration(material.getMass() * 7)
+			.circuit(13)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_unfinished_lamp`)
+			.itemInputs(unfinishedLampStack)
+			.itemOutputs(materialDustStack)
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_unfinished_lamp`)
+			.itemInputs(unfinishedLampStack)
+			.itemOutputs([materialIngotStack, glassDustStack])
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_unfinished_lamp`)
+			.itemInputs(unfinishedLampStack)
+			.outputFluids(Fluid.of(material.getFluid(), 144))
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_unfinished_lamp`)
+			.itemInputs(materialIngotStack)
+			.notConsumable('tfg:lamp_casting_mold')
+			.itemOutputs(unfinishedLampStack)
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.INGOT_MOLDING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_unfinished_lamp`)
+			.inputFluids(Fluid.of(material.getFluid(), 144))
+			.notConsumable('tfg:lamp_casting_mold')
+			.itemOutputs(unfinishedLampStack)
+			.duration(material.getMass() * 8)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	const processTrapdoor = (material) => {
+		const trapdoorStack = ChemicalHelper.get(TFGTagPrefix.trapdoor, material, 1)
+		if (trapdoorStack == null)
+			return;
+
+		const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
+		const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_trapdoor`)
+			.itemInputs(trapdoorStack)
+			.itemOutputs(materialDustStack)
+			.duration(material.getMass() * 7)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_trapdoor`)
+			.itemInputs(trapdoorStack)
+			.itemOutputs(materialIngotStack)
+			.duration(material.getMass() * 7)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_trapdoor`)
+			.itemInputs(trapdoorStack)
+			.outputFluids(Fluid.of(material.getFluid(), 144))
+			.duration(material.getMass() * 7)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_trapdoor`)
+			.itemInputs(materialIngotStack)
+			.notConsumable('tfg:trapdoor_casting_mold')
+			.itemOutputs(trapdoorStack)
+			.duration(material.getMass() * 8)
+			.category(GTRecipeCategories.INGOT_MOLDING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_trapdoor`)
+			.inputFluids(Fluid.of(material.getFluid(), 144))
+			.notConsumable('tfg:trapdoor_casting_mold')
+			.itemOutputs(trapdoorStack)
+			.duration(material.getMass() * 7)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	const processChain = (material) => {
+		const chainStack = ChemicalHelper.get(TFGTagPrefix.chain, material, 1)
+		if (chainStack == null)
+			return;
+
+		const chain2Stack = ChemicalHelper.get(TFGTagPrefix.chain, material, 2)
+
+		const materialDustTinyStack = ChemicalHelper.get(TagPrefix.dustTiny, material, 1)
+		const materialNuggetStack = ChemicalHelper.get(TagPrefix.nugget, material, 1)
+		const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_chain`)
+			.itemInputs(chain2Stack)
+			.itemOutputs(materialDustTinyStack)
+			.duration(material.getMass() * 3)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_chain`)
+			.itemInputs(chain2Stack)
+			.itemOutputs(materialNuggetStack)
+			.duration(material.getMass() * 3)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_chain`)
+			.itemInputs(chainStack)
+			.outputFluids(Fluid.of(material.getFluid(), 9))
+			.duration(material.getMass() * 3)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_chain`)
+			.itemInputs(materialIngotStack)
+			.notConsumable('tfg:chain_casting_mold')
+			.itemOutputs(ChemicalHelper.get(TFGTagPrefix.chain, material, 16))
+			.duration(material.getMass() * 3)
+			.category(GTRecipeCategories.INGOT_MOLDING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_chain`)
+			.inputFluids(Fluid.of(material.getFluid(), 9))
+			.notConsumable('tfg:chain_casting_mold')
+			.itemOutputs(chainStack)
+			.duration(material.getMass() * 3)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	const processBell = (material) => {
+		const bellStack = ChemicalHelper.get(TFGTagPrefix.bell, material, 1)
+		if (bellStack == null)
+			return;
+
+		const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
+		const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
+
+		event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_bell`)
+			.itemInputs(bellStack)
+			.itemOutputs(materialDustStack)
+			.duration(material.getMass() * 5)
+			.category(GTRecipeCategories.MACERATOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_bell`)
+			.itemInputs(bellStack)
+			.itemOutputs(materialIngotStack)
+			.duration(material.getMass() * 5)
+			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_bell`)
+			.itemInputs(bellStack)
+			.outputFluids(Fluid.of(material.getFluid(), 144))
+			.duration(material.getMass() * 5)
+			.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_bell`)
+			.itemInputs(materialIngotStack)
+			.notConsumable('tfg:bell_casting_mold')
+			.itemOutputs(bellStack)
+			.duration(material.getMass() * 5)
+			.category(GTRecipeCategories.INGOT_MOLDING)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_bell`)
+			.inputFluids(Fluid.of(material.getFluid(), 144))
+			.notConsumable('tfg:bell_casting_mold')
+			.itemOutputs(bellStack)
+			.duration(material.getMass() * 5)
+			.EUt(GTValues.VA[GTValues.ULV])
+	}
+
+	const processBars = (material) => {
+		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
+		if (barsStack == null)
+			return;
+
+		event.stonecutting(barsStack, ChemicalHelper.get(TagPrefix.ingot, material, 1))
+			.id(`${material.getName()}_ingot_to_bars`)
+	}
+
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
-		const gemProperty = material.getProperty(PropertyKey.GEM)
-
-		const anvilStack = ChemicalHelper.get(TFGTagPrefix.anvil, material, 1)
-		const finishedLampStack = ChemicalHelper.get(TFGTagPrefix.lamp, material, 1)
-		const trapdoorStack = ChemicalHelper.get(TFGTagPrefix.trapdoor, material, 1)
-		const chainStack = ChemicalHelper.get(TFGTagPrefix.chain, material, 1)
-		const bellStack = ChemicalHelper.get(TFGTagPrefix.bell, material, 1)
-		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
 
 		if (toolProperty != null) {
 			makeToolRecipe(GTToolType.SWORD, TFGTagPrefix.toolHeadSword, 'tfg:sword_head_extruder_mold', 1, material)
@@ -428,285 +841,38 @@ function registerGTCEUMetalRecipes(event) {
 		}
 
 		if (ingotProperty != null) {
-			processIngot(TagPrefix.ingot, material)
-			processPlate(TagPrefix.plate, material)
-			processPlateDouble(TagPrefix.plateDouble, material)
-			processBlock(TagPrefix.block, material)
-			processFoil(TagPrefix.foil, material)
-			processRodLong(TagPrefix.rodLong, material)
-			processIngotDouble(TFGTagPrefix.ingotDouble, material)
+			processIngot(material)
+			processPlate(material)
+			processPlateDouble(material)
+			processBlock(material)
+			processFoil(material)
+			processRodLong(material)
+			processIngotDouble(material)
+
+			processAnvil(material)
+			processLamp(material)
+			processTrapdoor(material)
+			processChain(material)
+			processBell(material)
+			processBars(material)
 		}
 
 		if (oreProperty != null) {
-			processSmallOre(TFGTagPrefix.oreSmall, material)
-			processSmallNativeOre(TFGTagPrefix.oreSmallNative, material)
-			processPoorRawOre(TFGTagPrefix.poorRawOre, material)
-			processNormalRawOre(TagPrefix.rawOre, material)
-			processRichRawOre(TFGTagPrefix.richRawOre, material)
+			processSmallOre(material)
+			processSmallNativeOre(material)
+			processPoorRawOre(material)
+			processNormalRawOre(material)
+			processRichRawOre(material)
 
-			processCrushedOre(TagPrefix.crushed, material)
-			processImpureDust(TagPrefix.dustImpure, material)
-			processPureDust(TagPrefix.dustPure, material)
+			processCrushedOre(material)
+			processImpureDust(material)
+			processPureDust(material)
 
-			if (gemProperty != null) {
-				let gem = ChemicalHelper.get(TagPrefix.gem, material, 1);
-				let chipped = ChemicalHelper.get(TagPrefix.gemChipped, material, 1)
-				let smallDust = ChemicalHelper.get(TagPrefix.dustSmall, material, 1)
-
-				event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(
-					`gtceu:${material.getName()}_bud_indicator`, [gem, '#tfc:chisels']))
-					.id(`shapeless/${material.getName()}_bud_indicator`)
-
-				event.shaped(smallDust,
-					[ 'A', 'B' ],
-					{ A: chipped, B: '#forge:tools/mortars'})
-					.id(`shapeless/mortar_chipped_${material.getName()}`)
+			if (material.hasProperty(PropertyKey.GEM)) {
+				processGems(material)
 			}
-		}
-
-		if (anvilStack != null) {
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_anvil`)
-				.itemInputs(anvilStack)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 14))
-				.duration(material.getMass() * 32)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_anvil`)
-				.itemInputs(anvilStack)
-				.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
-				.duration(material.getMass() * 32)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_anvil`)
-				.itemInputs(anvilStack)
-				.outputFluids(Fluid.of(material.getFluid(), 14 * 144))
-				.duration(material.getMass() * 32)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_anvil`)
-				.itemInputs(ChemicalHelper.get(TagPrefix.ingot, material, 14))
-				.notConsumable('gtceu:anvil_casting_mold')
-				.itemOutputs(anvilStack)
-				.duration(material.getMass() * 32)
-				.EUt(GTValues.VA[GTValues.ULV])
-				.category(GTRecipeCategories.INGOT_MOLDING)
-
-			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_anvil`)
-				.inputFluids(Fluid.of(material.getFluid(), 14 * 144))
-				.notConsumable('gtceu:anvil_casting_mold')
-				.itemOutputs(anvilStack)
-				.duration(material.getMass() * 32)
-				.EUt(GTValues.VA[GTValues.ULV])
-		}
-
-		if (finishedLampStack != null) {
-			const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
-			const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-			const glassDustStack = ChemicalHelper.get(TagPrefix.dust, GTMaterials.Glass, 4)
-			const unfinishedLampStack = ChemicalHelper.get(TFGTagPrefix.lampUnfinished, material, 1)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_lamp`)
-				.itemInputs(finishedLampStack)
-				.itemOutputs([materialDustStack, glassDustStack])
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_lamp`)
-				.itemInputs(finishedLampStack)
-				.itemOutputs([materialIngotStack, glassDustStack])
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp`)
-				.itemInputs("tfc:lamp_glass", unfinishedLampStack)
-				.itemOutputs(finishedLampStack)
-				.duration(material.getMass() * 7)
-				.circuit(12)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.assembler(`tfg:${material.getName()}_lamp_from_liquid`)
-				.itemInputs(unfinishedLampStack)
-				.inputFluids(Fluid.of(GTMaterials.Glass.getFluid(), 576))
-				.itemOutputs(finishedLampStack)
-				.duration(material.getMass() * 7)
-				.circuit(13)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_unfinished_lamp`)
-				.itemInputs(unfinishedLampStack)
-				.itemOutputs(materialDustStack)
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_unfinished_lamp`)
-				.itemInputs(unfinishedLampStack)
-				.itemOutputs([materialIngotStack, glassDustStack])
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_unfinished_lamp`)
-				.itemInputs(unfinishedLampStack)
-				.outputFluids(Fluid.of(material.getFluid(), 144))
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_unfinished_lamp`)
-				.itemInputs(materialIngotStack)
-				.notConsumable('tfg:lamp_casting_mold')
-				.itemOutputs(unfinishedLampStack)
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.INGOT_MOLDING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_unfinished_lamp`)
-				.inputFluids(Fluid.of(material.getFluid(), 144))
-				.notConsumable('tfg:lamp_casting_mold')
-				.itemOutputs(unfinishedLampStack)
-				.duration(material.getMass() * 8)
-				.EUt(GTValues.VA[GTValues.ULV])
-		}
-
-		if (trapdoorStack != null) {
-			const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
-			const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_trapdoor`)
-				.itemInputs(trapdoorStack)
-				.itemOutputs(materialDustStack)
-				.duration(material.getMass() * 7)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_trapdoor`)
-				.itemInputs(trapdoorStack)
-				.itemOutputs(materialIngotStack)
-				.duration(material.getMass() * 7)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_trapdoor`)
-				.itemInputs(trapdoorStack)
-				.outputFluids(Fluid.of(material.getFluid(), 144))
-				.duration(material.getMass() * 7)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_trapdoor`)
-				.itemInputs(materialIngotStack)
-				.notConsumable('tfg:trapdoor_casting_mold')
-				.itemOutputs(trapdoorStack)
-				.duration(material.getMass() * 8)
-				.category(GTRecipeCategories.INGOT_MOLDING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_trapdoor`)
-				.inputFluids(Fluid.of(material.getFluid(), 144))
-				.notConsumable('tfg:trapdoor_casting_mold')
-				.itemOutputs(trapdoorStack)
-				.duration(material.getMass() * 7)
-				.EUt(GTValues.VA[GTValues.ULV])
-		}
-
-		if (chainStack != null) {
-			const chain2Stack = ChemicalHelper.get(TFGTagPrefix.chain, material, 2)
-
-			const materialDustTinyStack = ChemicalHelper.get(TagPrefix.dustTiny, material, 1)
-			const materialNuggetStack = ChemicalHelper.get(TagPrefix.nugget, material, 1)
-			const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_chain`)
-				.itemInputs(chain2Stack)
-				.itemOutputs(materialDustTinyStack)
-				.duration(material.getMass() * 3)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_chain`)
-				.itemInputs(chain2Stack)
-				.itemOutputs(materialNuggetStack)
-				.duration(material.getMass() * 3)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_chain`)
-				.itemInputs(chainStack)
-				.outputFluids(Fluid.of(material.getFluid(), 9))
-				.duration(material.getMass() * 3)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_chain`)
-				.itemInputs(materialIngotStack)
-				.notConsumable('tfg:chain_casting_mold')
-				.itemOutputs(ChemicalHelper.get(TFGTagPrefix.chain, material, 16))
-				.duration(material.getMass() * 3)
-				.category(GTRecipeCategories.INGOT_MOLDING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_chain`)
-				.inputFluids(Fluid.of(material.getFluid(), 9))
-				.notConsumable('tfg:chain_casting_mold')
-				.itemOutputs(chainStack)
-				.duration(material.getMass() * 3)
-				.EUt(GTValues.VA[GTValues.ULV])
-		}
-
-		if (bellStack != null) {
-			const materialDustStack = ChemicalHelper.get(TagPrefix.dust, material, 1)
-			const materialIngotStack = ChemicalHelper.get(TagPrefix.ingot, material, 1)
-
-			event.recipes.gtceu.macerator(`tfg:macerate_${material.getName()}_bell`)
-				.itemInputs(bellStack)
-				.itemOutputs(materialDustStack)
-				.duration(material.getMass() * 5)
-				.category(GTRecipeCategories.MACERATOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.LV])
-
-			event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_bell`)
-				.itemInputs(bellStack)
-				.itemOutputs(materialIngotStack)
-				.duration(material.getMass() * 5)
-				.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.extractor(`tfg:extract_${material.getName()}_bell`)
-				.itemInputs(bellStack)
-				.outputFluids(Fluid.of(material.getFluid(), 144))
-				.duration(material.getMass() * 5)
-				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.alloy_smelter(`tfg:cast_${material.getName()}_bell`)
-				.itemInputs(materialIngotStack)
-				.notConsumable('tfg:bell_casting_mold')
-				.itemOutputs(bellStack)
-				.duration(material.getMass() * 5)
-				.category(GTRecipeCategories.INGOT_MOLDING)
-				.EUt(GTValues.VA[GTValues.ULV])
-
-			event.recipes.gtceu.fluid_solidifier(`tfg:solidify_${material.getName()}_bell`)
-				.inputFluids(Fluid.of(material.getFluid(), 144))
-				.notConsumable('tfg:bell_casting_mold')
-				.itemOutputs(bellStack)
-				.duration(material.getMass() * 5)
-				.EUt(GTValues.VA[GTValues.ULV])
-		}
-
-		if (barsStack != null) {
-			event.stonecutting(barsStack, ChemicalHelper.get(TagPrefix.ingot, material, 1))
-				.id(`${material.getName()}_ingot_to_bars`)
-		}
-
-		// Indicators
-		if (oreProperty != null) {
+			
+			// Indicators
 			event.replaceInput({ id: `gtceu:shaped/${material.getName()}_surface_indicator`},
 				'minecraft:gravel', '#tfc:rock/gravel')
 		}
