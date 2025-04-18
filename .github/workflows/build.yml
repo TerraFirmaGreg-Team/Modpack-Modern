@@ -167,11 +167,10 @@ jobs:
         run: |
           if [ ${{ steps.check_tag.outputs.exists }} ]; then
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
-          else
-          if [ ${{ steps.changelog.outcome }} == 'failure' ]; then
-            echo "status=Unreleased" >> $GITHUB_OUTPUT
+              echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
             echo "status=${{ steps.changelog.outputs.status }}" >> $GITHUB_OUTPUT
+            echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
           fi
 
       - name: 📄 Format diff
