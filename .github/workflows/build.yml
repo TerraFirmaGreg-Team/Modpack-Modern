@@ -330,7 +330,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: env.RELEASE_ON_GITHUB != 'true' && github.branch == 'main'
+    if: github.env.RELEASE_ON_GITHUB != 'true' && github.branch == 'main'
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -399,7 +399,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: env.RELEASE_ON_CURSEFORGE != 'true' && github.branch == 'main'
+    if: github.env.RELEASE_ON_CURSEFORGE != 'true' && github.branch == 'main'
     outputs:
       id: ${{ steps.release.outputs.id }}
 
@@ -449,7 +449,7 @@ jobs:
       name: 🚀 Release to Modrinth
       needs: [info, build-modpack, build-server, release-github]
       runs-on: ubuntu-latest
-      if: env.RELEASE_ON_MODRINTH != 'true' && github.branch == 'main'
+      if: github.env.RELEASE_ON_MODRINTH != 'true' && github.branch == 'main'
       outputs:
         id: ${{ steps.release.outputs.id }}
 
