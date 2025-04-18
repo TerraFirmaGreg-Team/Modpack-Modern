@@ -83,7 +83,7 @@ jobs:
         
       - name: 📁 Check and copy pakku-lock.json from previous tag
         id: check_copy_lock
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_pakku_lock_prev.outputs.file_found
         shell: bash
         run: |
           git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
@@ -95,7 +95,7 @@ jobs:
         
       - name: 📦 Download pakku.jar
         id: download_pakku
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_pakku_lock_prev.outputs.file_found
         shell: bash
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
@@ -103,7 +103,7 @@ jobs:
         
       - name: 🔄 Run pakku diff
         id: pakku_diff
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_pakku_lock_prev.outputs.file_found
         shell: bash
         run: |
           java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
@@ -115,7 +115,7 @@ jobs:
         
       - name: 📝 Read PROJECTS_DIFF.md to variable
         id: read_diff
-        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        if: steps.check_pakku_lock_prev.outputs.file_found
         shell: bash
         run: |
           echo "📝 Reading PROJECTS_DIFF.md to variable..."
@@ -146,26 +146,29 @@ jobs:
         with:
           file_path: "pakku-lock.json"
           prop_path: "mc_versions"
+
+      - name: 🔍 Check if tag exists
+        uses: mukunku/tag-exists-action@v1.6.0
+        id: check_tag
+        with:
+          tag: ${{ steps.project_version.outputs.value }}
+
+      - name: 📝 Determine Version
+        id: determine_version
+        shell: bash
+        run: |
+          if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
+            echo "version=unreleased" >> $GITHUB_OUTPUT
+          else
+            echo "version=${{ steps.project_version.outputs.value }}" >> $GITHUB_OUTPUT
+          fi
         
       - name: 📄 Changelog Parser
         id: changelog
         uses: coditory/changelog-parser@v1.0.2
         with:
           path: CHANGELOG.md
-        
-      - name: 📈 Upload Diff
-        id: upload_diff
-        if: ${{ steps.read_diff.outputs.diff != '' }} && steps.check_pakku_lock_prev.outputs.file_found == 'true'
-        uses: actions/upload-artifact@v4.6.2
-        with:
-          name: Mods-diff
-          path: PROJECTS_DIFF.md
-        
-      - name: 🔍 Check if tag exists
-        uses: mukunku/tag-exists-action@v1.6.0
-        id: check_tag
-        with:
-          tag: ${{ steps.project_version.outputs.value }}
+          version: ${{ steps.determine_version.outputs.version }}
         
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
@@ -173,7 +176,7 @@ jobs:
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**: ${{ steps.project_version.outputs.value }}
-            📃 **Release Type**: ${{ env.RELEASE_TYPE }}
+            📃 **Release Type**: ${{ steps.changelog.outputs.version }}
             📃 **Game Version**: ${{ env.MINECRAFT_VERSION }}
 
             ${{ steps.changelog.outputs.description }}
