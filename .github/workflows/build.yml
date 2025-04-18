@@ -158,7 +158,7 @@ jobs:
         shell: bash
         run: |
           if [ ${{ steps.check_tag.outputs.exists }} = true ]; then
-            echo "version=Unreleased" >> $GITHUB_OUTPUT
+            echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.project_version.outputs.value }}" >> $GITHUB_OUTPUT
           fi
@@ -171,7 +171,7 @@ jobs:
           version: ${{ steps.determine_version.outputs.version }}
         continue-on-error: true
 
-      - name: Format diff
+      - name: 📄 Format diff
         id: format_diff
         if: ${{ steps.read_diff.outputs.diff != '' }}
         uses: roamingowl/template-output-with-eta@v1.12.0
@@ -389,7 +389,7 @@ jobs:
           COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Format diff
+      - name: 📄 Format diff
         id: format_diff
         if: ${{ needs.info.outputs.diff != '' }}
         uses: roamingowl/template-output-with-eta@v1.12.0
