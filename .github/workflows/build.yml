@@ -145,7 +145,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ env.DEV_ENVIRONMENT }} || steps.pakku_info.outputs.version ]; then
+          if [ ${{ env.DEV_ENVIRONMENT }} ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
