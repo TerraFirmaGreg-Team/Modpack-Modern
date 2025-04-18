@@ -191,7 +191,7 @@ jobs:
 
       - name: Minecraft Version
         id: mc_versions
-        run: echo "${{ steps.project_info.outputs.mc_versions.value[0] }}" >> $GITHUB_OUTPUT
+        run: echo "${{ steps.project_info.outputs.mc_versions[0] }}" >> $GITHUB_OUTPUT
 
       - name: 📄 Format diff
         id: format_diff
