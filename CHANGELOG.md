@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.9.0] - 18.04.2025
+## [Unreleased] - 18.04.2025
 ### Warning for upgrading your world
 - This is a major update that changes many things! 
 - It is safest to create a new instance and copy your world across, instead of trying to update your world in-place. 
@@ -24,7 +24,6 @@
 - Planes! Snake-free.
 - Many mods have been updated and include new features. Check out the mods list!
 - Many other bug fixes, QoL features, mod integration, and recipes tweaks. too many to list!
-
 
 ## [0.7.19] - 25.01.2025
 ### Changes
