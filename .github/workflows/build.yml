@@ -1,5 +1,5 @@
 name: Project Build
-run-name: "Project Build #${{ github.run_number }}"
+run-name: "📦 Project Build #${{ github.run_number }}"
 on:
   push:
     branches:
@@ -196,13 +196,11 @@ jobs:
       - name: 📝 Generate Github Summary
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
-          variables: >-
-            MINECRAFT_VERSION="${{ steps.minecraft_version.outputs.value }}"
           template: |
             📃 **Name**: ${{ steps.project_name.outputs.value }}
             📃 **Release**:  `${{ steps.check_changelog.outputs.version }}`
             📃 **Release Type**: `${{ steps.check_changelog.outputs.status }}`
-            📃 **Game Version**: `$MINECRAFT_VERSION`
+            📃 **Game Version**: `${{ steps.minecraft_version.outputs.value.json }}`
 
             ${{ steps.changelog.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
