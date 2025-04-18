@@ -25,7 +25,8 @@ jobs:
       project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
-      release_exists: ${{ steps.check_tag.outputs.exists && github.env.DEV_ENVIRONMENT }}
+      exists: ${{ steps.check_tag.outputs.exists }}
+      make_release: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}
     
     steps:
       - name: Checkout
@@ -191,6 +192,7 @@ jobs:
 
             📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
             📃 **Tag Exists**: `${{ steps.check_tag.outputs.exists }}`
+            📃 **Make Release**: `${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}`
             
 
             ${{ steps.changelog.outputs.description }}
@@ -348,7 +350,7 @@ jobs:
     name: 🚀 Release to GitHub
     needs: [info, build-modpack, build-server, build-multimc]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.release_exists == 'false'}}
+    if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
       url: ${{ steps.release.outputs.url }}
 
@@ -402,6 +404,7 @@ jobs:
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}
+          target_commitish: ${{ github.ref_name }}
           body: |
             ${{ needs.info.outputs.changelog }}
             ${{ steps.format_diff.outputs.text }}
@@ -417,7 +420,7 @@ jobs:
     name: 🚀 Release to CurseForge
     needs: [info, build-modpack, build-server, release-github]
     runs-on: ubuntu-latest
-    if: ${{ needs.info.outputs.release_exists == 'false'}}
+    if: ${{ needs.info.outputs.make_release == 'true' }}
     outputs:
       id: ${{ steps.release.outputs.id }}
 
