@@ -85,20 +85,31 @@ function registerTFCDirtRecipes(event) {
 
 		// Кирпич -> Блок кирпичей
 		event.shaped(`tfc:mud_bricks/${mud}`, [
-			'ABA',
-			'BAB',
-			'ABA'
+			'AA',
+			'AA'
 		], {
-			A: `tfc:mud_brick/${mud}`,
-			B: '#tfc:mortar'
+			A: `tfc:mud_brick/${mud}`
 		}).id(`tfc:crafting/soil/${mud}_mud_bricks`)
 
-		event.recipes.gtceu.assembler(`mud_bricks_${mud}`)
-			.itemInputs(`5x tfc:mud_brick/${mud}`)
-			.inputFluids(Fluid.of('gtceu:concrete', 72))
-			.itemOutputs(`4x tfc:mud_bricks/${mud}`)
-			.duration(50)
-			.EUt(2)
+		event.shaped(`tfc:mud_bricks/${mud}_stairs`, [
+			'A ',
+			'AA'
+		], {
+			A: `tfc:mud_brick/${mud}`
+		}).id(`tfc:crafting/soil/${mud}_mud_bricks_stairs`)
+
+		event.shaped(`tfc:mud_bricks/${mud}_slab`, [
+			'AA'
+		], {
+			A: `tfc:mud_brick/${mud}`
+		}).id(`tfc:crafting/soil/${mud}_mud_bricks_slab`)
+
+		event.shaped(`2x tfc:mud_bricks/${mud}_wall`, [
+			'AAA',
+			'AAA'
+		], {
+			A: `tfc:mud_brick/${mud}`
+		}).id(`tfc:crafting/soil/${mud}_mud_bricks_wall`)
 
 		// Блок кирпичей -> Ступени
 		event.remove({ id: `tfc:crafting/soil/${mud}_mud_bricks_stairs` })
@@ -117,7 +128,6 @@ function registerTFCDirtRecipes(event) {
 
 		event.stonecutting(`tfc:mud_bricks/${mud}_wall`, `tfc:mud_bricks/${mud}`)
 			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_wall`)
-
 	})
 
 	//#endregion
