@@ -2084,18 +2084,33 @@
 			description: ["{quests.stone_age.crush_crushed_ore.desc}"]
 			id: "050444CE0EA04FDF"
 			subtitle: "{quests.stone_age.crush_crushed_ore.subtitle}"
-			tasks: [{
-				id: "3138448022A39769"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:impure_dusts)"
+			tasks: [
+				{
+					id: "3138448022A39769"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:impure_dusts)"
+						}
 					}
+					title: "Any #forge:impure_dusts"
+					type: "item"
 				}
-				title: "Any #forge:impure_dusts"
-				type: "item"
-			}]
+				{
+					disable_toast: true
+					id: "6D4743145560A61F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
+						}
+					}
+					title: "Any #forge:tools/hammers"
+					type: "item"
+				}
+			]
 			title: "{quests.stone_age.crush_crushed_ore.title}"
 			x: 17.0d
 			y: 11.0d
