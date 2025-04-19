@@ -1354,17 +1354,9 @@
 					type: "item"
 				}
 				{
-					count: 16L
-					id: "3C41311574D24CBC"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
-						}
-					}
-					optional_task: true
-					title: "{quests.tasktype.item.any} #minecraft:planks"
+					count: 32L
+					id: "58388551672A8588"
+					item: { Count: 32, id: "minecraft:ladder" }
 					type: "item"
 				}
 			]
@@ -1598,6 +1590,7 @@
 				{
 					id: "625810E1A0D28993"
 					item: "gtceu:wood_crate"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1609,6 +1602,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
 						}
 					}
+					optional_task: true
 					title: "{quests.tasktype.item.any} #tfcastikorcarts:supply_cart"
 					type: "item"
 				}
