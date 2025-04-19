@@ -137,6 +137,8 @@ const registerTFCRecipes = (event) => {
 
 	event.shapeless('tfc:crucible', ['tfc:crucible']).id('tfg:empty_crucible')
 
+	event.shapeless('2x minecraft:stick', ['#minecraft:saplings', '#forge:tools/knives']).id('tfg:strip_saplings')
+
 	// Доменная печь
 	event.shaped('tfc:blast_furnace', [
 		'AAA',
