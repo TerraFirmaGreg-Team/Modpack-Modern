@@ -2221,67 +2221,6 @@
             ]
         },
         {
-            "pakku_id": "M4PNTNZvxOW9zDWV",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "chalk",
-                "modrinth": "chalk-mod"
-            },
-            "name": {
-                "curseforge": "Chalk",
-                "modrinth": "Chalk"
-            },
-            "id": {
-                "curseforge": "533748",
-                "modrinth": "YWGP4Y1d"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "chalk-1.20.1-1.6.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/YWGP4Y1d/versions/HA8yrJaB/chalk-1.20.1-1.6.5.jar",
-                    "id": "HA8yrJaB",
-                    "parent_id": "YWGP4Y1d",
-                    "hashes": {
-                        "sha512": "49220d73636378eae9f55d3dbeedaddcc2afa8949dc656d1ea2c64625aeda210bee3d28e7f704d0ec652020173025235a1d6fd0ef94797409c08defac622fe57",
-                        "sha1": "e4dee75dfe5f8ca8ec21f89ff877d3564bd5c9df"
-                    },
-                    "required_dependencies": [],
-                    "size": 321480,
-                    "date_published": "2024-12-10T13:00:12.908950Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "chalk-1.20.1-1.6.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5979/807/chalk-1.20.1-1.6.5.jar",
-                    "id": "5979807",
-                    "parent_id": "533748",
-                    "hashes": {
-                        "sha1": "e4dee75dfe5f8ca8ec21f89ff877d3564bd5c9df",
-                        "md5": "cd1b8ce2f43d8dd29935778f3575d4f0"
-                    },
-                    "required_dependencies": [],
-                    "size": 321480,
-                    "date_published": "2024-12-10T12:59:38.420Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "uNx0hefaZ7i6Gtgo",
             "type": "MOD",
             "side": "CLIENT",

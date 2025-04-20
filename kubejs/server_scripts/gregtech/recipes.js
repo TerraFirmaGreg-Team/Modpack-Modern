@@ -218,6 +218,20 @@ const registerGTCEURecipes = (event) => {
 		.duration(128)
 		.EUt(3)
 
+	event.recipes.gtceu.brewery('biomass_from_leaves')
+		.itemInputs('#minecraft:leaves')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_fallen_leaves')
+		.itemInputs('#tfc:fallen_leaves')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
 	//#endregion
 
 	//#region Выход: Рыбье масло

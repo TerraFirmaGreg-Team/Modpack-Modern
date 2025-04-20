@@ -817,12 +817,11 @@ const registerMinecraftRecipes = (event) => {
 	//#region Glowstone
 
 	event.recipes.gtceu.mixer('gtceu:lv_glowstone')
-		.inputFluids(Fluid.of('gtceu:creosote', 1000))
-		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust', 'gtceu:coal_dust')
-		.itemOutputs('minecraft:glowstone_dust')
+		.itemInputs('gtceu:gold_dust', 'minecraft:redstone', 'gtceu:sulfur_dust')
+		.itemOutputs('2x minecraft:glowstone_dust')
 		.circuit(32)
 		.duration(1200)
-		.EUt(32)
+		.EUt(30)
 
 	//#endregion
 

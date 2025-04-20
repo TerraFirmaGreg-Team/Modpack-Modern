@@ -44,10 +44,10 @@ const registerCreateAdditionsRecipes = (event) => {
 
 	// Батарейный блок
 	event.recipes.gtceu.assembler('create_additions/battery')
-		.itemInputs('gtceu:bronze_frame', '6x #forge:plates/bronze', '24x #forge:screws/bronze', '#gtceu:batteries/hv')
+		.itemInputs('gtceu:bronze_frame', '4x #forge:plates/brass', '8x #forge:screws/bronze', '#gtceu:batteries/hv')
 		.itemOutputs('createaddition:modular_accumulator')
 		.duration(400)
-		.EUt(512)
+		.EUt(30)
 
 	// Колючая проволка
 	event.shapeless('4x createaddition:barbed_wire', [

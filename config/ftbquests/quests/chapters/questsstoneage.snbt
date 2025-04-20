@@ -89,12 +89,10 @@
 			subtitle: "{quests.stone_age.find_potable_water.subtitle}"
 			tasks: [{
 				icon: "minecraft:water_bucket"
-				id: "73E3594A5481E63F"
-				observe_type: 0
-				timer: 0L
-				title: "{quests.tasktype.lookat} {quests.stone_age.find_potable_water.task}"
-				to_observe: "minecraft:water"
-				type: "observation"
+				id: "3601D2311BB1383F"
+				stage: "tfg.stages.quests.drank_fresh_water_with_hand"
+				title: "{quests.stone_age.find_potable_water.task}"
+				type: "gamestage"
 			}]
 			title: "{quests.stone_age.find_potable_water.title}"
 			x: 4.5d
@@ -1356,17 +1354,9 @@
 					type: "item"
 				}
 				{
-					count: 16L
-					id: "3C41311574D24CBC"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
-						}
-					}
-					optional_task: true
-					title: "{quests.tasktype.item.any} #minecraft:planks"
+					count: 32L
+					id: "58388551672A8588"
+					item: { Count: 32, id: "minecraft:ladder" }
 					type: "item"
 				}
 			]
@@ -1600,6 +1590,7 @@
 				{
 					id: "625810E1A0D28993"
 					item: "gtceu:wood_crate"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1611,6 +1602,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfcastikorcarts:supply_cart)"
 						}
 					}
+					optional_task: true
 					title: "{quests.tasktype.item.any} #tfcastikorcarts:supply_cart"
 					type: "item"
 				}
@@ -2069,6 +2061,16 @@
 		{
 			dependencies: ["5E186CD5E83BFDF0"]
 			description: ["{quests.stone_age.crush_ore.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:crushed_copper_ore"
+			}
 			id: "2621BF784BEB7033"
 			subtitle: "{quests.stone_age.crush_ore.subtitle}"
 			tasks: [{
@@ -2090,20 +2092,45 @@
 		{
 			dependencies: ["2621BF784BEB7033"]
 			description: ["{quests.stone_age.crush_crushed_ore.desc}"]
-			id: "050444CE0EA04FDF"
-			subtitle: "{quests.stone_age.crush_crushed_ore.subtitle}"
-			tasks: [{
-				id: "3138448022A39769"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:impure_dusts)"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
 					}
 				}
-				title: "Any #forge:impure_dusts"
-				type: "item"
-			}]
+				id: "gtceu:impure_copper_dust"
+			}
+			id: "050444CE0EA04FDF"
+			subtitle: "{quests.stone_age.crush_crushed_ore.subtitle}"
+			tasks: [
+				{
+					id: "3138448022A39769"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:impure_dusts)"
+						}
+					}
+					title: "Any #forge:impure_dusts"
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "6D4743145560A61F"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
+						}
+					}
+					title: "Any #forge:tools/hammers"
+					type: "item"
+				}
+			]
 			title: "{quests.stone_age.crush_crushed_ore.title}"
 			x: 17.0d
 			y: 11.0d
@@ -2111,6 +2138,16 @@
 		{
 			dependencies: ["050444CE0EA04FDF"]
 			description: ["{quests.stone_age.clean_dust.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:copper_dust"
+			}
 			id: "3462FD6E24F9BE0B"
 			subtitle: "{quests.stone_age.clean_dust.subtitle}"
 			tasks: [{
