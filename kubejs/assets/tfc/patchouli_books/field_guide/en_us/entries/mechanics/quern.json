@@ -44,28 +44,26 @@
     },
     {
       "type": "tfc:quern_recipe",
-      "recipe": "tfg:quern/sulfur_powder",
-      "text": "The quern is used to make various $(thing)Powders$() from ores, like $(thing)Sulfur$()."
+      "title": "Crushed Ore",
+      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
+      "text": "$(l:tfg_ores/ore_basics#processing)Ores$() can be crushed to obtain more metal."
     },
     {
       "type": "tfc:quern_recipe",
+      "title": "Powders",
+      "recipe": "tfg:quern/sulfur_powder",
+      "text": "The quern is used to make various $(thing)Powders$() from dust, like $(thing)Sulfur$(). $(thing)Gems$() can also be ground into powder."
+    },
+    {
+      "type": "tfc:quern_recipe",
+      "title": "Dyes",
       "recipe": "tfc:quern/red_dye",
       "text": "$(l:mechanics/dye)Dye$() can be obtained from various flowers."
     },
     {
-      "type": "tfc:quern_recipe",
-      "recipe": "tfg:quern/emerald_powder",
-      "text": "$(thing)Gems$() can also be ground into powder."
-    },
-    {
-      "type": "tfc:quern_recipe",
-      "recipe": "tfc:food/barley_flour",
-      "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)grain$(), which can further be ground into $(thing)Flour$()."
-    },
-    {
-      "type": "tfc:quern_recipe",
-      "recipe": "tfc:quern/fluxstone",
-      "text": "$(l:mechanics/flux)Flux$() is also obtainable from the quern or crafted with a hammer."
+      "type": "patchouli:spotlight",
+      "item": { "tag": "tfc:foods/flour" },
+      "text": "$(thing)Crops$() can be processed with a knife or quern to acquire $(thing)Grain$(), which can further be ground into $(thing)Flour$()."
     }
   ],
   "read_by_default": true

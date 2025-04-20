@@ -7,7 +7,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You will need a $(thing)Pickaxe$() or $(thing)Mining Hammer$() to mine ores.$(br)A regular $(thing)Hammer$() can also break stone type blocks quickly, but will not result in dropped ores."
+      "text": "You will need a $(thing)pickaxe$() or $(thing)mining hammer$() to mine ores.$(br2)A regular $(thing)hammer$() can also break stone type blocks quickly, but will not result in dropped ores. It can still be useful for $(l:getting_started/primitive_anvils#raw_rock)extracting$() stone blocks however."
     },
     {
       "type": "patchouli:crafting",
@@ -17,13 +17,13 @@
     {
       "type": "patchouli:spotlight",
       "title": "Pickaxe",
-      "text": "Breaking an ore block with a pickaxe will yield $(thing)raw ores$() (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)Coal$().",
+      "text": "Breaking an ore block with a pickaxe will yield $(thing)raw ores$() (poor, normal, or rich), as well as some stone dust. These are not worth much mB each and you will need multiple to make a single ingot, however some other minerals are only useable in this state, such as $(thing)coal$().",
       "item": { "tag": "minecraft:pickaxes" }
     },
     {
       "type": "patchouli:spotlight",
       "title": "Mining Hammer",
-      "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for clearing stone after you've hammered the ores out!$(br2)Holding $(thing)Sneak$() will only break a single block at a time.",
+      "text": "These are basically a pickaxe with a 3x3 range, and will yield $(thing)raw ores$() as well. Also good for clearing stone after you've hammered the ores out!$(br2)Holding $(thing)sneak$() will only break a single block at a time.",
       "item": { "tag": "forge:tools/mining_hammers" }
     },
     {
@@ -34,21 +34,10 @@
       "text": "Processing ores will result in much greater amounts of usable metal. The first step is to use a $(l:mechanics/quern)Quern$() to crush the raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
     },
     {
-      "type": "tfc:quern_recipe",
-      "title": "Basic Ore Pocessing",
-      "anchor": "processing",
-      "recipe": "tfg:quern/copper_crushed_ore_from_normal_raw_ore",
-      "text": "Processing ores will result in much greater amounts of usable metal. The first step is to use a $(l:mechanics/quern)Quern$() to crush the raw ore. This step can be automated in the future with improved machines such as the $(thing)Millstone$(), $(thing)Crushing Wheel$(), $(thing)Macerator$(), and $(thing)Forge Hammer$()."
-    },
-    {
       "type": "patchouli:crafting",
+      "title": "Purifying dust",
       "recipe": "gtceu:shapeless/crushed_ore_to_dust_copper",
-      "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$().$"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "tfg:ae_transform/copper_dust_from_impure",
-      "text": "To further purify it, throw the dust into some water and wait a few seconds, or right-click a $(thing)Cauldron$() filled with water."
+      "text": "To make your crushed ores melt into even more mB, first place them in a crafting grid along with a $(thing)Hammer$(). This will produce $(thing)Impure Dust$(). To purify the dust, throw it in water or $(item)$(k:key.use)$() a $(thing)Cauldron$() filled with water."
     }
   ]
 }

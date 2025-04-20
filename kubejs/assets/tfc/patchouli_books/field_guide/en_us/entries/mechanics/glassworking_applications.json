@@ -44,7 +44,7 @@
       "type": "patchouli:crafting",
       "title": "Glassworking Blocks",
       "recipe": "tfc:crafting/white_kaolin_clay",
-      "recipe2": "tfg:item_application/brass_plated_block"
+      "text": "$(thing)Brass plated blocks$() can be created by holding a $(thing)brass plate$() and $(item)$(k:key.use)$() on any $(thing)stone brick$()."
     },
     {
       "type": "patchouli:text",
@@ -197,7 +197,7 @@
     {
       "type": "tfc:glassworking_recipe",
       "recipe": "tfc:glassworking/lens",
-      "text": "The $(thing)Lens$() is used for crafting the spyglass, compasses, and other things."
+      "text": "The $(thing)lens$() is used for crafting the $(thing)spyglass$(), $(thing)compass$(), and other things."
     }
   ],
   "read_by_default": true,

@@ -68,17 +68,17 @@
     {
       "type": "patchouli:crafting",
       "recipe": "gtceu:shaped/pickaxe_copper",
-      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila!"
+      "text": "You are now able to craft your first pickaxe! Find enough copper to make a pickaxe head, fire a pickaxe mold and melt the ore using a pit kiln, then cast a head. Slap it on a stick, and voila! You can now dig for $(l:tfg_ores/index)ore$()."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "gtceu:shaped/saw_copper",
-      "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and lumber, which can further be refined into planks, the crafting bench, and chests. It is also needed to make a $(l:firmaciv/canoe)canoe$()."
+      "type": "patchouli:spotlight",
+      "item": "tfc:metal/chisel/copper",
+      "text": "A couple other important metal tools are available for progression as well. The $(l:mechanics/chisel)Chisel$() is useful for working with stone blocks for building and other recipes."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "tfc:crafting/metal/chisel/copper",
-      "text": "The $(l:mechanics/chisel)Chisel$() is useful for working with stone blocks for building and other recipes."
+      "type": "patchouli:spotlight",
+      "item": "gtceu:copper_saw",
+      "text": "The saw allows you turn wood logs into $(l:mechanics/support_beams)support beams$() and $(thing)lumber$(), which can further be crafted into planks, the crafting bench, barrels, and chests, among other things. It is also useful to make a $(l:firmaciv/canoe)canoe$()."
     }
   ],
   "read_by_default": true,

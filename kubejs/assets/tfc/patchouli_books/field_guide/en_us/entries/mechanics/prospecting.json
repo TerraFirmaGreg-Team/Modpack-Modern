@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "You remembered where you picked up those $(l:getting_started/finding_ores)Small Metal Nuggets$(), right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:tfg_ores/index)Ores and Minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
+      "text": "You remembered where you picked up those $(l:getting_started/finding_ores)small metal nuggets$(), right? Finding additional ores may require extensive exploration and mining. You should become very familiar with $(l:tfg_ores/index)ores and minerals$(). If you need a specific resource, you must find the rock type it spawns in either under your feet or across the world."
     },
     {
       "type": "patchouli:text",
@@ -18,26 +18,26 @@
       "item": "tfc:metal/propick/copper",
       "title": "Prospector's Pick",
       "link_recipes": false,
-      "text": "If you're looking for metal ores or mineral veins (which have no nuggets), and you can't find the vein by guessing, it's time to pull out the $(thing)Prospector's Pick$(). It searches the 25x25x25 area centered on the block clicked, and reports to the action bar the amount and type of ore located."
+      "text": "If you're looking for metal ores or mineral veins (which have no nuggets), and you can't find the vein by guessing, it's time to pull out the $(thing)prospector's pick$(). It searches the 25x25x25 area centered on the block clicked, and reports to the action bar the amount and type of ore located."
     },
     {
       "type": "tfc:knapping_recipe",
       "recipe": "tfc:clay_knapping/propick_head_mold",
-      "text": "To make a Prospector's Pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above."
+      "text": "To make a prospector's pick, you can $(l:getting_started/pottery)knapp$() an unfired mold out of clay as shown above."
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/propick_head_mold",
-      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(thing)Propick Head Mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
+      "text": "Once the mold has been $(l:getting_started/pottery)knapped$(), it needs to be $(l:mechanics/heating)fired$() to create a $(thing)propick head mold.$()$(br2)To create the tool head, $(l:getting_started/finding_ores#casting)cast$() liquid metal into the mold."
     },
     {
       "type": "tfc:anvil_recipe",
       "recipe": "tfc:anvil/copper_propick_head",
-      "text": "A Prospector's Pick Head can also be $(l:mechanics/anvils#working)smithed$() out of an $(thing)ingot$() of any tool metal on an $(l:mechanics/anvils)Anvil$().$(br2)The Prospector's Pick is then created by crafting the tool head with a stick."
+      "text": "A prospector's pick head can also be $(l:mechanics/anvils#working)smithed$() out of an $(thing)ingot$() of any tool metal on an $(l:mechanics/anvils)Anvil$().$(br2)The prospector's pick is then created by crafting the tool head with a stick."
     },
     {
       "type": "patchouli:text",
-      "text": "The Prospector's Pick will never report finding something when nothing is actually there. However, it may incorrectly say nothing is there when a vein is in range. Higher tier tools will reduce or eliminate these false negatives.$(br2)Prospector's Picks at the same tier give identical results when used on the same block unless ores were removed.$(br2)If the Prospector's Pick finds multiple ores nearby, it will only report one."
+      "text": "The prospector's pick will never report finding something when nothing is actually there. However, it may incorrectly say nothing is there when a vein is in range. Higher tier tools will reduce or eliminate these false negatives.$(br2)Prospector's picks at the same tier give identical results when used on the same block unless ores were removed.$(br2)If the prospector's pick finds multiple ores nearby, it will only report one."
     },
     {
       "type": "patchouli:text",

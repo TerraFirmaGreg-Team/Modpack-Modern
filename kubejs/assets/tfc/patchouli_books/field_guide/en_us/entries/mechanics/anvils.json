@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)Anvils can be useful for both $(l:mechanics/anvils#working)Working$(), which is used to form one piece of metal into another, or $(l:getting_started/primitive_anvils#welding)Welding$(), which is used to fuse two metal items into one solid piece."
+      "text": "Anvils are an important tool required for metalworking, as they allow you to work and weld metal ingots into various different forms.$(br2)$(l:mechanics/anvils#working)Working$() is done to form one piece of metal into another, and $(l:getting_started/primitive_anvils#welding)welding$(), is used to fuse two metal items into one solid piece."
     },
     {
       "type": "patchouli:multiblock",
@@ -18,12 +18,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/metal/anvil/copper",
-      "text": "Anvils can be crafted with $(thing)Double Ingots$() of their respective metal. For your first anvil, you must $(l:getting_started/primitive_anvils#welding)weld$() double ingots first on a $(l:getting_started/primitive_anvils)Stone Anvil$()."
+      "text": "Anvils can be crafted with $(thing)double ingots$() of their respective metal. For your first anvil, you must first $(l:getting_started/primitive_anvils#welding)weld$() double ingots on a $(l:getting_started/primitive_anvils)stone anvil$()."
     },
     {
       "type": "patchouli:text",
       "anchor": "tiers",
-      "text": "Anvils each have a $(thing)Tier$(), which defines what types of material they can work and weld. An anvil can work metals of its current tier, and it can weld metals that are one tier higher.$(br)$(li)$(bold)Tier 0$(): Stone Anvils$(li)$(bold)Tier I$(): Copper$(li)$(bold)Tier II$(): Bismuth Bronze, Black Bronze, Bronze$(li)$(bold)Tier III$(): Wrought Iron$(li)$(bold)Tier IV$(): Steel$(li)$(bold)Tier V$(): Black Steel$(li)$(bold)Tier VI$(): Red Steel, Blue Steel"
+      "text": "Anvils each have a $(thing)tier$(), which defines what types of material they can work and weld. An anvil can work metals of its current tier, and it can weld metals that are one tier higher.$(br)$(li)$(bold)Tier 0$(): Stone Anvils$(li)$(bold)Tier I$(): Copper$(li)$(bold)Tier II$(): Bismuth Bronze, Black Bronze, Bronze$(li)$(bold)Tier III$(): Wrought Iron$(li)$(bold)Tier IV$(): Steel$(li)$(bold)Tier V$(): Black Steel$(li)$(bold)Tier VI$(): Red Steel, Blue Steel"
     },
     {
       "type": "patchouli:text",
@@ -39,7 +39,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "You will then need to select the $(thing)Plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan - the scroll will show the item you are working to create, and the $(thing)Rules$() and $(thing)Target$() will now be populated."
+      "text": "You will then need to select the $(thing)plan$(), which chooses which item you want to create. $(item)$(k:key.attack)$() on the the scroll button, and then pick one of the items to create. The anvil interface will return, but now you will have selected a plan - the scroll will show the item you are working to create, and the $(thing)rules$() and $(thing)target$() will now be populated."
     },
     {
       "type": "patchouli:image",

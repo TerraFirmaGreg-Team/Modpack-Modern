@@ -1,6 +1,6 @@
 {
   "name": "Hazardous Materials",
-  "icon": "gtceu:hazmat_headpiece",
+  "icon": "gtceu:raw_plutonium",
   "category": "tfc:tfg_ores",
   "priority": true,
   "sortnum": 1,
@@ -8,7 +8,8 @@
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "gtceu:uranium_235_nugget",
+      "title": "Hazardous Materials",
+      "item": "gtceu:raw_plutonium",
       "text": "Some ores and dusts are hazardous and can cause negative effects or even kill you if they are carried in your inventory.$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and $(thing)hazardous material suits$() later on can be used to conter these effects"
     },
     { "type": "patchouli:crafting", "title": "Face Mask", "recipe": "gtceu:shaped/face_mask" },
@@ -30,14 +31,14 @@
       "text": "Mittens are then soaked in $(thing)Vinegar$(), a mixture of fruit and alcohol."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "tfg:vat/latex_soaked_gloves",
+      "type": "patchouli:spotlight",
+      "item": "tfg:latex_soaked_gloves",
       "text": "Prepared leather gloves are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), a mixture of latex and wood ash."
     },
     {
-      "type": "patchouli:crafting",
-      "recipe": "tfg:oven/rubber_gloves",
-      "text": "Finally, the latex-soaked gloves are cured in an $(l:firmalife/oven)Oven$()."
+      "type": "patchouli:spotlight",
+      "item": "gtceu:rubber_gloves",
+      "text": "Finally, the latex-soaked gloves are heated in an $(l:firmalife/oven)Oven$()."
     },
     {
       "type": "patchouli:spotlight",
