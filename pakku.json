@@ -190,23 +190,35 @@
         "dynamiclights-reforged": {
             "side": "CLIENT"
         },
-        "resourceful-config": {
+        "rainboows": {
             "side": "CLIENT"
+        },
+        "resourceful-config": {
+            "side": "BOTH"
         },
         "resourceful-lib": {
-            "side": "CLIENT"
+            "side": "BOTH"
         },
         "enderman-overhaul": {
-            "side": "CLIENT"
+            "side": "BOTH"
         },
         "primitive-creatures": {
-            "side": "CLIENT"
+            "side": "BOTH"
         },
         "geckolib": {
-            "side": "CLIENT"
+            "side": "BOTH"
         },
         "detected-setblock-be-gone": {
             "side": "CLIENT"
+        },
+        "tfcgenviewer": {
+            "side": "BOTH"
+        },
+        "tfc-hot-or-not": {
+            "side": "BOTH"
+        },
+        "particular-reforged": {
+            "side": "BOTH"
         }
     }
 }

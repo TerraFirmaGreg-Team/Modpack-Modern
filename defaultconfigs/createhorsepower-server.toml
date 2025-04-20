@@ -6,13 +6,13 @@
 	creatureRPMRange = 16
 	#How much stress small creatures can produce for the horse crank.
 	#Range: > 1
-	smallCreatureStressRange = 4
+	smallCreatureStressRange = 8
 	#How much stress medium creatures can produce for the horse crank.
 	#Range: > 1
-	mediumCreatureStressRange = 6
+	mediumCreatureStressRange = 12
 	#How much stress large creatures can produce for the horse crank.
 	#Range: > 1
-	largeCreatureStressRange = 8
+	largeCreatureStressRange = 16
 
 #Path Category
 [paths]

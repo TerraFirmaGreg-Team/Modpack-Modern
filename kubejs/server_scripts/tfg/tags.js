@@ -8,6 +8,9 @@ const registerTFGItemTags = (event) => {
 	})
 	event.add('tfg:decorative_vases', 'tfg:decorative_vase')
 	event.add('tfg:decorative_vases/unfired', 'tfg:decorative_vase/unfired')
+	
+	//Knapping
+	event.add('tfc:any_knapping', 'minecraft:flint')
 
 	// #region Paper from wood
 
@@ -24,6 +27,8 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:wax', 'tfg:paraffin_wax')
 	event.add('forge:wax', 'firmalife:beeswax')
 	event.add('forge:wax', 'tfg:conifer_rosin')
+
+	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
 
 	// #endregion
 

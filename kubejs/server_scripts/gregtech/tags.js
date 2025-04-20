@@ -57,6 +57,12 @@ const registerGTCEUItemTags = (event) => {
     {
         event.remove('ae2:p2p_attunements/fluid_p2p_tunnel', `gtceu:${dyeName}_dye_bucket`)
     })
+
+	// Piglin loved
+    event.add('minecraft:piglin_loved', 'gtceu:tiny_pyrite_dust')
+    event.add('minecraft:piglin_loved', 'gtceu:poor_raw_pyrite')
+    event.add('minecraft:piglin_loved', 'gtceu:raw_pyrite')
+    event.add('minecraft:piglin_loved', 'gtceu:rich_raw_pyrite')
 }
 
 const registerGTCEUBlockTags = (event) => {

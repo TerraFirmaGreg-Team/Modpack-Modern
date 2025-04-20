@@ -27,20 +27,6 @@
 			y: 7.5d
 		}
 		{
-			id: "00B33DFF6076A2C0"
-			linked_quest: "7EED0084BA59FED1"
-			x: -13.5d
-			y: 5.5d
-		}
-		{
-			id: "044ADF2296BC1A8F"
-			linked_quest: "6E186F9C57155BFA"
-			shape: "square"
-			size: 1.5d
-			x: -13.5d
-			y: 3.5d
-		}
-		{
 			id: "1F1E7097C015BE33"
 			linked_quest: "48A8E3210B2BAE1C"
 			shape: "octagon"
@@ -1019,54 +1005,6 @@
 			title: "{quests.steam_age.red_alloy.title}"
 			x: -22.5d
 			y: 12.0d
-		}
-		{
-			dependencies: [
-				"183D47F04CAEBFA7"
-				"3D8174C64DDC268B"
-			]
-			description: [
-				"{quests.steam_age.alternator.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.alternator.desc.2}"
-				"{image:tfg:textures/quests/alternator_multiblock.png width:100 height:100 align:center}"
-			]
-			id: "0E57FC7FBFF1CFEB"
-			optional: true
-			shape: "square"
-			size: 1.5d
-			subtitle: "{quests.steam_age.alternator.subtitle}"
-			tasks: [
-				{
-					id: "2A48D5B33BB7C9FE"
-					item: "createaddition:alternator"
-					type: "item"
-				}
-				{
-					id: "0115F13A8C4E6872"
-					item: "gtceu:lv_4a_energy_converter"
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{quests.steam_age.alternator.title}"
-			x: -10.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3D8174C64DDC268B"]
-			description: ["{quests.steam_age.what_next.desc}"]
-			icon: "gtceu:lv_machine_hull"
-			id: "0DAE3D612E70F462"
-			shape: "diamond"
-			subtitle: "{quests.steam_age.what_next.subtitle}"
-			tasks: [{
-				id: "759B03FB27B79731"
-				type: "checkmark"
-			}]
-			title: "{quests.steam_age.what_next.title}"
-			x: -7.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["51CBF7378FFAD514"]

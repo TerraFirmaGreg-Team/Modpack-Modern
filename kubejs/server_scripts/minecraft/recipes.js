@@ -227,6 +227,15 @@ const registerMinecraftRecipes = (event) => {
 		.resultItem('minecraft:sponge')
 		.id('tfg:minecraft/heating/sponge')
 
+	event.recipes.gtceu.chemical_reactor('minecraft:gtceu/chemical_reactor/sponge')
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SodiumBisulfate, 1))
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144), Fluid.of('minecraft:water', 250))
+		.itemOutputs('2x minecraft:sponge')
+		.outputFluids(Fluid.of('gtceu:sodium_persulfate', 35))
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.LV])
+
+
 	//#endregion
 
 	//#region Выход: Тонированное стекло
@@ -865,6 +874,14 @@ const registerMinecraftRecipes = (event) => {
 		.id('tfg:shapeless/lever')
 
 	generateCutterRecipe(event, '#forge:double_plates/wrought_iron', 'minecraft:iron_door', 400, GTValues.VA[GTValues.LV], 'iron_door')
+
+	event.shaped('4x minecraft:ladder', [
+		'A A',
+		'AAA',
+		'A A'
+	], {
+		A: '#forge:rods/wooden'
+	}).id('gtceu:shaped/ladder')
 
 	// #endregion
 

@@ -1056,7 +1056,7 @@ function registerTFCMaterialsRecipes(event) {
 			// Декрафт блока в жидкость
 			event.recipes.tfc.heating(`#forge:storage_blocks/${material.getName()}`, tfcProperty.getMeltTemp())
 				.resultFluid(Fluid.of(outputMaterial.getFluid(), 1296))
-				.id(`tfc:heating/metal/${material.getName()}_block`)
+				.id(`tfc:heating/metal/${material.getName()}_storage_block`)
 
 		}
 

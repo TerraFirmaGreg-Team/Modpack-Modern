@@ -9,16 +9,10 @@ function registerGTCEUMetalRecipes(event) {
 		const toolHeadItem = ChemicalHelper.get(headTagPrefix, material, 1)
 		if (toolHeadItem.isEmpty()) return
 
-		if (material.hasFlag(TFGMaterialFlags.HAS_TFC_TOOL)) {
-			event.shapeless(toolItem, [
-				'#forge:rods/wooden',
-				toolHeadItem
-			]).id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-		}
-		else {
-			event.recipes.tfc.advanced_shapeless_crafting(TFC.itemStackProvider.of(toolItem).copyForgingBonus(), ['#forge:rods/wooden', toolHeadItem])
-				.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
-		}
+		event.recipes.tfc.advanced_shapeless_crafting(
+			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
+			[toolHeadItem, '#forge:rods/wooden'], toolHeadItem)
+			.id(`gtceu:shaped/${toolType.name}_${material.getName()}`)
 
 		processToolHead(headTagPrefix, extruderMold, cirucitMeta, material)
 	}
@@ -281,11 +275,17 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processPoorRawOre = (tagPrefix, material) => {
 		const poorOreItem = ChemicalHelper.get(tagPrefix, material, 2)
-		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, 1)
+		const crushedOreItem = ChemicalHelper.get(TagPrefix.crushed, material, Math.max(material.getProperty(PropertyKey.ORE).getOreMultiplier() / 2.0, 1))
 
 		if (poorOreItem != null && crushedOreItem != null) {
+
 			event.recipes.tfc.quern(crushedOreItem, poorOreItem)
 				.id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
+
+			// TODO: Remove when Greate fixes its chanced output bug
+
+			event.shapeless(crushedOreItem, [poorOreItem, '#forge:tools/hammers'])
+				.id(`tfg:greate_workaround_crushed_${material.getName()}`)
 		}
 	}
 
