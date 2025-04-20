@@ -1582,7 +1582,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:brass_casing',
 		B: '#forge:small_gears/brass',
-		C: 'create:electron_tube',
+		C: '#forge:gears/black_steel',
 		D: '#forge:tools/wrenches',
 		E: '#forge:small_springs/gold',
 		F: '#tfg:shafts',
