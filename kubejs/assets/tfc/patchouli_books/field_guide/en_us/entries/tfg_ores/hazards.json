@@ -49,14 +49,8 @@
     {
       "type": "patchouli:spotlight",
       "title": "Containers",
-      "text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:mechanics/crankshaft)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of it's contents to and from containers",
+      "text": "Hazardous materials only deal damage while they are in your $(thing)inventory$(), but that doesn't apply to other containers!$(br)Hazardous materials will not deal damage while they are in another container such as a $(l:tfg_tips/inventory_management)Backpack$() or $(l:getting_started/pottery#vessel)Vessel$(). $(thing)Right-clicking$() while holding a vessel will allow direct transfer of it's contents to and from containers",
       "item": "sophisticatedbackpacks:backpack,tfc:ceramic/vessel,tfc:ceramic/large_vessel"
-    },
-    {
-      "type": "patchouli:spotlight",
-      "title": "Armor",
-      "text": "Better armor will reduce the damage taken from hazardous materials.",
-      "item": { "tag": "minecraft:trimmable_armor" }
     },
     {
       "type": "patchouli:spotlight",
