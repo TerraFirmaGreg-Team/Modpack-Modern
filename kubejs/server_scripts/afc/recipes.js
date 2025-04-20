@@ -177,7 +177,7 @@ const registerAFCRecipes = (event) => {
 		.duration(300)
 		.EUt(2)
 
-	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
+	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', '3x gtceu:carbon_dust')
 
 	//#endregion
 

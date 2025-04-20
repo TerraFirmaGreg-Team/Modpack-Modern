@@ -489,6 +489,7 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Curving Press
 
+	// Copied from https://github.com/ThePansmith/Monifactory/blob/15c109298104e0c0b5083b266264bd6c158c6154/kubejs/server_scripts/mods/optionalCompats/create.js#L251
 	event.forEachRecipe([{ type: 'gtceu:extruder' }],
 		recipe => {
 			let r = JSON.parse(recipe.json)
@@ -514,60 +515,6 @@ function registerVintageImprovementsRecipes(event) {
 			}).id(`tfg:vi/curving/${recipe.getId().split(':')[1]}`)
 		}
 	)
-
-	// #endregion
-
-	// #region Centrifuge
-
-	// Copied from https://github.com/ThePansmith/Monifactory/blob/15c109298104e0c0b5083b266264bd6c158c6154/kubejs/server_scripts/mods/optionalCompats/create.js#L251
-	event.forEachRecipe([{ type: 'gtceu:centrifuge' }],
-		recipe => {
-			let r = JSON.parse(recipe.json)
-
-			// ULV recipes only
-			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
-			if (!(EUt <= 8)) { return }
-
-			let inputs = [];
-			if (r.inputs.item) {
-				r.inputs.item.forEach(i => {
-					let ins = i.content.ingredient;
-
-					if (i.content.count)
-						ins.count = i.content.count;
-
-					inputs.push(ins)
-				})
-			}
-			else return;
-
-			let outputs = [];
-			if (r.outputs.item) {
-				r.outputs.item.forEach(i => {
-					let out = i.content.ingredient;
-
-					if (i.content.count)
-						out.count = i.content.count;
-					
-					if (i.chance != 0 && i.chance != 10000)
-						out.chance = i.chance / 10000;
-
-					outputs.push(out)
-				})
-			}
-			else return;
-
-			event.custom({
-				type: 'vintageimprovements:centrifugation',
-				ingredients: inputs,
-				results: outputs,
-				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/${recipe.getId().split(':')[1]}`)
-		}
-	)
-
-	// Fix weird inconsistency
-	event.replaceOutput({ id: 'tfg:vi/centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
 
 	// #endregion
 
