@@ -1,0 +1,45 @@
+
+[general]
+	#
+	# Max animal size that the animal cart can carry.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxAnimalSize = 3.0
+	#
+	# Amount of animals the animal cart can carry.
+	#Range: > 0
+	maxPassengerCount = 2
+	#
+	# The largest (inclusive) size of an item that is allowed in a supply cart.
+	#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
+	maxItemSize = "HUGE"
+	#
+	# Can the animal cart pick up players by pushing it into them?
+	canPushIntoPlayers = true
+	#
+	# Can the animal cart pick up water animals?
+	canCarryWaterEntities = true
+	#
+	# Pulling distance modifier for carts. Higher => farther/greater break tolerance.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	pullingDistanceModifier = 2.0
+	#
+	# Should the player's average nutrient level and thirst affect the pulling speed of carts?
+	toggleFoodSpeed = true
+	#
+	# A very heavy huge item has a combined weight/size factor of 35, thus if a threshold is 140, then the player can carry 4 items.
+	# Threshold at which the player carrying a cart will get exhausted. Higher => can carry more.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	exhaustedThreshold = 140.0
+	#
+	# Threshold at which the player carrying a cart will get overburdened. Higher => can carry more.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	overburdenedThreshold = 280.0
+	#
+	# Threshold at which the player carrying a cart will get pinned. Higher => can carry more.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	pinnedThreshold = 420.0
+	#
+	# How big the supply cart inventory should be.
+	#Allowed Values: SIZE_0, SIZE_1, SIZE_2, SIZE_3, SIZE_4, SIZE_5, SIZE_6, SIZE_7, SIZE_8, SIZE_9, SIZE_10, SIZE_11, SIZE_12, SIZE_13
+	supplyCartInventorySize = "SIZE_6"
+
