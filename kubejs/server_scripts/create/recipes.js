@@ -371,7 +371,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:plates/steel',
 		B: 'gtceu:red_alloy_single_wire',
 		C: '#minecraft:logs',
-		D: '#forge:wrenches'
+		D: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/cart_assembler')
 
 	// Контроллер рельсы
