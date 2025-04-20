@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Increased Astikor Carts item size limit.
 
 ## [0.9.1] - 18.04.2025
 ### Changes
