@@ -39,7 +39,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputItem('tfg:conifer_rosin')
 		.id('tfg:vat/conifer_pitch_to_rosin');
 
-	event.recipes.tfc.pot('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000), 5000, 300)
+	event.recipes.tfc.pot('tfc:powder/charcoal', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('tfg:conifer_rosin')
 		.id('tfg:pot/conifer_pitch_to_rosin')
 
