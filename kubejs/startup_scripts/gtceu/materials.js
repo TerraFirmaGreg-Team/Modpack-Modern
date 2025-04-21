@@ -217,7 +217,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(2.5, 2.0, 178, 2, metalTooling).build());
 	GTMaterials.BlackBronze.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(3.3, 2.0, 204, 2, metalTooling).build());
 	GTMaterials.BlackSteel.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
-	GTMaterials.Iron.setProperty(PropertyKey.TOOL, ToolProperty.Builder.of(6.5, 4.5, 1228, 3, metalTooling).build());
 
 	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
 		var toolProperty = material.getProperty(PropertyKey.TOOL);
