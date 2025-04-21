@@ -14,6 +14,7 @@ ServerEvents.tags('item', event => {
     registerChalkItemTags(event);
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
+    registerConstructionWandItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
