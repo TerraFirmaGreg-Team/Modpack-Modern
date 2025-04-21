@@ -1,7 +1,29 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.2]
 ### Changes
+- Fixed kaolin clay not generating in the overworld
+- Changed some quests based on feedback
+- Added a temporary workaround for the ULS-MV millstones/crushing wheels voiding poor raw ores
+- Added recipes for digger helmet upgrades
+- Fixed a duping exploit involving metal plated blocks
+- Updated field guide for 0.9 (oosyrag)
+- Fixed some recipes that were using the wrong wrench tag
+- Removed recipes for firmalife sprinklers. Use gt pipes instead, those can go through sprinkler walls now, and put your sprinklers on drums/fluid tanks/barrels
+- Buffed the mixer glowstone recipe
+- Nerfed kapok growth speed a little
+- Added recipes to turn more things into biomass
+- Added recipe to turn saplings into sticks
+- Changed mud brick recipes to not require mortar any more
+- Fixed not being able to pick up spring water or put it in a mixing bowl
+- Buffed hot or not insulation items by x3
+- Nerfed rotation speed controller recipe
+- Now you can put construction wands on tool racks
+- Buffed nether mob loot tables
+- The overworld graphite vein now spawns in every stone type
+- Granitic/basaltic mineral sand is now usable for iron in primitive age
+- Removed some more duplicate recipes for vanilla items
+- Hid some more things in JEI that aren't craftable
 
 ## [0.9.1] - 18.04.2025
 ### Changes
