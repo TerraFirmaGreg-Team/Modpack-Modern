@@ -115,8 +115,9 @@ function generatePlatedBlockRecipe(event, material) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	if (tfcProperty != null) {
+		// Slabs are lossy because it's possible to plate a double slab block with one metal plate
 		event.recipes.tfc.heating(platedSlab, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+			.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
 			.id(`tfc:heating/metal/${tfcMetalName}_block_slab`)
 	}
 	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_slab`)
