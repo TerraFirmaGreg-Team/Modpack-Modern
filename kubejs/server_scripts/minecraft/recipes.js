@@ -348,6 +348,13 @@ const registerMinecraftRecipes = (event) => {
 		C: '#tfc:rock/smooth'
 	}).id('tfg:shaped/comparator_nether_quartz');
 
+	event.replaceInput({id: 'gtceu:shaped/redstone_lamp' }, 'minecraft:glass_pane', '#forge:glass_panes')
+	event.recipes.gtceu.assembler('redstone_lamp')
+		.itemInputs('1x #forge:glass', '1x minecraft:glowstone', '1x #forge:rods/red_alloy')
+		.itemOutputs('minecraft:redstone_lamp')
+		.duration(50)
+		.EUt(7)
+
 	//#endregion
 
 	//#region Выход: Рамка

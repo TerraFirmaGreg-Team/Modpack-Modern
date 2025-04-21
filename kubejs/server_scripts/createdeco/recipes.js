@@ -14,7 +14,7 @@ const registerCreatedecoRecipes = (event) => {
 		'createdeco:industrial_iron_ingot': '#forge:ingots/steel',
 		'createdeco:industrial_iron_sheet': '#forge:plates/steel',
 		'createdeco:industrial_iron_nugget': '#forge:nuggets/steel',
-		'minecraft:torch': 'minecraft:glowstone_dust',
+		'minecraft:torch': 'minecraft:glowstone',
 		'minecraft:vine': '#tfc:moss',
 		'create:andesite_alloy': '#forge:ingots/tin_alloy',
 		'createdeco:andesite_sheet': '#forge:plates/tin_alloy',
@@ -76,7 +76,7 @@ const registerCreatedecoRecipes = (event) => {
 		}
 
 		let ingredients = {
-			T: `minecraft:glowstone_dust`,
+			T: `minecraft:glowstone`,
 			N: `#forge:nuggets/${replacementLampType}`,
 			P: `#forge:plates/${replacementLampType}`,
 			D: null,

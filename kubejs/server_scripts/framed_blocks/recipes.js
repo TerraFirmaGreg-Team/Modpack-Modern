@@ -539,4 +539,29 @@ const registerFramedBlocksRecipes = (event) => {
 			count: 4
 		}
 	}).id('framedblocks:framing_saw/framed_lever')
+
+	// Glowing cube
+
+	event.shapeless(
+		Item.of('framedblocks:framed_glowing_cube', 1),
+		[
+			'framedblocks:framed_cube',
+			'minecraft:glowstone',
+		]
+	).id('framedblocks:framed_glowing_cube')
+
+	event.custom({
+		type: "framedblocks:frame",
+		additives: [
+			{
+				"count": 1,
+				"ingredient": { item: "minecraft:glowstone" }
+			}
+		],
+		material: 6144,
+		result: {
+			item: "framedblocks:framed_glowing_cube",
+			count: 1
+		}
+	}).id('framedblocks:framing_saw/framed_glowing_cube')
 }
