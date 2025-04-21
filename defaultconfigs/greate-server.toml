@@ -284,7 +284,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					andesiteMaxCapacity = 32
+					andesiteMaxCapacity = 16
 
 				#.
 				#Settings related to steel tier machines
