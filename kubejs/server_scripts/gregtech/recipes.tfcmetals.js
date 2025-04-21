@@ -46,42 +46,16 @@ function registerGTCEuTFCMetalsRecipes(event)
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rose_gold' })
 	event.remove({ id: 'gtceu:electric_blast_furnace/blast_rose_gold_gas' })
 
-	event.smelting('gtceu:bismuth_bronze_ingot', 'gtceu:bismuth_bronze_dust')
-	event.smelting('gtceu:black_bronze_ingot', 'gtceu:black_bronze_dust')
-	event.smelting('gtceu:sterling_silver_ingot', 'gtceu:sterling_silver_dust')
-	event.smelting('gtceu:rose_gold_ingot', 'gtceu:rose_gold_dust')
+	event.smelting('gtceu:bismuth_bronze_ingot', '#forge:dusts/bismuth_bronze')
+		.id('tfg:smelting/bismuth_bronze_ingot')
+	event.smelting('gtceu:black_bronze_ingot', '#forge:dusts/black_bronze')
+		.id('tfg:smelting/black_bronze_ingot')
+	event.smelting('gtceu:sterling_silver_ingot', '#forge:dusts/sterling_silver')
+		.id('tfg:smelting/sterling_silver_ingot')
+	event.smelting('gtceu:rose_gold_ingot', '#forge:dusts/rose_gold')
+		.id('tfg:smelting/rose_gold_ingot')
 
 	//#endregion
-
-	// Add circuit to assembler recipe for redstone lamp.
-	// Avoids conflict with AE2 smart cables.
-	event.remove({ id: 'gtceu:assembler/redstone_lamp' })
-	event.recipes.gtceu.assembler('redstone_lamp')
-		.itemInputs('4x #forge:dusts/redstone', '4x #forge:dusts/glowstone')
-		.itemOutputs('1x minecraft:redstone_lamp')
-		.circuit(1)
-		.duration(100)
-		.EUt(1)
-
-	// Clear NBT on tanks with shapeless crafts.
-	const TANK_NAMES = [
-		"lv_super",
-		"mv_super",
-		"hv_super",
-		"ev_super",
-		"iv_quantum",
-		"luv_quantum",
-		"zpm_quantum",
-		"uv_quantum",
-		"uhv_quantum",
-	]
-
-	TANK_NAMES.forEach(prefix => {
-		// Craft super tanks to remove their NBT data.
-		event.shapeless(`gtceu:${prefix}_tank`, [`gtceu:${prefix}_tank`])
-		// Craft super chests to remove their NBT data.
-		event.shapeless(`gtceu:${prefix}_chest`, [`gtceu:${prefix}_chest`])
-	})
 
 	// red alloy, because crucible always makes 4+1=5
 
