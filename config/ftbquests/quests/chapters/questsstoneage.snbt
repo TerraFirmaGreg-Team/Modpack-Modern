@@ -1699,7 +1699,6 @@
 			subtitle: "{quests.stone_age.hydration.subtitle}"
 			tasks: [{
 				id: "01CB74D1BA1BC018"
-				optional_task: true
 				title: "{quests.tasktype.checkmark}"
 				type: "checkmark"
 			}]
