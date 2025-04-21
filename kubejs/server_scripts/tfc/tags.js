@@ -29,6 +29,7 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/plungers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
+    event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
     
     event.add('tfc:usable_on_tool_rack', '#forge:tools/chainsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
