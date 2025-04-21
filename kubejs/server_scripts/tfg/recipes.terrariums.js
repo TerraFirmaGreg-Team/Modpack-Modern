@@ -76,15 +76,6 @@ function registerTFGTerrariumRecipes(event) {
 		.EUt(512)
 		
 	// nether bricks
-		
-	event.shaped('4x minecraft:nether_bricks', [
-		'ABA',
-		'BAB',
-		'ABA' 
-	], {
-		A: 'minecraft:nether_brick',
-		B: 'tfc:mortar'
-	}).id('tfg:shaped/nether_bricks')
 	
 	event.recipes.gtceu.assembler('tfg:nether_bricks')
 		.itemInputs('5x minecraft:nether_brick')

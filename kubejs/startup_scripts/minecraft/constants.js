@@ -739,6 +739,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:nether_sprouts', 
     'minecraft:warped_roots', 
     'minecraft:dragon_head', 
+    'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
     'minecraft:weeping_vines', 
@@ -748,6 +749,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:twisting_vines', 
     'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
+    'minecraft:ghast_tear',
+    'minecraft:nautilus_shell'
 ];
 
 global.MINECRAFT_HIDED_ITEMS = [

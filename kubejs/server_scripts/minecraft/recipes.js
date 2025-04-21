@@ -274,6 +274,8 @@ const registerMinecraftRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.EUt(7).duration(30)
 
+	event.replaceInput({ id: 'minecraft:writable_book' }, 'minecraft:inc_sac', '#forge:dyes/black')
+
 	//#endregion
 
 	//#region
@@ -777,6 +779,21 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Элитра
 
 	// Ну и херь я придумал
+
+	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
 		.itemInputs('16x #forge:foils/polycaprolactam', '16x #forge:foils/aluminium', '8x minecraft:phantom_membrane', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
@@ -797,20 +814,6 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
 		.duration(1600)
 		.EUt(120)
-
-	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
 

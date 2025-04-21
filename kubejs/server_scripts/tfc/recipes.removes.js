@@ -141,7 +141,9 @@ function removeTFCRecipes(event) {
 	event.remove({ id: `tfc:anvil/brass_mechanisms` })
 	event.remove({ id: `tfc:crafting/steel_pump` })
 	event.remove({ id: `tfc:crafting/crankshaft` })
-
-
 	event.remove({ id: 'tfc:crafting/sandpaper' })
+
+	event.remove({ id: 'tfc:crafting/vanilla/redstone/steel_minecart' })
+	event.remove({ id: 'tfc:crafting/vanilla/redstone/minecart' })
+
 }
