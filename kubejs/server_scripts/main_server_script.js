@@ -101,6 +101,7 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 })
 
 ServerEvents.tags('worldgen/biome', event => {
+    registerTFCBiomeTags(event)
     registerTFGBiomeTags(event)
 })
 

@@ -476,10 +476,22 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
 }
 
+const registerTFCBiomeTags = (event) => {
+
+    event.add('tfc:kaolin_clay_spawns_in', 'tfc:rolling_hills')
+}
+
 const registerTFCPlacedFeatures = (event) => {
     
     // Удаление
     event.removeAll('tfc:in_biome/veins')
+
+    // Add back the non-ore ones
+    event.add('tfc:in_biome/veins', 'tfc:vein/gravel')
+	event.add('tfc:in_biome/veins', 'tfc:vein/kaolin_disc')
+    event.add('tfc:in_biome/veins', 'tfc:vein/granite_dike')
+    event.add('tfc:in_biome/veins', 'tfc:vein/diorite_dike')
+    event.add('tfc:in_biome/veins', 'tfc:vein/gabbro_dike')
 
     // Добавление
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')
