@@ -28,6 +28,7 @@ ServerEvents.tags('item', event => {
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
     registerFTBQuestsItemTags(event)
+    registerGrapplemodItemTags(event)
     registerGreateItemTags(event)
     registerGTCEUItemTags(event)
     registerMegaCellsItemTags(event)
