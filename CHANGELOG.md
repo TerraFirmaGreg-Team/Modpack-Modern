@@ -9,6 +9,7 @@
 - Fixed a duping exploit involving metal plated blocks
 - Updated field guide for 0.9 (oosyrag)
 - Fixed some recipes that were using the wrong wrench tag
+- Fixed mining machines not working
 - Removed recipes for firmalife sprinklers. Use gt pipes instead, those can go through sprinkler walls now, and put your sprinklers on drums/fluid tanks/barrels
 - Buffed the mixer glowstone recipe
 - Nerfed kapok growth speed a little
