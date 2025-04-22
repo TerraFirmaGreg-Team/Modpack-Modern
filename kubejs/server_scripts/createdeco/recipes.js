@@ -174,23 +174,23 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
 		if (bar.metal != 'iron') {
-			event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars`, `#forge:plates/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars`)
 
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_door`)
 
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_trapdoor`, `#forge:plates/${bar.material}`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_trapdoor`)
 
-			event.stonecutting(`4x createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`)
+			event.stonecutting(`createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`)
 				.id(`createdeco:stonecutting/${bar.metal}_trapdoor`)
 
 			event.stonecutting(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`)
 				.id(`createdeco:stonecutting/${bar.metal}_door`)
 		}
 
-		event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars_overlay`, `#forge:plates/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
+		event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
 			.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars_overlay`)
 
 	})
