@@ -12,16 +12,16 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
+								"max": 4.0,
+								"min": 2.0
 							},
 							"function": "minecraft:set_count"
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": 0.0
+								"max": 2.0,
+								"min": 1.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
@@ -42,22 +42,52 @@
 							"add": false,
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
+								"max": 5.0,
+								"min": 2.0
 							},
 							"function": "minecraft:set_count"
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": 0.0
+								"max": 2.0,
+								"min": 1.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "beneath:cursecoal"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 5.0,
+								"min": 2.0
+							},
+							"function": "minecraft:set_count"
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2.0,
+								"min": 1.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:looting_enchant"
+						}
+					],
+					"name": "gtceu:rich_raw_coal"
 				}
 			]
 		}

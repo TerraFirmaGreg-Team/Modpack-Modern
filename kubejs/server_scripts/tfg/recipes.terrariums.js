@@ -69,22 +69,7 @@ function registerTFGTerrariumRecipes(event) {
 		.duration(200)
 		.EUt(512)
 		
-	event.recipes.gtceu.macerator('tfg:obsidian')
-		.itemInputs('minecraft:obsidian')
-		.itemOutputs('gtceu:obsidian_dust')
-		.duration(100)
-		.EUt(512)
-		
 	// nether bricks
-		
-	event.shaped('4x minecraft:nether_bricks', [
-		'ABA',
-		'BAB',
-		'ABA' 
-	], {
-		A: 'minecraft:nether_brick',
-		B: 'tfc:mortar'
-	}).id('tfg:shaped/nether_bricks')
 	
 	event.recipes.gtceu.assembler('tfg:nether_bricks')
 		.itemInputs('5x minecraft:nether_brick')
@@ -96,7 +81,7 @@ function registerTFGTerrariumRecipes(event) {
 	// ender slurry
 	
 	event.recipes.gtceu.mixer('tfg:ender_slurry')
-		.itemInputs('gtceu:obsidian_dust', 'minecraft:end_stone')
+		.itemInputs('#forge:dusts/obsidian', 'minecraft:end_stone')
 		.inputFluids(Fluid.of('gtceu:helium', 200), Fluid.of('gtceu:radon', 50))
 		.outputFluids(Fluid.of('tfg:ender_slurry', 250))
 		.duration(200)

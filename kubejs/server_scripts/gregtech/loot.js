@@ -80,16 +80,6 @@ const registerGTCEULoots = (event) => {
 			.addLoot(STONE_TYPES_TO_COBBLE[stoneType]);
 	})
 
-	if (TFGHelpers.isMaterialRegistrationFinished) {
-		registerGTCEUMaterialLoots(event);
-	}
-	else {
-		console.log("!!!!!!!! MATERIALS NOT DONE YET !!!!!!!!!")
-	}
-}
-
-function registerGTCEUMaterialLoots(event) {
-
 	// Go through all materials
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
@@ -124,17 +114,12 @@ function registerGTCEUMaterialLoots(event) {
 
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
-				.or((or) => {
-					or.matchMainHand('#minecraft:pickaxes')
-					  .matchMainHand('#forge:tools/hammers')
-					  .matchMainHand('#forge:tools/mining_hammers')
-				})
 				.addWeightedLoot([4, 6],
-					[
-						richRawOre.withChance(0.2),
-						normalRawOre.withChance(0.6),
-						poorRawOre.withChance(0.2)
-					]);
+				[
+					richRawOre.withChance(0.2),
+					normalRawOre.withChance(0.6),
+					poorRawOre.withChance(0.2)
+				]);
 
 			// Stone ores
 			global.ORE_BEARING_STONES.forEach(stoneType => {
@@ -154,10 +139,6 @@ function registerGTCEUMaterialLoots(event) {
 				// break with pickaxe
 				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(ItemFilter.ALWAYS_TRUE)
-					.or((or) => {
-						or.matchMainHand('#minecraft:pickaxes')
-						  .matchMainHand('#forge:tools/mining_hammers')
-					})
 					.addWeightedLoot([
 						richRawOre.withChance(0.2),
 						normalRawOre.withChance(0.6),

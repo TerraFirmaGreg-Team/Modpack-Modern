@@ -18,6 +18,7 @@ function registerTFCIconSets(event) {
 	event.create('tfc_ruby').parent('ruby')
 	event.create('tfc_sapphire').parent('gem_horizontal')
 	event.create('tfc_topaz').parent('gem_vertical')
+	event.create('tfc_realgar').parent('fine')
 		
 	event.create('tfc_bismuth').parent('bright')
 	event.create('tfc_cassiterite').parent('bright')

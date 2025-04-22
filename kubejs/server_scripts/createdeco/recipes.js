@@ -14,7 +14,7 @@ const registerCreatedecoRecipes = (event) => {
 		'createdeco:industrial_iron_ingot': '#forge:ingots/steel',
 		'createdeco:industrial_iron_sheet': '#forge:plates/steel',
 		'createdeco:industrial_iron_nugget': '#forge:nuggets/steel',
-		'minecraft:torch': 'minecraft:glowstone_dust',
+		'minecraft:torch': 'minecraft:glowstone',
 		'minecraft:vine': '#tfc:moss',
 		'create:andesite_alloy': '#forge:ingots/tin_alloy',
 		'createdeco:andesite_sheet': '#forge:plates/tin_alloy',
@@ -76,7 +76,7 @@ const registerCreatedecoRecipes = (event) => {
 		}
 
 		let ingredients = {
-			T: `minecraft:glowstone_dust`,
+			T: `minecraft:glowstone`,
 			N: `#forge:nuggets/${replacementLampType}`,
 			P: `#forge:plates/${replacementLampType}`,
 			D: null,
@@ -147,6 +147,13 @@ const registerCreatedecoRecipes = (event) => {
 				D: powder,
 				M: `tfc:mortar`
 			});
+
+		event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
+			.itemInputs('5x minecraft:brick', powder)
+			.inputFluids(Fluid.of('gtceu:concrete', 144))
+			.itemOutputs(`4x createdeco:${type}_bricks`)
+			.duration(50)
+			.EUt(7)
 	});
 	//#endregion
 
@@ -174,23 +181,23 @@ const registerCreatedecoRecipes = (event) => {
 		event.remove({ id: `createdeco:${bar.metal}_door` })
 
 		if (bar.metal != 'iron') {
-			event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars`, `#forge:plates/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars`, `#forge:ingots/${bar.material}`, ['shrink_last', 'punch_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars`)
 
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:double_plates/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`, ['draw_last', 'draw_second_last', 'punch_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_door`)
 
-			event.recipes.tfc.anvil(`createdeco:${bar.metal}_trapdoor`, `#forge:plates/${bar.material}`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
+			event.recipes.tfc.anvil(`createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`, ['shrink_last', 'draw_second_last', 'draw_third_last'])
 				.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_trapdoor`)
 
-			event.stonecutting(`4x createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`)
+			event.stonecutting(`createdeco:${bar.metal}_trapdoor`, `#forge:ingots/${bar.material}`)
 				.id(`createdeco:stonecutting/${bar.metal}_trapdoor`)
 
 			event.stonecutting(`createdeco:${bar.metal}_door`, `#forge:ingots/${bar.material}`)
 				.id(`createdeco:stonecutting/${bar.metal}_door`)
 		}
 
-		event.recipes.tfc.anvil(`8x createdeco:${bar.metal}_bars_overlay`, `#forge:plates/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
+		event.recipes.tfc.anvil(`4x createdeco:${bar.metal}_bars_overlay`, `#forge:ingots/${bar.material}`, ['draw_last', 'punch_second_last', 'punch_third_last'])
 			.tier(bar.tier).id(`createdeco:anvil/${bar.metal}_bars_overlay`)
 
 	})

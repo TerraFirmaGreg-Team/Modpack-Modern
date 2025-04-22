@@ -82,7 +82,15 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:echo_shard_block',
     'gtceu:tiny_skulk_dust',
     'gtceu:small_skulk_dust',
-    'gtceu:skulk_dust'
+    'gtceu:skulk_dust',
+
+    // Marble
+    'gtceu:marble',
+    'gtceu:marble_cobblestone',
+    'gtceu:mossy_marble_cobblestone',
+    'gtceu:marble_bricks',
+    'gtceu:cracked_marble_bricks',
+    'gtceu:mossy_marble_bricks'
 ];
 
 global.GTCEU_HIDED_ITEMS = [

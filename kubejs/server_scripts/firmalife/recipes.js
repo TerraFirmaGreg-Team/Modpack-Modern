@@ -2,35 +2,12 @@
 
 const registerFirmaLifeRecipes = (event) => {
 
-	//#region Удаление других рецептов
-
-	event.remove({ id: 'firmalife:crafting/compost_tumbler' })
-	event.remove({ id: 'firmalife:crafting/pumping_station' })
-	event.remove({ id: 'firmalife:crafting/pumping_station2' })
-	event.remove({ id: 'firmalife:crafting/pumping_station3' })
+	global.FIRMALIFE_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
 
 	// - Chromium
-
-	// Ingot 
-	event.remove({ id: 'firmalife:casting/chromium_ingot' })
-	event.remove({ id: 'firmalife:casting/chromium_ingot_fire' })
-	event.remove({ id: 'firmalife:heating/metal/chromium_ingot' })
-
-	// Double Ingot
-	event.remove({ id: 'firmalife:welding/chromium_double_ingot' })
-	event.remove({ id: 'firmalife:heating/metal/chromium_double_ingot' })
-
-	// Sheet
-	event.remove({ id: 'firmalife:anvil/chromium_sheet' })
-	event.remove({ id: 'firmalife:heating/metal/chromium_sheet' })
-
-	// Double Sheet
-	event.remove({ id: 'firmalife:welding/chromium_double_sheet' })
-	event.remove({ id: 'firmalife:heating/metal/chromium_double_sheet' })
-
-	// Rod
-	event.remove({ id: 'firmalife:anvil/chromium_rod' })
-	event.remove({ id: 'firmalife:heating/metal/chromium_rod' })
 
 	// Ores
 	event.remove({ id: 'firmalife:heating/ore/small_chromite' })
@@ -48,27 +25,6 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// - Stainless Steel
 	event.remove({ id: 'firmalife:alloy/stainless_steel' })
-
-	// Ingot 
-	event.remove({ id: 'firmalife:casting/stainless_steel_ingot' })
-	event.remove({ id: 'firmalife:casting/stainless_steel_ingot_fire' })
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_ingot' })
-
-	// Double Ingot
-	event.remove({ id: 'firmalife:welding/stainless_steel_double_ingot' })
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_double_ingot' })
-
-	// Sheet
-	event.remove({ id: 'firmalife:anvil/stainless_steel_sheet' })
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_sheet' })
-
-	// Double Sheet
-	event.remove({ id: 'firmalife:welding/stainless_steel_double_sheet' })
-	event.remove({ id: 'firmalife:heating/metal/stainless_steel_double_sheet' })
-
-	// Rod
-	event.remove({ id: 'firmalife:anvil/stainless_steel_rod' })
-	event.remove({ id: 'firmalife:heating/stainless_steel_rod' })
 
 	// Jar lid
 	event.remove({ id: 'firmalife:heating/stainless_steel_jar_lid' })
@@ -176,48 +132,6 @@ const registerFirmaLifeRecipes = (event) => {
 
 	//#region Медная
 
-	event.shaped('firmalife:pumping_station',
-		[
-			' B ',
-			'ACA',
-			' D '
-		], {
-		A: 'firmalife:copper_pipe',
-		B: '#forge:plates/bronze',
-		C: '#tfc:barrels',
-		D: 'create:mechanical_pump'
-	}).id('tfg:shaped/pumping_station')
-
-	event.shaped('firmalife:pumping_station',
-		[
-			' B ',
-			'ACA',
-			' D '
-		], {
-		A: 'firmalife:copper_pipe',
-		B: '#forge:plates/black_bronze',
-		C: '#tfc:barrels',
-		D: 'create:mechanical_pump'
-	}).id('tfg:shaped/pumping_station2')
-
-	event.shaped('firmalife:pumping_station',
-		[
-			' B ',
-			'ACA',
-			' D '
-		], {
-		A: 'firmalife:copper_pipe',
-		B: '#forge:plates/bismuth_bronze',
-		C: '#tfc:barrels',
-		D: 'create:mechanical_pump'
-	}).id('tfg:shaped/pumping_station3')
-
-	event.recipes.gtceu.bender('tfg:firmalife/copper_pipe')
-		.itemInputs('#forge:plates/copper')
-		.itemOutputs('8x firmalife:copper_pipe')
-		.circuit(3)
-		.duration(40)
-		.EUt(8)
 
 	event.recipes.gtceu.bender('tfg:firmalife/sprinkler')
 		.itemInputs('#forge:plates/copper')
@@ -294,17 +208,6 @@ const registerFirmaLifeRecipes = (event) => {
 		B: 'minecraft:glass'
 	}).id('firmalife:crafting/greenhouse/copper_greenhouse_door')
 
-	// Порт
-	event.shaped('firmalife:copper_greenhouse_port', [
-		'AA',
-		'BC',
-		'AA'
-	], {
-		A: 'firmalife:reinforced_glass',
-		B: '#forge:rods/copper',
-		C: 'firmalife:copper_pipe'
-	}).id('firmalife:crafting/greenhouse/copper_greenhouse_port')
-
 	//#endregion
 
 	//#region Железная
@@ -376,17 +279,6 @@ const registerFirmaLifeRecipes = (event) => {
 		A: '#forge:rods/wrought_iron',
 		B: 'minecraft:glass'
 	}).id('firmalife:crafting/greenhouse/iron_greenhouse_door')
-
-	// Порт
-	event.shaped('firmalife:iron_greenhouse_port', [
-		'AA',
-		'BC',
-		'AA'
-	], {
-		A: 'firmalife:reinforced_glass',
-		B: '#forge:rods/wrought_iron',
-		C: 'firmalife:copper_pipe'
-	}).id('firmalife:crafting/greenhouse/iron_greenhouse_port')
 
 	//#endregion
 

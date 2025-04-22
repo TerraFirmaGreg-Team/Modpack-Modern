@@ -218,6 +218,27 @@ const registerGTCEURecipes = (event) => {
 		.duration(128)
 		.EUt(3)
 
+	event.recipes.gtceu.brewery('biomass_from_leaves')
+		.itemInputs('#minecraft:leaves')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_fallen_leaves')
+		.itemInputs('#tfc:fallen_leaves')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_minecraft_plants')
+		.itemInputs('#createaddition:plants')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
 	//#endregion
 
 	//#region Выход: Рыбье масло
@@ -323,6 +344,19 @@ const registerGTCEURecipes = (event) => {
 	event.stonecutting('gtceu:dark_concrete_windmill_b', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_windmill_b')
 	event.stonecutting('gtceu:small_dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/small_dark_concrete_bricks')
 	event.stonecutting('gtceu:square_dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/square_dark_concrete_bricks')
+
+	//#endregion
+
+	//#region GT marble
+	
+	event.stonecutting('gtceu:polished_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_polished_marble')
+	event.stonecutting('gtceu:chiseled_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_chiseled_marble')
+	event.stonecutting('gtceu:marble_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_tile')
+	event.stonecutting('gtceu:marble_small_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_small_tile')
+	event.stonecutting('gtceu:marble_windmill_a', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_windmill_a')
+	event.stonecutting('gtceu:marble_windmill_b', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_windmill_b')
+	event.stonecutting('gtceu:small_marble_bricks', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_small_marble_bricks')
+	event.stonecutting('gtceu:square_marble_bricks', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_square_marble_bricks')
 
 	//#endregion
 

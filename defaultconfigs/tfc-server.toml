@@ -159,7 +159,7 @@
 		#
 		# Tank capacity of a crucible (in mB).
 		#Range: 0 ~ 2147483645
-		crucibleCapacity = 4000
+		crucibleCapacity = 4032
 		#
 		# A modifier for how fast fluid containers empty into crucibles. Containers will empty 1 mB every (this) number of ticks.
 		#Range: > 1
@@ -394,7 +394,7 @@
 		#
 		# Days for a kapok tree sapling to be ready to grow into a full tree.
 		#Range: > 0
-		kapokSaplingGrowthDays = 7
+		kapokSaplingGrowthDays = 9
 		#
 		# Days for a mangrove tree sapling to be ready to grow into a full tree.
 		#Range: > 0
@@ -502,7 +502,7 @@
 		#
 		# Tank capacity of a small vessel (in mB).
 		#Range: 0 ~ 2147483645
-		smallVesselCapacity = 3000
+		smallVesselCapacity = 3024
 		#
 		# The largest (inclusive) size of an item that is allowed in a small vessel.
 		#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
