@@ -23,7 +23,16 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:metal/bucket/stainless_steel',
     
     // Other
-    'firmalife:compost_tumbler'
+    'firmalife:compost_tumbler',
+
+    // Greenhouse shit
+    'firmalife:pumping_station',
+    'firmalife:copper_pipe',
+    'firmalife:oxidized_copper_pipe',
+    'firmalife:irrigation_tank',
+    'firmalife:iron_greenhouse_port',
+    'firmalife:copper_greenhouse_port',
+    'firmalife:treated_wood_greenhouse_port'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [

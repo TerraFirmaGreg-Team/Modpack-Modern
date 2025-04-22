@@ -2074,4 +2074,5 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:assembler/end_crystal' })
 	//#endregion
 
+	event.remove({ id: 'minecraft:flower_banner_pattern' })
 }

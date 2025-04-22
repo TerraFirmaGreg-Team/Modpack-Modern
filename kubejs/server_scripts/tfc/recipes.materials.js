@@ -360,7 +360,7 @@ function registerTFCMaterialsRecipes(event) {
 
 					}
 
-					let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material, 1)
+					let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material, 1)
 					if (!butcheryKnifeHeadItem.isEmpty()) {
 
 						// Декрафт оголовья в жидкость
@@ -578,11 +578,6 @@ function registerTFCMaterialsRecipes(event) {
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
 					.useDurability(true)
 					.id(`rnr:heating/metal/${material.getName()}_mattock`)
-
-				// event.recipes.tfc.anvil(`rnr:metal/mattock_head/${material.getName()}`, ingotItem, ['punch_last', 'punch_not_last', 'draw_not_last'])
-				// 	.tier(tfcProperty.getTier())
-				// 	.bonus(true)
-				// 	.id(`rnr:anvil/${material.getName()}_mattock_head`)
 
 				event.recipes.tfc.heating(`rnr:metal/mattock_head/${material.getName()}`, tfcProperty.getMeltTemp())
 					.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))

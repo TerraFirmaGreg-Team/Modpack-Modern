@@ -115,19 +115,20 @@ function generatePlatedBlockRecipe(event, material) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	if (tfcProperty != null) {
+		// Slabs are lossy because it's possible to plate a double slab block with one metal plate
 		event.recipes.tfc.heating(platedSlab, tfcProperty.getMeltTemp())
-			.resultFluid(Fluid.of(outputMaterial.getFluid(), 144))
+			.resultFluid(Fluid.of(outputMaterial.getFluid(), 72))
 			.id(`tfc:heating/metal/${tfcMetalName}_block_slab`)
 	}
 	event.recipes.gtceu.macerator(`tfg:${material.getName()}_plated_slab`)
 		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, material, 1), 'gtceu:small_stone_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 2), 'gtceu:small_stone_dust')
 		.duration(material.getMass())
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 	event.recipes.gtceu.arc_furnace(`tfg:${material.getName()}_plated_slab`)
 		.itemInputs(platedSlab)
-		.itemOutputs(ChemicalHelper.get(TagPrefix.ingot, material, 1), 'gtceu:small_ash_dust')
+		.itemOutputs(ChemicalHelper.get(TagPrefix.nugget, material, 4), 'gtceu:small_ash_dust')
 		.duration(material.getMass())
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])

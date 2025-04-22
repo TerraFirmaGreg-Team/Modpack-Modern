@@ -225,14 +225,20 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_pot', 'tfg:latex')
 	event.add('tfc:usable_in_barrel', 'tfg:latex')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfg:latex')
+    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:latex')
 
 	event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
 	event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfg:vulcanized_latex')
+    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:vulcanized_latex')
 
 	event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
+    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
 }
 
 

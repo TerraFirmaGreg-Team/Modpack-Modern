@@ -3,19 +3,17 @@
 function registerDiggerHelmetRecipes(event) {
 	event.remove({ mod: 'diggerhelmet' })
 
-	event.shapeless('diggerhelmet:eternal_candle', ['#minecraft:candles', 'minecraft:glowstone_dust'])
-		.id('tfg:shapeless/eternal_candle')
-
 	event.shaped('diggerhelmet:digger_helmet', [
-		' A ',
-		'EB ',
+		' F ',
+		'EAB',
 		'DCD'
 	], {
-		A: 'diggerhelmet:eternal_candle',
+		A: '#minecraft:candles',
 		B: '#forge:rings',
 		C: 'minecraft:leather_helmet',
 		D: '#forge:rods/tin',
-		E: '#forge:tools/hammers'
+		E: '#forge:tools/hammers',
+		F: 'minecraft:glowstone_dust'
 	})
 	.id('tfg:shaped/digger_helmet')
 

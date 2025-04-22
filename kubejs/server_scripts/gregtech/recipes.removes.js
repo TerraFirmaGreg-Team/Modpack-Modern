@@ -574,6 +574,18 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/barrel' })
 	event.remove({ id: 'gtceu:shaped/book' })
 	event.remove({ id: 'gtceu:shaped/bucket_of_concrete' })
+	event.remove({ id: 'gtceu:shaped/smithing_table' })
+	event.remove({ id: 'gtceu:shaped/brick_slab_saw' })
+	event.remove({ id: 'gtceu:shaped/brick_stair_saw' })
+	event.remove({ id: 'gtceu:shaped/brick_wall_saw' })
+	event.remove({ id: 'gtceu:shaped/lightning_rod' })
+	event.remove({ id: 'gtceu:shaped/painting' })
+	event.remove({ id: 'gtceu:shaped/rail' })
+	event.remove({ id: 'gtceu:shaped/powered_rail' })
+	event.remove({ id: 'gtceu:shaped/detector_rail' })
+	event.remove({ id: 'gtceu:shaped/activator_rail' })
+	event.remove({ id: 'gtceu:shaped/shield' })
+
 	event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' })
 
 	event.remove({ id: 'gtceu:assembler/bell' })
@@ -585,6 +597,16 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/barrel' })
 	event.remove({ id: 'gtceu:assembler/book_from_leather' })
 	event.remove({ id: 'gtceu:assembler/name_tag' })
+	event.remove({ id: 'gtceu:assembler/smithing_table' })
+	event.remove({ id: 'gtceu:assembler/loom' })
+	event.remove({ id: 'gtceu:assembler/flower_pot' })
+	event.remove({ id: 'gtceu:assembler/piston' })
+	event.remove({ id: 'gtceu:assembler/clock' })
+	event.remove({ id: 'gtceu:assembler/spyglass' })
+	event.remove({ id: 'gtceu:assembler/map' })
+	event.remove({ id: 'gtceu:assembler/spyglass' })
 
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
+
+	event.remove({ id: 'gtceu:compressor/bricks' })
 }
