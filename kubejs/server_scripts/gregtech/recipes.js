@@ -347,6 +347,19 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	//#region GT marble
+	
+	event.stonecutting('gtceu:polished_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_polished_marble')
+	event.stonecutting('gtceu:chiseled_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_chiseled_marble')
+	event.stonecutting('gtceu:marble_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_tile')
+	event.stonecutting('gtceu:marble_small_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_small_tile')
+	event.stonecutting('gtceu:marble_windmill_a', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_windmill_a')
+	event.stonecutting('gtceu:marble_windmill_b', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_windmill_b')
+	event.stonecutting('gtceu:small_marble_bricks', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_small_marble_bricks')
+	event.stonecutting('gtceu:square_marble_bricks', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_square_marble_bricks')
+
+	//#endregion
+
 	//#region Выход: Бурильная жидкость
 
 	generateMixerRecipe(

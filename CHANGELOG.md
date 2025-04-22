@@ -9,6 +9,7 @@
 - Fixed a duping exploit involving metal plated blocks
 - Updated field guide for 0.9 (oosyrag)
 - Fixed some recipes that were using the wrong wrench tag
+- Fixed mining machines not working
 - Removed recipes for firmalife sprinklers. Use gt pipes instead, those can go through sprinkler walls now, and put your sprinklers on drums/fluid tanks/barrels
 - Buffed the mixer glowstone recipe
 - Nerfed kapok growth speed a little
@@ -22,6 +23,10 @@
 - Buffed nether mob loot tables
 - The overworld graphite vein now spawns in every stone type
 - Granitic/basaltic mineral sand is now usable for iron in primitive age
+- Fixed butchery knives missing anvil recipes
+- Added recipes to craft GT's marble blocks
+- Added assembler recipes for create deco's bricks, and made vanilla bricks consistent (4 instead of 1 per craft)
+- Doubled the amount of train tracks you get per craft
 - Removed some more duplicate recipes for vanilla items
 - Hid some more things in JEI that aren't craftable
 
