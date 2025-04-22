@@ -4,10 +4,12 @@
 ### Changes
 - Fixed kaolin clay not generating in the overworld
 - Changed some quests based on feedback
-- Added a temporary workaround for the ULS-MV millstones/crushing wheels voiding poor raw ores
 - Added recipes for digger helmet upgrades
-- Fixed a duping exploit involving metal plated blocks
 - Updated field guide for 0.9 (oosyrag)
+- Added speed boost to nanosuit leggings (SverhRazum-Nah)
+- Updated max capacity of small vessel and crucible to be multiples of 144 (oosyrag)
+- Added a temporary fix for the ULS-MV millstones/crushing wheels voiding poor raw ores
+- Fixed a duping exploit involving metal plated blocks
 - Fixed some recipes that were using the wrong wrench tag
 - Fixed mining machines not working
 - Removed recipes for firmalife sprinklers. Use gt pipes instead, those can go through sprinkler walls now, and put your sprinklers on drums/fluid tanks/barrels
@@ -27,6 +29,10 @@
 - Added recipes to craft GT's marble blocks
 - Added assembler recipes for create deco's bricks, and made vanilla bricks consistent (4 instead of 1 per craft)
 - Doubled the amount of train tracks you get per craft
+- Fixed red alloy/tin alloy double ingots not needing to be heated for anvil recipes
+- Long distance item/fluid pipes now need HV
+- Kaolin patches now spawn less often in lush cave biomes
+- You can no longer pick up regular ice with a saw to prevent moving around water sources, but you can craft packed ice instead if you need to cool off
 - Removed some more duplicate recipes for vanilla items
 - Hid some more things in JEI that aren't craftable
 
