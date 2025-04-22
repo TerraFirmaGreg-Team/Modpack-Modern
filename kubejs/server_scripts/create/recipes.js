@@ -1605,7 +1605,7 @@ const registerCreateRecipes = (event) => {
 		' D '
 	], {
 		A: 'create:andesite_casing',
-		B: '#minecraft:plates/wrought_iron',
+		B: '#forge:plates/wrought_iron',
 		C: 'tfc:glue',
 		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches'
