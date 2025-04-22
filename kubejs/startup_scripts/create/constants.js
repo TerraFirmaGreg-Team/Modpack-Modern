@@ -255,7 +255,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:blaze_cake', 
     'create:blaze_cake_base', 
     'create:sturdy_sheet', 
-    'create:powdered_obsidian', 
     'create:polished_rose_quartz', 
     'create:rose_quartz', 
     'create:cinder_flour', 
