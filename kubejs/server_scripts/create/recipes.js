@@ -165,7 +165,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	// Металлический держатель
-	event.shaped('2x create:metal_bracket', [
+	event.shaped('4x create:metal_bracket', [
 		'AAA',
 		' B '
 	], {
@@ -1098,23 +1098,21 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/copper_scaffolding')
 
 	// Цинковая ступень
-	event.shapeless('create:copycat_step', [
-		'#forge:plates/zinc',
-		'#forge:tools/files'
-	]).id('tfg:create/shapeless/copycat_step')
+	event.shaped('4x create:copycat_step', [
+		'A ',
+		' B'
+	], {
+		A: '#forge:plates/zinc',
+		B: '#forge:tools/files'
+	}).id('tfg:create/shapeless/copycat_step')
 
 	// Цинковая панель
-	event.shapeless('create:copycat_panel', [
-		'#forge:double_plates/zinc',
-		'#forge:tools/files'
-	]).id('tfg:create/shapeless/copycat_panel')
-
-	event.recipes.gtceu.assembler('tfg:create/copycat_panel')
-		.itemInputs('#forge:double_plates/zinc')
-		.circuit(5)
-		.itemOutputs('create:copycat_panel')
-		.duration(200)
-		.EUt(20)
+	event.shaped('4x create:copycat_panel', [
+		'A B',
+	], {
+		A: '#forge:plates/zinc',
+		B: '#forge:tools/files'
+	}).id('tfg:create/shapeless/copycat_panel')
 
 	// Деталь рельса
 	event.shaped('3x create:metal_girder', [
@@ -1670,4 +1668,8 @@ const registerCreateRecipes = (event) => {
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/clutch')
+
+	event.stonecutting('2x create:andesite_scaffolding', '#forge:ingots/tin_alloy')
+	event.stonecutting('2x create:andesite_ladder', '#forge:ingots/tin_alloy')
+	event.stonecutting('2x create:andesite_bars', '#forge:ingots/tin_alloy')
 }
