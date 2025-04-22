@@ -336,7 +336,7 @@ function registerGTCEUMetalRecipes(event) {
 		}
 		else {
 			event.recipes.tfc.quern(
-				ChemicalHelper.get(TagPrefix.dustSmall, material, 1),
+				ChemicalHelper.get(TagPrefix.dustSmall, material, 2),
 				poorOreItem
 			).id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
 		}
