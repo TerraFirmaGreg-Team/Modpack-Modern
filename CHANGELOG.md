@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.9.2]
+## [Unreleased]
 ### Changes
 - Fixed kaolin clay not generating in the overworld
 - Changed some quests based on feedback
