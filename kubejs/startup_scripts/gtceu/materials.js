@@ -19,11 +19,9 @@ const registerGTCEuMaterialModification = (event) => {
 		HAS_TFC_TOOL,
 		HAS_TFC_ARMOR,
 		HAS_TFC_UTILITY,
-		HAS_PLATED_BLOCK,
 		CAN_BE_UNMOLDED,
 		GENERATE_BELL,
 		GENERATE_DOUBLE_INGOTS,
-		GENERATE_FIRMALIFE_GREENHOUSE_BLOCKS,
 		HAS_SMALL_TFC_ORE,
 		HAS_SMALL_NATIVE_TFC_ORE,
 	} = TFGMaterialFlags
@@ -229,8 +227,8 @@ const registerGTCEuMaterialModification = (event) => {
 		toolProperty.setDurability(toolProperty.getDurability() * 6);
 	}
 
-	// Bismuth item pipe - same stats as tin
-	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(4096, 0.5));
+	// Bismuth item pipe - 1/4 as good as tin
+	GTMaterials.Bismuth.setProperty(PropertyKey.ITEM_PIPE, new $ITEM_PIPE_PROPERTY(16384, 0.125));
 	// Bis bronze fluid pipe - same stats as bronze
 	GTMaterials.BismuthBronze.setProperty(PropertyKey.FLUID_PIPE, new $FLUID_PIPE_PROPERTY(1696, 20, true, false, false, false));
 	// Red steel fluid pipe - same flow rate as aluminium, bad heat tolerance (same as PE) but can do cryo
@@ -242,7 +240,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Realgar.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Cobaltite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.ARSENICOSIS, 1, false));
 	GTMaterials.Galena.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.INHALATION, GTMedicalConditions.WEAK_POISON, 1, false));
-	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.CARCINOGEN, 1, false));
+	GTMaterials.Chromite.setProperty(PropertyKey.HAZARD, new $HAZARD_PROPERTY($HAZARD_PROPERTY.HazardTrigger.SKIN_CONTACT, GTMedicalConditions.IRRITANT, 1, false));
 
 	// Color Adjustments
 	GTMaterials.BismuthBronze.setMaterialARGB(0x5A966E)
