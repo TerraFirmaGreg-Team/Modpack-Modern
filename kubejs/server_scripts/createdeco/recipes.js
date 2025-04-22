@@ -147,6 +147,13 @@ const registerCreatedecoRecipes = (event) => {
 				D: powder,
 				M: `tfc:mortar`
 			});
+
+		event.recipes.gtceu.assembler(`createdeco:${type}_bricks`)
+			.itemInputs('5x minecraft:brick', powder)
+			.inputFluids(Fluid.of('gtceu:concrete', 144))
+			.itemOutputs(`4x createdeco:${type}_bricks`)
+			.duration(50)
+			.EUt(7)
 	});
 	//#endregion
 
