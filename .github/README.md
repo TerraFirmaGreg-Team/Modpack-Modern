@@ -1,19 +1,20 @@
-# TerraFirmaGreg - Modern
+
 
 <div align="center">
+  <h1>TerraFirmaGreg - Modern</h1>
   <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern">
     <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo.png?raw=true" alt="Logo" height="100">
   </a>
   <br/>
-
   <a href="https://discord.gg/AEaCzCTUwQ">
-  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Chat on Discord" height="50"></a>
-
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/discord_logo.png?raw=true" alt="Join our Discord" height="50">
+  </a>
   <a href="https://www.curseforge.com/minecraft/modpacks/terrafirmagreg-modern">
-  <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on СurseForge" height="50"></a>
+    <img src="https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/curseforge_logo.png?raw=true" alt="Available on CurseForge" height="50">
+  </a>
   <br/>
   <p align="center">
-    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki">Explore the wiki</a>
+    <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki">Wiki</a>
     ·
     <a href="https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues">Report Bugs</a>
     ·
@@ -22,39 +23,44 @@
     <a href="https://github.com/orgs/TerraFirmaGreg-Team/projects/10">Roadmap</a>
   </p>
 </div>
+
 <br/>
 
-![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_large.png?raw=true)
+![Logo Large](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/logo_large.png?raw=true)
 
-***
+---
 
-## Survival Modpack As It Should've Been
+## Survival Modpack as it Should've Been
 
-**TerraFirmaGreg-Modern** is a Forge modpack that makes the gameplay of Minecraft realistic and challenging, because it contains two of the hard and coolest mods for Minecraft, these are [TerraFirmaCraft] and [GregTech Modern].
+**TerraFirmaGreg-Modern** is a Forge modpack that redefines Minecraft survival by introducing realistic challenges alongside advanced technological mechanics. 
+In this modpack, you will be put to the task of taking control of untouched wilderness and turning it to an industrial wonderland. 
+Start from humble beginning picking up rocks, and end while traversing interstellar space (coming soon)! 
+The heart of the modpack is formed by two standout mods:
 
-Modpack developers have carefully combined TerraFirmaCraft, which has little compatibility ability, and [GregTech Modern], the best of the technical mods.
+- **[TerraFirmaCraft]** - Renowned for its immersive survival mechanics and a unique, challenging approach.
+- **[GregTech Modern]** - A pinnacle of technical mods that brings deep, complex machinery and automation into the mix.
 
-Also in the modpack there are other interesting mods that will allow you to pass the time with pleasure (or not): 
+In addition to these core mods, TerraFirmaGreg-Modern includes several other compelling additions that enrich gameplay further:
 
-- [TerraFirmaCraft]
-- [GregTech Modern]
-- [Applied Energistics]
-- [Create]
-- [Gregicality Rocketry]
+- **[Applied Energistics]** – Cutting-edge storage and automation systems.
+- **[Create]** – Innovative machinery and kinetic contraptions.
 
 
-and others, also all these mods have addons to diversify the gameplay even more! To make it easier for you to start developing in this complex world, there are quests in the modpack, with the help of them you can get used to this unfriendly world.
+Several hand-picked TFC and Create addons to provide even more depth.
+Many other small mods tie everything together, and the modpack also integrates quests to help you navigate its complex world.
+
+---
 
 ## Development
 
-For the set-up guide, please feel free to head to the [CONTRIBUTING.md](CONTRIBUTING.md).
+Interested in contributing? For detailed setup instructions, coding standards, and guidelines, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
 
-![img](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
+---
 
+![Image Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
 
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft
 [GregTech Modern]: https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern
 [Applied Energistics]: https://www.curseforge.com/minecraft/mc-mods/ae2
 [Create]: https://www.curseforge.com/minecraft/mc-mods/create
-[Gregicality Rocketry]: https://www.curseforge.com/minecraft/mc-mods/gcyr

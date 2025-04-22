@@ -7,7 +7,7 @@
 	#Range: > 0
 	particleDistance = 15
 	#Enable Soul Particles?
-	souls = true
+	souls = false
 	#Enable Leaf Particles?
 	leaves = true
 	#Enable Snowballs?

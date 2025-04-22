@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": "tfg:nether/terrain/clay_pool",
+				"placement": []
+			},
+			{
+				"feature": "tfg:nether/terrain/clay_patch",
+				"placement": []
+			},
+			{
+				"feature": "tfg:nether/terrain/clay_patch_kaolin",
+				"placement": []
+			}
+		]
+	}
+}

@@ -1,21 +1,32 @@
 // priority: 0
 
+//#region Greenhouse
+
 const registerGTCEuMachines = (event) => {
-    event.create('greenhouse', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('greenhouse')
-        .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCCCCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
-            .aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-            .aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-            .aisle("CDDDDDC", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "FFFFFFF")
-            .aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-            .aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
-            .aisle("CCCYCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
-            .where('X', Predicates.blocks('ae2:quartz_glass'))
-            .where('F', Predicates.frames('steel'))
-            .where('D', Predicates.blocks('tfc:dirt/silt')
+
+	GTMachineUtils.registerCrate(GTMaterials.BismuthBronze, 54, "Bismuth Bronze Crate");
+	GTMachineUtils.registerCrate(GTMaterials.BlackBronze, 54, "Black Bronze Crate");
+	GTMachineUtils.registerDrum(GTMaterials.BismuthBronze, 32000, "Bismuth Bronze Drum");
+	GTMachineUtils.registerDrum(GTMaterials.BlackBronze, 32000, "Black Bronze Drum");
+	
+	const $SteamMulti = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.steam.SteamParallelMultiblockMachine');
+	const $Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
+
+	event.create('greenhouse', 'multiblock')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('greenhouse')
+		.appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle("CCCCCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
+			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
+			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
+			.aisle("CDDDDDC", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "F#####F", "FFFFFFF")
+			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
+			.aisle("CDDDDDC", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", "X#####X", " XXFXX ")
+			.aisle("CCCYCCC", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "XXXFXXX", "   F   ")
+			.where('X', Predicates.blocks('ae2:quartz_glass'))
+			.where('F', Predicates.frames('steel'))
+			.where('D', Predicates.blocks('tfc:dirt/silt')
 				.or(Predicates.blocks('tfc:dirt/loam'))
 				.or(Predicates.blocks('tfc:dirt/sandy_loam'))
 				.or(Predicates.blocks('tfc:dirt/silty_loam'))
@@ -23,63 +34,32 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.blocks('tfc:grass/loam'))
 				.or(Predicates.blocks('tfc:grass/sandy_loam'))
 				.or(Predicates.blocks('tfc:grass/silty_loam')))
-            .where('C', Predicates.blocks('gtceu:steel_machine_casing').or(Predicates.autoAbilities(definition.getRecipeTypes())))
-            .where('#', Predicates.air())
-            .where(' ', Predicates.any())
-            .where('Y', Predicates.controller(Predicates.blocks(definition.get())))
-            .build()
-        )
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor', false)
+			.where('C', Predicates.blocks('gtceu:steel_machine_casing').or(Predicates.autoAbilities(definition.getRecipeTypes())))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.where('Y', Predicates.controller(Predicates.blocks(definition.get())))
+			.build()
+		)
+		.workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor', false)
 
-  
-	event.create('alternator', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('alternator')
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCC", "CKC", "#C#")
-            .aisle("WWW", "W#W", "WWW")
-            .aisle("CAC", "CEC", "#C#")
-            .where('A', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('W', Predicates.blocks(GTBlocks.COIL_CUPRONICKEL.get()))
-            .where("C", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setExactLimit(1)))
-            .where('#', Predicates.any())
-            .where('K', Predicates.abilities(PartAbility.INPUT_KINETIC).setExactLimit(1))
-            .where('E', Predicates.abilities(PartAbility.OUTPUT_ENERGY).setExactLimit(1))
-            .build()
-        )
-        .shapeInfo(controller => MultiblockShapeInfo.builder()
-          .aisle("CCC", "CkC", " C ")
-          .aisle("WWW", "W W", "WWW")
-          .aisle("iAC", "CeC", " C ")
-          .where('A', controller, Direction.SOUTH)
-          .where('C', GTBlocks.CASING_STEEL_SOLID.get())
-          .where(' ', Block.getBlock('minecraft:air'))
-          .where('W', GTBlocks.COIL_CUPRONICKEL.get())
-          .where('k', Block.getBlock('gtceu:lv_kinetic_input_box'))
-          .where('e', GTMachines.ENERGY_OUTPUT_HATCH[GTValues.LV], Direction.SOUTH)
-          .where('i', GTMachines.ITEM_IMPORT_BUS[GTValues.LV], Direction.SOUTH)
-          .build()
-        )
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_solid_steel",
-            "gtceu:block/multiblock/implosion_compressor", false
-        )
-	
+	//#endregion
+
+	//#region Nether Dome
+
 	event.create('nether_dome', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('nether_dome')
-	    .appearanceBlock(GTBlocks.CASING_PTFE_INERT)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle(" CCCCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ")
-            .aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
-            .aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
-            .aisle("CBBBBBC", "F#####F", "F#####F", "F#####F", "FTTTTTF", "FQQQQQF")
-            .aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
-            .aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
-            .aisle(" CCXCC ", " QGOGQ ", " QOPOQ ", " QOPOQ ", " QGOGQ ", "       ")
-            .where('X', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('B', Predicates.blocks('tfc:rock/magma/basalt').setMinGlobalLimited(6)
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('nether_dome')
+		.appearanceBlock(GTBlocks.CASING_PTFE_INERT)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle(" CCCCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ")
+			.aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
+			.aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
+			.aisle("CBBBBBC", "F#####F", "F#####F", "F#####F", "FTTTTTF", "FQQQQQF")
+			.aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
+			.aisle("CBBBBBC", "Q#####Q", "Q#####Q", "Q#####Q", "QTTTTTQ", " QQQQQ ")
+			.aisle(" CCXCC ", " QGOGQ ", " QOPOQ ", " QOPOQ ", " QGOGQ ", "       ")
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('B', Predicates.blocks('tfc:rock/magma/basalt').setMinGlobalLimited(6)
 				.or(Predicates.blocks('minecraft:netherrack').setMinGlobalLimited(10)))
 			.where('T', Predicates.blocks('minecraft:glowstone').setMinGlobalLimited(5)
 				.or(Predicates.blocks('minecraft:netherrack').setMinGlobalLimited(10)))
@@ -94,7 +74,7 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.blocks('minecraft:obsidian'))
 				.or(Predicates.blocks('minecraft:nether_bricks')))
 			.where('P', Predicates.blocks('minecraft:purple_stained_glass_pane'))
-            .where('C', Predicates.blocks(GTBlocks.CASING_PTFE_INERT.get()).setMinGlobalLimited(10)
+			.where('C', Predicates.blocks(GTBlocks.CASING_PTFE_INERT.get()).setMinGlobalLimited(10)
 				.or(Predicates.autoAbilities(definition.getRecipeTypes()))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
 			.where('#', Predicates.air()
@@ -103,16 +83,16 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.blocks('minecraft:glowstone'))
 				.or(Predicates.blocks('minecraft:nether_bricks')))
 			.where(' ', Predicates.any())
-            .build()
-        )
+			.build()
+		)
 		.shapeInfo(controller => MultiblockShapeInfo.builder()
 			.aisle(" CeCeC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ")
-            .aisle("CMMMNNC", "Q    NQ", "Q     Q", "Q     Q", "QNTTNNQ", " QQQQQ ")
-            .aisle("iMMNNNf", "QR    Q", "QR    Q", "Q  T  Q", "QNTTTNQ", " QQQQQ ")
-            .aisle("CNMMMNC", "F    NF", "F     F", "F     F", "FNNTNNF", "FQQQQQF")
-            .aisle("tNNNMNl", "Q    NQ", "Q    NQ", "Q     Q", "QNNNNNQ", " QQQQQ ")
-            .aisle("CNNNNNC", "QN  NNQ", "Q    NQ", "Q    NQ", "QNNNNNQ", " QQQQQ ")
-            .aisle(" mCXCC ", " QGOGQ ", " QOPOQ ", " QOPOQ ", " QGOGQ ", "       ")
+			.aisle("CMMMNNC", "Q    NQ", "Q     Q", "Q     Q", "QNTTNNQ", " QQQQQ ")
+			.aisle("iMMNNNf", "QR    Q", "QR    Q", "Q  T  Q", "QNTTTNQ", " QQQQQ ")
+			.aisle("CNMMMNC", "F    NF", "F     F", "F     F", "FNNTNNF", "FQQQQQF")
+			.aisle("tNNNMNl", "Q    NQ", "Q    NQ", "Q     Q", "QNNNNNQ", " QQQQQ ")
+			.aisle("CNNNNNC", "QN  NNQ", "Q    NQ", "Q    NQ", "QNNNNNQ", " QQQQQ ")
+			.aisle(" mCXCC ", " QGOGQ ", " QOPOQ ", " QOPOQ ", " QGOGQ ", "       ")
 			.where('X', controller, Direction.SOUTH)
 			.where('C', GTBlocks.CASING_PTFE_INERT.get())
 			.where('N', Block.getBlock('minecraft:netherrack'))
@@ -125,7 +105,7 @@ const registerGTCEuMachines = (event) => {
 			.where('P', Block.getBlock('minecraft:purple_stained_glass_pane'))
 			.where('R', Block.getBlock('minecraft:nether_bricks'))
 			.where(' ', Block.getBlock('minecraft:air'))
-			
+
 			.where('m', GTMachines.MAINTENANCE_HATCH, Direction.SOUTH)
 			.where('i', GTMachines.ITEM_IMPORT_BUS[GTValues.ULV], Direction.WEST)
 			.where('t', GTMachines.ITEM_EXPORT_BUS[GTValues.ULV], Direction.WEST)
@@ -134,25 +114,29 @@ const registerGTCEuMachines = (event) => {
 			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.MV], Direction.NORTH)
 			.build()
 		)
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_inert_ptfe",
-            "gtceu:block/machines/gas_collector", false
-        )
-	
+		.workableCasingRenderer(
+			"gtceu:block/casings/solid/machine_casing_inert_ptfe",
+			"gtceu:block/machines/gas_collector", false
+		)
+
+	//#endregion
+
+	//#region End Dome
+
 	event.create('end_dome', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('end_dome')
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('end_dome')
 		.appearanceBlock(GTBlocks.CASING_TITANIUM_STABLE)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle(" CCCCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
-            .aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " QSSSQ ", "  GGG  ")
-            .aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " SNNNS ", " G   G ")
-            .aisle("CBBBBBC", "FOOEOOF", "FOOOOOF", "FOOOOOF", "FOOOOOF", "FSNNNSF", " G   G ")
-            .aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " SNNNS ", " G   G ")
-            .aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " QSSSQ ", "  GGG  ")
-            .aisle(" CCXCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
-            .where('X', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('B', Predicates.blocks('minecraft:end_stone').setMinGlobalLimited(20)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle(" CCCCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
+			.aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " QSSSQ ", "  GGG  ")
+			.aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " SNNNS ", " G   G ")
+			.aisle("CBBBBBC", "FOOEOOF", "FOOOOOF", "FOOOOOF", "FOOOOOF", "FSNNNSF", " G   G ")
+			.aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " SNNNS ", " G   G ")
+			.aisle("CBBBBBC", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", "QOOOOOQ", " QSSSQ ", "  GGG  ")
+			.aisle(" CCXCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('B', Predicates.blocks('minecraft:end_stone').setMinGlobalLimited(20)
 				.or(Predicates.blocks('minecraft:black_concrete')))
 			.where('O', Predicates.blocks('minecraft:obsidian').setMinGlobalLimited(8)
 				.or(Predicates.air()))
@@ -174,20 +158,20 @@ const registerGTCEuMachines = (event) => {
 				.or(Predicates.blocks('tfc:ore/small_limonite'))
 				.or(Predicates.blocks('tfc:ore/small_sphalerite'))
 				.or(Predicates.blocks('tfc:ore/small_tetrahedrite')))
-            .where('C', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).setMinGlobalLimited(10)
+			.where('C', Predicates.blocks(GTBlocks.CASING_TITANIUM_STABLE.get()).setMinGlobalLimited(10)
 				.or(Predicates.autoAbilities(definition.getRecipeTypes()))
 				.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
 			.where(' ', Predicates.any())
-            .build()
-        )
+			.build()
+		)
 		.shapeInfo(controller => MultiblockShapeInfo.builder()
 			.aisle(" CeCeC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
-            .aisle("CBBBBBC", "Q  O  Q", "Q  O  Q", "Q     Q", "Q     Q", " QSSSQ ", "  123  ")
-            .aisle("iBBBBBf", "QO   OQ", "QO    Q", "QO    Q", "Q     Q", " SNNNS ", " y   4 ")
-            .aisle("CBBBBBC", "F  E  F", "F     F", "F     F", "F     F", "FSNNNSF", " z   5 ")
-            .aisle("tBBBBNl", "Q O   Q", "Q O   Q", "Q     Q", "Q     Q", " SNNNS ", " 0   6 ")
-            .aisle("CNBBNNC", "Q     Q", "Q     Q", "Q     Q", "Q     Q", " QSSSQ ", "  987  ")
-            .aisle(" mCXCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
+			.aisle("CBBBBBC", "Q  O  Q", "Q  O  Q", "Q     Q", "Q     Q", " QSSSQ ", "  123  ")
+			.aisle("iBBBBBf", "QO   OQ", "QO    Q", "QO    Q", "Q     Q", " SNNNS ", " y   4 ")
+			.aisle("CBBBBBC", "F  E  F", "F     F", "F     F", "F     F", "FSNNNSF", " z   5 ")
+			.aisle("tBBBBNl", "Q O   Q", "Q O   Q", "Q     Q", "Q     Q", " SNNNS ", " 0   6 ")
+			.aisle("CNBBNNC", "Q     Q", "Q     Q", "Q     Q", "Q     Q", " QSSSQ ", "  987  ")
+			.aisle(" mCXCC ", " QQFQQ ", " QQFQQ ", " QQFQQ ", " QQFQQ ", "   F   ", "       ")
 			.where('X', controller, Direction.SOUTH)
 			.where('C', GTBlocks.CASING_TITANIUM_STABLE.get())
 			.where('B', Block.getBlock('minecraft:end_stone'))
@@ -198,7 +182,7 @@ const registerGTCEuMachines = (event) => {
 			.where(' ', Block.getBlock('minecraft:air'))
 			.where('S', Block.getBlock('tfg:artificial_end_portal_frame'))
 			.where('E', Block.getBlock('minecraft:dragon_egg'))
-			
+
 			.where('1', Block.getBlock('tfc:ore/small_native_copper'))
 			.where('2', Block.getBlock('tfc:ore/small_native_gold'))
 			.where('3', Block.getBlock('tfc:ore/small_hematite'))
@@ -211,7 +195,7 @@ const registerGTCEuMachines = (event) => {
 			.where('0', Block.getBlock('tfc:ore/small_limonite'))
 			.where('z', Block.getBlock('tfc:ore/small_sphalerite'))
 			.where('y', Block.getBlock('tfc:ore/small_tetrahedrite'))
-			
+
 			.where('m', GTMachines.MAINTENANCE_HATCH, Direction.SOUTH)
 			.where('i', GTMachines.ITEM_IMPORT_BUS[GTValues.ULV], Direction.WEST)
 			.where('t', GTMachines.ITEM_EXPORT_BUS[GTValues.ULV], Direction.WEST)
@@ -220,8 +204,52 @@ const registerGTCEuMachines = (event) => {
 			.where('e', GTMachines.ENERGY_INPUT_HATCH[GTValues.HV], Direction.NORTH)
 			.build()
 		)
-        .workableCasingRenderer(
-            "gtceu:block/casings/solid/machine_casing_stable_titanium",
-            "gtceu:block/machines/gas_collector", false
-        )
+		.workableCasingRenderer(
+			"gtceu:block/casings/solid/machine_casing_stable_titanium",
+			"gtceu:block/machines/gas_collector", false
+		)
+
+	//#endregion
+
+	//#region Steam Bloomery
+
+	event.create('steam_bloomery', 'multiblock')
+		.machine((holder) => new $SteamMulti(holder, 8))
+		.rotationState(RotationState.NON_Y_AXIS)
+		.recipeType('steam_bloomery')
+		.recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
+		.appearanceBlock(GTBlocks.CASING_BRONZE_BRICKS)
+		.pattern(definition => FactoryBlockPattern.start()
+			.aisle(" F ", " C ", " E ", " E ", " E ")
+			.aisle("FCF", "C#C", "E#E", "E#E", "E#E")
+			.aisle(" F ", "CXC", " E ", " E ", " E ")
+			.where('X', Predicates.controller(Predicates.blocks(definition.get())))
+			.where('C', Predicates.blockTag($Tags.block("tfc:bloomery_insulation")))
+			.where('F', Predicates.blocks(GTBlocks.FIREBOX_BRONZE.get())
+				.or(Predicates.abilities(PartAbility.STEAM).setExactLimit(1)))
+			.where('E', Predicates.abilities(PartAbility.STEAM_IMPORT_ITEMS).setExactLimit(1)
+				.or(Predicates.abilities(PartAbility.STEAM_EXPORT_ITEMS).setExactLimit(1))
+				.or(Predicates.blockTag($Tags.block("tfc:bloomery_insulation"))))
+			.where('#', Predicates.air())
+			.where(' ', Predicates.any())
+			.build()
+		)
+		.shapeInfo(controller => MultiblockShapeInfo.builder()
+			.aisle(" F ", " C ", " C ", " C ", " C ")
+			.aisle("FCF", "C#C", "C#C", "C#C", "C#C")
+			.aisle(" i ", "CXC", " O ", " I ", " C ")
+			.where('X', controller, Direction.SOUTH)
+			.where('C', Block.getBlock('tfc:rock/bricks/rhyolite'))
+			.where('F', GTBlocks.FIREBOX_BRONZE.get())
+			.where('i', GTMachines.STEAM_HATCH, Direction.SOUTH)
+			.where('O', GTMachines.STEAM_EXPORT_BUS, Direction.SOUTH)
+			.where('I', GTMachines.STEAM_IMPORT_BUS, Direction.SOUTH)
+			.build()
+		)
+		.workableCasingRenderer(
+			"gtceu:block/casings/solid/machine_casing_bronze_plated_bricks",
+			"tfg:block/steam_bloomery", false
+		)
+	//#endregion
+
 }

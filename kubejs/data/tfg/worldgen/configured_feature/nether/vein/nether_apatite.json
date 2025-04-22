@@ -1,0 +1,87 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 220,
+		"density": 0.35,
+		"min_y": 48,
+		"max_y": 128,
+		"size": 39,
+		"random_name": "nether_apatite",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/schist"
+				],
+				"with": [
+					{
+						"block": "gtceu:schist_apatite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:schist_tricalcium_phosphate_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:schist_pyrochlore_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_tricalcium_phosphate_block",
+						"weight": 1
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gneiss"
+				],
+				"with": [
+					{
+						"block": "gtceu:gneiss_apatite_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:gneiss_tricalcium_phosphate_ore",
+						"weight": 35
+					},
+					{
+						"block": "gtceu:gneiss_pyrochlore_ore",
+						"weight": 15
+					},
+					{
+						"block": "gtceu:raw_apatite_block",
+						"weight": 2
+					},
+					{
+						"block": "gtceu:raw_tricalcium_phosphate_block",
+						"weight": 1
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 1,
+			"underground_rarity": 40,
+			"underground_count": 150,
+			"blocks": [
+				{
+					"block": "gtceu:tricalcium_phosphate_indicator",
+					"weight": 35
+				},
+				{
+					"block": "gtceu:pyrochlore_indicator",
+					"weight": 15
+				},
+				{
+					"block": "gtceu:apatite_bud_indicator",
+					"weight": 50
+				}
+			]
+		}
+	}
+}

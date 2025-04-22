@@ -1,0 +1,8 @@
+{
+	"type": "beneath:nether_spikes",
+	"config": {
+		"raw": "tfc:rock/hardened/schist",
+		"spike": "tfc:rock/spike/schist",
+		"anchor_blocks": "minecraft:base_stone_nether"
+	}
+}

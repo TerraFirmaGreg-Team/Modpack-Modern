@@ -9,8 +9,10 @@ const registerTFCDataForTFC = (event) => {
     registerTFCKnappingTypes(event)
     registerTFCItemSize(event)
     registerTFCFoodData(event)
+    registerTFCSupportData(event)
 }
 
+//#region registerTFCMetals
 const registerTFCMetals = (event) => {
     event.metal('gtceu:copper', 1080, 0.00857, '#forge:ingots/copper', '#forge:double_ingots/copper', '#forge:plates/copper', 1, 'tfc:copper')
     event.metal('gtceu:bismuth_bronze', 985, 0.00857, '#forge:ingots/bismuth_bronze', '#forge:double_ingots/bismuth_bronze', '#forge:plates/bismuth_bronze', 2, 'tfc:bismuth_bronze')
@@ -21,16 +23,6 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:black_steel', 1485, 0.00857, '#forge:ingots/black_steel', '#forge:double_ingots/black_steel', '#forge:plates/black_steel', 5, 'tfc:black_steel')
     event.metal('gtceu:blue_steel', 1540, 0.00857, '#forge:ingots/blue_steel', '#forge:double_ingots/blue_steel', '#forge:plates/blue_steel', 6, 'tfc:blue_steel')
     event.metal('gtceu:red_steel', 1540, 0.00857, '#forge:ingots/red_steel', '#forge:double_ingots/red_steel', '#forge:plates/red_steel', 6, 'tfc:red_steel')
-
-    event.metal('tfg:pig_iron', 1535, 0.00857, '#forge:ingots/pig_iron', null, null, 3, 'tfc:pig_iron')
-    event.metal('tfg:high_carbon_steel', 1540, 0.00857, '#forge:ingots/high_carbon_steel', null, null, 3, 'tfc:high_carbon_steel')
-    event.metal('tfg:high_carbon_black_steel', 1535, 0.00857, '#forge:ingots/high_carbon_black_steel', null, null, 4, 'tfc:high_carbon_black_steel')
-    event.metal('tfg:high_carbon_red_steel', 1535, 0.00857, '#forge:ingots/high_carbon_red_steel', null, null, 5, 'tfc:high_carbon_red_steel')
-    event.metal('tfg:high_carbon_blue_steel', 1535, 0.00857, '#forge:ingots/high_carbon_blue_steel', null, null, 5, 'tfc:high_carbon_blue_steel')
-    event.metal('tfg:weak_steel', 1540, 0.00857, '#forge:ingots/weak_steel', null, null, 4, 'tfc:weak_steel')
-    event.metal('tfg:weak_red_steel', 1540, 0.00857, '#forge:ingots/weak_red_steel', null, null, 5, 'tfc:weak_red_steel')
-    event.metal('tfg:weak_blue_steel', 1540, 0.00857, '#forge:ingots/weak_blue_steel', null, null, 5, 'tfc:weak_blue_steel')
-    event.metal('tfg:unknown', 400, 0.006, '#forge:ingots/unknown', null, null, 0, 'tfc:unknown')
 
     event.metal('gtceu:iron', 1535, 0.00857, '#forge:ingots/iron', '#forge:double_ingots/iron', '#forge:plates/iron', 3, 'tfc:cast_iron')
     event.metal('gtceu:tin', 230, 0.02143, '#forge:ingots/tin', '#forge:double_ingots/tin', '#forge:plates/tin', 1, 'tfc:tin')
@@ -47,7 +39,9 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
     event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
+//#endregion
 
+//#region registerTFCHeats
 const registerTFCHeats = (event) => {
     
     function makeItemHeatByTagPrefix(tagPrefix, material, tfcProperty, heatCapacity) {
@@ -127,22 +121,40 @@ const registerTFCHeats = (event) => {
     event.itemHeat('tfc:groundcover/seaweed', 1.0, null, null)
     event.itemHeat('tfc:plant/leafy_kelp', 1.0, null, null)
     event.itemHeat('tfc:plant/winged_kelp', 1.0, null, null)
+
+    // Misc
+    event.itemHeat('tfg:latex_soaked_gloves', 1.0, null, null)
+
+    global.MINECRAFT_DYE_NAMES.forEach (color => {
+        event.itemHeat(`tfg:decorative_vase/unfired/${color}`, 1.0, null, null)
+    })
+    event.itemHeat('tfg:decorative_vase/unfired', 1.0, null, null)
 }
+//#endregion
 
+//#region registerTFCFuels
 const registerTFCFuels = (event) => {
-    event.fuel('minecraft:coal', 1415, 2200, 1.0)
     event.fuel('gtceu:coke_gem', 1415, 4400, 1.0)
+    event.fuel('gtceu:coke_dust', 1415, 1200, 0.95)
+    
+    event.fuel('beneath:cursecoal', 1540, 2200, 1.0)
 
+    event.fuel('minecraft:coal', 1415, 2200, 1.0)
     event.fuel('gtceu:rich_raw_coal', 1415, 2200, 0.95)
     event.fuel('gtceu:raw_coal', 1415, 1900, 0.95)
     event.fuel('gtceu:poor_raw_coal', 1415, 1600, 0.95)
+    event.fuel('gtceu:coal_dust', 1415, 600, 0.95)
 }
+//#endregion
 
+//#region registerTFCLampFuels
 const registerTFCLampFuels = (event) => {
     event.lampFuel('gtceu:creosote', '#tfc:lamps', 1000)
     event.lampFuel("gtceu:glowstone", "#tfc:lamps", -1)
 }
+//#endregion
 
+//#region registerTFCFertilizers
 const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:fertilizer', 0.15, 0.15, 0.15)
 
@@ -161,17 +173,38 @@ const registerTFCFertilizers = (event) => {
     event.fertilizer('gtceu:tiny_bone_dust', null, 0.01, null)
     event.fertilizer('gtceu:small_bone_dust', null, 0.025, null)
 }
+//#endregion
 
+//#region registerTFCKnappingTypes
 const registerTFCKnappingTypes = (event) => {
+    event.knappingType('minecraft:flint', 1, 1, 'tfc:item.knapping.stone', true, false, true, 'minecraft:flint', 'tfg:flint')
     // event.knappingType('gtceu:rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:rubber_plate', 'tfg:rubber')
     // event.knappingType('gtceu:styrene_butadiene_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:styrene_butadiene_rubber_plate', 'tfg:styrene_butadiene_rubber_plate')
     // event.knappingType('gtceu:silicone_rubber_plate', 1, 5, 'tfc:item.knapping.leather', true, false, true, 'gtceu:silicone_rubber_plate', 'tfg:silicone_rubber_plate')
 }
+//#endregion
 
+//#region registerTFCItemSize
 const registerTFCItemSize = (event) => {
-    // TODO event.itemSize('minecraft:gold_ingot', 'huge', 'very_heavy')
-}
+    event.itemSize('sophisticatedbackpacks:backpack', 'very_large', 'very_heavy', 'backpack_size')
+    event.itemSize('sophisticatedbackpacks:iron_backpack', 'very_large', 'very_heavy', 'iron_backpack_size')
+    event.itemSize('sophisticatedbackpacks:gold_backpack', 'very_large', 'very_heavy', 'gold_backpack_size')
+    event.itemSize('sophisticatedbackpacks:diamond_backpack', 'very_large', 'very_heavy', 'diamond_backpack_size')
+    event.itemSize('sophisticatedbackpacks:netherite_backpack', 'very_large', 'very_heavy', 'netherite_backpack_size')
 
+    global.MINECRAFT_DYE_NAMES.forEach (color => {
+        event.itemSize(`tfg:decorative_vase/${color}`, 'normal', 'medium', `decorative_vase/${color}`)
+        event.itemSize(`tfg:decorative_vase/unfired/${color}`, 'normal', 'medium', `decorative_vase/unfired/${color}`)
+    })
+    event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
+    event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
+
+    event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
+
+}
+//#endregion
+
+//#region registerTFCFoodData
 const registerTFCFoodData = (event) => {
     event.foodItem('minecraft:golden_apple', food => {
         food.hunger(2)
@@ -184,4 +217,59 @@ const registerTFCFoodData = (event) => {
         food.fruit(2)
         food.decayModifier(0.2)
     })
+
+    event.foodItem('minecraft:glow_berries', food => {
+        food.hunger(1)
+        food.fruit(0.5)
+        food.water(5)
+        food.decayModifier(2)
+    })
+    
+    event.foodItem('minecraft:chorus_fruit', food => {
+        food.hunger(1.5)
+        food.fruit(1)
+        food.water(5)
+    })
+
+
+    event.foodItem('minecraft:red_mushroom', food => {
+        food.hunger(1.5)
+        food.vegetables(1)
+        food.water(5)
+        food.decayModifier(2)
+    })
+
+    event.foodItem('minecraft:brown_mushroom', food => {
+        food.saturation(2)
+        food.hunger(2)
+        food.vegetables(1)
+        food.water(2)
+        food.decayModifier(2)
+    })
+
+    event.foodItem('gtceu:chocolate_coin', food => {
+        food.hunger(1)
+        food.dairy(0.5)
+    })
 }
+//#endregion 
+
+//#region registerTFCSupportData
+//up, down, horizontal
+const registerTFCSupportData = (event) => {
+    event.support('tfg:light_concrete_support', 4, 4, 8, 'light_concrete_support')
+    event.support('tfg:dark_concrete_support', 4, 4, 8, 'dark_concrete_support')
+    event.support('tfg:reinforced_light_concrete_support', 6, 6, 16, 'reinforced_light_concrete_support')
+    event.support('tfg:reinforced_dark_concrete_support', 6, 6, 16, 'reinforced_dark_concrete_support')
+    event.support('tfg:rebar_support', 4, 4, 8, 'rebar_support')
+    event.support('tfg:steel_support', 6, 6, 16, 'steel_support')
+
+	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
+	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
+
+	stone_types.forEach(stone => {
+
+        event.support(`tfg:${stone}_support`, 2, 2, 4, `${stone}_support`)
+    })
+}
+//#endregion

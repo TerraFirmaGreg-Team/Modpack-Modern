@@ -1,0 +1,88 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "name": "Primitive Anvils",
+  "category": "tfc:getting_started",
+  "icon": "tfc:rock/anvil/granite",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "An alternative to casting tools directly in the early game, and a requirement for higher tier metals, is to use an $(thing)Anvil$(). An anvil is a block which can be used for two different processes: $(l:mechanics/anvils#working)working$() and $(l:getting_started/primitive_anvils#welding)welding$(). An anvil can weld double ingots of the metal type needed to create the next tier anvil above it, which will be necessary to work other items from that metal."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "First, you need to acquire a block of $(thing)raw rock$(), that is $(thing)igneous extrusive$() (Rhyolite, Basalt, Andesite, or Dacite) or $(thing)igneous intrusive$() (Granite, Diorite, or Gabbro). You could find and use an exposed block in the world, or you could $(l:getting_started/primitive_anvils#raw_rock)extract one$() from the surrounding rock."
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "stone_anvils",
+      "text": "You will also need any material of $(thing)hammer$(). In order to make the anvil, simply right click the exposed $(thing)top$() face of one of those raw rock blocks with your $(thing)hammer$(), and voila! An anvil will be formed.$(br2)Anvils have $(l:mechanics/anvils#tiers)tiers$() and the rock anvil is tier 0 - the lowest tier. It is only able to $(l:getting_started/primitive_anvils#welding)weld$() tier I ingots.",
+      "title": "Rock Anvil"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Converting the center raw rock to an anvil.",
+      "multiblocks": [ { "pattern": [ [ " 0 " ], [ "RRR" ] ], "mapping": { "0": "AIR", "R": "tfc:rock/raw/gabbro" } }, "tfc:rock_anvil" ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "raw_rock",
+      "text": "In order to obtain a raw rock block without breaking it into smaller rocks, it needs to be $(thing)extracted$(). You must mine the blocks on all six sides of a raw rock block - once it is surrounded by air on all sides - it will pop off as a item which can be picked up.",
+      "title": "Obtaining Raw Rock"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "Mining all six sides of a piece of raw stone - once complete, the center block will pop off as an item.",
+      "multiblocks": [
+        {
+          "pattern": [ [ "   ", " R ", "   " ], [ " R ", "RRR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ " R ", "RRR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", "RRR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " RR", " R " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " RR", "   " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " R ", "   " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "tfc:rock/raw/gabbro", "R": "tfc:rock/raw/gabbro" }
+        },
+        {
+          "pattern": [ [ "   ", "   ", "   " ], [ "   ", " R ", "   " ], [ "   ", " 0 ", "   " ] ],
+          "mapping": { "0": "AIR", "R": "tfc:rock/raw/gabbro" }
+        }
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "welding",
+      "text": "Welding is a process through which two items are fused together to create a new item. Welding works the same whether on a $(l:getting_started/primitive_anvils)stone anvil$() or a $(l:mechanics/anvils)metal anvil$().$(br2)First, you must place the two items you want to weld on the anvil. You can do this either by using the items on the anvil, or by opening the anvil interface and inserting them in the two leftmost slots.",
+      "title": "Welding"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You also need to have at least one $(l:mechanics/flux)flux$() in the anvil to aid the welding process. Then, while both items are $(l:mechanics/heating)hot enough$() to weld - the tooltip will say \"Can Weld\" - you must use any $(thing)hammer$() on the anvil or press the weld button on the anvil interface. You will hear a hammering sound and the items will be welded together."
+    }
+  ],
+  "read_by_default": true,
+  "sortnum": 6,
+  "extra_recipe_mappings": {
+    "tfc:rock/anvil/granite": 0,
+    "tfc:rock/anvil/diorite": 0,
+    "tfc:rock/anvil/gabbro": 0,
+    "tfc:rock/anvil/rhyolite": 0,
+    "tfc:rock/anvil/basalt": 0,
+    "tfc:rock/anvil/andesite": 0,
+    "tfc:rock/anvil/dacite": 0
+  }
+}

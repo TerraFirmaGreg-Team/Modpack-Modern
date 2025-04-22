@@ -2,6 +2,8 @@
 
 const registerComputerCraftRecipes = (event) => {
     
+    registerComputerCraftRecyclingRecipes(event);
+
     // Удаление рецептов мода
     event.remove({ not: [
         { id: 'computercraft:printed_pages' },
@@ -126,69 +128,44 @@ const registerComputerCraftRecipes = (event) => {
         .id('tfg:crafting/wired_modem_full_shapeless')
 
     // Computer Normal
-    event.shaped('computercraft:computer_normal', [
-        'AB ',
-        'CD ',
-        'EAE'
-    ], {
-        A: 'gtceu:magnesium_diboride_single_wire',
-        B: 'gtceu:computer_monitor_cover',
-        C: '#gtceu:batteries/mv',
-        D: 'gtceu:mv_machine_casing',
-        E: '#gtceu:circuits/hv'
-    }).id('tfg:crafting/computer_normal')
+	event.recipes.gtceu.assembler('computercraft:assembler/computer_normal')
+		.itemInputs('1x gtceu:mv_machine_casing','2x #gtceu:circuits/hv','3x #forge:double_wires/magnesium_diboride', '2x #gtceu:batteries/mv', '4x computercraft:cable', '8x gtceu:cpu_chip', '1x gtceu:computer_monitor_cover')
+		.circuit(4)
+		.itemOutputs('computercraft:computer_normal')
+		.duration(1200)
+		.EUt(GTValues.VA[GTValues.MV])
 
     // Computer Advanced
-    event.shaped('computercraft:computer_advanced', [
-        'AB ',
-        'CD ',
-        'EAE'
-    ], {
-        A: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
-        B: 'gtceu:computer_monitor_cover',
-        C: '#gtceu:batteries/hv',
-        D: 'gtceu:hv_machine_casing',
-        E: '#gtceu:circuits/ev'
-    }).id('tfg:crafting/computer_advanced')
+	event.recipes.gtceu.assembler('computercraft:assembler/computer_advanced')
+		.itemInputs('1x gtceu:hv_machine_casing','2x #gtceu:circuits/ev','3x #forge:double_wires/mercury_barium_calcium_cuprate', '2x #gtceu:batteries/hv', '4x computercraft:cable', '12x gtceu:soc', '1x gtceu:computer_monitor_cover')
+		.circuit(4)
+		.itemOutputs('computercraft:computer_advanced')
+		.duration(1200)
+		.EUt(GTValues.VA[GTValues.HV])
 
     // Turtle Normal
-    event.shaped('computercraft:turtle_normal', [
-        'ABC',
-        'DFD',
-        'EGH'
-    ], {
-        A: 'gtceu:hv_conveyor_module',
-        B: 'gtceu:hv_emitter',
-        C: 'gtceu:hv_sensor',
-        D: 'gtceu:hv_robot_arm',
-        E: '#gtceu:circuits/ev',
-        F: 'computercraft:computer_normal',
-        G: 'gtceu:steel_crate',
-        H: 'gtceu:hv_electric_piston',
-    }).id('tfg:crafting/turtle_normal')
+	event.recipes.gtceu.assembler('computercraft:assembler/turtle_normal')
+		.itemInputs('1x computercraft:computer_normal','2x #gtceu:circuits/ev','1x gtceu:steel_crate', '2x gtceu:hv_conveyor_module', '2x gtceu:hv_robot_arm', '1x gtceu:hv_emitter', '1x gtceu:hv_sensor', '1x gtceu:hv_fluid_regulator')
+		.circuit(4)
+		.itemOutputs('computercraft:turtle_normal')
+		.duration(1200)
+		.EUt(GTValues.VA[GTValues.HV])
 
     // Turtle Advanced
-    event.shaped('computercraft:turtle_advanced', [
-        'ABC',
-        'DFD',
-        'EGH'
-    ], {
-        A: 'gtceu:ev_conveyor_module',
-        B: 'gtceu:ev_emitter',
-        C: 'gtceu:ev_sensor',
-        D: 'gtceu:ev_robot_arm',
-        E: '#gtceu:circuits/iv',
-        F: 'computercraft:computer_advanced',
-        G: 'gtceu:aluminium_crate',
-        H: 'gtceu:ev_electric_piston',
-    }).id('tfg:crafting/turtle_advanced')
+	event.recipes.gtceu.assembler('computercraft:assembler/turtle_advanced')
+		.itemInputs('1x computercraft:computer_advanced','2x #gtceu:circuits/iv','1x gtceu:aluminium_crate', '2x gtceu:ev_conveyor_module', '2x gtceu:ev_robot_arm', '1x gtceu:ev_emitter', '1x gtceu:ev_sensor', '1x gtceu:ev_fluid_regulator')
+		.circuit(4)
+		.itemOutputs('computercraft:turtle_advanced')
+		.duration(1200)
+		.EUt(GTValues.VA[GTValues.EV])
 
     // Disk Crafts
     for (let i = 0; i < 16; i++) {
         event.recipes.gtceu.chemical_bath('computercraft:disk' + `${global.MINECRAFT_DYE_NAMES[i]}`)
             .itemInputs('ae2:blank_pattern')
-            .inputFluids(Fluid.of(`gtceu:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 288))
+            .inputFluids(Fluid.of(`tfc:${global.MINECRAFT_DYE_NAMES[i]}_dye`, 288))
             .itemOutputs(Item.of('computercraft:disk', global.COMPUTER_CRAFT_DISCS[i]))
+            .category(GTRecipeCategories.CHEM_DYES)
             .duration(20)
             .EUt(7)
     }

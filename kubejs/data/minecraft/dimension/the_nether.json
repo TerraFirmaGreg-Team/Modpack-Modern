@@ -1,0 +1,305 @@
+{
+	"type": "tfg:the_nether",
+	"generator": {
+		"type": "minecraft:noise",
+		"settings": "tfg:nether",
+		"biome_source": {
+			"type": "minecraft:multi_noise",
+			"biomes": [
+				{
+					"biome": "tfg:nether/decaying_caverns",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.3, 0.5 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/lava_floes",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.3, 0.5 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/decaying_caverns",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.85, -0.3 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.85, -0.3 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/diorite_caves",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ 0.5, 1 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/lava_floes",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ 0.5, 1 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/diorite_caves",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -1, -0.85 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": [ 0.2, 1 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -1, -0.85 ]
+					}
+				},
+
+
+
+				{
+					"biome": "tfg:nether/lush_hollow",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.3, 0.5 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/ash_forest",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.3, 0.5 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/lush_hollow",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.85, -0.3 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/schist_caves",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.85, -0.3 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/gabbro_caves",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ 0.5, 1 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/ash_forest",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ 0.5, 1 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/gabbro_caves",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -1, -0.85 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/schist_caves",
+					"parameters": {
+						"continentalness": [ -0.2, 0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -1, -0.85 ]
+					}
+				},
+
+
+				{
+					"biome": "tfg:nether/webbed_lair",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.3, 0.5 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/basalt_deltas",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.3, 0.5 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/webbed_lair",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.85, -0.3 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -0.85, -0.3 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ 0.5, 1 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/basalt_deltas",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ 0.5, 1 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/gneiss_caves",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ -0.5, 0 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -1, -0.85 ]
+					}
+				},
+				{
+					"biome": "tfg:nether/granite_caves",
+					"parameters": {
+						"continentalness": [ -1, -0.2 ],
+						"depth": [ 0, 1 ],
+						"erosion": 0,
+						"humidity": 0,
+						"offset": 0,
+						"temperature": 0,
+						"weirdness": [ -1, -0.85 ]
+					}
+				}
+			]
+		}
+	}
+}

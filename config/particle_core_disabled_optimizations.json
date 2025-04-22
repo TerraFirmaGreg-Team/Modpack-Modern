@@ -1,0 +1,12 @@
+{
+  "_Disable_Optimizations_Options": {
+    "ROTATION": "[Impact: Medium] Disables mixins related to vertex rotation caching (ParticleManagerRotationMixin, BillboardParticleMixin)",
+    "TYPE": "[Impact: Low to Medium] Disables mixins related to particle disabling and reduction (WorldRendererTypeMixin)",
+    "DECREASE": "[Impact: Low] Disables mixins related particle settings reduction (ALL, DECREASED, MINIMAL) (WorldRendererDecreaseMixin)",
+    "LIGHTMAP": "[Impact: Medium] Disables mixins related to light map caching (ParticleManagerCachedLightMixin, ParticleMixin)",
+    "POTION": "[Impact: Low] Disables mixins related to potion particle disabling (LivingEntityMixin)"
+  },
+  "disableOptimizations": [
+    "NONE"
+  ]
+}
