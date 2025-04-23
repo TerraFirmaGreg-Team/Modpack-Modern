@@ -480,13 +480,6 @@ function registerGreateRecyclingRecipes(event) {
 
 	// #region Belts
 
-	event.recipes.gtceu.macerator('greate:rubber_belt_connector')
-		.itemInputs('greate:rubber_belt_connector')
-		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Rubber, 6))
-		.duration(GTMaterials.Rubber.getMass() * 6)
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-		.EUt(GTValues.VA[GTValues.ULV])
-
 	event.recipes.gtceu.macerator('greate:silicone_rubber_belt_connector')
 		.itemInputs('greate:silicone_rubber_belt_connector')
 		.itemOutputs(ChemicalHelper.get(TagPrefix.dust, GTMaterials.SiliconeRubber, 6))
