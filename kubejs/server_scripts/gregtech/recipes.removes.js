@@ -586,6 +586,7 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/activator_rail' })
 	event.remove({ id: 'gtceu:shaped/shield' })
 	event.remove({ id: 'gtceu:shaped/pickaxe_iron' })
+	event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint' })
 
 	event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' })
 

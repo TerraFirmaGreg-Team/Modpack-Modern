@@ -499,6 +499,8 @@ function registerVintageImprovementsRecipes(event) {
 			if (!(EUt <= 32)) { return }
 			// Skip this one
 			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
+			// Skip glass too
+			if (r.outputs.item[1].content.ingredient.item == "gtceu:glass_dust") { return }
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
