@@ -948,4 +948,28 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:leather')
 		.EUt(7).duration(80)
 	//#endregion
+
+	//#region Campfire
+	event.shaped('minecraft:campfire', [
+        ' A ',
+        'ABA',
+        'CDC'
+    ], {
+        A: 'minecraft:blaze_rod',
+        B: 'minecraft:blaze_powder',
+        C: '#forge:ingots/blue_steel',
+        D: '#forge:storage_blocks/charcoal',
+    }).id('tfg:campfire_charcoal')
+
+	event.shaped('minecraft:campfire', [
+        ' A ',
+        'ABA',
+        'CDC'
+    ], {
+        A: 'minecraft:blaze_rod',
+        B: 'minecraft:blaze_powder',
+        C: '#forge:ingots/blue_steel',
+        D: '#forge:storage_blocks/coal',
+    }).id('tfg:campfire_coal')
+	//#endregion
 }
