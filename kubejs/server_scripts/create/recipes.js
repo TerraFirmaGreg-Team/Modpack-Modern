@@ -1397,7 +1397,7 @@ const registerCreateRecipes = (event) => {
 				'BAB',
 				' B '
 			], {
-			A: 'minecraft:glass',
+			A: '#forge:glass',
 			B: x[1]
 		}).id(`tfg:create/shaped/${x[0]}_window`)
 

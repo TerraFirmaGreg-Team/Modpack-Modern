@@ -70,7 +70,7 @@ const registerCreateConnectedRecipes = (event) => {
 		' A '
 	], {
 		A: 'afc:wood/planks/fig',
-		B: 'minecraft:glass'
+		B: '#forge:glass'
 	}).id('create_connected:shaped/cherry_window_pane')
 
 	event.shaped('create_connected:bamboo_window_pane', [
@@ -78,6 +78,6 @@ const registerCreateConnectedRecipes = (event) => {
 		'ABA'
 	], {
 		A: 'minecraft:bamboo_planks',
-		B: 'minecraft:glass'
+		B: '#forge:glass'
 	}).id('create_connected:shaped/bamboo_window_pane')
 }

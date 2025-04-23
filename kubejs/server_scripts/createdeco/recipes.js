@@ -276,7 +276,7 @@ const registerCreatedecoRecipes = (event) => {
 				' B ',
 				'BAB'
 			], {
-			A: 'minecraft:glass',
+			A: '#forge:glass',
 			B: x[1]
 		}).id(`createdeco:${x[0]}_window`)
 
