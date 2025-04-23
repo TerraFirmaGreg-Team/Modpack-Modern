@@ -976,13 +976,13 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
 		.itemOutputs('tfc:raw_iron_bloom')
 		.duration(2400)
-		.EUt(GTValues.VEX[GTValues.ULV])
+		.EUt(2)
 
 	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coalcoke')
 		.itemInputs('2x #forge:ingots/iron', '#tfc:blast_furnace_fuel')
 		.itemOutputs('2x tfc:raw_iron_bloom')
 		.duration(2400)
-		.EUt(GTValues.VEX[GTValues.ULV])
+		.EUt(2)
 
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
@@ -996,13 +996,13 @@ const registerGTCEURecipes = (event) => {
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
 				.itemOutputs('tfc:raw_iron_bloom')
 				.duration(2400)
-				.EUt(GTValues.VEX[GTValues.ULV])
+				.EUt(2)
 
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coalcoke_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 2), '#tfc:blast_furnace_fuel')
 				.itemOutputs('2x tfc:raw_iron_bloom')
 				.duration(2400)
-				.EUt(GTValues.VEX[GTValues.ULV])
+				.EUt(2)
 		}
 	})
 
