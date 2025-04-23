@@ -642,7 +642,7 @@
 			y: -1.875d
 		}
 		{
-			dependencies: ["6B1595678ECB7AC8"]
+			dependencies: ["6A451F43F3D7A671"]
 			description: [
 				"The first &1IV&r circuit. Congratulations on making it this far!"
 				""
@@ -1287,6 +1287,10 @@
 			y: -6.0d
 		}
 		{
+			dependencies: [
+				"5063FDFFBE3E4855"
+				"3568BC9742092FC5"
+			]
 			description: [
 				"Your first &5EV&r Circuit gets a unique texture. If you still consider yourself to be in &bMV&r, &ahold off&r on making too many of these, as they won't benefit you right now. We can't stop you from making these if you &djust wanna flex&r on us, though."
 				""
@@ -1303,8 +1307,8 @@
 				type: "item"
 			}]
 			title: "First EV Circuits!"
-			x: 11.5d
-			y: -5.0d
+			x: 8.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]

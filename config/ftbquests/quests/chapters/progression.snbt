@@ -302,6 +302,14 @@
 			x: 6.0d
 			y: -4.0d
 		}
+		{
+			id: "713A4F2E798A8BDB"
+			linked_quest: "6A451F43F3D7A671"
+			shape: "rsquare"
+			size: 0.8d
+			x: 2.0d
+			y: 3.0d
+		}
 	]
 	quests: [
 		{

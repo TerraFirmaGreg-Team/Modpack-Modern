@@ -6,17 +6,10 @@
 	icon: "gtceu:mv_electric_motor"
 	id: "43E779CEEB25D55B"
 	order_index: 1
-	quest_links: [{
-		id: "61C8F2CC50A0B142"
-		linked_quest: "71A3D034BBA13CF0"
-		shape: "gear"
-		size: 3.0d
-		x: 3.0d
-		y: 1.0d
-	}]
+	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["64CF0D15AC22CFE0"]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"The &3Pyrolyse Oven&r is an electric equivalent to the &3Coke Oven&r. It can produce &9Coal Coke&r and &9Charcoal&r with a &9Creosote&r byproduct just as before, but also has additional &6Organic Byproducts&r, the most beneficial of these being &aWood Tar&r."
 				""
@@ -82,7 +75,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"The Brewery can be used to make &aLubricant&r from &aRedstone&r and &aCreosote&r/&aOil&r. Lubricant has some niche uses, namely being used in the &3Cutter&r to significantly reduce the duration of its recipes."
 				""
@@ -92,6 +85,7 @@
 				"{@pagebreak}"
 				"&l&3Lore:&r&o You could make your own Brewery if you want to build up a company and start selling Booze... in GregTech 6.&r"
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:mv_brewery"
 			id: "1A29EFBCEA017F99"
 			shape: "square"
@@ -157,6 +151,7 @@
 				"&cDo not try&r to use Ethanol as a Power source... it's quite possibly its worst use. If it's organic &9Power&r that you want, we suggest taking a look at &dBenzene&r instead!"
 			]
 			id: "5D9D01EF219A31C5"
+			optional: true
 			size: 1.0d
 			subtitle: "Yo, wait - that's alcohol!"
 			tasks: [{
@@ -181,6 +176,7 @@
 			]
 			icon: "gtceu:naphtha_bucket"
 			id: "6238B2A7ED1BE5A1"
+			optional: true
 			size: 1.0d
 			subtitle: "We're still confused on how this is pronounced"
 			tasks: [
@@ -215,6 +211,7 @@
 			]
 			icon: "gtceu:severely_steam_cracked_naphtha_bucket"
 			id: "3E2E161F8CE35138"
+			optional: true
 			size: 1.0d
 			subtitle: "Fuel and oil cracking can get complicated..."
 			tasks: [{
@@ -344,10 +341,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"7567E885B7166603"
-				"0DBC148D92A9F69F"
-			]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"If you're wanting to dive into &bMV&r, start here."
 				""
@@ -440,7 +434,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["64CF0D15AC22CFE0"]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"This kind soul&r will mine ores for you when placed above a vein."
 				""
@@ -460,7 +454,8 @@
 			]
 			icon: "gtceu:mv_miner"
 			id: "5C94CF50090D7DA0"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			tasks: [{
 				id: "431D533510584687"
@@ -475,8 +470,8 @@
 				type: "item"
 			}]
 			title: "Digital Miner"
-			x: 0.0d
-			y: 2.5d
+			x: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4A92AFD2532EED26"]
@@ -566,8 +561,8 @@
 				item: "gtceu:annealed_copper_single_wire"
 				type: "item"
 			}]
-			shape: "square"
-			size: 1.0d
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "LV is so old-school!"
 			tasks: [{
 				id: "1C69557EB4F9E50F"
@@ -579,10 +574,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"7567E885B7166603"
-				"0DBC148D92A9F69F"
-			]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"The &3Assembler&r is a staple for every Tier; an important goal to unlock more recipes and progress further into the Age. Many in the community see crafting a voltage tier's Assembler as a sign of &oproperly&r reaching said voltage."
 				""
@@ -667,41 +659,8 @@
 				type: "item"
 			}]
 			title: "Kanthal Coils"
-			x: 2.0d
+			x: 1.5d
 			y: 10.0d
-		}
-		{
-			dependencies: ["1C55AE6AD5BDE304"]
-			description: [
-				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
-				""
-				"The cheap way would be to use filters, and manually add Hot Ingots one by one... which is so boring! Let's try the fun option."
-				""
-				"Install an &aItem Tag Filter&r Cover on the side of your &3Chemical Bath&r, open it and set it to whitelist \"&e&lhot_ingots&r\"."
-				""
-				"From here, you can route with &9any logistics system&r of your choice."
-				"{@pagebreak}"
-				"Connect the output of your &3EBF(s)&r to the input of your &3Chemical Bath&r and the output dump (Chest or Crate)."
-				"You can also have a &dRestrictive Pipe&r in front of the output dump to ensure the Chemical Bath will be prioritized."
-				""
-				"&l&9Note:&r If you wish to know more tags for more automation setups, they will display if you press Shift when hovering over an item. For instance, an item tagged with &e&o#forge:plates/copper&r would be filtered as &e&lplates/copper&r."
-				""
-				"&9Other Note:&r The Item Tag Filter partially supports &dregex&r. Hover over the info icon for more information."
-			]
-			hide_dependency_lines: true
-			icon: "gtceu:item_tag_filter"
-			id: "13A976D0D612BC84"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Stop burning your darn hands!"
-			tasks: [{
-				id: "76A20EE57CB39857"
-				item: "gtceu:item_tag_filter"
-				type: "item"
-			}]
-			title: "250IQ"
-			x: 7.0d
-			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -852,8 +811,8 @@
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			shape: "square"
-			size: 1.0d
+			shape: "octagon"
+			size: 2.0d
 			subtitle: "Yippee, yahoo"
 			tasks: [{
 				id: "7ED7103DAF7E4413"
@@ -861,7 +820,7 @@
 				type: "item"
 			}]
 			title: "Advanced Circuit Assembler"
-			x: 1.25d
+			x: 1.0d
 			y: 14.0d
 		}
 		{
@@ -931,7 +890,7 @@
 			icon: "gtceu:micro_processor"
 			id: "38DE506FF5B32031"
 			shape: "octagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "MV has peaked"
 			tasks: [{
 				id: "120B63C2E40D359A"
@@ -955,7 +914,7 @@
 			icon: "gtceu:micro_processor_assembly"
 			id: "5063FDFFBE3E4855"
 			shape: "gear"
-			size: 2.0d
+			size: 3.0d
 			subtitle: "On that HV grind"
 			tasks: [{
 				id: "2FE33281A44C34F6"
@@ -1134,10 +1093,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"3D98819A799D2E64"
-				"1A77CA35F054F988"
-			]
+			dependencies: ["3D98819A799D2E64"]
 			description: [
 				"EMI might look a little overwhelming here, so we'll go through the best path for Sulfuric Acid here."
 				""
@@ -1166,8 +1122,8 @@
 		}
 		{
 			dependencies: [
-				"32B08E6F414A00C0"
-				"3D98819A799D2E64"
+				"694DF1C33B53A0D5"
+				"042E4EF7CF366C0C"
 			]
 			description: [
 				"Obtain &9Hydrochloric Acid&r by mixing &aHydrogen&r and &aChlorine&r."
@@ -1217,12 +1173,6 @@
 			]
 			icon: "gtceu:acid_hazard_sign_block"
 			id: "079442C113D54856"
-			rewards: [{
-				count: 8
-				id: "5CF50AE30DCD7E68"
-				item: "gtceu:glass_vial"
-				type: "item"
-			}]
 			shape: "circle"
 			size: 1.0d
 			subtitle: "...if you don't read this quest."
@@ -1269,10 +1219,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"7567E885B7166603"
-				"0DBC148D92A9F69F"
-			]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"We &lSINCERELY&r hope at &cno&r point you made the &7LV&r Extruder, because only the &bMV&r Extruder is actually useful. If you did, immediately &arecycle it&r through the Arc Furnace."
 				""
@@ -1309,7 +1256,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["22B5AD670496C02D"]
+			dependencies: ["75F38905DEA60F15"]
 			description: [
 				"Aluminium Cells are a big upgrade over the Steel Cells or Universal Fluid Cells."
 				""
@@ -1317,7 +1264,8 @@
 			]
 			icon: "gtceu:aluminium_fluid_cell"
 			id: "53B0D08DB90EC369"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "Like cells... only larger!"
 			tasks: [{
@@ -1326,11 +1274,11 @@
 				type: "item"
 			}]
 			title: "Large Cells"
-			x: 3.0d
-			y: -4.0d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["64CF0D15AC22CFE0"]
+			dependencies: ["22E462070F8B027A"]
 			description: [
 				"It's quite the investment to own a &3Fluid Drilling Rig&r, but it is &oby far&r the most prominent &6source of Oil&r."
 				""
@@ -1364,6 +1312,7 @@
 			]
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "05ADBAE5B6F38956"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "Fluid Drilling Rigs in CEu!"
@@ -1403,6 +1352,7 @@
 			]
 			icon: "gtceu:oil_bucket"
 			id: "0774EC59CD3DD7A5"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "Ever mined into an Oil deposit?"
@@ -1530,12 +1480,7 @@
 			]
 			icon: "gtceu:mv_distillery"
 			id: "6A304E453D74C57C"
-			min_required_dependencies: 2
-			rewards: [{
-				id: "3F6532E5CE210907"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
+			min_required_dependencies: 1
 			shape: "square"
 			size: 1.0d
 			subtitle: "The Illusion of Free Choice"
@@ -1570,6 +1515,7 @@
 			]
 			icon: "gtceu:natural_gas_bucket"
 			id: "227D89550BB9BD55"
+			optional: true
 			shape: "square"
 			size: 1.0d
 			subtitle: "Whoever smelt it..."
@@ -1677,20 +1623,6 @@
 			]
 			icon: "gtceu:diesel_bucket"
 			id: "45769156F4253C86"
-			rewards: [{
-				id: "0D81E63BB7BAD94B"
-				item: {
-					Count: 1
-					id: "gtceu:steel_fluid_cell"
-					tag: {
-						Fluid: {
-							Amount: 8000
-							FluidName: "gtceu:oil_heavy"
-						}
-					}
-				}
-				type: "item"
-			}]
 			size: 1.0d
 			subtitle: "Mother, how is diesel made?"
 			tasks: [{
@@ -1849,6 +1781,7 @@
 				"Press &4H&r (default) to enable Hover Mode."
 			]
 			id: "6FA956DAA72D6139"
+			optional: true
 			shape: "heart"
 			size: 1.0d
 			subtitle: "...well, almost Fly"
@@ -1892,53 +1825,8 @@
 				type: "item"
 			}]
 			title: "I Believe I Can Fly II"
-			x: 5.0d
+			x: 1.5d
 			y: 4.0d
-		}
-		{
-			dependencies: ["0EFEE489906256AA"]
-			description: [
-				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
-				""
-				"The &9Smart Item Filter&r is a filter that recognises Recipe Maps. When placed on the side of a machine, you can set it to \"&3Electrolyzer&r\" to allow insertion of electrolyzable items specifically. You heard that right - no need to filter manually!"
-				""
-				"Oh, and it only gets &abetter&r. If you combine this bad boy with a &aRobot Arm&r, it'll only supply the &6exact amount&r of items required for a successful recipe to the machine."
-				"{@pagebreak}"
-				"Place the &aRobot Arm&r on your Electrolyzer, open its GUI, then place the &9Smart Filter&r inside. Ensure that the Smart Filter is set to Electrolyzer."
-				""
-				"Next, configure it to &d&lImport&r and &d&lSupply Exact&r. Finally, attach any inventory &7(a chest will do)&r onto the side where you placed the &aRobot Arm&r. Ta-dah! You've figured out how to handle &6all&r Electrolyzer recipes!"
-				""
-				"What about the output of the &3Electrolyzer&r? You may want to route the Fluids to several Tanks - or even &3Super Tanks&r if you've gotten that far. We highly recommend that you avoid any methods involving voiding Fluids.&7.&8. except for Water for obvious reasons."
-				"{@pagebreak}"
-				"&9Note:&r The Robot Arm has to facilitate the item transfer for its filtering functionality to work! Inserting directly into the machine &7(for instance, pushing with a Hopper!)&r will ignore the Robot Arm's &dSupply Exact&r setting."
-			]
-			icon: "gtceu:item_smart_filter"
-			id: "63AE94F1F504DE76"
-			shape: "square"
-			size: 1.0d
-			subtitle: "Knock, knock - who's that? It's MENSA!"
-			tasks: [{
-				id: "1C19F21F1416DD52"
-				item: "gtceu:item_smart_filter"
-				type: "item"
-			}]
-			title: "200IQ"
-			x: 7.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["7567E885B7166603"]
-			icon: "gtceu:mv_machine_hull"
-			id: "64CF0D15AC22CFE0"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "16D174DAD9BF9D8A"
-				title: "{quests.medium_voltage.welcome_to_mv}"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1964,7 +1852,7 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
+			x: 0.5d
 			y: 10.0d
 		}
 		{
@@ -2008,6 +1896,7 @@
 			]
 			dependency_requirement: "one_started"
 			id: "45449ECE4F8128E7"
+			optional: true
 			tasks: [{
 				id: "77395198DC98E3A5"
 				item: "tfc:bucket/salt_water"
@@ -2017,7 +1906,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["64CF0D15AC22CFE0"]
 			id: "6F898B934BB79016"
 			tasks: [{
 				id: "50BDD4D0FAFBE5E6"
@@ -2048,6 +1936,29 @@
 			}]
 			x: -4.0d
 			y: 7.5d
+		}
+		{
+			description: [
+				"Everytime you begin a new tier it can be a bit overwhelming. There is going to be lots of &enew machines&r to acquire and &echemicals&r to create.\\n\\nAs you can tell from the quests you have &2three main objectives&r before being able to get into &6HV&r. We are going to take this time to explain each of them."
+				"{@pagebreak}"
+				"First you will need to upgrade your &dEBF&r with two new &bMV Energy Hatches&r so it can overcloak and runs &6HV recipes&r. That will help you getting &estainless steal&r, the main material for &6HV&r and &eKanthal&r that you will use to upgrade your &dEBF coils&r."
+				"{@pagebreak}"
+				"Your second objective that could be tackle first if you feel like it will be about chemicals. Your first plastic aka Polyethylene will be required to progress further, later on there will be others but let's focus on this one. The quests will guide you with the possibility of two paths:\\n\\n-Going Petrochem by extracting oil from the ground or from oilsands: you will also be able to make Diesel for fuel combustion\\n\\n-Going Biochem by using a Pyrolyse Oven and wood (a Create tree farm could do a good job here): you will also get more benzene and will be able to go towards gas generator.\\n\\nBoth path have their pros and cons though later on you will need both anyway."
+				"{@pagebreak}"
+				"Finally "
+			]
+			id: "22E462070F8B027A"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "{quests.medium_voltage.mv_machine_hull.subtitle}"
+			tasks: [{
+				id: "242FDFA23A5DEC91"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			title: "{quests.medium_voltage.mv_machine_hull.title}"
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Venture into petrochemistry and refine electronics"]
