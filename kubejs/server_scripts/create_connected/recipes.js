@@ -2,6 +2,11 @@
 
 const registerCreateConnectedRecipes = (event) => {
 
+	global.CREATE_CONNECTED_DISABLED_ITEMS.forEach(item => {
+		event.remove({ input: item })
+		event.remove({ output: item })
+	})
+
 	// Remove Fluid Vessel Crafting
 	event.remove({ id: 'create_connected:crafting/kinetics/fluid_vessel' })
 
@@ -50,21 +55,29 @@ const registerCreateConnectedRecipes = (event) => {
 
 	// Sequenced Pulse Generator
 	event.shaped('create_connected:sequenced_pulse_generator', [
-		'AB ',
-		'ACD',
+		'DA ',
+		'DCD',
 		'EEE'
 	], {
 		A: 'create:electron_tube',
-		B: '#gtceu:circuits/ulv',
 		C: '#forge:plates/bronze',
 		D: 'minecraft:redstone_torch',
 		E: '#forge:stone'
 	}).id('create_connected:crafting/kinetics/sequenced_pulse_generator')
 
-	// Shear Pin
-	event.recipes.gtceu.cutter('tfg:create_connected/shear_pin')
-		.itemInputs('#tfg:shafts')
-		.itemOutputs('create_connected:shear_pin')
-		.duration(96)
-		.EUt(8)
+	event.shaped('create_connected:cherry_window_pane', [
+		'ABA',
+		' A '
+	], {
+		A: 'afc:wood/planks/fig',
+		B: 'minecraft:glass'
+	}).id('create_connected:shaped/cherry_window_pane')
+
+	event.shaped('create_connected:bamboo_window_pane', [
+		' A ',
+		'ABA'
+	], {
+		A: 'minecraft:bamboo_planks',
+		B: 'minecraft:glass'
+	}).id('create_connected:shaped/bamboo_window_pane')
 }

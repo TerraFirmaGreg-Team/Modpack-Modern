@@ -848,7 +848,7 @@ const registerCreateRecipes = (event) => {
 		' CE'
 	], {
 		A: '#tfg:small_cogwheels',
-		B: 'create:andesite_casing',
+		B: 'gtceu:ulv_machine_casing',
 		C: 'create:brass_hand',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/screwdrivers',
@@ -1361,12 +1361,12 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/vertical_framed_glass')
 
 	const CREATE_FRAMED_GLASS_WINDOWS =
-		[
-			'framed_glass',
-			'tiled_glass',
-			'horizontal_framed_glass',
-			'vertical_framed_glass'
-		]
+	[
+		'framed_glass',
+		'tiled_glass',
+		'horizontal_framed_glass',
+		'vertical_framed_glass'
+	]
 
 	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
 		event.shapeless(`2x create:${x}_pane`,
@@ -1384,17 +1384,18 @@ const registerCreateRecipes = (event) => {
 	})
 
 	const CREATE_OTHER_GLASS_WINDOWS =
-		[
-			['dark_oak', 'tfc:wood/lumber/hickory'],
-			['mangrove', 'tfc:wood/lumber/mangrove'],
-			['ornate_iron', 'gtceu:wrought_iron_rod']
-		]
+	[
+		['dark_oak', 'tfc:wood/planks/hickory'],
+		['mangrove', 'tfc:wood/planks/mangrove'],
+		['ornate_iron', 'tfc:metal/bars/wrought_iron']
+	]
 
 	CREATE_OTHER_GLASS_WINDOWS.forEach(x => {
 		event.shaped(`2x create:${x[0]}_window`,
 			[
-				' B ',
-				'BAB'
+				'   ',
+				'BAB',
+				' B '
 			], {
 			A: 'minecraft:glass',
 			B: x[1]

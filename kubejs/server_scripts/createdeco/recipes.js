@@ -257,4 +257,42 @@ const registerCreatedecoRecipes = (event) => {
 		.EUt(16)
 
 	// #region
+
+	// #region Window panes
+
+	const CREATE_DECO_GLASS_WINDOWS =
+	[
+		['andesite', '#forge:rods/tin_alloy'],
+		['copper', '#forge:rods/copper'],
+		['iron', '#forge:rods/wrought_iron'],
+		['industrial_iron', '#forge:rods/steel'],
+		['brass', '#forge:rods/brass'],
+		['zinc', '#forge:rods/zinc']
+	]
+
+	CREATE_DECO_GLASS_WINDOWS.forEach(x => {
+		event.shaped(`2x createdeco:${x[0]}_window`,
+			[
+				' B ',
+				'BAB'
+			], {
+			A: 'minecraft:glass',
+			B: x[1]
+		}).id(`createdeco:${x[0]}_window`)
+
+		event.shapeless(`2x createdeco:${x[0]}_window_pane`,
+			[
+				`createdeco:${x[0]}_window`,
+				'#forge:tools/saws'
+			])
+			.id(`createdeco:${x[0]}_window_pane`)
+
+		event.recipes.gtceu.cutter(`tfg:createdeco/${x[0]}_window_pane`)
+			.itemInputs(`3x createdeco:${x[0]}_window`)
+			.itemOutputs(`8x createdeco:${x[0]}_window_pane`)
+			.duration(40)
+			.EUt(7)
+	})
+
+	// #endregion
 };
