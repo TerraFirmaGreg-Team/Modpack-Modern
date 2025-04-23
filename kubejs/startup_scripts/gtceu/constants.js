@@ -71,6 +71,14 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_boat',
     'gtceu:rubber_chest_boat',
 
+    'gtceu:mv_solar_panel',
+    'gtceu:hv_solar_panel',
+    'gtceu:ev_solar_panel',
+    'gtceu:iv_solar_panel',
+    'gtceu:luv_solar_panel',
+    'gtceu:zpm_solar_panel',
+    'gtceu:uv_solar_panel',
+
     // Sculk
     'gtceu:tiny_echo_shard_dust',
     'gtceu:small_echo_shard_dust',
