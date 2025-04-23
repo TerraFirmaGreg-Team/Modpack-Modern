@@ -167,7 +167,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 	//
 	//        /* Имеют двойные слитки */
-	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
 	//        /* Другое */
