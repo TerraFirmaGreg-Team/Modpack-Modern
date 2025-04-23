@@ -2302,6 +2302,59 @@
 			x: 8.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["1269F30575599F10"]
+			id: "2D90631147B852D2"
+			tasks: [{
+				id: "4B92CEB19BA7FB49"
+				item: "expatternprovider:oversize_interface"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1FB2089C461BD7F5"
+				"6D1FC61E12586D57"
+			]
+			id: "6F9069736E604DB4"
+			tasks: [
+				{
+					id: "0C7898F1DF3EDC06"
+					item: "expatternprovider:assembler_matrix_frame"
+					type: "item"
+				}
+				{
+					id: "4688AE993B97749F"
+					item: "expatternprovider:assembler_matrix_wall"
+					type: "item"
+				}
+				{
+					id: "156E6F2A72944DD1"
+					item: "expatternprovider:assembler_matrix_pattern"
+					type: "item"
+				}
+				{
+					id: "4DDF957C178999AF"
+					item: "expatternprovider:assembler_matrix_crafter"
+					type: "item"
+				}
+				{
+					id: "11BCB5AF876035A2"
+					item: "expatternprovider:assembler_matrix_speed"
+					type: "item"
+				}
+				{
+					id: "19B6A6C5D2A9C3BE"
+					item: "expatternprovider:assembler_matrix_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 6.0d
+		}
 	]
 	title: "&6HV&r - AE2"
 }
