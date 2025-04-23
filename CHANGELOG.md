@@ -8,6 +8,7 @@
 - Updated field guide for 0.9 (oosyrag)
 - Added speed boost to nanosuit leggings (SverhRazum-Nah)
 - Updated max capacity of small vessel and crucible to be multiples of 144 (oosyrag)
+- You can no longer use a blowpipe to hold hot ingots, but tongs have been buffed 6x instead
 - Added a temporary fix for the ULS-MV millstones/crushing wheels voiding poor raw ores
 - Fixed a duping exploit involving metal plated blocks
 - Fixed some recipes that were using the wrong wrench tag
@@ -33,6 +34,10 @@
 - Long distance item/fluid pipes now need HV
 - Kaolin patches now spawn less often in lush cave biomes
 - You can no longer pick up regular ice with a saw to prevent moving around water sources, but you can craft packed ice instead if you need to cool off
+- Hid the xp bar because xp isn't used for anything
+- Fixed visual workbench not working with tfc workbenches
+- Removed adjustable chain gearshift and half of create:connected because they let you get around greate's restrictions
+- Added recipe for vanilla campfire for people who like smoke particles
 - Removed some more duplicate recipes for vanilla items
 - Hid some more things in JEI that aren't craftable
 
