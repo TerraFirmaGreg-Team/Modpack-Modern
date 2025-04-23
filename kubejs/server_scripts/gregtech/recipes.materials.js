@@ -11,6 +11,10 @@ function registerGTCEUMetalRecipes(event) {
 		if (toolHeadItem.isEmpty()) 
 			return
 
+		// Skip this one because it has a duping bug, and you can't remove the macerator/arc furnace iron pick recipes
+		if (material == GTMaterials.Iron)
+			return;
+
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
 			[toolHeadItem, '#forge:rods/wooden'], toolHeadItem)
