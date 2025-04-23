@@ -57,6 +57,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:hepatizon_rod',
 	'vintageimprovements:invar_rod',
 	'vintageimprovements:lead_rod',
+	'vintageimprovements:zinc_rod',
 	'vintageimprovements:lumium_rod',
 	'vintageimprovements:manyullyn_rod',
 	'vintageimprovements:nickel_rod',
