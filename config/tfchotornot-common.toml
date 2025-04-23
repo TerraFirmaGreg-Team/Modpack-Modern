@@ -25,7 +25,7 @@
 	itemTemperatureModifier = 2.0
 	#How often the heat of your tongs, mittens or potholders should increase. Higher value -> slower. Too high and items won't heat up.
 	#Range: > 1
-	itemHeatTimeInterval = 3
+	itemHeatTimeInterval = 4
 	#How often the durability of your tongs, mittens or potholders should take damage. Higher value -> slower. Holding multiple hot items will damage your insulating items faster!
 	#Range: > 1
 	itemDamageTimeInterval = 60
