@@ -5,7 +5,6 @@ const registerCreateRecipes = (event) => {
 	// Удаление рецептов мода create 
 	event.remove({
 		not: [
-			{ id: 'create:crafting/kinetics/adjustable_chain_gearshift' },
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
