@@ -1441,7 +1441,10 @@ const registerCreateRecipes = (event) => {
 	]
 
 	DECO_BLOCKS.forEach(x => {
-		event.shapeless(x.cut, [x.base, '#tfc:chisels', '#forge:tools/files']).id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
+
+		event.recipes.tfc.damage_inputs_shaped_crafting(
+			event.shapeless(x.cut, [x.base, '#tfc:chisels', '#forge:tools/files'])
+		).id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
 
 		event.recipes.gtceu.laser_engraver(`engrave_${x.cut.split(':')[1]}`)
 			.itemInputs(x.base)
