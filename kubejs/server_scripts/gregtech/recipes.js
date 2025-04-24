@@ -499,7 +499,7 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/electric_blast_furnace')
 
 	// Клей из ТФК клея
-	event.recipes.gtceu.centrifuge('glue_from_tfc_glue')
+	event.recipes.gtceu.extractor('glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.duration(400)
