@@ -65,19 +65,40 @@ const registerCreateConnectedRecipes = (event) => {
 		E: '#forge:stone'
 	}).id('create_connected:crafting/kinetics/sequenced_pulse_generator')
 
-	event.shaped('create_connected:cherry_window_pane', [
+
+	// Windows
+	event.shapeless(`2x create_connected:cherry_window_pane`,
+	[ 
+		`create_connected:cherry_window`, 
+		'#forge:tools/saws' 
+	])
+	.id(`create_connected:crafting/palettes/cherry_window_pane`)
+		
+	event.recipes.gtceu.cutter(`create_connected:cherry_window_pane`)
+		.itemInputs(`3x create_connected:cherry_window`)
+		.itemOutputs(`8x create_connected:cherry_window_pane`)
+		.duration(40)
+		.EUt(7)
+
+		
+	event.shapeless(`2x create_connected:bamboo_window_pane`,
+	[ 
+		`create_connected:bamboo_window`, 
+		'#forge:tools/saws' 
+	])
+	.id(`create_connected:crafting/palettes/bamboo_window_pane`)
+		
+	event.recipes.gtceu.cutter(`create_connected:bamboo_window_pane`)
+		.itemInputs(`3x create_connected:bamboo_window`)
+		.itemOutputs(`8x create_connected:bamboo_window_pane`)
+		.duration(40)
+		.EUt(7)
+
+	event.shaped('create_connected:cherry_window', [
 		'ABA',
 		' A '
 	], {
 		A: 'afc:wood/planks/fig',
 		B: '#forge:glass'
-	}).id('create_connected:shaped/cherry_window_pane')
-
-	event.shaped('create_connected:bamboo_window_pane', [
-		' A ',
-		'ABA'
-	], {
-		A: 'minecraft:bamboo_planks',
-		B: '#forge:glass'
-	}).id('create_connected:shaped/bamboo_window_pane')
+	}).id('create_connected:crafting/palettes/cherry_window')
 }
