@@ -376,7 +376,7 @@ function registerTFCMachineRecipes(event) {
 		.EUt(2)
 
 	// LimeWater + Sand -> Mortar
-	event.recipes.gtceu.centrifuge('mortar')
+	event.recipes.gtceu.mixer('mortar')
 		.itemInputs('#forge:sand')
 		.inputFluids(Fluid.of('tfc:limewater', 100))
 		.itemOutputs('16x tfc:mortar')
