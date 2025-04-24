@@ -21,14 +21,12 @@ const registerRnrRecipes = (event) => {
         event.recipes.gtceu.cutter(`rnr:assembler/flagstone/${stone}`)
 		    .itemInputs(`tfc:brick/${stone}`)
 		    .itemOutputs(`2x rnr:flagstone/${stone}`)
-            .circuit(7)
 		    .duration(20)
 		    .EUt(GTValues.VA[GTValues.ULV])
 
         event.recipes.gtceu.cutter(`rnr:assembler/flagstone/mossy_${stone}`)
 		    .itemInputs(`tfc:rock/mossy_loose/${stone}`)
 		    .itemOutputs(`2x rnr:flagstone/${stone}`)
-            .circuit(7)
 		    .duration(20)
 		    .EUt(GTValues.VA[GTValues.ULV])
     });
