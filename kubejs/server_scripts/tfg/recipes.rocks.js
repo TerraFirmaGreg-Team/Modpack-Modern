@@ -43,7 +43,7 @@ function registerTFGRockRecipes(event) {
 			x.brick, [x.loose, '#tfc:chisels']
 		))
 
-		event.recipes.gtceu.assembler(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
+		event.recipes.gtceu.cutter(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
 			.itemInputs(x.loose)
 			.itemOutputs(x.brick)
 			.circuit(1)
