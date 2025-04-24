@@ -959,6 +959,36 @@
 						}
 					],
 					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:dynamite",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 5,
+								"max": 10,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 30
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:powderbarrel",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 5,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 30
 				}
 			]
 		}
