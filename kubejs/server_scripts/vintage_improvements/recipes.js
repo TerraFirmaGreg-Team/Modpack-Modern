@@ -130,18 +130,19 @@ function registerVintageImprovementsRecipes(event) {
 		G: 'create:precision_mechanism'
 	}).id('tfg:vi/mechanical_crafting/lathe')
 
-	event.shaped('vintageimprovements:laser', [
-		'FBF',
-		'EAE',
-		'DCD'
-	], {
-		A: 'gtceu:ulv_machine_hull',
-		B: 'create:precision_mechanism',
-		C: 'tfc:lens',
-		D: 'gtceu:red_alloy_single_wire',
-		E: 'minecraft:piston',
-		F: '#gtceu:circuits/ulv'
-	}).id('tfg:vi/shaped/laser')
+	// Re-enable this thing's EMI category as well, if we end up using it
+	//event.shaped('vintageimprovements:laser', [
+	//	'FBF',
+	//	'EAE',
+	//	'DCD'
+	//], {
+	//	A: 'gtceu:ulv_machine_hull',
+	//	B: 'create:precision_mechanism',
+	//	C: 'tfc:lens',
+	//	D: 'gtceu:red_alloy_single_wire',
+	//	E: 'minecraft:piston',
+	//	F: '#gtceu:circuits/ulv'
+	//}).id('tfg:vi/shaped/laser')
 
 	// #endregion
 

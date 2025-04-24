@@ -75,13 +75,13 @@ function registerTFGRockRecipes(event) {
 			.duration(30)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: x.raw }],
-			results: [{item: x.polished }],
-			energy: GTValues.VA[GTValues.ULV] * 30 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/tfg/${x.raw.replace(/:/g, '_')}_to_${x.polished.replace(/:/g, '_')}`)
+		//event.custom({
+		//	type: 'vintageimprovements:laser_cutting',
+		//	ingredients: [{ item: x.raw }],
+		//	results: [{item: x.polished }],
+		//	energy: GTValues.VA[GTValues.ULV] * 30 * 4,
+		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		//}).id(`tfg:vi/laser/tfg/${x.raw.replace(/:/g, '_')}_to_${x.polished.replace(/:/g, '_')}`)
 	})
 
 	// cracked bricks
