@@ -58,4 +58,22 @@ function registerTFCLoots(event)
 	event.addEntityLootModifier('tfc:crocodile')
 		.addWeightedLoot([5,10], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
 		.addSequenceLoot(LootEntry.of('tfc:metal/fish_hook/copper').when(c => c.randomChance(0.2)))
+
+
+	event.addBlockLootModifier('minecraft:ice')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('firmalife:ice_shavings')
+
+	event.addBlockLootModifier('minecraft:packed_ice')
+		.not(n => n.matchMainHand("#forge:tools/saws"))
+		.addWeightedLoot([4,6], ['firmalife:ice_shavings'])
+
+	event.addBlockLootModifier('minecraft:blue_ice')
+		.not(n => n.matchMainHand("#forge:tools/saws"))
+		.addWeightedLoot([8,12], ['firmalife:ice_shavings'])
+
+	event.addBlockLootModifier('tfc:sea_ice')
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addLoot('firmalife:ice_shavings')
+		.addSequenceLoot(LootEntry.of('tfc:powder/salt').when(c => c.randomChance(0.2)))
 }

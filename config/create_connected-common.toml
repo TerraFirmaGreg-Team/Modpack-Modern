@@ -8,36 +8,36 @@ migrateCopycatsOnInitialize = false
 #.
 #Enable/disable features. Values on server override clients
 [features]
-	bamboo_window = false
+	bamboo_window = true
 	item_silo = true
 	inverted_clutch = true
 	empty_fan_catalyst = false
-	parallel_gearbox = true
-	cherry_window = false
+	parallel_gearbox = false
+	cherry_window = true
 	centrifugal_clutch = true
-	copycat_slab = false
+	copycat_slab = true
 	overstress_clutch = true
 	brake = true
-	copycat_block = false
-	copycat_fence_gate = false
-	copycat_stairs = false
-	brass_gearbox = true
-	copycat_vertical_step = false
-	copycat_wall = false
-	six_way_gearbox = true
-	encased_chain_cogwheel = true
+	copycat_block = true
+	copycat_fence_gate = true
+	copycat_stairs = true
+	brass_gearbox = false
+	copycat_vertical_step = true
+	copycat_wall = true
+	six_way_gearbox = false
+	encased_chain_cogwheel = false
 	sequenced_pulse_generator = true
 	freewheel_clutch = true
-	shear_pin = true
-	inverted_gearshift = true
+	shear_pin = false
+	inverted_gearshift = false
 	linked_transmitter = true
-	copycat_beam = false
-	copycat_board = false
-	copycat_fence = false
+	copycat_beam = true
+	copycat_board = true
+	copycat_fence = true
 	#.
 	fluid_vessel = true
-	large_crank_wheel = true
-	crank_wheel = true
+	large_crank_wheel = false
+	crank_wheel = false
 	inventory_access_port = true
 	inventory_bridge = true
 

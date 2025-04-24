@@ -130,7 +130,7 @@
 		#.
 		#Game ticks required for a Fan-based processing recipe to take effect.
 		#Range: > 0
-		fanProcessingTime = 150
+		fanProcessingTime = 3200
 
 	#.
 	#Moving Contraptions
@@ -292,7 +292,7 @@
 				gearbox = 0.0
 				hose_pulley = 0.5
 				elevator_pulley = 0.5
-				mechanical_crafter = 0.25
+				mechanical_crafter = 0.125
 
 			#.
 			#[in Stress Units]
@@ -300,10 +300,10 @@
 			[kinetics.stressValues.v2.capacity]
 				copper_valve_handle = 2.0
 				hand_crank = 2.0
-				steam_engine = 32.0
+				steam_engine = 16.0
 				creative_motor = 16384.0
-				large_water_wheel = 32.0
-				water_wheel = 8.0
+				large_water_wheel = 16.0
+				water_wheel = 4.0
 				windmill_bearing = 32.0
 
 #.

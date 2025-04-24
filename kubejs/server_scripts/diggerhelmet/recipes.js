@@ -33,5 +33,15 @@ function registerDiggerHelmetRecipes(event) {
 		B: '#forge:string',
 		C: 'minecraft:bamboo',
 		D: 'tfc:glue'
-	}).id('tfg:shaped/auto_drink_modifier')
+	}).id('tfg:shaped/auto_drink_modifier_bamboo')
+
+	event.shaped('diggerhelmet:auto_drink_modifier', [
+		' A ',
+		'BCB',
+		' C '
+	], {
+		A: 'waterflasks:leather_flask',
+		B: '#forge:screws/wrought_iron',
+		C: '#forge:foils/rubber'
+	}).id('tfg:shaped/auto_drink_modifier_rubber')
 }

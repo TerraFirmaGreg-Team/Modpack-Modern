@@ -11,6 +11,10 @@ function registerGTCEUMetalRecipes(event) {
 		if (toolHeadItem.isEmpty()) 
 			return
 
+		// Skip this one because it has a duping bug, and you can't remove the macerator/arc furnace iron pick recipes
+		if (material == GTMaterials.Iron)
+			return;
+
 		event.recipes.tfc.advanced_shapeless_crafting(
 			TFC.itemStackProvider.of(toolItem).copyForgingBonus().copyHeat(),
 			[toolHeadItem, '#forge:rods/wooden'], toolHeadItem)
@@ -310,21 +314,22 @@ function registerGTCEUMetalRecipes(event) {
 
 		// Macerator
 		let maceratorRecipe = event.recipes.gtceu.macerator(`macerate_poor_raw_${material.getName()}_ore_to_crushed_ore`)
-			.itemInputs(poorOreItem)
 			.category(GTRecipeCategories.ORE_CRUSHING)
 			.duration(400)
 			.EUt(2)
 
 		if (multiplier > 1) {
+			maceratorRecipe.itemInputs(poorOreItem)
 			maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(multiplier / 2))
 		}
 		else {
 			// TODO: Change this when Greate fixes its bug
 			//maceratorRecipe.chancedOutput(crushedOreItem, 5000, 750)
-			maceratorRecipe.itemOutputs(ChemicalHelper.get(TagPrefix.dustSmall, material, 1))
+			maceratorRecipe.itemInputs(poorOreItem.copyWithCount(2))
+			maceratorRecipe.itemOutputs(crushedOreItem.copyWithCount(1))
 		}
 		maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 2500, 500)
-			.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
+		maceratorRecipe.chancedOutput(crushedOreItem.copyWithCount(1), 1250, 250)
 
 		// Quern
 		if (multiplier > 1) {
@@ -335,7 +340,7 @@ function registerGTCEUMetalRecipes(event) {
 		}
 		else {
 			event.recipes.tfc.quern(
-				ChemicalHelper.get(TagPrefix.dustSmall, material, 1),
+				ChemicalHelper.get(TagPrefix.dustSmall, material, 2),
 				poorOreItem
 			).id(`tfg:quern/${material.getName()}_crushed_ore_from_poor_raw_ore`)
 		}

@@ -64,6 +64,9 @@ const registerMinecraftBlockTags = (event) => {
         event.removeAllTagsFrom(item)
     })
 
+    // Stops saws from being able to pick up ice
+    event.remove('minecraft:ice', 'minecraft:ice')
+
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')
     

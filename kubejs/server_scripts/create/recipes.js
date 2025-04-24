@@ -5,7 +5,6 @@ const registerCreateRecipes = (event) => {
 	// Удаление рецептов мода create 
 	event.remove({
 		not: [
-			{ id: 'create:crafting/kinetics/adjustable_chain_gearshift' },
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
@@ -849,7 +848,7 @@ const registerCreateRecipes = (event) => {
 		' CE'
 	], {
 		A: '#tfg:small_cogwheels',
-		B: 'create:andesite_casing',
+		B: 'gtceu:ulv_machine_casing',
 		C: 'create:brass_hand',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/screwdrivers',
@@ -1362,12 +1361,12 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/vertical_framed_glass')
 
 	const CREATE_FRAMED_GLASS_WINDOWS =
-		[
-			'framed_glass',
-			'tiled_glass',
-			'horizontal_framed_glass',
-			'vertical_framed_glass'
-		]
+	[
+		'framed_glass',
+		'tiled_glass',
+		'horizontal_framed_glass',
+		'vertical_framed_glass'
+	]
 
 	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
 		event.shapeless(`2x create:${x}_pane`,
@@ -1385,19 +1384,20 @@ const registerCreateRecipes = (event) => {
 	})
 
 	const CREATE_OTHER_GLASS_WINDOWS =
-		[
-			['dark_oak', 'tfc:wood/lumber/hickory'],
-			['mangrove', 'tfc:wood/lumber/mangrove'],
-			['ornate_iron', 'gtceu:wrought_iron_rod']
-		]
+	[
+		['dark_oak', 'tfc:wood/planks/hickory'],
+		['mangrove', 'tfc:wood/planks/mangrove'],
+		['ornate_iron', 'tfc:metal/bars/wrought_iron']
+	]
 
 	CREATE_OTHER_GLASS_WINDOWS.forEach(x => {
 		event.shaped(`2x create:${x[0]}_window`,
 			[
-				' B ',
-				'BAB'
+				'   ',
+				'BAB',
+				' B '
 			], {
-			A: 'minecraft:glass',
+			A: '#forge:glass',
 			B: x[1]
 		}).id(`tfg:create/shaped/${x[0]}_window`)
 
@@ -1450,13 +1450,13 @@ const registerCreateRecipes = (event) => {
 			.duration(32)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: x.base }],
-			results: [{item: x.cut }],
-			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
+		//event.custom({
+		//	type: 'vintageimprovements:laser_cutting',
+		//	ingredients: [{ item: x.base }],
+		//	results: [{item: x.cut }],
+		//	energy: GTValues.VA[GTValues.ULV] * 32 * 4,
+		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		//}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
 
 		event.shaped(`2x create:layered_${x.cut.split('_')[1]}`, [
 			'AA'
@@ -1580,9 +1580,9 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:brass_casing',
 		B: '#forge:small_gears/brass',
-		C: '#forge:gears/black_steel',
+		C: '#forge:small_gears/red_alloy',
 		D: '#forge:tools/wrenches',
-		E: '#forge:small_springs/gold',
+		E: '#forge:small_springs/steel',
 		F: '#tfg:shafts',
 		G: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/rotation_speed_controller')
@@ -1605,7 +1605,7 @@ const registerCreateRecipes = (event) => {
 		' D '
 	], {
 		A: 'create:andesite_casing',
-		B: '#minecraft:plates/wrought_iron',
+		B: '#forge:plates/wrought_iron',
 		C: 'tfc:glue',
 		D: '#tfg:small_cogwheels',
 		E: '#forge:tools/wrenches'

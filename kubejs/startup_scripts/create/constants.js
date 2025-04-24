@@ -266,7 +266,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:blaze_cake', 
     'create:blaze_cake_base', 
     'create:sturdy_sheet', 
-    'create:powdered_obsidian', 
     'create:polished_rose_quartz', 
     'create:rose_quartz', 
     'create:cinder_flour', 
@@ -304,5 +303,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:chest_minecart_contraption',
     'create:mechanical_pump',
     'create:peculiar_bell',
-    'create:haunted_bell'
+    'create:haunted_bell',
+    'create:adjustable_chain_gearshift'
 ];

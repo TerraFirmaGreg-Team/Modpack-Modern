@@ -36,6 +36,8 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:firebricks',
     'gtceu:wood_drum',
     'gtceu:primitive_blast_furnace',
+    'gtceu:iron_pickaxe',
+    'gtceu:iron_pickaxe_head',
     
     'gtceu:wood_screwdriver_tip',
     'gtceu:wood_wrench_tip',
@@ -68,6 +70,14 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:rubber_button',
     'gtceu:rubber_boat',
     'gtceu:rubber_chest_boat',
+
+    'gtceu:mv_solar_panel',
+    'gtceu:hv_solar_panel',
+    'gtceu:ev_solar_panel',
+    'gtceu:iv_solar_panel',
+    'gtceu:luv_solar_panel',
+    'gtceu:zpm_solar_panel',
+    'gtceu:uv_solar_panel',
 
     // Sculk
     'gtceu:tiny_echo_shard_dust',

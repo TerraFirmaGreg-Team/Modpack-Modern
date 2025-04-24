@@ -445,6 +445,11 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
 
+    event.add('tfc:usable_in_barrel', 'gtceu:ice')
+    event.add('tfc:usable_in_pot', 'gtceu:ice')
+    event.add('tfc:usable_in_wooden_bucket', 'gtceu:ice')
+    event.add('tfc:usable_in_red_steel_bucket', 'gtceu:ice')
+
     event.add('tfc:ingredients', 'tfc:spring_water')
     event.add('tfc:usable_in_barrel', 'tfc:spring_water')
     event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')

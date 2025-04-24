@@ -29,6 +29,10 @@ global.GREATE_DISABLED_ITEMS = [
 	'greate:stainless_steel_millstone',
 	'greate:titanium_millstone',
 
+	// Disabled because they don't respect the cleanroom requirement of some recipes
+	'greate:stainless_steel_mechanical_saw',
+	'greate:titanium_mechanical_saw',
+
 	// Disable these until it's possible to disable spring recipes in them
 	'greate:andesite_alloy_mechanical_press',
 	'greate:steel_mechanical_press',

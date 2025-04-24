@@ -36,8 +36,8 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
     
     event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
-    event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
-    event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
+    event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', '#forge:double_ingots/red_alloy', '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
+    event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', '#forge:double_ingots/tin_alloy', '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
 //#endregion
 
