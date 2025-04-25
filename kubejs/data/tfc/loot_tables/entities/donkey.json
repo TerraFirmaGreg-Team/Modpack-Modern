@@ -1,4 +1,5 @@
 {
+	"__comment__": "This file was automatically created by mcresources",
 	"type": "minecraft:entity",
 	"pools": [
 		{
@@ -7,27 +8,30 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfc:food/horse_meat",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"function": "minecraft:set_count"
+								"type": "tfc:animal_yield",
+								"min": 4,
+								"max": {
+									"type": "minecraft:uniform",
+									"min": 15,
+									"max": 21
+								}
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 1.0,
-								"min": 0.0
+								"max": 4.0,
+								"min": 1.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "ae2:ender_dust"
+					]
 				}
 			]
 		},
@@ -37,27 +41,36 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfc:medium_raw_hide"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bone",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 4.0,
-								"min": 2.0
-							},
-							"function": "minecraft:set_count"
+								"min": 3,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2.0,
+								"max": 3.0,
 								"min": 1.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "minecraft:chorus_fruit"
+					]
 				}
 			]
 		}

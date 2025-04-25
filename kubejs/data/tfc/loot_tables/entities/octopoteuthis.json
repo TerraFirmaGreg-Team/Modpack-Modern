@@ -1,4 +1,5 @@
 {
+	"__comment__": "This file was automatically created by mcresources",
 	"type": "minecraft:entity",
 	"pools": [
 		{
@@ -7,11 +8,15 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:food/venison",
+					"name": "minecraft:glow_ink_sac",
+					"conditions": [
+						{
+							"condition": "minecraft:killed_by_player"
+						}
+					],
 					"functions": [
 						{
 							"function": "minecraft:set_count",
-							"add": false,
 							"count": {
 								"min": 4,
 								"max": 10,
@@ -37,36 +42,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:bone",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 1,
-								"max": 6
-							}
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "loot_pool",
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "beneath:cursed_hide"
+					"name": "tfc:food/calamari"
 				}
 			]
 		}

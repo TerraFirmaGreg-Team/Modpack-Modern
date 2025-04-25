@@ -7,27 +7,26 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:rotten_flesh",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 4.0,
-								"min": 2.0
-							},
-							"function": "minecraft:set_count"
+								"max": 2,
+								"min": 1,
+								"type": "minecraft:uniform"
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3.0,
+								"max": 2.0,
 								"min": 1.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "minecraft:bone"
+					]
 				}
 			]
 		},
@@ -37,27 +36,26 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfc:groundcover/driftwood",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 5.0,
-								"min": 2.0
-							},
-							"function": "minecraft:set_count"
+								"max": 2,
+								"min": 0,
+								"type": "minecraft:uniform"
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
+								"max": 2,
+								"min": 1
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "beneath:cursecoal"
+					]
 				}
 			]
 		},
@@ -67,27 +65,26 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:bone",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 5.0,
-								"min": 2.0
-							},
-							"function": "minecraft:set_count"
+								"max": 1,
+								"min": 0,
+								"type": "minecraft:uniform"
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
+								"max": 1,
+								"min": 0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "gtceu:rich_raw_coal"
+					]
 				}
 			]
 		}

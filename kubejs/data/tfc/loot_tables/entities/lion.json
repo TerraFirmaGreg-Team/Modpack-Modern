@@ -1,4 +1,5 @@
 {
+	"__comment__": "This file was automatically created by mcresources",
 	"type": "minecraft:entity",
 	"pools": [
 		{
@@ -7,15 +8,25 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfc:large_raw_hide"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bone",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"function": "minecraft:set_count"
+								"min": 1,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
 						},
 						{
 							"count": {
@@ -26,8 +37,7 @@
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "minecraft:magma_cream"
+					]
 				}
 			]
 		}

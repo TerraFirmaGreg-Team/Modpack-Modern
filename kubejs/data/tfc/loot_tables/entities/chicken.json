@@ -1,4 +1,5 @@
 {
+	"__comment__": "This file was automatically created by mcresources",
 	"type": "minecraft:entity",
 	"pools": [
 		{
@@ -7,27 +8,30 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "tfc:food/chicken",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"function": "minecraft:set_count"
+								"type": "tfc:animal_yield",
+								"min": 2,
+								"max": {
+									"type": "minecraft:uniform",
+									"min": 1,
+									"max": 6
+								}
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 1.0,
+								"max": 2.0,
 								"min": 0.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "ae2:ender_dust"
+					]
 				}
 			]
 		},
@@ -37,27 +41,26 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:feather",
 					"functions": [
 						{
-							"add": false,
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 4.0,
-								"min": 2.0
-							},
-							"function": "minecraft:set_count"
+								"min": 4,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
 						},
 						{
 							"count": {
 								"type": "minecraft:uniform",
-								"max": 2.0,
+								"max": 3.0,
 								"min": 1.0
 							},
 							"enchantment": "minecraft:looting",
 							"function": "minecraft:looting_enchant"
 						}
-					],
-					"name": "minecraft:chorus_fruit"
+					]
 				}
 			]
 		}

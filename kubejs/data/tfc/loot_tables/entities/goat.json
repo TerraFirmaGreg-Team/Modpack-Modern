@@ -1,4 +1,5 @@
 {
+	"__comment__": "This file was automatically created by mcresources",
 	"type": "minecraft:entity",
 	"pools": [
 		{
@@ -7,44 +8,18 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:food/venison",
+					"name": "tfc:food/chevon",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
-							"add": false,
 							"count": {
+								"type": "tfc:animal_yield",
 								"min": 4,
-								"max": 10,
-								"type": "minecraft:uniform"
-							}
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "loot_pool",
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:bone",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 1,
-								"max": 6
+								"max": {
+									"type": "minecraft:uniform",
+									"min": 7,
+									"max": 13
+								}
 							}
 						},
 						{
@@ -66,7 +41,51 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "beneath:cursed_hide"
+					"name": "tfc:medium_raw_hide"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bone",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						},
+						{
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 2.0,
+								"min": 0.0
+							},
+							"enchantment": "minecraft:looting",
+							"function": "minecraft:looting_enchant"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfc:goat_horn",
+					"conditions": [
+						{
+							"condition": "tfc:is_male"
+						}
+					]
 				}
 			]
 		}

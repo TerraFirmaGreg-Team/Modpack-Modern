@@ -2,6 +2,9 @@
 
 function registerTFCLoots(event)
 {
+
+	// Hostile animals
+
 	event.addEntityLootModifier('tfc:black_bear')
 		.addWeightedLoot([8,12], ['tfc:food/bear'])
 
@@ -37,28 +40,26 @@ function registerTFCLoots(event)
 		.addWeightedLoot([9,14], ['tfc:food/gran_feline'])
 
 	event.addEntityLootModifier('tfc:dog')
-		.addWeightedLoot([5,9], ['tfc:food/wolf'])
+		.addWeightedLoot([5,8], ['tfc:food/wolf'])
 
 	event.addEntityLootModifier('tfc:wolf')
-		.addWeightedLoot([5,9], ['tfc:food/wolf'])
+		.addWeightedLoot([5,8], ['tfc:food/wolf'])
 
 	event.addEntityLootModifier('tfc:direwolf')
-		.addWeightedLoot([10,15], ['tfc:food/wolf'])
-
-	event.addEntityLootModifier('tfc:wolf')
-		.addWeightedLoot([5,9], ['tfc:food/wolf'])
+		.addWeightedLoot([8,12], ['tfc:food/wolf'])
 
 	event.addEntityLootModifier('tfc:hyena')
-		.addWeightedLoot([5,9], ['tfc:food/hyena'])
+		.addWeightedLoot([4,7], ['tfc:food/hyena'])
 
 	event.addEntityLootModifier('tfc:fox')
-		.addWeightedLoot([5,9], ['tfc:food/fox'])
+		.addWeightedLoot([4,7], ['tfc:food/fox'])
 
 	
 	event.addEntityLootModifier('tfc:crocodile')
 		.addWeightedLoot([5,10], ['tfc:food/bluegill', 'tfc:food/crappie', 'tfc:food/lake_trout', 'tfc:food/rainbow_trout', 'tfc:food/frog_legs'])
 		.addSequenceLoot(LootEntry.of('tfc:metal/fish_hook/copper').when(c => c.randomChance(0.2)))
 
+	// Blocks
 
 	event.addBlockLootModifier('minecraft:ice')
 		.removeLoot(ItemFilter.ALWAYS_TRUE)
