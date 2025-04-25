@@ -59,6 +59,10 @@ Interested in contributing? For detailed setup instructions, coding standards, a
 
 ![Image Readme](https://github.com/TerraFirmaGreg-Team/.github/blob/main/branding/image_readme.png?raw=true)
 
+### External Credits
+- WithersChat from the Monifactory team for the universal circuit textures
+- GregTech Community Pack Modern for most of their quest text
+
 <!-- Links: -->
 [TerraFirmaCraft]: https://www.curseforge.com/minecraft/mc-mods/terrafirmacraft
 [GregTech Modern]: https://www.curseforge.com/minecraft/mc-mods/gregtechceu-modern
