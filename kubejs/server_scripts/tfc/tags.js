@@ -29,11 +29,38 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/plungers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
-    event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
     
     event.add('tfc:usable_on_tool_rack', '#forge:tools/chainsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/drills')
+
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/fishing_nets')
+
+    event.add('tfc:usable_on_tool_rack', '#tfc:buckets')
+
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_building')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_exchanging')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_copy_paste')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_cut_paste')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_destruction')
+    event.add('tfc:usable_on_tool_rack', 'create:super_glue')
+    event.add('tfc:usable_on_tool_rack', 'exposure:camera')
+    event.add('tfc:usable_on_tool_rack', 'measurements:tape_measure')
+    event.add('tfc:usable_on_tool_rack', '#chalk:chalks')
+    event.add('tfc:usable_on_tool_rack', 'chalk:chalk_box')
+    event.add('tfc:usable_on_tool_rack', 'computercraft:pocket_computer_normal')
+    event.add('tfc:usable_on_tool_rack', 'computercraft:pocket_computer_advanced')
+    event.add('tfc:usable_on_tool_rack', 'grapplemod:grapplinghook')
+    event.add('tfc:usable_on_tool_rack', 'grapplemod:launcheritem')
+    event.add('tfc:usable_on_tool_rack', 'ae2:color_applicator')
+    event.add('tfc:usable_on_tool_rack', 'ae2:matter_cannon')
+    event.add('tfc:usable_on_tool_rack', 'ae2:network_tool')
+    event.add('tfc:usable_on_tool_rack', 'ae2:wireless_terminal')
+    event.add('tfc:usable_on_tool_rack', 'ae2:wireless_crafting_terminal')
+    event.add('tfc:usable_on_tool_rack', 'waterflasks:leather_flask')
+    event.add('tfc:usable_on_tool_rack', 'waterflasks:iron_flask')
+    event.add('tfc:usable_on_tool_rack', 'waterflasks:red_steel_flask')
+    event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
 
     // Ингредиенты для закваски
     event.add('tfg:ferments_to_rennet', 'tfc:food/soybean')
@@ -259,7 +286,6 @@ const registerTFCItemTags = (event) => {
     event.add('forge:cloth', 'tfc:burlap_cloth')
     event.add('forge:cloth', 'tfc:wool_cloth')
     event.add('forge:cloth', 'tfc:silk_cloth')
-    event.add('forge:cloth', 'minecraft:phantom_membrane')
 
     // Piglin loved
     event.add('minecraft:piglin_loved', 'tfc:ore/small_native_gold')

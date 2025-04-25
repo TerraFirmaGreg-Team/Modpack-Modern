@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Changes
-- Increased Astikor Carts item size limit.
+- Increased Astikor Carts item size limit
 - Fixed kaolin clay not generating in the overworld
 - Changed some quests based on feedback
 - Added recipes for digger helmet upgrades
@@ -23,7 +23,7 @@
 - Fixed not being able to pick up spring water or put it in a mixing bowl
 - Buffed hot or not insulation items by x3
 - Nerfed rotation speed controller recipe
-- Now you can put construction wands on tool racks
+- Now you can put a lot more items on tool racks
 - Buffed nether mob loot tables
 - The overworld graphite vein now spawns in every stone type
 - Granitic/basaltic mineral sand is now usable for iron in primitive age
@@ -41,6 +41,10 @@
 - Added recipe for vanilla campfire for people who like smoke particles
 - Removed some more duplicate recipes for vanilla items
 - Hid some more things in JEI that aren't craftable
+- Added fishing nets in many tiers for scooping fishies
+- Added nylon string and fabric
+- Added phantom string and fabric, created from phantom membranes--Replacing them in recipes
+- Added support for armor trims, fixed some broken textures, added a bunch of materials, and made a helper function.
 
 ## [0.9.1] - 18.04.2025
 ### Changes
