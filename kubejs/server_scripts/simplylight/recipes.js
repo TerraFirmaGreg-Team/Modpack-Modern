@@ -86,7 +86,7 @@ const registerSimplylightRecipes = (event) => {
         'BBB',
         '   '  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:plates/tin_alloy'
     }).id('tfg:simplylight/illuminant_slab')
 
@@ -95,7 +95,7 @@ const registerSimplylightRecipes = (event) => {
         'BA ',
         'BA '  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:plates/tin_alloy'
     }).id('tfg:simplylight/wall_lamp')
 
@@ -104,7 +104,7 @@ const registerSimplylightRecipes = (event) => {
         'ABA',
         'ACA'  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:rods/tin_alloy',
         C: '#forge:bolts/tin_alloy'
     }).id('tfg:simplylight/rod_lamp')
@@ -114,7 +114,7 @@ const registerSimplylightRecipes = (event) => {
         'BBB',
         '   '  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:plates/tin_alloy'
     }).id('tfg:simplylight/light_bulb')
 
@@ -123,20 +123,19 @@ const registerSimplylightRecipes = (event) => {
         'CBC',
         '   '  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:rods/tin_alloy',
         C: '#forge:bolts/tin_alloy'
     }).id('tfg:simplylight/edge_light')
 
-    event.shaped('8x simplylight:lamp_post', [
+    event.shaped('4x simplylight:lamp_post', [
         ' A ',
         ' B ',
-        'CDC'  
+        ' C '
     ], {
         A: '#simplylight:any_lamp_on',
-        B: '#forge:rods/long/bronze',
-        C: '#forge:plates/bronze',
-        D: '#forge:screws/bronze'
+        B: '#forge:rods/long/tin_alloy',
+        C: '#forge:plates/tin_alloy',
     }).id('tfg:simplylight/lamp_post')
 
     event.shaped('8x simplylight:illuminant_block_on', [
@@ -144,7 +143,7 @@ const registerSimplylightRecipes = (event) => {
         'ACA',
         'BAB'  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:plates/tin_alloy',
         C: '#forge:fine_wires/red_alloy',
     }).id('tfg:simplylight/illuminant_block_on')
@@ -154,7 +153,7 @@ const registerSimplylightRecipes = (event) => {
         'BCB',
         'ABA'  
     ], {
-        A: '#forge:dusts/glowstone',
+        A: 'minecraft:glowstone',
         B: '#forge:plates/tin_alloy',
         C: '#forge:fine_wires/red_alloy',
     }).id('tfg:simplylight/illuminant_block')

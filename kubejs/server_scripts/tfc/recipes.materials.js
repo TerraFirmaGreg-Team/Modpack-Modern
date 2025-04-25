@@ -360,7 +360,7 @@ function registerTFCMaterialsRecipes(event) {
 
 					}
 
-					let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadKnife, material, 1)
+					let butcheryKnifeHeadItem = ChemicalHelper.get(TFGTagPrefix.toolHeadButcheryKnife, material, 1)
 					if (!butcheryKnifeHeadItem.isEmpty()) {
 
 						// Декрафт оголовья в жидкость

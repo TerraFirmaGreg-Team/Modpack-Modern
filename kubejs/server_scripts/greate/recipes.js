@@ -83,47 +83,41 @@ function registerGreateRecipes(event) {
 
 	// #region Millstones
 
-	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('greate:andesite_alloy_millstone', [
-			' B ',
-			'DCE',
-			' A '
-		], {
-			A: 'tfc:quern',
-			B: 'tfc:handstone',
-			C: '#forge:gears/bronze',
-			D: '#forge:tools/hammers',
-			E: '#tfc:chisels'
-		})
-	).id('greate:shaped/andesite_alloy_millstone')
+	event.shaped('greate:andesite_alloy_millstone', [
+		' B ',
+		'DCE',
+		' A '
+	], {
+		A: 'tfc:quern',
+		B: 'tfc:handstone',
+		C: '#forge:gears/bronze',
+		D: '#forge:tools/hammers',
+		E: '#forge:tools/saws'
+	}).id('greate:shaped/andesite_alloy_millstone')
 
-	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('greate:andesite_alloy_millstone', [
-			' B ',
-			'DCE',
-			' A '
-		], {
-			A: 'tfc:quern',
-			B: 'tfc:handstone',
-			C: '#forge:gears/bismuth_bronze',
-			D: '#forge:tools/hammers',
-			E: '#tfc:chisels'
-		})
-	).id('greate:shaped/andesite_alloy_millstone2')
+	event.shaped('greate:andesite_alloy_millstone', [
+		' B ',
+		'DCE',
+		' A '
+	], {
+		A: 'tfc:quern',
+		B: 'tfc:handstone',
+		C: '#forge:gears/bismuth_bronze',
+		D: '#forge:tools/hammers',
+		E: '#forge:tools/saws'
+	}).id('greate:shaped/andesite_alloy_millstone2')
 
-	event.recipes.tfc.damage_inputs_shaped_crafting(
-		event.shaped('greate:andesite_alloy_millstone', [
-			' B ',
-			'DCE',
-			' A '
-		], {
-			A: 'tfc:quern',
-			B: 'tfc:handstone',
-			C: '#forge:gears/black_bronze',
-			D: '#forge:tools/hammers',
-			E: '#tfc:chisels'
-		})
-	).id('greate:shaped/andesite_alloy_millstone3')
+	event.shaped('greate:andesite_alloy_millstone', [
+		' B ',
+		'DCE',
+		' A '
+	], {
+		A: 'tfc:quern',
+		B: 'tfc:handstone',
+		C: '#forge:gears/black_bronze',
+		D: '#forge:tools/hammers',
+		E: '#forge:tools/saws'
+	}).id('greate:shaped/andesite_alloy_millstone3')
 
 	event.shaped('greate:steel_millstone', [
 		'FBF',
@@ -234,7 +228,7 @@ function registerGreateRecipes(event) {
 		A: '#gtceu:circuits/ulv',
 		B: 'gtceu:cobalt_brass_buzz_saw_blade',
 		C: 'greate:steel_cogwheel',
-		D: 'gtceu:ulv_machine_casing',
+		D: 'gtceu:ulv_machine_hull',
 		E: 'greate:steel_shaft',
 		F: '#forge:tools/wrenches'
 	}).id('greate:shaped/steel_mechanical_saw')
@@ -247,7 +241,7 @@ function registerGreateRecipes(event) {
 		A: '#gtceu:circuits/mv',
 		B: 'gtceu:vanadium_steel_buzz_saw_blade',
 		C: 'gtceu:mv_electric_motor',
-		D: 'gtceu:mv_machine_casing',
+		D: 'gtceu:mv_machine_hull',
 		E: 'greate:aluminium_shaft',
 		F: '#forge:tools/wrenches'
 	}).id('greate:shaped/aluminium_mechanical_saw')
@@ -262,7 +256,7 @@ function registerGreateRecipes(event) {
 	//	A: '#gtceu:circuits/hv',
 	//	B: 'gtceu:red_steel_buzz_saw_blade',
 	//	C: 'gtceu:hv_electric_motor',
-	//	D: 'gtceu:hv_machine_casing',
+	//	D: 'gtceu:hv_machine_hull',
 	//	E: 'greate:stainless_steel_shaft',
 	//	F: '#forge:tools/wrenches'
 	// }).id('greate:shaped/stainless_steel_mechanical_saw')
@@ -275,7 +269,7 @@ function registerGreateRecipes(event) {
 	//	A: '#gtceu:circuits/ev',
 	//	B: 'gtceu:ultimet_buzz_saw_blade',
 	//	C: 'gtceu:ev_electric_motor',
-	//	D: 'gtceu:ev_machine_casing',
+	//	D: 'gtceu:ev_machine_hull',
 	//	E: 'greate:titanium_shaft',
 	//	F: '#forge:tools/wrenches'
 	//}).id('greate:shaped/titanium_mechanical_saw')
@@ -301,23 +295,32 @@ function registerGreateRecipes(event) {
 	// #region Belt Connector
 
 	event.shaped('greate:rubber_belt_connector', [
+		'C  ',
 		'AAA',
-		'AAA',
-		'BDC'
+		'B  '
 	], {
-		A: '#forge:leather',
+		A: '#forge:plates/rubber',
 		B: '#forge:tools/knives',
-		C: '#tfc:sewing_needles',
-		D: '#forge:string'
-	}).id('greate:shaped/rubber_belt_connector_from_leather')
+		C: '#forge:tools/hammers',
+	}).id('greate:shaped/rubber_belt_connector')
+
+	event.shaped('greate:silicone_rubber_belt_connector', [
+		'C  ',
+		'AAA',
+		'B  '
+	], {
+		A: '#forge:plates/silicone_rubber',
+		B: '#forge:tools/knives',
+		C: '#forge:tools/hammers',
+	}).id('greate:shaped/silicone_rubber_belt_connector')
 
 	event.shaped('greate:polyethylene_belt_connector', [
+		'C  ',
 		'AAA',
-		'AAA',
-		'B C'
+		'B  '
 	], {
 		A: '#forge:plates/styrene_butadiene_rubber',
-		B: '#forge:tools/files',
+		B: '#forge:tools/knives',
 		C: '#forge:tools/hammers',
 	}).id('greate:shaped/polyethylene_belt_connector')
 

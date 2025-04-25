@@ -43,10 +43,9 @@ function registerTFGRockRecipes(event) {
 			x.brick, [x.loose, '#tfc:chisels']
 		))
 
-		event.recipes.gtceu.assembler(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
+		event.recipes.gtceu.cutter(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
 			.itemInputs(x.loose)
 			.itemOutputs(x.brick)
-			.circuit(1)
 			.duration(40)
 			.EUt(8)
 	})
@@ -75,13 +74,13 @@ function registerTFGRockRecipes(event) {
 			.duration(30)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: x.raw }],
-			results: [{item: x.polished }],
-			energy: GTValues.VA[GTValues.ULV] * 30 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/tfg/${x.raw.replace(/:/g, '_')}_to_${x.polished.replace(/:/g, '_')}`)
+		//event.custom({
+		//	type: 'vintageimprovements:laser_cutting',
+		//	ingredients: [{ item: x.raw }],
+		//	results: [{item: x.polished }],
+		//	energy: GTValues.VA[GTValues.ULV] * 30 * 4,
+		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		//}).id(`tfg:vi/laser/tfg/${x.raw.replace(/:/g, '_')}_to_${x.polished.replace(/:/g, '_')}`)
 	})
 
 	// cracked bricks

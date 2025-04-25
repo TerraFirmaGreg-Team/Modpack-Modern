@@ -3,19 +3,17 @@
 function registerDiggerHelmetRecipes(event) {
 	event.remove({ mod: 'diggerhelmet' })
 
-	event.shapeless('diggerhelmet:eternal_candle', ['#minecraft:candles', 'minecraft:glowstone_dust'])
-		.id('tfg:shapeless/eternal_candle')
-
 	event.shaped('diggerhelmet:digger_helmet', [
-		' A ',
-		'EB ',
+		' F ',
+		'EAB',
 		'DCD'
 	], {
-		A: 'diggerhelmet:eternal_candle',
+		A: '#minecraft:candles',
 		B: '#forge:rings',
 		C: 'minecraft:leather_helmet',
 		D: '#forge:rods/tin',
-		E: '#forge:tools/hammers'
+		E: '#forge:tools/hammers',
+		F: 'minecraft:glowstone_dust'
 	})
 	.id('tfg:shaped/digger_helmet')
 
@@ -35,5 +33,15 @@ function registerDiggerHelmetRecipes(event) {
 		B: '#forge:string',
 		C: 'minecraft:bamboo',
 		D: 'tfc:glue'
-	}).id('tfg:shaped/auto_drink_modifier')
+	}).id('tfg:shaped/auto_drink_modifier_bamboo')
+
+	event.shaped('diggerhelmet:auto_drink_modifier', [
+		' A ',
+		'BCB',
+		' C '
+	], {
+		A: 'waterflasks:leather_flask',
+		B: '#forge:screws/wrought_iron',
+		C: '#forge:foils/rubber'
+	}).id('tfg:shaped/auto_drink_modifier_rubber')
 }

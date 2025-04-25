@@ -1,0 +1,51 @@
+{
+	"name": "Gestione dell'inventario",
+	"category": "tfc:tfg_tips",
+	"icon": "minecraft:chest",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Gestione dell'inventario",
+			"text": "Quindi sei riuscito a fare un paio di $(l:getting_started/pottery#vessel)Anfore$() e anche delle $(item)Bauli$(), ma hai ancora più oggetti di quanti tu ne abbia realmente bisogno. Cosa viene dopo?$(br2)Uno $(thing)Zaino$() può duplicare lo spazio del tuo inventario personale, e ulteriori aggiornamenti lo aumenteranno ancora di più!"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "tfg:sophisticated_backpacks/shaped/backpack",
+			"text": "Gli zaini possono trasportare molteplici oggetti pesanti senza ingombrare, così come oggetti grandi come stack di tronchi.$(br2)Puoi anche aggiornarlo con un $(thing)Crafting Update$() per avere un Banco da Lavoro con te ovunque tu vada."
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Casse",
+			"anchor": "crates",
+			"text": "Per il magazzinaggio, Gregtech ha le $(item)Casse$() che possono immagazzinare tutti gli oggetti più grandi che uno zaino può, e livelli diversi possono contenere più e più oggetti.Le $(br2)Casse$() possono anche avere $(thing)Filtri per Oggett$() e $(thing)Filtri per Tag$() messi su di loro se vuoi avere un sistema di sortaggio di base.$(br2)I $(thing)Tubi per Oggetti$() però non possono tirare oggetti da soli, quindi avrai bisogno di uno $(thing)Scivolo$() o una $(thing)Tramoggia$() per spingere oggetti dentro di loro."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/wooden_crate",
+			"recipe2": "gtceu:shaped/bronze_crate"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Fusti",
+			"anchor": "drums",
+			"text": "Per immagazzinare i liquidi, Gregtech offre i $(item)Fusti$(). Questi possono contenere una grande quantità di un singolo tipo di liquido, e livelli diversi ne possono contenere di più, proprio come le casse.$(br2)A differenza delle casse, i fusti non perderanno i loro contenuti dopo che sono stati rotti, cosa che li rende ideali per trasportare fluidi in giro.$(br2)Se si ha in mano un $(thing)Cacciavite$() puoi cliccare con il tasto destro nella parte inferiore del fusto per spingere automaticamente il contenuto in un tubo."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "gtceu:shaped/bronze_drum",
+			"text": "Piazza un fusto in un banco da lavoro o in una griglia di crafting per svuotare il suo contenuto."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "gtceu:lv_super_chest,gtceu:lv_super_tank",
+			"title": "Super Casse",
+			"text": "Stai producendo un oggetto in quantità industriali? Le $(thing)Super Case$() e le $(thing)Super Cisterne$() di Gregtech possono contenere quantità impensabili di un singolo tipo di oggetto, e possono anche eliminare gli eccessi."
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": "Applied Energistics 2",
+			"item": "ae2:drive",
+			"text": "Disponibile alla fine del $(thing)HV$(), la AE2 può fornirti di tutto quello di cui avrai bisogno per magazzinaggio e logistica."
+		}
+	]
+}

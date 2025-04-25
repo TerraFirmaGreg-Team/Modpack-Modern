@@ -1,0 +1,18 @@
+
+[General]
+	#
+	# Toggles generation of sand layers. Disabling this (false) will shorten world generation time.
+	enableSandLayers = false
+	#
+	# Maximum rainfall for where sand layers can generate. Set to 500 to enable everywhere.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	sandLayerRainfall = 100.0
+	#
+	# The center point (rainfall) at which some biomes will start to turn into sand dunes. Set to any arbitrary large or low number to disable entirely.
+	#Range: > -2147483648
+	duneThreshold = 20
+	#
+	# The center point (rainfall) at which badland biomes will start to turn into their normal terrain. Set to any arbitrary large or low number to disable entirely.
+	#Range: > -2147483648
+	badlandsThreshold = 140
+

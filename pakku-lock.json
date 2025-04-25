@@ -2934,6 +2934,81 @@
             ]
         },
         {
+            "pakku_id": "gAgHdhnBNULr0m6H",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "corpse-x-curios-api-compat",
+                "modrinth": "corpse-x-curios-api-compat"
+            },
+            "name": {
+                "curseforge": "Corpse x Curios API Compat",
+                "modrinth": "Corpse x Curios API Compat"
+            },
+            "id": {
+                "curseforge": "1138130",
+                "modrinth": "pJGcKPh1"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6327/919/corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
+                    "id": "6327919",
+                    "parent_id": "1138130",
+                    "hashes": {
+                        "sha1": "1e00db91b74287eb63f389c6c8cb5a70df41f8e0",
+                        "md5": "82d54c35a60a963f292dc3f3fd3b3af2"
+                    },
+                    "required_dependencies": [],
+                    "size": 9117,
+                    "date_published": "2025-03-21T09:35:57.857Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
+                    "mc_versions": [
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/pJGcKPh1/versions/svYuXRgL/corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar",
+                    "id": "svYuXRgL",
+                    "parent_id": "pJGcKPh1",
+                    "hashes": {
+                        "sha512": "966b34642604bd6bf7b27591820a64471448cb21e8ff560ff19c29a891e9a2bf4abf66ab879878839ce0eac45250a39600b83580afb2455da9ef467ae5270d59",
+                        "sha1": "1e00db91b74287eb63f389c6c8cb5a70df41f8e0"
+                    },
+                    "required_dependencies": [],
+                    "size": 9117,
+                    "date_published": "2025-03-22T08:58:23.301497Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "MR4Y9duUBP4YpwJY",
             "type": "MOD",
             "slug": {

@@ -7,9 +7,6 @@ const registerHotOrNotItemTags = (event) => {
         event.removeAllTagsFrom(item)
         event.add('c:hidden_from_recipe_viewers', item)
     })
-
-    // TODO: TEMP FIX
-    event.add('tfchotornot:insulating', '#tfc:all_blowpipes')
 }
 
 const registerHotOrNotBlockTags = (event) => {
