@@ -313,4 +313,11 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.shapeless('8x minecraft:snow', ['minecraft:snow_block', '#forge:tools/saws'])
 		.id('tfg:shapeless/snow')
+
+	// Universal Circuit
+
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1),  [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
+			).id(`universal_circuits_${tier}`);
+	});
 }
