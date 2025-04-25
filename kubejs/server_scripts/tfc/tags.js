@@ -29,6 +29,7 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/plungers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mortars')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mallets')
+    event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
     
     event.add('tfc:usable_on_tool_rack', '#forge:tools/chainsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
@@ -444,6 +445,11 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
 
+    event.add('tfc:usable_in_barrel', 'gtceu:ice')
+    event.add('tfc:usable_in_pot', 'gtceu:ice')
+    event.add('tfc:usable_in_wooden_bucket', 'gtceu:ice')
+    event.add('tfc:usable_in_red_steel_bucket', 'gtceu:ice')
+
     event.add('tfc:ingredients', 'tfc:spring_water')
     event.add('tfc:usable_in_barrel', 'tfc:spring_water')
     event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')
@@ -475,10 +481,22 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
 }
 
+const registerTFCBiomeTags = (event) => {
+
+    event.add('tfc:kaolin_clay_spawns_in', 'tfc:rolling_hills')
+}
+
 const registerTFCPlacedFeatures = (event) => {
     
     // Удаление
     event.removeAll('tfc:in_biome/veins')
+
+    // Add back the non-ore ones
+    event.add('tfc:in_biome/veins', 'tfc:vein/gravel')
+	event.add('tfc:in_biome/veins', 'tfc:vein/kaolin_disc')
+    event.add('tfc:in_biome/veins', 'tfc:vein/granite_dike')
+    event.add('tfc:in_biome/veins', 'tfc:vein/diorite_dike')
+    event.add('tfc:in_biome/veins', 'tfc:vein/gabbro_dike')
 
     // Добавление
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')

@@ -595,7 +595,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:frogspawn', 
     'minecraft:cactus', 
     'minecraft:sweet_berries', 
-    'minecraft:campfire', 
     'minecraft:soul_campfire', 
     'minecraft:bee_nest', 
     'minecraft:fletching_table', 
@@ -626,8 +625,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:purpur_slab', 
     'minecraft:shears', 
     'minecraft:lantern', 
-    'minecraft:soul_lantern', 
-    'minecraft:smithing_table', 
+    'minecraft:soul_lantern',
     'minecraft:smoker', 
     'minecraft:blast_furnace', 
     'minecraft:chiseled_bookshelf', 
@@ -740,6 +738,7 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:nether_sprouts', 
     'minecraft:warped_roots', 
     'minecraft:dragon_head', 
+    'minecraft:dragon_breath', 
     'minecraft:creeper_head', 
     'minecraft:wither_skeleton_skull', 
     'minecraft:weeping_vines', 
@@ -749,6 +748,8 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:twisting_vines', 
     'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
+    'minecraft:ghast_tear',
+    'minecraft:nautilus_shell'
 ];
 
 global.MINECRAFT_HIDED_ITEMS = [

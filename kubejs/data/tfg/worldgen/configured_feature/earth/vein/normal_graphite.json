@@ -179,13 +179,222 @@
 						"weight": 30
 					}
 				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/dacite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dacite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dacite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dacite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/rhyolite"
+				],
+				"with": [
+					{
+						"block": "gtceu:rhyolite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:rhyolite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:rhyolite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/andesite"
+				],
+				"with": [
+					{
+						"block": "gtceu:andesite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:andesite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:andesite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:basalt_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:basalt_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/shale"
+				],
+				"with": [
+					{
+						"block": "gtceu:shale_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:shale_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:shale_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/claystone"
+				],
+				"with": [
+					{
+						"block": "gtceu:claystone_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:claystone_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:claystone_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/limestone"
+				],
+				"with": [
+					{
+						"block": "gtceu:limestone_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:limestone_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:limestone_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/conglomerate"
+				],
+				"with": [
+					{
+						"block": "gtceu:conglomerate_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:conglomerate_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:conglomerate_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/dolomite"
+				],
+				"with": [
+					{
+						"block": "gtceu:dolomite_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:dolomite_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:dolomite_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/chert"
+				],
+				"with": [
+					{
+						"block": "gtceu:chert_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:chert_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:chert_coal_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/chalk"
+				],
+				"with": [
+					{
+						"block": "gtceu:chalk_graphite_ore",
+						"weight": 45
+					},
+					{
+						"block": "gtceu:chalk_diamond_ore",
+						"weight": 25
+					},
+					{
+						"block": "gtceu:chalk_coal_ore",
+						"weight": 30
+					}
+				]
 			}
 		],
 		"indicator": {
 			"rarity": 10,
 			"depth": 80,
 			"underground_rarity": 30,
-			"underground_count": 250,
+			"underground_count": 400,
 			"blocks": [
 				{
 					"block": "gtceu:graphite_indicator",

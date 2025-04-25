@@ -2,10 +2,6 @@
 	"feature": "tfg:nether/surface/stick_patch",
 	"placement": [
 		{
-			"type": "minecraft:rarity_filter",
-			"chance": 3
-		},
-		{
 			"type": "minecraft:height_range",
 			"height": {
 				"type": "minecraft:uniform",
@@ -19,7 +15,7 @@
 		},
 		{
 			"type": "minecraft:count_on_every_layer",
-			"count": 1
+			"count": 3
 		},
 		{
 			"type": "minecraft:in_square"

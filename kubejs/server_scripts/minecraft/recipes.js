@@ -274,6 +274,8 @@ const registerMinecraftRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.EUt(7).duration(30)
 
+	event.replaceInput({ id: 'minecraft:writable_book' }, 'minecraft:inc_sac', '#forge:dyes/black')
+
 	//#endregion
 
 	//#region
@@ -345,6 +347,13 @@ const registerMinecraftRecipes = (event) => {
 		B: '#forge:gems/nether_quartz',
 		C: '#tfc:rock/smooth'
 	}).id('tfg:shaped/comparator_nether_quartz');
+
+	event.replaceInput({id: 'gtceu:shaped/redstone_lamp' }, 'minecraft:glass_pane', '#forge:glass_panes')
+	event.recipes.gtceu.assembler('redstone_lamp')
+		.itemInputs('1x #forge:glass', '1x minecraft:glowstone', '1x #forge:rods/red_alloy')
+		.itemOutputs('minecraft:redstone_lamp')
+		.duration(50)
+		.EUt(7)
 
 	//#endregion
 
@@ -763,7 +772,7 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Выход: Кирпич
 
-	event.shaped('minecraft:bricks', [
+	event.shaped('4x minecraft:bricks', [
 		'BAB',
 		'ABA',
 		'BAB'
@@ -772,11 +781,33 @@ const registerMinecraftRecipes = (event) => {
 		B: 'minecraft:brick'
 	}).id('tfc:crafting/bricks')
 
+	event.recipes.gtceu.assembler('minecraft:bricks')
+		.itemInputs('5x minecraft:brick')
+		.inputFluids(Fluid.of('gtceu:concrete', 144))
+		.itemOutputs(`4x minecraft:bricks`)
+		.duration(50)
+		.EUt(7)
+
 	//#endregion
 
 	//#region Выход: Элитра
 
 	// Ну и херь я придумал
+
+	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
 		.itemInputs('16x #forge:foils/polycaprolactam', '16x #forge:foils/aluminium', '8x minecraft:phantom_membrane', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
@@ -797,20 +828,6 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
 		.duration(1600)
 		.EUt(120)
-
-	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
 
@@ -930,5 +947,29 @@ const registerMinecraftRecipes = (event) => {
 		.itemInputs('minecraft:leather_chestplate')
 		.itemOutputs('minecraft:leather')
 		.EUt(7).duration(80)
+	//#endregion
+
+	//#region Campfire
+	event.shaped('minecraft:campfire', [
+        ' A ',
+        'ABA',
+        'CDC'
+    ], {
+        A: 'minecraft:blaze_rod',
+        B: 'minecraft:blaze_powder',
+        C: '#forge:ingots/blue_steel',
+        D: '#forge:storage_blocks/charcoal',
+    }).id('tfg:campfire_charcoal')
+
+	event.shaped('minecraft:campfire', [
+        ' A ',
+        'ABA',
+        'CDC'
+    ], {
+        A: 'minecraft:blaze_rod',
+        B: 'minecraft:blaze_powder',
+        C: '#forge:ingots/blue_steel',
+        D: '#forge:storage_blocks/coal',
+    }).id('tfg:campfire_coal')
 	//#endregion
 }

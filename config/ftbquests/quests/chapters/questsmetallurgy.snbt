@@ -558,29 +558,20 @@
 		{
 			dependencies: ["3C173357029AB649"]
 			description: ["{quests.metal_age.mining.desc}"]
-			icon: "gtceu:almandine_indicator"
 			id: "234B68E86F72C29E"
 			subtitle: "{quests.metal_age.mining.subtitle}"
-			tasks: [
-				{
-					id: "6BB5900B1E695C61"
-					title: "{quests.tasktype.checkmark}"
-					type: "checkmark"
-				}
-				{
-					id: "42657F198063D88B"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
-						}
+			tasks: [{
+				id: "42657F198063D88B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
 					}
-					optional_task: true
-					title: "Any #forge:tools/mining_hammers"
-					type: "item"
 				}
-			]
+				title: "Any #forge:tools/mining_hammers"
+				type: "item"
+			}]
 			title: "{quests.metal_age.mining.title}"
 			x: 0.0d
 			y: -32.0d

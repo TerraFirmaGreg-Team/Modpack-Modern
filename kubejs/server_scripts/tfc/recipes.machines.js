@@ -359,6 +359,12 @@ function registerTFCMachineRecipes(event) {
 		.duration(50)
 		.EUt(2)
 
+	event.recipes.gtceu.lathe('tfc:lens')
+		.itemInputs('#forge:glass')
+		.itemOutputs('tfc:lens')
+		.duration(100)
+		.EUt(16)
+
 	// Wool Yarn
 	event.recipes.gtceu.macerator('macerate_wool')
 		.itemInputs('#minecraft:wool')
@@ -370,7 +376,7 @@ function registerTFCMachineRecipes(event) {
 		.EUt(2)
 
 	// LimeWater + Sand -> Mortar
-	event.recipes.gtceu.centrifuge('mortar')
+	event.recipes.gtceu.mixer('mortar')
 		.itemInputs('#forge:sand')
 		.inputFluids(Fluid.of('tfc:limewater', 100))
 		.itemOutputs('16x tfc:mortar')
