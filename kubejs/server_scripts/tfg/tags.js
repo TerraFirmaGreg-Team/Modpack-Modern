@@ -119,6 +119,16 @@ const registerTFGItemTags = (event) => {
 		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
 	})
 
+	// #endregion
+
+	// Universal Circuits
+
+		global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+			event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
+			})
+
+	// #endregion
+
 	// #region 0.7.19 -> 0.9 conversion
 
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
