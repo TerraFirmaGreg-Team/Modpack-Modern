@@ -111,4 +111,6 @@ const registerExposureRecipes = (event) => {
             item: "exposure:developed_color_film"
         }
     }).id('exposure:developing_color_film')
+
+    event.replaceInput({id: 'exposure:interplanar_projector'}, 'minecraft:ender_eye', '#forge:plates/silver')
 }
