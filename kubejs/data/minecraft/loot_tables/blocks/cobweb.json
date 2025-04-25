@@ -1,0 +1,53 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"conditions": [
+								{
+									"condition": "minecraft:any_of",
+									"terms": [
+										{
+											"condition": "minecraft:match_tool",
+											"predicate": {
+												"tag": "tfc:shears"
+											}
+										}
+									]
+								}
+							],
+							"name": "minecraft:cobweb"
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:string",
+							"conditions": [
+								{
+									"condition": "minecraft:survives_explosion"
+								}
+							],
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"min": 1,
+										"max": 3,
+										"type": "minecraft:uniform"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+	"random_sequence": "minecraft:blocks/cobweb"
+}

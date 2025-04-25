@@ -1441,7 +1441,10 @@ const registerCreateRecipes = (event) => {
 	]
 
 	DECO_BLOCKS.forEach(x => {
-		event.shapeless(x.cut, [x.base, '#tfc:chisels', '#forge:tools/files']).id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(x.cut, [x.base, '#tfc:chisels', '#forge:tools/files'])
+		).id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
 
 		event.recipes.gtceu.laser_engraver(`engrave_${x.cut.split(':')[1]}`)
 			.itemInputs(x.base)
@@ -1450,13 +1453,13 @@ const registerCreateRecipes = (event) => {
 			.duration(32)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: x.base }],
-			results: [{item: x.cut }],
-			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
+		//event.custom({
+		//	type: 'vintageimprovements:laser_cutting',
+		//	ingredients: [{ item: x.base }],
+		//	results: [{item: x.cut }],
+		//	energy: GTValues.VA[GTValues.ULV] * 32 * 4,
+		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		//}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
 
 		event.shaped(`2x create:layered_${x.cut.split('_')[1]}`, [
 			'AA'

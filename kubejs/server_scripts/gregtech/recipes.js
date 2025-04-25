@@ -499,7 +499,7 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/electric_blast_furnace')
 
 	// Клей из ТФК клея
-	event.recipes.gtceu.centrifuge('glue_from_tfc_glue')
+	event.recipes.gtceu.extractor('glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.duration(400)
@@ -1009,6 +1009,9 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 		
 	// TODO: Greate again...
+	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick'])
+		.id('tfg:shapeless/programmed_circuit_from_stick')
+
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
 		.id('tfg:shapeless/red_alloy_single_cable')
 

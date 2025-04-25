@@ -295,23 +295,32 @@ function registerGreateRecipes(event) {
 	// #region Belt Connector
 
 	event.shaped('greate:rubber_belt_connector', [
+		'C  ',
 		'AAA',
-		'AAA',
-		'BDC'
+		'B  '
 	], {
-		A: '#forge:leather',
+		A: '#forge:plates/rubber',
 		B: '#forge:tools/knives',
-		C: '#tfc:sewing_needles',
-		D: '#forge:string'
-	}).id('greate:shaped/rubber_belt_connector_from_leather')
+		C: '#forge:tools/hammers',
+	}).id('greate:shaped/rubber_belt_connector')
+
+	event.shaped('greate:silicone_rubber_belt_connector', [
+		'C  ',
+		'AAA',
+		'B  '
+	], {
+		A: '#forge:plates/silicone_rubber',
+		B: '#forge:tools/knives',
+		C: '#forge:tools/hammers',
+	}).id('greate:shaped/silicone_rubber_belt_connector')
 
 	event.shaped('greate:polyethylene_belt_connector', [
+		'C  ',
 		'AAA',
-		'AAA',
-		'B C'
+		'B  '
 	], {
 		A: '#forge:plates/styrene_butadiene_rubber',
-		B: '#forge:tools/files',
+		B: '#forge:tools/knives',
 		C: '#forge:tools/hammers',
 	}).id('greate:shaped/polyethylene_belt_connector')
 

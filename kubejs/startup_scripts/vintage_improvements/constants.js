@@ -13,6 +13,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:v_shaped_curving_head',
 	'vintageimprovements:grinder_belt',
 	'vintageimprovements:spring_coiling_machine_wheel',
+	'vintageimprovements:laser',
 	'vintageimprovements:laser_item',
 	'vintageimprovements:sulfur_chunk',
 	'vintageimprovements:sulfur',

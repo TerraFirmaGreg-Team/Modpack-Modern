@@ -10,5 +10,7 @@ global.CREATE_CONNECTED_DISABLED_ITEMS = [
 	'create_connected:vertical_brass_gearbox',
 	'create_connected:shear_pin',
 	'create_connected:control_chip',
-	'create_connected:incomplete_control_chip'
+	'create_connected:incomplete_control_chip',
+	'create_connected:crank_wheel',
+	'create_connected:large_crank_wheel'
 ]
