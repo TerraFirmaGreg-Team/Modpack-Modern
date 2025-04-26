@@ -2,7 +2,8 @@
 
 const registerTFCTagPrefixes = (event) => {
 
-    TagPrefix.ORES.remove(TagPrefix.ore)
+    // These ores break worldgen if removed somehow?
+    // TagPrefix.ORES.remove(TagPrefix.ore)
     TagPrefix.ORES.remove(TagPrefix.oreDeepslate)
     TagPrefix.ORES.remove(TagPrefix.oreTuff)
     TagPrefix.ORES.remove(TagPrefix.oreSand)
@@ -51,7 +52,7 @@ const registerTFCTagPrefixes = (event) => {
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(ItemGenerationCondition.hasOreProperty)
-
+        .materialSupplier(() => GTCEuAPI.materialManager.getMaterial('dripstone'))
 	// Redefine deepslate so it has the correct sound effects (yes I fixed this in GTM as well)
 	event.create('deepslate', 'ore')
 		.stateSupplier(() => Block.getBlock('minecraft:deepslate').defaultBlockState())
