@@ -1017,6 +1017,18 @@ global.TFC_MILKS = [
     {id: 'firmalife:coconut_milk'},
 ];
 
+global.TFC_ALCOHOL = [
+    {id: 'tfc:beer'},
+    {id: 'tfc:cider'},
+    {id: 'tfc:rum'},
+    {id: 'tfc:sake'},
+    {id: 'tfc:vodka'},
+    {id: 'tfc:whiskey'},
+    {id: 'tfc:corn_whiskey'},
+    {id: 'tfc:rye_whiskey'},
+    {id: 'firmalife:mead'},
+];
+
 global.TFC_MAGMA_BLOCKS = [
     'tfc:rock/magma/granite',
     'tfc:rock/magma/diorite',
