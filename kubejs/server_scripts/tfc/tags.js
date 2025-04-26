@@ -4,6 +4,7 @@
  * 
  * @param {TagEvent.Item} event 
  */
+//#region ItemTags
 const registerTFCItemTags = (event) => {
     // Теги для соответствия инструментов TFC и GT
     
@@ -293,7 +294,9 @@ const registerTFCItemTags = (event) => {
     event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
     event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
 }
+//#endregion
 
+//#region BlockTags
 const registerTFCBlockTags = (event) => {
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
@@ -402,8 +405,16 @@ const registerTFCBlockTags = (event) => {
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
 
     //#endregion
+    
+    //Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
+    //Add blacklisted words to the const with | between.
+    const brick_blacklist = ('drying|slab|stairs|wall|additionalplacements');
+    event.add('tfc:bloomery_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
+    event.add('tfc:forge_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
 }
+//#endregion
 
+//#region FluidTags
 const registerTFCFluidTags = (event) => {
     // Удаление TFC металлов из возможных в форме слитка
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/bismuth')
@@ -506,12 +517,16 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_red_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
 }
+//#endregion
 
+//#region BiomeTags
 const registerTFCBiomeTags = (event) => {
 
     event.add('tfc:kaolin_clay_spawns_in', 'tfc:rolling_hills')
 }
+//#endregion
 
+//#region PlacedFeatures
 const registerTFCPlacedFeatures = (event) => {
     
     // Удаление
@@ -587,3 +602,4 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
     event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
 }
+//#endregion

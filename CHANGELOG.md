@@ -45,6 +45,9 @@
 - Added nylon string and fabric
 - Added phantom string and fabric, created from phantom membranes--Replacing them in recipes
 - Added support for armor trims, fixed some broken textures, added a bunch of materials, and made a helper function.
+- Added handcart recipe
+- Allowed more blocks to be used as oven, forge, and bloomery insulation
+- Fixed lang error with treated wood planks recipe
 
 ## [0.9.1] - 18.04.2025
 ### Changes
