@@ -217,90 +217,90 @@
 		{
 			id: "709FB8C1561E7BB8"
 			linked_quest: "1646BF9194100E57"
-			x: -1.0d
-			y: -5.0d
+			x: -0.99d
+			y: -5.12d
 		}
 		{
 			id: "499941B0EDEFBF54"
 			linked_quest: "1C55AE6AD5BDE304"
-			x: 0.0d
-			y: -5.0d
+			x: 0.010000000000000009d
+			y: -5.12d
 		}
 		{
 			id: "10F2DA9FCC5E3860"
 			linked_quest: "6B08799BCFD01D3D"
-			x: 1.0d
-			y: -5.0d
+			x: 1.01d
+			y: -5.12d
 		}
 		{
 			id: "72CBEEAD5A41685E"
 			linked_quest: "069FD86133D7D582"
-			x: 2.0d
-			y: -5.0d
+			x: 2.01d
+			y: -5.12d
 		}
 		{
 			id: "76C69275A82861C8"
 			linked_quest: "7A1E3C3A2D699C5B"
-			x: 3.0d
-			y: -5.0d
+			x: 3.01d
+			y: -5.12d
 		}
 		{
 			id: "6C144735C40EE615"
 			linked_quest: "2FCBA0D780DBDA9E"
-			x: 4.0d
-			y: -5.0d
+			x: 4.01d
+			y: -5.12d
 		}
 		{
 			id: "5FDCCB7CE9DACB34"
 			linked_quest: "4C7C0F6A6598BC24"
-			x: 5.0d
-			y: -5.0d
+			x: 5.01d
+			y: -5.12d
 		}
 		{
 			id: "4ACE1AFCEDC37A05"
 			linked_quest: "6AF3A40BC9CE7122"
-			x: 6.0d
-			y: -5.0d
+			x: 6.01d
+			y: -5.12d
 		}
 		{
 			id: "1EA07F998161450C"
 			linked_quest: "30A6EDDF25A5E5F8"
 			shape: "rsquare"
 			size: 0.66d
-			x: 2.0d
-			y: -4.0d
+			x: 2.01d
+			y: -4.12d
 		}
 		{
 			id: "532482B324E31386"
 			linked_quest: "1776FA1F3255731E"
 			shape: "rsquare"
 			size: 0.66d
-			x: 3.0d
-			y: -4.0d
+			x: 3.01d
+			y: -4.12d
 		}
 		{
 			id: "0F86FC5CD130B2E1"
 			linked_quest: "78277DBC07D3C45C"
 			shape: "rsquare"
 			size: 0.66d
-			x: 4.0d
-			y: -4.0d
+			x: 4.01d
+			y: -4.12d
 		}
 		{
 			id: "7D227159C48FAB94"
 			linked_quest: "0DC999F79A685194"
 			shape: "rsquare"
 			size: 0.66d
-			x: 5.0d
-			y: -4.0d
+			x: 5.01d
+			y: -4.12d
 		}
 		{
 			id: "718938D16A6098A7"
 			linked_quest: "35F13B6D60361904"
 			shape: "rsquare"
 			size: 0.66d
-			x: 6.0d
-			y: -4.0d
+			x: 6.01d
+			y: -4.12d
 		}
 		{
 			id: "713A4F2E798A8BDB"
@@ -333,6 +333,48 @@
 			size: 0.8d
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			id: "54253615E949F3FD"
+			linked_quest: "48A8E3210B2BAE1C"
+			size: 0.85d
+			x: 0.0d
+			y: -7.6499999999999995d
+		}
+		{
+			id: "6DE3523492F7488F"
+			linked_quest: "3C173357029AB649"
+			size: 0.85d
+			x: 1.0d
+			y: -7.6499999999999995d
+		}
+		{
+			id: "15C67D0A68F367B8"
+			linked_quest: "174DA15847665CF8"
+			size: 0.85d
+			x: 1.9999999999999998d
+			y: -7.6499999999999995d
+		}
+		{
+			id: "3FB2B4E7A1EA2511"
+			linked_quest: "04DE7C58F20B535A"
+			size: 0.85d
+			x: 3.0d
+			y: -7.6499999999999995d
+		}
+		{
+			id: "6DE6915952A42CFE"
+			linked_quest: "52DAF93E2F3D688A"
+			size: 0.85d
+			x: 4.0d
+			y: -7.6499999999999995d
+		}
+		{
+			id: "51370C0C07149D25"
+			linked_quest: "56CA2EB7812529C5"
+			size: 0.85d
+			x: 5.0d
+			y: -7.6499999999999995d
 		}
 	]
 	quests: [
@@ -501,7 +543,7 @@
 			progression_mode: "linear"
 			size: 0.85d
 			title: "&8ULV&r Circuits"
-			x: -1.0
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -689,8 +731,8 @@
 				item: "gtceu:cupronickel_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -0.99d
+			y: -4.12d
 		}
 		{
 			dependencies: [
@@ -705,8 +747,8 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 0.010000000000000009d
+			y: -4.12d
 		}
 		{
 			dependencies: ["6958029B5514D4EC"]
@@ -718,8 +760,8 @@
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 1.01d
+			y: -4.12d
 		}
 	]
 	subtitle: ["A step forward is always rewarding"]
