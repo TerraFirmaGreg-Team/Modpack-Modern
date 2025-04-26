@@ -541,6 +541,14 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:conifer_rosin' }],
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 200
+	}).id('tfg:vi/vacuumizing/glue_from_rosin')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:bone_meal' }, { fluid: 'tfc:limewater', amount: 500 }],
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
 		heatRequirement: "heated",
