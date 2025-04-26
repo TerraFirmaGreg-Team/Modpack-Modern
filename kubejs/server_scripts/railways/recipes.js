@@ -400,4 +400,17 @@ const registerRailWaysRecipes = (event) => {
 			.EUt(16)
 			.circuit(3)
 	});
+
+	event.shaped('1x railways:handcar', [
+		'EFE',
+		'BAA',
+		'CDC'
+	], {
+		A: '#minecraft:wooden_slabs',
+		B: '#create:seats',
+		C: 'gtceu:steel_minecart_wheels',
+		D: 'greate:steel_cogwheel',
+		E: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.Steel, 1),
+		F: ChemicalHelper.get(TagPrefix.spring, GTMaterials.Steel, 1)
+	}).id('tfg:railways/shaped/handcar')
 }

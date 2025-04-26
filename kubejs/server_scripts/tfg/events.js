@@ -1,38 +1,38 @@
+//#region Medicine
 
-//pills & tablets
+    //Pills & Tablets
+    const pill_event = [
+        'haste',
+        'luck',
+        'night_vision',
+        'poison',
+        'regeneration',
+        'slowness',
+        'speed',
+        'water_breathing',
+        'weakness',
+    ];
 
-const pill_event = [
-    'haste',
-    'luck',
-    'night_vision',
-    'poison',
-    'regeneration',
-    'slowness',
-    'speed',
-    'water_breathing',
-    'weakness',
-];
+    pill_event.forEach(pill_event => {
 
-pill_event.forEach(pill_event => {
+        ItemEvents.rightClicked(event => {
+            const {item,server,player,player:{x,y,z,username}} = event
+            if (item.id != `tfg:${pill_event}_pill`) return
+            item.count--
+            player.addItemCooldown(item, 100)
+            player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 480 0 true`)
+            server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+        });
 
-    ItemEvents.rightClicked(event => {
-        const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `tfg:${pill_event}_pill`) return
-        item.count--
-        player.addItemCooldown(item, 100)
-        player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 480 0 true`)
-        server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+        ItemEvents.rightClicked(event => {
+            const {item,server,player,player:{x,y,z,username}} = event
+            if (item.id != `tfg:${pill_event}_tablet`) return
+            item.count--
+            player.addItemCooldown(item, 100)
+            player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 1800 0 true`)
+            server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+        });
     });
-
-    ItemEvents.rightClicked(event => {
-        const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `tfg:${pill_event}_tablet`) return
-        item.count--
-        player.addItemCooldown(item, 100)
-        player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 1800 0 true`)
-        server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
-    });
-});
 
     ItemEvents.rightClicked(event => {
         const {item,server,player,player:{x,y,z,username}} = event
@@ -62,26 +62,25 @@ pill_event.forEach(pill_event => {
         server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
     });
 
-//salvos
+    //salvos
+    const salvo_event = [
+        'fire_resistance',
+        'invisibility',
+        'luck',
+        'resistance',
+    ];
 
-const salvo_event = [
-    'fire_resistance',
-    'invisibility',
-    'luck',
-    'resistance',
-];
+    salvo_event.forEach(salvo_event => {
 
-salvo_event.forEach(salvo_event => {
-
-    ItemEvents.rightClicked(event => {
-        const {item,server,player,player:{x,y,z,username}} = event
-        if (item.id != `tfg:${salvo_event}_salvo`) return
-        item.count--
-        player.addItemCooldown(item, 100)
-        player.runCommandSilent(`effect give ${username} minecraft:${salvo_event} 480 0 true`)
-        server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
+        ItemEvents.rightClicked(event => {
+            const {item,server,player,player:{x,y,z,username}} = event
+            if (item.id != `tfg:${salvo_event}_salvo`) return
+            item.count--
+            player.addItemCooldown(item, 100)
+            player.runCommandSilent(`effect give ${username} minecraft:${salvo_event} 480 0 true`)
+            server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
+        });
     });
-});
 
 ItemEvents.rightClicked(event => {
     const {item,server,player,player:{x,y,z,username}} = event
@@ -101,6 +100,8 @@ ItemEvents.rightClicked(event => {
     server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
 });
 
+//#endregion
+
 // Vase Sounds
 global.MINECRAFT_DYE_NAMES.forEach(color => {
     BlockEvents.rightClicked(event => {
@@ -110,6 +111,7 @@ global.MINECRAFT_DYE_NAMES.forEach(color => {
     }})
 });
 
+
 BlockEvents.rightClicked(event => {
     const {block,server,player,player:{x,y,z,username}} = event
     if (block.id != 'tfg:decorative_vase') {return}{
@@ -117,7 +119,7 @@ BlockEvents.rightClicked(event => {
 }});
 
 /**
- * 
+ *
  * @param {Internal.Player} player
  * @returns {Internal.CompoundTag}
  */
@@ -129,3 +131,86 @@ function getTFGPersistentDataRoot(player)
     }
     return player.persistentData.getCompound("tfg:custom_data")
 }
+//#endregion
+
+//#region Fishing Net
+    const fish = [
+        'cod',
+        'crappie',
+        'jellyfish',
+        'lake_trout',
+        'largemouth_bass',
+        'rainbow_trout',
+        'salmon',
+        'smallmouth_bass',
+        'tropical_fish',
+        'bluegill'
+    ];
+
+    const shellfish = [
+        'lobster',
+        'isopod',
+        'crayfish'
+    ];
+
+    //Event detects if fish is right clicked with fishing net and then teleports the mob into the void, plays some actions and gives the player the proper item.
+    fish.forEach(fish => {
+        ItemEvents.entityInteracted('#forge:tools/fishing_nets', event => {
+            const {item, player, server, target} = event;
+
+            if (target.type != `tfc:${fish}`) return
+                server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
+                server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
+                server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
+                event.player.give(`tfc:food/${fish}`)
+                player.swing()
+                if (player.isCreative() == false){
+                    item.damageValue++
+                    if (item.damageValue >= item.maxDamage) {
+                        server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
+                        item.count--
+                    }
+                }
+        })
+    })
+
+    //Shellfish Exception
+    shellfish.forEach(shellfish => {
+        ItemEvents.entityInteracted('#forge:tools/fishing_nets', event => {
+            const {item, player, server, target} = event;
+
+            if (target.type != `tfc:${shellfish}`) return
+                server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
+                server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
+                server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
+                event.player.give('tfc:food/shellfish')
+                player.swing()
+                if (player.isCreative() == false){
+                    item.damageValue++
+                    if (item.damageValue >= item.maxDamage) {
+                        server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
+                        item.count--
+                    }
+                }
+        })
+    })
+
+    //Pufferfish Exception
+    ItemEvents.entityInteracted('#forge:tools/fishing_nets', event => {
+        const {item, player, server, target} = event;
+
+        if (target.type != 'tfc:pufferfish') return
+            server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
+            server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
+            server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
+            event.player.give('minecraft:pufferfish')
+            player.swing()
+            if (player.isCreative() == false){
+                item.damageValue++
+                if (item.damageValue >= item.maxDamage) {
+                    server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
+                    item.count--
+                }
+            }
+    })
+//#endregion

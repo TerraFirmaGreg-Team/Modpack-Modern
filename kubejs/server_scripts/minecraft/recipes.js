@@ -793,41 +793,40 @@ const registerMinecraftRecipes = (event) => {
 	//#region Выход: Элитра
 
 	// Ну и херь я придумал
-
-	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_ingot', '2x gtceu:polycaprolactam_ingot')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.LV])
-		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
-
-	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
-		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
-		.itemOutputs('4x gtceu:aluminium_dust', '2x gtceu:polycaprolactam_dust')
-		.duration(224)
-		.EUt(GTValues.VA[GTValues.ULV])
-		.category(GTRecipeCategories.MACERATOR_RECYCLING)
-
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra')
-		.itemInputs('16x #forge:foils/polycaprolactam', '16x #forge:foils/aluminium', '8x minecraft:phantom_membrane', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
+		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x tfg:phantom_silk', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
 		.duration(1600)
 		.EUt(420)
 
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra2')
-		.itemInputs('16x #forge:foils/polycaprolactam', '16x #forge:foils/aluminium', '8x #forge:plates/ender_eye', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
+		.itemInputs('16x tfg:polycaprolactam_fabric', '16x #forge:foils/aluminium', '8x #forge:plates/ender_eye', '4x #forge:rings/aluminium', '2x #forge:rods/long/vanadium_steel', '2x #forge:small_springs/aluminium', '1x #forge:small_gears/aluminium')
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
 		.duration(1600)
 		.EUt(420)
 
 	event.recipes.gtceu.assembler('tfg:minecraft/elytra_repairing')
-		.itemInputs('6x #forge:foils/polycaprolactam', Item.of('minecraft:elytra', '{Damage:2045}').strongNBT())
+		.itemInputs('6x tfg:polycaprolactam_fabric', Item.of('minecraft:elytra', '{Damage:2045}').strongNBT())
 		.circuit(4)
 		.itemOutputs(Item.of('minecraft:elytra', "{Damage:0}"))
 		.duration(1600)
 		.EUt(120)
+
+	event.recipes.gtceu.arc_furnace('tfg:minecraft/arc_furnace/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_ingot', '4x gtceu:tiny_ash_dust')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.LV])
+		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+
+	event.recipes.gtceu.macerator('tfg:minecraft/macerator/recycling/elytra')
+		.itemInputs(Item.of('minecraft:elytra', '{Damage:0}').strongNBT())
+		.itemOutputs('4x gtceu:aluminium_dust', '4x gtceu:polycaprolactam_dust')
+		.duration(224)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 
 	//#endregion
 
@@ -973,5 +972,24 @@ const registerMinecraftRecipes = (event) => {
     }).id('tfg:campfire_coal')
 	//#endregion
 
+    //#region Smithing Table
+        event.shaped('minecraft:smithing_table', [
+            'C  ',
+            'BB ',
+            'AA '
+        ], {
+            A: '#minecraft:planks',
+            B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 1),
+            C: '#forge:tools/hammers'
+    	}).id('minecraft:shapeless/smithing_table')
+
+	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table')
+		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 2))
+		.circuit(4)
+		.itemOutputs('minecraft:smithing_table')
+		.duration(60)
+		.EUt(GTValues.VA[GTValues.ULV])
+	//#endregion
+  
 	event.smelting('tfc:glue', 'minecraft:slime_ball').id('tfg:smelting/slime_to_glue')
 }

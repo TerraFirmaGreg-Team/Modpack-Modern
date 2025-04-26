@@ -12,6 +12,6 @@ const registerTFGRecipes = (event) => {
 	registerTFGMedicineRecipes(event)
 	registerTFGMiscellaneousRecipes(event)
 	registerTFGSupportRecipes(event)
-
+	registerTFGFishingNetsRecipes(event)
 	registerTFGConvertingRecipes(event)
 }
