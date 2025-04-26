@@ -972,4 +972,6 @@ const registerMinecraftRecipes = (event) => {
         D: '#forge:storage_blocks/coal',
     }).id('tfg:campfire_coal')
 	//#endregion
+
+	event.smelting('tfc:glue', 'minecraft:slime_ball').id('tfg:smelting/slime_to_glue')
 }

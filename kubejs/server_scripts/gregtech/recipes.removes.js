@@ -611,4 +611,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 
 	event.remove({ id: 'gtceu:compressor/bricks' })
+
+	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 }
