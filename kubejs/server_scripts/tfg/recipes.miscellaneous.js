@@ -163,15 +163,18 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//Airship Balloon
-	event.shaped('tfg:airship_balloon', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: '#forge:string',
-		B: 'immersive_aircraft:sail',
-		C: 'tfc:bone_needle'
-	}).id('tfg:shaped/airship_balloon')
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('tfg:airship_balloon', [
+			'ABA',
+			'BCB',
+			'ABA'
+		], {
+			A: '#forge:string',
+			B: 'immersive_aircraft:sail',
+			C: 'tfc:bone_needle'
+		})
+	).id('tfg:shaped/airship_balloon')
+
 	event.recipes.gtceu.assembler('tfg:assembler/airship_balloon')
 		.itemInputs('4x immersive_aircraft:sail', '4x #forge:string')
 		.itemOutputs('tfg:airship_balloon')

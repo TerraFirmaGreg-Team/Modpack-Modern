@@ -990,4 +990,6 @@ const registerMinecraftRecipes = (event) => {
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
+  
+	event.smelting('tfc:glue', 'minecraft:slime_ball').id('tfg:smelting/slime_to_glue')
 }

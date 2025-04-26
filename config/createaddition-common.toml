@@ -46,7 +46,7 @@
 	rolling_mill_processing_duration = 400
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
-	rolling_mill_stress = 0.5
+	rolling_mill_stress = 16
 
 #Wires
 [wires]
