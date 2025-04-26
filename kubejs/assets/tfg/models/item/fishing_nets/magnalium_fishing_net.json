@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "tfg:item/fishing_nets/magnalium_fishing_net"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-8, 90, 56],
+			"translation": [0, 6.5, 2.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [100, -91, 56],
+			"translation": [0, 6.5, 2.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [-77, -30, 34],
+			"translation": [0, 1.75, -6]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-69, 153, -36],
+			"translation": [0, 1.75, -6]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

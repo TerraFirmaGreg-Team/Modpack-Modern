@@ -199,6 +199,13 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
+	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
+
+	GTMaterials.Invar.addFlags(GENERATE_RING);
+	GTMaterials.Magnalium.addFlags(GENERATE_RING);
+	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
+	GTMaterials.SterlingSilver.addFlags(GENERATE_RING);
+
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);

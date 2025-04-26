@@ -199,6 +199,15 @@ const registerTFCItemSize = (event) => {
     event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
     event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
 
+    event.itemSize('tfg:fishing_net/wood', 'large', 'medium', 'wood_fishing_net')
+    event.itemSize('tfg:fishing_net/brass', 'large', 'medium', 'brass_fishing_net')
+    event.itemSize('tfg:fishing_net/rose_gold', 'large', 'medium', 'rose_gold_fishing_net')
+    event.itemSize('tfg:fishing_net/sterling_silver', 'large', 'medium', 'sterling_silver_fishing_net')
+    event.itemSize('tfg:fishing_net/invar', 'large', 'medium', 'invar_fishing_net')
+    event.itemSize('tfg:fishing_net/cupronickel', 'large', 'medium', 'cupronickel_fishing_net')
+    event.itemSize('tfg:fishing_net/tin_alloy', 'large', 'medium', 'tin_alloy_fishing_net')
+    event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
+
     event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
 
 }
