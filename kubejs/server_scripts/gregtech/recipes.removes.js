@@ -2,6 +2,9 @@
 
 function removeGTCEURecipes(event) {
 
+	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
+	event.replaceInput({ input: 'minecraft:chest' }, 'minecraft:chest', '#forge:chests/wooden')
+
 	global.GTCEU_DISABLED_ITEMS.forEach(item => {
 		event.remove({ input: item })
 		event.remove({ output: item })
