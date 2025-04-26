@@ -1062,69 +1062,6 @@
             ]
         },
         {
-            "pakku_id": "Jb0rTeH1FtOgJKci",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "auroras",
-                "modrinth": "auroras"
-            },
-            "name": {
-                "curseforge": "Auroras",
-                "modrinth": "Auroras"
-            },
-            "id": {
-                "curseforge": "1105290",
-                "modrinth": "Q7VPWopC"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Auroras-1.20.1-1.6.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6040/671/Auroras-1.20.1-1.6.2.jar",
-                    "id": "6040671",
-                    "parent_id": "1105290",
-                    "hashes": {
-                        "sha1": "f7ba6e761a5c439325c93f6d33b6b3feda3182bd",
-                        "md5": "7fff40d58f53aea9c9767ca8b0d0efd3"
-                    },
-                    "required_dependencies": [],
-                    "size": 2119153,
-                    "date_published": "2024-12-31T19:57:57.427Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "Auroras-1.20.1-1.6.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Q7VPWopC/versions/Y1QQeYYi/Auroras-1.20.1-1.6.2.jar",
-                    "id": "Y1QQeYYi",
-                    "parent_id": "Q7VPWopC",
-                    "hashes": {
-                        "sha512": "41a678484369764a2acbd98ae153b0eb104a8e201cd5600dd1cd5b31ec4d94d72266044102c2d82273ddbd8c089cd854a18d6b1366ffa1e2aa403b58ecf5cfce",
-                        "sha1": "f7ba6e761a5c439325c93f6d33b6b3feda3182bd"
-                    },
-                    "required_dependencies": [],
-                    "size": 2119153,
-                    "date_published": "2024-12-31T20:00:15.446246Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "IaAWVyyrZaHMumyk",
             "type": "MOD",
             "side": "CLIENT",
@@ -4404,7 +4341,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "emi-1.1.20+1.20.1+forge.jar",
+                    "file_name": "emi-1.1.22+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4412,20 +4349,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/3fJ5PcgX/emi-1.1.20+1.20.1+forge.jar",
-                    "id": "3fJ5PcgX",
+                    "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/WtJS5tVw/emi-1.1.22+1.20.1+forge.jar",
+                    "id": "WtJS5tVw",
                     "parent_id": "fRiHVvU7",
                     "hashes": {
-                        "sha512": "32ecb901c18cadc76059afebcfa889f72985252205c18863b70048bbba456c938ce135c085caadea76cd9fa96843e4b471619f82b98ef56a628726e39d4a822b",
-                        "sha1": "f6ee97d1f49e106b2dc887df3c238bb06b84bada"
+                        "sha512": "fcc80ee419a96682d157e8fd0993e0f13031dafc6399dabb17b9696636e791a903e7d3d15131edd3b533544454f072c4b19e92b146c80d4be6980bb20a0dbb7b",
+                        "sha1": "d8049d6ec86befcd100a0ff0fc8ebc289f735997"
                     },
                     "required_dependencies": [],
-                    "size": 1028204,
-                    "date_published": "2025-02-18T04:58:54.075523Z"
+                    "size": 1048567,
+                    "date_published": "2025-04-14T03:37:26.013177Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "emi-1.1.20+1.20.1+forge.jar",
+                    "file_name": "emi-1.1.22+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4433,16 +4370,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6205/514/emi-1.1.20+1.20.1+forge.jar",
-                    "id": "6205514",
+                    "url": "https://edge.forgecdn.net/files/6420/945/emi-1.1.22+1.20.1+forge.jar",
+                    "id": "6420945",
                     "parent_id": "580555",
                     "hashes": {
-                        "sha1": "f6ee97d1f49e106b2dc887df3c238bb06b84bada",
-                        "md5": "dc29b4d99258b76f28aa3ad5ce5e6e2d"
+                        "sha1": "d8049d6ec86befcd100a0ff0fc8ebc289f735997",
+                        "md5": "441c582c6e8a1d6fd9e3d16a27c1a39e"
                     },
                     "required_dependencies": [],
-                    "size": 1028204,
-                    "date_published": "2025-02-18T04:58:55.627Z"
+                    "size": 1048567,
+                    "date_published": "2025-04-14T03:37:30.690Z"
                 }
             ]
         },
@@ -4518,7 +4455,7 @@
                 "uCACXyPoJ4iKQzNG"
             ],
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "enderman-overhaul",
                 "modrinth": "enderman-overhaul"
@@ -6244,7 +6181,7 @@
         {
             "pakku_id": "uCACXyPoJ4iKQzNG",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "geckolib",
                 "modrinth": "geckolib"
@@ -10720,7 +10657,7 @@
         {
             "pakku_id": "pITFJNUBx59dBitK",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "primitive-creatures"
             },
@@ -10921,69 +10858,6 @@
             ]
         },
         {
-            "pakku_id": "8Xy6EP4mZpuTcXQt",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "rainboows",
-                "modrinth": "rainboows"
-            },
-            "name": {
-                "curseforge": "Rainbows!",
-                "modrinth": "Rainbows"
-            },
-            "id": {
-                "curseforge": "1121832",
-                "modrinth": "MdWygI5q"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Rainbows-1.20.1-1.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6323/743/Rainbows-1.20.1-1.4.jar",
-                    "id": "6323743",
-                    "parent_id": "1121832",
-                    "hashes": {
-                        "sha1": "5eafa465c959b0483fd21daedf7da1a3849b59d1",
-                        "md5": "4935728dbc603e867f3490a05d342e78"
-                    },
-                    "required_dependencies": [],
-                    "size": 2312766,
-                    "date_published": "2025-03-19T22:42:59.493Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "Rainbows-1.20.1-1.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/MdWygI5q/versions/zCe8Wtfk/Rainbows-1.20.1-1.4.jar",
-                    "id": "zCe8Wtfk",
-                    "parent_id": "MdWygI5q",
-                    "hashes": {
-                        "sha512": "14c7a6b14b88abd354b0d92573343032f3abf4a1ce97faee4fe8b4533e0fa9bd91e61efec392e344a69cc46c837aac3c53587415a41b698f55ea94b65840880c",
-                        "sha1": "5eafa465c959b0483fd21daedf7da1a3849b59d1"
-                    },
-                    "required_dependencies": [],
-                    "size": 2312766,
-                    "date_published": "2025-03-19T22:44:41.887240Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "mLvNtlnkhh3Rrdhq",
             "pakku_links": [
                 "GOh1ocuoLHhYMq2J"
@@ -11026,7 +10900,7 @@
         {
             "pakku_id": "J5CyvX6hIaMAyzVK",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "resourceful-config",
                 "modrinth": "resourceful-config"
@@ -11087,7 +10961,7 @@
         {
             "pakku_id": "cxgo5IyMJwtpohRH",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "resourceful-lib",
                 "modrinth": "resourceful-lib"
