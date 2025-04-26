@@ -585,7 +585,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{quests.ore_proc.macerator_separator.desc}"
+			title: "{quests.ore_proc.macerator_separator.title}"
 			x: -1.0d
 			y: 1.0d
 		}
