@@ -971,7 +971,16 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.red_alloy.desc}"]
-			icon: "gtceu:red_alloy_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:red_alloy_ingot"
+			}
 			id: "781C6AD30194CB45"
 			shape: "square"
 			size: 1.0d
