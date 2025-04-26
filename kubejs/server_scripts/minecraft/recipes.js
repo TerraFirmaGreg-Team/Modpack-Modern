@@ -973,7 +973,6 @@ const registerMinecraftRecipes = (event) => {
 	//#endregion
 
     //#region Smithing Table
-    event.recipes.tfc.damage_inputs_shaped_crafting(
         event.shaped('minecraft:smithing_table', [
             'C  ',
             'BB ',
@@ -982,7 +981,7 @@ const registerMinecraftRecipes = (event) => {
             A: '#minecraft:planks',
             B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 1),
             C: '#forge:tools/hammers'
-    }).id('minecraft:shapeless/smithing_table'))
+    	}).id('minecraft:shapeless/smithing_table')
 
 	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table')
 		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 2))

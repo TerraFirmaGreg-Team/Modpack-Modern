@@ -372,4 +372,10 @@ function registerTFGMiscellaneousRecipes(event) {
             'minecraft:phantom_membrane',
             'tfc:spindle'
         ]).id('tfg:shapeless/phantom_thread'))
+  
+	// Universal Circuit
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1),  [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
+			).id(`universal_circuits_${tier}`);
+	});
 }
