@@ -12,7 +12,7 @@
 		}
 	}
 	id: "28EBC0FF82EFD94B"
-	order_index: 3
+	order_index: 2
 	quest_links: [
 		{
 			id: "77A0335E38D755CA"
@@ -20,7 +20,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 0.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			id: "750818879C23F373"
@@ -28,7 +28,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 1.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			id: "0074100DE2B5BE5A"
@@ -36,7 +36,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 2.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "1C05814535C12FED"
@@ -44,7 +44,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 1.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			id: "513A34184609CA31"
@@ -52,7 +52,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 1.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "22CF428EE30F5B4B"
@@ -60,7 +60,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 2.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			id: "33618A4FD8ED62D7"
@@ -68,7 +68,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 2.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			id: "2B8FBCD290196265"
@@ -76,7 +76,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 2.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			id: "0E8AC841C484408C"
@@ -84,7 +84,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 2.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			id: "6ABFBA6855A6E7E9"
@@ -92,7 +92,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 3.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			id: "629EAE6BC0519572"
@@ -100,7 +100,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 3.0d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			id: "59568D32C47265ED"
@@ -108,7 +108,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 3.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			id: "42DA2C0B99DB2545"
@@ -116,7 +116,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 3.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			id: "39C4E4082B9B5731"
@@ -124,7 +124,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 4.0d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			id: "346904314F61ABDB"
@@ -132,7 +132,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 4.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			id: "1C0407D7B45603FC"
@@ -140,7 +140,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 4.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			id: "20BCF31B1430ECFC"
@@ -148,7 +148,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 4.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			id: "384FE989BF9BD89D"
@@ -156,7 +156,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 6.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			id: "3DD1B0AE6630A8E5"
@@ -164,7 +164,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 6.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			id: "519774012E47875A"
@@ -172,7 +172,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 6.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "0B488F9F519FBA61"
@@ -180,7 +180,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 6.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			id: "025C3D8C61A9C011"
@@ -188,7 +188,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 5.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			id: "54F1B023BEC98314"
@@ -196,7 +196,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 5.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			id: "4EABE2BF51A06FC8"
@@ -204,7 +204,7 @@
 			shape: "rsquare"
 			size: 0.75d
 			x: 5.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			id: "607E9492E895927E"
@@ -212,7 +212,7 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 5.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "709FB8C1561E7BB8"
@@ -308,7 +308,31 @@
 			shape: "rsquare"
 			size: 0.8d
 			x: 2.0d
-			y: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "1E40A675803FC0EE"
+			linked_quest: "033E74BC588E7EAD"
+			shape: "rsquare"
+			size: 0.8d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "086F15BC0794B952"
+			linked_quest: "3D8174C64DDC268B"
+			shape: "rsquare"
+			size: 0.8d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "3D882E672333DFDB"
+			linked_quest: "2C35D4E01AEC02AA"
+			shape: "rsquare"
+			size: 0.8d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	quests: [
@@ -477,8 +501,8 @@
 			progression_mode: "linear"
 			size: 0.85d
 			title: "&8ULV&r Circuits"
-			x: -1.0d
-			y: -1.0d
+			x: -1.0
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -501,7 +525,7 @@
 			size: 0.85d
 			title: "&7LV&r Circuits"
 			x: -1.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -521,7 +545,7 @@
 			size: 0.85d
 			title: "&bMV&r Circuits"
 			x: -1.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -541,7 +565,7 @@
 			size: 0.85d
 			title: "&6HV&r Circuits"
 			x: -1.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -560,7 +584,7 @@
 			size: 0.85d
 			title: "&5EV&r Circuits"
 			x: -1.0d
-			y: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -581,7 +605,7 @@
 			size: 0.85d
 			title: "&1IV&r Circuits"
 			x: -1.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -606,7 +630,7 @@
 			size: 0.85d
 			title: "&dLuV&r Circuits"
 			x: -1.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -622,7 +646,7 @@
 			size: 0.85d
 			title: "&cZPM&r Circuits"
 			x: -1.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -637,7 +661,7 @@
 			size: 0.85d
 			title: "&3UV&r Circuits"
 			x: -1.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3B49BD004F38E1A2"]
@@ -653,7 +677,7 @@
 			size: 0.85d
 			title: "&4UHV&r Circuits"
 			x: -1.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5B2696206205CB2E"]
