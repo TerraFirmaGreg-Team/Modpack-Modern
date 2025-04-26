@@ -372,7 +372,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "alltheleaks-0.1.2-beta+1.20.1-forge.jar",
+                    "file_name": "alltheleaks-0.1.3-beta+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -380,16 +380,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6321/543/alltheleaks-0.1.2-beta+1.20.1-forge.jar",
-                    "id": "6321543",
+                    "url": "https://edge.forgecdn.net/files/6371/968/alltheleaks-0.1.3-beta+1.20.1-forge.jar",
+                    "id": "6371968",
                     "parent_id": "1091339",
                     "hashes": {
-                        "sha1": "29c1d160dcb1e726101497bcabbb6903b01e218d",
-                        "md5": "253ba2355cbff97b8c6e5f4066389703"
+                        "sha1": "86336dee4cb58c3df082d3d523b9f1226269ba90",
+                        "md5": "75f55c7155d193329aea05813c695c84"
                     },
                     "required_dependencies": [],
-                    "size": 523165,
-                    "date_published": "2025-03-19T09:19:08.017Z"
+                    "size": 523166,
+                    "date_published": "2025-03-31T19:45:19.383Z"
                 }
             ]
         },
@@ -482,7 +482,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.1.9_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -491,22 +491,22 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/PDmfRznc/AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar",
-                    "id": "PDmfRznc",
+                    "url": "https://cdn.modrinth.com/data/fM515JnW/versions/Azcdw9vT/AmbientSounds_FORGE_v6.1.9_mc1.20.1.jar",
+                    "id": "Azcdw9vT",
                     "parent_id": "fM515JnW",
                     "hashes": {
-                        "sha512": "10b8e34696583a6354c857ff00a15f7fa8978686a0dab4301bfc8cf11d24661ac296af9d481642f18145f21c241876eb40189b095b0505818fe44769ab63b665",
-                        "sha1": "cf86d8e1f8de7fd9450a05d8cded6f5763849794"
+                        "sha512": "7f50aca7fd415b8ccbab47d28b5f7fecc5bc83f7c6964d6b40222f02119f453e515e00659b11f3c4797e403d39e11796b467d7f06a0ec30c257a6a1948767eec",
+                        "sha1": "934e8939b27625532cce257cd4fc57765eaa2de9"
                     },
                     "required_dependencies": [
                         "OsZiaDHq"
                     ],
-                    "size": 83885939,
-                    "date_published": "2025-04-08T22:11:03.624331Z"
+                    "size": 83885807,
+                    "date_published": "2025-04-22T12:25:27.402652Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.1.9_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -515,18 +515,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6400/880/AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar",
-                    "id": "6400880",
+                    "url": "https://edge.forgecdn.net/files/6451/670/AmbientSounds_FORGE_v6.1.9_mc1.20.1.jar",
+                    "id": "6451670",
                     "parent_id": "254284",
                     "hashes": {
-                        "sha1": "cf86d8e1f8de7fd9450a05d8cded6f5763849794",
-                        "md5": "aeabd3a86153a2af1231a7b857627dd0"
+                        "sha1": "934e8939b27625532cce257cd4fc57765eaa2de9",
+                        "md5": "dd203c11ba29f4a6056efc726f3ba5a7"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 83885939,
-                    "date_published": "2025-04-08T22:10:36.207Z"
+                    "size": 83885807,
+                    "date_published": "2025-04-22T12:24:57.987Z"
                 }
             ]
         },
@@ -548,30 +548,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "appliedenergistics2-forge-15.3.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6091/401/appliedenergistics2-forge-15.3.3.jar",
-                    "id": "6091401",
-                    "parent_id": "223794",
-                    "hashes": {
-                        "sha1": "37ba16fa86aeab788d7b916bb45c25638df5cfb0",
-                        "md5": "c7e870e3200139ebe8f260c4ea52b622"
-                    },
-                    "required_dependencies": [],
-                    "size": 9746146,
-                    "date_published": "2025-01-15T23:06:41.440Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "appliedenergistics2-forge-15.3.3.jar",
+                    "file_name": "appliedenergistics2-forge-15.3.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -580,16 +558,38 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XxWD5pD3/versions/JSY0V9J5/appliedenergistics2-forge-15.3.3.jar",
-                    "id": "JSY0V9J5",
+                    "url": "https://cdn.modrinth.com/data/XxWD5pD3/versions/Ap6Grcvz/appliedenergistics2-forge-15.3.4.jar",
+                    "id": "Ap6Grcvz",
                     "parent_id": "XxWD5pD3",
                     "hashes": {
-                        "sha512": "e1da8e1666b3d221fe82ec14a4f88b15c34c0ef445c526ae0f3baa8f50d52276b35360433413db6af0e7232fc4e5a685fdd05754d912c7b1e387ad8fbaf2527c",
-                        "sha1": "37ba16fa86aeab788d7b916bb45c25638df5cfb0"
+                        "sha512": "b24496c052d8c56673e7b8fd68fb171c851a442928e5a88d0121b5e6e388f748c0588b5965bda1b12d65944b4288bc60607bb7c5017a4fdd6c12c86f33a3d9ea",
+                        "sha1": "fa899580dddd44500586a43874c504c7e4620d7a"
                     },
                     "required_dependencies": [],
-                    "size": 9746146,
-                    "date_published": "2025-01-15T23:06:49.856833Z"
+                    "size": 9746206,
+                    "date_published": "2025-03-27T20:34:07.359242Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "appliedenergistics2-forge-15.3.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6357/138/appliedenergistics2-forge-15.3.4.jar",
+                    "id": "6357138",
+                    "parent_id": "223794",
+                    "hashes": {
+                        "sha1": "fa899580dddd44500586a43874c504c7e4620d7a",
+                        "md5": "7df1bee0c97c2d819ef6c745f6213fa8"
+                    },
+                    "required_dependencies": [],
+                    "size": 9746206,
+                    "date_published": "2025-03-27T20:34:05.820Z"
                 }
             ]
         },
@@ -1143,7 +1143,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "balm-forge-1.20.1-7.3.25-all.jar",
+                    "file_name": "balm-forge-1.20.1-7.3.27-all.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -1152,20 +1152,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/hk6Zuxrh/balm-forge-1.20.1-7.3.25-all.jar",
-                    "id": "hk6Zuxrh",
+                    "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/GmMJVPH4/balm-forge-1.20.1-7.3.27-all.jar",
+                    "id": "GmMJVPH4",
                     "parent_id": "MBAkmtvl",
                     "hashes": {
-                        "sha512": "47bf74e27686abe0aabdd19075dbcf3bd67d08c112d21b9000ba077dd8aea652de25294db01437a190fc006c192a46ad387f5a8fe65ae312d568a21a5cafdbd8",
-                        "sha1": "9ea708714bae53e9aac894f034fd7d37840a8ced"
+                        "sha512": "a740f45553c945e0cc255390c5f84db9de2efc0f801c5c3a8580662fd5521b5ee9633c07ae8453f3a54d785f49aef7eed97e279ccd714137c4ab3d560c3600d3",
+                        "sha1": "ca67b7528946937c609d8d3bfb9ea69a56f4b4b4"
                     },
                     "required_dependencies": [],
-                    "size": 473917,
-                    "date_published": "2025-03-24T07:57:06.335261Z"
+                    "size": 475315,
+                    "date_published": "2025-03-29T09:50:05.774689Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "balm-forge-1.20.1-7.3.25-all.jar",
+                    "file_name": "balm-forge-1.20.1-7.3.27-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -1174,16 +1174,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6338/295/balm-forge-1.20.1-7.3.25-all.jar",
-                    "id": "6338295",
+                    "url": "https://edge.forgecdn.net/files/6362/504/balm-forge-1.20.1-7.3.27-all.jar",
+                    "id": "6362504",
                     "parent_id": "531761",
                     "hashes": {
-                        "sha1": "384db53619c4c1f4d22d39c0ba536298737de81a",
-                        "md5": "2e84b519da3eef234fa77d4110429e23"
+                        "sha1": "8c0364c8e7fe47f86505d2a4c53c6022ebd7b9d2",
+                        "md5": "f602ed9d2c722942623165fec6eb538f"
                     },
                     "required_dependencies": [],
-                    "size": 473917,
-                    "date_published": "2025-03-24T07:57:19.600Z"
+                    "size": 475315,
+                    "date_published": "2025-03-29T09:50:06.680Z"
                 }
             ]
         },
