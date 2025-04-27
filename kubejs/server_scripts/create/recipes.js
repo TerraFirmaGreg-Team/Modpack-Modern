@@ -8,9 +8,6 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
-			{ id: 'create:crafting/kinetics/chain_conveyor' },
-			{ id: 'create:crafting/logistics/packager_from_conversion' },
-			{ id: 'create:crafting/logistics/repackager_from_conversion' },
 			{ id: 'create:crafting/kinetics/speedometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/stressometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/smart_fluid_pipe' },
@@ -45,13 +42,22 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/train_door' },
 			{ id: 'create:crafting/kinetics/train_trapdoor' },
 			{ id: 'create:crafting/logistics/content_observer' },
+			{ id: 'create:crafting/kinetics/chain_conveyor' },
+			{ id: 'create:crafting/logistics/packager_from_conversion' },
+			{ id: 'create:crafting/logistics/repackager_from_conversion' },
 			{ id: 'create:crafting/materials/cardboard_block'},
 			{ id: 'create:crafting/materials/bound_cardboard_block'},
 			{ id: 'create:crafting/materials/cardboard_from_block'},
-			{ id: 'create/item_application/bound_cardboard_inworld'},
-			{ id: 'create/item_application/bound_cardboard_inworld_using_deployer'},
+			{ id: 'create:crafting/materials/cardboard_from_bound_block'},
+			{ id: 'create/item_application/bound_cardboard'},
+			{ output: '#create:table_cloths'}, // Gotta do this to not purge the table cloth reset recipes
 			{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
+	})
+
+	// Remove Table Cloth recipes
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.remove([{ id: `create:crafting/logistics/${dye}_table_cloth` }, { id: `create:crafting/logistics/${dye}_table_cloth_from_other_table_cloth` }])
 	})
 
 	// Train Station
@@ -1274,6 +1280,31 @@ const registerCreateRecipes = (event) => {
 
 	//#endregion
 
+	//#region Painting table cloths
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('#create:dyed_table_cloths', Fluid.of(`tfc:lye`, 144))
+		.outputItem(`create:white_table_cloth`)
+		.id(`barrel/create/table_cloth_decolor`)
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		if (dye != 'white') {
+			event.recipes.tfc.barrel_sealed(1000)
+				.inputs('create:white_table_cloth', Fluid.of(`tfc:${dye}_dye`, 288))
+				.outputItem(`create:${dye}_table_cloth`)
+				.id(`barrel/create/${dye}_table_cloth`)
+
+			event.recipes.gtceu.chemical_bath(`create/${dye}_table_cloth`)
+				.itemInputs('create:white_table_cloth')
+				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
+				.itemOutputs(`create:${dye}_table_cloth`)
+				.duration(200)
+				.EUt(4)
+				.category(GTRecipeCategories.CHEM_DYES)
+		}
+	})
+
+	//#endregion
+
 	//#region Покраска сидушек
 
 	event.recipes.tfc.barrel_sealed(1000)
@@ -1496,7 +1527,7 @@ const registerCreateRecipes = (event) => {
 		C: 'gtceu:ulv_machine_hull',
 		D: 'create:cardboard_block',
 		E: 'create:electron_tube',
-		F: '#tfg:metal_bars'
+		F: 'tfc:metal/bars/wrought_iron'
 	}).id('tfg:create/shaped/packager')
 
 	event.shaped('create:item_hatch', [
@@ -1522,7 +1553,7 @@ const registerCreateRecipes = (event) => {
 		'EDF'
 	], {
 		A: 'tfc:glue',
-		B: '#forge:small_gears',
+		B: '#forge:small_gears/brass',
 		C: '#tfg:shafts',
 		D: 'create:item_vault',
 		E: '#forge:tools/screwdrivers',
@@ -1530,7 +1561,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/package_frogport')
 
 	event.recipes.gtceu.assembler('tfg:create/package_frogport')
-		.itemInputs('#tfg:shafts', '2x #forge:small_gears', 'create:item_vault')
+		.itemInputs('#tfg:shafts', '2x #forge:small_gears/brass', 'create:item_vault')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('create:package_frogport')
 		.duration(200)
