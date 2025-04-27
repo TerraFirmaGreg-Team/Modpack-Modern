@@ -244,14 +244,14 @@ global.CREATE_DISABLED_ITEMS = [
     'create:waxed_oxidized_copper_tile_stairs',
 
     // Cardboard (create 6)
-    'create:bound_cardboard_block',
+    //'create:bound_cardboard_block',
     'create:cardboard_chestplate',
     'create:cardboard_helmet',
     'create:cardboard_leggings',
     'create:cardboard_boots',
     'create:cardboard_sword',
-    'create:cardboard',
-    'create:cardboard_block',
+    //'create:cardboard',
+    //'create:cardboard_block',
     'create:pulp',
 
     // Other

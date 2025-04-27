@@ -8,6 +8,9 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
+			{ id: 'create:crafting/kinetics/chain_conveyor' },
+			{ id: 'create:crafting/logistics/packager_from_conversion' },
+			{ id: 'create:crafting/logistics/repackager_from_conversion' },
 			{ id: 'create:crafting/kinetics/speedometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/stressometerfrom_conversion' },
 			{ id: 'create:crafting/kinetics/smart_fluid_pipe' },
@@ -42,6 +45,11 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/kinetics/train_door' },
 			{ id: 'create:crafting/kinetics/train_trapdoor' },
 			{ id: 'create:crafting/logistics/content_observer' },
+			{ id: 'create:crafting/materials/cardboard_block'},
+			{ id: 'create:crafting/materials/bound_cardboard_block'},
+			{ id: 'create:crafting/materials/cardboard_from_block'},
+			{ id: 'create/item_application/bound_cardboard_inworld'},
+			{ id: 'create/item_application/bound_cardboard_inworld_using_deployer'},
 			{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
 	})
@@ -641,7 +649,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/item_vault')
 
 	event.recipes.gtceu.assembler('tfg:create/item_vault')
-		.itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
+		.itemInputs('#forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
 		.circuit(3)
 		.itemOutputs('create:item_vault')
 		.duration(200)
@@ -1028,6 +1036,13 @@ const registerCreateRecipes = (event) => {
 		B: '#forge:cloth'
 	}).id('tfg:create/shaped/attribute_filter')
 
+	event.shaped('create:package_filter', [
+		'ABA'
+	], {
+		A: '#forge:nuggets/zinc',
+		B: '#forge:cloth'
+	}).id('tfg:create/shaped/package_filter')
+
 	// Расписание поездов
 	event.shapeless('4x create:schedule', [
 		'minecraft:paper',
@@ -1234,6 +1249,31 @@ const registerCreateRecipes = (event) => {
 
 	//#endregion
 
+	//#region Painting postboxes
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('#create:postboxes', Fluid.of(`tfc:lye`, 288))
+		.outputItem(`create:white_postbox`)
+		.id(`barrel/create/postbox_decolor`)
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		if (dye != 'white') {
+			event.recipes.tfc.barrel_sealed(1000)
+				.inputs('create:white_postbox', Fluid.of(`tfc:${dye}_dye`, 288))
+				.outputItem(`create:${dye}_postbox`)
+				.id(`barrel/create/${dye}_postbox`)
+
+			event.recipes.gtceu.chemical_bath(`create/${dye}_postbox`)
+				.itemInputs('create:white_postbox')
+				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
+				.itemOutputs(`create:${dye}_postbox`)
+				.duration(200)
+				.EUt(4)
+				.category(GTRecipeCategories.CHEM_DYES)
+		}
+	})
+
+	//#endregion
+
 	//#region Покраска сидушек
 
 	event.recipes.tfc.barrel_sealed(1000)
@@ -1426,6 +1466,81 @@ const registerCreateRecipes = (event) => {
 	})
 
 	// #endregion
+	
+	//#region Create 6 Logistics
+
+	event.shaped('2x create:cardboard', [
+		'ABA',
+		'BAB',
+		'ABA'
+	], {
+		A: 'minecraft:paper',
+		B: 'tfc:glue'
+	}).id('tfg:create/shaped/cardboard_from_glue')
+
+	event.recipes.gtceu.assembler('tfg:create/cardboard_from_glue')
+		.itemInputs('5x minecraft:paper')
+		.inputFluids(Fluid.of('gtceu:glue', 100))
+		.circuit(5)
+		.itemOutputs('2x create:cardboard')
+		.duration(100)
+		.EUt(7)
+
+	event.shaped('create:packager', [
+		'AAA',
+		'BCD',
+		'EFE'
+	], {
+		A: '#forge:rods/wrought_iron',
+		B: '#forge:springs/wrought_iron',
+		C: 'gtceu:ulv_machine_hull',
+		D: 'create:cardboard_block',
+		E: 'create:electron_tube',
+		F: '#tfg:metal_bars'
+	}).id('tfg:create/shaped/packager')
+
+	event.shaped('create:item_hatch', [
+		'A',
+		'B',
+		'C'
+	], {
+		A: '#forge:tools/hammers',
+		B: '#tfc:trapdoors',
+		C: 'create:chute',
+	}).id('tfg:create/shaped/item_hatch')
+
+	event.recipes.gtceu.assembler('tfg:create/item_hatch')
+		.itemInputs('3x #forge:plates/wrought_iron', '#tfc:trapdoors')
+		.circuit(5)
+		.itemOutputs('create:item_hatch')
+		.duration(200)
+		.EUt(20)
+
+	event.shaped('create:package_frogport', [
+		' A ',
+		'BCB',
+		'EDF'
+	], {
+		A: 'tfc:glue',
+		B: '#forge:small_gears',
+		C: '#tfg:shafts',
+		D: 'create:item_vault',
+		E: '#forge:tools/screwdrivers',
+		F: '#forge:tools/wrenches'
+	}).id('tfg:create/shaped/package_frogport')
+
+	event.recipes.gtceu.assembler('tfg:create/package_frogport')
+		.itemInputs('#tfg:shafts', '2x #forge:small_gears', 'create:item_vault')
+		.inputFluids(Fluid.of('gtceu:glue', 50))
+		.itemOutputs('create:package_frogport')
+		.duration(200)
+		.EUt(7)
+
+	event.shapeless('create:white_postbox', [
+		'create:track_signal',
+		'gtceu:wood_crate'
+	]).id('create:crafting/shapeless/white_postbox')
+	//#endregion
 
 	//#region Decoration blocks
 
