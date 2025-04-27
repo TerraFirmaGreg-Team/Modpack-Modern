@@ -193,7 +193,7 @@ jobs:
           template: |
             📃 **Name**: ${{ steps.check.outputs.project_name }}
             📃 **Release**:  `${{ steps.check.outputs.project_version }}`
-            📃 **Release Type**: `${{ steps.check.outputs.status }}`
+            📃 **Release Type**: `${{ steps.check.outputs.release_type }}`
             📃 **Game Version**: `${{ steps.check.outputs.minecraft_version }}`
 
             📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
