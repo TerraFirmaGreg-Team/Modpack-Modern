@@ -20,13 +20,13 @@ jobs:
     name: 🖥️ Project Info
     runs-on: ubuntu-latest
     outputs:
-      project_version: ${{ steps.check.outputs.version }}
-      project_name: ${{ steps.pakku_info.outputs.name }}
-      project_full_name: ${{ steps.pakku_info.outputs.name }}-${{ steps.check.outputs.version }}
+      project_version: ${{ steps.check.outputs.project_version }}
+      project_name: ${{ steps.check.outputs.project_name }}
+      project_full_name: ${{ steps.check.outputs.project_name }}-${{ steps.check.outputs.project_version }}
       changelog: ${{ steps.changelog.outputs.description }}
       diff: ${{ steps.read_diff.outputs.diff }}
-      exists: ${{ steps.check_tag.outputs.exists }}
-      make_release: ${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}
+      exists: ${{ steps.check.outputs.exists }}
+      make_release: ${{ steps.check.outputs.make_release }}
     
     steps:
       - name: Checkout
@@ -163,12 +163,18 @@ jobs:
         id: check
         shell: bash
         run: |
-          if ${{ env.DEV_ENVIRONMENT == 'true' || steps.changelog.outcome == 'failure' }}; then
-              echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
-              echo "status=Unreleased" >> $GITHUB_OUTPUT
-          else
-            echo "status=${{ env.RELEASE_TYPE }}" >> $GITHUB_OUTPUT
-            echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
+          echo "make_release=${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}" >> $GITHUB_OUTPUT
+          echo "exists=${{ steps.check_tag.outputs.exists }}" >> $GITHUB_OUTPUT
+
+          echo "project_name=${{ steps.pakku_info.outputs.value }}" >> $GITHUB_OUTPUT
+          echo "project_version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
+          echo "release_type=${{ env.RELEASE_TYPE }}" >> $GITHUB_OUTPUT
+
+          echo "minecraft_version=${{ steps.pakku_lock_info.outputs.mc_versions }}" >> $GITHUB_OUTPUT
+
+          if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
+              echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
+              echo "release_type=Unreleased" >> $GITHUB_OUTPUT
           fi
 
       - name: 📄 Format diff
@@ -185,14 +191,14 @@ jobs:
         uses: WcAServices/markdown-template-action@v1.1.1
         with:
           template: |
-            📃 **Name**: ${{ steps.pakku_info.outputs.name }}
-            📃 **Release**:  `${{ steps.check.outputs.version }}`
+            📃 **Name**: ${{ steps.check.outputs.project_name }}
+            📃 **Release**:  `${{ steps.check.outputs.project_version }}`
             📃 **Release Type**: `${{ steps.check.outputs.status }}`
-            📃 **Game Version**: `${{ steps.pakku_lock_info.outputs.mc_versions }}`
+            📃 **Game Version**: `${{ steps.check.outputs.minecraft_version }}`
 
             📃 **Dev Environment**: `${{ env.DEV_ENVIRONMENT }}`
-            📃 **Tag Exists**: `${{ steps.check_tag.outputs.exists }}`
-            📃 **Make Release**: `${{ steps.check_tag.outputs.exists == 'false' && env.DEV_ENVIRONMENT == 'false' }}`
+            📃 **Tag Exists**: `${{ steps.check.outputs.exists }}`
+            📃 **Make Release**: `${{ steps.check.outputs.make_release }}`
             
 
             ${{ steps.changelog.outputs.description }}
