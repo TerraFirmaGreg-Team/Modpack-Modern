@@ -61,22 +61,22 @@ function registerGreateRecipes(event) {
 	// TODO: recycling recipes for these?
 	event.shapeless('greate:steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron', '#forge:tools/wrenches'])
 		.id('greate:shapeless/steel_cogwheel')
-	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_shaft', '#forge:gears/wrought_iron', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron','#forge:small_gears/wrought_iron', '#forge:tools/wrenches'])
 		.id('greate:shapeless/large_steel_cogwheel');
 
 	event.shapeless('greate:aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel', '#forge:tools/wrenches'])
 		.id('greate:shapeless/aluminium_cogwheel')
-	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:gears/steel', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel', '#forge:small_gears/steel', '#forge:tools/wrenches'])
 		.id('greate:shapeless/large_aluminium_cogwheel');
 
 	event.shapeless('greate:stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium', '#forge:tools/wrenches'])
 		.id('greate:shapeless/stainless_steel_cogwheel')
-	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:gears/aluminium', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium', '#forge:small_gears/aluminium', '#forge:tools/wrenches'])
 		.id('greate:shapeless/large_stainless_steel_cogwheel');
 
 	event.shapeless('greate:titanium_cogwheel', ['greate:titanium_shaft', '#forge:small_gears/stainless_steel', '#forge:tools/wrenches'])
 		.id('greate:shapeless/titanium_cogwheel')
-	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_shaft', '#forge:gears/stainless_steel', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_shaft',  '#forge:small_gears/stainless_steel', '#forge:small_gears/stainless_steel', '#forge:tools/wrenches'])
 		.id('greate:shapeless/large_titanium_cogwheel');
 
 	// #endregion
@@ -90,7 +90,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: 'tfc:quern',
 		B: 'tfc:handstone',
-		C: '#forge:gears/bronze',
+		C: '#forge:small_gears/bronze',
 		D: '#forge:tools/hammers',
 		E: '#forge:tools/saws'
 	}).id('greate:shaped/andesite_alloy_millstone')
@@ -102,7 +102,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: 'tfc:quern',
 		B: 'tfc:handstone',
-		C: '#forge:gears/bismuth_bronze',
+		C: '#forge:small_gears/bismuth_bronze',
 		D: '#forge:tools/hammers',
 		E: '#forge:tools/saws'
 	}).id('greate:shaped/andesite_alloy_millstone2')
@@ -114,7 +114,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: 'tfc:quern',
 		B: 'tfc:handstone',
-		C: '#forge:gears/black_bronze',
+		C: '#forge:small_gears/black_bronze',
 		D: '#forge:tools/hammers',
 		E: '#forge:tools/saws'
 	}).id('greate:shaped/andesite_alloy_millstone3')
@@ -126,7 +126,7 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#forge:smooth_stone',
 		B: 'gtceu:treated_wood_slab',
-		C: '#forge:gears/steel',
+		C: '#forge:small_gears/steel',
 		D: '#forge:tools/hammers',
 		E: '#forge:tools/wrenches',
 		F: '#forge:dusts/diamond'
