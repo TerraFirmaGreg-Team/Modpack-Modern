@@ -159,11 +159,11 @@ jobs:
           version: ${{ steps.determine_version.outputs.version }}
         continue-on-error: true
 
-      - name: 🔍 Check if changelog is empty
+      - name: 🔍 Check
         id: check
         shell: bash
         run: |
-          if [ ${{ env.DEV_ENVIRONMENT || steps.changelog.outcome == 'failure' }}  ]; then
+          if ${{ env.DEV_ENVIRONMENT == 'true' || steps.changelog.outcome == 'failure' }}; then
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
