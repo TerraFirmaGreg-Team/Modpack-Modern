@@ -4444,7 +4444,7 @@
                 "uCACXyPoJ4iKQzNG"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "enderman-overhaul",
                 "modrinth": "enderman-overhaul"
@@ -6174,7 +6174,7 @@
         {
             "pakku_id": "uCACXyPoJ4iKQzNG",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "geckolib",
                 "modrinth": "geckolib"
@@ -10587,7 +10587,7 @@
         {
             "pakku_id": "pITFJNUBx59dBitK",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "primitive-creatures"
             },
@@ -10830,7 +10830,7 @@
         {
             "pakku_id": "J5CyvX6hIaMAyzVK",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "resourceful-config",
                 "modrinth": "resourceful-config"
@@ -10891,7 +10891,7 @@
         {
             "pakku_id": "cxgo5IyMJwtpohRH",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "resourceful-lib",
                 "modrinth": "resourceful-lib"
@@ -13018,6 +13018,27 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/GNiiq3GB/TerraFirmaGreg-Core-Modern-0.6.2.jar",
+                    "id": "GNiiq3GB",
+                    "parent_id": "lNttW2Xl",
+                    "hashes": {
+                        "sha512": "b94362f2b923c83e6265f34b96a553356d265fa50221222ba2ab81091628e1a61cc2071b31f406d2f2823651247f2fce5b91634c78569cff861a9319ac5b4b8b",
+                        "sha1": "cac7136e073528263a0064c3d70876a06106754a"
+                    },
+                    "required_dependencies": [],
+                    "size": 237159,
+                    "date_published": "2025-04-27T07:12:55.828230Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "TerraFirmaGreg-Core-Modern-0.6.1.jar",
                     "mc_versions": [
@@ -13040,30 +13061,6 @@
                     ],
                     "size": 241598,
                     "date_published": "2025-04-15T03:58:23.103Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/lNttW2Xl/versions/V5J04AzG/TerraFirmaGreg-Core-Modern-0.6.1.jar",
-                    "id": "V5J04AzG",
-                    "parent_id": "lNttW2Xl",
-                    "hashes": {
-                        "sha512": "49b5afb2a8b17309d5787a373b765cbbfb266de547bd67a91aa82ee01f14c504601b60e50ec562e1474963ec7060bc11ae246ea8e282f1eb71138f5aa820a0ef",
-                        "sha1": "5c23bc9e7d5948142b1d45ad8fca91e6a9467bf3"
-                    },
-                    "required_dependencies": [
-                        "JaCEZUhg",
-                        "7tG215v7"
-                    ],
-                    "size": 241598,
-                    "date_published": "2025-04-15T03:58:27.227420Z"
                 }
             ]
         },
