@@ -176,23 +176,23 @@ function registerTFCMachineRecipes(event) {
 
 	// Curdled milk
 	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_milk')
-		.inputFluids(Fluid.of('minecraft:milk', 1000))
+		.inputFluids(Fluid.of('minecraft:milk', 2000))
 		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('tfc:curdled_milk'))
+		.outputFluids(Fluid.of('tfc:curdled_milk', 2000))
 		.duration(2400)
 		.EUt(16)
 
 	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_yak_milk')
-		.inputFluids(Fluid.of('firmalife:yak_milk', 1000))
+		.inputFluids(Fluid.of('firmalife:yak_milk', 2000))
 		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('firmalife:curdled_yak_milk'))
+		.outputFluids(Fluid.of('firmalife:curdled_yak_milk', 2000))
 		.duration(2400)
 		.EUt(16)
 
 	event.recipes.gtceu.fermenter('tfg:fermenter/curdled_goat_milk')
-		.inputFluids(Fluid.of('firmalife:goat_milk', 1000))
+		.inputFluids(Fluid.of('firmalife:goat_milk', 2000))
 		.itemInputs('firmalife:rennet')
-		.outputFluids(Fluid.of('firmalife:curdled_goat_milk'))
+		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 2000))
 		.duration(2400)
 		.EUt(16)
 
@@ -303,7 +303,7 @@ function registerTFCMachineRecipes(event) {
 
 	event.recipes.gtceu.mixer('tfg:tfc/olive_oil_water')
 		.inputFluids(Fluid.of('water', 200))
-		.itemInputs('2x tfc:olive_paste')
+		.itemInputs('1x tfc:olive_paste')
 		.outputFluids(Fluid.of('tfc:olive_oil_water', 200))
 		.duration(200)
 		.EUt(28)
@@ -316,6 +316,26 @@ function registerTFCMachineRecipes(event) {
 
 	//#endregion
 
+	// Vinegar and Brine
+
+	global.TFC_ALCOHOL.forEach(alcohol => {
+		event.recipes.gtceu.fermenter(`tfg:tfc/vinegar/${alcohol.id.replace(':', '_')}`)
+		.itemInputs('#tfc:foods/fruits')
+		.inputFluids(Fluid.of(alcohol.id, 250))
+		.outputFluids(Fluid.of('tfc:vinegar', 250))
+		.duration(600)
+		.EUt(28)
+	})
+
+	event.recipes.gtceu.mixer('tfg:tfc/brine')
+	.inputFluids(Fluid.of('tfc:salt_water', 900))
+	.inputFluids(Fluid.of('tfc:vinegar', 100))
+	.outputFluids(Fluid.of('tfc:brine', 1000))
+	.duration(100)
+	.EUt(16)
+
+	//#endregion
+	
 	// Lamp Glass
 	event.recipes.gtceu.alloy_smelter(`tfg:tfc/lamp_glass`)
 		.itemInputs('#tfc:glass_batches')

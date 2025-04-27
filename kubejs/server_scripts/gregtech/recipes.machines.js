@@ -581,6 +581,54 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
+	//#region ULV Hatches
+
+	event.recipes.shaped('gtceu:ulv_input_bus', [
+		'CAC',
+		'CBC',
+		'CDC'
+	], {
+		A: '#forge:chests/wooden',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_input_bus')
+
+	event.recipes.shaped('gtceu:ulv_output_bus', [
+		'CDC',
+		'CBC',
+		'CAC'
+	], {
+		A: '#forge:chests/wooden',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_output_bus')
+
+	event.recipes.shaped('gtceu:ulv_input_hatch', [
+		'CAC',
+		'CBC',
+		'CDC'
+	], {
+		A: '#forge:glass',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_input_hatch')
+
+	event.recipes.shaped('gtceu:ulv_output_hatch', [
+		'CDC',
+		'CBC',
+		'CAC'
+	], {
+		A: '#forge:glass',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_output_hatch')
+
+	//#endregion
+
 	//#region Long distance pipes
 
 	event.recipes.gtceu.assembler('long_distance_item_pipe')
