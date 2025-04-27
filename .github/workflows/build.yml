@@ -145,7 +145,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ env.DEV_ENVIRONMENT }} ]; then
+          if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
@@ -172,7 +172,7 @@ jobs:
 
           echo "minecraft_version=${{ steps.pakku_lock_info.outputs.mc_versions }}" >> $GITHUB_OUTPUT
 
-          if ${{ env.DEV_ENVIRONMENT == 'true' }}; then
+          if ${{ env.DEV_ENVIRONMENT == 'true' && steps.changelog.outcome == 'failure' }}; then
               echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "release_type=Unreleased" >> $GITHUB_OUTPUT
           fi
