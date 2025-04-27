@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.2]
 ### Changes
 - Fixed mining machines not working.
 - Fixed kaolin clay not generating in the overworld.
