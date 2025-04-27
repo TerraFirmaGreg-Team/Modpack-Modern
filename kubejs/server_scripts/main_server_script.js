@@ -14,6 +14,7 @@ ServerEvents.tags('item', event => {
     registerChalkItemTags(event);
     registerChiselAndBitsItemTags(event)
     registerComputerCraftItemTags(event)
+    registerConstructionWandItemTags(event)
     registerCreateItemTags(event)
     registerCreateAdditionsItemTags(event)
     registerCreateConnectedItemTags(event)
@@ -27,6 +28,7 @@ ServerEvents.tags('item', event => {
     registerFirmaLifeItemTags(event)
     registerFramedBlocksItemTags(event)
     registerFTBQuestsItemTags(event)
+    registerGrapplemodItemTags(event)
     registerGreateItemTags(event)
     registerGTCEUItemTags(event)
     registerMegaCellsItemTags(event)
@@ -100,6 +102,7 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 })
 
 ServerEvents.tags('worldgen/biome', event => {
+    registerTFCBiomeTags(event)
     registerTFGBiomeTags(event)
 })
 

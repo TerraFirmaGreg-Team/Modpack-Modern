@@ -14,17 +14,16 @@
     },
     {
       "type": "tfc:rock_knapping_recipe",
-      "recipes": [
-        "tfc:rock_knapping/hoe_head_sedimentary",
-        "tfc:rock_knapping/hoe_head_metamorphic",
-        "tfc:rock_knapping/hoe_head_igneous_extrusive",
-        "tfc:rock_knapping/hoe_head_igneous_intrusive"
-      ],
+        "recipes": [
+            "tfg:rock_knapping/stone_hoe_head",
+            "tfg:rock_knapping/stone_hoe_head_1",
+            "tfg:rock_knapping/stone_hoe_head_2"
+        ],
       "text": "Чтобы начать, $(thing)Каменную мотыгу$() можно $(thing)выколотить$(), как показано выше."
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "tfc:crafting/stone/hoe_sedimentary",
+      "recipe": "gtceu:shaped/hoe_stone",
       "text": "После того как головка мотыги выколота, ее можно скрафтить в мотыгу.$(br2)Мотыги работают как в ванили, позволяя правым кликом превращать блоки земли в $(thing)пашню$(). Они также могут использоваться для превращения $(thing)корнистой земли$() в обычную $(thing)землю$()."
     },
     {

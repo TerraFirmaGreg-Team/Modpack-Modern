@@ -340,7 +340,6 @@
 			dependencies: [
 				"40408FFD02134148"
 				"7FA0ACB7F161F378"
-				"4AFD3073C731A1E4"
 			]
 			description: ["You know the drill by now."]
 			icon: "gtceu:ev_assembler"
@@ -389,7 +388,6 @@
 				"3398FC108D9DCB46"
 				"41D32C5178760F47"
 				"40408FFD02134148"
-				"4AFD3073C731A1E4"
 				"6B08799BCFD01D3D"
 				"7FA0ACB7F161F378"
 			]
@@ -582,10 +580,7 @@
 			y: 5.625d
 		}
 		{
-			dependencies: [
-				"4AFD3073C731A1E4"
-				"7FA0ACB7F161F378"
-			]
+			dependencies: ["7FA0ACB7F161F378"]
 			description: [
 				"The &aLarge Titanium Boiler&r is yet another steam boiler. It's even more efficient than the previous ones, and produces more steam too. However, Steam &cbarely scales&r at this voltage."
 				""
@@ -690,7 +685,6 @@
 		{
 			dependencies: [
 				"40408FFD02134148"
-				"4AFD3073C731A1E4"
 				"7FA0ACB7F161F378"
 			]
 			description: [
@@ -714,7 +708,6 @@
 				"73E8283634E5E33A"
 				"3398FC108D9DCB46"
 				"40408FFD02134148"
-				"4AFD3073C731A1E4"
 				"7FA0ACB7F161F378"
 			]
 			description: [
@@ -735,10 +728,7 @@
 			y: 7.875d
 		}
 		{
-			dependencies: [
-				"4AFD3073C731A1E4"
-				"7FA0ACB7F161F378"
-			]
+			dependencies: ["7FA0ACB7F161F378"]
 			description: [
 				"Note that in theory, the &3EV Chemical Reactor&r is skippable by using the &3Large Chemical Reactor&r instead, but we're evil enough to force you to make this."
 				""
@@ -1358,10 +1348,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: [
-				"4AFD3073C731A1E4"
-				"16A6AE5C770DB83A"
-			]
+			dependencies: ["16A6AE5C770DB83A"]
 			description: [
 				"The &3Distillation Tower&r is a multiblock that will help you extract the most out of fluids. In &3Distilleries&r, you had to pick only one product to output. DTs output &6all of it at once&r!"
 				""

@@ -218,6 +218,27 @@ const registerGTCEURecipes = (event) => {
 		.duration(128)
 		.EUt(3)
 
+	event.recipes.gtceu.brewery('biomass_from_leaves')
+		.itemInputs('#minecraft:leaves')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_fallen_leaves')
+		.itemInputs('#tfc:fallen_leaves')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
+	event.recipes.gtceu.brewery('biomass_from_minecraft_plants')
+		.itemInputs('#createaddition:plants')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(128)
+		.EUt(3)
+
 	//#endregion
 
 	//#region Выход: Рыбье масло
@@ -323,6 +344,19 @@ const registerGTCEURecipes = (event) => {
 	event.stonecutting('gtceu:dark_concrete_windmill_b', 'gtceu:dark_concrete').id('tfg:stonecutting/dark_concrete_windmill_b')
 	event.stonecutting('gtceu:small_dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/small_dark_concrete_bricks')
 	event.stonecutting('gtceu:square_dark_concrete_bricks', 'gtceu:dark_concrete').id('tfg:stonecutting/square_dark_concrete_bricks')
+
+	//#endregion
+
+	//#region GT marble
+	
+	event.stonecutting('gtceu:polished_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_polished_marble')
+	event.stonecutting('gtceu:chiseled_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_chiseled_marble')
+	event.stonecutting('gtceu:marble_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_tile')
+	event.stonecutting('gtceu:marble_small_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_small_tile')
+	event.stonecutting('gtceu:marble_windmill_a', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_windmill_a')
+	event.stonecutting('gtceu:marble_windmill_b', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_windmill_b')
+	event.stonecutting('gtceu:small_marble_bricks', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_small_marble_bricks')
+	event.stonecutting('gtceu:square_marble_bricks', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_square_marble_bricks')
 
 	//#endregion
 
@@ -465,7 +499,7 @@ const registerGTCEURecipes = (event) => {
 	}).id('gtceu:shaped/electric_blast_furnace')
 
 	// Клей из ТФК клея
-	event.recipes.gtceu.centrifuge('glue_from_tfc_glue')
+	event.recipes.gtceu.extractor('glue_from_tfc_glue')
 		.itemInputs('tfc:glue')
 		.outputFluids(Fluid.of('gtceu:glue', 50))
 		.duration(400)
@@ -927,6 +961,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.centrifuge('tfg:centrifuge_rosin')
+		.itemInputs('tfg:conifer_rosin')
+		.outputFluids(Fluid.of('gtceu:glue', 50))
+		.itemOutputs('2x #forge:dusts/carbon')
+		.chancedOutput('gtceu:plant_ball', 1000, 850)
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.createSequencedAssembly([
 		'gtceu:ulv_voltage_coil',
@@ -942,13 +983,13 @@ const registerGTCEURecipes = (event) => {
 		.itemInputs('#forge:ingots/iron', '#tfc:steam_bloomery_basic_fuels')
 		.itemOutputs('tfc:raw_iron_bloom')
 		.duration(2400)
-		.EUt(GTValues.VEX[GTValues.ULV])
+		.EUt(2)
 
 	event.recipes.gtceu.steam_bloomery('steam_raw_iron_bloom_coalcoke')
 		.itemInputs('2x #forge:ingots/iron', '#tfc:blast_furnace_fuel')
 		.itemOutputs('2x tfc:raw_iron_bloom')
 		.duration(2400)
-		.EUt(GTValues.VEX[GTValues.ULV])
+		.EUt(2)
 
 	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 
@@ -956,24 +997,28 @@ const registerGTCEURecipes = (event) => {
 		if (tfcProperty == null)
 			return;
 
-		if (tfcProperty.getOutputMaterial() == GTMaterials.Iron) {
+		const outputMaterial = tfcProperty.getOutputMaterial() == null ? material : tfcProperty.getOutputMaterial()
+		if (outputMaterial == GTMaterials.Iron) {
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coal_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 1), '#tfc:steam_bloomery_basic_fuels')
 				.itemOutputs('tfc:raw_iron_bloom')
 				.duration(2400)
-				.EUt(GTValues.VEX[GTValues.ULV])
+				.EUt(2)
 
 			event.recipes.gtceu.steam_bloomery(`steam_raw_iron_bloom_coalcoke_${material.getName()}`)
 				.itemInputs(ChemicalHelper.get(TagPrefix.dust, material, 2), '#tfc:blast_furnace_fuel')
 				.itemOutputs('2x tfc:raw_iron_bloom')
 				.duration(2400)
-				.EUt(GTValues.VEX[GTValues.ULV])
+				.EUt(2)
 		}
 	})
 
 	//#endregion
 		
 	// TODO: Greate again...
+	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick'])
+		.id('tfg:shapeless/programmed_circuit_from_stick')
+
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])
 		.id('tfg:shapeless/red_alloy_single_cable')
 

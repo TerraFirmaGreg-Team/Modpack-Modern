@@ -5,7 +5,7 @@ const registerRailWaysRecipes = (event) => {
 	// Удаление рецептов мода railways 
 	event.remove({ mod: 'railways' });
 	
-	railwaysLocometalIntegration(event)
+	registerRailwaysLocometalRecipes(event)
 
 	// Семафор
 	event.shaped('railways:semaphore', [
@@ -281,7 +281,7 @@ const registerRailWaysRecipes = (event) => {
 
 	// Монорельс
 	event.recipes.createSequencedAssembly([
-		'4x railways:track_monorail',
+		'8x railways:track_monorail',
 	], 'create:metal_girder', [
 		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:plates/wrought_iron']),
 		event.recipes.createDeploying('railways:track_incomplete_monorail', ['railways:track_incomplete_monorail', '#forge:tools/hammers']),
@@ -291,13 +291,13 @@ const registerRailWaysRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('railways/monorail')
 		.itemInputs('create:metal_girder', '2x #forge:plates/wrought_iron')
-		.itemOutputs('4x railways:track_monorail')
+		.itemOutputs('8x railways:track_monorail')
 		.duration(250)
 		.EUt(32)
 
 	// Железнодорожное полотно (Узкое)
 	event.recipes.createSequencedAssembly([
-		'8x railways:track_create_andesite_narrow',
+		'16x railways:track_create_andesite_narrow',
 	], '#tfg:rock_slabs', [
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_narrow', ['railways:track_incomplete_create_andesite_narrow', 'gtceu:steel_rod']),
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_narrow', ['railways:track_incomplete_create_andesite_narrow', '#tfc:mortar']),
@@ -307,14 +307,14 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.gtceu.assembler('railways/track_create_andesite_narrow_from_steel')
 		.itemInputs('#tfg:rock_slabs', '2x gtceu:steel_rod')
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
-		.itemOutputs('8x railways:track_create_andesite_narrow')
+		.itemOutputs('16x railways:track_create_andesite_narrow')
 		.duration(800)
 		.EUt(16)
 		.circuit(1)
 
 	// Железнодорожное полотно (Нормальное)
 	event.recipes.createSequencedAssembly([
-		'8x create:track',
+		'16x create:track',
 	], '#tfg:rock_slabs', [
 		event.recipes.createDeploying('create:incomplete_track', ['create:incomplete_track', '#tfg:rock_slabs']),
 		event.recipes.createDeploying('create:incomplete_track', ['create:incomplete_track', 'gtceu:steel_rod']),
@@ -325,14 +325,14 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.gtceu.assembler('railways/track')
 		.itemInputs('3x #tfg:rock_slabs', '2x gtceu:steel_rod')
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
-		.itemOutputs('8x create:track')
+		.itemOutputs('16x create:track')
 		.duration(800)
 		.EUt(16)
 		.circuit(2)
 
 	// Железнодорожное полотно (Широкое)
 	event.recipes.createSequencedAssembly([
-		'8x railways:track_create_andesite_wide',
+		'16x railways:track_create_andesite_wide',
 	], '#tfg:rock_slabs', [
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_wide', ['railways:track_incomplete_create_andesite_wide', '#forge:stone']),
 		event.recipes.createDeploying('railways:track_incomplete_create_andesite_wide', ['railways:track_incomplete_create_andesite_wide', 'gtceu:steel_rod']),
@@ -343,7 +343,7 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.gtceu.assembler('railways/track_create_andesite_wide')
 		.itemInputs('5x #tfg:rock_slabs', '2x gtceu:steel_rod')
 		.inputFluids(Fluid.of('gtceu:concrete', 144))
-		.itemOutputs('8x railways:track_create_andesite_wide')
+		.itemOutputs('16x railways:track_create_andesite_wide')
 		.duration(800)
 		.EUt(16)
 		.circuit(3)
@@ -352,7 +352,7 @@ const registerRailWaysRecipes = (event) => {
 	global.TFC_WOOD_TYPES.forEach(woodType => {
 		// Узкое
 		event.recipes.createSequencedAssembly([
-			`8x railways:track_tfc_${woodType}_narrow`,
+			`16x railways:track_tfc_${woodType}_narrow`,
 		], `tfc:wood/planks/${woodType}_slab`, [
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_narrow`, [`railways:track_incomplete_tfc_${woodType}_narrow`, 'gtceu:steel_rod']),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_narrow`, [`railways:track_incomplete_tfc_${woodType}_narrow`, '#forge:screws']),
@@ -361,14 +361,14 @@ const registerRailWaysRecipes = (event) => {
 
 		event.recipes.gtceu.assembler(`railways/track_create_${woodType}_narrow`)
 			.itemInputs(`tfc:wood/planks/${woodType}_slab`, '2x gtceu:steel_rod', '2x #forge:screws')
-			.itemOutputs(`8x railways:track_tfc_${woodType}_narrow`)
+			.itemOutputs(`16x railways:track_tfc_${woodType}_narrow`)
 			.duration(800)
 			.EUt(16)
 			.circuit(1)
 
 		// Нормальное
 		event.recipes.createSequencedAssembly([
-			`8x railways:track_tfc_${woodType}`,
+			`16x railways:track_tfc_${woodType}`,
 		], `tfc:wood/planks/${woodType}_slab`, [
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}`, [`railways:track_incomplete_tfc_${woodType}`, `tfc:wood/lumber/${woodType}`]),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}`, [`railways:track_incomplete_tfc_${woodType}`, 'gtceu:steel_rod']),
@@ -378,14 +378,14 @@ const registerRailWaysRecipes = (event) => {
 
 		event.recipes.gtceu.assembler(`railways/track_${woodType}`)
 			.itemInputs(`tfc:wood/planks/${woodType}_slab`, `2x tfc:wood/lumber/${woodType}`, '2x gtceu:steel_rod', '2x #forge:screws')
-			.itemOutputs(`8x railways:track_tfc_${woodType}`)
+			.itemOutputs(`16x railways:track_tfc_${woodType}`)
 			.duration(800)
 			.EUt(16)
 			.circuit(2)
 
 		// Широкое
 		event.recipes.createSequencedAssembly([
-			`8x railways:track_tfc_${woodType}_wide`,
+			`16x railways:track_tfc_${woodType}_wide`,
 		], `tfc:wood/planks/${woodType}_slab`, [
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_wide`, [`railways:track_incomplete_tfc_${woodType}_wide`, `tfc:wood/planks/${woodType}_slab`]),
 			event.recipes.createDeploying(`railways:track_incomplete_tfc_${woodType}_wide`, [`railways:track_incomplete_tfc_${woodType}_wide`, `gtceu:steel_rod`]),
@@ -395,9 +395,22 @@ const registerRailWaysRecipes = (event) => {
 
 		event.recipes.gtceu.assembler(`railways/track_${woodType}_wide`)
 			.itemInputs(`3x tfc:wood/planks/${woodType}_slab`, '2x gtceu:steel_rod', '2x #forge:screws')
-			.itemOutputs(`8x railways:track_tfc_${woodType}_wide`)
+			.itemOutputs(`16x railways:track_tfc_${woodType}_wide`)
 			.duration(800)
 			.EUt(16)
 			.circuit(3)
 	});
+
+	event.shaped('1x railways:handcar', [
+		'EFE',
+		'BAA',
+		'CDC'
+	], {
+		A: '#minecraft:wooden_slabs',
+		B: '#create:seats',
+		C: 'gtceu:steel_minecart_wheels',
+		D: 'greate:steel_cogwheel',
+		E: ChemicalHelper.get(TagPrefix.rodLong, GTMaterials.Steel, 1),
+		F: ChemicalHelper.get(TagPrefix.spring, GTMaterials.Steel, 1)
+	}).id('tfg:railways/shaped/handcar')
 }

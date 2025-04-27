@@ -133,19 +133,82 @@ const registerTFGItems = (event) => {
     //#endregion
 
     //#region Wax
-    event.create(`tfg:paraffin_wax`)
-        .translationKey(`item.tfg.paraffin_wax`)
+    event.create('tfg:paraffin_wax')
+        .translationKey('item.tfg.paraffin_wax')
 
     event.create('tfg:conifer_rosin')
         .translationKey('item.tfg.conifer_rosin')
     //#endregion
 
-    //#region Arrow Parts
+    //#region Cloth & String
+	event.create('tfg:polycaprolactam_fabric')
+        .translationKey('item.tfg.polycaprolactam_fabric')
+
+	event.create('tfg:polycaprolactam_string')
+        .translationKey('item.tfg.polycaprolactam_string')
+
+    event.create('tfg:phantom_silk')
+        .translationKey('item.tfg.phantom_silk')
+
+    event.create('tfg:phantom_thread')
+        .translationKey('item.tfg.phantom_thread')
+    //#endregion
+
+    //#region Tools
     event.create('tfg:flint_arrow_head')
         .translationKey('item.tfg.flint_arrow_head')
 
     event.create('tfg:fletching')
         .translationKey('item.tfg.fletching')
+
+    event.create('tfg:fishing_net/wood')
+        .translationKey('item.tfg.fishing_net.wood')
+        .parentModel('tfg:item/fishing_nets/wood_fishing_net')
+        .texture('tfg:item/fishing_nets/wood_fishing_net')
+        .maxDamage(112)
+
+    event.create('tfg:fishing_net/brass')
+        .translationKey('item.tfg.fishing_net.brass')
+        .parentModel('tfg:item/fishing_nets/brass_fishing_net')
+        .texture('tfg:item/fishing_nets/brass_fishing_net')
+        .maxDamage(326)
+
+    event.create('tfg:fishing_net/rose_gold')
+        .translationKey('item.tfg.fishing_net.rose_gold')
+        .parentModel('tfg:item/fishing_nets/rose_gold_fishing_net')
+        .texture('tfg:item/fishing_nets/rose_gold_fishing_net')
+        .maxDamage(380)
+
+    event.create('tfg:fishing_net/sterling_silver')
+        .translationKey('item.tfg.fishing_net.sterling_silver')
+        .parentModel('tfg:item/fishing_nets/sterling_silver_fishing_net')
+        .texture('tfg:item/fishing_nets/sterling_silver_fishing_net')
+        .maxDamage(380)
+
+    event.create('tfg:fishing_net/invar')
+        .translationKey('item.tfg.fishing_net.invar')
+        .parentModel('tfg:item/fishing_nets/invar_fishing_net')
+        .texture('tfg:item/fishing_nets/invar_fishing_net')
+        .maxDamage(740)
+
+    event.create('tfg:fishing_net/tin_alloy')
+        .translationKey('item.tfg.fishing_net.tin_alloy')
+        .parentModel('tfg:item/fishing_nets/tin_alloy_fishing_net')
+        .texture('tfg:item/fishing_nets/tin_alloy_fishing_net')
+        .maxDamage(710)
+
+    event.create('tfg:fishing_net/cupronickel')
+        .translationKey('item.tfg.fishing_net.cupronickel')
+        .parentModel('tfg:item/fishing_nets/cupronickel_fishing_net')
+        .texture('tfg:item/fishing_nets/cupronickel_fishing_net')
+        .maxDamage(560)
+
+    event.create('tfg:fishing_net/magnalium')
+        .translationKey('item.tfg.fishing_net.magnalium')
+        .parentModel('tfg:item/fishing_nets/magnalium_fishing_net')
+        .texture('tfg:item/fishing_nets/magnalium_fishing_net')
+        .maxDamage(1830)
+
     //#endregion
 
     //#region Immersive Aircraft Impl

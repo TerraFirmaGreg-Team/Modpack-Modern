@@ -2,4 +2,3 @@
 
 global.HOT_OR_NOT_DISABLED_ITEMS = [
 ];
-

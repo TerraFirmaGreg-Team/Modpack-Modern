@@ -6,7 +6,12 @@
 	icon: "minecraft:apple"
 	id: "5D74D1A68158F29E"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "1AD1F9822B738105"
+		linked_quest: "2E36E5755B2F551C"
+		x: 6.0d
+		y: 5.0d
+	}]
 	quests: [
 		{
 			dependencies: ["427814F6E9386772"]
@@ -2355,7 +2360,7 @@
 			]
 			title: "{quests.tfg_tips.lamps.title}"
 			x: -5.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -2390,7 +2395,7 @@
 			]
 			title: "{quests.tfg_tips.lava_lamp.title}"
 			x: -5.0d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2411,7 +2416,7 @@
 			}]
 			title: "{quests.tfg_tips.creosote.title}"
 			x: -6.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2432,7 +2437,7 @@
 			}]
 			title: "{quests.tfg_tips.olive_oil.title}"
 			x: -4.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -2467,7 +2472,7 @@
 			]
 			title: "{quests.tfg_tips.glass_blocks.title}"
 			x: -3.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3270,8 +3275,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: -9.5d
-			y: 4.5d
+			x: -10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3291,11 +3296,11 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.filters.title}"
-			x: -9.5d
-			y: 5.5d
+			x: -10.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["4E2C1CAD883EB032"]
+			dependencies: ["275C8EA942AB49DD"]
 			description: ["{quests.tfg_tips.interplanar_projector.desc}"]
 			id: "3952D56556B35FDB"
 			subtitle: "{quests.tfg_tips.interplanar_projector.subtitle}"
@@ -3311,8 +3316,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -9.5d
-			y: 6.5d
+			x: -10.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -3519,7 +3524,7 @@
 			}]
 			title: "{quests.tfg_tips.tallow.title}"
 			x: -6.5d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3912,7 +3917,7 @@
 				}
 				{
 					id: "75FC7712CD89CAD7"
-					item: "minecraft:ice"
+					item: "minecraft:packed_ice"
 					type: "item"
 				}
 			]
@@ -4525,6 +4530,205 @@
 			title: "{quests.tfg_tips.grapple_double.title}"
 			x: -13.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: [
+				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
+				""
+				"These pipes instantly transfer from the input side to the output side."
+				""
+				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
+			]
+			icon: "gtceu:long_distance_item_pipeline_endpoint"
+			id: "22B0E30FF38145E7"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Wondering how to move those ores around?"
+			tasks: [
+				{
+					count: 2L
+					id: "7D5959A062BEE77C"
+					item: "gtceu:long_distance_item_pipeline_endpoint"
+					type: "item"
+				}
+				{
+					id: "30A1D0C682D0FC2E"
+					item: "gtceu:long_distance_item_pipeline"
+					type: "item"
+				}
+			]
+			title: "Long-Distance Items"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &aPortable Scanner&r, or &aTricorder&r, is GTCEu's debug tool."
+				""
+				"Using it will show you a block's details, the details of the energy network, its current status and contents, and its impact on performance."
+				""
+				"It'll also display a percentage of fluid remaining in the fluid vein for the &3Fluid Rigs&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This little useful device comes from GregTech 5. It was extremely useful in the early days, because very little information (basically nothing) was given by GUIs or WAILA."
+			]
+			id: "58D40A430654C997"
+			shape: "square"
+			size: 1.0d
+			subtitle: "For the nosiest GregTech players"
+			tasks: [{
+				id: "1E2E112D32893B8D"
+				item: "gtceu:portable_scanner"
+				type: "item"
+			}]
+			title: "Tricorder"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: [
+				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
+				""
+				"These pipes instantly transfer from the input side to the output side."
+				""
+				"They also have a minimum distance between pipe endpoints, so you can't use these for short-range operations."
+				"{@pagebreak}"
+				"These pipes have a reputation of being &4buggy&r to set up. If they don't seem to work at first, try rotating the endpoints with a &eWrench&r."
+			]
+			icon: "gtceu:long_distance_fluid_pipeline_endpoint"
+			id: "0B1AA0D4CEBD06A8"
+			optional: true
+			shape: "square"
+			size: 1.0d
+			subtitle: "Wondering how to move that oil around?"
+			tasks: [
+				{
+					count: 2L
+					id: "2B2586817A16F100"
+					item: "gtceu:long_distance_fluid_pipeline_endpoint"
+					type: "item"
+				}
+				{
+					id: "246FB107C0C2B28C"
+					item: "gtceu:long_distance_fluid_pipeline"
+					type: "item"
+				}
+			]
+			title: "Long-Distance Pipeline"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: [
+				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
+				""
+				"The &9Smart Item Filter&r is a filter that recognises Recipe Maps. When placed on the side of a machine, you can set it to \"&3Electrolyzer&r\" to allow insertion of electrolyzable items specifically. You heard that right - no need to filter manually!"
+				""
+				"Oh, and it only gets &abetter&r. If you combine this bad boy with a &aRobot Arm&r, it'll only supply the &6exact amount&r of items required for a successful recipe to the machine."
+				"{@pagebreak}"
+				"Place the &aRobot Arm&r on your Electrolyzer, open its GUI, then place the &9Smart Filter&r inside. Ensure that the Smart Filter is set to Electrolyzer."
+				""
+				"Next, configure it to &d&lImport&r and &d&lSupply Exact&r. Finally, attach any inventory &7(a chest will do)&r onto the side where you placed the &aRobot Arm&r. Ta-dah! You've figured out how to handle &6all&r Electrolyzer recipes!"
+				""
+				"What about the output of the &3Electrolyzer&r? You may want to route the Fluids to several Tanks - or even &3Super Tanks&r if you've gotten that far. We highly recommend that you avoid any methods involving voiding Fluids.&7.&8. except for Water for obvious reasons."
+				"{@pagebreak}"
+				"&9Note:&r The Robot Arm has to facilitate the item transfer for its filtering functionality to work! Inserting directly into the machine &7(for instance, pushing with a Hopper!)&r will ignore the Robot Arm's &dSupply Exact&r setting."
+			]
+			icon: "gtceu:item_smart_filter"
+			id: "222295CD03AF00DC"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Knock, knock - who's that? It's MENSA!"
+			tasks: [{
+				id: "11EC9A6D9E2C4B7E"
+				item: "gtceu:item_smart_filter"
+				type: "item"
+			}]
+			title: "200IQ"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: [
+				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
+				""
+				"The cheap way would be to use filters, and manually add Hot Ingots one by one... which is so boring! Let's try the fun option."
+				""
+				"Install an &aItem Tag Filter&r Cover on the side of your &3Chemical Bath&r, open it and set it to whitelist \"&e&lhot_ingots&r\"."
+				""
+				"From here, you can route with &9any logistics system&r of your choice."
+				"{@pagebreak}"
+				"Connect the output of your &3EBF(s)&r to the input of your &3Chemical Bath&r and the output dump (Chest or Crate)."
+				"You can also have a &dRestrictive Pipe&r in front of the output dump to ensure the Chemical Bath will be prioritized."
+				""
+				"&l&9Note:&r If you wish to know more tags for more automation setups, they will display if you press Shift when hovering over an item. For instance, an item tagged with &e&o#forge:plates/copper&r would be filtered as &e&lplates/copper&r."
+				""
+				"&9Other Note:&r The Item Tag Filter partially supports &dregex&r. Hover over the info icon for more information."
+			]
+			icon: "gtceu:item_tag_filter"
+			id: "7C1FD81C5DCFB74E"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Stop burning your darn hands!"
+			tasks: [{
+				id: "34DEDF3B7F0DB3BC"
+				item: "gtceu:item_tag_filter"
+				type: "item"
+			}]
+			title: "250IQ"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: [
+				"In theory, Crates are flat upgrades to Chests. A single block space that stores more items - what more could you ask for?"
+				""
+				"Unfortunately, there's a small downside - Crates do not support item movement shortcuts well. We plan on fixing this in the long-term."
+				""
+				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
+			]
+			icon: "gtceu:bronze_crate"
+			id: "6702D52922D85C0D"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Earlygame buffering"
+			tasks: [{
+				id: "2F8D9ACDF8EB5B8D"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
+					}
+				}
+				type: "item"
+			}]
+			title: "GregTech Storage"
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6702D52922D85C0D"]
+			description: ["With that tape you wil be able to move around the crate. The main advantage? You can put anything in a crate, weight won't be an issue here."]
+			icon: "gtceu:basic_tape"
+			id: "36B64597F76625ED"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Moving stuff around"
+			tasks: [{
+				id: "1257FC299E957859"
+				item: "gtceu:basic_tape"
+				type: "item"
+			}]
+			title: "Tape for Crate"
+			x: 6.0d
+			y: 8.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

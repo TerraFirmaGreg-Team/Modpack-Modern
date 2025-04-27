@@ -581,29 +581,87 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-	//#region Long Distance Pipelines
+	//#region ULV Hatches
 
-	event.remove({ id: 'gtceu:assembler/long_distance_item_pipe' })
+	event.recipes.shaped('gtceu:ulv_input_bus', [
+		'CAC',
+		'CBC',
+		'CDC'
+	], {
+		A: '#forge:chests/wooden',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_input_bus')
+
+	event.recipes.shaped('gtceu:ulv_output_bus', [
+		'CDC',
+		'CBC',
+		'CAC'
+	], {
+		A: '#forge:chests/wooden',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_output_bus')
+
+	event.recipes.shaped('gtceu:ulv_input_hatch', [
+		'CAC',
+		'CBC',
+		'CDC'
+	], {
+		A: '#forge:glass',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_input_hatch')
+
+	event.recipes.shaped('gtceu:ulv_output_hatch', [
+		'CDC',
+		'CBC',
+		'CAC'
+	], {
+		A: '#forge:glass',
+		B: 'gtceu:ulv_machine_hull',
+		C: 'tfc:glue',
+		D: '#forge:tools/wrenches'
+	}).id('gtceu:shaped/ulv_output_hatch')
+
+	//#endregion
+
+	//#region Long distance pipes
+
 	event.recipes.gtceu.assembler('long_distance_item_pipe')
-		.itemInputs(
-			'1x gtceu:tin_large_item_pipe',
-			'4x #forge:plates/steel')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144 / 4))
+		.itemInputs('1x #forge:large_item_pipes/polyvinyl_chloride', '4x #forge:plates/vanadium_steel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_item_pipeline')
+		.EUt(GTValues.VA[GTValues.HV])
 		.circuit(2)
 		.duration(300)
-		.EUt(24)
 
-	event.remove({ id: 'gtceu:assembler/long_distance_fluid_pipe' })
 	event.recipes.gtceu.assembler('long_distance_fluid_pipe')
-		.itemInputs(
-			'1x gtceu:bronze_large_fluid_pipe',
-			'4x #forge:plates/steel')
-		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144 / 4))
+		.itemInputs('1x #forge:large_fluid_pipes/vanadium_steel', '4x #forge:plates/polyvinyl_chloride')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
 		.itemOutputs('32x gtceu:long_distance_fluid_pipeline')
+		.EUt(GTValues.VA[GTValues.HV])
 		.circuit(2)
 		.duration(300)
-		.EUt(24)
+
+	event.recipes.gtceu.assembler('long_distance_item_endpoint')
+		.itemInputs('2x #forge:large_item_pipes/polyvinyl_chloride', '8x #forge:plates/vanadium_steel', '2x #forge:gears/stainless_steel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+		.itemOutputs('2x gtceu:long_distance_item_pipeline_endpoint')
+		.EUt(GTValues.VA[GTValues.HV])
+		.circuit(1)
+		.duration(400)
+
+	event.recipes.gtceu.assembler('long_distance_fluid_endpoint')
+		.itemInputs('2x #forge:large_fluid_pipes/vanadium_steel', '8x #forge:plates/polyvinyl_chloride', '2x #forge:gears/stainless_steel')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+		.itemOutputs('2x gtceu:long_distance_fluid_pipeline_endpoint')
+		.EUt(GTValues.VA[GTValues.HV])
+		.circuit(1)
+		.duration(400)
 
 	//#endregion
 

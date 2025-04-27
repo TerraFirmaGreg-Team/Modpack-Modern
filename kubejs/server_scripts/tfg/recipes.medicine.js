@@ -546,4 +546,12 @@ function registerTFGMedicineRecipes(event) {
 
 	//#endregion
 
+	//#region Paracetamol
+
+	event.recipes.firmalife.mixing_bowl()
+		.ingredients(['tfg:regeneration_pill', 'tfg:weakness_pill', 'tfg:antipoison_pill', 'tfg:slowness_pill'], Fluid.of('tfc:vinegar', 250))
+		.outputItem('4x gtceu:paracetamol_pill')
+		.id(`tfg:mixing_bowl/paracetamol`)
+
+	//#endregion
 }

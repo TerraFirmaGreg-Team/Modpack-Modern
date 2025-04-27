@@ -135,6 +135,9 @@ const registerTFCRecipes = (event) => {
 
 	//#endregion
 
+	event.shapeless('tfc:crucible', ['tfc:crucible']).id('tfg:empty_crucible')
+
+	event.shapeless('2x minecraft:stick', ['#minecraft:saplings', '#forge:tools/knives']).id('tfg:strip_saplings')
 
 	// Доменная печь
 	event.shaped('tfc:blast_furnace', [
@@ -234,4 +237,5 @@ const registerTFCRecipes = (event) => {
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')
 	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')
+
 }

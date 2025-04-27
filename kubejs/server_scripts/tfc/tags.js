@@ -4,6 +4,7 @@
  * 
  * @param {TagEvent.Item} event 
  */
+//#region ItemTags
 const registerTFCItemTags = (event) => {
     // Теги для соответствия инструментов TFC и GT
     
@@ -33,6 +34,34 @@ const registerTFCItemTags = (event) => {
     event.add('tfc:usable_on_tool_rack', '#forge:tools/chainsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/buzzsaws')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/drills')
+
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/fishing_nets')
+
+    event.add('tfc:usable_on_tool_rack', '#tfc:buckets')
+
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_building')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_exchanging')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_copy_paste')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_cut_paste')
+    event.add('tfc:usable_on_tool_rack', 'buildinggadgets2:gadget_destruction')
+    event.add('tfc:usable_on_tool_rack', 'create:super_glue')
+    event.add('tfc:usable_on_tool_rack', 'exposure:camera')
+    event.add('tfc:usable_on_tool_rack', 'measurements:tape_measure')
+    event.add('tfc:usable_on_tool_rack', '#chalk:chalks')
+    event.add('tfc:usable_on_tool_rack', 'chalk:chalk_box')
+    event.add('tfc:usable_on_tool_rack', 'computercraft:pocket_computer_normal')
+    event.add('tfc:usable_on_tool_rack', 'computercraft:pocket_computer_advanced')
+    event.add('tfc:usable_on_tool_rack', 'grapplemod:grapplinghook')
+    event.add('tfc:usable_on_tool_rack', 'grapplemod:launcheritem')
+    event.add('tfc:usable_on_tool_rack', 'ae2:color_applicator')
+    event.add('tfc:usable_on_tool_rack', 'ae2:matter_cannon')
+    event.add('tfc:usable_on_tool_rack', 'ae2:network_tool')
+    event.add('tfc:usable_on_tool_rack', 'ae2:wireless_terminal')
+    event.add('tfc:usable_on_tool_rack', 'ae2:wireless_crafting_terminal')
+    event.add('tfc:usable_on_tool_rack', 'waterflasks:leather_flask')
+    event.add('tfc:usable_on_tool_rack', 'waterflasks:iron_flask')
+    event.add('tfc:usable_on_tool_rack', 'waterflasks:red_steel_flask')
+    event.add('tfc:usable_on_tool_rack', 'tfc:wool_cloth')
 
     // Ингредиенты для закваски
     event.add('tfg:ferments_to_rennet', 'tfc:food/soybean')
@@ -258,7 +287,6 @@ const registerTFCItemTags = (event) => {
     event.add('forge:cloth', 'tfc:burlap_cloth')
     event.add('forge:cloth', 'tfc:wool_cloth')
     event.add('forge:cloth', 'tfc:silk_cloth')
-    event.add('forge:cloth', 'minecraft:phantom_membrane')
 
     // Piglin loved
     event.add('minecraft:piglin_loved', 'tfc:ore/small_native_gold')
@@ -266,7 +294,9 @@ const registerTFCItemTags = (event) => {
     event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
     event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
 }
+//#endregion
 
+//#region BlockTags
 const registerTFCBlockTags = (event) => {
     // Теги для каменных ступенек тфк
     global.TFC_STONE_TYPES.forEach(stoneTypeName => {
@@ -375,8 +405,16 @@ const registerTFCBlockTags = (event) => {
     event.add('minecraft:frogs_spawnable_on', 'tfc:rock/raw/gabbro')
 
     //#endregion
+    
+    //Allows any block with the word "brick" in its id to be used as bloomery and forge insulation.
+    //Add blacklisted words to the const with | between.
+    const brick_blacklist = ('drying|slab|stairs|wall|additionalplacements');
+    event.add('tfc:bloomery_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
+    event.add('tfc:forge_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
 }
+//#endregion
 
+//#region FluidTags
 const registerTFCFluidTags = (event) => {
     // Удаление TFC металлов из возможных в форме слитка
     event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/bismuth')
@@ -444,6 +482,16 @@ const registerTFCFluidTags = (event) => {
     event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
     event.add('tfc:usable_in_blue_steel_bucket', 'gtceu:creosote')
 
+    event.add('tfc:usable_in_barrel', 'gtceu:ice')
+    event.add('tfc:usable_in_pot', 'gtceu:ice')
+    event.add('tfc:usable_in_wooden_bucket', 'gtceu:ice')
+    event.add('tfc:usable_in_red_steel_bucket', 'gtceu:ice')
+
+    event.add('tfc:ingredients', 'tfc:spring_water')
+    event.add('tfc:usable_in_barrel', 'tfc:spring_water')
+    event.add('tfc:usable_in_wooden_bucket', 'tfc:spring_water')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfc:spring_water')
+
     // Добавляем тег для скрытия в EMI
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/bismuth_bronze')
@@ -469,11 +517,27 @@ const registerTFCFluidTags = (event) => {
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_red_steel')
     event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
 }
+//#endregion
 
+//#region BiomeTags
+const registerTFCBiomeTags = (event) => {
+
+    event.add('tfc:kaolin_clay_spawns_in', 'tfc:rolling_hills')
+}
+//#endregion
+
+//#region PlacedFeatures
 const registerTFCPlacedFeatures = (event) => {
     
     // Удаление
     event.removeAll('tfc:in_biome/veins')
+
+    // Add back the non-ore ones
+    event.add('tfc:in_biome/veins', 'tfc:vein/gravel')
+	event.add('tfc:in_biome/veins', 'tfc:vein/kaolin_disc')
+    event.add('tfc:in_biome/veins', 'tfc:vein/granite_dike')
+    event.add('tfc:in_biome/veins', 'tfc:vein/diorite_dike')
+    event.add('tfc:in_biome/veins', 'tfc:vein/gabbro_dike')
 
     // Добавление
     event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')
@@ -538,3 +602,4 @@ const registerTFCPlacedFeatures = (event) => {
     event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
     event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
 }
+//#endregion

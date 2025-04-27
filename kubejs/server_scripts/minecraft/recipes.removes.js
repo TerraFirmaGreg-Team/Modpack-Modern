@@ -1576,6 +1576,9 @@ function removeMinecraftRecipes(event) {
 	//#region Выход: Стол для ковки
 
 	event.remove({ id: 'minecraft:smithing_table' })
+	event.remove({ id: 'tfc:crafting/vanilla/smithing_table' })
+	event.remove({ id: 'gtceu:shaped/smithing_table' })
+	event.remove({ id: 'gtceu:assembler/smithing_table' })
 
 	//#endregion
 
@@ -2074,4 +2077,5 @@ function removeMinecraftRecipes(event) {
 	event.remove({ id: 'gtceu:assembler/end_crystal' })
 	//#endregion
 
+	event.remove({ id: 'minecraft:flower_banner_pattern' })
 }

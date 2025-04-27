@@ -1,0 +1,191 @@
+
+[general]
+	#Enable rainbows
+	enableRainbow = true
+	#Enable planets
+	enablePlanets = true
+	#Enable monsters spawning on the surface during a blood moon event? Overwrites TFC's config for surface monsters
+	enableBloodmoonSurfaceMonsters = false
+	#Enable sun blindness? Looking at the sun for too long will make you blind for a period
+	enableSunBlindness = false
+	#Amount of days per real Earth month
+	#Range: 0.0 ~ 1.7976931348623157E308
+	averageDaysPerMonth = 30.436875
+	#Synodic period of the moon in days
+	#Range: 0.0 ~ 1.7976931348623157E308
+	moonOrbitalPeriod = 29.530588
+	#Moon scale factor
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	moonScale = 1.0
+	#Sun scale factor
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	sunScale = 0.725
+	#Planet scale factor
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	planetScale = 1.0
+	#Planet distance factor
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	planetDistance = 1.0
+	#Planet orbit velocity factor
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	planetOrbit = 1.0
+	#Seasonal tilt of Earth
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	earthSeasonalTilt = 23.44
+	#Bloodmoon spawn count multiplier
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	bloodmoonSpawnCountMultiplier = 1.0
+	#Average inclination to Earth equator for the Moon (in degrees).
+	#The closer to 0 this value is, the more frequent lunar and solar eclipses will be
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	moonEarthEquatorInclination = 23.43
+	#Diameter of Mercury (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	mercuryDiameter = 4879.0
+	#Diameter of Venus (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	venusDiameter = 12104.0
+	#Diameter of Earth (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	earthDiameter = 12742.0
+	#Diameter of Mars (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	marsDiameter = 6792.0
+	#Diameter of Jupiter (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	jupiterDiameter = 142984.0
+	#Diameter of Saturn (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	saturnDiameter = 120536.0
+	#Diameter of Uranus (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	uranusDiameter = 51118.0
+	#Diameter of Neptune (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	neptuneDiameter = 49528.0
+	#Diameter of Pluto (km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	plutoDiameter = 2376.0
+	#Tropical orbit period for Mercury (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	mercuryOrbitalPeriod = 87.968
+	#Tropical orbit period for Venus (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	venusOrbitalPeriod = 224.695
+	#Tropical orbit period for Earth (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	earthOrbitalPeriod = 365.242
+	#Tropical orbit period for Mars (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	marsOrbitalPeriod = 779.94
+	#Tropical orbit period for Jupiter (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	jupiterOrbitalPeriod = 4330.595
+	#Tropical orbit period for Saturn (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	saturnOrbitalPeriod = 10746.94
+	#Tropical orbit period for Uranus (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	uranusOrbitalPeriod = 30588.74
+	#Tropical orbit period for Neptune (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	neptuneOrbitalPeriod = 59799.9
+	#Sidereal orbit period for Pluto (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	plutoOrbitalPeriod = 90560.0
+	#Semi major axis for Mercury (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	mercurySemiMajorAxis = 57.909
+	#Semi major axis for Venus (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	venusSemiMajorAxis = 108.21
+	#Semi major axis for Earth (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	earthSemiMajorAxis = 149.598
+	#Semi major axis for Mars (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	marsSemiMajorAxis = 227.956
+	#Semi major axis for Jupiter (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	jupiterSemiMajorAxis = 778.479
+	#Semi major axis for Saturn (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	saturnSemiMajorAxis = 1432.041
+	#Semi major axis for Uranus (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	uranusSemiMajorAxis = 2867.043
+	#Semi major axis for Neptune (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	neptuneSemiMajorAxis = 4514.953
+	#Semi major axis for Pluto (10^6 km)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	plutoSemiMajorAxis = 5869.656
+	#Synodic period for Mercury (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	mercurySynodicPeriod = 115.88
+	#Synodic period for Venus (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	venusSynodicPeriod = 583.92
+	#Synodic period for Mars (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	marsSynodicPeriod = 779.94
+	#Synodic period for Jupiter (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	jupiterSynodicPeriod = 4330.595
+	#Synodic period for Saturn (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	saturnSynodicPeriod = 378.09
+	#Synodic period for Uranus (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	uranusSynodicPeriod = 369.66
+	#Synodic period for Neptune (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	neptuneSynodicPeriod = 367.49
+	#Synodic period for Pluto (in real Earth days)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	plutoSynodicPeriod = 366.73
+	#Ecliptic plane for Mercury (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	mercuryEclipticPlane = 7.004
+	#Ecliptic plane for Venus (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	venusEclipticPlane = 3.395
+	#Ecliptic plane for Mars (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	marsEclipticPlane = 1.848
+	#Ecliptic plane for Jupiter (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	jupiterEclipticPlane = 1.304
+	#Ecliptic plane for Saturn (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	saturnEclipticPlane = 2.486
+	#Ecliptic plane for Uranus (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	uranusEclipticPlane = 0.77
+	#Ecliptic plane for Neptune (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	neptuneEclipticPlane = 1.77
+	#Ecliptic plane for Pluto (in degrees)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	plutoEclipticPlane = 17.16
+	#Enable auroras
+	enableAurora = true
+	#The maximum aurora bands that will be rendered
+	#Range: 0 ~ 3
+	maxBands = 3
+
+[debug]
+	#When enabled, prints debug values to console.
+	enableDebug = false
+	#x value factor.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	xFactor = 0.0
+	#y value factor.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	yFactor = 0.0
+	#z value factor.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	zFactor = 0.0
+	#Toggle blend.
+	enableBlend = false
+

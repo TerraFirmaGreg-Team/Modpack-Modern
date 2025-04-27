@@ -130,18 +130,19 @@ function registerVintageImprovementsRecipes(event) {
 		G: 'create:precision_mechanism'
 	}).id('tfg:vi/mechanical_crafting/lathe')
 
-	event.shaped('vintageimprovements:laser', [
-		'FBF',
-		'EAE',
-		'DCD'
-	], {
-		A: 'gtceu:ulv_machine_hull',
-		B: 'create:precision_mechanism',
-		C: 'tfc:lens',
-		D: 'gtceu:red_alloy_single_wire',
-		E: 'minecraft:piston',
-		F: '#gtceu:circuits/ulv'
-	}).id('tfg:vi/shaped/laser')
+	// Re-enable this thing's EMI category as well, if we end up using it
+	//event.shaped('vintageimprovements:laser', [
+	//	'FBF',
+	//	'EAE',
+	//	'DCD'
+	//], {
+	//	A: 'gtceu:ulv_machine_hull',
+	//	B: 'create:precision_mechanism',
+	//	C: 'tfc:lens',
+	//	D: 'gtceu:red_alloy_single_wire',
+	//	E: 'minecraft:piston',
+	//	F: '#gtceu:circuits/ulv'
+	//}).id('tfg:vi/shaped/laser')
 
 	// #endregion
 
@@ -408,7 +409,7 @@ function registerVintageImprovementsRecipes(event) {
 			event.custom({
 				type: 'vintageimprovements:pressurizing',
 				ingredients: [ingotItem, ingotItem, { item: 'tfc:powder/flux' }],
-				"heatRequirement": "heated",
+				heatRequirement: "heated",
 				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
@@ -418,7 +419,7 @@ function registerVintageImprovementsRecipes(event) {
 			event.custom({
 				type: 'vintageimprovements:pressurizing',
 				ingredients: [plateItem, plateItem, { item: 'tfc:powder/flux' }],
-				"heatRequirement": "heated",
+				heatRequirement: "heated",
 				results: [ChemicalHelper.get(TagPrefix.plateDouble, material, 1)],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
@@ -489,6 +490,7 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #region Curving Press
 
+	// Copied from https://github.com/ThePansmith/Monifactory/blob/15c109298104e0c0b5083b266264bd6c158c6154/kubejs/server_scripts/mods/optionalCompats/create.js#L251
 	event.forEachRecipe([{ type: 'gtceu:extruder' }],
 		recipe => {
 			let r = JSON.parse(recipe.json)
@@ -498,6 +500,8 @@ function registerVintageImprovementsRecipes(event) {
 			if (!(EUt <= 32)) { return }
 			// Skip this one
 			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
+			// Skip glass too
+			if (r.inputs.item[0].content.ingredient.item == "gtceu:glass_dust") { return }
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
@@ -517,60 +521,6 @@ function registerVintageImprovementsRecipes(event) {
 
 	// #endregion
 
-	// #region Centrifuge
-
-	// Copied from https://github.com/ThePansmith/Monifactory/blob/15c109298104e0c0b5083b266264bd6c158c6154/kubejs/server_scripts/mods/optionalCompats/create.js#L251
-	event.forEachRecipe([{ type: 'gtceu:centrifuge' }],
-		recipe => {
-			let r = JSON.parse(recipe.json)
-
-			// ULV recipes only
-			let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null;
-			if (!(EUt <= 8)) { return }
-
-			let inputs = [];
-			if (r.inputs.item) {
-				r.inputs.item.forEach(i => {
-					let ins = i.content.ingredient;
-
-					if (i.content.count)
-						ins.count = i.content.count;
-
-					inputs.push(ins)
-				})
-			}
-			else return;
-
-			let outputs = [];
-			if (r.outputs.item) {
-				r.outputs.item.forEach(i => {
-					let out = i.content.ingredient;
-
-					if (i.content.count)
-						out.count = i.content.count;
-					
-					if (i.chance != 0 && i.chance != 10000)
-						out.chance = i.chance / 10000;
-
-					outputs.push(out)
-				})
-			}
-			else return;
-
-			event.custom({
-				type: 'vintageimprovements:centrifugation',
-				ingredients: inputs,
-				results: outputs,
-				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
-			}).id(`tfg:vi/${recipe.getId().split(':')[1]}`)
-		}
-	)
-
-	// Fix weird inconsistency
-	event.replaceOutput({ id: 'tfg:vi/centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', 'gtceu:carbon_dust')
-
-	// #endregion
-
 	// #region Vacuum
 
 	event.custom({
@@ -579,9 +529,39 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
 		heatRequirement: "heated",
 		processingTime: 100
-	}).id('tfg:vi/vacuumizing/glue')
+	}).id('tfg:vi/vacuumizing/glue_melting')
 
-	// TODO: Remove me when we upgrade Greate and can just slap rubber onto wires again
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'gtceu:sticky_resin' }],
+		results: [{ fluid: 'gtceu:glue', amount: 100 }],
+		heatRequirement: "heated",
+		processingTime: 200
+	}).id('tfg:vi/vacuumizing/glue_from_resin')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:conifer_rosin' }],
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 200
+	}).id('tfg:vi/vacuumizing/glue_from_rosin')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'minecraft:bone_meal' }, { fluid: 'tfc:limewater', amount: 500 }],
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 100
+	}).id('tfg:vi/vacuumizing/glue_from_bone_meal')
+
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ fluid: 'gtceu:glue', amount: 50 }],
+		results: [{ item: 'tfc:glue' }],
+		processingTime: 100
+	}).id('tfg:vi/pressurizing/glue_solidifying')
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'gtceu:rubber_dust' }],

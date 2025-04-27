@@ -36,8 +36,8 @@ const registerTFCMetals = (event) => {
     event.metal('gtceu:brass', 930, 0.00857, '#forge:ingots/brass', '#forge:double_ingots/brass', '#forge:plates/brass', 2, 'tfc:brass')
     
     event.metal('gtceu:redstone', 460, 0.01729, null, null, null, 1, 'tfg:redstone')
-    event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', null, '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
-    event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', null, '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
+    event.metal('gtceu:red_alloy', 740, 0.01529, '#forge:ingots/red_alloy', '#forge:double_ingots/red_alloy', '#forge:plates/red_alloy', 2, 'tfg:red_alloy')
+    event.metal('gtceu:tin_alloy', 1250, 0.00829, '#forge:ingots/tin_alloy', '#forge:double_ingots/tin_alloy', '#forge:plates/tin_alloy', 3, 'tfg:tin_alloy')
 }
 //#endregion
 
@@ -198,6 +198,15 @@ const registerTFCItemSize = (event) => {
     })
     event.itemSize('tfg:decorative_vase', 'normal', 'medium', 'decorative_vase')
     event.itemSize('tfg:decorative_vase/unfired', 'normal', 'medium', 'decorative_vase/unfired')
+
+    event.itemSize('tfg:fishing_net/wood', 'large', 'medium', 'wood_fishing_net')
+    event.itemSize('tfg:fishing_net/brass', 'large', 'medium', 'brass_fishing_net')
+    event.itemSize('tfg:fishing_net/rose_gold', 'large', 'medium', 'rose_gold_fishing_net')
+    event.itemSize('tfg:fishing_net/sterling_silver', 'large', 'medium', 'sterling_silver_fishing_net')
+    event.itemSize('tfg:fishing_net/invar', 'large', 'medium', 'invar_fishing_net')
+    event.itemSize('tfg:fishing_net/cupronickel', 'large', 'medium', 'cupronickel_fishing_net')
+    event.itemSize('tfg:fishing_net/tin_alloy', 'large', 'medium', 'tin_alloy_fishing_net')
+    event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
 
     event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
 

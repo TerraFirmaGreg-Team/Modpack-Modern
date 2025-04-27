@@ -9,10 +9,9 @@ function registerTFCStoneRecipes(event) {
 		let smallStoneDust = ChemicalHelper.get(TagPrefix.dustSmall, stoneMaterial, 1)
 
 		// Кирпич (предмет)
-		event.recipes.gtceu.assembler(`tfg:tfc/${stone}_loose_to_brick`)
+		event.recipes.gtceu.cutter(`tfg:tfc/${stone}_loose_to_brick`)
 			.itemInputs(`tfc:rock/loose/${stone}`)
 			.itemOutputs(`tfc:brick/${stone}`)
-			.circuit(1)
 			.duration(40)
 			.EUt(8)
 

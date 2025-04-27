@@ -145,7 +145,7 @@ jobs:
         id: determine_version
         shell: bash
         run: |
-          if [ ${{ env.DEV_ENVIRONMENT }} || steps.pakku_info.outputs.version ]; then
+          if [ ${{ env.DEV_ENVIRONMENT }} ]; then
             echo "version=unreleased" >> $GITHUB_OUTPUT
           else
             echo "version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
@@ -163,7 +163,7 @@ jobs:
         id: check
         shell: bash
         run: |
-          if [ ${{ env.DEV_ENVIRONMENT }} || ${{ steps.changelog.outcome }} == 'failure' ]; then
+          if [ ${{ env.DEV_ENVIRONMENT || steps.changelog.outcome == 'failure' }}  ]; then
               echo "version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
               echo "status=Unreleased" >> $GITHUB_OUTPUT
           else
@@ -334,7 +334,7 @@ jobs:
           mkdir -p .pakku/multimc-overrides/flame
           mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
           mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
-          mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
+          mv -vf ./mods/* .pakku/multimc-overrides/.minecraft/mods/
           cd .pakku/multimc-overrides/
           
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
@@ -400,7 +400,7 @@ jobs:
 
       - name: 🚀 Create release
         id: release
-        uses: softprops/action-gh-release@v2.2.1
+        uses: softprops/action-gh-release@v2.2.2
         with:
           name: ${{ needs.info.outputs.project_version }}
           tag_name: ${{ needs.info.outputs.project_version }}

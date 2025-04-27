@@ -178,34 +178,6 @@
 			y: -0.5d
 		}
 		{
-			description: [
-				"In theory, Crates are flat upgrades to Chests. A single block space that stores more items - what more could you ask for?"
-				""
-				"Unfortunately, there's a small downside - Crates do not support item movement shortcuts well. We plan on fixing this in the long-term."
-				""
-				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
-			]
-			icon: "gtceu:bronze_crate"
-			id: "7CCC1BDDE0C67F16"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "Earlygame buffering"
-			tasks: [{
-				id: "78E120F8EDE2BD3F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
-					}
-				}
-				type: "item"
-			}]
-			title: "GregTech Storage"
-			x: 6.5d
-			y: -0.5d
-		}
-		{
 			dependencies: [
 				"288CE4AA4C5AA8BF"
 				"2F7617C0C4B330DE"
@@ -384,7 +356,8 @@
 				"{quests.low_voltage.lv_superconductor.desc.2}"
 			]
 			id: "46AD7A6F3B6775F5"
-			shape: "rsquare"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_superconductor.subtitle}"
 			tasks: [{
@@ -590,7 +563,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["3E6DC423FE4A99F7"]
+			dependencies: [
+				"3E6DC423FE4A99F7"
+				"02FDECC931B5E8EF"
+			]
 			description: ["{quests.low_voltage.lv_ore_prospector.desc}"]
 			id: "2E36E5755B2F551C"
 			shape: "heart"
@@ -1196,23 +1172,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7CCC1BDDE0C67F16"]
-			description: ["With that tape you wil be able to move around the crate. The main advantage? You can put anything in a crate, weight won't be an issue here."]
-			icon: "gtceu:basic_tape"
-			id: "37151F9C4A240041"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "Moving stuff around"
-			tasks: [{
-				id: "2FCA41AFFAF08816"
-				item: "gtceu:basic_tape"
-				type: "item"
-			}]
-			title: "Tape for Crate"
-			x: 7.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_mixer.desc}"]
 			id: "5B891BA4897FD73C"
@@ -1368,7 +1327,6 @@
 							"ftbfiltersystem:filter": "or(item(gtceu:lv_1a_energy_converter)item(gtceu:lv_4a_energy_converter)item(gtceu:lv_8a_energy_converter)item(gtceu:lv_16a_energy_converter))"
 						}
 					}
-					title: ""
 					type: "item"
 				}
 			]

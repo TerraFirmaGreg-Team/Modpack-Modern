@@ -7,104 +7,78 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "gtceu:damascus_steel_ingot",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 3,
-								"type": "minecraft:uniform"
-							}
-						}
-					],
-					"weight": 20
-				},
-				{
-					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_hammer",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_pickaxe",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_sword",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_knife",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
-						}
-					]
-				},
-				{
-					"type": "minecraft:item",
-					"name": "gtceu:damascus_steel_butchery_knife",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_mining_hammer",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_shovel",
-					"weight": 10,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_spade",
-					"weight": 5,
+					"weight": 10,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
@@ -115,73 +89,106 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":5, \"MaxAoERow\":5, \"MaxAoELayer\":3}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_wire_cutter",
-					"weight": 15,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_wrench",
-					"weight": 15,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_crowbar",
-					"weight": 15,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_mortar",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_file",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_screwdriver",
-					"weight": 15,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_hoe",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "gtceu:damascus_steel_saw",
-					"weight": 15,
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:crossbow",
-					"weight": 5,
+					"name": "gtceu:damascus_steel_axe",
+					"weight": 20,
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{\"tfc:forging_bonus\": 4}"
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
 						}
 					]
 				}

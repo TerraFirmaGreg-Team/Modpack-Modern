@@ -54,8 +54,6 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:rock/raw', 'minecraft:blackstone')
     event.add('tfc:rock/raw', 'minecraft:dripstone_block')
 
-    event.add('tfc:sewing_dark_cloth', 'minecraft:phantom_membrane')
-
     event.remove('forge:gems', 'minecraft:charcoal')
 }
 
@@ -63,6 +61,9 @@ const registerMinecraftBlockTags = (event) => {
     global.MINECRAFT_DISABLED_ITEMS.forEach(item => {
         event.removeAllTagsFrom(item)
     })
+
+    // Stops saws from being able to pick up ice
+    event.remove('minecraft:ice', 'minecraft:ice')
 
     // Теперь обсидиан сторадж блок
     event.add('forge:storage_blocks/obsidian', 'minecraft:obsidian')

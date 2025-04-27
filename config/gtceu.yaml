@@ -40,7 +40,7 @@ recipes:
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: true
+  hardMiscRecipes: false
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -87,7 +87,7 @@ recipes:
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
-  enchantedTools: true
+  enchantedTools: false
 
 worldgen:
   # Rubber Tree spawn chance (decimal % per chunk)

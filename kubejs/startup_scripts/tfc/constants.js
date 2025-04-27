@@ -552,7 +552,29 @@ global.TFC_DISABLED_ITEMS = [
     'tfc:hand_wheel',
     'tfc:blank_disc',
     'tfc:sandpaper',
-    'tfc:brass_mechanisms'
+    'tfc:brass_mechanisms',
+
+    // Buckets
+    'tfc:bucket/metal/bismuth',
+    'tfc:bucket/metal/bismuth_bronze',
+    'tfc:bucket/metal/black_bronze',
+    'tfc:bucket/metal/bronze',
+    'tfc:bucket/metal/brass',
+    'tfc:bucket/metal/copper',
+    'tfc:bucket/metal/gold',
+    'tfc:bucket/metal/nickel',
+    'tfc:bucket/metal/rose_gold',
+    'tfc:bucket/metal/silver',
+    'tfc:bucket/metal/tin',
+    'tfc:bucket/metal/zinc',
+    'tfc:bucket/metal/sterling_silver',
+    'tfc:bucket/metal/wrought_iron',
+    'tfc:bucket/metal/cast_iron',
+    'tfc:bucket/metal/pig_iron',
+    'tfc:bucket/metal/steel',
+    'tfc:bucket/metal/black_steel',
+    'tfc:bucket/metal/blue_steel',
+    'tfc:bucket/metal/red_steel'
 ];
 
 /**
@@ -993,6 +1015,18 @@ global.TFC_MILKS = [
     {id: 'firmalife:yak_milk'},
     {id: 'firmalife:goat_milk'},
     {id: 'firmalife:coconut_milk'},
+];
+
+global.TFC_ALCOHOL = [
+    {id: 'tfc:beer'},
+    {id: 'tfc:cider'},
+    {id: 'tfc:rum'},
+    {id: 'tfc:sake'},
+    {id: 'tfc:vodka'},
+    {id: 'tfc:whiskey'},
+    {id: 'tfc:corn_whiskey'},
+    {id: 'tfc:rye_whiskey'},
+    {id: 'firmalife:mead'},
 ];
 
 global.TFC_MAGMA_BLOCKS = [

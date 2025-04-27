@@ -1,4 +1,7 @@
 const registerTFGItemTags = (event) => {
+
+	registerTFGTrimTags(event)
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
@@ -11,6 +14,16 @@ const registerTFGItemTags = (event) => {
 	
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
+
+	//Tools
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/rose_gold')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/sterling_silver')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/invar')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/tin_alloy')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/cupronickel')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/magnalium')
 
 	// #region Paper from wood
 
@@ -29,8 +42,16 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:wax', 'tfg:conifer_rosin')
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
-
 	// #endregion
+
+	//#region Cloth & String
+    event.add('forge:cloth', 'tfg:phantom_silk')
+    event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
+    event.add('tfc:sewing_light_cloth', 'tfg:phantom_silk')
+    event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
+    event.add('forge:string', 'tfg:phantom_thread')
+    event.add('forge:string', 'tfg:polycaprolactam_string')
+	//#endregion
 
 	// #region Medicines
 
@@ -56,23 +77,29 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:speed_ingredients', 'firmalife:raw_honey')
 
 	event.add('tfg:slowness_ingredients', 'tfc:plant/marigold')
+	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_red')
+	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_white')
+	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_yellow')
 
 	event.add('tfg:weakness_ingredients', 'tfc:plant/laminaria')
+	event.add('tfg:weakness_ingredients', 'tfc:plant/sea_palm')
+	event.add('tfg:weakness_ingredients', 'tfc:plant/sea_lavender')
 
-	event.add('tfg:haste_ingredients', 'minecraft:sugar')
-	event.add('tfg:haste_ingredients', 'afc:birch_sugar')
-	event.add('tfg:haste_ingredients', 'afc:maple_sugar')
+	event.add('tfg:haste_ingredients', '#tfg:sugars')
 
 	event.add('tfg:water_breathing_ingredients', 'tfc:powder/saltpeter')
 	event.add('tfg:water_breathing_ingredients', 'tfc:powder/charcoal')
 
 	event.add('tfg:night_vision_ingredients', 'tfc:food/carrot')
+	event.add('tfg:night_vision_ingredients', 'beneath:gleamflower')
 
 	event.add('tfg:invisibility_ingredients', 'tfc:plant/calendula')
+	event.add('tfg:absorption_ingredients', 'beneath:burpflower')
 
 	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/cattail')
 	event.add('tfg:fire_resistance_ingredients', 'tfc:plant/meads_milkweed')
 	event.add('tfg:fire_resistance_ingredients', 'firmalife:plant/bay_laurel')
+	event.add('tfg:fire_resistance_ingredients', 'beneath:ghost_pepper')
 
 	event.add('tfg:resistance_ingredients', 'tfc:plant/hibiscus')
 	event.add('tfg:resistance_ingredients', 'gtceu:calcium_dust')
@@ -81,6 +108,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:instant_health_ingredients', 'tfc:plant/artists_conk')
 
 	event.add('tfg:absorption_ingredients', 'tfc:plant/poppy')
+	event.add('tfg:invisibility_ingredients', 'tfc:plant/snapdragon_pink')
 
 	event.add('tfg:luck_ingredients', 'tfc:plant/goldenrod')
 	event.add('tfg:luck_ingredients', 'tfc:plant/heather')
@@ -90,6 +118,16 @@ const registerTFGItemTags = (event) => {
 	global.AIRCRAFT_UPGRADES.forEach(value => {
 		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
 	})
+
+	// #endregion
+
+	// Universal Circuits
+
+		global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+			event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
+			})
+
+	// #endregion
 
 	// #region 0.7.19 -> 0.9 conversion
 
@@ -225,14 +263,20 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_pot', 'tfg:latex')
 	event.add('tfc:usable_in_barrel', 'tfg:latex')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfg:latex')
+    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:latex')
 
 	event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
 	event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfg:vulcanized_latex')
+    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:vulcanized_latex')
 
 	event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
+    event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
+    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
 }
 
 
