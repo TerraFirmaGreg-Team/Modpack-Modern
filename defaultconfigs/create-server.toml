@@ -130,7 +130,7 @@
 		#.
 		#Game ticks required for a Fan-based processing recipe to take effect.
 		#Range: > 0
-		fanProcessingTime = 3200
+		fanProcessingTime = 400
 
 	#.
 	#Moving Contraptions
