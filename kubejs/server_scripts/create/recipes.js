@@ -267,14 +267,14 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
 		C: '#forge:rods/black_steel',
-		D: '#forge:gears/steel',
+		D: '#forge:small_gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
 		G: '#forge:tools/screwdrivers',
 	}).id('tfg:create/shaped/steam_engine')
 
 	event.recipes.gtceu.assembler('tfg:create/steam_engine')
-		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:gears/steel', '#forge:storage_blocks/copper')
+		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:small_gears/steel', '#forge:storage_blocks/copper')
 		.circuit(3)
 		.itemOutputs('create:steam_engine')
 		.duration(200)
