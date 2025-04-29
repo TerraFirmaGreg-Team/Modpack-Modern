@@ -1,0 +1,20 @@
+{
+    "damage": 4,
+    "items": [
+        "tfc:food/cabbage",
+        "tfc:food/garlic",
+        "tfc:food/green_bell_pepper",
+        "tfc:food/red_bell_pepper",
+        "tfc:food/yellow_bell_pepper",
+        "tfc:food/onion",
+        "tfc:food/potato",
+        "tfc:food/tomato",
+        "beneath:ghost_pepper"
+    ],
+    "knockback": 0.3,
+    "render_mode": {
+        "type": "create:tumble"
+    },
+    "sound_pitch": 1.1,
+    "velocity_multiplier": 1.45
+}
