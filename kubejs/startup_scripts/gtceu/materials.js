@@ -292,7 +292,6 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.RoseGold.setMaterialARGB(0xFCE4D8)
 	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xAB675A)
 
-	//const $AdAstraItems = Java.loadClass('earth.terrarium.adastra.common.registry.ModItems')
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>
 	{

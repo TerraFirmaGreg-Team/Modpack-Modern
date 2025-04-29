@@ -315,9 +315,6 @@ const registerMinecraftRecipes = (event) => {
 
     //#endregion
 
-
-	//#endregion
-
 	//#region Выход: Компаратор
 
 	// Компаратор

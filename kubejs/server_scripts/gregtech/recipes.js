@@ -610,15 +610,6 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 
-	// #region fix centrifuge recipes for colored steel
-
-	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__red_steel'}, 'gtceu:sterling_silver_dust', 'gtceu:rose_gold_dust')
-	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__red_steel'}, 'gtceu:bismuth_bronze_dust', 'gtceu:brass_dust')
-	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__blue_steel'}, 'gtceu:rose_gold_dust', 'gtceu:sterling_silver_dust')
-	event.replaceOutput({id: 'gtceu:centrifuge/decomposition_centrifuging__blue_steel'}, 'gtceu:brass_dust', 'gtceu:bismuth_bronze_dust')
-	
-	// #endregion
-
 	// #region Move MV superconductor to early HV instead of post-vac freezer
 
 	event.remove({ id: 'gtceu:shaped/hv_chemical_bath' })
