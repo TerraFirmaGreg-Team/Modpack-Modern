@@ -21,13 +21,6 @@
 	#Range: 1.0 ~ 3.4028234663852886E38
 	filterItemRenderDistance = 10.0
 	#.
-	#Show kinetic debug information on blocks while the F3-Menu is open.
-	enableRainbowDebug = false
-	#.
-	#The maximum amount of blocks for which to try and calculate dynamic contraption lighting. Decrease if large contraption cause too much lag
-	#Range: > 0
-	maximumContraptionLightVolume = 16384
-	#.
 	#Choose the menu row that the Create config button appears on in the main menu
 	#Set to 0 to disable the button altogether
 	#Range: 0 ~ 4
@@ -100,29 +93,6 @@
 		customBorderBotOverlay = 1344798847
 
 	#.
-	#Settings for the Placement Assist
-	[client.placementAssist]
-		#.
-		#What indicator should be used when showing where the assisted placement ends up relative to your crosshair
-		#Choose 'NONE' to disable the Indicator altogether
-		#Allowed Values: TEXTURE, TRIANGLE, NONE
-		indicatorType = "TEXTURE"
-		#.
-		#Change the size of the Indicator by this multiplier
-		#Range: 0.0 ~ 3.4028234663852886E38
-		indicatorScale = 1.0
-
-	#.
-	#Ponder settings
-	[client.ponder]
-		#.
-		#Slow down a ponder scene whenever there is text on screen.
-		comfyReading = false
-		#.
-		#Show additional info in the ponder view and reload scene scripts more frequently.
-		editingMode = false
-
-	#.
 	#Sound settings
 	[client.sound]
 		#.
@@ -146,4 +116,18 @@
 		#.
 		#Additionally display materials of a Rail Network while f3 debug mode is active
 		showExtendedTrackGraphOnF3 = false
+		#.
+		#Display Track Networks and Trains on supported map mods
+		showTrainMapOverlay = true
+		#.
+		#Track Network Color on maps
+		#Allowed Values: RED, GREY, WHITE
+		trainMapColorTheme = "RED"
+
+	#.
+	#Mod Integration and JEI
+	[client.jeiIntegration]
+		#.
+		#Whether to auto-update the JEI search when searching in the stock keeper UI
+		syncJeiSearch = true
 

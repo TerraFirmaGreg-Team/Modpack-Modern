@@ -8,12 +8,10 @@ migrateCopycatsOnInitialize = false
 #.
 #Enable/disable features. Values on server override clients
 [features]
-	bamboo_window = true
 	item_silo = true
 	inverted_clutch = true
 	empty_fan_catalyst = false
 	parallel_gearbox = false
-	cherry_window = true
 	centrifugal_clutch = true
 	copycat_slab = true
 	overstress_clutch = true
