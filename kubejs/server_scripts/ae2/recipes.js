@@ -263,6 +263,16 @@ const registerAE2Recipes = (event) => {
 		D: '#forge:plates/titanium',
 	}).id('tfg:crafting/wireless_booster')
 
+    event.shaped('ae2:wireless_booster', [
+        'ABC',
+        'DDD',
+    ], {
+        A: '#forge:dusts/fluix',
+        B: '#forge:gems/certus_quartz',
+        C: '#forge:plates/ender_pearl',
+        D: 'minecraft:shulker_shell',
+    }).id('tfg:crafting/wireless_booster_shulker')
+
 	// Memory Card
 	event.shaped('ae2:memory_card', [
 		'ABB',
