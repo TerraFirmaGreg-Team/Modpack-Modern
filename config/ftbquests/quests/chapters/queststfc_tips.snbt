@@ -9,8 +9,8 @@
 	quest_links: [{
 		id: "1AD1F9822B738105"
 		linked_quest: "2E36E5755B2F551C"
-		x: 4.0d
-		y: 6.0d
+		x: 6.0d
+		y: 5.0d
 	}]
 	quests: [
 		{
@@ -2360,7 +2360,7 @@
 			]
 			title: "{quests.tfg_tips.lamps.title}"
 			x: -5.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -2395,7 +2395,7 @@
 			]
 			title: "{quests.tfg_tips.lava_lamp.title}"
 			x: -5.0d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2416,7 +2416,7 @@
 			}]
 			title: "{quests.tfg_tips.creosote.title}"
 			x: -6.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2437,7 +2437,7 @@
 			}]
 			title: "{quests.tfg_tips.olive_oil.title}"
 			x: -4.0d
-			y: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -2472,7 +2472,7 @@
 			]
 			title: "{quests.tfg_tips.glass_blocks.title}"
 			x: -3.0d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3275,8 +3275,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: -9.5d
-			y: 4.5d
+			x: -10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3296,11 +3296,11 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.filters.title}"
-			x: -9.5d
-			y: 5.5d
+			x: -10.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["4E2C1CAD883EB032"]
+			dependencies: ["275C8EA942AB49DD"]
 			description: ["{quests.tfg_tips.interplanar_projector.desc}"]
 			id: "3952D56556B35FDB"
 			subtitle: "{quests.tfg_tips.interplanar_projector.subtitle}"
@@ -3316,8 +3316,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -9.5d
-			y: 6.5d
+			x: -10.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -3524,7 +3524,7 @@
 			}]
 			title: "{quests.tfg_tips.tallow.title}"
 			x: -6.5d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -4710,7 +4710,7 @@
 				type: "item"
 			}]
 			title: "GregTech Storage"
-			x: 5.0d
+			x: 6.0d
 			y: 7.0d
 		}
 		{
@@ -4727,7 +4727,7 @@
 				type: "item"
 			}]
 			title: "Tape for Crate"
-			x: 5.0d
+			x: 6.0d
 			y: 8.0d
 		}
 	]

@@ -1,0 +1,9 @@
+{
+	"asset_name": "gold_tfc",
+	"description": {
+		"color": "#ede65b",
+		"translate": "trim_material.tfc.gold_tfc"
+	},
+	"ingredient": "create:golden_sheet",
+	"item_model_index": 0.164
+}

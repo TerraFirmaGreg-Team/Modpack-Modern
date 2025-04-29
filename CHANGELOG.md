@@ -2,44 +2,80 @@
 
 ## [Unreleased]
 ### Changes
-- Fixed kaolin clay not generating in the overworld
-- Changed some quests based on feedback
-- Added recipes for digger helmet upgrades
-- Updated field guide for 0.9 (oosyrag)
-- Added speed boost to nanosuit leggings (SverhRazum-Nah)
-- Updated max capacity of small vessel and crucible to be multiples of 144 (oosyrag)
-- You can no longer use a blowpipe to hold hot ingots, but tongs have been buffed 6x instead
-- Added a temporary fix for the ULS-MV millstones/crushing wheels voiding poor raw ores
-- Fixed a duping exploit involving metal plated blocks
-- Fixed some recipes that were using the wrong wrench tag
-- Fixed mining machines not working
-- Removed recipes for firmalife sprinklers. Use gt pipes instead, those can go through sprinkler walls now, and put your sprinklers on drums/fluid tanks/barrels
-- Buffed the mixer glowstone recipe
-- Nerfed kapok growth speed a little
-- Added recipes to turn more things into biomass
-- Added recipe to turn saplings into sticks
-- Changed mud brick recipes to not require mortar any more
-- Fixed not being able to pick up spring water or put it in a mixing bowl
-- Buffed hot or not insulation items by x3
-- Nerfed rotation speed controller recipe
-- Now you can put construction wands on tool racks
-- Buffed nether mob loot tables
-- The overworld graphite vein now spawns in every stone type
-- Granitic/basaltic mineral sand is now usable for iron in primitive age
-- Fixed butchery knives missing anvil recipes
-- Added recipes to craft GT's marble blocks
-- Added assembler recipes for create deco's bricks, and made vanilla bricks consistent (4 instead of 1 per craft)
-- Doubled the amount of train tracks you get per craft
-- Fixed red alloy/tin alloy double ingots not needing to be heated for anvil recipes
-- Long distance item/fluid pipes now need HV
-- Kaolin patches now spawn less often in lush cave biomes
-- You can no longer pick up regular ice with a saw to prevent moving around water sources, but you can craft packed ice instead if you need to cool off
-- Hid the xp bar because xp isn't used for anything
-- Fixed visual workbench not working with tfc workbenches
-- Removed adjustable chain gearshift and half of create:connected because they let you get around greate's restrictions
-- Added recipe for vanilla campfire for people who like smoke particles
-- Removed some more duplicate recipes for vanilla items
-- Hid some more things in JEI that aren't craftable
+- Removed Caelum + TFC Caelum because they were causing crashes for MacOS and other graphics issues, but you can re-add them if you'd like
+- Added recipe to separate fertilizer into pure sources, and mix them back together. (Redeix)
+- Added recipes to sew hides together and cut them apart. (Redeix)
+- Update CarryOn so now it works with all TFC chests
+- Overhauled the TFG Ores section in the field guide, and it's now 100% accurate again!
+- Large cogwheels are now cheaper
+- Added recycling recipes for ceramic molds, large vessels, casting channels and tables
+- Fixed issue where the speed buff from Aged Rum was being removed
+- Fixed speed of bulk washing
+- Lowered SU requirements of some more Create machines
+- Reduced how many sticks were being placed in the nether
+
+## [0.9.2]
+### Changes
+- Fixed mining machines not working.
+- Fixed kaolin clay not generating in the overworld.
+- Updated field guide for 0.9 (oosyrag).
+- Added speed boost to nanosuit leggings (SverhRazum-Nah).
+- Updated max capacity of small vessel and crucible to be multiples of 144 (oosyrag).
+- Added support for more armor trims from gems (Redeix).
+- Added fishing nets (Redeix).
+- Added more cloth alternatives (Redeix).
+- Fixed milk curdling and olive oil recipes to be consistent with barrels/vats (TomPlop).
+- Added universal circuits (from monifactory) for easier ae2 pattern upgrading (TomPlop).
+- Added brine and vinegar recipes to GT machines (TomPlop).
+- Increased Astikor Carts item size limit (Redeix).
+- Changed some quests based on feedback.
+- Added recipes for digger helmet upgrades.
+- You can no longer use a blowpipe to hold hot ingots, but tongs have been buffed 6x instead.
+- You can no longer pick up regular ice with a saw to prevent moving around water sources, but you can craft packed ice instead if you need to cool off.
+- Added a temporary fix for the ULS-MV millstones/crushing wheels voiding poor raw ores.
+- Added a temporary fix for the mechanical mixer needing a programmed circuit item to work (craft them out of sticks).
+- Fixed a duping exploit involving metal plated blocks.
+- Fixed some recipes that were using the wrong wrench tag.
+- Added an earlier way to get paracetamol (cures gregtech hazards).
+- Removed recipes for firmalife sprinklers. Use GT pipes instead, those count as greenhouse walls now, and put your sprinklers on drums/fluid tanks/barrels.
+- Buffed the mixer glowstone recipe.
+- Nerfed kapok growth speed a little.
+- Added recipes to turn more things into biomass.
+- Added recipe to turn saplings into sticks.
+- Changed mud brick recipes to not require mortar any more.
+- Fixed not being able to pick up spring water or put it in a mixing bowl.
+- Changed rotation speed controller recipe.
+- Now you can put many more things on tool racks.
+- Buffed some nether mob loot tables.
+- Buffed piglin bartering table.
+- Buffed string from cobwebs, TFC shears now work on them too.
+- The overworld graphite vein now spawns in every stone type.
+- Granitic/basaltic mineral sand is now usable for iron in primitive age.
+- Fixed butchery knives missing anvil recipes.
+- Added recipes to craft GT's marble blocks.
+- Added assembler recipes for create deco's bricks, and made vanilla bricks consistent (4 instead of 1 per craft).
+- Doubled the amount of train tracks you get per craft.
+- Fixed red alloy/tin alloy double ingots not needing to be heated for anvil recipes.
+- Long distance item/fluid pipes now need HV.
+- Kaolin patches now spawn less often in lush cave biomes.
+- Hid the xp bar because xp isn't used for anything.
+- Fixed visual workbench not working with tfc workbenches.
+- Removed adjustable chain gearshift and half of create:connected because they let you get around greate's restrictions.
+- Added recipe for vanilla campfire for people who like smoke particles.
+- Fixed AoE tools in bastion chests not having the AoE property.
+- Fixed various decorative glass block/pane recipes to be consistent.
+- Bricks and flagstones now use a cutter instead of an assembler.
+- Slimeballs now smelt into glue.
+- Removed some more duplicate recipes for vanilla items.
+- Hid some more things in JEI that aren't craftable.
+- Added fishing nets in many tiers for scooping fishies.
+- Added nylon string and fabric.
+- Added phantom string and fabric, created from phantom membranes--Replacing them in recipes
+- Added support for armor trims, fixed some broken textures, added a bunch of materials, and made a helper function.
+- Added handcart recipe.
+- Allowed more blocks to be used as oven, forge, and bloomery insulation.
+- Fixed lang error with treated wood planks recipe.
+- Fixed bug with mmc package.
 
 ## [0.9.1] - 18.04.2025
 ### Changes

@@ -11,12 +11,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/fire_clay",
-      "text": "Огнеупорная глина изготавливается из порошка $(l:tfg_ores/normal_graphite)графита$(), измельчённого в $(l:mechanics/quern)жернове$(), а также порошка $(l:tfg_ores/surface_kaolin#powder)каолинита$()"
+      "text": "Огнеупорная глина изготавливается из порошка $(l:tfg_ores/earth_vein_index#normal_graphite)графита$(), измельчённого в $(l:mechanics/quern)жернове$(), а также порошка $(l:tfg_ores/surface_kaolin#powder)каолинита$()"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/kaolin_clay",
-      "text": "Порошок каолинита получают путем нагревания $(l:tfg_ores/surface_kaolin#powder)каолиновой глины$(). Однако процесс не идеален, и только 20% глины превращается в порошок!"
+      "text": "Порошок каолинита получают путем нагревания $(l:mechanics/surface_kaolin#powder)каолиновой глины$(). Однако процесс не идеален, и только 20% глины превращается в порошок!"
     },
     {
       "type": "tfc:knapping_recipe",

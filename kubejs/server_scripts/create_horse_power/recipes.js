@@ -11,7 +11,7 @@ function registerCreateHorsePowerBlockRecipes(event) {
 			'CCC'
 		], {
 			A: '#forge:fences/wooden',
-			B: '#forge:gears/bronze',
+			B: '#forge:small_gears/bronze',
 			C: '#tfc:rock/raw',
 			D: '#forge:tools/hammers',
 			E: '#tfc:chisels'
@@ -25,7 +25,7 @@ function registerCreateHorsePowerBlockRecipes(event) {
 			'CCC'
 		], {
 			A: '#forge:fences/wooden',
-			B: '#forge:gears/bismuth_bronze',
+			B: '#forge:small_gears/bismuth_bronze',
 			C: '#tfc:rock/raw',
 			D: '#forge:tools/hammers',
 			E: '#tfc:chisels'
@@ -39,7 +39,7 @@ function registerCreateHorsePowerBlockRecipes(event) {
 			'CCC'
 		], {
 			A: '#forge:fences/wooden',
-			B: '#forge:gears/black_bronze',
+			B: '#forge:small_gears/black_bronze',
 			C: '#tfc:rock/raw',
 			D: '#forge:tools/hammers',
 			E: '#tfc:chisels'

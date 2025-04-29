@@ -46,7 +46,6 @@ function registerTFGRockRecipes(event) {
 		event.recipes.gtceu.cutter(`${x.loose}_to_${x.brick}`.replace(/:/g, '_'))
 			.itemInputs(x.loose)
 			.itemOutputs(x.brick)
-			.circuit(1)
 			.duration(40)
 			.EUt(8)
 	})

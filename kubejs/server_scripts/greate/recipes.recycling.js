@@ -76,25 +76,25 @@ function registerGreateRecyclingRecipes(event) {
 		event.shapeless('#forge:small_gears/wrought_iron', ['greate:steel_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:steel_shaft',
-		event.shapeless('#forge:gears/wrought_iron', ['greate:large_steel_cogwheel']))
+		event.shapeless('2x #forge:small_gears/wrought_iron', ['greate:large_steel_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:aluminium_shaft',
 		event.shapeless('#forge:small_gears/steel', ['greate:aluminium_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:aluminium_shaft',
-		event.shapeless('#forge:gears/steel', ['greate:large_aluminium_cogwheel']))
+		event.shapeless('2x #forge:small_gears/steel', ['greate:large_aluminium_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:stainless_steel_shaft',
 		event.shapeless('#forge:small_gears/aluminium', ['greate:stainless_steel_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:stainless_steel_shaft',
-		event.shapeless('#forge:gears/aluminium', ['greate:large_stainless_steel_cogwheel']))
+		event.shapeless('2x #forge:small_gears/aluminium', ['greate:large_stainless_steel_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:titanium_shaft',
 		event.shapeless('#forge:small_gears/stainless_steel', ['greate:titanium_cogwheel']))
 
 	event.recipes.tfc.extra_products_shapeless_crafting('greate:titanium_shaft',
-		event.shapeless('#forge:gears/stainless_steel', ['greate:large_titanium_cogwheel']))
+		event.shapeless('2x #forge:small_gears/stainless_steel', ['greate:large_titanium_cogwheel']))
 
 	// #endregion
 
