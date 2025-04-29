@@ -469,4 +469,35 @@ function registerTFCMachineRecipes(event) {
 
 	// Jute Fiber
 	generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+
+	// Ceramic Recycling
+	event.recipes.gtceu.macerator('tfg:sherd_to_brick_dust')
+		.itemInputs('firmalife:pottery_sherd')
+		.itemOutputs('5x #forge:dusts/brick')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:ceramic_molds')
+		.itemInputs('#tfc:fired_molds')
+		.itemOutputs('2x #forge:dusts/brick')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:large_vessels')
+		.itemInputs('#tfc:fired_large_vessels')
+		.itemOutputs('5x #forge:dusts/brick')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:casting_channel')
+		.itemInputs('tfcchannelcasting:channel')
+		.itemOutputs('1x #forge:dusts/brick')
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:mold_table')
+		.itemInputs('tfcchannelcasting:mold_table')
+		.itemOutputs('5x #forge:dusts/brick')
+		.duration(20)
+		.EUt(2)
 }
