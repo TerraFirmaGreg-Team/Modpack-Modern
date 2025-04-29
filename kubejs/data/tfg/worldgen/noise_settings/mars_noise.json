@@ -5,7 +5,7 @@
 	"ore_veins_enabled": false,
 	"legacy_random_source": false,
 	"default_block": {
-		"Name": "tfg:raw_syenite"
+		"Name": "tfg:rock/raw_syenite"
 	},
 	"default_fluid": {
 		"Name": "minecraft:air"
@@ -311,7 +311,7 @@
 							"then_run": {
 								"type": "minecraft:block",
 								"result_state": {
-									"Name": "tfg:hardened_syenite"
+									"Name": "tfg:rock/hardened_syenite"
 								}
 							}
 						},
@@ -569,7 +569,7 @@
 				"if_true": {
 					"type": "minecraft:biome",
 					"biome_is": [
-						"tfg:lunar_diorite_delta"
+						"tfg:moon/lunar_diorite_delta"
 					]
 				},
 				"then_run": {

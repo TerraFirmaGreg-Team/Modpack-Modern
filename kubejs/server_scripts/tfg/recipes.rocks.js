@@ -114,8 +114,8 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black' },
 		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink' },
 		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown' },
-		{ raw: 'tfg:raw_anorthosite', hammered: 'ad_astra:moon_cobblestone' },
-		{ raw: 'tfg:hardened_anorthosite', hammered: 'ad_astra:moon_cobblestone' },
+		{ raw: 'tfg:rock/raw_anorthosite', hammered: 'ad_astra:moon_cobblestone' },
+		{ raw: 'tfg:rock/hardened_anorthosite', hammered: 'ad_astra:moon_cobblestone' },
 		{ raw: 'ad_astra:moon_cobblestone', hammered: 'tfc:sand/white' }
 	]
 
@@ -262,20 +262,26 @@ function registerTFGRockRecipes(event) {
 			.EUt(7)
 	})
 
-	event.recipes.gtceu.rock_breaker('tfg:raw_anorthosite')
-		.notConsumable('tfg:raw_anorthosite')
-		.itemOutputs('tfg:raw_anorthosite')
+	event.recipes.gtceu.rock_breaker('tfg:anorthosite')
+		.notConsumable('tfg:rock/raw_anorthosite')
+		.itemOutputs('tfg:rock/raw_anorthosite')
 		.duration(16)
 		.EUt(7)
 		.dimension('ad_astra:moon')
 
-	event.recipes.gtceu.rock_breaker('tfg:raw_basanite')
-		.notConsumable('tfg:raw_basanite')
-		.itemOutputs('tfg:raw_basanite')
+	event.recipes.gtceu.rock_breaker('tfg:basanite')
+		.notConsumable('tfg:rock/raw_basanite')
+		.itemOutputs('tfg:rock/raw_basanite')
 		.duration(16)
 		.EUt(7)
 		.dimension('ad_astra:moon')
 
+	event.recipes.gtceu.rock_breaker('tfg:syenite')
+		.notConsumable('tfg:rock/raw_syenite')
+		.itemOutputs('tfg:rock/raw_syenite')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:mars')
 
 	// #endregion
 }

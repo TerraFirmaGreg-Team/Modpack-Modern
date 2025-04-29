@@ -56,7 +56,7 @@ const registerTFGItems = (event) => {
     event.create('tfg:brick/syenite')
         .translationKey('item.tfg.brick.syenite')
 
-    event.create('tfg:dust/anorthosite_dust')
+    event.create('tfg:dust/anorthosite')
         .translationKey('item.tfg.dust.anorthosite')
 	
     event.create('tfg:dust/syenite')
