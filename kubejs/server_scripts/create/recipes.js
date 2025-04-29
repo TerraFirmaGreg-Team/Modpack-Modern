@@ -49,7 +49,11 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/materials/bound_cardboard_block'},
 			{ id: 'create:crafting/materials/cardboard_from_block'},
 			{ id: 'create:crafting/materials/cardboard_from_bound_block'},
-			{ id: 'create/item_application/bound_cardboard'},
+			{ id: 'create:item_application/bound_cardboard_inworld'},
+			{ id: 'create:crafting/logistics/redstone_requester_clear'},
+			{ id: 'create:crafting/logistics/stock_link_clear'},
+			{ id: 'create:crafting/logistics/stock_ticker_clear'},
+			{ id: 'create:crafting/logistics/factory_gauge_clear'},
 			{ output: '#create:table_cloths'}, // Gotta do this to not purge the table cloth reset recipes
 			{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
@@ -1514,7 +1518,7 @@ const registerCreateRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glue', 100))
 		.circuit(5)
 		.itemOutputs('2x create:cardboard')
-		.duration(100)
+		.duration(200)
 		.EUt(7)
 
 	event.shaped('create:packager', [
@@ -1565,12 +1569,77 @@ const registerCreateRecipes = (event) => {
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('create:package_frogport')
 		.duration(200)
-		.EUt(7)
+		.EUt(20)
 
 	event.shapeless('create:white_postbox', [
 		'create:track_signal',
 		'gtceu:wood_crate'
 	]).id('create:crafting/shapeless/white_postbox')
+
+	event.recipes.gtceu.laser_engraver('create:transmitter')
+		.itemInputs('#forge:double_plates/red_alloy')
+		.notConsumable('#forge:lenses/pink')
+		.itemOutputs('create:transmitter')
+		.duration(1200)
+		.EUt(30)
+
+	event.shaped('create:stock_link', [
+		'FEB',
+		'DAE',
+		'GC '
+	], {
+		A: 'create:andesite_casing',
+		B: 'gtceu:item_detector_cover',
+		C: '#gtceu:circuits/lv',
+		D: 'create:transmitter',
+		E: '#forge:screws/steel',
+		F: '#forge:tools/wrenches',
+		G: '#forge:tools/screwdrivers'
+	}).id('tfg:create/shaped/stock_link')
+
+	event.recipes.gtceu.assembler('tfg:create/stock_link')
+		.itemInputs('create:andesite_casing', 'gtceu:item_detector_cover', '#gtceu:circuits/lv', 'create:transmitter')
+		.circuit(1)
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 72))
+		.itemOutputs('create:stock_link')
+		.duration(150)
+		.EUt(16)
+
+	event.shaped('create:stock_ticker', [
+		' A ',
+		'ABA',
+		'CDC'
+	], {
+		A: '#forge:glass_panes',
+		B: 'create:stock_link',
+		C: '#gtceu:resistors',
+		D: '#forge:plates/wrought_iron'
+	}).id('tfg:create/shaped/stock_ticker')
+
+	event.shaped('create:redstone_requester', [
+		' A ',
+		'ABA',
+		'CDC'
+	], {
+		A: '#forge:plates/wrought_iron',
+		B: 'create:stock_link',
+		C: '#gtceu:circuits/ulv',
+		D: '#forge:plates/red_alloy'
+	}).id('tfg:create/shaped/redstone_requester')
+
+	event.shaped('2x create:factory_gauge', [
+		'CAC',
+		'DBE',
+		' C '
+	], {
+		A: 'tfc:lens',
+		B: 'create:stock_link',
+		C: '#forge:foils/annealed_copper',
+		D: '#gtceu:diodes',
+		E: 'create:precision_mechanism'
+	}).id('tfg:create/shaped/factory_gauge')
+	
+
 	//#endregion
 
 	//#region Decoration blocks
@@ -1698,7 +1767,7 @@ const registerCreateRecipes = (event) => {
 		'DAD',
 		' E '
 	], {
-		A: 'create:brass_casing',
+		A: 'create:andesite_casing',
 		B: '#gtceu:circuits/ulv',
 		C: '#forge:small_springs',
 		D: '#forge:plates/wrought_iron',
