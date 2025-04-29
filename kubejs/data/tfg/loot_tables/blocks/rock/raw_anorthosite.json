@@ -10,7 +10,7 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"name": "tfg:raw_anorthosite",
+							"name": "tfg:rock/raw_anorthosite",
 							"conditions": [
 								{
 									"condition": "tfc:is_isolated"
@@ -19,7 +19,7 @@
 						},
 						{
 							"type": "minecraft:item",
-							"name": "tfg:loose_anorthosite",
+							"name": "tfg:loose/anorthosite",
 							"functions": [
 								{
 									"function": "minecraft:set_count",

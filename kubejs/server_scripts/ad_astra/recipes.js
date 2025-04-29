@@ -122,7 +122,7 @@ const registerAdAstraRecipes = (event) => {
 	], {
 		A: 'gtceu:tempered_glass',
 		B: 'gtceu:carbon_fiber_plate',
-		C: '#forge:plates/polycaprolactam',
+		C: 'tfg:polycaprolactam_fabric',
 		D: '#forge:small_fluid_pipes/polyethylene'
 	}).id('tfg:space_helmet')
 
@@ -145,7 +145,7 @@ const registerAdAstraRecipes = (event) => {
 	], {
 		A: 'ad_astra_giselle_addon:oxygen_can',
 		B: 'gtceu:carbon_fiber_plate',
-		C: '#forge:plates/polycaprolactam',
+		C: 'tfg:polycaprolactam_fabric',
 		D: 'ad_astra:oxygen_gear'
 	}).id('tfg:space_suit')
 
@@ -168,7 +168,7 @@ const registerAdAstraRecipes = (event) => {
 	], {
 		A: 'gtceu:hv_electric_motor',
 		B: 'gtceu:carbon_fiber_plate',
-		C: '#forge:plates/polycaprolactam'
+		C: 'tfg:polycaprolactam_fabric'
 	}).id('tfg:space_pants')
 
 	event.shaped('ad_astra:netherite_space_pants', [
@@ -188,7 +188,7 @@ const registerAdAstraRecipes = (event) => {
 		'B B'
 	], {
 		B: 'gtceu:carbon_fiber_plate',
-		C: '#forge:plates/polycaprolactam'
+		C: 'tfg:polycaprolactam_fabric'
 	}).id('tfg:space_boots')
 
 	event.shaped('ad_astra:netherite_space_boots', [
@@ -221,7 +221,7 @@ const registerAdAstraRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:foils/polyethylene',
+		A: '#forge:foils/polyphenylene',
 		B: '#forge:tiny_fluid_pipes/polyethylene',
 		C: 'gtceu:aluminium_fluid_cell'
 	}).id('tfg:gas_tank')
@@ -231,7 +231,7 @@ const registerAdAstraRecipes = (event) => {
 		'ACA',
 		'AAA'
 	], {
-		A: '#forge:sheets/polyethylene',
+		A: '#forge:sheets/polyphenylene',
 		B: '#forge:small_fluid_pipes/polyethylene',
 		C: 'gtceu:stainless_steel_fluid_cell'
 	}).id('tfg:large_gas_tank')
@@ -269,26 +269,25 @@ const registerAdAstraRecipes = (event) => {
 		.EUt(480)
 
 	event.shaped('ad_astra:oxygen_distributor', [
-		'ABA',
+		'DBD',
 		'ACA',
-		'DED'
+		'DBD'
 	], {
-		A: '#forge:rotors/stainless_steel',
-		B: 'gtceu:aluminium_fluid_cell',
-		C: 'ad_astra:oxygen_gear',
-		D: 'gtceu:filter_casing',
-		E: 'gtceu:mv_canner'
+		A: '#forge:plates/stainless_steel',
+		B: '#gtceu:circuits/hv',
+		C: 'gtceu:hv_machine_hull',
+		D: 'gtceu:filter_casing'
 	}).id('tfg:oxygen_distributor')
 
 	event.shaped('ad_astra:gravity_normalizer', [
 		'A A',
-		'ABA',
-		'CDC'
+		'CBC',
+		'ADA'
 	], {
 		A: '#forge:rods/magnetic_neodymium',
-		B: 'gtceu:hv_field_generator',
-		C: 'gtceu:stainless_steel_block',
-		D: 'gtceu:hv_polarizer',
+		B: 'gtceu:ev_field_generator',
+		C: '#forge:plates/titanium',
+		D: 'gtceu:ev_polarizer',
 	}).id('tfg:gravity_normalizer')
 
 	event.shaped('ad_astra:oxygen_sensor', [
@@ -308,7 +307,7 @@ const registerAdAstraRecipes = (event) => {
 	], {
 		A: 'gtceu:solar_panel',
 		B: 'minecraft:daylight_detector',
-		C: '#forge:rods/long',
+		C: '#forge:rods/long/aluminium',
 		E: '#gtceu:circuits/mv',
 		F: 'gtceu:mv_machine_hull'
 	}).id('tfg:solar_panel')
@@ -321,7 +320,7 @@ const registerAdAstraRecipes = (event) => {
 		'DBC',
 		'AE '
 	], {
-		A: '#forge:screwdrivers',
+		A: '#forge:tools/screwdrivers',
 		B: '#forge:plates/steel',
 		C: 'gtceu:lv_sensor',
 		D: 'gtceu:computer_monitor_cover',
@@ -341,8 +340,7 @@ const registerAdAstraRecipes = (event) => {
 		B: '#forge:tools/screwdrivers',
 		C: '#forge:plates/iron',
 		D: '#gtceu:circuits/lv'
-	}).damageIngredient('#forge:tools/screwdrivers', '1')
-		.id('tfg:radio')
+	}).id('tfg:radio')
 
 	//#endregion
 
@@ -367,8 +365,8 @@ const registerAdAstraRecipes = (event) => {
 			'4x #forge:plates/stainless_steel',
 			'4x #forge:frames/stainless_steel')
 		.itemOutputs('ad_astra:tier_1_rover')
-		.duration(2000)
-		.EUt(1920)
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion
 
