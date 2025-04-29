@@ -10,7 +10,9 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:loose/deepslate', block: 'minecraft:cobbled_deepslate' },
 		{ loose: 'beneath:blackstone_pebble', block: 'minecraft:blackstone' },
 		{ loose: 'tfg:brick/deepslate', block: '4x minecraft:deepslate_bricks' },
-		{ loose: 'tfg:loose/dripstone', block: 'minecraft:dripstone_block' }
+		{ loose: 'tfg:loose/dripstone', block: 'minecraft:dripstone_block' },
+		{ loose: 'tfg:loose/anorthosite', block: 'ad_astra:moon_cobblestone' },
+		{ loose: 'tfg:loose/syenite', block: 'ad_astra:mars_cobblestone' }
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
@@ -35,7 +37,9 @@ function registerTFGRockRecipes(event) {
 	// loose to bricks
 
 	const LOOSE_TO_BRICKS = [
-		{ loose: 'tfg:loose/deepslate', brick: 'tfg:brick/deepslate' }
+		{ loose: 'tfg:loose/deepslate', brick: 'tfg:brick/deepslate' },
+		{ loose: 'tfg:loose/anorthosite', brick: 'tfg:brick/anorthosite' },
+		{ loose: 'tfg:loose/syenite', brick: 'tfg:brick/syenite' }
 	]
 
 	LOOSE_TO_BRICKS.forEach(x => {
@@ -109,7 +113,10 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'minecraft:cobbled_deepslate', hammered: 'tfc:sand/black' },
 		{ raw: 'minecraft:blackstone', hammered: 'tfc:sand/black' },
 		{ raw: 'beneath:crackrack', hammered: 'tfc:sand/pink' },
-		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown' }
+		{ raw: 'minecraft:dripstone_block', hammered: 'tfc:sand/brown' },
+		{ raw: 'tfg:raw_anorthosite', hammered: 'ad_astra:moon_cobblestone' },
+		{ raw: 'tfg:hardened_anorthosite', hammered: 'ad_astra:moon_cobblestone' },
+		{ raw: 'ad_astra:moon_cobblestone', hammered: 'tfc:sand/white' }
 	]
 
 	HAMMERING.forEach(x => {
@@ -254,6 +261,21 @@ function registerTFGRockRecipes(event) {
 			.duration(16)
 			.EUt(7)
 	})
+
+	event.recipes.gtceu.rock_breaker('tfg:raw_anorthosite')
+		.notConsumable('tfg:raw_anorthosite')
+		.itemOutputs('tfg:raw_anorthosite')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:moon')
+
+	event.recipes.gtceu.rock_breaker('tfg:raw_basanite')
+		.notConsumable('tfg:raw_basanite')
+		.itemOutputs('tfg:raw_basanite')
+		.duration(16)
+		.EUt(7)
+		.dimension('ad_astra:moon')
+
 
 	// #endregion
 }

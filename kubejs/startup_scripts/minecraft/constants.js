@@ -588,7 +588,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:beetroot_soup', 
     'minecraft:cocoa_beans', 
     'minecraft:experience_bottle', 
-    'minecraft:shulker_shell', 
     'minecraft:rabbit_stew',
     'minecraft:recovery_compass', 
     'minecraft:chorus_plant', 

@@ -307,13 +307,13 @@ const registerMinecraftRecipes = (event) => {
 		.duration(50)
 		.EUt(30)
 
-	event.recipes.gtceu.large_chemical_reactor('golden_apple_1')
-		.itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
-		.itemOutputs('minecraft:golden_apple')
-		.duration(50)
-		.EUt(30)
+    event.recipes.gtceu.large_chemical_reactor('golden_apple_1')             
+        .itemInputs('tfc:food/red_apple', '8x #forge:ingots/gold')
+        .itemOutputs('minecraft:golden_apple')
+        .duration(50)
+        .EUt(30)
 
-	//#endregion
+    //#endregion
 
 	//#region Выход: Компаратор
 

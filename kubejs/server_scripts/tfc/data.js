@@ -221,10 +221,22 @@ const registerTFCFoodData = (event) => {
         food.decayModifier(0.6)
     })
 
+    // treasure
+
     event.foodItem('minecraft:enchanted_golden_apple', food => {
-        food.hunger(3)
-        food.fruit(2)
-        food.decayModifier(0.2)
+        food.hunger(10)
+        food.saturation(10)
+        food.fruit(5)
+        food.water(20)
+        food.decayModifier(0)
+    })
+
+    event.foodItem('minecraft:golden_carrot', food => {
+        food.hunger(5)
+        food.saturation(5)
+        food.vegetables(3)
+        food.water(20)
+        food.decayModifier(0)
     })
 
     event.foodItem('minecraft:glow_berries', food => {

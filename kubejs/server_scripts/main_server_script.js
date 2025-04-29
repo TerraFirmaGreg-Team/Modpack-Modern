@@ -4,6 +4,7 @@
  * Событие регистрации предмет-тэгов.
  */
 ServerEvents.tags('item', event => {
+	registerAdAstraItemTags(event)
     registerAdvancedPeripheralsItemTags(event)
     registerAE2ItemTags(event)
     registerAFCItemTags(event)
@@ -38,6 +39,7 @@ ServerEvents.tags('item', event => {
     registerRailWaysItemTags(event)
     registerRnrItemTags(event)
     registerSophisticatedBackpacksItemTags(event)
+    registerSpeciesItemTags(event)
     registerTFCAmbientalItemTags(event)
     registerTFCItemTags(event)
     registerTFCTextileItemTags(event)
@@ -49,6 +51,7 @@ ServerEvents.tags('item', event => {
  * Событие регистрации блок-тэгов.
  */
 ServerEvents.tags('block', event => {
+	registerAdAstraBlockTags(event)
     registerAE2BlockTags(event)
     registerAFCBlockTags(event)
     registerAsticorCartsBlockTags(event)
@@ -72,6 +75,7 @@ ServerEvents.tags('block', event => {
     registerHotOrNotBlockTags(event)
     registerRailWaysBlockTags(event)
     registerSophisticatedBackpacksBlockTags(event)
+    registerSpeciesBlockTags(event)
     registerTFCBlockTags(event)
     registerTFGBlockTags(event)
     registerVintageImprovementsBlockTags(event)
@@ -82,6 +86,7 @@ ServerEvents.tags('block', event => {
  */
 ServerEvents.tags('fluid', event => {
     registerAFCFluidTags(event)
+	registerAdAstraFluidTags(event)
     registerCreateFluidTags(event)
     registerCreateAdditionsFluidTags(event)
     registerGTCEUFluidTags(event)
@@ -96,6 +101,7 @@ ServerEvents.tags('fluid', event => {
  * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
+    registerAdAstraPlacedFeatures(event)
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
     registerTFGPlacedFeatures(event)
@@ -104,6 +110,14 @@ ServerEvents.tags('worldgen/placed_feature', event => {
 ServerEvents.tags('worldgen/biome', event => {
     registerTFCBiomeTags(event)
     registerTFGBiomeTags(event)
+})
+
+ServerEvents.tags('worldgen/biome', event => {
+	registerAdAstraBiomeTags(event)
+})
+
+ServerEvents.tags('entity_type', event => {
+	registerAdAstraEntityTypeTags(event)
 })
 
 /**
@@ -147,11 +161,16 @@ GTCEuServerEvents.oreVeins(event => {
     event.removeAll()
 })
 
+GTCEuServerEvents.bedrockOreVeins(event => {
+    registerGTCEUBedrockOreVeins(event)
+})
+
 /**
  * Событие регистрации рецептов.
  * Срабатывает после инициализации датапаков и тегов.
  */
 ServerEvents.recipes(event => {
+	registerAdAstraRecipes(event)
     registerAdvancedPeripheralsRecipes(event)
     registerAlekishipsRecipes(event)
     registerAE2Recipes(event)
@@ -202,8 +221,8 @@ ServerEvents.recipes(event => {
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
     registerTFCBetterBFRecipes(event)
-    registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
+    registerTFGRecipes(event)
     registerToolBeltRecipes(event)
     registerTreeTapRecipes(event)
     registerVintageImprovementsRecipes(event)

@@ -1,0 +1,155 @@
+{
+	"type": "tfc:cluster_vein",
+	"config": {
+		"rarity": 180,
+		"density": 0.35,
+		"min_y": -10,
+		"max_y": 80,
+		"size": 25,
+		"random_name": "normal_olivine",
+		"biomes": "#tfg:moon_biomes",
+		"blocks": [
+			{
+				"replace": [
+					"tfg:raw_basanite"
+				],
+				"with": [
+					{
+						"block": "gtceu:basanite_olivine_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basanite_diopside_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basanite_enstatite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:basanite_fayalite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:basanite_armalcolite_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_olivine_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_diopside_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:basalt_enstatite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:basalt_fayalite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:basalt_armalcolite_ore",
+						"weight": 20
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_olivine_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_diopside_ore",
+						"weight": 30
+					},
+					{
+						"block": "gtceu:gabbro_enstatite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:gabbro_fayalite_ore",
+						"weight": 20
+					},
+					{
+						"block": "gtceu:gabbro_armalcolite_ore",
+						"weight": 20
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "tfg:buds/small_olivine_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/medium_olivine_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/large_olivine_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/small_diopside_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/medium_diopside_bud",
+					"weight": 12
+				},
+				{
+					"block": "tfg:buds/large_diopside_bud",
+					"weight": 8
+				},
+				{
+					"block": "tfg:buds/small_enstatite_bud",
+					"weight": 9
+				},
+				{
+					"block": "tfg:buds/medium_enstatite_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_enstatite_bud",
+					"weight": 5
+				},
+				{
+					"block": "tfg:buds/small_fayalite_bud",
+					"weight": 9
+				},
+				{
+					"block": "tfg:buds/medium_fayalite_bud",
+					"weight": 7
+				},
+				{
+					"block": "tfg:buds/large_fayalite_bud",
+					"weight": 5
+				},
+				{
+					"block": "gtceu:armalcolite_indicator",
+					"weight": 20
+				}
+			]
+		}
+	}
+}

@@ -1,4 +1,4 @@
-﻿// priority: 0
+// priority: 0
 
 const registerGTCEuTagPrefixes = (event) => {
 

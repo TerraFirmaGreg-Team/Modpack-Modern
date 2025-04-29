@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 40,
+    "targets": [
+      {
+        "state": {
+          "Name": "create:asurine"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "ad_astra:moon_stone_replaceables"
+        }
+      }
+    ]
+  }
+}

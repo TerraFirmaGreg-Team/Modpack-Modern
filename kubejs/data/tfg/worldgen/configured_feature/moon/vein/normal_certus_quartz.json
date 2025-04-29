@@ -1,0 +1,177 @@
+{
+	"type": "tfc:cluster_vein",
+	"biomes": "#tfg:moon_biomes",
+	"config": {
+		"rarity": 200,
+		"density": 0.3,
+		"min_y": -32,
+		"max_y": 100,
+		"size": 40,
+		"random_name": "normal_certus_quartz",
+		"blocks": [
+			{
+				"replace": [
+					"tfc:rock/raw/basalt"
+				],
+				"with": [
+					{
+						"block": "gtceu:basalt_quartzite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:basalt_certus_quartz_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basalt_barite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:basalt_nether_quartz_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_basanite"
+				],
+				"with": [
+					{
+						"block": "gtceu:basanite_quartzite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:basanite_certus_quartz_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:basanite_barite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:basanite_nether_quartz_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/gabbro"
+				],
+				"with": [
+					{
+						"block": "gtceu:gabbro_quartzite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:gabbro_certus_quartz_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:gabbro_barite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:gabbro_nether_quartz_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfg:raw_anorthosite"
+				],
+				"with": [
+					{
+						"block": "gtceu:anorthosite_quartzite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:anorthosite_certus_quartz_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:anorthosite_barite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:anorthosite_nether_quartz_ore",
+						"weight": 30
+					}
+				]
+			},
+			{
+				"replace": [
+					"tfc:rock/raw/diorite"
+				],
+				"with": [
+					{
+						"block": "gtceu:diorite_quartzite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:diorite_certus_quartz_ore",
+						"weight": 50
+					},
+					{
+						"block": "gtceu:diorite_barite_ore",
+						"weight": 10
+					},
+					{
+						"block": "gtceu:diorite_nether_quartz_ore",
+						"weight": 30
+					}
+				]
+			}
+		],
+		"indicator": {
+			"rarity": 15,
+			"depth": 50,
+			"underground_rarity": 40,
+			"underground_count": 200,
+			"blocks": [
+				{
+					"block": "gtceu:barite_indicator",
+					"weight": 10
+				},
+				{
+					"block": "ae2:small_quartz_bud",
+					"weight": 25
+				},
+				{
+					"block": "ae2:medium_quartz_bud",
+					"weight": 15
+				},
+				{
+					"block": "ae2:large_quartz_bud",
+					"weight": 10
+				},
+				{
+					"block": "tfg:buds/small_quartzite_bud",
+					"weight": 5
+				},
+				{
+					"block": "tfg:buds/medium_quartzite_bud",
+					"weight": 3
+				},
+				{
+					"block": "tfg:buds/large_quartzite_bud",
+					"weight": 2
+				},
+				{
+					"block": "tfg:buds/small_nether_quartz_bud",
+					"weight": 18
+				},
+				{
+					"block": "tfg:buds/medium_nether_quartz_bud",
+					"weight": 15
+				},
+				{
+					"block": "tfg:buds/large_nether_quartz_bud",
+					"weight": 12
+				}
+			]
+		}
+	}
+}
