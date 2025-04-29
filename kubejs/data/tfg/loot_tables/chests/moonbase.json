@@ -381,16 +381,6 @@
 				},
 				{
 					"type": "minecraft:item",
-					"name": "ad_astra:earth_globe",
-					"weight": 5
-				},
-				{
-					"type": "minecraft:item",
-					"name": "ad_astra:moon_globe",
-					"weight": 5
-				},
-				{
-					"type": "minecraft:item",
 					"name": "gtceu:fayalite_gem",
 					"weight": 50,
 					"functions": [

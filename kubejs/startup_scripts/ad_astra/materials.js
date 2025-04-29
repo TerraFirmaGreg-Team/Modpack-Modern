@@ -4,7 +4,7 @@ const registerAdAstraMaterials = (event) => {
 
 	// #region moon ores
 
-	event.create('diopside')
+	event.create('tfg:diopside')
 		.gem(2)
 		.components('1x magnesium', '1x calcium', '2x silicon', '6x oxygen')
 		.color(0xb7cca1)
@@ -12,7 +12,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('magnesium', 'magnetite', 'olivine')
 
-	event.create('enstatite')
+	event.create('tfg:enstatite')
 		.gem(2)
 		.components('2x magnesium', '2x silicon', '6x oxygen')
 		.color(0x595813)
@@ -20,7 +20,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'olivine', 'magnetite')
 
-	event.create('fayalite')
+	event.create('tfg:fayalite')
 		.gem(2)
 		.components('2x iron', '1x silicon', '4x oxygen')
 		.color(0x421209)
@@ -28,7 +28,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 		.addOreByproducts('olivine', 'magnetite', 'magnetite')
 
-	event.create('armalcolite')
+	event.create('tfg:armalcolite')
 		.gem(2)
 		.components('1x magnesium', '1x rutile', '1x ilmenite')
 		.color(0x443333)
@@ -43,7 +43,7 @@ const registerAdAstraMaterials = (event) => {
 	// moon
 
 	// TODO: add smelting recipe for this
-	event.create('desh')
+	event.create('ad_astra:desh')
 		.components('2x olivine', '1x rutile', '4x nitrogen')
 		.color(0xd38b4c)
 		.secondaryColor(0xa90936)
@@ -53,7 +53,7 @@ const registerAdAstraMaterials = (event) => {
 	// TODO: still need to balance these
 
 	// mars
-	event.create('ostrum')
+	event.create('ad_astra:ostrum')
 		.components('2x scheelite', '1x hematite', '1x rutile', '4x oxygen')
 		.color(0xbd7980)
 		.secondaryColor(0x543d4a)
@@ -61,7 +61,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 
 	// mercury
-	event.create('calorite')
+	event.create('ad_astra:calorite')
 		.components('2x mercury', '1x tungsten', '1x rhodium', '2x sulfur')
 		.color(0xcf223c)
 		.secondaryColor(0x691533)
@@ -69,7 +69,7 @@ const registerAdAstraMaterials = (event) => {
 		.ore()
 
 	// venus
-	event.create('etrium')
+	event.create('ad_astra:etrium')
 		.components('1x niobium', '1x molybdenum', '1x ruthenium', '3x carbon', '1x monochloramine')
 		.color(0x58b1a1)
 		.secondaryColor(0xbafcf6)

@@ -9,7 +9,7 @@ function registerTFGSpaceBlocks(event) {
 	event.createCustom(`tfg:lunar_warped_roots`, () => new $SproutsBlock($Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 	event.createCustom(`tfg:lunar_sprouts`, () => new $SproutsBlock( $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 
-	event.create('tfg:raw_anorthosite')
+	event.create('tfg:rock/raw_anorthosite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -23,7 +23,7 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:hardened_anorthosite')
+	event.create('tfg:rock/hardened_anorthosite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -37,7 +37,7 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:raw_basanite')
+	event.create('tfg:rock/raw_basanite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -59,7 +59,7 @@ function registerTFGSpaceBlocks(event) {
 
 	// #region Mars blocks
 
-	event.create('tfg:raw_syenite')
+	event.create('tfg:rock/raw_syenite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -73,7 +73,7 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:hardened_syenite')
+	event.create('tfg:rock/hardened_syenite')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
