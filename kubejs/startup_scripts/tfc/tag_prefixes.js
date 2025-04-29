@@ -60,4 +60,25 @@ const registerTFCTagPrefixes = (event) => {
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(ItemGenerationCondition.hasOreProperty)
 		.materialSupplier(() => GTMaterials.Deepslate)
+
+ 	event.create('anorthosite', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:raw_anorthosite').defaultBlockState())
+		.baseModelLocation('ad_astra:block/moon_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('basanite', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:raw_basanite').defaultBlockState())
+		.baseModelLocation('ad_astra:block/moon_deepslate')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('syenite', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:raw_syenite').defaultBlockState())
+		.baseModelLocation('ad_astra:block/mars_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
 }

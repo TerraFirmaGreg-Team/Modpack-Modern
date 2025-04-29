@@ -624,7 +624,7 @@ function registerTFCStoneRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1), 3700, 700)
 		.outputFluids(Fluid.of(oxygenFluid, 16))
 
-	// New
+	// TFC
 
 	event.recipes.gtceu.centrifuge('gabbro_dust_separation')
 		.EUt(GTValues.VA[GTValues.MV])
@@ -754,6 +754,17 @@ function registerTFCStoneRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CalciumHydroxide, 1), 1700, 700)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.SiliconDioxide, 1), 4700, 700)
 		.outputFluids(Fluid.of(oxygenFluid, 12))
+
+	// Space
+
+	event.recipes.gtceu.centrifuge('anorthosite_dust_separation')
+		.EUt(GTValues.VA[GTValues.MV])
+		.duration(480)
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('anorthosite'), 1))
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 3700, 700)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnetite, 1), 3700, 700)
+		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Ilmenite, 1), 1700, 700)
+		.outputFluids(Fluid.of('gtceu:helium_3', 50))
 
 	// #endregion
 }
