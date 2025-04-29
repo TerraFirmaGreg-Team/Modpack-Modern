@@ -7,14 +7,15 @@ const registerAdAstraFluidTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', fluid)
 	})
 
-
 	event.removeAll('ad_astra:fuel')
 	event.removeAll('ad_astra:efficient_fuel')
+
 	event.add('ad_astra:tier_1_rocket_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_2_rocket_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_3_rocket_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_4_rocket_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_5_rocket_fuel', 'gtceu:rocket_fuel')
+
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:rocket_fuel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:cetane_boosted_diesel')

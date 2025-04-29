@@ -1,52 +1,49 @@
 global.AIRCRAFT_UPGRADES = [
-    "lv_aircraft_engine",
-    "hv_aircraft_engine",
-    "ev_aircraft_engine",
+	"lv_aircraft_engine",
+	"hv_aircraft_engine",
+	"ev_aircraft_engine",
 
-    "black_steel_plated_airplane_propeller",
-    "redblu_steel_plated_airplane_propeller",
-    "stainless_steel_plated_airplane_propeller",
-    "titanium_plated_airplane_propeller",
+	"black_steel_plated_airplane_propeller",
+	"redblu_steel_plated_airplane_propeller",
+	"stainless_steel_plated_airplane_propeller",
+	"titanium_plated_airplane_propeller",
 
-    "redblu_steel_landing_gear",
-    "aluminium_landing_gear",
-    "stainless_steel_landing_gear",
-    "titanium_landing_gear",
-    "redblu_steel_hull_reinforcement",
-    "aluminium_hull_reinforcement",
-    "stainless_steel_hull_reinforcement",
-    "titanium_hull_reinforcement"
+	"redblu_steel_landing_gear",
+	"aluminium_landing_gear",
+	"stainless_steel_landing_gear",
+	"titanium_landing_gear",
+
+	"redblu_steel_hull_reinforcement",
+	"aluminium_hull_reinforcement",
+	"stainless_steel_hull_reinforcement",
+	"titanium_hull_reinforcement"
 ]
 
-global.EXTRATERRESTRIAL_RAW_ROCKS = 
-[
-	'tfg:raw_anorthosite', 
+global.EXTRATERRESTRIAL_RAW_ROCKS = [
+	'tfg:raw_anorthosite',
 	'tfg:raw_basanite',
-	'tfg:raw_plagiocite'
-]
-global.EXTRATERRESTRIAL_HARDENED_ROCKS = 
-[
-	'tfg:hardened_anorthosite',
-	'tfg:hardened_plagiocite'
+	'tfg:raw_syenite'
 ]
 
-global.MOON_BIOMES = 
-[
+global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
+	'tfg:hardened_anorthosite',
+	'tfg:hardened_syenite'
+]
+
+global.MOON_BIOMES = [
 	'tfg:moon/lunar_plains',
 	'tfg:moon/lunar_basalt_maria',
 	'tfg:moon/lunar_gabbro_uplift',
 	'tfg:moon/lunar_diorite_delta'
 ]
 
-global.MARS_BIOMES =
-[
+global.MARS_BIOMES = [
 	'tfg:mars/martian_plains',
 	'tfg:mars/martian_riverbed',
 	'tfg:mars/martian_mountains'
 ]
 
-global.MOON_VEINS =
-[
+global.MOON_VEINS = [
 	'tfg:moon/vein/deep_magnetite',
 	'tfg:moon/vein/deep_molybdenum',
 	'tfg:moon/vein/deep_olivine',

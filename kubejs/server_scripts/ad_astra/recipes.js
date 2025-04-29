@@ -376,11 +376,9 @@ const registerAdAstraRecipes = (event) => {
 	//#region Стальной FE кабель т1
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-		.itemInputs(
-			'#forge:double_wires/manganese_phosphide',
-			'#forge:plates/steel',)
-		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
-		.itemOutputs('ad_astra:steel_cable')
+		.itemInputs('4x #forge:single_wires/manganese_phosphide', '#forge:plates/steel')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs('4x ad_astra:steel_cable')
 		.duration(60)
 		.EUt(120)
 
@@ -389,11 +387,9 @@ const registerAdAstraRecipes = (event) => {
 	//#region FE кабель т2
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-		.itemInputs(
-			'#forge:double_wires/magnesium_diboride',
-			'#forge:plates/desh',)
+		.itemInputs('4x #forge:single_wires/magnesium_diboride', '#forge:plates/desh')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
-		.itemOutputs('ad_astra:desh_cable')
+		.itemOutputs('4x ad_astra:desh_cable')
 		.duration(60)
 		.EUt(480)
 
@@ -420,12 +416,12 @@ const registerAdAstraRecipes = (event) => {
 	//#region Воздушный пистолет
 
 	event.shaped('ad_astra:zip_gun', [
-		'ABC',
-		'D  ',
+		'ACC',
+		'DB ',
 		'   '
 	], {
 		A: 'gtceu:lv_electric_pump',
-		B: '#forge:small_fluid_pipes/steel',
+		B: '#forge:bolts/steel',
 		C: '#forge:tiny_fluid_pipes/steel',
 		D: 'ad_astra:gas_tank',
 	}).id('tfg:zip_gun')

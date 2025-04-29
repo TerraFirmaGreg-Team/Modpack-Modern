@@ -49,6 +49,18 @@ const registerTFGItems = (event) => {
     // #region Stone bricks and dusts
     event.create('tfg:brick/deepslate')
         .translationKey('item.tfg.brick.deepslate')
+
+    event.create('tfg:brick/anorthosite')
+        .translationKey('item.tfg.brick.anorthosite')
+
+    event.create('tfg:brick/syenite')
+        .translationKey('item.tfg.brick.syenite')
+
+    event.create('tfg:anorthosite_dust')
+        .translationKey('item.tfg.anorthosite_dust')
+	
+    event.create('tfg:syenite_dust')
+        .translationKey('item.tfg.syenite_dust')
     // #endregion
 
     // #region Primitive rubber gloves
