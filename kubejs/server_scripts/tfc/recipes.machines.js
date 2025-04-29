@@ -409,6 +409,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:small_sheepskin_hide')
 		.itemOutputs('tfc:wool')
 		.duration(100)
+		.circuit(3)
 		.EUt(4)
 
 	// 1x Medium SheepSkin -> 1x Wool
@@ -416,6 +417,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:medium_sheepskin_hide')
 		.itemOutputs('2x tfc:wool')
 		.duration(100)
+		.circuit(3)
 		.EUt(4)
 
 	// 1x Large SheepSkin -> 1x Wool
@@ -423,6 +425,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:large_sheepskin_hide')
 		.itemOutputs('3x tfc:wool')
 		.duration(100)
+		.circuit(3)
 		.EUt(4)
 
 	// Wool Yarn
