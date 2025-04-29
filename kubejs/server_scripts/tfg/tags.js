@@ -384,12 +384,37 @@ const registerTFGPlacedFeatures = (event) => {
 
 	// #endregion
 
-
 	// #region Nether decorations
 
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
 	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
+
+	// #endregion
+
+	// #region Moon Ores
+
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_apatite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_bauxite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_beryllium')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_desh')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_diopside')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_enstatite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_fayalite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_garnierite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_magnetite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_mica')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_molybdenum')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_monazite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_olivine')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_plutonium')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_quartz')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_redstone')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_saltpeter')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sapphire')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_scheelite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_sheldonite')
+	event.add('tfg:moon_veins', 'tfg:moon/vein/moon_silver')
 
 	// #endregion
 }

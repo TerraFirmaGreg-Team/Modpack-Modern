@@ -147,9 +147,5 @@ const registerAdAstraEntityTypeTags = (event) => {
 
 const registerAdAstraPlacedFeatures = (event) => {
 
-	global.MOON_VEINS.forEach(vein => {
 
-		event.add('tfg:moon_veins', vein)
-		event.add('tfc:in_biome/veins', vein)
-	})
 }
