@@ -227,6 +227,157 @@
             ]
         },
         {
+            "pakku_id": "433alm6SnUVbiAUS",
+            "pakku_links": [
+                "J5CyvX6hIaMAyzVK",
+                "ot2YBFY8BHe8bgqE",
+                "cxgo5IyMJwtpohRH"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "ad-astra",
+                "modrinth": "ad-astra"
+            },
+            "name": {
+                "curseforge": "Ad Astra",
+                "modrinth": "Ad Astra"
+            },
+            "id": {
+                "curseforge": "635042",
+                "modrinth": "3ufwT9JF"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ad_astra-forge-1.20.1-1.15.20.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6262/32/ad_astra-forge-1.20.1-1.15.20.jar",
+                    "id": "6262032",
+                    "parent_id": "635042",
+                    "hashes": {
+                        "sha1": "537ac3e358a97efd7b03648a9bfd7b11f1ae7ff7",
+                        "md5": "1ce3f9859fce6a4eac9b7f17e375dfd2"
+                    },
+                    "required_dependencies": [
+                        "714059",
+                        "704113",
+                        "570073"
+                    ],
+                    "size": 7508861,
+                    "date_published": "2025-03-04T01:59:36.293Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "ad_astra-forge-1.20.1-1.15.20.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/3ufwT9JF/versions/Qf7QFXk2/ad_astra-forge-1.20.1-1.15.20.jar",
+                    "id": "Qf7QFXk2",
+                    "parent_id": "3ufwT9JF",
+                    "hashes": {
+                        "sha512": "c7337add217258cea0cb7d9f9136b5a7c8a17600bc2cc9c722321af838690b6c285628dcaebfccedb3e1274683591ef7a45a3514094e5a3bcd8fe1c1f25626bf",
+                        "sha1": "537ac3e358a97efd7b03648a9bfd7b11f1ae7ff7"
+                    },
+                    "required_dependencies": [
+                        "G1hIVOrD",
+                        "2u6LRnMa",
+                        "M1953qlQ"
+                    ],
+                    "size": 7508861,
+                    "date_published": "2025-03-04T01:59:42.652052Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "CS7svU2WHJVgE26v",
+            "pakku_links": [
+                "J5CyvX6hIaMAyzVK",
+                "cxgo5IyMJwtpohRH",
+                "ot2YBFY8BHe8bgqE",
+                "433alm6SnUVbiAUS"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "ad-astra-giselle-addon",
+                "modrinth": "ad-astra-giselle-addon"
+            },
+            "name": {
+                "curseforge": "Ad Astra: Giselle Addon",
+                "modrinth": "Ad-Astra: Giselle Addon"
+            },
+            "id": {
+                "curseforge": "714958",
+                "modrinth": "XQDxCBVw"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Ad-Astra-Giselle-Addon-forge-1.20.1-6.18.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6119/244/Ad-Astra-Giselle-Addon-forge-1.20.1-6.18.jar",
+                    "id": "6119244",
+                    "parent_id": "714958",
+                    "hashes": {
+                        "sha1": "877b88e224cbcbee498ec9d58f3554dd89e36469",
+                        "md5": "68d8d06a5277e289a242b4acdcf06313"
+                    },
+                    "required_dependencies": [
+                        "714059",
+                        "570073",
+                        "704113",
+                        "635042"
+                    ],
+                    "size": 458371,
+                    "date_published": "2025-01-24T09:42:36.753Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Ad-Astra-Giselle-Addon-forge-1.20.1-6.18.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XQDxCBVw/versions/XRJhnGGs/Ad-Astra-Giselle-Addon-forge-1.20.1-6.18.jar",
+                    "id": "XRJhnGGs",
+                    "parent_id": "XQDxCBVw",
+                    "hashes": {
+                        "sha512": "a5e8b7b792aa42df56612e3b8684d2d262a7acaa124d6fe96c4c9d028f16b4ded527dc40c1597e0c36ccb1ab74ae0c91d65e9bb742e8894aee514ddb4b222c1b",
+                        "sha1": "877b88e224cbcbee498ec9d58f3554dd89e36469"
+                    },
+                    "required_dependencies": [
+                        "G1hIVOrD",
+                        "2u6LRnMa",
+                        "3ufwT9JF",
+                        "M1953qlQ"
+                    ],
+                    "size": 458371,
+                    "date_published": "2025-01-24T09:45:43.026170Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jPHrYCLCUpKjNOWD",
             "type": "MOD",
             "side": "BOTH",
@@ -1719,6 +1870,69 @@
                     "required_dependencies": [],
                     "size": 343962,
                     "date_published": "2024-06-13T15:17:32.300Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ot2YBFY8BHe8bgqE",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "botarium",
+                "modrinth": "botarium"
+            },
+            "name": {
+                "curseforge": "Botarium",
+                "modrinth": "Botarium"
+            },
+            "id": {
+                "curseforge": "704113",
+                "modrinth": "2u6LRnMa"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "botarium-forge-1.20.1-2.3.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar",
+                    "id": "5486070",
+                    "parent_id": "704113",
+                    "hashes": {
+                        "sha1": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b",
+                        "md5": "c204f9d834da78a3972fc98da96730aa"
+                    },
+                    "required_dependencies": [],
+                    "size": 157633,
+                    "date_published": "2024-06-29T17:38:58.730Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "botarium-forge-1.20.1-2.3.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/2u6LRnMa/versions/O7D6FTfW/botarium-forge-1.20.1-2.3.4.jar",
+                    "id": "O7D6FTfW",
+                    "parent_id": "2u6LRnMa",
+                    "hashes": {
+                        "sha512": "aa3530dde50966e47958690b02a343c4de3782d32ae3b2cb75b2155eebb76e172a292768d846b8d14a97bc9ebe18f1f655eaa3469fce13b2b4b15b16af0aba01",
+                        "sha1": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b"
+                    },
+                    "required_dependencies": [],
+                    "size": 157633,
+                    "date_published": "2024-06-29T17:39:00.425265Z"
                 }
             ]
         },
@@ -11644,6 +11858,68 @@
                     "required_dependencies": [],
                     "size": 196564,
                     "date_published": "2024-07-12T07:23:56.583Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "y4M31CBxuAYdKyZe",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "species",
+                "modrinth": "species"
+            },
+            "name": {
+                "curseforge": "Species",
+                "modrinth": "Species"
+            },
+            "id": {
+                "curseforge": "857737",
+                "modrinth": "s5d4P01r"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6131/829/Species-1.20.1-2.3-forge.jar",
+                    "id": "6131829",
+                    "parent_id": "857737",
+                    "hashes": {
+                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3",
+                        "md5": "a3aef474219746f567b71fd4af0a74dd"
+                    },
+                    "required_dependencies": [],
+                    "size": 19593288,
+                    "date_published": "2025-01-27T22:01:14.603Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/s5d4P01r/versions/N9CbMB7B/Species-1.20.1-2.3-forge.jar",
+                    "id": "N9CbMB7B",
+                    "parent_id": "s5d4P01r",
+                    "hashes": {
+                        "sha512": "e18f9bb08d49741951ff9d3c3cf90feab8bc1016f69657aa90316ad4caa5eadecea558ef2f6054542ba1167b3a47763c0b13c03fe17f3d6d7e9391c49cbffe11",
+                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3"
+                    },
+                    "required_dependencies": [],
+                    "size": 19593288,
+                    "date_published": "2025-01-27T22:01:08.387603Z"
                 }
             ]
         },
