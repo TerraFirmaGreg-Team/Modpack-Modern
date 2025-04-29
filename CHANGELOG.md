@@ -62,6 +62,8 @@
 - Allowed more blocks to be used as oven, forge, and bloomery insulation.
 - Fixed lang error with treated wood planks recipe.
 - Fixed bug with mmc package.
+- Added recipe to separate fertilizer into pure sources, and mix them back together.
+- Added recipes to sew hides together and cut them apart.
 
 ## [0.9.1] - 18.04.2025
 ### Changes
