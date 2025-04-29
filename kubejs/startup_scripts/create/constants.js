@@ -15,20 +15,8 @@ global.CREATE_DISABLED_ITEMS = [
     // Raw Block Ores
     'create:raw_zinc_block', 
     
-    // Nuggets
-    'create:copper_nugget',
-    'create:zinc_nugget', 
-    'create:brass_nugget', 
-    
     // Sheets
-    'create:copper_sheet', 
-    'create:brass_sheet', 
     'create:iron_sheet', 
-    'create:golden_sheet', 
-    
-    // Ingot
-    'create:zinc_ingot', 
-    'create:brass_ingot',
 
     // Flour
     'create:wheat_flour',
@@ -138,48 +126,9 @@ global.CREATE_DISABLED_ITEMS = [
     'create:layered_tuff', 
     'create:tuff_pillar',
 
-    // Dripstone
-    'create:cut_dripstone', 
-    'create:cut_dripstone_stairs', 
-    'create:cut_dripstone_slab',
-    'create:cut_dripstone_wall', 
-    'create:polished_cut_dripstone', 
-    'create:polished_cut_dripstone_stairs', 
-    'create:polished_cut_dripstone_slab', 
-    'create:polished_cut_dripstone_wall', 
-    'create:cut_dripstone_bricks', 
-    'create:cut_dripstone_brick_stairs', 
-    'create:cut_dripstone_brick_slab', 
-    'create:cut_dripstone_brick_wall', 
-    'create:small_dripstone_bricks', 
-    'create:small_dripstone_brick_stairs', 
-    'create:small_dripstone_brick_slab', 
-    'create:small_dripstone_brick_wall', 
-    'create:layered_dripstone', 
-    'create:dripstone_pillar',
-
-    // Calcite
-    'create:cut_calcite', 
-    'create:cut_calcite_stairs', 
-    'create:cut_calcite_slab', 
-    'create:cut_calcite_wall', 
-    'create:polished_cut_calcite', 
-    'create:polished_cut_calcite_stairs', 
-    'create:polished_cut_calcite_slab', 
-    'create:polished_cut_calcite_wall', 
-    'create:cut_calcite_bricks', 
-    'create:cut_calcite_brick_stairs', 
-    'create:cut_calcite_brick_slab', 
-    'create:cut_calcite_brick_wall', 
-    'create:small_calcite_bricks', 
-    'create:small_calcite_brick_stairs', 
-    'create:small_calcite_brick_slab', 
-    'create:small_calcite_brick_wall', 
-    'create:layered_calcite', 
-    'create:calcite_pillar',
 
     // Shit Glass
-	'create:crimson_window', 
+    'create:crimson_window', 
     'create:warped_window', 
     'create:oak_window', 
     'create:spruce_window', 
@@ -191,13 +140,11 @@ global.CREATE_DISABLED_ITEMS = [
     'create:birch_window_pane', 
     'create:jungle_window_pane', 
     'create:acacia_window_pane', 
-	'create:crimson_window_pane',
+    'create:crimson_window_pane',
     'create:warped_window_pane', 
 
     // Blocks
-    'create:zinc_block', 
     'create:andesite_alloy_block', 
-    'create:brass_block', 
     'create:industrial_iron_block', 
     'create:experience_block',
     'create:rose_quartz_block', 
@@ -257,19 +204,15 @@ global.CREATE_DISABLED_ITEMS = [
     // Other
     'create:honey_bucket', 
     'create:chocolate_bucket',
-    'create:crushed_raw_lead', 
     'create:crushed_raw_quicksilver', 
     'create:crushed_raw_aluminum', 
     'create:crushed_raw_uranium', 
     'create:crushed_raw_nickel', 
     'create:rose_quartz_lamp', 
-    'create:netherite_backtank', 
-    'create:netherite_backtank_placeable', 
     'create:creative_blaze_cake', 
     'create:blaze_cake', 
     'create:blaze_cake_base', 
     'create:sturdy_sheet', 
-    'create:powdered_obsidian', 
     'create:polished_rose_quartz', 
     'create:rose_quartz', 
     'create:cinder_flour', 
@@ -283,21 +226,14 @@ global.CREATE_DISABLED_ITEMS = [
     'create:chromatic_compound', 
     'create:shadow_steel', 
     'create:refined_radiance', 
-    'create:crushed_raw_tin', 
-    'create:crushed_raw_silver', 
     'create:crushed_raw_platinum', 
     'create:crushed_raw_osmium', 
-    'create:crushed_raw_zinc', 
-    'create:crushed_raw_copper', 
-    'create:crushed_raw_gold', 
     'create:crushed_raw_iron', 
     'create:experience_nugget',
     'create:andesite_bars', 
     'create:brass_bars', 
     'create:copper_bars', 
     'create:tree_fertilizer', 
-    'create:netherite_diving_boots', 
-    'create:netherite_diving_helmet', 
     'create:handheld_worldshaper', 
     'create:creative_crate', 
     'create:creative_fluid_tank',
@@ -311,5 +247,9 @@ global.CREATE_DISABLED_ITEMS = [
     'create:empty_blaze_burner',
     'create:minecart_contraption',
     'create:furnace_minecart_contraption',
-    'create:chest_minecart_contraption'
+    'create:chest_minecart_contraption',
+    'create:mechanical_pump',
+    'create:peculiar_bell',
+    'create:haunted_bell',
+    'create:adjustable_chain_gearshift'
 ];

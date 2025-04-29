@@ -1,0 +1,568 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_hammer",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_pickaxe",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_sword",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_knife",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_mining_hammer",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_shovel",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_spade",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":1, \"MaxAoERow\":1}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_scythe",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"GT.Behaviours\":{\"MaxAoEColumn\":5, \"MaxAoERow\":5, \"MaxAoELayer\":3}, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_wire_cutter",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_wrench",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\":4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_crowbar",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_mortar",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_file",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_screwdriver",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_hoe",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_saw",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:damascus_steel_axe",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{\"tfc:forging_bonus\": 4, \"HideFlags\":1, \"Enchantments\": [{\"id\":\"minecraft:infinity\",\"lvl\":\"1s\"}]}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 8,
+				"max": 12
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:diamond",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:sapphire_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:ruby_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:emerald",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:topaz_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:malachite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:yellow_garnet_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:red_garnet_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:amethyst_shard",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:almandine_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:andradite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:blue_topaz_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:green_sapphire_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:grossular_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:rutile_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:lazurite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:pyrope_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:sodalite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:spessartine_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:uvarovite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:quartzite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:olivine_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:apatite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:monazite_gem",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 9,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,4 +1,22 @@
-// priority: 0
+global.AIRCRAFT_UPGRADES = [
+    "lv_aircraft_engine",
+    "hv_aircraft_engine",
+    "ev_aircraft_engine",
+
+    "black_steel_plated_airplane_propeller",
+    "redblu_steel_plated_airplane_propeller",
+    "stainless_steel_plated_airplane_propeller",
+    "titanium_plated_airplane_propeller",
+
+    "redblu_steel_landing_gear",
+    "aluminium_landing_gear",
+    "stainless_steel_landing_gear",
+    "titanium_landing_gear",
+    "redblu_steel_hull_reinforcement",
+    "aluminium_hull_reinforcement",
+    "stainless_steel_hull_reinforcement",
+    "titanium_hull_reinforcement"
+]
 
 global.EXTRATERRESTRIAL_RAW_ROCKS = 
 [
@@ -6,7 +24,6 @@ global.EXTRATERRESTRIAL_RAW_ROCKS =
 	'tfg:raw_basanite',
 	'tfg:raw_plagiocite'
 ]
-
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = 
 [
 	'tfg:hardened_anorthosite',
@@ -54,3 +71,5 @@ global.MOON_VEINS =
 	'tfg:moon/vein/normal_saltpeter',
 	'tfg:moon/vein/normal_silver'
 ]
+
+global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];

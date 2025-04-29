@@ -1,4 +1,3 @@
-// priority: 0
 
 global.GTCEU_ANVIL_TOOL_TYPES = [
     

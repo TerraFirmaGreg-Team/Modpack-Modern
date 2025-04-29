@@ -165,6 +165,17 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: '#forge:plates/steel'
     }).id('tfg:sophisticated_backpacks/shaped/upgrade_base')
 
+    event.shaped('sophisticatedbackpacks:upgrade_base', [
+        'ABA',
+        'BCB',
+        'ADA'
+    ], {
+        A: '#forge:string',
+        B: '#forge:rods/long/wrought_iron',
+        C: '#forge:plates/rubber',
+        D: '#forge:plates/steel'
+    }).id('tfg:sophisticated_backpacks/shaped/upgrade_base_rubber')
+
     // Улучшение - подбиратель
     event.shaped('sophisticatedbackpacks:pickup_upgrade', [
         'ABA',
@@ -212,19 +223,21 @@ const registerSophisticatedBackpacksRecipes = (event) => {
     event.shaped('sophisticatedbackpacks:magnet_upgrade', [
         'ABA',
         'CDC',
-        'AEA'
+        'FEG'
     ], {
-        A: 'gtceu:hv_robot_arm',
+        A: 'gtceu:lv_robot_arm',
         B: 'gtceu:item_filter',
-        C: '#gtceu:circuits/hv',
+        C: '#gtceu:circuits/lv',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: '#gtceu:batteries/hv'
+        E: 'gtceu:lv_item_magnet',
+        F: '#forge:tools/wrenches',
+        G: '#forge:tools/screwdrivers'
     }).id('tfg:sophisticated_backpacks/shaped/magnet_upgrade')
 
     // Улучшение - улучшенный магнит
     event.shapeless('sophisticatedbackpacks:advanced_magnet_upgrade', [
         'sophisticatedbackpacks:magnet_upgrade',
-        '#gtceu:circuits/ev'
+        'gtceu:hv_item_magnet'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_magnet_upgrade')
 
     // Улучшение - уничтожитель
@@ -239,7 +252,7 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: 'sophisticatedbackpacks:upgrade_base',
         E: '#forge:tools/wrenches',
         F: 'gtceu:brass_normal_item_pipe',
-        G: '#forge:ender_pearls'
+        G: 'ae2:ender_dust'
     }).id('tfg:sophisticated_backpacks/shaped/void_upgrade')
 
     // Улучшение - улучшенный уничтожитель
@@ -313,11 +326,11 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'BDB',
         'EBA'
     ], {
-        A: 'gtceu:zpm_field_generator',
-        B: '#forge:plates/neutronium',
-        C: '#gtceu:circuits/zpm',
+        A: 'gtceu:ev_field_generator',
+        B: '#forge:plates/titanium',
+        C: '#gtceu:circuits/ev',
         D: 'sophisticatedbackpacks:upgrade_base',
-        E: '#gtceu:batteries/zpm'
+        E: '#gtceu:batteries/ev'
     }).id('tfg:sophisticated_backpacks/shaped/everlasting_upgrade')
 
     // Улучшение - верстак
@@ -332,7 +345,19 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: 'sophisticatedbackpacks:upgrade_base',
     }).id('tfg:sophisticated_backpacks/shaped/crafting_upgrade')
 
-    // Улучшение - Stack Lvl. 1
+    // Улучшение - Stack
+    event.shaped('sophisticatedbackpacks:stack_upgrade_starter_tier', [
+        'ABA',
+        'CDC',
+        'AEA'
+    ], {
+        A: '#gtceu:circuits/hv',
+        B: 'gtceu:mercury_barium_calcium_cuprate_single_wire',
+        C: '#gtceu:batteries/hv',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        E: 'gtceu:hv_field_generator'
+    }).id('tfg:sophisticated_backpacks/shaped/stack_upgrade_starter_tier')
+
     event.shaped('sophisticatedbackpacks:stack_upgrade_tier_1', [
         'ABA',
         'CDC',
@@ -357,6 +382,11 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         D: 'sophisticatedbackpacks:upgrade_base',
     }).id('tfg:sophisticated_backpacks/shaped/jukebox_upgrade')
 
+    event.shapeless('sophisticatedbackpacks:advanced_jukebox_upgrade', [
+        'sophisticatedbackpacks:jukebox_upgrade',
+        '#gtceu:circuits/mv'
+    ]).id('tfg:sophisticated_backpacks/shaped/advanced_jukebox_upgrade')
+
     // Улучшение - ToolSwapper
     event.shaped('sophisticatedbackpacks:tool_swapper_upgrade', [
         'ABC',
@@ -377,4 +407,19 @@ const registerSophisticatedBackpacksRecipes = (event) => {
         'sophisticatedbackpacks:tool_swapper_upgrade',
         '#gtceu:circuits/mv'
     ]).id('tfg:sophisticated_backpacks/shapeless/advanced_tool_swapper_upgrade')
+
+    // Tank upgrade
+    event.shaped('sophisticatedbackpacks:tank_upgrade', [
+        'ABC',
+        'DEF',
+        'CGA'
+    ], {
+        A: '#gtceu:circuits/mv',
+        B: 'gtceu:fluid_filter',
+        C: 'gtceu:mv_electric_pump',
+        D: '#forge:tools/screwdrivers',
+        E: 'sophisticatedbackpacks:upgrade_base',
+        F: '#forge:tools/wrenches',
+        G: 'gtceu:aluminium_drum',
+    }).id('tfg:sophisticated_backpacks/shaped/tank_upgrade')
 }

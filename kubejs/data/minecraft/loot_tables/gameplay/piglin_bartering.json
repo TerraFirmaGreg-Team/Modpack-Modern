@@ -1,0 +1,286 @@
+{
+	"type": "minecraft:barter",
+	"pools": [
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:string",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:charcoal",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:quartz",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:tin_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:copper_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:silver_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:bronze_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:bismuth_bronze_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:zinc_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "create:brass_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:bismuth_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "gtceu:nickel_ingot",
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:blackstone_brick",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 8,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfg:brick/deepslate",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 8,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:arrow",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/flux",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 12,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:powder/sulfur",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/lumber/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 12,
+								"max": 18,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:wood/log/mangrove",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 6,
+								"max": 8,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "tfc:food/cooked_venison",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "beneath:ghost_pepper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:gunpowder",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 4,
+								"max": 6,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"weight": 100
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"feature": "tfg:nether/terrain/magma_blob",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 2
+		},
+		{
+			"type": "minecraft:count",
+			"count": 4
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "uniform",
+				"min_inclusive": {
+					"absolute": 27
+				},
+				"max_inclusive": {
+					"absolute": 36
+				}
+			}
+		},
+		{
+			"type": "minecraft:biome"
+		}
+	]
+}

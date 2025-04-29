@@ -91,7 +91,26 @@ function calcAverage(playerZ, scale, min, max) {
 
 TFCEvents.registerClimateModel(event => {
 
-	event.registerClimateModel('tfg:orbit_climate', model => {
+	event.registerClimateModel('tfg:nether_climate', model => {
+
+		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => {
+			return lerp(100, 25, pos.y / 128);
+		})
+
+		model.setAverageTemperatureCalculation((level, pos) => {
+			return lerp(100, 25, pos.y / 128);
+		})
+
+		model.setAverageRainfallCalculation((level, pos) => {
+			return lerp(-200, 200, pos.y / 128);
+		})
+
+		model.setAirFog((level, pos, calendarTicks) => 0)
+		model.setWaterFog((level, pos, calendarTicks) => 0.6)
+		model.setWindVector((block, calendarTicks) => event.newVec2(0, 0))
+	})
+
+	/*event.registerClimateModel('tfg:orbit_climate', model => {
 
 		// There's basically no heat diffusion in space so we can pretend this is your spacesuit temp
 		model.setCurrentTemperatureCalculation((level, pos, calendarTicks, daysInMonth) => 15)
@@ -140,5 +159,5 @@ TFCEvents.registerClimateModel(event => {
 		model.setAirFog((level, pos, calendarTicks) => 0)
 		model.setWaterFog((level, pos, calendarTicks) => 0.25)
 		model.setWindVector((block, calendarTicks) => event.newVec2(0.25, 0.25))
-	})
+	})*/
 })

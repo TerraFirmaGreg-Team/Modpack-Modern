@@ -16,6 +16,10 @@ TFCEvents.selectClimateModel(event => {
 		case 'ad_astra:moon_orbit':
 		case 'ad_astra:mars_orbit':
 			event.setModel('tfg:orbit_climate');
+			break;*/
+
+		case 'minecraft:the_nether':
+			event.setModel('tfg:nether_climate');
 			break;
 	}
 })

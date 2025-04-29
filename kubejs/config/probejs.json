@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "Is ProbeJS Loaded for First Time in the Modpack - Configured by ProbeJS Itself": false,
+  "The Timestamp of ProbeJS Remote Documents - Configured by ProbeJS Itself": 1720270423220,
+  "Disable Aggressive Mode for ProbeJS Dumps": true,
+  "Allow ProbeJS to Resolve Classes from Registries Like Item Classes or Block Classes": true,
+  "Allow ProbeJS to Generate Literal Types for Item/Block/etc. IDs": true,
+  "Should ProbeJS Only Show Command in Single Player and with Cheat Enabled": true,
+  "Should ProbeJS be Generally Enabled": true,
+  "Disable the Recipe JSON Snippet Generation for ProbeJS triggered by `#`": true,
+  "Should ProbeJS Generate Intermediate JSON Representation of Documents - Mostly for Debugging": false,
+  "Should ProbeJS Download Schema Scripts from Github for Mods without Addon Supports": false,
+  "Should ProbeJS Open the Websocket for VSCode Evaluation? 1 - enabled, others - disabled.": 0,
+  "Which port should ProbeJS listen on for VSCode Extension?": 7796
+}
