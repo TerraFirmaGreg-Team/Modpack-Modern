@@ -351,7 +351,7 @@ const registerMinecraftRecipes = (event) => {
 		C: '#tfc:rock/smooth'
 	}).id('tfg:shaped/comparator_nether_quartz');
 
-	event.replaceInput({id: 'gtceu:shaped/redstone_lamp' }, 'minecraft:glass_pane', '#forge:glass_panes')
+	event.replaceInput({ id: 'gtceu:shaped/redstone_lamp' }, 'minecraft:glass_pane', '#forge:glass_panes')
 	event.recipes.gtceu.assembler('redstone_lamp')
 		.itemInputs('1x #forge:glass', '1x minecraft:glowstone', '1x #forge:rods/red_alloy')
 		.itemOutputs('minecraft:redstone_lamp')
@@ -953,38 +953,38 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Campfire
 	event.shaped('minecraft:campfire', [
-        ' A ',
-        'ABA',
-        'CDC'
-    ], {
-        A: 'minecraft:blaze_rod',
-        B: 'minecraft:blaze_powder',
-        C: '#forge:ingots/blue_steel',
-        D: '#forge:storage_blocks/charcoal',
-    }).id('tfg:campfire_charcoal')
+		' A ',
+		'ABA',
+		'CDC'
+	], {
+		A: 'minecraft:blaze_rod',
+		B: 'minecraft:blaze_powder',
+		C: '#forge:ingots/blue_steel',
+		D: '#forge:storage_blocks/charcoal',
+	}).id('tfg:campfire_charcoal')
 
 	event.shaped('minecraft:campfire', [
-        ' A ',
-        'ABA',
-        'CDC'
-    ], {
-        A: 'minecraft:blaze_rod',
-        B: 'minecraft:blaze_powder',
-        C: '#forge:ingots/blue_steel',
-        D: '#forge:storage_blocks/coal',
-    }).id('tfg:campfire_coal')
+		' A ',
+		'ABA',
+		'CDC'
+	], {
+		A: 'minecraft:blaze_rod',
+		B: 'minecraft:blaze_powder',
+		C: '#forge:ingots/blue_steel',
+		D: '#forge:storage_blocks/coal',
+	}).id('tfg:campfire_coal')
 	//#endregion
 
-    //#region Smithing Table
-        event.shaped('minecraft:smithing_table', [
-            'C  ',
-            'BB ',
-            'AA '
-        ], {
-            A: '#minecraft:planks',
-            B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 1),
-            C: '#forge:tools/hammers'
-    	}).id('minecraft:shapeless/smithing_table')
+	//#region Smithing Table
+	event.shaped('minecraft:smithing_table', [
+		'C  ',
+		'BB ',
+		'AA '
+	], {
+		A: '#minecraft:planks',
+		B: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 1),
+		C: '#forge:tools/hammers'
+	}).id('minecraft:shapeless/smithing_table')
 
 	event.recipes.gtceu.assembler('minecraft:assembler/smithing_table')
 		.itemInputs('2x #minecraft:planks', ChemicalHelper.get(TagPrefix.plate, GTMaterials.Lead, 2))
@@ -993,6 +993,7 @@ const registerMinecraftRecipes = (event) => {
 		.duration(60)
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
-  
-	event.smelting('tfc:glue', 'minecraft:slime_ball').id('tfg:smelting/slime_to_glue')
+
+	event.smelting('tfc:glue', 'minecraft:slime_ball')
+		.id('tfg:smelting/slime_to_glue')
 }

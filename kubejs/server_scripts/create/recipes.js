@@ -168,7 +168,7 @@ const registerCreateRecipes = (event) => {
 		'AAA',
 		' B '
 	], {
-		A: '#forge:nuggets/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		B: '#forge:plates/wrought_iron'
 	}).id('tfg:create/shaped/metal_bracket')
 
@@ -267,14 +267,14 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
 		C: '#forge:rods/black_steel',
-		D: '#forge:gears/steel',
+		D: '#forge:small_gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
 		G: '#forge:tools/screwdrivers',
 	}).id('tfg:create/shaped/steam_engine')
 
 	event.recipes.gtceu.assembler('tfg:create/steam_engine')
-		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:gears/steel', '#forge:storage_blocks/copper')
+		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:small_gears/steel', '#forge:storage_blocks/copper')
 		.circuit(3)
 		.itemOutputs('create:steam_engine')
 		.duration(200)
@@ -757,12 +757,12 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:tools/hammers',
 		B: '#forge:ingots/brass',
-		C: '#forge:nuggets/brass',
+		C: '#forge:bolts/brass',
 		D: '#forge:tools/files'
 	}).id('tfg:create/shaped/brass_hand')
 
 	event.recipes.gtceu.assembler('tfg:create/brass_hand')
-		.itemInputs('3x #forge:nuggets/brass', '#forge:plates/brass')
+		.itemInputs('3x #forge:bolts/brass', '#forge:plates/brass')
 		.circuit(3)
 		.itemOutputs('create:brass_hand')
 		.duration(200)
@@ -1016,7 +1016,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:filter', [
 		'ABA'
 	], {
-		A: '#forge:nuggets/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		B: '#forge:cloth'
 	}).id('tfg:create/shaped/filter')
 
@@ -1024,7 +1024,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:attribute_filter', [
 		'ABA'
 	], {
-		A: '#forge:nuggets/brass',
+		A: '#forge:bolts/brass',
 		B: '#forge:cloth'
 	}).id('tfg:create/shaped/attribute_filter')
 
@@ -1499,7 +1499,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:chests/wooden',
 		B: '#forge:plates/brass',
-		C: '#forge:nuggets/brass',
+		C: '#forge:bolts/brass',
 		D: '#forge:screws',
 		E: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/brown_toolbox')

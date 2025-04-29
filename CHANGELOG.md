@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased]
+### Changes
+- Removed Caelum + TFC Caelum because they were causing crashes for MacOS and other graphics issues, but you can re-add them if you'd like
+- Added recipe to separate fertilizer into pure sources, and mix them back together. (Redeix)
+- Added recipes to sew hides together and cut them apart. (Redeix)
+- Update CarryOn so now it works with all TFC chests
+- Overhauled the TFG Ores section in the field guide, and it's now 100% accurate again!
+- Large cogwheels are now cheaper
+- Added recycling recipes for ceramic molds, large vessels, casting channels and tables
+- Fixed issue where the speed buff from Aged Rum was being removed
+- Fixed speed of bulk washing
+- Lowered SU requirements of some more Create machines
+- Reduced how many sticks were being placed in the nether
+
 ## [0.9.2]
 ### Changes
 - Fixed mining machines not working.
