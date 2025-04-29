@@ -56,11 +56,11 @@ const registerTFGItems = (event) => {
     event.create('tfg:brick/syenite')
         .translationKey('item.tfg.brick.syenite')
 
-    event.create('tfg:anorthosite_dust')
-        .translationKey('item.tfg.anorthosite_dust')
+    event.create('tfg:dust/anorthosite_dust')
+        .translationKey('item.tfg.dust.anorthosite')
 	
-    event.create('tfg:syenite_dust')
-        .translationKey('item.tfg.syenite_dust')
+    event.create('tfg:dust/syenite')
+        .translationKey('item.tfg.dust.syenite')
     // #endregion
 
     // #region Primitive rubber gloves

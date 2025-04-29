@@ -47,7 +47,6 @@ config/stellarcore_stitcher_cache_vanilla.dat
 
 .vs/
 .vscode/
-.vs/
 .idea/
 .bobby/
 .mixin.out/
@@ -110,9 +109,3 @@ gtceu/prospection_cache/
 .pakku/server-overrides/scripts
 .pakku/server-overrides/mods
 .pakku/server-overrides/user_jvm_args.txt
-
-#Tools
-/tools/OresToFieldGuide/bin/*
-/tools/OresToFieldGuide/obj/*
-/tools/MarsBiomes/bin/*
-/tools/MarsBiomes/obj/*
