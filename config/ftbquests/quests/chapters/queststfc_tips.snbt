@@ -2069,23 +2069,7 @@
 			subtitle: "{quests.tfg_tips.smoke_meat.subtitle}"
 			tasks: [
 				{
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: -9223372036854775808L
-								traits: [
-									"tfc:brined"
-									"firmalife:smoked"
-								]
-							}
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:food/beef"
-					}
+					icon: "minecraft:beef"
 					id: "6F36FAA8AE1E2987"
 					item: {
 						Count: 1
@@ -2320,10 +2304,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"2D959136A5FC5F46"
-				"56CA2EB7812529C5"
-			]
+			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.lamps.desc}"]
 			id: "037CDA933FBE2CBE"
 			subtitle: "{quests.tfg_tips.lamps.subtitle}"
@@ -4294,9 +4275,9 @@
 		}
 		{
 			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_upgrade_length.desc}"]
+			description: ["{quests.tfg_tips.grapple_length.desc}"]
 			id: "105FD1655EEB1921"
-			subtitle: "{quests.tfg_tips.grapple_upgrade_length.subtitle}"
+			subtitle: "{quests.tfg_tips.grapple_length.subtitle}"
 			tasks: [
 				{
 					id: "6BC5AB4D7A479799"
@@ -4316,7 +4297,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.tfg_tips.grapple_upgrade_length.title}"
+			title: "{quests.tfg_tips.grapple_length.title}"
 			x: -17.0d
 			y: 4.5d
 		}
@@ -4342,7 +4323,11 @@
 		}
 		{
 			dependencies: ["1F93C858F1D02F7C"]
-			description: ["{quests.tfg_tips.grapple_upgrade_length.desc}"]
+			description: [
+				"{quests.tfg_tips.grapple_upgrades.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.grapple_upgrades.desc.2}"
+			]
 			id: "6C64C20FF5DF972A"
 			subtitle: "{quests.tfg_tips.grapple_upgrades.subtitle}"
 			tasks: [{
@@ -4729,6 +4714,27 @@
 			title: "Tape for Crate"
 			x: 6.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["47409DED94FCC2BC"]
+			description: ["{quests.tfg_tips.ev_upgrades.desc}"]
+			id: "20905B37111F2ED9"
+			subtitle: "{quests.tfg_tips.ev_upgrades.subtitle}"
+			tasks: [{
+				id: "60C5CDB3EBB706E4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ev_aircraft_engine)item(tfg:titanium_plated_airplane_propeller)item(tfg:titanium_landing_gear)item(tfg:titanium_hull_reinforcement))"
+					}
+				}
+				title: "{quests.tfg_tips.ev_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.ev_upgrades.title}"
+			x: -6.0d
+			y: -14.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]
