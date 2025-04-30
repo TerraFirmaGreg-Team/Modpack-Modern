@@ -13,6 +13,7 @@
 - Fixed speed of bulk washing
 - Lowered SU requirements of some more Create machines
 - Reduced how many sticks were being placed in the nether
+- Fixed new supports to work correctly
 
 ## [0.9.2]
 ### Changes
