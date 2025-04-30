@@ -1016,7 +1016,7 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 		
 	// TODO: Greate again...
-	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick'])
+	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])
 		.id('tfg:shapeless/programmed_circuit_from_stick')
 
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])

@@ -1,6 +1,6 @@
 {
 	"name": "Hazardous Materials",
-	"icon": "gtceu:raw_plutonium",
+	"icon": "createdeco:decal_skull",
 	"category": "tfc:tfg_ores",
 	"priority": true,
 	"sortnum": 1,
@@ -9,7 +9,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"title": "Hazardous Materials",
-			"item": "gtceu:raw_plutonium",
+			"item": "gtceu:cobaltite_dust",
 			"text": "Some ores and dusts are hazardous and can cause negative effects or even kill you if they are carried in your inventory.$(br2)Certain equipment such as $(thing)masks$(), $(thing)gloves$(), and $(thing)hazardous material suits$() later on can be used to counter these effects."
 		},
 		{
