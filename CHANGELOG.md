@@ -13,6 +13,7 @@
 - Fixed speed of bulk washing
 - Lowered SU requirements of some more Create machines
 - Reduced how many sticks were being placed in the nether
+- Fixed new supports to work correctly
 
 ## [0.9.2]
 ### Changes
@@ -76,6 +77,8 @@
 - Allowed more blocks to be used as oven, forge, and bloomery insulation.
 - Fixed lang error with treated wood planks recipe.
 - Fixed bug with mmc package.
+- Added recipe to separate fertilizer into pure sources, and mix them back together.
+- Added recipes to sew hides together and cut them apart.
 
 ## [0.9.1] - 18.04.2025
 ### Changes
