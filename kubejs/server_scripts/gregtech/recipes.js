@@ -263,44 +263,14 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Цемент
 
-	generateMixerRecipe(
-		event,
-		['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'],
-		Fluid.of('minecraft:water', 1000),
-		[],
-		null,
-		Fluid.of('gtceu:concrete', 1152),
-		40,
-		16,
-		64,
-		'concrete_from_marble'
-	)
+	generateMixerRecipe(event, ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'],
+		Fluid.of('minecraft:water', 1000), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_marble')
 
-	generateMixerRecipe(
-		event,
-		['3x #tfg:stone_dusts', 'gtceu:clay_dust'],
-		Fluid.of('minecraft:water', 500),
-		[],
-		null,
-		Fluid.of('gtceu:concrete', 576),
-		20,
-		16,
-		64,
-		'concrete_from_clay'
-	)
+	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:clay_dust'],
+		Fluid.of('minecraft:water', 500), [], null, Fluid.of('gtceu:concrete', 576), 20, 16, 64, 'concrete_from_clay')
 
-	generateMixerRecipe(
-		event,
-		['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'],
-		Fluid.of('minecraft:water', 1000),
-		[],
-		null,
-		Fluid.of('gtceu:concrete', 1152),
-		40,
-		16,
-		64,
-		'concrete_from_calcite'
-	)
+	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'],
+		Fluid.of('minecraft:water', 1000), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_calcite')
 
 	//GT light/dark concrete recipe fix
 
@@ -1011,6 +981,17 @@ const registerGTCEURecipes = (event) => {
 				.EUt(2)
 		}
 	})
+
+	//#endregion
+
+	//#region Changing tiers of decomposition recipes
+
+	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
+		.itemInputs('13x #forge:dusts/clay')
+		.itemOutputs('2x #forge:dusts/sodium', '1x #forge:dusts/lithium', '2x #forge:dusts/aluminium', '2x #forge:dusts/silicon')
+		.outputFluids(Fluid.of('minecraft:water', 6000))
+		.duration(GTMaterials.Clay.getMass() * 13)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion
 
