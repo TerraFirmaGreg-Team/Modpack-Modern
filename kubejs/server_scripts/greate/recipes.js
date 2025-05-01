@@ -11,7 +11,7 @@ function registerGreateRecipes(event) {
 
 	// #region Shafts
 
-	event.shaped('4x greate:andesite_alloy_shaft', [
+	event.shaped('9x greate:andesite_alloy_shaft', [
 		'A ',
 		' B'
 	], {
@@ -19,15 +19,7 @@ function registerGreateRecipes(event) {
 		B: '#forge:plates/black_bronze'
 	}).id('greate:shaped/andesite_alloy_shaft_black_bronze')
 
-	event.shaped('6x greate:andesite_alloy_shaft', [
-		'A ',
-		' B'
-	], {
-		A: '#forge:tools/saws',
-		B: '#forge:plates/wrought_iron'
-	}).id('greate:shaped/andesite_alloy_shaft')
-
-	event.shaped('4x greate:andesite_alloy_shaft', [
+	event.shaped('9x greate:andesite_alloy_shaft', [
 		'A ',
 		' B'
 	], {
@@ -35,7 +27,7 @@ function registerGreateRecipes(event) {
 		B: '#forge:plates/bronze'
 	}).id('greate:shaped/andesite_alloy_shaft_bronze')
 
-	event.shaped('4x greate:andesite_alloy_shaft', [
+	event.shaped('9x greate:andesite_alloy_shaft', [
 		'A ',
 		' B'
 	], {
@@ -43,40 +35,73 @@ function registerGreateRecipes(event) {
 		B: '#forge:plates/bismuth_bronze'
 	}).id('greate:shaped/andesite_alloy_shaft_bismuth_bronze')
 
-	generateCutterRecipe(event, '#forge:plates/wrought_iron', '6x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft')
-	generateCutterRecipe(event, '#forge:plates/steel', '6x greate:steel_shaft', 100, GTValues.VA[GTValues.ULV], 'steel_shaft')
-	generateCutterRecipe(event, '#forge:plates/aluminium', '6x greate:aluminium_shaft', 100, GTValues.VA[GTValues.LV], 'aluminium_shaft')
-	generateCutterRecipe(event, '#forge:plates/stainless_steel', '6x greate:stainless_steel_shaft', 100, GTValues.VA[GTValues.MV], 'stainless_steel_shaft')
-	generateCutterRecipe(event, '#forge:plates/titanium', '6x greate:titanium_shaft', 100, GTValues.VA[GTValues.HV], 'titanium_shaft')
+	event.shaped('9x greate:steel_shaft', [
+		'A ',
+		' B'
+	], {
+		A: '#forge:tools/saws',
+		B: '#forge:plates/steel'
+	}).id('greate:shaped/steel_shaft')
+
+	event.shaped('9x greate:aluminium_shaft', [
+		'A ',
+		' B'
+	], {
+		A: '#forge:tools/saws',
+		B: '#forge:plates/aluminium'
+	}).id('greate:shaped/aluminium_shaft')
+
+	event.shaped('9x greate:stainless_steel_shaft', [
+		'A ',
+		' B'
+	], {
+		A: '#forge:tools/saws',
+		B: '#forge:plates/stainless_steel'
+	}).id('greate:shaped/stainless_steel_shaft')
+
+	event.shaped('9x greate:titanium_shaft', [
+		'A ',
+		' B'
+	], {
+		A: '#forge:tools/saws',
+		B: '#forge:plates/titanium'
+	}).id('greate:shaped/titanium_shaft')
+
+	generateCutterRecipe(event, '#forge:plates/bronze', '9x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft_bronze')
+	generateCutterRecipe(event, '#forge:plates/black_bronze', '9x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft_black_bronze')
+	generateCutterRecipe(event, '#forge:plates/bismuth_bronze', '9x greate:andesite_alloy_shaft', 100, GTValues.VA[GTValues.ULV], 'andesite_alloy_shaft_bismuth_bronze')
+	generateCutterRecipe(event, '#forge:plates/steel', '9x greate:steel_shaft', 100, GTValues.VA[GTValues.ULV], 'steel_shaft')
+	generateCutterRecipe(event, '#forge:plates/aluminium', '9x greate:aluminium_shaft', 100, GTValues.VA[GTValues.LV], 'aluminium_shaft')
+	generateCutterRecipe(event, '#forge:plates/stainless_steel', '9x greate:stainless_steel_shaft', 100, GTValues.VA[GTValues.MV], 'stainless_steel_shaft')
+	generateCutterRecipe(event, '#forge:plates/titanium', '9x greate:titanium_shaft', 100, GTValues.VA[GTValues.HV], 'titanium_shaft')
 
 	// #endregion
 
 	// #region Cogs
 
-	event.shapeless('greate:andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:small_gears/wood', '#forge:tools/hammers'])
+	event.shapeless('greate:andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:small_gears/wood'])
 		.id('greate:shapeless/andesite_alloy_cogwheel')
-	event.shapeless('greate:large_andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:gears/wood', '#forge:tools/hammers'])
+	event.shapeless('greate:large_andesite_alloy_cogwheel', ['greate:andesite_alloy_shaft', '#forge:gears/wood'])
 		.id('greate:shapeless/large_andesite_alloy_cogwheel');
 
-	// TODO: recycling recipes for these?
-	event.shapeless('greate:steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron', '#forge:tools/wrenches'])
+	event.shapeless('greate:steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron'])
 		.id('greate:shapeless/steel_cogwheel')
-	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron','#forge:small_gears/wrought_iron', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_steel_cogwheel', ['greate:steel_shaft', '#forge:small_gears/wrought_iron','#forge:small_gears/wrought_iron'])
 		.id('greate:shapeless/large_steel_cogwheel');
 
-	event.shapeless('greate:aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel', '#forge:tools/wrenches'])
+	event.shapeless('greate:aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel'])
 		.id('greate:shapeless/aluminium_cogwheel')
-	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel', '#forge:small_gears/steel', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_aluminium_cogwheel', ['greate:aluminium_shaft', '#forge:small_gears/steel', '#forge:small_gears/steel'])
 		.id('greate:shapeless/large_aluminium_cogwheel');
 
-	event.shapeless('greate:stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium', '#forge:tools/wrenches'])
+	event.shapeless('greate:stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium'])
 		.id('greate:shapeless/stainless_steel_cogwheel')
-	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium', '#forge:small_gears/aluminium', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_stainless_steel_cogwheel', ['greate:stainless_steel_shaft', '#forge:small_gears/aluminium', '#forge:small_gears/aluminium'])
 		.id('greate:shapeless/large_stainless_steel_cogwheel');
 
-	event.shapeless('greate:titanium_cogwheel', ['greate:titanium_shaft', '#forge:small_gears/stainless_steel', '#forge:tools/wrenches'])
+	event.shapeless('greate:titanium_cogwheel', ['greate:titanium_shaft', '#forge:small_gears/stainless_steel'])
 		.id('greate:shapeless/titanium_cogwheel')
-	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_shaft',  '#forge:small_gears/stainless_steel', '#forge:small_gears/stainless_steel', '#forge:tools/wrenches'])
+	event.shapeless('greate:large_titanium_cogwheel', ['greate:titanium_shaft',  '#forge:small_gears/stainless_steel', '#forge:small_gears/stainless_steel'])
 		.id('greate:shapeless/large_titanium_cogwheel');
 
 	// #endregion
@@ -294,7 +319,7 @@ function registerGreateRecipes(event) {
 
 	// #region Belt Connector
 
-	event.shaped('greate:rubber_belt_connector', [
+	event.shaped('3x greate:rubber_belt_connector', [
 		'C  ',
 		'AAA',
 		'B  '
@@ -304,7 +329,14 @@ function registerGreateRecipes(event) {
 		C: '#forge:tools/hammers',
 	}).id('greate:shaped/rubber_belt_connector')
 
-	event.shaped('greate:silicone_rubber_belt_connector', [
+	event.recipes.gtceu.assembler('rubber_belt_connector')
+		.itemInputs('#forge:plates/rubber')
+		.itemOutputs('greate:rubber_belt_connector')
+		.circuit(11)
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.shaped('3x greate:silicone_rubber_belt_connector', [
 		'C  ',
 		'AAA',
 		'B  '
@@ -314,7 +346,14 @@ function registerGreateRecipes(event) {
 		C: '#forge:tools/hammers',
 	}).id('greate:shaped/silicone_rubber_belt_connector')
 
-	event.shaped('greate:polyethylene_belt_connector', [
+	event.recipes.gtceu.assembler('silicone_rubber_belt_connector')
+		.itemInputs('#forge:plates/silicone_rubber')
+		.itemOutputs('greate:silicone_rubber_belt_connector')
+		.circuit(11)
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.shaped('3x greate:polyethylene_belt_connector', [
 		'C  ',
 		'AAA',
 		'B  '
@@ -323,6 +362,13 @@ function registerGreateRecipes(event) {
 		B: '#forge:tools/knives',
 		C: '#forge:tools/hammers',
 	}).id('greate:shaped/polyethylene_belt_connector')
+
+	event.recipes.gtceu.assembler('polyethylene_belt_connector')
+		.itemInputs('#forge:plates/styrene_butadiene_rubber')
+		.itemOutputs('greate:rubber_polyethylene_belt_connectorbelt_connector')
+		.circuit(11)
+		.duration(50)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// #endregion
 
