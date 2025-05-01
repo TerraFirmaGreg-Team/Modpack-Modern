@@ -2,6 +2,9 @@
 
 function removeGTCEURecipes(event) {
 
+	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
+	event.replaceInput({ input: 'minecraft:chest' }, 'minecraft:chest', '#forge:chests/wooden')
+
 	global.GTCEU_DISABLED_ITEMS.forEach(item => {
 		event.remove({ input: item })
 		event.remove({ output: item })
@@ -611,4 +614,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
 
 	event.remove({ id: 'gtceu:compressor/bricks' })
+
+	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 }

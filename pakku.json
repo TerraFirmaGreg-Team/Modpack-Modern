@@ -1,6 +1,6 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -16,7 +16,8 @@
         "server.properties",
         "server_starter.conf",
         "server-icon.png",
-        "start_server.bat"
+        "start_server.bat",
+        "README.md"
     ],
     "client_overrides": [
         "resourcepacks"

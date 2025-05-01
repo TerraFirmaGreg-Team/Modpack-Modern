@@ -34,6 +34,10 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:flint_knife',
     'gtceu:firebrick',
     'gtceu:firebricks',
+    'gtceu:fireclay_dust',
+    'gtceu:small_fireclay_dust',
+    'gtceu:tiny_fireclay_dust',
+    'gtceu:compressed_fireclay',
     'gtceu:wood_drum',
     'gtceu:primitive_blast_furnace',
     'gtceu:iron_pickaxe',
@@ -183,3 +187,4 @@ global.ORE_BEARING_STONES = [
     'pyroxenite',
     'dripstone'
 ];
+

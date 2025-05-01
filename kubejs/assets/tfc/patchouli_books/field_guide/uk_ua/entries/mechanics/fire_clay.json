@@ -11,12 +11,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/fire_clay",
-      "text": "Вогнетривку глину виготовляють з порошку $(l:tfg_ores/normal_graphite)графіту$() подрібненого в $(l:mechanics/quern)жорні$(), а також порошку $(l:tfg_ores/surface_kaolin#powder)каолініту$()"
+      "text": "Вогнетривку глину виготовляють з порошку $(l:tfg_ores/earth_vein_index#normal_graphite)графіту$() подрібненого в $(l:mechanics/quern)жорні$(), а також порошку $(l:tfg_ores/surface_kaolin#powder)каолініту$()"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/kaolin_clay",
-      "text": "Каолінітовий порошок виготовляють шляхом нагрівання $(l:tfg_ores/surface_kaolin)Каолінітової Глини$(). Однак процес не ідеальний, і лише 20% глини утворює порошок!"
+      "text": "Каолінітовий порошок виготовляють шляхом нагрівання $(l:mechanics/surface_kaolin)Каолінітової Глини$(). Однак процес не ідеальний, і лише 20% глини утворює порошок!"
     },
     {
       "type": "tfc:knapping_recipe",

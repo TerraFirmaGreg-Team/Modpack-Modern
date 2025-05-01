@@ -6,19 +6,21 @@ const registerComfortsRecipes = (event) => {
 	event.remove({ mod: "comforts" })
 
 	//Rope and Nail
-	event.recipes.minecraft.crafting_shapeless("comforts:rope_and_nail", ["firmaciv:rope_coil", "gtceu:wrought_iron_screw"])
+	event.shapeless("comforts:rope_and_nail", ["firmaciv:rope_coil", "gtceu:wrought_iron_screw"])
 		.id("comforts:crafting/shaped/rope_and_nail");
 
 	//sleeping bag
-	event.recipes.minecraft.crafting_shaped("comforts:sleeping_bag_white", [
-		"AAA",
-		"B  "
-	], {
-		A: "#tfc:high_quality_cloth",
-		B: 'tfc:bone_needle'
-	});
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped("comforts:sleeping_bag_white", [
+			"AAA",
+			"B  "
+		], {
+			A: "#tfc:high_quality_cloth",
+			B: 'tfc:bone_needle'
+		})
+	).id('comforts:shaped/sleeping_bag_white');
 
-	event.recipes.minecraft.crafting_shaped("comforts:hammock_white", [
+	event.shaped("comforts:hammock_white", [
 		"ABA",
 		"CCC",
 		"ABA"

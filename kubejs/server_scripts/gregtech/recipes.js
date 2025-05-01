@@ -961,6 +961,13 @@ const registerGTCEURecipes = (event) => {
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.centrifuge('tfg:centrifuge_rosin')
+		.itemInputs('tfg:conifer_rosin')
+		.outputFluids(Fluid.of('gtceu:glue', 50))
+		.itemOutputs('2x #forge:dusts/carbon')
+		.chancedOutput('gtceu:plant_ball', 1000, 850)
+		.duration(400)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.createSequencedAssembly([
 		'gtceu:ulv_voltage_coil',
@@ -1009,7 +1016,7 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 		
 	// TODO: Greate again...
-	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick'])
+	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])
 		.id('tfg:shapeless/programmed_circuit_from_stick')
 
 	event.shapeless('gtceu:red_alloy_single_cable', ['gtceu:red_alloy_single_wire', '#forge:plates/rubber'])

@@ -37,4 +37,5 @@ const registerTFGMaterials = (event) => {
 		.iconSet(GTMaterialIconSet.FINE)
 		.color('0xede8da')
 		.secondaryColor('0xeddcad')
+		.components('12x carbon', '22x hydrogen', '11x oxygen')
 }
