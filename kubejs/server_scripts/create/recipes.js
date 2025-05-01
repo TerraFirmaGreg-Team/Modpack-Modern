@@ -181,7 +181,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/fluid_pipe')
 
 	event.recipes.gtceu.assembler('tfg:create/fluid_pipe')
-		.itemInputs('4x #forge:plates/copper')
+		.itemInputs('2x #forge:plates/copper')
 		.circuit(3)
 		.itemOutputs('create:fluid_pipe')
 		.duration(200)
@@ -205,7 +205,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/copper_valve_handle')
 
 	event.recipes.gtceu.assembler('tfg:create/copper_valve_handle')
-		.itemInputs('4x #forge:plates/copper', '#forge:small_gears/wrought_iron')
+		.itemInputs('#forge:plates/copper', '#forge:small_gears/wrought_iron')
 		.circuit(6)
 		.itemOutputs('create:copper_valve_handle')
 		.duration(200)
@@ -274,7 +274,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/steam_engine')
 
 	event.recipes.gtceu.assembler('tfg:create/steam_engine')
-		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:gears/steel', '#forge:storage_blocks/copper')
+		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/black_steel', '#forge:gears/steel', '#forge:storage_blocks/copper')
 		.circuit(3)
 		.itemOutputs('create:steam_engine')
 		.duration(200)
@@ -641,7 +641,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/item_vault')
 
 	event.recipes.gtceu.assembler('tfg:create/item_vault')
-		.itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
+		.itemInputs('#forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
 		.circuit(3)
 		.itemOutputs('create:item_vault')
 		.duration(200)
@@ -1264,7 +1264,7 @@ const registerCreateRecipes = (event) => {
 	]).transitionalItem('create:incomplete_precision_mechanism').loops(3).id('tfg:create/sequenced_assembly/precision_mechanism')
 
 	event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
-		.itemInputs('#forge:plates/gold', '3x #forge:small_springs/gold', '3x #forge:small_gears/brass', '3x #forge:bolts/wrought_iron')
+		.itemInputs('#forge:plates/gold', '2x #forge:small_springs/gold', '2x #forge:small_gears/brass', '2x #forge:bolts/wrought_iron')
 		.itemOutputs('create:precision_mechanism')
 		.duration(2000)
 		.EUt(20)
