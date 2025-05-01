@@ -54,6 +54,9 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:stone_wrench_tip',
 
     'gtceu:treated_wood_hanging_sign',
+    'gtceu:treated_wood_boat',
+    'gtceu:treated_wood_chest_boat',
+    'gtceu:treated_wood_sign',
 
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 
