@@ -290,7 +290,7 @@ function registerVintageImprovementsRecipes(event) {
 	// #endregion
 
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 
 		// #region Coiling
 

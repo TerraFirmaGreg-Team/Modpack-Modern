@@ -960,7 +960,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(2400)
 		.EUt(2)
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 
 		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 		if (tfcProperty == null)

@@ -64,7 +64,7 @@ function generatePlatedBlockRecipe(event, material) {
 	let outputMaterial = (tfcProperty == null || tfcProperty.getOutputMaterial() == null) ? material : tfcProperty.getOutputMaterial()
 
 	let plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
-	
+
 	let platedBlock = ChemicalHelper.get(TFGTagPrefix.blockPlated, material, 1);
 	let platedSlab = ChemicalHelper.get(TFGTagPrefix.slabPlated, material, 1);
 	let platedStair = ChemicalHelper.get(TFGTagPrefix.stairPlated, material, 1);
@@ -162,4 +162,14 @@ function generatePlatedBlockRecipe(event, material) {
 		.duration(material.getMass())
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
+}
+
+const $MRM = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.IMaterialRegistryManager')
+
+function forEachMaterial(iterator) {
+	if (GTMaterialRegistry.getPhase() === $MRM.Phase.CLOSED || GTMaterialRegistry.getPhase() === $MRM.Phase.FROZEN) {
+		GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+			iterator(material)
+		})
+	}
 }
