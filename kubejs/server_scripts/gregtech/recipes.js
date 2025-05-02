@@ -396,7 +396,7 @@ const registerGTCEURecipes = (event) => {
 		.EUt(2)
 
 	//#endregion
-
+	
 	//#region Стеклодувка
 
 	// Glass Tube
@@ -1014,7 +1014,35 @@ const registerGTCEURecipes = (event) => {
 	})
 
 	//#endregion
-		
+
+	//#region Rose Quartz fabrication + decomposition
+	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
+	event.recipes.gtceu.chemical_bath('tfg:nether_quartz_dust_to_rose_quartz_dust')
+		.itemInputs('gtceu:nether_quartz_dust')
+		.inputFluids(Fluid.of('gtceu:redstone', 1152))
+		.itemOutputs('9x gtceu:rose_quartz_dust')
+		.duration(1800)
+		.EUt(120)
+	event.recipes.gtceu.chemical_bath('tfg:tiny_nether_quartz_dust_to_rose_quartz_dust')
+		.itemInputs('gtceu:tiny_nether_quartz_dust')
+		.inputFluids(Fluid.of('gtceu:redstone', 128))
+		.itemOutputs('gtceu:rose_quartz_dust')
+		.duration(200)
+		.EUt(120)
+	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust')
+		.itemInputs('9x gtceu:rose_quartz_dust')
+		.itemOutputs('1x gtceu:nether_quartz_dust', '8x minecraft:redstone')
+		.duration(1620)
+		.EUt(24)
+		.circuit(1)
+	event.recipes.gtceu.electrolyzer('electrolyze_rose_quartz_dust_to_tiny')
+		.itemInputs('gtceu:rose_quartz_dust')
+		.itemOutputs('1x gtceu:tiny_nether_quartz_dust', '8x gtceu:tiny_redstone_dust')
+		.duration(180)
+		.EUt(24)
+		.circuit(2)
+    //#endregion
+
 	// TODO: Greate again...
 	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])
 		.id('tfg:shapeless/programmed_circuit_from_stick')
