@@ -81,7 +81,7 @@ const registerGTCEULoots = (event) => {
 	})
 
 	// Go through all materials
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 
 		if (material.hasProperty(PropertyKey.ORE)) {
 

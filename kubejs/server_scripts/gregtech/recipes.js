@@ -7,7 +7,7 @@
 const registerGTCEURecipes = (event) => {
 
 	registerGTCEUMetalRecipes(event)
-    registerGTCEURecyclingRecipes(event)
+	registerGTCEURecyclingRecipes(event)
 	registerGTCEuTFCMetalsRecipes(event)
 	registerGTCEuMachineRecipes(event)
 
@@ -69,15 +69,15 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-    event.recipes.gtceu.centrifuge('tfg:beets_to_sugar')
-        .itemInputs('5x tfc:food/beet')
-        .inputFluids(Fluid.of('tfc:salt_water', 1000))
-        .itemOutputs('3x minecraft:sugar', '3x gtceu:plant_ball', '1x #forge:dusts/salt')
-        .outputFluids(Fluid.of('minecraft:water', 1000))
-        .duration(800)
-        .EUt(7)
-        .circuit(3)
-  
+	event.recipes.gtceu.centrifuge('tfg:beets_to_sugar')
+		.itemInputs('5x tfc:food/beet')
+		.inputFluids(Fluid.of('tfc:salt_water', 1000))
+		.itemOutputs('3x minecraft:sugar', '3x gtceu:plant_ball', '1x #forge:dusts/salt')
+		.outputFluids(Fluid.of('minecraft:water', 1000))
+		.duration(800)
+		.EUt(7)
+		.circuit(3)
+
 	event.smelting('4x tfc:powder/wood_ash', '1x #minecraft:logs_that_burn').id('tfg:wood_ash')
 
 	//#region Выход: Соленая пыль + Вода
@@ -143,7 +143,7 @@ const registerGTCEURecipes = (event) => {
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
 	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_heating')
-		.duration(24*20)
+		.duration(24 * 20)
 		.EUt(30)
 		.itemInputs('tfc:powder/sulfur')
 		.itemOutputs('gtceu:sticky_resin')
@@ -263,44 +263,14 @@ const registerGTCEURecipes = (event) => {
 
 	//#region Выход: Цемент
 
-	generateMixerRecipe(
-		event,
-		['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'],
-		Fluid.of('minecraft:water', 1000),
-		[],
-		null,
-		Fluid.of('gtceu:concrete', 1152),
-		40,
-		16,
-		64,
-		'concrete_from_marble'
-	)
+	generateMixerRecipe(event, ['2x #tfg:stone_dusts', 'gtceu:marble_dust', 'gtceu:gypsum_dust'],
+		Fluid.of('minecraft:water', 1000), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_marble')
 
-	generateMixerRecipe(
-		event,
-		['3x #tfg:stone_dusts', 'gtceu:clay_dust'],
-		Fluid.of('minecraft:water', 500),
-		[],
-		null,
-		Fluid.of('gtceu:concrete', 576),
-		20,
-		16,
-		64,
-		'concrete_from_clay'
-	)
+	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:clay_dust'],
+		Fluid.of('minecraft:water', 500), [], null, Fluid.of('gtceu:concrete', 576), 20, 16, 64, 'concrete_from_clay')
 
-	generateMixerRecipe(
-		event,
-		['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'],
-		Fluid.of('minecraft:water', 1000),
-		[],
-		null,
-		Fluid.of('gtceu:concrete', 1152),
-		40,
-		16,
-		64,
-		'concrete_from_calcite'
-	)
+	generateMixerRecipe(event, ['3x #tfg:stone_dusts', 'gtceu:calcite_dust', 'gtceu:gypsum_dust'],
+		Fluid.of('minecraft:water', 1000), [], null, Fluid.of('gtceu:concrete', 1152), 40, 16, 64, 'concrete_from_calcite')
 
 	//GT light/dark concrete recipe fix
 
@@ -348,7 +318,7 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 
 	//#region GT marble
-	
+
 	event.stonecutting('gtceu:polished_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_polished_marble')
 	event.stonecutting('gtceu:chiseled_marble', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_chiseled_marble')
 	event.stonecutting('gtceu:marble_tile', 'tfc:rock/bricks/marble').id('tfg:stonecutting/gt_marble_tile')
@@ -462,17 +432,16 @@ const registerGTCEURecipes = (event) => {
 		C: 'gtceu:brick_wooden_form'
 	}).replaceIngredient('gtceu:brick_wooden_form', 'gtceu:brick_wooden_form').id('gtceu:shaped/compressed_coke_clay')
 
-	// Compressed Coke Clay -> Coke Oven Brick
+	// Coke Oven Brick
 	event.recipes.tfc.heating('gtceu:compressed_coke_clay', 1399)
 		.resultItem('gtceu:coke_oven_brick')
 		.id('tfg:heating/coke_oven_bricks')
 
-	// TFC FireBrick -> FireBrick dust
-	event.recipes.gtceu.macerator('macerate_firebrick')
-		.itemInputs('tfc:ceramic/fire_brick')
-		.itemOutputs('gtceu:fireclay_dust')
-		.duration(15)
-		.EUt(2)
+	event.recipes.gtceu.alloy_smelter('gtceu:coke_oven_brick')
+		.itemInputs('#minecraft:sand', 'minecraft:clay_ball')
+		.itemOutputs('gtceu:coke_oven_brick')
+		.duration(7.5 * 20)
+		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Multi-Smelter
 	event.shaped('gtceu:multi_smelter', [
@@ -724,44 +693,44 @@ const registerGTCEURecipes = (event) => {
 		.circuit(2)
 
 	event.recipes.gtceu.coke_oven("tfg:raw_coal_to_coke")
-        .itemInputs('gtceu:raw_coal')
-        .itemOutputs('2x gtceu:coke_gem')
-        .outputFluids(Fluid.of('gtceu:creosote', 2000))
-        .duration(1710)
+		.itemInputs('gtceu:raw_coal')
+		.itemOutputs('2x gtceu:coke_gem')
+		.outputFluids(Fluid.of('gtceu:creosote', 2000))
+		.duration(1710)
 
-    event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_tar")
-        .itemInputs('6x gtceu:raw_coal')
-        .chancedOutput('gtceu:dark_ash_dust', 5000, 0)
-        .outputFluids(Fluid.of('gtceu:coal_tar', 3000))
-        .duration(288)
-        .EUt(96)
-        .circuit(8)
+	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_tar")
+		.itemInputs('6x gtceu:raw_coal')
+		.chancedOutput('gtceu:dark_ash_dust', 5000, 0)
+		.outputFluids(Fluid.of('gtceu:coal_tar', 3000))
+		.duration(288)
+		.EUt(96)
+		.circuit(8)
 
-    event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coke_creosote")
-        .itemInputs('8x gtceu:raw_coal')
-        .itemOutputs('16x gtceu:coke_gem')
-        .outputFluids(Fluid.of('gtceu:creosote', 8000))
-        .duration(576)
-        .EUt(64)
-        .circuit(1)
+	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coke_creosote")
+		.itemInputs('8x gtceu:raw_coal')
+		.itemOutputs('16x gtceu:coke_gem')
+		.outputFluids(Fluid.of('gtceu:creosote', 8000))
+		.duration(576)
+		.EUt(64)
+		.circuit(1)
 
-    event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coal_gas")
-        .itemInputs('8x gtceu:raw_coal')
-        .itemOutputs('16x gtceu:coke_gem')
-        .inputFluids(Fluid.of('gtceu:steam'))
-        .outputFluids(Fluid.of('gtceu:coal_gas', 4000))
-        .duration(288)
-        .EUt(96)
-        .circuit(22)
+	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coal_gas")
+		.itemInputs('8x gtceu:raw_coal')
+		.itemOutputs('16x gtceu:coke_gem')
+		.inputFluids(Fluid.of('gtceu:steam'))
+		.outputFluids(Fluid.of('gtceu:coal_gas', 4000))
+		.duration(288)
+		.EUt(96)
+		.circuit(22)
 
-    event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coke_creosote_nitrogen")
-        .itemInputs('8x gtceu:raw_coal')
-        .itemOutputs('16x gtceu:coke_gem')
-        .inputFluids(Fluid.of('gtceu:nitrogen'))
-        .outputFluids(Fluid.of('gtceu:creosote', 8000))
-        .duration(288)
-        .EUt(96)
-        .circuit(2)
+	event.recipes.gtceu.pyrolyse_oven("tfg:raw_coal_to_coke_creosote_nitrogen")
+		.itemInputs('8x gtceu:raw_coal')
+		.itemOutputs('16x gtceu:coke_gem')
+		.inputFluids(Fluid.of('gtceu:nitrogen'))
+		.outputFluids(Fluid.of('gtceu:creosote', 8000))
+		.duration(288)
+		.EUt(96)
+		.circuit(2)
 
 	// #endregion
 
@@ -991,7 +960,7 @@ const registerGTCEURecipes = (event) => {
 		.duration(2400)
 		.EUt(2)
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 
 		const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 		if (tfcProperty == null)
@@ -1014,6 +983,17 @@ const registerGTCEURecipes = (event) => {
 	})
 
 	//#endregion
+	//#region Changing tiers of decomposition recipes
+
+	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
+		.itemInputs('13x #forge:dusts/clay')
+		.itemOutputs('2x #forge:dusts/sodium', '1x #forge:dusts/lithium', '2x #forge:dusts/aluminium', '2x #forge:dusts/silicon')
+		.outputFluids(Fluid.of('minecraft:water', 6000))
+		.duration(GTMaterials.Clay.getMass() * 13)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	//#endregion
+
 
 	//#region Rose Quartz fabrication + decomposition
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });

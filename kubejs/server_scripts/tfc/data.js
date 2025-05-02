@@ -54,7 +54,7 @@ const registerTFCHeats = (event) => {
         if (!tool.isEmpty()) event.itemHeat(tool, heatCapacity, tfcProperty.getForgingTemp(), tfcProperty.getWeldingTemp())
     }
 
-    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+    forEachMaterial(material => {
         let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
         
         if (tfcProperty != null) {
@@ -266,19 +266,19 @@ const registerTFCFoodData = (event) => {
 //#region registerTFCSupportData
 //up, down, horizontal
 const registerTFCSupportData = (event) => {
-    event.support('tfg:light_concrete_support', 4, 4, 8, 'light_concrete_support')
-    event.support('tfg:dark_concrete_support', 4, 4, 8, 'dark_concrete_support')
-    event.support('tfg:reinforced_light_concrete_support', 6, 6, 16, 'reinforced_light_concrete_support')
-    event.support('tfg:reinforced_dark_concrete_support', 6, 6, 16, 'reinforced_dark_concrete_support')
-    event.support('tfg:rebar_support', 4, 4, 8, 'rebar_support')
-    event.support('tfg:steel_support', 6, 6, 16, 'steel_support')
+    event.support('tfg:light_concrete_support_horizontal', 4, 4, 8, 'light_concrete_support')
+    event.support('tfg:dark_concrete_support_horizontal', 4, 4, 8, 'dark_concrete_support')
+    event.support('tfg:reinforced_light_concrete_support_horizontal', 6, 6, 16, 'reinforced_light_concrete_support')
+    event.support('tfg:reinforced_dark_concrete_support_horizontal', 6, 6, 16, 'reinforced_dark_concrete_support')
+    event.support('tfg:rebar_support_horizontal', 4, 4, 8, 'rebar_support')
+    event.support('tfg:steel_support_horizontal', 6, 6, 16, 'steel_support')
 
 	const other_stone = ['pyroxenite', 'migmatite', 'travertine']
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
 
 	stone_types.forEach(stone => {
 
-        event.support(`tfg:${stone}_support`, 2, 2, 4, `${stone}_support`)
+        event.support(`tfg:${stone}_support_horizontal`, 2, 2, 4, `${stone}_support`)
     })
 }
 //#endregion
