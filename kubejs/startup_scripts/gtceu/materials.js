@@ -297,4 +297,9 @@ const registerGTCEuMaterialModification = (event) => {
 		var property = material.getProperty(PropertyKey.FLUID);
 		property.getStorage().store($FluidStorageKeys.LIQUID, () => Fluid.of(`tfc:${colorName}_dye`).fluid, null);
 	});
+
+
+	let rose_quartz = GTCEuAPI.materialManager.getMaterial('greate:rose_quartz');
+	rose_quartz.setProperty(PropertyKey.ORE, new $ORE_PROPERTY());
+	rose_quartz.setMaterialIconSet(GTMaterialIconSet.getByName('nether_quartz'))
 }
