@@ -11,12 +11,12 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfc:crafting/fire_clay",
-      "text": "Fire clay is made from $(l:tfg_ores/normal_graphite)graphite$() powder, crushed in a $(l:mechanics/quern)quern$(), as well as $(l:tfg_ores/surface_kaolin#powder)kaolinite$() powder"
+      "text": "Fire clay is made from $(l:tfg_ores/earth_vein_index#normal_graphite)graphite$() powder, crushed in a $(l:mechanics/quern)quern$(), as well as $(l:tfg_ores/surface_kaolin#powder)kaolinite$() powder"
     },
     {
       "type": "tfc:heat_recipe",
       "recipe": "tfc:heating/kaolin_clay",
-      "text": "Kaolinite powder is made by heating $(l:tfg_ores/surface_kaolin)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!"
+      "text": "Kaolinite powder is made by heating $(l:mechanics/surface_kaolin)Kaolin Clay$(). However, the process is not perfect, and only 20% of clay will form powder!"
     },
     {
       "type": "tfc:knapping_recipe",

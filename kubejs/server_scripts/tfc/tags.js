@@ -7,17 +7,26 @@
 //#region ItemTags
 const registerTFCItemTags = (event) => {
     // Теги для соответствия инструментов TFC и GT
-    
-    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-        if (material.hasProperty(PropertyKey.TOOL)) {
-            for (let [key, value] of Object.entries(global.GTCEU_TOOLTYPES_WHICH_HAS_TFC_DUPS)) {
-                var tool = ToolHelper.get(value, material)
-                if (!tool.isEmpty()) event.add(key, tool.getId())
+        
+    event.add('tfc:swords', '#minecraft:swords')
+    event.add('tfc:pickaxes', '#minecraft:pickaxes')
+    event.add('tfc:axes', '#minecraft:axes')
+    event.add('tfc:shovels', '#minecraft:shovels')
+    event.add('tfc:hoes', '#minecraft:hoes')
+    event.add('tfc:hammers', '#forge:tools/hammers')
+    event.add('tfc:knives', '#forge:tools/knives')
+    event.add('tfc:saws', '#forge:tools/saws')
+    event.add('tfc:scythes', '#forge:tools/scythes')
 
-                event.add('tfc:usable_on_tool_rack', `#${key}`)
-            }
-        }
-    })
+    event.add('tfc:usable_on_tool_rack', '#mincraft:swords')
+    event.add('tfc:usable_on_tool_rack', '#minecraft:pickaxes')
+    event.add('tfc:usable_on_tool_rack', '#minecraft:axes')
+    event.add('tfc:usable_on_tool_rack', '#minecraft:shovels')
+    event.add('tfc:usable_on_tool_rack', '#minecraft:hoes')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/hammers')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/knives')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/saws')
+    event.add('tfc:usable_on_tool_rack', '#forge:tools/scythes')
 
     event.add('tfc:usable_on_tool_rack', '#forge:tools/mining_hammers')
     event.add('tfc:usable_on_tool_rack', '#forge:tools/spades')
