@@ -80,7 +80,9 @@ const registerTFCItemTags = (event) => {
     // Для складывания
     event.add('tfc:pileable_ingots', '#forge:ingots')
     event.add('tfc:pileable_sheets', '#forge:plates')
-
+    event.add('tfc:pileable_double_ingots', 'gtceu:tin_alloy_double_ingot')
+    event.add('tfc:pileable_double_ingots', 'gtceu:red_alloy_double_ingot')
+    
     // Рыба
     event.add('minecraft:fishes', 'tfc:food/calamari')
     event.add('minecraft:fishes', 'tfc:food/bluegill')
