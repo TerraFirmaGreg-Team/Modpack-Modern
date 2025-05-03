@@ -2,10 +2,19 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ore_processing"
-	group: "19428C6E7A36D463"
-	icon: "gtceu:crushed_iron_ore"
+	group: "33020D1D0ECDF301"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "gtceu:crushed_iron_ore"
+	}
 	id: "24C1683140DBB5F2"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -576,7 +585,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{quests.ore_proc.macerator_separator.title}"
+			title: "{quests.ore_proc.macerator_separator.desc}"
 			x: -1.0d
 			y: 1.0d
 		}

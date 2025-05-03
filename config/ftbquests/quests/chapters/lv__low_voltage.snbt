@@ -574,8 +574,14 @@
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_ore_prospector.subtitle}"
 			tasks: [{
-				id: "1AC97E61EF4958C8"
-				item: "gtceu:prospector.lv"
+				id: "61235B5F55D60DB5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:prospector.lv)item(gtceu:prospector.hv)item(gtceu:prospector.luv))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
@@ -994,7 +1000,6 @@
 			dependencies: [
 				"3647B1B964A15E4E"
 				"7BE7DE4C0109D788"
-				"3D8174C64DDC268B"
 			]
 			description: ["{quests.low_voltage.1_mv_circuit.desc}"]
 			id: "0DBC148D92A9F69F"

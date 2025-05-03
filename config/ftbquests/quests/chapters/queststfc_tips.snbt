@@ -9,8 +9,8 @@
 	quest_links: [{
 		id: "1AD1F9822B738105"
 		linked_quest: "2E36E5755B2F551C"
-		x: 6.0d
-		y: 5.0d
+		x: 2.0d
+		y: 4.0d
 	}]
 	quests: [
 		{
@@ -1138,6 +1138,7 @@
 				"4891E995D3EC2BD1"
 				"5D865179941E7B3A"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.create_sticky_resin.desc}"]
 			id: "6FFD4990FF07078A"
 			size: 1.0d
@@ -2360,7 +2361,7 @@
 			]
 			title: "{quests.tfg_tips.lamps.title}"
 			x: -5.0d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -2395,7 +2396,7 @@
 			]
 			title: "{quests.tfg_tips.lava_lamp.title}"
 			x: -5.0d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2416,7 +2417,7 @@
 			}]
 			title: "{quests.tfg_tips.creosote.title}"
 			x: -6.0d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2437,7 +2438,7 @@
 			}]
 			title: "{quests.tfg_tips.olive_oil.title}"
 			x: -4.0d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -2472,7 +2473,7 @@
 			]
 			title: "{quests.tfg_tips.glass_blocks.title}"
 			x: -3.0d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3275,8 +3276,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: -10.5d
-			y: 5.0d
+			x: -9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3296,11 +3297,11 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.filters.title}"
-			x: -10.5d
-			y: 6.0d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["275C8EA942AB49DD"]
+			dependencies: ["4E2C1CAD883EB032"]
 			description: ["{quests.tfg_tips.interplanar_projector.desc}"]
 			id: "3952D56556B35FDB"
 			subtitle: "{quests.tfg_tips.interplanar_projector.subtitle}"
@@ -3316,8 +3317,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -10.5d
-			y: 7.0d
+			x: -9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -3524,7 +3525,7 @@
 			}]
 			title: "{quests.tfg_tips.tallow.title}"
 			x: -6.5d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -4532,7 +4533,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: ["46C33ACAF8F756F8"]
 			description: [
 				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -4559,7 +4560,7 @@
 				}
 			]
 			title: "Long-Distance Items"
-			x: 4.0d
+			x: 5.5d
 			y: 2.0d
 		}
 		{
@@ -4584,11 +4585,11 @@
 				type: "item"
 			}]
 			title: "Tricorder"
-			x: 6.0d
-			y: 2.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: ["46C33ACAF8F756F8"]
 			description: [
 				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -4618,11 +4619,11 @@
 				}
 			]
 			title: "Long-Distance Pipeline"
-			x: 5.0d
+			x: 3.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: ["74AE7DB845B88CF3"]
 			description: [
 				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
 				""
@@ -4649,11 +4650,11 @@
 				type: "item"
 			}]
 			title: "200IQ"
-			x: 6.0d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: ["74AE7DB845B88CF3"]
 			description: [
 				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
 				""
@@ -4675,13 +4676,20 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "Stop burning your darn hands!"
-			tasks: [{
-				id: "34DEDF3B7F0DB3BC"
-				item: "gtceu:item_tag_filter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "34DEDF3B7F0DB3BC"
+					item: "gtceu:item_tag_filter"
+					type: "item"
+				}
+				{
+					id: "35CAF01644B8D9A2"
+					item: "gtceu:fluid_tag_filter"
+					type: "item"
+				}
+			]
 			title: "250IQ"
-			x: 6.0d
+			x: 9.0d
 			y: 4.0d
 		}
 		{
@@ -4710,8 +4718,8 @@
 				type: "item"
 			}]
 			title: "GregTech Storage"
-			x: 6.0d
-			y: 7.0d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6702D52922D85C0D"]
@@ -4727,8 +4735,405 @@
 				type: "item"
 			}]
 			title: "Tape for Crate"
-			x: 6.0d
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["With &5GregTech&r, you get access to various &6filters&r that help you ease into &aautomation&r. All of them are compatible with different &dCovers&r, which you'll learn more about during the &7LV&r Chapter.\\n\\nHere, we're introducing two more specific filters that you might find &bhandy&r in certain situations.\\n\\nTo use a filter, simply apply it as a &dCover&r on any &5GT Machine&r or &6pipe&r."]
+			icon: "gtceu:item_filter"
+			id: "74AE7DB845B88CF3"
+			subtitle: "filters"
+			tasks: [{
+				id: "268110D7B7999A7B"
+				title: "Filters"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["You may have realized that most &eMultiblocks&r require a &6Maintenance Hatch&r. Until &6HV&r, where you can get an &aAutomatic Maintenance Hatch&r, you can use this item to fix the hatch without needing to use all of your maintenance tools.\\n\\nIt can be really useful if you don't want to invest in an &aAuto Maintenance Hatch&r yet, or if you're simply &cnot there yet&r."]
+			id: "179E89C50E900DC0"
+			tasks: [{
+				id: "7D2E6F5F843864DE"
+				item: "gtceu:duct_tape"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D2CB8104E40E808"]
+			description: ["The &6Nano Saber&r is a powerful weapon you’ll be able to unlock once you reach &5EV&r. Simply use &dShift + Right-Click&r to activate the &cbzzzzz mode&r."]
+			id: "7A4C6930EF68646E"
+			tasks: [{
+				id: "41A7611367BBD2A7"
+				item: "gtceu:nano_saber"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2D2CB8104E40E808"]
+			description: ["The &6Item Magnet&r is exactly what you'd expect — a magnet that pulls nearby &6items&r straight to you. &aVery useful&r. What more could you ask for?"]
+			id: "49D2EFFFC15563F9"
+			tasks: [{
+				id: "6290D18A38A1583C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_item_magnet)item(gtceu:hv_item_magnet))"
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["&bThe Terminal&r has one main purpose, and &awe highly encourage you to craft it&r.\\n\\nBuilding all these &eMultiblocks&r can be a bit &cintimidating&r, right? Well, here's a tip: use &dShift + Right-Click&r on any &6Multiblock Controller&r to &aautomatically assemble the entire structure&r!\\n\\nYou might need to &emove around some buses and hatches&r to suit your setup, but overall, this feature will save you a &alot of time&r."]
+			id: "2F6C9A987865B966"
+			tasks: [{
+				id: "6A86F6C3566828BF"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["57FE828BAA8F6276"]
+			description: ["The &6Face Mask&r will protect you from &cinhaling dangerous dust&r. It’s quite &aeasy to craft&r and should prevent issues when working with &5arsenic&r."]
+			id: "361AC06D62D9BCCF"
+			tasks: [{
+				id: "7AC3F8AF754C76E2"
+				item: {
+					Count: 1
+					id: "gtceu:face_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["When you try to &aparallelize your setup&r with more machines, it can be a &cbother&r to set all the &einputs&r and &eoutputs&r for each one. Yeah, we're thinking of you, &dSuper Chests&r and &dTanks&r.\\n\\nIf you ever find yourself needing this &blittle tool&r, &adon't hesitate to use it&r."]
+			id: "7D5E9CFBE5990DFF"
+			tasks: [{
+				id: "39E0696844506874"
+				item: "gtceu:machine_memory_card"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "103025F1C35CF578"
+			tasks: [{
+				id: "05DA89E5871EE93D"
+				item: {
+					Count: 1
+					id: "gtceu:nanomuscle_helmet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "38FF003C9349C0F2"
+			tasks: [{
+				id: "78123F2C1E8B08F5"
+				item: "gtceu:nanomuscle_chestplate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "4497F39E06A14406"
+			tasks: [{
+				id: "430BB68AD2F334C3"
+				item: "gtceu:nanomuscle_leggings"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "61E1244FF797F11F"
+			tasks: [{
+				id: "1C5E79A87E343C64"
+				item: "gtceu:nanomuscle_boots"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["38FF003C9349C0F2"]
+			id: "4C37DAD7C66523CC"
+			tasks: [{
+				id: "05BCE3FC68B3C66E"
+				item: {
+					Count: 1
+					id: "gtceu:avanced_nanomuscle_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "20565B5D56786A6E"
+			tasks: [{
+				id: "51DBD71B96BB2673"
+				item: {
+					Count: 1
+					id: "gtceu:quarktech_helmet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "4D5B75F5270CCBD3"
+			tasks: [{
+				id: "6624FAF8B9BBD4CA"
+				item: "gtceu:quarktech_chestplate"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "31CE775295A1BBF1"
+			tasks: [{
+				id: "6EAB7217D35DDF42"
+				item: "gtceu:quarktech_leggings"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7516BF9C12015DF3"]
+			id: "2613FA0502BB5F12"
+			tasks: [{
+				id: "6A740FDB1D788187"
+				item: "gtceu:quarktech_boots"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4D5B75F5270CCBD3"]
+			id: "035B0FDD90E51C0C"
+			tasks: [{
+				id: "154A01EC8F888EDB"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2D2CB8104E40E808"]
+			description: ["Most &5GregTech&r tools are crafted from a &6Tool Head&r. Try using &aEMI&r to explore what you can do with them — just remember two important things:\\n\\n- The &ehigher the Tool Head tier&r, the more &cpowerful&r the tool will be, and the &6larger the battery&r it will use.\\n- Not every tool supports every Tool Head tier. For example, the &6Chainsaw&r can only be crafted with a &7LV Tool Head&r."]
+			id: "2CA86664C6E0C888"
+			tasks: [{
+				id: "153D23778A26C74F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_power_unit)item(gtceu:mv_power_unit)item(gtceu:hv_power_unit)item(gtceu:ev_power_unit)item(gtceu:iv_power_unit))"
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["As with any good tech mod, &5GregTech&r comes with a wide variety of &6tools&r you can use. To operate them, you'll need to &acharge them with energy&r — and there are several ways to do that: place the tool in a &6Battery Buffer&r, in an &denergy slot&r of a machine, or even better, use a &eTurbo Charger&r.\\n\\nJust remember: you can only charge an item using a power source of &7equal&r or &ahigher tier&r. &cLower-tier sources&r won’t work on higher-tier tools — but don’t worry, &cnothing should explode&r. Probably."]
+			icon: {
+				Count: 1
+				id: "gtceu:iv_copper_drill"
+				tag: {
+					Charge: 2147483647L
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						AoEColumn: 4
+						AoELayer: 8
+						AoERow: 4
+						MaxAoEColumn: 4
+						MaxAoELayer: 8
+						MaxAoERow: 4
+						TorchPlacing: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 5543
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+					MaxCharge: 2147483647L
+				}
+			}
+			id: "2D2CB8104E40E808"
+			tasks: [
+				{
+					id: "5DA224C235E227E3"
+					title: "GT Tool"
+					type: "checkmark"
+				}
+				{
+					id: "5B0BF3A94CA0D8A9"
+					item: "gtceu:lv_charger_4x"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["With &5GregTech&r, you get access to these two tools that allow you to move &9fluids&r and &6items&r over long distances."]
+			icon: "immersive_aircraft:sturdy_pipes"
+			id: "46C33ACAF8F756F8"
+			tasks: [{
+				id: "164677CBC240506E"
+				title: "Long Distance"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["With &5GregTech&r comes its own line of armor. Sure, it was cool to wear &7metal plates&r, but now that you're an &bindustrial maniac&r, maybe it's time to check out some &atechnological armor&r.\\n\\n&5GregTech&r provides two models. The first one becomes available around &6HV&r and offers better protection than anything you've worn before. It's equipped with &estrong insulation&r to withstand Earth's harsh climate, and it may even be upgraded with a &dJetpack&r.\\n\\nThe second model won't be available until much later — around &1IV&r and &dLuV&r. This one will allow you to &9breathe in space&r using &3oxygen&r."]
+			icon: "gtceu:advanced_integrated_circuit"
+			id: "7516BF9C12015DF3"
+			tasks: [{
+				id: "666B73CFDEA434F9"
+				title: "Armor"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["With the new version of &5Gregtech&r, a &chazard system&r has been introduced. By holding &dShift&r while hovering over &cHazardous Materials&r, you can see how they might affect you.\\n\\nWe strongly advise using proper &6protective equipment&r to keep your &corgans intact&r."]
+			icon: "gtceu:generic_hazard_sign_block"
+			id: "57FE828BAA8F6276"
+			tasks: [{
+				id: "2BB4EAF68B305732"
+				title: "Hazard"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["57FE828BAA8F6276"]
+			description: ["The &6Gloves&r will obviously protect you from &cskin contact hazards&r. You have two ways to make them: a &7longer and more involved path&r through &2TerrafirmaCraft&r, or a much &aeasier method&r using the &6High Pressure Steam Alloy Smelter&r."]
+			id: "3DB4AD491EF28CBE"
+			tasks: [{
+				id: "32F0E30B11FE80E4"
+				item: {
+					Count: 1
+					id: "gtceu:rubber_gloves"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["57FE828BAA8F6276"]
+			description: ["The &6Hazardous Materials Suit&r is the best way to protect yourself from &cany kind of harm&r. You’ll be able to craft it once you reach &bMV&r, and &ayou should definitely take the time to do so&r."]
+			id: "784A0743B257EAEB"
+			tasks: [
+				{
+					id: "2FD004A7EDFCB2E0"
+					item: {
+						Count: 1
+						id: "gtceu:hazmat_headpiece"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49B2D90D24684C1A"
+					item: {
+						Count: 1
+						id: "gtceu:hazmat_chestpiece"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58446E22E13A04F0"
+					item: {
+						Count: 1
+						id: "gtceu:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36AF158E546D9EC8"
+					item: {
+						Count: 1
+						id: "gtceu:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

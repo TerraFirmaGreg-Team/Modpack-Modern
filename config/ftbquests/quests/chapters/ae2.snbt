@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "ae2"
-	group: "44D0F3E5067B5AB8"
+	group: "33020D1D0ECDF301"
 	icon: "ae2:controller"
 	id: "09BE9F51822EC180"
-	order_index: 4
+	order_index: 0
 	quest_links: [
 		{
 			id: "3293CB774C1A4DF0"
@@ -2355,6 +2355,25 @@
 			x: 13.5d
 			y: 6.0d
 		}
+		{
+			dependencies: ["13DC2F6A2D2EA3FD"]
+			id: "69925787B6F7F4F5"
+			tasks: [{
+				id: "55562E94676359E7"
+				item: {
+					Count: 1
+					id: "betterp2p:advanced_memory_card"
+					tag: {
+						gui: 3b
+						selectedIndex: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
 	]
-	title: "&6HV&r - AE2"
+	subtitle: ["{quests.ae2.subtitle}"]
+	title: "{quests.ae2}"
 }

@@ -192,79 +192,72 @@
 		{
 			id: "709FB8C1561E7BB8"
 			linked_quest: "1646BF9194100E57"
-			x: 0.0d
-			y: -3.5d
+			x: 10.0d
+			y: -3.0d
 		}
 		{
 			id: "10F2DA9FCC5E3860"
 			linked_quest: "6B08799BCFD01D3D"
-			x: 2.0d
-			y: -3.5d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			id: "72CBEEAD5A41685E"
 			linked_quest: "069FD86133D7D582"
-			x: 3.0d
-			y: -3.5d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			id: "76C69275A82861C8"
 			linked_quest: "7A1E3C3A2D699C5B"
-			x: 4.0d
-			y: -3.5d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			id: "6C144735C40EE615"
 			linked_quest: "2FCBA0D780DBDA9E"
-			x: 5.0d
-			y: -3.5d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			id: "5FDCCB7CE9DACB34"
 			linked_quest: "4C7C0F6A6598BC24"
-			x: 6.0d
-			y: -3.5d
+			x: 10.0d
+			y: 3.0d
 		}
 		{
 			id: "4ACE1AFCEDC37A05"
 			linked_quest: "6AF3A40BC9CE7122"
-			x: 7.0d
-			y: -3.5d
-		}
-		{
-			id: "1EA07F998161450C"
-			linked_quest: "30A6EDDF25A5E5F8"
-			shape: "square"
-			x: 3.0d
-			y: -4.5d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			id: "532482B324E31386"
 			linked_quest: "1776FA1F3255731E"
 			shape: "square"
-			x: 4.0d
-			y: -4.5d
+			x: 11.0d
+			y: 1.0d
 		}
 		{
 			id: "0F86FC5CD130B2E1"
 			linked_quest: "78277DBC07D3C45C"
 			shape: "square"
-			x: 5.0d
-			y: -4.5d
+			x: 11.0d
+			y: 2.0d
 		}
 		{
 			id: "7D227159C48FAB94"
 			linked_quest: "0DC999F79A685194"
 			shape: "square"
-			x: 6.0d
-			y: -4.5d
+			x: 11.0d
+			y: 3.0d
 		}
 		{
 			id: "718938D16A6098A7"
 			linked_quest: "35F13B6D60361904"
 			shape: "square"
-			x: 7.0d
-			y: -4.5d
+			x: 11.0d
+			y: 4.0d
 		}
 		{
 			id: "713A4F2E798A8BDB"
@@ -282,33 +275,89 @@
 		{
 			id: "13ADAD728012FCB1"
 			linked_quest: "1C55AE6AD5BDE304"
-			x: 1.0d
-			y: -3.5d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			id: "7C16D34BB19B0B27"
 			linked_quest: "4058958C4743E522"
-			x: 1.0d
-			y: -4.5d
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			id: "690546E6711EE372"
+			linked_quest: "173A04F328414A36"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			id: "14BBF936C26E0DE7"
+			linked_quest: "7E755297E9685374"
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			id: "5D77547BEDCC8C01"
+			linked_quest: "033E74BC588E7EAD"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "34C19E3EFD65554D"
+			linked_quest: "2C35D4E01AEC02AA"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "6C5CB6A5A223CB66"
+			linked_quest: "48A8E3210B2BAE1C"
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			id: "40D9CA59F1C83729"
+			linked_quest: "3C173357029AB649"
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			id: "1DF239C119DF26F3"
+			linked_quest: "174DA15847665CF8"
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			id: "2FF35C2F777C21C9"
+			linked_quest: "04DE7C58F20B535A"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "5A2EFA6523C736B0"
+			linked_quest: "56CA2EB7812529C5"
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			id: "5F9DCB9698B1FBC7"
+			linked_quest: "52DAF93E2F3D688A"
+			x: 8.5d
+			y: 1.0d
 		}
 	]
 	quests: [
 		{
 			dependencies: ["0DBC148D92A9F69F"]
-			description: [
-				"Early game Circuits are hand craftable."
-				""
-				"Pick up the &3Circuit Assembler&r to make them a lot more efficient."
-			]
+			description: ["{quests.development.hull_lv.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_machine_hull"
 			id: "4252B1AF36FFB4F6"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "Hand crafted and artisanal"
-			title: "Craftable in &6Steam Age&r and &7LV&r"
+			subtitle: "{quests.development.hull_lv.subtitle}"
+			title: "{quests.development.hull_lv.title}"
 			x: 0.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -317,21 +366,19 @@
 				"26394C1290D70AB6"
 			]
 			description: [
-				"The &9Integrated&r Circuit line may not be a strict upgrade in terms of cost, but will tide you over as a stepping stone towards the next tier."
-				""
-				"They will require a MV &3Laser Engraver&r and a MV &3Cutting Machine&r."
+				"{quests.development.hull_mv.desc.1}"
 				"{@pagebreak}"
-				"&l&3Lore:&r&o In Omnifactory, and in previous Gregicality, this circuit line was called &9Refined&r and was standardized like further tiers."
+				"{quests.development.hull_mv.desc.2}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:mv_machine_hull"
 			id: "5E4FBB2287D9E635"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "Integrated Dynamics"
-			title: "Craftable in &bMV&r"
+			subtitle: "{quests.development.hull_mv.subtitle}"
+			title: "{quests.development.hull_mv.title}"
 			x: 1.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -341,20 +388,16 @@
 				"14D277A164202FF8"
 				"5E76D4C24026157D"
 			]
-			description: [
-				"&eMicro&r Circuits are where the &3Cleanroom&r becomes a requirement to progress."
-				""
-				"Don't get caught out by the &aMainframe&r - it requires a &3HV Circuit Assembler&r."
-			]
+			description: ["{quests.development.hull_hv.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:hv_machine_hull"
 			id: "1D717E742E50A6BD"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "Micro Miners"
-			title: "Craftable in &bMV&r and &6HV&r"
+			subtitle: "{quests.development.hull_hv.subtitle}"
+			title: "{quests.development.hull_hv.title}"
 			x: 2.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -363,25 +406,16 @@
 				"0017FFFAD7CD2EFE"
 				"58BBD540D7D4FF01"
 			]
-			description: [
-				"This is the &9Nano&r Circuit line."
-				""
-				"Starting from here, circuit progression will follow a pattern:"
-				""
-				"&9-&r Processor"
-				"&9-&r Assembly"
-				"&9-&r Cupercomputer"
-				"&9-&r Mainframe"
-			]
+			description: ["{quests.development.hull_ev.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:ev_machine_hull"
 			id: "29C2A82490261F1C"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "Nano Age"
-			title: "Craftable in &5EV&r"
+			subtitle: "{quests.development.hull_ev.subtitle}"
+			title: "{quests.development.hull_ev.title}"
 			x: 3.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -390,20 +424,16 @@
 				"698B5F65F2DE4439"
 				"145F71A817C5996E"
 			]
-			description: [
-				"Welcome to the &9Quantum&r Circuit line."
-				""
-				"You may want to invest in &aPBI&r at this point, as &dAdvanced SMDs&r will skyrocket your circuit production."
-			]
+			description: ["{quests.development.hull_iv.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:iv_machine_hull"
 			id: "66A23AC2EE9BC4AE"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "GregTech gets Quantum"
-			title: "Craftable in &1IV&r"
+			subtitle: "{quests.development.hull_iv.subtitle}"
+			title: "{quests.development.hull_iv.title}"
 			x: 4.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -412,20 +442,16 @@
 				"47087361D6DE7DCF"
 				"7AE681E2AB31EA0D"
 			]
-			description: [
-				"This is the &9Crystal&r Circuit line."
-				""
-				"It's locked behind &3Fusion&r."
-			]
+			description: ["{quests.development.hull_luv.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:luv_machine_hull"
 			id: "6906121936A688C0"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "Crystallisation"
-			title: "Craftable in &dLuV&r"
+			subtitle: "{quests.development.hull_luv.subtitle}"
+			title: "{quests.development.hull_luv.title}"
 			x: 5.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -434,24 +460,23 @@
 				"370FC1CDF5F9A9CC"
 				"359121584E056022"
 			]
-			description: [
-				"This is the &9Wetware&r Circuit line."
-				""
-				"It will be the biggest automation challenge to face in this modpack. Best of luck."
-			]
+			description: ["{quests.development.hull_zpm.desc}"]
 			hide_dependency_lines: true
 			icon: "gtceu:zpm_machine_hull"
 			id: "629E023752317A31"
 			progression_mode: "linear"
 			size: 1.0d
-			subtitle: "Soft and Wetware"
-			title: "Craftable in &cZPM&r"
+			subtitle: "{quests.development.hull_zpm.subtitle}"
+			title: "{quests.development.hull_zpm.title}"
 			x: 6.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["15EC934CE8F4DC86"]
-			description: ["On this line you can see the Steam, or &8&8ULV&r, equivalents."]
+			dependencies: [
+				"15EC934CE8F4DC86"
+				"2C35D4E01AEC02AA"
+			]
+			description: ["{quests.development.ulv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:ulv_universal_circuit"
 			id: "1C1976238A2FBEE0"
@@ -462,7 +487,7 @@
 				item: "tfg:ulv_universal_circuit"
 				type: "item"
 			}]
-			title: "&8ULV&r Circuits"
+			title: "{quests.development.ulv.title}"
 			x: -1.0d
 			y: -1.0d
 		}
@@ -470,16 +495,9 @@
 			dependencies: [
 				"5C17BF90DA2AAEEE"
 				"5E76D4C24026157D"
+				"3D8174C64DDC268B"
 			]
-			description: [
-				"Circuits along this line are &7LV&r, and are interchangeable in recipes."
-				""
-				"&cElectronic Circuits&r are the \"worst\" in terms of cost and effort required to produce, but you have to start somewhere."
-				""
-				"&eBasic Integrated Processors&r act as a middle layer between &cElectronic Circuits&r and &2Microchip Processors.&r"
-				""
-				"Finally, &2Microchip Processors&r will be the best option for the rest of the playthrough."
-			]
+			description: ["{quests.development.lv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:lv_universal_circuit"
 			id: "7707E5B061A7FFF7"
@@ -490,7 +508,7 @@
 				item: "tfg:lv_universal_circuit"
 				type: "item"
 			}]
-			title: "&7LV&r Circuits"
+			title: "{quests.development.lv.title}"
 			x: -1.0d
 			y: 0.0d
 		}
@@ -500,11 +518,7 @@
 				"38DE506FF5B32031"
 				"0DBC148D92A9F69F"
 			]
-			description: [
-				"Circuits along this line are &bMV&r, and are interchangeable in recipes."
-				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
-			]
+			description: ["{quests.development.mv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:mv_universal_circuit"
 			id: "45CA8DCA8226945A"
@@ -515,7 +529,7 @@
 				item: "tfg:mv_universal_circuit"
 				type: "item"
 			}]
-			title: "&bMV&r Circuits"
+			title: "{quests.development.mv.title}"
 			x: -1.0d
 			y: 1.0d
 		}
@@ -525,11 +539,7 @@
 				"5063FDFFBE3E4855"
 				"26394C1290D70AB6"
 			]
-			description: [
-				"Circuits along this line are &6HV&r, and are interchangeable in recipes."
-				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
-			]
+			description: ["{quests.development.hv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:hv_universal_circuit"
 			id: "54CF2016ED44CC45"
@@ -540,7 +550,7 @@
 				item: "tfg:hv_universal_circuit"
 				type: "item"
 			}]
-			title: "&6HV&r Circuits"
+			title: "{quests.development.hv.title}"
 			x: -1.0d
 			y: 2.0d
 		}
@@ -549,11 +559,7 @@
 				"49C1D61741AA288E"
 				"0017FFFAD7CD2EFE"
 			]
-			description: [
-				"Circuits along this line are &5EV&r, and are interchangeable in recipes."
-				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
-			]
+			description: ["{quests.development.ev.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:ev_universal_circuit"
 			id: "2A9ECD745E15A5D8"
@@ -564,7 +570,7 @@
 				item: "tfg:ev_universal_circuit"
 				type: "item"
 			}]
-			title: "&5EV&r Circuits"
+			title: "{quests.development.ev.title}"
 			x: -1.0d
 			y: 3.0d
 		}
@@ -575,11 +581,7 @@
 				"14D277A164202FF8"
 				"5CC9B0E832545569"
 			]
-			description: [
-				"Circuits along this line are &1IV&r, and are interchangeable in recipes."
-				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
-			]
+			description: ["{quests.development.iv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:iv_universal_circuit"
 			id: "5B0AC445672E14B6"
@@ -590,7 +592,7 @@
 				item: "tfg:iv_universal_circuit"
 				type: "item"
 			}]
-			title: "&1IV&r Circuits"
+			title: "{quests.development.iv.title}"
 			x: -1.0d
 			y: 4.0d
 		}
@@ -601,15 +603,7 @@
 				"145F71A817C5996E"
 				"58BBD540D7D4FF01"
 			]
-			description: [
-				"Circuits along this line are &dLuV&r, and are interchangeable in recipes."
-				""
-				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
-				""
-				"Make sure to set up &3wetware board production&r as soon as possible! These take a &6very long time&r to make."
-				""
-				"It's &dLuV&r, not &4LUV&r."
-			]
+			description: ["{quests.development.luv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:luv_universal_circuit"
 			id: "140E91C53C30C096"
@@ -620,7 +614,7 @@
 				item: "tfg:luv_universal_circuit"
 				type: "item"
 			}]
-			title: "&dLuV&r Circuits"
+			title: "{quests.development.luv.title}"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -630,7 +624,7 @@
 				"327C3E02CD751453"
 				"7AE681E2AB31EA0D"
 			]
-			description: ["Circuits along this line are &cZPM&r, and are interchangeable in recipes."]
+			description: ["{quests.development.zpm.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:zpm_universal_circuit"
 			id: "2E00E10D4E92F64D"
@@ -641,7 +635,7 @@
 				item: "tfg:zpm_universal_circuit"
 				type: "item"
 			}]
-			title: "&cZPM&r Circuits"
+			title: "{quests.development.zpm.title}"
 			x: -1.0d
 			y: 6.0d
 		}
@@ -650,7 +644,7 @@
 				"79E4E53E9DF45549"
 				"359121584E056022"
 			]
-			description: ["Circuits along this line are &3UV&r, and are interchangeable for each other."]
+			description: ["{quests.development.uv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:uv_universal_circuit"
 			id: "35EFFA6C85EFCA58"
@@ -661,17 +655,13 @@
 				item: "tfg:uv_universal_circuit"
 				type: "item"
 			}]
-			title: "&3UV&r Circuits"
+			title: "{quests.development.uv.title}"
 			x: -1.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["3B49BD004F38E1A2"]
-			description: [
-				"Congratulations! You've reached the end of the circuit progression."
-				""
-				"The only &4UHV&r circuit is the &6Wetware Mainframe&r, which is used for crafting some endgame stuff."
-			]
+			description: ["{quests.development.uhv.desc}"]
 			hide_dependency_lines: true
 			icon: "tfg:uhv_universal_circuit"
 			id: "177ADFFD33DDA624"
@@ -682,7 +672,7 @@
 				item: "tfg:uhv_universal_circuit"
 				type: "item"
 			}]
-			title: "&4UHV&r Circuits"
+			title: "{quests.development.uhv.title}"
 			x: -1.0d
 			y: 8.0d
 		}
@@ -696,21 +686,34 @@
 				item: "gtceu:cupronickel_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6958029B5514D4EC"]
-			id: "1CBA5477CB7C45E7"
-			shape: "square"
-			size: 1.0d
+			description: [
+				"{quests.development.explanation.desc.1}"
+				"{@pagebreak}"
+				"{quests.development.explanation.desc.2}"
+				"{@pagebreak}"
+				"{quests.development.explanation.desc.3}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:programmed_circuit"
+				tag: {
+					Configuration: 0
+				}
+			}
+			id: "78885A5847FAE785"
+			subtitle: "{quests.development.explanation.subtitle}"
 			tasks: [{
-				id: "1104AC52E0A0A472"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
+				id: "629C40E1C85EC9EC"
+				title: "{quests.development.explanation.task}"
+				type: "checkmark"
 			}]
-			x: 2.0d
-			y: -4.5d
+			title: "{quests.development.explanation.title}"
+			x: -1.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["{quests.development.subtitle}"]
