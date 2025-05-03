@@ -7,22 +7,15 @@
 		},
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 100
+			"chance": 30
 		},
 		{
 			"type": "tfc:biome"
 		},
 		{
 			"type": "tfc:climate",
-			"config": {
-				"max_temperature": -10,
-				"fuzzy": true
-			}
-		},
-		{
-			"type": "tfc:flat_enough",
-			"flatness": 0.3,
-			"max_depth": 5
+			"max_temperature": -10,
+			"fuzzy": true
 		},
 		{
 			"type": "minecraft:in_square"
