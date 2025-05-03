@@ -2119,16 +2119,6 @@ const registerAE2Recipes = (event) => {
 		.duration(60)
 		.EUt(256)
 
-	//charger
-	event.recipes.gtceu.assembler('ae2:charger')
-		.itemInputs(
-			'gtceu:hv_battery_buffer_4x',
-			'4x gtceu:mercury_barium_calcium_cuprate_quadruple_wire',)
-		.inputFluids(Fluid.of('tfg:fluix', 476))
-		.itemOutputs('ae2:charger')
-		.duration(200)
-		.EUt(480)
-
 	// Fluix block
 
 	event.recipes.gtceu.fluid_solidifier('ae2:solidify_fluix_block')

@@ -201,51 +201,37 @@ const registerExtendedAE2Recipes = (event) => {
     //#region bus
 
     //ex import bus part
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_import_bus_part')
+    event.recipes.gtceu.assembler('expatternprovider:ex_import_bus_part')
         .itemInputs(
-            '2x #forge:plates/tungsten_steel',
-            '8x ae2:calculation_processor',
-            '4x megacells:accumulation_processor',
-            '4x ae2:annihilation_core',
-            '2x ae2:import_bus',
-            '2x gtceu:iv_conveyor_module',
-            '2x gtceu:iv_electric_pump',
-            'gtceu:iv_robot_arm',
-            '4x #forge:rods/tungsten_steel',
-            '8x #forge:bolts/tungsten_steel',
-            '4x ae2:speed_card',)
-        .inputFluids(Fluid.of('gtceu:polybenzimidazole', 144))
+            '1x #forge:plates/stainless_steel',
+            '2x ae2:annihilation_core',
+            '2x gtceu:hv_robot_arm',
+            '1x megacells:accumulation_processor')
+        .inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 144))
         .itemOutputs('expatternprovider:ex_import_bus_part')
+        .circuit(2)
         .duration(200)
-        .EUt(7680)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.HV])
 
     //ex export bus part
-    event.recipes.gtceu.assembly_line('expatternprovider:ex_export_bus_part')
+    event.recipes.gtceu.assembler('expatternprovider:ex_export_bus_part')
         .itemInputs(
-        '2x #forge:plates/tungsten_steel',
-        '8x ae2:calculation_processor',
-        '4x megacells:accumulation_processor',
-        '4x ae2:formation_core',
-        '2x ae2:export_bus',
-        '2x gtceu:iv_conveyor_module',
-        '2x gtceu:iv_electric_pump',
-        'gtceu:iv_robot_arm',
-        '4x #forge:rods/tungsten_steel',
-        '8x #forge:bolts/tungsten_steel',
-        '4x ae2:speed_card',)
-    .inputFluids(Fluid.of('gtceu:polybenzimidazole', 144))
-    .itemOutputs('expatternprovider:ex_export_bus_part')
-    .duration(200)
-    .EUt(7680)
-    .cleanroom(CleanroomType.CLEANROOM)
+            '1x #forge:plates/stainless_steel',
+            '2x ae2:formation_core',
+            '2x gtceu:hv_robot_arm',
+            '1x megacells:accumulation_processor')
+        .inputFluids(Fluid.of('gtceu:polyvinyl_chloride', 144))
+        .itemOutputs('expatternprovider:ex_export_bus_part')
+        .circuit(3)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 
     //tag export bus
     event.recipes.gtceu.assembler('expatternprovider:tag_export_bus')
         .itemInputs(
-            'expatternprovider:ex_export_bus_part',
+            'ae2:export_bus',
             '2x ae2:logic_processor',
-            'gtceu:digital_interface_cover',)
+            '#gtceu:circuits/ulv')
         .itemOutputs('expatternprovider:tag_export_bus')
         .duration(100)
         .EUt(480)
@@ -255,7 +241,7 @@ const registerExtendedAE2Recipes = (event) => {
         .itemInputs(
             'ae2:storage_bus',
             '2x ae2:logic_processor',
-            'gtceu:digital_interface_cover',)
+            '#gtceu:circuits/ulv')
         .itemOutputs('expatternprovider:tag_storage_bus')
         .duration(100)
         .EUt(480)
@@ -263,9 +249,9 @@ const registerExtendedAE2Recipes = (event) => {
     //mod export bus
     event.recipes.gtceu.assembler('expatternprovider:mod_export_bus')
         .itemInputs(
-            'expatternprovider:ex_export_bus_part',
+            'ae2:export_bus',
             '2x ae2:calculation_processor',
-            'gtceu:digital_interface_cover',)
+            '#gtceu:circuits/ulv')
         .itemOutputs('expatternprovider:mod_export_bus')
         .duration(100)
         .EUt(480)
@@ -275,7 +261,7 @@ const registerExtendedAE2Recipes = (event) => {
         .itemInputs(
             'ae2:storage_bus',
             '2x ae2:calculation_processor',
-            'gtceu:digital_interface_cover',)
+            '#gtceu:circuits/ulv')
         .itemOutputs('expatternprovider:mod_storage_bus')
         .duration(100)
         .EUt(480)
@@ -283,8 +269,9 @@ const registerExtendedAE2Recipes = (event) => {
     //precise export bus
     event.recipes.gtceu.assembler('expatternprovider:precise_export_bus')
         .itemInputs(
-            'expatternprovider:ex_export_bus_part',
-            '2x ae2:calculation_processor',)
+            'ae2:export_bus',
+            '2x ae2:engineering_processor',
+            '#gtceu:circuits/ulv')
         .itemOutputs('expatternprovider:precise_export_bus')
         .duration(100)
         .EUt(480)
@@ -293,7 +280,8 @@ const registerExtendedAE2Recipes = (event) => {
     event.recipes.gtceu.assembler('expatternprovider:precise_storage_bus')
         .itemInputs(
             'ae2:storage_bus',
-            '2x ae2:calculation_processor',)
+            '2x ae2:engineering_processor',
+            '#gtceu:circuits/ulv')
         .itemOutputs('expatternprovider:precise_storage_bus')
         .duration(100)
         .EUt(480)
@@ -301,34 +289,20 @@ const registerExtendedAE2Recipes = (event) => {
     //threshold export bus
     event.recipes.gtceu.assembler('expatternprovider:threshold_export_bus')
         .itemInputs(
-            'expatternprovider:ex_export_bus_part',
+            'ae2:export_bus',
             '2x ae2:logic_processor',
-            'ae2:level_emitter',)
+            'ae2:level_emitter')
         .itemOutputs('expatternprovider:threshold_export_bus')
         .duration(100)
         .EUt(480)
 
-    
-
     //#endregion
-
-    //caner
-    event.recipes.gtceu.assembler('expatternprovider:caner')
-        .itemInputs(
-            '#forge:frames/stainless_steel',
-            'expatternprovider:ingredient_buffer',
-            'ae2:import_bus',
-            'ae2:export_bus',
-            '2x ae2:calculation_processor')
-        .itemOutputs('expatternprovider:caner')
-        .duration(100)
-        .EUt(480)
 
     //active formation plane
     event.recipes.gtceu.assembler('expatternprovider:active_formation_plane')
         .itemInputs(
             'ae2:formation_plane',
-            'expatternprovider:ex_export_bus_part',
+            'expatternprovider:export_bus',
             '2x ae2:engineering_processor')
         .itemOutputs('expatternprovider:active_formation_plane')
         .duration(100)
@@ -349,7 +323,7 @@ const registerExtendedAE2Recipes = (event) => {
         .itemInputs(
             'ae2:level_emitter',
             '2x minecraft:redstone_torch',
-            '2x ae2:calculation_processor',)
+            '2x ae2:calculation_processor')
         .itemOutputs('expatternprovider:threshold_level_emitter')
         .duration(100)
         .EUt(480)
@@ -383,13 +357,12 @@ const registerExtendedAE2Recipes = (event) => {
     //me packing tape
     event.recipes.gtceu.assembler('expatternprovider:me_packing_tape')
         .itemInputs(
-            '#forge:rods/stainless_steel',
-            '8x #forge:dusts/fluix',
-            '4x #forge:plates/paper',)
+            '4x #forge:dusts/fluix',
+            '2x #forge:plates/paper')
         .inputFluids(Fluid.of('gtceu:glue', 144))
         .itemOutputs(Item.of('expatternprovider:me_packing_tape', '{Damage:0}'))
         .duration(100)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.MV])
 
     //ex pattern access
     event.recipes.gtceu.assembler('expatternprovider:ex_pattern_access_part')
@@ -524,21 +497,6 @@ const registerExtendedAE2Recipes = (event) => {
             'gtceu:hv_robot_arm',
             'gtceu:hv_electric_pump',)
         .itemOutputs('expatternprovider:ingredient_buffer')
-        .duration(200)
-        .EUt(1920)
-
-    event.recipes.gtceu.assembler('expatternprovider:ex_charger')
-        .itemInputs(
-            '4x ae2:charger',
-            '4x ae2:storage_bus',
-            'ae2:cable_interface',
-            '4x #forge:double_wires/uranium_triplatinum',
-            '4x ae2:logic_processor',
-            '4x ae2:engineering_processor',
-            '2x megacells:accumulation_processor',
-
-        )
-        .itemOutputs('expatternprovider:ex_charger')
         .duration(200)
         .EUt(1920)
 
