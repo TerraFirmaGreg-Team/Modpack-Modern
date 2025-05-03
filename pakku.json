@@ -16,7 +16,8 @@
         "server.properties",
         "server_starter.conf",
         "server-icon.png",
-        "start_server.bat"
+        "start_server.bat",
+        "README.md"
     ],
     "client_overrides": [
         "resourcepacks"
@@ -218,12 +219,6 @@
             "side": "BOTH"
         },
         "particular-reforged": {
-            "side": "BOTH"
-        },
-        "caelum": {
-            "side": "BOTH"
-        },
-        "tfc-caelum": {
             "side": "BOTH"
         }
     }

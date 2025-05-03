@@ -34,6 +34,10 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:flint_knife',
     'gtceu:firebrick',
     'gtceu:firebricks',
+    'gtceu:fireclay_dust',
+    'gtceu:small_fireclay_dust',
+    'gtceu:tiny_fireclay_dust',
+    'gtceu:compressed_fireclay',
     'gtceu:wood_drum',
     'gtceu:primitive_blast_furnace',
     'gtceu:iron_pickaxe',
@@ -50,6 +54,9 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:stone_wrench_tip',
 
     'gtceu:treated_wood_hanging_sign',
+    'gtceu:treated_wood_boat',
+    'gtceu:treated_wood_chest_boat',
+    'gtceu:treated_wood_sign',
 
     'gtceu:rubber_sapling', 
     'gtceu:rubber_log', 

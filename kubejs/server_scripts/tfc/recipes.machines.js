@@ -409,6 +409,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:small_sheepskin_hide')
 		.itemOutputs('tfc:wool')
 		.duration(100)
+		.circuit(3)
 		.EUt(4)
 
 	// 1x Medium SheepSkin -> 1x Wool
@@ -416,6 +417,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:medium_sheepskin_hide')
 		.itemOutputs('2x tfc:wool')
 		.duration(100)
+		.circuit(3)
 		.EUt(4)
 
 	// 1x Large SheepSkin -> 1x Wool
@@ -423,6 +425,7 @@ function registerTFCMachineRecipes(event) {
 		.itemInputs('tfc:large_sheepskin_hide')
 		.itemOutputs('3x tfc:wool')
 		.duration(100)
+		.circuit(3)
 		.EUt(4)
 
 	// Wool Yarn
@@ -466,4 +469,40 @@ function registerTFCMachineRecipes(event) {
 
 	// Jute Fiber
 	generateMixerRecipe(event, 'tfc:jute', Fluid.of('minecraft:water', 200), 'tfc:jute_fiber', null, [], 100, 4, 16, 'tfg:tfc/jute_fiber')
+
+	// Ceramic Recycling
+	event.recipes.gtceu.macerator('tfg:sherd_to_brick_dust')
+		.itemInputs('firmalife:pottery_sherd')
+		.itemOutputs('#forge:dusts/brick')
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:ceramic_molds')
+		.itemInputs('#tfc:fired_molds')
+		.itemOutputs('2x #forge:dusts/brick')
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:large_vessels')
+		.itemInputs('#tfc:fired_large_vessels')
+		.itemOutputs('5x #forge:dusts/brick')
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:casting_channel')
+		.itemInputs('tfcchannelcasting:channel')
+		.itemOutputs('1x #forge:dusts/brick')
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.duration(20)
+		.EUt(2)
+
+	event.recipes.gtceu.macerator('tfg:mold_table')
+		.itemInputs('tfcchannelcasting:mold_table')
+		.itemOutputs('5x #forge:dusts/brick')
+		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+		.duration(20)
+		.EUt(2)
 }

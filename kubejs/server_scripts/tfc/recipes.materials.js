@@ -2,7 +2,7 @@
 
 function registerTFCMaterialsRecipes(event) {
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 		let tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY)
 
 		if (tfcProperty == null) {
