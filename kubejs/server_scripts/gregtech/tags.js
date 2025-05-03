@@ -63,6 +63,8 @@ const registerGTCEUItemTags = (event) => {
     event.add('minecraft:piglin_loved', 'gtceu:poor_raw_pyrite')
     event.add('minecraft:piglin_loved', 'gtceu:raw_pyrite')
     event.add('minecraft:piglin_loved', 'gtceu:rich_raw_pyrite')
+
+    event.remove('forge:gems', 'gtceu:coke_gem')
 }
 
 const registerGTCEUBlockTags = (event) => {
