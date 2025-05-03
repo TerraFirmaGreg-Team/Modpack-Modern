@@ -1049,7 +1049,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:package_filter', [
 		'ABA'
 	], {
-		A: '#forge:nuggets/zinc',
+		A: '#forge:bolts/bismuth',
 		B: '#forge:cloth'
 	}).id('tfg:create/shaped/package_filter')
 
@@ -1529,7 +1529,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:rods/wrought_iron',
 		B: '#forge:springs/wrought_iron',
 		C: 'gtceu:ulv_machine_hull',
-		D: 'create:cardboard_block',
+		D: 'create:bound_cardboard_block',
 		E: 'create:electron_tube',
 		F: 'tfc:metal/bars/wrought_iron'
 	}).id('tfg:create/shaped/packager')
@@ -1552,7 +1552,7 @@ const registerCreateRecipes = (event) => {
 		.EUt(20)
 
 	event.shaped('create:package_frogport', [
-		' A ',
+		'GAG',
 		'BCB',
 		'EDF'
 	], {
@@ -1561,11 +1561,12 @@ const registerCreateRecipes = (event) => {
 		C: '#tfg:shafts',
 		D: 'create:item_vault',
 		E: '#forge:tools/screwdrivers',
-		F: '#forge:tools/wrenches'
+		F: '#forge:tools/wrenches',
+		G: '#forge:plates/wrought_iron',
 	}).id('tfg:create/shaped/package_frogport')
 
 	event.recipes.gtceu.assembler('tfg:create/package_frogport')
-		.itemInputs('#tfg:shafts', '2x #forge:small_gears/brass', 'create:item_vault')
+		.itemInputs('#tfg:shafts', '2x #forge:plates/wrought_iron', '2x #forge:small_gears/brass', 'create:item_vault')
 		.inputFluids(Fluid.of('gtceu:glue', 50))
 		.itemOutputs('create:package_frogport')
 		.duration(200)
@@ -1575,6 +1576,14 @@ const registerCreateRecipes = (event) => {
 		'create:track_signal',
 		'gtceu:wood_crate'
 	]).id('create:crafting/shapeless/white_postbox')
+
+	event.shaped('create:white_table_cloth', [
+		'AA',
+		'BB'
+	], {
+		A: '#forge:cloth',
+		B: 'tfg:scaffolding_frame'
+	}).id('tfg:create/shaped/white_table_cloth')
 
 	event.recipes.gtceu.laser_engraver('create:transmitter')
 		.itemInputs('#forge:double_plates/red_alloy')
@@ -1613,7 +1622,7 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:glass_panes',
 		B: 'create:stock_link',
 		C: '#gtceu:resistors',
-		D: '#forge:plates/wrought_iron'
+		D: '#forge:plates/rose_quartz'
 	}).id('tfg:create/shaped/stock_ticker')
 
 	event.shaped('create:redstone_requester', [
@@ -1624,22 +1633,23 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:plates/wrought_iron',
 		B: 'create:stock_link',
 		C: '#gtceu:circuits/ulv',
-		D: '#forge:plates/red_alloy'
+		D: '#forge:plates/rose_quartz'
 	}).id('tfg:create/shaped/redstone_requester')
 
 	event.shaped('2x create:factory_gauge', [
 		'CAC',
 		'DBE',
-		' C '
+		'FGF'
 	], {
-		A: 'tfc:lens',
+		A: 'create:precision_mechanism',
 		B: 'create:stock_link',
-		C: '#forge:foils/annealed_copper',
+		C: '#forge:screws/aluminium',
 		D: '#gtceu:diodes',
-		E: 'create:precision_mechanism'
+		E: '#gtceu:circuits/lv',
+		F: '#forge:plates/rose_quartz',
+		G: '#forge:tools/wrenches'
 	}).id('tfg:create/shaped/factory_gauge')
 	
-
 	//#endregion
 
 	//#region Decoration blocks
