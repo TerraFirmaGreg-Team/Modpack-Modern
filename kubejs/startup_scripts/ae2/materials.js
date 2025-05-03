@@ -11,7 +11,7 @@ const registerAE2Materials = (event) => {
             GTMaterialFlags.DISABLE_DECOMPOSITION, 
             GTMaterialFlags.FORCE_GENERATE_BLOCK
         )
-        .components('1x silicon', '2x oxygen')
+        .components('1x nether_quartz', '1x certus_quartz', '1x ruby')
         .color(0x6D5BB6)
         .secondaryColor(0x1E1932)
 }
