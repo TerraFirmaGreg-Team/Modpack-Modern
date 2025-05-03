@@ -18,22 +18,15 @@ const registerMegaCellsRecipes = (event) => {
 
     //printed accumulation circuit
     event.recipes.gtceu.forming_press('megacells:printed_accumulation_processor')
-        .itemInputs('#forge:plates/enriched_naquadah')
+        .itemInputs('#forge:dense_plates/silicon')
         .notConsumable('megacells:accumulation_processor_press')
         .itemOutputs('megacells:printed_accumulation_processor')
         .duration(20)
         .EUt(1920)
 
-    // Inscrdiber Silicon Press
-    event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press_iron')
-        .itemInputs('#forge:plates/cast_iron', 'ae2:singularity')
-        .notConsumable('#forge:lenses/black')
-        .itemOutputs('megacells:accumulation_processor_press')
-        .duration(6000)
-        .EUt(1920)
-
-    event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press_wrought_iron')
-        .itemInputs('#forge:plates/wrought_iron', 'ae2:singularity')
+    // Inscriber Silicon Press
+    event.recipes.gtceu.laser_engraver('ae2:accumulation_processor_press')
+        .itemInputs('#forge:plates/naquadah')
         .notConsumable('#forge:lenses/black')
         .itemOutputs('megacells:accumulation_processor_press')
         .duration(4000)
@@ -73,7 +66,7 @@ const registerMegaCellsRecipes = (event) => {
         'BBB'
     ], {
         A: 'ae2:quartz_vibrant_glass',
-        B: '#forge:plates/enriched_naquadah',
+        B: '#forge:plates/maraging_steel_300',
         C: '#forge:fine_wires/niobium_titanium',
         D: '#gtceu:circuits/iv',
     }).id('tfg:crafting/mega_item_cell_housing')

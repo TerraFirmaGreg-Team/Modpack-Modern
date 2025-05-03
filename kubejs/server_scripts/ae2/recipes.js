@@ -830,15 +830,15 @@ const registerAE2Recipes = (event) => {
 	// Wireless Crafting Terminal
 	event.recipes.gtceu.assembler('ae2:wireless_crafting_terminal')
 		.itemInputs(
-			'2x gtceu:hv_lithium_battery',
-			'2x gtceu:luv_sensor',
-			'gtceu:luv_emitter',
-			'2x #forge:rods/osmiridium',
+			'2x #gtceu:batteries/ev',
+			'2x gtceu:ev_sensor',
+			'gtceu:ev_emitter',
+			'2x #forge:rods/ultimet',
 			'ae2:wireless_terminal',
 			'ae2:crafting_terminal')
 		.itemOutputs('ae2:wireless_crafting_terminal')
-		.duration(30)
-		.EUt(250)
+		.duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
 
 	//#region Storage Components
 

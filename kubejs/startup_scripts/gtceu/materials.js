@@ -36,6 +36,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_GEAR,
 		GENERATE_FRAME,
 		GENERATE_PLATE,
+		GENERATE_DENSE,
 		GENERATE_RING
 	} = $MATERIAL_FLAGS
 
@@ -208,6 +209,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.SterlingSilver.addFlags(GENERATE_RING);
 
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
+
+	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
