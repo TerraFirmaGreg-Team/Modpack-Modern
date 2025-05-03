@@ -993,7 +993,38 @@ const registerGTCEURecipes = (event) => {
 		.duration(GTMaterials.Clay.getMass() * 13)
 		.EUt(GTValues.VA[GTValues.HV])
 
+	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
+		.itemInputs('gtceu:stone_dust')
+		.chancedOutput('#forge:dusts/quartzite', 2500, 0)
+		.chancedOutput('#forge:dusts/potassium_feldspar', 2500, 0)
+		.chancedOutput('#forge:dusts/marble', 2222, 0)
+		.chancedOutput('#forge:dusts/biotite', 1111, 0)
+		.chancedOutput('#forge:dusts/metal_mixture', 825, 80)
+		.chancedOutput('#forge:dusts/sodalite', 550, 55)
+		.duration(12 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+
 	//#endregion
+
+	//#region Tape
+
+	event.shaped('gtceu:basic_tape', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: 'minecraft:paper',
+		B: 'tfc:glue'
+	}).id('tfg:shaped/basic_tape_from_glue')
+
+	event.recipes.gtceu.assembler('basic_tape_from_glue')
+		.itemInputs('2x minecraft:paper', 'tfc:glue')
+		.itemOutputs('2x gtceu:basic_tape')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	//#endregion 
 
 	// TODO: Greate again...
 	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])
