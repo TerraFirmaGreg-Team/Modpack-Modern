@@ -67,49 +67,17 @@ const registerAE2WTLibRecipes = (event) => {
         .EUt(64000)
         
 
-    //event.remove({ output: 'ae2wtlib:wireless_universal_terminal' })
+    event.remove({ output: 'ae2wtlib:wireless_universal_terminal' })
 
-    //event.shaped('ae2wtlib:wireless_universal_terminal', [
-    //    'DED',
-    //    'ABC',
-    //    'DFD'
-    //], {
-    //    A: 'ae2:wireless_crafting_terminal',
-    //    B: 'ae2wtlib:wireless_pattern_encoding_terminal',
-    //    C: 'ae2wtlib:wireless_pattern_access_terminal',
-    //    D: '#forge:plates/rhodium',
-    //    E: 'gtceu:iv_sensor',
-    //    F: 'gtceu:iv_emitter'
-    //})
-    //.modifyResult((craftingGrid, result) => {
-    //    try {
-    //        result.nbt.putInt("crafting", 1);
-    //        result.nbt.putInt("pattern_access", 1);
-    //        result.nbt.putInt("pattern_encoding", 1);
-    //    }
-    //    catch (exception) {
-    //        console.log(exception)
-    //    }
-    //    return result;
-    //})
-    //.id('tfg:shaped/wireless_universal_terminal')
-
-    //event.recipes.gtceu.assembler('ae2wtlib:wireless_universal_terminal')
-    //    .itemInputs(
-    //        'ae2:wireless_crafting_terminal',
-    //        'ae2wtlib:wireless_pattern_encoding_terminal',
-    //        'ae2wtlib:wireless_pattern_access_terminal',
-    //        '#gtceu:batteries/iv',
-    //        '1x gtceu:iv_sensor',
-    //        '1x gtceu:iv_emitter',
-    //        '2x #forge:rods/tungsten_carbide')
-    //    .itemOutputs('ae2wtlib:wireless_universal_terminal')
-    //    .duration(300)
-    //    .EUt(GTValues.VA[GTValues.IV])
-    //    .modifyResult((craftingGrid, result) => {
-    //        result.nbt.putInt("crafting", 1);
-    //        result.nbt.putInt("pattern_access", 1);
-    //        result.nbt.putInt("pattern_encoding", 1);
-    //        return result;
-    //    })
+    event.recipes.gtceu.assembler('ae2wtlib:wireless_universal_terminal')
+        .itemInputs(
+            'ae2:wireless_crafting_terminal',
+            'ae2wtlib:wireless_pattern_encoding_terminal',
+            'ae2wtlib:wireless_pattern_access_terminal',
+            '1x gtceu:iv_sensor',
+            '1x gtceu:iv_emitter',
+            '2x #forge:plates/rhodium')
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.IV])
 }
