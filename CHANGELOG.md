@@ -1,19 +1,32 @@
 # Changelog
 
 ## [Unreleased]
+0.9 is now out of alpha and into beta! If you're upgrading from 0.7, we put together a guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.7-to-0.9).
 ### Changes
 - Removed Caelum + TFC Caelum because they were causing crashes for MacOS and other graphics issues, but you can re-add them if you'd like
 - Added recipe to separate fertilizer into pure sources, and mix them back together. (Redeix)
 - Added recipes to sew hides together and cut them apart. (Redeix)
+- Ingot piles now have improved textures for TFC metals (AirRice)
+- Fixed issue where red alloy and tin alloy had missing textures in casting tables (AirRice)
+- Improvements to MV quests (TomPlop)
+- Fixed large boilers from being extremely explodey
+- Greate shafts, large cogs, and belts are now significantly cheaper
 - Update CarryOn so now it works with all TFC chests
 - Overhauled the TFG Ores section in the field guide, and it's now 100% accurate again!
-- Large cogwheels are now cheaper
+- The other AE2 wireless terminals are now craftable in EV instead of LuV
+- AE2 MEGA things are also now available in IV
 - Added recycling recipes for ceramic molds, large vessels, casting channels and tables
 - Fixed issue where the speed buff from Aged Rum was being removed
 - Fixed speed of bulk washing
 - Lowered SU requirements of some more Create machines
 - Reduced how many sticks were being placed in the nether
 - Fixed new supports to work correctly
+- Changed recipe of create filters so they're available earlier
+- Fixed some duping recipes
+- Clay and (plain) stone dust decomposition now requires HV
+- Fixed a rare race condition when creating material-based recipes
+- Fixed cast iron tongs not being craftable
+- Added a gas collector recipe to the beneath
 
 ## [0.9.2]
 ### Changes
