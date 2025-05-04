@@ -895,10 +895,12 @@ const registerGTCEURecipes = (event) => {
 		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
 		.id('tfg:sealed_barrel/prepared_leather_gloves')
 
-	event.recipes.tfc.barrel_sealed(1000)
+	event.recipes.firmalife.vat()
 		.outputItem('tfg:latex_soaked_gloves')
 		.inputs('tfg:prepared_leather_gloves', Fluid.of('tfg:vulcanized_latex', 1000))
-		.id('tfg:sealed_barrel/latex_soaked_gloves')
+		.length(300)
+		.temperature(200)
+		.id('tfg:vat/latex_soaked_gloves')
 
 	event.recipes.firmalife.oven('tfg:latex_soaked_gloves', 120, 1200, 'gtceu:rubber_gloves')
 		.id('tfg:oven/rubber_gloves')

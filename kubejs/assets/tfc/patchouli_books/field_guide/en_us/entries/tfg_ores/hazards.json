@@ -38,7 +38,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:latex_soaked_gloves",
-			"text": "Prepared leather gloves are then treated with $(thing)Vulcanized Latex$(), one step away from rubber."
+			"text": "Prepared leather gloves are then heated in a $(thing)vat$() with $(thing)Vulcanized Latex$(), one step away from rubber."
 		},
 		{
 			"type": "patchouli:spotlight",
