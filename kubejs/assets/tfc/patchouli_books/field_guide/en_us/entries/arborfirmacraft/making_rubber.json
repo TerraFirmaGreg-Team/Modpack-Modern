@@ -23,7 +23,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "tfg:vulcanized_latex_bucket",
-			"title": "I am rubber, you are glue",
+			"title": "I am rubber...",
 			"text": "The other main use of $(thing)Latex$() is to make rubber. To make the latex stronger and harder for industrial uses, it needs to be heated (either in a $(l:firmalife/oven_appliances#vat)Vat$() or a $(l:mechanics/pot)Pot$()) with added $(thing)Sulfur Powder$() to produce $(thing)Vulcanized Latex$(). In fact, this whole process is called vulcanization!"
 		},
 		{
@@ -35,7 +35,7 @@
 		{
 			"type": "patchouli:spotlight",
 			"item": "gtceu:rubber_ingot",
-			"text": "$(thing)Rubber Ingots$() have a number of very useful applications, such as for crafting $(thing)Belts$() for your factories or for $(bold)insulateing$() $(thing)electrical wires$(). Insulated wires become safe to touch without accidentally electrocuting yourself, and have reduced voltage loss."
+			"text": "$(thing)Rubber Ingots$() have a number of very useful applications, such as for crafting $(thing)Belts$() for your factories or for $(bold)insulating$() $(thing)electrical wires$(). Insulated wires become safe to touch without accidentally electrocuting yourself, and have reduced voltage loss."
 		},
 		{
 			"type": "patchouli:spotlight",
