@@ -570,32 +570,27 @@ function registerVintageImprovementsRecipes(event) {
 		processingTime: 100
 	}).id('tfg:vi/vacuum/rubber')
 
-	// #region Vaccuming rubber wood stuff for latex
-	// This would be a lot nicer if VI allowed for tags as recipe inputs but oh well...
-	Ingredient.of("#tfg:latex_logs").itemIds.forEach(log =>
-		event.custom({
-			type: 'vintageimprovements:vacuumizing',
-			ingredients: [{ item: `${log}` }],
-			results: [{ fluid: 'tfg:latex', amount: 1000 }],
-			processingTime: 300
-		}).id(`tfg:vi/vacuumizing/latex_from_${log.split(':')[1]}`)
-	)
-	Ingredient.of("#tfg:rubber_saplings").itemIds.forEach(sapling =>
-		event.custom({
-			type: 'vintageimprovements:vacuumizing',
-			ingredients: [{ item: `${sapling}` }],
-			results: [{ fluid: 'tfg:latex', amount: 100 }],
-			processingTime: 100
-		}).id(`tfg:vi/vacuumizing/latex_from_${sapling.split('/')[2]}_sapling`)
-	)
-	Ingredient.of("#tfg:rubber_leaves").itemIds.forEach(leaves =>
-		event.custom({
-			type: 'vintageimprovements:vacuumizing',
-			ingredients: [{ item: `${leaves}` }],
-			results: [{ fluid: 'tfg:latex', amount: 50 }],
-			processingTime: 30
-		}).id(`tfg:vi/vacuumizing/latex_from_${leaves.split('/')[2]}_leaves`)
-	)
+	// Vaccuming rubber wood stuff for latex
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:latex_logs' }],
+		results: [{ fluid: 'tfg:latex', amount: 250 }],
+		processingTime: 600
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_saplings' }],
+		results: [{ fluid: 'tfg:latex', amount: 100 }],
+		processingTime: 300
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_leaves' }],
+		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		processingTime: 150
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
+
+	// Vulc. latex to raw rubber pulp
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],

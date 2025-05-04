@@ -178,21 +178,21 @@ const registerAFCRecipes = (event) => {
 	// 	.EUt(2)
 
 	event.recipes.gtceu.extractor('latex_from_log')
-		.itemInputs('#tfg:latex_logs')
+		.itemInputs('4x #tfg:latex_logs')
 		.outputFluids(Fluid.of('tfg:latex', 1000))
-		.duration(100)
+		.duration(600)
 		.EUt(20)
 
 	event.recipes.gtceu.extractor('latex_from_sapling')
 		.itemInputs('10x #tfg:rubber_saplings')
 		.outputFluids(Fluid.of('tfg:latex', 1000))
-		.duration(100)
+		.duration(750)
 		.EUt(20)
 
 	event.recipes.gtceu.extractor('latex_from_leaves')
 		.itemInputs('20x #tfg:rubber_leaves')
 		.outputFluids(Fluid.of('tfg:latex', 1000))
-		.duration(100)
+		.duration(750)
 		.EUt(20)
 
 	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', '3x gtceu:carbon_dust')
