@@ -1116,8 +1116,8 @@
 		}
 		{
 			dependencies: [
+				"1DF4DBE41BB0B6FD"
 				"4891E995D3EC2BD1"
-				"5F3063C539C9CBBF"
 			]
 			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
 			id: "6903C72A254A7B08"
@@ -4518,7 +4518,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["46C33ACAF8F756F8"]
 			description: [
 				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -4574,7 +4573,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["46C33ACAF8F756F8"]
 			description: [
 				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -4750,7 +4748,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["2D2CB8104E40E808"]
 			description: ["The &6Nano Saber&r is a powerful weapon you’ll be able to unlock once you reach &5EV&r. Simply use &dShift + Right-Click&r to activate the &cbzzzzz mode&r."]
 			id: "7A4C6930EF68646E"
 			tasks: [{
@@ -4762,7 +4759,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["2D2CB8104E40E808"]
 			description: ["The &6Item Magnet&r is exactly what you'd expect — a magnet that pulls nearby &6items&r straight to you. &aVery useful&r. What more could you ask for?"]
 			id: "49D2EFFFC15563F9"
 			tasks: [{
@@ -4792,7 +4788,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["57FE828BAA8F6276"]
 			description: ["The &6Face Mask&r will protect you from &cinhaling dangerous dust&r. It’s quite &aeasy to craft&r and should prevent issues when working with &5arsenic&r."]
 			id: "361AC06D62D9BCCF"
 			tasks: [{

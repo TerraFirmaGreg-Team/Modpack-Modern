@@ -285,18 +285,6 @@
 			y: -2.0d
 		}
 		{
-			id: "690546E6711EE372"
-			linked_quest: "173A04F328414A36"
-			x: 11.0d
-			y: 0.0d
-		}
-		{
-			id: "14BBF936C26E0DE7"
-			linked_quest: "7E755297E9685374"
-			x: 11.0d
-			y: -1.0d
-		}
-		{
 			id: "5D77547BEDCC8C01"
 			linked_quest: "033E74BC588E7EAD"
 			x: 0.0d
@@ -717,5 +705,5 @@
 		}
 	]
 	subtitle: ["{quests.development.subtitle}"]
-	title: "quests.development"
+	title: "{quests.development}"
 }
