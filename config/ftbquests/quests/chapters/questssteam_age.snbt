@@ -24,7 +24,7 @@
 			id: "23A27702FF816291"
 			linked_quest: "6903C72A254A7B08"
 			x: -13.5d
-			y: 7.5d
+			y: 14.0d
 		}
 		{
 			id: "1F1E7097C015BE33"
@@ -1344,7 +1344,6 @@
 			dependencies: [
 				"69BDD31A69062B6C"
 				"43D0B4F2ACB9931B"
-				"6903C72A254A7B08"
 				"2C35D4E01AEC02AA"
 			]
 			description: ["{quests.steam_age.lv_circuit.desc}"]

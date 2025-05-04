@@ -13,7 +13,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "$(li)$(l:tfg_tips/faqs#boats)Why did my boat sink?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make yeast starter?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make pineapple fiber?$()$(li)$(l:tfg_tips/faqs#jam)How do I make jam?$()$(li)$(l:tfg_tips/faqs#resin)How do I make Sticky Resin?$()$(li)$(l:tfg_tips/faqs#chunks)How do I force-load a chunk or increase my limit?$()"
+			"text": "$(li)$(l:tfg_tips/faqs#boats)Why did my boat sink?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make yeast starter?$()$(li)$(l:tfg_tips/faqs#dried_fruit)How do I make pineapple fiber?$()$(li)$(l:tfg_tips/faqs#jam)How do I make jam?$()$(li)$(l:tfg_tips/faqs#resin)How do I make Rubber?$()$(li)$(l:tfg_tips/faqs#chunks)How do I force-load a chunk or increase my limit?$()"
 		},
 		{
 			"type": "patchouli:text",
@@ -38,11 +38,11 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "resin",
-			"text": "$(italic)How do I make sticky resin?$()$(br2)First, grow some $(thing)Kapok$() trees and make some $(thing)Tree Taps$(). Place a tree tap on the main trunk of each kapok tree (more taps on a tree just splits the output). Right-click each tree tap with an empty $(thing)Wooden Bucket$(), then wait for the correct season (Feb-Oct, excluding July). When the bucket is full, $(item)$(k:use)$() it with an $(thing)empty hand$(). You can automate this with a $(l:mechanics/pumps)Mechanical Pump$() on the bucket, if you'd like."
+			"text": "$(italic)How do I make rubber?$()$(br2)Sticky Resin is no longer what you are looking for! First, grow some $(thing)Latex$()-producing trees and make some $(thing)Tree Taps$(). Place a tree tap on the trunk of each tree (more taps on a tree just splits the output). You can collect the Latex that comes out with a $(tfc:mechanics/barrels)Barrel$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "It's quickest to cook your latex in a $(l:firmalife/oven_appliances#vat)Vat$(). Combine your latex with $(item)Sulfur$() dust in the vat (put the GregTech one in a Quern to get the TFC one), add heat, and $(bold)close the lid$() on the Vat with $(item)$(k:sneak)$() + $(item)$(k:use)$().$(br2)You can automate this later with the $(thing)LV Centrifuge$()."
+			"text": "It's quickest to cook your latex in a $(l:firmalife/oven_appliances#vat)Vat$(). Combine your latex with $(item)Sulfur$() powder in the vat (put the GregTech dust in a Quern to get the powder), add heat, and $(bold)close the lid$() on the Vat with $(item)$(k:sneak)$() + $(item)$(k:use)$(). You will get $(thing)Vulcanized Latex$() which you can vacuumize in a $(thing)Vacuum Chamber$() for that long-awaited Rubber!$(br2)Later on, the $(thing)LV Centrifuge$() lets you get $(thing)Raw Rubber Pulp$() directly from the logs of latex-producing trees."
 		}
 	]
 }
