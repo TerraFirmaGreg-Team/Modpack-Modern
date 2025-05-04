@@ -9,6 +9,7 @@
 - Ingot piles now have improved textures for TFC metals (AirRice)
 - Fixed issue where red alloy and tin alloy had missing textures in casting tables (AirRice)
 - Improvements to MV quests (TomPlop)
+- Changed the process for creating rubber to require latex, added a way to get latex even during winter (AirRice)
 - Fixed large boilers from being extremely explodey
 - Greate shafts, large cogs, and belts are now significantly cheaper, and shaft stress capacity has been doubled
 - Update CarryOn so now it works with all TFC chests
