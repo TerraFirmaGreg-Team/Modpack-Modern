@@ -1580,7 +1580,7 @@
 			dependencies: ["49896161B31DB7B4"]
 			description: [
 				"There is currently a bug with the Mechanical Mixer where some recipes want an actual Programmed Circuit item."
-				"For the time being, you can craft these out of Sticks."
+				"For the time being, you can craft these with a Stick and a Wrench in a crafting grid."
 				""
 				"This will be fixed whenever we're able to update Greate to the latest version, which requires Create 6, which requires other Create addons to be updated... hopefully that should be soon."
 			]
