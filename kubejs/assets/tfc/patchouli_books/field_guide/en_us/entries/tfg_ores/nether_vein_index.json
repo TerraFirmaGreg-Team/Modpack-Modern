@@ -14,17 +14,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Amethyst, Opal, & Garnet$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Bentonite & Olivine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Cassiterite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Chromite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Gold & Hematite$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Amethyst, Opal, & Garnet$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)Anthracite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Apatite & Pyrochlore$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Bastnasite & Monazite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_bauxite)Bauxite & Ilmenite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Bentonite & Olivine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Cassiterite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Chromite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Cooperite & Bornite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Copper & Chalcopyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Emerald & Beryllium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Garnet & Cassiterite Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Garnierite & Cobaltite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Goethite$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah & Plutonium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartz$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Silver, Galena, & Lead$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Soapstone, Talc, & Trona$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Gold & Hematite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Graphite & Diamond$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Hematite & Limonite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Kyanite, Mica, & Bauxite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Lapis, Lazurite, & Sodalite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Manganese & Tantalum$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Mineral Sands$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Naquadah & Plutonium$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Nether Quartz$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Redstone, Cinnabar, & Ruby$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Saltpeter & Electrotine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Sapphire & Almandine$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Scheelite & Tungstate$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Silver, Galena, & Lead$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetrahedrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenite & Molybdenite$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Soapstone, Talc, & Trona$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Sphalerite & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Sulfur & Pyrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Sylvite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Tetrahedrite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Topaz & Chalcocite$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Uraninite & Pitchblende$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Wulfenite & Molybdenite$()$()",
       "type": "patchouli:text"
     },
     {
@@ -118,6 +118,33 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 35$(br)$(thing)Density$(): 0.8$(br)$(thing)Type$(): Disc Vein$(br)$(thing)Y$(): 48 — 127$(br)$(thing)Size$(): 13$(br)$(thing)Height$(): 4$(br2)$(thing)Stone Types$(): Migmatite",
+      "title": "Anthracite",
+      "type": "patchouli:text",
+      "anchor": "nether_anthracite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Anthracite",
+      "multiblock": {
+        "mapping": {
+          "0": "beneath:ore/nether_cursecoal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fuel$(br)$(thing)Formula$(): C",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -2490,6 +2517,33 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Percentage$(): 15%$(br)$(thing)Melts into$(): Zinc$(br)$(thing)Formula$(): ZnS",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Rarity$(): 75$(br)$(thing)Density$(): 0.6$(br)$(thing)Type$(): Cluster Vein$(br)$(thing)Y$(): 0 — 64$(br)$(thing)Size$(): 17$(br)$(thing)Indicator Max Depth$(): 20$(br2)$(thing)Stone Types$(): Pyroxenite",
+      "title": "Sylvite",
+      "type": "patchouli:text",
+      "anchor": "nether_sylvite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Sylvite",
+      "multiblock": {
+        "mapping": {
+          "0": "beneath:ore/blackstone_sylvite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Percentage$(): 100%$(br)$(thing)Used for$(): Fertiliser$(br)$(thing)Formula$(): KCl",
       "type": "patchouli:multiblock"
     },
     {

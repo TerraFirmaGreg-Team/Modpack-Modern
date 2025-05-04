@@ -64,9 +64,10 @@ const registerGTCEUItemTags = (event) => {
     event.add('minecraft:piglin_loved', 'gtceu:raw_pyrite')
     event.add('minecraft:piglin_loved', 'gtceu:rich_raw_pyrite')
 
+    event.remove('forge:gems', 'gtceu:coke_gem')
+
 	// Rose Quartz Lens
-	event.add('forge:lenses/pink', 'gtceu:rose_quartz_lens')
-}
+	event.add('forge:lenses/pink', 'gtceu:rose_quartz_lens')}
 
 const registerGTCEUBlockTags = (event) => {
 

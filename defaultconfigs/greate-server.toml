@@ -284,7 +284,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					andesiteMaxCapacity = 16
+					andesiteMaxCapacity = 32
 
 				#.
 				#Settings related to steel tier machines
@@ -292,7 +292,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					steelMaxCapacity = 64
+					steelMaxCapacity = 128
 
 				#.
 				#Settings related to aluminium tier machines
@@ -300,7 +300,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					aluminiumMaxCapacity = 256
+					aluminiumMaxCapacity = 512
 
 				#.
 				#Settings related to stainless steel tier machines
@@ -308,7 +308,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					stainlessSteelMaxCapacity = 1024
+					stainlessSteelMaxCapacity = 2048
 
 				#.
 				#Settings related to titanium tier machines
@@ -316,7 +316,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					titaniumMaxCapacity = 4096
+					titaniumMaxCapacity = 8192
 
 				#.
 				#Settings related to tungstensteel tier machines
@@ -324,7 +324,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					tungstensteelMaxCapacity = 16384
+					tungstensteelMaxCapacity = 32768
 
 				#.
 				#Settings related to palladium tier machines
@@ -332,7 +332,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					palladiumMaxCapacity = 65536
+					palladiumMaxCapacity = 131072
 
 				#.
 				#Settings related to naquadah tier machines
@@ -340,7 +340,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					naquadahMaxCapacity = 262144
+					naquadahMaxCapacity = 524288
 
 				#.
 				#Settings related to darmstadtium tier machines
@@ -348,7 +348,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					darmstadtiumMaxCapacity = 1048576
+					darmstadtiumMaxCapacity = 2097152
 
 				#.
 				#Settings related to neutronium tier machines
@@ -356,7 +356,7 @@ fanSpeedMultiplier = 0.75
 					#.
 					#Configure the max stress a kinetic block of this tier can support.
 					#Range: > -2147483648
-					neutroniumMaxCapacity = 2097152
+					neutroniumMaxCapacity = 8388608
 
 	#.
 	#Fine tune settings related to pumps
@@ -368,32 +368,32 @@ fanSpeedMultiplier = 0.75
 		[kinetics.pumps.pressure]
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			andesitePressure = 4.0
+			andesitePressure = 8.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			steelPressure = 16.0
+			steelPressure = 32.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			aluminiumPressure = 64.0
+			aluminiumPressure = 128.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			stainlessSteelPressure = 256.0
+			stainlessSteelPressure = 512.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			titaniumPressure = 1028.0
+			titaniumPressure = 2048.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			tungstensteelPressure = 4096.0
+			tungstensteelPressure = 8192.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
 			palladiumPressure = 16384.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			naquadahPressure = 65536.0
+			naquadahPressure = 32768.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			darmstadtiumPressure = 262144.0
+			darmstadtiumPressure = 131072.0
 			#.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			neutroniumPressure = 1048576.0
+			neutroniumPressure = 524288.0
 

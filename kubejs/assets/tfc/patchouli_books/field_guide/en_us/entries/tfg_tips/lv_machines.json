@@ -44,12 +44,12 @@
 			"title": "Chem Reactor/Solidifer",
 			"item": "gtceu:lv_chemical_reactor,gtceu:lv_fluid_solidifier",
 			"text": "The $(item)Chemical Reactor$() makes much cheaper $(thing)Rubber$() which the $(item)Fluid Solidifier$() can turn into cheaper $(thing)Rubber Sheets$(), and can also make cheaper $(thing)Rotors$().$(br2)The $(item)Extractor$() is also useful paired up with the Fluid Solidifier, and is a big upgrade over the steam one because it can make metal fluids."
-		},
+		}, 
 		{
 			"type": "patchouli:spotlight",
 			"title": "Centrifuge",
 			"item": "gtceu:lv_centrifuge",
-			"text": "The $(item)Centrifuge$() makes $(thing)Sticky Resin$() directly from Kapok logs, and much cheaper $(thing)Raw Rubber$() as well. No more latex!"
+			"text": "The $(item)Centrifuge$() can help with separating things, such as byproducts out of impure or purified ore dusts, but the most immediate improvement will be that it separates out $(thing)Raw Rubber Pulp$() directly from latex-producing tree logs. No more latex!"
 		},
 		{
 			"type": "patchouli:spotlight",

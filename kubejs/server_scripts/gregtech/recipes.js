@@ -134,23 +134,30 @@ const registerGTCEURecipes = (event) => {
 	//#region Выход: Капля резины
 
 	// Из латекса
-	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
+	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_latex')
 
-	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
+	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000), 1200, 300)
 		.itemOutput('gtceu:sticky_resin')
 		.id('tfg:pot/sticky_resin_from_conifer_pitch')
 
-	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_heating')
+	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/latex_to_sticky_resin')
 		.duration(24 * 20)
 		.EUt(30)
-		.itemInputs('tfc:powder/sulfur')
+		.itemInputs('tfc:powder/wood_ash')
 		.itemOutputs('gtceu:sticky_resin')
 		.inputFluids(Fluid.of('tfg:latex', 1000))
+	
+	event.recipes.gtceu.fluid_solidifier('tfg:fluid_solidifier/pitch_to_sticky_resin')
+		.duration(24 * 20)
+		.EUt(30)
+		.itemInputs('tfc:powder/wood_ash')
+		.itemOutputs('gtceu:sticky_resin')
+		.inputFluids(Fluid.of('tfg:conifer_pitch', 1000))
+	//#endregion
 
 	//#region Выход: Растительный шарик
-
 	// 8x Ванильная растительность -> Plant Ball (Compressor)
 
 	event.recipes.gtceu.compressor('plant_ball_from_tfc_seeds')
@@ -854,23 +861,39 @@ const registerGTCEURecipes = (event) => {
 
 	// #endregion
 
+	// #region Rubber Processing Line
+	event.recipes.firmalife.vat()
+		.inputs('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000))
+		.outputFluid(Fluid.of('tfg:vulcanized_latex', 1000))
+		.length(300)
+		.temperature(300)
+		.id('tfg:vat/vulcanized_latex')
+
+	event.recipes.tfc.pot('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000), 1200, 300)
+		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 1000))
+		.id('tfg:pot/vulcanized_latex')
+
+	event.recipes.gtceu.chemical_reactor('tfg:/latex_to_vulcanized_latex')
+		.duration(200)
+		.EUt(20)
+		.itemInputs('tfc:powder/sulfur')
+		.inputFluids(Fluid.of('tfg:latex', 1000))
+		.outputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
+
+	event.recipes.gtceu.fluid_solidifier('tfg:/vulcanized_latex_to_raw_rubber_pulp')
+		.duration(100)
+		.EUt(20)
+		.inputFluids(Fluid.of('tfg:vulcanized_latex', 1000))
+		.itemOutputs('4x gtceu:raw_rubber_dust')
+
+	// #endregion
+
 	// #region Primitive protection
 
 	event.recipes.tfc.barrel_sealed(2000)
 		.outputItem('tfg:prepared_leather_gloves')
 		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
 		.id('tfg:sealed_barrel/prepared_leather_gloves')
-
-	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 100))
-		.outputFluid(Fluid.of('tfg:vulcanized_latex', 100))
-		.length(300)
-		.temperature(300)
-		.id('tfg:vat/vulcanized_latex')
-
-	event.recipes.tfc.pot('tfc:powder/wood_ash', Fluid.of('tfg:latex', 100), 1200, 300)
-		.fluidOutput(Fluid.of('tfg:vulcanized_latex', 100))
-		.id('tfg:pot/vulcanized_latex')
 
 	event.recipes.firmalife.vat()
 		.outputItem('tfg:latex_soaked_gloves')
@@ -937,6 +960,13 @@ const registerGTCEURecipes = (event) => {
 		.chancedOutput('gtceu:plant_ball', 1000, 850)
 		.duration(400)
 		.EUt(GTValues.VA[GTValues.ULV])
+	
+	event.recipes.gtceu.chemical_reactor(`tfg:treat_latex_plants_into_latex`)
+		.itemInputs('16x #tfg:rubber_plants', 'gtceu:tiny_sodium_hydroxide_dust')
+		.circuit(1)
+		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.duration(200)
+		.EUt(20)
 
 	event.recipes.createSequencedAssembly([
 		'gtceu:ulv_voltage_coil',
@@ -992,8 +1022,38 @@ const registerGTCEURecipes = (event) => {
 		.duration(GTMaterials.Clay.getMass() * 13)
 		.EUt(GTValues.VA[GTValues.HV])
 
+	event.recipes.gtceu.centrifuge('gtceu:stone_dust_separation')
+		.itemInputs('gtceu:stone_dust')
+		.chancedOutput('#forge:dusts/quartzite', 2500, 0)
+		.chancedOutput('#forge:dusts/potassium_feldspar', 2500, 0)
+		.chancedOutput('#forge:dusts/marble', 2222, 0)
+		.chancedOutput('#forge:dusts/biotite', 1111, 0)
+		.chancedOutput('#forge:dusts/metal_mixture', 825, 80)
+		.chancedOutput('#forge:dusts/sodalite', 550, 55)
+		.duration(12 * 20)
+		.EUt(GTValues.VA[GTValues.HV])
+
+
 	//#endregion
 
+	//#region Tape
+
+	event.shaped('gtceu:basic_tape', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: 'minecraft:paper',
+		B: 'tfc:glue'
+	}).id('tfg:shaped/basic_tape_from_glue')
+
+	event.recipes.gtceu.assembler('basic_tape_from_glue')
+		.itemInputs('2x minecraft:paper', 'tfc:glue')
+		.itemOutputs('2x gtceu:basic_tape')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	//#endregion 
 
 	//#region Rose Quartz fabrication + decomposition
 	event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_chromatic_compound' });
