@@ -155,27 +155,45 @@ const registerAFCRecipes = (event) => {
 		.id("tfg:tree_tapping/ancient_douglas_fir_resin")
 
 	//#region Выход: Сырая резиновая пыль
+	// Removed in favor of making these output latex
+	// // Из бревна капока
+	// event.recipes.gtceu.extractor('raw_rubber_from_log')
+	// 	.itemInputs('#tfg:latex_logs')
+	// 	.itemOutputs('gtceu:raw_rubber_dust')
+	// 	.duration(300)
+	// 	.EUt(2)
 
-	// Из бревна капока
-	event.recipes.gtceu.extractor('raw_rubber_from_log')
+	// // Из саженца капока
+	// event.recipes.gtceu.extractor('raw_rubber_from_sapling')
+	// 	.itemInputs('1x #tfg:rubber_saplings')
+	// 	.itemOutputs('gtceu:raw_rubber_dust')
+	// 	.duration(300)
+	// 	.EUt(2)
+
+	// // Из листвы капока
+	// event.recipes.gtceu.extractor('raw_rubber_from_leaves')
+	// 	.itemInputs('16x #tfg:rubber_leaves')
+	// 	.itemOutputs('gtceu:raw_rubber_dust')
+	// 	.duration(300)
+	// 	.EUt(2)
+
+	event.recipes.gtceu.extractor('latex_from_log')
 		.itemInputs('#tfg:latex_logs')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
+		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.duration(100)
+		.EUt(20)
 
-	// Из саженца капока
-	event.recipes.gtceu.extractor('raw_rubber_from_sapling')
-		.itemInputs('1x #tfg:rubber_saplings')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
+	event.recipes.gtceu.extractor('latex_from_sapling')
+		.itemInputs('10x #tfg:rubber_saplings')
+		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.duration(100)
+		.EUt(20)
 
-	// Из листвы капока
-	event.recipes.gtceu.extractor('raw_rubber_from_leaves')
-		.itemInputs('16x #tfg:rubber_leaves')
-		.itemOutputs('gtceu:raw_rubber_dust')
-		.duration(300)
-		.EUt(2)
+	event.recipes.gtceu.extractor('latex_from_leaves')
+		.itemInputs('20x #tfg:rubber_leaves')
+		.outputFluids(Fluid.of('tfg:latex', 1000))
+		.duration(100)
+		.EUt(20)
 
 	event.replaceOutput({ id: 'gtceu:centrifuge/sticky_resin_separation' }, 'gtceu:raw_rubber_dust', '3x gtceu:carbon_dust')
 
