@@ -895,7 +895,7 @@ const registerGTCEURecipes = (event) => {
 		.inputs('tfchotornot:mittens', Fluid.of('tfc:vinegar', 1000))
 		.id('tfg:sealed_barrel/prepared_leather_gloves')
 
-	event.recipes.tfc.barrel_sealed(2000)
+	event.recipes.tfc.barrel_sealed(1000)
 		.outputItem('tfg:latex_soaked_gloves')
 		.inputs('tfg:prepared_leather_gloves', Fluid.of('tfg:vulcanized_latex', 1000))
 		.id('tfg:sealed_barrel/latex_soaked_gloves')
