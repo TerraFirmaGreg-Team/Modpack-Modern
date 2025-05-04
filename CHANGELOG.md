@@ -10,7 +10,7 @@
 - Fixed issue where red alloy and tin alloy had missing textures in casting tables (AirRice)
 - Improvements to MV quests (TomPlop)
 - Fixed large boilers from being extremely explodey
-- Greate shafts, large cogs, and belts are now significantly cheaper
+- Greate shafts, large cogs, and belts are now significantly cheaper, and shaft stress capacity has been doubled
 - Update CarryOn so now it works with all TFC chests
 - Overhauled the TFG Ores section in the field guide, and it's now 100% accurate again!
 - The other AE2 wireless terminals are now craftable in EV instead of LuV
