@@ -654,12 +654,12 @@ const registerFirmaLifeRecipes = (event) => {
 	//#region Sticky Resin by Vat
 
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/sulfur', Fluid.of('tfg:latex', 1000))
+		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:latex', 1000))
 		.outputItem('gtceu:sticky_resin')
 		.id('tfg:vat/latex_to_sticky_resin');
 
 	event.recipes.firmalife.vat()
-		.inputs('tfc:powder/sulfur', Fluid.of('tfg:conifer_pitch', 1000))
+		.inputs('tfc:powder/wood_ash', Fluid.of('tfg:conifer_pitch', 1000))
 		.outputItem('gtceu:sticky_resin')
 		.id('tfg:vat/conifer_pitch_to_sticky_resin');
 
