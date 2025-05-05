@@ -3,6 +3,10 @@
 ## [Unreleased]
 ### Changes
 
+## [0.9.4] - 06.05.2025
+### Changes
+- Fixed tags bug.
+
 ## [0.9.3] - 05.05.2025
 - [!WARNING] 0.9 is now out of alpha and into beta! If you're upgrading from 0.7, we put together a guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.7-to-0.9).
 ### Changes
