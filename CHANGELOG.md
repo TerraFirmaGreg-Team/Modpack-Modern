@@ -1,7 +1,10 @@
 # Changelog
 
 ## [Unreleased]
-0.9 is now out of alpha and into beta! If you're upgrading from 0.7, we put together a guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.7-to-0.9).
+### Changes
+
+## [0.9.3] - 06.05.2025
+- [!WARNING] 0.9 is now out of alpha and into beta! If you're upgrading from 0.7, we put together a guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.7-to-0.9).
 ### Changes
 - Removed Caelum + TFC Caelum because they were causing crashes for MacOS and other graphics issues, but you can re-add them if you'd like
 - Added recipe to separate fertilizer into pure sources, and mix them back together. (Redeix)
@@ -29,7 +32,7 @@
 - Fixed cast iron tongs not being craftable
 - Added a gas collector recipe to the beneath
 
-## [0.9.2]
+## [0.9.2] - 27.04.2025
 ### Changes
 - Fixed mining machines not working.
 - Fixed kaolin clay not generating in the overworld.
