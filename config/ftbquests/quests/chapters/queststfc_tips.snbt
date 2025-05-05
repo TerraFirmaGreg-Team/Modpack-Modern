@@ -15,13 +15,13 @@
 	quests: [
 		{
 			dependencies: ["427814F6E9386772"]
-			description: ["{quests.tfg_tips.begining.desc}"]
+			description: ["{quests.tfg_tips.beginning.desc}"]
 			disable_toast: true
 			icon: "minecraft:apple"
 			id: "173F6FA60A5B280B"
 			shape: "gear"
 			size: 4.0d
-			subtitle: "{quests.tfg_tips.begining.subtitle}"
+			subtitle: "{quests.tfg_tips.beginning.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "gtceu:overworld_marker"
@@ -29,7 +29,7 @@
 				title: "{quests.stone_age.temperature.task}"
 				type: "dimension"
 			}]
-			title: "{quests.tfg_tips.begining.title}"
+			title: "{quests.tfg_tips.beginning.title}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -1888,7 +1888,7 @@
 							"ftbfiltersystem:filter": "custom(HasPreservation/tfc:brined)"
 						}
 					}
-					title: "{quests.tfg_tips.brine_something.tasks.1}"
+					title: "{quests.tfg_tips.brine_something.task.1}"
 					type: "item"
 				}
 				{
@@ -1900,7 +1900,7 @@
 							"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:brine\"}})item(tfc:bucket/brine))"
 						}
 					}
-					title: "{quests.tfg_tips.brine_something.tasks.2}"
+					title: "{quests.tfg_tips.brine_something.task.2}"
 					type: "item"
 				}
 			]
@@ -1929,7 +1929,7 @@
 							"ftbfiltersystem:filter": "only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"tfc:vinegar\"}})item(tfc:bucket/vinegar))"
 						}
 					}
-					title: "{quests.tfg_tips.pickle_something.tasks.1}"
+					title: "{quests.tfg_tips.pickle_something.task.1}"
 					type: "item"
 				}
 				{
@@ -1964,7 +1964,7 @@
 							"ftbfiltersystem:filter": "custom(HasPreservation/tfc:pickled)"
 						}
 					}
-					title: "{quests.tfg_tips.pickle_something.tasks.2}"
+					title: "{quests.tfg_tips.pickle_something.task.2}"
 					type: "item"
 				}
 			]
@@ -1997,7 +1997,7 @@
 							"ftbfiltersystem:filter": "and(custom(HasPreservation/firmalife:dried)item_tag(tfc:foods/fruits))"
 						}
 					}
-					title: "{quests.tfg_tips.dry_fruit.tasks.1}"
+					title: "{quests.tfg_tips.dry_fruit.task.1}"
 					type: "item"
 				}
 				{
@@ -2009,7 +2009,7 @@
 							"ftbfiltersystem:filter": "or(item(firmalife:solar_drier)item(firmalife:drying_mat))"
 						}
 					}
-					title: "{quests.tfg_tips.dry_fruit.tasks.2}"
+					title: "{quests.tfg_tips.dry_fruit.task.2}"
 					type: "item"
 				}
 			]
@@ -2112,7 +2112,7 @@
 							"ftbfiltersystem:filter": "or(custom(HasPreservation/tfc:wood_grilled)custom(HasPreservation/firmaciv:oven_baked))"
 						}
 					}
-					title: "{quests.tfg_tips.cook_meat.tasks.1}"
+					title: "{quests.tfg_tips.cook_meat.task.1}"
 					type: "item"
 				}
 				{
@@ -2124,7 +2124,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:wrought_iron_grill)item(firmalife:cured_oven_top))"
 						}
 					}
-					title: "{quests.tfg_tips.cook_meat.tasks.2}"
+					title: "{quests.tfg_tips.cook_meat.task.2}"
 					type: "item"
 				}
 			]
@@ -2835,7 +2835,7 @@
 						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:creeper_drop_music_discs)"
 					}
 				}
-				title: "{quests.tfg_tips.dye_disks.task}"
+				title: "{quests.tfg_tips.dye_discs.task}"
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.dye_discs.title}"
@@ -4304,6 +4304,7 @@
 		}
 		{
 			dependencies: ["6C64C20FF5DF972A"]
+			description: ["{quests.tfg_tips.grapple_motor.desc}"]
 			id: "212E5863D8D919E1"
 			subtitle: "{quests.tfg_tips.grapple_motor.subtitle}"
 			tasks: [{
