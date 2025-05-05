@@ -1,4 +1,7 @@
 const registerTFGItemTags = (event) => {
+
+	registerTFGTrimTags(event)
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
@@ -11,6 +14,16 @@ const registerTFGItemTags = (event) => {
 	
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
+
+	//Tools
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/rose_gold')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/sterling_silver')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/invar')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/tin_alloy')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/cupronickel')
+	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/magnalium')
 
 	// #region Paper from wood
 
@@ -29,8 +42,16 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:wax', 'tfg:conifer_rosin')
 
 	event.add('tfc:fluxstone', 'tfg:loose/dripstone')
-
 	// #endregion
+
+	//#region Cloth & String
+    event.add('forge:cloth', 'tfg:phantom_silk')
+    event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
+    event.add('tfc:sewing_light_cloth', 'tfg:phantom_silk')
+    event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
+    event.add('forge:string', 'tfg:phantom_thread')
+    event.add('forge:string', 'tfg:polycaprolactam_string')
+	//#endregion
 
 	// #region Medicines
 
@@ -97,6 +118,16 @@ const registerTFGItemTags = (event) => {
 	global.AIRCRAFT_UPGRADES.forEach(value => {
 		event.add('immersive_aircraft:upgrades', `tfg:${value}`);
 	})
+
+	// #endregion
+
+	// Universal Circuits
+
+		global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+			event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
+			})
+
+	// #endregion
 
 	// #region 0.7.19 -> 0.9 conversion
 

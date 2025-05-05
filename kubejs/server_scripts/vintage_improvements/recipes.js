@@ -290,7 +290,7 @@ function registerVintageImprovementsRecipes(event) {
 	// #endregion
 
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 
 		// #region Coiling
 
@@ -541,6 +541,14 @@ function registerVintageImprovementsRecipes(event) {
 
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:conifer_rosin' }],
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 200
+	}).id('tfg:vi/vacuumizing/glue_from_rosin')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'minecraft:bone_meal' }, { fluid: 'tfc:limewater', amount: 500 }],
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
 		heatRequirement: "heated",
@@ -562,6 +570,34 @@ function registerVintageImprovementsRecipes(event) {
 		processingTime: 100
 	}).id('tfg:vi/vacuum/rubber')
 
+	// Vaccuming rubber wood stuff for latex
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:latex_logs' }],
+		results: [{ fluid: 'tfg:latex', amount: 250 }],
+		processingTime: 600
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_saplings' }],
+		results: [{ fluid: 'tfg:latex', amount: 100 }],
+		processingTime: 300
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_leaves' }],
+		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		processingTime: 150
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
+
+	// Vulc. latex to raw rubber pulp
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
+		results: [{ item: 'gtceu:raw_rubber_dust'}],
+		processingTime: 120
+	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
+	
 	// #endregion
 }
 

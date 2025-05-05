@@ -59,6 +59,9 @@ const registerAFCItemTags = (event) => {
 	event.add("tfg:rubber_leaves", "afc:wood/leaves/red_silk_cotton")
     event.add("tfg:rubber_leaves", "afc:wood/leaves/hevea")
     event.add("tfg:rubber_leaves", "afc:wood/leaves/rubber_fig")
+
+	event.add("tfg:rubber_plants", "tfc:plant/goldenrod")
+	event.add("tfg:rubber_plants", "tfc:plant/dandelion")
 }
 
 

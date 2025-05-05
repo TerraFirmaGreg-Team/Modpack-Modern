@@ -18,3 +18,5 @@ global.AIRCRAFT_UPGRADES = [
     "stainless_steel_hull_reinforcement",
     "titanium_hull_reinforcement"
 ]
+
+global.UNIVERSAL_CIRCUIT_TIERS = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv"];

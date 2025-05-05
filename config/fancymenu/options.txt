@@ -27,7 +27,7 @@ B:game_intro_fade_out = 'true';
 B:show_custom_window_icon = 'true';
 S:custom_window_icon_macos = '/config/fancymenu/assets/icons/macOS.icns';
 S:custom_window_icon_32 = '/config/fancymenu/assets/icons/icon32x32.png';
-S:custom_window_title = 'TerraFirmaGreg Modern';
+S:custom_window_title = 'TerraFirmaGreg-Modern';
 S:custom_window_icon_16 = '/config/fancymenu/assets/icons/icon16x16.png';
 
 
@@ -43,11 +43,13 @@ B:show_singleplayer_screen_world_icons = 'true';
 
 ##[layout_editor]
 
+B:layout_editor_grid_snapping = 'true';
 B:anchor_overlay_change_anchor_on_area_hover = 'true';
 B:show_layout_editor_grid = 'true';
 B:anchor_overlay_change_anchor_on_element_hover = 'true';
 S:anchor_overlay_visibility_mode = 'dragging';
 B:anchor_overlay_show_all_connection_lines = 'false';
+F:layout_editor_grid_snapping_strength = '1.0';
 S:anchor_overlay_color_base_override = '';
 I:layout_editor_grid_size = '10';
 B:invert_anchor_overlay_color = 'false';
@@ -78,3 +80,8 @@ B:debug_overlay_show_resources_category = 'true';
 ##[tutorial]
 
 B:show_welcome_screen = 'false';
+
+
+##[keyframe_editor]
+
+B:arrow_keys_move_preview = 'false';

@@ -8,7 +8,7 @@ const registerCreateItemTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
 
-	// Is this Greate's fault?
+	// This is greate's fault
 	event.remove('c:hidden_from_recipe_viewers', 'create:copper_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:brass_sheet')
 	event.remove('c:hidden_from_recipe_viewers', 'create:golden_sheet')
@@ -18,6 +18,7 @@ const registerCreateItemTags = (event) => {
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_tin')
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_silver')
 	event.remove('c:hidden_from_recipe_viewers', 'create:crushed_raw_lead')
+	event.remove('c:hidden_from_recipe_viewers', 'create:powdered_obsidian')
 
 	// Тэги для ручек и сидушек
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {

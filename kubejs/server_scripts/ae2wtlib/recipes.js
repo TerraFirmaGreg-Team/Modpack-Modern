@@ -13,30 +13,28 @@ const registerAE2WTLibRecipes = (event) => {
     // Wireless Pattern Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_encoding_terminal')
         .itemInputs(
-            '2x gtceu:hv_lithium_battery',
+            '2x #gtceu:batteries/ev',
             'ae2:wireless_terminal',
             'ae2:pattern_encoding_terminal',
-            '2x gtceu:luv_sensor',
-            'gtceu:luv_emitter',
-            '2x #forge:rods/osmiridium',
-            )
+            '2x gtceu:ev_sensor',
+            'gtceu:ev_emitter',
+            '2x #forge:rods/ultimet')
         .itemOutputs('ae2wtlib:wireless_pattern_encoding_terminal')
-        .duration(30)
-        .EUt(250)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
     
     // Pattern Access Terminal
     event.recipes.gtceu.assembler('ae2wtlib:wireless_pattern_access_terminal')
         .itemInputs(
-            '2x gtceu:hv_lithium_battery',
+            '2x #gtceu:batteries/ev',
             'ae2:wireless_terminal',
             'ae2:pattern_access_terminal',
-            '2x gtceu:luv_sensor',
-            'gtceu:luv_emitter',
-            '2x #forge:rods/osmiridium'
-            )
+            '2x gtceu:ev_sensor',
+            'gtceu:ev_emitter',
+            '2x #forge:rods/ultimet')
         .itemOutputs('ae2wtlib:wireless_pattern_access_terminal')
-        .duration(30)
-        .EUt(250)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Magnet Card
 	event.recipes.gtceu.assembler('ae2wtlib:magnet_card')
@@ -44,12 +42,9 @@ const registerAE2WTLibRecipes = (event) => {
             '#forge:ingots/magnetic_neodymium',
             '4x #forge:rods/magnetic_neodymium',
             'ae2:advanced_card',
-            'ae2:annihilation_plane',
-            '#forge:plates/redstone',
-            '#forge:plates/lapis',
-            )
+            'ae2:annihilation_plane')
         .itemOutputs('ae2wtlib:magnet_card')
-        .duration(30)
+        .duration(300)
         .EUt(250)
 
     // Quantum Bridge Card
@@ -70,4 +65,19 @@ const registerAE2WTLibRecipes = (event) => {
         .itemOutputs('ae2wtlib:quantum_bridge_card')
         .duration(300)
         .EUt(64000)
+        
+
+    event.remove({ output: 'ae2wtlib:wireless_universal_terminal' })
+
+    event.recipes.gtceu.assembler('ae2wtlib:wireless_universal_terminal')
+        .itemInputs(
+            'ae2:wireless_crafting_terminal',
+            'ae2wtlib:wireless_pattern_encoding_terminal',
+            'ae2wtlib:wireless_pattern_access_terminal',
+            '1x gtceu:iv_sensor',
+            '1x gtceu:iv_emitter',
+            '2x #forge:plates/rhodium')
+        .itemOutputs(Item.of('ae2wtlib:wireless_universal_terminal', '{crafting:1b, pattern_access:1b, pattern_encoding:1b}'))
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.IV])
 }

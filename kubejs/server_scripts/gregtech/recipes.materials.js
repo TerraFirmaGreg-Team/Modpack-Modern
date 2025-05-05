@@ -837,7 +837,7 @@ function registerGTCEUMetalRecipes(event) {
 			.id(`${material.getName()}_ingot_to_bars`)
 	}
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 		const toolProperty = material.getProperty(PropertyKey.TOOL)
 		const ingotProperty = material.getProperty(PropertyKey.INGOT)
 		const oreProperty = material.getProperty(PropertyKey.ORE)
