@@ -18,17 +18,15 @@ const registerRnrRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
     global.TFC_STONE_TYPES.forEach(stone => {
-        event.recipes.gtceu.assembler(`rnr:assembler/flagstone/${stone}`)
-		    .itemInputs(`tfc:rock/loose/${stone}`)
+        event.recipes.gtceu.cutter(`rnr:assembler/flagstone/${stone}`)
+		    .itemInputs(`tfc:brick/${stone}`)
 		    .itemOutputs(`2x rnr:flagstone/${stone}`)
-            .circuit(7)
 		    .duration(20)
 		    .EUt(GTValues.VA[GTValues.ULV])
 
-        event.recipes.gtceu.assembler(`rnr:assembler/flagstone/mossy_${stone}`)
+        event.recipes.gtceu.cutter(`rnr:assembler/flagstone/mossy_${stone}`)
 		    .itemInputs(`tfc:rock/mossy_loose/${stone}`)
 		    .itemOutputs(`2x rnr:flagstone/${stone}`)
-            .circuit(7)
 		    .duration(20)
 		    .EUt(GTValues.VA[GTValues.ULV])
     });

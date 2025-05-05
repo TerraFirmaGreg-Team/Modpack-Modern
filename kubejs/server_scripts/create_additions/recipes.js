@@ -13,7 +13,7 @@ const registerCreateAdditionsRecipes = (event) => {
 	], {
 		A: 'create:precision_mechanism',
 		B: 'greate:steel_shaft',
-		C: '#forge:gears/black_steel',
+		C: '#forge:double_plates/black_steel',
 		D: '#gtceu:circuits/ulv',
 		E: 'gtceu:ulv_machine_hull'
 	}).id('tfg:create_additions/shaped/rolling_mill')
@@ -81,9 +81,9 @@ const registerCreateAdditionsRecipes = (event) => {
 	}).id('tfg:createadditions/shaped/electric_motor')
 
 	event.shaped('createaddition:alternator', [
-		'ACA',
-		'FDB',
-		'ECE'
+		'AEA',
+		'CDC',
+		'BFB'
 	], {
 		A: '#gtceu:resistors',
 		B: '#gtceu:circuits/lv',

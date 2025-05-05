@@ -130,18 +130,19 @@ function registerVintageImprovementsRecipes(event) {
 		G: 'create:precision_mechanism'
 	}).id('tfg:vi/mechanical_crafting/lathe')
 
-	event.shaped('vintageimprovements:laser', [
-		'FBF',
-		'EAE',
-		'DCD'
-	], {
-		A: 'gtceu:ulv_machine_hull',
-		B: 'create:precision_mechanism',
-		C: 'tfc:lens',
-		D: 'gtceu:red_alloy_single_wire',
-		E: 'minecraft:piston',
-		F: '#gtceu:circuits/ulv'
-	}).id('tfg:vi/shaped/laser')
+	// Re-enable this thing's EMI category as well, if we end up using it
+	//event.shaped('vintageimprovements:laser', [
+	//	'FBF',
+	//	'EAE',
+	//	'DCD'
+	//], {
+	//	A: 'gtceu:ulv_machine_hull',
+	//	B: 'create:precision_mechanism',
+	//	C: 'tfc:lens',
+	//	D: 'gtceu:red_alloy_single_wire',
+	//	E: 'minecraft:piston',
+	//	F: '#gtceu:circuits/ulv'
+	//}).id('tfg:vi/shaped/laser')
 
 	// #endregion
 
@@ -289,7 +290,7 @@ function registerVintageImprovementsRecipes(event) {
 	// #endregion
 
 
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 
 		// #region Coiling
 
@@ -408,7 +409,7 @@ function registerVintageImprovementsRecipes(event) {
 			event.custom({
 				type: 'vintageimprovements:pressurizing',
 				ingredients: [ingotItem, ingotItem, { item: 'tfc:powder/flux' }],
-				"heatRequirement": "heated",
+				heatRequirement: "heated",
 				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
@@ -418,7 +419,7 @@ function registerVintageImprovementsRecipes(event) {
 			event.custom({
 				type: 'vintageimprovements:pressurizing',
 				ingredients: [plateItem, plateItem, { item: 'tfc:powder/flux' }],
-				"heatRequirement": "heated",
+				heatRequirement: "heated",
 				results: [ChemicalHelper.get(TagPrefix.plateDouble, material, 1)],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_plate`)
@@ -499,6 +500,8 @@ function registerVintageImprovementsRecipes(event) {
 			if (!(EUt <= 32)) { return }
 			// Skip this one
 			if (r.outputs.item[0].content.ingredient.item == "gtceu:nan_certificate") { return }
+			// Skip glass too
+			if (r.inputs.item[0].content.ingredient.item == "gtceu:glass_dust") { return }
 
 			let input = r.inputs.item[0].content.ingredient;
 			input.count = r.inputs.item[0].content.count;
@@ -526,9 +529,39 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ fluid: 'gtceu:glue', amount: 50 }],
 		heatRequirement: "heated",
 		processingTime: 100
-	}).id('tfg:vi/vacuumizing/glue')
+	}).id('tfg:vi/vacuumizing/glue_melting')
 
-	// TODO: Remove me when we upgrade Greate and can just slap rubber onto wires again
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'gtceu:sticky_resin' }],
+		results: [{ fluid: 'gtceu:glue', amount: 100 }],
+		heatRequirement: "heated",
+		processingTime: 200
+	}).id('tfg:vi/vacuumizing/glue_from_resin')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfg:conifer_rosin' }],
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 200
+	}).id('tfg:vi/vacuumizing/glue_from_rosin')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'minecraft:bone_meal' }, { fluid: 'tfc:limewater', amount: 500 }],
+		results: [{ fluid: 'gtceu:glue', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 100
+	}).id('tfg:vi/vacuumizing/glue_from_bone_meal')
+
+	event.custom({
+		type: 'vintageimprovements:pressurizing',
+		ingredients: [{ fluid: 'gtceu:glue', amount: 50 }],
+		results: [{ item: 'tfc:glue' }],
+		processingTime: 100
+	}).id('tfg:vi/pressurizing/glue_solidifying')
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ item: 'gtceu:rubber_dust' }],
@@ -537,6 +570,34 @@ function registerVintageImprovementsRecipes(event) {
 		processingTime: 100
 	}).id('tfg:vi/vacuum/rubber')
 
+	// Vaccuming rubber wood stuff for latex
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:latex_logs' }],
+		results: [{ fluid: 'tfg:latex', amount: 250 }],
+		processingTime: 600
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_saplings' }],
+		results: [{ fluid: 'tfg:latex', amount: 100 }],
+		processingTime: 300
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_leaves' }],
+		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		processingTime: 150
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
+
+	// Vulc. latex to raw rubber pulp
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
+		results: [{ item: 'gtceu:raw_rubber_dust'}],
+		processingTime: 120
+	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
+	
 	// #endregion
 }
 

@@ -830,15 +830,15 @@ const registerAE2Recipes = (event) => {
 	// Wireless Crafting Terminal
 	event.recipes.gtceu.assembler('ae2:wireless_crafting_terminal')
 		.itemInputs(
-			'2x gtceu:hv_lithium_battery',
-			'2x gtceu:luv_sensor',
-			'gtceu:luv_emitter',
-			'2x #forge:rods/osmiridium',
+			'2x #gtceu:batteries/ev',
+			'2x gtceu:ev_sensor',
+			'gtceu:ev_emitter',
+			'2x #forge:rods/ultimet',
 			'ae2:wireless_terminal',
 			'ae2:crafting_terminal')
 		.itemOutputs('ae2:wireless_crafting_terminal')
-		.duration(30)
-		.EUt(250)
+		.duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
 
 	//#region Storage Components
 
@@ -2118,16 +2118,6 @@ const registerAE2Recipes = (event) => {
 		.itemOutputs('24x ae2:fluix_crystal')
 		.duration(60)
 		.EUt(256)
-
-	//charger
-	event.recipes.gtceu.assembler('ae2:charger')
-		.itemInputs(
-			'gtceu:hv_battery_buffer_4x',
-			'4x gtceu:mercury_barium_calcium_cuprate_quadruple_wire',)
-		.inputFluids(Fluid.of('tfg:fluix', 476))
-		.itemOutputs('ae2:charger')
-		.duration(200)
-		.EUt(480)
 
 	// Fluix block
 

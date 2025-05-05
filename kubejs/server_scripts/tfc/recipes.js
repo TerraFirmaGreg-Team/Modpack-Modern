@@ -237,4 +237,79 @@ const registerTFCRecipes = (event) => {
 	// Brass Mechanism
 	event.recipes.shapeless('gtceu:small_brass_gear', [ 'tfc:brass_mechanisms' ]).id('tfg:replace_brass_mechanisms')
 	event.replaceInput({ input: 'tfc:brass_mechanisms' }, 'tfc:brass_mechanisms', 'gtceu:small_brass_gear')
+
+	// Fertilizers
+	event.recipes.gtceu.centrifuge('tfg:gtceu/centrifuge/pure_fertilizers')
+		.itemInputs('1x gtceu:fertilizer')
+		.itemOutputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus')
+		.duration(340)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.mixer('tfg:tfc/mixer/fertilizer')
+		.itemInputs('1x tfc:pure_nitrogen', '1x tfc:pure_potassium', '1x tfc:pure_phosphorus', ChemicalHelper.get(TagPrefix.dustSmall, GTMaterials.Clay, 1))
+		.itemOutputs('1x gtceu:fertilizer')
+		.duration(160)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	//Hide Sewing
+	const stages = [
+		'raw',
+		'soaked',
+		'scraped',
+		'prepared',
+		'sheepskin'
+	];
+	
+	const sizes = [
+		'small',
+		'medium',
+		'large'
+	];
+	
+	stages.forEach((stage) => {
+		sizes.forEach((size, index) => {
+			// Find the next larger size.
+			const nextLarger = sizes[index + 1];
+			
+			// If a larger size exists, sew the hides together.
+			if (nextLarger) {
+				event.recipes.tfc.damage_inputs_shapeless_crafting(
+					event.shapeless(`1x tfc:${nextLarger}_${stage}_hide`, [
+						`2x tfc:${size}_${stage}_hide`,
+						'#tfc:sewing_needles',
+						'#forge:string',
+						'tfc:glue'
+					]).id(`tfg:tfc/${size}_to_${nextLarger}_${stage}_hide`)
+				)
+
+				event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${size}_to_${nextLarger}_${stage}_hide`)
+					.inputFluids(Fluid.of('gtceu:glue', 25))
+					.itemOutputs(`1x tfc:${nextLarger}_${stage}_hide`)
+					.itemInputs(`2x tfc:${size}_${stage}_hide`)
+					.duration(60)
+					.circuit(7)
+					.EUt(GTValues.VA[GTValues.ULV])
+			}
+
+			// Find the next smaller size.
+			const nextSmaller = sizes[index - 1];
+			
+			// If a smaller size exists, cut the hide.
+			if (nextSmaller) {
+				event.recipes.tfc.damage_inputs_shapeless_crafting(
+					event.shapeless(`2x tfc:${nextSmaller}_${stage}_hide`, [
+						`1x tfc:${size}_${stage}_hide`,
+						'#forge:shears'
+					]).id(`tfg:tfc/${size}_to_${nextSmaller}_${stage}_hide`)
+				)
+
+				event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${size}_to_${nextSmaller}_${stage}_hide`)
+					.itemOutputs(`2x tfc:${nextSmaller}_${stage}_hide`)
+					.itemInputs(`1x tfc:${size}_${stage}_hide`)
+					.duration(60)
+					.circuit(4)
+					.EUt(GTValues.VA[GTValues.ULV])
+			}
+		});
+	});
 }

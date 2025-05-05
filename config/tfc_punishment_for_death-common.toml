@@ -1,0 +1,58 @@
+
+#General Settings
+[general]
+	#Hunger handling mode: TFC (default), MANUAL (set value), KEEP (preserve after death)
+	#Allowed Values: TFC, MANUAL, KEEP
+	hungerMode = "KEEP"
+	#Thirst handling mode: TFC (default), MANUAL (set value), KEEP (preserve after death)
+	#Allowed Values: TFC, MANUAL, KEEP
+	thirstMode = "TFC"
+	#Health handling mode: TFC (default), MANUAL (set value)
+	#Allowed Values: TFC, MANUAL
+	healthMode = "TFC"
+	#Manual food level [1-20]
+	#Active only when hungerMode = MANUAL
+	#Range: 1 ~ 20
+	food_level = 6
+	#Manual thirst level [5-100]
+	#Active only when thirstMode = MANUAL
+	#Range: 5 ~ 100
+	thirst_level = 25
+	#Manual health value [1-100]
+	#Active only when healthMode = MANUAL
+	#Range: 1 ~ 100
+	health = 10
+
+#Death Penalties
+[penalties]
+	#Base level for all applied effects (0 = I level, max 5)
+	#Range: 0 ~ 5
+	effect_amplifier = 0
+	#Cooldown in minutes before corpse interaction (0-60)
+	#Range: 0 ~ 60
+	corpse_cooldown = 0
+	#Thirst effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	thirst_duration = 30
+	#Exhaustion effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	exhausted_duration = 30
+	#Pinned effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	pinned_duration = 0
+	#Blindness effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	blindness_duration = 0
+	#Nausea effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	confusion_duration = 10
+	#Hunger effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	hunger_duration = 0
+	#Slowness effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	movement_duration = 0
+	#Darkness effect duration in seconds (0-600)
+	#Range: 0 ~ 600
+	darkness_duration = 0
+

@@ -12,7 +12,7 @@
 			dependencies: ["2F7617C0C4B330DE"]
 			description: ["{quests.low_voltage.lv_fluid_regulator.desc}"]
 			id: "47D4545452F05E37"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_fluid_regulator.subtitle}"
 			tasks: [{
@@ -32,7 +32,7 @@
 				"{quests.low_voltage.lv_robot_arm.desc.2}"
 			]
 			id: "3DE7A2B91CFF48F6"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_robot_arm.subtitle}"
 			tasks: [{
@@ -48,7 +48,7 @@
 			dependencies: ["7EED0084BA59FED1"]
 			description: ["{quests.low_voltage.lv_conveyor.desc}"]
 			id: "288CE4AA4C5AA8BF"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_conveyor.subtitle}"
 			tasks: [{
@@ -64,7 +64,7 @@
 			dependencies: ["7EED0084BA59FED1"]
 			description: ["{quests.low_voltage.lv_pump.desc}"]
 			id: "2F7617C0C4B330DE"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_pump.subtitle}"
 			tasks: [{
@@ -80,7 +80,7 @@
 			dependencies: ["7EED0084BA59FED1"]
 			description: ["{quests.low_voltage.lv_piston.desc}"]
 			id: "38993B4697B0E16C"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_piston.subtitle}"
 			tasks: [{
@@ -178,34 +178,6 @@
 			y: -0.5d
 		}
 		{
-			description: [
-				"In theory, Crates are flat upgrades to Chests. A single block space that stores more items - what more could you ask for?"
-				""
-				"Unfortunately, there's a small downside - Crates do not support item movement shortcuts well. We plan on fixing this in the long-term."
-				""
-				"Where they shine however is the fact that they &6accept Covers&r, making them perfect candidates for buffers in automation."
-			]
-			icon: "gtceu:bronze_crate"
-			id: "7CCC1BDDE0C67F16"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "Earlygame buffering"
-			tasks: [{
-				id: "78E120F8EDE2BD3F"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:wood_crate)item(gtceu:bronze_crate)item(gtceu:steel_crate)item(gtceu:aluminium_crate)item(gtceu:stainless_steel_crate)item(gtceu:titanium_crate)item(gtceu:tungsten_steel_crate))"
-					}
-				}
-				type: "item"
-			}]
-			title: "GregTech Storage"
-			x: 6.5d
-			y: -0.5d
-		}
-		{
 			dependencies: [
 				"288CE4AA4C5AA8BF"
 				"2F7617C0C4B330DE"
@@ -220,7 +192,7 @@
 			]
 			icon: "gtceu:crafting_table_cover"
 			id: "1C767009F505A813"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.cover_behaviour.subtitle}"
 			tasks: [{
@@ -246,7 +218,7 @@
 			]
 			icon: "minecraft:hopper"
 			id: "64E1E87B8AF72968"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.machine_auto_output_behaviour.subtitle}"
 			tasks: [{
@@ -384,7 +356,8 @@
 				"{quests.low_voltage.lv_superconductor.desc.2}"
 			]
 			id: "46AD7A6F3B6775F5"
-			shape: "rsquare"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_superconductor.subtitle}"
 			tasks: [{
@@ -431,7 +404,7 @@
 				}
 			}
 			id: "59F0060B55307311"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.programmed_circuits.subtitle}"
 			tasks: [{
@@ -590,15 +563,25 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["3E6DC423FE4A99F7"]
+			dependencies: [
+				"3E6DC423FE4A99F7"
+				"02FDECC931B5E8EF"
+			]
 			description: ["{quests.low_voltage.lv_ore_prospector.desc}"]
 			id: "2E36E5755B2F551C"
+			optional: true
 			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_ore_prospector.subtitle}"
 			tasks: [{
-				id: "1AC97E61EF4958C8"
-				item: "gtceu:prospector.lv"
+				id: "61235B5F55D60DB5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:prospector.lv)item(gtceu:prospector.hv)item(gtceu:prospector.luv))"
+					}
+				}
 				type: "item"
 			}]
 			title: "{quests.low_voltage.lv_ore_prospector.title}"
@@ -606,7 +589,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["5B2696206205CB2E"]
+			dependencies: [
+				"5B2696206205CB2E"
+				"70432F650591353C"
+			]
 			description: ["{quests.low_voltage.cupronickel_coil.desc}"]
 			icon: {
 				Count: 1
@@ -632,7 +618,7 @@
 			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_gas_collector.desc}"]
 			id: "15928F50AE80A5CF"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_gas_collector.subtitle}"
 			tasks: [{
@@ -680,7 +666,7 @@
 			]
 			icon: "gtceu:fluid_cell"
 			id: "292938760AB9A12B"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.universal_cell.subtitle}"
 			tasks: [{
@@ -723,7 +709,7 @@
 			description: ["{quests.low_voltage.soldering_alloy.desc}"]
 			icon: "gtceu:soldering_alloy_ingot"
 			id: "713C8D6A20BF3A0E"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.soldering_alloy.subtitle}"
 			tasks: [{
@@ -915,7 +901,7 @@
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "1A77CA35F054F988"
-			shape: "rsquare"
+			shape: "square"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_oxygen.subtitle}"
 			tasks: [{
@@ -1018,7 +1004,7 @@
 			description: ["{quests.low_voltage.1_mv_circuit.desc}"]
 			id: "0DBC148D92A9F69F"
 			shape: "gear"
-			size: 1.2d
+			size: 1.5d
 			subtitle: "{quests.low_voltage.1_mv_circuit.subtitle}"
 			tasks: [{
 				id: "70313E1917121E14"
@@ -1027,7 +1013,7 @@
 			}]
 			title: "{quests.low_voltage.1_mv_circuit.title}"
 			x: 0.0d
-			y: 10.799999999999999d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -1196,27 +1182,9 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7CCC1BDDE0C67F16"]
-			description: ["With that tape you wil be able to move around the crate. The main advantage? You can put anything in a crate, weight won't be an issue here."]
-			icon: "gtceu:basic_tape"
-			id: "37151F9C4A240041"
-			shape: "rsquare"
-			size: 1.0d
-			subtitle: "Moving stuff around"
-			tasks: [{
-				id: "2FCA41AFFAF08816"
-				item: "gtceu:basic_tape"
-				type: "item"
-			}]
-			title: "Tape for Crate"
-			x: 7.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["22510C5F2386B453"]
 			description: ["{quests.low_voltage.lv_mixer.desc}"]
 			id: "5B891BA4897FD73C"
-			optional: true
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.low_voltage.lv_mixer.subtitle}"
@@ -1263,7 +1231,7 @@
 			dependencies: ["15928F50AE80A5CF"]
 			description: ["{quests.low_voltage.lv_nitrogen.desc}"]
 			id: "39F6BCF4B8DFC7D4"
-			shape: "rsquare"
+			shape: "square"
 			subtitle: "{quests.low_voltage.lv_nitrogen.subtitle}"
 			tasks: [{
 				id: "332632EB70DC54EB"
@@ -1303,7 +1271,7 @@
 			description: ["{quests.low_voltage.mold_plate.desc}"]
 			icon: "gtceu:plate_casting_mold"
 			id: "3526779F1E3E2DB5"
-			shape: "rsquare"
+			shape: "square"
 			subtitle: "{quests.low_voltage.mold_plate.subtitle}"
 			tasks: [
 				{
@@ -1410,6 +1378,30 @@
 			title: "{quests.low_voltage.lv_machine_casing.title}"
 			x: 0.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["0DBC148D92A9F69F"]
+			description: [
+				"{quests.low_voltage.lv_greenhouse.desc.1}"
+				"{@pagebreak}"
+				"{quests.low_voltage.lv_greenhouse.desc.2}"
+				"{@pagebreak}"
+				"{quests.low_voltage.lv_greenhouse.desc.3}"
+			]
+			icon: "minecraft:oak_sapling"
+			id: "1F41C35890E2C44F"
+			optional: true
+			shape: "heart"
+			size: 1.5d
+			subtitle: "{quests.low_voltage.lv_greenhouse.subtitle}"
+			tasks: [{
+				id: "3EB01235ED295080"
+				item: "gtceu:greenhouse"
+				type: "item"
+			}]
+			title: "{quests.low_voltage.lv_greenhouse.title}"
+			x: 3.0d
+			y: 11.0d
 		}
 	]
 	subtitle: ["{quests.low_voltage.subtitle}"]

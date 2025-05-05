@@ -11,7 +11,7 @@
 	#
 	# The largest (inclusive) size of an item that is allowed in a supply cart.
 	#Allowed Values: TINY, VERY_SMALL, SMALL, NORMAL, LARGE, VERY_LARGE, HUGE
-	maxItemSize = "VERY_LARGE"
+	maxItemSize = "HUGE"
 	#
 	# Can the animal cart pick up players by pushing it into them?
 	canPushIntoPlayers = true

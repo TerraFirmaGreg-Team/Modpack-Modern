@@ -1,7 +1,7 @@
 // priority: 0
 
 
-global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER = 1.5;
+global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER = 2;
 
 
 global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
@@ -13,6 +13,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:v_shaped_curving_head',
 	'vintageimprovements:grinder_belt',
 	'vintageimprovements:spring_coiling_machine_wheel',
+	'vintageimprovements:laser',
 	'vintageimprovements:laser_item',
 	'vintageimprovements:sulfur_chunk',
 	'vintageimprovements:sulfur',
@@ -57,6 +58,7 @@ global.VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintageimprovements:hepatizon_rod',
 	'vintageimprovements:invar_rod',
 	'vintageimprovements:lead_rod',
+	'vintageimprovements:zinc_rod',
 	'vintageimprovements:lumium_rod',
 	'vintageimprovements:manyullyn_rod',
 	'vintageimprovements:nickel_rod',

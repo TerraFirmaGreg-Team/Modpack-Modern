@@ -6,6 +6,8 @@
  */
 function registerTFGMiscellaneousRecipes(event) {
 
+	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam'})
+
 	//tfc:moss
 	event.replaceInput({}, 'minecraft:vine', '#tfc:moss')
 
@@ -128,9 +130,9 @@ function registerTFGMiscellaneousRecipes(event) {
 	//Scaffolding Frame
 	event.shaped('tfg:scaffolding_frame',
 		[
-			'AAA',
+			' A ',
 			'ABA',
-			'AAA'
+			' A '
 		],
 		{
 			A: '#forge:rods/wood',
@@ -138,7 +140,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		}).id('tfg:shaped/scaffolding_frame');
 
 	event.recipes.gtceu.assembler('tfg:assembler/scaffolding_frame')
-		.itemInputs('8x #forge:rods/wood', '#forge:cloth')
+		.itemInputs('4x #forge:rods/wood', '#forge:cloth')
 		.itemOutputs('tfg:scaffolding_frame')
 		.duration(10)
 		.EUt(GTValues.VA[GTValues.ULV]);
@@ -161,15 +163,18 @@ function registerTFGMiscellaneousRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//Airship Balloon
-	event.shaped('tfg:airship_balloon', [
-		'ABA',
-		'BCB',
-		'ABA'
-	], {
-		A: '#forge:string',
-		B: 'immersive_aircraft:sail',
-		C: 'tfc:bone_needle'
-	}).id('tfg:shaped/airship_balloon')
+	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('tfg:airship_balloon', [
+			'ABA',
+			'BCB',
+			'ABA'
+		], {
+			A: '#forge:string',
+			B: 'immersive_aircraft:sail',
+			C: 'tfc:bone_needle'
+		})
+	).id('tfg:shaped/airship_balloon')
+
 	event.recipes.gtceu.assembler('tfg:assembler/airship_balloon')
 		.itemInputs('4x immersive_aircraft:sail', '4x #forge:string')
 		.itemOutputs('tfg:airship_balloon')
@@ -313,4 +318,75 @@ function registerTFGMiscellaneousRecipes(event) {
 
 	event.shapeless('8x minecraft:snow', ['minecraft:snow_block', '#forge:tools/saws'])
 		.id('tfg:shapeless/snow')
+
+    //Cloth & String
+    event.recipes.gtceu.wiremill('tfg:wiremill/phantom_thread')
+        .itemInputs('1x minecraft:phantom_membrane')
+        .itemOutputs('16x tfg:phantom_thread')
+        .duration(100)
+        .circuit(0)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
+        .itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
+        .itemOutputs('32x tfg:polycaprolactam_string')
+        .duration(100)
+        .circuit(0)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.assembler('tfg:assembler/phantom_silk')
+        .itemInputs('16x tfg:phantom_thread')
+        .itemOutputs('1x tfg:phantom_silk')
+        .duration(100)
+        .circuit(0)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
+        .itemInputs('16x tfg:polycaprolactam_string')
+        .itemOutputs('1x tfg:polycaprolactam_fabric')
+        .duration(100)
+        .circuit(0)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.chemical_bath('tfg:chemical_bath/bleaching/polycaprolactam_string')
+        .itemInputs('tfg:polycaprolactam_string')
+        .inputFluids(Fluid.of('gtceu:chlorine', 16))
+        .itemOutputs('minecraft:string')
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.ULV])
+        .category(GTRecipeCategories.CHEM_DYES)
+
+    event.recipes.tfc.loom(
+        '1x tfg:phantom_silk',
+        '16x tfg:phantom_thread',
+        8,
+        'tfg:block/phantom_silk_block'
+    )
+
+    event.recipes.tfc.loom(
+        '1x tfg:polycaprolactam_fabric',
+        '16x tfg:polycaprolactam_string',
+        8,
+        'tfg:block/polycaprolactam_fabric_block'
+    )
+
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.shapeless('16x tfg:phantom_thread', [
+            'minecraft:phantom_membrane',
+            'tfc:spindle'
+        ]).id('tfg:shapeless/phantom_thread'))
+  
+	// Universal Circuit
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
+		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1),  [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
+			).id(`universal_circuits_${tier}`);
+	});
+
+	// Air collector (move this to space stuff later)
+	event.recipes.gtceu.gas_collector('nether')
+		.circuit(2)
+		.outputFluids(Fluid.of('gtceu:air', 10000))
+		.dimension('minecraft:the_nether')
+		.duration(200)
+		.EUt(16)
 }

@@ -36,6 +36,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_GEAR,
 		GENERATE_FRAME,
 		GENERATE_PLATE,
+		GENERATE_DENSE,
 		GENERATE_RING
 	} = $MATERIAL_FLAGS
 
@@ -167,7 +168,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Silver.addFlags(HAS_SMALL_NATIVE_TFC_ORE);
 	//
 	//        /* Имеют двойные слитки */
-	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
+	GTMaterials.RedAlloy.addFlags(GENERATE_DOUBLE_INGOTS, GENERATE_SMALL_GEAR);
 	GTMaterials.TinAlloy.addFlags(GENERATE_DOUBLE_INGOTS);
 	//
 	//        /* Другое */
@@ -187,7 +188,8 @@ const registerGTCEuMaterialModification = (event) => {
 
 	GTMaterials.Wood.addFlags(GENERATE_SMALL_GEAR);
 	GTMaterials.Brass.addFlags(GENERATE_SMALL_GEAR, GENERATE_RING);
-	GTMaterials.BismuthBronze.addFlags(GENERATE_GEAR);
+	GTMaterials.BlackBronze.addFlags(GENERATE_SMALL_GEAR);
+	GTMaterials.BismuthBronze.addFlags(GENERATE_SMALL_GEAR);
 	
 	GTMaterials.Nickel.addFlags(GENERATE_ROD, GENERATE_LONG_ROD);
 	GTMaterials.BlackSteel.addFlags(GENERATE_LONG_ROD, GENERATE_BOLT_SCREW, GENERATE_SMALL_GEAR);
@@ -199,7 +201,16 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.DamascusSteel.addFlags(GENERATE_BOLT_SCREW);
 	GTMaterials.Duranium.addFlags(GENERATE_BOLT_SCREW);
 
+	GTMaterials.Cupronickel.addFlags(GENERATE_BOLT_SCREW, GENERATE_RING);
+
+	GTMaterials.Invar.addFlags(GENERATE_RING);
+	GTMaterials.Magnalium.addFlags(GENERATE_RING);
+	GTMaterials.TinAlloy.addFlags(GENERATE_RING);
+	GTMaterials.SterlingSilver.addFlags(GENERATE_RING);
+
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
+
+	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
@@ -281,6 +292,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.TungstenSteel.setMaterialSecondaryARGB(0x03192f)
 	GTMaterials.RoseGold.setMaterialARGB(0xFCE4D8)
 	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xAB675A)
+	GTMaterials.Platinum.setMaterialARGB(0xccdff5)
+	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
+	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
+	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>

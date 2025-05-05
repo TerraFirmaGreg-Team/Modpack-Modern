@@ -2,6 +2,9 @@
 
 function removeGTCEURecipes(event) {
 
+	event.replaceInput({ input: 'gtceu:wood_drum' }, 'gtceu:wood_drum', 'minecraft:glass')
+	event.replaceInput({ input: 'minecraft:chest' }, 'minecraft:chest', '#forge:chests/wooden')
+
 	global.GTCEU_DISABLED_ITEMS.forEach(item => {
 		event.remove({ input: item })
 		event.remove({ output: item })
@@ -152,6 +155,19 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:shaped/basalt_polish_hammer' })
 	event.remove({ id: 'gtceu:assembler/assemble_basalt_into_polished' })
+
+	// #endregion
+
+	// #region Nether Quartz
+	
+	event.remove({ id: 'gtceu:shaped/quartz_stair_saw' })
+	event.remove({ id: 'gtceu:assembler/assemble_quartz_into_stair' })
+	event.remove({ id: 'gtceu:shaped/quartz_polish_hammer' })
+	event.remove({ id: 'gtceu:assembler/assemble_quartz_into_polished' })
+	event.remove({ id: 'gtceu:assembler/assemble_block_of_quartz_into_quartz_pillar' })
+	event.remove({ id: 'gtceu:shaped/smooth_quartz_stair_saw' })
+	event.remove({ id: 'gtceu:assembler/assemble_smooth_quartz_into_stair' })
+	event.remove({ id: 'gtceu:shaped/smooth_quartz_slab_saw' })
 
 	// #endregion
 
@@ -587,6 +603,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/shield' })
 	event.remove({ id: 'gtceu:shaped/pickaxe_iron' })
 
+	event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint' })
+
 	event.remove({ id: 'gtceu:shaped_fluid_container/treated_wood_planks' })
 
 	event.remove({ id: 'gtceu:assembler/bell' })
@@ -608,6 +626,18 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:assembler/spyglass' })
 
 	event.remove({ id: 'gtceu:chemical_reactor/ghast_tear_separation' })
-
+	
+	event.remove({ id: 'gtceu:assembler/assemble_brick_into_stair' })
+	event.remove({ id: 'gtceu:assembler/assemble_brick_into_wall' })
 	event.remove({ id: 'gtceu:compressor/bricks' })
+	event.remove({ id: 'gtceu:extractor/bricks_extraction' })
+	event.remove({ id: 'gtceu:macerator/macerate_bricks' })
+	event.remove({ id: 'gtceu:macerator/macerate_brick_stairs' })
+	event.remove({ id: 'gtceu:macerator/macerate_brick_slab' })
+	event.remove({ id: 'gtceu:macerator/macerate_brick_wall' })
+	event.remove({ id: 'gtceu:macerator/macerate_flower_pot' })
+
+	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
+
+	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
 }

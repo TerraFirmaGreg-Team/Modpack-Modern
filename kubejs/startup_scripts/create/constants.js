@@ -292,5 +292,6 @@ global.CREATE_DISABLED_ITEMS = [
     'create:chest_minecart_contraption',
     'create:mechanical_pump',
     'create:peculiar_bell',
-    'create:haunted_bell'
+    'create:haunted_bell',
+    'create:adjustable_chain_gearshift'
 ];

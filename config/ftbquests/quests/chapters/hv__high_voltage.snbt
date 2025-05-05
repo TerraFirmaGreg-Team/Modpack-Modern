@@ -5,7 +5,7 @@
 	group: "44D0F3E5067B5AB8"
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
-	order_index: 3
+	order_index: 2
 	quest_links: [
 		{
 			id: "2583D0B64E51FAC8"
@@ -13,13 +13,6 @@
 			size: 0.75d
 			x: 7.875d
 			y: -5.25d
-		}
-		{
-			id: "47BF469B9B0EB28A"
-			linked_quest: "4AFD3073C731A1E4"
-			size: 0.75d
-			x: 7.875d
-			y: -4.125d
 		}
 		{
 			id: "6C3B2B8F8B6646EA"
@@ -572,7 +565,6 @@
 			y: -5.25d
 		}
 		{
-			dependencies: ["4AFD3073C731A1E4"]
 			description: [
 				"The &3Vacuum Freezer&r is a multiblock used to cool down &eHot Ingots&r. All ingots made in the EBF with a temperature above &d1750K&r will need it."
 				""
@@ -613,10 +605,7 @@
 			y: -4.125d
 		}
 		{
-			dependencies: [
-				"41D32C5178760F47"
-				"4AFD3073C731A1E4"
-			]
+			dependencies: ["41D32C5178760F47"]
 			description: [
 				"The next &3Circuit Assembler&r. This tier of Circuit Assembler is only required for one type of Circuit - your first ever &aMainframe&r."
 				""
@@ -653,10 +642,7 @@
 			y: -1.875d
 		}
 		{
-			dependencies: [
-				"4AFD3073C731A1E4"
-				"6B1595678ECB7AC8"
-			]
+			dependencies: ["6A451F43F3D7A671"]
 			description: [
 				"The first &1IV&r circuit. Congratulations on making it this far!"
 				""
@@ -1267,6 +1253,62 @@
 			}]
 			x: 2.25d
 			y: -3.0d
+		}
+		{
+			description: [
+				"&aBlue Alloy&r is an excellent Cable material for &6HV&r power."
+				""
+				"Nothing is preventing you from using it for &bMV&r power too! Make sure that you don't overvolt your machines, though."
+				""
+				"Superconductors for both &bMV&r and &6HV&r are unlocked... later."
+				""
+				"&aElectrotine&r is obtained from the &cNether&r, so don't craft it in the Mixer!"
+				""
+				"Furthermore, &aElectrotine&r can be separated for &dElectrum&r and &dRedstone&r."
+			]
+			icon: "gtceu:blue_alloy_ingot"
+			id: "073F59194B479AA3"
+			rewards: [{
+				id: "6DDC52F547CDE852"
+				item: "gtceu:electrotine_dust"
+				random_bonus: 7
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "You're blue now... that's my alloy"
+			tasks: [{
+				id: "6214AC99E4182DD9"
+				item: "gtceu:blue_alloy_ingot"
+				type: "item"
+			}]
+			title: "Blue Alloy"
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5063FDFFBE3E4855"
+				"3568BC9742092FC5"
+			]
+			description: [
+				"Your first &5EV&r Circuit gets a unique texture. If you still consider yourself to be in &bMV&r, &ahold off&r on making too many of these, as they won't benefit you right now. We can't stop you from making these if you &djust wanna flex&r on us, though."
+				""
+				"It'll be needed in &6HV&r."
+			]
+			icon: "gtceu:micro_processor_computer"
+			id: "6A451F43F3D7A671"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Standing out amongst the rest"
+			tasks: [{
+				id: "01FE6BC2780D623B"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			title: "First EV Circuits!"
+			x: 8.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Scale up your power and begin advanced chemistry"]

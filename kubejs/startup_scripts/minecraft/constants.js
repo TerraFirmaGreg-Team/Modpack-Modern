@@ -595,7 +595,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:frogspawn', 
     'minecraft:cactus', 
     'minecraft:sweet_berries', 
-    'minecraft:campfire', 
     'minecraft:soul_campfire', 
     'minecraft:bee_nest', 
     'minecraft:fletching_table', 

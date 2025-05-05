@@ -5,7 +5,6 @@ const registerCreateRecipes = (event) => {
 	// Удаление рецептов мода create 
 	event.remove({
 		not: [
-			{ id: 'create:crafting/kinetics/adjustable_chain_gearshift' },
 			{ id: 'create:crafting/kinetics/cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/mysterious_cuckoo_clock' },
 			{ id: 'create:crafting/kinetics/smart_chute' },
@@ -169,7 +168,7 @@ const registerCreateRecipes = (event) => {
 		'AAA',
 		' B '
 	], {
-		A: '#forge:nuggets/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		B: '#forge:plates/wrought_iron'
 	}).id('tfg:create/shaped/metal_bracket')
 
@@ -182,7 +181,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/fluid_pipe')
 
 	event.recipes.gtceu.assembler('tfg:create/fluid_pipe')
-		.itemInputs('4x #forge:plates/copper')
+		.itemInputs('2x #forge:plates/copper')
 		.circuit(3)
 		.itemOutputs('create:fluid_pipe')
 		.duration(200)
@@ -206,7 +205,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/copper_valve_handle')
 
 	event.recipes.gtceu.assembler('tfg:create/copper_valve_handle')
-		.itemInputs('4x #forge:plates/copper', '#forge:small_gears/wrought_iron')
+		.itemInputs('#forge:plates/copper', '#forge:small_gears/wrought_iron')
 		.circuit(6)
 		.itemOutputs('create:copper_valve_handle')
 		.duration(200)
@@ -268,14 +267,14 @@ const registerCreateRecipes = (event) => {
 		A: '#forge:screws/wrought_iron',
 		B: '#forge:plates/brass',
 		C: '#forge:rods/black_steel',
-		D: '#forge:gears/steel',
+		D: '#forge:small_gears/steel',
 		E: '#forge:tools/hammers',
 		F: '#forge:storage_blocks/copper',
 		G: '#forge:tools/screwdrivers',
 	}).id('tfg:create/shaped/steam_engine')
 
 	event.recipes.gtceu.assembler('tfg:create/steam_engine')
-		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/red_steel', '#forge:gears/steel', '#forge:storage_blocks/copper')
+		.itemInputs('2x #forge:screws/wrought_iron', '#forge:plates/brass', '2x #forge:rods/black_steel', '#forge:small_gears/steel', '#forge:storage_blocks/copper')
 		.circuit(3)
 		.itemOutputs('create:steam_engine')
 		.duration(200)
@@ -642,7 +641,7 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/item_vault')
 
 	event.recipes.gtceu.assembler('tfg:create/item_vault')
-		.itemInputs('3x #forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
+		.itemInputs('#forge:chests/wooden', '#forge:sheets/wrought_iron', '2x #forge:screws/steel')
 		.circuit(3)
 		.itemOutputs('create:item_vault')
 		.duration(200)
@@ -758,12 +757,12 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:tools/hammers',
 		B: '#forge:ingots/brass',
-		C: '#forge:nuggets/brass',
+		C: '#forge:bolts/brass',
 		D: '#forge:tools/files'
 	}).id('tfg:create/shaped/brass_hand')
 
 	event.recipes.gtceu.assembler('tfg:create/brass_hand')
-		.itemInputs('3x #forge:nuggets/brass', '#forge:plates/brass')
+		.itemInputs('3x #forge:bolts/brass', '#forge:plates/brass')
 		.circuit(3)
 		.itemOutputs('create:brass_hand')
 		.duration(200)
@@ -849,7 +848,7 @@ const registerCreateRecipes = (event) => {
 		' CE'
 	], {
 		A: '#tfg:small_cogwheels',
-		B: 'create:andesite_casing',
+		B: 'gtceu:ulv_machine_casing',
 		C: 'create:brass_hand',
 		D: '#forge:tools/wrenches',
 		E: '#forge:tools/screwdrivers',
@@ -1017,7 +1016,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:filter', [
 		'ABA'
 	], {
-		A: '#forge:nuggets/wrought_iron',
+		A: '#forge:bolts/wrought_iron',
 		B: '#forge:cloth'
 	}).id('tfg:create/shaped/filter')
 
@@ -1025,7 +1024,7 @@ const registerCreateRecipes = (event) => {
 	event.shaped('create:attribute_filter', [
 		'ABA'
 	], {
-		A: '#forge:nuggets/brass',
+		A: '#forge:bolts/brass',
 		B: '#forge:cloth'
 	}).id('tfg:create/shaped/attribute_filter')
 
@@ -1265,7 +1264,7 @@ const registerCreateRecipes = (event) => {
 	]).transitionalItem('create:incomplete_precision_mechanism').loops(3).id('tfg:create/sequenced_assembly/precision_mechanism')
 
 	event.recipes.gtceu.assembler('tfg:create/precision_mechanism')
-		.itemInputs('#forge:plates/gold', '3x #forge:small_springs/gold', '3x #forge:small_gears/brass', '3x #forge:bolts/wrought_iron')
+		.itemInputs('#forge:plates/gold', '2x #forge:small_springs/gold', '2x #forge:small_gears/brass', '2x #forge:bolts/wrought_iron')
 		.itemOutputs('create:precision_mechanism')
 		.duration(2000)
 		.EUt(20)
@@ -1362,12 +1361,12 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/vertical_framed_glass')
 
 	const CREATE_FRAMED_GLASS_WINDOWS =
-		[
-			'framed_glass',
-			'tiled_glass',
-			'horizontal_framed_glass',
-			'vertical_framed_glass'
-		]
+	[
+		'framed_glass',
+		'tiled_glass',
+		'horizontal_framed_glass',
+		'vertical_framed_glass'
+	]
 
 	CREATE_FRAMED_GLASS_WINDOWS.forEach(x => {
 		event.shapeless(`2x create:${x}_pane`,
@@ -1385,19 +1384,20 @@ const registerCreateRecipes = (event) => {
 	})
 
 	const CREATE_OTHER_GLASS_WINDOWS =
-		[
-			['dark_oak', 'tfc:wood/lumber/hickory'],
-			['mangrove', 'tfc:wood/lumber/mangrove'],
-			['ornate_iron', 'gtceu:wrought_iron_rod']
-		]
+	[
+		['dark_oak', 'tfc:wood/planks/hickory'],
+		['mangrove', 'tfc:wood/planks/mangrove'],
+		['ornate_iron', 'tfc:metal/bars/wrought_iron']
+	]
 
 	CREATE_OTHER_GLASS_WINDOWS.forEach(x => {
 		event.shaped(`2x create:${x[0]}_window`,
 			[
-				' B ',
-				'BAB'
+				'   ',
+				'BAB',
+				' B '
 			], {
-			A: 'minecraft:glass',
+			A: '#forge:glass',
 			B: x[1]
 		}).id(`tfg:create/shaped/${x[0]}_window`)
 
@@ -1441,7 +1441,10 @@ const registerCreateRecipes = (event) => {
 	]
 
 	DECO_BLOCKS.forEach(x => {
-		event.shapeless(x.cut, [x.base, '#tfc:chisels', '#forge:tools/files']).id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(x.cut, [x.base, '#tfc:chisels', '#forge:tools/files'])
+		).id(`create:shapeless/chisel_${x.cut.split(':')[1]}`)
 
 		event.recipes.gtceu.laser_engraver(`engrave_${x.cut.split(':')[1]}`)
 			.itemInputs(x.base)
@@ -1450,13 +1453,13 @@ const registerCreateRecipes = (event) => {
 			.duration(32)
 			.EUt(GTValues.VA[GTValues.ULV])
 
-		event.custom({
-			type: 'vintageimprovements:laser_cutting',
-			ingredients: [{ item: x.base }],
-			results: [{item: x.cut }],
-			energy: GTValues.VA[GTValues.ULV] * 32 * 4,
-			maxChargeRate: GTValues.VA[GTValues.ULV] * 4
-		}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
+		//event.custom({
+		//	type: 'vintageimprovements:laser_cutting',
+		//	ingredients: [{ item: x.base }],
+		//	results: [{item: x.cut }],
+		//	energy: GTValues.VA[GTValues.ULV] * 32 * 4,
+		//	maxChargeRate: GTValues.VA[GTValues.ULV] * 4
+		//}).id(`tfg:vi/laser/create/${x.cut.split(':')[1]}`)
 
 		event.shaped(`2x create:layered_${x.cut.split('_')[1]}`, [
 			'AA'
@@ -1496,7 +1499,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:chests/wooden',
 		B: '#forge:plates/brass',
-		C: '#forge:nuggets/brass',
+		C: '#forge:bolts/brass',
 		D: '#forge:screws',
 		E: '#forge:tools/screwdrivers'
 	}).id('tfg:create/shaped/brown_toolbox')
@@ -1580,9 +1583,9 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: 'create:brass_casing',
 		B: '#forge:small_gears/brass',
-		C: '#forge:gears/black_steel',
+		C: '#forge:small_gears/red_alloy',
 		D: '#forge:tools/wrenches',
-		E: '#forge:small_springs/gold',
+		E: '#forge:small_springs/steel',
 		F: '#tfg:shafts',
 		G: '#forge:tools/hammers'
 	}).id('tfg:create/shaped/rotation_speed_controller')
