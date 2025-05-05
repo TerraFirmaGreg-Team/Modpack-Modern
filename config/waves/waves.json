@@ -1,0 +1,14 @@
+{
+  "auto_update": true,
+  "version": "1.5.1",
+  "waves": [
+    {
+      "dimensions": [
+        "minecraft:overworld",
+        "minecraft:nether",
+        "minecraft:the_end"
+      ],
+      "sea_level": 63
+    }
+  ]
+}

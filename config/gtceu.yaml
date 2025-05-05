@@ -535,7 +535,7 @@ compat:
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24
-    surfaceRockProspectRange: -1
+    surfaceRockProspectRange: 1
 
     # The radius, in blocks, that clicking an ore block will search for veins in.
     # -1 to disable

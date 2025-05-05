@@ -1,0 +1,16 @@
+
+#This is the Client config for ConstructionWand.
+#If you're not familiar with Forge's new split client/server config, let me explain:
+#Client config is stored in the /config folder and only contains client specific settings like graphics and keybinds.
+#Mod behavior is configured in the Server config, which is world-specific and thus located
+#in the /saves/myworld/serverconfig folder. If you want to change the serverconfig for all
+#new worlds, copy the config files in the /defaultconfigs folder.
+[keys]
+	#Key code of OPTKEY (Default: Left Control). Look up key codes under https://www.glfw.org/docs/3.3/group__keys.html
+	#Range: 0 ~ 350
+	OptKey = 341
+	#Press SNEAK+OPTKEY instead of SNEAK for changing wand mode/direction lock
+	ShiftOpt = false
+	#Press SNEAK+OPTKEY instead of SNEAK for opening wand GUI
+	ShiftOptGUI = true
+

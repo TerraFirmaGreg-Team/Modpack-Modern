@@ -34,6 +34,8 @@
 	paneBuildingSupport = true
 	#This option makes the recipe book not shift the inventory when opened. Works best with smaller GUI scales / bigger resolutions.
 	noRecipeBookShifting = false
+	#This option will disable paving when holding a block in your offhand.
+	disablePavingWithBlockInOffhand = true
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.
