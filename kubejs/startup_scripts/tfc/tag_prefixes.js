@@ -81,4 +81,25 @@ const registerTFCTagPrefixes = (event) => {
 		.unificationEnabled(true)
 		.materialIconType(GTMaterialIconType.ore)
 		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('venus_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_venus_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/venus_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('mercury_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_mercury_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/mercury_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
+
+	event.create('glacio_stone', 'ore')
+		.stateSupplier(() => Block.getBlock('tfg:rock/hardened_glacio_stone').defaultBlockState())
+		.baseModelLocation('ad_astra:block/glacio_stone')
+		.unificationEnabled(true)
+		.materialIconType(GTMaterialIconType.ore)
+		.generationCondition(ItemGenerationCondition.hasOreProperty)
 }

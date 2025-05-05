@@ -4,8 +4,6 @@ function registerTFGSpaceBlocks(event) {
 	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
 	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
 
-	// #region Moon blocks
-
 	event.createCustom(`tfg:lunar_warped_roots`, () => new $SproutsBlock($Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 	event.createCustom(`tfg:lunar_sprouts`, () => new $SproutsBlock( $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 
@@ -33,21 +31,9 @@ function registerTFGSpaceBlocks(event) {
 		.tagBoth('forge:stone')
 		.tagBoth('tfc:rock/hardened')
 		.tagBlock('minecraft:mineable/pickaxe')
-		.mapColor('terracotta_cyan')
+		.mapColor('terracotta_blue')
 		.fullBlock(true)
 		.opaque(true)
-
-	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
-		.itemTexture('tfg:item/loose/moon_stone')
-		.rockTypeModel('igneous_extrusive')
-
-	event.create('tfg:loose/moon_deepslate', 'tfc:loose_rock')
-		.itemTexture('tfg:item/loose/moon_deepslate')
-		.rockTypeModel('igneous_extrusive')
-
-	// #endregion
-
-	// #region Mars blocks
 
 	event.create('tfg:rock/hardened_mars_stone')
 		.stoneSoundType()
@@ -63,8 +49,73 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
+	event.create('tfg:rock/hardened_venus_stone')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/venus_stone' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.mapColor('terracotta_yellow')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/hardened_mercury_stone')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/mercury_stone' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.mapColor('terracotta_purple')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:rock/hardened_glacio_stone')
+		.stoneSoundType()
+		.requiresTool(true)
+		.item(item => {
+			item.modelJson({ parent: 'ad_astra:item/glacio_stone' })
+		})
+		.tagBlock('tfc:can_carve')
+		.tagBoth('forge:stone')
+		.tagBoth('tfc:rock/hardened')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.mapColor('terracotta_light_blue')
+		.fullBlock(true)
+		.opaque(true)
+
+	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/moon_stone')
+		.rockTypeModel('igneous_extrusive')
+
+	event.create('tfg:loose/moon_deepslate', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/moon_deepslate')
+		.rockTypeModel('igneous_intrusive')
+
 	event.create('tfg:loose/mars_stone', 'tfc:loose_rock')
 		.itemTexture('tfg:item/loose/mars_stone')
 		.rockTypeModel('sedimentary')
 
+	event.create('tfg:loose/venus_stone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/venus_stone')
+		.rockTypeModel('igneous_extrusive')
+
+	event.create('tfg:loose/mercury_stone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/mercury_stone')
+		.rockTypeModel('metamorphic')
+
+	event.create('tfg:loose/glacio_stone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/glacio_stone')
+		.rockTypeModel('sedimentary')
+
+	event.create('tfg:loose/permafrost', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/permafrost')
+		.rockTypeModel('sedimentary')
 }

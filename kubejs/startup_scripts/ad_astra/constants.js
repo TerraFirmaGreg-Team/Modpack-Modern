@@ -53,8 +53,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	// Disabled until IV planets
 
 	'ad_astra:tier_3_rocket',
-	'ad_astra:mercury_globe',
-	'ad_astra:venus_globe',
 	'ad_astra:netherite_space_helmet',
 	'ad_astra:netherite_space_suit',
 	'ad_astra:netherite_space_pants',

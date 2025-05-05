@@ -24,12 +24,17 @@ global.EXTRATERRESTRIAL_RAW_ROCKS = [
 	'ad_astra:moon_deepslate',
 	'ad_astra:mars_stone',
 	'ad_astra:venus_stone',
-	'ad_astra:mercury_stone'
+	'ad_astra:mercury_stone',
+	'ad_astra:glacio_stone'
 ]
 
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 	'tfg:rock/hardened_moon_stone',
-	'tfg:rock/hardened_mars_stone'
+	'tfg:rock/hardened_moon_deepslate',
+	'tfg:rock/hardened_mars_stone',
+	'tfg:rock/hardened_venus_stone',
+	'tfg:rock/hardened_mercury_stone',
+	'tfg:rock/hardened_glacio_stone',
 ]
 
 global.MOON_BIOMES = [

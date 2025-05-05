@@ -29,8 +29,12 @@ const registerAdAstraItemTags = (event) => {
 		event.removeAllTagsFrom(item)
 		event.add('c:hidden_from_recipe_viewers', item)
 	})
-
+	
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:venus_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:mercury_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:glacio_cobblestone')
 }
 
 const registerAdAstraBlockTags = (event) => {
@@ -93,11 +97,44 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/diorite')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_sand')
+	event.add('tfc:can_landslide', 'ad_astra:mars_sand')
+	event.add('tfc:can_landslide', 'ad_astra:venus_sand')
+
 	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone')
-	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone_slab')
+	event.add('tfc:can_landslide', 'ad_astra:mars_cobblestone')
+	event.add('tfc:can_landslide', 'ad_astra:venus_cobblestone')
+	event.add('tfc:can_landslide', 'ad_astra:mercury_cobblestone')
+	event.add('tfc:can_landslide', 'ad_astra:glacio_cobblestone')
+
 	event.add('forge:cobblestone', 'ad_astra:moon_cobblestone')
-	event.add('tfc:can_start_collapse', 'ad_astra:moon_cobblestone_slab')
-	event.add('tfg:rock_slabs', 'ad_astra:moon_cobblestone_slab')
+	event.add('forge:cobblestone', 'ad_astra:mars_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:venus_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:mercury_cobblestone')
+	event.add('forge:cobblestone', 'ad_astra:glacio_cobblestone')
+
+	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone_slab')
+	event.add('tfc:can_landslide', 'ad_astra:mars_cobblestone_slab')
+	event.add('tfc:can_landslide', 'ad_astra:venus_cobblestone_slab')
+	event.add('tfc:can_landslide', 'ad_astra:mercury_cobblestone_slab')
+	event.add('tfc:can_landslide', 'ad_astra:glacio_cobblestone_slab')
+
+	event.add('tfc:can_landslide', 'ad_astra:moon_cobblestone_stairs')
+	event.add('tfc:can_landslide', 'ad_astra:mars_cobblestone_stairs')
+	event.add('tfc:can_landslide', 'ad_astra:venus_cobblestone_stairs')
+	event.add('tfc:can_landslide', 'ad_astra:mercury_cobblestone_stairs')
+	event.add('tfc:can_landslide', 'ad_astra:glacio_cobblestone_stairs')
+
+	event.add('tfg:rock_stairs', 'ad_astra:moon_stone_stairs')
+	event.add('tfg:rock_stairs', 'ad_astra:mars_stone_stairs')
+	event.add('tfg:rock_stairs', 'ad_astra:venus_stone_stairs')
+	event.add('tfg:rock_stairs', 'ad_astra:mercury_stone_stairs')
+	event.add('tfg:rock_stairs', 'ad_astra:glacio_stone_stairs')
+
+	event.add('tfg:rock_slabs', 'ad_astra:moon_stone_slab')
+	event.add('tfg:rock_slabs', 'ad_astra:mars_stone_slab')
+	event.add('tfg:rock_slabs', 'ad_astra:venus_stone_slab')
+	event.add('tfg:rock_slabs', 'ad_astra:mercury_stone_slab')
+	event.add('tfg:rock_slabs', 'ad_astra:glacio_stone_slab')
 }
 
 const registerAdAstraBiomeTags = (event) => {

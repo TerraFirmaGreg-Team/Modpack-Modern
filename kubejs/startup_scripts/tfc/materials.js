@@ -30,6 +30,12 @@ const registerTFCMaterials = (event) => {
 
     registerStoneMaterial('dripstone', 0x927965)
 
+    registerStoneMaterial('moon_stone', 0x506869)
+    registerStoneMaterial('moon_deepslate', 0x45474D)
+    registerStoneMaterial('mars_stone', 0xD08957)
+    registerStoneMaterial('venus_stone', 0xD5A664)
+    registerStoneMaterial('mercury_stone', 0x723E49)
+    registerStoneMaterial('glacio_stone', 0x9897BF)
 
     // Specialized icon sets for TFC's own
 

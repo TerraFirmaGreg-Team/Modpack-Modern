@@ -192,6 +192,9 @@ global.ORE_BEARING_STONES = [
 
     'moon_stone',
     'moon_deepslate',
-    'mars_stone'
+    'mars_stone',
+    'venus_stone',
+    'mercury_stone',
+    'glacio_stone'
 ];
 

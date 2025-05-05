@@ -1,0 +1,55 @@
+{
+	"variants": {
+		"count=1": [
+			{
+				"model": "tfg:block/loose/permafrost_1",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/loose/permafrost_1"
+			},
+			{
+				"model": "tfg:block/loose/permafrost_1",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/loose/permafrost_1",
+				"y": 270
+			}
+		],
+		"count=2": [
+			{
+				"model": "tfg:block/loose/permafrost_2",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/loose/permafrost_2"
+			},
+			{
+				"model": "tfg:block/loose/permafrost_2",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/loose/permafrost_2",
+				"y": 270
+			}
+		],
+		"count=3": [
+			{
+				"model": "tfg:block/loose/permafrost_3",
+				"y": 90
+			},
+			{
+				"model": "tfg:block/loose/permafrost_3"
+			},
+			{
+				"model": "tfg:block/loose/permafrost_3",
+				"y": 180
+			},
+			{
+				"model": "tfg:block/loose/permafrost_3",
+				"y": 270
+			}
+		]
+	}
+}
