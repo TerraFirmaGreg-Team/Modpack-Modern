@@ -1,0 +1,216 @@
+# Don't change this! Version used to track needed updates.
+version = 1
+
+# Scrolls up a 'page' in the Config GUI
+
+[pageUp]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "page.up"
+
+# Scrolls down a 'page' in the Config GUI
+
+[pageDown]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "page.down"
+
+# Scrolls to the top of the Config GUI
+
+[home]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "home"
+
+# Scrolls to the bottom of the Config GUI
+
+[end]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "end"
+
+# Copies the currently hovered or focused config setting
+
+[copy]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "c"
+
+# Pastes the last-copied setting into a compatible new setting
+
+[paste]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "v"
+
+# Not currently used by Fzzy Config - cuts the selected information to a copy buffer
+
+[cut]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "x"
+
+# Saves changes made to the current Config and sends updates to the server
+
+[save]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "s"
+
+# Undos changes made from newest to oldest change
+
+[undo]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "z"
+
+# Opens the context menu for the currently hovered or selected element
+
+[contextMouse]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "mouse"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "mouse.right"
+
+# Backs out to the previous config screen
+
+[back]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "backspace"
+
+# Opens the 'Go-To' menu (Not used to focus the search bar)
+
+[search]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "e"
+
+# Opens the GUI info menu
+
+[info]
+ctrl = "default"
+shift = "default"
+alt = "default"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f1"
+
+# Fully exits all open config GUIs (and saves them as applicable)
+
+[fullExit]
+ctrl = "false"
+shift = "true"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "escape"
+
+# Focuses the Config GUI search bar
+
+[[find]]
+ctrl = "true"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f"
+
+[[find]]
+ctrl = "false"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f3"
+
+# Opens the context menu for the currently hovered or selected element
+
+[[contextKeyboard]]
+ctrl = "false"
+shift = "true"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f10"
+
+[[contextKeyboard]]
+ctrl = "false"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "menu"
+
+# Not currently used by Fzzy Config - A universal 'Enter' keybind
+
+[[act]]
+ctrl = "false"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "enter"
+
+[[act]]
+ctrl = "false"
+shift = "false"
+alt = "false"
+type = "keyboard"
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "keypad.enter"

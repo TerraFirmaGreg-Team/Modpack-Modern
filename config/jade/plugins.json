@@ -54,6 +54,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "greate": {
+    "belt_icon": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,
@@ -96,6 +99,9 @@
   },
   "lootr": {
     "info": true
+  },
+  "balm": {
+    "jade": true
   },
   "ae2": {
     "part_icon": true,
@@ -175,6 +181,7 @@
     "candle": true,
     "jack_o_lantern": true,
     "firepit": true,
+    "wet_concrete": true,
     "ingot_pile": true
   },
   "firmaciv": {
@@ -202,7 +209,7 @@
   "corpse": {
     "corpse": true
   },
-  "treetap": {
-    "tap": true
+  "tfc_support_indicator": {
+    "support_indicator": true
   }
 }
