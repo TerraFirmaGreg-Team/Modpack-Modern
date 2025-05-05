@@ -130,7 +130,7 @@
 		#.
 		#Game ticks required for a Fan-based processing recipe to take effect.
 		#Range: > 0
-		fanProcessingTime = 3200
+		fanProcessingTime = 400
 
 	#.
 	#Moving Contraptions
@@ -329,7 +329,7 @@
 	#[in Blocks]
 	#The maximum distance a hose pulley can draw fluid blocks from.
 	#Range: > 1
-	hosePulleyRange = 128
+	hosePulleyRange = 256
 	#.
 	#[in Blocks]
 	#[-1 to disable this behaviour]

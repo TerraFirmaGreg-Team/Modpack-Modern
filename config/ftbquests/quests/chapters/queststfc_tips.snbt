@@ -9,8 +9,8 @@
 	quest_links: [{
 		id: "1AD1F9822B738105"
 		linked_quest: "2E36E5755B2F551C"
-		x: 6.0d
-		y: 5.0d
+		x: 2.0d
+		y: 4.0d
 	}]
 	quests: [
 		{
@@ -1138,6 +1138,7 @@
 				"4891E995D3EC2BD1"
 				"5D865179941E7B3A"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.create_sticky_resin.desc}"]
 			id: "6FFD4990FF07078A"
 			size: 1.0d
@@ -2069,23 +2070,7 @@
 			subtitle: "{quests.tfg_tips.smoke_meat.subtitle}"
 			tasks: [
 				{
-					icon: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:food": {
-								creationDate: -9223372036854775808L
-								traits: [
-									"tfc:brined"
-									"firmalife:smoked"
-								]
-							}
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:food/beef"
-					}
+					icon: "minecraft:beef"
 					id: "6F36FAA8AE1E2987"
 					item: {
 						Count: 1
@@ -2320,10 +2305,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"2D959136A5FC5F46"
-				"56CA2EB7812529C5"
-			]
+			dependencies: ["2D959136A5FC5F46"]
 			description: ["{quests.tfg_tips.lamps.desc}"]
 			id: "037CDA933FBE2CBE"
 			subtitle: "{quests.tfg_tips.lamps.subtitle}"
@@ -2360,7 +2342,7 @@
 			]
 			title: "{quests.tfg_tips.lamps.title}"
 			x: -5.0d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -2395,7 +2377,7 @@
 			]
 			title: "{quests.tfg_tips.lava_lamp.title}"
 			x: -5.0d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2416,7 +2398,7 @@
 			}]
 			title: "{quests.tfg_tips.creosote.title}"
 			x: -6.0d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["037CDA933FBE2CBE"]
@@ -2437,7 +2419,7 @@
 			}]
 			title: "{quests.tfg_tips.olive_oil.title}"
 			x: -4.0d
-			y: 12.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2D959136A5FC5F46"]
@@ -2472,7 +2454,7 @@
 			]
 			title: "{quests.tfg_tips.glass_blocks.title}"
 			x: -3.0d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3275,8 +3257,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.camera_attachments.title}"
-			x: -10.5d
-			y: 5.0d
+			x: -9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["275C8EA942AB49DD"]
@@ -3296,11 +3278,11 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.filters.title}"
-			x: -10.5d
-			y: 6.0d
+			x: -9.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["275C8EA942AB49DD"]
+			dependencies: ["4E2C1CAD883EB032"]
 			description: ["{quests.tfg_tips.interplanar_projector.desc}"]
 			id: "3952D56556B35FDB"
 			subtitle: "{quests.tfg_tips.interplanar_projector.subtitle}"
@@ -3316,8 +3298,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.interplanar_projector.title}"
-			x: -10.5d
-			y: 7.0d
+			x: -9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["79FA776C414AE8E5"]
@@ -3524,7 +3506,7 @@
 			}]
 			title: "{quests.tfg_tips.tallow.title}"
 			x: -6.5d
-			y: 11.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -4294,9 +4276,9 @@
 		}
 		{
 			dependencies: ["6C64C20FF5DF972A"]
-			description: ["{quests.tfg_tips.grapple_upgrade_length.desc}"]
+			description: ["{quests.tfg_tips.grapple_length.desc}"]
 			id: "105FD1655EEB1921"
-			subtitle: "{quests.tfg_tips.grapple_upgrade_length.subtitle}"
+			subtitle: "{quests.tfg_tips.grapple_length.subtitle}"
 			tasks: [
 				{
 					id: "6BC5AB4D7A479799"
@@ -4316,7 +4298,7 @@
 					type: "item"
 				}
 			]
-			title: "{quests.tfg_tips.grapple_upgrade_length.title}"
+			title: "{quests.tfg_tips.grapple_length.title}"
 			x: -17.0d
 			y: 4.5d
 		}
@@ -4342,7 +4324,11 @@
 		}
 		{
 			dependencies: ["1F93C858F1D02F7C"]
-			description: ["{quests.tfg_tips.grapple_upgrade_length.desc}"]
+			description: [
+				"{quests.tfg_tips.grapple_upgrades.desc.1}"
+				"{@pagebreak}"
+				"{quests.tfg_tips.grapple_upgrades.desc.2}"
+			]
 			id: "6C64C20FF5DF972A"
 			subtitle: "{quests.tfg_tips.grapple_upgrades.subtitle}"
 			tasks: [{
@@ -4532,7 +4518,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
 			description: [
 				"&3Long-Distance Item Pipes&r can be used to send items across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -4559,7 +4544,7 @@
 				}
 			]
 			title: "Long-Distance Items"
-			x: 4.0d
+			x: 5.5d
 			y: 2.0d
 		}
 		{
@@ -4584,11 +4569,10 @@
 				type: "item"
 			}]
 			title: "Tricorder"
-			x: 6.0d
-			y: 2.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
 			description: [
 				"&3Long-Distance Fluid Pipes&r can be used to send fluids across great distances. Place one endpoint at each end, and connect them with pipeline blocks."
 				""
@@ -4618,11 +4602,11 @@
 				}
 			]
 			title: "Long-Distance Pipeline"
-			x: 5.0d
+			x: 3.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: ["74AE7DB845B88CF3"]
 			description: [
 				"In this quest, we'll bestow upon you &5cursed wisdom&r... the ability to easily automate the Electrolyzer."
 				""
@@ -4649,11 +4633,11 @@
 				type: "item"
 			}]
 			title: "200IQ"
-			x: 6.0d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["02FDECC931B5E8EF"]
+			dependencies: ["74AE7DB845B88CF3"]
 			description: [
 				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
 				""
@@ -4675,13 +4659,20 @@
 			shape: "square"
 			size: 1.0d
 			subtitle: "Stop burning your darn hands!"
-			tasks: [{
-				id: "34DEDF3B7F0DB3BC"
-				item: "gtceu:item_tag_filter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "34DEDF3B7F0DB3BC"
+					item: "gtceu:item_tag_filter"
+					type: "item"
+				}
+				{
+					id: "35CAF01644B8D9A2"
+					item: "gtceu:fluid_tag_filter"
+					type: "item"
+				}
+			]
 			title: "250IQ"
-			x: 6.0d
+			x: 9.0d
 			y: 4.0d
 		}
 		{
@@ -4710,8 +4701,8 @@
 				type: "item"
 			}]
 			title: "GregTech Storage"
-			x: 6.0d
-			y: 7.0d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6702D52922D85C0D"]
@@ -4727,8 +4718,112 @@
 				type: "item"
 			}]
 			title: "Tape for Crate"
-			x: 6.0d
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["With &5GregTech&r, you get access to various &6filters&r that help you ease into &aautomation&r. All of them are compatible with different &dCovers&r, which you'll learn more about during the &7LV&r Chapter.\\n\\nHere, we're introducing two more specific filters that you might find &bhandy&r in certain situations.\\n\\nTo use a filter, simply apply it as a &dCover&r on any &5GT Machine&r or &6pipe&r."]
+			icon: "gtceu:item_filter"
+			id: "74AE7DB845B88CF3"
+			subtitle: "filters"
+			tasks: [{
+				id: "268110D7B7999A7B"
+				title: "Filters"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["You may have realized that most &eMultiblocks&r require a &6Maintenance Hatch&r. Until &6HV&r, where you can get an &aAutomatic Maintenance Hatch&r, you can use this item to fix the hatch without needing to use all of your maintenance tools.\\n\\nIt can be really useful if you don't want to invest in an &aAuto Maintenance Hatch&r yet, or if you're simply &cnot there yet&r."]
+			id: "179E89C50E900DC0"
+			tasks: [{
+				id: "7D2E6F5F843864DE"
+				item: "gtceu:duct_tape"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: ["The &6Nano Saber&r is a powerful weapon you’ll be able to unlock once you reach &5EV&r. Simply use &dShift + Right-Click&r to activate the &cbzzzzz mode&r."]
+			id: "7A4C6930EF68646E"
+			tasks: [{
+				id: "41A7611367BBD2A7"
+				item: "gtceu:nano_saber"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			description: ["The &6Item Magnet&r is exactly what you'd expect — a magnet that pulls nearby &6items&r straight to you. &aVery useful&r. What more could you ask for?"]
+			id: "49D2EFFFC15563F9"
+			tasks: [{
+				id: "6290D18A38A1583C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_item_magnet)item(gtceu:hv_item_magnet))"
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["02FDECC931B5E8EF"]
+			description: ["&bThe Terminal&r has one main purpose, and &awe highly encourage you to craft it&r.\\n\\nBuilding all these &eMultiblocks&r can be a bit &cintimidating&r, right? Well, here's a tip: use &dShift + Right-Click&r on any &6Multiblock Controller&r to &aautomatically assemble the entire structure&r!\\n\\nYou might need to &emove around some buses and hatches&r to suit your setup, but overall, this feature will save you a &alot of time&r."]
+			id: "2F6C9A987865B966"
+			tasks: [{
+				id: "6A86F6C3566828BF"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			description: ["The &6Face Mask&r will protect you from &cinhaling dangerous dust&r. It’s quite &aeasy to craft&r and should prevent issues when working with &5arsenic&r."]
+			id: "361AC06D62D9BCCF"
+			tasks: [{
+				id: "7AC3F8AF754C76E2"
+				item: {
+					Count: 1
+					id: "gtceu:face_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["47409DED94FCC2BC"]
+			description: ["{quests.tfg_tips.ev_upgrades.desc}"]
+			id: "20905B37111F2ED9"
+			subtitle: "{quests.tfg_tips.ev_upgrades.subtitle}"
+			tasks: [{
+				id: "60C5CDB3EBB706E4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(tfg:ev_aircraft_engine)item(tfg:titanium_plated_airplane_propeller)item(tfg:titanium_landing_gear)item(tfg:titanium_hull_reinforcement))"
+					}
+				}
+				title: "{quests.tfg_tips.ev_upgrades.task}"
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.ev_upgrades.title}"
+			x: -6.0d
+			y: -14.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

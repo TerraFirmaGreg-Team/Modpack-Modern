@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RELEASE_TYPE: "alpha"
+  RELEASE_TYPE: "release"
   MINECRAFT_VERSION: "1.20.1"
   DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
 
@@ -365,7 +365,7 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.2.1
+        uses: actions/download-artifact@v4.3.0
         with:
           merge-multiple: true
 
@@ -439,7 +439,7 @@ jobs:
           fi  
 
       - name: 📦 Download artifact
-        uses: actions/download-artifact@v4.2.1
+        uses: actions/download-artifact@v4.3.0
         with:
           merge-multiple: true
 
@@ -489,7 +489,7 @@ jobs:
             fi  
     
         - name: 📦 Download artifact
-          uses: actions/download-artifact@v4.2.1
+          uses: actions/download-artifact@v4.3.0
           with:
             merge-multiple: true
 

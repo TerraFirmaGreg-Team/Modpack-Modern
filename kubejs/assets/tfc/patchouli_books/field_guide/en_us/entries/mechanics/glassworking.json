@@ -25,7 +25,7 @@
       "anchor": "potash",
       "recipe": "tfg:smelting/dried_seaweed_to_soda",
 	  "recipe2": "tfg:smelting/dried_kelp_to_soda",
-      "text": "A type of $(thing)Potash$() or equivalent is also required for glass batches. $(thing)Soda Ash$() can be used, which is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$(). $(l:tfg_ores/normal_saltpeter)Saltpeter$() can be used as well."
+      "text": "A type of $(thing)Potash$() or equivalent is also required for glass batches. $(thing)Soda Ash$() can be used, which is a powder made from heating $(thing)Dried Seaweed$() or $(thing)Kelp$(). $(l:tfg_ores/earth_vein_index#normal_saltpeter)Saltpeter$() can be used as well."
     },
     {
       "type": "patchouli:text",
