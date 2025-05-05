@@ -27,24 +27,12 @@
             "weight": 25
           },
           {
-            "block": "gtceu:raw_mica_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:diorite_bauxite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:diorite_pollucite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:raw_pollucite_block",
-            "weight": 1
           }
         ]
       },
@@ -66,34 +54,22 @@
             "weight": 25
           },
           {
-            "block": "gtceu:raw_mica_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:gabbro_bauxite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
             "block": "gtceu:gabbro_pollucite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:raw_pollucite_block",
-            "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_kyanite_ore",
+            "block": "gtceu:moon_stone_kyanite_ore",
             "weight": 35
           },
           {
@@ -101,38 +77,26 @@
             "weight": 1
           },
           {
-            "block": "gtceu:anorthosite_mica_ore",
+            "block": "gtceu:moon_stone_mica_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:raw_mica_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:anorthosite_bauxite_ore",
+            "block": "gtceu:moon_stone_bauxite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:anorthosite_pollucite_ore",
+            "block": "gtceu:moon_stone_pollucite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:raw_pollucite_block",
-            "weight": 1
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_kyanite_ore",
+            "block": "gtceu:moon_deepslate_kyanite_ore",
             "weight": 35
           },
           {
@@ -140,28 +104,16 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_mica_ore",
+            "block": "gtceu:moon_deepslate_mica_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:raw_mica_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:basanite_bauxite_ore",
+            "block": "gtceu:moon_deepslate_bauxite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:raw_bauxite_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:basanite_pollucite_ore",
+            "block": "gtceu:moon_deepslate_pollucite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:raw_pollucite_block",
-            "weight": 1
           }
         ]
       }

@@ -34,19 +34,19 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_apatite_ore",
+            "block": "gtceu:moon_stone_apatite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_tricalcium_phosphate_ore",
+            "block": "gtceu:moon_stone_tricalcium_phosphate_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:anorthosite_pyrochlore_ore",
+            "block": "gtceu:moon_stone_pyrochlore_ore",
             "weight": 40
           },
           {
@@ -57,19 +57,19 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_apatite_ore",
+            "block": "gtceu:moon_deepslate_apatite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_tricalcium_phosphate_ore",
+            "block": "gtceu:moon_deepslate_tricalcium_phosphate_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:basanite_pyrochlore_ore",
+            "block": "gtceu:moon_deepslate_pyrochlore_ore",
             "weight": 40
           },
           {

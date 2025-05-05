@@ -10,7 +10,7 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"name": "tfg:rock/raw_anorthosite",
+							"name": "ad_astra:moon_deepslate",
 							"conditions": [
 								{
 									"condition": "tfc:is_isolated"
@@ -19,7 +19,7 @@
 						},
 						{
 							"type": "minecraft:item",
-							"name": "tfg:loose/anorthosite",
+							"name": "tfg:loose/moon_deepslate",
 							"functions": [
 								{
 									"function": "minecraft:set_count",

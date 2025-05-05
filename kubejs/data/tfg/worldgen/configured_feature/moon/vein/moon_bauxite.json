@@ -35,46 +35,46 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_bauxite_ore",
+            "block": "gtceu:moon_stone_bauxite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:basanite_ilmenite_ore",
+            "block": "gtceu:moon_stone_ilmenite_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:basanite_aluminium_ore",
+            "block": "gtceu:moon_stone_aluminium_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_armalcolite_ore",
+            "block": "gtceu:moon_stone_armalcolite_ore",
             "weight": 20
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_bauxite_ore",
+            "block": "gtceu:moon_deepslate_bauxite_ore",
             "weight": 35
           },
           {
-            "block": "gtceu:anorthosite_ilmenite_ore",
+            "block": "gtceu:moon_deepslate_ilmenite_ore",
             "weight": 40
           },
           {
-            "block": "gtceu:anorthosite_aluminium_ore",
+            "block": "gtceu:moon_deepslate_aluminium_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_armalcolite_ore",
+            "block": "gtceu:moon_deepslate_armalcolite_ore",
             "weight": 20
           }
         ]

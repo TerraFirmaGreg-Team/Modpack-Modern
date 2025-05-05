@@ -73,19 +73,19 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_magnetite_ore",
+            "block": "gtceu:moon_stone_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_vanadium_magnetite_ore",
+            "block": "gtceu:moon_stone_vanadium_magnetite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:anorthosite_chromite_ore",
+            "block": "gtceu:moon_stone_chromite_ore",
             "weight": 40
           },
           {
@@ -93,30 +93,30 @@
             "weight": 1
           },
           {
-            "block": "gtceu:anorthosite_gold_ore",
+            "block": "gtceu:moon_stone_gold_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:anorthosite_sapphire_ore",
+            "block": "gtceu:moon_stone_sapphire_ore",
             "weight": 5
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_magnetite_ore",
+            "block": "gtceu:moon_deepslate_magnetite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_vanadium_magnetite_ore",
+            "block": "gtceu:moon_deepslate_vanadium_magnetite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basanite_chromite_ore",
+            "block": "gtceu:moon_deepslate_chromite_ore",
             "weight": 40
           },
           {
@@ -124,11 +124,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_gold_ore",
+            "block": "gtceu:moon_deepslate_gold_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basanite_sapphire_ore",
+            "block": "gtceu:moon_deepslate_sapphire_ore",
             "weight": 5
           }
         ]

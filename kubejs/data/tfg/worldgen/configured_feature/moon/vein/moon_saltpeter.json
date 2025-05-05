@@ -38,11 +38,11 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_saltpeter_ore",
+            "block": "gtceu:moon_stone_saltpeter_ore",
             "weight": 35
           },
           {
@@ -50,26 +50,26 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_soapstone_ore",
+            "block": "gtceu:moon_stone_soapstone_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_electrotine_ore",
+            "block": "gtceu:moon_stone_electrotine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_talc_ore",
+            "block": "gtceu:moon_stone_talc_ore",
             "weight": 15
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_saltpeter_ore",
+            "block": "gtceu:moon_deepslate_saltpeter_ore",
             "weight": 35
           },
           {
@@ -77,15 +77,15 @@
             "weight": 1
           },
           {
-            "block": "gtceu:anorthosite_soapstone_ore",
+            "block": "gtceu:moon_deepslate_soapstone_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_electrotine_ore",
+            "block": "gtceu:moon_deepslate_electrotine_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_talc_ore",
+            "block": "gtceu:moon_deepslate_talc_ore",
             "weight": 15
           }
         ]

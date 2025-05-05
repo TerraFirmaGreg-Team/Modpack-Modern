@@ -3,7 +3,7 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 40,
-    "rarity": 200,
+    "rarity": 180,
     "density": 0.3,
     "min_y": -32,
     "max_y": 100,
@@ -43,15 +43,15 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_quartzite_ore",
+            "block": "gtceu:moon_deepslate_quartzite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:basanite_certus_quartz_ore",
+            "block": "gtceu:moon_deepslate_certus_quartz_ore",
             "weight": 50
           },
           {
@@ -59,11 +59,11 @@
             "weight": 2
           },
           {
-            "block": "gtceu:basanite_barite_ore",
+            "block": "gtceu:moon_deepslate_barite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basanite_nether_quartz_ore",
+            "block": "gtceu:moon_deepslate_nether_quartz_ore",
             "weight": 25
           },
           {
@@ -105,15 +105,15 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_quartzite_ore",
+            "block": "gtceu:moon_stone_quartzite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:anorthosite_certus_quartz_ore",
+            "block": "gtceu:moon_stone_certus_quartz_ore",
             "weight": 50
           },
           {
@@ -121,11 +121,11 @@
             "weight": 2
           },
           {
-            "block": "gtceu:anorthosite_barite_ore",
+            "block": "gtceu:moon_stone_barite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:anorthosite_nether_quartz_ore",
+            "block": "gtceu:moon_stone_nether_quartz_ore",
             "weight": 25
           },
           {
@@ -168,7 +168,7 @@
     ],
     "indicator": {
       "rarity": 15,
-      "depth": 50,
+      "depth": 80,
       "underground_rarity": 40,
       "underground_count": 200,
       "blocks": [

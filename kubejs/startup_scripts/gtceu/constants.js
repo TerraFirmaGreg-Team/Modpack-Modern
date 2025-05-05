@@ -190,7 +190,8 @@ global.ORE_BEARING_STONES = [
     'pyroxenite',
     'dripstone',
 
-    'anorthosite',
-    'basanite'
+    'moon_stone',
+    'moon_deepslate',
+    'mars_stone'
 ];
 

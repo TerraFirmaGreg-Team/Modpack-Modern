@@ -11,11 +11,11 @@
     "blocks": [
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_bornite_ore",
+            "block": "gtceu:moon_stone_bornite_ore",
             "weight": 35
           },
           {
@@ -23,26 +23,26 @@
             "weight": 1
           },
           {
-            "block": "gtceu:anorthosite_cooperite_ore",
+            "block": "gtceu:moon_stone_cooperite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_platinum_ore",
+            "block": "gtceu:moon_stone_platinum_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_palladium_ore",
+            "block": "gtceu:moon_stone_palladium_ore",
             "weight": 15
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_bornite_ore",
+            "block": "gtceu:moon_deepslate_bornite_ore",
             "weight": 35
           },
           {
@@ -50,15 +50,15 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_cooperite_ore",
+            "block": "gtceu:moon_deepslate_cooperite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_platinum_ore",
+            "block": "gtceu:moon_deepslate_platinum_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_palladium_ore",
+            "block": "gtceu:moon_deepslate_palladium_ore",
             "weight": 15
           }
         ]

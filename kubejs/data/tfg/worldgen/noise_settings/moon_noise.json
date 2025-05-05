@@ -5,7 +5,7 @@
 	"ore_veins_enabled": false,
 	"legacy_random_source": false,
 	"default_block": {
-		"Name": "tfg:rock/raw_anorthosite"
+		"Name": "ad_astra:moon_stone"
 	},
 	"default_fluid": {
 		"Name": "minecraft:air"
@@ -250,7 +250,7 @@
 				"then_run": {
 					"type": "minecraft:block",
 					"result_state": {
-						"Name": "tfg:rock/raw_basanite",
+						"Name": "ad_astra:moon_deepslate",
 						"Properties": {
 							"axis": "y"
 						}
@@ -280,7 +280,7 @@
 							"then_run": {
 								"type": "minecraft:block",
 								"result_state": {
-									"Name": "tfg:rock/hardened_anorthosite"
+									"Name": "tfg:rock/hardened_moon_stone"
 								}
 							}
 						},

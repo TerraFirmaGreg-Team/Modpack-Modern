@@ -11,23 +11,23 @@
     "blocks": [
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_desh_ore",
-            "weight": 45
+            "block": "gtceu:moon_deepslate_tungstate_ore",
+            "weight": 35
           },
           {
-            "block": "gtceu:raw_desh_block",
+            "block": "gtceu:moon_deepslate_armalcolite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_armalcolite_block",
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_armalcolite_ore",
-            "weight": 30
-          },
-          {
-            "block": "gtceu:basanite_plutonium_ore",
+            "block": "gtceu:moon_deepslate_plutonium_ore",
             "weight": 25
           }
         ]
@@ -40,12 +40,12 @@
       "underground_count": 200,
       "blocks": [
         {
-          "block": "gtceu:desh_indicator",
-          "weight": 45
+          "block": "gtceu:tungstate_indicator",
+          "weight": 35
         },
         {
           "block": "gtceu:armalcolite_bud_indicator",
-          "weight": 30
+          "weight": 40
         },
         {
           "block": "gtceu:plutonium_indicator",

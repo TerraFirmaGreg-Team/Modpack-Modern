@@ -93,11 +93,11 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_diopside_ore",
+            "block": "gtceu:moon_stone_diopside_ore",
             "weight": 45
           },
           {
@@ -105,26 +105,26 @@
             "weight": 2
           },
           {
-            "block": "gtceu:anorthosite_trona_ore",
+            "block": "gtceu:moon_stone_trona_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_cobalt_ore",
+            "block": "gtceu:moon_stone_cobalt_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:anorthosite_tantalite_ore",
+            "block": "gtceu:moon_stone_tantalite_ore",
             "weight": 15
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_diopside_ore",
+            "block": "gtceu:moon_deepslate_diopside_ore",
             "weight": 45
           },
           {
@@ -132,15 +132,15 @@
             "weight": 2
           },
           {
-            "block": "gtceu:basanite_trona_ore",
+            "block": "gtceu:moon_deepslate_trona_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_cobalt_ore",
+            "block": "gtceu:moon_deepslate_cobalt_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_tantalite_ore",
+            "block": "gtceu:moon_deepslate_tantalite_ore",
             "weight": 15
           }
         ]

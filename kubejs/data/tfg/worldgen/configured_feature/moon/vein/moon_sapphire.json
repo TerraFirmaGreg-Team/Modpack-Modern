@@ -40,11 +40,11 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_almandine_ore",
+            "block": "gtceu:moon_deepslate_almandine_ore",
             "weight": 35
           },
           {
@@ -52,15 +52,15 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_pyrope_ore",
+            "block": "gtceu:moon_deepslate_pyrope_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basanite_sapphire_ore",
+            "block": "gtceu:moon_deepslate_sapphire_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basanite_green_sapphire_ore",
+            "block": "gtceu:moon_deepslate_green_sapphire_ore",
             "weight": 15
           }
         ]

@@ -757,10 +757,10 @@ function registerTFCStoneRecipes(event) {
 
 	// Space
 
-	event.recipes.gtceu.centrifuge('anorthosite_dust_separation')
+	event.recipes.gtceu.centrifuge('moon_stone_dust_separation')
 		.EUt(GTValues.VA[GTValues.MV])
 		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('anorthosite'), 1))
+		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('moon_stone'), 1))
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 3700, 700)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnetite, 1), 3700, 700)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Ilmenite, 1), 1700, 700)

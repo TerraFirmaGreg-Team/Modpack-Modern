@@ -105,11 +105,11 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_wulfenite_ore",
+            "block": "gtceu:moon_deepslate_wulfenite_ore",
             "weight": 40
           },
           {
@@ -117,7 +117,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_molybdenite_ore",
+            "block": "gtceu:moon_deepslate_molybdenite_ore",
             "weight": 30
           },
           {
@@ -125,11 +125,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_molybdenum_ore",
+            "block": "gtceu:moon_deepslate_molybdenum_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basanite_powellite_ore",
+            "block": "gtceu:moon_deepslate_powellite_ore",
             "weight": 15
           }
         ]

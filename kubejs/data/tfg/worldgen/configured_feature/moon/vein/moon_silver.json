@@ -11,15 +11,15 @@
     "blocks": [
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_galena_ore",
+            "block": "gtceu:moon_stone_galena_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:basanite_silver_ore",
+            "block": "gtceu:moon_stone_silver_ore",
             "weight": 45
           },
           {
@@ -27,22 +27,22 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_lead_ore",
+            "block": "gtceu:moon_stone_lead_ore",
             "weight": 25
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_galena_ore",
+            "block": "gtceu:moon_deepslate_galena_ore",
             "weight": 30
           },
           {
-            "block": "gtceu:anorthosite_silver_ore",
+            "block": "gtceu:moon_deepslate_silver_ore",
             "weight": 45
           },
           {
@@ -50,7 +50,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:anorthosite_lead_ore",
+            "block": "gtceu:moon_deepslate_lead_ore",
             "weight": 25
           }
         ]

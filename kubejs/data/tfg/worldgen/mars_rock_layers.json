@@ -17,13 +17,13 @@
 		"andesite": "tfc:andesite",
 		"dacite": "tfc:dacite",
 
-		"syenite": {
-			"raw": "tfg:raw_syenite",
-			"hardened": "tfg:hardened_syenite",
+		"mars_stone": {
+			"raw": "ad_astra:mars_stone",
+			"hardened": "tfg:rock/hardened_mars_stone",
 			"gravel": "ad_astra:mars_sand",
 			"cobble": "ad_astra:mars_cobblestone",
 			"sand": "ad_astra:mars_sand",
-			"sandstone": "tfg:raw_syenite"
+			"sandstone": "ad_astra:mars_stone"
 		},
 
 		"red_granite": {
@@ -42,7 +42,7 @@
 		"basalt",
 		"andesite",
 		"dacite",
-		"syenite",
+		"mars_stone",
 		"red_granite"
 	],
 	"layers": [
@@ -56,7 +56,7 @@
 		{
 			"id": "intermediate",
 			"layers": {
-				"syenite": "bottom"
+				"mars_stone": "bottom"
 			}
 		},
 		{
@@ -109,7 +109,7 @@
 				"red_granite": "land_sedimentary",
 				"granite": "land_sedimentary",
 				"gabbro": "land_sedimentary",
-				"syenite": "land_sedimentary"
+				"mars_stone": "land_sedimentary"
 			}
 		}
 	],

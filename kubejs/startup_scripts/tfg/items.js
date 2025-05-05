@@ -50,17 +50,17 @@ const registerTFGItems = (event) => {
     event.create('tfg:brick/deepslate')
         .translationKey('item.tfg.brick.deepslate')
 
-    event.create('tfg:brick/anorthosite')
-        .translationKey('item.tfg.brick.anorthosite')
+    event.create('tfg:brick/moon_stone')
+        .translationKey('item.tfg.brick.moon_stone')
 
-    event.create('tfg:brick/syenite')
-        .translationKey('item.tfg.brick.syenite')
+    event.create('tfg:brick/mars_stone')
+        .translationKey('item.tfg.brick.mars_stone')
 
-    event.create('tfg:dust/anorthosite')
-        .translationKey('item.tfg.dust.anorthosite')
+    event.create('tfg:dust/moon_stone')
+        .translationKey('item.tfg.dust.moon_stone')
 	
-    event.create('tfg:dust/syenite')
-        .translationKey('item.tfg.dust.syenite')
+    event.create('tfg:dust/mars_stone')
+        .translationKey('item.tfg.dust.mars_stone')
     // #endregion
 
     // #region Primitive rubber gloves

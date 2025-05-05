@@ -46,6 +46,7 @@ const registerAdAstraBlockTags = (event) => {
 		event.add('tfc:breaks_when_isolated', rock)
 		event.add('tfc:rock/raw', rock)
 		event.add('minecraft:mineable/pickaxe', rock)
+		event.add('tfc:can_carve', rock)
 		// Collapse tags also require a collapse recipe to work.
 		// Don't add the recipe if you don't want them to actually collapse!
 		event.add('tfc:can_collapse', rock)
@@ -65,12 +66,13 @@ const registerAdAstraBlockTags = (event) => {
 		event.add('tfc:bloomery_insulation', rock)
 		event.add('firmalife:oven_insulation', rock)
 		event.add('tfc:forge_insulation', rock)
+		event.add('tfc:can_carve', rock)
 	})
 
 	// Moon
-	event.add('minecraft:rabbits_spawnable_on', 'tfg:rock/raw_anorthosite')
-	event.add('minecraft:rabbits_spawnable_on', 'tfg:rock/hardened_anorthosite')
-	event.add('minecraft:rabbits_spawnable_on', 'tfg:rock/raw_basanite')
+	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_stone')
+	event.add('minecraft:rabbits_spawnable_on', 'tfg:rock/hardened_moon_stone')
+	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_deepslate')
 	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_sand')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/black')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/white')
@@ -81,9 +83,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/gabbro')
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/basalt')
 
-	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/raw_basanite')
-	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/raw_anorthosite')
-	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_anorthosite')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_moon_stone')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_moon_deepslate')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/basalt')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/basalt')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/gabbro')

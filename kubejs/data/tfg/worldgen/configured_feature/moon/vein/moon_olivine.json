@@ -11,11 +11,11 @@
     "blocks": [
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_diopside_ore",
+            "block": "gtceu:moon_deepslate_diopside_ore",
             "weight": 15
           },
           {
@@ -23,11 +23,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_enstatite_ore",
+            "block": "gtceu:moon_deepslate_enstatite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:basanite_olivine_ore",
+            "block": "gtceu:moon_deepslate_olivine_ore",
             "weight": 65
           },
           {
@@ -35,7 +35,7 @@
             "weight": 2
           },
           {
-            "block": "gtceu:basanite_fayalite_ore",
+            "block": "gtceu:moon_deepslate_fayalite_ore",
             "weight": 10
           }
         ]

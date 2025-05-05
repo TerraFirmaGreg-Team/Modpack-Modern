@@ -20,15 +20,16 @@ function registerTFGCollapseRecipes(event) {
 	// #endregion Nether
 
 	// #region Space
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:rock/raw_anorthosite')
-	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:rock/hardened_anorthosite')
-	event.recipes.tfc.collapse('tfg:raw_basanite', 'tfg:rock/raw_basanite')
+	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'ad_astra:moon_stone')
+	event.recipes.tfc.collapse('ad_astra:moon_cobblestone', 'tfg:rock/hardened_moon_stone')
+	event.recipes.tfc.collapse('ad_astra:moon_deepslate', 'ad_astra:moon_deepslate')
+	event.recipes.tfc.collapse('ad_astra:moon_deepslate', 'tfg:rock/hardened_moon_deepslate')
 
 	event.recipes.tfc.landslide('ad_astra:moon_cobblestone', 'ad_astra:moon_cobblestone')
 	event.recipes.tfc.landslide('ad_astra:moon_sand', 'ad_astra:moon_sand')
 
-	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', 'tfg:rock/raw_syenite')
-	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', 'tfg:rock/hardened_syenite')
+	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', 'ad_astra:mars_stone')
+	event.recipes.tfc.collapse('ad_astra:mars_cobblestone', 'tfg:rock/hardened_mars_stone')
 
 	event.recipes.tfc.landslide('ad_astra:mars_cobblestone', 'ad_astra:mars_cobblestone')
 	event.recipes.tfc.landslide('ad_astra:mars_sand', 'ad_astra:mars_sand')

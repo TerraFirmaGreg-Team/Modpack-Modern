@@ -20,14 +20,16 @@ global.AIRCRAFT_UPGRADES = [
 ]
 
 global.EXTRATERRESTRIAL_RAW_ROCKS = [
-	'tfg:rock/raw_anorthosite',
-	'tfg:rock/raw_basanite',
-	'tfg:rock/raw_syenite'
+	'ad_astra:moon_stone',
+	'ad_astra:moon_deepslate',
+	'ad_astra:mars_stone',
+	'ad_astra:venus_stone',
+	'ad_astra:mercury_stone'
 ]
 
 global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
-	'tfg:rock/hardened_anorthosite',
-	'tfg:rock/hardened_syenite'
+	'tfg:rock/hardened_moon_stone',
+	'tfg:rock/hardened_mars_stone'
 ]
 
 global.MOON_BIOMES = [

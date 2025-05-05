@@ -80,12 +80,9 @@ GTCEuStartupEvents.materialModification(event => {
 })
 
 
-//GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
-//    event.create('ad_astra:earth_orbit')
-//        .iconSupplier(() => Item.of('ad_astra:earth_globe').getItem())
-//        .tier(0)
-//        .overrideName('Earth Orbit')
-//})
+GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
+    registerAdAstraDimensionMarkers(event)
+})
 
 
 Platform.mods.kaolinclayze.name = "Primitive Creatures";

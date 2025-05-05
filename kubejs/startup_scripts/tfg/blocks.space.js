@@ -9,21 +9,7 @@ function registerTFGSpaceBlocks(event) {
 	event.createCustom(`tfg:lunar_warped_roots`, () => new $SproutsBlock($Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 	event.createCustom(`tfg:lunar_sprouts`, () => new $SproutsBlock( $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
 
-	event.create('tfg:rock/raw_anorthosite')
-		.stoneSoundType()
-		.requiresTool(true)
-		.item(item => {
-			item.modelJson({ parent: 'ad_astra:item/moon_stone' })
-		})
-		.tagBlock('tfc:can_carve')
-		.tagBoth('forge:stone')
-		.tagBoth('tfc:rock/raw')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.mapColor('terracotta_cyan')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:rock/hardened_anorthosite')
+	event.create('tfg:rock/hardened_moon_stone')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -37,7 +23,7 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:rock/raw_basanite')
+	event.create('tfg:rock/hardened_moon_deepslate')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -45,35 +31,25 @@ function registerTFGSpaceBlocks(event) {
 		})
 		.tagBlock('tfc:can_carve')
 		.tagBoth('forge:stone')
-		.tagBoth('tfc:rock/raw')
+		.tagBoth('tfc:rock/hardened')
 		.tagBlock('minecraft:mineable/pickaxe')
 		.mapColor('terracotta_cyan')
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:loose/anorthosite', 'tfc:loose_rock')
-		.itemTexture('tfg:item/loose_anorthosite')
-		.rockTypeModel('igneous_intrusive')
+	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/moon_stone')
+		.rockTypeModel('igneous_extrusive')
+
+	event.create('tfg:loose/moon_deepslate', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/moon_deepslate')
+		.rockTypeModel('igneous_extrusive')
 
 	// #endregion
 
 	// #region Mars blocks
 
-	event.create('tfg:rock/raw_syenite')
-		.stoneSoundType()
-		.requiresTool(true)
-		.item(item => {
-			item.modelJson({ parent: 'ad_astra:item/mars_stone' })
-		})
-		.tagBlock('tfc:can_carve')
-		.tagBoth('forge:stone')
-		.tagBoth('tfc:rock/raw')
-		.tagBlock('minecraft:mineable/pickaxe')
-		.mapColor('terracotta_orange')
-		.fullBlock(true)
-		.opaque(true)
-
-	event.create('tfg:rock/hardened_syenite')
+	event.create('tfg:rock/hardened_mars_stone')
 		.stoneSoundType()
 		.requiresTool(true)
 		.item(item => {
@@ -87,8 +63,8 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
-	event.create('tfg:loose/syenite', 'tfc:loose_rock')
-		.itemTexture('tfg:item/loose_syenite')
-		.rockTypeModel('igneous_intrusive')
+	event.create('tfg:loose/mars_stone', 'tfc:loose_rock')
+		.itemTexture('tfg:item/loose/mars_stone')
+		.rockTypeModel('sedimentary')
 
 }

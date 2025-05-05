@@ -93,15 +93,15 @@
       },
       {
         "replace": [
-          "tfg:rock/raw_anorthosite"
+          "ad_astra:moon_stone"
         ],
         "with": [
           {
-            "block": "gtceu:anorthosite_enstatite_ore",
+            "block": "gtceu:moon_stone_enstatite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:anorthosite_pyrite_ore",
+            "block": "gtceu:moon_stone_pyrite_ore",
             "weight": 30
           },
           {
@@ -109,26 +109,26 @@
             "weight": 1
           },
           {
-            "block": "gtceu:anorthosite_pentlandite_ore",
+            "block": "gtceu:moon_stone_pentlandite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:anorthosite_fayalite_ore",
+            "block": "gtceu:moon_stone_fayalite_ore",
             "weight": 45
           }
         ]
       },
       {
         "replace": [
-          "tfg:rock/raw_basanite"
+          "ad_astra:moon_deepslate"
         ],
         "with": [
           {
-            "block": "gtceu:basanite_enstatite_ore",
+            "block": "gtceu:moon_deepslate_enstatite_ore",
             "weight": 10
           },
           {
-            "block": "gtceu:basanite_pyrite_ore",
+            "block": "gtceu:moon_deepslate_pyrite_ore",
             "weight": 30
           },
           {
@@ -136,11 +136,11 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basanite_pentlandite_ore",
+            "block": "gtceu:moon_deepslate_pentlandite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basanite_fayalite_ore",
+            "block": "gtceu:moon_deepslate_fayalite_ore",
             "weight": 45
           }
         ]
