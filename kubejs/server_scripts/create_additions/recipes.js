@@ -81,9 +81,9 @@ const registerCreateAdditionsRecipes = (event) => {
 	}).id('tfg:createadditions/shaped/electric_motor')
 
 	event.shaped('createaddition:alternator', [
-		'ACA',
-		'FDB',
-		'ECE'
+		'AEA',
+		'CDC',
+		'BFB'
 	], {
 		A: '#gtceu:resistors',
 		B: '#gtceu:circuits/lv',

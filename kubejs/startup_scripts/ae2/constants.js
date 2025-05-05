@@ -23,6 +23,7 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:entropy_manipulator',
     'ae2:charged_staff',
     'ae2:name_press',
+    'ae2:charger',
 
     // Блоки
     'ae2:vibration_chamber',

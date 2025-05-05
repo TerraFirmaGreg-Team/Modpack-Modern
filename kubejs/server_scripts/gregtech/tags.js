@@ -63,6 +63,8 @@ const registerGTCEUItemTags = (event) => {
     event.add('minecraft:piglin_loved', 'gtceu:poor_raw_pyrite')
     event.add('minecraft:piglin_loved', 'gtceu:raw_pyrite')
     event.add('minecraft:piglin_loved', 'gtceu:rich_raw_pyrite')
+
+    event.remove('forge:gems', 'gtceu:coke_gem')
 }
 
 const registerGTCEUBlockTags = (event) => {
@@ -76,8 +78,19 @@ const registerGTCEUBlockTags = (event) => {
 	event.add('minecraft:mineable/pickaxe', '#forge:ores')
 	event.add('minecraft:needs_iron_tool', '#forge:ores')
 
+	// Collapse tags
+	event.add('tfc:can_collapse', '#forge:ores')
+	event.add('tfc:can_start_collapse', '#forge:ores')
+	event.add('tfc:can_trigger_collapse', '#forge:ores')
+	event.add('c:hidden_from_recipe_viewers', '#forge:ores')
+	
+	event.add('tfc:can_collapse', '#forge:raw_ore_blocks')
+	event.add('tfc:can_start_collapse', '#forge:raw_ore_blocks')
+	event.add('tfc:can_trigger_collapse', '#forge:raw_ore_blocks')
+	event.add('c:hidden_from_recipe_viewers', '#forge:raw_ore_blocks')
+
 	// Let GT indicators be covered by snow
-	GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+	forEachMaterial(material => {
 		
 		if (material.hasProperty(PropertyKey.ORE)) {
 			let indicator = `gtceu:${material.getName()}_indicator`;
@@ -96,19 +109,6 @@ const registerGTCEUBlockTags = (event) => {
 
 				event.add('minecraft:mineable/pickaxe', bud)
 			}
-
-			// I LOVE KUBEJS I LOVE KUBEJS I LOVE KUBEJS
-			let str = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
-			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron)
-				str = "minecraft" + str;
-			else
-				str = "gtceu" + str;
-
-			event.add('tfc:can_collapse', str);
-			event.add('tfc:can_start_collapse', str);
-			event.add('tfc:can_trigger_collapse', str);
-			// Hide these from JEI
-			event.add('c:hidden_from_recipe_viewers', str);
 		}
 	})
 }

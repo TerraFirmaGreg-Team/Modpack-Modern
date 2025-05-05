@@ -381,4 +381,12 @@ function registerTFGMiscellaneousRecipes(event) {
 		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1),  [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
 			).id(`universal_circuits_${tier}`);
 	});
+
+	// Air collector (move this to space stuff later)
+	event.recipes.gtceu.gas_collector('nether')
+		.circuit(2)
+		.outputFluids(Fluid.of('gtceu:air', 10000))
+		.dimension('minecraft:the_nether')
+		.duration(200)
+		.EUt(16)
 }

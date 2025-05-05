@@ -95,4 +95,6 @@ const registerGTCEuTagPrefixes = (event) => {
 	TagPrefix.turbineBlade.defaultTagPath("turbine_blades/%s")
 	TagPrefix.turbineBlade.unformattedTagPath("turbine_blades")
 
+	TagPrefix.rawOreBlock.defaultTagPath("raw_ore_blocks/%s")
+	TagPrefix.rawOreBlock.unformattedTagPath("raw_ore_blocks")
 }

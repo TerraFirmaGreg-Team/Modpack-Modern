@@ -38,6 +38,7 @@ const registerGTCEuMaterialModification = (event) => {
 		GENERATE_GEAR,
 		GENERATE_FRAME,
 		GENERATE_PLATE,
+		GENERATE_DENSE,
 		GENERATE_RING
 	} = $MATERIAL_FLAGS
 
@@ -210,6 +211,8 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.SterlingSilver.addFlags(GENERATE_RING);
 
 	GTMaterials.IronMagnetic.addFlags(GENERATE_PLATE)
+
+	GTMaterials.Silicon.addFlags(GENERATE_DENSE);
 	
 	GTMaterials.TreatedWood.addFlags(GENERATE_LONG_ROD);
 
@@ -291,6 +294,10 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.TungstenSteel.setMaterialSecondaryARGB(0x03192f)
 	GTMaterials.RoseGold.setMaterialARGB(0xFCE4D8)
 	GTMaterials.RoseGold.setMaterialSecondaryARGB(0xAB675A)
+	GTMaterials.Platinum.setMaterialARGB(0xccdff5)
+	GTMaterials.Platinum.setMaterialSecondaryARGB(0x59563a)
+	GTMaterials.Nickel.setMaterialARGB(0xfff4ba)
+	GTMaterials.Nickel.setMaterialSecondaryARGB(0x8d8d71)
 
 	
 	global.MINECRAFT_DYE_NAMES.forEach(colorName =>

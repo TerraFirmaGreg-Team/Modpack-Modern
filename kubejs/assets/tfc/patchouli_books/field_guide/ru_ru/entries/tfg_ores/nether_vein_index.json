@@ -14,17 +14,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Аметист, Опал и гранат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Бентонит и Оливин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_bauxite)Боксит и Ильменит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Вульфенит & Молибденит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Гранатовый и Касситеритовый песок$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Золото и Гематит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Аметист, Опал и гранат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)Антрацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Бентонит и Оливин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_bauxite)Боксит и Ильменит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Вульфенит & Молибденит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Гранатовый и Касситеритовый песок$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Золото и Гематит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Изумруд и Бериллий$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада и Плутоний$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Незер-кварц$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Тетраэдрит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада и Плутоний$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Незер-кварц$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвин$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Топаз и Халькозин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Уранинит и Уранит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Хромит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Ционит, Слюда и Боксит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Шеелит и Вольфрамат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Шелдонит и Борнит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Тетраэдрит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Топаз и Халькозин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Уранинит и Уранит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Хромит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Ционит, Слюда и Боксит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Шеелит и Вольфрамат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Шелдонит и Борнит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -118,6 +118,33 @@
       "Type": "patchouli:empty",
       "draw_filler": true,
       "type": "patchouli:empty"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 35$(br)$(thing)Плотность$(): 0.8$(br)$(thing)Вид$(): дискообразная жила$(br)$(thing)Y-уровень$(): 48 — 127$(br)$(thing)Размер$(): 13$(br)$(thing)Высота$(): 4$(br2)$(thing)Виды камней$(): Мигматит",
+      "title": "Антрацит",
+      "type": "patchouli:text",
+      "anchor": "nether_anthracite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Антрацит",
+      "multiblock": {
+        "mapping": {
+          "0": "beneath:ore/nether_cursecoal"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Используется для$(): топливо$(br)$(thing)Формула$(): C",
+      "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:text",
@@ -2157,6 +2184,33 @@
       },
       "enable_visualize": false,
       "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Свинец$(br)$(thing)Формула$(): PbS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Weakly Poisonous (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:text",
+      "text": "$(thing)Редкость$(): 75$(br)$(thing)Плотность$(): 0.6$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 64$(br)$(thing)Размер$(): 17$(br)$(thing)Индикатор Max Depth$(): 20$(br2)$(thing)Виды камней$(): Пироксенит",
+      "title": "Сильвин",
+      "type": "patchouli:text",
+      "anchor": "nether_sylvite"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Сильвин",
+      "multiblock": {
+        "mapping": {
+          "0": "beneath:ore/blackstone_sylvite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 100%$(br)$(thing)Используется для$(): Удобрения$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
