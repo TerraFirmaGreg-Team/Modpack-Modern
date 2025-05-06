@@ -463,8 +463,6 @@ function registerTFGRockRecipes(event) {
 	
 	CUTTER.forEach(x => {
 		if ("stair" in x) {
-			console.log(`STAIRS: ${x.raw} -> ${x.stair}`)
-
 			event.recipes.tfc.chisel(x.stair, x.raw, 'stair')
 
 			if (x.stonecutting) {
@@ -483,8 +481,6 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if ("slab" in x) {
-			console.log(`SLAB: ${x.raw} -> ${x.stair}`)
-
 			event.recipes.tfc.chisel(x.slab, x.raw, 'slab')
 			
 			if (x.stonecutting) {
