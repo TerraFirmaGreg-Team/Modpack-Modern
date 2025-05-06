@@ -11,17 +11,5 @@
 	},
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
 	"use_expansion_hack": false,
-	"spawn_overrides": {
-		"creature": {
-			"bounding_box": "full",
-			"spawns": [
-				{
-					"type": "tfc:rat",
-					"weight": 1,
-					"minCount": 1,
-					"maxCount": 2
-				}
-			]
-		}
-	}
+	"spawn_overrides": {}
 }
