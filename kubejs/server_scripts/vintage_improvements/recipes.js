@@ -24,7 +24,7 @@ function registerVintageImprovementsRecipes(event) {
 		'DAG',
 		'FCF'
 	], {
-		A: 'gtceu:ulv_machine_hull',
+		A: 'gtceu:ulv_machine_casing',
 		B: 'greate:steel_mechanical_pump',
 		C: 'create:mechanical_piston',
 		D: '#forge:springs/wrought_iron',
