@@ -164,6 +164,130 @@
             "weight": 1
           }
         ]
+      },
+      {
+        "replace": [
+          "ad_astra:glacio_stone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:glacio_stone_quartzite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:glacio_stone_certus_quartz_ore",
+            "weight": 50
+          },
+          {
+            "block": "ae2:quartz_block",
+            "weight": 2
+          },
+          {
+            "block": "gtceu:glacio_stone_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:glacio_stone_nether_quartz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_nether_quartz_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/dacite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:dacite_quartzite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:dacite_certus_quartz_ore",
+            "weight": 50
+          },
+          {
+            "block": "ae2:quartz_block",
+            "weight": 2
+          },
+          {
+            "block": "gtceu:dacite_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:dacite_nether_quartz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_nether_quartz_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_quartzite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:rhyolite_certus_quartz_ore",
+            "weight": 50
+          },
+          {
+            "block": "ae2:quartz_block",
+            "weight": 2
+          },
+          {
+            "block": "gtceu:rhyolite_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:rhyolite_nether_quartz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_nether_quartz_block",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_quartzite_ore",
+            "weight": 10
+          },
+          {
+            "block": "gtceu:andesite_certus_quartz_ore",
+            "weight": 50
+          },
+          {
+            "block": "ae2:quartz_block",
+            "weight": 2
+          },
+          {
+            "block": "gtceu:andesite_barite_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:andesite_nether_quartz_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_nether_quartz_block",
+            "weight": 1
+          }
+        ]
       }
     ],
     "indicator": {
