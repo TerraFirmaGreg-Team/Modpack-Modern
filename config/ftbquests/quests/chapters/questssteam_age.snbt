@@ -37,9 +37,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["6F1BC99BE641B671"]
+			dependencies: ["7B045998769930F0"]
 			description: ["{quests.steam_age.basic_millstone.desc}"]
 			id: "48C1E980F7D64317"
+			size: 1.5d
 			subtitle: "{quests.steam_age.basic_millstone.subtitle}"
 			tasks: [{
 				id: "486DE7D228F3589B"
@@ -48,7 +49,7 @@
 			}]
 			title: "{quests.steam_age.basic_millstone.title}"
 			x: -18.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -72,7 +73,7 @@
 			dependencies: ["7B045998769930F0"]
 			description: ["{quests.steam_age.helve_hammer.desc}"]
 			id: "611EB6284CA7119C"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{quests.steam_age.helve_hammer.subtitle}"
 			tasks: [{
 				id: "340B4B4665295100"
@@ -108,8 +109,8 @@
 				}
 			]
 			title: "{quests.steam_age.basic_greate.title}"
-			x: -20.0d
-			y: -4.0d
+			x: -18.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0D0D461AE3A3F7BF"]
@@ -971,16 +972,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.red_alloy.desc}"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "gtceu:red_alloy_ingot"
-			}
+			icon: "gtceu:red_alloy_ingot"
 			id: "781C6AD30194CB45"
 			shape: "square"
 			size: 1.0d
@@ -1121,8 +1113,8 @@
 				}
 			]
 			title: "{quests.steam_age.create_tools.title}"
-			x: -18.0d
-			y: 0.0d
+			x: -20.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6AA07588374B59AB"]

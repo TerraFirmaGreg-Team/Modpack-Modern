@@ -1,0 +1,23 @@
+#The maximum number of threads in the async locator thread pool.
+#There's no upper bound to this, however this should only be increased if you're experiencing
+#simultaneous location lookups causing issues AND you have the hardware capable of handling
+#the extra possible threads.
+#The default of 1 should be suitable for most users.
+#Range: > 1
+asyncLocatorThreads = 1
+#When a merchant's treasure map offer ends up not finding a feature location,
+#whether the offer should be removed or marked as out of stock.
+removeMerchantInvalidMapOffer = false
+
+["Feature Toggles"]
+	#If true, enables asynchronous locating of structures for dolphin treasures.
+	dolphinTreasureEnabled = true
+	#If true, enables asynchronous locating of structures when Eyes Of Ender are thrown.
+	eyeOfEnderEnabled = true
+	#If true, enables asynchronous locating of structures for exploration maps found in chests.
+	explorationMspEnabled = true
+	#If true, enables asynchronous locating of structures for the locate command.
+	locateCommandEnabled = true
+	#If true, enables asynchronous locating of structures for villager trades.
+	villagerTradeEnabled = true
+

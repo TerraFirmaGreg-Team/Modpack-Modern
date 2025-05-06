@@ -892,11 +892,6 @@
 			y: -33.5d
 		}
 		{
-			dependencies: [
-				"2DB82986FE176CD7"
-				"061116CF508D54F6"
-			]
-			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.blast_furance_fuel.desc}"]
 			hide_dependency_lines: true
 			id: "00B22730B33CB4DB"

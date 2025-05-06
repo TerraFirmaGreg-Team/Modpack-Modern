@@ -1,0 +1,50 @@
+#
+# The permission type a player requires to open a visualizer of the current world
+#   SEED_COMMAND | If the player has /seed permissions (level 2), they can access all information in the visualizer screen (default)
+#   BY_CATEGORY  | Which information the player is able to access in the visualizer screen is dependent on the configuration options in the 'categories' section
+#   NEVER        | Disallows all players from visualizing the world
+#   ALWAYS       | Allows all players to access all information in the visualizer screen
+#   ALLOW_LIST   | Allows players within the server's allow list to view the world, the information a player is dependent on the configuration options in the 'categories' section
+#   DENY_LIST    | Allows players outside of the server's deny list to view the world, the information they can view is dependent on the configuration options in the 'categories' section
+#
+#Allowed Values: SEED_COMMAND, BY_CATEGORY, NEVER, ALWAYS, ALLOW_LIST, DENY_LIST
+viewPermission = "SEED_COMMAND"
+
+# The categories of information that can be previewed, they all have the same options with the same meaning
+#   SEED_COMMAND | If the player has /seed permissions (level 2), they can access this information
+#   ALLOW_LIST   | If the player is part of this filter, they may view this information
+#   DENY_LIST    | If the player is not part of this filter, they may view this information
+#   NEVER        | No player may view this information
+#   ALWAYS       | Players can always view this information
+# These are only relevant if viewPermission is set to BY_CATEGORY
+#
+[categories]
+	#
+	# The permission type the player requires in order to export the preview
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	exportPermission = "SEED_COMMAND"
+	#
+	# The permission type the player requires for the world seed to be seen in the preview
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	seedPermission = "SEED_COMMAND"
+	#
+	# The permission type the player requires in order to view the world coordinates in the preview
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	coordsPermission = "SEED_COMMAND"
+	#
+	# The permission type the player requires to view rainfall and temperature info in the visualizer
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	climatePermission = "SEED_COMMAND"
+	#
+	# The permission type the player requires to view rock and rock type info in the visualizer
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	rocksPermission = "SEED_COMMAND"
+	#
+	# The permission type the player requires to view biome and inland height info in the visualizer
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	biomesPermission = "SEED_COMMAND"
+	#
+	# The permission type the player requires to view river and biome altitude info in the visualizer
+	#Allowed Values: SEED_COMMAND, ALLOW_LIST, DENY_LIST, NEVER, ALWAYS
+	riversPermission = "SEED_COMMAND"
+

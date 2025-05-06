@@ -1,0 +1,115 @@
+
+#World settings
+[server]
+	#Check for and notify of mismatching tags. Only works when the same option in the common config is true.
+	check_tags = true
+	#Automatically rebuild and reload the generated tags datapack when a tagging mismatch is detected. Only works when the same option in the server/world config is true.
+	auto_rebuild_tags = true
+	#Whether fake players (such as block placers) can utilize Additional Placement's placement logic.
+	fake_player_placement = true
+
+	#Options for registered block types for additional placement generation.
+	[server.types]
+
+		[server.types.additionalplacements]
+
+			#Slabs
+			[server.types.additionalplacements.slab]
+
+				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				[server.types.additionalplacements.slab.rotated_logic]
+					#Default state for blocks not matching any list. True is enabled, false is disabled.
+					default = true
+					#Whitelist for mods whose blocks will be enabled.
+					mod_whitelist = []
+					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
+					mod_blacklist = []
+					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
+					tag_whitelist = []
+					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
+					tag_blacklist = []
+					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
+					block_whitelist = []
+					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
+					block_blacklist = []
+
+			#Stairs
+			[server.types.additionalplacements.stairs]
+
+				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				[server.types.additionalplacements.stairs.rotated_logic]
+					#Default state for blocks not matching any list. True is enabled, false is disabled.
+					default = true
+					#Whitelist for mods whose blocks will be enabled.
+					mod_whitelist = []
+					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
+					mod_blacklist = []
+					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
+					tag_whitelist = []
+					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
+					tag_blacklist = []
+					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
+					block_whitelist = []
+					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
+					block_blacklist = []
+
+			#Carpets
+			[server.types.additionalplacements.carpet]
+
+				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				[server.types.additionalplacements.carpet.rotated_logic]
+					#Default state for blocks not matching any list. True is enabled, false is disabled.
+					default = true
+					#Whitelist for mods whose blocks will be enabled.
+					mod_whitelist = []
+					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
+					mod_blacklist = []
+					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
+					tag_whitelist = []
+					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
+					tag_blacklist = []
+					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
+					block_whitelist = []
+					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
+					block_blacklist = []
+
+			#Regular pressure plates
+			[server.types.additionalplacements.pressure_plate]
+
+				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				[server.types.additionalplacements.pressure_plate.rotated_logic]
+					#Default state for blocks not matching any list. True is enabled, false is disabled.
+					default = true
+					#Whitelist for mods whose blocks will be enabled.
+					mod_whitelist = []
+					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
+					mod_blacklist = []
+					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
+					tag_whitelist = []
+					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
+					tag_blacklist = []
+					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
+					block_whitelist = []
+					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
+					block_blacklist = []
+
+			#Weighted pressure plates
+			[server.types.additionalplacements.weighted_pressure_plate]
+
+				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				[server.types.additionalplacements.weighted_pressure_plate.rotated_logic]
+					#Default state for blocks not matching any list. True is enabled, false is disabled.
+					default = true
+					#Whitelist for mods whose blocks will be enabled.
+					mod_whitelist = []
+					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
+					mod_blacklist = []
+					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
+					tag_whitelist = []
+					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
+					tag_blacklist = []
+					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
+					block_whitelist = []
+					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
+					block_blacklist = []
+
