@@ -1,8 +1,9 @@
 {
 	"carvers": {
 		"air": [
-			"tfc:cave",
-			"tfc:canyon"
+			"minecraft:cave",
+			"minecraft:cave_extra_underground",
+			"minecraft:canyon"
 		]
 	},
 	"downfall": 0.0,
@@ -21,20 +22,34 @@
 	"features": [
 		[],
 		[],
+		[
+			"tfg:moon/blob/asurine",
+			"tfg:earth/geode/amethyst",
+			"tfg:earth/geode/barite",
+			"tfg:earth/geode/calcite",
+			"tfg:earth/geode/gypsum",
+			"tfg:earth/geode/opal",
+			"tfg:earth/geode/pyrite",
+			"tfg:earth/geode/quartzite"
+		],
 		[],
 		[
-			"tfg:moon/blob/asurine"
-		],
-		[
 			"tfc:vein/gabbro_dike",
+			"tfc:vein/diorite_dike"
+		],
+		[],
+		"#tfg:moon_veins",
+		[],
+		[],
+		[
 			"tfg:moon/surface/warped_sprouts_patch",
 			"tfg:moon/surface/dead_coral",
 			"tfg:moon/surface/dead_coral_fans",
 			"tfg:moon/surface/loose_diorite_rocks"
 		],
-		[],
-		"#tfg:moon_veins",
-		[]
+		[
+			"tfg:moon/hardening"
+		]
 	],
 	"has_precipitation": false,
 	"spawn_costs": {},
