@@ -12,17 +12,17 @@ function registerTFGRockRecipes(event) {
 		{ loose: 'tfg:brick/deepslate', block: '4x minecraft:deepslate_bricks' },
 		{ loose: 'tfg:loose/dripstone', block: 'minecraft:dripstone_block' },
 		{ loose: 'tfg:loose/moon_stone', block: 'ad_astra:moon_cobblestone' },
-		{ loose: 'tfg:brick/moon_stone', block: 'ad_astra:moon_stone_bricks' },
+		{ loose: 'tfg:brick/moon_stone', block: '4x ad_astra:moon_stone_bricks' },
 		{ loose: 'tfg:loose/moon_deepslate', block: 'ad_astra:moon_deepslate' },
 		{ loose: 'tfg:loose/mars_stone', block: 'ad_astra:mars_cobblestone' },
-		{ loose: 'tfg:brick/mars_stone', block: 'ad_astra:mars_stone_bricks' },
+		{ loose: 'tfg:brick/mars_stone', block: '4x ad_astra:mars_stone_bricks' },
 		{ loose: 'tfg:loose/venus_stone', block: 'ad_astra:venus_cobblestone' },
-		{ loose: 'tfg:brick/venus_stone', block: 'ad_astra:venus_stone_bricks' },
+		{ loose: 'tfg:brick/venus_stone', block: '4x ad_astra:venus_stone_bricks' },
 		{ loose: 'tfg:loose/mercury_stone', block: 'ad_astra:mercury_cobblestone' },
-		{ loose: 'tfg:brick/mercury_stone', block: 'ad_astra:mercury_stone_bricks' },
+		{ loose: 'tfg:brick/mercury_stone', block: '4x ad_astra:mercury_stone_bricks' },
 		{ loose: 'tfg:loose/glacio_stone', block: 'ad_astra:glacio_cobblestone' },
-		{ loose: 'tfg:brick/glacio_stone', block: 'ad_astra:glacio_stone_bricks' },
-		{ loose: 'tfg:loose/permafrost', block: 'ad_astra:permafrost' }
+		{ loose: 'tfg:brick/glacio_stone', block: '4x ad_astra:glacio_stone_bricks' },
+		{ loose: 'tfg:brick/permafrost', block: '4x ad_astra:permafrost_bricks' }
 	]
 
 	GLUEING_TOGETHER.forEach(x => {
@@ -169,7 +169,7 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'tfg:rock/hardened_glacio_stone', hammered: 'ad_astra:glacio_cobblestone' },
 		{ raw: 'ad_astra:glacio_cobblestone', hammered: 'tfc:sand/white' },
 		{ raw: 'ad_astra:conglomerate', hammered: 'tfc:rock/gravel/conglomerate' },
-		{ raw: 'ad_astra:permafrost', hammered: 'gtceu:ice_dust' }
+		{ raw: 'ad_astra:permafrost', hammered: 'tfg:loose/permafrost' }
 	]
 
 	HAMMERING.forEach(x => {
@@ -627,6 +627,12 @@ function registerTFGRockRecipes(event) {
 	event.recipes.gtceu.compressor('tfg:venus_sandstone')
 		.itemInputs('4x ad_astra:venus_sand')
 		.itemOutputs('ad_astra:venus_sandstone')
+		.duration(40*20)
+		.EUt(2)
+
+	event.recipes.gtceu.compressor('tfg:permafrost')
+		.itemInputs('4x tfg:loose/permafrost')
+		.itemOutputs('ad_astra:permafrost')
 		.duration(40*20)
 		.EUt(2)
 
