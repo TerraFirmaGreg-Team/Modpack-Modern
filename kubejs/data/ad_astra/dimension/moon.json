@@ -7,49 +7,61 @@
 			"type": "minecraft:multi_noise",
 			"biomes": [
 				{
-					"biome": "tfg:moon/lunar_plains",
+					"biome": "tfg:moon/lunar_sprouts",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": 0.5,
+						"continentalness": [ 0.3, 1 ],
 						"erosion": 0,
-						"weirdness": -0.5,
+						"weirdness": 0,
 						"depth": 0,
 						"offset": 0
 					}
 				},
 				{
-					"biome": "tfg:moon/lunar_basalt_maria",
+					"biome": "tfg:moon/lunar_sprouts_sparse",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": -0.5,
+						"continentalness": [ 0.15, 0.4 ],
 						"erosion": 0,
-						"weirdness": -0.5,
+						"weirdness": 0,
 						"depth": 0,
 						"offset": 0
 					}
 				},
 				{
-					"biome": "tfg:moon/lunar_gabbro_uplift",
+					"biome": "tfg:moon/lunar_uplift",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": -0.5,
+						"continentalness": [ -0.15, 0.15 ],
 						"erosion": 0,
-						"weirdness": 0.5,
+						"weirdness": 0,
 						"depth": 0,
 						"offset": 0
 					}
 				},
 				{
-					"biome": "tfg:moon/lunar_diorite_delta",
+					"biome": "tfg:moon/lunar_corals_sparse",
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": 0.5,
+						"continentalness": [ -0.4, -0.15 ],
 						"erosion": 0,
-						"weirdness": 0.5,
+						"weirdness": 0,
+						"depth": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "tfg:moon/lunar_corals",
+					"parameters": {
+						"temperature": 0,
+						"humidity": 0,
+						"continentalness": [ -1, -0.3 ],
+						"erosion": 0,
+						"weirdness": 0,
 						"depth": 0,
 						"offset": 0
 					}

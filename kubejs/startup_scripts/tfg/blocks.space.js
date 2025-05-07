@@ -1,11 +1,33 @@
 function registerTFGSpaceBlocks(event) {
 
-	const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
-	const $Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties')
-	const $SproutsBlock = Java.loadClass('net.minecraft.world.level.block.NetherSproutsBlock')
+	// TODO: replace these two with new blocks from tfg-core so they have a proper CanSurvive
+	event.create('tfg:lunar_warped_roots')
+		.soundType('nether_sprouts')
+		.hardness(0.2)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/warped_roots' })
+		})
+		.tagBlock('tfc:can_carve')
+		.fullBlock(false)
+		.defaultCutout()
+		.model('tfg:block/lunar_warped_roots')
+		.box(3, 0, 3, 12, 12, 12, true)
+		.noCollision()
+		.noDrops()
 
-	event.createCustom(`tfg:lunar_warped_roots`, () => new $SproutsBlock($Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
-	event.createCustom(`tfg:lunar_sprouts`, () => new $SproutsBlock( $Properties.copy($Blocks.DEAD_TUBE_CORAL_BLOCK)))
+	event.create('tfg:lunar_sprouts')
+		.soundType('nether_sprouts')
+		.hardness(0.2)
+		.item(item => {
+			item.modelJson({ parent: 'minecraft:item/nether_sprouts' })
+		})
+		.tagBlock('tfc:can_carve')
+		.fullBlock(false)
+		.defaultCutout()
+		.model('tfg:block/lunar_sprouts')
+		.box(3, 0, 3, 12, 4, 12, true)
+		.noCollision()
+		.noDrops()
 
 	event.create('tfg:rock/hardened_moon_stone')
 		.stoneSoundType()
