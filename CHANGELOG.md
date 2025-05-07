@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 ### Changes
+- Fixed hide duping recipes. (Redeix)
+- Added quest book and field guide instances for fishing nets. (Redeix)
+- Fixed rebar support recipe crash. (Redeix)
+- Fixed red steel flask dupe. (Redeix)
+- Fixed red alloy recipe inconsistency. (Redeix)
 
 ## [0.9.4] - 06.05.2025
 ### Changes

@@ -2226,5 +2226,9 @@
   "quests.tfg_tips.fuck_go_back.desc": "To escape &4The Beneath&r, you need to reach the upper levels of the cave system, near the &dBedrock Ceiling.&r Staying still for a couple of seconds near the roof will transport you back to the &bOverworld&r, right where you stood on to get in.",
   "quests.tfg_tips.piglin_bartering.title": "Piglin Bartering",
   "quests.tfg_tips.piglin_bartering.subtitle": "We are not alone apparently",
-  "quests.tfg_tips.piglin_bartering.desc": "The curious inhabitants of &4The Beneath&r have items to offer... Trade gold with them to get some useful resource, such as small amounts of &aMetals&r or &aLeather.&r\nCheck out the &2Field Guide&r for details about barter trades."
+  "quests.tfg_tips.piglin_bartering.desc": "The curious inhabitants of &4The Beneath&r have items to offer... Trade gold with them to get some useful resource, such as small amounts of &aMetals&r or &aLeather.&r\nCheck out the &2Field Guide&r for details about barter trades.",
+  "quests.tfg_tips.fishing_net.title": "Fishing Nets",
+  "quests.tfg_tips.fishing_net.subtitle": "Not the socks, sorry.",
+  "quests.tfg_tips.fishing_net.desc": "Fish have never been so easy to catch. A right-click away from a hearty meal.",
+  "quests.tfg_tips.fishing_net.task": "Any #forge:tools/fishing_nets"
 }
