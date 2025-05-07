@@ -690,31 +690,32 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "afc-1.0.14-1.20.1.jar",
+                    "file_name": "afc-1.0.15-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/1gtiOOBp/afc-1.0.14-1.20.1.jar",
-                    "id": "1gtiOOBp",
+                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/WTlvl3a2/afc-1.0.15-1.20.1.jar",
+                    "id": "WTlvl3a2",
                     "parent_id": "9q4wtMjp",
                     "hashes": {
-                        "sha512": "b97815066ed37ee831643efcf86ae05cb1fd6497fba054ea5afb349a2f29767858ea82a705cea273c1a6788eaceb1a81cdae119b3ca149e50b389cb1526f2208",
-                        "sha1": "24bd927904e8110faf34dabaac0cb399f789eb23"
+                        "sha512": "ad9f12fea6bc3a50e24e4b6e350a19a7cb73543372c8e918f2dc91c30c282c9c73da7018db3cc4acf52776c415446f4d2a4fc461ce24d187d15af5af9ccaa69f",
+                        "sha1": "bc0bd1fe835939127141eb905a136949ccb20dbd"
                     },
                     "required_dependencies": [
                         "nU0bVIaL",
                         "JaCEZUhg"
                     ],
-                    "size": 5097284,
-                    "date_published": "2025-05-04T07:43:49.537922Z"
+                    "size": 5101948,
+                    "date_published": "2025-05-07T01:44:15.051705Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "afc-1.0.14-1.20.1.jar",
+                    "file_name": "afc-1.0.15-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -723,18 +724,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6494/110/afc-1.0.14-1.20.1.jar",
-                    "id": "6494110",
+                    "url": "https://edge.forgecdn.net/files/6503/970/afc-1.0.15-1.20.1.jar",
+                    "id": "6503970",
                     "parent_id": "877545",
                     "hashes": {
-                        "sha1": "24bd927904e8110faf34dabaac0cb399f789eb23",
-                        "md5": "5195933c25079363b92bf8b4b03dd444"
+                        "sha1": "bc0bd1fe835939127141eb905a136949ccb20dbd",
+                        "md5": "3c7ce7adbe8ee17515fddaf80a356655"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 5097284,
-                    "date_published": "2025-05-04T07:41:58.767Z"
+                    "size": 5101948,
+                    "date_published": "2025-05-07T01:45:06.783Z"
                 }
             ]
         },
@@ -5976,69 +5977,6 @@
                     "required_dependencies": [],
                     "size": 4190330,
                     "date_published": "2024-08-14T19:45:31.453Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "wpE1XCxxzA05zZuT",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "free-cam",
-                "modrinth": "freecam"
-            },
-            "name": {
-                "curseforge": "Freecam",
-                "modrinth": "Freecam"
-            },
-            "id": {
-                "curseforge": "557076",
-                "modrinth": "XeEZ3fK2"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "freecam-forge-1.2.1+1.20.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XeEZ3fK2/versions/bvoDmWip/freecam-forge-1.2.1+1.20.jar",
-                    "id": "bvoDmWip",
-                    "parent_id": "XeEZ3fK2",
-                    "hashes": {
-                        "sha512": "14d5194c02d6281094efdc857e608b412cdb84ffbf94a06401c8509daa74914273e18224f05d9fe9bcea23fa70d5350c6edaf8bf657e58787f08a4553169c0d2",
-                        "sha1": "e4224b56750a1fe3956ae73a65f4470be3e0df3b"
-                    },
-                    "required_dependencies": [],
-                    "size": 75389,
-                    "date_published": "2025-03-26T09:22:51.179523Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "freecam-forge-1.2.1+1.20.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4643/128/freecam-forge-1.2.1+1.20.jar",
-                    "id": "4643128",
-                    "parent_id": "557076",
-                    "hashes": {
-                        "sha1": "e4224b56750a1fe3956ae73a65f4470be3e0df3b",
-                        "md5": "3301388f64a2bcbc760ca33324bca2c0"
-                    },
-                    "required_dependencies": [],
-                    "size": 75389,
-                    "date_published": "2023-07-14T03:46:56.520Z"
                 }
             ]
         },
@@ -12305,45 +12243,6 @@
                     ],
                     "size": 1750888,
                     "date_published": "2024-08-28T13:19:49.057361Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "41O7QIlbENx3hqx6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "tfc-punishment-for-death"
-            },
-            "name": {
-                "curseforge": "TFC Punishment for Death"
-            },
-            "id": {
-                "curseforge": "1258250"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TFC_punishment_for_death-1.20.1-1.0.0.11.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6495/648/TFC_punishment_for_death-1.20.1-1.0.0.11.jar",
-                    "id": "6495648",
-                    "parent_id": "1258250",
-                    "hashes": {
-                        "sha1": "12ca24ed80edce1eaf0c725f52e61284c10c7e3e",
-                        "md5": "26ff35272a9bdcb6258f88ffebfd97b7"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 28200,
-                    "date_published": "2025-05-04T15:55:53.890Z"
                 }
             ]
         },
