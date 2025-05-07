@@ -7,6 +7,7 @@
 - Fixed rebar support recipe crash. (Redeix)
 - Fixed red steel flask dupe. (Redeix)
 - Fixed red alloy recipe inconsistency. (Redeix)
+- Fixed blue steel backpack block lang. (Redeix)
 
 ## [0.9.4] - 06.05.2025
 ### Changes
