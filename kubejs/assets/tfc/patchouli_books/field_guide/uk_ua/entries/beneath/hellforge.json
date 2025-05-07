@@ -1,0 +1,50 @@
+{
+	"name": "Пекельна кузня",
+	"category": "tfc:beneath",
+	"icon": "beneath:cursecoal",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Пекельна кузня$() — це надзвичайно велика кузня з високою місткістю для палива, продуктів і нагріву. Вона будується з Пекельних цеглин, $(l:beneath/ores_and_minerals#cursecoal)антрациту$() та акведуків із піроксеніту."
+		},
+		{
+			"type": "patchouli:multiblock",
+			"multiblock": {
+				"pattern": [
+					[
+						"ZXXXZ",
+						"XYYYX",
+						"XY0YX",
+						"XYYYX",
+						"ZXXXZ"
+					],
+					[
+						"     ",
+						" XXX ",
+						" XXX ",
+						" XXX ",
+						"     "
+					]
+				],
+				"mapping": {
+					"Z": "beneath:blackstone_aqueduct[fluid=lava]",
+					"Y": "beneath:hellforge_side",
+					"0": "beneath:hellforge",
+					"X": "beneath:hellbricks"
+				}
+			},
+			"name": "Пекельна кузня",
+			"text": "",
+			"enable_visualize": false
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Для роботи Пекельної кузні необхідно, щоб лава текла через акведуки в її чотирьох кутах, а також 21 пекельна цегла. Центральна область 3x3 має бути заповнена купами $(l:beneath/ores_and_minerals#cursecoal)антрациту$(), які можна підпалити для запуску кузні."
+		},
+		{
+			"type": "patchouli:text",
+			"text": "У слотах для предметів Пекельної кузні можуть міститися паливо або речі для виплавки; між ними немає розрізнення. Будьте обережні, що ви туди кладете! Також є слоти для плавлення предметів, як у вугільній кузні. Індикатор лави на екрані показує температуру (а також візуальний рух предметів у світі)."
+		}
+	],
+	"read_by_default": true
+}
