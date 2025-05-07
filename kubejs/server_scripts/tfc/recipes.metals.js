@@ -330,9 +330,4 @@ function registerTFCMetalsRecipes(event) {
 			.EUt(GTValues.VA[GTValues.LV])
 	})})
 	//#endregion
-	event.remove({id: 'waterflasks:heating/red_steel_unfinished_red_steel_flask'})
-
-    event.recipes.tfc.heating('waterflasks:unfinished_red_steel_flask', 1500)
-        .resultFluid(Fluid.of('tfc:metal/red_steel', 144))
-		.id('waterflasks:tfc/heating/unfinished_red_steel_flask')
 }
