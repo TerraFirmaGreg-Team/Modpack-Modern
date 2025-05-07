@@ -86,4 +86,8 @@ const registerTooltips = (event) =>
 			text.add(1, text.of('9 x 5 x 9'))
 		})
 	})
+
+	event.addAdvanced(['#tfg:colorized_fired_vessels'], (item, advanced, text) => {
+		text.add(1, text.of('§cMax: 3024mb'))
+	})
 }
