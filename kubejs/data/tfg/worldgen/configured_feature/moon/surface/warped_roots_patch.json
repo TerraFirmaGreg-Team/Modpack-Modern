@@ -8,7 +8,7 @@
 					"to_place": {
 						"type": "minecraft:simple_state_provider",
 						"state": {
-							"Name": "tfg:lunar_warped_roots"
+							"Name": "tfg:lunar_roots"
 						}
 					}
 				}
