@@ -38,4 +38,20 @@ const registerTFGMaterials = (event) => {
 		.color('0xede8da')
 		.secondaryColor('0xeddcad')
 		.components('12x carbon', '22x hydrogen', '11x oxygen')
+
+	// Space Rocket Materials
+
+	event.create('rocket_alloy_t1')
+		.ingot()
+		.components('6x aluminium', '2x stainless_steel', '1x red_steel')
+		.color(0x333e47)
+		.iconSet('metallic')
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_DENSE)
+		.blastTemp(1760, 'low', 120, 1200)
+
+	event.create('vitrified_amiante')
+        .dust()
+		.fluid()
+		.iconSet('glass')
+        .color(0xcccccc)
 }
