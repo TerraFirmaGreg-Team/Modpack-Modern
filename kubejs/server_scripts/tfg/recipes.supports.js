@@ -168,7 +168,6 @@ function registerTFGSupportRecipes(event) {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Metal Supports
-	event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('8x tfg:rebar_support', [
 			'BA ',
 			'AC '
@@ -176,7 +175,7 @@ function registerTFGSupportRecipes(event) {
 			A: ChemicalHelper.get(TagPrefix.rod, GTMaterials.Steel, 1),
 			B: ChemicalHelper.get(TagPrefix.wireFine, GTMaterials.Steel, 1),
 			C: '#forge:tools/wire_cutters'
-		}).id('tfg:shaped/rebar_support'))
+		}).id('tfg:shaped/rebar_support')
 
 	event.recipes.gtceu.assembler('tfg:gtceu/assembler/rebar_support')
 		.circuit(4)

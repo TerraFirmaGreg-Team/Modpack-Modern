@@ -23,8 +23,10 @@
 		{
 			id: "23A27702FF816291"
 			linked_quest: "6903C72A254A7B08"
+			shape: "octagon"
+			size: 2.0d
 			x: -13.5d
-			y: 7.5d
+			y: 14.5d
 		}
 		{
 			id: "1F1E7097C015BE33"
@@ -972,7 +974,16 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{quests.steam_age.red_alloy.desc}"]
-			icon: "gtceu:red_alloy_ingot"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "gtceu:red_alloy_ingot"
+			}
 			id: "781C6AD30194CB45"
 			shape: "square"
 			size: 1.0d
@@ -986,11 +997,6 @@
 				{
 					id: "41331A38F9664605"
 					item: "gtceu:red_alloy_single_wire"
-					type: "item"
-				}
-				{
-					id: "747DB1DB09BA185B"
-					item: "gtceu:red_alloy_single_cable"
 					type: "item"
 				}
 			]

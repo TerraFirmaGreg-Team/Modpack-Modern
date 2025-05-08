@@ -991,6 +991,19 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
 
+	// Slime
 	event.smelting('tfc:glue', 'minecraft:slime_ball')
 		.id('tfg:smelting/slime_to_glue')
+
+	// Clay
+	event.shaped('minecraft:clay', [
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:clay_ball'
+	})
+	.id('tfg:shaped/clay_balls_to_block')
+
+	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
+		.id('tfg:shapeless/clay_block_to_balls')
 }
