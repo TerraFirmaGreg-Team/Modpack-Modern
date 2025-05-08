@@ -250,9 +250,9 @@ function registerTFGMiscellaneousRecipes(event) {
 		.id('tfg:quern/ice_dust')
 
 	event.recipes.gtceu.macerator('tfg:macerating_ice_shavings')
-		.itemInputs('4x firmalife:ice_shavings')
-		.itemOutputs('#forge:dusts/ice')
-		.duration(40)
+		.itemInputs('firmalife:ice_shavings')
+		.itemOutputs('#forge:small_dusts/ice')
+		.duration(10)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.macerator('tfg:macerating_ice_shavings_reverse')

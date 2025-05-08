@@ -24,6 +24,12 @@ const registerWaterFlasksRecipes = (event) => {
 		.useDurability(true)
 		.id(`waterflasks:heating/red_steel_flask`)
 
+	event.remove({id: 'waterflasks:heating/red_steel_unfinished_red_steel_flask'})
+    event.recipes.tfc.heating('waterflasks:unfinished_red_steel_flask', 1535)
+        .resultFluid(Fluid.of('tfc:metal/red_steel', 144))
+		.useDurability(true)
+		.id('waterflasks:tfc/heating/unfinished_red_steel_flask')
+
 	//#region Кожанная фласка
 
 	event.recipes.gtceu.assembler('tfg:water_flasks/leather_flask')
