@@ -6316,7 +6316,7 @@
             ]
         },
         {
-            "pakku_id": "7y1N4D8zXDgkhDlz",
+            "pakku_id": "rD7EJsU46nHBcbcs",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -6333,46 +6333,45 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "GregTech_Revival_32x_1.19.2-1.20.1-1.21_ver_0.17.zip",
+                    "type": "curseforge",
+                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
                     "mc_versions": [
-                        "1.19.2",
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6498/92/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
+                    "id": "6498092",
+                    "parent_id": "964322",
+                    "hashes": {
+                        "sha1": "8042b552366952abccf06c17eb9d9d693c8397b4",
+                        "md5": "0b4380cf6ad1a10af9cd70c35578c1c5"
+                    },
+                    "required_dependencies": [],
+                    "size": 7977338,
+                    "date_published": "2025-05-05T09:09:38.573Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
+                    "mc_versions": [
+                        "1.20",
                         "1.20.1",
-                        "1.21",
                         "1.21.1"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/XfsXHIWx/GregTech_Revival_32x_1.19.2-1.20.1-1.21_ver_0.17.zip",
-                    "id": "XfsXHIWx",
+                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/VrsFjDrs/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
+                    "id": "VrsFjDrs",
                     "parent_id": "fUawEtti",
                     "hashes": {
-                        "sha512": "f2519fab472d4f7c9a504b00e79a6a72b2f0e18c71bfb8c94b7527e0b04df2305e48d7aacdbf2e08f5fb022a239cba49652694cefcb9249af53e48d42e3225a9",
-                        "sha1": "38c6899d3769093eca77fa6ed5b6d250b519e3e8"
+                        "sha512": "46c0caac3b7fbad0afa4346d30ea56ac094765ca91184e87d36a6b74944e4a6254f0ea416fcfbbc073e609fc89d41f15a6bbcc0c5194f1204b4f5afb101036b3",
+                        "sha1": "8042b552366952abccf06c17eb9d9d693c8397b4"
                     },
                     "required_dependencies": [],
-                    "size": 8484291,
-                    "date_published": "2025-01-12T11:21:48.587435Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.17.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5891/272/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.17.zip",
-                    "id": "5891272",
-                    "parent_id": "964322",
-                    "hashes": {
-                        "sha1": "38c6899d3769093eca77fa6ed5b6d250b519e3e8",
-                        "md5": "08a723fa146d586b822865e63d0d2b75"
-                    },
-                    "required_dependencies": [],
-                    "size": 8484291,
-                    "date_published": "2024-11-10T15:47:36.740Z"
+                    "size": 7977338,
+                    "date_published": "2025-05-06T20:31:53.875728Z"
                 }
             ]
         },

@@ -1,6 +1,8 @@
 # Changelog
-
 ## [Unreleased]
+### Changes
+
+## [0.9.5] - 08.05.2025
 ### Changes
 - Disabled pollution
 - Fixed a progression softlock involving rubber (AirRice)
