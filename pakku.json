@@ -209,16 +209,25 @@
         "geckolib": {
             "side": "BOTH"
         },
-        "detected-setblock-be-gone": {
-            "side": "CLIENT"
-        },
         "tfcgenviewer": {
             "side": "BOTH"
         },
         "tfc-hot-or-not": {
             "side": "BOTH"
         },
+        "xaeros-minimap": {
+            "side": "BOTH"
+        },
         "particular-reforged": {
+            "side": "BOTH"
+        },
+        "pick-up-notifier": {
+            "side": "BOTH"
+        },
+        "inventory-tweaks-refoxed": {
+            "side": "BOTH"
+        },
+        "fastboot": {
             "side": "BOTH"
         }
     }
