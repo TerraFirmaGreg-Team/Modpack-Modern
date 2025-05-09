@@ -1060,10 +1060,10 @@ const registerGTCEURecipes = (event) => {
 
     // Balance is based on adjusting to match singeblock boiler efficiency
     // High Pressure Steam Solid Boiler produces 288,000 mB steam/coke
-	// High Pressure Steam Liquid Boiler produces 432 mB steam/creosote
+    // High Pressure Steam Liquid Boiler produces 432 mB steam/creosote
     // By Defualt: Large Bronze Boiler produces 50mB steam/creosote, 32000mB steam/coke
     // This is a factor of 9x for solids, 8.64x for liquids
-	// Large boiler fuel burn time is multiplied by 9, resulting in less fuel used over time for the same amount of steam produced per tick
+    // Large boiler fuel burn time is multiplied by 9, resulting in less fuel used over time for the same amount of steam produced per tick
 
     event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
 
