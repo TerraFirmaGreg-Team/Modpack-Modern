@@ -1,0 +1,16 @@
+{
+	"name": "Розвішувач",
+	"category": "tfc:beneath",
+	"icon": "beneath:unposter",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(thing)Розвішувач$() використовується для вирощування грибів. У нього можна класти гриби та пекельні культури. Коли він знаходиться поруч із грибом, він споживає предмети всередині, щоб раз на день збільшувати кількість цього гриба у навколишній області."
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "beneath:crafting/unposter"
+		}
+	],
+	"read_by_default": true
+}
