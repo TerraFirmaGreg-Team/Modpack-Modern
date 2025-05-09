@@ -36,10 +36,10 @@ const registerAdAstraItemTags = (event) => {
 	event.add('forge:cobblestone', 'ad_astra:mercury_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:glacio_cobblestone')
 
-	// Isolation Tier 1
+	// Insulation Tier 1
 
-	event.add('forge:isolation_t1', 'gtceu:borosilicate_glass_dust')
-	event.add('forge:isolation_t1', 'gtceu:vitrified_amiante_dust')
+	event.add('forge:insulation_t1', 'gtceu:borosilicate_glass_dust')
+	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
 }
 
 const registerAdAstraBlockTags = (event) => {
