@@ -42,12 +42,15 @@
 		[],
 		[],
 		[
-			"tfg:moon/surface/gabbro_rock_pile",
-			"tfg:moon/surface/loose_gabbro_rocks",
+			"tfg:moon/surface/basalt_delta",
+			"tfg:moon/surface/moon_rock_pile",
+			"tfg:moon/surface/dead_coral_fans",
+			"tfg:moon/surface/loose_moon_stone_rocks",
+			"tfg:moon/surface/loose_basalt_rocks",
 			"tfg:moon/surface/warped_sprouts_patch"
 		],
 		[
-			"tfg:moon/hardening"
+			"tfg:moon/hardening" 
 		]
 	],
 	"has_precipitation": false,
@@ -55,33 +58,26 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [
-			{
-				"type": "minecraft:rabbit",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 10
-			}
-		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
+				"type": "ad_astra:corrupted_lunarian",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "minecraft:endermite",
@@ -96,10 +92,10 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:windswept_hills_enderman",
+				"type": "endermanoverhaul:soulsand_valley_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 50
+				"weight": 10
 			}
 		],
 		"underground_water_creature": [],

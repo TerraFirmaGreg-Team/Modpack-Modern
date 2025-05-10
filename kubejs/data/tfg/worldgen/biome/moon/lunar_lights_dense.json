@@ -23,7 +23,6 @@
 		[],
 		[],
 		[
-			"tfg:moon/blob/asurine",
 			"tfg:earth/geode/amethyst",
 			"tfg:earth/geode/barite",
 			"tfg:earth/geode/calcite",
@@ -42,16 +41,31 @@
 		[],
 		[],
 		[
-			"tfg:moon/surface/dead_coral",
-			"tfg:moon/surface/dead_coral_fans",
-			"tfg:moon/surface/loose_diorite_rocks"
+			"tfg:moon/surface/moon_rock_pile",
+			"tfg:moon/surface/loose_moon_stone_rocks",
+			"tfg:moon/surface/warped_sprouts_patch",
+			"tfg:moon/surface/warped_roots_patch",
+			"tfg:moon/surface/warped_vine"
 		],
 		[
 			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {},
+	"spawn_costs": {
+		"minecraft:enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.015
+		},
+		"endermanoverhaul:windswept_hills_enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.015
+		},
+		"endermanoverhaul:soulsand_valley_enderman": {
+			"charge": 0.7,
+			"energy_budget": 0.015
+		}
+	},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -60,32 +74,20 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 80
 			}
 		],
 		"misc": [],
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:enderman",
 				"maxCount": 1,
-				"minCount": 1,
-				"weight": 50
-			},
-			{
-				"type": "minecraft:endermite",
-				"maxCount": 3,
 				"minCount": 1,
 				"weight": 20
 			},
@@ -96,15 +98,33 @@
 				"weight": 100
 			},
 			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "minecraft:endermite",
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 10
+			},
+			{
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
+			},
+			{
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			}
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
 		"water_creature": []
 	},
-	"temperature": 0.7
+	"temperature": -0.5
 }

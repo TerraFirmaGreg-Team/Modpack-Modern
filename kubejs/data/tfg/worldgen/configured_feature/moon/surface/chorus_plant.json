@@ -1,6 +1,4 @@
 {
-	"type": "tfc:kelp_tree",
-	"config": {
-		"block": "tfc:plant/giant_kelp_flower"
-	}
+	"type": "tfg:lunar_chorus_plant",
+	"config": {}
 }

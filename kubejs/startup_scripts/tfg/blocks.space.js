@@ -15,7 +15,7 @@ function registerTFGSpaceBlocks(event) {
 		.opaque(true)
 
 	event.create('tfg:rock/hardened_moon_deepslate')
-		.stoneSoundType()
+		.soundType('deepslate')
 		.requiresTool(true)
 		.item(item => {
 			item.modelJson({ parent: 'ad_astra:item/moon_deepslate' })
