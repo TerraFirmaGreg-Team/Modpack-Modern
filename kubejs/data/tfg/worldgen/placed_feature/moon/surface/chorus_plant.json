@@ -1,9 +1,6 @@
 {
-	"feature": "tfg:moon/surface/warped_vine",
+	"feature": "tfg:moon/surface/chorus_plant",
 	"placement": [
-		{
-			"type": "minecraft:biome"
-		},
 		{
 			"type": "minecraft:rarity_filter",
 			"chance": 2

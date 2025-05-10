@@ -6,10 +6,21 @@
 				"type": "minecraft:simple_block",
 				"config": {
 					"to_place": {
-						"type": "minecraft:simple_state_provider",
-						"state": {
-							"Name": "tfg:lunar_roots"
-						}
+						"type": "minecraft:weighted_state_provider",
+						"entries": [
+							{
+								"weight": 20,
+								"data": {
+									"Name": "tfg:lunar_roots"
+								}
+							},
+							{
+								"weight": 50,
+								"data": {
+									"Name": "tfg:lunar_sprouts"
+								}
+							}
+						]
 					}
 				}
 			},
@@ -28,8 +39,8 @@
 				}
 			]
 		},
-		"tries": 36,
-		"xz_spread": 15,
+		"tries": 32,
+		"xz_spread": 16,
 		"y_spread": 3
 	}
 }

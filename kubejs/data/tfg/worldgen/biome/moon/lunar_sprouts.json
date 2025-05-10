@@ -42,11 +42,11 @@
 		[],
 		[],
 		[
+			"tfg:moon/surface/moon_rock_pile",
+			"tfg:moon/surface/loose_moon_stone_rocks",
 			"tfg:moon/surface/warped_roots_patch",
 			"tfg:moon/surface/warped_sprouts_patch",
-			"tfg:moon/surface/warped_vine",
-			"tfg:moon/surface/moon_rock_pile",
-			"tfg:moon/surface/loose_moon_stone_rocks"
+			"tfg:moon/surface/warped_vine"
 		],
 		[
 			"tfg:moon/hardening"
