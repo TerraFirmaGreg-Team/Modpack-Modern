@@ -15,6 +15,7 @@
 - Fixed tooltips on the uncolored small vessel and AFC wooden supports (Pyritie)
 - Fixed assembler clay recipes so they output the correct amount (Pyritie)
 - Quest fixes/tweaks (Pyritie)
+- Added aluminium, stainless steel, and titanium millstones (Pyritie)
 
 ## [0.9.5] - 08.05.2025
 ### Changes

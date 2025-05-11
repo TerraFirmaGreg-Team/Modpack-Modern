@@ -190,17 +190,53 @@ function registerGreateRecipes(event) {
 	], {
 		A: '#forge:smooth_stone',
 		B: 'gtceu:treated_wood_slab',
-		C: '#forge:small_gears/steel',
+		C: '#forge:small_gears/wrought_iron',
 		D: '#forge:tools/hammers',
 		E: '#forge:tools/wrenches',
 		F: '#forge:dusts/diamond'
 	}).id('greate:shaped/steel_millstone')
 
 	event.recipes.gtceu.assembler('greate:steel_millstone')
-		.itemInputs('3x #forge:smooth_stone', 'gtceu:treated_wood_slab', '#forge:small_gears/steel', '2x #forge:dusts/diamond')
+		.itemInputs('3x #forge:smooth_stone', 'gtceu:treated_wood_slab', '#forge:small_gears/wrought_iron', '2x #forge:dusts/diamond')
 		.itemOutputs('greate:steel_millstone')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.shaped('greate:aluminium_millstone', [
+		'BCB',
+		'FGF',
+		'AAA'
+	], {
+		A: '#forge:double_plates/vanadium_steel',
+		B: '#gtceu:circuits/mv',
+		C: '#forge:gears/steel',
+		F: '#forge:gems/diamond',
+		G: 'gtceu:mv_machine_casing'
+	}).id('greate:shaped/aluminium_millstone')
+
+	event.shaped('greate:stainless_steel_millstone', [
+		'BCB',
+		'FGF',
+		'AAA'
+	], {
+		A: '#forge:double_plates/red_steel',
+		B: '#gtceu:circuits/hv',
+		C: '#forge:gears/aluminium',
+		F: 'gtceu:diamond_grinding_head',
+		G: 'gtceu:hv_machine_casing'
+	}).id('greate:shaped/stainless_steel_millstone')
+
+	event.shaped('greate:titanium_millstone', [
+		'BCB',
+		'FGF',
+		'AAA'
+	], {
+		A: '#forge:double_plates/ultimet',
+		B: '#gtceu:circuits/ev',
+		C: '#forge:gears/stainless_steel',
+		F: 'gtceu:diamond_grinding_head',
+		G: 'gtceu:ev_machine_casing'
+	}).id('greate:shaped/titanium_millstone')
 
 	// #endregion
 
