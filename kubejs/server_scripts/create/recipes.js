@@ -1035,7 +1035,7 @@ const registerCreateRecipes = (event) => {
 	], {
 		A: '#forge:screws/copper',
 		B: 'tfc:metal/boots/copper',
-		C: '#forge:ingots/iron',
+		C: '#createdeco:internal/ingots/iron_ingots',
 		D: 'firmaciv:large_waterproof_hide'
 	}).id('tfg:create/shaped/copper_diving_boots')
 

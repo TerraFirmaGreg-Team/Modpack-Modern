@@ -749,6 +749,24 @@ function registerGTCEuMachineRecipes(event) {
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 	})
 
+	// Wooden crate
+	event.recipes.shaped('gtceu:wood_crate', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:screws/wrought_iron',
+		B: '#minecraft:planks',
+		C: '#forge:tools/saws'
+	}).id('tfg:shaped/wooden_crate_wrought_iron')
+
+	event.recipes.gtceu.assembler('gtceu:wood_crate')
+		.itemInputs('4x #minecraft:planks', '4x #forge:screws/wrought_iron')
+		.itemOutputs('gtceu:wood_crate')
+		.duration(100)
+		.EUt(16)
+		.circuit(5)
+
 	// Steam multi parts
 
 	event.shaped('gtceu:steel_machine_casing', [

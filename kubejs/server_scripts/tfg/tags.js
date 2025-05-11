@@ -129,6 +129,12 @@ const registerTFGItemTags = (event) => {
 
 	// #endregion
 
+	// Use either cast or wrought iron
+	event.add('forge:double_iron_ingots', 'tfc:metal/double_ingot/cast_iron')
+	event.add('forge:double_iron_ingots', 'gtceu:wrought_iron_double_ingot')
+
+	// #endregion
+
 	// #region 0.7.19 -> 0.9 conversion
 
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
