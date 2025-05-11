@@ -1,6 +1,20 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Rebalanced the Large Boilers so now they consume WAY less fuel, so lava is no longer basically mandatory - see [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/977) for the full math (Oosyrag)
+- Greenhouse ports and sprinklers now work directly with gregtech pipes (Thomasx0)
+- Added recipes for stainless steel greenhouse parts (Pyritie)
+- More field guide updates (Oosyrag)
+- Added assembler recipes for more Create and Greate items (Pyritie)
+- Blaze burners, alternators, steam engines, and steam multiblock inputs/outputs are now much cheaper (Pyritie)
+- Firmaciv sails can now use any fabric instead of just wool (Pyritie)
+- Fixed some recycling recipes to prevent dupes (Pyritie)
+- Added a circuit to the assembler hopper recipe (Pyritie)
+- Fixed chiseling non-tfc blocks so it returns two slabs instead of one (Pyritie)
+- Fixed being able to use tree taps on placed logs (Pyritie)
+- Fixed tooltips on the uncolored small vessel and AFC wooden supports (Pyritie)
+- Fixed assembler clay recipes so they output the correct amount (Pyritie)
+- Quest fixes/tweaks (Pyritie)
 
 ## [0.9.5] - 08.05.2025
 ### Changes
