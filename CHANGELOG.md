@@ -20,6 +20,7 @@
 - Added item to summon armor stands with arms. (Redeix)
 - Added recipes for emptying vessels and molds. (Redeix)
 - Added recipes for extracting/ forming magma blocks. (Redeix)
+- Nerfed steel support recipe output. (Redeix)
 
 ## [0.9.5] - 08.05.2025
 ### Changes
