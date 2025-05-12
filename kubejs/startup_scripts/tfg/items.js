@@ -161,6 +161,9 @@ const registerTFGItems = (event) => {
     event.create('tfg:fletching')
         .translationKey('item.tfg.fletching')
 
+    event.create('tfg:armor_stand_arms')
+        .translationKey('item.tfg.armor_stand_arms')
+
     event.create('tfg:fishing_net/wood')
         .translationKey('item.tfg.fishing_net.wood')
         .parentModel('tfg:item/fishing_nets/wood_fishing_net')

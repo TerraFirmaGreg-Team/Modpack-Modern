@@ -273,4 +273,20 @@ function registerTFGMoldRecipes(event) {
 			.duration(120)
 			.EUt(GTValues.VA[GTValues.LV])
 	})
+
+	//craft mold to scrub nbt
+	const molds = Ingredient.of('#tfc:fired_molds').itemIds;
+
+	molds.forEach(mold => {
+		event.shapeless(Item.of(mold), [mold])
+		.id(`tfg:shapeless/mold_cleaning/${mold.replace(":", "/")}`);
+	});
+
+	//craft vessel to scrub nbt
+	const vessels = Ingredient.of('#tfc:fired_vessels').itemIds;
+
+	vessels.forEach(vessel => {
+		event.shapeless(Item.of(vessel), [vessel])
+		.id(`tfg:shapeless/vessel_cleaning/${vessel.replace(":", "/")}`);
+	});
 }
