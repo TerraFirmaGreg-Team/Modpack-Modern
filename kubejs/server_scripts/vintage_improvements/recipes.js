@@ -298,7 +298,7 @@ function registerVintageImprovementsRecipes(event) {
 			event.custom({
 				type: 'vintageimprovements:coiling',
 				ingredients: [ChemicalHelper.get(TagPrefix.rod, material, 1)],
-				results: [ChemicalHelper.get(TagPrefix.springSmall, material, 1)],
+				results: [ChemicalHelper.get(TagPrefix.springSmall, material, 2)],
 				processingTime: (material.getMass() / 2) * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/coiling/${material.getName()}_small_spring`)
 		}

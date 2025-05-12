@@ -30,9 +30,6 @@ global.FIRMALIFE_DISABLED_ITEMS = [
     'firmalife:copper_pipe',
     'firmalife:oxidized_copper_pipe',
     'firmalife:irrigation_tank',
-    'firmalife:iron_greenhouse_port',
-    'firmalife:copper_greenhouse_port',
-    'firmalife:treated_wood_greenhouse_port'
 ];
 
 global.FIRMALIFE_HIDED_ITEMS = [
@@ -44,15 +41,6 @@ global.FIRMALIFE_HIDED_ITEMS = [
     'firmalife:weathered_copper_greenhouse_trapdoor', 
     'firmalife:weathered_copper_greenhouse_door', 
     'firmalife:weathered_copper_greenhouse_port', 
-
-    'firmalife:stainless_steel_greenhouse_wall', 
-    'firmalife:stainless_steel_greenhouse_panel_wall', 
-    'firmalife:stainless_steel_greenhouse_panel_roof', 
-    'firmalife:stainless_steel_greenhouse_roof', 
-    'firmalife:stainless_steel_greenhouse_roof_top', 
-    'firmalife:stainless_steel_greenhouse_trapdoor', 
-    'firmalife:stainless_steel_greenhouse_door', 
-    'firmalife:stainless_steel_greenhouse_port', 
 
     'firmalife:rusted_iron_greenhouse_wall', 
     'firmalife:rusted_iron_greenhouse_panel_wall', 

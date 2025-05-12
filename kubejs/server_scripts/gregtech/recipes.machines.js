@@ -749,4 +749,35 @@ function registerGTCEuMachineRecipes(event) {
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 	})
 
+	// Steam multi parts
+
+	event.shaped('gtceu:steel_machine_casing', [
+		' A ',
+		'ABA',
+		' A '
+	], {
+		A: '#forge:ingots/steel',
+		B: '#forge:tools/hammers'
+	}).id('gtceu:shaped/steel_hull')
+
+	event.shaped('gtceu:steam_input_hatch', [
+		'ACA',
+		' B ',
+		'ACA'
+	], {
+		A: '#forge:screws/wrought_iron',
+		B: 'gtceu:steel_machine_casing',
+		C: '#forge:small_fluid_pipes/steel'
+	}).id('gtceu:shaped/steam_hatch')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_bus'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_bus'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_output_bus'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_output_bus'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch'}, 'gtceu:steel_dust', '6x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch'}, 'gtceu:steel_block', '6x gtceu:steel_ingot')
 }

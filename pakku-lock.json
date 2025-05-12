@@ -690,31 +690,32 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "afc-1.0.14-1.20.1.jar",
+                    "file_name": "afc-1.0.15-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/1gtiOOBp/afc-1.0.14-1.20.1.jar",
-                    "id": "1gtiOOBp",
+                    "url": "https://cdn.modrinth.com/data/9q4wtMjp/versions/WTlvl3a2/afc-1.0.15-1.20.1.jar",
+                    "id": "WTlvl3a2",
                     "parent_id": "9q4wtMjp",
                     "hashes": {
-                        "sha512": "b97815066ed37ee831643efcf86ae05cb1fd6497fba054ea5afb349a2f29767858ea82a705cea273c1a6788eaceb1a81cdae119b3ca149e50b389cb1526f2208",
-                        "sha1": "24bd927904e8110faf34dabaac0cb399f789eb23"
+                        "sha512": "ad9f12fea6bc3a50e24e4b6e350a19a7cb73543372c8e918f2dc91c30c282c9c73da7018db3cc4acf52776c415446f4d2a4fc461ce24d187d15af5af9ccaa69f",
+                        "sha1": "bc0bd1fe835939127141eb905a136949ccb20dbd"
                     },
                     "required_dependencies": [
                         "nU0bVIaL",
                         "JaCEZUhg"
                     ],
-                    "size": 5097284,
-                    "date_published": "2025-05-04T07:43:49.537922Z"
+                    "size": 5101948,
+                    "date_published": "2025-05-07T01:44:15.051705Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "afc-1.0.14-1.20.1.jar",
+                    "file_name": "afc-1.0.15-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -723,18 +724,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6494/110/afc-1.0.14-1.20.1.jar",
-                    "id": "6494110",
+                    "url": "https://edge.forgecdn.net/files/6503/970/afc-1.0.15-1.20.1.jar",
+                    "id": "6503970",
                     "parent_id": "877545",
                     "hashes": {
-                        "sha1": "24bd927904e8110faf34dabaac0cb399f789eb23",
-                        "md5": "5195933c25079363b92bf8b4b03dd444"
+                        "sha1": "bc0bd1fe835939127141eb905a136949ccb20dbd",
+                        "md5": "3c7ce7adbe8ee17515fddaf80a356655"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 5097284,
-                    "date_published": "2025-05-04T07:41:58.767Z"
+                    "size": 5101948,
+                    "date_published": "2025-05-07T01:45:06.783Z"
                 }
             ]
         },
@@ -5980,69 +5981,6 @@
             ]
         },
         {
-            "pakku_id": "wpE1XCxxzA05zZuT",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "free-cam",
-                "modrinth": "freecam"
-            },
-            "name": {
-                "curseforge": "Freecam",
-                "modrinth": "Freecam"
-            },
-            "id": {
-                "curseforge": "557076",
-                "modrinth": "XeEZ3fK2"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "freecam-forge-1.2.1+1.20.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XeEZ3fK2/versions/bvoDmWip/freecam-forge-1.2.1+1.20.jar",
-                    "id": "bvoDmWip",
-                    "parent_id": "XeEZ3fK2",
-                    "hashes": {
-                        "sha512": "14d5194c02d6281094efdc857e608b412cdb84ffbf94a06401c8509daa74914273e18224f05d9fe9bcea23fa70d5350c6edaf8bf657e58787f08a4553169c0d2",
-                        "sha1": "e4224b56750a1fe3956ae73a65f4470be3e0df3b"
-                    },
-                    "required_dependencies": [],
-                    "size": 75389,
-                    "date_published": "2025-03-26T09:22:51.179523Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "freecam-forge-1.2.1+1.20.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4643/128/freecam-forge-1.2.1+1.20.jar",
-                    "id": "4643128",
-                    "parent_id": "557076",
-                    "hashes": {
-                        "sha1": "e4224b56750a1fe3956ae73a65f4470be3e0df3b",
-                        "md5": "3301388f64a2bcbc760ca33324bca2c0"
-                    },
-                    "required_dependencies": [],
-                    "size": 75389,
-                    "date_published": "2023-07-14T03:46:56.520Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "2wt2APHThAmSG5Rq",
             "pakku_links": [
                 "IqPkca9cWhZ2JxDJ"
@@ -6378,7 +6316,7 @@
             ]
         },
         {
-            "pakku_id": "7y1N4D8zXDgkhDlz",
+            "pakku_id": "rD7EJsU46nHBcbcs",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
             "slug": {
@@ -6395,46 +6333,45 @@
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "GregTech_Revival_32x_1.19.2-1.20.1-1.21_ver_0.17.zip",
+                    "type": "curseforge",
+                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
                     "mc_versions": [
-                        "1.19.2",
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6498/92/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
+                    "id": "6498092",
+                    "parent_id": "964322",
+                    "hashes": {
+                        "sha1": "8042b552366952abccf06c17eb9d9d693c8397b4",
+                        "md5": "0b4380cf6ad1a10af9cd70c35578c1c5"
+                    },
+                    "required_dependencies": [],
+                    "size": 7977338,
+                    "date_published": "2025-05-05T09:09:38.573Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
+                    "mc_versions": [
+                        "1.20",
                         "1.20.1",
-                        "1.21",
                         "1.21.1"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/XfsXHIWx/GregTech_Revival_32x_1.19.2-1.20.1-1.21_ver_0.17.zip",
-                    "id": "XfsXHIWx",
+                    "url": "https://cdn.modrinth.com/data/fUawEtti/versions/VrsFjDrs/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.18.zip",
+                    "id": "VrsFjDrs",
                     "parent_id": "fUawEtti",
                     "hashes": {
-                        "sha512": "f2519fab472d4f7c9a504b00e79a6a72b2f0e18c71bfb8c94b7527e0b04df2305e48d7aacdbf2e08f5fb022a239cba49652694cefcb9249af53e48d42e3225a9",
-                        "sha1": "38c6899d3769093eca77fa6ed5b6d250b519e3e8"
+                        "sha512": "46c0caac3b7fbad0afa4346d30ea56ac094765ca91184e87d36a6b74944e4a6254f0ea416fcfbbc073e609fc89d41f15a6bbcc0c5194f1204b4f5afb101036b3",
+                        "sha1": "8042b552366952abccf06c17eb9d9d693c8397b4"
                     },
                     "required_dependencies": [],
-                    "size": 8484291,
-                    "date_published": "2025-01-12T11:21:48.587435Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.17.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5891/272/GregTech Revival 32x 1.19.2-1.20.1-1.21 ver 0.17.zip",
-                    "id": "5891272",
-                    "parent_id": "964322",
-                    "hashes": {
-                        "sha1": "38c6899d3769093eca77fa6ed5b6d250b519e3e8",
-                        "md5": "08a723fa146d586b822865e63d0d2b75"
-                    },
-                    "required_dependencies": [],
-                    "size": 8484291,
-                    "date_published": "2024-11-10T15:47:36.740Z"
+                    "size": 7977338,
+                    "date_published": "2025-05-06T20:31:53.875728Z"
                 }
             ]
         },
@@ -12305,45 +12242,6 @@
                     ],
                     "size": 1750888,
                     "date_published": "2024-08-28T13:19:49.057361Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "41O7QIlbENx3hqx6",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "tfc-punishment-for-death"
-            },
-            "name": {
-                "curseforge": "TFC Punishment for Death"
-            },
-            "id": {
-                "curseforge": "1258250"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TFC_punishment_for_death-1.20.1-1.0.0.11.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6495/648/TFC_punishment_for_death-1.20.1-1.0.0.11.jar",
-                    "id": "6495648",
-                    "parent_id": "1258250",
-                    "hashes": {
-                        "sha1": "12ca24ed80edce1eaf0c725f52e61284c10c7e3e",
-                        "md5": "26ff35272a9bdcb6258f88ffebfd97b7"
-                    },
-                    "required_dependencies": [
-                        "302973"
-                    ],
-                    "size": 28200,
-                    "date_published": "2025-05-04T15:55:53.890Z"
                 }
             ]
         },

@@ -193,7 +193,7 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if ("slab" in x) {
-			event.recipes.tfc.chisel(x.slab, x.raw, 'slab')
+			event.recipes.tfc.chisel(x.slab, x.raw, 'slab').extraDrop(x.slab)
 			//event.stonecutting(`2x ${x.slab}`, x.raw).id(`${x.raw}_to_${x.slab}`.replace(/:/g, '_'))
 
 			event.recipes.gtceu.macerator(`macerate_${x.slab}`.replace(/:/g, '_'))

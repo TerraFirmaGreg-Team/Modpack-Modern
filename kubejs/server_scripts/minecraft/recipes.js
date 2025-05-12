@@ -917,11 +917,6 @@ const registerMinecraftRecipes = (event) => {
 	// #endregion
 
 	//#region Кожа из кожаных предметов
-	event.recipes.gtceu.macerator('tfg:leather_from_boots')
-		.itemInputs('minecraft:leather_boots')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
 	event.recipes.gtceu.macerator('tfg:leather_from_saddle')
 		.itemInputs('minecraft:saddle')
 		.itemOutputs('minecraft:leather')
@@ -929,21 +924,6 @@ const registerMinecraftRecipes = (event) => {
 
 	event.recipes.gtceu.macerator('tfg:leather_from_horse_armor')
 		.itemInputs('minecraft:leather_horse_armor')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
-	event.recipes.gtceu.macerator('tfg:leather_from_helmet')
-		.itemInputs('minecraft:leather_helmet')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
-	event.recipes.gtceu.macerator('tfg:leather_from_leggings')
-		.itemInputs('minecraft:leather_leggings')
-		.itemOutputs('minecraft:leather')
-		.EUt(7).duration(80)
-
-	event.recipes.gtceu.macerator('tfg:leather_from_chestplate')
-		.itemInputs('minecraft:leather_chestplate')
 		.itemOutputs('minecraft:leather')
 		.EUt(7).duration(80)
 	//#endregion
@@ -991,6 +971,19 @@ const registerMinecraftRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 	//#endregion
 
+	// Slime
 	event.smelting('tfc:glue', 'minecraft:slime_ball')
 		.id('tfg:smelting/slime_to_glue')
+
+	// Clay
+	event.shaped('minecraft:clay', [
+		'AA',
+		'AA'
+	], {
+		A: 'minecraft:clay_ball'
+	})
+	.id('tfg:shaped/clay_balls_to_block')
+
+	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
+		.id('tfg:shapeless/clay_block_to_balls')
 }

@@ -239,11 +239,11 @@ function registerTFCMetalsRecipes(event) {
 
 	// Ванильная дверь декрафт
 	event.recipes.tfc.heating('minecraft:iron_door', 1535)
-		.resultFluid(Fluid.of('gtceu:iron', 144))
+		.resultFluid(Fluid.of('gtceu:iron', 288))
 		.id(`tfc:heating/iron_door`)
 
 	// Ванильная дверь на наковальне
-	event.recipes.tfc.anvil('minecraft:iron_door', '#forge:plates/wrought_iron', ['hit_last', 'draw_not_last', 'punch_not_last'])
+	event.recipes.tfc.anvil('minecraft:iron_door', '#forge:double_plates/wrought_iron', ['hit_last', 'draw_not_last', 'punch_not_last'])
 		.tier(3)
 		.id(`tfc:anvil/iron_door`)
 

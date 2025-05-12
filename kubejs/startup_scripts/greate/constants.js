@@ -25,9 +25,6 @@ global.GREATE_DISABLED_ITEMS = [
 	'greate:andesite_alloy_encased_fan',
 	'greate:andesite_alloy_mechanical_mixer',
 	'greate:andesite_alloy_mechanical_pump',
-	'greate:aluminium_millstone',
-	'greate:stainless_steel_millstone',
-	'greate:titanium_millstone',
 
 	// Disabled because they don't respect the cleanroom requirement of some recipes
 	'greate:stainless_steel_mechanical_saw',
