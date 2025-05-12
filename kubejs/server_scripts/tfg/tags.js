@@ -130,8 +130,8 @@ const registerTFGItemTags = (event) => {
 	// #endregion
 
 	// Use either cast or wrought iron
-	event.add('forge:double_iron_ingots', 'tfc:metal/double_ingot/cast_iron')
-	event.add('forge:double_iron_ingots', 'gtceu:wrought_iron_double_ingot')
+	event.add('forge:double_iron_ingots', '#forge:double_ingots/iron')
+	event.add('forge:double_iron_ingots', '#forge:double_ingots/wrought_iron')
 
 	// #endregion
 
