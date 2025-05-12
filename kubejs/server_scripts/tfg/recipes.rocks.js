@@ -256,4 +256,38 @@ function registerTFGRockRecipes(event) {
 	})
 
 	// #endregion
+
+	//#region Magma Blocks
+	event.remove({id: 'gtceu:compressor/magma_block'})
+	event.remove({id: 'greate:splashing/obsidian'})
+
+	//magma block + stone group
+	const magma_blocks = [
+		{magma: 'minecraft:magma_block', rock: 'minecraft:blackstone'},
+		{magma: 'tfc:rock/magma/granite', rock: 'tfc:rock/raw/granite'},
+		{magma: 'tfc:rock/magma/diorite', rock: 'tfc:rock/raw/diorite'},
+		{magma: 'tfc:rock/magma/gabbro', rock: 'tfc:rock/raw/gabbro'},
+		{magma: 'tfc:rock/magma/rhyolite', rock: 'tfc:rock/raw/rhyolite'},
+		{magma: 'tfc:rock/magma/basalt', rock: 'tfc:rock/raw/basalt'},
+		{magma: 'tfc:rock/magma/andesite', rock: 'tfc:rock/raw/andesite'},
+		{magma: 'tfc:rock/magma/dacite', rock: 'tfc:rock/raw/dacite'}
+	];
+
+	magma_blocks.forEach(block => {
+
+		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${block.magma}`.replace(/:/g, '/'))
+			.itemInputs(`1x ${block.rock}`)
+			.inputFluids(Fluid.of('minecraft:lava', 250))
+			.itemOutputs(`1x ${block.magma}`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.ULV])
+			
+		event.recipes.gtceu.extractor(`tfg:gtceu/extractor/${block.magma}`.replace(/:/g, "/"))
+			.itemInputs(`1x ${block.magma}`)
+			.outputFluids(Fluid.of('minecraft:lava', 250))
+			.itemOutputs(`1x ${block.rock}`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+	})
+	//#endregion
 }
