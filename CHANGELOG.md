@@ -16,8 +16,9 @@
 - Fixed assembler clay recipes so they output the correct amount (Pyritie)
 - Quest fixes/tweaks (Pyritie)
 - Added aluminium, stainless steel, and titanium millstones (Pyritie)
-- Fixed fishing nets behavior (Redeix)
+- Fixed fishing nets behavior. (Redeix)
 - Added item to summon armor stands with arms. (Redeix)
+- Added recipes for emptying vessels and molds. (Redeix)
 
 ## [0.9.5] - 08.05.2025
 ### Changes
