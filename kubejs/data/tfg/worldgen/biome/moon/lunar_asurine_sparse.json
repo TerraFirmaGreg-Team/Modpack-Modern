@@ -42,13 +42,12 @@
 		[],
 		[],
 		[
-			"tfg:moon/surface/dead_coral",
-			"tfg:moon/surface/dead_coral_fans",
-			"tfg:moon/surface/loose_diorite_rocks",
+			"tfg:moon/surface/basalt_delta",
+			"tfg:moon/surface/loose_basalt_rocks",
 			"tfg:moon/surface/warped_sprouts_patch"
 		],
 		[
-			"tfg:moon/hardening"
+			"tfg:moon/hardening" 
 		]
 	],
 	"has_precipitation": false,
@@ -56,39 +55,32 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [
-			{
-				"type": "minecraft:rabbit",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 20
-			}
-		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 3,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 3,
+				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 50
+				"weight": 20
 			},
 			{
 				"type": "minecraft:endermite",
-				"maxCount": 3,
-				"minCount": 1,
-				"weight": 20
+				"maxCount": 4,
+				"minCount": 2,
+				"weight": 10
 			},
 			{
 				"type": "species:limpet",
@@ -97,10 +89,10 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:windswept_hills_enderman",
+				"type": "endermanoverhaul:soulsand_valley_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 100
+				"weight": 10
 			}
 		],
 		"underground_water_creature": [],

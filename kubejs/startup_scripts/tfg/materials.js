@@ -46,12 +46,12 @@ const registerTFGMaterials = (event) => {
 		.components('6x aluminium', '2x stainless_steel', '1x red_steel')
 		.color(0x333e47)
 		.iconSet('metallic')
-		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_DENSE)
+		.flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_DENSE)
 		.blastTemp(1760, 'low', 120, 1200)
 
-	event.create('vitrified_amiante')
-        .dust()
+	event.create('vitrified_asbestos')
+        	.dust()
 		.fluid()
 		.iconSet('glass')
-        .color(0xcccccc)
+        	.color(0xcccccc)
 }

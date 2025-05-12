@@ -39,9 +39,14 @@ global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 
 global.MOON_BIOMES = [
 	'tfg:moon/lunar_plains',
-	'tfg:moon/lunar_basalt_maria',
-	'tfg:moon/lunar_gabbro_uplift',
-	'tfg:moon/lunar_diorite_delta'
+	'tfg:moon/lunar_asurine_dense',
+	'tfg:moon/lunar_asurine_sparse',
+	'tfg:moon/lunar_chorus_dense',
+	'tfg:moon/lunar_chorus_sparse',
+	'tfg:moon/lunar_corals_dense',
+	'tfg:moon/lunar_corals_sparse',
+	'tfg:moon/lunar_lights_dense',
+	'tfg:moon/lunar_lights_sparse'
 ]
 
 global.MARS_BIOMES = [

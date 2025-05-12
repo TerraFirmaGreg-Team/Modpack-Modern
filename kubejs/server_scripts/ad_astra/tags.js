@@ -36,10 +36,11 @@ const registerAdAstraItemTags = (event) => {
 	event.add('forge:cobblestone', 'ad_astra:mercury_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:glacio_cobblestone')
 
-	// Isolation Tier 1
 
-	event.add('forge:isolation_t1', 'gtceu:borosilicate_glass_dust')
-	event.add('forge:isolation_t1', 'gtceu:vitrified_amiante_dust')
+	// Insulation Tier 1
+
+	event.add('forge:insulation_t1', 'gtceu:borosilicate_glass_dust')
+	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
 }
 
 const registerAdAstraBlockTags = (event) => {
@@ -90,6 +91,7 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/dacite')
 	
 	event.add('ad_astra:moon_stone_replaceables', 'ad_astra:moon_sand')
+	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_moon_stone')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:sand/white')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:sand/black')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/gravel/diorite')

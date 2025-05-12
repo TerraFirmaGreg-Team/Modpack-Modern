@@ -42,30 +42,18 @@
 		[],
 		[],
 		[
-			"tfg:moon/surface/warped_roots_patch",
+			"tfg:moon/surface/gabbro_rock_pile",
+			"tfg:moon/surface/loose_gabbro_rocks",
 			"tfg:moon/surface/warped_sprouts_patch",
-			"tfg:moon/surface/moon_rock_pile",
-			"tfg:moon/surface/loose_moon_stone_rocks"
+			"tfg:moon/surface/warped_roots_patch",
+			"tfg:moon/surface/chorus_plant_rare"
 		],
 		[
 			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {
-		"minecraft:enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"endermanoverhaul:windswept_hills_enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"endermanoverhaul:soulsand_valley_enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		}
-	},
+	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
@@ -74,34 +62,28 @@
 				"type": "minecraft:rabbit",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 80
+				"weight": 10
 			}
 		],
 		"misc": [],
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
 			},
 			{
-				"type": "species:limpet",
-				"maxCount": 2,
-				"minCount": 1,
+				"type": "ad_astra:corrupted_lunarian",
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "minecraft:endermite",
@@ -110,21 +92,21 @@
 				"weight": 10
 			},
 			{
+				"type": "species:limpet",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
 				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "endermanoverhaul:soulsand_valley_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 5
+				"weight": 50
 			}
 		],
 		"underground_water_creature": [],
 		"water_ambient": [],
 		"water_creature": []
 	},
-	"temperature": -0.5
+	"temperature": 0.7
 }
