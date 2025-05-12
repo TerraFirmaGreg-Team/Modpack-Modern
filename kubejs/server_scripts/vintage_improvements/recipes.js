@@ -84,7 +84,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#forge:frames/bronze',
 		B: '#tfg:hardwood',
-		C: '#forge:double_ingots/iron',
+		C: '#forge:double_iron_ingots',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
@@ -97,7 +97,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#forge:frames/black_bronze',
 		B: '#tfg:hardwood',
-		C: '#forge:double_ingots/iron',
+		C: '#forge:double_iron_ingots',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'
@@ -110,7 +110,7 @@ function registerVintageImprovementsRecipes(event) {
 	], {
 		A: '#forge:frames/bismuth_bronze',
 		B: '#tfg:hardwood',
-		C: '#forge:double_ingots/iron',
+		C: '#forge:double_iron_ingots',
 		D: 'greate:andesite_alloy_cogwheel',
 		E: '#minecraft:planks',
 		F: '#forge:tools/hammers'

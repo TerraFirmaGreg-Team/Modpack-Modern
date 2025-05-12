@@ -1037,7 +1037,17 @@ const registerCreateRecipes = (event) => {
 		B: 'tfc:metal/boots/copper',
 		C: '#forge:ingots/iron',
 		D: 'firmaciv:large_waterproof_hide'
-	}).id('tfg:create/shaped/copper_diving_boots')
+	}).id('tfg:create/shaped/copper_diving_boots_cast_iron')
+
+	event.shaped('create:copper_diving_boots', [
+		'ABA',
+		'CDC'
+	], {
+		A: '#forge:screws/copper',
+		B: 'tfc:metal/boots/copper',
+		C: '#forge:ingots/wrought_iron',
+		D: 'firmaciv:large_waterproof_hide'
+	}).id('tfg:create/shaped/copper_diving_boots_wrought_iron')
 
 	// Netherite backtank
 	event.shaped('create:netherite_backtank', [
