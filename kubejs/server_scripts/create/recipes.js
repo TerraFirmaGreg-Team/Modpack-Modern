@@ -1408,12 +1408,13 @@ const registerCreateRecipes = (event) => {
 	}).id('create:shaped/water_wheel')
 
 	event.shaped('create:large_water_wheel', [
-		'AAA',
+		'CAC',
 		'ABA',
-		'AAA'
+		'CAC'
 	], {
 		A: 'gtceu:treated_wood_planks',
-		B: 'create:water_wheel'
+		B: 'create:water_wheel',
+		C: 'gtceu:steel_rod'
 	}).id('create:shaped/large_water_wheel')
 
 	// #endregion
