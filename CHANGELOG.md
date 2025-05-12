@@ -16,6 +16,7 @@
 - Fixed assembler clay recipes so they output the correct amount (Pyritie)
 - Quest fixes/tweaks (Pyritie)
 - Added aluminium, stainless steel, and titanium millstones (Pyritie)
+- Fixed fishing nets behavior (Redeix)
 
 ## [0.9.5] - 08.05.2025
 ### Changes
