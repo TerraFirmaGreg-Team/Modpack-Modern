@@ -17,6 +17,7 @@
 - Quest fixes/tweaks (Pyritie)
 - Added aluminium, stainless steel, and titanium millstones (Pyritie)
 - Fixed fishing nets behavior (Redeix)
+- Added item to summon armor stands with arms. (Redeix)
 
 ## [0.9.5] - 08.05.2025
 ### Changes

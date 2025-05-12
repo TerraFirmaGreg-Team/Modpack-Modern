@@ -117,6 +117,20 @@ BlockEvents.rightClicked(event => {
     if (block.id != 'tfg:decorative_vase') {return}{
     server.runCommandSilent(`playsound tfc:block.quern.drag block ${username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
 }});
+//#endregion
+
+BlockEvents.rightClicked(event=>{
+    let item = event.item
+    if(item.id != 'tfg:armor_stand_arms') return
+    let mob = event.block[event.facing].createEntity('minecraft:armor_stand')
+    mob.mergeNbt('{ShowArms:1b}')
+    mob.setPos(mob.x + 0.5, mob.y, mob.z + 0.5)
+    mob.setYaw(event.player.yaw + 180)
+    mob.spawn()
+    if (event.player.isCreative() == false){
+        item.shrink(1)
+    }
+})
 
 /**
  *
@@ -131,7 +145,6 @@ function getTFGPersistentDataRoot(player)
     }
     return player.persistentData.getCompound("tfg:custom_data")
 }
-//#endregion
 
 //#region Fishing Net
     const fish = [
