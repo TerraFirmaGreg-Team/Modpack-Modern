@@ -3384,27 +3384,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["150B7C5CD152E1BA"]
-			description: ["{quests.tfg_tips.fishing_net.desc}"]
-			id: "75C6BF1C9405B4BF"
-			subtitle: "{quests.tfg_tips.fishing_net.subtitle}"
-			tasks: [{
-				id: "37DD99D32072ADBF"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/fishing_nets)"
-					}
-				}
-				title: "{quests.tfg_tips.fishing_net.task}"
-				type: "item"
-			}]
-			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -1.5d
-			y: 6.0d
-		}
-		{
 			dependencies: ["5C01BDDA66249D7B"]
 			description: ["{quests.tfg_tips.sleeping_bags.desc}"]
 			id: "0EEB7293B5CA65D8"
