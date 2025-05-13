@@ -23,7 +23,6 @@
 		[],
 		[],
 		[
-			"tfg:moon/blob/asurine",
 			"tfg:earth/geode/amethyst",
 			"tfg:earth/geode/barite",
 			"tfg:earth/geode/calcite",
@@ -42,14 +41,12 @@
 		[],
 		[],
 		[
-			"tfg:moon/surface/basalt_delta",
-			"tfg:moon/surface/warped_roots_patch",
-			"tfg:moon/surface/warped_sprouts_patch",
-			"tfg:moon/surface/warped_vine",
-			"tfg:moon/surface/loose_basalt_rocks"
+			"tfg:moon/surface/dead_coral",
+			"tfg:moon/surface/dead_coral_fans",
+			"tfg:moon/surface/loose_diorite_rocks"
 		],
 		[
-			"tfg:moon/hardening" 
+			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,
@@ -57,32 +54,39 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "minecraft:rabbit",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 20
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 4,
-				"minCount": 2,
+				"maxCount": 3,
+				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 1,
+				"maxCount": 3,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 50
 			},
 			{
 				"type": "minecraft:endermite",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 10
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 20
 			},
 			{
 				"type": "species:limpet",
@@ -91,10 +95,10 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

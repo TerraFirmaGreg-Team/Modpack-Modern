@@ -7,7 +7,13 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:powder/wood_ash"
+					"name": "tfc:powder/wood_ash",
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.9
+						}
+					]
 				}
 			],
 			"conditions": [
@@ -26,7 +32,7 @@
 					"conditions": [
 						{
 							"condition": "minecraft:random_chance",
-							"chance": 0.5
+							"chance": 0.1
 						}
 					]
 				}

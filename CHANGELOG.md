@@ -1,7 +1,23 @@
 # Changelog
-
 ## [Unreleased]
 ### Changes
+
+## [0.9.5] - 08.05.2025
+### Changes
+- Disabled pollution
+- Fixed a progression softlock involving rubber (AirRice)
+- Fixed hide duping recipes. (Redeix)
+- Added quest book and field guide instances for fishing nets. (Redeix)
+- Fixed rebar support recipe crash. (Redeix)
+- Fixed red steel flask dupe. (Redeix)
+- Fixed red alloy recipe inconsistency. (Redeix)
+- Fixed blue steel backpack block lang. (Redeix)
+- Added max vessel fluid warning to small vessels. (Redeix)
+- Improved quest proofreading (algol_rithm)
+- Fixed some incorrect quest dependencies
+- Added a workaround for dyeing wattle and daub (Pyritie)
+- Fixed ice shaving duping recipe (Pyritie)
+- Added clay block <-> clay ball crafting table recipes (Pyritie)
 
 ## [0.9.4] - 06.05.2025
 ### Changes

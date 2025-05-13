@@ -744,7 +744,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:crimson_roots', 
     //'minecraft:nether_brick', 
     'minecraft:nether_wart', 
-    'minecraft:twisting_vines', 
     'minecraft:warped_fungus',
     'minecraft:respawn_anchor',
     'minecraft:ghast_tear',

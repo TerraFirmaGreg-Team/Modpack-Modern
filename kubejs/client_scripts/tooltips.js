@@ -81,9 +81,13 @@ const registerTooltips = (event) =>
 	const stone_types = global.TFC_STONE_TYPES.concat(other_stone)
 
 	stone_types.forEach(stone => {
-
 		event.addAdvanced([`tfg:${stone}_support`], (item, advanced, text) => {
 			text.add(1, text.of('9 x 5 x 9'))
 		})
+	})
+
+	// Vessels
+	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
+		text.add(1, text.of('§cMax: 3024mB'))
 	})
 }
