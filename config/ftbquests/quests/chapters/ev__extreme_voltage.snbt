@@ -520,6 +520,7 @@
 				"478B0D55369C0F7F"
 				"6B08799BCFD01D3D"
 				"30A6EDDF25A5E5F8"
+				"173A04F328414A36"
 			]
 			description: [
 				"&aRuthenium-tungsten-molybdenum (RTM) Alloy Coils&r raise the Heat Capacity to a scorching &d4,500K&r."
@@ -541,10 +542,7 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"2D01E80DE837F6A6"
-				"7FA0ACB7F161F378"
-			]
+			dependencies: ["7FA0ACB7F161F378"]
 			description: [
 				"The &3Diode&r (the block, not the component) accepts energy inputs from 5 sides, but only outputs through a single side."
 				""
@@ -1600,6 +1598,16 @@
 			}]
 			x: 7.875d
 			y: 6.75d
+		}
+		{
+			id: "173A04F328414A36"
+			tasks: [{
+				id: "66828E992294F8BD"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.5d
 		}
 	]
 	subtitle: ["Improve your infrastructure and parallelise your setups"]
