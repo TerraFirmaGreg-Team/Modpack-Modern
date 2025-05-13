@@ -21,7 +21,7 @@
 	},
 	"features": [
 		[],
-		[],
+		"#tfg:moon_craters",
 		[
 			"tfg:moon/asurine/blob_dense",
 			"tfg:earth/geode/amethyst",
@@ -43,8 +43,8 @@
 		"#tfg:moon_small_rock_features",
 		[
 			"tfg:moon/surface/warped_sprouts_patch",
-			"tfg:moon/asurine/asurine_spikes",
-			"tfg:moon/asurine/asurine"
+			"tfg:moon/asurine/asurine",
+			"tfg:moon/asurine/asurine_spikes"
 		],
 		[
 			"tfg:moon/hardening"

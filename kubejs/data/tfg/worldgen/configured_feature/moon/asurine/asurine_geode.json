@@ -84,9 +84,9 @@
 			"middle_layer": 3.2,
 			"outer_layer": 4.5
 		},
-		"max_gen_offset": 24,
-		"min_gen_offset": -24,
-		"noise_multiplier": 0.05,
+		"max_gen_offset": 36,
+		"min_gen_offset": -36,
+		"noise_multiplier": 0.1,
 		"outer_wall_distance": {
 			"type": "minecraft:uniform",
 			"value": {

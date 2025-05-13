@@ -1,0 +1,18 @@
+{
+	"feature": "tfg:moon/crater/medium",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:heightmap",
+			"heightmap": "WORLD_SURFACE_WG"
+		},
+		{
+			"type": "minecraft:random_offset",
+			"xz_spread": 0,
+			"y_spread": 4
+		}
+	]
+}
