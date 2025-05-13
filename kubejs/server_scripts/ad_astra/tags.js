@@ -206,12 +206,6 @@ const registerAdAstraEntityTypeTags = (event) => {
 // All space veins go in tfg/tags.js
 const registerAdAstraPlacedFeatures = (event) => {
 	
-	event.add('tfg:moon_craters', 'tfg:moon/crater/extra_small')
-	event.add('tfg:moon_craters', 'tfg:moon/crater/small')
-	event.add('tfg:moon_craters', 'tfg:moon/crater/medium')
-	event.add('tfg:moon_craters', 'tfg:moon/crater/large')
-	event.add('tfg:moon_craters', 'tfg:moon/crater/extra_large')
-
 	global.MOON_STONE_TYPES.forEach(stone => {
 		// only in the sparse ones
 		event.add('tfg:moon_large_rock_features', `tfg:moon/surface/delta/${stone}`)
