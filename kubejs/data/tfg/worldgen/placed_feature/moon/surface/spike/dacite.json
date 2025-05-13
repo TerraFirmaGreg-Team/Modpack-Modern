@@ -33,6 +33,9 @@
 			}
 		},
 		{
+			"type": "tfc:underground"
+		},
+		{
 			"type": "minecraft:block_predicate_filter",
 			"predicate": {
 				"type": "minecraft:matching_blocks",
