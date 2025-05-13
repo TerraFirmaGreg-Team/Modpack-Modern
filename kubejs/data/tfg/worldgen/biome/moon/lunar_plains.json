@@ -40,17 +40,13 @@
 		[],
 		"#tfg:moon_veins",
 		[],
-		[],
+		"#tfg:moon_small_rock_features",
 		[
-			"tfg:moon/surface/basalt_delta",
-			"tfg:moon/surface/moon_rock_pile",
 			"tfg:moon/surface/dead_coral_fans",
-			"tfg:moon/surface/loose_moon_stone_rocks",
-			"tfg:moon/surface/loose_basalt_rocks",
 			"tfg:moon/surface/warped_sprouts_patch"
 		],
 		[
-			"tfg:moon/hardening" 
+			"tfg:moon/hardening"
 		]
 	],
 	"has_precipitation": false,

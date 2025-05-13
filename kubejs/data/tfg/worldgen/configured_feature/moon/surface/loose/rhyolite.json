@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:simple_block",
+	"config": {
+		"to_place": {
+			"type": "minecraft:randomized_int_state_provider",
+			"property": "count",
+			"values": {
+				"type": "minecraft:uniform",
+				"value": {
+					"min_inclusive": 1,
+					"max_inclusive": 3
+				}
+			},
+			"source": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "tfc:rock/loose/rhyolite"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:delta_feature",
+	"config": {
+		"contents": {
+			"Name": "tfc:rock/cobble/dacite_slab"
+		},
+		"rim": {
+			"Name": "tfc:rock/hardened/dacite"
+		},
+		"rim_size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 3,
+				"min_inclusive": 1
+			}
+		},
+		"size": {
+			"type": "minecraft:uniform",
+			"value": {
+				"max_inclusive": 7,
+				"min_inclusive": 3
+			}
+		}
+	}
+}

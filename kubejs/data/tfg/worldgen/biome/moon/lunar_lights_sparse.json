@@ -39,11 +39,9 @@
 		],
 		[],
 		"#tfg:moon_veins",
-		[],
-		[],
+		"#tfg:moon_large_rock_features",
+		"#tfg:moon_small_rock_features",
 		[
-			"tfg:moon/surface/moon_rock_pile",
-			"tfg:moon/surface/loose_moon_stone_rocks",
 			"tfg:moon/surface/warped_sprouts_patch",
 			"tfg:moon/surface/warped_roots_patch"
 		],

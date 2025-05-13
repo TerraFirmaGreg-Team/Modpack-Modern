@@ -37,6 +37,18 @@ global.EXTRATERRESTRIAL_HARDENED_ROCKS = [
 	'tfg:rock/hardened_glacio_stone',
 ]
 
+global.MOON_STONE_TYPES = [
+	"andesite",
+	"basalt",
+	"dacite",
+	"diorite",
+	"gabbro",
+	"glacio_stone",
+	"moon_deepslate",
+	"moon_stone",
+	"rhyolite"
+]
+
 global.MOON_BIOMES = [
 	'tfg:moon/lunar_plains',
 	'tfg:moon/lunar_asurine_dense',

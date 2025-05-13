@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:simple_random_selector",
+	"config": {
+		"features": [
+			{
+				"feature": {
+					"type": "tfg:dead_coral_claw",
+					"config": {}
+				},
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "tfg:dead_coral_mushroom",
+					"config": {}
+				},
+				"placement": []
+			},
+			{
+				"feature": {
+					"type": "tfg:dead_coral_tree",
+					"config": {}
+				},
+				"placement": []
+			}
+		]
+	}
+}
