@@ -1600,14 +1600,15 @@
 			y: 6.75d
 		}
 		{
+			dependencies: ["478B0D55369C0F7F"]
 			id: "173A04F328414A36"
 			tasks: [{
 				id: "66828E992294F8BD"
 				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 3.5d
+			x: 6.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Improve your infrastructure and parallelise your setups"]

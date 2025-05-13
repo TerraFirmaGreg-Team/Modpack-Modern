@@ -1345,6 +1345,7 @@
 			id: "6752CC523D38A214"
 			subtitle: "Without it impossible to launch"
 			tasks: [{
+				count: 2L
 				id: "4451763FB0D75C2D"
 				item: "ad_astra:launch_pad"
 				type: "item"
