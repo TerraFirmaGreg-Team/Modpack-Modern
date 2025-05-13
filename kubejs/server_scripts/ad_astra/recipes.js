@@ -28,6 +28,7 @@ const registerAdAstraRecipes = (event) => {
 	.duration(1200)
 	.EUt(480)
 
+
 	event.recipes.gtceu.pyrolyse_oven('gtceu:pyrolose_vitrified_asbestos_dust')
 	.inputFluids(Fluid.of('gtceu:nitrogen', 100))
 	.itemInputs('gtceu:asbestos_dust')
@@ -81,7 +82,8 @@ const registerAdAstraRecipes = (event) => {
 			'4x ad_astra:rocket_fin',
 			'1x ad_astra:steel_engine',
 			'1x ad_astra:rocket_nose_cone',
-		    	'16x #forge:insulation_t1')
+		  '16x #forge:insulation_t1'
+    )
 		.inputFluids(Fluid.of('gtceu:silicon', 576))
 		.itemOutputs('ad_astra:tier_1_rocket')
 		.duration(1200)
