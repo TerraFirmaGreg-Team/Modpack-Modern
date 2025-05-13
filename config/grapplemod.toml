@@ -1,0 +1,216 @@
+[options.grapplinghook.custom.rope.maxlen]
+default_value = 30.0
+enabled = 0
+max = 60.0
+max_upgraded = 200.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.rope.phaserope]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.rope.sticky]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.hookthrower.hookgravity]
+default_value = 1.0
+enabled = 0
+max = 100.0
+max_upgraded = 100.0
+min = 1.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.hookthrower.throwspeed]
+default_value = 2.0
+enabled = 0
+max = 5.0
+max_upgraded = 20.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.hookthrower.reelin]
+default_value = true
+enabled = 0
+[options.grapplinghook.custom.hookthrower.verticalthrowangle]
+default_value = 0.0
+enabled = 0
+max = 45.0
+max_upgraded = 90.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.hookthrower.sneakingverticalthrowangle]
+default_value = 0.0
+enabled = 0
+max = 45.0
+max_upgraded = 90.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.hookthrower.detachonkeyrelease]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.motor.motor]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.motor.motormaxspeed]
+default_value = 4.0
+enabled = 0
+max = 4.0
+max_upgraded = 10.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.motor.motoracceleration]
+default_value = 0.2
+enabled = 0
+max = 0.2
+max_upgraded = 1.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.motor.motorwhencrouching]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.motor.motorwhennotcrouching]
+default_value = true
+enabled = 0
+[options.grapplinghook.custom.motor.smartmotor]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.motor.motordampener]
+default_value = false
+enabled = 1
+[options.grapplinghook.custom.motor.pullbackwards]
+default_value = true
+enabled = 0
+[options.grapplinghook.custom.swing.playermovementmult]
+default_value = 1.0
+enabled = 0
+max = 2.0
+max_upgraded = 5.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.enderstaff.enderstaff]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.forcefield.repel]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.forcefield.repelforce]
+default_value = 1.0
+enabled = 0
+max = 1.0
+max_upgraded = 5.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.magnet.attract]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.magnet.attractradius]
+default_value = 3.0
+enabled = 0
+max = 3.0
+max_upgraded = 10.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.doublehook.doublehook]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.doublehook.smartdoublemotor]
+default_value = true
+enabled = 0
+[options.grapplinghook.custom.doublehook.angle]
+default_value = 20.0
+enabled = 0
+max = 45.0
+max_upgraded = 90.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.doublehook.sneakingangle]
+default_value = 10.0
+enabled = 0
+max = 45.0
+max_upgraded = 90.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.doublehook.oneropepull]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.rocket.rocketenabled]
+default_value = false
+enabled = 0
+[options.grapplinghook.custom.rocket.rocket_force]
+default_value = 1.0
+enabled = 0
+max = 1.0
+max_upgraded = 5.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.rocket.rocket_active_time]
+default_value = 0.5
+enabled = 0
+max = 0.5
+max_upgraded = 20.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.custom.rocket.rocket_refuel_ratio]
+default_value = 15.0
+enabled = 0
+max = 30.0
+max_upgraded = 30.0
+min = 15.0
+min_upgraded = 1.0
+[options.grapplinghook.custom.rocket.rocket_vertical_angle]
+default_value = 0.0
+enabled = 0
+max = 90.0
+max_upgraded = 90.0
+min = 0.0
+min_upgraded = 0.0
+[options.grapplinghook.blocks]
+grapplingBlocks = "any"
+grapplingNonBlocks = "none"
+grappleBreakBlocks = "none"
+[options.grapplinghook.other]
+hookaffectsentities = true
+rope_snap_buffer = 5.0
+default_durability = 500
+rope_jump_power = 1.0
+rope_jump_at_angle = false
+rope_jump_cooldown_s = 0.0
+climb_speed = 0.3
+[options.longfallboots]
+longfallbootsrecipe = true
+[options.enderstaff]
+ender_staff_strength = 1.5
+ender_staff_recharge = 100
+[options.enchantments.wallrun]
+wall_jump_up = 0.7
+wall_jump_side = 0.4
+max_wallrun_time = 3.0
+wallrun_speed = 0.1
+wallrun_max_speed = 0.7
+wallrun_drag = 0.01
+wallrun_min_speed = 0.0
+enchant_rarity_wallrun = 0
+[options.enchantments.doublejump]
+doublejumpforce = 0.8
+doublejump_relative_to_falling = false
+dont_doublejump_if_falling_faster_than = 9.9999999E7
+enchant_rarity_double_jump = 0
+[options.enchantments.slide]
+slidingjumpforce = 0.6
+sliding_friction = 0.006666666828095913
+sliding_min_speed = 0.15
+sliding_end_min_speed = 0.01
+enchant_rarity_sliding = 0
+[options.other]
+override_allowflight = true
+airstrafe_max_speed = 0.7
+airstrafe_acceleration = 0.015
+dont_override_movement_in_air = false
+[clientOptions.camera]
+wallrun_camera_tilt_degrees = 10.0
+wallrun_camera_animation_s = 0.5
+[clientOptions.sounds]
+wallrun_sound_effect_time_s = 0.35
+wallrun_sound_volume = 1.0
+doublejump_sound_volume = 1.0
+slide_sound_volume = 1.0
+wallrunjump_sound_volume = 1.0
+rocket_sound_volume = 1.0
+enderstaff_sound_volume = 1.0

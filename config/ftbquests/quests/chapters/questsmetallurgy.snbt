@@ -275,6 +275,7 @@
 				"00B22730B33CB4DB"
 			]
 			description: ["{quests.metal_age.blast_furnace.desc}"]
+			icon: "tfc:blast_furnace"
 			id: "5996A3A0D475B8A6"
 			size: 2.0d
 			subtitle: "{quests.metal_age.blast_furnace.subtitle}"
@@ -413,31 +414,20 @@
 			shape: "octagon"
 			size: 3.0d
 			subtitle: "{quests.metal_age.kaolin_clay.subtitle}"
-			tasks: [
-				{
-					id: "673D38EB62FFD65F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			tasks: [{
+				id: "673D38EB62FFD65F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:kaolin_clay"
 					}
-					type: "item"
+					id: "tfc:kaolin_clay"
 				}
-				{
-					icon: "tfc:red_kaolin_clay"
-					id: "576163D694ECF915"
-					observe_type: 1
-					timer: 0L
-					title: "{quests.tasktype.lookat} #tfc:kaolin_clay"
-					to_observe: "#tfc:kaolin_clay"
-					type: "observation"
-				}
-			]
+				type: "item"
+			}]
 			title: "{quests.metal_age.kaolin_clay.title}"
 			x: 13.5d
 			y: -36.0d
@@ -510,31 +500,16 @@
 		{
 			dependencies: ["2C76EE197C14B0DC"]
 			description: ["{quests.metal_age.crucible.desc}"]
+			icon: "tfc:crucible"
 			id: "12CB3B9ADC586521"
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "{quests.metal_age.crucible.subtitle}"
-			tasks: [
-				{
-					id: "768BF97F77EBFD73"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/unfired_crucible"
-					}
-					type: "item"
-				}
-				{
-					id: "5F344E4EF2AD2CE3"
-					item: "tfc:crucible"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5F344E4EF2AD2CE3"
+				item: "tfc:crucible"
+				type: "item"
+			}]
 			title: "{quests.metal_age.crucible.title}"
 			x: 20.5d
 			y: -30.0d
@@ -615,6 +590,7 @@
 			dependencies: ["2C76EE197C14B0DC"]
 			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.fire_bricks.desc}"]
+			icon: "tfc:fire_bricks"
 			id: "7CD2922D9F6FA6C5"
 			shape: "octagon"
 			size: 2.0d
@@ -703,6 +679,7 @@
 				"5996A3A0D475B8A6"
 			]
 			description: ["{quests.metal_age.fully_stacked_blast_furnace.desc}"]
+			icon: "tfcbetterbf:insulated_fire_bricks"
 			id: "0DF072EF25B2628D"
 			optional: true
 			shape: "heart"
@@ -892,11 +869,6 @@
 			y: -33.5d
 		}
 		{
-			dependencies: [
-				"2DB82986FE176CD7"
-				"061116CF508D54F6"
-			]
-			dependency_requirement: "one_completed"
 			description: ["{quests.metal_age.blast_furance_fuel.desc}"]
 			hide_dependency_lines: true
 			id: "00B22730B33CB4DB"
@@ -998,22 +970,7 @@
 			subtitle: "{quests.metal_age.weak_steel.subtitle}"
 			tasks: [
 				{
-					count: 2L
-					id: "3BEC54E69E2BDB05"
-					item: {
-						Count: 2
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:steel_ingot"
-					}
-					type: "item"
-				}
-				{
-					id: "531F312BC55FD4E2"
+					id: "543388DB123E7328"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -1027,7 +984,22 @@
 					type: "item"
 				}
 				{
-					id: "538C8C5AB2F8D282"
+					count: 2L
+					id: "7F829BA244BC77D5"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:steel_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "3271DD5653C52CAB"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -1052,7 +1024,7 @@
 			subtitle: "{quests.metal_age.highcarb_red_steel.subtitle}"
 			tasks: [
 				{
-					id: "21F560D36B3B4DCD"
+					id: "3ED614851DD3DE35"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -1066,7 +1038,7 @@
 					type: "item"
 				}
 				{
-					id: "75019ACF15E50D54"
+					id: "2A068958F7451FFB"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -1091,21 +1063,7 @@
 			subtitle: "{quests.metal_age.weak_red_steel.subtitle}"
 			tasks: [
 				{
-					id: "0843FBE28514A29F"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:rose_gold_ingot"
-					}
-					type: "item"
-				}
-				{
-					id: "43C81DD8CF335763"
+					id: "2A22B3EA8DC577CE"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -1120,7 +1078,7 @@
 				}
 				{
 					count: 2L
-					id: "5D133B38BBBBB102"
+					id: "2F0648CE3D1723DF"
 					item: {
 						Count: 2
 						ForgeCaps: {
@@ -1134,8 +1092,22 @@
 					type: "item"
 				}
 				{
+					id: "47F346E1C0F41655"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:rose_gold_ingot"
+					}
+					type: "item"
+				}
+				{
 					count: 4L
-					id: "3E57E946103AD6C3"
+					id: "21434FAAA69D5BE0"
 					item: {
 						Count: 4
 						ForgeCaps: {
@@ -1160,36 +1132,8 @@
 			subtitle: "{quests.metal_age.weak_blu_steel.subtitle}"
 			tasks: [
 				{
-					id: "75B02DD1C85701E2"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:sterling_silver_ingot"
-					}
-					type: "item"
-				}
-				{
-					id: "6C8633B40E4AFA08"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:bismuth_bronze_ingot"
-					}
-					type: "item"
-				}
-				{
 					count: 2L
-					id: "4F5FD0F3F99A8FAB"
+					id: "5331A323780B4B11"
 					item: {
 						Count: 2
 						ForgeCaps: {
@@ -1204,7 +1148,7 @@
 				}
 				{
 					count: 4L
-					id: "0D755D99AD9C3DA0"
+					id: "2809FD951B82C54F"
 					item: {
 						Count: 4
 						ForgeCaps: {
@@ -1214,6 +1158,34 @@
 							}
 						}
 						id: "tfc:metal/ingot/black_steel"
+					}
+					type: "item"
+				}
+				{
+					id: "401EC1A9FBC759B8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:bismuth_bronze_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "7350ECE723ABE8F4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:sterling_silver_ingot"
 					}
 					type: "item"
 				}
@@ -1229,7 +1201,7 @@
 			subtitle: "{quests.metal_age.highcarb_blu_steel.subtitle}"
 			tasks: [
 				{
-					id: "3E67A3CFA3FE7F32"
+					id: "0019B970BCA5A917"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -1243,9 +1215,9 @@
 					type: "item"
 				}
 				{
-					id: "4774AFBF9D811C3D"
+					id: "2755C292E4E19530"
 					item: {
-						Count: 4
+						Count: 1
 						ForgeCaps: {
 							"tfc:item_heat": {
 								heat: 0.0f

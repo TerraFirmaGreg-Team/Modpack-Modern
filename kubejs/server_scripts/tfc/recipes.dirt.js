@@ -131,4 +131,25 @@ function registerTFCDirtRecipes(event) {
 	})
 
 	//#endregion
+
+	// #region Wattle and daub
+	// TODO: Workaround for not being able to stain wattle and daub with normal dyes
+	// See https://github.com/TerraFirmaGreg-Team/Modpack-Modern/issues/910
+
+	event.shaped('tfc:wattle/unstained', [
+		'AB',
+		'CC'
+	], {
+		A: 'tfc:wattle',
+		B: 'tfc:daub',
+		C: '#forge:rods/wood'
+	})
+	.id('tfg:shapeless/unstained_wattle')
+	
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.shapeless(`tfc:wattle/${color}`, ['tfc:wattle/unstained', `#forge:dyes/${color}`])
+			.id(`tfg:shapeless/wattle/${color}`)
+	})
+
+	// #endregion
 }

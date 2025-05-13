@@ -259,57 +259,69 @@ const registerTFCRecipes = (event) => {
 		'prepared',
 		'sheepskin'
 	];
-	
-	const sizes = [
-		'small',
-		'medium',
-		'large'
-	];
-	
-	stages.forEach((stage) => {
-		sizes.forEach((size, index) => {
-			// Find the next larger size.
-			const nextLarger = sizes[index + 1];
-			
-			// If a larger size exists, sew the hides together.
-			if (nextLarger) {
-				event.recipes.tfc.damage_inputs_shapeless_crafting(
-					event.shapeless(`1x tfc:${nextLarger}_${stage}_hide`, [
-						`2x tfc:${size}_${stage}_hide`,
-						'#tfc:sewing_needles',
-						'#forge:string',
-						'tfc:glue'
-					]).id(`tfg:tfc/${size}_to_${nextLarger}_${stage}_hide`)
-				)
 
-				event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${size}_to_${nextLarger}_${stage}_hide`)
-					.inputFluids(Fluid.of('gtceu:glue', 25))
-					.itemOutputs(`1x tfc:${nextLarger}_${stage}_hide`)
-					.itemInputs(`2x tfc:${size}_${stage}_hide`)
-					.duration(60)
-					.circuit(7)
-					.EUt(GTValues.VA[GTValues.ULV])
-			}
+	stages.forEach(stage => {
+		//Combining
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`1x tfc:medium_${stage}_hide`, [
+				`2x tfc:small_${stage}_hide`,
+				'#tfc:sewing_needles',
+				'#forge:string',
+				'tfc:glue'
+			]).id(`tfg:tfc/small_to_medium_${stage}_hide`)
+		)
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`1x tfc:large_${stage}_hide`, [
+				`3x tfc:small_${stage}_hide`,
+				'#tfc:sewing_needles',
+				'#forge:string',
+				'tfc:glue'
+			]).id(`tfg:tfc/small_to_large_${stage}_hide`)
+		)
 
-			// Find the next smaller size.
-			const nextSmaller = sizes[index - 1];
-			
-			// If a smaller size exists, cut the hide.
-			if (nextSmaller) {
-				event.recipes.tfc.damage_inputs_shapeless_crafting(
-					event.shapeless(`2x tfc:${nextSmaller}_${stage}_hide`, [
-						`1x tfc:${size}_${stage}_hide`,
-						'#forge:shears'
-					]).id(`tfg:tfc/${size}_to_${nextSmaller}_${stage}_hide`)
-				)
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/small_to_medium_${stage}_hide`)
+			.inputFluids(Fluid.of('gtceu:glue', 25))
+			.itemOutputs(`1x tfc:medium_${stage}_hide`)
+			.itemInputs(`2x tfc:small_${stage}_hide`)
+			.duration(60)
+			.circuit(7)
+			.EUt(GTValues.VA[GTValues.ULV])
 
-				event.recipes.gtceu.assembler(`tfg:gtceu/assembler/${size}_to_${nextSmaller}_${stage}_hide`)
-					.itemOutputs(`2x tfc:${nextSmaller}_${stage}_hide`)
-					.itemInputs(`1x tfc:${size}_${stage}_hide`)
-					.duration(60)
-					.circuit(4)
-					.EUt(GTValues.VA[GTValues.ULV])
-			}
-		});
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/small_to_large_${stage}_hide`)
+			.inputFluids(Fluid.of('gtceu:glue', 25))
+			.itemOutputs(`1x tfc:large_${stage}_hide`)
+			.itemInputs(`3x tfc:small_${stage}_hide`)
+			.duration(60)
+			.circuit(9)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		//Cutting
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`2x tfc:small_${stage}_hide`, [
+				`1x tfc:medium_${stage}_hide`,
+				'#forge:shears'
+			]).id(`tfg:tfc/medium_to_small_${stage}_hide`)
+		)
+
+		event.recipes.tfc.damage_inputs_shapeless_crafting(
+			event.shapeless(`3x tfc:small_${stage}_hide`, [
+				`1x tfc:large_${stage}_hide`,
+				'#forge:shears'
+			]).id(`tfg:tfc/large_to_small_${stage}_hide`)
+		)
+
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/medium_to_small_${stage}_hide`)
+			.itemOutputs(`2x tfc:small_${stage}_hide`)
+			.itemInputs(`1x tfc:medium_${stage}_hide`)
+			.duration(60)
+			.circuit(4)
+			.EUt(GTValues.VA[GTValues.ULV])
+
+		event.recipes.gtceu.assembler(`tfg:gtceu/assembler/large_to_small_${stage}_hide`)
+			.itemOutputs(`3x tfc:small_${stage}_hide`)
+			.itemInputs(`1x tfc:large_${stage}_hide`)
+			.duration(60)
+			.circuit(6)
+			.EUt(GTValues.VA[GTValues.ULV])
 	});
 }

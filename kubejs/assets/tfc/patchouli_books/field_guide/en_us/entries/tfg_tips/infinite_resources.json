@@ -13,7 +13,7 @@
 			"type": "patchouli:spotlight",
 			"title": "Fluids",
 			"item": "create:hose_pulley",
-			"text": "$(thing)Water$(), $(thing)Sea Water$(), and $(thing)Lava$() are all renewable through a $(item)Hose Pulley$() and a single source block of fluid. You can pull out of the hose pulley with a $(l:mechanics/pumps)Mechanical Pump$()."
+			"text": "$(thing)Water$(), $(thing)Sea Water$(), and $(thing)Lava$() are all renewable through a $(item)Hose Pulley$() and 2000 source blocks of fluid. You can pull out of the hose pulley with a $(l:mechanics/pumps)Mechanical Pump$()."
 		},
 		{
 			"type": "patchouli:text",
