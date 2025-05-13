@@ -290,4 +290,5 @@ function registerTFGMoldRecipes(event) {
 	// 	event.shapeless(Item.of(vessel), [vessel])
 	// 	.id(`tfg:shapeless/vessel_cleaning/${vessel.replace(":", "/")}`);
 	// });
+
 }

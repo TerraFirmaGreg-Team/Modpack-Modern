@@ -98,7 +98,6 @@ const registerGTCEURecipes = (event) => {
 		.outputFluids(Fluid.of('gtceu:chlorine', 500), Fluid.of('gtceu:hydrogen', 500))
 		.duration(720)
 		.EUt(30)
-		.circuit(2)
 
 	//#endregion
 
