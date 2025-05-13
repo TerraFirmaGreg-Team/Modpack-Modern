@@ -38,8 +38,7 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"tfc:rock/raw/dacite",
-					"tfc:rock/hardened/dacite",
-					"tfc:rock/gravel/dacite"
+					"tfc:rock/hardened/dacite"
 				]
 			}
 		}

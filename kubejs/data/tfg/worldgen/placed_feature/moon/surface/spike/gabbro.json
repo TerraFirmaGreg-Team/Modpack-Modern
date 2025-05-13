@@ -38,8 +38,7 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"tfc:rock/raw/gabbro",
-					"tfc:rock/hardened/gabbro",
-					"tfc:rock/gravel/gabbro"
+					"tfc:rock/hardened/gabbro"
 				]
 			}
 		}

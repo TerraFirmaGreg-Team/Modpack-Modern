@@ -38,8 +38,7 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"tfc:rock/raw/basalt",
-					"tfc:rock/hardened/basalt",
-					"tfc:rock/gravel/basalt"
+					"tfc:rock/hardened/basalt"
 				]
 			}
 		}

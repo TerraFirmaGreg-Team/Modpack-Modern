@@ -1,12 +1,15 @@
 {
-	"feature": "tfg:moon/surface/dead_coral_blocks",
+	"feature": "tfg:moon/surface/warped_vine",
 	"placement": [
 		{
-			"type": "minecraft:in_square"
+			"type": "minecraft:biome"
 		},
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 1
+			"chance": 2
+		},
+		{
+			"type": "minecraft:in_square"
 		},
 		{
 			"type": "minecraft:heightmap",

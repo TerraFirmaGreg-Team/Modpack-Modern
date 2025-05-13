@@ -38,8 +38,7 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"tfc:rock/raw/andesite",
-					"tfc:rock/hardened/andesite",
-					"tfc:rock/gravel/andesite"
+					"tfc:rock/hardened/andesite"
 				]
 			}
 		}

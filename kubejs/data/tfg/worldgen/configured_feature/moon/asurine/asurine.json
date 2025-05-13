@@ -1,0 +1,7 @@
+{
+	"type": "tfc:if_then",
+	"config": {
+		"if": "tfg:moon/asurine/asurine_geode",
+		"then": "tfg:moon/asurine/asurine_decoration"
+	}
+}
