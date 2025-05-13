@@ -202,7 +202,16 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
 }
 
+// All space veins go in tfg/tags.js
 const registerAdAstraPlacedFeatures = (event) => {
 
+	global.MOON_STONE_TYPES.forEach(stone => {
+		// only in the sparse ones
+		event.add('tfg:moon_large_rock_features', `tfg:moon/surface/delta/${stone}`)
+		// in all moon biomes
+		event.add('tfg:moon_small_rock_features', `tfg:moon/surface/pile/${stone}`)
+		event.add('tfg:moon_small_rock_features', `tfg:moon/surface/loose/${stone}`)
+	})
 
+	event.add('tfg:moon_small_rock_features', `tfg:moon/surface/spike/basalt`)
 }

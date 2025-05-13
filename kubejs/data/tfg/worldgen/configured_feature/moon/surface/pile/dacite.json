@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:block_pile",
+	"config": {
+		"state_provider": {
+			"type": "minecraft:weighted_state_provider",
+			"entries": [
+				{
+					"weight": 35,
+					"data": {
+						"Name": "tfc:rock/hardened/dacite"
+					}
+				},
+				{
+					"weight": 25,
+					"data": {
+						"Name": "tfc:rock/cobble/dacite"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "tfc:rock/raw/dacite_slab"
+					}
+				},
+				{
+					"weight": 20,
+					"data": {
+						"Name": "tfc:rock/cobble/dacite_slab"
+					}
+				}
+			]
+		}
+	}
+}

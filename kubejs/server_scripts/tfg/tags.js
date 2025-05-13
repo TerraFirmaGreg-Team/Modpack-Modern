@@ -333,7 +333,7 @@ const registerTFGBiomeTags = (event) => {
 	// #endregion
 }
 
-
+// Other space decoration is in ad_astra/tags.js
 const registerTFGPlacedFeatures = (event) => {
 
 	// #region Nether ores
