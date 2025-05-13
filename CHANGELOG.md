@@ -18,7 +18,6 @@
 - Added aluminium, stainless steel, and titanium millstones (Pyritie)
 - Fixed fishing nets behavior. (Redeix)
 - Added item to summon armor stands with arms. (Redeix)
-- Added recipes for emptying vessels and molds. (Redeix)
 - Added recipes for extracting/ forming magma blocks. (Redeix)
 - Nerfed steel support recipe output. (Redeix)
 
