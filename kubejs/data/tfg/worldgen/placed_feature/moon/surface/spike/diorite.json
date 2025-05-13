@@ -38,8 +38,7 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"tfc:rock/raw/diorite",
-					"tfc:rock/hardened/diorite",
-					"tfc:rock/gravel/diorite"
+					"tfc:rock/hardened/diorite"
 				]
 			}
 		}

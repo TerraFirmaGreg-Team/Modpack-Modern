@@ -38,8 +38,7 @@
 				"type": "minecraft:matching_blocks",
 				"blocks": [
 					"tfc:rock/raw/rhyolite",
-					"tfc:rock/hardened/rhyolite",
-					"tfc:rock/gravel/rhyolite"
+					"tfc:rock/hardened/rhyolite"
 				]
 			}
 		}

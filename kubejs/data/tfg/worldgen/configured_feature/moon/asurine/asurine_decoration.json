@@ -1,0 +1,98 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"default": {
+			"feature": {
+				"type": "minecraft:no_op",
+				"config": {}
+			},
+			"placement": []
+		},
+		"features": [
+			{
+				"chance": 0.4,
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "ae2:small_quartz_bud",
+									"Properties": {
+										"facing": "up",
+										"waterlogged": "false"
+									}
+								}
+							}
+						}
+					},
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.3,
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "ae2:medium_quartz_bud",
+									"Properties": {
+										"facing": "up",
+										"waterlogged": "false"
+									}
+								}
+							}
+						}
+					},
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.2,
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "ae2:large_quartz_bud",
+									"Properties": {
+										"facing": "up",
+										"waterlogged": "false"
+									}
+								}
+							}
+						}
+					},
+					"placement": []
+				}
+			},
+			{
+				"chance": 0.1,
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_block",
+						"config": {
+							"to_place": {
+								"type": "minecraft:simple_state_provider",
+								"state": {
+									"Name": "ae2:quartz_cluster",
+									"Properties": {
+										"facing": "up",
+										"waterlogged": "false"
+									}
+								}
+							}
+						}
+					},
+					"placement": []
+				}
+			}
+		]
+	}
+}
