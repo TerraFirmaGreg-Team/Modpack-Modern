@@ -1,6 +1,6 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.2",
+    "version": "0.9.5",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -209,16 +209,28 @@
         "geckolib": {
             "side": "BOTH"
         },
-        "detected-setblock-be-gone": {
-            "side": "CLIENT"
-        },
         "tfcgenviewer": {
             "side": "BOTH"
         },
         "tfc-hot-or-not": {
             "side": "BOTH"
         },
+        "xaeros-minimap": {
+            "side": "BOTH"
+        },
         "particular-reforged": {
+            "side": "BOTH"
+        },
+        "pick-up-notifier": {
+            "side": "BOTH"
+        },
+        "inventory-tweaks-refoxed": {
+            "side": "BOTH"
+        },
+        "fastboot": {
+            "side": "BOTH"
+        },
+        "detected-setblock-be-gone": {
             "side": "BOTH"
         }
     }

@@ -81,15 +81,15 @@ const registerCreateAdditionsRecipes = (event) => {
 	}).id('tfg:createadditions/shaped/electric_motor')
 
 	event.shaped('createaddition:alternator', [
-		'AEA',
+		'ABA',
 		'CDC',
-		'BFB'
+		'EFE'
 	], {
 		A: '#gtceu:resistors',
 		B: '#gtceu:circuits/lv',
 		C: 'gtceu:ulv_voltage_coil',
-		D: 'gtceu:lv_machine_hull',
+		D: 'gtceu:ulv_machine_hull',
 		E: 'gtceu:tin_single_cable',
-		F: 'greate:steel_shaft'
+		F: '#tfg:shafts'
 	}).id('tfg:createadditions/shaped/alternator')
 }

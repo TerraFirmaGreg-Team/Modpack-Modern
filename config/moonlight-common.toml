@@ -1,1 +1,5 @@
 
+[general]
+	#Clears dynamic models and textures from the mod dynamic pack once resource reload is done. This can save up some RAM. Turning off if you notice inconsistencies with pack loading
+	clear_dynamic_resources = false
+

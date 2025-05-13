@@ -1,9 +1,48 @@
 # Changelog
-
 ## [Unreleased]
 ### Changes
+- Rebalanced the Large Boilers so now they consume WAY less fuel, so lava is no longer basically mandatory - see [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/977) for the full math (Oosyrag)
+- Greenhouse ports and sprinklers now work directly with gregtech pipes (Thomasx0)
+- Added recipes for stainless steel greenhouse parts (Pyritie)
+- More field guide updates (Oosyrag)
+- Added assembler recipes for more Create and Greate items (Pyritie)
+- Blaze burners, alternators, steam engines, and steam multiblock inputs/outputs are now much cheaper (Pyritie)
+- Firmaciv sails can now use any fabric instead of just wool (Pyritie)
+- Fixed some recycling recipes to prevent dupes (Pyritie)
+- Added a circuit to the assembler hopper recipe (Pyritie)
+- Fixed chiseling non-tfc blocks so it returns two slabs instead of one (Pyritie)
+- Fixed being able to use tree taps on placed logs (Pyritie)
+- Fixed tooltips on the uncolored small vessel and AFC wooden supports (Pyritie)
+- Fixed assembler clay recipes so they output the correct amount (Pyritie)
+- Quest fixes/tweaks (Pyritie)
+- Added aluminium, stainless steel, and titanium millstones (Pyritie)
+- Fixed fishing nets behavior. (Redeix)
+- Added item to summon armor stands with arms. (Redeix)
+- Added recipes for extracting/ forming magma blocks. (Redeix)
+- Nerfed steel support recipe output. (Redeix)
 
-## [0.9.3] - 06.05.2025
+## [0.9.5] - 08.05.2025
+### Changes
+- Disabled pollution
+- Fixed a progression softlock involving rubber (AirRice)
+- Fixed hide duping recipes. (Redeix)
+- Added quest book and field guide instances for fishing nets. (Redeix)
+- Fixed rebar support recipe crash. (Redeix)
+- Fixed red steel flask dupe. (Redeix)
+- Fixed red alloy recipe inconsistency. (Redeix)
+- Fixed blue steel backpack block lang. (Redeix)
+- Added max vessel fluid warning to small vessels. (Redeix)
+- Improved quest proofreading (algol_rithm)
+- Fixed some incorrect quest dependencies
+- Added a workaround for dyeing wattle and daub (Pyritie)
+- Fixed ice shaving duping recipe (Pyritie)
+- Added clay block <-> clay ball crafting table recipes (Pyritie)
+
+## [0.9.4] - 06.05.2025
+### Changes
+- Fixed tags bug.
+
+## [0.9.3] - 05.05.2025
 - [!WARNING] 0.9 is now out of alpha and into beta! If you're upgrading from 0.7, we put together a guide [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/wiki/%5BEN%5D-Upgrading-from-0.7-to-0.9).
 ### Changes
 - Removed Caelum + TFC Caelum because they were causing crashes for MacOS and other graphics issues, but you can re-add them if you'd like

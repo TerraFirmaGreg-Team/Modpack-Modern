@@ -23,8 +23,10 @@
 		{
 			id: "23A27702FF816291"
 			linked_quest: "6903C72A254A7B08"
+			shape: "octagon"
+			size: 2.0d
 			x: -13.5d
-			y: 7.5d
+			y: 14.5d
 		}
 		{
 			id: "1F1E7097C015BE33"
@@ -37,9 +39,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["6F1BC99BE641B671"]
+			dependencies: ["7B045998769930F0"]
 			description: ["{quests.steam_age.basic_millstone.desc}"]
 			id: "48C1E980F7D64317"
+			size: 1.5d
 			subtitle: "{quests.steam_age.basic_millstone.subtitle}"
 			tasks: [{
 				id: "486DE7D228F3589B"
@@ -48,7 +51,7 @@
 			}]
 			title: "{quests.steam_age.basic_millstone.title}"
 			x: -18.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6F1BC99BE641B671"]
@@ -72,7 +75,7 @@
 			dependencies: ["7B045998769930F0"]
 			description: ["{quests.steam_age.helve_hammer.desc}"]
 			id: "611EB6284CA7119C"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{quests.steam_age.helve_hammer.subtitle}"
 			tasks: [{
 				id: "340B4B4665295100"
@@ -108,8 +111,8 @@
 				}
 			]
 			title: "{quests.steam_age.basic_greate.title}"
-			x: -20.0d
-			y: -4.0d
+			x: -18.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0D0D461AE3A3F7BF"]
@@ -996,11 +999,6 @@
 					item: "gtceu:red_alloy_single_wire"
 					type: "item"
 				}
-				{
-					id: "747DB1DB09BA185B"
-					item: "gtceu:red_alloy_single_cable"
-					type: "item"
-				}
 			]
 			title: "{quests.steam_age.red_alloy.title}"
 			x: -22.5d
@@ -1121,8 +1119,8 @@
 				}
 			]
 			title: "{quests.steam_age.create_tools.title}"
-			x: -18.0d
-			y: 0.0d
+			x: -20.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6AA07588374B59AB"]
@@ -1511,7 +1509,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["033E74BC588E7EAD"]
+			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
 			id: "414835BADD34513F"
 			optional: true
@@ -1522,8 +1520,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.rotation_speed_controller.title}"
-			x: -21.0d
-			y: 17.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [

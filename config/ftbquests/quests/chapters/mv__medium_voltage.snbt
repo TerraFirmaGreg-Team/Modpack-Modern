@@ -82,14 +82,20 @@
 			subtitle: "{quests.medium_voltage.mv_brewery.subtitle}"
 			tasks: [
 				{
-					id: "095C98D86D021B2E"
-					item: "gtceu:lv_brewery"
-					type: "item"
-				}
-				{
 					id: "1CB0F32E8293B5D7"
 					item: "gtceu:lubricant_bucket"
 					optional_task: true
+					type: "item"
+				}
+				{
+					id: "29393DEB346EC4D2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(gtceu:lv_brewery)item(gtceu:mv_brewery))"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1001,7 +1007,7 @@
 				type: "item"
 			}]
 			title: "{quests.medium_voltage.mv_oilsands.title}"
-			x: -2.5d
+			x: -8.0d
 			y: 1.0d
 		}
 		{
@@ -1010,6 +1016,7 @@
 				"6EB68C28BEE24DEF"
 				"05ADBAE5B6F38956"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.medium_voltage.mv_distillery.desc.1}"
 				"{@pagebreak}"
@@ -1024,12 +1031,12 @@
 			size: 1.0d
 			subtitle: "{quests.medium_voltage.mv_distillery.subtitle}"
 			tasks: [{
-				id: "685043442271A0D0"
+				id: "6C32C7BCF9D12EBC"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "or(item(gtceu:mv_distillery)item(gtceu:lv_distillery))"
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_distillery)item(gtceu:mv_distillery))"
 					}
 				}
 				title: "{quests.medium_voltage.mv_distillery.task}"
@@ -1167,7 +1174,7 @@
 			}]
 			title: "{quests.medium_voltage.mv_mutli_channel.title}"
 			x: -8.0d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["315169840E06110F"]
