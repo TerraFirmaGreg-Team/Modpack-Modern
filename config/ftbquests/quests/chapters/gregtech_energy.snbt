@@ -10,14 +10,17 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["We know that &5GregTech&r isn’t the easiest mod to get into — especially when it comes to the &cenergy system&r. That’s why we’ll take our time in this chapter to explain as much as we can.\\n\\nSome things here might not make full sense until later in your progression, so &adon’t stress yourself&r. Just try to understand what you can for now, and feel free to &dcome back to this chapter&r whenever you have questions.\\n\\nWe’ve split this chapter into &efour categories&r, each one covering a topic related to the &6GregTech Energy System&r. We’ll provide as many examples as possible to help you understand how it all works."]
+			description: ["{quests.gregtech_energy.start.desc}"]
 			icon: "gtceu:uhv_ultimate_battery"
 			id: "06B2E38F7DCF2678"
 			tasks: [{
-				id: "07E1FA6A1BB796D4"
-				title: "How to Gregtech"
-				type: "checkmark"
+				dimension: "minecraft:overworld"
+				icon: "gtceu:gregification_hazard_sign_block"
+				id: "7F62C4A9ED2562BD"
+				title: "{quests.gregtech_energy.start.task}"
+				type: "dimension"
 			}]
+			title: "{quests.gregtech_energy.start.title}"
 			x: 0.0d
 			y: 0.0d
 		}
