@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE"
+			"heightmap": "WORLD_SURFACE_WG"
 		},
 		{
 			"type": "minecraft:block_predicate_filter",
@@ -29,7 +29,7 @@
 		},
 		{
 			"type": "minecraft:heightmap",
-			"heightmap": "WORLD_SURFACE"
+			"heightmap": "WORLD_SURFACE_WG"
 		}
 	]
 }
