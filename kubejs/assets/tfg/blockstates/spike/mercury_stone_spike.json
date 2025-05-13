@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"part=base": {
+			"model": "tfg:block/spike/mercury_stone_base"
+		},
+		"part=middle": {
+			"model": "tfg:block/spike/mercury_stone_middle"
+		},
+		"part=tip": {
+			"model": "tfg:block/spike/mercury_stone_tip"
+		}
+	}
+}

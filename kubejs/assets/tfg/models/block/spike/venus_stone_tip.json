@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/rock/spike_tip",
+	"textures": {
+		"texture": "ad_astra:block/venus_stone",
+		"particle": "ad_astra:block/venus_stone"
+	}
+}
