@@ -1,5 +1,7 @@
 function registerTFGSpaceBlocks(event) {
 
+	// Hardened stones
+
 	event.create('tfg:rock/hardened_moon_stone')
 		.stoneSoundType()
 		.requiresTool(true)
@@ -84,6 +86,8 @@ function registerTFGSpaceBlocks(event) {
 		.fullBlock(true)
 		.opaque(true)
 
+	// Loose stones
+
 	event.create('tfg:loose/moon_stone', 'tfc:loose_rock')
 		.stoneSoundType()
 		.itemTexture('tfg:item/loose/moon_stone')
@@ -93,7 +97,7 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:igneous_intrusive_rock')
 
 	event.create('tfg:loose/moon_deepslate', 'tfc:loose_rock')
-		.stoneSoundType()
+		.soundType('deepslate')
 		.itemTexture('tfg:item/loose/moon_deepslate')
 		.tagBlock('tfc:loose_rocks')
 		.tagItem('tfc:any_knapping')
@@ -139,4 +143,34 @@ function registerTFGSpaceBlocks(event) {
 		.tagItem('tfc:any_knapping')
 		.tagItem('tfc:rock_knapping')
 		.tagItem('tfc:metamorphic_rock')
+
+	// Spikes
+
+	event.create('tfg:spike/moon_stone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/moon_deepslate_spike', 'tfc:rock_spike')
+		.soundType('deepslate')
+		.noItem()
+
+	event.create('tfg:spike/mars_stone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/venus_stone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/mercury_stone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/glacio_stone_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
+
+	event.create('tfg:spike/permafrost_spike', 'tfc:rock_spike')
+		.stoneSoundType()
+		.noItem()
 }

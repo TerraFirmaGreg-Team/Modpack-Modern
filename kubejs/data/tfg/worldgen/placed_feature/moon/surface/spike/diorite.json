@@ -1,5 +1,5 @@
 {
-	"feature": "tfg:moon/surface/spike/basalt",
+	"feature": "tfg:moon/surface/spike/diorite",
 	"placement": [
 		{
 			"type": "minecraft:count",
@@ -37,9 +37,9 @@
 			"predicate": {
 				"type": "minecraft:matching_blocks",
 				"blocks": [
-					"tfc:rock/raw/basalt",
-					"tfc:rock/hardened/basalt",
-					"tfc:rock/gravel/basalt"
+					"tfc:rock/raw/diorite",
+					"tfc:rock/hardened/diorite",
+					"tfc:rock/gravel/diorite"
 				]
 			}
 		}
