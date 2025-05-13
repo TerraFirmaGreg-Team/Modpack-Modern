@@ -1509,7 +1509,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["033E74BC588E7EAD"]
+			dependencies: ["32046292AA5B0E30"]
 			description: ["{quests.steam_age.rotation_speed_controller.desc}"]
 			id: "414835BADD34513F"
 			optional: true
@@ -1520,8 +1520,8 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.rotation_speed_controller.title}"
-			x: -21.0d
-			y: 17.0d
+			x: -5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [

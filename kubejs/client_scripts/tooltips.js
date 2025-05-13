@@ -67,7 +67,7 @@ const registerTooltips = (event) =>
 		})
 	})
 	global.AFC_WOOD_TYPES.forEach(wood => {
-		event.addAdvanced([`tfc:wood/support/${wood}`], (item, advanced, text) => {
+		event.addAdvanced([`afc:wood/support/${wood}`], (item, advanced, text) => {
 			text.add(1, text.of('9 x 5 x 9'))
 		})
 	})

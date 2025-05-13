@@ -229,6 +229,9 @@
         },
         "fastboot": {
             "side": "BOTH"
+        },
+        "detected-setblock-be-gone": {
+            "side": "BOTH"
         }
     }
 }

@@ -86,6 +86,8 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:zpm_solar_panel',
     'gtceu:uv_solar_panel',
 
+    'gtceu:compressed_clay',
+
     // Sculk
     'gtceu:tiny_echo_shard_dust',
     'gtceu:small_echo_shard_dust',
