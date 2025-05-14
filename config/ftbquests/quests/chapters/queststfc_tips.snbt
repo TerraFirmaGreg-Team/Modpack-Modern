@@ -4680,7 +4680,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["74AE7DB845B88CF3"]
+			dependencies: [
+				"74AE7DB845B88CF3"
+				"6958029B5514D4EC"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"This is a guide on how to automatically route &lall&r your Hot Ingots to your Chemical Bath, while keeping everything automated in tip-top shape."
 				""

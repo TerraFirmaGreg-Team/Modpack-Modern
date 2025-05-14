@@ -991,7 +991,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["6A304E453D74C57C"]
 			description: ["{quests.medium_voltage.mv_oilsands.desc}"]
 			id: "575B07D390D9D079"
 			optional: true
@@ -1009,10 +1008,12 @@
 		}
 		{
 			dependencies: [
+				"575B07D390D9D079"
 				"53DC6E32C41C94C3"
-				"6EB68C28BEE24DEF"
 				"05ADBAE5B6F38956"
+				"6EB68C28BEE24DEF"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{quests.medium_voltage.mv_distillery.desc.1}"
 				"{@pagebreak}"
