@@ -90,9 +90,4 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['#tfc:fired_vessels'], (item, advanced, text) => {
 		text.add(1, text.of('§cMax: 3024mB'))
 	})
-
-	// Rename Salt to Table Salt
-	ClientEvents.lang("en_us", e => {
-		e.renameItem('tfc:powder/salt', 'Table Salt')
-	})
 }
