@@ -5,19 +5,19 @@
     // Type: Integer
     "oxygenBarX": 5,
     // Type: Integer
-    "oxygenBarY": 25,
+    "oxygenBarY": 195,
     // Type: Float
-    "oxygenBarScale": 0.5,
+    "oxygenBarScale": 0.6,
     // Type: Integer
-    "energyBarX": 11,
+    "energyBarX": 12,
     // Type: Integer
-    "energyBarY": 95,
+    "energyBarY": 265,
     // Type: Float
-    "energyBarScale": 0.5,
+    "energyBarScale": 0.6,
     "spaceMuffler": true,
     "radio": {
         // Range: 0 - 100
-        "volume": 50,
+        "volume": 10,
         "favorites": []
     }
 }
