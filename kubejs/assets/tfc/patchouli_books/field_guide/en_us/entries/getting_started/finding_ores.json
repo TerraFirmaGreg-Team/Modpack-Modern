@@ -58,7 +58,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "tfchotornot:crafting/tongs/wood",
-      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely. (This is a $(thing)Shapeless Recipe$(), you can make it in your inventory crafting grid)"
+      "text": "Careful, the vessel will be hot! Craft $(thing)Wooden Tongs$() with two sticks and a knife and hold them in your off hand to handle the hot vessel safely."
     },
     {
       "type": "patchouli:image",

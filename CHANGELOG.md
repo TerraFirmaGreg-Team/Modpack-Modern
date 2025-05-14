@@ -1,6 +1,9 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Renamed Salt (powder) to Table Salt (Oosyrag)
+- Changed wooden tongs recipe from shapeless to shaped (Oosyrag)
+- Added crafting recipe for tin jar lids (Oosyrag)
 - Rebalanced the Large Boilers so now they consume WAY less fuel, so lava is no longer basically mandatory - see [here](https://github.com/TerraFirmaGreg-Team/Modpack-Modern/pull/977) for the full math (Oosyrag)
 - Greenhouse ports and sprinklers now work directly with gregtech pipes (Thomasx0)
 - Added recipes for stainless steel greenhouse parts (Pyritie)
