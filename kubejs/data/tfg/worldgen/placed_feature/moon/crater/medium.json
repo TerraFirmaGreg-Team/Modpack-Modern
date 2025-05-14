@@ -1,9 +1,9 @@
 {
-	"feature": "tfg:moon/asurine/asurine",
+	"feature": "tfg:moon/crater/medium",
 	"placement": [
 		{
 			"type": "minecraft:rarity_filter",
-			"chance": 15
+			"chance": 20
 		},
 		{
 			"type": "minecraft:heightmap",
@@ -12,7 +12,7 @@
 		{
 			"type": "minecraft:random_offset",
 			"xz_spread": 0,
-			"y_spread": -7
+			"y_spread": 2
 		}
 	]
 }

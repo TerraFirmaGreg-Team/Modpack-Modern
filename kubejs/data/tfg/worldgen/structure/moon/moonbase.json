@@ -8,7 +8,7 @@
 	"biomes": "#tfg:has_structure/moonbase",
 	"max_distance_from_center": 80,
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
-	"step": "top_layer_modification",
+	"step": "surface_structures",
 	"terrain_adaptation": "beard_thin",
 	"use_expansion_hack": false,
 	"spawn_overrides": {}

@@ -2,48 +2,48 @@
 	"type": "minecraft:geode",
 	"config": {
 		"blocks": {
+			"alternate_inner_layer_provider": {
+				"type": "minecraft:simple_state_provider",
+				"state": {
+					"Name": "minecraft:air"
+				}
+			},
+			"cannot_replace": "#minecraft:features_cannot_replace",
 			"filling_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:moon_stone_certus_quartz_ore"
+					"Name": "minecraft:air"
 				}
 			},
 			"inner_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "gtceu:moon_stone_certus_quartz_ore"
+					"Name": "minecraft:air"
 				}
 			},
-			"alternate_inner_layer_provider": {
-				"type": "minecraft:simple_state_provider",
-				"state": {
-					"Name": "gtceu:moon_stone_quartzite_ore"
+			"inner_placements": [
+				{
+					"Name": "minecraft:air"
 				}
-			},
+			],
+			"invalid_blocks": "#minecraft:geode_invalid_blocks",
 			"middle_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "create:asurine"
+					"Name": "minecraft:air"
 				}
 			},
 			"outer_layer_provider": {
 				"type": "minecraft:simple_state_provider",
 				"state": {
-					"Name": "create:cut_asurine"
+					"Name": "minecraft:air"
 				}
-			},
-			"inner_placements": [
-				{
-					"Name": "gtceu:moon_stone_certus_quartz_ore"
-				}
-			],
-			"cannot_replace": "#minecraft:features_cannot_replace",
-			"invalid_blocks": "#minecraft:geode_invalid_blocks"
+			}
 		},
 		"crack": {
-			"base_crack_size": 2,
-			"crack_point_offset": 2,
-			"generate_crack_chance": 0.1
+			"base_crack_size": 0,
+			"crack_point_offset": 0,
+			"generate_crack_chance": 0
 		},
 		"distribution_points": {
 			"type": "minecraft:uniform",
@@ -54,14 +54,14 @@
 		},
 		"invalid_blocks_threshold": 4,
 		"layers": {
-			"filling": 0.3,
-			"inner_layer": 1.8,
-			"middle_layer": 3.1,
-			"outer_layer": 4.0
+			"filling": 0.01,
+			"inner_layer": 0.01,
+			"middle_layer": 0.01,
+			"outer_layer": 38
 		},
-		"max_gen_offset": 24,
-		"min_gen_offset": -24,
-		"noise_multiplier": 0.05,
+		"max_gen_offset": 48,
+		"min_gen_offset": -48,
+		"noise_multiplier": 0,
 		"outer_wall_distance": {
 			"type": "minecraft:uniform",
 			"value": {
@@ -77,7 +77,7 @@
 				"min_inclusive": 1
 			}
 		},
-		"use_alternate_layer0_chance": 0.4,
-		"use_potential_placements_chance": 0.30
+		"use_alternate_layer0_chance": 0,
+		"use_potential_placements_chance": 0
 	}
 }
