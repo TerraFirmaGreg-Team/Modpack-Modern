@@ -117,7 +117,8 @@ function registerGTCEUMetalRecipes(event) {
 		event.recipes.tfc.damage_inputs_shaped_crafting(
 			event.shaped(toolItem, [
 				'CA ',
-				' B '
+				' B ',
+				'   '
 			], {
 				A: usableItem,
 				B: '#tfc:rock/raw',
