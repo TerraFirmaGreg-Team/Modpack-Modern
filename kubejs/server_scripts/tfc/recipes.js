@@ -329,7 +329,8 @@ const registerTFCRecipes = (event) => {
 
 	event.shapeless('8x tfc:jar_lid', [
 		'gtceu:tin_ingot',
-		'#forge:tools/hammers'
+		'#forge:tools/hammers',
+		'#forge:tools/saws'
 	]).id('tfc:shapeless/jar_lid')
 
 }
