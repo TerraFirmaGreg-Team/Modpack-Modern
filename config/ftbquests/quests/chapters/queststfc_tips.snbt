@@ -1116,9 +1116,10 @@
 		}
 		{
 			dependencies: [
-				"1DF4DBE41BB0B6FD"
 				"4891E995D3EC2BD1"
+				"5F3063C539C9CBBF"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
 			id: "6903C72A254A7B08"
 			shape: "gear"
