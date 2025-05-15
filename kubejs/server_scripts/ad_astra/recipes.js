@@ -458,4 +458,39 @@ const registerAdAstraRecipes = (event) => {
 
 	//#endregion
 
+	//#region Convert whatever fluids we want into the breathable gas needed for the Oxygen Distributor
+
+	event.custom({
+		type: 'ad_astra:oxygen_loading',
+		cookingtime: 1,
+		energy: 30,
+		input: {
+			ingredient: {
+				fluid: 'gtceu:air'
+			},
+			millibuckets: 2
+		},
+		result: {
+			fluid: 'ad_astra:oxygen',
+			millibuckets: 100
+		}
+	}).id('ad_astra:oxygen_loading/air_from_air')
+
+	event.custom({
+		type: 'ad_astra:oxygen_loading',
+		cookingtime: 1,
+		energy: 30,
+		input: {
+			ingredient: {
+				fluid: 'gtceu:oxygen'
+			},
+			millibuckets: 1
+		},
+		result: {
+			fluid: 'ad_astra:oxygen',
+			millibuckets: 100
+		}
+	}).id('ad_astra:oxygen_loading/air_from_oxygen_gas')
+
+	//#endregion
 }
