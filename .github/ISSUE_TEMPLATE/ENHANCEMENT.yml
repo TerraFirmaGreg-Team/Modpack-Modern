@@ -2,7 +2,7 @@ name: "Enhancement"
 description: "Provide supporting details for a feature in development"
 title: "[🪡]: "
 labels: [ "1. Type: Enhancement" ]
-issues_type: [ "Enhancement" ]
+issue-types: [ "Enhancement" ]
 
 body:
   - type: checkboxes
