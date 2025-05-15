@@ -2,6 +2,8 @@ name: "Enhancement"
 description: "Provide supporting details for a feature in development"
 title: "[🪡]: "
 labels: [ "1. Type: Enhancement" ]
+assignees: ["Contributor-Modern"]
+issueType: "Enhancement"
 
 body:
   - type: checkboxes
