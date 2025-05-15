@@ -22,6 +22,10 @@
 - Added item to summon armor stands with arms. (Redeix)
 - Added recipes for extracting/ forming magma blocks. (Redeix)
 - Nerfed steel support recipe output. (Redeix)
+- Fixed assembler recipe conflict with regular vanilla bricks and Create Deco's colored bricks (TomPlop)
+- Fixed not being able to use a charcoal forge with a basin (Pyritie)
+- Removed programmed circuit from the salt water electrolysis recipe (SverhRazum-Nah)
+- Added wrought iron alternatives for early game cast iron recipes, like wooden crates (ZackH01)
 
 ## [0.9.5] - 08.05.2025
 ### Changes
