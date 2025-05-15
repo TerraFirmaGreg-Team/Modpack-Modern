@@ -2,6 +2,7 @@ name: "Ask a Question"
 description: "Ask a question regarding this project."
 title: "[❓]: "
 labels: [ "1. Type: Question" ]
+type: "Question"
 
 body:
   - type: checkboxes
