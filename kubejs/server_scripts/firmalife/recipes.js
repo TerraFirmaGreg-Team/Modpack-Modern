@@ -79,6 +79,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemInputs('tfc:jar_lid')
 		.outputFluids(Fluid.of('gtceu:tin', 9))
 		.duration(50)
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 		.EUt(2)
 
 	event.recipes.gtceu.fluid_solidifier(`firmalife:firmalife/stainless_steel_jar_lid`)
