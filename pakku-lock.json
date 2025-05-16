@@ -3955,7 +3955,7 @@
         {
             "pakku_id": "Vl9JDBWAzQ5W19ta",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "detected-setblock-be-gone",
                 "modrinth": "dsbg"
@@ -5331,7 +5331,7 @@
         {
             "pakku_id": "M1zzOhfFKbBUyvAt",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "fastboot",
                 "modrinth": "fastboot"
@@ -6933,7 +6933,7 @@
         {
             "pakku_id": "KrMagbELcCin0ry1",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "inventory-tweaks-refoxed",
                 "modrinth": "inventory-tweaks-refoxed"
@@ -10298,7 +10298,7 @@
                 "IxsPMqjGrMxcFzus"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "pick-up-notifier",
                 "modrinth": "pick-up-notifier"
@@ -11655,69 +11655,6 @@
                     "required_dependencies": [],
                     "size": 196564,
                     "date_published": "2024-07-12T07:23:56.583Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "cKIMFUo1WXYa0CYj",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "starlight-forge",
-                "modrinth": "starlight-forge"
-            },
-            "name": {
-                "curseforge": "Starlight (Forge)",
-                "modrinth": "Starlight (Forge)"
-            },
-            "id": {
-                "curseforge": "526854",
-                "modrinth": "iRfIGC1s"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "starlight-1.1.2+forge.1cda73c.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/iRfIGC1s/versions/cNa0vkNj/starlight-1.1.2+forge.1cda73c.jar",
-                    "id": "cNa0vkNj",
-                    "parent_id": "iRfIGC1s",
-                    "hashes": {
-                        "sha512": "cc89c6b2dd0db709586028c7732a57a3e6184f19cc2b98b25964c720c3ab434031e62de23e0dab022575d637b5e4a34b5813164d32ec356d56588da400e7d026",
-                        "sha1": "a915880c7834a0b0f9f300f0e3053deaa9a3205a"
-                    },
-                    "required_dependencies": [],
-                    "size": 110583,
-                    "date_published": "2023-07-08T06:10:54.244596Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "starlight-1.1.2+forge.1cda73c.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4631/193/starlight-1.1.2+forge.1cda73c.jar",
-                    "id": "4631193",
-                    "parent_id": "526854",
-                    "hashes": {
-                        "sha1": "a915880c7834a0b0f9f300f0e3053deaa9a3205a",
-                        "md5": "da99a054428fb62342b6767b993c4c8d"
-                    },
-                    "required_dependencies": [],
-                    "size": 110583,
-                    "date_published": "2023-07-08T06:07:12.477Z"
                 }
             ]
         },
@@ -13316,7 +13253,7 @@
         {
             "pakku_id": "iEsJ0aHodKhDTwgV",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "xaeros-minimap",
                 "modrinth": "xaeros-minimap"
