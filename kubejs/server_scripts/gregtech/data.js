@@ -20,37 +20,56 @@ const registerGTCEUHeats = (event) => {
 
 const registerGTCEUBedrockOreVeins = (event) => {
 
-    event.add('tfg:bedrock_olivine_vein', vein => {
-        
-        vein.dimensions('ad_astra:moon')
-        vein.material(GTMaterials.Olivine, 100)
-        vein.weight(1000)
-        vein.yield(30)
-        vein.depletedYield(1)
-        vein.depletionChance(2)
-        vein.depletionAmount(1)
-    })
-
-    event.add('tfg:bedrock_magnetite_vein', vein => {
-        
-        vein.dimensions('ad_astra:moon')
-        vein.material(GTMaterials.Magnetite, 100)
-        vein.weight(500)
-        vein.yield(20)
-        vein.depletedYield(1)
-        vein.depletionChance(2)
-        vein.depletionAmount(1)
-    })
-
-    event.add('tfg:bedrock_asbestos_vein', vein => {
-        
-        vein.dimensions('ad_astra:moon')
-        vein.material(GTMaterials.Asbestos, 100)
+    // Tin
+        event.add('kubejs:moon_tin', vein => {
         vein.weight(800)
-        vein.yield(20)
-        vein.depletedYield(1)
-        vein.depletionChance(2)
-        vein.depletionAmount(1)
+            .size(1)
+            .yield(1, 4)
+            .material(GTMaterials.Cassiterite, 5)
+            .material(GTMaterials.Tin, 2)
+            .dimensions('ad_astra:moon')
+    })
+
+    // Iron and Gold
+        event.add('kubejs:moon_magnetite', vein => {
+        vein.weight(10)
+            .size(1)
+            .yield(1)
+            .material(GTMaterials.Magnetite, 100)
+            .material(GTMaterials.Gold, 1)
+            .dimensions('ad_astra:moon')
+    })
+
+    // Copper and Arsenic
+        event.add('kubejs:moon_copper', vein => {
+        vein.weight(800)
+            .size(1)
+            .yield(1, 4)
+            .material(GTMaterials.Chalcopyrite, 10)
+            .material(GTMaterials.Zeolite, 4)
+            .material(GTMaterials.Cassiterite, 3)
+            .material(GTMaterials.Realgar, 2)
+            .dimensions('ad_astra:moon')
+    })
+    
+    // Certus Quartz
+        event.add('kubejs:moon_certus', vein => {
+        vein.weight(10)
+            .size(1)
+            .yield(1, 2)
+            .material(GTMaterials.CertusQuartz, 6)
+            .material(GTMaterials.Barite, 2)
+            .material(GTMaterials.Quartzite, 7)
+            .dimensions('ad_astra:moon')
+    })
+
+        // Asbestos
+        event.add('kubejs:moon_asbestos', vein => {
+        vein.weight(1000)
+            .size(1)
+            .yield(1, 10)
+            .material(GTMaterials.Asbestos, 3)
+            .dimensions('ad_astra:moon')
     })
 
     // TODO: helium ore
