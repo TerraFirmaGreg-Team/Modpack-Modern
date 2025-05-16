@@ -21,7 +21,7 @@ const registerGTCEUHeats = (event) => {
 const registerGTCEUBedrockOreVeins = (event) => {
 
     // Tin
-        event.add('kubejs:moon_tin', vein => {
+        event.add('tfg:moon_tin', vein => {
         vein.weight(800)
             .size(1)
             .yield(1, 4)
@@ -31,7 +31,7 @@ const registerGTCEUBedrockOreVeins = (event) => {
     })
 
     // Iron and Gold
-        event.add('kubejs:moon_magnetite', vein => {
+        event.add('tfg:moon_magnetite', vein => {
         vein.weight(10)
             .size(1)
             .yield(1)
@@ -41,7 +41,7 @@ const registerGTCEUBedrockOreVeins = (event) => {
     })
 
     // Copper and Arsenic
-        event.add('kubejs:moon_copper', vein => {
+        event.add('tfg:moon_copper', vein => {
         vein.weight(800)
             .size(1)
             .yield(1, 4)
@@ -53,7 +53,7 @@ const registerGTCEUBedrockOreVeins = (event) => {
     })
     
     // Certus Quartz
-        event.add('kubejs:moon_certus', vein => {
+        event.add('tfg:moon_certus', vein => {
         vein.weight(10)
             .size(1)
             .yield(1, 2)
@@ -64,11 +64,22 @@ const registerGTCEUBedrockOreVeins = (event) => {
     })
 
         // Asbestos
-        event.add('kubejs:moon_asbestos', vein => {
+        event.add('tfg:moon_asbestos', vein => {
         vein.weight(1000)
             .size(1)
             .yield(1, 10)
             .material(GTMaterials.Asbestos, 3)
+            .dimensions('ad_astra:moon')
+    })
+
+        // Mica - Talc Silicon Aluminium Potassium Fluorine Caesium
+        event.add('tfg:moon_asbestos', vein => {
+        vein.weight(500)
+            .size(1)
+            .yield(1, 3)
+            .material(GTMaterials.Mica, 55)
+            .material(GTMaterials.Kyanite, 25)
+            .material(GTMaterials.Pollucite, 15)
             .dimensions('ad_astra:moon')
     })
 
