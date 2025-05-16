@@ -1,5 +1,9 @@
 # Changelog
+
 ## [Unreleased]
+### Changes
+
+## [0.9.6] - 16.05.2025
 ### Changes
 - Changed wooden tongs recipe from shapeless to shaped. @Oosyrag
 - Added crafting recipe for tin jar lids. @Oosyrag
