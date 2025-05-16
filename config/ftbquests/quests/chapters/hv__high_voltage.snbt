@@ -1373,6 +1373,23 @@
 			x: 0.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["14D277A164202FF8"]
+			description: [
+				"This may be the first time you encounter the &cBedrock Ore Miner&r, as it's rarely used in GregTech. \\nIt functions similarly to the &bFluid Drilling Rig&r, except the veins it targets will &nnever deplete&r.\\n\\nIt doesn't consume much energy — running fine at &bMV&r or &6HV&r — and requires &ano input materials&r.\\n\\nSo, what's the catch? \\nFinding the veins."
+				"{@pagebreak}"
+				"You’ll need a &6HV&r Ore Prospector set to &oBedrock Ore Mode&r (&7Shift + Right Click&r), and a fair bit of patience. Once you find your target, you’ll also have to figure out how to bring the resources back to your outpost.\\n\\nOn the &fMoon&r, you can find 5 unique bedrock ore veins:\\n\\n&7- Copper and Tin&r: Contains &6Chalcopyrite&r, &eZeolite&r, &fCassiterite&r, and &cRealgar (Arsenic)&r\\n&7- Tin Vein&r: Contains mainly &fCassiterite&r and &fTin&r\\n&7- Asbestos&r\\n&7- Magnetite (Iron) and Gold&r: Very rare — don't actively search for it\\n&7- A mysterious, &dextremely rare&r one... \\nIf you find it, you’ll be thrilled. If not, just live in peace. Don’t worry."
+			]
+			id: "2878C147D273F774"
+			subtitle: "Unlimited ores?"
+			tasks: [{
+				id: "55981710612D21D7"
+				item: "gtceu:mv_bedrock_ore_miner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
 	]
 	subtitle: ["{quests.high_voltage.subtitle}"]
 	title: "{quests.high_voltage}"
