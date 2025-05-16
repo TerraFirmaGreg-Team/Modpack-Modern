@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Changes
+- Remove various overlapping recipe conflicts. @Oosyrag
 
 ## [0.9.6] - 16.05.2025
 ### Changes
