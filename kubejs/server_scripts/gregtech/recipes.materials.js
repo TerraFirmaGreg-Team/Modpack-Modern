@@ -114,17 +114,17 @@ function registerGTCEUMetalRecipes(event) {
 
 		if (usableItem.isEmpty()) return
 
-		event.recipes.tfc.damage_inputs_shaped_crafting(
+//		event.recipes.tfc.damage_inputs_shaped_crafting(
 			event.shaped(toolItem, [
-				'CA ',
-				' B ',
-				'   '
+				'CA',
+				' B'
 			], {
 				A: usableItem,
 				B: '#tfc:rock/raw',
 				C: '#tfc:chisels'
 			})
-		).id(`gtceu:shaped/mortar_${material.getName()}`)
+//		)
+		.id(`gtceu:shaped/mortar_${material.getName()}`)
 	}
 
 	const processIngot = (material) => {
