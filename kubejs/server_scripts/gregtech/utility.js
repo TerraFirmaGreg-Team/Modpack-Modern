@@ -164,12 +164,12 @@ function generatePlatedBlockRecipe(event, material) {
 		.EUt(GTValues.VA[GTValues.LV])
 }
 
-const $MRM = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.IMaterialRegistryManager')
+//const $MRM = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.IMaterialRegistryManager')
 
 function forEachMaterial(iterator) {
-	if (GTMaterialRegistry.getPhase() === $MRM.Phase.CLOSED || GTMaterialRegistry.getPhase() === $MRM.Phase.FROZEN) {
+	//if (GTMaterialRegistry.getPhase() === $MRM.Phase.CLOSED || GTMaterialRegistry.getPhase() === $MRM.Phase.FROZEN) {
 		GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
 			iterator(material)
 		})
-	}
+	//}
 }

@@ -117,6 +117,20 @@ BlockEvents.rightClicked(event => {
     if (block.id != 'tfg:decorative_vase') {return}{
     server.runCommandSilent(`playsound tfc:block.quern.drag block ${username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
 }});
+//#endregion
+
+BlockEvents.rightClicked(event=>{
+    let item = event.item
+    if(item.id != 'tfg:armor_stand_arms') return
+    let mob = event.block[event.facing].createEntity('minecraft:armor_stand')
+    mob.mergeNbt('{ShowArms:1b}')
+    mob.setPos(mob.x + 0.5, mob.y, mob.z + 0.5)
+    mob.setYaw(event.player.yaw + 180)
+    mob.spawn()
+    if (event.player.isCreative() == false){
+        item.shrink(1)
+    }
+})
 
 /**
  *
@@ -131,7 +145,6 @@ function getTFGPersistentDataRoot(player)
     }
     return player.persistentData.getCompound("tfg:custom_data")
 }
-//#endregion
 
 //#region Fishing Net
     const fish = [
@@ -153,16 +166,70 @@ function getTFGPersistentDataRoot(player)
         'crayfish'
     ];
 
+    //tags wont work here (or at least I couldnt get it to work) so we need to manually declare each net tier.
+    const tiers = [
+        'wood',
+        'brass',
+        'rose_gold',
+        'sterling_silver',
+        'invar',
+        'tin_alloy',
+        'cupronickel',
+        'magnalium'
+    ];
+
     //Event detects if fish is right clicked with fishing net and then teleports the mob into the void, plays some actions and gives the player the proper item.
-    fish.forEach(fish => {
-        ItemEvents.entityInteracted('#forge:tools/fishing_nets', event => {
+    tiers.forEach(tier => {
+        fish.forEach(fish => {
+            ItemEvents.entityInteracted(`tfg:fishing_net/${tier}`, (event) => {
+                const {item, player, server, target} = event;
+
+                if (target.type != `tfc:${fish}`) return
+                    server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
+                    server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
+                    server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
+                    event.player.give(`tfc:food/${fish}`)
+                    player.swing()
+                    if (player.isCreative() == false){
+                        item.damageValue++
+                        if (item.damageValue >= item.maxDamage) {
+                            server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
+                            item.count--
+                        }
+                    }
+            })
+        })
+
+        //Shellfish Exception
+        shellfish.forEach(shellfish => {
+            ItemEvents.entityInteracted(`tfg:fishing_net/${tier}`, (event) => {
+                const {item, player, server, target} = event;
+
+                if (target.type != `tfc:${shellfish}`) return
+                    server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
+                    server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
+                    server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
+                    event.player.give('tfc:food/shellfish')
+                    player.swing()
+                    if (player.isCreative() == false){
+                        item.damageValue++
+                        if (item.damageValue >= item.maxDamage) {
+                            server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
+                            item.count--
+                        }
+                    }
+            })
+        })
+
+        //Pufferfish Exception
+        ItemEvents.entityInteracted(`tfg:fishing_net/${tier}`, (event) => {
             const {item, player, server, target} = event;
 
-            if (target.type != `tfc:${fish}`) return
+            if (target.type != 'tfc:pufferfish') return
                 server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
                 server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
                 server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
-                event.player.give(`tfc:food/${fish}`)
+                event.player.give('minecraft:pufferfish')
                 player.swing()
                 if (player.isCreative() == false){
                     item.damageValue++
@@ -172,45 +239,5 @@ function getTFGPersistentDataRoot(player)
                     }
                 }
         })
-    })
-
-    //Shellfish Exception
-    shellfish.forEach(shellfish => {
-        ItemEvents.entityInteracted('#forge:tools/fishing_nets', event => {
-            const {item, player, server, target} = event;
-
-            if (target.type != `tfc:${shellfish}`) return
-                server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
-                server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
-                server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
-                event.player.give('tfc:food/shellfish')
-                player.swing()
-                if (player.isCreative() == false){
-                    item.damageValue++
-                    if (item.damageValue >= item.maxDamage) {
-                        server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
-                        item.count--
-                    }
-                }
-        })
-    })
-
-    //Pufferfish Exception
-    ItemEvents.entityInteracted('#forge:tools/fishing_nets', event => {
-        const {item, player, server, target} = event;
-
-        if (target.type != 'tfc:pufferfish') return
-            server.runCommandSilent(`particle minecraft:bubble_pop ${target.x} ${target.y} ${target.z} 0.5 0.5 0.5 0.00001 10`)
-            server.runCommandSilent(`playsound minecraft:entity.player.splash player ${player.username} ${target.x} ${target.y} ${target.z} 2 2 1`)
-            server.runCommandSilent(`tp ${target.uuid} ${target.x} ${target.y - 382} ${target.z}`)
-            event.player.give('minecraft:pufferfish')
-            player.swing()
-            if (player.isCreative() == false){
-                item.damageValue++
-                if (item.damageValue >= item.maxDamage) {
-                    server.runCommandSilent(`playsound minecraft:item.shield.break player ${player.username} ${player.x} ${player.y} ${player.z} 1 1 1`)
-                    item.count--
-                }
-            }
     })
 //#endregion

@@ -389,4 +389,12 @@ function registerTFGMiscellaneousRecipes(event) {
 		.dimension('minecraft:the_nether')
 		.duration(200)
 		.EUt(16)
+		
+	event.shapeless('1x tfg:armor_stand_arms', [
+		'minecraft:armor_stand'
+	]).id(`tfg:shapeless/armor_stand_arms`)
+		
+	event.shapeless('1x minecraft:armor_stand', [
+		'tfg:armor_stand_arms'
+	]).id(`tfg:shapeless/armor_stand`)
 }

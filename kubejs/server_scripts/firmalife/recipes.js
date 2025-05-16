@@ -79,6 +79,7 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemInputs('tfc:jar_lid')
 		.outputFluids(Fluid.of('gtceu:tin', 9))
 		.duration(50)
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
 		.EUt(2)
 
 	event.recipes.gtceu.fluid_solidifier(`firmalife:firmalife/stainless_steel_jar_lid`)
@@ -128,10 +129,19 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(10)
 		.EUt(2)*/
 
-	//#region Рецепты теплиц
+	//#region Рецепты теплиц / Greenhouse
 
-	//#region Медная
+	//#region Treated Wood
 
+	event.shapeless('firmalife:treated_wood_greenhouse_port', [
+		'firmalife:treated_wood_greenhouse_wall',
+		'#forge:tiny_fluid_pipes/copper'
+	])
+	.id('firmalife:crafting/greenhouse/treated_wood_greenhouse_port')
+
+	//#endregion Treated Wood
+
+	//#region Медная / Copper
 
 	event.recipes.gtceu.bender('tfg:firmalife/sprinkler')
 		.itemInputs('#forge:plates/copper')
@@ -208,9 +218,15 @@ const registerFirmaLifeRecipes = (event) => {
 		B: 'minecraft:glass'
 	}).id('firmalife:crafting/greenhouse/copper_greenhouse_door')
 
+	event.shapeless('firmalife:copper_greenhouse_port', [
+		'firmalife:copper_greenhouse_wall',
+		'#forge:tiny_fluid_pipes/copper'
+	])
+	.id('firmalife:crafting/greenhouse/copper_greenhouse_port')
+
 	//#endregion
 
-	//#region Железная
+	//#region Железная / Iron
 
 	// Стена
 	event.shaped('8x firmalife:iron_greenhouse_wall', [
@@ -280,18 +296,85 @@ const registerFirmaLifeRecipes = (event) => {
 		B: 'minecraft:glass'
 	}).id('firmalife:crafting/greenhouse/iron_greenhouse_door')
 
+	event.shapeless('firmalife:iron_greenhouse_port', [
+		'firmalife:iron_greenhouse_wall',
+		'#forge:tiny_fluid_pipes/copper'
+	])
+	.id('firmalife:crafting/greenhouse/iron_greenhouse_port')
+
 	//#endregion
 
-	//#region Нержавеющая теплица
+	//#region Нержавеющая теплица / Stainless Steel
 
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_wall' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_roof' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof_top' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_trapdoor' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_door' })
-	event.remove({ id: 'firmalife:crafting/greenhouse/stainless_steel_greenhouse_port' })
+	event.shaped('8x firmalife:stainless_steel_greenhouse_wall', [
+		'ABA',
+		'ABA',
+		'ABA'
+	], {
+		A: '#forge:rods/stainless_steel',
+		B: 'minecraft:glass'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_wall')
+
+	event.shaped('8x firmalife:stainless_steel_greenhouse_panel_wall', [
+		'ABA',
+		'ABA',
+		'ABA'
+	], {
+		A: '#forge:rods/stainless_steel',
+		B: 'firmalife:reinforced_glass'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_wall')
+
+	event.shaped('4x firmalife:stainless_steel_greenhouse_panel_roof', [
+		'A  ',
+		'BA ',
+		'BBA'
+	], {
+		A: 'firmalife:reinforced_glass',
+		B: '#forge:rods/stainless_steel'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_panel_roof')
+
+	event.shaped('4x firmalife:stainless_steel_greenhouse_roof', [
+		'A  ',
+		'BA ',
+		'BBA'
+	], {
+		A: '#forge:rods/stainless_steel',
+		B: 'firmalife:reinforced_glass'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof')
+
+	// Верхушка крыши
+	event.shaped('8x firmalife:stainless_steel_greenhouse_roof_top', [
+		'ABA',
+		'BAB'
+	], {
+		A: '#forge:rods/stainless_steel',
+		B: 'firmalife:reinforced_glass'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_roof_top')
+
+	// Люк
+	event.shaped('8x firmalife:stainless_steel_greenhouse_trapdoor', [
+		'ABA',
+		'BAB'
+	], {
+		A: 'firmalife:reinforced_glass',
+		B: '#forge:rods/stainless_steel'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_trapdoor')
+
+	// Дверь
+	event.shaped('2x firmalife:stainless_steel_greenhouse_door', [
+		'AB',
+		'AB',
+		'AB'
+	], {
+		A: '#forge:rods/stainless_steel',
+		B: 'minecraft:glass'
+	}).id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_door')
+
+	event.shapeless('firmalife:stainless_steel_greenhouse_port', [
+		'firmalife:stainless_steel_greenhouse_wall',
+		'#forge:tiny_fluid_pipes/copper'
+	])
+	.id('firmalife:crafting/greenhouse/stainless_steel_greenhouse_port')
 
 	//#endregion
 

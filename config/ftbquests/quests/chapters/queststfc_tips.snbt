@@ -1116,9 +1116,10 @@
 		}
 		{
 			dependencies: [
-				"1DF4DBE41BB0B6FD"
 				"4891E995D3EC2BD1"
+				"5F3063C539C9CBBF"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.create_rubber_ingot.desc}"]
 			id: "6903C72A254A7B08"
 			shape: "gear"
@@ -4792,20 +4793,23 @@
 		}
 		{
 			dependencies: ["2D2CB8104E40E808"]
-			description: ["The &6Nano Saber&r is a powerful weapon you’ll be able to unlock once you reach &5EV&r. Simply use &dShift + Right-Click&r to activate the &cbzzzzz mode&r."]
+			description: ["{quests.tfg_tips.nano_saber.desc}"]
 			id: "7A4C6930EF68646E"
+			subtitle: "{quests.tfg_tips.nano_saber.subtitle}"
 			tasks: [{
 				id: "41A7611367BBD2A7"
 				item: "gtceu:nano_saber"
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.nano_saber.title}"
 			x: 12.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["2D2CB8104E40E808"]
-			description: ["The &6Item Magnet&r is exactly what you'd expect — a magnet that pulls nearby &6items&r straight to you. &aVery useful&r. What more could you ask for?"]
+			description: ["{quests.tfg_tips.magnets.desc}"]
 			id: "49D2EFFFC15563F9"
+			subtitle: "{quests.tfg_tips.magnets.subtitle}"
 			tasks: [{
 				id: "6290D18A38A1583C"
 				item: {
@@ -4817,6 +4821,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.magnets.title}"
 			x: 12.0d
 			y: 9.0d
 		}
@@ -4990,8 +4995,9 @@
 		}
 		{
 			dependencies: ["2D2CB8104E40E808"]
-			description: ["Most &5GregTech&r tools are crafted from a &6Tool Head&r. Try using &aEMI&r to explore what you can do with them — just remember two important things:\\n\\n- The &ehigher the Tool Head tier&r, the more &cpowerful&r the tool will be, and the &6larger the battery&r it will use.\\n- Not every tool supports every Tool Head tier. For example, the &6Chainsaw&r can only be crafted with a &7LV Tool Head&r."]
+			description: ["{quests.tfg_tips.gt_tools.desc}"]
 			id: "2CA86664C6E0C888"
+			subtitle: "{quests.tfg_tips.gt_tools.subtitle}"
 			tasks: [{
 				id: "153D23778A26C74F"
 				item: {
@@ -5003,6 +5009,7 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.tfg_tips.gt_tools.title}"
 			x: 12.0d
 			y: 8.0d
 		}

@@ -129,6 +129,12 @@ const registerTFGItemTags = (event) => {
 
 	// #endregion
 
+	// Use either cast or wrought iron
+	event.add('forge:double_iron_ingots', '#forge:double_ingots/iron')
+	event.add('forge:double_iron_ingots', '#forge:double_ingots/wrought_iron')
+
+	// #endregion
+
 	// #region 0.7.19 -> 0.9 conversion
 
 	event.add('c:hidden_from_recipe_viewers', 'treetap:tap')
@@ -254,6 +260,15 @@ const registerTFGBlockTags = (event) => {
 	event.add('minecraft:nether_carver_replaceables', 'tfg:rock/hardened_dripstone')
 	event.add('minecraft:base_stone_nether', 'tfg:rock/hardened_dripstone')
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
+
+	// #endregion
+
+	// #region Space blocks (TODO: undo these when merging space into dev!)
+
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_roots')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_sprouts')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_chorus_plant')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_chorus_flower')
 
 	// #endregion
 }
