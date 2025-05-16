@@ -73,7 +73,7 @@ const registerGTCEUBedrockOreVeins = (event) => {
     })
 
         // Mica - Talc Silicon Aluminium Potassium Fluorine Caesium
-        event.add('tfg:moon_asbestos', vein => {
+        event.add('tfg:moon_mica', vein => {
         vein.weight(500)
             .size(1)
             .yield(1, 3)
