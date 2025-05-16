@@ -12316,6 +12316,48 @@
             ]
         },
         {
+            "pakku_id": "mZwfKcex878w6k9d",
+            "pakku_links": [
+                "F6H99cZ4H6jZRpEK"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tfc-punishment-for-death"
+            },
+            "name": {
+                "curseforge": "TFC Punishment for Death"
+            },
+            "id": {
+                "curseforge": "1258250"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TFC_punishment_for_death-1.20.1-1.0.0.14.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6520/14/TFC_punishment_for_death-1.20.1-1.0.0.14.jar",
+                    "id": "6520014",
+                    "parent_id": "1258250",
+                    "hashes": {
+                        "sha1": "6f9d58aba27208b4aeb33bc1d1b6f801f9dc6369",
+                        "md5": "d99aad026d88904741f69582ada22f1e"
+                    },
+                    "required_dependencies": [
+                        "302973"
+                    ],
+                    "size": 36474,
+                    "date_published": "2025-05-11T16:48:31.577Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LdCEmxAyaiJBsONh",
             "pakku_links": [
                 "7QIRhUwYRTKZoPpd",
