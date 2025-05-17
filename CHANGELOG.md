@@ -6,6 +6,7 @@
 ## [0.9.7] - 17.05.2025
 ### Changes
 - Fixed Crash Sprinkler.
+- Undated the carryon config file to include the arborafirmacraft chests in the whitelist. @NobleWasTaken
 
 ## [0.9.6] - 16.05.2025
 ### Changes
