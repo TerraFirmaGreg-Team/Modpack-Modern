@@ -262,6 +262,15 @@ const registerTFGBlockTags = (event) => {
 	event.add('tfc:rock/hardened', 'tfg:rock/hardened_dripstone')
 
 	// #endregion
+
+	// #region Space blocks (TODO: undo these when merging space into dev!)
+
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_roots')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_sprouts')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_chorus_plant')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_chorus_flower')
+
+	// #endregion
 }
 
 const registerTFGFluidTags = (event) => {
