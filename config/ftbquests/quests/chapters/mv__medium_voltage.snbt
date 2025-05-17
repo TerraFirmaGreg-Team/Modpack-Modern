@@ -1533,7 +1533,7 @@
 				item: "gtceu:steel_large_boiler"
 				type: "item"
 			}]
-			title: "{quests.medium_voltage.lsb.desc}"
+			title: "{quests.medium_voltage.lsb.title}"
 			x: 1.28d
 			y: 16.5d
 		}
