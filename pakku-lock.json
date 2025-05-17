@@ -334,6 +334,7 @@
                 "WLBp9cajd3ZyDeek"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "ambientsounds"
             },
@@ -839,6 +840,7 @@
         {
             "pakku_id": "hhShqXRGFVCt6MeX",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "better-foliage-renewed"
             },
@@ -917,6 +919,7 @@
         {
             "pakku_id": "s4MrtNacNksvbP3v",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "better-ping-display"
             },
@@ -953,6 +956,7 @@
         {
             "pakku_id": "FfcQrNTIk6KM8Pau",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "better-third-person"
             },
@@ -994,6 +998,7 @@
         {
             "pakku_id": "YF0e81kWfKVfKx5m",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "blur-forge"
             },
@@ -1299,6 +1304,7 @@
         {
             "pakku_id": "en3mxv9RQRg48Ifc",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "chat-heads"
             },
@@ -1336,6 +1342,7 @@
         {
             "pakku_id": "nS7c6wbhkev84a9X",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "cherished-worlds"
             },
@@ -1415,6 +1422,7 @@
         {
             "pakku_id": "PDE7RB7hlFnTfgkq",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "client-tweaks"
             },
@@ -1643,6 +1651,7 @@
                 "QdAjCgrfEUQQjMWE"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "controlling"
             },
@@ -1796,6 +1805,7 @@
                 "dvvP2ZxrASA5e2dq"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "craftpresence"
             },
@@ -2557,6 +2567,7 @@
         {
             "pakku_id": "wAebQFoMqZhw8qad",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "drippy-loading-screen"
             },
@@ -2632,6 +2643,7 @@
         {
             "pakku_id": "6I5K2vwIvkFSfEuv",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "embeddium"
             },
@@ -2674,6 +2686,7 @@
                 "18IuoLEIRdaY1Jqy"
             ],
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "enderman-overhaul"
             },
@@ -2952,6 +2965,7 @@
         {
             "pakku_id": "8AxOn5gXmUukYhnn",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "fps-reducer"
             },
@@ -3333,6 +3347,7 @@
                 "Sd1WBrIs9dOQhqCN"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "fancymenu"
             },
@@ -3412,6 +3427,7 @@
         {
             "pakku_id": "SHxjXPyZkrcfsnIi",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "fastboot"
             },
@@ -3694,6 +3710,7 @@
                 "v44vAp7vREOZVvOk"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "first-person-model"
             },
@@ -3888,6 +3905,7 @@
         {
             "pakku_id": "FOswt0O8bKv2R2Nv",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "geckolib"
             },
@@ -4477,6 +4495,7 @@
         {
             "pakku_id": "fmEwFJByF5n2FrkH",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "inventory-tweaks-refoxed"
             },
@@ -4556,6 +4575,7 @@
         {
             "pakku_id": "I25wHE92iKmdYAz9",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "itemphysic-lite"
             },
@@ -4712,6 +4732,7 @@
         {
             "pakku_id": "n2o9XeuYgg4dKWzC",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "konkrete"
             },
@@ -5468,6 +5489,7 @@
         {
             "pakku_id": "sQT6Pqp2DV9dQGNC",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "mouse-tweaks"
             },
@@ -5504,6 +5526,7 @@
         {
             "pakku_id": "xI1juHmC4hepFCcq",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "my-server-is-compatible"
             },
@@ -5663,6 +5686,7 @@
         {
             "pakku_id": "v44vAp7vREOZVvOk",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "not-enough-animations"
             },
@@ -5782,6 +5806,7 @@
         {
             "pakku_id": "WUlpBsMd1Ztf1Rv1",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "oculus"
             },
@@ -6025,6 +6050,7 @@
         {
             "pakku_id": "1tUSPaevNWPBC3SG",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "particular-reforged"
             },
@@ -6098,6 +6124,7 @@
         {
             "pakku_id": "umWJAWHFoOcBOjAt",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "pick-up-notifier"
             },
@@ -6439,6 +6466,7 @@
         {
             "pakku_id": "QXBpbwRXpmbaHixl",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "resourceful-config"
             },
@@ -6475,6 +6503,7 @@
         {
             "pakku_id": "18IuoLEIRdaY1Jqy",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "resourceful-lib"
             },
@@ -6623,6 +6652,7 @@
         {
             "pakku_id": "QdAjCgrfEUQQjMWE",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "searchables"
             },
@@ -6819,6 +6849,7 @@
         {
             "pakku_id": "XSWzPp7PhHWY0nfU",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "sodium-options-api"
             },
@@ -6937,6 +6968,7 @@
         {
             "pakku_id": "roB1p3odTGtLzGw7",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "sound-physics-remastered"
             },
@@ -7325,6 +7357,7 @@
         {
             "pakku_id": "1Wy7Kh7abigYZ8oH",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "tfc-hot-or-not"
             },
@@ -7562,6 +7595,7 @@
         {
             "pakku_id": "aPVI4u2RvogsqbG8",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "tfc-vessel-tooltip"
             },
@@ -7709,6 +7743,7 @@
         {
             "pakku_id": "wXXpy8KNJ3zbDmw2",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "tfcgenviewer"
             },
@@ -7803,7 +7838,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.4.jar",
+                    "file_name": "TerraFirmaGreg-Core-Modern-0.6.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7812,19 +7847,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6533/713/TerraFirmaGreg-Core-Modern-0.6.4.jar",
-                    "id": "6533713",
+                    "url": "https://edge.forgecdn.net/files/6538/466/TerraFirmaGreg-Core-Modern-0.6.5.jar",
+                    "id": "6538466",
                     "parent_id": "513402",
                     "hashes": {
-                        "sha1": "de0e6e84858668e275ae17bf0dcfcb3e632dcfbd",
-                        "md5": "68cb34d847e4bd85b4588d48f6e09235"
+                        "sha1": "88cf64576cac21b31f33d707981eee24d74e40d4",
+                        "md5": "1b72e373973ebfa8a0ea4ffb6c61810c"
                     },
                     "required_dependencies": [
                         "890405",
                         "302973"
                     ],
-                    "size": 267458,
-                    "date_published": "2025-05-15T21:48:56.720Z"
+                    "size": 267409,
+                    "date_published": "2025-05-17T09:13:57.590Z"
                 }
             ]
         },
@@ -8053,6 +8088,7 @@
         {
             "pakku_id": "SZ5c7Jc5GOwlNtbX",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "xaeros-minimap"
             },
