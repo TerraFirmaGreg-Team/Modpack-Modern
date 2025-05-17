@@ -3,6 +3,10 @@
 ## [Unreleased]
 ### Changes
 
+## [0.9.7] - 17.05.2025
+### Changes
+- Fixed Crash Sprinkler.
+
 ## [0.9.6] - 16.05.2025
 ### Changes
 - Changed wooden tongs recipe from shapeless to shaped. @Oosyrag
