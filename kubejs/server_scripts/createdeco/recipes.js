@@ -47,6 +47,7 @@ const registerCreatedecoRecipes = (event) => {
 	event.remove({ id: 'createdeco:industrial_iron_bars' })
 	event.remove({ id: 'createdeco:zinc_bars_overlay' })
 	event.remove({ id: 'createdeco:zinc_bars' })
+	event.remove({ id: 'gtceu:assembler/bricks' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/tin_alloy' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/brass' })
 	event.remove({ type: 'minecraft:stonecutting', input: '#forge:storage_blocks/wrought_iron' })
@@ -129,6 +130,14 @@ const registerCreatedecoRecipes = (event) => {
 	//#region Brick Recipes
 	const brickTypes = ['blue', 'verdant', 'pearl', 'dean', 'dusk', 'scarlet', 'umber']
 	const powderTypes = ['lapis_lazuli', 'malachite', 'soda_ash', 'limonite', 'charcoal', 'hematite', 'cassiterite']
+
+	event.recipes.gtceu.assembler(`assembler_bricks`)
+			.itemInputs('5x minecraft:brick')
+			.inputFluids(Fluid.of('gtceu:concrete', 144))
+			.itemOutputs(`4x minecraft:bricks`)
+			.duration(50)
+			.circuit(2)
+			.EUt(7)
 
 	brickTypes.forEach(type => {
 		event.remove({ output: `createdeco:${type}_bricks` });

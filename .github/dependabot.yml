@@ -11,7 +11,7 @@ updates:
     schedule:
       interval: "weekly"
     labels:
-      - "1. Type: Dependencies"
+      - "Type: Dependencies"
     groups:
       dependencies:
         applies-to: version-updates

@@ -81,32 +81,6 @@ const registerFramedBlocksRecipes = (event) => {
 	}).id('framedblocks:framing_saw/framed_pressure_plate')
 	//#endregion
 
-	//#region Framed Obsidian Pressure Plate
-	event.shaped('framedblocks:framed_obsidian_pressure_plate', [
-		'AA',
-		'BB'
-	], {
-		A: '#forge:plates/obsidian',
-		B: 'framedblocks:framed_cube'
-	}).id('framedblocks:framed_obsidian_pressure_plate')
-
-	event.custom({
-		type: "framedblocks:frame",
-		additives: [
-			{
-				count: 1,
-				ingredient: {
-					tag: "forge:plates/obsidian"
-				}
-			}
-		],
-		material: 1536,
-		result: {
-			item: "framedblocks:framed_obsidian_pressure_plate"
-		}
-	}).id('framedblocks:framing_saw/framed_obsidian_pressure_plate')
-	//#endregion
-
 	//#region Framed Gold Pressure Plate
 	event.shaped('framedblocks:framed_gold_pressure_plate', [
 		'AA',
