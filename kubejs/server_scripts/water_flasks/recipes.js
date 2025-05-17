@@ -74,4 +74,34 @@ const registerWaterFlasksRecipes = (event) => {
 		.EUt(16)
 
 	//#endregion
+	
+	//Fixes for 2x2 crafts crashing when auto inputting to crafting grid via JEI by padding recipes to 3x3 with empty space.
+	//https://github.com/emilyploszaj/emi/issues/942
+	//Above solution seems to not seem to work, but removing the damage_inputs_shaped_crafting wrapper does, which may be undesirable.
+
+//	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('waterflasks:iron_flask', [
+			'AB',
+			'CD'
+		], {
+			A: 'waterflasks:iron_flask',
+			B: 'waterflasks:bladder',
+			C: '#forge:cloth',
+			D: '#forge:tools/knives'
+		})
+//	)
+	.id('waterflasks:crafting/repair_iron');
+
+//	event.recipes.tfc.damage_inputs_shaped_crafting(
+		event.shaped('waterflasks:iron_flask', [
+			'AB',
+			'CD'
+		], {
+			A: 'waterflasks:broken_iron_flask',
+			B: 'waterflasks:bladder',
+			C: '#forge:cloth',
+			D: '#forge:tools/knives'
+		})
+//	)
+	.id('waterflasks:crafting/repair_broken_iron');
 }
