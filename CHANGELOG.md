@@ -14,6 +14,7 @@
 - Shroomlights are no longer easily obtainable for permanent lighting pre-LV. @Pyritie
 - Made pressure plates cheaper. @Pyritie
 - Added chisel recipes for stone walls. @Pyritie
+- Reduced electricity cost of electric greenhouse. @Pyritie
 - More quest tweaks and fixes.
 
 ## [0.9.7] - 17.05.2025
