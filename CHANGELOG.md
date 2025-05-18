@@ -15,6 +15,7 @@
 - Made pressure plates cheaper. @Pyritie
 - Added chisel recipes for stone walls. @Pyritie
 - Reduced electricity cost of electric greenhouse. @Pyritie
+- Added vacuumizer recipe for dandelions and goldenrod to latex. @Pyritie
 - More quest tweaks and fixes.
 
 ## [0.9.7] - 17.05.2025
