@@ -563,6 +563,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(300)
 		.EUt(16)
 
+	event.smelting('firmalife:food/white_chocolate', 'firmalife:food/white_chocolate_blend')
+
 	// Dark Chocolate Blend
 	event.recipes.gtceu.mixer('firmalife:food/dark_chocolate_blend/milk')
 		.itemInputs('2x firmalife:food/cocoa_powder', '#tfc:sweetener')
@@ -593,6 +595,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(300)
 		.EUt(16)
 
+	event.smelting('firmalife:food/dark_chocolate', 'firmalife:food/dark_chocolate_blend')
+
 	// Milk Chocolate Blend
 	event.recipes.gtceu.mixer('firmalife:food/milk_chocolate_blend/milk')
 		.itemInputs('firmalife:food/cocoa_powder', 'firmalife:food/cocoa_butter', '#tfc:sweetener')
@@ -621,6 +625,8 @@ const registerFirmaLifeRecipes = (event) => {
 		.itemOutputs('2x firmalife:food/milk_chocolate_blend')
 		.duration(300)
 		.EUt(16)
+
+	event.smelting('firmalife:food/milk_chocolate', 'firmalife:food/milk_chocolate_blend')
 
 	// Strawberry Ice Cream
 	event.recipes.gtceu.mixer('firmalife:food/strawberry_ice_cream')
