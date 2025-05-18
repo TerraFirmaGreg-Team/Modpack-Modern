@@ -99,6 +99,10 @@ const registerGTCEURecipes = (event) => {
 		.duration(720)
 		.EUt(30)
 
+	// Add circuit to gregtech salt water mixer recipe
+	event.remove({ id: 'gtceu:mixer/salt_water' })
+	generateMixerRecipe(event, ['2x #forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 1, Fluid.of('gtceu:salt_water', 1000), 40, 7, 64, 'tfg:gtceu/salt_water')
+
 	//#endregion
 
 	//#region Выход: Каменный стержень
