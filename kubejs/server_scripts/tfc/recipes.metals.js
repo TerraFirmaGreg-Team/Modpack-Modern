@@ -279,6 +279,9 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.anvil('gtceu:small_steel_gear', '#forge:ingots/steel', ['hit_last', 'shrink_second_last', 'draw_third_last'])
 		.tier(4)
 		.id('tfc:anvil/small_steel_gear')
+	event.recipes.tfc.anvil('gtceu:small_black_steel_gear', '#forge:ingots/black_steel', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(5)
+		.id('tfc:anvil/small_black_steel_gear')
 	event.recipes.tfc.anvil('gtceu:small_brass_gear', '#forge:ingots/brass', ['hit_last', 'shrink_second_last', 'draw_third_last'])
 		.tier(2)
 		.id('tfc:anvil/small_brass_gear')
@@ -291,6 +294,9 @@ function registerTFCMetalsRecipes(event) {
 	event.recipes.tfc.anvil('gtceu:small_black_bronze_gear', '#forge:ingots/black_bronze', ['hit_last', 'shrink_second_last', 'draw_third_last'])
 		.tier(2)
 		.id('tfc:anvil/small_black_bronze_gear')
+	event.recipes.tfc.anvil('gtceu:small_red_alloy_gear', '#forge:ingots/red_alloy', ['hit_last', 'shrink_second_last', 'draw_third_last'])
+		.tier(2)
+		.id('tfc:anvil/small_red_alloy_gear')
 
 	// Cast iron -> Raw Iron Bloom
 	event.recipes.tfc.bloomery('tfc:raw_iron_bloom', 'minecraft:charcoal', Fluid.of('gtceu:iron', 144), 15000)
