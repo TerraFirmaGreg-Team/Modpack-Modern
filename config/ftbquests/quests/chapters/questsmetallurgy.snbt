@@ -427,6 +427,7 @@
 					id: "tfc:kaolin_clay"
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.kaolin_clay.title}"
 			x: 13.5d
@@ -884,6 +885,7 @@
 				}
 				title: "Any #tfc:blast_furnace_fuel"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.blast_furnace_fuel.title}"
 			x: 23.5d
