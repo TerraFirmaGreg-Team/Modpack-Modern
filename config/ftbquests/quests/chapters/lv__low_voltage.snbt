@@ -1308,13 +1308,7 @@
 		}
 		{
 			dependencies: ["22510C5F2386B453"]
-			description: [
-				"{quests.steam_age.alternator.desc.1}"
-				"{@pagebreak}"
-				"{quests.steam_age.alternator.desc.2}"
-				""
-				"{image:tfg:textures/quests/alternator_multiblock.png width:100 height:100 align:center}"
-			]
+			description: ["{quests.steam_age.alternator.desc.1}"]
 			id: "2DC24661CAD557B0"
 			optional: true
 			subtitle: "{quests.steam_age.alternator.subtitle}"

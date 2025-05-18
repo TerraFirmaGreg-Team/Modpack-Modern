@@ -324,4 +324,13 @@ const registerTFCRecipes = (event) => {
 			.circuit(6)
 			.EUt(GTValues.VA[GTValues.ULV])
 	});
+
+	// Jar lids
+
+	event.shapeless('8x tfc:jar_lid', [
+		'gtceu:tin_ingot',
+		'#forge:tools/hammers',
+		'#forge:tools/saws'
+	]).id('tfc:shapeless/jar_lid')
+
 }

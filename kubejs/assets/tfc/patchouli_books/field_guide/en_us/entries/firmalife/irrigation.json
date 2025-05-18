@@ -13,12 +13,14 @@
 			"text": "The sprinkler is made with a $(thing)Copper Plate$()."
 		},
 		{
-			"type": "patchouli:text",
-			"text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Fluid Pipes$() to them. You can pump fluid into them with a $(thing)Mechanical Pump$()."
+			"title": "Piping",
+			"item": "gtceu:copper_tiny_fluid_pipe",
+			"type": "patchouli:spotlight",
+			"text": "Sprinklers must be connected to a system of pipes that feed it water in order to work. This is done by connecting a series of $(thing)Fluid Pipes$() to them. You can pump water into them with a $(thing)Mechanical Pump$()."
 		},
 		{
 			"type": "patchouli:text",
-			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall. You will need a Drum or Fluid Tank attached to each sprinkler in order for them to work."
+			"text": "You can right-click a pipe with a GregTech Frame (such as a $(thing)Copper Frame$()) to make them flush with the wall, or use a Greenhouse Port. You can then attach your sprinkler directly to the pipe! Right-click fluid pipes with a wrench to change their direction, and sneak-right-click them with an $(thing)empty offhand$() to make them one-way."
 		}
 	],
 	"read_by_default": true,

@@ -247,17 +247,17 @@ jobs:
           path: ./build/curseforge/${{ needs.info.outputs.project_full_name }}-curseforge.zip
           if-no-files-found: error
 
-      - name: 📁 Rename artifact modrinth
-        run: |
-          cd ./build/modrinth/
-          mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
+      # - name: 📁 Rename artifact modrinth
+      #   run: |
+      #     cd ./build/modrinth/
+      #     mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
 
-      - name: 🚀 Upload artifact modrinth
-        uses: actions/upload-artifact@v4.6.2
-        with:
-          name: ${{ needs.info.outputs.project_full_name }}-modrinth
-          path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
-          if-no-files-found: warn
+      # - name: 🚀 Upload artifact modrinth
+      #   uses: actions/upload-artifact@v4.6.2
+      #   with:
+      #     name: ${{ needs.info.outputs.project_full_name }}-modrinth
+      #     path: ./build/modrinth/${{ needs.info.outputs.project_full_name }}-modrinth.mrpack
+      #     if-no-files-found: warn
 
   build-server:
     name: 📦 Build Server
@@ -376,9 +376,9 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_full_name }}-curseforge.zip ]; then
             echo '::error::No value found for artifact `curseforge.zip`.' && exit 1
           fi
-          if [ ! -f ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack ]; then
-            echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
-          fi
+          # if [ ! -f ${{ needs.info.outputs.project_full_name }}-modrinth.mrpack ]; then
+          #   echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
+          # fi
           if [ ! -f ${{ needs.info.outputs.project_full_name }}-serverpack.zip ]; then
             echo '::error::No value found for artifact `serverpack.zip`.' && exit 1
           fi
@@ -387,10 +387,10 @@ jobs:
           fi
           echo "✔️ All artifacts found"
 
-      - name: 🚫 Сlose fixed in dev
+      - name: 🚫 Сlose label "Done"
         uses: Xikaro/close-issues-based-on-label@master
         env:
-          LABEL: "2. Status: In Dev"
+          LABEL: "Status: Done"
           COMMENT: In ${{ needs.info.outputs.project_version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
