@@ -164,12 +164,8 @@ function generatePlatedBlockRecipe(event, material) {
 		.EUt(GTValues.VA[GTValues.LV])
 }
 
-//const $MRM = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.IMaterialRegistryManager')
-
 function forEachMaterial(iterator) {
-	//if (GTMaterialRegistry.getPhase() === $MRM.Phase.CLOSED || GTMaterialRegistry.getPhase() === $MRM.Phase.FROZEN) {
-		GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-			iterator(material)
-		})
-	//}
+	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		iterator(material)
+	}
 }
