@@ -1449,6 +1449,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:windmill_bearing')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(1)
 
 	// #endregion
 
@@ -1848,6 +1849,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:gantry_carriage')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(2)
 
 	event.shaped('create:weighted_ejector', [
 		' B ',
