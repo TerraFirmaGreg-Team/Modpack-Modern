@@ -7,25 +7,35 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "tfc:food/venison",
+					"name": "minecraft:rotten_flesh",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
-							"add": false,
 							"count": {
-								"min": 4,
-								"max": 10,
+								"max": 2,
+								"min": 1,
 								"type": "minecraft:uniform"
 							}
-						},
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:stick",
+					"functions": [
 						{
+							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
+								"max": 2,
+								"min": 0,
+								"type": "minecraft:uniform"
+							}
 						}
 					]
 				}
@@ -42,22 +52,12 @@
 						{
 							"function": "minecraft:set_count",
 							"count": {
-								"type": "minecraft:uniform",
-								"min": 1,
-								"max": 6
+								"max": 1,
+								"min": 0,
+								"type": "minecraft:uniform"
 							}
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "loot_pool",
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "beneath:cursed_hide"
 				}
 			]
 		}
