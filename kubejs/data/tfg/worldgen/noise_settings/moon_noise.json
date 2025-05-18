@@ -1,5 +1,5 @@
 {
-	"sea_level": -48,
+	"sea_level": 0,
 	"disable_mob_generation": false,
 	"aquifers_enabled": false,
 	"ore_veins_enabled": false,
@@ -11,7 +11,7 @@
 		"Name": "minecraft:air"
 	},
 	"noise": {
-		"min_y": -64,
+		"min_y": 0,
 		"height": 384,
 		"size_horizontal": 1,
 		"size_vertical": 2
@@ -62,8 +62,8 @@
 			"type": "minecraft:max",
 			"argument1": {
 				"type": "minecraft:y_clamped_gradient",
-				"from_y": -64,
-				"to_y": -55,
+				"from_y": 0,
+				"to_y": 10,
 				"from_value": 1,
 				"to_value": -1
 			},
@@ -220,7 +220,7 @@
 				"if_true": {
 					"type": "minecraft:y_above",
 					"anchor": {
-						"absolute": 87
+						"absolute": 70
 					},
 					"surface_depth_multiplier": 1,
 					"add_stone_depth": false
@@ -1132,10 +1132,10 @@
 					"type": "minecraft:vertical_gradient",
 					"random_name": "tfg:between_top_and_middle_rock_layers",
 					"false_at_and_above": {
-						"absolute": 68
+						"absolute": 40
 					},
 					"true_at_and_below": {
-						"absolute": 60
+						"absolute": 35
 					}
 				},
 				"then_run": {
