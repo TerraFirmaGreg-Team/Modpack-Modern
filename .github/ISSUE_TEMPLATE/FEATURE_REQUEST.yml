@@ -1,7 +1,9 @@
 name: "Feature request"
 description: "Request a new feature or a change to an existing one."
 title: "[🪶]: "
-labels: [ "1. Type: Feature" ]
+labels: [ "Status: Backlog" ]
+projects: ["TerraFirmaGreg-Team/10"]
+type: "Feature"
 
 body:
   - type: checkboxes

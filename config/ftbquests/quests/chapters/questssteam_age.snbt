@@ -23,10 +23,8 @@
 		{
 			id: "23A27702FF816291"
 			linked_quest: "6903C72A254A7B08"
-			shape: "octagon"
-			size: 2.0d
-			x: -13.5d
-			y: 14.5d
+			x: -14.5d
+			y: 6.0d
 		}
 		{
 			id: "1F1E7097C015BE33"
@@ -726,7 +724,8 @@
 			dependencies: ["46FA9DD4755A5548"]
 			description: ["{quests.steam_age.extractor.desc}"]
 			id: "1DF4DBE41BB0B6FD"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.steam_age.extractor.subtitle}"
 			tasks: [{
@@ -1161,7 +1160,7 @@
 				type: "item"
 			}]
 			title: "{quests.steam_age.vacuum_chamber.title}"
-			x: -13.5d
+			x: -14.5d
 			y: 12.0d
 		}
 		{
@@ -1578,7 +1577,7 @@
 			dependencies: ["49896161B31DB7B4"]
 			description: [
 				"There is currently a bug with the Mechanical Mixer where some recipes want an actual Programmed Circuit item."
-				"For the time being, you can craft these out of Sticks."
+				"For the time being, you can craft these with a Stick and a Wrench."
 				""
 				"This will be fixed whenever we're able to update Greate to the latest version, which requires Create 6, which requires other Create addons to be updated... hopefully that should be soon."
 			]

@@ -79,6 +79,8 @@ const registerCreateBlockTags = (event) => {
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+
+	event.add('tfc:forge_invisible_whitelist', 'create:basin')
 }
 
 

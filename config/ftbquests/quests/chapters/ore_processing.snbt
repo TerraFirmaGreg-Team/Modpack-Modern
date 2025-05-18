@@ -22,25 +22,18 @@
 			id: "5D09BEE61210DF02"
 			size: 1.5d
 			subtitle: "{quests.ore_proc.native_ore.subtitle}"
-			tasks: [
-				{
-					id: "047DA2872D107BA0"
-					item: {
-						Count: 1
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "or(item_tag(tfc:ore_pieces))"
-						}
+			tasks: [{
+				id: "047DA2872D107BA0"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item_tag(tfc:ore_pieces))"
 					}
-					optional_task: true
-					title: "{quests.ore_proc.native_ore.task}"
-					type: "item"
 				}
-				{
-					id: "2D0D9226FDB3CAC9"
-					type: "checkmark"
-				}
-			]
+				title: "{quests.ore_proc.native_ore.task}"
+				type: "item"
+			}]
 			title: "{quests.ore_proc.native_ore.title}"
 			x: 0.5d
 			y: -8.5d
