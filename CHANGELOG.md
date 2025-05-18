@@ -12,6 +12,7 @@
 - Decreased the frequency of caves/canyons so the world looks less 'scarred'. @Pyritie
 - Added mixer recipe for Sugar Water. @Pyritie
 - Shroomlights are no longer easily obtainable for permanent lighting pre-LV. @Pyritie
+- Made pressure plates cheaper. @Pyritie
 - More quest tweaks and fixes.
 
 ## [0.9.7] - 17.05.2025
