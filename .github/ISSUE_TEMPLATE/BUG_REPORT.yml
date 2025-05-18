@@ -1,7 +1,9 @@
 name: "Bug report"
 description: "Report a bug where something is not working as expected, which does not crash the game."
 title: "[🐛]: "
-labels: [ "1. Type: Bug", "2. Status: Unverified" ]
+labels: [ "Status: Backlog" ]
+projects: ["TerraFirmaGreg-Team/10"]
+type: "Bug"
 
 body:
   - type: checkboxes
