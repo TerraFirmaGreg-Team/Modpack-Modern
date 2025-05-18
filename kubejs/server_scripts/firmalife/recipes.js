@@ -797,4 +797,12 @@ const registerFirmaLifeRecipes = (event) => {
 	event.shaped('firmalife:drying_mat', ['AAA'], { A: 'tfc:plant/winged_kelp' }).id('tfg:shaped/drying_mat_winged_kelp')
 
 	// #endregion
+
+	event.recipes.gtceu.mixer('sugar_water')
+		.itemInputs('#tfc:sweetener')
+		.inputFluids(Fluid.of('minecraft:water', 1000))
+		.outputFluids(Fluid.of('firmalife:sugar_water', 500))
+		.circuit(5)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(200)
 }
