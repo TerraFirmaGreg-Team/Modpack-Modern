@@ -7,26 +7,6 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
-						}
-					],
 					"name": "ae2:ender_dust"
 				}
 			]
@@ -46,15 +26,6 @@
 								"min": 2.0
 							},
 							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4.0,
-								"min": 2.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "minecraft:chorus_fruit"
