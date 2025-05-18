@@ -1,16 +1,16 @@
-#This is an example boolean property
-exampleBoolean = true
-#This is an example int property
-exampleInt = 42
-#This is an example string property
-exampleString = "Hello World"
 #This is an example enum property
 #Allowed Values: Hello, World
 exampleEnum = "Hello"
-#This is an example string list property
-exampleStringList = ["Hello", "World"]
+#This is an example int property
+exampleInt = 42
 #This is an example int list property
 exampleIntList = [12, 24]
+#This is an example boolean property
+exampleBoolean = true
+#This is an example string property
+exampleString = "Hello World"
+#This is an example string list property
+exampleStringList = ["Hello", "World"]
 #This is an example enum list property
 exampleEnumList = ["Hello", "World"]
 #This is an example resource location set property
