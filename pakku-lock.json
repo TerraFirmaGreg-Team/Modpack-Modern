@@ -2605,6 +2605,48 @@
             ]
         },
         {
+            "pakku_id": "AzVGsOteKm8d4n0m",
+            "pakku_links": [
+                "GOh1ocuoLHhYMq2J"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "dynamic-view"
+            },
+            "name": {
+                "curseforge": "Dynamic View[Forge]"
+            },
+            "id": {
+                "curseforge": "366140"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "dynview-1.20.1-4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5345/889/dynview-1.20.1-4.0.jar",
+                    "id": "5345889",
+                    "parent_id": "366140",
+                    "hashes": {
+                        "sha1": "626d970796531ae63a4029176ef0db07b2109c4f",
+                        "md5": "7efca5128021afe6101defb13e5ae486"
+                    },
+                    "required_dependencies": [
+                        "326652"
+                    ],
+                    "size": 22525,
+                    "date_published": "2024-05-15T14:58:36.057Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "6rI6AyhyQU3lnCpg",
             "type": "MOD",
             "slug": {
@@ -3045,6 +3087,51 @@
                     ],
                     "size": 1954591,
                     "date_published": "2023-11-02T08:11:16.840Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MxMrrOyyu2PvCSN8",
+            "pakku_links": [
+                "ieNTt8vgrcfO2nk9",
+                "0eaY2qNvkpQzolFy",
+                "hcwrEZKe0UXf0qM5"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-chunks-forge"
+            },
+            "name": {
+                "curseforge": "FTB Chunks (Forge)"
+            },
+            "id": {
+                "curseforge": "314906"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-chunks-forge-2001.3.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6431/735/ftb-chunks-forge-2001.3.6.jar",
+                    "id": "6431735",
+                    "parent_id": "314906",
+                    "hashes": {
+                        "sha1": "7fde7917655a3356cab92f17ad2bca34962c4928",
+                        "md5": "64af750c0cbcadd4b27fb58236654814"
+                    },
+                    "required_dependencies": [
+                        "404465",
+                        "419699",
+                        "404468"
+                    ],
+                    "size": 1158842,
+                    "date_published": "2025-04-17T08:07:07.033Z"
                 }
             ]
         },
@@ -5838,43 +5925,6 @@
                     "required_dependencies": [],
                     "size": 2851119,
                     "date_published": "2024-12-24T23:33:51.040Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "nluG9VeKf4nnS0st",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "open-parties-and-claims"
-            },
-            "name": {
-                "curseforge": "Open Parties and Claims"
-            },
-            "id": {
-                "curseforge": "636608"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "open-parties-and-claims-forge-1.20.1-0.24.0.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6242/869/open-parties-and-claims-forge-1.20.1-0.24.0.jar",
-                    "id": "6242869",
-                    "parent_id": "636608",
-                    "hashes": {
-                        "sha1": "884924b3820d51f0d6ae0f0b5b8bc35aefaf1920",
-                        "md5": "dc2c65305e9ce2ac6ff1c5d5801a31f8"
-                    },
-                    "required_dependencies": [],
-                    "size": 1246814,
-                    "date_published": "2025-02-27T09:15:57.640Z"
                 }
             ]
         },

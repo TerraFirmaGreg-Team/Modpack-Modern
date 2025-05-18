@@ -1,0 +1,15 @@
+
+[guides]
+	#Never load translated guide pages for your current language.
+	ignoreTranslatedGuides = false
+
+[gui]
+	#Adapt GUI scaling for the Guide screen to fix Minecraft font issues at GUI scale 1 and 3.
+	adaptiveScaling = true
+	#Use the full width of the screen for the guide when it is opened.
+	fullWidthLayout = true
+
+[debug]
+	#Show debugging overlays in GUI on mouse-over.
+	showDebugGuiOverlays = false
+
