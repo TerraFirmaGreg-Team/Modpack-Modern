@@ -16,15 +16,6 @@
 								"min": 1.0
 							},
 							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					],
 					"name": "minecraft:magma_cream"

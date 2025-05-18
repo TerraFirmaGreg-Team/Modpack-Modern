@@ -16,15 +16,6 @@
 								"min": 1,
 								"type": "minecraft:uniform"
 							}
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2.0,
-								"min": 1.0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					]
 				}
@@ -45,15 +36,6 @@
 								"min": 0,
 								"type": "minecraft:uniform"
 							}
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					]
 				}
@@ -74,15 +56,6 @@
 								"min": 0,
 								"type": "minecraft:uniform"
 							}
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:looting_enchant"
 						}
 					]
 				}

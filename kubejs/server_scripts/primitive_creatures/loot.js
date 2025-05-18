@@ -3,8 +3,10 @@
 function registerPrimitiveCreatesLoots(event) {
 
 	event.addEntityLootModifier('kaolinclayze:tfc')
-		.addWeightedLoot([7,15], ['tfc:kaolin_clay', 'minecraft:clay_ball'])
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([12,16], ['tfc:kaolin_clay', 'minecraft:clay_ball'])
 
 	event.addEntityLootModifier('kaolinclayze:golem_2')
-		.addWeightedLoot([7,15], ['gtceu:poor_raw_graphite', 'gtceu:raw_graphite', 'gtceu:rich_raw_graphite'])
+		.removeLoot(ItemFilter.ALWAYS_TRUE)
+		.addWeightedLoot([4,6], ['gtceu:rich_raw_graphite'])
 }
