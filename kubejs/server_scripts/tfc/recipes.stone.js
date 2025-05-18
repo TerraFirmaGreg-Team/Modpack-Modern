@@ -467,6 +467,14 @@ function registerTFCStoneRecipes(event) {
 
 		//#region Стена
 
+		event.recipes.tfc.chisel(`tfc:rock/raw/${stone}_wall`, `tfc:rock/raw/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/cobble/${stone}_wall`, `tfc:rock/cobble/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/smooth/${stone}_wall`, `tfc:rock/smooth/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/bricks/${stone}_wall`, `tfc:rock/bricks/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/cracked_bricks/${stone}_wall`, `tfc:rock/cracked_bricks/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/mossy_cobble/${stone}_wall`, `tfc:rock/mossy_cobble/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/mossy_bricks/${stone}_wall`, `tfc:rock/mossy_bricks/${stone}_slab`, 'smooth')
+
 		// Сырой
 		event.recipes.gtceu.macerator(`raw_wall_${stone}_to_dust`)
 			.itemInputs(`tfc:rock/raw/${stone}_wall`)
