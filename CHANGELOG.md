@@ -2,7 +2,16 @@
 
 ## [Unreleased]
 ### Changes
+- Changed to a different mod to claim/forceload chunks - use Ctrl+M to open the interface. @Xikaro
+- Fixed a bug where sometimes, materials would fail to load and a lot of recipes would break. (#1028) @Pyritie
+- Changes to entity loot tables, so now butchery knife gives more meat drops but nothing else. (#1035) @Pyritie 
 - Remove various overlapping recipe conflicts. @Oosyrag
+- Improved crafting of GregTech credits, if servers want to use them as currency. (#944) @Pyritie
+- Fixed some missing behaviours with damascus steel tools from bastion chests. (#1010) @Pyritie 
+- Increased the frequency of some overworld structures. @Pyritie
+- Decreased the frequency of caves/canyons so the world looks less 'scarred'. @Pyritie
+- Added mixer recipe for Sugar Water. @Pyritie
+- More quest tweaks and fixes.
 
 ## [0.9.7] - 17.05.2025
 ### Changes
