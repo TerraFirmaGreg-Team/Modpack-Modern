@@ -13,6 +13,7 @@
 - Added mixer recipe for Sugar Water. @Pyritie
 - Shroomlights are no longer easily obtainable for permanent lighting pre-LV. @Pyritie
 - Made pressure plates cheaper. @Pyritie
+- Added chisel recipes for stone walls. @Pyritie
 - More quest tweaks and fixes.
 
 ## [0.9.7] - 17.05.2025
