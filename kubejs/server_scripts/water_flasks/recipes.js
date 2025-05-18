@@ -79,29 +79,29 @@ const registerWaterFlasksRecipes = (event) => {
 	//https://github.com/emilyploszaj/emi/issues/942
 	//Above solution seems to not seem to work, but removing the damage_inputs_shaped_crafting wrapper does, which may be undesirable.
 
-//	event.recipes.tfc.damage_inputs_shaped_crafting(
+	event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('waterflasks:iron_flask', [
-			'AB',
-			'CD'
+			'AB ',
+			'CD ',
+			'   '
 		], {
 			A: 'waterflasks:iron_flask',
 			B: 'waterflasks:bladder',
 			C: '#forge:cloth',
 			D: '#forge:tools/knives'
-		})
-//	)
+		}))
 	.id('waterflasks:crafting/repair_iron');
 
-//	event.recipes.tfc.damage_inputs_shaped_crafting(
+	event.recipes.tfc.damage_inputs_shaped_crafting(
 		event.shaped('waterflasks:iron_flask', [
-			'AB',
-			'CD'
+			'AB ',
+			'CD ',
+			'   '
 		], {
 			A: 'waterflasks:broken_iron_flask',
 			B: 'waterflasks:bladder',
 			C: '#forge:cloth',
 			D: '#forge:tools/knives'
-		})
-//	)
+		}))
 	.id('waterflasks:crafting/repair_broken_iron');
 }
