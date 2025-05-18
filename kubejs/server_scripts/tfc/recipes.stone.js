@@ -33,19 +33,18 @@ function registerTFCStoneRecipes(event) {
 
 		// ? -> Сырая нажимная пластина
 		event.shaped(`tfc:rock/pressure_plate/${stone}`, [
-			'ABA',
+			' B ',
 			'CDC',
-			'AEA'
+			' E '
 		], {
-			A: '#forge:screws/wrought_iron',
 			B: '#tfc:hammers',
 			C: `tfc:rock/raw/${stone}_slab`,
-			D: '#forge:springs',
+			D: '#forge:small_springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`tfc:crafting/rock/${stone}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`${stone}_raw_pressure_plate`)
-			.itemInputs('#forge:springs', `2x tfc:rock/raw/${stone}_slab`)
+			.itemInputs('#forge:small_springs', `2x tfc:rock/raw/${stone}_slab`)
 			.circuit(0)
 			.itemOutputs(`2x tfc:rock/pressure_plate/${stone}`)
 			.duration(50)
