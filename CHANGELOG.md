@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 ### Changes
+
+## [0.9.8] - 19.05.2025
+### Changes
 - Changed to a different mod to claim/forceload chunks - use Ctrl+M to open the interface. @Xikaro
 - Fixed a bug where sometimes, materials would fail to load and a lot of recipes would break. (#1028) @Pyritie
 - Changes to entity loot tables, so now butchery knife gives more meat drops but nothing else. (#1035) @Pyritie 
