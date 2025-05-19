@@ -478,8 +478,6 @@
 		}
 		{
 			dependencies: [
-				"5301A38F7EA81140"
-				"5E186CD5E83BFDF0"
 				"72F1C122FC26229C"
 				"31CE13462759950C"
 				"5A936E9BCF30AA3D"
@@ -493,6 +491,7 @@
 				id: "71DAE9C9C0192316"
 				item: "tfc:fire_clay"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.fire_clay.title}"
 			x: 17.5d
@@ -618,6 +617,23 @@
 					}
 					optional_task: true
 					type: "item"
+				}
+				{
+					count: 12L
+					id: "012401052AF71561"
+					item: {
+						Count: 12
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:wrought_iron_plate"
+					}
+					optional_task: true
+					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.fire_bricks.title}"
