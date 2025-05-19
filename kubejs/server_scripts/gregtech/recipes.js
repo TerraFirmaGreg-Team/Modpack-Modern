@@ -99,6 +99,10 @@ const registerGTCEURecipes = (event) => {
 		.duration(720)
 		.EUt(30)
 
+	// Add circuit to gregtech salt water mixer recipe
+	event.remove({ id: 'gtceu:mixer/salt_water' })
+	generateMixerRecipe(event, ['2x #forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 1, Fluid.of('gtceu:salt_water', 1000), 40, 7, 64, 'tfg:gtceu/salt_water')
+
 	//#endregion
 
 	//#region Выход: Каменный стержень
@@ -1081,6 +1085,42 @@ const registerGTCEURecipes = (event) => {
 		.itemOutputs('minecraft:hopper')
 		.circuit(8)
 		.duration(200)
+		.EUt(2)
+
+	//#endregion
+
+	//#region Credits
+
+	event.remove({ id: 'gtceu:forming_press/credit_cupronickel' })
+
+	event.recipes.gtceu.forming_press('gtceu:copper_credit')
+		.itemInputs('#forge:ingots/copper')
+		.notConsumable('gtceu:credit_casting_mold')
+		.itemOutputs('8x gtceu:copper_credit')
+		.duration(50)
+		.EUt(2)
+
+	event.recipes.tfc.anvil('8x gtceu:copper_credit', '#forge:ingots/copper', ['bend_last', 'punch_not_last', 'draw_not_last'])
+		.tier(1)
+		.id(`tfc:anvil/copper_credit`)
+
+	event.recipes.tfc.heating('gtceu:copper_credit', GTMaterials.Copper.getProperty(TFGPropertyKey.TFC_PROPERTY).getMeltTemp())
+		.resultFluid(Fluid.of(GTMaterials.Copper.getFluid(), 144 / 8))
+		.id(`tfc:heating/copper_credit`)
+
+	event.custom({
+		type: 'vintageimprovements:curving',
+		ingredients: [{ tag: 'forge:ingots/copper' }],
+		itemAsHead: 'gtceu:credit_casting_mold',
+		results: [{ item: 'gtceu:copper_credit', count: 8 }],
+		processingTime: 50
+	}).id(`tfg:vi/curving/copper_credit`)
+
+	event.recipes.gtceu.extractor('gtceu:copper_credit')
+		.itemInputs('gtceu:copper_credit')
+		.outputFluids(Fluid.of(GTMaterials.Copper.getFluid(), 144 / 8))
+		.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+		.duration(10)
 		.EUt(2)
 
 	//#endregion
