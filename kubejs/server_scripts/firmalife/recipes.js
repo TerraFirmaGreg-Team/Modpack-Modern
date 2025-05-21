@@ -447,9 +447,16 @@ const registerFirmaLifeRecipes = (event) => {
 	//#region Смешивание в миске
 
 	// Тесто для пиццы
-	event.recipes.gtceu.mixer('firmalife:food/pizza_dough')
+	event.recipes.gtceu.mixer('firmalife:food/pizza_dough_olive_oil')
 		.itemInputs('firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt')
 		.inputFluids(Fluid.of('tfc:olive_oil', 1000))
+		.itemOutputs('4x firmalife:food/pizza_dough')
+		.duration(300)
+		.EUt(16)
+
+	event.recipes.gtceu.mixer('firmalife:food/pizza_dough_soybean_oil')
+		.itemInputs('firmalife:spice/basil_leaves', '#tfc:foods/dough', 'tfc:powder/salt')
+		.inputFluids(Fluid.of('firmalife:soybean_oil', 1000))
 		.itemOutputs('4x firmalife:food/pizza_dough')
 		.duration(300)
 		.EUt(16)
@@ -743,4 +750,13 @@ const registerFirmaLifeRecipes = (event) => {
 		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV])
 		.duration(200)
+
+	event.smelting('firmalife:food/dehydrated_soybeans', 'tfc:food/soybean')
+
+	event.recipes.gtce.fermenter('soybean_oil')
+		.itemInputs('firmalife:food/soybean_paste')
+		.inputFluids(Fluid.of('minecraft:water', 100))
+		.outputFluids(Fluid.of('firmalife:soybean_oil', 250))
+		.EUt(GTValues.VA[GTValues.ULV])
+		.duration(600)
 }

@@ -320,19 +320,19 @@ function registerTFCMachineRecipes(event) {
 
 	global.TFC_ALCOHOL.forEach(alcohol => {
 		event.recipes.gtceu.fermenter(`tfg:tfc/vinegar/${alcohol.id.replace(':', '_')}`)
-		.itemInputs('#tfc:foods/fruits')
-		.inputFluids(Fluid.of(alcohol.id, 250))
-		.outputFluids(Fluid.of('tfc:vinegar', 250))
-		.duration(600)
-		.EUt(28)
+			.itemInputs('#tfc:foods/fruits')
+			.inputFluids(Fluid.of(alcohol.id, 250))
+			.outputFluids(Fluid.of('tfc:vinegar', 250))
+			.duration(600)
+			.EUt(28)
 	})
 
 	event.recipes.gtceu.mixer('tfg:tfc/brine')
-	.inputFluids(Fluid.of('tfc:salt_water', 900))
-	.inputFluids(Fluid.of('tfc:vinegar', 100))
-	.outputFluids(Fluid.of('tfc:brine', 1000))
-	.duration(100)
-	.EUt(16)
+		.inputFluids(Fluid.of('tfc:salt_water', 900))
+		.inputFluids(Fluid.of('tfc:vinegar', 100))
+		.outputFluids(Fluid.of('tfc:brine', 1000))
+		.duration(100)
+		.EUt(16)
 
 	//#endregion
 	
