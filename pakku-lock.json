@@ -2632,7 +2632,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "diggerhelmet-1.20.1-1.0.0.18.jar",
+                    "file_name": "diggerhelmet-1.20.1-1.0.0.19.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2641,20 +2641,20 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6429/110/diggerhelmet-1.20.1-1.0.0.18.jar",
-                    "id": "6429110",
+                    "url": "https://edge.forgecdn.net/files/6536/317/diggerhelmet-1.20.1-1.0.0.19.jar",
+                    "id": "6536317",
                     "parent_id": "1243596",
                     "hashes": {
-                        "sha1": "2020d274cfb18c26c1ee079bf45673e781a6bae5",
-                        "md5": "fa685357a3a22e9b946d00d3f5ad1c65"
+                        "sha1": "a0e14d39f0e390df58569b3fd4dd58bd25b5cb2c",
+                        "md5": "8a0c4e65772389d552ddfde1f1ff0f21"
                     },
                     "required_dependencies": [
                         "302973",
-                        "388172",
-                        "309927"
+                        "309927",
+                        "388172"
                     ],
-                    "size": 163250,
-                    "date_published": "2025-04-16T13:29:52.010Z"
+                    "size": 166512,
+                    "date_published": "2025-05-16T17:31:26.657Z"
                 }
             ]
         },
@@ -2770,6 +2770,48 @@
                     ],
                     "size": 239365,
                     "date_published": "2025-04-11T20:29:43.010Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "AzVGsOteKm8d4n0m",
+            "pakku_links": [
+                "GOh1ocuoLHhYMq2J"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "dynamic-view"
+            },
+            "name": {
+                "curseforge": "Dynamic View[Forge]"
+            },
+            "id": {
+                "curseforge": "366140"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "dynview-1.20.1-4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5345/889/dynview-1.20.1-4.0.jar",
+                    "id": "5345889",
+                    "parent_id": "366140",
+                    "hashes": {
+                        "sha1": "626d970796531ae63a4029176ef0db07b2109c4f",
+                        "md5": "7efca5128021afe6101defb13e5ae486"
+                    },
+                    "required_dependencies": [
+                        "326652"
+                    ],
+                    "size": 22525,
+                    "date_published": "2024-05-15T14:58:36.057Z"
                 }
             ]
         },
@@ -3214,6 +3256,51 @@
                     ],
                     "size": 1954591,
                     "date_published": "2023-11-02T08:11:16.840Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MxMrrOyyu2PvCSN8",
+            "pakku_links": [
+                "ieNTt8vgrcfO2nk9",
+                "0eaY2qNvkpQzolFy",
+                "hcwrEZKe0UXf0qM5"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-chunks-forge"
+            },
+            "name": {
+                "curseforge": "FTB Chunks (Forge)"
+            },
+            "id": {
+                "curseforge": "314906"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-chunks-forge-2001.3.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6431/735/ftb-chunks-forge-2001.3.6.jar",
+                    "id": "6431735",
+                    "parent_id": "314906",
+                    "hashes": {
+                        "sha1": "7fde7917655a3356cab92f17ad2bca34962c4928",
+                        "md5": "64af750c0cbcadd4b27fb58236654814"
+                    },
+                    "required_dependencies": [
+                        "404465",
+                        "419699",
+                        "404468"
+                    ],
+                    "size": 1158842,
+                    "date_published": "2025-04-17T08:07:07.033Z"
                 }
             ]
         },
@@ -3849,7 +3936,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Firmalife-1.20.1-2.1.18.jar",
+                    "file_name": "Firmalife-1.20.1-2.1.19.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3858,18 +3945,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6438/438/Firmalife-1.20.1-2.1.18.jar",
-                    "id": "6438438",
+                    "url": "https://edge.forgecdn.net/files/6539/645/Firmalife-1.20.1-2.1.19.jar",
+                    "id": "6539645",
                     "parent_id": "453394",
                     "hashes": {
-                        "sha1": "de9ec2980e5f09a28415e489aa24eec5840a010d",
-                        "md5": "1275fd720bd36ed1144e558d8c395267"
+                        "sha1": "10a33eb2e568207ade545676ea744cb6b429d8cf",
+                        "md5": "f84e578a7cc607a70c33ed1972e55767"
                     },
                     "required_dependencies": [
                         "302973"
                     ],
-                    "size": 4597517,
-                    "date_published": "2025-04-19T02:24:56.657Z"
+                    "size": 4601850,
+                    "date_published": "2025-05-17T16:15:39.383Z"
                 }
             ]
         },
@@ -4220,46 +4307,50 @@
             ]
         },
         {
-            "pakku_id": "JYHQVYwIGQYRij0G",
+            "pakku_id": "ByQ927ZgDddtDJUH",
             "pakku_links": [
-                "9W4FCgljktwrd38M"
+                "2wSbyvuI5uFxrZW6",
+                "0r9Ghrm3IbrHUVzA"
             ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
-                "modrinth": "greate"
+                "modrinth": "greate",
+                "curseforge": "greate"
             },
             "name": {
-                "modrinth": "Greate"
+                "modrinth": "Greate",
+                "curseforge": "Greate"
             },
             "id": {
-                "modrinth": "8wDcQuht"
+                "modrinth": "8wDcQuht",
+                "curseforge": "901996"
             },
             "files": [
                 {
-                    "type": "modrinth",
+                    "type": "curseforge",
                     "file_name": "greate-0.0.38.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "neoforge",
+                        "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/8wDcQuht/versions/jfXaHhi2/greate-0.0.38.jar",
-                    "id": "jfXaHhi2",
-                    "parent_id": "8wDcQuht",
+                    "url": "https://edge.forgecdn.net/files/6550/719/greate-0.0.38.jar",
+                    "id": "6550719",
+                    "parent_id": "901996",
                     "hashes": {
-                        "sha512": "53a5d9985b31660cac20a708ceb13b1855ae5c3f948c9adf242c37fa6f19b9f03b51a3f566696a922039ecad2a7d6afce962f40f1bae181032d972aca0779d44",
-                        "sha1": "4b3cde954b102e5f5c4b940a42220c2979a5eb70"
+                        "sha1": "4b3cde954b102e5f5c4b940a42220c2979a5eb70",
+                        "md5": "7e7693ac859d986f9b4f5b67185431f2"
                     },
                     "required_dependencies": [
-                        "7tG215v7",
-                        "LNytGWDc"
+                        "890405",
+                        "328085"
                     ],
                     "size": 1514248,
-                    "date_published": "2025-02-09T16:31:14.824605Z"
+                    "date_published": "2025-05-20T16:20:12.547Z"
                 }
             ]
         },
@@ -6007,43 +6098,6 @@
                     "required_dependencies": [],
                     "size": 2851119,
                     "date_published": "2024-12-24T23:33:51.040Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "nluG9VeKf4nnS0st",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "open-parties-and-claims"
-            },
-            "name": {
-                "curseforge": "Open Parties and Claims"
-            },
-            "id": {
-                "curseforge": "636608"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "open-parties-and-claims-forge-1.20.1-0.24.0.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6242/869/open-parties-and-claims-forge-1.20.1-0.24.0.jar",
-                    "id": "6242869",
-                    "parent_id": "636608",
-                    "hashes": {
-                        "sha1": "884924b3820d51f0d6ae0f0b5b8bc35aefaf1920",
-                        "md5": "dc2c65305e9ce2ac6ff1c5d5801a31f8"
-                    },
-                    "required_dependencies": [],
-                    "size": 1246814,
-                    "date_published": "2025-02-27T09:15:57.640Z"
                 }
             ]
         },

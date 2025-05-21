@@ -986,4 +986,26 @@ const registerMinecraftRecipes = (event) => {
 
 	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay'])
 		.id('tfg:shapeless/clay_block_to_balls')
+
+	// Mushrooms
+
+	event.shapeless('4x minecraft:red_mushroom', ['minecraft:red_mushroom_block', '#forge:tools/knives'])
+		.id('tfg:shapeless/cut_red_mushroom_block')
+
+	event.shapeless('4x minecraft:brown_mushroom', ['minecraft:brown_mushroom_block', '#forge:tools/knives'])
+		.id('tfg:shapeless/cut_brown_mushroom_block')
+
+	event.recipes.gtceu.chemical_bath('tfg:red_mushroom_to_shroomlight')
+		.itemInputs('minecraft:red_mushroom_block')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:shroomlight')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
+
+	event.recipes.gtceu.chemical_bath('tfg:brown_mushroom_to_shroomlight')
+		.itemInputs('minecraft:brown_mushroom_block')
+		.inputFluids(Fluid.of('gtceu:glowstone', 144))
+		.itemOutputs('minecraft:shroomlight')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.ULV])
 }

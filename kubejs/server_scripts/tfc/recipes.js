@@ -201,7 +201,7 @@ const registerTFCRecipes = (event) => {
 		.id('tfg:tfc/pot/salt')
 
 	// Salt Water
-	generateMixerRecipe(event, ['#forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], null, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
+	generateMixerRecipe(event, ['#forge:dusts/salt'], Fluid.of('minecraft:water', 1000), [], 2, Fluid.of('tfc:salt_water', 1000), 40, 7, 64, 'tfg:tfc/salt_water')
 
 
 	// Seaweed and kelp

@@ -2346,6 +2346,7 @@
 					}
 					title: "Any #tfg:unfinished_lamps"
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "146E09EE00F0EC3F"
@@ -2358,6 +2359,7 @@
 					}
 					title: "Any #tfc:lamps"
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.tfg_tips.lamps.title}"

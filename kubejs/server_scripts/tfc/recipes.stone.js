@@ -33,19 +33,18 @@ function registerTFCStoneRecipes(event) {
 
 		// ? -> Сырая нажимная пластина
 		event.shaped(`tfc:rock/pressure_plate/${stone}`, [
-			'ABA',
+			' B ',
 			'CDC',
-			'AEA'
+			' E '
 		], {
-			A: '#forge:screws/wrought_iron',
 			B: '#tfc:hammers',
 			C: `tfc:rock/raw/${stone}_slab`,
-			D: '#forge:springs',
+			D: '#forge:small_springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`tfc:crafting/rock/${stone}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`${stone}_raw_pressure_plate`)
-			.itemInputs('#forge:springs', `2x tfc:rock/raw/${stone}_slab`)
+			.itemInputs('#forge:small_springs', `2x tfc:rock/raw/${stone}_slab`)
 			.circuit(0)
 			.itemOutputs(`2x tfc:rock/pressure_plate/${stone}`)
 			.duration(50)
@@ -467,6 +466,14 @@ function registerTFCStoneRecipes(event) {
 		//#endregion
 
 		//#region Стена
+
+		event.recipes.tfc.chisel(`tfc:rock/raw/${stone}_wall`, `tfc:rock/raw/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/cobble/${stone}_wall`, `tfc:rock/cobble/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/smooth/${stone}_wall`, `tfc:rock/smooth/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/bricks/${stone}_wall`, `tfc:rock/bricks/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/cracked_bricks/${stone}_wall`, `tfc:rock/cracked_bricks/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/mossy_cobble/${stone}_wall`, `tfc:rock/mossy_cobble/${stone}_slab`, 'smooth')
+		event.recipes.tfc.chisel(`tfc:rock/mossy_bricks/${stone}_wall`, `tfc:rock/mossy_bricks/${stone}_slab`, 'smooth')
 
 		// Сырой
 		event.recipes.gtceu.macerator(`raw_wall_${stone}_to_dust`)

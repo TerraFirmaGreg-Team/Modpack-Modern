@@ -2,7 +2,7 @@
 
 function registerGTCEuTFCMetalsRecipes(event)
 {
-		//#region LV hull
+	//#region LV hull
 
 	event.replaceInput('gtceu:shaped/lv_machine_hull', '#forge:plates/wrought_iron', '#forge:plates/red_steel')
 
