@@ -505,4 +505,37 @@ function registerTFCMachineRecipes(event) {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(20)
 		.EUt(2)
+
+	// Humus and compost
+	event.recipes.gtceu.extractor('tfg:humus_from_leaves')
+		.itemInputs('#minecraft:leaves')
+		.itemOutputs('tfc:groundcover/humus')
+		.duration(600)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfg:humus_from_fallen_leaves')
+		.itemInputs('#tfc:fallen_leaves')
+		.itemOutputs('tfc:groundcover/humus')
+		.duration(600)
+		.EUt(2)
+
+	event.recipes.gtceu.fermenter('tfg:fertilizer_to_compost')
+		.itemInputs('gtceu:fertilizer')
+		.itemOutputs('tfc:compost')
+		.duration(1200)
+		.EUt(2)
+
+	const BROWNS = [ '16x #tfc:compost_browns/low', '8x #tfc:compost_browns/medium', '4x #tfc:compost_browns/high' ];
+	const GREENS = [ '16x #tfc:compost_greens/low', '8x #tfc:compost_greens/medium', '4x #tfc:compost_greens/high' ];
+
+	let i = 0;
+	BROWNS.forEach(brown => {
+		GREENS.forEach(green => {
+			event.recipes.gtceu.mixer(`tfg:compost_${i++}`)
+				.itemInputs(brown, green)
+				.itemOutputs('tfc:compost')
+				.duration(1200)
+				.EUt(2)
+		})
+	})
 }
