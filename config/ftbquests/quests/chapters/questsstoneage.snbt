@@ -622,7 +622,7 @@
 				"{quests.stone_age.firepit.desc.2}"
 				"{image:tfg:textures/quests/firepit.png width:100 height:100 align:center}"
 			]
-			icon: "tfc:firepit"
+			icon: "minecraft:campfire"
 			id: "5301A38F7EA81140"
 			subtitle: "{quests.stone_age.firepit.subtitle}"
 			tasks: [
@@ -671,6 +671,7 @@
 					id: "tfc:metal/anvil/copper"
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.copper_anvil.title}"
 			x: 26.0d
@@ -691,7 +692,7 @@
 				count: 7L
 				id: "5A6EF9EBF232601C"
 				item: {
-					Count: 7
+					Count: 1
 					ForgeCaps: {
 						"tfc:item_heat": {
 							heat: 0.0f
@@ -701,6 +702,7 @@
 					id: "gtceu:copper_double_ingot"
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.weld_copper_ingots.title}"
 			x: 21.0d
@@ -777,6 +779,7 @@
 					id: "minecraft:copper_ingot"
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.copper_for_anvil.title}"
 			x: 17.0d
@@ -2114,6 +2117,7 @@
 				}
 				title: "Any #forge:crushed_ores"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.crush_ore.title}"
 			x: 18.0d
@@ -2146,6 +2150,7 @@
 					}
 					title: "Any #forge:impure_dusts"
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					disable_toast: true
@@ -2191,6 +2196,7 @@
 				}
 				title: "Any #forge:dusts"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.stone_age.clean_dust.title}"
 			x: 17.0d

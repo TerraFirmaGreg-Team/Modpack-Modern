@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "tfc_ruined_world:ancient_monument_1",
+			"weight": 1
+		},
+		{
+			"structure": "tfc_ruined_world:ancient_monument_2",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 1442136154,
+		"spacing": 50,
+		"separation": 30,
+		"type": "minecraft:random_spread"
+	}
+}

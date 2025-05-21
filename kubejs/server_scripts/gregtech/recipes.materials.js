@@ -401,6 +401,10 @@ function registerGTCEUMetalRecipes(event) {
 		if (!material.hasProperty(PropertyKey.BLAST)) {
 			event.smelting(ingotItem, normalOreItem).id(`gtceu:smelting/smelt_raw_${material.getName()}_ore_to_ingot`)
 		}
+
+		// Remove ore block recipes
+		event.remove({ id: `gtceu:compressor/compress_${material.getName()}_to_raw_ore_block` })
+		event.remove({ id: `gtceu:forge_hammer/decompress_${material.getName()}_to_raw_ore` })
 	}
 
 	const processRichRawOre = (material) => {
