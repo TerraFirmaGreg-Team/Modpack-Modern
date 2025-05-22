@@ -577,18 +577,28 @@ function registerVintageImprovementsRecipes(event) {
 		results: [{ fluid: 'tfg:latex', amount: 250 }],
 		processingTime: 600
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_logs')
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_saplings' }],
 		results: [{ fluid: 'tfg:latex', amount: 100 }],
 		processingTime: 300
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_sapling')
+
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ tag: 'tfg:rubber_leaves' }],
 		results: [{ fluid: 'tfg:latex', amount: 50 }],
 		processingTime: 150
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_leaves')
+
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ tag: 'tfg:rubber_plants' }, { item: 'tfc:powder/soda_ash' }, { fluid: 'tfc:salt_water', amount: 50 }],
+		results: [{ fluid: 'tfg:latex', amount: 50 }],
+		heatRequirement: "heated",
+		processingTime: 40
+	}).id('tfg:vi/vacuumizing/latex_from_rubber_plants')
 
 	// Vulc. latex to raw rubber pulp
 	event.custom({

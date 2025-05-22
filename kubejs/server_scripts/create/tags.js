@@ -80,6 +80,12 @@ const registerCreateBlockTags = (event) => {
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
 
+	// Waters for bulk washing
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/river_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/salt_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:fluid/spring_water')
+
+	// Lets the basin be put on top of a charcoal forge
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
 }
 
@@ -96,4 +102,9 @@ const registerCreateFluidTags = (event) => {
 
 	// Disable bulk blasting
 	event.removeAll('create:fan_processing_catalysts/blasting')
+	
+	// Waters for bulk washing
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:river_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:salt_water')
+	event.add('create:fan_processing_catalysts/splashing', 'tfc:spring_water')
 }

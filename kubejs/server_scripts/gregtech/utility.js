@@ -34,7 +34,7 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
 		.chancedOutput(input, 7500, 0)
 		.chancedOutput(input, 5000, 0)
 		.duration(36000) // 30 mins
-		.EUt(72)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	// С удобрением
 	event.recipes.gtceu.greenhouse(`${id}_fertilized`)
@@ -46,7 +46,7 @@ const generateGreenHouseRecipe = (event, input, fluid_amount, output, id) => {
 		.chancedOutput(input, 8500, 0)
 		.chancedOutput(input, 6000, 0)
 		.duration(12000) // 10 mins
-		.EUt(196)
+		.EUt(GTValues.VA[GTValues.LV])
 }
 
 const getFillingNBT = (material, amount) => {
@@ -164,12 +164,8 @@ function generatePlatedBlockRecipe(event, material) {
 		.EUt(GTValues.VA[GTValues.LV])
 }
 
-//const $MRM = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.IMaterialRegistryManager')
-
 function forEachMaterial(iterator) {
-	//if (GTMaterialRegistry.getPhase() === $MRM.Phase.CLOSED || GTMaterialRegistry.getPhase() === $MRM.Phase.FROZEN) {
-		GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
-			iterator(material)
-		})
-	//}
+	for (var material of GTCEuAPI.materialManager.getRegisteredMaterials()) {
+		iterator(material)
+	}
 }

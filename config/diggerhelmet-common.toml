@@ -1,0 +1,37 @@
+
+["AutoDrinker Settings"]
+	#The amount of fluid in millibuckets consumed per use
+	#Range: 1 ~ 1000
+	drink_mb = 25
+	#Default cooldown time in ticks (20 ticks = 1 second)
+	#Range: 1 ~ 1000
+	default_cooldown = 100
+
+["MiningSpeedModifier Settings"]
+	#Multiplier for pickaxe mining speed
+	#Range: 1.0 ~ 10.0
+	pickaxe_multiplier = 2.5
+	#Multiplier for shovel mining speed
+	#Range: 1.0 ~ 10.0
+	shovel_multiplier = 1.8
+
+["Zombie Candle Settings"]
+	#Enable/disable spawning of zombies with a candle
+	enable_zombie_candle = false
+	#Chance of a zombie spawning with a candle (0.0 - 1.0)
+	#Range: 0.0 ~ 1.0
+	zombie_candle_chance = 0.2
+
+["Candle Slime Settings"]
+	#Enable/disable spawning of slimes with a candle
+	enable_candle_slime = false
+	#Chance of a slime spawning with a candle (0.0 - 1.0)
+	#Range: 0.0 ~ 1.0
+	candle_slime_spawn_chance = 0.5
+	#Minimum Y level for candle slime spawn
+	#Range: 0 ~ 256
+	candle_slime_min_y = 50
+	#Maximum Y level for candle slime spawn
+	#Range: 0 ~ 256
+	candle_slime_max_y = 70
+

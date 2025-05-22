@@ -53,6 +53,11 @@ global.GTCEU_DISABLED_ITEMS = [
     'gtceu:stone_buzz_saw_blade', 
     'gtceu:stone_wrench_tip',
 
+    'gtceu:netherite_nugget',
+    'gtceu:tiny_netherite_dust',
+    'gtceu:small_netherite_dust',
+    'gtceu:netherite_dust',
+
     'gtceu:treated_wood_hanging_sign',
     'gtceu:treated_wood_boat',
     'gtceu:treated_wood_chest_boat',

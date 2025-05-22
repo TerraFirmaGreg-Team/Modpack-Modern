@@ -6,7 +6,7 @@ familiarityDecayLimit = 0.3
 [general]
 	#
 	# Enable nether portal creation
-	enableNetherPortals = true
+	enableNetherPortals = false
 	#
 	# Forces a number of game rules to specific values.
 	#   naturalRegeneration = false (Health regen is much slower and not tied to extra saturation)
