@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tfg:block/piglin_disguise",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "tfg:block/piglin_disguise",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "tfg:block/piglin_disguise"
+    },
+    "facing=west": {
+      "model": "tfg:block/piglin_disguise",
+      "y": 90
+    }
+  }
+}
