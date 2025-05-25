@@ -753,7 +753,7 @@ const registerFirmaLifeRecipes = (event) => {
 
 	event.smelting('firmalife:food/dehydrated_soybeans', 'tfc:food/soybean')
 
-	event.recipes.gtce.fermenter('soybean_oil')
+	event.recipes.gtceu.fermenter('soybean_oil')
 		.itemInputs('firmalife:food/soybean_paste')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.outputFluids(Fluid.of('firmalife:soybean_oil', 250))

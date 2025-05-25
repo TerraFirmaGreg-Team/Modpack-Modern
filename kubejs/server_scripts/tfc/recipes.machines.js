@@ -520,13 +520,13 @@ function registerTFCMachineRecipes(event) {
 		.EUt(2)
 
 	event.recipes.gtceu.fermenter('tfg:fertilizer_to_compost')
-		.itemInputs('gtceu:fertilizer')
+		.itemInputs('4x gtceu:fertilizer')
 		.itemOutputs('tfc:compost')
 		.duration(1200)
 		.EUt(2)
 
-	const BROWNS = [ '16x #tfc:compost_browns/low', '8x #tfc:compost_browns/medium', '4x #tfc:compost_browns/high' ];
-	const GREENS = [ '16x #tfc:compost_greens/low', '8x #tfc:compost_greens/medium', '4x #tfc:compost_greens/high' ];
+	const BROWNS = [ '16x #tfc:compost_browns_low', '4x #tfc:compost_browns_high' ];
+	const GREENS = [ '16x #tfc:compost_greens_low', '4x #tfc:compost_greens_high' ];
 
 	let i = 0;
 	BROWNS.forEach(brown => {
@@ -538,4 +538,10 @@ function registerTFCMachineRecipes(event) {
 				.EUt(2)
 		})
 	})
+
+	event.recipes.gtceu.centrifuge('tfg:soot')
+		.itemInputs('tfc:soot')
+		.itemOutputs('#forge:dusts/carbon')
+		.duration(20)
+		.EUt(2)
 }

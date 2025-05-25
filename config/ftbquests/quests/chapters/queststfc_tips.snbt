@@ -3271,10 +3271,10 @@
 		{
 			dependencies: ["150B7C5CD152E1BA"]
 			description: ["{quests.tfg_tips.fishing_net.desc}"]
-			id: "75C6BF1C9405B4BF"
+			id: "2A57C41D681E4611"
 			subtitle: "{quests.tfg_tips.fishing_net.subtitle}"
 			tasks: [{
-				id: "37DD99D32072ADBF"
+				id: "10826B1E02F646D4"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
@@ -3852,8 +3852,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.beneath_temp_management.title}"
-			x: 9.0d
-			y: -3.0d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -3930,8 +3930,8 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.beneath_clothes.title}"
-			x: 9.0d
-			y: -4.0d
+			x: 8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A8910950F638BB5"]
@@ -3944,8 +3944,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.juicer.title}"
-			x: 9.0d
-			y: -5.0d
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["70DA01DFDAE54224"]
@@ -5191,6 +5191,19 @@
 			title: "{quests.tfg_tips.plow.title}"
 			x: -5.0d
 			y: -2.5d
+    }
+    {
+			dependencies: ["4A8910950F638BB5"]
+			description: ["{quests.tfg_tips.piglin_disguise.desc}"]
+			id: "02956D3A63429E39"
+			subtitle: "{quests.tfg_tips.piglin_disguise.subtitle}"
+			tasks: [{
+				id: "5D1F456A3A96FC33"
+				item: "tfg:piglin_disguise"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

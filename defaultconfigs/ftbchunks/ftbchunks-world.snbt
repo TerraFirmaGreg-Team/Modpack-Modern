@@ -49,7 +49,7 @@
 	
 	# If true, "Location Visibility" team settings are ignored, and all players can see each other anywhere on the map.
 	# Default: false
-	location_mode_override: false
+	location_mode_override: true
 	
 	# Interval in ticks to send updates to clients with long-range player tracking data.
 	# Lower values mean more frequent updates but more server load and network traffic; be careful with this, especially on busy servers.
@@ -82,7 +82,7 @@
 	# Default of 0 means no automatic loss of forceloading.
 	# Default: 0.0
 	# Range: 0.0 ~ 3650.0
-	max_idle_days_before_unforce: 0.0d
+	max_idle_days_before_unforce: 30.0d
 	
 	# Maximum time in days to keep logs of prevented fakeplayer access to a team's claims.
 	# Default: 7
@@ -104,7 +104,7 @@
 	# AVERAGE: use the average of all members' limits.
 	# Default: "largest"
 	# Valid values: "largest", "owner", "sum", "average"
-	party_limit_mode: "largest"
+	party_limit_mode: "sum"
 	
 	# If true, pistons are prevented from pushing/pulling blocks across claims owned by different teams (unless the target claim has public 'edit block' permissions defined). If 'disable_protection' is set to true, this setting is ignored.
 	# Default: true
@@ -118,7 +118,7 @@
 	# Should PvP combat be allowed in claimed chunks? Default is ALWAYS; NEVER prevents it in all claimed chunks; PER_TEAM allows teams to decide if PvP is allowed in their claims
 	# Default: "always"
 	# Valid values: "always", "never", "per_team"
-	pvp_mode: "always"
+	pvp_mode: "per_team"
 	
 	# If true, the player must have the 'ftbchunks_mapping' Game stage to be able to use the map and minimap.
 	# Requires KubeJS and/or Gamestages to be installed.
