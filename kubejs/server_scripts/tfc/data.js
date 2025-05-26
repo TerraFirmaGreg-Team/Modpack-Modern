@@ -209,6 +209,9 @@ const registerTFCItemSize = (event) => {
     event.itemSize('tfg:fishing_net/magnalium', 'large', 'medium', 'magnalium_fishing_net')
 
     event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
+	
+    event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'heavy')
+    event.itemSize('#tfc:foods/preserves', 'tiny', 'heavy')
 
 }
 //#endregion
