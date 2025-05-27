@@ -56,7 +56,6 @@ const registerMinecraftItemTags = (event) => {
 
     event.remove('forge:gems', 'minecraft:charcoal')
     event.remove('forge:gems', 'minecraft:coal')
-    event.remove('minecraft:dirt', 'minecraft:moss_block')
 
     event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
@@ -129,8 +128,6 @@ const registerMinecraftBlockTags = (event) => {
     event.add('tfg:brick_stairs', 'minecraft:blackstone_stairs')
     event.add('tfg:brick_slabs', 'minecraft:blackstone_slab')
     event.add('tfg:brick_walls', 'minecraft:blackstone_wall')
-
-    event.remove('minecraft:dirt', 'minecraft:moss_block')
     
     //#region
 }
