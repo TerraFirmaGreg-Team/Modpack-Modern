@@ -210,12 +210,12 @@ const registerTFCItemSize = (event) => {
 
     event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
 	
-    event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'heavy')
-    event.itemSize('#tfc:foods/preserves', 'tiny', 'heavy')
-    event.itemSize('firmalife:jar/honey', 'tiny', 'heavy')
-    event.itemSize('firmalife:jar/compost', 'tiny', 'heavy')
-    event.itemSize('firmalife:jar/rotten_compost', 'tiny', 'heavy')
-    event.itemSize('firmalife:jar/guano', 'tiny', 'heavy')
+    event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium')
+    event.itemSize('#tfc:foods/preserves', 'tiny', 'medium')
+    event.itemSize('firmalife:jar/honey', 'tiny', 'medium')
+    event.itemSize('firmalife:jar/compost', 'tiny', 'medium')
+    event.itemSize('firmalife:jar/rotten_compost', 'tiny', 'medium')
+    event.itemSize('firmalife:jar/guano', 'tiny', 'medium')
 
 }
 //#endregion
