@@ -85,6 +85,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:speed_ingredients', 'firmalife:raw_honey')
 
 	event.add('tfg:slowness_ingredients', 'tfc:plant/marigold')
+	event.add('tfg:slowness_ingredients', 'tfc:plant/nasturtium')
 	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_red')
 	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_white')
 	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_yellow')
@@ -92,6 +93,8 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:weakness_ingredients', 'tfc:plant/laminaria')
 	event.add('tfg:weakness_ingredients', 'tfc:plant/sea_palm')
 	event.add('tfg:weakness_ingredients', 'tfc:plant/sea_lavender')
+	event.add('tfg:weakness_ingredients', 'tfc:plant/canna')
+	event.add('tfg:weakness_ingredients', 'tfc:plant/water_canna')
 
 	event.add('tfg:haste_ingredients', '#tfg:sugars')
 
