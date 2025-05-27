@@ -9,6 +9,7 @@
 - Create Deco's metal bars are now breakable with a pickaxe. (#1053) @Pyritie
 - Aircraft engine recipes now use the correct tier cables. @Pyritie
 - Added Piglin disguise item to prevent Piglin aggro. (#1058) @Redeix
+- Make food jars and firmalife jars stacks by 16. (#1081) #Zeropol
 
 ## [0.9.8] - 19.05.2025
 ### Changes
