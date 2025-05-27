@@ -11,6 +11,6 @@ function registerConstructionWandsItemModifications(event) {
 		item.maxDamage = 2303
 	})
 	event.modify('constructionwand:diamond_wand', item => {
-		item.maxDamage = 6143
+		item.maxDamage = 12286
 	})
 }
