@@ -361,12 +361,11 @@ const registerTFGPlacedFeatures = (event) => {
 
 	// #region Nether ores
 
-	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
-	event.add('tfg:nether_veins', 'beneath:vein/sylvite')
 	event.add('tfg:nether_veins', 'beneath:vein/crackrack_pipe')
 
 	// Lower only
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sylvite')
 
 	// Full height
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
@@ -385,6 +384,7 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
 
 	// Upper only
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_anthracite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_apatite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_basaltic_sands')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_bauxite')
