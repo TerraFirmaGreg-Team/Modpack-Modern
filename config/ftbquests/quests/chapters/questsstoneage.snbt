@@ -658,10 +658,7 @@
 			subtitle: "{quests.metal_age.copper_anvil.subtitle}"
 			tasks: [{
 				id: "3F1120F05AD5FB2B"
-				item: {
-					Count: 1
-					id: "tfc:metal/anvil/copper"
-				}
+				item: "tfc:metal/anvil/copper"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -681,12 +678,8 @@
 			id: "45A09AD0043FF92B"
 			subtitle: "{quests.stone_age.weld_copper_ingots.subtitle}"
 			tasks: [{
-				count: 1L
 				id: "5A6EF9EBF232601C"
-				item: {
-					Count: 1
-					id: "gtceu:copper_double_ingot"
-				}
+				item: "gtceu:copper_double_ingot"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -701,6 +694,7 @@
 			icon: {
 				Count: 1
 				id: "tfc:powder/flux"
+				weak_nbt_match: true
 			}
 			id: "30E26DC33FD019FE"
 			subtitle: "{quests.stone_age.flux.subtitle}"
@@ -719,11 +713,7 @@
 				}
 				{
 					id: "655B1B05EE4BABF7"
-					item: {
-						Count: 1
-						id: "tfc:powder/flux"
-						weak_nbt_match: true
-					}
+					item: "tfc:powder/flux"
 					type: "item"
 				}
 			]
@@ -743,10 +733,7 @@
 			subtitle: "{quests.stone_age.copper_for_anvil.subtitle}"
 			tasks: [{
 				id: "302196CB1816F316"
-				item: {
-					Count: 1
-					id: "minecraft:copper_ingot"
-				}
+				item: "minecraft:copper_ingot"
 				type: "item"
 				weak_nbt_match: true
 			}]
@@ -764,6 +751,7 @@
 					icon: {
 						Count: 1
 						id: "gtceu:stone_hammer"
+						weak_nbt_match: true
 					}
 					id: "0425FDD03AEC4F0D"
 					item: {
