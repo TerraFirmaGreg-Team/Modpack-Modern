@@ -59,6 +59,8 @@ const registerMinecraftItemTags = (event) => {
 
     event.add('tfc:compost_greens_high', 'minecraft:red_mushroom_block')
     event.add('tfc:compost_greens_high', 'minecraft:brown_mushroom_block')
+
+    event.add('tfc:colored_terracotta', 'minecraft:white_terracotta')
 }
 
 const registerMinecraftBlockTags = (event) => {

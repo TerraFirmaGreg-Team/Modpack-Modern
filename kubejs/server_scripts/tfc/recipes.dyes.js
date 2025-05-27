@@ -30,6 +30,18 @@ function registerTFCDyeRecipes(event) {
 
 	//#endregion
 
+	//#region Terracotta
+
+	event.replaceInput({id: 'tfc:barrel/dye/bleach_terracotta'}, '#tfc:colored_terracotta', 'minecraft:terracotta')
+
+	event.replaceInput({id: 'gtceu:chemical_bath/decolor_terracotta'}, '#minecraft:terracotta', '#tfc:colored_terracotta')
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+		event.replaceInput({id: `gtceu:chemical_bath/dye_terracotta_to_${dye}`}, 'minecraft:terracotta', '#minecraft:terracotta')
+	})
+
+	//#endregion
+
 	//#region Обычный сосуд
 
 	event.recipes.gtceu.chemical_bath(`unfired_vessel_decolor`)
