@@ -212,10 +212,6 @@ const registerTFCItemSize = (event) => {
 	
     event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium')
     event.itemSize('#tfc:foods/preserves', 'tiny', 'medium')
-    event.itemSize('firmalife:jar/honey', 'tiny', 'medium')
-    event.itemSize('firmalife:jar/compost', 'tiny', 'medium')
-    event.itemSize('firmalife:jar/rotten_compost', 'tiny', 'medium')
-    event.itemSize('firmalife:jar/guano', 'tiny', 'medium')
 
 }
 //#endregion
