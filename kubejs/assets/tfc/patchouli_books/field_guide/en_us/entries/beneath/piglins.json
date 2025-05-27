@@ -28,6 +28,12 @@
 			"type": "patchouli:text",
 			"title": "Bastions",
 			"text": "Raiding a $(thing)Bastion$() might be very dangerous, but they can also be very rewarding! You can find things like:$(li)Gold, Rose Gold, Pig Iron, Black Bronze, and Silver ingots$(li)Black Bronze weapons, tools, and armor$(li)Kaolin clay and graphite$(li)Permanent light sources$(li)Cloth, leather, seeds, and food$(li)And other treasures!"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "tfg:piglin_disguise",
+			"title": "Piglin Disguise",
+			"text": "If you want to ensure an easy time trading--or simply mingling with the locals--Put on a $(thing)Piglin Disguise$() to prevent $(thing)Piglins$() from being hostile with you on first sight. But beware! They only put up with so much..."
 		}
 	],
 	"read_by_default": true

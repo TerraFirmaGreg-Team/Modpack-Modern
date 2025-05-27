@@ -197,7 +197,8 @@ function registerVintageImprovementsRecipes(event) {
 		{ material: GTMaterials.Gold, blows: STARTING_BLOWS },
 		{ material: GTMaterials.Bismuth, blows: STARTING_BLOWS },
 		{ material: GTMaterials.RoseGold, blows: STARTING_BLOWS },
-		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS }
+		{ material: GTMaterials.SterlingSilver, blows: STARTING_BLOWS },
+		{ material: GTMaterials.Tin, blows: STARTING_BLOWS }
 	]
 
 	let HAMMERING_ITEMS = [
@@ -413,7 +414,7 @@ function registerVintageImprovementsRecipes(event) {
 				results: [ChemicalHelper.get(TFGTagPrefix.ingotDouble, material, 1)],
 				processingTime: material.getMass() * 6 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/pressurizing/${material.getName()}_double_ingot`)
-			
+
 			const plateItem = ChemicalHelper.get(TagPrefix.plate, material, 1);
 
 			event.custom({
@@ -511,9 +512,9 @@ function registerVintageImprovementsRecipes(event) {
 
 			event.custom({
 				type: 'vintageimprovements:curving',
-				ingredients: [ input ],
+				ingredients: [input],
 				itemAsHead: r.inputs.item[1].content.ingredient.item,
-				results: [ output ],
+				results: [output],
 				processingTime: r.duration * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
 			}).id(`tfg:vi/curving/${recipe.getId().split(':')[1]}`)
 		}
@@ -604,10 +605,10 @@ function registerVintageImprovementsRecipes(event) {
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
 		ingredients: [{ fluid: 'tfg:vulcanized_latex', amount: 250 }],
-		results: [{ item: 'gtceu:raw_rubber_dust'}],
+		results: [{ item: 'gtceu:raw_rubber_dust' }],
 		processingTime: 120
 	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
-	
+
 	// #endregion
 }
 
