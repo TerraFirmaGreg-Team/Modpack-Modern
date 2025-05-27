@@ -210,8 +210,8 @@ const registerTFCItemSize = (event) => {
 
     event.itemSize('#tfc:ore_pieces', 'very_small', 'very_light', 'tfc_ores')
 	
-    event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium')
-    event.itemSize('#tfc:foods/preserves', 'tiny', 'medium')
+    event.itemSize('#tfc:foods/sealed_preserves', 'tiny', 'medium', 'sealed_preserves')
+    event.itemSize('#tfc:foods/preserves', 'tiny', 'medium', 'preserves')
 
 }
 //#endregion
