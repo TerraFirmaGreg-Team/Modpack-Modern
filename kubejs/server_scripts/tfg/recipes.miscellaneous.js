@@ -389,4 +389,20 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.shapeless('1x minecraft:armor_stand', [
 		'tfg:armor_stand_arms'
 	]).id(`tfg:shapeless/armor_stand`)
+	
+	event.recipes.tfc.sewing(
+        '1x tfg:piglin_disguise',
+        [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 
+            0, 1, 1, 0, 0, 0, 1, 1, 0,
+            0, 1, 1, 1, 0, 1, 1, 1, 0,
+            0, 0, 1, 1, 0, 1, 1, 0, 0,
+            0, 0, 1, 1, 0, 1, 1, 0, 0
+        ], [
+            1, 1, 1, 1, 1, 1, 1, 1,
+            1, 0, 1, 0, 0, 1, 0, 1,
+            1, -1, 0, 0, 0, 0, -1, 1,
+            1, -1, 0, 0, 0, 0, -1, 1
+        ]
+    ).id('tfg:sewing/piglin_disguise')
 }

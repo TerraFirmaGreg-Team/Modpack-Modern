@@ -2,6 +2,12 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 
+	//temporary hidden items
+	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:stromatolite_cluster_small')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:stromatolite_cluster_medium')
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
@@ -15,7 +21,7 @@ const registerTFGItemTags = (event) => {
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
 
-	//Tools
+	//Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/rose_gold')
@@ -24,6 +30,8 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/tin_alloy')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/cupronickel')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/magnalium')
+	
+	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	// #region Paper from wood
 
