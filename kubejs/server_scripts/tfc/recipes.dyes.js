@@ -134,7 +134,7 @@ function registerTFCDyeRecipes(event) {
 				inputArray.push(`#forge:dyes/${dyeName}`);
 			}
 
-			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:salt_water', 250 * i), 600, 2000)
+			event.recipes.tfc.pot(inputArray, Fluid.of('tfc:vinegar', 250 * i), 200, 200)
 				.fluidOutput(Fluid.of(`tfc:${dyeName}_dye`, 144 * i))
 				.id(`tfc:pot/${i}x_${dyeName}_dye`)
 		}
