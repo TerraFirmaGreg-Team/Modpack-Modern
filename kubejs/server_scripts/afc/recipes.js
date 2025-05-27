@@ -243,4 +243,34 @@ const registerAFCRecipes = (event) => {
 		.itemOutputs('afc:birch_sugar')
 		.duration(500)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Stripped logs
+
+	global.AFC_WOOD_TYPES.forEach(wood => {
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
+			.itemInputs(`afc:wood/log/${wood}`)
+			.itemOutputs(`afc:wood/stripped_log/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
+			.itemInputs(`afc:wood/wood/${wood}`)
+			.itemOutputs(`afc:wood/stripped_wood/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `afc:wood/log/${wood}` }],
+			results: [{ item: `afc:wood/stripped_log/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `afc:wood/wood/${wood}` }],
+			results: [{ item: `afc:wood/stripped_wood/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
+	})
 }

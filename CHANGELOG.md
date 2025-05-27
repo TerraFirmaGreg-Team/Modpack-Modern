@@ -17,6 +17,8 @@
 - Added missing tin double ingot to plate helve hammer recipe. (#1078) @oogabooga-dev
 - Added piglin disguise for safer trading. @Redeix
 - Fixed sprinklers, added support for connecting GregTech pipes to hydroponic planters (#1033) @Thomasx0
+- Added some more medicinal plants. @Pyritie
+- Added lathe recipes to strip logs. @Pyritie
 
 ## [0.9.8] - 19.05.2025
 ### Changes
