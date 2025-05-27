@@ -631,6 +631,7 @@
 					item: {
 						Count: 1
 						id: "tfc:firestarter"
+						weak_nbt_match: true
 					}
 					type: "item"
 					weak_nbt_match: true
