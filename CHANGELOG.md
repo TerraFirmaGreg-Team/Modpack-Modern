@@ -15,7 +15,6 @@
 - Buffed durability of construction wands. @Pyritie
 - Reorganized boat quests, added horse and akistor carts quests. (#1077) @deneth-weerasinghe
 - Added missing tin double ingot to plate helve hammer recipe. (#1078) @oogabooga-dev
-- Added piglin disguise for safer trading. @Redeix
 - Fixed sprinklers, added support for connecting GregTech pipes to hydroponic planters (#1033) @Thomasx0
 - Added some more medicinal plants. @Pyritie
 - Added lathe recipes to strip logs. @Pyritie
