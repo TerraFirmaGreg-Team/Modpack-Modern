@@ -544,4 +544,34 @@ function registerTFCMachineRecipes(event) {
 		.itemOutputs('#forge:dusts/carbon')
 		.duration(20)
 		.EUt(2)
+
+	// Stripped logs
+
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
+			.itemInputs(`tfc:wood/log/${wood}`)
+			.itemOutputs(`tfc:wood/stripped_log/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
+			.itemInputs(`tfc:wood/wood/${wood}`)
+			.itemOutputs(`tfc:wood/stripped_wood/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `tfc:wood/log/${wood}` }],
+			results: [{ item: `tfc:wood/stripped_log/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `tfc:wood/wood/${wood}` }],
+			results: [{ item: `tfc:wood/stripped_wood/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
+	})
 }
