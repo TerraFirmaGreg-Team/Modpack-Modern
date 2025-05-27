@@ -578,6 +578,7 @@
 				count: 5L
 				id: "4FCD61B48E983629"
 				item: "minecraft:clay_ball"
+				match_nbt: false
 				type: "item"
 			}]
 			title: "{quests.stone_age.clay.title}"
@@ -622,7 +623,7 @@
 				"{quests.stone_age.firepit.desc.2}"
 				"{image:tfg:textures/quests/firepit.png width:100 height:100 align:center}"
 			]
-			icon: "minecraft:campfire"
+			icon: "tfc:pot"
 			id: "5301A38F7EA81140"
 			subtitle: "{quests.stone_age.firepit.subtitle}"
 			tasks: [
@@ -631,7 +632,9 @@
 					item: {
 						Count: 1
 						id: "tfc:firestarter"
-						weak_nbt_match: true
+						tag: {
+							Damage: 0
+						}
 					}
 					type: "item"
 					weak_nbt_match: true
@@ -752,7 +755,11 @@
 					icon: {
 						Count: 1
 						id: "gtceu:stone_hammer"
-						weak_nbt_match: true
+						tag: {
+							GT.Tool: {
+								Damage: 0
+							}
+						}
 					}
 					id: "0425FDD03AEC4F0D"
 					item: {
@@ -1756,7 +1763,7 @@
 					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: -9223372036854775808L
+							creationDate: 99999999999999L
 							traits: [ ]
 						}
 					}
