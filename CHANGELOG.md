@@ -18,6 +18,7 @@
 - Fixed sprinklers, added support for connecting GregTech pipes to hydroponic planters (#1033) @Thomasx0
 - Added some more medicinal plants. @Pyritie
 - Added lathe recipes to strip logs. @Pyritie
+- Iron flask now accepts any cloth, red steel flask now requires phantom silk. @Pyritie
 
 ## [0.9.8] - 19.05.2025
 ### Changes
