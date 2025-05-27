@@ -160,8 +160,6 @@
   "block.tfg.lunar_sprouts": "Lunar Lightgrass",
   "block.tfg.lunar_chorus_plant": "Chorus Plant",
   "block.tfg.lunar_chorus_flower": "Chorus Flower",
-  "block.tfg.piglin_disguise_block": "Piglin Disguise",
-  "item.tfg.piglin_disguise": "Piglin Disguise",
   "item.tfg.antipoison_pill": "Antipoison Pill",
   "item.tfg.haste_pill": "Haste Pill",
   "item.tfg.night_vision_pill": "Night Vision Pill",
@@ -2283,7 +2281,5 @@
   "quests.tfg_tips.fuck_go_back.desc": "To escape &4The Beneath&r, you need to reach the upper levels of the cave system, near the &dBedrock Ceiling.&r Staying still for a couple of seconds near the roof will transport you back to the &bOverworld&r, right where you stood on to get in.",
   "quests.tfg_tips.piglin_bartering.title": "Piglin Bartering",
   "quests.tfg_tips.piglin_bartering.subtitle": "We are not alone apparently",
-  "quests.tfg_tips.piglin_bartering.desc": "The curious inhabitants of &4The Beneath&r have items to offer... Trade gold with them to get some useful resources, such as small amounts of &aMetals&r or &aLeather.&r\nCheck out the &2Field Guide&r for details about barter trades.",
-  "quests.tfg_tips.piglin_disguise.subtitle": "They'll never know...",
-  "quests.tfg_tips.piglin_disguise.desc": "Do you feel like you don't belong?\n Do the &4Piglin&r attack you at your school because of your appearance?\n Try wearing a &aPiglin Disguise&r to ward off unwanted attention and blend right in."
+  "quests.tfg_tips.piglin_bartering.desc": "The curious inhabitants of &4The Beneath&r have items to offer... Trade gold with them to get some useful resources, such as small amounts of &aMetals&r or &aLeather.&r\nCheck out the &2Field Guide&r for details about barter trades."
 }
