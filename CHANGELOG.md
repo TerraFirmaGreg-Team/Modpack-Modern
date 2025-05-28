@@ -19,6 +19,7 @@
 - Added some more medicinal plants. @Pyritie
 - Added lathe recipes to strip logs. @Pyritie
 - Iron flask now accepts any cloth, red steel flask now requires phantom silk. @Pyritie
+- Make food jars and firmalife jars stacks by 16. (#1081) #Zeropol
 - Fixed medicine not working with cheats disabled. (#1084) @Redeix
 
 ## [0.9.8] - 19.05.2025
