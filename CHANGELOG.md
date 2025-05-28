@@ -22,6 +22,7 @@
 - Make food jars and firmalife jars stack to 16. (#1081) @Zeropol
 - Fixed medicine not working with cheats disabled. (#1084) @Redeix
 - Added recipes for strings to the coiling machine (#1083) @Pyritie
+- Fixed assembler recipe for brass funnel. @TomPlop
 
 ## [0.9.8] - 19.05.2025
 ### Changes
