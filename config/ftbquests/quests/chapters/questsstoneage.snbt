@@ -697,8 +697,13 @@
 			description: ["{quests.stone_age.flux.desc}"]
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
 				id: "tfc:powder/flux"
-				weak_nbt_match: true
 			}
 			id: "30E26DC33FD019FE"
 			subtitle: "{quests.stone_age.flux.subtitle}"

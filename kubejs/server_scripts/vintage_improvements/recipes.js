@@ -618,6 +618,31 @@ function registerVintageImprovementsRecipes(event) {
 	}).id('tfg:vi/vacuumizing/vulcanized_latex_to_raw_rubber')
 
 	// #endregion
+
+	// #region Coiling
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'tfc:wool' }],
+		results: [{ item: 'tfc:wool_yarn', count: 8 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/wool_yarn`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [{ item: 'minecraft:phantom_membrane' }],
+		results: [{ item: 'tfg:phantom_thread', count: 16 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/phantom_thread`)
+
+	event.custom({
+		type: 'vintageimprovements:coiling',
+		ingredients: [ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1)],
+		results: [{ item: 'tfg:polycaprolactam_string', count: 32 }],
+		processingTime: 100 * global.VINTAGE_IMPROVEMENTS_DURATION_MULTIPLIER
+	}).id(`tfg:vi/coiling/nylon_string`)
+
+	// #endregion
 }
 
 function generateHammeringRecipe(event, material, blows, anvil) {

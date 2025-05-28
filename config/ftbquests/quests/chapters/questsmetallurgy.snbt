@@ -5,8 +5,13 @@
 	group: "3C4612A920658A7E"
 	icon: {
 		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
 		id: "gtceu:wrought_iron_ingot"
-		weak_nbt_match: true
 	}
 	id: "5F560FF28458A555"
 	order_index: 1
