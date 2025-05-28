@@ -601,6 +601,14 @@ function registerVintageImprovementsRecipes(event) {
 		processingTime: 40
 	}).id('tfg:vi/vacuumizing/latex_from_rubber_plants')
 
+	event.custom({
+		type: 'vintageimprovements:vacuumizing',
+		ingredients: [{ item: 'tfc:powder/sulfur' }, { fluid: 'tfg:latex', amount: 1000 }],
+		results: [{ fluid: 'tfg:vulcanized_latex', amount: 1000 }],
+		heatRequirement: "heated",
+		processingTime: 50
+	}).id('tfg:vi/vacuumizing/vulcanized_latex_from_sulfur')
+
 	// Vulc. latex to raw rubber pulp
 	event.custom({
 		type: 'vintageimprovements:vacuumizing',
