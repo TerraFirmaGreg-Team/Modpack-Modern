@@ -755,7 +755,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:brass_funnel')
 		.itemInputs('2x #forge:plates/brass', '2x #forge:foils/rubber', 'create:electron_tube')
 		.itemOutputs('2x create:brass_funnel')
-		.circuit(4)
+		.circuit(6)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -774,7 +774,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:brass_funnel_leather')
 		.itemInputs('2x #forge:plates/brass', '2x #forge:leather', 'create:electron_tube')
 		.itemOutputs('2x create:brass_funnel')
-		.circuit(4)
+		.circuit(6)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
