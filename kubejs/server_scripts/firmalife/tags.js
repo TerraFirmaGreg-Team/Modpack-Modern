@@ -47,8 +47,3 @@ const registerFirmaLifeFluidTags = (event) => {
 
     event.add('firmalife:mixable', 'tfc:spring_water')
 }
-
-const registerFirmaLifePlacedFeatures = (event) => {
-    event.remove('tfc:in_biome/veins', 'firmalife:vein/normal_chromite')
-    event.remove('tfc:in_biome/veins', 'firmalife:vein/deep_chromite')
-}
