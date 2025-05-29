@@ -1917,15 +1917,14 @@
 			dependencies: ["1D88369409736DC7"]
 			id: "3E51DAA2E5CF0422"
 			tasks: [{
-				id: "65E083074C5E0111"
+				id: "2328D90FAE814CEF"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"
 					tag: {
-						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ores/certus_quartz)"
+						"ftbfiltersystem:filter": "or(item(gtceu:poor_raw_certus_quartz)item(gtceu:raw_certus_quartz)item(gtceu:rich_raw_certus_quartz))"
 					}
 				}
-				title: "Any #forge:ores/certus_quartz"
 				type: "item"
 			}]
 			x: -7.0d

@@ -338,9 +338,10 @@ jobs:
         run: |
           ls
           mkdir -p .pakku/multimc-overrides/flame
+          mkdir -p .pakku/multimc-overrides/mods
           mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
           mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
-          mv -vf ./mods/* .pakku/multimc-overrides/.minecraft/mods/
+          mv -vf ./mods .pakku/multimc-overrides/.minecraft/mods
           cd .pakku/multimc-overrides/
           
           zip -r ${{ needs.info.outputs.project_full_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/

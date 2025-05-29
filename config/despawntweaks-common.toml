@@ -1,0 +1,16 @@
+#.
+#Turn this off to disable the despawn of mobs spawned by spawners
+allowMobsSpawnedBySpawnersToDespawn = true
+#.
+#Turn this off to disable the despawn optimizations.
+enableLetMeDespawnOptimization = true
+#.
+#Turn this off to disable the equipments drop on mobs despawn
+allowEquipmentDrops = true
+#.
+#If you add modIDs to this list, only mobs in the structures of the mods will be affected by DespawnTweaker.
+StructuresMods = []
+#.
+#If you add sturctures registry names to list, only mobs in the structures will be affected by DespawnTweaker.
+Structures = []
+

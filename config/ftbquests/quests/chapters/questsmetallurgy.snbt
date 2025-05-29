@@ -69,31 +69,15 @@
 			tasks: [
 				{
 					id: "7218CBCCA313343B"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/bucket/red_steel"
-					}
+					item: "tfc:metal/bucket/red_steel"
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "41001037515E3120"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/bucket/blue_steel"
-					}
+					item: "tfc:metal/bucket/blue_steel"
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.redblu_buckets.title}"
@@ -109,17 +93,9 @@
 			subtitle: "{quests.metal_age.black_steel_anvil.subtitle}"
 			tasks: [{
 				id: "5E7E9401FF7C5402"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/black_steel"
-				}
+				item: "tfc:metal/anvil/black_steel"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.black_steel_anvil.title}"
 			x: 27.5d
@@ -134,17 +110,9 @@
 			subtitle: "{quests.metal_age.steel_anvil.subtitle}"
 			tasks: [{
 				id: "338F94FE331E0954"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/steel"
-				}
+				item: "tfc:metal/anvil/steel"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.steel_anvil.title}"
 			x: 27.5d
@@ -159,17 +127,9 @@
 			subtitle: "{quests.metal_age.wrought_iron_anvil.subtitle}"
 			tasks: [{
 				id: "0E566B2921529CFE"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/wrought_iron"
-				}
+				item: "tfc:metal/anvil/wrought_iron"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.wrought_iron_anvil.title}"
 			x: 9.0d
@@ -204,7 +164,6 @@
 			id: "133DB645B6E0585A"
 			subtitle: "{quests.metal_age.weld_bronze_ingots.subtitle}"
 			tasks: [{
-				count: 7L
 				id: "497C431206F498A5"
 				item: {
 					Count: 1
@@ -237,31 +196,15 @@
 				}
 				{
 					id: "15B937178A5E5D8E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:raw_iron_bloom"
-					}
+					item: "tfc:raw_iron_bloom"
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "38651A52735D8872"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:wrought_iron_ingot"
-					}
+					item: "gtceu:wrought_iron_ingot"
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.bloomery.title}"
@@ -304,31 +247,15 @@
 				}
 				{
 					id: "5115EB2096C8E86C"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/pig_iron"
-					}
+					item: "tfc:metal/ingot/pig_iron"
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2153FE85D0898117"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:steel_ingot"
-					}
+					item: "gtceu:steel_ingot"
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{quests.metal_age.blast_furnace.title}"
@@ -345,19 +272,10 @@
 			id: "358571B6E692F198"
 			subtitle: "{quests.metal_age.weld_wrought_iron_ingots.subtitle}"
 			tasks: [{
-				count: 7L
 				id: "05AD17F66DFE3C56"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "gtceu:wrought_iron_double_ingot"
-				}
+				item: "gtceu:wrought_iron_double_ingot"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.weld_wrought_iron_ingots.title}"
 			x: 7.0d
@@ -385,19 +303,10 @@
 			id: "4310B619B57276ED"
 			subtitle: "{quests.metal_age.weld_steel_ingots.subtitle}"
 			tasks: [{
-				count: 7L
 				id: "0EDB1D851E198274"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "gtceu:steel_double_ingot"
-				}
+				item: "gtceu:steel_double_ingot"
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "{quests.metal_age.weld_steel_ingots.title}"
 			x: 25.5d

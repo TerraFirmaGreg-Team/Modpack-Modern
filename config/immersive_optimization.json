@@ -1,0 +1,31 @@
+{
+  "_documentation": "https://github.com/Luke100000/ImmersiveOptimization/wiki",
+  "enableEntities": true,
+  "enableBlockEntities": true,
+  "enableDistanceCulling": true,
+  "enableTrackingCulling": true,
+  "enableViewportCulling": true,
+  "minDistance": 6,
+  "blocksPerLevel": 64,
+  "blocksPerLevelDistanceCulled": 10,
+  "blocksPerLevelTrackingCulled": 10,
+  "blocksPerLevelViewportCulled": 20,
+  "maxLevel": 20,
+  "blocksPerLevelBlockEntities": 32,
+  "entityTickBudget": 30.0,
+  "stressedThreshold": 45,
+  "dimensions": {
+    "minecraft:overworld": true,
+    "minecraft:the_nether": true,
+    "minecraft:the_end": true
+  },
+  "entities": {
+    "fromanotherworld:starship": false,
+    "minecraft:player": false,
+    "minecraft:arrow": false,
+    "create": false,
+    "minecraft:ender_dragon": false
+  },
+  "version": 2,
+  "name": "immersive_optimization"
+}

@@ -1,7 +1,31 @@
 # Changelog
-
 ## [Unreleased]
 ### Changes
+
+## [0.9.9] - 30.05.2025
+### Changes
+- Added and changed many mods for optimization, please report any problems on github. @Xikaro
+- Disabled ability to sort items in the crucible and vessels, which let you stack things that shouldn't be stacked. (#1045) @esotericist
+- Other TFC waters also work for bulk washing now. (#1051) @Pyritie
+- Added machine recipes for compost and humus. (#1049) @Pyritie
+- You can now also use soybean oil to make pizza dough via machines. (#1056) @Pyritie
+- Create Deco's metal bars are now breakable with a pickaxe. (#1053) @Pyritie
+- Aircraft engine recipes now use the correct tier cables. @Pyritie
+- Added Piglin disguise item to prevent Piglin aggro. (#1058) @Redeix
+- Fixed recipes involving dyeing terracotta. (#1075) @Pyritie
+- Fixed pot recipe for dye liquids. (#1076) @Pyritie
+- Fixed anthracite not spawning in the Beneath. (#1063) @Pyritie
+- Buffed durability of construction wands. @Pyritie
+- Reorganized boat quests, added horse and akistor carts quests. (#1077) @deneth-weerasinghe
+- Added missing tin double ingot to plate helve hammer recipe. (#1078) @oogabooga-dev
+- Fixed sprinklers, added support for connecting GregTech pipes to hydroponic planters (#1033) @Thomasx0
+- Added some more medicinal plants. @Pyritie
+- Added lathe recipes to strip logs. @Pyritie
+- Iron flask now accepts any cloth, red steel flask now requires phantom silk. @Pyritie
+- Make food jars and firmalife jars stack to 16. (#1081) @Zeropol
+- Fixed medicine not working with cheats disabled. (#1084) @Redeix
+- Added recipes for strings to the coiling machine (#1083) @Pyritie
+- Fixed assembler recipe for brass funnel. @TomPlop
 
 ## [0.9.8] - 19.05.2025
 ### Changes

@@ -340,7 +340,7 @@ function registerImmersiveAircraftRecipes(event) {
 		C: 'gtceu:blue_steel_plate',
 		D: 'gtceu:lv_electric_piston',
 		E: 'immersive_aircraft:engine',
-		F: 'gtceu:red_alloy_single_cable',
+		F: 'gtceu:tin_single_cable',
 		G: 'gtceu:lv_electric_pump'
 	}).id('tfg:shaped/lv_aircraft_engine')
 
@@ -376,7 +376,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: 'vintageimprovements:aluminum_sheet',
 		B: 'gtceu:mv_electric_piston',
 		C: 'immersive_aircraft:engine',
-		D: 'gtceu:aluminium_single_cable',
+		D: 'gtceu:copper_single_cable',
 		E: 'gtceu:mv_electric_pump'
 	}).id('tfg:immersive_aircraft/shaped/nether_engine')
 
@@ -408,7 +408,7 @@ function registerImmersiveAircraftRecipes(event) {
 		A: 'gtceu:stainless_steel_plate',
 		B: 'gtceu:hv_electric_piston',
 		C: 'immersive_aircraft:engine',
-		D: 'gtceu:aluminium_double_cable',
+		D: 'gtceu:silver_double_cable',
 		E: 'gtceu:hv_electric_pump',
 	}).id('tfg:shaped/hv_aircraft_engine')
 
@@ -419,15 +419,13 @@ function registerImmersiveAircraftRecipes(event) {
 			GTMaterials.Silver,
 			GTMaterials.Steel,
 			GTMaterials.Gold,
-			GTMaterials.Aluminium,
 			GTMaterials.TinAlloy,
 			GTMaterials.WroughtIron
 		], [
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 14),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 9),
-			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 4),
+			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 5),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 3),
-			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),
 			createMaterialsToResults(TagPrefix.dust, TagPrefix.ingot, 1),

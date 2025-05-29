@@ -20,8 +20,8 @@
             if (item.id != `tfg:${pill_event}_pill`) return
             item.count--
             player.addItemCooldown(item, 100)
-            player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 480 0 true`)
-            server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+            server.runCommandSilent(`effect give ${player.username} minecraft:${pill_event} 480 0 true`)
+            server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
         });
 
         ItemEvents.rightClicked(event => {
@@ -29,8 +29,8 @@
             if (item.id != `tfg:${pill_event}_tablet`) return
             item.count--
             player.addItemCooldown(item, 100)
-            player.runCommandSilent(`effect give ${username} minecraft:${pill_event} 1800 0 true`)
-            server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+            server.runCommandSilent(`effect give ${player.username} minecraft:${pill_event} 1800 0 true`)
+            server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
         });
     });
 
@@ -40,7 +40,7 @@
         item.count--
         player.addItemCooldown(item, 50)
         event.player.removeEffect('minecraft:poison')
-        server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+        server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
     });
 
     ItemEvents.rightClicked(event => {
@@ -59,7 +59,7 @@
         event.player.removeEffect('minecraft:bad_omen')
         event.player.removeEffect('minecraft:darkness')
         event.player.removeEffect('minecraft:unluck')
-        server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${username} ${x} ${y} ${z} 10 1.5 1`)
+        server.runCommandSilent(`playsound minecraft:item.honey_bottle.drink player ${player.username} ${x} ${y} ${z} 10 1.5 1`)
     });
 
     //salvos
@@ -77,8 +77,8 @@
             if (item.id != `tfg:${salvo_event}_salvo`) return
             item.count--
             player.addItemCooldown(item, 100)
-            player.runCommandSilent(`effect give ${username} minecraft:${salvo_event} 480 0 true`)
-            server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
+            server.runCommandSilent(`effect give ${player.username} minecraft:${salvo_event} 480 0 true`)
+            server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${player.username} ${x} ${y} ${z} 10 2 1`)
         });
     });
 
@@ -87,8 +87,8 @@ ItemEvents.rightClicked(event => {
     if (item.id != `tfg:absorption_salvo`) return
     item.count--
     player.addItemCooldown(item, 200)
-    player.runCommandSilent(`effect give ${username} minecraft:absorption 480 4 true`)
-    server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
+    server.runCommandSilent(`effect give ${player.username} minecraft:absorption 480 4 true`)
+    server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${player.username} ${x} ${y} ${z} 10 2 1`)
 });
 
 ItemEvents.rightClicked(event => {
@@ -96,8 +96,8 @@ ItemEvents.rightClicked(event => {
     if (item.id != `tfg:instant_health_salvo`) return
     item.count--
     player.addItemCooldown(item, 100)
-    player.runCommandSilent(`effect give ${username} minecraft:instant_health 1 1 true`)
-    server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${username} ${x} ${y} ${z} 10 2 1`)
+    server.runCommandSilent(`effect give ${player.username} minecraft:instant_health 1 1 true`)
+    server.runCommandSilent(`playsound minecraft:item.glow_ink_sac.use player ${player.username} ${x} ${y} ${z} 10 2 1`)
 });
 
 //#endregion
@@ -107,7 +107,7 @@ global.MINECRAFT_DYE_NAMES.forEach(color => {
     BlockEvents.rightClicked(event => {
         const {block,server,player,player:{x,y,z,username}} = event
         if (block.id != `tfg:decorative_vase/${color}`) {return}{
-        server.runCommandSilent(`playsound tfc:block.quern.drag block ${username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
+        server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
     }})
 });
 
@@ -115,7 +115,7 @@ global.MINECRAFT_DYE_NAMES.forEach(color => {
 BlockEvents.rightClicked(event => {
     const {block,server,player,player:{x,y,z,username}} = event
     if (block.id != 'tfg:decorative_vase') {return}{
-    server.runCommandSilent(`playsound tfc:block.quern.drag block ${username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
+    server.runCommandSilent(`playsound tfc:block.quern.drag block ${player.username} ${block.x} ${block.y} ${block.z} 0.3 2.0 0.1`)
 }});
 //#endregion
 

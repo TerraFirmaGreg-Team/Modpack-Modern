@@ -2,6 +2,12 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
 
+	//temporary hidden items
+	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:stromatolite_cluster_small')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:stromatolite_cluster_medium')
+
 	//Decorative Vases
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
 		event.add('c:hidden_from_recipe_viewers', `tfg:decorative_vase/generated/${color}`)
@@ -15,7 +21,7 @@ const registerTFGItemTags = (event) => {
 	//Knapping
 	event.add('tfc:any_knapping', 'minecraft:flint')
 
-	//Tools
+	//Tools & Armor
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/wood')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/brass')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/rose_gold')
@@ -24,6 +30,8 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/tin_alloy')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/cupronickel')
 	event.add('forge:tools/fishing_nets', 'tfg:fishing_net/magnalium')
+	
+	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
 	// #region Paper from wood
 
@@ -77,6 +85,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:speed_ingredients', 'firmalife:raw_honey')
 
 	event.add('tfg:slowness_ingredients', 'tfc:plant/marigold')
+	event.add('tfg:slowness_ingredients', 'tfc:plant/nasturtium')
 	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_red')
 	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_white')
 	event.add('tfg:slowness_ingredients', 'tfc:plant/snapdragon_yellow')
@@ -84,6 +93,8 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:weakness_ingredients', 'tfc:plant/laminaria')
 	event.add('tfg:weakness_ingredients', 'tfc:plant/sea_palm')
 	event.add('tfg:weakness_ingredients', 'tfc:plant/sea_lavender')
+	event.add('tfg:weakness_ingredients', 'tfc:plant/canna')
+	event.add('tfg:weakness_ingredients', 'tfc:plant/water_canna')
 
 	event.add('tfg:haste_ingredients', '#tfg:sugars')
 
@@ -353,12 +364,11 @@ const registerTFGPlacedFeatures = (event) => {
 
 	// #region Nether ores
 
-	event.add('tfg:nether_veins', 'beneath:vein/cursecoal')
-	event.add('tfg:nether_veins', 'beneath:vein/sylvite')
 	event.add('tfg:nether_veins', 'beneath:vein/crackrack_pipe')
 
 	// Lower only
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sylvite')
 
 	// Full height
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
@@ -377,6 +387,7 @@ const registerTFGPlacedFeatures = (event) => {
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
 
 	// Upper only
+	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_anthracite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_apatite')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_basaltic_sands')
 	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_bauxite')

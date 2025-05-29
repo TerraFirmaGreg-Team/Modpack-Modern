@@ -320,19 +320,19 @@ function registerTFCMachineRecipes(event) {
 
 	global.TFC_ALCOHOL.forEach(alcohol => {
 		event.recipes.gtceu.fermenter(`tfg:tfc/vinegar/${alcohol.id.replace(':', '_')}`)
-		.itemInputs('#tfc:foods/fruits')
-		.inputFluids(Fluid.of(alcohol.id, 250))
-		.outputFluids(Fluid.of('tfc:vinegar', 250))
-		.duration(600)
-		.EUt(28)
+			.itemInputs('#tfc:foods/fruits')
+			.inputFluids(Fluid.of(alcohol.id, 250))
+			.outputFluids(Fluid.of('tfc:vinegar', 250))
+			.duration(600)
+			.EUt(28)
 	})
 
 	event.recipes.gtceu.mixer('tfg:tfc/brine')
-	.inputFluids(Fluid.of('tfc:salt_water', 900))
-	.inputFluids(Fluid.of('tfc:vinegar', 100))
-	.outputFluids(Fluid.of('tfc:brine', 1000))
-	.duration(100)
-	.EUt(16)
+		.inputFluids(Fluid.of('tfc:salt_water', 900))
+		.inputFluids(Fluid.of('tfc:vinegar', 100))
+		.outputFluids(Fluid.of('tfc:brine', 1000))
+		.duration(100)
+		.EUt(16)
 
 	//#endregion
 	
@@ -505,4 +505,73 @@ function registerTFCMachineRecipes(event) {
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.duration(20)
 		.EUt(2)
+
+	// Humus and compost
+	event.recipes.gtceu.extractor('tfg:humus_from_leaves')
+		.itemInputs('#minecraft:leaves')
+		.itemOutputs('tfc:groundcover/humus')
+		.duration(600)
+		.EUt(2)
+
+	event.recipes.gtceu.extractor('tfg:humus_from_fallen_leaves')
+		.itemInputs('#tfc:fallen_leaves')
+		.itemOutputs('tfc:groundcover/humus')
+		.duration(600)
+		.EUt(2)
+
+	event.recipes.gtceu.fermenter('tfg:fertilizer_to_compost')
+		.itemInputs('4x gtceu:fertilizer')
+		.itemOutputs('tfc:compost')
+		.duration(1200)
+		.EUt(2)
+
+	const BROWNS = [ '16x #tfc:compost_browns_low', '4x #tfc:compost_browns_high' ];
+	const GREENS = [ '16x #tfc:compost_greens_low', '4x #tfc:compost_greens_high' ];
+
+	let i = 0;
+	BROWNS.forEach(brown => {
+		GREENS.forEach(green => {
+			event.recipes.gtceu.mixer(`tfg:compost_${i++}`)
+				.itemInputs(brown, green)
+				.itemOutputs('tfc:compost')
+				.duration(1200)
+				.EUt(2)
+		})
+	})
+
+	event.recipes.gtceu.centrifuge('tfg:soot')
+		.itemInputs('tfc:soot')
+		.itemOutputs('#forge:dusts/carbon')
+		.duration(20)
+		.EUt(2)
+
+	// Stripped logs
+
+	global.TFC_WOOD_TYPES.forEach(wood => {
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_log`)
+			.itemInputs(`tfc:wood/log/${wood}`)
+			.itemOutputs(`tfc:wood/stripped_log/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.recipes.gtceu.lathe(`tfg:stripping_${wood}_wood`)
+			.itemInputs(`tfc:wood/wood/${wood}`)
+			.itemOutputs(`tfc:wood/stripped_wood/${wood}`)
+			.duration(50)
+			.EUt(2)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `tfc:wood/log/${wood}` }],
+			results: [{ item: `tfc:wood/stripped_log/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_log`)
+
+		event.custom({
+			type: 'vintageimprovements:turning',
+			ingredients: [{ item: `tfc:wood/wood/${wood}` }],
+			results: [{ item: `tfc:wood/stripped_wood/${wood}` }],
+			processingTime: 50
+		}).id(`tfg:vi/lathe/stripping_${wood}_wood`)
+	})
 }
