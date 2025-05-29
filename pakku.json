@@ -1,6 +1,6 @@
 {
     "name": "TerraFirmaGreg-Modern",
-    "version": "0.9.8",
+    "version": "0.9.9",
     "description": "An innovative modpack that contains GregTech and TerraFirmaCraft on 1.20.x.",
     "author": "Exception, Xikaro",
     "overrides": [
@@ -194,6 +194,15 @@
         "rainboows": {
             "side": "CLIENT"
         },
+        "fix-gpu-memory-leak": {
+            "side": "CLIENT"
+        },
+        "immediatelyfast": {
+            "side": "CLIENT"
+        },
+        "unilib": {
+            "side": "CLIENT"
+        },
         "resourceful-config": {
             "side": "BOTH"
         },
@@ -232,6 +241,9 @@
         },
         "detected-setblock-be-gone": {
             "side": "BOTH"
+        },
+        "probejs": {
+            "export": false
         }
     }
 }

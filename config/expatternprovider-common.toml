@@ -24,3 +24,7 @@ disableItemRender = false
 	#Range: 3 ~ 16
 	assembler_matrix_max_size = 6
 
+[misc]
+	#Enable debug logging.
+	debug_mode = false
+
