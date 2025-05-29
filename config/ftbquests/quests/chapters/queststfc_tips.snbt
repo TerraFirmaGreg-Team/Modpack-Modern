@@ -5195,8 +5195,8 @@
 			title: "{quests.tfg_tips.plow.title}"
 			x: -5.0d
 			y: -2.5d
-    }
-    {
+		}
+		{
 			dependencies: ["4A8910950F638BB5"]
 			description: ["{quests.tfg_tips.piglin_disguise.desc}"]
 			id: "02956D3A63429E39"

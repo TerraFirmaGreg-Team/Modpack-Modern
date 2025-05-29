@@ -1905,11 +1905,11 @@
 		}
 		{
 			dependencies: ["00A2566109144D7F"]
-			description: ["With your first step on the Moon comes access to your first &bCertus Quartz&r vein.\\nDon't worry — they're quite common and should be easy to locate, though having a decent &9Ore Scanner&r wouldn’t hurt.\\n\\nWhether you decide to set up a miner or manually dig out a full vein, make sure to gather a &dhefty amount&r — you’ll need it to progress through &bAE2&r."]
+			description: ["With your first step on the Moon comes access to your first &bCertus Quartz&r vein.\\nDon't worry � they're quite common and should be easy to locate, though having a decent &9Ore Scanner&r wouldn�t hurt.\\n\\nWhether you decide to set up a miner or manually dig out a full vein, make sure to gather a &dhefty amount&r � you�ll need it to progress through &bAE2&r."]
 			id: "3E51DAA2E5CF0422"
 			subtitle: "A first step for you, a big leap for AE2"
 			tasks: [{
-				id: "201DEABD6D380F46"
+				id: "2328D90FAE814CEF"
 				item: {
 					Count: 1
 					id: "ftbfiltersystem:smart_filter"

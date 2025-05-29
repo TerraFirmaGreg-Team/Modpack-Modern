@@ -141,6 +141,7 @@ TFCEvents.data(event => {
     registerTFCDataForTFC(event)
     registerTFCDataForTFCBetterBF(event)
     registerTFCDataForWaterFlasks(event)
+    registerTFCDataForFirmalife(event)
 })
 
 /**

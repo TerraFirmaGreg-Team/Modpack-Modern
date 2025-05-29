@@ -27,6 +27,7 @@ BlockEvents.modification(event => {
  */
 ItemEvents.modification(event => {
     registerBeneathItemModifications(event)
+    registerConstructionWandsItemModifications(event)
     registerMinecraftItemModifications(event)
 })
 
