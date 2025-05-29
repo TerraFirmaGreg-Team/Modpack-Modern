@@ -1,6 +1,7 @@
 # Changelog
 ## [Unreleased]
 ### Changes
+- Create Steam Engine now also accepts river water and GregTech steam as valid inputs (#947) @Zeropol
 
 ## [0.9.9] - 30.05.2025
 ### Changes
