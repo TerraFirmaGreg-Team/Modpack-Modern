@@ -338,6 +338,7 @@ jobs:
         run: |
           ls
           mkdir -p .pakku/multimc-overrides/flame
+          mkdir -p .pakku/multimc-overrides/mods
           mv -vf ./build/.cache/curseforge/manifest.json .pakku/multimc-overrides/flame/manifest.json
           mv -vf ./build/.cache/curseforge/overrides .pakku/multimc-overrides/.minecraft
           mv -vf ./mods/* .pakku/multimc-overrides/.minecraft/mods/
