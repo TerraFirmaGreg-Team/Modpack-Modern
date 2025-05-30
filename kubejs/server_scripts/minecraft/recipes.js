@@ -597,6 +597,7 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
 		.itemInputs('#forge:chests', '5x #forge:plates/wrought_iron')
 		.itemOutputs('minecraft:hopper')
+		.circuit(8)
 		.duration(700)
 		.EUt(2)
 
