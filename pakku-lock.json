@@ -8626,43 +8626,6 @@
                     "date_published": "2023-11-20T20:55:45.500Z"
                 }
             ]
-        },
-        {
-            "pakku_id": "3odYFxvo4asU0ho7",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "spark"
-            },
-            "name": {
-                "curseforge": "spark"
-            },
-            "id": {
-                "curseforge": "361579"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "spark-1.10.53-forge.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4738/952/spark-1.10.53-forge.jar",
-                    "id": "4738952",
-                    "parent_id": "361579",
-                    "hashes": {
-                        "sha1": "231fb325368c0660954f47bfb03493f5246fa4d1",
-                        "md5": "95dcd3b5400cc5eb5d0478a744e6ef98"
-                    },
-                    "required_dependencies": [],
-                    "size": 3114590,
-                    "date_published": "2023-09-05T08:02:20.050Z"
-                }
-            ]
         }
     ],
     "lockfile_version": 1
