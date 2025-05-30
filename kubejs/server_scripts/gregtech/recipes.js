@@ -1078,16 +1078,6 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-	//#region Hopper
-
-	event.recipes.gtceu.assembler('gtceu:assembler/hopper_wrought_iron')
-		.itemInputs('#forge:chests', '5x #forge:plates/wrought_iron')
-		.itemOutputs('minecraft:hopper')
-		.circuit(8)
-		.duration(200)
-		.EUt(2)
-
-	//#endregion
 
 	//#region Credits
 
