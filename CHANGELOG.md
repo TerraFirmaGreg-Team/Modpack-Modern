@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### Changes
 - Create Steam Engine now also accepts river water and GregTech steam as valid inputs (#947) @Zeropol
+- Changed weird assembler piston recipe (#1092) @Redeix
 
 ## [0.9.9] - 30.05.2025
 ### Changes
