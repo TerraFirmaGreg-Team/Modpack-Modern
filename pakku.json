@@ -253,6 +253,9 @@
         },
         "detected-setblock-be-gone": {
             "side": "BOTH"
+        },
+        "probejs": {
+            "export": false
         }
     }
 }

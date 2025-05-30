@@ -1,7 +1,12 @@
 # Changelog
-
 ## [Unreleased]
 ### Changes
+- Create Steam Engine now also accepts river water and GregTech steam as valid inputs (#947) @Zeropol
+- Changed weird assembler piston recipe (#1092) @Redeix
+
+## [0.9.9] - 30.05.2025
+### Changes
+- Added and changed many mods for optimization, please report any problems on github. @Xikaro
 - Disabled ability to sort items in the crucible and vessels, which let you stack things that shouldn't be stacked. (#1045) @esotericist
 - Other TFC waters also work for bulk washing now. (#1051) @Pyritie
 - Added machine recipes for compost and humus. (#1049) @Pyritie

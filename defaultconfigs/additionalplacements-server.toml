@@ -15,101 +15,31 @@
 
 			#Slabs
 			[server.types.additionalplacements.slab]
-
-				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
-				[server.types.additionalplacements.slab.rotated_logic]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
 
 			#Stairs
 			[server.types.additionalplacements.stairs]
-
-				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
-				[server.types.additionalplacements.stairs.rotated_logic]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
 
 			#Carpets
 			[server.types.additionalplacements.carpet]
-
-				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
-				[server.types.additionalplacements.carpet.rotated_logic]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
 
 			#Regular pressure plates
 			[server.types.additionalplacements.pressure_plate]
-
-				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
-				[server.types.additionalplacements.pressure_plate.rotated_logic]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
 
 			#Weighted pressure plates
 			[server.types.additionalplacements.weighted_pressure_plate]
-
-				#Options to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
-				[server.types.additionalplacements.weighted_pressure_plate.rotated_logic]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will use "rotated logic" of their original blocks. Mainly affects bounding boxes.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_logic = ["+*"]
 

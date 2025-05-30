@@ -24,186 +24,46 @@
 
 			#Slabs
 			[client.types.additionalplacements.slab]
-
-				#Options to control which blocks will rotate the textures of their original blocks.
-				[client.types.additionalplacements.slab.rotated_textures]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = ["minecraft:smooth_stone_slab"]
-
-				#Options to control which blocks will use "rotated models" of their original blocks.
-				[client.types.additionalplacements.slab.rotated_models]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = ["minecraft:sandstone_slab", "minecraft:cut_sandstone_slab", "minecraft:red_sandstone_slab", "minecraft:cut_red_sandstone_slab"]
+				#Blocklist to control which blocks will rotate the textures of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_textures = ["+*", "-minecraft:smooth_stone_slab"]
+				#Blocklist to control which blocks will use "rotated models" of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_models = ["+*", "-minecraft:sandstone_slab", "-minecraft:cut_sandstone_slab", "-minecraft:red_sandstone_slab", "-minecraft:cut_red_sandstone_slab"]
 
 			#Stairs
 			[client.types.additionalplacements.stairs]
-
-				#Options to control which blocks will rotate the textures of their original blocks.
-				[client.types.additionalplacements.stairs.rotated_textures]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
-
-				#Options to control which blocks will use "rotated models" of their original blocks.
-				[client.types.additionalplacements.stairs.rotated_models]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = ["minecraft:sandstone_stairs", "minecraft:red_sandstone_stairs"]
+				#Blocklist to control which blocks will rotate the textures of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_textures = ["+*"]
+				#Blocklist to control which blocks will use "rotated models" of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_models = ["+*", "-minecraft:sandstone_stairs", "-minecraft:red_sandstone_stairs"]
 
 			#Carpets
 			[client.types.additionalplacements.carpet]
-
-				#Options to control which blocks will rotate the textures of their original blocks.
-				[client.types.additionalplacements.carpet.rotated_textures]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
-
-				#Options to control which blocks will use "rotated models" of their original blocks.
-				[client.types.additionalplacements.carpet.rotated_models]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will rotate the textures of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_textures = ["+*"]
+				#Blocklist to control which blocks will use "rotated models" of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_models = ["+*"]
 
 			#Regular pressure plates
 			[client.types.additionalplacements.pressure_plate]
-
-				#Options to control which blocks will rotate the textures of their original blocks.
-				[client.types.additionalplacements.pressure_plate.rotated_textures]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
-
-				#Options to control which blocks will use "rotated models" of their original blocks.
-				[client.types.additionalplacements.pressure_plate.rotated_models]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will rotate the textures of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_textures = ["+*"]
+				#Blocklist to control which blocks will use "rotated models" of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_models = ["+*"]
 
 			#Weighted pressure plates
 			[client.types.additionalplacements.weighted_pressure_plate]
-
-				#Options to control which blocks will rotate the textures of their original blocks.
-				[client.types.additionalplacements.weighted_pressure_plate.rotated_textures]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
-
-				#Options to control which blocks will use "rotated models" of their original blocks.
-				[client.types.additionalplacements.weighted_pressure_plate.rotated_models]
-					#Default state for blocks not matching any list. True is enabled, false is disabled.
-					default = true
-					#Whitelist for mods whose blocks will be enabled.
-					mod_whitelist = []
-					#Blacklist for mods whose blocks will be disabled. Takes priority over the mod whitelist.
-					mod_blacklist = []
-					#Whitelist for tags whose blocks will be enabled. Takes priority over the the mod blacklist and whitelist.
-					tag_whitelist = []
-					#Blacklist for tags whose blocks will be disabled. Takes priority over the block whitelist and the mod blacklist and whitelist.
-					tag_blacklist = []
-					#Whitelist for blocks that will be enabled. Takes priority over the the mod and tag blacklist and whitelist.
-					block_whitelist = []
-					#Blacklist for blocks that will be disabled. Takes priority over the block whitelist and the mod and tag blacklist and whitelist.
-					block_blacklist = []
+				#Blocklist to control which blocks will rotate the textures of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_textures = ["+*"]
+				#Blocklist to control which blocks will use "rotated models" of their original blocks.
+				#See https://github.com/FirEmerald/AdditionalPlacements/wiki/Blocklist-Format for blocklist format
+				rotated_models = ["+*"]
 
