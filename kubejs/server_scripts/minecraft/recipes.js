@@ -602,13 +602,13 @@ const registerMinecraftRecipes = (event) => {
 
 	//#endregion
 
-	//#region Выход: Поршень
+	//#region Выход: Поршень (Piston)
 
 	event.recipes.gtceu.assembler('piston')
-		.itemInputs('#forge:plates/wrought_iron', '3x tfc:wood/planks/acacia', '4x #tfc:rock/raw')
-		.itemOutputs('4x minecraft:piston')
+		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),ChemicalHelper.get(TagPrefix.gearSmall, GTMaterials.Brass, 1) , '3x #tfc:lumber', '4x #forge:cobblestone')
+		.itemOutputs('2x minecraft:piston')
 		.duration(100)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 
