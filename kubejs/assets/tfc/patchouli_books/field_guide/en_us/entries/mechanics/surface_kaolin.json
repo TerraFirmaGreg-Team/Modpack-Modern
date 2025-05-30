@@ -4,11 +4,11 @@
     "category": "tfc:mechanics",
 	"read_by_default": true,
     "pages": [
-        {
-            "type": "patchouli:text",
+		{
+			"type": "patchouli:text",
 			"anchor": "kaolinite",
-            "text": "Kaolin Clay is required to make $(l:mechanics/fire_clay)Fire Clay$(). It can be found spawning at high altitudes in Plateaus, Old Mountains, Rolling Hills, and Highlands, at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay."
-        },
+			"text": "Kaolin Clay is required to make $(l:mechanics/fire_clay)Fire Clay$(). It can be found spawning between Y=75-110 in Plateaus, Old Mountains, Rolling Hills, and Highlands, at a $(l:the_world/climate#temperature)temperature$() of at least 18°C, with a $(l:the_world/climate#rainfall)rainfall$() of at least 300mm. The $(thing)Blood Lily$() flower grows on Kaolin clay, which can be up to 35 blocks below."
+		},
 		{
 			"type": "tfc:multimultiblock",
 			"text": "Generally, go $(thing)South East$() to increase temperature and humidity.",
