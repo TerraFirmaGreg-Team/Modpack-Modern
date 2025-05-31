@@ -190,8 +190,8 @@ const registerTFCRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:oops_i_smelted_all_my_kaolin')
-		.itemInputs('5x minecraft:clay_ball', 'tfc:powder/kaolinite')
-		.itemOutputs('5x tfc:kaolin_clay')
+		.itemInputs('minecraft:clay_ball', 'tfc:powder/kaolinite')
+		.itemOutputs('tfc:kaolin_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -333,4 +333,5 @@ const registerTFCRecipes = (event) => {
 		'#forge:tools/saws'
 	]).id('tfc:shapeless/jar_lid')
 
+	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 }
