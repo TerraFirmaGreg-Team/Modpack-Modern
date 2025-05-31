@@ -33,6 +33,9 @@ const registerTFGItemTags = (event) => {
 	
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
+	event.add('forge:tools/trowels', 'tfg:trowel')
+	event.add('tfc:usable_on_tool_rack', 'tfg:trowel')
+
 	// #region Paper from wood
 
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
