@@ -5,6 +5,14 @@
 - Changed weird assembler piston recipe (#1092) @Redeix
 - Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
 - Fixed texture clipping on piglin disguise (#1106) @Redeix
+- Added Aqueous Accumulator machine, basically a rock breaker but for fluids (#1030) @Pyritie
+- Added Packer recipe for stick bundling (#1101) @JeanRdSz
+- Started work on Brazilian Portuguese translations @gifpxto
+- Fixed assembler recipe conflict with Hoppers and Item Vaults (#1098) @TomPlop
+- Fixed assembler recipe conflict with Create Pipes and Fluid Tanks (#1103) @Pyritie
+- Steam grinder and oven are now cheaper and use more steam-age appropriate materials (#1091) @Pyritie
+- Changed HS Greate machines to use blue alloy instead of red steel (#1091) @Pyritie
+- Changed HV Cutter to use diamond buzzsaw instead of red steel (#1091) @Pyritie
 
 ## [0.9.9] - 30.05.2025
 ### Changes

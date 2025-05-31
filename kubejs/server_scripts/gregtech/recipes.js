@@ -1133,6 +1133,13 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	event.recipes.gtceu.laser_engraver('tfg:diamond_gear')
+		.itemInputs('4x #forge:plates/diamond')
+		.itemOutputs('#forge:gears/diamond')
+		.notConsumable('gtceu:glass_lens')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.MV])
+
 	// TODO: Greate again...
 	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])
 		.id('tfg:shapeless/programmed_circuit_from_stick')

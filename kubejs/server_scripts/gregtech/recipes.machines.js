@@ -411,7 +411,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
-		//#region passthrough hatches
+	//#region passthrough hatches
 	event.recipes.shaped('gtceu:lv_item_passthrough_hatch', [
 		' A ',
 		'BCB',
@@ -685,7 +685,7 @@ function registerGTCEuMachineRecipes(event) {
 
 	DRUMS_AND_CRATES.forEach(material => {
 		event.shapeless(`gtceu:${material}_drum`, [`gtceu:${material}_drum`]).id(`tfg:shapeless/drum_nbt_${material}`)
-	
+
 		event.shaped(`gtceu:${material}_drum`, [
 			' A ',
 			'BCB',
@@ -788,14 +788,40 @@ function registerGTCEuMachineRecipes(event) {
 		C: '#forge:small_fluid_pipes/steel'
 	}).id('gtceu:shaped/steam_hatch')
 
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+	event.shaped('gtceu:steam_grinder', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: 'gtceu:steam_machine_casing',
+		B: '#forge:gears/invar',
+		C: 'gtceu:hp_steam_macerator'
+	}).id('gtceu:shaped/steam_grinder')
 
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_bus'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_bus'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_output_bus'}, 'gtceu:steel_dust', '4x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_output_bus'}, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+	event.shaped('gtceu:steam_oven', [
+		'ABA',
+		'ACA',
+		'ABA'
+	], {
+		A: 'gtceu:steam_machine_casing',
+		B: 'gtceu:heatproof_machine_casing',
+		C: 'gtceu:hp_steam_furnace'
+	}).id('gtceu:shaped/steam_oven')
 
-	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch'}, 'gtceu:steel_dust', '6x gtceu:steel_dust')
-	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch'}, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+	event.replaceInput({ id: 'gtceu:shaped/hv_cutter' }, 'gtceu:red_steel_buzz_saw_blade', 'gtceu:diamond_buzz_saw_blade')
+
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steel_machine_casing' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steel_machine_casing' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_output_bus' }, 'gtceu:steel_dust', '4x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_output_bus' }, 'gtceu:steel_ingot', '4x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_steam_input_hatch' }, 'gtceu:steel_dust', '6x gtceu:steel_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_steam_input_hatch' }, 'gtceu:steel_block', '6x gtceu:steel_ingot')
+
+	event.replaceOutput({ id: 'gtceu:macerator/macerate_hv_cutter' }, 'gtceu:red_steel_dust', '4x gtceu:diamond_dust')
+	event.replaceOutput({ id: 'gtceu:arc_furnace/arc_hv_cutter' }, '#forge:ingots/red_steel', '4x gtceu:chipped_diamond_gem')
 }
