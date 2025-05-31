@@ -1,10 +1,5 @@
 // priority: 0
 
-/**
- * 
- * @param {TagEvent.Item} event 
- */
-//#region ItemTags
 const registerTFCItemTags = (event) => {
 	// Теги для соответствия инструментов TFC и GT
 
@@ -297,9 +292,7 @@ const registerTFCItemTags = (event) => {
 	event.add('minecraft:piglin_loved', 'tfc:ore/normal_native_gold')
 	event.add('minecraft:piglin_loved', 'tfc:ore/rich_native_gold')
 }
-//#endregion
 
-//#region BlockTags
 const registerTFCBlockTags = (event) => {
 	// Теги для каменных ступенек тфк
 	global.TFC_STONE_TYPES.forEach(stoneTypeName => {
@@ -415,9 +408,7 @@ const registerTFCBlockTags = (event) => {
 	event.add('tfc:bloomery_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
 	event.add('tfc:forge_insulation', `/^(?=.*brick)(?!.*(${brick_blacklist})).*/`);
 }
-//#endregion
 
-//#region FluidTags
 const registerTFCFluidTags = (event) => {
 	// Удаление TFC металлов из возможных в форме слитка
 	event.remove('tfc:usable_in_ingot_mold', 'tfc:metal/bismuth')
@@ -468,18 +459,15 @@ const registerTFCFluidTags = (event) => {
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:red_alloy')
 	event.add('tfc:usable_in_ingot_mold', 'gtceu:tin_alloy')
 
-	//
 	event.add('tfc:usable_in_bell_mold', 'gtceu:bronze')
 	event.add('tfc:usable_in_bell_mold', 'gtceu:gold')
 	event.add('tfc:usable_in_bell_mold', 'gtceu:brass')
 
-	//
 	event.add('tfc:usable_in_tool_head_mold', 'gtceu:copper')
 	event.add('tfc:usable_in_tool_head_mold', 'gtceu:bismuth_bronze')
 	event.add('tfc:usable_in_tool_head_mold', 'gtceu:black_bronze')
 	event.add('tfc:usable_in_tool_head_mold', 'gtceu:bronze')
 
-	//
 	event.add('tfc:usable_in_barrel', 'gtceu:creosote')
 	event.add('tfc:usable_in_wooden_bucket', 'gtceu:creosote')
 	event.add('tfc:usable_in_red_steel_bucket', 'gtceu:creosote')
@@ -520,20 +508,13 @@ const registerTFCFluidTags = (event) => {
 	event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_red_steel')
 	event.add('c:hidden_from_recipe_viewers', 'tfc:metal/high_carbon_blue_steel')
 }
-//#endregion
 
-//#region BiomeTags
 const registerTFCBiomeTags = (event) => {
 
 	event.add('tfc:kaolin_clay_spawns_in', 'tfc:rolling_hills')
 }
-//#endregion
 
-//#region PlacedFeatures
 const registerTFCPlacedFeatures = (event) => {
-
-	// Удаление
-	event.removeAll('tfc:in_biome/veins')
 
 	// Add back the non-ore ones
 	event.add('tfc:in_biome/veins', 'tfc:vein/gravel')
@@ -542,56 +523,7 @@ const registerTFCPlacedFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfc:vein/diorite_dike')
 	event.add('tfc:in_biome/veins', 'tfc:vein/gabbro_dike')
 
-	// Добавление
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_amethyst')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_garnet_opal')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_gold')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_hematite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_limonite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_magnetite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_molybdenum')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_pitchblende')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sapphire')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_scheelite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_sheldonite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/deep_topaz')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_apatite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_basaltic_sands')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_bauxite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_beryllium')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_bismuthinite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_cassiterite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_coal')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_copper')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_garnet_tin')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_garnierite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_gold')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_graphite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_hematite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_spodumene')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_oilsands')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_lapis')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_limonite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_lubricant')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_magnetite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_manganese')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_mica')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_monazite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_olivine')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_quartz')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_redstone')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_salt')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_saltpeter')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_silver')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sphalerite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_sulfur')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/normal_tetrahedrite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_bismuthinite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_cassiterite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_copper')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_sphalerite')
-	event.add('tfc:in_biome/veins', 'tfg:earth/vein/surface_tetrahedrite')
-
+	// Geodes
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/amethyst')
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/barite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/calcite')
@@ -600,9 +532,7 @@ const registerTFCPlacedFeatures = (event) => {
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/pyrite')
 	event.add('tfc:in_biome/veins', 'tfg:earth/geode/quartzite')
 
-	event.add('tfc:in_biome/veins', 'tfg:earth/nether_hint_vein')
-
+	// Other decoration
 	event.add('tfc:in_biome/underground_decoration', 'tfg:glow_lichen')
 	event.add('tfc:in_biome/underground_decoration', 'tfg:earth/sulfur_patch')
 }
-//#endregion
