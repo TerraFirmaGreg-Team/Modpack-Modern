@@ -13,6 +13,7 @@
 - Steam grinder and oven are now cheaper and use more steam-age appropriate materials (#1091) @Pyritie
 - Changed HS Greate machines to use blue alloy instead of red steel (#1091) @Pyritie
 - Changed HV Cutter to use diamond buzzsaw instead of red steel (#1091) @Pyritie
+- Fixed some assembly line recipes that had incorrect stack sizes (#1108) @Pyritie
 
 ## [0.9.9] - 30.05.2025
 ### Changes
