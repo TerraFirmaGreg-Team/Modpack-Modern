@@ -665,6 +665,61 @@ function registerGTCEuMachineRecipes(event) {
 
 	//#endregion
 
+	// #region Assembly line stack size problems
+
+	event.remove({ id: 'gtceu:assembly_line/high_performance_computing_array' })
+	event.recipes.gtceu.assembly_line('high_performace_computing_array')
+		.itemInputs('gtceu:data_bank',
+			'4x #gtceu:circuits/zpm',
+			'8x gtceu:luv_field_generator',
+			'gtceu:data_orb',
+			'gtceu:computer_monitor_cover',
+			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
+			'32x #forge:double_wires/uranium_rhodium_dinaquadide',
+			'16x gtceu:normal_optical_pipe')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 1152),
+			Fluid.of('gtceu:vanadium_gallium', 1152),
+			Fluid.of('gtceu:pcb_coolant', 4000))
+		.itemOutputs('gtceu:high_performance_computation_array')
+		.duration(60 * 20)
+		.EUt(100000)
+		["scannerResearch(java.util.function.UnaryOperator)"](b =>
+			b.researchStack(Item.of('gtceu:computer_monitor_cover')).EUt(GTValues.VA[GTValues.IV]).duration(120*20))
+
+	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+	event.recipes.gtceu.assembly_line('me_pattern_buffer')
+		.itemInputs('gtceu:luv_dual_input_hatch',
+			'gtceu:luv_emitter',
+			'4x #gtceu:circuits/luv',
+			'3x ae2:pattern_provider',
+			'3x ae2:interface',
+			'4x ae2:speed_card',
+			'2x ae2:capacity_card',
+			'64x #forge:fine_wires/europium',
+			'32x #forge:fine_wires/europium')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
+		.itemOutputs('gtceu:me_pattern_buffer')
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.LuV])
+		["scannerResearch(java.util.function.UnaryOperator)"](b =>
+			b.researchStack(Item.of('gtceu:luv_dual_input_hatch')).EUt(GTValues.VA[GTValues.LuV]).duration(60*20))
+
+	event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
+	event.recipes.gtceu.assembly_line('me_pattern_buffer_proxy')
+		.itemInputs('gtceu:luv_machine_hull',
+			'2x gtceu:luv_sensor',
+			'#gtceu:circuits/luv',
+			'ae2:quantum_link',
+			'2x ae2:quantum_ring',
+			'64x #forge:fine_wires/europium')
+		.inputFluids(Fluid.of('gtceu:soldering_alloy', 576), Fluid.of('gtceu:lubricant', 500))
+		.itemOutputs('gtceu:me_pattern_buffer_proxy')
+		.duration(30 * 20)
+		.EUt(GTValues.VA[GTValues.ZPM])
+		.stationResearch(b => b.researchStack(Item.of('gtceu:me_pattern_buffer')).EUt(GTValues.VA[GTValues.LuV]).CWUt(32))
+
+	// #endregion
+
 	// Контроллер теплицы
 	event.shaped('gtceu:greenhouse', [
 		'ABA',
