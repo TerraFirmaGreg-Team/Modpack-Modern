@@ -413,4 +413,23 @@ function registerTFGMiscellaneousRecipes(event) {
             1, -1, 0, 0, 0, 0, -1, 1
         ]
     ).id('tfg:sewing/piglin_disguise')
+
+	//trowel
+	event.shaped('tfg:trowel', [
+		'DBC',
+		'AA ',
+		'   '
+	], {
+		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 1),
+		B: '#forge:screws',
+		C: '#tfc:lumber',
+		D: '#forge:tools/screwdrivers'
+	}).id('tfg:shaped/trowel')
+
+    event.recipes.gtceu.assembler('tfg:assembler/trowel')
+        .itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 2), '1x #forge:screws', '1x #tfc:lumber')
+        .itemOutputs('1x tfg:trowel')
+        .duration(40)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.ULV])
 }
