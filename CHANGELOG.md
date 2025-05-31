@@ -3,6 +3,8 @@
 ### Changes
 - Create Steam Engine now also accepts river water and GregTech steam as valid inputs (#947) @Zeropol
 - Changed weird assembler piston recipe (#1092) @Redeix
+- Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
+- Fixed texture clipping on piglin disguise (#1106) @Redeix
 
 ## [0.9.9] - 30.05.2025
 ### Changes
