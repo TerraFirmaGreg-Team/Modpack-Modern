@@ -838,45 +838,6 @@
             ]
         },
         {
-            "pakku_id": "hhShqXRGFVCt6MeX",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "better-foliage-renewed"
-            },
-            "name": {
-                "curseforge": "Better Foliage Renewed"
-            },
-            "id": {
-                "curseforge": "470013"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "betterfoliage-5.0.2.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4923/669/betterfoliage-5.0.2.jar",
-                    "id": "4923669",
-                    "parent_id": "470013",
-                    "hashes": {
-                        "sha1": "4163772d08837daf22034e5333ddefc8532cdb69",
-                        "md5": "22f5753234b465c44688f9555acb4713"
-                    },
-                    "required_dependencies": [],
-                    "size": 396130,
-                    "date_published": "2023-12-03T18:03:18.697Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "hn4E1S13hPaLVPSH",
             "type": "MOD",
             "slug": {
