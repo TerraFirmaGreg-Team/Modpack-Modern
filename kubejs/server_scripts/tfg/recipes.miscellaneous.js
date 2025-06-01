@@ -6,8 +6,6 @@
  */
 function registerTFGMiscellaneousRecipes(event) {
 
-	event.replaceInput({}, 'minecraft:sugar', '#tfg:sugars')
-
 	//tfc:moss
 	event.replaceInput({}, 'minecraft:vine', '#tfc:moss')
 

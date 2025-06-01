@@ -332,4 +332,6 @@ const registerTFCRecipes = (event) => {
 		'#forge:tools/hammers',
 		'#forge:tools/saws'
 	]).id('tfc:shapeless/jar_lid')
+
+	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 }
