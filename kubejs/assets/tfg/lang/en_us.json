@@ -257,6 +257,7 @@
   "item.tfg.uv_universal_circuit": "UV Universal Circuit",
   "item.tfg.uhv_universal_circuit": "UHV Universal Circuit",
   "item.tfg.piglin_disguise": "Piglin Disguise",
+  "item.tfg.trowel": "Trowel",
   "material.tfg.latex": "Latex",
   "material.tfg.vulcanized_latex": "Vulcanized Latex",
   "material.tfg.fluix": "Fluix",
@@ -2298,5 +2299,8 @@
   "quests.tfg_tips.piglin_bartering.subtitle": "We are not alone apparently",
   "quests.tfg_tips.piglin_bartering.desc": "The curious inhabitants of &4The Beneath&r have items to offer... Trade gold with them to get some useful resource, such as small amounts of &aMetals&r or &aLeather.&r\nCheck out the &2Field Guide&r for details about barter trades.",
   "quests.tfg_tips.piglin_disguise.subtitle": "They'll never know...",
-  "quests.tfg_tips.piglin_disguise.desc": "Do you feel like you don't belong?\n Do the &4Piglin&r attack you at your school because of your appearance?\n Try wearing a &aPiglin Disguise&r to ward off unwanted attention and blend right in."
+  "quests.tfg_tips.piglin_disguise.desc": "Do you feel like you don't belong?\n Do the &4Piglin&r attack you at your school because of your appearance?\n Try wearing a &aPiglin Disguise&r to ward off unwanted attention and blend right in.",
+  "quests.tfg_tips.trowel.title": "Trowel",
+  "quests.tfg_tips.trowel.subtitle": "Inspired by Quark!",
+  "quests.tfg_tips.trowel.desc": "A &4Trowel&r is a tool for builders that can &brandomly place blocks&r located in the hotbar. Trowels can also use bricks and other useable items to randomize tiles for &5RNR Roads&r."
 }
