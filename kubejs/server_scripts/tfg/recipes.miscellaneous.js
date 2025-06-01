@@ -6,7 +6,7 @@
  */
 function registerTFGMiscellaneousRecipes(event) {
 
-	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
+	event.replaceInput({}, 'minecraft:sugar', '#tfg:sugars')
 
 	//tfc:moss
 	event.replaceInput({}, 'minecraft:vine', '#tfc:moss')

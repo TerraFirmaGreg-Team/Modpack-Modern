@@ -642,4 +642,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
+
+	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
 }
