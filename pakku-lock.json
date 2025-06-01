@@ -838,6 +838,45 @@
             ]
         },
         {
+            "pakku_id": "LVF7UEBiNQpjRDSW",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "better-foliage-renewed"
+            },
+            "name": {
+                "curseforge": "Better Foliage Renewed"
+            },
+            "id": {
+                "curseforge": "470013"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "betterfoliage-5.0.2.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4923/669/betterfoliage-5.0.2.jar",
+                    "id": "4923669",
+                    "parent_id": "470013",
+                    "hashes": {
+                        "sha1": "4163772d08837daf22034e5333ddefc8532cdb69",
+                        "md5": "22f5753234b465c44688f9555acb4713"
+                    },
+                    "required_dependencies": [],
+                    "size": 396130,
+                    "date_published": "2023-12-03T18:03:18.697Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "hn4E1S13hPaLVPSH",
             "type": "MOD",
             "slug": {
@@ -2454,7 +2493,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -5575,18 +5614,43 @@
             ]
         },
         {
-            "pakku_id": "GqxmrhfyICTk70Mg",
+            "pakku_id": "vLkSeib1zFzTMcPF",
             "type": "MOD",
+            "side": "BOTH",
             "slug": {
-                "curseforge": "modernfix"
+                "curseforge": "modernfix",
+                "modrinth": "modernfix"
             },
             "name": {
-                "curseforge": "ModernFix"
+                "curseforge": "ModernFix",
+                "modrinth": "ModernFix"
             },
             "id": {
-                "curseforge": "790626"
+                "curseforge": "790626",
+                "modrinth": "nmDcB62a"
             },
             "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "modernfix-forge-5.23.0+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/OLk2pIh9/modernfix-forge-5.23.0+mc1.20.1.jar",
+                    "id": "OLk2pIh9",
+                    "parent_id": "nmDcB62a",
+                    "hashes": {
+                        "sha512": "484f579d0ae8f14a21cfbc462662fe1f4374dd72c1628652b90c48bb67e981028247009f5c2dec44d3c7c728a7c60e0bba01df94746b6b74b08715023bfb46b8",
+                        "sha1": "901b9adb31fe489c5d6db76dd08b9ed29a4d5395"
+                    },
+                    "required_dependencies": [],
+                    "size": 870142,
+                    "date_published": "2025-05-19T20:50:30.391293Z"
+                },
                 {
                     "type": "curseforge",
                     "file_name": "modernfix-forge-5.23.0+mc1.20.1.jar",
@@ -6528,7 +6592,6 @@
             "id": {
                 "curseforge": "585406"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -7432,6 +7495,39 @@
                     "required_dependencies": [],
                     "size": 640068,
                     "date_published": "2024-08-23T09:41:25.543Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "XZwi3JnDyzH7acsj",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "tfc-anvil-helper"
+            },
+            "name": {
+                "curseforge": "TFC Anvil Helper"
+            },
+            "id": {
+                "curseforge": "836902"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Perfected Anvil Helper.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4862/357/Perfected Anvil Helper.zip",
+                    "id": "4862357",
+                    "parent_id": "836902",
+                    "hashes": {
+                        "sha1": "67ce571b82410f62b776cd20b6a026802033217d",
+                        "md5": "87a9cf1bb3533bbfbea4ff774d584be9"
+                    },
+                    "required_dependencies": [],
+                    "size": 20640,
+                    "date_published": "2023-11-12T16:56:04.330Z"
                 }
             ]
         },
