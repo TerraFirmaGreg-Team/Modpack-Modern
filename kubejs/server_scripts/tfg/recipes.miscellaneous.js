@@ -6,8 +6,6 @@
  */
 function registerTFGMiscellaneousRecipes(event) {
 
-	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam'})
-
 	//tfc:moss
 	event.replaceInput({}, 'minecraft:vine', '#tfc:moss')
 
@@ -233,15 +231,15 @@ function registerTFGMiscellaneousRecipes(event) {
 		' A ',
 		' B ',
 		' C '
-	],{
+	], {
 		A: 'tfg:flint_arrow_head',
 		B: '#forge:rods/wooden',
 		C: 'tfg:fletching'
 	}).id('tfg:shaped/arrow')
 
 	// Ice
-	event.remove({id: 'gtceu:compressor/ice_from_dust' })
-	event.remove({id: 'gtceu:compressor/ice_from_snow' })
+	event.remove({ id: 'gtceu:compressor/ice_from_dust' })
+	event.remove({ id: 'gtceu:compressor/ice_from_snow' })
 
 	event.shapeless('#forge:dusts/ice', ['#forge:tools/mortars', '4x firmalife:ice_shavings'])
 		.id('tfg:shaped/ice_shavings')
@@ -319,67 +317,67 @@ function registerTFGMiscellaneousRecipes(event) {
 	event.shapeless('8x minecraft:snow', ['minecraft:snow_block', '#forge:tools/saws'])
 		.id('tfg:shapeless/snow')
 
-    //Cloth & String
-    event.recipes.gtceu.wiremill('tfg:wiremill/phantom_thread')
-        .itemInputs('1x minecraft:phantom_membrane')
-        .itemOutputs('16x tfg:phantom_thread')
-        .duration(100)
-        .circuit(0)
-        .EUt(GTValues.VA[GTValues.ULV])
+	//Cloth & String
+	event.recipes.gtceu.wiremill('tfg:wiremill/phantom_thread')
+		.itemInputs('1x minecraft:phantom_membrane')
+		.itemOutputs('16x tfg:phantom_thread')
+		.duration(100)
+		.circuit(0)
+		.EUt(GTValues.VA[GTValues.ULV])
 
-    event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
-        .itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
-        .itemOutputs('32x tfg:polycaprolactam_string')
-        .duration(100)
-        .circuit(0)
-        .EUt(GTValues.VA[GTValues.ULV])
+	event.recipes.gtceu.wiremill('tfg:wiremill/polycaprolactam_string')
+		.itemInputs(ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Polycaprolactam, 1))
+		.itemOutputs('32x tfg:polycaprolactam_string')
+		.duration(100)
+		.circuit(0)
+		.EUt(GTValues.VA[GTValues.ULV])
 
-    event.recipes.gtceu.assembler('tfg:assembler/phantom_silk')
-        .itemInputs('16x tfg:phantom_thread')
-        .itemOutputs('1x tfg:phantom_silk')
-        .duration(100)
-        .circuit(0)
-        .EUt(GTValues.VA[GTValues.ULV])
+	event.recipes.gtceu.assembler('tfg:assembler/phantom_silk')
+		.itemInputs('16x tfg:phantom_thread')
+		.itemOutputs('1x tfg:phantom_silk')
+		.duration(100)
+		.circuit(0)
+		.EUt(GTValues.VA[GTValues.ULV])
 
-    event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
-        .itemInputs('16x tfg:polycaprolactam_string')
-        .itemOutputs('1x tfg:polycaprolactam_fabric')
-        .duration(100)
-        .circuit(0)
-        .EUt(GTValues.VA[GTValues.ULV])
+	event.recipes.gtceu.assembler('tfg:assembler/polycaprolactam_fabric')
+		.itemInputs('16x tfg:polycaprolactam_string')
+		.itemOutputs('1x tfg:polycaprolactam_fabric')
+		.duration(100)
+		.circuit(0)
+		.EUt(GTValues.VA[GTValues.ULV])
 
-    event.recipes.gtceu.chemical_bath('tfg:chemical_bath/bleaching/polycaprolactam_string')
-        .itemInputs('tfg:polycaprolactam_string')
-        .inputFluids(Fluid.of('gtceu:chlorine', 16))
-        .itemOutputs('minecraft:string')
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.ULV])
-        .category(GTRecipeCategories.CHEM_DYES)
+	event.recipes.gtceu.chemical_bath('tfg:chemical_bath/bleaching/polycaprolactam_string')
+		.itemInputs('tfg:polycaprolactam_string')
+		.inputFluids(Fluid.of('gtceu:chlorine', 16))
+		.itemOutputs('minecraft:string')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.category(GTRecipeCategories.CHEM_DYES)
 
-    event.recipes.tfc.loom(
-        '1x tfg:phantom_silk',
-        '16x tfg:phantom_thread',
-        8,
-        'tfg:block/phantom_silk_block'
-    )
+	event.recipes.tfc.loom(
+		'1x tfg:phantom_silk',
+		'16x tfg:phantom_thread',
+		8,
+		'tfg:block/phantom_silk_block'
+	)
 
-    event.recipes.tfc.loom(
-        '1x tfg:polycaprolactam_fabric',
-        '16x tfg:polycaprolactam_string',
-        8,
-        'tfg:block/polycaprolactam_fabric_block'
-    )
+	event.recipes.tfc.loom(
+		'1x tfg:polycaprolactam_fabric',
+		'16x tfg:polycaprolactam_string',
+		8,
+		'tfg:block/polycaprolactam_fabric_block'
+	)
 
-    event.recipes.tfc.damage_inputs_shapeless_crafting(
-        event.shapeless('16x tfg:phantom_thread', [
-            'minecraft:phantom_membrane',
-            'tfc:spindle'
-        ]).id('tfg:shapeless/phantom_thread'))
-  
+	event.recipes.tfc.damage_inputs_shapeless_crafting(
+		event.shapeless('16x tfg:phantom_thread', [
+			'minecraft:phantom_membrane',
+			'tfc:spindle'
+		]).id('tfg:shapeless/phantom_thread'))
+
 	// Universal Circuit
 	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
-		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1),  [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
-			).id(`universal_circuits_${tier}`);
+		event.shapeless(Item.of(`tfg:${tier}_universal_circuit`, 1), [Ingredient.of([`#gtceu:circuits/${tier}`]).subtract([`tfg:${tier}_universal_circuit`])]
+		).id(`universal_circuits_${tier}`);
 	});
 
 	// Air collector (move this to space stuff later)
@@ -389,15 +387,70 @@ function registerTFGMiscellaneousRecipes(event) {
 		.dimension('minecraft:the_nether')
 		.duration(200)
 		.EUt(16)
+
+	event.recipes.gtceu.aqueous_accumulator('water_overworld')
+		.circuit(1)
+		.dimension('minecraft:overworld')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.ULV])
+		.addDataString("fluidA", "minecraft:water")
+		.addDataString("fluidB", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('water_nether')
+		.circuit(2)
+		.dimension('minecraft:the_nether')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.ULV])
+		.addDataString("fluidA", "minecraft:water")
+		.addDataString("fluidB", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
+	event.recipes.gtceu.aqueous_accumulator('sea_water_overworld')
+		.circuit(3)
+		.dimension('minecraft:overworld')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.addDataString("fluidB", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('sea_water_nether')
+		.circuit(4)
+		.dimension('minecraft:the_nether')
+		.duration(20)
+		.EUt(GTValues.VA[GTValues.ULV])
+		.addDataString("fluidA", "tfc:salt_water")
+		.addDataString("fluidB", "tfc:salt_water")
+		.outputFluids(Fluid.of("tfc:salt_water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
+		.circuit(5)
+		.dimension('minecraft:overworld')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.HV])
+		.addDataString("fluidA", "minecraft:lava")
+		.addDataString("fluidB", "minecraft:lava")
+		.outputFluids(Fluid.of("minecraft:lava", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('lava_nether')
+		.circuit(6)
+		.dimension('minecraft:the_nether')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.HV])
+		.addDataString("fluidA", "minecraft:lava")
+		.addDataString("fluidB", "minecraft:lava")
+		.outputFluids(Fluid.of("minecraft:lava", 1000))
+
+
 	event.shapeless('1x tfg:armor_stand_arms', [
 		'minecraft:armor_stand'
 	]).id(`tfg:shapeless/armor_stand_arms`)
-		
+
 	event.shapeless('1x minecraft:armor_stand', [
 		'tfg:armor_stand_arms'
 	]).id(`tfg:shapeless/armor_stand`)
-	
+
 	event.recipes.tfc.sewing(
         '1x tfg:piglin_disguise',
         [
@@ -413,4 +466,23 @@ function registerTFGMiscellaneousRecipes(event) {
             1, -1, 0, 0, 0, 0, -1, 1
         ]
     ).id('tfg:sewing/piglin_disguise')
+
+	//trowel
+	event.shaped('tfg:trowel', [
+		'DBC',
+		'AA ',
+		'   '
+	], {
+		A: ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 1),
+		B: '#forge:screws',
+		C: '#tfc:lumber',
+		D: '#forge:tools/screwdrivers'
+	}).id('tfg:shaped/trowel')
+
+    event.recipes.gtceu.assembler('tfg:assembler/trowel')
+        .itemInputs(ChemicalHelper.get(TagPrefix.plate, GTMaterials.Invar, 2), '1x #forge:screws', '1x #tfc:lumber')
+        .itemOutputs('1x tfg:trowel')
+        .duration(40)
+        .circuit(4)
+        .EUt(GTValues.VA[GTValues.ULV])
 }

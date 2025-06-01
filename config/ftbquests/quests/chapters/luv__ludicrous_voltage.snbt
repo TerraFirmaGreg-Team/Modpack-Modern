@@ -868,6 +868,10 @@
 			id: "63F9531F391040B2"
 			shape: "circle"
 			size: 0.66d
+			tasks: [{
+				id: "186D6246579FB0EF"
+				type: "checkmark"
+			}]
 			title: "Combatting Lag"
 			x: 2.25d
 			y: 3.375d

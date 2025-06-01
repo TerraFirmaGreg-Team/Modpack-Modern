@@ -232,7 +232,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:fluid_tank')
 		.itemInputs('2x #forge:screws/copper', '2x #forge:plates/copper', '#forge:glass_panes')
 		.itemOutputs('create:fluid_tank')
-		.circuit(3)
+		.circuit(4)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -613,7 +613,7 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:create/copper_casing')
 		.itemInputs('#minecraft:logs', '#forge:plates/copper')
-		.circuit(10)
+		.circuit(11)
 		.itemOutputs('create:copper_casing')
 		.duration(50)
 		.EUt(4)

@@ -602,6 +602,8 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:shaped/activator_rail' })
 	event.remove({ id: 'gtceu:shaped/shield' })
 	event.remove({ id: 'gtceu:shaped/pickaxe_iron' })
+	event.remove({ id: 'gtceu:shaped/gear_diamond' })
+	event.remove({ id: 'gtceu:shaped/buzzsaw_blade_diamond' })
 
 	event.remove({ id: 'gtceu:shapeless/glass_full_dust_flint' })
 
@@ -640,4 +642,6 @@ function removeGTCEURecipes(event) {
 	event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__fireclay' })
 
 	event.remove({ id: 'gtceu:smelting/sticky_resin_from_slime' })
+
+	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
 }

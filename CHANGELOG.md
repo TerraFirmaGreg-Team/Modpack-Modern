@@ -1,7 +1,28 @@
 # Changelog
-
 ## [Unreleased]
 ### Changes
+- Create Steam Engine now also accepts river water and GregTech steam as valid inputs (#947) @Zeropol
+- Changed weird assembler piston recipe (#1092) @Redeix
+- Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
+- Fixed texture clipping on piglin disguise (#1106) @Redeix
+- Added Aqueous Accumulator machine, basically a rock breaker but for fluids (#1030) @Pyritie
+- Added Packer recipe for stick bundling (#1101) @JeanRdSz
+- Started work on Brazilian Portuguese translations @gifpxto
+- Fixed assembler recipe conflict with Hoppers and Item Vaults (#1098) @TomPlop
+- Fixed assembler recipe conflict with Create Pipes and Fluid Tanks (#1103) @Pyritie
+- Steam grinder and oven are now cheaper and use more steam-age appropriate materials (#1091) @Pyritie
+- Changed HS Greate machines to use blue alloy instead of red steel (#1091) @Pyritie
+- Changed HV Cutter to use diamond buzzsaw instead of red steel (#1091) @Pyritie
+- Fixed some assembly line recipes that had incorrect stack sizes (#1108) @Pyritie
+- Fixed being able to dupe materials by crafting tools and then recycling them (#1100) @Pyritie
+- Fixed issue where "melts into" tooltips and certain timers on Jade were missing (#1102) @Xikaro
+- Added Wine utensils recipes for GT (#1111) @JeanRdS
+- Fixed kaolin clay duping (#1099) @SpicyNoodle5
+- Fixed TFC sugar recipes so they can now use any sugar (#1099) @SpicyNoodle5
+
+## [0.9.9] - 30.05.2025
+### Changes
+- Added and changed many mods for optimization, please report any problems on github. @Xikaro
 - Disabled ability to sort items in the crucible and vessels, which let you stack things that shouldn't be stacked. (#1045) @esotericist
 - Other TFC waters also work for bulk washing now. (#1051) @Pyritie
 - Added machine recipes for compost and humus. (#1049) @Pyritie
