@@ -2493,7 +2493,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -5631,29 +5631,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "modernfix-forge-5.21.0+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6392/741/modernfix-forge-5.21.0+mc1.20.1.jar",
-                    "id": "6392741",
-                    "parent_id": "790626",
-                    "hashes": {
-                        "sha1": "95eb1238db9d8229d57ee19999ff5478f092602e",
-                        "md5": "3231eb6ba18ea27d8dd3a66fc4fc952e"
-                    },
-                    "required_dependencies": [],
-                    "size": 824640,
-                    "date_published": "2025-04-06T19:29:07.607Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "modernfix-forge-5.21.0+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.23.0+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5661,16 +5640,37 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/5m06ltZw/modernfix-forge-5.21.0+mc1.20.1.jar",
-                    "id": "5m06ltZw",
+                    "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/OLk2pIh9/modernfix-forge-5.23.0+mc1.20.1.jar",
+                    "id": "OLk2pIh9",
                     "parent_id": "nmDcB62a",
                     "hashes": {
-                        "sha512": "892bcd98869df037db9fa8bbefe62f48e9b0ae6ee65d5768a9a931a3fc3a8aaa436f35f5c643b36dd45545534f26b87a536ec955b8f474d79409ab9193ac6f70",
-                        "sha1": "95eb1238db9d8229d57ee19999ff5478f092602e"
+                        "sha512": "484f579d0ae8f14a21cfbc462662fe1f4374dd72c1628652b90c48bb67e981028247009f5c2dec44d3c7c728a7c60e0bba01df94746b6b74b08715023bfb46b8",
+                        "sha1": "901b9adb31fe489c5d6db76dd08b9ed29a4d5395"
                     },
                     "required_dependencies": [],
-                    "size": 824640,
-                    "date_published": "2025-04-06T19:29:11.851601Z"
+                    "size": 870142,
+                    "date_published": "2025-05-19T20:50:30.391293Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "modernfix-forge-5.23.0+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6548/605/modernfix-forge-5.23.0+mc1.20.1.jar",
+                    "id": "6548605",
+                    "parent_id": "790626",
+                    "hashes": {
+                        "sha1": "901b9adb31fe489c5d6db76dd08b9ed29a4d5395",
+                        "md5": "457fdf4d9c521890ac697485d70e7d37"
+                    },
+                    "required_dependencies": [],
+                    "size": 870142,
+                    "date_published": "2025-05-19T20:50:26.350Z"
                 }
             ]
         },
@@ -6592,7 +6592,6 @@
             "id": {
                 "curseforge": "585406"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
