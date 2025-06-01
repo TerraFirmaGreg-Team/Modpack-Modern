@@ -16,7 +16,7 @@
 - Fixed some assembly line recipes that had incorrect stack sizes (#1108) @Pyritie
 - Fixed being able to dupe materials by crafting tools and then recycling them (#1100) @Pyritie
 - Fixed issue where "melts into" tooltips and certain timers on Jade were missing (#1102) @Xikaro
-- Added Wine utensils recipes for GT
+- Added Wine utensils recipes for GT (#1111) @JeanRdS
 
 ## [0.9.9] - 30.05.2025
 ### Changes
