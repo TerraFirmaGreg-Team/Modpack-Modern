@@ -106,7 +106,6 @@ ServerEvents.tags('worldgen/placed_feature', event => {
     event.removeAll('tfc:in_biome/veins')
 
     registerAdAstraPlacedFeatures(event)
-    registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
     registerTFGPlacedFeatures(event)
 })
