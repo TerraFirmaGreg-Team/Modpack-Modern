@@ -102,6 +102,9 @@ ServerEvents.tags('fluid', event => {
  * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
+    // Remove default veins
+    event.removeAll('tfc:in_biome/veins')
+
     registerAdAstraPlacedFeatures(event)
     registerFirmaLifePlacedFeatures(event)
     registerTFCPlacedFeatures(event)
