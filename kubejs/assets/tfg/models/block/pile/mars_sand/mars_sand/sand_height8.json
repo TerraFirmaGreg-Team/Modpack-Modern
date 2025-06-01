@@ -1,0 +1,7 @@
+{
+	"parent": "tfg:block/ash_pile/ash_height8",
+	"textures": {
+		"particle": "ad_astra:block/mars_sand",
+		"texture": "ad_astra:block/mars_sand"
+	}
+}
