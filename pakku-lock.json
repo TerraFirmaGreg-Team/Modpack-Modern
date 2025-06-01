@@ -7499,6 +7499,39 @@
             ]
         },
         {
+            "pakku_id": "XZwi3JnDyzH7acsj",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "tfc-anvil-helper"
+            },
+            "name": {
+                "curseforge": "TFC Anvil Helper"
+            },
+            "id": {
+                "curseforge": "836902"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Perfected Anvil Helper.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4862/357/Perfected Anvil Helper.zip",
+                    "id": "4862357",
+                    "parent_id": "836902",
+                    "hashes": {
+                        "sha1": "67ce571b82410f62b776cd20b6a026802033217d",
+                        "md5": "87a9cf1bb3533bbfbea4ff774d584be9"
+                    },
+                    "required_dependencies": [],
+                    "size": 20640,
+                    "date_published": "2023-11-12T16:56:04.330Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "4WwQ11qPky8VtFcw",
             "pakku_links": [
                 "F6H99cZ4H6jZRpEK",
