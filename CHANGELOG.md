@@ -19,7 +19,7 @@
 - Added Wine utensils recipes for GT (#1111) @JeanRdS
 - Fixed kaolin clay duping (#1099) @SpicyNoodle5
 - Fixed TFC sugar recipes so they can now use any sugar (#1099) @SpicyNoodle5
-- Added optional quest for bacon (#1121) @SpicyNoodle5
+- Added optional quest for bacon (#1122) @SpicyNoodle5
 
 ## [0.9.9] - 30.05.2025
 ### Changes
