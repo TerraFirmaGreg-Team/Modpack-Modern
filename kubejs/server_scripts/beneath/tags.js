@@ -30,4 +30,6 @@ const registerBeneathItemTags = (event) => {
 
 	event.add('forge:ores', 'beneath:ore/nether_cursecoal')
 	event.add('forge:ores', 'beneath:ore/blackstone_sylvite')
+	
+	event.remove('beneath:sparks_on_sulfur')
 }
