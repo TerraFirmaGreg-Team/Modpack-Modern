@@ -3265,8 +3265,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.cane.title}"
-			x: -1.5d
-			y: 5.0d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3286,8 +3286,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -1.5d
-			y: 6.0d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5C01BDDA66249D7B"]
@@ -5204,6 +5204,26 @@
 			}]
 			x: 9.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.trowel.desc}"]
+			id: "26DFC32AD5DED4E9"
+			subtitle: "{quests.tfg_tips.trowel.subtitle}"
+			tasks: [{
+				id: "694BF83F489646D6"
+				item: {
+					Count: 1
+					id: "tfg:trowel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.trowel.title}"
+			x: -2.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1FC019B45383695E"]
