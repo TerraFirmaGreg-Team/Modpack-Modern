@@ -155,6 +155,7 @@ LootJS.modifiers((event) => {
     registerLootrLoots(event)
     registerPrimitiveCreatesLoots(event)
     registerTFCLoots(event)
+    registerTFGLoots(event)
 });
 
 /**

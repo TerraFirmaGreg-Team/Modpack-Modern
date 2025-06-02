@@ -650,7 +650,13 @@
 				}
 				{
 					id: "7DA8B08CC879617F"
-					item: "gtceu:rubber_bucket"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(nbt(fuzzy:{fluid:{FluidName:\"gtceu:rubber\"}})nbt(fuzzy:{Fluid:{FluidName:\"gtceu:rubber\"}})item(gtceu:rubber_bucket))"
+						}
+					}
 					type: "item"
 				}
 			]
