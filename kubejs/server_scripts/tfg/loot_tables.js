@@ -1,7 +1,6 @@
+function registerTFGLoots(event) {
 
-LootJS.modifiers((event) => {
-
-    //Generated Vases Loot
+    //#region Vase Loot
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
         event.addBlockLootModifier(`tfg:decorative_vase/generated/${color}`)
         .removeLoot(Ingredient.all)
@@ -81,4 +80,4 @@ LootJS.modifiers((event) => {
             );
         })
     });
-});
+};
