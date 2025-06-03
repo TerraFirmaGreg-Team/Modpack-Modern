@@ -79,17 +79,7 @@ const registerAdAstraBlockTags = (event) => {
 		event.add('tfc:can_carve', rock)
 	})
 
-	// Moon
-	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_sand')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/black')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:sand/white')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/diorite')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/gabbro')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/basalt')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/rhyolite')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/andesite')
-	event.add('minecraft:rabbits_spawnable_on', 'tfc:rock/gravel/dacite')
-	
+	// Moon	
 	event.add('ad_astra:moon_stone_replaceables', 'ad_astra:moon_sand')
 	event.add('ad_astra:moon_stone_replaceables', 'tfg:rock/hardened_moon_stone')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:sand/white')
@@ -116,6 +106,8 @@ const registerAdAstraBlockTags = (event) => {
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/andesite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/raw/dacite')
 	event.add('ad_astra:moon_stone_replaceables', 'tfc:rock/hardened/dacite')
+
+	event.add('minecraft:rabbits_spawnable_on', 'ad_astra:moon_stone_replaceables')
 
 	event.add('tfc:can_landslide', 'ad_astra:moon_sand')
 	event.add('tfc:can_landslide', 'ad_astra:mars_sand')
@@ -203,7 +195,6 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
 }
 
-// All space veins go in tfg/tags.js
 const registerAdAstraPlacedFeatures = (event) => {
 	
 	event.add('tfg:moon_craters', 'tfg:moon/crater/extra_large')
@@ -220,4 +211,7 @@ const registerAdAstraPlacedFeatures = (event) => {
 		event.add('tfg:moon_small_rock_features', `tfg:moon/surface/spike/${stone}`)
 	})
 
+	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
+	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_white_sand')
+	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_black_sand')
 }

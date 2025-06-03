@@ -1,0 +1,53 @@
+{
+	"type": "minecraft:random_patch",
+	"config": {
+		"feature": {
+			"feature": {
+				"type": "minecraft:simple_block",
+				"config": {
+					"to_place": {
+						"type": "minecraft:randomized_int_state_provider",
+						"property": "layers",
+						"values": {
+							"type": "minecraft:biased_to_bottom",
+							"value": {
+								"min_inclusive": 1,
+								"max_inclusive": 3
+							}
+						},
+						"source": {
+							"type": "minecraft:simple_state_provider",
+							"state": {
+								"Name": "tfg:pile/black_sand"
+							}
+						}
+					}
+				}
+			},
+			"placement": [
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:matching_blocks",
+						"blocks": "minecraft:air"
+					}
+				},
+				{
+					"type": "minecraft:block_predicate_filter",
+					"predicate": {
+						"type": "minecraft:has_sturdy_face",
+						"offset": [
+							0,
+							-1,
+							0
+						],
+						"direction": "up"
+					}
+				}
+			]
+		},
+		"tries": 32,
+		"xz_spread": 16,
+		"y_spread": 3
+	}
+}

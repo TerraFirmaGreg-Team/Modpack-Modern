@@ -11,9 +11,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ 0.4, 1 ],
+						"continentalness": [ 0.5, 1 ],
 						"erosion": 0,
-						"weirdness": [ 0.4, 1 ],
+						"weirdness": [ 0.5, 1 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -23,9 +23,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ 0.2, 0.4 ],
+						"continentalness": [ 0.2, 0.5 ],
 						"erosion": 0,
-						"weirdness": [ 0.2, 0.4 ],
+						"weirdness": [ 0.2, 0.5 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -35,9 +35,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ 0.4, 1 ],
+						"continentalness": [ 0.5, 1 ],
 						"erosion": 0,
-						"weirdness": [ -1, -0.4 ],
+						"weirdness": [ -1, -0.5 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -47,9 +47,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ 0.2, 0.4 ],
+						"continentalness": [ 0.2, 0.5 ],
 						"erosion": 0,
-						"weirdness": [ -0.4, -0.2 ],
+						"weirdness": [ -0.5, -0.2 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -58,7 +58,19 @@
 					"biome": "tfg:moon/lunar_plains",
 					"parameters": {
 						"temperature": 0,
-						"humidity": 0,
+						"humidity": -0.1,
+						"continentalness": [ -0.2, 0.2 ],
+						"erosion": 0,
+						"weirdness": [ -0.2, 0.2 ],
+						"depth": 0,
+						"offset": 0
+					}
+				},
+				{
+					"biome": "tfg:moon/lunar_sands",
+					"parameters": {
+						"temperature": 0,
+						"humidity": 0.2,
 						"continentalness": [ -0.2, 0.2 ],
 						"erosion": 0,
 						"weirdness": [ -0.2, 0.2 ],
@@ -71,9 +83,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ -0.4, -0.2 ],
+						"continentalness": [ -0.5, -0.2 ],
 						"erosion": 0,
-						"weirdness": [ -0.4, -0.2 ],
+						"weirdness": [ -0.5, -0.2 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -83,9 +95,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ -1, -0.4 ],
+						"continentalness": [ -1, -0.5 ],
 						"erosion": 0,
-						"weirdness": [ -1, -0.4 ],
+						"weirdness": [ -1, -0.5 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -95,9 +107,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ -0.4, -0.2 ],
+						"continentalness": [ -0.5, -0.2 ],
 						"erosion": 0,
-						"weirdness": [ 0.2, 0.4 ],
+						"weirdness": [ 0.2, 0.5 ],
 						"depth": 0,
 						"offset": 0
 					}
@@ -107,9 +119,9 @@
 					"parameters": {
 						"temperature": 0,
 						"humidity": 0,
-						"continentalness": [ -1, -0.4 ],
+						"continentalness": [ -1, -0.5 ],
 						"erosion": 0,
-						"weirdness": [ 0.4, 1 ],
+						"weirdness": [ 0.5, 1 ],
 						"depth": 0,
 						"offset": 0
 					}
