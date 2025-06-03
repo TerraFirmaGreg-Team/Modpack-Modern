@@ -208,7 +208,6 @@ const registerAdAstraPlacedFeatures = (event) => {
 		// in all moon biomes
 		event.add('tfg:moon_small_rock_features', `tfg:moon/surface/pile/${stone}`)
 		event.add('tfg:moon_small_rock_features', `tfg:moon/surface/loose/${stone}`)
-		event.add('tfg:moon_small_rock_features', `tfg:moon/surface/spike/${stone}`)
 	})
 
 	event.add('tfg:moon_small_rock_features', 'tfg:moon/surface/pile_moon_sand')
