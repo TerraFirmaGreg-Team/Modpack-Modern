@@ -51,6 +51,7 @@ global.MOON_STONE_TYPES = [
 
 global.MOON_BIOMES = [
 	'tfg:moon/lunar_plains',
+	'tfg:moon/lunar_sands',
 	'tfg:moon/lunar_asurine_dense',
 	'tfg:moon/lunar_asurine_sparse',
 	'tfg:moon/lunar_chorus_dense',
