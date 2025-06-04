@@ -14,6 +14,7 @@
 - Added optional quest for bacon because its JEI recipe isn't clear (#1122) @SpicyNoodle5
 - Anthracite now also superheats blaze burners @Pyritie
 - Changed LV chem reactor quest to work with any container of rubber instead of just a rubber bucket (#1116) @ofoxsmith
+- Added perfect overclock to the electric greenhouse so it scales better with the pyro oven @Pyritie
 ### Bug fixes
 - Fixed issue where "melts into" tooltips and certain timers on Jade were missing (#1102) @Xikaro
 - Improved block ordering logic with AoE mining tools to reduce incorrect cave-ins @voidstar240
