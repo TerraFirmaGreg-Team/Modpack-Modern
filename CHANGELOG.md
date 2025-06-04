@@ -20,7 +20,7 @@
 - Phantom Silk and Polycaprolactam Fabric now count as High Quality Fabric @Pyritie
 - Added recipes to turn dirt into grass @Pyritie
 - Changed durability of the diving equipment to match the TFC armor, made forging bonuses carry across when crafting @Pyritie
-- Added/changed more recipes for metal bars, doors, and trapdoors
+- Added/changed more recipes for metal bars, doors, and trapdoors @Pyritie
 ### Bug fixes
 - Fixed issue where "melts into" tooltips and certain timers on Jade were missing (#1102) @Xikaro
 - Improved block ordering logic with AoE mining tools to reduce incorrect cave-ins @voidstar240
