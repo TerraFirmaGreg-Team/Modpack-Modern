@@ -5879,6 +5879,39 @@
             ]
         },
         {
+            "pakku_id": "v7A0bgYd4KcqmpVA",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "new-animals-for-terrafirmacraft"
+            },
+            "name": {
+                "curseforge": "New Animals for TerraFirmaCraft"
+            },
+            "id": {
+                "curseforge": "1246070"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TerraFirmaCraft_New_Animals.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6436/812/TerraFirmaCraft_New_Animals.zip",
+                    "id": "6436812",
+                    "parent_id": "1246070",
+                    "hashes": {
+                        "sha1": "c3318956eff6b4c9e49e81b89ff2b49eaf16d4dc",
+                        "md5": "09466b7016348fb845c40886f466e9b2"
+                    },
+                    "required_dependencies": [],
+                    "size": 65591,
+                    "date_published": "2025-04-18T17:00:53.570Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "PelbQK42HFCTe5cc",
             "type": "MOD",
             "slug": {
