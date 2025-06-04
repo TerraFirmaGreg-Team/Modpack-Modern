@@ -36,15 +36,12 @@ const registerCreateRecipes = (event) => {
 			{ id: 'create:crafting/schematics/empty_schematic' },
 			{ id: 'create:crafting/schematics/schematic_and_quill' },
 			{ id: 'create:crafting/appliances/clipboard_clear' },
-			{ id: 'create:crafting/kinetics/andesite_door' },
-			{ id: 'create:crafting/kinetics/brass_door' },
-			{ id: 'create:crafting/kinetics/copper_door' },
-			{ id: 'create:crafting/kinetics/train_door' },
-			{ id: 'create:crafting/kinetics/train_trapdoor' },
 			{ id: 'create:crafting/logistics/content_observer' },
 			{ type: 'minecraft:stonecutting' }
 		], mod: 'create'
 	})
+
+	event.remove({ type: 'minecraft:stonecutting', input: 'create:andesite_alloy' })
 
 	// Train Station
 	event.shapeless('2x create:track_station', [
@@ -1932,4 +1929,41 @@ const registerCreateRecipes = (event) => {
 	event.stonecutting('2x create:andesite_scaffolding', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_ladder', '#forge:ingots/tin_alloy')
 	event.stonecutting('2x create:andesite_bars', '#forge:ingots/tin_alloy')
+
+	// Bars
+
+	event.recipes.gtceu.cutter('tfg:create_andesite_bars')
+		.itemInputs('#forge:plates/tin_alloy')
+		.itemOutputs('create:andesite_bars')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.cutter('tfg:create_copper_bars')
+		.itemInputs('#forge:plates/copper')
+		.itemOutputs('create:copper_bars')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.recipes.gtceu.cutter('tfg:create_brass_bars')
+		.itemInputs('#forge:plates/brass')
+		.itemOutputs('create:brass_bars')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	// Doors
+
+	event.shapeless('2x create:andesite_door', ['createdeco:andesite_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
+		.id('tfg:shapeless/create_andesite_door')
+
+	event.shapeless('2x create:brass_door', ['createdeco:brass_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
+		.id('tfg:shapeless/create_brass_door')
+
+	event.shapeless('2x create:copper_door', ['createdeco:copper_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
+		.id('tfg:shapeless/create_copper_door')
+
+	event.shapeless('2x create:train_door', ['createdeco:industrial_iron_door', '#minecraft:wooden_doors', 'minecraft:glass_pane'])
+		.id('tfg:shapeless/create_train_door')
+
+	event.shapeless('2x create:train_trapdoor', ['tfc:metal/trapdoor/steel', '#minecraft:wooden_trapdoors'])
+		.id('tfg:shapeless/create_train_trapdoor')
 }
