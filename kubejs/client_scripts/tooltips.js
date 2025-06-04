@@ -6,9 +6,6 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
 		text.add(1, [text.of('Used on a Scribing Table along with an item to name it, or with black dye to name the tag.')])
 	})
-	event.addAdvanced(['gtceu:greenhouse'], (item, advanced, text) => {
-		text.add(1, [text.of('Currently, due to some errors in GTCEu regarding forgeCapacities, outputs rotten food.')])
-	})
 	event.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
 		text.add(1, [text.of('Press the §o§6Swap Tool§r keybind to open the radial menu.')]),
 		text.add(2, [text.of(`You can also right click with it in hand to add or remove tools.`)])
@@ -31,7 +28,8 @@ const registerTooltips = (event) =>
 		text.add(1, text.of('§cSuperheat§r with Coke, or Flawless and Exquisite coal gems.'))
 	})
 	event.addAdvanced(['gtceu:greenhouse'], (item, advanced, text) => {
-		text.add(1, text.of('This machine has a Perfect Overclock!')),
+		text.add(1, text.of('This machine has a §2Perfect Overclock§r!')),
+		text.add(2, text.of('Currently, due to a bug, sometimes outputs rotten food.'))
 	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
 		text.add(1, text.of('Artificial enviroment to simulate the Nether.')),

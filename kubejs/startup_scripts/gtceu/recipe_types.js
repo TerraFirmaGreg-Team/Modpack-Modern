@@ -5,7 +5,6 @@ const registerGTCEuRecipeTypes = (event) => {
 		.category('greenhouse')
 		.setEUIO('in')
 		.setMaxIOSize(3, 4, 1, 0)
-		.recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.BATH)
 
