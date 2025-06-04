@@ -101,7 +101,7 @@
 		{
 			dependencies: ["00C14E3B8009DF7F"]
 			description: [
-				"&3Dielectric PCB Coolant&r is used for highly advanced late and end-game machinery."
+				"&3Dielectric PCB Coolant&r is used to maintain some highly advanced late and end-game machinery."
 				""
 				"You only need a little bit in &dLuV&r, but you'll want to automate it when you get to &cZPM&r."
 			]
@@ -110,7 +110,7 @@
 			size: 0.66d
 			subtitle: "Absolutely beneficial for the environment"
 			tasks: [{
-				id: "64646F49C863998B"
+				id: "10FAF765725C7790"
 				item: "gtceu:pcb_coolant_bucket"
 				type: "item"
 			}]
@@ -129,7 +129,7 @@
 				""
 				"It also has a second function, detailed in the above quest."
 				"{@pagebreak}"
-				"&l&3Lore:&r&o This is yet another feature from TecTech, which also required these cables to be painted. They too look fantastic if you paint them, but it is again optional."
+				"&l&3Lore:&r&o This is yet another feature from TecTech, which also required these cables to be painted. They do look fantastic if you paint them, but it's optional in CEu."
 			]
 			id: "1AD003487B4EC2EF"
 			shape: "rsquare"
@@ -151,28 +151,27 @@
 				"52D952ADBEB67454"
 			]
 			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
 				"The &3Data Bank&r is a multiblock capable of storing huge amounts of data. You can fill it with &aData Access Hatches&r, and fill those with &aData Storage Items&r."
 				""
 				"After that, you'll need power, and then a way to connect it to your Assembly Line! This is done through &3Optical Fiber Cables&r, which can be used to link &3Optical Data Hatches together&r."
 				"{@pagebreak}"
 				"An &9Optical Transmission Hatch&r is used to send data (like an output), and an &9Optical Reception Hatch&r to recieve the data (like an input). "
 				""
-				"Optical cables have some restrictions however. They can only connect &eone input to one output&r. The Data Bank is a solution to this, since you can place many hatches on them to route in different directions."
+				"Optical cables have some restrictions however. They can only connect &eone input to one output&r. The Data Bank is your answer to this, since you can place many hatches on them to route your data anywhere."
 				""
 				"You can use this behavior to &echain&r Data Banks as well. Connecting one Data Bank to another, and then one of them to an Assembly Line will provide the data of both banks!"
 				"{@pagebreak}"
 				"&eNote: &rThis multiblock will be required later on in progression, but is very useful to set up early."
 				""
-				"&l&3Lore:&r&o This multiblock also originates from TecTech, but it required optical cables to be painted as well. You don't have to do that here, but it looks really nice if you do!"
+				"&l&3Lore:&r&o This multiblock also originates from TecTech, but part of its mechanics required optical cables to be painted as well. You don't have to do that here, but it looks really nice if you do!"
 			]
 			id: "42760D3A86EFDCA3"
 			size: 0.75d
 			subtitle: "Time for a server room"
 			tasks: [{
-				id: "56D3B40470528839"
-				type: "checkmark"
+				id: "01188385BE2DB3B3"
+				item: "gtceu:data_bank"
+				type: "item"
 			}]
 			title: "Mass Data Storage"
 			x: 4.5d
@@ -185,7 +184,7 @@
 				""
 				"Like optical cables, they can only be connected to &eone input and output&r. But, these ones also only can move in &estraight lines&r. To turn them, an &3Active Transformer&r with a Laser Source Hatch (output) and Target Hatch (input) is needed."
 				"{@pagebreak}"
-				"&l&3Lore:&r&o This is yet again another TecTech feature, but there's a bit more to it this time. TecTech's lasers were tiered by voltage and carried thousands of amps instead."
+				"&l&3Lore:&r&o This is yet again another TecTech feature, but there's a bit more to it this time. TecTech's lasers were tiered by voltage and carried thousands of amps instead. CEu doesn't faff around with any of that tiering. You only need one type of laser here!"
 			]
 			id: "07159FCD9744DD98"
 			shape: "rsquare"
@@ -207,11 +206,12 @@
 				""
 				"Use it for higher yield on &dWafers&r."
 				""
-				"This will also unlock the &6best recipe&r for &6HV&r Circuits in the &3LuV Circuit Assembler&r, which you will most likely want to mass produce for &dLapotronic Energy Orbs&r."
+				"This will also unlock the &6best recipe&r for &6HV&r Circuits in the &3LuV Circuit Assembler&r. You're probably going to want to mass produce these for the many &dLapotronic Energy Orbs&r that'll be required moving forwards."
 			]
 			id: "3F31E99D0284A60A"
 			shape: "rsquare"
 			size: 0.66d
+			subtitle: "Doper than ever before"
 			tasks: [{
 				id: "2F8C92A86CAF338F"
 				item: "gtceu:naquadah_boule"
@@ -224,9 +224,9 @@
 		{
 			dependencies: ["7A1E3C3A2D699C5B"]
 			description: [
-				"&aNaquadah&r is a late-game material with a variety of uses. It is required for building a Fusion Reactor, and progressing to &cZPM&r, to name a few."
+				"&aNaquadah&r is a late-game material with a variety of uses. It is required when building a Fusion Reactor and progressing to &cZPM&r, to name a few."
 				""
-				"For some reason, its fluid is &agreen&r - don't ask us why."
+				"For some reason, its fluid is a brilliant &agreen&r - don't ask us why."
 				""
 				"&l&3Lore:&r&o Naquadah is a material originally from Stargate."
 			]
@@ -253,6 +253,10 @@
 				"&aNaquadah Coils&r crank up the Heat Capacity to &d7,200K&r."
 				""
 				"These coils are required for progressing to the second half of &dLuV&r and beyond."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o Well... not some \"juicy GregTech lore\", but a cool space fact, owing to the fact you're beating the Sun's temperature with your EBF. The surface temperature of the Sun is 5,800K. We're taking this as an effective temperature - i.e. the radiative temperature of the Sun as if it were a perfectly \"black body\". Check out the Stefan-Boltzmann law if you're interested in some crude astrophysics."
+				""
+				"&oOh, and the \"photosphere\" (the part of the sun we're talking about when we mention its surface)? It's 400 kilometres thick. That's 250 miles. Damn!"
 			]
 			id: "2FCBA0D780DBDA9E"
 			size: 0.75d
@@ -275,7 +279,7 @@
 			description: [
 				"&aLuV Superconductors&r are necessary if you're eyeing a &9Fusion Reactor&r. "
 				""
-				"Don't ignore our warning here - you're gonna need &ea lot&r&r of them."
+				"Don't ignore our warning here - you're gonna need &ea lot&r&r of them. Luckily, any &5Indium&r shortages will be solved by your Naquadah line."
 			]
 			id: "5ED7707B0ECF2207"
 			size: 0.75d
@@ -338,7 +342,11 @@
 		}
 		{
 			dependencies: ["378F0AFCF95354B2"]
-			description: ["This is the main material for &cZPM&r. Prepare to make lots... after you make &9Fusion&r and &9Crystal Circuits&r. Tackle those before you try making this."]
+			description: [
+				"This is the main material for &cZPM&r. Having this in stock will be a test of your Platinum processing, so this is a &6pre-emptive warning&r to stay on top of mining PGS-bearing ore."
+				""
+				"Prepare to make lots... after you make &9Fusion&r and &9Crystal Circuits&r. Tackle those before you try making this."
+			]
 			id: "24F0454B9A090C44"
 			size: 0.75d
 			subtitle: "Stargate's Strongest"
@@ -357,38 +365,38 @@
 				"48DEABA155605D23"
 			]
 			description: [
-				"Refining &9Naquadah&r into further products will be your next automation challenge. The primary resources are &aEnriched Naquadah&r, &aNaquadria&r, and &aTrinium&r. "
+				"Refining &9Naquadah&r into further products will be your next automation challenge. The primary outputs of this line are &aEnriched Naquadah&r, &aNaquadria&r, and &aTrinium&r. "
 				""
-				"This processing line also produces many useful byproducts, which you can discover using JEI."
+				"This processing line - affectionately known as the \"Naqline\" - also produces many useful byproducts, such as Titanium and Indium."
 				"{@pagebreak}"
-				"&aEnriched Naquadah&r currently does not have many uses, but will be used for power generation in the future."
+				"&aEnriched Naquadah&r currently isn't used for much, but will be integral to power generation in the future."
 				""
-				"&aNaquadria&r is a later game material, used for &3UV&r components."
+				"&aNaquadria&r is a lategame material that you'll want to stockpile for your &3UV&r components."
 				""
-				"&aTrinium&r is the most useful resource for you right now. It is used to build the Fusion Reactor, and sees heavy use in all &cZPM&r machines."
+				"&aTrinium&r is the material you'll be wanting most right now. You'll use a lot of it to build your first Fusion Reactor, is used for the next set of Coils, and sees heavy usage in most &cZPM&r recipes."
 				"{@pagebreak}"
-				"&eNote&r: This processing chain contains a more complex loop than what you may have dealt with previously."
+				"&eNote&r: This processing chain presents more of a challenge than any chemistry you've dealt with so far."
 				""
-				"Outputs in later steps can be sent back into previous processes, with the caveat that they lose a small amount of fluid with each loop."
+				"As usual, outputs in later steps can be sent back into previous processes... with the caveat that they lose a small amount of fluid with each loop."
 				""
 				"This can be challenging to automate. Good luck!"
 				"{@pagebreak}"
 				"&l&3Lore:&r&o Many GregTech iterations have Naquadah processing. "
 				""
-				"The first was likely Impact, with its own original Naquadah fuel process. "
+				"&oThe first was likely Impact, with its own original Naquadah fuel process. "
 				""
-				"Gregicality Legacy was hot on its heels with processes for making the Naquadah material (and variants) as well as Fuel. "
+				"&oGregicality Legacy was hot on its heels with processes for making the Naquadah material (and variants) as well as Fuel. "
 				""
-				"After that, GTNH added their own Naquadah processes for the material and fuel. "
+				"&oAfter that, GTNH added their own Naquadah processes for the material and fuel. "
 				""
-				"Lastly, GTCEu added the process you're about to set up!"
+				"&oLastly, GTCEu added the process you're about to set up!"
 			]
 			icon: "gtceu:naquadah_dust"
 			id: "378F0AFCF95354B2"
 			size: 0.75d
 			subtitle: "Do not touch the acid"
 			tasks: [{
-				id: "1589DE9F6692BB6F"
+				id: "1D674C3951223E8C"
 				item: "gtceu:fluoroantimonic_acid_bucket"
 				type: "item"
 			}]
@@ -403,9 +411,11 @@
 				"00C14E3B8009DF7F"
 			]
 			description: [
-				"&aTrinium&r is a very important material for progression. You'll need it to make a &9Fusion Reactor&r, and throughout all &cZPM&r."
+				"&aTrinium&r is a very important material for progression. You'll need it to make a &9Fusion Reactor&r, but it stays relevant all throughout &cZPM&r. We &7(well, this particular questbook writer!)&r can never have enough of this stuff."
 				""
-				"It also requires an &dLuV&r EBF to smelt! Dedicate a setup solely for cooking this."
+				"It also requires an &dLuV&r EBF to smelt! Perhaps dedicate a setup solely for cooking this, unless you're confident that your infrastructure can deal with it."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In Stargate, Trinium was strong enough to block a point-blank C4 explosion. It's considered to be a hundred times stronger than steel, at only one-hundreth the weight."
 			]
 			icon: "gtceu:trinium_ingot"
 			id: "0DC999F79A685194"
@@ -432,7 +442,7 @@
 		{
 			dependencies: ["4F6E351C5F676618"]
 			description: [
-				"&aPlutonium-241&r is yet another requirement for the &9Fusion Reactor&r. It's very easy to make: just centrifuge some &9Pu-239&r to separate some out!"
+				"&aPlutonium-241&r is yet another requirement for the &9Fusion Reactor&r. It's very easy to make: just centrifuge some &9Pu-239&r to slowly separate some out."
 				""
 				"In the future, this material will require a &dNuclear Reactor&r to produce, but that's not in GTCEu yet."
 				"{@pagebreak}"
@@ -460,25 +470,27 @@
 				"327C3E02CD751453"
 			]
 			description: [
-				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				"First things first - build the version of the structure that uses Fusion Glass in &aEMI&r. It's far cheaper right now."
 				""
-				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				"To save on &3Fusion Casings&r, fit Input/Output Hatches wherever you can (as displayed in the structure)."
 				""
-				"This time, we'll try something new: let's explain the Lore at the same time as the mechanics."
+				"The &bFusion Reactor&r will pick a free Output Hatch from the many that are available. In order to \"&6force&r\" the Reactor to use a particular Output Hatch, you can always &alock all of the hatches&r to an irrelevant fluid (we usually use &9Water&r)."
+				""
+				"This time, we'll try something new: we're gonna explain the &3Lore&r at the same time as the mechanics."
 				""
 				"Enjoy the ride!"
 				"{@pagebreak}"
-				"&l&3Lore:&r&o GregTech 5's &3Fusion Reactor&r stores EU you feed it in its internal buffer. The maximum storable amount is determined by the amount of &3Energy Hatches&r."
+				"&l&3Lore:&r&o GregTech 5's &3Fusion Reactor&f stores EU you feed it in its internal buffer. The maximum capacity is determined by the amount of &3Energy Hatches&f in the structure."
 				""
-				"Recipes can only start if the &9EU to start&r is stored internally, which will be &cconsumed&r. With this stored energy, the reactor can keep running recipes until it goes idle. At this point it will need to be topped up on EU to start again."
+				"&oRecipes can only start if the &9\"EU to start\"&f is stored internally, which will be &cconsumed&f. With this stored energy, the reactor can keep running recipes until it goes idle. At this point it will need to be topped up on EU to start again."
 				"{@pagebreak}"
-				"Shadow of Greg's &3Fusion Reactor&r (which is now GTCEu's Fusion Reactor) comes with an added mechanic called &4Heat&r."
+				"&oShadow of Greg's &3Fusion Reactor&f (which is now GTCEu's Fusion Reactor) comes with an added mechanic called &4Heat&f."
 				""
-				"When the reactor is running, the &9EU to start&r is converted to &4Heat&r. That Heat is preserved until the Reactor goes idle, at which point it will slowly go down."
+				"&oWhen the reactor is running, the &9EU to start&f is converted to &4Heat&f. That Heat is preserved until the Reactor goes idle, at which point it will slowly go down."
 				""
-				"Next time a recipe is found, it will use all possible Heat and deduct it from the &9EU to start&r, allowing you to save Energy for short pauses."
+				"&oNext time a recipe is found, it will use all possible Heat and deduct it from the &9EU to start&f, allowing you to save Energy for short pauses."
 				""
-				"The &3Fusion Reactor I&r can only run recipes up to a required EU of 160 MEU to start. It will also overclock up to &dLuV&r at best, even if you upgrade to ZPM Hatches, so don't stress over attempting this."
+				"&oThe &3Fusion Reactor I&f can only run recipes up to a required EU of 160 MEU to start. It will also overclock up to &dLuV&f at best, even if you upgrade to ZPM Hatches, so don't stress over attempting this."
 			]
 			id: "546CC03435E763CF"
 			shape: "gear"
@@ -498,14 +510,14 @@
 			description: [
 				"&aEuropium&r is the first major Fusion Material. You'll be using this quite a lot going forwards."
 				""
-				"&eNote&r: The temperature of liquid Europium is very hot, but isn't a plasma. Plan your piping accordingly!"
+				"&eNote&r: The temperature of liquid Europium is very hot, but the fluid isn't a plasma. Plan your piping accordingly!"
 				"{@pagebreak}"
-				"&l&3Lore:&r&o In Gregicality Legacy, Europium was replaced with Rutherfordium as the first fusion material, because Europium is actually found in Rare Earth and is not fused in real life."
+				"&l&3Lore:&r&o In Gregicality Legacy, Europium was replaced with Rutherfordium as the first fusion material, because Europium is actually found in Rare Earth and isn't fused in real life."
 			]
 			id: "7A74F692F14F0FF8"
 			shape: "gear"
 			size: 1.1d
-			subtitle: "Fusing Europium... how?!"
+			subtitle: "Fusing Europium... whaaat?!"
 			tasks: [{
 				id: "220305C9DA0F512B"
 				item: "gtceu:europium_ingot"
@@ -522,7 +534,9 @@
 				""
 				"Producing these is quite a bit different from the previous circuit components. Instead of standard silicon wafers, these rely on &9Emerald&r or &9Olivine&r."
 				""
-				"Getting your first Crystal Chips will be difficult, so you may wish to invest in a high-tier autoclave. After you get your first Chip, you can duplicate them with &9Europium&r. Don't worry about those other recipes yet, they're for later on in &cZPM&r."
+				"Getting your first Crystal Chips will be difficult, so you may wish to invest in a high-tier Autoclave. If you use a &6HV&r Autoclave... well, we didn't take you for the gambling sort."
+				""
+				"After you get your first Chip, you can duplicate them with &9Europium&r. Don't worry about those other recipes yet, they're for later on in &cZPM&r."
 				"{@pagebreak}"
 				"&eNote&r: An &9Advanced Item Detector&r cover will be useful for automating these. They work just like the Advanced Energy Detector."
 				""
@@ -584,6 +598,26 @@
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
+				"If recipe sizes are starting to worry you, don't worry - &2AE2&r now allows you to place an unlimited amount of items into a processing pattern."
+				""
+				"Thanks to this innovation, you can automate all the &3Assembly Line&r recipes."
+			]
+			icon: "expatternprovider:ex_interface"
+			id: "79192BA29BE69170"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "3DFCDF1B24506A8A"
+				title: "Wahey!"
+				type: "checkmark"
+			}]
+			title: "PackagedWho?"
+			x: 3.3d
+			y: 4.62d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
 				"At the cost of 16x the drilling Power, the &3Advanced Fluid Drilling Rig II&r will be gaining &664x the output&r in Fluid."
 				"The depletion of veins is also slashed to an eighth of what it was before. This means you will get a total of &6128x&r as much Oil (or whatever fluid) as the regular rig from a bedrock fluid vein until depletion!"
 				""
@@ -601,8 +635,8 @@
 				type: "item"
 			}]
 			title: "Ludicrous Fluid Drilling"
-			x: 3.3d
-			y: 5.61d
+			x: 5.61d
+			y: 4.62d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
@@ -613,7 +647,6 @@
 				""
 				"&l&3Lore:&r&o There may be a rebalance for these in the future. See the Multiblock Miner quest for details."
 			]
-			hide_until_deps_visible: true
 			id: "1BE779AF4487E3EB"
 			shape: "rsquare"
 			size: 0.66d
@@ -623,8 +656,8 @@
 				type: "item"
 			}]
 			title: "Ludicrous Ore Drilling"
-			x: 5.625d
-			y: 5.625d
+			x: 4.5d
+			y: 5.61d
 		}
 		{
 			dependencies: [
@@ -633,7 +666,7 @@
 				"5B07279B08BF8DDE"
 			]
 			description: [
-				"The &aLuV Lapotronic Orb&r is even better than the &1IV&r one! Of course, it comes at a price..."
+				"The &aLuV Lapotronic Orb&r is even better than the &1IV&r one! Of course, such power comes at a steep cost..."
 				"{@pagebreak}"
 				"&l&3Lore:&r&o In older versions of GT, such as GTNH in the past or in GCYL, these orbs were ludicrously expensive! They required 8 orbs of the previous tier! Thankfully, those days are long past."
 			]
@@ -663,6 +696,7 @@
 			description: ["Cheaper &dLuV&r circuits! These'll take some of the edge out of those brutal Robot Arm recipes."]
 			id: "47087361D6DE7DCF"
 			size: 0.75d
+			subtitle: "Yup... another circuit upgrade"
 			tasks: [{
 				id: "3CF7F369F390A3E5"
 				item: "gtceu:crystal_processor_assembly"
@@ -681,6 +715,7 @@
 			]
 			id: "7AE681E2AB31EA0D"
 			size: 0.75d
+			subtitle: "...wait, why'd things end here?"
 			tasks: [{
 				id: "0E274B445A95250A"
 				item: "gtceu:crystal_processor_computer"
@@ -695,7 +730,7 @@
 				"77B7B1EDD19831E0"
 				"7CFC112B8F460549"
 			]
-			description: ["The &aLuV Electric Prospector&r is a major upgrade from the &eHV&r one. It'll make finding Fluid and Ore veins very easy."]
+			description: ["The &aLuV Electric Prospector&r is a major upgrade from the &eHV&r one. With its huge range, it'll make finding Fluid and Ore veins very easy."]
 			id: "7033A24F37F9B9B9"
 			shape: "rsquare"
 			size: 0.66d
@@ -718,10 +753,11 @@
 			description: [
 				"The first circuit of the &9Crystal&r line."
 				""
-				"&l&3Lore:&r&o The concept of a Crystal Circuit has existed since very early versions of GregTech. We're still not entirely sure if they exist in real life."
+				"&l&3Lore:&r&o The concept of a Crystal Circuit has existed since the very early versions of GregTech. We're still not entirely sure if they exist in real life."
 			]
 			id: "42CD789B8C40E424"
 			size: 0.75d
+			subtitle: "I know where this is going!"
 			tasks: [{
 				id: "6357389871CE70C2"
 				item: "gtceu:crystal_processor"
@@ -742,6 +778,7 @@
 			]
 			id: "6C241455C5434C2E"
 			size: 0.75d
+			subtitle: "M-L F-R PCB"
 			tasks: [{
 				id: "5B8C1C15E5413CEC"
 				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
@@ -766,7 +803,7 @@
 				""
 				"You will notice that &9Samarium&r is required for &aLuV+ Motors&r. Samarium by itself isn't very difficult to obtain, but smelting it is slightly more involved. It requires &9Liquid Helium&r in the Freezer. If you made &9IV Superconductors&r, you've likely seen this already."
 				"{@pagebreak}"
-				"&l&3Lore:&r&o In the original GregTech 5, these components were unobtainable!"
+				"&l&3Lore:&r&o In the original GregTech 5, these components were unobtainable! You'd be free from GT if you were at this point! How times change."
 			]
 			icon: "gtceu:luv_electric_motor"
 			id: "11D3B21A177B0E14"
@@ -820,6 +857,7 @@
 			id: "12FEE0A47E4658D5"
 			shape: "rsquare"
 			size: 0.66d
+			subtitle: "Cables need better coating now"
 			tasks: [{
 				id: "4CAD2BE5558D7501"
 				item: "gtceu:polyphenylene_sulfide_foil"
@@ -868,17 +906,18 @@
 			id: "63F9531F391040B2"
 			shape: "circle"
 			size: 0.66d
-			tasks: [{
-				id: "186D6246579FB0EF"
-				type: "checkmark"
-			}]
+			subtitle: "They call me 007 - 0 Naquadah, 0 EU/t, 7 TPS"
 			title: "Combatting Lag"
 			x: 2.25d
 			y: 3.375d
 		}
 		{
 			dependencies: ["5CA86A333670A55C"]
-			description: ["&aMagnetic Samarium&r requires an &3IV Polarizer&r."]
+			description: [
+				"&aMagnetic Samarium&r (which you'll need for your &dLuV&r components) requires an &3IV Polarizer&r."
+				""
+				"Even so, we hope you weren't running all the polarization off a single &6HV&r Polarizer. Were you?"
+			]
 			id: "35D4F93EFB6EACB6"
 			shape: "rsquare"
 			size: 0.66d
@@ -892,7 +931,117 @@
 			x: 0.375d
 			y: 3.75d
 		}
+		{
+			dependencies: ["0D7C978F9CDF771B"]
+			description: [
+				"The Advanced Quantum Chestplate combines protection, a personal battery and an &6ultimate Jetpack&r into a single powerful piece of gear."
+				""
+				"Note that this stores &oa lot&r of energy. You may want to invest in an &3LuV Turbo Charger&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This armor piece is inspired by the IndustrialCraft  Addon Gravisuite, which added the Gravitation Suit, analogous to this chestplate."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:advanced_quarktech_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A884622985A7417"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "I'll be seeing you in the skies!"
+			tasks: [{
+				id: "23AF5E66858C1950"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Best Flight!"
+			x: 6.758503401360549d
+			y: 5.621173469387756d
+		}
+		{
+			dependencies: ["4F6E351C5F676618"]
+			description: [
+				"New in the &a1.4 update&r, Dual Hatches will greatly help with automation with Multiblocks."
+				""
+				"They can contain both &6Fluids and Items simultaneously&r, meaning you can simply connect a &bPattern Provider&r and be off to the races. No more faffing around with P2P or Buffers!"
+			]
+			icon: "gtceu:luv_dual_input_hatch"
+			id: "0960C894446A786C"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "Compact and Useful"
+			tasks: [{
+				id: "0089B7D781622D68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_dual_output_hatch"
+							}
+						]
+					}
+				}
+				title: "Dual I/O Hatch"
+				type: "item"
+			}]
+			title: "Two Hatches for the Price of One"
+			x: 2.2414965986394577d
+			y: 5.631377551020407d
+		}
+		{
+			description: [
+				"This Chapter will be updated later on with &lSpace Progression&r. Be wary &oprogression&r and &orecipes&r will &lchange&r as the structure of the quests."
+				""
+				"The modpack can be finish right now and is mostly vanilla Gregtech."
+			]
+			icon: "createdeco:decal_warning"
+			id: "520B463015F4C86D"
+			size: 2.5d
+			tasks: [{
+				id: "6F89272BD521E328"
+				title: "Okay I understand it's not up to date"
+				type: "checkmark"
+			}]
+			title: "Quests are OLD and not updated for TFG"
+			x: 5.0d
+			y: 7.5d
+		}
 	]
-	subtitle: ["Investigate the scientific and fuse elements"]
-	title: "&dLuV&r - Ludicrous Voltage"
+	subtitle: ["The quests are outdated. They will be update in a later update."]
+	title: "&dLuV&r - Ludicrous Voltage &6(WIP)&r"
 }
