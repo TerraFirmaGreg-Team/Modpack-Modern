@@ -1018,50 +1018,54 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/copper_backtank')
 
 	// Шлем для дайвинга
-	event.shaped('create:copper_diving_helmet', [
-		'ABA',
-		'CDC'
-	], {
-		A: '#forge:plates/copper',
-		B: 'tfc:metal/helmet/copper',
-		C: '#forge:glass_panes',
-		D: 'firmaciv:large_waterproof_hide'
-	}).id('tfg:create/shaped/copper_diving_helmet')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('create:copper_diving_helmet').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:plates/copper',
+			B: 'tfc:metal/helmet/copper',
+			C: '#forge:glass_panes',
+			D: 'firmaciv:large_waterproof_hide'
+		}, 0, 1).id('tfg:create/shaped/copper_diving_helmet')
 
 	// Ботинки для дайвинга
-	event.shaped('create:copper_diving_boots', [
-		'ABA',
-		'CDC'
-	], {
-		A: '#forge:screws/copper',
-		B: 'tfc:metal/boots/copper',
-		C: '#forge:ingots/iron',
-		D: 'firmaciv:large_waterproof_hide'
-	}).id('tfg:create/shaped/copper_diving_boots_cast_iron')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('create:copper_diving_boots').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/copper',
+			B: 'tfc:metal/boots/copper',
+			C: '#forge:ingots/iron',
+			D: 'firmaciv:large_waterproof_hide'
+		}, 0, 1).id('tfg:create/shaped/copper_diving_boots_cast_iron')
 
-	event.shaped('create:copper_diving_boots', [
-		'ABA',
-		'CDC'
-	], {
-		A: '#forge:screws/copper',
-		B: 'tfc:metal/boots/copper',
-		C: '#forge:ingots/wrought_iron',
-		D: 'firmaciv:large_waterproof_hide'
-	}).id('tfg:create/shaped/copper_diving_boots_wrought_iron')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('create:copper_diving_boots').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/copper',
+			B: 'tfc:metal/boots/copper',
+			C: '#forge:ingots/wrought_iron',
+			D: 'firmaciv:large_waterproof_hide'
+		}, 0, 1).id('tfg:create/shaped/copper_diving_boots_wrought_iron')
 
 	// Netherite backtank
-	event.shaped('create:netherite_backtank', [
-		'ABA',
-		'CDC',
-		'EFE'
-	], {
-		A: '#forge:screws/blue_steel',
-		B: 'greate:steel_shaft',
-		C: '#forge:plates/blue_steel',
-		D: 'gtceu:steel_drum',
-		E: 'beneath:cursed_hide',
-		F: 'tfc:metal/chestplate/blue_steel'
-	}).id('tfg:create/shaped/netherite_backtank')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('create:netherite_backtank').copyForgingBonus(), [
+			'ABA',
+			'CDC',
+			'EFE'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'greate:steel_shaft',
+			C: '#forge:plates/blue_steel',
+			D: 'gtceu:steel_drum',
+			E: 'beneath:cursed_hide',
+			F: 'tfc:metal/chestplate/blue_steel'
+		}, 2, 1).id('tfg:create/shaped/netherite_backtank')
 
 	event.shaped('create:netherite_backtank', [
 		'ACA',
@@ -1075,15 +1079,16 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/netherite_backtank_upgrade')
 
 	// Netherite diving helmet
-	event.shaped('create:netherite_diving_helmet', [
-		'ABA',
-		'CDC'
-	], {
-		A: '#forge:plates/blue_steel',
-		B: 'tfc:metal/helmet/blue_steel',
-		C: 'firmalife:reinforced_glass',
-		D: 'beneath:cursed_hide'
-	}).id('tfg:create/shaped/netherite_diving_helmet')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('create:netherite_diving_helmet').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:plates/blue_steel',
+			B: 'tfc:metal/helmet/blue_steel',
+			C: 'firmalife:reinforced_glass',
+			D: 'beneath:cursed_hide'
+		}, 0, 1).id('tfg:create/shaped/netherite_diving_helmet')
 
 	event.shaped('create:netherite_diving_helmet', [
 		' A ',
@@ -1097,16 +1102,17 @@ const registerCreateRecipes = (event) => {
 	}).id('tfg:create/shaped/netherite_diving_helmet_upgrade')
 
 	// Netherite diving boots
-	event.shaped('create:netherite_diving_boots', [
-		'ABC',
-		'EDE'
-	], {
-		A: '#forge:screws/blue_steel',
-		B: 'tfc:metal/boots/blue_steel',
-		C: '#forge:plates/blue_steel',
-		D: 'beneath:cursed_hide',
-		E: '#forge:ingots/lead'
-	}).id('tfg:create/shaped/netherite_diving_boots')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('create:netherite_diving_boots').copyForgingBonus(), [
+			'ABC',
+			'EDE'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'tfc:metal/boots/blue_steel',
+			C: '#forge:plates/blue_steel',
+			D: 'beneath:cursed_hide',
+			E: '#forge:ingots/lead'
+		}, 0, 1).id('tfg:create/shaped/netherite_diving_boots')
 
 	event.shaped('create:netherite_diving_boots', [
 		'ABA',
