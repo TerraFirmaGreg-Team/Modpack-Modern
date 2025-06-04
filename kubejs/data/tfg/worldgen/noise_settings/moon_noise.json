@@ -65,7 +65,7 @@
 				"from_y": 0,
 				"to_y": 10,
 				"from_value": 1,
-				"to_value": -1
+				"to_value": 0
 			},
 			"argument2": {
 				"type": "minecraft:min",
@@ -241,7 +241,7 @@
 								"type": "minecraft:condition",
 								"if_true": {
 									"type": "minecraft:noise_threshold",
-									"noise": "tfg:stone_layer_top_1",
+									"noise": "tfg:stone_layer_moon_1",
 									"min_threshold": -1.0,
 									"max_threshold": -0.2
 								},
@@ -252,7 +252,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": -1.0,
 												"max_threshold": -0.2
 											},
@@ -303,7 +303,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": -0.2,
 												"max_threshold": 0.2
 											},
@@ -354,7 +354,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": 0.2,
 												"max_threshold": 1.0
 											},
@@ -408,7 +408,7 @@
 								"type": "minecraft:condition",
 								"if_true": {
 									"type": "minecraft:noise_threshold",
-									"noise": "tfg:stone_layer_top_1",
+									"noise": "tfg:stone_layer_moon_1",
 									"min_threshold": -0.2,
 									"max_threshold": 0.2
 								},
@@ -419,7 +419,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": -1.0,
 												"max_threshold": -0.2
 											},
@@ -470,7 +470,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": -0.2,
 												"max_threshold": 0.2
 											},
@@ -521,7 +521,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": 0.2,
 												"max_threshold": 1.0
 											},
@@ -575,7 +575,7 @@
 								"type": "minecraft:condition",
 								"if_true": {
 									"type": "minecraft:noise_threshold",
-									"noise": "tfg:stone_layer_top_1",
+									"noise": "tfg:stone_layer_moon_1",
 									"min_threshold": 0.2,
 									"max_threshold": 1.0
 								},
@@ -586,7 +586,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": -1.0,
 												"max_threshold": -0.2
 											},
@@ -637,7 +637,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": -0.2,
 												"max_threshold": 0.2
 											},
@@ -688,7 +688,7 @@
 											"type": "minecraft:condition",
 											"if_true": {
 												"type": "minecraft:noise_threshold",
-												"noise": "tfg:stone_layer_top_2",
+												"noise": "tfg:stone_layer_moon_2",
 												"min_threshold": 0.2,
 												"max_threshold": 1.0
 											},
@@ -761,7 +761,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:noise_threshold",
-								"noise": "tfg:stone_layer_bottom_1",
+								"noise": "tfg:stone_layer_moon_1",
 								"min_threshold": -1.0,
 								"max_threshold": -0.2
 							},
@@ -772,7 +772,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -1.0,
 											"max_threshold": -0.2
 										},
@@ -808,7 +808,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -0.2,
 											"max_threshold": 0.2
 										},
@@ -844,7 +844,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": 0.2,
 											"max_threshold": 1.0
 										},
@@ -883,7 +883,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:noise_threshold",
-								"noise": "tfg:stone_layer_bottom_1",
+								"noise": "tfg:stone_layer_moon_1",
 								"min_threshold": -0.2,
 								"max_threshold": 0.2
 							},
@@ -894,7 +894,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -1.0,
 											"max_threshold": -0.2
 										},
@@ -930,7 +930,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -0.2,
 											"max_threshold": 0.2
 										},
@@ -966,7 +966,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": 0.2,
 											"max_threshold": 1.0
 										},
@@ -1005,7 +1005,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:noise_threshold",
-								"noise": "tfg:stone_layer_bottom_1",
+								"noise": "tfg:stone_layer_moon_1",
 								"min_threshold": 0.2,
 								"max_threshold": 1.0
 							},
@@ -1016,7 +1016,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -1.0,
 											"max_threshold": -0.2
 										},
@@ -1052,7 +1052,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -0.2,
 											"max_threshold": 0.2
 										},
@@ -1088,7 +1088,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_bottom_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": 0.2,
 											"max_threshold": 1.0
 										},
@@ -1145,7 +1145,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:noise_threshold",
-								"noise": "tfg:stone_layer_middle_1",
+								"noise": "tfg:stone_layer_moon_1",
 								"min_threshold": -1.0,
 								"max_threshold": -0.2
 							},
@@ -1156,7 +1156,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -1.0,
 											"max_threshold": -0.2
 										},
@@ -1192,7 +1192,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -0.2,
 											"max_threshold": 0.2
 										},
@@ -1228,7 +1228,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": 0.2,
 											"max_threshold": 1.0
 										},
@@ -1267,7 +1267,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:noise_threshold",
-								"noise": "tfg:stone_layer_middle_1",
+								"noise": "tfg:stone_layer_moon_1",
 								"min_threshold": -0.2,
 								"max_threshold": 0.2
 							},
@@ -1278,7 +1278,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -1.0,
 											"max_threshold": -0.2
 										},
@@ -1314,7 +1314,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -0.2,
 											"max_threshold": 0.2
 										},
@@ -1350,7 +1350,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": 0.2,
 											"max_threshold": 1.0
 										},
@@ -1389,7 +1389,7 @@
 							"type": "minecraft:condition",
 							"if_true": {
 								"type": "minecraft:noise_threshold",
-								"noise": "tfg:stone_layer_middle_1",
+								"noise": "tfg:stone_layer_moon_1",
 								"min_threshold": 0.2,
 								"max_threshold": 1.0
 							},
@@ -1400,7 +1400,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -1.0,
 											"max_threshold": -0.2
 										},
@@ -1436,7 +1436,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": -0.2,
 											"max_threshold": 0.2
 										},
@@ -1472,7 +1472,7 @@
 										"type": "minecraft:condition",
 										"if_true": {
 											"type": "minecraft:noise_threshold",
-											"noise": "tfg:stone_layer_middle_2",
+											"noise": "tfg:stone_layer_moon_2",
 											"min_threshold": 0.2,
 											"max_threshold": 1.0
 										},
@@ -1517,7 +1517,7 @@
 						"type": "minecraft:condition",
 						"if_true": {
 							"type": "minecraft:noise_threshold",
-							"noise": "tfg:stone_layer_top_1",
+							"noise": "tfg:stone_layer_moon_1",
 							"min_threshold": -1.0,
 							"max_threshold": -0.2
 						},
@@ -1528,7 +1528,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": -1.0,
 										"max_threshold": -0.2
 									},
@@ -1564,7 +1564,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": -0.2,
 										"max_threshold": 0.2
 									},
@@ -1600,7 +1600,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": 0.2,
 										"max_threshold": 1.0
 									},
@@ -1639,7 +1639,7 @@
 						"type": "minecraft:condition",
 						"if_true": {
 							"type": "minecraft:noise_threshold",
-							"noise": "tfg:stone_layer_top_1",
+							"noise": "tfg:stone_layer_moon_1",
 							"min_threshold": -0.2,
 							"max_threshold": 0.2
 						},
@@ -1650,7 +1650,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": -1.0,
 										"max_threshold": -0.2
 									},
@@ -1686,7 +1686,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": -0.2,
 										"max_threshold": 0.2
 									},
@@ -1722,7 +1722,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": 0.2,
 										"max_threshold": 1.0
 									},
@@ -1761,7 +1761,7 @@
 						"type": "minecraft:condition",
 						"if_true": {
 							"type": "minecraft:noise_threshold",
-							"noise": "tfg:stone_layer_top_1",
+							"noise": "tfg:stone_layer_moon_1",
 							"min_threshold": 0.2,
 							"max_threshold": 1.0
 						},
@@ -1772,7 +1772,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": -1.0,
 										"max_threshold": -0.2
 									},
@@ -1808,7 +1808,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": -0.2,
 										"max_threshold": 0.2
 									},
@@ -1844,7 +1844,7 @@
 									"type": "minecraft:condition",
 									"if_true": {
 										"type": "minecraft:noise_threshold",
-										"noise": "tfg:stone_layer_top_2",
+										"noise": "tfg:stone_layer_moon_2",
 										"min_threshold": 0.2,
 										"max_threshold": 1.0
 									},
