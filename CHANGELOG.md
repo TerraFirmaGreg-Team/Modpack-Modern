@@ -21,6 +21,7 @@
 - Fixed TFC sugar recipes so they can now use any sugar (#1099) @SpicyNoodle5
 - Added optional quest for bacon (#1122) @SpicyNoodle5
 - Add the create toolbox to the list of unsortable inventories (#1120) @esotericist
+- Anthracite now also superheats blaze burners @Pyritie
 
 ## [0.9.9] - 30.05.2025
 ### Changes

@@ -46,6 +46,7 @@ const registerCreateItemTags = (event) => {
 	event.add('create:blaze_burner_fuel/special', "gtceu:flawless_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:exquisite_coal_gem")
 	event.add('create:blaze_burner_fuel/special', "gtceu:coke_gem")
+	event.add('create:blaze_burner_fuel/special', "beneath:cursecoal")
 
 	event.add('tfc:forge_invisible_whitelist', 'create:basin')
 
