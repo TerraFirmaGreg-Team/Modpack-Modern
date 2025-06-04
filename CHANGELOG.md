@@ -15,8 +15,10 @@
 - Anthracite now also superheats blaze burners @Pyritie
 - Changed LV chem reactor quest to work with any container of rubber instead of just a rubber bucket (#1116) @ofoxsmith
 - Added perfect overclock to the electric greenhouse so it scales better with the pyro oven @Pyritie
+- Electric greenhouse now accepts logs and leaf blocks inside it, so you can build a little tree if you want @Pyritie
 - Increased durability of the blue steel diving suit to match blue steel armor @Pyritie
 - Phantom Silk and Polycaprolactam Fabric now count as High Quality Fabric @Pyritie
+- Added recipes to turn dirt into grass @Pyritie
 ### Bug fixes
 - Fixed issue where "melts into" tooltips and certain timers on Jade were missing (#1102) @Xikaro
 - Improved block ordering logic with AoE mining tools to reduce incorrect cave-ins @voidstar240
