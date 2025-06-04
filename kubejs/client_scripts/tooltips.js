@@ -30,6 +30,9 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
 		text.add(1, text.of('§cSuperheat§r with Coke, or Flawless and Exquisite coal gems.'))
 	})
+	event.addAdvanced(['gtceu:greenhouse'], (item, advanced, text) => {
+		text.add(1, text.of('This machine has a Perfect Overclock!')),
+	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
 		text.add(1, text.of('Artificial enviroment to simulate the Nether.')),
 		text.add(2, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
@@ -47,17 +50,17 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -2')),
 		text.add(2, text.of('§7Insulation: +9'))
-		text.add(3, text.of('Wear the full set to be §eHeatproof§r.'))
+		text.add(3, text.of('Wear the full set to be §eHeatproof§r from ambient temperatures.'))
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:avanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -0.5')),
 		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
+		text.add(3, text.of('Wear the full set to be §eFully Insulated§r from ambient temperatures.'))
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -0.5')),
 		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
+		text.add(3, text.of('Wear the full set to be §eFully Insulated§r from ambient temperatures.'))
 	})
 
 	//supports
