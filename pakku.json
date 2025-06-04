@@ -197,22 +197,10 @@
         "fix-gpu-memory-leak": {
             "side": "CLIENT"
         },
-        "tfc-support-indicator": {
-            "side": "CLIENT"
-        },
         "immediatelyfast": {
             "side": "CLIENT"
         },
         "unilib": {
-            "side": "CLIENT"
-        },
-        "fast-ip-ping": {
-            "side": "CLIENT"
-        },
-        "badoptimizations": {
-            "side": "CLIENT"
-        },
-        "entityculling": {
             "side": "CLIENT"
         },
         "resourceful-config": {
