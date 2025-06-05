@@ -58,6 +58,8 @@ const registerTFGItemTags = (event) => {
 	//#region Cloth & String
 	event.add('forge:cloth', 'tfg:phantom_silk')
 	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
+	event.add('tfc:high_quality_cloth', 'tfg:phantom_silk')
+	event.add('tfc:high_quality_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('tfc:sewing_light_cloth', 'tfg:phantom_silk')
 	event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
 	event.add('forge:string', 'tfg:phantom_thread')
@@ -137,9 +139,7 @@ const registerTFGItemTags = (event) => {
 
 	// Universal Circuits
 
-		global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
-			event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
-			})
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
 
 	// #endregion
 

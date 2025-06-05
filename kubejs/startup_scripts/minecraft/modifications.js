@@ -20,4 +20,10 @@ function registerMinecraftItemModifications(event) {
 	event.modify('minecraft:elytra', item => {
 		item.maxDamage = 2046
 	})
+
+	// Matches blue steel greaves
+
+	event.modify('minecraft:netherite_leggings', item => {
+		item.maxDamage = 960
+	})
 }

@@ -834,11 +834,16 @@ function registerGTCEUMetalRecipes(event) {
 
 	const processBars = (material) => {
 		const barsStack = ChemicalHelper.get(TFGTagPrefix.bars, material, 4)
+		const ingotStack =  ChemicalHelper.get(TagPrefix.ingot, material, 1)
 		if (barsStack == null)
 			return;
 
-		event.stonecutting(barsStack, ChemicalHelper.get(TagPrefix.ingot, material, 1))
-			.id(`${material.getName()}_ingot_to_bars`)
+		event.recipes.gtceu.cutter(`tfg:${material.getName()}_bars`)
+			.itemInputs(ingotStack)
+			.itemOutputs(barsStack)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(1)
 	}
 
 	forEachMaterial(material => {
