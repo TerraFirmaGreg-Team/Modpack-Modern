@@ -1463,6 +1463,44 @@
             ]
         },
         {
+            "pakku_id": "0Cv6dO3ZGvsziQH1",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "clean-swing-through-grass"
+            },
+            "name": {
+                "curseforge": "Clean Swing Through Grass"
+            },
+            "id": {
+                "curseforge": "915308"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cleanswing-1.20-1.8.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5962/530/cleanswing-1.20-1.8.jar",
+                    "id": "5962530",
+                    "parent_id": "915308",
+                    "hashes": {
+                        "sha1": "c128e24c47ab4a389b3868ff6913ee0631f254e8",
+                        "md5": "84f9950e09245d82f72a6461f57ca30f"
+                    },
+                    "required_dependencies": [],
+                    "size": 8305,
+                    "date_published": "2024-12-04T16:23:38.883Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "PDE7RB7hlFnTfgkq",
             "type": "MOD",
             "side": "CLIENT",
@@ -2494,7 +2532,7 @@
         {
             "pakku_id": "SG15bUHPcW2KqNGd",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "detected-setblock-be-gone"
             },
@@ -6592,7 +6630,6 @@
             "id": {
                 "curseforge": "585406"
             },
-            "export": false,
             "files": [
                 {
                     "type": "curseforge",
