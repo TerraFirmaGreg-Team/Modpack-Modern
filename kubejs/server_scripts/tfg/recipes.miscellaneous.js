@@ -125,24 +125,6 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	//Scaffolding Frame
-	event.shaped('tfg:scaffolding_frame',
-		[
-			' A ',
-			'ABA',
-			' A '
-		],
-		{
-			A: '#forge:rods/wood',
-			B: '#forge:cloth'
-		}).id('tfg:shaped/scaffolding_frame');
-
-	event.recipes.gtceu.assembler('tfg:assembler/scaffolding_frame')
-		.itemInputs('4x #forge:rods/wood', '#forge:cloth')
-		.itemOutputs('tfg:scaffolding_frame')
-		.duration(10)
-		.EUt(GTValues.VA[GTValues.ULV]);
-
 	//Airship Hull
 	event.shaped('tfg:airship_hull', [
 		'A B',
