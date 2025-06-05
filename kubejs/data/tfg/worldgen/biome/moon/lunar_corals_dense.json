@@ -54,14 +54,7 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [
-			{
-				"type": "minecraft:rabbit",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 20
-			}
-		],
+		"creature": [],
 		"misc": [],
 		"monster": [
 			{
