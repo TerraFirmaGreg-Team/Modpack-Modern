@@ -14,17 +14,17 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Аметист, Опал и гранат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)Антрацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Бентонит и Оливин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_bauxite)Боксит и Ильменит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Вульфенит & Молибденит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Гранатовый и Касситеритовый песок$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Золото и Гематит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Изумруд и Бериллий$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_garnet)Аметист, Опал и гранат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_anthracite)Антрацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_apatite)Апатит и Пирохлор$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_monazite)Бастнезит и Монацит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_olivine)Бентонит и Оливин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_molybdenum)Вульфенит & Молибденит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnierite)Гарниерит и Кобальтит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_hematite)Гематит и Лимонит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_goethite)Гётит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_garnet_tin)Гранатовый и Касситеритовый песок$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_graphite)Графит и Алмаз$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_gold)Золото и Гематит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_beryllium)Изумруд и Бериллий$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_cassiterite)Касситерит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада и Плутоний$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Незер-кварц$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвин$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_lapis)Лазурит, Лазурит 2 и Содалит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_manganese)Марганец и Тантал$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_copper)Медь и Халькопирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_basaltic_sands)Минеральные пески$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_lubricant)Мыльный камень, Тальк и Трона$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_naquadah)Наквада и Плутоний$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_quartz)Незер-кварц$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_redstone)Редстоун, Киноварь и Рубин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sapphire)Сапфир и Альмандин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_saltpeter)Селитра и Электротин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sulfur)Сера и Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_silver)Серебро, Галена и Свинец$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sylvite)Сильвин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Сфалерит & Пирит$()$()",
       "type": "patchouli:text"
     },
     {
       "Type": "patchouli:text",
-      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_sphalerite)Сфалерит & Пирит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Тетраэдрит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Топаз и Халькозин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Уранинит и Уранит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Хромит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Ционит, Слюда и Боксит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Шеелит и Вольфрамат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Шелдонит и Борнит$()$()",
+      "text": "$(li)$(l:tfg_ores/nether_vein_index#nether_tetrahedrite)Тетраэдрит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_topaz)Топаз и Халькозин$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_pitchblende)Уранинит и Уранит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_magnetite)Хромит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_mica)Ционит, Слюда и Боксит$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_scheelite)Шеелит и Вольфрамат$()$()$(li)$(l:tfg_ores/nether_vein_index#nether_sheldonite)Шелдонит и Борнит$()$()",
       "type": "patchouli:text"
     },
     {
@@ -215,7 +215,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 185$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 24 — 128$(br)$(thing)Размер$(): 45$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Пироксенит",
+      "text": "$(thing)Редкость$(): 245$(br)$(thing)Плотность$(): 0.35$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 24 — 128$(br)$(thing)Размер$(): 45$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Пироксенит",
       "title": "Бастнезит и Монацит",
       "type": "patchouli:text",
       "anchor": "nether_monazite"
@@ -374,73 +374,6 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 185$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 32 — 128$(br)$(thing)Размер$(): 45$(br2)$(thing)Виды камней$(): Базальт, Мигматит, Пироксенит, Травертин",
-      "title": "Боксит и Ильменит",
-      "type": "patchouli:text",
-      "anchor": "nether_bauxite"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Боксит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bauxite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 45%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Ильменит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/ilmenite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Хромит$(): Железо, Титан$(br)$(thing)Формула$(): FeTiO₃",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Алюминий",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/aluminium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:text",
       "text": "$(thing)Редкость$(): 245$(br)$(thing)Плотность$(): 0.55$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 0 — 128$(br)$(thing)Размер$(): 31$(br2)$(thing)Виды камней$(): Аспидный сланец, Габбро, Гнейс, Гранит, Диорит, Пироксенит",
       "title": "Вульфенит & Молибденит",
       "type": "patchouli:text",
@@ -463,7 +396,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 40%$(br)$(thing)Хромит$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
+      "text": "$(thing)Процент руды$(): 42%$(br)$(thing)Хромит$(): Свинец, Молибден$(br)$(thing)Формула$(): PbMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -483,15 +416,15 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Хромит$(): Молибден$(br)$(thing)Формула$(): MoS₂",
+      "text": "$(thing)Процент руды$(): 31%$(br)$(thing)Хромит$(): Молибден$(br)$(thing)Формула$(): MoS₂",
       "type": "patchouli:multiblock"
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Молибден",
+      "name": "Никель",
       "multiblock": {
         "mapping": {
-          "0": "#forge:ores/molybdenum"
+          "0": "#forge:ores/nickel"
         },
         "pattern": [
           [
@@ -503,7 +436,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Молибден$(br)$(thing)Формула$(): Mo",
+      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
       "type": "patchouli:multiblock"
     },
     {
@@ -523,7 +456,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Молибден$(br)$(thing)Формула$(): CaMoO₄",
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Молибден$(br)$(thing)Формула$(): CaMoO₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -555,7 +488,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): NiO",
+      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): NiO",
       "type": "patchouli:multiblock"
     },
     {
@@ -575,47 +508,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni₉S₈",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кобальтит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobaltite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Кобальт",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/cobalt"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Кобальт$(br)$(thing)Формула$(): Co",
+      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni₉S₈",
       "type": "patchouli:multiblock"
     },
     {
@@ -635,7 +528,47 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кобальтит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobaltite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 19%$(br)$(thing)Хромит$(): Кобальт, Мышьяк$(br)$(thing)Формула$(): CoAsS$(br)$(thing)Ядовит$(): $(c)$(t:Requires Face Mask)Arsenicosis (Inhalation)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Кобальт",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/cobalt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 14%$(br)$(thing)Плавится в$(): Кобальт$(br)$(thing)Формула$(): Co",
       "type": "patchouli:multiblock"
     },
     {
@@ -1112,7 +1045,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 50%$(br)$(thing)Используется для$(): компоненты уровня MV, Предметные фильтры (Тэг)$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈",
+      "text": "$(thing)Процент руды$(): 47%$(br)$(thing)Используется для$(): компоненты уровня MV, Предметные фильтры (Тэг)$(br)$(thing)Формула$(): Be₃Al₂Si₆O₁₈",
       "type": "patchouli:multiblock"
     },
     {
@@ -1132,7 +1065,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Используется для$(): Эндер-жемчуг$(br)$(thing)Формула$(): Be$(br)$(thing)Ядовит$(): $(c)$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)$()",
+      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Используется для$(): Эндер-жемчуг$(br)$(thing)Формула$(): Be$(br)$(thing)Ядовит$(): $(c)$(t:Requires Rubber Gloves)Berylliosis (Skin Contact)$(/t)$()",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Каменная соль",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/rock_salt"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 18%$(br)$(thing)Хромит$(): Калий, Хлор$(br)$(thing)Формула$(): KCl",
       "type": "patchouli:multiblock"
     },
     {
@@ -1152,8 +1105,13 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
+      "text": "$(thing)Процент руды$(): 0%$(br)$(thing)Хромит$(): Торий$(br)$(thing)Формула$(): Th",
       "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:empty",
+      "draw_filler": true,
+      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -1301,7 +1259,7 @@
     },
     {
       "Type": "patchouli:text",
-      "text": "$(thing)Редкость$(): 195$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 32 — 128$(br)$(thing)Размер$(): 45$(br2)$(thing)Виды камней$(): Базальт, Мигматит, Пироксенит, Травертин",
+      "text": "$(thing)Редкость$(): 225$(br)$(thing)Плотность$(): 0.4$(br)$(thing)Вид$(): кластерная жила$(br)$(thing)Y-уровень$(): 32 — 128$(br)$(thing)Размер$(): 45$(br2)$(thing)Виды камней$(): Базальт, Мигматит, Пироксенит, Травертин",
       "title": "Марганец и Тантал",
       "type": "patchouli:text",
       "anchor": "nether_manganese"
@@ -2500,26 +2458,6 @@
     },
     {
       "Type": "patchouli:multiblock",
-      "name": "Хромит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/chromite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 60%$(br)$(thing)Хромит$(): Хром$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Ядовит$(): $(c)$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)$()",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
       "name": "Ванадий магнетит",
       "multiblock": {
         "mapping": {
@@ -2535,7 +2473,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Железо, Ванадий$(br)$(thing)Формула$(): (Fe₃O₄)V",
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Хромит$(): Железо, Ванадий$(br)$(thing)Формула$(): (Fe₃O₄)V",
       "type": "patchouli:multiblock"
     },
     {
@@ -2555,7 +2493,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
+      "text": "$(thing)Процент руды$(): 30%$(br)$(thing)Плавится в$(): Золото$(br)$(thing)Формула$(): Au",
       "type": "patchouli:multiblock"
     },
     {
@@ -2575,7 +2513,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₃O₄",
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Плавится в$(): Железо$(br)$(thing)Формула$(): Fe₃O₄",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Хромит",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/chromite"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Хром$(br)$(thing)Формула$(): FeCr₂O₄$(br)$(thing)Ядовит$(): $(c)$(t:Requires Rubber Gloves)Irritant (Skin Contact)$(/t)$()",
       "type": "patchouli:multiblock"
     },
     {
@@ -2595,7 +2553,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "text": "$(thing)Процент руды$(): 10%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
       "type": "patchouli:multiblock"
     },
     {
@@ -2622,7 +2580,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂SiO₅",
+      "text": "$(thing)Процент руды$(): 46%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂SiO₅",
       "type": "patchouli:multiblock"
     },
     {
@@ -2642,27 +2600,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Калий, Алюминий, Фтор$(br)$(thing)Формула$(): KAl₃Si₃F₂O₁₀",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Боксит",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/bauxite"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Алюминий$(br)$(thing)Формула$(): Al₂O₃",
+      "text": "$(thing)Процент руды$(): 33%$(br)$(thing)Хромит$(): Калий, Алюминий, Фтор$(br)$(thing)Формула$(): KAl₃Si₃F₂O₁₀",
       "type": "patchouli:multiblock"
     },
     {
@@ -2682,13 +2620,8 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Цезий, Алюминий$(br)$(thing)Формула$(): Cs₂Al₂Si₄(H₂O)₂O₁₂",
+      "text": "$(thing)Процент руды$(): 20%$(br)$(thing)Хромит$(): Цезий, Алюминий$(br)$(thing)Формула$(): Cs₂Al₂Si₄(H₂O)₂O₁₂",
       "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:empty",
-      "draw_filler": true,
-      "type": "patchouli:empty"
     },
     {
       "Type": "patchouli:text",
@@ -2781,7 +2714,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 35%$(br)$(thing)Хромит$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
+      "text": "$(thing)Процент руды$(): 41%$(br)$(thing)Хромит$(): Медь$(br)$(thing)Формула$(): Cu₅FeS₄",
       "type": "patchouli:multiblock"
     },
     {
@@ -2801,7 +2734,27 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Хромит$(): Платина, Никель, Палладий$(br)$(thing)Формула$(): Pt₃NiSPd",
+      "text": "$(thing)Процент руды$(): 29%$(br)$(thing)Хромит$(): Платина, Никель, Палладий$(br)$(thing)Формула$(): Pt₃NiSPd",
+      "type": "patchouli:multiblock"
+    },
+    {
+      "Type": "patchouli:multiblock",
+      "name": "Никель",
+      "multiblock": {
+        "mapping": {
+          "0": "#forge:ores/nickel"
+        },
+        "pattern": [
+          [
+            "0"
+          ],
+          [
+            " "
+          ]
+        ]
+      },
+      "enable_visualize": false,
+      "text": "$(thing)Процент руды$(): 23%$(br)$(thing)Плавится в$(): Никель$(br)$(thing)Формула$(): Ni",
       "type": "patchouli:multiblock"
     },
     {
@@ -2821,27 +2774,7 @@
         ]
       },
       "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 25%$(br)$(thing)Плавится в$(): Платина$(br)$(thing)Формула$(): Pt",
-      "type": "patchouli:multiblock"
-    },
-    {
-      "Type": "patchouli:multiblock",
-      "name": "Палладий",
-      "multiblock": {
-        "mapping": {
-          "0": "#forge:ores/palladium"
-        },
-        "pattern": [
-          [
-            "0"
-          ],
-          [
-            " "
-          ]
-        ]
-      },
-      "enable_visualize": false,
-      "text": "$(thing)Процент руды$(): 15%$(br)$(thing)Хромит$(): Палладий$(br)$(thing)Формула$(): Pd",
+      "text": "$(thing)Процент руды$(): 5%$(br)$(thing)Плавится в$(): Платина$(br)$(thing)Формула$(): Pt",
       "type": "patchouli:multiblock"
     },
     {

@@ -47,7 +47,12 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:raw_ostrum_block',
 	'ad_astra:raw_calorite_block',
 	'ad_astra:glacio_globe',
-	
+	'ad_astra:moon_desh_ore',
+	'ad_astra:deepslate_desh_ore',
+	'ad_astra:mars_ostrum_ore',
+	'ad_astra:deepslate_ostrum_ore',
+	'ad_astra:venus_calorite_ore',
+	'ad_astra:deepslate_calorite_ore',
 	
 
 	// Disabled until IV planets
