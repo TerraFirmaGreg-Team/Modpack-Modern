@@ -728,7 +728,7 @@ function registerGTCEuMachineRecipes(event) {
 	], {
 		A: '#gtceu:circuits/mv',
 		B: 'gtceu:copper_single_cable',
-		C: '#gtceu:circuits/mv',
+		C: 'tfc:compost',
 		D: 'gtceu:solid_machine_casing'
 	}).id('tfg:shaped/greenhouse')
 

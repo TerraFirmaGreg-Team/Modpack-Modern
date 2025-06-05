@@ -1600,6 +1600,24 @@
 			y: 6.75d
 		}
 		{
+			description: [
+				"This Chapter will be updated later on with &lSpace Progression&r. Be wary &oprogression&r and &orecipes&r will &lchange&r as the structure of the quests."
+				""
+				"The modpack can be finish right now and is mostly vanilla Gregtech."
+			]
+			icon: "createdeco:decal_warning"
+			id: "02AD483C54EF96F0"
+			size: 2.5d
+			tasks: [{
+				id: "362E55351356CD43"
+				title: "Okay I understand it's not up to date"
+				type: "checkmark"
+			}]
+			title: "Quests are OLD and not updated for TFG"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
 			dependencies: ["478B0D55369C0F7F"]
 			id: "173A04F328414A36"
 			tasks: [{
@@ -1611,6 +1629,6 @@
 			y: 1.0d
 		}
 	]
-	subtitle: ["Improve your infrastructure and parallelise your setups"]
-	title: "&5EV&r - Extreme Voltage"
+	subtitle: ["The quests are outdated. They will be update in a later update."]
+	title: "&5EV&r - Extreme Voltage &6(WIP)&r"
 }

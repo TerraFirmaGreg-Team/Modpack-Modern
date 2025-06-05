@@ -53,13 +53,26 @@
 				"&6&lThank you for playing the pack! :D&r"
 				"- The GregTech Community Pack Dev Team"
 			]
-			icon: "gtceu:nan_certificate"
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
 			id: "6E8F257261F93501"
 			shape: "heart"
 			size: 4.0d
 			subtitle: "Is this... the end?"
 			tasks: [{
-				id: "3BE7164F661251AD"
+				id: "0BE31C55310D03A8"
+				title: "Thanks for playing!"
 				type: "checkmark"
 			}]
 			title: "The Finale"
@@ -127,7 +140,7 @@
 				"0009F48B6E385A47"
 			]
 			description: [
-				"The amount of EU this battery can storage is the max value of a Long Integer in Java."
+				"The amount of EU this battery can store is the max value of a Long Integer in Java."
 				""
 				"Don't try to win Minecraft - you can't."
 				"{@pagebreak}"
@@ -138,6 +151,11 @@
 				"&oThey also added an &lExtremely Ultimate Battery&r&o made of 8 Really Ultimate Batteries, which is ludicrously expensive."
 			]
 			id: "6F15D7574B8F6DB5"
+			rewards: [{
+				id: "4895F6328078CE87"
+				item: "minecraft:grass"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.3d
 			subtitle: "Consider touching some grass"
@@ -153,8 +171,6 @@
 		{
 			dependencies: ["3CDA855A045A9F4D"]
 			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
 				"The &3Network Switch&r allows multiple HPCAs to be used in conjunction with each other! This allows you to provide far more computation to your &aResearch Station&r."
 				""
 				"HPCAs can be connected to &3Network Switches&r with transmission and reception hatches, and then the Network Switch can output to a &aResearch Station&r with another transmission hatch."
@@ -165,8 +181,9 @@
 			size: 0.75d
 			subtitle: "With our powers combined..."
 			tasks: [{
-				id: "3DAB523583CEACA8"
-				type: "checkmark"
+				id: "5816F0458BEA1BCD"
+				item: "gtceu:network_switch"
+				type: "item"
 			}]
 			title: "Network Switch"
 			x: 2.25d
@@ -200,17 +217,14 @@
 				"0BADFBA6F96E457E"
 				"42760D3A86EFDCA3"
 			]
-			description: [
-				"&4&l[ NOT YET IMPLEMENTED ]&r"
-				""
-				"The &3Data Module&r is required for Endgame Research. &aAssembly Lines&r cannot read from it using &aData Access Hatches&r directly, and instead require the &9Data Bank&r."
-			]
+			description: ["The &3Data Module&r is required for Endgame Research. &aAssembly Lines&r cannot read from it using &aData Access Hatches&r directly, and instead require the &9Data Bank&r."]
 			id: "45E300FD7CD05A37"
 			size: 0.75d
 			subtitle: "Data storage sure is expensive..."
 			tasks: [{
-				id: "4F9B678E31002121"
-				type: "checkmark"
+				id: "10F68287B673E16E"
+				item: "gtceu:data_module"
+				type: "item"
 			}]
 			title: "Data Module"
 			x: 3.375d
@@ -223,7 +237,7 @@
 				"{@pagebreak}"
 				"&l&3Lore:&r&o In GCYL, Neutronium is unlocked at UMV-tier (called UXV in CEu). There is also Cosmic Neutronium, which is equivalent to Avaritia's Neutronium in GT5u, which was unlocked even later in GCYL!"
 				""
-				"&l&More Lore:&r&o Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+				"&l&3More Lore:&r&o Fun Fact: a single Neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
 			]
 			id: "6DBF61D4F94BC851"
 			size: 0.75d
@@ -275,7 +289,7 @@
 			id: "3ED40CE1E4476C99"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "GGEZ"
+			subtitle: "Obtain for G.O.A.T Status"
 			tasks: [{
 				id: "29384189E33C8CB1"
 				item: "gtceu:nan_certificate"
@@ -346,11 +360,11 @@
 				"0BADFBA6F96E457E"
 			]
 			description: [
-				"This Quest will be completed with &eeither&r a &3ZPM Energy Hatch&r&r... or a &3ZPM Dynamo Hatch&r for your Multiblock Generators."
+				"This Quest will be completed with &eeither&r a &3UV Energy Hatch&r&r... or a &3UV Dynamo Hatch&r for your Multiblock Generators."
 				""
 				"Don't forget that &d16 Amp&r variants exist!"
 				""
-				"Additionally, remember that these hatches require a &9Data Orb&r for research."
+				"Additionally, remember that these hatches require a &9Data Module&r for research."
 			]
 			icon: "gtceu:uv_energy_input_hatch"
 			id: "2F2F82D9DE3C798C"
@@ -442,6 +456,22 @@
 			y: -0.75d
 		}
 		{
+			dependencies: ["0009F48B6E385A47"]
+			description: ["The &aCreative Energy Cell&r is one of the few craftable creative items. It provides infinite energy to your AE system, so you don't have to worry about blackouts or power anymore."]
+			id: "428C62749A1A1BAB"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Ok, maybe there are Creative items."
+			tasks: [{
+				id: "392079FDF410B9FD"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			title: "Creative ME Energy"
+			x: 7.875d
+			y: -1.875d
+		}
+		{
 			dependencies: ["6DBF61D4F94BC851"]
 			description: ["The &aGravi Star&r is the final upgraded Nether Star in GTCEu. It's needed for &3UV&r Sensors, Emitters, and Field Generators."]
 			id: "0009F48B6E385A47"
@@ -463,7 +493,7 @@
 				"762C48F0C2EA6B81"
 			]
 			description: [
-				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				"Build the structure displayed with Fusion Glass in &aEMI&r."
 				""
 				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
 				""
@@ -524,7 +554,28 @@
 			x: 6.75d
 			y: 0.375d
 		}
+		{
+			description: [
+				"This Chapter will be updated later on with &lSpace Progression&r. Be wary &oprogression&r and &orecipes&r will &lchange&r as the structure of the quests."
+				""
+				"The modpack can be finish right now and is mostly vanilla Gregtech."
+			]
+			icon: "createdeco:decal_warning"
+			id: "4A1397BAB0828651"
+			size: 2.5d
+			tasks: [{
+				id: "0CE60764DD7060CD"
+				title: "Okay I understand it's not up to date"
+				type: "checkmark"
+			}]
+			title: "Quests are OLD and not updated for TFG"
+			x: 2.5d
+			y: 4.0d
+		}
 	]
-	subtitle: ["Bring your long journey to a well-deserved end"]
-	title: "&3UV&r - Ultimate Voltage"
+	subtitle: [
+		"Bring your long journey to a well-deserved end"
+		"The quests are outdated. They will be update in a later update."
+	]
+	title: "&3UV&r - Ultimate Voltage &6(WIP)&r"
 }
