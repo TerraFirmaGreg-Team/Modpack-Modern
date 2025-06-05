@@ -371,10 +371,23 @@ const registerAdAstraRecipes = (event) => {
 		B: '#tfc:high_quality_cloth',
 	}).id('tfg:white_flag')
 
-	global.MINECRAFT_DYE_NAMES.forEach(color => {
-		event.shapeless(`ad_astra:${color}_flag`, ['#ad_astra:flags', `#forge:dyes/${color}`])
-	})
+	event.recipes.gtceu.chemical_bath(`tfg:ad_astra_flag_bleaching`)
+		.itemInputs('#ad_astra:flags')
+		.inputFluids(Fluid.of(`gtceu:chlorine`, 36))
+		.itemOutputs(`ad_astra:white_flag`)
+		.duration(150)
+		.EUt(4)
+		.category(GTRecipeCategories.CHEM_DYES)
 
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.recipes.gtceu.chemical_bath(`tfg:ad_astra_${color}_flag`)
+			.itemInputs('ad_astra:white_flag')
+			.inputFluids(Fluid.of(`tfc:${color}_dye`, 36))
+			.itemOutputs(`ad_astra:${color}_flag`)
+			.duration(150)
+			.EUt(4)
+			.category(GTRecipeCategories.CHEM_DYES)
+	})
 
 	//#endregion
 
@@ -440,6 +453,85 @@ const registerAdAstraRecipes = (event) => {
 			millibuckets: 100
 		}
 	}).id('ad_astra:oxygen_loading/air_from_oxygen_gas')
+
+	//#endregion
+
+	//#region Misc blocks
+
+
+
+	//#endregion
+
+	//#region Decoration blocks
+
+	global.MINECRAFT_DYE_NAMES.forEach(color => {
+		event.shaped(`ad_astra:${color}_industrial_lamp`, [
+			' N ',
+			'DTD',
+			' P '
+		], {
+			N: '#forge:rods/steel',
+			T: 'minecraft:glowstone',
+			D: `minecraft:${color}_stained_glass_pane`,
+			P: '#forge:plates/steel'
+		})
+		.id(`tfg:shaped/ad_astra_${color}_industrial_lamp`);
+
+		event.shaped(`ad_astra:small_${color}_industrial_lamp`, [
+			' N ',
+			'DTD',
+			' P '
+		], {
+			N: '#forge:nuggets/steel',
+			T: 'minecraft:glowstone',
+			D: `minecraft:${color}_stained_glass_pane`,
+			P: '#forge:rods/steel'
+		})
+		.id(`tfg:shaped/ad_astra_small_${color}_industrial_lamp`);
+	})
+
+	const DECO_BLOCKS = [
+		{ type: 'iron', material: 'wrought_iron' },
+		{ type: 'steel', material: 'steel' },
+		{ type: 'desh', material: 'desh' },
+		{ type: 'calorite', material: 'calorite' },
+		{ type: 'ostrum', material: 'ostrum' }
+	]
+
+	DECO_BLOCKS.forEach(x => {
+
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_plating`)
+			.itemInputs(`#forge:storage_blocks/${x.material}`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`16x ad_astra:${x.type}_plating`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(17)
+
+		event.recipes.gtceu.chemical_bath(`tfg:ad_astra_glowing_${x.type}_pillar`)
+			.itemInputs(`ad_astra:${x.type}_pillar`)
+			.inputFluids(Fluid.of('gtceu:glowstone', 72))
+			.itemOutputs(`ad_astra:glowing_${x.type}_pillar`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+
+		// TODO: tags for these
+		event.stonecutting(`ad_astra:${x.type}_factory_block`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.stonecutting(`ad_astra:${x.type}_plating`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.stonecutting(`ad_astra:${x.type}_panel`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.stonecutting(`ad_astra:${x.type}_pillar`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.stonecutting(`ad_astra:${x.type}_plateblock`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.stonecutting(`ad_astra:encased_${x.type}_block`, `#tfg:ad_astra_${x.type}_blocks`)
+
+		// TODO: button, pressure plate, slab, stairs, doors
+		//https://github.com/terrarium-earth/Ad-Astra/blob/1.20.x/common/src/main/generated/resources/data/ad_astra/recipes/
+		//https://github.com/terrarium-earth/Ad-Astra/blob/1.20.x/common/src/main/java/earth/terrarium/adastra/common/registry/ModBlocks.java
+	})
+
+	event.shapeless('ad_astra:marked_iron_pillar', ['ad_astra:iron_pillar', '#forge:dyes/yellow', '#forge:dyes/black'])
+		.id('tfg:shapeless/marked_iron_pillar')
+
+	// etrium only has factory block, encased block, plateblock, panel, and (storage) block
 
 	//#endregion
 }

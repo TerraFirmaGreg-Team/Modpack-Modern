@@ -25,9 +25,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:steel_nugget',
 	'ad_astra:steel_plate',
 	'ad_astra:steel_rod',
-	'ad_astra:raw_desh',
-	'ad_astra:raw_ostrum',
-	'ad_astra:raw_calorite',
 	'ad_astra:photovoltaic_etrium_cell',
 	'ad_astra:photovoltaic_vesnium_cell',
 	'ad_astra:engine_frame',
@@ -43,12 +40,17 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:fuel_bucket',
 	'ad_astra:cryo_fuel_bucket',
 	'ad_astra_giselle_addon:gravity_normalizer',
+	'ad_astra:cable_dust',
+	'ad_astra:glacio_globe',
+	
+	// TODO: integrate with tag prefixes?
 	'ad_astra:steel_block',
 	'ad_astra:raw_desh_block',
 	'ad_astra:raw_ostrum_block',
 	'ad_astra:raw_calorite_block',
-	'ad_astra:glacio_globe',
-	
+	'ad_astra:raw_desh',
+	'ad_astra:raw_ostrum',
+	'ad_astra:raw_calorite',
 	
 
 	// Disabled until IV planets
@@ -74,7 +76,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 
 global.AD_ASTRA_DISABLED_FLUIDS =
 [
-	'ad_astra:oxygen',
 	'ad_astra:hydrogen',
 	'ad_astra:oil',
 	'ad_astra:fuel',

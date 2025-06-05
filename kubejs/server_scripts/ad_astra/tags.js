@@ -7,6 +7,9 @@ const registerAdAstraFluidTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', fluid)
 	})
 
+	// Using this to represent 'breathable air' instead of oxygen
+	event.removeAllTagsFrom('ad_astra:oxygen')
+
 	event.removeAll('ad_astra:fuel')
 	event.removeAll('ad_astra:efficient_fuel')
 
