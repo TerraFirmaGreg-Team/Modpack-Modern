@@ -1,5 +1,8 @@
 # Changelog
 ## [Unreleased]
+### Changes
+
+## [0.9.10] - 05.06.2025
 ### New features
 - Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
 - Started work on Brazilian Portuguese translations @gifpxto
