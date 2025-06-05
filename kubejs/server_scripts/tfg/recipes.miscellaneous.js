@@ -124,7 +124,19 @@ function registerTFGMiscellaneousRecipes(event) {
 		.outputFluids(Fluid.of('firmalife:curdled_goat_milk', 1000))
 		.duration(300)
 		.EUt(GTValues.VA[GTValues.LV])
-
+	
+	//Scaffolding Frame
+	event.shaped('tfg:scaffolding_frame',
+		[
+			' A ',
+			'ABA',
+			' A '
+		],
+		{
+			A: '#forge:rods/wood',
+			B: '#forge:cloth'
+		}).id('tfg:shaped/scaffolding_frame');
+	
 	//Airship Hull
 	event.shaped('tfg:airship_hull', [
 		'A B',
