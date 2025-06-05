@@ -141,6 +141,7 @@ function registerTFGMiscellaneousRecipes(event) {
 		.itemInputs('4x #forge:rods/wood', '#forge:cloth')
 		.itemOutputs('tfg:scaffolding_frame')
 		.duration(10)
+		.circuit(5)
 		.EUt(GTValues.VA[GTValues.ULV]);
 
 	//Airship Hull
