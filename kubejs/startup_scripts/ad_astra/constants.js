@@ -4,6 +4,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 [
 	// Always disabled
 
+	'ad_astra:nasa_workbench',
 	'ad_astra:etrionic_capacitor',
 	'ad_astra:etrionic_core',
 	'ad_astra:energizer',

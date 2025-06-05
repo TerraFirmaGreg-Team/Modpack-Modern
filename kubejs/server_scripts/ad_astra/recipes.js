@@ -19,62 +19,62 @@ const registerAdAstraRecipes = (event) => {
 	//#region Tier 1 rocket
 
 	event.recipes.gtceu.assembler('tfg:rocket_nose_cone_t1')
-	.itemInputs(
-		'gtceu:hv_emitter',
-		'gtceu:dense_rocket_alloy_t1_plate',
-		'3x gtceu:double_stainless_steel_plate')
-	.inputFluids(Fluid.of('gtceu:polyethylene', 16000))
-	.itemOutputs('ad_astra:rocket_nose_cone')
-	.duration(1200)
-	.EUt(480)
+		.itemInputs(
+			'gtceu:hv_emitter',
+			'gtceu:dense_rocket_alloy_t1_plate',
+			'3x gtceu:double_stainless_steel_plate')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 144 * 16))
+		.itemOutputs('ad_astra:rocket_nose_cone')
+		.duration(1200)
+		.EUt(480)
 
 
-	event.recipes.gtceu.pyrolyse_oven('gtceu:pyrolose_vitrified_asbestos_dust')
-	.inputFluids(Fluid.of('gtceu:nitrogen', 100))
-	.itemInputs('gtceu:asbestos_dust')
-	.itemOutputs('gtceu:vitrified_asbestos_dust')
-	.duration(80)
-	.EUt(GTValues.VA[GTValues.MV])
+	event.recipes.gtceu.pyrolyse_oven('tfg:pyrolose_vitrified_asbestos_dust')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 100))
+		.itemInputs('gtceu:asbestos_dust')
+		.itemOutputs('gtceu:vitrified_asbestos_dust')
+		.duration(80)
+		.EUt(GTValues.VA[GTValues.MV])
 
-	event.recipes.gtceu.mixer('gtceu:rocket_alloy_t1')
+	event.recipes.gtceu.mixer('tfg:rocket_alloy_t1')
 		.itemInputs('6x #forge:dusts/aluminium', '2x #forge:dusts/stainless_steel')
 		.inputFluids(Fluid.of('gtceu:red_steel', 144))
 		.itemOutputs('9x #forge:dusts/rocket_alloy_t1')
 		.duration(580)
 		.EUt(480)
 
-	event.recipes.gtceu.chemical_bath('rocket_alloy_cool_down_water')
+	event.recipes.gtceu.chemical_bath('tfg:rocket_alloy_cool_down_water')
 		.itemInputs('#forge:hot_ingots/rocket_alloy_t1')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.itemOutputs('#forge:ingots/rocket_alloy_t1')
 		.duration(400)
 		.EUt(120)
 
-	event.recipes.gtceu.chemical_bath('rocket_alloy_cool_down_distilled_water')
+	event.recipes.gtceu.chemical_bath('tfg:rocket_alloy_cool_down_distilled_water')
 		.itemInputs('#forge:hot_ingots/rocket_alloy_t1')
 		.inputFluids(Fluid.of('gtceu:distilled_water', 100))
 		.itemOutputs('#forge:ingots/rocket_alloy_t1')
 		.duration(250)
 		.EUt(120)
 
-	event.recipes.gtceu.alloy_smelter(`gtceu:alloy_smelter_rocket_fin_t1`)
+	event.recipes.gtceu.assembler(`tfg:rocket_fin_t1`)
 		.itemInputs('#forge:plates/rocket_alloy_t1', '#forge:double_plates/stainless_steel')
 		.itemOutputs('ad_astra:rocket_fin')
 		.duration(150)
 		.EUt(GTValues.VA[GTValues.HV])
-		
 
-	event.recipes.gtceu.assembler('tfg:steel_engine')
+
+	event.recipes.gtceu.assembler('tfg:rocket_steel_engine')
 		.itemInputs(
 			'2x #forge:double_plates/stainless_steel',
 			'2x #gtceu:circuits/hv',
 			'gtceu:hv_electric_pump',
 			'2x gtceu:power_thruster',
 			'#forge:rotors/stainless_steel')
-		.inputFluids(Fluid.of('gtceu:blue_steel', 1152))
+		.inputFluids(Fluid.of('gtceu:blue_steel', 144 * 8))
 		.itemOutputs('ad_astra:steel_engine')
 		.duration(600)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	event.recipes.gtceu.assembler('ad_astra:assembler_tier_1_rocket')
 		.itemInputs(
@@ -82,52 +82,15 @@ const registerAdAstraRecipes = (event) => {
 			'4x ad_astra:rocket_fin',
 			'1x ad_astra:steel_engine',
 			'1x ad_astra:rocket_nose_cone',
-		  '16x #forge:insulation_t1'
-    )
-		.inputFluids(Fluid.of('gtceu:silicon', 576))
+			'16x #forge:insulation_t1'
+		)
+		.inputFluids(Fluid.of('gtceu:silicon', 144 * 16))
 		.itemOutputs('ad_astra:tier_1_rocket')
 		.duration(1200)
-		.EUt(480)
+		.EUt(GTValues.VA[GTValues.HV])
 
 	//#endregion
 
-	//#region Tier 2 rocket
-	event.recipes.gtceu.assembler('tfg:desh_engine')
-		.itemInputs(
-			'2x #forge:double_plates/titanium',
-			'2x #gtceu:circuits/iv',
-			'gtceu:ev_electric_pump',
-			'2x gtceu:advanced_power_thruster',
-			'#forge:rotors/titanium')
-		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 720))
-		.itemOutputs('ad_astra:desh_engine')
-		.duration(600)
-		.EUt(1920)
-
-	event.custom({
-		type: 'ad_astra:nasa_workbench',
-		ingredients: [
-			{ item: 'ad_astra:rocket_nose_cone' },
-			{ item: 'gtceu:stable_machine_casing' },
-			{ item: 'gtceu:stable_machine_casing' },
-			{ item: 'gtceu:ev_sensor' },
-			{ item: 'gtceu:ev_emitter' },
-			{ item: 'gtceu:titanium_crate' },
-			{ item: 'gtceu:ev_machine_hull' },
-			{ item: 'ad_astra:rocket_fin' },
-			{ item: 'gtceu:titanium_drum' },
-			{ item: 'gtceu:titanium_drum' },
-			{ item: 'ad_astra:rocket_fin' },
-			{ item: 'ad_astra:rocket_fin' },
-			{ item: 'ad_astra:desh_engine' },
-			{ item: 'ad_astra:rocket_fin' }
-		],
-		result: {
-			count: 1,
-			id: 'ad_astra:tier_2_rocket'
-		}
-	})
-	//#endregion
 	//#endregion
 
 
@@ -272,20 +235,6 @@ const registerAdAstraRecipes = (event) => {
 	//#endregion
 
 	//#region Machines
-
-	event.recipes.gtceu.assembler('tfg:nasa_workbench')
-		.itemInputs(
-			'gtceu:hv_machine_hull',
-			'3x gtceu:hv_robot_arm',
-			'3x #gtceu:circuits/hv',
-			'gtceu:hv_conveyor_module',
-			'gtceu:computer_monitor_cover',
-			'#forge:screwdriver_tips')
-		.inputFluids(Fluid.of('gtceu:polytetrafluoroethylene', 864))
-		.itemOutputs('ad_astra:nasa_workbench')
-		.duration(1200)
-		.EUt(480)
-
 	event.shaped('ad_astra:oxygen_distributor', [
 		'DBD',
 		'ACA',
@@ -370,7 +319,7 @@ const registerAdAstraRecipes = (event) => {
 		' A '
 	], {
 		A: '#forge:plates/polyphenylene_sulfide',
-		B: '#forge:rings/titanium',
+		B: '#forge:rings/stainless_steel',
 	}).id('tfg:ad_astra_wheel')
 
 	event.recipes.gtceu.assembler('tfg:tier_1_rover')
