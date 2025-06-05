@@ -145,7 +145,7 @@ function registerGreateRecyclingRecipes(event) {
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 8),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Steel, 8),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.RedSteel, 6),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BlueAlloy, 6),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 4),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 5))
 		.duration(GTMaterials.StainlessSteel.getMass() * (8+8+6+4+5))
@@ -157,7 +157,7 @@ function registerGreateRecyclingRecipes(event) {
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 8),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Steel, 8),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RedSteel, 6),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlueAlloy, 6),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 4))
 		.duration(GTMaterials.StainlessSteel.getMass() * (8+8+6+4))
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
@@ -234,9 +234,9 @@ function registerGreateRecyclingRecipes(event) {
 		.itemInputs('greate:stainless_steel_crushing_wheel')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Aluminium, 18),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.RedSteel, 8),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.BlueAlloy, 8),
 			ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.StainlessSteel, 1))
-		.duration(GTMaterials.RedSteel.getMass() * 26)
+		.duration(GTMaterials.BlueAlloy.getMass() * 26)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -244,9 +244,9 @@ function registerGreateRecyclingRecipes(event) {
 		.itemInputs('greate:stainless_steel_crushing_wheel')
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Aluminium, 18),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RedSteel, 8),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.BlueAlloy, 8),
 			ChemicalHelper.get(TagPrefix.nugget, GTMaterials.StainlessSteel, 1))
-		.duration(GTMaterials.RedSteel.getMass() * 26)
+		.duration(GTMaterials.BlueAlloy.getMass() * 26)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 
@@ -420,9 +420,9 @@ function registerGreateRecyclingRecipes(event) {
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.StainlessSteel, 10),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Electrum, 8),
-			ChemicalHelper.get(TagPrefix.dust, GTMaterials.RedSteel, 4),
+			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Diamond, 4),
 			ChemicalHelper.get(TagPrefix.dust, GTMaterials.Silver, 4))
-		.duration(GTMaterials.RedSteel.getMass() * 22)
+		.duration(GTMaterials.Diamond.getMass() * 22)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -431,9 +431,9 @@ function registerGreateRecyclingRecipes(event) {
 		.itemOutputs(
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.StainlessSteel, 10),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Electrum, 8),
-			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.RedSteel, 4),
+			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Diamond, 4),
 			ChemicalHelper.get(TagPrefix.ingot, GTMaterials.Silver, 4))
-		.duration(GTMaterials.RedSteel.getMass() * 22)
+		.duration(GTMaterials.Diamond.getMass() * 22)
 		.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 		.EUt(GTValues.VA[GTValues.LV])
 

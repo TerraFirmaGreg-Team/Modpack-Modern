@@ -119,6 +119,51 @@ const registerFirmaLifeRecipes = (event) => {
 		.duration(50)
 		.EUt(7)
 
+	//#region Wine Working
+	
+	event.recipes.gtceu.alloy_smelter('firmalife:empty_olivine_wine_bottle')
+		.itemInputs('tfc:olivine_glass_batch')
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('firmalife:empty_olivine_wine_bottle')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+		
+	event.recipes.gtceu.alloy_smelter('firmalife:empty_volcanic_wine_bottle')
+		.itemInputs('tfc:volcanic_glass_batch')
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('firmalife:empty_volcanic_wine_bottle')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+		
+	event.recipes.gtceu.alloy_smelter('firmalife:empty_hematitic_wine_bottle')
+		.itemInputs('tfc:hematitic_glass_batch')
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('firmalife:empty_hematitic_wine_bottle')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+		
+	event.recipes.gtceu.alloy_smelter('firmalife:wine_glass')
+		.itemInputs('tfc:silica_glass_batch')
+		.notConsumable('gtceu:cylinder_casting_mold')
+		.itemOutputs('2x firmalife:wine_glass')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.ULV])
+	
+	event.recipes.gtceu.assembler('firmalife:cork')
+		.itemInputs('firmalife:treated_lumber')
+		.inputFluids(Fluid.of('tfc:limewater',1000))
+		.itemOutputs('8x firmalife:cork')
+		.duration(300)
+		.EUt(GTValues.VA[GTValues.ULV])
+		
+	event.recipes.gtceu.assembler('firmalife:bottle_label')
+		.itemInputs('#forge:wax','minecraft:paper')
+		.itemOutputs('16x firmalife:bottle_label')
+		.duration(30)
+		.EUt(GTValues.VA[GTValues.ULV])
+	
+	//#endregion
+	
 	// TODO: Не работает потому что грегтех
 	// Доставание меда из сот
 	/*
@@ -399,12 +444,12 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, true)
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
 	})
 
 	//#endregion

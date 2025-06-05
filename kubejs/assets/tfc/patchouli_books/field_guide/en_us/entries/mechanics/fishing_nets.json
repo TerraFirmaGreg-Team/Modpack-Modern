@@ -2,7 +2,7 @@
 	"name": "Fishing Nets",
 	"icon": "tfg:fishing_net/brass",
 	"category": "tfc:mechanics",
-	"priority": true,
+	"read_by_default": true,
 	"pages": [
 		{
 			"type": "patchouli:spotlight",

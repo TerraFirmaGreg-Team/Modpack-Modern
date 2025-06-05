@@ -97,7 +97,9 @@ ServerEvents.tags('fluid', event => {
  * Событие регистрации тегов структур.
  */
 ServerEvents.tags('worldgen/placed_feature', event => {
-    registerFirmaLifePlacedFeatures(event)
+    // Remove default veins
+    event.removeAll('tfc:in_biome/veins')
+
     registerTFCPlacedFeatures(event)
     registerTFGPlacedFeatures(event)
 })
@@ -139,6 +141,7 @@ LootJS.modifiers((event) => {
     registerLootrLoots(event)
     registerPrimitiveCreatesLoots(event)
     registerTFCLoots(event)
+    registerTFGLoots(event)
 });
 
 /**

@@ -94,26 +94,26 @@ const registerTFCRecipes = (event) => {
 
 	// Дерево
 	global.TFC_WOOD_TYPES.forEach(wood => {
-		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, 16000, `64x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`)
+		generateGreenHouseRecipe(event, `8x tfc:wood/sapling/${wood}`, 16000, `64x tfc:wood/log/${wood}`, `tfg:greenhouse/${wood}`, true)
 	})
 
 	global.AFC_SAPLINGS.forEach(x => {
-		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, 16000, `64x ${x.log}`, `tfg:greenhouse/${x.sapling}`)
+		generateGreenHouseRecipe(event, `8x afc:wood/sapling/${x.sapling}`, 16000, `64x ${x.log}`, `tfg:greenhouse/${x.sapling}`, true)
 	})
 
 	// Семена фруктов
 	global.TFC_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, true)
 	})
 
 	// Семена овощей
 	global.TFC_GREENHOUSE_VEGETABLE_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
 	})
 
 	// Семена ягод
 	global.TFC_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
 	})
 
 	// Растения
@@ -121,7 +121,7 @@ const registerTFCRecipes = (event) => {
 		const itemId = element.id;
 		const recipeId = `greenhouse_${itemId.replace(':', '_')}`;
 
-		generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId);
+		generateGreenHouseRecipe(event, itemId, 8000, `8x ${itemId}`, recipeId, false);
 	});
 
 	//#endregion
@@ -190,8 +190,8 @@ const registerTFCRecipes = (event) => {
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	event.recipes.gtceu.alloy_smelter('tfg:oops_i_smelted_all_my_kaolin')
-		.itemInputs('5x minecraft:clay_ball', 'tfc:powder/kaolinite')
-		.itemOutputs('5x tfc:kaolin_clay')
+		.itemInputs('minecraft:clay_ball', 'tfc:powder/kaolinite')
+		.itemOutputs('tfc:kaolin_clay')
 		.duration(600)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -333,4 +333,5 @@ const registerTFCRecipes = (event) => {
 		'#forge:tools/saws'
 	]).id('tfc:shapeless/jar_lid')
 
+	event.replaceInput({ mod: 'tfc' }, 'minecraft:sugar', '#tfg:sugars')
 }

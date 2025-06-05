@@ -219,7 +219,7 @@ function registerGreateRecipes(event) {
 		'FGF',
 		'AAA'
 	], {
-		A: '#forge:double_plates/red_steel',
+		A: '#forge:double_plates/blue_alloy',
 		B: '#gtceu:circuits/hv',
 		C: '#forge:gears/aluminium',
 		F: 'gtceu:diamond_grinding_head',
@@ -273,7 +273,7 @@ function registerGreateRecipes(event) {
 		'AABAA',
 		' AAA '
 	], {
-		A: '#forge:plates/red_steel',
+		A: '#forge:plates/blue_alloy',
 		B: '#forge:storage_blocks/aluminium',
 		C: 'greate:stainless_steel_shaft',
 	}).id('greate:mechanical_crafting/stainless_steel_crushing_wheel')
@@ -402,7 +402,7 @@ function registerGreateRecipes(event) {
 	//	'FE '
 	// ], {
 	//	A: '#gtceu:circuits/hv',
-	//	B: 'gtceu:red_steel_buzz_saw_blade',
+	//	B: 'gtceu:diamond_buzz_saw_blade',
 	//	C: 'gtceu:hv_electric_motor',
 	//	D: 'gtceu:hv_machine_hull',
 	//	E: 'greate:stainless_steel_shaft',

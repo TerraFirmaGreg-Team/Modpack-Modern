@@ -33,6 +33,9 @@ const registerTFGItemTags = (event) => {
 	
 	event.add('minecraft:piglin_loved', 'tfg:piglin_disguise')
 
+	event.add('forge:tools/trowels', 'tfg:trowel')
+	event.add('tfc:usable_on_tool_rack', 'tfg:trowel')
+
 	// #region Paper from wood
 
 	event.add('tfg:hardwood_strips', 'tfg:hardwood_strip')
@@ -53,12 +56,14 @@ const registerTFGItemTags = (event) => {
 	// #endregion
 
 	//#region Cloth & String
-    event.add('forge:cloth', 'tfg:phantom_silk')
-    event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
-    event.add('tfc:sewing_light_cloth', 'tfg:phantom_silk')
-    event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
-    event.add('forge:string', 'tfg:phantom_thread')
-    event.add('forge:string', 'tfg:polycaprolactam_string')
+	event.add('forge:cloth', 'tfg:phantom_silk')
+	event.add('forge:cloth', 'tfg:polycaprolactam_fabric')
+	event.add('tfc:high_quality_cloth', 'tfg:phantom_silk')
+	event.add('tfc:high_quality_cloth', 'tfg:polycaprolactam_fabric')
+	event.add('tfc:sewing_light_cloth', 'tfg:phantom_silk')
+	event.add('tfc:sewing_dark_cloth', 'tfg:polycaprolactam_fabric')
+	event.add('forge:string', 'tfg:phantom_thread')
+	event.add('forge:string', 'tfg:polycaprolactam_string')
 	//#endregion
 
 	// #region Medicines
@@ -134,9 +139,7 @@ const registerTFGItemTags = (event) => {
 
 	// Universal Circuits
 
-		global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => {
-			event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`);
-			})
+	global.UNIVERSAL_CIRCUIT_TIERS.forEach(tier => { event.add(`gtceu:circuits/${tier}`, `tfg:${tier}_universal_circuit`); })
 
 	// #endregion
 
@@ -289,26 +292,27 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_pot', 'tfg:latex')
 	event.add('tfc:usable_in_barrel', 'tfg:latex')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:latex')
-    event.add('tfc:usable_in_red_steel_bucket', 'tfg:latex')
-    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:latex')
+	event.add('tfc:usable_in_red_steel_bucket', 'tfg:latex')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:latex')
 
 	event.add('tfc:usable_in_pot', 'tfg:vulcanized_latex')
 	event.add('tfc:usable_in_barrel', 'tfg:vulcanized_latex')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:vulcanized_latex')
-    event.add('tfc:usable_in_red_steel_bucket', 'tfg:vulcanized_latex')
-    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:vulcanized_latex')
+	event.add('tfc:usable_in_red_steel_bucket', 'tfg:vulcanized_latex')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:vulcanized_latex')
 
 	event.add('tfc:usable_in_pot', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_barrel', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
-    event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
-    event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
+	event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
+	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
 }
 
 
 const registerTFGBiomeTags = (event) => {
 
-	//#region TFG Structure Biomes
+	// #region TFG Structure Biomes
+
 	event.add('tfg:has_structure/plains_temperate_0', 'tfc:plains')
 	event.add('tfg:has_structure/plains_temperate_0', 'tfc:highlands')
 
@@ -319,7 +323,8 @@ const registerTFGBiomeTags = (event) => {
 
 	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_oceanic_mountains')
 	event.add('tfg:has_structure/ocean_moai_0', 'tfc:volcanic_mountains')
-	//#endregion
+
+	// #endregion
 
 	// #region Nether biomes
 
@@ -362,60 +367,15 @@ const registerTFGBiomeTags = (event) => {
 
 const registerTFGPlacedFeatures = (event) => {
 
-	// #region Nether ores
+	registerTFGOreVeinFeatures(event);
+
+	// #region Nether
 
 	event.add('tfg:nether_veins', 'beneath:vein/crackrack_pipe')
 
-	// Lower only
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_naquadah')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sylvite')
-
-	// Full height
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnierite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_gold')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_graphite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_hematite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_limonite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_magnetite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_molybdenum')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_pitchblende')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_quartz')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sapphire')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_scheelite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sheldonite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_topaz')
-
-	// Upper only
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_anthracite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_apatite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_basaltic_sands')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_bauxite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_beryllium')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_cassiterite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_copper')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_garnet_tin')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_lapis')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_lubricant')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_manganese')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_monazite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_mica')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_olivine')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_redstone')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_saltpeter')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_silver')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sphalerite')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_sulfur')
-	event.add('tfg:nether_veins', 'tfg:nether/vein/nether_tetrahedrite')
-
-	// #endregion
-
-
-	// #region Nether decorations
-
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_open')
-	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
 	event.add('tfg:nether_underground_decoration', 'minecraft:spring_closed')
+	event.add('tfg:nether_underground_decoration', 'tfg:nether/terrain/magma_blob')
 
 	// #endregion
 }

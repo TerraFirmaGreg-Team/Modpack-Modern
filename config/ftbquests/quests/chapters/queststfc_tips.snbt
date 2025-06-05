@@ -1236,7 +1236,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.refrigerator.title}"
-			x: 8.0d
+			x: 9.0d
 			y: -17.0d
 		}
 		{
@@ -1606,7 +1606,7 @@
 				type: "checkmark"
 			}]
 			title: "{quests.tfg_tips.passive_preservation.title}"
-			x: 6.0d
+			x: 6.5d
 			y: -15.5d
 		}
 		{
@@ -1627,7 +1627,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_milk.title}"
-			x: 4.0d
+			x: 4.5d
 			y: -8.5d
 		}
 		{
@@ -1648,7 +1648,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_meat.title}"
-			x: 5.0d
+			x: 5.5d
 			y: -8.5d
 		}
 		{
@@ -1669,7 +1669,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_fruit.title}"
-			x: 7.0d
+			x: 7.5d
 			y: -8.5d
 		}
 		{
@@ -1690,7 +1690,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_grain.title}"
-			x: 8.0d
+			x: 8.5d
 			y: -8.5d
 		}
 		{
@@ -1711,7 +1711,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.get_veggie.title}"
-			x: 6.0d
+			x: 6.5d
 			y: -8.5d
 		}
 		{
@@ -1746,7 +1746,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.process_grain.title}"
-			x: 8.0d
+			x: 8.5d
 			y: -12.5d
 		}
 		{
@@ -1809,7 +1809,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.brine_something.title}"
-			x: 6.0d
+			x: 6.5d
 			y: -9.5d
 		}
 		{
@@ -1873,7 +1873,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.pickle_something.title}"
-			x: 6.0d
+			x: 6.5d
 			y: -12.5d
 		}
 		{
@@ -1918,7 +1918,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.dry_fruit.title}"
-			x: 7.0d
+			x: 7.5d
 			y: -11.0d
 		}
 		{
@@ -1960,7 +1960,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.salt_meat.title}"
-			x: 5.0d
+			x: 5.5d
 			y: -10.5d
 		}
 		{
@@ -2009,7 +2009,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.smoke_meat.title}"
-			x: 5.0d
+			x: 5.5d
 			y: -11.5d
 		}
 		{
@@ -2049,7 +2049,7 @@
 				}
 			]
 			title: "{quests.tfg_tips.cook_meat.title}"
-			x: 5.0d
+			x: 5.5d
 			y: -13.5d
 		}
 		{
@@ -3265,8 +3265,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.cane.title}"
-			x: -1.5d
-			y: 5.0d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["150B7C5CD152E1BA"]
@@ -3286,8 +3286,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.fishing_net.title}"
-			x: -1.5d
-			y: 6.0d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5C01BDDA66249D7B"]
@@ -3626,7 +3626,7 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.vessel_preservation.title}"
-			x: 6.0d
+			x: 6.5d
 			y: -16.5d
 		}
 		{
@@ -5204,6 +5204,104 @@
 			}]
 			x: 9.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["150B7C5CD152E1BA"]
+			description: ["{quests.tfg_tips.trowel.desc}"]
+			id: "26DFC32AD5DED4E9"
+			subtitle: "{quests.tfg_tips.trowel.subtitle}"
+			tasks: [{
+				id: "694BF83F489646D6"
+				item: {
+					Count: 1
+					id: "tfg:trowel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quests.tfg_tips.trowel.title}"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1FC019B45383695E"]
+			description: ["{quests.tfg_tips.bacon.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -2L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "firmalife:food/bacon"
+			}
+			id: "27FD6D86233B3C8D"
+			shape: "heart"
+			subtitle: "{quests.tfg_tips.bacon.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -9223372036854775808L
+								traits: [
+									"tfc:brined"
+									"firmalife:smoked"
+								]
+							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:food/pork"
+					}
+					id: "450B578B4B128D69"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "custom(HasPreservation/firmaciv:smoked)item(tfc:food/pork)"
+						}
+					}
+					title: "{quests.tfg_tips.bacon.task}"
+					type: "item"
+				}
+				{
+					id: "7B835DA2FEF500F1"
+					item: "tfc:powder/salt"
+					type: "item"
+				}
+				{
+					id: "267439967946EA29"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:food": {
+								creationDate: -2L
+								traits: [ ]
+							}
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "firmalife:food/bacon"
+					}
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.bacon.title}"
+			x: 4.75d
+			y: -12.5d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

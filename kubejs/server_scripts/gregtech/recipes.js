@@ -1017,6 +1017,24 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
+	//#region Stick Packing
+	
+		event.recipes.gtceu.packer('tfg:stick_bunch')
+			.itemInputs('9x #forge:rods/wooden')
+			.circuit(5)
+			.itemOutputs('tfc:stick_bunch')
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])
+			
+		event.recipes.gtceu.packer('tfg:stick_bundle')
+			.itemInputs('18x #forge:rods/wooden')
+			.circuit(8)
+			.itemOutputs('tfc:stick_bundle')
+			.duration(50)
+			.EUt(GTValues.VA[GTValues.ULV])	
+			
+	//#endregion
+
 	//#region Changing tiers of decomposition recipes
 
 	event.recipes.gtceu.electrolyzer('gtceu:decomposition_electrolyzing_clay')
@@ -1078,16 +1096,6 @@ const registerGTCEURecipes = (event) => {
 
 	//#endregion
 
-	//#region Hopper
-
-	event.recipes.gtceu.assembler('gtceu:assembler/hopper_wrought_iron')
-		.itemInputs('#forge:chests', '5x #forge:plates/wrought_iron')
-		.itemOutputs('minecraft:hopper')
-		.circuit(8)
-		.duration(200)
-		.EUt(2)
-
-	//#endregion
 
 	//#region Credits
 
@@ -1124,6 +1132,13 @@ const registerGTCEURecipes = (event) => {
 		.EUt(2)
 
 	//#endregion
+
+	event.recipes.gtceu.laser_engraver('tfg:diamond_gear')
+		.itemInputs('4x #forge:plates/diamond')
+		.itemOutputs('#forge:gears/diamond')
+		.notConsumable('gtceu:glass_lens')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.MV])
 
 	// TODO: Greate again...
 	event.shapeless('gtceu:programmed_circuit', ['minecraft:stick', '#forge:tools/wrenches'])

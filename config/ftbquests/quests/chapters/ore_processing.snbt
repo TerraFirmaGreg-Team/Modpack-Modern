@@ -19,20 +19,23 @@
 	quests: [
 		{
 			description: ["{quests.ore_proc.native_ore.desc}"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ore/rich_native_copper"
+			}
 			id: "5D09BEE61210DF02"
 			size: 1.5d
 			subtitle: "{quests.ore_proc.native_ore.subtitle}"
 			tasks: [{
-				id: "047DA2872D107BA0"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item_tag(tfc:ore_pieces))"
-					}
-				}
+				id: "1F5D8018334CFB8F"
 				title: "{quests.ore_proc.native_ore.task}"
-				type: "item"
+				type: "checkmark"
 			}]
 			title: "{quests.ore_proc.native_ore.title}"
 			x: 0.5d
@@ -246,6 +249,20 @@
 					item: "gtceu:crushed_cooperite_ore"
 					type: "item"
 				}
+				{
+					id: "074FD2C736818A95"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "gtceu:crushed_gold_ore"
+					}
+					type: "item"
+				}
 			]
 			title: "{quests.ore_proc.mercury.title}"
 			x: 3.5d
@@ -271,20 +288,6 @@
 				{
 					id: "28A082F6FF520B21"
 					item: "gtceu:crushed_cobalt_ore"
-					type: "item"
-				}
-				{
-					id: "46B6DEFD1A7BEA60"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "gtceu:crushed_tetrahedrite_ore"
-					}
 					type: "item"
 				}
 			]

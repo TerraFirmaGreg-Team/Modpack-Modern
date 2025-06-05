@@ -2,6 +2,42 @@
 ## [Unreleased]
 ### Changes
 
+## [0.9.10] - 05.06.2025
+### New features
+- Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
+- Started work on Brazilian Portuguese translations @gifpxto
+- Added Aqueous Accumulator machine, basically a rock breaker but for fluids (#1030) @Pyritie
+### Changes
+- Create Steam Engine now also accepts river water and GregTech steam as valid inputs (#947) @Zeropol
+- Added Packer recipe for stick bundling (#1101) @JeanRdSz
+- Steam grinder and oven are now cheaper and use more steam-age appropriate materials (#1091) @Pyritie
+- Changed HS Greate machines to use blue alloy instead of red steel (#1091) @Pyritie
+- Changed HV Cutter to use diamond buzzsaw instead of red steel (#1091) @Pyritie
+- Added wine-related recipes to GregTech machines (#1111) @JeanRdS
+- Added optional quest for bacon because its JEI recipe isn't clear (#1122) @SpicyNoodle5
+- Anthracite now also superheats blaze burners @Pyritie
+- Changed LV chem reactor quest to work with any container of rubber instead of just a rubber bucket (#1116) @ofoxsmith
+- Added perfect overclock to the electric greenhouse so it scales better with the pyro oven @Pyritie
+- Electric greenhouse now accepts logs and leaf blocks inside it, so you can build a little tree if you want @Pyritie
+- Increased durability of the blue steel diving suit to match blue steel armor @Pyritie
+- Phantom Silk and Polycaprolactam Fabric now count as High Quality Fabric @Pyritie
+- Added recipes to turn dirt into grass @Pyritie
+- Changed durability of the diving equipment to match the TFC armor, made forging bonuses carry across when crafting @Pyritie
+- Added/changed more recipes for metal bars, doors, and trapdoors @Pyritie
+### Bug fixes
+- Fixed issue where "melts into" tooltips and certain timers on Jade were missing (#1102) @Xikaro
+- Improved block ordering logic with AoE mining tools to reduce incorrect cave-ins @voidstar240
+- Fixed weird assembler piston recipe (#1092) @Redeix
+- Fixed texture clipping on piglin disguise, added loot table so you can pick it back up (#1106) @Redeix
+- Fixed assembler recipe conflict with Hoppers and Item Vaults (#1098) @TomPlop
+- Fixed assembler recipe conflict with Create Pipes and Fluid Tanks (#1103) @Pyritie
+- Fixed some assembly line recipes that had incorrect stack sizes (#1108) @Pyritie
+- Fixed being able to dupe materials by crafting tools and then recycling them (#1100) @Pyritie
+- Fixed kaolin clay duping (#1099) @SpicyNoodle5
+- Fixed TFC sugar recipes so they can now use any sugar (#1099) @SpicyNoodle5
+- Add the create toolbox to the list of unsortable inventories, fixing a duping exploit (#1120) @esotericist
+- Fixed assembler recipe for item silos @Pyritie
+
 ## [0.9.9] - 30.05.2025
 ### Changes
 - Added and changed many mods for optimization, please report any problems on github. @Xikaro

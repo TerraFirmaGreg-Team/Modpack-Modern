@@ -597,18 +597,19 @@ const registerMinecraftRecipes = (event) => {
 	event.recipes.gtceu.assembler('hopper_wrought_iron')
 		.itemInputs('#forge:chests', '5x #forge:plates/wrought_iron')
 		.itemOutputs('minecraft:hopper')
+		.circuit(8)
 		.duration(700)
 		.EUt(2)
 
 	//#endregion
 
-	//#region Выход: Поршень
+	//#region Выход: Поршень (Piston)
 
 	event.recipes.gtceu.assembler('piston')
-		.itemInputs('#forge:plates/wrought_iron', '3x tfc:wood/planks/acacia', '4x #tfc:rock/raw')
-		.itemOutputs('4x minecraft:piston')
+		.itemInputs(ChemicalHelper.get(TagPrefix.rod, GTMaterials.WroughtIron, 1),ChemicalHelper.get(TagPrefix.gearSmall, GTMaterials.Brass, 1) , '3x #tfc:lumber', '4x #forge:cobblestone')
+		.itemOutputs('2x minecraft:piston')
 		.duration(100)
-		.EUt(16)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 
@@ -849,15 +850,16 @@ const registerMinecraftRecipes = (event) => {
 
 	//#region Netherite leggings (for the lavaproof diving set)
 
-	event.shaped('minecraft:netherite_leggings', [
-		'ABA',
-		'CDC'
-	], {
-		A: '#forge:screws/blue_steel',
-		B: 'tfc:metal/greaves/blue_steel',
-		C: '#forge:plates/blue_steel',
-		D: 'beneath:cursed_hide'
-	}).id('tfg:minecraft/shaped/netherite_leggings')
+	event.recipes.tfc.advanced_shaped_crafting(
+		TFC.itemStackProvider.of('minecraft:netherite_leggings').copyForgingBonus(), [
+			'ABA',
+			'CDC'
+		], {
+			A: '#forge:screws/blue_steel',
+			B: 'tfc:metal/greaves/blue_steel',
+			C: '#forge:plates/blue_steel',
+			D: 'beneath:cursed_hide'
+		}, 0, 1).id('tfg:minecraft/shaped/netherite_leggings')
 
 	//#endregion
 

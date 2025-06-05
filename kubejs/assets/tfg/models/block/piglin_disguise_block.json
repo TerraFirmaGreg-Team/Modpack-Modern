@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "tfg:block/piglin_disguise",
-		"particle": "minecraft:block/soul_sand"
+		"particle": "block/soul_sand"
 	},
 	"elements": [
 		{
@@ -193,8 +193,8 @@
 			"translation": [0, 3.5, 0]
 		},
 		"head": {
-			"translation": [0, 7, 0],
-			"scale": [1.75, 1.75, 2.25]
+			"translation": [0, 8.5, 0],
+			"scale": [1.75, 2, 2.25]
 		},
 		"fixed": {
 			"translation": [0, 4, 0]

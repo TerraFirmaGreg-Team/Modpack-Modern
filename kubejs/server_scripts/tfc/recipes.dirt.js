@@ -2,8 +2,6 @@
 
 function registerTFCDirtRecipes(event) {
 
-	//#region Земля
-
 	// Loam + Silt -> Silty Loam (Миксер)
 	event.recipes.gtceu.mixer('silty_loam_dirt')
 		.itemInputs('tfc:dirt/loam', 'tfc:dirt/silt')
@@ -26,18 +24,11 @@ function registerTFCDirtRecipes(event) {
 			.itemOutputs(`tfc:rooted_dirt/${mud}`)
 			.duration(200)
 			.EUt(16)
-	})
-
-	global.TFC_MUD_TYPES.forEach(mud => {
+	
 		event.smelting(`tfc:dirt/${mud}`, `tfc:mud/${mud}`)
 			.id(`tfg:smelting/${mud}_mud_to_grass`)
-	})
+	
 
-	//#endregion
-
-	//#region Грязь
-
-	global.TFC_MUD_TYPES.forEach(mud => {
 		// Dirt -> Mud
 		event.recipes.gtceu.mixer(`${mud}_grass_to_mud`)
 			.itemInputs(`tfc:dirt/${mud}`)
@@ -46,12 +37,8 @@ function registerTFCDirtRecipes(event) {
 			.itemOutputs(`tfc:mud/${mud}`)
 			.duration(200)
 			.EUt(16)
-	})
 
-	//#endregion
-
-	//AE Transform Mud
-	global.TFC_MUD_TYPES.forEach(mud => {
+		//AE Transform Mud
 		event.custom({
 			type: "ae2:transform",
 			circumstance: {
@@ -62,12 +49,8 @@ function registerTFCDirtRecipes(event) {
 				{item: `tfc:dirt/${mud}`}],
 			result: {item: `tfc:mud/${mud}`}
 		}).id(`tfg:ae_transform/${mud}_to_mud`)
-	})
 
-
-	//#region Грязь кирпичи
-
-	global.TFC_MUD_TYPES.forEach(mud => {
+		// Mud bricks
 
 		// Влажный кирпич -> Кирпич
 		event.smelting(`tfc:mud_brick/${mud}`, `tfc:drying_bricks/${mud}`)
@@ -104,9 +87,9 @@ function registerTFCDirtRecipes(event) {
 			A: `tfc:mud_brick/${mud}`
 		}).id(`tfc:crafting/soil/${mud}_mud_bricks_slab`)
 
-		event.shaped(`2x tfc:mud_bricks/${mud}_wall`, [
-			'AAA',
-			'AAA'
+		event.shaped(`tfc:mud_bricks/${mud}_wall`, [
+			'A',
+			'A'
 		], {
 			A: `tfc:mud_brick/${mud}`
 		}).id(`tfc:crafting/soil/${mud}_mud_bricks_wall`)
@@ -128,9 +111,16 @@ function registerTFCDirtRecipes(event) {
 
 		event.stonecutting(`tfc:mud_bricks/${mud}_wall`, `tfc:mud_bricks/${mud}`)
 			.id(`tfc:stonecutting/soil/${mud}_mud_bricks_wall`)
+
+		// Grass blocks
+
+		event.shapeless(`tfc:grass/${mud}`, [`tfc:dirt/${mud}`, 'minecraft:bone_meal', '#forge:seeds'])
+			.id(`tfg:shapeless/${mud}_grass_bonemeal`)
+
+		event.shapeless(`tfc:grass/${mud}`, [`tfc:dirt/${mud}`, 'gtceu:fertilizer', '#forge:seeds'])
+			.id(`tfg:shapeless/${mud}_grass_fertilizer`)
 	})
 
-	//#endregion
 
 	// #region Wattle and daub
 	// TODO: Workaround for not being able to stain wattle and daub with normal dyes
