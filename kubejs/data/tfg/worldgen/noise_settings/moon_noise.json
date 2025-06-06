@@ -65,7 +65,7 @@
 				"from_y": 0,
 				"to_y": 10,
 				"from_value": 1,
-				"to_value": 0
+				"to_value": -1
 			},
 			"argument2": {
 				"type": "minecraft:min",

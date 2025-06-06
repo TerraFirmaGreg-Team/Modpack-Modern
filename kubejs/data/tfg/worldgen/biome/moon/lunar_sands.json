@@ -1,9 +1,8 @@
 {
 	"carvers": {
 		"air": [
-			"minecraft:cave",
-			"minecraft:cave_extra_underground",
-			"minecraft:canyon"
+			"tfg:moon_cave",
+			"tfg:moon_canyon"
 		]
 	},
 	"downfall": 0.0,
