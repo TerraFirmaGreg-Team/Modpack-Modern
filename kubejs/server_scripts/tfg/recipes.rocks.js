@@ -92,7 +92,11 @@ function registerTFGRockRecipes(event) {
 		{ raw: 'ad_astra:conglomerate', polished: 'ad_astra:polished_conglomerate' },
 		{ raw: 'ad_astra:permafrost', polished: 'ad_astra:polished_permafrost' },
 		{ raw: 'ad_astra:permafrost_bricks', polished: 'ad_astra:chiseled_permafrost_bricks' },
-		{ raw: 'ad_astra:chiseled_permafrost_bricks', polished: 'ad_astra:permafrost_tiles' }
+		{ raw: 'ad_astra:chiseled_permafrost_bricks', polished: 'ad_astra:permafrost_tiles' },
+		{ raw: 'ae2:sky_stone_block', polished: 'ae2:smooth_sky_stone_block' },
+		{ raw: 'ae2:smooth_sky_stone_block', polished: 'ae2:sky_stone_brick' },
+		{ raw: 'ae2:sky_stone_brick', polished: 'ae2:sky_stone_small_brick' },
+		{ raw: 'gtceu:certus_quartz_block', polished: 'ae2:cut_quartz_block' },
 	]
 	
 	RAW_TO_POLISHED.forEach(x => {
@@ -458,6 +462,46 @@ function registerTFGRockRecipes(event) {
 			dust: 'gtceu:ice_dust',
 			stonecutting: true
 		},
+		{
+			raw: 'ae2:sky_stone_block',
+			stair: 'ae2:sky_stone_stairs',
+			slab: 'ae2:sky_stone_slab',
+			wall: 'ae2:sky_stone_wall',
+			dust: 'ae2:sky_dust',
+			stonecutting: true
+		},
+		{
+			raw: 'ae2:smooth_sky_stone_block',
+			stair: 'ae2:smooth_sky_stone_stairs',
+			slab: 'ae2:smooth_sky_stone_slab',
+			wall: 'ae2:smooth_sky_stone_wall',
+			dust: 'ae2:sky_dust',
+			stonecutting: true
+		},
+		{
+			raw: 'ae2:sky_stone_brick',
+			stair: 'ae2:sky_stone_brick_stairs',
+			slab: 'ae2:sky_stone_brick_slab',
+			wall: 'ae2:sky_stone_brick_wall',
+			dust: 'ae2:sky_dust',
+			stonecutting: true
+		},
+		{
+			raw: 'ae2:sky_stone_small_brick',
+			stair: 'ae2:sky_stone_small_brick_stairs',
+			slab: 'ae2:sky_stone_small_brick_slab',
+			wall: 'ae2:sky_stone_small_brick_wall',
+			dust: 'ae2:sky_dust',
+			stonecutting: true
+		},
+		{
+			raw: 'ae2:fluix_block',
+			stair: 'ae2:fluix_stairs',
+			slab: 'ae2:fluix_slab',
+			wall: 'ae2:fluix_wall',
+			dust: 'ae2:fluix_dust',
+			stonecutting: true
+		}
 		// #endregion
 	]
 	
@@ -499,7 +543,7 @@ function registerTFGRockRecipes(event) {
 			}
 		}
 		if ("wall" in x) {
-			event.recipes.tfc.chisel(x.slab, x.raw, 'smooth')
+			event.recipes.tfc.chisel(x.wall, x.raw, 'smooth')
 			
 			if (x.stonecutting) {
 				event.stonecutting(x.wall, x.raw).id(`${x.raw}_to_${x.wall}`.replace(/:/g, '_'))
@@ -546,11 +590,13 @@ function registerTFGRockRecipes(event) {
 		{ block: 'minecraft:deepslate', dust: 'gtceu:deepslate_dust' },
 		{ block: 'minecraft:dripstone_block', dust: 'tfg:dripstone_dust' },
 		{ block: 'ad_astra:moon_stone', dust: 'tfg:moon_stone_dust' },
+		{ block: 'ad_astra:moon_deepslate', dust: 'tfg:moon_deepslate_dust' },
 		{ block: 'ad_astra:mars_stone', dust: 'tfg:mars_stone_dust' },
 		{ block: 'ad_astra:venus_stone', dust: 'tfg:venus_stone_dust' },
 		{ block: 'ad_astra:mercury_stone', dust: 'tfg:mercury_stone_dust' },
 		{ block: 'ad_astra:glacio_stone', dust: 'tfg:glacio_stone_dust' },
 		{ block: 'ad_astra:permafrost', dust: 'gtceu:ice_dust' },
+		{ block: 'ae2:sky_stone', dust: 'ae2:sky_dust' }
 	]
 
 	MACERATOR.forEach(x => {
@@ -643,18 +689,18 @@ function registerTFGRockRecipes(event) {
 	event.remove({id: 'greate:splashing/obsidian'})
 
 	//magma block + stone group
-	const magma_blocks = [
-		{magma: 'minecraft:magma_block', rock: 'minecraft:blackstone'},
-		{magma: 'tfc:rock/magma/granite', rock: 'tfc:rock/raw/granite'},
-		{magma: 'tfc:rock/magma/diorite', rock: 'tfc:rock/raw/diorite'},
-		{magma: 'tfc:rock/magma/gabbro', rock: 'tfc:rock/raw/gabbro'},
-		{magma: 'tfc:rock/magma/rhyolite', rock: 'tfc:rock/raw/rhyolite'},
-		{magma: 'tfc:rock/magma/basalt', rock: 'tfc:rock/raw/basalt'},
-		{magma: 'tfc:rock/magma/andesite', rock: 'tfc:rock/raw/andesite'},
-		{magma: 'tfc:rock/magma/dacite', rock: 'tfc:rock/raw/dacite'}
+	const MAGMA_BLOCKS = [
+		{ magma: 'minecraft:magma_block', rock: 'minecraft:blackstone' },
+		{ magma: 'tfc:rock/magma/granite', rock: 'tfc:rock/raw/granite' },
+		{ magma: 'tfc:rock/magma/diorite', rock: 'tfc:rock/raw/diorite' },
+		{ magma: 'tfc:rock/magma/gabbro', rock: 'tfc:rock/raw/gabbro' },
+		{ magma: 'tfc:rock/magma/rhyolite', rock: 'tfc:rock/raw/rhyolite' },
+		{ magma: 'tfc:rock/magma/basalt', rock: 'tfc:rock/raw/basalt' },
+		{ magma: 'tfc:rock/magma/andesite', rock: 'tfc:rock/raw/andesite' },
+		{ magma: 'tfc:rock/magma/dacite', rock: 'tfc:rock/raw/dacite' }
 	];
 
-	magma_blocks.forEach(block => {
+	MAGMA_BLOCKS.forEach(block => {
 
 		event.recipes.gtceu.fluid_solidifier(`tfg:gtceu/fluid_solidifier/${block.magma}`.replace(/:/g, '/'))
 			.itemInputs(`1x ${block.rock}`)

@@ -34,12 +34,10 @@ global.AE2_DISABLED_ITEMS = [
     'ae2:sky_stone_chest',
     'ae2:smooth_sky_stone_chest',
     'ae2:sky_stone_tank',
-    'gtceu:raw_certus_quartz_block',
     
     // Другое
     'ae2:meteorite_compass',
     'ae2:silicon',
-    'ae2:sky_dust',
     'ae2:creative_energy_cell',
     'ae2:tiny_tnt',
     'ae2:crystal_resonance_generator'
