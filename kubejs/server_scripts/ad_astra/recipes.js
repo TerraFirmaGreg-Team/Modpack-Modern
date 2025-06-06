@@ -258,13 +258,15 @@ const registerAdAstraRecipes = (event) => {
 	}).id('tfg:gravity_normalizer')
 
 	event.shaped('ad_astra:oxygen_sensor', [
-		'AAA',
-		'ABA',
-		'ACA'
+		'AEA',
+		'BDC',
+		'AAA'
 	], {
 		A: '#forge:plates/red_alloy',
 		B: 'gtceu:activity_detector_cover',
 		C: 'gtceu:fluid_detector_cover',
+		D: 'gtceu:mv_machine_hull',
+		E: '#gtceu:circuits/mv'
 	}).id('tfg:oxygen_sensor')
 
 	event.shaped('ad_astra:solar_panel', [
@@ -278,21 +280,6 @@ const registerAdAstraRecipes = (event) => {
 		E: '#gtceu:circuits/mv',
 		F: 'gtceu:mv_machine_hull'
 	}).id('tfg:solar_panel')
-
-	//#endregion
-
-	//#region TI-69 (ручной детектор кислорода хз)
-
-	event.shaped('ad_astra:ti_69', [
-		'DBC',
-		'AE '
-	], {
-		A: '#forge:tools/screwdrivers',
-		B: '#forge:plates/steel',
-		C: 'gtceu:lv_sensor',
-		D: 'gtceu:computer_monitor_cover',
-		E: '#gtceu:batteries/lv'
-	}).id('tfg:ti_69')
 
 	//#endregion
 
@@ -341,7 +328,7 @@ const registerAdAstraRecipes = (event) => {
 	//#region Стальной FE кабель т1
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-		.itemInputs('4x #forge:single_wires/manganese_phosphide', '#forge:plates/steel')
+		.itemInputs('4x #forge:double_wires/manganese_phosphide', '#forge:plates/steel')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs('4x ad_astra:steel_cable')
 		.duration(60)
@@ -352,7 +339,7 @@ const registerAdAstraRecipes = (event) => {
 	//#region FE кабель т2
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-		.itemInputs('4x #forge:single_wires/magnesium_diboride', '#forge:plates/desh')
+		.itemInputs('4x #forge:double_wires/magnesium_diboride', '#forge:plates/desh')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
 		.itemOutputs('4x ad_astra:desh_cable')
 		.duration(60)
@@ -467,22 +454,6 @@ const registerAdAstraRecipes = (event) => {
 		B: '#tfg:metal_bars'
 	}).id('tfg:shaped/ad_astra_vent')
 
-	event.shaped('ad_astra:airlock', [
-		'AB',
-		'CD',
-	], {
-		A: '#forge:tools/wrenches',
-		B: 'gtceu:activity_detector_cover',
-		C: 'gtceu:fluid_detector_cover',
-		D: 'gtceu:filter_casing'
-	}).id('tfg:shaped/airlock')
-
-	event.recipes.gtceu.assembler('ad_astra:airlock')
-		.itemInputs('gtceu:filter_casing', 'gtceu:fluid_detector_cover', 'gtceu:activity_detector_cover')
-		.itemOutputs('ad_astra:airlock')
-		.duration(100)
-		.EUt(GTValues.VA[GTValues.LV])
-
 	//#endregion
 
 	//#region Decoration blocks
@@ -529,25 +500,66 @@ const registerAdAstraRecipes = (event) => {
 			.itemOutputs(`16x ad_astra:${x.type}_plating`)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
-			.circuit(17)
+			.circuit(1)
 
 		event.recipes.gtceu.chemical_bath(`tfg:ad_astra_glowing_${x.type}_pillar`)
 			.itemInputs(`ad_astra:${x.type}_pillar`)
-			.inputFluids(Fluid.of('gtceu:glowstone', 72))
+			.inputFluids(Fluid.of('gtceu:glowstone', 144))
 			.itemOutputs(`ad_astra:glowing_${x.type}_pillar`)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
 
-		// TODO: tags for these
-		event.stonecutting(`ad_astra:${x.type}_factory_block`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_factory_block`)
+			.itemInputs(`#forge:storage_blocks/${x.material}`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`16x ad_astra:${x.type}_factory_block`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(2)
+
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_panel`)
+			.itemInputs(`#forge:storage_blocks/${x.material}`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`16x ad_astra:${x.type}_panel`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(3)
+
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pillar`)
+			.itemInputs(`#forge:storage_blocks/${x.material}`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`16x ad_astra:${x.type}_pillar`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(4)
+
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_plateblock`)
+			.itemInputs(`#forge:storage_blocks/${x.material}`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`16x ad_astra:${x.type}_plateblock`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(5)
+
+		event.recipes.gtceu.assembler(`tfg:ad_astra_encased_${x.type}_block`)
+			.itemInputs(`#forge:storage_blocks/${x.material}`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`16x ad_astra:encased_${x.type}_block`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(6)
+
+		// Stonecutter recipes as well, so you can switch between them
 		event.stonecutting(`ad_astra:${x.type}_plating`, `#tfg:ad_astra_${x.type}_blocks`)
+		event.stonecutting(`ad_astra:${x.type}_factory_block`, `#tfg:ad_astra_${x.type}_blocks`)
 		event.stonecutting(`ad_astra:${x.type}_panel`, `#tfg:ad_astra_${x.type}_blocks`)
 		event.stonecutting(`ad_astra:${x.type}_pillar`, `#tfg:ad_astra_${x.type}_blocks`)
 		event.stonecutting(`ad_astra:${x.type}_plateblock`, `#tfg:ad_astra_${x.type}_blocks`)
 		event.stonecutting(`ad_astra:encased_${x.type}_block`, `#tfg:ad_astra_${x.type}_blocks`)
 
-		event.stonecutting(`ad_astra:${x.type}_plating_stairs`, `tfg:ad_astra_${x.type}_plating`)
-		event.stonecutting(`2x ad_astra:${x.type}_plating_slab`, `tfg:ad_astra_${x.type}_plating`)
+		// Stairs n slabs
+		event.stonecutting(`ad_astra:${x.type}_plating_stairs`, `ad_astra:${x.type}_plating`)
+		event.stonecutting(`2x ad_astra:${x.type}_plating_slab`, `ad_astra:${x.type}_plating`)
 
 		// Pressure plates
 		event.shaped(`ad_astra:${x.type}_plating_pressure_plate`, [
@@ -557,13 +569,13 @@ const registerAdAstraRecipes = (event) => {
 		], {
 			B: '#tfc:hammers',
 			C: `ad_astra:${x.type}_plating_slab`,
-			D: '#forge:small_springs',
+			D: '#forge:springs',
 			E: '#forge:tools/screwdrivers'
 		}).id(`tfg:shaped/ad_astra_${x.type}_pressure_plate`)
 
 		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pressure_plate`)
-			.itemInputs('#forge:small_springs', `2x ad_astra:${x.type}_plating_slab`)
-			.itemOutputs(`2x ad_astra:${x.type}_plating_pressure_plate`)
+			.itemInputs('#forge:springs', `ad_astra:${x.type}_plating_slab`)
+			.itemOutputs(`ad_astra:${x.type}_plating_pressure_plate`)
 			.duration(50)
 			.EUt(2)
 
@@ -572,40 +584,80 @@ const registerAdAstraRecipes = (event) => {
 
 		// Doors
 		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_sliding_door`)
-			.itemInputs(`9x #tfg:ad_astra_${x.type}_blocks`)
+			.itemInputs(`9x #forge:plates/${x.material}`, '2x #forge:glass_panes')
 			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 			.itemOutputs(`ad_astra:${x.type}_sliding_door`)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
-			.circuit(1)
+			.circuit(20)
 	})
 
 	event.shapeless('ad_astra:marked_iron_pillar', ['ad_astra:iron_pillar', '#forge:dyes/yellow', '#forge:dyes/black'])
 		.id('tfg:shapeless/marked_iron_pillar')
 
 	event.recipes.gtceu.assembler(`tfg:ad_astra_reinforced_door`)
-		.itemInputs(`9x #tfg:ad_astra_${x.type}_blocks`, 'gtceu:dense_obsidian_plate')
+		.itemInputs(`9x #forge:plates/steel`, '2x #forge:glass_panes')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
-		.itemOutputs(`tfg:ad_astra_reinforced_door`)
+		.itemOutputs(`ad_astra:reinforced_door`)
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
-		.circuit(2)
+		.circuit(21)
+
+	event.recipes.gtceu.assembler(`tfg:ad_astra_airlock`)
+		.itemInputs(`9x #forge:plates/steel`)
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs(`ad_astra:airlock`)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(22)
 
 	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_door`)
-		.itemInputs('createdeco:industrial_iron_door')
+		.itemInputs('createdeco:industrial_iron_door', '#forge:glass_panes')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs('ad_astra:steel_door')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
-	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block
-
-	event.recipes.gtceu.assembler('tfg:ad_astra_etrium_panel')
-		.itemInputs('#forge:storage_blocks/etrium')
+	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_trapdoor`)
+		.itemInputs('tfc:metal/trapdoor/steel', '#forge:glass_panes')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
-		.itemOutputs('16x ad_astra:etrium_panel')
+		.itemOutputs('ad_astra:steel_trapdoor')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
+
+	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block
+
+	event.recipes.gtceu.assembler(`tfg:ad_astra_etrium_panel`)
+		.itemInputs(`#forge:storage_blocks/etrium`)
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs(`16x ad_astra:etrium_panel`)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(3)
+
+	event.recipes.gtceu.assembler(`tfg:ad_astra_etrium_factory_block`)
+		.itemInputs(`#forge:storage_blocks/etrium`)
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs(`16x ad_astra:etrium_factory_block`)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler(`tfg:ad_astra_etrium_plateblock`)
+		.itemInputs(`#forge:storage_blocks/etrium`)
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs(`16x ad_astra:etrium_plateblock`)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(5)
+
+	event.recipes.gtceu.assembler(`tfg:ad_astra_encased_etrium_block`)
+		.itemInputs(`#forge:storage_blocks/etrium`)
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs(`16x ad_astra:encased_etrium_block`)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(6)
 
 	event.stonecutting('ad_astra:etrium_panel', '#tfg:ad_astra_etrium_blocks')
 	event.stonecutting('ad_astra:etrium_factory_block', '#tfg:ad_astra_etrium_blocks')

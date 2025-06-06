@@ -521,12 +521,12 @@ function registerTFGRockRecipes(event) {
 	// pillars
 
 	const PILLARS = [
-		{ raw: 'ad_astra:moon_stone', pillar: 'ad_astra:moon_pillar' },
-		{ raw: 'ad_astra:mars_stone', pillar: 'ad_astra:mars_pillar' },
-		{ raw: 'ad_astra:venus_stone', pillar: 'ad_astra:venus_pillar' },
-		{ raw: 'ad_astra:mercury_stone', pillar: 'ad_astra:mercury_pillar' },
-		{ raw: 'ad_astra:glacio_stone', pillar: 'ad_astra:glacio_pillar' },
-		{ raw: 'ad_astra:permafrost', pillar: 'ad_astra:permafrost_pillar' }
+		{ raw: 'ad_astra:moon_stone_bricks', pillar: 'ad_astra:moon_pillar' },
+		{ raw: 'ad_astra:mars_stone_bricks', pillar: 'ad_astra:mars_pillar' },
+		{ raw: 'ad_astra:venus_stone_bricks', pillar: 'ad_astra:venus_pillar' },
+		{ raw: 'ad_astra:mercury_stone_bricks', pillar: 'ad_astra:mercury_pillar' },
+		{ raw: 'ad_astra:glacio_stone_bricks', pillar: 'ad_astra:glacio_pillar' },
+		{ raw: 'ad_astra:permafrost_bricks', pillar: 'ad_astra:permafrost_pillar' }
 	]
 
 	PILLARS.forEach(x => {
