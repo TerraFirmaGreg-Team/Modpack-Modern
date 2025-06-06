@@ -7,6 +7,9 @@ const registerAdAstraFluidTags = (event) => {
 		event.add('c:hidden_from_recipe_viewers', fluid)
 	})
 
+	// Using this to represent 'breathable air' instead of oxygen
+	event.removeAllTagsFrom('ad_astra:oxygen')
+
 	event.removeAll('ad_astra:fuel')
 	event.removeAll('ad_astra:efficient_fuel')
 
@@ -36,11 +39,25 @@ const registerAdAstraItemTags = (event) => {
 	event.add('forge:cobblestone', 'ad_astra:mercury_cobblestone')
 	event.add('forge:cobblestone', 'ad_astra:glacio_cobblestone')
 
-
 	// Insulation Tier 1
-
 	event.add('forge:insulation_t1', 'gtceu:borosilicate_glass_dust')
 	event.add('forge:insulation_t1', 'gtceu:vitrified_asbestos_dust')
+
+	// Deco blocks
+	const DECO_BLOCKS = [ 'iron', 'steel', 'desh', 'calorite', 'ostrum' ];
+	DECO_BLOCKS.forEach(block => {
+		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:${block}_factory_block`)
+		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:${block}_plating`)
+		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:${block}_panel`)
+		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:${block}_pillar`)
+		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:${block}_plateblock`)
+		event.add(`tfg:ad_astra_${block}_blocks`, `ad_astra:encased_${block}_block`)
+	})
+
+	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_factory_block')
+	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:encased_etrium_block')
+	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_plateblock')
+	event.add('tfg:ad_astra_etrium_blocks', 'ad_astra:etrium_panel')
 }
 
 const registerAdAstraBlockTags = (event) => {
