@@ -367,13 +367,15 @@ const registerAdAstraRecipes = (event) => {
 		.category(GTRecipeCategories.CHEM_DYES)
 
 	global.MINECRAFT_DYE_NAMES.forEach(color => {
-		event.recipes.gtceu.chemical_bath(`tfg:ad_astra_${color}_flag`)
-			.itemInputs('ad_astra:white_flag')
-			.inputFluids(Fluid.of(`tfc:${color}_dye`, 36))
-			.itemOutputs(`ad_astra:${color}_flag`)
-			.duration(150)
-			.EUt(4)
-			.category(GTRecipeCategories.CHEM_DYES)
+		if (color != "white") {
+			event.recipes.gtceu.chemical_bath(`tfg:ad_astra_${color}_flag`)
+				.itemInputs('ad_astra:white_flag')
+				.inputFluids(Fluid.of(`tfc:${color}_dye`, 36))
+				.itemOutputs(`ad_astra:${color}_flag`)
+				.duration(150)
+				.EUt(4)
+				.category(GTRecipeCategories.CHEM_DYES)
+		}
 	})
 
 	//#endregion
