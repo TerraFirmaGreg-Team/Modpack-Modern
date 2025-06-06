@@ -69,19 +69,19 @@
 				"type": "ad_astra:star_crawler",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 100
-			},
-			{
-				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
 			},
 			{
 				"type": "minecraft:endermite",
@@ -100,6 +100,18 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 50
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			},
+			{
+				"type": "endermanoverhaul:end_enderman",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
 			}
 		],
 		"underground_water_creature": [],

@@ -9,10 +9,10 @@
     "min_slant": 0,
     "max_slant": 4,
     "sign": 0,
-    "rarity": 300,
+    "rarity": 260,
     "density": 0.35,
-    "min_y": -32,
-    "max_y": 50,
+    "min_y": 0,
+    "max_y": 120,
     "random_name": "moon_beryllium",
     "blocks": [
       {
@@ -39,7 +39,15 @@
           },
           {
             "block": "gtceu:basalt_thorium_ore",
-            "weight": 15
+            "weight": 1
+          },
+          {
+            "block": "gtceu:basalt_olivine_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:basalt_rock_salt_ore",
+            "weight": 20
           }
         ]
       },
@@ -66,17 +74,25 @@
           },
           {
             "block": "gtceu:moon_stone_thorium_ore",
-            "weight": 15
+            "weight": 1
+          },
+          {
+            "block": "gtceu:moon_stone_olivine_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:moon_stone_rock_salt_ore",
+            "weight": 20
           }
         ]
       },
       {
         "replace": [
-          "ad_astra:moon_deepslate"
+          "ad_astra:glacio_stone"
         ],
         "with": [
           {
-            "block": "gtceu:moon_deepslate_beryllium_ore",
+            "block": "gtceu:glacio_stone_beryllium_ore",
             "weight": 35
           },
           {
@@ -84,7 +100,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:moon_deepslate_emerald_ore",
+            "block": "gtceu:glacio_stone_emerald_ore",
             "weight": 50
           },
           {
@@ -92,8 +108,16 @@
             "weight": 2
           },
           {
-            "block": "gtceu:moon_deepslate_thorium_ore",
-            "weight": 15
+            "block": "gtceu:glacio_stone_thorium_ore",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:glacio_stone_olivine_ore",
+            "weight": 5
+          },
+          {
+            "block": "gtceu:glacio_stone_rock_salt_ore",
+            "weight": 20
           }
         ]
       }
@@ -114,7 +138,15 @@
         },
         {
           "block": "gtceu:thorium_indicator",
-          "weight": 15
+          "weight": 1
+        },
+        {
+          "block": "gtceu:olivine_bud_indicator",
+          "weight": 5
+        },
+        {
+          "block": "gtceu:rock_salt_indicator",
+          "weight": 20
         }
       ]
     }

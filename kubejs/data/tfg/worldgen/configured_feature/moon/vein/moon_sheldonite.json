@@ -3,66 +3,12 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 30,
-    "rarity": 250,
+    "rarity": 260,
     "density": 0.3,
-    "min_y": -64,
-    "max_y": 0,
+    "min_y": 0,
+    "max_y": 70,
     "random_name": "moon_sheldonite",
     "blocks": [
-      {
-        "replace": [
-          "ad_astra:moon_stone"
-        ],
-        "with": [
-          {
-            "block": "gtceu:moon_stone_bornite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:raw_bornite_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:moon_stone_cooperite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:moon_stone_platinum_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:moon_stone_palladium_ore",
-            "weight": 15
-          }
-        ]
-      },
-      {
-        "replace": [
-          "ad_astra:moon_deepslate"
-        ],
-        "with": [
-          {
-            "block": "gtceu:moon_deepslate_bornite_ore",
-            "weight": 35
-          },
-          {
-            "block": "gtceu:raw_bornite_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:moon_deepslate_cooperite_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:moon_deepslate_platinum_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:moon_deepslate_palladium_ore",
-            "weight": 15
-          }
-        ]
-      },
       {
         "replace": [
           "minecraft:basalt",
@@ -83,11 +29,65 @@
           },
           {
             "block": "gtceu:basalt_platinum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:basalt_nickel_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/andesite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:andesite_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_bornite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:andesite_cooperite_ore",
             "weight": 25
           },
           {
-            "block": "gtceu:basalt_palladium_ore",
+            "block": "gtceu:andesite_platinum_ore",
             "weight": 15
+          },
+          {
+            "block": "gtceu:andesite_nickel_ore",
+            "weight": 25
+          }
+        ]
+      },
+      {
+        "replace": [
+          "ad_astra:glacio_stone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:glacio_stone_bornite_ore",
+            "weight": 35
+          },
+          {
+            "block": "gtceu:raw_bornite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:glacio_stone_cooperite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:glacio_stone_platinum_ore",
+            "weight": 15
+          },
+          {
+            "block": "gtceu:glacio_stone_nickel_ore",
+            "weight": 25
           }
         ]
       }
@@ -108,11 +108,11 @@
         },
         {
           "block": "gtceu:platinum_indicator",
-          "weight": 25
+          "weight": 15
         },
         {
-          "block": "gtceu:palladium_indicator",
-          "weight": 15
+          "block": "tfc:ore/small_garnierite",
+          "weight": 25
         }
       ]
     }

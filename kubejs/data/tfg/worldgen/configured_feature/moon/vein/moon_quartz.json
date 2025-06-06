@@ -5,7 +5,7 @@
     "size": 40,
     "rarity": 180,
     "density": 0.3,
-    "min_y": -32,
+    "min_y": 10,
     "max_y": 100,
     "random_name": "moon_quartz",
     "blocks": [
@@ -30,14 +30,6 @@
           {
             "block": "gtceu:basalt_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:basalt_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -61,14 +53,6 @@
           {
             "block": "gtceu:moon_deepslate_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:moon_deepslate_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -92,14 +76,6 @@
           {
             "block": "gtceu:gabbro_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:gabbro_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -123,14 +99,6 @@
           {
             "block": "gtceu:moon_stone_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:moon_stone_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -154,14 +122,6 @@
           {
             "block": "gtceu:diorite_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:diorite_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -185,14 +145,6 @@
           {
             "block": "gtceu:glacio_stone_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:glacio_stone_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -216,14 +168,6 @@
           {
             "block": "gtceu:dacite_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:dacite_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -247,14 +191,6 @@
           {
             "block": "gtceu:rhyolite_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:rhyolite_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       },
@@ -278,14 +214,6 @@
           {
             "block": "gtceu:andesite_barite_ore",
             "weight": 15
-          },
-          {
-            "block": "gtceu:andesite_nether_quartz_ore",
-            "weight": 25
-          },
-          {
-            "block": "gtceu:raw_nether_quartz_block",
-            "weight": 1
           }
         ]
       }
@@ -307,10 +235,6 @@
         {
           "block": "gtceu:barite_indicator",
           "weight": 15
-        },
-        {
-          "block": "gtceu:nether_quartz_bud_indicator",
-          "weight": 25
         }
       ]
     }

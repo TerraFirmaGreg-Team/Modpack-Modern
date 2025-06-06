@@ -56,20 +56,33 @@
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
-		"creature": [],
+		"creature": [
+			{
+				"type": "minecraft:rabbit",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 80
+			}
+		],
 		"misc": [],
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 1,
+				"type": "minecraft:skeleton",
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
@@ -81,7 +94,7 @@
 				"type": "minecraft:endermite",
 				"maxCount": 4,
 				"minCount": 2,
-				"weight": 10
+				"weight": 20
 			},
 			{
 				"type": "species:limpet",
@@ -90,10 +103,10 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],

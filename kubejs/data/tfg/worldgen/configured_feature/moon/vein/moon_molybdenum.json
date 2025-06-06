@@ -5,8 +5,8 @@
     "size": 26,
     "rarity": 245,
     "density": 0.45,
-    "min_y": -64,
-    "max_y": 10,
+    "min_y": 0,
+    "max_y": 50,
     "random_name": "moon_molybdenum",
     "blocks": [
       {
@@ -32,22 +32,22 @@
             "weight": 1
           },
           {
-            "block": "gtceu:basalt_molybdenum_ore",
+            "block": "gtceu:basalt_powellite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:basalt_powellite_ore",
-            "weight": 15
+            "block": "gtceu:basalt_olivine_ore",
+            "weight": 5
           }
         ]
       },
       {
         "replace": [
-          "tfc:rock/raw/diorite"
+          "tfc:rock/raw/dacite"
         ],
         "with": [
           {
-            "block": "gtceu:diorite_wulfenite_ore",
+            "block": "gtceu:dacite_wulfenite_ore",
             "weight": 40
           },
           {
@@ -55,7 +55,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:diorite_molybdenite_ore",
+            "block": "gtceu:dacite_molybdenite_ore",
             "weight": 30
           },
           {
@@ -63,12 +63,12 @@
             "weight": 1
           },
           {
-            "block": "gtceu:diorite_molybdenum_ore",
+            "block": "gtceu:dacite_powellite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:diorite_powellite_ore",
-            "weight": 15
+            "block": "gtceu:dacite_olivine_ore",
+            "weight": 5
           }
         ]
       },
@@ -94,12 +94,12 @@
             "weight": 1
           },
           {
-            "block": "gtceu:gabbro_molybdenum_ore",
+            "block": "gtceu:gabbro_powellite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:gabbro_powellite_ore",
-            "weight": 15
+            "block": "gtceu:gabbro_olivine_ore",
+            "weight": 5
           }
         ]
       },
@@ -125,12 +125,12 @@
             "weight": 1
           },
           {
-            "block": "gtceu:moon_deepslate_molybdenum_ore",
+            "block": "gtceu:moon_deepslate_powellite_ore",
             "weight": 15
           },
           {
-            "block": "gtceu:moon_deepslate_powellite_ore",
-            "weight": 15
+            "block": "gtceu:moon_deepslate_olivine_ore",
+            "weight": 5
           }
         ]
       }
@@ -150,12 +150,12 @@
           "weight": 30
         },
         {
-          "block": "gtceu:molybdenum_indicator",
+          "block": "gtceu:powellite_indicator",
           "weight": 15
         },
         {
-          "block": "gtceu:powellite_indicator",
-          "weight": 15
+          "block": "gtceu:olivine_bud_indicator",
+          "weight": 5
         }
       ]
     }

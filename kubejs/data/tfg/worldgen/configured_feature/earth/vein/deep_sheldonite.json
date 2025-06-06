@@ -3,7 +3,7 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 30,
-    "rarity": 300,
+    "rarity": 320,
     "density": 0.3,
     "min_y": -64,
     "max_y": 0,
@@ -32,15 +32,11 @@
           },
           {
             "block": "gtceu:quartzite_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:quartzite_palladium_ore",
-            "weight": 15
           }
         ]
       },
@@ -67,15 +63,11 @@
           },
           {
             "block": "gtceu:slate_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:slate_palladium_ore",
-            "weight": 15
           }
         ]
       },
@@ -102,15 +94,11 @@
           },
           {
             "block": "gtceu:phyllite_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:phyllite_palladium_ore",
-            "weight": 15
           }
         ]
       },
@@ -137,15 +125,11 @@
           },
           {
             "block": "gtceu:schist_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:schist_palladium_ore",
-            "weight": 15
           }
         ]
       },
@@ -172,15 +156,11 @@
           },
           {
             "block": "gtceu:gneiss_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:gneiss_palladium_ore",
-            "weight": 15
           }
         ]
       },
@@ -207,15 +187,11 @@
           },
           {
             "block": "gtceu:marble_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
-          },
-          {
-            "block": "gtceu:marble_palladium_ore",
-            "weight": 15
           }
         ]
       }
@@ -236,11 +212,7 @@
         },
         {
           "block": "gtceu:platinum_indicator",
-          "weight": 25
-        },
-        {
-          "block": "gtceu:palladium_indicator",
-          "weight": 15
+          "weight": 5
         }
       ]
     }

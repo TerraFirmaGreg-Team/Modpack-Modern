@@ -5,8 +5,8 @@
     "size": 40,
     "rarity": 250,
     "density": 0.4,
-    "min_y": -32,
-    "max_y": 60,
+    "min_y": 5,
+    "max_y": 85,
     "random_name": "moon_garnierite",
     "blocks": [
       {
@@ -16,7 +16,7 @@
         "with": [
           {
             "block": "gtceu:gabbro_garnierite_ore",
-            "weight": 30
+            "weight": 25
           },
           {
             "block": "gtceu:raw_garnierite_block",
@@ -24,7 +24,7 @@
           },
           {
             "block": "gtceu:gabbro_nickel_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:gabbro_cobaltite_ore",
@@ -51,7 +51,7 @@
         "with": [
           {
             "block": "gtceu:diorite_garnierite_ore",
-            "weight": 30
+            "weight": 25
           },
           {
             "block": "gtceu:raw_garnierite_block",
@@ -59,7 +59,7 @@
           },
           {
             "block": "gtceu:diorite_nickel_ore",
-            "weight": 10
+            "weight": 20
           },
           {
             "block": "gtceu:diorite_cobaltite_ore",
@@ -78,6 +78,41 @@
             "weight": 15
           }
         ]
+      },
+      {
+        "replace": [
+          "tfc:rock/raw/rhyolite"
+        ],
+        "with": [
+          {
+            "block": "gtceu:rhyolite_garnierite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_garnierite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:rhyolite_nickel_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:rhyolite_cobaltite_ore",
+            "weight": 20
+          },
+          {
+            "block": "gtceu:rhyolite_pentlandite_ore",
+            "weight": 25
+          },
+          {
+            "block": "gtceu:raw_pentlandite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:rhyolite_cobalt_ore",
+            "weight": 15
+          }
+        ]
       }
     ],
     "indicator": {
@@ -88,11 +123,11 @@
       "blocks": [
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 30
+          "weight": 25
         },
         {
           "block": "tfc:ore/small_garnierite",
-          "weight": 10
+          "weight": 20
         },
         {
           "block": "gtceu:cobaltite_indicator",

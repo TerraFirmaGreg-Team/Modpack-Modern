@@ -6,8 +6,8 @@
     "size": 28,
     "rarity": 280,
     "density": 0.35,
-    "min_y": -64,
-    "max_y": 26,
+    "min_y": 0,
+    "max_y": 100,
     "random_name": "moon_sapphire",
     "blocks": [
       {
@@ -35,6 +35,10 @@
           {
             "block": "gtceu:basalt_green_sapphire_ore",
             "weight": 15
+          },
+          {
+            "block": "gtceu:basalt_olivine_ore",
+            "weight": 2
           }
         ]
       },
@@ -62,6 +66,10 @@
           {
             "block": "gtceu:moon_deepslate_green_sapphire_ore",
             "weight": 15
+          },
+          {
+            "block": "gtceu:moon_deepslate_olivine_ore",
+            "weight": 2
           }
         ]
       }
@@ -87,6 +95,10 @@
         {
           "block": "gtceu:green_sapphire_bud_indicator",
           "weight": 15
+        },
+        {
+          "block": "gtceu:olivine_bud_indicator",
+          "weight": 2
         }
       ]
     }

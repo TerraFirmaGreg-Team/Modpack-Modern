@@ -19,6 +19,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:cryo_freezer',
 	'ad_astra:wrench',
 	'ad_astra:cheese',
+	'ad_astra:cheese_block',
 	'ad_astra:iron_plate',
 	'ad_astra:iron_rod',
 	'ad_astra:steel_ingot',
@@ -40,7 +41,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:fuel_bucket',
 	'ad_astra:cryo_fuel_bucket',
 	'ad_astra_giselle_addon:gravity_normalizer',
-	'ad_astra:cable_dust',
+	'ad_astra:cable_duct',
 	'ad_astra:glacio_globe',
 	
 	// TODO: integrate with tag prefixes?
@@ -48,9 +49,12 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:raw_desh_block',
 	'ad_astra:raw_ostrum_block',
 	'ad_astra:raw_calorite_block',
-	'ad_astra:raw_desh',
-	'ad_astra:raw_ostrum',
-	'ad_astra:raw_calorite',
+	'ad_astra:moon_desh_ore',
+	'ad_astra:deepslate_desh_ore',
+	'ad_astra:mars_ostrum_ore',
+	'ad_astra:deepslate_ostrum_ore',
+	'ad_astra:venus_calorite_ore',
+	'ad_astra:deepslate_calorite_ore',
 	
 
 	// Disabled until IV planets

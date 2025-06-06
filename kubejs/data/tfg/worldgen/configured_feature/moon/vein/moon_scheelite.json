@@ -3,19 +3,19 @@
   "type": "tfc:cluster_vein",
   "config": {
     "size": 20,
-    "rarity": 250,
+    "rarity": 200,
     "density": 0.35,
-    "min_y": -64,
-    "max_y": 0,
+    "min_y": 0,
+    "max_y": 70,
     "random_name": "moon_scheelite",
     "blocks": [
       {
         "replace": [
-          "tfc:rock/raw/diorite"
+          "tfc:rock/raw/rhyolite"
         ],
         "with": [
           {
-            "block": "gtceu:diorite_scheelite_ore",
+            "block": "gtceu:rhyolite_scheelite_ore",
             "weight": 40
           },
           {
@@ -23,7 +23,7 @@
             "weight": 1
           },
           {
-            "block": "gtceu:diorite_tungstate_ore",
+            "block": "gtceu:rhyolite_tungstate_ore",
             "weight": 50
           },
           {
@@ -31,7 +31,34 @@
             "weight": 2
           },
           {
-            "block": "gtceu:diorite_lithium_ore",
+            "block": "gtceu:rhyolite_lithium_ore",
+            "weight": 10
+          }
+        ]
+      },
+      {
+        "replace": [
+          "ad_astra:glacio_stone"
+        ],
+        "with": [
+          {
+            "block": "gtceu:glacio_stone_scheelite_ore",
+            "weight": 40
+          },
+          {
+            "block": "gtceu:raw_scheelite_block",
+            "weight": 1
+          },
+          {
+            "block": "gtceu:glacio_stone_tungstate_ore",
+            "weight": 50
+          },
+          {
+            "block": "gtceu:raw_tungstate_block",
+            "weight": 2
+          },
+          {
+            "block": "gtceu:glacio_stone_lithium_ore",
             "weight": 10
           }
         ]
@@ -59,60 +86,6 @@
           },
           {
             "block": "gtceu:gabbro_lithium_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "ad_astra:moon_stone"
-        ],
-        "with": [
-          {
-            "block": "gtceu:moon_stone_scheelite_ore",
-            "weight": 40
-          },
-          {
-            "block": "gtceu:raw_scheelite_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:moon_stone_tungstate_ore",
-            "weight": 50
-          },
-          {
-            "block": "gtceu:raw_tungstate_block",
-            "weight": 2
-          },
-          {
-            "block": "gtceu:moon_stone_lithium_ore",
-            "weight": 10
-          }
-        ]
-      },
-      {
-        "replace": [
-          "ad_astra:moon_deepslate"
-        ],
-        "with": [
-          {
-            "block": "gtceu:moon_deepslate_scheelite_ore",
-            "weight": 40
-          },
-          {
-            "block": "gtceu:raw_scheelite_block",
-            "weight": 1
-          },
-          {
-            "block": "gtceu:moon_deepslate_tungstate_ore",
-            "weight": 50
-          },
-          {
-            "block": "gtceu:raw_tungstate_block",
-            "weight": 2
-          },
-          {
-            "block": "gtceu:moon_deepslate_lithium_ore",
             "weight": 10
           }
         ]

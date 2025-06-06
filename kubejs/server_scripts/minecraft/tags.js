@@ -29,11 +29,13 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods', 'minecraft:brown_mushroom')
     event.add('tfc:foods', 'minecraft:glow_berries')
     event.add('tfc:foods', 'minecraft:chorus_fruit')
+    event.add('tfc:foods', 'minecraft:popped_chorus_fruit')
 
     event.add('tfc:foods/vegetables', 'minecraft:red_mushroom')
     event.add('tfc:foods/vegetables', 'minecraft:brown_mushroom')
     event.add('tfc:foods/fruits', 'minecraft:glow_berries')
     event.add('tfc:foods/fruits', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/fruits', 'minecraft:popped_chorus_fruit')
 
     event.add('beneath:usable_in_juicer', 'minecraft:glow_berries')
     event.add('beneath:usable_in_juicer', 'minecraft:chorus_fruit')
@@ -44,11 +46,13 @@ const registerMinecraftItemTags = (event) => {
     event.add('tfc:foods/usable_in_soup', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_soup', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_soup', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/usable_in_soup', 'minecraft:popped_chorus_fruit')
 
     event.add('tfc:foods/usable_in_salad', 'minecraft:red_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:brown_mushroom')
     event.add('tfc:foods/usable_in_salad', 'minecraft:glow_berries')
     event.add('tfc:foods/usable_in_salad', 'minecraft:chorus_fruit')
+    event.add('tfc:foods/usable_in_salad', 'minecraft:popped_chorus_fruit')
     
     event.add('tfc:rock/raw', 'minecraft:deepslate')
     event.add('tfc:rock/raw', 'minecraft:blackstone')

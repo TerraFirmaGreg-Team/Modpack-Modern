@@ -38,15 +38,15 @@
           },
           {
             "block": "gtceu:deepslate_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
           },
           {
-            "block": "gtceu:deepslate_palladium_ore",
-            "weight": 15
+            "block": "gtceu:deepslate_nickel_ore",
+            "weight": 20
           }
         ]
       },
@@ -74,15 +74,15 @@
           },
           {
             "block": "gtceu:pyroxenite_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
           },
           {
-            "block": "gtceu:pyroxenite_palladium_ore",
-            "weight": 15
+            "block": "gtceu:pyroxenite_nickel_ore",
+            "weight": 20
           }
         ]
       },
@@ -110,15 +110,15 @@
           },
           {
             "block": "gtceu:basalt_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
           },
           {
-            "block": "gtceu:basalt_palladium_ore",
-            "weight": 15
+            "block": "gtceu:basalt_nickel_ore",
+            "weight": 20
           }
         ]
       },
@@ -145,15 +145,15 @@
           },
           {
             "block": "gtceu:dripstone_platinum_ore",
-            "weight": 25
+            "weight": 5
           },
           {
             "block": "gtceu:raw_platinum_block",
             "weight": 1
           },
           {
-            "block": "gtceu:dripstone_palladium_ore",
-            "weight": 15
+            "block": "gtceu:dripstone_nickel_ore",
+            "weight": 20
           }
         ]
       }
@@ -174,11 +174,11 @@
         },
         {
           "block": "gtceu:platinum_indicator",
-          "weight": 25
+          "weight": 5
         },
         {
-          "block": "gtceu:palladium_indicator",
-          "weight": 15
+          "block": "tfc:ore/small_garnierite",
+          "weight": 20
         }
       ]
     }

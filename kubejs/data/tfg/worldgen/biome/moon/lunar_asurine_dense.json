@@ -59,22 +59,22 @@
 		"misc": [],
 		"monster": [
 			{
-				"type": "ad_astra:star_crawler",
+				"type": "ad_astra:corrupted_lunarian",
 				"maxCount": 4,
 				"minCount": 2,
 				"weight": 100
 			},
 			{
-				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 1,
+				"type": "minecraft:skeleton",
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
+				"weight": 10
 			},
 			{
 				"type": "minecraft:endermite",
@@ -89,7 +89,7 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 10

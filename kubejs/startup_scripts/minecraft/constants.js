@@ -617,7 +617,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:honey_bottle', 
     'minecraft:honeycomb_block', 
     'minecraft:honey_block',
-    'minecraft:popped_chorus_fruit', 
     'minecraft:purpur_pillar', 
     'minecraft:purpur_block', 
     'minecraft:purpur_stairs', 

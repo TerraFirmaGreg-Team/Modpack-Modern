@@ -7,7 +7,7 @@
 			"element": {
 				"location": "tfg:moon/moonbase/connector/moonbase_connector1",
 				"processors": "minecraft:empty",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -16,7 +16,7 @@
 			"element": {
 				"location": "tfg:moon/moonbase/connector/moonbase_connector2",
 				"processors": "minecraft:empty",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -34,7 +34,7 @@
 			"element": {
 				"location": "tfg:moon/moonbase/connector/moonbase_connector4",
 				"processors": "minecraft:empty",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
@@ -52,7 +52,7 @@
 			"element": {
 				"location": "tfg:moon/moonbase/connector/moonbase_connector6",
 				"processors": "minecraft:empty",
-				"projection": "terrain_matching",
+				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
