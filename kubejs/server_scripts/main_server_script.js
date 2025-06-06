@@ -136,6 +136,7 @@ ServerEvents.highPriorityData(event => {
  * Срабатывает до инициализации рецептов, но после тегов.
  */
 TFCEvents.data(event => {
+    registerTFCDataForAdAstra(event);
     registerTFCDataForArborFirmaCraft(event)
     registerTFCDataForChalk(event);
     registerTFCDataForGTCEU(event)

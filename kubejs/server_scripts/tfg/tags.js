@@ -279,10 +279,9 @@ const registerTFGBlockTags = (event) => {
 
 	// #region Space blocks (TODO: undo these when merging space into dev!)
 
-	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_roots')
-	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_sprouts')
-	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_chorus_plant')
-	event.add('c:hidden_from_recipe_viewers', 'tfg:lunar_chorus_flower')
+	event.add('tfc:plants', 'tfg:lunar_roots')
+	event.add('tfc:plants', 'tfg:lunar_sprouts')
+	event.add('tfc:plants', 'tfg:lunar_chorus_flower')
 
 	// #endregion
 }
