@@ -50,20 +50,7 @@
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {
-		"minecraft:enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"endermanoverhaul:windswept_hills_enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"endermanoverhaul:soulsand_valley_enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		}
-	},
+	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],

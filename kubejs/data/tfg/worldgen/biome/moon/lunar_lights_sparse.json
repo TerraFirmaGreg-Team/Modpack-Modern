@@ -51,28 +51,16 @@
 		]
 	],
 	"has_precipitation": false,
-	"spawn_costs": {
-		"minecraft:enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"endermanoverhaul:windswept_hills_enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		},
-		"endermanoverhaul:soulsand_valley_enderman": {
-			"charge": 0.7,
-			"energy_budget": 0.015
-		}
-	},
+	"creature_spawn_probability": 0.00005,
+	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
 		"axolotls": [],
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 1,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 80
 			}
 		],

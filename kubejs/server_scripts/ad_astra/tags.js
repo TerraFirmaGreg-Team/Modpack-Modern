@@ -190,7 +190,6 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'tfc:rat',
 		'minecraft:rabbit',
 		'minecraft:enderman',
-		'minecraft:endermite',
 		'minecraft:shulker',
 		'minecraft:shulker_bullet',
 		'minecraft:skeleton',
@@ -214,7 +213,6 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:soulsand_valley_enderman')
 	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:end_islands_enderman')
-	event.add('tfc:deals_piercing_damage', 'minecraft:endermite')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
 }
 

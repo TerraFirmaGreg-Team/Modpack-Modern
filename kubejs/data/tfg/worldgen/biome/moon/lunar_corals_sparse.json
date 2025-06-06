@@ -51,6 +51,7 @@
 		]
 	],
 	"has_precipitation": false,
+	"creature_spawn_probability": 0.00005,
 	"spawn_costs": {},
 	"spawners": {
 		"ambient": [],
@@ -58,8 +59,8 @@
 		"creature": [
 			{
 				"type": "minecraft:rabbit",
-				"maxCount": 1,
-				"minCount": 1,
+				"maxCount": 4,
+				"minCount": 2,
 				"weight": 20
 			}
 		],
@@ -88,12 +89,6 @@
 				"maxCount": 1,
 				"minCount": 1,
 				"weight": 20
-			},
-			{
-				"type": "minecraft:endermite",
-				"maxCount": 2,
-				"minCount": 1,
-				"weight": 10
 			},
 			{
 				"type": "species:limpet",
