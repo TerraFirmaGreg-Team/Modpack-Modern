@@ -18,6 +18,7 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:cryo_freezer',
 	'ad_astra:wrench',
 	'ad_astra:cheese',
+	'ad_astra:cheese_block',
 	'ad_astra:iron_plate',
 	'ad_astra:iron_rod',
 	'ad_astra:steel_ingot',
