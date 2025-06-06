@@ -458,7 +458,30 @@ const registerAdAstraRecipes = (event) => {
 
 	//#region Misc blocks
 
+	event.shaped('ad_astra:vent', [
+		' B ',
+		'BAB',
+		' B '
+	], {
+		A: 'gtceu:steel_frame',
+		B: '#tfg:metal_bars'
+	}).id('tfg:shaped/ad_astra_vent')
 
+	event.shaped('ad_astra:airlock', [
+		'AB',
+		'CD',
+	], {
+		A: '#forge:tools/wrenches',
+		B: 'gtceu:activity_detector_cover',
+		C: 'gtceu:fluid_detector_cover',
+		D: 'gtceu:filter_casing'
+	}).id('tfg:shaped/airlock')
+
+	event.recipes.gtceu.assembler('ad_astra:airlock')
+		.itemInputs('gtceu:filter_casing', 'gtceu:fluid_detector_cover', 'gtceu:activity_detector_cover')
+		.itemOutputs('ad_astra:airlock')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
 
 	//#endregion
 
@@ -523,15 +546,71 @@ const registerAdAstraRecipes = (event) => {
 		event.stonecutting(`ad_astra:${x.type}_plateblock`, `#tfg:ad_astra_${x.type}_blocks`)
 		event.stonecutting(`ad_astra:encased_${x.type}_block`, `#tfg:ad_astra_${x.type}_blocks`)
 
-		// TODO: button, pressure plate, slab, stairs, doors
-		//https://github.com/terrarium-earth/Ad-Astra/blob/1.20.x/common/src/main/generated/resources/data/ad_astra/recipes/
-		//https://github.com/terrarium-earth/Ad-Astra/blob/1.20.x/common/src/main/java/earth/terrarium/adastra/common/registry/ModBlocks.java
+		event.stonecutting(`ad_astra:${x.type}_plating_stairs`, `tfg:ad_astra_${x.type}_plating`)
+		event.stonecutting(`2x ad_astra:${x.type}_plating_slab`, `tfg:ad_astra_${x.type}_plating`)
+
+		// Pressure plates
+		event.shaped(`ad_astra:${x.type}_plating_pressure_plate`, [
+			' B ',
+			'CDC',
+			' E '
+		], {
+			B: '#tfc:hammers',
+			C: `ad_astra:${x.type}_plating_slab`,
+			D: '#forge:small_springs',
+			E: '#forge:tools/screwdrivers'
+		}).id(`tfg:shaped/ad_astra_${x.type}_pressure_plate`)
+
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_pressure_plate`)
+			.itemInputs('#forge:small_springs', `2x ad_astra:${x.type}_plating_slab`)
+			.itemOutputs(`2x ad_astra:${x.type}_plating_pressure_plate`)
+			.duration(50)
+			.EUt(2)
+
+		// Buttons
+		generateCutterRecipe(event, `ad_astra:${x.type}_plating_pressure_plate`, `6x ad_astra:${x.type}_plating_button`, 50, 7, `ad_astra_${x.type}_button`)
+
+		// Doors
+		event.recipes.gtceu.assembler(`tfg:ad_astra_${x.type}_sliding_door`)
+			.itemInputs(`9x #tfg:ad_astra_${x.type}_blocks`)
+			.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+			.itemOutputs(`ad_astra:${x.type}_sliding_door`)
+			.duration(100)
+			.EUt(GTValues.VA[GTValues.LV])
+			.circuit(1)
 	})
 
 	event.shapeless('ad_astra:marked_iron_pillar', ['ad_astra:iron_pillar', '#forge:dyes/yellow', '#forge:dyes/black'])
 		.id('tfg:shapeless/marked_iron_pillar')
 
-	// etrium only has factory block, encased block, plateblock, panel, and (storage) block
+	event.recipes.gtceu.assembler(`tfg:ad_astra_reinforced_door`)
+		.itemInputs(`9x #tfg:ad_astra_${x.type}_blocks`, 'gtceu:dense_obsidian_plate')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs(`tfg:ad_astra_reinforced_door`)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+		.circuit(2)
+
+	event.recipes.gtceu.assembler(`tfg:ad_astra_steel_door`)
+		.itemInputs('createdeco:industrial_iron_door')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs('ad_astra:steel_door')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	// Etrium only has factory block, encased block, plateblock, panel, and (storage) block
+
+	event.recipes.gtceu.assembler('tfg:ad_astra_etrium_panel')
+		.itemInputs('#forge:storage_blocks/etrium')
+		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
+		.itemOutputs('16x ad_astra:etrium_panel')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+
+	event.stonecutting('ad_astra:etrium_panel', '#tfg:ad_astra_etrium_blocks')
+	event.stonecutting('ad_astra:etrium_factory_block', '#tfg:ad_astra_etrium_blocks')
+	event.stonecutting('ad_astra:encased_etrium_block', '#tfg:ad_astra_etrium_blocks')
+	event.stonecutting('ad_astra:etrium_plateblock', '#tfg:ad_astra_etrium_blocks')
 
 	//#endregion
 }
