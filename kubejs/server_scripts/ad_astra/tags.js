@@ -195,7 +195,7 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfc:deals_crushing_damage', 'minecraft:skeleton')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:windswept_hills_enderman')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:soulsand_valley_enderman')
-	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:end_enderman')
+	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:end_islands_enderman')
 	event.add('tfc:deals_piercing_damage', 'minecraft:endermite')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')

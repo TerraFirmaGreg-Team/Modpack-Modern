@@ -91,12 +91,6 @@
 				"weight": 20
 			},
 			{
-				"type": "minecraft:endermite",
-				"maxCount": 4,
-				"minCount": 2,
-				"weight": 20
-			},
-			{
 				"type": "species:limpet",
 				"maxCount": 2,
 				"minCount": 1,
