@@ -275,7 +275,7 @@ const registerAdAstraRecipes = (event) => {
 		' F '
 	], {
 		A: 'gtceu:solar_panel',
-		B: 'minecraft:daylight_detector',
+		B: '#gtceu:batteries/lv',
 		C: '#forge:rods/long/aluminium',
 		E: '#gtceu:circuits/mv',
 		F: 'gtceu:mv_machine_hull'
@@ -328,7 +328,7 @@ const registerAdAstraRecipes = (event) => {
 	//#region Стальной FE кабель т1
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-		.itemInputs('4x #forge:double_wires/manganese_phosphide', '#forge:plates/steel')
+		.itemInputs('4x #forge:single_wires/manganese_phosphide', '#forge:plates/steel')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
 		.itemOutputs('4x ad_astra:steel_cable')
 		.duration(60)
@@ -339,7 +339,7 @@ const registerAdAstraRecipes = (event) => {
 	//#region FE кабель т2
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-		.itemInputs('4x #forge:double_wires/magnesium_diboride', '#forge:plates/desh')
+		.itemInputs('4x #forge:single_wires/magnesium_diboride', '#forge:plates/desh')
 		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
 		.itemOutputs('4x ad_astra:desh_cable')
 		.duration(60)
