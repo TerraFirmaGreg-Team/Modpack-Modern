@@ -66,15 +66,21 @@
 		"monster": [
 			{
 				"type": "ad_astra:star_crawler",
-				"maxCount": 4,
-				"minCount": 2,
+				"maxCount": 3,
+				"minCount": 1,
 				"weight": 100
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 1,
+				"maxCount": 3,
 				"minCount": 1,
-				"weight": 20
+				"weight": 100
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 3,
+				"minCount": 1,
+				"weight": 100
 			},
 			{
 				"type": "minecraft:enderman",
@@ -95,10 +101,10 @@
 				"weight": 100
 			},
 			{
-				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"type": "endermanoverhaul:windswept_hills_enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 10
+				"weight": 20
 			}
 		],
 		"underground_water_creature": [],

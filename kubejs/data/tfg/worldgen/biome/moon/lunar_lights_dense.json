@@ -78,9 +78,15 @@
 			},
 			{
 				"type": "ad_astra:corrupted_lunarian",
-				"maxCount": 1,
+				"maxCount": 2,
 				"minCount": 1,
-				"weight": 20
+				"weight": 30
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 2,
+				"minCount": 1,
+				"weight": 30
 			},
 			{
 				"type": "species:limpet",
@@ -92,25 +98,13 @@
 				"type": "minecraft:enderman",
 				"maxCount": 1,
 				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "minecraft:endermite",
-				"maxCount": 4,
-				"minCount": 2,
 				"weight": 10
 			},
 			{
-				"type": "endermanoverhaul:windswept_hills_enderman",
-				"maxCount": 1,
+				"type": "endermanoverhaul:soulsand_valley_enderman",
+				"maxCount": 2,
 				"minCount": 1,
 				"weight": 20
-			},
-			{
-				"type": "endermanoverhaul:soulsand_valley_enderman",
-				"maxCount": 1,
-				"minCount": 1,
-				"weight": 5
 			}
 		],
 		"underground_water_creature": [],
