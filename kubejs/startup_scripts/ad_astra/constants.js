@@ -67,12 +67,6 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:glacio_copper_ore',
 	'ad_astra:glacio_iron_ore',
 	'ad_astra:glacio_lapis_ore',
-	
-	// TODO: integrate with tag prefixes?
-	'ad_astra:steel_block',
-	'ad_astra:raw_desh_block',
-	'ad_astra:raw_ostrum_block',
-	'ad_astra:raw_calorite_block',
 
 	// Disabled until EV planet
 
