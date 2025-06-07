@@ -45,40 +45,61 @@ const registerAdAstraMaterials = (event) => {
 	// #region ad astra ores
 
 	// moon
-
-	// TODO: add smelting recipe for this
 	event.create('desh')
 		.components('2x olivine', '1x rutile', '4x nitrogen')
-		.color(0xd38b4c)
-		.secondaryColor(0xa90936)
+		.color(0xF39A4C)
+		.secondaryColor(0xF35A6C)
 		.iconSet(GTMaterialIconSet.getByName('tfc_hematite'))
 		.ore()
+		.addOreByproducts('olivine', 'rutile', 'rutile')
+		.ingot()
+		.flags(
+			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
+			GTMaterialFlags.GENERATE_PLATE, 
+			GTMaterialFlags.GENERATE_ROD
+		)
 
-	// TODO: still need to balance these
+	// TODO: remove the components until we know what to put in them
 
-	// mars
+	// mars?
 	event.create('ostrum')
 		.components('2x scheelite', '1x hematite', '1x rutile', '4x oxygen')
 		.color(0xbd7980)
-		.secondaryColor(0x543d4a)
+		.secondaryColor(0xA66C8D)
 		.iconSet(GTMaterialIconSet.getByName('tfc_cassiterite'))
 		.ore()
+		.ingot()
+		.flags(
+			GTMaterialFlags.FORCE_GENERATE_BLOCK, 
+			GTMaterialFlags.GENERATE_PLATE
+		)
 
-	// mercury
+	// venus?
 	event.create('calorite')
 		.components('2x mercury', '1x tungsten', '1x rhodium', '2x sulfur')
-		.color(0xcf223c)
-		.secondaryColor(0x691533)
+		.color(0xC94D4E)
+		.secondaryColor(0x9A296A)
 		.iconSet(GTMaterialIconSet.getByName('tfc_copper'))
 		.ore()
+		.ingot()
+		.flags(
+			GTMaterialFlags.FORCE_GENERATE_BLOCK,
+			GTMaterialFlags.GENERATE_PLATE
+		)
 
-	// venus
+	// ???
 	event.create('etrium')
 		.components('1x niobium', '1x molybdenum', '1x ruthenium', '3x carbon', '1x monochloramine')
-		.color(0x58b1a1)
-		.secondaryColor(0xbafcf6)
+		.color(0x7BFCD7)
+		.secondaryColor(0x3582D2)
 		.iconSet(GTMaterialIconSet.getByName('tfc_silver'))
 		.ore()
+		.ingot()
+		.flags(
+			GTMaterialFlags.FORCE_GENERATE_BLOCK,
+			GTMaterialFlags.GENERATE_PLATE, 
+			GTMaterialFlags.GENERATE_ROD
+		)
 
 	// #endregion
 }

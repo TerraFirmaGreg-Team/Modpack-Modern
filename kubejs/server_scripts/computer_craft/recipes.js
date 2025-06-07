@@ -78,9 +78,9 @@ const registerComputerCraftRecipes = (event) => {
     ], {
         A: 'computercraft:cable',
         B: 'ae2:drive',
-        C: '#gtceu:circuits/hv',
-        D: 'gtceu:hv_machine_casing',
-        E: 'gtceu:hv_sensor',
+        C: '#gtceu:circuits/mv',
+        D: 'gtceu:mv_machine_casing',
+        E: 'gtceu:mv_sensor',
     }).id('tfg:crafting/disk_drive')
 
     // Speaker
@@ -105,7 +105,7 @@ const registerComputerCraftRecipes = (event) => {
         B: '#gtceu:circuits/mv',
         C: 'gtceu:mv_robot_arm',
         D: 'computercraft:cable',
-        E: 'gtceu:mv_machine_casing',
+        E: 'gtceu:hv_machine_casing',
         F: 'gtceu:mv_conveyor_module'
     }).id('tfg:crafting/printer')
 

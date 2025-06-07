@@ -284,7 +284,7 @@ const registerGTCEuMaterialModification = (event) => {
 	GTMaterials.Cobalt.setMaterialARGB(0xC9E4FB)
 	GTMaterials.Cobalt.setMaterialSecondaryARGB(0x1D2688)
 	GTMaterials.CertusQuartz.setMaterialARGB(0xB8D8FC)
-	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0x466580)
+	GTMaterials.CertusQuartz.setMaterialSecondaryARGB(0xADCCEF)
 	GTMaterials.Vanadium.setMaterialARGB(0xD8D4E7)
 	GTMaterials.Vanadium.setMaterialSecondaryARGB(0x7E988F)
 	GTMaterials.Brass.setMaterialSecondaryARGB(0x791905)
