@@ -19,7 +19,7 @@ StartupEvents.registry('block', event => {
  * Событие изменения блоков.
  */
 BlockEvents.modification(event => {
-    // modifyFirmaCivBlocks(event)
+    registerAdAstraBlockModifications(event)
 })
 
 /**
