@@ -1,6 +1,13 @@
 # Changelog
 ## [Unreleased]
 ### New features
+### Changes
+### Bug fixes
+- Fixed trowel being consumed on use @Redeix
+- Fixed glass dust dupe with unfinished lamps (#1134) @Pyritie
+
+## [0.9.10] - 05.06.2025
+### New features
 - Added Trowel tool to randomly place blocks from hotbar (#1106) @Redeix
 - Started work on Brazilian Portuguese translations @gifpxto
 - Added Aqueous Accumulator machine, basically a rock breaker but for fluids (#1030) @Pyritie

@@ -666,7 +666,7 @@ function registerGTCEUMetalRecipes(event) {
 
 		event.recipes.gtceu.arc_furnace(`tfg:arc_${material.getName()}_unfinished_lamp`)
 			.itemInputs(unfinishedLampStack)
-			.itemOutputs([materialIngotStack, glassDustStack])
+			.itemOutputs(materialIngotStack)
 			.duration(material.getMass() * 8)
 			.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
 			.EUt(GTValues.VA[GTValues.ULV])
