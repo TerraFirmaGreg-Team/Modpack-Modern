@@ -44,8 +44,10 @@ global.AD_ASTRA_DISABLED_ITEMS =
 	'ad_astra:steel_plate',
 	'ad_astra:steel_rod',
 	'ad_astra:ti_69',
+	'ad_astra:steel_cable',
+	'ad_astra:desh_cable',
 
-	// Don't integrate these, several systems rely on all ore blocks being gregtech's generated ones
+	// Don't tag prefix these, several systems rely on all ore blocks being gregtech's generated ones
 	'ad_astra:moon_ice_shard_ore',
 	'ad_astra:deepslate_ice_shard_ore',
 	'ad_astra:mars_ice_shard_ore',

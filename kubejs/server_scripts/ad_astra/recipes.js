@@ -325,25 +325,21 @@ const registerAdAstraRecipes = (event) => {
 	//#endregion
 
 
-	//#region Стальной FE кабель т1
+	//#region FE cables
 
-	event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-		.itemInputs('#forge:single_wires/manganese_phosphide', '#forge:plates/polyethylene')
-		.inputFluids(Fluid.of('gtceu:redstone', 144))
-		.itemOutputs('ad_astra:steel_cable')
-		.duration(60)
-		.EUt(120)
+	//event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
+	//	.itemInputs('#forge:single_wires/manganese_phosphide', '#forge:plates/polyethylene')
+	//	.inputFluids(Fluid.of('gtceu:redstone', 144))
+	//	.itemOutputs('ad_astra:steel_cable')
+	//	.duration(60)
+	//	.EUt(120)
 
-	//#endregion
-
-	//#region FE кабель т2
-
-	event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-		.itemInputs('#forge:single_wires/magnesium_diboride', '#forge:plates/polyvinyl_chloride')
-		.inputFluids(Fluid.of('gtceu:redstone', 288))
-		.itemOutputs('ad_astra:desh_cable')
-		.duration(60)
-		.EUt(480)
+	//event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
+	//	.itemInputs('#forge:single_wires/magnesium_diboride', '#forge:plates/polyvinyl_chloride')
+	//	.inputFluids(Fluid.of('gtceu:redstone', 288))
+	//	.itemOutputs('ad_astra:desh_cable')
+	//	.duration(60)
+	//	.EUt(480)
 
 	//#endregion
 
