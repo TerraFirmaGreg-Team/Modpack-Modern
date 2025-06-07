@@ -65,6 +65,7 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     registerAdAstraMaterials(event)
     registerAE2Materials(event)
+    registerCreateMaterials(event)
     registerTFCMaterials(event)
     registerGTCEuMaterials(event)
     registerTFGMaterials(event)

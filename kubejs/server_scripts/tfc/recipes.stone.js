@@ -762,42 +762,14 @@ function registerTFCStoneRecipes(event) {
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.SiliconDioxide, 1), 4700, 700)
 		.outputFluids(Fluid.of(oxygenFluid, 12))
 
-	// Space
+	// Misc dust
 
-	event.recipes.gtceu.centrifuge('moon_stone_dust_separation')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('moon_stone'), 1))
-		.chancedOutput('ae2:sky_dust', 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Magnetite, 1), 3700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 2700, 700)
-		.outputFluids(Fluid.of('gtceu:helium_3', 50))
-
-	event.recipes.gtceu.centrifuge('moon_deepslate_dust_separation')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('moon_deepslate'), 1))
-		.chancedOutput('ae2:sky_dust', 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Olivine, 1), 3700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, TFGHelpers.getMaterial('desh'), 1), 2700, 700)
-		.outputFluids(Fluid.of('gtceu:helium_3', 50))
-
-	event.recipes.gtceu.centrifuge('glacio_stone_dust_separation')
-		.EUt(GTValues.VA[GTValues.MV])
-		.duration(480)
-		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('glacio_stone'), 1))
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.SiliconDioxide, 1), 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Ice, 1), 2700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1), 1700, 700)
-		.outputFluids(Fluid.of('gtceu:helium_3', 50))
-
-	event.recipes.gtceu.centrifuge('tfg:sky_dust')
-		.EUt(GTValues.VA[GTValues.LV])
-		.duration(100)
-		.itemInputs('ae2:sky_dust')
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.CertusQuartz, 1), 4700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.Iron, 1), 3700, 700)
-		.chancedOutput(ChemicalHelper.get(TagPrefix.dustTiny, GTMaterials.MetalMixture, 1), 2700, 700)
+	event.recipes.gtceu.centrifuge('gtceu:quartz_sand_separation')
+		.EUt(30)
+		.duration(60)
+		.itemInputs('2x gtceu:quartz_sand_dust')
+		.itemOutputs('gtceu:quartzite_dust')
+		.chancedOutput('#forge:dust/nether_quartz', 2000, 200)
 
 	// #endregion
 }
