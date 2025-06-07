@@ -174,8 +174,7 @@ const registerGTCEULoots = (event) => {
 			}
 			else if (material == TFGHelpers.getMaterial('desh')
 				|| material == TFGHelpers.getMaterial('ostrum')
-				|| material == TFGHelpers.getMaterial('calorite')
-				|| material == TFGHelpers.getMaterial('etrium'))
+				|| material == TFGHelpers.getMaterial('calorite'))
 			{
 				rawOreBlock = "ad_astra" + rawOreBlock;
 			}
