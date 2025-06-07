@@ -169,9 +169,20 @@ const registerGTCEULoots = (event) => {
 			// I LOVE LOOTJS I LOVE LOOTJS I LOVE LOOTJS
 			let rawOreBlock = `:${ChemicalHelper.get(TagPrefix.rawOreBlock, material, 1).getItem()}`;
 			if (material == GTMaterials.Copper || material == GTMaterials.Gold || material == GTMaterials.Iron)
+			{
 				rawOreBlock = "minecraft" + rawOreBlock;
+			}
+			else if (material == TFGHelpers.getMaterial('desh')
+				|| material == TFGHelpers.getMaterial('ostrum')
+				|| material == TFGHelpers.getMaterial('calorite')
+				|| material == TFGHelpers.getMaterial('etrium'))
+			{
+				rawOreBlock = "ad_astra" + rawOreBlock;
+			}
 			else
+			{
 				rawOreBlock = "gtceu" + rawOreBlock;
+			}
 
 			event.addBlockLootModifier(rawOreBlock)
 				.removeLoot(ItemFilter.ALWAYS_TRUE)
@@ -197,7 +208,7 @@ const registerGTCEULoots = (event) => {
 
 				let stoneTypeDust = ChemicalHelper.get(TagPrefix.dust, stoneTypeMaterial, 1)
 
-				// break with pickaxe
+				// break with pickaxe/mining hammer/drill/mining machine
 				event.addBlockLootModifier(`gtceu:${stoneType}_${material.getName()}_ore`)
 					.removeLoot(ItemFilter.ALWAYS_TRUE)
 					.addWeightedLoot([
