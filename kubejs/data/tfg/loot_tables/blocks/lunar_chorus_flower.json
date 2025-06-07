@@ -7,7 +7,38 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:chorus_fruit"
+					"name": "minecraft:chorus_fruit",
+					"conditions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 4,
+								"type": "minecraft:uniform"
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			]
+		},
+		{
+			"name": "loot_pool",
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "tfg:lunar_chorus_flower",
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.1
+						}
+					]
 				}
 			],
 			"conditions": [
