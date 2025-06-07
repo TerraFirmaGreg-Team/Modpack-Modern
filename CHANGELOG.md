@@ -3,6 +3,7 @@
 ### New features
 ### Changes
 ### Bug fixes
+- Fixed trowel being consumed on use @Redeix
 - Fixed glass dust dupe with unfinished lamps (#1134) @Pyritie
 
 ## [0.9.10] - 05.06.2025
