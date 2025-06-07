@@ -328,9 +328,9 @@ const registerAdAstraRecipes = (event) => {
 	//#region Стальной FE кабель т1
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_steel_cable')
-		.itemInputs('4x #forge:single_wires/manganese_phosphide', '#forge:plates/steel')
-		.inputFluids(Fluid.of('gtceu:polyethylene', 36))
-		.itemOutputs('4x ad_astra:steel_cable')
+		.itemInputs('#forge:single_wires/manganese_phosphide', '#forge:plates/polyethylene')
+		.inputFluids(Fluid.of('gtceu:redstone', 144))
+		.itemOutputs('ad_astra:steel_cable')
 		.duration(60)
 		.EUt(120)
 
@@ -339,9 +339,9 @@ const registerAdAstraRecipes = (event) => {
 	//#region FE кабель т2
 
 	event.recipes.gtceu.assembler('tfg:ad_astra_desh_cable')
-		.itemInputs('4x #forge:single_wires/magnesium_diboride', '#forge:plates/desh')
-		.inputFluids(Fluid.of('gtceu:polyethylene', 72))
-		.itemOutputs('4x ad_astra:desh_cable')
+		.itemInputs('#forge:single_wires/magnesium_diboride', '#forge:plates/polyvinyl_chloride')
+		.inputFluids(Fluid.of('gtceu:redstone', 288))
+		.itemOutputs('ad_astra:desh_cable')
 		.duration(60)
 		.EUt(480)
 
@@ -398,12 +398,11 @@ const registerAdAstraRecipes = (event) => {
 	//#region Космо картина
 
 	event.shaped('ad_astra:space_painting', [
-		'ABA',
-		'BCB',
-		'ABA'
+		'AAA',
+		'ACA',
+		'AAA'
 	], {
-		A: '#forge:nuggets/desh',
-		B: '#forge:ingots/desh',
+		A: '#forge:rods/desh',
 		C: '#tfc:high_quality_cloth',
 	}).id('tfg:space_painting')
 
