@@ -2216,4 +2216,18 @@ const registerAE2Recipes = (event) => {
 		.duration(150)
 		.EUt(2)
 		.category(GTRecipeCategories.MACERATOR_RECYCLING)
+
+	// other deco
+
+	event.shaped('ae2:not_so_mysterious_cube', [
+		' A ',
+		'BCD',
+		' E '
+	], {
+		A: 'ae2:calculation_processor_press',
+		B: 'ae2:engineering_processor_press',
+		C: 'ae2:fluix_block',
+		D: 'ae2:logic_processor_press',
+		E: 'ae2:silicon_press'
+	}).id('tfg:shaped/not_so_mysterious_cube')
 }
