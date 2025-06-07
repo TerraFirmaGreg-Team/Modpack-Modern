@@ -20,8 +20,10 @@ function registerTFGSpaceRecipes(event) {
 
 	// Aqueous accumulator
 
+	let aaCircuit = 1;
+
 	event.recipes.gtceu.aqueous_accumulator('water_overworld')
-		.circuit(1)
+		.circuit(aaCircuit++)
 		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
@@ -30,16 +32,25 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("minecraft:water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('water_nether')
-		.circuit(2)
+		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.ULV])
 		.addDataString("fluidA", "minecraft:water")
 		.addDataString("fluidB", "minecraft:water")
 		.outputFluids(Fluid.of("minecraft:water", 1000))
+
+	event.recipes.gtceu.aqueous_accumulator('water_moon')
+		.circuit(aaCircuit++)
+		.dimension('ad_astra:moon')
+		.duration(20)
+		.EUt(GTValues.VHA[GTValues.MV])
+		.addDataString("fluidA", "minecraft:water")
+		.addDataString("fluidB", "minecraft:water")
+		.outputFluids(Fluid.of("minecraft:water", 1000))
 		
 	event.recipes.gtceu.aqueous_accumulator('sea_water_overworld')
-		.circuit(3)
+		.circuit(aaCircuit++)
 		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -48,7 +59,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('sea_water_nether')
-		.circuit(4)
+		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
@@ -57,7 +68,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("tfc:salt_water", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_overworld')
-		.circuit(5)
+		.circuit(aaCircuit++)
 		.dimension('minecraft:overworld')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.HV])
@@ -66,7 +77,7 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of("minecraft:lava", 1000))
 
 	event.recipes.gtceu.aqueous_accumulator('lava_nether')
-		.circuit(6)
+		.circuit(aaCircuit++)
 		.dimension('minecraft:the_nether')
 		.duration(20)
 		.EUt(GTValues.VHA[GTValues.HV])
@@ -117,4 +128,68 @@ function registerTFGSpaceRecipes(event) {
 		.itemInputs(ChemicalHelper.get(TagPrefix.dust, TFGHelpers.getMaterial('asurine'), 1))
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dust, GTMaterials.CertusQuartz, 1), 4700, 700)
 		.chancedOutput(ChemicalHelper.get(TagPrefix.dust, GTMaterials.Zinc, 1), 3700, 700)
+
+	// Plants
+
+	// Chorus
+	event.recipes.gtceu.greenhouse('tfg:chorus')
+		.itemInputs('8x tfg:lunar_chorus_flower')
+		.itemOutputs('32x minecraft:chorus_fruit')
+		.chancedOutput('8x tfg:lunar_chorus_flower', 7500, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 5000, 0)
+		.duration(36000) // 30 mins
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+
+	event.recipes.gtceu.greenhouse('tfg:chorus_helium')
+		.itemInputs('8x tfg:lunar_chorus_flower')
+		.inputFluids(Fluid.of('gtceu:helium_3', 2000))
+		.itemOutputs('32x minecraft:chorus_fruit')
+		.chancedOutput('8x tfg:lunar_chorus_flower', 7500, 0)
+		.chancedOutput('8x tfg:lunar_chorus_flower', 5000, 0)
+		.duration(12000) // 30 mins
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+
+	event.recipes.gtceu.fermenter('tfg:chorus')
+		.itemInputs('minecraft:chorus_fruit')
+		.inputFluids(Fluid.of('gtceu:biomass', 20))
+		.chancedOutput('ae2:ender_dust', 100, 100)
+		.outputFluids(Fluid.of('gtceu:nitrogen', 100))
+		.duration(10 * 20)
+		.EUt(GTValues.VA[GTValues.MV])
+		.dimension('ad_astra:moon')
+
+	// Lightblooms
+	event.recipes.gtceu.greenhouse('tfg:lightbloom')
+		.itemInputs('32x minecraft:twisting_vines')
+		.itemOutputs('64x minecraft:twisting_vines')
+		.chancedOutput('minecraft:pearlescent_froglight', 2500, 0)
+		.chancedOutput('minecraft:verdant_froglight', 2500, 0)
+		.chancedOutput('minecraft:ochre_froglight', 2500, 0)
+		.duration(36000) // 30 mins
+		.circuit(1)
+		.EUt(GTValues.VA[GTValues.LV])
+		.dimension('ad_astra:moon')
+
+	event.recipes.gtceu.greenhouse('tfg:lightbloom_helium')
+		.itemInputs('32x minecraft:twisting_vines')
+		.inputFluids(Fluid.of('gtceu:helium_3', 2000))
+		.itemOutputs('64x minecraft:twisting_vines')
+		.chancedOutput('minecraft:pearlescent_froglight', 2500, 0)
+		.chancedOutput('minecraft:verdant_froglight', 2500, 0)
+		.chancedOutput('minecraft:ochre_froglight', 2500, 0)
+		.duration(12000) // 30 mins
+		.circuit(2)
+		.EUt(GTValues.VA[GTValues.LV])
+		.dimension('ad_astra:moon')
+
+	event.recipes.gtceu.brewery('biomass_from_twisting_vines')
+		.itemInputs('minecraft:twisting_vines')
+		.inputFluids(Fluid.of('minecraft:water', 20))
+		.outputFluids(Fluid.of('gtceu:biomass', 20))
+		.duration(50)
+		.EUt(3)
 }

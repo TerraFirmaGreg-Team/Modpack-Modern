@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chorus_fruit",
-					"conditions": [
+					"functions": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -23,6 +23,11 @@
 			"conditions": [
 				{
 					"condition": "minecraft:survives_explosion"
+				},
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {}
 				}
 			]
 		},
@@ -44,6 +49,11 @@
 			"conditions": [
 				{
 					"condition": "minecraft:survives_explosion"
+				},
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {}
 				}
 			]
 		}
