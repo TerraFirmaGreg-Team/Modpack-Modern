@@ -144,7 +144,7 @@ const registerFirmaLifeRecipes = (event) => {
 		
 	event.recipes.gtceu.alloy_smelter('firmalife:wine_glass')
 		.itemInputs('tfc:silica_glass_batch')
-		.notConsumable('gtceu:cylinder_casting_mold')
+		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('2x firmalife:wine_glass')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.ULV])
