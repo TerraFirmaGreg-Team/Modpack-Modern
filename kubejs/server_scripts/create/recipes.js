@@ -160,7 +160,7 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:create/chute')
 		.itemInputs('3x #forge:plates/wrought_iron')
-		.circuit(4)
+		.circuit(9)
 		.itemOutputs('create:chute')
 		.duration(200)
 		.EUt(20)
