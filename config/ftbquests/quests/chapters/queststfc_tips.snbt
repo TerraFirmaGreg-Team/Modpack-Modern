@@ -1996,7 +1996,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "custom(HasPreservation/firmaciv:smoked)custom(HasPreservation/tfc:brined)"
+							"ftbfiltersystem:filter": "custom(HasPreservation/firmalife:smoked)custom(HasPreservation/tfc:brined)"
 						}
 					}
 					title: "{quests.tfg_tips.smoke_meat.task}"
@@ -5269,7 +5269,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "custom(HasPreservation/firmaciv:smoked)item(tfc:food/pork)"
+							"ftbfiltersystem:filter": "custom(HasPreservation/firmalife:smoked)item(tfc:food/pork)"
 						}
 					}
 					title: "{quests.tfg_tips.bacon.task}"
