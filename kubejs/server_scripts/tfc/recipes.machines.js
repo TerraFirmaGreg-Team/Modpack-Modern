@@ -362,7 +362,7 @@ function registerTFCMachineRecipes(event) {
 
 	event.recipes.gtceu.fluid_solidifier('tfc:jar_solidification')
 		.inputFluids(Fluid.of('gtceu:glass', 144))
-		.notConsumable('gtceu:pill_casting_mold')
+		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
