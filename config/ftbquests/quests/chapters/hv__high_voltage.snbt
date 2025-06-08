@@ -1310,7 +1310,25 @@
 			x: 8.0d
 			y: -4.0d
 		}
+		{
+			description: [
+				"The HV Chapter will be updated with Moon Update. In the meantime be wary &lnot everything works&r with TFG."
+				""
+				"From there on Space Progression will begin and it will alter your progression through TFG. Be wary for major changes."
+			]
+			icon: "createdeco:decal_warning"
+			id: "66A1F17BB3453F0B"
+			size: 3.0d
+			tasks: [{
+				id: "111DD6881AB718E1"
+				title: "Okay I understand it's not up to date"
+				type: "checkmark"
+			}]
+			title: "Quests are OLD and not updated for TFG"
+			x: 1.5d
+			y: -4.75d
+		}
 	]
-	subtitle: ["Scale up your power and begin advanced chemistry"]
-	title: "&6HV&r - High Voltage"
+	subtitle: ["Rework on progress coming with Space Update"]
+	title: "&6HV&r - High Voltage &6(WIP)&r"
 }

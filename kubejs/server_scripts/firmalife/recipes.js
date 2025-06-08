@@ -444,12 +444,12 @@ const registerFirmaLifeRecipes = (event) => {
 
 	// Семена фруктов
 	global.FIRMALIFE_GREENHOUSE_FRUIT_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, true)
 	})
 
 	// Семена ягод
 	global.FIRMALIFE_GREENHOUSE_BERRY_RECIPE_COMPONENTS.forEach(element => {
-		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name)
+		generateGreenHouseRecipe(event, element.input, element.fluid_amount, element.output, element.name, false)
 	})
 
 	//#endregion

@@ -6,9 +6,6 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['minecraft:name_tag'], (item, advanced, text) => {
 		text.add(1, [text.of('Used on a Scribing Table along with an item to name it, or with black dye to name the tag.')])
 	})
-	event.addAdvanced(['gtceu:greenhouse'], (item, advanced, text) => {
-		text.add(1, [text.of('Currently, due to some errors in GTCEu regarding forgeCapacities, outputs rotten food.')])
-	})
 	event.addAdvanced(['toolbelt:belt'], (item, advanced, text) => {
 		text.add(1, [text.of('Press the §o§6Swap Tool§r keybind to open the radial menu.')]),
 		text.add(2, [text.of(`You can also right click with it in hand to add or remove tools.`)])
@@ -28,7 +25,12 @@ const registerTooltips = (event) =>
 		text.add(1, [text.of("§4Obsolete§f: Replaced by the AFC TreeTap, you can craft it from this one by placing this in a crafting table!")])
 	})
 	event.addAdvanced(['create:blaze_burner'], (item, advanced, text) => {
-		text.add(1, text.of('§cSuperheat§r with Coke, or Flawless and Exquisite coal gems.'))
+		text.add(1, text.of('§cSuperheat§r with Coke, Anthracite, or Flawless and Exquisite coal gems.'))
+	})
+	event.addAdvanced(['gtceu:greenhouse'], (item, advanced, text) => {
+		text.add(1, text.of('This machine has a §2Perfect Overclock§r!')),
+		text.add(2, text.of('Currently, due to a bug, sometimes outputs rotten food.'))
+		text.add(3, text.of(`The interior is customizable! Check the multiblock preview in JEI.`))
 	})
 	event.addAdvanced(['gtceu:nether_dome'], (item, advanced, text) => {
 		text.add(1, text.of('Artificial enviroment to simulate the Nether.')),
@@ -47,17 +49,17 @@ const registerTooltips = (event) =>
 	event.addAdvanced(['create:netherite_diving_helmet', 'create:netherite_backtank', 'create:netherite_diving_boots', 'minecraft:netherite_leggings'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -2')),
 		text.add(2, text.of('§7Insulation: +9'))
-		text.add(3, text.of('Wear the full set to be §eHeatproof§r.'))
+		text.add(3, text.of('Wear the full set to be §eHeatproof§r from ambient temperatures.'))
 	})
 	event.addAdvanced(['gtceu:nanomuscle_helmet', 'gtceu:nanomuscle_chestplate', 'gtceu:nanomuscle_leggings', 'gtceu:nanomuscle_boots', 'gtceu:avanced_nanomuscle_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -0.5')),
 		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
+		text.add(3, text.of('Wear the full set to be §eFully Insulated§r from ambient temperatures.'))
 	})
 	event.addAdvanced(['gtceu:quarktech_helmet', 'gtceu:quarktech_chestplate', 'gtceu:quarktech_leggings', 'gtceu:quarktech_boots', 'gtceu:advanced_quarktech_chestplate'], (item, advanced, text) => {
 		text.add(1, text.of('§7Warmth: -0.5')),
 		text.add(2, text.of('§7Insulation: +10'))
-		text.add(3, text.of('Wear the full set to be §eFully Insulated§r.'))
+		text.add(3, text.of('Wear the full set to be §eFully Insulated§r from ambient temperatures.'))
 	})
 
 	//supports
