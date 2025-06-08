@@ -355,7 +355,7 @@ function registerTFCMachineRecipes(event) {
 	// Empty Jar
 	event.recipes.gtceu.alloy_smelter('tfc:jar_alloying')
 		.itemInputs('#tfc:glass_batches_tier_2')
-		.notConsumable('gtceu:cylinder_casting_mold')
+		.notConsumable('gtceu:ball_casting_mold')
 		.itemOutputs('tfc:empty_jar')
 		.duration(100)
 		.EUt(2)
