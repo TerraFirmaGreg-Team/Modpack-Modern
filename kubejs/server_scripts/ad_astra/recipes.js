@@ -201,21 +201,6 @@ const registerAdAstraRecipes = (event) => {
 		C: 'gtceu:stainless_steel_fluid_cell'
 	}).id('tfg:large_gas_tank')
 
-
-	event.shapeless('ad_astra_giselle_addon:oxygen_can', ['#forge:tiny_fluid_pipes/polyethylene', 'ad_astra:gas_tank'])
-		.id('tfg:oxygen_can')
-
-	event.shaped('ad_astra_giselle_addon:netherite_oxygen_can', [
-		'DBD',
-		'ACA',
-		'AAA'
-	], {
-		A: '#forge:plates/titanium_tungsten_carbide',
-		B: '#forge:tiny_fluid_pipes/titanium',
-		C: 'gtceu:titanium_fluid_cell',
-		D: '#forge:plates/polyphenylene_sulfide'
-	}).id('tfg:netherite_oxygen_can')
-
 	//#endregion
 
 	//#region Machines
