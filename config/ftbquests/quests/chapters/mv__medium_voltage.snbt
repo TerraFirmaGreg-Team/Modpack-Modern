@@ -1268,12 +1268,12 @@
 		{
 			dependencies: ["45769156F4253C86"]
 			dependency_requirement: "one_completed"
-			description: ["{quests.medium_voltage.mv_.desc}"]
+			description: ["{quests.medium_voltage.mv_jetpack.desc}"]
 			id: "6FA956DAA72D6139"
 			optional: true
 			shape: "heart"
 			size: 1.0d
-			subtitle: "{quests.medium_voltage.mv_.subtitle}"
+			subtitle: "{quests.medium_voltage.mv_jetpack.subtitle}"
 			tasks: [{
 				id: "022324F9630960C6"
 				item: {
