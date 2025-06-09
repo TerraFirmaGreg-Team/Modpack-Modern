@@ -1134,10 +1134,10 @@ const registerGTCEURecipes = (event) => {
 	//#endregion
 	
 	//#region GT Facades
-	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#ae2:whitelisted/facades"])
+	event.shapeless(Item.of('gtceu:facade_cover', 8, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/iron', "#tfg:whitelisted/facades"])
     .modifyResult((craftingGrid, result) =>
     {
-       let blockID = craftingGrid.find(Ingredient.of("#ae2:whitelisted/facades")).id
+       let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 	   
 		console.log(blockID)
 		let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
@@ -1145,10 +1145,10 @@ const registerGTCEURecipes = (event) => {
         return result;
     }).id('gtceu:facade_cover');
 	
-	event.shapeless(Item.of('gtceu:facade_cover', 32, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/titanium', "#ae2:whitelisted/facades"])
+	event.shapeless(Item.of('gtceu:facade_cover', 32, '{Facade: {Count:1b,id:"minecraft:stone"}}'), ['3x #forge:plates/titanium', "#tfg:whitelisted/facades"])
     .modifyResult((craftingGrid, result) =>
     {
-       let blockID = craftingGrid.find(Ingredient.of("#ae2:whitelisted/facades")).id
+       let blockID = craftingGrid.find(Ingredient.of("#tfg:whitelisted/facades")).id
 	   
 		console.log(blockID)
 		let facadeNBT = "{Facade: {Count:1b,id:" + "'" + blockID + "'" + "}}"
