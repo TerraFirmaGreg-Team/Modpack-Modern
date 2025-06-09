@@ -1269,6 +1269,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1280,6 +1281,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1291,6 +1293,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1302,6 +1305,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1614,18 +1618,25 @@
 			description: ["{quests.tfg_tips.get_milk.desc}"]
 			id: "3C7F170E065B60E1"
 			subtitle: "{quests.tfg_tips.get_milk.subtitle}"
-			tasks: [{
-				id: "5ADFB5FC06EAED6C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+			tasks: [
+				{
+					id: "5ADFB5FC06EAED6C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+						}
 					}
+					optional_task: true
+					title: "{quests.tfg_tips.get_milk.task}"
+					type: "item"
 				}
-				title: "{quests.tfg_tips.get_milk.task}"
-				type: "item"
-			}]
+				{
+					id: "26460F400A280214"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.tfg_tips.get_milk.title}"
 			x: 4.5d
 			y: -8.5d
@@ -1996,7 +2007,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "custom(HasPreservation/firmaciv:smoked)custom(HasPreservation/tfc:brined)"
+							"ftbfiltersystem:filter": "custom(HasPreservation/firmalife:smoked)custom(HasPreservation/tfc:brined)"
 						}
 					}
 					title: "{quests.tfg_tips.smoke_meat.task}"
@@ -5269,7 +5280,7 @@
 						Count: 1
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "custom(HasPreservation/firmaciv:smoked)item(tfc:food/pork)"
+							"ftbfiltersystem:filter": "custom(HasPreservation/firmalife:smoked)item(tfc:food/pork)"
 						}
 					}
 					title: "{quests.tfg_tips.bacon.task}"
