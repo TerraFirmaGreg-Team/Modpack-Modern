@@ -260,53 +260,6 @@
             ]
         },
         {
-            "pakku_id": "Do6AZHXmaMkf26V5",
-            "pakku_links": [
-                "QXBpbwRXpmbaHixl",
-                "18IuoLEIRdaY1Jqy",
-                "R14GIz0WdkeNLuXD",
-                "rjOX4EXWlGvG84kO"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ad-astra-giselle-addon"
-            },
-            "name": {
-                "curseforge": "Ad Astra: Giselle Addon"
-            },
-            "id": {
-                "curseforge": "714958"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Ad-Astra-Giselle-Addon-forge-1.20.1-6.18.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6119/244/Ad-Astra-Giselle-Addon-forge-1.20.1-6.18.jar",
-                    "id": "6119244",
-                    "parent_id": "714958",
-                    "hashes": {
-                        "sha1": "877b88e224cbcbee498ec9d58f3554dd89e36469",
-                        "md5": "68d8d06a5277e289a242b4acdcf06313"
-                    },
-                    "required_dependencies": [
-                        "714059",
-                        "570073",
-                        "704113",
-                        "635042"
-                    ],
-                    "size": 458371,
-                    "date_published": "2025-01-24T09:42:36.753Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "txamn8WWF6EJ8Jcg",
             "type": "MOD",
             "slug": {
