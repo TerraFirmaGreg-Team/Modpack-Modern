@@ -112,6 +112,14 @@ const registerRailWaysRecipes = (event) => {
 				.inputs(`railways:white_conductor_cap`, Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`railways:${dye}_conductor_cap`)
 				.id(`barrel/railways/${dye}_cap`)
+
+	event.recipes.gtceu.chemical_bath(`tfg:cap_decolor_bath`)
+				.itemInputs('#tfg:colored_caps')
+				.inputFluids(Fluid.of('gtceu:chlorine',20))
+				.itemOutputs('railways:white_conductor_cap')
+				.duration(80)
+				.EUt(4)
+				.category(GTRecipeCategories.CHEM_DYES)
 		}
 	})
 		
