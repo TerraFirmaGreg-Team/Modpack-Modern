@@ -11,6 +11,8 @@
 - Fixed assembler recipe conflicts with certain wrought iron create items (#1142) @TomPlop & @Pyritie
 - Quest fixes (#1119, #1142) @TomPlop
 - Fixed recipe conflicts with scaffolding and paintings, and wine glasses and jars (#1141) @JeanRdSz
+- Fixed piglin disguise loot table giving the wrong item (#1151) @Redeix
+  
 
 ## [0.9.10] - 05.06.2025
 ### New features
