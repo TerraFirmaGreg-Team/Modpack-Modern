@@ -15,8 +15,8 @@ const registerAE2ItemTags = (event) => {
 		'#tfc:rock/cracked_bricks',
 		'#tfc:rock/chiseled',
 		'#tfc:rock/raw',
-		'#minecraft:planks',
-		'#minecraft:logs',
+		'#tfc:metal_plated_blocks',
+		
 		'#tfc:colored_raw_alabaster',
 		'#tfc:colored_bricks_alabaster',
 		'#tfc:colored_polished_alabaster',
@@ -26,72 +26,35 @@ const registerAE2ItemTags = (event) => {
 		'#forge:glass',
 		'#minecraft:terracotta',
 		'#create:casing',
+		'#dormum_ornamentum:brick_items',
+		'#simplylight:any_lamp_on',
+		'#simplylight:any_lamp_off',
+		'#minecraft:planks',
+		'#minecraft:logs',
 		//rnr shingles
 		'rnr:ceramic_roof',
 		'rnr:terracotta_roof',
-		'rnr:wood/shingles/teak',
-		'rnr:wood/shingles/cypress',
-		'rnr:wood/shingles/fig',
-		'rnr:wood/shingles/ironwood',
-		'rnr:wood/shingles/ipe',
-		'rnr:wood/shingles/chestnut',
-		'rnr:wood/shingles/blackwood',
-		'rnr:wood/shingles/birch',
-		'rnr:wood/shingles/aspen',
-		'rnr:wood/shingles/ash',
-		'rnr:wood/shingles/acacia',
-		'rnr:wood/shingles/douglas_fir',
-		'rnr:wood/shingles/hickory',
-		'rnr:wood/shingles/kapok',
-		'rnr:wood/shingles/mangrove',
-		'rnr:wood/shingles/maple',
-		'rnr:wood/shingles/oak',
-		'rnr:wood/shingles/palm',
-		'rnr:wood/shingles/pine',
-		'rnr:wood/shingles/rosewood',
-		'rnr:wood/shingles/sequoia',
-		'rnr:wood/shingles/spruce',
-		'rnr:wood/shingles/sycamore',
-		'rnr:wood/shingles/white_cedar',
-		'rnr:wood/shingles/willow',
-		'rnr:wood/shingles/baobab',
-		'rnr:wood/shingles/eucalyptus',
-		'rnr:wood/shingles/mahogany',
-		'rnr:wood/shingles/hevea',
-		'rnr:wood/shingles/tualang',
+		
 		//tfc blocks
 		'tfc:fire_bricks',
 		'tfc:aggregate',
 		'tfc:alabaster/raw',
 		'tfc:alabaster/bricks',
 		'tfc:alabaster/polished',
+		
+		//firmalife blocks
+		'firmalife:metal/blocks/stainless_steel',
+		'firmalife:metal/blocks/chromium',
+		
 		//gtceu blocks
 		'gtceu:coke_oven_bricks',
 		'gtceu:firebricks',
-		'gtceu:mossy_light_concrete_cobblestone',
-		'gtceu:polished_light_concrete',
-		'gtceu:light_concrete_bricks',
-		'gtceu:cracked_light_concrete_bricks',
-		'gtceu:mossy_light_concrete_bricks',
-		'gtceu:chiseled_light_concrete',
-		'gtceu:light_concrete_tile',
-		'gtceu:light_concrete_small_tile',
-		'gtceu:light_concrete_windmill_a',
-		'gtceu:light_concrete_windmill_b',
-		'gtceu:small_light_concrete_bricks',
-		'gtceu:square_light_concrete_bricks',
-		'gtceu:mossy_dark_concrete_cobblestone',
-		'gtceu:polished_dark_concrete',
-		'gtceu:dark_concrete_bricks',
-		'gtceu:cracked_dark_concrete_bricks',
-		'gtceu:mossy_dark_concrete_bricks',
-		'gtceu:chiseled_dark_concrete',
-		'gtceu:dark_concrete_tile',
-		'gtceu:dark_concrete_small_tile',
-		'gtceu:dark_concrete_windmill_a',
-		'gtceu:dark_concrete_windmill_b',
-		'gtceu:small_dark_concrete_bricks',
-		'gtceu:square_dark_concrete_bricks',
+		'gtceu:wood_wall',
+		'gtceu:tempered_glass',
+		'gtceu:laminated_glass',
+		'gtceu:plascrete',
+		'gtceu:cleanroom_glass',
+		
 		//gtceu casing
 		'gtceu:steam_machine_casing',
 		'gtceu:heatproof_machine_casing',
@@ -121,6 +84,33 @@ const registerAE2ItemTags = (event) => {
 		'gtceu:computer_casing',
 		'gtceu:advanced_computer_casing',
 		'gtceu:high_power_casing',
+		
+		//gtceu hazard signs
+		'gtceu:acid_hazard_sign_block',
+		'gtceu:antimatter_hazard_sign_block',
+		'gtceu:bio_hazard_sign_block',
+		'gtceu:boss_hazard_sign_block',
+		'gtceu:causality_hazard_sign_block',
+		'gtceu:explosion_hazard_sign_block',
+		'gtceu:fire_hazard_sign_block',
+		'gtceu:frost_hazard_sign_block',
+		'gtceu:generic_hazard_sign_block',
+		'gtceu:gregification_hazard_sign_block',
+		'gtceu:high_pressure_hazard_sign_block',
+		'gtceu:high_voltage_hazard_sign_block',
+		'gtceu:laser_hazard_sign_block',
+		'gtceu:magic_hazard_sign_block',
+		'gtceu:magnetic_hazard_sign_block',
+		'gtceu:mob_infestation_hazard_sign_block',
+		'gtceu:mob_spawner_hazard_sign_block',
+		'gtceu:noise_hazard_sign_block',
+		'gtceu:radioactive_hazard_sign_block',
+		'gtceu:spatial_storage_hazard_sign_block',
+		'gtceu:turret_hazard_sign_block',
+		'gtceu:void_hazard_sign_block',
+		'gtceu:yellow_stripes_block_a',
+		'gtceu:yellow_stripes_block_b',
+		
 		//windows
 		'create:dark_oak_window',
 		'create:mangrove_window',
@@ -134,8 +124,36 @@ const registerAE2ItemTags = (event) => {
 		'createdeco:brass_window',
 		'createdeco:zinc_window',
 		'everycomp:c/domum_ornamentum/cactus_window',
-		'everycomp:c/domum_ornamentum/cactus_extra_window'
+		'everycomp:c/domum_ornamentum/cactus_extra_window',
+		
+		//create deco
+		'createdeco:andesite_sheet_metal',
+		'createdeco:brass_sheet_metal',
+		'createdeco:iron_sheet_metal',
+		'createdeco:copper_sheet_metal',
+		'createdeco:industrial_iron_sheet_metal',
+		'createdeco:zinc_sheet_metal'
 	];
+	
+	const mc_colors =
+	[
+	'white',
+	'orange',
+	'magenta',
+	'light_blue',
+	'yellow',
+	'lime',
+	'pink',
+	'gray',
+	'light_gray',
+	'cyan',
+	'purple',
+	'blue',
+	'brown',
+	'green',
+	'red',
+	'black'
+	]
 	
 	const wood_types_tfc = 
 	[
@@ -175,7 +193,6 @@ const registerAE2ItemTags = (event) => {
 	'ipe'
 	]
 	
-	
 	const createdeco_bricks_fm = 
 	[
 	'pearl_bricks',
@@ -186,13 +203,63 @@ const registerAE2ItemTags = (event) => {
 	'dusk_bricks',
 	'blue_bricks',
 	'scarlet_bricks'
+	]
+	
+	const gtceu_stonelike_fm = 
+	[
+	'light_concrete', 
+	'dark_concrete',
+	'red_granite',
+	'marble'
+	]
+	
+	const create_rock_types_fm = 
+	[
+	
+	
 	
 	]
-
+	
+	//misc blocks
 	facade_materials.forEach(facade_material => {
 		event.add('ae2:whitelisted/facades', `${facade_material}`)
 	});
-
+	
+	//gtceu stonelike stuff
+	gtceu_stonelike_fm.forEach(facade_material => {
+		if(facade_material != 'marble') 
+		{
+			event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_cobblestone')
+			event.add('ae2:whitelisted/facades', 'gtceu:mossy_' + facade_material + '_cobblestone')
+			event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_bricks')
+			event.add('ae2:whitelisted/facades', 'gtceu:cracked_' + facade_material + '_bricks')
+			event.add('ae2:whitelisted/facades', 'gtceu:mossy_' + facade_material + '_bricks')
+		}
+		
+		event.add('ae2:whitelisted/facades', 'gtceu:polished_' + facade_material)
+		event.add('ae2:whitelisted/facades', 'gtceu:chiseled' + facade_material)
+		
+		event.add('ae2:whitelisted/facades', 'gtceu:small_' + facade_material + '_bricks')
+		event.add('ae2:whitelisted/facades', 'gtceu:square_' + facade_material + '_bricks')
+		
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_tile')
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_small_tile')
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_windmill_a')
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_windmill_b')
+	});
+	
+	//gtceu misc colored blocks
+	mc_colors.forEach(facade_material => {
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_metal_sheet')
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_large_metal_sheet')
+		event.add('ae2:whitelisted/facades', 'gtceu:' + facade_material + '_studs')
+	});
+	
+	//rnr shingles
+	wood_types_tfc.concat(wood_types_afc).forEach(facade_material => {
+		event.add('ae2:whitelisted/facades', 'rnr:wood/shingles/' + facade_material)
+	});
+	
 	//createdeco bricks
 	createdeco_bricks_fm.forEach(facade_material => {
 		if (facade_material != 'red_bricks') 
@@ -209,14 +276,10 @@ const registerAE2ItemTags = (event) => {
 	
 	//everycomp windows
 	wood_types_tfc.forEach(facade_material => {
-		
 		event.add('ae2:whitelisted/facades', 'everycomp:c/tfc/' + facade_material + '_window')
-	
 	});
 	wood_types_afc.forEach(facade_material => {
-		
 		event.add('ae2:whitelisted/facades', 'everycomp:c/afc/' + facade_material + '_window')
-		
 	});
 }
 
