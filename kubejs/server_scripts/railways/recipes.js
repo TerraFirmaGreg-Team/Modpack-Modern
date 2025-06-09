@@ -97,7 +97,7 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.tfc.barrel_sealed(1000)
 		.inputs('#tfg:colored_caps', Fluid.of(`tfc:lye`, 288))
 		.outputItem(`railways:white_conductor_cap`)
-		.id(`barrel/railways/cap_decolor`)
+		.id(`railways:barrel/cap_decolor`)
 
 	global.MINECRAFT_DYE_NAMES.forEach(dye => {
 	event.recipes.gtceu.chemical_bath(`railways/${dye}_conductor_cap`)
@@ -111,7 +111,7 @@ const registerRailWaysRecipes = (event) => {
 	event.recipes.tfc.barrel_sealed(1000)
 				.inputs(`railways:white_conductor_cap`, Fluid.of(`tfc:${dye}_dye`, 288))
 				.outputItem(`railways:${dye}_conductor_cap`)
-				.id(`barrel/railways/${dye}_cap`)
+				.id(`railways:barrel/dyeing/${dye}_conductor_cap`)
 
 	event.recipes.gtceu.chemical_bath(`tfg:cap_decolor_bath`)
 				.itemInputs('#tfg:colored_caps')
