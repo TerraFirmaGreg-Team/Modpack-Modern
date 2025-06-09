@@ -1,6 +1,7 @@
 # Changelog
 ## [Unreleased]
 ### New features
+- Added back the vanilla stonecutter @Pyritie
 ### Changes
 ### Bug fixes
 - Fixed trowel being consumed on use (#1143) @Redeix
