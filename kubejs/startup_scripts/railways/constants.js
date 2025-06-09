@@ -100,24 +100,6 @@ global.RAIL_WAYS_DISABLED_ITEMS = [
     'railways:track_incomplete_tieless_narrow',
     'railways:track_incomplete_tieless_wide',
 
-    // Caps
-    'railways:white_conductor_cap',
-    'railways:orange_conductor_cap',
-    'railways:magenta_conductor_cap',
-    'railways:light_blue_conductor_cap',
-    'railways:yellow_conductor_cap',
-    'railways:lime_conductor_cap',
-    'railways:pink_conductor_cap',
-    'railways:gray_conductor_cap',
-    'railways:light_gray_conductor_cap',
-    'railways:cyan_conductor_cap',
-    'railways:purple_conductor_cap',
-    'railways:blue_conductor_cap',
-    'railways:brown_conductor_cap',
-    'railways:green_conductor_cap',
-    'railways:red_conductor_cap',
-    'railways:black_conductor_cap',
-
     // Incomplete Caps
     'railways:white_incomplete_conductor_cap',
     'railways:orange_incomplete_conductor_cap',

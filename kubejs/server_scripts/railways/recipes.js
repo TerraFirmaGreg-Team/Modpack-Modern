@@ -85,6 +85,46 @@ const registerRailWaysRecipes = (event) => {
 
 	//#endregion
 
+	//#region conductor
+	event.recipes.gtceu.assembler(`tfg:railways/conductor_cap`)
+		.itemInputs('#gtceu:circuits/lv','#gtceu:electric_motors','2x #forge:string','#tfc:high_quality_cloth')
+		.circuit(15)
+		.itemOutputs('railways:white_conductor_cap')
+		.duration(80)
+		.inputFluids(Fluid.of('gtceu:glue', 200))
+		.EUt(16)
+		
+	event.recipes.tfc.barrel_sealed(1000)
+		.inputs('#tfg:colored_caps', Fluid.of(`tfc:lye`, 288))
+		.outputItem(`railways:white_conductor_cap`)
+		.id(`railways:barrel/cap_decolor`)
+
+	global.MINECRAFT_DYE_NAMES.forEach(dye => {
+	event.recipes.gtceu.chemical_bath(`railways/${dye}_conductor_cap`)
+				.itemInputs('railways:white_conductor_cap')
+				.inputFluids(Fluid.of(`tfc:${dye}_dye`, 288))
+				.itemOutputs(`railways:${dye}_conductor_cap`)
+				.duration(200)
+				.EUt(4)
+				.category(GTRecipeCategories.CHEM_DYES)
+		if (dye != "white") {
+	event.recipes.tfc.barrel_sealed(1000)
+				.inputs(`railways:white_conductor_cap`, Fluid.of(`tfc:${dye}_dye`, 288))
+				.outputItem(`railways:${dye}_conductor_cap`)
+				.id(`railways:barrel/dyeing/${dye}_conductor_cap`)
+
+	event.recipes.gtceu.chemical_bath(`tfg:cap_decolor_bath`)
+				.itemInputs('#tfg:colored_caps')
+				.inputFluids(Fluid.of('gtceu:chlorine',20))
+				.itemOutputs('railways:white_conductor_cap')
+				.duration(80)
+				.EUt(4)
+				.category(GTRecipeCategories.CHEM_DYES)
+		}
+	})
+		
+	//#endregion
+
 	// Переключатель пути поезда из андезита
 	event.shaped('railways:track_switch_andesite', [
 		'BAB',
