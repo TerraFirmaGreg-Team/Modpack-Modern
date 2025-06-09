@@ -373,6 +373,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:rope_pulley')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(22)
 
 	// Шкиф подъемника
 	event.shaped('create:elevator_pulley', [
@@ -411,6 +412,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:cart_assembler')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(21)
 
 	// Контроллер рельсы
 	event.shaped('create:controller_rail', [
@@ -477,6 +479,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:mechanical_drill')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(19)
 
 	event.shaped('create:mechanical_roller', [
 		'GBG',
@@ -497,6 +500,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:mechanical_roller')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(20)
 
 	// Редстоуновый контакт
 	event.shaped('2x create:redstone_contact', [
@@ -555,7 +559,7 @@ const registerCreateRecipes = (event) => {
 
 	event.recipes.gtceu.assembler('tfg:create/mechanical_plough')
 		.itemInputs('3x #forge:hoe_heads', '2x #forge:plates/wrought_iron', '#tfg:small_cogwheels', 'create:andesite_casing')
-		.circuit(4)
+		.circuit(5)
 		.itemOutputs('create:mechanical_plough')
 		.duration(200)
 		.EUt(20)
@@ -715,7 +719,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:andesite_funnel')
 		.itemInputs('#forge:plates/wrought_iron', '#forge:foils/rubber')
 		.itemOutputs('create:andesite_funnel')
-		.circuit(4)
+		.circuit(6)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -732,7 +736,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:andesite_funnel_leather')
 		.itemInputs('#forge:plates/wrought_iron', '#forge:leather')
 		.itemOutputs('create:andesite_funnel')
-		.circuit(4)
+		.circuit(7)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -752,7 +756,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:brass_funnel')
 		.itemInputs('2x #forge:plates/brass', '2x #forge:foils/rubber', 'create:electron_tube')
 		.itemOutputs('2x create:brass_funnel')
-		.circuit(6)
+		.circuit(8)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -771,7 +775,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:brass_funnel_leather')
 		.itemInputs('2x #forge:plates/brass', '2x #forge:leather', 'create:electron_tube')
 		.itemOutputs('2x create:brass_funnel')
-		.circuit(6)
+		.circuit(9)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -789,7 +793,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:andesite_tunnel')
 		.itemInputs('#forge:plates/wrought_iron', '#forge:foils/rubber')
 		.itemOutputs('create:andesite_tunnel')
-		.circuit(5)
+		.circuit(10)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -806,7 +810,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:andesite_tunnel_leather')
 		.itemInputs('#forge:plates/wrought_iron', '#forge:leather')
 		.itemOutputs('create:andesite_tunnel')
-		.circuit(5)
+		.circuit(11)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -825,7 +829,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:brass_tunnel')
 		.itemInputs('2x #forge:plates/brass', '2x #forge:foils/rubber', 'create:electron_tube')
 		.itemOutputs('2x create:brass_tunnel')
-		.circuit(5)
+		.circuit(12)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -843,7 +847,7 @@ const registerCreateRecipes = (event) => {
 	event.recipes.gtceu.assembler('create:brass_tunnel_leather')
 		.itemInputs('2x #forge:plates/brass', '2x #forge:leather', 'create:electron_tube')
 		.itemOutputs('2x create:brass_tunnel')
-		.circuit(5)
+		.circuit(13)
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
 
@@ -863,6 +867,7 @@ const registerCreateRecipes = (event) => {
 		.itemInputs('2x #forge:plates/wrought_iron', '2x #forge:rings/wrought_iron', '#forge:small_gears')
 		.itemOutputs('create:display_board')
 		.duration(50)
+		.circuit(14)
 		.EUt(GTValues.VA[GTValues.ULV])
 
 	// Латунная рука
@@ -913,6 +918,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('2x create:electron_tube')
 		.duration(50)
 		.EUt(7)
+		.circuit(14)
 
 	event.shaped('4x create:electron_tube', [
 		'FAG',
@@ -1687,6 +1693,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:contraption_controls')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(18)
 
 	event.shaped('create:wrench', [
 		' BB',
@@ -1757,6 +1764,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:redstone_link')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(17)
 
 	event.shaped('create:display_link', [
 		'FED',
@@ -1833,6 +1841,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:mechanical_bearing')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(15)
 
 	event.shaped('create:gantry_carriage', [
 		'DCE',
@@ -1871,6 +1880,7 @@ const registerCreateRecipes = (event) => {
 		.itemOutputs('create:weighted_ejector')
 		.duration(50)
 		.EUt(GTValues.VA[GTValues.ULV])
+		.circuit(16)
 
 	event.shaped('create:turntable', [
 		'DA ',

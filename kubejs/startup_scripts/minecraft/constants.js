@@ -503,7 +503,6 @@ global.MINECRAFT_DISABLED_ITEMS = [
     'minecraft:mud',
     'minecraft:netherite_scrap',
     'minecraft:suspicious_gravel',
-    'minecraft:stonecutter',
     'minecraft:gravel',
     'minecraft:large_fern', 
     'minecraft:tall_grass', 

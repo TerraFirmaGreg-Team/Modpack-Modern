@@ -1,6 +1,7 @@
 const registerTFGItemTags = (event) => {
 
 	registerTFGTrimTags(event)
+	registerFacadeWhitelistTags(event)
 
 	//temporary hidden items
 	event.add('c:hidden_from_recipe_viewers', 'tfg:geyser_source_small')
