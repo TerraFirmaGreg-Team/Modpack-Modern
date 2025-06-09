@@ -2,6 +2,7 @@
 ## [Unreleased]
 ### New features
 - Added back the vanilla stonecutter @Pyritie
+- Added our own recipes for crafting GregTech facades - 3 cast iron plates for 8 facades, or 3 titanium plates for 32 facades (#1145) @BlueBoat29
 ### Changes
 ### Bug fixes
 - Fixed trowel being consumed on use (#1143) @Redeix
