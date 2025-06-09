@@ -1010,4 +1010,22 @@ const registerMinecraftRecipes = (event) => {
 		.itemOutputs('minecraft:shroomlight')
 		.duration(200)
 		.EUt(GTValues.VA[GTValues.ULV])
+
+	// Stonecutter
+
+	event.shaped('minecraft:stonecutter',
+		[
+			' E ',
+			'CAC',
+			'BDB'
+		],
+		{
+			A: '#forge:plates/wrought_iron',
+			B: '#tfc:lumber',
+			C: '#forge:plates/brass',
+			D: '#forge:small_gears',
+			E: '#forge:buzz_saw_heads'
+		}).id('tfg:shaped/stonecutter');
+
+	event.stonecutting('minecraft:smooth_quartz', 'minecraft:quartz_block')
 }
