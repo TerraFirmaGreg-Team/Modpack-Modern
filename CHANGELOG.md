@@ -3,8 +3,12 @@
 ### New features
 ### Changes
 ### Bug fixes
-- Fixed trowel being consumed on use @Redeix
+- Fixed trowel being consumed on use (#1143) @Redeix
 - Fixed glass dust dupe with unfinished lamps (#1134) @Pyritie
+- Fixed ultimate battery recipe stack size issue (#1149) @Pyritie
+- Fixed assembler recipe conflicts with certain wrought iron create items (#1142) @TomPlop & @Pyritie
+- Quest fixes (#1119, #1142) @TomPlop
+- Fixed recipe conflicts with scaffolding and paintings, and wine glasses and jars (#1141) @JeanRdSz
 
 ## [0.9.10] - 05.06.2025
 ### New features
