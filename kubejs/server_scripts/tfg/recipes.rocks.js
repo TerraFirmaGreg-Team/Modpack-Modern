@@ -70,7 +70,7 @@ function registerTFGRockRecipes(event) {
 		event.recipes.gtceu.laser_engraver(`${x.raw}_to_${x.polished}`.replace(/:/g, '_'))
 			.itemInputs(x.raw)
 			.itemOutputs(x.polished)
-			.notConsumable('tfc:lens')
+			.notConsumable('gtceu:glass_tube')
 			.duration(30)
 			.EUt(GTValues.VA[GTValues.ULV])
 
