@@ -126,8 +126,10 @@ TFCEvents.data(event => {
     registerTFCDataForChalk(event);
     registerTFCDataForGTCEU(event)
     registerTFCDataForImmersiveAircraft(event);
+    registerTFCDataForSophisticatedBackpacks(event)
     registerTFCDataForTFC(event)
     registerTFCDataForTFCBetterBF(event)
+    registerTFCDataForTFCLunchbox(event)
     registerTFCDataForWaterFlasks(event)
     registerTFCDataForFirmalife(event)
 })
