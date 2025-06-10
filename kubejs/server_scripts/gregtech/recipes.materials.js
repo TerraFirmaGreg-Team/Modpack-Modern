@@ -221,7 +221,7 @@ function registerGTCEUMetalRecipes(event) {
 				.outputFluids(Fluid.of(material.getFluid(), 288))
 				.duration(material.getMass())
 				.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
-				.EUt(GTValues.VA[GTValues.ULV])
+				.EUt(material.hasProperty(PropertyKey.BLAST) ? GTValues.VA[GTValues.MV] : GTValues.VA[GTValues.ULV])
 		}
 
 		if (material.hasProperty(PropertyKey.DUST)) {
