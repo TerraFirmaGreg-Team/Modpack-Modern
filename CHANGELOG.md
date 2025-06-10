@@ -4,6 +4,7 @@
 - Added back the vanilla stonecutter @Pyritie
 - Added our own recipes for crafting GregTech facades - 3 cast iron plates for 8 facades, or 3 titanium plates for 32 facades (#1145) @BlueBoat29
 - Added create conductor recipes (#1144) @JeanRdSz
+- Added lunch boxes! They keep your food cool and you can even eat right out of them! @Thomasx0
 ### Changes
 ### Bug fixes
 - Fixed trowel being consumed on use (#1143) @Redeix

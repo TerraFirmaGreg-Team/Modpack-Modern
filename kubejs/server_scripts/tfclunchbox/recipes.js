@@ -39,14 +39,14 @@ function registerTFCLunchBoxRecipes(event) {
 	event.remove({ id: 'tfclunchbox:fill_capsule_with_ice' })
 
 	event.recipes.gtceu.assembler('tfclunchbox:universal_capsule')
-		.itemInputs('1x #forge:plates/red_steel', '1x #forge:rings/sterling_silver')
+		.itemInputs('1x #forge:foils/red_steel', '1x #forge:rings/sterling_silver')
 		.itemOutputs('tfclunchbox:universal_capsule')
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
 
 	event.recipes.gtceu.canner('tfclunchbox:fill_capsule_with_ice')
 		.itemInputs('tfclunchbox:universal_capsule')
-		.inputFluids(Fluid.of('gtceu:ice', 144 * 9))
+		.inputFluids(Fluid.of('gtceu:ice', 144))
 		.itemOutputs(Item.of('tfclunchbox:universal_capsule', '{Durability:10}').withName(Text.translate('item.tfclunchbox.universal_capsule.filled')))
 		.duration(100)
 		.EUt(GTValues.VA[GTValues.LV])
