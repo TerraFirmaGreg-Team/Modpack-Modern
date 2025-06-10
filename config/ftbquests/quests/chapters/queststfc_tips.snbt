@@ -1228,6 +1228,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.refrigerator.desc}"]
 			id: "58EC77A796979E68"
+			shape: "gear"
 			size: 2.0d
 			subtitle: "{quests.tfg_tips.refrigerator.subtitle}"
 			tasks: [{
@@ -1236,8 +1237,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.refrigerator.title}"
-			x: 9.0d
-			y: -17.0d
+			x: 5.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -1269,6 +1270,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1280,6 +1282,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1291,6 +1294,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1302,6 +1306,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1394,8 +1399,7 @@
 			dependency_requirement: "one_completed"
 			description: ["{quests.tfg_tips.cellar.desc}"]
 			id: "3D1FF501DE2E56FE"
-			shape: "gear"
-			size: 4.0d
+			size: 1.5d
 			subtitle: "{quests.tfg_tips.cellar.subtitle}"
 			tasks: [
 				{
@@ -1418,8 +1422,8 @@
 				}
 			]
 			title: "{quests.tfg_tips.cellar.title}"
-			x: 3.5d
-			y: -17.0d
+			x: 3.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["3D1FF501DE2E56FE"]
@@ -1439,8 +1443,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.cellar_blocks.title}"
-			x: 3.5d
-			y: -20.0d
+			x: 3.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["2EFB241490502DB3"]
@@ -1607,25 +1611,32 @@
 			}]
 			title: "{quests.tfg_tips.passive_preservation.title}"
 			x: 6.5d
-			y: -15.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["4047EE998BC4CD03"]
 			description: ["{quests.tfg_tips.get_milk.desc}"]
 			id: "3C7F170E065B60E1"
 			subtitle: "{quests.tfg_tips.get_milk.subtitle}"
-			tasks: [{
-				id: "5ADFB5FC06EAED6C"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+			tasks: [
+				{
+					id: "5ADFB5FC06EAED6C"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"minecraft:milk\"}})item(minecraft:milk_bucket))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:yak_milk\"}})item(firmalife:bucket/yak_milk))only_one(nbt(fuzzy:{fluid:{Amount:1000,FluidName:\"firmalife:goat_milk\"}})item(firmalife:bucket/goat_milk)))"
+						}
 					}
+					optional_task: true
+					title: "{quests.tfg_tips.get_milk.task}"
+					type: "item"
 				}
-				title: "{quests.tfg_tips.get_milk.task}"
-				type: "item"
-			}]
+				{
+					id: "26460F400A280214"
+					type: "checkmark"
+				}
+			]
 			title: "{quests.tfg_tips.get_milk.title}"
 			x: 4.5d
 			y: -8.5d
@@ -3626,8 +3637,8 @@
 				type: "item"
 			}]
 			title: "{quests.tfg_tips.vessel_preservation.title}"
-			x: 6.5d
-			y: -16.5d
+			x: 8.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["173F6FA60A5B280B"]
@@ -5302,6 +5313,68 @@
 			title: "{quests.tfg_tips.bacon.title}"
 			x: 4.75d
 			y: -12.5d
+		}
+		{
+			dependencies: ["13F7066858E923FF"]
+			description: ["{quests.tfg_tips.lunchbox.desc}"]
+			icon: {
+				Count: 1
+				id: "tfclunchbox:lunchbox"
+				tag: {
+					SelectedSlot: 0
+				}
+			}
+			id: "6C18E8F79A841620"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{quests.tfg_tips.lunchbox.subtitle}"
+			tasks: [
+				{
+					id: "33971FCF02C81741"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfclunchbox:lunchbox)item(tfclunchbox:cooling_lunchbox))"
+						}
+					}
+					title: "{quests.tfg_tips.lunchbox.task}"
+					type: "item"
+				}
+				{
+					id: "5439AF9F5493A3D1"
+					item: {
+						Count: 1
+						id: "tfclunchbox:universal_capsule"
+						tag: {
+							Damage: 0
+							Durability: 10
+							display: {
+								Name: "{\"translate\":\"item.tfclunchbox.universal_capsule.filled\"}"
+							}
+						}
+					}
+					match_nbt: false
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "134E8B8345E6DEE2"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfclunchbox:ice)"
+						}
+					}
+					optional_task: true
+					title: "Any #tfclunchbox:ice"
+					type: "item"
+				}
+			]
+			title: "{quests.tfg_tips.lunchbox.title}"
+			x: 7.5d
+			y: -18.0d
 		}
 	]
 	subtitle: ["{quests.tfg_tips.subtitle}"]

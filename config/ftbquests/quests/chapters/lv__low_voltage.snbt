@@ -117,7 +117,7 @@
 			description: ["{quests.low_voltage.lv_amp_explanation.desc}"]
 			id: "7B0FF43022F6C2EC"
 			optional: true
-			shape: "rsquare"
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_amp_explanation.subtitle}"
 			tasks: [{
@@ -673,7 +673,8 @@
 			]
 			icon: "gtceu:fluid_cell"
 			id: "292938760AB9A12B"
-			shape: "square"
+			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.universal_cell.subtitle}"
 			tasks: [{
@@ -691,6 +692,7 @@
 			icon: "gtceu:rotor_casting_mold"
 			id: "115C4226F6473F0C"
 			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.mold_rotor.subtitle}"
 			tasks: [
@@ -1112,6 +1114,7 @@
 			icon: "gtceu:lv_rock_crusher"
 			id: "1F2359106FC95603"
 			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_rock_crusher.subtitle}"
 			tasks: [{
@@ -1139,6 +1142,7 @@
 			icon: "gtceu:lv_charger_4x"
 			id: "2DB259568F347C0E"
 			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_turbo_charge.subtitle}"
 			tasks: [{
@@ -1166,6 +1170,7 @@
 			icon: "gtceu:lv_fisher"
 			id: "3B26CA44EA955B07"
 			optional: true
+			shape: "heart"
 			size: 1.0d
 			subtitle: "{quests.low_voltage.lv_fisher.subtitle}"
 			tasks: [{
@@ -1409,6 +1414,7 @@
 			icon: "tfg:lv_aqueous_accumulator"
 			id: "47E6F8AC20D51814"
 			optional: true
+			shape: "heart"
 			subtitle: "{quests.low_voltage.lv_aqueous_accumulator.subtitle}"
 			tasks: [{
 				id: "685FCAE71ECE04BC"
