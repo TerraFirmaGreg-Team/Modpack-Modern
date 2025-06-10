@@ -24,6 +24,12 @@ const registerAdAstraFluidTags = (event) => {
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:cetane_boosted_diesel')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:gasoline')
 	event.add('ad_astra:tier_1_rover_fuel', 'gtceu:high_octane_gasoline')
+
+	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_nitrox')
+	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_heliox')
+	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_heliox_3')
+	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_trimix')
+	event.add('ad_astra:zip_gun_propellants', 'tfg:compressed_trimix_3')
 }
 
 const registerAdAstraItemTags = (event) => {
@@ -186,7 +192,6 @@ const registerAdAstraBiomeTags = (event) => {
 const registerAdAstraEntityTypeTags = (event) => {
 
 	// moon
-
 	const MOON_ENTITIES = [
 		'tfc:rat',
 		'minecraft:rabbit',
@@ -195,11 +200,12 @@ const registerAdAstraEntityTypeTags = (event) => {
 		'minecraft:shulker_bullet',
 		'minecraft:skeleton',
 		'species:limpet',
+		'species:birt',
 		'endermanoverhaul:windswept_hills_enderman',
 		'endermanoverhaul:soulsand_valley_enderman',
 		'endermanoverhaul:spirit',
 		'endermanoverhaul:end_enderman',
-		'endermanoverhaul:end_islands_enderman'
+		'endermanoverhaul:end_islands_enderman',
 	]
 
 	MOON_ENTITIES.forEach(entity => {
@@ -215,6 +221,11 @@ const registerAdAstraEntityTypeTags = (event) => {
 	event.add('tfc:deals_piercing_damage', 'endermanoverhaul:end_enderman')
 	event.add('tfc:deals_crushing_damage', 'endermanoverhaul:end_islands_enderman')
 	event.add('tfc:deals_crushing_damage', 'ad_astra:star_crawler')
+
+	event.add('tfg:ignores_gravity', 'minecraft:shulker_bullet')
+	event.add('tfg:ignores_gravity', 'endermanoverhaul:spirit')
+	event.add('tfg:ignores_gravity', 'species:birt')
+	event.add('tfg:ignores_gravity', 'ad_astra:star_crawler')
 }
 
 const registerAdAstraPlacedFeatures = (event) => {
