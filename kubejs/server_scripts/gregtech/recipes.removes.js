@@ -645,6 +645,8 @@ function removeGTCEURecipes(event) {
 
 	event.remove({ id: 'gtceu:wiremill/string_from_polycaprolactam' })
 
+	event.remove({ id: 'gtceu:compressor/compress_certus_quartz_to_raw_ore_block' })
+
 	// Remove vanilla Eye of Ender
 
 	event.remove({ id: 'minecraft:ender_eye' })
