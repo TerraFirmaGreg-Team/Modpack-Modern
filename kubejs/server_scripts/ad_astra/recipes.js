@@ -383,7 +383,7 @@ const registerAdAstraRecipes = (event) => {
 			ingredient: {
 				fluid: 'gtceu:air'
 			},
-			millibuckets: 2
+			millibuckets: 100
 		},
 		result: {
 			fluid: 'ad_astra:oxygen',
@@ -397,15 +397,15 @@ const registerAdAstraRecipes = (event) => {
 		energy: 30,
 		input: {
 			ingredient: {
-				fluid: 'gtceu:oxygen'
+				tag: 'tfg:breathable_compressed_air'
 			},
 			millibuckets: 1
 		},
 		result: {
 			fluid: 'ad_astra:oxygen',
-			millibuckets: 100
+			millibuckets: 200
 		}
-	}).id('ad_astra:oxygen_loading/air_from_oxygen_gas')
+	}).id('ad_astra:oxygen_loading/air_from_compressed')
 
 	//#endregion
 

@@ -306,6 +306,12 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:usable_in_wooden_bucket', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_red_steel_bucket', 'tfg:conifer_pitch')
 	event.add('tfc:usable_in_blue_steel_bucket', 'tfg:conifer_pitch')
+
+	event.add('tfg:breathable_compressed_air', 'tfg:compressed_nitrox')
+	event.add('tfg:breathable_compressed_air', 'tfg:compressed_heliox')
+	event.add('tfg:breathable_compressed_air', 'tfg:compressed_heliox_3')
+	event.add('tfg:breathable_compressed_air', 'tfg:compressed_trimix')
+	event.add('tfg:breathable_compressed_air', 'tfg:compressed_trimix_3')
 }
 
 

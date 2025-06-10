@@ -50,8 +50,35 @@ const registerTFGMaterials = (event) => {
 		.blastTemp(1760, 'low', 120, 1200)
 
 	event.create('vitrified_asbestos')
-        	.dust()
+		.dust()
 		.fluid()
 		.iconSet('glass')
-        	.color(0xcccccc)
+		.color(0xcccccc)
+
+	// Space suit gases (these all add up to 10B of components = 1B of space suit gas)
+
+	event.create('tfg:compressed_nitrox')
+		.gas()
+		.components('8x nitrogen', '2x oxygen')
+		.color(0xaef5ef)
+
+	event.create('tfg:compressed_heliox')
+		.gas()
+		.components('8x helium', '2x oxygen')
+		.color(0xf5eeb3)
+
+	event.create('tfg:compressed_heliox_3')
+		.gas()
+		.components('8x helium_3', '2x oxygen')
+		.color(0xf5ea90)
+
+	event.create('tfg:compressed_trimix')
+		.gas()
+		.components('5x nitrogen', '3x oxygen', '2x helium')
+		.color(0xc3fab9)
+
+	event.create('tfg:compressed_trimix_3')
+		.gas()
+		.components('5x nitrogen', '3x oxygen', '2x helium_3')
+		.color(0xa3ed95)
 }

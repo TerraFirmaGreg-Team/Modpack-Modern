@@ -192,4 +192,41 @@ function registerTFGSpaceRecipes(event) {
 		.outputFluids(Fluid.of('gtceu:biomass', 20))
 		.duration(50)
 		.EUt(3)
+
+	// Space suit gases
+
+	event.recipes.gtceu.compressor('compressed_nitrox')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 8000), Fluid.of('gtceu:oxygen', 2000))
+		.outputFluids(Fluid.of('tfg:compressed_nitrox', 1000))
+		.circuit(1)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.compressor('compressed_heliox')
+		.inputFluids(Fluid.of('gtceu:helium', 8000), Fluid.of('gtceu:oxygen', 2000))
+		.outputFluids(Fluid.of('tfg:compressed_heliox', 1000))
+		.circuit(1)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.compressor('compressed_heliox_3')
+		.inputFluids(Fluid.of('gtceu:helium_3', 8000), Fluid.of('gtceu:oxygen', 2000))
+		.outputFluids(Fluid.of('tfg:compressed_heliox_3', 1000))
+		.circuit(1)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.compressor('compressed_trimix')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 5000), Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:helium', 2000))
+		.outputFluids(Fluid.of('tfg:compressed_trimix', 1000))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
+
+	event.recipes.gtceu.compressor('compressed_trimix_3')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 5000), Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:helium_3', 2000))
+		.outputFluids(Fluid.of('tfg:compressed_trimix_3', 1000))
+		.circuit(2)
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.HV])
 }
