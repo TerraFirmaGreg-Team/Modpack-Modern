@@ -207,6 +207,7 @@ ServerEvents.recipes(event => {
     registerTfceaRecipes(event)
     registerTFCRecipes(event)
     registerTFCBetterBFRecipes(event)
+    registerTFCLunchBoxRecipes(event)
     registerTFGRecipes(event)
     registerTFCGroomingStationRecipes(event)
     registerTFCTextileRecipes(event)

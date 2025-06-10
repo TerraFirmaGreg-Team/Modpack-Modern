@@ -253,6 +253,13 @@ function registerTFGMiscellaneousRecipes(event) {
 		.duration(20)
 		.EUt(GTValues.VA[GTValues.ULV])
 
+	event.recipes.gtceu.fluid_solidifier('tfg:ice')
+		.inputFluids(Fluid.of('minecraft:water', 144))
+		.notConsumable('gtceu:block_casting_mold')
+		.itemOutputs('minecraft:ice')
+		.duration(200)
+		.EUt(GTValues.VA[GTValues.LV])
+
 	event.shapeless('4x firmalife:ice_shavings', ['#forge:dusts/ice', '#forge:tools/hammers'])
 
 	// Cooling water
