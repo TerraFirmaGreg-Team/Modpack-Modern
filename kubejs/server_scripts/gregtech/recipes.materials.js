@@ -843,7 +843,6 @@ function registerGTCEUMetalRecipes(event) {
 			.itemOutputs(barsStack)
 			.duration(100)
 			.EUt(GTValues.VA[GTValues.LV])
-			.circuit(1)
 	}
 
 	forEachMaterial(material => {
